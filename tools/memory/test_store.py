@@ -1,6 +1,6 @@
 import json
 
-from store import build_index, recall
+from store import _tokenize, build_index, recall
 
 
 def test_recall_ranks_relevant_chunk_first():
@@ -59,3 +59,29 @@ def test_index_and_recall_results_are_json_serializable():
     idx = build_index(chunks)
     json.dumps(idx)
     json.dumps(recall(idx, "digit fraud", k=2))
+
+
+def test_recall_with_non_positive_k_returns_empty_list():
+    chunks = [
+        {"path": "a.md", "heading": "A", "text": "apples and oranges"},
+        {"path": "b.md", "heading": "B", "text": "bananas and grapes"},
+    ]
+    idx = build_index(chunks)
+    assert recall(idx, "apples bananas", k=0) == []
+    assert recall(idx, "apples bananas", k=-1) == []
+
+
+def test_tokenize_keeps_accented_word_as_single_token():
+    assert _tokenize("Zürich") == ["zürich"]
+
+
+def test_recall_does_not_fragment_accented_terms():
+    chunks = [
+        {"path": "zurich.md", "heading": "Emissions", "text": "Zürich emissions data show a steady decline."},
+        {"path": "other.md", "heading": "Unrelated", "text": "the weather today is sunny with clear skies"},
+    ]
+    idx = build_index(chunks)
+    top = recall(idx, "Zürich", k=5)
+    matches = [r for r in top if r["score"] > 0.0]
+    assert len(matches) == 1
+    assert matches[0]["path"] == "zurich.md"

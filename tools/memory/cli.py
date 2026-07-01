@@ -90,19 +90,38 @@ def _load_chunks(index_path: Path) -> list[dict] | None:
 
 
 def _index_is_stale(repo_root: Path, index_path: Path) -> bool:
-    """True if the index is missing or older than the newest matched source file."""
+    """True if the index is missing, older than the newest matched source file,
+    or if the set of indexed paths no longer matches the set of source files
+    currently on disk (e.g. a previously-indexed file was deleted)."""
     if not index_path.exists():
         return True
     index_mtime = index_path.stat().st_mtime
     for file_path in _collect_source_files(repo_root):
         if file_path.stat().st_mtime > index_mtime:
             return True
+
+    current_paths = {
+        file_path.relative_to(repo_root).as_posix()
+        for file_path in _collect_source_files(repo_root)
+    }
+    indexed_chunks = _load_chunks(index_path)
+    if indexed_chunks is None:
+        return True
+    indexed_paths = {chunk["path"] for chunk in indexed_chunks}
+    if indexed_paths != current_paths:
+        return True
+
     return False
 
 
 def cmd_index(repo_root_arg: str) -> None:
     repo_root = Path(repo_root_arg).resolve()
+    if not repo_root.is_dir():
+        sys.stderr.write(f"error: repo root does not exist: {repo_root}\n")
+        sys.exit(1)
     chunks = _build_chunks(repo_root)
+    if not chunks:
+        sys.stderr.write("note: no source files matched\n")
     _write_index_file(repo_root, chunks)
 
 
@@ -120,6 +139,9 @@ def cmd_recall(query: str, k: int) -> None:
             sys.stderr.write("index corrupt, rebuilding\n")
             chunks = _build_chunks(repo_root)
             _write_index_file(repo_root, chunks)
+
+    if not chunks:
+        sys.stderr.write("note: no source files matched\n")
 
     index = build_index(chunks)
     results = recall(index, query, k=k)
