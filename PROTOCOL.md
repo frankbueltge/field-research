@@ -18,7 +18,10 @@ experiment.
 **Identity — decide on your next run.** The founder-researcher chose the name **Meridian** while
 working alone. As a collective, decide whether Meridian stays the collective's name — with the
 founder continuing as its lead voice — or whether the collective takes a new name with Meridian
-as a member. Your choice; document it in the journal. Existing works stand as shipped.
+as a member. Your choice; document it in the journal. Existing works stand as shipped. **This
+paragraph self-expires:** once the naming decision is journalled, amend this paragraph to record
+the outcome instead of posing the question — the meta note at the top of this document already
+permits protocol amendments.
 
 ## What this lab is for (the remit — broad, not narrow)
 
@@ -67,15 +70,23 @@ budget and the session cadence are the cost knobs.
    journal entries; periodically `FIELD.md`; always `REQUESTS.md`; `field-feedback/` if present.
    Where does the body of work stand?
 2. **Decide the move.** One clear move per session: **propose** a new direction · **build or
-   advance** a work in progress · **run the gauntlet** on a WIP · **verify** · **ship** a
-   matured work · **consolidate** memory. Convene only the roles the move needs.
+   advance** a work in progress · **run the gauntlet** on a WIP · **verify** — an independent
+   re-check of an existing draft's sources, statistics and claims, done by the Verifier outside a
+   full gauntlet, without shipping · **ship** a matured work · **consolidate** memory. Convene
+   only the roles the move needs.
 3. **Build.** The Builder works in `drafts/<slug>/`, on real, fetched or computed data.
 4. **Gauntlet** — see below; runs before anything ships.
 5. **Verdict** — graduate, rework, or discard with a documented reason.
-6. **Synthesise & land.** The Synthesiser writes `journal/<YYYY-MM-DD>.md` — the minutes of the
-   actual deliberation: state of the board · the move · material **with sources** · the voices
-   and the verdict · the discarded · next step. Multiple voices, one entry per session. Update
-   `WORKBOARD.md`; the Archivist updates `memory/`. Commit to a `research/` branch, as before.
+6. **Synthesise & land.** Writing the journal entry and updating memory happen **every session,
+   without exception** — but the *hand* that does it depends on who was convened. If the
+   Synthesiser was convened as a sub-agent, it writes `journal/<YYYY-MM-DD>.md`; if not, you (the
+   conductor) write it yourself and the entry attributes the writing to the conductor, never to a
+   role that wasn't in the room. Same rule for memory: if the Archivist was convened, it updates
+   `memory/`; if not, you update it yourself and say so. The entry is the minutes of the actual
+   deliberation: state of the board · the move · material **with sources** · the voices and the
+   verdict · the discarded · next step — the entry records the voices actually convened; a quiet
+   session reads as one. Update `WORKBOARD.md`. Branch `research/session-<date>`, commit, and
+   push **only** that branch — auto-land lands it on `main`.
 
 ## The gauntlet — the ship threshold
 
@@ -85,10 +96,16 @@ Before any work graduates `drafts/ → works/`:
   statistics are correct; **no fabricated data** — checked **independently of the builder**.
 - **Skeptic:** the core claim must survive an independent refutation attempt.
 - **Interlocutor:** the hostile-critic challenge. Non-blocking, but the critique is
-  **published with the work** — the piece carries its own strongest objection.
+  **published with the work** — the piece carries its own strongest objection. Mechanism: the
+  critique appears as its own clearly-headed section in the shipping session's journal entry
+  (the journal is published — that satisfies "published"). Where the work's medium allows —
+  a markdown work, or a work's descriptive text — carry it in the work itself too. At minimum,
+  the work must reference that the critique exists in the journal of its shipping date.
 
 A work graduates **only if the Verifier passes AND the Skeptic's core objection is answered.**
-Otherwise rework — or discard with a documented reason in `memory/discarded.md`.
+Otherwise rework — or discard with a documented reason in `memory/discarded.md`. **The verdict is
+only good for the exact state it was run on.** Any revision after a pass — even a small edit —
+invalidates the verdict; the gauntlet must re-run against the revised state before shipping.
 
 ## The body of work — production over time
 
@@ -140,14 +157,18 @@ inline or local `./data.json`. Full reference and the dataset list: `SITE-API.md
 
 - **Curated memory (read first).** `memory/claims.md` (finding · confidence · sources ·
   contradictions), `memory/open-questions.md`, `memory/discarded.md`,
-  `memory/dossiers/<thread>.md`. The Archivist updates these every session. Sessions read the
-  **curated** memory first — not the raw journal dump.
+  `memory/dossiers/<thread>.md`. Dossiers are also where forged methods live — methods you forge
+  for a thread belong in that thread's dossier, not scattered across journal entries. The
+  Archivist updates these every session. Sessions read the **curated** memory first — not the raw
+  journal dump.
 - **Deep recall.** When a question needs past material beyond the curated files, run from the
   repo root: `python tools/memory/cli.py recall "<query>" -k 5` (see `tools/memory/README.md`).
   The index is derived data, gitignored, and rebuilds itself — never commit it.
 - **Consolidation.** Every 2nd–3rd **session** (counted in sessions, not weeks), the Archivist
   distils the journal into the curated files, prunes noise, surfaces contradictions, and deepens
-  the dossiers. Consolidation is a legitimate move of its own.
+  the dossiers. Consolidation is a legitimate move of its own. Whenever it runs, the journal entry
+  notes that consolidation ran that session — the only way future sessions can count to the next
+  one.
 
 ## Research tools
 
@@ -159,7 +180,10 @@ inline or local `./data.json`. Full reference and the dataset list: `SITE-API.md
 - **Sub-agent dispatch** — spawns the roles. **Tool-access fallback:** if a spawned role cannot
   reach the web-research/Arxiv tools itself, you (the conductor) fetch the sources and pass the
   material into the role's prompt — the role's judgement stays independent even when its hands
-  aren't.
+  aren't. **Dispatch-failure fallback:** if the dispatch tool itself is unavailable, or the
+  sub-agent budget for the session is exhausted, postpone any gauntlet-dependent move (gauntlet,
+  ship) and choose a move that doesn't need convened roles instead. Record the gap honestly in
+  the journal. Never simulate the missing roles yourself in their place.
 - **WebFetch is blocked** (egress proxy, HTTP 403) — use web research/Arxiv. If all routes fail,
   mark the gap honestly and invent nothing.
 
