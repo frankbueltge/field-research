@@ -109,6 +109,29 @@ def test_recall_rebuilds_when_index_is_stale(tmp_path):
     assert results[0]["path"] == "journal/three.md"
 
 
+def test_recall_does_not_serve_deleted_file_after_deletion(tmp_path):
+    journal = tmp_path / "journal"
+    journal.mkdir(parents=True, exist_ok=True)
+    (journal / "a.md").write_text(
+        "# Wombat\nwombat behavior notes and burrow habits\n"
+    )
+    (journal / "b.md").write_text(
+        "# Platypus\nplatypus egg laying and bill sensing notes\n"
+    )
+
+    index_result = _run(["index", str(tmp_path)], cwd=tmp_path)
+    assert index_result.returncode == 0, index_result.stderr
+
+    # Delete one of the indexed source files.
+    (journal / "b.md").unlink()
+
+    recall_result = _run(["recall", "platypus", "-k", "5"], cwd=tmp_path)
+    assert recall_result.returncode == 0, recall_result.stderr
+
+    results = json.loads(recall_result.stdout)
+    assert all(r["path"] != "journal/b.md" for r in results)
+
+
 def test_recall_recovers_from_corrupt_index_jsonl(tmp_path):
     _write_journal(tmp_path)
     _run(["index", str(tmp_path)], cwd=tmp_path)
@@ -125,3 +148,29 @@ def test_recall_recovers_from_corrupt_index_jsonl(tmp_path):
     results = json.loads(recall_result.stdout)
     assert len(results) == 1
     assert results[0]["path"] == "journal/one.md"
+
+
+def test_index_with_nonexistent_root_exits_1_and_creates_nothing(tmp_path):
+    nonexistent = tmp_path / "does-not-exist"
+    assert not nonexistent.exists()
+
+    result = _run(["index", str(nonexistent)], cwd=tmp_path)
+
+    assert result.returncode == 1
+    assert result.stderr.strip() != ""
+    assert not nonexistent.exists()
+
+
+def test_index_and_recall_on_empty_repo_succeed_with_stderr_note(tmp_path):
+    # tmp_path exists but has none of the source globs (no journal/, works/, etc.)
+    index_result = _run(["index", str(tmp_path)], cwd=tmp_path)
+    assert index_result.returncode == 0, index_result.stderr
+    assert index_result.stderr.strip() != ""
+
+    recall_result = _run(["recall", "anything", "-k", "5"], cwd=tmp_path)
+    assert recall_result.returncode == 0, recall_result.stderr
+    assert recall_result.stderr.strip() != ""
+
+    # stdout must be pure JSON — the note goes to stderr only.
+    results = json.loads(recall_result.stdout)
+    assert results == []

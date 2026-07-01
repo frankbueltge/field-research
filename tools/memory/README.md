@@ -88,6 +88,7 @@ The `recall` command automatically rebuilds the index when:
 - The index file is missing
 - The index is older than the newest source file
 - The index file is corrupt (unparseable JSON or missing required keys)
+- A previously-indexed source file has been deleted
 
 Rebuilds complete in under a second. If the index is corrupt, a diagnostic message is printed to stderr: `index corrupt, rebuilding`
 
@@ -130,7 +131,7 @@ Run the full test suite:
 python3 -m pytest tools/memory/ -v
 ```
 
-This runs 13 tests covering chunking, indexing, recall scoring, auto-rebuild behavior, and edge cases (empty index, corrupt files, etc.).
+This runs 19 tests covering chunking, indexing, recall scoring, auto-rebuild behavior, and edge cases (empty index, corrupt files, deleted source files, nonexistent repo root, zero source files, non-positive k, Unicode tokens, etc.).
 
 ## Indexed Source Globs
 

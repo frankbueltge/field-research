@@ -3,8 +3,8 @@ import re
 
 
 def _tokenize(text: str) -> list[str]:
-    """Lowercase and extract alphanumeric tokens."""
-    return re.findall(r"[a-z0-9]+", text.lower())
+    """Lowercase and extract Unicode-aware word tokens (letters/digits, no underscore)."""
+    return re.findall(r"[^\W_]+", text.lower())
 
 
 def build_index(chunks: list[dict]) -> dict:
@@ -96,11 +96,20 @@ def recall(index: dict, query: str, k: int = 5) -> list[dict]:
 
     Returns:
         list of dicts with keys: path, heading, text, score (highest score first)
+
+    Zero-match contract: if the query's terms match nothing in the index, this
+    returns ALL chunks at score 0.0 (in existing/insertion order), not an empty
+    list. Callers that want "no relevant hits" to mean an empty result must
+    filter on score > 0.0 themselves (see cli.py's cmd_recall, which does
+    exactly this). An empty query string or an empty index still returns [].
     """
     doc_count = index["doc_count"]
     query_terms = _tokenize(query)
 
     if doc_count == 0 or not query_terms:
+        return []
+
+    if k <= 0:
         return []
 
     scored = []

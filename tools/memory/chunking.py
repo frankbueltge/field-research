@@ -36,7 +36,7 @@ def chunk_markdown(text: str, path: str) -> list[dict]:
                     })
 
             # Start new chunk with this heading
-            current_heading = heading_match.group(2)
+            current_heading = heading_match.group(2).strip()
             current_text = []
         else:
             # Accumulate text under current heading
