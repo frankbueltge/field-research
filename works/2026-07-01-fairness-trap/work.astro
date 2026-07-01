@@ -44,7 +44,7 @@ const chouldechova_ratio = (bBase * (1 - wBase)) / (wBase * (1 - bBase));
 const pct = (v: number, d = 1) => `${(v * 100).toFixed(d)}%`;
 const pp  = (v: number) => `${(v * 100).toFixed(1)}pp`;
 
-// ── SVG: Confusion matrix builder ──────────────────────────────────────────────
+// ── SVG: Confusion matrix builder ──────────────────────────────────────────────────────
 function buildMatrix(
   title: string,
   cells: { TN: number; FP: number; FN: number; TP: number },
@@ -91,7 +91,7 @@ function buildMatrix(
 const bMatrixSVG = buildMatrix(`Black defendants (n = ${bN.toLocaleString()})`, B, bFPR, bPPV, bFNR, bBase);
 const wMatrixSVG = buildMatrix(`White defendants (n = ${wN.toLocaleString()})`, W, wFPR, wPPV, wFNR, wBase);
 
-// ── SVG: Dual metric bar chart ─────────────────────────────────────────────────
+// ── SVG: Dual metric bar chart ────────────────────────────────────────────────────
 // Two paired bars: FPR (Black vs White) and PPV (Black vs White)
 // FPR shows disparity; PPV shows parity. Same data — different verdicts.
 
@@ -169,7 +169,7 @@ function buildBarChart(): string {
 
 const barChartSVG = buildBarChart();
 
-// ── Pattern table ───────────────────────────────────────────────────────────────
+// ── Pattern table ──────────────────────────────────────────────────────────────────────────
 const totalN = bN + wN;
 ---
 
