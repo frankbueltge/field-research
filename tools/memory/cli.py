@@ -68,14 +68,24 @@ def _write_index_file(repo_root: Path, chunks: list[dict]) -> Path:
     return index_path
 
 
-def _load_chunks(index_path: Path) -> list[dict]:
-    """Load chunk records back from the JSONL index file."""
+def _load_chunks(index_path: Path) -> list[dict] | None:
+    """Load chunk records back from the JSONL index file.
+
+    Returns None if the index is corrupt (unparseable or missing required keys).
+    """
     chunks = []
-    with index_path.open("r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if line:
-                chunks.append(json.loads(line))
+    try:
+        with index_path.open("r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if line:
+                    record = json.loads(line)
+                    # Validate that record has expected keys.
+                    if not isinstance(record, dict) or not all(k in record for k in ["path", "heading", "text"]):
+                        return None
+                    chunks.append(record)
+    except (json.JSONDecodeError, OSError):
+        return None
     return chunks
 
 
@@ -105,6 +115,11 @@ def cmd_recall(query: str, k: int) -> None:
         _write_index_file(repo_root, chunks)
     else:
         chunks = _load_chunks(index_path)
+        if chunks is None:
+            # Index is corrupt; rebuild it.
+            sys.stderr.write("index corrupt, rebuilding\n")
+            chunks = _build_chunks(repo_root)
+            _write_index_file(repo_root, chunks)
 
     index = build_index(chunks)
     results = recall(index, query, k=k)

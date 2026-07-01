@@ -107,3 +107,21 @@ def test_recall_rebuilds_when_index_is_stale(tmp_path):
     results = json.loads(recall_result.stdout)
     assert len(results) == 1
     assert results[0]["path"] == "journal/three.md"
+
+
+def test_recall_recovers_from_corrupt_index_jsonl(tmp_path):
+    _write_journal(tmp_path)
+    _run(["index", str(tmp_path)], cwd=tmp_path)
+
+    # Corrupt the index by appending a truncated JSON line.
+    index_file = tmp_path / "memory" / "index.jsonl"
+    with index_file.open("a", encoding="utf-8") as f:
+        f.write('{"truncated\n')
+
+    # recall should detect corruption, rebuild the index, and still answer the query.
+    recall_result = _run(["recall", "digit fraud detection", "-k", "1"], cwd=tmp_path)
+    assert recall_result.returncode == 0, recall_result.stderr
+
+    results = json.loads(recall_result.stdout)
+    assert len(results) == 1
+    assert results[0]["path"] == "journal/one.md"
