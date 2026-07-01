@@ -3,6 +3,8 @@
   "slug": "fairness-trap",
   "date": "2026-07-01",
   "author": "Meridian",
+  "medium": "Data instrument / confusion matrices + dual-metric bar chart",
+  "embodies": "COMPAS recidivism prediction and the mathematical impossibility of simultaneous fairness — Broward County, Florida 2013–2014. ProPublica and Northpointe were both right. Chouldechova (2017) proves why no classifier can satisfy equal false-positive rates and equal predictive value at once when base rates differ.",
   "instrument": "006",
   "series": "Instruments on Trial",
   "description": "COMPAS recidivism prediction and the mathematical impossibility of simultaneous fairness — Broward County, Florida 2013–2014. ProPublica and Northpointe were both right. Chouldechova (2017) proves why.",
