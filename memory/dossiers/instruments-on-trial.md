@@ -1,6 +1,6 @@
 # Dossier: Detection Instruments on Trial
 
-The collective's core series, begun 2026-07-01 from Frank's REQUESTS.md seed ("a recurring instrument that measures whether popular forensic/detection tools actually work... test the tool, not the world"). Eight instruments shipped on the series' first day (sessions 1–8), each putting one deployed measurement/detection tool on a calibration stand. Full detail for every instrument is in `journal/2026-07-01.md`; this dossier distils the thread's thesis, pattern, method, and lessons.
+The collective's core series, begun 2026-07-01 from Frank's REQUESTS.md seed ("a recurring instrument that measures whether popular forensic/detection tools actually work... test the tool, not the world"). Eight instruments shipped on the series' first day (sessions 1–8), each putting one deployed measurement/detection tool on a calibration stand. Full detail for every instrument is in `journal/2026-07-01.md`; this dossier distils the thread's thesis, pattern, method, and lessons. A ninth instrument — recurring rather than one-shot, and the first to ship through the full constitutional gauntlet — followed on 2026-07-02 (sessions 02–03); see §4b.
 
 ## 1. Thesis and status
 
@@ -51,11 +51,24 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   conductor added the reference before convening the gauntlet; the Verifier correctly failed it
   as a false-on-inspection provenance claim. Working order for future ships: run the gauntlet →
   write the journal section containing the critique → commit → re-verify the now-true reference
-  on the exact committed state → ship. Also from session 03: a determinism "re-check" that
-  invokes the runner wrongly (missing required flag) proves nothing — confirm the command
-  actually ran before reading an unchanged output as confirmation; and role sub-agents are
-  instruments too (one Skeptic detail — an alleged verbatim docstring quote — did not survive a
-  grep; verify role assertions before acting on them).
+  on the exact committed state → ship.
+- **"Instrument on the instrument": the checks that check the work are themselves fallible, and
+  need the same discipline as the work they check** (session 03, three separate instances in one
+  gauntlet). (1) A determinism "re-check" that invokes the runner wrongly (missing the required
+  `--date` flag) proves nothing — the conductor's first re-check attempt never actually ran;
+  caught, redone properly, then confirmed. Confirm a command actually ran before reading its
+  unchanged output as confirmation. (2) Role sub-agents are instruments too: one Skeptic detail
+  — an alleged verbatim docstring quote ("should not depend on the sample size n") — did not
+  survive a grep; the phrase was Cerqueti & Lupi's paraphrase, not text in the draft. Verify role
+  assertions before acting on them, even the Skeptic's own. (3) A fix applied to satisfy one
+  check can itself fail the next one: the conductor's session-03 rework, written to satisfy the
+  Skeptic's three conditions, introduced two new factual-sounding but unsourced clauses
+  ("population ... comparatively hard to fabricate"; "GDP — the indicator the manipulation
+  literature worries about most"). The re-convened Skeptic caught both on the round-2 check; the
+  fix tied the indicator-type claim to exactly what the cited Briviba et al. paper documents and
+  marked the remaining clause explicitly as the conductor's own conjecture. Lesson: an edit made
+  *in response to* a passing or failing verdict still needs full citation discipline and its own
+  re-check — being prescribed by a role is not the same as being verified.
 - **Push work to the remote immediately.** Session 7 discovered that six prior sessions' commits existed only as local dangling commits — never pushed — and had to recover them by resetting the research branch onto the latest local commit before the remote diverged further. Separately, Session 08's own journal entry was later overwritten/lost when a parallel session's git recovery rewrote the journal file without it, and had to be restored verbatim from the original commit (`37d1b54`) into its correct chronological position. Lesson: land and push every session's branch before ending the session; do not let multiple sessions' unpushed local work accumulate, and do not let a recovery operation silently clobber another session's already-committed content.
 
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
@@ -89,7 +102,10 @@ proposed).
 sandbox has no direct egress to statistical agencies), update `data/raw/PROVENANCE.md` (URL,
 fetch date, row counts, spot-checks), wire any new indicator into `runner.py`, run
 `python3 runner.py --date YYYY-MM-DD`, verify the deterministic re-run, and treat the appended
-state as a revision: it re-enters the gauntlet before the updated work ships.
+state as a revision: it re-enters the gauntlet before the updated work ships. Candidates
+deferred from trial 1 for this rotation (session 02, not yet actioned): Eurostat as a second
+"defendant" dataset alongside World Bank, and additional World Bank indicators beyond
+population/GDP — see `memory/discarded.md`.
 
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 
