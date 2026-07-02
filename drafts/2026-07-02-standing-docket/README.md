@@ -188,17 +188,50 @@ Both seeds and the generator are disclosed per-trial in
   number (`expected_familywise_rate_by_chance` in the cumulative block) is
   arithmetic, not an empirical claim, and it is the baseline the observed
   `false_conviction_rate_on_clean_real_data` should be compared against --
-  not zero. In trial 1, the population series was convicted by the
-  second-digit chi-squared test (p ≈ 0.034) while GDP was not, and the
-  first-digit MAD flagged *both* real series and *both* synthetic controls
-  at N=200-217 despite the chi-squared first-digit test clearing three of
-  those four -- i.e., MAD and chi2 disagreed on 3 of 4 series/controls in
-  this trial. That disagreement rate is itself tracked
-  (`chi2_mad_conflict_rate`) and is a first-trial data point suggesting
-  Nigrini's MAD cutoffs, calibrated on larger forensic-accounting datasets,
-  may be miscalibrated at N in the low hundreds -- a hypothesis for future
-  trials to test as more data accumulates, not a settled finding from one
-  trial.
+  not zero. Concretely: at trial 1 only two clean real series are on the
+  docket, and the chance that at least one of two clean series draws a
+  conviction by chance alone is `1-(1-0.185)^2 ≈ 0.337`. The observed
+  1-of-2 is therefore not statistically distinguishable from chance at
+  this sample size -- the early ledger rates are pilot numbers, not yet
+  evidence against the tests. In trial 1, the population series was
+  convicted by the second-digit chi-squared test (p ≈ 0.034) while GDP was
+  not, and the first-digit MAD flagged *both* real series and *both*
+  synthetic controls at N=200-217 despite the chi-squared first-digit test
+  clearing three of those four -- i.e., MAD and chi2 disagreed on 3 of 4
+  series/controls in this trial. That disagreement rate is itself tracked
+  (`chi2_mad_conflict_rate`).
+- **The chi2/MAD conflict has a known mechanism.** The disagreement is not
+  an open puzzle this ledger discovered: Cerqueti & Lupi -- the same source
+  used above for the cutoff values -- derive the distribution of the MAD
+  statistic under conformity and show that, "far from being independent of
+  n," its expected value and standard deviation are inverse functions of
+  sqrt(n), so that Nigrini's fixed thresholds "will tend to reject too
+  often for small values of n and to be too conservative for large ones"
+  (https://arxiv.org/pdf/2202.05237, section 3). At N ≈ 200-217 this
+  instrument sits squarely in the reject-too-often regime: the trial-1 MAD
+  flags are the *predicted* behavior of a fixed cutoff applied at small N,
+  observed in the wild on real official data. The docket keeps the fixed
+  0.015 cutoff anyway, deliberately -- the instrument tries the tests **as
+  deployed** in forensic practice (fixed conventional thresholds), not as
+  the methods literature says they ought to be refined. What accumulates
+  here is how often the deployed convention misfires, with the mechanism
+  disclosed. Cerqueti & Lupi's asymptotic standard-normal MAD test is the
+  principled N-aware alternative, and is a candidate future column for
+  this ledger.
+- **"Known provenance" is not "known clean."** Governments do manipulate
+  official statistics -- Briviba, Frey, Moser & Bieri (2024), "Governments
+  manipulate official Statistics: Institutions matter," *European Journal
+  of Political Economy*, present case studies for Greece, Argentina, and
+  Brazil (author-hosted copy:
+  https://www.bsfrey.ch/wp-content/uploads/2024/04/C_666_2024_Governments-manipulate-official-Statistics-Institutions-matter2.pdf).
+  The ledger field `false_conviction_rate_on_clean_real_data` therefore
+  encodes an assumption, not a proven fact: read "clean" as *of known
+  provenance and assumed unmanipulated* -- a prior this series' own
+  Instrument 008 teaches to hold loosely. Trial 1's wrinkle cuts the other
+  way, though: the convicted series was population (census-based,
+  comparatively hard to fabricate), while GDP -- the indicator the
+  manipulation literature worries about most -- cleared every chi-squared
+  test.
 - **Sample size asymmetry.** Population N=217, GDP N=204 -- both real
   country counts as of the 2026-07-02 snapshot, not independently chosen.
 
@@ -230,6 +263,15 @@ the journal entry of the shipping session, `journal/2026-07-02.md`
   p. 160) verified by the conductor 2026-07-02 against Cerqueti & Lupi,
   "Severe testing of Benford's law", https://arxiv.org/pdf/2202.05237,
   corroborated by https://metricgate.com/docs/benford-law-analysis/.
+- Cerqueti, R. & Lupi, C., "Severe testing of Benford's law"
+  (published in *TEST*, 2023) -- derivation of the MAD statistic's
+  sample-size dependence under conformity and of an asymptotic
+  standard-normal MAD test. https://arxiv.org/pdf/2202.05237
+- Briviba, A., Frey, B., Moser, L. & Bieri, S. (2024), "Governments
+  manipulate official Statistics: Institutions matter," *European Journal
+  of Political Economy* -- documented government manipulation of official
+  statistics, with case studies for Greece, Argentina, and Brazil.
+  https://www.bsfrey.ch/wp-content/uploads/2024/04/C_666_2024_Governments-manipulate-official-Statistics-Institutions-matter2.pdf
 - World Bank Open Data API -- see `data/raw/PROVENANCE.md` for exact
   endpoint URLs, fetch date, and row counts for the SP.POP.TOTL and
   NY.GDP.MKTP.CD snapshots used here.

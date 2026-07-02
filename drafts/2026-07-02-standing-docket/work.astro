@@ -71,6 +71,17 @@ for (const trial of trials) {
 
 const alphaPerTest = cumulative.expected_false_conviction_rate_by_chance_alpha || {};
 const alphaValue: number = alphaPerTest.first_digit_chi2 ?? 0.05;
+
+// Pilot gate: below this many clean-series scorings, the cumulative rates
+// are not statistically distinguishable from the chance baseline and the
+// scoreboard says so on its face. The floor is a declared convention of
+// this instrument, not a statistical constant.
+const PILOT_FLOOR = 10;
+const cleanTested: number = cumulative.clean_real_series_tested ?? 0;
+const famRate: number = cumulative.expected_familywise_rate_by_chance ?? 0;
+// Chance of at least one false conviction across ALL clean scorings so far,
+// under the disclosed familywise baseline (independence assumed).
+const pAnyByChance: number = cleanTested > 0 ? 1 - Math.pow(1 - famRate, cleanTested) : 0;
 ---
 
 <section class="docket">
@@ -86,6 +97,15 @@ const alphaValue: number = alphaPerTest.first_digit_chi2 ?? 0.05;
 
   <section class="scoreboard" aria-label="cumulative conviction record">
     <div class="scoreboard-title">CUMULATIVE CONVICTION RECORD -- {cumulative.trial_count} trial(s), {cumulative.clean_real_series_tested} real-series scorings</div>
+    {cleanTested < PILOT_FLOOR && (
+      <div class="pilot-banner">
+        PILOT STAGE -- {cleanTested} clean-series scoring(s) on record (declared floor: {PILOT_FLOOR}).
+        At this sample size the rates below are not statistically distinguishable from the chance
+        baseline: the chance of at least one false conviction across {cleanTested} clean scorings is
+        already {pct(pAnyByChance)} by chance alone. Read the stamps; the rates stay silent until
+        the stack is tall enough to speak.
+      </div>
+    )}
     <div class="scoreboard-grid">
       <div class="stat">
         <div class="stat-label">false-conviction rate, clean real data</div>
@@ -114,6 +134,8 @@ const alphaValue: number = alphaPerTest.first_digit_chi2 ?? 0.05;
       (3 chi2 + 1 MAD), the familywise chance of at least one false flag on a truly clean series is
       1-(1-{alphaValue})^{Object.keys(TEST_LABELS).length} = {pct(cumulative.expected_familywise_rate_by_chance)}.
       This is arithmetic, not an empirical claim -- it is the baseline the observed rate above should be read against.
+      Across all {cleanTested} clean-series scoring(s) so far, the chance of at least one false conviction
+      by chance alone is 1-(1-{famRate.toFixed(3)})^{cleanTested} = {pct(pAnyByChance)}.
     </div>
   </section>
 
@@ -130,6 +152,17 @@ const alphaValue: number = alphaPerTest.first_digit_chi2 ?? 0.05;
     <p>
       N-gate: verdicts are only considered valid for 100 &le; N &le; 10000. Outside that range a row is
       stamped OUT-OF-SPEC regardless of test outcome.
+    </p>
+    <p>
+      "Clean" is an assumption from provenance, not a proven absence of manipulation -- governments do
+      manipulate official statistics (Briviba, Frey, Moser &amp; Bieri 2024, "Governments manipulate
+      official Statistics: Institutions matter", <em>European Journal of Political Economy</em>). The
+      defendants in this docket are the tests; the data is a witness assumed honest, and that assumption
+      is disclosed, not proven. The chi2/MAD disagreements recorded below also have a known mechanism:
+      the MAD statistic's expected value shrinks with sample size while Nigrini's cutoff is fixed, so the
+      cutoff over-rejects at N in the low hundreds (Cerqueti &amp; Lupi, "Severe testing of Benford's law",
+      arXiv:2202.05237). The ledger keeps the fixed cutoff deliberately: it tries the convention as
+      deployed in forensic practice, and counts how often it misfires.
     </p>
   </section>
 
@@ -341,6 +374,17 @@ const alphaValue: number = alphaPerTest.first_digit_chi2 ?? 0.05;
   .stat-sub {
     font-size: 0.58rem;
     color: #7a6a3a;
+  }
+
+  .pilot-banner {
+    border: 2px dashed #6b6b6b;
+    color: #4b4325;
+    background: rgba(107, 107, 107, 0.05);
+    padding: 0.5rem 0.6rem;
+    margin-bottom: 0.7rem;
+    font-size: 0.6rem;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
   }
 
   .scoreboard-note {
