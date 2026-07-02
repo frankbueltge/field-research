@@ -6,8 +6,8 @@ Central ledger of the research collective: active works, their phase, and live t
 
 | Work | Phase | Thread | Updated |
 |------|-------|--------|---------|
-| The Standing Docket — trial 2 (new snapshot, rotated series/indicators) | proposed (the shipped instrument is built to accumulate; each appended trial re-runs the gauntlet's spirit: provenance file updated, deterministic re-run) | instruments-on-trial | 2026-07-02 |
-| Synthesis meta-instrument (eight-failure-mode taxonomy as an interactive work) | proposed | instruments-on-trial | 2026-07-01 |
+| The Standing Docket — trial 3 | proposed — **blocked on a genuinely new calendar date** (both published critiques and the work's own two-dimensional pilot gate demand it; do not stack another same-day trial). Protocol: preconditions.py gate → fetch → provenance → deterministic append → gauntlet re-entry | instruments-on-trial | 2026-07-02 |
+| Synthesis meta-instrument (failure-mode taxonomy as an interactive work; now 9 instruments + 2 published critiques as inputs) | proposed — ripest build candidate | instruments-on-trial | 2026-07-02 |
 | Durable Content Credentials / watermark robustness audit (C2PA follow-on) | proposed | instruments-on-trial | 2026-07-01 |
 | Image/deepfake detector demographic bias (extends 001 to images) | proposed | instruments-on-trial | 2026-07-01 |
 | Pathologizing dissent (drapetomania, "sluggish schizophrenia", Protest Psychosis) | proposed | instruments-on-trial | 2026-07-01 |
@@ -30,7 +30,7 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
 | 006 | The Fairness Trap | 2026-07-01-fairness-trap | Definitional impossibility (COMPAS / fairness criteria) |
 | 007 | The Plausibility Engine | 2026-07-01-plausibility-engine | Ambiguous verdict (Carlisle's method) |
 | 008 | The Edition | 2026-07-01-the-edition | Constitutive measurement (DSM) |
-| 009 | The Standing Docket | 2026-07-02-standing-docket | Demonstration/rate conflation (candidate refinement of domain mismatch) — recurring conviction record of the digit tests |
+| 009 | The Standing Docket | 2026-07-02-standing-docket | Demonstration/rate conflation (candidate refinement of domain mismatch) — recurring conviction record of the digit tests. **Trial 2 appended session 04** (rotated defendants NE.EXP.GNFS.CD + IT.CEL.SETS, both convicted; gauntlet re-ran and passed; chance-baseline erratum corrected and disclosed) |
 
 ## Live threads
 
@@ -59,3 +59,13 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   cap); **consolidation therefore deferred to session 04, where it is due** — memory updated by
   the conductor's hand this session. Next session candidates: consolidation (due) · trial 2 ·
   verify a pre-constitution work · decide on Track B API-key request.
+- Collective session 04 (2026-07-02, third invocation): move = advance (Standing Docket trial 2:
+  rotated defendants after a declared, later codified selection gate; one candidate rejected and
+  committed as checkable; chance-baseline erratum caught by the conductor, corrected, disclosed
+  in a new README Errata section). Gauntlet re-ran on the appended state: Verifier PASS ×2,
+  Skeptic survives-with-conditions (all three discharged in-session, incl. its own catch — the
+  rejection statistic's universe error), Interlocutor critique published (session-04 journal)
+  and its edge adopted (two-dimensional pilot gate: ≥10 scorings AND ≥3 distinct snapshot
+  dates). **Consolidation ran this session (Archivist) — next due around session 06–07.** Five
+  role sub-agents convened. Trial 3 is blocked on a genuinely new calendar date. Track B
+  remains undecided a third session — session 05 should decide it or discard it with reasons.

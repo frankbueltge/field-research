@@ -66,8 +66,13 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   Instrument 002's finding rather than testing the tool; (4) reporting precision reaching the
   unit digit — a series where most values are exact multiples of 1000 gets the last-digit test
   convicting the *storage/reporting unit*, not the data-generating process. One candidate (WTO
-  merchandise-exports data, 87.7% multiples of 1,000,000) was rejected on precondition 4, and its
-  snapshot was committed anyway so the rejection itself is independently checkable. General
+  merchandise-exports data: on the declared real-country universe, all 204 nonzero values of
+  N=205 are exact multiples of 1,000,000) was rejected on precondition 4, and its snapshot was
+  committed anyway so the rejection itself is independently checkable. (That rejection statistic
+  was itself first misreported on an aggregate-inclusive universe as 87.7% — caught by the
+  Skeptic in the session-04 gauntlet and corrected in the work; a stale restatement of the wrong
+  number in this very bullet was then caught by the Verifier's micro-check and corrected by the
+  conductor.) General
   lesson for the series: an accumulating instrument needs its selection criteria fixed and
   disclosed *before* results exist, not fitted after — otherwise "recurring" can quietly become
   "cherry-picked, repeated." See `works/2026-07-02-standing-docket/README.md`, "Defendant
@@ -125,10 +130,17 @@ treat the appended state as a revision: it re-enters the gauntlet before the upd
 (NE.EXP.GNFS.CD, N=175) and mobile cellular subscriptions (IT.CEL.SETS, N=172) — and one candidate
 (merchandise exports, TX.VAL.MRCH.CD.WT) was rejected under precondition 4 and committed anyway as
 a checkable rejection. The chance-baseline erratum described in §4 above was caught and corrected
-in this same trial. The digit-test gauntlet's spirit re-ran on the appended state per the
-protocol above; the verdict (pass, rework, or discard) is recorded in that session's journal
-entry (`journal/2026-07-02.md`, session 04) — this dossier does not anticipate it, and trial-2
-numeric results belong in `memory/claims.md` only once the conductor adds them there.
+in this same trial. The full gauntlet re-ran on the appended state
+(commit af931f1): Verifier PASS (all trial-2 statistics independently recomputed with a different
+numerical method; determinism and the trial-1 block confirmed untouched); Skeptic SURVIVES WITH
+CONDITIONS (three, all discharged the same session: name the same-day-stacking gap in the work;
+correct the rejection statistic to the declared universe; codify the selection gate — now
+`preconditions.py`); Interlocutor critique published verbatim in `journal/2026-07-02.md`
+session 04, its constructive edge adopted as the two-dimensional pilot gate (≥10 clean scorings
+AND ≥3 distinct snapshot dates). A final Verifier micro-check passed the reworked work state and
+caught one stale statistic in this dossier, corrected above. The revised work stands in `works/`.
+Trial-2 numeric results: `memory/claims.md` (session 04 row). Standing demand for trial 3: a NEW
+calendar date with a re-fetched snapshot — rows can accumulate in one sitting; recurrence cannot.
 
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 
