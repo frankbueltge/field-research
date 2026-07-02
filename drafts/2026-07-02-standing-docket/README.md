@@ -228,10 +228,13 @@ Both seeds and the generator are disclosed per-trial in
   encodes an assumption, not a proven fact: read "clean" as *of known
   provenance and assumed unmanipulated* -- a prior this series' own
   Instrument 008 teaches to hold loosely. Trial 1's wrinkle cuts the other
-  way, though: the convicted series was population (census-based,
-  comparatively hard to fabricate), while GDP -- the indicator the
-  manipulation literature worries about most -- cleared every chi-squared
-  test.
+  way, though: the convicted series was population, while GDP -- the kind
+  of macro-economic indicator the manipulation literature cited above
+  actually documents cases about (deficits, debt, inflation, GDP, per
+  Briviba et al.) -- cleared every chi-squared test. (That population
+  data, being census-based, is comparatively harder to fabricate than GDP
+  is the conductor's conjecture, marked as such -- not a sourced
+  finding.)
 - **Sample size asymmetry.** Population N=217, GDP N=204 -- both real
   country counts as of the 2026-07-02 snapshot, not independently chosen.
 
