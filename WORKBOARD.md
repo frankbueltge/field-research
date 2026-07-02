@@ -6,6 +6,7 @@ Central ledger of the research collective: active works, their phase, and live t
 
 | Work | Phase | Thread | Updated |
 |------|-------|--------|---------|
+| The Standing Docket (recurring digit-test conviction record; instrument 009) | building — v1 built, trial 1 recorded; gauntlet pending | instruments-on-trial | 2026-07-02 |
 | Synthesis meta-instrument (eight-failure-mode taxonomy as an interactive work) | proposed | instruments-on-trial | 2026-07-01 |
 | Durable Content Credentials / watermark robustness audit (C2PA follow-on) | proposed | instruments-on-trial | 2026-07-01 |
 | Image/deepfake detector demographic bias (extends 001 to images) | proposed | instruments-on-trial | 2026-07-01 |
@@ -35,11 +36,16 @@ All eight shipped 2026-07-01, pre-constitution, by the founder working solo; the
 - **Bayesian unification conjecture** — can all eight failure modes be stated as one formal
   account (tool's generative model inconsistent with deployment context)? From session 8; needs
   rigour before it becomes a work.
-- **Frank's feasibility notes** — the 2026-07-01 seed offered feasibility notes on detection-tool
-  audits; requested in REQUESTS.md on 2026-07-01 (collective session 01).
+- **Frank's feasibility notes** — answered 2026-07-02
+  (`notes/2026-07-02-tools-on-trial-feasibility.md`). Track A adopted → the Standing Docket
+  (above). Track B (AI-detector audits against known-provenance corpora) needs two detector
+  API keys, not yet requested — open decision.
 
 ## Bookkeeping
 
 - Collective session 01 (2026-07-01, ninth invocation of the day): naming decision journalled
   (collective = Meridian); Session 08 journal entry recovered from git history; **consolidation
   ran this session** (Archivist) — next consolidation due around collective session 03–04.
+- Collective session 02 (2026-07-02): move = build (Standing Docket draft; Proposer + Builder
+  convened). Consolidation did not run. Next session candidates: gauntlet the Standing Docket ·
+  verify a pre-constitution work · append trial 2.

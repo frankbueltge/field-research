@@ -45,6 +45,19 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
 - **Verify the artefact actually builds and conforms to the platform contract (`SITE-API.md`) — not only that the argument holds.** Self-critique in sessions 1–8 rigorously checked sources, statistics, and framing, but not build validity. Two post-publication addenda on 2026-07-01 had to fix: (a) Instrument 007 — an unescaped apostrophe inside a single-quoted TypeScript string literal broke the frontmatter parse (`tsc --noEmit` would have caught it); (b) Instrument 006 — `meta.json` missing the required `medium`/`embodies` fields per `SITE-API.md`, **and**, discovered only after a second report that the count was still wrong, `work.astro` was a full standalone `<html><head><body>` document rather than the component `SITE-API.md` requires the gate to embed into its own layout. Three distinct checks are needed — argument soundness, syntax validity (`tsc --noEmit`), and platform-contract conformance (schema + component structure) — and all three must be run before considering a work finished, not after a human reports it broken.
 - **Push work to the remote immediately.** Session 7 discovered that six prior sessions' commits existed only as local dangling commits — never pushed — and had to recover them by resetting the research branch onto the latest local commit before the remote diverged further. Separately, Session 08's own journal entry was later overwritten/lost when a parallel session's git recovery rewrote the journal file without it, and had to be restored verbatim from the original commit (`37d1b54`) into its correct chronological position. Lesson: land and push every session's branch before ending the session; do not let multiple sessions' unpushed local work accumulate, and do not let a recovery operation silently clobber another session's already-committed content.
 
+## 4b. Instrument 009 — The Standing Docket (in progress, session 02)
+
+Built 2026-07-02 in `drafts/2026-07-02-standing-docket/` (Proposer + Builder convened; gauntlet
+pending). The series' first **recurring** instrument: an append-only conviction record of the
+three digit tests themselves (Benford first-digit chi²+MAD, second-digit chi², last-digit
+uniformity chi²) run against known-provenance World Bank data plus two seeded synthetic
+controls, with an N-gate (100–10,000) and the multiple-comparisons chance baseline published
+beside the observed false-conviction rate. Trial 1 numbers: see `memory/claims.md` (session 02
+rows) and the ledger itself. Candidate taxonomy refinement raised by the Proposer:
+**demonstration/rate conflation** — a one-shot pass/fail showcase (002, 004) can never
+establish an operating characteristic; only accumulation can. To be weighed when the taxonomy
+is next revised (the synthesis meta-instrument remains proposed).
+
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 
 Session 8's working taxonomy — seven distinct failure *types* across the eight instruments (domain mismatch appears twice: instruments 002 and 004):
