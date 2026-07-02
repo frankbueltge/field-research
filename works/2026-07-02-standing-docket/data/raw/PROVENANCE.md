@@ -35,17 +35,29 @@ of the same World Bank/ITU indicator.
 real-country subset, region.id != "NA"):** N in [100, 10000]; positive-value span >= 3
 orders of magnitude; reporting precision reaching the unit digit (rejected if the
 majority of non-null values are exact multiples of 1000). Digit tests are not run
-during selection.
+during selection. The machine-checkable preconditions are codified in
+`preconditions.py` (same country filter as `runner.py`); run
+`python3 preconditions.py <file>` to reproduce every number below. During trial-2
+selection itself the checks were run manually (ad-hoc scripts, same criteria); the
+codified gate was added at the gauntlet's demand and reproduces the same verdicts.
 
-- NE.EXP.GNFS.CD -- ACCEPTED. N=175, span 5.32 orders, 11/175 values (6.3%) exact
-  multiples of 1000, no zeros/negatives.
-- IT.CEL.SETS -- ACCEPTED. N=172, span 4.88 orders, 16/172 values (9.3%) exact
-  multiples of 1000 (disclosed: partial reporting-rounding is a known conviction
-  mechanism for the last-digit test), no zeros/negatives.
-- TX.VAL.MRCH.CD.WT -- REJECTED on the precision precondition: 221 of 252 non-null
-  values (87.7%, aggregates included) are exact multiples of 1,000,000 -- the WTO
-  reporting unit is millions, so the stored last digits carry the storage convention,
-  not the data-generating process. The raw snapshot is committed
+- SP.POP.TOTL (trial 1, retro-checked) -- ACCEPT. N=217, span 5.17, 5/217 (2.3%)
+  nonzero multiples of 1000.
+- NY.GDP.MKTP.CD (trial 1, retro-checked) -- ACCEPT. N=204, span 5.65, 12/204 (5.9%).
+- NE.EXP.GNFS.CD -- ACCEPT. N=175, span 5.32 orders, 11/175 (6.3%) nonzero multiples
+  of 1000, no zeros/negatives.
+- IT.CEL.SETS -- ACCEPT. N=172, span 4.88 orders, 16/172 (9.3%) nonzero multiples of
+  1000 (disclosed: partial reporting-rounding is a known conviction mechanism for the
+  last-digit test), no zeros/negatives.
+- TX.VAL.MRCH.CD.WT -- REJECT on the precision precondition, on the declared
+  real-country universe: N=205, of which 204 nonzero values (99.5% of 205; 100% of the
+  204 nonzero) are exact multiples of 1,000,000, and the one remaining value is exactly
+  0 -- the WTO reporting unit is millions, so the stored last digits carry the storage
+  convention, not the data-generating process. An earlier version of this file reported
+  the rejection statistic on the wrong universe (221 of 252 non-null values = 87.7%,
+  aggregates included, contradicting the declared real-country methodology) -- caught by
+  the collective's Skeptic during the trial-2 gauntlet and corrected here; on the
+  declared universe the rejection is stronger, not weaker. The raw snapshot is committed
   (wb-merchexports-2023-rejected.json) so this rejection is independently checkable.
 
 Trial 2 was appended with exactly:

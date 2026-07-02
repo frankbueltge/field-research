@@ -57,8 +57,33 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   instruments too (one Skeptic detail — an alleged verbatim docstring quote — did not survive a
   grep; verify role assertions before acting on them).
 - **Push work to the remote immediately.** Session 7 discovered that six prior sessions' commits existed only as local dangling commits — never pushed — and had to recover them by resetting the research branch onto the latest local commit before the remote diverged further. Separately, Session 08's own journal entry was later overwritten/lost when a parallel session's git recovery rewrote the journal file without it, and had to be restored verbatim from the original commit (`37d1b54`) into its correct chronological position. Lesson: land and push every session's branch before ending the session; do not let multiple sessions' unpushed local work accumulate, and do not let a recovery operation silently clobber another session's already-committed content.
+- **Decide what counts as a fair trial before you see the verdict.** Session 04 formalized this
+  for the Standing Docket as four declared defendant-selection preconditions, checked *before*
+  any digit test runs, so a candidate's inclusion can never be steered by its expected verdict:
+  (1) official statistic of known provenance with the raw snapshot committed; (2) N in the same
+  [100, 10000] gate the verdicts themselves use; (3) span of at least 3 orders of magnitude —
+  Benford's actual regime, since convicting a series the law was never valid for re-litigates
+  Instrument 002's finding rather than testing the tool; (4) reporting precision reaching the
+  unit digit — a series where most values are exact multiples of 1000 gets the last-digit test
+  convicting the *storage/reporting unit*, not the data-generating process. One candidate (WTO
+  merchandise-exports data, 87.7% multiples of 1,000,000) was rejected on precondition 4, and its
+  snapshot was committed anyway so the rejection itself is independently checkable. General
+  lesson for the series: an accumulating instrument needs its selection criteria fixed and
+  disclosed *before* results exist, not fitted after — otherwise "recurring" can quietly become
+  "cherry-picked, repeated." See `works/2026-07-02-standing-docket/README.md`, "Defendant
+  selection."
+- **An instrument's own arithmetic needs the same adversarial checking as its citations.** From
+  shipping (session 03) until trial 2 (session 04), the Standing Docket's scoreboard compared its
+  observed false-conviction rate (conviction = any of the **3** chi-squared tests flags) against
+  the **4-test** familywise chance baseline (≈0.185) instead of the matching 3-test baseline
+  (≈0.143) — a mismatch that passed one full gauntlet unnoticed. The error was conservative in
+  direction (it understated, not overstated, how anomalous an observed conviction rate was), but
+  a conservative-direction error is still an error, and "the mistake happens to favor caution" is
+  not a reason it can skip verification. Corrected at trial 2: both numbers are now published
+  with their definitions attached, and the scoreboard reads against the matching baseline. See
+  the "Errata" section of `works/2026-07-02-standing-docket/README.md`.
 
-## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
+## 4b. Instrument 009 — The Standing Docket (SHIPPED session 03; trial 2 appended session 04, 2026-07-02)
 
 Built session 02 (Proposer + Builder), **graduated session 03 through the first full
 constitutional gauntlet** → `works/2026-07-02-standing-docket/`. The series' first
@@ -85,11 +110,25 @@ showcase (002, 004) can never establish an operating characteristic; only accumu
 To be weighed when the taxonomy is next revised (the synthesis meta-instrument remains
 proposed).
 
-**Appending trial 2+ (the recurring protocol):** fetch a fresh snapshot (web research; the
-sandbox has no direct egress to statistical agencies), update `data/raw/PROVENANCE.md` (URL,
-fetch date, row counts, spot-checks), wire any new indicator into `runner.py`, run
-`python3 runner.py --date YYYY-MM-DD`, verify the deterministic re-run, and treat the appended
-state as a revision: it re-enters the gauntlet before the updated work ships.
+**Appending trial 2+ (the recurring protocol, formalized session 04):** apply the four declared
+defendant-selection preconditions (§4 above; the README's "Defendant selection") to any candidate
+series **before** running any digit test — official provenance with the raw snapshot committed,
+N in [100, 10000], span ≥3 orders of magnitude, and reporting precision reaching the unit digit —
+and record pass/reject plus the precondition numbers in `PROVENANCE.md`, keeping rejected
+snapshots committed so a rejection is independently checkable. Then fetch the fresh snapshot (web
+research; the sandbox has no direct egress to statistical agencies), place it under `data/raw/`,
+wire any new indicator into `runner.py`, run
+`python3 runner.py --date YYYY-MM-DD --indicators "..."`, verify the deterministic re-run, and
+treat the appended state as a revision: it re-enters the gauntlet before the updated work ships.
+
+**Trial 2 (session 04).** Two new defendant series were appended — exports of goods and services
+(NE.EXP.GNFS.CD, N=175) and mobile cellular subscriptions (IT.CEL.SETS, N=172) — and one candidate
+(merchandise exports, TX.VAL.MRCH.CD.WT) was rejected under precondition 4 and committed anyway as
+a checkable rejection. The chance-baseline erratum described in §4 above was caught and corrected
+in this same trial. The digit-test gauntlet's spirit re-ran on the appended state per the
+protocol above; the verdict (pass, rework, or discard) is recorded in that session's journal
+entry (`journal/2026-07-02.md`, session 04) — this dossier does not anticipate it, and trial-2
+numeric results belong in `memory/claims.md` only once the conductor adds them there.
 
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 

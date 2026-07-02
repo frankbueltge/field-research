@@ -72,12 +72,21 @@ for (const trial of trials) {
 const alphaPerTest = cumulative.expected_false_conviction_rate_by_chance_alpha || {};
 const alphaValue: number = alphaPerTest.first_digit_chi2 ?? 0.05;
 
-// Pilot gate: below this many clean-series scorings, the cumulative rates
-// are not statistically distinguishable from the chance baseline and the
-// scoreboard says so on its face. The floor is a declared convention of
-// this instrument, not a statistical constant.
+// Pilot gate, two-dimensional: the scoreboard stays in pilot stage until
+// BOTH floors clear -- at least PILOT_FLOOR clean-series scorings (rows)
+// AND at least DATE_FLOOR distinct snapshot dates (moments). Rows guard
+// against too few observations; dates guard against clearing the floor by
+// volume within a single sitting. Both floors are declared conventions of
+// this instrument, not statistical constants.
 const PILOT_FLOOR = 10;
+const DATE_FLOOR = 3;
 const cleanTested: number = cumulative.clean_real_series_tested ?? 0;
+const snapshotDates = new Set<string>();
+for (const trial of trials) {
+  for (const s of trial.series || []) snapshotDates.add(s.snapshot_date || trial.date);
+}
+const dateCount = snapshotDates.size;
+const inPilot: boolean = cleanTested < PILOT_FLOOR || dateCount < DATE_FLOOR;
 const cleanConvicted: number = cumulative.clean_real_series_convicted ?? 0;
 const famRate: number = cumulative.expected_familywise_rate_by_chance ?? 0;
 // Chance baseline for a CONVICTION (any of the 3 chi2 tests flags; MAD does
@@ -120,14 +129,17 @@ const pObservedByChance: number =
 
   <section class="scoreboard" aria-label="cumulative conviction record">
     <div class="scoreboard-title">CUMULATIVE CONVICTION RECORD -- {cumulative.trial_count} trial(s), {cumulative.clean_real_series_tested} real-series scorings</div>
-    {cleanTested < PILOT_FLOOR && (
+    {inPilot && (
       <div class="pilot-banner">
-        PILOT STAGE -- {cleanTested} clean-series scoring(s) on record (declared floor: {PILOT_FLOOR}).
-        The chance of at least one false conviction across {cleanTested} clean scorings is
-        already {pct(pAnyByChance)} by chance alone; the chance of at least the {cleanConvicted}
-        observed conviction(s) is {pct(pObservedByChance)} (exact binomial, independence assumed --
-        an assumption cross-country series only approximate). Read the stamps; the rates stay
-        silent until the stack is tall enough to speak.
+        PILOT STAGE -- {cleanTested} clean-series scoring(s) on record (declared floor: {PILOT_FLOOR})
+        across {dateCount} distinct snapshot date(s) (declared floor: {DATE_FLOOR}). Rows can
+        accumulate in one sitting; recurrence cannot -- the scoreboard stays silent until both
+        floors clear. The chance of at least one false conviction across {cleanTested} clean
+        scorings is already {pct(pAnyByChance)} by chance alone; the chance of at least the
+        {cleanConvicted} observed conviction(s) is {pct(pObservedByChance)} (exact binomial,
+        independence assumed -- an assumption these same-vintage, country-size-keyed series only
+        approximate, so read that number as arithmetic under a strained assumption, not as
+        evidence). Read the stamps; the rates stay silent until the stack is tall enough to speak.
       </div>
     )}
     <div class="scoreboard-grid">
@@ -186,10 +198,13 @@ const pObservedByChance: number =
       official statistics of known provenance; 100 &le; N &le; 10000; values spanning at least 3 orders
       of magnitude (Benford's regime); and reporting precision reaching the unit digit -- a series whose
       values are mostly exact multiples of 1000 is rejected, because the last-digit test would then
-      measure the storage unit, not the data. One candidate has been rejected on that ground so far
-      (merchandise exports, stored in millions -- see README.md and PROVENANCE.md); partial rounding
-      below the rejection threshold is disclosed per trial and is itself a documented conviction
-      mechanism (surplus of terminal zeros -- the mirror image of the fabrication signature).
+      measure the storage unit, not the data. The machine-checkable checks are codified in
+      <code>preconditions.py</code> (added at the trial-2 gauntlet's demand; it reproduces every
+      selection verdict, including retro-checks of trial 1's defendants). One candidate has been
+      rejected on that ground so far (merchandise exports, stored in millions -- see README.md and
+      PROVENANCE.md); partial rounding below the rejection threshold is disclosed per trial and is
+      itself a documented conviction mechanism (surplus of terminal zeros -- the mirror image of the
+      fabrication signature).
     </p>
     <p>
       N-gate: verdicts are only considered valid for 100 &le; N &le; 10000. Outside that range a row is

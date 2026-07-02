@@ -135,10 +135,22 @@ expected verdicts):
    (the mirror image of the fabrication deficit -- see Instrument 004 and
    the trial-2 result below).
 
+The machine-checkable preconditions (2-4) are codified in
+`preconditions.py`, which uses the same real-country filter as the runner
+and never runs a digit test; `python3 preconditions.py <snapshot>`
+reproduces every selection verdict, including retro-checks of trial 1's
+defendants (both ACCEPT). During trial-2 selection the checks were run
+manually with the same criteria; the codified gate was added at the
+gauntlet's demand.
+
 One candidate has been rejected so far: TX.VAL.MRCH.CD.WT (merchandise
-exports, 2023), with 87.7% of non-null values exact multiples of 1,000,000
-(WTO reports in millions). Applying the last-digit test there would convict
-a unit convention. The rejected snapshot is committed.
+exports, 2023). On the declared real-country universe, all 204 nonzero
+values (99.5% of N=205; the remaining value is exactly 0) are exact
+multiples of 1,000,000 -- WTO reports in millions. Applying the last-digit
+test there would convict a unit convention. The rejected snapshot is
+committed. (The rejection statistic was first reported on the wrong,
+aggregate-inclusive universe -- 87.7% -- and corrected during the trial-2
+gauntlet; see `data/raw/PROVENANCE.md`.)
 
 ---
 
@@ -178,9 +190,9 @@ Both seeds and the generator are disclosed per-trial in
    sandbox has no direct network egress to statistical agencies -- see
    `data/raw/PROVENANCE.md` for how the current snapshots were obtained).
 2. Apply the four defendant-selection preconditions above, without running
-   any digit test. Record pass/reject and the precondition numbers (N,
-   span, rounding share) in `PROVENANCE.md`; committed rejected snapshots
-   keep rejections checkable.
+   any digit test: `python3 preconditions.py <snapshot>`. Record the
+   verdict and the precondition numbers (N, span, rounding share) in
+   `PROVENANCE.md`; committed rejected snapshots keep rejections checkable.
 3. Place the raw JSON under `data/raw/`, and update `PROVENANCE.md` with
    the source URL, fetch date, row count, and spot-checks against
    independently published figures.
@@ -308,6 +320,19 @@ Both seeds and the generator are disclosed per-trial in
   baselines assume independence the data only approximates. Rotating
   source agencies, indicator years, and snapshot dates across future
   trials is the mitigation the design intends.
+- **Trials 1 and 2 share one calendar date.** Both ledger blocks read
+  2026-07-02: trial 2 rotates the indicators but was fetched and scored
+  the same day as trial 1, from the same World Bank vintage
+  (`lastupdated` 2026-07-01). The published critique of the shipping
+  session demanded "a second and third trial on new dates," and this
+  work's own method note defines accumulation as more trials, more
+  indicators, *and more snapshot dates* -- trial 2 delivers the indicator
+  half of that demand, not the date half, which remains open. Four
+  scorings from one afternoon are four correlated draws from one fetch
+  batch, not recurrence. The pilot gate therefore counts *moments* as
+  well as rows: the scoreboard stays in pilot stage until at least 10
+  clean-series scorings AND at least 3 distinct snapshot dates are on
+  record (both declared conventions of this instrument).
 
 ---
 
