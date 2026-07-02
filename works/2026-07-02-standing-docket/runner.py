@@ -8,6 +8,13 @@ record, and writes data.json (the same object the Astro work renders).
 
 Usage:
     python3 runner.py --date 2026-07-02
+    python3 runner.py --date YYYY-MM-DD --indicators "file.json:YYYY,file.json:YYYY"
+
+--indicators rotates the real defendant series for a trial: a comma-
+separated list of raw-snapshot filenames (under data/raw/) with the
+indicator year after a colon. The default is trial 1's pair, so the
+original invocation stays reproducible. Every trial's exact invocation
+is recorded in data/raw/PROVENANCE.md.
 
 Deterministic: synthetic_benford uses random.Random(42), synthetic_human
 uses random.Random(43). Both seeds are fixed in this file and disclosed in
@@ -168,11 +175,27 @@ def score_real_series(source, indicator_id, indicator_label, indicator_date, sna
 # Trial construction
 # ---------------------------------------------------------------------
 
-def build_trial(trial_id, date, snapshot_date):
-    real_ids = load_real_country_ids()
+DEFAULT_INDICATORS = "wb-pop-2023.json:2023,wb-gdp-2023.json:2023"
 
-    pop_values, pop_id, pop_label, pop_lastupdated = load_indicator_values("wb-pop-2023.json", real_ids)
-    gdp_values, gdp_id, gdp_label, gdp_lastupdated = load_indicator_values("wb-gdp-2023.json", real_ids)
+
+def parse_indicator_specs(spec_string):
+    """Parse 'file.json:YYYY,file.json:YYYY' into [(filename, indicator_date), ...]."""
+    specs = []
+    for part in spec_string.split(","):
+        part = part.strip()
+        if not part:
+            continue
+        filename, _, indicator_date = part.rpartition(":")
+        if not filename or not indicator_date:
+            raise ValueError("bad indicator spec %r (expected file.json:YYYY)" % part)
+        specs.append((filename, indicator_date))
+    if not specs:
+        raise ValueError("no indicator specs given")
+    return specs
+
+
+def build_trial(trial_id, date, snapshot_date, indicator_specs):
+    real_ids = load_real_country_ids()
 
     synthetic_benford_values = generate_synthetic_benford()
     synthetic_human_values = generate_synthetic_human()
@@ -182,14 +205,14 @@ def build_trial(trial_id, date, snapshot_date):
         score_control("synthetic_human", synthetic_human_values, expect_clean=False),
     ]
 
-    series = [
-        score_real_series(
-            "World Bank", pop_id, pop_label, "2023", snapshot_date, pop_values
-        ),
-        score_real_series(
-            "World Bank", gdp_id, gdp_label, "2023", snapshot_date, gdp_values
-        ),
-    ]
+    series = []
+    for filename, indicator_date in indicator_specs:
+        values, ind_id, ind_label, _lastupdated = load_indicator_values(filename, real_ids)
+        series.append(
+            score_real_series(
+                "World Bank", ind_id, ind_label, indicator_date, snapshot_date, values
+            )
+        )
 
     clean_real_series_flagged = [s["indicator"] for s in series if s["convicted"]]
     tests_disagreeing = [s["indicator"] for s in series if s["chi2_mad_disagree"]]
@@ -275,6 +298,13 @@ def compute_cumulative(trials):
     )
 
     alpha = dt.ALPHA
+    # Conviction is defined as "any of the 3 chi-squared tests flags" (MAD is
+    # tracked separately and does not convict), so the chance baseline for the
+    # conviction rate uses 3 tests. The 4-test familywise number is the chance
+    # that at least one of all four recorded tests (3 chi2 + MAD at a nominal
+    # alpha) flags; it was the only baseline published before trial 2 -- see
+    # the Errata section in README.md.
+    expected_conviction_rate_by_chance = 1 - (1 - alpha) ** 3
     expected_familywise_rate_by_chance = 1 - (1 - alpha) ** 4
 
     return {
@@ -289,19 +319,27 @@ def compute_cumulative(trials):
         "expected_false_conviction_rate_by_chance_alpha": {
             name: alpha for name in CHI2_TEST_NAMES
         },
+        "expected_conviction_rate_by_chance": expected_conviction_rate_by_chance,
         "expected_familywise_rate_by_chance": expected_familywise_rate_by_chance,
         "note": (
             "expected_false_conviction_rate_by_chance_alpha is the per-test "
             "significance threshold (alpha=0.05), i.e. the false-positive rate "
             "expected on truly clean data from that single test alone by chance. "
-            "But each series here is put through 4 tests (3 chi2 tests + 1 MAD "
-            "check), so the chance that AT LEAST ONE test flags a truly clean "
-            "series is higher than 0.05: assuming independence, "
-            "1-(1-0.05)^4 = %.6f (stored as expected_familywise_rate_by_chance). "
-            "This is arithmetic, not an empirical claim -- it is the theoretical "
-            "baseline the observed false_conviction_rate_on_clean_real_data "
-            "should be compared against, not zero."
-        ) % expected_familywise_rate_by_chance,
+            "A series is CONVICTED if at least one of the 3 chi2 tests flags it "
+            "(MAD is tracked separately and does not convict), so the chance of "
+            "a false conviction on a truly clean series is, assuming test "
+            "independence, 1-(1-0.05)^3 = %.6f (stored as "
+            "expected_conviction_rate_by_chance). This is the baseline the "
+            "observed false_conviction_rate_on_clean_real_data should be "
+            "compared against, not zero. The 4-test familywise number "
+            "1-(1-0.05)^4 = %.6f (expected_familywise_rate_by_chance) is the "
+            "chance that at least one of all four recorded tests (3 chi2 + MAD, "
+            "treating MAD's cutoff as if it had a nominal 0.05 alpha) flags a "
+            "clean series; MAD's actual false-flag rate at N in the low "
+            "hundreds is known to exceed that nominal treatment (Cerqueti & "
+            "Lupi, arXiv:2202.05237). Both numbers are arithmetic, not "
+            "empirical claims."
+        ) % (expected_conviction_rate_by_chance, expected_familywise_rate_by_chance),
     }
 
 
@@ -317,9 +355,16 @@ def main():
         default=None,
         help="Snapshot date of the underlying raw data (defaults to --date)",
     )
+    parser.add_argument(
+        "--indicators",
+        default=DEFAULT_INDICATORS,
+        help="Comma-separated raw-snapshot specs 'file.json:YYYY' for this trial's "
+             "real defendant series (default: trial 1's pair)",
+    )
     args = parser.parse_args()
 
     snapshot_date = args.snapshot_date or args.date
+    indicator_specs = parse_indicator_specs(args.indicators)
 
     if os.path.exists(LEDGER_PATH):
         with open(LEDGER_PATH, "r", encoding="utf-8") as f:
@@ -329,7 +374,7 @@ def main():
         trials = []
 
     next_trial_id = len(trials) + 1
-    trial = build_trial(next_trial_id, args.date, snapshot_date)
+    trial = build_trial(next_trial_id, args.date, snapshot_date, indicator_specs)
     trials.append(trial)
 
     cumulative = compute_cumulative(trials)

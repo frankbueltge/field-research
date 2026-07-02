@@ -78,10 +78,33 @@ const alphaValue: number = alphaPerTest.first_digit_chi2 ?? 0.05;
 // this instrument, not a statistical constant.
 const PILOT_FLOOR = 10;
 const cleanTested: number = cumulative.clean_real_series_tested ?? 0;
+const cleanConvicted: number = cumulative.clean_real_series_convicted ?? 0;
 const famRate: number = cumulative.expected_familywise_rate_by_chance ?? 0;
+// Chance baseline for a CONVICTION (any of the 3 chi2 tests flags; MAD does
+// not convict): 1-(1-alpha)^3. Before trial 2 the scoreboard compared the
+// conviction rate against the 4-test familywise number instead -- see the
+// Errata section in README.md.
+const convRate: number = cumulative.expected_conviction_rate_by_chance ?? (1 - Math.pow(1 - alphaValue, 3));
 // Chance of at least one false conviction across ALL clean scorings so far,
-// under the disclosed familywise baseline (independence assumed).
-const pAnyByChance: number = cleanTested > 0 ? 1 - Math.pow(1 - famRate, cleanTested) : 0;
+// under the conviction baseline (independence assumed).
+const pAnyByChance: number = cleanTested > 0 ? 1 - Math.pow(1 - convRate, cleanTested) : 0;
+
+// Exact binomial tail: P(X >= k) with X ~ Binomial(n, p). Small n; direct sum.
+function binomTail(n: number, k: number, p: number): number {
+  function choose(n: number, k: number): number {
+    let c = 1;
+    for (let i = 0; i < k; i++) c = (c * (n - i)) / (i + 1);
+    return c;
+  }
+  let tail = 0;
+  for (let j = k; j <= n; j++) tail += choose(n, j) * Math.pow(p, j) * Math.pow(1 - p, n - j);
+  return tail;
+}
+// Chance of at least the OBSERVED number of convictions, by chance alone,
+// under the same independence assumption (which real cross-country series
+// only approximate -- they are all keyed to country size).
+const pObservedByChance: number =
+  cleanTested > 0 && cleanConvicted > 0 ? binomTail(cleanTested, cleanConvicted, convRate) : 1;
 ---
 
 <section class="docket">
@@ -100,17 +123,18 @@ const pAnyByChance: number = cleanTested > 0 ? 1 - Math.pow(1 - famRate, cleanTe
     {cleanTested < PILOT_FLOOR && (
       <div class="pilot-banner">
         PILOT STAGE -- {cleanTested} clean-series scoring(s) on record (declared floor: {PILOT_FLOOR}).
-        At this sample size the rates below are not statistically distinguishable from the chance
-        baseline: the chance of at least one false conviction across {cleanTested} clean scorings is
-        already {pct(pAnyByChance)} by chance alone. Read the stamps; the rates stay silent until
-        the stack is tall enough to speak.
+        The chance of at least one false conviction across {cleanTested} clean scorings is
+        already {pct(pAnyByChance)} by chance alone; the chance of at least the {cleanConvicted}
+        observed conviction(s) is {pct(pObservedByChance)} (exact binomial, independence assumed --
+        an assumption cross-country series only approximate). Read the stamps; the rates stay
+        silent until the stack is tall enough to speak.
       </div>
     )}
     <div class="scoreboard-grid">
       <div class="stat">
         <div class="stat-label">false-conviction rate, clean real data</div>
         <div class="stat-value">{pct(cumulative.false_conviction_rate_on_clean_real_data)}</div>
-        <div class="stat-sub">expected by chance (familywise, 4 tests/series): {pct(cumulative.expected_familywise_rate_by_chance)}</div>
+        <div class="stat-sub">expected by chance (any of 3 chi2 tests): {pct(convRate)}</div>
       </div>
       <div class="stat">
         <div class="stat-label">detection rate, synthetic fraud control</div>
@@ -129,13 +153,19 @@ const pAnyByChance: number = cleanTested > 0 ? 1 - Math.pow(1 - famRate, cleanTe
       </div>
     </div>
     <div class="scoreboard-note">
-      Per-test expected false-conviction rate by chance (alpha = {alphaValue}): {pct(alphaValue)} each,
-      for {CHI2_TESTS.length} chi2 tests. With {Object.keys(TEST_LABELS).length} tests scored per series
-      (3 chi2 + 1 MAD), the familywise chance of at least one false flag on a truly clean series is
-      1-(1-{alphaValue})^{Object.keys(TEST_LABELS).length} = {pct(cumulative.expected_familywise_rate_by_chance)}.
-      This is arithmetic, not an empirical claim -- it is the baseline the observed rate above should be read against.
-      Across all {cleanTested} clean-series scoring(s) so far, the chance of at least one false conviction
-      by chance alone is 1-(1-{famRate.toFixed(3)})^{cleanTested} = {pct(pAnyByChance)}.
+      Per-test expected false-conviction rate by chance (alpha = {alphaValue}): {pct(alphaValue)} each.
+      A series is CONVICTED when any of the {CHI2_TESTS.length} chi2 tests flags it (MAD is recorded
+      but does not convict), so the chance of a false conviction on a truly clean series is
+      1-(1-{alphaValue})^{CHI2_TESTS.length} = {pct(convRate)} -- the baseline the observed rate above
+      should be read against, not zero. With all {Object.keys(TEST_LABELS).length} recorded tests counted
+      (3 chi2 + 1 MAD, MAD treated as if its cutoff had a nominal {alphaValue} alpha), the familywise
+      any-flag chance is 1-(1-{alphaValue})^{Object.keys(TEST_LABELS).length} = {pct(famRate)}; MAD's
+      actual false-flag rate at N in the low hundreds is higher than that nominal treatment (see
+      DISCLOSURE). Both numbers are arithmetic, not empirical claims. Across all {cleanTested}
+      clean-series scoring(s) so far, the chance of at least one false conviction by chance alone is
+      1-(1-{convRate.toFixed(3)})^{cleanTested} = {pct(pAnyByChance)}. Until trial 2 this scoreboard
+      compared the conviction rate against the 4-test number -- corrected, and documented in the
+      Errata section of README.md.
     </div>
   </section>
 
@@ -143,11 +173,23 @@ const pAnyByChance: number = cleanTested > 0 ? 1 - Math.pow(1 - famRate, cleanTe
     <div class="disclosure-title">DISCLOSURE</div>
     <p>
       Synthetic controls generated with <code>random.Random(seed)</code> -- synthetic_benford seed 42,
-      synthetic_human seed 43, N=200 each, deterministic. Real series: World Bank indicators
-      SP.POP.TOTL (population, total, 2023) and NY.GDP.MKTP.CD (GDP, current US$, 2023), snapshot date
-      2026-07-02, filtered to 217 / 204 real countries (aggregates excluded). p-values computed via a
-      self-written regularized incomplete gamma function, not a validated statistics library
+      synthetic_human seed 43, N=200 each, deterministic; the controls are regenerated from the same
+      fixed seeds every trial (a constant check on the tests, not accumulating evidence of their own).
+      Real defendant series are World Bank WDI snapshots, filtered to real countries (aggregates
+      excluded); each trial's indicators, N, and snapshot date are printed on its ledger block below,
+      with exact source URLs and fetch records in <code>data/raw/PROVENANCE.md</code>. p-values computed
+      via a self-written regularized incomplete gamma function, not a validated statistics library
       (unit-tested against textbook chi-squared critical values -- see README.md).
+    </p>
+    <p>
+      Defendant series are selected by declared preconditions, applied before any digit test is run:
+      official statistics of known provenance; 100 &le; N &le; 10000; values spanning at least 3 orders
+      of magnitude (Benford's regime); and reporting precision reaching the unit digit -- a series whose
+      values are mostly exact multiples of 1000 is rejected, because the last-digit test would then
+      measure the storage unit, not the data. One candidate has been rejected on that ground so far
+      (merchandise exports, stored in millions -- see README.md and PROVENANCE.md); partial rounding
+      below the rejection threshold is disclosed per trial and is itself a documented conviction
+      mechanism (surplus of terminal zeros -- the mirror image of the fabrication signature).
     </p>
     <p>
       N-gate: verdicts are only considered valid for 100 &le; N &le; 10000. Outside that range a row is

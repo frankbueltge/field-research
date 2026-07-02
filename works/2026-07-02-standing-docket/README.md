@@ -97,10 +97,48 @@ for exact source URLs, fetch date, row counts, and spot-checks. In brief:
 - `wb-gdp-2023.json` -- NY.GDP.MKTP.CD (GDP, current US$), 2023, filtered
   to the 204 real-country ids with non-null values (fewer countries report
   GDP than population).
+- `wb-expgnfs-2023.json` -- NE.EXP.GNFS.CD (exports of goods and services,
+  current US$), 2023, trial 2, N=175 real countries.
+- `wb-cel-2023.json` -- IT.CEL.SETS (mobile cellular subscriptions), 2023,
+  trial 2, N=172 real countries.
+- `wb-merchexports-2023-rejected.json` -- TX.VAL.MRCH.CD.WT (merchandise
+  exports, current US$), 2023 -- fetched for trial 2 and REJECTED as a
+  defendant (see Defendant selection below); committed so the rejection is
+  independently checkable.
 
 World Bank data are themselves revised over time; the snapshot date
 (2026-07-02) pinned in `PROVENANCE.md` is the reference point for this
 build, not a claim that the figures are final.
+
+---
+
+## Defendant selection -- declared preconditions
+
+A candidate series becomes a defendant only if it passes four preconditions,
+applied to the real-country subset **before any digit test is run** (digit
+tests are never run during selection, so selection cannot be steered by
+expected verdicts):
+
+1. **Official statistic of known provenance**, with the raw snapshot
+   committed under `data/raw/`.
+2. **N in [100, 10000]** (the same N-gate the verdicts use).
+3. **Span**: positive values cover at least 3 orders of magnitude --
+   Benford's regime; convicting a series the law was never valid for would
+   re-litigate Instrument 002, not try the tests.
+4. **Reporting precision reaches the unit digit**: if the majority of
+   non-null values are exact multiples of 1000, the series is rejected,
+   because the last digit of such values records the storage/reporting unit
+   (e.g. "stored in millions"), not the data-generating process. Partial
+   rounding below that threshold does not reject -- it is disclosed in
+   `PROVENANCE.md` per series, because a *surplus* of terminal zeros from
+   innocent reporting-rounding is itself a documented conviction mechanism
+   (the mirror image of the fabrication deficit -- see Instrument 004 and
+   the trial-2 result below).
+
+One candidate has been rejected so far: TX.VAL.MRCH.CD.WT (merchandise
+exports, 2023), with 87.7% of non-null values exact multiples of 1,000,000
+(WTO reports in millions). Applying the last-digit test there would convict
+a unit convention. The rejected snapshot is committed.
 
 ---
 
@@ -139,20 +177,29 @@ Both seeds and the generator are disclosed per-trial in
 1. Fetch a new World Bank (or other) snapshot via web research (the build
    sandbox has no direct network egress to statistical agencies -- see
    `data/raw/PROVENANCE.md` for how the current snapshots were obtained).
-2. Place the raw JSON under `data/raw/`, and update `PROVENANCE.md` with
-   the source URL, fetch date, row count, and any spot-checks.
-3. If it's a new indicator, wire it into `runner.py`'s `build_trial()`
-   (add a `load_indicator_values(...)` call and a `score_real_series(...)`
-   entry).
-4. Run:
+2. Apply the four defendant-selection preconditions above, without running
+   any digit test. Record pass/reject and the precondition numbers (N,
+   span, rounding share) in `PROVENANCE.md`; committed rejected snapshots
+   keep rejections checkable.
+3. Place the raw JSON under `data/raw/`, and update `PROVENANCE.md` with
+   the source URL, fetch date, row count, and spot-checks against
+   independently published figures.
+4. Run, listing the trial's defendant snapshots explicitly:
    ```
-   python3 runner.py --date YYYY-MM-DD
+   python3 runner.py --date YYYY-MM-DD --indicators "file.json:YYYY,file.json:YYYY"
    ```
-   This appends a new trial to `ledger.json`, recomputes the cumulative
-   block over *all* trials so far, and rewrites `data.json` (the object
-   `work.astro` renders). The synthetic controls are regenerated fresh
-   each trial from the same fixed seeds (42 / 43) -- they are meant to be
-   a constant check on the tests, not to accumulate their own history.
+   (without `--indicators`, the default is trial 1's pair, kept so the
+   original invocation stays reproducible). This appends a new trial to
+   `ledger.json`, recomputes the cumulative block over *all* trials so
+   far, and rewrites `data.json` (the object `work.astro` renders). The
+   synthetic controls are regenerated fresh each trial from the same fixed
+   seeds (42 / 43) -- they are meant to be a constant check on the tests,
+   not to accumulate their own history. Record the exact invocation in
+   `PROVENANCE.md` and verify a deterministic re-run from the pre-trial
+   ledger state is byte-identical.
+5. An appended trial is a revision of this shipped work: it re-enters the
+   collective's gauntlet (independent verification and refutation attempt
+   on the exact new state) before the updated work ships.
 
 ---
 
@@ -175,31 +222,48 @@ Both seeds and the generator are disclosed per-trial in
   World Bank revises historical figures over time, so a re-fetch on a
   later date may not reproduce byte-identical inputs even for the same
   nominal indicator-year.
-- **Only two indicators so far.** Trial 1 covers population and GDP for
-  2023. The conviction record (`false_conviction_rate_on_clean_real_data`,
-  etc.) is built from `clean_real_series_tested` scorings, which is 2 after
-  trial 1 -- far too small to treat any rate in the current ledger as a
-  stable estimate. The point of the ledger is that this number accumulates
-  across trials; read the early entries as a small pilot, not a verdict.
-- **Multiple-comparisons baseline.** Every series is put through 4 tests
-  (3 chi-squared + 1 MAD). Even on genuinely clean data, the chance that
-  *at least one* test flags it by chance alone is higher than the 0.05
-  per-test alpha: assuming independence, `1 - (1-0.05)^4 ≈ 0.185`. This
-  number (`expected_familywise_rate_by_chance` in the cumulative block) is
+- **Only four clean-series scorings so far.** Trial 1 covers population
+  and GDP (2023); trial 2 covers exports of goods and services and mobile
+  cellular subscriptions (2023). The conviction record
+  (`false_conviction_rate_on_clean_real_data`, etc.) is built from
+  `clean_real_series_tested` scorings, which is 4 after trial 2 -- still
+  below this instrument's declared pilot floor of 10. The point of the
+  ledger is that this number accumulates across trials; read the early
+  entries as a small pilot, not a verdict.
+- **Multiple-comparisons baseline.** A series is CONVICTED when at least
+  one of the 3 chi-squared tests flags it; the MAD is recorded alongside
+  but does not convict. On genuinely clean data the chance of a false
+  conviction is therefore, assuming test independence,
+  `1 - (1-0.05)^3 ≈ 0.143` (`expected_conviction_rate_by_chance`). This is
   arithmetic, not an empirical claim, and it is the baseline the observed
   `false_conviction_rate_on_clean_real_data` should be compared against --
-  not zero. Concretely: at trial 1 only two clean real series are on the
-  docket, and the chance that at least one of two clean series draws a
-  conviction by chance alone is `1-(1-0.185)^2 ≈ 0.337`. The observed
-  1-of-2 is therefore not statistically distinguishable from chance at
-  this sample size -- the early ledger rates are pilot numbers, not yet
-  evidence against the tests. In trial 1, the population series was
-  convicted by the second-digit chi-squared test (p ≈ 0.034) while GDP was
-  not, and the first-digit MAD flagged *both* real series and *both*
-  synthetic controls at N=200-217 despite the chi-squared first-digit test
-  clearing three of those four -- i.e., MAD and chi2 disagreed on 3 of 4
-  series/controls in this trial. That disagreement rate is itself tracked
-  (`chi2_mad_conflict_rate`).
+  not zero. The 4-test familywise number `1 - (1-0.05)^4 ≈ 0.185`
+  (`expected_familywise_rate_by_chance`) answers a different question --
+  the chance that at least one of all four recorded tests flags a clean
+  series, treating MAD's cutoff as if it had a nominal 0.05 alpha (its
+  actual false-flag rate at N in the low hundreds is higher; see the next
+  bullet). Concretely, after trial 2: 4 clean scorings, 3 convicted. By
+  chance alone, P(at least 1 of 4 convicted) ≈ 0.46, and P(at least 3 of
+  4) ≈ 0.010 (exact binomial at p = 0.143) -- but the independence
+  assumption is doing real work in that arithmetic, and cross-country
+  series only approximate it (all four series are keyed to country size,
+  and the two trials share the same 2023 country universe). The early
+  ledger rates remain pilot numbers; the binomial tail is printed with its
+  assumption attached, not as a verdict on the tests.
+- **Per-trial conviction detail.** Trial 1: population convicted by the
+  second-digit chi-squared test (p ≈ 0.034), GDP cleared; MAD flagged both
+  real series and both synthetic controls at N=200-217 (chi2/MAD
+  disagreement on 3 of 4 rows). Trial 2: exports of goods and services
+  convicted by the second-digit test (p ≈ 0.013) -- the same test that
+  convicted population in trial 1; mobile cellular subscriptions convicted
+  by the last-digit test (p ≈ 5e-9), driven by a surplus of terminal zeros
+  (45 of 172 values end in 0 vs. 17.2 expected), consistent with the
+  disclosed partial reporting-rounding in that indicator (9.3% of values
+  are exact multiples of 1000) -- the innocent-rounding signature
+  documented in Instrument 004 (surplus at round digits, the mirror image
+  of the fabrication deficit), now observed on real official data. MAD
+  flagged all four clean series to date (`chi2_mad_conflict_rate` 0.75
+  over 8 rows).
 - **The chi2/MAD conflict has a known mechanism.** The disagreement is not
   an open puzzle this ledger discovered: Cerqueti & Lupi -- the same source
   used above for the cutoff values -- derive the distribution of the MAD
@@ -235,8 +299,36 @@ Both seeds and the generator are disclosed per-trial in
   data, being census-based, is comparatively harder to fabricate than GDP
   is the conductor's conjecture, marked as such -- not a sourced
   finding.)
-- **Sample size asymmetry.** Population N=217, GDP N=204 -- both real
-  country counts as of the 2026-07-02 snapshot, not independently chosen.
+- **Sample size asymmetry.** Population N=217, GDP N=204, exports of goods
+  and services N=175, mobile subscriptions N=172 -- all real country counts
+  as of the 2026-07-02 snapshot, not independently chosen.
+- **Clean-series scorings are not independent draws.** All defendant
+  series are cross-country totals keyed to country size, from the same
+  World Bank universe and (so far) the same indicator year; the binomial
+  baselines assume independence the data only approximates. Rotating
+  source agencies, indicator years, and snapshot dates across future
+  trials is the mitigation the design intends.
+
+---
+
+## Errata
+
+- **2026-07-02 (trial 2): chance baseline mismatched to the conviction
+  rule.** From shipping until trial 2, the scoreboard compared the observed
+  false-conviction rate (conviction = any of the **3** chi-squared tests
+  flags; MAD does not convict) against the **4-test** familywise baseline
+  `1-(1-0.05)^4 ≈ 0.185` instead of the matching 3-test baseline
+  `1-(1-0.05)^3 ≈ 0.143`. The mismatch was conservative -- it overstated
+  the chance baseline and therefore *understated* how anomalous an observed
+  conviction rate is -- but it was wrong, it passed one full gauntlet
+  unnoticed, and the pilot-banner arithmetic shipped with it (the trial-1
+  banner said "33.7% by chance" where the matched-baseline figure is
+  26.5%). Corrected at trial 2: the ledger now publishes both numbers
+  (`expected_conviction_rate_by_chance`, `expected_familywise_rate_by_chance`)
+  with their definitions, and the scoreboard reads the conviction rate
+  against the 3-test baseline. The instrument that tries the tests
+  mismeasured its own chance line; same rule as everywhere else in this
+  series: notice, disclose, fix.
 
 ---
 
