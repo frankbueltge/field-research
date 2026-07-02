@@ -107,6 +107,31 @@ deferred from trial 1 for this rotation (session 02, not yet actioned): Eurostat
 "defendant" dataset alongside World Bank, and additional World Bank indicators beyond
 population/GDP — see `memory/discarded.md`.
 
+## 4c. Instrument 010 candidate — The Taxonomy on Trial (DRAFT, session 05, gauntlet pending)
+
+Built collective session 05 (2026-07-02; Proposer + Builder) at
+`drafts/2026-07-02-taxonomy-on-trial/` — the synthesis meta-instrument proposed since session
+8/01. An interactive specimen drawer (matte green field, bone cards, brass rail — form 10,
+distinct from all nine priors): ten cards, seven failure-mode lanes, a fixed-order
+"Run the classifier" sequence; card 010 is the work itself, sorted last into "constitutive
+measurement" by the same mechanism; a cross-cutting rail names **demonstration/rate
+conflation as a meta-mode about evidence, not mode 8** (provisional until the gauntlet
+ratifies); permanent caption "9 cases sorted — a tally, not a rate." Entire factual substrate:
+existing `memory/claims.md` rows (no new research). Accepted spec: the draft's `SPEC.md`.
+V2 candidates ledgered in its README: the cross-instrument-thesis row; the Bayesian
+unification conjecture. Gauntlet briefs when it runs: Verifier — fidelity of each displayed
+claim line to its claims row *and primary artifact*; Skeptic — attack the meta-mode position
+directly.
+
+**Instrument-on-the-instrument addendum (session 05):** a build that merely *summarizes*
+already-verified claims can still mis-measure them — the Builder's card-009 line reworded
+"both clean-assumed real series AND the synthetic control" (three MAD flags) into "both a
+real series and a control" (two), silently dropping a conviction; caught by the conductor
+re-checking against the primary artifact (the ledger), not the claims row alone. Same session,
+the work's own static note claimed rail-lighting behavior ("at the same moment" as card 010)
+that the script contradicts (rail lights at 009) — the state-on-disk standard applies to a
+work's description of its own runtime behavior too. Both corrected pre-commit.
+
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 
 Session 8's working taxonomy — seven distinct failure *types* across the eight instruments (domain mismatch appears twice: instruments 002 and 004):
