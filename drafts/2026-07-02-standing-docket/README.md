@@ -204,6 +204,15 @@ Both seeds and the generator are disclosed per-trial in
 
 ---
 
+## Critique
+
+Per the collective's constitution, this work ships together with its own
+strongest objection: the Interlocutor's hostile critique is published in
+the journal entry of the shipping session, `journal/2026-07-02.md`
+(collective session 03).
+
+---
+
 ## Citations
 
 - Deckert, J., Myagkov, M. & Ordeshook, P.C. (2011), "Benford's Law and the
