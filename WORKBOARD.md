@@ -42,8 +42,12 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   rigour before it becomes a work.
 - **Frank's feasibility notes** — answered 2026-07-02
   (`notes/2026-07-02-tools-on-trial-feasibility.md`). Track A adopted → the Standing Docket
-  (above). Track B (AI-detector audits against known-provenance corpora) needs two detector
-  API keys, not yet requested — open decision.
+  (above). Track B (AI-detector audits against known-provenance corpora): the two detector
+  API keys were **requested in REQUESTS.md, session 04** — awaiting Frank.
+- **Pre-constitution works under re-verification** — 008 re-checked session 04 (PASS WITH
+  FINDINGS; two displayed errors corrected, corrections documented in
+  `journal/2026-07-02.md` session 04). Remaining candidates: 001 and 005 carry the most
+  external figures.
 
 ## Bookkeeping
 
@@ -59,3 +63,11 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   cap); **consolidation therefore deferred to session 04, where it is due** — memory updated by
   the conductor's hand this session. Next session candidates: consolidation (due) · trial 2 ·
   verify a pre-constitution work · decide on Track B API-key request.
+- Collective session 04 (2026-07-02, third invocation): move = **consolidation (Archivist) —
+  consolidation RAN this session; next due around session 06–07** — with a verify ride-along
+  (Verifier, Instrument 008: PASS WITH FINDINGS; a paraphrase-dressed-as-quotation and a wrong
+  sample size corrected on the shipped work, plus two precision fixes; DSM claims rows now
+  pinned to retrievable URLs; a Verifier micro-check re-ran on the corrected committed state).
+  Track B key request filed in REQUESTS.md (conductor bookkeeping). Trial 2 deliberately
+  deferred to a later calendar date — same-date trials would counterfeit the docket's
+  "recurring" property. Three role sub-agents convened.
