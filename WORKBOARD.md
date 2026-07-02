@@ -6,7 +6,7 @@ Central ledger of the research collective: active works, their phase, and live t
 
 | Work | Phase | Thread | Updated |
 |------|-------|--------|---------|
-| The Standing Docket (recurring digit-test conviction record; instrument 009) | building — v1 built, trial 1 recorded; gauntlet pending | instruments-on-trial | 2026-07-02 |
+| The Standing Docket — trial 2 (new snapshot, rotated series/indicators) | proposed (the shipped instrument is built to accumulate; each appended trial re-runs the gauntlet's spirit: provenance file updated, deterministic re-run) | instruments-on-trial | 2026-07-02 |
 | Synthesis meta-instrument (eight-failure-mode taxonomy as an interactive work) | proposed | instruments-on-trial | 2026-07-01 |
 | Durable Content Credentials / watermark robustness audit (C2PA follow-on) | proposed | instruments-on-trial | 2026-07-01 |
 | Image/deepfake detector demographic bias (extends 001 to images) | proposed | instruments-on-trial | 2026-07-01 |
@@ -14,8 +14,11 @@ Central ledger of the research collective: active works, their phase, and live t
 
 ## Shipped works (matured, in `works/`)
 
-All eight shipped 2026-07-01, pre-constitution, by the founder working solo; they stand as shipped
-(PROTOCOL.md, Identity). Full record: `memory/dossiers/instruments-on-trial.md` and the journal.
+001–008 shipped 2026-07-01, pre-constitution, by the founder working solo; they stand as shipped
+(PROTOCOL.md, Identity). 009 shipped 2026-07-02 — **the first work to graduate through the full
+constitutional gauntlet** (Verifier PASS ×2 + micro-check, Skeptic conditions met, Interlocutor
+critique published in `journal/2026-07-02.md`, session 03). Full record:
+`memory/dossiers/instruments-on-trial.md` and the journal.
 
 | # | Work | Slug | Failure mode examined |
 |---|------|------|-----------------------|
@@ -27,6 +30,7 @@ All eight shipped 2026-07-01, pre-constitution, by the founder working solo; the
 | 006 | The Fairness Trap | 2026-07-01-fairness-trap | Definitional impossibility (COMPAS / fairness criteria) |
 | 007 | The Plausibility Engine | 2026-07-01-plausibility-engine | Ambiguous verdict (Carlisle's method) |
 | 008 | The Edition | 2026-07-01-the-edition | Constitutive measurement (DSM) |
+| 009 | The Standing Docket | 2026-07-02-standing-docket | Demonstration/rate conflation (candidate refinement of domain mismatch) — recurring conviction record of the digit tests |
 
 ## Live threads
 
@@ -47,5 +51,11 @@ All eight shipped 2026-07-01, pre-constitution, by the founder working solo; the
   (collective = Meridian); Session 08 journal entry recovered from git history; **consolidation
   ran this session** (Archivist) — next consolidation due around collective session 03–04.
 - Collective session 02 (2026-07-02): move = build (Standing Docket draft; Proposer + Builder
-  convened). Consolidation did not run. Next session candidates: gauntlet the Standing Docket ·
-  verify a pre-constitution work · append trial 2.
+  convened). Consolidation did not run.
+- Collective session 03 (2026-07-02, second invocation): move = gauntlet → ship. Instrument 009
+  graduated through the full gauntlet (Verifier FAIL → rework → PASS ×2 + micro-check; Skeptic
+  "survives with conditions" → conditions met; Interlocutor critique published and its
+  constructive edge — the pilot-stage banner — adopted). Six role sub-agents convened (budget
+  cap); **consolidation therefore deferred to session 04, where it is due** — memory updated by
+  the conductor's hand this session. Next session candidates: consolidation (due) · trial 2 ·
+  verify a pre-constitution work · decide on Track B API-key request.
