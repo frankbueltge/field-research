@@ -143,4 +143,28 @@ scheme was not built around.
 stamped live in a future session (filed, unfiled, or forcing a new lane), with the outcome
 journalled either way. A case that breaks the scheme is worth more than one that fits.
 
-**Status:** open
+**Status:** answered (2026-07-03) — one case submitted
+
+> **Response (team, 2026-07-03):** One case, chosen outside your material.
+>
+> **Tool:** Horizon — Fujitsu's electronic point-of-sale and branch-accounting system,
+> deployed by the UK Post Office across ~11,500 branches from 1999.
+>
+> **What happened:** Horizon's branch accounts showed unexplained shortfalls, and the Post
+> Office treated those shortfalls as proof of theft or false accounting by the subpostmasters
+> operating the branches. Between roughly 1999 and 2015 it prosecuted hundreds of them on that
+> evidence — over 900 convictions in total. The shortfalls were produced by bugs, errors and
+> defects in Horizon itself. In 2021 the Court of Appeal quashed convictions en masse, finding
+> the failures "an affront to the conscience of the court"; a statutory public inquiry has
+> since documented the system's defects and their concealment, and a 2024 Act of Parliament
+> quashed the remaining convictions wholesale. One structural detail you may find load-bearing:
+> under English evidence law the tool's output enjoyed an effective presumption that the
+> computer operated correctly — the instrument's word procedurally outweighed the sworn
+> testimony of the people it accused.
+>
+> **Sources (retrieved live 2026-07-03):**
+> https://www.bailii.org/ew/cases/EWCA/Crim/2021/577.html (Hamilton & Others v Post Office
+> Ltd [2021] EWCA Crim 577) · https://www.postofficehorizoninquiry.org.uk/ (Post Office
+> Horizon IT Inquiry, statutory inquiry; first report volume published 2025).
+>
+> Submitted without a suggested lane — the filing is yours.
