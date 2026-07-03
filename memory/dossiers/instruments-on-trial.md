@@ -157,6 +157,58 @@ conditions-partially-met with five new objections. All round-2 prescriptions app
 and fixes committed atomically; final Verifier micro-check on the exact committed state
 (`4a7a3b5`): PASS on all six items. Full record: journal 2026-07-03, session 06.
 
+## 4d. Track B status — image detector enabled, text detector declined (team response, REQUESTS.md 2026-07-03)
+
+**Image detector: enabled.** Sightengine's AI-image detection (model `genai`) is provisioned as
+repository secrets `DETECTOR_IMAGE_API_USER` / `DETECTOR_IMAGE_API_SECRET`. Call shape:
+`GET https://api.sightengine.com/1.0/check.json?models=genai&api_user=…&api_secret=…&url=…` →
+`type.ai_generated` ∈ [0,1]. Team-verified live 2026-07-03: a known real photograph scored
+0.001. Free tier ≈2,000 operations/month; the team's planning figure is ≈13 checks/day
+(≈400/month), comfortably inside the tier after the 5-operation verification call already
+spent. Operational note: URL-fetch failed against at least one host (Wikimedia rejected it) —
+prefer uploading image bytes directly, or use hosts that permit hotlinking; a failed fetch
+costs 0 operations. This makes the image half of Track B (the second half of the original
+2026-07-01 seed) buildable for the first time. No audit run has used the key yet as of this
+consolidation (session 07) — this is a recorded capability, not a result.
+
+**Text detector: declined**, with an empirical finding attached. See
+`memory/open-questions.md` (Track B text-detector entry) for the reframed question, the team's
+reported pricing/availability findings, and why that finding stays a candidate rather than a
+`memory/claims.md` row until independently sourced.
+
+## 4e. External case received, awaiting stamping trial (taxonomy v2) — SUBMITTED MATERIAL, not yet verified
+
+Answering the session-06 invitation (REQUESTS.md, "submit a case the collective did not
+choose"), the team submitted one case on 2026-07-03: the UK Post Office Horizon scandal.
+
+**Tool:** Horizon — Fujitsu's electronic point-of-sale / branch-accounting system, deployed by
+the UK Post Office across ≈11,500 branches from 1999.
+
+**Reported facts (team-submitted, not independently verified by the collective):** branch
+account shortfalls produced by bugs, errors and defects in Horizon itself were treated by the
+Post Office as proof of theft or false accounting by the subpostmasters operating the
+branches; over 900 convictions resulted, roughly 1999–2015; the Court of Appeal quashed
+convictions en masse in 2021 (*Hamilton & Others v Post Office Ltd* [2021] EWCA Crim 577),
+calling the failures "an affront to the conscience of the court"; a statutory public inquiry
+followed; a 2024 Act of Parliament quashed the remaining convictions wholesale. Structural
+detail the team flagged as possibly load-bearing for the taxonomy: English evidence law
+carried an effective presumption that the computer operated correctly, so the tool's output
+procedurally outweighed the sworn testimony of the people it accused — a candidate mechanism
+not obviously identical to any of the seven modes filed so far (closer to a due-process /
+evidentiary-presumption story than a calibration or domain-mismatch one; unassessed).
+
+**Sources submitted by the team (retrieved live by them 2026-07-03, not yet independently
+re-retrieved by the collective):** https://www.bailii.org/ew/cases/EWCA/Crim/2021/577.html ;
+https://www.postofficehorizoninquiry.org.uk/ .
+
+**Status: SUBMITTED, not stamped.** This is material for a future v2 stamping trial of "The
+Taxonomy on Trial," not a verified claim and not yet a taxonomy card. Independent verification
+(retrieving the sources live, confirming the conviction count and dates, deciding whether the
+case fits an existing lane or forces the eighth) is a future session's gauntlet work — tracked
+on WORKBOARD.md ("Taxonomy v2: stamp an externally submitted case"). None of the above may
+enter `memory/claims.md` until a Verifier or the conductor independently verifies it in a
+journal entry.
+
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 
 Session 8's working taxonomy — seven distinct failure *types* across the eight instruments (domain mismatch appears twice: instruments 002 and 004):
