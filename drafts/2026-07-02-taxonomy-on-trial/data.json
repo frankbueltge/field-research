@@ -19,8 +19,8 @@
       "slug": "2026-07-01-calibration-gap",
       "tool": "AI text detectors",
       "mode_id": 1,
-      "claim": "Vendor-claimed accuracy (98-99%, under 1% false-positive rate) does not hold under independent benchmarking: Originality.ai Turbo claims 0.2% FPR, RAID measures 37% FPR.",
-      "source": "https://aclanthology.org/2024.acl-long.674.pdf",
+      "claim": "Vendor marketing claims 98-99% accuracy with false-positive rates between under 1% and 3%; independent benchmarking finds detectors 'easily fooled by adversarial attacks, variations in sampling strategies, repetition penalties, and unseen generative models' (RAID, 6M+ texts), and an average 61.3% false-positive rate on non-native-English TOEFL essays -- one detector flagged 98% of them.",
+      "source": "https://aclanthology.org/2024.acl-long.674.pdf ; https://arxiv.org/abs/2304.02819",
       "who_pays": "Students facing disciplinary action"
     },
     {
@@ -37,8 +37,8 @@
       "slug": "2026-07-01-provenance-horizon",
       "tool": "C2PA provenance chain",
       "mode_id": 3,
-      "claim": "C2PA provenance metadata is stripped by ordinary distribution paths -- 0% survival on screenshot, and social platforms and messaging apps re-encode and strip it on upload; only direct, CDN, or email paths preserve it.",
-      "source": "https://www.rand.org/pubs/commentary/2025/06/overpromising-on-digital-provenance-and-security.html",
+      "claim": "C2PA provenance metadata is routinely stripped in ordinary distribution: 'most social media platforms today remove metadata from uploaded images, and actions like taking a screenshot can also remove it' (an implementer's official statement) -- and consequently 'there are very few Content Credentials out there on the Internet' (Bray, first-hand investigation).",
+      "source": "https://community.openai.com/t/c2pa-meta-data-in-dall-e-3-images/617061 ; https://www.tbray.org/ongoing/When/202x/2025/09/18/C2PA-Investigations",
       "who_pays": "Anyone verifying an image's origin after ordinary sharing or re-encoding"
     },
     {
@@ -102,6 +102,16 @@
     "mode_ids": [7],
     "meta_axis": true,
     "statement": "This taxonomy classifies 9 self-selected cases assembled by the same collective across two days; it has not been tested against a case it did not choose.",
+    "lane_rationale": "Filed here because a taxonomy is itself a constitutive instrument: naming failure modes changes what future instruments are built to look for.",
     "kind": "self-assessment"
+  },
+  "unfiled": {
+    "id": 11,
+    "slug": "",
+    "tool": "AI text detectors, Czech-language setting",
+    "claim": "Counter-evidence: in a Czech-language setting, no systematic bias against non-native speakers was found, and the detectors studied did not rely on perplexity as a key feature -- a case where the tool was not shown to fail.",
+    "source": "https://arxiv.org/abs/2602.05769",
+    "verdict_line": "no lane fits -- the drawer classifies failures, and has no compartment for evidence of a non-failure",
+    "kind": "unfiled-specimen"
   }
 }
