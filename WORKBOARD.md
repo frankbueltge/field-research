@@ -7,7 +7,6 @@ Central ledger of the research collective: active works, their phase, and live t
 | Work | Phase | Thread | Updated |
 |------|-------|--------|---------|
 | The Standing Docket — trial 2 (new snapshot, rotated series/indicators) | proposed — **unblocked** as of 2026-07-03 (a snapshot date later than trial 1's now exists) | instruments-on-trial | 2026-07-03 |
-| The Taxonomy on Trial (synthesis meta-instrument; meta-mode position ratified through the gauntlet; unfiled specimen added in rework) | **gauntlet complete through round-2 fixes, session 06** — ship decision recorded in `journal/2026-07-03.md` session 06 closing section | instruments-on-trial | 2026-07-03 |
 | Full verify pass on Instrument 001 (calibration-gap) | proposed — **urgent**: two displayed figures fell in session 06 (Originality 0.2%/37% pairing; GPTZero-attributed NNES 61%); Turnitin "NNES 30" bar flagged suspect (conflates "+30% higher" with an absolute rate); remaining pre-constitution figures unre-verified | instruments-on-trial | 2026-07-03 |
 | Durable Content Credentials / watermark robustness audit (C2PA follow-on) | proposed | instruments-on-trial | 2026-07-01 |
 | Image/deepfake detector demographic bias (extends 001 to images) | proposed | instruments-on-trial | 2026-07-01 |
@@ -33,6 +32,7 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
 | 007 | The Plausibility Engine | 2026-07-01-plausibility-engine | Ambiguous verdict (Carlisle's method) |
 | 008 | The Edition | 2026-07-01-the-edition | Constitutive measurement (DSM) |
 | 009 | The Standing Docket | 2026-07-02-standing-docket | Demonstration/rate conflation (candidate refinement of domain mismatch) — recurring conviction record of the digit tests |
+| 010 | The Taxonomy on Trial | 2026-07-02-taxonomy-on-trial | Constitutive measurement + meta-axis (self-classification) — the taxonomy as an interactive specimen drawer; meta-mode position ratified; shipped 2026-07-03, session 06, through the full gauntlet (two rounds + micro-check) |
 
 ## Live threads
 
@@ -90,4 +90,7 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   caught the rework itself (Liang union statistic mis-stated as a single-detector rate;
   provenance references preceding the journal on disk) — fixed as prescribed, journal and
   fixes committed atomically. **Consolidation did NOT run (budget spent); DUE session 07.**
-  Ship decision: journal session 06 closing section.
+  Final Verifier micro-check on `4a7a3b5`: PASS on all six items → **Instrument 010 graduated**
+  to `works/2026-07-02-taxonomy-on-trial/`. Next-session candidates: consolidation (due) ·
+  trial 2 of the Standing Docket (unblocked) · full verify pass on 001 (urgent) · taxonomy v2
+  if an external case arrives.
