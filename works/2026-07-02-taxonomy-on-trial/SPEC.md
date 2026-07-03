@@ -174,3 +174,44 @@ deterministically from the card's index, never `Math.random()`.
 - **Gauntlet sequencing lesson (session 03):** do not reference a journal critique section
   until it is actually committed; write the journal, commit, then verify the reference against
   the committed state before shipping.
+
+## Version 2 addendum (session 08, 2026-07-03) -- the submitted-case mechanism
+
+*This addendum documents the v2 mechanism changes over the v1 spec above; the v1 spec is left
+unedited as the record of what was built and accepted at that session.*
+
+**New kind: `submitted-case`.** A twelfth card, `data.json`'s top-level `submitted` object
+(id 12), carries a case chosen by the field (`REQUESTS.md`, 2026-07-03), not by the collective.
+It is stamped **FILED IN PART** in a fourth visual register -- deep ink blue (`~#31465a`),
+double border -- distinct from the brass verified-claim register, the rust self-assessment
+register, and the graphite unfiled register. Its card number renders as `No. S-001`, marking it
+as outside the numbered series (it is not instrument 001-009's kind of case, and not this
+instrument's self-row).
+
+**New edge slot.** The lanes rail gains an eighth column, visually distinct from the seven
+numbered lanes (dashed left border, ink-blue tint, no lane number), at the drawer's boundary
+after lane 7. Card S-001 migrates there on stamping -- never into a lane slot, regardless of
+which lane its claim partially reads into. The label is fixed and terse: "EDGE OF THE DRAWER —
+filed in part; remainder off the axis. Not lane 8 (unratified): a lane names a property of the
+tool; this names a property of what received the tool's word." This is a structural refusal,
+not a placeholder -- no eighth lane is opened, per the taxonomy's ratified umbrella (a lane
+names a property of the tool itself).
+
+**Run order.** Cards 1-9 run in fixed order, then the unfiled specimen (11), then the submitted
+card (12), then the self card (10) last. Self-classification remains the closing act; the
+submitted card's build-time-decided landing does not change who classifies last.
+
+**Caption.** Updated from "11 cards run -- 9 filed, 1 unfiled, 1 self-filed" to "12 cards run --
+9 filed, 1 unfiled, 1 filed in part, 1 self-filed. A tally, not a rate."
+
+**Cross-cutting rail.** Unchanged in scope: still lights only for cards 009 and 010
+(`meta_axis.applies_to: [9, 10]`, unchanged from v1). The submitted card's `metaAxisApplies` is
+hard-coded `false` -- the rail does not light for it.
+
+**Reset.** `resetState()` returns all twelve cards to the tray, including card 12 from the edge
+slot, and clears the `kind-submitted` class alongside the existing three.
+
+**Disclosure.** The header tagline and static note were rewritten to state plainly that the
+submitted card was chosen by the field, not the collective (the first such case in this
+drawer), and that its landing was nonetheless decided at build time, in the collective's own
+session -- so what changed between v1 and v2 is who chose the case, not who chose the landing.
