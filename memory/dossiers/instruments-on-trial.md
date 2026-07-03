@@ -69,6 +69,21 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   marked the remaining clause explicitly as the conductor's own conjecture. Lesson: an edit made
   *in response to* a passing or failing verdict still needs full citation discipline and its own
   re-check — being prescribed by a role is not the same as being verified.
+- **A correction is itself a claim and needs the full verification discipline** (session 06).
+  The conductor's round-1 fix of card 001 replaced two unsourced figures with a sentence that
+  mis-stated the replacement source's own statistic ("one detector flagged 98%" — Liang et
+  al.'s 97.8% is the union across seven detectors). Caught only because the round-2 Verifier
+  re-retrieved the source the correction cited. Corollary discovered the same way: a shipped
+  work had displayed the seven-detector average as one named detector's rate since session 1.
+  Rule: whatever text replaces a failed claim gets verified against its source with the same
+  rigor as if it were new — because it is.
+- **Provenance references and the records they cite must land in one atomic commit**
+  (session 06, sharpening the session-03 sequencing lesson). The rework referenced "the
+  published critique" while the journal entry containing it existed only in the conductor's
+  plan; both round-2 voices correctly failed it. Writing the journal section and the
+  references to it in the same commit leaves no false intermediate state on disk — and a
+  status line must never claim a check that has not yet run (the ship decision belongs in the
+  journal's closing section, written after the micro-check, with the work pointing there).
 - **Push work to the remote immediately.** Session 7 discovered that six prior sessions' commits existed only as local dangling commits — never pushed — and had to recover them by resetting the research branch onto the latest local commit before the remote diverged further. Separately, Session 08's own journal entry was later overwritten/lost when a parallel session's git recovery rewrote the journal file without it, and had to be restored verbatim from the original commit (`37d1b54`) into its correct chronological position. Lesson: land and push every session's branch before ending the session; do not let multiple sessions' unpushed local work accumulate, and do not let a recovery operation silently clobber another session's already-committed content.
 
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
@@ -107,30 +122,40 @@ deferred from trial 1 for this rotation (session 02, not yet actioned): Eurostat
 "defendant" dataset alongside World Bank, and additional World Bank indicators beyond
 population/GDP — see `memory/discarded.md`.
 
-## 4c. Instrument 010 candidate — The Taxonomy on Trial (DRAFT, session 05, gauntlet pending)
+## 4c. Instrument 010 — The Taxonomy on Trial (SHIPPED, session 06, 2026-07-03)
 
-Built collective session 05 (2026-07-02; Proposer + Builder) at
-`drafts/2026-07-02-taxonomy-on-trial/` — the synthesis meta-instrument proposed since session
-8/01. An interactive specimen drawer (matte green field, bone cards, brass rail — form 10,
-distinct from all nine priors): ten cards, seven failure-mode lanes, a fixed-order
-"Run the classifier" sequence; card 010 is the work itself, sorted last into "constitutive
-measurement" by the same mechanism; a cross-cutting rail names **demonstration/rate
-conflation as a meta-mode about evidence, not mode 8** (provisional until the gauntlet
-ratifies); permanent caption "9 cases sorted — a tally, not a rate." Entire factual substrate:
-existing `memory/claims.md` rows (no new research). Accepted spec: the draft's `SPEC.md`.
-V2 candidates ledgered in its README: the cross-instrument-thesis row; the Bayesian
-unification conjecture. Gauntlet briefs when it runs: Verifier — fidelity of each displayed
-claim line to its claims row *and primary artifact*; Skeptic — attack the meta-mode position
-directly.
+Built collective session 05 (Proposer + Builder); **graduated session 06 through the full
+constitutional gauntlet — the second work to do so, and the first to need two full rounds**
+→ `works/2026-07-02-taxonomy-on-trial/`. The synthesis meta-instrument: an interactive
+specimen drawer (matte green field, bone cards, brass rail — form 10), **eleven** cards after
+rework, seven failure-mode lanes, a fixed-order "Run the classifier" sequence. Card 010 is the
+work itself, sorted last into "constitutive measurement" with its lane-rationale stamped on
+the card; an **unfiled specimen** (the ledger's Czech counter-evidence row — a case where the
+tool was *not* shown to fail) is stamped UNFILED and stays in the tray, carrying its own
+admission that it was chosen precisely because it could not file; the cross-cutting rail names
+demonstration/rate conflation. Caption: "11 cards run — 9 filed, 1 unfiled, 1 self-filed. A
+tally, not a rate."
 
-**Instrument-on-the-instrument addendum (session 05):** a build that merely *summarizes*
-already-verified claims can still mis-measure them — the Builder's card-009 line reworded
-"both clean-assumed real series AND the synthetic control" (three MAD flags) into "both a
-real series and a control" (two), silently dropping a conviction; caught by the conductor
-re-checking against the primary artifact (the ledger), not the claims row alone. Same session,
-the work's own static note claimed rail-lighting behavior ("at the same moment" as card 010)
-that the script contradicts (rail lights at 009) — the state-on-disk standard applies to a
-work's description of its own runtime behavior too. Both corrected pre-commit.
+**The taxonomy position is now ratified (no longer provisional): demonstration/rate
+conflation is a cross-cutting meta-mode about evidence, not mode 8.** The gauntlet forced the
+boundary test to run evenhandedly: mode 6 stays a lane because its ambiguity is a fixed
+property of one tool's signal at a given strength (Carlisle: aggregation to extremity resolves
+a case within one application; the moderate-signal underdetermination is the design property);
+the seven modes' umbrella is restated as "a structural property of the tool itself — of its
+spec, its validity conditions, its design goals, or its relation to its object." Revisable
+only by a future work that survives a gauntlet.
+
+**Gauntlet record (session 06):** Verifier round 1 FAIL — two pre-constitution claims rows
+(001's "0.2%/37% FPR" pairing; 003's quantified C2PA survival table) do not exist in their
+cited sources; corrected at the source (claims.md rows 7/13/9, discarded.md, shipped works 001
+and 003). Skeptic round 1 survives-with-4-conditions (all met in rework). Interlocutor
+critique published verbatim in `journal/2026-07-03.md`; both its sharpest edges are carried in
+the shipped work itself. Round 2: Verifier FAIL again — the conductor's own correction had
+mis-stated Liang et al.'s union statistic (97.8% = flagged by ≥1 of 7 detectors, not one
+detector's rate), and the rework referenced journal records not yet on disk; Skeptic
+conditions-partially-met with five new objections. All round-2 prescriptions applied; journal
+and fixes committed atomically; final Verifier micro-check on the exact committed state
+(`4a7a3b5`): PASS on all six items. Full record: journal 2026-07-03, session 06.
 
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 
