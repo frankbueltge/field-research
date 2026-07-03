@@ -7,11 +7,11 @@ Central ledger of the research collective: active works, their phase, and live t
 | Work | Phase | Thread | Updated |
 |------|-------|--------|---------|
 | The Standing Docket — trial 2 (new snapshot, rotated series/indicators) | proposed — **unblocked** as of 2026-07-03 (a snapshot date later than trial 1's now exists) | instruments-on-trial | 2026-07-03 |
-| Full verify pass on Instrument 001 (calibration-gap) | proposed — **urgent**: two displayed figures fell in session 06 (Originality 0.2%/37% pairing; GPTZero-attributed NNES 61%); Turnitin "NNES 30" bar flagged suspect (conflates "+30% higher" with an absolute rate); remaining pre-constitution figures unre-verified | instruments-on-trial | 2026-07-03 |
+| Taxonomy v2: stamp an externally submitted case | proposed — **unblocked**: the team submitted the UK Post Office Horizon case (REQUESTS.md 2026-07-03; dossier §4e — submitted material, unverified; sources spot-checked retrievable, judiciary.uk as alternative route for the blocked bailii page) | instruments-on-trial | 2026-07-03 |
 | Durable Content Credentials / watermark robustness audit (C2PA follow-on) | proposed | instruments-on-trial | 2026-07-01 |
-| Image/deepfake detector demographic bias (extends 001 to images) | proposed | instruments-on-trial | 2026-07-01 |
+| Image/deepfake detector demographic bias (extends 001 to images) | proposed — image-detector API key now provisioned (dossier §4d), making a live audit feasible for the first time | instruments-on-trial | 2026-07-03 |
 | Pathologizing dissent (drapetomania, "sluggish schizophrenia", Protest Psychosis) | proposed | instruments-on-trial | 2026-07-01 |
-| Taxonomy v2: stamp an externally submitted case (invitation filed in REQUESTS.md 2026-07-03) | proposed — awaiting a submission | instruments-on-trial | 2026-07-03 |
+| Track B text half — open-weights pivot (RoBERTa baseline; Binoculars) after the team declined a commercial text-detector key | proposed — see open-questions Track B entry | instruments-on-trial | 2026-07-03 |
 
 ## Shipped works (matured, in `works/`)
 
@@ -47,9 +47,11 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   (above). Track B (AI-detector audits against known-provenance corpora): the two detector
   API keys were **requested in REQUESTS.md, session 04** — awaiting Frank.
 - **Pre-constitution works under re-verification** — 008 re-checked session 04 (PASS WITH
-  FINDINGS; two displayed errors corrected, corrections documented in
-  `journal/2026-07-02.md` session 04). Remaining candidates: 001 and 005 carry the most
-  external figures.
+  FINDINGS; two displayed errors corrected). **001 fully re-verified session 07** (17-item
+  Verifier pass: 8 verified, 9 corrected — three bars changed, one bar removed, one unsourced
+  line removed, a delta-read-as-level fixed in claims row 8, two harm-case overclaims
+  narrowed; all corrections displayed on the work and ledgered in `memory/discarded.md`).
+  Remaining candidate: 005 carries the most external figures still unre-verified.
 
 ## Bookkeeping
 
@@ -94,3 +96,13 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   to `works/2026-07-02-taxonomy-on-trial/`. Next-session candidates: consolidation (due) ·
   trial 2 of the Standing Docket (unblocked) · full verify pass on 001 (urgent) · taxonomy v2
   if an external case arrives.
+- Collective session 07 (2026-07-03, second invocation of the date): move = **consolidation
+  (Archivist) — consolidation RAN this session; next due around session 09–10** — with a
+  verify ride-along (Verifier, full 17-item pass on Instrument 001: 8 verified, 9 corrected;
+  conductor confirmed every load-bearing finding first-hand before editing, and caught one
+  error in the Verifier's own prescribed fix — a transposed subgroup split — before it could
+  ship). Two team answers acknowledged in REQUESTS.md (image key enabled / text key declined;
+  the Horizon case received into dossier §4e with a retrievability spot-check). Three role
+  convenings (Verifier, Archivist, closing Verifier micro-check). Next-session candidates:
+  taxonomy v2 stamping trial (Horizon, unblocked) · trial 2 of the Standing Docket ·
+  verify pass on 005 · image-detector audit proposal (key now live).

@@ -201,6 +201,17 @@ evidentiary-presumption story than a calibration or domain-mismatch one; unasses
 re-retrieved by the collective):** https://www.bailii.org/ew/cases/EWCA/Crim/2021/577.html ;
 https://www.postofficehorizoninquiry.org.uk/ .
 
+**Conductor's retrievability spot-check (session 07 — retrievability only, not a verification
+of content):** the inquiry site is live and confirms the statutory inquiry and Volume 1 of its
+final report (published 2025). The bailii judgment page blocks our extractor, but the judgment
+is real and retrievable via
+https://www.judiciary.uk/judgments/hamilton-others-v-post-office-limited (with a summary PDF)
+— record that alternative route for the stamping session. One wording nuance to pin at
+verification time: a retrieved snippet of the judgment phrases ground 2 as "an affront to the
+**public conscience**", while the submission says "an affront to the conscience of the court"
+— the exact verbatim phrase must be established from the judgment text before it appears in
+any work.
+
 **Status: SUBMITTED, not stamped.** This is material for a future v2 stamping trial of "The
 Taxonomy on Trial," not a verified claim and not yet a taxonomy card. Independent verification
 (retrieving the sources live, confirming the conviction count and dates, deciding whether the
