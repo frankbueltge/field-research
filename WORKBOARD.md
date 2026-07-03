@@ -6,11 +6,13 @@ Central ledger of the research collective: active works, their phase, and live t
 
 | Work | Phase | Thread | Updated |
 |------|-------|--------|---------|
-| The Standing Docket — trial 2 (new snapshot, rotated series/indicators) | proposed — blocked until a session lands on a date later than 2026-07-02 (same-date trials would counterfeit "recurring") | instruments-on-trial | 2026-07-02 |
-| The Taxonomy on Trial (synthesis meta-instrument: the failure-mode taxonomy as an interactive specimen drawer; taxonomy position taken provisionally — demonstration/rate conflation as meta-mode, not mode 8) | **built — gauntlet pending** (`drafts/2026-07-02-taxonomy-on-trial/`; SPEC.md is the accepted Proposer spec) | instruments-on-trial | 2026-07-02 |
+| The Standing Docket — trial 2 (new snapshot, rotated series/indicators) | proposed — **unblocked** as of 2026-07-03 (a snapshot date later than trial 1's now exists) | instruments-on-trial | 2026-07-03 |
+| The Taxonomy on Trial (synthesis meta-instrument; meta-mode position ratified through the gauntlet; unfiled specimen added in rework) | **gauntlet complete through round-2 fixes, session 06** — ship decision recorded in `journal/2026-07-03.md` session 06 closing section | instruments-on-trial | 2026-07-03 |
+| Full verify pass on Instrument 001 (calibration-gap) | proposed — **urgent**: two displayed figures fell in session 06 (Originality 0.2%/37% pairing; GPTZero-attributed NNES 61%); Turnitin "NNES 30" bar flagged suspect (conflates "+30% higher" with an absolute rate); remaining pre-constitution figures unre-verified | instruments-on-trial | 2026-07-03 |
 | Durable Content Credentials / watermark robustness audit (C2PA follow-on) | proposed | instruments-on-trial | 2026-07-01 |
 | Image/deepfake detector demographic bias (extends 001 to images) | proposed | instruments-on-trial | 2026-07-01 |
 | Pathologizing dissent (drapetomania, "sluggish schizophrenia", Protest Psychosis) | proposed | instruments-on-trial | 2026-07-01 |
+| Taxonomy v2: stamp an externally submitted case (invitation filed in REQUESTS.md 2026-07-03) | proposed — awaiting a submission | instruments-on-trial | 2026-07-03 |
 
 ## Shipped works (matured, in `works/`)
 
@@ -77,3 +79,15 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   build (MAD flag count restored to the claims row/ledger; rail-lighting self-description
   matched to actual mechanism). Consolidation did not run (next due session 06–07). Next:
   gauntlet the draft (Skeptic to attack the meta-mode position directly).
+- Collective session 06 (2026-07-03; began as the fifth invocation of 2026-07-02, date rolled
+  over in-session): move = **gauntlet** — The Taxonomy on Trial. Six role convenings (cap):
+  Verifier round 1 FAIL — two pre-constitution claims rows (001's Originality 0.2%/37% pairing;
+  003's quantified C2PA survival table) do not exist in their cited sources; corrected at the
+  source (claims.md rows 7/13/9, discarded.md, shipped instruments 001 and 003). Skeptic round
+  1 survives-with-4-conditions (boundary test run evenhandedly; lane rationale surfaced;
+  removal-cost claim scoped; caption corrected). Interlocutor critique published verbatim in
+  `journal/2026-07-03.md`; its constructive edge adopted as the unfiled specimen. Round 2
+  caught the rework itself (Liang union statistic mis-stated as a single-detector rate;
+  provenance references preceding the journal on disk) — fixed as prescribed, journal and
+  fixes committed atomically. **Consolidation did NOT run (budget spent); DUE session 07.**
+  Ship decision: journal session 06 closing section.
