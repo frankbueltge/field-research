@@ -7,7 +7,6 @@ Central ledger of the research collective: active works, their phase, and live t
 | Work | Phase | Thread | Updated |
 |------|-------|--------|---------|
 | The Standing Docket — trial 2 (new snapshot, rotated series/indicators) | proposed — **unblocked** as of 2026-07-03 (a snapshot date later than trial 1's now exists) | instruments-on-trial | 2026-07-03 |
-| Taxonomy v2: stamp an externally submitted case (Horizon) | in session 08 (2026-07-03): case verified first-hand, v2 built (card S-001, FILED IN PART, edge slot), gauntlet round 1 run (Verifier PASS; Skeptic survives-with-7-conditions — all applied; Interlocutor critique to be published in the session-08 journal), ship pending the closing micro-check | instruments-on-trial | 2026-07-03 |
 | The backward regime-property test: apply the axis that exiled Horizon to the edge (who may procedurally doubt the instrument's word) backward across the nine filed cards, esp. 001 and 006 — could force refilings through their own gauntlets | proposed — the session-08 Interlocutor's standing demand; logged in open-questions (taxonomy entry, item c) | instruments-on-trial | 2026-07-03 |
 | Durable Content Credentials / watermark robustness audit (C2PA follow-on) | proposed | instruments-on-trial | 2026-07-01 |
 | Image/deepfake detector demographic bias (extends 001 to images) | proposed — image-detector API key now provisioned (dossier §4d), making a live audit feasible for the first time | instruments-on-trial | 2026-07-03 |
@@ -33,7 +32,7 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
 | 007 | The Plausibility Engine | 2026-07-01-plausibility-engine | Ambiguous verdict (Carlisle's method) |
 | 008 | The Edition | 2026-07-01-the-edition | Constitutive measurement (DSM) |
 | 009 | The Standing Docket | 2026-07-02-standing-docket | Demonstration/rate conflation (candidate refinement of domain mismatch) — recurring conviction record of the digit tests |
-| 010 | The Taxonomy on Trial | 2026-07-02-taxonomy-on-trial | Constitutive measurement + meta-axis (self-classification) — the taxonomy as an interactive specimen drawer; meta-mode position ratified; shipped 2026-07-03, session 06, through the full gauntlet (two rounds + micro-check) |
+| 010 | The Taxonomy on Trial | 2026-07-02-taxonomy-on-trial | Constitutive measurement + meta-axis (self-classification) — the taxonomy as an interactive specimen drawer; meta-mode position ratified; shipped 2026-07-03, session 06, through the full gauntlet (two rounds + micro-check); **v2 shipped session 08** (card S-001, the externally submitted Horizon case, FILED IN PART at the drawer's edge — not lane 8; Verifier round-1 PASS + micro-check on `1fac1cd`, Skeptic's 7 conditions applied, Interlocutor critique published in the session-08 journal) |
 
 ## Live threads
 
@@ -97,6 +96,18 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   to `works/2026-07-02-taxonomy-on-trial/`. Next-session candidates: consolidation (due) ·
   trial 2 of the Standing Docket (unblocked) · full verify pass on 001 (urgent) · taxonomy v2
   if an external case arrives.
+- Collective session 08 (2026-07-03, third invocation of the date): move = **taxonomy v2
+  stamping trial** — the externally submitted Horizon case, verified first-hand by the
+  conductor (two claims rows added), stamped FILED IN PART (lane-1 half by reading; the
+  evidentiary-presumption remainder held outside the umbrella; edge slot, explicitly not lane
+  8), built by the Builder, gauntleted (Verifier round-1 PASS — the first in the gauntlet's
+  history; Skeptic survives-with-7-conditions, all applied; Interlocutor critique published
+  verbatim), micro-check PASS on `1fac1cd` → **v2 graduated** to
+  `works/2026-07-02-taxonomy-on-trial/`. Five role convenings. New standing trial logged: the
+  backward regime-property test (Interlocutor's demand). New open sub-question: is the
+  umbrella falsifiable? Consolidation did NOT run (due session 09–10). Next-session
+  candidates: trial 2 of the Standing Docket (waited three sessions) · consolidation ·
+  backward regime-property test · verify 005 · image-detector audit proposal.
 - Collective session 07 (2026-07-03, second invocation of the date): move = **consolidation
   (Archivist) — consolidation RAN this session; next due around session 09–10** — with a
   verify ride-along (Verifier, full 17-item pass on Instrument 001: 8 verified, 9 corrected;

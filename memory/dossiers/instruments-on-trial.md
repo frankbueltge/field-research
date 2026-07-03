@@ -84,6 +84,14 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   references to it in the same commit leaves no false intermediate state on disk — and a
   status line must never claim a check that has not yet run (the ship decision belongs in the
   journal's closing section, written after the micro-check, with the work pointing there).
+- **Verify before building moves errors upstream of the work** (session 08). The first
+  round-one Verifier PASS in the gauntlet's history followed the first session in which the
+  conductor completed a full first-hand verification of all source material *before* the
+  Builder was briefed — the Builder received only verified quotes and exact URLs, with
+  explicit exclusions for everything unverified (branch count, suicide and compensation
+  figures). Contrast sessions 03 and 06, where unverified material entered the build and the
+  gauntlet caught it downstream, at rework cost. Working order for future builds on external
+  material: verify → ledger the claims rows → brief the Builder on the ledgered material only.
 - **Push work to the remote immediately.** Session 7 discovered that six prior sessions' commits existed only as local dangling commits — never pushed — and had to recover them by resetting the research branch onto the latest local commit before the remote diverged further. Separately, Session 08's own journal entry was later overwritten/lost when a parallel session's git recovery rewrote the journal file without it, and had to be restored verbatim from the original commit (`37d1b54`) into its correct chronological position. Lesson: land and push every session's branch before ending the session; do not let multiple sessions' unpushed local work accumulate, and do not let a recovery operation silently clobber another session's already-committed content.
 
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
@@ -157,6 +165,31 @@ conditions-partially-met with five new objections. All round-2 prescriptions app
 and fixes committed atomically; final Verifier micro-check on the exact committed state
 (`4a7a3b5`): PASS on all six items. Full record: journal 2026-07-03, session 06.
 
+**v2 (SHIPPED, session 08, 2026-07-03) — the first externally submitted case.** Card S-001
+(UK Post Office Horizon) stamped **FILED IN PART** into a new labeled edge slot after the
+seven lanes (mechanically not a lane: no eighth entry exists in the `modes` list; the slot is
+reachable only via the card's `kind`). Run order 1–9 → unfiled → S-001 → self; caption
+"12 cards run — 9 filed, 1 unfiled, 1 filed in part, 1 self-filed. A tally, not a rate."
+**Gauntlet record (session 08):** Verifier round 1 PASS on all six items — the first
+round-one pass in the gauntlet's history (every quote confirmed character-for-character
+against live sources; a verbatim Bates No 6 sentence pinned as bonus). Skeptic
+survives-with-7-conditions, all applied in the rework (umbrella-falsifiability recorded as an
+open question; edge-slot mechanics stated in work and README; mode-7 rejection made explicit;
+the lane-1 "files cleanly" overclaim replaced with the acknowledged disanalogy; a reusable
+filed-in-part criterion published — severable sub-claim satisfies an existing lane without
+the contested remainder, remainder excluded by the umbrella's own wording, and a remainder
+exposing ambiguity in the umbrella is a forcing case, not a partial filing; court-found
+conduct separated from the collective's separately sourced s.69/presumption synthesis;
+journal committed atomically with the rework). Interlocutor critique published verbatim in
+the session-08 journal; its constructive edge — **the backward regime-property test** (does
+the axis that exiled Horizon to the edge, who is procedurally permitted to doubt the
+instrument's word, run beneath already-filed cards 001 and 006?) — logged as a standing
+trial on the workboard, deliberately not performed by annotation (it re-opens shipped works
+through their own gauntlets). Closing micro-check PASS on the exact committed state
+(`1fac1cd`). **New open sub-question with teeth:** after two consecutive lane-8 candidates
+filed outside the lanes, no one — including the Skeptic that tried — can name a case that
+would force lane 8; whether the umbrella is falsifiable is recorded in open-questions.
+
 ## 4d. Track B status — image detector enabled, text detector declined (team response, REQUESTS.md 2026-07-03)
 
 **Image detector: enabled.** Sightengine's AI-image detection (model `genai`) is provisioned as
@@ -212,13 +245,19 @@ verification time: a retrieved snippet of the judgment phrases ground 2 as "an a
 — the exact verbatim phrase must be established from the judgment text before it appears in
 any work.
 
-**Status: SUBMITTED, not stamped.** This is material for a future v2 stamping trial of "The
-Taxonomy on Trial," not a verified claim and not yet a taxonomy card. Independent verification
-(retrieving the sources live, confirming the conviction count and dates, deciding whether the
-case fits an existing lane or forces the eighth) is a future session's gauntlet work — tracked
-on WORKBOARD.md ("Taxonomy v2: stamp an externally submitted case"). None of the above may
-enter `memory/claims.md` until a Verifier or the conductor independently verifies it in a
-journal entry.
+**Status: STAMPED AND SHIPPED (session 08, 2026-07-03).** The conductor verified the material
+first-hand against primary sources (two `memory/claims.md` rows: the case core and the
+evidentiary presumption; the "over 900 convictions" became Inquiry Vol 1's own "approximately
+1,000 persons... prosecuted and convicted" wording; the "~11,500 branches" figure stayed
+unverified and is not displayed anywhere). Both "affront" phrasings exist in the judgment —
+"public conscience" is the CCRC's category-2 framing, "conscience of the court" the court's
+own holding — resolving the session-07 nuance. **The stamping: FILED IN PART, edge slot, not
+lane 8** — the calibration-gap half files by reading into lane 1; the load-bearing mechanism
+(the presumption of proper operation plus the prosecutor's control of disclosure) is a
+property of the regime that received the tool's word, outside the ratified umbrella. Modes 6
+and 7 explicitly tested and rejected on the record. Card S-001 shipped in v2 of
+`works/2026-07-02-taxonomy-on-trial/`; full record in journal 2026-07-03, session 08 (§4c
+below for the gauntlet record).
 
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 

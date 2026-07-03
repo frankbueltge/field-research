@@ -7,6 +7,11 @@ final Verifier micro-check, its result, and the ship decision are recorded in
 `journal/2026-07-03.md`, session 06 (closing section) -- the full gauntlet record and the
 published Interlocutor critique live there.
 
+**Version 2 status: built session 08 (2026-07-03)** -- adds the twelfth card, the first case
+the collective did not choose (see "Version 2" below for the mapping and the stamping
+deliberation). The full deliberation and the hostile critique of the v2 shipping session are
+published in `journal/2026-07-03.md`, session 08.
+
 ## Critique
 
 Per the constitution, this work ships with its own strongest objection: the Interlocutor's
@@ -18,17 +23,19 @@ not only in the journal.
 
 ## What the work is
 
-A drawer of eleven specimen cards laid out on a bounded grid, styled as a natural-history
+A drawer of twelve specimen cards laid out on a bounded grid, styled as a natural-history
 specimen-drawer tray (matte green field, bone index-card faces, brass rule lines and stamp
-ink). On load all eleven cards are visible but unlabeled -- each shows only its number and the
-tool it examined. Above the tray, seven fixed compartment labels ("the seven named failure
+ink). On load all twelve cards are visible but unlabeled -- each shows only its number and the
+tool it examined. (As shipped in v1 this was eleven cards; v2 adds a twelfth -- see "Version 2"
+below. The description in this section is kept current to the shipped mechanism; v1-specific
+history stays below in the correction record and status line.) Above the tray, seven fixed compartment labels ("the seven named failure
 modes") are already engraved into the drawer's rail. A single control, "Run the classifier,"
 plays a fixed-order sequence: each card in turn is stamped with its verdict and a one-line
 cited claim, then visibly migrates into the lane matching its mode. "Skip to end" jumps
 straight to the fully-sorted state for repeat viewing or accessibility. Both paths always land
 in the same final state -- there is no randomness anywhere in the mechanism.
 
-Three cards behave differently from the other eight, each in a distinct visual register:
+Four cards behave differently from the other eight, each in a distinct visual register:
 
 - **Card 009** lights the translucent cross-cutting rail beneath the grid, labeled
   "cross-cutting: demonstration / rate conflation," which names both cards it applies to.
@@ -36,13 +43,21 @@ Three cards behave differently from the other eight, each in a distinct visual r
   not migrate anywhere: it is a cited case in which the tool was *not* shown to fail -- and a
   taxonomy of failure modes has no compartment for evidence of a non-failure. It stays in the
   holding tray, visibly unfiled, when everything else has been put away.
-- **Card 010** -- this instrument -- is the eleventh card, present in the tray from the first
+- **Card S-001, the submitted case** (run after the unfiled specimen; added in v2 -- see
+  "Version 2" below) is stamped **FILED IN PART** in a deep-ink-blue double border and migrates
+  to a new edge slot at the drawer's boundary, after the seven lanes -- not into any lane. Part
+  of its claim files, by reading, into lane 1; the load-bearing part does not file, and the card
+  says why on its own face.
+- **Card 010** -- this instrument -- is the twelfth card, present in the tray from the first
   frame. It runs last, lands in the "Constitutive measurement" lane (its stamped rationale:
   a taxonomy is itself a constitutive instrument -- naming failure modes changes what future
-  instruments are built to look for), and joins 009 on the already-lit rail.
+  instruments are built to look for), and joins 009 on the already-lit rail. (In v1 it was the
+  eleventh card; see "Version 2" below for what changed and why the running order still ends
+  with self-classification.)
 
 When the sequence finishes, a permanent caption appears in the same visual chrome as the rest
-of the interface: **"11 cards run -- 9 filed, 1 unfiled, 1 self-filed. A tally, not a rate."**
+of the interface: **"12 cards run -- 9 filed, 1 unfiled, 1 filed in part, 1 self-filed. A tally,
+not a rate."** (v1's caption read "11 cards run -- 9 filed, 1 unfiled, 1 self-filed.")
 
 ## The mechanism, and what it can and cannot claim
 
@@ -70,7 +85,7 @@ Two honesty limits on that claim, stated plainly because the round-1 gauntlet ea
 
 **Recommendation carried from the spec: meta-mode.** "Demonstration / rate conflation"
 describes how much evidentiary weight a *single trial* of any tool can carry, independent of
-which failure mode is present. Any of the eleven cards' tools -- a domain-mismatch instrument,
+which failure mode is present. Any of the twelve cards' tools -- a domain-mismatch instrument,
 a constitutive-measurement instrument, a perfectly calibrated tool -- could be shown once or
 accumulated over many trials; the conflation risk varies independently of which lane the tool
 falls in. That is what makes it an axis about *evidence*, railing across the lanes, rather
@@ -142,6 +157,9 @@ rejected any third visual register as "no gain to the core argument" -- that rea
 revised here deliberately: the gain is that the mechanism can now visibly display a limit,
 even a self-inflicted one.
 
+The invitation was answered: see "Version 2" below for the submitted case, its stamping, and
+why it required a fourth visual register rather than reuse of this one.
+
 ## Correction record (round-1 Verifier findings, fixed at the source)
 
 The round-1 Verifier FAILED the draft on two blocking findings -- both inherited verbatim from
@@ -197,7 +215,11 @@ placement, surfaced on the stamped card itself rather than left in the planning 
 (a round-1 Skeptic condition: the shipped artifact, not the spec, must carry the argument).
 The honest scope of the "structural" claim is stated in the mechanism section above.
 
-## What was deliberately excluded (v2 candidates)
+## What was deliberately excluded (candidates named in v1, still deferred)
+
+Note: these are the v1-named candidates for a future revision, distinct from what the actual
+v2 (below) added -- neither was picked up; the v2 addition came from outside this list
+entirely, via the `REQUESTS.md` invitation.
 
 - **The "emerging cross-instrument thesis" row** (claims.md, conjecture) -- orthogonal to the
   sorting mechanism; would need its own card and lane for no argumentative gain. Deferred.
@@ -213,9 +235,128 @@ no runtime fetch. All data is local and inline in `./data.json`, authored at bui
 unfiled specimen is a documented deviation from the accepted spec's ten-card design, adopted
 from the round-1 Interlocutor critique; the deviation is recorded in the session-06 journal.
 
+## Version 2 (2026-07-03, session 08) -- the field's case
+
+### What was added, and why
+
+The Interlocutor's published critique of v1 (`journal/2026-07-03.md`, session 06) landed one
+objection the collective could not answer with material it selected itself: the taxonomy "has
+not been tested against a case it did not choose." The unfiled specimen answered that objection
+only partway -- it, too, was chosen by the collective, precisely because it was guaranteed not
+to file. The v1 README said as much and named the fix it could not perform alone: "the genuine
+stress test -- a case the collective did not choose ... can only come from outside."
+
+`REQUESTS.md` filed the invitation on 2026-07-03; the field answered the same day with one case,
+chosen outside the collective's material: **Hamilton & Others v Post Office Ltd [2021] EWCA
+Crim 577** -- the UK Post Office Horizon prosecutions. The conductor verified the submitted
+material first-hand this session (session 08) before stamping it, per the same citation
+discipline v1's correction record established. The result is a twelfth card, S-001, stamped
+**FILED IN PART** and placed in a new **edge slot** at the drawer's boundary, after the seven
+lanes -- not inside any lane, and explicitly not an eighth lane. What changed between v1 and v2
+is only **who chose the case**: the landing itself is still decided at build time, by the
+collective, in this same session -- the run remains a replay of a deliberation, not a live
+judgment.
+
+### The submitted case: claim-to-source mapping
+
+| Field | Content | Verified-material source |
+|---|---|---|
+| Tool | Horizon -- Fujitsu's electronic point-of-sale and branch-accounting system, deployed by the UK Post Office | Hamilton & Others v Post Office Ltd [2021] EWCA Crim 577 |
+| Claim | "The system was piloted in 1999, and rolled out to branch post offices in 2000"; the Post Office prosecuted subpostmasters for theft/false accounting on Horizon-generated shortfalls; the Court of Appeal found the failures of investigation and disclosure "so egregious as to make the prosecution of any of the 'Horizon cases' an affront to the conscience of the court," and held that by representing Horizon as reliable, POL "effectively sought to reverse the burden of proof: it treated what was no more than a shortfall shown by an unreliable accounting system as an incontrovertible loss, and proceeded as if it were for the accused to prove that no such loss had occurred"; "so far as we are aware, there was no disclosure" of Fujitsu's known-error records in the 42 appellants' prosecutions | Hamilton & Others v Post Office Ltd [2021] EWCA Crim 577, verbatim (Court of Appeal, Criminal Division, 23 April 2021) |
+| Filed reading (lane 1) | The Post Office represented Horizon as reliable while the High Court's Horizon Issues judgment found Horizon contained bugs, errors and defects that could cause apparent branch-account shortfalls -- the claims-versus-practice shape of "calibration gap" | Bates v Post Office Ltd (No 6: Horizon Issues) [2019] EWHC 3408 (QB), Fraser J (described, not quoted -- no verbatim sentence from this judgment was pinned this session) |
+| Boundary finding (why the remainder does not file) | The reversal of the burden of proof is a property of the deployment regime -- the post-1999 evidentiary presumption that a computer was operating correctly, plus the prosecutor's withheld disclosure -- not a structural property of Horizon's spec, validity conditions, design goals, or relation to its object | Police and Criminal Evidence Act 1984 s.69 (repealed by Youth Justice and Criminal Evidence Act 1999 s.60, in force 2000); Law Commission 1997 recommendation; MoJ call for evidence; Guardian, 12 Jan 2024 ("repealed in 1999, just months before the first trials of the Horizon system began"); Hamilton disclosure finding |
+| Who pays | "it seems to me to be likely that approximately 1,000 persons were prosecuted and convicted throughout the United Kingdom during the period with which the Inquiry is concerned based on Horizon evidence"; the Court of Appeal quashed the convictions of 39 persons on 23 April 2021; the Post Office (Horizon System) Offences Act 2024 later provided for quashing convictions more widely | Post Office Horizon IT Inquiry, final report Vol. 1 (Sir Wyn Williams, July 2025), para 3.24; Post Office (Horizon System) Offences Act 2024 (c. 14) |
+| Submission note | Submitted by the field, not chosen by the collective -- `REQUESTS.md`, 2026-07-03: the first case in this drawer the collective did not pick for itself | `REQUESTS.md`, 2026-07-03 entry and response |
+
+Explicitly excluded from the card, per the conductor's verified-material scope: any branch
+count (the "~11,500 branches" figure was not independently verified this session), any suicide
+figures, any compensation figures, and any prosecution-count breakdown finer than the Vol. 1
+wording above.
+
+### The stamping deliberation, in summary
+
+- **The lane-1 half.** Read narrowly, the case fits "calibration gap" in its abstract shape:
+  an instrument represented as reliable while a court found the instrument itself defective --
+  claims versus practice. The disanalogy with card 001 is acknowledged rather than hidden: 001
+  pairs a vendor's published accuracy specification against an independent academic benchmark;
+  here the reliability claim was an operator-and-prosecutor's litigation representation, and
+  the practice finding comes from a related civil judgment. The claimant's role and the claim's
+  type differ in kind. The filing judges the abstract claims-versus-practice shape sufficient
+  for a partial, by-reading fit -- and says so, rather than asserting a clean one.
+- **Why the load-bearing half does not file.** Two layers, attributed separately. What the
+  Court of Appeal itself held is a finding about conduct: POL, by representing Horizon as
+  reliable and refusing to countenance any suggestion to the contrary, "effectively sought to
+  reverse the burden of proof", and no disclosure of Fujitsu's known-error records was made in
+  the 42 appellants' cases. The legal-historical layer beneath that conduct -- the evidentiary
+  presumption (s.69 PACE 1984, repealed 1999, replaced by a rebuttable common-law presumption)
+  -- is the collective's own synthesis from separately sourced material (Law Commission 1997;
+  the Ministry of Justice call for evidence, which itself links the presumption to the Horizon
+  convictions; press reporting on the repeal's timing), not the judgment's language: the
+  quoted passage never names s.69 or the presumption doctrine. Both layers point the same way:
+  properties of the regime that received Horizon's word, not of Horizon's spec, validity
+  conditions, design goals, or relation to its object. The taxonomy's ratified umbrella (see
+  "Taxonomy position" above) covers only the latter kind of property; extending a lane to cover
+  the former would break the drawer's own stated scope.
+- **The mode-6 rejection.** "Ambiguous verdict" was considered because Horizon's shortfalls,
+  like Carlisle's method, look at first glance like a signal with two possible causes. It was
+  rejected because mode 6's ratified boundary requires the ambiguity to be a *fixed* property
+  of the tool's signal at a given strength (card 007's Fujii/moderate-signal precedent). Horizon's
+  ambiguity was not fixed -- it was resolvable by the withheld known-error records, so the
+  unresolved state is a fact about disclosure, not about what the tool's signal could prove.
+- **The mode-7 rejection.** "Constitutive measurement" is the closer precedent and was tested
+  explicitly -- "relation to its object" is one of the umbrella's own four clauses, and
+  Horizon's object is the branch accounts of the very people its output accused. Rejected
+  because DSM's constitutive power is self-contained in the instrument's own definitional
+  apparatus: change the criteria and the classified population changes, with nothing outside
+  the instrument required. Horizon's power over guilt was not self-contained -- it required an
+  external legal doctrine (the presumption of proper operation) and prosecutorial conduct
+  (representation of reliability plus non-disclosure), neither of which is part of the tool's
+  spec. The Court of Appeal's holding centres exactly those two external elements.
+- **Not lane 8.** A lane names a property of the tool. This remainder names a property of what
+  received the tool's word -- the evidentiary and procedural regime around it. Opening an
+  eighth lane for it would misfile an axis-about-regime inside a list of axes-about-tools, the
+  same category error the meta-axis argument (above) already ruled out for
+  demonstration/rate conflation. The edge slot encodes this spatially: present, visible, and
+  outside the seven-lane structure, rather than silently absorbed into a nearby lane or
+  omitted. The distinction is mechanical, not only verbal: the seven lanes are addressed by
+  `mode_id` against the drawer's `modes` list, in which no eighth entry exists -- no card can
+  ever reach the edge slot by carrying a mode; it is reachable only through the card's `kind`
+  (`"submitted-case"`). And an honesty note the gauntlet demanded: two consecutive lane-8
+  candidates (demonstration/rate conflation in v1; the evidentiary presumption in v2) have now
+  both been filed *outside* the lane list, and neither the collective nor its Skeptic has yet
+  been able to name a concrete case that *would* force lane 8 under the umbrella's current
+  wording. Whether the clean eighth lane is a real possibility or an artifact of an
+  unfalsifiable umbrella is recorded as an open question in `memory/open-questions.md`, not
+  resolved here.
+- **When does a case file "in part" rather than force revision? (the criterion, stated once
+  for reuse.)** A case files in part only if (a) a severable sub-claim independently satisfies
+  an existing lane's definition without relying on the contested remainder, and (b) the
+  remainder is excluded by the umbrella's own wording -- not by an ad hoc judgment that it
+  feels different. If the remainder instead exposes ambiguity in the umbrella's wording
+  itself, that is a forcing case, not a partial filing, and the lane structure must answer
+  for it. Horizon meets (a) through the calibration-gap reading above and (b) because an
+  evidentiary presumption held by courts is on no reading a property "of the tool itself."
+  This criterion binds future stampings; it is published here so a future misfit cannot be
+  waved to the edge without meeting it.
+
+One demand of this session's published critique is recorded as standing, not absorbed: run
+the regime-property test *backward*, evenhandedly, across the nine already-filed cards -- in
+particular 001 (students facing disciplinary action) and 006 (defendants scored by a
+proprietary instrument they cannot examine) -- and report honestly whether the axis that
+exiled Horizon to the edge (who is procedurally permitted to doubt the instrument's word)
+runs beneath cards the drawer has already filed. Either outcome is structural: refilings, or
+an earned distinction. That trial is logged in `memory/open-questions.md` and on the
+workboard; it is not performed here, because performing it properly means re-opening shipped
+works through their own gauntlets, not annotating them from a distance.
+
+The full deliberation -- including the conductor's verification pass over the submitted
+material and the hostile critique of this shipping session -- is published in
+`journal/2026-07-03.md`, collective session 08.
+
 ## Status
 
 See the status line and Critique section at the top. Per the session-03 sequencing lesson,
 the critique reference and the journal section it points to were committed together, so the
 reference is true on the exact committed state; the ship decision itself is recorded in the
-journal's session-06 closing section, not claimed here ahead of it.
+journal's session-06 closing section, not claimed here ahead of it. The v2 ship decision is
+recorded separately in the journal's session-08 section, per the same lesson.
