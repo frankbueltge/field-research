@@ -275,15 +275,24 @@ wording above.
 
 ### The stamping deliberation, in summary
 
-- **The lane-1 half.** Read narrowly, the case fits "calibration gap" exactly: an operator
-  represented an instrument as reliable while a court found the instrument itself defective.
-  That half files cleanly, by the same logic as card 001.
-- **Why the load-bearing half does not file.** The Court of Appeal's own language locates the
-  harm not in Horizon's defects alone but in what those defects were allowed to do
-  procedurally: the effective reversal of the burden of proof onto the accused. That reversal
-  runs through the evidentiary presumption (s.69 PACE 1984, repealed 1999, replaced by a
-  rebuttable common-law presumption) and through the prosecutor's control of disclosure (no
-  disclosure of Fujitsu's known-error records in any of the 42 appellants' cases) -- both
+- **The lane-1 half.** Read narrowly, the case fits "calibration gap" in its abstract shape:
+  an instrument represented as reliable while a court found the instrument itself defective --
+  claims versus practice. The disanalogy with card 001 is acknowledged rather than hidden: 001
+  pairs a vendor's published accuracy specification against an independent academic benchmark;
+  here the reliability claim was an operator-and-prosecutor's litigation representation, and
+  the practice finding comes from a related civil judgment. The claimant's role and the claim's
+  type differ in kind. The filing judges the abstract claims-versus-practice shape sufficient
+  for a partial, by-reading fit -- and says so, rather than asserting a clean one.
+- **Why the load-bearing half does not file.** Two layers, attributed separately. What the
+  Court of Appeal itself held is a finding about conduct: POL, by representing Horizon as
+  reliable and refusing to countenance any suggestion to the contrary, "effectively sought to
+  reverse the burden of proof", and no disclosure of Fujitsu's known-error records was made in
+  the 42 appellants' cases. The legal-historical layer beneath that conduct -- the evidentiary
+  presumption (s.69 PACE 1984, repealed 1999, replaced by a rebuttable common-law presumption)
+  -- is the collective's own synthesis from separately sourced material (Law Commission 1997;
+  the Ministry of Justice call for evidence, which itself links the presumption to the Horizon
+  convictions; press reporting on the repeal's timing), not the judgment's language: the
+  quoted passage never names s.69 or the presumption doctrine. Both layers point the same way:
   properties of the regime that received Horizon's word, not of Horizon's spec, validity
   conditions, design goals, or relation to its object. The taxonomy's ratified umbrella (see
   "Taxonomy position" above) covers only the latter kind of property; extending a lane to cover
@@ -294,13 +303,51 @@ wording above.
   of the tool's signal at a given strength (card 007's Fujii/moderate-signal precedent). Horizon's
   ambiguity was not fixed -- it was resolvable by the withheld known-error records, so the
   unresolved state is a fact about disclosure, not about what the tool's signal could prove.
+- **The mode-7 rejection.** "Constitutive measurement" is the closer precedent and was tested
+  explicitly -- "relation to its object" is one of the umbrella's own four clauses, and
+  Horizon's object is the branch accounts of the very people its output accused. Rejected
+  because DSM's constitutive power is self-contained in the instrument's own definitional
+  apparatus: change the criteria and the classified population changes, with nothing outside
+  the instrument required. Horizon's power over guilt was not self-contained -- it required an
+  external legal doctrine (the presumption of proper operation) and prosecutorial conduct
+  (representation of reliability plus non-disclosure), neither of which is part of the tool's
+  spec. The Court of Appeal's holding centres exactly those two external elements.
 - **Not lane 8.** A lane names a property of the tool. This remainder names a property of what
   received the tool's word -- the evidentiary and procedural regime around it. Opening an
   eighth lane for it would misfile an axis-about-regime inside a list of axes-about-tools, the
   same category error the meta-axis argument (above) already ruled out for
   demonstration/rate conflation. The edge slot encodes this spatially: present, visible, and
   outside the seven-lane structure, rather than silently absorbed into a nearby lane or
-  omitted.
+  omitted. The distinction is mechanical, not only verbal: the seven lanes are addressed by
+  `mode_id` against the drawer's `modes` list, in which no eighth entry exists -- no card can
+  ever reach the edge slot by carrying a mode; it is reachable only through the card's `kind`
+  (`"submitted-case"`). And an honesty note the gauntlet demanded: two consecutive lane-8
+  candidates (demonstration/rate conflation in v1; the evidentiary presumption in v2) have now
+  both been filed *outside* the lane list, and neither the collective nor its Skeptic has yet
+  been able to name a concrete case that *would* force lane 8 under the umbrella's current
+  wording. Whether the clean eighth lane is a real possibility or an artifact of an
+  unfalsifiable umbrella is recorded as an open question in `memory/open-questions.md`, not
+  resolved here.
+- **When does a case file "in part" rather than force revision? (the criterion, stated once
+  for reuse.)** A case files in part only if (a) a severable sub-claim independently satisfies
+  an existing lane's definition without relying on the contested remainder, and (b) the
+  remainder is excluded by the umbrella's own wording -- not by an ad hoc judgment that it
+  feels different. If the remainder instead exposes ambiguity in the umbrella's wording
+  itself, that is a forcing case, not a partial filing, and the lane structure must answer
+  for it. Horizon meets (a) through the calibration-gap reading above and (b) because an
+  evidentiary presumption held by courts is on no reading a property "of the tool itself."
+  This criterion binds future stampings; it is published here so a future misfit cannot be
+  waved to the edge without meeting it.
+
+One demand of this session's published critique is recorded as standing, not absorbed: run
+the regime-property test *backward*, evenhandedly, across the nine already-filed cards -- in
+particular 001 (students facing disciplinary action) and 006 (defendants scored by a
+proprietary instrument they cannot examine) -- and report honestly whether the axis that
+exiled Horizon to the edge (who is procedurally permitted to doubt the instrument's word)
+runs beneath cards the drawer has already filed. Either outcome is structural: refilings, or
+an earned distinction. That trial is logged in `memory/open-questions.md` and on the
+workboard; it is not performed here, because performing it properly means re-opening shipped
+works through their own gauntlets, not annotating them from a distance.
 
 The full deliberation -- including the conductor's verification pass over the submitted
 material and the hostile critique of this shipping session -- is published in
