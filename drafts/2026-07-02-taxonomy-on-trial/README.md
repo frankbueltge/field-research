@@ -1,112 +1,185 @@
 # The Taxonomy on Trial -- method note
 
-Status: **draft -- gauntlet pending.**
+Status: **draft -- gauntlet round 1 FAILED (Verifier) / survived with conditions (Skeptic); reworked 2026-07-03; round 2 pending.**
 
 ## What the work is
 
-A drawer of ten specimen cards laid out on a bounded grid, styled as a natural-history
+A drawer of eleven specimen cards laid out on a bounded grid, styled as a natural-history
 specimen-drawer tray (matte green field, bone index-card faces, brass rule lines and stamp
-ink). On load all ten cards are visible but unlabeled -- each shows only its instrument
-number and the tool it examined. Above the tray, seven fixed compartment labels ("the seven
-named failure modes") are already engraved into the drawer's rail. A single control, "Run the
-classifier," plays a fixed-order sequence: each card in turn is stamped with its failure mode
-and a one-line cited claim, then visibly migrates into the lane matching that mode. "Skip to
-end" jumps straight to the fully-sorted state for repeat viewing or accessibility. Both paths
-always land in the same final state -- there is no randomness anywhere in the mechanism.
+ink). On load all eleven cards are visible but unlabeled -- each shows only its number and the
+tool it examined. Above the tray, seven fixed compartment labels ("the seven named failure
+modes") are already engraved into the drawer's rail. A single control, "Run the classifier,"
+plays a fixed-order sequence: each card in turn is stamped with its verdict and a one-line
+cited claim, then visibly migrates into the lane matching its mode. "Skip to end" jumps
+straight to the fully-sorted state for repeat viewing or accessibility. Both paths always land
+in the same final state -- there is no randomness anywhere in the mechanism.
 
-Card 010 -- this instrument -- is the tenth card, present in the tray from the first frame
-alongside 001-009, not appended or styled apart. It runs last in the same sequence and lands in
-the "Constitutive measurement" lane like any other card. A translucent cross-cutting rail
-beneath the whole grid, labeled "cross-cutting: demonstration / rate conflation," lights when
-card 009 is stamped and names both cards it applies to; card 010's landing joins 009 on the
-already-lit rail. When the sequence finishes, a permanent
-caption appears in the same visual chrome as the rest of the interface: "9 cases sorted -- a
-tally, not a rate."
+Three cards behave differently from the other eight, each in a distinct visual register:
 
-## The mechanism, and why it is not decorative
+- **Card 009** lights the translucent cross-cutting rail beneath the grid, labeled
+  "cross-cutting: demonstration / rate conflation," which names both cards it applies to.
+- **The unfiled specimen** (an unnumbered card, run after 009) is stamped **UNFILED** and does
+  not migrate anywhere: it is a cited case in which the tool was *not* shown to fail -- and a
+  taxonomy of failure modes has no compartment for evidence of a non-failure. It stays in the
+  holding tray, visibly unfiled, when everything else has been put away.
+- **Card 010** -- this instrument -- is the eleventh card, present in the tray from the first
+  frame. It runs last, lands in the "Constitutive measurement" lane (its stamped rationale:
+  a taxonomy is itself a constitutive instrument -- naming failure modes changes what future
+  instruments are built to look for), and joins 009 on the already-lit rail.
+
+When the sequence finishes, a permanent caption appears in the same visual chrome as the rest
+of the interface: **"11 cards run -- 9 filed, 1 unfiled, 1 self-filed. A tally, not a rate."**
+
+## The mechanism, and what it can and cannot claim
 
 The taxonomy's substantive claim is that classification is an act with consequences, not a
-passive label. The piece does not assert this in prose; it performs it. The visitor triggers
-an actual sort, watches each case move into a lane in front of them, and cannot reach a
-"finished" drawer without having watched the mechanism sort its own work into the same lane,
-using the same rail, that it uses for instrument 009. Removing card 010 or the cross-cutting
-rail would require deleting part of the mechanism, not editing a sentence -- that is what makes
-the self-implication structural rather than a caveat a visitor has to scroll to find.
+passive label. The piece performs the act: the visitor triggers the sort, watches each case
+move into a lane, and cannot reach a "finished" drawer without having watched the mechanism
+sort its own work into the same lane, using the same rail, that it uses for instrument 009.
 
-## Taxonomy position: meta-mode, not mode 8
+Two honesty limits on that claim, stated plainly because the round-1 gauntlet earned them:
 
-**Recommendation carried from the spec: meta-mode.** The seven named modes each describe a
-structural property of a tool's design colliding with its deployment context -- a spec that
-does not match practice, conditions applied outside their valid domain, goals that cannot be
-jointly met, and so on. "Demonstration / rate conflation" describes something categorically
-different: how much evidentiary weight a *single trial* of any of those tools can carry,
-independent of which of the seven modes is present. A domain-mismatch instrument, a
-constitutive-measurement instrument, or a perfectly calibrated tool could each be shown only
-once -- the conflation risk sits orthogonal to which failure type is at stake, not as a
-competing eighth member of the same list. Instrument 009 is itself evidence for this: the
-dossier already records that the Standing Docket "does not exhibit a new tool failure mode --
-it re-examines 002/004's domain," and separately names the evidence-quality problem. Filing
-that problem as mode 8 would misfile an axis-about-evidence inside a list of axes-about-tools.
-The drawer's separate cross-cutting rail encodes that decision spatially, in the mechanism
-itself, rather than only in a caption -- and leaves a clean 8th lane open for a future
-candidate that is genuinely tool-structural rather than evidence-structural.
+1. **Every landing is decided at build time.** The run replays a classification the collective
+   already made in `data.json`; nothing is at risk during the animation, and the page's own
+   static note says so. The unfiled specimen does not change this -- its UNFILED outcome is as
+   hard-coded as every lane assignment. What it adds is not live risk but a visible admission:
+   the drawer now contains a case its scheme cannot place.
+2. **The removal costs are asymmetric.** Removing card 010 from the drawer genuinely requires
+   editing the mechanism -- its card object is built inline in the component and merged into
+   the run order, so deleting the data alone breaks the build. But detaching card 010 from the
+   cross-cutting rail is a one-token data edit (`"applies_to": [9, 10]` → `[9]`). The
+   self-implication's structural weight rests on the card's presence in the mechanism, not on
+   the rail's naming of it -- the earlier draft overstated this as a uniform property, and the
+   Skeptic's round-1 check corrected it.
+
+## Taxonomy position: meta-mode, not mode 8 -- with the boundary test run evenhandedly
+
+**Recommendation carried from the spec: meta-mode.** "Demonstration / rate conflation"
+describes how much evidentiary weight a *single trial* of any tool can carry, independent of
+which failure mode is present. Any of the eleven cards' tools -- a domain-mismatch instrument,
+a constitutive-measurement instrument, a perfectly calibrated tool -- could be shown once or
+accumulated over many trials; the conflation risk varies independently of which lane the tool
+falls in. That is what makes it an axis about *evidence*, railing across the lanes, rather
+than an eighth compartment among axes about *tools*.
+
+The round-1 Skeptic objected that the draft applied this boundary test exactly once -- to the
+one candidate that would have forced revising the seven-lane structure -- and never checked
+whether the same test, applied backward, would pull existing lanes loose. The test, run
+evenhandedly:
+
+- **Mode 6, "ambiguous verdict" (007, Carlisle's method), stays a lane.** Its subject is also
+  evidence-flavored (what a signal can prove), but the underdetermination is a *fixed property
+  of one tool's design*: Carlisle's excess-balance signature has two generating causes
+  (fabrication; legitimate stratified randomisation) no matter how many trials accumulate.
+  More demonstrations of Carlisle's method would not resolve it. Trial-count, by contrast, is
+  a property *every* card shares in varying degree -- that is the orthogonality that makes one
+  a lane and the other a rail.
+- **Mode 7, "constitutive measurement" (008, and card 010's own lane), stays a lane.** The
+  Skeptic noted the seven modes were glossed in the earlier draft as "a tool's design colliding
+  with its deployment context," which fits mode 7 badly (the DSM's edition change has no
+  context variable). The gloss was the misfit, not the lane: the property the seven modes
+  share is better stated as **a structural property of the tool itself, in its relation to
+  what it measures** -- a spec that does not match practice (1), conditions applied outside
+  their valid domain (2), goals that cannot be jointly met (3), a metric that invites its own
+  gaming (4), criteria that are jointly unsatisfiable (5), a signal underdetermined between
+  causes (6), an instrument that constitutes its object (7). Demonstration/rate conflation is
+  not a property of any tool at all -- it is a property of the *evidence presented about* a
+  tool. This restatement of the umbrella wording is a revision made in rework, disclosed here.
+
+The drawer's separate cross-cutting rail encodes the decision spatially, in the mechanism --
+and leaves a clean 8th lane open for a future candidate that is genuinely tool-structural.
+A compact version of this boundary-test argument renders in the work itself (the rail's
+sub-line), not only in this method note.
+
+## The unfiled specimen
+
+Adopted from the round-1 Interlocutor's constructive edge ("feed the mechanism one case the
+collective did not choose and did not pre-assign a lane to"), in the most honest form
+available to a build-time work. The specimen is the claims ledger's standing counter-evidence
+row: Al Ali, Helcl & Libovický (EACL 2026) found **no** systematic bias against non-native
+speakers in a Czech-language setting, and the detectors studied did not rely on perplexity as
+a key feature -- a documented case in which the tool was *not* shown to fail, held in the
+ledger since session 1 as unresolved tension with the English-language findings.
+
+What it exposes is structural: the taxonomy has lanes only for failure. Evidence of a
+non-failure cannot be filed anywhere -- not because the case is exotic but because the
+scheme's universe is one-sided. The drawer shows this rather than saying it: when the run
+ends, one card remains in the tray.
+
+What it does not fix, stated against ourselves: the specimen was still *chosen by the same
+collective* (the Interlocutor's deeper objection stands -- see the published critique), and
+its UNFILED landing is as predetermined as every other. A case submitted from outside the
+collective would be the stronger test; an invitation for exactly that is filed in
+`REQUESTS.md`. The earlier draft rejected any third visual register as "no gain to the core
+argument" -- that reasoning is revised here deliberately: the gain is that the mechanism can
+now visibly fail to file.
+
+## Correction record (round-1 Verifier findings, fixed at the source)
+
+The round-1 Verifier FAILED the draft on two blocking findings -- both inherited verbatim from
+pre-constitution `memory/claims.md` rows, both confirmed first-hand by the conductor via live
+retrieval, both corrected at the source (claims ledger, the shipped instruments 001/003, and
+this work) before rework:
+
+1. **Card 001** previously displayed "Originality.ai Turbo claims 0.2% FPR, RAID measures 37%
+   FPR." Neither figure is in the RAID paper (its Table 4 gives Originality 0.07-0.47% FPR at
+   naive thresholds) nor in vendor marketing (which claims "under 3%" for Turbo and cites RAID
+   *favorably*). Discarded -- see `memory/discarded.md`; instrument 001 carries a displayed
+   correction note dated 2026-07-03.
+2. **Card 003** previously pinned "0% survival on screenshot" and a per-platform stripping
+   list to a RAND commentary that contains no such figures. The stripping mechanism is real
+   and is now quoted verbatim from sources that state it (the DALL·E 3 implementer's official
+   statement; Bray's first-hand investigation); the invented precision is discarded.
 
 ## Claims / source table
 
-Every displayed claim traces to a row in `memory/claims.md`. Where the dossier's `who_pays`
-gloss (see `memory/dossiers/instruments-on-trial.md` §2) was not directly supported by the
-specific claims.md row(s) cited for that card, it was softened or left blank rather than
-reproduced verbatim -- see the notes column.
+Every displayed claim traces to a row in `memory/claims.md` (rows 7 and 13 as corrected in
+session 06). Where the dossier's `who_pays` gloss was not directly supported by the cited
+claims.md row(s), it was softened or left blank rather than reproduced verbatim.
 
-| Card | Tool | Mode | Displayed claim (data.json) | claims.md row (finding, abridged) | Source in data.json | who_pays note |
+| Card | Tool | Verdict / lane | Displayed claim (data.json) | claims.md basis | Source in data.json | who_pays note |
 |---|---|---|---|---|---|---|
-| 001 | AI text detectors | Calibration gap | Vendor-claimed accuracy (98-99%, <1% FPR) fails independent benchmarking; RAID 37% FPR vs Originality.ai's claimed 0.2% | Row: "Vendor-claimed AI text detector accuracy... does not hold under independent/adversarial benchmarking; e.g. Originality.ai Turbo claims 0.2% FPR, RAID measures 37% FPR" | https://aclanthology.org/2024.acl-long.674.pdf | "Students facing disciplinary action" kept as-is -- directly supported by the institutional-harm row (ACU allegations, Yale student suspension, Minnesota PhD expulsion), which is this card's second cited basis row |
-| 002 | Benford's First-Digit Law | Domain mismatch | Benford's first-digit law invalidly applied to 2020 US precinct-level election data; academic consensus: first-digit analysis of precinct returns cannot diagnose fraud | Row: "Benford's (first-digit) Law was invalidly applied to 2020 US precinct-level election data..." | https://websites.umich.edu/~wmebane/inapB.pdf | who_pays left **blank**. Dossier's gloss "Democratic legitimacy claims" is dossier framing, not language in the cited row (Mebane row / Benford-conditions row); softening to blank rather than embellishing, per spec instruction naming 002 specifically |
-| 003 | C2PA provenance chain | Structural contradiction | C2PA metadata stripped by ordinary distribution paths -- 0% survival on screenshot; only direct/CDN/email paths preserve it | Row: "C2PA provenance metadata is stripped by ordinary distribution paths..." | https://www.rand.org/pubs/commentary/2025/06/overpromising-on-digital-provenance-and-security.html | Dossier gloss "Journalists, courts" traces to a *different* claims.md row (the call-home privacy-leak row) not cited as this card's basis (stripping + forged-manifest rows only). Softened to "Anyone verifying an image's origin after ordinary sharing or re-encoding" -- tied to the actual cited row's mechanism, no profession named without direct support |
-| 004 | Last-digit uniformity test | Domain mismatch | Same test that flags fabrication also fires on legitimate clinical/survey rounding (BP terminal-digit bias, age heaping), mirror-image surplus at 0/5 | Row: "The same last-digit test fires just as strongly -- or more strongly -- on legitimate clinical and survey data with systematic rounding..." | doi:10.3122/jabfm.2019.05.190085 ; doi:10.29115/SP-2023-0018 | "Clinical / demographic research" kept -- directly supported (row names blood-pressure and age-heaping/survey data explicitly) |
-| 005 | AI capability benchmarks | Active exploitation | MMLU-CF re-scoring: 12-18pt inflation across 7 models/providers; clean scores sit below 89.8% human-expert average | Row: "Contamination-free re-scoring (MMLU-CF) shows a consistent 12-18 percentage-point inflation..." | https://arxiv.org/abs/2412.15194 ; https://github.com/microsoft/MMLU-CF | "Those relying on reported benchmark scores -- researchers, policymakers, the public" -- reasonable readership inference for benchmark claims, not an invented stake; kept, worded to avoid asserting harm beyond what the row supports |
-| 006 | COMPAS recidivism scoring | Definitional impossibility | ProPublica (FPR 44.85% Black / 23.45% White) and Northpointe (PPV) findings both correct; Chouldechova's impossibility result | Row: "COMPAS recidivism scores: ProPublica's 'biased' finding... and Northpointe's 'fair' finding... are both numerically correct..." | https://doi.org/10.1089/big.2016.0047 ; https://doi.org/10.1126/sciadv.aao5580 ; https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm | "Defendants -- disproportionately Black" kept -- directly supported by the FPR disparity figures in the row |
-| 007 | Carlisle's method | Ambiguous verdict | Cannot distinguish fabrication from legitimate stratified/covariate-adaptive randomisation at moderate signal; method's own title concedes the ambiguity | Row: "Carlisle's method cannot distinguish fabrication from legitimate stratified/covariate-adaptive randomisation at moderate signal strength..." | doi:10.1111/anae.13962 ; https://arxiv.org/abs/2209.00131 | "Researchers wrongly flagged; fabricators escaping detection" kept -- matches the row's stated ambiguity directly |
-| 008 | DSM (psychiatric diagnosis) | Constitutive measurement | DSM-5 deletion of bereavement exclusion: identical symptoms diagnosable under one edition, not the prior one, no change in the person | Row: "DSM-5's deletion of the DSM-IV 'bereavement exclusion' criterion... means a person with identical symptoms is diagnosable under one edition's criteria and not under the previous edition's..." | https://www.ncbi.nlm.nih.gov/books/NBK519712/table/ch3.t5/ ; https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Depression-Bereavement-Exclusion.pdf ; https://www.aafp.org/pubs/afp/issues/2014/1115/p690.html | "Everyone classified -- the instrument constitutes the phenomenon" kept -- abstract, mechanism-level, matches the row without naming an unsupported specific group |
-| 009 | The Standing Docket | Domain mismatch (re-examined) + meta-axis | Trial 1: second-digit chi-square convicts World Bank population series (N=217, p=0.034); MAD cutoff flags both clean-assumed real series and the Benford-conforming control at N 200-217 -- a pilot, not a rate | Row: "Trial 1 of the Standing Docket... second-digit Benford chi2 convicts the known-provenance World Bank 2023 population series..." and the Cerqueti & Lupi N-dependence row | works/2026-07-02-standing-docket/ledger.json (seeds 42/43, deterministic re-run verified twice independently) | who_pays left **blank** -- 009 has no entry in dossier §2's pattern table (which only covers instruments 001-008) and no cited row names a stakeholder for it; per spec, no new stakes are invented for 009 or 010 |
-| 010 (self) | this instrument | Constitutive measurement + meta-axis | "This taxonomy classifies 9 self-selected cases assembled by the same collective across two days; it has not been tested against a case it did not choose." | Not a claims.md row -- the spec's self-assessment statement, reproduced verbatim, kind `"self-assessment"` | (none -- self-assessment, no external source) | No who_pays field, matching the spec's schema example for the `self` object |
+| 001 | AI text detectors | Calibration gap | Vendor marketing claims 98-99% accuracy, sub-1-3% FPR; RAID finds detectors "easily fooled by adversarial attacks..."; 61.3% average FPR on non-native-English TOEFL essays (one detector: 98%) | Corrected RAID row (session 06) + NNES bias row (Liang et al.) | https://aclanthology.org/2024.acl-long.674.pdf ; https://arxiv.org/abs/2304.02819 | "Students facing disciplinary action" kept -- supported by the institutional-harm row (this card's second basis row) |
+| 002 | Benford's First-Digit Law | Domain mismatch | Invalidly applied to 2020 US precinct-level election data; consensus: first-digit analysis of precinct returns cannot diagnose fraud | Mebane row | https://websites.umich.edu/~wmebane/inapB.pdf | blank -- dossier gloss not row-supported |
+| 003 | C2PA provenance chain | Structural contradiction | Metadata routinely stripped: "most social media platforms today remove metadata from uploaded images, and actions like taking a screenshot can also remove it"; "very few Content Credentials out there on the Internet" | Corrected C2PA stripping row (session 06) | https://community.openai.com/t/c2pa-meta-data-in-dall-e-3-images/617061 ; https://www.tbray.org/ongoing/When/202x/2025/09/18/C2PA-Investigations | "Anyone verifying an image's origin after ordinary sharing or re-encoding" -- tied to the row's mechanism |
+| 004 | Last-digit uniformity test | Domain mismatch | Fires on legitimate clinical/survey rounding (BP terminal-digit bias, age heaping), mirror-image surplus at 0/5 | Last-digit mirror row | doi:10.3122/jabfm.2019.05.190085 ; doi:10.29115/SP-2023-0018 | "Clinical / demographic research" kept -- row names both explicitly |
+| 005 | AI capability benchmarks | Active exploitation | MMLU-CF: 12-18pt inflation across 7 models/providers; clean scores below the 89.8% human-expert average | MMLU-CF row | https://arxiv.org/abs/2412.15194 ; https://github.com/microsoft/MMLU-CF | "Those who rely on reported benchmark scores" -- readership inference, worded to row scope |
+| 006 | COMPAS recidivism scoring | Definitional impossibility | ProPublica (FPR 44.85%/23.45%) and Northpointe (PPV) both numerically correct; Chouldechova impossibility | COMPAS row | https://doi.org/10.1089/big.2016.0047 ; https://doi.org/10.1126/sciadv.aao5580 ; https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm | "Defendants -- disproportionately Black" kept -- supported by the FPR figures |
+| 007 | Carlisle's method | Ambiguous verdict | Cannot distinguish fabrication from stratified/covariate-adaptive randomisation at moderate signal | Carlisle ambiguity row | doi:10.1111/anae.13962 ; https://arxiv.org/abs/2209.00131 | "Researchers wrongly flagged; fabricators escaping detection" kept -- matches row |
+| 008 | DSM (psychiatric diagnosis) | Constitutive measurement | Bereavement-exclusion deletion: identical symptoms, diagnosable under one edition, not the prior | Bereavement row | https://www.ncbi.nlm.nih.gov/books/NBK519712/table/ch3.t5/ ; https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Depression-Bereavement-Exclusion.pdf ; https://www.aafp.org/pubs/afp/issues/2014/1115/p690.html | "Everyone classified" kept -- mechanism-level |
+| 009 | The Standing Docket | Domain mismatch (re-examined) + meta-axis | Trial 1: second-digit chi-square convicts World Bank population (N=217, p=0.034); MAD flags both clean-assumed real series and the Benford-conforming control -- a pilot, not a rate | Trial-1 row + Cerqueti & Lupi row | works/2026-07-02-standing-docket/ledger.json | blank -- no row names a stakeholder |
+| — (unfiled) | AI text detectors, Czech-language setting | **UNFILED** -- no lane | Counter-evidence: no systematic NNES bias found in a Czech setting; detectors studied did not rely on perplexity -- a case where the tool was not shown to fail | Czech counter-evidence row (Medium confidence, "Not resolved") | https://arxiv.org/abs/2602.05769 | none -- no failure, no stakes claimed |
+| 010 (self) | this instrument | Constitutive measurement + meta-axis; stamped lane-rationale displayed on the card | "This taxonomy classifies 9 self-selected cases assembled by the same collective across two days; it has not been tested against a case it did not choose." | Not a claims.md row -- self-assessment, verbatim from the spec | (none) | none, per spec schema |
 
 ## Self-implication design
 
 Card 010 is not an addendum: it is written into `data.json`'s `self` object at build time,
-rendered in the same tray markup as cards 001-009, driven by the same fixed `runOrder` array
-(`[1, 2, ..., 9, 10]`) and the same `stampCard()` function in the inline script. Its only
-structural differences are (a) it is tagged `kind: "self-assessment"` rather than
-`"verified-claim"`, which the script renders as a visually distinct tag ("SELF-ASSESSMENT" in
-rust ink, dashed card border) instead of "VERIFIED CLAIM" in brass, and (b) it carries no
-`source` or `who_pays`, since it is not a claims-ledger row. Removing it from the run order or
-disconnecting it from the cross-cutting rail would require editing the mechanism's data and
-script, not a caption -- that is the intended structural (not rhetorical) form of
-self-implication described in the spec.
+rendered in the same tray markup, driven by the same fixed run order and the same
+`stampCard()` function. Its structural differences: (a) tagged `kind: "self-assessment"`
+(rust ink, dashed border) rather than `"verified-claim"`; (b) no `source` or `who_pays`;
+(c) it now carries a displayed `lane_rationale` -- the justification for its own lane
+placement, surfaced on the stamped card itself rather than left in the planning documents
+(a round-1 Skeptic condition: the shipped artifact, not the spec, must carry the argument).
+The honest scope of the "structural" claim is stated in the mechanism section above.
 
 ## What was deliberately excluded (v2 candidates)
 
-- **The "emerging cross-instrument thesis" row** (`memory/claims.md`, marked conjecture): that
-  across the first eight instruments, a tool's strongest guarantee coincides with the context
-  of lowest real-world need. Orthogonal to this piece's mechanism (which classifies failure
-  *modes*, not the thesis about where guarantees are weakest); including it would require its
-  own card and lane with no argumentative gain to the sorting mechanism. Deferred to v2.
-- **The Bayesian/generative-model unification conjecture** (`memory/open-questions.md`): the
-  sketch that all seven modes might reduce to one generative-model/deployment-context mismatch.
-  Explicitly flagged in `open-questions.md` as needing more rigor than a suggestive analogy.
-  Including it in v1 would add a claim requiring its own visible "(conjecture)" tag, distinct
-  from every cited card's "VERIFIED CLAIM" tag and from card 010's "SELF-ASSESSMENT" tag -- a
-  third visual register for no gain to the core argument. Deferred to v2.
+- **The "emerging cross-instrument thesis" row** (claims.md, conjecture) -- orthogonal to the
+  sorting mechanism; would need its own card and lane for no argumentative gain. Deferred.
+- **The Bayesian/generative-model unification conjecture** (open-questions.md) -- needs rigor
+  before it is more than a suggestive analogy. Deferred.
+- The v1 argument against any third visual register is revised as of the 2026-07-03 rework
+  (see "The unfiled specimen"); the two exclusions above still stand on their own reasons.
 
 ## Explicitly not done (per spec)
 
-No manual drag-and-drop sorting by the visitor, no freeform "propose your own mode" input, no
-`localStorage` persistence across reloads, no runtime fetch of `claims.md` or anything else.
-All data is local and inline in `./data.json`, authored at build time.
+No manual drag-and-drop sorting, no freeform "propose your own mode" input, no `localStorage`,
+no runtime fetch. All data is local and inline in `./data.json`, authored at build time. The
+unfiled specimen is a documented deviation from the accepted spec's ten-card design, adopted
+from the round-1 Interlocutor critique; the deviation is recorded in the session-06 journal.
 
 ## Status
 
-**Draft -- gauntlet pending.** This README does not reference a journal critique section; per
-the session-03 lesson recorded in the dossier (`memory/dossiers/instruments-on-trial.md` §4),
-a critique reference is only added once the gauntlet has actually run and the critique is
-committed to the journal -- not before.
+**Draft -- reworked after gauntlet round 1; round 2 (re-verification on the exact reworked
+state) pending.** This README references no journal critique section yet; per the session-03
+sequencing lesson, the reference is added only once the critique is committed to the journal.
