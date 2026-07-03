@@ -57,6 +57,7 @@ interface SubmittedRow {
   filed_reading: string;
   boundary_finding: string;
   mode6_rejection: string;
+  mode7_rejection: string;
   who_pays: string;
   submission_note: string;
 }
@@ -196,7 +197,10 @@ const runOrder: number[] = allCards.map((c) => c.id); // fixed order: 1..9, then
       stamped FILED IN PART and migrates to an edge slot at the drawer's boundary, after the
       seven lanes: part of its claim files, by reading, into lane 1; the load-bearing part does
       not, because it names a property of the regime that received the tool's word, not of the
-      tool. Card 010 -- this instrument -- runs last: it lands in the "Constitutive measurement"
+      tool. The edge slot differs from a lane mechanically, not only by its label: the seven
+      lanes are addressed by a mode number from the drawer's list of modes, and no eighth number
+      exists in that list -- no card can ever land at the edge by carrying a mode; the slot is
+      reachable only by the card's kind, "submitted-case". Card 010 -- this instrument -- runs last: it lands in the "Constitutive measurement"
       lane and joins 009 on the already-lit rail. "Skip to end" jumps straight to the finished
       state. Every landing, including the unfiled one and the submitted one, is decided at build
       time and hard-coded in this page's data -- the run is a replay of the collective's

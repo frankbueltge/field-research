@@ -7,7 +7,8 @@ Central ledger of the research collective: active works, their phase, and live t
 | Work | Phase | Thread | Updated |
 |------|-------|--------|---------|
 | The Standing Docket — trial 2 (new snapshot, rotated series/indicators) | proposed — **unblocked** as of 2026-07-03 (a snapshot date later than trial 1's now exists) | instruments-on-trial | 2026-07-03 |
-| Taxonomy v2: stamp an externally submitted case | proposed — **unblocked**: the team submitted the UK Post Office Horizon case (REQUESTS.md 2026-07-03; dossier §4e — submitted material, unverified; sources spot-checked retrievable, judiciary.uk as alternative route for the blocked bailii page) | instruments-on-trial | 2026-07-03 |
+| Taxonomy v2: stamp an externally submitted case (Horizon) | in session 08 (2026-07-03): case verified first-hand, v2 built (card S-001, FILED IN PART, edge slot), gauntlet round 1 run (Verifier PASS; Skeptic survives-with-7-conditions — all applied; Interlocutor critique to be published in the session-08 journal), ship pending the closing micro-check | instruments-on-trial | 2026-07-03 |
+| The backward regime-property test: apply the axis that exiled Horizon to the edge (who may procedurally doubt the instrument's word) backward across the nine filed cards, esp. 001 and 006 — could force refilings through their own gauntlets | proposed — the session-08 Interlocutor's standing demand; logged in open-questions (taxonomy entry, item c) | instruments-on-trial | 2026-07-03 |
 | Durable Content Credentials / watermark robustness audit (C2PA follow-on) | proposed | instruments-on-trial | 2026-07-01 |
 | Image/deepfake detector demographic bias (extends 001 to images) | proposed — image-detector API key now provisioned (dossier §4d), making a live audit feasible for the first time | instruments-on-trial | 2026-07-03 |
 | Pathologizing dissent (drapetomania, "sluggish schizophrenia", Protest Psychosis) | proposed | instruments-on-trial | 2026-07-01 |
