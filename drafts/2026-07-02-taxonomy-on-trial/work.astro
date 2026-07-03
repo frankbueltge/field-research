@@ -39,6 +39,7 @@ interface UnfiledRow {
   claim: string;
   source: string;
   verdict_line: string;
+  selection_admission: string;
   kind: string;
 }
 interface MetaAxis {
@@ -111,7 +112,7 @@ const unfiledCard: CardModel = {
   claim: unfiledCase.claim,
   source: unfiledCase.source,
   whoPays: "",
-  laneRationale: "",
+  laneRationale: unfiledCase.selection_admission,
   metaAxisApplies: false,
   tilt: tiltFor(unfiledCase.id),
 };
@@ -153,9 +154,10 @@ const runOrder: number[] = allCards.map((c) => c.id); // fixed order: 1..9, then
       lands in the "Constitutive measurement" lane and joins 009 on the already-lit rail. "Skip
       to end" jumps straight to the finished state. Every landing, including the unfiled one, is
       decided at build time and hard-coded in this page's data -- the run is a replay of the
-      collective's classification, not a live judgment. This text, the eleven cards, and the
-      seven lane labels are already legible without JavaScript; only the animated sequence
-      itself requires it.
+      collective's classification, not a live judgment; the unfiled specimen, too, was chosen by
+      the same collective, precisely because it could not file. This text, the eleven cards'
+      numbers and tool names, and the seven lane labels are already legible without JavaScript;
+      the stamps, claims, and citations appear only through the sequence, which requires it.
     </p>
   </header>
 
@@ -214,8 +216,9 @@ const runOrder: number[] = allCards.map((c) => c.id); // fixed order: 1..9, then
       lanes instead of occupying one because it is an axis about <em>evidence</em> -- how many
       trials a tool has faced -- which varies independently of which lane the tool falls in.
       The boundary test, applied evenhandedly: mode 6, "ambiguous verdict", stays a lane
-      because one tool's signal being underdetermined between causes is a fixed property of
-      that tool's design, not a property every card shares in varying degree.
+      because its ambiguity is a fixed property of one tool's signal at a given strength --
+      a property of that tool's design, not something every card shares in varying degree,
+      as trial-count is.
     </div>
   </section>
 

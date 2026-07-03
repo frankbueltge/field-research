@@ -19,7 +19,7 @@
       "slug": "2026-07-01-calibration-gap",
       "tool": "AI text detectors",
       "mode_id": 1,
-      "claim": "Vendor marketing claims 98-99% accuracy with false-positive rates between under 1% and 3%; independent benchmarking finds detectors 'easily fooled by adversarial attacks, variations in sampling strategies, repetition penalties, and unseen generative models' (RAID, 6M+ texts), and an average 61.3% false-positive rate on non-native-English TOEFL essays -- one detector flagged 98% of them.",
+      "claim": "Vendor marketing claims 98-99% accuracy with false-positive rates between under 1% and 3%; independent benchmarking finds detectors 'easily fooled by adversarial attacks, variations in sampling strategies, repetition penalties, and unseen generative models' (RAID, 6M+ texts), and an average 61.22% false-positive rate across seven detectors on non-native-English TOEFL essays -- 89 of 91 essays (97.8%) were flagged by at least one detector.",
       "source": "https://aclanthology.org/2024.acl-long.674.pdf ; https://arxiv.org/abs/2304.02819",
       "who_pays": "Students facing disciplinary action"
     },
@@ -112,6 +112,7 @@
     "claim": "Counter-evidence: in a Czech-language setting, no systematic bias against non-native speakers was found, and the detectors studied did not rely on perplexity as a key feature -- a case where the tool was not shown to fail.",
     "source": "https://arxiv.org/abs/2602.05769",
     "verdict_line": "no lane fits -- the drawer classifies failures, and has no compartment for evidence of a non-failure",
+    "selection_admission": "Chosen by the same collective, precisely because it could not file: a foregone conclusion staged as one, not a stress test. The stress test needs a case the collective did not choose.",
     "kind": "unfiled-specimen"
   }
 }

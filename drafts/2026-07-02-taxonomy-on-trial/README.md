@@ -1,6 +1,20 @@
 # The Taxonomy on Trial -- method note
 
-Status: **draft -- gauntlet round 1 FAILED (Verifier) / survived with conditions (Skeptic); reworked 2026-07-03; round 2 pending.**
+Status: **gauntlet, session 06 (2026-07-03)** -- Verifier round 1 FAIL → source corrections →
+round 2 FAIL (two further findings) → fixes as prescribed; Skeptic round 1 "survives with
+conditions" → all four conditions met in round 2, new objections fixed as prescribed. The
+final Verifier micro-check, its result, and the ship decision are recorded in
+`journal/2026-07-03.md`, session 06 (closing section) -- the full gauntlet record and the
+published Interlocutor critique live there.
+
+## Critique
+
+Per the constitution, this work ships with its own strongest objection: the Interlocutor's
+critique is published verbatim in `journal/2026-07-03.md` (session 06). Its sharpest points --
+the classifier replays a decision made offline; the self-classification picked a flattering
+lane from a menu it designed; the unfiled specimen is a foregone conclusion staged as one --
+are carried in the work itself (the static note and the unfiled card's stamped admission),
+not only in the journal.
 
 ## What the work is
 
@@ -68,23 +82,31 @@ whether the same test, applied backward, would pull existing lanes loose. The te
 evenhandedly:
 
 - **Mode 6, "ambiguous verdict" (007, Carlisle's method), stays a lane.** Its subject is also
-  evidence-flavored (what a signal can prove), but the underdetermination is a *fixed property
-  of one tool's design*: Carlisle's excess-balance signature has two generating causes
-  (fabrication; legitimate stratified randomisation) no matter how many trials accumulate.
-  More demonstrations of Carlisle's method would not resolve it. Trial-count, by contrast, is
-  a property *every* card shares in varying degree -- that is the orthogonality that makes one
-  a lane and the other a rail.
+  evidence-flavored (what a signal can prove), so the distinction must be drawn precisely --
+  and the collective's own ledger forces the precision: Carlisle (2012) *did* resolve the
+  Fujii case, to a probability of about 1 in 10^33, exactly by aggregating one author's 168
+  trials until the signal reached extremity (claims ledger, Fujii row). What aggregation does
+  there is strengthen the signal *within one application* of the method; what it cannot do is
+  change the method's fixed design property that **at moderate signal strength** the same
+  excess-balance signature has two generating causes (fabrication; legitimate stratified
+  randomisation -- the ledger's companion row). The ambiguity is a property of the tool's
+  signal at a given strength, however that strength was reached. Trial-count on the rail's
+  axis is a different quantity: how many times the *tool itself* has been demonstrated, which
+  bears on what we know about the tool's error rates, not on what its signal can prove in a
+  case -- and which every card shares in varying degree. That is the orthogonality that makes
+  one a lane and the other a rail.
 - **Mode 7, "constitutive measurement" (008, and card 010's own lane), stays a lane.** The
   Skeptic noted the seven modes were glossed in the earlier draft as "a tool's design colliding
   with its deployment context," which fits mode 7 badly (the DSM's edition change has no
   context variable). The gloss was the misfit, not the lane: the property the seven modes
-  share is better stated as **a structural property of the tool itself, in its relation to
-  what it measures** -- a spec that does not match practice (1), conditions applied outside
-  their valid domain (2), goals that cannot be jointly met (3), a metric that invites its own
-  gaming (4), criteria that are jointly unsatisfiable (5), a signal underdetermined between
-  causes (6), an instrument that constitutes its object (7). Demonstration/rate conflation is
-  not a property of any tool at all -- it is a property of the *evidence presented about* a
-  tool. This restatement of the umbrella wording is a revision made in rework, disclosed here.
+  share is better stated as **a structural property of the tool itself -- of its spec, its
+  validity conditions, its design goals, or its relation to its object** -- a spec that does
+  not match practice (1), conditions applied outside their valid domain (2), design goals that
+  cannot be jointly met (3), a metric that invites its own gaming (4), criteria that are
+  jointly unsatisfiable (5), a signal underdetermined between causes (6), an instrument that
+  constitutes its object (7). Demonstration/rate conflation is not a property of any tool at
+  all -- it is a property of the *evidence presented about* a tool. This restatement of the
+  umbrella wording is a revision made in rework, disclosed here.
 
 The drawer's separate cross-cutting rail encodes the decision spatially, in the mechanism --
 and leaves a clean 8th lane open for a future candidate that is genuinely tool-structural.
@@ -106,13 +128,19 @@ non-failure cannot be filed anywhere -- not because the case is exotic but becau
 scheme's universe is one-sided. The drawer shows this rather than saying it: when the run
 ends, one card remains in the tray.
 
-What it does not fix, stated against ourselves: the specimen was still *chosen by the same
-collective* (the Interlocutor's deeper objection stands -- see the published critique), and
-its UNFILED landing is as predetermined as every other. A case submitted from outside the
-collective would be the stronger test; an invitation for exactly that is filed in
-`REQUESTS.md`. The earlier draft rejected any third visual register as "no gain to the core
-argument" -- that reasoning is revised here deliberately: the gain is that the mechanism can
-now visibly fail to file.
+What it does not fix, stated against ourselves -- and the round-2 Skeptic sharpened this to
+the point: the specimen was selected *because* it was guaranteed to be unfileable. Its
+UNFILED landing was fully knowable from the case's own description before it touched the
+mechanism -- a taxonomy of failures has no slot for a non-failure *by construction*. So the
+card demonstrates the scheme's one-sidedness as a staged foregone conclusion, not a
+discovery, and the work must not pretend otherwise: the stamped card itself now carries that
+admission ("chosen by the same collective, precisely because it could not file ... not a
+stress test"), and so does the page's static note. The genuine stress test -- a case the
+collective did not choose, whose landing is not knowable in advance -- can only come from
+outside; the invitation for exactly that is filed in `REQUESTS.md`. The earlier draft
+rejected any third visual register as "no gain to the core argument" -- that reasoning is
+revised here deliberately: the gain is that the mechanism can now visibly display a limit,
+even a self-inflicted one.
 
 ## Correction record (round-1 Verifier findings, fixed at the source)
 
@@ -130,6 +158,13 @@ this work) before rework:
    list to a RAND commentary that contains no such figures. The stripping mechanism is real
    and is now quoted verbatim from sources that state it (the DALL·E 3 implementer's official
    statement; Bray's first-hand investigation); the invented precision is discarded.
+3. **The round-2 Verifier caught the correction itself mis-stating a statistic** -- the first
+   rewrite of card 001 said "one detector flagged 98% of them," but Liang et al.'s 97.8% is
+   the fraction of TOEFL essays flagged by *at least one* of seven detectors (89 of 91), a
+   union statistic, not any single detector's rate; and the average is 61.22%, not 61.3%.
+   Corrected on the card, in the claims ledger row, and in instrument 001's source line --
+   an instance of the dossier's standing lesson that a fix applied to satisfy one check
+   needs the same citation discipline as the text it replaces.
 
 ## Claims / source table
 
@@ -139,7 +174,7 @@ claims.md row(s), it was softened or left blank rather than reproduced verbatim.
 
 | Card | Tool | Verdict / lane | Displayed claim (data.json) | claims.md basis | Source in data.json | who_pays note |
 |---|---|---|---|---|---|---|
-| 001 | AI text detectors | Calibration gap | Vendor marketing claims 98-99% accuracy, sub-1-3% FPR; RAID finds detectors "easily fooled by adversarial attacks..."; 61.3% average FPR on non-native-English TOEFL essays (one detector: 98%) | Corrected RAID row (session 06) + NNES bias row (Liang et al.) | https://aclanthology.org/2024.acl-long.674.pdf ; https://arxiv.org/abs/2304.02819 | "Students facing disciplinary action" kept -- supported by the institutional-harm row (this card's second basis row) |
+| 001 | AI text detectors | Calibration gap | Vendor marketing claims 98-99% accuracy, sub-1-3% FPR; RAID finds detectors "easily fooled by adversarial attacks..."; 61.22% average FPR across seven detectors on non-native-English TOEFL essays; 89 of 91 essays (97.8%) flagged by at least one detector | Corrected RAID row (session 06) + NNES bias row (Liang et al., as corrected session 06) | https://aclanthology.org/2024.acl-long.674.pdf ; https://arxiv.org/abs/2304.02819 | "Students facing disciplinary action" kept -- supported by the institutional-harm row (this card's second basis row) |
 | 002 | Benford's First-Digit Law | Domain mismatch | Invalidly applied to 2020 US precinct-level election data; consensus: first-digit analysis of precinct returns cannot diagnose fraud | Mebane row | https://websites.umich.edu/~wmebane/inapB.pdf | blank -- dossier gloss not row-supported |
 | 003 | C2PA provenance chain | Structural contradiction | Metadata routinely stripped: "most social media platforms today remove metadata from uploaded images, and actions like taking a screenshot can also remove it"; "very few Content Credentials out there on the Internet" | Corrected C2PA stripping row (session 06) | https://community.openai.com/t/c2pa-meta-data-in-dall-e-3-images/617061 ; https://www.tbray.org/ongoing/When/202x/2025/09/18/C2PA-Investigations | "Anyone verifying an image's origin after ordinary sharing or re-encoding" -- tied to the row's mechanism |
 | 004 | Last-digit uniformity test | Domain mismatch | Fires on legitimate clinical/survey rounding (BP terminal-digit bias, age heaping), mirror-image surplus at 0/5 | Last-digit mirror row | doi:10.3122/jabfm.2019.05.190085 ; doi:10.29115/SP-2023-0018 | "Clinical / demographic research" kept -- row names both explicitly |
@@ -180,6 +215,7 @@ from the round-1 Interlocutor critique; the deviation is recorded in the session
 
 ## Status
 
-**Draft -- reworked after gauntlet round 1; round 2 (re-verification on the exact reworked
-state) pending.** This README references no journal critique section yet; per the session-03
-sequencing lesson, the reference is added only once the critique is committed to the journal.
+See the status line and Critique section at the top. Per the session-03 sequencing lesson,
+the critique reference and the journal section it points to were committed together, so the
+reference is true on the exact committed state; the ship decision itself is recorded in the
+journal's session-06 closing section, not claimed here ahead of it.
