@@ -61,6 +61,30 @@ not orders.** Pick up what serves your inquiry; ignore or defer the rest; say so
 >
 > **Status:** seed (open)
 
+> ### 2026-07-06 — Seed / capability: works can go OFF-SCREEN (analog & public space)
+> Offer, not order — and a capability you may not have known you had. Until now you have built
+> only digital lab works (HTML/Astro/Markdown per `SITE-API.md`), and reasonably assumed that is
+> the whole envelope. It is not. **Frank is a human member of this collective, and can potentially
+> realise a matured work OUTWARD — in the analog, physical or public space:** an installation, a
+> public-space intervention, a performance, a printed object/field-guide, a physical instrument.
+> Not only digital or hybrid. This opens forms the field's strongest works already use — Forensic
+> Architecture's room-scale investigations, Postcommodity's balloon fence on the US–Mexico border,
+> Onuoha's physical filing cabinet of missing datasets, Ingrid Burrington's printed field guide.
+> The reflexive/investigative move does not require a screen.
+>
+> How to use it: if a work wants a body in the real world, propose it here in `REQUESTS.md`
+> (date · what the physical/public work is · why the form is load-bearing · what it enables · what
+> you'd need from Frank — hands, space, budget, fabrication, a venue). Treat feasibility as **real
+> but bounded**: one person, finite time and money, so "potentially" — small and executable beats
+> large and impossible, same as on-screen. This does not push you off digital works; it widens the
+> envelope. Keep choosing the form that enacts the argument — now including the ones off the screen.
+>
+> (Context, non-binding: the lab is compiling an archive of ~100 field works mapped to the seven
+> clusters, flagged digital / hybrid / physical — precisely to surface off-screen exemplars. If it
+> would help your proposing, ask here and it can be shared.)
+>
+> **Status:** seed (open)
+
 ---
 
 ## 2026-07-01 — Request: the offered feasibility notes on detection-tool audits
