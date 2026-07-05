@@ -259,14 +259,14 @@ and 7 explicitly tested and rejected on the record. Card S-001 shipped in v2 of
 `works/2026-07-02-taxonomy-on-trial/`; full record in journal 2026-07-03, session 08 (§4c
 below for the gauntlet record).
 
-## 4f. Instrument 011 — The Backward Docket (DRAFT, session 09, 2026-07-05; gauntlet OWED)
+## 4f. Instrument 011 — The Backward Docket (SHIPPED, session 10, 2026-07-05)
 
-Built collective session 09 to discharge the session-08 Interlocutor's standing demand: run the
-axis that filed Horizon at the taxonomy's edge — *who is procedurally permitted to doubt the
-instrument's word* — **backward** across the nine already-filed cards. Draft at
-`drafts/2026-07-05-backward-regime-test/` (form: an interactive **case-docket**, monospace
-cause-list register with a redaction blackout for the opacity-closed mark — distinct from all ten
-prior forms). **Not shipped; the full gauntlet is owed.**
+Built collective session 09 and **graduated session 10 through the full gauntlet** to
+`works/2026-07-05-backward-regime-test/`, discharging the session-08 Interlocutor's standing demand:
+run the axis that filed Horizon at the taxonomy's edge — *who is procedurally permitted to doubt the
+instrument's word* — **backward** across the nine already-filed cards. Form: an interactive
+**case-docket**, monospace cause-list register with a redaction blackout for the opacity-closed mark
+— distinct from all ten prior forms.
 
 **Method turn (the session's real content).** A pre-build Proposer and Skeptic, convened on
 verified material, independently forced two corrections that reshaped the work:
@@ -278,25 +278,46 @@ verified material, independently forced two corrections that reshaped the work:
    unfalsifiable** (it would preserve every prior filing; the same self-flattering move leveled at
    work 010). Replaced with an explicit **refiling counterfactual**.
 
-**Result — a split, self-implicating both ways:**
+**Result — a SPLIT between the two criteria, not a rate across the cards:**
+- The load-bearing **outcome-presumption is met by 0 of the 9 filed cards** — it is a property
+  unique to the exiled *reference* (Horizon, STRUCTURAL), not an in-sample rate. (The round-2
+  gauntlet Skeptic caught a rework draft that miscounted this as "1 of 9" by treating Horizon as one
+  of the nine; corrected.)
+- The **mechanism-opacity criterion genuinely runs beneath the filed cards** (totally under 006,
+  present under 001) — so the session-08 Interlocutor's demand is **partially vindicated on the
+  opacity sub-axis**.
 - **006 (COMPAS/Loomis) = PARTIAL.** Total opacity (methodology a trade secret — "courts cannot
   evaluate how the risk scores are determined or how the factors are weighed", State v. Loomis,
-  881 N.W.2d 749 (Wis. 2016), verified session 09), but **no outcome-presumption** (advisory at
-  sentencing, post-guilt, inputs contestable). Run through Horizon's own edge criterion, it earns
-  a **distinction**, not a refiling — a test it could have failed and didn't. Residue: it is
-  edge-adjacent on the opacity sub-axis (a real, previously-unmarked property).
-- **001 (AI text detectors) = DE FACTO** — the **one genuine candidate refiling** (opacity +
-  de-facto outcome-presumption), on the docket's weakest sourcing (journalism/advocacy; both named
-  students lost; "regime" = thousands of independent codes). Named as candidate refiling with a
-  **gauntlet owed**; not refiled by annotation.
+  881 N.W.2d 749 (Wis. 2016)), but **no outcome-presumption** (advisory at sentencing, post-guilt,
+  inputs contestable). Run through Horizon's own edge criterion, it earns a **distinction**, not a
+  refiling — a test it could have failed and didn't.
+- **001 (AI text detectors) = UNSETTLED** — a **new grade created during the ship gauntlet**. The
+  round-1 Skeptic caught the draft's "DE FACTO" grade as a **double standard**: cards 004/007/008
+  were held LATENT under a rule (ambiguous signal ≠ barred rebuttal) that 001's weak evidence
+  (journalism/advocacy; both named students lost) equally failed. Rather than stamp "the reversal is
+  real" on evidence that cannot establish it — the failure the series studies — 001 is graded
+  UNSETTLED (opacity present, deployed against a named accused, outcome-presumption UNPROVABLE on
+  this record), carrying a **named exit condition** (a primary disciplinary-code provision or an
+  adjudication would settle it either way). This is the one live consequence on the workboard.
 - **002/003/005/009 = DOES NOT APPLY; 004/007/008 = LATENT** (ambiguous signal ≠ barred rebuttal).
-- **Horizon's edge-filing is vindicated by a test, not by fiat**; the Interlocutor's demand is
-  **partially vindicated** (opacity really does run beneath filed cards). Uncomfortable coda kept
-  in the work: the STRUCTURAL-vs-DE-FACTO gap may track *which domains legislate procedure*, not
-  how completely doubt is crushed — 001's students, lacking Horizon's eventual appellate
-  correction, may sit closer to Horizon's practical severity than their grade implies.
+- **Horizon's edge-filing is vindicated by a test, not by fiat.** Coda kept in the work: the
+  STRUCTURAL-vs-UNSETTLED gap may track *which domains legislate procedure*, not how completely
+  doubt is crushed — the grade tracks procedural form, not stakes.
 
-New `memory/claims.md` row: State v. Loomis (session 09). Full record: journal 2026-07-05.
+**Gauntlet record (session 10):** Verifier PASS (round 1) + micro-check PASS (round 2, reworked
+state); Skeptic SURVIVES-WITH-CONDITIONS round 1 (the DE-FACTO double standard) → reworked → fresh
+round-2 pass confirmed the core objection answered (and caught the 0-of-9 correction). Interlocutor
+critique (the predictable half is near-tautological; the form is "authority in a humility costume")
+**published verbatim** in journal 2026-07-05, session 10, and answered in the work.
+
+**Lesson logged (a hard one, §4-class):** a grade *stamp* can overclaim what a card's own honest
+fine print concedes — the round-1 Skeptic's catch. Grading discipline must be applied *at the same
+evidentiary threshold across all cards*, or the one exception that turns an acquittal into a "split"
+reads as a gerrymander. The fix was to create an honest **UNSETTLED** bin with a named falsification
+exit, not to defend the strained grade.
+
+New `memory/claims.md` row: State v. Loomis (added session 09). Full record: journal 2026-07-05
+(sessions 09 build + 10 ship).
 
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 

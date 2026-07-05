@@ -135,6 +135,8 @@ function markClass(value: string): string {
       return "mark-mixed";
     case "DE_FACTO":
       return "mark-defacto";
+    case "UNPROVEN":
+      return "mark-unproven";
     case "LATENT":
       return "mark-latent";
     case "NONE":
@@ -354,6 +356,12 @@ const presumptionCriterion = axis.criteria.find((c) => c.id === "presumption");
 </section>
 
 <script>
+  // Progressive enhancement: the full docket is present and legible with no script.
+  // Adding the "js" class is what switches on the step-by-step hide/reveal states in the
+  // scoped stylesheet -- so if the script never runs (or is CSP-blocked), nothing is hidden.
+  const docketEl = document.querySelector(".docket");
+  if (docketEl) docketEl.classList.add("js");
+
   const rows = Array.from(document.querySelectorAll(".docket-row"));
   const runBtn = document.getElementById("run-btn");
   const skipBtn = document.getElementById("skip-btn");
@@ -671,6 +679,19 @@ const presumptionCriterion = axis.criteria.find((c) => c.id === "presumption");
     background: #d8d3c2;
   }
 
+  /* UNPROVEN: a question-mark hatch -- neither the redaction-black of CLOSED nor a settled fill.
+     The grade the docket cannot make on the load-bearing criterion, shown as unresolved. */
+  .mark-unproven {
+    background: repeating-linear-gradient(
+      90deg,
+      var(--paper-dim),
+      var(--paper-dim) 3px,
+      #ffffff 3px,
+      #ffffff 6px
+    );
+    border-style: dashed;
+  }
+
   .mark-latent {
     background: var(--paper-dim);
     border-style: dashed;
@@ -796,21 +817,25 @@ const presumptionCriterion = axis.criteria.find((c) => c.id === "presumption");
     font-size: 0.92rem;
   }
 
-  .reveal-a,
-  .reveal-b {
+  .docket.js .reveal-a,
+  .docket.js .reveal-b {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
     transition: opacity 0.35s ease;
   }
 
-  .docket-row.show-a .reveal-a {
+  .reveal-b {
+    margin-top: 0.55rem;
+  }
+
+  .docket.js .docket-row.show-a .reveal-a {
     max-height: none;
     opacity: 1;
     overflow: visible;
   }
 
-  .docket-row.show-b .reveal-b {
+  .docket.js .docket-row.show-b .reveal-b {
     max-height: none;
     opacity: 1;
     overflow: visible;
@@ -923,8 +948,8 @@ const presumptionCriterion = axis.criteria.find((c) => c.id === "presumption");
     margin: 0;
   }
 
-  #counterfactual,
-  #finding {
+  .docket.js #counterfactual,
+  .docket.js #finding {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -935,8 +960,8 @@ const presumptionCriterion = axis.criteria.find((c) => c.id === "presumption");
     transition: opacity 0.35s ease;
   }
 
-  #counterfactual.show,
-  #finding.show {
+  .docket.js #counterfactual.show,
+  .docket.js #finding.show {
     max-height: none;
     opacity: 1;
     overflow: visible;
@@ -952,14 +977,17 @@ const presumptionCriterion = axis.criteria.find((c) => c.id === "presumption");
     background: var(--ink);
     border: 1.5px solid var(--ink);
     padding: 0.6rem 0.85rem;
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
     transition: opacity 0.3s ease;
     margin-bottom: 1rem;
   }
 
-  .chrome-caption.visible {
+  .docket.js .chrome-caption {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .docket.js .chrome-caption.visible {
     opacity: 1;
     max-height: none;
   }
@@ -984,29 +1012,3 @@ const presumptionCriterion = axis.criteria.find((c) => c.id === "presumption");
     }
   }
 </style>
-
-<noscript>
-  <style>
-    .reveal-a,
-    .reveal-b,
-    #counterfactual,
-    #finding {
-      max-height: none !important;
-      opacity: 1 !important;
-      overflow: visible !important;
-    }
-    #counterfactual,
-    #finding {
-      padding: 0.9rem 1rem 1rem !important;
-      border: 1px solid #1b1a17 !important;
-      margin-bottom: 1.3rem !important;
-    }
-    .reveal-b {
-      margin-top: 0.55rem !important;
-    }
-    .chrome-caption {
-      opacity: 1 !important;
-      max-height: none !important;
-    }
-  </style>
-</noscript>

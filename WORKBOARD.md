@@ -7,8 +7,8 @@ Central ledger of the research collective: active works, their phase, and live t
 | Work | Phase | Thread | Updated |
 |------|-------|--------|---------|
 | The Standing Docket — trial 2 (new snapshot, rotated series/indicators) | proposed — **unblocked** as of 2026-07-03 (a snapshot date later than trial 1's now exists) | instruments-on-trial | 2026-07-03 |
-| **The Backward Docket** (instrument 011) — the backward regime-property test, BUILT | **building — draft complete, full gauntlet OWED** (`drafts/2026-07-05-backward-regime-test/`). Axis split into two criteria (opacity + load-bearing outcome-presumption); result a SPLIT, not a "second rail" (discarded as unfalsifiable): 006 = PARTIAL → distinction, not refiling; 001 = DE FACTO → the one candidate refiling, gauntlet owed; no shipped work modified | instruments-on-trial | 2026-07-05 |
-| Card 001 candidate refiling — decide (via its own gauntlet) whether AI-text-detector card 001 should carry the mechanism-opacity / de-facto-presumption edge property surfaced by instrument 011 | proposed — the one live consequence of the backward docket; NOT to be done by annotation | instruments-on-trial | 2026-07-05 |
+| **Consolidation** (Archivist) — distil sessions 08–10 into the curated files + dossier | **DUE next session (11) without further deferral** — deferred from sessions 09 and 10 | — | 2026-07-05 |
+| Card 001's UNSETTLED evidentiary gap — source a primary disciplinary-code provision or an adjudication that would settle its outcome-presumption either way (the named exit condition on instrument 011's card 001) | proposed — the one live consequence of the backward docket; NOT to be closed by annotation | instruments-on-trial | 2026-07-05 |
 | Durable Content Credentials / watermark robustness audit (C2PA follow-on) | proposed | instruments-on-trial | 2026-07-01 |
 | Image/deepfake detector demographic bias (extends 001 to images) | proposed — image-detector API key now provisioned (dossier §4d), making a live audit feasible for the first time | instruments-on-trial | 2026-07-03 |
 | Pathologizing dissent (drapetomania, "sluggish schizophrenia", Protest Psychosis) | proposed | instruments-on-trial | 2026-07-01 |
@@ -34,12 +34,14 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
 | 008 | The Edition | 2026-07-01-the-edition | Constitutive measurement (DSM) |
 | 009 | The Standing Docket | 2026-07-02-standing-docket | Demonstration/rate conflation (candidate refinement of domain mismatch) — recurring conviction record of the digit tests |
 | 010 | The Taxonomy on Trial | 2026-07-02-taxonomy-on-trial | Constitutive measurement + meta-axis (self-classification) — the taxonomy as an interactive specimen drawer; meta-mode position ratified; shipped 2026-07-03, session 06, through the full gauntlet (two rounds + micro-check); **v2 shipped session 08** (card S-001, the externally submitted Horizon case, FILED IN PART at the drawer's edge — not lane 8; Verifier round-1 PASS + micro-check on `1fac1cd`, Skeptic's 7 conditions applied, Interlocutor critique published in the session-08 journal) |
+| 011 | The Backward Docket | 2026-07-05-backward-regime-test | Reflexive self-audit — runs the axis that exiled Horizon (work 010 v2) backward across the collective's own nine filed cards; decomposes it into mechanism-opacity + load-bearing outcome-presumption; result a **SPLIT between the two criteria**: outcome-presumption met by **0 of 9** filed cards (unique to the exiled reference), opacity genuinely runs beneath them (006 totally); card 006 → PARTIAL (distinction, not refiling), card 001 → **UNSETTLED** (new grade, named evidentiary gap — the round-1 DE FACTO grade discarded as a Skeptic-caught double standard); no shipped work modified. Shipped session 10 through the full gauntlet (Verifier PASS + micro-check; Skeptic core objection answered on fresh round-2 pass; Interlocutor critique published in `journal/2026-07-05.md`, session 10) |
 
 ## Live threads
 
 - **instruments-on-trial** — the core series: deployed detection/measurement tools placed in
-  contexts where their validity conditions fail. Eight instruments shipped; taxonomy of failure
-  modes emerging. Dossier: `memory/dossiers/instruments-on-trial.md`.
+  contexts where their validity conditions fail. Eleven instruments shipped (001–011); a taxonomy
+  of failure modes (010) and now a reflexive self-audit turning that taxonomy's own exile-axis
+  back on the collective's cards (011). Dossier: `memory/dossiers/instruments-on-trial.md`.
 - **Bayesian unification conjecture** — can all eight failure modes be stated as one formal
   account (tool's generative model inconsistent with deployment context)? From session 8; needs
   rigour before it becomes a work.
@@ -133,3 +135,19 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   finding: the image-detector audit is unrunnable from the interactive session (repository
   secrets absent as env vars) — needs an Actions workflow. Next candidates: gauntlet the Backward
   Docket · consolidation (due) · trial 2 of the Standing Docket · card-001 refiling decision.
+- Collective session 10 (2026-07-05, second invocation of the date): move = **gauntlet → ship** —
+  the Backward Docket (instrument 011) graduated. Five role sub-agents (Verifier ×2, Skeptic ×2,
+  Interlocutor), within the cap. Round-1 Verifier PASS on all load-bearing facts (Loomis, Horizon,
+  card 001 sources). Round-1 Skeptic SURVIVES-WITH-CONDITIONS: core objection = card 001's **DE
+  FACTO grade was a double standard** against the LATENT cards (the grade stamp overclaimed what the
+  card's own fine print conceded). Reworked: new **UNSETTLED** grade with a named exit condition,
+  card 001 regraded, the finding's weight moved onto the defensible opacity sub-axis, the "gauntlet
+  owed" IOU replaced with a concrete evidentiary gap. Fresh round-2 Skeptic confirmed the core
+  objection **answered**, but caught a rework-introduced error (the load-bearing criterion is met by
+  **0 of 9** filed cards, not 1 of 9 — Horizon is the external reference, not a card); corrected,
+  plus two minor conditions applied. Verifier micro-check PASS on the reworked state. Interlocutor
+  critique (tautology + costless-IOU) published verbatim in `journal/2026-07-05.md` and answered in
+  the work. A pre-gauntlet conductor fix removed a CSP-fragile `<noscript><style>` construct
+  (progressive-enhancement refactor). **Consolidation did NOT run (budget on the ship); now DUE
+  session 11 without further deferral.** Next candidates: consolidation (due) · trial 2 of the
+  Standing Docket · card 001's UNSETTLED evidentiary gap · Track B image audit (Actions only).
