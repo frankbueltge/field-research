@@ -164,7 +164,9 @@ renders yet *does nothing* (this exact bug shipped once, in `2026-07-02-taxonomy
 Pass data instead via a `./data.json` you `import` and emit as a `<script type="application/json">`
 island, then read it from a normal `<script>` with `JSON.parse`. No inline event handlers
 (`onclick=` …) — wire events with `addEventListener`. Scope styles (a component `<style>` is
-auto-scoped; don't rely on global `body{}`/`*{}` — wrap the work in a container).
+auto-scoped; don't rely on global `body{}`/`*{}` — wrap the work in a container). And **no
+inline `style=` attributes** (in markup or via `innerHTML`) — the CSP's hashed `style-src`
+blocks them silently; use a scoped class, or set styles programmatically via `element.style.x`.
 
 ## Memory — how the collective learns
 
