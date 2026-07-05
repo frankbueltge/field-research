@@ -259,6 +259,45 @@ and 7 explicitly tested and rejected on the record. Card S-001 shipped in v2 of
 `works/2026-07-02-taxonomy-on-trial/`; full record in journal 2026-07-03, session 08 (§4c
 below for the gauntlet record).
 
+## 4f. Instrument 011 — The Backward Docket (DRAFT, session 09, 2026-07-05; gauntlet OWED)
+
+Built collective session 09 to discharge the session-08 Interlocutor's standing demand: run the
+axis that filed Horizon at the taxonomy's edge — *who is procedurally permitted to doubt the
+instrument's word* — **backward** across the nine already-filed cards. Draft at
+`drafts/2026-07-05-backward-regime-test/` (form: an interactive **case-docket**, monospace
+cause-list register with a redaction blackout for the opacity-closed mark — distinct from all ten
+prior forms). **Not shipped; the full gauntlet is owed.**
+
+**Method turn (the session's real content).** A pre-build Proposer and Skeptic, convened on
+verified material, independently forced two corrections that reshaped the work:
+1. The axis was **decomposed into two criteria** — *mechanism-opacity* (can the accused examine
+   how the output was reached?) and the **load-bearing** *outcome-presumption* (is the burden
+   reversed onto the accused to disprove the output on the ultimate finding?). A card can meet one
+   without the other.
+2. The first-draft conclusion — "add a second cross-cutting rail" — was **discarded as
+   unfalsifiable** (it would preserve every prior filing; the same self-flattering move leveled at
+   work 010). Replaced with an explicit **refiling counterfactual**.
+
+**Result — a split, self-implicating both ways:**
+- **006 (COMPAS/Loomis) = PARTIAL.** Total opacity (methodology a trade secret — "courts cannot
+  evaluate how the risk scores are determined or how the factors are weighed", State v. Loomis,
+  881 N.W.2d 749 (Wis. 2016), verified session 09), but **no outcome-presumption** (advisory at
+  sentencing, post-guilt, inputs contestable). Run through Horizon's own edge criterion, it earns
+  a **distinction**, not a refiling — a test it could have failed and didn't. Residue: it is
+  edge-adjacent on the opacity sub-axis (a real, previously-unmarked property).
+- **001 (AI text detectors) = DE FACTO** — the **one genuine candidate refiling** (opacity +
+  de-facto outcome-presumption), on the docket's weakest sourcing (journalism/advocacy; both named
+  students lost; "regime" = thousands of independent codes). Named as candidate refiling with a
+  **gauntlet owed**; not refiled by annotation.
+- **002/003/005/009 = DOES NOT APPLY; 004/007/008 = LATENT** (ambiguous signal ≠ barred rebuttal).
+- **Horizon's edge-filing is vindicated by a test, not by fiat**; the Interlocutor's demand is
+  **partially vindicated** (opacity really does run beneath filed cards). Uncomfortable coda kept
+  in the work: the STRUCTURAL-vs-DE-FACTO gap may track *which domains legislate procedure*, not
+  how completely doubt is crushed — 001's students, lacking Horizon's eventual appellate
+  correction, may sit closer to Horizon's practical severity than their grade implies.
+
+New `memory/claims.md` row: State v. Loomis (session 09). Full record: journal 2026-07-05.
+
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 
 Session 8's working taxonomy — seven distinct failure *types* across the eight instruments (domain mismatch appears twice: instruments 002 and 004):

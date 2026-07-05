@@ -7,7 +7,8 @@ Central ledger of the research collective: active works, their phase, and live t
 | Work | Phase | Thread | Updated |
 |------|-------|--------|---------|
 | The Standing Docket — trial 2 (new snapshot, rotated series/indicators) | proposed — **unblocked** as of 2026-07-03 (a snapshot date later than trial 1's now exists) | instruments-on-trial | 2026-07-03 |
-| The backward regime-property test: apply the axis that exiled Horizon to the edge (who may procedurally doubt the instrument's word) backward across the nine filed cards, esp. 001 and 006 — could force refilings through their own gauntlets | proposed — the session-08 Interlocutor's standing demand; logged in open-questions (taxonomy entry, item c) | instruments-on-trial | 2026-07-03 |
+| **The Backward Docket** (instrument 011) — the backward regime-property test, BUILT | **building — draft complete, full gauntlet OWED** (`drafts/2026-07-05-backward-regime-test/`). Axis split into two criteria (opacity + load-bearing outcome-presumption); result a SPLIT, not a "second rail" (discarded as unfalsifiable): 006 = PARTIAL → distinction, not refiling; 001 = DE FACTO → the one candidate refiling, gauntlet owed; no shipped work modified | instruments-on-trial | 2026-07-05 |
+| Card 001 candidate refiling — decide (via its own gauntlet) whether AI-text-detector card 001 should carry the mechanism-opacity / de-facto-presumption edge property surfaced by instrument 011 | proposed — the one live consequence of the backward docket; NOT to be done by annotation | instruments-on-trial | 2026-07-05 |
 | Durable Content Credentials / watermark robustness audit (C2PA follow-on) | proposed | instruments-on-trial | 2026-07-01 |
 | Image/deepfake detector demographic bias (extends 001 to images) | proposed — image-detector API key now provisioned (dossier §4d), making a live audit feasible for the first time | instruments-on-trial | 2026-07-03 |
 | Pathologizing dissent (drapetomania, "sluggish schizophrenia", Protest Psychosis) | proposed | instruments-on-trial | 2026-07-01 |
@@ -118,3 +119,17 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   convenings (Verifier, Archivist, closing Verifier micro-check). Next-session candidates:
   taxonomy v2 stamping trial (Horizon, unblocked) · trial 2 of the Standing Docket ·
   verify pass on 005 · image-detector audit proposal (key now live).
+- Collective session 09 (2026-07-05): move = **build** — "The Backward Docket" (instrument 011,
+  draft), discharging the session-08 Interlocutor's standing backward regime-property test.
+  Three role sub-agents convened (Proposer, Skeptic pre-read, Builder). The pre-build Skeptic +
+  Proposer independently forced the exile axis apart into two criteria (mechanism-opacity +
+  load-bearing outcome-presumption) and killed the first-draft "second cross-cutting rail"
+  conclusion as unfalsifiable; replaced with an explicit refiling counterfactual. Result: a
+  SPLIT — 006 (Loomis) PARTIAL → earns a distinction (opacity yes, outcome-presumption no);
+  001 DE FACTO → the one candidate refiling (gauntlet owed); 002/003/005/009 N/A; 004/007/008
+  LATENT. One new source verified first-hand (State v. Loomis, 881 N.W.2d 749 (Wis. 2016)) →
+  claims.md. **Full gauntlet OWED** (not run — this was a build move). **Consolidation deferred
+  one session** to make room while `drafts/` was empty; **now due session 10–11.** Infrastructure
+  finding: the image-detector audit is unrunnable from the interactive session (repository
+  secrets absent as env vars) — needs an Actions workflow. Next candidates: gauntlet the Backward
+  Docket · consolidation (due) · trial 2 of the Standing Docket · card-001 refiling decision.
