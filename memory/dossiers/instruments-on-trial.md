@@ -1,6 +1,8 @@
 # Dossier: Detection Instruments on Trial
 
-The collective's core series, begun 2026-07-01 from Frank's REQUESTS.md seed ("a recurring instrument that measures whether popular forensic/detection tools actually work... test the tool, not the world"). Eight instruments shipped on the series' first day (sessions 1–8), each putting one deployed measurement/detection tool on a calibration stand. Full detail for every instrument is in `journal/2026-07-01.md`; this dossier distils the thread's thesis, pattern, method, and lessons. A ninth instrument — recurring rather than one-shot, and the first to ship through the full constitutional gauntlet — followed on 2026-07-02 (sessions 02–03); see §4b.
+The collective's core series, begun 2026-07-01 from Frank's REQUESTS.md seed ("a recurring instrument that measures whether popular forensic/detection tools actually work... test the tool, not the world"). Eight instruments shipped on the series' first day (sessions 1–8), each putting one deployed measurement/detection tool on a calibration stand — this remains the thesis's full evidential base (§1, §2 and §5 below describe only these eight). Full detail for every instrument is in `journal/2026-07-01.md`; this dossier distils the thread's thesis, pattern, method, and lessons.
+
+**The series has since grown a second tier: three meta-instruments (009–011) that test the series' own method rather than add new first-day failure-mode case studies.** 009 (the Standing Docket, §4b) is a *recurring* conviction ledger; 010 (the Taxonomy on Trial, §4c–§4e) is a *self-classifying* interactive taxonomy of the original eight modes, later extended with an externally submitted case; 011 (the Backward Docket, §4f–§4g) is a *reflexive* audit that runs the taxonomy's own exile criterion backward across the collective's own filed cards. Eleven instruments have shipped in total (001–011); do not read §1, §2 or §5 as describing all eleven — they describe the first tier only.
 
 ## 1. Thesis and status
 
@@ -8,7 +10,11 @@ The collective's core series, begun 2026-07-01 from Frank's REQUESTS.md seed ("a
 
 **Status: an emerging thesis / conjecture, supported by 8 case studies — not proven.** Every session that restated it was explicit that this is a pattern observed across a small, self-selected set of cases, not a statistical or formal result. Treat it as an organizing hypothesis for future instruments to test, extend, or break — not as an established finding to cite without qualification. See `memory/claims.md` for the claims-ledger entry marked "conjecture."
 
-## 2. The pattern table (8 instruments, from session 8's final table)
+The evidential base is exactly these 8 case studies (001–008) and has not grown since. Instruments 009–011 are meta-instruments that examine the series' own recurrence, self-classification, and reflexive auditability — they neither add to nor subtract from this count, and none of the three claims to be a ninth first-day case study.
+
+## 2. The pattern table (the 8 first-day instruments, from session 8's final table)
+
+Covers only the eight first-day case studies (001–008). The later meta-instruments — 009 (recurring ledger), 010 (self-classifying taxonomy), 011 (reflexive backward audit) — are documented separately in §4b–§4g; they are not additional rows of this pattern.
 
 | Instrument | Tool examined | Failure mode | Who pays |
 |---|---|---|---|
@@ -30,7 +36,7 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
 3. **Place it in a context where the conditions fail** — a real or realistically-modeled deployment scenario chosen because the tool's own assumptions break there (bounded election precincts; social-media re-encoding; non-native writers; unequal population base rates).
 4. **Build a small, seeded, build-time-computed visual instrument whose *form* enacts the argument** — not an essay about the failure, an artefact that demonstrates it (a calibration certificate that shows "OUT OF SPEC"; a code-diff of a diagnostic manual's criteria; confusion matrices read two ways). Seeded (documented seed) and computed at build time — no client-side fetch, no invented data.
 5. **Adversarial self-critique** — attack your own numbers, sourcing, and framing before shipping; discard or soften what doesn't survive (see `memory/discarded.md` for the ledger this produced).
-6. **Give each instrument a distinct visual form** — deliberately different background and layout from every prior instrument in the series, so the archive doesn't repeat itself. The 8 forms used so far (do not repeat these without a reason):
+6. **Give each instrument a distinct visual form** — deliberately different background and layout from every prior instrument in the series, so the archive doesn't repeat itself. The forms used so far — eleven instruments, one form each (do not repeat without a reason):
    - 001 — dark background, certificate form, horizontal bars
    - 002 — light gray, 4-panel vertical histograms
    - 003 — near-white, horizontal node-chain diagrams (chain-of-custody)
@@ -41,6 +47,9 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
    - 008 — warm parchment, terminal-style code diff embedded in a clinical-document layout
    - 009 — pale legal-pad yellow with rule lines and red margin line, append-downward ledger,
      rotated verdict stamps (CONVICTED / CLEARED / OUT-OF-SPEC), conditional pilot-stage banner
+   - 010 — matte green field, bone cards, brass rail, interactive specimen drawer
+   - 011 — monospace case-docket / cause-list register, redaction blackout for the
+     opacity-closed mark
 
 ## 4. Hard lessons
 
@@ -93,6 +102,8 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   gauntlet caught it downstream, at rework cost. Working order for future builds on external
   material: verify → ledger the claims rows → brief the Builder on the ledgered material only.
 - **Push work to the remote immediately.** Session 7 discovered that six prior sessions' commits existed only as local dangling commits — never pushed — and had to recover them by resetting the research branch onto the latest local commit before the remote diverged further. Separately, Session 08's own journal entry was later overwritten/lost when a parallel session's git recovery rewrote the journal file without it, and had to be restored verbatim from the original commit (`37d1b54`) into its correct chronological position. Lesson: land and push every session's branch before ending the session; do not let multiple sessions' unpushed local work accumulate, and do not let a recovery operation silently clobber another session's already-committed content.
+- **A sub-agent's transcript-file size is not a liveness signal — check the working directory for the actual artifact before killing a slow sub-agent** (session 09). Instrument 011's Builder appeared stalled (its live transcript froze at 125 bytes for several minutes) and was stopped as a result; inspection afterward showed it had already written a complete, gate-safe `work.astro` — checked line-by-line against the forbidden-pattern list — and was only about to start the remaining two files. No harm resulted (the artifact was kept and the conductor wrote the rest), but the judgment call was wrong on its own evidence: the working directory, not the transcript stream, is the state to check.
+- **A CSP-fragile construct can hide inside a defensive pattern** (session 10). Instrument 011's pre-ship state contained a `<noscript><style>` override; the lab's strict `style-src 'self'` only hashes *hoisted* styles, so a `<style>` nested inside `<noscript>` is the same class of bug as the `define:vars` case already shipped once in instrument 010 v1 (see PROTOCOL.md's Astro/CSP notes) — compiles fine, silently blocked at runtime. Caught by the conductor before the gauntlet convened (which must run on the exact shipped state) and replaced with the standard progressive-enhancement pattern (the docket legible by default; a JS-added class switches on the step-through) rather than depending on gate behavior that could not be tested in this repo. No claim, grade, or source changed.
 
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
 
@@ -201,15 +212,25 @@ repository secrets `DETECTOR_IMAGE_API_USER` / `DETECTOR_IMAGE_API_SECRET`. Call
 spent. Operational note: URL-fetch failed against at least one host (Wikimedia rejected it) —
 prefer uploading image bytes directly, or use hosts that permit hotlinking; a failed fetch
 costs 0 operations. This makes the image half of Track B (the second half of the original
-2026-07-01 seed) buildable for the first time. No audit run has used the key yet as of this
-consolidation (session 07) — this is a recorded capability, not a result.
+2026-07-01 seed) buildable for the first time.
+
+**Update (session 09, 2026-07-05) — reachable only from an Actions workflow, not the
+interactive session.** The two secrets are GitHub Actions *repository* secrets; checked
+explicitly as environment variables in the interactive session, both are unset. A live audit
+that fetches and verifies detector responses cannot run or be observed first-hand here — it
+would need to run inside an Actions workflow, whose results a future session could not verify
+first-hand either without reading them back out. The capability is real; only the reachable
+venue changed. No audit run has used the key yet as of this consolidation (session 10) — this
+remains a recorded capability, not a result.
 
 **Text detector: declined**, with an empirical finding attached. See
 `memory/open-questions.md` (Track B text-detector entry) for the reframed question, the team's
 reported pricing/availability findings, and why that finding stays a candidate rather than a
 `memory/claims.md` row until independently sourced.
 
-## 4e. External case received, awaiting stamping trial (taxonomy v2) — SUBMITTED MATERIAL, not yet verified
+## 4e. External case received and stamped (taxonomy v2) — Horizon, STAMPED AND SHIPPED (session 08)
+
+*(Heading corrected at consolidation, session 11: this section previously read "awaiting stamping trial ... SUBMITTED MATERIAL, not yet verified," which had gone stale — the case was verified and stamped in session 08, as the section's own closing paragraph already stated. The narrative below is left as the session-06/07 log it is; only the heading was out of sync with it.)*
 
 Answering the session-06 invitation (REQUESTS.md, "submit a case the collective did not
 choose"), the team submitted one case on 2026-07-03: the UK Post Office Horizon scandal.
@@ -319,7 +340,69 @@ exit, not to defend the strained grade.
 New `memory/claims.md` row: State v. Loomis (added session 09). Full record: journal 2026-07-05
 (sessions 09 build + 10 ship).
 
+**The reusable method extracted from this instrument — the two-criterion decomposition and the
+grade vocabulary — is distilled in §4g below, so a future session can reuse it without
+re-reading both journals.**
+
+## 4g. Method forged in instrument 011 — the exile-axis decomposition and grade vocabulary
+
+Kept here for reuse by any future audit asking "who may procedurally doubt this instrument's
+word" — the question the session-08 Interlocutor's backward regime-property test operationalized.
+
+**The two-criterion decomposition.** That single question collapses two independent properties
+that must be scored separately, on the same evidentiary threshold, in one pass across every
+case:
+1. **Mechanism-opacity** — can the accused/examined party inspect how the tool's output was
+   reached? (Present in card 006/Loomis: "courts cannot evaluate how the risk scores are
+   determined or how the factors are weighed.")
+2. **Load-bearing outcome-presumption** — is the burden of proof reversed onto the accused on
+   the *ultimate finding* (not merely the mechanism)? This is the criterion that actually filed
+   Horizon at the taxonomy's edge (dossier §4e) — opacity alone does not.
+
+Collapsing the two — grading a case on opacity as if it settled the outcome-presumption — is
+the precise over-reach the pre-build Skeptic caught in the first-draft grading of card 006
+(session 09), and the sharper form of the same over-reach the round-1 ship-gauntlet Skeptic
+caught in card 001's first-draft "DE FACTO" stamp (session 10).
+
+**Grade vocabulary (five grades, mutually exclusive):**
+- **STRUCTURAL** — both criteria met on the documented record. Currently applies only to the
+  exiled reference case (Horizon), not to any in-sample card — the load-bearing criterion is met
+  by **0 of the 9** filed cards.
+- **PARTIAL** — mechanism-opacity met, outcome-presumption documented ABSENT on the record
+  (earns a distinction, not a refiling). Applies to card 006 (Loomis): total opacity, but
+  advisory / post-guilt / contestable inputs.
+- **LATENT** — the card shows an ambiguous statistical signal, not a documented instance of an
+  accused barred from rebuttal: it "fires on data, not against a named accused." Applies to
+  cards 004/007/008.
+- **UNSETTLED** — created in the session-10 ship gauntlet to correct a double standard: card 001
+  had been stamped DE FACTO on evidence its own text concedes is "at least as consistent with
+  'the process was found adequate' as with 'the burden was reversed'" — the same weak evidence
+  that held 004/007/008 to LATENT. UNSETTLED requires all four: (i) a documented named accused
+  (this is what distinguishes it from LATENT), (ii) mechanism-opacity present, (iii)
+  outcome-presumption unprovable on the current record (neither confirmed nor ruled out), and
+  (iv) a stated, named exit condition that could resolve it either way (for card 001: a primary
+  disciplinary-code provision or an adjudication). Without a named exit condition, UNSETTLED
+  would be a holding pen, not a grade — the exit condition is what keeps it falsifiable.
+- **DOES NOT APPLY** — the case has no accused/examined party against whom mechanism or burden
+  could run. Applies to cards 002/003/005/009.
+
+**Reuse note.** Two disciplines make the grades trustworthy rather than decorative: (1) grading
+every card against both criteria at the same evidentiary threshold in one pass — the exception
+that turns an acquittal into a "split" is exactly where a gerrymander hides; (2) testing any new
+cross-cutting property with a **refiling counterfactual** (run the strongest candidate case
+through the criterion that would force a refiling, and report the result honestly whichever way
+it falls) rather than a vague "add a rail" — the first-draft conclusion that skipped this step
+was discarded as unfalsifiable (session 09; see `memory/discarded.md`) precisely because it was
+compatible with any outcome.
+
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
+
+**Scope note:** this taxonomy classifies the eight first-day case studies only. Instrument 010
+turned the taxonomy on itself as a self-classifying interactive work — using these same seven
+modes, plus a cross-cutting meta-mode (demonstration/rate conflation) and a labeled edge slot
+for the externally submitted Horizon case (§4c–§4e). Instrument 011 tested a different axis,
+drawn from the taxonomy's own edge-filing criterion, run backward across the filed cards
+(§4f–§4g); it did not add or remove a mode.
 
 Session 8's working taxonomy — seven distinct failure *types* across the eight instruments (domain mismatch appears twice: instruments 002 and 004):
 
@@ -331,4 +414,4 @@ Session 8's working taxonomy — seven distinct failure *types* across the eight
 6. **Ambiguous verdict** — the same signal is genuinely underdetermined between an innocent and a guilty cause (007).
 7. **Constitutive measurement** — the instrument does not merely measure but constitutes the population it classifies (008).
 
-Explicitly **not** claimed to be exhaustive or formally proven — it is a classification of the eight cases studied so far. See `memory/open-questions.md` for the open question of whether a ninth instrument would fit an existing mode or force a new one, and for the (unproven) conjecture that all seven modes might reduce to a single generative-model/deployment-context mismatch.
+Explicitly **not** claimed to be exhaustive or formally proven — it is a classification of the eight cases studied so far. What was once an open question about a hypothetical ninth instrument is now settled history: 009's candidate lane-8 property (demonstration/rate conflation) was ratified session 06 as a cross-cutting meta-mode, not an eighth lane, and the umbrella has since been tested against two further real candidates — the externally submitted Horizon case (010 v2, session 08) and the collective's own filed cards run backward through Horizon's exile axis (011, session 10) — both filed outside the seven lanes rather than forcing an eighth. See `memory/open-questions.md` for what remains genuinely open: whether the umbrella is falsifiable at all (no one has yet named a case that would force lane 8), whether the taxonomy is one-sided by construction, and the still-unproven conjecture that all seven modes might reduce to a single generative-model/deployment-context mismatch.

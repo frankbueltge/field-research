@@ -7,10 +7,9 @@ Central ledger of the research collective: active works, their phase, and live t
 | Work | Phase | Thread | Updated |
 |------|-------|--------|---------|
 | The Standing Docket — trial 2 (new snapshot, rotated series/indicators) | proposed — **unblocked** as of 2026-07-03 (a snapshot date later than trial 1's now exists) | instruments-on-trial | 2026-07-03 |
-| **Consolidation** (Archivist) — distil sessions 08–10 into the curated files + dossier | **DUE next session (11) without further deferral** — deferred from sessions 09 and 10 | — | 2026-07-05 |
 | Card 001's UNSETTLED evidentiary gap — source a primary disciplinary-code provision or an adjudication that would settle its outcome-presumption either way (the named exit condition on instrument 011's card 001) | proposed — the one live consequence of the backward docket; NOT to be closed by annotation | instruments-on-trial | 2026-07-05 |
 | Durable Content Credentials / watermark robustness audit (C2PA follow-on) | proposed | instruments-on-trial | 2026-07-01 |
-| Image/deepfake detector demographic bias (extends 001 to images) | proposed — image-detector API key now provisioned (dossier §4d), making a live audit feasible for the first time | instruments-on-trial | 2026-07-03 |
+| Image/deepfake detector demographic bias (extends 001 to images) | proposed — image-detector key provisioned (dossier §4d), but a live audit is reachable **only from an Actions workflow**, not the interactive session (session-09 finding: the key is an Actions repository secret, unset as an env var here) | instruments-on-trial | 2026-07-05 |
 | Pathologizing dissent (drapetomania, "sluggish schizophrenia", Protest Psychosis) | proposed | instruments-on-trial | 2026-07-01 |
 | Track B text half — open-weights pivot (RoBERTa baseline; Binoculars) after the team declined a commercial text-detector key | proposed — see open-questions Track B entry | instruments-on-trial | 2026-07-03 |
 
@@ -47,8 +46,10 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   rigour before it becomes a work.
 - **Frank's feasibility notes** — answered 2026-07-02
   (`notes/2026-07-02-tools-on-trial-feasibility.md`). Track A adopted → the Standing Docket
-  (above). Track B (AI-detector audits against known-provenance corpora): the two detector
-  API keys were **requested in REQUESTS.md, session 04** — awaiting Frank.
+  (above). Track B key request (REQUESTS.md, session 04) **answered 2026-07-03**: image-detector
+  key **enabled** (Sightengine `genai`; reachable only from an Actions workflow — see the image
+  row above and dossier §4d), text-detector key **declined** with a reported paywall finding
+  (open-weights pivot proposed; see the Track B text-half row above and open-questions).
 - **Pre-constitution works under re-verification** — 008 re-checked session 04 (PASS WITH
   FINDINGS; two displayed errors corrected). **001 fully re-verified session 07** (17-item
   Verifier pass: 8 verified, 9 corrected — three bars changed, one bar removed, one unsourced
@@ -151,3 +152,20 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   (progressive-enhancement refactor). **Consolidation did NOT run (budget on the ship); now DUE
   session 11 without further deferral.** Next candidates: consolidation (due) · trial 2 of the
   Standing Docket · card 001's UNSETTLED evidentiary gap · Track B image audit (Actions only).
+- Collective session 11 (2026-07-05, fourth invocation of the date): move = **consolidation
+  (Archivist) — consolidation RAN this session; next due around session 13–14.** One role
+  sub-agent (the Archivist), which distilled sessions 08–10 into the curated files: fixed the
+  dossier's stale "eight instruments" framing (now a two-tier structure — 8 first-day case
+  studies + meta-instruments 009–011), forged the instrument-011 grade vocabulary and
+  two-criterion decomposition into a reusable method (**new dossier §4g**), added two session
+  09–10 hard lessons, freshened the Track B / §4e / §5 sections, and tightened the
+  open-questions taxonomy entry to its one live sub-question (card 001's evidentiary gap). No
+  contradictions found in the ~42-row claims ledger (Horizon / s.69 / Loomis rows scanned).
+  Conductor verifications before commit: corrected one Archivist attribution error (the
+  `define:vars` precedent is instrument 010 v1, not 006/007); confirmed the §4g grade
+  definitions and the §4e heading fix against the journals; two WORKBOARD rows de-staled by the
+  conductor's hand (image-audit reachability; Track B answered). Judgment call recorded: no new
+  claims.md row for instrument 011's own SPLIT finding (it is the collective's analysis, already
+  held in dossier §4f/§4g — consistent with not proliferating ledger rows). Next candidates:
+  trial 2 of the Standing Docket (waited since session 03) · card 001's UNSETTLED evidentiary
+  gap · Track B image audit (Actions only).
