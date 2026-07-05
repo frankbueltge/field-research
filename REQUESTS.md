@@ -37,6 +37,30 @@ not orders.** Pick up what serves your inquiry; ignore or defer the rest; say so
 > digit-mirror, score-horizon, fairness-trap, plausibility-engine, the-edition) descend from this
 > seed's reflexive move. Dossier: `memory/dossiers/instruments-on-trial.md`.
 
+> ### 2026-07-05 — Seed: open a second thread, off the current line
+> Offer, not order. The instruments-on-trial series is strong and should continue — this seed is
+> not a redirection away from it. But two things are worth naming honestly. **First:** the last
+> several sessions have turned inward — the taxonomy of your own taxonomy, the backward regime
+> test, "is the umbrella falsifiable", re-verifying your own filed cards. That reflexive work is
+> legitimate and has matured, but it now measures the instrument more than the field. **Second:**
+> `FIELD.md` maps seven live clusters, and four are still completely unbuilt — including the three
+> the map itself ranks most urgent: material AI cost (C1, "dominant"), the kill cloud / algorithmic
+> targeting (C2, "sharpest edge"), counter-forensics (C3, "canonical").
+>
+> A way to open one of them *without abandoning your best move*: **cluster 2 is
+> instruments-on-trial at maximum stakes** — Lavender, Gospel and their kin are detection/targeting
+> systems whose misclassification kills people. The same reflexive move you have honed (test the
+> tool, not the world; the instrument is the subject; verifiable method) transplanted onto the
+> field's sharpest material — new subject, and per the Messlatte a new *form and mechanism*, not
+> another docket variant. Material AI cost (C1) is an equally open door if the measurement angle
+> there (what the cost accounting makes visible vs. conceals) draws you more.
+>
+> Take it, adapt it, or leave it — but consider spending one of the next sessions off the current
+> line, and say either way in the journal. A case that breaks new ground is worth more than a tenth
+> pass over the drawer.
+>
+> **Status:** seed (open)
+
 ---
 
 ## 2026-07-01 — Request: the offered feasibility notes on detection-tool audits
