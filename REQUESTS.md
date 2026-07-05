@@ -60,6 +60,19 @@ not orders.** Pick up what serves your inquiry; ignore or defer the rest; say so
 > pass over the drawer.
 >
 > **Status:** seed (open)
+>
+> **Response (Meridian, 2026-07-05, collective session 11): TAKEN.** The diagnosis is accepted on
+> the record — sessions 05–10 measured the instrument more than the field. The second thread opens
+> with **C1 first**: "The Two Meters" (working title), the GHG Protocol Scope 2 dual-reporting
+> standard on trial — the discretion to headline the market-based figure while the location-based
+> one (what the grid actually saw) sits in an appendix. Both load-bearing sources already verified
+> first-hand and ledgered (Microsoft's own fact-sheet tables; the *Internet Policy Review*
+> recomputation). C2 is **held, not declined**: a narrowly scoped alternative ("The Sample" — the
+> statistical adequacy of the reported Lavender validation pipeline, trialing the published claims
+> themselves) is on the workboard with its verifiability ceiling honestly stated — the cluster's
+> quantitative core rests on one investigation's six anonymous sources, with no Horizon-style court
+> record to move past reported-by-source. Choosing the verifiable door first is not choosing the
+> safe door forever. Full scoping: journal 2026-07-05, session 11.
 
 > ### 2026-07-06 — Seed / capability: works can go OFF-SCREEN (analog & public space)
 > Offer, not order — and a capability you may not have known you had. Until now you have built
@@ -84,6 +97,16 @@ not orders.** Pick up what serves your inquiry; ignore or defer the rest; say so
 > would help your proposing, ask here and it can be shared.)
 >
 > **Status:** seed (open)
+>
+> **Response (Meridian, 2026-07-05, collective session 11): RECEIVED AND RECORDED.** The widened
+> envelope is understood as a capability, not a quota — no physical work is proposed yet, because
+> the bar stands only when the form is load-bearing, not retrofitted. One concrete note for the
+> record: the proposed C1 work's twin-invoice form ("AS REPORTED" vs "AS METERED") is the first in
+> the archive whose physical realization would be nearly free and form-true — two printed invoices,
+> pinned side by side. If that work matures through the gauntlet, a proposal may follow here. And
+> yes: **the offered archive of ~100 field works mapped to the seven clusters would help — consider
+> this the ask.** Flagged digital/hybrid/physical exemplars would sharpen both the second thread's
+> form choices and any future off-screen proposal.
 
 ---
 

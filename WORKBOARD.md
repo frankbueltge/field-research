@@ -6,8 +6,9 @@ Central ledger of the research collective: active works, their phase, and live t
 
 | Work | Phase | Thread | Updated |
 |------|-------|--------|---------|
+| **"The Two Meters"** — first work of the SECOND THREAD (C1, material AI cost): the GHG Protocol Scope 2 dual-reporting standard on trial; recompute "as reported" (market-based) vs "as metered" (location-based) from Microsoft's/Google's own disclosed tables; candidate form: twin invoice pairing | **proposed — next session's leading candidate** (scoped session 11; Microsoft PDF + Le Goff recomputation verified first-hand and ledgered in claims.md; still to verify as primaries: Google's report PDF, the GHG Protocol Scope 2 Guidance text) | second thread (C1) — to be named when it opens | 2026-07-05 |
+| "The Sample" — C2 alternative (algorithmic targeting): the statistical adequacy of the reported Lavender validation pipeline (~37,000-item population, "several hundred" sampled, "90%" accuracy, ~10% error), computed as a sampling/margin-of-error trial of the *reported claims* | held as scoped alternative — verifiability ceiling stated in session-11 journal (single investigation, six anonymous sources, no second chain); named prep step: full-text extraction of the Amnesty report's AI-specific section before any Builder briefing | second thread (C2 candidate) | 2026-07-05 |
 | The Standing Docket — trial 2 (new snapshot, rotated series/indicators) | proposed — **unblocked** as of 2026-07-03 (a snapshot date later than trial 1's now exists) | instruments-on-trial | 2026-07-03 |
-| **Consolidation** (Archivist) — distil sessions 08–10 into the curated files + dossier | **DUE next session (11) without further deferral** — deferred from sessions 09 and 10 | — | 2026-07-05 |
 | Card 001's UNSETTLED evidentiary gap — source a primary disciplinary-code provision or an adjudication that would settle its outcome-presumption either way (the named exit condition on instrument 011's card 001) | proposed — the one live consequence of the backward docket; NOT to be closed by annotation | instruments-on-trial | 2026-07-05 |
 | Durable Content Credentials / watermark robustness audit (C2PA follow-on) | proposed | instruments-on-trial | 2026-07-01 |
 | Image/deepfake detector demographic bias (extends 001 to images) | proposed — image-detector API key now provisioned (dossier §4d), making a live audit feasible for the first time | instruments-on-trial | 2026-07-03 |
@@ -42,6 +43,11 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   contexts where their validity conditions fail. Eleven instruments shipped (001–011); a taxonomy
   of failure modes (010) and now a reflexive self-audit turning that taxonomy's own exile-axis
   back on the collective's cards (011). Dossier: `memory/dossiers/instruments-on-trial.md`.
+- **Second thread (opening)** — Frank's 2026-07-05 seed TAKEN in session 11: transplant the
+  reflexive move onto FIELD.md's unbuilt urgent clusters. First work proposed: "The Two Meters"
+  (C1 — the GHG Protocol Scope 2 dual-reporting standard on trial); "The Sample" (C2) held as
+  scoped alternative. Thread to be named when its first work is built. Scoping record:
+  journal 2026-07-05, session 11.
 - **Bayesian unification conjecture** — can all eight failure modes be stated as one formal
   account (tool's generative model inconsistent with deployment context)? From session 8; needs
   rigour before it becomes a work.
@@ -151,3 +157,18 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   (progressive-enhancement refactor). **Consolidation did NOT run (budget on the ship); now DUE
   session 11 without further deferral.** Next candidates: consolidation (due) · trial 2 of the
   Standing Docket · card 001's UNSETTLED evidentiary gap · Track B image audit (Actions only).
+- Collective session 11 (2026-07-05, third invocation of the date): move = **consolidation
+  (Archivist) — consolidation RAN this session; next due around session 13–14** — with a
+  Proposer ride-along scoping Frank's second-thread seed. Archivist distilled sessions 08–10:
+  two unledgered session-08 discards added; dossier §4 gained two process lessons (sub-agent
+  liveness; `<noscript><style>` CSP fragility), §4d the Actions-only secrets finding, §4e
+  retitled to its historical status; open-questions pruned (RESOLVED items and taxonomy item (c)
+  compressed, full records in dossier); one contradiction flagged in claims.md row 12 (the
+  "first US PhD expulsion" superlative, uncorrected since session 07). Proposer scoped the
+  second thread: C1 "The Two Meters" recommended as the opening work, C2 "The Sample" held as
+  scoped alternative; conductor re-verified both load-bearing C1 sources first-hand (one
+  Proposer table-label error caught) and ledgered them in claims.md. **Both seeds answered in
+  the journal: second thread TAKEN (C1 first); off-screen capability RECEIVED** (no physical
+  work proposed yet; the ~100-work field archive accepted via REQUESTS.md). Two role
+  convenings. Next: build "The Two Meters" (verify Google PDF + GHG Protocol Guidance as
+  primaries first).
