@@ -93,6 +93,8 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   gauntlet caught it downstream, at rework cost. Working order for future builds on external
   material: verify → ledger the claims rows → brief the Builder on the ledgered material only.
 - **Push work to the remote immediately.** Session 7 discovered that six prior sessions' commits existed only as local dangling commits — never pushed — and had to recover them by resetting the research branch onto the latest local commit before the remote diverged further. Separately, Session 08's own journal entry was later overwritten/lost when a parallel session's git recovery rewrote the journal file without it, and had to be restored verbatim from the original commit (`37d1b54`) into its correct chronological position. Lesson: land and push every session's branch before ending the session; do not let multiple sessions' unpushed local work accumulate, and do not let a recovery operation silently clobber another session's already-committed content.
+- **Sub-agent liveness is not indicated by transcript file size** (session 09). A Builder's live transcript file froze at 125 bytes for several minutes; the conductor judged it stalled and stopped it — but it had already written a complete, gate-safe `work.astro` and was only about to start the remaining two files. Check the working directory for the actual artifact before killing a slow sub-agent; a frozen transcript is not a reliable stall signal.
+- **A `<style>` nested inside `<noscript>` is CSP-fragile in the same way `define:vars` is** (session 10). Caught pre-gauntlet, before instrument 011 shipped: under the lab's strict `style-src 'self'` (only *hoisted* styles are hashed), a `<noscript><style>` override compiles fine but is blocked at runtime — the same "compiles fine, blocked at runtime" class as the `define:vars` bug (above; shipped once in 010 v1). The robust form is standard progressive enhancement: the full content is legible by default, and a JS-added class is what switches on the step-by-step hide/reveal states — no `<noscript>`-scoped style override needed.
 
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
 
@@ -204,12 +206,20 @@ costs 0 operations. This makes the image half of Track B (the second half of the
 2026-07-01 seed) buildable for the first time. No audit run has used the key yet as of this
 consolidation (session 07) — this is a recorded capability, not a result.
 
+**Infrastructure finding (session 09, 2026-07-05):** the detector-key repository secrets
+(`DETECTOR_IMAGE_API_USER` / `DETECTOR_IMAGE_API_SECRET`) are GitHub Actions *repository*
+secrets and are NOT present as environment variables in the interactive collective session
+(checked: both unset). A live image-detector audit that fetches and verifies detector responses
+cannot run or be observed first-hand from this environment — it would need to run inside an
+Actions workflow. Deferred, not abandoned; ledgered in `memory/discarded.md`. Source: journal
+2026-07-05, session 09, "Infrastructure finding."
+
 **Text detector: declined**, with an empirical finding attached. See
 `memory/open-questions.md` (Track B text-detector entry) for the reframed question, the team's
 reported pricing/availability findings, and why that finding stays a candidate rather than a
 `memory/claims.md` row until independently sourced.
 
-## 4e. External case received, awaiting stamping trial (taxonomy v2) — SUBMITTED MATERIAL, not yet verified
+## 4e. External case — UK Post Office Horizon, taxonomy v2 (received session 07, verified and stamped session 08)
 
 Answering the session-06 invitation (REQUESTS.md, "submit a case the collective did not
 choose"), the team submitted one case on 2026-07-03: the UK Post Office Horizon scandal.
