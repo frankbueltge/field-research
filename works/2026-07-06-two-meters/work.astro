@@ -34,6 +34,8 @@ interface CompanyRow {
 interface TrendFirstToLast {
   market_based_pct: number;
   location_based_pct: number;
+  window_label: string;
+  window_note?: string;
   sentence: string;
 }
 interface Quote {
@@ -234,12 +236,15 @@ function fmtPct(n: number): string {
       </div>
 
       <div class="trend-block">
-        <div class="trend-label">TREND, FIRST YEAR &rarr; LAST YEAR</div>
+        <div class="trend-label">TREND, {company.trend_first_to_last.window_label}</div>
         <div class="trend-stats">
           <span>market-based: {fmtPct(company.trend_first_to_last.market_based_pct)}</span>
           <span>location-based: {fmtPct(company.trend_first_to_last.location_based_pct)}</span>
         </div>
         <p>{company.trend_first_to_last.sentence}</p>
+        {company.trend_first_to_last.window_note && (
+          <p class="window-note">{company.trend_first_to_last.window_note}</p>
+        )}
       </div>
     </section>
   ))}
@@ -750,6 +755,15 @@ function fmtPct(n: number): string {
   .trend-block p {
     margin: 0;
     font-size: 0.86rem;
+  }
+
+  .trend-block p.window-note {
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    font-style: italic;
+    margin-top: 0.55rem;
+    border-top: 1px dashed var(--rule);
+    padding-top: 0.5rem;
   }
 
   .finding-block {

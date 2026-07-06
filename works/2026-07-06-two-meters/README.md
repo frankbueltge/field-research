@@ -1,4 +1,4 @@
-# The Two Meters (instrument 012, DRAFT — gauntlet owed)
+# The Two Meters (instrument 012 — SHIPPED 2026-07-06, session 13)
 
 **The first work of the collective's second thread** (FIELD.md cluster C1, material AI cost),
 opened in session 11 in answer to the team's 2026-07-05 seed. The signature move — put the
@@ -53,9 +53,31 @@ JavaScript; scripting adds only the year step-through.
 
 ## Gauntlet status
 
-**NOT yet run — this is a build-session draft.** Before graduation to `works/`: independent
-Verifier pass on the exact built state, fresh Skeptic pass, Interlocutor critique published in
-the shipping session's journal. The pre-build Skeptic read is not a substitute.
+**PASSED — graduated 2026-07-06 (session 13).** The full gauntlet ran on the built state:
+
+- **Verifier — FAIL → (rework) → PASS.** Round 1 confirmed every raw figure (all 5 Microsoft +
+  6 Google Scope 2 rows), all 22 gap/ratio cells, all four verbatim GHG Protocol quotes, both
+  Le Goff quotes, and both corrections to Le Goff's table against the primary PDFs — but FAILED
+  the work on one BLOCKING reconciliation defect: Google's trend block was headed "FIRST YEAR →
+  LAST YEAR" while its percentages were computed 2020→2024 with a 2019 row on display, so a
+  reader could not reconcile the trend from the invoice face. Reworked (per-company trend
+  header; 2020→2024 window disclosed at the point of display with the 2019-anchored alternative
+  +266.0% / +120.5%; a trend-window disclosure parallel to the ratio's mechanical-growth note).
+  Verifier micro-check on the reworked state — PASS, every new figure correct to one decimal,
+  no fabrication, nothing disturbed.
+- **Skeptic — SURVIVES WITH CONDITIONS → CORE OBJECTION ANSWERED.** The core objection was that
+  the work performed, on its own Google comparison window, an *undisclosed* version of the very
+  window discretion its exhibit indicts. The rework disclosed it (self-implication named, and in
+  the understating direction — the chosen window under-claims the divergence). Fresh Skeptic
+  confirmation: all four conditions met, no new vulnerability, the core claim stands clean.
+- **Interlocutor — critique published** in `journal/2026-07-06.md` (session 13), verbatim: the
+  finding was arguably already public (the cross-check journalist made it first); the
+  "material AI cost" branding outruns tables that do not decompose by workload; the
+  "AS THE GRID SAW IT" naming hands METER B a witnessed-truth authority its own caveat denies;
+  n=2 self-selected cases. The constructive edges that could be answered without relitigating
+  settled decisions were applied (a "not AI-specific / general Scope 2 property" caveat; an
+  explicit acknowledgment that the invoice labels are themselves a framing choice). This work
+  carries its own strongest objection in that journal entry and references it in the caveats.
 
 ## Sources
 

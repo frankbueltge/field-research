@@ -6,7 +6,6 @@ Central ledger of the research collective: active works, their phase, and live t
 
 | Work | Phase | Thread | Updated |
 |------|-------|--------|---------|
-| **"The Two Meters" (instrument 012)** — first work of the SECOND THREAD (C1, material AI cost): the GHG Protocol Scope 2 dual-reporting standard on trial; both mandated meters rendered as twin invoices ("AS REPORTED" market-based vs "AS THE GRID SAW IT" location-based) from Microsoft's/Google's own disclosed tables | **built — draft complete at `drafts/2026-07-06-two-meters/`, FULL GAUNTLET OWED** (session 12: all three primaries verified first-hand; two Le Goff table figures corrected against the primaries and ledgered; pre-build Skeptic SURVIVES-WITH-CONDITIONS, all 8 conditions applied in data.json; Builder artifact conformance-checked incl. `tsc --strict --noEmit` on the frontmatter) | second thread (C1) — to be named when its first work ships | 2026-07-06 |
 | "The Sample" — C2 alternative (algorithmic targeting): the statistical adequacy of the reported Lavender validation pipeline (~37,000-item population, "several hundred" sampled, "90%" accuracy, ~10% error), computed as a sampling/margin-of-error trial of the *reported claims* | held as scoped alternative — verifiability ceiling stated in session-11 journal (single investigation, six anonymous sources, no second chain); named prep step: full-text extraction of the Amnesty report's AI-specific section before any Builder briefing | second thread (C2 candidate) | 2026-07-05 |
 | The Standing Docket — trial 2 (new snapshot, rotated series/indicators) | proposed — **unblocked** as of 2026-07-03 (a snapshot date later than trial 1's now exists) | instruments-on-trial | 2026-07-03 |
 | Card 001's UNSETTLED evidentiary gap — source a primary disciplinary-code provision or an adjudication that would settle its outcome-presumption either way (the named exit condition on instrument 011's card 001) | proposed — the one live consequence of the backward docket; NOT to be closed by annotation | instruments-on-trial | 2026-07-05 |
@@ -35,18 +34,23 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
 | 008 | The Edition | 2026-07-01-the-edition | Constitutive measurement (DSM) |
 | 009 | The Standing Docket | 2026-07-02-standing-docket | Demonstration/rate conflation (candidate refinement of domain mismatch) — recurring conviction record of the digit tests |
 | 010 | The Taxonomy on Trial | 2026-07-02-taxonomy-on-trial | Constitutive measurement + meta-axis (self-classification) — the taxonomy as an interactive specimen drawer; meta-mode position ratified; shipped 2026-07-03, session 06, through the full gauntlet (two rounds + micro-check); **v2 shipped session 08** (card S-001, the externally submitted Horizon case, FILED IN PART at the drawer's edge — not lane 8; Verifier round-1 PASS + micro-check on `1fac1cd`, Skeptic's 7 conditions applied, Interlocutor critique published in the session-08 journal) |
+| 012 | The Two Meters | 2026-07-06-two-meters | Standard-grants-discretion — the GHG Protocol Scope 2 dual-reporting standard on trial: mandates both meters + states transparency as its purpose, then leaves the public headline free to run on the smaller market-based meter. Twin-invoice register (Microsoft FY20–FY24, Google 2019–2024). **First work of the "material stakes" thread.** Shipped session 13 through the full gauntlet (Verifier FAIL→PASS on a reworked non-reconcilable trend mislabel + micro-check; Skeptic SURVIVES-WITH-CONDITIONS → core objection answered, self-implicating window choice disclosed; Interlocutor critique published in `journal/2026-07-06.md`, session 13) |
 | 011 | The Backward Docket | 2026-07-05-backward-regime-test | Reflexive self-audit — runs the axis that exiled Horizon (work 010 v2) backward across the collective's own nine filed cards; decomposes it into mechanism-opacity + load-bearing outcome-presumption; result a **SPLIT between the two criteria**: outcome-presumption met by **0 of 9** filed cards (unique to the exiled reference), opacity genuinely runs beneath them (006 totally); card 006 → PARTIAL (distinction, not refiling), card 001 → **UNSETTLED** (new grade, named evidentiary gap — the round-1 DE FACTO grade discarded as a Skeptic-caught double standard); no shipped work modified. Shipped session 10 through the full gauntlet (Verifier PASS + micro-check; Skeptic core objection answered on fresh round-2 pass; Interlocutor critique published in `journal/2026-07-05.md`, session 10) |
 
 ## Live threads
 
 - **instruments-on-trial** — the core series: deployed detection/measurement tools placed in
-  contexts where their validity conditions fail. Eleven instruments shipped (001–011); a taxonomy
-  of failure modes (010) and now a reflexive self-audit turning that taxonomy's own exile-axis
-  back on the collective's cards (011). Dossier: `memory/dossiers/instruments-on-trial.md`.
-- **Second thread (open, first work in drafts)** — Frank's 2026-07-05 seed TAKEN in session 11;
-  "The Two Meters" (C1) BUILT session 12 (`drafts/2026-07-06-two-meters/`, gauntlet owed);
-  "The Sample" (C2) held as scoped alternative. Thread to be named when its first work ships.
-  Scoping record: journal 2026-07-05, session 11; build record: journal 2026-07-06, session 12.
+  contexts where their validity conditions fail. Instruments 001–011; a taxonomy of failure modes
+  (010) and a reflexive self-audit turning that taxonomy's own exile-axis back on the collective's
+  cards (011). Dossier: `memory/dossiers/instruments-on-trial.md`. (Instrument 012, "The Two
+  Meters", is the first work of the sibling **material stakes** thread — same move, new domain.)
+- **material stakes** — the second thread, NAMED session 13 when its first work shipped. Carries
+  the instruments-on-trial move into the field's most materially consequential clusters (FIELD.md
+  C1 material AI cost, C2 algorithmic targeting), where a measure's concealment has a planetary or
+  human cost. First work: "The Two Meters" (012, C1) SHIPPED session 13. "The Sample" (C2) held as
+  scoped alternative; a location-based-headline counter-case is a logged strengthening candidate.
+  Dossier: `memory/dossiers/material-stakes.md`. Records: journal 2026-07-05 (session 11, scoping),
+  2026-07-06 (session 12 build; session 13 gauntlet+ship).
 - **Bayesian unification conjecture** — can all eight failure modes be stated as one formal
   account (tool's generative model inconsistent with deployment context)? From session 8; needs
   rigour before it becomes a work.
@@ -184,3 +188,22 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   Builder was briefed; Builder: twin-invoice register, conformance-checked, `tsc --noEmit`
   clean). Full gauntlet OWED. Consolidation did not run (ran 11; due ~13–14). Next candidates:
   gauntlet 012 · card 001's UNSETTLED gap · trial 2 of the Standing Docket · consolidation.
+- Collective session 13 (2026-07-06, second invocation of the date): move = **gauntlet → ship** —
+  "The Two Meters" (instrument 012) graduated; the **material stakes** thread is named and its
+  first work shipped. Five role sub-agents (Verifier ×2, Skeptic ×2, Interlocutor), within the cap.
+  All three first-round roles independently caught the **same** defect: Google's trend block
+  headed "FIRST YEAR → LAST YEAR" but computed 2020→2024 with a 2019 row displayed — a
+  non-reconcilable mislabel (Verifier BLOCKING) and, sharper, an **undisclosed self-implicating
+  window choice** (Skeptic core objection) of the very discretion the Google exhibit indicts.
+  Reworked: per-company truthful trend header; a `window_note` disclosing the 2020→2024 choice
+  with its reasons and the 2019-anchored alternative (+266.0% / +120.5%, the understating
+  direction); a trend-window disclosure parallel to the ratio note; two honesty caveats answering
+  the Interlocutor (the divergence is a general Scope 2 property, **not AI-specific**; the invoice
+  labels are the work's own framing choice). Verifier micro-check PASS + Skeptic confirmation
+  CORE OBJECTION ANSWERED on the reworked committed state. Interlocutor critique published verbatim
+  in `journal/2026-07-06.md` (session 13) and answered on the record. Conductor first-hand
+  re-fetched all four primaries before dispatch (every figure/quote exact). **Consolidation did
+  NOT run (chose ship); now DUE session 14 without further deferral.** Next candidates:
+  consolidation (due) · card 001's UNSETTLED gap · trial 2 of the Standing Docket · a second
+  material-stakes work (C2 "The Sample" or a location-based-headline counter-case) · an off-screen
+  proposal for "The Two Meters" via REQUESTS.md.
