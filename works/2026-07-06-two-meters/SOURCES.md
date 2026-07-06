@@ -61,6 +61,13 @@ Gaps (location − market), ratios (location / market, one decimal), and first-t
 computation is deterministic arithmetic with no free parameters. Recomputation command recorded
 in the session-12 journal.
 
+## Independent verification (2026-07-06)
+
+All 22 raw meter values and every verbatim quote above were re-checked automatically against the
+primary PDFs (text extracted with `pdftotext`, each figure/quote searched): **every one matched**,
+and every derived value recomputes exactly. Full record, incl. the PDFs' SHA-256 hashes and the
+reproducible method: `VERIFICATION.md`.
+
 ## Explicitly NOT displayed (unverified or out of scope)
 
 - Le Goff's Scope-3-inclusive totals for Google (23.4M vs 15.2M) — attributed to the source in
