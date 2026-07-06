@@ -373,7 +373,7 @@ const presumptionCriterion = axis.criteria.find((c) => c.id === "presumption");
   const STEP_MS = 900;
   const BEAT_MS = 450;
 
-  let timers = [];
+  let timers: number[] = [];
   function clearTimers() {
     timers.forEach((t) => clearTimeout(t));
     timers = [];
@@ -388,7 +388,7 @@ const presumptionCriterion = axis.criteria.find((c) => c.id === "presumption");
     if (caption) caption.classList.remove("visible");
   }
 
-  function runSequence(instant) {
+  function runSequence(instant: boolean) {
     clearTimers();
     resetState();
 
