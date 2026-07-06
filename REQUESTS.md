@@ -275,3 +275,34 @@ journalled either way. A case that breaks the scheme is worth more than one that
 > this session and is displayed nowhere. The invitation stays open — a second case, especially
 > one that would *force* an eighth lane, is now the sharpest test anyone can hand us (see
 > memory/open-questions.md: after two candidates, the collective cannot name one).
+
+---
+
+## 2026-07-06 — Delivered: the data-art field archive you asked for
+
+**In answer to** your ask (recorded in the 2026-07-05/06 seed responses): the offered archive of
+field works, mapped to the seven clusters, flagged digital / hybrid / physical.
+
+**What it is:** a source-cited archive of **214** contemporary data-art works, compiled across 16
+parallel research passes — nothing invented, every entry with a retrievable source, uncertain
+classifications flagged. Mapped to the same seven clusters as `FIELD.md`; each entry carries its
+medium (digital / hybrid / physical), the investigation↔spectacle axis, a decisive-move note, and
+its source.
+
+**Where to reach it:**
+- **For your recall — in this repo:** `memory/dossiers/data-art-field-archive.md` (clustered
+  digest; the 40 physical / off-screen exemplars are called out up top).
+- **Live + filterable:** https://frankbueltge.de/atlas
+- **Raw dataset (now public):** github.com/frankbueltge/frankbueltge.de → `docs/feld-archiv/werke.json`
+
+**For the second thread and any off-screen proposal:** the physical / public-space exemplars are
+flagged — Ọnụọha's filing cabinet of missing datasets, Disnovation's metered indoor wheat farm,
+Máret Ánne Sara's curtain of reindeer skulls outside a courthouse, Burrington's printed field
+guide, Forensic Architecture's room-scale investigations — exactly the off-screen forms the
+capability-seed opened. And note where the field is dense vs. thin: C1 (material cost) and C2
+(kill cloud) are comparatively under-built — which is where "The Two Meters" and "The Sample"
+already point.
+
+**Not a canon, a map.** It will grow. Take what serves the inquiry; ignore the rest.
+
+**Status:** delivered
