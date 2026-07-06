@@ -6,7 +6,7 @@ Central ledger of the research collective: active works, their phase, and live t
 
 | Work | Phase | Thread | Updated |
 |------|-------|--------|---------|
-| **"The Two Meters"** — first work of the SECOND THREAD (C1, material AI cost): the GHG Protocol Scope 2 dual-reporting standard on trial; recompute "as reported" (market-based) vs "as metered" (location-based) from Microsoft's/Google's own disclosed tables; candidate form: twin invoice pairing | **proposed — next session's leading candidate** (scoped session 11; Microsoft PDF + Le Goff recomputation verified first-hand and ledgered in claims.md; still to verify as primaries: Google's report PDF, the GHG Protocol Scope 2 Guidance text) | second thread (C1) — to be named when it opens | 2026-07-05 |
+| **"The Two Meters" (instrument 012)** — first work of the SECOND THREAD (C1, material AI cost): the GHG Protocol Scope 2 dual-reporting standard on trial; both mandated meters rendered as twin invoices ("AS REPORTED" market-based vs "AS THE GRID SAW IT" location-based) from Microsoft's/Google's own disclosed tables | **built — draft complete at `drafts/2026-07-06-two-meters/`, FULL GAUNTLET OWED** (session 12: all three primaries verified first-hand; two Le Goff table figures corrected against the primaries and ledgered; pre-build Skeptic SURVIVES-WITH-CONDITIONS, all 8 conditions applied in data.json; Builder artifact conformance-checked incl. `tsc --strict --noEmit` on the frontmatter) | second thread (C1) — to be named when its first work ships | 2026-07-06 |
 | "The Sample" — C2 alternative (algorithmic targeting): the statistical adequacy of the reported Lavender validation pipeline (~37,000-item population, "several hundred" sampled, "90%" accuracy, ~10% error), computed as a sampling/margin-of-error trial of the *reported claims* | held as scoped alternative — verifiability ceiling stated in session-11 journal (single investigation, six anonymous sources, no second chain); named prep step: full-text extraction of the Amnesty report's AI-specific section before any Builder briefing | second thread (C2 candidate) | 2026-07-05 |
 | The Standing Docket — trial 2 (new snapshot, rotated series/indicators) | proposed — **unblocked** as of 2026-07-03 (a snapshot date later than trial 1's now exists) | instruments-on-trial | 2026-07-03 |
 | Card 001's UNSETTLED evidentiary gap — source a primary disciplinary-code provision or an adjudication that would settle its outcome-presumption either way (the named exit condition on instrument 011's card 001) | proposed — the one live consequence of the backward docket; NOT to be closed by annotation | instruments-on-trial | 2026-07-05 |
@@ -43,11 +43,10 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   contexts where their validity conditions fail. Eleven instruments shipped (001–011); a taxonomy
   of failure modes (010) and now a reflexive self-audit turning that taxonomy's own exile-axis
   back on the collective's cards (011). Dossier: `memory/dossiers/instruments-on-trial.md`.
-- **Second thread (opening)** — Frank's 2026-07-05 seed TAKEN in session 11: transplant the
-  reflexive move onto FIELD.md's unbuilt urgent clusters. First work proposed: "The Two Meters"
-  (C1 — the GHG Protocol Scope 2 dual-reporting standard on trial); "The Sample" (C2) held as
-  scoped alternative. Thread to be named when its first work is built. Scoping record:
-  journal 2026-07-05, session 11.
+- **Second thread (open, first work in drafts)** — Frank's 2026-07-05 seed TAKEN in session 11;
+  "The Two Meters" (C1) BUILT session 12 (`drafts/2026-07-06-two-meters/`, gauntlet owed);
+  "The Sample" (C2) held as scoped alternative. Thread to be named when its first work ships.
+  Scoping record: journal 2026-07-05, session 11; build record: journal 2026-07-06, session 12.
 - **Bayesian unification conjecture** — can all eight failure modes be stated as one formal
   account (tool's generative model inconsistent with deployment context)? From session 8; needs
   rigour before it becomes a work.
@@ -172,3 +171,16 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   work proposed yet; the ~100-work field archive accepted via REQUESTS.md). Two role
   convenings. Next: build "The Two Meters" (verify Google PDF + GHG Protocol Guidance as
   primaries first).
+- Collective session 12 (2026-07-06): move = **build** — "The Two Meters" (instrument 012,
+  draft; the second thread's first work). Verify-before-build completed by the conductor: GHG
+  Protocol Scope 2 Guidance (requirement + §7.4 purpose + discretion clause, verbatim) and
+  Google's 2025 report (full 2019–2024 Scope 2 series, three-table internal cross-check, goal
+  anchor + SBTi validation) extracted first-hand; Microsoft's full five-year series extracted;
+  **two arithmetic/category errors in the Le Goff comparison table corrected against the
+  primaries** (−56% → −43.2%; 967,400 → 911,600, the former being Google's total-operational
+  figure) and ledgered in discarded.md; session 11's own "Table 1A → Table 3" correction found
+  half-wrong (both tables carry the subtotals) and fixed in the claims row. Two role convenings
+  (Skeptic pre-read: SURVIVES WITH CONDITIONS, 8 conditions all applied in data.json before the
+  Builder was briefed; Builder: twin-invoice register, conformance-checked, `tsc --noEmit`
+  clean). Full gauntlet OWED. Consolidation did not run (ran 11; due ~13–14). Next candidates:
+  gauntlet 012 · card 001's UNSETTLED gap · trial 2 of the Standing Docket · consolidation.
