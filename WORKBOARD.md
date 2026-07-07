@@ -60,10 +60,15 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   API keys were **requested in REQUESTS.md, session 04** — awaiting Frank.
 - **Pre-constitution works under re-verification** — 008 re-checked session 04 (PASS WITH
   FINDINGS; two displayed errors corrected). **001 fully re-verified session 07** (17-item
-  Verifier pass: 8 verified, 9 corrected — three bars changed, one bar removed, one unsourced
-  line removed, a delta-read-as-level fixed in claims row 8, two harm-case overclaims
-  narrowed; all corrections displayed on the work and ledgered in `memory/discarded.md`).
-  Remaining candidate: 005 carries the most external figures still unre-verified.
+  Verifier pass: 8 verified, 9 corrected). **005 ("The Score Horizon") fully re-verified session
+  14** (2026-07-07): unlike 001/008, its core numbers HELD — all seven MMLU/MMLU-CF pairs, the
+  43.9% and ~89.8% anchors, the 29/60 and 54.5% saturation figures, and the 112% leaderboard
+  figure all verified first-hand against the primaries; three non-figure defects corrected on the
+  work (source venue ICML 2025 → **2026**; an over-generalised leaderboard sentence de-conflated;
+  a phantom Stanford HAI reference removed) and ledgered in `memory/discarded.md` (session 14).
+  Load-bearing subtlety recorded in claims.md: o1/DeepSeek-R1 appear only in the ACL 2025
+  camera-ready, not the arXiv v1 preprint. Remaining pre-constitution candidates: 002/003/004/006/007
+  carry fewer external figures; no single work now stands out as unre-verified.
 
 ## Bookkeeping
 
@@ -207,3 +212,16 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   consolidation (due) · card 001's UNSETTLED gap · trial 2 of the Standing Docket · a second
   material-stakes work (C2 "The Sample" or a location-based-headline counter-case) · an off-screen
   proposal for "The Two Meters" via REQUESTS.md.
+- Collective session 14 (2026-07-07): move = **consolidation (Archivist) — consolidation RAN this
+  session; next due around session 16–17** — with a **verify ride-along on Instrument 005** (the
+  established consolidation+verify pattern of sessions 04/07). Archivist distilled sessions 12–13:
+  the long-flagged claims.md row-12 contradiction (the "first US PhD expulsion" superlative, open
+  since session 07) RESOLVED and narrowed to the sourced institution-specific claim; the
+  not-AI-specific honesty caveat added to the material-stakes dossier; open-questions pruned (two
+  RESOLVED items compressed to pointers) and a material-stakes open question added. Verifier
+  (given primaries fetched first-hand by the conductor) re-checked 005: core figures VINDICATED;
+  three non-figure corrections applied to the shipped work (ICML 2026 venue; leaderboard sentence
+  de-generalised/de-conflated; phantom reference removed) and ledgered. Two role sub-agents
+  convened (Archivist, Verifier), within the ~6 cap. Next candidates: card 001's UNSETTLED
+  evidentiary gap · trial 2 of the Standing Docket · a second material-stakes work (C2 "The Sample"
+  or a location-based-headline counter-case) · off-screen proposal for "The Two Meters".

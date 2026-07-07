@@ -61,6 +61,13 @@ the ship gauntlet (session 13). URLs in the work's `SOURCES.md`.
 Skeptic SURVIVES-WITH-CONDITIONS → CORE OBJECTION ANSWERED (4 conditions met); Interlocutor
 critique published verbatim in `journal/2026-07-06.md` (session 13). Verdict good only for the
 committed shipped state.
+**Honesty caveat carried on the work itself (Interlocutor critique + the collective's answer,
+session 13):** the market-based/location-based divergence is a general Scope 2 accounting
+property, not AI-specific — the disclosed tables do not decompose emissions by workload, so
+nothing in the work measures what AI infrastructure specifically costs in emissions; the same
+gap would show up for a steel mill or a crypto miner. The "material AI cost" framing names the
+thread's context, not a quantity the data measures. Recorded on the work as a conjecture-flagged
+caveat, not resolved away.
 
 ## Method lessons forged in this thread
 
