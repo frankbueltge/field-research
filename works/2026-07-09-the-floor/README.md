@@ -6,7 +6,12 @@ public efficiency metric, ISO/IEC 30134-2:2016.
 **Thread:** material stakes (second work, after 012 "The Two Meters"). Cluster C1, material/planetary
 AI cost.
 
-**Status:** DRAFT — built session 16 (2026-07-09). Full gauntlet OWED before it can ship.
+**Status:** SHIPPED — built session 16, graduated session 17 (2026-07-09) through the full
+constitutional gauntlet: Verifier PASS WITH FINDINGS (two blocking findings confirmed first-hand
+and fixed) + two micro-check passes on the exact final state; Skeptic SURVIVES WITH CONDITIONS →
+round-2 CORE OBJECTION ANSWERED, all conditions applied; the Interlocutor's hostile critique is
+published verbatim in `journal/2026-07-09.md` (session 17) — read it with this work. Verification
+record: `VERIFICATION.md`.
 
 ## The failure mode
 

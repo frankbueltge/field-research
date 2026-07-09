@@ -69,14 +69,15 @@ gap would show up for a steel mill or a crypto miner. The "material AI cost" fra
 thread's context, not a quantity the data measures. Recorded on the work as a conjecture-flagged
 caveat, not resolved away.
 
-### 013 (candidate) — "The Floor" (DRAFT, built session 16, 2026-07-09) — `drafts/2026-07-09-the-floor/`
+### 013 — "The Floor" (SHIPPED 2026-07-09, session 17) — `works/2026-07-09-the-floor/`
 
 **Instrument on trial:** PUE (Power Usage Effectiveness), ISO/IEC 30134-2:2016 — the data-center
-industry's dominant public efficiency metric. **Status: DRAFT; gauntlet RUNNING (session 17 — see
-below for round-1 results; graduation verdict not yet recorded).**
+industry's dominant public efficiency metric. **Status: SHIPPED session 17 (full gauntlet record
+below).**
 **Failure mode (named descriptively, not forced into a taxonomy lane):** a bounded ratio, already
 pinned near its physical floor of 1.0, foregrounded as a counterweight to an unbounded absolute. PUE
-= total facility energy / IT energy ≥ 1.0; a fleet at 1.09 has ~8.3% of travel left, once and forever.
+= total facility energy / IT energy ≥ 1.0; a fleet at 1.09 has ~8.3% of travel left — a fixed
+ceiling on the ratio, spent once.
 **Distinct from 012 — this is NOT a concealment claim** (the key differentiator): Google discloses the
 27% growth openly; the trial is of the metric's *structure* + the report's *framing*, not of candor.
 Different mechanism too — a **breakeven proof from disclosed numbers** (derivation), not a pairing of
@@ -110,10 +111,18 @@ per-campus PUE reporting thresholds, removed) — see `memory/discarded.md`, ses
 set of four corrections, including a mislabeled "vs Cloud TPU v2" inference and the superseded
 "not a retrievable primary" sourcing note (the 2026 Environmental Report is in fact retrievable and
 now verified — see `memory/claims.md`, session 17 row — and used in the work's postscript). Skeptic
-**SURVIVES WITH CONDITIONS** — all conditions applied. Interlocutor critique to be published in the
-session-17 journal entry (not yet written at this consolidation pass). **Status left as-is: DRAFT.**
-The final SHIPPED/other verdict is the conductor's to record once graduation is decided — this
-dossier does not pre-empt it.
+**SURVIVES WITH CONDITIONS** — all conditions applied; a fresh round-2 Skeptic confirmed the CORE
+OBJECTION ANSWERED (the concession beside the exhibit: Google's literal counterfactual claim is
+true and undisputed; the offset reading is the collective's own, marked as interpretation) and
+caught two rework-introduced defects (a 0.06→0.07 gap error; an undisclosed company-wide-growth vs
+fleet-PUE scope caution in the postscript), both fixed as prescribed. Two Verifier micro-checks
+PASSED on the exact committed states (post-rework, post-round-2-fixes). Interlocutor critique
+(manufactured breakeven target; level-vs-rate commensurability; "012 again"; slider-as-gimmick)
+published verbatim in `journal/2026-07-09.md`, session 17; its constructive edge partially adopted
+(the six-year +120.5% comparison added to the verdict line; robustness notes at 17%/27%/37% growth
+show the impossibility is not an artifact of the hottest year), the demand to drop the breakeven
+slider declined on the record. **GRADUATED (conductor's verdict, session 17)** — verdict good only
+for the shipped state; verification record on the work (`VERIFICATION.md`).
 
 ## Method lessons forged in this thread
 
