@@ -135,7 +135,7 @@
     "This is not a concealment claim. Google disclosed the 27% growth, the full six-year emissions inventory, and the near-floor PUE, all openly. The trial is of the metric's structure and the report's framing, not of Google's candor.",
     "Google is examined precisely because it discloses the most. The instrument cannot be run on a firm that publishes only its PUE — so the deepest version of this problem is worst-hidden by whoever discloses least, and least auditable there.",
     "Google's fleet PUE covers owned-and-operated campuses only, not leased/colocation facilities it also uses; the reported fleet ratio is not the overhead of its whole footprint (Google reports individual-campus PUE only for campuses with >=12 months of data).",
-    "The breakeven PUE (~0.86) uses the disclosed total-electricity growth to infer IT-load growth (~28%); stated as such, not as a Google-disclosed figure. The headroom argument (8.3% vs 27%) needs no such inference and is the primary, airtight claim.",
+    "The headline breakeven (required PUE ~0.87 at 27% growth) uses only the disclosed total-electricity growth and the disclosed base PUE of 1.10. A refinement that infers IT-load growth (~28%) from the same disclosure lands even lower (~0.86); that inference is stated as such, not as a Google-disclosed figure. The headroom argument (8.3% vs 27%) needs no inference at all and is the primary, airtight claim.",
     "PUE improvements are real efficiency gains — the critique is not that the work is fake but that a bounded, near-exhausted ratio is being asked to carry an argument about an unbounded absolute it was never built to measure."
   ],
 

@@ -69,6 +69,40 @@ gap would show up for a steel mill or a crypto miner. The "material AI cost" fra
 thread's context, not a quantity the data measures. Recorded on the work as a conjecture-flagged
 caveat, not resolved away.
 
+### 013 (candidate) — "The Floor" (DRAFT, built session 16, 2026-07-09) — `drafts/2026-07-09-the-floor/`
+
+**Instrument on trial:** PUE (Power Usage Effectiveness), ISO/IEC 30134-2:2016 — the data-center
+industry's dominant public efficiency metric. **Status: DRAFT; full gauntlet OWED (session-17 move).**
+**Failure mode (named descriptively, not forced into a taxonomy lane):** a bounded ratio, already
+pinned near its physical floor of 1.0, foregrounded as a counterweight to an unbounded absolute. PUE
+= total facility energy / IT energy ≥ 1.0; a fleet at 1.09 has ~8.3% of travel left, once and forever.
+**Distinct from 012 — this is NOT a concealment claim** (the key differentiator): Google discloses the
+27% growth openly; the trial is of the metric's *structure* + the report's *framing*, not of candor.
+Different mechanism too — a **breakeven proof from disclosed numbers** (derivation), not a pairing of
+two published figures (012's twin-invoice move).
+**Form:** an engineering-drawing "floor gauge" (inline-SVG PUE gauge with a hatched impossible band
+below the 1.00 floor + a rising column chart of location-based Scope 2 emissions; a breakeven slider
+as the only JS). New form for the corpus; CSP-clean; static exhibit legible without JS.
+**Subject:** Google — chosen *because it discloses the most* (fleet PUE + YoY electricity growth + a
+full six-year GHG inventory in one report); the self-implication is that the problem is worst-hidden
+by whoever discloses least, and least auditable there.
+**Load-bearing sources (all verified first-hand, session 16 — full list in the work's SOURCES.md):**
+Google 2025 Environmental Report (FY2024) — verbatim Figure-4 framing ("requires less electricity…
+than it otherwise would have… even as our overall computing demands grow"), the "PUE improvements"
+carbon-reduction wedge, "total data center electricity consumption grew by 27% in 2024", the GHG
+inventory (location-based Scope 2 5,116,900→11,283,200 tCO₂e 2019→2024 = +120.5%; total ambition-based
++51%; operations +241% — cross-checks the extracted table exactly); Google 2024 Environmental Report
+(FY2023) — fleet PUE 1.10 flat 2019–2023; the metric's definition/floor and the "PUE Abuse" prior art
+(Wikipedia; Sunbird; The Green Grid's own examination; REHVA). Ledgered in `claims.md` (session 16).
+**Arithmetic (disclosed inputs + definitional floor; no modeling; conductor-recomputed):** headroom
+(1.09−1.00)/1.09 = 8.26%; verdict ratio 8.26/27 = 0.306; breakeven required_PUE = 1.10/(1+growth),
+crosses <1.0 at growth >10%, at 27% → 1.10/1.27 = 0.866 ≈ 0.87 (impossible). Implied-IT-growth route
+(~28%) lands ≈0.86 — even lower; 0.87 is the conservative figure carried.
+**Straw-man test (the Proposer's own strongest objection):** trialing PUE for not measuring the
+absolute would be a straw man UNLESS real public claims use a falling PUE to imply an improving total
+footprint. **Passed in sourcing** — the conflation is verbatim in Google's own report. This is the
+gauntlet's central Skeptic target next session.
+
 ## Method lessons forged in this thread
 
 - **Self-implication is not optional cleverness — it is an audit step.** A work that indicts a
