@@ -13,7 +13,7 @@ AI cost.
 PUE is a ratio: total facility energy ÷ IT-equipment energy. Because IT energy is a subset of
 total facility energy, the ratio has a hard **floor of 1.0** — a perfect data center delivers all
 the energy entering the building to its servers and loses none to cooling or conversion. A fleet
-already reporting **1.09** therefore has, at most, **~8% of travel left — once, and forever.**
+already reporting **1.09** therefore has, at most, **~8% of travel left — a fixed ceiling on the ratio, spent once.**
 
 The metric was built by The Green Grid as a management tool for one facility over time. It says
 nothing about the carbon of the electricity (renewable and coal count identically), nothing about

@@ -158,12 +158,12 @@
       "fetched": "2026-07-09"
     },
     "growth_verbatim": "…our total electricity consumption grew by 37% in 2025, up from 27% in 2024",
-    "growth_wording_caveat": "The 2026 report states the 37% for TOTAL electricity consumption (and restates 2024's 27% on the same basis); the 2025 report had stated the 27% for total DATA CENTER electricity. Quoted exactly; not conflated.",
+    "growth_wording_caveat": "The 2026 report states the 37% for TOTAL electricity consumption (and restates 2024's 27% on the same basis); the 2025 report had stated the 27% for total DATA CENTER electricity. Quoted exactly; not conflated — and the mismatch matters: dividing a possibly company-wide growth rate against a data-center-only fleet PUE is the same numerator/denominator scope caution as the emissions-panel caveat. The impossibility conclusion is robust to it: under base 1.09, any growth above 9% already crosses the floor, so even a materially lower data-center-specific growth rate would still land below 1.0.",
     "pue_verbatim": "This focus resulted in a 2025 average annual PUE of 1.09 for our global data center fleet—meaning that Google data centers used 83% less overhead energy than the industry average.",
     "fleet_pue_2025": 1.09,
     "growth_2025_pct": 37,
     "required_pue_at_2025_growth": 0.80,
-    "required_pue_computation": "1.09 / 1.37 = 0.796 ≈ 0.80 — a further 0.06 below the already-impossible 2024 requirement."
+    "required_pue_computation": "1.09 / 1.37 = 0.796 ≈ 0.80 — a further 0.07 below the already-impossible 2024 requirement."
   },
 
   "seed": 0,
