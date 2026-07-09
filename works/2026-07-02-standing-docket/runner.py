@@ -36,14 +36,37 @@ SYNTHETIC_N = 200
 CHI2_TEST_NAMES = ["first_digit_chi2", "second_digit_chi2", "last_digit_chi2"]
 ALL_TEST_NAMES = ["first_digit_chi2", "first_digit_mad", "second_digit_chi2", "last_digit_chi2"]
 
+# ---------------------------------------------------------------------
+# Per-trial config -- pins the raw snapshot files for the CURRENT trial
+# being appended. This is a running log of the instrument's own history;
+# past trials' configs are not re-run (their scored results are already
+# stored in ledger.json), only noted here for the record:
+#
+#   Trial 1 (2026-07-02): wb-countries.json; series wb-pop-2023.json (2023),
+#   wb-gdp-2023.json (2023).
+#
+# Trial 2 (2026-07-09) is the config below: a fresh countries snapshot plus
+# three series, one of them (labor force) rotated in as a new indicator --
+# see README.md Limitations for its estimates-based-data disclosure.
+# ---------------------------------------------------------------------
+
+TRIAL_CONFIG = {
+    "countries_file": "wb-countries-2026-07-09.json",
+    "series": [
+        ("wb-pop-2024.json", "2024"),
+        ("wb-gdp-2024.json", "2024"),
+        ("wb-lab-2024.json", "2024"),
+    ],
+}
+
 
 # ---------------------------------------------------------------------
 # Real data loading
 # ---------------------------------------------------------------------
 
-def load_real_country_ids():
-    """Country ids (ISO3) for the 217 real countries: region.id != 'NA'."""
-    with open(os.path.join(RAW_DIR, "wb-countries.json"), "r", encoding="utf-8") as f:
+def load_real_country_ids(filename):
+    """Country ids (ISO3) for the real countries: region.id != 'NA'."""
+    with open(os.path.join(RAW_DIR, filename), "r", encoding="utf-8") as f:
         meta, rows = json.load(f)
     ids = set()
     for row in rows:
@@ -169,10 +192,7 @@ def score_real_series(source, indicator_id, indicator_label, indicator_date, sna
 # ---------------------------------------------------------------------
 
 def build_trial(trial_id, date, snapshot_date):
-    real_ids = load_real_country_ids()
-
-    pop_values, pop_id, pop_label, pop_lastupdated = load_indicator_values("wb-pop-2023.json", real_ids)
-    gdp_values, gdp_id, gdp_label, gdp_lastupdated = load_indicator_values("wb-gdp-2023.json", real_ids)
+    real_ids = load_real_country_ids(TRIAL_CONFIG["countries_file"])
 
     synthetic_benford_values = generate_synthetic_benford()
     synthetic_human_values = generate_synthetic_human()
@@ -182,14 +202,14 @@ def build_trial(trial_id, date, snapshot_date):
         score_control("synthetic_human", synthetic_human_values, expect_clean=False),
     ]
 
-    series = [
-        score_real_series(
-            "World Bank", pop_id, pop_label, "2023", snapshot_date, pop_values
-        ),
-        score_real_series(
-            "World Bank", gdp_id, gdp_label, "2023", snapshot_date, gdp_values
-        ),
-    ]
+    series = []
+    for filename, indicator_date in TRIAL_CONFIG["series"]:
+        values, indicator_id, indicator_label, _lastupdated = load_indicator_values(filename, real_ids)
+        series.append(
+            score_real_series(
+                "World Bank", indicator_id, indicator_label, indicator_date, snapshot_date, values
+            )
+        )
 
     clean_real_series_flagged = [s["indicator"] for s in series if s["convicted"]]
     tests_disagreeing = [s["indicator"] for s in series if s["chi2_mad_disagree"]]

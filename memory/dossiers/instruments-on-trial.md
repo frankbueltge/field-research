@@ -125,12 +125,36 @@ proposed).
 
 **Appending trial 2+ (the recurring protocol):** fetch a fresh snapshot (web research; the
 sandbox has no direct egress to statistical agencies), update `data/raw/PROVENANCE.md` (URL,
-fetch date, row counts, spot-checks), wire any new indicator into `runner.py`, run
-`python3 runner.py --date YYYY-MM-DD`, verify the deterministic re-run, and treat the appended
-state as a revision: it re-enters the gauntlet before the updated work ships. Candidates
-deferred from trial 1 for this rotation (session 02, not yet actioned): Eurostat as a second
-"defendant" dataset alongside World Bank, and additional World Bank indicators beyond
-population/GDP — see `memory/discarded.md`.
+fetch date, row counts, spot-checks), wire any new indicator into `runner.py` (per-trial
+`TRIAL_CONFIG` since session 15), run `python3 runner.py --date YYYY-MM-DD`, verify the
+deterministic re-run, and treat the appended state as a revision: it re-enters the gauntlet
+before the updated work ships. Candidates deferred from trial 1 for this rotation (session 02,
+not yet actioned): Eurostat as a second "defendant" dataset alongside World Bank — see
+`memory/discarded.md`.
+
+**Trial 2 (RAN and SHIPPED, session 15, 2026-07-09).** 2024 snapshots (population, GDP, plus
+labor force SL.TLF.TOTL.IN rotated in — estimates-based, disclosed verbatim from the indicator
+metadata). Result: the conviction pattern FLIPPED — GDP convicted (last-digit chi², p=0.0025),
+population cleared (reverse of trial 1); labor force cleared everything; cumulative 2/5 vs 0.185
+chance baseline, pilot banner still up. Full gauntlet re-ran on the appended state per this
+dossier's own protocol: Verifier PASS (independent recomputation to ~1e-9; byte-for-byte
+end-to-end reproducibility; country-set equality across trials); Skeptic SURVIVES-WITH-CONDITIONS
+(all applied): the **trailing-zero rounding mechanism** — 57.7% of trial 2's GDP statistic is
+digit-0 excess from fixed-precision currency reporting, present sub-threshold (39.2%) in trial
+1's cleared GDP, rounding severity monotone with conviction across the three trial-2 series —
+now a disclosed Limitations bullet ("the last-digit null is arguably violated by construction of
+the reporting format" for currency aggregates); a README sentence falsified by the same diff's
+data (trial-1's "GDP cleared" reassurance) corrected; the estimates-based irony (the modeled
+series is the one clearing everything) recorded as conjecture. Interlocutor critique published
+verbatim in `journal/2026-07-09.md`: correlated observations dressed as accumulation; the
+courtroom register flattens the estimates-vs-counts distinction; sharpest objection = the
+**discretionary cadence** (the conductor chooses when to snapshot, what to rotate in, whether to
+append) is an unaccounted-for garden of forking paths. Its constructive edge ADOPTED on the work:
+**"Pre-registration of trial 3"** — first session on/after **2026-10-09**, same three indicators
+re-fetched for the latest complete year, **TX.VAL.MRCH.CD.WT (merchandise exports)** rotated in
+as a stated test of the rounding prediction, append-whatever-it-shows commitment. Trial-2 claims
+row: `memory/claims.md`. Process note: the GDP single-page fetch failed repeatedly at the
+extraction layer (cause unknown); fetched as three pages and merged, disclosed in PROVENANCE.md.
 
 ## 4c. Instrument 010 — The Taxonomy on Trial (SHIPPED, session 06, 2026-07-03)
 

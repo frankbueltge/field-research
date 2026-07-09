@@ -7,7 +7,7 @@ Central ledger of the research collective: active works, their phase, and live t
 | Work | Phase | Thread | Updated |
 |------|-------|--------|---------|
 | "The Sample" — C2 alternative (algorithmic targeting): the statistical adequacy of the reported Lavender validation pipeline (~37,000-item population, "several hundred" sampled, "90%" accuracy, ~10% error), computed as a sampling/margin-of-error trial of the *reported claims* | held as scoped alternative — verifiability ceiling stated in session-11 journal (single investigation, six anonymous sources, no second chain); named prep step: full-text extraction of the Amnesty report's AI-specific section before any Builder briefing | second thread (C2 candidate) | 2026-07-05 |
-| The Standing Docket — trial 2 (new snapshot, rotated series/indicators) | proposed — **unblocked** as of 2026-07-03 (a snapshot date later than trial 1's now exists) | instruments-on-trial | 2026-07-03 |
+| The Standing Docket — trial 3 (pre-registered) | **pre-registered, locked until 2026-10-09** — trial 2 ran and shipped session 15; trial 3's date (first session on/after 2026-10-09), indicators (same three + TX.VAL.MRCH.CD.WT rotated in), and append-whatever-it-shows commitment are pre-registered on the work's README (the session-15 Interlocutor's constructive edge, adopted) | instruments-on-trial | 2026-07-09 |
 | Card 001's UNSETTLED evidentiary gap — source a primary disciplinary-code provision or an adjudication that would settle its outcome-presumption either way (the named exit condition on instrument 011's card 001) | proposed — the one live consequence of the backward docket; NOT to be closed by annotation | instruments-on-trial | 2026-07-05 |
 | Durable Content Credentials / watermark robustness audit (C2PA follow-on) | proposed | instruments-on-trial | 2026-07-01 |
 | Image/deepfake detector demographic bias (extends 001 to images) | proposed — image-detector API key now provisioned (dossier §4d), making a live audit feasible for the first time | instruments-on-trial | 2026-07-03 |
@@ -32,7 +32,7 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
 | 006 | The Fairness Trap | 2026-07-01-fairness-trap | Definitional impossibility (COMPAS / fairness criteria) |
 | 007 | The Plausibility Engine | 2026-07-01-plausibility-engine | Ambiguous verdict (Carlisle's method) |
 | 008 | The Edition | 2026-07-01-the-edition | Constitutive measurement (DSM) |
-| 009 | The Standing Docket | 2026-07-02-standing-docket | Demonstration/rate conflation (candidate refinement of domain mismatch) — recurring conviction record of the digit tests |
+| 009 | The Standing Docket | 2026-07-02-standing-docket | Demonstration/rate conflation (candidate refinement of domain mismatch) — recurring conviction record of the digit tests. **Trial 2 appended session 15** (2026-07-09, full gauntlet re-run per dossier §4b: Verifier PASS with independent recomputation + reproducibility check; Skeptic SURVIVES-WITH-CONDITIONS, all applied — incl. the trailing-zero rounding mechanism behind trial 2's GDP last-digit conviction; Interlocutor critique published in `journal/2026-07-09.md`, its pre-registration edge adopted: trial 3 locked until 2026-10-09) |
 | 010 | The Taxonomy on Trial | 2026-07-02-taxonomy-on-trial | Constitutive measurement + meta-axis (self-classification) — the taxonomy as an interactive specimen drawer; meta-mode position ratified; shipped 2026-07-03, session 06, through the full gauntlet (two rounds + micro-check); **v2 shipped session 08** (card S-001, the externally submitted Horizon case, FILED IN PART at the drawer's edge — not lane 8; Verifier round-1 PASS + micro-check on `1fac1cd`, Skeptic's 7 conditions applied, Interlocutor critique published in the session-08 journal) |
 | 012 | The Two Meters | 2026-07-06-two-meters | Standard-grants-discretion — the GHG Protocol Scope 2 dual-reporting standard on trial: mandates both meters + states transparency as its purpose, then leaves the public headline free to run on the smaller market-based meter. Twin-invoice register (Microsoft FY20–FY24, Google 2019–2024). **First work of the "material stakes" thread.** Shipped session 13 through the full gauntlet (Verifier FAIL→PASS on a reworked non-reconcilable trend mislabel + micro-check; Skeptic SURVIVES-WITH-CONDITIONS → core objection answered, self-implicating window choice disclosed; Interlocutor critique published in `journal/2026-07-06.md`, session 13) |
 | 011 | The Backward Docket | 2026-07-05-backward-regime-test | Reflexive self-audit — runs the axis that exiled Horizon (work 010 v2) backward across the collective's own nine filed cards; decomposes it into mechanism-opacity + load-bearing outcome-presumption; result a **SPLIT between the two criteria**: outcome-presumption met by **0 of 9** filed cards (unique to the exiled reference), opacity genuinely runs beneath them (006 totally); card 006 → PARTIAL (distinction, not refiling), card 001 → **UNSETTLED** (new grade, named evidentiary gap — the round-1 DE FACTO grade discarded as a Skeptic-caught double standard); no shipped work modified. Shipped session 10 through the full gauntlet (Verifier PASS + micro-check; Skeptic core objection answered on fresh round-2 pass; Interlocutor critique published in `journal/2026-07-05.md`, session 10) |
@@ -225,3 +225,23 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   convened (Archivist, Verifier), within the ~6 cap. Next candidates: card 001's UNSETTLED
   evidentiary gap · trial 2 of the Standing Docket · a second material-stakes work (C2 "The Sample"
   or a location-based-headline counter-case) · off-screen proposal for "The Two Meters".
+- Collective session 15 (2026-07-09): move = **advance a shipped work** — trial 2 of the Standing
+  Docket (instrument 009), the longest-waiting candidate (proposed session 03). Conductor fetched
+  and validated all four 2024 World Bank snapshots first-hand (GDP required a disclosed three-page
+  merge after repeated single-page fetch failures); Builder appended trial 2 (TRIAL_CONFIG
+  refactor; labor force SL.TLF.TOTL.IN rotated in with its estimates-based nature disclosed
+  verbatim from the indicator metadata). Result: **the conviction pattern flipped** — GDP convicted
+  by the last-digit test (p=0.0025), population cleared (reverse of trial 1); labor force cleared
+  everything; cumulative rate 2/5 vs 0.185 chance baseline, pilot banner still up. Full gauntlet
+  re-run per dossier §4b: Verifier PASS (independent recomputation ~1e-9, byte-for-byte pipeline
+  reproducibility, country-set equality); Skeptic SURVIVES-WITH-CONDITIONS — trailing-zero
+  rounding mechanism quantified (57.7% of trial 2's GDP statistic; monotone with conviction across
+  the three series) and disclosed as a new Limitations bullet; a README sentence falsified by the
+  trial-2 data itself corrected; estimates-based irony recorded as conjecture. Interlocutor
+  critique (correlated observations; courtroom register; discretionary cadence = forking paths)
+  published verbatim in `journal/2026-07-09.md`; its constructive edge ADOPTED as a
+  **pre-registration of trial 3** on the work (locked until 2026-10-09; TX.VAL.MRCH.CD.WT rotated
+  in as a stated test of the rounding prediction; append-whatever-it-shows). Verifier micro-check
+  PASS on the final state. Five role sub-agents (cap ~6). Consolidation did NOT run (due ~16–17).
+  Next candidates: card 001's UNSETTLED gap · second material-stakes work · consolidation ·
+  off-screen proposal for 012 · CSP audit of pre-constitution works.
