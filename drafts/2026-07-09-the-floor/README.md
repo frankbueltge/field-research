@@ -51,21 +51,38 @@ more computing power per unit of electricity than five years ago." In the same r
 > the prior year."
 
 And the disclosed absolute — location-based Scope 2, "what the grid saw" — rose from **5.12 million
-tCO₂e (2019) to 11.28 million tCO₂e (2024): +120%.** Total ambition-based emissions: **+51% vs 2019.**
+tCO₂e (2019) to 11.28 million tCO₂e (2024): +120.5%.** Total ambition-based emissions: **+51% vs 2019.**
+
+**The concession, stated up front:** Google's Figure-4 sentence is literally true, and this work
+does not dispute it — at PUE 1.09 the network really does use less electricity and produce fewer
+emissions than the same operations at 1.10 would have. That is a counterfactual claim. What this
+work puts on trial is a stronger reading — the PUE improvement presented as a counterweight a
+reader may net against absolute growth — and that reading is the collective's own interpretation
+of the framing pattern (sentence placement, the bridge graphic's "PUE improvements" wedge, the
+efficiency-headline cluster), stated as interpretation throughout, not as anything Google says
+outright.
 
 ## The arithmetic (disclosed inputs + the definitional floor; no modeling)
 
 - **PUE series, 2019→2024:** 1.10, 1.10, 1.10, 1.10, 1.10, **1.09.** Six years; the metric moved 0.01.
 - **Remaining headroom:** (1.09 − 1.00) / 1.09 = **8.3%.** That is the entire future contribution
-  PUE can ever make to energy-per-unit-of-IT — one time, permanently.
+  PUE can ever make to energy-per-unit-of-IT — a fixed ceiling on the ratio, applied to a
+  still-growing base (the absolute energy it avoids grows with the base; the share can never grow).
 - **One year's growth:** total data-center electricity **+27%** in 2024 alone.
 - **Verdict ratio:** the metric's whole remaining lifetime headroom (8.3%) is **less than a third**
   of a single year's absolute growth (27%).
-- **Breakeven:** required PUE = 1.10 / (1 + growth). It crosses below the floor of 1.0 once growth
-  exceeds **10%**. At 2024's **27%**, the required PUE is **≈0.87** (1.10/1.27) — below the floor,
-  thermodynamically impossible. The efficiency lever could not have offset the growth even in
-  principle. (Using implied IT-load growth of ~28% instead of total growth lands it at ≈0.86 — even
-  lower; 0.87 is the conservative figure.)
+- **Breakeven:** required PUE = 1.10 / (1 + growth), base 1.10 being 2023's value — the correct
+  base for a 2023→2024 growth figure. It crosses below the floor of 1.0 once growth exceeds
+  **10%**. (The exactly-10% crossing is an artifact of the base: with base 1.09 it is exactly 9%;
+  the conclusion does not depend on the choice.) At 2024's **27%**, the required PUE is **≈0.87**
+  (1.10/1.27) — below the floor, thermodynamically impossible. The efficiency lever could not have
+  offset the growth even in principle. (Using implied IT-load growth of ~28% instead of total
+  growth lands it at ≈0.86 — even lower; 0.87 is the conservative figure.)
+- **Robustness — the verdict does not depend on picking the hottest year:** at 2023's slower 17%
+  growth, required PUE = 1.10/1.17 = **0.94** — still below the floor. And the subject's own next
+  disclosure (2026 report, fiscal 2025, fetched during the shipping gauntlet) shows the pattern
+  continuing harder: PUE unchanged at **1.09**, total electricity growth **+37%**, required PUE =
+  1.09/1.37 = **0.80** — deeper below the floor.
 
 ## Why this is not a rerun of 012
 
@@ -80,12 +97,20 @@ figures), different form (a floor-gauge with an impossible zone, not a twin-invo
 
 1. Not a concealment claim — the trial is of the metric's structure and the report's framing, not of
    Google's candor, which is comparatively high.
-2. Google is audited because it discloses most; the problem is least visible where disclosure is least.
-3. Fleet PUE covers owned-and-operated campuses only, not leased/colocation facilities — the reported
+2. Google's literal Figure-4 claim is true and undisputed (a counterfactual); the offset reading on
+   trial is the collective's own reading of the framing, stated as interpretation.
+3. Google is audited because it discloses most; the problem is least visible where disclosure is least.
+4. Fleet PUE covers owned-and-operated campuses only, not leased/colocation facilities — the reported
    ratio is not the overhead of the whole footprint.
-4. The breakeven ≈0.86 infers IT-load growth (~28%) from disclosed total growth; stated as such. The
-   headroom argument (8.3% vs 27%) needs no inference and is the primary, airtight claim.
-5. PUE improvements are real efficiency gains. The critique is not that the number is fake — it is
+5. The two charted series do not describe the same buildings: fleet PUE covers the owned campuses;
+   location-based Scope 2 covers purchased electricity broadly (~95% "data centers and offices").
+   For the footprint outside the fleet, no PUE-like ratio is disclosed at all.
+6. The breakeven ≈0.86 infers IT-load growth (~28%) from disclosed total growth; stated as such. The
+   headroom argument (8.3% vs 27%) is the primary claim — no inference beyond the disclosed PUE, the
+   disclosed growth, and the definitional floor.
+7. The near-exhausted arithmetic is Google-specific: at the industry-average PUE of 1.56 the headroom
+   is ~35.9%. The structural argument generalizes; the numbers are Google's.
+8. PUE improvements are real efficiency gains. The critique is not that the number is fake — it is
    that a near-floor ratio is being asked to carry an argument about an absolute it cannot bound.
 
 ## The form
