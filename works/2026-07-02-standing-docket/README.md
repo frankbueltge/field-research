@@ -89,6 +89,8 @@ values (df=8, x=15.507 -> p~0.05; df=9, x=16.919 -> p~0.05; df=9, x=21.666
 Raw snapshots are committed under `data/raw/`. See `data/raw/PROVENANCE.md`
 for exact source URLs, fetch date, row counts, and spot-checks. In brief:
 
+Trial 1 (fetched 2026-07-02):
+
 - `wb-countries.json` -- World Bank country/region metadata (used only to
   build the set of 217 real-country ISO3 ids, i.e. `region.id != "NA"`,
   excluding aggregates like "World" or "Sub-Saharan Africa").
@@ -98,9 +100,30 @@ for exact source URLs, fetch date, row counts, and spot-checks. In brief:
   to the 204 real-country ids with non-null values (fewer countries report
   GDP than population).
 
-World Bank data are themselves revised over time; the snapshot date
-(2026-07-02) pinned in `PROVENANCE.md` is the reference point for this
-build, not a claim that the figures are final.
+Trial 2 (fetched 2026-07-09):
+
+- `wb-countries-2026-07-09.json` -- a fresh country/region metadata
+  snapshot; same 217 real-country ids as trial 1's.
+- `wb-pop-2024.json` -- SP.POP.TOTL, 2024, filtered to 217 real-country
+  ids with non-null values.
+- `wb-gdp-2024.json` -- NY.GDP.MKTP.CD, 2024, filtered to 199 real-country
+  ids with non-null values. The single-page fetch failed repeatedly at
+  the extraction layer, so this snapshot was fetched in three pages and
+  merged by the conductor -- see `PROVENANCE.md` for the merge
+  disclosure.
+- `wb-lab-2024.json` -- SL.TLF.TOTL.IN (labor force, total), 2024,
+  filtered to 182 real-country ids with non-null values. This is the
+  indicator rotated in for trial 2, and it is **estimates-based, not a
+  raw count**: its World Bank metadata attributes it to "International
+  Labour Organization (ILO) ... estimates based on external database;
+  United Nations (UN), publisher: UN Population Division; Staff
+  estimates, World Bank (WB)" -- see `PROVENANCE.md` and Limitations
+  below.
+
+World Bank data are themselves revised over time, and each trial pins its
+own snapshot date -- 2026-07-02 for trial 1, 2026-07-09 for trial 2 (see
+`data/raw/PROVENANCE.md` and each trial's `snapshot_date` field in
+`ledger.json`) -- not a claim that the underlying figures are final.
 
 ---
 
@@ -141,9 +164,11 @@ Both seeds and the generator are disclosed per-trial in
    `data/raw/PROVENANCE.md` for how the current snapshots were obtained).
 2. Place the raw JSON under `data/raw/`, and update `PROVENANCE.md` with
    the source URL, fetch date, row count, and any spot-checks.
-3. If it's a new indicator, wire it into `runner.py`'s `build_trial()`
-   (add a `load_indicator_values(...)` call and a `score_real_series(...)`
-   entry).
+3. Update `TRIAL_CONFIG` at the top of `runner.py` to point at the new
+   countries file and list the new trial's series as
+   `(filename, indicator_date)` pairs (the comment above `TRIAL_CONFIG`
+   keeps a short log of prior trials' configs, so the code documents its
+   own history).
 4. Run:
    ```
    python3 runner.py --date YYYY-MM-DD
@@ -170,17 +195,27 @@ Both seeds and the generator are disclosed per-trial in
   control should not be read as "what fraud looks like" in general --
   only as a control the tests should be able to catch, to establish they
   are even switched on.
-- **World Bank data are revised.** The population and GDP figures used
-  here are a snapshot as of 2026-07-02 (`data/raw/PROVENANCE.md`); the
-  World Bank revises historical figures over time, so a re-fetch on a
-  later date may not reproduce byte-identical inputs even for the same
-  nominal indicator-year.
-- **Only two indicators so far.** Trial 1 covers population and GDP for
-  2023. The conviction record (`false_conviction_rate_on_clean_real_data`,
-  etc.) is built from `clean_real_series_tested` scorings, which is 2 after
-  trial 1 -- far too small to treat any rate in the current ledger as a
-  stable estimate. The point of the ledger is that this number accumulates
-  across trials; read the early entries as a small pilot, not a verdict.
+- **World Bank data are revised.** Each trial's figures are a snapshot as
+  of that trial's own fetch date (2026-07-02 for trial 1, 2026-07-09 for
+  trial 2; see `data/raw/PROVENANCE.md`); the World Bank revises
+  historical figures over time, so a re-fetch on a later date may not
+  reproduce byte-identical inputs even for the same nominal
+  indicator-year. Trial 2 also deliberately moved to 2024 data rather
+  than re-fetching 2023, so trial-to-trial changes reflect both a new
+  snapshot date and a new indicator-year, not a controlled replication.
+- **Small number of indicators, still.** Trial 1 covered population and
+  GDP for 2023 (2 series). Trial 2 covers population and GDP for 2024
+  plus a third, newly rotated-in series -- labor force, total
+  (SL.TLF.TOTL.IN) for 2024 -- so 3 series in trial 2, bringing
+  `clean_real_series_tested` to 5 across both trials. Labor force is an
+  estimates-based series, not a raw administrative count: the World Bank
+  attributes it to ILO estimates, the UN Population Division, and World
+  Bank staff estimates (see `data/raw/PROVENANCE.md`), so any verdict
+  this ledger returns on it should be read as a verdict on an estimate,
+  not on a census-style count. 5 scorings is still far too small to treat
+  any rate in the current ledger as a stable estimate. The point of the
+  ledger is that this number accumulates across trials; read the early
+  entries as a small pilot, not a verdict.
 - **Multiple-comparisons baseline.** Every series is put through 4 tests
   (3 chi-squared + 1 MAD). Even on genuinely clean data, the chance that
   *at least one* test flags it by chance alone is higher than the 0.05
@@ -234,18 +269,83 @@ Both seeds and the generator are disclosed per-trial in
   Briviba et al.) -- cleared every chi-squared test. (That population
   data, being census-based, is comparatively harder to fabricate than GDP
   is the conductor's conjecture, marked as such -- not a sourced
-  finding.)
+  finding.) Trial 2 reverses this: GDP, not population, was the series
+  convicted (last-digit chi2, p=0.0025) -- exactly the indicator type the
+  manipulation literature documents -- so the trial-1 reassurance does not
+  hold across both trials and should not be read as a settled pattern.
+- **The last-digit conviction of GDP has a disclosed, partly mundane
+  mechanism.** In both trials, the largest single contributor to the GDP
+  last-digit chi-squared statistic is an excess of trailing-zero values:
+  in trial 2 (convicted, stat 25.47), digit 0 was observed 37 times against
+  19.9 expected, contributing 14.69 of the statistic (57.7%); in trial 1
+  (cleared, stat 14.04, p=0.121) the same excess was already present (31
+  observed vs 20.4 expected, 39.2% of that statistic) but sub-threshold.
+  11 of trial 2's 199 GDP values (12 of 204 in trial 1) end in three or
+  more zeros -- national-accounts figures reported or converted at
+  million-dollar-or-coarser precision, not evidence of fabrication.
+  Within trial 2, rounding severity tracks conviction: GDP (11/199
+  trailing-zero values) convicted; population (5/217) cleared; labor force
+  (0/182) cleared everything. Rounding does not fully account for either
+  trial's statistic -- 20-40% comes from a single-digit deficit (digit 4 in
+  2023, digit 6 in 2024) that is not stable across trials and looks like
+  ordinary N~200 noise. The upshot, disclosed here the way the MAD/small-N
+  mechanism is disclosed above: for fixed-precision currency aggregates
+  like current-US$ GDP, the last-digit null ("the last digit carries no
+  information") is arguably violated *by construction of the reporting
+  format*, independent of any manipulation -- so a last-digit conviction of
+  such a series is a verdict on the reporting precision as much as on the
+  data, and the test's validity condition should be treated as contestable
+  rather than assumed.
+- **The one estimates-based series is the one that cleared everything --
+  flagged as conjecture, not finding.** That labor force, the modeled/
+  estimated series (see Data provenance), is also the series clearing every
+  test most comfortably is worth noting: smoothed or interpolated series
+  may conform better to Benford-style nulls for reasons unrelated to being
+  unmanipulated. One estimates-based series is nowhere near enough to treat
+  this as a pattern; it is recorded so a future trial can test it, not as a
+  claim.
 - **Sample size asymmetry.** Population N=217, GDP N=204 -- both real
   country counts as of the 2026-07-02 snapshot, not independently chosen.
+
+---
+
+## Pre-registration of trial 3
+
+Trials 1 and 2 were run seven days apart, at the conductor's discretion,
+on data that changed snapshot date and indicator-year at once -- the
+published critique of trial 2 (see Critique below) rightly objects that an
+undisclosed, discretionary cadence is itself an unaccounted-for
+experimenter's degree of freedom. From trial 3 onward the cadence and
+content are pre-registered here, before the run:
+
+- **When:** the first research session on or after **2026-10-09** (a
+  quarterly cadence; not sooner), regardless of what the data then shows.
+- **What:** re-fetch the same three indicators (SP.POP.TOTL,
+  NY.GDP.MKTP.CD, SL.TLF.TOTL.IN) for the latest complete year then served
+  by the API, plus rotate in **TX.VAL.MRCH.CD.WT (merchandise exports,
+  current US$)** -- a second fixed-precision currency aggregate, chosen now
+  precisely because the trial-2 rounding-mechanism note above predicts
+  such series are conviction-prone on the last-digit test. Trial 3 is a
+  test of that stated prediction.
+- **Commitment:** the run is appended to the ledger *whatever it shows* --
+  convictions, clean sweeps, or a result that embarrasses the prediction.
+  A failed fetch for any indicator is recorded in `PROVENANCE.md` as a
+  failure, not silently substituted.
 
 ---
 
 ## Critique
 
 Per the collective's constitution, this work ships together with its own
-strongest objection: the Interlocutor's hostile critique is published in
-the journal entry of the shipping session, `journal/2026-07-02.md`
-(collective session 03).
+strongest objection: the Interlocutor's hostile critique of the original
+work is published in the journal entry of the shipping session,
+`journal/2026-07-02.md` (collective session 03). Trial 2's appended state
+passed through the gauntlet again on 2026-07-09; the Interlocutor's
+critique of trial 2 -- correlated observations dressed as accumulation, a
+courtroom register that flattens the estimates-vs-counts distinction, and
+the discretionary-cadence objection answered by the pre-registration
+above -- is published verbatim in `journal/2026-07-09.md` (collective
+session 15).
 
 ---
 
@@ -276,5 +376,5 @@ the journal entry of the shipping session, `journal/2026-07-02.md`
   statistics, with case studies for Greece, Argentina, and Brazil.
   https://www.bsfrey.ch/wp-content/uploads/2024/04/C_666_2024_Governments-manipulate-official-Statistics-Institutions-matter2.pdf
 - World Bank Open Data API -- see `data/raw/PROVENANCE.md` for exact
-  endpoint URLs, fetch date, and row counts for the SP.POP.TOTL and
-  NY.GDP.MKTP.CD snapshots used here.
+  endpoint URLs, fetch date, and row counts for the SP.POP.TOTL,
+  NY.GDP.MKTP.CD, and (from trial 2) SL.TLF.TOTL.IN snapshots used here.
