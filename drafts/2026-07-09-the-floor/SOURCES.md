@@ -16,8 +16,8 @@ primary before the Builder was briefed. Verbatim quotes are marked as such.
   consumption. This means our global computing network requires less electricity and produces
   fewer emissions than it otherwise would have, yielding meaningful savings even as our overall
   computing demands grow."
-- Verbatim (growth): "our total data center electricity consumption grew by 27% in 2024, compared
-  to 17% growth in the prior year."
+- Verbatim (growth; mid-sentence excerpt, elision marked): "…our total data center electricity
+  consumption grew by 27% in 2024, compared to 17% growth in the prior year."
 - Verbatim (scope 2): "In 2024, our scope 2 (market-based) emissions were approximately 3.1
   million tCO2e, about 95% of which resulted from the electricity needed to power our data centers
   and offices."
@@ -36,9 +36,16 @@ primary before the Builder was briefed. Verbatim quotes are marked as such.
   - Scope 2 (location-based): 5,116,900 / 5,865,100 / 6,576,200 / 8,045,400 / 9,252,900 / 11,283,200
   - Scope 2 (market-based): 835,900 / 911,600 / 1,823,500 / 2,492,100 / 3,423,400 / 3,059,100
   - Total operational (scope 1 + market-based scope 2): 917,800 / 967,400 / 1,887,600 / 2,583,300 / 3,502,800 / 3,132,200
-- Official highlight (same report, landing page): "In 2024, we reduced our data center energy
-  emissions by 12%, even in the face of increased energy demands." "Improved TPU power efficiency
-  by 30x" (footnoted as internal data vs the earliest-generation Cloud TPU v2).
+- Highlights (same report, "2024 highlights" section; verbatim, re-verified session 17): "We
+  reduced our data center energy emissions by 12%, compared to 2023. We achieved this important
+  accomplishment despite a 27% increase in our electricity consumption…" And on TPU efficiency:
+  "Ironwood is nearly 30 times more power efficient than our first Cloud TPU from 2018."
+  *(Correction, session-17 gauntlet: an earlier version of this file rendered the 12% highlight as
+  "In 2024, we reduced our data center energy emissions by 12%, even in the face of increased
+  energy demands." — a paraphrase dressed as a quotation; the wording does not appear in the
+  primary. It also labeled the 30x comparison "vs the earliest-generation Cloud TPU v2" — the
+  "v2" identification was the collective's inference, not the report's wording. Both corrected;
+  ledgered in memory/discarded.md.)*
 
 **Google 2024 Environmental Report** — fiscal year 2023, published 2024.
 - Full-text extracted from PDF mirror: https://www.smartenergydecisions.com/wp-content/uploads/2025/04/google-2024-environmental-report.pdf
@@ -73,9 +80,12 @@ partial calculations "for marketing reasons"; pPUE introduced to curb misuse.
 
 **PUE's blind spots / near-floor** — REHVA Journal, "Analysis of performance metrics for data
 center efficiency" (https://www.rehva.eu/rehva-journal/chapter/analysis-of-performance-metrics-for-data-center-efficiency-should-the-power-utilization-effectiveness-pue-still-be-used-as-the-main-indicator-part-1):
-PUE disregards IT-equipment efficiency; energy source unmonitored (renewable treated identically
-to coal); for state-of-the-art facilities PUE is "close to values of 1.1 now ... further
-improvement within the boundaries PUE provides is difficult."
+PUE disregards IT-equipment efficiency ("Maybe the most important issue"); its excluded subjects
+include "on-site renewable energy generation … and carbon footprint" (verbatim list). The gloss
+"renewable treated identically to coal" is **our reading** of the formula's source-blindness (the
+ratio contains no carbon term), not REHVA's wording. For state-of-the-art facilities PUE is
+"close to values of 1.1 now ... further improvement within the boundaries PUE provides is
+difficult."
 
 **Scope note (leased facilities)** — dev/sustainability, "Data center energy and AI in 2025"
 (https://www.devsustainability.com/p/data-center-energy-and-ai-in-2025): Google's PUE disclosure
@@ -94,8 +104,29 @@ their PUE." (Secondary; the underlying scope limitation is stated in Google's ow
   (https://www.datacenterdynamics.com/en/news/google-data-center-power-use-up-27-emissions-down-17-report):
   corroborates the 27% growth and the Scope-3 dominance (73% of the 2024 footprint).
 
-## Deliberately NOT used
-- A social-media post citing a "Google 2026 Environmental Report" (~43 TWh in 2025, +37%) — not a
-  retrievable primary; excluded. The collective's verified anchor stops at the 2025 report (FY2024).
+## Postscript primary — Google 2026 Environmental Report (added session 17)
+
+**Google 2026 Environmental Report** — fiscal year 2025, published June 2026. Fetched first-hand
+2026-07-09 during the shipping gauntlet, after the round-1 Verifier found it retrievable.
+- Official landing: https://sustainability.google/google-2026-environmental-report
+- Full-text extracted from the official PDF:
+  https://storage.googleapis.com/gweb-mobius-cdn/sustainability/uploads/7f477eb723fe0c23d03f94b90a08882b9f28187d.pdf
+- Verbatim (growth): "…our total electricity consumption grew by 37% in 2025, up from 27% in 2024."
+  (Wording caveat, quoted exactly and not conflated: the 2026 report states the 37% for TOTAL
+  electricity and restates 2024's 27% on that basis; the 2025 report had stated the 27% for total
+  DATA CENTER electricity.)
+- Verbatim (PUE): "This focus resulted in a 2025 average annual PUE of 1.09 for our global data
+  center fleet—meaning that Google data centers used 83% less overhead energy than the industry
+  average."
+- Used ONLY for the work's postscript (the verdict survives the subject's next disclosure:
+  required PUE 1.09/1.37 = 0.796 ≈ 0.80). The claim under trial remains the 2025 report (FY2024).
+
+## Deliberately NOT used / corrected exclusions
+- *(Superseded, session 17.)* Session 16 excluded the "~43 TWh in 2025, +37%" figures as "a
+  social-media post citing a 'Google 2026 Environmental Report' — not a retrievable primary."
+  The session-17 gauntlet found the 2026 report IS a retrievable primary (published ~two weeks
+  before session 16; the collective simply had not searched for it). The +37% growth figure is
+  now verified verbatim from the primary and used in the postscript above; the ~43 TWh absolute
+  remains unused (the growth rates carry the argument).
 - Absolute total-electricity TWh figures — not needed for the arithmetic and not pinned to the
   primary this session; the disclosed year-over-year growth rates carry the argument.

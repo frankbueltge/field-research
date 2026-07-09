@@ -68,12 +68,20 @@ const bars = years.map((yr, i) => {
     h,
   }
 })
-const emissionGrowthPct = Math.round(((emissions[emissions.length - 1] - emissions[0]) / emissions[0]) * 100)
+// one decimal so the rendered figure (120.5%) agrees with the prose everywhere
+const emissionGrowthDisplay = (((emissions[emissions.length - 1] - emissions[0]) / emissions[0]) * 100).toFixed(1)
 
 // ---- breakeven slider defaults (server-rendered; correct with JS off) --
+const basePue = breakeven.base_pue // 1.10
 const defaultGrowth = breakeven.google_2024_growth_pct // 27
 const defaultRequired = breakeven.required_pue_at_2024_growth // 0.87, from data
+// marker position uses the unrounded value so the no-JS position matches what
+// the client script computes on hydration
+const defaultRequiredRaw = basePue / (1 + defaultGrowth / 100)
 const defaultImpossible = defaultRequired < floor
+
+const concession = claim.concession
+const postscript = data.subsequent_disclosure
 ---
 
 <section class="floor-instrument">
@@ -135,7 +143,7 @@ const defaultImpossible = defaultRequired < floor
         </text>
 
         <!-- live slider marker (JS enhancement only) -->
-        <circle id="live-marker" cx={pueXY[pueXY.length - 1].x} cy={yFor(defaultRequired)} r="5" class:list={["live-marker", { impossible: defaultImpossible }]} />
+        <circle id="live-marker" cx={pueXY[pueXY.length - 1].x} cy={yFor(defaultRequiredRaw)} r="5" class:list={["live-marker", { impossible: defaultImpossible }]} />
 
         <!-- year labels -->
         {pueXY.map((p) => (
@@ -158,13 +166,14 @@ const defaultImpossible = defaultRequired < floor
           </g>
         ))}
       </svg>
-      <p class="panel-note">2019 → 2024: {(emissions[0]).toLocaleString('en-US')} → {(emissions[emissions.length - 1]).toLocaleString('en-US')} tCO₂e — up {emissionGrowthPct}%.</p>
+      <p class="panel-note">2019 → 2024: {(emissions[0]).toLocaleString('en-US')} → {(emissions[emissions.length - 1]).toLocaleString('en-US')} tCO₂e — up {emissionGrowthDisplay}%. Location-based — the meter of physical grid draw, per instrument 012, "The Two Meters".</p>
+      <p class="panel-note panel-note--caveat">Scope caveat: this series covers Google's purchased electricity broadly (the report attributes ~95% of Scope 2 to "data centers and offices") — a wider set of buildings than the PUE line's owned-and-operated fleet. For the footprint outside the fleet, no PUE-like ratio is disclosed at all.</p>
     </figure>
   </div>
 
   <!-- ============ verdict line ============ -->
   <p class="verdict">
-    Remaining headroom {headroom.value_pct.toFixed(1)}% (once, forever) · One year's growth {singleYearGrowth.value_pct}% · The lever's whole future is less than a third of a single year.
+    Remaining headroom {headroom.value_pct.toFixed(1)}% (a fixed ceiling on the ratio) · One year's growth {singleYearGrowth.value_pct}% · The lever's whole future is less than a third of a single year — and the six-year disclosed absolute is up {emissionGrowthDisplay}%.
     <span class="verdict-note">{headroom.computation} · {verdictRatio.computation}</span>
   </p>
 
@@ -176,6 +185,7 @@ const defaultImpossible = defaultRequired < floor
     <ul class="exhibit-headlines">
       {claim.supporting_efficiency_headlines.map((h) => (<li>{h}</li>))}
     </ul>
+    <p class="exhibit-concession">{concession}</p>
   </section>
 
   <!-- ============ the trial move: breakeven slider ============ -->
@@ -197,6 +207,20 @@ const defaultImpossible = defaultRequired < floor
     <p class="trial-note">
       Fixed point: Google's actual 2024 growth, {breakeven.google_2024_growth_pct}%, requires PUE ≈{breakeven.required_pue_at_2024_growth.toFixed(2)} to hold flat —
       {breakeven.crosses_floor_note} {breakeven.even_lower_note}
+    </p>
+    <p class="trial-note">{breakeven.robustness_note}</p>
+  </section>
+
+  <!-- ============ postscript: the year after ============ -->
+  <section class="postscript">
+    <h2>Postscript — the subject's next disclosure (added in the shipping gauntlet)</h2>
+    <p>
+      <a href={postscript.report.official_url}>{postscript.report.title}</a> ({postscript.report.published}, covers {postscript.report.covers}), fetched {postscript.report.fetched}:
+      <em>"{postscript.pue_verbatim}"</em> — and <em>"{postscript.growth_verbatim}"</em>.
+    </p>
+    <p>
+      PUE unchanged at {postscript.fleet_pue_2025.toFixed(2)}; growth {postscript.growth_2025_pct}%. Required PUE to hold that year flat:
+      {postscript.required_pue_computation} ({postscript.growth_wording_caveat})
     </p>
   </section>
 
@@ -386,6 +410,12 @@ const defaultImpossible = defaultRequired < floor
     color: var(--ink-soft);
     margin: 0.6rem 0 0;
   }
+  .panel-note--caveat {
+    margin-top: 0.4rem;
+    font-size: 0.72rem;
+    border-top: 1px dashed var(--rule-faint);
+    padding-top: 0.4rem;
+  }
 
   .verdict {
     font-size: 1rem;
@@ -425,6 +455,13 @@ const defaultImpossible = defaultRequired < floor
     font-style: italic;
   }
   .exhibit-secondary { font-style: normal; border-left-color: var(--danger); }
+  .exhibit-concession {
+    margin: 0.9rem 0 0;
+    padding: 0.6rem 0.75rem;
+    border: 1px dashed var(--rule);
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+  }
   .exhibit-headlines {
     margin: 0.75rem 0 0;
     padding-left: 1.2rem;
@@ -479,6 +516,25 @@ const defaultImpossible = defaultRequired < floor
     color: var(--ink-soft);
     margin: 0;
   }
+
+  .postscript {
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--steel);
+    padding: 1.1rem 1.2rem;
+    margin-bottom: 1.75rem;
+  }
+  .postscript h2 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 0.75rem;
+  }
+  .postscript p {
+    font-size: 0.82rem;
+    margin: 0 0 0.6rem;
+  }
+  .postscript p:last-child { margin-bottom: 0; }
+  .postscript a { color: var(--teal); }
 
   .honesty {
     border: 1px solid var(--rule);
