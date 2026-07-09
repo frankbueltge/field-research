@@ -1,17 +1,22 @@
-# Lands the nightly research branches (research/*) automatically onto main —
-# so nobody has to merge by hand. Runs on push to a research/* branch AND, as a
-# safety net, shortly after the nightly run (in case the push trigger fails).
+# Lands research branches automatically onto main so nobody has to merge by hand.
+# Covers BOTH branch shapes a session can produce:
+#   • research/*  — the nightly GitHub-Actions run (no PR; always lands)
+#   • claude/*    — a manually-started routine / cloud agent (opens a PR; lands only
+#                   while that PR is OPEN, so a closed/declined PR is never resurrected)
+# Runs on push to such a branch AND, as a safety net, ~1h after the nightly run
+# (in case the push trigger fails).
 name: Auto-land research
 
 on:
   push:
-    branches: ['research/**']
+    branches: ['research/**', 'claude/**']
   schedule:
     - cron: '0 2 * * *'   # 02:00 UTC = 04:00 Berlin, ~1h after the research routine
   workflow_dispatch: {}
 
 permissions:
   contents: write
+  pull-requests: read   # to check whether a claude/* branch still has an open PR
 
 concurrency:
   group: auto-land
@@ -25,16 +30,31 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
-      - name: Merge research/* branches into main
+      - name: Merge research/* and claude/* branches into main
         id: land
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "Field"
           git config user.email "field@users.noreply.github.com"
-          git fetch origin '+refs/heads/research/*:refs/remotes/origin/research/*' || true
+          git fetch origin '+refs/heads/research/*:refs/remotes/origin/research/*' \
+                           '+refs/heads/claude/*:refs/remotes/origin/claude/*' || true
           landed=0
-          for b in $(git branch -r | sed 's/^[* ] *//' | grep '^origin/research/'); do
+          for b in $(git branch -r | sed 's/^[* ] *//' | grep -E '^origin/(research|claude)/'); do
             name="${b#origin/}"
             echo "::group::landing $name"
+            # A manually-started routine lands on a claude/* branch and opens a PR.
+            # Only land it while that PR is OPEN — a closed PR means a human declined
+            # the session (e.g. superseded work), so it must never be resurrected onto
+            # main. The nightly research/* branches carry no PR and always land.
+            case "$name" in
+              claude/*)
+                if [ -z "$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$name" --state open --json number --jq '.[0].number // empty' 2>/dev/null)" ]; then
+                  echo "skip $name — no open PR (declined or already handled)"
+                  echo "::endgroup::"
+                  continue
+                fi ;;
+            esac
             if git merge --no-edit "$b"; then
               if git push origin main && git push origin --delete "$name"; then
                 landed=$((landed+1))
