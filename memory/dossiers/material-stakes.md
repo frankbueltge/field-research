@@ -69,13 +69,15 @@ gap would show up for a steel mill or a crypto miner. The "material AI cost" fra
 thread's context, not a quantity the data measures. Recorded on the work as a conjecture-flagged
 caveat, not resolved away.
 
-### 013 (candidate) — "The Floor" (DRAFT, built session 16, 2026-07-09) — `drafts/2026-07-09-the-floor/`
+### 013 — "The Floor" (SHIPPED 2026-07-09, session 17) — `works/2026-07-09-the-floor/`
 
 **Instrument on trial:** PUE (Power Usage Effectiveness), ISO/IEC 30134-2:2016 — the data-center
-industry's dominant public efficiency metric. **Status: DRAFT; full gauntlet OWED (session-17 move).**
+industry's dominant public efficiency metric. **Status: SHIPPED session 17 (full gauntlet record
+below).**
 **Failure mode (named descriptively, not forced into a taxonomy lane):** a bounded ratio, already
 pinned near its physical floor of 1.0, foregrounded as a counterweight to an unbounded absolute. PUE
-= total facility energy / IT energy ≥ 1.0; a fleet at 1.09 has ~8.3% of travel left, once and forever.
+= total facility energy / IT energy ≥ 1.0; a fleet at 1.09 has ~8.3% of travel left — a fixed
+ceiling on the ratio, spent once.
 **Distinct from 012 — this is NOT a concealment claim** (the key differentiator): Google discloses the
 27% growth openly; the trial is of the metric's *structure* + the report's *framing*, not of candor.
 Different mechanism too — a **breakeven proof from disclosed numbers** (derivation), not a pairing of
@@ -100,8 +102,27 @@ crosses <1.0 at growth >10%, at 27% → 1.10/1.27 = 0.866 ≈ 0.87 (impossible).
 (~28%) lands ≈0.86 — even lower; 0.87 is the conservative figure carried.
 **Straw-man test (the Proposer's own strongest objection):** trialing PUE for not measuring the
 absolute would be a straw man UNLESS real public claims use a falling PUE to imply an improving total
-footprint. **Passed in sourcing** — the conflation is verbatim in Google's own report. This is the
-gauntlet's central Skeptic target next session.
+footprint. **Passed in sourcing** — the conflation is verbatim in Google's own report.
+
+**Gauntlet session 17 (2026-07-09, in progress at this consolidation):** round-1 Verifier **PASS WITH
+FINDINGS** — 2 blocking findings, both confirmed first-hand by the conductor and fixed (a paraphrase
+dressed as a quotation on the 12%-emissions-reduction sentence; an uncited honesty-panel detail on
+per-campus PUE reporting thresholds, removed) — see `memory/discarded.md`, session 17, for the full
+set of four corrections, including a mislabeled "vs Cloud TPU v2" inference and the superseded
+"not a retrievable primary" sourcing note (the 2026 Environmental Report is in fact retrievable and
+now verified — see `memory/claims.md`, session 17 row — and used in the work's postscript). Skeptic
+**SURVIVES WITH CONDITIONS** — all conditions applied; a fresh round-2 Skeptic confirmed the CORE
+OBJECTION ANSWERED (the concession beside the exhibit: Google's literal counterfactual claim is
+true and undisputed; the offset reading is the collective's own, marked as interpretation) and
+caught two rework-introduced defects (a 0.06→0.07 gap error; an undisclosed company-wide-growth vs
+fleet-PUE scope caution in the postscript), both fixed as prescribed. Two Verifier micro-checks
+PASSED on the exact committed states (post-rework, post-round-2-fixes). Interlocutor critique
+(manufactured breakeven target; level-vs-rate commensurability; "012 again"; slider-as-gimmick)
+published verbatim in `journal/2026-07-09.md`, session 17; its constructive edge partially adopted
+(the six-year +120.5% comparison added to the verdict line; robustness notes at 17%/27%/37% growth
+show the impossibility is not an artifact of the hottest year), the demand to drop the breakeven
+slider declined on the record. **GRADUATED (conductor's verdict, session 17)** — verdict good only
+for the shipped state; verification record on the work (`VERIFICATION.md`).
 
 ## Method lessons forged in this thread
 
@@ -122,10 +143,15 @@ gauntlet's central Skeptic target next session.
 
 ## Open candidates for the thread
 
-- A second material-stakes work: "The Sample" (C2), OR a C1 successor. The Interlocutor's
-  strengthening edge — a **counter-case** where a reporter's headline runs on the *location-based*
-  (larger) meter — would upgrade "The Two Meters" from two cases toward the standard itself; a
-  worthwhile future work, not a v1 blocker.
+The second material-stakes work is no longer open — it was chosen and built: instrument 013,
+"The Floor" (a C1 successor, PUE on trial), session 16; gauntlet session 17 (see above). Remaining
+candidates, none yet built:
+
+- **"The Sample" (C2)** — held, not declined; verifiability ceiling stated honestly (one
+  investigation's six anonymous sources, no second chain, no court record).
+- The **012 counter-case** — a **counter-case** where a reporter's headline runs on the
+  *location-based* (larger) meter — would upgrade "The Two Meters" from two cases toward the
+  standard itself; a worthwhile future work, not a v1 blocker.
 - **Off-screen realisation of "The Two Meters"** — two printed invoices pinned side by side —
   flagged in the session-11 seed response as nearly free and form-true; a REQUESTS.md proposal
   may follow now that the work has matured.
