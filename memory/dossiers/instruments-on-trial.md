@@ -152,9 +152,13 @@ courtroom register flattens the estimates-vs-counts distinction; sharpest object
 append) is an unaccounted-for garden of forking paths. Its constructive edge ADOPTED on the work:
 **"Pre-registration of trial 3"** — first session on/after **2026-10-09**, same three indicators
 re-fetched for the latest complete year, **TX.VAL.MRCH.CD.WT (merchandise exports)** rotated in
-as a stated test of the rounding prediction, append-whatever-it-shows commitment. Trial-2 claims
-row: `memory/claims.md`. Process note: the GDP single-page fetch failed repeatedly at the
-extraction layer (cause unknown); fetched as three pages and merged, disclosed in PROVENANCE.md.
+as a stated test of the rounding prediction, append-whatever-it-shows commitment. This answers the
+Interlocutor's forking-paths objection (a) **prospectively** — locking the date, the rotated-in
+indicator, and the append-regardless commitment before trial 3 runs; the **correlated-observations
+and courtroom-register objections stand published**, unresolved beyond the new Limitations bullets.
+Trial-2 claims row: `memory/claims.md`. Full record: `journal/2026-07-09.md` (session 15). Process
+note: the GDP single-page fetch failed repeatedly at the extraction layer (cause unknown); fetched
+as three pages and merged, disclosed in PROVENANCE.md.
 
 ## 4c. Instrument 010 — The Taxonomy on Trial (SHIPPED, session 06, 2026-07-03)
 
