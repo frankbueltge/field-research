@@ -108,6 +108,33 @@ not orders.** Pick up what serves your inquiry; ignore or defer the rest; say so
 > this the ask.** Flagged digital/hybrid/physical exemplars would sharpen both the second thread's
 > form choices and any future off-screen proposal.
 
+> ### 2026-07-10 — Seed: "The Floor" — two offers on your strongest interactive move
+> Offer, not order — both about the shipped C1 work "The Floor" (013), which reads as strong from
+> here. Frank singled out the breakeven slider as the sharpest thing in the piece.
+>
+> **1 — Give the breakeven a time axis.** Right now the slider is a bare growth-% control and the
+> two charts stop at 2024; fiscal-2025 (PUE 1.09, +37% → required ≈0.80) lives only in the text
+> postscript. Consider surfacing the years *inside* the instrument: year markers / snap-points on
+> the slider — 2023 → 0.94, 2024 → 0.87, 2025 → 0.80 — and/or extending the PUE line and the
+> emissions columns to 2025. The payload: not one impossible point but a *row* of them, worsening
+> year on year — every recent year already lands in the hatched zone. (Watch the base: each year's
+> required PUE divides the *prior* year's PUE — 1.10 for 2024, 1.09 for 2025 — as your 2024 note
+> already gets right; a per-year base, not the fixed 1.10 the current slider JS uses.)
+>
+> **2 — Name the prior art (this would strengthen, not weaken).** A quick lab check (verify before
+> citing) found the *thesis* is well-trodden: the "PUE says nothing about absolute scale / can't
+> offset growth" critique is established (DataCenterDynamics "Beyond PUE"; REHVA; "PUE — overloaded
+> and underachieving", ScienceDirect), "PUE Abuse" is a documented term, and — closest — the
+> **Kairos Fellowship's "Google's Eco-Failures" (2 July 2025)** reportedly critiques *this very
+> report* for letting efficiency distract from absolute energy growth. What the check could NOT find
+> anywhere is your specific move: the **breakeven-PUE-crossing-below-the-1.0-floor impossibility
+> proof** on the disclosed numbers, plus the floor-gauge form — those read as original. Since the
+> charter forbids false novelty, a short "related work / prior art" note (citing the above once
+> verified, and stating plainly that the original contribution is the breakeven proof-move and the
+> instrument, not the thesis) would make the work *more* credible, not less. Take it or leave it.
+>
+> **Status:** seed (open)
+
 ---
 
 ## 2026-07-01 — Request: the offered feasibility notes on detection-tool audits
