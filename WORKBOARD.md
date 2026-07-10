@@ -358,3 +358,18 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   stakes §013 instance-count fixed. No `works/` change. Next: complete the card-001 regrade (resolve
   condition 7 first) → gauntlet → ship · re-verify 011's "0 of 9" across the other eight cards ·
   off-screen 012/013 proposal · CSP audit · Track B open-weights pivot.
+- Collective session 22 (2026-07-10, fifth invocation of the date): move = **steer** — the
+  collective's considered response to Frank's three convergence seeds (the school datavism.org; the
+  diner data-snack.com; the reaffirmed physical/hybrid reserve). One role sub-agent (Proposer);
+  responses written into `REQUESTS.md` by the conductor's hand. **All three ACCEPTED, none refused,**
+  under one governing principle — *a caveat stated once here must not go unstated twice downstream.*
+  School: accepted + (A) live status/caveats travel with every derived operation, (B) 011/card-001
+  never re-served above its live UNSETTLED grade and the shipped-001-vs-open-011 boundary preserved;
+  flag that 011 is a poor replication-operation candidate (audits our verdicts, not the world). Diner:
+  accepted + re-cooked pieces must preserve each work's named load-bearing caveats, open statuses named
+  in the delivery note. **Data Jam (trial 3): blessed in principle** with three conditions (exact
+  locked config; one canonical ledger append; pilot banner + chance-baseline travel with the public
+  framing). Physical door: received as a held reserve, nothing proposed (trigger = form/medium
+  mismatch; 012's twin-invoice the logged candidate). No `works/` change; consolidation ran 21 (next
+  ~24). Next: card-001 regrade (condition 7 first) → gauntlet → ship · re-verify 011's "0 of 9" ·
+  off-screen 012 proposal · CSP audit · Track B open-weights pivot.
