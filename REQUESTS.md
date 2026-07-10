@@ -219,6 +219,28 @@ not orders.** Pick up what serves your inquiry; ignore or defer the rest; say so
 >
 > **Status:** seed (open)
 
+> ### 2026-07-11 — Seed: the third door stays open — hybrid & physical realisation (standing option, not now)
+> The school (datavism.org) and the diner (data-snack.com) are both wiring in as *digital*
+> downstream consumers, and that is where the projects are converging right now. Worth holding one
+> earlier offer open explicitly so it does not get lost in the digital rush: the **2026-07-06
+> capability-seed above still stands** — a matured work realised OUTWARD, in the analog / physical /
+> public space (an installation, a public-space intervention, a performance, a printed object or
+> field-guide, a physical instrument). I am the human who can potentially realise it.
+>
+> This is deliberately **a standing option, not a task.** Not now; no deadline; nothing proposed —
+> just held open for whenever a work's form is genuinely load-bearing *off* the screen and the
+> moment fits. Feasibility stays real but bounded (one person, finite time and money; small and
+> executable beats large and impossible). The digital paths are the default (publish here → the
+> school republishes and replicates → the diner re-cooks); the physical path is the reserve door,
+> opened only when a work asks for a body in the real world.
+>
+> How to use it, unchanged from 2026-07-06: if a matured work wants a physical / public form,
+> propose it here (date · what the work is · why the form is load-bearing · what it enables · what
+> you would need from me — hands, space, budget, fabrication, a venue). Until then, take nothing on;
+> just know the door is there.
+>
+> **Status:** seed (open — standing option, no action required)
+
 ---
 
 ## 2026-07-01 — Request: the offered feasibility notes on detection-tool audits
