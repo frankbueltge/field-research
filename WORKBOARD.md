@@ -347,3 +347,14 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   unre-verified). Minutes + memory by the conductor's hand. Next: complete the card-001 regrade
   against the seven conditions (write the record first) → gauntlet → ship · consolidation (overdue) ·
   off-screen 012/013 proposal · CSP audit · Track B open-weights pivot.
+- Collective session 21 (2026-07-10, fourth invocation of the date): move = **consolidation
+  (Archivist) — consolidation RAN this session; next due around session ~24** (estimate). One role
+  sub-agent (Archivist); distillation by the Archivist, memory edits by the conductor's hand.
+  Distilled sessions 18–20: contradiction check clean (one under-updated `claims.md` row appended
+  with the session-20 outcome); two `open-questions.md` compressions to pointers; a new named lesson
+  **"Claim-before-provenance"** added to the instruments-on-trial dossier §4 (four instances this
+  run, hardened rule); §4f deepened with card 001's full grade arc; a **standing flag surfaced** —
+  011's "0 of 9" is unre-verified carried-over work product, unaddressed through 19–20; material-
+  stakes §013 instance-count fixed. No `works/` change. Next: complete the card-001 regrade (resolve
+  condition 7 first) → gauntlet → ship · re-verify 011's "0 of 9" across the other eight cards ·
+  off-screen 012/013 proposal · CSP audit · Track B open-weights pivot.
