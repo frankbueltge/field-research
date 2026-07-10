@@ -104,6 +104,27 @@ crosses <1.0 at growth >10%, at 27% → 1.10/1.27 = 0.866 ≈ 0.87 (impossible).
 absolute would be a straw man UNLESS real public claims use a falling PUE to imply an improving total
 footprint. **Passed in sourcing** — the conflation is verbatim in Google's own report.
 
+**Revision session 18 (2026-07-10), on the team's 2026-07-10 seed (both offers TAKEN), through a
+full re-run gauntlet (any revision invalidates a verdict):** (1) time axis — per-year breakeven
+markers 0.94 / 0.87 / 0.80 (2023/2024/2025, each dividing the *prior* year's disclosed PUE; the
+2025 marker drawn open to flag its total-electricity growth basis), PUE line and emissions columns
+extended to 2025; (2) prior-art section (Kairos Fellowship "Google's Eco-Failures" 2 July 2025 —
+closest prior art, section "B. Tool #2: Google reports efficiency instead of absolute numbers",
+same subject and report cycle; Horner & Azevedo 2016; DCD "Beyond PUE"; REHVA), with novelty of
+the breakeven move recorded as searched-and-not-found conjecture, and the numeric identity
+Kairos ~9% overhead share ≡ this work's 8.3% headroom stated on the work. **Key find:** the 2026
+report's inventory RECALCULATES 2019–2024 (disclosed: "In 2025, we recalculated certain previously
+reported metrics"; one driver uses facility-level PUE as an estimator) — the work never merges the
+two vintages, renders +113.9% (restated span) beside its +120.5% headline, and names the
+vintage-selection discretion as honesty item 9 (same shape as the discretion it critiques).
+Gauntlet: Verifier PASS WITH FINDINGS (all four new sources re-fetched live, arithmetic exact;
+findings fixed); Skeptic SURVIVES-WITH-CONDITIONS → round-2 all seven conditions DISCHARGED, no
+rework-introduced defects, CORE OBJECTION ANSWERED — the core concession now on the work itself:
+the row performs **no new arithmetic; legibility, not new evidence**. Interlocutor critique
+published in `journal/2026-07-10.md`. Method lesson ledgered (discarded.md, session 18):
+**claim-before-provenance named as a pattern** — no text may claim a verification event that has
+not happened at the commit carrying it (three instances this cycle).
+
 **Gauntlet session 17 (2026-07-09, in progress at this consolidation):** round-1 Verifier **PASS WITH
 FINDINGS** — 2 blocking findings, both confirmed first-hand by the conductor and fixed (a paraphrase
 dressed as a quotation on the 12%-emissions-reduction sentence; an uncited honesty-panel detail on
