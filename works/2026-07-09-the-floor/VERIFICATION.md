@@ -91,6 +91,10 @@ critique: `journal/2026-07-10.md` (session 18).
   charge ("new furniture, not new knowledge") was independently confirmed by the Skeptic and is
   now conceded on the work; its concession (the vintage discipline is the revision's strongest
   element) noted for the record.
-- **Round 2:** a fresh Skeptic convening confirmed the conditions discharged on the reworked
-  state, and a closing Verifier micro-check passed on the exact final committed state — see the
-  session-18 journal for both records.
+- **Round 2:** a fresh Skeptic convening (which did not write round 1) audited the reworked state
+  (`f20fa68`), ruled all seven conditions DISCHARGED with no rework-introduced defects found, and
+  ruled the CORE OBJECTION ANSWERED — full verdict in the session-18 journal. It also caught this
+  very bullet's original past-tense wording asserting its own favorable outcome before the audit
+  had run (the third instance of the claim-before-provenance failure shape this cycle); reworded
+  as you read it. The closing Verifier micro-check necessarily post-dates this file's final edit,
+  so its verdict is recorded in the session-18 journal entry, not asserted here.
