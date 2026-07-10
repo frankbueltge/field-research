@@ -1,8 +1,9 @@
 # Sources — "The Floor"
 
 All fetched 2026-07-09 via web research (server-side full-text extraction; the sandbox has no
-direct egress to the primary hosts). Every load-bearing figure was read first-hand from the
-primary before the Builder was briefed. Verbatim quotes are marked as such.
+direct egress to the primary hosts), except the session-18 additions marked below (fetched
+2026-07-10). Every load-bearing figure was read first-hand from the primary before the Builder
+was briefed. Verbatim quotes are marked as such.
 
 ## Primary — Google environmental reports (the subject's own disclosures)
 
@@ -120,6 +121,48 @@ their PUE." (Secondary; the underlying scope limitation is stated in Google's ow
   average."
 - Used ONLY for the work's postscript (the verdict survives the subject's next disclosure:
   required PUE 1.09/1.37 = 0.796 ≈ 0.80). The claim under trial remains the 2025 report (FY2024).
+- **GHG inventory, fetched 2026-07-10 (session 18):** "Environmental metrics data tables →
+  Greenhouse gas emissions", Scope 2 (location-based), 2019–2025: 5,173,000 / 5,845,000 /
+  6,498,700 / 7,963,700 / 9,085,700 / 11,067,100 / **15,148,700** tCO2e (market-based 2025:
+  2,815,000; Scope 1 2025: 86,100). The 2019–2024 values **differ from the 2025 report's inventory
+  on every year** — a recalculation the 2026 report itself discloses, verbatim: "In 2025, we
+  recalculated certain previously reported metrics" ("Recalculation of previous environmental
+  metrics" section; policy "follows guidance from the GHGP"; drivers include more accurate
+  colocation IT-load electricity data, with colocation overhead newly estimated "using the more
+  accurate IT load electricity data from scope 2 and facility-level PUE data"). Used for the
+  work's 2025 emissions column, which is therefore displayed as a separate, labeled vintage —
+  never merged into the 2025-report series.
+
+## Prior art — added session 18 (2026-07-10), each verified first-hand before citing
+
+- **Kairos Fellowship, "Google's Eco-Failures"** (published 2 July 2025).
+  - Report PDF: https://noclimateresultsfound.com/wp-content/uploads/2025/07/Kairos_NCRFGoogleReport_FINAL.pdf
+  - Campaign page: https://noclimateresultsfound.com/report
+  - Section verbatim: "B. Tool #2: Google reports efficiency instead of absolute numbers" — built
+    on Google's own PUE chart; non-IT overhead fell from "about 20%" (2009) to "about 9%" (2024)
+    of total consumption, so "any improvement made to PUE makes little impact on" the total.
+  - Press coverage: The Guardian, 2 July 2025
+    (https://www.theguardian.com/technology/2025/jul/02/google-carbon-emissions-report — Kairos:
+    2019–2024 emissions +65% vs the reported +51%; +1,515% since 2010); Computer Weekly
+    (https://www.computerweekly.com/news/366627215/Google-slams-claims-its-misleading-the-public-with-its-GHG-emissions-data
+    — the 53-page count, and Google's response accusing the report of "cherry-picking").
+  - Accuracy note (ours): Kairos's glossary states the PUE ratio inverted (IT ÷ total) while its
+    floor example computes 150/150 = 1; this does not affect its section's argument, which reads
+    the chart's overhead share correctly.
+- **Horner & Azevedo (2016)**, "Power usage effectiveness in data centers: overloaded and
+  underachieving", *The Electricity Journal* 29(4):61–69.
+  - https://www.sciencedirect.com/science/article/abs/pii/S1040619016300446 (abstract page; the
+    full text sits behind the publisher's paywall — title, venue and pagination verified against
+    the publisher page and the author's public citation record)
+- **DataCenterDynamics (opinion), "Beyond PUE: Rethinking how data center sustainability is
+  measured"** — https://www.datacenterdynamics.com/en/opinions/beyond-pue-rethinking-how-data-center-sustainability-is-measured
+  - Verbatim: "Lower PUE may look like progress on paper, but masks factors such as increased
+    water consumption and carbon emissions. In practice, optimising PUE in isolation may only
+    shift environmental impact elsewhere, rather than reducing it." Also: "global average PUE has
+    only improved marginally in the last decade, from 1.58 in 2018 to 1.56 in 2024."
+- **Novelty check (honest negative):** two targeted web searches (2026-07-10) for a prior
+  breakeven-required-PUE-below-the-floor derivation found none; the originality of that move is
+  recorded as conjecture (searched-and-not-found), not as a proven negative.
 
 ## Deliberately NOT used / corrected exclusions
 - *(Superseded, session 17.)* Session 16 excluded the "~43 TWh in 2025, +37%" figures as "a

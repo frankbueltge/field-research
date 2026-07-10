@@ -13,6 +13,16 @@ round-2 CORE OBJECTION ANSWERED, all conditions applied; the Interlocutor's host
 published verbatim in `journal/2026-07-09.md` (session 17) — read it with this work. Verification
 record: `VERIFICATION.md`.
 
+**Revised session 18 (2026-07-10)**, on the team's two seed offers: (1) the breakeven gained a
+**time axis** — per-year required-PUE markers (2023 → 0.94, 2024 → 0.87, 2025 → 0.80, each
+dividing the *prior* year's disclosed PUE) and the charts extended to 2025, with the 2026 report's
+inventory recalculation disclosed rather than silently merged; (2) a **prior-art note** naming
+what was already established (Kairos Fellowship's "Google's Eco-Failures"; Horner & Azevedo 2016;
+"Beyond PUE"; REHVA) and stating precisely what this work adds. Because any revision invalidates a
+gauntlet verdict, the full gauntlet re-ran on the revised state this session — the re-run record
+is in `VERIFICATION.md` and the session-18 entry of `journal/2026-07-10.md`, including the
+Interlocutor's critique of the revision.
+
 ## The failure mode
 
 PUE is a ratio: total facility energy ÷ IT-equipment energy. Because IT energy is a subset of
@@ -88,6 +98,21 @@ outright.
   disclosure (2026 report, fiscal 2025, fetched during the shipping gauntlet) shows the pattern
   continuing harder: PUE unchanged at **1.09**, total electricity growth **+37%**, required PUE =
   1.09/1.37 = **0.80** — deeper below the floor.
+- **The row of impossible points (added session 18):** computed per year, each against the *prior*
+  year's disclosed PUE — 2023: 1.10/1.17 = **0.94**; 2024: 1.10/1.27 = **0.87**; 2025: 1.09/1.37 =
+  **0.80**. Every disclosed year since 2023 lands in the impossible band, and the requirement sinks
+  year on year. (The 2025 growth figure is stated by the 2026 report for *total* electricity, not
+  data-center electricity — quoted exactly, not conflated; under base 1.09 any growth above 9%
+  already crosses the floor, so the conclusion survives a materially lower data-center-specific
+  rate.)
+- **Vintage discipline (added session 18):** the 2026 report's GHG inventory *recalculates*
+  2019–2024 (disclosed verbatim: "In 2025, we recalculated certain previously reported metrics";
+  the recalculation policy "follows guidance from the GHGP"; one disclosed driver estimates
+  colocation overhead "using … facility-level PUE data" — the metric on trial is itself an
+  estimator inside the recalculated inventory). The work therefore never merges the two vintages:
+  the main columns remain the 2025-report series (the claim under trial), and the 2025 column
+  (15,148,700 tCO₂e location-based, **+36.9%** over that report's own restated 2024) is drawn as a
+  separate, labeled vintage.
 
 ## Why this is not a rerun of 012
 
@@ -118,15 +143,44 @@ figures), different form (a floor-gauge with an impossible zone, not a twin-invo
 8. PUE improvements are real efficiency gains. The critique is not that the number is fake — it is
    that a near-floor ratio is being asked to carry an argument about an absolute it cannot bound.
 
+## Prior art — what was already established (added session 18)
+
+The *thesis* — PUE says nothing about absolute scale, and efficiency is foregrounded over
+absolutes — is established, and in one case was aimed at this work's own subject and report cycle:
+
+- **Kairos Fellowship, "Google's Eco-Failures"** (2 July 2025): a section titled verbatim
+  "Tool #2: Google reports efficiency instead of absolute numbers", built on Google's own PUE
+  chart — non-IT overhead is only ~9% of total consumption (from ~20% in 2009), so "any
+  improvement made to PUE makes little impact on" the total. Its sharpest edge (market-based-only
+  reporting obscures real emissions) is prior art for instrument 012's territory as much as this
+  work's.
+- **Horner & Azevedo (2016)**, "Power usage effectiveness in data centers: overloaded and
+  underachieving", *The Electricity Journal* 29(4):61–69 — the peer-reviewed critique; the title
+  says it.
+- **DataCenterDynamics, "Beyond PUE"** (opinion): "Lower PUE may look like progress on paper, but
+  masks factors such as increased water consumption and carbon emissions."
+- **REHVA, The Green Grid's WP#49, "PUE Abuse"** — already cited in `SOURCES.md` since the work
+  shipped.
+
+**What this work adds** is not the thesis but the proof-move and the instrument: the per-year
+breakeven derivation showing the required PUE crossing *below the physical floor* on the subject's
+own disclosed numbers (0.94 / 0.87 / 0.80), and the floor-gauge form that makes the impossibility
+legible as a hatched zone the marker physically enters. Whether that move exists elsewhere: two
+targeted searches (2026-07-10) found none — recorded as conjecture (searched-and-not-found), not
+as a proven negative. All prior-art sources verified first-hand; URLs in `SOURCES.md`.
+
 ## The form
 
 An interactive floor-gauge (see `work.astro`). A vertical PUE scale with the physical floor (1.00) as
-a hard line and a hatched impossible band beneath it; Google's fleet PUE plotted hugging the floor;
-the disclosed absolute (location-based emissions) rising beside it across the same years; and a
-**breakeven slider** — set a year's growth, read the PUE that would be required to hold energy flat,
-and watch it cross below the floor into the impossible band once growth exceeds 10%. Google's actual
-27% lands at ≈0.87. The core exhibit (PUE flat vs absolute rising; 8.3% vs 27%) is legible without
-JavaScript; the slider is the only scripted addition.
+a hard line and a hatched impossible band beneath it; Google's fleet PUE plotted hugging the floor
+(extended to 2025 by the 2026 report's disclosure); the disclosed absolute (location-based emissions)
+rising beside it, the 2025 column drawn as a separate, labeled vintage; and a **breakeven instrument
+with a time axis** — three fixed year markers (2023 → 0.94, 2024 → 0.87, 2025 → 0.80, each against
+the prior year's PUE) standing in the hatched zone as a static row, plus year presets and a free
+growth slider (per-year base, not a fixed one) to set any growth and read the required PUE. Google's
+actual 27% lands at ≈0.87. The core exhibit — PUE flat vs absolute rising; 8.3% vs 27%; the row of
+impossible points — is legible without JavaScript; the slider and presets are the only scripted
+addition.
 
 Sources: `SOURCES.md`. Data: `data.json`. Seed: 0 (no randomness — all figures disclosed or
 deterministically derived).
