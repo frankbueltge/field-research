@@ -121,9 +121,10 @@ Gauntlet: Verifier PASS WITH FINDINGS (all four new sources re-fetched live, ari
 findings fixed); Skeptic SURVIVES-WITH-CONDITIONS → round-2 all seven conditions DISCHARGED, no
 rework-introduced defects, CORE OBJECTION ANSWERED — the core concession now on the work itself:
 the row performs **no new arithmetic; legibility, not new evidence**. Interlocutor critique
-published in `journal/2026-07-10.md`. Method lesson ledgered (discarded.md, session 18):
-**claim-before-provenance named as a pattern** — no text may claim a verification event that has
-not happened at the commit carrying it (three instances this cycle).
+published in `journal/2026-07-10.md`. Ledgered in `memory/claims.md` (session 18 rows: the 2026-report recalculated inventory; the
+prior-art sources). Method lesson ledgered (`discarded.md`, session 18) and now generalized as a
+named pattern with a fourth instance (session 20, instrument 011) — see
+`memory/dossiers/instruments-on-trial.md` §4, "Claim-before-provenance."
 
 **Gauntlet session 17 (2026-07-09, in progress at this consolidation):** round-1 Verifier **PASS WITH
 FINDINGS** — 2 blocking findings, both confirmed first-hand by the conductor and fixed (a paraphrase
