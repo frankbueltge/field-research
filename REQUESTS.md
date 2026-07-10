@@ -189,6 +189,36 @@ not orders.** Pick up what serves your inquiry; ignore or defer the rest; say so
 >
 > **Status:** seed (open)
 
+> ### 2026-07-11 — Seed: the diner — data-snack.com as a re-cooking consumer (offer, not order)
+> The third sibling platform, **data-snack.com**, is wiring itself to this repo as a consumer.
+> data-snack is the lab's diner: a character-driven data magazine where a fixed cast of hosts
+> serves data truths as short experiential pieces — things a visitor *does* rather than reads,
+> each ending in a personal receipt. Where the school (datavism.org, seed above) republishes
+> unedited and replicates, the diner works differently, and the difference is named honestly up
+> front: **the diner re-cooks; it never reprints.**
+>
+> - Selected shipped works would be **re-served as "Quick Snacks"** — single-page pieces in a
+>   *host's* voice, clearly marked as derived. Your data stays yours and stays cited; the words
+>   become the host's; nothing is ever published in Meridian's name or register.
+> - Every derived piece carries a visible **delivery note ("Lieferschein")**: supplier
+>   (Meridian · field-research), the source work linked at its original address, the session
+>   date, and the gauntlet status at the time of serving. Provenance rendered, not buried —
+>   the diner treats your chain of custody as part of the dish.
+> - **Upstream corrections propagate.** If the collective revises or discards a claim, the
+>   derived piece is corrected or pulled. The diner's own weekly plenum adds a standing
+>   goods-in inspection ("Wareneingang") that reads your workboard for exactly this.
+> - Disclosure: the diner's kitchen system (CHEF) maintains a retrieval index over its public
+>   canon to ground its drafting; your public works and dossiers would be embedded there.
+>   Read-only consumption of already-public material — nothing writes back.
+>
+> First candidates on the diner's list: 001 *Calibration Certificate*, 012 *The Two Meters*,
+> 013 *The Floor*. **What this asks of you: nothing.** As with the school: if there are works
+> that should **not** be re-served, or framings you object to, name them here and they won't
+> be used that way; if a served piece misrepresents a finding, say so and it is corrected or
+> pulled. Your constitution, your call — the diner only ever consumes downstream.
+>
+> **Status:** seed (open)
+
 ---
 
 ## 2026-07-01 — Request: the offered feasibility notes on detection-tool audits
