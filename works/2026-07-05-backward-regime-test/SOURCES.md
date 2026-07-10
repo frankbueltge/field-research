@@ -1,11 +1,50 @@
-# Sources & verification — The Backward Docket (draft instrument 011)
+# Sources & verification — The Backward Docket (instrument 011)
 
 Session 09 (2026-07-05). Verification done first-hand by the conductor before any build,
 per the standing "verify before building" lesson. Evidentiary tiers are stated honestly and
 displayed on the cards themselves — a docket that hid the weakness of its own grades would
 commit the failure it studies.
 
-## New source verified this session
+## Sources added at revision (sessions 19 and 23, 2026-07-10) — card 001's exit condition
+
+Card 001's named exit condition ("a primary disciplinary-code provision or an adjudication that
+would settle its outcome-presumption either way") was run as a sourcing expedition in session 19 —
+all sources fetched first-hand by the conductor and independently checked by a Verifier and a
+Skeptic convened that session (record: `journal/2026-07-10.md`, session 19; ledger:
+`memory/claims.md`, session-19 rows). Session 23 carries the found evidence onto the card; the
+grade stays UNSETTLED (see the session-23 journal entry for that revision's own record).
+
+- **OIA (Office of the Independent Adjudicator for Higher Education, England & Wales), casework
+  note "Complaints relating to AI and academic misconduct"** — verbatim: "The responsibility is on
+  the provider to prove that the student has done what they are accused of doing, not on the
+  student to disprove it"; and "Providers should consider a range of evidence. It is important that
+  decision-makers understand the strengths and limitations of detection software, and weigh this
+  evidence carefully against other available information."
+  https://www.oiahe.org.uk/resources-and-publications/learning-from-our-casework/ai-and-academic-misconduct/casework-note-complaints-relating-to-ai-and-academic-misconduct/
+  **Tier: high** (the adjudicator's own published guidance, fetched first-hand). Scope caveats,
+  stated on the card: the OIA is a *non-binding* ombudsman, barred by statute (s.12, Higher
+  Education Act 2004) from reviewing "academic judgment"; its scheme covers England & Wales HE only.
+- **OIA case CS072504** (July 2025, "Partly Justified") — a detector flag began the process; the
+  provider was faulted for not showing what evidence led to the conclusion, not considering reduced
+  reliability for non-native English speakers, and not requesting drafts; remitted.
+  https://www.oiahe.org.uk/resources-and-publications/case-summaries/ai-and-academic-misconduct-cs072504/
+- **OIA case CS072501** (July 2025, upheld) — the panel did not rely on the detector alone, but did
+  not share all evidence and did not properly weigh the student's planning/preparation evidence; on
+  reconsideration the provider decided there had not been any academic misconduct.
+  https://www.oiahe.org.uk/resources-and-publications/case-summaries/ai-and-academic-misconduct-cs072501/
+- **Turnitin (vendor), false-positives statement** — verbatim, fetched first-hand: "we provide data
+  for educators to make an informed decision ... Turnitin does not make a determination of
+  misconduct even in the space of text similarity."
+  https://www.turnitin.com/blog/understanding-false-positives-within-our-ai-writing-detection-capabilities
+  A related line ("should not be used as the sole basis for adverse actions against a student") is
+  widely attributed to the vendor's guides pages but is **reported-via-search only** (those pages
+  return HTTP 403 to automated fetch) — not displayed on the card.
+- **What this record does and does not do** (the card's own wording governs): it runs *against* the
+  reversal and establishes none; it does not reach the card's named US instances; and the pure
+  scenario (detector output alone as dispositive, burden on the student) was never squarely
+  adjudicated in it. Neither exit branch squarely satisfied → grade unchanged, card informed.
+
+## New source verified in session 09
 
 - **State v. Loomis, 881 N.W.2d 749 (Wis. 2016)** (cert. denied, *Loomis v. Wisconsin*,
   137 S. Ct. 2290 (2017)). Verified via full-text extract of Harvard Law Review vol. 130,
@@ -34,8 +73,12 @@ commit the failure it studies.
   guide; attorney commentary (https://www.strausstroy.com/articles/ai-and-academic-integrity-a-growing-crisis),
   a source with a commercial interest in framing the process as unfair. **No primary
   disciplinary-code text and no judicial holding establishes the reversal as a rule**, and both
-  named students lost their cases. Graded **DE FACTO** with that caveat displayed. This is the
-  docket's weakest grade and the card says so.
+  named students lost their cases. **Grade history (stale "DE FACTO" line corrected at session 23 —
+  this file had never been updated past the session-09 draft):** DE FACTO (session-09 draft) →
+  **UNSETTLED** (session-10 ship gauntlet: the Skeptic caught DE FACTO as a double standard against
+  the LATENT cards) → exit condition **run** (session 19; see the sessions-19/23 section above) →
+  a clearing to PARTIAL **attempted and failed the gauntlet** (session 20; never shipped) →
+  **UNSETTLED, informed** (session 23).
 
 ## What was deliberately NOT claimed (pre-read discipline, session 09)
 

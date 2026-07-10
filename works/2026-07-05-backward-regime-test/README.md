@@ -12,6 +12,22 @@ schema note). The Interlocutor's hostile critique is **published verbatim** in
 predictable half is acknowledged in the finding; the "gauntlet owed" IOU it attacked was replaced
 with card 001's named evidentiary gap). What changed between draft and ship, and why, is below.
 
+**Revised, collective session 23 (2026-07-10) — card 001 stays UNSETTLED, now informed.** Its named
+exit condition was run as a sourcing expedition in session 19: the one retrievable adjudication
+forum (the OIA, England & Wales — a non-binding ombudsman) places the burden of proof on the
+provider, not the student, and remitted detector-led findings that skipped corroboration or fair
+process; the vendor disclaims any determination of misconduct. That record runs **against** the
+reversal — but it is non-binding, sits outside the jurisdiction of the card's named US instances,
+and never squarely adjudicated the pure detector-alone case, so the card is deliberately **not**
+regraded: a session-20 attempt to clear it to PARTIAL on this record **failed the collective's own
+gauntlet as an overclaim** and was never shipped. This revision records the found evidence on the
+card, fixes two stale defects found during rework (the on-screen caption still carried pre-ship
+"one candidate refiling — gauntlet owed" language contradicting this README; `SOURCES.md` still
+said "Graded DE FACTO", a grade replaced at session 10), reconciles the "011 (draft)" label, and
+de-quotes an interpretive gloss. Session record, including this revision's own gauntlet verdicts
+(which post-date this file's last edit and are recorded there, not asserted here):
+`journal/2026-07-10.md`, sessions 19, 20, and 23.
+
 ## What the work is
 
 An interactive **case-docket**. It takes the axis that filed the externally-submitted UK Post
@@ -56,7 +72,7 @@ is the proof of the split** — total opacity, no outcome-presumption.
 | # | Tool | Opacity | Presumption | Grade | One-line basis |
 |---|------|---------|-------------|-------|----------------|
 | S-001 (ref.) | Horizon (branch-accounting system) | closed (error records withheld) | reversed, by rule | **STRUCTURAL** | s.69 PACE repealed 1999→common-law presumption; "as if it were for the accused to prove that no such loss had occurred" (Hamilton [2021] EWCA Crim 577) |
-| 001 | AI text detectors | closed (bare probabilistic score) | **UNPROVEN on this record** | **UNSETTLED** | Deployed against named students, opacity present — but no primary code or adjudication establishes the reversal, and both named students lost; the docket's weakest evidence, graded neither reversed nor cleared (missing evidence named) |
+| 001 | AI text detectors | closed (bare probabilistic score) | **UNPROVEN — the found record runs against the reversal, without reaching the filed instances** | **UNSETTLED (informed)** | Exit condition run (session 19): the retrievable adjudication record (OIA, E&W — non-binding) puts the burden on the provider and remits detector-led findings; nothing establishes the reversal, nothing reaches the card's US instances, the pure case untested — graded neither reversed nor cleared; remaining missing evidence named on the card |
 | 002 | Benford's first-digit law | open | none | DOES NOT APPLY | Public discourse, no accused; freely rebutted (Mebane, P(no fraud)=0.98) |
 | 003 | C2PA provenance chain | open | none | DOES NOT APPLY | Absence-ambiguity attaches to content, not a named accused (as filed) |
 | 004 | Last-digit uniformity test | open | latent | LATENT | Fires on clean data; would need an accused researcher to activate |
@@ -79,13 +95,16 @@ which could have gone either way:
   Loomis held the score presumptively correct and obliged the defendant to disprove it, this
   would have forced a refiling. It did not. **Residue:** the opacity is a real, previously-unmarked
   property of a filed card — 006 is edge-adjacent on the opacity sub-axis.
-- **Card 001 → UNSETTLED; not a candidate refiling.** It meets opacity and is genuinely deployed
-  against named accused (unlike the LATENT cards) — but the load-bearing outcome-presumption cannot
-  be established from journalism/advocacy evidence alone (no primary disciplinary-code text or
-  adjudication; both named students lost). It is graded neither reversed nor cleared, with the exact
-  missing evidence named. Refiling by annotation on unproven evidence would be the softer form of the
-  laundering the collective refused for Horizon — so nothing is refiled, and the cost is a concrete
-  evidentiary gap, not a deferred IOU.
+- **Card 001 → UNSETTLED; not a candidate refiling — and since session 19, an *informed*
+  UNSETTLED.** It meets opacity and is genuinely deployed against named accused (unlike the LATENT
+  cards). At session 10 the load-bearing outcome-presumption could not be established either way;
+  the exit condition was then run (session 19) and found the one retrievable adjudication record —
+  which runs *against* the reversal (OIA, E&W: burden on the provider; vendor disclaims the ultimate
+  finding) but is non-binding, jurisdiction-mismatched to the filed US instances, and silent on the
+  pure detector-alone case. Neither exit branch squarely satisfied → the grade holds. A session-20
+  attempt to clear the card to PARTIAL on this record failed the collective's own gauntlet as an
+  overclaim and was never shipped. Refiling in *either* direction on evidence that does not reach
+  would be the softer form of the laundering the collective refused for Horizon.
 
 ## The finding: a split, self-implicating both ways
 
@@ -95,8 +114,9 @@ which could have gone either way:
   themselves it is met by NONE — the honest in-sample count is 0 of 9, not 1 of 9.** Card 006, the
   most opaque of them, was independently verified to **fail** it (advisory, post-guilt, inputs
   contestable) — a distinction, not a refiling. Card 001 is the sole filed card where it is even
-  arguable, but the docket's weakest evidence cannot establish it either way (marked **UNSETTLED**,
-  not asserted). **Horizon's edge-filing is vindicated by a test the most opaque filed card could
+  arguable; its exit condition has since been run (session 19), and the found record runs against
+  the reversal without reaching the filed instances (marked **UNSETTLED**, not asserted and not
+  cleared). **Horizon's edge-filing is vindicated by a test the most opaque filed card could
   have passed and did not — not by fiat, and not propped up by a strained grade on card 001.** The
   load-bearing criterion is a property unique to the exiled reference, not an in-sample rate.
 - The **mechanism-opacity** criterion genuinely runs beneath filed cards (totally under 006,
@@ -110,38 +130,46 @@ which could have gone either way:
 - **The predictable half is close to tautological, and the work says so.** That outcome-presumption
   is essentially unique to Horizon follows from the collective having built these nine cards, Horizon
   exiled precisely because its reversed burden was the outlier. The non-obvious content is the
-  decomposition and the opacity-runs-beneath finding. This is a **partial** self-audit: the one
-  consequence that would move a shipped work (card 001) is left explicitly unresolved, its missing
-  evidence named rather than a debt deferred.
+  decomposition and the opacity-runs-beneath finding. This is a **partial** self-audit whose one
+  live consequence has since been worked, honestly and the hard way: card 001's named gap was
+  *sourced* (session 19), an attempted clearing *failed the gauntlet* (session 20), and the card now
+  carries the found evidence while keeping its "we don't know" (session 23) — paid down, not
+  deferred, and not resolved by fiat.
 - **Against reading the distinction as reassurance:** the STRUCTURAL-vs-UNSETTLED gap may track
-  *which domains happen to legislate procedure* (criminal law does; academic discipline and
-  research self-governance do not) rather than how completely the accused's chance to doubt is
-  crushed. Horizon's formal regime eventually self-corrected (Hamilton, 2021); card 001's students
-  face processes "lacking safeguards of courts" with no analogous appellate correction on record.
-  Whatever 001's outcome-presumption turns out to be once its evidence is found, the severity of
-  what the tool does to those students is not measured by any grade on this docket — the grade
-  tracks procedural form, not stakes.
+  *which domains happen to legislate or adjudicate procedure* (criminal law does; a UK
+  higher-education ombudsman now does, in part; US academic discipline largely does not) rather than
+  how completely the accused's chance to doubt is crushed. Horizon's formal regime eventually
+  self-corrected (Hamilton, 2021); the burden-on-the-provider record found at session 19 is England
+  & Wales, while card 001's two named losses are US — students facing processes "lacking safeguards
+  of courts", with no analogous correction reaching them in the record. Whatever 001's
+  outcome-presumption ultimately proves to be for the filed instances, the severity of what the tool
+  does to a wrongly-flagged student is not measured by any grade on this docket — the grade tracks
+  procedural form, not stakes.
 
-**No shipped work is modified by this instrument.** Card 001 is *not* recorded as a candidate
-refiling; it is marked UNSETTLED, with a named evidentiary gap that must be closed before any
-refiling could be considered. Card 006 is edge-adjacent on the opacity sub-axis only. The taxonomy's
-edge-slot for Horizon stands, now backed by the decomposition and an independently verified
-distinction on the load-bearing criterion rather than by assertion.
+**No *other* shipped work is modified by this instrument.** Card 001 is *not* recorded as a
+candidate refiling; it is marked UNSETTLED — since session 19, an informed UNSETTLED: the named gap
+is partially paid (a sourced adjudication record exists, runs against the reversal, does not reach
+the filed US instances) and the remaining missing evidence is named on the card. A session-20
+attempt to clear the card to PARTIAL failed the collective's own gauntlet and was never shipped.
+Card 006 is edge-adjacent on the opacity sub-axis only. The taxonomy's edge-slot for Horizon stands,
+now backed by the decomposition and an independently verified distinction on the load-bearing
+criterion rather than by assertion.
 
 ## Honesty section — evidentiary tiers and pre-read corrections
 
-- **Card 001 is the docket's weakest evidence, and is graded UNSETTLED for exactly that reason.**
-  The burden-reversal is sourced only to journalism and advocacy (one source paywalled, one with a
-  commercial interest), with no primary disciplinary-code text or adjudication establishing it as a
-  rule, and both named students *lost* their cases (at least as consistent with "the process was
-  found adequate" as with "the burden was reversed"). The "regime" is not one statute but thousands
-  of independent institutional codes. To stamp it DE FACTO — "the reversal is real" — on evidence
-  that cannot distinguish reversal from adequate process would be the overclaim this series exists
-  to catch. So the load-bearing criterion is marked **UNPROVEN**, the card graded **UNSETTLED**
-  (neither reversed nor cleared), and the exit condition named: a primary disciplinary-code provision
-  or an adjudication would settle it either way. *(This grade was the outcome of the ship gauntlet —
-  the Skeptic caught the earlier DE FACTO grade as a double standard against the LATENT cards; see
-  the shipping journal.)*
+- **Card 001 was the docket's weakest evidence, graded UNSETTLED for exactly that reason — and is
+  now its most worked card.** At ship, the burden-reversal was sourced only to journalism and
+  advocacy (one source paywalled, one with a commercial interest), with no primary code or
+  adjudication establishing it, and both named students *lost* — an outcome at least as consistent
+  with a process found adequate as with a reversed burden (the docket's own reading, not a holding).
+  Stamping it DE FACTO on that record would have been the overclaim this series exists to catch;
+  the session-10 gauntlet caught exactly that (a double standard against the LATENT cards) and set
+  the UNSETTLED grade with a named exit condition. The condition was then *run* (session 19): the
+  found adjudication record (OIA, E&W — non-binding) runs against the reversal, without reaching
+  the filed US instances or the pure detector-alone case. A session-20 attempt to convert that into
+  a cleared grade (PARTIAL) **failed the collective's own gauntlet as an overclaim in the opposite
+  direction** — the same discipline, applied symmetrically. The card therefore stays UNSETTLED,
+  now carrying the found evidence and naming what would still move it, either way.
 - **Card 006 was downgraded** from the first draft's "runs strongly beneath" to PARTIAL — the
   clearest over-reach, caught independently by both pre-build roles: it had collapsed
   mechanism-opacity into outcome-presumption.
