@@ -71,6 +71,9 @@ const breakevenMarkers = perYearBreakeven.rows.map((r) => {
     x,
     y: yFor(r.required_pue),
     required_pue: r.required_pue,
+    // the open marker flags a different growth-scope basis (total vs data-center
+    // electricity) — same discipline as the emissions panel's vintage flag
+    scopeDistinct: Boolean(r.scope_distinct),
     label: `'${String(r.year).slice(-2)} → ${r.required_pue.toFixed(2)}`,
   }
 })
@@ -102,9 +105,9 @@ const bars = years7.map((yr, i) => {
 // one decimal so the rendered figure (120.5%) agrees with the prose everywhere
 // (computed on the original 2019–2024, 2025-report-vintage series only)
 const emissionGrowthDisplay = (((emissions[emissions.length - 1] - emissions[0]) / emissions[0]) * 100).toFixed(1)
-// 2024→2025 growth on the 2026-report vintage, pulled out of the disclosed derivation text
-const vintage2425Match = vintage2026.derived.match(/\+([\d.]+)%/)
-const vintage2425Pct = vintage2425Match ? vintage2425Match[1] : vintage2026.derived
+// growth figures on the 2026-report vintage — explicit data fields, verified in claims ledger
+const vintage2425Pct = vintage2026.growth_2024_2025_this_vintage_pct
+const vintage1924Pct = vintage2026.growth_2019_2024_this_vintage_pct
 
 // ---- breakeven slider defaults (server-rendered; correct with JS off) --
 // default = the 2024 row: matches the pre-session-18 server default exactly
@@ -192,8 +195,8 @@ const concession = claim.concession
         <!-- the row of impossible points: one required-PUE marker per disclosed year -->
         {breakevenMarkers.map((m) => (
           <g>
-            <polygon points={`${m.x},${m.y - 4} ${m.x + 4},${m.y} ${m.x},${m.y + 4} ${m.x - 4},${m.y}`} class="breakeven-dot" />
-            <text x={m.x} y={m.y - 8} class="breakeven-label" text-anchor="middle">{m.label}</text>
+            <polygon points={`${m.x},${m.y - 4} ${m.x + 4},${m.y} ${m.x},${m.y + 4} ${m.x - 4},${m.y}`} class:list={["breakeven-dot", { "breakeven-dot--scope": m.scopeDistinct }]} />
+            <text x={m.x} y={m.y - 8} class="breakeven-label" text-anchor="middle">{m.scopeDistinct ? `${m.label}*` : m.label}</text>
           </g>
         ))}
 
@@ -224,7 +227,7 @@ const concession = claim.concession
       </svg>
       <p class="panel-note">2019 → 2024: {(emissions[0]).toLocaleString('en-US')} → {(emissions[emissions.length - 1]).toLocaleString('en-US')} tCO₂e — up {emissionGrowthDisplay}%. Location-based — the meter of physical grid draw, per instrument 012, "The Two Meters".</p>
       <p class="panel-note panel-note--caveat">Scope caveat: this series covers Google's purchased electricity broadly (the report attributes ~95% of Scope 2 to "data centers and offices") — a wider set of buildings than the PUE line's owned-and-operated fleet. For the footprint outside the fleet, no PUE-like ratio is disclosed at all.</p>
-      <p class="panel-note panel-note--caveat">Vintage note: the 2025 column (marked *) is from the 2026 report's inventory, which also recalculates 2019–2024 — verbatim, "In 2025, we recalculated certain previously reported metrics" — so the two vintages are never merged into one series. On the 2026-report vintage, 2025 is +{vintage2425Pct}% over that report's own restated 2024.</p>
+      <p class="panel-note panel-note--caveat">Vintage note: the 2025 column (marked *) is from the 2026 report's inventory, which also recalculates 2019–2024 — verbatim, "In 2025, we recalculated certain previously reported metrics" — so the two vintages are never merged into one series. On the 2026-report vintage, 2025 is +{vintage2425Pct}% over that report's own restated 2024 (numerically near the separately disclosed 37% electricity growth — distinct quantities; the proximity is not a claimed relationship), and the 2019→2024 span restates to +{vintage1924Pct}% — smaller than the +{emissionGrowthDisplay}% shown, which is the report-under-trial's own vintage. See honesty item 9.</p>
     </figure>
   </div>
 
@@ -521,6 +524,7 @@ const concession = claim.concession
   .pue-path-label--vintage2026 { fill: var(--ink); font-weight: 700; }
 
   .breakeven-dot { fill: var(--danger); }
+  .breakeven-dot--scope { fill: var(--paper); stroke: var(--danger); stroke-width: 1.4; }
   .breakeven-label { font-size: 6.5px; fill: var(--danger); font-weight: 700; }
 
   .live-marker { fill: none; stroke: var(--steel); stroke-width: 2; }

@@ -134,13 +134,13 @@
       "conclusion": "A PUE below 1.0 is thermodynamically impossible (you cannot deliver more energy to the servers than enters the building). The efficiency lever could not have offset the growth even in principle."
     },
     "per_year_breakeven": {
-      "note": "Added session 18 (2026-07-10), on the team's seed: not one impossible point but a row of them. Each year's required PUE divides the PRIOR year's disclosed fleet PUE — the ratio that would have had to hold to keep that year's energy flat against that year's disclosed growth. A per-year base, not a fixed one.",
+      "note": "Added session 18 (2026-07-10), on the team's seed. Stated plainly: all three figures below were already computed and published in prose in this work's session-17 robustness notes — the revision performs NO new arithmetic; it renders existing numbers as a row. The contribution is legibility, not new evidence: three re-derivations from one subject's successive reports are redundant checks on the same underlying fact (a near-floor ratio against double-digit growth), not independent confirmations. Each year's required PUE divides the PRIOR year's disclosed fleet PUE — a per-year base, not a fixed one.",
       "rows": [
         { "year": 2023, "growth_pct": 17, "base_pue": 1.10, "base_meaning": "2022 fleet PUE (2024 report data table)", "required_pue": 0.94, "computation": "1.10 / 1.17 = 0.940", "impossible": true, "growth_source": "google_2025_env_report — '…compared to 17% growth in the prior year' (total data center electricity)" },
         { "year": 2024, "growth_pct": 27, "base_pue": 1.10, "base_meaning": "2023 fleet PUE", "required_pue": 0.87, "computation": "1.10 / 1.27 = 0.866", "impossible": true, "growth_source": "google_2025_env_report — 'our total data center electricity consumption grew by 27% in 2024' (verbatim, mid-sentence excerpt)" },
-        { "year": 2025, "growth_pct": 37, "base_pue": 1.09, "base_meaning": "2024 fleet PUE", "required_pue": 0.80, "computation": "1.09 / 1.37 = 0.796", "impossible": true, "growth_source": "google_2026_env_report — 'our total electricity consumption grew by 37% in 2025' (stated for TOTAL electricity, not data-center electricity — see subsequent_disclosure.growth_wording_caveat; under base 1.09 any growth above 9% already crosses the floor, so the conclusion is robust to a materially lower data-center-specific rate)" }
+        { "year": 2025, "growth_pct": 37, "base_pue": 1.09, "base_meaning": "2024 fleet PUE", "required_pue": 0.80, "computation": "1.09 / 1.37 = 0.796", "impossible": true, "scope_distinct": true, "growth_source": "google_2026_env_report — 'our total electricity consumption grew by 37% in 2025' (stated for TOTAL electricity, not data-center electricity — see subsequent_disclosure.growth_wording_caveat; under base 1.09 any growth above 9% already crosses the floor, so the conclusion is robust to a materially lower data-center-specific rate)" }
       ],
-      "reading": "Every disclosed year since 2023 lands in the impossible band: the PUE that would have held that year's energy flat sits below the physical floor three years running, and sinking — 0.94, 0.87, 0.80."
+      "reading": "Every disclosed year since 2023 lands in the impossible band — 0.94, 0.87, 0.80: re-derivations from one subject's successive reports, not independent observations. 2020–2022 carry no markers because the cited reports disclose no year-over-year growth rates for those years — no marker means not computable, not cleared. The 2025 marker (◇, open) rests on a total-electricity growth figure, unlike 2023/2024's data-center-specific rates."
     }
   },
   "prior_art": {
@@ -148,7 +148,7 @@
     "entries": [
       {
         "who": "Kairos Fellowship, 'Google's Eco-Failures' (published 2 July 2025)",
-        "what": "The closest prior art — aimed at the same subject and the same report cycle as this work's exhibit: a section titled verbatim 'Tool #2: Google reports efficiency instead of absolute numbers', built on Google's own PUE chart, arguing that non-IT overhead is only a small share of total consumption (about 9% in 2024, from about 20% in 2009), so 'any improvement made to PUE makes little impact on' the total. Its sharpest edge — that market-based-only reporting obscures real emissions — is prior art for instrument 012's territory as much as this work's.",
+        "what": "The closest prior art — aimed at the same subject and the same report cycle as this work's exhibit: a section titled verbatim 'B. Tool #2: Google reports efficiency instead of absolute numbers', built on Google's own PUE chart, arguing that non-IT overhead is only a small share of total consumption (about 9% in 2024, from about 20% in 2009), so 'any improvement made to PUE makes little impact on' the total. Stated so the reader need not derive it: Kairos's 'about 9%' overhead share and this work's own 8.3% remaining-headroom statistic are the same quantity computed two ways ((PUE − 1)/PUE at a near-floor PUE) — the headroom argument is Kairos's ground as much as this work's; only the breakeven proof-move and the instrument form are claimed as additions. Its sharpest edge — that market-based-only reporting obscures real emissions — is prior art for instrument 012's territory as much as this work's.",
         "url": "https://noclimateresultsfound.com/wp-content/uploads/2025/07/Kairos_NCRFGoogleReport_FINAL.pdf"
       },
       {
@@ -178,7 +178,8 @@
     "The two charted series do not describe the same set of buildings: fleet PUE covers the owned-and-operated campuses, while location-based Scope 2 covers Google's purchased electricity broadly — the report itself attributes about 95% of Scope 2 to 'our data centers and offices'. If anything this understates the problem: for the footprint outside the fleet, no PUE-like ratio is disclosed at all.",
     "The headline breakeven (required PUE ~0.87 at 27% growth) uses only the disclosed total-electricity growth and the disclosed base PUE of 1.10. A refinement that infers IT-load growth (~28%) from the same disclosure lands even lower (~0.86); that inference is stated as such, not as a Google-disclosed figure. The headroom argument (8.3% vs 27%) is the primary claim — it needs no inference beyond the disclosed PUE, the disclosed growth, and the definitional floor.",
     "The quantitative verdict (8.3% headroom vs 27% growth) is specific to a fleet already near the floor. At the industry-average PUE of 1.56 the headroom is ~35.9% — the structural argument (a bounded ratio cannot bound an unbounded absolute) generalizes, but the near-exhausted arithmetic is Google's.",
-    "PUE improvements are real efficiency gains — the critique is not that the work is fake but that a bounded, near-exhausted ratio is being asked to carry an argument about an unbounded absolute it was never built to measure."
+    "PUE improvements are real efficiency gains — the critique is not that the work is fake but that a bounded, near-exhausted ratio is being asked to carry an argument about an unbounded absolute it was never built to measure.",
+    "The work's own headline for the six-year absolute (+120.5%) is the larger figure from the older report vintage; the subject's current inventory restates that span to +113.9%. The stated rationale — the claim under trial is the 2025 report, so that report's own vintage anchors the display — is real, and the restated figure is shown beside the headline. But the structure (two truthful numbers, the more rhetorically useful one foregrounded) is the same shape as the framing discretion this work critiques — named here rather than left for a reader to find."
   ],
 
   "subsequent_disclosure": {
@@ -204,6 +205,8 @@
       "scope2_location_based_tco2e_2019_2025": [5173000, 5845000, 6498700, 7963700, 9085700, 11067100, 15148700],
       "scope2_market_based_2025_tco2e": 2815000,
       "scope1_2025_tco2e": 86100,
+      "growth_2024_2025_this_vintage_pct": 36.9,
+      "growth_2019_2024_this_vintage_pct": 113.9,
       "derived": "2024→2025 location-based +36.9% (15,148,700 / 11,067,100 = 1.3688); 2019→2025 +192.8% on this vintage; 2019→2024 on this vintage +113.9% (vs +120.5% on the 2025-report vintage). The emissions +36.9% is numerically near the separately disclosed 37% ELECTRICITY growth — distinct quantities; the proximity is not a claimed relationship."
     }
   },

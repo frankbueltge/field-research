@@ -1,7 +1,8 @@
 # Verification — The Floor
 
-The record of the session-17 shipping gauntlet (2026-07-09), so the work's factual base can be
-re-audited by anyone. Method differs from instrument 012's hash-anchored record for an honest
+The record of the session-17 shipping gauntlet (2026-07-09) and the session-18 revision
+gauntlet (2026-07-10, at the end of this file), so the work's factual base can be re-audited by
+anyone. Method differs from instrument 012's hash-anchored record for an honest
 reason: this environment has no direct egress to the primary hosts (raw PDF download fails at the
 proxy), so the primaries were read via server-side full-text extraction instead, and no file
 hashes are recorded — recording hashes we could not compute ourselves would be fabrication.
@@ -56,3 +57,40 @@ recompute the derivations below by hand.
   cross-checked (the +241% operations claim recomputes exactly from the table), but not re-pulled
   byte-for-byte from the raw PDFs in this environment (no direct egress) — stated here rather
   than papered over.
+
+## Session-18 revision gauntlet (2026-07-10)
+
+The work was revised on the team's two seed offers (time axis on the breakeven; prior-art note).
+Under the constitution any revision invalidates a verdict, so the full gauntlet re-ran on the
+revised state. Deliberation minutes, the Skeptic's full verdict, and the Interlocutor's published
+critique: `journal/2026-07-10.md` (session 18).
+
+- **Verifier (independent, round 1): PASS WITH FINDINGS** on commit `94fb3d5`. All arithmetic
+  recomputed correct (per-year breakeven 0.94/0.87/0.80 with per-year bases; vintage derivations
+  +36.9% / +192.8% / +113.9%; the unchanged +120.5%); all four newly-cited sources re-fetched
+  **live** by the Verifier itself and confirmed verbatim (the 2026 report's recalculated inventory
+  digit-for-digit, its recalculation disclosure; the Kairos section title and quotes; the
+  "Beyond PUE" passage and 1.58→1.56 figures; Horner & Azevedo's existence, with the no-quote
+  restraint for the paywalled text respected in all four files); fabrication sweep clean. Findings
+  fixed on the work: a "verbatim" section title that dropped the source's "B." outline prefix
+  (unified); the 36.9%-vs-37% distinct-quantities caveat existed only in the data layer (now
+  rendered in the vintage note); and the procedural finding that this very record did not yet
+  exist at the audited commit (this section is its resolution).
+- **Skeptic (round 1): SURVIVES WITH CONDITIONS — all five applied.** Core finding, accepted and
+  now stated on the work itself: the row of impossible points performs no new arithmetic — all
+  three figures already stood in the shipped robustness prose; the revision's contribution is
+  **legibility, not new evidence**, and the work now says so plainly (README, data.json, and the
+  gauge caption). Further conditions applied: the 2025 marker is drawn open to flag its
+  total-electricity growth basis (the same flag discipline as the emissions panel's vintage
+  asterisk); the absent 2020–2022 markers are explained (growth undisclosed — not computable, not
+  cleared); the restated +113.9% is rendered beside the +120.5% headline; honesty item 9 names the
+  work's own vintage-selection discretion as the same shape of choice it critiques; and the
+  numeric identity between Kairos's ~9% overhead share and this work's 8.3% headroom is stated so
+  the reader need not derive it.
+- **Interlocutor:** hostile critique published verbatim in `journal/2026-07-10.md` — its core
+  charge ("new furniture, not new knowledge") was independently confirmed by the Skeptic and is
+  now conceded on the work; its concession (the vintage discipline is the revision's strongest
+  element) noted for the record.
+- **Round 2:** a fresh Skeptic convening confirmed the conditions discharged on the reworked
+  state, and a closing Verifier micro-check passed on the exact final committed state — see the
+  session-18 journal for both records.
