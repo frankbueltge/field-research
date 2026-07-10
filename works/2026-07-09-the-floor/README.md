@@ -100,11 +100,17 @@ outright.
   1.09/1.37 = **0.80** — deeper below the floor.
 - **The row of impossible points (added session 18):** computed per year, each against the *prior*
   year's disclosed PUE — 2023: 1.10/1.17 = **0.94**; 2024: 1.10/1.27 = **0.87**; 2025: 1.09/1.37 =
-  **0.80**. Every disclosed year since 2023 lands in the impossible band, and the requirement sinks
-  year on year. (The 2025 growth figure is stated by the 2026 report for *total* electricity, not
-  data-center electricity — quoted exactly, not conflated; under base 1.09 any growth above 9%
-  already crosses the floor, so the conclusion survives a materially lower data-center-specific
-  rate.)
+  **0.80**. Every disclosed year since 2023 lands in the impossible band. Stated plainly (the
+  session-18 Skeptic's condition, accepted): all three figures already stood in the robustness
+  note above when the work shipped — the revision performs **no new arithmetic**; it renders
+  existing numbers as a row. The contribution is legibility, not new evidence: three
+  re-derivations from one subject's successive reports are redundant checks on the same underlying
+  fact, not independent confirmations. 2020–2022 carry no markers because the cited reports
+  disclose no year-over-year growth rates for those years — no marker means *not computable*, not
+  *cleared*. (The 2025 growth figure is stated by the 2026 report for *total* electricity, not
+  data-center electricity — quoted exactly, not conflated, and the 2025 marker is drawn open on
+  the gauge to flag the different growth-scope basis; under base 1.09 any growth above 9% already
+  crosses the floor, so the conclusion survives a materially lower data-center-specific rate.)
 - **Vintage discipline (added session 18):** the 2026 report's GHG inventory *recalculates*
   2019–2024 (disclosed verbatim: "In 2025, we recalculated certain previously reported metrics";
   the recalculation policy "follows guidance from the GHGP"; one disclosed driver estimates
@@ -112,7 +118,11 @@ outright.
   estimator inside the recalculated inventory). The work therefore never merges the two vintages:
   the main columns remain the 2025-report series (the claim under trial), and the 2025 column
   (15,148,700 tCO₂e location-based, **+36.9%** over that report's own restated 2024) is drawn as a
-  separate, labeled vintage.
+  separate, labeled vintage. On the 2026-report vintage the 2019→2024 span reads **+113.9%** —
+  smaller than the **+120.5%** the work displays from the report under trial. Both figures are
+  rendered on the work, and the discretion in keeping the larger one as the headline is named in
+  the honesty panel (item 9) — it is the same *shape* of choice this work critiques, carried
+  openly.
 
 ## Why this is not a rerun of 012
 
@@ -142,6 +152,11 @@ figures), different form (a floor-gauge with an impossible zone, not a twin-invo
    is ~35.9%. The structural argument generalizes; the numbers are Google's.
 8. PUE improvements are real efficiency gains. The critique is not that the number is fake — it is
    that a near-floor ratio is being asked to carry an argument about an absolute it cannot bound.
+9. The work's own six-year headline (+120.5%) is the larger figure from the older report vintage;
+   the subject's current inventory restates the span to +113.9%. The rationale (the claim under
+   trial is the 2025 report, so its vintage anchors the display) is stated and the restated figure
+   shown beside it — but the structure (two truthful numbers, the more useful one foregrounded) is
+   the same shape as the discretion this work critiques. Named, not hidden. (Added session 18.)
 
 ## Prior art — what was already established (added session 18)
 
@@ -149,11 +164,14 @@ The *thesis* — PUE says nothing about absolute scale, and efficiency is foregr
 absolutes — is established, and in one case was aimed at this work's own subject and report cycle:
 
 - **Kairos Fellowship, "Google's Eco-Failures"** (2 July 2025): a section titled verbatim
-  "Tool #2: Google reports efficiency instead of absolute numbers", built on Google's own PUE
+  "B. Tool #2: Google reports efficiency instead of absolute numbers", built on Google's own PUE
   chart — non-IT overhead is only ~9% of total consumption (from ~20% in 2009), so "any
-  improvement made to PUE makes little impact on" the total. Its sharpest edge (market-based-only
-  reporting obscures real emissions) is prior art for instrument 012's territory as much as this
-  work's.
+  improvement made to PUE makes little impact on" the total. Stated so the reader need not derive
+  it: Kairos's ~9% overhead share and this work's own 8.3% remaining-headroom statistic are the
+  same quantity computed two ways ((PUE − 1)/PUE at a near-floor PUE) — the headroom argument is
+  Kairos's ground as much as this work's; only the breakeven proof-move and the instrument form
+  are claimed as additions. Its sharpest edge (market-based-only reporting obscures real
+  emissions) is prior art for instrument 012's territory as much as this work's.
 - **Horner & Azevedo (2016)**, "Power usage effectiveness in data centers: overloaded and
   underachieving", *The Electricity Journal* 29(4):61–69 — the peer-reviewed critique; the title
   says it.
