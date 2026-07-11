@@ -1,0 +1,162 @@
+[
+  {
+    "bytes": 61720,
+    "expected": "no manifest (corpus 'A' = parent ingredient file, no Content Credentials)",
+    "file": "adobe-20220124-A.jpg",
+    "id": "c01",
+    "license": "CC BY-SA 4.0 (c2pa-org/public-testfiles)",
+    "sha256": "f999fd78bfe8a83c96e468a078830ba94485bc1bc6fd086fb94a43bd29dd0f23",
+    "source": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+    "tier": "control-fixture"
+  },
+  {
+    "bytes": 140297,
+    "expected": "valid manifest (corpus 'C' = simple claim)",
+    "file": "adobe-20220124-C.jpg",
+    "id": "c02",
+    "license": "CC BY-SA 4.0 (c2pa-org/public-testfiles)",
+    "sha256": "75a8da33f6eaf1e16bf3b42cd78913b22b2e6a671fda217a508b1ba4230ce864",
+    "source": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+    "tier": "control-fixture"
+  },
+  {
+    "bytes": 178709,
+    "expected": "invalid: signature did not validate (corpus 'E-sig')",
+    "file": "adobe-20220124-E-sig-CA.jpg",
+    "id": "c03",
+    "license": "CC BY-SA 4.0 (c2pa-org/public-testfiles)",
+    "sha256": "0d4c2774f1b7e94b9613bb952b0a76b6a178d22ac6d206d257d2af1376cbbff2",
+    "source": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+    "tier": "control-fixture"
+  },
+  {
+    "bytes": 178709,
+    "expected": "invalid: hard-binding hash mismatch (corpus 'E-dat')",
+    "file": "adobe-20220124-E-dat-CA.jpg",
+    "id": "c04",
+    "license": "CC BY-SA 4.0 (c2pa-org/public-testfiles)",
+    "sha256": "dae9d121060cec4b6f27ee8acda85ad461cf75f2261d90b463319b787342d7f9",
+    "source": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+    "tier": "control-fixture"
+  },
+  {
+    "bytes": 656258,
+    "expected": "invalid: referenced claim missing (corpus 'E-clm')",
+    "file": "adobe-20220124-E-clm-CAICAI.jpg",
+    "id": "c05",
+    "license": "CC BY-SA 4.0 (c2pa-org/public-testfiles)",
+    "sha256": "b3ff3f00c66602280977d3e4d962a836d33ab83953d0009f7c1e6490d0065feb",
+    "source": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+    "tier": "control-fixture"
+  },
+  {
+    "bytes": 178709,
+    "expected": "invalid: assertion tampered, URI hash mismatch (corpus 'E-uri')",
+    "file": "adobe-20220124-E-uri-CA.jpg",
+    "id": "c06",
+    "license": "CC BY-SA 4.0 (c2pa-org/public-testfiles)",
+    "sha256": "56014faf6b97532252c9bb90dcf484923a8aa7bba197e84a8555044a35e4f3a6",
+    "source": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+    "tier": "control-fixture"
+  },
+  {
+    "bytes": 152070,
+    "expected": "incomplete: hash mismatch / off the golden path (corpus 'X')",
+    "file": "adobe-20220124-XCA.jpg",
+    "id": "c07",
+    "license": "CC BY-SA 4.0 (c2pa-org/public-testfiles)",
+    "sha256": "4524a15f71dbdd9e96cd6e78a1a17c1260fff04f68900a10fd1279664d260c9e",
+    "source": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+    "tier": "control-fixture"
+  },
+  {
+    "bytes": 2261231,
+    "expected": "valid hardware-signed capture (Truepic Lens SDK)",
+    "file": "truepic-20230212-camera.jpg",
+    "id": "c08",
+    "license": "CC BY-SA 4.0 (c2pa-org/public-testfiles)",
+    "sha256": "379aabc7d04ee8c8fb04e18925428463353ab6fb6696ee3d7aa11710c6b2e147",
+    "source": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+    "tier": "control-camera"
+  },
+  {
+    "bytes": 4015169,
+    "expected": "valid hardware-signed capture (Truepic Lens SDK)",
+    "file": "truepic-20230212-landscape.jpg",
+    "id": "c09",
+    "license": "CC BY-SA 4.0 (c2pa-org/public-testfiles)",
+    "sha256": "e9a7d020de9edb1c13602f5e1a42fdb67e6ea1728d7f7d88a316cd2e3ce989c9",
+    "source": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+    "tier": "control-camera"
+  },
+  {
+    "bytes": 1530098,
+    "expected": "camera capture, invalid: claim signature mismatch (per corpus README)",
+    "file": "nikon-20221019-building.jpeg",
+    "id": "c10",
+    "license": "CC BY-SA 4.0 (c2pa-org/public-testfiles)",
+    "sha256": "721e75362ccc4ff943f5140ebc89897aa501d056cfb0dc7a6aeb68382e412cc5",
+    "source": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+    "tier": "control-camera"
+  },
+  {
+    "bytes": 192936,
+    "expected": "AI image downloaded from a generator, manifest intact?",
+    "file": "wild-chatgpt-soldering.webp",
+    "id": "w01",
+    "license": "Public domain (per Commons file page)",
+    "retrieved": "2026-07-11",
+    "sha256": "07f175fd7f3a7b5438e1ac241e55e0f77226d36532b77a64e2529e91c4931974",
+    "source": "https://commons.wikimedia.org/wiki/File:DALL%C2%B7E_2025-02-21_23.58.53_-_A_simple_soldering_iron_with_a_stand._The_soldering_iron_has_a_slim,_ergonomic_handle_with_a_metallic_tip._The_stand_is_a_small_metal_base_with_a_coil.webp",
+    "tier": "wild",
+    "upload_date": "2025-02-22"
+  },
+  {
+    "bytes": 574662,
+    "expected": "AI image downloaded from a generator, manifest intact?",
+    "file": "wild-chatgpt-imagetitis.webp",
+    "id": "w02",
+    "license": "Public domain (per Commons file page)",
+    "retrieved": "2026-07-11",
+    "sha256": "2435f70c56f31c3ba549ecffc065c650f807a7c21950dd2d45ba9cdfcbb0e563",
+    "source": "https://commons.wikimedia.org/wiki/File:Imagetitis-affected_editor_by_ChatGPT_4.0_%26_DALL%C2%B7E_3_(2024).webp",
+    "tier": "wild",
+    "upload_date": "2025-02-06"
+  },
+  {
+    "bytes": 1570373,
+    "expected": "AI image from a consumer design tool, manifest intact?",
+    "file": "wild-msdesigner-gato.png",
+    "id": "w03",
+    "license": "Public domain (per Commons file page)",
+    "retrieved": "2026-07-11",
+    "sha256": "1a66871497e74a281233b763cb16d34a2309271fefa8fa280b1e4334fc5ecbf7",
+    "source": "https://commons.wikimedia.org/wiki/File:Gato_naranja_generado_por_IA.png",
+    "tier": "wild",
+    "upload_date": "2024-02-25"
+  },
+  {
+    "bytes": 235706,
+    "expected": "community-labelled AI image; machine-readable provenance?",
+    "file": "wild-nomanifest-commons-ai.png",
+    "id": "w04",
+    "license": "CC BY-SA 4.0 (per Commons file page)",
+    "retrieved": "2026-07-11",
+    "sha256": "655c9747ab3633fdb9ca45fbdd8a25da0c7d54009f06ead8afc5c27ad9e4feca",
+    "source": "https://commons.wikimedia.org/wiki/File:Wikimedia_Commons_AI_(2025).png",
+    "tier": "wild",
+    "upload_date": "2025-01-24"
+  },
+  {
+    "bytes": 2833605,
+    "expected": "human photograph (Alvesgaspar, 2010), pre-provenance-era",
+    "file": "wild-human-cat.jpg",
+    "id": "w05",
+    "license": "CC BY-SA 3.0, author Alvesgaspar (per Commons file page)",
+    "retrieved": "2026-07-11",
+    "sha256": "59ec9bf12a5b63e0913e986b9566b96228c9f8921fda4fb87bf2a7f9acff3dd2",
+    "source": "https://commons.wikimedia.org/wiki/File:Cat_November_2010-1a.jpg",
+    "tier": "wild",
+    "upload_date": "2010-11"
+  }
+]
