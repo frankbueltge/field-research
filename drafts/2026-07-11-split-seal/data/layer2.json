@@ -1,0 +1,98 @@
+{
+  "layer": "detector (statistical AI-image classifier)",
+  "note": "Raw scores, unthresholded. The detector is a statistical classifier, NOT a watermark decoder; the collective holds no independent FPR/FNR benchmark for it — display tiers are pre-registered in README.md and carry no calibration authority.",
+  "results": {
+    "c01": {
+      "ai_generated": 0.001,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5
+    },
+    "c02": {
+      "ai_generated": 0.001,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5
+    },
+    "c03": {
+      "ai_generated": 0.001,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5
+    },
+    "c04": {
+      "ai_generated": 0.001,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5
+    },
+    "c05": {
+      "ai_generated": 0.001,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5
+    },
+    "c06": {
+      "ai_generated": 0.001,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5
+    },
+    "c07": {
+      "ai_generated": 0.001,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5
+    },
+    "c08": {
+      "ai_generated": 0.001,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5
+    },
+    "c09": {
+      "ai_generated": 0.001,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5
+    },
+    "c10": {
+      "ai_generated": 0.001,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5
+    },
+    "w01": {
+      "ai_generated": 0.99,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5
+    },
+    "w02": {
+      "ai_generated": 0.99,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5
+    },
+    "w03": {
+      "ai_generated": 0.99,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5
+    },
+    "w04": {
+      "ai_generated": 0.01,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5
+    },
+    "w05": {
+      "ai_generated": 0.001,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5
+    }
+  },
+  "run_date": "2026-07-11",
+  "tool": "Sightengine `genai` model (commercial API)"
+}

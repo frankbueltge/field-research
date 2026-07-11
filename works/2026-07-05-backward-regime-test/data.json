@@ -1,0 +1,216 @@
+{
+  "title": "The Backward Docket",
+  "subtitle": "Running the axis that exiled Horizon backward across the collective's own filed cards",
+  "instrument_no": "011",
+  "deterministic": true,
+  "seed_note": "No randomness anywhere. Every grade and placement is argued from the sourced material below and fixed at build time; the run order is fixed. Same input, same docket.",
+
+  "axis": {
+    "name": "who is procedurally permitted to doubt the instrument's word",
+    "origin": "The criterion that filed the externally-submitted Horizon case at the drawer's EDGE, not in a lane, in work 010 v2 (session 08). The session-08 Interlocutor's standing demand: run that axis BACKWARD, evenhandedly, across the nine already-filed cards, and report honestly whether it runs beneath cards the taxonomy has already filed. Either outcome is structural.",
+    "decomposition_note": "The axis was too coarse as one line. The pre-read (Skeptic + Proposer, session 09) forced it apart into two independent criteria; a card can meet one without the other. Card 006 (Loomis) is the proof: total opacity, no burden reversal.",
+    "marks_note": "Schema note for future editors: each card carries two per-criterion 'marks' (opacity, presumption) drawn from their own vocabularies — opacity ∈ {OPEN, PARTIAL, MIXED, CLOSED}; presumption ∈ {NONE, LATENT, UNPROVEN, DE_FACTO, CLOSED}. Some mark tokens coincide with grade ids (e.g. LATENT, DE_FACTO), but a MARK describes the state of ONE criterion, while the GRADE (STRUCTURAL / DE FACTO / UNSETTLED / PARTIAL / LATENT / DOES NOT APPLY) is the card's overall placement. They are related fields, not the same field.",
+    "criteria": [
+      {
+        "id": "opacity",
+        "short": "Mechanism opacity",
+        "question": "Can the accused examine HOW the instrument reached its output — its method, its weighting, its internal state?",
+        "closed_when": "The accused cannot inspect the reasoning that produced the output (trade secret, proprietary score, withheld error records, a bare probability).",
+        "load_bearing": false
+      },
+      {
+        "id": "presumption",
+        "short": "Outcome presumption",
+        "question": "Is the burden reversed onto the accused to DISPROVE the instrument's output on the ULTIMATE finding (guilt, liability, misconduct) — is the machine's word presumed correct until the accused rebuts it?",
+        "closed_when": "The accused must affirmatively prove the output wrong on the ultimate question, rather than the accuser proving it right.",
+        "load_bearing": true,
+        "why_load_bearing": "This is the element that exiled Horizon to the edge. Opacity alone does not; a tool can be opaque and still advisory, its output contestable, the burden left where it was."
+      }
+    ]
+  },
+
+  "grades": [
+    { "id": "STRUCTURAL", "label": "STRUCTURAL", "def": "A formal or statutory presumption reverses the burden on the ultimate finding. The accused must disprove the machine, by law." },
+    { "id": "DE_FACTO", "label": "DE FACTO", "def": "No statute, but institutional practice makes the accused affirmatively disprove the output on the ultimate question. The reversal is real but rests on practice, not a rule — and the sourcing for it is weaker." },
+    { "id": "UNSETTLED", "label": "UNSETTLED", "def": "The tool is deployed against a named accused (unlike LATENT) and the mechanism is opaque, but the available evidence cannot establish whether the burden is reversed on the ultimate finding. Graded neither reversed nor cleared. Exit condition, named so this is not a holding pen: a primary disciplinary-code provision or an adjudication establishing the reversal would move it to DE FACTO or STRUCTURAL; an adjudication finding the process reversed nothing would clear it. Until then it is an open evidentiary question, not a grade in either direction." },
+    { "id": "PARTIAL", "label": "PARTIAL", "def": "The zone the accused cannot doubt is confined to the instrument's internal mechanism, and/or the output is advisory or operates only after the ultimate finding is already fixed. Opacity is present; outcome-presumption is not." },
+    { "id": "LATENT", "label": "LATENT", "def": "The mechanism belongs to the same family, but the filed card shows the tool firing on data, not against a named accused standing in a procedural relation to its output. No documented instance of a reversed burden in the collective's material." },
+    { "id": "NA", "label": "DOES NOT APPLY", "def": "No accused individual stands in any procedural relation to the output at all." }
+  ],
+
+  "reference": {
+    "id": "S-001",
+    "tool": "Horizon (Fujitsu branch-accounting system)",
+    "role": "the reference specimen — the case that set the axis (filed at the edge, work 010 v2)",
+    "accusation": "The branch account shows a shortfall. It is treated as proof that the subpostmaster stole or falsely accounted.",
+    "marks": { "opacity": "CLOSED", "presumption": "CLOSED" },
+    "grade": "STRUCTURAL",
+    "opacity_basis": "Fujitsu's own known-error records (the internal bug logs) were not disclosed to the accused: in the prosecutions of the 42 appellants, \"so far as we are aware, there was no disclosure of any such document\" (Court of Appeal).",
+    "presumption_basis": "s.69 PACE 1984 (which had required the prosecution to prove a computer was operating properly before its output was admissible) was repealed by the Youth Justice and Criminal Evidence Act 1999 (in force 2000), leaving a rebuttable common-law presumption of correct operation; the Court of Appeal found that by representing Horizon as reliable, the Post Office \"effectively sought to reverse the burden of proof ... and proceeded as if it were for the accused to prove that no such loss had occurred.\"",
+    "channel_that_existed": "Appeal — but only en masse and roughly twenty years later: convictions quashed in Hamilton & Others v Post Office Ltd [2021] EWCA Crim 577, then more widely by the Post Office (Horizon System) Offences Act 2024.",
+    "source": "Hamilton & Others v Post Office Ltd [2021] EWCA Crim 577; Police and Criminal Evidence Act 1984 s.69 (repealed by YJCEA 1999 s.60, in force 2000); Post Office Horizon IT Inquiry Final Report Vol. 1 (2025), para 3.24; Post Office (Horizon System) Offences Act 2024 (c. 14).",
+    "source_urls": [
+      "https://caselaw.nationalarchives.gov.uk/ewca/crim/2021/577",
+      "https://www.legislation.gov.uk/ukpga/2024/14/introduction/enacted",
+      "https://www.postofficehorizoninquiry.org.uk/"
+    ]
+  },
+
+  "cards": [
+    {
+      "id": 1,
+      "tool": "AI text detectors",
+      "accusation": "The detector flags an essay as AI-generated. The student is charged with academic misconduct.",
+      "actions_offered": ["contest the tool's validity", "offer authorship evidence (edit history)", "institutional appeal", "nothing court-grade available"],
+      "channel_that_existed": "Students contest the tool by running other detectors that disagree; some offer document version-history as authorship evidence, reviewed only at the integrity officer's discretion; institutional appeal exists but is \"lacking [the] safeguards of courts.\" In the two named US cases the accused lost (expulsion upheld on appeal; injunction denied). In the England & Wales adjudication record (OIA, 2025), detector-led findings that skipped corroboration or fair process were remitted.",
+      "marks": { "opacity": "CLOSED", "presumption": "UNPROVEN" },
+      "grade": "UNSETTLED",
+      "opacity_basis": "The detector returns a probabilistic score, not examinable reasoning; the student cannot inspect how the score was produced.",
+      "presumption_basis": "Journalism and advocacy describe students placed in the position of having to prove they did NOT use AI — a New York Times headline (Holtermann, 17 May 2025) names the situation exactly: 'A New Headache for Honest Students: Proving They Didn't Use A.I.' No primary disciplinary-code provision in our material establishes the reversal as a rule, and both named students LOST — an outcome at least as consistent with a process found adequate as with a reversed burden (the docket's own reading, not a holding). The card's named exit condition was RUN in session 19 (2026-07-10): a sourcing expedition found the one retrievable adjudication forum — the Office of the Independent Adjudicator for Higher Education (England & Wales; a non-binding ombudsman, barred by statute from reviewing 'academic judgment') — and its record runs AGAINST the reversal: 'The responsibility is on the provider to prove that the student has done what they are accused of doing, not on the student to disprove it' (OIA casework note), with 2025 detector-flag cases remitted for want of corroboration or fair process (CS072504, Partly Justified; CS072501, upheld — no misconduct on reconsideration); the tool's own vendor disclaims the ultimate finding ('Turnitin does not make a determination of misconduct'). But that record is non-binding, sits in a jurisdiction other than the card's named US instances, and the pure scenario — detector output alone treated as dispositive, burden on the student — was never squarely adjudicated in it. Neither exit branch is squarely satisfied for the instances as filed: the presumption stays UNPROVEN and the card stays UNSETTLED — now informed: every retrievable adjudication and vendor statement runs against the reversal, and none establishes it.",
+      "source": "International Center for Academic Integrity (accused students 'find other detectors that said the opposite'); New York Times, Holtermann, 17 May 2025 (headline verified; the article itself is paywalled, so it is cited but not linked); attorney commentary (strausstroy.com) on the absence of court safeguards; Yang v. U. Minnesota (expulsion upheld on appeal) and Rignol v. Yale (suspension, injunction denied), already in the ledger; and — the session-19 expedition — the OIA casework note on AI and academic misconduct (burden-of-proof principle), OIA case summaries CS072504 / CS072501 (England & Wales, 2025), and Turnitin's own non-determination statement.",
+      "source_urls": [
+        "https://academicintegrity.org/aws/ICAI/pt/sd/news_article/591345/_PARENT/layout_interior/false",
+        "https://www.strausstroy.com/articles/ai-and-academic-integrity-a-growing-crisis",
+        "https://www.oiahe.org.uk/resources-and-publications/learning-from-our-casework/ai-and-academic-misconduct/casework-note-complaints-relating-to-ai-and-academic-misconduct/",
+        "https://www.oiahe.org.uk/resources-and-publications/case-summaries/ai-and-academic-misconduct-cs072504/",
+        "https://www.oiahe.org.uk/resources-and-publications/case-summaries/ai-and-academic-misconduct-cs072501/",
+        "https://www.turnitin.com/blog/understanding-false-positives-within-our-ai-writing-detection-capabilities"
+      ],
+      "contest_this_placement": "Lowest evidentiary tier in this docket at ship — and the one card whose named exit condition has since been RUN (session 19) rather than left as a holding pen. What the expedition found is recorded above, and its direction is uniform: against the reversal. The card is nevertheless deliberately NOT moved. Not to DE FACTO or STRUCTURAL — nothing establishes the reversal. And not cleared to PARTIAL either: the found record is a non-binding ombudsman in a jurisdiction other than the filed US instances, and no adjudication in our material has squarely tested detector-output-alone-as-dispositive — a session-20 attempt to clear the card on exactly that record failed the collective's own gauntlet as an overclaim (record: journal 2026-07-10, sessions 19–20). What would move it now, either way: a primary US disciplinary-code provision or a US adjudication on the reversal; or a squarely-adjudicated pure case in any jurisdiction."
+    },
+    {
+      "id": 2,
+      "tool": "Benford's first-digit law (on election precincts)",
+      "accusation": "A precinct-count first-digit distribution is anomalous — alleged as evidence of election fraud.",
+      "actions_offered": ["recompute the test", "publish a rebuttal", "no tribunal, no accused"],
+      "channel_that_existed": "Fully open academic contestation. Mebane applied his own eForensics model to the same Milwaukee data and reached P(no fraud) = 0.98 — the rebuttal was freely made and published.",
+      "marks": { "opacity": "OPEN", "presumption": "NONE" },
+      "grade": "NA",
+      "basis": "The tool's 'word' is deployed in public and political discourse, not against an accused person before a tribunal bearing a burden. Anyone may recompute and rebut, and did.",
+      "source": "Mebane (U. Michigan), inapB; academic consensus (Deckert/Myagkov/Ordeshook 2011).",
+      "source_urls": ["https://websites.umich.edu/~wmebane/inapB.pdf"],
+      "contest_this_placement": "Straightforward: no accused, no procedural burden. If a jurisdiction ever made a Benford flag legally presumptive against a named official, the grade would move."
+    },
+    {
+      "id": 3,
+      "tool": "C2PA provenance chain",
+      "accusation": "An image arrives with no valid provenance manifest — its origin cannot be verified.",
+      "actions_offered": ["no accused person", "the ambiguity attaches to content"],
+      "channel_that_existed": "The standard is open; the failure (metadata stripped, or absence-ambiguity) attaches to the content, not to a specific accused who must rebut it.",
+      "marks": { "opacity": "OPEN", "presumption": "NONE" },
+      "grade": "NA",
+      "basis": "As filed, the card is about provenance stripping and absence-ambiguity, not a burden reversed onto a named person. A different deployment (provenance offered as evidence against a specific defendant) could activate the axis; the card as filed does not show it.",
+      "source": "C2PA stripping row, already in the ledger.",
+      "source_urls": ["https://www.tbray.org/ongoing/When/202x/2025/09/18/C2PA-Investigations"],
+      "contest_this_placement": "Graded on the card AS FILED. Flagged explicitly because provenance-in-evidence is the deployment where this could turn — that is a different card the collective has not built."
+    },
+    {
+      "id": 4,
+      "tool": "Last-digit uniformity test (on clinical/demographic data)",
+      "accusation": "Terminal-digit non-uniformity in a dataset — read as a possible fabrication signal.",
+      "actions_offered": ["the card fires on clean data, no named accused"],
+      "channel_that_existed": "The filed card shows the test firing on legitimate clinical/survey data (rounding, age heaping), producing a fabrication-like signature on clean data — not a named researcher standing before a tribunal.",
+      "marks": { "opacity": "OPEN", "presumption": "LATENT" },
+      "grade": "LATENT",
+      "basis": "The mechanism could reverse a burden onto a researcher IF deployed against one — the same shape as card 007 — but the filed card does not show that deployment. Latent, not operative.",
+      "source": "Last-digit mirror row, already in the ledger.",
+      "source_urls": [],
+      "contest_this_placement": "Placed LATENT, not 'runs beneath,' precisely to avoid the pre-read's warning against calling an ambiguous signal a reversed burden without a documented accused-facing instance."
+    },
+    {
+      "id": 5,
+      "tool": "AI capability benchmarks",
+      "accusation": "A reported benchmark score is inflated or contaminated.",
+      "actions_offered": ["no accused person", "no procedural burden"],
+      "channel_that_existed": "Contamination-free re-scoring is published openly (MMLU-CF); no individual stands accused by the benchmark's output.",
+      "marks": { "opacity": "OPEN", "presumption": "NONE" },
+      "grade": "NA",
+      "basis": "No accused, no burden.",
+      "source": "MMLU-CF row, already in the ledger.",
+      "source_urls": ["https://arxiv.org/abs/2412.15194"],
+      "contest_this_placement": "Clean negative finding."
+    },
+    {
+      "id": 6,
+      "tool": "COMPAS recidivism scoring",
+      "accusation": "The risk score rates the defendant high-risk. It is put before the judge at sentencing.",
+      "actions_offered": ["contest the inputs", "contest the methodology", "appeal"],
+      "channel_that_existed": "The defendant CAN contest the factual inputs (his record, his questionnaire answers) — the court held he 'could have denied or explained any information.' He CANNOT examine the methodology: it is a trade secret, and 'courts cannot evaluate how the risk scores are determined or how the factors are weighed.' He appealed to the Wisconsin Supreme Court and lost; the U.S. Supreme Court denied certiorari.",
+      "marks": { "opacity": "CLOSED", "presumption": "OPEN" },
+      "grade": "PARTIAL",
+      "opacity_basis": "Total on the mechanism: the scoring methodology was disclosed to neither the court nor the defendant as a trade secret (State v. Loomis; Harvard Law Review vol. 130).",
+      "presumption_basis": "NOT reversed on the ultimate finding. The score is advisory at SENTENCING — it operates after guilt is already established, the judge retains the last word, and the required remedy was only a cautionary 'written advisement.' The burden on the ultimate question was not shifted onto the defendant. And — this last step is the docket's own reading, not a holding of the court — even taking sentence severity ITSELF as the finding does not change the grade: the score was advisory input to a discretionary judicial decision, not a presumption the defendant had to affirmatively disprove to avoid a longer term, so no burden was reversed at either stage.",
+      "source": "State v. Loomis, 881 N.W.2d 749 (Wis. 2016); cert. denied, Loomis v. Wisconsin, 137 S. Ct. 2290 (2017); Harvard Law Review vol. 130, 'State v. Loomis.'",
+      "source_urls": ["https://harvardlawreview.org/print/vol-130/state-v-loomis"],
+      "contest_this_placement": "This is the docket's decisive specimen and its clearest correction of the collective's first draft, which had graded it 'runs strongly beneath.' It does not. Opacity is total; outcome-presumption is absent. The split is the finding."
+    },
+    {
+      "id": 7,
+      "tool": "Carlisle's method (baseline-balance test)",
+      "accusation": "A trial's baseline p-values are implausibly consistent — flagged as a possible fabrication signal.",
+      "actions_offered": ["rebut with the legitimate alternative (stratified randomisation)", "the card documents no tribunal refusing the rebuttal"],
+      "channel_that_existed": "At extreme signal (Fujii, ~1 in 10^33) the signal itself convicts, not a presumption. At moderate signal the same signature has two causes (fabrication OR legitimate stratified/covariate-adaptive randomisation); a flagged researcher bears a rebuttal burden in misconduct/retraction proceedings — but the collective's material documents no specific instance of a researcher being procedurally BARRED from making that rebuttal.",
+      "marks": { "opacity": "PARTIAL", "presumption": "LATENT" },
+      "grade": "LATENT",
+      "basis": "Downgraded from the first draft's 'runs beneath' after the pre-read: an ambiguous SIGNAL is not the same as a barred REBUTTAL. Without a documented accused-facing refusal, placing 007 as operative would conflate statistical specificity with procedural burden. Latent, and flagged as a candidate DE FACTO only if such an instance is ever sourced.",
+      "source": "Fujii extreme-p figure from Carlisle (2012, Anaesthesia); ambiguity claim from Carlisle (2017, 5,087-RCT study) and Tausk (2022) — all already in the ledger.",
+      "source_urls": ["https://arxiv.org/abs/2209.00131"],
+      "contest_this_placement": "Deliberately conservative. The honest gap is: no named regime, no documented rebuttal-refusal, in our material."
+    },
+    {
+      "id": 8,
+      "tool": "DSM (psychiatric diagnosis)",
+      "accusation": "A diagnostic label is applied to a person.",
+      "actions_offered": ["diffuse — no single clean reversal shown"],
+      "channel_that_existed": "A diagnosis carries procedural weight in forensic, involuntary-commitment, and disability-adjudication contexts, where the diagnosed may not easily doubt the instrument — but the filed card is about criterion change constituting a population, and shows no single clean burden reversal.",
+      "marks": { "opacity": "MIXED", "presumption": "LATENT" },
+      "grade": "LATENT",
+      "basis": "The procedural weight is real but diffuse and context-dependent; no one clean reversal is documented in the filed material. Latent.",
+      "source": "Bereavement-exclusion row, already in the ledger.",
+      "source_urls": [],
+      "contest_this_placement": "Placed LATENT rather than graded up, to avoid importing a burden-reversal the filed card does not document."
+    },
+    {
+      "id": 9,
+      "tool": "The Standing Docket (the collective's own recurring instrument)",
+      "accusation": "A dataset is 'convicted' by the digit tests.",
+      "actions_offered": ["the accused is a dataset, not a person"],
+      "channel_that_existed": "The instrument convicts DATASETS, not people; its own 'doubt' (the pilot-stage banner that keeps the scoreboard statistically silent below a floor) is reflexive, not adversarial.",
+      "marks": { "opacity": "OPEN", "presumption": "NONE" },
+      "grade": "NA",
+      "basis": "No accused person. Notable only reflexively: this is the one instrument in the drawer that was built to doubt its OWN word.",
+      "source": "works/2026-07-02-standing-docket/ledger.json.",
+      "source_urls": [],
+      "contest_this_placement": "Clean: no accused person."
+    }
+  ],
+
+  "counterfactual": {
+    "prompt": "The pre-read's mandatory condition: do not invent a comfortable 'second rail.' Actually run the two strongest candidates through Horizon's own edge-filing criterion — the load-bearing outcome-presumption — and report the outcome, which could have gone either way.",
+    "card_006": {
+      "question": "Would card 006 (COMPAS/Loomis), run through the criterion that exiled Horizon, be filed at the edge too?",
+      "result": "NO.",
+      "reasoning": "Horizon met the load-bearing outcome-presumption criterion: a formal reversal of the burden on the ultimate finding of guilt. Card 006 fails it: the score is advisory, post-guilt, the inputs are contestable, and the judge keeps the last word. 006 meets the OPACITY criterion totally and nothing else. So it does not force a refiling of its lane — it earns a distinction on the load-bearing sub-axis. Had Loomis instead held the score presumptively correct and the defendant obliged to disprove it, this would have come out the other way and forced a refiling. It did not.",
+      "residue": "But the opacity IS a real, previously-unmarked property of a filed card. Recorded honestly: 006 is edge-adjacent on the mechanism-opacity sub-axis. That is not nothing; it is just not the thing that exiled Horizon."
+    },
+    "card_001": {
+      "question": "Would card 001 (AI text detectors/students) be filed at the edge?",
+      "result": "UNSETTLED — NOT ON THIS RECORD. EXIT CONDITION RUN (SESSION 19): THE FOUND RECORD RUNS AGAINST THE REVERSAL BUT DOES NOT REACH THE FILED INSTANCES.",
+      "reasoning": "001 meets the opacity criterion (a bare probabilistic score) and is genuinely deployed against a named accused — unlike the LATENT cards. At session 10 the load-bearing outcome-presumption could not be established either way, so the card was held UNSETTLED with a named exit condition. Session 19 ran that condition: the one retrievable adjudication forum (the OIA, England & Wales — non-binding) places the burden on the provider, not the student, and remitted detector-led findings that skipped corroboration or fair process; the vendor disclaims any determination of misconduct. That record runs against the reversal — but it is non-binding, sits outside the jurisdiction of the card's named US instances, and never squarely adjudicated the pure detector-alone-as-dispositive scenario. So the card is still not filed at the edge, and still not cleared: a session-20 attempt to stamp it cleared (PARTIAL) on this record failed the collective's own gauntlet as an overclaim. Refiling — in either direction — on evidence that does not reach the filed instances would be the softer form of the laundering the collective refused for Horizon.",
+      "residue": "The gap named at session 10 is now partially paid: instead of no record at all, the card carries a sourced adjudication record with a stated direction (against the reversal) and stated limits (non-binding; England & Wales, not the filed US instances; pure case untested). What remains open is named precisely: a primary US disciplinary-code provision or US adjudication either way, or a squarely-adjudicated pure case in any jurisdiction. The docket keeps its 'we don't know' rather than buying a cleaner-looking stamp with evidence that does not reach — the session-20 gauntlet enforced exactly that, against the collective's own draft."
+    }
+  },
+
+  "finding": {
+    "headline": "The axis that exiled Horizon does not run beneath the collective's filed cards as one thing — because it was never one thing.",
+    "points": [
+      "Decomposed, the axis has two criteria; only one — the outcome-presumption, the reversed burden on the ultimate finding — is load-bearing. It is met cleanly by exactly one case: Horizon (STRUCTURAL) — and Horizon is the EXTERNAL REFERENCE that originated the axis, filed at the edge, NOT one of the nine cards under test. Among the nine filed cards themselves it is met by NONE. Card 006 (COMPAS/Loomis), the most opaque of them, was independently verified to FAIL it — advisory, post-guilt, inputs contestable, the judge's last word — so it earns a distinction, not a refiling; card 001 is the sole filed card where the criterion is even arguable; its named exit condition has since been run (session 19), and the retrievable adjudication record (OIA, England & Wales — non-binding) runs against the reversal without reaching the card's filed US instances — so it stays marked UNSETTLED, not asserted and not cleared. The honest in-sample count is 0 of 9, not 1 of 9: the load-bearing criterion is a property unique to the exiled reference, not an in-sample rate. Horizon's edge-filing therefore holds on a test the most opaque filed card could have passed and did not — not on fiat, and not propped up by a strained grade on card 001.",
+      "The OTHER criterion — mechanism-opacity — genuinely runs beneath filed cards: totally under 006 (a trade-secret score the court itself could not examine), and present under 001 (a bare probabilistic score). This is a real, previously-unmarked shared property. The session-08 Interlocutor's demand is therefore PARTIALLY vindicated on this sub-axis: the collective's own filed work does sit on part of the axis it used to exile Horizon — the opacity part, not the load-bearing part.",
+      "The result is a SPLIT between the two criteria, not between the cards: the collective had fused a property it SHARES with the exiled case (opacity) and a property it does NOT (outcome-presumption) into a single axis. Pulled apart, one runs beneath our cards and one does not. That is neither a clean acquittal nor the self-flattering 'second rail' the pre-read rejected — and it rests on the decomposition and the opacity finding, not on card 001.",
+      "The predictable half of this is close to tautological, and the work says so: that outcome-presumption is essentially unique to Horizon follows from the collective having built these nine cards, with Horizon exiled precisely because its reversed burden was the outlier. The non-obvious content is elsewhere — the decomposition of a fused axis into two criteria, and the finding that the opacity criterion runs beneath the collective's own cards. This is a PARTIAL self-audit, not a complete one: the one consequence that would move a shipped work (card 001) is left explicitly unresolved, with its missing evidence named rather than a debt deferred.",
+      "Against reading the distinction as reassurance: the STRUCTURAL-vs-UNSETTLED gap may track which domains happen to legislate or adjudicate procedure (criminal law does; a UK higher-education ombudsman now does, in part; US academic discipline largely does not) rather than how completely the accused's chance to doubt is crushed. Horizon's formal regime eventually self-corrected (Hamilton, 2021); the burden-on-the-provider record found at session 19 is England & Wales, while card 001's two named losses are US — students facing processes 'lacking safeguards of courts', with no analogous correction reaching them in the record. Whatever 001's outcome-presumption ultimately proves to be for the filed instances, the severity of what the tool does to a wrongly-flagged student is not measured by any grade on this docket — the grade tracks procedural form, not stakes. The distinction is real on the criteria; it is not a reason to relax."
+    ],
+    "consequence": "No OTHER shipped work is modified by this instrument. Card 001 is NOT recorded as a candidate refiling; it is marked UNSETTLED — since session 19, an informed UNSETTLED: its named evidentiary gap has been partially paid (a sourced adjudication record now exists; it runs against the reversal and does not reach the filed US instances), and what remains open is named on the card. A session-20 attempt to clear the card to PARTIAL on that record failed the collective's own gauntlet as an overclaim and was never shipped — the docket's process applied to the docket itself. Card 006 is edge-adjacent on the opacity sub-axis only. The taxonomy's edge-slot for Horizon stands, now backed by the decomposition and an independently verified distinction on the load-bearing criterion rather than by assertion.",
+    "self_implication": "This docket is itself an instrument that grades cases — and it insists, on its own face, that every non-STRUCTURAL grade is argued, contestable, and doubtable, because a docket that presented its argued placements as beyond rebuttal would be committing the exact failure it studies."
+  }
+}

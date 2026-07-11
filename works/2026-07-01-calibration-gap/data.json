@@ -1,0 +1,125 @@
+{
+  "generated": "2026-07-01",
+  "fpr_scale_cap": 20,
+  "tools": [
+    {
+      "id": "gptzero",
+      "name": "GPTZero",
+      "claim_accuracy": 99,
+      "claim_fpr": 0.24,
+      "independent_fpr": 18,
+      "nnes_fpr": null,
+      "confidence_independent": "high",
+      "confidence_note": "Real-world FPR 18%: Ibrahim et al., Scientific Reports 2023 — real student submissions across 32 university courses (FPR 18%, FNR 32%; a paraphrasing attack raises FNR to 95%). CORRECTED 2026-07-03 (session 07): previously 15% via a commercial aggregator chain; the aggregator's own figure is 18% and traces to this peer-reviewed study, now cited directly. NNES bar removed 2026-07-03: the 61% previously shown here is Liang et al.'s SEVEN-DETECTOR AVERAGE (61.22%), not a GPTZero-specific rate; per-detector rates were not individually retrievable. The average now appears, correctly framed, in the measurement-sources list below.",
+      "key_finding": "Under adversarial editing, mean accuracy across the detectors tested falls from 39.5% to 22.2% — a 17.4-point drop, not a 17.4% floor (Perkins et al., 2024). PeerJ 2025 (Pratama): flags 25% of non-native-authored AI-assisted texts as 100% AI vs ~11% for native authors."
+    },
+    {
+      "id": "turnitin",
+      "name": "Turnitin",
+      "claim_accuracy": 98,
+      "claim_fpr": 1.0,
+      "independent_fpr": 4,
+      "nnes_fpr": null,
+      "confidence_independent": "high",
+      "confidence_note": "Sentence-level FPR ~4%: Turnitin's own admission (document-level claim: <1% for documents with 20%+ AI writing) — note this bar is a sentence-level figure beside document-level bars for other tools. CORRECTED 2026-07-03 (session 07): previously displayed 5, contradicting its own cited source. NNES bar removed 2026-07-03: no retrievable peer-reviewed study supports a Turnitin-specific NNES rate — the foundational cross-detector study (Liang et al.) excluded Turnitin, and Turnitin's own research reports no statistically significant ELL bias at 300+ words (short documents show a larger FPR gap; vendor research). An unattributed 'real-world accuracy 85–90%' line was also removed as unsourced. ACU: 25% of ~6,000 referrals dismissed (ABC News, Oct 2025).",
+      "key_finding": "Australian Catholic University: ~6,000 academic misconduct allegations in 2024 (~90% AI-related), ~25% dismissed, Turnitin AI detection abandoned March 2025. Turnitin's own blog: below a 20% detected-AI share 'there is a higher incidence of false positives'."
+    },
+    {
+      "id": "zerogpt",
+      "name": "ZeroGPT",
+      "claim_accuracy": null,
+      "claim_fpr": null,
+      "independent_fpr": 16.67,
+      "nnes_fpr": null,
+      "confidence_independent": "high",
+      "confidence_note": "FPR 16.67%: Pratama 2025, PeerJ Computer Science, Table 4 (established-ground-truth scenario). CORRECTED 2026-07-03 (session 07): previously 28%, attributed to a benchmark that could not be retrieved in the named lab's published material. Detection accuracy: Perkins et al. 2024 (46.1%, baseline, non-adversarial), Weber-Wulff et al. Dec 2023 (59%). Both peer-reviewed.",
+      "key_finding": "PeerJ CS 2025 (Pratama): ZeroGPT 64.35% overall accuracy at 16.67% FPR; DetectGPT, despite a claimed 99% accuracy, achieved 54.63% — 'virtually no better than random guessing' (the paper's verdict, applying to DetectGPT alone; an earlier version of this line wrongly extended it to ZeroGPT and dressed a paraphrase as a quotation)."
+    },
+    {
+      "id": "originality",
+      "name": "Originality.ai Turbo",
+      "claim_accuracy": 99,
+      "claim_fpr": 3,
+      "independent_fpr": 0.25,
+      "nnes_fpr": null,
+      "confidence_independent": "high",
+      "confidence_note": "Vendor claim: 'under 3% false positive rate' for the Turbo model, 99% accuracy (originality.ai's own pages). Independent FPR 0.25%: RAID benchmark (Dugan et al., ACL 2024), Table 4, naive threshold 0.5 on RAID's clean human corpus (range 0.07-0.47% across thresholds). CORRECTED 2026-07-03 (session 06): this row previously displayed claim 0.2% / measured 37% ('a 185x gap') — neither figure is in the RAID paper or vendor marketing. See the correction note below and memory/discarded.md in the research archive.",
+      "key_finding": "The FPR spec holds on RAID's clean human corpus (0.07-0.47% at naive thresholds) — this tool's calibration gap is elsewhere: accuracy at 5% FPR collapses under distribution shift, to 8.5% on Python code and 55.8% overall on RAID's unseen extra domains, against 99% claimed accuracy (RAID Tables 4 and 7)."
+    }
+  ],
+  "benchmark_sources": [
+    {
+      "id": "liang2023",
+      "name": "Liang et al. (2023)",
+      "venue": "Cell Patterns (peer-reviewed)",
+      "url": "https://arxiv.org/abs/2304.02819",
+      "finding": "Average 61.22% false positive rate across seven detectors on TOEFL essays; 89 of 91 essays (97.8%) flagged by at least one detector [corrected 2026-07-03: previously misstated as 'one detector flagged 98%' -- the 97.8% is a union statistic across all seven detectors]"
+    },
+    {
+      "id": "dugan2024",
+      "name": "Dugan et al. (2024) — RAID Benchmark",
+      "venue": "ACL 2024 (peer-reviewed)",
+      "url": "https://aclanthology.org/2024.acl-long.674",
+      "finding": "6M+ texts, 11 models, 11 adversarial attacks: detectors struggle at safe false positive rates and collapse under simple adversarial editing"
+    },
+    {
+      "id": "pratama2025",
+      "name": "Pratama (2025)",
+      "venue": "PeerJ Computer Science (peer-reviewed)",
+      "url": "https://doi.org/10.7717/peerj-cs.2953",
+      "finding": "GPTZero flags 25% of non-native-authored AI-assisted abstracts as 100% AI vs 11.11% for native authors (over-detection rate, Table 4); ZeroGPT: 64.35% accuracy, 16.67% FPR; DetectGPT: 54.63% accuracy — 'virtually no better than random guessing'"
+    },
+    {
+      "id": "stowe2025",
+      "name": "Stowe et al. (2025)",
+      "venue": "ArXiv cs.CL preprint",
+      "url": "https://arxiv.org/abs/2512.09292",
+      "finding": "Across 16 detectors: non-white ELL essays disproportionately classified as machine-generated; economically disadvantaged students' essays classified as machine-generated less often"
+    },
+    {
+      "id": "jung2025",
+      "name": "Jung et al. (2025) — FairOPT",
+      "venue": "ArXiv cs.CL/cs.LG preprint",
+      "url": "https://arxiv.org/abs/2502.04528",
+      "finding": "Fixed detection threshold causes systematic group disparities; shorter texts and 'neurotic' writing styles disproportionately flagged"
+    }
+  ],
+  "harm_cases": [
+    {
+      "id": "acu",
+      "institution": "Australian Catholic University",
+      "year": 2024,
+      "scale": "institutional",
+      "allegations": 6000,
+      "dismissed_pct": 25,
+      "detector": "Turnitin",
+      "outcome": "Abandoned Turnitin AI detection March 2025. Deputy VC acknowledged figures 'substantially overstated'.",
+      "source": "ABC News Australia (2025-10-09)",
+      "source_url": "https://www.abc.net.au/news/2025-10-09/artificial-intelligence-cheating-australian-catholic-university/105863524"
+    },
+    {
+      "id": "yale",
+      "institution": "Yale School of Management",
+      "year": 2024,
+      "scale": "individual",
+      "allegations": null,
+      "dismissed_pct": null,
+      "detector": "GPTZero",
+      "outcome": "EMBA student the Yale EMBA student (a French national): 1-year suspension, failing grade. Submitted scans showing the same tool flagged academic papers by Yale scholars, including a former university president, as probably AI-generated. Federal lawsuit pending (D. Conn. 3:25-cv-00159). Injunction denied May 2025.",
+      "source": "Yale Daily News; Poets&Quants (2025-05)",
+      "source_url": "https://yaledailynews.com/articles/som-student-sues-yale-alleges-wrongful-suspension-over-ai-use"
+    },
+    {
+      "id": "minnesota",
+      "institution": "University of Minnesota",
+      "year": 2024,
+      "scale": "individual",
+      "allegations": null,
+      "dismissed_pct": null,
+      "detector": "GPTZero + faculty review",
+      "outcome": "PhD student the Minnesota PhD student expelled; student visa revoked; career and residency ended. Expulsion upheld by Minnesota Court of Appeals (Feb 2026). Federal lawsuit dismissed (Oct 2025). Believed to be the first student expelled from the University of Minnesota over alleged AI use (KARE 11).",
+      "source": "Minnesota Lawyer; MPR News (2025-01-17)",
+      "source_url": "https://minnlawyer.com/2026/02/13/u-of-m-ai-cheating-expulsion-upheld-appeal"
+    }
+  ]
+}

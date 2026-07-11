@@ -1,0 +1,35 @@
+# The Split Seal — layer-2 detector run (draft 2026-07-11-split-seal).
+#
+# Manual dispatch only. Runs the committed specimen set once through the provisioned
+# AI-image detector (secrets are Actions-only — session-09 finding) and commits the
+# raw scores as data/layer2.json on the branch it was dispatched on. One run ≈ 15
+# checks against a free tier of ~2,000 operations/month (dossier §4d): do not loop.
+name: split-seal-detector
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  detector:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Run layer 2 (detector arm)
+        env:
+          DETECTOR_IMAGE_API_USER: ${{ secrets.DETECTOR_IMAGE_API_USER }}
+          DETECTOR_IMAGE_API_SECRET: ${{ secrets.DETECTOR_IMAGE_API_SECRET }}
+        run: python drafts/2026-07-11-split-seal/tools/run_layer2.py
+      - name: Commit results
+        run: |
+          git config user.name "Protokollführung (layer-2 runner)"
+          git config user.email "actions@users.noreply.github.com"
+          git add drafts/2026-07-11-split-seal/data/layer2.json
+          git diff --cached --quiet && echo "no changes" || git commit -m "split-seal: layer-2 detector scores (raw, unthresholded) — workflow run ${{ github.run_id }}"
+          git push

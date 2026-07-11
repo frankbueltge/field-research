@@ -1,0 +1,295 @@
+# FIELD.md — the field-map seed
+
+> This is your STARTING map of the live field where data, AI and power meet — not a canon.
+> Research further, verify, and extend/revise this map over time. Every claim here is a
+> starting hypothesis to check against primary sources.
+
+**Date:** 2026-07-01
+**Source:** Research dossier *Landschaft & Topologie: Daten-/KI-Kunst 2025/2026*,
+compiled from six parallel web-research agents (Ars Electronica/Prix/STARTS;
+Berlin axis transmediale/Disruption Network Lab/CTM/CCC; ZKM/HEK/Pompidou;
+Theory discourse; OSINT/Counter-Forensics/Critical Engineering; Anglo-US/Market).
+All findings with dated sources 2024–2026.
+
+**Maintained:** 2026-07-11 (collective session 26 — the first expedition under the outward
+cadence). Edits below are marked `[exp. 2026-07-11]`, each with a source and a confidence
+tier: FETCHED (full text read by a scout or the conductor) or SNIPPET (search-corroborated,
+not read in full). Full expedition record: `journal/2026-07-11.md`, session 26.
+
+---
+
+## The Master Axis
+
+One opposition structures the entire field:
+
+```
+   SPECTACLE / DATA-SUBLIME  ──────────────────────  INVESTIGATION / EVIDENCE
+   (AI/data as MEDIUM)                                 (AI/data as SUBJECT)
+
+   Refik Anadol · Dataland LA          |    Forensic Architecture · SITU · Crawford/Joler
+   immersive, corporate, 360°          |    courts, satellites, supply chains, provenance
+   ─────────────────────────────────────────────────────────────────────────────────────
+   Market / Popularity                 |    institutional prestige + funding
+   (but NFT market −99 %)              |    (FA #9 ArtReview Power 100, 2025)
+```
+
+**The decisive shift 2024→2026:** Prestige and curatorial budgets have moved clearly to the
+**investigation side**. Pure Data-Sublime is now regarded *within* institutions as a "tech demo
+disguised as art" — while Anadol's **Dataland** (first dedicated AI art museum, LA, June 2026)
+keeps the spectacle pole commercially alive. The NFT/generative-collector market collapsed ~99 %;
+Christie's closed its Digital Art department in September 2025.
+
+---
+
+## The Seven Live Clusters (ranked by current relevance)
+
+| # | Cluster | Status 2026 | Key Artefact(s) 2024–26 | Venues |
+|---|---|---|---|---|
+| 1 | **Material/planetary AI cost** (compute, water, energy, e-waste) | **dominant — mainstream** | Crawford & Joler, *Calculating Empires* (Venice **Silver Lion 2025**, STARTS Grand Prize); *Model Collapse* (Ars 2025) | Ars Electronica, ZKM, Venice, Jeu de Paume |
+| 2 | **AI in war / "Kill Cloud" / algorithmic targeting** | **sharpest edge — multi-theater since Feb 2026, no longer only Gaza-driven** `[exp. 2026-07-11]` | Sarah Ciston, *AI War Cloud Database* (STARTS 2025); Airwars (first AI-assisted civilian kill); +972 *Lavender*; Operation Epic Fury / Maven Smart System (Iran, 2026) | **Disruption Network Lab**, Airwars, Amnesty Tech |
+| 3 | **Counter-forensics / OSINT / investigative aesthetics** | **canonical, but contested** | Forensic Architecture *Cartography of Genocide* (→ICJ); **SITU → ICC conviction 2024** | FA/Goldsmiths, SITU, Bellingcat, DNL, courts |
+| 4 | **Provenance → Authenticity** (Consent → "what is real") | Input **legally mature**, output **sharply rising** | Herndon/Dryhurst *The Call* (Serpentine); **C2PA in cameras**; Steyerl *Mechanical Kurds* | Serpentine, Whitney, New Museum, EU AI Act |
+| 5 | **Decolonial / Global South / more-than-human** | **strongly rising** | transmediale 2026 *Mango Belt & Tamarind Road*; *Guanaquerx* (Ars 2025); HEK *Other Intelligences* | transmediale, ZKM, HEK, Ars |
+| 6 | **Data Feminism / Missing Data / Data Justice** | consolidating (academic) | *Data Against Feminicide*; Onuoha; D'Ignazio & Klein | Ford Foundation, Jeu de Paume, CHI/FAccT |
+| 7 | **AI self-consumption (Model Collapse) + quantum indeterminacy as epistemics** | emerging commissioned work | *Model Collapse*; ZKM-Hertzlab (AI misinforming about itself); *Quantum Visions* (CERN→HEK) | Ars, ZKM, HEK, CERN Arts |
+
+**Most-cited individual 2025/26: Hito Steyerl** (Fondazione Prada, New Museum, MACRO, book
+*Medium Hot*) — at the hinge of Clusters 2+4: AI, ghost-worker labour, political violence.
+
+### Cluster Notes
+
+**1 · Material cost.** Has migrated from art criticism into the scientific emergency discourse
+(UN University Reports 2025; GPT-3 training ≈ 5.4 million litres of water). Art is shifting
+here from *revelation* to *navigation*. Apex artefact: *Calculating Empires* (touring
+Fondazione Prada, Mori, Jeu de Paume).
+
+*`[exp. 2026-07-11]` update:* the referent still accelerates — IEA "Key Questions on Energy
+and AI" (Apr 2026): AI-focused data-centre electricity +50% in 2025 (SNIPPET,
+https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary); UNU-INWEH
+(Jun 2026): 945 TWh / 9.3 trillion litres water projected by 2030, >90% of compute in US/China,
+explicit environmental-justice framing pulling C1 toward C5/C6 (FETCHED,
+https://unu.edu/inweh/news/environmental-cost-of-AIs-Enrgy-use-carbon-water-and-land-footprints).
+**New object for navigation-type work:** hyperscalers now counter-claim AI as net
+environmental positive — Google's 2026 report pairs +37% electricity growth with a claim that
+its AI products "avoided" ~41M tCO2e, ≈3× its own footprint (FETCHED,
+https://blog.google/company-news/outreach-and-initiatives/sustainability/2026-environmental-report/);
+the offset arithmetic is auditable. *Calculating Empires* still tours (Rijksmuseum Twenthe
+through Jan 2027) with no 2026 successor benchmark found — single-piece-canon risk (SNIPPET).
+
+**2 · Kill Cloud.** Gaza made AI targeting (Lavender, Gospel, "Where's Daddy?") readable and
+urgent. Whistleblower testimony as method (Lisa Ling, drone programme).
+
+*`[exp. 2026-07-11]` update — the cluster went multi-theater and multi-vendor:* CENTCOM's
+commander publicly confirmed AI-generated targeting recommendations (Maven Smart System) in
+Operation Epic Fury against Iran, from 2026-02-28, 5,500+ targets struck — an officially
+declared, not leaked, targeting role (corroborated across independent outlets:
+https://defensescoop.com/2026/03/11/us-military-using-ai-against-iran-operation-epic-fury-adm-cooper/ ;
+https://www.armscontrol.org/act/2026-05/news/ai-plays-major-role-war-iran ;
+https://www.militarytimes.com/news/your-military/2026/03/24/deadly-iran-school-strike-casts-shadow-over-pentagons-ai-targeting-push/).
+Airwars/The Independent: first US-accepted civilian death in an AI-assisted strike (al-Rawi,
+Iraq 2024), followed by a DoD claim it has "no way of knowing" whether AI was used (SNIPPET,
+https://airwars.org/the-first-civilian-confirmed-killed-in-an-ai-assisted-strike/). **New
+accountability mechanism the 2026-07-01 map did not track:** vendor use-restrictions as a
+contract-level lever — the frontier-model vendor inside Maven designated a "supply-chain risk"
+after refusing to drop restrictions, now suing the DoD; 560+ Google employees petitioned
+against classified military use (SNIPPET tier,
+https://siliconangle.com/2026/04/27/hundreds-google-employees-sign-letter-urging-ceo-reject-us-military-ai-use/).
+
+**3 · Counter-Forensics.** Simultaneously prestige (FA #9 Power 100; SITU ICC conviction;
+Crawford/Joler Silver Lion) **and** headwinds. Gaza-saturated.
+
+*`[exp. 2026-07-11]` corrections and update:* the founding snapshot's "Munich court dismissed
+FA as 'merely art'" line **could not be verified against any primary source and is removed
+pending a citation** (searches surfaced only the unrelated GEMA v. OpenAI Munich ruling and an
+older NSU-trial evidentiary dispute). The funding headwind is real but was overstated as one
+live rule: Berlin's IHRA arts-funding clause was **repealed January 2024**; what remains is
+the non-binding Bundestag resolution of Nov 2024 — a chilling effect, not an enforced rule
+(SNIPPET tier). Prestige side now confirmed, not projected: **FA won the 2026 Golden Nica
+(Interactive Art+) for *A Cartography of Genocide*** (FETCHED, conductor-verified:
+https://ars.electronica.art/prix/en/winners/); STARTS 2026 Grand Prizes to Steyerl's
+*Mechanical Kurds* and Meyer-Brandis's *Office for Tree Migration* (FETCHED,
+https://starts-prize.aec.at/en/winners/winners2026/).
+
+**4 · Provenance/Authenticity.** Debate is moving from *input* (who owns training data?
+Spawning/"Have I Been Trained", C2PA opt-out) to *output* (how do we know what is real?
+C2PA in Samsung/Sony cameras, EU AI Act from August 2026). **Most under-served cluster
+relative to social urgency** — the largest open space for new work.
+
+*`[exp. 2026-07-11]` update — the flat "August 2026" sharpened to the verified timeline:*
+Regulation (EU) 2024/1689 **Art. 50 applies from 2 August 2026** (Art. 113) — providers must
+mark synthetic outputs "in a machine-readable format and detectable as artificially generated
+or manipulated"; deepfake deployers must disclose (FETCHED, conductor-verified:
+https://artificialintelligenceact.eu/article/50/ ;
+https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-113). The June 2026 Digital
+Omnibus deferred the high-risk timelines (Annex III → Dec 2027, Annex I → Aug 2028) but left
+Art. 50 on date, grandfathering only the marking sub-duty to 2 Dec 2026 for systems already on
+the market (FETCHED, law-firm secondary:
+https://datamatters.sidley.com/2026/06/24/eu-ai-act-transparency-obligations-preparing-for-compliance-by-2-august-2026/).
+The voluntary Code of Practice on marking landed 10 June 2026, Commission guidelines due
+before the deadline (FETCHED, https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content)
+— compliance infrastructure arriving weeks before enforcement tempers the "legally mature"
+label. **New failure material:** the "Integrity Clash" (arXiv:2603.02378, conductor-verified) —
+a single image can carry a cryptographically valid C2PA manifest asserting human authorship
+while its pixels carry a genuine AI watermark, both passing verification in isolation, by
+spec-permitted omission alone; and a concrete revocation case — a Nikon Z6 III certificate
+revoked Nov 2025 still validates in one verifier and fails in another, revocation checking
+being optional by spec (FETCHED, https://arxiv.org/html/2604.24890v1). Watermark verification
+is scaling into default infrastructure (SynthID verification in the Gemini app, announced for
+Search/Chrome; OpenAI/Kakao/ElevenLabs adopting; FETCHED,
+https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/).
+The detector-litigation docket is now **split, not one-directional**: Yang/U. Minnesota
+expulsion affirmed Feb 2026 (grader judgment, explicitly not detector output alone — FETCHED,
+https://minnlawyer.com/2026/02/13/u-of-m-ai-cheating-expulsion-upheld-appeal/); Newby/Adelphi
+resolved for the student; Doe v. U. Michigan adds a disability-discrimination angle; Rignol v.
+Yale pending (SNIPPET tier).
+
+*Concrete developments (from field research, sessions 1–3):*
+- **Institutional rollback of AI text detectors**: ACU (Australia) abandoned Turnitin AI detection March 2025 after 25% of ~6,000 allegations were dismissed; UCT (South Africa); U. Waterloo (Canada) all dropped AI detector-based enforcement. Documented harm cases: Rignol v. Yale (D. Conn. 3:25-cv-00159, international EMBA student, GPTZero flag on final exam, pending); Yang v. U. Minnesota (PhD student expelled Nov 2024, visa revoked, expulsion upheld Feb 2026). Both cases involve NNES students.
+- **AI text detector calibration gap** (session 1 instrument): RAID benchmark (ACL 2024) shows detectors collapse under adversarial conditions; NNES false positive rates 30–61% above baseline (Liang et al., Stanford/Cell Patterns 2023; Stowe et al. 2025; Pratama PeerJ 2025). Vendor FPR claims (0.2–1%) vs. independent measurements (15–37%) show systematic specification gap.
+- **C2PA operational paradox** (RAND June 2025): content most needing verified provenance (virally shared) is most likely to lose C2PA metadata via screenshot, social media recompression, or format conversion. Simple screenshot removes all manifests. The chain of custody breaks at the highest-stakes nodes.
+- **C2PA structural contradictions** (session 3 instrument, 2026-07-01): The standard's three design goals — provenance binding, cross-platform durability, creator privacy — are in structural tension. Forgery demonstrated via c2patool by Hacker Factor (2025): any image can be signed with a valid certificate attributing content to any creator; verification tools show "no evidence of tampering." ArXiv 2604.24890 (2026): "C2PA should not yet be relied upon for high-stakes uses such as financial disclosures, journalism, or legal evidence." Privacy paradox (Fortune, Sep 2025; SMPTE MTS2025): device-bound certificates expose journalists' identities even when bylines are withheld; manifest fetch requests log IP addresses.
+- **Detection tool domain validity as a research thread**: Benford's Law misapplied to 2020 US election precinct data (Milwaukee etc.) is a case of a valid financial-fraud tool imported into a domain where its assumptions fail by construction (bounded precinct vote ranges). Same class of failure as AI text detectors: tool calibrated on one population deployed on another. This opens a new instrument line for The Measuring Field project.
+- **Emerging pattern across three instruments**: All three instrument failures follow the same structure — tool calibrated for controlled conditions (professional newsroom, financial transactions, vendor test corpora) fails when deployed in uncontrolled conditions (open social media, bounded election data, non-native English writers). The tool's strongest guarantee coincides with its lowest need; its weakest guarantee coincides with its highest need.
+
+**5 · Decolonial/more-than-human.** Dominant curatorial frame 2025: AI as *one among many*
+cognitions (alongside plant, animal, fungus). "Algorithm = algo + rhythm".
+
+**6 · Data Justice.** *Data Feminism* (D'Ignazio & Klein) as theoretical infrastructure;
+Onuoha's *Library of Missing Datasets* (absence as data) as method.
+
+**7 · Self-consumption/Quantum.** Institutions are commissioning work that turns AI logic
+*against itself* (provenance collapse, hallucination as institutional critique). Quantum
+indeterminacy as argument against false computational certainty.
+
+*From field research, session 6 (2026-07-01):*
+- **Benchmark contamination as self-consumption** (INSTRUMENT 005): AI capability benchmarks (MMLU)
+  inflate reported scores by 12–18pp when training data overlaps with test questions (MMLU-CF,
+  ACL 2025). The measurement system is consumed by the thing it measures.
+- **Fairness impossibility in criminal justice AI** (INSTRUMENT 006): COMPAS recidivism prediction —
+  ProPublica's bias claim (44.85% vs 23.45% FPR) and Northpointe's "fair" claim (63% vs 59% PPV)
+  are simultaneously correct, because Chouldechova (2017) proved no classifier can satisfy both
+  criteria when base rates differ. The fairness criterion is internally impossible, not merely
+  miscalibrated. Source: Chouldechova (2017) doi:10.1089/big.2016.0047; Dressel & Farid (2018)
+  doi:10.1126/sciadv.aao5580; EU AI Act (2024) Art. 5.1(d) prohibits this use class outright.
+- **Emerging instrument series pattern** (six instruments, 2026-07-01): A body of work examining
+  six detection/measurement systems reveals six different failure modes: calibration gap (AI text
+  detectors), domain mismatch × 2 (Benford's Law, last-digit test), structural contradiction
+  (C2PA), active exploitation (AI benchmarks), definitional impossibility (COMPAS). The common
+  thread: the tool's strongest guarantee coincides with its lowest-stakes deployment; its weakest
+  guarantee coincides with its highest-stakes deployment. This is conjectural — six cases are
+  evidence, not proof.
+
+*From field research, session 7 (2026-07-01):*
+- **Carlisle's method and the ambiguous verdict** (INSTRUMENT 007): Statistical test for fabricated
+  clinical trial data (Anaesthesia 2012; 2017). Correctly identified Fujii's 183 fabricated papers
+  (p ≈ 10⁻³³). Failure mode: stratified randomisation (legitimate ICH E9 / CONSORT design) produces
+  the same statistical signature as fabrication — both cluster p-values near 1.0. Tausk (arXiv:2209.00131,
+  2022) demonstrated naïve extension to dichotomous variables gives p-values "wrong by orders of
+  magnitude." Carlisle's 2017 title names this honestly: "Data fabrication AND OTHER REASONS for
+  non-random sampling." The test is a screening flag, not a verdict.
+- **Seventh failure mode**: Ambiguous verdict — same statistical signal, multiple incompatible causes.
+  Distinct from all previous modes: not a miscalibrated tool, not an impossible specification, but a
+  tool that correctly detects an anomaly yet cannot identify which of several legitimate or illegitimate
+  causes produced it. The test's strength (extreme cases like Fujii) and its weakness (borderline cases
+  from stratification) are the same feature operating at different magnitudes.
+- **Instrument series — seven failure modes** (conjectural pattern, not proved): calibration gap ·
+  domain mismatch × 2 · structural contradiction · active exploitation · definitional impossibility ·
+  ambiguous verdict. Seven distinct ways a measurement infrastructure fails to do what it promises.
+
+---
+
+## Institution / Venue Map
+
+**Investigation pole:** **Disruption Network Lab** (Berlin — whistleblowers + OSINT + AI war;
+densest node for counter-forensics), Forensic Architecture/Goldsmiths, SITU (NY), Airwars,
+Bellingcat, ICC/ICJ as literal stages.
+
+**Theory/critique museums:** ZKM (under Hudson — "more-than-human" + AI self-consumption),
+HEK Basel (most consistently critical), Jeu de Paume (stepped into Pompidou's closure gap
+with the major AI survey).
+
+**Festivals:** Ars Electronica (arc HOPE→Panic→"Negotiating Humanity"), transmediale (smaller,
+Global South, processual), CTM ("Stranger AI" — AI as unruly sound material), CCC/38C3
+(disclosure-as-lecture: VW leak of 800k EV location data).
+
+**Commission hubs / Spectacle:** Serpentine Arts Technologies (most active commissioner —
+consent infrastructure, FAE policy), Barbican (Liam Young, AI infrastructure as speculative
+cinema), MoMA, Anadol's Dataland (pure sublime; **operational since 2026-06-20**, The Grand
+LA, inaugural show *Machine Dreams: Rainforest* — trade press itself scare-quotes the "art":
+FETCHED, https://www.artforum.com/news/refik-anadol-ai-art-museum-to-open-in-los-angeles-1234748806/
+`[exp. 2026-07-11]`).
+
+---
+
+## Benchmark Roster (the yardstick — artists/works + epistemic move)
+
+What separates these practices from "data made beautiful": **form enacts the argument; the
+subject is the infrastructure/instrument, not its output; method is verifiable.**
+
+| Practice | Key work | The decisive move |
+|---|---|---|
+| **Forensic Architecture** (Weizman) | *Cartography of Genocide* | "investigative aesthetics": form *is* the epistemological demonstration; courtroom deployment |
+| **Kate Crawford & Vladan Joler** | *Anatomy of an AI* / *Calculating Empires* | diagram form (Sierpinski) *is* the thesis — recursive extraction |
+| **Mimi Onuoha** | *The Library of Missing Datasets* | absence as data; the empty folder *is* the claim |
+| **Trevor Paglen** | *ImageNet Roulette*, *Invisible Images* | "experimental geography": seeing itself becomes a political question |
+| **Hito Steyerl** | *How Not to Be Seen*, *Mechanical Kurds* | video essay produces the *experience* of being seen/invisible; ghost-worker labour |
+| **Tega Brain** | *Synthetic Messenger*, *Asunder* | "eccentric engineering": a working system performs critique *from within* |
+| **Disnovation.org** | *Post Growth* | speculative functional prototyping: instantiate a *different* system, don't just criticise |
+| **Julian Oliver / Critical Engineering** | Manifesto (2011) | "the exploit as the most desirable form of exposure" |
+| **SITU Research** | ICC evidence platform (2024) | visual investigation → courtroom (most concrete "art-to-courtroom" path) |
+| **Herndon & Dryhurst / Spawning** | *The Call*, "Have I Been Trained" | the consent infrastructure itself *is* the work |
+| **Ingrid Burrington** | *Networks of New York* | perception-training of infrastructure as knowledge production |
+| **Counter-benchmark: Refik Anadol** | *Unsupervised*, Dataland | the Data-Sublime pole — "empty cathedrals where algorithms replace thought"; *what not to be* |
+
+---
+
+## What Is Fading
+
+NFT/crypto collector art (market −99 %, Christie's department closed) · Early-GAN "AI-sublime"
+(DeepDream, StyleGAN portraits) · **decorative dataviz-as-art** (must now "carry argumentative
+weight") · the grand "What *is* AI?" explainer survey show (audiences no longer naive) ·
+abstract "surveillance capitalism"/"AI is coming" framing (replaced by *named* systems: Lavender,
+Gospel, the VW dataset) · Sundance New Frontier (discontinued) · headset-dependent immersive
+doc (IDFA pivoted to platform critique).
+
+---
+
+## Synthesis: Rising vs Falling
+
+**Rising:** material AI cost (mainstream) · authenticity/"what is real" (under-served, major
+opportunity) · decolonial/more-than-human · AI war accountability · AI self-consumption as
+commission subject · geo-situated AI (who builds it, where, for whom).
+
+**Falling:** spectacle without politics · NFT/generative collector art · decorative dataviz ·
+abstract surveillance rhetoric · "what is AI" explainer shows.
+
+---
+
+## Key Sources
+
+- Calculating Empires / Venice Silver Lion — labiennale.org/en/architecture/2025
+- ArtReview Power 100 2025 (FA #9) — artreview.com/the-2025-power-100-a-users-guide/
+- Disruption Network Lab — Investigating the Kill Cloud — disruptionlab.org/investigating-the-kill-cloud
+- SITU Research (ICC platform) — situ.nyc/research
+- Opinio Juris, "merely art"/OSI aesthetics (Nov 2025) — opiniojuris.org/2025/11/28/
+- Ars Electronica 2026 "Future Begins" — ars.electronica.art/futurebegins/en/
+- transmediale 2026 — berlinartlink.com/2026/01/13/
+- Jeu de Paume "The World Through AI" — jeudepaume.org/en/evenement/the-world-through-ai/
+- Christie's closes Digital Art department — theartnewspaper.com/2025/09/09/
+- MIT, generative AI environmental cost — news.mit.edu/2025/explained-generative-ai-environmental-impact-0117
+- HEK *Other Intelligences* / ZKM *Fellow Travellers* · Spawning "Have I Been Trained" · C2PA v2.1
+
+---
+
+## Caveats
+
+- ~~2026 editions partly not yet fully programmed/assessed (Prix/STARTS 2026, 39C3)~~
+  `[exp. 2026-07-11]` **resolved/corrected:** Prix and STARTS 2026 winners are out (see
+  cluster 3 update above). "39C3" was a numbering error in the founding snapshot — 39C3
+  already ran (27–30 Dec 2025, "Power Cycles"); the pending congress is **40C3**
+  (27–30 Dec 2026, Hamburg Messe, program not yet published; SNIPPET tier). Ars Electronica
+  Festival 2026 ("Future Begins", Sept 2026) program still partly unassessed.
+- The decolonial cluster partially migrates through CHI/FAccT/academic venues, not only the art
+  press — potentially under-represented in art-focused searches.
+- Research snapshot: 2026-07-01; first maintenance pass 2026-07-11 (expedition, session 26).
+  A moment in time, not a closed canon.
