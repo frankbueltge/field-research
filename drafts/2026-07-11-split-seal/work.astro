@@ -67,6 +67,10 @@ const TIER_LABELS: Record<TierBand, string> = {
 }
 
 // ---- what a Valid manifest asserts about origin, read off claim_generator -------
+// Fragility note (gauntlet, session 29): origin classification substring-matches
+// claim_generator rather than reading the standardized digitalSourceType assertion
+// (empty for w01/w02 in the committed data). Any future specimen addition must
+// re-check these marker lists against its actual claim_generator string.
 const GENERATIVE_MARKERS = ['ChatGPT', 'Designer', 'DALL']
 const CAPTURE_MARKERS = ['Truepic', 'Nikon']
 
@@ -88,6 +92,9 @@ function computeVerdict(l1: Layer1Row, score: number): Verdict {
   if (!l1.manifest_present) return 'ABSENCE'
   if (l1.validation_state !== 'Valid') return 'ABSENCE-of-valid-seal'
   const origin = assertedOrigin(l1.claim_generator)
+  // Valid manifest, unclassifiable origin → nothing to clash with. Not exercised
+  // by the committed 15-specimen set (the only such manifest, c02, is quarantined
+  // fixture tier) — dead code against this data, noted at gauntlet (session 29).
   if (!origin) return 'ABSENCE'
   const band = tierBand(score)
   if (origin === 'generative') {
@@ -132,7 +139,7 @@ function verdictReason(l1: Layer1Row, score: number, verdict: Verdict, note?: st
   if (verdict === 'AGREE') {
     const origin = assertedOrigin(l1.claim_generator)
     const originText = origin === 'generative' ? 'generative origin' : 'hardware capture'
-    return `manifest asserts ${originText}; detector confirms at high confidence (${TIER_LABELS[tierBand(score)]}).`
+    return `manifest asserts ${originText}; the detector's high-confidence tier matches (${TIER_LABELS[tierBand(score)]}) — a match from an uncalibrated instrument, not a confirmation.`
   }
   if (verdict === 'TENSION') {
     return 'a leaning tier does not reach high confidence against the manifest’s asserted origin — tension, not a clash, per the pre-registered rule.'
@@ -219,7 +226,11 @@ const tierSections = [
     label: 'Wild',
     rows: wildRows,
     scored: true,
-    intro: "Real media in circulation, original bytes from Wikimedia Commons — this tier is the work's point.",
+    intro:
+      "Real media in circulation, original bytes from Wikimedia Commons — this tier is the work's point. " +
+      'Selection used the manifest axis only: w01–w03 are here BECAUSE they carry intact generator manifests, ' +
+      'so their 3-for-3 AGREE rows are close to guaranteed by the sampling rule itself — evidence about that rule, ' +
+      'not an independent test of detector accuracy in the wild.',
   },
   {
     key: 'control-camera',
@@ -290,7 +301,7 @@ const idsJSON = escapeForInlineJSON(JSON.stringify(specimenList.map((s) => s.id)
 
   <p class="verdict">
     {noClash
-      ? `No pre-registered clash was observed (N=${specimenList.length}). Both seals fire exactly where the producer volunteered disclosure; the one non-cooperative, community-labelled AI specimen is invisible to both layers.`
+      ? `No pre-registered clash was observed: 0 of ${scoredRows.length} scored specimens (N=${specimenList.length} total, incl. ${fixtureRows.length} quarantined fixtures). Both seals fire exactly where the producer volunteered disclosure; the one non-cooperative, community-labelled (not ground truth) AI specimen is invisible to both layers.`
       : `${clashCount} pre-registered clash(es) observed out of ${scoredRows.length} scored specimens (N=${specimenList.length} total).`}
     <span class="verdict-note">
       Computed, not asserted: {agreeCount} AGREE · {tensionCount} TENSION · {clashCount} CLASH · {absenceCount} ABSENCE-family, across {scoredRows.length} scored specimens (wild + control-camera). Control-fixture (7) is quarantined — no clash countable there.
@@ -310,6 +321,11 @@ const idsJSON = escapeForInlineJSON(JSON.stringify(specimenList.map((s) => s.id)
         <tr><td>≤ 0.10</td><td>flagged human — high</td></tr>
       </tbody>
     </table>
+    <p class="tier-tiebreak">
+      Boundary rule: at an exact boundary the extreme tier wins — 0.90 reads "flagged AI — high",
+      0.10 reads "flagged human — high", 0.50 reads "AI-leaning" (comparison order ≥ 0.90 · ≥ 0.50 ·
+      &gt; 0.10 · else). No committed score sits near a boundary (all are 0.001, 0.01 or 0.99).
+    </p>
     <dl class="verdict-legend">
       <dt>AGREE</dt><dd>a Valid manifest's asserted origin matches a high-confidence detector tier.</dd>
       <dt>TENSION</dt><dd>a leaning tier (not high-confidence) sits against the manifest — recorded as tension, never a clash.</dd>
@@ -507,6 +523,7 @@ const idsJSON = escapeForInlineJSON(JSON.stringify(specimenList.map((s) => s.id)
   .tiers-table table { border-collapse: collapse; font-size: 0.8rem; margin-bottom: 0.9rem; }
   .tiers-table th, .tiers-table td { border: 1px solid var(--rule); padding: 0.35rem 0.7rem; text-align: left; }
   .tiers-table th { background: rgba(22, 25, 26, 0.05); }
+  .tier-tiebreak { margin: 0 0 0.9rem; font-size: 0.72rem; color: var(--ink-soft); }
   .verdict-legend { margin: 0; font-size: 0.76rem; display: grid; grid-template-columns: max-content 1fr; gap: 0.3rem 0.75rem; }
   .verdict-legend dt { font-weight: 700; }
   .verdict-legend dd { margin: 0; color: var(--ink-soft); }
