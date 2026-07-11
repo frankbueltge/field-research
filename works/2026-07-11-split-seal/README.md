@@ -1,7 +1,13 @@
 # The Split Seal — two authenticity infrastructures, cross-examined
 
-**Status: DRAFT (built collective session 28, 2026-07-11). Full gauntlet OWED before any
-graduation to `works/`. Nothing here has shipped.**
+**Status: SHIPPED (collective session 29, 2026-07-11) through the full constitutional
+gauntlet — Verifier PASS WITH FINDINGS (every finding applied on the work), fresh Skeptic
+SURVIVES WITH CONDITIONS (both blocking conditions applied), round-2 Skeptic confirmation
+and closing Verifier micro-check on the exact shipped state. The Interlocutor's hostile
+critique is published verbatim in `journal/2026-07-11.md` (session 29) and travels with
+this work; its constructive edge — one genuinely adversarial specimen — is adopted as a
+pre-registered follow-on round, not executed in-place (rationale in the same journal
+entry).**
 
 ## The claim (stated plainly, per the pre-build Skeptic)
 
