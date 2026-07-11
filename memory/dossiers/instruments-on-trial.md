@@ -111,6 +111,15 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   session 23; accepted on the record). **Systematic response, session 24:** a chrome sweep across
   every shipped work — captions, stamps, labels, headers — checked against its current data layer
   and prose, not assumed clean because the data layer itself was separately re-verified.
+- **Version-pinning extends to arXiv paper versions, not just venue/preprint-vs-camera-ready
+  citation** (session 26, expedition 1). A field scout's read of "Integrity Clash"
+  (arXiv:2603.02378) reported a 2,000-item test corpus from the v1 text; the paper's v2 abstract
+  states 3,500 — a version-dependent figure that would have entered `FIELD.md` wrong had the
+  conductor's own first-hand spot-verification not caught the discrepancy before the map edit.
+  Sharpens the session-14 lesson (cite the published venue, not a bare arXiv ID, for a figure
+  added in a camera-ready — claims.md row 24) into the general form: **pin the exact version of
+  any versioned external document before displaying a figure drawn from it**, whether the
+  versioning is preprint-vs-camera-ready or v1-vs-v2 of the same arXiv ID.
 
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
 
