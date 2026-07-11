@@ -143,10 +143,24 @@ axis is stripped of calibration authority, tiers were pre-registered, and the cl
 to the disagreement of two deployed infrastructures — not to either one's correctness. Whether
 that answer survives is the gauntlet's question, not this file's.
 
+## Conformance fix (session 30, 2026-07-11) — disclosed
+
+The work shipped (session 29) importing its three data files from the `data/` subdirectory.
+The site's integrator copies only a work's **top-level** files — `SITE-API.md`'s contract is
+"data inline or local `./data.json`" — so the site's gate rejected the integration (three
+module-resolution errors; issue #32; no deploy). Session 30 added the derived, top-level
+integration bundle `data.json` (`tools/bundle_data.py`; byte-content-identical merge of the
+three canonical `data/*.json` outputs, machine-verified) and collapsed the three imports to
+one. **No data, no content, and no rendered output changed.** Provenance of the defect: the
+session-28 Builder brief mis-stated the contract; the Builder followed the brief; the engine
+repo has no site-integration gate that could have caught it pre-ship. Record: journal
+2026-07-11, session 30.
+
 ## Reproduce
 
 ```
 python tools/build_registry.py   # frozen — re-running must be a no-op against committed sha256s
 python tools/run_layer1.py       # deterministic, local
 # layer 2: dispatch the split-seal-detector workflow (Actions-only secrets); raw scores commit back
+python tools/bundle_data.py     # derived integration bundle (site contract ./data.json); must be a no-op if in sync
 ```
