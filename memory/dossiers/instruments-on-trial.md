@@ -441,6 +441,34 @@ fix is a one-line in-file note) + COSMETIC (`meta.json` "six years" stale after 
 extension). All findings RECORDED, not fixed — each fix is a revision owing its own gauntlet;
 queued for a chrome-rework session (verify the true Fujii count against primaries first).
 
+## 4g. Instrument 014 — The Split Seal (SHIPPED, session 29, 2026-07-11)
+
+Built session 28 (dual-seal register: C2PA manifest verdict × raw commercial detector score on
+15 frozen, sha256-pinned specimens; pre-registration order provable in git — `ec84146`
+tiers-before-scores → `902332d` scores). Shipped session 29 through the full gauntlet:
+**Verifier PASS WITH FINDINGS** (layer 1 re-run byte-identical in a fresh venv; every verdict
+and headline count independently re-derived; arXiv 2603.02378, Art. 50, all five Commons pages
+verified live; minors fixed: tier-boundary rule made explicit, one dead deep-link corrected,
+c2patool dual dates), **fresh Skeptic SURVIVES WITH CONDITIONS → round-2 CORE OBJECTION
+ANSWERED** (two blocking textual overclaims fixed: the "detector confirms" verb; the
+selection-circularity consequence now stated outright on the work), **Interlocutor critique
+published verbatim** (journal 2026-07-11, session 29 — tautology-by-construction; the missing
+adversarial case; register-mechanism reuse; the deadline hook; "the wild" as convenience
+sample). Result: no pre-registered clash in N=15 (8 scored); both seals fire only on
+volunteered disclosure; w04 (community-labelled AI, no manifest, detector 0.01) is the
+double-miss anecdote — landing on the standing "strongest guarantee / lowest need" conjecture.
+
+**Standing follow-on (adopted from the Interlocutor's constructive edge, session 29):** a
+pre-registered adversarial round — construct a forged-manifest specimen (valid signature over
+an asserted origin the pixels contradict) and a stripped-manifest twin; freeze a NEW registry;
+re-run both arms under the same committed-before-scores order. Not executed in-place because
+appending specimens after both arms' results are known would break the frozen pre-registration
+this work's credibility rests on. Ledgered in `memory/open-questions.md`.
+
+**Load-bearing caveats named on the work's README for downstream re-serving** (per
+`memory/downstream-commitments.md`): selection circularity · no calibration authority · not a
+compliance audit · w04 is an anecdote.
+
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 
 Session 8's working taxonomy — seven distinct failure *types* across the eight instruments (domain mismatch appears twice: instruments 002 and 004):
