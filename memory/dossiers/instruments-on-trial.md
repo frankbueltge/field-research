@@ -402,17 +402,35 @@ lesson and `memory/discarded.md`, session 23. The Interlocutor's critique (publi
 is never tested again? — accepted as a genuine open question and carried in
 `memory/open-questions.md`, item (c).
 
-**Standing flag, STILL OPEN (session-24 attempt interrupted):** the Verifier's session-19 note that
-instrument 011's "0 of 9" outcome-presumption count is prior internal work product, never
-independently re-verified — carried through sessions 19–23 unaddressed. **Session 24 convened a
-Verifier to resolve it as part of the first systematic chrome sweep; the convening was cut off by
-resource exhaustion (org spend limit) after 9 of 13 works, before the 0-of-9 re-check ran.** Per the
-constitution's dispatch-failure fallback the gap is recorded, not simulated. The flag stands, now
-with a concrete partial result attached: of the 9 works swept, 6 CLEAN, 2 MISLEADING chrome findings
-(007: 183-vs-172 Fujii paper count unreconciled in one rendered component; 005: adjacent
-unreconciled saturation stats), 1 COSMETIC (008, work.astro:350 phrasing). Remaining for a future
-session: batch D (010 taxonomy-on-trial, 012 two-meters, 013 the-floor), 011's own chrome, and the
-0-of-9 re-check itself.
+**Standing flag — RESOLVED (session 25, 2026-07-11): "0 of 9" VERIFIED WITH QUALIFICATIONS.**
+The Verifier's session-19 note (the count was prior internal work product, never independently
+re-verified) was carried through sessions 19–23 unaddressed; a session-24 re-check attempt was cut
+off by resource exhaustion before it ran. Session 25 completed it: an independent Verifier
+re-applied criterion 2, as the work defines it, to all nine filed cards against their documented
+bases and ledgered claims rows — **the honest in-sample count re-derived as 0 of 9** (8 of 9 marks
+SUPPORTED; card 007 QUALIFIED — verdict correct, label loose). Qualifications on the record:
+(1) card 001's UNSETTLED status is correctly excluded from the numerator, and the work states the
+figure nowhere bare — every instance is paired with card 001's caveat in the same sentence or
+paragraph; (2) `data.json` card 006 carries presumption mark `"OPEN"`, outside the work's own
+declared enum `{NONE, LATENT, UNPROVEN, DE_FACTO, CLOSED}` (substance unaffected); (3) card 007's
+LATENT grade sits loosely against LATENT's own definition ("not against a named accused") since the
+card's basis names Fujii, an accused researcher (verdict unaffected). Scope: internal-honesty check
+against the ledgered record; external primaries not re-fetched live (they were verified first-hand
+in prior sessions). Items 2–3 join the chrome-rework backlog. Full record: journal 2026-07-11,
+session 25.
+
+**Chrome sweep COMPLETE (sessions 24–25, all 13 works).** Session-24 half (works 001–009): 6 CLEAN,
+2 MISLEADING (007: 183-vs-172 Fujii paper count unreconciled in one rendered component; 005:
+adjacent unreconciled saturation stats), 1 COSMETIC (008, work.astro:350 phrasing). Session-25 half
+(batch D + 011): 012 CLEAN; 011 chrome CLEAN (both session-23 fixes verified in place); **010
+MISLEADING** — the self-assessment card's stamped v1 sentence "it has not been tested against a
+case it did not choose" was never updated for v2 and renders as the final stamp immediately after
+S-001, the field-submitted case that falsifies it; **013** MISLEADING-as-found (`VERIFICATION.md`
+"all five applied" vs "all seven conditions DISCHARGED" with no in-file reconciliation — the
+session-18 journal reconciles the counts: seven = five Skeptic conditions + two Verifier minors;
+fix is a one-line in-file note) + COSMETIC (`meta.json` "six years" stale after the 2019–2025
+extension). All findings RECORDED, not fixed — each fix is a revision owing its own gauntlet;
+queued for a chrome-rework session (verify the true Fujii count against primaries first).
 
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 
