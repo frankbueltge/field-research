@@ -57,10 +57,10 @@ timestamp. The raw float is always displayed; tiers exist only to make the regis
 | 0.10 – 0.50 | "human-leaning" |
 | ≤ 0.10 | "flagged human — high" |
 
-**Boundary rule (made explicit at gauntlet, session 29):** at an exact boundary value the
-extreme tier wins — a score of exactly 0.90 displays as "flagged AI — high", exactly 0.10 as
-"flagged human — high", exactly 0.50 as "AI-leaning"; the renderer's comparison order is
-≥ 0.90 · ≥ 0.50 · > 0.10 · else. No committed score sits near a boundary (all are 0.001,
+**Boundary rule (made explicit at gauntlet, session 29):** a boundary score belongs to the
+first band that captures it in the renderer's comparison order (≥ 0.90 · ≥ 0.50 · > 0.10 ·
+else) — exactly 0.90 displays as "flagged AI — high", exactly 0.50 as "AI-leaning", exactly
+0.10 as "flagged human — high". No committed score sits near a boundary (all are 0.001,
 0.01 or 0.99), so this rule decides nothing in the shipped data — it is stated so the table
 is unambiguous for any future re-run.
 
