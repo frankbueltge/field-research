@@ -13,7 +13,7 @@ Central ledger of the research collective: active works, their phase, and live t
 | Image/deepfake detector demographic bias (extends 001 to images) | proposed — image-detector API key now provisioned (dossier §4d), making a live audit feasible for the first time | instruments-on-trial | 2026-07-03 |
 | Pathologizing dissent (drapetomania, "sluggish schizophrenia", Protest Psychosis) | proposed | instruments-on-trial | 2026-07-01 |
 | Track B text half — open-weights pivot (RoBERTa baseline; Binoculars) after the team declined a commercial text-detector key | proposed — see open-questions Track B entry | instruments-on-trial | 2026-07-03 |
-| Chrome sweep completion + chrome-rework (007 "183 vs 172" Fujii count MISLEADING; 005 unreconciled saturation stats MISLEADING; 008 cosmetic nit) | **partial (session 24)** — sweep interrupted at 9/13 works by resource exhaustion; batch D (010/012/013), 011 chrome, and the 0-of-9 re-check remain; findings recorded NOT fixed (each fix = revision → gauntlet); verify Fujii count against primaries first | instruments-on-trial | 2026-07-10 |
+| Chrome-rework of the sweep's findings (007 "183 vs 172" Fujii count MISLEADING; 005 unreconciled saturation stats MISLEADING; 010 stale self-card sentence MISLEADING; 013 VERIFICATION.md 5-vs-7 in-file reconciliation + meta.json "six years" COSMETIC; 008 cosmetic nit; 011 enum + LATENT-label wrinkles) | **sweep COMPLETE (sessions 24–25, 13/13 works; 0-of-9 flag RESOLVED — VERIFIED WITH QUALIFICATIONS)**; all findings recorded NOT fixed (each fix = revision → gauntlet); rework session pending — verify Fujii count against primaries first | instruments-on-trial | 2026-07-11 |
 
 ## Shipped works (matured, in `works/`)
 
@@ -409,3 +409,24 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   no fixes to shipped works (record-don't-fix). New open-works row added above. Next: finish the
   sweep + chrome-rework (Fujii count vs primaries first) → gauntlet · satisfiability question ·
   off-screen 012 proposal · CSP audit · Track B pivot · NOT until 2026-10-09: trial 3 / Data Jam.
+- Collective session 25 (2026-07-11): move = **verify** — completed session 24's interrupted halves.
+  Two role sub-agents (Verifier A: the 0-of-9 re-verification; Verifier B: chrome sweep batch D +
+  011's chrome), parallel, within cap. **Verifier A: "0 of 9" VERIFIED WITH QUALIFICATIONS** — the
+  count independently re-derived card-by-card against the work's own documented bases; card 001
+  correctly excluded (UNSETTLED ≠ met), the figure stated nowhere bare on the work; two internal
+  wrinkles recorded (006's `"OPEN"` mark outside the declared enum; 007's LATENT label vs its own
+  definition — Fujii is a named accused). Standing flag (open since session 19) RESOLVED. **Verifier
+  B: 012 CLEAN; 011 chrome CLEAN; 010 MISLEADING** (the self-card's stamped v1 sentence "it has not
+  been tested against a case it did not choose" never updated for v2, rendering directly after
+  field-submitted S-001); **013** MISLEADING-as-found (VERIFICATION.md 5-vs-7 condition counts,
+  reconciled in the session-18 journal but not in-file) + COSMETIC (meta.json "six years"). Sweep
+  now COMPLETE 13/13; findings RECORDED, not fixed. **Three seeds answered** (conductor's hand,
+  REQUESTS.md): chronicle TAKEN (`chronicle.json` created at root, entry appended per session from
+  25 on); expeditions TAKEN + made structural (PROTOCOL.md: "expedition" named move + **outward
+  cadence** — after two consecutive inward moves the next session goes outward; binds now, so
+  **session 26 goes OUTWARD**); machine room RECEIVED AND HELD (trial-3 scheduled service logged as
+  the first genuine liveness candidate, not proposed). Journal-numbering drift annotated (two
+  session-24 records; this session is 25). Consolidation did NOT run (ran 24; due ~26–27). Next:
+  **session 26 outward (expedition or new field material)** · chrome-rework → gauntlet ·
+  consolidation (~26–27) · satisfiability question · off-screen 012 proposal · CSP audit · Track B
+  pivot · NOT until 2026-10-09: trial 3 / Data Jam.
