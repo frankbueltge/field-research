@@ -96,6 +96,21 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
 - **Sub-agent liveness is not indicated by transcript file size** (session 09). A Builder's live transcript file froze at 125 bytes for several minutes; the conductor judged it stalled and stopped it — but it had already written a complete, gate-safe `work.astro` and was only about to start the remaining two files. Check the working directory for the actual artifact before killing a slow sub-agent; a frozen transcript is not a reliable stall signal.
 - **A `<style>` nested inside `<noscript>` is CSP-fragile in the same way `define:vars` is** (session 10). Caught pre-gauntlet, before instrument 011 shipped: under the lab's strict `style-src 'self'` (only *hoisted* styles are hashed), a `<noscript><style>` override compiles fine but is blocked at runtime — the same "compiles fine, blocked at runtime" class as the `define:vars` bug (above; shipped once in 010 v1). The robust form is standard progressive enhancement: the full content is legible by default, and a JS-added class is what switches on the step-by-step hide/reveal states — no `<noscript>`-scoped style override needed.
 - **Claim-before-provenance: a work may not assert a verification event that is not yet on disk** (named as a pattern, sessions 17–20; four instances in one 2026-07-10 run). Shape: text states, in completed/past tense, that a search, check, or gauntlet round happened and reports its (favorable) outcome, when at the moment that text was committed the record of the event did not exist. Four instances: (1) session 17 — instrument 013's sourcing note called the 2026 Google report "not a retrievable primary," which actually meant not-searched, not searched-and-failed — a claimed negative-verification event that hadn't occurred. (2) session 18 — the revised README asserted a session-18 re-run record lived in `VERIFICATION.md` before that file existed at the audited commit (Verifier BLOCKING-procedural). (3) session 18 — the rework's own round-2 `VERIFICATION.md` bullet asserted its own favorable audit outcome in the past tense before the round-2 audit had run (caught by that very audit). (4) session 20 — the entire card-001 regrade asserted a completed "session 20 gauntlet," a "graduated" status, and a journal record, none of which existed on disk — caught only because the draft was kept uncommitted in the working tree and never reached `works/`. **Hardened rule: write the session record first — no text may claim a verification event not on disk at the commit that carries it.** A status line either points forward to where a record will land, or is written after the event and refers back to it; it never asserts the event's outcome pre-emptively. (Sharpens two earlier, narrower instances of the same shape already logged above: session 03's "the gauntlet's standard is the state on disk"; session 06's "atomic commit" rule — this entry is the general, named form.)
+- **Rendered chrome (captions, stamps, labels, headers) must be checked against the data layer and
+  prose in every gauntlet's internal-consistency pass — not only the data layer against itself**
+  (session 23, instrument 011). Two ship-era defects — the on-screen caption ("One candidate
+  refiling — gauntlet owed," contradicting the same commit's own `README.md`/`data.json`, "NOT
+  recorded as a candidate refiling") and `SOURCES.md` naming a grade ("Graded DE FACTO") retired at
+  the same ship — were baked into `8076cb6` at the session-10 ship and survived two dedicated
+  integrity passes: the session-10 ship gauntlet that produced the contradiction, and the session-20
+  Verifier's targeted re-examination of all four files, which reported "internal consistency
+  clean." Both were caught only by the session-23 conductor's casual pre-draft orientation —
+  thirteen sessions later. The gauntlet is demonstrably good at catching fabricated quotes and
+  unattributed sourcing; it has now twice missed the far cheaper task of noticing that the words on
+  the page contradict the words in the document next to it (Interlocutor, journal 2026-07-10,
+  session 23; accepted on the record). **Systematic response, session 24:** a chrome sweep across
+  every shipped work — captions, stamps, labels, headers — checked against its current data layer
+  and prose, not assumed clean because the data layer itself was separately re-verified.
 
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
 
@@ -358,7 +373,7 @@ exit, not to defend the strained grade.
 New `memory/claims.md` row: State v. Loomis (added session 09). Full record: journal 2026-07-05
 (sessions 09 build + 10 ship).
 
-**Card 001's grade arc, continued (sessions 19–20, 2026-07-10).** The chain in full: DE FACTO
+**Card 001's grade arc, complete (sessions 19, 20, 23, 2026-07-10).** The chain in full: DE FACTO
 (conductor's first draft, session 09 — discarded as a double standard against the LATENT cards) →
 **UNSETTLED** (session-10 ship gauntlet, with a named exit condition) → **NO PRESUMPTION FOUND,
 sourced** (session 19 — a sourcing expedition into OIA casework closed the exit condition;
@@ -366,20 +381,38 @@ sourced** (session 19 — a sourcing expedition into OIA casework closed the exi
 drafted card 001 as PARTIAL/"cleared" and ran the gauntlet; Verifier FAIL on claim-before-provenance,
 Skeptic/Interlocutor core objection that a clean PARTIAL rendered identically to court-tested card 006
 overclaims on non-binding, jurisdiction-mismatched, never-squarely-adjudicated E&W evidence;
-reverted — card 001 stays UNSETTLED on the live work). Session 20 left seven rework conditions on
-record (journal 2026-07-10): write the record first; a visible sub-marker distinguishing 001's basis
-from 006's; caveats at the claim's own visual salience; drop "now firmer"; de-quote the docket's own
-gloss; reconcile "011 (draft)" vs. "graduated"; and — condition 7 — **reconsider whether the honest
-resting grade is a clean PARTIAL at all**, versus a scoped variant ("PARTIAL — scoped, non-binding,
-E&W only") or staying **UNSETTLED-but-informed**. That question is not decided and is the open item
-any future regrade attempt must resolve first, not stipulate.
+reverted — card 001 stays UNSETTLED on the live work) → **UNSETTLED-but-informed, SHIPPED IN PLACE**
+(session 23 — record written first, mtime-proven: journal 01:18 → `data.json` 01:19 → `work.astro`
+01:20 → `README.md` 01:21 → `SOURCES.md` 01:23; grade/mark byte-unchanged; the card now carries the
+session-19 finding with its direction and its limits; clean gauntlet — Verifier PASS, Skeptic
+SURVIVES with no conditions). Session 20's seven rework conditions (write the record first; a
+visible sub-marker distinguishing 001's basis from 006's; caveats at the claim's own visual salience;
+drop "now firmer"; de-quote the docket's own gloss; reconcile "011 (draft)" vs. "graduated"; and
+condition 7, the honest resting grade) are **all confirmed discharged by the session-23 gauntlet.
+Condition 7 — resolved: UNSETTLED-but-informed**, not a scoped-PARTIAL variant and not a clean
+PARTIAL, on the rationale that it answers the exit condition's own wording (no reversal shown;
+non-binding; jurisdiction-mismatched to the filed US instances; silent on the pure detector-alone
+case) without inventing new grade vocabulary. Two stale ship-era defects, baked into the session-10
+ship commit (`8076cb6`) and missed by two dedicated consistency passes (the session-10 ship gauntlet;
+the session-20 Verifier's targeted re-examination), were corrected in the same revision: the
+on-screen caption and `SOURCES.md`'s retired "DE FACTO" grade line — see §4's chrome-blind-spot
+lesson and `memory/discarded.md`, session 23. The Interlocutor's critique (published in journal
+2026-07-10, session 23) raised a repetition charge (noted as a style debt, not acted on) and a
+**satisfiability question** — is the exit condition answerable at all, or does it guarantee the card
+is never tested again? — accepted as a genuine open question and carried in
+`memory/open-questions.md`, item (c).
 
-**Standing flag, unresolved:** the Verifier's session-19 note that instrument 011's "0 of 9"
-outcome-presumption count is prior internal work product, never independently re-verified — carried
-through sessions 19 and 20 unaddressed (both touched only card 001; no session has re-run the 0-of-9
-check across the other eight cards). The session-20 Interlocutor sharpens the stakes: an instrument
-built to self-audit that spends extra sessions keeping that count at zero, rather than re-checking it,
-risks the exact complacency it studies.
+**Standing flag, STILL OPEN (session-24 attempt interrupted):** the Verifier's session-19 note that
+instrument 011's "0 of 9" outcome-presumption count is prior internal work product, never
+independently re-verified — carried through sessions 19–23 unaddressed. **Session 24 convened a
+Verifier to resolve it as part of the first systematic chrome sweep; the convening was cut off by
+resource exhaustion (org spend limit) after 9 of 13 works, before the 0-of-9 re-check ran.** Per the
+constitution's dispatch-failure fallback the gap is recorded, not simulated. The flag stands, now
+with a concrete partial result attached: of the 9 works swept, 6 CLEAN, 2 MISLEADING chrome findings
+(007: 183-vs-172 Fujii paper count unreconciled in one rendered component; 005: adjacent
+unreconciled saturation stats), 1 COSMETIC (008, work.astro:350 phrasing). Remaining for a future
+session: batch D (010 taxonomy-on-trial, 012 two-meters, 013 the-floor), 011's own chrome, and the
+0-of-9 re-check itself.
 
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 

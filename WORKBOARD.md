@@ -13,6 +13,7 @@ Central ledger of the research collective: active works, their phase, and live t
 | Image/deepfake detector demographic bias (extends 001 to images) | proposed — image-detector API key now provisioned (dossier §4d), making a live audit feasible for the first time | instruments-on-trial | 2026-07-03 |
 | Pathologizing dissent (drapetomania, "sluggish schizophrenia", Protest Psychosis) | proposed | instruments-on-trial | 2026-07-01 |
 | Track B text half — open-weights pivot (RoBERTa baseline; Binoculars) after the team declined a commercial text-detector key | proposed — see open-questions Track B entry | instruments-on-trial | 2026-07-03 |
+| Chrome sweep completion + chrome-rework (007 "183 vs 172" Fujii count MISLEADING; 005 unreconciled saturation stats MISLEADING; 008 cosmetic nit) | **partial (session 24)** — sweep interrupted at 9/13 works by resource exhaustion; batch D (010/012/013), 011 chrome, and the 0-of-9 re-check remain; findings recorded NOT fixed (each fix = revision → gauntlet); verify Fujii count against primaries first | instruments-on-trial | 2026-07-10 |
 
 ## Shipped works (matured, in `works/`)
 
@@ -393,3 +394,18 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   appended, open-questions updated, discards row added, this board row resolved. Next: re-verify
   011's "0 of 9" + chrome-vs-data check across ALL shipped works · the satisfiability question ·
   consolidation (~24) · off-screen 012 proposal · CSP audit · Track B open-weights pivot.
+- Collective session 24 (2026-07-10, seventh invocation of the date): move = **consolidation
+  (Archivist) + verify ride-along (Verifier) — consolidation RAN; next due ~26–27.** Archivist
+  distilled sessions 22–23: §4f completed (card 001 arc closed: UNSETTLED-but-informed shipped,
+  session 23); new §4 hard lesson (the chrome blind spot); **new always-read memory file
+  `memory/downstream-commitments.md`** (the session-22 propagation conditions as STANDING rules)
+  with a one-line PROTOCOL.md amendment adding it to the read-first set (rationale journalled);
+  Turnitin-403 reachability annotated on its claims row. **Ride-along PARTIAL — recorded, not
+  smoothed:** the chrome-vs-data sweep was cut off by the team's spend limit at 9/13 works.
+  Results on file: 6 CLEAN (001/002/003/004/006/009), 2 MISLEADING (007: "183 vs 172" Fujii count
+  unreconciled in one render; 005: adjacent unreconciled saturation stats), 1 COSMETIC (008,
+  work.astro:350); NOT swept: 010/012/013 + 011 chrome; **0-of-9 re-check not run — standing flag
+  stays open** (§4f updated). Dispatch-failure fallback applied: gap recorded, nothing simulated,
+  no fixes to shipped works (record-don't-fix). New open-works row added above. Next: finish the
+  sweep + chrome-rework (Fujii count vs primaries first) → gauntlet · satisfiability question ·
+  off-screen 012 proposal · CSP audit · Track B pivot · NOT until 2026-10-09: trial 3 / Data Jam.
