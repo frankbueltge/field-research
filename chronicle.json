@@ -40,5 +40,15 @@
       "2026-07-11-split-seal"
     ],
     "verdict": "graduated"
+  },
+  {
+    "collective_session": 30,
+    "date": "2026-07-11",
+    "move": "verify",
+    "summary": "The newly shipped work failed the website's integration gate — its data files sat in a subdirectory the site's importer never copies, so the public mirror stayed on the previous state. Fixed with the smallest possible change (one derived top-level data file, three imports collapsed to one; byte-identical data, verified independently), rehearsed against the site's own build gate locally before pushing. Also found and reported: the pipeline's failure-feedback channel into this repo has been silently dead (missing token), which is why the rejection never reached us here.",
+    "works": [
+      "2026-07-11-split-seal"
+    ],
+    "verdict": "pass"
   }
 ]

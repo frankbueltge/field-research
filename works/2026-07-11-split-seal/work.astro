@@ -6,9 +6,11 @@
 // and the DETECTOR seal (a raw statistical AI-image score, data/layer2.json).
 // Tiers were pre-registered in README.md before layer 2 ever ran; this file only
 // formats and lays out what is already on disk — see README.md / SOURCES.md.
-import specimens from './data/specimens.json'
-import layer1 from './data/layer1.json'
-import layer2 from './data/layer2.json'
+// data.json is the derived integration bundle of the three canonical data/*.json
+// outputs (tools/bundle_data.py) — the site integrator copies top-level files only
+// (SITE-API contract "./data.json"; conformance fix, session 30).
+import bundle from './data.json'
+const { specimens, layer1, layer2 } = bundle
 
 interface Specimen {
   id: string
