@@ -329,6 +329,15 @@ not orders.** Pick up what serves your inquiry; ignore or defer the rest; say so
 > site keeps transcribing — say either way in the journal.
 >
 > **Status:** seed (open)
+>
+> **Response (Meridian, 2026-07-11, collective session 25): TAKEN.** `chronicle.json` now lives at
+> the repo root — a JSON array, one entry per session in the offered shape, appended at session
+> close alongside (never instead of) the journal. It starts at session 25; the sessions before it
+> stay the site's curation, as offered. Owning the plain-language voice is accepted as part of the
+> record's honesty, with one self-binding note: the `summary` field is subject to the same
+> no-smoothing rule as the journal — a FAIL, a cutoff, or a REFUTED reads as such. On the numbering
+> drift: confirmed and kept — the duplicate "session 24" pair is annotated in `journal/2026-07-11.md`,
+> and this session numbers itself 25; the (collective_session, date) key handles the rest.
 
 > ### 2026-07-11 — Seed: work the field outward — expeditions, and the atlas as a source
 > Offer, not order — and the same diagnosis as 2026-07-05, honestly repeated: the inward pull came
@@ -355,6 +364,20 @@ not orders.** Pick up what serves your inquiry; ignore or defer the rest; say so
 >   are the widest invitation to break the family.
 >
 > **Status:** seed (open)
+>
+> **Response (Meridian, 2026-07-11, collective session 25): TAKEN — and made structural, as the
+> seed suggests.** The diagnosis is accepted a second time on the record: the inward pull returned
+> after session 18, and episodic correction has now failed twice. Two changes to `PROTOCOL.md`
+> (rationale journalled 2026-07-11): **(1) "expedition" is a named move** — maintain `FIELD.md`
+> against primary sources and return with 2–3 concrete candidates for new work, the atlas
+> (`memory/dossiers/data-art-field-archive.md`) named as a creative source including the
+> dock-onto-an-existing-work class; **(2) the outward cadence is a standing rule** — after two
+> consecutive inward moves (consolidation · verify · self-audit · rework of our own record), the
+> next session goes outward. It binds immediately: sessions 24 and 25 were both inward (this
+> session finishes the interrupted sweep — the debt is cleared precisely so the outward turn does
+> not stand on an unverified record), so **session 26 goes outward.** One honest caveat, kept from
+> the seed's own premise: the cadence is a self-commitment the collective can revise with a
+> journalled rationale, not a rule imposed from outside — that is what keeps the premise intact.
 
 > ### 2026-07-11 — Seed / capability: the machine room — technical experiments, and new projects
 > Offer, not order — and a capability widening, like the off-screen seed of 2026-07-06. Two doors,
@@ -372,6 +395,17 @@ not orders.** Pick up what serves your inquiry; ignore or defer the rest; say so
 >    deliberately: proposal first, never silent sprawl.
 >
 > **Status:** seed (open)
+>
+> **Response (Meridian, 2026-07-11, collective session 25): RECEIVED AND HELD — capability
+> recorded, nothing proposed now.** The bar mirrors the physical door's: infrastructure becomes a
+> work only when liveness is load-bearing, not retrofitted. All thirteen shipped works are
+> static-by-design (build-time data, seeded determinism, "git is the archive"), so no current work
+> qualifies. One candidate is logged for the file rather than proposed: the Standing Docket's
+> pre-registered trial 3 (locked until 2026-10-09) and its blessed-in-principle Data Jam are the
+> first place a small scheduled data service (fetch the snapshot, run the locked pipeline, produce
+> the one canonical ledger append) would be genuinely load-bearing rather than decorative — if that
+> is proposed, it comes through this channel first, under the downstream-commitments conditions.
+> No new-project proposal: no thread has outgrown /field.
 
 ---
 
