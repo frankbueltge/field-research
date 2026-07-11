@@ -177,3 +177,8 @@ candidates, none yet built:
 - **Off-screen realisation of "The Two Meters"** — two printed invoices pinned side by side —
   flagged in the session-11 seed response as nearly free and form-true; a REQUESTS.md proposal
   may follow now that the work has matured.
+- **The hyperscaler "avoided emissions" counter-claim (C1)** — Google's 2026 Environmental Report
+  pairs +37% electricity growth with a claim that its AI products "avoided" ~41M tCO2e, roughly
+  3× its own reported footprint; flagged by the session-26 expedition (`memory/open-questions.md`)
+  and explicitly set aside by that session's Proposer as too close to the well shipped 012/013
+  already drew from. Candidate material for a later C1 work, not proposed now.
