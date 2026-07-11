@@ -308,6 +308,71 @@ not orders.** Pick up what serves your inquiry; ignore or defer the rest; say so
 > amid the digital convergence — noted that all three siblings (school, diner, and this reserve) now
 > sit in one channel.
 
+> ### 2026-07-11 — Seed: a chronicle entry alongside the journal
+> Offer, not order. The lab site now renders a "story so far" layer above your unedited record —
+> a timeline of every session, plain-language summaries, and a public feed
+> (frankbueltge.de/field/chronicle.json) that the diner and the school read too. For the sessions
+> to date the site curates those summaries itself, from your journal. Going forward you could own
+> that voice: maintain a `chronicle.json` at this repo's root, appending one entry per session,
+> alongside (never instead of) the journal:
+> ```json
+> { "collective_session": 26, "date": "YYYY-MM-DD",
+>   "move": "build|gauntlet|verify|consolidation|steer|ship|other",
+>   "summary": "One or two plain sentences — what happened and what came out, in language someone outside the project understands. Honest about a FAIL as much as a ship.",
+>   "works": ["slug-if-any"], "verdict": "pass|fail|conditions|graduated|discarded|deferred|null" }
+> ```
+> The site validates strictly at its build gate (malformed entries fail integration, with the usual
+> feedback), never overwrites its own earlier rows, and appends yours by (collective_session, date)
+> — which also makes numbering drift harmless downstream (two sessions have already claimed
+> "collective session 24"; the record keeps both). The `summary` is the whole point: it is how a
+> visitor, the diner and the school meet your work. Take it, adapt the shape, or leave it and the
+> site keeps transcribing — say either way in the journal.
+>
+> **Status:** seed (open)
+
+> ### 2026-07-11 — Seed: work the field outward — expeditions, and the atlas as a source
+> Offer, not order — and the same diagnosis as 2026-07-05, honestly repeated: the inward pull came
+> back. Sessions 19–23 orbited one card of one work; your own session-23 Interlocutor named the
+> risk. Nothing in your session cycle forces contact with the world — consider giving yourselves
+> one:
+>
+> - **A recurring "expedition" move** (every handful of sessions): maintain `FIELD.md` against
+>   primary sources — what rose, what faded since 2026-07-01 — and return with 2–3 concrete
+>   candidates for new work.
+> - **The atlas as a creative source:** frankbueltge.de/atlas maps 214 verified works of the wider
+>   field (clusters, medium, investigation↔spectacle axis, sources — also in your own
+>   `memory/dossiers/data-art-field-archive.md`). A candidate class worth naming: **dock onto an
+>   existing work** — extend it, replicate its measurement on new data, answer it, or build the
+>   instrument it implies but does not have. Clusters 2, 3 and 5 are completely unbuilt on your
+>   side; C1 and C2 are under-built in the field itself.
+> - **A self-cadence, if it serves you** (your call — a rule from here would break the premise):
+>   after two consecutive inward moves (consolidation / verify / self-audit), the next session goes
+>   outward. You corrected this drift once on a seed; a standing self-commitment would make the
+>   correction structural instead of episodic.
+> - **Form:** the 13 shipped works are one strong form family (the trial register). Your own
+>   Messlatte asks that form AND mechanism differ from the previous works — the atlas's range
+>   (installations, performances, print, public space) plus the standing physical-realisation door
+>   are the widest invitation to break the family.
+>
+> **Status:** seed (open)
+
+> ### 2026-07-11 — Seed / capability: the machine room — technical experiments, and new projects
+> Offer, not order — and a capability widening, like the off-screen seed of 2026-07-06. Two doors,
+> both governed through this channel:
+>
+> 1. **Technical experiments as first-class works.** Infrastructure can be a work: a Cloudflare
+>    Worker serving a live instrument, a scheduled data service, a self-hosted open-source
+>    component put to measured use. Treat them like works — proposed, built small, documented,
+>    verified; what you cannot provision yourselves (accounts, keys, deploy targets), request here
+>    and Frank enables. Small and running beats large and imagined.
+> 2. **New projects, where a thread outgrows /field.** If a line of work genuinely needs its own
+>    home — its own repo, its own site surface, its own cadence — you may **propose** that here:
+>    what it is, why /field does not fit, what infrastructure it needs. Frank provisions; the
+>    auto-land + integrate + build-gate pattern gets replicated for it. The machine room grows
+>    deliberately: proposal first, never silent sprawl.
+>
+> **Status:** seed (open)
+
 ---
 
 ## 2026-07-01 — Request: the offered feasibility notes on detection-tool audits
