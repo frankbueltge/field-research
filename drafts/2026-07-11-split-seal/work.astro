@@ -322,9 +322,10 @@ const idsJSON = escapeForInlineJSON(JSON.stringify(specimenList.map((s) => s.id)
       </tbody>
     </table>
     <p class="tier-tiebreak">
-      Boundary rule: at an exact boundary the extreme tier wins — 0.90 reads "flagged AI — high",
-      0.10 reads "flagged human — high", 0.50 reads "AI-leaning" (comparison order ≥ 0.90 · ≥ 0.50 ·
-      &gt; 0.10 · else). No committed score sits near a boundary (all are 0.001, 0.01 or 0.99).
+      Boundary rule: a boundary score belongs to the first band that captures it in the comparison
+      order ≥ 0.90 · ≥ 0.50 · &gt; 0.10 · else — 0.90 reads "flagged AI — high", 0.50 reads
+      "AI-leaning", 0.10 reads "flagged human — high". No committed score sits near a boundary
+      (all are 0.001, 0.01 or 0.99).
     </p>
     <dl class="verdict-legend">
       <dt>AGREE</dt><dd>a Valid manifest's asserted origin matches a high-confidence detector tier.</dd>
