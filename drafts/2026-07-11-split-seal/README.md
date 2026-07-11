@@ -57,6 +57,13 @@ timestamp. The raw float is always displayed; tiers exist only to make the regis
 | 0.10 – 0.50 | "human-leaning" |
 | ≤ 0.10 | "flagged human — high" |
 
+**Boundary rule (made explicit at gauntlet, session 29):** at an exact boundary value the
+extreme tier wins — a score of exactly 0.90 displays as "flagged AI — high", exactly 0.10 as
+"flagged human — high", exactly 0.50 as "AI-leaning"; the renderer's comparison order is
+≥ 0.90 · ≥ 0.50 · > 0.10 · else. No committed score sits near a boundary (all are 0.001,
+0.01 or 0.99), so this rule decides nothing in the shipped data — it is stated so the table
+is unambiguous for any future re-run.
+
 **A CLASH is declared only when a high-confidence tier contradicts a *Valid* manifest's
 asserted origin** (e.g., manifest asserts generative origin, detector says "flagged human —
 high"; or manifest asserts a hardware capture, detector says "flagged AI — high"). A lean
@@ -92,7 +99,13 @@ structurally separate in every rendering because they answer different questions
 wild (w01–w03) — but note what that means: all three manifest-bearing wild specimens are
 **AI images that disclose themselves**. The hunt found **no** wild camera-native manifest
 outside the conformance corpus, consistent with the documented scarcity of Content
-Credentials in circulation (claims.md, session 3/6 rows).
+Credentials in circulation (claims.md, session 3/6 rows). **And the logical consequence,
+stated outright rather than left for the reader to derive (gauntlet condition, session 29):
+because w01–w03 were selected *because* they carry intact generator manifests, the wild
+tier's 3-for-3 AGREE outcome was close to guaranteed by the selection rule itself. Those
+rows are evidence about the sampling rule — manifest-bearing wild images are self-disclosing
+AI images whose content a detector also flags — not an independent test of detector accuracy
+in the wild.**
 
 ## Field note recorded during sourcing (session 28)
 
@@ -100,6 +113,19 @@ The conformance corpus's **current-spec tree (`2.2/`) contains no test files** �
 and `.gitkeep` scaffolding; every actual image lives under `legacy/1.4/`. The session-27 gate
 description ("a current 2.2 tree plus legacy/1.4") was optimistic about the 2.2 half; the
 controls in this work are therefore **spec-1.4-era artifacts**, stated as such.
+
+## Load-bearing caveats (named for any downstream re-serving, per `memory/downstream-commitments.md`)
+
+Any derived, re-voiced, or republished form of this work must preserve all four, by name:
+
+1. **Selection circularity** — the wild tier's AGREE rows follow from the sampling rule
+   (specimens chosen because they carry manifests); they are not an independent detector test.
+2. **No calibration authority** — the detector arm is a single commercial classifier with no
+   independent FPR/FNR benchmark; its concurrence is a match, never a confirmation.
+3. **Not a compliance audit** — no result states or implies an Art.-50 compliance rate; the
+   specimens predate the obligation.
+4. **w04 is an anecdote** — one community-labelled (not ground truth) specimen, a documented
+   double-miss, never a rate.
 
 ## What would kill this work (carried openly)
 

@@ -25,11 +25,23 @@ convention: FETCHED (read/verified first-hand) vs SNIPPET (search-corroborated).
 - `c2pa-org/public-testfiles`, legacy/1.4 image tree, license CC BY-SA 4.0 — FETCHED
   (cloned 2026-07-11): https://github.com/c2pa-org/public-testfiles
   Naming scheme (C/A/I/X/E-sig/E-dat/E-clm/E-uri) and per-file expected verdicts: the
-  corpus's own image README (rendered at https://spec.c2pa.org/public-testfiles/image/).
+  corpus's own image README (in the cloned tree; the rendered site's root is
+  https://spec.c2pa.org/public-testfiles/ — the deep link `…/public-testfiles/image/`
+  cited in the session-28 draft returned 404 on re-check at gauntlet, 2026-07-11 session
+  29, and was corrected here).
   Field note: the `2.2/` tree carries no test files as of 2026-07-11 (READMEs + `.gitkeep`
-  only) — controls are spec-1.4-era.
+  only; first-hand from the session-28 clone) — controls are spec-1.4-era. Third-party
+  corroboration (FETCHED, session 29): issue #27, "Unable to access media content samples
+  from 2.2 folder" ("all media content, described by README.md in 2.2 folder, is absent"):
+  https://github.com/c2pa-org/public-testfiles/issues/27
 
 ## Specimens — wild (5, Wikimedia Commons originals; Commons preserves original bytes)
+
+License nuance surfaced at gauntlet (session 29, Verifier): the w01 and w02 file pages
+display an explicit public-domain (algorithmic-authorship) box while their own wikitext also
+carries an uploader-selected `{{self|cc-by-sa-4.0}}` template — the source pages are
+internally ambiguous between the two readings. Recorded honestly; nothing in this work
+depends on which reading holds (both permit this use with attribution given).
 
 - w01 — File:DALL·E 2025-02-21 23.58.53 - A simple soldering iron... .webp — Public domain
   per file page; uploaded 2025-02-22; manifest signed "ChatGPT c2pa-rs/0.31.3" (FETCHED,
@@ -49,8 +61,10 @@ convention: FETCHED (read/verified first-hand) vs SNIPPET (search-corroborated).
 
 ## Tooling
 
-- c2pa-python 0.36.0 (layer 1; the maintained c2pa-rs bindings — `c2patool` itself archived
-  2024-12-10, session-27 gate finding): https://github.com/contentauth/c2pa-python ;
+- c2pa-python 0.36.0 (layer 1; the maintained c2pa-rs bindings — `c2patool`'s transition to
+  c2pa-rs is dated 2024-12-10 in its own README, and the repository's GitHub archive action
+  is dated one day later, 2024-12-11; both re-checked at gauntlet, session 29):
+  https://github.com/contentauth/c2patool ; https://github.com/contentauth/c2pa-python ;
   https://github.com/contentauth/c2pa-rs
 - Detector: Sightengine `genai` model, provisioned per the team's 2026-07-03 REQUESTS.md
   response (usage, budget arithmetic and the single prior calibration anecdote:
