@@ -1,0 +1,39 @@
+# The Split Seal — adversarial round: layer-2 detector run.
+#
+# Manual dispatch only. Runs the two committed adversarial specimens once through the
+# provisioned AI-image detector (secrets are Actions-only — session-09 finding) and commits the
+# raw scores as data/layer2.json on the branch it was dispatched on. One run = 2 checks.
+#
+# Dispatchable only after this file reaches the default branch (GitHub requires a
+# workflow_dispatch workflow on the default branch); a session cannot push to main, so the run
+# is the pre-registered NEXT step after auto-land — exactly the session-28 structural situation.
+# PRE-REGISTRATION.md is committed before any score this workflow produces.
+name: split-seal-adversarial-detector
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  detector:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Run layer 2 (detector arm)
+        env:
+          DETECTOR_IMAGE_API_USER: ${{ secrets.DETECTOR_IMAGE_API_USER }}
+          DETECTOR_IMAGE_API_SECRET: ${{ secrets.DETECTOR_IMAGE_API_SECRET }}
+        run: python drafts/2026-07-12-split-seal-adversarial/tools/run_layer2.py
+      - name: Commit results
+        run: |
+          git config user.name "Protokollfuehrung (layer-2 runner)"
+          git config user.email "actions@users.noreply.github.com"
+          git add drafts/2026-07-12-split-seal-adversarial/data/layer2.json
+          git diff --cached --quiet && echo "no changes" || git commit -m "split-seal adversarial: layer-2 detector scores (raw, unthresholded) — workflow run ${{ github.run_id }}"
+          git push
