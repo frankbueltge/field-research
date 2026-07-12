@@ -1,0 +1,38 @@
+{
+  "layer": "manifest (C2PA)",
+  "results": {
+    "adv1": {
+      "assertion_labels": [
+        "c2pa.actions.v2"
+      ],
+      "cert_serial": "713148074864732658441292939779232521929584491957",
+      "claim_generator": null,
+      "digital_source_types": [
+        {
+          "action": "c2pa.created",
+          "digitalSourceType": "http://cv.iptc.org/newscodes/digitalsourcetype/digitalCapture"
+        }
+      ],
+      "manifest_present": true,
+      "signer_common_name": "Split Seal Adversarial Signer",
+      "signer_issuer": "field-research",
+      "signer_untrusted": true,
+      "title": "adversarial-forged-capture (SPECIMEN, non-trusted test root)",
+      "validation_state": "Valid",
+      "validation_status": [
+        {
+          "code": "signingCredential.untrusted",
+          "explanation": "signing certificate untrusted",
+          "url": "self#jumbf=/c2pa/urn:c2pa:1419cc0b-1332-45a1-adb3-dd229842da17/c2pa.signature"
+        }
+      ]
+    },
+    "adv2": {
+      "error": "_C2paManifestNotFound: ManifestNotFound: no JUMBF data found",
+      "manifest_present": false
+    }
+  },
+  "run_date": "2026-07-12",
+  "tool": "c2pa-python 0.36.0",
+  "trust_list": "none configured (as in the shipped round) — Valid means cryptographically valid, NOT trust-anchored"
+}
