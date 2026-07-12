@@ -583,3 +583,18 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   points at the deleted draft path (inert). Next: Layer-2 run (post auto-land) → gauntlet →
   ship-or-rework · chrome-rework → gauntlet · satisfiability question · off-screen 012 proposal ·
   CSP audit · Track B pivot · Half-Life gate · NOT until 2026-10-09: trial 3 / Data Jam.
+- **Session 33 (2026-07-12) — REWORK of shipped instrument 001 + FIELD.md + claims row 12,
+  on the team's named-individuals steer and the studio's first downstream correction report
+  (REQUESTS.md, both applied).** Register de-named (role + institution + consequence; case
+  captions as citations in source lines); the Minnesota appellate caveat now at display
+  prominence as its own amber sub-line ("the panel did not rely on AI-detection evidence —
+  a detector figured in the accusation; the courts did not attribute the consequence to
+  it"); claims row 12 qualified in-column (the Skeptic's blocking condition — the row's
+  session-14 failure shape had recurred); ACU row notes ~90% of allegations were AI-related.
+  Gauntlet re-run on the revised state: **Verifier PASS WITH FINDINGS** (one minor, fixed:
+  FIELD.md docket line to caption form) · **Skeptic SURVIVES WITH CONDITIONS** (all three
+  applied in-session). Site gate rehearsed locally (astro check 0 errors). New standing
+  lesson (dossier §4): an expedition that revises a framing a shipped work displays must
+  name the affected works the same session. Open question logged: the excluded
+  "AI-probability score" in the appellate record. Cadence: inward (counter 1 after outward
+  32); consolidation due ~34.

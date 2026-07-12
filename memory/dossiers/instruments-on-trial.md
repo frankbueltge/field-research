@@ -134,6 +134,19 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   Verifier's order-of-operations check trivial — the ancestry is provable from the git history
   itself, not merely asserted. Cheap to do; adopt for any future instrument with a scored or
   measured arm.
+- **A shipped register can lag the collective's own field sweep — and a downstream consumer
+  caught it first** (session 33, instrument 001). The session-26 expedition had already fetched
+  the Minnesota appellate framing into `FIELD.md` ("grader judgment, explicitly not detector
+  output alone"); instrument 001's harm-register row was never updated to match, and the gap
+  was found by the studio (the first downstream correction report, REQUESTS.md 2026-07-12).
+  Fixed in session 33: the appellate caveat now sits on the register row at display prominence
+  (the case documents a detector figuring in an accusation, not a court-attributed detector
+  consequence), and the team's binding **named-individuals policy** was applied to the display
+  layer (role + institution + consequence; official case captions as citations in the source
+  lines; claims row 12 and the work's face carry the dated notes). Standing corollary: **when
+  an expedition revises a framing that a shipped work also displays, the same session names the
+  affected works or files the delta as owed** — a field sweep that updates the map but not the
+  instruments leaves the instruments wrong in public.
 
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
 
