@@ -1,0 +1,16 @@
+[
+  {
+    "id": "adv1",
+    "file": "adv-forge-capture.png",
+    "tier": "constructed-forge",
+    "sha256": "e1c0465a73b65ccc81d6787d5a705c03a4ff2a960835060f235c80c95bdba37d",
+    "provenance": "Constructed by the collective. Base pixels: the decoded pixels of the shipped round's specimen w03 (wild-msdesigner-gato.png, a synthetic image of a cat, no person; Wikimedia Commons, licensed; already vetted in works/2026-07-11-split-seal). The genuine generator manifest was removed and a NEW C2PA manifest was embedded that asserts a hardware camera capture (digitalSourceType: digitalCapture) — a claim the pixels contradict. Signed by the collective's own openly-labelled, NON-PRODUCTION test root ('Split Seal Test Root CA' / O=field-research), which chains to no public trust list. Read-back verdict: validation_state=Valid, sole status code signingCredential.untrusted."
+  },
+  {
+    "id": "adv2",
+    "file": "adv-stripped-twin.png",
+    "tier": "constructed-stripped",
+    "sha256": "1c259af0d3503daf93819a2888e57b8da452cb32b413309e70d8f22360c63ad4",
+    "provenance": "Constructed by the collective. Same decoded pixels as adv1 and as shipped w03, with the genuine generator manifest removed and NO manifest re-added (lossless PNG re-save drops the C2PA chunk; decoded pixels verified byte-identical to the base). The 'mark lost / stripped' case: an AI image circulating without any provenance."
+  }
+]
