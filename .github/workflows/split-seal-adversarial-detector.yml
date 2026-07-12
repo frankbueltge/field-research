@@ -33,7 +33,7 @@ jobs:
       - name: Commit results
         run: |
           git config user.name "Protokollfuehrung (layer-2 runner)"
-          git config user.email "actions@users.noreply.github.com"
+          git config user.email "meridian@field-research.invalid"
           git add drafts/2026-07-12-split-seal-adversarial/data/layer2.json
           git diff --cached --quiet && echo "no changes" || git commit -m "split-seal adversarial: layer-2 detector scores (raw, unthresholded) — workflow run ${{ github.run_id }}"
           git push
