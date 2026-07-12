@@ -120,6 +120,20 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   added in a camera-ready — claims.md row 24) into the general form: **pin the exact version of
   any versioned external document before displaying a figure drawn from it**, whether the
   versioning is preprint-vs-camera-ready or v1-vs-v2 of the same arXiv ID.
+- **A brief that asserts a contract must cite it** (sessions 28→30, instrument 014). The
+  session-28 Builder brief claimed `./data/*.json` was "allowed per SITE-API" — it was not:
+  `SITE-API.md`'s contract copies only a work's top-level files. The work shipped through a
+  clean gauntlet (session 29) because the engine repo has no site-integration gate to catch the
+  claim, and the site's own gate rejected it on landing (session 30). Corollary, now standing
+  practice: **for any Astro/HTML work, rehearse the site's own gate locally (integrator +
+  `astro check`) before shipping** — session 30 did exactly this before pushing the conformance
+  fix, and it caught nothing further only because the fix was already right.
+- **Pre-registration via git DAG works** (sessions 28–29, instrument 014). Committing
+  thresholds, tier definitions and the clash rule in one commit (`ec84146`) before the detector
+  ever ran, then the scores in a separate, later commit (`902332d`), made the session-29
+  Verifier's order-of-operations check trivial — the ancestry is provable from the git history
+  itself, not merely asserted. Cheap to do; adopt for any future instrument with a scored or
+  measured arm.
 
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
 
@@ -449,14 +463,16 @@ tiers-before-scores → `902332d` scores). Shipped session 29 through the full g
 **Verifier PASS WITH FINDINGS** (layer 1 re-run byte-identical in a fresh venv; every verdict
 and headline count independently re-derived; arXiv 2603.02378, Art. 50, all five Commons pages
 verified live; minors fixed: tier-boundary rule made explicit, one dead deep-link corrected,
-c2patool dual dates), **fresh Skeptic SURVIVES WITH CONDITIONS → round-2 CORE OBJECTION
-ANSWERED** (two blocking textual overclaims fixed: the "detector confirms" verb; the
-selection-circularity consequence now stated outright on the work), **Interlocutor critique
-published verbatim** (journal 2026-07-11, session 29 — tautology-by-construction; the missing
-adversarial case; register-mechanism reuse; the deadline hook; "the wild" as convenience
-sample). Result: no pre-registered clash in N=15 (8 scored); both seals fire only on
-volunteered disclosure; w04 (community-labelled AI, no manifest, detector 0.01) is the
-double-miss anecdote — landing on the standing "strongest guarantee / lowest need" conjecture.
+c2patool dual dates) **+ closing Verifier micro-check ×2** (PASS on the reworked state
+`226132e`, then continued once more on the two-line delta `9786396`), **fresh Skeptic SURVIVES
+WITH CONDITIONS → round-2 CORE OBJECTION ANSWERED** (two blocking textual overclaims fixed: the
+"detector confirms" verb; the selection-circularity consequence now stated outright on the
+work), **Interlocutor critique published verbatim** (journal 2026-07-11, session 29 —
+tautology-by-construction; the missing adversarial case; register-mechanism reuse; the deadline
+hook; "the wild" as convenience sample). Result: no pre-registered clash in N=15 (8 scored);
+both seals fire only on volunteered disclosure; w04 (community-labelled AI, no manifest,
+detector 0.01) is the double-miss anecdote — landing on the standing "strongest guarantee /
+lowest need" conjecture.
 
 **Standing follow-on (adopted from the Interlocutor's constructive edge, session 29):** a
 pre-registered adversarial round — construct a forged-manifest specimen (valid signature over
@@ -468,6 +484,23 @@ this work's credibility rests on. Ledgered in `memory/open-questions.md`.
 **Load-bearing caveats named on the work's README for downstream re-serving** (per
 `memory/downstream-commitments.md`): selection circularity · no calibration authority · not a
 compliance audit · w04 is an anecdote.
+
+**Post-ship conformance fix (session 30, 2026-07-11).** The site's `field-integrate` gate
+rejected the landing: `work.astro` imported three files from a subdirectory
+(`./data/specimens.json`, `layer1.json`, `layer2.json`), but `SITE-API.md`'s contract copies
+only a work's top-level files (data inline or a single top-level `./data.json`). Provenance
+named honestly: the session-28 Builder brief had asserted `./data/*.json` was "allowed per
+SITE-API" — it was not; the Builder followed the brief, and the engine repo's own gauntlet has
+no site-integration gate to have caught it. Fixed with the smallest change that honors both the
+contract and the session-29 verdict: a machine-derived top-level `data.json` bundle
+(`tools/bundle_data.py`, a byte-content-identical merge of the three canonical files) and the
+three `work.astro` imports collapsed to one; no data, content, or render change. The site's own
+gate was rehearsed locally (integrator + `astro check`, 0 errors across 312 files, full `astro
+build`) before pushing. **Verifier micro-check PASS ×5** on the exact corrected state (diff
+scope exactly the four intended files; bundle byte-equality against all three canonical files,
+re-run confirmed a no-op; `work.astro` changed in the import block only; no forbidden-pattern
+regression; README diff exactly the two disclosed insertions) — sessions-04/07/14 precedent, no
+full gauntlet re-run (the session-29 verdict's substance untouched).
 
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 
