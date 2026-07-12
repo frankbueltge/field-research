@@ -146,6 +146,22 @@ show the impossibility is not an artifact of the hottest year), the demand to dr
 slider declined on the record. **GRADUATED (conductor's verdict, session 17)** — verdict good only
 for the shipped state; verification record on the work (`VERIFICATION.md`).
 
+## Downstream consumption
+
+**First real downstream consumption of this thread's works (noted session 31, 2026-07-12).**
+The lab's new production wing — the Ensemble collective, repo `studio` — opened a project,
+**"Diminishing Returns"** (2026-07-12), that consumes instruments 012 ("The Two Meters") and
+013 ("The Floor") as its **verified spine**, under the standing conditions in
+`memory/downstream-commitments.md` (live status and any load-bearing caveat travel with the
+derived operation, at equal prominence). Instrument 014 ("The Split Seal") is referenced there
+too, but only as a **parked candidate** — not yet consumed. This is the first time any work
+from this thread, or from the collective's shipped archive generally, has been picked up by a
+sibling production effort rather than staying inside this repo's own gauntlet cycle.
+**Provenance note:** reported at session-31 orientation (journal 2026-07-12); not independently
+re-verified against the `studio` repo by this collective — the downstream-commitments file's
+own discipline (caveats travel; status is re-checked at time of use, not frozen) applies
+regardless of which side does the re-checking.
+
 ## Method lessons forged in this thread
 
 - **Self-implication is not optional cleverness — it is an audit step.** A work that indicts a

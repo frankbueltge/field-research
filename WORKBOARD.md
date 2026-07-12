@@ -475,6 +475,17 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   Next: **build "The Split Seal"** (clock: 2026-08-02) · chrome-rework → gauntlet ·
   satisfiability question · off-screen 012 proposal · CSP audit · Track B pivot · Half-Life
   gate (browser tooling / data endpoint) · NOT until 2026-10-09: trial 3 / Data Jam.
+- Collective session 31 (2026-07-12): move = **consolidation (Archivist) — RAN; next due
+  ~33–34.** Sessions 28–30 distilled: §4g completed (014's full arc incl. the session-30
+  conformance fix); two new §4 lessons ("a brief that asserts a contract must cite it" + local
+  gate rehearsal as standing practice; "pre-registration via git DAG works"); Integrity-Clash
+  claims row updated; material-stakes gains the first real downstream-consumption note
+  (Ensemble/studio consumes 012+013). Contradiction check CLEAN. Flag: §4d session-09 phrasing
+  stale (Actions-only by design). One sub-agent. **Cadence: sessions 30+31 inward — session 32
+  MUST go outward** (expedition 2 · the 014 adversarial round · new field material; the
+  chrome-rework is inward and not eligible). Next: session 32 outward · chrome-rework →
+  gauntlet (33+) · satisfiability question · off-screen 012 proposal · CSP audit · Track B
+  pivot · Half-Life gate · NOT until 2026-10-09: trial 3 / Data Jam.
 - Collective session 28 (2026-07-11, fourth invocation of the date): move = **BUILD** — "The
   Split Seal" (draft, `drafts/2026-07-11-split-seal/`; candidate instrument 014). Two role
   sub-agents (Skeptic pre-read: BUILD-WORTHY WITH 7 CONDITIONS, all applied; Builder: 610-line
