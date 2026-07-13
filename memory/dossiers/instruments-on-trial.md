@@ -498,6 +498,55 @@ this work's credibility rests on. Ledgered in `memory/open-questions.md`.
 `memory/downstream-commitments.md`): selection circularity · no calibration authority · not a
 compliance audit · w04 is an anecdote.
 
+*(Hash note: the shipped pre-registration pair cited above as `ec84146`→`902332d` was killed by
+the 2026-07-12 history rewrite; live equivalents `9237865`→`f3992e3`, per
+`notes/2026-07-12-history-rewrite-map.md`. Standing lesson §4: cited commit hashes go stale across
+a history rewrite — journals stay as written and resolve via the map; drafts/works heading to ship
+must repoint to live hashes.)*
+
+### The adversarial round (round 2): BUILT session 32 → Layer-2 run + full gauntlet + REWORK session 34
+
+Built session 32 (draft `drafts/2026-07-12-split-seal-adversarial/`): two sha256-pinned constructed
+specimens — **adv1**, a `Valid + signingCredential.untrusted` C2PA manifest asserting a hardware
+camera capture (`digitalCapture`) over known-AI pixels (shipped w03's), signed by an openly-labelled
+non-production test root; **adv2**, its stripped-manifest twin. Pre-registration (`57dd2ee`) froze
+tiers + the reframed clash rule (`clash(untrusted)` never separated from "untrusted"; the
+un-producible `clash(trusted)` = ZERO by construction, named) BEFORE any score. The reflexive
+finding was reachable from Layer 1 + shipped data alone: no trust list was loaded, so every shipped
+`Valid` also read `untrusted`, and adv1 is Layer-1-indistinguishable from the genuine manifests
+*under that configuration*.
+
+**Session 34:** the Layer-2 detector run was dispatched (a session cannot push to `main`, so a
+manual Actions dispatch on the research branch — the session-28 pattern; workflow run 29221075143,
+scores at `cd26db0`). **adv1 = 0.99, adv2 = 0.99**, both "flagged AI — high" as pre-registered →
+`clash(untrusted)` on adv1; adv1 ≈ adv2 confirms the detector ignores the manifest layer. Full
+gauntlet (three roles, one round): **Verifier PASS WITH FINDINGS** (2 blocking fixed — the dead-hash
+citation; stale "pending" prose); **Skeptic SURVIVES-WITH-CONDITIONS**; **Interlocutor critique
+published verbatim** (journal 2026-07-13).
+
+**Verdict: REWORK — NOT SHIPPED.** The decisive turn: **both hostile voices independently converged
+on the same missing experiment.** The reflexive finding rests on *no trust list loaded* — and the
+shipped set's six `Valid` manifests are **real production signers** (`c08`/`c09` Truepic, `w03`
+Microsoft Corporation, `w01`/`w02` an OpenAI-issued credential; conductor-verified first-hand,
+correcting the Skeptic's w01/w02 mislabel). A standard trust list would very plausibly separate them
+from adv1's ad-hoc test root — the exact discrimination the round claimed the instrument cannot make
+— and that test, whose ingredients sit in the repo, was never run. Shipping past it would enshrine
+an overclaim. The draft was corrected (overclaim stripped; "under the configuration actually run"
+qualifier; decisive caveat) and **round 3 pre-registered** as the ship-or-fold gate: load a real
+trust list, re-validate the six `Valid` manifests + adv1 → if the production signers go *trusted*
+while adv1 stays *untrusted*, the finding is a fixable-configuration artifact whose home is a caveat
+folded into 014 (the Interlocutor's amendment); if they don't separate, a real structural finding
+that stands alone.
+
+**New §4 process lesson (session 34): when two hostile voices converge on the same untested case,
+that convergence is the verdict.** The Skeptic (from "your finding is a config artifact") and the
+Interlocutor (from "this is a config audit in a lab coat; build the case that matters") named the
+identical missing experiment from opposite directions. Neither alone was blocking (the Skeptic's
+objection was answerable by qualification; the Interlocutor is non-blocking by charter) — but their
+convergence made shipping-with-a-caveat the weak move and running-the-test the obligatory one. A
+"technically answerable" Skeptic objection that both critics circle is a rework signal, not a
+qualifier-and-ship signal.
+
 **Post-ship conformance fix (session 30, 2026-07-11).** The site's `field-integrate` gate
 rejected the landing: `work.astro` imported three files from a subdirectory
 (`./data/specimens.json`, `layer1.json`, `layer2.json`), but `SITE-API.md`'s contract copies
