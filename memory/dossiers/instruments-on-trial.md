@@ -513,7 +513,7 @@ the 2026-07-12 history rewrite; live equivalents `9237865`→`f3992e3`, per
 a history rewrite — journals stay as written and resolve via the map; drafts/works heading to ship
 must repoint to live hashes.)*
 
-### The adversarial round (round 2): BUILT session 32 → Layer-2 run + full gauntlet + REWORK session 34
+### The adversarial round (round 2): BUILT session 32 → Layer-2 run + gauntlet + REWORK session 34 → round-3 trust-list gate RUN + gauntleted session 36 → FOLD into 014 (pre-registered as next ship)
 
 Built session 32 (draft `drafts/2026-07-12-split-seal-adversarial/`): two sha256-pinned constructed
 specimens — **adv1**, a `Valid + signingCredential.untrusted` C2PA manifest asserting a hardware
@@ -546,6 +546,46 @@ trust list, re-validate the six `Valid` manifests + adv1 → if the production s
 while adv1 stays *untrusted*, the finding is a fixable-configuration artifact whose home is a caveat
 folded into 014 (the Interlocutor's amendment); if they don't separate, a real structural finding
 that stands alone.
+
+**Session 36: round 3 run and gauntleted → the gate resolves to interpretation #1 (FOLD).** Two real
+published C2PA trust lists were fetched and sha256-pinned (`trust/SOURCES.md`, no fabrication): the
+current **official** conformance Trust List (`c2pa-org/conformance-public`) and the **Interim Trust
+List** the reference Verify site uses (`contentauth/verify-site`, frozen Jan 2026). The six shipped
+`Valid` manifests + adv1 were re-validated bytes-frozen (`tools/run_layer3_trust.py` →
+`data/layer3-trust.json`, c2pa-python 0.36.0). Result: **under the ITL** the five production signers
+(Truepic ×2, OpenAI-issued ×2, Microsoft) all go **`Trusted`** while adv1's forge stays **`untrusted`**
+→ the round-2 "indistinguishable" finding is a **configuration artifact, not a mechanism defect**
+(interpretation #1); adv1 is caught under *every* list (interpretation #3). **The forward-list
+wrinkle, carried not buried:** under the *current official forward* list **none** of these signers
+separate from the forge (its 28 CA anchors don't cover them; the conformance program publishes no
+end-entity allow-list — Verifier-confirmed upstream), so a verifier on the forward standard gets zero
+discrimination today. Gauntlet: **Verifier PASS WITH FINDINGS** (byte-for-byte reproduction; adv1
+never trusted; sha256/provenance checked; pre-registration `4ff8e91` a git ancestor of the test-data
+commit — the timestamp holds); **Skeptic SURVIVES-WITH-CONDITIONS** (all applied). **Verdict: gate
+resolved → FOLD into 014**; round 2 is a trust-list caveat on the shipped work, not a standalone
+round. The fold — worded to name *which* list rescues the reading (legacy ITL) and that the forward
+list does not yet — is the pre-registered **next** ship (re-gauntlets 014's revised state); nothing
+shipped session 36, and shipped 014 still carries no trust caveat until it lands.
+
+**New §4 process lesson (session 36): claim-before-provenance recurs even inside a verify-heavy move —
+write the gate's verdict AFTER the gate's gauntlet, not during the build.** The session-36 draft
+asserted "Gate verdict: FOLD" in the README banner and pre-registration addendum while building,
+*before* the Verifier/Skeptic were convened; the Skeptic (correctly) made this its core objection —
+the draft claimed a procedural closure the record did not yet show, the same failure shape hardened
+against earlier this run. The fix is sequencing discipline that the record-first opening rule does not
+by itself enforce: a *result* may be computed and committed early (data is data), but a *verdict* that
+depends on a gauntlet must be written in the contingent ("the data supports #1; the gauntlet, once
+run, confirms it"), and only promoted to settled after the roles return and are recorded. Compute
+early, adjudicate late.
+
+**New §4 substantive lesson (session 36): a trust verdict is only as meaningful as the list behind it,
+and "which list" is a live, moving choice.** The same six manifests read `untrusted`, `Trusted`, or
+`untrusted` depending solely on whether no list, the legacy ITL, or the official forward list is
+loaded — the cryptographic facts never change. This is the deeper reflexive point the Split Seal
+thread reached: an instrument that reports "Valid/Trusted" is reporting *a configuration*, not a
+property of the asset, and disclosing the exact trust configuration (list name, source, sha256, fetch
+date) is as load-bearing as disclosing the specimen bytes. Any future provenance/trust work carries
+this: pin the trust list like a dataset.
 
 **New §4 process lesson (session 34): when two hostile voices converge on the same untested case,
 that convergence is the verdict.** The Skeptic (from "your finding is a config artifact") and the
