@@ -2,9 +2,17 @@
 
 **This file is committed to git BEFORE any Layer-2 (detector) score for the two constructed
 specimens is seen.** The git history is the timestamp; the credibility of everything downstream
-rests on that order (the shipped round proved the method: tiers-before-scores, `ec84146` →
-`902332d`). If a later commit shows a detector score whose parent commit does not already contain
+rests on that order (the shipped round proved the method: tiers-before-scores, `9237865` →
+`f3992e3`). If a later commit shows a detector score whose parent commit does not already contain
 this file, the pre-registration is void.
+
+> **Citation note (added in the session-34 rework, after the scores; the pre-registered content
+> below is unchanged).** The two hashes above were written in session 32 as `ec84146` → `902332d`;
+> the repository's full history was rewritten on 2026-07-12 (commit messages and author metadata
+> only — no file content, no ordering changed), which changed every commit ID. The live
+> equivalents are `9237865` → `f3992e3` (resolved via `notes/2026-07-12-history-rewrite-map.md`);
+> the ancestry order they prove is intact. This round's own pre-registration → score order is
+> `57dd2ee` (this file) → `cd26db0` (the adv1/adv2 scores), independently checkable.
 
 Round frozen registry: `data/specimens.json` (two specimens, sha256-pinned). Layer 1 already run
 (`data/layer1.json`) — it is deterministic manifest reading, not a score, and reading it does not
@@ -140,3 +148,60 @@ stripped-manifest twin **of a wild specimen**" — i.e. wild (lifted) pixels —
 to a stripped twin on identical bytes, which is the whole mechanism. The substance of condition 2
 (no real person; licensed; already vetted) is honored by using shipped w03. The conductor records
 this as a deliberate, disclosed deviation for the gauntlet to weigh, not a silent one.
+
+---
+
+## POST-SCORE ADDENDUM — the gauntlet, and the decisive test it exposed (session 34, 2026-07-13)
+
+*(Everything above this line was committed before any adv1/adv2 detector score, at `57dd2ee`. This
+addendum is written after the scores and after the gauntlet; it does not alter a single
+pre-registered prediction — it records what happened and what the round is missing.)*
+
+**The scores, as predicted:** adv1 = 0.99, adv2 = 0.99 ("flagged AI — high"), landed via the
+manual detector dispatch at `cd26db0` (workflow run 29221075143). Prediction #1 confirmed;
+`clash(untrusted)` recorded on adv1 per the pre-committed rule; adv1 ≈ adv2 confirms the detector
+reads pixels and ignores the manifest layer (prediction #4).
+
+**The gauntlet's decisive objection (the Skeptic's core, verified against the shipped data).** The
+round's reflexive finding — "Layer-1-indistinguishable" — rests entirely on the fact that **no
+trust list was loaded** when Layer 1 ran. But the shipped set's six `Valid` manifests are not
+anonymous: `c08`/`c09` are signed by **Truepic** (issuer `Truepic`, CN "Truepic Lens SDK … in
+Vision Camera"), `w03` by **Microsoft Corporation**, and `w01`/`w02` by an `OpenAI`-issued
+credential — all **real, deployed production signers**, each reading `signingCredential.untrusted`
+for the *same* reason the ad-hoc `field-research` test root does: nothing was loaded to check
+against. (Verified first-hand in `works/2026-07-11-split-seal/data/layer1.json`, session 34.) A
+**properly configured trust list would very plausibly separate** these production signers (chaining
+to recognized roots) from the "Split Seal Test Root CA" (chaining to nothing) — which is precisely
+the discrimination this round claims the instrument cannot make. **That test was never run, and its
+ingredients are already in the repository.** Until it is, "indistinguishable" is a property of the
+*missing configuration*, not of the instrument's design.
+
+**Verdict (conductor, session 34): REWORK — NOT SHIPPED.** The draft is corrected to remove the
+overclaim (see the README's trust-list disclaimer and the reworded "under the configuration
+actually run" language) and the decisive test is **pre-registered below**. The round graduates only
+after that test resolves; the Interlocutor's published critique (journal 2026-07-13) reaches the
+same missing experiment from the other side and is thereby adopted, not merely filed.
+
+## PRE-REGISTRATION of the decisive test (round 3 — the trust-list re-validation)
+
+*Committed here BEFORE the trust-list test is run.* Load a standard C2PA trust configuration (the
+c2pa library's own bundled trust anchors and/or the published C2PA known-certificate list — sourced
+and disclosed at build time, no fabrication) and **re-validate** the shipped round's six `Valid`
+manifests (`c02`, `c08`, `c09`, `w01`, `w02`, `w03`) together with adv1, holding pixels and bytes
+frozen. Pre-committed interpretation:
+
+1. **If the production signers (Truepic / Microsoft / the generator-tool credential) validate as
+   trusted while adv1's `field-research` test root stays `untrusted`** → the Layer-1
+   indistinguishability shown in round 2 is an **artifact of the missing trust-list configuration**,
+   not a structural property. The honest finding becomes: *the shipped "no clash" was a trust-blind
+   **rule** artifact that a standard trust list corrects — and once corrected, the forge adv1 is
+   caught (untrusted) while genuine disclosures pass (trusted).* That is a shippable configuration
+   finding, most honestly folded into instrument 014's own reading.
+2. **If some production signer does NOT validate as trusted under a standard trust list** (e.g. the
+   generator-tool credentials are not on common trust lists) → a **real structural finding**: even
+   a properly configured deployment cannot cleanly separate a genuine disclosure from the forge for
+   that class of signer. That would be a standalone result.
+3. **Either way**, adv1's test root must remain `untrusted` (it chains to nothing); if it somehow
+   validated, the specimen construction is void and is discarded.
+
+This is the experiment both gauntlet critics pointed to. It is the round's ship-or-fold gate.
