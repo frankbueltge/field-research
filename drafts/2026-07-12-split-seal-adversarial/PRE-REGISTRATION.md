@@ -205,3 +205,49 @@ frozen. Pre-committed interpretation:
    validated, the specimen construction is void and is discarded.
 
 This is the experiment both gauntlet critics pointed to. It is the round's ship-or-fold gate.
+
+---
+
+## POST-TEST RESULT — round 3 run (session 36, 2026-07-13)
+
+*(Everything above this line was committed in session 34, on `main`, before any trust-list score
+existed — git-checkable. This section is written after the test; it changes no pre-registered
+interpretation, only records which one fired.)*
+
+**Trust configurations, real and pinned** (`trust/`, `trust/SOURCES.md`; sha256 + source URLs +
+fetch date recorded, no fabrication): the current **official C2PA Trust List** (conformance program,
+`c2pa-org/conformance-public`) and the **Interim Trust List** (anchors + allowed, the list the C2PA
+Verify site uses, `contentauth/verify-site`, frozen Jan 2026). Both tested; disclosing which
+discriminates is the non-cherry-picked reading the pre-registration's wording asks for.
+
+**Result** (`data/layer3-trust.json`; `tools/run_layer3_trust.py`; c2pa-python 0.36.0, bytes frozen):
+
+| specimen | signer | no list | official TL | ITL |
+|---|---|---|---|---|
+| adv1 (forge) | `field-research` test root | Valid+untrusted | Valid+untrusted | **Valid+untrusted** |
+| c02 | C2PA **test** cert | Valid+untrusted | Valid+untrusted | Valid+untrusted |
+| c08, c09 | Truepic | Valid+untrusted | Valid+untrusted | **Trusted** |
+| w01, w02 | OpenAI-issued | Valid+untrusted | Valid+untrusted | **Trusted** |
+| w03 | Microsoft | Valid+untrusted | Valid+untrusted | **Trusted** |
+
+**Which interpretation fired:**
+- **#3 satisfied** — adv1's forge stays `untrusted` under *every* configuration (it chains to
+  nothing). The construction is valid; the forge is caught by any trust-checking verifier.
+- **#1 fired** — under the ITL (the list Verify actually applies to these 2022–2025 specimens) the
+  five genuine production signers all separate to `Trusted` while adv1 stays untrusted. So the
+  round-2 "Layer-1-indistinguishable" finding is an **artifact of the missing trust-list
+  configuration**, not a structural property: a standard trust list catches the forge and passes the
+  genuine disclosures. The honest home is a **caveat folded into instrument 014**.
+- **Migration wrinkle (recorded, not a standalone #2 finding):** the *current official* C2PA TL
+  trusts **none** of these real signers — Truepic/Microsoft/the OpenAI-issued credential have not yet
+  enrolled roots in the conformance-program list (as of early 2026 it is sparse). It "separates" only
+  by distrusting everyone; the ITL is what discriminates. This does not make round 2 a standalone
+  structural result — because the ITL demonstrably *can* separate — but it is a true observation
+  about the trust layer's mid-migration state, carried as part of the folded caveat.
+
+**Verdict of the gate: FOLD into instrument 014** (interpretation #1), with the migration wrinkle
+disclosed. Round 2 does not become a standalone work; its content becomes a trust-list caveat on the
+shipped work. That fold — a revision of a matured Astro work — is pre-registered as the next ship
+move and re-runs the full gauntlet on 014's revised state (any revision invalidates a verdict). The
+Interlocutor's session-34 amendment ("our 'Valid' never meant 'trusted' — fold it in") is thereby
+adopted, now with the decisive test run rather than asserted.

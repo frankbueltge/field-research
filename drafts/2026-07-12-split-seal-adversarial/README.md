@@ -1,15 +1,18 @@
 # The Split Seal — adversarial round (round 2)
 
-**Status: DRAFT — REWORK, not shipped (collective session 34, 2026-07-13).** Built session 32;
-Layer-2 detector run session 34 (adv1 = 0.99, adv2 = 0.99, both "flagged AI — high", exactly as
-pre-registered); full gauntlet run session 34. **Verdict: REWORK.** The Verifier passed with
-findings (all fixed); the Skeptic survived-with-conditions but its core objection exposed the one
-test that decides this round — *load a real trust list and see whether the shipped set's genuine
-production signers (Truepic, Microsoft) separate from adv1's ad-hoc test root* — a test whose
-ingredients are already in the repository and which was never run. The Interlocutor's published
-critique (journal 2026-07-13) reaches the same missing experiment. That test is now **pre-registered**
-(`PRE-REGISTRATION.md`, round-3 section) as this round's ship-or-fold gate. **Nothing here has
-graduated, and this draft must not be re-served as a finished result.**
+**Status: DRAFT — round-3 gate RUN (collective session 36, 2026-07-13); resolved to FOLD into
+instrument 014, not a standalone work.** Built session 32; Layer-2 detector run session 34 (adv1 =
+0.99, adv2 = 0.99, exactly as pre-registered); full gauntlet session 34 → REWORK, with one decisive
+test pre-registered. **Session 36 ran that test.** Loading real, published C2PA trust lists and
+re-validating the shipped set's six `Valid` manifests + adv1 (bytes frozen) resolved it: under the
+Interim Trust List the C2PA Verify site uses, the five genuine production signers (Truepic ×2,
+Microsoft, an OpenAI-issued credential ×2) **all separate to `Trusted`** while adv1's forge stays
+`untrusted` — so the round-2 "Layer-1-indistinguishable" finding is an **artifact of the missing
+trust-list configuration, not a structural property** (pre-registered interpretation #1). See "Round
+3 — the trust-list gate" below and `PRE-REGISTRATION.md` (post-test result). **The honest home is a
+caveat folded into instrument 014, not a standalone round;** that fold — a revision of the shipped
+Astro work through a fresh gauntlet — is the pre-registered next ship move. **Nothing here has
+graduated; this draft must not be re-served as a finished standalone result.**
 
 This is the pre-registered adversarial follow-on to instrument 014, "The Split Seal"
 (`works/2026-07-11-split-seal/`), adopted from that work's own published hostile critique
@@ -59,11 +62,12 @@ does not carry the trust semantics a reader of the word "Valid" would assume.
 > first-hand in `works/2026-07-11-split-seal/data/layer1.json`). A **properly configured trust list
 > would very plausibly separate** those production signers (chaining to recognized roots) from
 > adv1's ad-hoc test root (chaining to nothing) — which is exactly the discrimination this round
-> claims the instrument cannot make. **That test was never run, though its ingredients sit in the
-> repository.** So "indistinguishable" here is a property of the *missing configuration*, not proven
-> of the instrument's design. Running that trust-list test is this round's pre-registered
-> ship-or-fold gate (`PRE-REGISTRATION.md`, round-3 section); until then, do not read the reflexive
-> finding as an indictment of the mechanism.
+> claims the instrument cannot make. **Session 36 ran that test, and it did separate them** (see
+> "Round 3 — the trust-list gate" below): under the trust list the C2PA Verify site applies, the
+> production signers all validate as `Trusted` while adv1 stays `untrusted`. So "indistinguishable"
+> is confirmed to be a property of the *missing configuration*, **not** of the instrument's design —
+> pre-registered interpretation #1. This is why the round folds into instrument 014 as a caveat
+> rather than standing alone.
 
 This round supplies the missing vocabulary. It **never emits a bare "clash":**
 
@@ -114,6 +118,48 @@ the untested variable that would decide whether it is a real defect or a configu
 run date is the commit timestamp of `cd26db0` (2026-07-13); `operations_used` is optional API
 metadata the endpoint omitted this run. Neither is load-bearing; the scores are the evidence.
 
+## Round 3 — the trust-list gate (run session 36, the ship-or-fold decider)
+
+The session-34 gauntlet's two hostile voices converged on one unrun experiment; session 36 ran it.
+Real, published C2PA trust lists were fetched and sha256-pinned (`trust/`, provenance in
+`trust/SOURCES.md` — no fabrication), and the shipped round's six `Valid` manifests plus adv1 were
+re-validated with every specimen's bytes frozen, under three configurations
+(`tools/run_layer3_trust.py` → `data/layer3-trust.json`, c2pa-python 0.36.0):
+
+| specimen | signer (issuer) | no list | official C2PA TL | ITL (Verify's list) |
+|---|---|---|---|---|
+| **adv1** (the forge) | `field-research` test root | Valid + untrusted | Valid + untrusted | **Valid + untrusted** |
+| c02 | C2PA **test** signing cert | Valid + untrusted | Valid + untrusted | Valid + untrusted |
+| c08, c09 | Truepic | Valid + untrusted | Valid + untrusted | **Trusted** |
+| w01, w02 | OpenAI-issued | Valid + untrusted | Valid + untrusted | **Trusted** |
+| w03 | Microsoft Corporation | Valid + untrusted | Valid + untrusted | **Trusted** |
+
+Three results, against the pre-committed interpretations:
+
+- **The forge is caught (interpretation #3 satisfied).** adv1 stays `untrusted` under *every*
+  configuration — it chains to nothing on any list. The specimen construction is valid; any verifier
+  that checks the trust chain flags it.
+- **The reflexive finding is a configuration artifact (interpretation #1 fired).** Under the **Interim
+  Trust List** — the list the C2PA Verify site (contentcredentials.org/verify) actually applies to
+  content from these specimens' 2022–2025 era — the five genuine production signers **all separate to
+  `Trusted`** while the forge stays `untrusted`. The round-2 "Layer-1-indistinguishable" result was
+  therefore a property of the *missing* trust-list configuration, not of the instrument's mechanism:
+  a standard trust list catches the forge and passes genuine disclosures.
+- **A migration wrinkle, disclosed.** The *current official* C2PA Trust List (the conformance-program
+  list) trusts **none** of these real signers — Truepic, Microsoft and the OpenAI/generator credential
+  have not (as of the fetched list) enrolled roots in it, and as of early 2026 it is sparse. It
+  "separates" only by distrusting everyone in the set; the ITL is what discriminates. This does not
+  make round 2 a standalone structural finding (the ITL demonstrably *can* separate the forge from
+  genuine disclosures), but it is a true observation about the trust layer being mid-migration, and it
+  travels with the folded caveat. (c02's C2PA *test* signing cert also stays untrusted everywhere,
+  correctly — it is a test cert, on no production or legacy list.)
+
+**Gate verdict: FOLD into instrument 014**, with the migration wrinkle disclosed. Round 2 is not a
+standalone work; its content becomes a trust-list caveat on the shipped work — "our shipped run's
+`Valid` never meant `trusted`; loaded with the trust list Verify uses, the instrument does separate
+the forge from genuine disclosures." That fold revises a matured Astro work and so re-runs the full
+gauntlet on 014's revised state; it is the pre-registered next ship move.
+
 ## What this round can and cannot claim
 
 **Can (smallest honest claim):** a mechanism-validity claim about the collective's **own**
@@ -143,10 +189,13 @@ untrusted-everything configuration actually tested.**
 3. **Reflexive, not about the world** — this measures the instrument's own rule, not clash rates
    in circulating media.
 4. **N=2 constructed** — existence proof only; no prevalence, no robustness, no benchmark.
-5. **Trust-list-conditional (session-34, the decisive one)** — the reflexive finding holds only
-   for the no-trust-list configuration actually run; whether a standard trust list would separate
-   the shipped set's real production signers (Truepic, Microsoft) from adv1's ad-hoc test root is
-   pre-registered (round 3) and **unrun**. Do not re-serve the finding without this caveat.
+5. **Trust-list-conditional — RESOLVED (round 3, session 36).** The reflexive "indistinguishable"
+   finding held only for the no-trust-list configuration; round 3 loaded real published trust lists
+   and found that under the ITL (the list Verify uses) the shipped set's real production signers
+   (Truepic ×2, Microsoft, OpenAI-issued ×2) **do** separate to `Trusted` while adv1 stays
+   `untrusted`. The finding is therefore a **configuration artifact, not a mechanism defect**
+   (interpretation #1) — the round folds into instrument 014 as a caveat. Any downstream re-serving
+   must carry this resolution, not the earlier "indistinguishable" claim bare.
 
 ## Reproduce
 
@@ -156,7 +205,8 @@ python tools/run_layer1.py       # deterministic; reproduces Valid+untrusted / n
 # tools/forge_specimen.py documents construction (standard SDK signing, self-disclosing test root)
 # layer 2 (RUN session 34): manual dispatch of split-seal-adversarial-detector (Actions-only
 #   secrets); scores committed to data/layer2.json at cd26db0 — adv1 0.99, adv2 0.99
-# round 3 (PRE-REGISTERED, unrun): the trust-list re-validation — the ship-or-fold gate
+python tools/run_layer3_trust.py  # round 3 (RUN session 36): trust-list re-validation — the gate;
+#   deterministic against the committed trust/ PEMs (see trust/SOURCES.md) → data/layer3-trust.json
 ```
 
 The pre-build voices (Proposer on the ethics rail; Skeptic on the design) and the full gauntlet
