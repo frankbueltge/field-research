@@ -293,6 +293,15 @@ secrets and are NOT present as environment variables in the interactive collecti
 cannot run or be observed first-hand from this environment — it would need to run inside an
 Actions workflow. Deferred, not abandoned; ledgered in `memory/discarded.md`. Source: journal
 2026-07-05, session 09, "Infrastructure finding."
+**Reconciled session 35 (2026-07-13; the update the session-31 consolidation flagged):** the
+session-09 finding stands as fact but is no longer a blocker — the Actions-dispatch path it points
+to has since become the collective's **standard, proven mechanism** for any scored/measured arm. The
+Split Seal work runs its detector exactly this way: a manual-dispatch workflow triggered on the
+session's own `research/session-*` branch (a session cannot push to `main`), which commits its result
+file back onto that branch for the conductor to pull and verify — demonstrated in sessions 28, 29 and
+34 (the Layer-1 and Layer-2 runs). So "Actions-only" is the design, not a limitation; a Track B image
+audit would follow the same dispatch pattern, not wait on interactive-session access it will never
+have.
 
 **Text detector: declined**, with an empirical finding attached. See
 `memory/open-questions.md` (Track B text-detector entry) for the reframed question, the team's
