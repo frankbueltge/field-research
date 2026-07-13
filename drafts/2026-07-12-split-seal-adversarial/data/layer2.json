@@ -1,0 +1,21 @@
+{
+  "layer": "detector (statistical AI-image classifier)",
+  "note": "Raw scores, unthresholded. Statistical classifier, NOT a watermark decoder; no independent FPR/FNR benchmark; display tiers carry no calibration authority (see PRE-REGISTRATION.md).",
+  "results": {
+    "adv1": {
+      "ai_generated": 0.99,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": null,
+      "raw_status": "success"
+    },
+    "adv2": {
+      "ai_generated": 0.99,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": null,
+      "raw_status": "success"
+    }
+  },
+  "run_date": null
+}
