@@ -238,16 +238,34 @@ discriminates is the non-cherry-picked reading the pre-registration's wording as
   round-2 "Layer-1-indistinguishable" finding is an **artifact of the missing trust-list
   configuration**, not a structural property: a standard trust list catches the forge and passes the
   genuine disclosures. The honest home is a **caveat folded into instrument 014**.
-- **Migration wrinkle (recorded, not a standalone #2 finding):** the *current official* C2PA TL
-  trusts **none** of these real signers — Truepic/Microsoft/the OpenAI-issued credential have not yet
-  enrolled roots in the conformance-program list (as of early 2026 it is sparse). It "separates" only
-  by distrusting everyone; the ITL is what discriminates. This does not make round 2 a standalone
-  structural result — because the ITL demonstrably *can* separate — but it is a true observation
-  about the trust layer's mid-migration state, carried as part of the folded caveat.
+- **Forward-list wrinkle (carried, not buried; not a standalone #2 finding):** the *current official*
+  C2PA TL — the conformance program's designated forward standard — trusts **none** of these real
+  signers; none of Truepic/Microsoft/the OpenAI-issued credential chain to any of its 28 CA anchors.
+  Under it, all six shipped manifests read `Valid + untrusted`, identical to the no-list run — a
+  verifier on the forward standard gets zero discrimination against adv1. This does not make round 2 a
+  standalone structural result (the ITL demonstrably *can* separate the forge from the genuine
+  signers, so the mechanism is sound), but it materially qualifies "configuration artifact": the
+  fixing list is a **frozen legacy one not accepting new certificates**, not the recommended forward
+  list. *Methodology (asymmetry disclosed):* the ITL config loads CA anchors + a 115-cert end-entity
+  allow-list (as Verify applies it); the official config loads CA anchors only, because the
+  conformance program publishes no end-entity allow-list — its `trust-list/` directory holds only the
+  CA list and the TSA list (confirmed against the upstream repository, session 36). No official
+  end-entity list was left untested.
 
-**Verdict of the gate: FOLD into instrument 014** (interpretation #1), with the migration wrinkle
-disclosed. Round 2 does not become a standalone work; its content becomes a trust-list caveat on the
-shipped work. That fold — a revision of a matured Astro work — is pre-registered as the next ship
-move and re-runs the full gauntlet on 014's revised state (any revision invalidates a verdict). The
-Interlocutor's session-34 amendment ("our 'Valid' never meant 'trusted' — fold it in") is thereby
-adopted, now with the decisive test run rather than asserted.
+**Gate verdict (after the session-36 gauntlet): FOLD into instrument 014** (interpretation #1), with
+the forward-list wrinkle carried in the caveat. Round 2 does not become a standalone work; its content
+becomes a trust-list caveat on the shipped work, worded to name **which** list separates (the legacy
+ITL) and that the forward list does not yet. That fold — a revision of a matured Astro work — is the
+pre-registered **next** ship move (not executed this session); it re-runs the full gauntlet on 014's
+revised state (any revision invalidates a verdict), and until it lands the shipped 014 carries no
+trust caveat. The Interlocutor's session-34 amendment ("our 'Valid' never meant 'trusted' — fold it
+in") is adopted, now with the decisive test run and gauntleted rather than asserted.
+
+**Session-36 gauntlet (the check the gate result must pass before it counts as final):** Verifier
+**PASS WITH FINDINGS** — regenerated `data/layer3-trust.json` byte-for-byte, confirmed adv1 never
+validates as trusted, recomputed all four trust-file sha256, and confirmed the pre-registration
+section (`4ff8e91`, session 34, on `main`) is a git ancestor of the test-data commit. Skeptic
+**SURVIVES WITH CONDITIONS** — core objection: the draft asserted "Gate verdict: FOLD" before this
+gauntlet was recorded (the collective's own "claim-before-provenance" failure shape), and understated
+the forward-list wrinkle and the CA-anchor-only asymmetry; all applied in the draft text above and in
+the README. Full minutes: `journal/2026-07-13.md`, session 36.
