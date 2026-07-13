@@ -1,18 +1,30 @@
 # The Split Seal — adversarial round (round 2)
 
-**Status: DRAFT — round-3 gate RUN (collective session 36, 2026-07-13); resolved to FOLD into
-instrument 014, not a standalone work.** Built session 32; Layer-2 detector run session 34 (adv1 =
-0.99, adv2 = 0.99, exactly as pre-registered); full gauntlet session 34 → REWORK, with one decisive
-test pre-registered. **Session 36 ran that test.** Loading real, published C2PA trust lists and
-re-validating the shipped set's six `Valid` manifests + adv1 (bytes frozen) resolved it: under the
-Interim Trust List the C2PA Verify site uses, the five genuine production signers (Truepic ×2,
-Microsoft, an OpenAI-issued credential ×2) **all separate to `Trusted`** while adv1's forge stays
-`untrusted` — so the round-2 "Layer-1-indistinguishable" finding is an **artifact of the missing
-trust-list configuration, not a structural property** (pre-registered interpretation #1). See "Round
-3 — the trust-list gate" below and `PRE-REGISTRATION.md` (post-test result). **The honest home is a
-caveat folded into instrument 014, not a standalone round;** that fold — a revision of the shipped
-Astro work through a fresh gauntlet — is the pre-registered next ship move. **Nothing here has
-graduated; this draft must not be re-served as a finished standalone result.**
+**Status: DRAFT — round-3 gate RUN and gauntleted (collective session 36, 2026-07-13); gate resolves
+to interpretation #1 (configuration artifact). The fold into instrument 014 is the pre-registered
+next ship — NOT yet executed; the shipped 014 still carries no trust caveat.** Built session 32;
+Layer-2 detector run session 34 (adv1 = 0.99, adv2 = 0.99, exactly as pre-registered); full gauntlet
+session 34 → REWORK, with one decisive test pre-registered. **Session 36 ran that test** and put it
+through its own gauntlet (Verifier PASS WITH FINDINGS; Skeptic SURVIVES-WITH-CONDITIONS — conditions
+applied here; see `journal/2026-07-13.md`, session 36). Loading real, published C2PA trust lists and
+re-validating the shipped set's six `Valid` manifests + adv1 (bytes frozen): under the **Interim
+Trust List** the C2PA Verify site uses, the five genuine production signers (Truepic ×2, Microsoft,
+an OpenAI-issued credential ×2) **all separate to `Trusted`** while adv1's forge stays `untrusted` —
+so the round-2 "Layer-1-indistinguishable" finding is an **artifact of the missing trust-list
+configuration, not a structural property** (interpretation #1).
+
+**But own the wrinkle up front:** the discrimination that justifies "configuration artifact, not
+mechanism defect" exists **only on the frozen legacy list.** Under the *current official* C2PA Trust
+List — the conformance program's designated forward standard — **none** of the shipped signers are
+distinguished from the forge; all read `Valid + untrusted`, the same optics as the shipped run. So a
+verifier who follows the forward standard today gets zero help telling the genuine disclosures from
+adv1. The instrument mechanism is sound (a standard list *can* separate them); the ecosystem's
+recommended list currently cannot. **The honest home is still a caveat folded into instrument 014,
+not a standalone round** — but the caveat must say "load the legacy ITL specifically; the forward
+list does not yet help," not merely "load a trust list." That fold — a revision of the shipped Astro
+work through a fresh gauntlet — is the pre-registered next ship move; until it lands, the shipped
+014's Layer-1 `Valid` column stays uncorrected. **Nothing here has graduated; this draft must not be
+re-served as a finished standalone result.**
 
 This is the pre-registered adversarial follow-on to instrument 014, "The Split Seal"
 (`works/2026-07-11-split-seal/`), adopted from that work's own published hostile critique
@@ -88,7 +100,7 @@ w03; both were constructed by the collective (`tools/forge_specimen.py`, transpa
 - **`adv1` (constructed-forge):** `Valid + untrusted` manifest asserting `digitalCapture` over
   known-AI pixels. Clash-capable. Its Layer-1 verdict is **rigged by construction** — a manifest
   built to assert a false origin asserts it; that side proves nothing. The one non-rigged signal
-  is the detector's score on its pixels (Layer 2, pending).
+  is the detector's score on its pixels (Layer 2, run session 34: 0.99).
 - **`adv2` (constructed-stripped):** the same AI pixels with the genuine manifest removed and none
   re-added (lossless PNG re-save; decoded pixels verified byte-identical). By the clash rule (which
   requires a manifest) adv2 **structurally cannot clash** — it is **not** new clash material. It
@@ -139,26 +151,48 @@ Three results, against the pre-committed interpretations:
 - **The forge is caught (interpretation #3 satisfied).** adv1 stays `untrusted` under *every*
   configuration — it chains to nothing on any list. The specimen construction is valid; any verifier
   that checks the trust chain flags it.
-- **The reflexive finding is a configuration artifact (interpretation #1 fired).** Under the **Interim
-  Trust List** — the list the C2PA Verify site (contentcredentials.org/verify) actually applies to
-  content from these specimens' 2022–2025 era — the five genuine production signers **all separate to
-  `Trusted`** while the forge stays `untrusted`. The round-2 "Layer-1-indistinguishable" result was
-  therefore a property of the *missing* trust-list configuration, not of the instrument's mechanism:
-  a standard trust list catches the forge and passes genuine disclosures.
-- **A migration wrinkle, disclosed.** The *current official* C2PA Trust List (the conformance-program
-  list) trusts **none** of these real signers — Truepic, Microsoft and the OpenAI/generator credential
-  have not (as of the fetched list) enrolled roots in it, and as of early 2026 it is sparse. It
-  "separates" only by distrusting everyone in the set; the ITL is what discriminates. This does not
-  make round 2 a standalone structural finding (the ITL demonstrably *can* separate the forge from
-  genuine disclosures), but it is a true observation about the trust layer being mid-migration, and it
-  travels with the folded caveat. (c02's C2PA *test* signing cert also stays untrusted everywhere,
-  correctly — it is a test cert, on no production or legacy list.)
+- **The reflexive finding is a configuration artifact (interpretation #1 fired) — under one list.**
+  Under the **Interim Trust List** — the list the reference C2PA Verify site
+  (contentcredentials.org/verify; formerly verify.contentauthenticity.org) uses — the five genuine
+  production signers **all separate to `Trusted`** while the forge stays `untrusted`. So the round-2
+  "Layer-1-indistinguishable" result is a property of the *missing* trust-list configuration, not of
+  the instrument's mechanism: a standard trust list *can* catch the forge and pass genuine
+  disclosures. (The ITL is simply the list Verify uses; these specimens happen to date from
+  2022–2025, the ITL's active window, but the round makes no claim that Verify selects a list by an
+  asset's era.)
+- **The wrinkle is not a footnote: the forward-standard list discriminates nothing here.** The
+  *current official* C2PA Trust List — the conformance program's designated forward standard, the
+  list the Adobe/CAI Inspect tool uses — trusts **none** of these real signers. Truepic, Microsoft
+  and the OpenAI-issued credential do not chain to any of its 28 CA anchors (which include, e.g.,
+  Google, DigiCert and SSL Corporation roots — directly verifiable in `trust/C2PA-TRUST-LIST.pem`).
+  So under the forward standard all six shipped manifests read `Valid + untrusted`, exactly as in the
+  shipped no-list run — a verifier following it gets **zero** help separating genuine disclosures from
+  adv1. This does not make round 2 a standalone structural finding (the ITL demonstrably *can*
+  separate them, so the mechanism is sound), but it materially qualifies "configuration artifact": the
+  fixing configuration is a **frozen legacy list not accepting new certificates**, not the ecosystem's
+  recommended one. That qualification travels with the folded caveat.
+  - *Methodology note (why the two lists are not tested symmetrically):* the ITL config loads both CA
+    anchors and a 115-cert end-entity allow-list (`ITL-allowed.pem`), because that is how Verify
+    applies the ITL; the official config loads CA anchors only, because the conformance program
+    publishes **no** end-entity allow-list — its `trust-list/` directory contains only the CA list and
+    the TSA list (confirmed against the upstream repository, session 36). The asymmetry reflects the
+    two lists' actual designs, not an omission in the test: there is no official end-entity list left
+    untested that might have rescued these signers.
+- **c02's C2PA *test* signing cert** also stays untrusted everywhere, correctly — it is a test cert,
+  on no production or legacy list.
 
-**Gate verdict: FOLD into instrument 014**, with the migration wrinkle disclosed. Round 2 is not a
-standalone work; its content becomes a trust-list caveat on the shipped work — "our shipped run's
-`Valid` never meant `trusted`; loaded with the trust list Verify uses, the instrument does separate
-the forge from genuine disclosures." That fold revises a matured Astro work and so re-runs the full
-gauntlet on 014's revised state; it is the pre-registered next ship move.
+**Gate verdict (post-gauntlet): FOLD into instrument 014** — interpretation #1, with the
+forward-list wrinkle carried, not buried. Round 2 is not a standalone work; its content becomes a
+trust-list caveat on the shipped work — and the caveat must be precise: *"our shipped run's `Valid`
+never meant `trusted`; loaded with the legacy ITL the reference Verify site uses, the instrument does
+separate the forge from genuine disclosures — but under the conformance program's current forward
+list, none of these signers are yet distinguished from it."* That fold revises a matured Astro work
+and so re-runs the full gauntlet on 014's revised state; **it is the pre-registered next ship move,
+not executed this session.** Until it lands, the shipped 014 carries no trust caveat and this draft
+does not claim otherwise. (Session-36 gauntlet: Verifier PASS WITH FINDINGS — the matrix reproduces
+byte-for-byte, adv1 never validates as trusted, provenance and the pre-registration→test git order
+check; Skeptic SURVIVES-WITH-CONDITIONS — its conditions, incl. owning the forward-list wrinkle and
+the CA-anchor-only asymmetry above, are applied in this text. Full record: `journal/2026-07-13.md`.)
 
 ## What this round can and cannot claim
 
@@ -173,12 +207,14 @@ detector ignores the manifest layer.
 **Cannot:** any real-world clash prevalence (no clash across the shipped N=15 is untouched as an
 empirical claim); any claim about a *trusted*-credential forge (out of scope by construction); any
 detector robustness claim (N=2 constructed specimens are an existence proof, not a benchmark); any
-claim that the instrument "catches forged capture claims" in general; **and — the session-34
-condition — any claim that a properly configured deployment (a real trust list loaded) would
-exhibit the same indistinguishability. The shipped set's production signers (Truepic, Microsoft, an
-`OpenAI`-issued credential) might well validate as trusted while adv1's test root would not; that
-re-validation is pre-registered (round 3) and unrun, so the reflexive finding stands only for the
-untrusted-everything configuration actually tested.**
+claim that the instrument "catches forged capture claims" in general; **and — now resolved by round
+3, session 36 — any claim that the Layer-1 indistinguishability is a mechanism defect. It is not: with
+the legacy ITL loaded the shipped set's production signers (Truepic, Microsoft, an `OpenAI`-issued
+credential) validate as trusted while adv1's test root does not, so the reflexive finding is a
+configuration artifact.** The symmetric caution now runs the other way: **do not claim the ecosystem's
+*current forward* trust list fixes this — it does not; under the official conformance list none of
+these signers separate from the forge (all `Valid + untrusted`). The finding stands only as: no list
+loaded and the official forward list → indistinguishable; the legacy ITL → separated.**
 
 ## Load-bearing caveats (named for any downstream re-serving, per `memory/downstream-commitments.md`)
 
@@ -189,13 +225,16 @@ untrusted-everything configuration actually tested.**
 3. **Reflexive, not about the world** — this measures the instrument's own rule, not clash rates
    in circulating media.
 4. **N=2 constructed** — existence proof only; no prevalence, no robustness, no benchmark.
-5. **Trust-list-conditional — RESOLVED (round 3, session 36).** The reflexive "indistinguishable"
-   finding held only for the no-trust-list configuration; round 3 loaded real published trust lists
-   and found that under the ITL (the list Verify uses) the shipped set's real production signers
-   (Truepic ×2, Microsoft, OpenAI-issued ×2) **do** separate to `Trusted` while adv1 stays
-   `untrusted`. The finding is therefore a **configuration artifact, not a mechanism defect**
-   (interpretation #1) — the round folds into instrument 014 as a caveat. Any downstream re-serving
-   must carry this resolution, not the earlier "indistinguishable" claim bare.
+5. **Trust-list-conditional — RESOLVED (round 3, session 36), with a wrinkle that must travel.** The
+   reflexive "indistinguishable" finding held only for the no-trust-list configuration; round 3
+   loaded real published trust lists. Under the ITL (the legacy list the Verify site uses) the shipped
+   set's real production signers (Truepic ×2, Microsoft, OpenAI-issued ×2) **do** separate to
+   `Trusted` while adv1 stays `untrusted` → a **configuration artifact, not a mechanism defect**
+   (interpretation #1). **But** under the *current official forward* C2PA Trust List, **none** of them
+   separate from the forge. Any downstream re-serving must carry both halves — the mechanism is sound,
+   yet the ecosystem's recommended forward list currently provides no discrimination for these
+   signers — not the earlier bare "indistinguishable" claim, and not a flattened "resolved, it's
+   fine."
 
 ## Reproduce
 
