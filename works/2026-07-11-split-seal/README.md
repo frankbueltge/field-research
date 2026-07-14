@@ -157,22 +157,33 @@ frozen, under three real published configurations — no list, the current offic
 | c02 | C2PA **test** signing cert | Valid + untrusted | Valid + untrusted | Valid + untrusted |
 | *(adv1 — the forge, in the follow-on round's registry, not a specimen here)* | `field-research` test root | Valid + untrusted | Valid + untrusted | Valid + untrusted |
 
-**The reading.** Under the ITL, the five genuine production signers separate to `Trusted` while the
-C2PA *test* cert (c02) stays untrusted, correctly — and adv1's forge stays `untrusted` under *every*
-list (it chains to nothing). So a standard trust list **does** separate genuine disclosure from a
-forge: the round-2 "indistinguishable at Layer 1" reading was an **artifact of the missing
-trust-list configuration**, not a defect in the mechanism.
+**The reading — lead with the gap that is live today.** Under the *current official forward* C2PA
+Trust List (the conformance program's designated standard, 28 CA anchors incl. DigiCert and SSL.com
+roots), **none** of these real 2022–2025 signers validate as trusted — none have enrolled roots
+there yet — so all six read `Valid + untrusted`, identical to the no-list run and to adv1's forge.
+**A verifier following today's recommended standard gets zero discrimination between a genuine
+disclosure and a forgery on this set.** That is not a solved problem awaiting adoption; it is a live
+gap for anyone verifying now with the officially recommended configuration.
 
-**The wrinkle, carried not buried.** The list that rescues the reading is a **frozen legacy one**.
-The *current official forward* C2PA Trust List (28 CA anchors incl. DigiCert and SSL.com roots)
-trusts **none** of these real 2022–2025 signers — none have enrolled roots there yet — so under the
-forward standard all six read `Valid + untrusted`, identical to the no-list run, and a verifier on
-it gets zero discrimination against the forge today. The ITL is the list that discriminates, and it
-no longer accepts new certificates. *(Methodology, asymmetry disclosed:* the ITL config loads CA
-anchors + a 115-cert end-entity allow-list as Verify applies it; the official config loads CA
-anchors only, because the conformance program publishes no end-entity allow-list — its
-`trust-list/` directory holds only the CA list and the TSA list. No official end-entity list was
-left untested.*)* The mechanism is sound; the ecosystem's forward trust layer has not yet caught up.
+**The only list that separates them is a discontinued one.** Under the ITL — the frozen legacy list
+the C2PA Verify site still applies, no longer accepting new certificates — the five genuine
+production signers separate to `Trusted` while the C2PA *test* cert (c02) and adv1's forge stay
+`untrusted` (adv1 chains to nothing under *every* list). So the trust mechanism **can** separate
+genuine disclosure from a forge — the round-2 "indistinguishable at Layer 1" reading was an artifact
+of loading no list, not a defect in the mechanism — **but the only configuration that demonstrates
+it is one the ecosystem has frozen, and the recommended forward list cannot, yet.** *(Methodology,
+asymmetry disclosed: the ITL config loads CA anchors + a 115-cert end-entity allow-list as Verify
+applies it; the official config loads CA anchors only, because the published conformance
+`trust-list/` directory holds only the CA list and the TSA list — as fetched 2026-07-13, six
+plausible end-entity filenames return 404; no official end-entity list was left untested.)*
+
+**What the fold changes, and what it does not.** This fold changes what a `Valid` stamp licenses a
+reader to conclude — signature integrity, never signer trust — not the register's verdict below
+(still no pre-registered clash in N=15; `computeVerdict` is untouched). It is a correction to the
+manifest arm's *epistemic status*, not a new empirical finding. And it is self-implicating: from
+this work's first publication (session 29) until this revision, its `Valid` stamps rendered
+unqualified — a reader in that window had nothing on the page distinguishing "the signature parses"
+from "the signer is who they claim." That gap is what this section closes.
 
 Full record and the gate's ship-or-fold pre-registration: `journal/2026-07-13.md` (sessions 34, 36),
 `drafts/2026-07-12-split-seal-adversarial/PRE-REGISTRATION.md`, and `journal/2026-07-14.md` (session
@@ -191,9 +202,10 @@ Any derived, re-voiced, or republished form of this work must preserve all five,
 4. **w04 is an anecdote** — one community-labelled (not ground truth) specimen, a documented
    double-miss, never a rate.
 5. **"Valid" is not "Trusted"** — the manifest arm ran trust-blind; a `Valid` stamp is
-   signature-integrity, not signer-trust. A standard trust list (the legacy ITL) separates the
-   genuine signers from a forge; the current forward official list separates none of them today.
-   Any re-serving of a `Valid` result must not present it as an endorsement of the signer.
+   signature-integrity, not signer-trust. Under the current forward official C2PA trust list none
+   of these real signers separate from a forge today; only a discontinued legacy list (the ITL)
+   separates them. Any re-serving of a `Valid` result must not present it as an endorsement of the
+   signer, and must carry the today-gap, not only the legacy-list reassurance.
 
 ## What would kill this work (carried openly)
 
