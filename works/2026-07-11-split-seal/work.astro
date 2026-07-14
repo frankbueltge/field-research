@@ -288,6 +288,8 @@ const trustRows = TRUST_ORDER.map((id) => {
   }
 })
 const itlTrustedCount = trustRows.filter((r) => r.itlTrusted).length
+// computed, not asserted: how many separate from a forge under the forward standard (0)
+const officialTrustedCount = trustRows.filter((r) => r.official === 'Trusted').length
 
 // ---- JS-enhancement data island: only the id list, escaped per the lab's
 // documented CSP-safe pattern (taxonomy-on-trial) — a hoisted <script> reads
@@ -341,9 +343,11 @@ const idsJSON = escapeForInlineJSON(JSON.stringify(specimenList.map((s) => s.id)
       <code>Valid</code> stamp below was computed with <em>no trust list loaded</em>, so each also
       carries <code>signingCredential.untrusted</code> (see any raw-json panel): <code>Valid</code>
       means the signature is cryptographically intact, not that the signer is a trusted party. The
-      trust re-validation folded in below (round 3, journal 2026-07-13) settles what that omission
-      costs — the reading is corrected there, not left hanging. Do not read a <code>Valid</code>
-      stamp as an endorsement of the signer.
+      trust re-validation folded in below (round 3, journal 2026-07-13) examines what that omission
+      costs — and the answer is not reassuring: under the ecosystem's <em>current official</em>
+      trust list, nothing on this set separates a genuine signer from a forgery today. From this
+      work's first publication (session 29) until this revision, these <code>Valid</code> stamps
+      rendered unqualified. Do not read a <code>Valid</code> stamp as an endorsement of the signer.
     </p>
   </section>
 
@@ -417,25 +421,35 @@ const idsJSON = escapeForInlineJSON(JSON.stringify(specimenList.map((s) => s.id)
     </table>
     <div class="trust-reading">
       <p>
-        <strong>Under the ITL, {itlTrustedCount} of 6 separate to <code>Trusted</code>:</strong> the
-        genuine production signers — Truepic (c08/c09), an OpenAI-issued credential (w01/w02) and
-        Microsoft (w03) — chain to recognized roots and validate as trusted; the C2PA <em>test</em>
-        signing cert (c02) stays untrusted, correctly. The forged <code>Valid + untrusted</code>
-        manifest built for the adversarial follow-on round (adv1, journal 2026-07-13) stays
-        <code>untrusted</code> under <em>every</em> list — it chains to nothing. So a standard trust
-        list <em>does</em> separate genuine disclosure from a forge: the round-2 reading that a forged
-        manifest is "indistinguishable at Layer 1" from the genuine ones was an artifact of the
-        <em>missing trust-list configuration</em>, not a defect in the mechanism.
+        <strong>Under the current official C2PA Trust List, {officialTrustedCount} of 6 separate
+        from a forge.</strong> The conformance program's designated <em>forward</em> standard
+        (28 CA anchors incl. DigiCert and SSL.com roots) trusts <strong>none</strong> of these real
+        2022–2025 signers — none have enrolled roots there yet — so under it all six read
+        <code>Valid + untrusted</code>, identical to the no-list run and to the forged
+        <code>field-research</code> manifest (adv1) built for the adversarial follow-on round
+        (journal 2026-07-13). A verifier following today's recommended standard gets
+        <strong>zero discrimination</strong> between a genuine disclosure and a forgery on this set.
+      </p>
+      <p>
+        <strong>The only configuration that separates them is a discontinued one.</strong> Under the
+        Interim Trust List — the frozen legacy list the C2PA Verify site still applies, no longer
+        accepting new certificates — {itlTrustedCount} of 6 validate as <code>Trusted</code>: the
+        genuine production signers (Truepic c08/c09, an OpenAI-issued credential w01/w02, Microsoft
+        w03) chain to recognized roots, while the C2PA <em>test</em> cert (c02) and adv1's forge stay
+        <code>untrusted</code> — adv1 chains to nothing under <em>every</em> list. So the trust
+        mechanism <em>can</em> separate genuine disclosure from forgery — the adversarial round's
+        "indistinguishable at Layer 1" reading was an artifact of loading no list, not a defect in
+        the mechanism — but the only list that demonstrates it is one the ecosystem has frozen, and
+        the recommended forward list cannot, yet.
       </p>
       <p class="trust-wrinkle">
-        <strong>The list that rescues the reading is a frozen legacy one.</strong> The
-        <em>current official forward</em> C2PA Trust List (the conformance program's designated
-        standard, 28 CA anchors incl. DigiCert and SSL.com roots) trusts <strong>none</strong> of
-        these real 2022–2025 signers — none have enrolled roots there yet — so under the forward
-        standard all six read <code>Valid + untrusted</code>, identical to the no-list run, and a
-        verifier on it gets zero discrimination against the forge today. The ITL is the list that
-        actually discriminates, and it no longer accepts new certificates. The mechanism is sound;
-        the ecosystem's forward trust layer has not yet caught up to it.
+        The fold changes what a <code>Valid</code> stamp licenses a reader to conclude — signature
+        integrity, never signer trust — not the register's verdict below (still no pre-registered
+        clash in N={specimenList.length}). Method, asymmetry disclosed: the ITL config loads CA
+        anchors + a 115-cert end-entity allow-list as Verify applies it; the official config loads
+        CA anchors only, because the published conformance <code>trust-list/</code> directory holds
+        only the CA list and the TSA list (as fetched 2026-07-13) — no official end-entity list was
+        left untested.
       </p>
     </div>
   </section>
