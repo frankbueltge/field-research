@@ -17,14 +17,17 @@ def main() -> None:
         "specimens": json.loads((ROOT / "data" / "specimens.json").read_text()),
         "layer1": json.loads((ROOT / "data" / "layer1.json").read_text()),
         "layer2": json.loads((ROOT / "data" / "layer2.json").read_text()),
+        # layer3 — trust re-validation of the six shipped Valid manifests (round-3 fold,
+        # session 37); tools/run_layer3_trust.py. "Valid" (Layer 1, no list) is not "Trusted".
+        "layer3": json.loads((ROOT / "data" / "layer3-trust.json").read_text()),
     }
     out = ROOT / "data.json"
     out.write_text(json.dumps(bundle, indent=2, ensure_ascii=False, sort_keys=True) + "\n",
                    encoding="utf-8")
-    # drift check: the bundle must reparse to exactly the three sources
+    # drift check: the bundle must reparse to exactly the four sources
     reparsed = json.loads(out.read_text())
     for key, src in (("specimens", "specimens.json"), ("layer1", "layer1.json"),
-                     ("layer2", "layer2.json")):
+                     ("layer2", "layer2.json"), ("layer3", "layer3-trust.json")):
         assert reparsed[key] == json.loads((ROOT / "data" / src).read_text()), key
     print("data.json written; equality verified against data/*.json")
 

@@ -9,6 +9,15 @@ this work; its constructive edge — one genuinely adversarial specimen — is a
 pre-registered follow-on round, not executed in-place (rationale in the same journal
 entry).**
 
+**Revision under gauntlet: collective session 37 (2026-07-14) — the round-3 trust
+re-validation folded in** (see "Trust-blind manifest arm" below). A revision of a matured work
+re-runs the full gauntlet on the revised state (any revision invalidates a verdict); this
+status line is finalized only when that gauntlet passes on the exact committed state. The
+follow-on adversarial round resolved that this work's manifest arm ran *trust-blind*: its six
+`Valid` stamps were signature-integrity verdicts, not trust verdicts. The fold discloses that,
+shows the trust re-validation, and carries the forward-list wrinkle. The session-37 gauntlet
+and the Interlocutor critique are recorded in `journal/2026-07-14.md`.**
+
 ## The claim (stated plainly, per the pre-build Skeptic)
 
 Two deployed trust infrastructures for image authenticity — the **cryptographic provenance
@@ -120,9 +129,58 @@ and `.gitkeep` scaffolding; every actual image lives under `legacy/1.4/`. The se
 description ("a current 2.2 tree plus legacy/1.4") was optimistic about the 2.2 half; the
 controls in this work are therefore **spec-1.4-era artifacts**, stated as such.
 
+## Trust-blind manifest arm — the round-3 fold (session 37, 2026-07-14)
+
+The shipped Layer-1 run (`tools/run_layer1.py`) loaded **no trust list**, so every
+`validation_state: Valid` in the register also carries `signingCredential.untrusted` (visible in
+each specimen's raw-json panel). **`Valid` there means the signature is cryptographically intact —
+it does NOT mean the signer is a trusted party.** Trust is a separate axis the shipped run never
+exercised. The adversarial follow-on round (built session 32, journal `2026-07-13.md`) made this
+concrete: a forged manifest asserting a camera capture over known-AI pixels, signed by a self-made
+`field-research` test root, reads `Valid + untrusted` — *byte-for-byte indistinguishable at Layer 1,
+under the no-list configuration, from the genuine wild generator manifests.* That looked like a
+mechanism defect. The round-3 gate (pre-registered session 34, run and gauntleted session 36)
+tested whether it is one.
+
+**The test** (`tools/run_layer3_trust.py`, `c2pa-python 0.36.0`; `trust/SOURCES.md` for the
+sha256-pinned, dated, sourced trust files): re-validate the six shipped `Valid` manifests, bytes
+frozen, under three real published configurations — no list, the current official C2PA Trust List
+(conformance program), and the Interim Trust List (ITL, the list the C2PA Verify site uses):
+
+| specimen | signer (issuer) | no list | official C2PA TL | ITL (Verify's list) |
+|---|---|---|---|---|
+| c08 | Truepic | Valid + untrusted | Valid + untrusted | **Trusted** |
+| c09 | Truepic | Valid + untrusted | Valid + untrusted | **Trusted** |
+| w01 | OpenAI-issued | Valid + untrusted | Valid + untrusted | **Trusted** |
+| w02 | OpenAI-issued | Valid + untrusted | Valid + untrusted | **Trusted** |
+| w03 | Microsoft Corporation | Valid + untrusted | Valid + untrusted | **Trusted** |
+| c02 | C2PA **test** signing cert | Valid + untrusted | Valid + untrusted | Valid + untrusted |
+| *(adv1 — the forge, in the follow-on round's registry, not a specimen here)* | `field-research` test root | Valid + untrusted | Valid + untrusted | Valid + untrusted |
+
+**The reading.** Under the ITL, the five genuine production signers separate to `Trusted` while the
+C2PA *test* cert (c02) stays untrusted, correctly — and adv1's forge stays `untrusted` under *every*
+list (it chains to nothing). So a standard trust list **does** separate genuine disclosure from a
+forge: the round-2 "indistinguishable at Layer 1" reading was an **artifact of the missing
+trust-list configuration**, not a defect in the mechanism.
+
+**The wrinkle, carried not buried.** The list that rescues the reading is a **frozen legacy one**.
+The *current official forward* C2PA Trust List (28 CA anchors incl. DigiCert and SSL.com roots)
+trusts **none** of these real 2022–2025 signers — none have enrolled roots there yet — so under the
+forward standard all six read `Valid + untrusted`, identical to the no-list run, and a verifier on
+it gets zero discrimination against the forge today. The ITL is the list that discriminates, and it
+no longer accepts new certificates. *(Methodology, asymmetry disclosed:* the ITL config loads CA
+anchors + a 115-cert end-entity allow-list as Verify applies it; the official config loads CA
+anchors only, because the conformance program publishes no end-entity allow-list — its
+`trust-list/` directory holds only the CA list and the TSA list. No official end-entity list was
+left untested.*)* The mechanism is sound; the ecosystem's forward trust layer has not yet caught up.
+
+Full record and the gate's ship-or-fold pre-registration: `journal/2026-07-13.md` (sessions 34, 36),
+`drafts/2026-07-12-split-seal-adversarial/PRE-REGISTRATION.md`, and `journal/2026-07-14.md` (session
+37, the fold's gauntlet).
+
 ## Load-bearing caveats (named for any downstream re-serving, per `memory/downstream-commitments.md`)
 
-Any derived, re-voiced, or republished form of this work must preserve all four, by name:
+Any derived, re-voiced, or republished form of this work must preserve all five, by name:
 
 1. **Selection circularity** — the wild tier's AGREE rows follow from the sampling rule
    (specimens chosen because they carry manifests); they are not an independent detector test.
@@ -132,6 +190,10 @@ Any derived, re-voiced, or republished form of this work must preserve all four,
    specimens predate the obligation.
 4. **w04 is an anecdote** — one community-labelled (not ground truth) specimen, a documented
    double-miss, never a rate.
+5. **"Valid" is not "Trusted"** — the manifest arm ran trust-blind; a `Valid` stamp is
+   signature-integrity, not signer-trust. A standard trust list (the legacy ITL) separates the
+   genuine signers from a forge; the current forward official list separates none of them today.
+   Any re-serving of a `Valid` result must not present it as an endorsement of the signer.
 
 ## What would kill this work (carried openly)
 
@@ -162,5 +224,6 @@ repo has no site-integration gate that could have caught it pre-ship. Record: jo
 python tools/build_registry.py   # frozen — re-running must be a no-op against committed sha256s
 python tools/run_layer1.py       # deterministic, local
 # layer 2: dispatch the split-seal-detector workflow (Actions-only secrets); raw scores commit back
+python tools/run_layer3_trust.py # trust re-validation of the six Valid manifests; deterministic, local
 python tools/bundle_data.py     # derived integration bundle (site contract ./data.json); must be a no-op if in sync
 ```
