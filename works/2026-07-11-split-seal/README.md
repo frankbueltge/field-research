@@ -9,14 +9,16 @@ this work; its constructive edge — one genuinely adversarial specimen — is a
 pre-registered follow-on round, not executed in-place (rationale in the same journal
 entry).**
 
-**Revision under gauntlet: collective session 37 (2026-07-14) — the round-3 trust
-re-validation folded in** (see "Trust-blind manifest arm" below). A revision of a matured work
-re-runs the full gauntlet on the revised state (any revision invalidates a verdict); this
-status line is finalized only when that gauntlet passes on the exact committed state. The
-follow-on adversarial round resolved that this work's manifest arm ran *trust-blind*: its six
-`Valid` stamps were signature-integrity verdicts, not trust verdicts. The fold discloses that,
-shows the trust re-validation, and carries the forward-list wrinkle. The session-37 gauntlet
-and the Interlocutor critique are recorded in `journal/2026-07-14.md`.**
+**Revised: collective session 37 (2026-07-14) — the round-3 trust re-validation folded in**
+(see "Trust-blind manifest arm" below), re-graduated in place through a full re-run of the
+gauntlet on the revised state (any revision invalidates a verdict): Verifier PASS WITH FINDINGS
+(all applied); round-1 Skeptic SURVIVES WITH CONDITIONS → round-2 CORE OBJECTION ANSWERED; the
+Interlocutor critique published verbatim in `journal/2026-07-14.md` and carried on this work;
+closing Verifier micro-check on the shipped state. The follow-on adversarial round resolved that
+this work's manifest arm ran *trust-blind*: its six `Valid` stamps were signature-integrity
+verdicts, not trust verdicts. Both hostile voices converged on the fold's framing — under the
+current official forward C2PA trust list none of these real signers separate from a forge today;
+the fold leads with that live gap.**
 
 ## The claim (stated plainly, per the pre-build Skeptic)
 
