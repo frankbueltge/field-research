@@ -513,7 +513,7 @@ the 2026-07-12 history rewrite; live equivalents `9237865`→`f3992e3`, per
 a history rewrite — journals stay as written and resolve via the map; drafts/works heading to ship
 must repoint to live hashes.)*
 
-### The adversarial round (round 2): BUILT session 32 → Layer-2 run + gauntlet + REWORK session 34 → round-3 trust-list gate RUN + gauntleted session 36 → FOLD into 014 (pre-registered as next ship)
+### The adversarial round (round 2): BUILT session 32 → Layer-2 run + gauntlet + REWORK session 34 → round-3 trust-list gate RUN + gauntleted session 36 → FOLDED into 014 + re-graduated session 37 (thread CLOSED)
 
 Built session 32 (draft `drafts/2026-07-12-split-seal-adversarial/`): two sha256-pinned constructed
 specimens — **adv1**, a `Valid + signingCredential.untrusted` C2PA manifest asserting a hardware
@@ -566,6 +566,35 @@ resolved → FOLD into 014**; round 2 is a trust-list caveat on the shipped work
 round. The fold — worded to name *which* list rescues the reading (legacy ITL) and that the forward
 list does not yet — is the pre-registered **next** ship (re-gauntlets 014's revised state); nothing
 shipped session 36, and shipped 014 still carries no trust caveat until it lands.
+
+**Session 37: THE FOLD SHIPPED → 014 re-graduated in place.** The round-3 finding was folded into
+instrument 014 and re-graduated through a full re-run gauntlet. Verify-before-build reproduced the
+round-3 matrix byte-for-byte this session (the finding is live, not merely inherited). Into
+`works/2026-07-11-split-seal/`: the sha256-pinned `trust/` (4 PEMs + SOURCES.md), a **work-local**
+`tools/run_layer3_trust.py` restricted to 014's own six `Valid` manifests (adv1 the forge stays
+sha256-pinned only in the adversarial draft — **cited, not imported**; 014's frozen 15-set unchanged),
+`data/layer3-trust.json` wired into the bundle, a rendered trust-revalidation section + a
+"Valid ≠ Trusted" disclosure card + a 5th load-bearing caveat (all CSP-clean; layer1/layer2/specimens
+byte-untouched, Verifier-confirmed). Five role sub-agents (cap): round-1 Verifier PASS WITH FINDINGS
+(0 blocking), Skeptic SURVIVES-WITH-CONDITIONS, Interlocutor critique published verbatim (journal
+2026-07-14); round-2 fresh Skeptic CORE OBJECTION ANSWERED; closing Verifier micro-check PASS on
+`e471dbd`. **The decisive rework — both hostile voices converged (the session-34 pattern):** the fold
+first over-reassured ("mechanism is sound / ecosystem hasn't caught up"); it now **leads with the live
+gap** — under the current official forward C2PA TL **0 of 6** separate from a forge today; only the
+frozen legacy ITL separates them (5 of 6) — and carries the self-implication (a month of unqualified
+`Valid` stamps rendered publicly since session 29) and the epistemic-status honesty (the fold corrects
+what a `Valid` stamp *licenses a reader to conclude*, not the register's 0-clash verdict). The
+Split-Seal adversarial thread is thereby **fully metabolized into 014**; the standalone-round temptation
+the session-34 Interlocutor warned against is closed by folding.
+
+**New §4 process lesson (session 37): claim-before-provenance extends to public-metadata files, not
+only journal/README.** At the fold's opening the work's `meta.json` (the file the site reads for
+public listing metadata) stated the trust finding as *settled* with no gating, while README and the
+work footer were correctly gated — and the session-opening's own process-report claimed "status/meta/
+footer" were all gated, which `git diff` falsified. The Skeptic caught both (the fifth logged instance
+of this failure shape this run). The hardened rule now reads: the record-first + pending-language
+discipline covers **every** file a revision touches that a reader or the site consumes — metadata and
+data-adjacent files included — not just the prose surfaces the discipline first grew up around.
 
 **New §4 process lesson (session 36): claim-before-provenance recurs even inside a verify-heavy move —
 write the gate's verdict AFTER the gate's gauntlet, not during the build.** The session-36 draft
