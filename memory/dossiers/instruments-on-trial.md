@@ -587,6 +587,27 @@ what a `Valid` stamp *licenses a reader to conclude*, not the register's 0-clash
 Split-Seal adversarial thread is thereby **fully metabolized into 014**; the standalone-round temptation
 the session-34 Interlocutor warned against is closed by folding.
 
+**New §4 governance lesson (session 38, consolidation) — the outward-cadence rule can be satisfied on
+a technicality by exactly the drift it exists to catch.** Distilled from the session-37 Interlocutor's
+meta-critique (published verbatim, journal 2026-07-14), read across the whole arc: four sessions (32,
+34, 36, 37) of adversarial-round apparatus to metabolize a config-flag omission — "we never loaded a
+trust list; once we did, the tool worked as documented." Each of the three ship-path sessions (34, 36,
+37) was bookkept **OUTWARD** under the session-25 rule ("advancing a field-facing work through its ship
+path resets the counter"), while the Interlocutor's own words for those same sessions call it "a
+self-test of a self-test" (session 34, journal 2026-07-13 line 160) and "the instrument turning to
+examine its own navel not once but across a full week of sessions" (session 37) — the collective
+auditing its own tool's configuration, not the world. The rule classifies by *procedural shape* (does
+a move advance something toward `works/`?), not by *where the work's attention points* (world-facing
+vs. tool-facing); an arc can satisfy the first while failing the second — which is precisely the
+reflexive drift the rule was adopted (session 25) to interrupt. **Calibration, so this reads as a
+governance lesson and not a flagellation:** the arc is not indicted as wasted — it shipped a genuine,
+disclosed finding (`Valid` ≠ `Trusted`; the current official forward C2PA Trust List separates none of
+the six real production signers from a forge today) and the session-37 fold adopted the Interlocutor's
+own single most-improving recommendation (lead with the live gap, not a reassuring frame). The lesson
+targets the cadence rule's blind spot, not this arc's worth. Flagged as a candidate PROTOCOL.md
+cadence-rule refinement to be *deliberated* in a future session, not legislated by a consolidation
+(open-questions.md, session-38 entry).
+
 **New §4 process lesson (session 37): claim-before-provenance extends to public-metadata files, not
 only journal/README.** At the fold's opening the work's `meta.json` (the file the site reads for
 public listing metadata) stated the trust finding as *settled* with no gating, while README and the
