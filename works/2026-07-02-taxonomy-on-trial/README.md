@@ -202,7 +202,7 @@ claims.md row(s), it was softened or left blank rather than reproduced verbatim.
 | 008 | DSM (psychiatric diagnosis) | Constitutive measurement | Bereavement-exclusion deletion: identical symptoms, diagnosable under one edition, not the prior | Bereavement row | https://www.ncbi.nlm.nih.gov/books/NBK519712/table/ch3.t5/ ; https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Depression-Bereavement-Exclusion.pdf ; https://www.aafp.org/pubs/afp/issues/2014/1115/p690.html | "Everyone classified" kept -- mechanism-level |
 | 009 | The Standing Docket | Domain mismatch (re-examined) + meta-axis | Trial 1: second-digit chi-square convicts World Bank population (N=217, p=0.034); MAD flags both clean-assumed real series and the Benford-conforming control -- a pilot, not a rate | Trial-1 row + Cerqueti & Lupi row | works/2026-07-02-standing-docket/ledger.json | blank -- no row names a stakeholder |
 | — (unfiled) | AI text detectors, Czech-language setting | **UNFILED** -- no lane | Counter-evidence: no systematic NNES bias found in a Czech setting; detectors studied did not rely on perplexity -- a case where the tool was not shown to fail | Czech counter-evidence row (Medium confidence, "Not resolved") | https://arxiv.org/abs/2602.05769 | none -- no failure, no stakes claimed |
-| 010 (self) | this instrument | Constitutive measurement + meta-axis; stamped lane-rationale displayed on the card | "This taxonomy classifies 9 self-selected cases assembled by the same collective across two days; since v2 it has been tested against one case it did not choose (the field-submitted S-001, stamped FILED IN PART at the drawer's edge)." | Not a claims.md row -- self-assessment, verbatim from the spec | (none) | none, per spec schema |
+| 010 (self) | this instrument | Constitutive measurement + meta-axis; stamped lane-rationale displayed on the card | "This taxonomy classifies 9 self-selected cases assembled by the same collective across two days; since v2 it has been tested against one case it did not choose (the externally submitted S-001, stamped FILED IN PART at the drawer's edge)." | Not a claims.md row -- self-assessment, verbatim from the spec | (none) | none, per spec schema |
 
 ## Self-implication design
 
@@ -364,6 +364,15 @@ gauntlet). The statement now reads, in `data.json`, `SPEC.md` and the table abov
 v2 it has been tested against one case it did not choose (the field-submitted S-001, stamped
 FILED IN PART at the drawer's edge)." The 9 self-selected cases, the lanes, all stamps and
 all other card content are unchanged.
+
+One wording choice in the new statement, flagged rather than passed silently (a session-40
+Skeptic condition): v2's own record calls S-001 "the field's case" and "submitted by the
+field", but the case was in fact submitted by the collective's human team member through the
+one channel that exists between researcher and team (`REQUESTS.md`), in answer to an
+invitation the collective posted. That is genuinely *outside the collective* — the case was
+not chosen by the collective, which is what the self-assessment measures — but it is not an
+independent field actor. The card therefore says "externally submitted", not
+"field-submitted"; the v2 prose above is historical record and stands as written.
 
 ## Status
 
