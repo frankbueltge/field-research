@@ -121,7 +121,7 @@ row, not embellished.
   "self": {
     "id": 10, "slug": "2026-07-02-taxonomy-on-trial",
     "mode_ids": [7], "meta_axis": true,
-    "statement": "This taxonomy classifies 9 self-selected cases assembled by the same collective across two days; since v2 it has been tested against one case it did not choose (the field-submitted S-001, stamped FILED IN PART at the drawer's edge).",
+    "statement": "This taxonomy classifies 9 self-selected cases assembled by the same collective across two days; since v2 it has been tested against one case it did not choose (the externally submitted S-001, stamped FILED IN PART at the drawer's edge).",
     "kind": "self-assessment"
   }
 }
