@@ -2,14 +2,21 @@
 # Covers BOTH branch shapes a session can produce:
 #   • research/*  — the nightly GitHub-Actions run (no PR; always lands)
 #   • claude/*    — a manually-started routine / cloud agent (opens a PR; lands only
-#                   while that PR is OPEN, so a closed/declined PR is never resurrected)
-# Runs on push to such a branch AND, as a safety net, ~1h after the nightly run
-# (in case the push trigger fails).
+#                   while that PR is OPEN and not a draft, so a closed/declined PR is
+#                   never resurrected)
+# Triggers (repaired 2026-07-16 after two stranded sessions): push to such a branch,
+# the PR events themselves (a cloud session pushes claude/* FIRST and opens its PR
+# afterwards — the push-run then saw "no open PR" and skipped, and the PR's opening
+# triggered nothing), and the nightly safety net.
+# HONESTY RULE: an eligible branch that fails to merge or push turns this job RED.
+# A green run means "everything eligible landed" — never "errors were echoed away".
 name: Auto-land research
 
 on:
   push:
     branches: ['research/**', 'claude/**']
+  pull_request:
+    types: [opened, reopened, ready_for_review]
   schedule:
     - cron: '0 2 * * *'   # 02:00 UTC = 04:00 Berlin, ~1h after the research routine
   workflow_dispatch: {}
@@ -35,48 +42,69 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -euo pipefail
           git config user.name "Field"
           git config user.email "meridian@field-research.invalid"
           git fetch origin '+refs/heads/research/*:refs/remotes/origin/research/*' \
                            '+refs/heads/claude/*:refs/remotes/origin/claude/*' || true
           landed=0
-          for b in $(git branch -r | sed 's/^[* ] *//' | grep -E '^origin/(research|claude)/'); do
+          failed=0
+          summary=""
+          # machine-readable per-branch outcome, one line each:
+          #   outcome <branch> <landed|skipped_no_pr|skipped_draft_pr|conflict|push_failed>
+          note() {
+            echo "outcome $1 $2"
+            summary="${summary}| \`$1\` | $2 |"$'\n'
+          }
+          for b in $(git branch -r | sed 's/^[* ] *//' | grep -E '^origin/(research|claude)/' || true); do
             name="${b#origin/}"
             echo "::group::landing $name"
             # A manually-started routine lands on a claude/* branch and opens a PR.
-            # Only land it while that PR is OPEN — a closed PR means a human declined
-            # the session (e.g. superseded work), so it must never be resurrected onto
-            # main. The nightly research/* branches carry no PR and always land.
+            # Only land it while that PR is OPEN and not a draft — a closed PR means a
+            # human declined the session (e.g. superseded work), so it must never be
+            # resurrected onto main; a draft means the session is not done. The nightly
+            # research/* branches carry no PR and always land.
             case "$name" in
               claude/*)
-                if [ -z "$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$name" --state open --json number --jq '.[0].number // empty' 2>/dev/null)" ]; then
-                  echo "skip $name — no open PR (declined or already handled)"
-                  echo "::endgroup::"
-                  continue
+                pr_state=$(gh pr list --repo "$GITHUB_REPOSITORY" --head "$name" --state open \
+                  --json isDraft --jq 'if length == 0 then "none" elif .[0].isDraft then "draft" else "open" end' 2>/dev/null || echo none)
+                if [ "$pr_state" = "none" ]; then
+                  note "$name" skipped_no_pr
+                  echo "::endgroup::"; continue
+                elif [ "$pr_state" = "draft" ]; then
+                  note "$name" skipped_draft_pr
+                  echo "::endgroup::"; continue
                 fi ;;
             esac
             if git merge --no-edit "$b"; then
               if git push origin main && git push origin --delete "$name"; then
-                landed=$((landed+1))
+                landed=$((landed+1)); note "$name" landed
               else
-                echo "push failed for $name"
+                failed=$((failed+1)); note "$name" push_failed
+                git reset --hard origin/main   # keep later merges off the unpushed state
               fi
             else
-              echo "merge conflict on $name — skipping"
+              failed=$((failed+1)); note "$name" conflict
               git merge --abort || true
             fi
             echo "::endgroup::"
           done
-          echo "landed $landed branch(es)"
+          printf '## Auto-land\n\n| branch | outcome |\n|---|---|\n%s\n**%s landed, %s failed**\n' \
+            "$summary" "$landed" "$failed" >> "$GITHUB_STEP_SUMMARY"
           echo "landed=$landed" >> "$GITHUB_OUTPUT"
+          if [ "$failed" -gt 0 ]; then
+            echo "::error::$failed eligible branch(es) failed to land — see the outcome lines above"
+            exit 1
+          fi
 
       # Promptness: once something has landed on main, trigger the website integration
       # immediately (instead of waiting for the site's safety-net cron). Cross-repo →
       # repository_dispatch. Needs the secret SITE_DISPATCH_TOKEN (a token with
       # contents:write on frankbueltge/frankbueltge.de); the built-in GITHUB_TOKEN does
       # not reach across repos. If the secret is missing, the step is skipped cleanly.
+      # Runs even when the land step went red: landed work must still integrate promptly.
       - name: Trigger site integrate
-        if: ${{ steps.land.outputs.landed != '0' }}
+        if: ${{ !cancelled() && steps.land.outputs.landed != '0' }}
         env:
           SITE_DISPATCH_TOKEN: ${{ secrets.SITE_DISPATCH_TOKEN }}
         run: |
