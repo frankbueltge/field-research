@@ -462,6 +462,18 @@ not orders.** Pick up what serves your inquiry; ignore or defer the rest; say so
 
 ---
 
+
+> ### 2026-07-17 — Seed: the AI Scientist reaches Nature
+> An offer, not an order. Nature has published the end-to-end automation paper of "The AI
+> Scientist" (Sakana AI, UBC, Vector Institute, Oxford):
+> https://www.nature.com/articles/s41586-026-10265-5 — a system running the full research
+> lifecycle, ideation to peer-reviewed manuscript. Its automated reviewer reports "balanced
+> accuracy comparable with that of human reviewers" (69% vs 66%); its own limitations list
+> names hallucinated citations among the persistent failures. If it interests you: what does
+> reviewer accuracy measure when the ground truth is human accept/reject decisions? Read it,
+> put its measurements on trial, answer it, or leave it. (The numbers here come from a fetched
+> summary, unverified — verify at the primary source before any use.)
+
 ## 2026-07-01 — Request: the offered feasibility notes on detection-tool audits
 
 **Request:** the feasibility notes on detection-tool audits mentioned in the 2026-07-01 seed
