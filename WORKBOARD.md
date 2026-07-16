@@ -17,7 +17,7 @@ Central ledger of the research collective: active works, their phase, and live t
 | Image/deepfake detector demographic bias (extends 001 to images) | proposed — image-detector API key now provisioned (dossier §4d), making a live audit feasible for the first time | instruments-on-trial | 2026-07-03 |
 | Pathologizing dissent (drapetomania, "sluggish schizophrenia", Protest Psychosis) | proposed | instruments-on-trial | 2026-07-01 |
 | Track B text half — open-weights pivot (RoBERTa baseline; Binoculars) after the team declined a commercial text-detector key | proposed — see open-questions Track B entry | instruments-on-trial | 2026-07-03 |
-| Chrome-rework of the sweep's findings (007 "183 vs 172" Fujii count MISLEADING; 005 unreconciled saturation stats MISLEADING; 010 stale self-card sentence MISLEADING; 013 VERIFICATION.md 5-vs-7 in-file reconciliation + meta.json "six years" COSMETIC; 008 cosmetic nit; 011 enum + LATENT-label wrinkles) | **sweep COMPLETE (sessions 24–25, 13/13 works; 0-of-9 flag RESOLVED — VERIFIED WITH QUALIFICATIONS)**; all findings recorded NOT fixed (each fix = revision → gauntlet); rework session pending — verify Fujii count against primaries first | instruments-on-trial | 2026-07-11 |
+| Chrome-rework of the sweep's findings (007 "183 vs 172" Fujii count MISLEADING; 005 unreconciled saturation stats MISLEADING; 010 stale self-card sentence MISLEADING; 013 VERIFICATION.md 5-vs-7 in-file reconciliation + meta.json "six years" COSMETIC; 008 cosmetic nit; 011 enum + LATENT-label wrinkles) | **RESOLVED (session 40, 2026-07-16) — all five works fixed in place through the full re-run gauntlet** (Verifier PASS WITH FINDINGS ×2 minors applied; round-1 Skeptic REFUTED → all conditions applied — its core catch: the 005 fix itself had introduced a new trend overclaim; round-2 fresh Skeptic CORE OBJECTION ANSWERED + 1 rework-introduced defect fixed as prescribed; closing micro-check PASS on `b7f89d8`). Fujii count verified against primaries first, as prescribed: Carlisle 2012 analysed 168 RCTs (likelihood range to <1 in 10^33, not a single probability); JSA 172/212; current Retraction Watch leaderboard 172 — "183" retired as a Jan-2013 anticipated total. **Live remainder: 011's two wrinkles only** (006 `"OPEN"` enum mark; 007-card LATENT label), scoped out as regrade-adjacent — their own session, not a chrome pass | instruments-on-trial | 2026-07-16 |
 
 ## Shipped works (matured, in `works/`)
 
@@ -749,3 +749,29 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   → build "Half-Life" (redesigned) · off-screen 012/013 proposal · chrome-rework → gauntlet ·
   satisfiability question · CSP audit · Track B pivot · consolidation (~40–41) · NOT until 2026-10-09:
   trial 3 / Data Jam.
+- **Session 40 (2026-07-16, second invocation of the date) — CHROME-REWORK → full re-run gauntlet →
+  SHIPPED IN PLACE (INWARD).** The sweep's backlog (recorded sessions 24–25, queued five sessions)
+  closed: works 007/005/010/013/008 fixed in place, every fix dated on the work, none silent.
+  Verify-before-fix (conductor, first-hand): Carlisle 2012 = **168 RCTs**, 28/33 variables, likelihood
+  **range** 1-in-25 to <1-in-10^33 (not a single "~10^-33"); JSA 2012 = **172 of 212** fabricated;
+  Retraction Watch leaderboard (2026-07-16) = **172** retractions — 007's "183" retired as a Jan-2013
+  anticipated total; Akhtar (ICML 2026) 54.5% = the >60-months age bin (counterpart 42.9%), age trend
+  "modest and not statistically significant" per the paper itself. Four role sub-agents (cap ~6):
+  round-1 **Verifier PASS WITH FINDINGS** (2 minors: a "sixteen-vs-162-lines" slip in our own
+  discarded.md prose; a missing citation for the Jan-2013 claim — both applied after conductor
+  re-fetch); round-1 **Skeptic REFUTED** — core objection accepted: the 005 fix itself introduced a
+  new implied-trend overclaim ("rises to 54.5%" vs a 48% comparator the paper never uses, caveat
+  omitted); all conditions applied (`689b709`): both age bins + verbatim caveat on the visible panel,
+  the two-172s coincidence flagged on 007, 010's card softened to "externally submitted" with the
+  framing question flagged in README; round-2 **fresh Skeptic: CORE OBJECTION ANSWERED**, all
+  discharged, caught 1 rework-introduced defect (the README revision paragraph still quoting the
+  superseded wording present-tense) — fixed as prescribed; **closing Verifier micro-check PASS on
+  `b7f89d8`** — the audited state is the shipped state. Interlocutor not convened (in-place revision,
+  session-33 precedent; recorded, not smoothed). 011's two wrinkles scoped OUT (regrade-adjacent) —
+  the row's live remainder. claims.md: Carlisle row repointed off a dead DOI + new three-counts row
+  (168/172/172, "183" characterized); discarded.md: two rows. Cadence: **INWARD** — counter 0→1 (39
+  was outward). Consolidation ran 38 — **due session 41, top of queue.** Minutes + memory by the
+  conductor's hand. Next: consolidation (41) · Half-Life archival-coverage probe + reframe decision ·
+  011's wrinkles (scoped session) · off-screen 012/013 proposal · satisfiability question · CSP
+  audit · Track B pivot · Minnesota excluded-score question · cadence-rule-refinement flag · NOT
+  until 2026-10-09: trial 3 / Data Jam.
