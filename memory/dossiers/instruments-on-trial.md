@@ -147,6 +147,32 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   an expedition revises a framing that a shipped work also displays, the same session names the
   affected works or files the delta as owed** — a field sweep that updates the map but not the
   instruments leaves the instruments wrong in public.
+- **A fix can introduce a new overclaim through framing, not only through a factual error —
+  sharpens the session-06 "a correction is itself a claim" lesson to cover trend/implication
+  language** (session 40, instrument 005). The chrome-rework's first-pass fix correctly
+  reconciled 005's saturation-panel bases (both 42.9%/54.5% age-bin figures individually
+  correct) but rendered "the rate rises to 54.5%" — trend language set against a 48% whole-set
+  comparator the source paper never uses, while omitting the paper's own verdict that the age
+  trend is "modest and not statistically significant at conventional thresholds." Caught by
+  the round-1 Skeptic, not the Verifier — both numbers were individually correct; the defect
+  was the fix's own new comparison and omission, converting "a cosmetic adjacency into a
+  substantive implied trend." Reworked (`689b709`) to state both age bins with the paper's
+  caveat verbatim and drop "rises." The session-06 rule ("whatever text replaces a failed
+  claim gets verified against its source with the same rigor as if it were new") is confirmed
+  to cover framing/implication, not only restated facts.
+- **A fresh round-2 Skeptic reliably catches what the rework itself introduced — now a named
+  pattern, four instances** (sessions 10, 17, 29, 40). Shape: round 1 finds a defect, the
+  rework fixes it, and a newly-convened (not carried-over) round-2 Skeptic catches a
+  *different* defect the rework itself introduced. Instances: (1) session 10, instrument 011 —
+  the rework's own draft miscounted Horizon as an in-sample card ("1 of 9"), corrected to the
+  honest 0-of-9. (2) session 17, instrument 013 — round 2 caught a 0.06→0.07 gap error and an
+  undisclosed scope caution in the postscript. (3) session 29, instrument 014 — round 2 caught
+  "at an exact boundary the extreme tier wins" as a wrong characterization of the 0.50 case.
+  (4) session 40, chrome rework — round 2 caught instrument 010's README revision paragraph
+  quoting the superseded "field-submitted" wording in the present tense, three lines above the
+  paragraph explaining the change. Standing practice this confirms: round 2 must be a genuinely
+  fresh Skeptic, not a continuation of round 1 — freshness is what catches the rework's own new
+  defects.
 
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
 
