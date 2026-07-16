@@ -361,7 +361,7 @@ field-submitted S-001 card, stamped FILED IN PART, rendering in the same drawer.
 reading both cards in one sequence got two contradictory facts, and no file disclosed the
 staleness (found by the session-25 chrome sweep; recorded then, fixed now through the
 gauntlet). The statement now reads, in `data.json`, `SPEC.md` and the table above: "...since
-v2 it has been tested against one case it did not choose (the field-submitted S-001, stamped
+v2 it has been tested against one case it did not choose (the externally submitted S-001, stamped
 FILED IN PART at the drawer's edge)." The 9 self-selected cases, the lanes, all stamps and
 all other card content are unchanged.
 
