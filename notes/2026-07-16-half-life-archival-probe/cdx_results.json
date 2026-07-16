@@ -1,0 +1,10092 @@
+[
+{
+"url": "https://forensic-architecture.org/about/funding",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231020190126",
+"200"
+],
+[
+"20231021192119",
+"200"
+],
+[
+"20231222172326",
+"-"
+],
+[
+"20240118190344",
+"301"
+]
+]
+},
+{
+"url": "https://forensic-architecture.org/about/advisory-board",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231012233301",
+"200"
+],
+[
+"20231222172317",
+"-"
+],
+[
+"20240203162659",
+"200"
+],
+[
+"20240203164310",
+"200"
+]
+]
+},
+{
+"url": "https://content.forensic-architecture.org/wp-content/uploads/2024/05/Inhumane-Zones-Report-Forensic-Architecture_WEBSITE.pdf",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240525061215",
+"200"
+],
+[
+"20240603050034",
+"-"
+],
+[
+"20240609124254",
+"301"
+],
+[
+"20240806042747",
+"200"
+]
+]
+},
+{
+"url": "https://forensic-architecture.org/investigation/ats-tacks-on-aid-in-gaza-preliminary-findings",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031212959",
+"200"
+],
+[
+"20241101114811",
+"301"
+]
+]
+},
+{
+"url": "https://forensic-architecture.org/investigation/mass-burials-at-al-shifa-hosr-pital",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031225841",
+"301"
+],
+[
+"20241101001707",
+"200"
+]
+]
+},
+{
+"url": "https://forensic-architecture.org/investigation/ecocide-in-gaza",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240330050341",
+"200"
+],
+[
+"20240330194923",
+"-"
+],
+[
+"20240401094221",
+"-"
+],
+[
+"20240403140745",
+"-"
+]
+]
+},
+{
+"url": "https://forensic-architecture.org/investigation/humanitarian-violence-in-gaza",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240331025115",
+"-"
+],
+[
+"20240331173334",
+"-"
+],
+[
+"20240408181111",
+"200"
+],
+[
+"20240408195116",
+"200"
+]
+]
+},
+{
+"url": "https://forensic-architecture.org/investigation/assessment-israeli-material-icj-jan-2024",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240228162622",
+"200"
+],
+[
+"20240228225357",
+"200"
+],
+[
+"20240301143826",
+"-"
+],
+[
+"20240301200713",
+"-"
+]
+]
+},
+{
+"url": "https://forensic-architecture.org/investigation/israeli-disinformat-tion-al-ahli-hospital",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031205737",
+"200"
+],
+[
+"20241101080034",
+"301"
+]
+]
+},
+{
+"url": "https://forensic-architecture.org/investigation/destrucc-tion-of-medical-infrastructure-in-gaza",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031222711",
+"200"
+],
+[
+"20241106094944",
+"301"
+]
+]
+},
+{
+"url": "https://globalprotectioncluster.org/index.php/Attacks_on_Civilians",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231004034239",
+"200"
+],
+[
+"20231105122320",
+"200"
+],
+[
+"20231106083131",
+"200"
+],
+[
+"20231128163311",
+"200"
+]
+]
+},
+{
+"url": "https://www.cnn.com/2024/07/06/middleeast/palestinians-displaced-gaza-israel-intl/index.html",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240706133332",
+"200"
+],
+[
+"20240706135702",
+"-"
+],
+[
+"20240706184718",
+"200"
+],
+[
+"20240706195104",
+"200"
+]
+]
+},
+{
+"url": "https://www.un.org/unispal/document/auto-insert-195116/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231103110638",
+"200"
+],
+[
+"20231104230011",
+"200"
+],
+[
+"20231212212331",
+"200"
+],
+[
+"20231213162722",
+"200"
+]
+]
+},
+{
+"url": "https://newlinesmag.com/essays/how-plans-to-move-palestinians-to-egypt-backfired/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231020115331",
+"200"
+],
+[
+"20231110130530",
+"200"
+],
+[
+"20231203180253",
+"200"
+],
+[
+"20240308045919",
+"301"
+]
+]
+},
+{
+"url": "https://www.reuters.com/world/middle-east/egypt-rejects-israeli-plans-rafah-crossing-sources-say-2024-05-16/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240516120744",
+"401"
+],
+[
+"20240516230433",
+"401"
+],
+[
+"20240516230946",
+"401"
+],
+[
+"20240517025202",
+"401"
+]
+]
+},
+{
+"url": "https://www.theguardian.com/world/article/2024/may/30/israel-idf-philadelphi-corridor-rafah-gaza-control-palestine-war-hamas",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://www.timesofisrael.com/liveblog_entry/smotrich-blasts-surrender-deal-in-response-to-gallants-call-to-reverse-cabinet-decision-on-philadelphi-corridor/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240901091335",
+"200"
+]
+]
+},
+{
+"url": "https://www.icrc.org/en/document/ihl-occupying-power-responsibilities-occupied-palestinian-territories",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231011192137",
+"200"
+],
+[
+"20231012000806",
+"200"
+],
+[
+"20231012125300",
+"200"
+],
+[
+"20231017060231",
+"200"
+]
+]
+},
+{
+"url": "https://conquer-and-divide.btselem.org",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231018231026",
+"200"
+],
+[
+"20231103040723",
+"200"
+],
+[
+"20231107032453",
+"200"
+],
+[
+"20231121194429",
+"429"
+]
+]
+},
+{
+"url": "https://www.gisha.org/UserFiles/File/publications/redlines/redlines-position-pa-per-eng.pdf",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231010061741",
+"301"
+],
+[
+"20231010071102",
+"301"
+],
+[
+"20231010100839",
+"301"
+],
+[
+"20231010121916",
+"404"
+]
+]
+},
+{
+"url": "https://www.gisha.org/userfiles/File/HaaretzGazaBonanza.pdf",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240527222804",
+"301"
+],
+[
+"20240530213228",
+"200"
+],
+[
+"20241031203938",
+"200"
+],
+[
+"20241105211342",
+"301"
+]
+]
+},
+{
+"url": "https://gisha.org/en/red-lines-crossed-destruction-of-gazas-infrastructure/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101034840",
+"200"
+],
+[
+"20241103082431",
+"301"
+]
+]
+},
+{
+"url": "https://pchrgaza.org/wp-content/uploads/2022/02/Gaza-Report-English.pdf",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031222818",
+"301"
+],
+[
+"20241101235249",
+"200"
+]
+]
+},
+{
+"url": "https://conquer-and-divide.btselem.org/map-en.html",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231002214315",
+"-"
+],
+[
+"20231003102230",
+"200"
+],
+[
+"20231005220045",
+"-"
+],
+[
+"20231010223930",
+"-"
+]
+]
+},
+{
+"url": "https://www.amnesty.org/en/latest/campaigns/2017/11/the-occupation-of-water/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231001022356",
+"200"
+],
+[
+"20231001022754",
+"200"
+],
+[
+"20231002113620",
+"200"
+],
+[
+"20231004012320",
+"200"
+]
+]
+},
+{
+"url": "https://www.mezan.org/en/post/33132/15years-of-blockadeleaves-Gaza-facing-a-perpetualhealth-crisis",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.timesofisrael.com/liveblog_entry/netanyahu-were-allowing-minimum-amount-of-aid-necessary-in-order-to-prevent-gaza-humanitarian-crisis/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240119000229",
+"200"
+],
+[
+"20240120172418",
+"200"
+],
+[
+"20240123085515",
+"200"
+],
+[
+"20240124131857",
+"200"
+]
+]
+},
+{
+"url": "https://gisha.org/en/the-ever-expanding-gaza-buffer-zone/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240702051932",
+"200"
+],
+[
+"20240829030916",
+"403"
+],
+[
+"20241031201200",
+"301"
+]
+]
+},
+{
+"url": "https://www.theguardian.com/world/2019/jul/19/israeli-spraying-of-herbicide-near-gaza-harming-palestinian-crops",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://www.aljazeera.com/news/2021/12/7/israel-announces-completion-of-underground-gaza-border-barrier",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231007193622",
+"200"
+],
+[
+"20231007210609",
+"200"
+],
+[
+"20231008124047",
+"200"
+],
+[
+"20231008192039",
+"-"
+]
+]
+},
+{
+"url": "https://www.washingtonpost.com/world/2024/05/17/gaza-israel-netzarim-corridor-war-hamas/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240517095441",
+"302"
+],
+[
+"20240517113846",
+"403"
+],
+[
+"20240517114154",
+"403"
+],
+[
+"20240517115619",
+"403"
+]
+]
+},
+{
+"url": "https://www.theguardian.com/world/2005/aug/08/israel",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://tinyurl.com/mrayxvnm",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031231725",
+"301"
+],
+[
+"20241107031844",
+"301"
+]
+]
+},
+{
+"url": "https://forensic-architecture.org/investigation/environmental-violence-and-genocide-in-the-ixil-triangle",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231004162907",
+"200"
+],
+[
+"20231203083056",
+"301"
+],
+[
+"20231208214746",
+"200"
+],
+[
+"20231222172340",
+"-"
+]
+]
+},
+{
+"url": "https://forensic-architecture.org/investigation/shark-island",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240628153711",
+"200"
+],
+[
+"20240727114535",
+"200"
+],
+[
+"20240805214929",
+"200"
+],
+[
+"20240906192823",
+"200"
+]
+]
+},
+{
+"url": "https://forensic-architecture.org//investigation/restituting-evidence-genocide-and-reparations-in-german-colonial-namibia-phase-1",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231014054936",
+"200"
+],
+[
+"20231105220343",
+"200"
+],
+[
+"20231222124320",
+"200"
+],
+[
+"20231222172341",
+"-"
+]
+]
+},
+{
+"url": "https://www.ncronline.org/news/guatemala-genocide-trial-exposes-effort-destroy-mayan-and-catholic-cultures",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240806095310",
+"200"
+],
+[
+"20240807015116",
+"200"
+],
+[
+"20240807034804",
+"200"
+],
+[
+"20240810030645",
+"200"
+]
+]
+},
+{
+"url": "https://spcommreports.ohchr.org/TMResultsBase/DownLoadPublicCommunicationFile?gId=27878",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240211224920",
+"200"
+],
+[
+"20240602022340",
+"301"
+]
+]
+},
+{
+"url": "https://www.theguardian.com/world/article/2024/sep/10/khan-younis-israel-strike-al-mawasi-tent-camp-gaza-deaths-humanitarian-safe-zone",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://www.ohchr.org/sites/default/files/2024-01/OHCHR_BerkeleyProtocol.pdf",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240219121114",
+"200"
+],
+[
+"20240313202507",
+"200"
+],
+[
+"20240506042557",
+"200"
+],
+[
+"20240506141608",
+"200"
+]
+]
+},
+{
+"url": "https://storymaps.arcgis.com/stories/2e746151991643e39e64780f0674f7dd",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231029143541",
+"200"
+],
+[
+"20231029212701",
+"200"
+],
+[
+"20231029212712",
+"200"
+],
+[
+"20231030122923",
+"200"
+]
+]
+},
+{
+"url": "https://www.understandingwar.org/backgrounder/iran-update-may-10-2024",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240511034832",
+"200"
+],
+[
+"20240511035354",
+"200"
+],
+[
+"20240511065114",
+"200"
+],
+[
+"20240511065115",
+"200"
+]
+]
+},
+{
+"url": "https://www.reuters.com/world/middle-east/israeli-ministers-join-ultranationalist-conference-urging-gaza-resettlement-2024-01-29/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240201004712",
+"401"
+],
+[
+"20240201083520",
+"401"
+],
+[
+"20240203182102",
+"401"
+],
+[
+"20240206091246",
+"401"
+]
+]
+},
+{
+"url": "https://gis.unicef.org/portal/apps/dashboards/c6e0bfd744164b2f84276071b1a83e78",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231201110957",
+"200"
+],
+[
+"20231202223934",
+"-"
+],
+[
+"20231202235358",
+"200"
+],
+[
+"20231205060503",
+"-"
+]
+]
+},
+{
+"url": "https://www.amnesty.org/en/documents/mde15/7347/2023/en/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231108202242",
+"200"
+],
+[
+"20231115033237",
+"200"
+],
+[
+"20231122162852",
+"200"
+],
+[
+"20231203163105",
+"200"
+]
+]
+},
+{
+"url": "https://www.reuters.com/world/middle-east/israeli-ministers-join-ultranationalistconferenceurging-gaza-resettlement2024-01-29/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.icrc.org/en/document/ihl-occupying-power-responsibilitiesoccupied-palestinianterritories",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.facebook.com/photo.php?fbid=659312296309468&set=pb.100066921098856.-2207520000&type=3",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101041309",
+"200"
+],
+[
+"20241101173407",
+"302"
+]
+]
+},
+{
+"url": "https://forensic-architecture.org/investigation/living-archaeologyin-gaza",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.washingtonpost.com/investigations/2023/10/30/israel-ground-assault-gaza-map/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231031014140",
+"200"
+],
+[
+"20231031062349",
+"403"
+],
+[
+"20231031062631",
+"403"
+],
+[
+"20231031160848",
+"403"
+]
+]
+},
+{
+"url": "https://www.ochaopt.org/sites/default/files/ochaHU11_1205_En.pdf",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231103211405",
+"200"
+],
+[
+"20241031200542",
+"301"
+]
+]
+},
+{
+"url": "https://gisha.org/en/the-ever-expanding-gaza-buffer-zone/?__cf_chl_tk=nYkqO106NwnXIvf9KXRr89z70jgCc4qkAFwYMZTHTpE17263;%20)",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.amnesty.org/en/latest/news/2024/09/israel-opt-israeli-militarymust-be-investigat-ed-for-war-crime-of-wanton-destructionin-gaza-new-investigation/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.un.org/unispal/wp-content/uploads/2024/06/environmental_impact_conflict_Gaza.pdf",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240718031253",
+"200"
+],
+[
+"20240801153431",
+"-"
+],
+[
+"20240927024207",
+"-"
+]
+]
+},
+{
+"url": "https://www.theguardian.com/environment/2024/mar/29/gaza-israel-palestini-an-war-ecocide-environmentaldestructionpollutionrome-statute-war-crimes-aoe",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://www.timesofisrael.com/liveblog_entry/foreign-minister-at-wars-end-not-only-will-hamas-be-gone-but-gazas-territorywill-shrink/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.timesofisrael.com/liveblog_entry/smotrich-blasts-surrender-deal-in-responseto-gal-lants-call-to-reverse-cabinet-decision-on-philadelphicorridor/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.haaretz.com/israel-news/securityaviation/2024-07-08/ty-articlestatic/.premium/israel-seized-26-of-gaza-now-jewish-settlerssee-their-chance/00000190-77cdd705-a7f5-fffffcbc0000",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://t.me/newss93/26398",
+"source": "angle-bracket",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240318082817",
+"200"
+],
+[
+"20240701163858",
+"200"
+],
+[
+"20240715144344",
+"200"
+],
+[
+"20241031223127",
+"200"
+]
+]
+},
+{
+"url": "https://www.haaretz.com/israel-news/securityaviation/2024-04-18/ty-articlemagazine/.premium/housing-showers-electricitythese-are-the-outpoststhe-idf-is-building-in-central-gaza/0000018ef1da-dbb3-a3bf-f5df02120000",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://x.com/moshebs11/status/1766830282219372906",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031200926",
+"200"
+],
+[
+"20241101010625",
+"200"
+],
+[
+"20240419191359",
+"200"
+]
+]
+},
+{
+"url": "https://www.nytimes.com/2024/03/27/technology/israel-facial-recognitiongaza.html",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.nytimes.com/2024/03/27/technology/israel-facial-recognition-gaza.html",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240327102900",
+"200"
+],
+[
+"20240327104100",
+"200"
+],
+[
+"20240327104827",
+"200"
+],
+[
+"20240327120609",
+"200"
+]
+]
+},
+{
+"url": "https://www.washingtonpost.com/world/2024/05/17/gaza-israel-netzarimcorridor-war-hamas/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://x.com/tamerqdh/status/1765345329921065432",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031212314",
+"200"
+],
+[
+"20241031230508",
+"200"
+]
+]
+},
+{
+"url": "https://arabic.cnn.com/middle-east/video/2024/04/16/v154725-palestiniansgaza-idf-digvid-ldn-orig",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://x.com/anadoluagency/status/1728450660310409436",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101014736",
+"200"
+],
+[
+"20241101023029",
+"200"
+],
+[
+"20240325122931",
+"200"
+],
+[
+"20240325222550",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/FAQ234/status/1752445840826732590",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101073447",
+"200"
+],
+[
+"20241101093245",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/qudsn/status/1757717990210969949",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101005522",
+"200"
+],
+[
+"20241101103407",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/hassaneslayeh/status/1766450233951625490",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101021029",
+"200"
+],
+[
+"20241101025711",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/HosamYahiaAJ/status/1725966613831188890",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031214006",
+"200"
+],
+[
+"20241101041200",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/MiddleEastEye/status/1770705555398832425",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101030018",
+"200"
+],
+[
+"20241102211821",
+"200"
+]
+]
+},
+{
+"url": "https://www.cambridge.org/core/journals/israel-law-review/article/abs/before-the-abyss-reshaping-international-humanitarian-law-to-suit-the-ends-of-power/9806A089AB5A7464A45BF10DD702C658",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240411162109",
+"200"
+],
+[
+"20240525100854",
+"200"
+],
+[
+"20240525100912",
+"200"
+]
+]
+},
+{
+"url": "https://press.un.org/en/2024/sc15564.doc.htm;%20https:/www.doctorswithoutborders.org/latest/there-no-safe-place-gaza",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101150232",
+"301"
+],
+[
+"20241107095538",
+"404"
+]
+]
+},
+{
+"url": "https://www.ohchr.org/en/press-releases/2023/12/israel-working-expel-civilian-population-gaza-un-expert-warns",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231222173539",
+"200"
+],
+[
+"20231222174128",
+"200"
+],
+[
+"20231222190950",
+"200"
+],
+[
+"20231222191957",
+"200"
+]
+]
+},
+{
+"url": "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session55/advance-versions/a-hrc-55-73-auv.pdf",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240325191441",
+"200"
+],
+[
+"20240325215029",
+"200"
+],
+[
+"20240326020637",
+"-"
+],
+[
+"20240326081904",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/avichayadraee",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231215035701",
+"302"
+],
+[
+"20240517180756",
+"-"
+],
+[
+"20240528175426",
+"200"
+],
+[
+"20240529034407",
+"302"
+]
+]
+},
+{
+"url": "https://www.facebook.com/cogatonline",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231213145141",
+"302"
+],
+[
+"20240114121956",
+"200"
+],
+[
+"20240114122047",
+"302"
+],
+[
+"20240418084411",
+"200"
+]
+]
+},
+{
+"url": "https://www.planet.com/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231001094806",
+"301"
+],
+[
+"20231001094808",
+"-"
+],
+[
+"20231002040737",
+"-"
+],
+[
+"20231002043903",
+"-"
+]
+]
+},
+{
+"url": "https://forensic-architecture.org/investigation/destruc-tion-of-medical-infrastructurein-gaza",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.washingtonpost.com/world/2023/12/06/israel-gaza-civilians-protection/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231207023509",
+"403"
+],
+[
+"20231207044908",
+"403"
+],
+[
+"20231207070308",
+"403"
+],
+[
+"20231207085821",
+"403"
+]
+]
+},
+{
+"url": "https://www.haaretz.com/israel-news/2023-12-06/ty-article/.premium/the-idfs-confusingironic-evacuation-map-for-palestiniansin-gaza/0000018c3b63-de12-a3af-3bef79640000",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://x.com/cogatonline/status/1714497441091682646",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240713185910",
+"200"
+],
+[
+"20240713232219",
+"200"
+],
+[
+"20240714033430",
+"200"
+],
+[
+"20240715034928",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/IDF/status/1784624831511626121",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031205903",
+"200"
+],
+[
+"20241031230301",
+"200"
+],
+[
+"20241212063351",
+"200"
+],
+[
+"20240428175057",
+"200"
+]
+]
+},
+{
+"url": "https://www.theguardian.com/world/2023/oct/14/gaza-civilians-afraid-to-leave-home-after-bombing-of-safe-routes",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://www.facebook.com/photo/?fbid=655329013374463&set=pb.100066921098856.-2207520000",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240525061334",
+"302"
+],
+[
+"20240525061346",
+"302"
+],
+[
+"20241007222920",
+"302"
+]
+]
+},
+{
+"url": "https://www.facebook.com/photo/?fbid=655000310074000&set=pb.100066921098856.-2207520000",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240525061409",
+"302"
+],
+[
+"20240525061414",
+"302"
+],
+[
+"20241008025148",
+"302"
+]
+]
+},
+{
+"url": "https://www.facebook.com/photo.php?fbid=941611483997126&set=pb.100044448488923.-2207520000&type=3",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031200007",
+"302"
+],
+[
+"20241101004433",
+"302"
+]
+]
+},
+{
+"url": "https://www.facebook.com/photo/?f,bid=882048216620120&set=pb.100044448488923.-2207520000%3B%20on%2014%20October%3A%200",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.facebook.com/photo/?fbid=882450609913214&set=pb.100044448488923.-2207520000",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101020046",
+"302"
+],
+[
+"20241101092607",
+"302"
+]
+]
+},
+{
+"url": "https://www.facebook.com/photo.php?fbid=889430129215262&set=pb.100044448488923.-2207520000&type=3",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031224418",
+"302"
+],
+[
+"20241101035106",
+"302"
+],
+[
+"20241101211319",
+"302"
+]
+]
+},
+{
+"url": "https://www.facebook.com/photo.php?fbid=896287658529509&set=pb.100044448488923.-2207520000&type=3",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031202334",
+"302"
+],
+[
+"20241101124542",
+"301"
+],
+[
+"20241101182937",
+"301"
+],
+[
+"20241107124517",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/ireallyhateyou/status/1759081366002545062",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031200858",
+"200"
+],
+[
+"20241106105242",
+"200"
+],
+[
+"20241208014733",
+"200"
+],
+[
+"20241208014733",
+"302"
+]
+]
+},
+{
+"url": "https://forensic-architecture.org/investigation/the-killing-of-hind-rajab",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240621135854",
+"200"
+],
+[
+"20240621141903",
+"200"
+],
+[
+"20240621145317",
+"200"
+],
+[
+"20240621173712",
+"200"
+]
+]
+},
+{
+"url": "https://www.nytimes.com/2024/07/14/world/middleeast/israel-mawasi-strike-vehicles.html?unlocked_article_code=1.7E0.q123.hHUsfolNrNUS",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031220230",
+"200"
+],
+[
+"20241031225621",
+"200"
+]
+]
+},
+{
+"url": "https://www.facebook.com/IDFarabicAvichayAdraee/posts/pfbid0Fxfg88SdQ8GEsnjT2hfLpVVsi6MJbtAPov5g4GjWvP8iLnnXPhSw7nmHLLRdN448l",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.timesofisrael.com/reports-rafah-strike-used-us-bombs-designed-to-reduce-casualties/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240529163436",
+"200"
+],
+[
+"20240529164718",
+"200"
+],
+[
+"20240529210748",
+"200"
+],
+[
+"20240530020723",
+"200"
+]
+]
+},
+{
+"url": "https://www.aljazeera.com/gallery/2024/5/27/photos-israel-bombs-yet-another-gaza-camp-it-had-declared-a-safe-zone",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240527122044",
+"200"
+],
+[
+"20240527122112",
+"200"
+],
+[
+"20240527122231",
+"200"
+],
+[
+"20240528020647",
+"200"
+]
+]
+},
+{
+"url": "https://www.doctorswithoutborders.org/latest/rafah-airstrike-complete-disregard-lives-civilians-gaza",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240527190149",
+"200"
+],
+[
+"20240528031820",
+"200"
+],
+[
+"20240528235410",
+"200"
+],
+[
+"20240529181506",
+"200"
+]
+]
+},
+{
+"url": "http://dev-isw.bivings.com/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.facebook.com/photo/?fbid=1034574524700821&Aset=pb.100044448488923.-2207520000",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://x.com/aa_arabic/status/1808273384549106030",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101111752",
+"200"
+],
+[
+"20241107165305",
+"200"
+],
+[
+"20240702225545",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/AvichayAdraee/status/1759825957697774049",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240222065623",
+"302"
+],
+[
+"20240222124313",
+"302"
+],
+[
+"20240220085530",
+"200"
+],
+[
+"20240222014417",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1760027114516918424",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031201231",
+"200"
+],
+[
+"20241101072950",
+"200"
+],
+[
+"20240325221947",
+"200"
+],
+[
+"20240325222915",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/DiaaMahmoud/status/1760023761225691520",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031234847",
+"200"
+],
+[
+"20241102081228",
+"200"
+],
+[
+"20240325220247",
+"200"
+],
+[
+"20240325222020",
+"200"
+]
+]
+},
+{
+"url": "http://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-122",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240220171435",
+"200"
+],
+[
+"20240221155032",
+"200"
+],
+[
+"20240222122004",
+"200"
+],
+[
+"20240223215611",
+"200"
+]
+]
+},
+{
+"url": "https://www.facebook.com/photo.php?fbid=917348023090139&set=pb.100044448488923.-2207520000&type=3",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101221817",
+"302"
+],
+[
+"20241106213318",
+"302"
+]
+]
+},
+{
+"url": "https://www.latimes.com/opinion/story/2024-02-16/rafah-gaza-hospitals-surgery-israel-bombing-ground-offensive-children",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240216203728",
+"200"
+],
+[
+"20240216214419",
+"200"
+],
+[
+"20240217021952",
+"200"
+],
+[
+"20240217041149",
+"200"
+]
+]
+},
+{
+"url": "https://www.youtube.com/watch?v=EWtEQYxJr84",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240224144027",
+"200"
+],
+[
+"20240304130600",
+"200"
+],
+[
+"20240319233758",
+"200"
+],
+[
+"20240319233920",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1751226204726997000",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101070259",
+"200"
+],
+[
+"20241101100732",
+"200"
+]
+]
+},
+{
+"url": "https://www.timesofisrael.com/intelligence-ministry-concept-paper-proposes-transferring-gazans-to-egypts-sinai/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231030234933",
+"200"
+],
+[
+"20231031000309",
+"200"
+],
+[
+"20231031062843",
+"200"
+],
+[
+"20231031114641",
+"200"
+]
+]
+},
+{
+"url": "https://www.unocha.org/publications/report/occupied-palestinian-territory/humanitarian-situation-update-176-gaza-strip",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240607203839",
+"403"
+],
+[
+"20240608005030",
+"200"
+],
+[
+"20240920185548",
+"200"
+]
+]
+},
+{
+"url": "https://amiable-poet-296019.projects.earthengine.app/view/gazalandcover2023",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231216035337",
+"200"
+],
+[
+"20241031214819",
+"302"
+],
+[
+"20241101063822",
+"200"
+]
+]
+},
+{
+"url": "https://www.un.org/unispal/document/auto-insert-196584/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231105170341",
+"200"
+],
+[
+"20231106083000",
+"200"
+],
+[
+"20231213115842",
+"200"
+],
+[
+"20231214062115",
+"200"
+]
+]
+},
+{
+"url": "https://www.oxfam.org/en/press-releases/people-northern-gaza-forced-survive-245-calories-day-less-can-beans-oxfam",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240404141136",
+"200"
+],
+[
+"20240404162230",
+"200"
+],
+[
+"20240404185213",
+"200"
+],
+[
+"20240405030514",
+"-"
+]
+]
+},
+{
+"url": "https://www.gisha.org/UserFiles/File/publications/redlines/redlines-position-paper-eng.pdf",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231013094506",
+"301"
+],
+[
+"20231014085512",
+"200"
+],
+[
+"20231015091947",
+"301"
+],
+[
+"20231020131817",
+"200"
+]
+]
+},
+{
+"url": "https://unosat.org/products/3895",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240709215231",
+"200"
+],
+[
+"20240716200627",
+"200"
+],
+[
+"20240717020640",
+"302"
+],
+[
+"20240718141120",
+"200"
+]
+]
+},
+{
+"url": "https://issues.org/satellite-data-nasa-harvest-ukraine-becker-reshef-mitkish/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240123022504",
+"200"
+],
+[
+"20240123044154",
+"200"
+],
+[
+"20240127201343",
+"200"
+],
+[
+"20240303063130",
+"200"
+]
+]
+},
+{
+"url": "https://www.wsj.com/world/middle-east/israel-border-gaza-buffer-zone-4131020d",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240125051128",
+"200"
+],
+[
+"20240125072718",
+"200"
+],
+[
+"20240125072958",
+"200"
+],
+[
+"20240125093050",
+"200"
+]
+]
+},
+{
+"url": "https://response.reliefweb.int/palestine/water-sanitation-and-hygiene",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231213193203",
+"200"
+],
+[
+"20231213193212",
+"-"
+],
+[
+"20240307013908",
+"200"
+],
+[
+"20240328185941",
+"403"
+]
+]
+},
+{
+"url": "https://www.oxfam.org.nz/wp-content/uploads/2024/07/Final-version_-Gaza-water-Policy-Paper_17July.pdf",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240718013629",
+"200"
+],
+[
+"20240807091134",
+"200"
+],
+[
+"20240927063409",
+"301"
+],
+[
+"20241217035714",
+"200"
+]
+]
+},
+{
+"url": "https://openknowledge.fao.org/server/api/core/bitstreams/1cf6af5c-e6a0-415f-b1dc-c54abbe300ba/content",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240518180033",
+"200"
+],
+[
+"20241031202403",
+"301"
+],
+[
+"20241101005632",
+"200"
+],
+[
+"20241214161426",
+"200"
+]
+]
+},
+{
+"url": "https://www.ohchr.org/en/press-releases/2024/07/un-experts-declare-famine-has-spread-throughout-gaza-strip",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240709172258",
+"200"
+],
+[
+"20240709172259",
+"200"
+],
+[
+"20240709172544",
+"200"
+],
+[
+"20240709173921",
+"301"
+]
+]
+},
+{
+"url": "https://oxfamilibrary.openrepository.com/bitstream/handle/10546/621609/bp-water-war-crimes-180724-en.pdf;jsessionid=5E725E0FFB1AE0409D7338FB75AFAA86?",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031212356",
+"200"
+],
+[
+"20241101181743",
+"302"
+]
+]
+},
+{
+"url": "https://www.independent.co.uk/news/world/middle-east/israel-hamas-tunnels-seawater-gaza-b2463093.html",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231213131532",
+"200"
+],
+[
+"20231213152200",
+"200"
+],
+[
+"20231215084643",
+"200"
+],
+[
+"20231215123941",
+"200"
+]
+]
+},
+{
+"url": "https://app.powerbi.com/view?r=eyJrIjoiODAxNTYzMDYtMjQ3YS00OTMzLTkxMWQtOTU1NWEwMzE5NTMwIiwidCI6ImY2MTBjMGI3LWJkMjQtNGIzOS04MTBiLTNkYzI4MGFmYjU5MCIsImMiOjh9",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240711054905",
+"200"
+],
+[
+"20240711090707",
+"200"
+],
+[
+"20240715100904",
+"200"
+],
+[
+"20240715192013",
+"200"
+]
+]
+},
+{
+"url": "https://doi.org/10.1080/0377919X.2024.2330366",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240429032245",
+"302"
+],
+[
+"20240429032247",
+"302"
+],
+[
+"20240429032307",
+"302"
+],
+[
+"20240519032210",
+"-"
+]
+]
+},
+{
+"url": "http://www.ochaopt.org/content/humanitarianneeds-overview-2023",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.islamic-relief.org.uk/gazas-fuel-crisis-explained/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231107172558",
+"200"
+],
+[
+"20231202061959",
+"200"
+],
+[
+"20231213193111",
+"301"
+]
+]
+},
+{
+"url": "https://www.csis.org/analysis/gazas-solar-power-wartime",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231122065420",
+"200"
+],
+[
+"20231122152257",
+"200"
+],
+[
+"20231201050257",
+"200"
+],
+[
+"20231208131538",
+"200"
+]
+]
+},
+{
+"url": "https://www.middleeastmonitor.com/20240925-gaza-without-electricity-as-israel-targets-energy-alternatives/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240925085410",
+"200"
+],
+[
+"20240925105257",
+"200"
+],
+[
+"20240926012446",
+"200"
+],
+[
+"20240926021213",
+"200"
+]
+]
+},
+{
+"url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(23)02634-X/fulltext",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231209214850",
+"200"
+],
+[
+"20231215144547",
+"200"
+],
+[
+"20231219052512",
+"200"
+],
+[
+"20240226142727",
+"200"
+]
+]
+},
+{
+"url": "http://www.ochaopt.org/content/humanitarian-needs-overview-2023",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231022152355",
+"200"
+],
+[
+"20231028062159",
+"200"
+],
+[
+"20231028153541",
+"200"
+],
+[
+"20231030193931",
+"200"
+]
+]
+},
+{
+"url": "https://data.humdata.org/dataset/shcchealthcare-dataset",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231011160645",
+"200"
+],
+[
+"20240716065253",
+"403"
+],
+[
+"20240719155940",
+"200"
+],
+[
+"20240914134738",
+"403"
+]
+]
+},
+{
+"url": "https://healthcareworkerswatch.org/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240522154940",
+"301"
+],
+[
+"20240522235437",
+"200"
+],
+[
+"20240523063418",
+"200"
+],
+[
+"20240528170616",
+"301"
+]
+]
+},
+{
+"url": "https://www.who.int/news/item/14-10-2023-evacuation-orders-by-israel-to-hospitals-in-northern-gaza-are-a-death-sentence-for-the-sick-and-injured",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231014234018",
+"200"
+],
+[
+"20231014234102",
+"200"
+],
+[
+"20231014234314",
+"200"
+],
+[
+"20231014235031",
+"200"
+]
+]
+},
+{
+"url": "http://www.ochaopt.org/content/hostilitiesgaza-strip-and-israel-flash-update-17",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "http://www.ochaopt.org/content/hostilitiesgaza-strip-and-israel-flash-update-23",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.aa.com.tr/en/middle-east/gaza-s-al-shifa-hospitalunder-siege-attacksput-peoples-lives-at-risk-health-ministry/3053854",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.nytimes.com/2023/10/28/world/middleeast/gaza-al-shifa-hospitalisrael.html",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.unocha.org/publications/report/occupied-palestinianterritory/hostilitiesgaza-strip-and-israel-flash-update-49",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.theguardian.com/world/2023/oct/17/gaza-main-hospitaloverflowswith-living-dead-dar-al-shifa",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://www.aljazeera.com/news/2023/10/13/fear-confusion-as-israel-issues-evacuation-order-for-northern-gaza",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231013084903",
+"200"
+],
+[
+"20231013085209",
+"200"
+],
+[
+"20231013122127",
+"200"
+],
+[
+"20231013125405",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/MSF/status/1712886892885061811?lang=en",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101050844",
+"200"
+],
+[
+"20241101083205",
+"200"
+],
+[
+"20231014032416",
+"200"
+]
+]
+},
+{
+"url": "https://www.ncregister.com/cna/patriarchs-and-heads-of-the-churches-in-jerusalem-hold-press-conference-after-gaza-hospital-explosion",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231019050452",
+"200"
+],
+[
+"20231019200202",
+"200"
+],
+[
+"20231022201244",
+"200"
+],
+[
+"20231022224351",
+"200"
+]
+]
+},
+{
+"url": "https://reliefweb.int/report/occupied-palestinian-territory/imminent-threat-received-immediate-evacuation-prgs-ai-quds-hospital",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231030021328",
+"403"
+],
+[
+"20231030031658",
+"403"
+],
+[
+"20231030053546",
+"403"
+],
+[
+"20231030063939",
+"403"
+]
+]
+},
+{
+"url": "https://www.doctorswithoutborders.org/latest/hospitalsare-breaking-point-southerngaza-bombing-intensifies",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "http://www.ochaopt.org/content/hostilitiesgaza-strip-and-israel-flash-update-40",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.aljazeera.com/news/2023/11/8/al-quds-hospital-in-gaza-runs-out-of-fuel-shuts-down-key-services",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231108173249",
+"200"
+],
+[
+"20231108183210",
+"200"
+],
+[
+"20231108200818",
+"200"
+],
+[
+"20231108203102",
+"200"
+]
+]
+},
+{
+"url": "https://reliefweb.int/report/occupied-palestinianterritory/palestinered-crescent-society-responsereport-saturday-07102023-600am-sunday-05112023-1300pm-enar",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "http://www.ochaopt.org/content/hostilitiesgaza-strip-and-israel-flash-update-31",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://t.me/AjaNews/243796",
+"source": "angle-bracket",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240202082939",
+"200"
+],
+[
+"20241031221511",
+"200"
+],
+[
+"20241031230119",
+"200"
+],
+[
+"20241111132033",
+"200"
+]
+]
+},
+{
+"url": "https://www.tiktok.com/@ezzlulu/video/7296193094133796097",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101094555",
+"200"
+],
+[
+"20241101143513",
+"200"
+]
+]
+},
+{
+"url": "https://www.theguardian.com/world/2023/dec/01/hospital-damage-in-gaza-during-israeli-offensive-a-visual-investigation",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://t.me/AjaNews/221653",
+"source": "angle-bracket",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231110053426",
+"200"
+],
+[
+"20241101022358",
+"200"
+],
+[
+"20241101045647",
+"200"
+],
+[
+"20241111145400",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AjaNews/217690",
+"source": "angle-bracket",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231107161838",
+"200"
+],
+[
+"20241101023541",
+"200"
+],
+[
+"20241101115942",
+"200"
+],
+[
+"20241118161945",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AjaNews/229819",
+"source": "angle-bracket",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231206055353",
+"200"
+],
+[
+"20241031200549",
+"200"
+],
+[
+"20241031231438",
+"200"
+],
+[
+"20241114134010",
+"200"
+]
+]
+},
+{
+"url": "https://www.aljazeera.com/news/2023/11/4/we-have-nothing-families-seek-safety-from-bombs-inside-gaza-hospitals",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231104030616",
+"200"
+],
+[
+"20231104045043",
+"200"
+],
+[
+"20231104050535",
+"200"
+],
+[
+"20231104073435",
+"200"
+]
+]
+},
+{
+"url": "https://www.who.int/publications/i/item/WHO-oPt-IPC_WASH-2024.1",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240314195804",
+"200"
+],
+[
+"20240315012727",
+"200"
+],
+[
+"20240323093310",
+"200"
+],
+[
+"20240324054452",
+"200"
+]
+]
+},
+{
+"url": "http://www.emro.who.int/media/news/who-transfers-critical-patients-out-of-nasser-medical-complex-fears-for-safety-of-remaining-patients.html",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240220114827",
+"200"
+],
+[
+"20240224141342",
+"200"
+],
+[
+"20240225031655",
+"200"
+],
+[
+"20240227101711",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/MOHMediaGaza/5019",
+"source": "angle-bracket",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240217003713",
+"200"
+],
+[
+"20240501015507",
+"200"
+],
+[
+"20241031212130",
+"200"
+],
+[
+"20241101021053",
+"200"
+]
+]
+},
+{
+"url": "https://www.theguardian.com/world/2023/nov/13/in-the-circle-of-death-gaza-doctors-say-patients-are-under-siege-in-al-shifa",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://www.bbc.com/news/world-middle-east-67410093",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231113222356",
+"200"
+],
+[
+"20231113231050",
+"200"
+],
+[
+"20231113232239",
+"200"
+],
+[
+"20231114004228",
+"200"
+]
+]
+},
+{
+"url": "https://www.bbc.com/news/world-middle-east-68536243",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240314133811",
+"200"
+],
+[
+"20240314140551",
+"200"
+],
+[
+"20240314141602",
+"200"
+],
+[
+"20240314142612",
+"200"
+]
+]
+},
+{
+"url": "https://www.washingtonpost.com/world/2023/11/10/gaza-israel-palestinians-hospitals-hamas/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231110144835",
+"302"
+],
+[
+"20231110165528",
+"200"
+],
+[
+"20231110174045",
+"403"
+],
+[
+"20231110190845",
+"403"
+]
+]
+},
+{
+"url": "https://news.un.org/en/story/2024/04/1148741#:~:text=%E2%80%9CWhat%20I%20saw%2C%20it%20breaks%20my%20heart%E2%80%A6&text=What%20we%20see%20there%20is,other%20with%20the%20screens%20smashed.",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240419125931",
+"200"
+],
+[
+"20240419165200",
+"200"
+],
+[
+"20240419202320",
+"200"
+],
+[
+"20240420193726",
+"200"
+]
+]
+},
+{
+"url": "https://www.unocha.org/publications/report/occupied-palestinian-territory/hostilities-gaza-strip-and-israel-flash-update-41",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231117113306",
+"403"
+],
+[
+"20231124010909",
+"-"
+],
+[
+"20231124061846",
+"403"
+],
+[
+"20231126085123",
+"-"
+]
+]
+},
+{
+"url": "https://www.unocha.org/publications/report/occupied-palestinian-territory/hostilities-gaza-strip-and-israel-flash-update-44",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231120125628",
+"403"
+],
+[
+"20231124061846",
+"403"
+],
+[
+"20231204075751",
+"-"
+],
+[
+"20231210144424",
+"200"
+]
+]
+},
+{
+"url": "https://forensic-architecture.org/investigation/mass-burials-at-al-shifa-hospital",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240621221041",
+"200"
+],
+[
+"20240622184413",
+"200"
+],
+[
+"20240710062658",
+"200"
+],
+[
+"20240717225108",
+"200"
+]
+]
+},
+{
+"url": "https://www.aljazeera.com/program/newsfeed/2024/6/13/aj-360-premieres-unflinching-film-with-al-shifa-hospital-siege-survivors",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240613213050",
+"200"
+],
+[
+"20240613213535",
+"200"
+],
+[
+"20240613222322",
+"200"
+],
+[
+"20240614035423",
+"200"
+]
+]
+},
+{
+"url": "https://www.aljazeera.com/news/2024/2/16/at-least-five-people-dead-after-israeli-army-raid-on-nasser-hospital",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240216185054",
+"200"
+],
+[
+"20240216185211",
+"200"
+],
+[
+"20240217081749",
+"200"
+],
+[
+"20240217100426",
+"200"
+]
+]
+},
+{
+"url": "https://www.aljazeera.com/news/2023/11/1/gazas-only-cancer-treatment-hospital-shuts-down-after-running-out-of-fuel",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231101155744",
+"200"
+],
+[
+"20231101163755",
+"-"
+],
+[
+"20231101163952",
+"200"
+],
+[
+"20231101165901",
+"-"
+]
+]
+},
+{
+"url": "https://t.me/AlarabyTelevision/35476",
+"source": "angle-bracket",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231113063911",
+"200"
+],
+[
+"20241031221725",
+"200"
+],
+[
+"20241101051832",
+"200"
+],
+[
+"20241112030321",
+"200"
+]
+]
+},
+{
+"url": "https://www.mofa.gov.ae/en/mediahub/news/2023/12/3/3-12-2023-uae-ghaza",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231203225947",
+"200"
+],
+[
+"20231215145544",
+"200"
+],
+[
+"20231215215609",
+"200"
+],
+[
+"20231216123129",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/PalestineRCS/status/1757400933166641462",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240218005351",
+"302"
+],
+[
+"20240329003725",
+"302"
+],
+[
+"20240218005351",
+"200"
+],
+[
+"20240329003726",
+"200"
+]
+]
+},
+{
+"url": "https://healthcluster.who.int/newsroom/news/item/15-02-2024-a-field-hospital-in-rafah-supporting-the-health-response",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240226223048",
+"200"
+],
+[
+"20240310234304",
+"200"
+],
+[
+"20240411162711",
+"200"
+],
+[
+"20240502145739",
+"200"
+]
+]
+},
+{
+"url": "https://www.icrc.org/en/document/red-cross-opens-new-60-bed-field-hospital-gaza",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240514101109",
+"200"
+],
+[
+"20240514122331",
+"200"
+],
+[
+"20240514122619",
+"200"
+],
+[
+"20240515024929",
+"200"
+]
+]
+},
+{
+"url": "https://www.emro.who.int/images/stories/Sitrep_-_issue_32c.pdf",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240601185112",
+"200"
+],
+[
+"20240602173614",
+"200"
+],
+[
+"20240604182911",
+"200"
+],
+[
+"20240618143939",
+"307"
+]
+]
+},
+{
+"url": "https://www.ochaopt.org/content/humanitarian-situation-update-176-gaza-strip",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240607162827",
+"200"
+],
+[
+"20240607184106",
+"301"
+],
+[
+"20240607222957",
+"200"
+],
+[
+"20240609074438",
+"200"
+]
+]
+},
+{
+"url": "https://www.msf.org/another-hospital-gaza-forced-close-amid-intensified-israeli-offensive-rafah",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240514132228",
+"200"
+],
+[
+"20240514204907",
+"200"
+],
+[
+"20240515010521",
+"200"
+],
+[
+"20240515222846",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AlarabyTelevision/52419",
+"source": "angle-bracket",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231222072642",
+"200"
+],
+[
+"20241031213156",
+"200"
+],
+[
+"20241102024615",
+"200"
+],
+[
+"20241129171842",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AlarabyTelevision/46120",
+"source": "angle-bracket",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231209071537",
+"200"
+],
+[
+"20241031200456",
+"200"
+],
+[
+"20241101044600",
+"200"
+],
+[
+"20241113024823",
+"200"
+]
+]
+},
+{
+"url": "https://www.unocha.org/publications/report/occupied-palestinian-territory/hostilities-gaza-strip-and-israel-flash-update-32",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231111224957",
+"403"
+],
+[
+"20231113104456",
+"-"
+],
+[
+"20231113152251",
+"-"
+],
+[
+"20231113230619",
+"-"
+]
+]
+},
+{
+"url": "https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-36",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231112073656",
+"200"
+],
+[
+"20231112113413",
+"200"
+],
+[
+"20231112123643",
+"200"
+],
+[
+"20231112143602",
+"200"
+]
+]
+},
+{
+"url": "https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-49",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231125080743",
+"200"
+],
+[
+"20231125200742",
+"200"
+],
+[
+"20231126082012",
+"200"
+],
+[
+"20231126104958",
+"200"
+]
+]
+},
+{
+"url": "https://www.aljazeera.com/news/2023/11/18/israel-gives-gazas-al-shifa-hospital-one-hour-to-evacuate",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231118065040",
+"200"
+],
+[
+"20231118065156",
+"200"
+],
+[
+"20231118074133",
+"200"
+],
+[
+"20231118080632",
+"200"
+]
+]
+},
+{
+"url": "https://www.doctorswithoutborders.ca/gaza-israeli-forces-leave-al-shifa-hospital-in-ruins/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240402173944",
+"200"
+],
+[
+"20240411092652",
+"200"
+],
+[
+"20240414090334",
+"200"
+],
+[
+"20240419150709",
+"200"
+]
+]
+},
+{
+"url": "https://www.bbc.co.uk/news/world-middle-east-68513408",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240312060901",
+"200"
+],
+[
+"20240312061204",
+"200"
+],
+[
+"20240312061602",
+"200"
+],
+[
+"20240312061610",
+"200"
+]
+]
+},
+{
+"url": "https://www.aljazeera.com/news/2023/11/23/al-shifa-hospital-director-arrested-by-israeli-army-in-gaza",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231123074316",
+"200"
+],
+[
+"20231123092201",
+"200"
+],
+[
+"20231123092435",
+"200"
+],
+[
+"20231123105156",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/PalestineRCS/status/1733762810998358428",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101064951",
+"200"
+],
+[
+"20241101081002",
+"200"
+],
+[
+"20231210163326",
+"200"
+],
+[
+"20231210170503",
+"200"
+]
+]
+},
+{
+"url": "http://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-65",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231211101600",
+"200"
+],
+[
+"20231211105157",
+"200"
+],
+[
+"20231211105208",
+"200"
+],
+[
+"20231211112140",
+"200"
+]
+]
+},
+{
+"url": "https://www.aa.com.tr/en/middle-east/nearly-1-000-palestinian-medics-killed-in-israeli-attacks-in-gaza-since-oct-7-health-ministry/3337108",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240922060603",
+"200"
+],
+[
+"20240922112437",
+"200"
+],
+[
+"20240922113817",
+"200"
+],
+[
+"20241009165446",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1760766861279391872",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031221057",
+"200"
+],
+[
+"20241101003446",
+"200"
+],
+[
+"20240225191150",
+"200"
+],
+[
+"20240225225919",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/ItayBlumental/status/1789709717326938401",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031203114",
+"200"
+],
+[
+"20241031212520",
+"200"
+],
+[
+"20241031221931",
+"200"
+],
+[
+"20241031230330",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/WHOoPt/status/1796975909502947517",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240601215239",
+"200"
+],
+[
+"20240601215353",
+"200"
+],
+[
+"20240603094026",
+"302"
+],
+[
+"20240603165259",
+"302"
+]
+]
+},
+{
+"url": "https://www.facebook.com/Kuwait.hos/videos/744635417586120/",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101000540",
+"200"
+],
+[
+"20241101072527",
+"200"
+]
+]
+},
+{
+"url": "https://www.facebook.com/Kuwait.hos/posts/pfbid0JT1z5wpeLA2aoKcCCvcvvc79JXn6P\u2019M97AnP1tUBMorCAPVFczqubtdasr7Wckhzwl",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://www.facebook.com/permalink.php/?story_fbid=796255378965898&id=100057443290195",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241104035157",
+"302"
+]
+]
+},
+{
+"url": "https://www.facebook.com/permalink.php/?story_fbid=802569731667796&id=100057443290195",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241103040036",
+"302"
+],
+[
+"20241103041757",
+"302"
+]
+]
+},
+{
+"url": "http://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-26",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231102024401",
+"200"
+],
+[
+"20231102024404",
+"200"
+],
+[
+"20231102072227",
+"200"
+],
+[
+"20231102073720",
+"200"
+]
+]
+},
+{
+"url": "https://www.unocha.org/publications/report/occupied-palestinian-territory/hostilities-gaza-strip-and-israel-flash-update-58",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240227011244",
+"200"
+],
+[
+"20240227023650",
+"200"
+],
+[
+"20241207212718",
+"403"
+]
+]
+},
+{
+"url": "https://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-74",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231221035053",
+"200"
+],
+[
+"20231221043647",
+"200"
+],
+[
+"20231221062119",
+"200"
+],
+[
+"20231221075334",
+"200"
+]
+]
+},
+{
+"url": "https://shifa.forensic-architecture.org/",
+"source": "angle-bracket",
+"stratum": "fa-self",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231229213446",
+"200"
+],
+[
+"20240102031255",
+"200"
+],
+[
+"20240106075312",
+"200"
+],
+[
+"20240216230516",
+"200"
+]
+]
+},
+{
+"url": "https://www.ochaopt.org/content/reported-im-pact-snapshot-gaza-strip-9-october-2024",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031203716",
+"404"
+],
+[
+"20241101035017",
+"301"
+]
+]
+},
+{
+"url": "http://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-reported-impact-day-32",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231108060844",
+"200"
+],
+[
+"20231108063349",
+"200"
+],
+[
+"20231108063921",
+"200"
+],
+[
+"20231108072108",
+"200"
+]
+]
+},
+{
+"url": "https://www.worldbank.org/en/news/press-release/2024/04/02/joint-world-bank-un-report-assesses-damage-to-gaza-s-infrastructure",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240403011059",
+"200"
+],
+[
+"20240403051627",
+"200"
+],
+[
+"20240403074053",
+"200"
+],
+[
+"20240403074813",
+"200"
+]
+]
+},
+{
+"url": "https://airwars.org/civilian-casualties/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231016163227",
+"200"
+],
+[
+"20231031175517",
+"200"
+],
+[
+"20231107014923",
+"200"
+],
+[
+"20231109115555",
+"200"
+]
+]
+},
+{
+"url": "https://www.israeldefense.co.il/node/37949",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231130125315",
+"200"
+],
+[
+"20231203073207",
+"403"
+],
+[
+"20231204001018",
+"403"
+],
+[
+"20231204165535",
+"200"
+]
+]
+},
+{
+"url": "https://h3geo.org/docs",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231128114036",
+"200"
+],
+[
+"20231128114041",
+"301"
+],
+[
+"20231128114041",
+"-"
+],
+[
+"20231128114323",
+"200"
+]
+]
+},
+{
+"url": "https://www.ohchr.org/sites/default/files/Documents/HRBodies/HRCouncil/CoIGaza/Kill_Radius_Compared.pdf",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231121063452",
+"200"
+],
+[
+"20231208014820",
+"-"
+],
+[
+"20240509122312",
+"200"
+],
+[
+"20240513083710",
+"-"
+]
+]
+},
+{
+"url": "https://www.gichd.org/fileadmin/uploads/gichd/Publications/Explosive_weapon_effects_web.pdf",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231203102055",
+"200"
+],
+[
+"20240229032126",
+"200"
+],
+[
+"20240417124404",
+"200"
+],
+[
+"20240826002621",
+"200"
+]
+]
+},
+{
+"url": "https://doi.org/10.1186/s13031-024-00580-x",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240509113109",
+"302"
+],
+[
+"20240509113607",
+"302"
+],
+[
+"20240521111149",
+"-"
+],
+[
+"20240523000603",
+"-"
+]
+]
+},
+{
+"url": "https://www.aa.com.tr/en/middle-east/israeli-army-destroys-entire-palestinian-side-of-rafah-border-crossing-renders-it-unusable/3253481",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240619162106",
+"200"
+],
+[
+"20240619205609",
+"200"
+],
+[
+"20240620111031",
+"200"
+],
+[
+"20240620195645",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/m_osint/status/1711428379675631764",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031225123",
+"200"
+],
+[
+"20241101122832",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/idfonline/status/1711721465194680554",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031224215",
+"200"
+],
+[
+"20241101131528",
+"200"
+],
+[
+"20231012073713",
+"200"
+],
+[
+"20231012073718",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/Osinttechnical/status/1713107080712782170",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031212339",
+"200"
+],
+[
+"20241101150138",
+"200"
+],
+[
+"20231014111815",
+"302"
+],
+[
+"20231014113920",
+"200"
+]
+]
+},
+{
+"url": "https://www.bbc.co.uk/news/world-middle-east-67121372",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231016112121",
+"200"
+],
+[
+"20231016112451",
+"200"
+],
+[
+"20231016112606",
+"200"
+],
+[
+"20231016113433",
+"200"
+]
+]
+},
+{
+"url": "https://www.theguardian.com/world/2023/oct/20/un-chief-visits-rafah-crossing-to-push-for-aid-to-be-let-into-gaza",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://x.com/manniefabian/status/1713780738623955271",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231021225148",
+"302"
+],
+[
+"20241021100940",
+"200"
+],
+[
+"20241021103109",
+"200"
+],
+[
+"20241101085206",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/hwtnv/status/1714870202096402503",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031205729",
+"200"
+],
+[
+"20241101035922",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/hwtnv/status/1714869741104603432",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031221613",
+"200"
+],
+[
+"20241031234751",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/FahrettinAltay_/status/1787833063184953505",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101011938",
+"200"
+],
+[
+"20241101064859",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1800841913349894346",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031214127",
+"200"
+],
+[
+"20241031214723",
+"200"
+],
+[
+"20240612104544",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/NemoAnno/status/1803372913313071536",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031204835",
+"200"
+],
+[
+"20241101130225",
+"200"
+],
+[
+"20240619102302",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/ItayBlumental/status/1726568335008260165",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101104803",
+"200"
+],
+[
+"20241101194308",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/restitutorII/status/1727092425485914510",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101002848",
+"200"
+],
+[
+"20241101102012",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/no_itsmyturn/status/1731671802705826208",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240711120908",
+"200"
+],
+[
+"20241031221935",
+"200"
+],
+[
+"20241101163619",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/psyko_ivan/status/1731669651531153780",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101174723",
+"200"
+],
+[
+"20241102072436",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1776047020811141402",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031234551",
+"200"
+],
+[
+"20241101061326",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/BirzeitU/status/1747919397497319781",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240203125150",
+"302"
+],
+[
+"20240203145014",
+"302"
+],
+[
+"20240308030620",
+"302"
+],
+[
+"20241005180056",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1769360574574461276",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240609215236",
+"200"
+],
+[
+"20241031224502",
+"200"
+],
+[
+"20241031232908",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/war_noir/status/1770527837826494763",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031232714",
+"200"
+],
+[
+"20241101020805",
+"200"
+],
+[
+"20240423205438",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/RamAbdu/status/1797953926857392305",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031200117",
+"200"
+],
+[
+"20241102032411",
+"200"
+],
+[
+"20240604112955",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/QudsNen/status/1819674320391553125",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241001175453",
+"200"
+],
+[
+"20241003032600",
+"200"
+],
+[
+"20240803095900",
+"-"
+]
+]
+},
+{
+"url": "https://press.un.org/en/2024/sc15600.doc.htm",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240226071444",
+"200"
+],
+[
+"20240226210332",
+"200"
+],
+[
+"20240305033053",
+"200"
+],
+[
+"20240305082447",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/Hind_Gaza/status/1756869279385788851",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031204628",
+"200"
+],
+[
+"20241101011205",
+"200"
+],
+[
+"20240507160404",
+"200"
+]
+]
+},
+{
+"url": "https://english.wafa.ps/Pages/Details/141555",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240214040925",
+"403"
+],
+[
+"20241031223022",
+"301"
+],
+[
+"20241210190551",
+"200"
+]
+]
+},
+{
+"url": "https://edition.cnn.com/2024/02/12/middleeast/israel-airstrikes-rafah-ground-offensive-looms-in-tl-hnk/index.html",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101011144",
+"404"
+],
+[
+"20241107082933",
+"301"
+]
+]
+},
+{
+"url": "https://x.com/QudsNen/status/1830749635448606934",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101022329",
+"200"
+],
+[
+"20241101191444",
+"200"
+],
+[
+"20240902232821",
+"-"
+]
+]
+},
+{
+"url": "https://elagha.net/files/pictures/20130308_16_4051_0.jpg",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031221744",
+"301"
+],
+[
+"20241106214708",
+"200"
+]
+]
+},
+{
+"url": "https://www.instagram.com/adli_hamdan/reel/CzqilwustP6/",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031210102",
+"200"
+],
+[
+"20241101080148",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1775998678521495867",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101005348",
+"200"
+],
+[
+"20241101081021",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/AlQastalps/status/1787927921077674323",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031230427",
+"200"
+],
+[
+"20241101035603",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/amitsegal/36987",
+"source": "angle-bracket",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240807190116",
+"200"
+],
+[
+"20240811100005",
+"200"
+],
+[
+"20240814081756",
+"200"
+],
+[
+"20240815085555",
+"200"
+]
+]
+},
+{
+"url": "https://www.facebook.com/watch/?v=8310824809004769",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031224957",
+"302"
+],
+[
+"20241101015233",
+"302"
+]
+]
+},
+{
+"url": "https://www.nbcnews.com/news/world/trapped-palestinians-refusing-israeli-orders-evacuate-gaza-hospital-rcna122785",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231030230523",
+"200"
+],
+[
+"20231030231107",
+"200"
+],
+[
+"20231030231414",
+"200"
+],
+[
+"20231031062614",
+"200"
+]
+]
+},
+{
+"url": "https://apnews.com/article/israel-hamas-war-news-12-04-2023-ece85568ce36cb2315f26b10adda30fa",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231204080951",
+"200"
+],
+[
+"20231204083938",
+"200"
+],
+[
+"20231204090711",
+"200"
+],
+[
+"20231204092518",
+"200"
+]
+]
+},
+{
+"url": "https://apnews.com/article/civilians-fleeing-gaza-combat-israel-ground-operation-656545c0bd132d5dc2b6d108687ff13e",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231107194737",
+"200"
+],
+[
+"20231108001626",
+"200"
+],
+[
+"20231108001626",
+"200"
+],
+[
+"20231108033709",
+"200"
+]
+]
+},
+{
+"url": "https://www.icj-cij.org/node/203854",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240403192152",
+"200"
+],
+[
+"20240403192724",
+"200"
+],
+[
+"20240406141130",
+"200"
+],
+[
+"20240614002330",
+"200"
+]
+]
+},
+{
+"url": "https://features.gisha.org/gaza-up-close/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231001135012",
+"200"
+],
+[
+"20231002155548",
+"200"
+],
+[
+"20231005052002",
+"200"
+],
+[
+"20231006204116",
+"301"
+]
+]
+},
+{
+"url": "https://www.theguardian.com/world/2012/oct/17/israeli-military-calorie-limit-gaza",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://www.aljazeera.com/opinions/2017/7/24/how-gaza-was-made-into-an-unlivable-place",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240121041503",
+"200"
+],
+[
+"20240426205601",
+"200"
+],
+[
+"20240502131042",
+"200"
+],
+[
+"20240502142710",
+"200"
+]
+]
+},
+{
+"url": "https://www.gisha.org/UserFiles/File/publications/redlines/red-lines-presentation-eng.pdf",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231120212356",
+"301"
+],
+[
+"20231120212357",
+"200"
+],
+[
+"20231216174414",
+"403"
+],
+[
+"20231216223700",
+"403"
+]
+]
+},
+{
+"url": "https://www.unicef.org/mena/documents/gaza-strip-humanitarian-impact-15-years-blockade-june-2022",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231009143847",
+"200"
+],
+[
+"20231010102909",
+"200"
+],
+[
+"20231010183928",
+"200"
+],
+[
+"20231010184121",
+"200"
+]
+]
+},
+{
+"url": "https://www.timesofisrael.com/liveblog_entry/defense-minister-announces-complete-siege-of-gaza-no-power-food-or-fuel/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231009092901",
+"200"
+],
+[
+"20231009095058",
+"200"
+],
+[
+"20231009105739",
+"200"
+],
+[
+"20231009134802",
+"200"
+]
+]
+},
+{
+"url": "https://www.politico.eu/article/aid-enter-gaza-rafah-border-crossing-open/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231021092605",
+"200"
+],
+[
+"20231021093128",
+"200"
+],
+[
+"20231021150611",
+"200"
+],
+[
+"20231022062828",
+"200"
+]
+]
+},
+{
+"url": "https://app.powerbi.com/view?r=eyJrIjoiZTVkYmEwNmMtZWYxNy00ODhlLWI2ZjctNjIzMzQ5OGQxNzY5IiwidCI6IjI2MmY2YTQxLTIwZTktNDE0MC04ZDNlLWZkZjVlZWNiNDE1NyIsImMiOjl9&pageName=ReportSection3306863add46319dc574",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240119113724",
+"200"
+],
+[
+"20240122024434",
+"200"
+],
+[
+"20240122081130",
+"200"
+],
+[
+"20240124211843",
+"200"
+]
+]
+},
+{
+"url": "https://www.reuters.com/world/middle-east/un-palestinian-refugee-agency-600000-internally-displaced-people-gaza-are-2023-10-25/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231025083301",
+"200"
+],
+[
+"20231025113611",
+"200"
+],
+[
+"20231025134307",
+"200"
+],
+[
+"20231026050943",
+"200"
+]
+]
+},
+{
+"url": "https://reliefweb.int/report/occupied-palestinian-territory/hostilities-gaza-strip-and-israel-flash-update-42-enarhe",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231119073059",
+"200"
+],
+[
+"20231121184112",
+"403"
+],
+[
+"20231121215231",
+"403"
+],
+[
+"20231122234927",
+"-"
+]
+]
+},
+{
+"url": "https://news.un.org/en/story/2024/03/1147961",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240326001908",
+"200"
+],
+[
+"20240331195453",
+"200"
+],
+[
+"20240409133450",
+"200"
+],
+[
+"20240412194050",
+"200"
+]
+]
+},
+{
+"url": "https://www.bbc.com/news/world-middle-east-67566488",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231129150441",
+"200"
+],
+[
+"20231129155757",
+"200"
+],
+[
+"20231129165306",
+"200"
+],
+[
+"20231129171008",
+"200"
+]
+]
+},
+{
+"url": "https://www.aljazeera.com/gallery/2023/11/2/gaza-bakeries-destroyed-by-israeli-strikes",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231102173512",
+"200"
+],
+[
+"20231102193133",
+"200"
+],
+[
+"20231103080903",
+"200"
+],
+[
+"20231103094523",
+"200"
+]
+]
+},
+{
+"url": "https://www.washingtonpost.com/world/2023/11/17/israel-hamas-war-gaza-news-palestine/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231117070605",
+"200"
+],
+[
+"20231117080721",
+"200"
+],
+[
+"20231117083629",
+"403"
+],
+[
+"20231117124414",
+"403"
+]
+]
+},
+{
+"url": "https://www.tiktok.com/@palestine_2003/video/7291297337253612833?q=%D9%85%D8%AE%D8%A8%D8%B2%20%D8%BA%D8%B2%D8%A9&t=1718204590413",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_ever",
+"captures": [
+[
+"20260226003701",
+"200"
+]
+]
+},
+{
+"url": "https://www.tiktok.com/@royanews/video/7295315193280728338?is_from_webapp=1&web_id=7379630444670912032",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241002154636",
+"200"
+],
+[
+"20241107164624",
+"200"
+]
+]
+},
+{
+"url": "https://thepublicsource.org/al-maghazi-bakery-bombing-gaza",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240402041819",
+"200"
+],
+[
+"20240414152551",
+"200"
+],
+[
+"20240516161606",
+"200"
+],
+[
+"20240619153301",
+"200"
+]
+]
+},
+{
+"url": "https://www.theguardian.com/global-development/2023/oct/28/airstrikes-on-gaza-bakeries-add-to-catastrophic-food-shortages",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://t.me/muthanapress84/155057",
+"source": "angle-bracket",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231108034557",
+"200"
+],
+[
+"20240619171447",
+"200"
+],
+[
+"20241101042322",
+"200"
+],
+[
+"20241101051506",
+"200"
+]
+]
+},
+{
+"url": "https://www.facebook.com/mediagovps/",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231119002306",
+"-"
+],
+[
+"20231119235137",
+"302"
+],
+[
+"20231123014446",
+"-"
+],
+[
+"20231123014451",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/RamAbdu/status/1717203105102672211",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031201039",
+"200"
+],
+[
+"20241101065103",
+"200"
+]
+]
+},
+{
+"url": "https://www.aljazeera.com/gallery/2023/10/20/israel-bombed-a-family-home-in-gaza-generations-of-saqallahs-were-inside",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231020073142",
+"200"
+],
+[
+"20231020074029",
+"200"
+],
+[
+"20231020093933",
+"200"
+],
+[
+"20231020111810",
+"200"
+]
+]
+},
+{
+"url": "https://docs.wfp.org/api/documents/WFP-0000154766/download/?_ga=2.243117636.730956012.1725962456-851346402.1725475782",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031221726",
+"200"
+],
+[
+"20241106003920",
+"301"
+]
+]
+},
+{
+"url": "https://www.unrwa.org/resources/reports/unrwa-situation-report-5-situation-gaza-strip",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231012083333",
+"200"
+],
+[
+"20231012093938",
+"200"
+],
+[
+"20231012101013",
+"200"
+],
+[
+"20231012102024",
+"200"
+]
+]
+},
+{
+"url": "https://www.tiktok.com/@hamada.gaza/video/7298651789497208097?q=%20percentD9%20percent85%20percentD8%20percentAE%20percentD8%20percentA8%20percentD8%20percentB2%20percent20%20percen%-tD8%20percentBA%20percentD8%20percentB2%20percentD8%20percentA9&t=1718204590413",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031230400",
+"200"
+],
+[
+"20241101071643",
+"200"
+]
+]
+},
+{
+"url": "https://www.timesofisrael.com/liveblog_entry/israel-says-there-are-150-shelters-in-gaza-that-it-wont-target-in-addition-to-al-mawasi-safe-zone/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231208123448",
+"200"
+],
+[
+"20231208123609",
+"200"
+],
+[
+"20231209071429",
+"200"
+],
+[
+"20231212133906",
+"200"
+]
+]
+},
+{
+"url": "https://airwars.org/civilian-casualties/ispt0194-october-14-2023/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240416103738",
+"200"
+],
+[
+"20240424154909",
+"301"
+],
+[
+"20240424162037",
+"200"
+],
+[
+"20241217035437",
+"200"
+]
+]
+},
+{
+"url": "https://www.newarab.com/news/dozens-killed-israel-strikes-un-school-northern-gaza",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231118184300",
+"200"
+],
+[
+"20231118184303",
+"200"
+],
+[
+"20231119092856",
+"200"
+],
+[
+"20231121092104",
+"200"
+]
+]
+},
+{
+"url": "https://www.instagram.com/anasjamal44/reel/CzOHKcXN-m4/",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101011318",
+"200"
+],
+[
+"20241101015058",
+"200"
+]
+]
+},
+{
+"url": "https://www.palestinechronicle.com/jabaliyas-al-fakhoura-massacre-in-eight-photos/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231113164103",
+"200"
+],
+[
+"20240203120531",
+"403"
+],
+[
+"20240327150722",
+"200"
+],
+[
+"20240418000629",
+"200"
+]
+]
+},
+{
+"url": "https://www.facebook.com/AJA.HKJordan/videos/378126337932623/",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031213925",
+"200"
+],
+[
+"20241031224115",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/PalestineRCS/status/1754239103996969299",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240515195231",
+"302"
+],
+[
+"20240515213509",
+"302"
+],
+[
+"20240412151347",
+"200"
+],
+[
+"20240515195231",
+"200"
+]
+]
+},
+{
+"url": "https://www.voanews.com/a/un-if-no-cease-fire-widespread-famine-in-gaza-is-near-certain/7505522.html",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240228013610",
+"200"
+],
+[
+"20240228020707",
+"200"
+],
+[
+"20240228020708",
+"200"
+],
+[
+"20240228020708",
+"200"
+]
+]
+},
+{
+"url": "https://www.wfp.org/news/un-food-agency-pauses-deliveries-north-gaza",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240220175606",
+"200"
+],
+[
+"20240220191226",
+"200"
+],
+[
+"20240220205818",
+"200"
+],
+[
+"20240221024320",
+"200"
+]
+]
+},
+{
+"url": "https://www.ft.com/content/8aa813fc-a87e-4002-9aaf-890c111aec35",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240228094735",
+"301"
+],
+[
+"20240228095630",
+"200"
+],
+[
+"20240228100308",
+"200"
+],
+[
+"20240228111825",
+"200"
+]
+]
+},
+{
+"url": "https://www.theguardian.com/world/2024/feb/24/unrwa-suspends-aid-to-northern-gaza-amid-collapse-of-civil-order",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://x.com/cogatonline/status/1758187447681155365",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240919155039",
+"200"
+],
+[
+"20240301154228",
+"200"
+],
+[
+"20240305170521",
+"200"
+],
+[
+"20240311140825",
+"200"
+]
+]
+},
+{
+"url": "https://www.axios.com/2024/02/24/gaza-humanitarian-aid-israel-hamas-police-biden",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240224140732",
+"200"
+],
+[
+"20240224163911",
+"200"
+],
+[
+"20240224172127",
+"200"
+],
+[
+"20240224205303",
+"200"
+]
+]
+},
+{
+"url": "https://www.reuters.com/world/middle-east/israeli-forces-kill-two-palestinians-west-bank-raid-after-deadly-night-2024-03-13/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240313154400",
+"401"
+],
+[
+"20240314092357",
+"401"
+],
+[
+"20240331010845",
+"401"
+],
+[
+"20240331192204",
+"401"
+]
+]
+},
+{
+"url": "https://www.unrwa.org/newsroom/official-statements/least-one-unrwa-staff-killed-when-israeli-forces-hit-unrwa-centre-used",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240313154802",
+"403"
+],
+[
+"20240313163537",
+"403"
+],
+[
+"20240314000448",
+"403"
+],
+[
+"20240314084408",
+"403"
+]
+]
+},
+{
+"url": "https://www.cnn.com/middleeast/live-news/israel-hamas-war-gaza-news-04-07-24/index.html",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240407050034",
+"302"
+],
+[
+"20240407064512",
+"200"
+],
+[
+"20240407065246",
+"200"
+],
+[
+"20240407143521",
+"200"
+]
+]
+},
+{
+"url": "https://www.theguardian.com/world/2023/nov/26/palestinians-describe-fleeing-northern-gaza",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://mondoweiss.net/2023/11/they-shot-her-son-in-her-arms-and-forced-her-to-throw-his-body-testimonies-from-the-death-march-on-salah-al-din-street/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231201182259",
+"200"
+],
+[
+"20231202035417",
+"200"
+],
+[
+"20231202042307",
+"200"
+],
+[
+"20231202132821",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/JakeGodin/status/1780590556663468044",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101041228",
+"200"
+],
+[
+"20241103031319",
+"200"
+]
+]
+},
+{
+"url": "https://ig.ft.com/gaza-aid/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240409043749",
+"302"
+],
+[
+"20240409080738",
+"302"
+],
+[
+"20240409080830",
+"302"
+],
+[
+"20240409143930",
+"200"
+]
+]
+},
+{
+"url": "https://www.bisan.org/2024/04/flour-ambushes-in-gaza-chaos-and-starvation-are-weapons-used-by-the-occupation-against-civilians-in-the-gaza-strip/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240415235950",
+"200"
+],
+[
+"20240419014040",
+"200"
+],
+[
+"20240518102621",
+"200"
+],
+[
+"20240722211845",
+"200"
+]
+]
+},
+{
+"url": "https://www.timesofisrael.com/israeli-official-confirms-plan-for-locals-to-run-humanitarian-pockets-in-gaza/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240222220628",
+"200"
+],
+[
+"20240223034237",
+"200"
+],
+[
+"20240223154926",
+"200"
+],
+[
+"20240223155410",
+"301"
+]
+]
+},
+{
+"url": "https://www.nytimes.com/2024/03/02/world/middleeast/gaza-aid-convoy-israel-palestinians.html",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240302232056",
+"200"
+],
+[
+"20240303021256",
+"200"
+],
+[
+"20240303022354",
+"200"
+],
+[
+"20240303022431",
+"200"
+]
+]
+},
+{
+"url": "https://www.aljazeera.com/news/2024/1/5/what-is-israels-latest-day-after-plan-for-gaza",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240105131753",
+"301"
+],
+[
+"20240105131857",
+"200"
+],
+[
+"20240105132030",
+"200"
+],
+[
+"20240105163645",
+"200"
+]
+]
+},
+{
+"url": "https://www.nytimes.com/live/2024/06/02/world/israel-gaza-war-hamas-rafah",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240602091535",
+"200"
+],
+[
+"20240602093511",
+"200"
+],
+[
+"20240602115301",
+"200"
+],
+[
+"20240602134816",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/IDF/status/1767667602178925012",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031203306",
+"200"
+],
+[
+"20241101193843",
+"200"
+],
+[
+"20240321092038",
+"200"
+],
+[
+"20240330001037",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/cogatonline/status/1765671480724000911",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240705195750",
+"200"
+],
+[
+"20241101011911",
+"200"
+],
+[
+"20241101025215",
+"200"
+],
+[
+"20240308183358",
+"200"
+]
+]
+},
+{
+"url": "https://www.bbc.com/news/world-middle-east-68659025",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240325182535",
+"200"
+],
+[
+"20240325184955",
+"200"
+],
+[
+"20240325191407",
+"200"
+],
+[
+"20240325205123",
+"200"
+]
+]
+},
+{
+"url": "https://www.reuters.com/world/middle-east/israeli-hostage-rescue-operations-came-near-us-pier-were-separate-pentagon-2024-06-10/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240612173721",
+"401"
+],
+[
+"20240614135059",
+"401"
+],
+[
+"20240618234008",
+"401"
+],
+[
+"20240812024511",
+"401"
+]
+]
+},
+{
+"url": "https://t.me/AJPalestine/40484",
+"source": "angle-bracket",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240320064242",
+"200"
+],
+[
+"20241031214400",
+"200"
+],
+[
+"20241101021355",
+"200"
+],
+[
+"20241103045926",
+"200"
+]
+]
+},
+{
+"url": "https://mondoweiss.net/2024/03/the-real-reason-israel-stormed-al-shifa-hospital-yet-again/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240319022119",
+"200"
+],
+[
+"20240319033544",
+"200"
+],
+[
+"20240319050757",
+"200"
+],
+[
+"20240319182126",
+"200"
+]
+]
+},
+{
+"url": "https://www.timesofisrael.com/liveblog_entry/hamass-internal-security-chief-killed-in-northern-gaza-airstrike-idf-shin-bet/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240412065850",
+"200"
+],
+[
+"20240415081135",
+"200"
+],
+[
+"20240416132930",
+"200"
+],
+[
+"20240503054432",
+"200"
+]
+]
+},
+{
+"url": "https://www.crisisgroup.org/sites/default/files/71-inside-gaza-the-challenge-of-clans-and-families.pdf",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240526121944",
+"200"
+],
+[
+"20240709171658",
+"-"
+]
+]
+},
+{
+"url": "https://www.npr.org/2024/03/20/1239396713/gaza-famine-hunger-food-aid-israel-hamas-war",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240320091811",
+"200"
+],
+[
+"20240320100907",
+"301"
+],
+[
+"20240320100908",
+"200"
+],
+[
+"20240320120944",
+"200"
+]
+]
+},
+{
+"url": "https://www.middleeasteye.net/live-blog/live-blog-update/palestinian-tribes-reject-israeli-plans-devolve-gaza-administration",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240129044558",
+"200"
+],
+[
+"20240510152613",
+"200"
+],
+[
+"20240512160718",
+"200"
+],
+[
+"20240518043822",
+"200"
+]
+]
+},
+{
+"url": "https://www.palestinechronicle.com/not-an-alternative-coalition-rejects-israels-attempts-at-tribal-rule-in-gaza/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240311111454",
+"200"
+],
+[
+"20240311130843",
+"200"
+],
+[
+"20240312162532",
+"200"
+],
+[
+"20240313002747",
+"200"
+]
+]
+},
+{
+"url": "https://www.middleeasteye.net/live-blog/live-blog-update/emergency-committee-chief-killed-latest-attack-aid-seekers",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240403183439",
+"200"
+],
+[
+"20240708151048",
+"200"
+],
+[
+"20240809122318",
+"200"
+],
+[
+"20241031230040",
+"-"
+]
+]
+},
+{
+"url": "https://www.theguardian.com/world/article/2024/may/15/israel-egypt-diplomatic-row-rafah-border-crossing-gaza",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://il.usembassy.gov/secu-rity-alert-11-rafah-border-crossing/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031220009",
+"301"
+],
+[
+"20241101044241",
+"404"
+]
+]
+},
+{
+"url": "https://x.com/cogatonline/status/1777759857967268276",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031225718",
+"200"
+],
+[
+"20241101001520",
+"200"
+],
+[
+"20240410022232",
+"200"
+],
+[
+"20240410085318",
+"200"
+]
+]
+},
+{
+"url": "https://apnews.com/article/israel-palestiniansgaza-hamas-war-05-07-2024-113bf4ee5dad87dc5c003d76ed2785bf",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "no_captures"
+},
+{
+"url": "https://arab.news/ru7h2",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240531173326",
+"302"
+],
+[
+"20240531194211",
+"302"
+],
+[
+"20240531235130",
+"302"
+],
+[
+"20240601042917",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/cogatonline/status/1767256594629136742",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031234543",
+"200"
+],
+[
+"20241101065804",
+"200"
+]
+]
+},
+{
+"url": "https://fa.abna24.com/story/1443873",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031220215",
+"301"
+],
+[
+"20241101184050",
+"200"
+]
+]
+},
+{
+"url": "https://T.Co/xfnQX1JdHT",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240412204505",
+"200"
+],
+[
+"20240422134249",
+"301"
+],
+[
+"20240615051616",
+"-"
+],
+[
+"20240719224510",
+"-"
+]
+]
+},
+{
+"url": "https://www.washingtonpost.com/world/2024/05/26/west-bank-aid-trucks-gaza-settlers/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240526180832",
+"403"
+],
+[
+"20240526192247",
+"403"
+],
+[
+"20240526212104",
+"403"
+],
+[
+"20240526223756",
+"403"
+]
+]
+},
+{
+"url": "https://x.com/9_tzav",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031221443",
+"200"
+],
+[
+"20241101022824",
+"200"
+],
+[
+"20240128105950",
+"200"
+],
+[
+"20240129164730",
+"200"
+]
+]
+},
+{
+"url": "https://www.theguardian.com/world/article/2024/may/21/israeli-soldiers-and-police-tipping-off-groups-that-attack-gaza-aid-trucks",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://www.timesofisrael.com/ultranationalist-youths-persist-with-coordinated-campaign-to-block-gaza-aid-trucks/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240520132319",
+"200"
+],
+[
+"20240521013904",
+"200"
+],
+[
+"20240522135238",
+"200"
+],
+[
+"20240525235958",
+"200"
+]
+]
+},
+{
+"url": "https://www.israelnationalnews.com/news/384492",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240131201912",
+"200"
+],
+[
+"20240131203643",
+"200"
+],
+[
+"20240131210759",
+"200"
+],
+[
+"20240201000119",
+"200"
+]
+]
+},
+{
+"url": "https://www.timesofisrael.com/liveblog_entry/ben-gvir-the-cabinet-should-be-stopping-gaza-aid-trucks-not-protesters/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240519134047",
+"200"
+],
+[
+"20240519140619",
+"200"
+],
+[
+"20240521105546",
+"200"
+],
+[
+"20240619171636",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/MiddleEastEye/status/1753526451209408873",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101013546",
+"200"
+],
+[
+"20241101040643",
+"200"
+]
+]
+},
+{
+"url": "https://www.aljazeera.com/news/liveblog/2024/2/19/israels-war-on-gaza-live-food-trucks-surrounded-as-hunger-spreads-in-gaza",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240219002238",
+"200"
+],
+[
+"20240219004806",
+"200"
+],
+[
+"20240219010210",
+"200"
+],
+[
+"20240219020534",
+"200"
+]
+]
+},
+{
+"url": "https://www.arabnews.com/node/2462751/middle-east",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240219150611",
+"200"
+],
+[
+"20240302113314",
+"200"
+],
+[
+"20240413225338",
+"200"
+],
+[
+"20241031220958",
+"301"
+]
+]
+},
+{
+"url": "https://x.com/hzomlot/status/1785806034818285745",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101015819",
+"200"
+],
+[
+"20241102003146",
+"200"
+]
+]
+},
+{
+"url": "https://www.reuters.com/world/middle-east/jordan-says-israeli-settlers-attacked-jordanian-aid-convoys-way-gaza-2024-05-01/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240501135549",
+"401"
+],
+[
+"20240501225358",
+"401"
+],
+[
+"20240503111155",
+"401"
+],
+[
+"20240506052924",
+"401"
+]
+]
+},
+{
+"url": "https://www.timesofisrael.com/six-israelis-arrested-for-attacking-damaging-aid-convoy-heading-to-gaza/amp/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240507082454",
+"200"
+],
+[
+"20240511070626",
+"200"
+],
+[
+"20240514070227",
+"200"
+],
+[
+"20240615160731",
+"200"
+]
+]
+},
+{
+"url": "https://www.theguardian.com/world/article/2024/may/16/palestinian-lorry-drivers-israeli-settlers-attack-gaza-aid-convoy",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://www.i24news.tv/en/news/israel-at-war/artc-israelis-attack-truck-driver-suspected-of-driving-aid-into-gaza",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240517050912",
+"200"
+],
+[
+"20240517090712",
+"200"
+],
+[
+"20240517090841",
+"200"
+],
+[
+"20240517105303",
+"200"
+]
+]
+},
+{
+"url": "https://reliefweb.int/report/occupied-palestinian-territory/hostilities-gaza-strip-and-israel-flash-update-40-enarhe",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231116160847",
+"200"
+],
+[
+"20231128052749",
+"403"
+],
+[
+"20231218063738",
+"403"
+],
+[
+"20231218092359",
+"403"
+]
+]
+},
+{
+"url": "https://www.aljazeera.com/news/2023/12/15/israel-to-reopen-karen-abu-salem-to-allow-humanitarian-aid-into-gaza",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231215193536",
+"200"
+],
+[
+"20231215193606",
+"200"
+],
+[
+"20231215225237",
+"200"
+],
+[
+"20231216090611",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/cogatonline",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231030221943",
+"302"
+],
+[
+"20240616145446",
+"200"
+],
+[
+"20240622123033",
+"200"
+],
+[
+"20240625103225",
+"200"
+]
+]
+},
+{
+"url": "https://www.timesofisrael.com/idf-un-and-aid-groups-failing-to-utilize-israeli-aid-provision-measures-in-gaza/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240722010934",
+"200"
+],
+[
+"20240722020421",
+"200"
+],
+[
+"20240722195004",
+"200"
+],
+[
+"20240723011919",
+"200"
+]
+]
+},
+{
+"url": "https://www.reuters.com/world/middle-east/israel-says-more-aid-is-entering-gaza-figures-disputed-2024-04-09/",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240409205448",
+"401"
+],
+[
+"20240410085318",
+"401"
+],
+[
+"20240410092343",
+"401"
+],
+[
+"20240410150847",
+"301"
+]
+]
+},
+{
+"url": "https://law4palestine.org/wp-content/uploads/2024/02/Database-of-Israeli-Incitement-to-Genocide-including-after-ICJ-order-27th-February-2024-.pdf",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240314073325",
+"200"
+],
+[
+"20240617080124",
+"200"
+],
+[
+"20240706220411",
+"200"
+],
+[
+"20240819022232",
+"-"
+]
+]
+},
+{
+"url": "https://www.gov.il/en/pages/security-cabinet-convenes-and-makes-series-of-operational-decisions-8-oct-2023",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240522132624",
+"200"
+]
+]
+},
+{
+"url": "https://www.youtube.com/shorts/5a0EWv-o7mE",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231229174341",
+"200"
+],
+[
+"20240101172319",
+"200"
+],
+[
+"20240104145853",
+"301"
+],
+[
+"20240108020056",
+"200"
+]
+]
+},
+{
+"url": "https://www.theguardian.com/us-news/2023/oct/12/first-thing-no-power-water-fuel-gaza-until-hostages-freed-israel-says",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "cdx_gated_403"
+},
+{
+"url": "https://x.com/Israel_katz/status/1712876230762967222",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240828225612",
+"200"
+],
+[
+"20240905163403",
+"200"
+],
+[
+"20240909134534",
+"200"
+],
+[
+"20240910152509",
+"200"
+]
+]
+},
+{
+"url": "https://www.gov.il/en/pages/pm-netanyahu-statement-18-oct-2023",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240422225000",
+"200"
+],
+[
+"20240510113336",
+"200"
+],
+[
+"20240514110936",
+"200"
+],
+[
+"20240709053851",
+"200"
+]
+]
+},
+{
+"url": "https://www.gov.il/en/pages/17102023",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240529163852",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/YehudaShaul/status/1714301964886917631",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240601075530",
+"302"
+],
+[
+"20241008084609",
+"200"
+],
+[
+"20241011140220",
+"200"
+],
+[
+"20241128091815",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1799750494937555326",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031202100",
+"200"
+],
+[
+"20241101005625",
+"200"
+],
+[
+"20240609102850",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1792891418370781395",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241002024310",
+"200"
+],
+[
+"20241002063032",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/YehudaShaul/status/1714301995002020296",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241008093018",
+"200"
+],
+[
+"20241201185643",
+"200"
+],
+[
+"20240105031311",
+"200"
+],
+[
+"20240105122734",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/YehudaShaul/status/1714301999703814288",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101022829",
+"200"
+],
+[
+"20241101032925",
+"200"
+],
+[
+"20240105031755",
+"200"
+],
+[
+"20240105032406",
+"200"
+]
+]
+},
+{
+"url": "https://www.youtube.com/watch?v=fqEj3DzadiM",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231215113547",
+"200"
+],
+[
+"20231216153411",
+"200"
+],
+[
+"20231218063819",
+"301"
+],
+[
+"20231218092948",
+"301"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1788897079642689855",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241002023211",
+"200"
+],
+[
+"20241002060838",
+"200"
+],
+[
+"20241205130244",
+"200"
+],
+[
+"20241205131753",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1799904553757811162",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101084816",
+"200"
+],
+[
+"20241101145339",
+"200"
+],
+[
+"20240609204100",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1794113236708573451",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240601051613",
+"200"
+],
+[
+"20240811170528",
+"200"
+],
+[
+"20241002025910",
+"200"
+],
+[
+"20241002064812",
+"200"
+]
+]
+},
+{
+"url": "https://www.facebook.com/aviad.yisraeli/posts/pfbid025CTvvSiy3VEhEnM9iTY3w9h3ps2JDukg3WSV8bJeH6DY75WXeewxxAtKZ7ZUWf7jl",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241002022244",
+"200"
+],
+[
+"20241002043702",
+"200"
+]
+]
+},
+{
+"url": "https://www.sefaria.org/Exodus.7.14?lang=bi&vside=Tanakh:_The_Holy_Scriptures,_published_by_JPS%7Cen&with=Translation%20Open&lang2=en",
+"source": "angle-bracket",
+"stratum": "news-org-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241002021723",
+"200"
+],
+[
+"20241002031941",
+"200"
+],
+[
+"20241002182553",
+"308"
+],
+[
+"20241003082526",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1776218707494089139",
+"source": "angle-bracket",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031221109",
+"200"
+],
+[
+"20241101112825",
+"200"
+],
+[
+"20240513141224",
+"200"
+],
+[
+"20240520092534",
+"200"
+]
+]
+},
+{
+"url": "https://www.instagram.com/reel/C5afub9vR08/",
+"source": "angle-bracket",
+"stratum": "social-other",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241003143712",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1770910935714033927",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240718111331",
+"200"
+],
+[
+"20241002022124",
+"200"
+],
+[
+"20241002084543",
+"200"
+],
+[
+"20241002022124",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/ahmadibraa47/status/1810226669195575770",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101012633",
+"200"
+],
+[
+"20241101081820",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/Almeqdad/status/1810181045616091551",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031201400",
+"200"
+],
+[
+"20241031211631",
+"200"
+],
+[
+"20240708051607",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/lky_la/status/1810372251516387393",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031214617",
+"200"
+],
+[
+"20241101043045",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/AnasAlSharif0/status/1810201985477496842",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101045205",
+"200"
+],
+[
+"20241102211953",
+"200"
+],
+[
+"20240708063919",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/HossamShabat/status/1810240808769011778",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031230420",
+"200"
+],
+[
+"20241031232528",
+"200"
+],
+[
+"20240708091336",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/AuroraIntel/status/1711712692107460960",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031214159",
+"200"
+],
+[
+"20241031232448",
+"200"
+],
+[
+"20241031214159",
+"302"
+],
+[
+"20241031232448",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1710785810507669812",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101114736",
+"200"
+],
+[
+"20231223235334",
+"200"
+],
+[
+"20241101114736",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/AvichayAdraee/status/1787344298943365560",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240506124541",
+"302"
+],
+[
+"20240506163125",
+"302"
+],
+[
+"20240508211403",
+"-"
+],
+[
+"20240510004211",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/AvichayAdraee/status/1787347764298334703",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240527194321",
+"200"
+],
+[
+"20240527202622",
+"302"
+],
+[
+"20240528182250",
+"-"
+],
+[
+"20240729025657",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/AvichayAdraee/status/1789171670105636971",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240511075156",
+"302"
+],
+[
+"20240511172120",
+"-"
+],
+[
+"20240512024547",
+"302"
+],
+[
+"20240514143458",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/AvichayAdraee/status/1790391505045033042",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240515092804",
+"302"
+],
+[
+"20240515110930",
+"302"
+],
+[
+"20240519143852",
+"-"
+],
+[
+"20240525061522",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/AvichayAdraee/status/1790711897941049590",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240524011458",
+"200"
+],
+[
+"20240525061359",
+"200"
+],
+[
+"20241008023308",
+"200"
+],
+[
+"20240515115240",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/AvichayAdraee/status/1824477104668295461",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240816163005",
+"200"
+],
+[
+"20240816183955",
+"200"
+],
+[
+"20241114051129",
+"200"
+],
+[
+"20240816160333",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/AvichayAdraee/status/1733036333352767914",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240628053928",
+"200"
+],
+[
+"20241114051315",
+"200"
+],
+[
+"20241114051500",
+"200"
+],
+[
+"20241114051655",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/AvichayAdraee/status/1730849877263786259",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231211215834",
+"302"
+],
+[
+"20240423170149",
+"302"
+],
+[
+"20240423172555",
+"-"
+],
+[
+"20240430022201",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/AvichayAdraee/status/1822492670981259665",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240811073828",
+"200"
+],
+[
+"20240811173531",
+"200"
+],
+[
+"20240811201554",
+"200"
+],
+[
+"20240812013326",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/AvichayAdraee/status/1824341497811980409",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240816090524",
+"200"
+],
+[
+"20240816115258",
+"200"
+],
+[
+"20240816135555",
+"200"
+],
+[
+"20240816162325",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/AvichayAdraee/status/1829447461598822613",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240830121238",
+"200"
+],
+[
+"20240830171028",
+"200"
+],
+[
+"20240831100800",
+"-"
+],
+[
+"20240831140542",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/manniefabian/status/1795451839158087911",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031205625",
+"200"
+],
+[
+"20241101004725",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/i/status/1795434058736165353",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101165627",
+"200"
+],
+[
+"20241107154423",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/Mogaza/status/1804483752191779000",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101022632",
+"200"
+],
+[
+"20241101091929",
+"200"
+],
+[
+"20240622115706",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/ilmughrabi/status/1808118232089334227",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031233547",
+"200"
+],
+[
+"20241031234141",
+"200"
+],
+[
+"20240702123914",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/ismail_gh2/status/1812410543174545832",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101140215",
+"200"
+],
+[
+"20240714085521",
+"-"
+],
+[
+"20240720201303",
+"200"
+],
+[
+"20240722114231",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/AbujomaaGaza/status/1833391430561128644",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240910131654",
+"200"
+],
+[
+"20241101021329",
+"200"
+],
+[
+"20241115153554",
+"200"
+],
+[
+"20241116123918",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/RASHID7_ALSAIDI/status/1720433848389980669",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101031927",
+"200"
+],
+[
+"20241101094936",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/SuAlassa/status/1728002424743284821",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031233830",
+"200"
+],
+[
+"20231218043126",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/AlQastalps/status/1807350570824446015",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031212938",
+"200"
+],
+[
+"20241031235304",
+"200"
+],
+[
+"20240630094849",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1816965332952555683",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240728221623",
+"200"
+],
+[
+"20240728222226",
+"200"
+],
+[
+"20240728222326",
+"200"
+],
+[
+"20240729044854",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/MSF/status/1712886892885061811",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231024000242",
+"302"
+],
+[
+"20241031214147",
+"200"
+],
+[
+"20241124054629",
+"200"
+],
+[
+"20241217081656",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/PalestineRCS/status/1807110631826329820",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240629195733",
+"200"
+],
+[
+"20240803105847",
+"200"
+],
+[
+"20241107083336",
+"200"
+],
+[
+"20240629175523",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/QudsNen/status/1754492016048619780",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031203324",
+"200"
+],
+[
+"20241101023415",
+"200"
+],
+[
+"20240405073228",
+"200"
+],
+[
+"20240405073336",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/PalestineRCS/status/1750048432113242567",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031221505",
+"200"
+],
+[
+"20241101031119",
+"200"
+],
+[
+"20240405073341",
+"200"
+],
+[
+"20240405073344",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/PalestineRCS/status/1733762748108923378",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101003456",
+"200"
+],
+[
+"20241101035524",
+"200"
+],
+[
+"20231214055258",
+"200"
+],
+[
+"20231214094909",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/hamdahsalhut/status/1711301863046267046",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101024910",
+"200"
+],
+[
+"20241101063604",
+"200"
+],
+[
+"20231128051603",
+"200"
+],
+[
+"20241101024909",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/OsaidesserMD/status/1712996210506707359",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031222721",
+"200"
+],
+[
+"20241031234559",
+"200"
+],
+[
+"20241031222720",
+"302"
+],
+[
+"20241031234559",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/no_itsmyturn/status/1719619170071871521",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031205024",
+"200"
+],
+[
+"20241031221246",
+"200"
+],
+[
+"20241031205023",
+"302"
+],
+[
+"20241031221246",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/ahmedhijazee/status/1720592788276834622",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031223248",
+"200"
+],
+[
+"20241101003532",
+"200"
+],
+[
+"20241031223248",
+"302"
+],
+[
+"20241101003532",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/GhassanAbuSitt1/status/1722587475485286505",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101010228",
+"200"
+],
+[
+"20231110215310",
+"200"
+],
+[
+"20231118204436",
+"200"
+],
+[
+"20241101010228",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/ahmedhijazee/status/1722875805691207890",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031222724",
+"200"
+],
+[
+"20240508000719",
+"200"
+],
+[
+"20241031222723",
+"302"
+],
+[
+"20241231212736",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/QudsNen/status/1726149104386916518",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101161321",
+"200"
+],
+[
+"20241103021228",
+"200"
+],
+[
+"20231215154731",
+"200"
+],
+[
+"20241101161321",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/RamAbdu/status/1741845936874144016",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240921222747",
+"200"
+],
+[
+"20241102085750",
+"200"
+],
+[
+"20241102135730",
+"200"
+],
+[
+"20241102085749",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/AJA_Palestine/status/1769766966812959128",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031234207",
+"200"
+],
+[
+"20241101031551",
+"200"
+],
+[
+"20240502142906",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/ForensicArchi/status/1770544811159982242",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031223401",
+"200"
+],
+[
+"20241101025204",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/ajarabic/status/1772915211491852326",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101014733",
+"200"
+],
+[
+"20241106140544",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/ForensicArchi/status/1778106742737375471",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240525022014",
+"200"
+],
+[
+"20240525022133",
+"200"
+],
+[
+"20241031232914",
+"200"
+],
+[
+"20241102153858",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/i/status/1774788721000296611",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031203620",
+"200"
+],
+[
+"20241031225630",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/AlHadath/status/1730675045993705683",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240711105709",
+"200"
+],
+[
+"20241031204903",
+"200"
+],
+[
+"20241031213052",
+"200"
+],
+[
+"20231202041026",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/hassaneslayeh/status/1751613092755026039",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031204255",
+"200"
+],
+[
+"20241101015220",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/qudsn/status/1755120520817774875",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101111134",
+"200"
+],
+[
+"20241101200706",
+"200"
+],
+[
+"20241101111134",
+"302"
+],
+[
+"20241101200706",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/ShehabAgency/status/1755556528780636391",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101023350",
+"200"
+],
+[
+"20241101085809",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/i/status/1755586476719452339",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031235802",
+"200"
+],
+[
+"20241101000542",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/i/status/1756216226424987933",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101104645",
+"200"
+],
+[
+"20241101113718",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/i/status/1756807660056227938",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031202129",
+"200"
+],
+[
+"20241101033424",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/QudsNen/status/1756646737479946277",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101012019",
+"200"
+],
+[
+"20241102101737",
+"200"
+],
+[
+"20240213102438",
+"200"
+],
+[
+"20241101012018",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/HuDa_NaIm92/status/1761718092181164425",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031223229",
+"200"
+],
+[
+"20241102204058",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/manniefabian/status/1778000029078159492",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101031730",
+"200"
+],
+[
+"20241101032520",
+"200"
+],
+[
+"20240411022759",
+"200"
+],
+[
+"20241101031730",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/IsraelWarRoom/status/1783454246748229910",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031232937",
+"200"
+],
+[
+"20241101041854",
+"200"
+],
+[
+"20241031232937",
+"302"
+],
+[
+"20241101041854",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/Mhmd_Rahman90/status/1718303904184619218",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101013741",
+"200"
+],
+[
+"20241101114118",
+"200"
+],
+[
+"20241101013741",
+"302"
+],
+[
+"20241101114118",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/FahrettinAltay_/status/1726523361390670065",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031222624",
+"200"
+],
+[
+"20241101054801",
+"200"
+],
+[
+"20240503085724",
+"200"
+],
+[
+"20240903191916",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/clashreport/status/1726529174083686405",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031214123",
+"200"
+],
+[
+"20241101032827",
+"200"
+],
+[
+"20241031214123",
+"302"
+],
+[
+"20241101032827",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/AnasAlSharif0/status/1792909058296414327",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240524184734",
+"200"
+],
+[
+"20240524190156",
+"200"
+],
+[
+"20241101020816",
+"200"
+],
+[
+"20240524190156",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/cheguwera/status/1743560066068893732",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101081306",
+"200"
+],
+[
+"20241106180227",
+"200"
+],
+[
+"20241101081306",
+"302"
+],
+[
+"20241106180227",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/Timesofgaza/status/1735404298761293947",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031202845",
+"200"
+],
+[
+"20241031220838",
+"200"
+],
+[
+"20231216121433",
+"200"
+],
+[
+"20241031202845",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/Stevesosebee/status/1721642308934762532",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240702175624",
+"200"
+],
+[
+"20241101084834",
+"200"
+],
+[
+"20231107045852",
+"200"
+],
+[
+"20240903192024",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/NourNaim88/status/1722879356463157270",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031214741",
+"200"
+],
+[
+"20241101121912",
+"200"
+],
+[
+"20241031214741",
+"302"
+],
+[
+"20241101121912",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/JoeTruzman/status/1724151349279965496",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031231808",
+"200"
+],
+[
+"20231114081348",
+"200"
+],
+[
+"20231114154036",
+"200"
+],
+[
+"20241031231807",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/MayadeenEnglish/status/1722892275284340747",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240614040834",
+"200"
+],
+[
+"20240614040940",
+"200"
+],
+[
+"20241101052955",
+"200"
+],
+[
+"20231111193257",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/AJA_Palestine/status/1759477756889350232",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031235705",
+"200"
+],
+[
+"20241101132537",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/MSF/status/1764027512357519527",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240305085439",
+"302"
+],
+[
+"20240305085447",
+"302"
+],
+[
+"20240305085440",
+"200"
+],
+[
+"20240305085447",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/QudsNen/status/1811797891343700110",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031223431",
+"200"
+],
+[
+"20241101072727",
+"200"
+],
+[
+"20240712162053",
+"-"
+],
+[
+"20241031223431",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/QudsNen/status/1735933971165282666",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031221401",
+"200"
+],
+[
+"20241103005152",
+"200"
+],
+[
+"20241031221401",
+"302"
+],
+[
+"20241103005151",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/PalinfoAr/status/1804458364291760573",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031223239",
+"200"
+],
+[
+"20241101094013",
+"200"
+],
+[
+"20240622101613",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/AJEnglish/status/1724381684722737157",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101070824",
+"200"
+],
+[
+"20241101210306",
+"200"
+],
+[
+"20241101070822",
+"302"
+],
+[
+"20241101210306",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/qudsn/status/1724059449357127718",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031235242",
+"200"
+],
+[
+"20241101025147",
+"200"
+],
+[
+"20231125015021",
+"200"
+],
+[
+"20231126143811",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/AvichayAdraee/status/1712846493747495223",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231014063428",
+"302"
+],
+[
+"20231014201958",
+"-"
+],
+[
+"20240325215316",
+"302"
+],
+[
+"20240325222911",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/Sinaifhr/status/1713964959942557781",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031214048",
+"200"
+],
+[
+"20241101011019",
+"200"
+],
+[
+"20231017043446",
+"200"
+],
+[
+"20231017085827",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/tamerqdh/status/1801187580018364771",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101025053",
+"200"
+],
+[
+"20241101173726",
+"200"
+],
+[
+"20240613093918",
+"-"
+],
+[
+"20240703092921",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1830728825933824378",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031221517",
+"200"
+],
+[
+"20241101040119",
+"200"
+],
+[
+"20240902220540",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/kann_news/status/1787736946090844621",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240526101759",
+"200"
+],
+[
+"20240608233600",
+"200"
+],
+[
+"20241101052731",
+"200"
+],
+[
+"20240526101759",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/ytirawi/status/1802483120601485529",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101044247",
+"200"
+],
+[
+"20241101065340",
+"200"
+],
+[
+"20240616232719",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/Doron_Kadosh/status/1803323819861455149",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240619191051",
+"200"
+],
+[
+"20240619195014",
+"200"
+],
+[
+"20240619195226",
+"200"
+],
+[
+"20240619200804",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/zl_at47051/status/1724544847640478023",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031222116",
+"200"
+],
+[
+"20241031225707",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/PalpostN/status/1724727510615609692",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031202727",
+"200"
+],
+[
+"20241101172334",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/EjShahid/status/1711752140039807293",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031215945",
+"200"
+],
+[
+"20241101152615",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/PalinfoAr/status/1715786052399440060",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101060739",
+"200"
+],
+[
+"20241107173518",
+"200"
+],
+[
+"20231029021258",
+"429"
+]
+]
+},
+{
+"url": "https://x.com/QudsNen/status/1754884001557332158",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101004256",
+"200"
+],
+[
+"20241101080956",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/SafaPs/status/1769046277403107674",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101070528",
+"200"
+],
+[
+"20241107113005",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/IsraelHayomHeb/status/1752612514586603543",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031205403",
+"200"
+],
+[
+"20241101154110",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/AJEnglish/status/1765006853040148745",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101051329",
+"302"
+],
+[
+"20241101214720",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/AJENews/status/1765418556869464414",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101161909",
+"200"
+],
+[
+"20241101161909",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/EyeonPalestine/status/1770174685407248533",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101035916",
+"200"
+],
+[
+"20241101035916",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/AnasAlSharif0/status/1799392206324904346",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240608222524",
+"200"
+],
+[
+"20240709202313",
+"200"
+],
+[
+"20240924070855",
+"200"
+],
+[
+"20241115233239",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/Israel_katz/status/1711332854070640935",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231010000846",
+"302"
+],
+[
+"20231218063807",
+"-"
+],
+[
+"20231218092357",
+"-"
+],
+[
+"20231218123905",
+"-"
+]
+]
+},
+{
+"url": "https://x.com/Israel_katz/status/1712356130377113904",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231012073112",
+"302"
+],
+[
+"20231012105013",
+"429"
+],
+[
+"20231012142544",
+"200"
+],
+[
+"20231013143858",
+"301"
+]
+]
+},
+{
+"url": "https://x.com/Israel_katz/status/1712717454047113692",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231020111207",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/Israel_katz/status/1713572621994828188",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231015173608",
+"302"
+],
+[
+"20231016022116",
+"302"
+],
+[
+"20231016030704",
+"302"
+],
+[
+"20231016053719",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/itamarbengvir/status/1714340519487176791",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231017184206",
+"200"
+],
+[
+"20231017195420",
+"200"
+],
+[
+"20231017211005",
+"200"
+],
+[
+"20231018054857",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/idfonline/status/1718136442805686351",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241029225818",
+"200"
+],
+[
+"20241030002420",
+"200"
+],
+[
+"20231028130231",
+"200"
+],
+[
+"20231028131642",
+"200"
+]
+]
+},
+{
+"url": "https://x.com/kann_news/status/1774118267734434074",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240404212003",
+"200"
+],
+[
+"20241002023838",
+"302"
+],
+[
+"20241002070148",
+"302"
+]
+]
+},
+{
+"url": "https://x.com/bezalelsm/status/1796124951088337026",
+"source": "bare/table",
+"stratum": "x-twitter",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240530144750",
+"200"
+],
+[
+"20240531004514",
+"200"
+],
+[
+"20240531005306",
+"200"
+],
+[
+"20240531154109",
+"302"
+]
+]
+},
+{
+"url": "https://t.me/AlarabyTelevision/24267",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231010224806",
+"200"
+],
+[
+"20241231212736",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/ShehabTelegram/400849",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231010081805",
+"200"
+],
+[
+"20241031225746",
+"200"
+],
+[
+"20241101011727",
+"200"
+],
+[
+"20241231212737",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AlarabyTelevision/35393",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231110010857",
+"200"
+],
+[
+"20241231212737",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AlarabyTelevision/48983",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231212001148",
+"200"
+],
+[
+"20241231212624",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AlarabyTelevision/53206",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231229051022",
+"200"
+],
+[
+"20241231212624",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/hamza20300/223257",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240318083624",
+"200"
+],
+[
+"20241031224950",
+"200"
+],
+[
+"20241101013830",
+"200"
+],
+[
+"20241125083145",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/hamza20300/223301",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240318083458",
+"200"
+],
+[
+"20241101115123",
+"200"
+],
+[
+"20241101134225",
+"200"
+],
+[
+"20241101222328",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/ShehabTelegram/423995",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231128084757",
+"200"
+],
+[
+"20231129000853",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AJPalestine/13212",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231212072629",
+"200"
+],
+[
+"20241101042558",
+"200"
+],
+[
+"20241123085708",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AlarabyTelevision/61509",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240123101248",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/MOHMediaGaza/5015",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240216183352",
+"200"
+],
+[
+"20241130062855",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AlarabyTelevision/37391",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231113005315",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/youseffares19/13114",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231231084543",
+"200"
+],
+[
+"20241101031637",
+"200"
+],
+[
+"20241103045307",
+"200"
+],
+[
+"20241130215352",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/MOHMediaGaza/4572",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231213070534",
+"200"
+],
+[
+"20241129152123",
+"200"
+],
+[
+"20241129153957",
+"200"
+],
+[
+"20241226164526",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/MOHMediaGaza/4600",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231218175302",
+"200"
+],
+[
+"20241226034804",
+"200"
+],
+[
+"20241226164702",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AjaNews/268675",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240529154228",
+"200"
+],
+[
+"20241101040817",
+"200"
+],
+[
+"20241101155738",
+"200"
+],
+[
+"20241113140009",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/ShehabTelegram/411649",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231031082947",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/QudsN/439339",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241004153614",
+"200"
+],
+[
+"20241031204601",
+"200"
+],
+[
+"20241101034330",
+"200"
+],
+[
+"20241101062300",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/ShehabTelegram/409919",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231030071016",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AJPalestine/11233",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231202022120",
+"200"
+],
+[
+"20241101034628",
+"200"
+],
+[
+"20241107153507",
+"200"
+],
+[
+"20241127085104",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/MOHMediaGaza/4455",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231124130904",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/ShehabTelegram/421260",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231126034112",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/ShehabTelegram/422690",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_ever",
+"captures": [
+[
+"20250904215122",
+"200"
+],
+[
+"20260611221349",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AlarabyTelevision/46635",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231206052336",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/MOHMediaGaza/4525",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231206073255",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/MOHMediaGaza/4539",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231209034312",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/MOHMediaGaza/4566",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231214190636",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AjaNews/213150",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231021073605",
+"200"
+],
+[
+"20241031231624",
+"200"
+],
+[
+"20241101014042",
+"200"
+],
+[
+"20241109234142",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AjaNews/212227",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231201212732",
+"200"
+],
+[
+"20241031203819",
+"200"
+],
+[
+"20241101001359",
+"200"
+],
+[
+"20241113202112",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/QudsN/315969",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231207015837",
+"200"
+],
+[
+"20241031220723",
+"200"
+],
+[
+"20241101220255",
+"200"
+],
+[
+"20241114043151",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AlarabyTelevision/28585",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231202213555",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AlarabyTelevision/29807",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231102001400",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/ShehabTelegram/427281",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_ever",
+"captures": [
+[
+"20250904215124",
+"200"
+],
+[
+"20260611221400",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/hamza20300/177909",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231110163721",
+"200"
+],
+[
+"20241031213239",
+"200"
+],
+[
+"20241107112948",
+"200"
+],
+[
+"20241111144531",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/amitsegal/32214",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20240126195027",
+"200"
+],
+[
+"20240228203354",
+"200"
+],
+[
+"20241101020838",
+"200"
+],
+[
+"20241101051006",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/hamza20300/182667",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231208231144",
+"200"
+],
+[
+"20241031223320",
+"200"
+],
+[
+"20241031225017",
+"200"
+],
+[
+"20241114021844",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/GazaNewsNow/253842",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231113234653",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/ShehabTelegram/406438",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231118044139",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/ShehabTelegram/406206",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "no_captures"
+},
+{
+"url": "https://t.me/ShehabTelegram/406129",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231025033900",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/ShehabTelegram/406054",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231026192158",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/ShehabTelegram/406407",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241031222737",
+"200"
+],
+[
+"20241101010853",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AlarabyTelevision/27926",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231201203055",
+"200"
+],
+[
+"20231201204434",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AlarabyTelevision/28064",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231215132822",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AjaNews/214651",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231110221655",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/ShehabTelegram/406057",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231025041155",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/ShehabTelegram/406425",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231025063239",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/bethlehemnewss/32160",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20231031124556",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AjaNews/2594224041",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "no_captures"
+},
+{
+"url": "https://t.me/ShehabTelegram/4005713101",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "no_captures"
+},
+{
+"url": "https://t.me/ShehabTelegram/4033223101",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "no_captures"
+},
+{
+"url": "https://t.me/ShehabTelegram/403322780",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "covered_in_window",
+"captures": [
+[
+"20241101001345",
+"200"
+],
+[
+"20241101125322",
+"200"
+]
+]
+},
+{
+"url": "https://t.me/AlrayChannel/2101093110",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "no_captures"
+},
+{
+"url": "https://t.me/AlarabyTelevision/5259731009",
+"source": "bare/table",
+"stratum": "telegram",
+"outcome": "no_captures"
+}
+]
