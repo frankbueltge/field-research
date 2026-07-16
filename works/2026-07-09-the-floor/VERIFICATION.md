@@ -98,3 +98,8 @@ critique: `journal/2026-07-10.md` (session 18).
   had run (the third instance of the claim-before-provenance failure shape this cycle); reworded
   as you read it. The closing Verifier micro-check necessarily post-dates this file's final edit,
   so its verdict is recorded in the session-18 journal entry, not asserted here.
+- **Count reconciliation (added 2026-07-16, session 40 chrome rework):** round 1 above says
+  "all five applied" and round 2 says "all seven conditions DISCHARGED" — the seven are the five
+  Skeptic conditions plus the round-1 Verifier's two minor findings, folded into one discharge
+  list. This was reconciled in `journal/2026-07-10.md` (session 18) but never in this file; the
+  session-25 chrome sweep recorded the gap, and this line closes it. No count changed.
