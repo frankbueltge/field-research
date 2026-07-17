@@ -17,6 +17,7 @@ Central ledger of the research collective: active works, their phase, and live t
 | Image/deepfake detector demographic bias (extends 001 to images) | proposed — image-detector API key now provisioned (dossier §4d), making a live audit feasible for the first time | instruments-on-trial | 2026-07-03 |
 | Pathologizing dissent (drapetomania, "sluggish schizophrenia", Protest Psychosis) | proposed | instruments-on-trial | 2026-07-01 |
 | Track B text half — open-weights pivot (RoBERTa baseline; Binoculars) after the team declined a commercial text-detector key | proposed — see open-questions Track B entry | instruments-on-trial | 2026-07-03 |
+| **"The Automated Reviewer's yardstick"** (working title provisional) — instrument-on-trial candidate on Frank's 2026-07-17 seed: the automated peer-reviewer of the end-to-end AI-research paper (arXiv:2606.15497 / Nature 651, 914–919, 2026) reports 0.69 balanced accuracy against ICLR accept/reject; a computed three-row yardstick sets that beside 0.88 (a trivial mean-score threshold → the same decision, our computation) and 0.66 (NeurIPS-2021 inter-committee noise floor, the paper's own human comparator) | **PROPOSED (session 42, 2026-07-17) — feasibility gate PASSED.** Verify-first propose move; two roles converged (Proposer BUILD-A-gated; Skeptic BUILD-WORTHY-WITH-CONDITIONS). Conductor's-hand falsification spike on the real public ICLR dataset (`notes/2026-07-17-automated-reviewer-spike/`, dataset sha256-pinned): a one-parameter mean-score threshold reaches **BA≈0.88** (2017–2024, n=19,685; 0.87–0.91/yr) vs the tool's 0.69 and the 0.66 noise floor. **Not built, not shipped.** Carries hard conditions for the build session: (i) DROP the "noisy oracle" framing — false novelty (arXiv:2605.03202, ICML 2026 Oral, et al.), cite as prior art up front; (ii) the load-bearing **input-asymmetry** caveat (the threshold uses human scores the from-text tool never sees → the finding is "the decision is ~88% a score-threshold; the tool is benchmarked against the noise floor," NOT "trivial beats sophisticated"); (iii) **non-strict-replication** caveat (paper's exact ICLR subset in unread Supplementary A.3.2 — frame as "the comparison as stated does not surface X"); (iv) never name the product/company; (v) ship one computed table, not an essay. First gauntlet question: is the specific 0.88/0.69/0.66 juxtaposition genuinely non-redundant vs the prior art? | instruments-on-trial (candidate) | 2026-07-17 |
 | Chrome-rework of the sweep's findings (007 "183 vs 172" Fujii count MISLEADING; 005 unreconciled saturation stats MISLEADING; 010 stale self-card sentence MISLEADING; 013 VERIFICATION.md 5-vs-7 in-file reconciliation + meta.json "six years" COSMETIC; 008 cosmetic nit; 011 enum + LATENT-label wrinkles) | **RESOLVED (session 40, 2026-07-16) — all five works fixed in place through the full re-run gauntlet** (Verifier PASS WITH FINDINGS ×2 minors applied; round-1 Skeptic REFUTED → all conditions applied — its core catch: the 005 fix itself had introduced a new trend overclaim; round-2 fresh Skeptic CORE OBJECTION ANSWERED + 1 rework-introduced defect fixed as prescribed; closing micro-check PASS on `b7f89d8`). Fujii count verified against primaries first, as prescribed: Carlisle 2012 analysed 168 RCTs (likelihood range to <1 in 10^33, not a single probability); JSA 172/212; current Retraction Watch leaderboard 172 — "183" retired as a Jan-2013 anticipated total. **Live remainder: 011's two wrinkles only** (006 `"OPEN"` enum mark; 007-card LATENT label), scoped out as regrade-adjacent — their own session, not a chrome pass | instruments-on-trial | 2026-07-16 |
 
 ## Shipped works (matured, in `works/`)
@@ -802,3 +803,28 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   outward · 011's wrinkles · off-screen 012/013 proposal · satisfiability question · CSP audit ·
   Track B pivot · Minnesota excluded-score question · cadence-rule flag · NOT until 2026-10-09:
   trial 3 / Data Jam.
+- **Session 42 (2026-07-17) — PROPOSE (OUTWARD): accept Frank's 2026-07-17 "AI Scientist reaches
+  Nature" seed → scope a candidate instrument, feasibility gate PASSED.** Cadence honored (40–41
+  inward; 42 required outward, and engaged fresh field material + computed on real external data →
+  counter resets to 0). Verify-before-propose by the conductor's hand: the paper's numbers verified
+  first-hand from the primary (arXiv:2606.15497 / Nature 651, 914–919) via two independent
+  extraction routes — automated reviewer BA **0.69 vs 0.66**, F1 **0.62 vs 0.49**, ground truth =
+  ICLR accept/reject (OpenReview, González-Márquez & Kobak 2024) while the human figure is
+  NeurIPS-2021 inter-committee consistency (a different quantity); hallucinated-citations limitation
+  confirmed verbatim. Two role sub-agents (Proposer, Skeptic; efficient tier, parallel, within cap)
+  **converged** (session-34 lesson): the "noisy oracle" *thesis* is FALSE NOVELTY (arXiv:2605.03202,
+  ICML 2026 Oral, cites the same experiment) → dropped; the additive move is a **computed baseline
+  on the real ICLR data**, **gated behind a spike run before any framing**. Conductor ran the spike
+  (`notes/2026-07-17-automated-reviewer-spike/`, dataset sha256-pinned, deterministic): a
+  one-parameter mean-score threshold reaches **BA≈0.88** vs the tool's 0.69 and the 0.66 noise floor
+  — GATE PASSED, and the spike **sharpened the framing** away from a naive "trivial beats
+  sophisticated" headline (input asymmetry: the threshold uses human scores the from-text tool never
+  sees → the real finding is "the decision is ~88% a score-threshold; the tool is judged against the
+  noise floor"). Candidate workboarded (row above) with hard build conditions + two caveats. Nothing
+  shipped; no `works/`/`drafts/` touched. Two claims.md rows added; open-questions row added.
+  Consolidation ran 41 (due ~43–44). Minutes + memory + spike by the conductor's hand. Half-Life
+  stays queued (reframe/right-of-reply steer still open). Next: build "The Automated Reviewer's
+  yardstick" (verify Supplementary A.3.2 / comparator baselines from primary PDFs first) → gauntlet ·
+  Half-Life reframe decision → build · 011's wrinkles · off-screen 012/013 proposal · satisfiability
+  question · CSP audit · Track B pivot · Minnesota excluded-score question · cadence-rule flag · NOT
+  until 2026-10-09: trial 3 / Data Jam.
