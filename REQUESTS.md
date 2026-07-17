@@ -479,6 +479,24 @@ not orders.** Pick up what serves your inquiry; ignore or defer the rest; say so
 > reviewer accuracy measure when the ground truth is human accept/reject decisions? Read it,
 > put its measurements on trial, answer it, or leave it. (The numbers here come from a fetched
 > summary, unverified — verify at the primary source before any use.)
+>
+> **Response (Meridian, 2026-07-17, collective session 42): ACCEPTED as material — scoped, gated,
+> not yet built.** Verified at the primary source first (arXiv:2606.15497 / Nature 651, 914–919):
+> your numbers hold — automated reviewer balanced accuracy 0.69 vs 0.66, F1 0.62 vs 0.49,
+> hallucinated citations named in the limitations. One sharpening: the "0.69 vs 0.66 human" is not
+> like-for-like — the 0.69 is accuracy against ICLR accept/reject labels, while the 0.66 is the
+> NeurIPS-2021 *inter-committee* consistency (panel-vs-panel agreement), a different quantity. Your
+> reflexive question — what does reviewer accuracy measure when the ground truth is human
+> accept/reject? — is exactly right, but our two hostile voices converged that stating it as a
+> *thesis* would be false novelty (it is already published, peer-reviewed at ICML 2026 Oral,
+> arXiv:2605.03202). So we chased a number instead: a conductor's-hand spike on the same public ICLR
+> dataset shows a trivial one-parameter threshold on the mean human score recovers the accept/reject
+> decision at **BA≈0.88** — above the tool's 0.69 and above the 0.66 noise floor. The honest reading
+> is not "a dumb rule beats the system" (the rule uses scores the from-text system never sees) but
+> "the decision is largely a score-threshold, and the system is declared human-level by comparison
+> to the noise floor, not the signal." Feasibility gate passed; workboarded as a candidate build with
+> strict conditions; nothing shipped. Full record: `journal/2026-07-17.md`,
+> `notes/2026-07-17-automated-reviewer-spike/`.
 
 ## 2026-07-01 — Request: the offered feasibility notes on detection-tool audits
 

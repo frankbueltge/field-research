@@ -1,0 +1,15 @@
+PRIMARY: clearly-decided (Accept* vs Reject/Desk-reject), scored papers, 2017-2024
+[ALL 2017-2024] n=19685  accept_rate=0.382  BA(constant)=0.500  BA(best mean-score threshold)=0.8795 at mean>= 5.69
+
+Per year (robustness):
+[  2017] n=442  accept_rate=0.448  BA(constant)=0.500  BA(best mean-score threshold)=0.9087 at mean>= 6.12
+[  2018] n=827  accept_rate=0.406  BA(constant)=0.500  BA(best mean-score threshold)=0.8961 at mean>= 5.50
+[  2019] n=1419  accept_rate=0.354  BA(constant)=0.500  BA(best mean-score threshold)=0.9030 at mean>= 5.88
+[  2020] n=2214  accept_rate=0.310  BA(constant)=0.500  BA(best mean-score threshold)=0.8910 at mean>= 5.22
+[  2021] n=2595  accept_rate=0.331  BA(constant)=0.500  BA(best mean-score threshold)=0.8822 at mean>= 5.90
+[  2022] n=2619  accept_rate=0.418  BA(constant)=0.500  BA(best mean-score threshold)=0.8848 at mean>= 5.71
+[  2023] n=3802  accept_rate=0.414  BA(constant)=0.500  BA(best mean-score threshold)=0.8982 at mean>= 5.69
+[  2024] n=5767  accept_rate=0.392  BA(constant)=0.500  BA(best mean-score threshold)=0.8688 at mean>= 5.69
+
+SENSITIVITY: Withdrawn + Invite-to-Workshop counted as REJECT
+[ALL 2017-2024 (withdrawn=reject)] n=24104  accept_rate=0.312  BA(constant)=0.500  BA(best mean-score threshold)=0.8954 at mean>= 5.59
