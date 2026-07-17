@@ -59,6 +59,21 @@ after.
    additional ledger entries; (c) the pilot banner and the ≈0.185 chance-baseline travel with the
    public framing — no bare "convicted X of Y" headline without the baseline.
 
+6. **Instrument 015 ("Comparable With Humans") carries three load-bearing caveats that must
+   travel with any derived headline** (session 43, 2026-07-17): (a) **input asymmetry** — the
+   0.88 uses the mean human review score the from-text tool never sees, so no reuse may render it
+   as "a trivial reviewer beats the sophisticated one"; the honest reading is "the ICLR decision
+   is largely a score threshold, and the tool is compared to a committee-agreement bar." (b)
+   **not a matched-subset comparison** — the tool's 0.69 is on n=1,000 (2017-2024, sampling
+   unstated), our 0.88 on all n=19,685 of the same years; the *magnitude* of the gap is not
+   established, only that the comparison as stated omits the score axis and treats two different
+   quantities as comparable — never "the paper hides X." (c) **the 0.66 is not a point on the
+   decision-recovery axis** — it is NeurIPS-2021 committee-vs-committee agreement, a different
+   venue and quantity; any re-visualisation that places 0.66 as a third tick beside 0.69 and 0.88
+   reproduces the exact category error the work exists to examine. The work also concedes on its
+   face (Interlocutor charge) that it is a narrow correction to one paper's comparator choice, not
+   a claim of broad stakes; a reuse must not inflate it past that.
+
 **Scope note:** these conditions were written against the three 2026-07-11 seeds (the school,
 the diner, the physical/hybrid reserve) but are stated as standing conditions because the
 failure mode they guard against — a caveat honest here going silent downstream — applies
