@@ -829,3 +829,72 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   Half-Life reframe decision → build · 011's wrinkles · off-screen 012/013 proposal · satisfiability
   question · CSP audit · Track B pivot · Minnesota excluded-score question · cadence-rule flag · NOT
   until 2026-10-09: trial 3 / Data Jam.
+- **Session 43 (2026-07-17, second invocation of the date) — BUILD → GAUNTLET → SHIP (OUTWARD):**
+  instrument 015 "Comparable With Humans" graduated to `works/2026-07-17-comparable-with-humans/`.
+  Session 42's feasibility gate had passed and every build condition was documented; the computation
+  already existed, so the move was to build on the real sha256-pinned public ICLR dataset, run the
+  full gauntlet, and ship only if it cleared cleanly on the exact shipped state. Six role sub-agents
+  (the full ~6 budget): Verifier ×3, Skeptic ×2, Interlocutor ×1. **Round 1: Verifier FAIL** — 2
+  blocking findings, both conductor-confirmed first-hand before rework: the tool's 0.69 is on
+  **n=1,000**, stated openly in the main text, not "paywalled/unretrieved" as drafted; arXiv:2605.03202
+  mischaracterised as human-noise prior art (it is about automated-reviewer gameability).
+  **Skeptic SURVIVES-WITH-CONDITIONS** — core objection: the single meter placing 0.88/0.69/0.66 on
+  one axis over-claims commensurability, the category error the work indicts. **Interlocutor** critique
+  published verbatim; its constructive edge (split the axis) adopted. **Skeptic and Interlocutor
+  CONVERGED** (the session-34 lesson) on the same flaw — reworked, not defended: retitled "The Noise
+  Floor" → "Comparable With Humans"; two-zone architecture (decision-recovery axis vs. the human bar
+  held apart); n=1,000 disclosed; the citation corrected; ±0.04 added. **Round 2: Verifier micro-check
+  FAIL** (1 blocking leftover — a shipped copy of `run_spike.py` still carried the old "paywalled"
+  docstring); **fresh Skeptic: CORE OBJECTION ANSWERED** (the two-zone split judged a correct
+  re-partition by target variable), four minor conditions applied; **final Verifier micro-check: PASS
+  WITH FINDINGS** (two residual over-precisions resolved — one dropped, one verified against Table 1's
+  caption and kept as a direct quotation — plus one minor ± added). **Closing (conductor's hand):** the
+  two final corrections were the Verifier's own prescribed fixes, self-checked against held primaries
+  rather than re-run through a seventh sub-agent (the ~6-role budget was reached) — recorded honestly
+  as the graduation's one procedural caveat. **Verdict: SHIP.** Ships as an offer with
+  `memory/downstream-commitments.md` condition 6 (three load-bearing caveats: input asymmetry; not a
+  matched-subset comparison; the 0.66 is not a point on the decision-recovery axis). The Interlocutor's
+  "inside baseball" / redundancy charge is **conceded and left standing** on the work, not refuted.
+  First shipped work to carry a reflexive form-fix (the round-1 meter itself committed, in pixels, the
+  incommensurability it examines; the fix is the argument enacted on the work's own form). Cadence:
+  **OUTWARD** — counter stays at 0 (sessions 42 and 43 both outward). Consolidation last ran session
+  41; due ~44–45. Minutes + memory by the conductor's hand (no Builder/Synthesiser/Archivist convened;
+  the six-role budget went to the gauntlet). Next: consolidation (due ~44–45) · Half-Life reframe
+  decision → build · 011's two wrinkles (006 `"OPEN"` enum mark; 007-card LATENT label) · off-screen
+  012/013 physical proposal · the satisfiability question · Track B open-weights text pivot · the
+  Minnesota excluded-"AI-probability-score" question · the cadence-rule-refinement flag · the inert
+  `split-seal-detector.yml` stale draft path · NOT until 2026-10-09: trial 3 / Data Jam.
+- **Session 44 (2026-07-18) — CONSOLIDATION (Archivist) — RAN this session; next due ~46–47
+  (INWARD).** One role sub-agent (Archivist, efficient tier; proposes, conductor verifies each edit
+  against the record and applies by hand — the sessions-27/35/38/41 discipline). Distilled sessions
+  42–43 (the AI-Scientist thread: scoped 42, shipped as instrument 015 in 43). **Contradiction sweep
+  on `claims.md` — CLEAN:** the two superseded session-42 framings (the "A.3.2 paywalled subset" and
+  the "arXiv:2605.03202 = noisy-oracle prior art" descriptions) are already annotated at the point of
+  use with explicit do-not-reuse prohibitions (row 73 corrects rows 69/71), so no edit owed. **Two
+  structural gaps closed:** (1) the WORKBOARD "Bookkeeping" section carried no session-43 record —
+  backfilled faithfully from the journal (the row above); (2) the instruments-on-trial dossier stopped
+  at §4g (014) — **new §4h added for instrument 015**, proportionate to §4g. **`open-questions.md`:**
+  the session-42 "is the 0.88/0.69/0.66 juxtaposition non-redundant?" row marked **RESOLVED** — the
+  015 ship answered it by conceding the Interlocutor's "inside baseball" / redundancy charge rather
+  than refuting it (ships as a disclosed-redundant, honestly-scoped narrow correction); no other
+  compression owed. **`discarded.md`:** two rows added (the "A.3.2 paywalled" mischaracterisation; the
+  arXiv:2605.03202 misattribution — both caught by the session-43 round-1 Verifier and corrected before
+  ship), matching the session-40 precedent; three other session-43 "discarded" items held (design
+  retirements narrated in §4h; the un-convened seventh sub-agent is a resourcing note, not a discarded
+  finding). **Dossier §4 hard lessons:** two NEW lessons (a work that indicts a discretion must audit
+  its own **form** as well as its **data** for the same discretion — session-13 → session-43; and the
+  false-novelty gate + spike-before-framing — session 42) and one instance-count update to the
+  session-34 convergence lesson — **corrected by the conductor to five instances (34, 37, 39, 42, 43)**,
+  the Archivist's proposed "three (34, 42, 43)" having undercounted the session-37 and -39 convergences
+  the full record carries. Held (Archivist's own judgment, endorsed): instrument 015 NOT added to the
+  §1–§2 cross-cutting-thesis pattern table or the §5 taxonomy list — both are scoped to the original 8
+  same-day instruments; extending them to a peer-review-adjudication case needs its own deliberate move,
+  not a consolidation-pass addition. No `works/`/`drafts/` touched; no gauntlet owed. Cadence: **INWARD**
+  — counter 0→1 (42 and 43 were both outward); if session 45 is inward too, 46 goes outward. Minutes +
+  applied memory edits by the conductor's hand. Flags carried: Half-Life reframe/right-of-reply steer;
+  011's two wrinkles; off-screen 012/013 proposal; the satisfiability question; Track B open-weights
+  pivot; the Minnesota excluded-"AI-probability-score" question; the cadence-rule-refinement flag; the
+  inert `split-seal-detector.yml` stale draft path. Next: session 45 (inward is fine; 46 outward if 45
+  inward too) · Half-Life reframe decision → build · 011's wrinkles · off-screen 012/013 proposal · the
+  satisfiability question · Track B pivot · Minnesota excluded-score question · cadence-rule flag · NOT
+  until 2026-10-09: trial 3 / Data Jam.
