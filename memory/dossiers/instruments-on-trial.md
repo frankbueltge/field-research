@@ -173,6 +173,32 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   paragraph explaining the change. Standing practice this confirms: round 2 must be a genuinely
   fresh Skeptic, not a continuation of round 1 — freshness is what catches the rework's own new
   defects.
+- **A work that indicts a discretion must audit itself for the same discretion — now confirmed
+  across two layers, DATA and FORM** (first named session 13; sharpened session 43). Session 13
+  (instrument 012, "The Two Meters"): the work indicted the GHG Protocol's window-choice discretion
+  while making an undisclosed window choice of its own (2020→2024 vs. the displayed 2019 row) —
+  fixed by disclosing the choice as the same discretion the work indicts (`memory/discarded.md`,
+  session 13 row). Sharpened session 43 (instrument 015, "Comparable With Humans"): the round-1
+  draft's single meter placed 0.88/0.69/0.66 on one axis, committing in its own pixels/visual
+  layout the exact incommensurability (category error) the work exists to indict — caught by the
+  Skeptic and Interlocutor's convergence, fixed by splitting the axis by target variable (the
+  argument enacted on the work's own form). The lesson generalises from the **data/window layer**
+  (012) to the **form/visual layer** (015): before shipping, a work that argues against a discretion
+  must be checked for whether its own construction — data choices *and* visual/structural choices —
+  commits the same failure.
+- **A thesis/framing must be checked against prior art before any build, not only the facts it
+  rests on — and a passed feasibility gate should be run as an unpublished falsification spike
+  before any narrative framing is written** (session 42). Distinct from the session-08 "verify
+  before building" lesson (which verifies *quoted facts*) and the version-pinning lesson (which
+  pins *which version* of a source is cited): this is a check on whether the *contribution itself*
+  is already published. Session 42's Proposer + Skeptic found the "noisy oracle" thesis already
+  stated in the prior art (arXiv:2605.03202 et al.) and dropped it before any build — narrowing the
+  candidate to a specific computed table — then gated the build behind a conductor's-hand spike on
+  real data run *before* any framing was written; the spike itself then sharpened the framing away
+  from a naive headline ("trivial beats sophisticated") the moment the input-asymmetry mechanism
+  surfaced. A partial precedent exists at session 18 (instrument 013's seed-driven revision ran a
+  prior-art check before building — `memory/claims.md` row 56 Notes) but was never named as a
+  standing discipline; this entry names it.
 
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
 
@@ -670,7 +696,15 @@ identical missing experiment from opposite directions. Neither alone was blockin
 objection was answerable by qualification; the Interlocutor is non-blocking by charter) — but their
 convergence made shipping-with-a-caveat the weak move and running-the-test the obligatory one. A
 "technically answerable" Skeptic objection that both critics circle is a rework signal, not a
-qualifier-and-ship signal.
+qualifier-and-ship signal. **Confirmed repeatedly since — five instances now (34, 37, 39, 42, 43):**
+session 37 (the 014 fold — both hostile voices converged that the reassuring frame oversold a live
+gap, forcing the lead-with-the-gap rewrite); session 39 (Half-Life feasibility gate — Proposer +
+Skeptic converged that the naive "decay curve / half-life" framing could not be carried, retiring
+it); session 42 (Proposer + Skeptic converged that the "noisy oracle" thesis was false novelty and
+had to be dropped before any build); session 43 (Skeptic + Interlocutor converged that instrument
+015's round-1 single meter reproduced in pixels the category error it indicts, forcing the two-zone
+rework). The pattern is not confined to the Skeptic/Interlocutor pair — it holds for any two
+independently-convened hostile roles (Proposer + Skeptic at 39 and 42).
 
 **Post-ship conformance fix (session 30, 2026-07-11).** The site's `field-integrate` gate
 rejected the landing: `work.astro` imported three files from a subdirectory
@@ -688,6 +722,85 @@ scope exactly the four intended files; bundle byte-equality against all three ca
 re-run confirmed a no-op; `work.astro` changed in the import block only; no forbidden-pattern
 regression; README diff exactly the two disclosed insertions) — sessions-04/07/14 precedent, no
 full gauntlet re-run (the session-29 verdict's substance untouched).
+
+## 4h. Instrument 015 — Comparable With Humans (SHIPPED, session 43, 2026-07-17)
+
+Scoped session 42 (PROPOSE, on Frank's 2026-07-17 "AI Scientist reaches Nature" seed) and built +
+gauntleted + shipped the same day in session 43 → `works/2026-07-17-comparable-with-humans/`.
+Failure mode: **chosen-comparator / incommensurable benchmark** — a new domain for the series
+(peer-review adjudication): the automated peer-reviewer of the end-to-end AI-research-automation
+paper (arXiv:2606.15497 / Nature 651, 914–919, 2026) is declared "comparable with humans (69% vs
+66%)", where the 69% (balanced accuracy against ICLR accept/reject) and the 66% (NeurIPS-2021
+inter-committee consistency) are different quantities against a different ground truth.
+
+**The instrument: two zones, held apart on purpose.** Zone A (decision-recovery axis) — a
+drag-threshold on the mean ICLR review score climbs to ≈0.88 balanced accuracy against all
+n=19,685 clearly-decided scored papers (2017–2024), beside the from-text tool's 0.69 (n=1,000) and
+the paper's own 0.50 baselines — three answers to the *same* question. Zone B (the human bar, held
+apart) — 0.66, the NeurIPS-2021 inter-committee consistency, a different venue and quantity,
+deliberately off the Zone-A axis so the instrument does not itself commit, in pixels, the
+incommensurability it examines.
+
+**Gauntlet record** (six role sub-agents, the full ~6 budget: Verifier ×3, Skeptic ×2,
+Interlocutor ×1). **Round 1: Verifier FAIL** — 2 blocking findings, both conductor-confirmed
+first-hand before rework: (B1) the tool's 0.69 is on **n=1,000**, stated openly in the main text —
+not "paywalled/unretrieved" as the draft claimed; (B2) arXiv:2605.03202 was **mischaracterised** as
+prior art for the *human-noise* thesis, when it is about automated-reviewer gameability/hivemind.
+**Skeptic SURVIVES-WITH-CONDITIONS** — core objection: the single meter placing 0.88/0.69/0.66 on
+one axis over-claims commensurability, the very category error the work indicts. **Interlocutor**
+critique published verbatim; its constructive edge (split the axis by target variable) adopted.
+**Skeptic and Interlocutor independently CONVERGED on the same flaw** (the session-34 lesson:
+convergence is the verdict) — the meter reproduced in pixels the category error it criticised; the
+work was reworked, not defended.
+
+**Rework:** retitled "The Noise Floor" → "Comparable With Humans" (the old title smuggled a
+signal/noise-floor ontology the Skeptic flagged); two-zone architecture adopted; n=1,000 disclosed;
+the arXiv:2605.03202 citation corrected; ±0.04 added; default slider set below the peak.
+
+**Round 2 (on the reworked state): Verifier micro-check FAIL** — one blocking leftover (a copy of
+`run_spike.py` shipped with the work still carried the old "Supplementary A.3.2 paywalled"
+docstring — the exact defect fixed everywhere else, missed in a file that ships with the work).
+**Fresh Skeptic (round 2): CORE OBJECTION ANSWERED** — the two-zone split judged a correct
+re-partition by target variable, not cosmetic separation; four minor conditions applied (render
+±0.04 as a band; frame "drag past 0.69 ≠ beat the tool" at the interaction; soften "fuses";
+disclose the in-sample threshold optimisation). **Final Verifier micro-check: PASS WITH FINDINGS**
+— two residual paper-internals over-precisions (a docstring parenthetical, dropped; a "95%
+bootstrapped" characterisation, in fact **verified verbatim in Table 1's own caption** and kept as a
+direct quotation) + one minor (±0.09 added).
+
+**The one procedural caveat.** The two final corrections were the Verifier's own prescribed fixes,
+each traceable to primary material the conductor holds and quotes (the 0.62±0.09 Table 1 value; the
+verbatim caption) — self-checked by the conductor's hand rather than re-run through a seventh
+sub-agent, because the ~6-role budget was reached. Recorded honestly on the ship as the
+graduation's one procedural gap: the last two edits did not pass a fresh independent Verifier, only
+a conductor's-hand check against held primaries.
+
+**Load-bearing caveats** (carried onto `memory/downstream-commitments.md`, condition 6, for any
+downstream reuse): (a) input asymmetry — the 0.88 uses the mean human score the from-text tool
+never sees; never reuse as "trivial beats sophisticated." (b) not a matched-subset comparison — the
+tool's 0.69 is on n=1,000 (sampling unstated), the 0.88 on all n=19,685; only the comparator choice
+is corrected, not "the paper hides X." (c) the 0.66 is not a point on the decision-recovery axis —
+any re-visualisation placing it as a third tick beside 0.69/0.88 reproduces the category error the
+work exists to examine.
+
+**The Interlocutor's charge, conceded not refuted.** Its published critique pressed hardest on
+scale and novelty: "inside baseball about one parenthetical in one paper's discussion section," the
+0.88 "near-tautological" (area chairs use score thresholds to decide; recovering the decision from
+the score that helped produce it is close to definitional), and the piece itself "a known,
+peer-reviewed critique re-skinned as an interactive 'gotcha.'" The response, on the record: the
+constructive edge was adopted in full (the two-zone split); the "so what / inside baseball" charge
+is **conceded and left standing** — the work claims only a narrow correction to one comparator
+choice, states its own redundancy against the cited prior art up front, and does not inflate its
+stakes.
+
+**Reflexive form-fix (new to the series).** The round-1 draft's single meter committed, in its own
+pixels/visual layout, the incommensurability (category error) it exists to indict; the fix —
+splitting the axis by target variable — is the work's argument enacted on its own form. See §4's
+hard-lessons entry extending the session-13 data/window-layer discretion-audit lesson to the
+form/visual layer.
+
+Full record: journal 2026-07-17 (session 42 propose; session 43 build→gauntlet→ship); WORKBOARD
+open-works and shipped-works rows (015).
 
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 
