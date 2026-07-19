@@ -1,0 +1,139 @@
+{
+ "seed": 20260719,
+ "n_requested": 25,
+ "n_pool": 163,
+ "n_sample": 25,
+ "target_capture": "20241001000000",
+ "window": [
+  "20231001000000",
+  "20250101000000"
+ ],
+ "sample": [
+  {
+   "url": "https://x.com/Almeqdad/status/1810181045616091551",
+   "capture": "20241031201400",
+   "source": "bare/table"
+  },
+  {
+   "url": "https://x.com/AnasAlSharif0/status/1792909058296414327",
+   "capture": "20241101020816",
+   "source": "bare/table"
+  },
+  {
+   "url": "https://x.com/Hind_Gaza/status/1756869279385788851",
+   "capture": "20241031204628",
+   "source": "angle-bracket"
+  },
+  {
+   "url": "https://x.com/HossamShabat/status/1810240808769011778",
+   "capture": "20241031230420",
+   "source": "bare/table"
+  },
+  {
+   "url": "https://x.com/Israel_katz/status/1712356130377113904",
+   "capture": "20231012142544",
+   "source": "bare/table"
+  },
+  {
+   "url": "https://x.com/ItayBlumental/status/1726568335008260165",
+   "capture": "20241101104803",
+   "source": "angle-bracket"
+  },
+  {
+   "url": "https://x.com/MSF/status/1712886892885061811?lang=en",
+   "capture": "20241101050844",
+   "source": "angle-bracket"
+  },
+  {
+   "url": "https://x.com/PalestineRCS/status/1757400933166641462",
+   "capture": "20240329003726",
+   "source": "angle-bracket"
+  },
+  {
+   "url": "https://x.com/PalinfoAr/status/1715786052399440060",
+   "capture": "20241101060739",
+   "source": "bare/table"
+  },
+  {
+   "url": "https://x.com/QudsNen/status/1754884001557332158",
+   "capture": "20241101004256",
+   "source": "bare/table"
+  },
+  {
+   "url": "https://x.com/QudsNen/status/1811797891343700110",
+   "capture": "20241031223431",
+   "source": "bare/table"
+  },
+  {
+   "url": "https://x.com/RamAbdu/status/1717203105102672211",
+   "capture": "20241031201039",
+   "source": "angle-bracket"
+  },
+  {
+   "url": "https://x.com/RamAbdu/status/1797953926857392305",
+   "capture": "20241031200117",
+   "source": "angle-bracket"
+  },
+  {
+   "url": "https://x.com/Timesofgaza/status/1735404298761293947",
+   "capture": "20241031202845",
+   "source": "bare/table"
+  },
+  {
+   "url": "https://x.com/YehudaShaul/status/1714301995002020296",
+   "capture": "20241008093018",
+   "source": "angle-bracket"
+  },
+  {
+   "url": "https://x.com/YehudaShaul/status/1714301999703814288",
+   "capture": "20241101022829",
+   "source": "angle-bracket"
+  },
+  {
+   "url": "https://x.com/anadoluagency/status/1728450660310409436",
+   "capture": "20241101014736",
+   "source": "angle-bracket"
+  },
+  {
+   "url": "https://x.com/cogatonline/status/1767256594629136742",
+   "capture": "20241031234543",
+   "source": "angle-bracket"
+  },
+  {
+   "url": "https://x.com/i/status/1756216226424987933",
+   "capture": "20241101104645",
+   "source": "bare/table"
+  },
+  {
+   "url": "https://x.com/idfonline/status/1711721465194680554",
+   "capture": "20241031224215",
+   "source": "angle-bracket"
+  },
+  {
+   "url": "https://x.com/kann_news/status/1787736946090844621",
+   "capture": "20241101052731",
+   "source": "bare/table"
+  },
+  {
+   "url": "https://x.com/tamerqdh/status/1765345329921065432",
+   "capture": "20241031212314",
+   "source": "angle-bracket"
+  },
+  {
+   "url": "https://x.com/ytirawi/status/1710785810507669812",
+   "capture": "20241101114736",
+   "source": "bare/table"
+  },
+  {
+   "url": "https://x.com/ytirawi/status/1776047020811141402",
+   "capture": "20241031234551",
+   "source": "angle-bracket"
+  },
+  {
+   "url": "https://x.com/ytirawi/status/1799750494937555326",
+   "capture": "20241031202100",
+   "source": "angle-bracket"
+  }
+ ],
+ "sample_sha256": "5646f063eb06538db6b021e178d927f87c256385579099b8ef42b7cd8f1016c4"
+}
