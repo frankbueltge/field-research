@@ -61,14 +61,23 @@ def description(body):
     return len(best), h
 
 def fetch(ts, url):
-    # id_ suffix returns the archived ORIGINAL response bytes (no archive chrome)
+    # id_ suffix returns the archived ORIGINAL response bytes (no archive chrome).
+    # Those bytes may be gzip-compressed (magic 1f 8b) — fetch as BYTES and decode
+    # robustly (transport fix, session 45; classification logic unchanged).
+    import gzip
     wb = f"https://web.archive.org/web/{ts}id_/{url}"
     for attempt in range(4):
         p = subprocess.run(["curl", "-sS", "-L", "--max-time", "45",
                             "-A", "Mozilla/5.0 (durability-census; structural-only)", wb],
-                           capture_output=True, text=True)
+                           capture_output=True)  # bytes, not text
         if p.returncode == 0 and p.stdout:
-            return p.stdout
+            raw = p.stdout
+            if raw[:2] == b"\x1f\x8b":
+                try:
+                    raw = gzip.decompress(raw)
+                except OSError:
+                    pass
+            return raw.decode("utf-8", errors="replace")
         time.sleep(2 * (attempt + 1))
     return ""
 
