@@ -1,0 +1,296 @@
+{
+ "n": 25,
+ "tally": {
+  "other": 23,
+  "login_shell": 2
+ },
+ "p_content_present": 0.0,
+ "wilson95": [
+  0.0,
+  0.133
+ ],
+ "content_present_hash_dupes": {},
+ "capture_clustering": {
+  "n_in_2024-10-31_to_11-01": 22,
+  "dominant_day": "20241031",
+  "dominant_day_n": 12,
+  "distinct_days": 5
+ },
+ "results": [
+  {
+   "i": 0,
+   "capture": "20241031201400",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2750
+  },
+  {
+   "i": 1,
+   "capture": "20241101020816",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2770
+  },
+  {
+   "i": 2,
+   "capture": "20241031204628",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2754
+  },
+  {
+   "i": 3,
+   "capture": "20241031230420",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2766
+  },
+  {
+   "i": 4,
+   "capture": "20231012142544",
+   "label": "login_shell",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": true,
+   "has_article": false,
+   "bytes": 28455
+  },
+  {
+   "i": 5,
+   "capture": "20241101104803",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2770
+  },
+  {
+   "i": 6,
+   "capture": "20241101050844",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2762
+  },
+  {
+   "i": 7,
+   "capture": "20240329003726",
+   "label": "login_shell",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": true,
+   "has_article": false,
+   "bytes": 190253
+  },
+  {
+   "i": 8,
+   "capture": "20241101060739",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2754
+  },
+  {
+   "i": 9,
+   "capture": "20241101004256",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2746
+  },
+  {
+   "i": 10,
+   "capture": "20241031223431",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2746
+  },
+  {
+   "i": 11,
+   "capture": "20241031201039",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2746
+  },
+  {
+   "i": 12,
+   "capture": "20241031200117",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2746
+  },
+  {
+   "i": 13,
+   "capture": "20241031202845",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2762
+  },
+  {
+   "i": 14,
+   "capture": "20241008093018",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2762
+  },
+  {
+   "i": 15,
+   "capture": "20241101022829",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2762
+  },
+  {
+   "i": 16,
+   "capture": "20241101014736",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2770
+  },
+  {
+   "i": 17,
+   "capture": "20241031234543",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2762
+  },
+  {
+   "i": 18,
+   "capture": "20241101104645",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2722
+  },
+  {
+   "i": 19,
+   "capture": "20241031224215",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2754
+  },
+  {
+   "i": 20,
+   "capture": "20241101052731",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2754
+  },
+  {
+   "i": 21,
+   "capture": "20241031212314",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2750
+  },
+  {
+   "i": 22,
+   "capture": "20241101114736",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2746
+  },
+  {
+   "i": 23,
+   "capture": "20241031234551",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2746
+  },
+  {
+   "i": 24,
+   "capture": "20241031202100",
+   "label": "other",
+   "ogd_len": 0,
+   "ogd_hash": "",
+   "has_gone": false,
+   "has_login": false,
+   "has_article": false,
+   "bytes": 2746
+  }
+ ]
+}
