@@ -65,13 +65,17 @@ def fetch(url, ts=None):
         time.sleep(2 * (attempt + 1))
     return ""
 
-def classify(body):
+def classify(body, stratum):
     low = body.lower()
     dlen, dhash = description(body)
     has_gone = any(k in low for k in GONE)
     has_login = any(k in low for k in LOGIN)
-    has_article = ('data-testid="tweet"' in low) or ('<article' in low and 'tweet' in low)
-    if has_article:                         # C3.1: content markup wins outright
+    # tweet-article markup is an X-ONLY content signal (Verifier session-46 finding #2: an
+    # un-gated has_article leaked embedded-tweet/<article> markup into news/org, contradicting
+    # the pre-registered "X-only" documentation). Gated to the X stratum here.
+    has_article = (stratum == "x-twitter") and (
+        ('data-testid="tweet"' in low) or ('<article' in low and 'tweet' in low))
+    if has_article:                         # C3.1: content markup wins outright (X only)
         label = "content_present"
     elif has_gone:
         label = "unavailable"
@@ -145,7 +149,7 @@ for stratum in sample["stratum_order"]:
     for i, s in enumerate(rows):
         body = fetch(s["url"], s["capture"])
         if body:
-            label, dlen, dhash = classify(body); nbytes = len(body)
+            label, dlen, dhash = classify(body, stratum); nbytes = len(body)
         else:
             label, dlen, dhash, nbytes = "fetch_failed", 0, "", 0
         items.append({"label": label, "dlen": dlen, "dhash": dhash, "bytes": nbytes,
@@ -160,7 +164,7 @@ for stratum in sample["stratum_order"]:
     for i, url in enumerate(sample["live_control"][stratum]):
         body = fetch(url)
         if body:
-            label, dlen, dhash = classify(body); nbytes = len(body)
+            label, dlen, dhash = classify(body, stratum); nbytes = len(body)
         else:
             label, dlen, dhash, nbytes = "fetch_failed", 0, "", 0
         items.append({"label": label, "dlen": dlen, "dhash": dhash, "bytes": nbytes,
