@@ -63,7 +63,7 @@ news/org was added expecting a preservation rate near 100% (static article pages
 
 **Conclusion:** the classifier is a social-platform bot-shell detector, not a universal content test. Its `og:description`-absence signal cleanly separates "the crawler got the app-shell" from "the crawler got the content" *only* where `og:description` is the platform's sole bot-facing content channel — the social apps, X and Telegram. On sites that deliver content in the article body regardless of meta tags, absence of `og:description` is metadata incompleteness, not hollowness. The content-preservation claim above is therefore confined to the two social strata; news/org is reported as the boundary that defines that domain of validity, not folded into the headline claim.
 
-(The live news/org rate, 50.0%, sitting *below* the archived rate, 72.5%, is ordinary link-rot — the archive doing its intended job elsewhere on this stratum — but is not advanced as a measured preservation figure here, because of the validity limit just stated.)
+(The live news/org rate, 45.0%, sitting *below* the archived rate, 65.0%, is ordinary link-rot — the archive doing its intended job elsewhere on this stratum — but is not advanced as a measured preservation figure here, because of the validity limit just stated.)
 
 ## The instrument's domain of validity
 
