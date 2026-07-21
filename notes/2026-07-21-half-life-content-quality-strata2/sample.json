@@ -1,0 +1,275 @@
+{
+ "seed": 20260721,
+ "n_requested_per_stratum": 25,
+ "target_capture": "20241001000000",
+ "window": [
+  "20231001000000",
+  "20250101000000"
+ ],
+ "strata": {
+  "telegram": {
+   "n_pool": 58,
+   "n_sample": 25,
+   "sample_sha256": "de3ed38357dabe107c2293380c6fa19a57cf030a402fe7e0b486f8a707f5f8c9",
+   "sample": [
+    {
+     "url": "https://t.me/AJPalestine/11233",
+     "capture": "20241101034628",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/AjaNews/217690",
+     "capture": "20241101023541",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://t.me/AjaNews/229819",
+     "capture": "20241031200549",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://t.me/AlarabyTelevision/24267",
+     "capture": "20241231212736",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/AlarabyTelevision/28064",
+     "capture": "20231215132822",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/AlarabyTelevision/29807",
+     "capture": "20231102001400",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/AlarabyTelevision/35476",
+     "capture": "20241031221725",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://t.me/AlarabyTelevision/37391",
+     "capture": "20231113005315",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/AlarabyTelevision/53206",
+     "capture": "20241231212624",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/AlarabyTelevision/61509",
+     "capture": "20240123101248",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/GazaNewsNow/253842",
+     "capture": "20231113234653",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/MOHMediaGaza/4539",
+     "capture": "20231209034312",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/MOHMediaGaza/4566",
+     "capture": "20231214190636",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/MOHMediaGaza/4600",
+     "capture": "20241226034804",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/QudsN/439339",
+     "capture": "20241004153614",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/ShehabTelegram/403322780",
+     "capture": "20241101001345",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/ShehabTelegram/406054",
+     "capture": "20231026192158",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/ShehabTelegram/406057",
+     "capture": "20231025041155",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/ShehabTelegram/406129",
+     "capture": "20231025033900",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/ShehabTelegram/411649",
+     "capture": "20231031082947",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/amitsegal/32214",
+     "capture": "20241101020838",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/amitsegal/36987",
+     "capture": "20240815085555",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://t.me/hamza20300/182667",
+     "capture": "20241031223320",
+     "source": "bare/table"
+    },
+    {
+     "url": "https://t.me/muthanapress84/155057",
+     "capture": "20241101042322",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://t.me/newss93/26398",
+     "capture": "20241031223127",
+     "source": "angle-bracket"
+    }
+   ]
+  },
+  "news-org-other": {
+   "n_pool": 163,
+   "n_sample": 25,
+   "sample_sha256": "a1e9447d72372d45cfc0bc07df39afd90649ed3cc043eedbf86fb6fa499da029",
+   "sample": [
+    {
+     "url": "http://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-122",
+     "capture": "20240223215611",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "http://www.ochaopt.org/content/hostilities-gaza-strip-and-israel-flash-update-26",
+     "capture": "20231102073720",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://globalprotectioncluster.org/index.php/Attacks_on_Civilians",
+     "capture": "20231128163311",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://mondoweiss.net/2024/03/the-real-reason-israel-stormed-al-shifa-hospital-yet-again/",
+     "capture": "20240319182126",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://spcommreports.ohchr.org/TMResultsBase/DownLoadPublicCommunicationFile?gId=27878",
+     "capture": "20240211224920",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://storymaps.arcgis.com/stories/2e746151991643e39e64780f0674f7dd",
+     "capture": "20231030122923",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.aa.com.tr/en/middle-east/israeli-army-destroys-entire-palestinian-side-of-rafah-border-crossing-renders-it-unusable/3253481",
+     "capture": "20240620195645",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.aljazeera.com/news/2023/10/13/fear-confusion-as-israel-issues-evacuation-order-for-northern-gaza",
+     "capture": "20231013125405",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.aljazeera.com/news/2024/2/16/at-least-five-people-dead-after-israeli-army-raid-on-nasser-hospital",
+     "capture": "20240217100426",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.axios.com/2024/02/24/gaza-humanitarian-aid-israel-hamas-police-biden",
+     "capture": "20240224205303",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.bbc.co.uk/news/world-middle-east-68513408",
+     "capture": "20240312061610",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.bbc.com/news/world-middle-east-68536243",
+     "capture": "20240314142612",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.icrc.org/en/document/ihl-occupying-power-responsibilities-occupied-palestinian-territories",
+     "capture": "20231017060231",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.independent.co.uk/news/world/middle-east/israel-hamas-tunnels-seawater-gaza-b2463093.html",
+     "capture": "20231215123941",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.israelnationalnews.com/news/384492",
+     "capture": "20240201000119",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.middleeasteye.net/live-blog/live-blog-update/emergency-committee-chief-killed-latest-attack-aid-seekers",
+     "capture": "20240809122318",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.middleeastmonitor.com/20240925-gaza-without-electricity-as-israel-targets-energy-alternatives/",
+     "capture": "20240926021213",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.nytimes.com/2024/07/14/world/middleeast/israel-mawasi-strike-vehicles.html?unlocked_article_code=1.7E0.q123.hHUsfolNrNUS",
+     "capture": "20241031220230",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.ochaopt.org/sites/default/files/ochaHU11_1205_En.pdf",
+     "capture": "20231103211405",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.oxfam.org.nz/wp-content/uploads/2024/07/Final-version_-Gaza-water-Policy-Paper_17July.pdf",
+     "capture": "20240807091134",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.timesofisrael.com/idf-un-and-aid-groups-failing-to-utilize-israeli-aid-provision-measures-in-gaza/",
+     "capture": "20240723011919",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.timesofisrael.com/reports-rafah-strike-used-us-bombs-designed-to-reduce-casualties/",
+     "capture": "20240530020723",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.understandingwar.org/backgrounder/iran-update-may-10-2024",
+     "capture": "20240511065115",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.unocha.org/publications/report/occupied-palestinian-territory/hostilities-gaza-strip-and-israel-flash-update-44",
+     "capture": "20231210144424",
+     "source": "angle-bracket"
+    },
+    {
+     "url": "https://www.washingtonpost.com/world/2023/11/10/gaza-israel-palestinians-hospitals-hamas/",
+     "capture": "20231110165528",
+     "source": "angle-bracket"
+    }
+   ]
+  }
+ }
+}

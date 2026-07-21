@@ -18,9 +18,12 @@ strata on pre-registered seeded samples.
 ## Sample (frozen)
 
 - Source: the session-41 frozen census `../2026-07-16-half-life-archival-probe/cdx_results.json`.
-- Pools: per stratum, the citation URLs with outcome `covered_in_window`
-  (Telegram: 58 of 66; news-org-other: 186 of 229). The 18 CDX-gated Guardian URLs are
-  structurally excluded (coverage unknowable anonymously — session 41's category).
+- Pools: per stratum, the citation URLs with outcome `covered_in_window` AND at least one
+  status-200 capture in-window (the operative filter, same as session 45's; it is stricter
+  than the census outcome label). Realised pools: Telegram 58 of 66; news-org-other 163
+  (of 186 `covered_in_window`; 23 drop at the status-200 filter — corrected here pre-run,
+  before any fetch: the first draft of this file said 186). The 18 CDX-gated Guardian URLs
+  are structurally excluded (coverage unknowable anonymously — session 41's category).
 - Seed `20260721`, `random.Random(SEED).sample`, N=25 **per stratum**, deterministic
   (sorted pool, one RNG per stratum).
 - Per URL: the in-window status-200 capture **nearest the report's Oct-2024 publication**
