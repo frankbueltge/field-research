@@ -1,0 +1,137 @@
+{
+ "pages": [
+  {
+   "page": "root:telegram",
+   "bytes": 11139,
+   "desc_len": 70,
+   "desc_hash": "b35cdf6cd4fb",
+   "markers": {
+    "tgme_widget_message": false,
+    "tgme_page_description": true,
+    "tgme_page_context_link": true,
+    "please open telegram to view this post": false,
+    "preview channel": true,
+    "tgme_action_button": true,
+    "og:description": true,
+    "twitter:description": true,
+    "tgme_page_extra": true,
+    "tgme_page_title": true
+   }
+  },
+  {
+   "page": "post:telegram/1",
+   "bytes": 11225,
+   "desc_len": 70,
+   "desc_hash": "b35cdf6cd4fb",
+   "markers": {
+    "tgme_widget_message": false,
+    "tgme_page_description": true,
+    "tgme_page_context_link": true,
+    "please open telegram to view this post": false,
+    "preview channel": false,
+    "tgme_action_button": true,
+    "og:description": true,
+    "twitter:description": true,
+    "tgme_page_extra": true,
+    "tgme_page_title": true
+   }
+  },
+  {
+   "page": "post:telegram/271",
+   "bytes": 37583,
+   "desc_len": 246,
+   "desc_hash": "ccac04496637",
+   "markers": {
+    "tgme_widget_message": false,
+    "tgme_page_description": false,
+    "tgme_page_context_link": false,
+    "please open telegram to view this post": false,
+    "preview channel": false,
+    "tgme_action_button": true,
+    "og:description": true,
+    "twitter:description": true,
+    "tgme_page_extra": false,
+    "tgme_page_title": false
+   }
+  },
+  {
+   "page": "root:durov",
+   "bytes": 10944,
+   "desc_len": 20,
+   "desc_hash": "0842b7043c7c",
+   "markers": {
+    "tgme_widget_message": false,
+    "tgme_page_description": true,
+    "tgme_page_context_link": true,
+    "please open telegram to view this post": false,
+    "preview channel": true,
+    "tgme_action_button": true,
+    "og:description": true,
+    "twitter:description": true,
+    "tgme_page_extra": true,
+    "tgme_page_title": true
+   }
+  },
+  {
+   "page": "post:durov/1",
+   "bytes": 11030,
+   "desc_len": 20,
+   "desc_hash": "0842b7043c7c",
+   "markers": {
+    "tgme_widget_message": false,
+    "tgme_page_description": true,
+    "tgme_page_context_link": true,
+    "please open telegram to view this post": false,
+    "preview channel": false,
+    "tgme_action_button": true,
+    "og:description": true,
+    "twitter:description": true,
+    "tgme_page_extra": true,
+    "tgme_page_title": true
+   }
+  },
+  {
+   "page": "post:durov/342",
+   "bytes": 39112,
+   "desc_len": 1025,
+   "desc_hash": "f027d0a31483",
+   "markers": {
+    "tgme_widget_message": false,
+    "tgme_page_description": false,
+    "tgme_page_context_link": false,
+    "please open telegram to view this post": false,
+    "preview channel": false,
+    "tgme_action_button": true,
+    "og:description": true,
+    "twitter:description": true,
+    "tgme_page_extra": false,
+    "tgme_page_title": false
+   }
+  },
+  {
+   "page": "wb:post:telegram/271",
+   "bytes": 37523,
+   "desc_len": 227,
+   "desc_hash": "665837afb098",
+   "markers": {
+    "tgme_widget_message": false,
+    "tgme_page_description": false,
+    "tgme_page_context_link": false,
+    "please open telegram to view this post": false,
+    "preview channel": false,
+    "tgme_action_button": true,
+    "og:description": true,
+    "twitter:description": true,
+    "tgme_page_extra": false,
+    "tgme_page_title": false
+   }
+  }
+ ],
+ "fallback_equality": {
+  "telegram/1_eq_root": true,
+  "telegram/271_eq_root": false,
+  "durov/1_eq_root": true,
+  "durov/342_eq_root": false,
+  "wb271_eq_live271": false
+ }
+}
