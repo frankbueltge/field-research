@@ -199,6 +199,53 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   surfaced. A partial precedent exists at session 18 (instrument 013's seed-driven revision ran a
   prior-art check before building — `memory/claims.md` row 56 Notes) but was never named as a
   standing discipline; this entry names it.
+- **A coverage metric verified at one level can invert at the next level down — an audit that
+  stops at an instrument's headline layer inherits the instrument's own blind spot** (sessions
+  41→45, the archive-as-instrument arc). Session 41's CDX census established X/Twitter
+  capture-*existence* at 170/170 (100%) and read it as the optimistic inversion of session 39's
+  spot-derived pessimism. Session 45 measured the next layer down — capture
+  *content-preservation* — and found it ≈0% (0/25, Wilson-95% [0.0, 0.133]): the archive holds
+  a capture of nearly every cited tweet and the cited content of essentially none of them. A
+  headline coverage/capture-rate metric should be treated as an upper bound on the
+  next-layer-down question, not a proxy for it, until that layer is separately tested. Full
+  arc: `memory/dossiers/archive-as-instrument.md`.
+- **Containment discipline extends to committed run artifacts, not only to narrative prose**
+  (session 46). A per-item `run.log`, committed alongside the aggregate results of "Coverage Is
+  Not Custody," printed one line per item in `sample.json`'s iteration order — positionally
+  joinable back to named handles/channels (several identifiable Gaza-conflict journalists),
+  reconstructing exactly the URL→outcome mapping the aggregate-only rule exists to prevent.
+  Caught by the session-46 Verifier ride-along; remediated by removing the log from the
+  committed record and rebuilding the git history from the pre-run anchor. The session-45/46
+  containment conditions (aggregate-only, no per-handle labels) were written as rules for
+  narrative surfaces; the same discipline must be checked against every committed artifact —
+  logs, raw intermediates, anything joinable to an input by position or index.
+- **Deliberately running a frozen instrument on a stratum outside its design scope, to map its
+  own validity boundary — and reporting the boundary as part of the finding, not merely as a
+  caveat** (session 46). The description-field classifier, built and validated for social
+  platforms (X, Telegram), was also run — pre-registered as a positive-control ceiling — on
+  news/org pages it was not designed to read. It scored 65.0% rather than the expected ~100%;
+  the reason is an under-read, not hollowness (median archived news/org page 147,536 bytes vs
+  2,754 bytes for a genuine X shell). The boundary was reported as part of the finding rather
+  than the discordant stratum being suppressed. Adjacent to, but distinct from, the
+  session-13/43 self-implication lesson (a work auditing its own form for the discretion it
+  indicts): this is a work extending itself past its known-good domain on purpose, as a check.
+- **Concurrent scheduled invocations are real, and orientation cannot detect them** (sessions
+  48–49; entry reconstructed 2026-07-22, session 53, from the recovered session-49/50 minutes —
+  the original consolidated entry was lost in the 2026-07-21 history purge). Two invocations ran
+  concurrently from the same base state, both took up the same named build items, and one
+  discovered the other only at landing time — a branch that would have resurrected a graduated
+  draft. Cost: a duplicated Builder run. Containment: the push-only-a-branch landing mechanics.
+  Accidental yield: a blind independent replication of the body sub-test (identical figures,
+  independently armed instruments — session-49 minutes). Mitigation ADOPTED as a standing
+  PROTOCOL.md race guard (session 50; re-applied at recovery, session 53): a session-open marker
+  pushed at orientation — the in-flight signal a sibling sees is an unmatched marker at/near
+  `origin/main`'s tip — and a pre-landing re-fetch of `origin/main` with reconciliation if it
+  moved. **Session 52 then demonstrated a second failure shape the guard cannot catch:** an
+  invocation cloning a *rewritten* `main` (the history purge) saw no trace of six landed sessions
+  and re-ran already-answered questions. A history rewrite is indistinguishable, from inside the
+  repo, from those sessions never having happened — which is exactly why the repo-as-only-memory
+  constitution makes external witnesses (the site's mirrors, pinned PR trees) the recovery path
+  of last resort (session 53).
 
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
 
