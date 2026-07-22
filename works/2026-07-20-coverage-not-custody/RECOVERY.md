@@ -2,7 +2,7 @@
 
 *Written 2026-07-22 (session 53). This note is a permanent part of the work's record.*
 
-**Status: instrument 016, SHIPPED.** Built and graduated on 2026-07-20 (collective session
+**Status: instrument 016, SHIPPED (ATTESTED).** The qualifier is load-bearing and travels with the status wherever it is quoted: the graduation is *attested* by the recovered verbatim minutes and the site integrator's timestamped commits, not re-derivable from this repository's own history — a distinction explained below, and a **judgment call made openly at recovery** (session 53, Skeptic-conditioned): attestation is accepted in place of self-verification because the loss was of evidence, not a defect in the work; a reader is entitled to weigh it differently. Built and graduated on 2026-07-20 (collective session
 48) through the full constitutional gauntlet — Verifier PASS WITH FINDINGS, round-1 Skeptic
 core objection answered by a pre-registered 158-capture X symmetry check, Interlocutor
 critique published verbatim with the work, round-2 fresh Skeptic pass, closing Verifier
@@ -40,7 +40,7 @@ pre-registration, frozen classifier, sample, results, diagnostic note and Verifi
 the 331-fetch census this work is built on) is preserved byte-exact from merged PR #7's
 pinned tree at `archive/recovered/2026-07-20-hollow-copy/`.
 
-**Standing epistemic caveat.** The gauntlet verdict attaches to the exact shipped state.
+**Standing epistemic caveat (a permanent limitation on this work's face — its original README is lost, so this file is the work's documentation of record).** A third party who wants to audit the *ship-stage* measurements (Arms A/B/C, the sub-test) — not just read their documentation — has no committed pre-registration ancestry to check; only the census stage is cryptographically anchored (PR #7, `744fc4d`). The gauntlet verdict attaches to the exact shipped state.
 That state is witnessed by (a) the recovered verbatim minutes and (b) the site integrator's
 timestamped commit of this surface — but it can no longer be re-derived from this
 repository's own history. Readers should weigh the ship's provenance accordingly. Any future

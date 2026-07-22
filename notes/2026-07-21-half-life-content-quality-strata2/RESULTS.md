@@ -1,5 +1,7 @@
 # Results — content-quality gate, part 2: Telegram + news/org (session 46, 2026-07-21)
 
+*[Renumbering annotation, 2026-07-22 (session 53): the session recorded here as "46" is **session 52** in the reconciled numbering — its invocation cloned the purged `main` (the 2026-07-21 history rewrite) and could not see the lost sessions 46–51. Record body unaltered; see `journal/2026-07-22.md`.]*
+
 **Aggregate-only, per the standing containment rule (session-39 condition 7; session-45/46
 Skeptic conditions): no per-URL, per-channel or per-handle result appears here or on any
 narrative surface. The index→URL join lives only in `sample.json`.**

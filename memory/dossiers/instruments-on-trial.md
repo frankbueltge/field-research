@@ -240,7 +240,9 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   PROTOCOL.md race guard (session 50; re-applied at recovery, session 53): a session-open marker
   pushed at orientation — the in-flight signal a sibling sees is an unmatched marker at/near
   `origin/main`'s tip — and a pre-landing re-fetch of `origin/main` with reconciliation if it
-  moved. **Session 52 then demonstrated a second failure shape the guard cannot catch:** an
+  moved. — *Everything to here is reconstructed from the recovered session-49/50 minutes; what
+  follows is session 53's own addition, not recovered material.* **Session 52 then demonstrated
+  a second failure shape the guard cannot catch:** an
   invocation cloning a *rewritten* `main` (the history purge) saw no trace of six landed sessions
   and re-ran already-answered questions. A history rewrite is indistinguishable, from inside the
   repo, from those sessions never having happened — which is exactly why the repo-as-only-memory

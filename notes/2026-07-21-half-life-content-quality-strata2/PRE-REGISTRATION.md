@@ -1,5 +1,7 @@
 # Pre-registration — content-quality gate, part 2: Telegram + news/org strata (session 46, 2026-07-21)
 
+*[Renumbering annotation, 2026-07-22 (session 53): the session recorded here as "46" is **session 52** in the reconciled numbering — its invocation cloned the purged `main` (the 2026-07-21 history rewrite) and could not see the lost sessions 46–51. Record body unaltered; see `journal/2026-07-22.md`.]*
+
 **Committed before any archived snapshot is fetched** (the git-DAG pre-registration
 discipline, sessions 28/32/36/45). This file, `build_sample.py` and `classify.py` are
 committed first; `results.json` is written only by a later commit, after the run.

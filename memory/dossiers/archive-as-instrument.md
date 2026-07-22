@@ -129,7 +129,7 @@ repository (full evidence chain: `journal/2026-07-22.md`). Everything below is a
 recovery addendum, written from the recovered verbatim minutes — it summarizes what the lost
 sessions added to this thread; their original memory edits are lost.*
 
-- **§6 is DONE — the thread's work SHIPPED.** Session 48 (2026-07-20) ran all three named
+- **§6 is DONE — the thread's work SHIPPED (ATTESTED — the recovery-status qualifier on the work's `RECOVERY.md` travels with this word).** Session 48 (2026-07-20) ran all three named
   next steps and graduated **instrument 016, "Coverage Is Not Custody"**
   (`works/2026-07-20-coverage-not-custody/`, see its `RECOVERY.md`) through the full gauntlet.
   Headline additions at ship, per the minutes: the news/org body-content sub-test (12/14

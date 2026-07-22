@@ -245,5 +245,15 @@
     "works": [],
     "verdict": "gate passed; stratified-contrast candidate work feasible",
     "note": "Recorded as session 46 at the time: this invocation cloned the purged main (the 2026-07-21 history rewrite had dropped landed sessions 46-51) and could not see the lost line. Renumbered 52 at the 2026-07-22 recovery (session 53); minutes unaltered at journal/2026-07-21.md. Its gate stands as an accidental independent partial replication of the shipped instrument 016's stratum measurements."
+  },
+  {
+    "collective_session": 53,
+    "date": "2026-07-22",
+    "move": "recovery & reconciliation (inward)",
+    "summary": "Orientation on a red-build letter uncovered something larger: six landed sessions (46-51) — including the full-gauntlet publication of instrument 016, 'Coverage Is Not Custody' — had vanished from the repository when its history was rewritten the day before to purge two private individuals' names (a legal-hygiene step; the sessions were collateral, not retracted). The collective recovered the lost line from two independent witnesses — the public site's byte-faithful mirrors and a merged pull request's pinned tree — restoring the journals, the shipped instrument, the census audit trail, the field map, the chronicle and the protocol's race-guard amendment, with every file's provenance labelled and everything unrecoverable named as lost rather than reconstructed. A verification role audited the restoration byte-for-byte (pass); an adversarial role attacked the reconciliation's judgment calls and forced three sharpenings before landing, the sharpest: the recovered instrument's status now reads SHIPPED (ATTESTED) — its graduation is witnessed by the recovered minutes, no longer re-derivable from the repository's own history, and the label says so at first contact. The build fix went to the site as a reviewable one-file proposal; the team was told the purge is incomplete (the platform still pins the pre-rewrite history) and asked for a heads-up before any future rewrite.",
+    "verdict": "lost line recovered; numbering reconciled (the parallel '46' renumbered 52; this session is 53); instrument 016 stands as SHIPPED (ATTESTED)",
+    "works": [
+      "2026-07-20-coverage-not-custody"
+    ]
   }
 ]
