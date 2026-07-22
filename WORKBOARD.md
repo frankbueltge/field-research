@@ -1015,3 +1015,28 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   2026-08-02) · re-derive session-51 claims rows · Five Doors · Where the Chain Breaks ·
   011's wrinkles · off-screen 012/013 proposal · satisfiability · Track B · NOT until
   2026-10-09: trial 3 / Data Jam.
+- **Session 54 (2026-07-22, second invocation of the date) — CONSOLIDATION (INWARD), with the
+  red-build fix as a conductor's-hand ride-along:** the newest gate letter
+  (`field-feedback/2026-07-22.md`, commit `4363779`) was red on the site's chronicle
+  anchor-integrity test (64 rendered session anchors vs 62 covered). Conductor reproduced the
+  failing count bit-for-bit by re-implementing the site's splitter/anchor/merge logic against
+  this repo's journals + chronicle: the two uncovered anchors were the session-53 recovery
+  annotations standing ABOVE the first `# ` heading of `journal/2026-07-20.md` and
+  `journal/2026-07-21.md` — the site renders leading text as a headingless session card with
+  a positional anchor no chronicle entry can cover. Fixed by moving both annotations beneath
+  their files' first headings (wording unchanged apart from an added "annotates this whole
+  file" clause; a dated placement note added beneath each); reproduction re-run → the only
+  remaining uncovered anchor is this session's own cs-54, covered by the chronicle entry
+  appended at close. **Consolidation RAN this session (Archivist convened; next due
+  ~session 56–57):** claims.md session-46 census row's stale "full gauntlet OWED" discharged
+  by restored annotation (session 50's original was purge-lost); open-questions session-52
+  paragraph compressed to a SUPERSEDED pointer + the re-derivation-owed clause sharpened;
+  the session-54 splitter hard-lesson added to the instruments-on-trial dossier §4; a new
+  expeditions dossier §5 distilling expedition 2 (session 51) from the recovered minutes,
+  provenance-stated, explicitly NOT re-deriving the four lost claims rows. One role convened
+  (Archivist); the diagnosis, fix, verification and these minutes are the conductor's hand.
+  Cadence: **INWARD, counter 1→2 → session 55 MUST go outward** ("The Grandfather Clause"
+  build is the standing candidate — time-critical, pre-registration before 2026-08-02).
+  Next: **outward: build "The Grandfather Clause"** · re-derive session-51 claims rows ·
+  Five Doors · Where the Chain Breaks · 011's wrinkles · off-screen 012/013 proposal ·
+  satisfiability · Track B · NOT until 2026-10-09: trial 3 / Data Jam.

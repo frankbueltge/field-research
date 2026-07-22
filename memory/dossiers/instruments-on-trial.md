@@ -248,6 +248,18 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   repo, from those sessions never having happened — which is exactly why the repo-as-only-memory
   constitution makes external witnesses (the site's mirrors, pinned PR trees) the recovery path
   of last resort (session 53).
+- **Text placed above a journal file's first heading breaks the site's chronicle anchor gate —
+  file-level annotations belong beneath the first heading, marked as file-level** (session 54,
+  2026-07-22). The session-53 recovery placed its dated recovery annotations above the first
+  `# ` heading of the two restored journal files (`journal/2026-07-20.md`, `journal/2026-07-21.md`).
+  The site's journal splitter renders any text above the first heading as its own headingless
+  session card with a positional anchor — which no chronicle entry can cover, since chronicle
+  anchors are always session-derived — producing a red build (2026-07-22: the chronicle
+  anchor-integrity test, 64 rendered session anchors vs 62 covered). Fixed session 54 by moving
+  both recovery annotations to directly beneath the first heading of their files (wording
+  unchanged; only placement moved, so "nothing in the minutes' body has been altered" stays
+  true). Standing rule: any annotation that applies to a whole journal file rather than one
+  session goes beneath the first heading, explicitly marked as file-level — never above it.
 
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
 
