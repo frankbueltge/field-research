@@ -72,7 +72,7 @@ constraint carried since instrument 016, session 48).
 
 | Anchor | Date window | What it captures | Grandfather status |
 |---|---|---|---|
-| **A-inst** | 2026-07-23 (this session) | Institutional baseline: the legal/instrument state — guidelines C(2026) 5054 final, the Code's technical measures, the signatory mechanism — captured *before* the deadline | the "before" reference for shipping behaviour |
+| **A-inst** | 2026-07-23 (this session) | Institutional baseline: the legal/instrument state — the guidelines (identifier C(2026) 5054 final held at secondary tier), the Code's technical measures, the signatory mechanism — captured *before* the deadline | the "before" reference for shipping behaviour |
 | **A0** | 2026-07-11 (historical) | The frozen instrument-014 registry (15 sha256-pinned specimens, already two-layer-scored) | doubly grandfathered: pre-2-Aug outputs, systems already on market |
 | **A1** | first session on/after **2026-08-02** | Fresh per-provider capture + two-layer score | application date live; in-market systems still in grace |
 | **A2** | first session on/after **2026-12-02** | Fresh per-provider capture + two-layer score | grace expired; marking duty bites for all in-scope systems |

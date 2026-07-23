@@ -15,7 +15,8 @@ is read. All facts first-hand-verified this session unless marked SECONDARY (see
   Digital Omnibus was politically agreed; Official Journal publication pending as of this anchor.
 - **Grandfathering — outputs:** outputs generated and made available **before 2 Aug 2026 need never
   be marked retroactively** (Commission FAQ).
-- **Guidelines:** Communication **C(2026) 5054 final**, dated 20 July 2026.
+- **Guidelines:** Communication **C(2026) 5054 final**, dated 20 July 2026 (SECONDARY — identifier
+  and date from ppc.land; to re-verify against the primary guidelines text before any load-bearing use).
 - **Code of Practice on Transparency of AI-Generated Content:** final 10 June 2026; voluntary;
   grants presumption of compliance to signatories. Technical measures (SECONDARY, to re-verify
   against the primary text): 200-token text-watermark threshold · two machine-readable layers

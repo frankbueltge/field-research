@@ -15,7 +15,7 @@
         "grandfathering_in_market_systems_until": "2026-12-02",
         "grandfathering_status": "provisional — Commission FAQ (17 Jul 2026) states 'a targeted grandfathering rule ... If adopted'; Digital Omnibus politically agreed, OJ publication pending as of this anchor",
         "no_retroactive_marking": "outputs generated and already made available before 2026-08-02 need not be marked/labelled retroactively (Commission FAQ, 17 Jul 2026)",
-        "guidelines": "Guidelines on Article 50 transparency, Communication C(2026) 5054 final, dated 2026-07-20",
+        "guidelines_secondary": "Guidelines on Article 50 transparency, Communication C(2026) 5054 final, dated 2026-07-20 — SECONDARY (identifier/date from ppc.land; re-verify against primary guidelines text before load-bearing use)",
         "code_of_practice": "Code of Practice on Transparency of AI-Generated Content, final published 2026-06-10; voluntary; presumption-of-compliance for signatories",
         "code_technical_measures_secondary": {
           "text_watermark_threshold_tokens": 200,
