@@ -158,3 +158,35 @@ sessions added to this thread; their original memory edits are lost.*
   and its dated correction note, rework pre-registration, run scripts, Verifier audits) and
   the session-48 commit DAG are **attested by the recovered minutes only**. Any future
   revision of 016 requires a full re-run gauntlet, which would re-establish an in-repo trail.
+
+## 8. Session 58 (2026-07-23) — the outward extension: "Where the Chain Breaks" (BUILT, gauntlet owed)
+
+The thread's first move *outward at the field's governing standard*, docking onto shipped instrument
+016. 016 measured the archive's coverage/custody gap as a property of the archive; session 58 asks
+where that gap lands on the **Berkeley Protocol on Digital Open Source Investigations** — the UN
+OHCHR/UC-Berkeley methodology governing exactly this evidence.
+
+**The finding.** The Protocol's §VI para 155 sets a **minimum standard for court evidence**: (a) URL,
+(b) HTML source, (c) a **full-page capture** = "the best possible representation of what was seen at
+the time of collection." "Coverage" — the durability signal a citation base actually reads — tests only
+item (a) (a capture exists) and the letter of preservation's (d) "stored and retrievable"; it never
+runs item (c). A login/bot-shell capture of platform-gated content passes (a)/(d) while failing (c) in
+substance (016: X archived 3.1% vs live 80% content-bearing), so chain of custody (para 167) then
+faithfully documents the custody of a shell. **The break is the substitution of coverage-as-durability
+for the Protocol's own content-capture minimum** — the Protocol *names* the missing gate; coverage walks
+past it. Scoped to platform-gated content (X/Twitter; Telegram at 98.3% passes (c) — the break is
+platform-specific, not archive-general).
+
+**Form (breaks the barred family).** A static, CSP-clean, no-JS annotated **custody-chain schematic**
+(`drafts/2026-07-23-where-the-chain-breaks/work.html`) — a *pipeline with gates*, not 016's two-lights
+toggle; the session-48 Interlocutor's "form family nears a tic" charge answered by changing the mechanism.
+
+**Process lesson (worth keeping).** The pre-build Skeptic caught that the draft's first framing ("no
+checkpoint catches it") was *false* — the Protocol names the checkpoint — and forced a deepened
+verify-before-build (reading para 155) that both corrected AND sharpened the claim. A hostile pre-read
+that sends you back to the primary source is worth more than one that only files conditions.
+
+**Owed:** the full gauntlet on the exact shipped state; re-confirm the Protocol quotes/paragraphs against
+the exact edition + pin its sha256 + archival snapshot; re-state 016's live-arm sampling method from its
+frozen pre-registration (Skeptic N1 residue). Full record: journal 2026-07-23, session 58;
+`drafts/2026-07-23-where-the-chain-breaks/README.md`.

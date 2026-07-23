@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Where the Chain Breaks — a custody-chain schematic</title>
+<style>
+  :root{
+    --paper:#f4f1e8; --ink:#1c1a15; --rule:#3a352a; --faint:#8a8271;
+    --pass:#2f6b3a; --fail:#9c2b1e; --hl:#b6892a; --box:#fffdf7;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:Georgia,"Times New Roman",serif;line-height:1.5}
+  .wrap{max-width:1040px;margin:0 auto;padding:28px 20px 56px}
+  .mono{font-family:"DejaVu Sans Mono","Courier New",monospace}
+  h1{font-size:24px;margin:0 0 4px;letter-spacing:.2px}
+  .sub{font-size:15px;color:var(--rule);margin:0 0 2px}
+  .status{font-family:"DejaVu Sans Mono","Courier New",monospace;font-size:11px;
+    color:var(--fail);text-transform:uppercase;letter-spacing:.6px;margin:8px 0 20px}
+  .thesis{font-size:16px;border-left:3px solid var(--hl);padding:6px 0 6px 14px;margin:0 0 22px}
+  figure{margin:0 0 10px}
+  svg{width:100%;height:auto;display:block;border:1px solid var(--rule);background:var(--box)}
+  figcaption{font-size:12.5px;color:var(--rule);margin-top:8px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0 0}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{border:1px solid var(--rule);background:var(--box);padding:14px 16px}
+  .card h3{margin:0 0 6px;font-size:14px;text-transform:uppercase;letter-spacing:.5px}
+  .card p{margin:0 0 8px;font-size:14px}
+  .num{font-family:"DejaVu Sans Mono","Courier New",monospace}
+  .ci{color:var(--faint);font-size:12px}
+  .objection{border:1px dashed var(--rule);padding:14px 16px;margin:24px 0 0;font-size:14px;background:#efe9da}
+  .objection h3{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--fail)}
+  footer{margin-top:30px;font-size:12px;color:var(--rule);border-top:1px solid var(--rule);padding-top:12px}
+  code{font-family:"DejaVu Sans Mono","Courier New",monospace;font-size:12.5px}
+  .pass{color:var(--pass)} .fail{color:var(--fail)} .hl{color:var(--hl)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Where the Chain Breaks</h1>
+  <p class="sub">The coverage&#8211;custody gap, located on the field's own governing evidence chain</p>
+  <p class="status">Draft &middot; session 58 &middot; full gauntlet owed &middot; not shipped</p>
+
+  <p class="thesis">A courtroom-deployed open-source investigation preserves its evidence by the
+  <strong>Berkeley Protocol</strong>, whose minimum standard for court evidence is to capture the URL, the
+  HTML source, and a <em>full-page capture</em> &mdash; &ldquo;the best possible representation of what was
+  seen at the time of collection.&rdquo; But when the durability of a citation is read off
+  <strong>coverage</strong> &mdash; &ldquo;an archived capture exists&rdquo; &mdash; only the URL is tested.
+  This schematic runs one archived capture down the chain and shows it collecting a green stamp at every gate
+  a coverage metric checks, while the thing the Protocol actually asked for never arrived.</p>
+
+  <figure>
+  <svg viewBox="0 0 1040 610" role="img" aria-label="Custody-chain schematic showing where an archived X/Twitter capture passes the coverage-tested gates while failing the Berkeley Protocol full-page-capture minimum">
+    <defs>
+      <marker id="arw" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto">
+        <path d="M0,0 L7,3 L0,6 Z" fill="#3a352a"/>
+      </marker>
+    </defs>
+
+    <!-- TIER 1: the six-phase cycle -->
+    <text x="24" y="30" class="mono" font-size="12" fill="#8a8271">BERKELEY PROTOCOL &#167;VI &mdash; THE SIX-PHASE INVESTIGATION CYCLE (para 139)</text>
+
+    <!-- phase boxes -->
+    <!-- a -->
+    <rect x="24" y="44" width="132" height="46" fill="#fffdf7" stroke="#3a352a"/>
+    <text x="90" y="64" text-anchor="middle" font-size="12" fill="#1c1a15">(a) online</text>
+    <text x="90" y="80" text-anchor="middle" font-size="12" fill="#1c1a15">inquiry</text>
+    <!-- b -->
+    <rect x="176" y="44" width="132" height="46" fill="#fffdf7" stroke="#3a352a"/>
+    <text x="242" y="64" text-anchor="middle" font-size="12" fill="#1c1a15">(b) prelim.</text>
+    <text x="242" y="80" text-anchor="middle" font-size="12" fill="#1c1a15">assessment</text>
+    <!-- c COLLECTION (highlighted) -->
+    <rect x="328" y="40" width="150" height="54" fill="#f7efd8" stroke="#b6892a" stroke-width="2"/>
+    <text x="403" y="61" text-anchor="middle" font-size="12.5" fill="#1c1a15" font-weight="bold">(c) COLLECTION</text>
+    <text x="403" y="78" text-anchor="middle" font-size="10.5" fill="#5b5341">capturing digital</text>
+    <text x="403" y="89" text-anchor="middle" font-size="10.5" fill="#5b5341">items from the Internet</text>
+    <!-- d PRESERVATION (highlighted) -->
+    <rect x="498" y="40" width="150" height="54" fill="#f7efd8" stroke="#b6892a" stroke-width="2"/>
+    <text x="573" y="61" text-anchor="middle" font-size="12.5" fill="#1c1a15" font-weight="bold">(d) PRESERVATION</text>
+    <text x="573" y="78" text-anchor="middle" font-size="10.5" fill="#5b5341">stored and</text>
+    <text x="573" y="89" text-anchor="middle" font-size="10.5" fill="#5b5341">retrievable</text>
+    <!-- e -->
+    <rect x="668" y="44" width="150" height="46" fill="#fffdf7" stroke="#3a352a"/>
+    <text x="743" y="64" text-anchor="middle" font-size="12" fill="#1c1a15">(e) verification</text>
+    <text x="743" y="80" text-anchor="middle" font-size="10.5" fill="#5b5341">reliability of content</text>
+    <!-- f -->
+    <rect x="838" y="44" width="150" height="46" fill="#fffdf7" stroke="#3a352a"/>
+    <text x="913" y="64" text-anchor="middle" font-size="12" fill="#1c1a15">(f) investigative</text>
+    <text x="913" y="80" text-anchor="middle" font-size="12" fill="#1c1a15">analysis</text>
+
+    <!-- arrows between phases -->
+    <line x1="156" y1="67" x2="174" y2="67" stroke="#3a352a" marker-end="url(#arw)"/>
+    <line x1="308" y1="67" x2="326" y2="67" stroke="#3a352a" marker-end="url(#arw)"/>
+    <line x1="478" y1="67" x2="496" y2="67" stroke="#3a352a" marker-end="url(#arw)"/>
+    <line x1="648" y1="67" x2="666" y2="67" stroke="#3a352a" marker-end="url(#arw)"/>
+    <line x1="818" y1="67" x2="836" y2="67" stroke="#3a352a" marker-end="url(#arw)"/>
+
+    <!-- zoom bracket from COLLECTION down to tier 2 -->
+    <line x1="403" y1="94" x2="403" y2="118" stroke="#b6892a" stroke-dasharray="3,3"/>
+    <line x1="220" y1="118" x2="820" y2="118" stroke="#b6892a" stroke-dasharray="3,3"/>
+    <text x="230" y="112" class="mono" font-size="11" fill="#b6892a">zoom: what (c) COLLECTION must capture &mdash; para 155</text>
+
+    <!-- TIER 2: the four collect-items as gates -->
+    <!-- min-for-court bracket over a,b,c -->
+    <line x1="60" y1="150" x2="620" y2="150" stroke="#3a352a"/>
+    <line x1="60" y1="150" x2="60" y2="158" stroke="#3a352a"/>
+    <line x1="620" y1="150" x2="620" y2="158" stroke="#3a352a"/>
+    <text x="340" y="144" text-anchor="middle" class="mono" font-size="11" fill="#3a352a">MINIMUM STANDARD FOR PROVIDING EVIDENCE IN COURT (para 155)</text>
+
+    <!-- item a -->
+    <rect x="60" y="162" width="170" height="70" fill="#fffdf7" stroke="#3a352a"/>
+    <text x="145" y="184" text-anchor="middle" font-size="12.5" fill="#1c1a15" font-weight="bold">(a) URL recorded</text>
+    <text x="145" y="203" text-anchor="middle" font-size="11" fill="#5b5341">the web address of</text>
+    <text x="145" y="216" text-anchor="middle" font-size="11" fill="#5b5341">the collected content</text>
+    <!-- item b -->
+    <rect x="245" y="162" width="170" height="70" fill="#fffdf7" stroke="#3a352a"/>
+    <text x="330" y="184" text-anchor="middle" font-size="12.5" fill="#1c1a15" font-weight="bold">(b) HTML source</text>
+    <text x="330" y="203" text-anchor="middle" font-size="11" fill="#5b5341">contributes to the</text>
+    <text x="330" y="216" text-anchor="middle" font-size="11" fill="#5b5341">authentication</text>
+    <!-- item c (the one that matters) -->
+    <rect x="430" y="158" width="190" height="78" fill="#f7efd8" stroke="#b6892a" stroke-width="2"/>
+    <text x="525" y="180" text-anchor="middle" font-size="12.5" fill="#1c1a15" font-weight="bold">(c) full-page capture</text>
+    <text x="525" y="199" text-anchor="middle" font-size="11" fill="#5b5341">&ldquo;the best possible</text>
+    <text x="525" y="212" text-anchor="middle" font-size="11" fill="#5b5341">representation of what</text>
+    <text x="525" y="225" text-anchor="middle" font-size="11" fill="#5b5341">was seen at collection&rdquo;</text>
+    <!-- item d -->
+    <rect x="635" y="162" width="150" height="70" fill="#fffdf7" stroke="#3a352a"/>
+    <text x="710" y="184" text-anchor="middle" font-size="12.5" fill="#1c1a15" font-weight="bold">(d) embedded</text>
+    <text x="710" y="200" text-anchor="middle" font-size="12.5" fill="#1c1a15" font-weight="bold">media</text>
+
+    <!-- THE SPECIMEN: an archived X capture, run through -->
+    <text x="24" y="286" class="mono" font-size="12" fill="#8a8271">SPECIMEN &mdash; ONE ARCHIVED X/TWITTER CAPTURE FROM THE CITATION BASE (instrument 016)</text>
+
+    <!-- coverage stamp on a -->
+    <line x1="145" y1="232" x2="145" y2="300" stroke="#2f6b3a" marker-end="url(#arw)"/>
+    <text x="145" y="318" text-anchor="middle" class="mono" font-size="13" fill="#2f6b3a">&#10003; PASS</text>
+    <text x="145" y="336" text-anchor="middle" font-size="11" fill="#2f6b3a">capture exists at URL</text>
+    <text x="145" y="352" text-anchor="middle" class="mono" font-size="12" fill="#1c1a15">170 / 170 covered</text>
+
+    <!-- b: stored, but shell -->
+    <line x1="330" y1="232" x2="330" y2="300" stroke="#2f6b3a" marker-end="url(#arw)"/>
+    <text x="330" y="318" text-anchor="middle" class="mono" font-size="13" fill="#2f6b3a">&#10003; stored</text>
+    <text x="330" y="336" text-anchor="middle" font-size="11" fill="#5b5341">HTML present &mdash; but it is</text>
+    <text x="330" y="352" text-anchor="middle" font-size="11" fill="#5b5341">the login / bot shell's HTML</text>
+
+    <!-- c: FAIL -->
+    <line x1="525" y1="236" x2="525" y2="300" stroke="#9c2b1e" marker-end="url(#arw)"/>
+    <text x="525" y="318" text-anchor="middle" class="mono" font-size="14" fill="#9c2b1e" font-weight="bold">&#10007; FAIL</text>
+    <text x="525" y="336" text-anchor="middle" font-size="11" fill="#9c2b1e">what was seen was the content;</text>
+    <text x="525" y="352" text-anchor="middle" font-size="11" fill="#9c2b1e">what was stored is the wall</text>
+    <text x="525" y="370" text-anchor="middle" class="mono" font-size="13" fill="#9c2b1e" font-weight="bold">5 / 163 = 3.1%</text>
+    <text x="525" y="386" text-anchor="middle" font-size="10.5" fill="#8a8271">content-bearing &middot; Wilson95 [1.3, 7.0]</text>
+
+    <!-- the gap bracket between a-coverage and c-custody -->
+    <line x1="145" y1="410" x2="145" y2="430" stroke="#9c2b1e"/>
+    <line x1="525" y1="410" x2="525" y2="430" stroke="#9c2b1e"/>
+    <line x1="145" y1="430" x2="525" y2="430" stroke="#9c2b1e" stroke-width="1.5"/>
+    <text x="335" y="450" text-anchor="middle" class="mono" font-size="12.5" fill="#9c2b1e" font-weight="bold">THE BREAK &mdash; coverage tests (a); the Protocol asked for (c)</text>
+    <text x="335" y="468" text-anchor="middle" font-size="11.5" fill="#5b5341">the same URLs fetched LIVE are 80% content-bearing (20/25, [60.9, 91.1])</text>
+    <text x="335" y="483" text-anchor="middle" font-size="11.5" fill="#5b5341">&mdash; the content existed and was collectible; the archive stored the shell</text>
+
+    <!-- verification note -->
+    <line x1="743" y1="90" x2="743" y2="360" stroke="#8a8271" stroke-dasharray="2,4"/>
+    <text x="838" y="322" font-size="11" fill="#5b5341">(e) verification asks the</text>
+    <text x="838" y="337" font-size="11" fill="#5b5341">&ldquo;reliability of content&rdquo; &mdash;</text>
+    <text x="838" y="352" font-size="11" fill="#5b5341">a hollow capture has no</text>
+    <text x="838" y="367" font-size="11" fill="#5b5341">content to evaluate. The</text>
+    <text x="838" y="382" font-size="11" fill="#5b5341">Protocol names the gate;</text>
+    <text x="838" y="397" font-size="11" fill="#5b5341">coverage skips it.</text>
+
+    <!-- TELEGRAM counter-specimen -->
+    <line x1="24" y1="508" x2="1016" y2="508" stroke="#3a352a"/>
+    <text x="24" y="530" class="mono" font-size="12" fill="#8a8271">COUNTER-SPECIMEN &mdash; TELEGRAM, SAME REPORT, SAME METHOD</text>
+    <rect x="24" y="542" width="470" height="52" fill="#eef4ee" stroke="#2f6b3a"/>
+    <text x="40" y="564" font-size="12.5" fill="#2f6b3a" font-weight="bold">&#10003; (c) PASSES &mdash; 57/58 = 98.3% archived content-bearing [90.9, 99.7]</text>
+    <text x="40" y="582" font-size="11.5" fill="#5b5341">a faithful mirror: the archived capture IS what was seen. The break is platform-specific.</text>
+
+    <!-- news/org excluded -->
+    <rect x="546" y="542" width="470" height="52" fill="#f0eee6" stroke="#8a8271"/>
+    <text x="562" y="564" font-size="12.5" fill="#5b5341" font-weight="bold">news/org (65%) &mdash; excluded from the claim</text>
+    <text x="562" y="582" font-size="11.5" fill="#5b5341">016 declares it a classifier validity boundary, not a preservation rate.</text>
+  </svg>
+  <figcaption>All figures are read, unaltered, from instrument 016's frozen, sha256-pinned census
+  (<code>results.json</code>, sample <code>fb79e81c&hellip;</code>) and verified first-hand this session; every
+  Protocol phrase is quoted verbatim from the source PDF (see below). Wilson 95% intervals are shown on
+  every rate. Small N is on the face of each row (live arm n=25).</figcaption>
+  </figure>
+
+  <div class="grid">
+    <div class="card">
+      <h3>What the standard asks for</h3>
+      <p>Para 155 sets a <strong>minimum standard for court</strong>: (a) URL, (b) HTML source, and (c) a
+      full-page capture that is &ldquo;the best possible representation of <em>what was seen at the time of
+      collection</em>.&rdquo; Item (c) is exactly the checkpoint a hollow capture fails.</p>
+      <p>Preservation (d) is worded &ldquo;stored and <span class="num">retrievable</span>&rdquo;; chain of
+      custody (para 167) is &ldquo;chronological documentation&hellip; of any such evidence.&rdquo; A shell is
+      retrievable, and its custody is documentable &mdash; both pass on a hollow item.</p>
+    </div>
+    <div class="card">
+      <h3>What coverage tests</h3>
+      <p>&ldquo;Coverage&rdquo; &mdash; the durability signal a citation base actually reads &mdash; asks only:
+      <em>does an archived capture exist at this URL?</em> That is the Protocol's item (a) and the letter of
+      (d)'s &ldquo;retrievable.&rdquo;</p>
+      <p>It never runs item (c). So the metric that certifies a citation as &ldquo;preserved&rdquo; tests the
+      one requirement a login-wall capture can satisfy, and skips the one it cannot. The break is the
+      <strong>substitution of coverage for the Protocol's own content-capture minimum.</strong></p>
+    </div>
+  </div>
+
+  <div class="objection">
+    <h3>Anticipated objection &mdash; is this the Protocol's chain, or a third-party archive?</h3>
+    <p>Fair, and load-bearing. The Protocol tells an <em>investigator</em> to capture (a)&ndash;(c) themselves,
+    with tooling that renders the page &mdash; done that way, the content is captured and item (c) is met.
+    This instrument does <strong>not</strong> claim a defect in the Protocol's full text. It claims something
+    narrower and demonstrated: when an investigation's durability rests on a public web archive read through
+    <em>coverage</em> &mdash; the pattern instrument 016 measured in a real citation base &mdash; a
+    platform-gated capture satisfies the letter of (a)/(d) while failing (c) in substance, and no coverage
+    metric distinguishes the two. The Protocol is the instrument that <em>names</em> the missing gate; the
+    finding is that coverage-as-durability walks past it. Scope: platform-gated content (X/Twitter here);
+    Telegram passes (c) and does not break. Whether a capture's hollowness is permanent across an archive's
+    re-crawls is left open (016 found 0/25 across <em>every</em> in-window capture, not one version).</p>
+  </div>
+
+  <footer>
+    <p><strong>Sources.</strong> Berkeley Protocol on Digital Open Source Investigations (UN OHCHR + Human
+    Rights Center, UC Berkeley School of Law), &#167;VI paras 139, 153&ndash;155, 167 &mdash;
+    <code>ohchr.org/&hellip;/2024-01/OHCHR_BerkeleyProtocol.pdf</code>, verified first-hand 2026-07-23.
+    Measurement: instrument 016, &ldquo;Coverage Is Not Custody,&rdquo;
+    <code>works/2026-07-20-coverage-not-custody/</code>. Full sources and paragraph text: <code>SOURCES.md</code>.</p>
+    <p><strong>Status.</strong> Draft; the full gauntlet (independent Verifier + Skeptic refutation +
+    published Interlocutor critique on the exact shipped state) is owed before this graduates to
+    <code>works/</code>. Scoping and the Skeptic pre-read conditions folded here are recorded in
+    <code>README.md</code>.</p>
+  </footer>
+</div>
+</body>
+</html>
