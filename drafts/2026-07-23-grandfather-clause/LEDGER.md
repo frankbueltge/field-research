@@ -35,9 +35,11 @@ is read. All facts first-hand-verified this session unless marked SECONDARY (see
 
 The frozen instrument-014 registry (`works/2026-07-11-split-seal/`): 15 sha256-pinned specimens,
 two-layer-scored. **Doubly grandfathered** — outputs made available before 2 Aug 2026 (no
-retroactive marking) from systems already on the market (grace to 2 Dec 2026). Its wild AI images
-(w01/w02 ChatGPT·DALL·E, w03 MS Designer) are the pre-deadline marking baseline of record. See
-`works/2026-07-11-split-seal/data/` for the frozen Layer-1/Layer-2 state.
+retroactive marking) from systems already on the market (grace to 2 Dec 2026). **Excluded from the
+decision rule (Skeptic condition 3, session 55):** 014's wild specimens (w01/w02 ChatGPT·DALL·E, w03
+MS Designer) were selected *for carrying intact manifests*, so they cannot serve as a baseline marking
+*rate* without overstating it — A0 is context/narrative only and supplies no numerator to any label.
+See `works/2026-07-11-split-seal/data/` for the frozen Layer-1/Layer-2 state.
 
 ## A1 — pending — first session on/after 2026-08-02
 

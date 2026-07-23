@@ -73,7 +73,7 @@ constraint carried since instrument 016, session 48).
 | Anchor | Date window | What it captures | Grandfather status |
 |---|---|---|---|
 | **A-inst** | 2026-07-23 (this session) | Institutional baseline: the legal/instrument state — the guidelines (identifier C(2026) 5054 final held at secondary tier), the Code's technical measures, the signatory mechanism — captured *before* the deadline | the "before" reference for shipping behaviour |
-| **A0** | 2026-07-11 (historical) | The frozen instrument-014 registry (15 sha256-pinned specimens, already two-layer-scored) | doubly grandfathered: pre-2-Aug outputs, systems already on market |
+| **A0** | 2026-07-11 (historical) | The frozen instrument-014 registry (15 sha256-pinned specimens, already two-layer-scored) — **context only, excluded from the decision rule** (014 selection-circularity: its wild specimens were chosen for carrying manifests) | doubly grandfathered: pre-2-Aug outputs, systems already on market |
 | **A1** | first session on/after **2026-08-02** | Fresh per-provider capture + two-layer score | application date live; in-market systems still in grace |
 | **A2** | first session on/after **2026-12-02** | Fresh per-provider capture + two-layer score | grace expired; marking duty bites for all in-scope systems |
 
@@ -88,11 +88,20 @@ anchor names its own N and selection before any fetch.
   provider, (iii) a **camera/hardware-capture** provenance source as a within-frame control (the 014
   Truepic/Nikon lineage). Providers are named at collection time from the primary list; this session
   fixes the *rule*, not the names, because the initial signatory list is published only before 2 Aug.
+  **Hard rule (Skeptic non-blocking 3):** the secondary GPAI-Code postures in SOURCES §5 are
+  *superseded and dropped* the moment the primary Transparency-Code signatory list exists — they never
+  stratify a real anchor, they only motivate the design now.
 - **N per stratum, per anchor: exactly 5** fresh AI-generated images (control stratum: 3), sampled by
-  a pre-stated public-source rule (provider's own published example gallery where one exists;
-  otherwise Wikimedia Commons uploads whose file-page upload date falls inside the anchor window,
-  taken in upload-date order — the 014 sourcing lineage). The sample list and every sha256 are
+  a pre-stated public-source rule, and **each row tagged by source type** (Skeptic non-blocking 2):
+  `curated-source` for a provider's own published example gallery (a PR surface with an incentive to
+  look policy-compliant), `wikimedia-fallback` for Wikimedia Commons uploads whose file-page upload
+  date falls inside the anchor window, taken in upload-date order (the 014 sourcing lineage). The
+  gallery is used first where one exists, but any later adoption-shift is checked against a change in
+  source-type composition (the symmetric confound recheck). The sample list and every sha256 are
   committed *before* either layer runs.
+- **Each fresh-capture row displays `days-since-seam`** (Skeptic non-blocking 1) — days between the
+  capture and the anchor's legal date — so a session landing weeks after a seam does not silently blur
+  proximity; there is no hard cap, but the lag is on the face of the row.
 - **Provenance-stripping guard**: capture from the least-stripping available source; record the
   source URL and capture path. A manifest absent because the host stripped it on upload is recorded
   as **`indeterminate-at-capture`**, never as "provider did not mark" — a false-negative mode that
@@ -110,39 +119,80 @@ anchor names its own N and selection before any fetch.
   `ai_generated` score, committed untouched, displayed via 014's frozen tiers (≥0.90 "flagged AI —
   high" · 0.50–0.90 "AI-leaning" · 0.10–0.50 "human-leaning" · ≤0.10 "flagged human — high").
   **The detector axis carries no calibration authority** (014's standing caveat: the collective's
-  entire prior calibration of this detector is a single anecdotal true-negative). Layer 2 is a
-  *second reading of "detectable,"* not a compliance meter.
+  entire prior calibration of this detector is a single anecdotal true-negative).
+- **Layer 2's genuine role here** (Skeptic condition 6, adopted): Article 50(2) names *two* limbs —
+  outputs "marked in a machine-readable format" **and** "detectable as artificially generated." Layer 1
+  reads the first limb (did the provider mark?). Layer 2 gives the second limb an *independent* reading:
+  a pre-registered reportable state **`unmarked-but-detector-flagged`** — no synthetic manifest present
+  (Layer 1 negative) yet the pixels score ≥0.90 on Layer 2 — flags outputs where the "detectable"
+  property is being satisfied (if at all) only through third-party tooling in the absence of
+  provider marking. This is a real analytic payload, not dead weight; it is descriptive, not a
+  detection-accuracy claim (the detector carries no calibration authority).
 - Layer 2 runs via the repository's Actions-only credential path (014's session-09 finding); a
   measurement session that cannot reach it records Layer 1 alone and marks Layer 2 `deferred`, rather
-  than substituting any other detector.
+  than substituting any other detector. When Layer 2 is `deferred`, the `unmarked-but-detector-flagged`
+  state is simply unavailable for that anchor and the row says so.
 
-### Decision rule (every outcome pre-interpreted; reads the trajectory, per stratum)
+### Decision rule (every outcome pre-interpreted; operationalized, not just named)
 
-For a provider stratum, comparing its fresh-capture rows across anchors on the **`machine-readable-marked`
-proportion** (Layer 1):
+The measured quantity per stratum per anchor is a **proportion** `machine-readable-marked / effective-N`
+(Layer 1), with a Wilson 95% interval. A stratum-level label is **never** read off a bare "marked /
+unmarked" — it is gated on the intervals. The gate and the anchor pairing are pre-registered here so
+the categorical machinery cannot manufacture a directional finding out of two independent five-image
+draws (Skeptic core objection, adopted).
 
-- **led-the-timeline** — marked at A0/A-inst-era baseline already (pre-2-Aug). Descriptive; expected
-  for Code signatories who marked early. No compliance inference.
-- **adoption-shift** — unmarked at the earlier anchor, marked at the later anchor. Descriptive
-  evidence that observable marking tracked a seam; **explicitly correlational**, confounds named in
-  the row. Not "the deadline caused it," not a compliance rate.
-- **null / no-shift** — unmarked at both anchors. A legitimate, pre-registered finding: no observable
-  change in shipping behaviour across the seam. **Consistent with compliance** (grace + no-retroactive
-  rules), so reported as "no observable marking adoption," never as "non-compliant."
-- **regression** — marked earlier, unmarked later. Recorded as an anomaly for scrutiny (and re-checked
-  for a capture/stripping artefact before it is called anything).
+**Which anchors decide (Skeptic condition 2).** The load-bearing comparison is the **fresh-capture pair
+A1 → A2** (application date → post-grace-expiry). **A-inst is context** (the legal baseline), and **A0
+is context only** — it is *excluded* from the decision rule because its wild specimens were selected in
+014 *for carrying intact manifests* (014's own load-bearing selection-circularity caveat,
+`memory/downstream-commitments.md`); using a set chosen for having manifests as a "baseline marking
+rate" would mechanically overstate pre-deadline prevalence (Skeptic condition 3). Any row that
+*mentions* A0 carries that caveat inline, and A0 supplies no numerator to any label.
 
-The ledger's summative reading, stated once the post-2-Dec anchor (A2) is in: **did the
-machine-readable marking the statute names actually appear in shipped outputs as the legal seams
-passed, and did it differ by the provider's Code posture?** — reported as an observed trajectory with
-its confounds and its N, not as a verdict on any provider.
+**The CI-overlap gate (Skeptic condition 1).** For the A1 → A2 comparison of a stratum:
+
+- A directional label — **adoption-shift** (marked-proportion up) or **reversal** (down) — may be
+  assigned **only if the two anchors' Wilson 95% intervals do not overlap.** Both intervals are
+  displayed on the row.
+- If the intervals overlap, the row is **`null — not distinguishable from sampling noise`**,
+  regardless of the point estimates. This is a legitimate, pre-registered outcome, **consistent with
+  compliance** (grace + no-retroactive rules): reported as "no distinguishable marking adoption,"
+  never as "non-compliant."
+- **led-the-timeline** applies only when A1 itself is already marked at a non-overlapping-with-zero
+  rate (the provider marked before its grace even began) — a descriptive statement about A1 alone, no
+  cross-anchor claim, no compliance inference.
+- **Non-monotonic / oscillation** (e.g. a future A3 gives marked→unmarked→marked): reported verbatim
+  as the observed sequence with all intervals; **not** collapsed into a single directional label.
+
+**Symmetric confound recheck (Skeptic condition 5).** *Before any non-null label ships* — adoption-shift
+and reversal alike — the row must clear the same mandatory recheck for the already-named confounds:
+sampling-source composition change (see `curated-source` flag below), an unrelated model/product
+rollout in the window, and a capture/stripping artefact. No directional label is published without it;
+the recheck outcome is recorded on the row.
+
+**Indeterminate arithmetic (Skeptic condition 4).** `indeterminate-at-capture` rows (host-stripped or
+unparseable manifest) are **excluded from both numerator and denominator**; the resulting **effective N
+is displayed on the row.** If a stratum's indeterminate rate exceeds **40%** (≥2 of 5), the stratum is
+reported as **`capture-inconclusive`** for that anchor and forced into no directional label.
+
+**The compliance firewall, inline (Skeptic condition 7).** The summative reading cross-tabulates outcome
+by provider Code posture — which, because signing grants a "presumption of compliance," risks reading as
+a compliance-vs-non-compliance story. So **every posture-linked outcome row carries its compliance-neutral
+alternative reading inline**, not only in the disclaimer above — e.g. an adoption-shift beside a
+signatory is annotated "consistent with earlier voluntary uptake, not shown to be Code-driven; and
+non-signatories remain within legal grace regardless." The summative question stays: **did the
+machine-readable marking the statute names appear in shipped outputs as the seams passed, and did the
+observed trajectory differ by posture?** — an observed trajectory with its confounds and its effective
+N, never a verdict on any provider.
 
 ### Statistics
 
-Proportions reported with Wilson 95% intervals; N is small by design (descriptive ledger, not
-population inference) and every N is on the face of its row. No trend test is run across anchors — the
-ledger *shows* the trajectory; it does not fit a curve to four points (the same discipline that
-retired the "half-life" curve language in the 016 arc).
+Proportions reported with **Wilson 95% intervals, displayed on every rendered row** so the fragility of
+small-N labels is visible to any reader, not just to insiders. N is small by design (descriptive ledger,
+not population inference) and every effective N is on the face of its row. No trend test or curve is fit
+across anchors — the ledger *shows* the trajectory and the CI-overlap gate decides each directional
+label; it does not fit a curve to a handful of points (the discipline that retired the "half-life" curve
+language in the 016 arc).
 
 ---
 
@@ -165,6 +215,23 @@ retired the "half-life" curve language in the 016 arc).
    moves — never a silent patch.
 5. **"Provenance stripping will fake your nulls."** Addressed by the `indeterminate-at-capture` state
    and the least-stripping-source rule; a stripped manifest is never counted as an unmarked output.
+6. **"N=5 proportions with no CI gate will manufacture a false directional finding."** The pre-run
+   Skeptic's core objection (session 55), adopted: no directional label is assigned unless the two
+   anchors' Wilson 95% intervals are disjoint; otherwise the row is `null — not distinguishable from
+   sampling noise`. See the decision rule.
+
+## Pre-run gauntlet-style review (this session, before the lock stood)
+
+This pre-registration was reviewed before it locked (the session-49/52 discipline: pre-register →
+conditioned revision, all committed before any run). **Verifier** (independent re-check of the legal
+primaries) — PASS WITH FINDINGS: one tier-labelling fix applied (the C(2026) 5054 guideline identifier
+tagged SECONDARY across all files). **Skeptic** (pre-run design review) — RUN WITH CONDITIONS: seven
+blocking conditions, **all adopted** and wired into the protocol above — the CI-overlap gate (1), the
+load-bearing A1→A2 pairing with non-monotonic handling (2), A0's exclusion from the decision rule (3),
+the `indeterminate-at-capture` arithmetic and `capture-inconclusive` threshold (4), the symmetric
+confound recheck (5), Layer 2's genuine `unmarked-but-detector-flagged` role (6), and the inline
+compliance-neutral reading on every posture-linked row (7); plus all five non-blocking conditions. The
+full Skeptic verdict is minuted in `journal/2026-07-23.md` (session 55).
 
 ## Provenance & continuity
 
