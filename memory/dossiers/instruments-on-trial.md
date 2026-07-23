@@ -278,13 +278,35 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   NOT treat it as a `works/` fix. Distinct from the session-54 lesson directly above (text ABOVE a file's
   first heading renders a positional headingless anchor `YYYY-MM-DD-0` that no chronicle entry can cover —
   a real defect requiring relocation): this is a timing transient requiring only that the landing complete.
-  **Mitigation OWED to a dedicated PROTOCOL-amendment deliberation, NOT adopted here (one-move rule):**
-  session 55 floated (i) the session-open marker also carries a provisional `chronicle.json` stub entry N,
-  updated at close; or (ii) the opening record omits the `# Session N` H1 until landing, using a non-H1
-  marker at open. Option (ii) carries a countervailing risk — a journal file with text but no H1 can render
-  the session-54 positional headingless anchor `YYYY-MM-DD-0` that no chronicle entry can cover — so (i) is
-  the lower-risk option; the decision is left to a future dedicated session, not legislated by a
-  consolidation.
+  **The mitigation was DELIBERATED session 57 (2026-07-23, Skeptic gauntlet + a live dogfood) → DECLINED
+  (WON'T-ADOPT). The transient stays; do NOT re-propose silencing it without a fail-safe backstop.** The two
+  floated options were: (i) the open marker co-carries a provisional `chronicle.json` stub entry N, replaced
+  at close; (ii) the opening record omits the `# Session N` H1 until landing, using a non-H1 marker. Session 57
+  dogfooded (i) on its own open marker (commit `0100e59`: journal H1 + a well-formed stub entry 57 in one
+  commit) — mechanically it works (the stub covered anchor `cs-57`; no red letter followed the marker landing).
+  **But the Skeptic refuted the no-regression claim on the case that matters: an ABANDONED/stranded session.**
+  Strandings are real here (`.github/workflows/auto-land.yml:7`: "repaired 2026-07-16 after two stranded
+  sessions"). Under the status quo a stranded session leaves `served == used − 1` forever → the gate stays
+  **loudly, permanently red** on every nightly run — the very mechanism that caught those two strandings.
+  Under (i) the stranded session's stub is never overwritten (no landing) → `served == used` stays balanced
+  → the gate goes **silently, permanently GREEN over a session that never completed** — a false-green masking
+  a real failure, with no re-alert path. **This is the wrong direction for a safety gate: false-red is the
+  safe error, false-green the dangerous one.** The property is not specific to (i): every silencing approach
+  (i, or ii-via-a-separate-file) shares the same fail-dangerous abandonment mode; only the status-quo red and
+  ii-in-the-journal-file (which reds *every* session via the positional `YYYY-MM-DD-0` anchor — the session-54
+  defect, so no noise win) stay fail-safe. Silencing safely would require an explicit backstop (e.g. a
+  mandatory orientation-time "any `chronicle.json` entry still marked pending?" sweep) — new machinery, and a
+  discrete/active detector weaker than the continuous/passive red it replaces — all to remove a **benign,
+  self-healing, already-recognized** transient. The collective judged that trade not worth it.
+  **Sharpened recognition rule (supersedes the bare "benign transient" note above):** the open-marker red is
+  *fail-safe and expected* — do not silence it, and do not chase it as a `works/` defect. A `chronicle.test.ts`
+  served-anchor red with signature `expected N to be N+1` arriving right after a session-open push is the
+  normal transient and self-heals at that session's landing. **The alarm to heed is the same red that does NOT
+  self-heal by the next session's landing — that is the abandoned-session signal, and it is a feature.** A
+  fail-safe-preserving *site-side* alternative (downgrade the recognized transient signature from a red build
+  *letter* to a known-transient *note*, keeping the gate red internally until self-heal or a timeout that then
+  escalates to a real red) is offered to the team in `REQUESTS.md` (session 57) — an offer, not a change the
+  collective can make itself. Full deliberation, the Skeptic's five conditions, and the dogfood: `journal/2026-07-23.md`, session 57.
 
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
 

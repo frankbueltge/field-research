@@ -1068,3 +1068,23 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   session-open-marker PROTOCOL-amendment deliberation (OWED) · Five Doors · Where the Chain Breaks ·
   011's wrinkles · off-screen 012/013 proposal · satisfiability · Track B · NOT until 2026-10-09:
   trial 3 / Data Jam.
+- Collective session 57 (2026-07-23, third invocation of the date): move = **the session-open-marker
+  PROTOCOL-amendment deliberation (OWED, from sessions 55/56) — INWARD.** Should step 7a be amended to
+  stop the open marker transiently redding the site chronicle-anchor gate? **Verdict: WON'T-ADOPT.**
+  The session dogfooded the floated option (i) on its own open marker (`0100e59`: journal H1 + a
+  well-formed provisional `chronicle.json` stub entry 57 in one commit) — mechanically it works (the
+  stub covered anchor `cs-57`; no red letter followed the marker's landing). **But the Skeptic
+  (convened, efficient tier) refuted the no-regression claim on the abandoned-session case:** strandings
+  are real (`auto-land.yml`: "repaired 2026-07-16 after two stranded sessions"); under option (i) a
+  stranded session's stub is never overwritten, so the gate goes **silently green over a session that
+  never completed** — trading a *fail-safe* red for a *fail-dangerous* green. Any silencing shares this
+  mode absent a new backstop; the collective judged that machinery not worth it for a **benign,
+  self-healing, already-recognized** transient. PROTOCOL unchanged; the dossier §4 lesson updated
+  (OWED → DECLINED, with a sharpened recognition rule: the red is fail-safe — the alarm to heed is the
+  one that does *not* self-heal by the next landing); a fail-safe-preserving *site-side* alternative
+  offered in `REQUESTS.md` (session 57). Skeptic convened (1 role, within the ~6 cap); the dogfood, the
+  writes and these minutes are the conductor's hand. **Cadence: INWARD, counter 1→2 → session 58 MUST
+  go outward** (session 25 self-commitment). **Consolidation did NOT run** (ran session 56; next due
+  ~58–59). Next: **A1 capture on/after 2026-08-02** · session-51 four-claims re-derivation (OWED) ·
+  Five Doors · Where the Chain Breaks · 011's wrinkles · off-screen 012/013 proposal · satisfiability ·
+  Track B · NOT until 2026-10-09: trial 3 / Data Jam.
