@@ -1,0 +1,46 @@
+{
+  "work": "The Grandfather Clause",
+  "kind": "append-only date-anchored ledger",
+  "pre_registered": "2026-07-23 (collective session 55)",
+  "note": "Rows are append-only. A correction is a NEW dated row, never an edit to an existing one. Each fresh-capture anchor commits its sample list and every sha256 BEFORE either layer runs.",
+  "anchors": [
+    {
+      "anchor": "A-inst",
+      "date": "2026-07-23",
+      "type": "institutional-baseline",
+      "captured_before_deadline": true,
+      "observations": {
+        "art50_2_marking_duty_applies": "2026-08-02",
+        "marking_duty_text": "outputs marked in a machine-readable format and detectable as artificially generated or manipulated (Art. 50(2), Reg. (EU) 2024/1689)",
+        "grandfathering_in_market_systems_until": "2026-12-02",
+        "grandfathering_status": "provisional — Commission FAQ (17 Jul 2026) states 'a targeted grandfathering rule ... If adopted'; Digital Omnibus politically agreed, OJ publication pending as of this anchor",
+        "no_retroactive_marking": "outputs generated and already made available before 2026-08-02 need not be marked/labelled retroactively (Commission FAQ, 17 Jul 2026)",
+        "guidelines": "Guidelines on Article 50 transparency, Communication C(2026) 5054 final, dated 2026-07-20",
+        "code_of_practice": "Code of Practice on Transparency of AI-Generated Content, final published 2026-06-10; voluntary; presumption-of-compliance for signatories",
+        "code_technical_measures_secondary": {
+          "text_watermark_threshold_tokens": 200,
+          "two_layer_marking": "at least two machine-readable layers: digitally-signed + timestamped metadata AND an imperceptible watermark (single-layer only in narrow cases)",
+          "free_detection_default": true,
+          "detection_carveout_below_monthly_users": 1000000,
+          "eu_icons": ["AI GENERATED", "AI MODIFIED", "AI"],
+          "tier": "SECONDARY (ppc.land summary of C(2026) 5054); to be re-verified against the primary guidelines text before any load-bearing use"
+        },
+        "signatory_mechanism": "signatory form to AI Office; per Commission FAQ submit by 2026-07-27 18:00 CEST to appear on the initial list published before 2026-08-02 (a secondary reported 2026-07-22; primary FAQ governs)",
+        "provider_postures_secondary": "Meta publicly declined the EU AI Act GPAI Code of Practice citing 'legal uncertainties' (Joel Kaplan); OpenAI and Mistral stated they would support the voluntary Code. NOTE: these documented refusals/supports are primarily reported against the GPAI (models) Code, which is distinct from the Transparency-of-AI-generated-content Code this work concerns; provider posture toward the Transparency Code is to be verified against its primary signatory list at anchor A1."
+      }
+    },
+    {
+      "anchor": "A0",
+      "date": "2026-07-11",
+      "type": "grandfathered-baseline-reference",
+      "captured_before_deadline": true,
+      "grandfather_status": "doubly grandfathered — outputs made available before 2026-08-02 (no retroactive marking) from systems already on the market (grace to 2026-12-02)",
+      "source": "works/2026-07-11-split-seal/ (instrument 014); 15 sha256-pinned specimens, two-layer-scored; see data/specimens.json, data/layer1.json, data/layer2.json",
+      "observation": "Reference only — not re-scored this session. Establishes the pre-deadline two-layer state of a fixed specimen set. Its wild AI images (w01 ChatGPT/DALL·E, w02 ChatGPT+DALL·E, w03 MS Designer) are the pre-deadline marking baseline of record."
+    }
+  ],
+  "pending_anchors": [
+    {"anchor": "A1", "trigger": "first collective session on/after 2026-08-02", "action": "fresh per-provider capture (N=5 per generative stratum, 3 control) + two-layer score, per README PRE-REGISTERED PROTOCOL"},
+    {"anchor": "A2", "trigger": "first collective session on/after 2026-12-02", "action": "fresh per-provider capture + two-layer score; grace expired"}
+  ]
+}
