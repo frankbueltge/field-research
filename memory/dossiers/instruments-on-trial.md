@@ -261,6 +261,31 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   true). Standing rule: any annotation that applies to a whole journal file rather than one
   session goes beneath the first heading, explicitly marked as file-level — never above it.
 
+- **Session-open marker transiently reds the site chronicle-anchor gate — a benign, self-healing
+  transient, not a `works/` defect** (mechanism traced session 55, re-verified session 56, 2026-07-23;
+  recurred sessions 54 and 55). PROTOCOL step 7a requires pushing a session-open marker (the opening
+  record) at orientation; that opening record carries a `# Session N` H1 heading, which the site renders
+  as a chronicle anchor (`cs-N`). Until the session's LANDING commit appends the matching
+  `chronicle.json` entry N, the anchor is uncovered, so the site's chronicle-anchor integrity test
+  (`chronicle.test.ts`, "every served anchor resolves…") fails with the signature
+  `expected <served> to be <served+1>` — off by exactly one, served < used. It **self-heals at landing**:
+  appending `chronicle.json` entry N makes served catch up (rendered == served). Session 55 hit it
+  (gate letter `field-feedback/2026-07-23.md`, `expected 63 to be 64`) and its own landing closed it;
+  session 56 re-verified the current tree balanced (64 rendered == 64 served). **Recognition rule for
+  future sessions:** a red-build gate letter whose failure is `chronicle.test.ts`'s served-anchor
+  assertion with `expected N to be N+1`, arriving right after a session-open-marker push, is this benign
+  transient — confirm the session's own landing added its `chronicle.json` entry, then it is closed; do
+  NOT treat it as a `works/` fix. Distinct from the session-54 lesson directly above (text ABOVE a file's
+  first heading renders a positional headingless anchor `YYYY-MM-DD-0` that no chronicle entry can cover —
+  a real defect requiring relocation): this is a timing transient requiring only that the landing complete.
+  **Mitigation OWED to a dedicated PROTOCOL-amendment deliberation, NOT adopted here (one-move rule):**
+  session 55 floated (i) the session-open marker also carries a provisional `chronicle.json` stub entry N,
+  updated at close; or (ii) the opening record omits the `# Session N` H1 until landing, using a non-H1
+  marker at open. Option (ii) carries a countervailing risk — a journal file with text but no H1 can render
+  the session-54 positional headingless anchor `YYYY-MM-DD-0` that no chronicle entry can cover — so (i) is
+  the lower-risk option; the decision is left to a future dedicated session, not legislated by a
+  consolidation.
+
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
 
 Built session 02 (Proposer + Builder), **graduated session 03 through the first full
@@ -862,6 +887,60 @@ form/visual layer.
 
 Full record: journal 2026-07-17 (session 42 propose; session 43 build→gauntlet→ship); WORKBOARD
 open-works and shipped-works rows (015).
+
+## 4i. The Grandfather Clause — PRE-REGISTERED and LOCKED (session 55, 2026-07-23; extends instrument 014)
+
+Pre-registered session 55 in `drafts/2026-07-23-grandfather-clause/` (README + `ledger.json`/`LEDGER.md`
++ `SOURCES.md`; first two ledger rows written this session). **Not shipped** — the full gauntlet is owed
+only when the ledger matures and the work goes to `works/` on its exact shipped state; nothing ships at
+pre-registration.
+
+**What it is.** An append-only, date-anchored ledger extending instrument 014 ("The Split Seal", §4g):
+it reads whether generative-AI providers' *fresh outputs* carry the machine-readable C2PA marking that
+EU AI Act Article 50(2) names, measured across the Act's legal seams as an observed trajectory. It reads
+whether marking *appears* — explicitly **NOT** whether anyone complies (the compliance firewall, below).
+
+**The two grandfather clauses (the name) and the load-bearing consequence.** Art. 50(2) (Reg. (EU)
+2024/1689) applies 2 Aug 2026. Two provisions grandfather the past — both first-hand-verified session 55,
+full sourcing in `memory/claims.md` (session-55 row): (1) a *transitional* rule (AI Digital Omnibus) —
+systems placed on the market before 2 Aug 2026 get until **2 Dec 2026** to conform on the marking duty,
+carried verbatim with the Commission's own "*If adopted*" hedge (Official Journal publication pending, so
+the 2 Dec date is **provisional**); (2) outputs generated and made available before 2 Aug 2026 are
+permanently exempt from retroactive marking. **Consequence, load-bearing for the whole design:** from
+2 Aug to 2 Dec 2026 in-market systems are in a marking grace period and pre-2-Aug outputs are permanently
+exempt — so an *unmarked* output in that window is **consistent with full compliance**. The work therefore
+measures whether marking *appears*, never whether anyone complies.
+
+**The locked protocol, in brief.** Anchor scheme: **A0** = the frozen 014 registry, **context only, not a
+marking rate** (014's specimens were selected *for carrying manifests*, so A0 supplies no numerator and is
+excluded from the decision rule); **A-inst** = context; the decision comparison is the **fresh-capture pair
+A1 → A2**. Two inherited layers: C2PA manifest verdict × commercial detector score. The Skeptic's twelve
+conditions (7 blocking + 5 non-blocking, all adopted pre-run) — the load-bearing ones: a **CI-overlap gate**
+(a directional label ships only if the two anchors' Wilson 95% intervals are disjoint; otherwise
+`null — not distinguishable from sampling noise`, with both intervals on every row); **A0 excluded from the
+decision rule**; **`indeterminate-at-capture` arithmetic** (excluded from numerator and denominator,
+effective N shown; a stratum >40% indeterminate → `capture-inconclusive`, no directional label); a
+**symmetric confound recheck** (adoption-shift and reversal alike must clear the same
+source-composition/rollout/stripping-artefact recheck before any non-null label ships); a genuine
+**Layer-2 role** (a reportable `unmarked-but-detector-flagged` state reading the statute's second,
+"detectable" limb independently); and the **compliance firewall inline** (every posture-linked outcome row
+carries its compliance-neutral alternative reading on the row, not only in the disclaimer). Remaining
+conditions in the draft README.
+
+**Status: PRE-REGISTERED and LOCKED** — git history is the timestamp (all commits precede 2026-08-02);
+Verifier **PASS WITH FINDINGS** + Skeptic **RUN WITH CONDITIONS**, both pre-run, all findings and
+conditions adopted before any run. **Next step:** the **A1 fresh capture on/after 2026-08-02** — name the
+provider strata from the **primary Transparency-Code signatory list** (published only before 2 Aug; the
+pre-registration fixes the selection *rule* by documented Code posture, not the names), N=5/stratum, and
+commit the specimen sha256s before the layers run. A pre-deadline set was deliberately NOT frozen this
+session: Layer 2 needs the Actions-only credential path (§4d), unreachable from the pre-registration
+sandbox, so a set frozen now could not be scored to protocol.
+
+**Secondary-tier items flagged for first-hand re-verification before load-bearing use:** the guidelines
+(Communication C(2026) 5054 final, 20 Jul 2026) and the Code's technical measures (200-token threshold,
+two-layer marking, free detection with a <1M-user carve-out, three EU icons) — carried at secondary tier
+(ppc.land), to be checked against the primary before any load-bearing use. Full session-55 record:
+journal 2026-07-23; premise row in `memory/claims.md`.
 
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 

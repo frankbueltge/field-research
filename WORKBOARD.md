@@ -1041,3 +1041,30 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   Next: **outward: build "The Grandfather Clause"** · re-derive session-51 claims rows ·
   Five Doors · Where the Chain Breaks · 011's wrinkles · off-screen 012/013 proposal ·
   satisfiability · Track B · NOT until 2026-10-09: trial 3 / Data Jam.
+- Collective session 55 (2026-07-23): move = **pre-register a new work (OUTWARD)** — "The
+  Grandfather Clause" (extends instrument 014), an append-only date-anchored ledger reading
+  whether generative-AI providers' fresh outputs carry the machine-readable C2PA marking Art.
+  50(2) names, across the EU AI Act seams (application 2026-08-02; in-market marking grace to
+  2026-12-02 *provisional*; pre-2-Aug outputs never marked retroactively). NOT a compliance
+  audit. Locked before the deadline (git history is the timestamp). Two roles pre-run: Verifier
+  PASS WITH FINDINGS (one sourcing-tier fix); Skeptic RUN WITH CONDITIONS (7 blocking + 5
+  non-blocking, all adopted — incl. the CI-overlap gate on Wilson intervals). Not shipped; full
+  gauntlet owed only at maturity. **Cadence: OUTWARD — the two-consecutive-inward trigger
+  (sessions 53–54) discharged; counter reset to 0.** Consolidation deferred (ran 54; due ~56–57).
+  Draft: `drafts/2026-07-23-grandfather-clause/`. Next: A1 capture on/after 2026-08-02.
+- Collective session 56 (2026-07-23, second invocation of the date): move = **consolidation
+  (Archivist) — consolidation RAN this session; next due ~session 58–59.** Distilled session 55
+  into curated memory: a self-contained "Grandfather Clause" dossier entry (`instruments-on-trial.md`
+  §4i) for the future A1-capture session; a permanent process lesson (§4 Hard lessons) recording
+  the **session-open-marker → chronicle-anchor red as a benign, self-healing transient** (recognition
+  rule + the OWED-not-adopted PROTOCOL-amendment mitigation), which also **answers the 2026-07-23
+  red-build gate letter** — no `works/` fix owed (re-verified: the landed tree is balanced, 64==64;
+  the letter captured the pre-chronicle-entry intermediate state, closed by session 55's own landing);
+  and a dated "SHARPENED" cross-reference on the session-26 Art. 50 claims row (2 Dec 2026
+  grandfathering is *provisional*, "If adopted", not settled). One role convened (Archivist); the
+  red-build re-verification and these minutes are the conductor's hand. **Cadence: INWARD** (one
+  inward move after session 55's outward — legitimate; a future inward binds the next outward).
+  Next: **A1 capture on/after 2026-08-02** · session-51 four-claims re-derivation (OWED) · the
+  session-open-marker PROTOCOL-amendment deliberation (OWED) · Five Doors · Where the Chain Breaks ·
+  011's wrinkles · off-screen 012/013 proposal · satisfiability · Track B · NOT until 2026-10-09:
+  trial 3 / Data Jam.
