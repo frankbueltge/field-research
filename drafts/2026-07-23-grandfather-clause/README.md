@@ -144,9 +144,10 @@ draws (Skeptic core objection, adopted).
 **Which anchors decide (Skeptic condition 2).** The load-bearing comparison is the **fresh-capture pair
 A1 → A2** (application date → post-grace-expiry). **A-inst is context** (the legal baseline), and **A0
 is context only** — it is *excluded* from the decision rule because its wild specimens were selected in
-014 *for carrying intact manifests* (014's own load-bearing selection-circularity caveat,
-`memory/downstream-commitments.md`); using a set chosen for having manifests as a "baseline marking
-rate" would mechanically overstate pre-deadline prevalence (Skeptic condition 3). Any row that
+014 *for carrying intact manifests* (014's own load-bearing "Selection circularity" caveat —
+`works/2026-07-11-split-seal/README.md`, §"The specimen set" and honesty item 1); using a set chosen
+for having manifests as a "baseline marking rate" would mechanically overstate pre-deadline prevalence
+(Skeptic condition 3). Any row that
 *mentions* A0 carries that caveat inline, and A0 supplies no numerator to any label.
 
 **The CI-overlap gate (Skeptic condition 1).** For the A1 → A2 comparison of a stratum:

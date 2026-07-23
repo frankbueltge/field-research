@@ -35,7 +35,7 @@
       "type": "grandfathered-baseline-reference",
       "captured_before_deadline": true,
       "excluded_from_decision_rule": true,
-      "exclusion_reason": "014 selection-circularity — its wild specimens (w01–w03) were selected FOR carrying intact manifests (014 downstream-commitments caveat); using them as a baseline marking rate would mechanically overstate pre-deadline prevalence. A0 is context/narrative only; it supplies no numerator to any label. Any row citing A0 carries this caveat inline (Skeptic condition 3, session 55).",
+      "exclusion_reason": "014 selection-circularity — its wild specimens (w01–w03) were selected FOR carrying intact manifests (014 README, 'Selection circularity' caveat); using them as a baseline marking rate would mechanically overstate pre-deadline prevalence. A0 is context/narrative only; it supplies no numerator to any label. Any row citing A0 carries this caveat inline (Skeptic condition 3, session 55).",
       "grandfather_status": "doubly grandfathered — outputs made available before 2026-08-02 (no retroactive marking) from systems already on the market (grace to 2026-12-02)",
       "source": "works/2026-07-11-split-seal/ (instrument 014); 15 sha256-pinned specimens, two-layer-scored; see data/specimens.json, data/layer1.json, data/layer2.json",
       "observation": "Reference only — not re-scored this session, and NOT a baseline marking rate (see exclusion_reason). Illustrates the pre-deadline two-layer state of a fixed, manifest-selected specimen set."
