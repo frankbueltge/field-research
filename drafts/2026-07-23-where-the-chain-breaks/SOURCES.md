@@ -11,13 +11,19 @@ Digital Open Source Information in Investigating Violations of International Cri
 and Humanitarian Law.** UN OHCHR + Human Rights Center, UC Berkeley School of Law.
 Edition fetched: the 2024-01 posting of the 2022 edition.
 URL: https://www.ohchr.org/sites/default/files/2024-01/OHCHR_BerkeleyProtocol.pdf
-**Fetched and read first-hand 2026-07-23** (session 58; direct fetch and the 2022-04 path 503'd /
-404'd, retrieved via the web-research extractor per PROTOCOL's fallback). Archival snapshot at
-ship time is owed (standing policy since instrument 016).
+**Fetched and read first-hand 2026-07-23** (session 58; via the web-research extractor per PROTOCOL's
+fallback). **Re-verified first-hand 2026-07-24 (session 59, the gauntlet):** the same URL returned
+**HTTP 200** by direct fetch this session; the downloaded PDF is
+**sha256 `caa5ea4806545658e0cfd21ed5d21c0250922903eece89bf58d26756dac3a0ae`, 3,166,259 bytes** (pinned
+per the archival-snapshot-at-ship-time policy standing since instrument 016). Every load-bearing phrase
+below was re-confirmed verbatim against this PDF this session; the printed paragraph numbers **153, 154,
+155, 167** were confirmed. The six-phase enumeration is verbatim but appears in the **unnumbered §VI
+chapter summary** and the investigation-cycle figure — there is no printed "para 139"; the earlier
+"para 139" citation was softened at the gauntlet.
 
 Verbatim, load-bearing passages (paragraph numbers as printed):
 
-- **§VI Investigation Process, para 139 (chapter summary):** "There are six main phases to the
+- **§VI Investigation Process, chapter summary (unnumbered; no printed paragraph number):** "There are six main phases to the
   investigation process. These are (a) online inquiry; (b) preliminary assessment; (c) collection;
   (d) preservation; (e) verification; and (f) investigative analysis."
 - **The investigation-cycle figure (glosses):** collection = "processes for capturing digital items
@@ -64,9 +70,20 @@ purge recovery (session 53) — see the work's `RECOVERY.md`. All caveats of 016
 social-platform bot-shell detector; aggregate-only containment; nothing implied about the report,
 its authors, or its evidence) travel with these figures unchanged.
 
-**Owed at gauntlet:** re-state 016's live-arm sampling method (how n=25 was drawn from the 163
-in-window captures) from its frozen `sample.json` / pre-registration, and pin it here (Skeptic
-pre-read N1 residue).
+**Live-arm sampling method — CLOSED (session 59, from the frozen `sample.json` `selection_rule`,
+verbatim):** *"archived arm: per URL, earliest in-window(2023-10-01..2025-01-01) HTTP-200 capture from
+frozen session-41 CDX census. x-twitter & telegram = full census of eligible URLs; news-org =
+deterministic every-Nth sample (positive control). live arm: deterministic every-Nth subset per
+stratum, fetched live 2026-07-20."* So the archived X arm is the **full census** of the 163 eligible
+in-window captures, and the live n=25 is a **pre-registered deterministic every-Nth subset of those
+same 163 URLs** (confirmed first-hand: the 25 live URLs are an exact subset of the archived 163 — the
+same population, not a different draw; the every-Nth spread hit 24/25 distinct handles). Not
+cherry-picked. (Skeptic pre-read N1 residue — resolved.)
+
+**Second live run disclosed (session 59, from `results-x-subtest.json`):** the live X arm was fetched
+by two clients — the cited **census client 20/25 = 80.0%** [60.9, 91.1] and a **generic client
+19/25 = 76.0%** [56.6, 88.5]. The intervals overlap heavily (not a contradiction); the lower companion
+figure is recorded here for full disclosure rather than citing only the higher one.
 
 ## §3 — SECONDARY: field context (motivation only; not load-bearing to the claim)
 
