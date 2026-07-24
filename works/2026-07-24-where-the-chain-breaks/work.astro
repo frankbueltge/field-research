@@ -1,46 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Where the Chain Breaks — a custody-chain schematic</title>
-<style>
-  :root{
-    --paper:#f4f1e8; --ink:#1c1a15; --rule:#3a352a; --faint:#8a8271;
-    --pass:#2f6b3a; --fail:#9c2b1e; --hl:#b6892a; --box:#fffdf7;
-  }
-  *{box-sizing:border-box}
-  body{margin:0;background:var(--paper);color:var(--ink);
-    font-family:Georgia,"Times New Roman",serif;line-height:1.5}
-  .wrap{max-width:1040px;margin:0 auto;padding:28px 20px 56px}
-  .mono{font-family:"DejaVu Sans Mono","Courier New",monospace}
-  h1{font-size:24px;margin:0 0 4px;letter-spacing:.2px}
-  .sub{font-size:15px;color:var(--rule);margin:0 0 2px}
-  .status{font-family:"DejaVu Sans Mono","Courier New",monospace;font-size:11px;
-    color:var(--fail);text-transform:uppercase;letter-spacing:.6px;margin:8px 0 20px}
-  .thesis{font-size:16px;border-left:3px solid var(--hl);padding:6px 0 6px 14px;margin:0 0 22px}
-  figure{margin:0 0 10px}
-  svg{width:100%;height:auto;display:block;border:1px solid var(--rule);background:var(--box)}
-  figcaption{font-size:12.5px;color:var(--rule);margin-top:8px}
-  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0 0}
-  @media(max-width:720px){.grid{grid-template-columns:1fr}}
-  .card{border:1px solid var(--rule);background:var(--box);padding:14px 16px}
-  .card h3{margin:0 0 6px;font-size:14px;text-transform:uppercase;letter-spacing:.5px}
-  .card p{margin:0 0 8px;font-size:14px}
-  .num{font-family:"DejaVu Sans Mono","Courier New",monospace}
-  .ci{color:var(--faint);font-size:12px}
-  .objection{border:1px dashed var(--rule);padding:14px 16px;margin:24px 0 0;font-size:14px;background:#efe9da}
-  .objection h3{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--fail)}
-  footer{margin-top:30px;font-size:12px;color:var(--rule);border-top:1px solid var(--rule);padding-top:12px}
-  code{font-family:"DejaVu Sans Mono","Courier New",monospace;font-size:12.5px}
-  .pass{color:var(--pass)} .fail{color:var(--fail)} .hl{color:var(--hl)}
-</style>
-</head>
-<body>
+---
+// works/2026-07-24-where-the-chain-breaks/work.astro
+// "Where the Chain Breaks" — a static, no-JavaScript annotated custody-chain schematic
+// (inline SVG). Instrument 017; graduated through the full gauntlet session 59 (2026-07-24).
+// Format note: this is a conductor's-hand format transform of the gauntleted static work.html
+// into an Astro component (the 014 session-30 precedent) — SVG markup and every measured figure
+// and Protocol quote are byte-identical to the gauntleted state; only the page wrapper and the
+// style scoping (body/:root -> a .cnb container) changed. No client script, no data import,
+// no external fetch — CSP-clean by construction. Provenance & method: ./README.md, ./SOURCES.md.
+---
+<div class="cnb">
 <div class="wrap">
   <h1>Where the Chain Breaks</h1>
   <p class="sub">The coverage&#8211;custody gap, mapped onto a governing standard for open-source evidence</p>
-  <p class="status">Reworked at the session-59 gauntlet &middot; 2026-07-24 &middot; see README</p>
+  <p class="status">Instrument 017 &middot; Meridian &middot; shipped 2026-07-24 (session 59) &middot; an OFFER &mdash; see README</p>
 
   <p class="thesis">The <strong>Berkeley Protocol</strong> (UN OHCHR / UC Berkeley) is a leading standard for
   open-source evidence, treated across the field as its governing methodology (a practitioner-survey framing;
@@ -246,5 +218,36 @@
     <code>README.md</code>.</p>
   </footer>
 </div>
-</body>
-</html>
+</div>
+
+<style>
+  .cnb{
+    --paper:#f4f1e8; --ink:#1c1a15; --rule:#3a352a; --faint:#8a8271;
+    --pass:#2f6b3a; --fail:#9c2b1e; --hl:#b6892a; --box:#fffdf7;
+    background:var(--paper); color:var(--ink);
+    font-family:Georgia,"Times New Roman",serif; line-height:1.5;
+  }
+  .cnb *{box-sizing:border-box}
+  .cnb .wrap{max-width:1040px;margin:0 auto;padding:28px 20px 56px}
+  .cnb .mono{font-family:"DejaVu Sans Mono","Courier New",monospace}
+  .cnb h1{font-size:24px;margin:0 0 4px;letter-spacing:.2px}
+  .cnb .sub{font-size:15px;color:var(--rule);margin:0 0 2px}
+  .cnb .status{font-family:"DejaVu Sans Mono","Courier New",monospace;font-size:11px;
+    color:var(--fail);text-transform:uppercase;letter-spacing:.6px;margin:8px 0 20px}
+  .cnb .thesis{font-size:16px;border-left:3px solid var(--hl);padding:6px 0 6px 14px;margin:0 0 22px}
+  .cnb figure{margin:0 0 10px}
+  .cnb svg{width:100%;height:auto;display:block;border:1px solid var(--rule);background:var(--box)}
+  .cnb figcaption{font-size:12.5px;color:var(--rule);margin-top:8px}
+  .cnb .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0 0}
+  @media(max-width:720px){.cnb .grid{grid-template-columns:1fr}}
+  .cnb .card{border:1px solid var(--rule);background:var(--box);padding:14px 16px}
+  .cnb .card h3{margin:0 0 6px;font-size:14px;text-transform:uppercase;letter-spacing:.5px}
+  .cnb .card p{margin:0 0 8px;font-size:14px}
+  .cnb .num{font-family:"DejaVu Sans Mono","Courier New",monospace}
+  .cnb .ci{color:var(--faint);font-size:12px}
+  .cnb .objection{border:1px dashed var(--rule);padding:14px 16px;margin:24px 0 0;font-size:14px;background:#efe9da}
+  .cnb .objection h3{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--fail)}
+  .cnb footer{margin-top:30px;font-size:12px;color:var(--rule);border-top:1px solid var(--rule);padding-top:12px}
+  .cnb code{font-family:"DejaVu Sans Mono","Courier New",monospace;font-size:12.5px}
+  .cnb .pass{color:var(--pass)} .cnb .fail{color:var(--fail)} .cnb .hl{color:var(--hl)}
+</style>

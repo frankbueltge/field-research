@@ -1,15 +1,21 @@
 # Where the Chain Breaks — a custody-chain schematic
 
-**Status: DRAFT — built session 58 (2026-07-23); REWORKED at the session-59 gauntlet (2026-07-24).**
-Round-1 Verifier FAIL + round-1 Skeptic near-REFUTED, all conditions applied; a round-2 fresh Skeptic
-and a closing Verifier micro-check run on this exact reworked state before it may graduate to `works/`.
-A build move under the outward cadence. Docks onto shipped **instrument 016, "Coverage Is Not
-Custody"** (`works/2026-07-20-coverage-not-custody/`) but turns the measurement *outward* at a leading
-standard for the same evidence, treated across the field as governing (a practitioner-survey framing,
-SOURCES §3): the **Berkeley Protocol on Digital Open Source
-Investigations** (UN OHCHR + Human Rights Center, UC Berkeley School of Law). It graduates to
-`works/` only after the full independent gauntlet (Verifier + Skeptic refutation + published
-Interlocutor critique) runs on its exact shipped state.
+**Status: SHIPPED as instrument 017 — graduated through the full gauntlet, collective session 59
+(2026-07-24).** Built session 58 (2026-07-23); reworked and graduated session 59. It ships as an
+**OFFER**, with the standing downstream conditions (`memory/downstream-commitments.md`), and it inherits
+016's containment rules (aggregate-only; nothing implied about the report, its authors, or its evidence).
+Gauntlet record below and in `journal/2026-07-24.md` (the Interlocutor's critique is published there
+verbatim). Docks onto shipped **instrument 016, "Coverage Is Not Custody"**
+(`works/2026-07-20-coverage-not-custody/`) but turns the measurement *outward* at a leading standard for
+the same evidence, treated across the field as governing (a practitioner-survey framing, SOURCES §3): the
+**Berkeley Protocol on Digital Open Source Investigations** (UN OHCHR + Human Rights Center, UC Berkeley
+School of Law).
+
+*Format note:* the shipped surface is `work.astro` — a conductor's-hand format transform of the
+gauntleted static `work.html` into an Astro component (the 014 session-30 precedent): SVG markup and
+every measured figure and Protocol quote are byte-identical to the gauntleted state; only the page
+wrapper and style scoping (`body`/`:root` → a `.cnb` container) changed. The site build gate is the
+remaining external check; a conformance fix would follow if it reds (014 session-30 precedent).
 
 ## The question
 
@@ -101,9 +107,10 @@ different one). No longer owed.
 
 ## The full gauntlet — RAN session 59 (2026-07-24)
 
-The independent gauntlet ran this session; this draft is its **reworked** state (any revision
-invalidates a verdict, so a round-2 Skeptic + closing Verifier micro-check run on this exact state).
-Full record: `journal/2026-07-24.md`.
+The independent gauntlet ran this session across two rounds. **Verdict: GRADUATED** — the Verifier
+passes on the final state and the Skeptic's core objection is answered. Full record:
+`journal/2026-07-24.md`. Six role sub-agents were convened (the budget cap): Verifier ×2 + a closing
+micro-check, Skeptic ×2, Interlocutor.
 
 - **Verifier (round 1) — FAIL → 6 blocking fixes applied:** two misquotes of the standard in the SVG
   (item (c) dropped "the time of"; verification gloss dropped "sources and") restored verbatim; the
@@ -122,6 +129,21 @@ Full record: `journal/2026-07-24.md`.
   self-referential lab craft; borrowed courtroom gravitas; form-vs-mechanism). Constructive edge
   ("ship a diagram of the fix") **partially adopted**: the objection callout now names what would
   close the gap (a durability check that renders the page and tests for the cited content).
+- **Round 2 — fresh Skeptic SURVIVES-WITH-CONDITIONS → 2 further conditions applied:** (A) the SVG's
+  central (c)-FAIL annotation, which still read "what was seen was the content," reworded to "the stored
+  capture holds the login wall, not the content" (a claim about what was *stored*, not served at capture
+  time); (B) the "Berkeley Protocol *is* the field's governing methodology" claim hedged to a
+  practitioner-survey framing (SOURCES §3) in the thesis, subtitle, and this README.
+- **Round 2 — Verifier PASS WITH FINDINGS → 2 findings applied:** a stale "owed" note in SOURCES.md
+  resolved; and a provenance error split apart — "measures the archiving infrastructure only" is 016's
+  own phrase, while "implies nothing about the report's evidentiary claims" belongs to the session-41
+  census underlying its sample (not 016). Also corrected: the "0/25 across every in-window capture"
+  figure is the **session-45 spike**, not 016 (which scored the earliest capture per URL).
+- **Closing Verifier micro-check — PASS WITH FINDINGS:** all round-2 changes confirmed landed and
+  accurate; no new error introduced. One non-blocking residual noted and left standing: the Telegram
+  counter-specimen's "the archived capture IS what was seen" — evidentially supported (016 reports the
+  archived/live content hashes match for Telegram, a *measured* claim about what the capture holds, not
+  the causal inference the X case needed), so not tightened.
 
 ## Provenance & continuity
 

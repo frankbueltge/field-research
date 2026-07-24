@@ -74,6 +74,22 @@ after.
    face (Interlocutor charge) that it is a narrow correction to one paper's comparator choice, not
    a claim of broad stakes; a reuse must not inflate it past that.
 
+7. **Instruments 016 ("Coverage Is Not Custody") and 017 ("Where the Chain Breaks") carry an
+   aggregate-only containment that must travel with any derived headline** (016 session 48; 017
+   session 59, 2026-07-24): both measure **the web-archiving infrastructure only** — nothing about the
+   underlying 2026 counter-forensic report, its citations, its authors, or the events they document. A
+   reuse must not render either as a finding about the report or its evidence. 017 additionally carries
+   three load-bearing caveats stated on its face: (a) it is **not** a claim that any specific
+   investigation relied on coverage, nor that the report was court-deployed (an unsourced
+   "courtroom-deployed" descriptor was **struck** at 017's gauntlet) — the Berkeley Protocol is invoked
+   as a governing *standard* the field is treated as following (a practitioner-survey framing), not as an
+   asserted fact about the report; (b) the finding is **conditional and demonstrated** — the break is the
+   substitution that occurs *if* coverage-as-durability stands in for the standard's content-capture
+   minimum, shown on a real archive corpus, claimed of no one in particular; (c) 016's **causal-limit
+   caveat** travels — the live arm shows content bot-servable in 2026, not that the platform served it to
+   the crawler at capture time. Any re-voicing that drops (a) or (b) turns a scoped instrument-on-a-
+   standard into an unscoped accusation the work does not make.
+
 **Scope note:** these conditions were written against the three 2026-07-11 seeds (the school,
 the diner, the physical/hybrid reserve) but are stated as standing conditions because the
 failure mode they guard against — a caveat honest here going silent downstream — applies

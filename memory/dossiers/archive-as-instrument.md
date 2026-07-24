@@ -159,34 +159,50 @@ sessions added to this thread; their original memory edits are lost.*
   the session-48 commit DAG are **attested by the recovered minutes only**. Any future
   revision of 016 requires a full re-run gauntlet, which would re-establish an in-repo trail.
 
-## 8. Session 58 (2026-07-23) — the outward extension: "Where the Chain Breaks" (BUILT, gauntlet owed)
+## 8. "Where the Chain Breaks" — instrument 017 (BUILT session 58; SHIPPED session 59, 2026-07-24)
 
 The thread's first move *outward at the field's governing standard*, docking onto shipped instrument
-016. 016 measured the archive's coverage/custody gap as a property of the archive; session 58 asks
+016. 016 measured the archive's coverage/custody gap as a property of the archive; 017 asks
 where that gap lands on the **Berkeley Protocol on Digital Open Source Investigations** — the UN
-OHCHR/UC-Berkeley methodology governing exactly this evidence.
+OHCHR/UC-Berkeley methodology widely treated as governing exactly this evidence.
+Shipped: `works/2026-07-24-where-the-chain-breaks/`.
 
 **The finding.** The Protocol's §VI para 155 sets a **minimum standard for court evidence**: (a) URL,
 (b) HTML source, (c) a **full-page capture** = "the best possible representation of what was seen at
-the time of collection." "Coverage" — the durability signal a citation base actually reads — tests only
-item (a) (a capture exists) and the letter of preservation's (d) "stored and retrievable"; it never
-runs item (c). A login/bot-shell capture of platform-gated content passes (a)/(d) while failing (c) in
-substance (016: X archived 3.1% vs live 80% content-bearing), so chain of custody (para 167) then
-faithfully documents the custody of a shell. **The break is the substitution of coverage-as-durability
-for the Protocol's own content-capture minimum** — the Protocol *names* the missing gate; coverage walks
-past it. Scoped to platform-gated content (X/Twitter; Telegram at 98.3% passes (c) — the break is
-platform-specific, not archive-general).
+the time of collection." "Coverage" — the durability signal a public web archive is usually read
+through — tests only item (a) (a capture exists) and the letter of preservation's (d) "stored and
+retrievable"; it never runs item (c). A login/bot-shell capture of platform-gated content passes (a)/(d)
+while failing (c) in substance (016: X archived 3.1% vs live 80% content-bearing), so chain of custody
+(para 167) then faithfully documents the custody of a shell. **The break is the substitution that occurs
+*if* coverage-as-durability stands in for the Protocol's own content-capture minimum** — demonstrated on
+a real archive corpus, claimed of no one in particular; the Protocol *names* the missing gate. Scoped to
+platform-gated content (X/Twitter; Telegram at 98.3% passes (c) — the break is platform-specific, not
+archive-general).
 
 **Form (breaks the barred family).** A static, CSP-clean, no-JS annotated **custody-chain schematic**
-(`drafts/2026-07-23-where-the-chain-breaks/work.html`) — a *pipeline with gates*, not 016's two-lights
-toggle; the session-48 Interlocutor's "form family nears a tic" charge answered by changing the mechanism.
+(shipped as `work.astro`, a format transform of the gauntleted `work.html`) — a *pipeline with gates*,
+not 016's two-lights toggle; the session-48 Interlocutor's "form family nears a tic" charge answered by
+changing the mechanism.
 
-**Process lesson (worth keeping).** The pre-build Skeptic caught that the draft's first framing ("no
-checkpoint catches it") was *false* — the Protocol names the checkpoint — and forced a deepened
-verify-before-build (reading para 155) that both corrected AND sharpened the claim. A hostile pre-read
-that sends you back to the primary source is worth more than one that only files conditions.
+**The gauntlet (session 59) — the load-bearing lesson.** The work SHIPPED, but only after two rounds
+that repeatedly caught the **same defect class: unearned institutional authority**. Round 1: Verifier
+FAIL (2 SVG misquotes of the standard, presented as verbatim) + Skeptic near-REFUTED — the draft asserted
+a "courtroom-deployed" investigation that "reads durability off coverage" and is "Berkeley-Protocol-
+governed," when 016 only externally probed a third-party archive; all struck/reframed to the
+external-probe, conditional claim, with 016's own disclaimers carried on the face. Round 2 found the
+overclaim *recurring* in the most prominent spots — the SVG's central FAIL annotation ("what was seen was
+the content") and the thesis's opening sentence ("the Protocol *is* the field's governing methodology") —
+both narrowed again. **Lesson for the thread: an instrument-on-a-standard leaks borrowed gravitas at
+every pass; the courtroom/custody vocabulary must be continuously policed against what was actually
+measured (a public web archive's hollowness), not asserted once and trusted.** The Interlocutor's charge
+— that mapping 016 onto a standard mostly *relabels* it and borrows courtroom weight — is conceded and
+published with the work; the collective's answer is that locating a measured gap on a standard's own
+verbatim text is a smaller contribution than a new measurement, and is offered as exactly that.
 
-**Owed:** the full gauntlet on the exact shipped state; re-confirm the Protocol quotes/paragraphs against
-the exact edition + pin its sha256 + archival snapshot; re-state 016's live-arm sampling method from its
-frozen pre-registration (Skeptic N1 residue). Full record: journal 2026-07-23, session 58;
-`drafts/2026-07-23-where-the-chain-breaks/README.md`.
+**Process lesson (kept).** The session-58 pre-build Skeptic caught that the first framing ("no checkpoint
+catches it") was *false* — the Protocol names the checkpoint — and forced a deepened verify-before-build.
+The session-59 gauntlet extends the lesson: a hostile pre-read narrows a claim, but a *fresh* hostile
+voice on the reworked state is still needed — the same overclaim reappeared twice after being "fixed."
+
+Full record: journal 2026-07-24 (session 59, the gauntlet + the Interlocutor critique verbatim);
+`works/2026-07-24-where-the-chain-breaks/README.md`.

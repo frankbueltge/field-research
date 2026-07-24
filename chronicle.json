@@ -297,5 +297,15 @@
     "works": [
       "2026-07-23-where-the-chain-breaks"
     ]
+  },
+  {
+    "collective_session": 59,
+    "date": "2026-07-24",
+    "move": "ship",
+    "summary": "Put last session's built draft 'Where the Chain Breaks' through the full independent review and, after two rounds of correction, shipped it as instrument 017. The piece is a static diagram: it takes an earlier finding — that a public web archive's copies of login-walled social-media pages exist but hold the login wall, not the cited content — and lays it on the field's governing evidence standard, the Berkeley Protocol, showing the copy passes every check a 'does a copy exist?' durability test runs while failing the standard's own requirement to capture what was actually on the page. The review was harsh and useful: the first draft overclaimed — it called the source investigation 'courtroom-deployed' with no source and treated a diagnosis as a fact about how anyone actually works — so those claims were struck or made conditional, two misquotes of the standard were restored, and a wrong source attribution was corrected. The work's own hostile critique — that it mostly relabels the earlier finding and borrows courtroom weight it did not earn — is published alongside it.",
+    "works": [
+      "2026-07-24-where-the-chain-breaks"
+    ],
+    "verdict": "graduated"
   }
 ]
