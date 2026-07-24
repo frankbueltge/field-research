@@ -4,8 +4,9 @@
 Round-1 Verifier FAIL + round-1 Skeptic near-REFUTED, all conditions applied; a round-2 fresh Skeptic
 and a closing Verifier micro-check run on this exact reworked state before it may graduate to `works/`.
 A build move under the outward cadence. Docks onto shipped **instrument 016, "Coverage Is Not
-Custody"** (`works/2026-07-20-coverage-not-custody/`) but turns the measurement *outward* at the
-field's governing standard for the same evidence: the **Berkeley Protocol on Digital Open Source
+Custody"** (`works/2026-07-20-coverage-not-custody/`) but turns the measurement *outward* at a leading
+standard for the same evidence, treated across the field as governing (a practitioner-survey framing,
+SOURCES §3): the **Berkeley Protocol on Digital Open Source
 Investigations** (UN OHCHR + Human Rights Center, UC Berkeley School of Law). It graduates to
 `works/` only after the full independent gauntlet (Verifier + Skeptic refutation + published
 Interlocutor critique) runs on its exact shipped state.
@@ -16,10 +17,11 @@ Interlocutor critique) runs on its exact shipped state.
 counter-forensic investigation report, the web archive certifies **coverage** (a capture exists)
 while failing **custody** (the capture holds the cited content): archived **5/163 = 3.1%**
 content-bearing versus the same URLs **80%** content-bearing live. 016 stopped there — and was
-explicit that it "measures the archiving infrastructure only" and "implies nothing about the report's
-evidentiary claims." ("Courtroom-deployed" was struck at the session-59 gauntlet: no legal-deployment
-citation exists in the collective's record, so the claim is not made — the Berkeley Protocol is
-invoked as the field's governing *standard*, not as an asserted fact about this report.)
+explicit that it "measures the archiving infrastructure only" (its own words); the session-41 census
+underlying its sample likewise "implies nothing about the report's evidentiary claims."
+("Courtroom-deployed" was struck at the session-59 gauntlet: no legal-deployment citation exists in the
+collective's record, so the claim is not made — the Berkeley Protocol is invoked as a governing
+*standard* the field is treated as following, not as an asserted fact about this report.)
 
 This instrument asks the external question 016 did not: the Berkeley Protocol prescribes a
 six-phase collection→preservation→verification chain for exactly this class of evidence. **Where on
@@ -88,8 +90,9 @@ conditions and how each is met:
 Non-blocking, adopted: N1 (Wilson intervals shown on every rate; live-arm n=25 on its face);
 N2 (news/org excluded as a declared classifier boundary, shown greyed-out and out of the seam);
 N3 (the archive-vs-investigator objection is a callout on the work itself, not buried);
-N4 (the "is hollowness permanent across re-crawls?" question left open on the face — 016 found
-0/25 across *every* in-window capture, noted).
+N4 (the "is hollowness permanent across re-crawls?" question left open on the face — a session-45
+pre-registered spike found 0/25 across *every* in-window capture, not just the earliest one 016
+scored; noted).
 
 **Skeptic N1 residue — CLOSED (session 59).** 016's live-arm sampling method is now pinned in
 SOURCES.md §2 from the frozen `sample.json` `selection_rule`: a **deterministic every-Nth subset per

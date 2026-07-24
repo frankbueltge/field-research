@@ -39,11 +39,12 @@
 <body>
 <div class="wrap">
   <h1>Where the Chain Breaks</h1>
-  <p class="sub">The coverage&#8211;custody gap, located on the field's own governing evidence chain</p>
-  <p class="status">Draft &middot; session 58 &middot; full gauntlet owed &middot; not shipped</p>
+  <p class="sub">The coverage&#8211;custody gap, mapped onto a governing standard for open-source evidence</p>
+  <p class="status">Reworked at the session-59 gauntlet &middot; 2026-07-24 &middot; see README</p>
 
-  <p class="thesis">The <strong>Berkeley Protocol</strong> is the field's governing methodology for
-  open-source evidence. Its minimum standard for evidence in court (&#167;VI) is to capture the URL, the
+  <p class="thesis">The <strong>Berkeley Protocol</strong> (UN OHCHR / UC Berkeley) is a leading standard for
+  open-source evidence, treated across the field as its governing methodology (a practitioner-survey framing;
+  see Sources &#167;3). Its minimum standard for evidence in court (&#167;VI) is to capture the URL, the
   HTML source, and a <em>full-page capture</em> &mdash; &ldquo;the best possible representation of what was
   seen at the time of collection.&rdquo; Now read a citation's durability the way a public web archive is
   usually read &mdash; by <strong>coverage</strong>: does an archived capture <em>exist</em> at the URL? We
@@ -150,8 +151,8 @@
     <!-- c: FAIL -->
     <line x1="525" y1="236" x2="525" y2="300" stroke="#9c2b1e" marker-end="url(#arw)"/>
     <text x="525" y="318" text-anchor="middle" class="mono" font-size="14" fill="#9c2b1e" font-weight="bold">&#10007; FAIL</text>
-    <text x="525" y="336" text-anchor="middle" font-size="11" fill="#9c2b1e">what was seen was the content;</text>
-    <text x="525" y="352" text-anchor="middle" font-size="11" fill="#9c2b1e">what was stored is the wall</text>
+    <text x="525" y="336" text-anchor="middle" font-size="11" fill="#9c2b1e">the stored capture holds the</text>
+    <text x="525" y="352" text-anchor="middle" font-size="11" fill="#9c2b1e">login wall, not the content</text>
     <text x="525" y="370" text-anchor="middle" class="mono" font-size="13" fill="#9c2b1e" font-weight="bold">5 / 163 = 3.1%</text>
     <text x="525" y="386" text-anchor="middle" font-size="10.5" fill="#8a8271">content-bearing &middot; Wilson95 [1.3, 7.0]</text>
 
@@ -219,16 +220,17 @@
     specific investigation relied on coverage as its custody chain. The Protocol tells an <em>investigator</em>
     to capture (a)&ndash;(c) themselves with page-rendering tooling; done that way, item (c) is met. And the
     numbers are <strong>not</strong> a finding about the 2026 report, its authors, or its evidence: instrument
-    016 measured only the archiving infrastructure &mdash; in its own words, it &ldquo;measures the archiving
-    infrastructure only&rdquo; and &ldquo;implies nothing about the report's evidentiary claims.&rdquo; What is
-    shown is narrower and demonstrated: on a real archive corpus, for platform-gated content, an archived
+    016, in its own words, &ldquo;measures the archiving infrastructure only&rdquo;; the session-41 census
+    underlying its sample likewise stated the measurement &ldquo;implies nothing about the report's evidentiary
+    claims.&rdquo; What is shown is narrower and demonstrated: on a real archive corpus, for platform-gated content, an archived
     capture that <em>exists</em> (coverage &#10003;) holds the login shell, not the page &mdash; so
     <strong>if</strong> durability is judged by coverage, item (c) is skipped and no coverage metric flags it.
     The live arm shows the content is bot-servable <em>in 2026</em> (20/25); it does not prove the platform
     served that content to the archive's crawler at capture time (median 2024-10) &mdash; 016's causal-limit
     caveat. Scope: platform-gated content (X/Twitter here); Telegram passes item (c) and does not break.
-    Whether hollowness is permanent across re-crawls is left open (016 found 0/25 across <em>every</em>
-    in-window capture, not one version). <strong>What would close the gap:</strong> a durability check that
+    Whether hollowness is permanent across re-crawls is left open (a session-45 pre-registered spike found
+    0/25 across <em>every</em> in-window capture, not just the earliest one 016 scored). <strong>What would
+    close the gap:</strong> a durability check that
     renders the captured page and tests for the cited content, not merely that a capture exists.</p>
   </div>
 

@@ -1,8 +1,10 @@
 {
   "instrument": "Where the Chain Breaks",
-  "status": "DRAFT — pre-registered design + built schematic; FULL GAUNTLET OWED",
-  "session": 58,
-  "date": "2026-07-23",
+  "status": "Built session 58 (2026-07-23); reworked + gauntleted session 59 (2026-07-24) — see README for the full gauntlet record",
+  "built_session": 58,
+  "built_date": "2026-07-23",
+  "gauntlet_session": 59,
+  "gauntlet_date": "2026-07-24",
   "docks_onto": "instrument 016, Coverage Is Not Custody (works/2026-07-20-coverage-not-custody/)",
   "standard_under_test": {
     "name": "Berkeley Protocol on Digital Open Source Investigations",
@@ -42,7 +44,7 @@
       "coverage_captures_exist": "170/170 cited URLs have an archived capture; 163 with an in-window HTTP-200 capture",
       "custody_content_present_archived": {"k": 5, "n": 163, "p": 0.031, "wilson95": [0.013, 0.07]},
       "live_control_content_present": {"k": 20, "n": 25, "p": 0.80, "wilson95": [0.609, 0.911]},
-      "reading": "the content is bot-servable live in 2026 (live arm 80%, 20/25); the archived capture holds the platform login/bot-shell, not the cited content (archived 3.1%). CAUSAL LIMIT (016's caveat, restored session 59): the live arm shows the content is servable in 2026, NOT that the platform served it to the archive's crawler at capture time (median 2024-10). Checked across every in-window capture, not one version.",
+      "reading": "the content is bot-servable live in 2026 (live arm 80%, 20/25); the archived capture holds the platform login/bot-shell, not the cited content (archived 3.1%). CAUSAL LIMIT (016's caveat, restored session 59): the live arm shows the content is servable in 2026, NOT that the platform served it to the archive's crawler at capture time (median 2024-10). The '0/25 across every in-window capture (not just the earliest)' permanence check is the session-45 spike, not 016 — 016 scored the earliest capture per URL.",
       "platform_note": "platform-gated / login-walled; the crawler is served a bot-shell"
     },
     "telegram_counter_case": {

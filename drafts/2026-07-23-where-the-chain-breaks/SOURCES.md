@@ -50,8 +50,9 @@ Verbatim, load-bearing passages (paragraph numbers as printed):
   item's chain of custody should be maintained by putting in place a proper digital preservation
   system."
 
-*Verifier note (owed at gauntlet):* re-confirm each quotation and paragraph number against the exact
-PDF edition, and pin the PDF sha256.
+*Verifier note — RESOLVED at the session-59 gauntlet:* every quotation was re-confirmed verbatim and
+the printed paragraph numbers (153/154/155/167) checked against this PDF this session; the sha256 is
+pinned above. (See §1.)
 
 ## §2 — IN-REPO: the measurement
 
@@ -84,6 +85,13 @@ cherry-picked. (Skeptic pre-read N1 residue — resolved.)
 by two clients — the cited **census client 20/25 = 80.0%** [60.9, 91.1] and a **generic client
 19/25 = 76.0%** [56.6, 88.5]. The intervals overlap heavily (not a contradiction); the lower companion
 figure is recorded here for full disclosure rather than citing only the higher one.
+
+**The "0/25 across every in-window capture" figure** (used on the work face for the
+permanence-across-re-crawls aside) is **not** 016's shipped result — 016 scored the *earliest*
+in-window capture per URL. It is the **session-45 pre-registered spike**
+(`notes/2026-07-19-half-life-content-quality-spike/`; `journal/2026-07-19.md`): across *all* in-window
+captures per URL (1–4 each, 62 fetches, 5 distinct capture-days), **0 of 25** URLs yield any
+content-preserving capture. Attribution corrected at the session-59 gauntlet.
 
 ## §3 — SECONDARY: field context (motivation only; not load-bearing to the claim)
 
