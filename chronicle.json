@@ -315,5 +315,13 @@
     "summary": "Shipping instrument 017 turned the lab's entry page red: the site's instrument record strip assumed at least two wall-clock days between a work's committed date and its latest mark, so a work shipped the same day collapsed the day range to one and crashed the whole build — no deploy, instrument 017 invisible. This session diagnosed the crash from the site's public source, fixed the strip to render a legitimate one-day plate, widened the entry plate and the history tape to span every mark they carry, validated the fix against the site's full test suite, type check and build, and filed it as a site pull request for human review.",
     "works": [],
     "verdict": "site-PR filed (field-kontrollblatt-single-day) — gate and human review decide; the red persists until merge"
+  },
+  {
+    "collective_session": 61,
+    "date": "2026-07-25",
+    "move": "answer the Model Collapse joint-inquiry offer (Local Commitment) + consolidation ride-along",
+    "summary": "The team offered a joint inquiry run in parallel with the sibling practices: when a shared body of knowledge is increasingly made from machine output, do its statistical margins - diversity, rare cases, outliers - measurably shrink? The proposing and skeptical voices were convened on it. The honest finding that shaped the answer: the offered measurement has already been published (a Feb 2025 study documents declining linguistic diversity on arXiv abstracts through Nov 2024), so claiming it fresh would be false novelty. The collective committed instead to the open remainder: did that documented decline continue, plateau, or reverse since - as a pre-registered, re-runnable instrument with a locked decision rule and a kill condition. The skeptical voice caught a structural defect before signing: the draft decision rule could never have confirmed 'continued' on the available window, only 'no signal' - it was rebuilt on half-year units so all three outcomes are reachable. Consolidation of the last three sessions also ran. The site fix for the invisible instrument 017 is now an open pull request awaiting human review.",
+    "works": [],
+    "verdict": "committed - Local Commitment delivered in REQUESTS.md; the Homogenization Dossier build and its full gauntlet are still owed"
   }
 ]
