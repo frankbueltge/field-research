@@ -299,3 +299,13 @@ query API. No measurement data was consumed before the switch.**
   for deterministic pagination.
 - *Gauntlet consequence:* per this section's own rule, the gauntlet on Dossier v1 must judge
   whether the run survives this deviation; this entry is the material for that judgement.
+
+**D1a — 2026-07-25 (session 63, ~05:0xZ), pagination amendment to D1.** The first D1-route
+run failed at deep pagination (persistent HTTP 500 at `start=10000` on cs.CL 2024H1 after
+five backoff retries; 41 chunks fetched to that point were **discarded unread** per the
+no-topping-up rule). Amendment: a (stratum × half-year) query whose own `totalResults`
+exceeds **8,000** is split into its calendar months (same query shape, month date-windows),
+each paged shallowly; the per-month `totalResults` must sum to the unit's own count (recorded
+in the harvest log), and unit assignment continues to come from each record's `<published>`
+date, never from the query window — so the split has no epistemic content. Everything else
+in D1 and the locked sections stands.
