@@ -22,12 +22,29 @@ matches totalResults, is the normal, non-anomalous end of pagination).
 
 Discard-and-restart (§2): if --outdir is non-empty, this script refuses to run at all.
 
-Output layout: --outdir/<stratum>/<unit>/<page:05d>.xml.gz (raw Atom response bytes,
-gzip-compressed, one file per page) plus --outdir/harvest-log.json recording, per
-stratum x unit: totalResults, fetched, pages, start/end UTC — the D1-mandated
-cross-check between the harvest's own tally and the feed's declared total.
+Deep-paging split (§10 amendment D1a): the live run hit a persistent HTTP 500 at
+start=10000 on cs.CL 2024H1 (the API's deep-paging weakness). Per (stratum, unit), page
+0 of the unit-level query is fetched first as a PROBE, purely to read that query's own
+opensearch:totalResults. If totalResults <= MONTHLY_SPLIT_THRESHOLD (8,000), pagination
+continues exactly as D1 originally specified (the probe page's data is kept as the
+unit's page 1). If totalResults > 8,000, the probe page's data is DISCARDED UNREAD (per
+D1a: "so every stored chunk belongs to exactly one query series") and the unit is
+re-fetched as 6 independent, shallowly-paged monthly queries instead (same query shape,
+month-long date windows). Per D1a, the per-month totalResults must sum to the unit's own
+probed totalResults, and unit assignment always comes from each record's <published>
+date -- never from which query window (unit-level or monthly) fetched it -- so the split
+has no epistemic content, only a pagination-depth workaround.
+
+Output layout: --outdir/<stratum>/<unit>/<page:05d>.xml.gz for unsplit units;
+--outdir/<stratum>/<unit>/<YYYYMM>-<page:05d>.xml.gz for split units. Either way,
+--outdir/harvest-log.json records, per stratum x unit: mode ("unit" or "monthly"), the
+unit's own totalResults (from the probe page), per-month totalResults when split,
+fetched, pages, start/end UTC, and a tally_matches flag (unit mode: fetched ==
+totalResults; monthly mode: BOTH sum-of-month-totals == unit totalResults AND fetched ==
+sum-of-month-totals).
 """
 import argparse
+import calendar
 import gzip
 import http.client
 import json
@@ -42,6 +59,7 @@ MAX_RESULTS = 2000
 SLEEP_SECONDS = 3
 MAX_RETRIES = 5
 RETRY_BASE_SECONDS = 3
+MONTHLY_SPLIT_THRESHOLD = 8000  # §10 amendment D1a
 STRATA = ("cs.CL", "cs.CV", "math.NT")
 
 ATOM_NS = "http://www.w3.org/2005/Atom"
@@ -75,6 +93,28 @@ def half_year_query_range(unit):
     elif half == "H2":
         return f"{year}07010000", f"{year}12312359"
     raise ValueError(f"unrecognized unit {unit!r}")
+
+
+def unit_months(unit):
+    """unit e.g. '2015H1' -> ['201501', ..., '201506']; '2015H2' -> ['201507', ..., '201512']."""
+    year = unit[:4]
+    half = unit[4:]
+    if half == "H1":
+        months = range(1, 7)
+    elif half == "H2":
+        months = range(7, 13)
+    else:
+        raise ValueError(f"unrecognized unit {unit!r}")
+    return [f"{year}{m:02d}" for m in months]
+
+
+def month_query_range(yyyymm):
+    """yyyymm e.g. '201502' -> ('201502010000', '201502282359') (last day computed via
+    calendar.monthrange, so Feb 28/29 and 30/31-day months are handled correctly)."""
+    year = int(yyyymm[:4])
+    month = int(yyyymm[4:6])
+    last_day = calendar.monthrange(year, month)[1]
+    return f"{yyyymm}010000", f"{yyyymm}{last_day:02d}2359"
 
 
 def build_query_path(stratum, start_ts, end_ts, start_param, max_results=MAX_RESULTS):
@@ -187,18 +227,28 @@ def fetch_page(conn, path, cumulative_before, max_retries=MAX_RETRIES, retry_bas
 # Per (stratum, unit) pagination
 # ---------------------------------------------------------------------------
 
-def harvest_stratum_unit(conn, stratum, unit, outdir, request_counter,
-                          sleep_seconds=SLEEP_SECONDS, sleep_fn=time.sleep,
-                          max_results=MAX_RESULTS):
-    start_ts, end_ts = half_year_query_range(unit)
-    unit_dir = os.path.join(outdir, stratum, unit)
-    os.makedirs(unit_dir, exist_ok=True)
-
-    start_utc = _utcnow_iso()
+def _page_one_query(conn, stratum, start_ts, end_ts, name_fn, request_counter,
+                     sleep_seconds, sleep_fn, max_results, first_page_data=None):
+    """Page a single query window (unit-level or one month) to completion, writing
+    each page via name_fn(page_number) -> chunk path. If `first_page_data` is given
+    (body, entry_count, total_results) it is used as page 1 without re-fetching (the
+    D1a probe-reuse case for unsplit units); otherwise page 1 is fetched fresh (used
+    for each of the 6 monthly queries after a split's probe page was discarded).
+    Returns (total_results, fetched, pages)."""
     page = 0
     fetched = 0
     total_results = None
     start_param = 0
+
+    if first_page_data is not None:
+        body, entry_count, total_results = first_page_data
+        page = 1
+        with gzip.open(name_fn(page), "wb") as f:
+            f.write(body)
+        fetched = entry_count
+        start_param = max_results
+        if entry_count < max_results:
+            return total_results, fetched, page  # single page already covers everything
 
     while True:
         if request_counter["n"] > 0:
@@ -208,8 +258,7 @@ def harvest_stratum_unit(conn, stratum, unit, outdir, request_counter,
         request_counter["n"] += 1
         page += 1
 
-        chunk_path = os.path.join(unit_dir, f"{page:05d}.xml.gz")
-        with gzip.open(chunk_path, "wb") as f:
+        with gzip.open(name_fn(page), "wb") as f:
             f.write(body)
 
         if total_results is None:
@@ -220,14 +269,83 @@ def harvest_stratum_unit(conn, stratum, unit, outdir, request_counter,
         if entry_count < max_results:
             break
 
+    return (total_results if total_results is not None else 0), fetched, page
+
+
+def harvest_stratum_unit(conn, stratum, unit, outdir, request_counter,
+                          sleep_seconds=SLEEP_SECONDS, sleep_fn=time.sleep,
+                          max_results=MAX_RESULTS, split_threshold=MONTHLY_SPLIT_THRESHOLD):
+    start_ts, end_ts = half_year_query_range(unit)
+    unit_dir = os.path.join(outdir, stratum, unit)
+    os.makedirs(unit_dir, exist_ok=True)
+
+    start_utc = _utcnow_iso()
+
+    # Probe: page 0 of the unit-level query, purely to read totalResults.
+    if request_counter["n"] > 0:
+        sleep_fn(sleep_seconds)
+    probe_path = build_query_path(stratum, start_ts, end_ts, 0, max_results)
+    probe_body, probe_entry_count, unit_total_results = fetch_page(
+        conn, probe_path, cumulative_before=0, sleep_fn=sleep_fn
+    )
+    request_counter["n"] += 1
+
+    if unit_total_results <= split_threshold:
+        # Unit mode: keep the probe page as page 1 (plain <page:05d>.xml.gz naming);
+        # continue paging exactly as D1 originally specified.
+        def name_fn(page):
+            return os.path.join(unit_dir, f"{page:05d}.xml.gz")
+
+        total_results, fetched, pages = _page_one_query(
+            conn, stratum, start_ts, end_ts, name_fn, request_counter,
+            sleep_seconds, sleep_fn, max_results,
+            first_page_data=(probe_body, probe_entry_count, unit_total_results),
+        )
+        end_utc = _utcnow_iso()
+        return {
+            "mode": "unit",
+            "total_results": total_results,
+            "fetched": fetched,
+            "pages": pages,
+            "start_utc": start_utc,
+            "end_utc": end_utc,
+            "tally_matches": fetched == total_results,
+        }
+
+    # Monthly mode (D1a): the probe page's data is discarded UNREAD -- it belongs to
+    # the abandoned unit-level query series, not the monthly one, and D1a requires
+    # every stored chunk to belong to exactly one query series.
+    del probe_body
+    months = unit_months(unit)
+    month_results = {}
+    total_fetched = 0
+    total_pages = 0
+    for yyyymm in months:
+        m_start, m_end = month_query_range(yyyymm)
+
+        def name_fn(page, _yyyymm=yyyymm):
+            return os.path.join(unit_dir, f"{_yyyymm}-{page:05d}.xml.gz")
+
+        m_total, m_fetched, m_pages = _page_one_query(
+            conn, stratum, m_start, m_end, name_fn, request_counter,
+            sleep_seconds, sleep_fn, max_results, first_page_data=None,
+        )
+        month_results[yyyymm] = {"total_results": m_total, "fetched": m_fetched, "pages": m_pages}
+        total_fetched += m_fetched
+        total_pages += m_pages
+
     end_utc = _utcnow_iso()
+    sum_month_totals = sum(mr["total_results"] for mr in month_results.values())
     return {
-        "total_results": total_results if total_results is not None else 0,
-        "fetched": fetched,
-        "pages": page,
+        "mode": "monthly",
+        "total_results": unit_total_results,
+        "months": month_results,
+        "sum_month_total_results": sum_month_totals,
+        "fetched": total_fetched,
+        "pages": total_pages,
         "start_utc": start_utc,
         "end_utc": end_utc,
-        "tally_matches": fetched == (total_results if total_results is not None else 0),
+        "tally_matches": (sum_month_totals == unit_total_results) and (total_fetched == sum_month_totals),
     }
 
 
@@ -245,7 +363,8 @@ def _check_outdir_empty(outdir):
 
 
 def run_harvest(outdir, strata=STRATA, units=UNITS, sleep_seconds=SLEEP_SECONDS,
-                 sleep_fn=time.sleep, connection_factory=None, max_results=MAX_RESULTS):
+                 sleep_fn=time.sleep, connection_factory=None, max_results=MAX_RESULTS,
+                 split_threshold=MONTHLY_SPLIT_THRESHOLD):
     _check_outdir_empty(outdir)
     os.makedirs(outdir, exist_ok=True)
 
@@ -260,6 +379,7 @@ def run_harvest(outdir, strata=STRATA, units=UNITS, sleep_seconds=SLEEP_SECONDS,
                 results[stratum][unit] = harvest_stratum_unit(
                     conn, stratum, unit, outdir, request_counter,
                     sleep_seconds=sleep_seconds, sleep_fn=sleep_fn, max_results=max_results,
+                    split_threshold=split_threshold,
                 )
     finally:
         conn.close()
@@ -269,6 +389,7 @@ def run_harvest(outdir, strata=STRATA, units=UNITS, sleep_seconds=SLEEP_SECONDS,
         "endpoint": f"https://{ENDPOINT_HOST}{ENDPOINT_PATH}",
         "parameters": {
             "max_results": max_results,
+            "monthly_split_threshold": split_threshold,
             "sortBy": "submittedDate",
             "sortOrder": "ascending",
             "strata": list(strata),
@@ -280,7 +401,13 @@ def run_harvest(outdir, strata=STRATA, units=UNITS, sleep_seconds=SLEEP_SECONDS,
         "start_utc": run_start,
         "end_utc": run_end,
         "results": results,
-        "deviation": "D1 (PREREGISTRATION.md §10): route switched from OAI-PMH to this query API before any measurement data was consumed.",
+        "deviation": (
+            "D1 (PREREGISTRATION.md §10): route switched from OAI-PMH to this query API "
+            "before any measurement data was consumed. D1a: (stratum, unit) queries whose "
+            "own totalResults exceed monthly_split_threshold are split into 6 calendar-month "
+            "queries each, paged shallowly; unit assignment always comes from each record's "
+            "<published> date, never from which query window fetched it."
+        ),
     }
     log_path = os.path.join(outdir, "harvest-log.json")
     with open(log_path, "w", encoding="utf-8") as f:

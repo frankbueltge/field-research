@@ -6,7 +6,7 @@ import tempfile
 import unittest
 
 import _pathfix  # noqa: F401
-from filter_corpus_api import extract_id, parse_entries, filter_corpus_api, ATOM_NS, ARXIV_ATOM_NS
+from filter_corpus_api import extract_id, parse_entries, filter_corpus_api, iter_raw_files, ATOM_NS, ARXIV_ATOM_NS
 
 
 def _long_abstract(n=60):
@@ -206,6 +206,35 @@ class TestFilterCorpusApiPipeline(unittest.TestCase):
             content2 = f.read()
 
         self.assertEqual(content1, content2)
+
+    def test_mixed_naming_across_units_both_discovered_and_parsed(self):
+        # §10 amendment D1a: a split unit's chunks are named <YYYYMM>-<page:05d>.xml.gz
+        # while an unsplit unit in the SAME raw_dir keeps the plain <page:05d>.xml.gz
+        # naming. Both must be discovered and parsed identically.
+        plain_entries = _entry("2501.00001", "2025-01-02", "2025-01-02", "cs.CL", _long_abstract())
+        self._write_chunk("cs.CL", "2025H1", "00001.xml.gz", _wrap(plain_entries))
+
+        # cs.CL 2024H1 was split into monthly chunks (D1a); simulate two of its months.
+        jan_entries = _entry("2401.00001", "2024-01-15", "2024-01-15", "cs.CL", _long_abstract())
+        feb_entries = _entry("2402.00001", "2024-02-20", "2024-02-20", "cs.CL", _long_abstract())
+        self._write_chunk("cs.CL", "2024H1", "202401-00001.xml.gz", _wrap(jan_entries))
+        self._write_chunk("cs.CL", "2024H1", "202402-00001.xml.gz", _wrap(feb_entries))
+
+        # confirm iter_raw_files finds all three chunks regardless of naming shape
+        found = sorted(os.path.basename(path) for _s, _u, path in iter_raw_files(self.raw_dir))
+        self.assertEqual(found, ["00001.xml.gz", "202401-00001.xml.gz", "202402-00001.xml.gz"])
+
+        counts = filter_corpus_api(self.raw_dir, self.outdir)
+        self.assertEqual(counts["cs.CL"]["2025H1"]["kept"], 1)
+        self.assertEqual(counts["cs.CL"]["2024H1"]["kept"], 2)
+
+        with open(os.path.join(self.outdir, "cs.CL.jsonl")) as f:
+            rows = [json.loads(line) for line in f]
+        ids = {r["id"] for r in rows}
+        self.assertEqual(ids, {"2501.00001", "2401.00001", "2402.00001"})
+        units = {r["id"]: r["unit"] for r in rows}
+        self.assertEqual(units["2401.00001"], "2024H1")
+        self.assertEqual(units["2402.00001"], "2024H1")
 
 
 if __name__ == "__main__":
