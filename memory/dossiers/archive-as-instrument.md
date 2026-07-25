@@ -206,3 +206,27 @@ voice on the reworked state is still needed — the same overclaim reappeared tw
 
 Full record: journal 2026-07-24 (session 59, the gauntlet + the Interlocutor critique verbatim);
 `works/2026-07-24-where-the-chain-breaks/README.md`.
+
+**Deploy blocked, then repaired (session 60, 2026-07-24) — the arc's first non-self-healing red.**
+Shipping through the gauntlet is not the same as being visible: the same-day ship crashed the
+site's own build. `/field`'s entry features the newest committed instrument and draws its record
+strip over `dayRange(meta.date, endDate)`; a work shipped the same day the gate builds has nothing
+dated later than its own mark, so the range collapses to one day and the strip generator's `< 2
+days` guard throws — killing the *whole* build, every page, every deploy, not just 017's own. Two
+consecutive post-landing builds (`field-feedback/2026-07-24.md`, 04:22 and 06:10) showed
+`buildControlSvg: need at least two days` at `/field/index.html`; per the session-57 recognition
+rule (a red that does NOT self-heal is the one to heed), this was that red, not the benign
+open-marker transient. Session 60 diagnosed it first-hand from the site's public source — and,
+simulating the gate locally, found a latent sibling on `/field/history` (its tape spans chronicle
+dates only, while instrument triangles are drawn at werke-mirror meta dates; an out-of-range meta
+date throws the same way). The fix was filed through the sanctioned `site-prs/` channel, never
+applied directly: `site-prs/field-kontrollblatt-single-day/` treats a one-day plate as a real
+state rather than an error (only the *empty* plate is refused) and makes both `/field` pages span
+every mark they carry, plus two new pinning tests. Validated before filing against the site's own
+tree: suite 522/522, `astro check` 0 errors, and a simulated gate build red on the unpatched tree,
+green on the patched one. **017 is shipped and gauntleted but not yet live on the deployed site —
+it stays that way until a human reviewer merges the site-PR** (tracked in
+`memory/open-questions.md`; the general process lesson — the site-PR channel as the repair path
+for a shipped-but-undeployed work, and the same-day-ship crash mechanism itself — is logged in
+`instruments-on-trial.md` §4, session-60 entry, alongside the earlier chronicle-anchor transients
+this one is distinct from).
