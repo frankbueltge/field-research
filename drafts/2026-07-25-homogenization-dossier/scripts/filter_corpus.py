@@ -20,8 +20,14 @@ Rules applied per record (§2):
   - Unit: calendar half-year of `<created>`, e.g. "2015H1", "2015H2".
 
 Outputs, all under --outdir:
-  - `<stratum>.jsonl`: one line per kept record, {id, created, unit, abstract}.
-  - `counts.json`: per stratum x unit, {kept, excluded_short}.
+  - `<stratum>.jsonl`: one line per kept record, {id, created, datestamp, unit, abstract}.
+    (datestamp is the OAI header's <datestamp> -- last metadata touch -- kept ONLY to
+    compute the §2 contamination ceiling below; it never enters any metric.)
+  - `counts.json`: {"cells": per stratum x unit {kept, excluded_short},
+    "contamination_ceiling": per stratum, the §2 bounding statistic -- among this
+    stratum's KEPT records with created < 2023-01-01, the share whose datestamp is
+    >= 2023-01-01 (metadata touched post-launch, for any reason). This is the harvest's
+    free upper bound on pre-2023 envelope contamination by post-launch-revised text.
   - `manifest.json`: sha256 of every input raw chunk and every output file this run
     produced.
 """
@@ -72,8 +78,9 @@ def iter_raw_files(raw_dir, sets):
 
 
 def parse_records(gz_path):
-    """Yield dicts {id, categories, created, abstract, deleted} for each <record> in
-    the gzipped OAI-PMH response at gz_path."""
+    """Yield dicts {id, categories, created, datestamp, abstract} for each <record> in
+    the gzipped OAI-PMH response at gz_path. `datestamp` is the OAI header's
+    <datestamp> (last metadata touch), captured for the §2 contamination ceiling."""
     with gzip.open(gz_path, "rb") as f:
         data = f.read()
     root = ET.fromstring(data)
@@ -84,6 +91,7 @@ def parse_records(gz_path):
         header = record.find(f"{{{OAI_NS}}}header")
         if header is not None and header.get("status") == "deleted":
             continue
+        datestamp_el = header.find(f"{{{OAI_NS}}}datestamp") if header is not None else None
         metadata = record.find(f"{{{OAI_NS}}}metadata")
         if metadata is None:
             continue
@@ -100,6 +108,7 @@ def parse_records(gz_path):
             "id": (id_el.text or "").strip(),
             "categories": (categories_el.text or "").strip(),
             "created": (created_el.text or "").strip(),
+            "datestamp": (datestamp_el.text or "").strip() if datestamp_el is not None else "",
             "abstract": (abstract_el.text or "").strip(),
         }
 
@@ -112,6 +121,25 @@ def primary_category(categories):
 
 def in_date_range(created):
     return DATE_MIN <= created <= DATE_MAX
+
+
+CONTAMINATION_CUTOFF = "2023-01-01"
+
+
+def contamination_ceiling(rows):
+    """§2 bounding statistic: among KEPT rows with created < 2023-01-01, the share
+    whose datestamp is >= 2023-01-01 (metadata touched post-launch, for any reason).
+    Returns a dict; share is None if there are no pre-2023 kept rows."""
+    pre2023 = [r for r in rows if r["created"] < CONTAMINATION_CUTOFF]
+    touched_post_launch = [r for r in pre2023 if r["datestamp"] >= CONTAMINATION_CUTOFF]
+    n_pre2023 = len(pre2023)
+    n_touched = len(touched_post_launch)
+    share = (n_touched / n_pre2023) if n_pre2023 > 0 else None
+    return {
+        "pre2023_kept_count": n_pre2023,
+        "pre2023_datestamp_post2023_count": n_touched,
+        "share": share,
+    }
 
 
 def filter_corpus(raw_dir, outdir, sets=("cs", "math")):
@@ -149,23 +177,27 @@ def filter_corpus(raw_dir, outdir, sets=("cs", "math")):
             kept_by_stratum[primary].append({
                 "id": rid,
                 "created": created,
+                "datestamp": rec["datestamp"],
                 "unit": unit,
                 "abstract": rec["abstract"],
             })
 
     output_hashes = {}
+    contamination = {}
     for stratum in TARGET_STRATA:
         # Deterministic order: sort by (unit, id).
         rows = sorted(kept_by_stratum[stratum], key=lambda r: (r["unit"], r["id"]))
+        contamination[stratum] = contamination_ceiling(rows)
         out_path = os.path.join(outdir, f"{stratum}.jsonl")
         with open(out_path, "w", encoding="utf-8") as f:
             for row in rows:
+                # datestamp is provenance-only: never enters any metric downstream.
                 f.write(json.dumps(row, sort_keys=True) + "\n")
         output_hashes[f"{stratum}.jsonl"] = sha256_file(out_path)
 
     counts_path = os.path.join(outdir, "counts.json")
     with open(counts_path, "w", encoding="utf-8") as f:
-        json.dump(counts, f, indent=2, sort_keys=True)
+        json.dump({"cells": counts, "contamination_ceiling": contamination}, f, indent=2, sort_keys=True)
     output_hashes["counts.json"] = sha256_file(counts_path)
 
     manifest = {

@@ -1,7 +1,9 @@
 # Pre-registration — Homogenization Dossier v1 (ji-2026-002 · Meridian)
 
-**Status: DRAFT — NOT YET LOCKED (session 63, 2026-07-25; Skeptic pre-read in flight).
-The lock is the commit whose message says "pre-registration LOCKED".** Method, metrics, null model and
+**Status: LOCKED (session 63, 2026-07-25) — this file's lock is the commit whose message
+says "pre-registration LOCKED", made BEFORE any measurement fetch.** The Skeptic's pre-read
+(PASS WITH CONDITIONS; all seven blocking conditions applied — `SKEPTIC-PREREAD.md`) and the
+Builder's unit-tested scripts (110 tests passing) precede the lock. Method, metrics, null model and
 decision rule are fixed by this document BEFORE any measurement fetch. Per the Local
 Commitment (REQUESTS.md, session 61): append-whatever-it-shows; no threshold adjustment; no
 re-run; the inquiry closes on the answer it gets. Any later edit to this file invalidates the
@@ -41,10 +43,10 @@ continuation of their model.
   of pre-2023-created records per stratum whose datestamp is ≥ 2023-01-01 (metadata touched
   post-launch, for any reason) ships with the Dossier as the contamination ceiling.
 - **Author metadata:** the raw bulk XML incidentally carries public bibliographic author
-  fields; the filtered corpus files keep only {id, created, unit, abstract}, no author
-  fields are ever parsed into the analysis, and raw XML stays out of git per repo
-  convention (public/aggregate text only, no author-level analysis — the commitment's
-  bound, honored by construction).
+  fields; the filtered corpus files keep only {id, created, datestamp, unit, abstract}
+  (datestamp serves the contamination ceiling above), no author fields are ever parsed
+  into the analysis, and raw XML stays out of git per repo convention (public/aggregate
+  text only, no author-level analysis — the commitment's bound, honored by construction).
 - **Exclusions:** abstracts with fewer than 50 tokens after tokenization (withdrawal
   notices, stubs). Exclusion counts reported per cell.
 - **Tokenizer (fixed):** Unicode NFKC → lowercase → remove URLs (`https?://\S+`),
@@ -128,7 +130,10 @@ Standardized deviation z(x*) = (y(x*) − ŷ(x*)) / SE_pred(x*), reoriented coll
   t₀.₉₇₅,₁₃ = 2.1604 for the 3-parameter fit), reported beside. **Soft downgrade
   rule (decisional):** if the linear and quadratic envelopes disagree on a stratum's headline
   state, the stratum ships BOTH headlines, marked unresolved — the linear envelope alone
-  cannot carry a verdict its own curvature check contradicts.
+  cannot carry a verdict its own curvature check contradicts. Scope, fixed: the
+  disagreement test compares the §7 headline state only; the control inputs (marker
+  validity, control-clear) are computed once, from the linear envelope — the quadratic pass
+  is a curvature check on the margin classification, not an independent second instrument.
 - **Missing envelope-era cells:** a non-computable metric value in any of the 16 envelope
   units halts the run for that metric × stratum (loud failure, no silent df degradation);
   such a halt is a deviation event for §10, not an adaptive branch. (Feasibility counts make
@@ -160,9 +165,9 @@ extension window; δ = Δ_ext − Δ_ref (negative = deepening).
   of the two windows before "recovery" can be claimed; a swing between two never-anomalous
   windows is NO-ANOMALY, not REVERSE. Sub-label FULL if all three extension units are inside
   the prediction interval, PARTIAL otherwise.
-- **RESIDUAL:** every remaining configuration (e.g. A_ext with −0.5 < δ < +0.5 boundary
-  cases not matching PLATEAU's |δ| < 0.5 by rounding, or A_ref-only with |δ| < 0.5) —
-  reported by its full z-table without a headline label.
+- **RESIDUAL:** every remaining configuration — chiefly the A_ref-only cases with δ < +0.5
+  (the anomaly did not recur in the extension, yet no 0.5-unit recovery is measurable
+  either) — reported by its full z-table without a headline label.
 
 The labels are evaluated in this fixed order — **NO-ANOMALY → NEW-ONSET → CONTINUE →
 PLATEAU → REVERSE → RESIDUAL** — and the first matching label is the metric's label
@@ -183,7 +188,8 @@ computed over the decidable metrics, with the reduced denominator disclosed):
 1. **Directional finding "margins shrinking beyond ordinary drift":** ≥2 of 4 metrics with
    A_ext in the collapse direction — AND the control condition below. If it fires, the
    stratum headline is the plurality among the A_ext metrics' labels, pooling
-   CONTINUE + NEW-ONSET against PLATEAU; tie → **MIXED (shrinking)**.
+   CONTINUE + NEW-ONSET against PLATEAU; an A_ext metric carrying any other label — an
+   arithmetic edge case — is excluded from the bucket count; tie → **MIXED (shrinking)**.
 2. Else **kill condition (the offer's own):** if ≤1 metric shows any collapse-direction
    anomaly across reference and extension windows, the stratum reads **NO SIGNAL BEYOND
    ORDINARY DRIFT**; if both decision strata read so, the Dossier ships that negative
@@ -237,6 +243,10 @@ approximations, stated as such, direction of each approximation noted in the shi
   channel is NOT reoriented; excess is the **upper** tail, and out-of-band for this channel
   means **z > +2.1448** — anomalously HIGH marker rate. An implementer copying §4's
   z < −2.1448 literally would test for anomalously low marker usage and void the §7 gate.
+- **Decidability:** the §3 non-computable/non-decidable machinery is scoped to the four
+  margin metrics; for this channel, if the §7 validity window cannot be evaluated on ≥2
+  computable units, the gate is indeterminate and math.NT is **downgraded** (fail-safe: the
+  control loses its veto rather than wrongly holding it).
 - **Roles:** (a) the math.NT validity precondition (§7); (b) context beside any margin
   finding — including the pre-registered mixed-signal reading: marker excess with margins
   in-band replicates the published news-corpus dissociation (Fitterer et al., ACL 2025 SRW)

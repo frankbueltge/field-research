@@ -5,21 +5,29 @@ scripts/metrics.py — PREREGISTRATION.md §3 margin metrics + §8 marker channe
 Seeded draws (§3): for a cell, `rng = random.Random("20260725:{stratum}:{unit}")` is
 constructed ONCE, the cell's arXiv IDs are sorted lexicographically, and `rng.shuffle`
 is applied to that sorted list EXACTLY ONCE. That single shuffled order is the cell's
-one seeded order, and it is consumed by all three draw-based uses below by taking a
-prefix of the appropriate size — never by re-invoking the RNG or re-shuffling:
+one seeded order, and it is consumed by all draw-based uses below by taking a prefix of
+the appropriate size — never by re-invoking the RNG or re-shuffling:
 
-  - MTLD:        first min(1000, n) ids of the seeded order.
-  - 15,000-token pool (hapax share, Zipf-tail slope): abstracts concatenated, in the
-    same seeded order (as many ids as needed to reach 15,000 tokens, or all of them).
-  - Between-abstract similarity: first min(150, n) ids of the seeded order.
+  - MTLD:        first min(150, n) ids of the seeded order (fixed draw size, so the
+    mean's sampling precision is constant across cells).
+  - 15,000-token pool (hapax share, Zipf-tail slope, and the DECISIONAL marker-channel
+    rate): abstracts concatenated, in the same seeded order (as many ids as needed to
+    reach 15,000 tokens, or all of them).
+  - Between-abstract similarity: first min(150, n) ids of the seeded order (the SAME
+    prefix as MTLD, deliberately — §3 metric 4 says so explicitly).
 
 This is the deterministic realization of §3's "seeded and deterministic" draws.
 
-Marker channel (§8) is not a draw-based margin metric: it is computed over the WHOLE
-cell, no sampling, and is not reoriented collapse-negative here (see envelope.py's
-module docstring for why: §8 states its own "excess direction" anomaly convention,
-distinct from §3's collapse-negative reorientation, which applies only to the four
-margin metrics).
+Marker channel (§8) is NOT a margin metric and is not reoriented collapse-negative here
+(see envelope.py's module docstring for why: §8 states its own "excess direction"
+anomaly convention). It now has two statistics per cell:
+
+  - DECISIONAL: marker tokens per 1,000 tokens over the SAME fixed 15,000-token seeded
+    pool used by hapax share / Zipf-tail slope (fixed-size, constant sampling
+    precision across cells) — this is the one fed to the envelope in envelope.py.
+  - CONTEXT ONLY: marker tokens per 1,000 tokens over the WHOLE cell (all abstracts, no
+    sampling) — heteroscedastic across a ~41x cell-size range by construction, reported
+    for context, and never fed to an envelope.
 """
 import argparse
 import csv
@@ -35,7 +43,7 @@ from stats import ols_simple  # noqa: E402
 from tokenizer import tokenize  # noqa: E402
 
 MTLD_THRESHOLD = 0.72
-MTLD_DRAW = 1000
+MTLD_DRAW = 150
 POOL_TOKENS = 15000
 SIM_DRAW = 150
 ZIPF_MIN_TYPES = 300
@@ -292,11 +300,15 @@ def compute_cell(stratum, unit, rows, marker_set):
     sim_ids = order[:min(SIM_DRAW, n_kept)]
     sim_result = between_abstract_similarity(sim_ids, tokens_by_id)
 
-    # Marker channel: whole cell, no sampling
+    # Marker channel, DECISIONAL: same fixed 15,000-token seeded pool as hapax/Zipf.
+    marker_pool_result = marker_rate(pool, marker_set)
+    marker_pool_result["pool_short"] = pool_short
+
+    # Marker channel, CONTEXT ONLY: whole cell, no sampling. Never fed to an envelope.
     all_tokens = []
     for rid in order:
         all_tokens.extend(tokens_by_id[rid])
-    marker_result = marker_rate(all_tokens, marker_set)
+    marker_whole_cell_result = marker_rate(all_tokens, marker_set)
 
     return {
         "unit": unit,
@@ -305,7 +317,8 @@ def compute_cell(stratum, unit, rows, marker_set):
         "hapax_share": hapax_result,
         "zipf_slope": zipf_result,
         "similarity": sim_result,
-        "marker_rate": marker_result,
+        "marker_rate_pool": marker_pool_result,
+        "marker_rate_whole_cell_context": marker_whole_cell_result,
     }
 
 
