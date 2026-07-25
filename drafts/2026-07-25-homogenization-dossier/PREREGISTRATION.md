@@ -32,15 +32,24 @@ continuation of their model.
   2015H1 … 2026H1.
 - **Text:** the abstract field as served by the metadata route (current-version text).
   **Named validity caveat:** pre-2023 bins can contain post-2022 revised abstracts; the
-  metadata route does not serve version-1 abstracts in bulk. Direction of bias: any
-  post-launch contamination of the envelope period makes the envelope itself more
-  model-like, biasing AGAINST detecting post-launch collapse — conservative for CONTINUE,
-  anti-conservative for REVERSE claims of small magnitude; carried on the work.
+  bulk route serves one current abstract per record (conductor's observation from the
+  pre-test probes; no bulk route serving first-version abstracts was found — searched, not
+  proven absent). Direction of bias: any post-launch contamination of the envelope period
+  makes the envelope itself more model-like, biasing AGAINST detecting post-launch collapse
+  — conservative for CONTINUE, anti-conservative for REVERSE claims of small magnitude.
+  **Bounding, pre-registered:** the harvest's datestamp gives a free upper bound — the share
+  of pre-2023-created records per stratum whose datestamp is ≥ 2023-01-01 (metadata touched
+  post-launch, for any reason) ships with the Dossier as the contamination ceiling.
+- **Author metadata:** the raw bulk XML incidentally carries public bibliographic author
+  fields; the filtered corpus files keep only {id, created, unit, abstract}, no author
+  fields are ever parsed into the analysis, and raw XML stays out of git per repo
+  convention (public/aggregate text only, no author-level analysis — the commitment's
+  bound, honored by construction).
 - **Exclusions:** abstracts with fewer than 50 tokens after tokenization (withdrawal
   notices, stubs). Exclusion counts reported per cell.
 - **Tokenizer (fixed):** Unicode NFKC → lowercase → remove URLs (`https?://\S+`),
   inline TeX math (`$…$`), TeX commands (`\\[a-zA-Z]+`) → tokens =
-  `[a-z]+(?:[-'][a-z]+)*`. Unit-tested in `tests/`.
+  `[a-z]+(?:[-'][a-z]+)*` (unit tests: see §3).
 - **Storage:** raw XML and the filtered per-stratum JSONL corpora stay out of git (size);
   the repo carries the harvest scripts, all harvest parameters, per-cell counts, sha256
   manifests of raw chunks and filtered corpora, and every derived metric value. The
@@ -49,26 +58,44 @@ continuation of their model.
 
 ## 3. Margin metrics (4), computed per (stratum, half-year) cell
 
-All draws are seeded and deterministic: RNG = `random.Random("20260725:{stratum}:{unit}")`
-over the cell's arXiv IDs sorted lexicographically.
+All draws are seeded and deterministic, realized as **one seeded order per cell**: the cell's
+arXiv IDs are sorted lexicographically, then shuffled in place by
+`random.Random("20260725:{stratum}:{unit}").shuffle(ids)`; every draw below is a prefix of
+that single shuffled order (no separate `.sample()` calls — the two stdlib methods consume
+the RNG stream differently, and this document fixes the shuffle-then-prefix realization).
 
 1. **MTLD** (McCarthy & Jarvis 2010; TTR threshold 0.72, bidirectional mean), per abstract,
-   averaged over a seeded draw of up to 1,000 abstracts per cell.
-   Collapse direction: **down**.
-2. **Hapax share under fixed-size sampling:** concatenate the cell's abstracts in seeded
+   averaged over the first **min(150, n)** abstracts of the cell's seeded order — a fixed
+   draw size, so the mean's sampling precision is constant across cells (cells below 150
+   use the whole cell and are flagged). Collapse direction: **down**.
+2. **Hapax share under fixed-size sampling:** concatenate the cell's abstracts in the seeded
    order; truncate to the first **T = 15,000 tokens**; hapax share = types occurring exactly
    once ÷ total types. Collapse direction: **down**.
 3. **Zipf-tail slope on the same fixed 15,000-token pool:** OLS slope of log10(frequency) on
    log10(rank) over ranks 101…1,000 (if the pool has fewer than 1,000 types, use
    101…max-rank and flag; below 300 types the cell is marked non-computable). A thinning
    rare-word tail drops faster: collapse direction: **more negative**.
-4. **Between-abstract similarity on fixed draws:** seeded draw of **N_s = 150** abstracts;
-   within-draw TF-IDF (tf = raw count, idf = ln(150/df)), L2-normalized, mean pairwise
+4. **Between-abstract similarity on fixed draws:** the first **N_s = min(150, n)** abstracts
+   of the cell's seeded order (the same prefix as metric 1, deliberately);
+   within-draw TF-IDF (tf = raw count, idf = ln(N_draw/df)), L2-normalized, mean pairwise
    cosine. Collapse direction: **up**.
 
-Cells smaller than a draw size use the whole cell and are flagged in the output table.
+Cells smaller than a draw size use the whole cell and are flagged in the output table; how
+often each fallback fires ships in the output table (the feasibility counts are any-listing
+upper bounds, so trigger frequency is unverified until harvest).
 For classification, every metric is **reoriented so that collapse = negative** (similarity
 enters with sign flipped).
+
+**Non-computable units:** a unit where a metric cannot be computed (e.g. the Zipf pool below
+300 types) is excluded from that window's Δ mean and cannot itself satisfy the
+two-consecutive rule; if exclusions leave a window with fewer than 2 computable units for a
+metric, that metric is **non-decidable** for that stratum-window, excluded from the ≥2-of-4
+count, and flagged explicitly. (Non-computability is not missing-at-random — severe collapse
+itself could cause it; any such flag is reported prominently, never silently dropped.)
+
+**Unit-testing:** the tokenizer, all four metrics, the envelope arithmetic and the
+classification logic are unit-tested in `tests/` before any measurement fetch; the lock
+commit contains the passing tests.
 
 ## 4. Null model — the ordinary-drift envelope
 
@@ -77,13 +104,23 @@ Per metric × stratum: OLS linear regression on the **16 envelope units 2015H1�
 ŷ(x*) ± t₀.₉₇₅,₁₄ · s · √(1 + 1/16 + (x*−x̄)²/Sxx), with t₀.₉₇₅,₁₄ = 2.1448.
 Standardized deviation z(x*) = (y(x*) − ŷ(x*)) / SE_pred(x*), reoriented collapse-negative.
 
-- **Out-of-band (per unit):** z < −2.1448 (collapse side only, per the commitment).
+- **Out-of-band (per unit):** z < −2.1448 (collapse side only, per the commitment). Stated
+  precisely: a one-sided α = 0.025 test derived from the two-sided 95% PI's lower bound —
+  more conservative than a one-sided 95% test, deliberately.
 - **Anomaly (per metric, per window):** out-of-band in **two consecutive units** of that
   window.
+- **Known heteroscedasticity, disclosed:** the OLS envelope treats all 16 points as
+  equal-precision; fixed-size draws hold *sampling* precision constant by design (that is
+  their purpose), but residual variance may still drift with the corpus's ~12–14× growth
+  inside the fitting window (topic/author-mix churn). Direction: extra early-window noise
+  widens the PI, biasing toward NO-SIGNAL — conservative for any positive finding.
 - Envelope caveat, pre-registered: the envelope's final unit 2022H2 contains the one-month
   post-launch sliver (Nov 30–Dec 31 2022) — kept, per the commitment's own "pre-2023"
   boundary; direction: contaminates the envelope toward collapse, i.e. conservative.
-- Sensitivity (reported beside, non-decisional): the same table under a quadratic envelope.
+- Sensitivity: the same table under a quadratic envelope, reported beside. **Soft downgrade
+  rule (decisional):** if the linear and quadratic envelopes disagree on a stratum's headline
+  state, the stratum ships BOTH headlines, marked unresolved — the linear envelope alone
+  cannot carry a verdict its own curvature check contradicts.
 
 ## 5. Windows
 
@@ -107,30 +144,56 @@ extension window; δ = Δ_ext − Δ_ref (negative = deepening).
 - **NEW-ONSET:** A_ext AND NOT A_ref AND δ ≤ −0.5 (labelled separately; counts with
   CONTINUE for the directional finding).
 - **PLATEAU:** A_ext AND |δ| < 0.5 (anomaly persists at its documented depth).
-- **REVERSE:** δ ≥ +0.5 (recovering toward the envelope; sub-label FULL if all three
-  extension units are inside the prediction interval, PARTIAL otherwise).
-- Residual cases (e.g. A_ext with +0.5 > δ > −0.5 boundary noise, A_ref only) are reported
-  by their z-table without a headline label.
+- **REVERSE:** (A_ref OR A_ext) AND δ ≥ +0.5 — an anomaly must have been established in one
+  of the two windows before "recovery" can be claimed; a swing between two never-anomalous
+  windows is NO-ANOMALY, not REVERSE. Sub-label FULL if all three extension units are inside
+  the prediction interval, PARTIAL otherwise.
+- **RESIDUAL:** every remaining configuration (e.g. A_ext with −0.5 < δ < +0.5 boundary
+  cases not matching PLATEAU's |δ| < 0.5 by rounding, or A_ref-only with |δ| < 0.5) —
+  reported by its full z-table without a headline label.
+
+The labels are evaluated in this fixed order — **NO-ANOMALY → NEW-ONSET → CONTINUE →
+PLATEAU → REVERSE → RESIDUAL** — and the first matching label is the metric's label
+(NEW-ONSET precedes CONTINUE because its condition is the stricter subset; the ordering
+makes the set exhaustive and mutually exclusive by construction).
+
+**The δ threshold (±0.5), stated rationale:** half the envelope's residual standard unit —
+below it, the difference between a 4-unit and a 3-unit window mean is smaller than typical
+single-unit noise, so calling it movement would be reading noise; applied symmetrically to
+deepening (CONTINUE) and recovery (REVERSE), so it favors neither direction.
 
 ## 7. Stratum verdict and decision rule
 
-Per decision stratum (cs.CL, cs.CV, separately):
+Per decision stratum (cs.CL, cs.CV, separately), evaluated as an ordered procedure over the
+four per-metric labels (metrics flagged non-decidable per §3 leave the ≥2-of-4 and ≤1 counts
+computed over the decidable metrics, with the reduced denominator disclosed):
 
-- **Directional finding "margins shrinking beyond ordinary drift":** ≥2 of 4 metrics with
-  A_ext in the collapse direction — AND the control condition below.
-- **Headline state:** majority vote among metrics showing any anomaly (CONTINUE and
-  NEW-ONSET pool together); no majority → **MIXED**, reported metric-by-metric.
-- **Kill condition (the offer's own):** if ≤1 metric shows any collapse-direction anomaly
-  in reference or extension windows, the stratum reads **NO SIGNAL BEYOND ORDINARY DRIFT**;
-  if both decision strata read so, the Dossier ships that negative result with full weight
-  and the inquiry closes.
+1. **Directional finding "margins shrinking beyond ordinary drift":** ≥2 of 4 metrics with
+   A_ext in the collapse direction — AND the control condition below. If it fires, the
+   stratum headline is the plurality among the A_ext metrics' labels, pooling
+   CONTINUE + NEW-ONSET against PLATEAU; tie → **MIXED (shrinking)**.
+2. Else **kill condition (the offer's own):** if ≤1 metric shows any collapse-direction
+   anomaly across reference and extension windows, the stratum reads **NO SIGNAL BEYOND
+   ORDINARY DRIFT**; if both decision strata read so, the Dossier ships that negative
+   result with full weight and the inquiry closes.
+3. Else the stratum headline is the **plurality label over all four metrics' labels**
+   (CONTINUE + NEW-ONSET pool; REVERSE sub-labels pool; NO-ANOMALY and RESIDUAL count in
+   the denominator but cannot become the headline — a stratum reaching this step has ≥2
+   anomalous metrics by construction); tie or no plurality among anomaly labels →
+   **MIXED**, reported metric-by-metric. This step is what a majority-REVERSE stratum
+   ships as: **REVERSE — the documented anomaly did not persist against the envelope.**
+
+Every stratum configuration lands in exactly one of steps 1–3; there is no undefined bucket.
 
 **Control stratum (math.NT):**
 
 - **Validity precondition:** math.NT's *marker channel* (§8) must NOT itself meet the
-  anomaly rule (excess direction) over 2023H1–2026H1 against its own envelope. If it does,
-  math.NT is **downgraded to comparison stratum** (informative, no veto) — declared here,
-  before measurement.
+  anomaly rule in the **excess direction** (z > +2.1448; see §8) over the single combined
+  window 2023H1–2026H1 against its own envelope. The wider 7-unit window is a deliberate
+  asymmetry versus the margin metrics' split ref/ext windows: the control's validity should
+  fail on assistance-adoption evidence from ANY post-launch period, not only the extension.
+  If it fails, math.NT is **downgraded to comparison stratum** (informative, no veto) —
+  declared here, before measurement.
 - **If valid:** a directional finding additionally requires math.NT NOT to show ≥2-of-4
   collapse-direction A_ext itself. If the control collapses too, the verdict is downgraded
   to **"shared shift — attribution open"** (a corpus-wide/secular force is not
@@ -151,10 +214,17 @@ approximations, stated as such, direction of each approximation noted in the shi
   `f5786f3cc83f9578043aaecf2774c6200cb68b5e774afc3afe40af4eb0cf8285`, fetched 2026-07-25
   from the authors' public repository, path `results/excess_words.csv`). Style words only:
   content-type words track topics, not writing style.
-- **Statistic per cell:** marker tokens per 1,000 tokens over the whole cell (all abstracts,
-  no sampling). **Re-baselined by construction:** the envelope (same §4 method) is fitted on
-  THIS corpus's own 2015–2022 half-year rates per stratum — the published list's PubMed
-  baseline rates are never imported.
+- **Statistic per cell (decisional):** marker tokens per 1,000 tokens over the **same fixed
+  15,000-token seeded pool as §3 metrics 2–3** — fixed-size, so the statistic's sampling
+  precision is constant across cells (the whole-cell rate is heteroscedastic across a ~41×
+  cell-size range and is therefore reported as context only, never fed to an envelope).
+  **Re-baselined by construction:** the envelope (same §4 method) is fitted on THIS corpus's
+  own 2015–2022 half-year rates per stratum — the published list's PubMed baseline rates are
+  never imported.
+- **Direction (fixed here, since §4's formula is typed to the collapse tail):** the marker
+  channel is NOT reoriented; excess is the **upper** tail, and out-of-band for this channel
+  means **z > +2.1448** — anomalously HIGH marker rate. An implementer copying §4's
+  z < −2.1448 literally would test for anomalously low marker usage and void the §7 gate.
 - **Roles:** (a) the math.NT validity precondition (§7); (b) context beside any margin
   finding — including the pre-registered mixed-signal reading: marker excess with margins
   in-band replicates the published news-corpus dissociation (Fitterer et al., ACL 2025 SRW)
