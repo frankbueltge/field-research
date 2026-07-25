@@ -1,0 +1,1235 @@
+{
+  "courtesy_sleep_seconds": 3,
+  "deviation": "D1 (PREREGISTRATION.md \u00a710): route switched from OAI-PMH to this query API before any measurement data was consumed. D1a: (stratum, unit) queries whose own totalResults exceed monthly_split_threshold are split into 6 calendar-month queries each, paged shallowly; unit assignment always comes from each record's <published> date, never from which query window fetched it.",
+  "end_utc": "2026-07-25T05:13:09Z",
+  "endpoint": "https://export.arxiv.org/api/query",
+  "max_retries": 5,
+  "parameters": {
+    "max_results": 2000,
+    "monthly_split_threshold": 8000,
+    "sortBy": "submittedDate",
+    "sortOrder": "ascending",
+    "strata": [
+      "cs.CL",
+      "cs.CV",
+      "math.NT"
+    ],
+    "units": [
+      "2015H1",
+      "2015H2",
+      "2016H1",
+      "2016H2",
+      "2017H1",
+      "2017H2",
+      "2018H1",
+      "2018H2",
+      "2019H1",
+      "2019H2",
+      "2020H1",
+      "2020H2",
+      "2021H1",
+      "2021H2",
+      "2022H1",
+      "2022H2",
+      "2023H1",
+      "2023H2",
+      "2024H1",
+      "2024H2",
+      "2025H1",
+      "2025H2",
+      "2026H1"
+    ]
+  },
+  "results": {
+    "cs.CL": {
+      "2015H1": {
+        "end_utc": "2026-07-25T04:50:18Z",
+        "fetched": 348,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T04:50:18Z",
+        "tally_matches": true,
+        "total_results": 348
+      },
+      "2015H2": {
+        "end_utc": "2026-07-25T04:50:21Z",
+        "fetched": 484,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T04:50:18Z",
+        "tally_matches": true,
+        "total_results": 484
+      },
+      "2016H1": {
+        "end_utc": "2026-07-25T04:50:24Z",
+        "fetched": 761,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T04:50:21Z",
+        "tally_matches": true,
+        "total_results": 761
+      },
+      "2016H2": {
+        "end_utc": "2026-07-25T04:50:27Z",
+        "fetched": 931,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T04:50:24Z",
+        "tally_matches": true,
+        "total_results": 931
+      },
+      "2017H1": {
+        "end_utc": "2026-07-25T04:50:31Z",
+        "fetched": 1053,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T04:50:27Z",
+        "tally_matches": true,
+        "total_results": 1053
+      },
+      "2017H2": {
+        "end_utc": "2026-07-25T04:50:34Z",
+        "fetched": 1347,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T04:50:31Z",
+        "tally_matches": true,
+        "total_results": 1347
+      },
+      "2018H1": {
+        "end_utc": "2026-07-25T04:50:37Z",
+        "fetched": 1664,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T04:50:34Z",
+        "tally_matches": true,
+        "total_results": 1664
+      },
+      "2018H2": {
+        "end_utc": "2026-07-25T04:50:43Z",
+        "fetched": 2065,
+        "mode": "unit",
+        "pages": 2,
+        "start_utc": "2026-07-25T04:50:37Z",
+        "tally_matches": true,
+        "total_results": 2065
+      },
+      "2019H1": {
+        "end_utc": "2026-07-25T04:50:50Z",
+        "fetched": 2210,
+        "mode": "unit",
+        "pages": 2,
+        "start_utc": "2026-07-25T04:50:43Z",
+        "tally_matches": true,
+        "total_results": 2210
+      },
+      "2019H2": {
+        "end_utc": "2026-07-25T04:50:56Z",
+        "fetched": 3183,
+        "mode": "unit",
+        "pages": 2,
+        "start_utc": "2026-07-25T04:50:50Z",
+        "tally_matches": true,
+        "total_results": 3183
+      },
+      "2020H1": {
+        "end_utc": "2026-07-25T04:51:03Z",
+        "fetched": 3246,
+        "mode": "unit",
+        "pages": 2,
+        "start_utc": "2026-07-25T04:50:56Z",
+        "tally_matches": true,
+        "total_results": 3246
+      },
+      "2020H2": {
+        "end_utc": "2026-07-25T04:51:09Z",
+        "fetched": 3879,
+        "mode": "unit",
+        "pages": 2,
+        "start_utc": "2026-07-25T04:51:03Z",
+        "tally_matches": true,
+        "total_results": 3879
+      },
+      "2021H1": {
+        "end_utc": "2026-07-25T04:51:16Z",
+        "fetched": 3988,
+        "mode": "unit",
+        "pages": 2,
+        "start_utc": "2026-07-25T04:51:09Z",
+        "tally_matches": true,
+        "total_results": 3988
+      },
+      "2021H2": {
+        "end_utc": "2026-07-25T04:51:25Z",
+        "fetched": 4095,
+        "mode": "unit",
+        "pages": 3,
+        "start_utc": "2026-07-25T04:51:16Z",
+        "tally_matches": true,
+        "total_results": 4095
+      },
+      "2022H1": {
+        "end_utc": "2026-07-25T04:51:36Z",
+        "fetched": 4289,
+        "mode": "unit",
+        "pages": 3,
+        "start_utc": "2026-07-25T04:51:25Z",
+        "tally_matches": true,
+        "total_results": 4289
+      },
+      "2022H2": {
+        "end_utc": "2026-07-25T04:51:46Z",
+        "fetched": 4682,
+        "mode": "unit",
+        "pages": 3,
+        "start_utc": "2026-07-25T04:51:36Z",
+        "tally_matches": true,
+        "total_results": 4682
+      },
+      "2023H1": {
+        "end_utc": "2026-07-25T04:51:59Z",
+        "fetched": 6313,
+        "mode": "unit",
+        "pages": 4,
+        "start_utc": "2026-07-25T04:51:46Z",
+        "tally_matches": true,
+        "total_results": 6313
+      },
+      "2023H2": {
+        "end_utc": "2026-07-25T04:52:12Z",
+        "fetched": 7288,
+        "mode": "unit",
+        "pages": 4,
+        "start_utc": "2026-07-25T04:51:59Z",
+        "tally_matches": true,
+        "total_results": 7288
+      },
+      "2024H1": {
+        "end_utc": "2026-07-25T04:52:59Z",
+        "fetched": 10669,
+        "mode": "monthly",
+        "months": {
+          "202401": {
+            "fetched": 1204,
+            "pages": 1,
+            "total_results": 1204
+          },
+          "202402": {
+            "fetched": 2112,
+            "pages": 2,
+            "total_results": 2112
+          },
+          "202403": {
+            "fetched": 1698,
+            "pages": 1,
+            "total_results": 1698
+          },
+          "202404": {
+            "fetched": 1583,
+            "pages": 1,
+            "total_results": 1583
+          },
+          "202405": {
+            "fetched": 1618,
+            "pages": 1,
+            "total_results": 1618
+          },
+          "202406": {
+            "fetched": 2454,
+            "pages": 2,
+            "total_results": 2454
+          }
+        },
+        "pages": 8,
+        "start_utc": "2026-07-25T04:52:12Z",
+        "sum_month_total_results": 10669,
+        "tally_matches": true,
+        "total_results": 10669
+      },
+      "2024H2": {
+        "end_utc": "2026-07-25T04:53:41Z",
+        "fetched": 10020,
+        "mode": "monthly",
+        "months": {
+          "202407": {
+            "fetched": 1620,
+            "pages": 1,
+            "total_results": 1620
+          },
+          "202408": {
+            "fetched": 1295,
+            "pages": 1,
+            "total_results": 1295
+          },
+          "202409": {
+            "fetched": 1502,
+            "pages": 1,
+            "total_results": 1502
+          },
+          "202410": {
+            "fetched": 2631,
+            "pages": 2,
+            "total_results": 2631
+          },
+          "202411": {
+            "fetched": 1307,
+            "pages": 1,
+            "total_results": 1307
+          },
+          "202412": {
+            "fetched": 1665,
+            "pages": 1,
+            "total_results": 1665
+          }
+        },
+        "pages": 7,
+        "start_utc": "2026-07-25T04:52:59Z",
+        "sum_month_total_results": 10020,
+        "tally_matches": true,
+        "total_results": 10020
+      },
+      "2025H1": {
+        "end_utc": "2026-07-25T04:54:33Z",
+        "fetched": 12550,
+        "mode": "monthly",
+        "months": {
+          "202501": {
+            "fetched": 1312,
+            "pages": 1,
+            "total_results": 1312
+          },
+          "202502": {
+            "fetched": 2476,
+            "pages": 2,
+            "total_results": 2476
+          },
+          "202503": {
+            "fetched": 1878,
+            "pages": 1,
+            "total_results": 1878
+          },
+          "202504": {
+            "fetched": 1606,
+            "pages": 1,
+            "total_results": 1606
+          },
+          "202505": {
+            "fetched": 2954,
+            "pages": 2,
+            "total_results": 2954
+          },
+          "202506": {
+            "fetched": 2324,
+            "pages": 2,
+            "total_results": 2324
+          }
+        },
+        "pages": 9,
+        "start_utc": "2026-07-25T04:53:41Z",
+        "sum_month_total_results": 12550,
+        "tally_matches": true,
+        "total_results": 12550
+      },
+      "2025H2": {
+        "end_utc": "2026-07-25T04:55:21Z",
+        "fetched": 11207,
+        "mode": "monthly",
+        "months": {
+          "202507": {
+            "fetched": 1640,
+            "pages": 1,
+            "total_results": 1640
+          },
+          "202508": {
+            "fetched": 1830,
+            "pages": 1,
+            "total_results": 1830
+          },
+          "202509": {
+            "fetched": 2234,
+            "pages": 2,
+            "total_results": 2234
+          },
+          "202510": {
+            "fetched": 2591,
+            "pages": 2,
+            "total_results": 2591
+          },
+          "202511": {
+            "fetched": 1582,
+            "pages": 1,
+            "total_results": 1582
+          },
+          "202512": {
+            "fetched": 1330,
+            "pages": 1,
+            "total_results": 1330
+          }
+        },
+        "pages": 8,
+        "start_utc": "2026-07-25T04:54:33Z",
+        "sum_month_total_results": 11207,
+        "tally_matches": true,
+        "total_results": 11207
+      },
+      "2026H1": {
+        "end_utc": "2026-07-25T04:56:30Z",
+        "fetched": 14313,
+        "mode": "monthly",
+        "months": {
+          "202601": {
+            "fetched": 2237,
+            "pages": 2,
+            "total_results": 2237
+          },
+          "202602": {
+            "fetched": 1994,
+            "pages": 1,
+            "total_results": 1994
+          },
+          "202603": {
+            "fetched": 2109,
+            "pages": 2,
+            "total_results": 2109
+          },
+          "202604": {
+            "fetched": 2513,
+            "pages": 2,
+            "total_results": 2513
+          },
+          "202605": {
+            "fetched": 2992,
+            "pages": 2,
+            "total_results": 2992
+          },
+          "202606": {
+            "fetched": 2468,
+            "pages": 2,
+            "total_results": 2468
+          }
+        },
+        "pages": 11,
+        "start_utc": "2026-07-25T04:55:21Z",
+        "sum_month_total_results": 14313,
+        "tally_matches": false,
+        "total_results": 14315
+      }
+    },
+    "cs.CV": {
+      "2015H1": {
+        "end_utc": "2026-07-25T04:56:35Z",
+        "fetched": 1092,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T04:56:30Z",
+        "tally_matches": true,
+        "total_results": 1092
+      },
+      "2015H2": {
+        "end_utc": "2026-07-25T04:56:40Z",
+        "fetched": 1172,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T04:56:35Z",
+        "tally_matches": true,
+        "total_results": 1172
+      },
+      "2016H1": {
+        "end_utc": "2026-07-25T04:56:46Z",
+        "fetched": 1566,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T04:56:40Z",
+        "tally_matches": true,
+        "total_results": 1566
+      },
+      "2016H2": {
+        "end_utc": "2026-07-25T04:56:55Z",
+        "fetched": 2065,
+        "mode": "unit",
+        "pages": 2,
+        "start_utc": "2026-07-25T04:56:46Z",
+        "tally_matches": true,
+        "total_results": 2065
+      },
+      "2017H1": {
+        "end_utc": "2026-07-25T04:57:05Z",
+        "fetched": 2489,
+        "mode": "unit",
+        "pages": 2,
+        "start_utc": "2026-07-25T04:56:55Z",
+        "tally_matches": true,
+        "total_results": 2489
+      },
+      "2017H2": {
+        "end_utc": "2026-07-25T04:57:16Z",
+        "fetched": 3234,
+        "mode": "unit",
+        "pages": 2,
+        "start_utc": "2026-07-25T04:57:05Z",
+        "tally_matches": true,
+        "total_results": 3234
+      },
+      "2018H1": {
+        "end_utc": "2026-07-25T04:57:29Z",
+        "fetched": 3941,
+        "mode": "unit",
+        "pages": 2,
+        "start_utc": "2026-07-25T04:57:16Z",
+        "tally_matches": true,
+        "total_results": 3941
+      },
+      "2018H2": {
+        "end_utc": "2026-07-25T04:57:47Z",
+        "fetched": 4650,
+        "mode": "unit",
+        "pages": 3,
+        "start_utc": "2026-07-25T04:57:29Z",
+        "tally_matches": true,
+        "total_results": 4650
+      },
+      "2019H1": {
+        "end_utc": "2026-07-25T04:58:08Z",
+        "fetched": 5365,
+        "mode": "unit",
+        "pages": 3,
+        "start_utc": "2026-07-25T04:57:47Z",
+        "tally_matches": true,
+        "total_results": 5365
+      },
+      "2019H2": {
+        "end_utc": "2026-07-25T04:58:31Z",
+        "fetched": 6236,
+        "mode": "unit",
+        "pages": 4,
+        "start_utc": "2026-07-25T04:58:08Z",
+        "tally_matches": true,
+        "total_results": 6236
+      },
+      "2020H1": {
+        "end_utc": "2026-07-25T04:58:57Z",
+        "fetched": 6894,
+        "mode": "unit",
+        "pages": 4,
+        "start_utc": "2026-07-25T04:58:31Z",
+        "tally_matches": true,
+        "total_results": 6894
+      },
+      "2020H2": {
+        "end_utc": "2026-07-25T04:59:35Z",
+        "fetched": 8446,
+        "mode": "monthly",
+        "months": {
+          "202007": {
+            "fetched": 1670,
+            "pages": 1,
+            "total_results": 1670
+          },
+          "202008": {
+            "fetched": 1327,
+            "pages": 1,
+            "total_results": 1327
+          },
+          "202009": {
+            "fetched": 1144,
+            "pages": 1,
+            "total_results": 1144
+          },
+          "202010": {
+            "fetched": 1381,
+            "pages": 1,
+            "total_results": 1381
+          },
+          "202011": {
+            "fetched": 1424,
+            "pages": 1,
+            "total_results": 1424
+          },
+          "202012": {
+            "fetched": 1500,
+            "pages": 1,
+            "total_results": 1500
+          }
+        },
+        "pages": 6,
+        "start_utc": "2026-07-25T04:58:57Z",
+        "sum_month_total_results": 8446,
+        "tally_matches": true,
+        "total_results": 8446
+      },
+      "2021H1": {
+        "end_utc": "2026-07-25T05:00:33Z",
+        "fetched": 8426,
+        "mode": "monthly",
+        "months": {
+          "202101": {
+            "fetched": 1026,
+            "pages": 1,
+            "total_results": 1026
+          },
+          "202102": {
+            "fetched": 933,
+            "pages": 1,
+            "total_results": 933
+          },
+          "202103": {
+            "fetched": 1874,
+            "pages": 1,
+            "total_results": 1874
+          },
+          "202104": {
+            "fetched": 1642,
+            "pages": 1,
+            "total_results": 1642
+          },
+          "202105": {
+            "fetched": 1335,
+            "pages": 1,
+            "total_results": 1335
+          },
+          "202106": {
+            "fetched": 1616,
+            "pages": 1,
+            "total_results": 1616
+          }
+        },
+        "pages": 6,
+        "start_utc": "2026-07-25T04:59:35Z",
+        "sum_month_total_results": 8426,
+        "tally_matches": false,
+        "total_results": 8427
+      },
+      "2021H2": {
+        "end_utc": "2026-07-25T05:01:12Z",
+        "fetched": 8774,
+        "mode": "monthly",
+        "months": {
+          "202107": {
+            "fetched": 1371,
+            "pages": 1,
+            "total_results": 1371
+          },
+          "202108": {
+            "fetched": 1462,
+            "pages": 1,
+            "total_results": 1462
+          },
+          "202109": {
+            "fetched": 1289,
+            "pages": 1,
+            "total_results": 1289
+          },
+          "202110": {
+            "fetched": 1610,
+            "pages": 1,
+            "total_results": 1610
+          },
+          "202111": {
+            "fetched": 1485,
+            "pages": 1,
+            "total_results": 1485
+          },
+          "202112": {
+            "fetched": 1557,
+            "pages": 1,
+            "total_results": 1557
+          }
+        },
+        "pages": 6,
+        "start_utc": "2026-07-25T05:00:33Z",
+        "sum_month_total_results": 8774,
+        "tally_matches": false,
+        "total_results": 8776
+      },
+      "2022H1": {
+        "end_utc": "2026-07-25T05:02:13Z",
+        "fetched": 9248,
+        "mode": "monthly",
+        "months": {
+          "202201": {
+            "fetched": 1146,
+            "pages": 1,
+            "total_results": 1146
+          },
+          "202202": {
+            "fetched": 1163,
+            "pages": 1,
+            "total_results": 1163
+          },
+          "202203": {
+            "fetched": 2269,
+            "pages": 2,
+            "total_results": 2269
+          },
+          "202204": {
+            "fetched": 1583,
+            "pages": 1,
+            "total_results": 1583
+          },
+          "202205": {
+            "fetched": 1476,
+            "pages": 1,
+            "total_results": 1476
+          },
+          "202206": {
+            "fetched": 1611,
+            "pages": 1,
+            "total_results": 1611
+          }
+        },
+        "pages": 7,
+        "start_utc": "2026-07-25T05:01:12Z",
+        "sum_month_total_results": 9248,
+        "tally_matches": true,
+        "total_results": 9248
+      },
+      "2022H2": {
+        "end_utc": "2026-07-25T05:02:57Z",
+        "fetched": 10444,
+        "mode": "monthly",
+        "months": {
+          "202207": {
+            "fetched": 1979,
+            "pages": 1,
+            "total_results": 1979
+          },
+          "202208": {
+            "fetched": 1452,
+            "pages": 1,
+            "total_results": 1452
+          },
+          "202209": {
+            "fetched": 1534,
+            "pages": 1,
+            "total_results": 1534
+          },
+          "202210": {
+            "fetched": 1977,
+            "pages": 1,
+            "total_results": 1977
+          },
+          "202211": {
+            "fetched": 1995,
+            "pages": 1,
+            "total_results": 1995
+          },
+          "202212": {
+            "fetched": 1507,
+            "pages": 1,
+            "total_results": 1507
+          }
+        },
+        "pages": 6,
+        "start_utc": "2026-07-25T05:02:13Z",
+        "sum_month_total_results": 10444,
+        "tally_matches": true,
+        "total_results": 10444
+      },
+      "2023H1": {
+        "end_utc": "2026-07-25T05:03:45Z",
+        "fetched": 11281,
+        "mode": "monthly",
+        "months": {
+          "202301": {
+            "fetched": 1124,
+            "pages": 1,
+            "total_results": 1124
+          },
+          "202302": {
+            "fetched": 1323,
+            "pages": 1,
+            "total_results": 1323
+          },
+          "202303": {
+            "fetched": 2773,
+            "pages": 2,
+            "total_results": 2773
+          },
+          "202304": {
+            "fetched": 1972,
+            "pages": 1,
+            "total_results": 1972
+          },
+          "202305": {
+            "fetched": 2174,
+            "pages": 2,
+            "total_results": 2174
+          },
+          "202306": {
+            "fetched": 1915,
+            "pages": 1,
+            "total_results": 1915
+          }
+        },
+        "pages": 8,
+        "start_utc": "2026-07-25T05:02:57Z",
+        "sum_month_total_results": 11281,
+        "tally_matches": false,
+        "total_results": 11282
+      },
+      "2023H2": {
+        "end_utc": "2026-07-25T05:04:53Z",
+        "fetched": 13241,
+        "mode": "monthly",
+        "months": {
+          "202307": {
+            "fetched": 1918,
+            "pages": 1,
+            "total_results": 1918
+          },
+          "202308": {
+            "fetched": 2286,
+            "pages": 2,
+            "total_results": 2286
+          },
+          "202309": {
+            "fetched": 2096,
+            "pages": 2,
+            "total_results": 2096
+          },
+          "202310": {
+            "fetched": 2044,
+            "pages": 2,
+            "total_results": 2044
+          },
+          "202311": {
+            "fetched": 2392,
+            "pages": 2,
+            "total_results": 2392
+          },
+          "202312": {
+            "fetched": 2505,
+            "pages": 2,
+            "total_results": 2505
+          }
+        },
+        "pages": 11,
+        "start_utc": "2026-07-25T05:03:45Z",
+        "sum_month_total_results": 13241,
+        "tally_matches": true,
+        "total_results": 13241
+      },
+      "2024H1": {
+        "end_utc": "2026-07-25T05:06:10Z",
+        "fetched": 14349,
+        "mode": "monthly",
+        "months": {
+          "202401": {
+            "fetched": 1793,
+            "pages": 1,
+            "total_results": 1793
+          },
+          "202402": {
+            "fetched": 1846,
+            "pages": 1,
+            "total_results": 1846
+          },
+          "202403": {
+            "fetched": 3163,
+            "pages": 2,
+            "total_results": 3163
+          },
+          "202404": {
+            "fetched": 2576,
+            "pages": 2,
+            "total_results": 2576
+          },
+          "202405": {
+            "fetched": 2461,
+            "pages": 2,
+            "total_results": 2461
+          },
+          "202406": {
+            "fetched": 2510,
+            "pages": 2,
+            "total_results": 2510
+          }
+        },
+        "pages": 10,
+        "start_utc": "2026-07-25T05:04:53Z",
+        "sum_month_total_results": 14349,
+        "tally_matches": true,
+        "total_results": 14349
+      },
+      "2024H2": {
+        "end_utc": "2026-07-25T05:07:20Z",
+        "fetched": 16235,
+        "mode": "monthly",
+        "months": {
+          "202407": {
+            "fetched": 2855,
+            "pages": 2,
+            "total_results": 2855
+          },
+          "202408": {
+            "fetched": 2254,
+            "pages": 2,
+            "total_results": 2254
+          },
+          "202409": {
+            "fetched": 2556,
+            "pages": 2,
+            "total_results": 2556
+          },
+          "202410": {
+            "fetched": 2771,
+            "pages": 2,
+            "total_results": 2771
+          },
+          "202411": {
+            "fetched": 2683,
+            "pages": 2,
+            "total_results": 2683
+          },
+          "202412": {
+            "fetched": 3116,
+            "pages": 2,
+            "total_results": 3116
+          }
+        },
+        "pages": 12,
+        "start_utc": "2026-07-25T05:06:10Z",
+        "sum_month_total_results": 16235,
+        "tally_matches": true,
+        "total_results": 16235
+      },
+      "2025H1": {
+        "end_utc": "2026-07-25T05:08:35Z",
+        "fetched": 17095,
+        "mode": "monthly",
+        "months": {
+          "202501": {
+            "fetched": 2052,
+            "pages": 2,
+            "total_results": 2052
+          },
+          "202502": {
+            "fetched": 2232,
+            "pages": 2,
+            "total_results": 2232
+          },
+          "202503": {
+            "fetched": 3909,
+            "pages": 2,
+            "total_results": 3909
+          },
+          "202504": {
+            "fetched": 2564,
+            "pages": 2,
+            "total_results": 2564
+          },
+          "202505": {
+            "fetched": 3290,
+            "pages": 2,
+            "total_results": 3290
+          },
+          "202506": {
+            "fetched": 3048,
+            "pages": 2,
+            "total_results": 3048
+          }
+        },
+        "pages": 12,
+        "start_utc": "2026-07-25T05:07:20Z",
+        "sum_month_total_results": 17095,
+        "tally_matches": true,
+        "total_results": 17095
+      },
+      "2025H2": {
+        "end_utc": "2026-07-25T05:09:50Z",
+        "fetched": 17885,
+        "mode": "monthly",
+        "months": {
+          "202507": {
+            "fetched": 2863,
+            "pages": 2,
+            "total_results": 2863
+          },
+          "202508": {
+            "fetched": 2994,
+            "pages": 2,
+            "total_results": 2994
+          },
+          "202509": {
+            "fetched": 2979,
+            "pages": 2,
+            "total_results": 2979
+          },
+          "202510": {
+            "fetched": 2887,
+            "pages": 2,
+            "total_results": 2887
+          },
+          "202511": {
+            "fetched": 3248,
+            "pages": 2,
+            "total_results": 3248
+          },
+          "202512": {
+            "fetched": 2914,
+            "pages": 2,
+            "total_results": 2914
+          }
+        },
+        "pages": 12,
+        "start_utc": "2026-07-25T05:08:35Z",
+        "sum_month_total_results": 17885,
+        "tally_matches": true,
+        "total_results": 17885
+      },
+      "2026H1": {
+        "end_utc": "2026-07-25T05:11:06Z",
+        "fetched": 19749,
+        "mode": "monthly",
+        "months": {
+          "202601": {
+            "fetched": 2444,
+            "pages": 2,
+            "total_results": 2444
+          },
+          "202602": {
+            "fetched": 2670,
+            "pages": 2,
+            "total_results": 2670
+          },
+          "202603": {
+            "fetched": 4061,
+            "pages": 3,
+            "total_results": 4061
+          },
+          "202604": {
+            "fetched": 3296,
+            "pages": 2,
+            "total_results": 3296
+          },
+          "202605": {
+            "fetched": 3961,
+            "pages": 2,
+            "total_results": 3961
+          },
+          "202606": {
+            "fetched": 3317,
+            "pages": 2,
+            "total_results": 3317
+          }
+        },
+        "pages": 13,
+        "start_utc": "2026-07-25T05:09:50Z",
+        "sum_month_total_results": 19749,
+        "tally_matches": false,
+        "total_results": 19750
+      }
+    },
+    "math.NT": {
+      "2015H1": {
+        "end_utc": "2026-07-25T05:11:10Z",
+        "fetched": 1040,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:11:06Z",
+        "tally_matches": true,
+        "total_results": 1040
+      },
+      "2015H2": {
+        "end_utc": "2026-07-25T05:11:14Z",
+        "fetched": 1159,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:11:10Z",
+        "tally_matches": true,
+        "total_results": 1159
+      },
+      "2016H1": {
+        "end_utc": "2026-07-25T05:11:19Z",
+        "fetched": 1242,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:11:14Z",
+        "tally_matches": true,
+        "total_results": 1242
+      },
+      "2016H2": {
+        "end_utc": "2026-07-25T05:11:24Z",
+        "fetched": 1217,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:11:19Z",
+        "tally_matches": true,
+        "total_results": 1217
+      },
+      "2017H1": {
+        "end_utc": "2026-07-25T05:11:28Z",
+        "fetched": 1202,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:11:24Z",
+        "tally_matches": true,
+        "total_results": 1202
+      },
+      "2017H2": {
+        "end_utc": "2026-07-25T05:11:33Z",
+        "fetched": 1255,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:11:28Z",
+        "tally_matches": true,
+        "total_results": 1255
+      },
+      "2018H1": {
+        "end_utc": "2026-07-25T05:11:39Z",
+        "fetched": 1234,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:11:33Z",
+        "tally_matches": true,
+        "total_results": 1234
+      },
+      "2018H2": {
+        "end_utc": "2026-07-25T05:11:44Z",
+        "fetched": 1331,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:11:39Z",
+        "tally_matches": true,
+        "total_results": 1331
+      },
+      "2019H1": {
+        "end_utc": "2026-07-25T05:11:49Z",
+        "fetched": 1225,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:11:44Z",
+        "tally_matches": true,
+        "total_results": 1225
+      },
+      "2019H2": {
+        "end_utc": "2026-07-25T05:11:54Z",
+        "fetched": 1432,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:11:49Z",
+        "tally_matches": true,
+        "total_results": 1432
+      },
+      "2020H1": {
+        "end_utc": "2026-07-25T05:11:58Z",
+        "fetched": 1582,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:11:54Z",
+        "tally_matches": true,
+        "total_results": 1582
+      },
+      "2020H2": {
+        "end_utc": "2026-07-25T05:12:03Z",
+        "fetched": 1486,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:11:58Z",
+        "tally_matches": true,
+        "total_results": 1486
+      },
+      "2021H1": {
+        "end_utc": "2026-07-25T05:12:08Z",
+        "fetched": 1454,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:12:03Z",
+        "tally_matches": true,
+        "total_results": 1454
+      },
+      "2021H2": {
+        "end_utc": "2026-07-25T05:12:14Z",
+        "fetched": 1492,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:12:08Z",
+        "tally_matches": true,
+        "total_results": 1492
+      },
+      "2022H1": {
+        "end_utc": "2026-07-25T05:12:19Z",
+        "fetched": 1453,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:12:14Z",
+        "tally_matches": true,
+        "total_results": 1453
+      },
+      "2022H2": {
+        "end_utc": "2026-07-25T05:12:24Z",
+        "fetched": 1545,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:12:19Z",
+        "tally_matches": true,
+        "total_results": 1545
+      },
+      "2023H1": {
+        "end_utc": "2026-07-25T05:12:29Z",
+        "fetched": 1476,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:12:24Z",
+        "tally_matches": true,
+        "total_results": 1476
+      },
+      "2023H2": {
+        "end_utc": "2026-07-25T05:12:35Z",
+        "fetched": 1606,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:12:29Z",
+        "tally_matches": true,
+        "total_results": 1606
+      },
+      "2024H1": {
+        "end_utc": "2026-07-25T05:12:40Z",
+        "fetched": 1682,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:12:35Z",
+        "tally_matches": true,
+        "total_results": 1682
+      },
+      "2024H2": {
+        "end_utc": "2026-07-25T05:12:45Z",
+        "fetched": 1700,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:12:40Z",
+        "tally_matches": true,
+        "total_results": 1700
+      },
+      "2025H1": {
+        "end_utc": "2026-07-25T05:12:51Z",
+        "fetched": 1699,
+        "mode": "unit",
+        "pages": 1,
+        "start_utc": "2026-07-25T05:12:45Z",
+        "tally_matches": true,
+        "total_results": 1699
+      },
+      "2025H2": {
+        "end_utc": "2026-07-25T05:13:01Z",
+        "fetched": 2018,
+        "mode": "unit",
+        "pages": 2,
+        "start_utc": "2026-07-25T05:12:51Z",
+        "tally_matches": true,
+        "total_results": 2018
+      },
+      "2026H1": {
+        "end_utc": "2026-07-25T05:13:09Z",
+        "fetched": 2159,
+        "mode": "unit",
+        "pages": 2,
+        "start_utc": "2026-07-25T05:13:01Z",
+        "tally_matches": true,
+        "total_results": 2159
+      }
+    }
+  },
+  "single_connection": true,
+  "start_utc": "2026-07-25T04:50:18Z"
+}

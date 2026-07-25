@@ -1,0 +1,303 @@
+{
+  "cells": {
+    "cs.CL": {
+      "2015H1": {
+        "excluded_short": 0,
+        "kept": 240
+      },
+      "2015H2": {
+        "excluded_short": 5,
+        "kept": 342
+      },
+      "2016H1": {
+        "excluded_short": 11,
+        "kept": 581
+      },
+      "2016H2": {
+        "excluded_short": 9,
+        "kept": 705
+      },
+      "2017H1": {
+        "excluded_short": 10,
+        "kept": 830
+      },
+      "2017H2": {
+        "excluded_short": 12,
+        "kept": 1070
+      },
+      "2018H1": {
+        "excluded_short": 9,
+        "kept": 1336
+      },
+      "2018H2": {
+        "excluded_short": 10,
+        "kept": 1619
+      },
+      "2019H1": {
+        "excluded_short": 7,
+        "kept": 1728
+      },
+      "2019H2": {
+        "excluded_short": 11,
+        "kept": 2424
+      },
+      "2020H1": {
+        "excluded_short": 8,
+        "kept": 2430
+      },
+      "2020H2": {
+        "excluded_short": 7,
+        "kept": 3137
+      },
+      "2021H1": {
+        "excluded_short": 9,
+        "kept": 3265
+      },
+      "2021H2": {
+        "excluded_short": 6,
+        "kept": 3298
+      },
+      "2022H1": {
+        "excluded_short": 9,
+        "kept": 3368
+      },
+      "2022H2": {
+        "excluded_short": 9,
+        "kept": 3747
+      },
+      "2023H1": {
+        "excluded_short": 7,
+        "kept": 4958
+      },
+      "2023H2": {
+        "excluded_short": 8,
+        "kept": 5509
+      },
+      "2024H1": {
+        "excluded_short": 11,
+        "kept": 7840
+      },
+      "2024H2": {
+        "excluded_short": 7,
+        "kept": 7141
+      },
+      "2025H1": {
+        "excluded_short": 7,
+        "kept": 9075
+      },
+      "2025H2": {
+        "excluded_short": 8,
+        "kept": 7996
+      },
+      "2026H1": {
+        "excluded_short": 4,
+        "kept": 9762
+      }
+    },
+    "cs.CV": {
+      "2015H1": {
+        "excluded_short": 4,
+        "kept": 884
+      },
+      "2015H2": {
+        "excluded_short": 5,
+        "kept": 966
+      },
+      "2016H1": {
+        "excluded_short": 8,
+        "kept": 1296
+      },
+      "2016H2": {
+        "excluded_short": 3,
+        "kept": 1777
+      },
+      "2017H1": {
+        "excluded_short": 16,
+        "kept": 2142
+      },
+      "2017H2": {
+        "excluded_short": 10,
+        "kept": 2745
+      },
+      "2018H1": {
+        "excluded_short": 9,
+        "kept": 3335
+      },
+      "2018H2": {
+        "excluded_short": 15,
+        "kept": 3902
+      },
+      "2019H1": {
+        "excluded_short": 16,
+        "kept": 4231
+      },
+      "2019H2": {
+        "excluded_short": 9,
+        "kept": 4233
+      },
+      "2020H1": {
+        "excluded_short": 10,
+        "kept": 4831
+      },
+      "2020H2": {
+        "excluded_short": 14,
+        "kept": 6145
+      },
+      "2021H1": {
+        "excluded_short": 7,
+        "kept": 6241
+      },
+      "2021H2": {
+        "excluded_short": 12,
+        "kept": 6432
+      },
+      "2022H1": {
+        "excluded_short": 10,
+        "kept": 6625
+      },
+      "2022H2": {
+        "excluded_short": 15,
+        "kept": 7975
+      },
+      "2023H1": {
+        "excluded_short": 7,
+        "kept": 8587
+      },
+      "2023H2": {
+        "excluded_short": 7,
+        "kept": 10299
+      },
+      "2024H1": {
+        "excluded_short": 10,
+        "kept": 11146
+      },
+      "2024H2": {
+        "excluded_short": 13,
+        "kept": 12617
+      },
+      "2025H1": {
+        "excluded_short": 6,
+        "kept": 13198
+      },
+      "2025H2": {
+        "excluded_short": 7,
+        "kept": 14665
+      },
+      "2026H1": {
+        "excluded_short": 11,
+        "kept": 16550
+      }
+    },
+    "math.NT": {
+      "2015H1": {
+        "excluded_short": 234,
+        "kept": 596
+      },
+      "2015H2": {
+        "excluded_short": 230,
+        "kept": 680
+      },
+      "2016H1": {
+        "excluded_short": 291,
+        "kept": 683
+      },
+      "2016H2": {
+        "excluded_short": 248,
+        "kept": 711
+      },
+      "2017H1": {
+        "excluded_short": 278,
+        "kept": 663
+      },
+      "2017H2": {
+        "excluded_short": 225,
+        "kept": 751
+      },
+      "2018H1": {
+        "excluded_short": 238,
+        "kept": 741
+      },
+      "2018H2": {
+        "excluded_short": 252,
+        "kept": 802
+      },
+      "2019H1": {
+        "excluded_short": 241,
+        "kept": 685
+      },
+      "2019H2": {
+        "excluded_short": 251,
+        "kept": 807
+      },
+      "2020H1": {
+        "excluded_short": 300,
+        "kept": 858
+      },
+      "2020H2": {
+        "excluded_short": 242,
+        "kept": 880
+      },
+      "2021H1": {
+        "excluded_short": 270,
+        "kept": 827
+      },
+      "2021H2": {
+        "excluded_short": 250,
+        "kept": 892
+      },
+      "2022H1": {
+        "excluded_short": 243,
+        "kept": 849
+      },
+      "2022H2": {
+        "excluded_short": 276,
+        "kept": 881
+      },
+      "2023H1": {
+        "excluded_short": 252,
+        "kept": 863
+      },
+      "2023H2": {
+        "excluded_short": 259,
+        "kept": 929
+      },
+      "2024H1": {
+        "excluded_short": 262,
+        "kept": 987
+      },
+      "2024H2": {
+        "excluded_short": 271,
+        "kept": 1023
+      },
+      "2025H1": {
+        "excluded_short": 243,
+        "kept": 1044
+      },
+      "2025H2": {
+        "excluded_short": 262,
+        "kept": 1264
+      },
+      "2026H1": {
+        "excluded_short": 265,
+        "kept": 1337
+      }
+    }
+  },
+  "contamination_ceiling": {
+    "cs.CL": {
+      "pre2023_datestamp_post2023_count": 1582,
+      "pre2023_kept_count": 30120,
+      "share": 0.05252324037184595
+    },
+    "cs.CV": {
+      "pre2023_datestamp_post2023_count": 3668,
+      "pre2023_kept_count": 63760,
+      "share": 0.05752823086574655
+    },
+    "math.NT": {
+      "pre2023_datestamp_post2023_count": 1320,
+      "pre2023_kept_count": 12306,
+      "share": 0.10726474890297416
+    }
+  }
+}

@@ -1,0 +1,904 @@
+{
+  "marker_csv": "/home/user/field-research/drafts/2026-07-25-homogenization-dossier/provenance/excess_words.csv",
+  "marker_style_word_count": 407,
+  "stratum": "math.NT",
+  "units": [
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.48664038545773103
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 419,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 27.933333333333334
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 1675,
+        "total_tokens": 57224,
+        "value": 29.27093527191388
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 57.1745582671224
+      },
+      "n_kept": 596,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.029545133707094162
+      },
+      "unit": "2015H1",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2283,
+        "value": -1.1120230592072147
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.4763729246487867
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 441,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 29.4
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 1901,
+        "total_tokens": 65681,
+        "value": 28.942921088290372
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 59.03864598761748
+      },
+      "n_kept": 680,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.02928929147759825
+      },
+      "unit": "2015H2",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2349,
+        "value": -1.087968320736613
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.474051460968164
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 478,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 31.866666666666667
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 2019,
+        "total_tokens": 66846,
+        "value": 30.203751907369178
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 61.18668981782088
+      },
+      "n_kept": 683,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.03099155690904421
+      },
+      "unit": "2016H1",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2293,
+        "value": -1.125970148821256
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.4699866607381058
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 425,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 28.333333333333332
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 1998,
+        "total_tokens": 69783,
+        "value": 28.631615149821588
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 55.751431522544785
+      },
+      "n_kept": 711,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.03070571137549674
+      },
+      "unit": "2016H2",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2249,
+        "value": -1.0955458386478354
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.4806828391734052
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 426,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 28.400000000000002
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 1890,
+        "total_tokens": 65137,
+        "value": 29.01576676850331
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 55.75843929942632
+      },
+      "n_kept": 663,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.031931428813335425
+      },
+      "unit": "2017H1",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2226,
+        "value": -1.1193807139069711
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.49500416319733553
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 425,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 28.333333333333332
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 2110,
+        "total_tokens": 72963,
+        "value": 28.918767046311142
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 60.67287460542382
+      },
+      "n_kept": 751,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.029606164852256502
+      },
+      "unit": "2017H2",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2402,
+        "value": -1.1009892325258013
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.4878048780487805
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 457,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 30.466666666666665
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 2117,
+        "total_tokens": 72704,
+        "value": 29.11806778169014
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 59.73832839676522
+      },
+      "n_kept": 741,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.029901830505725695
+      },
+      "unit": "2018H1",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2337,
+        "value": -1.1006375662259298
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.47722246793454226
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 417,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 27.799999999999997
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 2193,
+        "total_tokens": 76591,
+        "value": 28.63260696426473
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 59.49078191307926
+      },
+      "n_kept": 802,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.029303847149127205
+      },
+      "unit": "2018H2",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2261,
+        "value": -1.1174801309013123
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.47470817120622566
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 443,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 29.533333333333335
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 1966,
+        "total_tokens": 67598,
+        "value": 29.08370070120418
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 59.12707047919881
+      },
+      "n_kept": 685,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.029988609378758902
+      },
+      "unit": "2019H1",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2313,
+        "value": -1.0598937936352946
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.4739168877099912
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 405,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 27.0
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 2334,
+        "total_tokens": 77657,
+        "value": 30.055242927231287
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 56.28939837178557
+      },
+      "n_kept": 807,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.029149964131220372
+      },
+      "unit": "2019H2",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2262,
+        "value": -1.060660655558752
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.47411210954214805
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 464,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 30.933333333333334
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 2373,
+        "total_tokens": 81756,
+        "value": 29.02539263173345
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 58.6034223146546
+      },
+      "n_kept": 858,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.03051318477845899
+      },
+      "unit": "2020H1",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2337,
+        "value": -1.0813404329848657
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.4799503927242662
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 436,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 29.066666666666666
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 2747,
+        "total_tokens": 90027,
+        "value": 30.513068301731703
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 61.75656395642926
+      },
+      "n_kept": 880,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.029364457797156986
+      },
+      "unit": "2020H2",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2419,
+        "value": -1.098265072061095
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.4836629406706793
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 440,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 29.333333333333332
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 2388,
+        "total_tokens": 79743,
+        "value": 29.946202174485535
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 56.55250331388824
+      },
+      "n_kept": 827,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.029029152763303687
+      },
+      "unit": "2021H1",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2326,
+        "value": -1.1019829079017347
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.48836242726517043
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 464,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 30.933333333333334
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 2682,
+        "total_tokens": 89197,
+        "value": 30.068275838873504
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 56.74102778445192
+      },
+      "n_kept": 892,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.02835419286201886
+      },
+      "unit": "2021H2",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2406,
+        "value": -1.0690890942038662
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.46873633581110624
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 427,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 28.46666666666667
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 2299,
+        "total_tokens": 80467,
+        "value": 28.570718431158113
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 58.83448477917071
+      },
+      "n_kept": 849,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.02913475621680181
+      },
+      "unit": "2022H1",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2287,
+        "value": -1.069104979821155
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.4881656804733728
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 495,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 33.0
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 2696,
+        "total_tokens": 88992,
+        "value": 30.294857964760876
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 58.740143163763676
+      },
+      "n_kept": 881,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.02873564238028335
+      },
+      "unit": "2022H2",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2366,
+        "value": -1.078435426737463
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.47924858016601135
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 453,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 30.200000000000003
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 2533,
+        "total_tokens": 85076,
+        "value": 29.773379096337393
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 57.162841234218405
+      },
+      "n_kept": 863,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.029398820172422714
+      },
+      "unit": "2023H1",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2289,
+        "value": -1.0925491670308427
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.47829681686647374
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 460,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 30.666666666666664
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 2907,
+        "total_tokens": 91301,
+        "value": 31.839738885663902
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 57.93387982978124
+      },
+      "n_kept": 929,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.027931262022163873
+      },
+      "unit": "2023H2",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2419,
+        "value": -1.0481219916630555
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.4820766378244747
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 459,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 30.599999999999998
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 3096,
+        "total_tokens": 96921,
+        "value": 31.943541647321016
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 62.876856790063634
+      },
+      "n_kept": 987,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.027476560610226866
+      },
+      "unit": "2024H1",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2427,
+        "value": -1.0329718669329202
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.47045951859956237
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 480,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 32.0
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 3188,
+        "total_tokens": 99879,
+        "value": 31.918621532053784
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 54.29411494101516
+      },
+      "n_kept": 1023,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.028723356763856314
+      },
+      "unit": "2024H2",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2285,
+        "value": -1.1004974736552762
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.4752679307502061
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 485,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 32.33333333333333
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 3469,
+        "total_tokens": 102603,
+        "value": 33.809927584963404
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 64.97021726446145
+      },
+      "n_kept": 1044,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.02863133228576105
+      },
+      "unit": "2025H1",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2426,
+        "value": -1.0137812235226926
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.4877222692633362
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 489,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 32.599999999999994
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 4595,
+        "total_tokens": 129637,
+        "value": 35.445127548462246
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 64.88755543616303
+      },
+      "n_kept": 1264,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.030566163498348592
+      },
+      "unit": "2025H2",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2362,
+        "value": -1.1187648929468337
+      }
+    },
+    {
+      "hapax_share": {
+        "pool_short": false,
+        "pool_tokens": 15000,
+        "value": 0.4946889226100152
+      },
+      "marker_rate_pool": {
+        "marker_tokens": 506,
+        "pool_short": false,
+        "total_tokens": 15000,
+        "value": 33.73333333333333
+      },
+      "marker_rate_whole_cell_context": {
+        "marker_tokens": 4598,
+        "total_tokens": 140175,
+        "value": 32.80185482432674
+      },
+      "mtld": {
+        "n_drawn": 150,
+        "n_undefined": 0,
+        "n_used": 150,
+        "small_cell": false,
+        "value": 67.8136208843582
+      },
+      "n_kept": 1337,
+      "similarity": {
+        "n_draw": 150,
+        "small_draw": false,
+        "value": 0.02804274863909795
+      },
+      "unit": "2026H1",
+      "zipf_slope": {
+        "non_computable": false,
+        "partial_range": false,
+        "pool_short": false,
+        "types": 2636,
+        "value": -1.0259531789341463
+      }
+    }
+  ]
+}
