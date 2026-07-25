@@ -8,6 +8,8 @@ import _pathfix  # noqa: F401
 import harvest_api
 from harvest_api import (
     half_year_query_range,
+    unit_months,
+    month_query_range,
     build_query_path,
     count_entries_and_total,
     fetch_page,
@@ -17,6 +19,7 @@ from harvest_api import (
     ATOM_NS,
     OPENSEARCH_NS,
     MAX_RESULTS,
+    MONTHLY_SPLIT_THRESHOLD,
 )
 
 
@@ -41,6 +44,40 @@ class TestHalfYearQueryRange(unittest.TestCase):
     def test_invalid_half_raises(self):
         with self.assertRaises(ValueError):
             half_year_query_range("2015H3")
+
+
+class TestUnitMonths(unittest.TestCase):
+    def test_h1_months(self):
+        self.assertEqual(
+            unit_months("2015H1"),
+            ["201501", "201502", "201503", "201504", "201505", "201506"],
+        )
+
+    def test_h2_months(self):
+        self.assertEqual(
+            unit_months("2024H2"),
+            ["202407", "202408", "202409", "202410", "202411", "202412"],
+        )
+
+    def test_invalid_half_raises(self):
+        with self.assertRaises(ValueError):
+            unit_months("2015H9")
+
+
+class TestMonthQueryRange(unittest.TestCase):
+    def test_31_day_month(self):
+        self.assertEqual(month_query_range("202501"), ("202501010000", "202501312359"))
+
+    def test_30_day_month(self):
+        self.assertEqual(month_query_range("202504"), ("202504010000", "202504302359"))
+
+    def test_february_non_leap_year(self):
+        # 2025 is not a leap year -> Feb has 28 days.
+        self.assertEqual(month_query_range("202502"), ("202502010000", "202502282359"))
+
+    def test_february_leap_year(self):
+        # 2024 IS a leap year -> Feb has 29 days.
+        self.assertEqual(month_query_range("202402"), ("202402010000", "202402292359"))
 
 
 class TestBuildQueryPath(unittest.TestCase):
@@ -174,6 +211,82 @@ class TestHarvestStratumUnit(unittest.TestCase):
         self.assertEqual(result["pages"], 1)
         self.assertEqual(result["fetched"], 1)
         self.assertEqual(result["total_results"], 1)
+
+    def test_probe_at_exact_threshold_stays_unit_mode(self):
+        # totalResults == MONTHLY_SPLIT_THRESHOLD exactly -> NOT split ("exceeds 8,000").
+        conn = _ScriptedConn([(200, _atom_body(1, MONTHLY_SPLIT_THRESHOLD))])
+        request_counter = {"n": 0}
+        result = harvest_stratum_unit(
+            conn, "cs.CL", "2024H1", self.tmpdir, request_counter,
+            sleep_fn=lambda s: None, max_results=2000,
+        )
+        self.assertEqual(result["mode"], "unit")
+        unit_dir = os.path.join(self.tmpdir, "cs.CL", "2024H1")
+        self.assertEqual(os.listdir(unit_dir), ["00001.xml.gz"])
+
+    def test_probe_over_threshold_triggers_monthly_split(self):
+        # Probe totalResults = 8001 (> 8,000) -> discard probe, fetch 6 monthly queries.
+        # Give each month a tiny single-page response (1 entry, total 1) except one
+        # month with 2 entries, summing to 7 -- deliberately NOT equal to the probe's
+        # 8001, to prove harvest_stratum_unit reports whatever the months actually sum
+        # to (not the probe's number) as sum_month_total_results, while still recording
+        # the probe's own total_results for disclosure.
+        month_bodies = [(200, _atom_body(1, 1))] * 5 + [(200, _atom_body(2, 2))]
+        conn = _ScriptedConn([(200, _atom_body(1, 8001))] + month_bodies)
+        request_counter = {"n": 0}
+        result = harvest_stratum_unit(
+            conn, "cs.CL", "2024H1", self.tmpdir, request_counter,
+            sleep_fn=lambda s: None, max_results=2000,
+        )
+        self.assertEqual(result["mode"], "monthly")
+        self.assertEqual(result["total_results"], 8001)  # the probe's own figure, kept
+        self.assertEqual(result["sum_month_total_results"], 7)
+        self.assertEqual(result["fetched"], 7)
+        self.assertFalse(result["tally_matches"])  # 7 != 8001
+        self.assertEqual(set(result["months"].keys()),
+                          {"202401", "202402", "202403", "202404", "202405", "202406"})
+
+        unit_dir = os.path.join(self.tmpdir, "cs.CL", "2024H1")
+        files = sorted(os.listdir(unit_dir))
+        expected = sorted(f"{yyyymm}-00001.xml.gz" for yyyymm in
+                           ["202401", "202402", "202403", "202404", "202405", "202406"])
+        self.assertEqual(files, expected)
+        # The probe page's data must never be written anywhere.
+        self.assertNotIn("00001.xml.gz", files)
+
+    def test_monthly_mode_tally_matches_when_consistent(self):
+        # 6 months, each exactly 1 entry, probe totalResults == 6 -> everything ties out.
+        # split_threshold=5 forces the split even at this small total (keeps the fixture tiny).
+        month_bodies = [(200, _atom_body(1, 1))] * 6
+        conn = _ScriptedConn([(200, _atom_body(1, 6))] + month_bodies)
+        request_counter = {"n": 0}
+        result = harvest_stratum_unit(
+            conn, "cs.CL", "2024H1", self.tmpdir, request_counter,
+            sleep_fn=lambda s: None, max_results=2000, split_threshold=5,
+        )
+        self.assertEqual(result["mode"], "monthly")
+        self.assertEqual(result["sum_month_total_results"], 6)
+        self.assertEqual(result["fetched"], 6)
+        self.assertTrue(result["tally_matches"])
+
+    def test_monthly_mode_pages_a_month_with_multiple_pages(self):
+        # max_results=2 for compactness: probe says totalResults=9 (> split_threshold=3
+        # for this test), so it splits; the first month has 3 entries needing 2 pages
+        # (2 then 1), the rest have 1 page each with 1 entry (5 more months).
+        month1_pages = [(200, _atom_body(2, 3)), (200, _atom_body(1, 3))]
+        other_months = [(200, _atom_body(1, 1))] * 5
+        conn = _ScriptedConn([(200, _atom_body(2, 9))] + month1_pages + other_months)
+        request_counter = {"n": 0}
+        result = harvest_stratum_unit(
+            conn, "cs.CL", "2024H1", self.tmpdir, request_counter,
+            sleep_fn=lambda s: None, max_results=2, split_threshold=3,
+        )
+        self.assertEqual(result["mode"], "monthly")
+        self.assertEqual(result["months"]["202401"]["pages"], 2)
+        self.assertEqual(result["months"]["202401"]["fetched"], 3)
+        unit_dir = os.path.join(self.tmpdir, "cs.CL", "2024H1")
+        self.assertTrue(os.path.exists(os.path.join(unit_dir, "202401-00001.xml.gz")))
+        self.assertTrue(os.path.exists(os.path.join(unit_dir, "202401-00002.xml.gz")))
 
 
 class TestOutdirGuard(unittest.TestCase):

@@ -33,6 +33,21 @@ first-entry. A chunk fetched under the cs.CV query can (and does) legitimately
 contain zero cs.CV-primary entries if every hit was actually cross-listed with a
 different primary category.
 
+§10 amendment D1a (deep-paging split): a (stratum, unit) whose own totalResults
+exceeded harvest_api.py's monthly-split threshold was re-fetched as 6 calendar-month
+queries, chunked as `<YYYYMM>-<page:05d>.xml.gz` instead of the plain `<page:05d>.xml.gz`
+naming unsplit units use. This module's file discovery (iter_raw_files, below) globs
+every `*.xml.gz` under a unit directory regardless of which naming pattern produced it
+-- it never inspects or relies on the chunk filename's shape, only its content -- so
+BOTH naming schemes are read identically and no adjustment was needed here. (A single
+unit directory will only ever contain one naming scheme in practice, since D1a discards
+the unit-level probe page entirely on a split rather than mixing it with monthly
+chunks -- but nothing below assumes that either.) D1a is explicit that unit assignment
+always comes from each record's own `<published>` date, never from the query window
+(unit-level or monthly) that happened to fetch it -- this module already worked that
+way for D1's unit-level-only case, so D1a requires no change to the filtering logic,
+only to file discovery's tolerance of the new filename shape (confirmed above).
+
 Dedup: by id, across ALL raw files (any stratum, any unit, any page) -- a
 cross-listed paper can appear under more than one stratum's query. First occurrence
 wins; traversal order is fully sorted (stratum name, then unit label, then filename)
