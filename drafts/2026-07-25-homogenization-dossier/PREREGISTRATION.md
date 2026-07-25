@@ -64,7 +64,9 @@ arXiv IDs are sorted lexicographically, then shuffled in place by
 that single shuffled order (no separate `.sample()` calls — the two stdlib methods consume
 the RNG stream differently, and this document fixes the shuffle-then-prefix realization).
 
-1. **MTLD** (McCarthy & Jarvis 2010; TTR threshold 0.72, bidirectional mean), per abstract,
+1. **MTLD** (McCarthy & Jarvis 2010; TTR threshold 0.72, bidirectional mean; a factor
+   completes when the running TTR reaches or drops below the threshold, i.e. `<= 0.72`,
+   matching the reference implementation), per abstract,
    averaged over the first **min(150, n)** abstracts of the cell's seeded order — a fixed
    draw size, so the mean's sampling precision is constant across cells (cells below 150
    use the whole cell and are flagged). Collapse direction: **down**.
@@ -77,8 +79,12 @@ the RNG stream differently, and this document fixes the shuffle-then-prefix real
    rare-word tail drops faster: collapse direction: **more negative**.
 4. **Between-abstract similarity on fixed draws:** the first **N_s = min(150, n)** abstracts
    of the cell's seeded order (the same prefix as metric 1, deliberately);
-   within-draw TF-IDF (tf = raw count, idf = ln(N_draw/df)), L2-normalized, mean pairwise
-   cosine. Collapse direction: **up**.
+   within-draw TF-IDF (tf = raw count, idf = ln(N_draw/df) with N_draw the actual draw
+   size), L2-normalized, mean pairwise cosine. Collapse direction: **up**.
+   Disclosed metric property: within-draw idf zeroes any token present in every drawn
+   abstract, so the metric measures similarity in the non-universal vocabulary — a draw of
+   identical abstracts scores 0, not 1; convergence registers as rising overlap among
+   discriminating tokens, which is the margin property under test.
 
 Cells smaller than a draw size use the whole cell and are flagged in the output table; how
 often each fallback fires ships in the output table (the feasibility counts are any-listing
@@ -117,10 +123,16 @@ Standardized deviation z(x*) = (y(x*) − ŷ(x*)) / SE_pred(x*), reoriented coll
 - Envelope caveat, pre-registered: the envelope's final unit 2022H2 contains the one-month
   post-launch sliver (Nov 30–Dec 31 2022) — kept, per the commitment's own "pre-2023"
   boundary; direction: contaminates the envelope toward collapse, i.e. conservative.
-- Sensitivity: the same table under a quadratic envelope, reported beside. **Soft downgrade
+- Sensitivity: the same table under a quadratic envelope (same OLS prediction-interval
+  principle, s·√(1 + x₀ᵀ(XᵀX)⁻¹x₀), of which the linear formula above is the special case;
+  t₀.₉₇₅,₁₃ = 2.1604 for the 3-parameter fit), reported beside. **Soft downgrade
   rule (decisional):** if the linear and quadratic envelopes disagree on a stratum's headline
   state, the stratum ships BOTH headlines, marked unresolved — the linear envelope alone
   cannot carry a verdict its own curvature check contradicts.
+- **Missing envelope-era cells:** a non-computable metric value in any of the 16 envelope
+  units halts the run for that metric × stratum (loud failure, no silent df degradation);
+  such a halt is a deviation event for §10, not an adaptive branch. (Feasibility counts make
+  this unlikely; pre-registered so it cannot be improvised later.)
 
 ## 5. Windows
 
