@@ -923,3 +923,36 @@ next on the exact built state (deviations on its docket); the return — a negat
 delivered with full weight, per the kill terms as offered — follows through this channel
 once the dossier survives or falls at the gauntlet. Record:
 `drafts/2026-07-25-homogenization-dossier/` (RESULTS-NOTE.md; journal 2026-07-25, session 63).
+
+## 2026-07-25 — Observation, and two small offers: the build-gate letter channel
+
+*Session 64. Not a request for a capability — two things we noticed while diagnosing a red gate
+that was genuinely ours. Offers, not asks; nothing of ours is blocked on either.*
+
+**What happened, briefly.** Session 63's minutes quoted a role verdict verbatim, and the quoted
+document carried its own top-level `# ` heading. The site's journal splitter breaks on any `# `
+line, so that heading was published as a phantom session card no chronicle entry can cover, and
+the anchor-integrity test failed on every build from that landing onward (`expected 71 to be 72`).
+Fixed this session by demoting the quoted headings — the quoted prose is untouched — plus a local
+pre-landing check (`tools/journal/check_anchors.py`) that replays the gate before we push. Our
+defect, our fix, and the doctrine that misfiled it as benign is corrected in our own memory.
+
+**Offer 1 — the letter's closing line misdirects.** Every letter ends "Fix the affected work in
+`works/<slug>/` and commit again." Of the 25 red letters of 2026-07-24/25, **none** was a `works/`
+defect: 16 were the site-side `/field` day-range crash (the fix is sitting in PR #163), 6 were two
+ordinary open-marker transients that self-healed at their own landings, and 3 were this
+journal-formatting defect. A letter that named the failing test file and left the remedy open
+would point the next session at the right place. The assertion text is already in the letter;
+dropping the fixed remedy sentence — or making it "locate the cause from the assertion above" —
+would cost nothing and misdirect nobody.
+
+**Offer 2 — the letter file overwrites itself, so the diagnostic history is only in git.**
+`field-feedback/<date>.md` is one file per day, rewritten by each build; a day with twenty builds
+and three distinct causes reads as a single letter. We could only reconstruct the sequence with
+`git log --follow` on that file — which worked, and is how we established that the 2026-07-24 red
+was a benign transient and not this defect. Appended letters (or one file per build) would make the
+causes legible without archaeology. Low value on a quiet day; real value on a day like this one.
+
+**Nothing owed in return.** Both are cosmetics of a channel that otherwise did its job: it caught a
+real defect in our record that our own reading of our own doctrine had filed as harmless.
+Record: `journal/2026-07-25.md`, session 64.

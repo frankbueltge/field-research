@@ -1,0 +1,174 @@
+{
+  "what": "The lab site's hand-curated chronicle spine — the entries it serves for the sessions that predate this repo's own chronicle.json (which starts at collective session 25). Needed by check_anchors.py to reproduce the site's served-anchor set locally, including the (collective_session, date) coverage keys its merge rule uses.",
+  "source": "https://raw.githubusercontent.com/frankbueltge/frankbueltge.de/main/src/data/field/chronicle.curated.json",
+  "fetched": "2026-07-25",
+  "sha256_of_fetched_file": "3684ad356cfbafdb5b0ff42a7f62b7797664ccd8e9b286e6640f8475b55295d6",
+  "note": "Immutable history: the site's own comment states curated is the spine and is never overwritten by sync. Re-fetch and re-pin if the site ever extends it — check_anchors.py reports a spine/chronicle collision or an unrendered served anchor until it is.",
+  "entries": [
+    {
+      "collective_session": null,
+      "date": "2026-07-01",
+      "anchor": "pre-2026-07-01-1"
+    },
+    {
+      "collective_session": null,
+      "date": "2026-07-01",
+      "anchor": "pre-2026-07-01-2"
+    },
+    {
+      "collective_session": null,
+      "date": "2026-07-01",
+      "anchor": "pre-2026-07-01-3"
+    },
+    {
+      "collective_session": null,
+      "date": "2026-07-01",
+      "anchor": "pre-2026-07-01-4"
+    },
+    {
+      "collective_session": null,
+      "date": "2026-07-01",
+      "anchor": "pre-2026-07-01-5"
+    },
+    {
+      "collective_session": null,
+      "date": "2026-07-01",
+      "anchor": "pre-2026-07-01-6"
+    },
+    {
+      "collective_session": null,
+      "date": "2026-07-01",
+      "anchor": "pre-2026-07-01-7"
+    },
+    {
+      "collective_session": null,
+      "date": "2026-07-01",
+      "anchor": "pre-2026-07-01-8"
+    },
+    {
+      "collective_session": 1,
+      "date": "2026-07-01",
+      "anchor": "cs-1"
+    },
+    {
+      "collective_session": 2,
+      "date": "2026-07-02",
+      "anchor": "cs-2"
+    },
+    {
+      "collective_session": 3,
+      "date": "2026-07-02",
+      "anchor": "cs-3"
+    },
+    {
+      "collective_session": 4,
+      "date": "2026-07-02",
+      "anchor": "cs-4"
+    },
+    {
+      "collective_session": 5,
+      "date": "2026-07-02",
+      "anchor": "cs-5"
+    },
+    {
+      "collective_session": 6,
+      "date": "2026-07-03",
+      "anchor": "cs-6"
+    },
+    {
+      "collective_session": 7,
+      "date": "2026-07-03",
+      "anchor": "cs-7"
+    },
+    {
+      "collective_session": 8,
+      "date": "2026-07-03",
+      "anchor": "cs-8"
+    },
+    {
+      "collective_session": 9,
+      "date": "2026-07-05",
+      "anchor": "cs-9"
+    },
+    {
+      "collective_session": 10,
+      "date": "2026-07-05",
+      "anchor": "cs-10"
+    },
+    {
+      "collective_session": 11,
+      "date": "2026-07-05",
+      "anchor": "cs-11"
+    },
+    {
+      "collective_session": 12,
+      "date": "2026-07-06",
+      "anchor": "cs-12"
+    },
+    {
+      "collective_session": 13,
+      "date": "2026-07-06",
+      "anchor": "cs-13"
+    },
+    {
+      "collective_session": 14,
+      "date": "2026-07-07",
+      "anchor": "cs-14"
+    },
+    {
+      "collective_session": 15,
+      "date": "2026-07-09",
+      "anchor": "cs-15"
+    },
+    {
+      "collective_session": 16,
+      "date": "2026-07-09",
+      "anchor": "cs-16"
+    },
+    {
+      "collective_session": 17,
+      "date": "2026-07-09",
+      "anchor": "cs-17"
+    },
+    {
+      "collective_session": 18,
+      "date": "2026-07-10",
+      "anchor": "cs-18"
+    },
+    {
+      "collective_session": 19,
+      "date": "2026-07-10",
+      "anchor": "cs-19"
+    },
+    {
+      "collective_session": 20,
+      "date": "2026-07-10",
+      "anchor": "cs-20"
+    },
+    {
+      "collective_session": 21,
+      "date": "2026-07-10",
+      "anchor": "cs-21"
+    },
+    {
+      "collective_session": 22,
+      "date": "2026-07-10",
+      "anchor": "cs-22"
+    },
+    {
+      "collective_session": 23,
+      "date": "2026-07-10",
+      "anchor": "cs-23"
+    },
+    {
+      "collective_session": 24,
+      "date": "2026-07-10",
+      "anchor": "cs-24"
+    },
+    {
+      "collective_session": 24,
+      "date": "2026-07-11",
+      "anchor": "cs-24-2026-07-11"
+    }
+  ]
+}

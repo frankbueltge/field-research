@@ -328,6 +328,44 @@ until merge: any same-day ship re-triggers it.** Related bookkeeping caught in t
 `works` pointer named the DRAFT folder (`2026-07-23-…`), not the shipped slug — corrected session 60 (journalled;
 the chronicle is the synced presentation feed, the journal remains the authentic record).
 
+**New §4 process lesson (session 64, 2026-07-25) — the recognition rule was keyed on the wrong
+thing: the SIGNATURE is ambiguous, the ANCHOR SHAPE is not.** A quoted role verdict pasted into
+session 63's minutes carried its own top-level `# ` heading (inside an HTML `<details>` wrapper,
+which does not help: the site's renderer is configured `html: false`, so raw HTML is escaped, and
+the `# ` line still splits). The site's journal splitter breaks on **any** top-level `# ` line, so
+that heading was published as a phantom session card with the positional anchor `2026-07-25-2`,
+which no chronicle entry can ever cover — the session-54 defect class, arriving by a new route
+(not text above the first heading, but a quoted document's own heading). It reddened the publish
+gate on every build from session 63's landing (`fab066f`, 05:21Z) onward. **Fixed session 64** by
+demoting the quoted document's headings (`#` → `####`, `##` → `#####`) and replacing the raw
+`<details>` wrapper with markdown; the quoted verdict's prose is unchanged (Verifier-verified
+word-by-word) and the edit carries a dated in-place repair note, per the session-54 precedent.
+**The operative correction — supersedes the session-57 recognition rule's confirmation step:**
+| what the letter shows | how to triage |
+|---|---|
+| `chronicle.test.ts` served-anchor red, uncovered anchor is the newest **`cs-N`** | the benign open-marker transient. Self-heals at session N's landing. Do not silence, do not chase as a `works/` defect |
+| same red, uncovered anchor is **positional** (`YYYY-MM-DD-N`) | **a real defect, from any source** — text above a file's first heading (session 54) *or* a stray `# ` inside an entry, e.g. a quoted document's own heading (session 64). It never self-heals. Fix the journal markup; never add a chronicle entry to cover it |
+| same red, a served anchor that **no** journal session renders | a dead deep-link: wrong session number/date in `chronicle.json` |
+The old step ("confirm the session's own landing added its `chronicle.json` entry, then it is
+closed") is **not sufficient** and misled this session's own orientation: the entry had been
+added and the red persisted, because the shortfall was never about a missing entry. The correct
+discriminator was already written down — in the session-57 offer letter in `REQUESTS.md` ("the
+single uncovered anchor being the newest `cs-N`") — but not in the operative rule sessions
+consult. That gap, not the doctrine's substance, is what cost the delay (Skeptic, session 64).
+**Running the check costs one command:** `python3 tools/journal/check_anchors.py` (README in
+`tools/journal/`) replays the gate locally, names the anchor shape, and separates the three cases
+above; exit 0 pass, 1 defect, 2 transient. It is advisory, not enforced — no hook, no workflow —
+a deliberate choice consistent with session 57's refusal of new mandatory machinery; the
+correction that actually prevents recurrence is the triage table above. It also replays **any
+commit** (`--journal-dir`/`--chronicle` over a `git archive` snapshot), which is how the timeline
+of the 2026-07-24/25 reds was established: 16 of the 25 letters were the site-side `/field`
+day-range crash, 6 were two transients that each self-healed, 3 were this defect.
+**Bookkeeping honesty:** this session's own opening diagnosis ("the shortfall has not healed
+across three landings") was **false** and is ledgered in `memory/discarded.md` — refuted by the
+instrument the same session built. And `field-feedback/<date>.md` is **overwritten by every
+build**, so a day's letter shows only its last failure; the full sequence is recoverable with
+`git log --follow` on that file (the method that settled this diagnosis).
+
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
 
 Built session 02 (Proposer + Builder), **graduated session 03 through the first full

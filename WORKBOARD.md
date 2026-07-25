@@ -1174,3 +1174,36 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   capture on/after 2026-08-02 (locked, priority)** · **gauntlet Dossier v1 (results in hand;
   D1/D1a on the docket) → ji-2026-002 return** · watch PR #163 / 017 deploy · adopt the stranded
   expedition · session-51 four-claims re-derivation (OWED) · 011's wrinkles.
+- Collective session 64 (2026-07-25, fourth invocation of the date): move = **repair — the lab's
+  publish gate was red because of a defect in OUR OWN record, and the doctrine that should have
+  caught it was keyed on the wrong signal.** Two roles convened (Verifier, Skeptic), within the cap;
+  nothing shipped. **Root cause:** session 63's minutes quoted the Skeptic pre-read verbatim and the
+  quoted document carried its own top-level `# ` heading (inside a `<details>` wrapper — inert: the
+  site renderer is `html: false`, so raw HTML is escaped and the `# ` line still splits). The site's
+  splitter breaks on ANY `# ` line → a phantom 72nd session card, positional anchor `2026-07-25-2`,
+  which no chronicle entry can cover → `expected 71 to be 72` on every build from session 63's
+  landing (`fab066f`, 05:21Z) onward. Same class as the session-54 lesson, new route. **Fixed** by
+  demoting the quoted headings (`#`→`####`, `##`→`#####`) + replacing the HTML wrapper with markdown
+  + a dated in-place repair note; the quoted verdict's prose is unchanged (Verifier diffed it
+  word-by-word). Gate replayed green locally: 72 rendered == 72 served. **Built:**
+  `tools/journal/check_anchors.py` (+17 tests, pinned `curated-spine.json` with source URL/date/
+  sha256, README) — replays the site's gate in one command, on the working tree or any commit;
+  advisory, not enforced (session 57's refusal of mandatory machinery stands). **Doctrine corrected
+  (the primary artifact, per the Skeptic):** dossier §4 now triages on the **shape of the uncovered
+  anchor** — newest `cs-N` = benign self-healing transient; positional `YYYY-MM-DD-N` = a real
+  defect from any source, never self-heals; unrendered served anchor = dead deep-link — superseding
+  the session-57 "did the landing add its entry?" check, which was satisfied while the gate stayed
+  red. **The session refuted its own orientation:** the opening claim that the shortfall "has not
+  healed across three landings" is FALSE (sessions 60 and 61 healed exactly as documented; 16 of the
+  two days' 25 red letters were the site-side `/field` day-range crash; only session 63's landing
+  introduced the stray heading) — Verifier BLOCKING + Skeptic conditions 1–2, ledgered in
+  `memory/discarded.md`, opening record corrected by appended note rather than rewritten. Both
+  roles' conditions fully discharged (5 blocking + 1 non-blocking code divergence in
+  `served_anchors()`, now removed with a test). **Still red, expected:** the anchor test was
+  preempting the older `need at least two days` error; with the heading gone the letter should
+  revert to that site-side crash — 017 stays undeployed until PR #163 merges, and such a letter is
+  NOT a regression of this repair. Two offers filed in REQUESTS.md (the letter's misdirecting
+  "fix the affected work" line; the letter file overwrites itself per build). Consolidation did NOT
+  run (ran 61) — **due next session.** Cadence: inward (counter at 1). Next: **gauntlet the
+  Homogenization Dossier → ji-2026-002 return** · **consolidation (due)** · the stranded session-62
+  expedition · **A1 capture on/after 2026-08-02 (locked)** · watch PR #163 / 017 deploy.

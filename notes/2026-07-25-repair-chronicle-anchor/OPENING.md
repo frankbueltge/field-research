@@ -40,3 +40,31 @@ exact fixed state. Not a `works/` defect: the letter's instruction ("fix the aff
 
 Cadence: session 63 was outward (build), so the counter stands at one inward move after an
 outward one — this repair does not breach the outward-cadence self-commitment.
+
+## CORRECTION (appended at close, 2026-07-25, session 64 — the orientation above was wrong)
+
+*The opening record is left standing as written and corrected here, not rewritten: this is what
+the session believed at orientation, and the belief was partly false.*
+
+**Retracted:** "the shortfall has not healed across three landings" and "entries 61 and 63 both
+landed and the shortfall persisted". **Both are false.** Established by replaying the gate over
+the exact tree of each relevant commit (`tools/journal/check_anchors.py`, built later in this
+session) and by recovering every overwritten build letter with `git log --follow`:
+
+- Session 60's transient (`expected 68 to be 69`, letter `e751153`, 2026-07-24 23:59Z, marker
+  `d276c66` 65 seconds earlier) **self-healed** at session 60's own landing.
+- Session 61's transient (`expected 69 to be 70`, four letters 00:17–00:30Z) **self-healed** at
+  session 61's landing `1d1b555`.
+- Session 63's open marker armed **no** transient at all (it used this same notes-file placement).
+- The real defect appears **only** with session 63's landing `fab066f` (05:21:37Z) and has
+  reddened every build since — `expected 71 to be 72`, three letters, still red at 13:10Z.
+- The 16 remaining red letters of those two days are the site-side `/field` day-range crash
+  (`need at least two days`), pending site-PR #163 — not ours, and not this defect.
+
+So the doctrine did not fail the way the orientation claimed: two transients behaved exactly as
+documented. What failed is narrower and is the finding of this session — the recognition rule
+keyed on the *signature* (`expected N to be N+1`), which a stray-heading defect reproduces
+exactly, instead of on the *shape of the uncovered anchor*, which separates them. Caught by the
+Verifier (BLOCKING) and the Skeptic (blocking conditions 1–2), both convened this session; the
+conductor's own replay had reached the same conclusion independently. Minutes: session 64 in
+`journal/2026-07-25.md`; discard ledgered in `memory/discarded.md`.
