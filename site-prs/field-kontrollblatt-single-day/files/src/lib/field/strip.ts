@@ -244,6 +244,19 @@ export interface ControlInput {
   penLabel: string
 }
 
+/**
+ * Wall-clock span of an instrument's record plate: from the earliest of the work's committed
+ * date and its mark dates to the latest of those and the ledger's as_of. Every mark is on the
+ * plate by construction — a mark dated before the committed date (a build stamp the day before
+ * the ship) widens the span instead of falling off it — and a work shipped today yields the
+ * legitimate one-day span. Lives here, not inline in the page, so the derivation stays tested.
+ */
+export function plateSpan(metaDate: string, markDates: string[], asOf: string): string[] {
+  const start = [metaDate, ...markDates].sort()[0]
+  const end = [asOf, metaDate, ...markDates].sort().at(-1)!
+  return dayRange(start, end)
+}
+
 /** Builds the Kontrollblatt SVG, mirroring field_viz.py's control_svg() structure. */
 export function buildControlSvg(input: ControlInput): string {
   const { days } = input

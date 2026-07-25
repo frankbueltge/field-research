@@ -3,7 +3,7 @@
 // drawn, never dropped), and the pure day-range arithmetic (no clock).
 import { describe, expect, it } from 'vitest'
 import { FIELD_GRAMMAR } from '@/config/field-wording'
-import { buildControlSvg, buildStripSvg, dayRange, type ControlInput, type StripInput } from './strip'
+import { buildControlSvg, buildStripSvg, dayRange, plateSpan, type ControlInput, type StripInput } from './strip'
 
 describe('approved field grammar (static formulas, test-protected)', () => {
   it('keeps the data-edge formula verbatim', () => {
@@ -153,5 +153,28 @@ describe('buildControlSvg', () => {
     expect(() => buildControlSvg({ days: [], marks: [], penLabel: 'in service' })).toThrow(
       /need at least one day/,
     )
+  })
+})
+
+describe('plateSpan', () => {
+  it('spans from the earliest mark to the latest of marks and as_of — a mark before the committed date widens the plate', () => {
+    // the real 017 shape after its chronicle build stamp: built 07-24, stamps 07-23 (build) and
+    // 07-24 (ship), ledger as_of 07-22 — the plate must carry the 07-23 stamp, not throw on it
+    expect(plateSpan('2026-07-24', ['2026-07-23', '2026-07-24'], '2026-07-22')).toEqual([
+      '2026-07-23',
+      '2026-07-24',
+    ])
+  })
+
+  it('yields the legitimate one-day span for a work shipped today', () => {
+    expect(plateSpan('2026-07-24', ['2026-07-24'], '2026-07-22')).toEqual(['2026-07-24'])
+  })
+
+  it('extends to a later as_of', () => {
+    expect(plateSpan('2026-07-20', ['2026-07-20'], '2026-07-22')).toEqual([
+      '2026-07-20',
+      '2026-07-21',
+      '2026-07-22',
+    ])
   })
 })
