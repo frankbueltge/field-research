@@ -1,0 +1,161 @@
+{
+  "decisional": false,
+  "draw_size": 150,
+  "post_hoc_sensitivity": {
+    "note": "POST HOC, not part of the locked probe design. Same draw, same tokenizer; only the truncation length varies. Reported for robustness, decides nothing.",
+    "rows": [
+      {
+        "by_unit": {
+          "2016H1": {
+            "mtld_trunc": 91.31713694566234,
+            "n_eligible": 113
+          },
+          "2019H1": {
+            "mtld_trunc": 99.59383175084183,
+            "n_eligible": 133
+          },
+          "2022H2": {
+            "mtld_trunc": 96.28007581747512,
+            "n_eligible": 136
+          },
+          "2026H1": {
+            "mtld_trunc": 136.78940022050216,
+            "n_eligible": 146
+          }
+        },
+        "rise_2022H2_to_2026H1": 40.50932440302704,
+        "trunc_len": 100
+      },
+      {
+        "by_unit": {
+          "2016H1": {
+            "mtld_trunc": 94.11279316082633,
+            "n_eligible": 83
+          },
+          "2019H1": {
+            "mtld_trunc": 100.39887756556433,
+            "n_eligible": 109
+          },
+          "2022H2": {
+            "mtld_trunc": 95.33766373485284,
+            "n_eligible": 124
+          },
+          "2026H1": {
+            "mtld_trunc": 142.82009925273894,
+            "n_eligible": 139
+          }
+        },
+        "rise_2022H2_to_2026H1": 47.4824355178861,
+        "trunc_len": 120
+      },
+      {
+        "by_unit": {
+          "2016H1": {
+            "mtld_trunc": 95.750374162178,
+            "n_eligible": 41
+          },
+          "2019H1": {
+            "mtld_trunc": 95.81732000932661,
+            "n_eligible": 66
+          },
+          "2022H2": {
+            "mtld_trunc": 95.53832332991217,
+            "n_eligible": 74
+          },
+          "2026H1": {
+            "mtld_trunc": 151.94481718754102,
+            "n_eligible": 106
+          }
+        },
+        "rise_2022H2_to_2026H1": 56.406493857628845,
+        "trunc_len": 150
+      }
+    ]
+  },
+  "probe": "MTLD length artifact (PROBE-mtld-length.md)",
+  "stratum": "cs.CL",
+  "trunc_len": 120,
+  "units": [
+    {
+      "max_tokens": 285,
+      "mean_tokens": 132.12,
+      "median_tokens": 124.0,
+      "min_tokens": 55,
+      "mtld_recomputed": 95.90909962068137,
+      "mtld_shipped": 95.90909962068133,
+      "mtld_trunc120": 94.11279316082633,
+      "n_drawn": 150,
+      "n_eligible_trunc": 83,
+      "n_kept": 581,
+      "n_kept_frozen": 581,
+      "n_trunc_undefined": 0,
+      "n_undefined": 0,
+      "refetch_delta": 0,
+      "undefined_share": 0.0,
+      "unit": "2016H1"
+    },
+    {
+      "max_tokens": 284,
+      "mean_tokens": 145.79333333333332,
+      "median_tokens": 144.5,
+      "min_tokens": 62,
+      "mtld_recomputed": 97.73520521256458,
+      "mtld_shipped": 97.7352052125646,
+      "mtld_trunc120": 100.39887756556433,
+      "n_drawn": 150,
+      "n_eligible_trunc": 109,
+      "n_kept": 1728,
+      "n_kept_frozen": 1728,
+      "n_trunc_undefined": 0,
+      "n_undefined": 0,
+      "refetch_delta": 0,
+      "undefined_share": 0.0,
+      "unit": "2019H1"
+    },
+    {
+      "max_tokens": 286,
+      "mean_tokens": 154.44,
+      "median_tokens": 149.0,
+      "min_tokens": 57,
+      "mtld_recomputed": 95.63988107691925,
+      "mtld_shipped": 95.6398810769193,
+      "mtld_trunc120": 95.33766373485284,
+      "n_drawn": 150,
+      "n_eligible_trunc": 124,
+      "n_kept": 3747,
+      "n_kept_frozen": 3747,
+      "n_trunc_undefined": 0,
+      "n_undefined": 0,
+      "refetch_delta": 0,
+      "undefined_share": 0.0,
+      "unit": "2022H2"
+    },
+    {
+      "max_tokens": 277,
+      "mean_tokens": 174.24666666666667,
+      "median_tokens": 168.5,
+      "min_tokens": 84,
+      "mtld_recomputed": 152.5267325910988,
+      "mtld_shipped": 152.5267325910988,
+      "mtld_trunc120": 142.82009925273894,
+      "n_drawn": 150,
+      "n_eligible_trunc": 139,
+      "n_kept": 9762,
+      "n_kept_frozen": 9762,
+      "n_trunc_undefined": 0,
+      "n_undefined": 0,
+      "refetch_delta": 0,
+      "undefined_share": 0.0,
+      "unit": "2026H1"
+    }
+  ],
+  "verdict": {
+    "classification": "NOT A LENGTH ARTIFACT",
+    "half_threshold": 28.443425757089756,
+    "mean_token_change_2022H2_to_2026H1": 19.806666666666672,
+    "quarter_threshold": 14.221712878544878,
+    "rise_shipped_2022H2_to_2026H1": 56.88685151417951,
+    "rise_trunc120_2022H2_to_2026H1": 47.4824355178861,
+    "undefined_share_change_2022H2_to_2026H1": 0.0
+  }
+}

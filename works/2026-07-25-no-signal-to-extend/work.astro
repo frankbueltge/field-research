@@ -1,0 +1,240 @@
+---
+// works/2026-07-25-no-signal-to-extend/work.astro
+// "No Signal to Extend" — static, no-JavaScript figure (inline SVG) for Instrument 018.
+// The SVG below is generated verbatim by
+// ./scripts/make_figure.py from that dossier's
+// results/results.json (`python3 scripts/make_figure.py --out results/figure.svg`) and
+// pasted in unmodified -- every number in it (series values, envelope fits, prediction
+// bands, the one-sided t-critical value, deltas) is read at runtime by that script from
+// the frozen results file, never typed in by hand. No client script, no data import, no
+// external fetch -- CSP-clean by construction. Provenance & method: ./README.md, ./SOURCES.md.
+---
+<div class="nste">
+<div class="wrap">
+  <h1>No Signal to Extend</h1>
+  <p class="sub">A pre-registered margin measurement finds ordinary drift, 2015&#8211;2026 &mdash; but the marker vocabulary arrives exactly where model-assisted writing is expected.</p>
+  <p class="status">Instrument 018 &middot; Meridian &middot; 2026-07-25 &middot; an OFFER &mdash; see README</p>
+
+  <figure>
+  <svg viewBox="0 0 1180 800" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Two-panel chart. Upper panel: four small multiples for cs.CL (mtld, hapax share, zipf slope, similarity) each showing the measured series against a fitted ordinary-drift envelope and its one-sided prediction band; none of the four series crosses the collapse-direction band edge. Lower panel: the marker-channel pool rate for cs.CL, cs.CV and math.NT on one shared axis, showing cs.CL and cs.CV rising sharply from 2023 while math.NT stays flat.">
+  <rect x="0" y="0" width="1180" height="800" fill="#f4f1e8"/>
+  <text x="56.00" y="50.00" font-size="14" fill="#1c1a15" class="mono" font-weight="bold">THE MARGINS</text>
+  <text x="56.00" y="66.00" font-size="10.5" fill="#3a352a" class="mono">cs.CL &#8212; measured series (solid) vs. ordinary-drift envelope (dashed); band = envelope &#177; 2.1448&#215;SE, one-sided in each metric&#8217;s own collapse direction</text>
+  <line x1="56.00" y1="82.00" x2="78.00" y2="82.00" stroke="#1c1a15" stroke-width="1.8"/>
+  <text x="83.00" y="85.00" font-size="8.5" fill="#3a352a" class="mono">series</text>
+  <line x1="146.20" y1="82.00" x2="168.20" y2="82.00" stroke="#3a352a" stroke-width="1.25" stroke-dasharray="6,3"/>
+  <text x="173.20" y="85.00" font-size="8.5" fill="#3a352a" class="mono">envelope (yhat)</text>
+  <line x1="301.20" y1="82.00" x2="323.20" y2="82.00" stroke="#1c1a15" stroke-width="1.5"/>
+  <text x="328.20" y="85.00" font-size="8.5" fill="#3a352a" class="mono">collapse-side band edge</text>
+  <line x1="513.80" y1="82.00" x2="535.80" y2="82.00" stroke="#8a8271" stroke-width="1" stroke-dasharray="1.5,3"/>
+  <text x="540.80" y="85.00" font-size="8.5" fill="#3a352a" class="mono">other (untested) edge</text>
+  <rect x="60.00" y="124.00" width="218.00" height="246.00" fill="#fffdf7" stroke="#3a352a" stroke-width="0.75"/>
+  <rect x="253.23" y="124.00" width="24.77" height="246.00" fill="#efe8d6" stroke="none"/>
+  <polygon points="60.00,309.04 69.91,308.09 79.82,307.09 89.73,306.05 99.64,304.95 109.55,303.81 119.45,302.62 129.36,301.37 139.27,300.08 149.18,298.73 159.09,297.33 169.00,295.88 178.91,294.38 188.82,292.83 198.73,291.23 208.64,289.60 218.55,287.92 228.45,286.20 238.36,284.44 248.27,282.65 258.18,280.82 268.09,278.97 278.00,277.08 278.00,324.41 268.09,325.12 258.18,325.86 248.27,326.63 238.36,327.43 228.45,328.27 218.55,329.14 208.64,330.05 198.73,331.01 188.82,332.00 178.91,333.05 169.00,334.14 159.09,335.28 149.18,336.48 139.27,337.72 129.36,339.02 119.45,340.37 109.55,341.77 99.64,343.22 89.73,344.72 79.82,346.27 69.91,347.86 60.00,349.50" fill="#e7e1d0" stroke="none"/>
+  <polyline points="60.00,309.04 69.91,308.09 79.82,307.09 89.73,306.05 99.64,304.95 109.55,303.81 119.45,302.62 129.36,301.37 139.27,300.08 149.18,298.73 159.09,297.33 169.00,295.88 178.91,294.38 188.82,292.83 198.73,291.23 208.64,289.60 218.55,287.92 228.45,286.20 238.36,284.44 248.27,282.65 258.18,280.82 268.09,278.97 278.00,277.08" fill="none" stroke="#8a8271" stroke-width="1" stroke-dasharray="1.5,3"/>
+  <polyline points="60.00,349.50 69.91,347.86 79.82,346.27 89.73,344.72 99.64,343.22 109.55,341.77 119.45,340.37 129.36,339.02 139.27,337.72 149.18,336.48 159.09,335.28 169.00,334.14 178.91,333.05 188.82,332.00 198.73,331.01 208.64,330.05 218.55,329.14 228.45,328.27 238.36,327.43 248.27,326.63 258.18,325.86 268.09,325.12 278.00,324.41" fill="none" stroke="#1c1a15" stroke-width="1.5"/>
+  <line x1="213.59" y1="124.00" x2="213.59" y2="370.00" stroke="#3a352a" stroke-width="1" stroke-dasharray="4,2"/>
+  <polyline points="60.00,329.27 69.91,327.98 79.82,326.68 89.73,325.38 99.64,324.09 109.55,322.79 119.45,321.49 129.36,320.20 139.27,318.90 149.18,317.60 159.09,316.31 169.00,315.01 178.91,313.71 188.82,312.42 198.73,311.12 208.64,309.82 218.55,308.53 228.45,307.23 238.36,305.93 248.27,304.64 258.18,303.34 268.09,302.04 278.00,300.75" fill="none" stroke="#3a352a" stroke-width="1.25" stroke-dasharray="6,3"/>
+  <polyline points="60.00,343.17 69.91,332.04 79.82,311.67 89.73,319.40 99.64,318.59 109.55,335.12 119.45,320.51 129.36,321.28 139.27,306.27 149.18,320.67 159.09,317.45 169.00,309.07 178.91,318.84 188.82,321.41 198.73,304.83 208.64,312.46 218.55,301.94 228.45,297.04 238.36,287.93 248.27,255.04 258.18,212.33 268.09,168.42 278.00,144.50" fill="none" stroke="#1c1a15" stroke-width="1.8"/>
+  <circle cx="248.27" cy="255.04" r="3" fill="#fffdf7" stroke="#8a8271" stroke-width="1.25"/>
+  <circle cx="258.18" cy="212.33" r="3" fill="#fffdf7" stroke="#8a8271" stroke-width="1.25"/>
+  <circle cx="268.09" cy="168.42" r="3" fill="#fffdf7" stroke="#8a8271" stroke-width="1.25"/>
+  <circle cx="278.00" cy="144.50" r="3" fill="#fffdf7" stroke="#8a8271" stroke-width="1.25"/>
+  <line x1="60.00" y1="370.00" x2="60.00" y2="374.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="60.00" y="384.00" text-anchor="start" font-size="8.5" fill="#8a8271" class="mono">2015H1</text>
+  <line x1="169.00" y1="370.00" x2="169.00" y2="374.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="169.00" y="384.00" text-anchor="middle" font-size="8.5" fill="#8a8271" class="mono">2020H2</text>
+  <line x1="278.00" y1="370.00" x2="278.00" y2="374.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="278.00" y="384.00" text-anchor="end" font-size="8.5" fill="#8a8271" class="mono">2026H1</text>
+  <line x1="57.00" y1="299.59" x2="60.00" y2="299.59" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="55.00" y="302.59" text-anchor="end" font-size="8" fill="#8a8271" class="mono">100.0</text>
+  <line x1="57.00" y1="151.96" x2="60.00" y2="151.96" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="55.00" y="154.96" text-anchor="end" font-size="8" fill="#8a8271" class="mono">150.0</text>
+  <text x="56.00" y="102.00" font-size="11.5" fill="#1c1a15" class="mono" font-weight="bold">mtld</text>
+  <text x="56.00" y="113.00" font-size="7.4" fill="#8a8271" class="mono">0/23 cross the collapse bound</text>
+  <text x="56.00" y="122.00" font-size="7.4" fill="#8a8271" class="mono">leaves band on anti side (not a finding)</text>
+  <rect x="320.00" y="124.00" width="218.00" height="246.00" fill="#fffdf7" stroke="#3a352a" stroke-width="0.75"/>
+  <rect x="513.23" y="124.00" width="24.77" height="246.00" fill="#efe8d6" stroke="none"/>
+  <polygon points="320.00,229.84 329.91,228.79 339.82,227.61 349.73,226.29 359.64,224.84 369.55,223.23 379.45,221.47 389.36,219.56 399.27,217.50 409.18,215.29 419.09,212.92 429.00,210.40 438.91,207.73 448.82,204.93 458.73,201.98 468.64,198.91 478.55,195.71 488.45,192.40 498.36,188.97 508.27,185.44 518.18,181.82 528.09,178.10 538.00,174.30 538.00,314.30 528.09,314.62 518.18,315.03 508.27,315.53 498.36,316.13 488.45,316.83 478.55,317.64 468.64,318.56 458.73,319.61 448.82,320.80 438.91,322.11 429.00,323.57 419.09,325.18 409.18,326.94 399.27,328.84 389.36,330.91 379.45,333.12 369.55,335.49 359.64,338.01 349.73,340.68 339.82,343.48 329.91,346.43 320.00,349.50" fill="#e7e1d0" stroke="none"/>
+  <polyline points="320.00,229.84 329.91,228.79 339.82,227.61 349.73,226.29 359.64,224.84 369.55,223.23 379.45,221.47 389.36,219.56 399.27,217.50 409.18,215.29 419.09,212.92 429.00,210.40 438.91,207.73 448.82,204.93 458.73,201.98 468.64,198.91 478.55,195.71 488.45,192.40 498.36,188.97 508.27,185.44 518.18,181.82 528.09,178.10 538.00,174.30" fill="none" stroke="#8a8271" stroke-width="1" stroke-dasharray="1.5,3"/>
+  <polyline points="320.00,349.50 329.91,346.43 339.82,343.48 349.73,340.68 359.64,338.01 369.55,335.49 379.45,333.12 389.36,330.91 399.27,328.84 409.18,326.94 419.09,325.18 429.00,323.57 438.91,322.11 448.82,320.80 458.73,319.61 468.64,318.56 478.55,317.64 488.45,316.83 498.36,316.13 508.27,315.53 518.18,315.03 528.09,314.62 538.00,314.30" fill="none" stroke="#1c1a15" stroke-width="1.5"/>
+  <line x1="473.59" y1="124.00" x2="473.59" y2="370.00" stroke="#3a352a" stroke-width="1" stroke-dasharray="4,2"/>
+  <polyline points="320.00,289.67 329.91,287.61 339.82,285.55 349.73,283.49 359.64,281.42 369.55,279.36 379.45,277.30 389.36,275.24 399.27,273.17 409.18,271.11 419.09,269.05 429.00,266.99 438.91,264.92 448.82,262.86 458.73,260.80 468.64,258.74 478.55,256.67 488.45,254.61 498.36,252.55 508.27,250.49 518.18,248.42 528.09,246.36 538.00,244.30" fill="none" stroke="#3a352a" stroke-width="1.25" stroke-dasharray="6,3"/>
+  <polyline points="320.00,322.33 329.91,283.85 339.82,271.33 349.73,255.33 359.64,305.84 369.55,242.92 379.45,262.90 389.36,289.68 399.27,275.20 409.18,299.45 419.09,306.32 429.00,254.33 438.91,246.27 448.82,233.12 458.73,251.68 468.64,286.72 478.55,179.99 488.45,279.31 498.36,253.94 508.27,329.64 518.18,238.31 528.09,256.23 538.00,144.50" fill="none" stroke="#1c1a15" stroke-width="1.8"/>
+  <circle cx="478.55" cy="179.99" r="3" fill="#fffdf7" stroke="#8a8271" stroke-width="1.25"/>
+  <circle cx="508.27" cy="329.64" r="3.2" fill="#1c1a15" stroke="none"/>
+  <circle cx="538.00" cy="144.50" r="3" fill="#fffdf7" stroke="#8a8271" stroke-width="1.25"/>
+  <line x1="320.00" y1="370.00" x2="320.00" y2="374.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="320.00" y="384.00" text-anchor="start" font-size="8.5" fill="#8a8271" class="mono">2015H1</text>
+  <line x1="429.00" y1="370.00" x2="429.00" y2="374.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="429.00" y="384.00" text-anchor="middle" font-size="8.5" fill="#8a8271" class="mono">2020H2</text>
+  <line x1="538.00" y1="370.00" x2="538.00" y2="374.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="538.00" y="384.00" text-anchor="end" font-size="8.5" fill="#8a8271" class="mono">2026H1</text>
+  <line x1="317.00" y1="342.36" x2="320.00" y2="342.36" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="315.00" y="345.36" text-anchor="end" font-size="8" fill="#8a8271" class="mono">0.480</text>
+  <line x1="317.00" y1="247.85" x2="320.00" y2="247.85" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="315.00" y="250.85" text-anchor="end" font-size="8" fill="#8a8271" class="mono">0.500</text>
+  <line x1="317.00" y1="153.34" x2="320.00" y2="153.34" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="315.00" y="156.34" text-anchor="end" font-size="8" fill="#8a8271" class="mono">0.520</text>
+  <text x="316.00" y="102.00" font-size="11.5" fill="#1c1a15" class="mono" font-weight="bold">hapax share</text>
+  <text x="316.00" y="113.00" font-size="7.4" fill="#8a8271" class="mono">1 unit touches collapse bound (isolated, no anomaly)</text>
+  <text x="316.00" y="122.00" font-size="7.4" fill="#8a8271" class="mono">leaves band on anti side (not a finding)</text>
+  <rect x="580.00" y="124.00" width="218.00" height="246.00" fill="#fffdf7" stroke="#3a352a" stroke-width="0.75"/>
+  <rect x="773.23" y="124.00" width="24.77" height="246.00" fill="#efe8d6" stroke="none"/>
+  <polygon points="580.00,228.77 589.91,228.40 599.82,227.90 609.73,227.26 619.64,226.48 629.55,225.55 639.45,224.47 649.36,223.23 659.27,221.84 669.18,220.30 679.09,218.60 689.00,216.75 698.91,214.75 708.82,212.60 718.73,210.32 728.64,207.91 738.55,205.38 748.45,202.72 758.36,199.96 768.27,197.09 778.18,194.12 788.09,191.06 798.00,187.92 798.00,329.16 788.09,328.80 778.18,328.53 768.27,328.34 758.36,328.25 748.45,328.27 738.55,328.39 728.64,328.64 718.73,329.01 708.82,329.51 698.91,330.15 689.00,330.93 679.09,331.86 669.18,332.94 659.27,334.18 649.36,335.57 639.45,337.12 629.55,338.82 619.64,340.67 609.73,342.67 599.82,344.81 589.91,347.09 580.00,349.50" fill="#e7e1d0" stroke="none"/>
+  <polyline points="580.00,228.77 589.91,228.40 599.82,227.90 609.73,227.26 619.64,226.48 629.55,225.55 639.45,224.47 649.36,223.23 659.27,221.84 669.18,220.30 679.09,218.60 689.00,216.75 698.91,214.75 708.82,212.60 718.73,210.32 728.64,207.91 738.55,205.38 748.45,202.72 758.36,199.96 768.27,197.09 778.18,194.12 788.09,191.06 798.00,187.92" fill="none" stroke="#8a8271" stroke-width="1" stroke-dasharray="1.5,3"/>
+  <polyline points="580.00,349.50 589.91,347.09 599.82,344.81 609.73,342.67 619.64,340.67 629.55,338.82 639.45,337.12 649.36,335.57 659.27,334.18 669.18,332.94 679.09,331.86 689.00,330.93 698.91,330.15 708.82,329.51 718.73,329.01 728.64,328.64 738.55,328.39 748.45,328.27 758.36,328.25 768.27,328.34 778.18,328.53 788.09,328.80 798.00,329.16" fill="none" stroke="#1c1a15" stroke-width="1.5"/>
+  <line x1="733.59" y1="124.00" x2="733.59" y2="370.00" stroke="#3a352a" stroke-width="1" stroke-dasharray="4,2"/>
+  <polyline points="580.00,289.14 589.91,287.75 599.82,286.36 609.73,284.97 619.64,283.57 629.55,282.18 639.45,280.79 649.36,279.40 659.27,278.01 669.18,276.62 679.09,275.23 689.00,273.84 698.91,272.45 708.82,271.06 718.73,269.67 728.64,268.28 738.55,266.89 748.45,265.49 758.36,264.10 768.27,262.71 778.18,261.32 788.09,259.93 798.00,258.54" fill="none" stroke="#3a352a" stroke-width="1.25" stroke-dasharray="6,3"/>
+  <polyline points="580.00,257.25 589.91,283.76 599.82,269.50 609.73,304.15 619.64,267.63 629.55,288.56 639.45,267.98 649.36,308.52 659.27,307.23 669.18,312.97 679.09,298.94 689.00,291.70 698.91,277.27 708.82,236.39 718.73,228.88 728.64,258.57 738.55,217.07 748.45,214.97 758.36,192.03 768.27,210.79 778.18,198.62 788.09,173.20 798.00,144.50" fill="none" stroke="#1c1a15" stroke-width="1.8"/>
+  <circle cx="758.36" cy="192.03" r="3" fill="#fffdf7" stroke="#8a8271" stroke-width="1.25"/>
+  <circle cx="788.09" cy="173.20" r="3" fill="#fffdf7" stroke="#8a8271" stroke-width="1.25"/>
+  <circle cx="798.00" cy="144.50" r="3" fill="#fffdf7" stroke="#8a8271" stroke-width="1.25"/>
+  <line x1="580.00" y1="370.00" x2="580.00" y2="374.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="580.00" y="384.00" text-anchor="start" font-size="8.5" fill="#8a8271" class="mono">2015H1</text>
+  <line x1="689.00" y1="370.00" x2="689.00" y2="374.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="689.00" y="384.00" text-anchor="middle" font-size="8.5" fill="#8a8271" class="mono">2020H2</text>
+  <line x1="798.00" y1="370.00" x2="798.00" y2="374.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="798.00" y="384.00" text-anchor="end" font-size="8.5" fill="#8a8271" class="mono">2026H1</text>
+  <line x1="577.00" y1="261.46" x2="580.00" y2="261.46" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="575.00" y="264.46" text-anchor="end" font-size="8" fill="#8a8271" class="mono">-0.900</text>
+  <line x1="577.00" y1="151.94" x2="580.00" y2="151.94" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="575.00" y="154.94" text-anchor="end" font-size="8" fill="#8a8271" class="mono">-0.800</text>
+  <text x="576.00" y="102.00" font-size="11.5" fill="#1c1a15" class="mono" font-weight="bold">zipf slope</text>
+  <text x="576.00" y="113.00" font-size="7.4" fill="#8a8271" class="mono">0/23 cross the collapse bound</text>
+  <text x="576.00" y="122.00" font-size="7.4" fill="#8a8271" class="mono">leaves band on anti side (not a finding)</text>
+  <rect x="840.00" y="124.00" width="218.00" height="246.00" fill="#fffdf7" stroke="#3a352a" stroke-width="0.75"/>
+  <rect x="1033.23" y="124.00" width="24.77" height="246.00" fill="#efe8d6" stroke="none"/>
+  <polygon points="840.00,144.50 849.91,150.94 859.82,157.30 869.73,163.58 879.64,169.78 889.55,175.89 899.45,181.92 909.36,187.85 919.27,193.69 929.18,199.44 939.09,205.11 949.00,210.68 958.91,216.17 968.82,221.57 978.73,226.90 988.64,232.15 998.55,237.32 1008.45,242.42 1018.36,247.47 1028.27,252.44 1038.18,257.37 1048.09,262.24 1058.00,267.06 1058.00,349.50 1048.09,342.63 1038.18,335.82 1028.27,329.05 1018.36,322.35 1008.45,315.70 998.55,309.12 988.64,302.61 978.73,296.17 968.82,289.81 958.91,283.53 949.00,277.33 939.09,271.22 929.18,265.19 919.27,259.26 909.36,253.42 899.45,247.67 889.55,242.00 879.64,236.43 869.73,230.94 859.82,225.54 849.91,220.21 840.00,214.96" fill="#e7e1d0" stroke="none"/>
+  <polyline points="840.00,214.96 849.91,220.21 859.82,225.54 869.73,230.94 879.64,236.43 889.55,242.00 899.45,247.67 909.36,253.42 919.27,259.26 929.18,265.19 939.09,271.22 949.00,277.33 958.91,283.53 968.82,289.81 978.73,296.17 988.64,302.61 998.55,309.12 1008.45,315.70 1018.36,322.35 1028.27,329.05 1038.18,335.82 1048.09,342.63 1058.00,349.50" fill="none" stroke="#8a8271" stroke-width="1" stroke-dasharray="1.5,3"/>
+  <polyline points="840.00,144.50 849.91,150.94 859.82,157.30 869.73,163.58 879.64,169.78 889.55,175.89 899.45,181.92 909.36,187.85 919.27,193.69 929.18,199.44 939.09,205.11 949.00,210.68 958.91,216.17 968.82,221.57 978.73,226.90 988.64,232.15 998.55,237.32 1008.45,242.42 1018.36,247.47 1028.27,252.44 1038.18,257.37 1048.09,262.24 1058.00,267.06" fill="none" stroke="#1c1a15" stroke-width="1.5"/>
+  <line x1="993.59" y1="124.00" x2="993.59" y2="370.00" stroke="#3a352a" stroke-width="1" stroke-dasharray="4,2"/>
+  <polyline points="840.00,179.73 849.91,185.58 859.82,191.42 869.73,197.26 879.64,203.10 889.55,208.95 899.45,214.79 909.36,220.63 919.27,226.48 929.18,232.32 939.09,238.16 949.00,244.01 958.91,249.85 968.82,255.69 978.73,261.53 988.64,267.38 998.55,273.22 1008.45,279.06 1018.36,284.91 1028.27,290.75 1038.18,296.59 1048.09,302.44 1058.00,308.28" fill="none" stroke="#3a352a" stroke-width="1.25" stroke-dasharray="6,3"/>
+  <polyline points="840.00,202.99 849.91,160.24 859.82,202.88 869.73,200.90 879.64,212.47 889.55,197.71 899.45,217.35 909.36,196.63 919.27,226.94 929.18,219.34 939.09,228.50 949.00,265.52 958.91,249.75 968.82,270.48 978.73,260.73 988.64,264.46 998.55,267.73 1008.45,251.48 1018.36,272.64 1028.27,280.84 1038.18,249.28 1048.09,272.17 1058.00,286.27" fill="none" stroke="#1c1a15" stroke-width="1.8"/>
+  <circle cx="1038.18" cy="249.28" r="3.2" fill="#1c1a15" stroke="none"/>
+  <line x1="840.00" y1="370.00" x2="840.00" y2="374.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="840.00" y="384.00" text-anchor="start" font-size="8.5" fill="#8a8271" class="mono">2015H1</text>
+  <line x1="949.00" y1="370.00" x2="949.00" y2="374.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="949.00" y="384.00" text-anchor="middle" font-size="8.5" fill="#8a8271" class="mono">2020H2</text>
+  <line x1="1058.00" y1="370.00" x2="1058.00" y2="374.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="1058.00" y="384.00" text-anchor="end" font-size="8.5" fill="#8a8271" class="mono">2026H1</text>
+  <line x1="837.00" y1="260.40" x2="840.00" y2="260.40" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="835.00" y="263.40" text-anchor="end" font-size="8" fill="#8a8271" class="mono">0.025</text>
+  <line x1="837.00" y1="150.42" x2="840.00" y2="150.42" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="835.00" y="153.42" text-anchor="end" font-size="8" fill="#8a8271" class="mono">0.030</text>
+  <text x="836.00" y="102.00" font-size="11.5" fill="#1c1a15" class="mono" font-weight="bold">similarity</text>
+  <text x="836.00" y="113.00" font-size="7.4" fill="#8a8271" class="mono">1 unit touches collapse bound (isolated, no anomaly)</text>
+  <text x="56.00" y="418.00" font-size="14" fill="#1c1a15" class="mono" font-weight="bold">THE FINGERPRINT</text>
+  <text x="56.00" y="433.00" font-size="10.5" fill="#3a352a" class="mono">marker channel, pool rate per unit &#8212; decisional, excess-direction, all three strata on one axis</text>
+  <rect x="60.00" y="466.00" width="998.00" height="206.00" fill="#fffdf7" stroke="#3a352a" stroke-width="0.75"/>
+  <rect x="944.59" y="466.00" width="113.41" height="206.00" fill="#efe8d6" stroke="none"/>
+  <line x1="763.14" y1="466.00" x2="763.14" y2="672.00" stroke="#3a352a" stroke-width="1" stroke-dasharray="4,2"/>
+  <line x1="57.00" y1="623.91" x2="60.00" y2="623.91" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="54.00" y="626.91" text-anchor="end" font-size="9" fill="#8a8271" class="mono">40</text>
+  <line x1="57.00" y1="571.78" x2="60.00" y2="571.78" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="54.00" y="574.78" text-anchor="end" font-size="9" fill="#8a8271" class="mono">60</text>
+  <line x1="57.00" y1="519.65" x2="60.00" y2="519.65" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="54.00" y="522.65" text-anchor="end" font-size="9" fill="#8a8271" class="mono">80</text>
+  <line x1="57.00" y1="467.52" x2="60.00" y2="467.52" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="54.00" y="470.52" text-anchor="end" font-size="9" fill="#8a8271" class="mono">100</text>
+  <line x1="60.00" y1="672.00" x2="60.00" y2="676.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="60.00" y="687.00" text-anchor="middle" font-size="8.5" fill="#8a8271" class="mono">2015H1</text>
+  <line x1="241.45" y1="672.00" x2="241.45" y2="676.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="241.45" y="687.00" text-anchor="middle" font-size="8.5" fill="#8a8271" class="mono">2017H1</text>
+  <line x1="422.91" y1="672.00" x2="422.91" y2="676.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="422.91" y="687.00" text-anchor="middle" font-size="8.5" fill="#8a8271" class="mono">2019H1</text>
+  <line x1="604.36" y1="672.00" x2="604.36" y2="676.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="604.36" y="687.00" text-anchor="middle" font-size="8.5" fill="#8a8271" class="mono">2021H1</text>
+  <line x1="785.82" y1="672.00" x2="785.82" y2="676.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="785.82" y="687.00" text-anchor="middle" font-size="8.5" fill="#8a8271" class="mono">2023H1</text>
+  <line x1="967.27" y1="672.00" x2="967.27" y2="676.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="967.27" y="687.00" text-anchor="middle" font-size="8.5" fill="#8a8271" class="mono">2025H1</text>
+  <line x1="1058.00" y1="672.00" x2="1058.00" y2="676.00" stroke="#3a352a" stroke-width="0.75"/>
+  <text x="1058.00" y="687.00" text-anchor="middle" font-size="8.5" fill="#8a8271" class="mono">2026H1</text>
+  <polyline points="60.00,593.33 105.36,578.38 150.73,591.42 196.09,593.85 241.45,589.85 286.82,589.33 332.18,599.41 377.55,596.45 422.91,587.42 468.27,599.06 513.64,589.50 559.00,586.20 604.36,582.90 649.73,583.42 695.09,583.07 740.45,584.46 785.82,558.92 831.18,534.94 876.55,494.63 921.91,480.21 967.27,502.45 1012.64,501.41 1058.00,541.89" fill="none" stroke="#3a352a" stroke-width="2"/>
+  <polyline points="60.00,595.24 105.36,597.50 150.73,588.46 196.09,598.54 241.45,596.80 286.82,586.90 332.18,594.54 377.55,585.51 422.91,600.28 468.27,592.28 513.64,584.12 559.00,595.93 604.36,596.28 649.73,588.11 695.09,598.54 740.45,599.41 785.82,569.87 831.18,551.10 876.55,501.58 921.91,520.00 967.27,497.76 1012.64,498.63 1058.00,544.85" fill="none" stroke="#5b5341" stroke-width="1.75" stroke-dasharray="7,3"/>
+  <polyline points="60.00,655.36 105.36,651.54 150.73,645.11 196.09,654.32 241.45,654.14 286.82,654.32 332.18,648.76 377.55,655.71 422.91,651.19 468.27,657.79 513.64,647.54 559.00,652.41 604.36,651.71 649.73,647.54 695.09,653.97 740.45,642.15 785.82,649.45 831.18,648.24 876.55,648.41 921.91,644.76 967.27,643.89 1012.64,643.20 1058.00,640.24" fill="none" stroke="#8a8271" stroke-width="1.5" stroke-dasharray="1.5,3"/>
+  <text x="1066.00" y="544.89" font-size="10.5" fill="#3a352a" class="mono" font-weight="bold">cs.CL</text>
+  <text x="1066.00" y="556.89" font-size="8.5" fill="#8a8271" class="mono">71.5</text>
+  <line x1="1058.00" y1="544.85" x2="1064.00" y2="567.89" stroke="#5b5341" stroke-width="0.75"/>
+  <text x="1066.00" y="570.89" font-size="10.5" fill="#5b5341" class="mono" font-weight="bold">cs.CV</text>
+  <text x="1066.00" y="582.89" font-size="8.5" fill="#8a8271" class="mono">70.3</text>
+  <text x="1066.00" y="643.24" font-size="10.5" fill="#8a8271" class="mono" font-weight="bold">math.NT</text>
+  <text x="1066.00" y="655.24" font-size="8.5" fill="#8a8271" class="mono">33.7</text>
+  <text x="1062.00" y="50.00" text-anchor="end" font-size="8.5" fill="#8a8271" class="mono">dashed vertical: envelope/extension boundary (2022H2|2023H1)</text>
+  <text x="1062.00" y="62.00" text-anchor="end" font-size="8.5" fill="#8a8271" class="mono">shaded: extension window 2025H1&#8211;2026H1</text>
+  </svg>
+  <figcaption>Upper panel: cs.CL's four pre-registered margin metrics against their fitted
+  ordinary-drift envelope and one-sided prediction band (2015H1&#8211;2022H2 fit, extrapolated
+  through 2026H1) &mdash; the collapse-side bound is never crossed by a sustained (two-consecutive)
+  run in any of the four. Lower panel: the same dossier's declared post-2022 marker-word pool
+  rate, read for all three strata on one axis. Every figure is read at runtime from the frozen
+  <code>results/results.json</code>; method and full numbers in <code>./README.md</code>.</figcaption>
+  </figure>
+
+  <div class="grid">
+    <div class="card">
+      <h3>What the margins say</h3>
+      <p>Lexical diversity (MTLD), hapax share, the Zipf-tail slope and inter-abstract
+      similarity are each fit an ordinary-drift envelope on 2015H1&#8211;2022H2 and checked,
+      one-sided, in their own collapse direction through 2026H1. No metric sustains a
+      collapse-side breach: the kill condition in the pre-registration fires, and the
+      verdict for cs.CL and cs.CV alike is <strong>NO SIGNAL BEYOND ORDINARY DRIFT</strong>.
+      Where MTLD leaves the band, it leaves it on the <em>anti</em>-collapse side &mdash;
+      texts got more lexically diverse, not less &mdash; which the one-sided test was never
+      built to flag as a finding either way.</p>
+    </div>
+    <div class="card">
+      <h3>What the fingerprint says</h3>
+      <p>The marker channel is not a margin metric and carries no collapse direction of its
+      own; it is watched in the excess direction only. Its pool rate climbs sharply from
+      2023 in both cs.CL and cs.CV &mdash; the two strata where model-assisted writing is
+      expected &mdash; and stays flat in the math.NT control. The fingerprint of new usage
+      arrived. The margins it was expected to shrink did not.</p>
+    </div>
+  </div>
+
+  <div class="objection">
+    <h3>What this does and does not claim</h3>
+    <p>This instrument does <strong>not</strong> claim the four margin metrics are the only
+    way homogenization could show up, nor that a null result on this pre-registered design
+    rules out change by other measures. It claims exactly what the pre-registration
+    committed to check, checked the same way in both directions: on this design, over this
+    corpus and window, the previously reported margin decline does not continue, plateau, or
+    reverse detectably beyond ordinary drift &mdash; while the declared marker vocabulary's
+    rise is exactly where a model-assisted-writing account would put it, and absent from the
+    control. Full arithmetic, the pre-registration text, and every number drawn above:
+    <code>./README.md</code> and <code>./SOURCES.md</code>.</p>
+  </div>
+
+  <footer>Meridian &middot; Instrument 018 &middot; static figure, no client code &middot; data:
+  ./results/results.json</footer>
+</div>
+</div>
+
+<style>
+  .nste{
+    --paper:#f4f1e8; --ink:#1c1a15; --rule:#3a352a; --faint:#8a8271; --box:#fffdf7;
+    background:var(--paper); color:var(--ink);
+    font-family:Georgia,"Times New Roman",serif; line-height:1.5;
+  }
+  .nste *{box-sizing:border-box}
+  .nste .wrap{max-width:1080px;margin:0 auto;padding:28px 20px 56px}
+  .nste .mono{font-family:"DejaVu Sans Mono","Courier New",monospace}
+  .nste h1{font-size:24px;margin:0 0 4px;letter-spacing:.2px}
+  .nste .sub{font-size:15px;color:var(--rule);margin:0 0 2px}
+  .nste .status{font-family:"DejaVu Sans Mono","Courier New",monospace;font-size:11px;
+    color:var(--rule);text-transform:uppercase;letter-spacing:.6px;margin:8px 0 20px}
+  .nste figure{margin:0 0 10px}
+  .nste svg{width:100%;height:auto;display:block;border:1px solid var(--rule);background:var(--box)}
+  .nste figcaption{font-size:12.5px;color:var(--rule);margin-top:8px}
+  .nste .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0 0}
+  @media(max-width:720px){.nste .grid{grid-template-columns:1fr}}
+  .nste .card{border:1px solid var(--rule);background:var(--box);padding:14px 16px}
+  .nste .card h3{margin:0 0 6px;font-size:14px;text-transform:uppercase;letter-spacing:.5px}
+  .nste .card p{margin:0 0 8px;font-size:14px}
+  .nste .objection{border:1px dashed var(--rule);padding:14px 16px;margin:24px 0 0;font-size:14px;background:#efe9da}
+  .nste .objection h3{margin:0 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.5px;color:var(--rule)}
+  .nste footer{margin-top:30px;font-size:12px;color:var(--rule);border-top:1px solid var(--rule);padding-top:12px}
+  .nste code{font-family:"DejaVu Sans Mono","Courier New",monospace;font-size:12.5px}
+</style>
