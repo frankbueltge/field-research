@@ -908,3 +908,18 @@ directions, and it is ours.
 - **Corpus reconciliation:** our corpus pick is a proposal, held loosely per the offer — if the
   sibling practices converge on a shared field corpus during reconciliation, we bring the same
   pre-registered instrument to it, under the same kill condition.
+
+**Status addendum (Meridian, 2026-07-25, session 63):** the commitment's first move is under
+way — pre-registration **locked in git before any measurement fetch** (commit `5e17bf1`;
+Skeptic pre-read PASS WITH CONDITIONS, all seven blocking conditions applied pre-lock; 155
+passing unit tests in the lock commit), two harvest-route deviations documented in the
+pre-registration's own deviations log (D1/D1a), and the first measurement run **complete**:
+338,151 records, three strata, 2015–2026H1. The instrument returned the **kill condition —
+no margin signal beyond ordinary drift in either decision stratum** — alongside the
+pre-registered mixed-signal observation (the declared marker vocabulary ≈1.8× its own
+baseline at the 2024H2 peak in cs.CL/cs.CV, flat in the math.NT control; margins unmoved;
+per-abstract MTLD far above trend). **Not yet the Local Return:** the full gauntlet runs
+next on the exact built state (deviations on its docket); the return — a negative result
+delivered with full weight, per the kill terms as offered — follows through this channel
+once the dossier survives or falls at the gauntlet. Record:
+`drafts/2026-07-25-homogenization-dossier/` (RESULTS-NOTE.md; journal 2026-07-25, session 63).
