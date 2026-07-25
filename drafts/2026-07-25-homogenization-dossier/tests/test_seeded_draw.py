@@ -1,7 +1,7 @@
 import unittest
 
 import _pathfix  # noqa: F401
-from metrics import seeded_order, build_pool, compute_cell
+from metrics import seeded_order, build_pool, compute_cell, MTLD_DRAW, SIM_DRAW
 
 
 class TestSeededOrderDeterminism(unittest.TestCase):
@@ -70,11 +70,55 @@ class TestOneOrderThreeUses(unittest.TestCase):
                 for rid in ids]
         order = seeded_order("cs.CV", "2020H1", ids)
         result = compute_cell("cs.CV", "2020H1", rows, marker_set=set())
-        # With n_kept=30 < MTLD_DRAW(1000) and < SIM_DRAW(150), both draws use the
+        # With n_kept=30 < MTLD_DRAW(150) and < SIM_DRAW(150), both draws use the
         # whole cell (order[:30] == order), so both are flagged as small cells.
         self.assertTrue(result["mtld"]["small_cell"])
         self.assertTrue(result["similarity"]["small_draw"])
         self.assertEqual(result["similarity"]["n_draw"], 30)
+
+
+class TestMtldDrawSize(unittest.TestCase):
+    """Reconciliation round, item 1: MTLD draw size is now the first min(150, n)
+    abstracts of the seeded order (was up to 1,000) -- a fixed draw, and the SAME
+    prefix size as similarity's draw (§3 metric 4: "the same prefix as metric 1,
+    deliberately")."""
+
+    def test_mtld_draw_is_150_and_matches_similarity_draw(self):
+        self.assertEqual(MTLD_DRAW, 150)
+        self.assertEqual(MTLD_DRAW, SIM_DRAW)
+
+    def test_cells_above_150_flag_neither_as_small_but_use_same_150_prefix(self):
+        ids = [f"id{i:03d}" for i in range(200)]  # n_kept=200 > 150
+        rows = [{"id": rid, "created": "2020-03-01", "unit": "2020H1",
+                 "abstract": " ".join([f"{rid}word{i}" for i in range(60)])}
+                for rid in ids]
+        order = seeded_order("cs.CV", "2020H1", ids)
+        result = compute_cell("cs.CV", "2020H1", rows, marker_set=set())
+
+        self.assertFalse(result["mtld"]["small_cell"])
+        self.assertFalse(result["similarity"]["small_draw"])
+        self.assertEqual(result["mtld"]["n_drawn"], 150)
+        self.assertEqual(result["similarity"]["n_draw"], 150)
+        # Both draws are the identical first-150 prefix of the one seeded order.
+        self.assertEqual(order[:150], order[:result["similarity"]["n_draw"]])
+
+    def test_cell_of_exactly_150_is_not_flagged_small(self):
+        ids = [f"id{i:03d}" for i in range(150)]
+        rows = [{"id": rid, "created": "2020-03-01", "unit": "2020H1",
+                 "abstract": " ".join([f"{rid}word{i}" for i in range(60)])}
+                for rid in ids]
+        result = compute_cell("cs.CV", "2020H1", rows, marker_set=set())
+        self.assertFalse(result["mtld"]["small_cell"])
+        self.assertFalse(result["similarity"]["small_draw"])
+
+    def test_cell_of_149_is_flagged_small(self):
+        ids = [f"id{i:03d}" for i in range(149)]
+        rows = [{"id": rid, "created": "2020-03-01", "unit": "2020H1",
+                 "abstract": " ".join([f"{rid}word{i}" for i in range(60)])}
+                for rid in ids]
+        result = compute_cell("cs.CV", "2020H1", rows, marker_set=set())
+        self.assertTrue(result["mtld"]["small_cell"])
+        self.assertTrue(result["similarity"]["small_draw"])
 
 
 if __name__ == "__main__":

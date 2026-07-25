@@ -20,20 +20,22 @@ def _short_abstract(n=10):
     return " ".join(f"lexeme{i}" for i in range(n))
 
 
-def _record(identifier, created, categories, abstract, deleted=False):
+def _record(identifier, created, categories, abstract, deleted=False, datestamp=None):
+    if datestamp is None:
+        datestamp = created  # default: metadata untouched since creation
     if deleted:
         return f"""
         <record>
           <header status="deleted">
             <identifier>oai:arXiv.org:{identifier}</identifier>
-            <datestamp>{created}</datestamp>
+            <datestamp>{datestamp}</datestamp>
           </header>
         </record>"""
     return f"""
     <record>
       <header>
         <identifier>oai:arXiv.org:{identifier}</identifier>
-        <datestamp>{created}</datestamp>
+        <datestamp>{datestamp}</datestamp>
       </header>
       <metadata>
         <arXiv xmlns="{ARXIV_NS}">
@@ -140,6 +142,11 @@ class TestFilterCorpusPipeline(unittest.TestCase):
         ids = [r["id"] for r in cl_rows]
         self.assertEqual(ids.count("1501.00001"), 1)
 
+        # JSONL rows carry the OAI datestamp alongside the four original fields.
+        row = cl_rows[0]
+        self.assertEqual(set(row.keys()), {"id", "created", "datestamp", "unit", "abstract"})
+        self.assertEqual(row["datestamp"], "2015-01-02")  # default: untouched since creation
+
         # manifest + counts files exist
         self.assertTrue(os.path.exists(os.path.join(self.outdir, "manifest.json")))
         self.assertTrue(os.path.exists(os.path.join(self.outdir, "counts.json")))
@@ -147,6 +154,38 @@ class TestFilterCorpusPipeline(unittest.TestCase):
             manifest = json.load(f)
         self.assertIn("input_sha256", manifest)
         self.assertIn("output_sha256", manifest)
+
+        with open(os.path.join(self.outdir, "counts.json")) as f:
+            counts_json = json.load(f)
+        self.assertIn("cells", counts_json)
+        self.assertIn("contamination_ceiling", counts_json)
+        # No contaminated records in this fixture (all datestamp == created).
+        self.assertEqual(counts_json["contamination_ceiling"]["cs.CL"]["pre2023_datestamp_post2023_count"], 0)
+        self.assertEqual(counts_json["contamination_ceiling"]["cs.CL"]["pre2023_kept_count"], 1)
+        self.assertEqual(counts_json["contamination_ceiling"]["cs.CL"]["share"], 0.0)
+
+    def test_contamination_ceiling_counts_post_launch_datestamp_touches(self):
+        cs_records = "".join([
+            # pre-2023 created, datestamp untouched -> not contaminated
+            _record("2001.00001", "2020-01-02", "cs.CL", _long_abstract()),
+            # pre-2023 created, datestamp touched post-launch -> contaminated
+            _record("2001.00002", "2020-03-01", "cs.CL", _long_abstract(), datestamp="2023-05-01"),
+            # pre-2023 created, datestamp touched post-launch -> contaminated
+            _record("2001.00003", "2021-06-01", "cs.CL", _long_abstract(), datestamp="2024-01-15"),
+            # post-2023 created -> irrelevant to the pre-2023 contamination ceiling
+            _record("2001.00004", "2023-02-01", "cs.CL", _long_abstract(), datestamp="2023-02-01"),
+        ])
+        self._write_chunk("cs", "00001.xml.gz", _wrap(cs_records))
+        self._write_chunk("math", "00001.xml.gz", _wrap(""))
+
+        filter_corpus(self.raw_dir, self.outdir)
+        with open(os.path.join(self.outdir, "counts.json")) as f:
+            counts_json = json.load(f)
+
+        cl_contamination = counts_json["contamination_ceiling"]["cs.CL"]
+        self.assertEqual(cl_contamination["pre2023_kept_count"], 3)
+        self.assertEqual(cl_contamination["pre2023_datestamp_post2023_count"], 2)
+        self.assertAlmostEqual(cl_contamination["share"], 2 / 3)
 
     def test_refuses_nothing_special_but_output_is_deterministic(self):
         cs_records = _record("1501.00010", "2015-01-02", "math.NT", _long_abstract())

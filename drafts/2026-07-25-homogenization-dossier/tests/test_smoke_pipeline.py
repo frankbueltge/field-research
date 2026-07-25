@@ -135,12 +135,16 @@ class TestSmokeEndToEnd(unittest.TestCase):
                 self.assertEqual(len(mrep["rows"]), 23)
                 self.assertIn(
                     mrep["label"],
-                    ("NO-ANOMALY", "CONTINUE", "NEW-ONSET", "PLATEAU", "REVERSE", None),
+                    ("NO-ANOMALY", "CONTINUE", "NEW-ONSET", "PLATEAU", "REVERSE", "RESIDUAL", "NON-DECIDABLE"),
                 )
             self.assertIn("a_validity_window_2023h1_2026h1", rep["marker"])
-            # quadratic sensitivity table present and marked non-decisional
+            self.assertIn("context_whole_cell_rate", rep["marker"])
+            # quadratic sensitivity table present, with its own label per metric
             for metric_key in envelope_mod.MARGIN_METRIC_DIRECTIONS:
-                self.assertTrue(rep["quadratic_sensitivity"][metric_key]["non_decisional"])
+                self.assertIn(
+                    rep["quadratic_sensitivity"][metric_key]["label"],
+                    ("NO-ANOMALY", "CONTINUE", "NEW-ONSET", "PLATEAU", "REVERSE", "RESIDUAL", "NON-DECIDABLE"),
+                )
 
         for stratum in ("cs.CL", "cs.CV"):
             v = results["verdicts"][stratum]
