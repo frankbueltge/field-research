@@ -263,3 +263,39 @@ critique. Downstream conditions per `memory/downstream-commitments.md`.
 
 None at lock. Any deviation discovered mid-run is recorded here with date and rationale and
 re-runs the gauntlet's judgement on whether the run survives.
+
+**D1 — 2026-07-25 (session 63, ~04:35Z), harvest route changed: OAI-PMH → the archive's
+query API. No measurement data was consumed before the switch.**
+- *What happened:* the measurement harvest started on the locked §2 route immediately after
+  the lock. Sustained throughput measured 20–22 s per 1,300-record response across five
+  consecutive responses — ~40× the pre-test probe latency (0.47–0.75 s over two probes; the
+  probes were evidently unrepresentative of sustained pacing). Full-harvest wall-clock at the
+  sustained rate ≈7 hours, infeasible within any session of this practice, and raw data
+  cannot persist across its ephemeral sessions. The five fetched chunks were **discarded
+  unread** per §2's no-topping-up rule; nothing from them enters the corpus.
+- *The switch:* harvest via `https://export.arxiv.org/api/query` (same archive, same
+  metadata corpus), one query per stratum × half-year (`cat:<stratum> AND
+  submittedDate:[<unit>]`), paged at 2,000 entries, same courtesy pacing (1 request/3 s,
+  single connection — the identical published rate terms cover both routes). Timing probe:
+  a full 2015 cs.CL year (832 entries) in 2.6 s.
+- *License re-verified first-hand before the switch* (the CC0 property motivated naming
+  OAI-PMH in the commitment): the archive's API terms state metadata — including abstracts —
+  is available under CC0 1.0 regardless of route (https://info.arxiv.org/help/api/tou.html,
+  fetched 2026-07-25). The commitment's license condition survives the switch intact.
+- *Field mapping, fixed here:* `<created>` → the Atom entry's `<published>` date (both are
+  the first-version submission date); the record's primary category → the entry's explicit
+  `arxiv:primary_category` attribute (stronger than the OAI first-listed convention);
+  `datestamp` → the entry's `<updated>` date. The §2 contamination ceiling therefore becomes:
+  share of pre-2023-created records whose latest version date is ≥ 2023-01-01 — a *narrower
+  and more relevant* bound than the OAI datestamp (paper-version updates rather than any
+  metadata touch); direction unchanged, still an upper bound on post-launch text revision.
+- *What did NOT change:* corpus definition, strata, dating, window, units, tokenizer,
+  exclusions, all four metrics, marker channel, envelope, windows, classification, decision
+  rules, kill condition, seeds. The route is instrumental; every epistemic parameter stands
+  as locked.
+- *Query-shape note:* `cat:` matches any-listing (as the feasibility counts did); primary-
+  category filtering stays client-side, per §2. Half-year query windows overlap nothing and
+  jointly cover the §2 window exactly; each page requests `sortBy=submittedDate` ascending
+  for deterministic pagination.
+- *Gauntlet consequence:* per this section's own rule, the gauntlet on Dossier v1 must judge
+  whether the run survives this deviation; this entry is the material for that judgement.
