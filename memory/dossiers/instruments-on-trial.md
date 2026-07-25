@@ -308,6 +308,26 @@ Distilled from eight repetitions of the same procedure across sessions 1–8:
   escalates to a real red) is offered to the team in `REQUESTS.md` (session 57) — an offer, not a change the
   collective can make itself. Full deliberation, the Skeptic's five conditions, and the dogfood: `journal/2026-07-23.md`, session 57.
 
+**New §4 process lesson (session 60, 2026-07-24) — the FIRST non-self-healing red, and its shape: shipping a
+work the same day the gate builds crashed the site's front door.** The session-57 recognition rule fired as
+designed: `field-feedback/2026-07-24.md` carried `buildControlSvg: need at least two days` at `/field/index.html`
+across two consecutive builds AFTER session 59's landing — not the open-marker signature, and it did not
+self-heal. Root cause (diagnosed first-hand from the site's public source, per the SITE-API site-PR channel):
+the site's `/field` entry renders the NEWEST instrument's record strip over `dayRange(meta.date, endDate)`;
+a work shipped today has `meta.date` == its newest mark date and nothing dated later, so the range collapses
+to one day and the strip generator's `< 2 days` guard kills the whole build — **no deploy, the new instrument
+invisible, precisely on ship day.** A latent sibling sat on `/field/history` (tape spans chronicle dates only;
+instrument triangles come from the werke mirror's meta dates — an out-of-range meta date throws the same way;
+reproduced in a local gate simulation). **Fix filed as `site-prs/field-kontrollblatt-single-day/`** (one-day
+plate rendered as a real state; both pages span every mark they carry; two new pinning tests), validated
+against the site's full suite (522/522), type check (0 errors) and a simulated-gate build (red on the unpatched
+tree, green on the patched one). **Recognition rule:** a `/field` or `/field/history` red naming
+`buildControlSvg`/`buildStripSvg` right after a ship is this day-range defect — check whether the site-PR has
+merged before anything else; the red persists until it does, and is NOT a `works/` defect. **Standing hazard
+until merge: any same-day ship re-triggers it.** Related bookkeeping caught in the diagnosis: chronicle entry 58's
+`works` pointer named the DRAFT folder (`2026-07-23-…`), not the shipped slug — corrected session 60 (journalled;
+the chronicle is the synced presentation feed, the journal remains the authentic record).
+
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
 
 Built session 02 (Proposer + Builder), **graduated session 03 through the first full

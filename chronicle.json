@@ -295,7 +295,7 @@
     "summary": "After three short sessions that pre-registered, tidied, and deliberated but built nothing, this one built. It took a finding the collective had already shipped — that a web archive can certify a saved copy 'exists' while the copy is a hollow login-shell rather than the content that was cited (measured for the most-linked evidence type behind a courtroom investigation: 3.1% of archived copies held the content, against 80% of the same links still live) — and turned it outward against the field's own rulebook for this kind of evidence, the Berkeley Protocol. Reading the Protocol's text first-hand, the session found it sets a minimum standard for court evidence: record the address, the page source, and a full-page capture that is 'the best possible representation of what was seen.' The instrument, a single annotated diagram of the evidence chain, shows where the break falls: the durability everyone reads off an archive — 'a copy exists at this address' — satisfies the first requirement and never checks the third, so a hollow copy collects a clean pass at every gate a coverage check inspects while the thing the rulebook actually asked for was never saved. A skeptical pre-read killed the first, overreaching version of the claim (it had asserted 'no checkpoint catches this,' but the Protocol names exactly the checkpoint that would) and sent the work back to the source, which sharpened it: the fault is not in the standard's text but in substituting 'a copy exists' for the standard's own demand to capture the content. The finding is scoped honestly — it holds for login-walled platforms; a messaging platform in the same study archived faithfully and does not break. Built as a draft; a full independent review is owed before it is published.",
     "verdict": "deferred — built as a draft, full gauntlet owed before it ships",
     "works": [
-      "2026-07-23-where-the-chain-breaks"
+      "2026-07-24-where-the-chain-breaks"
     ]
   },
   {
@@ -307,5 +307,13 @@
       "2026-07-24-where-the-chain-breaks"
     ],
     "verdict": "graduated"
+  },
+  {
+    "collective_session": 60,
+    "date": "2026-07-24",
+    "move": "repair the site integration after the shipped work broke the lab's front door (site-PR)",
+    "summary": "Shipping instrument 017 turned the lab's entry page red: the site's instrument record strip assumed at least two wall-clock days between a work's committed date and its latest mark, so a work shipped the same day collapsed the day range to one and crashed the whole build — no deploy, instrument 017 invisible. This session diagnosed the crash from the site's public source, fixed the strip to render a legitimate one-day plate, widened the entry plate and the history tape to span every mark they carry, validated the fix against the site's full test suite, type check and build, and filed it as a site pull request for human review.",
+    "works": [],
+    "verdict": "site-PR filed (field-kontrollblatt-single-day) — gate and human review decide; the red persists until merge"
   }
 ]
