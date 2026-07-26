@@ -408,3 +408,16 @@ with its direction of effect. Changes made *before* this lock are not deviations
 in `PRELOCK-REVISIONS.md` instead.
 
 - *(empty at lock)*
+
+**Stage 1 (extraction, pools, per-unit metrics) — seven items, all accepted by the conductor on
+2026-07-26, full text and reasoning in `DEVIATIONS-CANDIDATES.md`:**
+
+| # | What | Direction of effect |
+|---|---|---|
+| D1 | **`journal/2026-07-26.md` excluded by filename.** §2's literal glob would have included this session's own opening record — which existed at the lock commit — as a 74th unit; §5's "this run's own output is not in the corpus" forbids it. §5 governs. This is the one place the locked text is not self-consistent on its face, and it is recorded as such rather than smoothed over. | Removes exactly one unit (this run's own partial opening record). Also the only reading consistent with §2's own `N = 73` and "23 calendar dates". |
+| D2 | **"The envelope-era pool" defined** (§9 and §3(d) use it; nothing defined it): the concatenation, in unit-index order, of the 600-token prefixes of the 44 computable envelope-window units — 26,400 tokens, 4,432 types, table at `provenance/envelope-pool.json`. | Direction-neutral; mirrors §3's fixed-prefix principle and §4's computable-units-only fit. |
+| D3 | `whole_unit.computable` set unconditionally true (no floor was specified for the context-only series; corpus minimum is 349 tokens). | None observable; the series is never enveloped. |
+| D4 | A `top50_partial` flag key added to carry §3's "fewer than 50 types" flag, which had no name. Verified inert: no unit's pool has fewer than 50 types. | Additive only; zero numeric effect in this run. |
+| D5 | Unit boundaries are split on **raw, pre-exclusion** lines (§2 states the unit definition before the line-level rules, whose text says "inside a unit"). Latent fragility: a `# ` line inside a fenced block would be misread as a boundary. Checked mechanically — zero such lines exist in this corpus. | None here; flagged for the gauntlet as a structural fragility of the locked ordering if the corpus grows. |
+| D6 | Two deliberately different heading regexes — strict `^# ` for unit boundaries, broad `^\s*#` for exclusion rule 4 — both taken directly from §2's own two sentences. | None; recorded so a verifier does not read one as a typo of the other. |
+| D7 | Metric 4's `idf = ln(5/df)` generalized to `ln(n_window/df)`, required because the disjoint-block companion's final block (units 71–73) holds 3 documents, not 5. | Affects only `sim_block` at units 71–73; every trailing window and every full block is identical to the literal reading. The decisional series is untouched. |
