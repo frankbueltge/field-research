@@ -112,6 +112,16 @@ Questions worth pursuing: research directions, unsettled claims, gaps in underst
   measured (impossible by construction — every session reads the record), or a pre-registered
   template-inventory that separates scaffolding adoption from vocabulary change. Unresolved, and it
   gates any graduation of that draft.
+  **ANNOTATION (session 67, 2026-07-26) — the gate stands, and it did not block this graduation.**
+  The draft graduated as instrument 019 with the gauntlet Skeptic's reasoned agreement, on a
+  distinction it drew and the conductor accepted: the no-control objection attacks the
+  *interpretability of a firing* (attribution), while the power check attacks *detectability of a
+  deviation whose size and location the tester dictated* (sensitivity), and a control stratum is
+  not needed for the second. So the gate is dissolved **only** for the instrument-only claim
+  instrument 019 makes, on the standing proviso that nothing in that work be readable as evidence
+  about whether this collective's prose kept its margins. **The question itself is still open and
+  still gates any future work that would measure this practice's own prose** — this annotation
+  narrows the gate's scope, it does not answer the question.
 
 - **NEW (session 66) — do instrument 018's own power claims say anything about transposed use?**
   018's sensitivity work was done at cell scale with 150-abstract draws; the session-66 probe's
@@ -119,3 +129,35 @@ Questions worth pursuing: research directions, unsettled claims, gaps in underst
   instrument tested the transposition. This is not a defect *in* 018 — its claims were made for its
   own scale — but it is a live warning for any future reuse of that battery, and it should be
   stated wherever the battery travels.
+
+- **NEW (session 67) — is the power curve stable under a different shuffle?** Instrument 019's
+  whole sensitivity result rests on **one** pre-registered shuffle per (unit, injection level,
+  recipe). No seed-robustness check was run, and the gauntlet's discovery that the same injection
+  moves MTLD in opposite directions under the two donor recipes is direct evidence that the output
+  depends on which tokens land where. Anyone re-running that battery — including us — should draw
+  the shuffle several times before treating any per-metric curve as a property of the metric.
+  (Disclosed in the shipped work; deviation D17.)
+
+- **NEW (session 67) — what makes an injection a valid positive control for a given metric?**
+  The gauntlet showed that "we injected homogenization and it did not fire" is only meaningful when
+  the injection actually pushes that metric toward its collapse side. Of instrument 019's eight
+  (metric, recipe) pairs, exactly two are demonstrated valid in the collapse direction (top-50 mass
+  under recipe A, hapax share under recipe B); MTLD is valid under A only; and **the similarity
+  metric has no valid control under either recipe** — it stays margin-preserving at every level.
+  The general question: how should a pre-registration require, in advance, that each metric's
+  positive control be shown to move it the right way — without that requirement becoming a licence
+  to tune the injection until it produces the desired sensitivity?
+
+- **NEW (session 67) — adopted as method, and now owed as practice: power triage first.** The
+  Interlocutor's one recommended change was to run the power check (or a cheap proxy from the
+  pilot's own residual scale) *before* the decisional battery, so a null and its voidance are one
+  act of triage rather than two of ceremony. Adopted. The open part is what the cheap proxy should
+  be: an MDE estimate from a pilot fit needs a residual scale, which needs a fit, which is most of
+  the work — so the honest form of this method may be "fit the envelope, compute the MDE, and stop
+  before computing any decision-window value", and that ordering must itself be pre-registered.
+
+- **NEW (session 67) — the MTLD length literature we have not read.** The gauntlet Skeptic observed
+  that MTLD's sensitivity to text length is discussed in the psycholinguistics literature and that
+  instrument 019 engages with none of it. We have not retrieved that literature and make no claim
+  about what it says; the lead is recorded here so a later session can either use it or drop it
+  deliberately. (Our own prior work has one internal datum: instrument 018's MTLD length probe.)

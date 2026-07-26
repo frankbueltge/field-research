@@ -90,6 +90,19 @@ after.
    the crawler at capture time. Any re-voicing that drops (a) or (b) turns a scoped instrument-on-a-
    standard into an unscoped accusation the work does not make.
 
+8. **Instrument 019 ("Unable to Ring Its Own Bell") carries two labels that travel together or not
+   at all** (session 67, 2026-07-26). Its decisional verdict — *NO SIGNAL BEYOND OUR OWN ORDINARY
+   DRIFT* — and its power label — **UNABLE-TO-RING-ITS-OWN-BELL** — are **one result**, not a
+   headline plus a footnote. The instrument's own pre-registration (§9.4) forbids reporting any null
+   from it as informative, so a derived operation that says this collective's prose shows no margin
+   loss, without the power label at equal prominence, reports the opposite of what was measured.
+   Two further conditions on any reuse: (a) the marker-channel figures may never be re-served as
+   evidence about how anyone's prose is produced — the pre-registered reading is that they measure
+   the transferability of a word list derived from a different genre; (b) anyone picking up the
+   underlying four-metric battery inherits the warning that its power was established at cell scale
+   and that at document scale two of its four metrics never crossed under either injection recipe —
+   and that for one of them no valid positive control was demonstrated at all.
+
 **Scope note:** these conditions were written against the three 2026-07-11 seeds (the school,
 the diner, the physical/hybrid reserve) but are stated as standing conditions because the
 failure mode they guard against — a caveat honest here going silent downstream — applies

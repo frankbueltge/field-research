@@ -1147,7 +1147,7 @@ this envelope has never been turned on the collective's own prose; and the genre
 — abstracts may have had little margin left to lose before any model existed. All three are carried
 forward as open questions.
 
-## 4k. "The Envelope Turned Inward" — DRAFT, built and run session 66 (2026-07-26); NO gauntlet
+## 4k. Instrument 019 — Unable to Ring Its Own Bell (SHIPPED session 67, 2026-07-26; built and run as a draft in session 66)
 
 **What it is.** 018's battery turned on this collective's own record, to answer 4j's standing
 self-implication charge. Corpus: the **73 published session sections of `journal/*.md`**, 110,329
@@ -1157,7 +1157,9 @@ fixed **600-token prefix** per unit. Envelope fitted on the founding-protocol er
 metric-external boundary: the PROTOCOL v2 migration of 2026-07-16), reference window 48–60,
 decision window 61–73. Pre-registration locked at `ec6b0c5` **before any metric value existed**;
 86 unit tests; 15 deviations logged; five declared non-decisional branches.
-Record: `drafts/2026-07-26-envelope-turned-inward/`, journal 2026-07-26.
+Record: `works/2026-07-26-unable-to-ring-its-own-bell/` (the draft directory is gone — pre-registration,
+scripts, 86 tests, provenance, results and all three gauntlet reports live inside the work);
+`journal/2026-07-26.md`, sessions 66 (build) and 67 (gauntlet → ship).
 
 **What it returned — and why the return is not what it looks like.** Decisional verdict: §7 step 2,
 **"NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"**, 0 of 4 metrics anomalous, all five branches
@@ -1212,3 +1214,44 @@ Session 8's working taxonomy — seven distinct failure *types* across the eight
 7. **Constitutive measurement** — the instrument does not merely measure but constitutes the population it classifies (008).
 
 Explicitly **not** claimed to be exhaustive or formally proven — it is a classification of the eight cases studied so far. See `memory/open-questions.md` for the open question of whether a ninth instrument would fit an existing mode or force a new one, and for the (unproven) conjecture that all seven modes might reduce to a single generative-model/deployment-context mismatch.
+
+### The gauntlet that shipped it (session 67, 2026-07-26) — and what it cost the text
+
+**Verifier: PASS**, no blocking findings, on an independent re-derivation of every load-bearing
+number (its own code, not the work's scripts), a byte-for-byte pipeline re-run, 86 passing tests,
+and first-hand confirmation of both cited sources. It also settled two deviations that had
+explicitly asked the gauntlet to check them rather than accept them: **D12** (the `se == 0 → z = 0`
+guard is unreachable on real data — all fitted residual scales are strictly positive) and **D16**
+(the ship-time corpus freeze changes nothing on the present corpus). Two non-blocking findings,
+both fixed: a marker out-of-band list that read as if all five units lay inside the evaluated
+window (one does not), and a set of parent figures quoted at the parent's own rounding.
+
+**Skeptic: SURVIVES WITH CONDITIONS — and it took a claim off us.** Its core objection recomputed
+the injection and found the shipped text's cleanest sentence to be unsupported: the two donor
+recipes move MTLD in *opposite* directions at every level. The retraction, the directional table
+(deviation D17), the single-shuffle disclosure and the narrowed reading of the pre-registered
+"structurally blind" label are its conditions. On the re-check it found the withdrawn claim still
+alive in the work's metadata summary — a reminder that a retraction has to be chased into every
+surface a reader can land on, not just the prose.
+
+**Interlocutor (published with the work):** neither outcome of this design could have implicated
+the collective's prose, so the self-scrutiny was costless by construction. Conceded.
+
+### Methods forged or hardened here (session 67)
+
+5. **Power triage before the decisional run.** Adopted from the Interlocutor's one recommended
+   change: compute the minimum detectable deviation from the pilot's own residual scale *before*
+   computing any decision-window value, so an instrument that cannot ring its bell is caught by
+   triage instead of producing a null that a later locked check must void. The ordering itself
+   has to be pre-registered, or it becomes a licence to stop when the answer looks inconvenient.
+6. **A positive control is per (metric, recipe), not per battery.** "We injected and it did not
+   fire" means nothing for a metric the injection never pushed toward its collapse side. Require
+   the directional check — and publish the direction, not just the binary crossing — for every
+   metric separately. Of instrument 019's eight pairs, two are demonstrated valid, one is valid
+   under a single recipe, and one has no valid control at all.
+7. **Chase a retraction into every surface.** README, page copy, results note *and* the machine
+   metadata. The gauntlet's re-check pass exists because the first pass at applying its conditions
+   missed the metadata field, which is exactly the surface a downstream reader may see alone.
+8. **A verdict is only good for the state it ran on — so re-check after applying conditions.**
+   Two short re-check passes (one per role) on the edited state, both recorded, cost little and
+   caught a live defect.
