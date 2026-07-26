@@ -126,3 +126,61 @@ misled in both directions while its prose record is correct. It fails if:
   finding is dishonesty, not channel — a different and stronger claim this work does not make).
 
 Each is checked, and the check is on the work's face.
+
+---
+
+## Addendum, 2026-07-26, after the numbers were computed and before the work was written
+
+*Dated because it changes what this work claims. The questions above were fixed first and were all
+answered; then the conductor read the register's own **prose** record — `messungen/register.md`
+§"[withheld source]: zurückgehalten" and `messungen/VERFAHRENSNOTIZEN.md` in full — and three of
+the six findings turned out to be **already documented there, correctly, and in more detail than
+this audit could reach from the records alone.***
+
+**Withdrawn.** The framing this session started with — that the register "understates its largest
+exclusion by four orders of magnitude" — is withdrawn as an implication of carelessness. It is
+wrong. The single rejection line is a **deliberate collective entry**, and the reason is in the
+register's own text: the withheld source's terms forbid storing significant portions of its
+content, so the per-record identifiers were **deleted** from the rejection and origin tables, and
+the register says outright that it intervened in an append-only file and why. There is a rule
+stated there that this practice will be quoting for a long time: *"Wir veröffentlichen es nicht,
+wir behalten es nur" ist keine Rechtsposition* — "we don't publish it, we only keep it" is not a
+legal position.
+
+**What replaces it, and what the work is now about.** The finding is not dishonesty and not
+sloppiness. It is a **channel** finding, and it runs in both directions:
+
+- the *machine-readable* surfaces mislead a pipeline in at least three places — the withheld volume
+  is derivable but nowhere declared; twenty records are listed as rejected that are in the corpus;
+  four hundred rows sit in the failure column that a documented defect put there (a HEAD request
+  answered 404 where GET answered 200), unmarked as such;
+- the *prose* record is right about all three, in detail, with dates and rules — and is unreachable
+  to a pipeline;
+- and in one place the direction **reverses**: a prose note states that 53 refusals came all from
+  one host, while the register's own ledger shows those 53 split across five hosts, 48 / 2 / 1 / 1 /
+  1. There the machine-readable surface is right and the prose is wrong.
+
+The core claim of the work is therefore about what travels between practices: **a receiving practice
+inherits the files, not the honesty.** Corrections that live only in prose do not travel to a
+reader that reads records — and one of these gaps is **irreducible**, because a register may not log
+what it is not allowed to store.
+
+**Fairness obligations added to the method, binding on the shipped state.** (i) The register's
+prose corrections must be quoted **on the work's face**, not relegated to a footnote — the work's
+subject is precisely that they exist and are unreachable. (ii) The register's age must be stated
+wherever a share is stated: it began harvesting on 2026-07-26 and says so itself. (iii) The
+reversal (the 53/5-host note) must be given the same prominence as the findings that run the other
+way. (iv) No claim about what any third party's terms of use permit or forbid: this session did not
+retrieve any terms page, and what it reports is only that the register's record states a legal
+reason and cites where it read it.
+
+**Two assertions added** (the numbers were computed before the addendum was written, from the same
+frozen files): the retained-identifier count in the resolution ledger, and the host split of the 53
+refusals against the prose claim.
+
+**Naming.** Two of the sources involved are a data-competition platform and a model-hosting
+platform whose corporate names this practice's constitution does not permit in its prose. They are
+called **"the withheld source"** and **"the model-hosting source"** throughout. Their identifiers
+survive verbatim inside the frozen upstream records (`quelle` keys, URL hosts) and inside quoted
+upstream sentences, where an elision is marked `[the withheld source]`. This is disclosed on the
+work's face rather than hidden.

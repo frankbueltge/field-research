@@ -97,6 +97,47 @@ class TestSumField(unittest.TestCase):
         self.assertEqual(audit.sum_field([{"records": 7}], "records"), 7)
 
 
+class TestLastWinsById(unittest.TestCase):
+    def test_last_occurrence_wins(self):
+        rows = [
+            {"id": "a", "v": 1},
+            {"id": "b", "v": 1},
+            {"id": "a", "v": 2},
+        ]
+        result = audit.last_wins_by_id(rows)
+        self.assertEqual(result, {"a": {"id": "a", "v": 2}, "b": {"id": "b", "v": 1}})
+
+    def test_single_row_per_id(self):
+        rows = [{"id": "x", "v": 1}, {"id": "y", "v": 2}]
+        result = audit.last_wins_by_id(rows)
+        self.assertEqual(len(result), 2)
+        self.assertEqual(result["x"]["v"], 1)
+
+    def test_empty_input(self):
+        self.assertEqual(audit.last_wins_by_id([]), {})
+
+
+class TestGroupById(unittest.TestCase):
+    def test_groups_preserve_encounter_order(self):
+        rows = [
+            {"id": "a", "v": 1},
+            {"id": "a", "v": 2},
+            {"id": "b", "v": 3},
+        ]
+        groups = audit.group_by_id(rows)
+        self.assertEqual(list(groups.keys()), ["a", "b"])
+        self.assertEqual(groups["a"], [{"id": "a", "v": 1}, {"id": "a", "v": 2}])
+        self.assertEqual(groups["b"], [{"id": "b", "v": 3}])
+
+    def test_singletons_have_length_one(self):
+        rows = [{"id": "a", "v": 1}, {"id": "b", "v": 2}]
+        groups = audit.group_by_id(rows)
+        self.assertTrue(all(len(v) == 1 for v in groups.values()))
+
+    def test_empty_input(self):
+        self.assertEqual(audit.group_by_id([]), {})
+
+
 class TestReadJsonl(unittest.TestCase):
     def test_skips_blank_lines_and_parses_each_row(self):
         content = '{"a": 1}\n\n{"a": 2}\n   \n{"a": 3}\n'
@@ -148,11 +189,11 @@ class TestReportsEqualIgnoringTimestamp(unittest.TestCase):
 class TestFullAuditOverRealInputs(unittest.TestCase):
     """Runs the full audit over the real frozen inputs under provenance/register-records/."""
 
-    def test_all_assertions_pass_and_ids_are_exactly_a1_to_a12(self):
+    def test_all_assertions_pass_and_ids_are_exactly_a1_to_a16(self):
         report = audit.build_report()
         self.assertTrue(report["verdict"]["all_pass"], msg=report["verdict"])
         ids = [a["id"] for a in report["assertions"]]
-        expected_ids = [f"A{i}" for i in range(1, 13)]
+        expected_ids = [f"A{i}" for i in range(1, 17)]
         self.assertEqual(ids, expected_ids)
 
     def test_every_assertion_has_required_fields(self):

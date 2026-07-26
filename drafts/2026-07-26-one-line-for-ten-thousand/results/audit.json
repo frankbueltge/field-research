@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-07-26T23:45:18Z",
+  "generated_utc": "2026-07-26T23:49:58Z",
   "upstream": {
     "commit": "a7024008ec337118b2aeebb87065ded83ed23413",
     "tag": "snapshot-2026-07-26",
@@ -475,13 +475,179 @@
       "alternative_reading": "The files were present as inputs to the build, and the withheld source's 10056 records were rejected one by one during the build.",
       "why_ruled_out": "A per-record rejection of 10056 records would require the snapshot's abgelehnt_gesamt counter to be at least 10056. It is 417 (A4/A6), which rules out the alternative reading.",
       "abgelehnt_gesamt": 417,
-      "withheld_records": 10056
+      "withheld_records": 10056,
+      "corroborating_observation": "The snapshot manifest's own `assets` array (a directly readable field, not an inference) lists the packaged run file for arcgis (both runs), datacite, and huggingface, but lists no file for either kaggle run, although both kaggle run manifests declare their own `datei`/`sha256` for exactly such a file. kaggle run files listed among snapshot assets: 0 of 2.",
+      "run_file_present_in_snapshot_assets_by_source": {
+        "arcgis": true,
+        "datacite": true,
+        "huggingface": true,
+        "kaggle": false
+      }
+    },
+    {
+      "id": "A13",
+      "question": "In the resolution ledger, how many rows and how many unique ids does each source contribute, and what share of each does the withheld source account for?",
+      "computed": {
+        "rows_by_source": {
+          "datacite": 200,
+          "huggingface": 20,
+          "kaggle": 850
+        },
+        "unique_ids_by_source": {
+          "datacite": 200,
+          "huggingface": 20,
+          "kaggle": 450
+        },
+        "withheld_share_of_rows": 0.794393,
+        "withheld_share_of_unique_ids": 0.671642
+      },
+      "expected": {
+        "rows_by_source": {
+          "kaggle": 850,
+          "datacite": 200,
+          "huggingface": 20
+        },
+        "unique_ids_by_source": {
+          "kaggle": 450,
+          "datacite": 200,
+          "huggingface": 20
+        },
+        "withheld_share_of_rows": 0.794393,
+        "withheld_share_of_unique_ids": 0.671642
+      },
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/aufloesungen.jsonl"
+      ],
+      "kind": "observed"
+    },
+    {
+      "id": "A14",
+      "question": "Reducing the resolution ledger to one row per id (last occurrence in file order wins, matching the upstream builder's own reduction), and restricting to the non-withheld sources (`datacite`, `huggingface`): how many ids are there, and how many have `ok` true? Do these equal the snapshot's `aufgeloest_versucht` and `aufgeloest_bestaetigt` counters?",
+      "computed": {
+        "non_withheld_ids": 220,
+        "non_withheld_ok": 164,
+        "withheld_last_wins_ok": 450
+      },
+      "expected": {
+        "non_withheld_ids": 220,
+        "non_withheld_ok": 164,
+        "withheld_last_wins_ok": 450
+      },
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/aufloesungen.jsonl",
+        "provenance/register-records/snapshot-2026-07-26.manifest.json"
+      ],
+      "kind": "observed",
+      "note": "The non-withheld reduction reproduces the snapshot's own aufgeloest_versucht/aufgeloest_bestaetigt counters exactly. This makes A12's inference near-direct: under the identical last-wins reduction, 450 withheld-source ids hold a confirmed access route, and none of the 450 contributes to either published counter."
+    },
+    {
+      "id": "A15",
+      "question": "Which resolution-ledger ids appear more than once, from which source, what is the maximum repeat count, and, in chronological order by `datum`, what pattern of `(http_status, ok)` do the repeated ids show?",
+      "computed": {
+        "repeated_ids": 400,
+        "repeated_sources": [
+          "kaggle"
+        ],
+        "max_repeat_count": 2,
+        "forward_pattern_count": 400,
+        "reverse_pattern_count": 0,
+        "other_pattern_count": 0,
+        "ids_where_file_order_differs_from_datum_order": 0
+      },
+      "expected": {
+        "repeated_ids": 400,
+        "repeated_sources": [
+          "kaggle"
+        ],
+        "max_repeat_count": 2,
+        "forward_pattern_count": 400,
+        "reverse_pattern_count": 0,
+        "other_pattern_count": 0,
+        "ids_where_file_order_differs_from_datum_order": 0
+      },
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/aufloesungen.jsonl"
+      ],
+      "kind": "observed",
+      "forward_pattern": "[(404, false), (200, true)]",
+      "note": "All 400 repeated ids belong to the withheld source and show the same pattern: an initial 404/false row later followed by a 200/true row, in file order and in chronological (datum) order alike."
+    },
+    {
+      "id": "A16",
+      "question": "Among the resolution-ledger rows where `ok` is not true, how many fall into each of four disjoint classes: (i) rows whose id has another row with `ok` true elsewhere in the ledger; (ii) of the rest, rows with HTTP status 403, and their hosts; (iii) rows carrying a transport-outage marker (`ausfall`, no `http_status`), and their host; (iv) the remaining residue, with its hosts, sources and statuses? Do the four classes sum to the total number of non-ok rows?",
+      "computed": {
+        "failures_total": 456,
+        "class_has_ok_sibling": 400,
+        "class_403": 53,
+        "class_403_hosts": {
+          "www.gbif.org": 48,
+          "data.nhm.ac.uk": 1,
+          "www.researchgate.net": 1,
+          "www.openicpsr.org": 2,
+          "www.checklistbank.org": 1
+        },
+        "class_outage": 1,
+        "class_outage_hosts": [
+          "www.osti.gov"
+        ],
+        "class_residue": 2,
+        "class_residue_hosts": [
+          "www.kaggle.com"
+        ],
+        "class_residue_sources": [
+          "datacite"
+        ],
+        "class_residue_statuses": [
+          404
+        ],
+        "classes_sum": 456,
+        "residue_share_of_failures": 0.004386,
+        "residue_share_of_all_rows": 0.001869
+      },
+      "expected": {
+        "failures_total": 456,
+        "class_has_ok_sibling": 400,
+        "class_403": 53,
+        "class_403_hosts": {
+          "www.gbif.org": 48,
+          "www.openicpsr.org": 2,
+          "data.nhm.ac.uk": 1,
+          "www.researchgate.net": 1,
+          "www.checklistbank.org": 1
+        },
+        "class_outage": 1,
+        "class_outage_hosts": [
+          "www.osti.gov"
+        ],
+        "class_residue": 2,
+        "class_residue_hosts": [
+          "www.kaggle.com"
+        ],
+        "class_residue_sources": [
+          "datacite"
+        ],
+        "class_residue_statuses": [
+          404
+        ],
+        "classes_sum": 456,
+        "residue_share_of_failures": 0.004386,
+        "residue_share_of_all_rows": 0.001869
+      },
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/aufloesungen.jsonl"
+      ],
+      "kind": "observed",
+      "note": "The 56 rows never confirmed anywhere in the ledger (class_403 + class_outage = 54) equal the entry-level unconfirmed count implied by A14 (aufgeloest_versucht - aufgeloest_bestaetigt = 220 - 164 = 56). At this state the register's entire checked-but-not-confirmed column is 53 rows with HTTP status 403, 1 row with a transport outage, and 2 rows with HTTP status 404 reached through DataCite-registered DOIs."
     }
   ],
   "verdict": {
-    "pass_count": 12,
+    "pass_count": 16,
     "fail_count": 0,
-    "total": 12,
+    "total": 16,
     "all_pass": true
   }
 }

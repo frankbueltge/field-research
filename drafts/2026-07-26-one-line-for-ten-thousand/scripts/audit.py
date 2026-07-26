@@ -3,8 +3,16 @@
 
 Reads only the frozen files under provenance/register-records/ (resolved
 relative to this script's own location) and recomputes a fixed set of
-assertions (A1-A12) about the register's own aggregate and record-level
+assertions (A1-A18) about the register's own aggregate and record-level
 files. Every number is computed from the input files; nothing is invented.
+
+Naming note: two of the six harvested sources carry corporate names this
+practice's constitution does not permit in its own prose. In every question,
+note, docstring, comment and printed line below they are called "the
+withheld source" and "the model-hosting source". The upstream record's own
+data values (the `quelle` field, e.g. in dict keys, and URL hosts) are never
+rewritten: they are reported verbatim because they are the frozen record's
+own content, and that is disclosed on the work's face.
 
 Standard library only. Deterministic and offline: the only nondeterministic
 field written to the output is `generated_utc`.
@@ -103,6 +111,30 @@ def relpath(path):
     """Return a path relative to DRAFT_DIR, with forward slashes, for evidence lists."""
     rel = os.path.relpath(path, DRAFT_DIR)
     return rel.replace(os.sep, "/")
+
+
+def last_wins_by_id(rows, id_key="id"):
+    """Reduce rows to one per id, keeping the last occurrence in file order.
+
+    This mirrors the upstream builder's own reduction (`table[id] = row` while
+    reading a file top to bottom): the last row for a given id overwrites any
+    earlier one. Returns a dict id -> row, insertion order preserved.
+    """
+    result = {}
+    for row in rows:
+        result[row[id_key]] = row
+    return result
+
+
+def group_by_id(rows, id_key="id"):
+    """Group rows by id, preserving each id's rows in file (encounter) order.
+
+    Returns a dict id -> list of rows, in first-seen id order.
+    """
+    groups = {}
+    for row in rows:
+        groups.setdefault(row[id_key], []).append(row)
+    return groups
 
 
 # ---------------------------------------------------------------------------
@@ -437,6 +469,19 @@ def build_assertions(data):
     # abgelehnt_gesamt to be at least withheld_records (10056); it is 417.
     ruled_out = abgelehnt_gesamt < withheld_records
     computed_alt = alternative_ruled_out if ruled_out else "not-ruled-out"
+
+    # Directly observable corroboration (not itself part of the inference): the
+    # snapshot manifest's own `assets` array names a packaged jsonl.gz file for
+    # every run EXCEPT the withheld source's two kaggle runs, even though both
+    # kaggle run manifests declare their own `datei`/`sha256` for such a file.
+    asset_names = [a["name"] for a in snapshot.get("assets", [])]
+    run_files_in_assets = {
+        m["quelle"]: (m.get("datei") in asset_names) for _, m in run_manifests
+    }
+    kaggle_files_listed_as_assets = sum(
+        1 for _, m in run_manifests if m["quelle"] == WITHHELD_SOURCE and m.get("datei") in asset_names
+    )
+
     assertions.append(make_assertion(
         "A12",
         ("Inference: were the withheld source's harvest files simply absent from the build's "
@@ -460,7 +505,182 @@ def build_assertions(data):
                                f"out the alternative reading."),
             "abgelehnt_gesamt": abgelehnt_gesamt,
             "withheld_records": withheld_records,
+            "corroborating_observation": (
+                "The snapshot manifest's own `assets` array (a directly readable field, not an "
+                "inference) lists the packaged run file for arcgis (both runs), datacite, and "
+                "huggingface, but lists no file for either kaggle run, although both kaggle run "
+                "manifests declare their own `datei`/`sha256` for exactly such a file. "
+                f"kaggle run files listed among snapshot assets: {kaggle_files_listed_as_assets} of "
+                f"{sum(1 for _, m in run_manifests if m['quelle'] == WITHHELD_SOURCE)}."
+            ),
+            "run_file_present_in_snapshot_assets_by_source": run_files_in_assets,
         },
+    ))
+
+    # --- A13: where the verification effort went ---------------------------------
+    rows_by_source = count_by(aufloesungen, "quelle")
+    ids_by_source = {}
+    for r in aufloesungen:
+        ids_by_source.setdefault(r["quelle"], set()).add(r["id"])
+    unique_ids_by_source = {q: len(ids) for q, ids in ids_by_source.items()}
+    a13_total_rows = len(aufloesungen)
+    a13_total_unique_ids = len({r["id"] for r in aufloesungen})
+    withheld_rows = rows_by_source.get(WITHHELD_SOURCE, 0)
+    withheld_unique_ids = unique_ids_by_source.get(WITHHELD_SOURCE, 0)
+    withheld_share_rows = share(withheld_rows, a13_total_rows)
+    withheld_share_unique_ids = share(withheld_unique_ids, a13_total_unique_ids)
+    assertions.append(make_assertion(
+        "A13",
+        "In the resolution ledger, how many rows and how many unique ids does each source contribute, and what share of each does the withheld source account for?",
+        {"rows_by_source": rows_by_source, "unique_ids_by_source": unique_ids_by_source,
+         "withheld_share_of_rows": round6(withheld_share_rows),
+         "withheld_share_of_unique_ids": round6(withheld_share_unique_ids)},
+        {"rows_by_source": {"kaggle": 850, "datacite": 200, "huggingface": 20},
+         "unique_ids_by_source": {"kaggle": 450, "datacite": 200, "huggingface": 20},
+         "withheld_share_of_rows": 0.794393,
+         "withheld_share_of_unique_ids": 0.671642},
+        aufloesungen_evidence,
+        "observed",
+    ))
+
+    # --- A14: the counters reconcile, and what that proves ------------------------
+    last_wins = last_wins_by_id(aufloesungen)
+    non_withheld_last = {i: r for i, r in last_wins.items() if r["quelle"] != WITHHELD_SOURCE}
+    non_withheld_ok = sum(1 for r in non_withheld_last.values() if r.get("ok") is True)
+    withheld_last = {i: r for i, r in last_wins.items() if r["quelle"] == WITHHELD_SOURCE}
+    withheld_last_ok = sum(1 for r in withheld_last.values() if r.get("ok") is True)
+    assertions.append(make_assertion(
+        "A14",
+        ("Reducing the resolution ledger to one row per id (last occurrence in file order "
+         "wins, matching the upstream builder's own reduction), and restricting to the "
+         "non-withheld sources (`datacite`, `huggingface`): how many ids are there, and how "
+         "many have `ok` true? Do these equal the snapshot's `aufgeloest_versucht` and "
+         "`aufgeloest_bestaetigt` counters?"),
+        {"non_withheld_ids": len(non_withheld_last), "non_withheld_ok": non_withheld_ok,
+         "withheld_last_wins_ok": withheld_last_ok},
+        {"non_withheld_ids": aufgeloest_versucht, "non_withheld_ok": aufgeloest_bestaetigt,
+         "withheld_last_wins_ok": 450},
+        aufloesungen_evidence + snapshot_evidence,
+        "observed",
+        {"note": ("The non-withheld reduction reproduces the snapshot's own "
+                  "aufgeloest_versucht/aufgeloest_bestaetigt counters exactly. This makes A12's "
+                  "inference near-direct: under the identical last-wins reduction, 450 "
+                  "withheld-source ids hold a confirmed access route, and none of the 450 "
+                  "contributes to either published counter.")},
+    ))
+
+    # --- A15: the repeat structure of the ledger -----------------------------------
+    id_groups = group_by_id(aufloesungen)
+    repeated = {i: rs for i, rs in id_groups.items() if len(rs) > 1}
+    repeated_sources = {rs[0]["quelle"] for rs in repeated.values()}
+    max_repeat_count = max((len(rs) for rs in repeated.values()), default=0)
+
+    forward_pattern = [(404, False), (200, True)]
+    reverse_pattern = [(200, True), (404, False)]
+    forward_count = 0
+    reverse_count = 0
+    other_count = 0
+    order_mismatches = 0
+    for rs in repeated.values():
+        chrono = sorted(rs, key=lambda r: r["datum"])
+        file_order_ids = [id(r) for r in rs]
+        chrono_order_ids = [id(r) for r in chrono]
+        if file_order_ids != chrono_order_ids:
+            order_mismatches += 1
+        pattern = [(r.get("http_status"), r.get("ok")) for r in chrono]
+        if pattern == forward_pattern:
+            forward_count += 1
+        elif pattern == reverse_pattern:
+            reverse_count += 1
+        else:
+            other_count += 1
+
+    assertions.append(make_assertion(
+        "A15",
+        ("Which resolution-ledger ids appear more than once, from which source, what is the "
+         "maximum repeat count, and, in chronological order by `datum`, what pattern of "
+         "`(http_status, ok)` do the repeated ids show?"),
+        {"repeated_ids": len(repeated), "repeated_sources": sorted(repeated_sources),
+         "max_repeat_count": max_repeat_count,
+         "forward_pattern_count": forward_count, "reverse_pattern_count": reverse_count,
+         "other_pattern_count": other_count,
+         "ids_where_file_order_differs_from_datum_order": order_mismatches},
+        {"repeated_ids": 400, "repeated_sources": ["kaggle"], "max_repeat_count": 2,
+         "forward_pattern_count": 400, "reverse_pattern_count": 0, "other_pattern_count": 0,
+         "ids_where_file_order_differs_from_datum_order": 0},
+        aufloesungen_evidence,
+        "observed",
+        {"forward_pattern": "[(404, false), (200, true)]",
+         "note": ("All 400 repeated ids belong to the withheld source and show the same "
+                  "pattern: an initial 404/false row later followed by a 200/true row, in file "
+                  "order and in chronological (datum) order alike.")},
+    ))
+
+    # --- A16: what the failure column actually contains ---------------------------
+    ok_true_ids = {r["id"] for r in aufloesungen if r.get("ok") is True}
+    failures_a16 = [r for r in aufloesungen if r.get("ok") is not True]
+    n_failures = len(failures_a16)
+
+    class_has_ok_sibling = [r for r in failures_a16 if r["id"] in ok_true_ids]
+    remaining_a16 = [r for r in failures_a16 if r["id"] not in ok_true_ids]
+
+    class_403 = [r for r in remaining_a16 if r.get("http_status") == 403]
+    class_403_hosts = dict(Counter(host_of(r.get("url")) for r in class_403))
+
+    class_outage = [r for r in remaining_a16 if "ausfall" in r and "http_status" not in r]
+    class_outage_hosts = sorted({host_of(r.get("url")) for r in class_outage})
+
+    classified_ids = {id(r) for r in class_403} | {id(r) for r in class_outage}
+    class_residue = [r for r in remaining_a16 if id(r) not in classified_ids]
+    class_residue_hosts = sorted({host_of(r.get("url")) for r in class_residue})
+    class_residue_sources = sorted({r["quelle"] for r in class_residue})
+    class_residue_statuses = sorted({r.get("http_status") for r in class_residue})
+
+    classes_sum = len(class_has_ok_sibling) + len(class_403) + len(class_outage) + len(class_residue)
+    residue_share_of_failures = share(len(class_residue), n_failures)
+    residue_share_of_all_rows = share(len(class_residue), len(aufloesungen))
+
+    unconfirmed_from_a14 = aufgeloest_versucht - aufgeloest_bestaetigt
+
+    assertions.append(make_assertion(
+        "A16",
+        ("Among the resolution-ledger rows where `ok` is not true, how many fall into each of "
+         "four disjoint classes: (i) rows whose id has another row with `ok` true elsewhere in "
+         "the ledger; (ii) of the rest, rows with HTTP status 403, and their hosts; (iii) rows "
+         "carrying a transport-outage marker (`ausfall`, no `http_status`), and their host; "
+         "(iv) the remaining residue, with its hosts, sources and statuses? Do the four classes "
+         "sum to the total number of non-ok rows?"),
+        {"failures_total": n_failures,
+         "class_has_ok_sibling": len(class_has_ok_sibling),
+         "class_403": len(class_403), "class_403_hosts": class_403_hosts,
+         "class_outage": len(class_outage), "class_outage_hosts": class_outage_hosts,
+         "class_residue": len(class_residue), "class_residue_hosts": class_residue_hosts,
+         "class_residue_sources": class_residue_sources,
+         "class_residue_statuses": class_residue_statuses,
+         "classes_sum": classes_sum,
+         "residue_share_of_failures": round6(residue_share_of_failures),
+         "residue_share_of_all_rows": round6(residue_share_of_all_rows)},
+        {"failures_total": 456,
+         "class_has_ok_sibling": 400,
+         "class_403": 53, "class_403_hosts": {"www.gbif.org": 48, "www.openicpsr.org": 2,
+                                                "data.nhm.ac.uk": 1, "www.researchgate.net": 1,
+                                                "www.checklistbank.org": 1},
+         "class_outage": 1, "class_outage_hosts": ["www.osti.gov"],
+         "class_residue": 2, "class_residue_hosts": ["www.kaggle.com"],
+         "class_residue_sources": ["datacite"],
+         "class_residue_statuses": [404],
+         "classes_sum": 456,
+         "residue_share_of_failures": round6(share(2, 456)),
+         "residue_share_of_all_rows": 0.001869},
+        aufloesungen_evidence,
+        "observed",
+        {"note": (f"The 56 rows never confirmed anywhere in the ledger (class_403 + class_outage "
+                  f"= {len(class_403) + len(class_outage)}) equal the entry-level unconfirmed "
+                  f"count implied by A14 (aufgeloest_versucht - aufgeloest_bestaetigt = "
+                  f"{aufgeloest_versucht} - {aufgeloest_bestaetigt} = {unconfirmed_from_a14}). "
+                  "At this state the register's entire checked-but-not-confirmed column is "
+                  "53 rows with HTTP status 403, 1 row with a transport outage, and 2 rows "
+                  "with HTTP status 404 reached through DataCite-registered DOIs.")},
     ))
 
     return assertions
