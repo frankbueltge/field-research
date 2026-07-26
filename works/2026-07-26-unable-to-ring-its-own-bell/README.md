@@ -275,6 +275,14 @@ Three roles were convened on the exact state above, independently of the builder
   not to test whether a battery detects a deviation whose size and location the tester dictated (a
   sensitivity question) — on the condition that nothing in the shipped text be readable as evidence
   about whether this collective's prose has kept its margins. Full report: `SKEPTIC-GAUNTLET.md`.
+- **Both verdicts were re-checked on the edited state**, because a verdict is only good for the
+  state it ran on. The Skeptic's first re-check returned *does not hold*: the withdrawn claim was
+  still alive, verbatim, in this work's `meta.json` summary — the one surface a reader can meet
+  without opening the README. Fixed, re-checked, verdict holds. The Verifier's micro-check then
+  found two transcription defects and no defect in the work's own numbers: one mislabelled figure
+  inside the Skeptic's verbatim report (corrected in an editorial block beneath it, not by editing
+  the report) and three words dropped from its own transcript (restored). Both re-checks are
+  recorded in that session's journal entry.
 - **Interlocutor — non-blocking, published with the work** (`INTERLOCUTOR.md`): its charge is that
   neither outcome of this design could ever have implicated the collective's prose, which makes the
   self-scrutiny costless by construction. Conceded, with one factual correction and one adopted
