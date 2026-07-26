@@ -38,6 +38,15 @@ MANIFESTE_DIR = os.path.join(REGISTER_DIR, "manifeste")
 RESULTS_PATH = os.path.join(DRAFT_DIR, "results", "audit.json")
 
 WITHHELD_SOURCE = "kaggle"
+MODEL_HOSTING_SOURCE = "huggingface"
+
+# Generic labels used in every question/note/comment/printed string, per the
+# naming rule: the two sources' corporate names are never used in this
+# script's prose. The constants above hold the upstream `quelle` values,
+# which are reported verbatim wherever they appear as data (dict keys, set
+# members, etc.) because they are the frozen record's own content.
+WITHHELD_LABEL = "the withheld source"
+MODEL_HOSTING_LABEL = "the model-hosting source"
 
 UPSTREAM_COMMIT = "a7024008ec337118b2aeebb87065ded83ed23413"
 UPSTREAM_TAG = "snapshot-2026-07-26"
@@ -254,7 +263,7 @@ def build_assertions(data):
     withheld_share = share(withheld_records, a1_total)
     assertions.append(make_assertion(
         "A2",
-        f"How many records did the withheld source (`{WITHHELD_SOURCE}`) contribute to the harvest, and what share of A1 is that?",
+        f"How many records did {WITHHELD_LABEL} contribute to the harvest, and what share of A1 is that?",
         {"withheld_records": withheld_records, "share_of_total": round6(withheld_share)},
         {"withheld_records": 10056, "share_of_total": 0.338974},
         manifeste_evidence,
@@ -296,7 +305,7 @@ def build_assertions(data):
     withheld_rejection_lines = sum(1 for r in ablehnungen if r["quelle"] == WITHHELD_SOURCE)
     assertions.append(make_assertion(
         "A5",
-        f"How many rejection-register lines name the withheld source (`{WITHHELD_SOURCE}`), against how many records of that source were harvested (A2)?",
+        f"How many rejection-register lines name {WITHHELD_LABEL}, against how many records of that source were harvested (A2)?",
         {"rejection_lines": withheld_rejection_lines, "harvested_records": withheld_records,
          "ratio": f"{withheld_rejection_lines} : {withheld_records}"},
         {"rejection_lines": 1, "harvested_records": 10056, "ratio": "1 : 10056"},
@@ -318,28 +327,30 @@ def build_assertions(data):
     ))
 
     # --- A7: stale rejections (directly observable) ---------------------------
-    rejected_hf_ids = {r["quell_id"] for r in ablehnungen if r["quelle"] == "huggingface"}
-    confirmed_hf_ids = {
-        r["quell_id"] for r in aufloesungen
-        if r.get("quelle") == "huggingface" and r.get("ok") is True
+    rejected_model_hosting_ids = {
+        r["quell_id"] for r in ablehnungen if r["quelle"] == MODEL_HOSTING_SOURCE
     }
-    stale_intersection = rejected_hf_ids & confirmed_hf_ids
+    confirmed_model_hosting_ids = {
+        r["quell_id"] for r in aufloesungen
+        if r.get("quelle") == MODEL_HOSTING_SOURCE and r.get("ok") is True
+    }
+    stale_intersection = rejected_model_hosting_ids & confirmed_model_hosting_ids
     remainder = a6_excess - len(stale_intersection)
     assertions.append(make_assertion(
         "A7",
-        "Of the `huggingface` records that appear in the rejection register, how many also have a confirmed (ok=true) resolved access route in the resolution ledger?",
-        {"rejected_huggingface_ids": len(rejected_hf_ids),
-         "confirmed_huggingface_ids": len(confirmed_hf_ids),
+        f"Of {MODEL_HOSTING_LABEL}'s records that appear in the rejection register, how many also have a confirmed (ok=true) resolved access route in the resolution ledger?",
+        {"rejected_model_hosting_ids": len(rejected_model_hosting_ids),
+         "confirmed_model_hosting_ids": len(confirmed_model_hosting_ids),
          "intersection": len(stale_intersection),
          "excess_remainder_after_intersection": remainder},
-        {"rejected_huggingface_ids": 300, "confirmed_huggingface_ids": 20, "intersection": 20,
+        {"rejected_model_hosting_ids": 300, "confirmed_model_hosting_ids": 20, "intersection": 20,
          "excess_remainder_after_intersection": 1},
         ablehnungen_evidence + aufloesungen_evidence,
         "observed",
         {"note": ("The intersection (20) is directly observable from the two frozen files. "
                   "The remainder (A6 excess 21 minus this intersection 20 = 1) is a separate, "
-                  "inference-labelled reading: it identifies the remainder with the single "
-                  "withheld-source rejection line seen in A5. See A12 for the inference basis.")},
+                  f"inference-labelled reading: it identifies the remainder with the single "
+                  f"{WITHHELD_LABEL}'s rejection line seen in A5. See A12 for the inference basis.")},
     ))
 
     # --- A8: the subset that satisfies the evidence rule ----------------------
@@ -458,9 +469,10 @@ def build_assertions(data):
         manifeste_evidence,
         "observed",
         {"per_run": per_run_detail,
-         "note": ("Two of the six run manifests (huggingface, and both kaggle runs) do not "
-                  "carry a `gesamt_gemeldet_im_fenster` field at all, so no ratio can be computed "
-                  "for them; this is reported as `null`, not zero.")},
+         "note": (f"Three of the six run manifests ({MODEL_HOSTING_LABEL}'s run, and both of "
+                  f"{WITHHELD_LABEL}'s runs) do not carry a `gesamt_gemeldet_im_fenster` field "
+                  "at all, so no ratio can be computed for them; this is reported as `null`, "
+                  "not zero.")},
     ))
 
     # --- A12: the withheld-harvest inference --------------------------------------
@@ -472,13 +484,13 @@ def build_assertions(data):
 
     # Directly observable corroboration (not itself part of the inference): the
     # snapshot manifest's own `assets` array names a packaged jsonl.gz file for
-    # every run EXCEPT the withheld source's two kaggle runs, even though both
-    # kaggle run manifests declare their own `datei`/`sha256` for such a file.
+    # every run EXCEPT the withheld source's two runs, even though both of its
+    # run manifests declare their own `datei`/`sha256` for such a file.
     asset_names = [a["name"] for a in snapshot.get("assets", [])]
     run_files_in_assets = {
         m["quelle"]: (m.get("datei") in asset_names) for _, m in run_manifests
     }
-    kaggle_files_listed_as_assets = sum(
+    withheld_files_listed_as_assets = sum(
         1 for _, m in run_manifests if m["quelle"] == WITHHELD_SOURCE and m.get("datei") in asset_names
     )
 
@@ -492,13 +504,13 @@ def build_assertions(data):
         snapshot_evidence + ablehnungen_evidence + manifeste_evidence,
         "inference",
         {
-            "basis": ("A3 shows fundstellen (19610) equals the harvest total of all sources "
-                      "except the withheld one (kaggle), exactly, with zero difference. "
-                      "This is consistent with the withheld source's harvest files having been "
-                      "absent from the snapshot build's inputs entirely."),
-            "alternative_reading": ("The files were present as inputs to the build, and the "
-                                     "withheld source's 10056 records were rejected one by one "
-                                     "during the build."),
+            "basis": (f"A3 shows fundstellen (19610) equals the harvest total of all sources "
+                      f"except the withheld one, exactly, with zero difference. This is "
+                      f"consistent with {WITHHELD_LABEL}'s harvest files having been absent "
+                      "from the snapshot build's inputs entirely."),
+            "alternative_reading": (f"The files were present as inputs to the build, and "
+                                     f"{WITHHELD_LABEL}'s {withheld_records} records were "
+                                     "rejected one by one during the build."),
             "why_ruled_out": (f"A per-record rejection of {withheld_records} records would "
                                f"require the snapshot's abgelehnt_gesamt counter to be at least "
                                f"{withheld_records}. It is {abgelehnt_gesamt} (A4/A6), which rules "
@@ -507,10 +519,12 @@ def build_assertions(data):
             "withheld_records": withheld_records,
             "corroborating_observation": (
                 "The snapshot manifest's own `assets` array (a directly readable field, not an "
-                "inference) lists the packaged run file for arcgis (both runs), datacite, and "
-                "huggingface, but lists no file for either kaggle run, although both kaggle run "
-                "manifests declare their own `datei`/`sha256` for exactly such a file. "
-                f"kaggle run files listed among snapshot assets: {kaggle_files_listed_as_assets} of "
+                "inference) lists the packaged run file for arcgis (both runs), DataCite, and "
+                f"{MODEL_HOSTING_LABEL}, but lists no file for either of {WITHHELD_LABEL}'s "
+                f"two runs, although both of its run manifests declare their own "
+                "`datei`/`sha256` for exactly such a file. "
+                f"{WITHHELD_LABEL}'s run files listed among snapshot assets: "
+                f"{withheld_files_listed_as_assets} of "
                 f"{sum(1 for _, m in run_manifests if m['quelle'] == WITHHELD_SOURCE)}."
             ),
             "run_file_present_in_snapshot_assets_by_source": run_files_in_assets,
@@ -551,11 +565,11 @@ def build_assertions(data):
     withheld_last_ok = sum(1 for r in withheld_last.values() if r.get("ok") is True)
     assertions.append(make_assertion(
         "A14",
-        ("Reducing the resolution ledger to one row per id (last occurrence in file order "
-         "wins, matching the upstream builder's own reduction), and restricting to the "
-         "non-withheld sources (`datacite`, `huggingface`): how many ids are there, and how "
-         "many have `ok` true? Do these equal the snapshot's `aufgeloest_versucht` and "
-         "`aufgeloest_bestaetigt` counters?"),
+        (f"Reducing the resolution ledger to one row per id (last occurrence in file order "
+         f"wins, matching the upstream builder's own reduction), and restricting to the "
+         f"non-withheld sources (DataCite and {MODEL_HOSTING_LABEL}): how many ids are there, "
+         "and how many have `ok` true? Do these equal the snapshot's `aufgeloest_versucht` "
+         "and `aufgeloest_bestaetigt` counters?"),
         {"non_withheld_ids": len(non_withheld_last), "non_withheld_ok": non_withheld_ok,
          "withheld_last_wins_ok": withheld_last_ok},
         {"non_withheld_ids": aufgeloest_versucht, "non_withheld_ok": aufgeloest_bestaetigt,
@@ -681,6 +695,86 @@ def build_assertions(data):
                   "At this state the register's entire checked-but-not-confirmed column is "
                   "53 rows with HTTP status 403, 1 row with a transport outage, and 2 rows "
                   "with HTTP status 404 reached through DataCite-registered DOIs.")},
+    ))
+
+    # --- A17: withheld-source identifiers still present in the resolution ledger --
+    withheld_ledger_rows = [r for r in aufloesungen if r["quelle"] == WITHHELD_SOURCE]
+    a17_rows = len(withheld_ledger_rows)
+    a17_distinct_quell_id = len({r["quell_id"] for r in withheld_ledger_rows})
+    a17_distinct_url = len({r["url"] for r in withheld_ledger_rows})
+
+    ledger_key_union = set()
+    for r in aufloesungen:
+        ledger_key_union |= set(r.keys())
+    ledger_key_union = sorted(ledger_key_union)
+
+    descriptive_field_candidates = {
+        "title", "titel", "description", "beschreibung", "name", "label",
+        "summary", "abstract", "tags", "keywords", "lizenz", "license",
+    }
+    descriptive_fields_present = sorted(set(ledger_key_union) & descriptive_field_candidates)
+
+    assertions.append(make_assertion(
+        "A17",
+        (f"How many resolution-ledger rows, distinct `quell_id` values and distinct `url` "
+         f"values does {WITHHELD_LABEL} still have, and does the ledger's own key set (the "
+         "union of keys across all rows) include any descriptive metadata field (title, "
+         "description, or similar)?"),
+        {"rows": a17_rows, "distinct_quell_id": a17_distinct_quell_id,
+         "distinct_url": a17_distinct_url, "ledger_key_union": ledger_key_union,
+         "descriptive_fields_present": descriptive_fields_present},
+        {"rows": 850, "distinct_quell_id": 450, "distinct_url": 450,
+         "ledger_key_union": ["ausfall", "datum", "finale_url", "http_status", "id", "ok",
+                               "quell_id", "quelle", "url"],
+         "descriptive_fields_present": []},
+        aufloesungen_evidence,
+        "observed",
+        {"note": (f"The resolution ledger retains {WITHHELD_LABEL}'s identifiers (`quell_id`) "
+                  "and URLs, but no descriptive content: the union of keys present anywhere in "
+                  "the ledger is exactly id, quelle, quell_id, url, datum, http_status, "
+                  "finale_url, ok, plus ausfall on the single outage row, and none of those is "
+                  f"a title, description or similar field. The register's prose states that "
+                  f"{WITHHELD_LABEL}'s per-record identifiers were deleted from the rejection "
+                  "register and the origin (`fundstellen`) table. The resolution ledger is a "
+                  "third, separate file, not named among those two, and this is what remains "
+                  "present in it.")},
+    ))
+
+    # --- A18: the host split of the 403 refusals, against the prose claim ----------
+    rows_403 = [r for r in aufloesungen if r.get("http_status") == 403]
+    a18_count = len(rows_403)
+    a18_sources = sorted({r["quelle"] for r in rows_403})
+    host_counter_403 = Counter(host_of(r.get("url")) for r in rows_403)
+    host_dist_403 = dict(host_counter_403)
+    distinct_hosts_403 = len(host_counter_403)
+    top_host, top_host_count = host_counter_403.most_common(1)[0]
+    top_host_share = share(top_host_count, a18_count)
+
+    prose_quote_de = "53 von 200 Zugriffswegen antworteten mit HTTP 403, alle vom selben Host (GBIF)."
+    prose_quote_en = "53 of 200 access routes answered with HTTP 403, all from the same host (GBIF)."
+
+    assertions.append(make_assertion(
+        "A18",
+        ("Among all resolution-ledger rows with `http_status == 403`, what is the distribution "
+         "by URL host, how many distinct hosts appear, and what share of the 403s does the "
+         "largest host account for?"),
+        {"count_403": a18_count, "sources": a18_sources, "host_distribution": host_dist_403,
+         "distinct_hosts": distinct_hosts_403, "top_host": top_host,
+         "top_host_share": round6(top_host_share)},
+        {"count_403": 53, "sources": ["datacite"],
+         "host_distribution": {"www.gbif.org": 48, "www.openicpsr.org": 2,
+                                "data.nhm.ac.uk": 1, "www.researchgate.net": 1,
+                                "www.checklistbank.org": 1},
+         "distinct_hosts": 5, "top_host": "www.gbif.org", "top_host_share": 0.905660},
+        aufloesungen_evidence,
+        "observed",
+        {"note": (f"The register's own procedural note reports these 53 refusals as coming "
+                  f"from a single host, verbatim: \"{prose_quote_de}\" (\"{prose_quote_en}\") "
+                  "The resolution ledger shows five distinct hosts, not one: www.gbif.org (48), "
+                  "www.openicpsr.org (2), data.nhm.ac.uk (1), www.researchgate.net (1), "
+                  "www.checklistbank.org (1). The count of 53 is correct; the host clause is "
+                  "not. In this one instance the machine-readable surface is right and the "
+                  "prose is not.")},
     ))
 
     return assertions

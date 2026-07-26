@@ -189,11 +189,11 @@ class TestReportsEqualIgnoringTimestamp(unittest.TestCase):
 class TestFullAuditOverRealInputs(unittest.TestCase):
     """Runs the full audit over the real frozen inputs under provenance/register-records/."""
 
-    def test_all_assertions_pass_and_ids_are_exactly_a1_to_a16(self):
+    def test_all_assertions_pass_and_ids_are_exactly_a1_to_a18(self):
         report = audit.build_report()
         self.assertTrue(report["verdict"]["all_pass"], msg=report["verdict"])
         ids = [a["id"] for a in report["assertions"]]
-        expected_ids = [f"A{i}" for i in range(1, 17)]
+        expected_ids = [f"A{i}" for i in range(1, 19)]
         self.assertEqual(ids, expected_ids)
 
     def test_every_assertion_has_required_fields(self):
@@ -210,6 +210,25 @@ class TestFullAuditOverRealInputs(unittest.TestCase):
         for entry in report["inputs"]:
             full_path = os.path.join(audit.DRAFT_DIR, entry["path"])
             self.assertEqual(audit.sha256_of_file(full_path), entry["sha256"])
+
+    def test_prose_fields_never_name_the_two_withheld_companies(self):
+        """The naming rule: question/note-style prose must say "the withheld source" and
+        "the model-hosting source", never the two sources' corporate names. Data values
+        (the `quelle` field and URL hosts, carried under computed/expected) are exempt,
+        since those are the frozen record's own content reported verbatim."""
+        report = audit.build_report()
+        banned = ("kaggle", "huggingface", "hugging face")
+        for a in report["assertions"]:
+            for key, value in a.items():
+                if key in ("computed", "expected"):
+                    continue
+                if isinstance(value, str):
+                    lowered = value.lower()
+                    for term in banned:
+                        self.assertNotIn(
+                            term, lowered,
+                            msg=f"assertion {a['id']} field '{key}' names a withheld company: {value!r}",
+                        )
 
 
 if __name__ == "__main__":

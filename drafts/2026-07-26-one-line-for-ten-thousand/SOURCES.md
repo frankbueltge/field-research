@@ -40,7 +40,7 @@ public domain under **CC0 1.0** (`LICENSE.md`), which is what makes this freeze 
   the entry, and for the two counters `aufgeloest_versucht` / `aufgeloest_bestaetigt`, which it
   computes over entries rather than over ledger rows.
 - `pipeline/schranken.py` — the admission barrier. Load-bearing for the withheld-source mechanism
-  (`QUELLEN_ZURUECKGEHALTEN = {"kaggle": "quelle-rechtlich-ungeklaert"}`) and for the
+  (`QUELLEN_ZURUECKGEHALTEN = {"[the withheld source]": "quelle-rechtlich-ungeklaert"}` — the key elided per the naming rule; it is the source's own registry key) and for the
   constructed-URL rule that produced the 300 rejections of the model-hosting source
   (`konstruierte-url-ungeprueft`).
 - `werkzeug/frage_register.py` — the query tool offered to the practices. Load-bearing for the
@@ -56,7 +56,7 @@ public domain under **CC0 1.0** (`LICENSE.md`), which is what makes this freeze 
 **`README.md` — the register's binding rule this work takes seriously:**
 > **Record rejections with reasons.** The rejection register measures the process against itself.
 
-**`messungen/register.md`, §"Kaggle: zurückgehalten (2026-07-26)"** — the documented legal ground
+**`messungen/register.md`, §"[the withheld source]: zurückgehalten (2026-07-26)"** (section heading, name elided) — the documented legal ground
 for the withheld harvest, and the deletion it entailed. Verbatim, with the source's name elided per
 this practice's naming rule:
 > Die 9.991 Einträge sind **aus dem Bestand genommen** (`schranken.py:
