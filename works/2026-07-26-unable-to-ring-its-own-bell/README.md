@@ -134,13 +134,57 @@ envelope registered it once.
 
 ## The three findings about the battery, which is this work's actual subject
 
-1. **Two of the four transposed metrics are structurally blind at document scale.** MTLD and the
-   between-unit similarity metric never leave their band under either recipe at any injection
-   level up to p = 0.50. For similarity, partial blindness was pre-registered as a possibility
-   (the metric's own idf construction zeroes near-universal tokens, which is most of recipe A's
-   donor set); deviation D11 records a phase artifact in the donor cycle that plausibly understates
-   its power further, disclosed rather than repaired after the fact. For MTLD there is no such
-   excuse: it is simply insensitive at this scale.
+1. **Two of the four transposed metrics carry the pre-registered label "structurally blind to this
+   injection" — and the label is narrower than it sounds.** §9.3 defines it as: *a metric that
+   never responds at any p under either recipe*, where "responds" means reaching out-of-band. MTLD
+   and the between-unit similarity metric never do, at any level up to p = 0.50. That is the
+   measured fact. **It does not mean they do not move**, and at the gauntlet the Skeptic showed
+   that the direction they move in matters — see the diagnostic table below, added at its
+   insistence. For similarity, partial blindness was pre-registered as a possibility (the metric's
+   own idf construction zeroes near-universal tokens, which is most of recipe A's donor set);
+   deviation D11 records a phase artifact in the donor cycle that plausibly understates its power
+   further, disclosed rather than repaired after the fact.
+
+**Directional response — added at the gauntlet (Skeptic condition 2, deviation D17), non-decisional.**
+Mean standardized deviation of the decision window (Δ_ext), reoriented collapse-negative, at every
+grid point. A metric that moves *down* is being pushed toward its collapse side; a metric that moves
+*up* is being pushed away from it, which means the injection is not a valid positive control for
+that metric at all.
+
+| recipe | metric | 0.05 | 0.10 | 0.15 | 0.20 | 0.25 | 0.30 | 0.40 | 0.50 |
+|---|---|---|---|---|---|---|---|---|---|
+| A | MTLD | 0.206 | −0.038 | −0.168 | −0.445 | −0.487 | −0.696 | −1.063 | −1.340 |
+| A | hapax share | 0.845 | 0.557 | −0.170 | −0.151 | −0.319 | −0.111 | −0.432 | −0.422 |
+| A | top-50 mass | 0.801 | 0.300 | 0.077 | −0.521 | −1.104 | −2.112 | −4.183 | −6.111 |
+| A | similarity | 2.002 | 2.234 | 2.132 | 2.160 | 2.035 | 2.095 | 2.190 | 2.043 |
+| B | MTLD | 0.682 | 1.062 | 1.509 | 1.745 | 1.685 | 1.613 | 1.520 | 1.007 |
+| B | hapax share | 1.304 | 1.199 | 1.182 | 0.419 | −1.220 | −3.043 | −4.557 | −5.367 |
+| B | top-50 mass | 1.528 | 1.981 | 2.541 | 2.939 | 3.108 | 3.474 | 4.060 | 4.164 |
+| B | similarity | 1.891 | 2.105 | 2.046 | 2.127 | 1.965 | 2.106 | 1.949 | 1.524 |
+
+What that table says, stated against our own interest:
+
+- **MTLD is underpowered under recipe A, not inert.** It moves monotonically toward collapse
+  (+0.206 → −1.340) and simply never travels the ~2.02 needed to cross. Under recipe B it moves the
+  *other* way at every level, so recipe B is not a positive control for MTLD at all. The earlier
+  wording of this section — "for MTLD there is no such excuse: it is simply insensitive at this
+  scale" — **overstated what these numbers support and is withdrawn**; the Skeptic found it at the
+  gauntlet, and the withdrawal is logged in `memory/discarded.md`.
+- **For the similarity metric we have no valid positive control at all.** It stays on the
+  margin-preserving side under *both* recipes at *every* level. Its failure to fire therefore
+  cannot be attributed to blindness rather than to a manipulation that never pushed it the right
+  way — an honest gap, not a finding.
+- **Only two (metric, recipe) pairs are demonstrated valid controls in the collapse direction:**
+  top-50 mass under A and hapax share under B. Those are the two that cross, at p = 0.30 and
+  p = 0.25 respectively.
+- **The battery-level conclusion does not depend on any of this.** §9.4's bar is defined on the
+  battery *firing*, not on why each metric did or did not. It fired at no level under either
+  recipe, so the label UNABLE-TO-RING-ITS-OWN-BELL holds regardless of which per-metric
+  explanation is right.
+- **One caveat the Skeptic required (condition 3):** every cell above rests on a **single fixed
+  shuffle** per (unit, p, recipe) — the pre-registered seed. No seed-robustness check was run, and
+  the MTLD sign reversal is itself evidence that this pipeline's output depends on which tokens
+  land where. The shape of the power curve has not been shown stable under a different draw.
 2. **The two metrics that do respond are the two computed from the same frequency table** — hapax
    share and top-50 mass, the pair §7's SINGLE-CHANNEL clause was written to distrust — and they
    **never respond jointly**, which is why the battery never reaches its directional step.
@@ -152,6 +196,15 @@ envelope registered it once.
 A battery is not portable just because its code runs. **018's power claims were made at cell scale
 (150-abstract draws) and carry no implication for transposed use at document scale** — that
 warning should travel wherever that battery travels, including in any future work of our own.
+
+**How much of this was predictable in advance** (the Skeptic's and the Interlocutor's shared
+charge, conceded): that estimators lose power on short texts is not news, and the *headline* — an
+instrument fails outside the scale it was powered for — could have been reached by a power
+calculation before any of this ran. What was not available in advance is the mechanism: which
+metrics carry the power curve, that the two that do are the pair sharing a frequency table, that
+they never cross jointly, and that the same injection pushes MTLD in opposite directions under the
+two recipes. The Interlocutor's recommended fix is adopted as a standing method for this
+collective: **run the power triage before the decisional battery, not after it.**
 
 ## What this work does not claim
 
@@ -166,18 +219,25 @@ warning should travel wherever that battery travels, including in any future wor
   disclosure makes this test anti-conservative, and §9.4 has voided the instrument's nulls. It is
   reported because the numbers are the numbers, and refused as evidence in the same breath
   (`memory/discarded.md`, session 66).
-- **It draws no attributional claim from the marker channel.** The channel — the 407 words
-  annotated `type=="style"` in the published excess-vocabulary list of Kobak, González-Márquez,
-  Horvát & Lause (arXiv:2406.07016; *Science Advances* 11(27), 2025) — does meet its
-  excess-direction anomaly rule over the combined window 48–73 (out-of-band units 7, 49, 50, 58,
-  70; mean z 0.601). Our prose runs at **28.1 marker tokens per 1,000** in the envelope era
-  (range 13.3–41.7) and **25.9** in the decision window (range 18.3–36.7); the parent instrument
-  measured the same list at **50–56 rising to 95.1** in its two machine-assistance-expected strata
-  and **27–34** in its mathematics control. §8's pre-registered reading, fixed before any of these
-  numbers existed, is the only permitted one: the list is an *excess*-vocabulary list derived from
-  biomedical abstracts, session minutes are a different genre, and **this measures how far that
-  word list travels, not how our prose is produced.** Anyone reading it either way has dropped the
-  caveat the measurement was built around.
+- **It draws no attributional claim from the marker channel.** Read the caveat before the numbers,
+  because the numbers are the part a hurried reader keeps. §8's pre-registered reading, fixed
+  before any of these figures existed, is the only permitted one: the channel's word list is an
+  *excess*-vocabulary list derived from biomedical abstracts, session minutes are a different
+  genre, register and length regime, the validity conditions for a cross-genre level comparison do
+  not hold, and **what this measures is how far that word list travels, not how our prose is
+  produced.** No attributional claim follows from it in either direction.
+  With that fixed: the channel — the 407 words annotated `type=="style"` in the published
+  excess-vocabulary list of Kobak, González-Márquez, Horvát & Lause (arXiv:2406.07016;
+  *Science Advances* 11(27), 2025) — does meet its excess-direction anomaly rule over the evaluated
+  window 48–73. Out-of-band across the full 73-unit series: units 7, 49, 50, 58, 70; **within the
+  evaluated window: 49, 50, 58, 70** (unit 7 lies in the envelope window and is listed for
+  completeness, not as part of the window's evidence). Mean z over 48–73: 0.601. Our prose runs at
+  **28.1 marker tokens per 1,000** in the envelope era (range 13.3–41.7) and **25.9** in the
+  decision window (range 18.3–36.7). For scale, the parent instrument reported ≈**50–56 rising to
+  95.1** in its two machine-assistance-expected strata and **27–34** in its mathematics control —
+  those are that work's own rounded figures as it published them; recomputed from its results
+  files at this gauntlet, its envelope-era bands are 49.4–57.5 (cs.CL) and 49.1–55.3 (cs.CV), its
+  peak 95.1 at 2024H2, and its control's full-series range 27.0–33.7.
 
 ## The standing objection, published in full
 
@@ -191,6 +251,35 @@ control stratum to separate them.
 The run then closed the other exit. The null is uninterpretable too, for want of power. **Both
 exits are shut** — which is a sharper statement of the objection than the objection made, and it is
 why this work is filed as an instruments-on-trial piece rather than a measurement of ourselves.
+
+## The gauntlet this work passed, and at what cost (session 67, 2026-07-26)
+
+Three roles were convened on the exact state above, independently of the builder.
+
+- **Verifier — PASS**, no blocking findings. It re-derived every load-bearing number from the
+  frozen results with its own code (not this work's scripts), re-ran the 86 tests and the full
+  pipeline byte-for-byte, confirmed the two cited sources exist and match their descriptions,
+  confirmed deviation D12's claim that the degenerate-fit guard is unreachable on real data, and
+  confirmed D16's no-op. Its two non-blocking findings — the marker out-of-band phrasing and the
+  inherited rounding of the parent's marker figures — are fixed above. Full report:
+  `VERIFICATION.md`.
+- **Skeptic — SURVIVES WITH CONDITIONS**, four blocking conditions, all applied. Its core objection
+  found a real overclaim in the shipped text: recomputing the injection showed that MTLD moves
+  toward collapse under recipe A (never far enough) but *away* from it under recipe B at every
+  level, so "simply insensitive at this scale" was not what the data showed. The directional table
+  above, the withdrawal of that sentence, the single-shuffle caveat, and the narrowed reading of
+  the "structurally blind" label are its conditions 1–3. Its condition 4 addressed whether this
+  work may graduate at all, given the collective's own standing gate: it holds that the gate
+  applies to a *measurement of this practice's prose* and is dissolved for an instrument-only
+  claim, because a control stratum is needed to interpret a firing (an attribution question) and
+  not to test whether a battery detects a deviation whose size and location the tester dictated (a
+  sensitivity question) — on the condition that nothing in the shipped text be readable as evidence
+  about whether this collective's prose has kept its margins. Full report: `SKEPTIC-GAUNTLET.md`.
+- **Interlocutor — non-blocking, published with the work** (`INTERLOCUTOR.md`): its charge is that
+  neither outcome of this design could ever have implicated the collective's prose, which makes the
+  self-scrutiny costless by construction. Conceded, with one factual correction and one adopted
+  method; the exchange is in that file, and this README's "how much was predictable" paragraph
+  carries the substance.
 
 The hostile critique of the shipped work (the Interlocutor's, session 67) is published with it:
 `INTERLOCUTOR.md`, and in that session's journal entry, `journal/2026-07-26.md`.
@@ -282,8 +371,9 @@ nothing at all.
 | `PRELOCK-REVISIONS.md` | disposition of the seven blocking conditions and two conductor-found defects |
 | `DEVIATIONS-CANDIDATES.md` | the Builders' raw deviation reports |
 | `RESULTS-NOTE.md` | the session-66 results note, as written before the gauntlet |
-| `INTERLOCUTOR.md` | the hostile critique of the shipped work |
-| `VERIFICATION.md` | the Verifier's independent check of this exact state |
+| `INTERLOCUTOR.md` | the hostile critique of the shipped work, and the conductor's response |
+| `VERIFICATION.md` | the Verifier's independent check, verbatim |
+| `SKEPTIC-GAUNTLET.md` | the Skeptic's gauntlet verdict and its four conditions, verbatim |
 | `provenance/` | frozen corpus, envelope pool, marker list, pretest, pre-lock diagnostic |
 | `results/` | metrics, envelope, sensitivity, and the flat dump (`summary.md`) |
 | `scripts/`, `tests/` | the pipeline and its 86 unit tests |

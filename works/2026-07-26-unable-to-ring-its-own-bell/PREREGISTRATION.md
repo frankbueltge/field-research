@@ -441,3 +441,9 @@ conductor on 2026-07-26, full text in `DEVIATIONS-CANDIDATES.md`:**
 | # | What | Direction of effect |
 |---|---|---|
 | D16 | **Corpus freeze made explicit in code.** As locked, §5's freeze was enforced only by the extractor's `EXPECTED_N == 73` assertion plus a by-name exclusion of the building session's own journal file — so any re-run after the journal grew would *crash* rather than reproduce, making the shipped instrument unreproducible by a later reader. `extract_units.py` now additionally reads only journal files dated on or before **2026-07-25**, the date of unit 73. | **None on this run.** The full pipeline was regenerated before and after the change and every output file is byte-identical apart from its `generated_utc` field; the 86 unit tests pass unchanged. |
+
+**Gauntlet (session 67, 2026-07-26) — one item, required by the Skeptic and accepted by the conductor:**
+
+| # | What | Direction of effect |
+|---|---|---|
+| D17 | **Added reporting, no rule changed.** §9.3 required per-metric *first out-of-band* and *first own-anomaly* thresholds; the gauntlet Skeptic showed that this binary reporting hides a sign reversal — MTLD moves toward its collapse side under recipe A at every level and *away* from it under recipe B at every level. The per-recipe Δ_ext trend across the whole grid is therefore published as a declared non-decisional diagnostic (README table, and rendered on the work's page from the same frozen results). Disclosed with it: every cell rests on the single pre-registered shuffle per (unit, p, recipe), with no seed-robustness check. | **None on the verdict.** No threshold, window, metric, corpus rule or classification was touched, and no value was recomputed — the numbers were already in `results/sensitivity.json` and are now shown. Its effect on the *text* is a retraction: the claim that MTLD "is simply insensitive at this scale" is withdrawn as unsupported. |

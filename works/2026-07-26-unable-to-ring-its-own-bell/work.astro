@@ -205,12 +205,13 @@ const outsideWindow = data.real_run_out_of_band_outside_decision_window
       <div class="card">
         <h3>What the metrics show</h3>
         <p>
-          Two of the four metrics &mdash; {data.structurally_blind_metrics.map((n) => data.metrics_meta[n].display).join(' and ')} &mdash; are
-          <strong> structurally blind</strong> to this injection: their band membership does not
-          change under either recipe at any grid point. Top-50 mass and hapax share do move, and
-          each reaches its own anomaly rule at some level under one recipe &mdash; but a single
-          metric reaching its own rule is not the battery reaching step 1 of its verdict procedure,
-          which needs two of four.
+          Two of the four metrics &mdash; {data.structurally_blind_metrics.map((n) => data.metrics_meta[n].display).join(' and ')} &mdash; carry
+          the pre-registered label <strong>structurally blind to this injection</strong>, which is
+          defined narrowly: they never reach out-of-band at any grid point under either recipe. It
+          does not mean they never move. The table below shows where each one goes: read the sign,
+          not just the band. Top-50 mass and hapax share do cross, and each reaches its own anomaly
+          rule at some level under one recipe &mdash; but a single metric reaching its own rule is
+          not the battery reaching step 1 of its verdict procedure, which needs two of four.
         </p>
         <p class="aside">
           The unit lists above count the decision window only. In the real, uninjected run the
@@ -226,6 +227,7 @@ const outsideWindow = data.real_run_out_of_band_outside_decision_window
 
     <section class="firing-summary">
       <h2>Firing summary, both recipes <span class="pre-reg-tag">§9.3, required reporting</span></h2>
+      <div class="table-scroll">
       <table>
         <thead>
           <tr><th>recipe</th><th>battery fires at</th>{metricNames.map((n) => <th>{data.metrics_meta[n].display}: first out-of-band</th>)}</tr>
@@ -243,8 +245,42 @@ const outsideWindow = data.real_run_out_of_band_outside_decision_window
           ))}
         </tbody>
       </table>
+      </div>
       <p class="informativeness-note">
         <strong>{data.informativeness.label}</strong> &mdash; {data.informativeness.note}
+      </p>
+
+      <h2>Which way each metric moves <span class="pre-reg-tag">non-decisional diagnostic, added at the gauntlet (D17)</span></h2>
+      <p class="dir-lede">
+        &Delta;<sub>ext</sub> at every grid point, reoriented collapse-negative: a value moving
+        <strong>down</strong> is being pushed toward the metric's collapse side; a value moving
+        <strong>up</strong> is being pushed away from it, which means the injection is not a valid
+        positive control for that metric. The binary table above hides this; MTLD moves toward
+        collapse under A and away from it under B.
+      </p>
+      <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th>recipe</th><th>metric</th>{data.p_values.slice(1).map((p) => <th>{p.toFixed(2)}</th>)}</tr>
+        </thead>
+        <tbody>
+          {(['A', 'B'] as const).map((r) => metricNames.map((n) => (
+            <tr>
+              <td class="fs-recipe">{r}</td>
+              <td>{data.metrics_meta[n].display}</td>
+              {data.p_keys.slice(1).map((k) => {
+                const v = data.runs[r][k].metrics[n].delta_ext
+                return <td class={v < 0 ? 'dir-down' : 'dir-up'}>{v.toFixed(3)}</td>
+              })}
+            </tr>
+          )))}
+        </tbody>
+      </table>
+      </div>
+      <p class="informativeness-note">
+        Every cell rests on the single pre-registered shuffle per (unit, level, recipe); no
+        seed-robustness check was run, and the shape of these curves has not been shown stable under
+        a different draw.
       </p>
     </section>
 
@@ -483,6 +519,11 @@ const outsideWindow = data.real_run_out_of_band_outside_decision_window
   .ring th { background: #ece6d4; font-weight: 700; }
   .ring .fs-recipe { font-weight: 700; }
   .ring .informativeness-note { font-size: 12.5px; color: var(--rule); margin: 0; }
+  .ring .firing-summary h2 + p, .ring .dir-lede { font-size: 12.5px; color: var(--rule); margin: 0 0 10px; }
+  .ring .firing-summary h2 { margin-top: 20px; }
+  .ring .dir-down { color: var(--band-out); }
+  .ring .dir-up { color: var(--band-in); }
+  .ring .table-scroll { overflow-x: auto; }
 
   .ring .objection {
     border: 1px dashed var(--rule); background: #efe9da; padding: 14px 16px; margin: 0 0 22px; font-size: 13.5px;

@@ -89,6 +89,15 @@ meets its own anomaly rule):
 | top-50 mass | 0.20 / 0.30 | never / never |
 | similarity | never / never | never / never |
 
+> **Annotation, 2026-07-26 (session 67, at the gauntlet).** The sentence immediately below, and in
+> particular its continuation *"For MTLD there is no such excuse: it is simply insensitive at this
+> scale"*, **is withdrawn as unsupported**. The Skeptic recomputed the injection and found that the
+> two recipes move MTLD in opposite directions at every level: toward its collapse side under
+> recipe A (never far enough to cross) and away from it under recipe B. "Structurally blind" is the
+> pre-registered label for *never reaching out-of-band* and remains correct as such; the gloss
+> "simply insensitive" claimed more than the data shows. Superseded by `README.md`'s directional
+> table and by `SKEPTIC-GAUNTLET.md`; this note is left unedited as the session-66 record.
+
 **MTLD and similarity are structurally blind to this injection under both recipes, at every level
 up to p = 0.50.** For similarity that was pre-registered as a possibility and is partly the
 metric's own idf-zeroing (§3 property (a)); deviation D11 records a phase artifact in the donor
