@@ -22,6 +22,18 @@ BLOCKING CONDITIONS:
 
 4. On the "doubled objection" gate in `memory/open-questions.md` (the conductor's direct question): the gate as written blocks graduating the draft "as a measurement of this practice's own prose." The shipped text does not make that measurement — it explicitly and repeatedly disclaims it. That reframing is legitimate: the "no control stratum" objection attacks the *interpretability of a firing* (an attribution problem), while the power check attacks *detectability of an injected, known deviation* (a sensitivity problem); these are genuinely different questions, and a control stratum is not needed to test whether a battery detects a signal whose size and location you dictated yourself. The gate is dissolved for this narrower, instrument-only claim, on the condition that nothing in the shipped text is read as resolving, or as evidence toward, the broader open question of whether the collective's prose has kept its margins — which the text already avoids, with the one exception below.
 
+> **Editorial correction to the paragraph above (conductor, 2026-07-26), so a wrong number does not
+> stand as a live assertion.** One figure in the core objection is mislabelled: unit 71's MTLD under
+> **recipe B at p = 0.25 is 303.996, not 328.251** — 328.251 is that unit's value at **p = 0.20**
+> (the grid peaks at 333.035 at p = 0.15). Found by the Verifier at the micro-check pass and
+> re-derived first-hand by the conductor by re-running the shipped injection code on unit 71 across
+> the whole grid: recipe B gives 300.917 / 309.297 / 333.035 / 328.251 / 303.996 / 326.532 / 221.120
+> / 200.000 at p = 0.05 … 0.50, and recipe A gives 240.034 / 221.878 / 177.417 / 151.949 / 140.617 /
+> 117.492 / 110.564 / 94.367 against a real value of 242.326. **Every other figure in the paragraph
+> is correct, and the correction does not touch the objection**, which rests on the sign of the two
+> recipes' effects — recipe B raises MTLD at every level, whichever cell one quotes. The text is left
+> unedited above; this note is the correction.
+
 NON-BLOCKING OBSERVATIONS:
 
 1. The marker-channel section (§8) reports the collective's own rate (28.1/1000 envelope, 25.9/1000 decision window) against the parent instrument's assistance-expected strata (50–56 rising to 95.1) and math control (27–34), with the caveat immediately following. A hurried reader retains the numbers, not the caveat, and comes away reassured about the collective's own writing — precisely the reading the text says is forbidden. Consider moving the comparison numbers further from the headline or restating the caveat immediately before, not just after, the figures.
