@@ -59,6 +59,13 @@ similarity's must additionally be ≥5 apart (§4's exception). The absence of a
 
 ## Why it cannot ring its own bell: the minimum detectable deviations
 
+> **Annotation, 2026-07-26 (session 67, at graduation).** The "typical observed value" and "MDE as
+> share of value" columns of the table below are eyeballed approximations, not computed figures —
+> "≈95–157" for MTLD misses both ends of the decision window's actual range (83.76 to 242.3) and
+> "≈0.059" for similarity is its median, not a range. Superseded by the computed per-unit figures
+> in `README.md`; the table is left standing here, unedited, because this note is the session-66
+> record. The MDE column itself is correct.
+
 MDE per decision unit, in each metric's own units, against the observed value range:
 
 | metric | MDE range | typical observed value | MDE as share of value |

@@ -46,6 +46,16 @@ EXPECTED_N = 73
 # property of its content, so the exclusion is unaffected by what the entry says.
 EXCLUDED_FILES = {"2026-07-26.md"}
 
+# Ship-time corpus freeze (session 67, 2026-07-26; deviation D16 in PREREGISTRATION.md §12).
+# §5 freezes the corpus at the lock commit, and the EXPECTED_N assertion below enforces it —
+# but as written the enforcement is a *crash* on any later re-run, because the journal keeps
+# growing and `journal/*.md` keeps matching more files. That would make the shipped instrument
+# unreproducible by anyone who runs it after this date. The freeze is therefore made explicit:
+# only journal files dated on or before the corpus's last unit (2026-07-25) are read. This
+# changes no number in this run — verified by re-running the whole pipeline before and after
+# the edit; every output file is byte-identical apart from its generation timestamp.
+CORPUS_FREEZE_LAST_DATE = "2026-07-25"
+
 _HEADING_RE = re.compile(r"^# ")           # unit-boundary: top-level heading only, §2
 _FENCE_RE = re.compile(r"^\s*```")          # rule 1
 _BLOCKQUOTE_RE = re.compile(r"^\s*>")       # rule 2
@@ -103,6 +113,13 @@ def apply_exclusions(raw_lines):
 def extract_all():
     paths = sorted(glob.glob(os.path.join(JOURNAL_DIR, "*.md")))
     paths = [p for p in paths if os.path.basename(p) not in EXCLUDED_FILES]
+    # Corpus freeze: drop anything the journal has grown since the lock (see above).
+    paths = [
+        p for p in paths
+        if not _DATE_FROM_FILENAME_RE.match(os.path.basename(p))
+        or _DATE_FROM_FILENAME_RE.match(os.path.basename(p)).group(1)
+        <= CORPUS_FREEZE_LAST_DATE
+    ]
 
     units = []
     index = 0

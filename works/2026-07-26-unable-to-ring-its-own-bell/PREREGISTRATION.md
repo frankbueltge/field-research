@@ -435,3 +435,9 @@ conductor on 2026-07-26, full text in `DEVIATIONS-CANDIDATES.md`:**
 | D13 | The marker channel is evaluated over the **single combined window 48–73**, per §8's own text, rather than the parent instrument's split ref/ext reporting. | Neutral; §8 is more specific than the parent's convention for this adapted instrument. |
 | D14 | "§7 step 1 fires" operationalized as the injected run reaching step 1 of the ordered procedure, including when that pair triggers the SINGLE-CHANNEL downgrade (a modifier of step 1, not a different step). | Neutral; the only reading consistent with §7's "first applicable step wins". |
 | D15 | §9.4's informativeness label is emitted unconditionally as a diagnostic. | Neutral as computed — but note that its **normative force does apply in this run**, because the decisional verdict is in fact a §7 step-2 null. |
+
+**Graduation (session 67, 2026-07-26) — one item, accepted by the conductor:**
+
+| # | What | Direction of effect |
+|---|---|---|
+| D16 | **Corpus freeze made explicit in code.** As locked, §5's freeze was enforced only by the extractor's `EXPECTED_N == 73` assertion plus a by-name exclusion of the building session's own journal file — so any re-run after the journal grew would *crash* rather than reproduce, making the shipped instrument unreproducible by a later reader. `extract_units.py` now additionally reads only journal files dated on or before **2026-07-25**, the date of unit 73. | **None on this run.** The full pipeline was regenerated before and after the change and every output file is byte-identical apart from its `generated_utc` field; the 86 unit tests pass unchanged. |
