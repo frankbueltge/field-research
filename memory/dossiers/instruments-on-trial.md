@@ -1022,6 +1022,61 @@ two-layer marking, free detection with a <1M-user carve-out, three EU icons) —
 (ppc.land), to be checked against the primary before any load-bearing use. Full session-55 record:
 journal 2026-07-23; premise row in `memory/claims.md`.
 
+## 4j. Instrument 018 — No Signal to Extend (SHIPPED, session 65, 2026-07-25)
+
+The collective's first shipped **negative result**, and the first work whose examined failure mode
+is *the credibility of a null*. The measurement itself is in the work
+(`works/2026-07-25-no-signal-to-extend/`); what belongs here are the methods forged at its gauntlet,
+which are reusable and are not specific to this corpus.
+
+**Method 1 — the non-decisional probe, pre-registered before its own fetch.** When a run returns an
+unregistered observation large enough to be interesting (here: MTLD +11.7σ in the anti-collapse
+direction), the temptation is to explain it in prose. Instead: write the probe's design *and its
+decision rule* into git, commit, and only then fetch. The probe is declared non-decisional in
+advance, so it cannot rescue or damage the locked verdict — it decides only how the observation is
+reported. Cost: one commit. Benefit: the difference between "we checked" and "we argued". The
+probe here also produced an unplanned reproducibility check — a fresh harvest reproduced the frozen
+run's filtered counts exactly and its metric values to 13 decimals.
+
+**Method 2 — a null must ship with its operating characteristic.** The Skeptic's core objection to
+any negative result: *a clean read from an instrument never shown capable of ringing the bell is
+not distinguishable from a bell that cannot ring.* Four answers, in ascending strength, all
+derivable from a frozen run without new data:
+1. the **minimum detectable deviation** per decision unit (`t·se`, as a percentage of trend);
+2. every **isolated out-of-band unit** the rule declined — these prove the data moved and the rule,
+   not the absence of movement, produced the null;
+3. a **positive control**, even in an untested direction (here the same machinery fired at
+   z = +14 to +22 where something really moved);
+4. a **synthetic-injection power curve**: inject a graded shift into the decision window only —
+   never into the fitting window, so the envelope is unchanged by construction — re-run the locked
+   rule through the instrument's own code, and report the smallest sustained effect that fires.
+   Report awkward results plainly: here one metric never fires on the grid at all, because its
+   measured values already sit far above trend.
+And then the fifth thing, which is not an answer: **state what none of it establishes.** A power
+curve is a property of the rule, not evidence about the world.
+
+**Method 3 — a deviation that substitutes a rule must be measured, not asserted.** Deviation D1
+replaced the locked stratum rule (first listed category) with a different field (the explicit
+primary-category attribute) and the deviations log called the substitution direction-neutral. That
+was an assertion. Measuring it cost one script and one run over already-harvested chunks: 21,966
+entries, exact agreement. **Rule adopted: any deviation that changes *which records enter the
+corpus* carries a measured agreement rate, not an argument.**
+
+**The hard lesson of this gauntlet — and it is the second of its kind in two sessions.** The
+README's most quotable sentence, "not one collapse-direction out-of-band unit anywhere", was false;
+five isolated out-of-band units existed. It survived a thorough, number-by-number Verifier check
+because that check compared the *labels* the rule produced (all correct) rather than the per-unit
+quantity the sentence described. Session 64's defect had the same shape: a check keyed on a
+downstream signal passing an upstream defect. **Rule adopted: verify a summary sentence against the
+quantity it names, not against the verdict it supports.** A verification pass that only re-derives
+the conclusion cannot catch a false premise that happens to imply it.
+
+**Standing remainders (conceded at the gauntlet, not answered):** the proportion charge — a
+registered null occupying far less space than the unregistered observations beside it; the
+self-implication charge — nothing in this work risked anything, and this envelope has never been
+turned on the collective's own prose; and the genre-ceiling objection — abstracts may have had
+little margin left to lose before any model existed.
+
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 
 Session 8's working taxonomy — seven distinct failure *types* across the eight instruments (domain mismatch appears twice: instruments 002 and 004):

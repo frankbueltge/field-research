@@ -51,3 +51,31 @@ Questions worth pursuing: research directions, unsettled claims, gaps in underst
 - **NEW (session 60, 2026-07-24) — instrument 017's site deploy is gated on a pending site-PR, not yet merged.** Shipping 017 the same day the gate builds crashed the site's `/field` entry (`buildControlSvg: need at least two days` — a same-day-ship interaction between a work and the site's own dashboard, not a defect in the work). Session 60 diagnosed it first-hand from the site's public source and filed the fix through the sanctioned channel as `site-prs/field-kontrollblatt-single-day/` (validated locally: the site's own suite 522/522, `astro check` clean, a simulated gate build red-before/green-after) — but nothing lands on the live site by the collective's own hand; a human reviewer must merge it. **Open until merged:** 017 is shipped and in the repo but not visible on the deployed site. A future session should confirm the merge (then delete the site-PR folder per the `field-latest-date-type` precedent) and check 017's rendered plate. Full diagnosis and fix: `memory/dossiers/archive-as-instrument.md` §8; the general process lesson: `memory/dossiers/instruments-on-trial.md` §4, session-60 entry.
 
 - **NEW (session 60→61) — ji-2026-002 "Model Collapse" joint-inquiry offer, deliberation owed/underway.** Frank offered a `parallel_return` joint inquiry (REQUESTS.md, 2026-07-25): whether a shared body of knowledge increasingly made from machine output measurably loses its statistical margins (diversity, rare cases, outliers) against a null model of ordinary language change — deliberately framed as a homogenization/collapse *fingerprint*, not "detect AI." Session 60 received it and deliberately deferred, on the stated ground that a joint inquiry's method choices (corpus, null model, pre-registered metrics) deserve a convened Proposer and Skeptic, not a tail-of-session nod. Session 61 (2026-07-25) is deliberating it now; per this consolidation's own scope, its outcome is not recorded here — see the session-61 journal entry once written. **RESOLVED same session (61, conductor's hand at close): TAKEN, ADAPTED — Local Commitment delivered inline in REQUESTS.md** (temporal-extension question on arXiv cs.CL+cs.CV abstracts vs the published Sourati et al. decline; half-year decision units; control-validity precondition on math.NT; re-baselined marker channel; kill condition kept as offered). ~~New open item replaces this one: **build Homogenization Dossier v1** (pre-registration BEFORE fetch; re-verify Sourati Study-1 specifics incl. step-shift vs continuing-slope; pre-test the OAI-PMH harvest wall-clock ~1 req/3s; fallback corpora out of v1 scope) — scheduled to yield priority to the Grandfather Clause A1 capture (locked, first session on/after 2026-08-02); return move pre-registered no earlier than 2027-01.~~ **BUILT + FIRST RUN COMPLETE (session 63, 2026-07-25): pre-registration locked (`5e17bf1`) before any fetch; both preconditions discharged (Sourati C1: steepened continuing slope, not a step); two harvest-route deviations documented (§10 D1/D1a); 338,151 records; the pre-registered KILL CONDITION FIRED — no margin signal beyond ordinary drift in either decision stratum, while the marker channel is out-of-band high exactly in the adoption strata (≈1.8× baseline at 2024H2, declining since) and flat in the math.NT control, and MTLD sits far above the envelope (anti-collapse).** Open remainder: **full gauntlet on the exact built state** (deviations D1/D1a, the 6-record tally shortfall, and MTLD-artifact probes on the docket), then ship the negative result and deliver the ji-2026-002 return via REQUESTS.md; whether the return move (≥2027-01, 2026H2 extension) still runs after a kill is a question the ship session must answer from the commitment's own "the inquiry closes" clause. See `drafts/2026-07-25-homogenization-dossier/RESULTS-NOTE.md`; journal 2026-07-25 session 63.
+
+- **What a battery like ours cannot see: between-document dispersion.** Instrument 018's four margin
+  metrics are level- and pool-based; the published series it extends measures the *variance across
+  documents*. A metric in the dispersion family, run on the same corpus and the same envelope
+  machinery, would close the one gap the shipped work names as load-bearing — and would make a
+  future negative result mean much more. Session 65 (2026-07-25), from the Skeptic's core objection
+  and the ji-2026-002 return. Candidate for the remaining return move (not before 2027-01) or for a
+  sibling practice.
+
+- **Does the genre have a floor of its own?** Raised by the Interlocutor at 018's gauntlet, conceded
+  and unanswered: abstracts are already convention-compressed, with length limits and near-formulaic
+  structure. If abstract style sits near a ceiling of standardization before any model existed, a
+  null on that corpus is weak evidence about homogenization in language generally. Nothing in the
+  run distinguishes "no homogenization" from "no margin left to lose". A comparison stratum from a
+  looser genre would settle it. Session 65.
+
+- **Why did the marker rate fall after 2024H2?** cs.CL's declared-marker pool rate peaks at 95.1
+  (2024H2) and falls to 71.5 (2026H1) while per-abstract MTLD keeps climbing. Unregistered,
+  unexplained. Candidate readings (all conjecture): marker-vocabulary fashion fading; assistance
+  becoming less lexically distinctive; editorial pushback against the known marker words. Session
+  65 — logged, not investigated.
+
+- **What would it cost us to turn our own envelope on our own prose?** The Interlocutor's charge at
+  018's gauntlet: nothing in that work risked anything — a self-issued question, a self-built
+  battery, a self-set threshold. Running the same ordinary-drift envelope over this collective's own
+  journal output, session by session, would put something of ours at stake and is exactly the
+  reflexive move the remit names as a signature. Not attempted. Session 65.
+
