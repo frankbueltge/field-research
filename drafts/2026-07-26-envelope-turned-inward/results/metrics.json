@@ -1,0 +1,7152 @@
+{
+  "n_units": 73,
+  "marker_csv_sha256": "f5786f3cc83f9578043aaecf2774c6200cb68b5e774afc3afe40af4eb0cf8285",
+  "marker_style_word_count": 407,
+  "envelope_pool_tokens": 26400,
+  "envelope_pool_types": 4432,
+  "units": [
+    {
+      "index": 1,
+      "date": "2026-07-01",
+      "heading": "Session 01 — 2026-07-01",
+      "n_tokens": 2789,
+      "prefix600": {
+        "computable": true,
+        "mtld": 135.6431309077056,
+        "hapax_share": 0.6809815950920245,
+        "top50_mass": 0.44333333333333336,
+        "top50_partial": false,
+        "zipf_slope": -0.07747973164096814,
+        "zipf_types": 326,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 38.33333333333333,
+        "marker_tokens": 23,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 165.95640180046456,
+        "hapax_share": 0.6224489795918368,
+        "top50_mass": 0.3664395840803155,
+        "top50_partial": false,
+        "zipf_slope": -0.7097118030094616,
+        "zipf_types": 1078,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 36.930799569738255,
+        "marker_tokens": 103,
+        "pool_tokens": 2789
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 165.93314988733422,
+        "hapax_share": 0.6755793226381461,
+        "top50_mass": 0.37130044843049326,
+        "top50_partial": false,
+        "zipf_slope": -0.44224114998881464,
+        "zipf_types": 561,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 35.874439461883405,
+        "marker_tokens": 40,
+        "pool_tokens": 1115
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": null,
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": null
+      },
+      "sim_block": {
+        "value": 0.03949751503175937,
+        "computable": true,
+        "block_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "index": 2,
+      "date": "2026-07-01",
+      "heading": "Session 02 — 2026-07-01 (same day, second invocation)",
+      "n_tokens": 1864,
+      "prefix600": {
+        "computable": true,
+        "mtld": 121.56891643460523,
+        "hapax_share": 0.7212121212121212,
+        "top50_mass": 0.4633333333333333,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 330,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 36.666666666666664,
+        "marker_tokens": 22,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 134.59941367645024,
+        "hapax_share": 0.581646423751687,
+        "top50_mass": 0.38626609442060084,
+        "top50_partial": false,
+        "zipf_slope": -0.6870211484867753,
+        "zipf_types": 741,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 34.33476394849785,
+        "marker_tokens": 64,
+        "pool_tokens": 1864
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 140.62055714220804,
+        "hapax_share": 0.7010050251256281,
+        "top50_mass": 0.43355704697986575,
+        "top50_partial": false,
+        "zipf_slope": -0.23080890585414376,
+        "zipf_types": 398,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 36.241610738255034,
+        "marker_tokens": 27,
+        "pool_tokens": 745
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": null,
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": null
+      },
+      "sim_block": {
+        "value": 0.03949751503175937,
+        "computable": true,
+        "block_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "index": 3,
+      "date": "2026-07-01",
+      "heading": "Session 03 — 2026-07-01 (same day, third invocation)",
+      "n_tokens": 1978,
+      "prefix600": {
+        "computable": true,
+        "mtld": 128.817051243632,
+        "hapax_share": 0.7079646017699115,
+        "top50_mass": 0.43666666666666665,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 339,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 40.0,
+        "marker_tokens": 24,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 146.4221607629034,
+        "hapax_share": 0.590851334180432,
+        "top50_mass": 0.3877654196157735,
+        "top50_partial": false,
+        "zipf_slope": -0.6753005589372899,
+        "zipf_types": 787,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 29.828109201213348,
+        "marker_tokens": 59,
+        "pool_tokens": 1978
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 135.1893083416449,
+        "hapax_share": 0.7074340527577938,
+        "top50_mass": 0.4336283185840708,
+        "top50_partial": false,
+        "zipf_slope": -0.24290977690680496,
+        "zipf_types": 417,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 35.39823008849557,
+        "marker_tokens": 28,
+        "pool_tokens": 791
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": null,
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": null
+      },
+      "sim_block": {
+        "value": 0.03949751503175937,
+        "computable": true,
+        "block_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "index": 4,
+      "date": "2026-07-01",
+      "heading": "Session 04 — 2026-07-01 (same day, fourth invocation)",
+      "n_tokens": 2045,
+      "prefix600": {
+        "computable": true,
+        "mtld": 148.50062695258538,
+        "hapax_share": 0.696319018404908,
+        "top50_mass": 0.455,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 326,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 33.333333333333336,
+        "marker_tokens": 20,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 132.5212553765429,
+        "hapax_share": 0.5702917771883289,
+        "top50_mass": 0.40440097799511004,
+        "top50_partial": false,
+        "zipf_slope": -0.75549220980037,
+        "zipf_types": 754,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 38.141809290953546,
+        "marker_tokens": 78,
+        "pool_tokens": 2045
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 142.33410553410553,
+        "hapax_share": 0.6699029126213593,
+        "top50_mass": 0.4315403422982885,
+        "top50_partial": false,
+        "zipf_slope": -0.3744103872481047,
+        "zipf_types": 412,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 34.229828850855746,
+        "marker_tokens": 28,
+        "pool_tokens": 818
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": null,
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": null
+      },
+      "sim_block": {
+        "value": 0.03949751503175937,
+        "computable": true,
+        "block_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "index": 5,
+      "date": "2026-07-01",
+      "heading": "Session 05 — 2026-07-01 (same day, fifth invocation)",
+      "n_tokens": 1307,
+      "prefix600": {
+        "computable": true,
+        "mtld": 131.66953112574248,
+        "hapax_share": 0.693939393939394,
+        "top50_mass": 0.4483333333333333,
+        "top50_partial": false,
+        "zipf_slope": -0.01930250098945848,
+        "zipf_types": 330,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 35.0,
+        "marker_tokens": 21,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 141.15818484023498,
+        "hapax_share": 0.6142857142857143,
+        "top50_mass": 0.4055087987758225,
+        "top50_partial": false,
+        "zipf_slope": -0.6125751845471857,
+        "zipf_types": 560,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 30.6044376434583,
+        "marker_tokens": 40,
+        "pool_tokens": 1307
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 134.2047846889952,
+        "hapax_share": 0.6847457627118644,
+        "top50_mass": 0.4482758620689655,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 295,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 38.314176245210724,
+        "marker_tokens": 20,
+        "pool_tokens": 522
+      },
+      "sim_trailing": {
+        "value": 0.03949751503175937,
+        "computable": true,
+        "window_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "top_contributors": [
+          [
+            "election",
+            0.019062893842159468,
+            0.048263527026526296
+          ],
+          [
+            "benchmark",
+            0.011008573192759571,
+            0.0278715589674635
+          ],
+          [
+            "benchmarks",
+            0.009785398393564062,
+            0.024774719082189773
+          ],
+          [
+            "law",
+            0.0088492698990497,
+            0.02240462442240767
+          ],
+          [
+            "benford's",
+            0.008087058849401293,
+            0.020474854792506842
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.03212443201826756,
+        "computable": true,
+        "window_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "sim_block": {
+        "value": 0.03949751503175937,
+        "computable": true,
+        "block_indices": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    {
+      "index": 6,
+      "date": "2026-07-01",
+      "heading": "Session 06 — 2026-07-01 (same day, sixth invocation)",
+      "n_tokens": 2153,
+      "prefix600": {
+        "computable": true,
+        "mtld": 114.94851577947017,
+        "hapax_share": 0.6535947712418301,
+        "top50_mass": 0.48,
+        "top50_partial": false,
+        "zipf_slope": -0.13044114421495123,
+        "zipf_types": 306,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.333333333333332,
+        "marker_tokens": 17,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 120.49447899570987,
+        "hapax_share": 0.5511288180610889,
+        "top50_mass": 0.3882954017649791,
+        "top50_partial": false,
+        "zipf_slope": -0.8203925583214735,
+        "zipf_types": 753,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 29.26149558755225,
+        "marker_tokens": 63,
+        "pool_tokens": 2153
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 110.30190369707131,
+        "hapax_share": 0.6642335766423357,
+        "top50_mass": 0.4564459930313589,
+        "top50_partial": false,
+        "zipf_slope": -0.3922110062015717,
+        "zipf_types": 411,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 32.520325203252035,
+        "marker_tokens": 28,
+        "pool_tokens": 861
+      },
+      "sim_trailing": {
+        "value": 0.03420442277557185,
+        "computable": true,
+        "window_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "top_contributors": [
+          [
+            "election",
+            0.01773794473562476,
+            0.051858629078497025
+          ],
+          [
+            "fraud",
+            0.015520701643671666,
+            0.045376300443684896
+          ],
+          [
+            "test",
+            0.008592868226131397,
+            0.02512209687768291
+          ],
+          [
+            "law",
+            0.008039351786053597,
+            0.023503837029505877
+          ],
+          [
+            "whether",
+            0.007482515083370276,
+            0.021875870066470314
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.027153787052593043,
+        "computable": true,
+        "window_indices": [
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "sim_block": {
+        "value": 0.035887830248419905,
+        "computable": true,
+        "block_indices": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "index": 7,
+      "date": "2026-07-01",
+      "heading": "Session 07 — 2026-07-01 (same day, seventh invocation)",
+      "n_tokens": 2166,
+      "prefix600": {
+        "computable": true,
+        "mtld": 173.51391934407474,
+        "hapax_share": 0.6636085626911316,
+        "top50_mass": 0.43333333333333335,
+        "top50_partial": false,
+        "zipf_slope": -0.18448354469620118,
+        "zipf_types": 327,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 41.666666666666664,
+        "marker_tokens": 25,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 135.4683787184931,
+        "hapax_share": 0.5832305795314426,
+        "top50_mass": 0.37765466297322253,
+        "top50_partial": false,
+        "zipf_slope": -0.7587728996944869,
+        "zipf_types": 811,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 34.62603878116344,
+        "marker_tokens": 75,
+        "pool_tokens": 2166
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 155.7921155347385,
+        "hapax_share": 0.6558891454965358,
+        "top50_mass": 0.4133949191685912,
+        "top50_partial": false,
+        "zipf_slope": -0.4391649986707608,
+        "zipf_types": 433,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 36.95150115473441,
+        "marker_tokens": 32,
+        "pool_tokens": 866
+      },
+      "sim_trailing": {
+        "value": 0.02514967702893254,
+        "computable": true,
+        "window_indices": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "top_contributors": [
+          [
+            "test",
+            0.0056923930475526,
+            0.022634060234666204
+          ],
+          [
+            "whether",
+            0.005374534170205497,
+            0.021370191609309964
+          ],
+          [
+            "ai",
+            0.0052861760983535025,
+            0.02101886275625811
+          ],
+          [
+            "fpr",
+            0.004875553754553607,
+            0.019386148573378108
+          ],
+          [
+            "human",
+            0.0043454569395761575,
+            0.01727838069084181
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.017976133623578062,
+        "computable": true,
+        "window_indices": [
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "sim_block": {
+        "value": 0.035887830248419905,
+        "computable": true,
+        "block_indices": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "index": 8,
+      "date": "2026-07-01",
+      "heading": "Session 08 — 2026-07-01 (same day, eighth invocation)",
+      "n_tokens": 3244,
+      "prefix600": {
+        "computable": true,
+        "mtld": 155.93745962010598,
+        "hapax_share": 0.7220630372492837,
+        "top50_mass": 0.42333333333333334,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 349,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 33.333333333333336,
+        "marker_tokens": 20,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 138.68300716187645,
+        "hapax_share": 0.5652936021034181,
+        "top50_mass": 0.36775585696670776,
+        "top50_partial": false,
+        "zipf_slope": -0.8325527110268544,
+        "zipf_types": 1141,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 23.736128236744758,
+        "marker_tokens": 77,
+        "pool_tokens": 3244
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 139.03113327674023,
+        "hapax_share": 0.6551724137931034,
+        "top50_mass": 0.3909020817270625,
+        "top50_partial": false,
+        "zipf_slope": -0.49220259031469216,
+        "zipf_types": 609,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.527370855821125,
+        "marker_tokens": 37,
+        "pool_tokens": 1297
+      },
+      "sim_trailing": {
+        "value": 0.03072548910142219,
+        "computable": true,
+        "window_indices": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "top_contributors": [
+          [
+            "test",
+            0.018781118207250078,
+            0.06112553048465796
+          ],
+          [
+            "tool",
+            0.012235663925963213,
+            0.039822519620678266
+          ],
+          [
+            "criterion",
+            0.00917674794447241,
+            0.0298668897155087
+          ],
+          [
+            "whether",
+            0.00576246100187661,
+            0.018754659959537904
+          ],
+          [
+            "data",
+            0.005124914054246936,
+            0.01667968258318049
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.020746336620783686,
+        "computable": true,
+        "window_indices": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "sim_block": {
+        "value": 0.035887830248419905,
+        "computable": true,
+        "block_indices": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "index": 9,
+      "date": "2026-07-01",
+      "heading": "Session 09 — 2026-07-01 (ninth invocation; collective session 01)",
+      "n_tokens": 929,
+      "prefix600": {
+        "computable": true,
+        "mtld": 167.98631476050832,
+        "hapax_share": 0.6901840490797546,
+        "top50_mass": 0.455,
+        "top50_partial": false,
+        "zipf_slope": -0.019786585513927032,
+        "zipf_types": 326,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 25.0,
+        "marker_tokens": 15,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 157.44270528615363,
+        "hapax_share": 0.6666666666666666,
+        "top50_mass": 0.4607104413347686,
+        "top50_partial": false,
+        "zipf_slope": -0.41197846183951287,
+        "zipf_types": 438,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 23.681377825618945,
+        "marker_tokens": 22,
+        "pool_tokens": 929
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 138.68955399061034,
+        "hapax_share": 0.6584158415841584,
+        "top50_mass": 0.5390835579514824,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 202,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 24.258760107816713,
+        "marker_tokens": 9,
+        "pool_tokens": 371
+      },
+      "sim_trailing": {
+        "value": 0.02952636694806522,
+        "computable": true,
+        "window_indices": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "top_contributors": [
+          [
+            "tool",
+            0.012833050935617922,
+            0.04346302055444324
+          ],
+          [
+            "journal",
+            0.009801610424320324,
+            0.0331961275207365
+          ],
+          [
+            "data",
+            0.009631832074386112,
+            0.03262112162775671
+          ],
+          [
+            "criterion",
+            0.009624788201713442,
+            0.03259726541583243
+          ],
+          [
+            "test",
+            0.008539972776267432,
+            0.028923208843433523
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.018002779366735527,
+        "computable": true,
+        "window_indices": [
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "sim_block": {
+        "value": 0.035887830248419905,
+        "computable": true,
+        "block_indices": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "index": 10,
+      "date": "2026-07-02",
+      "heading": "Session — 2026-07-02 (collective session 02)",
+      "n_tokens": 979,
+      "prefix600": {
+        "computable": true,
+        "mtld": 243.60959422562246,
+        "hapax_share": 0.7406417112299465,
+        "top50_mass": 0.38166666666666665,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 374,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 21.666666666666668,
+        "marker_tokens": 13,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 137.31058162522112,
+        "hapax_share": 0.6565040650406504,
+        "top50_mass": 0.39427987742594484,
+        "top50_partial": false,
+        "zipf_slope": -0.4666632820832346,
+        "zipf_types": 492,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 22.47191011235955,
+        "marker_tokens": 22,
+        "pool_tokens": 979
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 236.11661445223234,
+        "hapax_share": 0.8059701492537313,
+        "top50_mass": 0.4373401534526854,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 268,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 25.57544757033248,
+        "marker_tokens": 10,
+        "pool_tokens": 391
+      },
+      "sim_trailing": {
+        "value": 0.035887830248419905,
+        "computable": true,
+        "window_indices": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "top_contributors": [
+          [
+            "criterion",
+            0.009474211133232963,
+            0.02639950943718616
+          ],
+          [
+            "data",
+            0.00934458757301834,
+            0.02603831858413834
+          ],
+          [
+            "convened",
+            0.008465249945316226,
+            0.023588079543173105
+          ],
+          [
+            "conductor",
+            0.008465249945316224,
+            0.0235880795431731
+          ],
+          [
+            "rate",
+            0.00599125591617732,
+            0.016694394380226168
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.02225962300643574,
+        "computable": true,
+        "window_indices": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "sim_block": {
+        "value": 0.035887830248419905,
+        "computable": true,
+        "block_indices": [
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      }
+    },
+    {
+      "index": 11,
+      "date": "2026-07-02",
+      "heading": "Session — 2026-07-02 (second invocation; collective session 03)",
+      "n_tokens": 2127,
+      "prefix600": {
+        "computable": true,
+        "mtld": 160.69449606221275,
+        "hapax_share": 0.7214076246334311,
+        "top50_mass": 0.44,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 341,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 20.0,
+        "marker_tokens": 12,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 158.5339276992447,
+        "hapax_share": 0.614713216957606,
+        "top50_mass": 0.4080865068171133,
+        "top50_partial": false,
+        "zipf_slope": -0.7064651321048773,
+        "zipf_types": 802,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 21.626704278326283,
+        "marker_tokens": 46,
+        "pool_tokens": 2127
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 170.0,
+        "hapax_share": 0.7104072398190046,
+        "top50_mass": 0.42823529411764705,
+        "top50_partial": false,
+        "zipf_slope": -0.2723371524031301,
+        "zipf_types": 442,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 16.47058823529412,
+        "marker_tokens": 14,
+        "pool_tokens": 850
+      },
+      "sim_trailing": {
+        "value": 0.05855391192843142,
+        "computable": true,
+        "window_indices": [
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "top_contributors": [
+          [
+            "its",
+            0.022537284469943315,
+            0.03848980149693485
+          ],
+          [
+            "data",
+            0.017141895875019374,
+            0.029275406732809525
+          ],
+          [
+            "sessions",
+            0.014806512753208106,
+            0.02528697445749762
+          ],
+          [
+            "mad",
+            0.013589592230486322,
+            0.02320868372910156
+          ],
+          [
+            "n",
+            0.013589592230486322,
+            0.02320868372910156
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.03675040899684886,
+        "computable": true,
+        "window_indices": [
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "sim_block": {
+        "value": 0.052321341441411165,
+        "computable": true,
+        "block_indices": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "index": 12,
+      "date": "2026-07-02",
+      "heading": "Session — 2026-07-02 (third invocation; collective session 04)",
+      "n_tokens": 1392,
+      "prefix600": {
+        "computable": true,
+        "mtld": 205.68231922656838,
+        "hapax_share": 0.7624309392265194,
+        "top50_mass": 0.42,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 362,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 26.666666666666668,
+        "marker_tokens": 16,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 181.52497687326547,
+        "hapax_share": 0.6575121163166397,
+        "top50_mass": 0.40948275862068967,
+        "top50_partial": false,
+        "zipf_slope": -0.5245317815097006,
+        "zipf_types": 619,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 22.988505747126435,
+        "marker_tokens": 32,
+        "pool_tokens": 1392
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 192.63906904288768,
+        "hapax_share": 0.7559523809523809,
+        "top50_mass": 0.42805755395683454,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 336,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 26.978417266187048,
+        "marker_tokens": 15,
+        "pool_tokens": 556
+      },
+      "sim_trailing": {
+        "value": 0.0729488763721276,
+        "computable": true,
+        "window_indices": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "top_contributors": [
+          [
+            "sessions",
+            0.024078180190352197,
+            0.03300692401007566
+          ],
+          [
+            "verifier",
+            0.018466470947943396,
+            0.025314263723188873
+          ],
+          [
+            "mad",
+            0.015442017990181548,
+            0.021168273944904316
+          ],
+          [
+            "n",
+            0.015442017990181548,
+            0.021168273944904316
+          ],
+          [
+            "its",
+            0.012492233167113382,
+            0.017124640965527512
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.04906624305414373,
+        "computable": true,
+        "window_indices": [
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "sim_block": {
+        "value": 0.052321341441411165,
+        "computable": true,
+        "block_indices": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "index": 13,
+      "date": "2026-07-02",
+      "heading": "Session — 2026-07-02 (fourth invocation; collective session 05)",
+      "n_tokens": 1019,
+      "prefix600": {
+        "computable": true,
+        "mtld": 173.08124246999637,
+        "hapax_share": 0.7159763313609467,
+        "top50_mass": 0.44333333333333336,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 338,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 25.0,
+        "marker_tokens": 15,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 135.76670615486393,
+        "hapax_share": 0.6301969365426696,
+        "top50_mass": 0.43572129538763493,
+        "top50_partial": false,
+        "zipf_slope": -0.5148461564664171,
+        "zipf_types": 457,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 25.515210991167812,
+        "marker_tokens": 26,
+        "pool_tokens": 1019
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 143.05528254087403,
+        "hapax_share": 0.7100840336134454,
+        "top50_mass": 0.4914004914004914,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 238,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 29.484029484029485,
+        "marker_tokens": 12,
+        "pool_tokens": 407
+      },
+      "sim_trailing": {
+        "value": 0.07536329674728785,
+        "computable": true,
+        "window_indices": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "top_contributors": [
+          [
+            "build",
+            0.02195580190467044,
+            0.029133282184156277
+          ],
+          [
+            "mad",
+            0.017384841122568925,
+            0.023068047541583384
+          ],
+          [
+            "n",
+            0.017384841122568925,
+            0.023068047541583384
+          ],
+          [
+            "sessions",
+            0.014914440487002315,
+            0.019790058464419617
+          ],
+          [
+            "rate",
+            0.013173481142802266,
+            0.017479969310493768
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.053879272428523486,
+        "computable": true,
+        "window_indices": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "sim_block": {
+        "value": 0.052321341441411165,
+        "computable": true,
+        "block_indices": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "index": 14,
+      "date": "2026-07-03",
+      "heading": "Session — 2026-07-03 (collective session 06)",
+      "n_tokens": 3312,
+      "prefix600": {
+        "computable": true,
+        "mtld": 135.4355023557876,
+        "hapax_share": 0.7084548104956269,
+        "top50_mass": 0.42833333333333334,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 343,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 31.666666666666668,
+        "marker_tokens": 19,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 131.87749462695731,
+        "hapax_share": 0.5661424606845513,
+        "top50_mass": 0.4042874396135266,
+        "top50_partial": false,
+        "zipf_slope": -0.8304473441067697,
+        "zipf_types": 1081,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 25.966183574879228,
+        "marker_tokens": 86,
+        "pool_tokens": 3312
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 128.24518828451883,
+        "hapax_share": 0.6688,
+        "top50_mass": 0.40105740181268884,
+        "top50_partial": false,
+        "zipf_slope": -0.46700959359753924,
+        "zipf_types": 625,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 27.94561933534743,
+        "marker_tokens": 37,
+        "pool_tokens": 1324
+      },
+      "sim_trailing": {
+        "value": 0.06760703596895978,
+        "computable": true,
+        "window_indices": [
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "top_contributors": [
+          [
+            "card",
+            0.019739800462525672,
+            0.029197849276499488
+          ],
+          [
+            "rate",
+            0.013822111545356015,
+            0.02044478262839702
+          ],
+          [
+            "tests",
+            0.012547911037505827,
+            0.018560066800246813
+          ],
+          [
+            "build",
+            0.010104537317279762,
+            0.014945984796492229
+          ],
+          [
+            "chi",
+            0.010038328830004661,
+            0.014848053440197451
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.04898151769159662,
+        "computable": true,
+        "window_indices": [
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "sim_block": {
+        "value": 0.052321341441411165,
+        "computable": true,
+        "block_indices": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "index": 15,
+      "date": "2026-07-03",
+      "heading": "Session — 2026-07-03 (collective session 07, second invocation of this date)",
+      "n_tokens": 1494,
+      "prefix600": {
+        "computable": true,
+        "mtld": 161.71838679683867,
+        "hapax_share": 0.6856287425149701,
+        "top50_mass": 0.435,
+        "top50_partial": false,
+        "zipf_slope": -0.09162362927859814,
+        "zipf_types": 334,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 31.666666666666668,
+        "marker_tokens": 19,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 148.44556484971045,
+        "hapax_share": 0.5883306320907618,
+        "top50_mass": 0.39825970548862116,
+        "top50_partial": false,
+        "zipf_slope": -0.6975628336991214,
+        "zipf_types": 617,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.112449799196785,
+        "marker_tokens": 42,
+        "pool_tokens": 1494
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 161.6165594404024,
+        "hapax_share": 0.6846846846846847,
+        "top50_mass": 0.4338358458961474,
+        "top50_partial": false,
+        "zipf_slope": -0.0921695211565129,
+        "zipf_types": 333,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 31.825795644891123,
+        "marker_tokens": 19,
+        "pool_tokens": 597
+      },
+      "sim_trailing": {
+        "value": 0.052321341441411165,
+        "computable": true,
+        "window_indices": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "top_contributors": [
+          [
+            "card",
+            0.018739008579404404,
+            0.03581522962362907
+          ],
+          [
+            "rate",
+            0.016150171916258525,
+            0.030867274177867367
+          ],
+          [
+            "for",
+            0.010164508798747926,
+            0.019427079885040843
+          ],
+          [
+            "rows",
+            0.009666004279018446,
+            0.01847430515489043
+          ],
+          [
+            "date",
+            0.009101859954868147,
+            0.01739607529952248
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.034577100019744136,
+        "computable": true,
+        "window_indices": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "sim_block": {
+        "value": 0.052321341441411165,
+        "computable": true,
+        "block_indices": [
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      }
+    },
+    {
+      "index": 16,
+      "date": "2026-07-03",
+      "heading": "Session — 2026-07-03 (collective session 08, third invocation of this date)",
+      "n_tokens": 3417,
+      "prefix600": {
+        "computable": true,
+        "mtld": 125.31080472338476,
+        "hapax_share": 0.7264437689969605,
+        "top50_mass": 0.4683333333333333,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 329,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 30.0,
+        "marker_tokens": 18,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 134.49035413153456,
+        "hapax_share": 0.5551436515291936,
+        "top50_mass": 0.4138132865086333,
+        "top50_partial": false,
+        "zipf_slope": -0.8432434619395346,
+        "zipf_types": 1079,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 23.412350014632718,
+        "marker_tokens": 80,
+        "pool_tokens": 3417
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 164.52171997483788,
+        "hapax_share": 0.6491228070175439,
+        "top50_mass": 0.40775988286969256,
+        "top50_partial": false,
+        "zipf_slope": -0.4882931985923046,
+        "zipf_types": 627,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 23.42606149341142,
+        "marker_tokens": 32,
+        "pool_tokens": 1366
+      },
+      "sim_trailing": {
+        "value": 0.04787230640368947,
+        "computable": true,
+        "window_indices": [
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "top_contributors": [
+          [
+            "horizon",
+            0.024133924557827563,
+            0.05041312268165042
+          ],
+          [
+            "card",
+            0.019094107535692458,
+            0.039885497420322526
+          ],
+          [
+            "rate",
+            0.01674523382108195,
+            0.034978957729497266
+          ],
+          [
+            "date",
+            0.008848092140352122,
+            0.01848269449510001
+          ],
+          [
+            "figures",
+            0.00815384256115317,
+            0.017032483232361586
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.03183723325345135,
+        "computable": true,
+        "window_indices": [
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      "sim_block": {
+        "value": 0.05731990589779633,
+        "computable": true,
+        "block_indices": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    },
+    {
+      "index": 17,
+      "date": "2026-07-05",
+      "heading": "Journal — 2026-07-05 (collective session 09)",
+      "n_tokens": 1381,
+      "prefix600": {
+        "computable": true,
+        "mtld": 183.57805255023183,
+        "hapax_share": 0.7804878048780488,
+        "top50_mass": 0.4166666666666667,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 369,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 26.666666666666668,
+        "marker_tokens": 16,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 144.68136818839963,
+        "hapax_share": 0.6608832807570978,
+        "top50_mass": 0.40188269370021723,
+        "top50_partial": false,
+        "zipf_slope": -0.5175976152485873,
+        "zipf_types": 634,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 24.619840695148444,
+        "marker_tokens": 34,
+        "pool_tokens": 1381
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 176.24346917450367,
+        "hapax_share": 0.7712609970674487,
+        "top50_mass": 0.4221014492753623,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 341,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.985507246376812,
+        "marker_tokens": 16,
+        "pool_tokens": 552
+      },
+      "sim_trailing": {
+        "value": 0.0508234586321766,
+        "computable": true,
+        "window_indices": [
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "top_contributors": [
+          [
+            "rate",
+            0.016764634548600936,
+            0.03298601669345493
+          ],
+          [
+            "card",
+            0.014382090781555133,
+            0.028298134697290665
+          ],
+          [
+            "horizon",
+            0.011505389108548196,
+            0.022637949911704893
+          ],
+          [
+            "v",
+            0.008515251854828921,
+            0.016754569806939252
+          ],
+          [
+            "figures",
+            0.008376330069812298,
+            0.016481227951120194
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.033215619462340105,
+        "computable": true,
+        "window_indices": [
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      "sim_block": {
+        "value": 0.05731990589779633,
+        "computable": true,
+        "block_indices": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    },
+    {
+      "index": 18,
+      "date": "2026-07-05",
+      "heading": "Journal — 2026-07-05 (collective session 10, second invocation of the date)",
+      "n_tokens": 1433,
+      "prefix600": {
+        "computable": true,
+        "mtld": 117.10225689607134,
+        "hapax_share": 0.7357357357357357,
+        "top50_mass": 0.465,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 333,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 23.333333333333336,
+        "marker_tokens": 14,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 114.90533679256242,
+        "hapax_share": 0.6312178387650086,
+        "top50_mass": 0.4556873691556176,
+        "top50_partial": false,
+        "zipf_slope": -0.5683640752146502,
+        "zipf_types": 583,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.611304954640612,
+        "marker_tokens": 41,
+        "pool_tokens": 1433
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 114.6,
+        "hapax_share": 0.7335423197492164,
+        "top50_mass": 0.4694589877835951,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 319,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 24.432809773123907,
+        "marker_tokens": 14,
+        "pool_tokens": 573
+      },
+      "sim_trailing": {
+        "value": 0.06332271469744659,
+        "computable": true,
+        "window_indices": [
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "top_contributors": [
+          [
+            "card",
+            0.033329892385977805,
+            0.05263497079243476
+          ],
+          [
+            "sub-agent",
+            0.016633853474875948,
+            0.026268383398203688
+          ],
+          [
+            "verifier",
+            0.013809730237904983,
+            0.021808493688066477
+          ],
+          [
+            "cannot",
+            0.00965056258445883,
+            0.015240285623522039
+          ],
+          [
+            "one",
+            0.00965056258445883,
+            0.015240285623522039
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.04038408021037372,
+        "computable": true,
+        "window_indices": [
+          14,
+          15,
+          16,
+          17,
+          18
+        ]
+      },
+      "sim_block": {
+        "value": 0.05731990589779633,
+        "computable": true,
+        "block_indices": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    },
+    {
+      "index": 19,
+      "date": "2026-07-05",
+      "heading": "Journal — 2026-07-05 (collective session 11, third invocation of the date)",
+      "n_tokens": 1296,
+      "prefix600": {
+        "computable": true,
+        "mtld": 215.22223228398315,
+        "hapax_share": 0.7663043478260869,
+        "top50_mass": 0.41,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 368,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 21.666666666666668,
+        "marker_tokens": 13,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 209.0698324546557,
+        "hapax_share": 0.6428571428571429,
+        "top50_mass": 0.3958333333333333,
+        "top50_partial": false,
+        "zipf_slope": -0.4975734802992666,
+        "zipf_types": 616,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 18.51851851851852,
+        "marker_tokens": 24,
+        "pool_tokens": 1296
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 218.2359663031674,
+        "hapax_share": 0.7663551401869159,
+        "top50_mass": 0.42857142857142855,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 321,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 23.166023166023166,
+        "marker_tokens": 12,
+        "pool_tokens": 518
+      },
+      "sim_trailing": {
+        "value": 0.06384291779623527,
+        "computable": true,
+        "window_indices": [
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "top_contributors": [
+          [
+            "card",
+            0.0147560809471767,
+            0.023113105504157964
+          ],
+          [
+            "for",
+            0.011471358399527891,
+            0.017968098569900167
+          ],
+          [
+            "track",
+            0.009954014748907834,
+            0.015591415763104122
+          ],
+          [
+            "cannot",
+            0.009891444817602804,
+            0.015493409698430306
+          ],
+          [
+            "one",
+            0.009626176730804905,
+            0.015077908502754155
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.041193807331995416,
+        "computable": true,
+        "window_indices": [
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "sim_block": {
+        "value": 0.05731990589779633,
+        "computable": true,
+        "block_indices": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    },
+    {
+      "index": 20,
+      "date": "2026-07-06",
+      "heading": "Journal — 2026-07-06 (collective session 12)",
+      "n_tokens": 1364,
+      "prefix600": {
+        "computable": true,
+        "mtld": 125.53036711216376,
+        "hapax_share": 0.7181818181818181,
+        "top50_mass": 0.46166666666666667,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 330,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 30.0,
+        "marker_tokens": 18,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 121.61797536045489,
+        "hapax_share": 0.6219931271477663,
+        "top50_mass": 0.4237536656891496,
+        "top50_partial": false,
+        "zipf_slope": -0.5882954177689037,
+        "zipf_types": 582,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.592375366568913,
+        "marker_tokens": 39,
+        "pool_tokens": 1364
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 128.29784042587463,
+        "hapax_share": 0.7254901960784313,
+        "top50_mass": 0.46788990825688076,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 306,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 33.02752293577982,
+        "marker_tokens": 18,
+        "pool_tokens": 545
+      },
+      "sim_trailing": {
+        "value": 0.05731990589779633,
+        "computable": true,
+        "window_indices": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "top_contributors": [
+          [
+            "scope",
+            0.01954917798780458,
+            0.03410539093113924
+          ],
+          [
+            "card",
+            0.014244730022296327,
+            0.02485127949737958
+          ],
+          [
+            "against",
+            0.010513088568681401,
+            0.01834107785771082
+          ],
+          [
+            "cannot",
+            0.009467007753283182,
+            0.016516090885011627
+          ],
+          [
+            "dossier",
+            0.009116097752683698,
+            0.015903895182483488
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.03562763465704479,
+        "computable": true,
+        "window_indices": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "sim_block": {
+        "value": 0.05731990589779633,
+        "computable": true,
+        "block_indices": [
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      }
+    },
+    {
+      "index": 21,
+      "date": "2026-07-06",
+      "heading": "Journal — 2026-07-06 (collective session 13)",
+      "n_tokens": 1329,
+      "prefix600": {
+        "computable": true,
+        "mtld": 154.73134601328826,
+        "hapax_share": 0.6792452830188679,
+        "top50_mass": 0.4666666666666667,
+        "top50_partial": false,
+        "zipf_slope": -0.04134686305755836,
+        "zipf_types": 318,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 25.0,
+        "marker_tokens": 15,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 154.0980246559654,
+        "hapax_share": 0.6265486725663717,
+        "top50_mass": 0.4213694507148232,
+        "top50_partial": false,
+        "zipf_slope": -0.6058841894585328,
+        "zipf_types": 565,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 23.325808878856282,
+        "marker_tokens": 31,
+        "pool_tokens": 1329
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 130.3622845555931,
+        "hapax_share": 0.6794425087108014,
+        "top50_mass": 0.4745762711864407,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 287,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 28.248587570621467,
+        "marker_tokens": 15,
+        "pool_tokens": 531
+      },
+      "sim_trailing": {
+        "value": 0.05533699941258071,
+        "computable": true,
+        "window_indices": [
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "top_contributors": [
+          [
+            "scope",
+            0.016643978872990954,
+            0.030077487123754295
+          ],
+          [
+            "or",
+            0.013958812640324147,
+            0.025225098557025573
+          ],
+          [
+            "card",
+            0.013802721344027227,
+            0.02494302454153164
+          ],
+          [
+            "cannot",
+            0.009305875093549432,
+            0.016816732371350382
+          ],
+          [
+            "v",
+            0.009305875093549432,
+            0.016816732371350382
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.03911800575096513,
+        "computable": true,
+        "window_indices": [
+          17,
+          18,
+          19,
+          20,
+          21
+        ]
+      },
+      "sim_block": {
+        "value": 0.046388985796808425,
+        "computable": true,
+        "block_indices": [
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      }
+    },
+    {
+      "index": 22,
+      "date": "2026-07-07",
+      "heading": "Journal — 2026-07-07 (collective session 14)",
+      "n_tokens": 1301,
+      "prefix600": {
+        "computable": true,
+        "mtld": 90.25106475327564,
+        "hapax_share": 0.7058823529411765,
+        "top50_mass": 0.47,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 323,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 33.333333333333336,
+        "marker_tokens": 20,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 119.86606464828138,
+        "hapax_share": 0.6187943262411347,
+        "top50_mass": 0.4189085318985396,
+        "top50_partial": false,
+        "zipf_slope": -0.5777114437772468,
+        "zipf_types": 564,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 24.596464258262873,
+        "marker_tokens": 32,
+        "pool_tokens": 1301
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 87.07892491467577,
+        "hapax_share": 0.7123287671232876,
+        "top50_mass": 0.46923076923076923,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 292,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 36.53846153846154,
+        "marker_tokens": 19,
+        "pool_tokens": 520
+      },
+      "sim_trailing": {
+        "value": 0.04668907332183632,
+        "computable": true,
+        "window_indices": [
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "top_contributors": [
+          [
+            "scope",
+            0.01775065730718186,
+            0.03801886832240883
+          ],
+          [
+            "c",
+            0.011596466987930397,
+            0.024837646504555423
+          ],
+          [
+            "google",
+            0.00918043663397321,
+            0.01966292320837208
+          ],
+          [
+            "an",
+            0.008905401522132818,
+            0.01907384509593124
+          ],
+          [
+            "card",
+            0.008430837832959661,
+            0.018057410938196086
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.03052408755466477,
+        "computable": true,
+        "window_indices": [
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      "sim_block": {
+        "value": 0.046388985796808425,
+        "computable": true,
+        "block_indices": [
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      }
+    },
+    {
+      "index": 23,
+      "date": "2026-07-09",
+      "heading": "Journal — 2026-07-09 (collective session 15)",
+      "n_tokens": 1185,
+      "prefix600": {
+        "computable": true,
+        "mtld": 182.78251560709856,
+        "hapax_share": 0.702247191011236,
+        "top50_mass": 0.39666666666666667,
+        "top50_partial": false,
+        "zipf_slope": -0.09652378119839551,
+        "zipf_types": 356,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.333333333333332,
+        "marker_tokens": 17,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 174.0158788774003,
+        "hapax_share": 0.6409335727109515,
+        "top50_mass": 0.39156118143459917,
+        "top50_partial": false,
+        "zipf_slope": -0.5168847580871568,
+        "zipf_types": 557,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 23.628691983122362,
+        "marker_tokens": 28,
+        "pool_tokens": 1185
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 158.77674109266476,
+        "hapax_share": 0.7239057239057239,
+        "top50_mass": 0.41139240506329117,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 297,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 29.535864978902953,
+        "marker_tokens": 14,
+        "pool_tokens": 474
+      },
+      "sim_trailing": {
+        "value": 0.047457959844597,
+        "computable": true,
+        "window_indices": [
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "top_contributors": [
+          [
+            "trial",
+            0.03203528761566541,
+            0.06750245421540717
+          ],
+          [
+            "scope",
+            0.018332470493813306,
+            0.038628863427428654
+          ],
+          [
+            "c",
+            0.011924538947774567,
+            0.02512653090613661
+          ],
+          [
+            "an",
+            0.009523653565517796,
+            0.020067557890611782
+          ],
+          [
+            "google",
+            0.009513976597091602,
+            0.020047167278672538
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.030483881684311997,
+        "computable": true,
+        "window_indices": [
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      },
+      "sim_block": {
+        "value": 0.046388985796808425,
+        "computable": true,
+        "block_indices": [
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      }
+    },
+    {
+      "index": 24,
+      "date": "2026-07-09",
+      "heading": "Journal — 2026-07-09 (collective session 16)",
+      "n_tokens": 1196,
+      "prefix600": {
+        "computable": true,
+        "mtld": 123.77007974008961,
+        "hapax_share": 0.7280701754385965,
+        "top50_mass": 0.44166666666666665,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 342,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.333333333333332,
+        "marker_tokens": 17,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 103.92025281077011,
+        "hapax_share": 0.676678445229682,
+        "top50_mass": 0.4289297658862876,
+        "top50_partial": false,
+        "zipf_slope": -0.4409089875835699,
+        "zipf_types": 566,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 22.5752508361204,
+        "marker_tokens": 27,
+        "pool_tokens": 1196
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 101.2868972746331,
+        "hapax_share": 0.7279411764705882,
+        "top50_mass": 0.48535564853556484,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 272,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 29.288702928870293,
+        "marker_tokens": 14,
+        "pool_tokens": 478
+      },
+      "sim_trailing": {
+        "value": 0.0459256184000897,
+        "computable": true,
+        "window_indices": [
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "top_contributors": [
+          [
+            "trial",
+            0.02168448419113144,
+            0.047216531745360425
+          ],
+          [
+            "scope",
+            0.018011952276340913,
+            0.039219836125942584
+          ],
+          [
+            "c",
+            0.009761669226009169,
+            0.021255389837037238
+          ],
+          [
+            "market-based",
+            0.009273315148922068,
+            0.020192031097188135
+          ],
+          [
+            "skeptic",
+            0.008828425216329084,
+            0.01922331266052553
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.029018887705027398,
+        "computable": true,
+        "window_indices": [
+          20,
+          21,
+          22,
+          23,
+          24
+        ]
+      },
+      "sim_block": {
+        "value": 0.046388985796808425,
+        "computable": true,
+        "block_indices": [
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      }
+    },
+    {
+      "index": 25,
+      "date": "2026-07-09",
+      "heading": "Journal — 2026-07-09 (collective session 17)",
+      "n_tokens": 1450,
+      "prefix600": {
+        "computable": true,
+        "mtld": 114.34761488390168,
+        "hapax_share": 0.7238372093023255,
+        "top50_mass": 0.435,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 344,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 26.666666666666668,
+        "marker_tokens": 16,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 139.66883300441293,
+        "hapax_share": 0.6401225114854517,
+        "top50_mass": 0.39241379310344826,
+        "top50_partial": false,
+        "zipf_slope": -0.5759379827095442,
+        "zipf_types": 653,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 24.137931034482758,
+        "marker_tokens": 35,
+        "pool_tokens": 1450
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 111.95214212640667,
+        "hapax_share": 0.7253731343283583,
+        "top50_mass": 0.4362068965517241,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 335,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 25.862068965517242,
+        "marker_tokens": 15,
+        "pool_tokens": 580
+      },
+      "sim_trailing": {
+        "value": 0.046388985796808425,
+        "computable": true,
+        "window_indices": [
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "top_contributors": [
+          [
+            "pue",
+            0.02618697051177555,
+            0.05645083646898187
+          ],
+          [
+            "our",
+            0.018854618768478396,
+            0.040644602257666945
+          ],
+          [
+            "electricity",
+            0.012569745845652262,
+            0.027096401505111292
+          ],
+          [
+            "report",
+            0.012569745845652262,
+            0.027096401505111292
+          ],
+          [
+            "trial",
+            0.011589366267512351,
+            0.024983012817472942
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.033428224785836944,
+        "computable": true,
+        "window_indices": [
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      },
+      "sim_block": {
+        "value": 0.046388985796808425,
+        "computable": true,
+        "block_indices": [
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      }
+    },
+    {
+      "index": 26,
+      "date": "2026-07-10",
+      "heading": "Journal — 2026-07-10 (collective session 18)",
+      "n_tokens": 2359,
+      "prefix600": {
+        "computable": true,
+        "mtld": 159.57946310094928,
+        "hapax_share": 0.7397660818713451,
+        "top50_mass": 0.4483333333333333,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 342,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 26.666666666666668,
+        "marker_tokens": 16,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 141.81581790188613,
+        "hapax_share": 0.5911730545876888,
+        "top50_mass": 0.4128868164476473,
+        "top50_partial": false,
+        "zipf_slope": -0.7022693813521308,
+        "zipf_types": 861,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 22.891055532005087,
+        "marker_tokens": 54,
+        "pool_tokens": 2359
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 151.83501654463532,
+        "hapax_share": 0.7270875763747454,
+        "top50_mass": 0.42948038176033937,
+        "top50_partial": false,
+        "zipf_slope": -0.2731125412723837,
+        "zipf_types": 491,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 21.208907741251327,
+        "marker_tokens": 20,
+        "pool_tokens": 943
+      },
+      "sim_trailing": {
+        "value": 0.052053716172691944,
+        "computable": true,
+        "window_indices": [
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "top_contributors": [
+          [
+            "pue",
+            0.03777634619573578,
+            0.07257185264239355
+          ],
+          [
+            "floor",
+            0.020429471688064322,
+            0.03924690337244719
+          ],
+          [
+            "our",
+            0.020409653113534355,
+            0.039208830058979585
+          ],
+          [
+            "prior",
+            0.014694740143363446,
+            0.02822995402405582
+          ],
+          [
+            "report",
+            0.010974520236744428,
+            0.02108306773014182
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.03929939759448222,
+        "computable": true,
+        "window_indices": [
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      },
+      "sim_block": {
+        "value": null,
+        "computable": false,
+        "block_indices": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      }
+    },
+    {
+      "index": 27,
+      "date": "2026-07-10",
+      "heading": "Journal — 2026-07-10 (collective session 19)",
+      "n_tokens": 1382,
+      "prefix600": {
+        "computable": true,
+        "mtld": 107.9994765311464,
+        "hapax_share": 0.7255520504731862,
+        "top50_mass": 0.49333333333333335,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 317,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 13.333333333333334,
+        "marker_tokens": 8,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 117.96059979209315,
+        "hapax_share": 0.5929368029739777,
+        "top50_mass": 0.4630969609261939,
+        "top50_partial": false,
+        "zipf_slope": -0.639110758433918,
+        "zipf_types": 538,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 18.08972503617945,
+        "marker_tokens": 25,
+        "pool_tokens": 1382
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 109.17820128529607,
+        "hapax_share": 0.735973597359736,
+        "top50_mass": 0.48731884057971014,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 303,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 12.681159420289855,
+        "marker_tokens": 7,
+        "pool_tokens": 552
+      },
+      "sim_trailing": {
+        "value": 0.04923901746805838,
+        "computable": true,
+        "window_indices": [
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "top_contributors": [
+          [
+            "pue",
+            0.03805289605599406,
+            0.07728199710865308
+          ],
+          [
+            "our",
+            0.020016281652594645,
+            0.04065126130020632
+          ],
+          [
+            "prior",
+            0.014748724167649977,
+            0.029953327515557262
+          ],
+          [
+            "total",
+            0.00899302990273383,
+            0.01826403199163683
+          ],
+          [
+            "floor",
+            0.008826386184727301,
+            0.017925593642182294
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.03791812012777574,
+        "computable": true,
+        "window_indices": [
+          23,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      "sim_block": {
+        "value": null,
+        "computable": false,
+        "block_indices": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      }
+    },
+    {
+      "index": 28,
+      "date": "2026-07-10",
+      "heading": "Journal — 2026-07-10 (collective session 20)",
+      "n_tokens": 1000,
+      "prefix600": {
+        "computable": true,
+        "mtld": 108.47196444270782,
+        "hapax_share": 0.6505190311418685,
+        "top50_mass": 0.5166666666666667,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 289,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 26.666666666666668,
+        "marker_tokens": 16,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 110.10475977819955,
+        "hapax_share": 0.5575447570332481,
+        "top50_mass": 0.5,
+        "top50_partial": false,
+        "zipf_slope": -0.6565376472613025,
+        "zipf_types": 391,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 25.0,
+        "marker_tokens": 25,
+        "pool_tokens": 1000
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 117.9032080395342,
+        "hapax_share": 0.6940639269406392,
+        "top50_mass": 0.535,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 219,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 25.0,
+        "marker_tokens": 10,
+        "pool_tokens": 400
+      },
+      "sim_trailing": {
+        "value": 0.05844976212561183,
+        "computable": true,
+        "window_indices": [
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "top_contributors": [
+          [
+            "pue",
+            0.03687748927549582,
+            0.063092625075606
+          ],
+          [
+            "our",
+            0.018476130839266063,
+            0.031610275503876
+          ],
+          [
+            "evidence",
+            0.011940012506510791,
+            0.02042782052876628
+          ],
+          [
+            "oia",
+            0.011940012506510791,
+            0.02042782052876628
+          ],
+          [
+            "turnitin",
+            0.009552010005208634,
+            0.016342256423013027
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.04248819849368677,
+        "computable": true,
+        "window_indices": [
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      },
+      "sim_block": {
+        "value": null,
+        "computable": false,
+        "block_indices": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      }
+    },
+    {
+      "index": 29,
+      "date": "2026-07-10",
+      "heading": "Journal — 2026-07-10 (collective session 21)",
+      "n_tokens": 599,
+      "prefix600": {
+        "computable": false,
+        "mtld": null,
+        "hapax_share": null,
+        "top50_mass": null,
+        "top50_partial": null,
+        "zipf_slope": null,
+        "zipf_types": null,
+        "zipf_non_computable": null,
+        "marker_rate_per_1000": null,
+        "marker_tokens": null,
+        "pool_tokens": null
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 119.8,
+        "hapax_share": 0.6275862068965518,
+        "top50_mass": 0.5025041736227045,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 290,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 23.37228714524207,
+        "marker_tokens": 14,
+        "pool_tokens": 599
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 107.35569105691056,
+        "hapax_share": 0.756578947368421,
+        "top50_mass": 0.5732217573221757,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 152,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 20.920502092050206,
+        "marker_tokens": 5,
+        "pool_tokens": 239
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          25,
+          26,
+          27,
+          28,
+          29
+        ]
+      },
+      "sim_block": {
+        "value": null,
+        "computable": false,
+        "block_indices": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      }
+    },
+    {
+      "index": 30,
+      "date": "2026-07-10",
+      "heading": "Journal — 2026-07-10 (collective session 22)",
+      "n_tokens": 711,
+      "prefix600": {
+        "computable": true,
+        "mtld": 200.35898586493158,
+        "hapax_share": 0.7,
+        "top50_mass": 0.43,
+        "top50_partial": false,
+        "zipf_slope": -0.036118111012430044,
+        "zipf_types": 340,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 23.333333333333336,
+        "marker_tokens": 14,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 188.51699812298892,
+        "hapax_share": 0.6825396825396826,
+        "top50_mass": 0.43319268635724334,
+        "top50_partial": false,
+        "zipf_slope": -0.26396786652144155,
+        "zipf_types": 378,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 23.90998593530239,
+        "marker_tokens": 17,
+        "pool_tokens": 711
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 208.7295830526237,
+        "hapax_share": 0.8040201005025126,
+        "top50_mass": 0.4753521126760563,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 199,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 31.69014084507042,
+        "marker_tokens": 9,
+        "pool_tokens": 284
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "sim_block": {
+        "value": null,
+        "computable": false,
+        "block_indices": [
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      }
+    },
+    {
+      "index": 31,
+      "date": "2026-07-10",
+      "heading": "Journal — 2026-07-10 (collective session 23)",
+      "n_tokens": 1225,
+      "prefix600": {
+        "computable": true,
+        "mtld": 137.51849112426035,
+        "hapax_share": 0.6741214057507987,
+        "top50_mass": 0.475,
+        "top50_partial": false,
+        "zipf_slope": -0.04273210513671915,
+        "zipf_types": 313,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.333333333333332,
+        "marker_tokens": 17,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 130.40175242356452,
+        "hapax_share": 0.6365384615384615,
+        "top50_mass": 0.4473469387755102,
+        "top50_partial": false,
+        "zipf_slope": -0.5587358634843721,
+        "zipf_types": 520,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.57142857142857,
+        "marker_tokens": 35,
+        "pool_tokens": 1225
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 115.81331877729258,
+        "hapax_share": 0.7169117647058824,
+        "top50_mass": 0.49183673469387756,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 272,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 32.6530612244898,
+        "marker_tokens": 16,
+        "pool_tokens": 490
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          27,
+          28,
+          29,
+          30,
+          31
+        ]
+      },
+      "sim_block": {
+        "value": null,
+        "computable": false,
+        "block_indices": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
+      }
+    },
+    {
+      "index": 32,
+      "date": "2026-07-10",
+      "heading": "Journal — 2026-07-10 (collective session 24)",
+      "n_tokens": 724,
+      "prefix600": {
+        "computable": true,
+        "mtld": 180.49116364470967,
+        "hapax_share": 0.6920731707317073,
+        "top50_mass": 0.4483333333333333,
+        "top50_partial": false,
+        "zipf_slope": -0.019541803267047592,
+        "zipf_types": 328,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.333333333333332,
+        "marker_tokens": 17,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 167.59126827340972,
+        "hapax_share": 0.6593406593406593,
+        "top50_mass": 0.44613259668508287,
+        "top50_partial": false,
+        "zipf_slope": -0.3299625851906453,
+        "zipf_types": 364,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 27.624309392265193,
+        "marker_tokens": 20,
+        "pool_tokens": 724
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 134.3154243080747,
+        "hapax_share": 0.6978021978021978,
+        "top50_mass": 0.5259515570934256,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 182,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 27.68166089965398,
+        "marker_tokens": 8,
+        "pool_tokens": 289
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      },
+      "sim_block": {
+        "value": null,
+        "computable": false,
+        "block_indices": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
+      }
+    },
+    {
+      "index": 33,
+      "date": "2026-07-11",
+      "heading": "Journal — 2026-07-11 (collective session 24 — SUPERSEDED OPENING; see annotation)",
+      "n_tokens": 454,
+      "prefix600": {
+        "computable": false,
+        "mtld": null,
+        "hapax_share": null,
+        "top50_mass": null,
+        "top50_partial": null,
+        "zipf_slope": null,
+        "zipf_types": null,
+        "zipf_non_computable": null,
+        "marker_rate_per_1000": null,
+        "marker_tokens": null,
+        "pool_tokens": null
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 155.38711614965135,
+        "hapax_share": 0.708171206225681,
+        "top50_mass": 0.4889867841409692,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 257,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 41.85022026431718,
+        "marker_tokens": 19,
+        "pool_tokens": 454
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 187.20571428571432,
+        "hapax_share": 0.8106060606060606,
+        "top50_mass": 0.5469613259668509,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 132,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 55.248618784530386,
+        "marker_tokens": 10,
+        "pool_tokens": 181
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          29,
+          30,
+          31,
+          32,
+          33
+        ],
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          29,
+          30,
+          31,
+          32,
+          33
+        ]
+      },
+      "sim_block": {
+        "value": null,
+        "computable": false,
+        "block_indices": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
+      }
+    },
+    {
+      "index": 34,
+      "date": "2026-07-11",
+      "heading": "Journal — 2026-07-11 (collective session 25)",
+      "n_tokens": 1577,
+      "prefix600": {
+        "computable": true,
+        "mtld": 162.63586956521738,
+        "hapax_share": 0.6592356687898089,
+        "top50_mass": 0.465,
+        "top50_partial": false,
+        "zipf_slope": -0.14318551997243406,
+        "zipf_types": 314,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 18.333333333333332,
+        "marker_tokens": 11,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 175.22222222222223,
+        "hapax_share": 0.584,
+        "top50_mass": 0.40710209258084973,
+        "top50_partial": false,
+        "zipf_slope": -0.7044986468190495,
+        "zipf_types": 625,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 29.803424223208623,
+        "marker_tokens": 47,
+        "pool_tokens": 1577
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 144.87120897382636,
+        "hapax_share": 0.6666666666666666,
+        "top50_mass": 0.4634920634920635,
+        "top50_partial": false,
+        "zipf_slope": -0.16721998859843637,
+        "zipf_types": 327,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 19.04761904761905,
+        "marker_tokens": 12,
+        "pool_tokens": 630
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      },
+      "sim_block": {
+        "value": null,
+        "computable": false,
+        "block_indices": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
+      }
+    },
+    {
+      "index": 35,
+      "date": "2026-07-11",
+      "heading": "Journal — 2026-07-11 (collective session 26)",
+      "n_tokens": 2133,
+      "prefix600": {
+        "computable": true,
+        "mtld": 200.0,
+        "hapax_share": 0.7314285714285714,
+        "top50_mass": 0.4266666666666667,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 350,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 31.666666666666668,
+        "marker_tokens": 19,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 239.03717040306657,
+        "hapax_share": 0.6556503198294243,
+        "top50_mass": 0.36380684481950304,
+        "top50_partial": false,
+        "zipf_slope": -0.5852157356145166,
+        "zipf_types": 938,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 22.972339428035628,
+        "marker_tokens": 49,
+        "pool_tokens": 2133
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 215.84153690252413,
+        "hapax_share": 0.7265135699373695,
+        "top50_mass": 0.3962485345838218,
+        "top50_partial": false,
+        "zipf_slope": -0.26224236356731606,
+        "zipf_types": 479,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 26.963657678780773,
+        "marker_tokens": 23,
+        "pool_tokens": 853
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
+      },
+      "sim_block": {
+        "value": null,
+        "computable": false,
+        "block_indices": [
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
+      }
+    },
+    {
+      "index": 36,
+      "date": "2026-07-11",
+      "heading": "Journal — 2026-07-11 (collective session 27)",
+      "n_tokens": 1139,
+      "prefix600": {
+        "computable": true,
+        "mtld": 202.7732712669697,
+        "hapax_share": 0.6666666666666666,
+        "top50_mass": 0.44666666666666666,
+        "top50_partial": false,
+        "zipf_slope": -0.15247260066137341,
+        "zipf_types": 324,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 25.0,
+        "marker_tokens": 15,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 196.44217633785033,
+        "hapax_share": 0.62109375,
+        "top50_mass": 0.4108867427568042,
+        "top50_partial": false,
+        "zipf_slope": -0.5364984327998,
+        "zipf_types": 512,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 29.850746268656717,
+        "marker_tokens": 34,
+        "pool_tokens": 1139
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 170.7736453901261,
+        "hapax_share": 0.686046511627907,
+        "top50_mass": 0.4747252747252747,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 258,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 30.76923076923077,
+        "marker_tokens": 14,
+        "pool_tokens": 455
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          32,
+          33,
+          34,
+          35,
+          36
+        ],
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          32,
+          33,
+          34,
+          35,
+          36
+        ]
+      },
+      "sim_block": {
+        "value": null,
+        "computable": false,
+        "block_indices": [
+          36,
+          37,
+          38,
+          39,
+          40
+        ]
+      }
+    },
+    {
+      "index": 37,
+      "date": "2026-07-11",
+      "heading": "Journal — 2026-07-11 (collective session 28)",
+      "n_tokens": 1617,
+      "prefix600": {
+        "computable": true,
+        "mtld": 181.75182481751824,
+        "hapax_share": 0.6758409785932722,
+        "top50_mass": 0.445,
+        "top50_partial": false,
+        "zipf_slope": -0.11387921935276785,
+        "zipf_types": 327,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 23.333333333333336,
+        "marker_tokens": 14,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 185.14784859753073,
+        "hapax_share": 0.6120058565153733,
+        "top50_mass": 0.3821892393320965,
+        "top50_partial": false,
+        "zipf_slope": -0.6301943544816815,
+        "zipf_types": 683,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 21.026592455163883,
+        "marker_tokens": 34,
+        "pool_tokens": 1617
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 196.80496453900707,
+        "hapax_share": 0.6779661016949152,
+        "top50_mass": 0.43034055727554177,
+        "top50_partial": false,
+        "zipf_slope": -0.21599590469410945,
+        "zipf_types": 354,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 24.76780185758514,
+        "marker_tokens": 16,
+        "pool_tokens": 646
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          33,
+          34,
+          35,
+          36,
+          37
+        ],
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          33,
+          34,
+          35,
+          36,
+          37
+        ]
+      },
+      "sim_block": {
+        "value": null,
+        "computable": false,
+        "block_indices": [
+          36,
+          37,
+          38,
+          39,
+          40
+        ]
+      }
+    },
+    {
+      "index": 38,
+      "date": "2026-07-11",
+      "heading": "Journal — 2026-07-11 (collective session 29)",
+      "n_tokens": 1801,
+      "prefix600": {
+        "computable": true,
+        "mtld": 144.12973268114135,
+        "hapax_share": 0.6842105263157895,
+        "top50_mass": 0.4583333333333333,
+        "top50_partial": false,
+        "zipf_slope": -0.04004132713755145,
+        "zipf_types": 323,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 21.666666666666668,
+        "marker_tokens": 13,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 147.1352251548294,
+        "hapax_share": 0.5706134094151213,
+        "top50_mass": 0.3897834536368684,
+        "top50_partial": false,
+        "zipf_slope": -0.7421429447763159,
+        "zipf_types": 701,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 21.654636313159358,
+        "marker_tokens": 39,
+        "pool_tokens": 1801
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 140.19303338171264,
+        "hapax_share": 0.6532258064516129,
+        "top50_mass": 0.4305555555555556,
+        "top50_partial": false,
+        "zipf_slope": -0.37194320961241895,
+        "zipf_types": 372,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 22.22222222222222,
+        "marker_tokens": 16,
+        "pool_tokens": 720
+      },
+      "sim_trailing": {
+        "value": 0.05794252148103533,
+        "computable": true,
+        "window_indices": [
+          34,
+          35,
+          36,
+          37,
+          38
+        ],
+        "top_contributors": [
+          [
+            "verifier",
+            0.024368216944523586,
+            0.042055844864292515
+          ],
+          [
+            "s",
+            0.02258073975286967,
+            0.03897093045952509
+          ],
+          [
+            "committed",
+            0.011996051779027923,
+            0.020703365114951456
+          ],
+          [
+            "by",
+            0.0103845335303218,
+            0.017922129146072236
+          ],
+          [
+            "candidates",
+            0.00883897200036783,
+            0.015254724465625537
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.03749562391088005,
+        "computable": true,
+        "window_indices": [
+          34,
+          35,
+          36,
+          37,
+          38
+        ]
+      },
+      "sim_block": {
+        "value": null,
+        "computable": false,
+        "block_indices": [
+          36,
+          37,
+          38,
+          39,
+          40
+        ]
+      }
+    },
+    {
+      "index": 39,
+      "date": "2026-07-11",
+      "heading": "Journal — 2026-07-11 (collective session 30)",
+      "n_tokens": 662,
+      "prefix600": {
+        "computable": true,
+        "mtld": 154.89830141728876,
+        "hapax_share": 0.6753246753246753,
+        "top50_mass": 0.4866666666666667,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 308,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 26.666666666666668,
+        "marker_tokens": 16,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 143.56087908754805,
+        "hapax_share": 0.6615384615384615,
+        "top50_mass": 0.48942598187311176,
+        "top50_partial": false,
+        "zipf_slope": -0.18673187024131097,
+        "zipf_types": 325,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 24.169184290030213,
+        "marker_tokens": 16,
+        "pool_tokens": 662
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 123.75,
+        "hapax_share": 0.7133757961783439,
+        "top50_mass": 0.5946969696969697,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 157,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 34.090909090909086,
+        "marker_tokens": 9,
+        "pool_tokens": 264
+      },
+      "sim_trailing": {
+        "value": 0.05583225839779832,
+        "computable": true,
+        "window_indices": [
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "top_contributors": [
+          [
+            "candidates",
+            0.008266909741824379,
+            0.014806690574691809
+          ],
+          [
+            "exactly",
+            0.008078258415652715,
+            0.014468801097200954
+          ],
+          [
+            "work's",
+            0.008048202646399594,
+            0.01441496883227809
+          ],
+          [
+            "layer",
+            0.007872564305788398,
+            0.014100386643322391
+          ],
+          [
+            "by",
+            0.007623880465128642,
+            0.01365497417426568
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.035385525469207146,
+        "computable": true,
+        "window_indices": [
+          35,
+          36,
+          37,
+          38,
+          39
+        ]
+      },
+      "sim_block": {
+        "value": null,
+        "computable": false,
+        "block_indices": [
+          36,
+          37,
+          38,
+          39,
+          40
+        ]
+      }
+    },
+    {
+      "index": 40,
+      "date": "2026-07-12",
+      "heading": "Journal — 2026-07-12 (collective session 31)",
+      "n_tokens": 349,
+      "prefix600": {
+        "computable": false,
+        "mtld": null,
+        "hapax_share": null,
+        "top50_mass": null,
+        "top50_partial": null,
+        "zipf_slope": null,
+        "zipf_types": null,
+        "zipf_non_computable": null,
+        "marker_rate_per_1000": null,
+        "marker_tokens": null,
+        "pool_tokens": null
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 160.0546357615894,
+        "hapax_share": 0.6731707317073171,
+        "top50_mass": 0.5071633237822349,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 205,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 22.922636103151863,
+        "marker_tokens": 8,
+        "pool_tokens": 349
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 74.11994219653178,
+        "hapax_share": 0.8041237113402062,
+        "top50_mass": 0.6618705035971223,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 97,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 28.77697841726619,
+        "marker_tokens": 4,
+        "pool_tokens": 139
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          36,
+          37,
+          38,
+          39,
+          40
+        ]
+      },
+      "sim_block": {
+        "value": null,
+        "computable": false,
+        "block_indices": [
+          36,
+          37,
+          38,
+          39,
+          40
+        ]
+      }
+    },
+    {
+      "index": 41,
+      "date": "2026-07-12",
+      "heading": "Journal — 2026-07-12 (collective session 32)",
+      "n_tokens": 1791,
+      "prefix600": {
+        "computable": true,
+        "mtld": 105.34469977761304,
+        "hapax_share": 0.6923076923076923,
+        "top50_mass": 0.4866666666666667,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 312,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 21.666666666666668,
+        "marker_tokens": 13,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 131.89664352643683,
+        "hapax_share": 0.5905631659056316,
+        "top50_mass": 0.4276940256839754,
+        "top50_partial": false,
+        "zipf_slope": -0.7438779555568303,
+        "zipf_types": 657,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 18.983807928531544,
+        "marker_tokens": 34,
+        "pool_tokens": 1791
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 107.8521637384425,
+        "hapax_share": 0.6638176638176638,
+        "top50_mass": 0.4748603351955307,
+        "top50_partial": false,
+        "zipf_slope": -0.2747256711403651,
+        "zipf_types": 351,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 23.743016759776534,
+        "marker_tokens": 17,
+        "pool_tokens": 716
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          37,
+          38,
+          39,
+          40,
+          41
+        ]
+      },
+      "sim_block": {
+        "value": 0.06013622292170997,
+        "computable": true,
+        "block_indices": [
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "index": 42,
+      "date": "2026-07-12",
+      "heading": "Journal — 2026-07-12 (collective session 33 — the team steer: named individuals, and the appellate caveat on instrument 001)",
+      "n_tokens": 908,
+      "prefix600": {
+        "computable": true,
+        "mtld": 160.24024932367217,
+        "hapax_share": 0.6878980891719745,
+        "top50_mass": 0.48,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 314,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 30.0,
+        "marker_tokens": 18,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 176.18458264340882,
+        "hapax_share": 0.6314553990610329,
+        "top50_mass": 0.43942731277533037,
+        "top50_partial": false,
+        "zipf_slope": -0.500464880215549,
+        "zipf_types": 426,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.634361233480178,
+        "marker_tokens": 26,
+        "pool_tokens": 908
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 133.0917602996255,
+        "hapax_share": 0.7135922330097088,
+        "top50_mass": 0.5454545454545454,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 206,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 30.303030303030305,
+        "marker_tokens": 11,
+        "pool_tokens": 363
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          38,
+          39,
+          40,
+          41,
+          42
+        ],
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          38,
+          39,
+          40,
+          41,
+          42
+        ]
+      },
+      "sim_block": {
+        "value": 0.06013622292170997,
+        "computable": true,
+        "block_indices": [
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "index": 43,
+      "date": "2026-07-13",
+      "heading": "Journal — 2026-07-13 (collective session 34)",
+      "n_tokens": 1577,
+      "prefix600": {
+        "computable": true,
+        "mtld": 114.74778078235386,
+        "hapax_share": 0.6818181818181818,
+        "top50_mass": 0.48833333333333334,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 308,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 30.0,
+        "marker_tokens": 18,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 119.22936669533621,
+        "hapax_share": 0.6028708133971292,
+        "top50_mass": 0.4254914394419784,
+        "top50_partial": false,
+        "zipf_slope": -0.6396762589552762,
+        "zipf_types": 627,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 24.730500951173116,
+        "marker_tokens": 39,
+        "pool_tokens": 1577
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 106.78902765388045,
+        "hapax_share": 0.6873065015479877,
+        "top50_mass": 0.48412698412698413,
+        "top50_partial": false,
+        "zipf_slope": -0.02016442961067113,
+        "zipf_types": 323,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.57142857142857,
+        "marker_tokens": 18,
+        "pool_tokens": 630
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          39,
+          40,
+          41,
+          42,
+          43
+        ],
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          39,
+          40,
+          41,
+          42,
+          43
+        ]
+      },
+      "sim_block": {
+        "value": 0.06013622292170997,
+        "computable": true,
+        "block_indices": [
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "index": 44,
+      "date": "2026-07-13",
+      "heading": "Journal — 2026-07-13 (collective session 35 — consolidation, sessions 32–34)",
+      "n_tokens": 1156,
+      "prefix600": {
+        "computable": true,
+        "mtld": 125.10661532740625,
+        "hapax_share": 0.6587837837837838,
+        "top50_mass": 0.505,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 296,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 26.666666666666668,
+        "marker_tokens": 16,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 132.45371181774914,
+        "hapax_share": 0.5836909871244635,
+        "top50_mass": 0.45761245674740486,
+        "top50_partial": false,
+        "zipf_slope": -0.6349812165815165,
+        "zipf_types": 466,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 27.68166089965398,
+        "marker_tokens": 32,
+        "pool_tokens": 1156
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 108.04421420295209,
+        "hapax_share": 0.6995884773662552,
+        "top50_mass": 0.5324675324675324,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 243,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 25.974025974025977,
+        "marker_tokens": 12,
+        "pool_tokens": 462
+      },
+      "sim_trailing": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          40,
+          41,
+          42,
+          43,
+          44
+        ],
+        "top_contributors": []
+      },
+      "sim_content": {
+        "value": null,
+        "computable": false,
+        "window_indices": [
+          40,
+          41,
+          42,
+          43,
+          44
+        ]
+      },
+      "sim_block": {
+        "value": 0.06013622292170997,
+        "computable": true,
+        "block_indices": [
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "index": 45,
+      "date": "2026-07-13",
+      "heading": "Journal — 2026-07-13 (collective session 36 — round 3: the trust-list gate)",
+      "n_tokens": 1751,
+      "prefix600": {
+        "computable": true,
+        "mtld": 90.4303510758777,
+        "hapax_share": 0.6388888888888888,
+        "top50_mass": 0.5066666666666667,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 288,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 31.666666666666668,
+        "marker_tokens": 19,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 103.96420772727262,
+        "hapax_share": 0.5861486486486487,
+        "top50_mass": 0.4694460308395203,
+        "top50_partial": false,
+        "zipf_slope": -0.7338834326076712,
+        "zipf_types": 592,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 27.984009137635635,
+        "marker_tokens": 49,
+        "pool_tokens": 1751
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 97.82640437644585,
+        "hapax_share": 0.6088328075709779,
+        "top50_mass": 0.49,
+        "top50_partial": false,
+        "zipf_slope": -0.42447482973798034,
+        "zipf_types": 317,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 30.0,
+        "marker_tokens": 21,
+        "pool_tokens": 700
+      },
+      "sim_trailing": {
+        "value": 0.06013622292170997,
+        "computable": true,
+        "window_indices": [
+          41,
+          42,
+          43,
+          44,
+          45
+        ],
+        "top_contributors": [
+          [
+            "adv",
+            0.04400546537116375,
+            0.07317630411948803
+          ],
+          [
+            "c",
+            0.02608022403652726,
+            0.04336857682345719
+          ],
+          [
+            "test",
+            0.018444283107876734,
+            0.03067083732859136
+          ],
+          [
+            "manifest",
+            0.01825395156172011,
+            0.030354336662421464
+          ],
+          [
+            "forge",
+            0.011527676942422958,
+            0.019169273330369597
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.04704382050488004,
+        "computable": true,
+        "window_indices": [
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      },
+      "sim_block": {
+        "value": 0.06013622292170997,
+        "computable": true,
+        "block_indices": [
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      }
+    },
+    {
+      "index": 46,
+      "date": "2026-07-14",
+      "heading": "Journal — 2026-07-14 (collective session 37 — the 014 fold)",
+      "n_tokens": 2150,
+      "prefix600": {
+        "computable": true,
+        "mtld": 107.41520209509986,
+        "hapax_share": 0.6216216216216216,
+        "top50_mass": 0.4816666666666667,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 296,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 30.0,
+        "marker_tokens": 18,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 135.06779241890297,
+        "hapax_share": 0.5334281650071123,
+        "top50_mass": 0.4283720930232558,
+        "top50_partial": false,
+        "zipf_slope": -0.831599260376742,
+        "zipf_types": 703,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.83720930232558,
+        "marker_tokens": 62,
+        "pool_tokens": 2150
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 125.85805262275852,
+        "hapax_share": 0.6212121212121212,
+        "top50_mass": 0.4511627906976744,
+        "top50_partial": false,
+        "zipf_slope": -0.5093330434055242,
+        "zipf_types": 396,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 22.093023255813954,
+        "marker_tokens": 19,
+        "pool_tokens": 860
+      },
+      "sim_trailing": {
+        "value": 0.08199599866315453,
+        "computable": true,
+        "window_indices": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "top_contributors": [
+          [
+            "trust",
+            0.09459335488050571,
+            0.1153633792169567
+          ],
+          [
+            "list",
+            0.07484309397138912,
+            0.09127651982000969
+          ],
+          [
+            "c",
+            0.038428465548389086,
+            0.046866269299622766
+          ],
+          [
+            "adv",
+            0.027041321250749602,
+            0.03297883029858237
+          ],
+          [
+            "pa",
+            0.02182923574165516,
+            0.026622318280836155
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.05193731299492753,
+        "computable": true,
+        "window_indices": [
+          42,
+          43,
+          44,
+          45,
+          46
+        ]
+      },
+      "sim_block": {
+        "value": 0.06018536172147469,
+        "computable": true,
+        "block_indices": [
+          46,
+          47,
+          48,
+          49,
+          50
+        ]
+      }
+    },
+    {
+      "index": 47,
+      "date": "2026-07-15",
+      "heading": "Journal — 2026-07-15 (collective session 38 — consolidation of sessions 35–37)",
+      "n_tokens": 1288,
+      "prefix600": {
+        "computable": true,
+        "mtld": 107.43566509604929,
+        "hapax_share": 0.6566666666666666,
+        "top50_mass": 0.495,
+        "top50_partial": false,
+        "zipf_slope": -0.06960009499517267,
+        "zipf_types": 300,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 31.666666666666668,
+        "marker_tokens": 19,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 103.09871399187851,
+        "hapax_share": 0.5943775100401606,
+        "top50_mass": 0.47593167701863354,
+        "top50_partial": false,
+        "zipf_slope": -0.644586497434486,
+        "zipf_types": 498,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 25.62111801242236,
+        "marker_tokens": 33,
+        "pool_tokens": 1288
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 100.68141292735962,
+        "hapax_share": 0.6877323420074349,
+        "top50_mass": 0.5087378640776699,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 269,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 29.12621359223301,
+        "marker_tokens": 15,
+        "pool_tokens": 515
+      },
+      "sim_trailing": {
+        "value": 0.09187477182218093,
+        "computable": true,
+        "window_indices": [
+          43,
+          44,
+          45,
+          46,
+          47
+        ],
+        "top_contributors": [
+          [
+            "sessions",
+            0.05292034782060641,
+            0.05760052163506987
+          ],
+          [
+            "trust",
+            0.049076770513247145,
+            0.053417025740464204
+          ],
+          [
+            "c",
+            0.042988398524686416,
+            0.046790209838984236
+          ],
+          [
+            "list",
+            0.033525702814844856,
+            0.036490651513923965
+          ],
+          [
+            "adv",
+            0.029773195590583557,
+            0.03240627976547044
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.060796364805717026,
+        "computable": true,
+        "window_indices": [
+          43,
+          44,
+          45,
+          46,
+          47
+        ]
+      },
+      "sim_block": {
+        "value": 0.06018536172147469,
+        "computable": true,
+        "block_indices": [
+          46,
+          47,
+          48,
+          49,
+          50
+        ]
+      }
+    },
+    {
+      "index": 48,
+      "date": "2026-07-16",
+      "heading": "Journal — 2026-07-16 (collective session 39)",
+      "n_tokens": 1639,
+      "prefix600": {
+        "computable": true,
+        "mtld": 165.36118510295177,
+        "hapax_share": 0.7669376693766937,
+        "top50_mass": 0.4083333333333333,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 369,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 30.0,
+        "marker_tokens": 18,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 193.5631140956187,
+        "hapax_share": 0.6551724137931034,
+        "top50_mass": 0.350823672971324,
+        "top50_partial": false,
+        "zipf_slope": -0.5537166316352617,
+        "zipf_types": 783,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.065893837705918,
+        "marker_tokens": 46,
+        "pool_tokens": 1639
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 152.26158504096884,
+        "hapax_share": 0.7487179487179487,
+        "top50_mass": 0.4076335877862595,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 390,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 27.48091603053435,
+        "marker_tokens": 18,
+        "pool_tokens": 655
+      },
+      "sim_trailing": {
+        "value": 0.08371675412889298,
+        "computable": true,
+        "window_indices": [
+          44,
+          45,
+          46,
+          47,
+          48
+        ],
+        "top_contributors": [
+          [
+            "c",
+            0.06667065067658533,
+            0.07963836076818874
+          ],
+          [
+            "trust",
+            0.043779593722760274,
+            0.05229490103660232
+          ],
+          [
+            "list",
+            0.02958669031470236,
+            0.03534142074972203
+          ],
+          [
+            "archivist",
+            0.026499820569494487,
+            0.03165414240582538
+          ],
+          [
+            "pa",
+            0.021539748680127566,
+            0.025729316555876357
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.052359715908914216,
+        "computable": true,
+        "window_indices": [
+          44,
+          45,
+          46,
+          47,
+          48
+        ]
+      },
+      "sim_block": {
+        "value": 0.06018536172147469,
+        "computable": true,
+        "block_indices": [
+          46,
+          47,
+          48,
+          49,
+          50
+        ]
+      }
+    },
+    {
+      "index": 49,
+      "date": "2026-07-16",
+      "heading": "Collective session 40 (2026-07-16, second invocation of the date)",
+      "n_tokens": 1388,
+      "prefix600": {
+        "computable": true,
+        "mtld": 147.37854388017126,
+        "hapax_share": 0.7204610951008645,
+        "top50_mass": 0.4266666666666667,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 347,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 38.33333333333333,
+        "marker_tokens": 23,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 164.2414640148101,
+        "hapax_share": 0.6189710610932476,
+        "top50_mass": 0.38256484149855907,
+        "top50_partial": false,
+        "zipf_slope": -0.6130081987152628,
+        "zipf_types": 622,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 33.14121037463977,
+        "marker_tokens": 46,
+        "pool_tokens": 1388
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 162.58161255669611,
+        "hapax_share": 0.7347560975609756,
+        "top50_mass": 0.43243243243243246,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 328,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 37.83783783783784,
+        "marker_tokens": 21,
+        "pool_tokens": 555
+      },
+      "sim_trailing": {
+        "value": 0.06907934939931057,
+        "computable": true,
+        "window_indices": [
+          45,
+          46,
+          47,
+          48,
+          49
+        ],
+        "top_contributors": [
+          [
+            "c",
+            0.07064559236219976,
+            0.10226730995081552
+          ],
+          [
+            "trust",
+            0.04395896849400815,
+            0.06363546975508555
+          ],
+          [
+            "pa",
+            0.022823960609326073,
+            0.03304020783026347
+          ],
+          [
+            "fold",
+            0.018465073747539407,
+            0.02673023690597134
+          ],
+          [
+            "adv",
+            0.013042263205329184,
+            0.018880118760150555
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.04430464973385903,
+        "computable": true,
+        "window_indices": [
+          45,
+          46,
+          47,
+          48,
+          49
+        ]
+      },
+      "sim_block": {
+        "value": 0.06018536172147469,
+        "computable": true,
+        "block_indices": [
+          46,
+          47,
+          48,
+          49,
+          50
+        ]
+      }
+    },
+    {
+      "index": 50,
+      "date": "2026-07-16",
+      "heading": "Collective session 41 (2026-07-16, third invocation of the date)",
+      "n_tokens": 1419,
+      "prefix600": {
+        "computable": true,
+        "mtld": 131.5048753727999,
+        "hapax_share": 0.6878980891719745,
+        "top50_mass": 0.48,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 314,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 40.0,
+        "marker_tokens": 24,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 154.38004852376702,
+        "hapax_share": 0.640650406504065,
+        "top50_mass": 0.3960535588442565,
+        "top50_partial": false,
+        "zipf_slope": -0.6014811904433247,
+        "zipf_types": 615,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 31.007751937984494,
+        "marker_tokens": 44,
+        "pool_tokens": 1419
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 127.07354963055434,
+        "hapax_share": 0.6789297658862876,
+        "top50_mass": 0.47971781305114636,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 299,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 42.32804232804233,
+        "marker_tokens": 24,
+        "pool_tokens": 567
+      },
+      "sim_trailing": {
+        "value": 0.06018536172147469,
+        "computable": true,
+        "window_indices": [
+          46,
+          47,
+          48,
+          49,
+          50
+        ],
+        "top_contributors": [
+          [
+            "archivist",
+            0.02431529955258689,
+            0.04040068690641593
+          ],
+          [
+            "fold",
+            0.01683348207298714,
+            0.02796939586554117
+          ],
+          [
+            "trust",
+            0.01472929681386375,
+            0.024473221382348528
+          ],
+          [
+            "row",
+            0.014589179731552134,
+            0.024240412143849557
+          ],
+          [
+            "v",
+            0.010207456673179861,
+            0.01696003210949839
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.03526356322175066,
+        "computable": true,
+        "window_indices": [
+          46,
+          47,
+          48,
+          49,
+          50
+        ]
+      },
+      "sim_block": {
+        "value": 0.06018536172147469,
+        "computable": true,
+        "block_indices": [
+          46,
+          47,
+          48,
+          49,
+          50
+        ]
+      }
+    },
+    {
+      "index": 51,
+      "date": "2026-07-17",
+      "heading": "Session 42 — 2026-07-17",
+      "n_tokens": 1335,
+      "prefix600": {
+        "computable": true,
+        "mtld": 181.45233611335306,
+        "hapax_share": 0.717201166180758,
+        "top50_mass": 0.43333333333333335,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 343,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 26.666666666666668,
+        "marker_tokens": 16,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 145.56429337077117,
+        "hapax_share": 0.6228373702422145,
+        "top50_mass": 0.41198501872659177,
+        "top50_partial": false,
+        "zipf_slope": -0.5807349528937589,
+        "zipf_types": 578,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 25.46816479400749,
+        "marker_tokens": 34,
+        "pool_tokens": 1335
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 170.01292363307726,
+        "hapax_share": 0.7184466019417476,
+        "top50_mass": 0.44569288389513106,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 309,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.089887640449437,
+        "marker_tokens": 15,
+        "pool_tokens": 534
+      },
+      "sim_trailing": {
+        "value": 0.05397521517190316,
+        "computable": true,
+        "window_indices": [
+          47,
+          48,
+          49,
+          50,
+          51
+        ],
+        "top_contributors": [
+          [
+            "archivist",
+            0.022378843881919703,
+            0.04146133333724815
+          ],
+          [
+            "row",
+            0.013427306329151822,
+            0.02487680000234889
+          ],
+          [
+            "v",
+            0.010188767205653834,
+            0.018876751437125545
+          ],
+          [
+            "four",
+            0.010070479746863866,
+            0.018657600001761667
+          ],
+          [
+            "work",
+            0.009389578160860074,
+            0.017396092134057534
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.029932961213171662,
+        "computable": true,
+        "window_indices": [
+          47,
+          48,
+          49,
+          50,
+          51
+        ]
+      },
+      "sim_block": {
+        "value": 0.0775691170567926,
+        "computable": true,
+        "block_indices": [
+          51,
+          52,
+          53,
+          54,
+          55
+        ]
+      }
+    },
+    {
+      "index": 52,
+      "date": "2026-07-17",
+      "heading": "Session 43 — 2026-07-17 (second invocation of the day)",
+      "n_tokens": 1172,
+      "prefix600": {
+        "computable": true,
+        "mtld": 122.17372230752359,
+        "hapax_share": 0.6687306501547987,
+        "top50_mass": 0.45,
+        "top50_partial": false,
+        "zipf_slope": -0.1352091517334154,
+        "zipf_types": 323,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 18.333333333333332,
+        "marker_tokens": 11,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 127.54589680657404,
+        "hapax_share": 0.5846774193548387,
+        "top50_mass": 0.42235494880546076,
+        "top50_partial": false,
+        "zipf_slope": -0.633947873319128,
+        "zipf_types": 496,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 25.59726962457338,
+        "marker_tokens": 30,
+        "pool_tokens": 1172
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 132.00490458570022,
+        "hapax_share": 0.700374531835206,
+        "top50_mass": 0.4722222222222222,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 267,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 21.367521367521366,
+        "marker_tokens": 10,
+        "pool_tokens": 468
+      },
+      "sim_trailing": {
+        "value": 0.05753543192320878,
+        "computable": true,
+        "window_indices": [
+          48,
+          49,
+          50,
+          51,
+          52
+        ],
+        "top_contributors": [
+          [
+            "human",
+            0.019889314963187223,
+            0.034568811423425196
+          ],
+          [
+            "nature",
+            0.012430821851992013,
+            0.021605507139640746
+          ],
+          [
+            "arxiv",
+            0.012276660553869943,
+            0.021337565641734158
+          ],
+          [
+            "on",
+            0.010976849877287618,
+            0.01907841743838504
+          ],
+          [
+            "row",
+            0.010251009742827446,
+            0.017816864148181302
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.04017655408161488,
+        "computable": true,
+        "window_indices": [
+          48,
+          49,
+          50,
+          51,
+          52
+        ]
+      },
+      "sim_block": {
+        "value": 0.0775691170567926,
+        "computable": true,
+        "block_indices": [
+          51,
+          52,
+          53,
+          54,
+          55
+        ]
+      }
+    },
+    {
+      "index": 53,
+      "date": "2026-07-18",
+      "heading": "Session 44 — 2026-07-18",
+      "n_tokens": 1204,
+      "prefix600": {
+        "computable": true,
+        "mtld": 108.69293787942861,
+        "hapax_share": 0.7258064516129032,
+        "top50_mass": 0.5083333333333333,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 310,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 33.333333333333336,
+        "marker_tokens": 20,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 103.10688762039227,
+        "hapax_share": 0.609504132231405,
+        "top50_mass": 0.4676079734219269,
+        "top50_partial": false,
+        "zipf_slope": -0.5568319300746457,
+        "zipf_types": 484,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 27.408637873754152,
+        "marker_tokens": 33,
+        "pool_tokens": 1204
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 105.69108709443442,
+        "hapax_share": 0.7286821705426356,
+        "top50_mass": 0.525987525987526,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 258,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 39.5010395010395,
+        "marker_tokens": 19,
+        "pool_tokens": 481
+      },
+      "sim_trailing": {
+        "value": 0.0700289013161686,
+        "computable": true,
+        "window_indices": [
+          49,
+          50,
+          51,
+          52,
+          53
+        ],
+        "top_contributors": [
+          [
+            "human",
+            0.021171721108401494,
+            0.030232833459452362
+          ],
+          [
+            "row",
+            0.018342588119773,
+            0.026192882902673756
+          ],
+          [
+            "on",
+            0.015314060956964842,
+            0.021868201084327254
+          ],
+          [
+            "ship",
+            0.010869432155946013,
+            0.015521351829971419
+          ],
+          [
+            "rows",
+            0.010824832867669625,
+            0.015457664855824803
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.046997247410388396,
+        "computable": true,
+        "window_indices": [
+          49,
+          50,
+          51,
+          52,
+          53
+        ]
+      },
+      "sim_block": {
+        "value": 0.0775691170567926,
+        "computable": true,
+        "block_indices": [
+          51,
+          52,
+          53,
+          54,
+          55
+        ]
+      }
+    },
+    {
+      "index": 54,
+      "date": "2026-07-19",
+      "heading": "Session 45 — 2026-07-19",
+      "n_tokens": 1607,
+      "prefix600": {
+        "computable": true,
+        "mtld": 123.16248912959722,
+        "hapax_share": 0.7147335423197492,
+        "top50_mass": 0.48333333333333334,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 319,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 25.0,
+        "marker_tokens": 15,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 134.75890021106358,
+        "hapax_share": 0.6242236024844721,
+        "top50_mass": 0.4268823895457374,
+        "top50_partial": false,
+        "zipf_slope": -0.6338817283496225,
+        "zipf_types": 644,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 26.13565650280025,
+        "marker_tokens": 42,
+        "pool_tokens": 1607
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 118.67272727272729,
+        "hapax_share": 0.7048192771084337,
+        "top50_mass": 0.48286604361370716,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 332,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 23.36448598130841,
+        "marker_tokens": 15,
+        "pool_tokens": 642
+      },
+      "sim_trailing": {
+        "value": 0.07335683581805012,
+        "computable": true,
+        "window_indices": [
+          50,
+          51,
+          52,
+          53,
+          54
+        ],
+        "top_contributors": [
+          [
+            "human",
+            0.021250117818046744,
+            0.028968149431573432
+          ],
+          [
+            "sessions",
+            0.019254184305008304,
+            0.026247293916500464
+          ],
+          [
+            "row",
+            0.01818881235442154,
+            0.024794979433867586
+          ],
+          [
+            "arxiv",
+            0.013858676962192895,
+            0.018892141144919505
+          ],
+          [
+            "on",
+            0.011711935189102992,
+            0.015965703889072546
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.050653358005991245,
+        "computable": true,
+        "window_indices": [
+          50,
+          51,
+          52,
+          53,
+          54
+        ]
+      },
+      "sim_block": {
+        "value": 0.0775691170567926,
+        "computable": true,
+        "block_indices": [
+          51,
+          52,
+          53,
+          54,
+          55
+        ]
+      }
+    },
+    {
+      "index": 55,
+      "date": "2026-07-20",
+      "heading": "Session 46 — 2026-07-20",
+      "n_tokens": 1228,
+      "prefix600": {
+        "computable": true,
+        "mtld": 116.34146341463415,
+        "hapax_share": 0.6728395061728395,
+        "top50_mass": 0.45,
+        "top50_partial": false,
+        "zipf_slope": -0.11600432290982053,
+        "zipf_types": 324,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 31.666666666666668,
+        "marker_tokens": 19,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 140.9907567389326,
+        "hapax_share": 0.6213235294117647,
+        "top50_mass": 0.4177524429967427,
+        "top50_partial": false,
+        "zipf_slope": -0.5338470573829669,
+        "zipf_types": 544,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 23.615635179153095,
+        "marker_tokens": 29,
+        "pool_tokens": 1228
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 124.7562840804238,
+        "hapax_share": 0.6808510638297872,
+        "top50_mass": 0.4460285132382892,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 282,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 30.54989816700611,
+        "marker_tokens": 15,
+        "pool_tokens": 491
+      },
+      "sim_trailing": {
+        "value": 0.0775691170567926,
+        "computable": true,
+        "window_indices": [
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "top_contributors": [
+          [
+            "capture",
+            0.03556704617935962,
+            0.04585207042297392
+          ],
+          [
+            "x",
+            0.02963920514946635,
+            0.0382100586858116
+          ],
+          [
+            "human",
+            0.020962477026826118,
+            0.027024256330619747
+          ],
+          [
+            "sessions",
+            0.014026851260056502,
+            0.018083035868239516
+          ],
+          [
+            "no",
+            0.013757572418354874,
+            0.01773588889542497
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.058464509836738565,
+        "computable": true,
+        "window_indices": [
+          51,
+          52,
+          53,
+          54,
+          55
+        ]
+      },
+      "sim_block": {
+        "value": 0.0775691170567926,
+        "computable": true,
+        "block_indices": [
+          51,
+          52,
+          53,
+          54,
+          55
+        ]
+      }
+    },
+    {
+      "index": 56,
+      "date": "2026-07-20",
+      "heading": "Session 47 — 2026-07-20 (second invocation of the date)",
+      "n_tokens": 750,
+      "prefix600": {
+        "computable": true,
+        "mtld": 115.94202898550725,
+        "hapax_share": 0.6867088607594937,
+        "top50_mass": 0.475,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 316,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 11.666666666666668,
+        "marker_tokens": 7,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 126.51760825242964,
+        "hapax_share": 0.6675603217158177,
+        "top50_mass": 0.45466666666666666,
+        "top50_partial": false,
+        "zipf_slope": -0.31620600201187077,
+        "zipf_types": 373,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 18.666666666666668,
+        "marker_tokens": 14,
+        "pool_tokens": 750
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 114.01972466994889,
+        "hapax_share": 0.726775956284153,
+        "top50_mass": 0.5566666666666666,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 183,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 20.0,
+        "marker_tokens": 6,
+        "pool_tokens": 300
+      },
+      "sim_trailing": {
+        "value": 0.07641919111145298,
+        "computable": true,
+        "window_indices": [
+          52,
+          53,
+          54,
+          55,
+          56
+        ],
+        "top_contributors": [
+          [
+            "capture",
+            0.04054891871578961,
+            0.053061172365265356
+          ],
+          [
+            "sessions",
+            0.02532997395327935,
+            0.03314609011803991
+          ],
+          [
+            "x",
+            0.01828756024082771,
+            0.023930585988742484
+          ],
+          [
+            "row",
+            0.01543557539473266,
+            0.020198558987912816
+          ],
+          [
+            "instrument",
+            0.011755146807772017,
+            0.015382453853283807
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.05411872714592351,
+        "computable": true,
+        "window_indices": [
+          52,
+          53,
+          54,
+          55,
+          56
+        ]
+      },
+      "sim_block": {
+        "value": 0.05879624500022772,
+        "computable": true,
+        "block_indices": [
+          56,
+          57,
+          58,
+          59,
+          60
+        ]
+      }
+    },
+    {
+      "index": 57,
+      "date": "2026-07-20",
+      "heading": "Session 48 — 2026-07-20 (third invocation of the date; the session ran past midnight UTC into 2026-07-21 — dated by its opening, the session-06 precedent)",
+      "n_tokens": 1139,
+      "prefix600": {
+        "computable": true,
+        "mtld": 161.72942722107524,
+        "hapax_share": 0.6947674418604651,
+        "top50_mass": 0.41833333333333333,
+        "top50_partial": false,
+        "zipf_slope": -0.08647522868256706,
+        "zipf_types": 344,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 20.0,
+        "marker_tokens": 12,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 168.01669605357054,
+        "hapax_share": 0.633147113594041,
+        "top50_mass": 0.3880597014925373,
+        "top50_partial": false,
+        "zipf_slope": -0.5351528571769426,
+        "zipf_types": 537,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 20.19315188762072,
+        "marker_tokens": 23,
+        "pool_tokens": 1139
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 164.72802965844173,
+        "hapax_share": 0.7333333333333333,
+        "top50_mass": 0.42637362637362636,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 285,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 21.978021978021978,
+        "marker_tokens": 10,
+        "pool_tokens": 455
+      },
+      "sim_trailing": {
+        "value": 0.07451978344998167,
+        "computable": true,
+        "window_indices": [
+          53,
+          54,
+          55,
+          56,
+          57
+        ],
+        "top_contributors": [
+          [
+            "capture",
+            0.02941227016146341,
+            0.0394690762637618
+          ],
+          [
+            "row",
+            0.02933952929699441,
+            0.039371463440560535
+          ],
+          [
+            "sessions",
+            0.024808394862220126,
+            0.03329101845669176
+          ],
+          [
+            "archivist",
+            0.018777298750076422,
+            0.025197736601958738
+          ],
+          [
+            "rows",
+            0.010562230546917989,
+            0.014173726838601793
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.052105772142915854,
+        "computable": true,
+        "window_indices": [
+          53,
+          54,
+          55,
+          56,
+          57
+        ]
+      },
+      "sim_block": {
+        "value": 0.05879624500022772,
+        "computable": true,
+        "block_indices": [
+          56,
+          57,
+          58,
+          59,
+          60
+        ]
+      }
+    },
+    {
+      "index": 58,
+      "date": "2026-07-21",
+      "heading": "Session 49 — 2026-07-21 (opened late 2026-07-20 UTC; renumbered from 48 at reconciliation — see \"The race\")",
+      "n_tokens": 1046,
+      "prefix600": {
+        "computable": true,
+        "mtld": 102.44283324037926,
+        "hapax_share": 0.6480263157894737,
+        "top50_mass": 0.4816666666666667,
+        "top50_partial": false,
+        "zipf_slope": -0.15311260552190623,
+        "zipf_types": 304,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 36.666666666666664,
+        "marker_tokens": 22,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 123.49025860169854,
+        "hapax_share": 0.6623931623931624,
+        "top50_mass": 0.44933078393881454,
+        "top50_partial": false,
+        "zipf_slope": -0.44338781502125485,
+        "zipf_types": 468,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.680688336520074,
+        "marker_tokens": 30,
+        "pool_tokens": 1046
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 101.85719192542004,
+        "hapax_share": 0.7106382978723405,
+        "top50_mass": 0.5143540669856459,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 235,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 38.27751196172249,
+        "marker_tokens": 16,
+        "pool_tokens": 418
+      },
+      "sim_trailing": {
+        "value": 0.07548558324519254,
+        "computable": true,
+        "window_indices": [
+          54,
+          55,
+          56,
+          57,
+          58
+        ],
+        "top_contributors": [
+          [
+            "capture",
+            0.03175121817259564,
+            0.0420626254810289
+          ],
+          [
+            "sub-test",
+            0.025182365610366422,
+            0.033360496836288556
+          ],
+          [
+            "sessions",
+            0.014537838328602715,
+            0.01925909253609508
+          ],
+          [
+            "same",
+            0.013313714339796837,
+            0.01763742660178061
+          ],
+          [
+            "state",
+            0.012591182805183211,
+            0.016680248418144278
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.06218719384955044,
+        "computable": true,
+        "window_indices": [
+          54,
+          55,
+          56,
+          57,
+          58
+        ]
+      },
+      "sim_block": {
+        "value": 0.05879624500022772,
+        "computable": true,
+        "block_indices": [
+          56,
+          57,
+          58,
+          59,
+          60
+        ]
+      }
+    },
+    {
+      "index": 59,
+      "date": "2026-07-21",
+      "heading": "Session 50 — 2026-07-21 (second invocation of the date)",
+      "n_tokens": 783,
+      "prefix600": {
+        "computable": true,
+        "mtld": 150.8043421396809,
+        "hapax_share": 0.6996805111821086,
+        "top50_mass": 0.48833333333333334,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 313,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 23.333333333333336,
+        "marker_tokens": 14,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 157.76393833730958,
+        "hapax_share": 0.6675603217158177,
+        "top50_mass": 0.46998722860791825,
+        "top50_partial": false,
+        "zipf_slope": -0.31620600201187077,
+        "zipf_types": 373,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 25.54278416347382,
+        "marker_tokens": 20,
+        "pool_tokens": 783
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 143.54470198675494,
+        "hapax_share": 0.7731958762886598,
+        "top50_mass": 0.5399361022364217,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 194,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 31.948881789137378,
+        "marker_tokens": 10,
+        "pool_tokens": 313
+      },
+      "sim_trailing": {
+        "value": 0.07379083289290866,
+        "computable": true,
+        "window_indices": [
+          55,
+          56,
+          57,
+          58,
+          59
+        ],
+        "top_contributors": [
+          [
+            "capture",
+            0.0262140714751882,
+            0.03552483478975257
+          ],
+          [
+            "sub-test",
+            0.02580159994799466,
+            0.03496586084810842
+          ],
+          [
+            "state",
+            0.01290079997399733,
+            0.01748293042405421
+          ],
+          [
+            "site's",
+            0.010967853442977108,
+            0.014863436300948872
+          ],
+          [
+            "this",
+            0.009994700722017536,
+            0.013544637362370838
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.05669211663761724,
+        "computable": true,
+        "window_indices": [
+          55,
+          56,
+          57,
+          58,
+          59
+        ]
+      },
+      "sim_block": {
+        "value": 0.05879624500022772,
+        "computable": true,
+        "block_indices": [
+          56,
+          57,
+          58,
+          59,
+          60
+        ]
+      }
+    },
+    {
+      "index": 60,
+      "date": "2026-07-21",
+      "heading": "Session 51 — 2026-07-21 (third invocation of the date)",
+      "n_tokens": 1201,
+      "prefix600": {
+        "computable": true,
+        "mtld": 250.959638724245,
+        "hapax_share": 0.8091787439613527,
+        "top50_mass": 0.345,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 414,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 13.333333333333334,
+        "marker_tokens": 8,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 233.26654295301114,
+        "hapax_share": 0.7153614457831325,
+        "top50_mass": 0.34221482098251454,
+        "top50_partial": false,
+        "zipf_slope": -0.3813999253173113,
+        "zipf_types": 664,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 13.322231473771858,
+        "marker_tokens": 16,
+        "pool_tokens": 1201
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 282.29038854805725,
+        "hapax_share": 0.8117647058823529,
+        "top50_mass": 0.36666666666666664,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 340,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 14.583333333333334,
+        "marker_tokens": 7,
+        "pool_tokens": 480
+      },
+      "sim_trailing": {
+        "value": 0.05879624500022772,
+        "computable": true,
+        "window_indices": [
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "top_contributors": [
+          [
+            "sub-test",
+            0.02255831509161428,
+            0.03836693158130577
+          ],
+          [
+            "from",
+            0.011368447356408348,
+            0.019335328908103428
+          ],
+          [
+            "state",
+            0.01127915754580714,
+            0.019183465790652884
+          ],
+          [
+            "first",
+            0.010614696321434275,
+            0.0180533575254562
+          ],
+          [
+            "gauntlet",
+            0.008288606727947127,
+            0.014097170198394514
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.0410745347476343,
+        "computable": true,
+        "window_indices": [
+          56,
+          57,
+          58,
+          59,
+          60
+        ]
+      },
+      "sim_block": {
+        "value": 0.05879624500022772,
+        "computable": true,
+        "block_indices": [
+          56,
+          57,
+          58,
+          59,
+          60
+        ]
+      }
+    },
+    {
+      "index": 61,
+      "date": "2026-07-21",
+      "heading": "Session 52 — 2026-07-21 (fourth invocation of the date; recorded as \"Session 46\" at the time — the invocation cloned the purged `main` and could not see sessions 46–51; renumbered at the 2026-07-22 recovery, body unaltered)",
+      "n_tokens": 1295,
+      "prefix600": {
+        "computable": true,
+        "mtld": 139.00937866354045,
+        "hapax_share": 0.697452229299363,
+        "top50_mass": 0.485,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 314,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 23.333333333333336,
+        "marker_tokens": 14,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 148.70653487797563,
+        "hapax_share": 0.5996275605214153,
+        "top50_mass": 0.4193050193050193,
+        "top50_partial": false,
+        "zipf_slope": -0.6713599614710247,
+        "zipf_types": 537,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 25.482625482625483,
+        "marker_tokens": 33,
+        "pool_tokens": 1295
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 141.9217974565757,
+        "hapax_share": 0.726027397260274,
+        "top50_mass": 0.4749034749034749,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 292,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 25.096525096525095,
+        "marker_tokens": 13,
+        "pool_tokens": 518
+      },
+      "sim_trailing": {
+        "value": 0.05815395148078317,
+        "computable": true,
+        "window_indices": [
+          57,
+          58,
+          59,
+          60,
+          61
+        ],
+        "top_contributors": [
+          [
+            "sub-test",
+            0.023014674674293002,
+            0.039575427100423506
+          ],
+          [
+            "state",
+            0.011507337337146501,
+            0.019787713550211753
+          ],
+          [
+            "from",
+            0.011049526593754347,
+            0.01900047427973254
+          ],
+          [
+            "shipped",
+            0.00912198687043543,
+            0.01568592784868586
+          ],
+          [
+            "captures",
+            0.009103897565167655,
+            0.015654821956812368
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.04040131409099843,
+        "computable": true,
+        "window_indices": [
+          57,
+          58,
+          59,
+          60,
+          61
+        ]
+      },
+      "sim_block": {
+        "value": 0.05878799277383397,
+        "computable": true,
+        "block_indices": [
+          61,
+          62,
+          63,
+          64,
+          65
+        ]
+      }
+    },
+    {
+      "index": 62,
+      "date": "2026-07-22",
+      "heading": "Session 53 — 2026-07-22",
+      "n_tokens": 1786,
+      "prefix600": {
+        "computable": true,
+        "mtld": 101.50943396226415,
+        "hapax_share": 0.7272727272727273,
+        "top50_mass": 0.49,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 319,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 30.0,
+        "marker_tokens": 18,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 129.09766216907323,
+        "hapax_share": 0.6008902077151336,
+        "top50_mass": 0.41825307950727886,
+        "top50_partial": false,
+        "zipf_slope": -0.6935069679445863,
+        "zipf_types": 674,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 27.435610302351623,
+        "marker_tokens": 49,
+        "pool_tokens": 1786
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 112.5768069386444,
+        "hapax_share": 0.7024793388429752,
+        "top50_mass": 0.47478991596638653,
+        "top50_partial": false,
+        "zipf_slope": -0.12248599533886437,
+        "zipf_types": 363,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 32.212885154061624,
+        "marker_tokens": 23,
+        "pool_tokens": 714
+      },
+      "sim_trailing": {
+        "value": 0.05598047328979623,
+        "computable": true,
+        "window_indices": [
+          58,
+          59,
+          60,
+          61,
+          62
+        ],
+        "top_contributors": [
+          [
+            "site's",
+            0.018656665826698667,
+            0.033327095557263334
+          ],
+          [
+            "state",
+            0.012437777217799113,
+            0.022218063704842226
+          ],
+          [
+            "any",
+            0.011255718229237512,
+            0.020106507801335674
+          ],
+          [
+            "from",
+            0.009704093147343322,
+            0.017334782250067408
+          ],
+          [
+            "history",
+            0.009328332913349334,
+            0.016663547778631667
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.04436941531024205,
+        "computable": true,
+        "window_indices": [
+          58,
+          59,
+          60,
+          61,
+          62
+        ]
+      },
+      "sim_block": {
+        "value": 0.05878799277383397,
+        "computable": true,
+        "block_indices": [
+          61,
+          62,
+          63,
+          64,
+          65
+        ]
+      }
+    },
+    {
+      "index": 63,
+      "date": "2026-07-22",
+      "heading": "Session 54 — 2026-07-22 (second invocation of the date; collective session 54)",
+      "n_tokens": 729,
+      "prefix600": {
+        "computable": true,
+        "mtld": 115.08196721311475,
+        "hapax_share": 0.6433566433566433,
+        "top50_mass": 0.515,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 286,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 21.666666666666668,
+        "marker_tokens": 13,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 132.57363571934798,
+        "hapax_share": 0.6165644171779141,
+        "top50_mass": 0.49382716049382713,
+        "top50_partial": false,
+        "zipf_slope": -0.4164694000924596,
+        "zipf_types": 326,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 19.204389574759947,
+        "marker_tokens": 14,
+        "pool_tokens": 729
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 100.39808917197453,
+        "hapax_share": 0.7679558011049724,
+        "top50_mass": 0.5498281786941581,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 181,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 17.182130584192443,
+        "marker_tokens": 5,
+        "pool_tokens": 291
+      },
+      "sim_trailing": {
+        "value": 0.04726913986259689,
+        "computable": true,
+        "window_indices": [
+          59,
+          60,
+          61,
+          62,
+          63
+        ],
+        "top_contributors": [
+          [
+            "site's",
+            0.020384570579015947,
+            0.0431244796039664
+          ],
+          [
+            "lost",
+            0.011890999504425969,
+            0.025155946435647066
+          ],
+          [
+            "gate",
+            0.009982242543012379,
+            0.021117884886479865
+          ],
+          [
+            "that",
+            0.009104326329677602,
+            0.019260613491470933
+          ],
+          [
+            "chronicle",
+            0.007644213967130982,
+            0.016171679851487403
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.03751163346774698,
+        "computable": true,
+        "window_indices": [
+          59,
+          60,
+          61,
+          62,
+          63
+        ]
+      },
+      "sim_block": {
+        "value": 0.05878799277383397,
+        "computable": true,
+        "block_indices": [
+          61,
+          62,
+          63,
+          64,
+          65
+        ]
+      }
+    },
+    {
+      "index": 64,
+      "date": "2026-07-23",
+      "heading": "Session 55 — 2026-07-23",
+      "n_tokens": 1572,
+      "prefix600": {
+        "computable": true,
+        "mtld": 105.0,
+        "hapax_share": 0.6262626262626263,
+        "top50_mass": 0.4866666666666667,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 297,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 30.0,
+        "marker_tokens": 18,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 129.14742431177254,
+        "hapax_share": 0.6098310291858678,
+        "top50_mass": 0.410941475826972,
+        "top50_partial": false,
+        "zipf_slope": -0.6233173700598376,
+        "zipf_types": 651,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 29.262086513994912,
+        "marker_tokens": 46,
+        "pool_tokens": 1572
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 121.34152118249534,
+        "hapax_share": 0.6270096463022508,
+        "top50_mass": 0.47929936305732485,
+        "top50_partial": false,
+        "zipf_slope": -0.3119466270130268,
+        "zipf_types": 311,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 30.254777070063696,
+        "marker_tokens": 19,
+        "pool_tokens": 628
+      },
+      "sim_trailing": {
+        "value": 0.04583925363311386,
+        "computable": true,
+        "window_indices": [
+          60,
+          61,
+          62,
+          63,
+          64
+        ],
+        "top_contributors": [
+          [
+            "site's",
+            0.021124913610149787,
+            0.046084767826344665
+          ],
+          [
+            "c",
+            0.017310689019770346,
+            0.037763898073735785
+          ],
+          [
+            "lost",
+            0.012322866272587376,
+            0.02688278123203439
+          ],
+          [
+            "that",
+            0.010002206067092371,
+            0.02182017653940785
+          ],
+          [
+            "ai",
+            0.009442194010783826,
+            0.020598489858401337
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.032546344317447476,
+        "computable": true,
+        "window_indices": [
+          60,
+          61,
+          62,
+          63,
+          64
+        ]
+      },
+      "sim_block": {
+        "value": 0.05878799277383397,
+        "computable": true,
+        "block_indices": [
+          61,
+          62,
+          63,
+          64,
+          65
+        ]
+      }
+    },
+    {
+      "index": 65,
+      "date": "2026-07-23",
+      "heading": "Session 56 — 2026-07-23",
+      "n_tokens": 1243,
+      "prefix600": {
+        "computable": true,
+        "mtld": 96.8012908833051,
+        "hapax_share": 0.6948051948051948,
+        "top50_mass": 0.49666666666666665,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 308,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 21.666666666666668,
+        "marker_tokens": 13,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 100.25482005141387,
+        "hapax_share": 0.5555555555555556,
+        "top50_mass": 0.48511665325824616,
+        "top50_partial": false,
+        "zipf_slope": -0.6700047858000119,
+        "zipf_types": 459,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 30.57119871279163,
+        "marker_tokens": 38,
+        "pool_tokens": 1243
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 94.75506270567004,
+        "hapax_share": 0.6977611940298507,
+        "top50_mass": 0.49899396378269617,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 268,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 24.14486921529175,
+        "marker_tokens": 12,
+        "pool_tokens": 497
+      },
+      "sim_trailing": {
+        "value": 0.05878799277383397,
+        "computable": true,
+        "window_indices": [
+          61,
+          62,
+          63,
+          64,
+          65
+        ],
+        "top_contributors": [
+          [
+            "site's",
+            0.023494450575018495,
+            0.03996470957157032
+          ],
+          [
+            "entry",
+            0.018732246573465373,
+            0.03186406898689512
+          ],
+          [
+            "lost",
+            0.013705096168760788,
+            0.023312747250082685
+          ],
+          [
+            "site",
+            0.010874980218976614,
+            0.018498641824384543
+          ],
+          [
+            "anchor",
+            0.010536888697574276,
+            0.01792353880512851
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.04572517941223287,
+        "computable": true,
+        "window_indices": [
+          61,
+          62,
+          63,
+          64,
+          65
+        ]
+      },
+      "sim_block": {
+        "value": 0.05878799277383397,
+        "computable": true,
+        "block_indices": [
+          61,
+          62,
+          63,
+          64,
+          65
+        ]
+      }
+    },
+    {
+      "index": 66,
+      "date": "2026-07-23",
+      "heading": "Session 57 — 2026-07-23",
+      "n_tokens": 1602,
+      "prefix600": {
+        "computable": true,
+        "mtld": 83.75793409268758,
+        "hapax_share": 0.7075812274368231,
+        "top50_mass": 0.5683333333333334,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 277,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 25.0,
+        "marker_tokens": 15,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 102.81368584758943,
+        "hapax_share": 0.6047297297297297,
+        "top50_mass": 0.48064918851435706,
+        "top50_partial": false,
+        "zipf_slope": -0.6266269539447141,
+        "zipf_types": 592,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 20.599250936329586,
+        "marker_tokens": 33,
+        "pool_tokens": 1602
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 88.1229104842042,
+        "hapax_share": 0.714765100671141,
+        "top50_mass": 0.553125,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 298,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 25.0,
+        "marker_tokens": 16,
+        "pool_tokens": 640
+      },
+      "sim_trailing": {
+        "value": 0.07426154941916507,
+        "computable": true,
+        "window_indices": [
+          62,
+          63,
+          64,
+          65,
+          66
+        ],
+        "top_contributors": [
+          [
+            "open",
+            0.03435175051515184,
+            0.04625778856465187
+          ],
+          [
+            "entry",
+            0.027450790811744855,
+            0.03696501221217515
+          ],
+          [
+            "i",
+            0.018432684645548397,
+            0.024821303608286115
+          ],
+          [
+            "site's",
+            0.01838069667595156,
+            0.024751297030180138
+          ],
+          [
+            "that",
+            0.015395548203537165,
+            0.02073152031428522
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.05698784735829874,
+        "computable": true,
+        "window_indices": [
+          62,
+          63,
+          64,
+          65,
+          66
+        ]
+      },
+      "sim_block": {
+        "value": 0.05060476633885304,
+        "computable": true,
+        "block_indices": [
+          66,
+          67,
+          68,
+          69,
+          70
+        ]
+      }
+    },
+    {
+      "index": 67,
+      "date": "2026-07-23",
+      "heading": "Session 58 — 2026-07-23",
+      "n_tokens": 1163,
+      "prefix600": {
+        "computable": true,
+        "mtld": 138.8681569013275,
+        "hapax_share": 0.725609756097561,
+        "top50_mass": 0.47,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 328,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 26.666666666666668,
+        "marker_tokens": 16,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 147.98342971494048,
+        "hapax_share": 0.5550935550935551,
+        "top50_mass": 0.4350816852966466,
+        "top50_partial": false,
+        "zipf_slope": -0.6317820426497445,
+        "zipf_types": 481,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 23.215821152192607,
+        "marker_tokens": 27,
+        "pool_tokens": 1163
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 145.09686978410014,
+        "hapax_share": 0.7490909090909091,
+        "top50_mass": 0.4752688172043011,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 275,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 30.107526881720432,
+        "marker_tokens": 14,
+        "pool_tokens": 465
+      },
+      "sim_trailing": {
+        "value": 0.07223451713422618,
+        "computable": true,
+        "window_indices": [
+          63,
+          64,
+          65,
+          66,
+          67
+        ],
+        "top_contributors": [
+          [
+            "entry",
+            0.02729591978890791,
+            0.03778791756603928
+          ],
+          [
+            "i",
+            0.019214002889335544,
+            0.026599475779193044
+          ],
+          [
+            "capture",
+            0.01915301435470206,
+            0.026515044489204415
+          ],
+          [
+            "chronicle",
+            0.015909864626817087,
+            0.02202529380414266
+          ],
+          [
+            "site's",
+            0.014381554141088684,
+            0.01990953177462913
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.05597498660682201,
+        "computable": true,
+        "window_indices": [
+          63,
+          64,
+          65,
+          66,
+          67
+        ]
+      },
+      "sim_block": {
+        "value": 0.05060476633885304,
+        "computable": true,
+        "block_indices": [
+          66,
+          67,
+          68,
+          69,
+          70
+        ]
+      }
+    },
+    {
+      "index": 68,
+      "date": "2026-07-24",
+      "heading": "Session 59 — 2026-07-24",
+      "n_tokens": 1708,
+      "prefix600": {
+        "computable": true,
+        "mtld": 150.1976437761587,
+        "hapax_share": 0.6878787878787879,
+        "top50_mass": 0.445,
+        "top50_partial": false,
+        "zipf_slope": -0.05710164032575101,
+        "zipf_types": 330,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 25.0,
+        "marker_tokens": 15,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 147.7643954665886,
+        "hapax_share": 0.5737463126843658,
+        "top50_mass": 0.41451990632318503,
+        "top50_partial": false,
+        "zipf_slope": -0.6726767283735717,
+        "zipf_types": 678,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 29.27400468384075,
+        "marker_tokens": 50,
+        "pool_tokens": 1708
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 149.885452326699,
+        "hapax_share": 0.6693766937669376,
+        "top50_mass": 0.42752562225475843,
+        "top50_partial": false,
+        "zipf_slope": -0.2991080610547765,
+        "zipf_types": 369,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 26.35431918008785,
+        "marker_tokens": 18,
+        "pool_tokens": 683
+      },
+      "sim_trailing": {
+        "value": 0.0702831122062104,
+        "computable": true,
+        "window_indices": [
+          64,
+          65,
+          66,
+          67,
+          68
+        ],
+        "top_contributors": [
+          [
+            "for",
+            0.020910103008046917,
+            0.029751247990693334
+          ],
+          [
+            "entry",
+            0.020525230547047125,
+            0.029203644947916038
+          ],
+          [
+            "i",
+            0.01872982883079954,
+            0.026649117039447952
+          ],
+          [
+            "para",
+            0.01693826348075953,
+            0.024100047577663784
+          ],
+          [
+            "red",
+            0.012681532259447001,
+            0.01804349844702299
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.05820202059758082,
+        "computable": true,
+        "window_indices": [
+          64,
+          65,
+          66,
+          67,
+          68
+        ]
+      },
+      "sim_block": {
+        "value": 0.05060476633885304,
+        "computable": true,
+        "block_indices": [
+          66,
+          67,
+          68,
+          69,
+          70
+        ]
+      }
+    },
+    {
+      "index": 69,
+      "date": "2026-07-24",
+      "heading": "Session 60 — 2026-07-24 (second invocation of the date)",
+      "n_tokens": 1534,
+      "prefix600": {
+        "computable": true,
+        "mtld": 120.0,
+        "hapax_share": 0.6310344827586207,
+        "top50_mass": 0.4866666666666667,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 290,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 25.0,
+        "marker_tokens": 15,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 126.66611882152422,
+        "hapax_share": 0.5663716814159292,
+        "top50_mass": 0.4315514993481095,
+        "top50_partial": false,
+        "zipf_slope": -0.739838249610484,
+        "zipf_types": 565,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 30.63885267275098,
+        "marker_tokens": 47,
+        "pool_tokens": 1534
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 120.48620689655172,
+        "hapax_share": 0.6267123287671232,
+        "top50_mass": 0.48613376835236544,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 292,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 27.73246329526917,
+        "marker_tokens": 17,
+        "pool_tokens": 613
+      },
+      "sim_trailing": {
+        "value": 0.06698629752799742,
+        "computable": true,
+        "window_indices": [
+          65,
+          66,
+          67,
+          68,
+          69
+        ],
+        "top_contributors": [
+          [
+            "for",
+            0.022278222847039286,
+            0.03325788059524851
+          ],
+          [
+            "para",
+            0.01735838900477585,
+            0.025913342945280388
+          ],
+          [
+            "red",
+            0.01473938940181118,
+            0.02200358871252847
+          ],
+          [
+            "site's",
+            0.01395269400167718,
+            0.02082917628914413
+          ],
+          [
+            "stub",
+            0.011263711495290197,
+            0.016814948595393623
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.05308278124689768,
+        "computable": true,
+        "window_indices": [
+          65,
+          66,
+          67,
+          68,
+          69
+        ]
+      },
+      "sim_block": {
+        "value": 0.05060476633885304,
+        "computable": true,
+        "block_indices": [
+          66,
+          67,
+          68,
+          69,
+          70
+        ]
+      }
+    },
+    {
+      "index": 70,
+      "date": "2026-07-25",
+      "heading": "Session 61 — 2026-07-25",
+      "n_tokens": 1406,
+      "prefix600": {
+        "computable": true,
+        "mtld": 157.26225096098284,
+        "hapax_share": 0.7601078167115903,
+        "top50_mass": 0.4,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 371,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 36.666666666666664,
+        "marker_tokens": 22,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 183.13552171931636,
+        "hapax_share": 0.6444780635400907,
+        "top50_mass": 0.3662873399715505,
+        "top50_partial": false,
+        "zipf_slope": -0.5537071210217519,
+        "zipf_types": 661,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 30.58321479374111,
+        "marker_tokens": 43,
+        "pool_tokens": 1406
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 163.91666666666669,
+        "hapax_share": 0.7535816618911175,
+        "top50_mass": 0.40391459074733094,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 349,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 39.145907473309606,
+        "marker_tokens": 22,
+        "pool_tokens": 562
+      },
+      "sim_trailing": {
+        "value": 0.05060476633885304,
+        "computable": true,
+        "window_indices": [
+          66,
+          67,
+          68,
+          69,
+          70
+        ],
+        "top_contributors": [
+          [
+            "para",
+            0.01769040724544414,
+            0.03495798622404052
+          ],
+          [
+            "outward",
+            0.01305087345616477,
+            0.025789810724102972
+          ],
+          [
+            "site's",
+            0.010907058697666552,
+            0.02155342171650814
+          ],
+          [
+            "chronicle",
+            0.009089215581388794,
+            0.017961184763756785
+          ],
+          [
+            "green",
+            0.008180294023249914,
+            0.016165066287381104
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.03862953404414353,
+        "computable": true,
+        "window_indices": [
+          66,
+          67,
+          68,
+          69,
+          70
+        ]
+      },
+      "sim_block": {
+        "value": 0.05060476633885304,
+        "computable": true,
+        "block_indices": [
+          66,
+          67,
+          68,
+          69,
+          70
+        ]
+      }
+    },
+    {
+      "index": 71,
+      "date": "2026-07-25",
+      "heading": "Session 63 — 2026-07-25 (third invocation of the date)",
+      "n_tokens": 3396,
+      "prefix600": {
+        "computable": true,
+        "mtld": 242.32612267250823,
+        "hapax_share": 0.7676240208877284,
+        "top50_mass": 0.38,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 383,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 31.666666666666668,
+        "marker_tokens": 19,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 124.1789190201101,
+        "hapax_share": 0.5848585690515807,
+        "top50_mass": 0.3624852767962309,
+        "top50_partial": false,
+        "zipf_slope": -0.836578337701802,
+        "zipf_types": 1202,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 24.440518256772673,
+        "marker_tokens": 83,
+        "pool_tokens": 3396
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 196.65530765367402,
+        "hapax_share": 0.6697674418604651,
+        "top50_mass": 0.38880706921944036,
+        "top50_partial": false,
+        "zipf_slope": -0.4863625631287758,
+        "zipf_types": 645,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 26.509572901325477,
+        "marker_tokens": 36,
+        "pool_tokens": 1358
+      },
+      "sim_trailing": {
+        "value": 0.05440504122839791,
+        "computable": true,
+        "window_indices": [
+          67,
+          68,
+          69,
+          70,
+          71
+        ],
+        "top_contributors": [
+          [
+            "para",
+            0.018190836392978096,
+            0.03343593899067388
+          ],
+          [
+            "now",
+            0.010232345471050178,
+            0.018807715682254054
+          ],
+          [
+            "commitment",
+            0.008613989284037712,
+            0.015833071880003376
+          ],
+          [
+            "convened",
+            0.008613989284037712,
+            0.015833071880003376
+          ],
+          [
+            "outward",
+            0.00781641525706473,
+            0.014367079006981398
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.04145076309903594,
+        "computable": true,
+        "window_indices": [
+          67,
+          68,
+          69,
+          70,
+          71
+        ]
+      },
+      "sim_block": {
+        "value": 0.03497827957737948,
+        "computable": true,
+        "block_indices": [
+          71,
+          72,
+          73
+        ]
+      }
+    },
+    {
+      "index": 72,
+      "date": "2026-07-25",
+      "heading": "Session 64 — 2026-07-25 (fourth invocation of the date)",
+      "n_tokens": 1388,
+      "prefix600": {
+        "computable": true,
+        "mtld": 130.54629821568096,
+        "hapax_share": 0.6913183279742765,
+        "top50_mass": 0.48833333333333334,
+        "top50_partial": false,
+        "zipf_slope": 0.0,
+        "zipf_types": 311,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 18.333333333333332,
+        "marker_tokens": 11,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 135.36435643564357,
+        "hapax_share": 0.5599250936329588,
+        "top50_mass": 0.4430835734870317,
+        "top50_partial": false,
+        "zipf_slope": -0.6912417159006011,
+        "zipf_types": 534,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 28.097982708933717,
+        "marker_tokens": 39,
+        "pool_tokens": 1388
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 130.7574884792627,
+        "hapax_share": 0.7074829931972789,
+        "top50_mass": 0.4954954954954955,
+        "top50_partial": false,
+        "zipf_slope": null,
+        "zipf_types": 294,
+        "zipf_non_computable": true,
+        "marker_rate_per_1000": 18.01801801801802,
+        "marker_tokens": 10,
+        "pool_tokens": 555
+      },
+      "sim_trailing": {
+        "value": 0.04933544132896357,
+        "computable": true,
+        "window_indices": [
+          68,
+          69,
+          70,
+          71,
+          72
+        ],
+        "top_contributors": [
+          [
+            "chronicle",
+            0.01447676423760374,
+            0.029343538534649338
+          ],
+          [
+            "site's",
+            0.011581411390082992,
+            0.023474830827719468
+          ],
+          [
+            "commitment",
+            0.00862199062322354,
+            0.01747626126567513
+          ],
+          [
+            "verified",
+            0.00858064801883529,
+            0.01739246226991348
+          ],
+          [
+            "guard",
+            0.006369218520035724,
+            0.012910026440356416
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.03753307964453942,
+        "computable": true,
+        "window_indices": [
+          68,
+          69,
+          70,
+          71,
+          72
+        ]
+      },
+      "sim_block": {
+        "value": 0.03497827957737948,
+        "computable": true,
+        "block_indices": [
+          71,
+          72,
+          73
+        ]
+      }
+    },
+    {
+      "index": 73,
+      "date": "2026-07-25",
+      "heading": "Session 65 — 2026-07-25 (fifth invocation of the date)",
+      "n_tokens": 3093,
+      "prefix600": {
+        "computable": true,
+        "mtld": 100.52157041771285,
+        "hapax_share": 0.6566666666666666,
+        "top50_mass": 0.495,
+        "top50_partial": false,
+        "zipf_slope": -0.06960009499517267,
+        "zipf_types": 300,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 21.666666666666668,
+        "marker_tokens": 13,
+        "pool_tokens": 600
+      },
+      "whole_unit": {
+        "computable": true,
+        "mtld": 125.42355665384494,
+        "hapax_share": 0.562058526740666,
+        "top50_mass": 0.4280633688975105,
+        "top50_partial": false,
+        "zipf_slope": -0.786208693022046,
+        "zipf_types": 991,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 26.511477529906237,
+        "marker_tokens": 82,
+        "pool_tokens": 3093
+      },
+      "prop40": {
+        "computable": true,
+        "mtld": 126.36732781297769,
+        "hapax_share": 0.6387832699619772,
+        "top50_mass": 0.45675020210185935,
+        "top50_partial": false,
+        "zipf_slope": -0.5214544559756,
+        "zipf_types": 526,
+        "zipf_non_computable": false,
+        "marker_rate_per_1000": 21.018593371059016,
+        "marker_tokens": 26,
+        "pool_tokens": 1237
+      },
+      "sim_trailing": {
+        "value": 0.05322773604276493,
+        "computable": true,
+        "window_indices": [
+          69,
+          70,
+          71,
+          72,
+          73
+        ],
+        "top_contributors": [
+          [
+            "every",
+            0.014618216633278745,
+            0.027463532586721302
+          ],
+          [
+            "chronicle",
+            0.01410136030969867,
+            0.026492504393516136
+          ],
+          [
+            "mtld",
+            0.010495173274982571,
+            0.01971748951815347
+          ],
+          [
+            "commitment",
+            0.008986805854099805,
+            0.016883689824567227
+          ],
+          [
+            "any",
+            0.008916485795770432,
+            0.016751578140777268
+          ]
+        ]
+      },
+      "sim_content": {
+        "value": 0.03849878625243562,
+        "computable": true,
+        "window_indices": [
+          69,
+          70,
+          71,
+          72,
+          73
+        ]
+      },
+      "sim_block": {
+        "value": 0.03497827957737948,
+        "computable": true,
+        "block_indices": [
+          71,
+          72,
+          73
+        ]
+      }
+    }
+  ]
+}
