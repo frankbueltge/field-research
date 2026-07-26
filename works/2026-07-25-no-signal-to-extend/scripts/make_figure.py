@@ -52,16 +52,33 @@ METRIC_DISPLAY = {
 }
 STRATA_ORDER = ["cs.CL", "cs.CV", "math.NT"]
 
-# Overall canvas geometry (layout constants, not measured data).
+# The two PRE-REGISTERED DECISION strata (PREREGISTRATION.md §7) -- both must be
+# visually present in the margins panel, one row each; math.NT is the control and
+# is not a decision stratum, so it is not drawn here (it appears only in the
+# marker-channel panel below, where all three strata are context, not a verdict).
+MARGIN_STRATA = ["cs.CL", "cs.CV"]
+
+# Overall canvas geometry (layout constants, not measured data). The margins
+# panel is now a 2 (stratum) x 4 (metric) grid of small multiples -- it must
+# dominate the composition (it carries the registered result), so its rows
+# together are sized to occupy substantially more of the canvas than the
+# marker-channel panel below, which is the non-decisional, secondary panel.
 FIG_W = 1180
-FIG_H = 800
 MARGIN_L = 56
 MARGIN_R = 118
-UPPER_TOP = 92
-UPPER_H = 300
-PANEL_GAP = 44
-LOWER_H = 262
-SUB_GAP = 34
+UPPER_TOP = 92          # first stratum row starts here; header/legend sit above
+ROW_LABEL_H = 18        # per-row stratum label strip (e.g. "cs.CL")
+ROW_H = 200              # each stratum row's small-multiple plot height
+ROW_GAP = 30             # gap between the cs.CL row and the cs.CV row
+SUB_GAP = 44             # horizontal gap between the four metric columns
+PANEL_GAP = 46           # gap between the margins block and the fingerprint block
+LOWER_HEADER_H = 34      # room for the fingerprint panel's own heading/subtitle
+LOWER_H = 150            # fingerprint plot height -- deliberately smaller: secondary,
+                         # non-decisional observation, not the registered result
+BOTTOM_MARGIN = 20
+
+MARGINS_BLOCK_H = 2 * ROW_LABEL_H + 2 * ROW_H + ROW_GAP
+FIG_H = UPPER_TOP + MARGINS_BLOCK_H + PANEL_GAP + LOWER_HEADER_H + LOWER_H + BOTTOM_MARGIN
 
 
 # ============================================================================
@@ -491,14 +508,22 @@ def build_svg(results):
 
     body = []
 
-    # ---- upper panel: THE MARGINS (cs.CL, four metrics) ----
-    body.append(f'<text x="{fmt_num(MARGIN_L)}" y="{fmt_num(UPPER_TOP - 42)}" font-size="14" '
+    # ---- upper (dominant) block: THE MARGINS -- BOTH decision strata, one row
+    # each, four metrics per row (2x4 grid of small multiples). This is the
+    # panel that carries the registered result, so it occupies most of the
+    # canvas; math.NT (the control, not a decision stratum) is deliberately not
+    # drawn here -- it appears only in the fingerprint panel below -- and the
+    # header says so on the figure's own face, not only in the caption.
+    body.append(f'<text x="{fmt_num(MARGIN_L)}" y="{fmt_num(UPPER_TOP - 58)}" font-size="14" '
                f'fill="{INK_STRONG}" class="mono" font-weight="bold">THE MARGINS</text>')
+    body.append(f'<text x="{fmt_num(MARGIN_L)}" y="{fmt_num(UPPER_TOP - 42)}" font-size="10.5" '
+               f'fill="{INK}" class="mono">cs.CL and cs.CV &#8212; both pre-registered decision '
+               f'strata, four metrics each (math.NT control: fingerprint panel below only)</text>')
     body.append(f'<text x="{fmt_num(MARGIN_L)}" y="{fmt_num(UPPER_TOP - 26)}" font-size="10.5" '
-               f'fill="{INK}" class="mono">cs.CL &#8212; measured series (solid) vs. ordinary-drift '
-               f'envelope (dashed); band = envelope &#177; {fmt_num(t_crit, 4)}&#215;SE, one-sided in '
-               f'each metric&#8217;s own collapse direction</text>')
-    # compact shared legend (covers all four small multiples -- avoids repeating per-panel)
+               f'fill="{INK}" class="mono">measured series (solid) vs. ordinary-drift envelope '
+               f'(dashed); band = envelope &#177; {fmt_num(t_crit, 4)}&#215;SE, one-sided in each '
+               f'metric&#8217;s own collapse direction</text>')
+    # compact shared legend (covers all eight small multiples -- avoids repeating per-panel)
     leg_y = UPPER_TOP - 10
     legend_items = [
         ("series", INK_STRONG, None, 1.8, "solid"),
@@ -515,38 +540,57 @@ def build_svg(results):
                    f'fill="{INK}" class="mono">{esc(name)}</text>')
         lx += 27 + 7.2 * len(name) + 20
 
-    for i, metric in enumerate(MARGIN_METRICS):
-        sx0 = MARGIN_L + i * (sub_w + SUB_GAP)
-        box = (sx0, UPPER_TOP, sx0 + sub_w, UPPER_TOP + UPPER_H)
-        body.extend(draw_margin_subplot(results, "cs.CL", metric, box, boundary_idx,
-                                         ext_start_idx, t_crit, units))
+    row_top = UPPER_TOP
+    for row_idx, stratum in enumerate(MARGIN_STRATA):
+        label_y = row_top + ROW_LABEL_H - 5
+        body.append(f'<text x="{fmt_num(MARGIN_L)}" y="{fmt_num(label_y)}" font-size="12" '
+                   f'fill="{INK_STRONG}" class="mono" font-weight="bold">{esc(stratum)}</text>')
+        body.append(f'<text x="{fmt_num(MARGIN_L + 7.2 * len(stratum) + 8)}" y="{fmt_num(label_y)}" '
+                   f'font-size="9" fill="{FAINT}" class="mono">decision stratum '
+                   f'{row_idx + 1} of {len(MARGIN_STRATA)}</text>')
+        box_top = row_top + ROW_LABEL_H
+        for i, metric in enumerate(MARGIN_METRICS):
+            sx0 = MARGIN_L + i * (sub_w + SUB_GAP)
+            box = (sx0, box_top, sx0 + sub_w, box_top + ROW_H)
+            body.extend(draw_margin_subplot(results, stratum, metric, box, boundary_idx,
+                                             ext_start_idx, t_crit, units))
+        row_top = box_top + ROW_H + ROW_GAP
 
-    # ---- lower panel: THE FINGERPRINT (marker channel, three strata) ----
-    lower_top = UPPER_TOP + UPPER_H + PANEL_GAP
-    body.append(f'<text x="{fmt_num(MARGIN_L)}" y="{fmt_num(lower_top - 18)}" font-size="14" '
-               f'fill="{INK_STRONG}" class="mono" font-weight="bold">THE FINGERPRINT</text>')
-    body.append(f'<text x="{fmt_num(MARGIN_L)}" y="{fmt_num(lower_top - 3)}" font-size="10.5" '
-               f'fill="{INK}" class="mono">marker channel, pool rate per unit &#8212; decisional, '
-               f'excess-direction, all three strata on one axis</text>')
+    # ---- lower (secondary, non-decisional) block: THE FINGERPRINT (marker
+    # channel, all three strata as context). Deliberately smaller than the
+    # margins block above, and its heading says "non-decisional" on the
+    # figure's own face -- this is the observation a four-second read
+    # otherwise remembers instead of the registered null.
+    lower_top = UPPER_TOP + MARGINS_BLOCK_H + PANEL_GAP
+    body.append(f'<text x="{fmt_num(MARGIN_L)}" y="{fmt_num(lower_top - 20)}" font-size="12.5" '
+               f'fill="{INK_STRONG}" class="mono" font-weight="bold">THE FINGERPRINT '
+               f'&#8212; secondary, non-decisional</text>')
+    body.append(f'<text x="{fmt_num(MARGIN_L)}" y="{fmt_num(lower_top - 7)}" font-size="9.5" '
+               f'fill="{FAINT}" class="mono">marker channel, pool rate per unit, all three strata '
+               f'&#8212; not a margin metric, not part of the §7 verdict above</text>')
     lower_box = (MARGIN_L, lower_top, FIG_W - MARGIN_R, lower_top + LOWER_H)
     body.extend(draw_fingerprint_panel(results, lower_box, boundary_idx, ext_start_idx, units))
 
     # shared vertical-rule / extension-window caption near the top-right
     cap_x = FIG_W - MARGIN_R
-    body.append(f'<text x="{fmt_num(cap_x)}" y="{fmt_num(UPPER_TOP - 42)}" text-anchor="end" '
+    body.append(f'<text x="{fmt_num(cap_x)}" y="{fmt_num(UPPER_TOP - 58)}" text-anchor="end" '
                f'font-size="8.5" fill="{FAINT}" class="mono">dashed vertical: envelope/extension '
                f'boundary ({esc(units[len(results["windows"]["envelope"]) - 1])}|'
                f'{esc(units[len(results["windows"]["envelope"])])})</text>')
-    body.append(f'<text x="{fmt_num(cap_x)}" y="{fmt_num(UPPER_TOP - 30)}" text-anchor="end" '
+    body.append(f'<text x="{fmt_num(cap_x)}" y="{fmt_num(UPPER_TOP - 46)}" text-anchor="end" '
                f'font-size="8.5" fill="{FAINT}" class="mono">shaded: extension window '
                f'{esc(ext_units[0])}&#8211;{esc(ext_units[-1])}</text>')
 
-    aria = ("Two-panel chart. Upper panel: four small multiples for cs.CL (mtld, hapax share, "
-            "zipf slope, similarity) each showing the measured series against a fitted "
-            "ordinary-drift envelope and its one-sided prediction band; none of the four series "
-            "crosses the collapse-direction band edge. Lower panel: the marker-channel pool rate "
-            "for cs.CL, cs.CV and math.NT on one shared axis, showing cs.CL and cs.CV rising "
-            "sharply from 2023 while math.NT stays flat.")
+    aria = ("Two-block chart, dominant block on top. Upper (dominant) block, THE MARGINS: an "
+            "eight-panel small-multiple grid, one row per pre-registered decision stratum (cs.CL, "
+            "then cs.CV), four metrics per row (mtld, hapax share, zipf slope, similarity), each "
+            "showing the measured series against a fitted ordinary-drift envelope and its "
+            "one-sided prediction band; none of the eight series shows a sustained, "
+            "two-consecutive-unit collapse-side breach. The control stratum math.NT is not drawn "
+            "in this block. Lower (secondary, non-decisional) block, THE FINGERPRINT: the "
+            "marker-channel pool rate for cs.CL, cs.CV and math.NT on one shared axis, shown at "
+            "reduced size because it is not part of the pre-registered verdict; it climbs sharply "
+            "from 2023 in cs.CL and cs.CV while staying flat in the math.NT control.")
 
     svg = (
         f'<svg viewBox="0 0 {FIG_W} {FIG_H}" xmlns="http://www.w3.org/2000/svg" '

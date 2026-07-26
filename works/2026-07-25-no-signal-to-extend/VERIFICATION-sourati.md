@@ -26,12 +26,13 @@ Models" (arXiv:2502.11266v1).
   across documents**, not the level of a diversity metric. Our four margin metrics are level-
   and pool-based — comparability is qualitative, exactly as the commitment states.
 - **Model:** Discontinuous Growth Model, GLS with AR(1): σ̄²_m ~ Time_m + ONSET_m + POST_m,
-  with ChatGPT's launch (2022-11-30) as the marker.
+  with the 2022-11-30 public launch of the widely adopted conversational model as the
+  marker (the source names the product; this record refers to it generically, per house rule).
 - **arXiv results (Table 1), the C1 resolution:**
   - Time β = −0.0008, p < .001 — "an existing downward trend" **before** launch;
   - ONSET β = −0.0427, p = .699 — **no significant step at launch**;
   - POST β = −0.0014, p < .001 — "a significant persistent decline … following the
-    introduction of ChatGPT," i.e. an **added post-launch slope** on top of the pre-trend.
+    introduction of [product name elided per house rule]," i.e. an **added post-launch slope** on top of the pre-trend.
   - Granger: AI-usage rate predicts variance reductions at lags 5–8 months (e.g. lag 6:
     F(6,63)=3.32, p=.007); the paper itself notes multiple-lag testing "may have increased
     the risk of Type I errors."
@@ -59,3 +60,9 @@ and — load-bearing for our envelope — the variance was **already declining p
 Study 2 (experimental): rewrites of pre-launch Reddit/arXiv texts by LLMs reduce complexity
 variance while preserving content — the causal-mechanism arm; not our instrument's claim.
 The paper carries an arXiv admin note of text overlap with arXiv:2404.00267.
+
+
+*Correction, 2026-07-25 (session 65, at the gauntlet): two occurrences of a commercial product
+name were removed from this record — one in the model description, one inside a verbatim quotation
+from the source, where the elision is marked in brackets. The Verifier found them. No figure, no
+coefficient and no other wording changed.*

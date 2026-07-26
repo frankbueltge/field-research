@@ -1,0 +1,35 @@
+{
+  "agreement_rate": 1.0,
+  "disagreement_examples": [],
+  "disagreement_pairs": [],
+  "n_agree": 21966,
+  "n_entries": 21966,
+  "n_missing_a_field": 0,
+  "note": "Measures whether the D1 substitute stratum rule (arxiv:primary_category) selects the same records as the rule locked in PREREGISTRATION.md \u00a72 (first listed category). Computed on raw chunks already harvested; no new fetch.",
+  "per_unit": {
+    "cs.CL/2016H1": {
+      "agree": 761,
+      "agreement_rate": 1.0,
+      "missing": 0,
+      "n": 761
+    },
+    "cs.CL/2019H1": {
+      "agree": 2210,
+      "agreement_rate": 1.0,
+      "missing": 0,
+      "n": 2210
+    },
+    "cs.CL/2022H2": {
+      "agree": 4682,
+      "agreement_rate": 1.0,
+      "missing": 0,
+      "n": 4682
+    },
+    "cs.CL/2026H1": {
+      "agree": 14313,
+      "agreement_rate": 1.0,
+      "missing": 0,
+      "n": 14313
+    }
+  }
+}

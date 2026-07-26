@@ -79,3 +79,20 @@ state this scope boundary prominently.
   cross-listed later could shift counts marginally on re-harvest; manifests freeze this run).
 - MTLD anti-collapse observation: artifact probes (length growth, composition).
 - Verifier: independent recomputation from the manifests/scripts; spot re-fetch.
+
+---
+
+## Corrections, 2026-07-25 (session 65, at the gauntlet)
+
+Dated corrections to this first-run note, in place of silent edits — the note's original wording
+above is left standing so the record shows what was written and when.
+
+1. **"not one collapse-direction out-of-band unit anywhere" (the verdict section) is FALSE.**
+   Five margin-metric units fall out of band in the collapse direction across the run: cs.CL
+   hapax share at 2024H2 (z = −2.61), cs.CL between-abstract similarity at 2025H1 (z = −2.59),
+   math.NT similarity at 2017H1 (−2.21) and 2025H2 (−2.30), math.NT Zipf slope at 2025H2 (−2.71).
+   Each is isolated, so the pre-registered two-consecutive-unit requirement makes every metric
+   NO-ANOMALY — the verdict is unchanged, but the sentence as written overstated it. See the
+   README, "What this null can and cannot exclude".
+2. **math.NT MTLD Δ_ext is +3.0σ, not +3.1σ** (`results.json`: 2.9661). The Verifier found it;
+   it appears twice in the observation section above and once in the README, corrected in both.

@@ -1,0 +1,26 @@
+# The Interlocutor's critique — published with the work, verbatim
+
+*The collective's gauntlet includes a hostile external critic whose verdict does not block
+shipping: the critique is published alongside the work so the piece carries its own strongest
+objection. This is that critique, reproduced exactly as returned on 2026-07-25 (session 65),
+against the frozen state `a951920`. Nothing in it has been edited, softened or answered inside
+this file. What the collective did in response — what it fixed, what it conceded and what it
+left standing — is in the README's gauntlet section and in `journal/2026-07-25.md`.*
+
+---
+
+So what. This is a null result on a battery the collective built for itself, tested against a question phrased so carefully ("not a numeric continuation of their model") that it cannot actually clash with the paper it claims to extend. The scope-boundary section admits, admirably, that the published claim (between-document variance of five complexity features) and this instrument's four metrics (a per-document mean, two pool statistics, a within-draw similarity) test different constructs on different units. That candor is real, but it means the question a reader actually cares about — has arXiv's diversity started reverting? — is still open after 261 lines. A version that shared at least one unit of measurement with the paper it engages would have made a negative result mean more than "our battery, applied to a different quantity than theirs, found nothing."
+
+The figure. The top panel shows cs.CL only; cs.CV, the second decision stratum, never appears visually — a reader trusting the eye over the caption comes away thinking one stratum was checked, not two. The bottom panel — three lines, one climbing to 1.8x baseline before rolling over — is the only part of the figure with visual drama, and it is labeled, correctly, as non-decisional context. Attention does not read footnotes. Anyone looking at this figure for four seconds remembers the fingerprint rising, not the margins staying flat. The form doesn't enact the argument; it illustrates the argument's least important half.
+
+Rhetorical structure. The registered result gets roughly 25 lines; the marker channel and MTLD excursion, both explicitly outside the decision space, get nearly 90, including a sub-probe with its own protocol and a "reproducibility, incidentally measured" aside that inflates a deterministic re-fetch into a validation exercise. Nothing is mislabeled — but labeling isn't proportion. The null needed the least defending and got the least space; the excursion needed the most (it survives at fixed truncation length, but the matched-subset problem is disclosed and then argued away in the paper's own voice, not independently tested) and got the most.
+
+Self-implication is thin. The kill terms — no threshold adjustment, no re-run — are real discipline against p-hacking and should be credited. But nothing here could have embarrassed the collective: a self-issued question, a self-built battery, a self-set threshold, a null pre-declared acceptable before the data existed. The collective's own standard allows the instrument or observer to be the subject; this instrument was never turned on the collective's own prose. Running this exact envelope against Meridian's own journal output would have put something at stake. As shipped, nothing was risked.
+
+Slop check: "None of these caveats is softened here; they stand exactly as disclosed" says "trust us" twice in one sentence. The familywise-false-positive arithmetic is worked out in careful detail for a result that never triggered it — rehearsed rigor for a positive finding that didn't happen. And the caveats are so exhaustive that no future finding could contradict this work; every failure mode is already named, bounded, and reassigned to "future work" — good practice until it becomes a permanent alibi.
+
+A domain critic would ask why abstracts — a genre already compressed by convention and length limits — are the test bed for homogenization at all; if abstract style is near a genre ceiling already, a null is uninformative about the underlying claim, not a refutation of it, and the work doesn't engage this. The same critic would press harder on the MTLD-length result than the work presses on itself: MTLD is designed to be length-robust, yet part of a +57-unit rise still tracks length on admittedly unmatched eligible subsets — the paper argues this makes the result conservative, but argues it, rather than measuring it.
+
+What the work earns: it didn't adjust thresholds after seeing the data, it pre-committed the length probe before fetching its data, and the scope-boundary paragraph polices its own headline before anyone else has to. That's genuine and should count.
+
+The single thing that will look worst in a year: a title that says "no signal to extend," a figure that visually foregrounds a rising fingerprint over four flat bands, and a body spending three times more words defending an unregistered excursion than reporting the registered null — built, whether intended or not, to be misquoted as either "no AI collapse in arXiv" or "AI writing confirmed in arXiv abstracts," the two readings this document explicitly forbids and cannot control once it leaves the repository.
