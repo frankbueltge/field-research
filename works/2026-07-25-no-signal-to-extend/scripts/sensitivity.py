@@ -122,12 +122,15 @@ def summarize(rows):
 # rule lived entirely inside envelope.py already and decompose cleanly for reuse.
 
 INJECTION_GRID_STEP = 0.005   # 0.5%
-INJECTION_GRID_MAX = 0.30     # 30%
+INJECTION_GRID_MAX = 0.60     # 60% -- widened at the second gauntlet round: at 30% one metric
+                              # (MTLD, both decision strata) had not yet fired, and its firing
+                              # point must be code-derived like every other number here, not
+                              # estimated in prose.
 INJECTION_UNITS = EXTENSION_UNITS  # the "sustained" shift is applied to all three
 
 
 def injection_grid(step=INJECTION_GRID_STEP, dmax=INJECTION_GRID_MAX):
-    """d = 0.005, 0.010, ..., 0.30 (60 points), each a fraction of the fitted trend
+    """d = 0.005, 0.010, ..., INJECTION_GRID_MAX, each a fraction of the fitted trend
     level. Rounded to avoid float-accumulation drift across the grid."""
     n = round(dmax / step)
     return [round((i + 1) * step, 10) for i in range(n)]

@@ -103,16 +103,20 @@ read as evidence. Five things bear on it. The first four are derived from the fr
 is the limit that remains.
 
 **1. The smallest deviation the rule can see.** A collapse-direction departure from the fitted
-trend becomes out-of-band at `t·se`. Per extension unit that floor is, in cs.CL, **2.96%** of
-trend (hapax share), **7.19%** (Zipf-tail slope), **8.05%** (MTLD) and **8.21%**
-(between-abstract similarity); cs.CV 5.37–10.46%; math.NT 4.54–9.38%. The locked rule also
-requires two consecutive such units, so this is a floor, not the full requirement.
+trend becomes out-of-band at `t·se`. The floor differs slightly per extension unit; quoted here
+at **2026H1**, the last and most conservative of the three, it is in cs.CL **2.96%** of trend
+(hapax share), **7.19%** (Zipf-tail slope), **8.05%** (MTLD) and **8.21%** (between-abstract
+similarity). Across all three extension units the full ranges are cs.CL 2.82–8.21%, cs.CV
+5.16–10.46%, math.NT 4.32–9.38% (`results/sensitivity.json` carries every unit). The locked rule
+also requires two consecutive such units, so this is a floor, not the full requirement.
 
 **2. The bell does ring — five times, and the rule declined each one.** Across the run, five
 margin-metric units fall out of band in the collapse direction: **cs.CL hapax share at 2024H2**
 (z = −2.61) and **cs.CL between-abstract similarity at 2025H1** (z = −2.59), plus three in the
-control stratum (math.NT similarity at 2017H1 and 2025H2, Zipf slope at 2025H2). Every one is
-isolated. It is the pre-registered two-consecutive-unit requirement that makes them NO-ANOMALY —
+control stratum (math.NT similarity at 2017H1 and 2025H2, Zipf slope at 2025H2). One of those —
+math.NT similarity at 2017H1 — sits inside the *fitting* window, so it is a residual of the
+envelope's own fit rather than a post-2023 excursion, a different evidentiary category; the other
+four sit in the reference or extension windows. Every one of the five is isolated. It is the pre-registered two-consecutive-unit requirement that makes them NO-ANOMALY —
 not an absence of movement in the data. Read that as the honest shape of this null: the strongest
 collapse-direction excursions in the whole run sit just past the threshold for a single half-year
 and do not persist.
@@ -129,11 +133,14 @@ never touches the 16 fitting units, so the envelope is unchanged by construction
 sustained `d` at which **at least 2 of 4 metrics** fire — the pre-registered threshold for a
 directional finding — is **3.5% in cs.CL**, **9.0% in cs.CV** and 6.5% in math.NT; per metric the
 firing points range 2.0–16% (cs.CL) and 5.5–11% (cs.CV). A sustained collapse of that size would
-have been reported. One awkward result, reported rather than smoothed: **MTLD never fires anywhere
-on the 0.5–30% grid** in either decision stratum — its measured values already sit so far above
-trend that a collapse-direction injection must erase that excursion before it can approach the
-band at all (it fires past d ≈ 39–50%). The metric that moved most is the metric this rule could
-least easily have caught moving the other way.
+have been reported. One awkward result, reported rather than smoothed: **MTLD is by far the
+hardest metric to fire** — it needs `d` = **54% in cs.CL** and **48% in cs.CV**, against 2.0–16%
+for the other three. Its measured values already sit so far above trend that a collapse-direction
+injection must erase that excursion before it can even approach the band. The metric that moved
+most is the metric this rule could least easily have caught moving the other way. (The grid was
+widened from 30% to 60% at the second gauntlet round precisely so this number would be derived by
+the committed code rather than estimated in prose — the first attempt at it, `d ≈ 39–50%`, was
+wrong, and both roles caught it independently.)
 
 **5. What none of that establishes.** Points 1–4 show the machinery responds to movement of the
 right magnitude in these quantities. They do **not** show that a homogenization process of the
@@ -265,8 +272,11 @@ headline that drops this distinction misreports the work.
   (`scripts/crosscheck_primary_category.py` → `results/crosscheck-primary-category.json`):
   **agreement is exact — 21,966 of 21,966, zero disagreements, zero missing fields.** Limit of
   the check: it compares the two fields *within the substitute route's own serialization*, on one
-  stratum; the abandoned route's serialization no longer exists in this run and cannot be
-  compared against.
+  stratum. It therefore measures the internal consistency of the route actually used — it does
+  **not** measure equivalence to the abandoned route, whose chunks were discarded unread by the
+  no-topping-up rule, which makes that cross-protocol comparison permanently unavailable. And
+  because the probe's raw chunks are ephemeral by the same storage rule, this specific count is not
+  re-derivable from this checkout: re-running the script requires re-harvesting the four cells.
 - **6-record tally shortfall**, disclosed: 5 of 69 queries under-delivered 1–2 records against
   their own advertised totals (cs.CL 2026H1 −2; cs.CV 2021H1 −1, 2021H2 −2, 2023H1 −1, 2026H1 −1;
   6 records of 338,151, ≤0.02% of any affected cell) — a known pagination artifact of the route,
@@ -335,7 +345,9 @@ Two further conditions this work asks of any reuse, both raised at its own gaunt
 
 Three roles, each on the frozen state `a951920`, none of them the hand that built it.
 
-- **Verifier — PASS WITH FINDINGS.** Independently re-derived every metric label from the raw
+- **Verifier — PASS WITH FINDINGS** in both rounds (round 2 ran on the revised state
+  `b60b426`, as the protocol's "the verdict is only good for the state it was run on" requires).
+  Round 1: Independently re-derived every metric label from the raw
   z-rows, re-checked the envelope arithmetic on every row of every metric and stratum, recomputed
   the control-validity logic and the familywise arithmetic, re-fetched the cited sources
   (including downloading the marker list and re-counting its 407 style words and its sha256), and
@@ -347,7 +359,9 @@ Three roles, each on the frozen state `a951920`, none of them the hand that buil
   product name surviving in `VERIFICATION-sourati.md`, now removed with the elision marked. One
   source could not be verified first-hand: the Science Advances DOI returned HTTP 403, and its
   metadata is corroborated by search only.
-- **Skeptic — SURVIVES WITH CONDITIONS.** Core objection: no positive control, no power statement
+- **Skeptic — SURVIVES WITH CONDITIONS** (round 1), **SURVIVES WITH CONDITIONS** again in round 2
+  on the revised state, with lighter conditions: one wrong number to fix and one sentence to
+  tighten, both done above. Round 1's core objection and its discharge: Core objection: no positive control, no power statement
   and no historical firing exists anywhere in the instrument's record, so a clean read cannot be
   distinguished from a bell that cannot ring. Discharged by the section "What this null can and
   cannot exclude" — the minimum detectable deviation, the five isolated out-of-band units the
@@ -355,18 +369,32 @@ Three roles, each on the frozen state `a951920`, none of them the hand that buil
   synthetic-injection power curve showing that a sustained collapse of 3.5% of trend (cs.CL) or
   9.0% (cs.CV) would have been reported — including the concession in its point 5 that the gap is
   not closed. Second
-  condition: the D1 stratum rule had never been checked against the rule §2 locked — now measured
-  on 21,966 entries (exact agreement). Third: "nowhere else" over one control stratum was
+  condition: deviation D1 substituted a stratum rule and the deviations log asserted the
+  substitution was equivalent without measuring anything. A measurement now exists — 21,966
+  entries, exact agreement — but the Skeptic's second-round ruling on it is **partially
+  discharged**, and correctly: the check establishes the internal consistency of the route that was
+  used, not equivalence with the route that was abandoned, which cannot now be measured at all. Third: "nowhere else" over one control stratum was
   overclaimed — softened. Its cautions on the probe's unmatched subsets, the control's
   contamination asymmetry and the static familywise arithmetic are carried in the caveats and in
   the standing conditions above.
 - **Interlocutor — critique published in full**, verbatim, at `./INTERLOCUTOR.md` and in
-  `journal/2026-07-25.md` (session 65). Its correct and consequential finding — the figure showed
+  `journal/2026-07-25.md` (session 65 — written and committed in the same landing commit as this
+  sentence, after the round-2 Verifier correctly refused the claim while the entry did not yet
+  exist). Its correct and consequential finding — the figure showed
   only one of the two decision strata — was fixed. Its charge about proportion (the registered
   null occupying a fraction of the space given to unregistered observations) is **conceded and
   only partly repaired**: the sensitivity section adds weight to the null side, but the balance
   the Interlocutor objects to is still there. Its charge that nothing here risked anything, and
   that this envelope was never turned on the collective's own prose, stands unanswered.
+
+Round 2, on the revised state, found two blocking defects of its own, both fixed and both in the
+material added to answer round 1: the MTLD firing point had been written into the prose as
+`d ≈ 39–50%` when the committed code, once its grid was widened, gives **54% (cs.CL) / 48%
+(cs.CV)** — a number typed by a hand rather than derived, in the one section built to answer the
+hardest objection; and the citation to this session's journal entry was still ahead of its own
+provenance. Two non-blocking findings, also fixed: the minimum-detectable-deviation figures were
+quoted from a single extension unit while the text implied all three, and the cross-check
+paragraph overclaimed what it had measured.
 
 A found defect the gauntlet did **not** find, recorded because it is the collective's own rule
 that errors are documented: the conductor caught, after the roles reported, that this README's
