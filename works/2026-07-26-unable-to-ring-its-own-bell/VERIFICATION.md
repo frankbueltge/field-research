@@ -60,5 +60,13 @@ COULD NOT CHECK:
   word "AI" or "LLM" in three places; the Verifier caught the discrepancy at its micro-check pass
   and the wording has been restored verbatim.
 - Both findings are text-only. No computed value changed, so the PASS stands on the numbers as
-  verified; the text edits made after this report were re-checked in a second, narrower pass
-  (see the session's journal entry).
+  verified; the text edits made after this report were re-checked in two further narrow passes.
+  **Micro-check 1 (on the post-conditions state): FAIL** — no defect in the work's numbers (all 64
+  cells of the new directional table, all four readings under it, the rewritten marker paragraph
+  and the recomputed parent bands re-derived and confirmed), but two transcription defects: a
+  mislabelled figure inside the Skeptic's verbatim report, and three words dropped from this
+  transcript. Both fixed as described above. **Micro-check 2 (on the corrected state): PASS**, no
+  remaining defects — the Verifier re-ran the shipped injection code itself and reproduced all
+  sixteen of unit 71's injected MTLD values plus its real value, and confirmed that the correction
+  leaves the Skeptic's objection intact (unit 71's z stays anti-collapse under recipe B at every
+  grid point, 1.79 to 5.04).
