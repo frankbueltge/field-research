@@ -1,0 +1,487 @@
+{
+  "generated_utc": "2026-07-26T23:45:18Z",
+  "upstream": {
+    "commit": "a7024008ec337118b2aeebb87065ded83ed23413",
+    "tag": "snapshot-2026-07-26",
+    "tag_sha": "8be62d8b86f2b5ce3690f44a983497adac7957d6"
+  },
+  "inputs": [
+    {
+      "path": "provenance/register-records/ablehnungen.jsonl",
+      "sha256": "4676937e28541197fe5526d839a2b9d6e0e920f9543bdd62ec77fe21a0cf1cab"
+    },
+    {
+      "path": "provenance/register-records/aufloesungen.jsonl",
+      "sha256": "0881b2eb41de4c581a9f204128710b696ca2ff373d102a332f33fa8e2c7e3939"
+    },
+    {
+      "path": "provenance/register-records/ausfaelle.jsonl",
+      "sha256": "dbd7e9bea39fe460f2655365f1a63c79a37ef53f0762cc784dafb2c2663c793b"
+    },
+    {
+      "path": "provenance/register-records/entscheidungen.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "provenance/register-records/manifeste/arcgis-20260726T164554Z.json",
+      "sha256": "cc217fe13ad5803b240d4c5913cc93c2f6a079acba16d4e343022dfc9eaab45f"
+    },
+    {
+      "path": "provenance/register-records/manifeste/arcgis-20260726T173351Z.json",
+      "sha256": "dd74a2f5b8c73d3aa8e86545da544a282833fb24322c15c058ab93dee3ef0576"
+    },
+    {
+      "path": "provenance/register-records/manifeste/datacite-20260726T150046Z.json",
+      "sha256": "163412d5cc6957081d457634b1c5a894cb5bd9d36c8092292b4ba48fc223f86c"
+    },
+    {
+      "path": "provenance/register-records/manifeste/huggingface-20260726T164558Z.json",
+      "sha256": "ee4b971cdafd2042f123e7cab32a9d0e10cd80bc0fd0c30d5b25ab0c0e2bccb4"
+    },
+    {
+      "path": "provenance/register-records/manifeste/kaggle-20260726T164544Z.json",
+      "sha256": "5bce23d3745fac1f008e03db3ce2c44cd4c70a7ab517991b13e1746c317fec4e"
+    },
+    {
+      "path": "provenance/register-records/manifeste/kaggle-20260726T173348Z.json",
+      "sha256": "5ee3aff602759c65489cb380716a3f792e38abba81c17826dbaced2b1d5893de"
+    },
+    {
+      "path": "provenance/register-records/snapshot-2026-07-26.manifest.json",
+      "sha256": "73770379b1b31d9195747a49cad35da1d9b8e72ce7454ad6d8bc4c7545369014"
+    }
+  ],
+  "assertions": [
+    {
+      "id": "A1",
+      "question": "What is the sum of `records` over the six committed harvest-run manifests?",
+      "computed": 29666,
+      "expected": 29666,
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/manifeste/arcgis-20260726T164554Z.json",
+        "provenance/register-records/manifeste/arcgis-20260726T173351Z.json",
+        "provenance/register-records/manifeste/datacite-20260726T150046Z.json",
+        "provenance/register-records/manifeste/huggingface-20260726T164558Z.json",
+        "provenance/register-records/manifeste/kaggle-20260726T164544Z.json",
+        "provenance/register-records/manifeste/kaggle-20260726T173348Z.json"
+      ],
+      "kind": "observed",
+      "per_run": [
+        {
+          "lauf": "arcgis-20260726T164554Z",
+          "quelle": "arcgis",
+          "records": 300
+        },
+        {
+          "lauf": "arcgis-20260726T173351Z",
+          "quelle": "arcgis",
+          "records": 6000
+        },
+        {
+          "lauf": "datacite-20260726T150046Z",
+          "quelle": "datacite",
+          "records": 13010
+        },
+        {
+          "lauf": "huggingface-20260726T164558Z",
+          "quelle": "huggingface",
+          "records": 300
+        },
+        {
+          "lauf": "kaggle-20260726T164544Z",
+          "quelle": "kaggle",
+          "records": 60
+        },
+        {
+          "lauf": "kaggle-20260726T173348Z",
+          "quelle": "kaggle",
+          "records": 9996
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "question": "How many records did the withheld source (`kaggle`) contribute to the harvest, and what share of A1 is that?",
+      "computed": {
+        "withheld_records": 10056,
+        "share_of_total": 0.338974
+      },
+      "expected": {
+        "withheld_records": 10056,
+        "share_of_total": 0.338974
+      },
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/manifeste/arcgis-20260726T164554Z.json",
+        "provenance/register-records/manifeste/arcgis-20260726T173351Z.json",
+        "provenance/register-records/manifeste/datacite-20260726T150046Z.json",
+        "provenance/register-records/manifeste/huggingface-20260726T164558Z.json",
+        "provenance/register-records/manifeste/kaggle-20260726T164544Z.json",
+        "provenance/register-records/manifeste/kaggle-20260726T173348Z.json"
+      ],
+      "kind": "observed"
+    },
+    {
+      "id": "A3",
+      "question": "Does the snapshot's `fundstellen` counter equal the harvest total minus the withheld source's records, exactly?",
+      "computed": 0,
+      "expected": 0,
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/snapshot-2026-07-26.manifest.json",
+        "provenance/register-records/manifeste/arcgis-20260726T164554Z.json",
+        "provenance/register-records/manifeste/arcgis-20260726T173351Z.json",
+        "provenance/register-records/manifeste/datacite-20260726T150046Z.json",
+        "provenance/register-records/manifeste/huggingface-20260726T164558Z.json",
+        "provenance/register-records/manifeste/kaggle-20260726T164544Z.json",
+        "provenance/register-records/manifeste/kaggle-20260726T173348Z.json"
+      ],
+      "kind": "observed",
+      "fundstellen": 19610,
+      "harvest_total_a1": 29666,
+      "withheld_records_a2": 10056,
+      "non_withheld_total": 19610
+    },
+    {
+      "id": "A4",
+      "question": "How many lines does the rejection register carry in total, and how are they distributed by reason code (`grund`)?",
+      "computed": {
+        "total": 438,
+        "distribution": {
+          "konstruierte-url-ungeprueft": 300,
+          "keine-zugangs-url": 137,
+          "quelle-rechtlich-ungeklaert": 1
+        }
+      },
+      "expected": {
+        "total": 438,
+        "distribution": {
+          "konstruierte-url-ungeprueft": 300,
+          "keine-zugangs-url": 137,
+          "quelle-rechtlich-ungeklaert": 1
+        }
+      },
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/ablehnungen.jsonl"
+      ],
+      "kind": "observed"
+    },
+    {
+      "id": "A5",
+      "question": "How many rejection-register lines name the withheld source (`kaggle`), against how many records of that source were harvested (A2)?",
+      "computed": {
+        "rejection_lines": 1,
+        "harvested_records": 10056,
+        "ratio": "1 : 10056"
+      },
+      "expected": {
+        "rejection_lines": 1,
+        "harvested_records": 10056,
+        "ratio": "1 : 10056"
+      },
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/ablehnungen.jsonl",
+        "provenance/register-records/manifeste/arcgis-20260726T164554Z.json",
+        "provenance/register-records/manifeste/arcgis-20260726T173351Z.json",
+        "provenance/register-records/manifeste/datacite-20260726T150046Z.json",
+        "provenance/register-records/manifeste/huggingface-20260726T164558Z.json",
+        "provenance/register-records/manifeste/kaggle-20260726T164544Z.json",
+        "provenance/register-records/manifeste/kaggle-20260726T173348Z.json"
+      ],
+      "kind": "observed"
+    },
+    {
+      "id": "A6",
+      "question": "What is the difference between the append-only rejection register's line count and the snapshot's own `abgelehnt_gesamt` counter?",
+      "computed": 21,
+      "expected": 21,
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/ablehnungen.jsonl",
+        "provenance/register-records/snapshot-2026-07-26.manifest.json"
+      ],
+      "kind": "observed",
+      "ablehnungen_lines": 438,
+      "abgelehnt_gesamt": 417
+    },
+    {
+      "id": "A7",
+      "question": "Of the `huggingface` records that appear in the rejection register, how many also have a confirmed (ok=true) resolved access route in the resolution ledger?",
+      "computed": {
+        "rejected_huggingface_ids": 300,
+        "confirmed_huggingface_ids": 20,
+        "intersection": 20,
+        "excess_remainder_after_intersection": 1
+      },
+      "expected": {
+        "rejected_huggingface_ids": 300,
+        "confirmed_huggingface_ids": 20,
+        "intersection": 20,
+        "excess_remainder_after_intersection": 1
+      },
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/ablehnungen.jsonl",
+        "provenance/register-records/aufloesungen.jsonl"
+      ],
+      "kind": "observed",
+      "note": "The intersection (20) is directly observable from the two frozen files. The remainder (A6 excess 21 minus this intersection 20 = 1) is a separate, inference-labelled reading: it identifies the remainder with the single withheld-source rejection line seen in A5. See A12 for the inference basis."
+    },
+    {
+      "id": "A8",
+      "question": "What share of all register entries (`eintraege`) have an attempted (`aufgeloest_versucht`) resp. confirmed (`aufgeloest_bestaetigt`) resolved access route?",
+      "computed": {
+        "eintraege": 17327,
+        "aufgeloest_versucht": 220,
+        "aufgeloest_bestaetigt": 164,
+        "share_versucht": 0.012697,
+        "share_bestaetigt": 0.009465
+      },
+      "expected": {
+        "eintraege": 17327,
+        "aufgeloest_versucht": 220,
+        "aufgeloest_bestaetigt": 164,
+        "share_versucht": 0.012697,
+        "share_bestaetigt": 0.009465
+      },
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/snapshot-2026-07-26.manifest.json"
+      ],
+      "kind": "observed",
+      "caveat": "The intersection of `aufgeloest_bestaetigt` with an open licence is not computable from the committed tree (the 17,327 entries themselves are gitignored). 164 is therefore an upper bound on the subset that satisfies both of this practice's evidence conditions (retrievable AND openly licensed), not a measurement of that subset itself."
+    },
+    {
+      "id": "A9",
+      "question": "In the resolution ledger, how many rows are there, how many unique `id`s, how many `ok=true` rows, and what is the HTTP status distribution?",
+      "computed": {
+        "total_rows": 1070,
+        "unique_ids": 670,
+        "ok_true_rows": 614,
+        "status_distribution": {
+          "403": 53,
+          "200": 608,
+          "202": 6,
+          "null": 1,
+          "404": 402
+        }
+      },
+      "expected": {
+        "total_rows": 1070,
+        "unique_ids": 670,
+        "ok_true_rows": 614,
+        "status_distribution": {
+          "200": 608,
+          "404": 402,
+          "403": 53,
+          "202": 6,
+          "null": 1
+        }
+      },
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/aufloesungen.jsonl"
+      ],
+      "kind": "observed"
+    },
+    {
+      "id": "A10",
+      "question": "Among resolution-ledger rows where `ok` is not true, what is the URL-host distribution and the associated status codes, and what share of all failures do the top two hosts account for?",
+      "computed": {
+        "failures_total": 456,
+        "www.kaggle.com": {
+          "count": 402,
+          "statuses": {
+            "404": 402
+          }
+        },
+        "www.gbif.org": {
+          "count": 48,
+          "statuses": {
+            "403": 48
+          }
+        },
+        "top_two_share": 0.986842
+      },
+      "expected": {
+        "failures_total": 456,
+        "www.kaggle.com": {
+          "count": 402,
+          "statuses": {
+            "404": 402
+          }
+        },
+        "www.gbif.org": {
+          "count": 48,
+          "statuses": {
+            "403": 48
+          }
+        },
+        "top_two_share": 0.986842
+      },
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/aufloesungen.jsonl"
+      ],
+      "kind": "observed",
+      "top_two_hosts": [
+        "www.kaggle.com",
+        "www.gbif.org"
+      ],
+      "full_failure_host_distribution": {
+        "www.gbif.org": 48,
+        "www.osti.gov": 1,
+        "data.nhm.ac.uk": 1,
+        "www.kaggle.com": 402,
+        "www.researchgate.net": 1,
+        "www.openicpsr.org": 2,
+        "www.checklistbank.org": 1
+      },
+      "full_failure_host_status_breakdown": {
+        "www.gbif.org": {
+          "403": 48
+        },
+        "www.osti.gov": {
+          "null": 1
+        },
+        "data.nhm.ac.uk": {
+          "403": 1
+        },
+        "www.kaggle.com": {
+          "404": 402
+        },
+        "www.researchgate.net": {
+          "403": 1
+        },
+        "www.openicpsr.org": {
+          "403": 2
+        },
+        "www.checklistbank.org": {
+          "403": 1
+        }
+      },
+      "confirmed_host_distribution": {
+        "zenodo.org": 39,
+        "figshare.com": 6,
+        "www.osti.gov": 99,
+        "huggingface.co": 20,
+        "www.kaggle.com": 450
+      }
+    },
+    {
+      "id": "A11",
+      "question": "For each of the six harvest runs, how do `records` compare to `gesamt_gemeldet_im_fenster` (its own reported window total), and how many runs declare themselves incomplete (`vollstaendig`=false)?",
+      "computed": {
+        "incomplete_runs": 5,
+        "complete_runs": [
+          "datacite"
+        ]
+      },
+      "expected": {
+        "incomplete_runs": 5,
+        "complete_runs": [
+          "datacite"
+        ]
+      },
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/manifeste/arcgis-20260726T164554Z.json",
+        "provenance/register-records/manifeste/arcgis-20260726T173351Z.json",
+        "provenance/register-records/manifeste/datacite-20260726T150046Z.json",
+        "provenance/register-records/manifeste/huggingface-20260726T164558Z.json",
+        "provenance/register-records/manifeste/kaggle-20260726T164544Z.json",
+        "provenance/register-records/manifeste/kaggle-20260726T173348Z.json"
+      ],
+      "kind": "observed",
+      "per_run": [
+        {
+          "lauf": "arcgis-20260726T164554Z",
+          "quelle": "arcgis",
+          "records": 300,
+          "gesamt_gemeldet_im_fenster": 33361,
+          "ratio_records_over_reported": 0.008993,
+          "vollstaendig": false,
+          "hinweis": "Seitenkappe erreicht, weitere Seiten möglich"
+        },
+        {
+          "lauf": "arcgis-20260726T173351Z",
+          "quelle": "arcgis",
+          "records": 6000,
+          "gesamt_gemeldet_im_fenster": 33643,
+          "ratio_records_over_reported": 0.178343,
+          "vollstaendig": false,
+          "hinweis": "Seitenkappe erreicht, weitere Seiten möglich"
+        },
+        {
+          "lauf": "datacite-20260726T150046Z",
+          "quelle": "datacite",
+          "records": 13010,
+          "gesamt_gemeldet_im_fenster": 13002,
+          "ratio_records_over_reported": 1.000615,
+          "vollstaendig": true,
+          "hinweis": null
+        },
+        {
+          "lauf": "huggingface-20260726T164558Z",
+          "quelle": "huggingface",
+          "records": 300,
+          "gesamt_gemeldet_im_fenster": null,
+          "ratio_records_over_reported": null,
+          "vollstaendig": false,
+          "hinweis": "Seitenkappe erreicht, weitere Seiten möglich (Cursor vorhanden)"
+        },
+        {
+          "lauf": "kaggle-20260726T164544Z",
+          "quelle": "kaggle",
+          "records": 60,
+          "gesamt_gemeldet_im_fenster": null,
+          "ratio_records_over_reported": null,
+          "vollstaendig": false,
+          "hinweis": "Seitenkappe erreicht, weitere Seiten möglich"
+        },
+        {
+          "lauf": "kaggle-20260726T173348Z",
+          "quelle": "kaggle",
+          "records": 9996,
+          "gesamt_gemeldet_im_fenster": null,
+          "ratio_records_over_reported": null,
+          "vollstaendig": false,
+          "hinweis": "Seitenkappe erreicht, weitere Seiten möglich"
+        }
+      ],
+      "note": "Two of the six run manifests (huggingface, and both kaggle runs) do not carry a `gesamt_gemeldet_im_fenster` field at all, so no ratio can be computed for them; this is reported as `null`, not zero."
+    },
+    {
+      "id": "A12",
+      "question": "Inference: were the withheld source's harvest files simply absent from the build's inputs (rather than present and individually rejected)? State the alternative reading and whether the counters rule it out.",
+      "computed": "ruled-out-by-counters",
+      "expected": "ruled-out-by-counters",
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/snapshot-2026-07-26.manifest.json",
+        "provenance/register-records/ablehnungen.jsonl",
+        "provenance/register-records/manifeste/arcgis-20260726T164554Z.json",
+        "provenance/register-records/manifeste/arcgis-20260726T173351Z.json",
+        "provenance/register-records/manifeste/datacite-20260726T150046Z.json",
+        "provenance/register-records/manifeste/huggingface-20260726T164558Z.json",
+        "provenance/register-records/manifeste/kaggle-20260726T164544Z.json",
+        "provenance/register-records/manifeste/kaggle-20260726T173348Z.json"
+      ],
+      "kind": "inference",
+      "basis": "A3 shows fundstellen (19610) equals the harvest total of all sources except the withheld one (kaggle), exactly, with zero difference. This is consistent with the withheld source's harvest files having been absent from the snapshot build's inputs entirely.",
+      "alternative_reading": "The files were present as inputs to the build, and the withheld source's 10056 records were rejected one by one during the build.",
+      "why_ruled_out": "A per-record rejection of 10056 records would require the snapshot's abgelehnt_gesamt counter to be at least 10056. It is 417 (A4/A6), which rules out the alternative reading.",
+      "abgelehnt_gesamt": 417,
+      "withheld_records": 10056
+    }
+  ],
+  "verdict": {
+    "pass_count": 12,
+    "fail_count": 0,
+    "total": 12,
+    "all_pass": true
+  }
+}
