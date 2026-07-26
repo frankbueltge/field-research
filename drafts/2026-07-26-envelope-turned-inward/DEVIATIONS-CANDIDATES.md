@@ -135,3 +135,150 @@ file was written.
 Item 1 (the file-glob vs. "this run's own output" tension) is the one place the locked
 text is not self-consistent on its face; §5's explicit sentence resolves it unambiguously,
 so it is recorded here as an interpretation rather than reported as an open defect.
+
+---
+
+# Deviation candidates — Builder, stage 2 (envelope, classification, verdict, sensitivity)
+
+Everything below is an interpretation, specification, or implementation choice required
+to execute PREREGISTRATION.md §4-§9 against stage 1's frozen `results/metrics.json`, not
+an edit to the locked text. Stage 1's items above are unchanged.
+
+## 8. Prop40 branch (§3 sensitivity companion) has only 3 metrics, not 4
+
+§3's fixed-proportion companion series is described as "each metric ... computed through
+the identical envelope machinery," and the task lists "the prop40 fixed-proportion series
+(§3)" as one of five non-decisional branches to run through the identical machinery.
+`results/metrics.json`'s `prop40` block (stage 1's frozen output) carries `mtld`,
+`hapax_share`, `top50_mass`, `zipf_slope` and `marker_rate_per_1000` — but **no
+`prop40`-scale similarity series**: metric 4 is a between-unit window construction over
+each unit's 600-token *prefix600*, and stage 1 never computed an analogous window over
+each unit's first-40%-of-tokens slice. Since this stage may not regenerate
+`results/metrics.json` (frozen input, hard rule), the prop40 branch here runs the §7
+machinery over the 3 metrics that do exist (`mtld`, `hapax_share`, `top50_mass`) and is
+explicitly noted as a 3-metric roster in `results/envelope.json`
+(`branches.prop40_fixed_proportion.note`).
+
+**Direction of effect:** the §7 thresholds (>=2 of ext-decidable for step 1, <=1 for the
+step-2 kill condition) are applied unchanged to a 3-metric denominator instead of 4, which
+is a *smaller* base to reach ">=2 of N" against — mechanically slightly easier to fire on
+this branch than the 4-metric decisional roster, in proportion terms, though this branch
+is declared non-decisional and never overrides the decisional verdict either way. No
+alternative construction was available without regenerating frozen stage-1 output, which
+is prohibited.
+
+## 9. Sim_block anomaly rule operationalized at BLOCK granularity, not the naive per-unit rule
+
+§3(e)'s disjoint-block companion series exists specifically to "restore the
+independent-observation logic the two-consecutive rule assumes." But `metrics.json`
+stores `sim_block` as one value **per unit**, with every unit inside the same 5-unit block
+carrying its block's identical value (and therefore identical `out_of_band` status once
+enveloped). Applying §4's literal "two consecutive computable units out-of-band" rule at
+unit granularity to this series would make ANY single out-of-band block trivially satisfy
+the anomaly condition (any two of its <=5 constituent units are "two consecutive
+out-of-band units") — which tests nothing beyond "one block fired," defeating the
+independent-two-observations purpose §3(e) states for building this series in the first
+place.
+
+**Resolution, implemented in `scripts/envelope_units.py`'s `anomaly_two_consecutive_blocks`:**
+rows in the window are collapsed to one representative row per distinct block touched
+(first occurrence, since all units in a block share one value), and the rule becomes "two
+ADJACENT blocks (by block index, no gap), both out-of-band" — the genuine block-level
+analogue of the unit-level rule.
+
+**Direction of effect:** substantially HARDER to fire than the naive (vacuous) per-unit
+reading would have been — consistent with this task's instruction to resolve ambiguity in
+the direction that makes a positive finding harder. Non-decisional branch only; never
+affects the decisional verdict.
+
+## 10. Sim_content branch keeps the five-apart anomaly exception
+
+§4's Skeptic-condition-1 exception ("metric 4's two out-of-band units must be >= 5 apart")
+is stated for metric 4 / `similarity` specifically, in the context of the decisional
+trailing-window series. The sim_content companion series (§3(d)) uses the IDENTICAL
+trailing-window construction (same `window_indices`, same document-sharing-by-construction
+property) with only the token content filtered — so the same serial-correlation rationale
+applies verbatim. `sim_content` is therefore evaluated under the five-apart rule, not the
+plain two-consecutive rule, in `results/envelope.json`'s `branches.sim_content_companion`.
+
+**Direction of effect:** harder to fire than a bare two-consecutive default would have
+been for this branch; consistent with the same window-overlap logic §4 already applies to
+the decisional similarity metric, and with the instruction to resolve ambiguity toward
+harder-to-fire where the locked text does not explicitly say.
+
+## 11. Injection mechanics: donor-cycle phase and its interaction with within-window idf
+
+§9.2 leaves two things unstated, both now fixed and documented in
+`scripts/sensitivity_units.py`'s module docstring: (a) `n_replace = round(p * 600)` — moot
+here since every grid `p` gives an exact integer (30, 60, ..., 300), verified by
+`tests/test_injection.py`; (b) the donor list for a recipe is shuffled ONCE with a
+recipe-only seed (`20260726:donors:{recipe}`), and for every decision unit's injection the
+donor cycle **restarts at the front of that same shuffled list** — chosen so a single
+unit's injected prefix is a pure function of `(unit, p, recipe)` alone, independent of
+whatever else is being injected in the same run (required for the determinism test, and
+for the "envelope fit itself stays fitted on the real envelope-era data" independence the
+task requires).
+
+**Observed, disclosed consequence (not a bug, but worth stating plainly because it
+explains a result in `results/sensitivity.json`):** because every decision unit under a
+given `(p, recipe)` receives donor tokens in the SAME phase, and because several decision
+units are simultaneously injected under one `(p, recipe)` combination, shared donor tokens
+tend to land with near-identical relative frequency across multiple documents inside a
+similarity window. §3(a)'s idf construction (`idf = ln(n_window/df)`) zeroes any token
+present in ALL documents of its window — so once several members of a similarity window
+are co-injected decision units, part of the injected homogenization signal can be
+idf-zeroed away by the very metric the injection is meant to move. In this run, `similarity`
+is reported "structurally blind to this injection" at every grid `p` under both recipes
+(`results/sensitivity.json.structurally_blind_metrics`); this donor-phasing interaction is
+one contributor to that result, alongside the metric's already-larger prediction-interval
+margin. **Direction of effect:** makes the measured power against `similarity` more
+conservative (harder to detect) than a design that varied donor phase per unit would have
+been — again on the side the task instructs ambiguity to be resolved toward, but flagged
+here because "structurally blind" could otherwise be misread as a property of the corpus
+rather than partly an artifact of this implementation choice.
+
+## 12. Degenerate-fit guard in `build_rows` (z_raw defined as 0.0 when se == 0)
+
+PREREGISTRATION.md §4's formula `z = (y - yhat) / SE_pred` is undefined (0/0) for an
+exactly-collinear fit (`s = 0`, hence `SE_pred = 0` at every `x`). This never occurs on
+the real corpus (real residuals are never exactly zero), but the task requires a unit test
+asserting "a perfectly linear series must give z = 0 at every envelope point," which needs
+this case to be well-defined rather than raising `ZeroDivisionError`. `build_rows` in
+`scripts/envelope_units.py` treats `se == 0` as `z_raw = 0.0` (the deviation is also
+exactly 0 in every case this guard can be reached from). **Direction of effect:** none on
+any output derived from real data (the guard is provably unreachable there, since it
+requires `ss_res == 0` exactly across 44 or more real, independently-drafted units); exists
+only to make `tests/test_envelope_arithmetic.py`'s required fixture well-defined.
+
+## 13. Marker channel evaluated over the single combined window (48-73), not split ref/ext
+
+The task's instruction for the marker channel (§8) states explicitly: "its own envelope
+over units 1-47, raw (UNreoriented) z, excess-direction rule z > +t, over the **combined
+window 48-73**." This is implemented as written — one anomaly boolean and one mean-z over
+units 48-73 together — which differs from the parent instrument's own `marker_report`
+(`works/2026-07-25-no-signal-to-extend/scripts/envelope.py`), which reports separate
+`a_ref`/`a_ext`/`delta_ref`/`delta_ext` for its two windows. **Direction of effect:**
+neutral — faithful to this task's explicit instruction, which is more specific than and
+supersedes the parent's own convention for this adapted instrument.
+
+## 14. "§7 step 1 fires" operationalized as reaching step 1 of the ordered procedure
+
+§9.3's "the smallest p at which §7 step 1 fires (battery level)" is operationalized in
+`scripts/sensitivity_units.py` as: the injected run's `evaluate_verdict(...)["step"] == 1`,
+i.e. >=2 ext-decidable margin metrics show `A_ext` (including when that pair triggers the
+SINGLE-CHANNEL downgrade, since SINGLE-CHANNEL is still reached via step 1's branch of the
+ordered procedure — it is a modifier of step 1's headline, not a different step).
+**Direction of effect:** neutral, the only reading consistent with §7's own text ("first
+applicable step wins"); recorded because §9 does not itself restate the step-1 predicate.
+
+## 15. §9.4 informativeness bar computed unconditionally, not gated on the real verdict being a null
+
+§9.4's bar text ("For a §7 step-2 null to be reported as informative...") is conditional
+language about how a null WOULD be reported. The task's build instructions require the
+sensitivity script to "Emit the resulting label" as one of the script's required outputs
+regardless. `results/sensitivity.json` therefore always computes and emits
+`informativeness.label`, with a note that the bar's normative force (whether it actually
+qualifies a null) only applies if `results/envelope.json`'s decisional verdict is itself a
+step-2 null. **Direction of effect:** neutral, additive-only; the label is diagnostic
+context in this run's case (see the return summary for what the real decisional verdict
+actually was).

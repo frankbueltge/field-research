@@ -1,0 +1,1929 @@
+{
+  "generated_utc": "2026-07-26T04:25:04Z",
+  "p_grid": [
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.4,
+    0.5
+  ],
+  "recipes": {
+    "A": {
+      "donor_rank_range": [
+        1,
+        50
+      ],
+      "donor_count": 50,
+      "note": "near-universal function words; expected close to invisible to metric 4 (similarity) via idf-zeroing -- under test, not assumed."
+    },
+    "B": {
+      "donor_rank_range": [
+        51,
+        150
+      ],
+      "donor_count": 100,
+      "note": "not near-universal; can move a within-window TF-IDF cosine."
+    }
+  },
+  "mde": {
+    "mtld": {
+      "direction": "low",
+      "t_crit": 2.018081702818108,
+      "n_fit": 44,
+      "df": 42,
+      "per_unit": [
+        {
+          "index": 61,
+          "se": 39.24629459865597,
+          "mde_magnitude": 79.20222903295677,
+          "required_direction": "decrease",
+          "required_raw_delta": -79.20222903295677
+        },
+        {
+          "index": 62,
+          "se": 39.39777442941289,
+          "mde_magnitude": 79.50792770775328,
+          "required_direction": "decrease",
+          "required_raw_delta": -79.50792770775328
+        },
+        {
+          "index": 63,
+          "se": 39.55261846130086,
+          "mde_magnitude": 79.82041561529698,
+          "required_direction": "decrease",
+          "required_raw_delta": -79.82041561529698
+        },
+        {
+          "index": 64,
+          "se": 39.71078734031226,
+          "mde_magnitude": 80.13961333598513,
+          "required_direction": "decrease",
+          "required_raw_delta": -80.13961333598513
+        },
+        {
+          "index": 65,
+          "se": 39.87224149853756,
+          "mde_magnitude": 80.46544101854352,
+          "required_direction": "decrease",
+          "required_raw_delta": -80.46544101854352
+        },
+        {
+          "index": 66,
+          "se": 40.03694119105289,
+          "mde_magnitude": 80.79781845446847,
+          "required_direction": "decrease",
+          "required_raw_delta": -80.79781845446847
+        },
+        {
+          "index": 67,
+          "se": 40.2048465317539,
+          "mde_magnitude": 81.13666515034262,
+          "required_direction": "decrease",
+          "required_raw_delta": -81.13666515034262
+        },
+        {
+          "index": 68,
+          "se": 40.375917528099215,
+          "mde_magnitude": 81.48190039794997,
+          "required_direction": "decrease",
+          "required_raw_delta": -81.48190039794997
+        },
+        {
+          "index": 69,
+          "se": 40.55011411473196,
+          "mde_magnitude": 81.83344334212688,
+          "required_direction": "decrease",
+          "required_raw_delta": -81.83344334212688
+        },
+        {
+          "index": 70,
+          "se": 40.72739618595362,
+          "mde_magnitude": 82.19121304629701,
+          "required_direction": "decrease",
+          "required_raw_delta": -82.19121304629701
+        },
+        {
+          "index": 71,
+          "se": 40.90772362702922,
+          "mde_magnitude": 82.55512855564768,
+          "required_direction": "decrease",
+          "required_raw_delta": -82.55512855564768
+        },
+        {
+          "index": 72,
+          "se": 41.09105634430817,
+          "mde_magnitude": 82.92510895791627,
+          "required_direction": "decrease",
+          "required_raw_delta": -82.92510895791627
+        },
+        {
+          "index": 73,
+          "se": 41.27735429414952,
+          "mde_magnitude": 83.3010734417636,
+          "required_direction": "decrease",
+          "required_raw_delta": -83.3010734417636
+        }
+      ],
+      "range": [
+        79.20222903295677,
+        83.3010734417636
+      ]
+    },
+    "hapax_share": {
+      "direction": "low",
+      "t_crit": 2.018081702818108,
+      "n_fit": 44,
+      "df": 42,
+      "per_unit": [
+        {
+          "index": 61,
+          "se": 0.03423961604376425,
+          "mde_magnitude": 0.06909834264943797,
+          "required_direction": "decrease",
+          "required_raw_delta": -0.06909834264943797
+        },
+        {
+          "index": 62,
+          "se": 0.034371771481533114,
+          "mde_magnitude": 0.06936504312032724,
+          "required_direction": "decrease",
+          "required_raw_delta": -0.06936504312032724
+        },
+        {
+          "index": 63,
+          "se": 0.03450686194683004,
+          "mde_magnitude": 0.06963766671656814,
+          "required_direction": "decrease",
+          "required_raw_delta": -0.06963766671656814
+        },
+        {
+          "index": 64,
+          "se": 0.03464485310606697,
+          "mde_magnitude": 0.06991614415017486,
+          "required_direction": "decrease",
+          "required_raw_delta": -0.06991614415017486
+        },
+        {
+          "index": 65,
+          "se": 0.034785710439041606,
+          "mde_magnitude": 0.07020040575655873,
+          "required_direction": "decrease",
+          "required_raw_delta": -0.07020040575655873
+        },
+        {
+          "index": 66,
+          "se": 0.03492939927111912,
+          "mde_magnitude": 0.07049038155947367,
+          "required_direction": "decrease",
+          "required_raw_delta": -0.07049038155947367
+        },
+        {
+          "index": 67,
+          "se": 0.035075884804494716,
+          "mde_magnitude": 0.07078600133410651,
+          "required_direction": "decrease",
+          "required_raw_delta": -0.07078600133410651
+        },
+        {
+          "index": 68,
+          "se": 0.035225132148504826,
+          "mde_magnitude": 0.0710871946682475,
+          "required_direction": "decrease",
+          "required_raw_delta": -0.0710871946682475
+        },
+        {
+          "index": 69,
+          "se": 0.03537710634895951,
+          "mde_magnitude": 0.07139389102148552,
+          "required_direction": "decrease",
+          "required_raw_delta": -0.07139389102148552
+        },
+        {
+          "index": 70,
+          "se": 0.03553177241647359,
+          "mde_magnitude": 0.0717060197823825,
+          "required_direction": "decrease",
+          "required_raw_delta": -0.0717060197823825
+        },
+        {
+          "index": 71,
+          "se": 0.035689095353778205,
+          "mde_magnitude": 0.07202351032359056,
+          "required_direction": "decrease",
+          "required_raw_delta": -0.07202351032359056
+        },
+        {
+          "index": 72,
+          "se": 0.035849040181999164,
+          "mde_magnitude": 0.07234629205488366,
+          "required_direction": "decrease",
+          "required_raw_delta": -0.07234629205488366
+        },
+        {
+          "index": 73,
+          "se": 0.03601157196589212,
+          "mde_magnitude": 0.07267429447408442,
+          "required_direction": "decrease",
+          "required_raw_delta": -0.07267429447408442
+        }
+      ],
+      "range": [
+        0.06909834264943797,
+        0.07267429447408442
+      ]
+    },
+    "top50_mass": {
+      "direction": "high",
+      "t_crit": 2.018081702818108,
+      "n_fit": 44,
+      "df": 42,
+      "per_unit": [
+        {
+          "index": 61,
+          "se": 0.02803323547837482,
+          "mde_magnitude": 0.05657335958969966,
+          "required_direction": "increase",
+          "required_raw_delta": 0.05657335958969966
+        },
+        {
+          "index": 62,
+          "se": 0.028141436005564933,
+          "mde_magnitude": 0.0567917170938573,
+          "required_direction": "increase",
+          "required_raw_delta": 0.0567917170938573
+        },
+        {
+          "index": 63,
+          "se": 0.02825203954795604,
+          "mde_magnitude": 0.057014924079023664,
+          "required_direction": "increase",
+          "required_raw_delta": 0.057014924079023664
+        },
+        {
+          "index": 64,
+          "se": 0.028365017995374334,
+          "mde_magnitude": 0.05724292381657132,
+          "required_direction": "increase",
+          "required_raw_delta": 0.05724292381657132
+        },
+        {
+          "index": 65,
+          "se": 0.028480343084858008,
+          "mde_magnitude": 0.05747565926953418,
+          "required_direction": "increase",
+          "required_raw_delta": 0.05747565926953418
+        },
+        {
+          "index": 66,
+          "se": 0.028597986427005683,
+          "mde_magnitude": 0.05771307314578077,
+          "required_direction": "increase",
+          "required_raw_delta": 0.05771307314578077
+        },
+        {
+          "index": 67,
+          "se": 0.02871791953157218,
+          "mde_magnitude": 0.05795510794966859,
+          "required_direction": "increase",
+          "required_raw_delta": 0.05795510794966859
+        },
+        {
+          "index": 68,
+          "se": 0.028840113832285415,
+          "mde_magnitude": 0.05820170603212663,
+          "required_direction": "increase",
+          "required_raw_delta": 0.05820170603212663
+        },
+        {
+          "index": 69,
+          "se": 0.028964540710861925,
+          "mde_magnitude": 0.058452809639120654,
+          "required_direction": "increase",
+          "required_raw_delta": 0.058452809639120654
+        },
+        {
+          "index": 70,
+          "se": 0.029091171520202616,
+          "mde_magnitude": 0.05870836095846415,
+          "required_direction": "increase",
+          "required_raw_delta": 0.05870836095846415
+        },
+        {
+          "index": 71,
+          "se": 0.02921997760675373,
+          "mde_magnitude": 0.05896830216494455,
+          "required_direction": "increase",
+          "required_raw_delta": 0.05896830216494455
+        },
+        {
+          "index": 72,
+          "se": 0.029350930332021893,
+          "mde_magnitude": 0.0592325754637424,
+          "required_direction": "increase",
+          "required_raw_delta": 0.0592325754637424
+        },
+        {
+          "index": 73,
+          "se": 0.029484001093235096,
+          "mde_magnitude": 0.05950112313212685,
+          "required_direction": "increase",
+          "required_raw_delta": 0.05950112313212685
+        }
+      ],
+      "range": [
+        0.05657335958969966,
+        0.05950112313212685
+      ]
+    },
+    "similarity": {
+      "direction": "high",
+      "t_crit": 2.051830516480095,
+      "n_fit": 29,
+      "df": 27,
+      "per_unit": [
+        {
+          "index": 61,
+          "se": 0.015181705129477039,
+          "mde_magnitude": 0.03115028587686338,
+          "required_direction": "increase",
+          "required_raw_delta": 0.03115028587686338
+        },
+        {
+          "index": 62,
+          "se": 0.01528604583276722,
+          "mde_magnitude": 0.03136437531598517,
+          "required_direction": "increase",
+          "required_raw_delta": 0.03136437531598517
+        },
+        {
+          "index": 63,
+          "se": 0.015392233500700212,
+          "mde_magnitude": 0.031582254413523934,
+          "required_direction": "increase",
+          "required_raw_delta": 0.031582254413523934
+        },
+        {
+          "index": 64,
+          "se": 0.01550023017423428,
+          "mde_magnitude": 0.03180384528395948,
+          "required_direction": "increase",
+          "required_raw_delta": 0.03180384528395948
+        },
+        {
+          "index": 65,
+          "se": 0.015609998306981171,
+          "mde_magnitude": 0.032029070888466585,
+          "required_direction": "increase",
+          "required_raw_delta": 0.032029070888466585
+        },
+        {
+          "index": 66,
+          "se": 0.01572150079379238,
+          "mde_magnitude": 0.03225785509356924,
+          "required_direction": "increase",
+          "required_raw_delta": 0.03225785509356924
+        },
+        {
+          "index": 67,
+          "se": 0.015834700996546186,
+          "mde_magnitude": 0.03249012272405123,
+          "required_direction": "increase",
+          "required_raw_delta": 0.03249012272405123
+        },
+        {
+          "index": 68,
+          "se": 0.01594956276724771,
+          "mde_magnitude": 0.03272579961035356,
+          "required_direction": "increase",
+          "required_raw_delta": 0.03272579961035356
+        },
+        {
+          "index": 69,
+          "se": 0.016066050468558704,
+          "mde_magnitude": 0.03296481263069808,
+          "required_direction": "increase",
+          "required_raw_delta": 0.03296481263069808
+        },
+        {
+          "index": 70,
+          "se": 0.016184128991877298,
+          "mde_magnitude": 0.03320708974818407,
+          "required_direction": "increase",
+          "required_raw_delta": 0.03320708974818407
+        },
+        {
+          "index": 71,
+          "se": 0.016303763773089897,
+          "mde_magnitude": 0.0334525600431085,
+          "required_direction": "increase",
+          "required_raw_delta": 0.0334525600431085
+        },
+        {
+          "index": 72,
+          "se": 0.01642492080611839,
+          "mde_magnitude": 0.03370115374076255,
+          "required_direction": "increase",
+          "required_raw_delta": 0.03370115374076255
+        },
+        {
+          "index": 73,
+          "se": 0.01654756665438608,
+          "mde_magnitude": 0.03395280223495779,
+          "required_direction": "increase",
+          "required_raw_delta": 0.03395280223495779
+        }
+      ],
+      "range": [
+        0.03115028587686338,
+        0.03395280223495779
+      ]
+    }
+  },
+  "power_curve": {
+    "A": {
+      "0.05": {
+        "metrics": {
+          "mtld": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.25114687967374133,
+            "delta_ext": 0.20642885512398543,
+            "delta": -0.0447180245497559,
+            "label": "NO-ANOMALY"
+          },
+          "hapax_share": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.2996026184583587,
+            "delta_ext": 0.8447082680997272,
+            "delta": -0.45489435035863146,
+            "label": "NO-ANOMALY"
+          },
+          "top50_mass": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.4004469089811005,
+            "delta_ext": 0.8011770970172828,
+            "delta": -0.5992698119638177,
+            "label": "NO-ANOMALY"
+          },
+          "similarity": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.6004036669989892,
+            "delta_ext": 2.001616916887218,
+            "delta": 1.4012132498882288,
+            "label": "NO-ANOMALY"
+          }
+        },
+        "verdict": {
+          "step": 2,
+          "step_name": "kill_condition",
+          "any_anomaly_decidable_metrics": [
+            "mtld",
+            "hapax_share",
+            "top50_mass",
+            "similarity"
+          ],
+          "any_anomaly_metrics": [],
+          "denominator": 4,
+          "headline_state": "NO SIGNAL",
+          "headline_bucket_counts": {},
+          "headline_label_counts": {},
+          "kill_condition_met": true,
+          "verdict": "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+        },
+        "per_metric_out_of_band": {
+          "mtld": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "hapax_share": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "top50_mass": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "similarity": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          }
+        }
+      },
+      "0.1": {
+        "metrics": {
+          "mtld": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.25114687967374133,
+            "delta_ext": -0.03810961198259683,
+            "delta": -0.28925649165633815,
+            "label": "NO-ANOMALY"
+          },
+          "hapax_share": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.2996026184583587,
+            "delta_ext": 0.5574225173999029,
+            "delta": -0.7421801010584558,
+            "label": "NO-ANOMALY"
+          },
+          "top50_mass": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.4004469089811005,
+            "delta_ext": 0.3001491081773085,
+            "delta": -1.100297800803792,
+            "label": "NO-ANOMALY"
+          },
+          "similarity": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.6004036669989892,
+            "delta_ext": 2.2340215284986034,
+            "delta": 1.6336178614996142,
+            "label": "NO-ANOMALY"
+          }
+        },
+        "verdict": {
+          "step": 2,
+          "step_name": "kill_condition",
+          "any_anomaly_decidable_metrics": [
+            "mtld",
+            "hapax_share",
+            "top50_mass",
+            "similarity"
+          ],
+          "any_anomaly_metrics": [],
+          "denominator": 4,
+          "headline_state": "NO SIGNAL",
+          "headline_bucket_counts": {},
+          "headline_label_counts": {},
+          "kill_condition_met": true,
+          "verdict": "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+        },
+        "per_metric_out_of_band": {
+          "mtld": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "hapax_share": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "top50_mass": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "similarity": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          }
+        }
+      },
+      "0.15": {
+        "metrics": {
+          "mtld": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.25114687967374133,
+            "delta_ext": -0.16830297933173471,
+            "delta": -0.41944985900547604,
+            "label": "NO-ANOMALY"
+          },
+          "hapax_share": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.2996026184583587,
+            "delta_ext": -0.1699595674174565,
+            "delta": -1.4695621858758152,
+            "label": "NO-ANOMALY"
+          },
+          "top50_mass": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.4004469089811005,
+            "delta_ext": 0.07665817992257627,
+            "delta": -1.3237887290585242,
+            "label": "NO-ANOMALY"
+          },
+          "similarity": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.6004036669989892,
+            "delta_ext": 2.132375987128382,
+            "delta": 1.5319723201293927,
+            "label": "NO-ANOMALY"
+          }
+        },
+        "verdict": {
+          "step": 2,
+          "step_name": "kill_condition",
+          "any_anomaly_decidable_metrics": [
+            "mtld",
+            "hapax_share",
+            "top50_mass",
+            "similarity"
+          ],
+          "any_anomaly_metrics": [],
+          "denominator": 4,
+          "headline_state": "NO SIGNAL",
+          "headline_bucket_counts": {},
+          "headline_label_counts": {},
+          "kill_condition_met": true,
+          "verdict": "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+        },
+        "per_metric_out_of_band": {
+          "mtld": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "hapax_share": {
+            "any_out_of_band": true,
+            "out_of_band_units": [
+              64
+            ],
+            "a_ext": false
+          },
+          "top50_mass": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "similarity": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          }
+        }
+      },
+      "0.2": {
+        "metrics": {
+          "mtld": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.25114687967374133,
+            "delta_ext": -0.4447269851928003,
+            "delta": -0.6958738648665417,
+            "label": "NO-ANOMALY"
+          },
+          "hapax_share": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.2996026184583587,
+            "delta_ext": -0.15110314719944043,
+            "delta": -1.450705765657799,
+            "label": "NO-ANOMALY"
+          },
+          "top50_mass": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.4004469089811005,
+            "delta_ext": -0.5207457903710608,
+            "delta": -1.9211926993521613,
+            "label": "NO-ANOMALY"
+          },
+          "similarity": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.6004036669989892,
+            "delta_ext": 2.1602797183506572,
+            "delta": 1.559876051351668,
+            "label": "NO-ANOMALY"
+          }
+        },
+        "verdict": {
+          "step": 2,
+          "step_name": "kill_condition",
+          "any_anomaly_decidable_metrics": [
+            "mtld",
+            "hapax_share",
+            "top50_mass",
+            "similarity"
+          ],
+          "any_anomaly_metrics": [],
+          "denominator": 4,
+          "headline_state": "NO SIGNAL",
+          "headline_bucket_counts": {},
+          "headline_label_counts": {},
+          "kill_condition_met": true,
+          "verdict": "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+        },
+        "per_metric_out_of_band": {
+          "mtld": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "hapax_share": {
+            "any_out_of_band": true,
+            "out_of_band_units": [
+              69
+            ],
+            "a_ext": false
+          },
+          "top50_mass": {
+            "any_out_of_band": true,
+            "out_of_band_units": [
+              66
+            ],
+            "a_ext": false
+          },
+          "similarity": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          }
+        }
+      },
+      "0.25": {
+        "metrics": {
+          "mtld": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.25114687967374133,
+            "delta_ext": -0.48654149353145,
+            "delta": -0.7376883732051913,
+            "label": "NO-ANOMALY"
+          },
+          "hapax_share": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.2996026184583587,
+            "delta_ext": -0.31909119364972105,
+            "delta": -1.6186938121080798,
+            "label": "NO-ANOMALY"
+          },
+          "top50_mass": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.4004469089811005,
+            "delta_ext": -1.1044636799589598,
+            "delta": -2.50491058894006,
+            "label": "NO-ANOMALY"
+          },
+          "similarity": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.6004036669989892,
+            "delta_ext": 2.0348091629953022,
+            "delta": 1.434405495996313,
+            "label": "NO-ANOMALY"
+          }
+        },
+        "verdict": {
+          "step": 2,
+          "step_name": "kill_condition",
+          "any_anomaly_decidable_metrics": [
+            "mtld",
+            "hapax_share",
+            "top50_mass",
+            "similarity"
+          ],
+          "any_anomaly_metrics": [],
+          "denominator": 4,
+          "headline_state": "NO SIGNAL",
+          "headline_bucket_counts": {},
+          "headline_label_counts": {},
+          "kill_condition_met": true,
+          "verdict": "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+        },
+        "per_metric_out_of_band": {
+          "mtld": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "hapax_share": {
+            "any_out_of_band": true,
+            "out_of_band_units": [
+              64
+            ],
+            "a_ext": false
+          },
+          "top50_mass": {
+            "any_out_of_band": true,
+            "out_of_band_units": [
+              64,
+              66
+            ],
+            "a_ext": false
+          },
+          "similarity": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          }
+        }
+      },
+      "0.3": {
+        "metrics": {
+          "mtld": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.25114687967374133,
+            "delta_ext": -0.6964984966279535,
+            "delta": -0.9476453763016948,
+            "label": "NO-ANOMALY"
+          },
+          "hapax_share": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.2996026184583587,
+            "delta_ext": -0.1114488367644805,
+            "delta": -1.4110514552228393,
+            "label": "NO-ANOMALY"
+          },
+          "top50_mass": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": true,
+            "delta_ref": 1.4004469089811005,
+            "delta_ext": -2.1116271985244555,
+            "delta": -3.5120741075055557,
+            "label": "NEW-ONSET"
+          },
+          "similarity": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.6004036669989892,
+            "delta_ext": 2.095040182515084,
+            "delta": 1.4946365155160948,
+            "label": "NO-ANOMALY"
+          }
+        },
+        "verdict": {
+          "step": 2,
+          "step_name": "kill_condition",
+          "any_anomaly_decidable_metrics": [
+            "mtld",
+            "hapax_share",
+            "top50_mass",
+            "similarity"
+          ],
+          "any_anomaly_metrics": [
+            "top50_mass"
+          ],
+          "denominator": 4,
+          "headline_state": "NO SIGNAL",
+          "headline_bucket_counts": {},
+          "headline_label_counts": {},
+          "kill_condition_met": true,
+          "verdict": "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+        },
+        "per_metric_out_of_band": {
+          "mtld": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "hapax_share": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "top50_mass": {
+            "any_out_of_band": true,
+            "out_of_band_units": [
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              69,
+              72,
+              73
+            ],
+            "a_ext": true
+          },
+          "similarity": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          }
+        }
+      },
+      "0.4": {
+        "metrics": {
+          "mtld": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.25114687967374133,
+            "delta_ext": -1.0629252404524314,
+            "delta": -1.3140721201261727,
+            "label": "NO-ANOMALY"
+          },
+          "hapax_share": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.2996026184583587,
+            "delta_ext": -0.4322269616521452,
+            "delta": -1.731829580110504,
+            "label": "NO-ANOMALY"
+          },
+          "top50_mass": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": true,
+            "delta_ref": 1.4004469089811005,
+            "delta_ext": -4.183075758689074,
+            "delta": -5.583522667670175,
+            "label": "NEW-ONSET"
+          },
+          "similarity": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.6004036669989892,
+            "delta_ext": 2.1896815233251763,
+            "delta": 1.5892778563261871,
+            "label": "NO-ANOMALY"
+          }
+        },
+        "verdict": {
+          "step": 2,
+          "step_name": "kill_condition",
+          "any_anomaly_decidable_metrics": [
+            "mtld",
+            "hapax_share",
+            "top50_mass",
+            "similarity"
+          ],
+          "any_anomaly_metrics": [
+            "top50_mass"
+          ],
+          "denominator": 4,
+          "headline_state": "NO SIGNAL",
+          "headline_bucket_counts": {},
+          "headline_label_counts": {},
+          "kill_condition_met": true,
+          "verdict": "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+        },
+        "per_metric_out_of_band": {
+          "mtld": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "hapax_share": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "top50_mass": {
+            "any_out_of_band": true,
+            "out_of_band_units": [
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67,
+              68,
+              69,
+              70,
+              71,
+              72,
+              73
+            ],
+            "a_ext": true
+          },
+          "similarity": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          }
+        }
+      },
+      "0.5": {
+        "metrics": {
+          "mtld": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.25114687967374133,
+            "delta_ext": -1.3396286017192902,
+            "delta": -1.5907754813930315,
+            "label": "NO-ANOMALY"
+          },
+          "hapax_share": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.2996026184583587,
+            "delta_ext": -0.4219967200637209,
+            "delta": -1.7215993385220796,
+            "label": "NO-ANOMALY"
+          },
+          "top50_mass": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": true,
+            "delta_ref": 1.4004469089811005,
+            "delta_ext": -6.111307517167272,
+            "delta": -7.511754426148372,
+            "label": "NEW-ONSET"
+          },
+          "similarity": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.6004036669989892,
+            "delta_ext": 2.0426602715393476,
+            "delta": 1.4422566045403584,
+            "label": "NO-ANOMALY"
+          }
+        },
+        "verdict": {
+          "step": 2,
+          "step_name": "kill_condition",
+          "any_anomaly_decidable_metrics": [
+            "mtld",
+            "hapax_share",
+            "top50_mass",
+            "similarity"
+          ],
+          "any_anomaly_metrics": [
+            "top50_mass"
+          ],
+          "denominator": 4,
+          "headline_state": "NO SIGNAL",
+          "headline_bucket_counts": {},
+          "headline_label_counts": {},
+          "kill_condition_met": true,
+          "verdict": "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+        },
+        "per_metric_out_of_band": {
+          "mtld": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "hapax_share": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "top50_mass": {
+            "any_out_of_band": true,
+            "out_of_band_units": [
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67,
+              68,
+              69,
+              70,
+              71,
+              72,
+              73
+            ],
+            "a_ext": true
+          },
+          "similarity": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          }
+        }
+      }
+    },
+    "B": {
+      "0.05": {
+        "metrics": {
+          "mtld": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.25114687967374133,
+            "delta_ext": 0.6818275228759482,
+            "delta": 0.43068064320220684,
+            "label": "NO-ANOMALY"
+          },
+          "hapax_share": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.2996026184583587,
+            "delta_ext": 1.3037802216878682,
+            "delta": 0.004177603229509552,
+            "label": "NO-ANOMALY"
+          },
+          "top50_mass": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.4004469089811005,
+            "delta_ext": 1.528028445046884,
+            "delta": 0.12758153606578349,
+            "label": "NO-ANOMALY"
+          },
+          "similarity": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.6004036669989892,
+            "delta_ext": 1.8909750013004436,
+            "delta": 1.2905713343014544,
+            "label": "NO-ANOMALY"
+          }
+        },
+        "verdict": {
+          "step": 2,
+          "step_name": "kill_condition",
+          "any_anomaly_decidable_metrics": [
+            "mtld",
+            "hapax_share",
+            "top50_mass",
+            "similarity"
+          ],
+          "any_anomaly_metrics": [],
+          "denominator": 4,
+          "headline_state": "NO SIGNAL",
+          "headline_bucket_counts": {},
+          "headline_label_counts": {},
+          "kill_condition_met": true,
+          "verdict": "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+        },
+        "per_metric_out_of_band": {
+          "mtld": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "hapax_share": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "top50_mass": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "similarity": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          }
+        }
+      },
+      "0.1": {
+        "metrics": {
+          "mtld": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.25114687967374133,
+            "delta_ext": 1.0623180881136471,
+            "delta": 0.8111712084399059,
+            "label": "NO-ANOMALY"
+          },
+          "hapax_share": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.2996026184583587,
+            "delta_ext": 1.1992680508634546,
+            "delta": -0.10033456759490411,
+            "label": "NO-ANOMALY"
+          },
+          "top50_mass": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.4004469089811005,
+            "delta_ext": 1.98130454173344,
+            "delta": 0.5808576327523396,
+            "label": "NO-ANOMALY"
+          },
+          "similarity": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.6004036669989892,
+            "delta_ext": 2.1048029114036693,
+            "delta": 1.50439924440468,
+            "label": "NO-ANOMALY"
+          }
+        },
+        "verdict": {
+          "step": 2,
+          "step_name": "kill_condition",
+          "any_anomaly_decidable_metrics": [
+            "mtld",
+            "hapax_share",
+            "top50_mass",
+            "similarity"
+          ],
+          "any_anomaly_metrics": [],
+          "denominator": 4,
+          "headline_state": "NO SIGNAL",
+          "headline_bucket_counts": {},
+          "headline_label_counts": {},
+          "kill_condition_met": true,
+          "verdict": "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+        },
+        "per_metric_out_of_band": {
+          "mtld": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "hapax_share": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "top50_mass": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "similarity": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          }
+        }
+      },
+      "0.15": {
+        "metrics": {
+          "mtld": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.25114687967374133,
+            "delta_ext": 1.5086812186281595,
+            "delta": 1.2575343389544182,
+            "label": "NO-ANOMALY"
+          },
+          "hapax_share": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.2996026184583587,
+            "delta_ext": 1.1818521209141482,
+            "delta": -0.11775049754421052,
+            "label": "NO-ANOMALY"
+          },
+          "top50_mass": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.4004469089811005,
+            "delta_ext": 2.540629147515349,
+            "delta": 1.1401822385342484,
+            "label": "NO-ANOMALY"
+          },
+          "similarity": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.6004036669989892,
+            "delta_ext": 2.0459460276773185,
+            "delta": 1.4455423606783293,
+            "label": "NO-ANOMALY"
+          }
+        },
+        "verdict": {
+          "step": 2,
+          "step_name": "kill_condition",
+          "any_anomaly_decidable_metrics": [
+            "mtld",
+            "hapax_share",
+            "top50_mass",
+            "similarity"
+          ],
+          "any_anomaly_metrics": [],
+          "denominator": 4,
+          "headline_state": "NO SIGNAL",
+          "headline_bucket_counts": {},
+          "headline_label_counts": {},
+          "kill_condition_met": true,
+          "verdict": "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+        },
+        "per_metric_out_of_band": {
+          "mtld": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "hapax_share": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "top50_mass": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "similarity": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          }
+        }
+      },
+      "0.2": {
+        "metrics": {
+          "mtld": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.25114687967374133,
+            "delta_ext": 1.7448992379104644,
+            "delta": 1.4937523582367231,
+            "label": "NO-ANOMALY"
+          },
+          "hapax_share": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.2996026184583587,
+            "delta_ext": 0.41895875457543047,
+            "delta": -0.8806438638829281,
+            "label": "NO-ANOMALY"
+          },
+          "top50_mass": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.4004469089811005,
+            "delta_ext": 2.938946488962005,
+            "delta": 1.5384995799809047,
+            "label": "NO-ANOMALY"
+          },
+          "similarity": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.6004036669989892,
+            "delta_ext": 2.126997044062632,
+            "delta": 1.5265933770636428,
+            "label": "NO-ANOMALY"
+          }
+        },
+        "verdict": {
+          "step": 2,
+          "step_name": "kill_condition",
+          "any_anomaly_decidable_metrics": [
+            "mtld",
+            "hapax_share",
+            "top50_mass",
+            "similarity"
+          ],
+          "any_anomaly_metrics": [],
+          "denominator": 4,
+          "headline_state": "NO SIGNAL",
+          "headline_bucket_counts": {},
+          "headline_label_counts": {},
+          "kill_condition_met": true,
+          "verdict": "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+        },
+        "per_metric_out_of_band": {
+          "mtld": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "hapax_share": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "top50_mass": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "similarity": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          }
+        }
+      },
+      "0.25": {
+        "metrics": {
+          "mtld": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.25114687967374133,
+            "delta_ext": 1.6845218401013031,
+            "delta": 1.4333749604275619,
+            "label": "NO-ANOMALY"
+          },
+          "hapax_share": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": true,
+            "delta_ref": 1.2996026184583587,
+            "delta_ext": -1.2200384229131285,
+            "delta": -2.519641041371487,
+            "label": "NEW-ONSET"
+          },
+          "top50_mass": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.4004469089811005,
+            "delta_ext": 3.1076712737165755,
+            "delta": 1.707224364735475,
+            "label": "NO-ANOMALY"
+          },
+          "similarity": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.6004036669989892,
+            "delta_ext": 1.9653071609945962,
+            "delta": 1.364903493995607,
+            "label": "NO-ANOMALY"
+          }
+        },
+        "verdict": {
+          "step": 2,
+          "step_name": "kill_condition",
+          "any_anomaly_decidable_metrics": [
+            "mtld",
+            "hapax_share",
+            "top50_mass",
+            "similarity"
+          ],
+          "any_anomaly_metrics": [
+            "hapax_share"
+          ],
+          "denominator": 4,
+          "headline_state": "NO SIGNAL",
+          "headline_bucket_counts": {},
+          "headline_label_counts": {},
+          "kill_condition_met": true,
+          "verdict": "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+        },
+        "per_metric_out_of_band": {
+          "mtld": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "hapax_share": {
+            "any_out_of_band": true,
+            "out_of_band_units": [
+              63,
+              64,
+              65,
+              66,
+              69
+            ],
+            "a_ext": true
+          },
+          "top50_mass": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "similarity": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          }
+        }
+      },
+      "0.3": {
+        "metrics": {
+          "mtld": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.25114687967374133,
+            "delta_ext": 1.6127893723374913,
+            "delta": 1.36164249266375,
+            "label": "NO-ANOMALY"
+          },
+          "hapax_share": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": true,
+            "delta_ref": 1.2996026184583587,
+            "delta_ext": -3.0434967878404944,
+            "delta": -4.343099406298853,
+            "label": "NEW-ONSET"
+          },
+          "top50_mass": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.4004469089811005,
+            "delta_ext": 3.4743491877965815,
+            "delta": 2.0739022788154813,
+            "label": "NO-ANOMALY"
+          },
+          "similarity": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.6004036669989892,
+            "delta_ext": 2.1062001743741385,
+            "delta": 1.5057965073751494,
+            "label": "NO-ANOMALY"
+          }
+        },
+        "verdict": {
+          "step": 2,
+          "step_name": "kill_condition",
+          "any_anomaly_decidable_metrics": [
+            "mtld",
+            "hapax_share",
+            "top50_mass",
+            "similarity"
+          ],
+          "any_anomaly_metrics": [
+            "hapax_share"
+          ],
+          "denominator": 4,
+          "headline_state": "NO SIGNAL",
+          "headline_bucket_counts": {},
+          "headline_label_counts": {},
+          "kill_condition_met": true,
+          "verdict": "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+        },
+        "per_metric_out_of_band": {
+          "mtld": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "hapax_share": {
+            "any_out_of_band": true,
+            "out_of_band_units": [
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67,
+              68,
+              69,
+              72,
+              73
+            ],
+            "a_ext": true
+          },
+          "top50_mass": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "similarity": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          }
+        }
+      },
+      "0.4": {
+        "metrics": {
+          "mtld": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.25114687967374133,
+            "delta_ext": 1.5202531889600976,
+            "delta": 1.2691063092863564,
+            "label": "NO-ANOMALY"
+          },
+          "hapax_share": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": true,
+            "delta_ref": 1.2996026184583587,
+            "delta_ext": -4.557479120964367,
+            "delta": -5.857081739422726,
+            "label": "NEW-ONSET"
+          },
+          "top50_mass": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.4004469089811005,
+            "delta_ext": 4.059561487418846,
+            "delta": 2.6591145784377455,
+            "label": "NO-ANOMALY"
+          },
+          "similarity": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.6004036669989892,
+            "delta_ext": 1.9487912427375755,
+            "delta": 1.3483875757385864,
+            "label": "NO-ANOMALY"
+          }
+        },
+        "verdict": {
+          "step": 2,
+          "step_name": "kill_condition",
+          "any_anomaly_decidable_metrics": [
+            "mtld",
+            "hapax_share",
+            "top50_mass",
+            "similarity"
+          ],
+          "any_anomaly_metrics": [
+            "hapax_share"
+          ],
+          "denominator": 4,
+          "headline_state": "NO SIGNAL",
+          "headline_bucket_counts": {},
+          "headline_label_counts": {},
+          "kill_condition_met": true,
+          "verdict": "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+        },
+        "per_metric_out_of_band": {
+          "mtld": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "hapax_share": {
+            "any_out_of_band": true,
+            "out_of_band_units": [
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67,
+              68,
+              69,
+              70,
+              72,
+              73
+            ],
+            "a_ext": true
+          },
+          "top50_mass": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "similarity": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          }
+        }
+      },
+      "0.5": {
+        "metrics": {
+          "mtld": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.25114687967374133,
+            "delta_ext": 1.0073625069191023,
+            "delta": 0.7562156272453611,
+            "label": "NO-ANOMALY"
+          },
+          "hapax_share": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": true,
+            "delta_ref": 1.2996026184583587,
+            "delta_ext": -5.366632226417863,
+            "delta": -6.666234844876222,
+            "label": "NEW-ONSET"
+          },
+          "top50_mass": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 1.4004469089811005,
+            "delta_ext": 4.1644011440801485,
+            "delta": 2.763954235099048,
+            "label": "NO-ANOMALY"
+          },
+          "similarity": {
+            "ref_decidable": true,
+            "ext_decidable": true,
+            "a_ref": false,
+            "a_ext": false,
+            "delta_ref": 0.6004036669989892,
+            "delta_ext": 1.5242572976874038,
+            "delta": 0.9238536306884146,
+            "label": "NO-ANOMALY"
+          }
+        },
+        "verdict": {
+          "step": 2,
+          "step_name": "kill_condition",
+          "any_anomaly_decidable_metrics": [
+            "mtld",
+            "hapax_share",
+            "top50_mass",
+            "similarity"
+          ],
+          "any_anomaly_metrics": [
+            "hapax_share"
+          ],
+          "denominator": 4,
+          "headline_state": "NO SIGNAL",
+          "headline_bucket_counts": {},
+          "headline_label_counts": {},
+          "kill_condition_met": true,
+          "verdict": "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+        },
+        "per_metric_out_of_band": {
+          "mtld": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "hapax_share": {
+            "any_out_of_band": true,
+            "out_of_band_units": [
+              61,
+              62,
+              63,
+              64,
+              65,
+              66,
+              67,
+              68,
+              69,
+              70,
+              71,
+              72,
+              73
+            ],
+            "a_ext": true
+          },
+          "top50_mass": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          },
+          "similarity": {
+            "any_out_of_band": false,
+            "out_of_band_units": [],
+            "a_ext": false
+          }
+        }
+      }
+    }
+  },
+  "firing_summary": {
+    "A": {
+      "battery_fires_at_p": null,
+      "per_metric_first_out_of_band_p": {
+        "mtld": null,
+        "hapax_share": 0.15,
+        "top50_mass": 0.2,
+        "similarity": null
+      },
+      "per_metric_first_own_anomaly_p": {
+        "mtld": null,
+        "hapax_share": null,
+        "top50_mass": 0.3,
+        "similarity": null
+      }
+    },
+    "B": {
+      "battery_fires_at_p": null,
+      "per_metric_first_out_of_band_p": {
+        "mtld": null,
+        "hapax_share": 0.25,
+        "top50_mass": null,
+        "similarity": null
+      },
+      "per_metric_first_own_anomaly_p": {
+        "mtld": null,
+        "hapax_share": 0.25,
+        "top50_mass": null,
+        "similarity": null
+      }
+    }
+  },
+  "structurally_blind_metrics": [
+    "mtld",
+    "similarity"
+  ],
+  "informativeness": {
+    "bar_p": 0.2,
+    "label": "UNABLE-TO-RING-ITS-OWN-BELL",
+    "note": "§9.4: applicable when §7's real decisional verdict is a step-2 null. Computed here unconditionally as the required sensitivity diagnostic regardless of what the real decisional run returned; see results/envelope.json for that verdict."
+  },
+  "injection_scope_note": "Only decision units 61-73 are injected, simultaneously, for a given (p, recipe). The envelope fit itself is computed solely from the real, uninjected envelope-era units 1-47 and is identical across every (p, recipe) cell above. The injected similarity metric's trailing window for a decision unit mixes that unit's injected prefix (and any other decision unit inside its window) with the REAL prefixes of non-decision-unit window members -- intended, not an error (task note)."
+}
