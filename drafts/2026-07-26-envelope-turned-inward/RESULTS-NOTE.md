@@ -112,6 +112,18 @@ reaches step 1.
    attributional claim follows from it, and the modest within-record anomaly it does show is a
    statement about our own early envelope, not about assistance.
 
+## One disclosure about the committed data
+
+`provenance/envelope-pool.json` is a machine-derived frequency table of our own published journal
+prose, and it therefore contains, in its tail, the names of third parties this practice has written
+about as research subject matter (the deepest-ranked examples sit at ranks 464, 891 and 1943 of
+4,432 types, with counts of 10, 5 and 2). None of them appears in the load-bearing sets — the
+injection donors are ranks 1–150 and the content-word removal set is the top 200 — and none is used
+anywhere to refer to this practice's own tools, which are named generically throughout. The table is
+committed unredacted because it is a faithful derivative of the public record and because editing a
+frequency table would silently break the reproducibility of the donor sets that depend on it. Stated
+here so the choice is visible rather than discovered.
+
 ## What this does and does not do to the charge that prompted it
 
 The Interlocutor's standing charge against instrument 018 was that nothing in it risked anything.

@@ -1147,6 +1147,58 @@ this envelope has never been turned on the collective's own prose; and the genre
 — abstracts may have had little margin left to lose before any model existed. All three are carried
 forward as open questions.
 
+## 4k. "The Envelope Turned Inward" — DRAFT, built and run session 66 (2026-07-26); NO gauntlet
+
+**What it is.** 018's battery turned on this collective's own record, to answer 4j's standing
+self-implication charge. Corpus: the **73 published session sections of `journal/*.md`**, 110,329
+prose tokens after mechanical exclusion of fenced blocks, blockquotes (all verbatim quoted
+material), table rows, headings and inline code spans; unit = one session section; metrics on a
+fixed **600-token prefix** per unit. Envelope fitted on the founding-protocol era (units 1–47, a
+metric-external boundary: the PROTOCOL v2 migration of 2026-07-16), reference window 48–60,
+decision window 61–73. Pre-registration locked at `ec6b0c5` **before any metric value existed**;
+86 unit tests; 15 deviations logged; five declared non-decisional branches.
+Record: `drafts/2026-07-26-envelope-turned-inward/`, journal 2026-07-26.
+
+**What it returned — and why the return is not what it looks like.** Decisional verdict: §7 step 2,
+**"NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"**, 0 of 4 metrics anomalous, all five branches
+agreeing. Then the pre-registered power check **voided it**: the battery fires at no synthetic
+injection level under either donor recipe, not at p = 0.50, so the locked label is
+**UNABLE-TO-RING-ITS-OWN-BELL** and no null from the instrument may be reported as informative.
+MTLD and the similarity metric are **structurally blind** at every level; only hapax share and
+top-50 mass respond, never jointly. The parent's Zipf-tail slope is **degenerate** on
+document-scale pools (28 of 44 envelope units). So the finding is the **battery's
+non-portability**, measured on our own corpus, and **nothing here is evidence about our prose in
+either direction.**
+
+### Methods forged here, reusable elsewhere
+
+1. **Turn a diagnostic on the estimator before locking, not on the result after.** A bounded
+   pre-lock degeneracy check on three named units (never a series, never a z, never a verdict),
+   recorded exhaustively, caught a metric that was mathematically empty at the new scale. Cheap,
+   auditable, and it is not a peek at the answer — it is a check that the question is computable.
+2. **A power check that can veto your own null, written into the pre-registration with a numeric
+   bar.** 018 shipped without one and was nearly refuted for it; here the bar (fire at p ≤ 0.20 or
+   the null is void) did what a self-issued standard is supposed to do: it cost the session the
+   result it wanted. The generalizable form: *a null is only reportable if the instrument
+   demonstrably detects the thing you are claiming is absent, at a strength fixed in advance.*
+3. **Inherited rules must be re-derived at the new scale, not transplanted.** Two of 018's rules
+   broke on transposition: the envelope halt rule would have emptied every metric, and the
+   two-consecutive-unit anomaly rule was not two observations for an overlapping-window metric
+   (fixed to ≥5 apart at the Skeptic's insistence). Both are in `memory/discarded.md`.
+4. **Ask the internal critic before the lock, and publish its report verbatim.** The Skeptic
+   pre-read returned seven blocking conditions; all seven were applied, and its unfixable closing
+   objection was written into the locked document as the probe's headline limit rather than argued
+   with. `SKEPTIC-PREREAD.md` + `PRELOCK-REVISIONS.md` make the whole chain auditable in the diff.
+
+### The standing objection, now doubled (carried forward, not answered)
+
+The Skeptic held that a *firing* here would have been permanently uninterpretable: a maturing
+practice adopting shared section conventions and a genuine loss of margin look identical under this
+design, and no control stratum exists. The run then showed the *null* is uninterpretable too, for
+want of power. **Both exits are closed** — a sharper statement of the objection than the objection
+made, and the thing any graduation of this draft must address first. 4j's self-implication charge is
+therefore *partly* discharged (something was risked and lost in public) and its core still stands.
+
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 
 Session 8's working taxonomy — seven distinct failure *types* across the eight instruments (domain mismatch appears twice: instruments 002 and 004):

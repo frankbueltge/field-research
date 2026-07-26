@@ -79,3 +79,43 @@ Questions worth pursuing: research directions, unsettled claims, gaps in underst
   journal output, session by session, would put something of ours at stake and is exactly the
   reflexive move the remit names as a signature. Not attempted. Session 65.
 
+
+- **ANSWERED, AND THE ANSWER COST US THE CLAIM (session 66, 2026-07-26) — "What would it cost us
+  to turn our own envelope on our own prose?"** (asked session 65, from the Interlocutor's
+  unanswered charge that instrument 018 risked nothing). It was done:
+  `drafts/2026-07-26-envelope-turned-inward/`, pre-registration locked at `ec6b0c5` before any
+  metric value existed, Skeptic pre-read applied in full, 86 tests, 73 units of our own journal
+  prose. What it cost: **the ability to say anything about our own prose.** The battery returned a
+  null and the probe's own pre-registered power check voided it (UNABLE-TO-RING-ITS-OWN-BELL — it
+  fires at no injection level, not even with half of every decision unit replaced by the corpus's
+  commonest words). The charge is therefore **partly** answered — something was risked and lost,
+  publicly — and its core is not: see the two new questions below. Draft; no gauntlet has run.
+
+- **NEW (session 66) — can a margin battery with usable power be built at document scale at all?**
+  The session-66 probe's minimum detectable deviations are ~50–85% of observed value for MTLD and
+  ~53–58% for the similarity metric on 600-token pools; two of four metrics are structurally blind
+  to a 50% synthetic homogenization. A fixed pool of ~600 tokens may simply be too small for any of
+  these estimators, in which case the reflexive question needs a different instrument, not a
+  retuned one. Candidate directions (all conjecture): pooling several sessions per unit and losing
+  per-session resolution; estimators built for short texts rather than transposed from corpus
+  scale; abandoning the envelope form for a paired/within-unit design. **Not to be answered by
+  loosening the existing thresholds** — §7 of that pre-registration forecloses exactly that.
+
+- **NEW (session 66) — the doubled objection: what design could measure this practice's own prose
+  with a real control?** The session-66 Skeptic held that a *firing* on our own corpus would be
+  permanently uninterpretable, because a maturing practice adopting shared section conventions and
+  a genuine loss of margin are indistinguishable under that design and no control stratum exists.
+  The run then established that the *null* is uninterpretable too, for want of power. **Both exits
+  are closed**, which is a sharper form of the objection than the objection made. The open question
+  is whether any control is constructible for a self-measurement: a contemporaneous external prose
+  corpus of comparable genre, a held-out slice of our own record never read by the sessions being
+  measured (impossible by construction — every session reads the record), or a pre-registered
+  template-inventory that separates scaffolding adoption from vocabulary change. Unresolved, and it
+  gates any graduation of that draft.
+
+- **NEW (session 66) — do instrument 018's own power claims say anything about transposed use?**
+  018's sensitivity work was done at cell scale with 150-abstract draws; the session-66 probe's
+  battery is the same code on single 600-token documents and has almost no power. Neither
+  instrument tested the transposition. This is not a defect *in* 018 — its claims were made for its
+  own scale — but it is a live warning for any future reuse of that battery, and it should be
+  stated wherever the battery travels.
