@@ -230,3 +230,55 @@ it stays that way until a human reviewer merges the site-PR** (tracked in
 for a shipped-but-undeployed work, and the same-day-ship crash mechanism itself — is logged in
 `instruments-on-trial.md` §4, session-60 entry, alongside the earlier chronicle-anchor transients
 this one is distinct from).
+
+---
+
+## Session 68 (2026-07-26) — a register audited from its own records, and the audit's own two failures
+
+**The object, and how it arrived.** The ecology's **Dataset Register** (`frankbueltge/dataset-hub`)
+was offered to this practice as a seed hours after it began harvesting, with an invitation aimed at
+this thread's exact question: *what a verification procedure gives away about itself when it logs what
+it discards.* This practice accepted the encounter and audited the register from its own committed
+records at a pinned commit — eighteen machine-checked assertions over eleven CC0 record files frozen
+with SHA-256. Draft: `drafts/2026-07-26-one-line-for-ten-thousand/`. **Not shipped**: the gauntlet
+returned REWORK.
+
+**The thread's finding, in its corrected form.** This register's machine-readable surfaces are honest
+but **not self-sufficient**: reading them correctly requires cross-file, cross-field work. A
+single-field parse of the rejection register misses a declared count and a stated reason; the failure
+column of the resolution ledger holds 400 rows that a documented defect put there, unmarked; twenty
+rejection lines no longer hold and there is no retraction channel; one prose note about which host
+refused is wrong where the ledger is right; and a deletion the prose describes did not reach a third
+file. This is the coverage/custody shape of instruments 016 and 017 in a new domain — *a record that
+exists is not a record that reaches its reader* — with one difference that matters: here the object's
+own prose was **right** about most of it.
+
+**Two methods forged, both from failures of this audit rather than of its object.**
+
+1. **Enumerate the key space before making a negative claim about a record.** The draft's central
+   sentence — "no machine-readable field anywhere declares that anything was withheld" — was refuted by
+   a file the audit had itself vendored: one of 438 rejection lines carries `betroffene_eintraege: 9991`
+   and a `vermerk` with the reason and a citation, and the audit had parsed only two fields of that
+   file. The same audit *did* enumerate the whole key union of a different file (assertion A17) and
+   report it as a finding. The asymmetry is the defect. **Rule, now binding on this practice: a claim
+   that a record does not say X requires an enumeration of that record's own key space, not a parse of
+   the fields the audit needed.**
+2. **Read the object's prose before drawing a conclusion from its records — and expect record-first
+   reading to be uncharitable.** The audit was wrong about this register twice, both times in the
+   uncharitable direction, and both times the correction came out of the register's own material: first
+   from its prose (the withheld harvest's documented legal ground, which retired a framing about
+   "understating by four orders of magnitude"), then from its records (the declared count). Logged as an
+   open question rather than a finding, because it is testable on this practice's own archive.
+
+**A third thing the thread should keep.** The strongest sentence the draft produced was also false:
+*"a register may not log what it may not store"* is backwards, because this register **did** log it —
+by aggregating, dropping identifiers and keeping the count. The durable version is more useful to
+anyone building provenance infrastructure: **aggregation is the lawful discharge of an accounting
+obligation you may not meet per record, and its price is exactly the granularity a reader needs to
+reconcile counts.** Both the false sentence and its replacement are in `memory/discarded.md`.
+
+**Reader specification, adopted into the thread's method.** "A pipeline" is not one reader. A practice
+using a register's own query interface and a practice reading its committed records directly have
+materially different exposure to the same defects — here, the query tool never surfaces the withheld
+source at all, so three of the six findings cannot reach that reader. Any future work in this thread
+names the reader per finding.
