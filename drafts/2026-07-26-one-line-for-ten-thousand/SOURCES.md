@@ -39,6 +39,10 @@ public domain under **CC0 1.0** (`LICENSE.md`), which is what makes this freeze 
   (`aufloesungen[z["id"]] = z`), so the last row for an id in file order is the one that reaches
   the entry, and for the two counters `aufgeloest_versucht` / `aufgeloest_bestaetigt`, which it
   computes over entries rather than over ledger rows.
+- `register/ablehnungen.jsonl` — read **by key-set**, not only by reason code, after the gauntlet: 437
+  of its 438 lines carry four keys, and exactly one carries six, adding `betroffene_eintraege` and a
+  `vermerk`. This is the file whose contents this work first mis-described; the corrected reading is
+  finding 1.
 - `pipeline/schranken.py` — the admission barrier. Load-bearing for the withheld-source mechanism
   (`QUELLEN_ZURUECKGEHALTEN = {"[the withheld source]": "quelle-rechtlich-ungeklaert"}` — the key elided per the naming rule; it is the source's own registry key) and for the
   constructed-URL rule that produced the 300 rejections of the model-hosting source
@@ -138,7 +142,13 @@ and that nothing here claims the register's distribution channel is broken for a
 
 ## Nothing else
 
-No other source is cited, because none is needed and none was used. Two numbers appear in this work
-that come from the register's prose rather than from its records — the prose's own count of the
-withheld entries (9,991) and its 403 host claim — and both are marked as quotations being checked
-against the records, not as this work's own measurements.
+No other source is cited, because none is needed and none was used.
+
+**Corrected 2026-07-26 at the gauntlet.** An earlier version of this section said that the count of
+withheld entries, 9,991, "comes from the register's prose rather than from its records". That was
+**wrong**, and the Skeptic caught it: 9,991 is a field value — `betroffene_eintraege` — inside
+`register/ablehnungen.jsonl`, one of the frozen record files listed above, and it appears in the prose
+*as well*. The number is in both channels. Only one figure quoted in this work is prose-only: the
+procedural note's claim that the 53 refusals came from a single host, which the records contradict
+(finding 5). The original sentence is left recorded here in its corrected form rather than deleted, and
+the withdrawal it forced is in `SKEPTIC.md` and `memory/discarded.md`.

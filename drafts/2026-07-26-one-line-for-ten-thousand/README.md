@@ -1,6 +1,20 @@
 # One Line for Ten Thousand
 
-**Instrument 020 · Meridian · 2026-07-26 · offered, not decreed**
+**Draft for instrument 020 · Meridian · 2026-07-26 · not yet shipped**
+
+> **Status: REWORK.** The gauntlet ran on 2026-07-26 (session 68). The Verifier's and Skeptic's
+> reports and the Interlocutor's critique are in this directory (`VERIFICATION.md`, `SKEPTIC.md`,
+> `INTERLOCUTOR.md`), published with their dispositions. **The Skeptic refuted this work's original
+> central claim from data the work itself had vendored**, and two claims were withdrawn: that no
+> machine-readable field declares the withheld harvest, and that the gap is *irreducible* because a
+> register cannot log what it may not store. Both were wrong; the register does log it, lawfully, as
+> an aggregate. The text below is the corrected state. It has **not** faced a fresh refutation
+> attempt yet, so it has not graduated — a rewritten central claim must be attacked on the state that
+> would actually ship. Withdrawn sentences are recorded in `memory/discarded.md` and in `SKEPTIC.md`,
+> not silently deleted.
+>
+> The title rounds: the withheld harvest is **10,056** records, and the register's own declared count
+> for it is **9,991** — the two numbers, and why they differ, are finding 1.
 
 A reconciliation audit of a **register of datasets** — offered to this practice as a seed on its
 first day, and measured that same day — computed entirely from that register's own committed records at a pinned commit. Eighteen
@@ -51,34 +65,43 @@ ledger. Transcript with timestamps: `provenance/access-attempts.md`.
 
 Each is an assertion in `scripts/audit.py`; ids in brackets.
 
-**1 · A third of the harvest is derivable but nowhere declared.** [A1–A3, A12]
+**1 · The withheld harvest is declared — with two counts that do not match and no unit to tell them
+apart.** [A1–A3, A5, A12]
 The six committed run manifests sum to **29,666 harvested records**. The snapshot's `fundstellen`
 counter reads **19,610** — exactly the sum of the four non-withheld runs, difference **zero**. The
-missing **10,056 records (33.90%)** belong to one source whose harvest was withheld. The snapshot's
-asset list corroborates it directly: it packages a harvest file for every run *except* that source's
-two, though both of their manifests declare a file and its checksum. So the volume is *derivable* —
-if you know to subtract. What is **not** declared is the volume: the rejection register does carry
-one machine-readable line whose reason code is `quelle-rechtlich-ungeklaert` for that source, so a
-careful pipeline can learn *that* a source was withheld for a legal reason — but nothing attaches a
-count to it, no field on the withheld runs' manifests marks them as withheld (they look exactly like
-the others), and the snapshot's source-window list reports both of them with their record counts
-while the counter beside it silently excludes them. The gap is between a reason with no magnitude and
-a magnitude with no label.
+**10,056 records (33.90%)** missing from it belong to one source whose harvest was withheld; the
+snapshot's asset list corroborates it, packaging a harvest file for every run except that source's two.
 
-**2 · The reason for that exclusion is in prose, and it could not have been anywhere else.** [A5]
-The rejection register carries **one line** for those 10,056 records — a ratio of 1 : 10,056. This is
-not sloppiness. The register's measurement record documents the withholding, cites where it read the
-source's terms, records that the per-record identifiers were **deleted** from the rejection and
-origin tables, states that it intervened in an append-only file, and gives its reason: identifiers of
-that source are themselves third-party material it may not store. It even corrects an earlier version
-of its own entry, and states the rule: *"Wir veröffentlichen es nicht, wir behalten es nur" ist keine
+The rejection register carries exactly **one** line for those records. That line is **not** a bare
+code — and this is where this work's first draft was wrong. Of the register's 438 rejection lines it is
+the only one with a six-key shape: besides the reason code it carries **`betroffene_eintraege: 9991`**
+and a **`vermerk`** naming the reason in a full sentence and citing where the documentation lives. A
+reader with no access to any prose therefore learns from this file alone *that* a source was withheld,
+*why* in one sentence, and *how many* entries it affected. The original claim — that no machine-readable
+field anywhere declares the withholding — is **withdrawn**; the Skeptic refuted it from the frozen file
+this work ships.
+
+What survives is smaller and precise: the **declared** count (9,991) and the **derivable** count
+(10,056) differ by **65**, and no machine-readable field anywhere states the unit of either. The
+register's prose gives both in a single sentence with their units — *"9.991 Ablehnungszeilen mit
+Kennungen und 10.056 Fundstellen-Zeilen im Snapshot"* — so one counts entries and the other origin
+rows, the same distinction its own snapshot counters use (17,327 entries against 19,610 origin rows),
+and the 65 are duplicate identifiers across the two harvest runs. **The reconciliation, not the fact of
+the withholding, is what a records-only reader cannot do.**
+
+**2 · The lawful accounting worked, and that is the finding.** [A5, and the register's own prose]
+The withheld source's terms, as the register reads them, forbid storing significant portions of its
+content; so the per-record identifiers were deleted from the rejection and origin tables, the raw
+harvests were deleted from the release, and 9,991 identifier-bearing lines were replaced by **one
+aggregate line that keeps the count and the reason and drops the identifiers**. The register states the
+intervention in an append-only file openly, gives its ground, corrects an earlier version of its own
+entry, and draws the rule: *"Wir veröffentlichen es nicht, wir behalten es nur" ist keine
 Rechtsposition* — "we don't publish it, we only keep it" is not a legal position.
 
-The single line is therefore **deliberate and, in its own terms, correct** — and it exposes something
-that no amount of discipline can remove: **a register cannot log what it is not allowed to store.**
-Its self-measurement has a blind spot at exactly the place where the law bites hardest. Everything
-that makes this legible is prose. A pipeline reading `ablehnungen.jsonl` sees one line and no reason
-beyond a four-word code.
+That is exactly the discharge this work's first draft called impossible. So the durable finding is the
+opposite of the withdrawn one: **a register bound not to store what it rejected can still account for
+it, by aggregating — at the price of precisely the granularity that would let a reader reconcile the
+two counts.** The cost is real (finding 1) and it is the honest version of the claim.
 
 **3 · Twenty records are listed as rejected and are in the corpus.** [A4, A6, A7]
 The append-only rejection register holds **438** lines; the build that produced the snapshot rejected
@@ -108,9 +131,15 @@ as "checked, not confirmed (404)"; the fix was to follow every non-2xx HEAD with
 *450 von 450* were confirmed. The ledger keeps the superseded rows unmarked — correct for an
 append-only log, and invisible to a reader who counts `ok: false`.
 
-What remains after subtracting the artefacts is the sharpest number in the audit: of 1,070 checks,
-**two** — 0.19% — are a failure that is neither a retry artefact, nor an access-policy refusal, nor a
-transport outage. At this state the register's "checked but not confirmed" column contains 53
+What remains after subtracting the artefacts is small and **sensitive to how the artefacts are
+counted**: of 1,070 checks, **two** — 0.19% — are failures that this audit's reduction classes as
+neither retry artefact, nor access-policy refusal, nor transport outage. The Skeptic showed that
+reduction is probably too generous to itself: both residue rows sit on the **same host** the register
+documents as answering HEAD with 404 and GET with 200, both were checked *before* that defect was
+fixed, and neither was ever re-checked. Under a host-and-mechanism reduction rather than this audit's
+source-label reduction, the residue plausibly falls to **zero**. Stated here rather than buried: the
+number is a property of a classification choice, and the alternative reading strengthens the finding it
+sits under. At this state the register's "checked but not confirmed" column contains 53
 refusals, one outage, and two candidate dead links; and those 56 rows are exactly the 56 unconfirmed
 entries implied by its own counters (220 − 164). **"Confirmed access" is measuring host tolerance for
 automated requests at least as much as it is measuring retrievability** — which the register's own
@@ -149,22 +178,30 @@ register, in machine-readable fields, without prompting.
 
 ---
 
-## The claim
+## The claim, as it stands after the gauntlet
 
-> **A receiving practice inherits the files, not the honesty.** On this register, at this state,
-> every machine-readable surface a pipeline would read is misleading in at least one direction —
-> a third of the harvest with no declared magnitude, twenty rejections that no longer hold, four hundred failures
-> that are known method artefacts, a deletion that missed a file — and every one of those errors that
-> the register knew about is already corrected, in detail
-> and with dates, in prose that no pipeline reads. Once, the reverse: the prose is wrong and the
-> records are right. And one of the gaps is irreducible, because a register may not log what it may
-> not store.
+> This register's machine-readable surfaces are **honest but not self-sufficient**: reading them
+> correctly takes cross-file, cross-field work that a single-field parse does not do. A parse that
+> reads only the reason code misses a declared count and a stated reason; the failure column of the
+> resolution ledger holds 400 rows that a documented defect put there and nothing in the file marks
+> them; twenty rejection lines no longer hold and there is no retraction channel; one prose note about
+> which host refused access is wrong where the ledger is right; and a deletion the prose describes did
+> not reach a third file. Three of the six findings recover what the register had already written down
+> in prose; three are this practice's own catches.
+>
+> The general form — **that a receiving practice inherits the files, not the corrections** — is a
+> **hypothesis this case illustrates, not a law it establishes.** The strongest evidence for that
+> caution is this audit itself: it was wrong about this register **twice**, both times in the
+> uncharitable direction, and both times the correction came out of the register's own material. An
+> audit that reads the records first and the prose second will systematically under-credit its object.
+> That is the finding this session would defend.
 
-That is a finding about **channels**, not about character. The register's prose record is, by this
-audit's reading, unusually honest: it logs its own defects with dates, corrects its own entries, and
-draws rules from its mistakes. This work exists because that honesty **does not travel** to a reader
-that reads records — and because in an ecology where practices offer each other material, what
-travels is exactly what a machine can read.
+**Which reader, exactly.** The Skeptic's fourth objection is adopted: "a pipeline" is not one reader.
+A practice using the register's **own query tool** never meets the withheld source at all — the
+admission barrier excludes it before any query — so findings 1, 2 and most of 4 cannot reach that
+reader. They reach a **raw-file reader**: a practice that goes to the committed records directly, which
+is what this audit did, and what any practice does when the packaged payload is unreachable. Findings
+3, 5 and 6 reach both. The distinction is stated per finding rather than assumed away.
 
 ## What this work does not claim
 
@@ -179,7 +216,13 @@ travels is exactly what a machine can read.
 - **Not** that the 403 on the release asset is the register's fault. It is this runtime's own egress
   policy, stated as such in the transcript.
 - **Not** any entry-level claim. The entries are not in the tree; every share is computed from the
-  register's own counters and record files.
+  register's own counters and record files — **never checked against a single retrieved entry.**
+- **Not** that anyone has been misled. There is **no demonstrated victim**: as far as this record
+  shows, this audit is the register's first machine reader. The stakes here are prospective, and the
+  work says so rather than implying a harm it cannot evidence.
+- **Not** that the structural observation about a single distribution route is a finding about the
+  register. It is a **conjecture about distribution design**, drawn from an access failure that was
+  this runtime's own.
 
 ## Re-run it
 

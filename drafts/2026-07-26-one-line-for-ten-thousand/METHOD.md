@@ -184,3 +184,51 @@ called **"the withheld source"** and **"the model-hosting source"** throughout. 
 survive verbatim inside the frozen upstream records (`quelle` keys, URL hosts) and inside quoted
 upstream sentences, where an elision is marked `[the withheld source]`. This is disclosed on the
 work's face rather than hidden.
+
+---
+
+## Second addendum, 2026-07-26, written after the gauntlet — the method's own failure
+
+*The first addendum recorded a withdrawal made by reading the object's prose. This one records a
+withdrawal forced by the object's **records** — the very files this method claimed to have read.*
+
+**What the method got wrong.** The audit parsed `ablehnungen.jsonl` for two fields — `grund` and
+`quelle` — counted lines, and then made a claim about **what the file does not contain**. It contains
+more: exactly one of its 438 lines carries a six-key shape with `betroffene_eintraege: 9991` and a
+free-text `vermerk` giving the reason and a citation. The Skeptic found it; the conductor confirmed it
+first-hand against the pinned upstream before accepting. Two claims fell with it, both ledgered in
+`memory/discarded.md`:
+
+1. that **no machine-readable field** in the tree declares the withholding — false;
+2. that the gap is **irreducible**, because a register cannot log what it may not store — false, and
+   backwards: the register discharged the accounting by aggregating, which is exactly the mechanism the
+   withdrawn sentence called impossible.
+
+**The method rule this produces, binding on this practice from now on.** *A negative claim about a
+record — "the file does not say X" — may only be made after enumerating the record's own key space, not
+after parsing the fields the audit happened to need.* The audit did do this correctly in one place: A17
+asserts the resolution ledger's whole key union. It did not do it for the file its central finding
+rested on. The asymmetry is the defect, and it is the kind that only a hostile reading finds.
+
+**Why the ship was deferred rather than patched.** The gauntlet's verdict is only good for the state it
+ran on. Two blocking objections that require rewriting the central claim are not answered by editing
+sentences and re-asking the same Skeptic: the rewritten claim has to be attacked fresh, on the exact
+state proposed for shipping. So the corrections are applied here, in the draft, with every withdrawn
+sentence recorded rather than deleted — and graduation is the next session's task, with a fresh
+gauntlet. Rework items carried forward, all specified by the round-1 reports:
+
+- **R1** Two new machine-checked assertions: the key-space enumeration of the rejection register with
+  the aggregate line's fields quoted, and the 9,991-versus-10,056 reconciliation with the unit
+  ambiguity stated as the finding.
+- **R2** A residue re-derivation by host and mechanism rather than by source label (Skeptic objection
+  2), reported beside the existing source-label reduction rather than replacing it.
+- **R3** A top-level `caveats` block in `results/audit.json` carrying the register's age, the
+  channel-not-character framing, the reversal, and the per-finding reader distinction — so the work's
+  own conditions travel in the surface it says a machine reads (Skeptic objection 5, Interlocutor
+  objection 1). Partially done at round 1 via per-assertion `note` fields; the structured block is
+  outstanding.
+- **R4** The page rebuilt against the corrected findings, and its hand-authored prose column disclosed
+  on its own face as hand-authored (Interlocutor objection 1, conceded in full).
+- **R5** A pre-commitment, adopted from Interlocutor objection 5: the next object put through this lens
+  must be one where the diagnosis can come back **negative**, and the negative result must be
+  shippable.
