@@ -67,6 +67,7 @@ const a13 = getA('A13')
 const a14 = getA('A14')
 const a15 = getA('A15')
 const a16 = getA('A16')
+const a21 = getA('A21')
 const a17 = getA('A17')
 const a18 = getA('A18')
 
@@ -87,6 +88,7 @@ const barW = 560 // svg coordinate width for the proportional bars
 // assertion for this question; A16.class_403_hosts (present regardless) is the fallback
 // so the block still renders correctly if A18 is ever absent from the data.
 const a18c = (a18?.computed ?? {}) as Record<string, any>
+const a21c = (a21?.computed ?? {}) as Record<string, any>
 const hostSplitSource: Record<string, number> = a18c.host_distribution ?? a16c.class_403_hosts ?? {}
 const hostSplit: [string, number][] = (Object.entries(hostSplitSource) as [string, number][]).sort(
   (x, y) => y[1] - x[1]
@@ -133,12 +135,19 @@ const tableRows = assertions
     <p class="pin">
       Register <code>frankbueltge/dataset-hub</code>, pinned at commit
       <code>{upstream.commit}</code>, snapshot tag <code>{upstream.tag}</code>
-      (tag object <code>{upstream.tag_sha}</code>). Ledger generated
-      <code>{data.generated_utc as string}</code>. The snapshot tag itself carries the date
-      harvesting began — <strong>{harvestStartDate}</strong> — the <em>same</em> day this ledger's
-      data was computed: the register's first harvest run closed at 15:01Z and this ledger was
-      generated at the timestamp above, about nine hours later. Every share on this page is a
-      share of a register in its first hours, not a mature one.
+      (tag object <code>{upstream.tag_sha}</code>). The snapshot tag itself carries the date
+      harvesting began: <strong>{harvestStartDate}</strong>. Every share on this page is a share of
+      a register in its first hours, not a mature one — and the age is stated below in the words
+      the data file itself carries, recomputed from the run manifests and the pin rather than
+      typed here.
+    </p>
+    <p class="pin age">{caveats.corpus_age ? String(caveats.corpus_age) : ''}</p>
+    <p class="pin">
+      This ledger was last recomputed at <code>{data.generated_utc as string}</code>. That
+      timestamp measures nothing: the audit is deterministic over frozen inputs, so it moves every
+      time anyone reproduces the work and no figure moves with it. An earlier version of this page
+      used it as though it were the measurement time; the second review round caught that, and this
+      sentence is the correction.
     </p>
   </header>
 
@@ -275,7 +284,22 @@ const tableRows = assertions
             <li>All {num(a16c.class_has_ok_sibling)} belong to the withheld source and show the pattern <code>{(a15 as any)?.forward_pattern}</code> in {num((a15?.computed as any)?.forward_pattern_count)} of {num((a15?.computed as any)?.repeated_ids)} repeated ids, with {num((a15?.computed as any)?.reverse_pattern_count)} rows showing the reverse <span class="ref">[A15]</span>.</li>
             <li>The withheld source accounts for {pct((a13?.computed as any)?.withheld_share_of_rows)} of all ledger rows and {pct((a13?.computed as any)?.withheld_share_of_unique_ids)} of all checked ids; under the register's own last-wins reduction, {num((a14?.computed as any)?.withheld_last_wins_ok)} of its ids are confirmed and contribute to no published counter <span class="ref">[A13, A14]</span>.</li>
             <li>Reducing the ledger the same way over the remaining sources reproduces the published counters exactly: {num((a14?.computed as any)?.non_withheld_ids)} checked, {num((a14?.computed as any)?.non_withheld_ok)} confirmed <span class="ref">[A14]</span>.</li>
+            {a21 && (
+              <li>Every one of the <strong>{num(a21c.status_404_total)}</strong> rows carrying HTTP 404 sits on a single host; <strong>{num(a21c.retried_404_count)}</strong> were re-checked and confirmed, and the remaining <strong>{num(a21c.never_confirmed_404_count)}</strong> were checked before the earliest confirmed response on that host (<code>{String(a21c.earliest_ok_datum_on_defect_host)}</code>) and never re-checked <span class="ref">[A21]</span>.</li>
+            )}
           </ul>
+          {a21 && (
+            <p class="twofold">
+              <strong>The residue is not one number.</strong> Counting only classes you can read off
+              a row or its siblings leaves <strong>{num(a16c.class_residue)}</strong>
+              <span class="ref">[A16, observation]</span>. Adding one class by analogy — same host,
+              same status, checked before the fix, never re-checked — leaves
+              <strong>{num(a21c.residue_host_mechanism)}</strong>
+              <span class="ref">[A21, inference]</span>. Both ship; neither is deleted. The gap
+              between them is a property of what a class is allowed to rest on, and this work does
+              not claim to know which answer the world would give.
+            </p>
+          )}
         </div>
         <div class="col prose">
           <h4>What the prose says</h4>
@@ -288,6 +312,15 @@ const tableRows = assertions
           remaining ambiguity: <em>bei 403 meist Bot-Schutz, kein toter Link</em> — a 403 is usually
           bot protection, not a dead link. "Confirmed access" measures host tolerance for automated
           requests at least as much as it measures retrievability.</p>
+          <p><strong>And it measures something narrower than the prose implies.</strong> This
+          practice probed the two never-re-checked rows live, one day after the pinned state — an
+          observation held apart from every assertion on this page, because it is not offline and
+          not reproducible from the frozen files. Both reproduced the documented mechanism. One of
+          them answered 200 on a page the host itself titles a deleted dataset version. So a check
+          that counts an HTTP 200 as a confirmed access route can confirm a resource the host says
+          is gone — which bears on the <em>450 von 450</em> above as much as on these two rows,
+          none of which this work re-probed. Transcript:
+          <code>provenance/access-attempts.md</code>.</p>
         </div>
       </div>
       <figure class="bar-figure">
@@ -576,6 +609,17 @@ const tableRows = assertions
     font-size: 0.92rem;
     border-top: 1px solid currentColor;
     padding-top: 0.9rem;
+  }
+
+  .ledger .pin.age {
+    font-style: italic;
+  }
+
+  .ledger .twofold {
+    font-size: 0.9rem;
+    border-top: 1px dashed currentColor;
+    padding-top: 0.7rem;
+    margin-top: 0.9rem;
   }
 
   .ledger .callout,

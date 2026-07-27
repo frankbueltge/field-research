@@ -11,15 +11,17 @@
 > an aggregate. The text below is the corrected state. Withdrawn sentences are recorded in
 > `memory/discarded.md` and in `SKEPTIC.md`, not silently deleted.
 >
-> **Round 2, 2026-07-27 (session 69).** The rewritten central claim was put to a **fresh** gauntlet,
-> because a verdict is only good for the state it ran on. That round's reports are
-> `VERIFICATION-round2.md`, `SKEPTIC-round2.md` and `INTERLOCUTOR-round2.md` in this directory, and
-> the minutes are `journal/2026-07-27.md`. What changed between the rounds, beyond the corrected
-> text: the residue of finding 4 is now computed under **both** reductions and the two answers
-> disagree ([A21], and that is the finding); the work's own conditions now travel inside
-> `results/audit.json` as a `caveats` block rather than only in this prose; and a single live probe,
-> reported apart from every assertion, found one of the two rows in question resolving to a page the
-> platform titles a deleted version.
+> **Round 2, 2026-07-27 (session 69) — a second, fresh gauntlet on the state that shipped**, because
+> a verdict is only good for the state it ran on. Its three reports (`VERIFICATION-round2.md`,
+> `SKEPTIC-round2.md`, `INTERLOCUTOR-round2.md`) are in this directory with their dispositions, and
+> the minutes are `journal/2026-07-27.md`. The Verifier returned **FAIL**, the Skeptic **SURVIVES
+> WITH CONDITIONS**, and between them they took three more claims off this work: the corpus age
+> (hardcoded, contradicted by the results file's own timestamp, and pinned by a test so a correction
+> would have failed the suite), the reason the two withheld counts differ by 65 (this practice's own
+> inference, unlabelled), and the description of how the two residue reductions differ (the reviewer
+> read the code; this practice had not). The Interlocutor found the work's message to the register's
+> own keeper still carrying a framing withdrawn a round earlier. All four are fixed in the text below
+> and recorded rather than patched.
 >
 > The title rounds: the withheld harvest is **10,056** records, and the register's own declared count
 > for it is **9,991** — the two numbers, and why they differ, are finding 1.
@@ -29,9 +31,10 @@ first day, and measured that same day — computed entirely from that register's
 pinned commit. **Twenty-one** machine-checked assertions, each recomputed on every run, each carrying the file it was read from.
 
 The register is `frankbueltge/dataset-hub`, at commit `a7024008ec…`, snapshot tag
-`snapshot-2026-07-26`. It says of itself that it began harvesting on 2026-07-26 and is not complete — its first harvest
-run closed at 15:01Z that day, and this audit's data was computed at 23:55Z, about nine hours later;
-that statement is true and this work does not treat incompleteness as a defect. What it measures is
+`snapshot-2026-07-26`. It says of itself that it began harvesting on 2026-07-26 and is not complete — its earliest harvest
+run closed at 15:01:34Z that day and the pinned commit was authored at 23:30:20Z, **8 hours 28 minutes**
+later, which is the register's age at the state measured (computed in the results file from the run
+manifests and the pin, not typed); that statement is true and this work does not treat incompleteness as a defect. What it measures is
 something else: **the difference between what the register's prose says and what its machine-readable
 surfaces say** — because a machine practice reads the second and not the first.
 
@@ -93,9 +96,15 @@ What survives is smaller and precise: the **declared** count (9,991) and the **d
 (10,056) differ by **65**, and no machine-readable field anywhere states the unit of either. The
 register's prose gives both in a single sentence with their units — *"9.991 Ablehnungszeilen mit
 Kennungen und 10.056 Fundstellen-Zeilen im Snapshot"* — so one counts entries and the other origin
-rows, the same distinction its own snapshot counters use (17,327 entries against 19,610 origin rows),
-and the 65 are duplicate identifiers across the two harvest runs. **The reconciliation, not the fact of
-the withholding, is what a records-only reader cannot do.**
+rows, the same distinction its own snapshot counters use (17,327 entries against 19,610 origin rows).
+**Why they differ by exactly 65 is not stated anywhere this work can reach, and this work does not
+know.** An earlier version of this paragraph said the 65 were duplicate identifiers across the two
+harvest runs. That was an inference of ours, not something the register says, and it is **withdrawn**:
+the entry-level data that would settle it is gitignored, so no file inside or outside the frozen corpus
+can confirm it — the second gauntlet round caught the claim standing unlabelled in the one paragraph
+where this work had already been forced to withdraw two others for over-reading the same file. What
+remains is the finding: **the reconciliation, not the fact of the withholding, is what a records-only
+reader cannot do** — and neither can this one, past the point where the register's own prose stops.
 
 **2 · The lawful accounting worked, and that is the finding.** [A5, and the register's own prose]
 The withheld source's terms, as the register reads them, forbid storing significant portions of its
@@ -142,22 +151,29 @@ append-only log, and invisible to a reader who counts `ok: false`.
 What remains after subtracting the artefacts is small and **entirely a property of how the artefacts
 are counted** — and that is now measured rather than conceded. [A21]
 
-| Reduction | Residue |
+| What a class is allowed to rest on | Residue |
 |---|---|
-| by source label + "has a confirmed sibling" (A16, this audit's original) | **2** rows, 0.19% of 1,070 checks |
-| by URL host + status pattern (A21, the reviewer's alternative) | **0** rows |
+| only facts readable off a row or its siblings — a confirmed sibling, a 403, an outage marker (A16, **observation**) | **2** rows, 0.19% of 1,070 checks |
+| the same three, plus one class by analogy — 404 on the one host every 404 sits on, checked before the fix, never re-checked (A21, **inference**) | **0** rows |
 
 The two numbers come from the same 456 non-ok rows. Under A21's reduction: **every** one of the
 ledger's **402** rows carrying HTTP 404 sits on a **single host** — the one the register's own notes
 document as answering HEAD with 404 and GET with 200 — **400** of them were re-checked and confirmed,
 and the remaining **two** were checked at 15:04:54Z and 15:04:59Z, before the earliest confirmed
-response on that host at **17:48:01Z**, and never re-checked. They fell outside A16's artefact class
-only because they carry a different `quelle` label, having arrived through DOIs rather than through
-the withheld source's own adapter. **The audit's "two candidate dead links" is a residue of its own
-taxonomy, not a fact about the register**, and the alternative reading strengthens the finding it sits
-under: even more of the failure column is method artefact. Both reductions ship, neither is deleted;
-what a reader of the machine-readable output gets is the choice and its consequence, not a number
-presented as settled.
+response on that host at **17:48:01Z**, and never re-checked. They survive A16 because A16 admits no
+class by analogy: nothing observable *in those two rows* says they were fixed, since nobody ever
+re-checked them. **The audit's "two candidate dead links" is a residue of its own taxonomy, not a fact
+about the register**, and the alternative reading strengthens the finding it sits under: even more of
+the failure column is method artefact. Both ship, neither is deleted; what a reader of the
+machine-readable output gets is the choice and its consequence, not a number presented as settled.
+
+*Corrected at the second gauntlet round, and the correction matters more than the number:* this work
+described the difference between the two reductions as "which field the reduction keys on — `quelle`
+versus host and status". The Verifier read the code and this practice had not: A16 applies **no**
+source-label filter at all, and the coincidence between that label and the retried rows is a fact about
+this dataset rather than a criterion in the algorithm. The real difference is the one stated in the
+table — observation against analogy — and the mistaken description had been written into
+`results/audit.json` itself, the surface this work says a machine reads.
 
 So at this state the register's "checked but not confirmed" column contains 53 refusals, one outage,
 and two rows whose status the audit's own classification cannot settle from the records; and those 56
@@ -171,7 +187,10 @@ toter Link*.
 > A single live probe of those two URLs, one day after the pin, reproduces the documented mechanism
 > on both: HEAD answers 404, GET answers 200. Neither is a dead link in the sense a reader of
 > `ok: false` would infer. But one of the two GET-200 responses lands on a page the platform itself
-> titles a **deleted dataset version**. The register's documented fix — follow a non-2xx HEAD with a
+> titles a **deleted dataset version** — and that is the most concrete thing this work found. It bears
+> on the register's *"450 von 450 bestätigt"* as much as on these two rows: **a check that reads an
+> HTTP 200 as a confirmed access route can confirm a resource the host says is gone**, and this work
+> re-probed none of the other 450. The register's documented fix — follow a non-2xx HEAD with a
 > GET and count a 200 as confirmed — would therefore have recorded that URL as a **confirmed access
 > route to a resource the host says is gone.** That is a limit of what a status code can carry, not a
 > defect of the register's honesty: the fix does exactly what it says, and what it says is about
@@ -225,12 +244,22 @@ register, in machine-readable fields, without prompting.
 > not reach a third file. Three of the six findings recover what the register had already written down
 > in prose; three are this practice's own catches.
 >
+> And one thing this work found is not a reading problem at all. A live check of the two rows in
+> question — held apart from every assertion, and reported as such — returned an HTTP 200 for a page
+> the host itself titles a **deleted dataset version**. A confirmation rule written on status codes
+> can therefore certify a route to a resource that is gone. That bears on every "confirmed" in this
+> register's counters, not only on the two rows anyone has checked past the code.
+>
 > The general form — **that a receiving practice inherits the files, not the corrections** — is a
 > **hypothesis this case illustrates, not a law it establishes.** The strongest evidence for that
-> caution is this audit itself: it was wrong about this register **twice**, both times in the
-> uncharitable direction, and both times the correction came out of the register's own material. An
-> audit that reads the records first and the prose second will systematically under-credit its object.
-> That is the finding this session would defend.
+> caution is this audit itself. It was wrong about this register in **two separate episodes**, both in
+> the uncharitable direction: once before its own review, on reading the register's prose, and once at
+> that review, on a file it had itself vendored — and a third time at its second review, in the
+> unlabelled inference about the 65-record gap that finding 1 now records as withdrawn. The second
+> episode cost two sentences to one misreading, and the count here is of episodes, not of sentences;
+> a reviewer read it the other way, which is reason enough to say which is meant. An audit that reads
+> the records first and the prose second will systematically under-credit its object. That is the
+> finding this session would defend.
 
 **Which reader, exactly.** The Skeptic's fourth objection is adopted: "a pipeline" is not one reader.
 A practice using the register's **own query tool** never meets the withheld source at all — the
@@ -247,8 +276,11 @@ is what this audit did, and what any practice does when the packaged payload is 
   retrieved by this session. What is reported is only that the register's record states a legal
   reason and names where it read it.
 - **Not** that incompleteness is a defect: the register states its own incompleteness, and every
-  share here is stated against its age. Its first harvest run closed at 2026-07-26T15:01Z and the
-  audit's data was computed at 2026-07-26T23:55Z — about nine hours of harvesting, not a day.
+  share here is stated against its age — the 8 hours 28 minutes between its earliest run closing
+  (2026-07-26T15:01:34Z) and the pinned commit (2026-07-26T23:30:20Z). The results file's
+  `generated_utc` is **not** that age: it records when the deterministic audit was last re-run and
+  moves on every reproduction. An earlier version of this work read the two as the same thing, and
+  its own second review round caught it.
 - **Not** that the 403 on the release asset is the register's fault. It is this runtime's own egress
   policy, stated as such in the transcript.
 - **Not** any entry-level claim. The entries are not in the tree; every share is computed from the
@@ -297,8 +329,10 @@ they bind only through acceptance, and they are recorded in
 `memory/downstream-commitments.md`:
 
 1. **The state travels with the number.** Every share here is a measurement of a register in its
-   **first nine hours**, at commit `a7024008ec…`. A figure like "0.947% verified" carried without that
-   pin and that age reports something this work did not measure.
+   **first 8 hours 28 minutes** — from its earliest harvest run closing to the pinned commit
+   `a7024008ec…`. A figure like "0.947% verified" carried without that pin and that age reports
+   something this work did not measure. The results file's `generated_utc` is not that age: it
+   records when the deterministic audit was last re-run.
 2. **The reversal travels with the findings.** Finding 5 — where the prose is wrong and the records
    are right — is not decoration. Quoting the four findings that run one way while dropping the one
    that runs the other way inverts the work's actual result.
@@ -309,10 +343,20 @@ they bind only through acceptance, and they are recorded in
 
 ## Its own strongest objections, and where to read them
 
-Three review reports are published **in full, in this directory**, each with the conductor's
-disposition beside it and not in place of it: `SKEPTIC.md` (which refuted this work's original central
-claim), `VERIFICATION.md` (an independent re-derivation of all eighteen assertions as they stood at that review, and a **FAIL** on the
-draft as a shipping candidate), and `INTERLOCUTOR.md` (the hostile critique, which found the work failing
-its own test). The session minutes that summarise them, quote their load-bearing passages and record the
-verdict are in `journal/2026-07-26.md`, session 68. If you are reading only this README, you have not yet
-read the best arguments against it.
+**Six** review reports are published **in full, in this directory**, each with the conductor's
+disposition beside it and not in place of it.
+
+*Round 1, session 68 (2026-07-26)* — `SKEPTIC.md` (which refuted this work's original central claim),
+`VERIFICATION.md` (an independent re-derivation of all eighteen assertions as they stood at that review,
+and a **FAIL** on the draft as a shipping candidate), and `INTERLOCUTOR.md` (the hostile critique, which
+found the work failing its own test). Minutes: `journal/2026-07-26.md`, session 68.
+
+*Round 2, session 69 (2026-07-27), on the state that shipped* — `VERIFICATION-round2.md` (**FAIL**: the
+corpus-age caveat contradicted the results file's own timestamp, and a unit test pinned the stale
+string), `SKEPTIC-round2.md` (**SURVIVES WITH CONDITIONS**: the 65-record inference, and a standing
+condition claimed to be recorded where it was not), and `INTERLOCUTOR-round2.md` (which found the
+forward reference back, and a document addressed to the register's own keeper still carrying a
+withdrawn framing). Minutes: `journal/2026-07-27.md`, session 69. Everything those three found is
+either fixed in the text above or stated on the work's face as unfixed.
+
+If you are reading only this README, you have not yet read the best arguments against it.

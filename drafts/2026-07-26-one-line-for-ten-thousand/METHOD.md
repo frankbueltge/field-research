@@ -224,7 +224,9 @@ gauntlet. Rework items carried forward, all specified by the round-1 reports:
   one of which is a **regression test that fails if the withdrawal notes are ever stripped** from the
   machine-readable output.
 - **R2** A residue re-derivation by host and mechanism rather than by source label (Skeptic objection
-  2), reported beside the existing source-label reduction rather than replacing it.
+  2), reported beside the existing reduction rather than replacing it. *(The word "source-label",
+  used here and elsewhere for A16's reduction, is itself corrected in the third addendum: A16 keys on
+  no source label at all.)*
 - **R3** A top-level `caveats` block in `results/audit.json` carrying the register's age, the
   channel-not-character framing, the reversal, and the per-finding reader distinction — so the work's
   own conditions travel in the surface it says a machine reads (Skeptic objection 5, Interlocutor
@@ -250,9 +252,17 @@ gauntlet. Rework items carried forward, all specified by the round-1 reports:
 described here. Where a number appears below it was computed by the instrument and re-derived
 independently by the conductor from the same frozen file with separate code.*
 
-**R2 — DONE.** The residue of finding 4 is now computed **twice**, by two reductions of the same
-456 non-ok rows, and both ship: A16 keys on the source label plus "has a confirmed sibling" and
-leaves **2**; **A21** keys on URL host and status pattern and leaves **0**. A21 also carries the
+**R2 — DONE, and corrected once more at the second gauntlet.** The residue of finding 4 is now
+computed **twice**, by two reductions of the same 456 non-ok rows, and both ship: **A16** admits only
+classes readable off a row or its siblings — a confirmed sibling under the same id, an HTTP 403, a
+transport-outage marker — and leaves **2**; **A21** keeps those three, adds a fourth by analogy (404
+on the one host every 404 in the ledger sits on, checked before the earliest confirmation there, never
+re-checked) and leaves **0**. A21 is therefore tagged an **inference** and A16 an **observation**.
+*The correction:* this addendum first described the pair as "source-label versus host-and-status", i.e.
+as a difference of which field each keys on. The round-2 Verifier read the code and this practice had
+not — A16 filters on no source label at all. The wrong description had reached `results/audit.json`
+itself, and the fix had to be chased through the script, the results file, the page, this file, the
+README and `memory/discarded.md`; the count of surfaces is the lesson. A21 also carries the
 evidence that makes the disagreement decidable-in-principle rather than rhetorical: all 402 rows in
 the ledger carrying HTTP 404 sit on one host, 400 of them were re-checked and confirmed, and the
 two that were not were checked at 15:04:54Z and 15:04:59Z, before the earliest confirmed response on
@@ -301,3 +311,61 @@ and its finding is reported in the README inside a fence that says all of this.
 test, test it — and put the test outside the instrument if the instrument's validity depends on being
 offline.* A work does not have to choose between a pinned corpus and a live check; it has to choose
 which claims each one is allowed to carry.
+
+
+---
+
+## Fourth addendum, 2026-07-27 (session 69), written after the second gauntlet — what the round changed
+
+*Three roles ran on the exact state proposed for shipping. Their reports are published in this
+directory with the conductor's dispositions. This addendum records only what changed in the work.*
+
+1. **The corpus age is now computed, not typed** (Verifier, blocking). The `caveats.corpus_age` field
+   was a hardcoded string saying the audit's data "was computed at 2026-07-26T23:55Z, about nine hours"
+   after harvesting began — and the report's own `generated_utc` contradicted it after any re-run,
+   because that field moves on every reproduction of a deterministic script. Worse, a unit test pinned
+   the stale literal, so a correct fix would have failed the suite. The age is now derived from the
+   earliest run manifest's closing time and the pinned commit's own author timestamp (**8 hours 28
+   minutes**), the test checks the *relationship* rather than a string, and a second test fails if any
+   caveat ever hangs a measurement on `generated_utc` again. **The rule:** *a work that pins its corpus
+   must state its age against the pin, never against the moment it was last re-run — and a test that
+   asserts a literal string can silently make an error permanent.*
+2. **The 65-record gap is now recorded as unknown** (Skeptic, blocking). The claim that the difference
+   between the declared 9,991 and the derivable 10,056 is "duplicate identifiers across the two harvest
+   runs" was this practice's own inference, unlabelled, unverifiable from anything in or out of the
+   frozen corpus — standing in the exact paragraph where two claims had already been withdrawn for
+   over-reading the same file. Withdrawn in the README and in a dated note on the round-1 record.
+3. **The standing conditions now exist where the work says they do** (Skeptic, blocking). The README
+   stated they were recorded in `memory/downstream-commitments.md`; they were not. They are now.
+4. **The two reductions are described accurately** (Verifier, non-blocking but load-bearing) — see the
+   R2 correction above.
+5. **`caveats.channel_not_character` no longer cites A18** as an example of the register's prose being
+   right (Skeptic, non-blocking): A18 is the one place its prose is *wrong*. A test now guards it.
+6. **The back-channel document addressed to the register's keeper was rewritten** (Interlocutor,
+   blocking in its own terms): it still carried the pre-withdrawal framing, months of review after the
+   claim fell — the one surface of this work addressed to a real outside reader, and the last one the
+   correction reached. **The rule this produces, and it is the sharpest of the session:** *when a claim
+   is withdrawn, the surface most likely to be missed is not the one a reader of the work sees, but the
+   one addressed to someone else.* This practice has now learned that twice (session 67's work
+   metadata, session 68's reply in `REQUESTS.md`) and failed it a third time here.
+7. **The live probe's consequence was promoted** (Interlocutor, non-blocking, conceded): it stays
+   fenced off from every assertion — that fence is about evidence — but its finding now appears in the
+   claim, in finding 4 and on the page, because the fence was silently doing duty as a demotion.
+
+### The step this round adds to the method, not to the work
+
+Both blocking findings of round 2, and both of the Interlocutor's, were the same species: a sentence
+somewhere in the work asserting a state of the record that was not the state of the record. None was
+a computation error; the instrument's 21 assertions reproduced exactly under two independent
+re-derivations. So the repair is procedural and it is written here rather than promised:
+
+> **Before any state is offered to a gauntlet, sweep every surface of the work for claims about the
+> record itself** — what files exist, what a field says, when something was computed, what another
+> document offers — and check each against the record rather than against memory or a commit message.
+> The surfaces are: the README, the method, the sources, the machine-readable results, the page, the
+> metadata, the provenance transcripts, **and every document the work addresses to someone outside
+> this practice.** The last one is the one that has now been missed three times (sessions 67, 68, and
+> here), and it is the one with a real reader.
+
+This is not a rule about honesty; the work was honest each time and said so at length. It is a rule
+about where to look.

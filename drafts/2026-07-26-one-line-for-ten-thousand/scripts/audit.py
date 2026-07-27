@@ -52,6 +52,13 @@ UPSTREAM_COMMIT = "a7024008ec337118b2aeebb87065ded83ed23413"
 UPSTREAM_TAG = "snapshot-2026-07-26"
 UPSTREAM_TAG_SHA = "8be62d8b86f2b5ce3690f44a983497adac7957d6"
 
+# The pinned commit's own author timestamp, in UTC. Upstream records it as
+# 2026-07-27T01:30:20+02:00; that is 2026-07-26T23:30:20Z. This — not the moment
+# this script happens to be re-run — is the instant the register's state was frozen
+# at, and it is what the corpus-age caveat is computed against. Verified against the
+# upstream commit metadata at the first gauntlet round and again at the second.
+UPSTREAM_COMMIT_UTC = "2026-07-26T23:30:20Z"
+
 
 # ---------------------------------------------------------------------------
 # Pure helper functions (unit-tested directly)
@@ -147,8 +154,17 @@ def group_by_id(rows, id_key="id"):
 
 
 def compute_residue_by_host_and_mechanism(rows, defect_host="www.kaggle.com"):
-    """Re-derive A16's failure-column residue by URL host and HTTP status pattern,
-    instead of by the ledger's `quelle` (source-label) field.
+    """Re-derive A16's failure-column residue with one further class added, defined by
+    URL host, HTTP status and check time.
+
+    The second gauntlet round corrected an earlier description of this function. A16 does
+    NOT key on the ledger's `quelle` field: its classes are (i) the id has a confirmed
+    sibling row, (ii) HTTP 403, (iii) a transport-outage marker -- each a fact readable off
+    the row or its siblings. What this function adds is class (iv), which rests on an
+    analogy rather than an observation: a row joins the documented defect when it carries
+    404 on the host every 404 in this ledger sits on, was checked before the earliest
+    confirmation recorded there, and was never re-checked. That is why A21 is reported as
+    an inference while A16 is reported as an observation, and why both ship.
 
     `rows` is a resolution-ledger-shaped list of dicts (id, ok, http_status, url,
     quelle, datum, and optionally an `ausfall` marker). Returns a plain dict with no
@@ -784,9 +800,10 @@ def build_assertions(data):
                   f"{aufgeloest_versucht} - {aufgeloest_bestaetigt} = {unconfirmed_from_a14}). "
                   "At this state the register's entire checked-but-not-confirmed column is "
                   "53 rows with HTTP status 403, 1 row with a transport outage, and 2 rows "
-                  "with HTTP status 404 reached through DataCite-registered DOIs. This class_residue "
-                  "figure is a source-label reduction (by ledger `quelle` field); see A21 for the "
-                  "same column reduced by URL host and status pattern instead.")},
+                  "with HTTP status 404 reached through DataCite-registered DOIs. Every class here rests "
+                  "on a fact directly observable in the row or in a sibling row, which is why two "
+                  "rows remain; A21 reports the same column with one further class added by "
+                  "analogy (host, status and check time), under which the residue is 0.")},
     ))
 
     # --- A17: withheld-source identifiers still present in the resolution ledger --
@@ -930,9 +947,14 @@ def build_assertions(data):
         {"note": ("Both counts are correct in their own units and neither unit is stated in any "
                   "machine-readable field. The register's prose gives both in one sentence — 9,991 rejection "
                   "lines against 10,056 origin rows — which is the same entries-versus-origins distinction its "
-                  "snapshot counters use (17,327 against 19,610); the 65 are duplicate identifiers across the "
-                  "two harvest runs. The reconciliation, not the fact of the withholding, is what a "
-                  "records-only reader cannot do. This is the work's surviving central finding.")},
+                  "snapshot counters use (17,327 against 19,610). Why the two differ by exactly 65 is NOT "
+                  "stated in any record or prose this work can reach, and this work does not know: an "
+                  "earlier version of this note said the 65 were duplicate identifiers across the two "
+                  "harvest runs, which was this practice's own inference, unlabelled and unverifiable "
+                  "from the frozen corpus, and it is WITHDRAWN (second gauntlet round, 2026-07-27). "
+                  "The reconciliation, not the fact of the withholding, is what a records-only reader "
+                  "cannot do -- and past the point where the register's prose stops, neither can this "
+                  "audit. This is the work's surviving central finding.")},
     ))
 
     # --- A21: the same residue, re-derived by host and mechanism -----------------
@@ -950,8 +972,9 @@ def build_assertions(data):
 
     assertions.append(make_assertion(
         "A21",
-        ("Re-deriving A16's residue by URL host and HTTP status pattern instead of by "
-         "source label: across the resolution ledger, how many rows carry HTTP status "
+        ("Re-deriving A16's residue with one further class, defined by URL host, HTTP "
+         "status and check time rather than by a fact observable in the row: across the "
+         "resolution ledger, how many rows carry HTTP status "
          "404, on which hosts; how many of those have a later row under the same id with "
          "`ok` true (the documented retry); how many were never confirmed anywhere, with "
          "their `quelle` labels and `datum` values; what is the earliest `datum` among "
@@ -979,10 +1002,10 @@ def build_assertions(data):
          "residue_host_mechanism": 0,
          "classes_sum": 456},
         aufloesungen_evidence,
-        "observed",
+        "inference",
         {"note": (
-            "(1) Under a host-and-mechanism reduction the residue is 0, where A16's source-label "
-            "reduction leaves 2: the same two rows A16 calls its residue (both carrying `quelle: "
+            "(1) Under this host-and-mechanism reduction the residue is 0, where A16's "
+            "observation-only reduction leaves 2: the same two rows A16 calls its residue (both carrying `quelle: "
             "datacite`, both HTTP 404 on the documented-defect host given above as `defect_host`, "
             "both checked at 2026-07-26T15:04:5*Z, see `never_confirmed_404_detail`) fall instead "
             "into class (iv) here, because they share host and status with the 400 rows the "
@@ -990,8 +1013,11 @@ def build_assertions(data):
             "never re-checked after it (the fix ran 17:42:45Z-17:55:21Z, on rows carrying "
             f"{WITHHELD_LABEL}'s own `quelle` label; these two rows arrived via DataCite-registered "
             "DOIs and were checked earlier, at 15:04:54Z/15:04:59Z, outside the batch the rollout "
-            "was applied to). The 2-vs-0 gap is therefore a property of which field the reduction "
-            "keys on (`quelle` vs. host+status), not a settled fact about the world. "
+            "was applied to). The 2-vs-0 gap is therefore a property of what a class is allowed to "
+            "rest on -- a fact observable in the row (A16), or an analogy to rows that were "
+            "observed (this assertion) -- and not a settled fact about the world. This assertion "
+            "is tagged an inference for exactly that reason: the two rows were never retried, so "
+            "folding them into the documented defect is a judgement, not a reading. "
             "(2) This assertion does not establish that either of the two rows' URLs (see "
             "`never_confirmed_404_detail` for their ledger ids) would resolve if requested today: "
             "no live request feeds this or any other assertion, and none could — this audit is "
@@ -1018,32 +1044,64 @@ def build_assertions(data):
 # Report assembly
 # ---------------------------------------------------------------------------
 
-def build_caveats():
+def corpus_age_sentence(run_manifests):
+    """Compute the register's age at the pinned state, from the data rather than by hand.
+
+    The two ends are both facts in the record: the earliest harvest run's own closing
+    timestamp (the `bis` field of the run manifests) and the pinned commit's author time
+    (`UPSTREAM_COMMIT_UTC`). The report's own `generated_utc` is deliberately NOT used —
+    it records when this deterministic script was last re-run over frozen inputs, which
+    is not a measurement of anything and drifts every time anyone reproduces the work.
+
+    This function exists because the second gauntlet round found the age hardcoded here
+    as a literal string, contradicting the same file's `generated_utc` after a re-run,
+    and a unit test pinning that literal so a correction would have failed the suite.
+    """
+    closes = sorted(m.get("bis") for _, m in run_manifests if m.get("bis"))
+    first_close = closes[0] if closes else None
+    if first_close is None:
+        return None, None
+    start = datetime.strptime(first_close, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    pin = datetime.strptime(UPSTREAM_COMMIT_UTC, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+    minutes = int((pin - start).total_seconds() // 60)
+    return first_close, f"{minutes // 60} hours {minutes % 60} minutes"
+
+
+def build_caveats(run_manifests):
     """Build the top-level `caveats` block: the work's own standing conditions, carried
     as structured, plain-string fields rather than as prose the machine-readable output
     does not transport (Skeptic objection 5, session-68 gauntlet; rework item R3).
 
-    Every value here is a fixed string/list/dict, not a computed one: the underlying
-    facts (the pin, the age gap, the reversal, the withdrawals) are established
-    elsewhere in this repository's prose (METHOD.md, README.md) and are restated here
-    verbatim in scope so that a reader of audit.json/data.json alone, without the prose,
-    still receives them.
+    Most values are fixed strings whose underlying facts are established elsewhere in
+    this repository's prose (METHOD.md, README.md) and restated here in scope, so that a
+    reader of audit.json/data.json alone still receives them. The corpus-age value is the
+    exception: it is computed from the run manifests and the pin, never typed.
     """
+    first_close, age = corpus_age_sentence(run_manifests)
     return {
         "corpus_age": (
             "Every share in this report measures the register within its first hours, not a "
-            "mature or stable corpus: the first harvest run (datacite) closed at "
-            "2026-07-26T15:01Z and this audit's data was computed at 2026-07-26T23:55Z, about "
-            "nine hours later. Pinned at upstream commit "
+            f"mature or stable corpus. The earliest harvest run closed at {first_close}; the "
+            f"pinned commit was authored at {UPSTREAM_COMMIT_UTC}, which is {age} later, and "
+            "that interval — computed here from the run manifests and the pin, not typed — is "
+            "the register's age at the state measured. Pinned at upstream commit "
             f"{UPSTREAM_COMMIT} and snapshot release tag {UPSTREAM_TAG} ({UPSTREAM_TAG_SHA}); "
-            "no number in this work is read from the live upstream repository at build time."
+            "no number in this work is read from the live upstream repository at build time. "
+            "The report's own `generated_utc` field is NOT the measurement time: this script is "
+            "deterministic over frozen inputs, so that field records only when the report was "
+            "last recomputed, and it changes on every reproduction without any number changing."
         ),
         "channel_not_character": (
             "This audit's subject is what a machine reader restricted to the register's "
             "machine-readable surfaces can and cannot see: a channel property. No finding in "
             "this report is a statement about the register's integrity, honesty, or design "
-            "intent. Where the register's own prose record documents a gap correctly, that is "
-            "reported on the same face as the gaps this audit finds (see A18, A19, A20)."
+            "intent. Where the register's own records already document something correctly, that "
+            "is reported on the same face as the gaps this audit finds — see A19 (the rejection "
+            "register declares the withheld volume and its reason, machine-readably) and A20 (the "
+            "declared count against the derivable one). A18 is NOT an example of that: it is the "
+            "reversal, the one place the register's prose is wrong where its records are right, "
+            "and it is cited under `reversal` for that reason. The mistaken citation of A18 here "
+            "was found by the second gauntlet round and corrected before shipping."
         ),
         "reversal": (
             "One finding runs the other way from the rest and must travel with them: A18 shows "
@@ -1097,11 +1155,17 @@ def build_caveats():
             ),
         },
         "classification_choice": (
-            "A16's residue figure (2 rows, out of 456 non-ok rows) is sensitive to the reduction "
-            "choice: A16 partitions failures by the ledger's `quelle` label plus 'has an ok "
-            "sibling under the same id'. A21 reports the same failure column reduced instead by "
-            "URL host and HTTP status pattern, and the residue under that reduction is 0. Both "
-            "are reported; A21 does not replace A16."
+            "A16's residue figure (2 rows, out of 456 non-ok rows) is sensitive to what a class "
+            "is allowed to rest on. A16 admits only classes readable off a row or its siblings: a "
+            "confirmed sibling under the same id, an HTTP 403, a transport-outage marker; two rows "
+            "survive that. A21 keeps those three and adds a fourth by analogy -- 404 on the one "
+            "host every 404 in the ledger sits on, checked before the earliest confirmation there, "
+            "never re-checked -- under which the residue is 0. Both are reported; A21 does not "
+            "replace A16, and A21 is tagged an inference while A16 is an observation. Correction, "
+            "second gauntlet round: an earlier version of this field, and of the surrounding prose, "
+            "described A16 as keying on the ledger's `quelle` (source-label) field. It does not; "
+            "the coincidence between that label and the retried rows is a fact about this dataset, "
+            "not a criterion in the code. The reviewer read the code and this practice had not."
         ),
         "out_of_band_probe": (
             "One observation in this work is NOT an assertion and must not be read as one. On "
@@ -1130,7 +1194,7 @@ def build_report():
             "tag": UPSTREAM_TAG,
             "tag_sha": UPSTREAM_TAG_SHA,
         },
-        "caveats": build_caveats(),
+        "caveats": build_caveats(data["run_manifests"]),
         "inputs": collect_input_manifest(),
         "assertions": assertions,
         "verdict": {

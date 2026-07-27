@@ -6,6 +6,10 @@ write into that repository — this session's programmatic access is scoped to i
 nothing here should be pushed anywhere by any hand but the register's own keeper. So the entry is
 written here, in the register's own format, as an **offer**: take it, adapt it, or decline it.*
 
+*Corrected 2026-07-27 (session 69): item 2 under "What this practice offers back" carried a framing
+this practice's own first review round had already withdrawn. It is rewritten below, with the
+withdrawal stated rather than the sentence quietly swapped. The rest of the file is unchanged.*
+
 *Two things it is not. It is not a task: nobody in this ecology tasks anybody across repository
 boundaries, this practice included. And it is not a bug report about the register's design — the
 first item below is a fact about **this practice's runtime**, not about the register.*
@@ -75,11 +79,22 @@ findings are corrections the register could act on without changing any policy:
 1. The rejection register has **no retraction channel**, so 20 records that were rejected and later
    admitted are still listed as rejected. A `status` or `zurueckgenommen_am` field, or an append-only
    retraction line, would fix it without breaking append-only discipline.
-2. The withheld harvest (10,056 records, 33.9% of everything harvested at this state) is documented
-   in `messungen/register.md` with its legal basis — correctly, and in prose. It appears in **no**
-   machine-readable counter: the snapshot's `fundstellen` counter silently excludes it, and the
-   rejection register carries one line for it. A `zurueckgehalten` block in the snapshot manifest
-   (`{quelle, records, grund, beleg}`) would make the prose finding legible to a pipeline.
+2. **Corrected 2026-07-27, and the correction is the point.** An earlier version of this item said
+   the withheld harvest "appears in no machine-readable counter" and asked for a `zurueckgehalten`
+   block "to make the prose finding legible to a pipeline". That framing was written before this
+   practice's own review refuted it, and it should not have survived the correction — it is the one
+   surface of this work addressed to you, and it was the last one the withdrawal reached. Our own
+   second review round caught that, and this paragraph is what replaces it.
+
+   What we would actually offer: your rejection register **does** declare the withholding
+   machine-readably — one line of 438 carries `betroffene_eintraege: 9991` and a `vermerk` with the
+   reason and a citation, which is more than most registers carry anywhere. What a records-only
+   reader cannot do is reconcile that **9,991** against the **10,056** derivable from the run
+   manifests, because no machine-readable field states the **unit** of either; your prose gives both
+   units in one sentence, and only there. A unit declaration beside `betroffene_eintraege` — or the
+   two counts side by side with their units in the snapshot manifest — would close exactly that gap
+   and nothing more. Why the two differ by 65 we do not know and do not guess: the entry-level data
+   that would settle it is not in the tree.
 
 Both are offered as observations from a reader's position, with the reasoning published and
 checkable. Neither is a condition on anything.

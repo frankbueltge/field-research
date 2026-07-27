@@ -11,6 +11,7 @@ the sibling `scripts/` directory onto sys.path relative to this file's own
 location, so the tests run regardless of the caller's working directory.
 """
 
+import json
 import os
 import sys
 import tempfile
@@ -361,18 +362,78 @@ class CaveatsBlockTravels(unittest.TestCase):
             value = caveats[key]
             self.assertTrue(value, f"caveats['{key}'] is empty")
 
-    def test_corpus_age_states_the_pin_and_the_age_gap(self):
+    def test_corpus_age_states_the_pin_and_the_computed_age_gap(self):
+        """The age must be DERIVED, not typed.
+
+        The second gauntlet round found this field hardcoded to a generation time that
+        the report's own `generated_utc` contradicted after a re-run — and found the
+        earlier version of this very test pinning that stale literal, so a correction
+        would have failed the suite. The test now checks the relationship instead of a
+        string: both endpoints must come from the data/pin, and the stated interval must
+        equal the one recomputed here independently of the sentence.
+        """
         report = audit.build_report()
         text = report["caveats"]["corpus_age"]
         self.assertIn(audit.UPSTREAM_COMMIT, text)
         self.assertIn(audit.UPSTREAM_TAG, text)
         self.assertIn(audit.UPSTREAM_TAG_SHA, text)
-        self.assertIn("15:01", text)
-        self.assertIn("23:55", text)
+        self.assertIn(audit.UPSTREAM_COMMIT_UTC, text)
+
+        data = audit.load_inputs()
+        first_close, age = audit.corpus_age_sentence(data["run_manifests"])
+        self.assertIn(first_close, text)
+        self.assertIn(age, text)
+
+        # And the interval itself, recomputed here from the two endpoints.
+        from datetime import datetime, timezone
+        fmt = "%Y-%m-%dT%H:%M:%SZ"
+        start = datetime.strptime(first_close, fmt).replace(tzinfo=timezone.utc)
+        pin = datetime.strptime(audit.UPSTREAM_COMMIT_UTC, fmt).replace(tzinfo=timezone.utc)
+        minutes = int((pin - start).total_seconds() // 60)
+        self.assertEqual(age, f"{minutes // 60} hours {minutes % 60} minutes")
+
+    def test_corpus_age_never_claims_generated_utc_is_the_measurement_time(self):
+        """`generated_utc` drifts on every reproduction; no caveat may hang a measurement
+        on it. Guards the exact defect the second round found."""
+        report = audit.build_report()
+        text = report["caveats"]["corpus_age"]
+        self.assertNotIn(report["generated_utc"], text)
+        self.assertIn("generated_utc", text)
 
     def test_reversal_points_at_a18(self):
         report = audit.build_report()
         self.assertIn("A18", report["caveats"]["reversal"])
+
+    def test_channel_not_character_does_not_cite_a18_as_prose_being_right(self):
+        """A18 is the reversal — the one place the register's prose is wrong. The second
+        gauntlet round found it cited under `channel_not_character` as an example of the
+        opposite. The corrected field may mention A18 only to say it is NOT such an
+        example."""
+        report = audit.build_report()
+        text = report["caveats"]["channel_not_character"]
+        self.assertIn("A19", text)
+        self.assertIn("A20", text)
+        if "A18" in text:
+            self.assertIn("NOT an example", text)
+
+    def test_the_two_reductions_are_tagged_differently(self):
+        """A16 rests on facts observable in a row; A21 adds a class by analogy. They must
+        not both be tagged `observed` — the second round's Skeptic and Verifier both caught
+        this."""
+        report = audit.build_report()
+        kinds = {a["id"]: a["kind"] for a in report["assertions"]}
+        self.assertEqual(kinds["A16"], "observed")
+        self.assertEqual(kinds["A21"], "inference")
+
+    def test_no_surface_calls_a16_a_source_label_reduction(self):
+        """A16's code uses no `quelle` filter. The description that said otherwise was
+        wrong in the results file itself, which is the surface this work says a machine
+        reads; it may not come back."""
+        report = audit.build_report()
+        blob = json.dumps(report, ensure_ascii=False)
+        # The phrase may appear only where it is explicitly marked as a correction.
+        for bad in ["is a source-label reduction", "keys on (`quelle`"]:
+            self.assertNotIn(bad, blob)
 
     def test_withdrawn_claims_is_a_two_entry_dict_of_strings(self):
         # Shape rule: plain string / list of strings / small dict of strings. A dict

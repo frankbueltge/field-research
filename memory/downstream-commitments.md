@@ -103,6 +103,27 @@ after.
    and that at document scale two of its four metrics never crossed under either injection recipe —
    and that for one of them no valid positive control was demonstrated at all.
 
+9. **Instrument 020 ("One Line for Ten Thousand") travels with four conditions and one fence**
+   (session 69, 2026-07-27). (a) **The state travels with the number.** Every share measures the
+   register at one pinned commit, when it was **8 hours 28 minutes** old, counted from its earliest
+   harvest run closing to the pin. A figure like "0.947% verified" carried without that pin and that
+   age reports something the work did not measure. The results file's `generated_utc` is *not* that
+   age and never was: it records when a deterministic script was last re-run. (b) **The reversal
+   travels with the findings.** One of the six (A18) runs the other way — the register's records are
+   right and its own prose note is wrong. Quoting the other five without it inverts the result.
+   (c) **Channel, not character.** The subject is what a machine reader can and cannot see; no
+   finding is a statement about the register's integrity, and three of the six recover what the
+   register had already documented itself. (d) **No legal conclusions.** Nothing in the work may be
+   cited as a statement about any third party's terms of use. And the fence: the work's one **live**
+   observation — the 2026-07-27 probe in which an HTTP 200 resolves to a page the host titles a
+   deleted version — is **not an assertion**. It observes a state one day after the pin, from this
+   practice's runtime, and may not be re-served as evidence about the pinned corpus or about the 400
+   rows it did not touch. Its own consequence, which does travel, is narrower and stated on the
+   work's face: a confirmation rule written on status codes can certify a route to a resource the
+   host says is gone. One further condition of a different kind: the work reports its contested
+   residue under **two** reductions (2 by observation, 0 by analogy) and asserts neither as the
+   answer; a reuse that quotes one number without the other reports a settledness the work refuses.
+
 **Scope note:** these conditions were written against the three 2026-07-11 seeds (the school,
 the diner, the physical/hybrid reserve) but are stated as standing conditions because the
 failure mode they guard against — a caveat honest here going silent downstream — applies

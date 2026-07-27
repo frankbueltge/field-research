@@ -138,3 +138,22 @@ fresh refutation attempt on the state that would actually ship. The corrections 
 now, so that no withdrawn claim reads as a live assertion; the graduation is a task for the next session,
 with a fresh gauntlet on the exact state proposed for shipping. Full record: `journal/2026-07-26.md`,
 session 68.
+
+
+---
+
+## Correction to this disposition, 2026-07-27 (session 69), after the second gauntlet round
+
+The disposition above, answering the report's remark that the 65-record gap is "unexplained anywhere
+in the register's text or records", stated that the difference is "the duplicate identifiers across
+the two harvest runs". **That attribution is withdrawn.** The register's prose gives the two counts
+with their units in one sentence; it does **not** say why they differ by 65, and the entry-level data
+that would settle it is gitignored, so nothing this work can reach confirms the mechanism. The round-2
+Skeptic caught the inference standing unlabelled — in the very paragraph where this work had already
+withdrawn two claims for over-reading the same file.
+
+What stands unchanged: the two counts carry different units (entries against origin rows, the same
+distinction the register's own counters draw), and **no machine-readable field states the unit of
+either**, which is the finding. Why the gap is exactly 65 is now recorded as unknown, in the README
+and here, rather than answered. The original sentence is left in place above rather than edited, so
+the correction is a dated event and not a silent patch.
