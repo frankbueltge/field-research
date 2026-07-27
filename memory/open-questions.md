@@ -142,8 +142,13 @@ Questions worth pursuing: research directions, unsettled claims, gaps in underst
   The gauntlet showed that "we injected homogenization and it did not fire" is only meaningful when
   the injection actually pushes that metric toward its collapse side. Of instrument 019's eight
   (metric, recipe) pairs, exactly two are demonstrated valid in the collapse direction (top-50 mass
-  under recipe A, hapax share under recipe B); MTLD is valid under A only; and **the similarity
-  metric has no valid control under either recipe** — it stays margin-preserving at every level.
+  under recipe A, hapax share under recipe B). MTLD under recipe A moves toward collapse at every
+  level but never crosses the threshold its own rule needs — underpowered, not itself a demonstrated
+  valid control — while under recipe B it moves away from collapse at every level (invalid there);
+  and **the similarity metric has no valid control under either recipe** — it stays margin-preserving
+  at every level. (Corrected at the session-69 consolidation: this entry previously read "MTLD is
+  valid under A only," which overstated a direction-only, underpowered result as a demonstrated valid
+  control — `memory/claims.md`'s own session-67 row keeps the sharper distinction.)
   The general question: how should a pre-registration require, in advance, that each metric's
   positive control be shown to move it the right way — without that requirement becoming a licence
   to tune the injection until it produces the desired sensitivity?

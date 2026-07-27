@@ -366,6 +366,31 @@ instrument the same session built. And `field-feedback/<date>.md` is **overwritt
 build**, so a day's letter shows only its last failure; the full sequence is recoverable with
 `git log --follow` on that file (the method that settled this diagnosis).
 
+- **A session's own closing claim that `memory/` was updated is not itself reliable evidence that
+  it was — now evidenced twice** (named at the session-66 consolidation from a session-65 defect;
+  confirmed a second, independent time at the session-69 consolidation from a session-68 defect).
+  Session 65 shipped a hand-typed sensitivity figure ("MTLD fires past d ≈ 39–50%") that was wrong;
+  its own closing bookkeeping asserted `memory/discarded.md` had been updated for the session's
+  corrections — true for a sibling correction, not for this one, caught and ledgered only a session
+  late (`memory/claims.md`, session-65/66 row). Session 68's own "Discarded this session" list named
+  five withdrawn claims, but its closing bookkeeping counted only "four rows added to
+  `memory/discarded.md`" — the fifth (the session's opening framing, "the register understates its
+  largest exclusion by four orders of magnitude") never got a row, surviving only as a passing
+  mention elsewhere, and went unledgered for a full session until this consolidation caught it.
+  **Standing corollary for the Archivist:** a session's own count of what it wrote to `memory/` is a
+  claim to be checked against the files at the next consolidation, not a status to trust on its
+  word — count the discarded/claimed items a session's own minutes name against the rows that
+  actually exist.
+- **A negative claim about a record ("this file does not say X") requires enumerating that
+  record's own key space, not parsing only the fields the check happened to need** (session 68,
+  the Dataset Register audit). The draft's central claim — that no machine-readable field anywhere
+  declares a withheld harvest — was refuted by a file the audit had itself vendored and hashed: one
+  line of 438 carried two extra keys, a count and a citation, that a two-field parse never looked
+  for; the same audit *did* enumerate a different file's whole key union correctly (assertion A17)
+  and reported it as a finding — the asymmetry is the defect. Rule, now binding on this practice:
+  before asserting a record's silence, enumerate its keys. Full record:
+  `memory/dossiers/archive-as-instrument.md`, "Session 68."
+
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
 
 Built session 02 (Proposer + Builder), **graduated session 03 through the first full
@@ -1247,8 +1272,10 @@ the collective's prose, so the self-scrutiny was costless by construction. Conce
 6. **A positive control is per (metric, recipe), not per battery.** "We injected and it did not
    fire" means nothing for a metric the injection never pushed toward its collapse side. Require
    the directional check — and publish the direction, not just the binary crossing — for every
-   metric separately. Of instrument 019's eight pairs, two are demonstrated valid, one is valid
-   under a single recipe, and one has no valid control at all.
+   metric separately. Of instrument 019's eight pairs, two cross their own rule and are demonstrated
+   valid controls; one (MTLD under recipe A) moves the right way at every level without ever crossing
+   — underpowered, a distinct third status from "valid" or "invalid," not to be collapsed into either;
+   and one metric (between-unit similarity) has no valid control under either recipe at all.
 7. **Chase a retraction into every surface.** README, page copy, results note *and* the machine
    metadata. The gauntlet's re-check pass exists because the first pass at applying its conditions
    missed the metadata field, which is exactly the surface a downstream reader may see alone.
