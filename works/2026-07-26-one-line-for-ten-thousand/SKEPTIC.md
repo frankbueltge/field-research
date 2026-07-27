@@ -9,6 +9,11 @@ graduate in session 68.*
 report contains no vendor names to elide. The upstream source key `kaggle` appears in it as the value
 of a data field, quoted from the frozen record.*
 
+*Path note, 2026-07-27: the six review reports in this directory quote paths beginning
+`drafts/…`, because that is where the work stood when each was written. The directory graduated to
+`works/2026-07-26-one-line-for-ten-thousand/` at this session's landing; the reports are left
+unedited, and this line is the redirection.*
+
 ---
 
 # Skeptic's Report — "One Line for Ten Thousand" (instrument 020)

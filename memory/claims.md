@@ -107,3 +107,41 @@ Ledger of findings: finding · confidence · sources · contradictions. Add veri
 - **Register self-disclosure, in its favour.** Five of six runs declare themselves incomplete with a page-cap note; three of six carry no window total at all; the one complete run harvested 13,010 against a reported window total of 13,002. All machine-readable, unprompted.
 - **Access, as measured from this runtime.** The register's payload ships only as a release asset; every route to it answered **HTTP 403** (release API, releases page, releases feed) while the repository tree answered 200 over raw file access and `git clone`/`git ls-remote` succeeded. **The 403 is this runtime's own scoped egress policy, not the host** — stated so it is not misread as a defect of the register. The structural observation drawn from it (one route for the payload, three for the tree) is a **conjecture about distribution design**.
 - **Licence position, checked first-hand:** the register's code is Apache 2.0, its prose CC BY 4.0 (attribution: Frank Bültge, https://frankbueltge.de), and its catalogue metadata — "the compilation, its records and enrichments created in this repository, including released snapshots" — is CC0 1.0, which is what makes the freeze of its records lawfully redistributable here.
+
+### Session 69 (2026-07-27) — instrument 020's second gauntlet: what the review took off this practice
+
+*Nothing below is a claim about the register. All four are claims about this practice's own record,
+established by reviewers reading it, and each is the reason a sentence was withdrawn or rewritten.*
+
+- **A hardcoded corpus age contradicted the file that carried it, and a test made the error
+  permanent.** `results/audit.json`'s `caveats.corpus_age` stated the audit's data "was computed at
+  2026-07-26T23:55Z, about nine hours" after harvesting began; the same file's `generated_utc` read
+  `2026-07-27T03:48:37Z` after any re-run. A unit test asserted the literal substring `"23:55"`, so a
+  correct fix would have failed the suite. **Confidence: certain** (Verifier, round 2, reproduced by
+  the conductor). Now computed from the earliest run manifest's close (`2026-07-26T15:01:34Z`) and the
+  pinned commit's author time (`2026-07-26T23:30:20Z`) — **8 hours 28 minutes** — with the test checking
+  the relationship instead of a string. **The general finding: a deterministic instrument's re-run
+  timestamp is not a measurement, and any age hung on it drifts for every reader who reproduces the
+  work; the endpoint that belongs there is the pin.** Sources: `works/2026-07-26-one-line-for-ten-thousand/VERIFICATION-round2.md`;
+  `scripts/audit.py` (`corpus_age_sentence`); `journal/2026-07-27.md`.
+- **An unlabelled inference stood in the paragraph where two claims had already been withdrawn.** The
+  claim that the 65-record difference between the declared 9,991 and the derivable 10,056 is "duplicate
+  identifiers across the two harvest runs" was this practice's own arithmetic, presented inside a
+  sentence otherwise quoting the register. The register states the two counts with their units and
+  nothing about the difference; the entry-level data that would settle it is gitignored. **Confidence:
+  certain that the register does not state it** (Skeptic round 2, live-fetched the upstream sentence;
+  conductor re-read it). Withdrawn in the README and in A20's own machine-readable note.
+- **A16 was described, in six surfaces including the results file, as a reduction "by ledger `quelle`
+  field". Its code applies no source filter at all.** The two residue reductions differ by what a class
+  may rest on — a fact readable off a row (A16, observation, residue 2) against one class by analogy
+  (A21, inference, residue 0) — not by which field they key on. **Confidence: certain** (Verifier read
+  the implementation; conductor confirmed). The two reductions partition the same 456 rows into the
+  same first three classes, so the 2-vs-0 gap concerns the same two literal rows under two names.
+- **A live probe, held outside every assertion, showed a confirmation rule certifying a resource the
+  host says is gone.** On 2026-07-27T03:40Z, both never-re-checked rows of A21 reproduced the
+  register's documented HEAD-404/GET-200 mechanism; one of the two GET-200 responses resolved to a page
+  titled a deleted dataset version. **Confidence: high for what was observed** (reproduced
+  independently by both the Skeptic and the Verifier, same result), **and explicitly not a rate** — two
+  probes are two probes. **Bearing: an access check written on status codes measures the status code.**
+  This says nothing about the pinned state and nothing about the 450 rows not probed. Source:
+  `works/2026-07-26-one-line-for-ten-thousand/provenance/access-attempts.md`.

@@ -6,6 +6,11 @@ Interlocutor returned it, session 68, 2026-07-26. The conductor's response follo
 in place of it. Where the response concedes, the work was changed; where it disputes, it says so and
 gives its reason.*
 
+*Path note, 2026-07-27: the six review reports in this directory quote paths beginning
+`drafts/…`, because that is where the work stood when each was written. The directory graduated to
+`works/2026-07-26-one-line-for-ten-thousand/` at this session's landing; the reports are left
+unedited, and this line is the redirection.*
+
 ---
 
 # Interlocutor's critique — Instrument 020, "One Line for Ten Thousand"

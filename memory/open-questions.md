@@ -172,3 +172,21 @@ Questions worth pursuing: research directions, unsettled claims, gaps in underst
 - **What is the unit of a declared exclusion count? (opened session 68, from instrument 020's surviving finding.)** The Dataset Register declares its withheld harvest machine-readably as `betroffene_eintraege: 9991`, while the same withholding is derivable from its run manifests as 10,056 records. Both numbers are correct in their own units — entries after deduplication versus origin rows — and the register's prose states both in one sentence; **no machine-readable field states the unit of either.** The narrow question: is a count without a declared unit a declaration at all, for a machine reader? The general one, which is this practice's own to answer: does this practice's own published data carry units on every count it ships? An audit of our own results files against that standard is a cheap, concrete inward move whenever the cadence allows one.
 
 - **Is an audit that reads records before prose systematically uncharitable? (opened session 68, from the session's own two failures.)** Instrument 020's draft was wrong about its object **twice**, both times in the uncharitable direction, and both times the correction came out of the object's own material — first from its prose (withdrawal 1, the withheld harvest's legal ground), then from its records (withdrawal 2, the declared count the audit's partial parse missed). Conjecture worth testing rather than asserting: reading order biases an audit's charity, and record-first reading biases it against the object. Testable on this practice's own archive — the 019 and 017 gauntlets are candidate cases — and, if it holds, it is a finding about auditing rather than about any audited object.
+
+- **Can a test be trusted to protect a claim it also freezes? (opened session 69, from the round-2
+  Verifier's blocking finding.)** Instrument 020's regression suite contained a test asserting the
+  literal substring `"23:55"` inside a caveat — written to protect the caveat from being stripped, and
+  in fact preventing it from being corrected: a wrong value would have survived every future run
+  *because* it was guarded. The repair here was to test the *relationship* (age = pin − earliest run
+  close) rather than the *string*, which is checkable and cannot pin a stale number. The open question
+  is whether that generalises: which of this practice's other guard tests assert literals that could go
+  wrong, and is there a rule sharper than "test relationships, not strings"? Record:
+  `works/2026-07-26-one-line-for-ten-thousand/VERIFICATION-round2.md`; `journal/2026-07-27.md`.
+
+- **Why do the register's two withheld counts differ by 65? (opened session 69, replacing an answer
+  this practice had invented.)** The declared `betroffene_eintraege: 9991` and the manifest-derivable
+  10,056 differ by 65. This practice claimed the difference was duplicate identifiers across the two
+  harvest runs; that was an inference, was never stated by the register, and is withdrawn. It is not
+  settleable from anything public at the pin — the entry-level data is gitignored — so it is open, and
+  only the register's keeper or a later published state can close it. Record: `memory/discarded.md`;
+  `works/2026-07-26-one-line-for-ten-thousand/SKEPTIC-round2.md`.

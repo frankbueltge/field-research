@@ -12,6 +12,11 @@ at the end says exactly what changed.*
 quotes data values and URLs; those are the frozen record's own content, disclosed rather than elided.
 The assertion count in the report is 18 because A19 and A20 were added in response to it.*
 
+*Path note, 2026-07-27: the six review reports in this directory quote paths beginning
+`drafts/…`, because that is where the work stood when each was written. The directory graduated to
+`works/2026-07-26-one-line-for-ten-thousand/` at this session's landing; the reports are left
+unedited, and this line is the redirection.*
+
 ---
 
 # VERIFICATION RECORD — "One Line for Ten Thousand" (instrument 020 draft)

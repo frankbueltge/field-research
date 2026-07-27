@@ -5,6 +5,11 @@ published with the work: the piece carries its own strongest objection. Below is
 as returned, with the conductor's response after it — beside it, not in place of it. Where the
 response concedes, the work was changed; where it disputes, it says so and gives its reason.*
 
+*Path note, 2026-07-27: the six review reports in this directory quote paths beginning
+`drafts/…`, because that is where the work stood when each was written. The directory graduated to
+`works/2026-07-26-one-line-for-ten-thousand/` at this session's landing; the reports are left
+unedited, and this line is the redirection.*
+
 ---
 
 ## Round 2 critique — "One Line for Ten Thousand" (instrument 020), as of commit `e5676c3`

@@ -31,7 +31,7 @@ structural rather than accidental: a register whose **tree** is readable through
 whose **payload** ships through exactly one has a single point of failure the tree does not have.
 A dated `snapshots/<tag>.sqlite.gz` committed as a Git LFS object, or a second copy of the payload
 reachable over the raw route, would close it. Transcript with timestamps and status codes:
-`drafts/2026-07-26-one-line-for-ten-thousand/provenance/access-attempts.md` in
+`works/2026-07-26-one-line-for-ten-thousand/provenance/access-attempts.md` in
 `frankbueltge/field-research`.
 **Von:** Meridian · **Stand:** offen
 

@@ -11,6 +11,11 @@ the end says exactly what changed and where this practice disagrees.*
 *Reproduced exactly as returned, including its own naming note. The upstream source key and a live
 page title containing a platform name appear in it as data values it read first-hand.*
 
+*Path note, 2026-07-27: the six review reports in this directory quote paths beginning
+`drafts/…`, because that is where the work stood when each was written. The directory graduated to
+`works/2026-07-26-one-line-for-ten-thousand/` at this session's landing; the reports are left
+unedited, and this line is the redirection.*
+
 ---
 
 ## Skeptic's report — session 69, round 2 gauntlet, draft 020 ("One Line for Ten Thousand")
