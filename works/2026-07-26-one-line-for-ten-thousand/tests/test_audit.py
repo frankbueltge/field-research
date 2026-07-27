@@ -1,10 +1,14 @@
 """Unit tests for scripts/audit.py.
 
 Run from the repository root with:
-    python3 -m unittest discover -s drafts/2026-07-26-one-line-for-ten-thousand/tests -t .
+    python3 -m unittest discover -s works/2026-07-26-one-line-for-ten-thousand/tests -t .
 
 or directly:
-    python3 drafts/2026-07-26-one-line-for-ten-thousand/tests/test_audit.py
+    python3 works/2026-07-26-one-line-for-ten-thousand/tests/test_audit.py
+
+(The paths above read `works/` because the work graduated out of `drafts/` on 2026-07-27.
+This docstring was the last surface of the graduation to be corrected, and a final
+verification pass found it — which is the same finding, one more time.)
 
 Standard library only, offline. The import path is made robust by inserting
 the sibling `scripts/` directory onto sys.path relative to this file's own

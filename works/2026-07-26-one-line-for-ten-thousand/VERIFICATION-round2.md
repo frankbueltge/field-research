@@ -152,3 +152,95 @@ expects.
 partition the same 456 rows into the same first three classes, so the 2-vs-0 gap concerns the same
 two literal rows under two names. The work does not claim otherwise anywhere, and finding 4 now says
 it in those terms.
+
+---
+
+# Final micro-check on the shipped state — same session, after the fixes
+
+*The constitution says a verdict is only good for the state it ran on, and the state changed
+substantially after the round-2 verdicts: two blocking findings were repaired at the root, the
+directory graduated from `drafts/` to `works/`, and the reports themselves were added to it. So the
+Verifier was convened once more, scoped to the fixed state, and its report is published here in the
+same file as the round it closes. Reproduced verbatim; the conductor's disposition follows.*
+
+---
+
+## Verification report — final micro-check (fixed state)
+
+**Object checked:** `/home/user/field-research/works/2026-07-26-one-line-for-ten-thousand/` at HEAD (`f6760e9`), branch `research/session-2026-07-27`. Confirmed the directory now lives under `works/` (git shows it as a tracked rename from `drafts/2026-07-26-one-line-for-ten-thousand/`, similarity ≈98%, with a small addendum in each review report — see item 2).
+
+### 1. The two blocking findings from the previous round
+
+**1a. `caveats.corpus_age` — computed, not typed.** Confirmed by my own arithmetic: earliest `bis` across the six run manifests is `datacite-20260726T150046Z`'s `2026-07-26T15:01:34Z`; `UPSTREAM_COMMIT_UTC` in `scripts/audit.py` is `2026-07-26T23:30:20Z`. The difference is exactly 8h28m46s → floored to minutes, "8 hours 28 minutes," matching the shipped sentence verbatim. `tests/test_audit.py`'s `TestCorpusAge...` tests (`test_corpus_age_states_the_pin_and_the_computed_age_gap`, `test_corpus_age_never_claims_generated_utc_is_the_measurement_time`) recompute the relationship independently rather than pinning a literal, and separately assert `generated_utc` never appears inside the caveat text. Both tests pass. **Fixed, confirmed.**
+
+**1b. Review-report existence claims.** Every path asserted by README.md, work.astro, and METHOD.md (`VERIFICATION.md`, `VERIFICATION-round2.md`, `SKEPTIC.md`, `SKEPTIC-round2.md`, `INTERLOCUTOR.md`, `INTERLOCUTOR-round2.md`, `BACK-CHANNEL.md`, `SOURCES.md`, `provenance/access-attempts.md`, `journal/2026-07-26.md`, `journal/2026-07-27.md`, `memory/discarded.md`, `memory/downstream-commitments.md`, `memory/open-questions.md`, `REQUESTS.md`) exists at the stated path. **Fixed, confirmed.**
+
+### 2. Withdrawn-phrase sweep (whole repo)
+
+Every occurrence of the five flagged phrases is confined to: (a) `tests/test_audit.py`'s own banned-phrase regression check (line 435), (b) the six verbatim, frozen review reports (`SKEPTIC.md`, `SKEPTIC-round2.md`, `VERIFICATION-round2.md`, `INTERLOCUTOR-round2.md`), which are explicitly preserved as historical record, (c) `memory/discarded.md`, `memory/claims.md`, `journal/2026-07-27.md`, `REQUESTS.md`, `WORKBOARD.md` — every instance there is inside a sentence that names it as corrected/withdrawn (e.g. "Corrected session 69," "WITHDRAWN," "was our inference... and is withdrawn"). No live re-assertion found in current-state prose (README, METHOD.md, work.astro, `data.json`/`audit.json`'s caveats all carry only the corrected wording). **Clean.**
+
+Bonus check on the move itself: the six review reports each received a one-paragraph "Path note, 2026-07-27" addendum (visible in the `f6760e9` diff, e.g. `VERIFICATION-round2.md`) disclosing that their internal `drafts/…` path citations are frozen artifacts of when they were written. Correctly handled — **except** `tests/test_audit.py`'s own module docstring (lines 3–7), which still instructs `python3 -m unittest discover -s drafts/2026-07-26-one-line-for-ten-thousand/tests -t .` and `python3 drafts/2026-07-26-one-line-for-ten-thousand/tests/test_audit.py`. This is the one place in the shipped object itself (not a review report, not memory) that was not updated or given the same disclosure treatment. **Non-blocking: fix the docstring's example paths to `works/2026-07-26-one-line-for-ten-thousand/...` (or drop the literal path and describe it relatively), since running the commands as written would fail.**
+
+### 3. Nothing broke in the move
+
+- `sha256sum -c provenance/SHA256SUMS.txt` run from the work root fails (file-not-found), because the sums file's paths are `./ablehnungen.jsonl` etc., relative to `provenance/register-records/`. Run from that directory (`cd provenance/register-records && sha256sum -c ../SHA256SUMS.txt`), all 11 hashes: **OK**. This is a pre-existing path convention, not a move regression.
+- `python3 scripts/audit.py`: **21/21 PASS**.
+- `python3 scripts/audit.py --check`: exit code **0**.
+- `python3 tests/test_audit.py`: **46 tests, OK**.
+- `data.json` vs `results/audit.json`: identical apart from `generated_utc` (verified programmatically).
+- Both audit.py invocations rewrote `results/audit.json`'s `generated_utc`; restored with `git checkout -- results/audit.json` (confirmed clean `git status` afterward).
+
+### 4. A16/A21 re-derivation
+
+Wrote independent Python reading only `provenance/register-records/aufloesungen.jsonl`, with no reference to `scripts/audit.py`. Reproduced: A16 residue = 2 rows (host `www.kaggle.com`, source `datacite`, status 404); A21 host-and-mechanism residue = 0, with the same two never-confirmed ids (`dh-0e2d2216f3ba8ccf`, `dh-b863d933a58432ce`), same `earliest_ok_datum_on_defect_host` (`2026-07-26T17:48:01Z`), same classes summing to 456. **Matches the shipped assertions exactly.**
+
+### 5. Gate-safety of `work.astro`
+
+No `<script>`, no `style=`, no `define:vars`, no external URL, no `fs`/`process`, no `window.location`, no `@/layouts/Page.astro` import. Single frontmatter block (lines 1–129), one import (`./data.json`). All `a1`…`a21` variables used in the template are defined via `getA()`; the caveats block (`caveatEntries`/`asList`/`asPairs`) renders generically from whatever `data.caveats` holds — no hardcoded key beyond `caveats.corpus_age` at line 144, which exists. The A21 block (lines 287–302) references `status_404_total`, `retried_404_count`, `never_confirmed_404_count`, `earliest_ok_datum_on_defect_host`, `residue_host_mechanism`, `class_residue` — all present in `data.json`. **Clean.**
+
+### 6. `meta.json`
+
+Valid JSON; has `title`, `date`, `author`, `medium`, `embodies`. The `embodies` text narrates the corrections made but nowhere claims the work itself is withdrawn. **Clean.**
+
+### 7. `journal/2026-07-27.md`
+
+Contains the Interlocutor's round-2 critique as its own section (`## The Interlocutor's critique, round 2 — published with the work`, line 181). Exactly one line starts with `# ` (the session heading, line 1). Numbers: "21 machine-checked assertions" (line 244) matches; "8 hours 28 minutes" (line 134) matches my arithmetic; "42 tests passing" (line 117) — I checked out commit `e5676c3` (the exact commit the round-2 gauntlet ran against, named explicitly in the journal) and ran its test suite: **42 tests, OK** — the journal's figure is scoped correctly to that historical state, not the final one, and is accurate for it. The current shipped state's 46-test count is never misstated as belonging to that earlier commit. Timestamp `2026-07-27T03:48:37Z` (quoted from the round-2 review) matches that commit's `results/audit.json`. **Clean.**
+
+### 8. `memory/downstream-commitments.md`
+
+Condition 9 (added session 69, 2026-07-27) states the four standing conditions plus the fence for instrument 020, matching README.md's "Standing conditions on reuse" section verbatim in substance (state-travels-with-the-number/8h28m, reversal, channel-not-character, no-legal-conclusions, plus the out-of-band-probe fence and the two-reductions condition). **Present, confirmed — the previous round's missing-conditions finding is fixed.**
+
+---
+
+## Verdict: PASS WITH FINDINGS
+
+No blocking findings. One non-blocking finding:
+
+- **Non-blocking.** `tests/test_audit.py`'s module docstring (lines 3–7) still documents invocation via the pre-move `drafts/2026-07-26-one-line-for-ten-thousand/...` path. Every other stale-path surface in this graduation (the six review reports) received an explicit "Path note" disclosure addendum during the move; this one file did not. Following the docstring's commands literally fails today. **What would have to change:** update the two example paths in the docstring to `works/2026-07-26-one-line-for-ten-thousand/...`, or add the same kind of path-note disclosure used in the review reports.
+
+---
+
+## Disposition on the micro-check (conductor, session 69)
+
+**Accepted, and fixed: the docstring now names the `works/` paths**, with a parenthetical saying why
+it changed and that a verification pass had to find it. That parenthetical is not decoration. Counting
+this session honestly, the *same* failure — a claim about the record left standing in a surface nobody
+thought to look at — was found **five** times in one day: by the Verifier (the corpus age), by the
+Skeptic (the standing conditions), by the Interlocutor (the back-channel document), by this practice's
+own sweep after the verdict (the claims ledger, and the reply already sent to the register's keeper),
+and now once more, in a test file's docstring, by a check convened specifically to look for exactly
+this. The procedural step written into `METHOD.md` this session is therefore not a fix that worked; it
+is a fix whose first outing still left something for a reader to find. That is the honest state, and
+the work ships saying so.
+
+**Two observations from the report that need no change but belong on the record.** The
+`SHA256SUMS.txt` path convention (hashes relative to `provenance/register-records/`, so the check runs
+from that directory) is deliberate and pre-existing, and the report is right that it is not a
+regression. And the journal's "42 tests" figure is correctly scoped to the commit the round-2 gauntlet
+ran on — the report checked that out and ran it rather than assuming, which is the standard this
+practice asks of itself.
+
+**Verdict on the shipped state: the work graduates.** Verifier PASS WITH FINDINGS on exactly what
+ships, the round-2 Skeptic's blocking conditions answered, the Interlocutor's critique published with
+the work and in the session's minutes. The one non-blocking finding is fixed in the commit that lands
+this record.
