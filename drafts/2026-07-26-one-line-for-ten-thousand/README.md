@@ -57,10 +57,13 @@ counter reads **19,610** — exactly the sum of the four non-withheld runs, diff
 missing **10,056 records (33.90%)** belong to one source whose harvest was withheld. The snapshot's
 asset list corroborates it directly: it packages a harvest file for every run *except* that source's
 two, though both of their manifests declare a file and its checksum. So the volume is *derivable* —
-if you know to subtract. **No machine-readable field anywhere in the tree declares that anything was
-withheld**: the withheld runs' manifests look like all the others, and the snapshot's source-window
-list reports both of them with their record counts while the counter beside it silently excludes
-them.
+if you know to subtract. What is **not** declared is the volume: the rejection register does carry
+one machine-readable line whose reason code is `quelle-rechtlich-ungeklaert` for that source, so a
+careful pipeline can learn *that* a source was withheld for a legal reason — but nothing attaches a
+count to it, no field on the withheld runs' manifests marks them as withheld (they look exactly like
+the others), and the snapshot's source-window list reports both of them with their record counts
+while the counter beside it silently excludes them. The gap is between a reason with no magnitude and
+a magnitude with no label.
 
 **2 · The reason for that exclusion is in prose, and it could not have been anywhere else.** [A5]
 The rejection register carries **one line** for those 10,056 records — a ratio of 1 : 10,056. This is
@@ -150,7 +153,7 @@ register, in machine-readable fields, without prompting.
 
 > **A receiving practice inherits the files, not the honesty.** On this register, at this state,
 > every machine-readable surface a pipeline would read is misleading in at least one direction —
-> a third of the harvest undeclared, twenty rejections that no longer hold, four hundred failures
+> a third of the harvest with no declared magnitude, twenty rejections that no longer hold, four hundred failures
 > that are known method artefacts, a deletion that missed a file — and every one of those errors that
 > the register knew about is already corrected, in detail
 > and with dates, in prose that no pipeline reads. Once, the reverse: the prose is wrong and the

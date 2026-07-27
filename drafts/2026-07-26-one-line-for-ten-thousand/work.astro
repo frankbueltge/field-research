@@ -56,6 +56,7 @@ const a13 = getA('A13')
 const a14 = getA('A14')
 const a15 = getA('A15')
 const a16 = getA('A16')
+const a17 = getA('A17')
 const a18 = getA('A18')
 
 // --- Finding 4 / bar 1: failure decomposition of A16, four disjoint classes over 456 rows.
@@ -71,14 +72,24 @@ const failClasses = a16
 const failTotal = a16c.failures_total ?? 0
 const barW = 560 // svg coordinate width for the proportional bars
 
-// --- Finding 5 / reversal: host split of the 53 HTTP-403 rows (A16.class_403_hosts),
-// checked against A18 if the extending build has added it by now.
-const hostSplit: [string, number][] = a16c.class_403_hosts
-  ? (Object.entries(a16c.class_403_hosts) as [string, number][]).sort((x, y) => y[1] - x[1])
-  : []
-const hostSplitTotal = hostSplit.reduce((s, [, v]) => s + v, 0)
+// --- Finding 5 / reversal: host split of the HTTP-403 rows. A18 is the purpose-built
+// assertion for this question; A16.class_403_hosts (present regardless) is the fallback
+// so the block still renders correctly if A18 is ever absent from the data.
+const a18c = (a18?.computed ?? {}) as Record<string, any>
+const hostSplitSource: Record<string, number> = a18c.host_distribution ?? a16c.class_403_hosts ?? {}
+const hostSplit: [string, number][] = (Object.entries(hostSplitSource) as [string, number][]).sort(
+  (x, y) => y[1] - x[1]
+)
+const hostSplitTotal: number = a18c.count_403 ?? hostSplit.reduce((s, [, v]) => s + v, 0)
 const topHost = hostSplit[0]
-const topHostShare = topHost && hostSplitTotal ? topHost[1] / hostSplitTotal : null
+const topHostShare: number | null =
+  a18c.top_host_share ?? (topHost && hostSplitTotal ? topHost[1] / hostSplitTotal : null)
+const reversalRef = a18 ? 'A18' : 'A16'
+
+// --- Finding 6: the third file the prose-described deletion did not reach.
+const a17c = (a17?.computed ?? {}) as Record<string, any>
+const ledgerKeyUnion: string[] = a17c.ledger_key_union ?? []
+const descriptiveFields: string[] = a17c.descriptive_fields_present ?? []
 
 // Precomputed stacked-bar segments (cumulative x offsets) for the host-split bar,
 // so the template only reads plain numbers rather than reducing inline.
@@ -152,7 +163,7 @@ const tableRows = assertions
   </section>
 
   <section class="findings">
-    <h2>Five reconciliations</h2>
+    <h2>Six reconciliations</h2>
 
     <article class="finding">
       <h3><span class="fnum">1</span> A third of the harvest is derivable but nowhere declared.</h3>
@@ -277,10 +288,9 @@ const tableRows = assertions
               {hostSplit.map(([h, c], i) => (
                 <>{i > 0 ? ', ' : ' '}<strong>{h}</strong> {num(c)}</>
               ))}
-              — <strong>{num(hostSplitTotal)}</strong> rows over <strong>{hostSplit.length}</strong> distinct hosts <span class="ref">[A16{a18 ? ', A18' : ''}]</span>.
+              — <strong>{num(hostSplitTotal)}</strong> rows over <strong>{hostSplit.length}</strong> distinct hosts <span class="ref">[{reversalRef}]</span>.
             </li>
-            <li>The largest host accounts for {topHostShare !== null ? pct(topHostShare) : '—'} of the 403s, not 100% <span class="ref">[A16]</span>.</li>
-            {a18 && <li>Assertion A18, added by this ledger's extension, checks this split directly against the procedural note: <code>{JSON.stringify(a18.computed)}</code>, verdict <strong>{a18.verdict}</strong>.</li>}
+            <li>The largest host, <strong>{topHost ? topHost[0] : '—'}</strong>, accounts for {topHostShare !== null ? pct(topHostShare) : '—'} of the 403s, not 100% <span class="ref">[{reversalRef}]</span>.</li>
           </ul>
         </div>
         <div class="col prose">
@@ -291,11 +301,11 @@ const tableRows = assertions
           is exactly right. The clause that follows it is not: the ledger shows those 53 rows spread
           over five hosts, not one. Here the machine-readable surface is correct and the prose is
           wrong — the one place in this ledger where the reversal runs the other way, and it is
-          reported at the same weight as the four findings above it, not as a footnote.</p>
+          reported at the same weight as the findings either side of it, not as a footnote.</p>
         </div>
       </div>
       <figure class="bar-figure">
-        <figcaption>Host split of the {num(hostSplitTotal)} HTTP-403 rows <span class="ref">[A16]</span> — the prose names one host for all of them</figcaption>
+        <figcaption>Host split of the {num(hostSplitTotal)} HTTP-403 rows <span class="ref">[{reversalRef}]</span> — the prose names one host for all of them</figcaption>
         <svg viewBox={`0 0 ${barW} 22`} role="img" aria-label="Host split of HTTP 403 rows">
           <rect x="0" y="0" width={barW} height="20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.35" />
           {hostSplitSegments.map((seg) => (
@@ -315,6 +325,30 @@ const tableRows = assertions
           {hostSplit.map(([h, c]) => `${h}: ${num(c)} (${pct(hostSplitTotal ? c / hostSplitTotal : null)})`).join(' · ')}
         </p>
       </figure>
+    </article>
+
+    <article class="finding">
+      <h3><span class="fnum">6</span> The deletion the prose describes did not reach a third file.</h3>
+      <div class="cols">
+        <div class="col records">
+          <h4>What the records show</h4>
+          <ul class="figs">
+            <li>The resolution ledger still holds <strong>{num(a17c.rows)}</strong> rows for the withheld source — <strong>{num(a17c.distinct_quell_id)}</strong> distinct source identifiers and <strong>{num(a17c.distinct_url)}</strong> distinct URLs, {pct((a13?.computed as any)?.withheld_share_of_rows)} of the whole ledger <span class="ref">[A17, A13]</span>.</li>
+            <li>The union of keys present anywhere in that file is exactly <code>{ledgerKeyUnion.join(', ')}</code>; of those, <strong>{num(descriptiveFields.length)}</strong> is a title, description, or similar descriptive field <span class="ref">[A17]</span>.</li>
+          </ul>
+        </div>
+        <div class="col prose">
+          <h4>What the prose says</h4>
+          <p>The register's own account of the withholding names two files from which the withheld
+          source's per-record identifiers were deleted: the rejection register and the origin table.
+          The resolution ledger is a third file, and it is not one of the two named. This ledger
+          states only what is present in that third file and draws no legal conclusion from it —
+          whether an identifier is itself the kind of content the withheld source's terms restrict is
+          a distinction the register's own reasoning turns on, and it is not this practice's to
+          settle. It is recorded because a keeper who cleaned two files would want to know about the
+          third.</p>
+        </div>
+      </div>
     </article>
   </section>
 
@@ -408,7 +442,7 @@ const tableRows = assertions
     <p>
       This is a channel finding, not a character finding: the subject is what a machine reader can
       and cannot see on this register's committed surfaces, at commit <code>{upstream.commit}</code>,
-      one day into its harvest. This work's own hostile critique is published with it, in full,
+      within its first hours of harvesting. This work's own hostile critique is published with it, in full,
       together with the response beside it rather than in place of it, in the shipping session's
       journal entry — <code>journal/2026-07-26.md</code>, session 68.
     </p>
