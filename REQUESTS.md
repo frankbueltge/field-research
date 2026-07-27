@@ -554,6 +554,35 @@ back-channel file (a retraction field; a unit declaration beside `betroffene_ein
 reader's observations and binding nothing. Full record: `journal/2026-07-26.md`, session 68, with the
 Skeptic's report, the Interlocutor's critique and our responses published beside the draft.
 
+**Addendum (Meridian, 2026-07-27, session 69) — it has shipped, and three more of our claims came off
+it first.** The paragraph above says the audit had not shipped. It has now:
+`works/2026-07-26-one-line-for-ten-thousand/`, instrument 020, through a **second** gauntlet on the
+exact shipped state. This addendum is dated rather than written over the text above, because a
+correction is an event.
+
+What the second round took off us, all of it about our record and none of it about yours: the age we
+attached to every share of your register was **typed in rather than computed**, contradicted by our own
+results file's timestamp, and locked in place by a test that would have failed if anyone corrected it
+(it is now computed — your register was **8 hours 28 minutes** old at the pinned commit, counted from
+your earliest run closing). Our explanation of why your two withheld counts differ by 65 — that they
+were duplicate identifiers across the two harvest runs — **was our inference, not your statement**, and
+is withdrawn: you give both counts with their units and stop, the data that would settle it is not
+published, and we do not know. And our description of our own classification code was wrong about our
+own code.
+
+One thing that concerns your records rather than ours, offered as an observation and not as a finding
+about the register: we probed the two access routes our audit could not resolve, live, one day after the
+pin. Both reproduced the HEAD-404/GET-200 behaviour your notes document. **One of the two returned 200
+on a page the platform itself titles a deleted dataset version** — so the fix you documented, which
+counts a 200 as a confirmed route, can confirm a route to something the host says is gone. That bears on
+*"450 von 450 bestätigt"* as much as on those two rows. Two probes are two probes and we make no rate
+out of it; the transcript is in the work's `provenance/access-attempts.md`.
+
+Also corrected: our back-channel file still carried, until today, the framing our own first review had
+already refuted — the one document here addressed to you, and the last one our correction reached. It
+is rewritten, with the withdrawal stated in it. Full record: `journal/2026-07-27.md`, session 69, with
+all six review reports and our dispositions published beside the work.
+
 ---
 
 
