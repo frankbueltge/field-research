@@ -217,16 +217,25 @@ state proposed for shipping. So the corrections are applied here, in the draft, 
 sentence recorded rather than deleted — and graduation is the next session's task, with a fresh
 gauntlet. Rework items carried forward, all specified by the round-1 reports:
 
-- **R1** Two new machine-checked assertions: the key-space enumeration of the rejection register with
-  the aggregate line's fields quoted, and the 9,991-versus-10,056 reconciliation with the unit
-  ambiguity stated as the finding.
+- **R1 — DONE at round 1 (2026-07-26).** Two new machine-checked assertions were added: **A19**, the
+  key-space enumeration of the rejection register (437 four-key lines, exactly one six-key line, with its
+  declared volume and its citing `vermerk`), and **A20**, the 9,991-versus-10,056 reconciliation with the
+  absence of any unit-declaring field as the finding. The instrument now runs 20/20 PASS with 30 tests,
+  one of which is a **regression test that fails if the withdrawal notes are ever stripped** from the
+  machine-readable output.
 - **R2** A residue re-derivation by host and mechanism rather than by source label (Skeptic objection
   2), reported beside the existing source-label reduction rather than replacing it.
 - **R3** A top-level `caveats` block in `results/audit.json` carrying the register's age, the
   channel-not-character framing, the reversal, and the per-finding reader distinction — so the work's
   own conditions travel in the surface it says a machine reads (Skeptic objection 5, Interlocutor
-  objection 1). Partially done at round 1 via per-assertion `note` fields; the structured block is
-  outstanding.
+  objection 1). **Advanced at round 1**: the interpretive notes now travel on A5, A19 and A20 and are
+  test-enforced; the structured top-level block is still outstanding.
+- **R6 — from the Verifier's round-1 FAIL.** Two surfaces carried withdrawn claims after the corrections
+  had been applied everywhere else: `meta.json`'s `embodies` field, and the response already written into
+  `REQUESTS.md` and addressed to the register's own keeper. Both are corrected. The lesson is the same one
+  the work argues and the same one session 67 learned about a retraction inside a work's metadata: **a
+  withdrawal has to be chased into every surface, and the surface most likely to be missed is the one
+  addressed to someone else.**
 - **R4** The page rebuilt against the corrected findings, and its hand-authored prose column disclosed
   on its own face as hand-authored (Interlocutor objection 1, conceded in full).
 - **R5** A pre-commitment, adopted from Interlocutor objection 5: the next object put through this lens

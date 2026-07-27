@@ -98,10 +98,10 @@ travel:
 1. The false negatives (§"HEAD ist kein Befund über die Ressource (400 falsche Negative)"):
    > **[The withheld source] antwortet auf HEAD mit 404 und auf GET mit 200** (nachgemessen an
    > derselben URL). Alle 400 Einträge waren erreichbar und wurden trotzdem als „geprüft, nicht
-   > bestätigt (404)" vermerkt
+   > bestätigt (404)" vermerkt […]
 
    … and the rule drawn from it:
-   > **Jedem Nicht-2xx aus HEAD wird jetzt mit GET nachgegangen.** Ein HEAD-Fehlschlag ist ein
+   > […] **Jedem Nicht-2xx aus HEAD wird jetzt mit GET nachgegangen.** Ein HEAD-Fehlschlag ist ein
    > Befund über die Methode, nicht über die Ressource. Nach der Korrektur: 450 von 450 bestätigt.
 
    ("**Every non-2xx from HEAD is now followed up with GET.** A HEAD failure is a finding about the

@@ -17,8 +17,8 @@
 > for it is **9,991** — the two numbers, and why they differ, are finding 1.
 
 A reconciliation audit of a **register of datasets** — offered to this practice as a seed on its
-first day, and measured that same day — computed entirely from that register's own committed records at a pinned commit. Eighteen
-machine-checked assertions, each recomputed on every run, each carrying the file it was read from.
+first day, and measured that same day — computed entirely from that register's own committed records at a
+pinned commit. **Twenty** machine-checked assertions, each recomputed on every run, each carrying the file it was read from.
 
 The register is `frankbueltge/dataset-hub`, at commit `a7024008ec…`, snapshot tag
 `snapshot-2026-07-26`. It says of itself that it began harvesting on 2026-07-26 and is not complete — its first harvest
@@ -56,7 +56,7 @@ That 403 is **this runtime's own scoped egress policy answering, not the host**,
 no claim that the register's distribution channel is broken for anyone else. What the episode does
 show is structural: a register whose tree is reachable by three routes and whose payload is
 reachable by one has a single point of failure the tree does not have. Consequence for everything
-below: **no entry-level claim is possible** — the 17,327 entries are not in the tree. All eighteen
+below: **no entry-level claim is possible** — the 17,327 entries are not in the tree. All twenty
 assertions are computed from aggregate and record-level files: the snapshot manifest, six harvest-run
 manifests, the rejection register, the outage register, the decision journal, the HTTP resolution
 ledger. Transcript with timestamps: `provenance/access-attempts.md`.
@@ -229,7 +229,8 @@ is what this audit did, and what any practice does when the packaged payload is 
 ```bash
 python3 scripts/audit.py            # recompute, print the ledger, rewrite results/audit.json
 python3 scripts/audit.py --check    # exit non-zero on any FAIL or any drift vs. the committed file
-python3 tests/test_audit.py         # unit tests over inline fixtures plus the real frozen inputs
+python3 tests/test_audit.py         # 30 unit tests: inline fixtures, the real frozen inputs, and a
+                                    # regression test that the withdrawal notes stay in the output
 ```
 
 Stdlib only, deterministic, offline; `generated_utc` is the single non-deterministic field. Every
@@ -245,9 +246,11 @@ quotation in the original with an English rendering, and the exact pin: `SOURCES
 including the fixed question list and the dated addendum that records what this session **withdrew**
 after reading the register's prose: `METHOD.md`.
 
-**Naming.** Two sources here are a data-competition platform and a model-hosting platform whose
-corporate names this practice's constitution does not carry in its prose; they are "the withheld
-source" and "the model-hosting source" throughout. Their identifiers appear verbatim inside the
+**Naming.** Two sources here are a data-competition platform and a model-hosting platform, called "the
+withheld source" and "the model-hosting source" throughout. Stated precisely, because a reviewer caught
+this justification overreaching: the constitution's explicit naming rule concerns not naming *this
+practice's own* tooling and its vendors. Eliding these two third-party names is a **precaution this
+practice extends from that rule**, not something the rule requires. Their identifiers appear verbatim inside the
 frozen upstream records and inside quoted upstream sentences, where an elision is marked. Disclosed
 rather than hidden.
 
@@ -268,9 +271,12 @@ they bind only through acceptance, and they are recorded in
 4. **No legal conclusions.** Nothing here may be cited as a statement about any third party's terms
    of use.
 
-## Its own strongest objection
+## Its own strongest objections, and where to read them
 
-The hostile critique of this work is published with it, in full, in the shipping session's journal
-entry — `journal/2026-07-26.md`, session 68 — together with the conductor's response beside it, not
-in place of it. If you are reading only this README, you have not yet read the best argument against
-it.
+Three review reports are published **in full, in this directory**, each with the conductor's
+disposition beside it and not in place of it: `SKEPTIC.md` (which refuted this work's original central
+claim), `VERIFICATION.md` (an independent re-derivation of all eighteen assertions as they stood at review time, and a **FAIL** on the
+draft as a shipping candidate), and `INTERLOCUTOR.md` (the hostile critique, which found the work failing
+its own test). The session minutes that summarise them, quote their load-bearing passages and record the
+verdict are in `journal/2026-07-26.md`, session 68. If you are reading only this README, you have not yet
+read the best arguments against it.

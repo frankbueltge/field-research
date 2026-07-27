@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-07-26T23:55:50Z",
+  "generated_utc": "2026-07-27T00:17:50Z",
   "upstream": {
     "commit": "a7024008ec337118b2aeebb87065ded83ed23413",
     "tag": "snapshot-2026-07-26",
@@ -191,7 +191,8 @@
         "provenance/register-records/manifeste/kaggle-20260726T164544Z.json",
         "provenance/register-records/manifeste/kaggle-20260726T173348Z.json"
       ],
-      "kind": "observed"
+      "kind": "observed",
+      "note": "This ratio must not be read as under-accounting, and a bare number invited exactly that reading until a hostile review caught it. The single line is deliberate and lawful: the source's terms, as the register reads them, forbid storing significant portions of its content, so 9,991 identifier-bearing lines were deleted and replaced by one aggregate line that keeps the count (see A19) and the reason and drops the identifiers. The register documents the intervention, its ground, and its own earlier wrong version of the entry. What the aggregation costs is the granularity needed to reconcile the two counts (see A20) — not the accounting itself."
     },
     {
       "id": "A6",
@@ -728,12 +729,74 @@
       ],
       "kind": "observed",
       "note": "The register's own procedural note reports these 53 refusals as coming from a single host, verbatim: \"53 von 200 Zugriffswegen antworteten mit HTTP 403, alle vom selben Host (GBIF).\" (\"53 of 200 access routes answered with HTTP 403, all from the same host (GBIF).\") The resolution ledger shows five distinct hosts, not one: www.gbif.org (48), www.openicpsr.org (2), data.nhm.ac.uk (1), www.researchgate.net (1), www.checklistbank.org (1). The count of 53 is correct; the host clause is not. In this one instance the machine-readable surface is right and the prose is not."
+    },
+    {
+      "id": "A19",
+      "question": "Enumerated over its own key space, does the rejection register declare the withheld volume and a reason in machine-readable form?",
+      "computed": {
+        "key_shapes": {
+          "datum, grund, quell_id, quelle": 437,
+          "betroffene_eintraege, datum, grund, quell_id, quelle, vermerk": 1
+        },
+        "distinct_key_shapes": 2,
+        "rows_with_declared_volume": 1,
+        "declared_volume": 9991,
+        "declares_reason_text": true,
+        "vermerk_cites_a_document": true
+      },
+      "expected": {
+        "key_shapes": {
+          "datum, grund, quell_id, quelle": 437,
+          "betroffene_eintraege, datum, grund, quell_id, quelle, vermerk": 1
+        },
+        "distinct_key_shapes": 2,
+        "rows_with_declared_volume": 1,
+        "declared_volume": 9991,
+        "declares_reason_text": true,
+        "vermerk_cites_a_document": true
+      },
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/ablehnungen.jsonl"
+      ],
+      "kind": "observed",
+      "note": "This assertion exists because the audit was wrong here. Its earlier claim that no machine-readable field declares the withholding is WITHDRAWN: 437 of 438 lines carry four keys and exactly one carries six, adding a volume and a free-text reason that cites where the documentation lives. A reader of this file alone learns that a source was withheld, why, and how many entries it affected."
+    },
+    {
+      "id": "A20",
+      "question": "How does the declared withheld volume compare with the volume derivable from the run manifests, and does any machine-readable field state the unit of either?",
+      "computed": {
+        "declared_volume": 9991,
+        "derivable_records": 10056,
+        "gap": 65,
+        "gap_share_of_derivable": 0.006464,
+        "unit_declaring_fields_present": []
+      },
+      "expected": {
+        "declared_volume": 9991,
+        "derivable_records": 10056,
+        "gap": 65,
+        "gap_share_of_derivable": 0.006464,
+        "unit_declaring_fields_present": []
+      },
+      "verdict": "PASS",
+      "evidence": [
+        "provenance/register-records/ablehnungen.jsonl",
+        "provenance/register-records/manifeste/arcgis-20260726T164554Z.json",
+        "provenance/register-records/manifeste/arcgis-20260726T173351Z.json",
+        "provenance/register-records/manifeste/datacite-20260726T150046Z.json",
+        "provenance/register-records/manifeste/huggingface-20260726T164558Z.json",
+        "provenance/register-records/manifeste/kaggle-20260726T164544Z.json",
+        "provenance/register-records/manifeste/kaggle-20260726T173348Z.json"
+      ],
+      "kind": "observed",
+      "note": "Both counts are correct in their own units and neither unit is stated in any machine-readable field. The register's prose gives both in one sentence — 9,991 rejection lines against 10,056 origin rows — which is the same entries-versus-origins distinction its snapshot counters use (17,327 against 19,610); the 65 are duplicate identifiers across the two harvest runs. The reconciliation, not the fact of the withholding, is what a records-only reader cannot do. This is the work's surviving central finding."
     }
   ],
   "verdict": {
-    "pass_count": 18,
+    "pass_count": 20,
     "fail_count": 0,
-    "total": 18,
+    "total": 20,
     "all_pass": true
   }
 }

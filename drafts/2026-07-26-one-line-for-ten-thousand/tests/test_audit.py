@@ -193,7 +193,7 @@ class TestFullAuditOverRealInputs(unittest.TestCase):
         report = audit.build_report()
         self.assertTrue(report["verdict"]["all_pass"], msg=report["verdict"])
         ids = [a["id"] for a in report["assertions"]]
-        expected_ids = [f"A{i}" for i in range(1, 19)]
+        expected_ids = [f"A{i}" for i in range(1, 21)]
         self.assertEqual(ids, expected_ids)
 
     def test_every_assertion_has_required_fields(self):
@@ -229,6 +229,21 @@ class TestFullAuditOverRealInputs(unittest.TestCase):
                             term, lowered,
                             msg=f"assertion {a['id']} field '{key}' names a withheld company: {value!r}",
                         )
+
+
+class WithdrawalNotesTravel(unittest.TestCase):
+    """The gauntlet's lesson, enforced: the corrections must live in the machine-readable
+    output, not only in prose. A future edit that strips these notes fails here."""
+
+    def test_a5_a19_a20_carry_interpretive_notes(self):
+        report = audit.build_report()
+        by_id = {a["id"]: a for a in report["assertions"]}
+        for aid in ("A5", "A19", "A20"):
+            self.assertIn(aid, by_id, f"{aid} missing from the report")
+            note = str(by_id[aid].get("note", ""))
+            self.assertTrue(note.strip(), f"{aid} ships without a note field")
+        self.assertIn("WITHDRAWN", by_id["A19"]["note"])
+        self.assertIn("unit", by_id["A20"]["note"].lower())
 
 
 if __name__ == "__main__":

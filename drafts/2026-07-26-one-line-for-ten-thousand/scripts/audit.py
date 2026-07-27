@@ -311,6 +311,14 @@ def build_assertions(data):
         {"rejection_lines": 1, "harvested_records": 10056, "ratio": "1 : 10056"},
         ablehnungen_evidence + manifeste_evidence,
         "observed",
+        {"note": ("This ratio must not be read as under-accounting, and a bare number invited exactly "
+                  "that reading until a hostile review caught it. The single line is deliberate and "
+                  "lawful: the source's terms, as the register reads them, forbid storing significant "
+                  "portions of its content, so 9,991 identifier-bearing lines were deleted and replaced "
+                  "by one aggregate line that keeps the count (see A19) and the reason and drops the "
+                  "identifiers. The register documents the intervention, its ground, and its own earlier "
+                  "wrong version of the entry. What the aggregation costs is the granularity needed to "
+                  "reconcile the two counts (see A20) — not the accounting itself.")},
     ))
 
     # --- A6: register excess ---------------------------------------------------
@@ -775,6 +783,72 @@ def build_assertions(data):
                   "www.checklistbank.org (1). The count of 53 is correct; the host clause is "
                   "not. In this one instance the machine-readable surface is right and the "
                   "prose is not.")},
+    ))
+
+    # --- A19: the rejection register's own key space, and the aggregate line ---
+    # Added at the session-68 gauntlet, after the Skeptic refuted a claim this audit
+    # had made about what this file does NOT contain while parsing only two of its
+    # fields. The rule the failure produced: a negative claim about a record requires
+    # an enumeration of that record's key space. A17 does this for the resolution
+    # ledger; this assertion does it for the rejection register.
+    key_shapes = {}
+    for row in ablehnungen:
+        key_shapes[tuple(sorted(row.keys()))] = key_shapes.get(tuple(sorted(row.keys())), 0) + 1
+    shapes_readable = {", ".join(k): v for k, v in sorted(key_shapes.items(), key=lambda kv: -kv[1])}
+    aggregate_rows = [r for r in ablehnungen if "betroffene_eintraege" in r]
+    aggregate = aggregate_rows[0] if len(aggregate_rows) == 1 else None
+    assertions.append(make_assertion(
+        "A19",
+        "Enumerated over its own key space, does the rejection register declare the withheld volume and "
+        "a reason in machine-readable form?",
+        {"key_shapes": shapes_readable,
+         "distinct_key_shapes": len(key_shapes),
+         "rows_with_declared_volume": len(aggregate_rows),
+         "declared_volume": aggregate.get("betroffene_eintraege") if aggregate else None,
+         "declares_reason_text": bool(aggregate and str(aggregate.get("vermerk", "")).strip()),
+         "vermerk_cites_a_document": bool(aggregate and "messungen/register.md" in str(aggregate.get("vermerk", "")))},
+        {"key_shapes": {"datum, grund, quell_id, quelle": 437,
+                        "betroffene_eintraege, datum, grund, quell_id, quelle, vermerk": 1},
+         "distinct_key_shapes": 2,
+         "rows_with_declared_volume": 1,
+         "declared_volume": 9991,
+         "declares_reason_text": True,
+         "vermerk_cites_a_document": True},
+        ablehnungen_evidence,
+        "observed",
+        {"note": ("This assertion exists because the audit was wrong here. Its earlier claim that no "
+                  "machine-readable field declares the withholding is WITHDRAWN: 437 of 438 lines carry four "
+                  "keys and exactly one carries six, adding a volume and a free-text reason that cites where "
+                  "the documentation lives. A reader of this file alone learns that a source was withheld, why, "
+                  "and how many entries it affected.")},
+    ))
+
+    # --- A20: the declared volume against the derivable one --------------------
+    declared_volume = aggregate.get("betroffene_eintraege") if aggregate else None
+    reconciliation_gap = (withheld_records - declared_volume) if declared_volume is not None else None
+    unit_fields = [k for k in (aggregate or {}) if "einheit" in k.lower() or "unit" in k.lower()]
+    assertions.append(make_assertion(
+        "A20",
+        "How does the declared withheld volume compare with the volume derivable from the run manifests, and "
+        "does any machine-readable field state the unit of either?",
+        {"declared_volume": declared_volume,
+         "derivable_records": withheld_records,
+         "gap": reconciliation_gap,
+         "gap_share_of_derivable": round(reconciliation_gap / withheld_records, 6) if reconciliation_gap is not None else None,
+         "unit_declaring_fields_present": unit_fields},
+        {"declared_volume": 9991,
+         "derivable_records": 10056,
+         "gap": 65,
+         "gap_share_of_derivable": 0.006464,
+         "unit_declaring_fields_present": []},
+        ablehnungen_evidence + manifeste_evidence,
+        "observed",
+        {"note": ("Both counts are correct in their own units and neither unit is stated in any "
+                  "machine-readable field. The register's prose gives both in one sentence — 9,991 rejection "
+                  "lines against 10,056 origin rows — which is the same entries-versus-origins distinction its "
+                  "snapshot counters use (17,327 against 19,610); the 65 are duplicate identifiers across the "
+                  "two harvest runs. The reconciliation, not the fact of the withholding, is what a "
+                  "records-only reader cannot do. This is the work's surviving central finding.")},
     ))
 
     return assertions
