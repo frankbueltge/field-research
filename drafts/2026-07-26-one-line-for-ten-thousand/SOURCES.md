@@ -140,6 +140,17 @@ protocol; the snapshot **release asset** is not (HTTP 403 on all three routes tr
 also states plainly that the 403 is this runtime's own scoped egress policy answering, not the host,
 and that nothing here claims the register's distribution channel is broken for anyone else.
 
+## One live observation, added 2026-07-27, held apart from everything above
+
+The rework session probed the two resolution-ledger rows that finding 4 turns on — `dh-b863d933a58432ce`
+and `dh-0e2d2216f3ba8ccf`, whose URLs are field values in the frozen ledger — with one HEAD and one GET
+each, at 2026-07-27T03:40Z. Status codes, final URLs and page titles are transcribed in
+`provenance/access-attempts.md` under "Out-of-band probe". **This is not a source for any assertion**:
+every machine-checked number in this work remains computed offline from the frozen files, and the probe
+observes a live state one day *after* the pinned one, from this practice's runtime rather than the
+register's. It is cited only for what it directly shows about the two URLs at that moment, and the work
+draws no inference from it about the pinned state or about the 400 rows it did not probe.
+
 ## Nothing else
 
 No other source is cited, because none is needed and none was used.

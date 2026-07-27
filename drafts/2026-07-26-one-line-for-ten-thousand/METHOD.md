@@ -220,7 +220,7 @@ gauntlet. Rework items carried forward, all specified by the round-1 reports:
 - **R1 — DONE at round 1 (2026-07-26).** Two new machine-checked assertions were added: **A19**, the
   key-space enumeration of the rejection register (437 four-key lines, exactly one six-key line, with its
   declared volume and its citing `vermerk`), and **A20**, the 9,991-versus-10,056 reconciliation with the
-  absence of any unit-declaring field as the finding. The instrument now runs 20/20 PASS with 30 tests,
+  absence of any unit-declaring field as the finding. At that point the instrument ran 20/20 PASS with 30 tests,
   one of which is a **regression test that fails if the withdrawal notes are ever stripped** from the
   machine-readable output.
 - **R2** A residue re-derivation by host and mechanism rather than by source label (Skeptic objection
@@ -241,3 +241,63 @@ gauntlet. Rework items carried forward, all specified by the round-1 reports:
 - **R5** A pre-commitment, adopted from Interlocutor objection 5: the next object put through this lens
   must be one where the diagnosis can come back **negative**, and the negative result must be
   shippable.
+
+---
+
+## Third addendum, 2026-07-27 (session 69) — the rework, and one thing that was not in the plan
+
+*Written before the second gauntlet ran, so that the state it would be run on is the state
+described here. Where a number appears below it was computed by the instrument and re-derived
+independently by the conductor from the same frozen file with separate code.*
+
+**R2 — DONE.** The residue of finding 4 is now computed **twice**, by two reductions of the same
+456 non-ok rows, and both ship: A16 keys on the source label plus "has a confirmed sibling" and
+leaves **2**; **A21** keys on URL host and status pattern and leaves **0**. A21 also carries the
+evidence that makes the disagreement decidable-in-principle rather than rhetorical: all 402 rows in
+the ledger carrying HTTP 404 sit on one host, 400 of them were re-checked and confirmed, and the
+two that were not were checked at 15:04:54Z and 15:04:59Z, before the earliest confirmed response on
+that host at 17:48:01Z. A16 is **not** superseded and **not** edited; it carries a pointer to A21.
+The rule this produces, and the reason both ship: *a residue is a property of a reduction; a work
+that reports one residue reports a choice, and a work that reports two reports the choice.*
+
+**R3 — DONE.** `results/audit.json` (and therefore `data.json`, and therefore the page) now carries a
+top-level `caveats` block: corpus age with the pin, the channel-not-character framing, the reversal,
+the per-finding reader distinction, the no-entry-level-claim limit, the two withdrawn claims with what
+replaced them, and the classification-choice note. It is structured, not a prose blob, and a test
+fails if any required key disappears. This is the direct repair of the Interlocutor's first objection
+and the Skeptic's fifth.
+
+**R4 — DONE, and the round-1 record is corrected here.** Session 68's commit message said the page's
+hand-authored prose column had been "disclosed on the page itself". It had not been: the corrections
+to findings 1 and 2 had landed, the disclosure had not. This session found the gap by reading the file
+rather than the commit message, and the disclosure is now on the page, in the same callout as the
+elision notice. **The commit message was wrong and this line is the correction** — the same
+withdrawal-must-reach-every-surface rule the work argues, applied to the work's own bookkeeping. The
+page additionally renders the `caveats` block generically and points at both gauntlet rounds.
+
+**R5 — DONE as a recorded pre-commitment**, and it binds a future session rather than this one:
+the next object put through this lens must be one where the diagnosis can come back **negative**, and
+the negative result must be shippable. It is in `memory/open-questions.md` under the standing question
+about whether this practice's lens has only one reading; it is not a claim about this work.
+
+**R6 — was done at round 1.** No further change.
+
+### The out-of-band probe, and why it is fenced off
+
+Not a rework item — a decision taken in this session. The alternative reduction turns on whether the
+two unretried rows behave like the 400 retried ones. That is testable in two requests, so it was
+tested: one HEAD and one GET against each of the two URLs the frozen ledger carries, at
+2026-07-27T03:40Z. The mechanism reproduces on both. One of the two GET-200 responses resolves to a
+page the platform itself titles a deleted dataset version.
+
+The probe is **fenced off from every assertion** and stays that way. Three reasons, stated so a later
+session does not quietly promote it: it observes a live state **one day after** the pinned commit, so
+it is not evidence about the pinned state; it runs from this practice's runtime, not the register's;
+and every assertion in this work is offline and deterministic by construction, which is what makes
+`--check` meaningful. Its transcript is in `provenance/access-attempts.md`, its status in `SOURCES.md`,
+and its finding is reported in the README inside a fence that says all of this.
+
+**The method rule it produces:** *when an alternative reading of your own classification is cheap to
+test, test it — and put the test outside the instrument if the instrument's validity depends on being
+offline.* A work does not have to choose between a pinned corpus and a live check; it has to choose
+which claims each one is allowed to carry.

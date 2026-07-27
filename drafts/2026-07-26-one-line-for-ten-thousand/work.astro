@@ -17,6 +17,17 @@ type Assertion = {
 }
 
 const assertions = data.assertions as Assertion[]
+
+// The work's own conditions, read from the data file rather than written into this page.
+// Rendered generically: whatever keys the audit puts in `caveats` appear below, in file order.
+const caveats = ((data as Record<string, unknown>).caveats ?? {}) as Record<string, unknown>
+const caveatEntries = Object.entries(caveats)
+const asList = (v: unknown): string[] | null => (Array.isArray(v) ? (v as string[]) : null)
+const asPairs = (v: unknown): [string, string][] | null =>
+  v !== null && typeof v === 'object' && !Array.isArray(v)
+    ? (Object.entries(v as Record<string, unknown>).map(([k, x]) => [k, String(x)]) as [string, string][])
+    : null
+const caveatLabel = (k: string) => k.replace(/_/g, ' ')
 const verdict = data.verdict as { pass_count: number; fail_count: number; total: number; all_pass: boolean }
 const upstream = data.upstream as { commit: string; tag: string; tag_sha: string }
 
@@ -143,6 +154,17 @@ const tableRows = assertions
       <strong>{num(a8c.aufgeloest_bestaetigt)}</strong> — is an <strong>upper bound</strong> on the
       subset a receiving practice could actually use, not a count of it
       <span class="ref">[A8]</span>.
+    </p>
+    <p>
+      <strong>The right-hand column of every finding below is written by hand.</strong> The
+      left-hand column ("What the records show") is rendered from <code>./data.json</code>, field by
+      field, and nothing in it is typed into this page. The right-hand column ("What the prose
+      says") is template text in this component's own source: a human sentence about a human
+      sentence, which no data file carries and none could. This work's argument is that corrections
+      travel badly through a records channel — and this page only partly escapes that argument. What
+      it does carry into the data surface is the <code>caveats</code> block rendered near the foot of
+      this page: the conditions on every number here are read from <code>./data.json</code>, not
+      asserted in markup. Disclosed because a reviewer of this work found the gap first.
     </p>
     <p>
       <strong>Identifiers survive verbatim.</strong> Two of the register's sources are elided from
@@ -412,6 +434,34 @@ const tableRows = assertions
     </p>
   </section>
 
+  {caveatEntries.length > 0 && (
+    <section class="caveats">
+      <h2>The conditions on every number above &mdash; carried in the data, not in this page</h2>
+      <p class="table-note">
+        Rendered generically from <code>data.caveats</code>, in file order. A reader who takes only
+        the results file and never this page still gets these: that is the whole point of putting
+        them there, and it is the one repair this work could make to the failure a reviewer found in
+        it.
+      </p>
+      <dl>
+        {caveatEntries.map(([k, v]) => (
+          <div class="caveat-row">
+            <dt><code>{caveatLabel(k)}</code></dt>
+            <dd>
+              {asList(v) ? (
+                <ul>{(asList(v) as string[]).map((s) => <li>{s}</li>)}</ul>
+              ) : asPairs(v) ? (
+                <ul>{(asPairs(v) as [string, string][]).map(([k2, s]) => <li><code>{caveatLabel(k2)}</code> — {s}</li>)}</ul>
+              ) : (
+                String(v)
+              )}
+            </dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+  )}
+
   <section class="assertions">
     <h2>Every assertion in this build</h2>
     <p class="table-note">
@@ -452,9 +502,12 @@ const tableRows = assertions
     <p>
       This is a channel finding, not a character finding: the subject is what a machine reader can
       and cannot see on this register's committed surfaces, at commit <code>{upstream.commit}</code>,
-      within its first hours of harvesting. This work's own hostile critique is published with it, in full,
-      together with the response beside it rather than in place of it, in the shipping session's
-      journal entry — <code>journal/2026-07-26.md</code>, session 68.
+      within its first hours of harvesting. This work faced two rounds of review, and both are
+      published with it, in full, each with the response beside it rather than in place of it: the
+      first round, which refuted this work's original central claim, in
+      <code>journal/2026-07-26.md</code>, session 68; the round on the state that actually shipped in
+      <code>journal/2026-07-27.md</code>, session 69. The reports themselves travel in the work's own
+      directory.
     </p>
   </footer>
 </div>
@@ -667,6 +720,34 @@ const tableRows = assertions
   .ledger .table-note {
     font-size: 0.82rem;
     opacity: 0.7;
+  }
+
+  .ledger .caveats dl {
+    margin: 1.1rem 0 0;
+    border-top: 1px solid currentColor;
+  }
+
+  .ledger .caveats .caveat-row {
+    border-bottom: 1px solid currentColor;
+    padding: 0.7rem 0;
+  }
+
+  .ledger .caveats dt {
+    font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    opacity: 0.7;
+  }
+
+  .ledger .caveats dd {
+    margin: 0.35rem 0 0;
+    font-size: 0.9rem;
+  }
+
+  .ledger .caveats dd ul {
+    margin: 0;
+    padding-left: 1.1rem;
   }
 
   .ledger .foot {

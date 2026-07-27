@@ -138,6 +138,87 @@ class TestGroupById(unittest.TestCase):
         self.assertEqual(audit.group_by_id([]), {})
 
 
+class TestComputeResidueByHostAndMechanism(unittest.TestCase):
+    """R2: pin A21's pure computation against a small synthetic ledger exercising each
+    of its classes, and separately against the real frozen resolution ledger."""
+
+    def _synthetic_rows(self):
+        # A retried 404: first row 404/false, later row (same id) 200/true.
+        retried_404 = [
+            {"id": "x-retried", "quelle": "kaggle", "quell_id": "k1",
+             "url": "https://www.kaggle.com/dsv/1", "datum": "2026-07-26T17:42:45Z",
+             "http_status": 404, "finale_url": "https://www.kaggle.com/dsv/1", "ok": False},
+            {"id": "x-retried", "quelle": "kaggle", "quell_id": "k1",
+             "url": "https://www.kaggle.com/dsv/1", "datum": "2026-07-26T17:48:01Z",
+             "http_status": 200, "finale_url": "https://www.kaggle.com/dsv/1", "ok": True},
+        ]
+        # An unretried 404 on the defect host, checked before the earliest confirmed
+        # row on that host (2026-07-26T17:48:01Z above) — the case A21 exists for.
+        unretried_defect_host_404 = [
+            {"id": "x-unretried", "quelle": "datacite", "quell_id": "10.x/dsv/2",
+             "url": "https://www.kaggle.com/dsv/2", "datum": "2026-07-26T15:04:54Z",
+             "http_status": 404, "finale_url": "https://www.kaggle.com/dsv/2", "ok": False},
+        ]
+        # A 403 (access-policy refusal), never confirmed.
+        refusal_403 = [
+            {"id": "x-403", "quelle": "datacite", "quell_id": "10.x/gbif/1",
+             "url": "https://www.gbif.org/occurrence/1", "datum": "2026-07-26T18:00:00Z",
+             "http_status": 403, "finale_url": "https://www.gbif.org/occurrence/1", "ok": False},
+        ]
+        # A transport outage: no http_status key at all, carries `ausfall` instead.
+        outage = [
+            {"id": "x-outage", "quelle": "datacite", "quell_id": "10.x/osti/1",
+             "url": "https://www.osti.gov/x/1", "datum": "2026-07-26T18:05:00Z",
+             "ausfall": "connection-reset", "finale_url": None, "ok": False},
+        ]
+        return retried_404 + unretried_defect_host_404 + refusal_403 + outage
+
+    def test_synthetic_ledger_classifies_each_row_correctly(self):
+        rows = self._synthetic_rows()
+        result = audit.compute_residue_by_host_and_mechanism(rows, defect_host="www.kaggle.com")
+        self.assertEqual(result["status_404_total"], 2)
+        self.assertEqual(result["status_404_host_distribution"], {"www.kaggle.com": 2})
+        self.assertEqual(result["retried_404_count"], 1)
+        self.assertEqual(result["never_confirmed_404_count"], 1)
+        self.assertEqual(
+            result["never_confirmed_404_detail"],
+            [{"id": "x-unretried", "quelle": "datacite", "datum": "2026-07-26T15:04:54Z"}],
+        )
+        self.assertEqual(result["earliest_ok_datum_on_defect_host"], "2026-07-26T17:48:01Z")
+        self.assertTrue(result["never_confirmed_404_all_predate_earliest_ok"])
+        self.assertEqual(result["failures_total"], 4)  # every row but the retried id's ok=true row
+        self.assertEqual(result["class_retried_and_confirmed"], 1)
+        self.assertEqual(result["class_403"], 1)
+        self.assertEqual(result["class_outage"], 1)
+        self.assertEqual(result["class_defect_host_404_unretried"], 1)
+        self.assertEqual(result["residue_host_mechanism"], 0)
+        self.assertEqual(result["classes_sum"], result["failures_total"])
+
+    def test_synthetic_ledger_residue_is_nonzero_for_a_row_matching_no_class(self):
+        # An unexplained failure that is on neither the defect host nor 403 nor outage
+        # nor retried must show up in the residue, not silently disappear.
+        rows = self._synthetic_rows() + [
+            {"id": "x-mystery", "quelle": "datacite", "quell_id": "10.x/mystery/1",
+             "url": "https://example.org/x/1", "datum": "2026-07-26T19:00:00Z",
+             "http_status": 500, "finale_url": "https://example.org/x/1", "ok": False},
+        ]
+        result = audit.compute_residue_by_host_and_mechanism(rows, defect_host="www.kaggle.com")
+        self.assertEqual(result["residue_host_mechanism"], 1)
+        self.assertEqual(result["classes_sum"], result["failures_total"])
+
+    def test_matches_real_frozen_resolution_ledger(self):
+        report = audit.build_report()
+        by_id = {a["id"]: a for a in report["assertions"]}
+        computed = by_id["A21"]["computed"]
+        expected = by_id["A21"]["expected"]
+        self.assertEqual(computed, expected)
+        self.assertEqual(computed["status_404_total"], 402)
+        self.assertEqual(computed["retried_404_count"], 400)
+        self.assertEqual(computed["never_confirmed_404_count"], 2)
+        self.assertEqual(computed["residue_host_mechanism"], 0)
+        self.assertEqual(computed["classes_sum"], computed["failures_total"])
+
+
 class TestReadJsonl(unittest.TestCase):
     def test_skips_blank_lines_and_parses_each_row(self):
         content = '{"a": 1}\n\n{"a": 2}\n   \n{"a": 3}\n'
@@ -189,11 +270,11 @@ class TestReportsEqualIgnoringTimestamp(unittest.TestCase):
 class TestFullAuditOverRealInputs(unittest.TestCase):
     """Runs the full audit over the real frozen inputs under provenance/register-records/."""
 
-    def test_all_assertions_pass_and_ids_are_exactly_a1_to_a18(self):
+    def test_all_assertions_pass_and_ids_are_exactly_a1_to_a21(self):
         report = audit.build_report()
         self.assertTrue(report["verdict"]["all_pass"], msg=report["verdict"])
         ids = [a["id"] for a in report["assertions"]]
-        expected_ids = [f"A{i}" for i in range(1, 21)]
+        expected_ids = [f"A{i}" for i in range(1, 22)]
         self.assertEqual(ids, expected_ids)
 
     def test_every_assertion_has_required_fields(self):
@@ -244,6 +325,131 @@ class WithdrawalNotesTravel(unittest.TestCase):
             self.assertTrue(note.strip(), f"{aid} ships without a note field")
         self.assertIn("WITHDRAWN", by_id["A19"]["note"])
         self.assertIn("unit", by_id["A20"]["note"].lower())
+
+
+class CaveatsBlockTravels(unittest.TestCase):
+    """R3: the report's top-level `caveats` block is the surface a machine reader of
+    audit.json/data.json alone actually sees. A regression guard of the same kind as
+    WithdrawalNotesTravel: fails if the block goes missing, is emptied, or loses any
+    of its required keys."""
+
+    REQUIRED_KEYS = (
+        "corpus_age",
+        "channel_not_character",
+        "reversal",
+        "reader_distinction",
+        "no_entry_level_claim",
+        "withdrawn_claims",
+        "classification_choice",
+    )
+
+    def test_caveats_present_after_upstream_and_nonempty(self):
+        report = audit.build_report()
+        self.assertIn("caveats", report, "top-level caveats block is missing")
+        self.assertTrue(report["caveats"], "caveats block is empty")
+        keys = list(report.keys())
+        self.assertLess(
+            keys.index("upstream"), keys.index("caveats"),
+            "caveats must be placed after upstream in the report dict",
+        )
+
+    def test_caveats_carries_every_required_key_nonblank(self):
+        report = audit.build_report()
+        caveats = report["caveats"]
+        for key in self.REQUIRED_KEYS:
+            self.assertIn(key, caveats, f"caveats missing required key: {key}")
+            value = caveats[key]
+            self.assertTrue(value, f"caveats['{key}'] is empty")
+
+    def test_corpus_age_states_the_pin_and_the_age_gap(self):
+        report = audit.build_report()
+        text = report["caveats"]["corpus_age"]
+        self.assertIn(audit.UPSTREAM_COMMIT, text)
+        self.assertIn(audit.UPSTREAM_TAG, text)
+        self.assertIn(audit.UPSTREAM_TAG_SHA, text)
+        self.assertIn("15:01", text)
+        self.assertIn("23:55", text)
+
+    def test_reversal_points_at_a18(self):
+        report = audit.build_report()
+        self.assertIn("A18", report["caveats"]["reversal"])
+
+    def test_withdrawn_claims_is_a_two_entry_dict_of_strings(self):
+        # Shape rule: plain string / list of strings / small dict of strings. A dict
+        # mapping each withdrawn claim to its one-line replacement fits that rule and
+        # is what work.astro's generic caveats renderer (asPairs) expects for a dict
+        # value: a flat mapping of string to string.
+        report = audit.build_report()
+        withdrawn = report["caveats"]["withdrawn_claims"]
+        self.assertIsInstance(withdrawn, dict)
+        self.assertEqual(len(withdrawn), 2)
+        for claim, replacement in withdrawn.items():
+            self.assertIsInstance(claim, str)
+            self.assertIsInstance(replacement, str)
+            self.assertTrue(claim.strip())
+            self.assertTrue(replacement.strip())
+
+    def test_caveats_values_are_plain_strings_lists_or_dicts_of_strings(self):
+        report = audit.build_report()
+        for key, value in report["caveats"].items():
+            if isinstance(value, str):
+                continue
+            elif isinstance(value, list):
+                for item in value:
+                    self.assertIsInstance(item, (str, dict), f"caveats['{key}'] has a non-string/dict item")
+                    if isinstance(item, dict):
+                        for sub_value in item.values():
+                            self.assertIsInstance(sub_value, str)
+            elif isinstance(value, dict):
+                for sub_value in value.values():
+                    self.assertIsInstance(sub_value, str)
+            else:
+                self.fail(f"caveats['{key}'] is neither a string, list nor dict: {type(value)}")
+
+    def test_caveats_prose_never_names_the_two_withheld_companies(self):
+        report = audit.build_report()
+        banned = ("kaggle", "huggingface", "hugging face")
+
+        def check(value, path):
+            if isinstance(value, str):
+                lowered = value.lower()
+                for term in banned:
+                    self.assertNotIn(term, lowered, msg=f"caveats field '{path}' names a withheld company: {value!r}")
+            elif isinstance(value, list):
+                for i, item in enumerate(value):
+                    check(item, f"{path}[{i}]")
+            elif isinstance(value, dict):
+                for k, v in value.items():
+                    check(v, f"{path}.{k}")
+
+        for key, value in report["caveats"].items():
+            check(value, key)
+
+
+class ResidueReductionsStayDistinct(unittest.TestCase):
+    """R2 regression guard: A16's source-label residue and A21's host-and-mechanism
+    residue must not be silently collapsed into the same figure by an edit that drops
+    one of the two reductions. On the real frozen ledger they are 2 and 0 respectively
+    — different by construction, since A21 exists to show the choice matters."""
+
+    def test_a16_and_a21_residue_counts_differ_on_real_input(self):
+        report = audit.build_report()
+        by_id = {a["id"]: a for a in report["assertions"]}
+        a16_residue = by_id["A16"]["computed"]["class_residue"]
+        a21_residue = by_id["A21"]["computed"]["residue_host_mechanism"]
+        self.assertEqual(a16_residue, 2)
+        self.assertEqual(a21_residue, 0)
+        self.assertNotEqual(
+            a16_residue, a21_residue,
+            "A16's source-label residue and A21's host-and-mechanism residue must stay "
+            "distinct: if an edit makes them equal, it has likely dropped one of the two "
+            "reductions (the whole point of R2 is that the reduction choice matters).",
+        )
+
+    def test_a16_note_points_to_a21(self):
+        report = audit.build_report()
+        by_id = {a["id"]: a for a in report["assertions"]}
+        self.assertIn("A21", by_id["A16"]["note"])
 
 
 if __name__ == "__main__":

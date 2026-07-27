@@ -3,7 +3,7 @@
 
 Reads only the frozen files under provenance/register-records/ (resolved
 relative to this script's own location) and recomputes a fixed set of
-assertions (A1-A18) about the register's own aggregate and record-level
+assertions (A1-A21) about the register's own aggregate and record-level
 files. Every number is computed from the input files; nothing is invented.
 
 Naming note: two of the six harvested sources carry corporate names this
@@ -144,6 +144,88 @@ def group_by_id(rows, id_key="id"):
     for row in rows:
         groups.setdefault(row[id_key], []).append(row)
     return groups
+
+
+def compute_residue_by_host_and_mechanism(rows, defect_host="www.kaggle.com"):
+    """Re-derive A16's failure-column residue by URL host and HTTP status pattern,
+    instead of by the ledger's `quelle` (source-label) field.
+
+    `rows` is a resolution-ledger-shaped list of dicts (id, ok, http_status, url,
+    quelle, datum, and optionally an `ausfall` marker). Returns a plain dict with no
+    randomness and no I/O: same input, same output.
+
+    Classes, applied in order, over every row where `ok` is not True:
+      (i)   retried-and-confirmed: another row with the same id has `ok` True
+            (any host);
+      (ii)  of the rest, HTTP status 403 (access-policy refusal);
+      (iii) of the rest, a transport-outage marker (`ausfall` present, no
+            `http_status` key);
+      (iv)  of the rest, HTTP status 404 on `defect_host`, i.e. the same host and
+            status pattern the register's own documented fix (HEAD 404 / GET 200)
+            flipped to confirmed elsewhere in the ledger, but never retried here;
+      residue: whatever remains after (i)-(iv).
+    """
+    ok_true_ids = {r["id"] for r in rows if r.get("ok") is True}
+
+    rows_404 = [r for r in rows if r.get("http_status") == 404]
+    status_404_host_distribution = dict(Counter(host_of(r.get("url")) for r in rows_404))
+    retried_404 = [r for r in rows_404 if r["id"] in ok_true_ids]
+    never_confirmed_404 = [r for r in rows_404 if r["id"] not in ok_true_ids]
+    never_confirmed_404_detail = sorted(
+        (
+            {"id": r["id"], "quelle": r["quelle"], "datum": r["datum"]}
+            for r in never_confirmed_404
+        ),
+        key=lambda d: d["id"],
+    )
+
+    ok_rows_on_defect_host = [
+        r for r in rows if r.get("ok") is True and host_of(r.get("url")) == defect_host
+    ]
+    earliest_ok_datum_on_defect_host = (
+        min(r["datum"] for r in ok_rows_on_defect_host) if ok_rows_on_defect_host else None
+    )
+    never_confirmed_404_all_predate_earliest_ok = (
+        all(r["datum"] < earliest_ok_datum_on_defect_host for r in never_confirmed_404)
+        if earliest_ok_datum_on_defect_host is not None
+        else None
+    )
+
+    failures = [r for r in rows if r.get("ok") is not True]
+    class_retried = [r for r in failures if r["id"] in ok_true_ids]
+    remaining = [r for r in failures if r["id"] not in ok_true_ids]
+    class_403 = [r for r in remaining if r.get("http_status") == 403]
+    class_outage = [r for r in remaining if "ausfall" in r and "http_status" not in r]
+    class_defect_host_404 = [
+        r for r in remaining
+        if r.get("http_status") == 404 and host_of(r.get("url")) == defect_host
+    ]
+    classified_ids = (
+        {id(r) for r in class_403} | {id(r) for r in class_outage} | {id(r) for r in class_defect_host_404}
+    )
+    residue = [r for r in remaining if id(r) not in classified_ids]
+    classes_sum = (
+        len(class_retried) + len(class_403) + len(class_outage)
+        + len(class_defect_host_404) + len(residue)
+    )
+
+    return {
+        "status_404_total": len(rows_404),
+        "status_404_host_distribution": status_404_host_distribution,
+        "retried_404_count": len(retried_404),
+        "never_confirmed_404_count": len(never_confirmed_404),
+        "never_confirmed_404_detail": never_confirmed_404_detail,
+        "defect_host": defect_host,
+        "earliest_ok_datum_on_defect_host": earliest_ok_datum_on_defect_host,
+        "never_confirmed_404_all_predate_earliest_ok": never_confirmed_404_all_predate_earliest_ok,
+        "failures_total": len(failures),
+        "class_retried_and_confirmed": len(class_retried),
+        "class_403": len(class_403),
+        "class_outage": len(class_outage),
+        "class_defect_host_404_unretried": len(class_defect_host_404),
+        "residue_host_mechanism": len(residue),
+        "classes_sum": classes_sum,
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -702,7 +784,9 @@ def build_assertions(data):
                   f"{aufgeloest_versucht} - {aufgeloest_bestaetigt} = {unconfirmed_from_a14}). "
                   "At this state the register's entire checked-but-not-confirmed column is "
                   "53 rows with HTTP status 403, 1 row with a transport outage, and 2 rows "
-                  "with HTTP status 404 reached through DataCite-registered DOIs.")},
+                  "with HTTP status 404 reached through DataCite-registered DOIs. This class_residue "
+                  "figure is a source-label reduction (by ledger `quelle` field); see A21 for the "
+                  "same column reduced by URL host and status pattern instead.")},
     ))
 
     # --- A17: withheld-source identifiers still present in the resolution ledger --
@@ -851,12 +935,187 @@ def build_assertions(data):
                   "records-only reader cannot do. This is the work's surviving central finding.")},
     ))
 
+    # --- A21: the same residue, re-derived by host and mechanism -----------------
+    # Added at the session-68 gauntlet (Skeptic objection 2): A16 partitions the 456
+    # non-ok rows by ledger `quelle` label plus "has an ok sibling under the same id",
+    # which leaves a residue of 2 rows the audit called "the sharpest number". Both
+    # residue rows sit on the same URL host the register's own procedural note
+    # documents as answering HEAD with 404 and GET with 200, and both were checked
+    # before the documented fix and never re-checked. This assertion redoes the same
+    # reduction keyed on URL host and HTTP status instead of on the ledger's source
+    # label, over the same file (aufloesungen.jsonl), and reports it beside A16 rather
+    # than replacing it.
+    DEFECT_HOST = "www.kaggle.com"
+    a21_computed = compute_residue_by_host_and_mechanism(aufloesungen, defect_host=DEFECT_HOST)
+
+    assertions.append(make_assertion(
+        "A21",
+        ("Re-deriving A16's residue by URL host and HTTP status pattern instead of by "
+         "source label: across the resolution ledger, how many rows carry HTTP status "
+         "404, on which hosts; how many of those have a later row under the same id with "
+         "`ok` true (the documented retry); how many were never confirmed anywhere, with "
+         "their `quelle` labels and `datum` values; what is the earliest `datum` among "
+         "`ok=true` rows on that host, and does every never-confirmed 404 row predate it; "
+         "and, under this host-and-mechanism reduction, what residue is left in the "
+         "failure column after retried-and-confirmed, 403, transport-outage and "
+         "documented-defect-host-404 rows are removed?"),
+        a21_computed,
+        {"status_404_total": 402,
+         "status_404_host_distribution": {"www.kaggle.com": 402},
+         "retried_404_count": 400,
+         "never_confirmed_404_count": 2,
+         "never_confirmed_404_detail": [
+             {"id": "dh-0e2d2216f3ba8ccf", "quelle": "datacite", "datum": "2026-07-26T15:04:59Z"},
+             {"id": "dh-b863d933a58432ce", "quelle": "datacite", "datum": "2026-07-26T15:04:54Z"},
+         ],
+         "defect_host": DEFECT_HOST,
+         "earliest_ok_datum_on_defect_host": "2026-07-26T17:48:01Z",
+         "never_confirmed_404_all_predate_earliest_ok": True,
+         "failures_total": 456,
+         "class_retried_and_confirmed": 400,
+         "class_403": 53,
+         "class_outage": 1,
+         "class_defect_host_404_unretried": 2,
+         "residue_host_mechanism": 0,
+         "classes_sum": 456},
+        aufloesungen_evidence,
+        "observed",
+        {"note": (
+            "(1) Under a host-and-mechanism reduction the residue is 0, where A16's source-label "
+            "reduction leaves 2: the same two rows A16 calls its residue (both carrying `quelle: "
+            "datacite`, both HTTP 404 on the documented-defect host given above as `defect_host`, "
+            "both checked at 2026-07-26T15:04:5*Z, see `never_confirmed_404_detail`) fall instead "
+            "into class (iv) here, because they share host and status with the 400 rows the "
+            f"register's documented HEAD-404/GET-200 fix flipped to confirmed, and were simply "
+            "never re-checked after it (the fix ran 17:42:45Z-17:55:21Z, on rows carrying "
+            f"{WITHHELD_LABEL}'s own `quelle` label; these two rows arrived via DataCite-registered "
+            "DOIs and were checked earlier, at 15:04:54Z/15:04:59Z, outside the batch the rollout "
+            "was applied to). The 2-vs-0 gap is therefore a property of which field the reduction "
+            "keys on (`quelle` vs. host+status), not a settled fact about the world. "
+            "(2) This assertion does not establish that either of the two rows' URLs (see "
+            "`never_confirmed_404_detail` for their ledger ids) would resolve if requested today: "
+            "no live request feeds this or any other assertion, and none could — this audit is "
+            "offline and deterministic by construction, which is what makes its --check meaningful. "
+            "A single out-of-band probe of those two URLs was made on 2026-07-27, one day after "
+            "the pinned state; it is fenced off from every assertion and reported separately in "
+            "provenance/access-attempts.md, SOURCES.md and the work's README. What this assertion "
+            "establishes is only that both rows share host, HTTP status, and pre-fix timing with "
+            "the 400 rows the register's own documented fix flipped from 404/false to 200/true. "
+            "Timestamps are compared as plain strings throughout this assertion; every `datum` in "
+            "the ledger is UTC, Z-suffixed, ISO-8601 (YYYY-MM-DDTHH:MM:SSZ), so lexical string "
+            "comparison and chronological order agree. "
+            "(3) Read this way, the alternative reduction strengthens the finding it sits under "
+            "rather than weakening it: even more of the failure column collapses to the one "
+            "documented method artefact, not less. A16 is left as originally computed and is not "
+            "superseded by this assertion; both reductions of the same file are reported side by "
+            "side.")},
+    ))
+
     return assertions
 
 
 # ---------------------------------------------------------------------------
 # Report assembly
 # ---------------------------------------------------------------------------
+
+def build_caveats():
+    """Build the top-level `caveats` block: the work's own standing conditions, carried
+    as structured, plain-string fields rather than as prose the machine-readable output
+    does not transport (Skeptic objection 5, session-68 gauntlet; rework item R3).
+
+    Every value here is a fixed string/list/dict, not a computed one: the underlying
+    facts (the pin, the age gap, the reversal, the withdrawals) are established
+    elsewhere in this repository's prose (METHOD.md, README.md) and are restated here
+    verbatim in scope so that a reader of audit.json/data.json alone, without the prose,
+    still receives them.
+    """
+    return {
+        "corpus_age": (
+            "Every share in this report measures the register within its first hours, not a "
+            "mature or stable corpus: the first harvest run (datacite) closed at "
+            "2026-07-26T15:01Z and this audit's data was computed at 2026-07-26T23:55Z, about "
+            "nine hours later. Pinned at upstream commit "
+            f"{UPSTREAM_COMMIT} and snapshot release tag {UPSTREAM_TAG} ({UPSTREAM_TAG_SHA}); "
+            "no number in this work is read from the live upstream repository at build time."
+        ),
+        "channel_not_character": (
+            "This audit's subject is what a machine reader restricted to the register's "
+            "machine-readable surfaces can and cannot see: a channel property. No finding in "
+            "this report is a statement about the register's integrity, honesty, or design "
+            "intent. Where the register's own prose record documents a gap correctly, that is "
+            "reported on the same face as the gaps this audit finds (see A18, A19, A20)."
+        ),
+        "reversal": (
+            "One finding runs the other way from the rest and must travel with them: A18 shows "
+            "the register's own procedural prose states that all 53 HTTP-403 refusals came from "
+            "a single host (GBIF), while the resolution ledger itself shows those 53 split "
+            "across five hosts (48/2/1/1/1). There the machine-readable surface is right and the "
+            "prose is wrong — the opposite direction from the rest of this audit. Quoting this "
+            "work's other findings without A18 inverts the result: it would read as though the "
+            "machine-readable surface is always the misled party, which A18 itself disproves."
+        ),
+        "reader_distinction": (
+            "Two readers exist with different exposure to the gaps this audit finds. A practice "
+            "using the register's own offered query tool (werkzeug/frage_register.py) never "
+            "meets the withheld source's records at all, because that tool excludes the withheld "
+            "source's entries categorically, before it runs its own access/licence check — "
+            "independent of any ledger or prose accuracy. A raw-file reader, reading "
+            "provenance/register-records/ directly (as this audit itself does), does meet them: "
+            "in the rejection register (A5, A19, A20), the resolution ledger (A9, A13-A17, A21), "
+            "and the run manifests (A1-A3, A11-A12). Assertions about those files are claims "
+            "about what a raw-file reader sees, not about what the query-tool reader would "
+            "encounter."
+        ),
+        "no_entry_level_claim": (
+            "No entry-level claim is made anywhere in this audit. The register's entries "
+            "themselves were never retrieved: at the pinned commit they are gitignored from the "
+            "tree (bestand/, fundstellen/*.jsonl.gz), and every route this session had to the "
+            "packaged release asset was refused (HTTP 403). Every share reported here comes from "
+            "the register's own aggregate and record-level files — the snapshot manifest, the six "
+            "run manifests, the rejection register, the outage register, the resolution ledger, "
+            "and the decision journal — never from the entries."
+        ),
+        # A dict of {withdrawn claim: one-line replacement}, not a list of records: the
+        # binding shape rule for this block is plain string / list of strings / small
+        # dict of strings, and this pairing is exactly what a flat dict expresses.
+        # Wording for the claims themselves and their status is taken from METHOD.md's
+        # second addendum, not invented here.
+        "withdrawn_claims": {
+            "No machine-readable field in the tree declares the withholding - false.": (
+                "The rejection register's own six-key aggregate line does declare it, with a "
+                "count and a cited reason (A19). What survives is narrower: no machine-readable "
+                "field states the unit of that declared count, so a records-only reader cannot "
+                "tell whether the withheld volume is 9,991 or the derivable 10,056, or "
+                "reconcile the 65-record gap between them, without the register's prose (A20)."
+            ),
+            "The gap is irreducible, because a register cannot log what it may not store - "
+            "false, and backwards.": (
+                "The register discharged the accounting by aggregating: it deleted the 9,991 "
+                "identifier-bearing rejection lines and replaced them with one line that keeps "
+                "the count and the reason and drops the identifiers (A19) - exactly the "
+                "mechanism the withdrawn sentence called impossible."
+            ),
+        },
+        "classification_choice": (
+            "A16's residue figure (2 rows, out of 456 non-ok rows) is sensitive to the reduction "
+            "choice: A16 partitions failures by the ledger's `quelle` label plus 'has an ok "
+            "sibling under the same id'. A21 reports the same failure column reduced instead by "
+            "URL host and HTTP status pattern, and the residue under that reduction is 0. Both "
+            "are reported; A21 does not replace A16."
+        ),
+        "out_of_band_probe": (
+            "One observation in this work is NOT an assertion and must not be read as one. On "
+            "2026-07-27, one day after the pinned state, the two never-confirmed rows of A21 were "
+            "probed live with one HEAD and one GET each. The register's documented HEAD-404/GET-200 "
+            "mechanism reproduced on both, and one of the two GET responses resolved to a page the "
+            "host itself titles a deleted dataset version — so a fix that counts an HTTP 200 as a "
+            "confirmed access route can confirm a resource the host says is gone. That probe "
+            "observes live state at a later time, from this practice's runtime and not the "
+            "register's, changes no number in this file, and is evidence about neither the pinned "
+            "state nor the 400 rows it did not touch. Transcript: provenance/access-attempts.md."
+        ),
+    }
+
 
 def build_report():
     """Load inputs, compute all assertions, and assemble the full report dict."""
@@ -871,6 +1130,7 @@ def build_report():
             "tag": UPSTREAM_TAG,
             "tag_sha": UPSTREAM_TAG_SHA,
         },
+        "caveats": build_caveats(),
         "inputs": collect_input_manifest(),
         "assertions": assertions,
         "verdict": {

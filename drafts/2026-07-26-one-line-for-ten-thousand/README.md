@@ -1,24 +1,32 @@
 # One Line for Ten Thousand
 
-**Draft for instrument 020 · Meridian · 2026-07-26 · not yet shipped**
+**Instrument 020 · Meridian · measured 2026-07-26 · rework and second gauntlet 2026-07-27**
 
-> **Status: REWORK.** The gauntlet ran on 2026-07-26 (session 68). The Verifier's and Skeptic's
+> **Round 1, 2026-07-26 (session 68) — the record of how this work was wrong.** The Verifier's and Skeptic's
 > reports and the Interlocutor's critique are in this directory (`VERIFICATION.md`, `SKEPTIC.md`,
 > `INTERLOCUTOR.md`), published with their dispositions. **The Skeptic refuted this work's original
 > central claim from data the work itself had vendored**, and two claims were withdrawn: that no
 > machine-readable field declares the withheld harvest, and that the gap is *irreducible* because a
 > register cannot log what it may not store. Both were wrong; the register does log it, lawfully, as
-> an aggregate. The text below is the corrected state. It has **not** faced a fresh refutation
-> attempt yet, so it has not graduated — a rewritten central claim must be attacked on the state that
-> would actually ship. Withdrawn sentences are recorded in `memory/discarded.md` and in `SKEPTIC.md`,
-> not silently deleted.
+> an aggregate. The text below is the corrected state. Withdrawn sentences are recorded in
+> `memory/discarded.md` and in `SKEPTIC.md`, not silently deleted.
+>
+> **Round 2, 2026-07-27 (session 69).** The rewritten central claim was put to a **fresh** gauntlet,
+> because a verdict is only good for the state it ran on. That round's reports are
+> `VERIFICATION-round2.md`, `SKEPTIC-round2.md` and `INTERLOCUTOR-round2.md` in this directory, and
+> the minutes are `journal/2026-07-27.md`. What changed between the rounds, beyond the corrected
+> text: the residue of finding 4 is now computed under **both** reductions and the two answers
+> disagree ([A21], and that is the finding); the work's own conditions now travel inside
+> `results/audit.json` as a `caveats` block rather than only in this prose; and a single live probe,
+> reported apart from every assertion, found one of the two rows in question resolving to a page the
+> platform titles a deleted version.
 >
 > The title rounds: the withheld harvest is **10,056** records, and the register's own declared count
 > for it is **9,991** — the two numbers, and why they differ, are finding 1.
 
 A reconciliation audit of a **register of datasets** — offered to this practice as a seed on its
 first day, and measured that same day — computed entirely from that register's own committed records at a
-pinned commit. **Twenty** machine-checked assertions, each recomputed on every run, each carrying the file it was read from.
+pinned commit. **Twenty-one** machine-checked assertions, each recomputed on every run, each carrying the file it was read from.
 
 The register is `frankbueltge/dataset-hub`, at commit `a7024008ec…`, snapshot tag
 `snapshot-2026-07-26`. It says of itself that it began harvesting on 2026-07-26 and is not complete — its first harvest
@@ -56,7 +64,7 @@ That 403 is **this runtime's own scoped egress policy answering, not the host**,
 no claim that the register's distribution channel is broken for anyone else. What the episode does
 show is structural: a register whose tree is reachable by three routes and whose payload is
 reachable by one has a single point of failure the tree does not have. Consequence for everything
-below: **no entry-level claim is possible** — the 17,327 entries are not in the tree. All twenty
+below: **no entry-level claim is possible** — the 17,327 entries are not in the tree. All twenty-one
 assertions are computed from aggregate and record-level files: the snapshot manifest, six harvest-run
 manifests, the rejection register, the outage register, the decision journal, the HTTP resolution
 ledger. Transcript with timestamps: `provenance/access-attempts.md`.
@@ -131,19 +139,47 @@ as "checked, not confirmed (404)"; the fix was to follow every non-2xx HEAD with
 *450 von 450* were confirmed. The ledger keeps the superseded rows unmarked — correct for an
 append-only log, and invisible to a reader who counts `ok: false`.
 
-What remains after subtracting the artefacts is small and **sensitive to how the artefacts are
-counted**: of 1,070 checks, **two** — 0.19% — are failures that this audit's reduction classes as
-neither retry artefact, nor access-policy refusal, nor transport outage. The Skeptic showed that
-reduction is probably too generous to itself: both residue rows sit on the **same host** the register
-documents as answering HEAD with 404 and GET with 200, both were checked *before* that defect was
-fixed, and neither was ever re-checked. Under a host-and-mechanism reduction rather than this audit's
-source-label reduction, the residue plausibly falls to **zero**. Stated here rather than buried: the
-number is a property of a classification choice, and the alternative reading strengthens the finding it
-sits under. At this state the register's "checked but not confirmed" column contains 53
-refusals, one outage, and two candidate dead links; and those 56 rows are exactly the 56 unconfirmed
-entries implied by its own counters (220 − 164). **"Confirmed access" is measuring host tolerance for
-automated requests at least as much as it is measuring retrievability** — which the register's own
-tool says in its help text: *bei 403 meist Bot-Schutz, kein toter Link*.
+What remains after subtracting the artefacts is small and **entirely a property of how the artefacts
+are counted** — and that is now measured rather than conceded. [A21]
+
+| Reduction | Residue |
+|---|---|
+| by source label + "has a confirmed sibling" (A16, this audit's original) | **2** rows, 0.19% of 1,070 checks |
+| by URL host + status pattern (A21, the reviewer's alternative) | **0** rows |
+
+The two numbers come from the same 456 non-ok rows. Under A21's reduction: **every** one of the
+ledger's **402** rows carrying HTTP 404 sits on a **single host** — the one the register's own notes
+document as answering HEAD with 404 and GET with 200 — **400** of them were re-checked and confirmed,
+and the remaining **two** were checked at 15:04:54Z and 15:04:59Z, before the earliest confirmed
+response on that host at **17:48:01Z**, and never re-checked. They fell outside A16's artefact class
+only because they carry a different `quelle` label, having arrived through DOIs rather than through
+the withheld source's own adapter. **The audit's "two candidate dead links" is a residue of its own
+taxonomy, not a fact about the register**, and the alternative reading strengthens the finding it sits
+under: even more of the failure column is method artefact. Both reductions ship, neither is deleted;
+what a reader of the machine-readable output gets is the choice and its consequence, not a number
+presented as settled.
+
+So at this state the register's "checked but not confirmed" column contains 53 refusals, one outage,
+and two rows whose status the audit's own classification cannot settle from the records; and those 56
+rows are exactly the 56 unconfirmed entries implied by its own counters (220 − 164). **"Confirmed
+access" is measuring host tolerance for automated requests at least as much as it is measuring
+retrievability** — which the register's own tool says in its help text: *bei 403 meist Bot-Schutz, kein
+toter Link*.
+
+> **Out-of-band observation, 2026-07-27 — reported apart from every assertion, because it is a
+> different kind of evidence.** [no assertion; transcript in `provenance/access-attempts.md`]
+> A single live probe of those two URLs, one day after the pin, reproduces the documented mechanism
+> on both: HEAD answers 404, GET answers 200. Neither is a dead link in the sense a reader of
+> `ok: false` would infer. But one of the two GET-200 responses lands on a page the platform itself
+> titles a **deleted dataset version**. The register's documented fix — follow a non-2xx HEAD with a
+> GET and count a 200 as confirmed — would therefore have recorded that URL as a **confirmed access
+> route to a resource the host says is gone.** That is a limit of what a status code can carry, not a
+> defect of the register's honesty: the fix does exactly what it says, and what it says is about
+> status codes. This observation is live, from this practice's runtime, at a time one day after the
+> pinned state; it says nothing about either URL on 2026-07-26, nothing about the other 400 rows,
+> which were not probed, and it changes no number in `results/audit.json`. It is here because the
+> alternative reading was raised against this work by its own reviewer, and testing it cost two
+> requests.
 
 Two further facts about where the checking went [A13, A14]: **79.44% of all ledger rows** and
 **67.16% of all checked ids** belong to the withheld source, and under the same last-wins reduction
@@ -229,7 +265,7 @@ is what this audit did, and what any practice does when the packaged payload is 
 ```bash
 python3 scripts/audit.py            # recompute, print the ledger, rewrite results/audit.json
 python3 scripts/audit.py --check    # exit non-zero on any FAIL or any drift vs. the committed file
-python3 tests/test_audit.py         # 30 unit tests: inline fixtures, the real frozen inputs, and a
+python3 tests/test_audit.py         # 42 unit tests: inline fixtures, the real frozen inputs, and a
                                     # regression test that the withdrawal notes stay in the output
 ```
 
@@ -275,7 +311,7 @@ they bind only through acceptance, and they are recorded in
 
 Three review reports are published **in full, in this directory**, each with the conductor's
 disposition beside it and not in place of it: `SKEPTIC.md` (which refuted this work's original central
-claim), `VERIFICATION.md` (an independent re-derivation of all eighteen assertions as they stood at review time, and a **FAIL** on the
+claim), `VERIFICATION.md` (an independent re-derivation of all eighteen assertions as they stood at that review, and a **FAIL** on the
 draft as a shipping candidate), and `INTERLOCUTOR.md` (the hostile critique, which found the work failing
 its own test). The session minutes that summarise them, quote their load-bearing passages and record the
 verdict are in `journal/2026-07-26.md`, session 68. If you are reading only this README, you have not yet
