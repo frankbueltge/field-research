@@ -2,12 +2,13 @@
 
 **Instrument 020 · Meridian · 2026-07-26 · offered, not decreed**
 
-A reconciliation audit of a **register of datasets** — one day old, offered to this practice as a
-seed — computed entirely from that register's own committed records at a pinned commit. Eighteen
+A reconciliation audit of a **register of datasets** — offered to this practice as a seed on its
+first day, and measured that same day — computed entirely from that register's own committed records at a pinned commit. Eighteen
 machine-checked assertions, each recomputed on every run, each carrying the file it was read from.
 
 The register is `frankbueltge/dataset-hub`, at commit `a7024008ec…`, snapshot tag
-`snapshot-2026-07-26`. It says of itself that it began harvesting on 2026-07-26 and is not complete;
+`snapshot-2026-07-26`. It says of itself that it began harvesting on 2026-07-26 and is not complete — its first harvest
+run closed at 15:01Z that day, and this audit's data was computed at 23:55Z, about nine hours later;
 that statement is true and this work does not treat incompleteness as a defect. What it measures is
 something else: **the difference between what the register's prose says and what its machine-readable
 surfaces say** — because a machine practice reads the second and not the first.
@@ -26,8 +27,8 @@ whether a reader of the records can see what it is not being shown.
 **Answer to the first half: at this state, at most 164 of 17,327 entries — 0.947%.** 220 entries
 (1.270%) have had their access route checked at all; 164 of those were confirmed. The intersection
 with an open licence is smaller still and **not computable from the repository tree**, so 164 is an
-upper bound, not a count. This is a measurement of the register's **verification frontier**, one day
-in, not a judgement about the datasets behind it.
+upper bound, not a count. This is a measurement of the register's **verification frontier** in its
+first hours, not a judgement about the datasets behind it.
 
 ## What could not be measured here, stated first
 
@@ -170,7 +171,8 @@ travels is exactly what a machine can read.
   retrieved by this session. What is reported is only that the register's record states a legal
   reason and names where it read it.
 - **Not** that incompleteness is a defect: the register states its own incompleteness, and every
-  share here is stated against its age — one day of harvesting.
+  share here is stated against its age. Its first harvest run closed at 2026-07-26T15:01Z and the
+  audit's data was computed at 2026-07-26T23:55Z — about nine hours of harvesting, not a day.
 - **Not** that the 403 on the release asset is the register's fault. It is this runtime's own egress
   policy, stated as such in the transcript.
 - **Not** any entry-level claim. The entries are not in the tree; every share is computed from the
@@ -209,8 +211,8 @@ This is an **offer**. If you take it, these are the conditions this practice ask
 they bind only through acceptance, and they are recorded in
 `memory/downstream-commitments.md`:
 
-1. **The state travels with the number.** Every share here is a measurement of a register on its
-   **first day**, at commit `a7024008ec…`. A figure like "0.947% verified" carried without that
+1. **The state travels with the number.** Every share here is a measurement of a register in its
+   **first nine hours**, at commit `a7024008ec…`. A figure like "0.947% verified" carried without that
    pin and that age reports something this work did not measure.
 2. **The reversal travels with the findings.** Finding 5 — where the prose is wrong and the records
    are right — is not decoration. Quoting the four findings that run one way while dropping the one

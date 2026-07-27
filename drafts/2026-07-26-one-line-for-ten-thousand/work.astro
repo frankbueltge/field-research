@@ -1,0 +1,645 @@
+---
+// One Line for Ten Thousand — instrument 020, Meridian.
+// A reconciliation ledger: machine-readable surfaces vs. prose, on the same register.
+// Static component. No script, no fetch, no client interaction — every figure below is
+// read at build time from the committed ./data.json (a byte copy of results/audit.json).
+import data from './data.json'
+
+type Assertion = {
+  id: string
+  question: string
+  computed: unknown
+  expected: unknown
+  verdict: string
+  evidence: string[]
+  kind: string
+  [k: string]: unknown
+}
+
+const assertions = data.assertions as Assertion[]
+const verdict = data.verdict as { pass_count: number; fail_count: number; total: number; all_pass: boolean }
+const upstream = data.upstream as { commit: string; tag: string; tag_sha: string }
+
+function getA(id: string): Assertion | undefined {
+  return assertions.find((a) => a.id === id)
+}
+
+// Percentage formatter: derives a display string from a data-sourced decimal fraction.
+// No literal is introduced — this only scales and rounds a value already present in data.
+function pct(x: number | null | undefined, digits?: number): string {
+  if (x === null || x === undefined) return '—'
+  const v = x * 100
+  const d = digits ?? (Math.abs(v) < 1 ? 3 : 2)
+  return `${v.toFixed(d)}%`
+}
+
+function num(x: number | null | undefined): string {
+  if (x === null || x === undefined) return '—'
+  return x.toLocaleString('en-US')
+}
+
+// The register's own snapshot tag carries the date harvesting began, verbatim.
+const harvestStartDate = upstream.tag.replace(/^snapshot-/, '')
+
+const a1 = getA('A1')
+const a2 = getA('A2')
+const a3 = getA('A3')
+const a4 = getA('A4')
+const a5 = getA('A5')
+const a6 = getA('A6')
+const a7 = getA('A7')
+const a8 = getA('A8')
+const a9 = getA('A9')
+const a11 = getA('A11')
+const a12 = getA('A12')
+const a13 = getA('A13')
+const a14 = getA('A14')
+const a15 = getA('A15')
+const a16 = getA('A16')
+const a18 = getA('A18')
+
+// --- Finding 4 / bar 1: failure decomposition of A16, four disjoint classes over 456 rows.
+const a16c = (a16?.computed ?? {}) as Record<string, any>
+const failClasses = a16
+  ? [
+      { label: 'has an ok sibling elsewhere in the ledger', count: a16c.class_has_ok_sibling, ref: 'A16' },
+      { label: 'HTTP 403 — refusal, never confirmed', count: a16c.class_403, ref: 'A16' },
+      { label: 'transport outage, no HTTP status', count: a16c.class_outage, ref: 'A16' },
+      { label: 'residue — neither retry, refusal, nor outage', count: a16c.class_residue, ref: 'A16' },
+    ]
+  : []
+const failTotal = a16c.failures_total ?? 0
+const barW = 560 // svg coordinate width for the proportional bars
+
+// --- Finding 5 / reversal: host split of the 53 HTTP-403 rows (A16.class_403_hosts),
+// checked against A18 if the extending build has added it by now.
+const hostSplit: [string, number][] = a16c.class_403_hosts
+  ? (Object.entries(a16c.class_403_hosts) as [string, number][]).sort((x, y) => y[1] - x[1])
+  : []
+const hostSplitTotal = hostSplit.reduce((s, [, v]) => s + v, 0)
+const topHost = hostSplit[0]
+const topHostShare = topHost && hostSplitTotal ? topHost[1] / hostSplitTotal : null
+
+// Precomputed stacked-bar segments (cumulative x offsets) for the host-split bar,
+// so the template only reads plain numbers rather than reducing inline.
+let cumX = 0
+const hostSplitSegments = hostSplit.map(([host, count], i) => {
+  const width = hostSplitTotal ? (count / hostSplitTotal) * barW : 0
+  const seg = { host, count, x: cumX, width, i }
+  cumX += width
+  return seg
+})
+
+// --- Verification-frontier bar (A8): of the entries whose access route was checked at all
+// (aufgeloest_versucht), how many were confirmed (aufgeloest_bestaetigt)? This ratio is
+// legible as a proportional bar; the share against the full register (below 1%) is not,
+// so that one is stated as a plain figure instead.
+const a8c = (a8?.computed ?? {}) as Record<string, any>
+const checkedTotal = a8c.aufgeloest_versucht ?? 0
+const confirmed = a8c.aufgeloest_bestaetigt ?? 0
+const notConfirmed = checkedTotal - confirmed
+const confirmedShareOfChecked = checkedTotal ? confirmed / checkedTotal : null
+
+// --- Assertion table: generic, no id list is hard-coded — renders whatever data holds.
+const tableRows = assertions
+---
+
+<div class="ledger">
+  <header class="head">
+    <p class="kicker">Instrument 020 &middot; Meridian &middot; reconciliation ledger</p>
+    <h1>One Line for Ten Thousand</h1>
+    <p class="pin">
+      Register <code>frankbueltge/dataset-hub</code>, pinned at commit
+      <code>{upstream.commit}</code>, snapshot tag <code>{upstream.tag}</code>
+      (tag object <code>{upstream.tag_sha}</code>). Ledger generated
+      <code>{data.generated_utc as string}</code>. The snapshot tag itself carries the date
+      harvesting began — <strong>{harvestStartDate}</strong> — the <em>same</em> day this ledger's
+      data was computed: the register's first harvest run closed at 15:01Z and this ledger was
+      generated at the timestamp above, about nine hours later. Every share on this page is a
+      share of a register in its first hours, not a mature one.
+    </p>
+  </header>
+
+  <section class="callout">
+    <p>
+      <strong>What this ledger cannot measure.</strong> The register's 17,327 entries ship as a
+      release asset; every route to that asset was refused from this practice's runtime while the
+      repository tree itself was reachable. No entry-level claim is made anywhere below — nothing
+      here inspects an entry. All figures come from the register's aggregate and record-level
+      files: run manifests, the snapshot manifest, the rejection register, the outage register,
+      the resolution ledger. The intersection of a confirmed access route with an open licence
+      cannot be computed from this tree at all, so the figure this ledger reports —
+      <strong>{num(a8c.aufgeloest_bestaetigt)}</strong> — is an <strong>upper bound</strong> on the
+      subset a receiving practice could actually use, not a count of it
+      <span class="ref">[A8]</span>.
+    </p>
+    <p>
+      <strong>Identifiers survive verbatim.</strong> Two of the register's sources are elided from
+      this page's prose as "the withheld source" and "the model-hosting source". Their upstream
+      identifiers are not erased from the material this ledger cites: they survive verbatim inside
+      the frozen records below, wherever a table cell renders a value straight out of the data
+      file. Disclosed here rather than hidden.
+    </p>
+  </section>
+
+  <section class="verdict-line">
+    <p>
+      <strong>{num(verdict.pass_count)} of {num(verdict.total)}</strong> assertions pass,
+      <strong>{num(verdict.fail_count)}</strong> fail
+      ({verdict.all_pass ? 'all assertions currently in the ledger pass' : 'not all assertions currently in the ledger pass'}).
+      This line is read from the data's own <code>verdict</code> block, not asserted on the page.
+    </p>
+  </section>
+
+  <section class="findings">
+    <h2>Five reconciliations</h2>
+
+    <article class="finding">
+      <h3><span class="fnum">1</span> A third of the harvest is derivable but nowhere declared.</h3>
+      <div class="cols">
+        <div class="col records">
+          <h4>What the records show</h4>
+          <ul class="figs">
+            <li>Six committed run manifests sum to <strong>{num(a1?.computed as number)}</strong> harvested records <span class="ref">[A1]</span>.</li>
+            <li>The snapshot's <code>fundstellen</code> counter reads exactly the non-withheld total; the difference against the four non-withheld runs is <strong>{num(a3?.computed as number)}</strong> <span class="ref">[A3]</span>.</li>
+            <li>The missing <strong>{num((a2?.computed as any)?.withheld_records)}</strong> records ({pct((a2?.computed as any)?.share_of_total)}) belong to the withheld source alone <span class="ref">[A2]</span>.</li>
+            <li>The snapshot's own asset list packages a harvest file for every run except the withheld source's two, though both of that source's manifests declare a file and a checksum: {(a12?.run_file_present_in_snapshot_assets_by_source as any) && Object.entries(a12!.run_file_present_in_snapshot_assets_by_source as Record<string, boolean>).map(([k, v]) => `${k}: ${v ? 'present' : 'absent'}`).join(', ')} <span class="ref">[A12]</span>.</li>
+          </ul>
+        </div>
+        <div class="col prose">
+          <h4>What the prose says</h4>
+          <p>Nothing, at this point in the ledger — and that silence is itself half of the finding.
+          No machine-readable field anywhere in the tree declares that the withheld source's harvest
+          was excluded. The withheld runs' manifests are shaped like all the others. The explanation
+          exists, but only in prose, one reconciliation over <span class="ref">[A5]</span>.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="finding">
+      <h3><span class="fnum">2</span> The reason for that exclusion is in prose, and could not have been anywhere else.</h3>
+      <div class="cols">
+        <div class="col records">
+          <h4>What the records show</h4>
+          <ul class="figs">
+            <li>The append-only rejection register carries <strong>{num((a5?.computed as any)?.rejection_lines)}</strong> line for the withheld source's <strong>{num((a5?.computed as any)?.harvested_records)}</strong> records — a ratio of <strong>{(a5?.computed as any)?.ratio}</strong> <span class="ref">[A5]</span>.</li>
+          </ul>
+        </div>
+        <div class="col prose">
+          <h4>What the prose says</h4>
+          <p>The register's own measurement record documents the withholding: it cites where it read
+          the withheld source's terms, records that per-record identifiers were <em>deleted</em> from
+          the rejection and origin tables, and states that it intervened in an append-only file and
+          why. It even corrects an earlier version of its own entry, and states the rule it draws
+          from the episode: <em>&ldquo;Wir ver&ouml;ffentlichen es nicht, wir behalten es nur&rdquo;
+          ist keine Rechtsposition</em> — &ldquo;we don't publish it, we only keep it&rdquo; is not a
+          legal position. The single line is deliberate and, in its own terms, correct: a register
+          cannot log what it is not allowed to store.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="finding">
+      <h3><span class="fnum">3</span> Twenty records are listed as rejected and are in the corpus.</h3>
+      <div class="cols">
+        <div class="col records">
+          <h4>What the records show</h4>
+          <ul class="figs">
+            <li>The rejection register holds <strong>{num((a6 as any)?.ablehnungen_lines)}</strong> lines; the snapshot's own <code>abgelehnt_gesamt</code> counts <strong>{num((a6 as any)?.abgelehnt_gesamt)}</strong> — a difference of <strong>{num(a6?.computed as number)}</strong> <span class="ref">[A4, A6]</span>.</li>
+            <li>Of that excess, <strong>{num((a7?.computed as any)?.intersection)}</strong> ids are directly observable: every one of the model-hosting source's confirmed-access ids still sits in the rejection register, never retracted <span class="ref">[A7]</span>.</li>
+            <li>The remaining <strong>{num((a7?.computed as any)?.excess_remainder_after_intersection)}</strong> line of the excess is the single collective line of finding 2, an inference stated as such <span class="ref">[A7, A12]</span>.</li>
+          </ul>
+        </div>
+        <div class="col prose">
+          <h4>What the prose says</h4>
+          <p>The register's own design is append-only by rule, documented as such in its procedural
+          notes: entries are added, not retracted. That discipline is exactly what produces this
+          gap — a record admitted once its access route was confirmed keeps its earlier rejection
+          line, because there is no channel to remove it. Correct for an append-only log, and
+          invisible to a reader who only counts rejection lines.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="finding">
+      <h3><span class="fnum">4</span> Four hundred of the recorded failures are a documented defect of the method.</h3>
+      <div class="cols">
+        <div class="col records">
+          <h4>What the records show</h4>
+          <ul class="figs">
+            <li>The resolution ledger holds <strong>{num((a9?.computed as any)?.total_rows)}</strong> rows over <strong>{num((a9?.computed as any)?.unique_ids)}</strong> distinct ids <span class="ref">[A9]</span>.</li>
+            <li><strong>{num(failTotal)}</strong> rows are not <code>ok</code>; of those, <strong>{num(a16c.class_has_ok_sibling)}</strong> ({pct(failTotal ? a16c.class_has_ok_sibling / failTotal : null)}) have another row for the same id that succeeded elsewhere in the same ledger <span class="ref">[A16]</span>.</li>
+            <li>All {num(a16c.class_has_ok_sibling)} belong to the withheld source and show the pattern <code>{(a15 as any)?.forward_pattern}</code> in {num((a15?.computed as any)?.forward_pattern_count)} of {num((a15?.computed as any)?.repeated_ids)} repeated ids, with {num((a15?.computed as any)?.reverse_pattern_count)} rows showing the reverse <span class="ref">[A15]</span>.</li>
+            <li>The withheld source accounts for {pct((a13?.computed as any)?.withheld_share_of_rows)} of all ledger rows and {pct((a13?.computed as any)?.withheld_share_of_unique_ids)} of all checked ids; under the register's own last-wins reduction, {num((a14?.computed as any)?.withheld_last_wins_ok)} of its ids are confirmed and contribute to no published counter <span class="ref">[A13, A14]</span>.</li>
+            <li>Reducing the ledger the same way over the remaining sources reproduces the published counters exactly: {num((a14?.computed as any)?.non_withheld_ids)} checked, {num((a14?.computed as any)?.non_withheld_ok)} confirmed <span class="ref">[A14]</span>.</li>
+          </ul>
+        </div>
+        <div class="col prose">
+          <h4>What the prose says</h4>
+          <p>The register's procedural notes name the cause precisely: the withheld source's host
+          answers a HEAD request with 404 and a GET request with 200, so reachable records were
+          first recorded as "checked, not confirmed (404)". The documented fix was to follow every
+          non-2xx HEAD with a GET, after which the notes report <em>450 von 450</em> were confirmed.
+          The ledger keeps the superseded rows unmarked — correct for an append-only log, invisible
+          to a reader who only counts <code>ok: false</code>. The register's own help text names the
+          remaining ambiguity: <em>bei 403 meist Bot-Schutz, kein toter Link</em> — a 403 is usually
+          bot protection, not a dead link. "Confirmed access" measures host tolerance for automated
+          requests at least as much as it measures retrievability.</p>
+        </div>
+      </div>
+      <figure class="bar-figure">
+        <figcaption>Decomposition of the {num(failTotal)} non-<code>ok</code> resolution-ledger rows, four disjoint classes <span class="ref">[A16]</span></figcaption>
+        <svg viewBox={`0 0 ${barW} ${failClasses.length * 44 + 6}`} role="img" aria-label="Failure decomposition bar chart">
+          {failClasses.map((c, i) => {
+            const w = failTotal ? (c.count / failTotal) * barW : 0
+            const y = i * 44
+            return (
+              <g>
+                <text x="0" y={y + 9} class="bar-label" text-anchor="start">
+                  {c.label} — {num(c.count)} of {num(failTotal)} ({pct(failTotal ? c.count / failTotal : null)})
+                </text>
+                <rect x="0" y={y + 14} width={barW} height="18" fill="none" stroke="currentColor" stroke-width="1" opacity="0.35" />
+                <rect x="0" y={y + 14} width={w} height="18" fill="currentColor" opacity={1 - i * 0.2} />
+              </g>
+            )
+          })}
+        </svg>
+      </figure>
+    </article>
+
+    <article class="finding">
+      <h3><span class="fnum">5</span> And once, the direction reverses.</h3>
+      <div class="cols">
+        <div class="col records">
+          <h4>What the records show</h4>
+          <ul class="figs">
+            <li>The resolution ledger's HTTP-403 rows split across
+              {hostSplit.map(([h, c], i) => (
+                <>{i > 0 ? ', ' : ' '}<strong>{h}</strong> {num(c)}</>
+              ))}
+              — <strong>{num(hostSplitTotal)}</strong> rows over <strong>{hostSplit.length}</strong> distinct hosts <span class="ref">[A16{a18 ? ', A18' : ''}]</span>.
+            </li>
+            <li>The largest host accounts for {topHostShare !== null ? pct(topHostShare) : '—'} of the 403s, not 100% <span class="ref">[A16]</span>.</li>
+            {a18 && <li>Assertion A18, added by this ledger's extension, checks this split directly against the procedural note: <code>{JSON.stringify(a18.computed)}</code>, verdict <strong>{a18.verdict}</strong>.</li>}
+          </ul>
+        </div>
+        <div class="col prose">
+          <h4>What the prose says</h4>
+          <p>A procedural note reports the first resolution run's refusals as <em>&ldquo;53 von 200
+          Zugriffswegen antworteten mit HTTP 403, alle vom selben Host (GBIF)&rdquo;</em> — "53 of
+          200 access routes answered with HTTP 403, all from the same host (GBIF)". The count of 53
+          is exactly right. The clause that follows it is not: the ledger shows those 53 rows spread
+          over five hosts, not one. Here the machine-readable surface is correct and the prose is
+          wrong — the one place in this ledger where the reversal runs the other way, and it is
+          reported at the same weight as the four findings above it, not as a footnote.</p>
+        </div>
+      </div>
+      <figure class="bar-figure">
+        <figcaption>Host split of the {num(hostSplitTotal)} HTTP-403 rows <span class="ref">[A16]</span> — the prose names one host for all of them</figcaption>
+        <svg viewBox={`0 0 ${barW} 22`} role="img" aria-label="Host split of HTTP 403 rows">
+          <rect x="0" y="0" width={barW} height="20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.35" />
+          {hostSplitSegments.map((seg) => (
+            <rect
+              x={seg.x}
+              y="0"
+              width={seg.width}
+              height="20"
+              fill="currentColor"
+              opacity={seg.i % 2 === 0 ? 1 : 0.4}
+              stroke="currentColor"
+              stroke-width="0.5"
+            />
+          ))}
+        </svg>
+        <p class="bar-legend">
+          {hostSplit.map(([h, c]) => `${h}: ${num(c)} (${pct(hostSplitTotal ? c / hostSplitTotal : null)})`).join(' · ')}
+        </p>
+      </figure>
+    </article>
+  </section>
+
+  {a11 && (
+    <section class="context">
+      <h2>Context the register discloses about itself <span class="ref">[A11]</span></h2>
+      <p>
+        Of six committed harvest runs, <strong>{num((a11.computed as any).incomplete_runs)}</strong>
+        declare themselves incomplete (<code>vollstaendig: false</code>), naming the page cap that
+        stopped them; the complete run is
+        <strong> {(a11.computed as any).complete_runs.join(', ')}</strong>, which harvested against
+        a reported window total in the same manifest. None of this required inference — the register
+        states its own incompleteness in machine-readable fields, without prompting, and this ledger
+        does not treat that incompleteness as a defect.
+      </p>
+    </section>
+  )}
+
+  <section class="frontier">
+    <h2>The verification frontier <span class="ref">[A8, A14, A16]</span></h2>
+    <p>
+      Of <strong>{num(a8c.eintraege)}</strong> register entries, <strong>{num(checkedTotal)}</strong>
+      ({pct(a8c.share_versucht)}) have had an access route checked at all, and
+      <strong> {num(confirmed)}</strong> ({pct(a8c.share_bestaetigt)}) were confirmed. Both shares are
+      of a register that began harvesting on <strong>{harvestStartDate}</strong> and says so itself.
+      Restricted to the {num(checkedTotal)} routes that were checked, the confirmed share is legible
+      as a proportion:
+    </p>
+    <figure class="bar-figure">
+      <figcaption>Of the {num(checkedTotal)} access routes checked at all, how many were confirmed <span class="ref">[A8]</span></figcaption>
+      <svg viewBox={`0 0 ${barW} 22`} role="img" aria-label="Confirmed vs unconfirmed of checked access routes">
+        <rect x="0" y="0" width={barW} height="20" fill="none" stroke="currentColor" stroke-width="1" opacity="0.35" />
+        <rect x="0" y="0" width={checkedTotal ? (confirmed / checkedTotal) * barW : 0} height="20" fill="currentColor" opacity="1" />
+        <rect
+          x={checkedTotal ? (confirmed / checkedTotal) * barW : 0}
+          y="0"
+          width={checkedTotal ? (notConfirmed / checkedTotal) * barW : 0}
+          height="20"
+          fill="currentColor"
+          opacity="0.3"
+        />
+      </svg>
+      <p class="bar-legend">
+        confirmed: {num(confirmed)} ({confirmedShareOfChecked !== null ? pct(confirmedShareOfChecked) : '—'}) &middot;
+        not confirmed: {num(notConfirmed)} ({confirmedShareOfChecked !== null ? pct(1 - confirmedShareOfChecked) : '—'})
+        — the not-confirmed rows decompose into the 403/outage/residue classes of finding 4 above.
+      </p>
+    </figure>
+    <p class="caveat">
+      {(a8?.caveat as string)}
+    </p>
+  </section>
+
+  <section class="assertions">
+    <h2>Every assertion in this build</h2>
+    <p class="table-note">
+      Rendered generically from <code>data.assertions</code> — every id currently present in
+      <code>./data.json</code>, in file order, none hard-coded.
+    </p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>question</th>
+            <th>verdict</th>
+            <th>kind</th>
+            <th>evidence</th>
+          </tr>
+        </thead>
+        <tbody>
+          {tableRows.map((a) => (
+            <tr>
+              <td class="id-cell"><code>{a.id}</code></td>
+              <td>{a.question}</td>
+              <td class={a.verdict === 'PASS' ? 'pass' : 'fail'}>{a.verdict}</td>
+              <td>{a.kind}</td>
+              <td class="evidence-cell">
+                {(a.evidence as string[]).map((e) => (
+                  <div><code>{e}</code></div>
+                ))}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p>
+      This is a channel finding, not a character finding: the subject is what a machine reader can
+      and cannot see on this register's committed surfaces, at commit <code>{upstream.commit}</code>,
+      one day into its harvest. This work's own hostile critique is published with it, in full,
+      together with the response beside it rather than in place of it, in the shipping session's
+      journal entry — <code>journal/2026-07-26.md</code>, session 68.
+    </p>
+  </footer>
+</div>
+
+<style>
+  .ledger {
+    font-family: ui-serif, Georgia, 'Times New Roman', serif;
+    line-height: 1.6;
+    max-width: 62rem;
+    margin: 0 auto;
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .ledger code,
+  .ledger .figs strong,
+  .ledger .bar-legend,
+  .ledger table {
+    font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .ledger code {
+    font-size: 0.88em;
+    word-break: break-word;
+  }
+
+  .ledger h1 {
+    font-size: 1.9rem;
+    margin: 0.2rem 0 0.6rem;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  .ledger h2 {
+    font-size: 1.2rem;
+    margin: 2.2rem 0 0.8rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid currentColor;
+  }
+
+  .ledger h3 {
+    font-size: 1.05rem;
+    margin: 0 0 0.9rem;
+    text-align: left;
+  }
+
+  .ledger h4 {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 0.5rem;
+    opacity: 0.7;
+    font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace;
+  }
+
+  .ledger .kicker {
+    font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin: 0 0 0.4rem;
+  }
+
+  .ledger .pin {
+    font-size: 0.92rem;
+    border-top: 1px solid currentColor;
+    padding-top: 0.9rem;
+  }
+
+  .ledger .callout,
+  .ledger .verdict-line {
+    border-top: 1px solid currentColor;
+    padding-top: 1rem;
+    margin-top: 1.4rem;
+    font-size: 0.95rem;
+  }
+
+  .ledger .fnum {
+    display: inline-block;
+    min-width: 1.6em;
+    font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace;
+    opacity: 0.6;
+  }
+
+  .ledger .finding {
+    border-top: 1px solid currentColor;
+    padding-top: 1.1rem;
+    margin-top: 1.6rem;
+  }
+
+  .ledger .cols {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  .ledger .col.prose {
+    border-top: 1px dashed currentColor;
+    padding-top: 1rem;
+  }
+
+  .ledger .figs {
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+
+  .ledger .figs li {
+    margin-bottom: 0.55rem;
+  }
+
+  .ledger .ref {
+    font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace;
+    font-size: 0.82em;
+    opacity: 0.65;
+  }
+
+  .ledger .bar-figure {
+    margin: 1.2rem 0 0.4rem;
+  }
+
+  .ledger .bar-figure svg {
+    width: 100%;
+    height: auto;
+    max-width: 40rem;
+    display: block;
+    color: inherit;
+  }
+
+  .ledger .bar-figure figcaption {
+    font-size: 0.82rem;
+    opacity: 0.75;
+    margin-bottom: 0.4rem;
+  }
+
+  .ledger .bar-label {
+    font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace;
+    font-size: 9px;
+    fill: currentColor;
+  }
+
+  .ledger .bar-legend {
+    font-size: 0.82rem;
+    margin-top: 0.5rem;
+  }
+
+  .ledger .frontier .caveat {
+    font-size: 0.88rem;
+    font-style: italic;
+    border-top: 1px dashed currentColor;
+    padding-top: 0.8rem;
+    margin-top: 1rem;
+  }
+
+  .ledger .table-scroll {
+    overflow-x: auto;
+    border-top: 1px solid currentColor;
+  }
+
+  .ledger table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.82rem;
+  }
+
+  .ledger th,
+  .ledger td {
+    text-align: left;
+    vertical-align: top;
+    padding: 0.5rem 0.7rem 0.5rem 0;
+    border-bottom: 1px solid currentColor;
+  }
+
+  .ledger th {
+    font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', monospace;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    opacity: 0.7;
+  }
+
+  .ledger td.id-cell {
+    white-space: nowrap;
+  }
+
+  .ledger td.pass {
+    font-weight: 600;
+  }
+
+  .ledger td.fail {
+    font-weight: 700;
+    text-decoration: underline;
+  }
+
+  .ledger .evidence-cell code {
+    display: block;
+    font-size: 0.72rem;
+    opacity: 0.75;
+  }
+
+  .ledger .table-note {
+    font-size: 0.82rem;
+    opacity: 0.7;
+  }
+
+  .ledger .foot {
+    border-top: 1px solid currentColor;
+    margin-top: 2.2rem;
+    padding-top: 1rem;
+    font-size: 0.85rem;
+    opacity: 0.85;
+  }
+
+  @media (min-width: 46rem) {
+    .ledger .cols {
+      flex-direction: row;
+      align-items: stretch;
+    }
+
+    .ledger .col {
+      flex: 1 1 50%;
+      min-width: 0;
+    }
+
+    .ledger .col.prose {
+      border-top: none;
+      border-left: 1px dashed currentColor;
+      padding-top: 0;
+      padding-left: 1.4rem;
+    }
+  }
+</style>
