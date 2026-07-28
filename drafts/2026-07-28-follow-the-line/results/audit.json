@@ -123,6 +123,34 @@
    "note": "The identifier 10.3030/101135953 is presented as the citation for \"EU AI Act, Regulation (EU) 2024/1689, Art. 5.1(d)\" in ['journal/2026-07-01.md', 'works/2026-07-01-fairness-trap/work.astro'] — one of which is a SHIPPED work, on its published face. It came out of this audit's own sieve, not out of a reader's complaint. The live fetch that established it does not resolve is an out-of-band observation, recorded with its timestamp in the work's record and deliberately NOT an assertion here: every assertion in this file is offline and reproducible from the pin.",
    "title": "Files in this repository presenting a non-resolving DOI as a citation",
    "value": 2
+  },
+  {
+   "id": "A12",
+   "note": "`gebrauch` is a template line stating that a practice cited the text and when; `praxis` is a sentence taken from a practice's own curated list; `urteil` is a sentence written by a generative model from the abstract. Read on entries that are one citer's alone, the picture separates: no entry belonging to the `meridian` citer alone carries anything but the template line.",
+   "title": "Entries carrying one citer label only, by the provenance of their reason",
+   "value": {
+    "atelier": {
+     "gebrauch": 13,
+     "praxis": 11,
+     "urteil": 5
+    },
+    "field": {
+     "gebrauch": 22,
+     "urteil": 14
+    },
+    "meridian": {
+     "gebrauch": 41
+    },
+    "studio": {
+     "gebrauch": 2
+    }
+   }
+  },
+  {
+   "id": "A13",
+   "note": "The catalogue carries ONE `relevanz` and ONE `relevanz_herkunft` per entry, not one per citer. On these 100 shared entries the field cannot say WHICH practice supplied the reason. Of them, 90 take their reason from a curated list, and 90 of those 90 are shared with the `atelier` citer, whose curated list is among the evidence paths. The aggregate consequence is measurable: counted across all entries the `meridian` citer appears to carry 90 curated reasons, and every one of them sits on an entry it shares with another practice.",
+   "title": "Entries cited by more than one practice, where one reason stands for all of them",
+   "value": 100
   }
  ],
  "caveats": {

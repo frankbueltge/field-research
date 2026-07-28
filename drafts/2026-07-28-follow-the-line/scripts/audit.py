@@ -301,6 +301,36 @@ def build():
         "here: every assertion in this file is offline and reproducible from the pin."
         % (bad, bad_files))
 
+    # --- A12/A13 who supplied the reason on an entry two practices share? ---------
+    solo = collections.defaultdict(collections.Counter)
+    for e in entries:
+        labels = e.get("zitiert_von") or []
+        if len(labels) == 1:
+            solo[labels[0]][e["relevanz_herkunft"]] += 1
+    add("A12", "Entries carrying one citer label only, by the provenance of their reason",
+        {k: dict(sorted(v.items())) for k, v in sorted(solo.items())},
+        "`gebrauch` is a template line stating that a practice cited the text and when; "
+        "`praxis` is a sentence taken from a practice's own curated list; `urteil` is a "
+        "sentence written by a generative model from the abstract. Read on entries that are "
+        "one citer's alone, the picture separates: no entry belonging to the `meridian` citer "
+        "alone carries anything but the template line.")
+
+    shared = [e for e in entries if len(e.get("zitiert_von") or []) > 1]
+    inherited = [e for e in shared if e["relevanz_herkunft"] == "praxis"]
+    inherited_with_atelier = [e for e in inherited if "atelier" in e["zitiert_von"]]
+    add("A13", "Entries cited by more than one practice, where one reason stands for all of them",
+        len(shared),
+        "The catalogue carries ONE `relevanz` and ONE `relevanz_herkunft` per entry, not one "
+        "per citer. On these %d shared entries the field cannot say WHICH practice supplied "
+        "the reason. Of them, %d take their reason from a curated list, and %d of those %d are "
+        "shared with the `atelier` citer, whose curated list is among the evidence paths. The "
+        "aggregate consequence is measurable: counted across all entries the `meridian` citer "
+        "appears to carry %d curated reasons, and every one of them sits on an entry it shares "
+        "with another practice."
+        % (len(shared), len(inherited), len(inherited_with_atelier), len(inherited),
+           sum(1 for e in entries if "meridian" in (e.get("zitiert_von") or [])
+               and e["relevanz_herkunft"] == "praxis")))
+
     return {
         "work": "Back-reference audit of the ecology's Paper Catalogue",
         "practice": "Meridian",
