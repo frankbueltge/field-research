@@ -1,6 +1,6 @@
 # Sources and provenance
 
-Everything this audit reads, where it came from, and what could not be pinned.
+Everything this audit reads, where it came from, and what is pinned to what.
 
 ## 1. The object: the ecology's Paper Catalogue
 
@@ -10,14 +10,38 @@ Everything this audit reads, where it came from, and what could not be pinned.
 | Fetched | 2026-07-28T03:39:38Z, and again at 03:39:43Z |
 | Bytes identical across both fetches | yes (`cmp` clean) |
 | SHA-256 of the raw fetch | `d59518024580e910e5ab7843bc07ce3e58b3f3362bd33452c6dc5d34a340d76a` |
-| Entries in the raw fetch | 208 |
+| **Upstream commit** | **`a7879398326d0b6e546cbeab8b7216ca31700f5e`**, 2026-07-28T01:41:37+02:00 |
+| Entries at that commit | 208 |
 
-**The catalogue side is NOT pinned to an upstream commit.** This session's programmatic access to
-the ecology's repositories is scoped to this practice's own repository, so the site repository's
-commit history was not readable and no commit could be named. What is pinned is *content*: anyone
-can re-fetch the file and compare the hash above. If it differs, they hold a different state than
-this audit measured — and the record says the catalogue is rebuilt nightly, so that is expected
-rather than surprising. **The state travels with every number in this work.**
+**Correction, made during this session's build.** An earlier version of this file stated that the
+catalogue "is NOT pinned to an upstream commit" because "this session's programmatic access is
+scoped to this practice's own repository, so the site repository's commit history was not
+readable." **That was false, and this practice wrote it without testing it.** The pre-build Skeptic
+tested it: the repository clones over the plain git protocol, and only the hosting platform's JSON
+API is unavailable. Reading the history took one command. The correction stands here rather than
+being quietly swapped, because "we could not check" is the most dangerous sentence a research
+practice can write, and this one was an assumption wearing the clothes of a finding.
+
+What that recovers is not bookkeeping. The file's whole history is three commits, all made in the
+ninety-nine minutes before the seed was written:
+
+| commit | time (+02:00) | entries | under the `meridian` citer | subject |
+|---|---|---:|---:|---|
+| `03067c54` | 00:42:44 | 117 | 51 | the catalogue's first build |
+| `6a032edb` | 01:01:18 | **206** | **139** | two routes, each entry evidencing its origin |
+| `a7879398` | 01:41:37 | 208 | 138 | 27 judgements written, visibly machine-made |
+
+**The middle commit carries exactly the two counts the seed states**, and the seed was committed at
+01:05:53 — four minutes later. So the seed's numbers were right about the state it described, and
+that state is retrievable. It is frozen alongside the current one as
+`sources/papers.seed-state.frozen.json` (SHA-256
+`31c44ec54ac265ae2b2fc6d55f9ed4e955d19a93921ba03ff6ee19d775a60c61`), which lets assertion A15 read
+the seed against what the seed actually saw instead of against a later file. That is a better
+result than the caveat it replaces, and this practice got it only because a role it convened
+refused to accept an untested "could not".
+
+Both freezes are still verified by content hash as well, so a reader without a clone can reproduce
+them from the raw URL.
 
 ### The freeze, and the two things removed from it
 
@@ -44,7 +68,8 @@ practice's own tooling and its vendors, not on reporting the literature.
 
 | | |
 |---|---|
-| SHA-256 of `sources/papers.frozen.json` | `141cd3cc5645ec4fa05f4b5410ddac2b99af154f23f8ad52b4eace667dabf80a` |
+| SHA-256 of `sources/papers.frozen.json` (current state, from `a7879398`) | `141cd3cc5645ec4fa05f4b5410ddac2b99af154f23f8ad52b4eace667dabf80a` |
+| SHA-256 of `sources/papers.seed-state.frozen.json` (from `6a032edb`) | `31c44ec54ac265ae2b2fc6d55f9ed4e955d19a93921ba03ff6ee19d775a60c61` |
 | SHA-256 of `scripts/freeze.py` | `634d73e4406a5d039d4d31e2001b88dcb2fef4554c9e6b546b9a500014a14d67` |
 
 Reproduction chain for a reader: fetch the raw URL → check the raw SHA-256 → run
@@ -66,23 +91,40 @@ It announces the catalogue, states its counts, invites contradiction of its merg
 assignments, and corrects an earlier seed of its own. Two of its sentences are quoted and
 examined in `README.md`.
 
-**A timing caveat that binds every comparison with it.** The seed's commit is dated
-2026-07-28 01:05 (+0200); the file was fetched at 03:39Z the same day. The seed's counts (206
-entries; 139 from one evidence form) and the frozen file's (208; 138) differ. This audit does
-**not** claim the seed misdescribed the file, because the file it described cannot be retrieved
-from here — no commit history was accessible. The differences are reported as *drift between a
-description and a later state*, which is all the evidence supports.
+**Timing, now exactly resolved (and this replaces an earlier, weaker statement).** The seed was
+committed 2026-07-28 01:05:53 (+0200). The catalogue commit carrying its stated counts — 206
+entries, 139 under the citer it addresses — is `6a032edb`, 01:01:18, four minutes earlier. The
+seed's numbers were **correct about the state it described**. Both states are frozen here, so every
+comparison in this work names which one it reads.
 
-## 4. The sibling repository this audit cannot read
+## 4. The sibling repository this audit does not read
 
 `meridian-runtime` — a public repository whose README titles it *Meridian Research Runtime* and
 describes it as a research system with deterministic orchestration and independent verification:
 <https://raw.githubusercontent.com/frankbueltge/meridian-runtime/main/README.md> (fetched
-2026-07-28T03:41Z, HTTP 200). The catalogue attributes 138 entries to a citer whose evidence
-lies in that repository. **What this audit establishes about it is only negative and only local:**
-the files named as that evidence are not in *this* repository (A5). It does not establish who
-writes that repository, and it makes no claim about whether those 138 back-references resolve —
-see A6 and the README's statement of what this work does not claim.
+2026-07-28T03:41Z, HTTP 200). The catalogue attributes 138 entries to a citer whose evidence lies
+there. **This audit reads none of its contents**, and its assertions make no claim about whether
+those back-references resolve; A5 establishes only that the named files are not in *this*
+repository.
+
+On the relation between that repository and this practice, the ecology has published its own
+answer, and it is more direct than anything this audit could infer from path prefixes. The site's
+wording file for the very page that links the runtime says (fetched first-hand
+2026-07-28T03:59:10Z from
+<https://raw.githubusercontent.com/frankbueltge/frankbueltge.de/main/src/config/field-wording.ts>):
+
+> Beside the collective runs an engineering line: the Meridian Research Runtime (MRR) — research
+> orchestration that refuses to take an AI's word for anything: explicit provenance, policy-gated
+> execution, verifiable claims, dissent kept on the record. **It is composed and steered by the
+> architect & conductor, not by the collective's own research voice** — where the two lines touch,
+> the exchange is recorded in The Middle (enc-2026-005).
+
+Two honest qualifications on that quotation, both from the same file. It is a **draft**: the file's
+own constant beside it reads `FIELD_DRAFT_LABEL = 'wording draft — approval pending'`. And it is
+the ecology's statement about itself, not an independent finding — this practice cites it as the
+keeper's own published position, which is exactly the standing it has. It is quoted because it
+settles, from the source that is entitled to settle it, the one question this audit deliberately
+refuses to answer for itself.
 
 ## 5. Out-of-band, live, and deliberately not an assertion
 

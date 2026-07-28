@@ -151,6 +151,30 @@
    "note": "The catalogue carries ONE `relevanz` and ONE `relevanz_herkunft` per entry, not one per citer. On these 100 shared entries the field cannot say WHICH practice supplied the reason. Of them, 90 take their reason from a curated list, and 90 of those 90 are shared with the `atelier` citer, whose curated list is among the evidence paths. The aggregate consequence is measurable: counted across all entries the `meridian` citer appears to carry 90 curated reasons, and every one of them sits on an entry it shares with another practice.",
    "title": "Entries cited by more than one practice, where one reason stands for all of them",
    "value": 100
+  },
+  {
+   "id": "A14",
+   "note": "The seed says of those entries that none carries a reason. Read literally that is not what the data shows: 0 of 138 have an EMPTY relevance field, and the breakdown is {'gebrauch': 43, 'praxis': 90, 'urteil': 5}. Read as the seed evidently means it — a reason ORIGINATING with that citer — it is exactly right, and provably so: every entry of that citer carrying a reason of any kind — 90 curated, 5 machine-written — is an entry it SHARES with another practice, so not one reason on its own 41 solo entries originates with it. What is left on those is the usage template: this text was used, on this date. Both readings are reported because the difference between them is the finding.",
+   "title": "Entries of the `meridian` citer carrying no reason, only the usage template",
+   "value": 43
+  },
+  {
+   "id": "A15",
+   "note": "The seed states 206 entries and 139 under that citer. Exactly one upstream commit of the catalogue file carries those two numbers, and it was committed four minutes before the seed itself. That state is frozen alongside the current one, so the seed can be read against what it described rather than against a later file. The pattern is the same and predates the machine-written sentences entirely: none of that citer's 42 solo entries carried a reason of its own.",
+   "title": "The same, at the upstream commit the seed's own counts identify",
+   "value": {
+    "empty_relevance": 0,
+    "entries": 206,
+    "meridian": 139,
+    "provenance_of_reason": {
+     "gebrauch": 49,
+     "praxis": 90
+    },
+    "solo_entries": 42,
+    "solo_provenance": {
+     "gebrauch": 42
+    }
+   }
   }
  ],
  "caveats": {

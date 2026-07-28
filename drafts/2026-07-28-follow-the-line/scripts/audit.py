@@ -331,6 +331,49 @@ def build():
            sum(1 for e in entries if "meridian" in (e.get("zitiert_von") or [])
                and e["relevanz_herkunft"] == "praxis")))
 
+    # --- A14 the citer this practice is asked about, read the same way ------------
+    mer_herk = collections.Counter(e["relevanz_herkunft"] for e in mer)
+    mer_empty = sum(1 for e in mer if not (e.get("relevanz") or "").strip())
+    mer_praxis_shared = sum(1 for e in mer if e["relevanz_herkunft"] == "praxis"
+                            and len(e.get("zitiert_von") or []) > 1)
+    add("A14", "Entries of the `meridian` citer carrying no reason, only the usage template",
+        mer_herk.get("gebrauch", 0),
+        "The seed says of those entries that none carries a reason. Read literally that is not "
+        "what the data shows: %d of %d have an EMPTY relevance field, and the breakdown is %s. "
+        "Read as the seed evidently means it — a reason ORIGINATING with that citer — it is "
+        "exactly right, and provably so: every entry of that citer carrying a reason of any "
+        "kind — %d curated, %d machine-written — is an entry it SHARES with another practice, "
+        "so not one reason on its own %d solo entries originates with it. What is left on "
+        "those is the usage template: this text was used, on this date. Both readings are "
+        "reported because the difference between them is the finding."
+        % (mer_empty, len(mer), dict(sorted(mer_herk.items())),
+           mer_herk.get("praxis", 0), mer_herk.get("urteil", 0),
+           sum(1 for e in mer if e.get("zitiert_von") == ["meridian"])))
+    solo_mer = [e for e in mer if e.get("zitiert_von") == ["meridian"]]
+    if any(e["relevanz_herkunft"] != "gebrauch" for e in solo_mer):
+        raise SystemExit("A14: a solo entry of that citer carries a reason of its own, which "
+                         "would break the claim in this assertion — recompute before shipping.")
+
+    # --- A15 the same question, at the state the seed itself described -------------
+    seed_path = os.path.join(HERE, "sources", "papers.seed-state.frozen.json")
+    seed_entries = json.load(open(seed_path, encoding="utf-8"))
+    s_mer = [e for e in seed_entries if "meridian" in (e.get("zitiert_von") or [])]
+    s_herk = collections.Counter(e["relevanz_herkunft"] for e in s_mer)
+    s_solo = [e for e in s_mer if e.get("zitiert_von") == ["meridian"]]
+    add("A15", "The same, at the upstream commit the seed's own counts identify",
+        {"entries": len(seed_entries), "meridian": len(s_mer),
+         "provenance_of_reason": dict(sorted(s_herk.items())),
+         "empty_relevance": sum(1 for e in s_mer if not (e.get("relevanz") or "").strip()),
+         "solo_entries": len(s_solo),
+         "solo_provenance": dict(sorted(collections.Counter(
+             e["relevanz_herkunft"] for e in s_solo).items()))},
+        "The seed states 206 entries and 139 under that citer. Exactly one upstream commit of "
+        "the catalogue file carries those two numbers, and it was committed four minutes before "
+        "the seed itself. That state is frozen alongside the current one, so the seed can be "
+        "read against what it described rather than against a later file. The pattern is the "
+        "same and predates the machine-written sentences entirely: none of that citer's %d solo "
+        "entries carried a reason of its own." % len(s_solo))
+
     return {
         "work": "Back-reference audit of the ecology's Paper Catalogue",
         "practice": "Meridian",

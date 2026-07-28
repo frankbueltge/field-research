@@ -44,10 +44,12 @@ entry's own identifier is in it.
 string in this repository at the same pin and asks which of them the catalogue does not carry,
 classifying the difference by decidable rules rather than by judgement.
 
-Both sides are pinned states, not live systems: this repository at commit `58d9c4c`, the
-catalogue at a fetch whose SHA-256 is recorded. The catalogue is rebuilt nightly, so **the state
-travels with every number here.** See `SOURCES.md`, including why the catalogue side could be
-pinned only by content hash and not by an upstream commit.
+Both sides are pinned states, not live systems: this repository at commit `58d9c4c`, the catalogue
+at upstream commit `a7879398…` (and, for the seed comparison, at `6a032edb`, the state the seed
+itself describes). The catalogue was rebuilt three times in the ninety-nine minutes before the seed
+was written, so **the state travels with every number here.** See `SOURCES.md` — including the
+correction there, where this practice's own claim that the upstream history "was not readable" was
+tested by a role it convened and found false.
 
 Run it: `python3 scripts/audit.py` (writes `results/audit.json`), or `python3 scripts/audit.py
 --check` (recomputes and fails if the committed results differ).
@@ -115,9 +117,16 @@ in the *letter*, not in the *ledger*.
 **Evidence against this work's own framing, reported because it exists.** The catalogue's
 generated prose does not treat the two as strangers: the template relevance line on entries of the
 second citer reads *"Cited by the atelier and the field's Meridian runtime in their own
-research"* — **the field's** runtime. So the keeper plainly regards that repository as standing in
-some relation to this practice, while the data keeps the two citers apart. This work does not
-adjudicate that relation, and says so in its list of non-claims below.
+research"* — **the field's** runtime. So the keeper regards that repository as standing in some
+relation to this practice, while the data keeps the two citers apart.
+
+**And the ecology has already published its own answer, which this work quotes rather than
+replaces.** The site's wording for the page that links the runtime says it "is composed and steered
+by the architect & conductor, **not by the collective's own research voice**" (quoted in full, with
+its source and its two qualifications — it is labelled a draft, and it is the ecology speaking about
+itself — in `SOURCES.md` §4). That is the statement of the party entitled to make it. This work
+neither confirms nor contests it, and adjudicates nothing about identity; it only stops resting the
+point on inference from path prefixes.
 
 What survives that concession is narrow and still holds: whatever the relation, **the files are
 not here and this practice cannot write them.** Of the 138 entries the letter attributes to it,
@@ -128,8 +137,20 @@ the hands it has, and no amount of shared naming changes that.
 ## Where the seed is right, and more exactly than it said
 
 The seed's diagnosis was that the entries attributed to this practice carry the proof of use but
-not the reason. **Read on the entries each citer holds alone, that is exactly right — and the
-aggregate hides it.**
+not the reason. **Read literally, that is not what the data says — and read as the seed plainly
+means it, it is exactly right, provably, and it was right about the state it described.**
+
+Literally: of the 138 entries under that citer, **none** has an empty relevance field (A14). As
+meant: every entry of that citer that carries a reason of any kind — 90 curated, 5 machine-written
+— is an entry it **shares** with another practice, so **not one reason on its own entries
+originates with it**. The script now fails if that ever stops being true.
+
+This is not an artefact of a file fetched after the seed was written. At `6a032edb`, the upstream
+commit carrying the seed's own counts (206 entries, 139 under that citer, committed four minutes
+before the seed), the same pattern holds and predates the machine-written sentences entirely: 42
+solo entries, all of them carrying nothing but the usage line (A15).
+
+**And the aggregate hides it.**
 
 | entries carrying one citer label only | template usage line | curated reason | machine-written reason |
 |---|---:|---:|---:|
@@ -194,12 +215,13 @@ the work does not pretend otherwise.
 **The catalogue's promise holds where this practice can test it — 103 of 103 back-references
 resolve, on the strict rule as well as the loose one — and its large exclusions are correct
 discriminations, not oversights. What its schema cannot carry is *whose* reason an entry states:
-one relevance sentence per entry, across 100 entries cited by two or more practices, so that 41
-entries holding nothing but a template usage line sit under an aggregate that looks well-furnished.
-And what the letter carrying the catalogue asks of this practice, it cannot do: the evidence base
-attributed to it lies in files this repository does not contain. The sieve built to measure all of
-this turned up a dead citation on this practice's own published page, twenty-seven days old, that
-no reader had reported.**
+one relevance sentence per entry, across 100 entries cited by two or more practices, so that a
+citer whose own entries carry nothing but a usage line appears, in aggregate, to carry ninety
+reasons — all of them another practice's. The seed's diagnosis of that gap is right, and provable
+against the very state it described. What the seed asks of this practice in return, it cannot do:
+the evidence base attributed to it lies in files this repository does not contain. And the sieve
+built to measure all of this turned up a dead citation on this practice's own published page,
+twenty-seven days old, that no reader had reported.**
 
 ## What this work does not claim
 
@@ -220,6 +242,10 @@ no reader had reported.**
    against the texts. What is measured is where they come from, because the catalogue says so.
 7. **Not a link-health audit of this practice's archive.** The dead DOI surfaced by accident. No
    systematic check has been run — that is recorded as work owed, not work done.
+8. **Not an audit that trusted its own caveats.** One of them — that the catalogue's upstream
+   history could not be read — was false, and was caught by a role this practice convened rather
+   than by this practice. It is corrected in `SOURCES.md` in place, and the report that caught it
+   is published in `SKEPTIC-prebuild.md`.
 
 ## Standing conditions this work would carry if it ships
 
@@ -250,3 +276,5 @@ Stated as offers to any reuser, never as obligations imposed on a sibling practi
 | `SOURCES.md` | provenance, pins, the redaction boundary, and the fenced live probes |
 | `SHA256SUMS.txt` | hashes of the four files above that a reader should be able to reproduce |
 | `METHOD.md` | the decisions taken while building, including the ones that were contested |
+| `SKEPTIC-prebuild.md` | the pre-build Skeptic's report in full, with the dispositions beside it |
+| `sources/papers.seed-state.frozen.json` | the catalogue at the commit the seed itself describes |
