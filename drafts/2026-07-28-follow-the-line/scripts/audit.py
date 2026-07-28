@@ -1,0 +1,363 @@
+#!/usr/bin/env python3
+"""Back-reference audit of the ecology's Paper Catalogue against this repository.
+
+The catalogue's distinguishing promise is line-level provenance: every entry carries the
+repository and file where the citation was found. That promise is checkable in exactly one
+place by exactly one party — the entries whose evidence is asserted to sit in `field-research/`.
+This script performs that check, and the complementary one in the other direction: which
+identifier-shaped strings this repository actually contains, and what a sieve does to them.
+
+Every assertion is OFFLINE and DETERMINISTIC. The two inputs are:
+  * the frozen catalogue extract  (sources/papers.frozen.json, SHA-256 in SOURCES.md)
+  * this repository at a pinned commit (default 58d9c4c), read via `git show`, never the
+    working tree — so the audit does not measure whatever happens to be checked out.
+
+Live network observations are NOT assertions here. One was made this session and is fenced
+off in the work's own record; nothing in this file depends on it.
+
+Usage:
+  python3 scripts/audit.py            # write results/audit.json
+  python3 scripts/audit.py --check    # recompute and fail if it differs from the committed file
+"""
+import argparse
+import collections
+import hashlib
+import json
+import os
+import re
+import subprocess
+import sys
+
+HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+REPO = subprocess.run(["git", "rev-parse", "--show-toplevel"], cwd=HERE,
+                      capture_output=True, text=True, check=True).stdout.strip()
+FROZEN = os.path.join(HERE, "sources", "papers.frozen.json")
+OUT = os.path.join(HERE, "results", "audit.json")
+
+PIN = "58d9c4c"
+
+# The catalogue names citers with short labels; their evidence paths carry repository
+# prefixes. This is the mapping the audit tests, not a mapping it assumes.
+LABEL_TO_PREFIX = {
+    "field": {"field-research"},
+    "meridian": {"meridian-runtime", "docs"},
+    "atelier": {"ulysses"},
+    "studio": {"studio"},
+}
+
+VENDORED = "works/2026-07-26-one-line-for-ten-thousand/"   # instrument 020's third-party corpus
+FIXTURE = "/tests/"
+
+ARX = re.compile(r"(?<![\d.])(\d{4}\.\d{4,5})(?:v\d+)?")
+DOI = re.compile(r"\b10\.\d{4,9}/[-._;()/:A-Za-z0-9]+")
+
+
+# --------------------------------------------------------------------------- helpers
+
+def git_text(path, pin=PIN):
+    """File content at the pinned commit, or None if it is not there / not text."""
+    r = subprocess.run(["git", "show", f"{pin}:{path}"], cwd=REPO, capture_output=True)
+    if r.returncode != 0:
+        return None
+    try:
+        return r.stdout.decode("utf-8")
+    except UnicodeDecodeError:
+        return None
+
+
+def git_files(pin=PIN):
+    out = subprocess.run(["git", "ls-tree", "-r", "--name-only", pin], cwd=REPO,
+                         capture_output=True, text=True, check=True).stdout
+    return [f for f in out.split("\n") if f]
+
+
+def identifiers(entry):
+    """Every identifier the catalogue itself gives for an entry, lower-cased."""
+    out = []
+    for k in [entry.get("kennung")] + list(entry.get("weitere_kennungen") or []):
+        if not k:
+            continue
+        k = k.strip()
+        out.append(k.split(":", 1)[1] if k.lower().startswith("arxiv:") else k)
+    url = entry.get("url") or ""
+    m = re.search(r"arxiv\.org/abs/(\d{4}\.\d{4,5})", url)
+    if m:
+        out.append(m.group(1))
+    m = re.search(r"doi\.org/(.+)$", url)
+    if m:
+        out.append(m.group(1))
+    return sorted({x.lower() for x in out if x})
+
+
+def paths_of(entry, prefix=None):
+    fs = [f for f in entry.get("fundstellen") or [] if isinstance(f, str)]
+    if prefix:
+        fs = [f for f in fs if f.startswith(prefix + "/")]
+    return fs
+
+
+def strip_line_suffix(fundstelle):
+    """`docs/x.md:29` -> `docs/x.md`. The catalogue uses that form for some entries."""
+    return fundstelle.split(":")[0]
+
+
+def arx_shape_ok(ident):
+    """Decidable shape rule. DOIs pass unconditionally; arXiv-shaped strings must have a
+    plausible YYMM: year 07 (when the scheme began) to 26 (this year), month 01-12."""
+    m = re.fullmatch(r"(\d{2})(\d{2})\.\d{4,5}", ident)
+    if not m:
+        return True
+    yy, mm = int(m.group(1)), int(m.group(2))
+    return 7 <= yy <= 26 and 1 <= mm <= 12
+
+
+def sha256(path):
+    h = hashlib.sha256()
+    with open(path, "rb") as fh:
+        for chunk in iter(lambda: fh.read(65536), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+# --------------------------------------------------------------------------- assertions
+
+def build():
+    entries = json.load(open(FROZEN, encoding="utf-8"))
+    A = []
+
+    def add(key, title, value, note):
+        A.append({"id": key, "title": title, "value": value, "note": note})
+
+    # --- A1 the object -----------------------------------------------------------
+    add("A1", "Entries in the frozen catalogue extract", len(entries),
+        "The freeze is a fetched state at a time, not an upstream commit: this practice's "
+        "programmatic access does not reach the site repository's history, so no commit could "
+        "be pinned. SHA-256 of the raw fetch and of the freeze are in SOURCES.md.")
+
+    # --- A2 do the citer labels correspond to the evidence paths? -----------------
+    violations = []
+    docs_without_mr = 0
+    for e in entries:
+        labels = set(e.get("zitiert_von") or [])
+        prefixes = {p.split("/")[0] for p in paths_of(e)}
+        expected = set()
+        for lab in labels:
+            expected |= LABEL_TO_PREFIX.get(lab, {"<unknown-label:%s>" % lab})
+        # every prefix must be claimable by some label, and every label must be evidenced
+        unexplained = {p for p in prefixes if not any(p in LABEL_TO_PREFIX.get(l, set())
+                                                     for l in labels)}
+        unevidenced = {l for l in labels if not (LABEL_TO_PREFIX.get(l, set()) & prefixes)}
+        if unexplained or unevidenced:
+            violations.append({"id": e["id"], "unexplained_prefixes": sorted(unexplained),
+                               "unevidenced_labels": sorted(unevidenced)})
+        if "docs" in prefixes and "meridian-runtime" not in prefixes:
+            docs_without_mr += 1
+    add("A2", "Entries whose citer labels are not matched by their evidence paths",
+        len(violations),
+        "Tested in both directions: no label without a path under its repository, and no path "
+        "under a repository without its label. Bare `docs/` paths never occur without a "
+        "`meridian-runtime/` path in the same entry (%d exceptions), which is why they are "
+        "counted to that repository rather than to this one. Violations: %s"
+        % (docs_without_mr, violations or "none"))
+
+    # --- A3 the checkable arm -----------------------------------------------------
+    field_entries = [e for e in entries if "field" in (e.get("zitiert_von") or [])]
+    pairs = []
+    for e in field_entries:
+        for f in paths_of(e, "field-research"):
+            pairs.append((e, strip_line_suffix(f)[len("field-research/"):]))
+    distinct_paths = sorted({p for _, p in pairs})
+    add("A3", "Entries labelled `field`", len(field_entries),
+        "These are the only entries whose evidence this practice can hold as ground truth. "
+        "They span %d distinct files and %d entry-file pairs."
+        % (len(distinct_paths), len(pairs)))
+
+    # --- A4 do the asserted evidence locations resolve? --------------------------
+    residue, strict_hits, cache = [], 0, {}
+    for e, path in pairs:
+        if path not in cache:
+            cache[path] = git_text(path)
+        body = cache[path]
+        if body is None:
+            residue.append({"id": e["id"], "path": path, "why": "file not at pin"})
+            continue
+        low = body.lower()
+        ids = identifiers(e)
+        hit = [i for i in ids if i in low]
+        if not hit:
+            residue.append({"id": e["id"], "path": path, "why": "no identifier in file",
+                            "looked_for": ids})
+            continue
+        # stricter reading: the identifier must sit on a line that also names a scheme
+        for line in low.split("\n"):
+            if any(i in line for i in hit) and ("arxiv" in line or "doi" in line
+                                                or "http" in line):
+                strict_hits += 1
+                break
+    add("A4", "Unresolved entry-file pairs at the pinned commit", len(residue),
+        "%d of %d pairs resolve: the file exists at %s AND the entry's own identifier occurs "
+        "in its text. Under a stricter reading, where the identifier must also share a line "
+        "with a scheme name or a URL, %d of %d still resolve — reported so the looseness of "
+        "the rule is visible rather than hidden. Residue: %s"
+        % (len(pairs) - len(residue), len(pairs), PIN, strict_hits, len(pairs),
+           residue or "none"))
+
+    # --- A5 what this repository does not contain --------------------------------
+    files = git_files()
+    corpora = [f for f in files if f.split("/")[0] == "corpora" or "/corpora/" in f]
+    manifests = [f for f in files if os.path.basename(f) == "citations.manifest.json"]
+    add("A5", "Files in this repository matching the evidence form attributed to it",
+        len(corpora) + len(manifests),
+        "Searched all %d files tracked at %s for a `corpora/` path segment or a file named "
+        "`citations.manifest.json` — the evidence form the seed of 2026-07-28 addresses to "
+        "this practice as \"eure Zitationsmanifeste\". Neither is present. What this "
+        "establishes is where the files are NOT; it does not by itself establish who writes "
+        "the repository where they are." % (len(files), PIN))
+
+    # --- A6 the arm that cannot be checked from here ------------------------------
+    mer = [e for e in entries if "meridian" in (e.get("zitiert_von") or [])]
+    mer_resolvable = sum(1 for e in mer if paths_of(e, "field-research"))
+    add("A6", "Entries labelled `meridian` whose evidence is checkable from this repository",
+        mer_resolvable,
+        "%d entries carry that label. Exactly %d of them ALSO carries the `field` label and "
+        "an evidence path in this repository, and is already counted and resolved in A3/A4; "
+        "the other %d have no evidence path here at all — their `meridian` evidence lies "
+        "under `meridian-runtime/` and `docs/`, which this repository does not contain. This "
+        "audit therefore makes no claim about whether those back-references resolve, only "
+        "that they cannot be resolved from here."
+        % (len(mer), mer_resolvable, len(mer) - mer_resolvable))
+
+    # --- A7 where the relevance sentences come from -------------------------------
+    herk = collections.Counter(e["relevanz_herkunft"] for e in field_entries)
+    add("A7", "Entries labelled `field` whose relevance sentence is a machine judgement",
+        herk.get("urteil", 0),
+        "Provenance of the relevance sentence across the %d `field` entries: %s. The "
+        "catalogue itself discloses this in an `urteil` block; the audit reads that "
+        "disclosure, it does not detect it."
+        % (len(field_entries), dict(sorted(herk.items()))))
+
+    urteil = [e for e in entries if isinstance(e.get("urteil"), dict)]
+    dates = sorted({e["urteil"].get("am") for e in urteil})
+    basis = sorted({e["urteil"].get("grundlage") for e in urteil})
+    add("A8", "Entries repository-wide carrying a machine-written relevance sentence",
+        len(urteil),
+        "All of them recorded on date(s) %s, written from %s. The generative model named in "
+        "that block is redacted in this practice's freeze and not otherwise reproduced; the "
+        "unredacted value is in the source file pinned in SOURCES.md."
+        % (dates, basis))
+
+    # --- A9 the sieve, the other direction ----------------------------------------
+    where = collections.defaultdict(set)
+    skipped = 0
+    for f in files:
+        body = git_text(f)
+        if body is None:
+            skipped += 1
+            continue
+        for m in ARX.findall(body):
+            where[m].add(f)
+        for m in DOI.findall(body):
+            where[m.rstrip(".,);:'\"]").lower()].add(f)
+
+    s0 = set(where)
+    s1 = {i for i in s0 if arx_shape_ok(i)}
+    s2 = {i for i in s1 if not all(w.startswith(VENDORED) for w in where[i])}
+    s3 = {i for i in s2 if not all(FIXTURE in w for w in where[i])}
+    cat_ids = set()
+    for e in entries:
+        cat_ids |= set(identifiers(e))
+    carried = sorted(s3 & cat_ids)
+    remainder = sorted(s3 - cat_ids)
+
+    add("A9", "Identifier-shaped strings in this repository that the catalogue does not carry",
+        len(remainder),
+        "A sieve over all %d tracked files at %s (%d undecodable, skipped): %d distinct "
+        "identifier-shaped strings; -%d failing a shape rule (arXiv-shaped year 07-26, month "
+        "01-12) leaves %d; -%d occurring only inside instrument 020's vendored third-party "
+        "register corpus leaves %d; -%d occurring only in synthetic test fixtures leaves %d; "
+        "of those, %d are in the catalogue and %d are not. The large exclusions are the "
+        "catalogue's, and they are correct: identifiers this practice AUDITED are not "
+        "identifiers this practice CITES."
+        % (len(files), PIN, skipped, len(s0), len(s0 - s1), len(s1), len(s1 - s2), len(s2),
+           len(s2 - s3), len(s3), len(carried), len(remainder)))
+
+    add("A10", "The remainder, named",
+        [{"identifier": i, "in": sorted(where[i])} for i in remainder],
+        "Handed back to the catalogue's keeper as candidates, not as errors: some are sources "
+        "this practice relies on, some are texts it merely names, and at least one is a defect "
+        "in this practice's own record rather than a gap in the catalogue (A11). Whether an "
+        "entry belongs in the catalogue is its keeper's judgement, not this practice's.")
+
+    # --- A11 the audit's own house ------------------------------------------------
+    bad = "10.3030/101135953"
+    bad_files = sorted(where.get(bad, []))
+    add("A11", "Files in this repository presenting a non-resolving DOI as a citation",
+        len(bad_files),
+        "The identifier %s is presented as the citation for \"EU AI Act, Regulation (EU) "
+        "2024/1689, Art. 5.1(d)\" in %s — one of which is a SHIPPED work, on its published "
+        "face. It came out of this audit's own sieve, not out of a reader's complaint. The "
+        "live fetch that established it does not resolve is an out-of-band observation, "
+        "recorded with its timestamp in the work's record and deliberately NOT an assertion "
+        "here: every assertion in this file is offline and reproducible from the pin."
+        % (bad, bad_files))
+
+    return {
+        "work": "Back-reference audit of the ecology's Paper Catalogue",
+        "practice": "Meridian",
+        "status": "DRAFT — built 2026-07-28, not yet through the gauntlet",
+        "pin": {
+            "repository_commit": PIN,
+            "catalogue_freeze_sha256": sha256(FROZEN),
+            "note": "The catalogue side is pinned by content hash, not by an upstream commit; "
+                    "see SOURCES.md for why, and for the fetch times.",
+        },
+        "caveats": {
+            "what_is_checked": "Only the arm of the catalogue whose evidence lies in this "
+                               "repository. 138 entries point at a different repository and "
+                               "are outside what can be verified from here.",
+            "loose_matching": "A4's rule is 'the identifier occurs in the file', which is "
+                              "weaker than 'the file cites the work'. The strict count is "
+                              "reported inside A4 so the gap is visible.",
+            "sieve_is_a_lower_bound": "A9 measures identifier-shaped strings, not citations. "
+                                      "It cannot see a source referred to by title alone.",
+            "state_travels_with_the_number": "Both sides are states at a time: this repository "
+                                             "at one commit, the catalogue at one fetch. The "
+                                             "catalogue is described in the record as changing "
+                                             "nightly.",
+            "not_an_error_report": "A10's remainder is a list of candidates for the "
+                                   "catalogue's keeper to judge, not a list of catalogue "
+                                   "errors.",
+        },
+        "assertions": A,
+    }
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--check", action="store_true",
+                    help="recompute and exit non-zero if it differs from the committed file")
+    args = ap.parse_args()
+    result = build()
+    text = json.dumps(result, ensure_ascii=False, indent=1, sort_keys=True) + "\n"
+    if args.check:
+        if not os.path.exists(OUT):
+            print("FAIL: %s does not exist" % OUT)
+            return 1
+        committed = open(OUT, encoding="utf-8").read()
+        if committed != text:
+            print("FAIL: results/audit.json differs from a fresh run")
+            return 1
+        print("OK: results/audit.json is byte-identical to a fresh run")
+        return 0
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    with open(OUT, "w", encoding="utf-8") as fh:
+        fh.write(text)
+    for a in result["assertions"]:
+        v = a["value"]
+        print("%-4s %-72s %s" % (a["id"], a["title"][:72],
+                                 v if not isinstance(v, list) else "%d item(s)" % len(v)))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

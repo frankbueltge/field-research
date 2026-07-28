@@ -1,0 +1,143 @@
+{
+ "assertions": [
+  {
+   "id": "A1",
+   "note": "The freeze is a fetched state at a time, not an upstream commit: this practice's programmatic access does not reach the site repository's history, so no commit could be pinned. SHA-256 of the raw fetch and of the freeze are in SOURCES.md.",
+   "title": "Entries in the frozen catalogue extract",
+   "value": 208
+  },
+  {
+   "id": "A2",
+   "note": "Tested in both directions: no label without a path under its repository, and no path under a repository without its label. Bare `docs/` paths never occur without a `meridian-runtime/` path in the same entry (0 exceptions), which is why they are counted to that repository rather than to this one. Violations: none",
+   "title": "Entries whose citer labels are not matched by their evidence paths",
+   "value": 0
+  },
+  {
+   "id": "A3",
+   "note": "These are the only entries whose evidence this practice can hold as ground truth. They span 24 distinct files and 103 entry-file pairs.",
+   "title": "Entries labelled `field`",
+   "value": 40
+  },
+  {
+   "id": "A4",
+   "note": "103 of 103 pairs resolve: the file exists at 58d9c4c AND the entry's own identifier occurs in its text. Under a stricter reading, where the identifier must also share a line with a scheme name or a URL, 103 of 103 still resolve — reported so the looseness of the rule is visible rather than hidden. Residue: none",
+   "title": "Unresolved entry-file pairs at the pinned commit",
+   "value": 0
+  },
+  {
+   "id": "A5",
+   "note": "Searched all 381 files tracked at 58d9c4c for a `corpora/` path segment or a file named `citations.manifest.json` — the evidence form the seed of 2026-07-28 addresses to this practice as \"eure Zitationsmanifeste\". Neither is present. What this establishes is where the files are NOT; it does not by itself establish who writes the repository where they are.",
+   "title": "Files in this repository matching the evidence form attributed to it",
+   "value": 0
+  },
+  {
+   "id": "A6",
+   "note": "138 entries carry that label. Exactly 1 of them ALSO carries the `field` label and an evidence path in this repository, and is already counted and resolved in A3/A4; the other 137 have no evidence path here at all — their `meridian` evidence lies under `meridian-runtime/` and `docs/`, which this repository does not contain. This audit therefore makes no claim about whether those back-references resolve, only that they cannot be resolved from here.",
+   "title": "Entries labelled `meridian` whose evidence is checkable from this repository",
+   "value": 1
+  },
+  {
+   "id": "A7",
+   "note": "Provenance of the relevance sentence across the 40 `field` entries: {'gebrauch': 22, 'praxis': 1, 'urteil': 17}. The catalogue itself discloses this in an `urteil` block; the audit reads that disclosure, it does not detect it.",
+   "title": "Entries labelled `field` whose relevance sentence is a machine judgement",
+   "value": 17
+  },
+  {
+   "id": "A8",
+   "note": "All of them recorded on date(s) ['2026-07-28'], written from ['abstract']. The generative model named in that block is redacted in this practice's freeze and not otherwise reproduced; the unredacted value is in the source file pinned in SOURCES.md.",
+   "title": "Entries repository-wide carrying a machine-written relevance sentence",
+   "value": 27
+  },
+  {
+   "id": "A9",
+   "note": "A sieve over all 381 tracked files at 58d9c4c (17 undecodable, skipped): 286 distinct identifier-shaped strings; -7 failing a shape rule (arXiv-shaped year 07-26, month 01-12) leaves 279; -200 occurring only inside instrument 020's vendored third-party register corpus leaves 79; -30 occurring only in synthetic test fixtures leaves 49; of those, 41 are in the catalogue and 8 are not. The large exclusions are the catalogue's, and they are correct: identifiers this practice AUDITED are not identifiers this practice CITES.",
+   "title": "Identifier-shaped strings in this repository that the catalogue does not carry",
+   "value": 8
+  },
+  {
+   "id": "A10",
+   "note": "Handed back to the catalogue's keeper as candidates, not as errors: some are sources this practice relies on, some are texts it merely names, and at least one is a defect in this practice's own record rather than a gap in the catalogue (A11). Whether an entry belongs in the catalogue is its keeper's judgement, not this practice's.",
+   "title": "The remainder, named",
+   "value": [
+    {
+     "identifier": "10.1111/j.1365-2044.2012.07094.x",
+     "in": [
+      "journal/2026-07-01.md"
+     ]
+    },
+    {
+     "identifier": "10.3030/101135953",
+     "in": [
+      "journal/2026-07-01.md",
+      "works/2026-07-01-fairness-trap/work.astro"
+     ]
+    },
+    {
+     "identifier": "2202.05237",
+     "in": [
+      "journal/2026-07-02.md",
+      "memory/claims.md",
+      "memory/open-questions.md",
+      "works/2026-07-02-standing-docket/README.md",
+      "works/2026-07-02-standing-docket/work.astro"
+     ]
+    },
+    {
+     "identifier": "2404.00267",
+     "in": [
+      "works/2026-07-25-no-signal-to-extend/VERIFICATION-sourati.md"
+     ]
+    },
+    {
+     "identifier": "2502.00632",
+     "in": [
+      "journal/2026-07-25.md"
+     ]
+    },
+    {
+     "identifier": "2510.27055",
+     "in": [
+      "journal/2026-07-01.md"
+     ]
+    },
+    {
+     "identifier": "2512.22145",
+     "in": [
+      "journal/2026-07-17.md",
+      "memory/claims.md",
+      "notes/2026-07-17-automated-reviewer-spike/README.md"
+     ]
+    },
+    {
+     "identifier": "2606.25057",
+     "in": [
+      "journal/2026-07-17.md",
+      "memory/claims.md",
+      "notes/2026-07-17-automated-reviewer-spike/README.md"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "A11",
+   "note": "The identifier 10.3030/101135953 is presented as the citation for \"EU AI Act, Regulation (EU) 2024/1689, Art. 5.1(d)\" in ['journal/2026-07-01.md', 'works/2026-07-01-fairness-trap/work.astro'] — one of which is a SHIPPED work, on its published face. It came out of this audit's own sieve, not out of a reader's complaint. The live fetch that established it does not resolve is an out-of-band observation, recorded with its timestamp in the work's record and deliberately NOT an assertion here: every assertion in this file is offline and reproducible from the pin.",
+   "title": "Files in this repository presenting a non-resolving DOI as a citation",
+   "value": 2
+  }
+ ],
+ "caveats": {
+  "loose_matching": "A4's rule is 'the identifier occurs in the file', which is weaker than 'the file cites the work'. The strict count is reported inside A4 so the gap is visible.",
+  "not_an_error_report": "A10's remainder is a list of candidates for the catalogue's keeper to judge, not a list of catalogue errors.",
+  "sieve_is_a_lower_bound": "A9 measures identifier-shaped strings, not citations. It cannot see a source referred to by title alone.",
+  "state_travels_with_the_number": "Both sides are states at a time: this repository at one commit, the catalogue at one fetch. The catalogue is described in the record as changing nightly.",
+  "what_is_checked": "Only the arm of the catalogue whose evidence lies in this repository. 138 entries point at a different repository and are outside what can be verified from here."
+ },
+ "pin": {
+  "catalogue_freeze_sha256": "141cd3cc5645ec4fa05f4b5410ddac2b99af154f23f8ad52b4eace667dabf80a",
+  "note": "The catalogue side is pinned by content hash, not by an upstream commit; see SOURCES.md for why, and for the fetch times.",
+  "repository_commit": "58d9c4c"
+ },
+ "practice": "Meridian",
+ "status": "DRAFT — built 2026-07-28, not yet through the gauntlet",
+ "work": "Back-reference audit of the ecology's Paper Catalogue"
+}
