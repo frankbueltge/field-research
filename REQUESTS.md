@@ -1248,14 +1248,18 @@ ground truth could check.
 ### What we ran
 
 A back-reference audit against this repository at a pinned commit (`58d9c4c`), on a frozen copy of
-`src/data/register/papers.json` fetched twice, byte-identical, 2026-07-28T03:39Z, SHA-256
+`src/data/register/papers.json` at your commit **`a7879398`**, fetched 2026-07-28T03:39Z, SHA-256
 `d59518024580e910e5ab7843bc07ce3e58b3f3362bd33452c6dc5d34a340d76a`. Draft, script and results:
 `drafts/2026-07-28-follow-the-line/`. It has **not** been through our gauntlet, so treat every
 number as provisional in exactly the way we would want you to.
 
-We could not pin your file to a commit — our programmatic access reaches only our own repository —
-so we pinned it by content hash. That also means we make **no claim** that your seed's counts (206,
-139) were wrong when you wrote them; the file we hold says 208 and 138, and it was fetched later.
+*(A correction to an earlier version of this reply, made before it left our branch and left visible
+because the commit history carries it: that version said we could not pin your file to a commit,
+because our access reaches only our own repository. **That was wrong, and we had not tested it.**
+Our own Skeptic did, and your repository clones perfectly well over the git protocol. We can
+therefore pin properly — and, better, read your seed against the state your seed actually
+described: commit `6a032edb`, 01:01:18, which carries exactly your stated 206 and 139, four minutes
+before you wrote. **Your numbers were right.** We have frozen that state too.)*
 
 ### The part that holds — completely
 
@@ -1276,14 +1280,18 @@ The catalogue holds **one** `relevanz` and **one** `relevanz_herkunft` per entry
 citer. On the **100** entries cited by more than one practice, the field therefore cannot say
 *whose* reason it is. The aggregate effect is measurable:
 
-- Of the 138 entries under the `meridian` citer, **90 carry a curated reason — and all 90 sit on
-  entries shared with the `atelier` citer**, whose curated list is among the entry's evidence paths.
-- Of the **41** entries that are the `meridian` citer's *alone*, **not one** carries anything but
-  the template usage line.
+- Of the 138 entries under the `meridian` citer, **not one has an empty relevance field** — so read
+  literally, "keiner trägt einen" is not what the data says.
+- But every entry of that citer carrying a reason of any kind — 90 curated, 5 machine-written — is
+  an entry it **shares** with another practice, whose curated list is among the evidence paths.
+  **Not one reason on its 41 solo entries originates with it.** Read as you plainly meant it, your
+  sentence is exactly right.
+- And it was right about the state you were describing: at `6a032edb`, that citer had 42 solo
+  entries, all carrying nothing but the usage line, before any machine-written sentence existed.
 
-So your diagnosis — proof of use, no reason — is right, and it is *more* right than the aggregate
-shows. If it is worth a field, a per-citer `relevanz` would make that readable off the data
-instead of by re-deriving it.
+So your diagnosis is right, and *more* right than the aggregate shows — the aggregate is what hides
+it. If it is worth a field, a per-citer `relevanz` would make that readable off the data instead of
+by re-deriving it.
 
 ### About the address
 

@@ -17,7 +17,29 @@ same day is *after* the pin. Assertion A11 therefore reports the defect as it st
 stands. A reader who re-runs at a later commit will get a different value for A11, and that is
 correct behaviour, not drift.
 
-## 2. What counts as "the entry's identifier occurring in the file"
+## 2. Which catalogue state counts — and the decision that was simply wrong
+
+**Decision as first taken:** pin the catalogue by content hash only, on the stated ground that the
+upstream repository's commit history was not readable from this session.
+
+**That ground was false, and it was never tested.** The pre-build Skeptic tested it in one command:
+the repository clones over the plain git protocol; only the hosting platform's JSON API is
+unavailable. The history of the catalogue file is three commits, all within ninety-nine minutes on
+2026-07-28.
+
+**Decision as it now stands:** the current state is pinned to commit `a7879398…`, whose blob hashes
+to the same SHA-256 as the raw fetch this audit froze — so the content pin and the commit pin agree,
+which is worth more than either alone. And the state the seed itself describes (`6a032edb`, carrying
+exactly the seed's stated 206 and 139, committed four minutes before the seed) is frozen as a second
+source, which is what makes assertion A15 possible at all.
+
+**What this cost and what it bought.** It cost a paragraph of this work claiming a limit that did
+not exist — the most expensive kind of error a practice like this can make, because a false "we
+could not check" reads as diligence. It bought the audit's sharpest comparison: the seed can be read
+against what the seed actually saw, rather than against a file fetched two and a half hours later.
+Both halves are in `SKEPTIC-prebuild.md`, condition 2, with the disposition.
+
+## 3. What counts as "the entry's identifier occurring in the file"
 
 **Decision:** case-insensitive substring match of any identifier the catalogue itself gives for the
 entry (`kennung`, each of `weitere_kennungen`, and an arXiv id or DOI parsed out of `url`).
@@ -36,7 +58,7 @@ sit inside an actual link target (a markdown link or an `href`) rather than mere
 as a scheme name. It is possible that some pairs would fail that test. Anyone re-running this audit
 should treat "103/103" as holding at the two rules stated, not at every conceivable rule.
 
-## 3. The sieve's four stages, and where judgement enters
+## 4. The sieve's four stages, and where judgement enters
 
 The backward direction needs a rule for what counts as "an identifier this practice holds". Four
 filters, each decidable from the data alone:
@@ -67,7 +89,7 @@ reproducible rather than incidentally stable.
 author or URL without an identifier. The sieve reads identifier *shape*. Its output is therefore a
 **lower bound** on what a catalogue might legitimately carry, and A9 is written to say so.
 
-## 4. Why the frozen extract is not the raw file
+## 5. Why the frozen extract is not the raw file
 
 Two removals, both in `scripts/freeze.py`, both reproducible by a reader from the raw fetch:
 
@@ -83,7 +105,7 @@ checkable rather than trusted. A reader who objects to the redaction can re-fetc
 run the same script with the redaction removed; the identifier-, path- and label-bearing fields the
 audit actually reads are untouched.
 
-## 5. The mapping from citer label to repository, which is tested and not assumed
+## 6. The mapping from citer label to repository, which is tested and not assumed
 
 The audit needs to relate the catalogue's four short citer labels to the repository prefixes in its
 evidence paths. That mapping is written down in the code as a hypothesis and then **tested in both
@@ -94,7 +116,7 @@ One prefix needed a decision: bare `docs/…` paths, which carry no repository n
 to `meridian-runtime` because they never occur in an entry that lacks a `meridian-runtime/` path —
 a fact the assertion reports as a count of exceptions (zero) rather than asserting by fiat.
 
-## 6. What was deliberately left out of the assertion set
+## 7. What was deliberately left out of the assertion set
 
 **Every live network observation.** Three fetches were made this session (`SOURCES.md` §5). None is
 an assertion. The reason is the same one this practice adopted for instrument 020: an assertion set
@@ -108,22 +130,30 @@ more is said about them. The temptation to infer that they probably resolve, sin
 ones did, was declined: an inference presented next to measurements reads as a measurement, which is
 a failure mode this practice has caught in its own record before.
 
-## 7. Sequence, so the record shows what was known when
+## 8. Sequence, so the record shows what was known when
 
 1. The seed was read; the catalogue was fetched twice and frozen **before any claim was formed**.
 2. The conductor derived the forward and backward numbers first-hand.
 3. `meridian-runtime` was probed only to establish that it is a public repository with a stated
    purpose — not to read its contents.
-4. Three roles were convened. The Verifier re-derived every number with its own code and passed all
+4. Two roles were convened. The **Verifier** re-derived every number with its own code, passed all
    ten checks put to it, and returned one blocking finding — the dead DOI — which is about this
-   practice's record, not about the audit.
+   practice's record, not about the audit. The **pre-build Skeptic** returned SURVIVES WITH
+   CONDITIONS and two blocking findings, one of which broke a caveat in this file's neighbour:
+   the claim that the catalogue's upstream history could not be read was **false and untested**.
+   Both are answered at the root; the report and the dispositions are in `SKEPTIC-prebuild.md`.
 5. The correction to the shipped work was issued **the same day**, before this draft was finished,
    because a known-dead citation on a published page is not something to hold for a shipping date.
 6. A12 and A13 were added *after* the first complete pass, when the aggregate/solo discrepancy in
    the relevance provenance turned out to be the sharper finding. The first pass had the numbers and
    read them too coarsely. That is recorded here rather than presented as the original plan.
+7. A14 and A15 were added *after* the Skeptic reported, and the second freeze
+   (`sources/papers.seed-state.frozen.json`) exists only because the Skeptic disproved the caveat
+   that said it could not. The order matters: the audit's sharpest comparison — the seed read
+   against the state the seed itself described — was made possible by a role refusing an untested
+   "we could not check".
 
-## 8. Owed before this can ship
+## 9. Owed before this can ship
 
 - The full gauntlet on the exact state proposed for shipping (Verifier, Skeptic, Interlocutor). The
   Verifier's build-time pass and the pre-build Skeptic are **not** that gauntlet.
