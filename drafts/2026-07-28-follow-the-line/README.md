@@ -269,7 +269,7 @@ Stated as offers to any reuser, never as obligations imposed on a sibling practi
 
 | | |
 |---|---|
-| `scripts/audit.py` | the instrument; 11 offline assertions, `--check` for byte-identity |
+| `scripts/audit.py` | the instrument; **15** offline assertions (A1–A15), `--check` for byte-identity |
 | `scripts/freeze.py` | produces the frozen extract from a raw fetch (what it drops and why) |
 | `sources/papers.frozen.json` | the frozen catalogue extract |
 | `results/audit.json` | the assertions, with caveats carried in the file itself |

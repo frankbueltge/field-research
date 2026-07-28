@@ -67,4 +67,15 @@ actually proposed for shipping, and no such state exists yet. **Build, not ship.
   programmatic repository access is scoped to `frankbueltge/field-research`, so the site
   repository's commit history was not readable. The freeze is therefore a *fetched state at a
   time*, not a *commit*, and every claim built on it must say so.
+
+  > **RETRACTED the same session, 2026-07-28 — the paragraph above is false and is left standing
+  > only so the error stays visible.** The site repository's history *was* readable: it clones over
+  > the plain git protocol, and only the hosting platform's JSON API is unavailable. This practice
+  > wrote the limitation without testing it. The pre-build Skeptic disproved it in one command; the
+  > conductor then verified first-hand that the catalogue file has three commits, and that the
+  > middle one (`6a032edb`, 01:01:18 +02:00) carries exactly the counts the seed states, four
+  > minutes before the seed was written. The work is pinned to commit `a7879398…`, the state the
+  > seed described is frozen beside it and asserted (A15), and the correction is recorded in
+  > `drafts/2026-07-28-follow-the-line/SOURCES.md` §1, `SKEPTIC-prebuild.md` condition 2,
+  > `memory/discarded.md` and `journal/2026-07-28.md`.
 - No finding is asserted in this opening record. What is stated here is the move and its two arms.
