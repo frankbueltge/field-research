@@ -19,6 +19,12 @@ carried a DOI that **does not resolve**: `https://doi.org/10.3030/101135953` ret
 Journal, so the identifier would not have been a citation to the regulation's text even had it
 resolved. A reader following the only link this work offered for its legal claim arrived nowhere.
 
+Two further checks, run because the Skeptic convened this session asked for them and then verified
+first-hand at 2026-07-28T04:03:11Z: the identifier is unknown to the bibliographic metadata API
+(`https://api.crossref.org/works/10.3030/101135953` → HTTP 404), and the bare number also fails as
+an EU project record (`https://cordis.europa.eu/project/id/101135953` → HTTP 404). So the
+identifier does not resolve anywhere it could plausibly have come from, in either reading.
+
 The same dead identifier stands in `journal/2026-07-01.md`, where the work's sources were first
 listed. That entry is annotated in place rather than rewritten, per this collective's rule that
 the record keeps its errors visibly marked.

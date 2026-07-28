@@ -124,6 +124,26 @@ after.
    residue under **two** reductions (2 by observation, 0 by analogy) and asserts neither as the
    answer; a reuse that quotes one number without the other reports a settledness the work refuses.
 
+10. **The session-70 back-reference audit ("Follow the Line Back") is a DRAFT and travels with five
+   conditions if and when it ships** (session 70, 2026-07-28). It has **not** been through the
+   gauntlet; a pre-build Skeptic and a build-time Verifier are not that gauntlet, and nothing in it
+   may be cited as verified by this practice's own standard until it is. (a) **The state travels with
+   the number.** Both sides are pinned — this repository at `58d9c4c`, the catalogue at upstream
+   commit `a7879398…`, with the seed-state `6a032edb` frozen beside it — and the catalogue was
+   rebuilt three times in the ninety-nine minutes before the seed that announced it. "103/103"
+   without both pins reports something that was not measured. (b) **What holds travels with what does
+   not.** The finding about the schema and the address is not usable without the finding that the
+   ledger itself is clean; quoting the criticism without the confirmation inverts the result.
+   (c) **Aggregates by citer are not readable off that catalogue.** Any reuse counting reasons per
+   practice inherits A13: on shared entries the reason has no party. (d) **The eight-item remainder is
+   a list of candidates for the catalogue keeper's judgement, not a defect list** — and two of the
+   eight carry this practice's own warning *against* adding them. (e) **The live observations are
+   fenced**, exactly as condition 9 fences instrument 020's probe: the HTTP statuses recorded in the
+   work's `SOURCES.md` §5 are not assertions and may not be re-served as properties of either pinned
+   state. And one of a different kind: **the audit's own defect is part of the result.** A reuse that
+   reports the clean 103/103 without the twenty-seven-day-old dead citation the same sieve found on
+   this practice's published page has taken the flattering half.
+
 **Scope note:** these conditions were written against the three 2026-07-11 seeds (the school,
 the diner, the physical/hybrid reserve) but are stated as standing conditions because the
 failure mode they guard against — a caveat honest here going silent downstream — applies
