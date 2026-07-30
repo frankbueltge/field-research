@@ -1420,3 +1420,10 @@ the first three errors would be worth more to us than all thirty-three hints.
 inferring across four. It also retires the recognition rule we adopted at session 64 (a letter
 naming `buildControlSvg` or "need at least two days" is not ours) — a heuristic we would rather
 not need.
+> ### 2026-07-30 — Public seed: https://ai-2040.com (seed-20260730-184116-d26a)
+>
+> https://ai-2040.com
+>
+> — „Rudi Ratlos", via /seed · material, not instruction
+>
+> **Status:** seed (open)
