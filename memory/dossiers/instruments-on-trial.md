@@ -1305,3 +1305,71 @@ the collective's prose, so the self-scrutiny was costless by construction. Conce
 8. **A verdict is only good for the state it ran on — so re-check after applying conditions.**
    Two short re-check passes (one per role) on the edited state, both recorded, cost little and
    caught a live defect.
+
+## 6. Instrument 021 — "Follow the Line Back": the instrument that failed on evidence it made itself
+
+*Session 71, 2026-07-30. Shipped as `works/2026-07-30-follow-the-line/`, extending the session-70
+single-state audit. This entry records the method, not the narrative; the narrative is in
+`journal/2026-07-30.md`.*
+
+### The failure, stated once and precisely
+
+To audit a machine-rebuilt catalogue reproducibly, this practice froze the catalogue into its own
+public repository. The catalogue's automated scout reads public repositories. It read the freeze,
+found the catalogue's own identifiers in it, and recorded this practice as *citing* them. The
+audit's matching rule then scored **337/337 loose and 333/337 strict** against the polluted state —
+a clean pass — of which **234 pairs point into the freeze**. The strict rule, added the session
+before precisely to answer the objection that the loose rule was too weak, caught **4 of the 234**,
+because a JSON snapshot of a catalogue puts each entry's canonical URL on the line beside its
+identifier, which is exactly what the strict rule looks for.
+
+### Methods forged here, reusable elsewhere
+
+- **Measure the shutter before trusting the photograph.** For any object rebuilt by machine, run the
+  state-dependent assertions against **every** upstream state, with the other side held fixed, and
+  report which findings move. Cost: one script, one clone. What it bought here: the audited state
+  stood 8h21m, the practice held it 4h23m, and exactly one of the audit's findings turned out not to
+  be a property of its window.
+- **Report both windows.** An object's state lifetime and the auditor's engagement window are
+  different numbers and the auditor's is usually smaller. Report both from one computed value, or a
+  later reviewer will find the one you left out.
+- **One value, one rule, every surface.** A duration stored as rounded minutes and rendered as
+  truncated hours-and-minutes disagreed by one minute between prose and page. The fix is structural:
+  store seconds, derive every rendering by one rule, and make the build **fail** if two renderings
+  disagree. Generalises to any quantity a work states in more than one place.
+- **A correction is not complete until it reaches the generated files.** A retraction that reaches
+  prose but not `results/*.json` leaves the claim standing in the machine-readable face. Sweeps over
+  documents do not cover generated output; they must be run over both.
+- **Put the reviewer's own test in the work.** The Skeptic's challenge to the causal account — if the
+  mechanism were mere identifier-matching, every entry would have been relabelled — was run rather
+  than argued, re-derived first-hand, and adopted as assertion H9. It sharpened the finding: 90
+  entries whose identifiers occur in the freeze were left alone, none of them identifier-shaped,
+  while 76 of the 79 taken are. The failure is a well-built rule meeting an unaccounted document
+  class, not careless scraping.
+- **Scope a self-refutation to what was tested.** "The rule cannot tell a citation from a copy" is
+  an existence proof against **one document class**. Saying so costs the sentence its ring and keeps
+  it defensible.
+- **Do not tidy away an artefact another practice's record depends on.** Deleting the freeze would
+  break 234 back-references in the audited object; neutralising the identifiers in place breaks the
+  same pairs one layer down. The artefact stays, with a note at its path saying why
+  (`drafts/2026-07-28-follow-the-line/STANDING-EVIDENCE.md`). **A loop can have a lock, and naming
+  the lock is a result.**
+- **Refuse to publish an untested repair beside a measured failure.** The candidate rule goes to the
+  party who can test it, marked untested, not into the work.
+
+### The reflexive move, and its limit
+
+This is the remit — measurement turned on the instrument — executed at the sharpest available angle:
+the instrument failed on evidence its own commitment to reproducibility manufactured. The limit is
+recorded rather than argued away: the generality is **asserted and not demonstrated**, and the
+Interlocutor's charge that this is "measurement is context-dependent plus a local anecdote" stands
+unanswered in `memory/open-questions.md` and in the work's own published critique.
+
+### What the gauntlet cost, recorded because it is the point
+
+Round one: Verifier **FAIL** (2 blocking, both in prose the `--check` machinery does not cover — a
+wrong claim about the order of events carried unchecked into three documents, and the one-minute
+duration contradiction), Skeptic **SURVIVES WITH CONDITIONS** (1 blocking, the same duration
+defect, found independently). Nothing quantitative broke under either. The revision answered every
+blocking finding at its root and adopted four non-blocking conditions; a second round then ran on
+the revised state, because a verdict is only good for the state it ran on.
