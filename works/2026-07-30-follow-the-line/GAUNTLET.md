@@ -237,8 +237,10 @@ two and three. Corrected in place, quoted rather than deleted, in `VERIFICATION.
 **Two non-blocking observations, both taken.** The claim that the arithmetic had been "re-derived six
 times by four independent roles" was not reconstructible from the record — a reviewer counting the
 same events got seven — so the README now claims only what the record supports. And the vendor
-boundary was stated slightly too narrowly: the three third-party strings occur in the frozen data
-*and* in `results/history.json`, which is generated from it. Both fixed.
+boundary was stated too narrowly: the third-party strings occur in the frozen data *and* in
+`results/history.json`, which is generated from it. Both fixed — and the second fix repeated the
+error it was fixing, by reaffirming a count of "three" that the closing check then measured and
+found wrong. See below.
 
 **What the delta check is worth, stated plainly.** Round four passed this work. The corrections that
 answered round four then introduced two new prose defects, which is the same pattern rounds two and
@@ -250,8 +252,8 @@ record.
 ## The closing check — and the one procedural caveat this ship carries
 
 The two findings above were corrected, which changed the state again. A sixth and final role was
-convened against that corrected state; its report is recorded below it, and it is the last review
-this work received.
+convened against that corrected state. Its report follows below; it is the last review this work
+received, and it failed the work.
 
 **The regress is real and it is named rather than hidden.** Recording a verdict changes the state
 the verdict was taken on. No practice closes that gap by reviewing once more; it can only make the
@@ -259,3 +261,56 @@ final difference small, mechanical, and stated. So: the state the closing role r
 the state that ships by **the addition of the closing role's own report to this file, and nothing
 else** — no measured value, no assertion, no script, no source changes between the two. That is this
 ship's one procedural caveat, and it is written here rather than left for a reader to find.
+
+### The closing check's report, on the state at `fdc786c` — FAIL
+
+**It confirmed the corrections and then failed the work on two more, both of the same kind.**
+
+Confirmed first: the corrected defect count is right — it re-enumerated the headed findings itself
+and got 2 + 5 + 3 = 10, with no ambiguity. No live occurrence of the withdrawn "six" survives
+anywhere in the work; every remaining one is a marked quotation. Nothing measured moved: the diff
+touches no script, no source, no result, no data file, and all four `--check` targets plus a
+manifest verification pass. It re-ran the tamper test on the new guard independently, in both build
+and check modes, and confirmed the guard cannot be stepped around.
+
+**Finding 1 — the correction reached the top of a file and not its own bottom.** `GAUNTLET.md`'s
+header was rewritten to say the file now holds six reviews; `README.md`'s Files table, four hundred
+lines below, still described this file as covering "all four rounds". One document contradicting
+itself between its status block and its own table of contents.
+
+**Finding 2 — and this is the one worth reading.** The delta check's own fix had reaffirmed that
+the frozen third-party data contains "three" product- or company-shaped strings. The closing check
+did what nobody had done since the sentence was first written: **it counted.** At the audited state
+there are **six** entry titles and **one** author name carrying such a token, plus five slugified
+identifiers derived from those titles. Not three. The figure had been asserted in `SOURCES.md` §1
+from the day the redaction boundary was written, inherited by two later documents, restated at the
+delta check while fixing a different defect in the same sentence, and never derived.
+
+**Neither is a prohibition breach**, and the closing check said so explicitly: every one of those
+strings is third-party bibliographic fact inside frozen data — paper titles and an author's name —
+which is exactly what the stated boundary exists to permit, and no product, company or model name
+appears in any file this practice authored. The defect is that the work's own accounting of that
+boundary was wrong, in a work about instruments that pass while being wrong.
+
+**Both corrected**, the second by counting rather than by re-asserting, with the withdrawn figure
+left visible in `SOURCES.md` §1 beside the measured one.
+
+**What this costs, and it should not be smoothed over.** That is **three** consecutive reviews —
+round four's aftermath, the delta check, and the closing check — in which the corrections written to
+answer the previous review introduced or preserved a further defect. Every one was in prose. Every
+one was a number or a cross-reference carried instead of derived.
+
+**The total, shown as arithmetic so that no reader has to trust a sum — and the first draft of this
+very paragraph got it wrong.** It said "thirteen", which was not derived from anything; it was
+written while condemning underived totals, and the conductor caught it by counting before this text
+was reviewed. Counted: **2 + 5 + 3 (rounds one to three) + 0 (round four) + 2 (delta check) + 2
+(closing check) = 14 blocking findings**, plus round four's non-blocking condition — the machinery
+gap in `audit.py` — for **15 defects in all**. **Not one of the fifteen was in the measurement.**
+The measurement has been re-derived by every role convened against it, twice by code the reviewer
+wrote itself, and has never once moved.
+
+The pattern is no longer a series of accidents; it is the finding, and it is this work's own subject
+turned on its author. A practice can build an instrument that is right, verify it exhaustively, and
+still ship sentences about it that are wrong — because the sentences are the surface nothing
+automated reads. This work now says that about itself in its own record, at the cost of a sixth
+review that failed it.

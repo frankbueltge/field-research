@@ -25,15 +25,26 @@ what was changed because of it — including a real gap in this work's own verif
 that three previous rounds had missed — is in `VERIFICATION.md` and `GAUNTLET.md`, both published
 with the work, alongside the Interlocutor's critique verbatim in `INTERLOCUTOR.md`.
 
-**And then the fifth check, on the state that ships, returned FAIL.** Because the corrections made
-after round four changed the state, a further role was convened against the exact shipped state
-rather than trusting the round-four verdict to survive its own answer. It confirmed every number,
-hash and guard — and rejected two sentences written for the ship: the defect count corrected above,
-and a paragraph in `VERIFICATION.md` that described that very check in the past tense **before it
-had run**. Both are corrected in place and marked, and the sixth and final check ran against the
-result. This work does not get to describe its reviewers as satisfied before they are, and it has
-now failed to observe that rule three times, on three different surfaces, which is worth more to a
-reader than a clean record would be.
+**And then the fifth check returned FAIL, and the sixth returned FAIL.** Because the corrections
+made after round four changed the state, a role was convened against the exact shipped state rather
+than trusting the round-four verdict to survive its own answer. It confirmed every number, hash and
+guard — and rejected two sentences written for the ship: the defect count corrected above, and a
+paragraph in `VERIFICATION.md` that described that very check in the past tense **before it had
+run**. A sixth and closing role then reviewed those corrections and **failed the work again**, on
+the same class of defect twice more: the correction that rewrote `GAUNTLET.md`'s header had not
+reached this file's own Files table four hundred lines below, and a count of the product- and
+company-shaped strings inside the frozen third-party data — *three* — had been asserted since the
+redaction boundary was first written, inherited by two later documents, restated while fixing a
+different defect in the same sentence, and never derived. Counted at last: **six titles, one author
+name, five derived identifiers.** Neither finding is a breach of what this practice forbids itself;
+both are its own accounting of its own boundary being wrong.
+
+**Counted rather than asserted, because that is the whole subject:** 2 + 5 + 3 + 0 + 2 + 2 = **14
+blocking findings across six reviews**, plus round four's non-blocking machinery condition — **15
+defects in all, and not one of them in the measurement.** Three consecutive reviews found defects
+introduced or preserved by the corrections written for the review before. This work does not get to
+describe its reviewers as satisfied before they are, and it failed to observe that rule three
+times, on three different surfaces. A clean record would tell a reader less than this one does.
 
 **It ships as an offer, not a verdict.** VERIFIED, for this practice, means: it survived *this*
 practice's gauntlet, on a stated date, against stated sources — material with a disclosed pedigree,
@@ -448,6 +459,6 @@ receiver only if that receiver accepts them.
 | `SHA256SUMS.txt` | SHA-256 of every file in the work, generated, not typed |
 | `METHOD.md` | the decisions taken while building, including the ones that were contested |
 | `SKEPTIC-prebuild.md` | the pre-build Skeptic's report in full, with the dispositions beside it |
-| `GAUNTLET.md` | the graduation gauntlet: all **four** rounds, every blocking finding and its disposition |
+| `GAUNTLET.md` | the graduation gauntlet: **four rounds, the delta check on the shipped state and the closing check** — every blocking finding and its disposition |
 | `INTERLOCUTOR.md` | the hostile critic's report, verbatim and unedited, with what it changed |
 | `VERIFICATION.md` | the Verifier and Skeptic reports for rounds two, three and **four** — the last of them on the exact shipped state |

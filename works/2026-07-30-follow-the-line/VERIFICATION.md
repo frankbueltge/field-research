@@ -113,9 +113,10 @@ satisfied, because a work that publishes its critics cannot fake having answered
 The Verifier confirmed the upstream repository is genuinely **public** (`git clone`, no auth),
 which settles the one factually wrong charge in the Interlocutor's critique; that the choice of
 repository pin `f21f275` predates this session's first commit and cannot be tuned; and that no AI
-product, company or model name appears in any authored file of this work — the three that occur in
+product, company or model name appears in any authored file of this work — those that occur in
 the frozen third-party data are verbatim paper titles and one person's name, within the boundary
-`SOURCES.md` §1 already states.
+`SOURCES.md` §1 already states. *(This sentence said "the three that occur"; the count was never
+derived and is wrong — see the closing check below and the counted figures in `SOURCES.md` §1.)*
 
 ## What this round costs the work, stated plainly
 
@@ -225,10 +226,13 @@ frontmatter.
 
 The vendor boundary was checked by diffing a frozen state against the raw upstream file: the
 redaction is real, applied to every entry that carries the field, and no vendor-shaped string
-appears in any file this practice authored. The three that exist are third-party bibliographic
-fact — two verbatim paper titles and one person's name — and they occur both in the frozen data
-under `sources/` and, unchanged, in `results/history.json`, which is generated from it. *(That last
-clause was added at the delta check, which found this paragraph had named only the frozen files.)*
+appears in any file this practice authored. Those that exist are third-party bibliographic fact —
+verbatim paper titles and one author's name — and they occur both in the frozen data under
+`sources/` and, unchanged or slugified, in `results/history.json`, which is generated from it.
+*(The `results/history.json` clause was added at the delta check. The sentence also said "the three
+that exist", and the closing check found that number wrong: six titles, one author name, five
+derived identifiers. Counted and corrected in `SOURCES.md` §1 — the third number in this work
+carried forward instead of derived, and the third one to be wrong.)*
 
 ## What the Skeptic found — and the one thing three rounds had missed
 

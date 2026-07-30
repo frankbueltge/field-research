@@ -64,10 +64,23 @@ script:
    assertions A7 and A8 read. The unredacted value is one re-fetch away for any reader.
 
 Boundary of that redaction, stated so it does not look inconsistent: the freeze still contains
-company and product names where they occur inside **published paper titles** (three of them) and
-one **person's name**. Those are third-party bibliographic facts about the texts catalogued —
-the same facts this practice's own shipped works already cite. The prohibition is on naming this
-practice's own tooling and its vendors, not on reporting the literature.
+company and product names where they occur inside **published paper titles** and one
+**person's name**. Those are third-party bibliographic facts about the texts catalogued — the same
+facts this practice's own shipped works already cite. The prohibition is on naming this practice's
+own tooling and its vendors, not on reporting the literature.
+
+**Counted, 2026-07-30 (session 72, at the closing check), because it had only ever been asserted.**
+This paragraph said "three of them" from the day it was written. Nobody had counted. At the audited
+state, matching against a list of company, product and model names: **six** distinct entry titles
+and **one** author name carry such a token, and **five** slugified `id` values derived from those
+titles carry the same tokens in lower case. Of the seven human-readable values, **five** titles name
+a company or a product outright; **one** contains an ordinary English word that is also a company
+name; and the author name is a historical figure whose given name coincides with a current model
+name. The old figure of three is withdrawn. Nothing about the redaction rule changes — the rule
+never depended on the count — and nothing here is a prohibition breach: every one of these strings
+is third-party bibliographic fact inside frozen data, which is exactly what this boundary exists to
+permit. What changes is that the boundary is now measured instead of estimated, in a work whose
+subject is the difference.
 
 ### 1a. Every state, not one (added 2026-07-30, session 71)
 
