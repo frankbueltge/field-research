@@ -46,9 +46,15 @@ it exactly where it hurts: *"the live interactive page — the artefact whose wh
 'nothing is typed by hand, everything is read from data.json' — will display 8h22m."*
 
 **Disposition: fixed at the root, not at the surface.** The manifest now carries
-`audited_state_lifetime_seconds` and every rendering — manifest, assertions, README, face — derives
-from that one value by one truncating rule. `build_face.py` now **fails the build** if the
-manifest's human string and the assertion's seconds ever disagree again.
+`audited_state_lifetime_seconds` and the renderings derive from that one value by one truncating
+rule. `build_face.py` now **fails the build** if the manifest's human string and the assertion's
+seconds ever disagree again.
+
+> **This disposition was false when written, and is left standing with its correction.** It
+> originally said "every rendering — manifest, assertions, README, **face** — derives from that one
+> value". The face did not: the same edit deleted the two identifiers the standfirst still read, so
+> the page could not render at all. Caught by the conductor re-reading its own edit while the roles
+> were still running, and independently by both round-two roles. See `VERIFICATION.md` §1.
 
 ### Non-blocking, taken — the causal account tested rather than argued (Skeptic)
 
@@ -56,12 +62,18 @@ The Skeptic asked whether the mechanism could be something other than the freeze
 "the identifier occurs in the freeze", every catalogued entry should have been relabelled, since the
 freeze is a copy of the whole catalogue. It ran the test and found the answer sharpens the work.
 
-**Disposition: adopted as assertion H9**, re-derived first-hand before it was written into the
-work. 90 entries whose identifiers also occur in the freeze were **not** relabelled, and not one of
-those carries a DOI- or arXiv-shaped identifier, while 76 of the 79 that were taken do. The scout
-discriminates by identifier shape — the same decidable move this audit uses in its own sieve. The
-failure is a well-built rule meeting a document class no rule here accounted for, this work's own
-included.
+**Disposition: adopted as assertion H9** — and the adoption was wrong.
+
+> **WITHDRAWN at round two. Do not read the following as this work's finding.** This disposition
+> said: *"90 entries whose identifiers also occur in the freeze were not relabelled, and not one of
+> those carries a DOI- or arXiv-shaped identifier, while 76 of the 79 that were taken do. The scout
+> discriminates by identifier shape."* The clean split was an artifact of a shape test that read
+> one identifier field where the rest of this audit reads a wider set, applied to one side of the
+> comparison. **21 of the 90 are identifier-shaped**, and all 79 taken are, not 76. The
+> conductor re-derived this assertion before adopting it **using the same narrow test**, and so
+> confirmed the error rather than catching it. What survives: the selection is not indiscriminate,
+> shape is necessary and not sufficient, and the rule is not readable off the output. See
+> `VERIFICATION.md` §3 and H9's own `withdrawn_2026_07_30` block.
 
 ### Non-blocking, taken — scope of the central claim (Skeptic)
 
