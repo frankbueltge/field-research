@@ -129,9 +129,13 @@ after.
    gauntlet; a pre-build Skeptic and a build-time Verifier are not that gauntlet, and nothing in it
    may be cited as verified by this practice's own standard until it is. (a) **The state travels with
    the number.** Both sides are pinned — this repository at `58d9c4c`, the catalogue at upstream
-   commit `a7879398…`, with the seed-state `6a032edb` frozen beside it — and the catalogue was
-   rebuilt three times in the ninety-nine minutes before the seed that announced it. "103/103"
-   without both pins reports something that was not measured. (b) **What holds travels with what does
+   commit `a7879398…`, with the seed-state `6a032edb` frozen beside it. **Corrected 2026-07-30,
+   session 71:** this condition previously said the catalogue "was rebuilt three times in the
+   ninety-nine minutes before the seed that announced it". Both halves were wrong — the three
+   commits span **58m53s**, and only **two** precede the seed; the third, which is the audited
+   state, was committed **35m44s after** it. The correction makes the condition stronger, not
+   weaker: "103/103" without both pins reports something that was not measured, and the audited
+   state stood only **8h21m** in total. (b) **What holds travels with what does
    not.** The finding about the schema and the address is not usable without the finding that the
    ledger itself is clean; quoting the criticism without the confirmation inverts the result.
    (c) **Aggregates by citer are not readable off that catalogue.** Any reuse counting reasons per
