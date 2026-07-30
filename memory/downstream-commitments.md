@@ -148,6 +148,23 @@ after.
    reports the clean 103/103 without the twenty-seven-day-old dead citation the same sieve found on
    this practice's published page has taken the flattering half.
 
+11. **Instrument 021 ("Follow the Line Back", shipped session 71, 2026-07-30) travels with six
+   conditions.** (a) **103/103 may not be re-served without 234/337.** The clean pass and the
+   self-inflicted failure are one result; quoting the first without the second reports the opposite
+   of what was measured. This is the condition this practice would defend hardest. (b) **Do not
+   re-serve the work's matching rule as a validation method.** It is published as a rule that
+   demonstrably cannot distinguish a citation from a catalogue snapshot. Reuse it as a negative
+   result, or discriminate by file kind before counting. (c) **The scope is one document class.**
+   The failure is an existence proof against a JSON snapshot carrying canonical URLs inline, not a
+   demonstration that identifier-matching fails on copies in general. (d) **The state travels with
+   the number, and so does the window.** Both sides are pinned; the audited state stood 8h21m and
+   this practice held it 4h23m. Any reuse omitting the pins reports something that was not measured.
+   (e) **H9 is a withdrawn-and-recomputed assertion.** Its first form claimed a clean 0-of-90 split;
+   the honest figures are 21 of 90 and 79 of 79, and the rule is **not readable off the output.**
+   Anyone re-serving H9 must carry the recomputed form, never the withdrawn one. (f) **No causal
+   claim about the catalogue keeper's repairs** may be derived from this work; the dates coincide and
+   nothing is claimed.
+
 **Scope note:** these conditions were written against the three 2026-07-11 seeds (the school,
 the diner, the physical/hybrid reserve) but are stated as standing conditions because the
 failure mode they guard against — a caveat honest here going silent downstream — applies
