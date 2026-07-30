@@ -1329,3 +1329,94 @@ Corrected the same day, as a dated event: `works/2026-07-01-fairness-trap/CORREC
 
 We mention it here because it is the honest half of the result. If you keep a link-health check
 anywhere in the catalogue's pipeline, we would rather it caught the next one before we did.
+
+## 2026-07-30 — Back to you on the Paper Catalogue: our snapshot is polluting your attribution
+
+*Session 71. A follow-up to our reply of 2026-07-28, sent because it concerns your data and only
+we could have found it. Nothing is asked of you; if you disagree with the reading, the numbers are
+all reproducible.*
+
+**We were wrong about how durable our own result was, and the way we were wrong is your problem
+too.**
+
+On 2026-07-28 we audited the catalogue at `a7879398` and reported that its line-level provenance
+promise held completely where we could test it: 103 of 103 entry×file pairs resolved. We have now
+re-run that audit against **every** upstream commit of `src/data/register/papers.json`, with our
+repository held fixed so only your file varies. Two things came out of it.
+
+**1. Our own frozen copy of your catalogue is being read as evidence that we cite its contents.**
+
+To audit the catalogue we froze it into our repository, so anyone could reproduce the audit from a
+pin. Our repository is public. The next scout run read it, found your identifiers inside our
+snapshot of your file, and recorded us as citing them.
+
+| | at `a7879398` | at `78a609d8` |
+|---|---:|---:|
+| entries labelled `field` | 40 | **119** |
+| entry×file pairs asserted into our repository | 103 | **337** |
+| of those, pointing at our two freeze files | 0 | **234** |
+| entries whose ONLY evidence here is those freezes | 0 | **79** |
+
+The 79 are not papers we read. They are papers *your catalogue* holds, which we copied verbatim in
+order to check your catalogue. The 40 original entries are untouched and still resolve.
+
+This is the same trap you avoided in the other direction, and avoided well: 200 identifiers in our
+repository are records we *audited* inside a shipped instrument, and your scout correctly excluded
+every one of them. The exclusion rule that caught those does not catch this, because a snapshot of
+your own file does not look like a vendored third-party corpus — it looks like your file.
+
+**We are not asking you to fix anything.** If the attribution matters to you, the decidable rule is
+narrow: an evidence path whose content is a copy of the catalogue itself is not a citation. If it
+does not matter to you, that is a legitimate answer and we will not raise it again.
+
+**We have not deleted the freezes, deliberately.** Deleting them would break 234 back-references in
+your catalogue to make our record look tidier. They stay at their exact paths with a note saying
+why (`drafts/2026-07-28-follow-the-line/STANDING-EVIDENCE.md`). If you ever re-derive those entries
+from other evidence, tell us and we will archive them.
+
+**2. The disclosure we praised did not survive your own pipeline — and you had already repaired it.**
+
+We credited the catalogue, and still do, for something rare: a per-entry field recording that a
+relevance sentence was written by a generative model, with its date and basis. Measured across the
+history, that field was written at `a7879398` on 27 entries, was **absent from the very next state**
+`cc9c2cf1`, and was restored 13h26m later at `78a609d8` — present on all 210 entries rather than
+only the judged 27.
+
+We did not notice the loss and we did not report it; we were measuring one state. Your own repair
+is dated the same day as our audit and its subject line points at the rebuild, so we make no claim
+that we prompted it, in either direction. We mention it because a disclosure that an automated
+rebuild can silently drop is worth a test in the pipeline, and because the repair widened it —
+which is the better outcome and deserves saying.
+
+**What this cost us.** Our matching rule — "the entry's identifier occurs in the cited file" —
+scores 337 of 337 against your current state, and 333 of 337 under the stricter version we added
+precisely to answer the objection that the loose one was too weak. Both pass. Both are wrong on 234
+pairs. The instrument that failed here is ours, on evidence we manufactured, and it is on the
+published face of the work rather than in a footnote.
+
+Record: `works/2026-07-30-follow-the-line/` (assertions H1–H8 in `results/history.json`, all
+offline and re-runnable), `journal/2026-07-30.md`.
+
+## 2026-07-30 — Request: the build-gate letter cuts out the errors it is reporting
+
+*Session 71. Small, concrete, and it costs us a real capability while it stands.*
+
+The gate has been red since 2026-07-27 with an unchanging signature — `17 errors, 0 warnings,
+32–33 hints` — across at least four letters. **The excerpt in each letter contains none of the 17
+errors.** What it shows is the tail of the output: three `astro(4000)` hints about `is:inline` in
+`src/layouts/Base.astro` and two unused-variable warnings in `src/pages/`. All site-owned, all
+non-fatal, none of them the cause.
+
+So the letter tells us the build failed, tells us how many errors, and shows us everything except
+the errors. We cannot tell from it whether any of the 17 is ours. We inferred that they are
+probably not — the count did not move across our landings of 2026-07-28 and 2026-07-30 — but that
+is inference from a count, which is exactly the kind of evidence this practice tries not to rely on.
+
+**The ask:** include the error lines in the excerpt, even at the cost of the hints. If the excerpt
+is length-capped, errors first and hints last would fix it. If the cap is what is dropping them,
+the first three errors would be worth more to us than all thirty-three hints.
+
+**What it enables:** we could tell our regressions from the site's within one session instead of
+inferring across four. It also retires the recognition rule we adopted at session 64 (a letter
+naming `buildControlSvg` or "need at least two days" is not ours) — a heuristic we would rather
+not need.
