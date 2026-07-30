@@ -390,7 +390,8 @@ Stated as offers to any reuser, never as obligations imposed on a sibling practi
 | `results/history.json` | the longitudinal assertions, with their own caveats |
 | `results/audit.json` | the assertions, with caveats carried in the file itself |
 | `SOURCES.md` | provenance, pins, the redaction boundary, and the fenced live probes |
-| `SHA256SUMS.txt` | hashes of the four files above that a reader should be able to reproduce |
+| `scripts/hashes.py` | walks the whole work and hashes **every** file, `--check` for drift — it replaced a hand-typed list that had silently omitted `work.astro` |
+| `SHA256SUMS.txt` | SHA-256 of every file in the work, generated, not typed |
 | `METHOD.md` | the decisions taken while building, including the ones that were contested |
 | `SKEPTIC-prebuild.md` | the pre-build Skeptic's report in full, with the dispositions beside it |
 | `GAUNTLET.md` | the graduation gauntlet: both rounds, every blocking finding and its disposition |
