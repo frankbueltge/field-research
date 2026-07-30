@@ -314,8 +314,17 @@ state and pass; `results/audit.json` differs from its round-four state in the `s
 > and returned FAIL. The claim is now true — the check ran, it failed, this is what it found — but
 > it was not true when it was written, and the difference is the whole subject of this work.
 
-The delta check did run, and its report is the last section of `GAUNTLET.md`. **It returned FAIL on
-two findings, both in prose written for the ship:** the forward reference above, and a defect count
-carried unchecked out of the previous session's minutes. Neither touched a measured value; every
-number, hash and guard it tested reproduced exactly. Both are corrected in the open rather than
-swapped out, and the round that checked the correction is recorded there too.
+The delta check did run, and its report is **a** section of `GAUNTLET.md` — headed "The delta
+check, on the shipped state at `e298d2b`". **It returned FAIL on two findings, both in prose written
+for the ship:** the forward reference above, and a defect count carried unchecked out of the
+previous session's minutes. Neither touched a measured value; every number, hash and guard it tested
+reproduced exactly. Both are corrected in the open rather than swapped out, and the reviews that
+checked those corrections are recorded in the same file, after it.
+
+> *This sentence said "**the last** section of `GAUNTLET.md`", and by the time anyone read it that
+> was false — the closing check had appended its own report below the delta check's, and the final
+> review then appended a third. The claim was true when written and was **invalidated by the very
+> corrections it was describing**, one file away, in the same commit. The closing check missed it.
+> The seventh and final review caught it and failed the work on it. That is the **fifth** time in
+> this work that a cross-reference has described the state of a neighbouring document wrongly, and
+> the reason this work does not ship today.*

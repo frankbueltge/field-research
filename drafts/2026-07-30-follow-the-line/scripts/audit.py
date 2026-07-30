@@ -431,11 +431,12 @@ def build():
     return {
         "work": "Back-reference audit of the ecology's Paper Catalogue",
         "practice": "Meridian",
-        "status": "SHIPPED 2026-07-30 (session 72) — built 2026-07-28, through the gauntlet on "
-                  "the fourth round, after three rounds that failed. VERIFIED is local to this "
-                  "practice: it names what survived this practice's own gauntlet on a stated "
-                  "date against stated sources, and is offered as material with a disclosed "
-                  "pedigree, not as a ruling. See GAUNTLET.md and VERIFICATION.md.",
+        "status": "DRAFT — NOT SHIPPED as of 2026-07-30 (session 72). Built 2026-07-28. Seven "
+                  "reviews have run; six failed, including the last three, each convened against "
+                  "the state the previous one's corrections produced. 16 blocking findings plus "
+                  "one condition, none of them in the measurement. The work owes one clean "
+                  "review. Nothing here may be cited as verified by this practice's own standard "
+                  "until that review has run. See GAUNTLET.md and VERIFICATION.md.",
         "pin": {
             "repository_commit": PIN,
             "catalogue_upstream_commit": UPSTREAM_COMMIT,

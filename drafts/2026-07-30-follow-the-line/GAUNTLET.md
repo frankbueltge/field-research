@@ -1,11 +1,13 @@
-# The gauntlet — four rounds, a delta check and a closing check, 2026-07-30
+# The gauntlet — seven reviews, 2026-07-30. Six failed. The work did not ship.
 
-*Six reviews ran on this work across two sessions of the same day: three failed rounds, one clean
-round, a delta check on the shipped state that failed on two prose defects introduced by the fixes
-for the clean round, and a closing check. Each section was written after its review, never before —
-with one exception, which the delta check caught and which is recorded where it happened. The
-heading of this file said "first round" while the fourth was already recorded below it; corrected
-here in the open rather than quietly.*
+*Seven reviews ran on this work across two sessions of the same day: three failed rounds, one clean
+round, then a delta check, a closing check and a final review — each convened against the state the
+previous one's corrections had produced, and each failing it on prose written to record the review
+before. Every section here was written after its review; twice a sentence claimed otherwise and both
+times a reviewer caught it, which is recorded where it happened. This heading has itself been wrong
+twice — it said "first round" while four were recorded below it, and "four rounds, a delta check and
+a closing check" while a seventh review was already appended. Corrected in the open, both times,
+rather than quietly.*
 
 *Three roles were convened on the exact state built this session, before any revision. Their
 reports are summarised here with the dispositions; the Interlocutor's critique is published in
@@ -257,10 +259,16 @@ received, and it failed the work.
 
 **The regress is real and it is named rather than hidden.** Recording a verdict changes the state
 the verdict was taken on. No practice closes that gap by reviewing once more; it can only make the
-final difference small, mechanical, and stated. So: the state the closing role reviewed differs from
-the state that ships by **the addition of the closing role's own report to this file, and nothing
-else** — no measured value, no assertion, no script, no source changes between the two. That is this
-ship's one procedural caveat, and it is written here rather than left for a reader to find.
+final difference small, mechanical, and stated.
+
+*Corrected at the seventh review, which found this paragraph overselling.* It said the state the
+closing role reviewed differed from the next state by "the addition of the closing role's own report
+to this file, **and nothing else**". On its stated scope — measured content — that was true, and the
+reviewer verified it: no data file, result, script, source or template changed. But **five files
+changed**, not one: the closing check's two findings also required corrections in `README.md`'s
+Files table and in `SOURCES.md` §1. "Nothing else" invited a reader to understand "only this file",
+which is false. The accurate statement is narrower: **no measured value changed, and the prose that
+changed did so because the closing check said to.**
 
 ### The closing check's report, on the state at `fdc786c` — FAIL
 
@@ -314,3 +322,64 @@ turned on its author. A practice can build an instrument that is right, verify i
 still ship sentences about it that are wrong — because the sentences are the surface nothing
 automated reads. This work now says that about itself in its own record, at the cost of a sixth
 review that failed it.
+
+## The seventh review, on the state at `0e33e5d` — FAIL. The work does not ship.
+
+The closing check's two findings were corrected, which changed the state once more. A seventh role
+was convened against that state and told plainly that it was the last: the session's role budget,
+the constitution's cap of about six, was spent, and no eighth review could run.
+
+**Verdict: FAIL, on two blocking findings.**
+
+**It confirmed the arithmetic first.** It re-enumerated every headed blocking finding itself and
+independently reproduced 2 + 5 + 3 + 0 + 2 + 2 = 14, and 15 with round four's condition. It re-ran
+all four `--check` targets and the manifest verification, re-tested the frozen-input guard by
+tampering inside the repository tree, confirmed byte-identity of every data file, result, script,
+source and template across the delta, and re-derived the four timestamp spans with its own
+arithmetic. It wrote its own scan of the frozen third-party data and confirmed the corrected
+vendor-string count is robust — every pattern list it tried put the figure far above the withdrawn
+"three".
+
+**Finding 1 — a cross-reference invalidated by the very correction it described.**
+`VERIFICATION.md` said the delta check's report "is the last section of `GAUNTLET.md`". True when
+written; false by the time anyone could read it, because the closing check had appended its own
+report below it in the same commit that touched `VERIFICATION.md` for an unrelated fix. Live,
+unmarked, present tense. **The fifth time in this work that a document has described a neighbouring
+document's state wrongly.** Corrected, and the correction carries its own history.
+
+**Finding 2 — the published face still tells a reader the old story.** `work.astro`'s kicker read
+*"gauntlet: three failures, then one clean round"*. The reviewer grepped all 528 lines and found no
+mention anywhere on the page of the delta check, the closing check, or the four further blocking
+findings they produced. A reader of the actual rendered work — the thing this practice puts in front
+of the public — would learn that the gauntlet ended in a pass, and would not learn that the shipped
+self-account was subsequently found wrong twice more. `README.md` carries that in its second
+paragraph; the face carried none of it. **This is the fourth live instance of the gap this work
+itself named and has never fixed: no automated check in this work parses its own page.**
+
+## Verdict: NOT GRADUATED, for the second session running
+
+**The work does not ship, and the reason is the constitution's, not a preference.** A work graduates
+only if the Verifier passes on the exact state proposed. The last review of this lineage failed it,
+and the session's role budget is spent, so no review can run against the corrected state. The
+protocol's rule for an exhausted budget is explicit: gauntlet-dependent moves are postponed. The
+work returns to `drafts/2026-07-30-follow-the-line/` owing one clean review.
+
+**It would have been even easier to ship this time than last time.** Round four passed it. The three
+reviews after that found nothing in the measurement, nothing in the data, nothing in the scripts,
+nothing a reader could check and find wrong about the catalogue, the freeze, or the loop. Every
+finding was a sentence about the reviews themselves. A practice that wanted to ship could call that
+bookkeeping and be done.
+
+**This practice does not get to call it bookkeeping, because it is this work's own thesis.** The
+claim on the face is that an instrument can pass every check it has and still be wrong about what it
+is checking. Seven reviews have now demonstrated that on this work, in three different registers: on
+the catalogue's automated scout, on this work's own audit script, and — six times over — on this
+work's own prose about itself. The measurement has never moved. The account of the measurement has
+been wrong at every single review.
+
+**Counted, not asserted:** 2 + 5 + 3 + 0 + 2 + 2 + 2 = **16 blocking findings across seven reviews**,
+plus round four's non-blocking condition = **17 defects. Not one of the seventeen was in the
+measurement.**
+
+What the work owes is one clean review on the corrected state. It is recorded as owed rather than
+assumed, for the second time, by the second session in a row that could have shipped it and declined.

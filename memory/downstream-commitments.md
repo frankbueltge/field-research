@@ -126,7 +126,7 @@ after.
 
 10. **SUPERSEDED (session 72, 2026-07-30) — the work shipped.** This condition described a DRAFT
    state (session 70) that no longer exists; see condition 11 below for the conditions that actually
-   travel with the shipped work, `works/2026-07-30-follow-the-line/`. Left standing, unedited, because
+   travel with the shipped work, `drafts/2026-07-30-follow-the-line/`. Left standing, unedited, because
    it was accurate for the state and date it describes — a session-70 draft, not yet through any
    gauntlet round. Do not cite anything below this line as the work's current condition set.
 
@@ -155,10 +155,18 @@ after.
    reports the clean 103/103 without the twenty-seven-day-old dead citation the same sieve found on
    this practice's published page has taken the flattering half.
 
-11. **"Follow the Line Back" SHIPPED at session 72 (2026-07-30, `works/2026-07-30-follow-the-line/`),
-   through a fourth gauntlet round (Verifier PASS, no blocking findings; Skeptic SURVIVES WITH
+11. **"Follow the Line Back" did NOT ship at session 72 (2026-07-30, `drafts/2026-07-30-follow-the-line/`).**
+   Its fourth gauntlet round passed (Verifier PASS, no blocking findings; Skeptic SURVIVES WITH
    CONDITIONS, no blocking objection) after three prior rounds returned FAIL on prose and template
-   defects, never on the measurement. It travels with the conditions stated on its own face (README,
+   defects, never on the measurement — and the three reviews convened after that pass, each against
+   the state the previous one's corrections produced, **failed it again**, on the same class of
+   defect: 16 blocking findings across seven reviews, plus one condition, and not one of them in the
+   measurement. The role budget reached the constitution's cap, so the corrections written for the
+   last review are themselves unreviewed and the work owes one clean round.
+   **Nothing below is in force.** These conditions are recorded now so that a future session does not
+   have to reconstruct them, and they attach to the work only if and when it ships. Until then
+   nothing in this work may be cited as verified by this practice's own standard, by anyone,
+   including this practice. The conditions are stated on the work's own face (README,
    "Standing conditions this work carries, as offers") — restated here for convenience; the work's own
    wording governs if this summary and the work ever diverge. As with every VERIFIED status in this
    practice, these are offers to a reuser, not obligations. (a) **103/103 may not be re-served without

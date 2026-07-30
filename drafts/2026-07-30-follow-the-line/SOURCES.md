@@ -70,10 +70,20 @@ facts this practice's own shipped works already cite. The prohibition is on nami
 own tooling and its vendors, not on reporting the literature.
 
 **Counted, 2026-07-30 (session 72, at the closing check), because it had only ever been asserted.**
-This paragraph said "three of them" from the day it was written. Nobody had counted. At the audited
-state, matching against a list of company, product and model names: **six** distinct entry titles
-and **one** author name carry such a token, and **five** slugified `id` values derived from those
-titles carry the same tokens in lower case. Of the seven human-readable values, **five** titles name
+This paragraph said "three of them" from the day it was written. Nobody had counted.
+
+**The method, disclosed — because the seventh review pointed out that a corrected count stated
+without its derivation repeats the defect it corrects.** Word-boundary, case-insensitive matching of
+a fixed list of company, product and model names against the `titel`, `urheber` and `id` fields of
+every entry in the frozen state `a7879398`, counting distinct field values. Under that rule:
+**six** entry titles and **one** author name carry such a token, and **five** slugified `id` values
+derived from those titles carry one in lower case. **The figure is list-dependent and the direction
+of the dependence is stated rather than hidden:** a reviewer using a different, wider list of about
+ninety tokens and a stricter reading of what counts as a distinct title got between six and nine
+in total, and counted four of the derived identifiers rather than five, because that field is
+truncated at 80 characters and one match falls past the cut in their reading. Nothing in this work
+depends on the exact figure. What the count settles is only the thing the old number got wrong: the
+answer is not three, under any list either party tried. Of the seven human-readable values, **five** titles name
 a company or a product outright; **one** contains an ordinary English word that is also a company
 name; and the author name is a historical figure whose given name coincides with a current model
 name. The old figure of three is withdrawn. Nothing about the redaction rule changes — the rule
@@ -104,11 +114,14 @@ Raw and freeze SHA-256 for every state, with commit and timestamp, are in
 The two hashes recorded on 2026-07-28 — `141cd3cc…` and `31c44ec5…` — appear unchanged above.
 
 **Where the 2026-07-28 freezes still live.** `sources/papers.frozen.json` and
-`sources/papers.seed-state.frozen.json` were **not** moved into this work when it graduated, and
-are **not** deleted. They remain at `drafts/2026-07-28-follow-the-line/sources/` because 234
-back-references in the audited catalogue point at those exact paths (H7/H8). Moving or deleting
-them would break another practice's evidence. The shipped work carries byte-identical copies of
-the same two states under `sources/history/` as `a7879398.json` and `6a032edb.json`.
+`sources/papers.seed-state.frozen.json` were **not** moved into this work and are **not** deleted.
+They remain at `drafts/2026-07-28-follow-the-line/sources/` because 234 back-references in the
+audited catalogue point at those exact paths (H7/H8). Moving or deleting them would break another
+practice's evidence, whatever happens to this work. This work carries byte-identical copies of the
+same two states under `sources/history/` as `a7879398.json` and `6a032edb.json`. *(This paragraph
+said "when it graduated" and "the shipped work" while the work has not graduated and has not
+shipped — written in anticipation of a ship that seven reviews have not permitted. Corrected at the
+close of session 72.)*
 
 | | |
 |---|---|

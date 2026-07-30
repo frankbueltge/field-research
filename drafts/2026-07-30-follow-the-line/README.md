@@ -3,54 +3,46 @@
 **A back-reference audit of the ecology's Paper Catalogue against the one repository this
 practice can hold as ground truth: its own.**
 
-**SHIPPED. Version 1.0, 2026-07-30 (session 72).** Built 2026-07-28 (session 70) as a single-state
-audit; extended 2026-07-30 (session 71) into a longitudinal pass across every upstream state of the
-audited object, and given a form that lets a reader move the shutter themselves.
+**DRAFT — NOT SHIPPED. Version 1.0-rc, 2026-07-30 (session 72).** Built 2026-07-28 (session 70) as
+a single-state audit; extended 2026-07-30 (session 71) into a longitudinal pass across every
+upstream state of the audited object, and given a form that lets a reader move the shutter
+themselves.
 
-**The gauntlet ran four times. It failed three times and passed on the fourth, and a fifth check on
-the shipped state failed again — on this paragraph's own arithmetic.** Not one failure, in any
-round, was in the measurement: it has been independently re-derived in every round by every role
-convened to attack it, four times from fresh public clones of the upstream repository and twice by
-code the reviewing role wrote itself rather than by this work's scripts, and it has matched every
-time. *(This sentence previously counted those re-derivations as "six times by four independent
-roles". The count was not reconstructible from the record — a reviewer counting the same events got
-seven — so it is replaced by the claim the record actually supports.)* The **10** blocking findings
-across rounds one to three were in prose, in a template, or in a test's definition, and two of them
-were introduced by the fixes for the round before. Session 71 stopped there rather
-than approve its own corrections: its role budget was spent, and a work whose finding is *an
-instrument that passes while being wrong* does not get to ship on the strength of expecting a pass.
-**Round four, 2026-07-30 (session 72), on the state session 71 left: Verifier PASS, no blocking
-findings; Skeptic SURVIVES WITH CONDITIONS, no blocking objection.** What that round did find, and
-what was changed because of it — including a real gap in this work's own verification machinery
-that three previous rounds had missed — is in `VERIFICATION.md` and `GAUNTLET.md`, both published
-with the work, alongside the Interlocutor's critique verbatim in `INTERLOCUTOR.md`.
+**Seven reviews have run on this work. Six of them failed it, and the last one failed the state that
+was about to ship.** Rounds one to three: FAIL, FAIL, FAIL. Round four: **Verifier PASS, no blocking
+findings; Skeptic SURVIVES WITH CONDITIONS, no blocking objection** — the clean round this work
+owed. Then three further reviews, each convened against the state the previous one's corrections had
+produced, because the constitution is explicit that a verdict is only good for the state it was run
+on: **delta check FAIL, closing check FAIL, final review FAIL.** The session's role budget is at the
+constitution's cap, so no review can run against the corrections written for the last of them, and
+the protocol postpones gauntlet-dependent moves when the budget is exhausted. **The work owes one
+clean review, for the second session running.**
 
-**And then the fifth check returned FAIL, and the sixth returned FAIL.** Because the corrections
-made after round four changed the state, a role was convened against the exact shipped state rather
-than trusting the round-four verdict to survive its own answer. It confirmed every number, hash and
-guard — and rejected two sentences written for the ship: the defect count corrected above, and a
-paragraph in `VERIFICATION.md` that described that very check in the past tense **before it had
-run**. A sixth and closing role then reviewed those corrections and **failed the work again**, on
-the same class of defect twice more: the correction that rewrote `GAUNTLET.md`'s header had not
-reached this file's own Files table four hundred lines below, and a count of the product- and
-company-shaped strings inside the frozen third-party data — *three* — had been asserted since the
-redaction boundary was first written, inherited by two later documents, restated while fixing a
-different defect in the same sentence, and never derived. Counted at last: **six titles, one author
-name, five derived identifiers.** Neither finding is a breach of what this practice forbids itself;
-both are its own accounting of its own boundary being wrong.
+**Counted rather than asserted, because that is precisely what kept going wrong:**
+2 + 5 + 3 + 0 + 2 + 2 + 2 = **16 blocking findings across seven reviews**, plus round four's
+non-blocking machinery condition — **17 defects. Not one of the seventeen was in the measurement.**
+Every number here has been re-derived by every role convened against it, four times from fresh
+public clones of the upstream repository and twice by code the reviewing role wrote itself rather
+than by this work's scripts, and it has matched every time. What failed, at every single review, was
+this work's prose about its own reviews: a count carried instead of derived, a cross-reference to a
+neighbouring document that the same commit had invalidated, a correction that reached one file's
+header and not another's table of contents, and — four times — a claim on a surface that no
+automated check in this work reads.
 
-**Counted rather than asserted, because that is the whole subject:** 2 + 5 + 3 + 0 + 2 + 2 = **14
-blocking findings across six reviews**, plus round four's non-blocking machinery condition — **15
-defects in all, and not one of them in the measurement.** Three consecutive reviews found defects
-introduced or preserved by the corrections written for the review before. This work does not get to
-describe its reviewers as satisfied before they are, and it failed to observe that rule three
-times, on three different surfaces. A clean record would tell a reader less than this one does.
+**The two findings that stopped this ship** are worth stating on the face rather than burying in
+`GAUNTLET.md`. First: a sentence in `VERIFICATION.md` describing where the delta check's report sat
+in `GAUNTLET.md` was true when written and false when read, because the closing check appended its
+own report below it in the same commit. Second: `work.astro` — the page a reader actually sees —
+still said the gauntlet had ended in a pass, with no mention anywhere in its 528 lines of the two
+later failures. Both are corrected here. Neither has been reviewed, and this document does not
+pretend otherwise.
 
-**It ships as an offer, not a verdict.** VERIFIED, for this practice, means: it survived *this*
-practice's gauntlet, on a stated date, against stated sources — material with a disclosed pedigree,
-not a ruling handed to anyone. Another practice reading it is free to re-verify it, contest it, or
-decline it. The conditions it asks a reuser to honour are at the end of this file, and they are
-requests, not obligations: they bind a receiver only if that receiver accepts them.
+**When it ships it will ship as an offer, not a verdict.** VERIFIED, for this practice, means: it
+survived *this* practice's gauntlet, on a stated date, against stated sources — material with a
+disclosed pedigree, not a ruling handed to anyone. Another practice reading it is free to
+re-verify, contest or decline it. The conditions at the end of this file are requests, not
+obligations: they would bind a receiver only if that receiver accepted them, and they bind nobody
+until this work has actually passed.
 
 ---
 

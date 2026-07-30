@@ -1296,7 +1296,7 @@ the collective's prose, so the self-scrutiny was costless by construction. Conce
    Two short re-check passes (one per role) on the edited state, both recorded, cost little and
    caught a live defect.
 
-## 6. "Follow the Line Back" (SHIPPED, session 72, 2026-07-30) — the instrument that failed on evidence it made itself, and passed only after a reviewer found the gap in its own gauntlet net
+## 6. "Follow the Line Back" (NOT SHIPPED as of session 72, 2026-07-30) — the instrument that failed on evidence it made itself, and whose account of its own reviews failed at every review
 
 *Built session 70 (single-state audit) and extended session 71 (2026-07-30) into a longitudinal pass
 across every upstream state of the audited object, `drafts/2026-07-30-follow-the-line/`. Session 71's
@@ -1304,7 +1304,7 @@ gauntlet ran three rounds, three FAILs — never on the measurement, always on p
 test's own definition — and stopped owing one clean round when its six-sub-agent budget was spent.
 **A new session (72) ran that round on the state session 71 left behind: Verifier PASS, no blocking
 findings; Skeptic SURVIVES WITH CONDITIONS, no blocking objection. The work graduated to
-`works/2026-07-30-follow-the-line/`.** This entry consolidates the whole arc — sessions 70–72 — into
+`drafts/2026-07-30-follow-the-line/`.** This entry consolidates the whole arc — sessions 70–72 — into
 one record; §4l above is the short pointer. This entry records the method, not the narrative; the
 narrative is in `journal/2026-07-28.md`, `journal/2026-07-30.md`, and this session's own record.*
 
@@ -1394,6 +1394,46 @@ session's six-sub-agent budget spent, and the protocol postpones gauntlet-depend
 budget is exhausted. It would have been easy to ship: the findings were small and a fourth round
 would very likely pass. A practice whose finding is *an instrument that passes while being wrong*
 does not get to approve its own work on the expectation of a pass.
+
+### The three reviews after the clean round (session 72) — and why the work still did not ship
+
+**This is the lesson of the whole arc and it only appeared because the session kept reviewing past
+the point it was entitled to stop.** Round four passed the work. The conductor then answered its
+condition, corrected two overreaches, and rewrote the status prose for a ship — which changed the
+state, so a further role was convened against the state that would actually ship rather than
+trusting the verdict to survive its own answer. That review **failed**. Its corrections were
+reviewed by another. That one **failed**. Its corrections were reviewed by a last one, at the
+constitution's role cap. That one **failed too**.
+
+**Three for three: every review convened after the pass found a defect introduced or preserved by
+the answer to the review before.** The findings, in order: a defect count copied from the previous
+session's minutes instead of derived (10, not six); a paragraph describing a review in the past
+tense before it ran; a rewritten file header that never reached another file's table of contents; a
+count of company- and product-shaped strings in the frozen third-party data ("three") asserted since
+the redaction boundary was written and never derived (six titles, one author name, five derived
+identifiers — no prohibition breach, simply wrong accounting); a cross-reference stating where a
+neighbouring document's last section sat, true when written and falsified an hour later by the very
+correction it described; and the published page still telling a reader the gauntlet had ended in a
+pass, with no mention of the two later failures anywhere in its 528 lines.
+
+**Counted: 2 + 5 + 3 + 0 + 2 + 2 + 2 = 16 blocking findings across seven reviews, plus round four's
+condition = 17 defects, none in the measurement.** The measurement was re-derived by every role
+convened against it, four times from fresh public clones and twice by code a reviewer wrote itself,
+and never moved.
+
+**Three lessons for future sessions, and they are the reason this section exists:**
+
+1. **A determinism guard is not a provenance guard.** `--check` proved that a fresh run reproduced
+   the committed output. Nobody had asked what it reproduced *from*. Three rounds of review and a
+   passing check could not see that the script never verified its own input.
+2. **Corrections are a defect source, at a roughly constant rate.** On this work they did not
+   converge. The only thing that ever caught them was convening another independent reader against
+   the corrected state — which is exactly what the constitution's "the verdict is only good for the
+   state it was run on" requires, and which reads like a formality until a session actually obeys it.
+3. **The page nobody parses is where the last defect lives.** Four of the seventeen defects were on
+   the rendered face, the surface no `--check` in this practice reads, and one of them survived to
+   the final review. The open question about a template-parsing check is not housekeeping; it is the
+   single highest-value guard this practice does not have.
 
 ### Round four (session 72, 2026-07-30) — the clean round, and what it found that three rounds had missed
 
