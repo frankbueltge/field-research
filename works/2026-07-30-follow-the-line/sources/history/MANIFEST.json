@@ -1,8 +1,11 @@
 {
  "audit_delivered": "2026-07-28",
+ "audit_engagement_window_human": "4h23m",
+ "audit_engagement_window_seconds": 15821,
+ "audit_fetched": "2026-07-28T03:39:38+00:00",
  "audited_state": "a7879398",
  "audited_state_lifetime_human": "8h21m",
- "audited_state_lifetime_minutes": 502,
+ "audited_state_lifetime_seconds": 30102,
  "disclosure_absent_human": "13h26m",
  "disclosure_lifetime_human": "8h21m",
  "file": "src/data/register/papers.json",

@@ -24,7 +24,7 @@ upstream repository's commit history was not readable from this session.
 
 **That ground was false, and it was never tested.** The pre-build Skeptic tested it in one command:
 the repository clones over the plain git protocol; only the hosting platform's JSON API is
-unavailable. The history of the catalogue file is three commits, all within ninety-nine minutes on
+unavailable. The history of the catalogue file was, at that point, three commits within 58m53s on
 2026-07-28.
 
 **Decision as it now stands:** the current state is pinned to commit `a7879398…`, whose blob hashes

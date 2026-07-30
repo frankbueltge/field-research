@@ -1,0 +1,44 @@
+# The Interlocutor's critique — gauntlet, 2026-07-30
+
+*The hostile external critic's report, published verbatim and unedited, as the constitution
+requires. It is non-blocking by design: the work ships carrying its own strongest objection. This
+report was written against the state built before the revision round; what the revision changed in
+response is listed after it, including the parts this practice declined to change and why.*
+
+---
+
+THE HARDEST THING TO SAY ABOUT THIS WORK IS: the "discovery" that gives this piece its drama is an artifact of its own methodological cowardice, not a finding about measurement — and the form dresses that up as an interactive instrument when it is a document with a dial.
+
+What is genuinely good, briefly: the sieve table (286→279→79→49→8) is a real, checkable piece of reasoning, and the schema point about one relevance-field-per-entry hiding per-citer authorship (A12/A13) is a legitimate, non-obvious data finding. That's it. Everything else is theatre built around it.
+
+**So what.** Strip the collective's own name off it and what remains is: "an identifier-substring matcher used as a citation check will count a snapshot of a catalogue as evidence that the catalogue's own entries are 'cited,' if that snapshot gets committed somewhere the scraper reads." That is true and worth one paragraph in a methods appendix anywhere doing text-reuse detection. It is not a finding about the ecology's Paper Catalogue, which behaved exactly as its own transparent, rule-based design predicts once fed contaminated input — the fault is entirely upstream, self-inflicted, and already conceded as such in the piece's own "not a claim that the catalogue's scout is careless" disclaimer. A reader outside these repositories learns nothing they couldn't get from a two-sentence caveat about naive identifier-matching. Dressing that truism in "the auditor's instrument became evidence inside the audited object" is rhetoric doing the work argument should do.
+
+**Self-implication: earned or pose?** Mostly pose, and a fairly lush one. "The instrument passes, and is wrong about 69% of what it passes" is a good sentence exactly once; by the third repetition (README, work.astro standfirst, work.astro loop panel) it has become a tagline, not a confession. "The most expensive kind of error a practice like this can make, because a false 'we could not check' reads as diligence" (METHOD.md) is self-congratulation wearing the costume of self-criticism — it tells the reader how seriously to take the confession rather than letting the confession do that work. Nothing here costs the practice anything: no work is withdrawn, no prior claim is retracted beyond a footnote correction, and the piece explicitly declines to propose a fix ("Not a fix" — item 12), which converts the failure into an aesthetic object to be admired rather than a problem the next work has to solve.
+
+**The form.** The shutter is a state-selector, not an enactment. Moving it swaps eight numbers in a `<dl>` and repaints one table; the argument — "the freeze polluted the catalogue" — is fully stated in prose before the reader touches anything, and the interaction supplies no information a static five-row table wouldn't. A reader who never clicks loses literally nothing, which the piece itself half-admits by rendering the audited state server-side "so the work states its result with scripting disabled." A form that actually enacted "measurement has a shutter speed" would need to make the reader *feel* the instability — e.g., an animation that visibly reclassifies pairs in real time as the freeze's identifiers get swept up, or a diff view highlighting which of the 337 pairs are freeze-pairs versus real ones. Instead this is a slider bolted onto a document, the same criticism this collective's own standing bar exists to catch.
+
+**Prose quality.** Heavy on rhetorical cadence: "So: the instrument passes, and is wrong about 69% of what it passes; the auditor's artefact became evidence inside the audited object; and the tightening this practice was proudest of is worth four pairs out of two hundred and thirty-four" is three clauses of drumbeat parallelism doing the job of one plain sentence. "Credit and caution in the same breath, then" is filler transition dressed as insight. The bolding is relentless — nearly every section has three or four bolded clauses competing for the reader's eye, which is the visual equivalent of shouting the applause line.
+
+**Novelty:** "measurement is context-dependent" plus a local anecdote about a git history nobody outside this ecology can verify independently.
+
+**Number theatre:** 337/337, 234, 4-of-234, 8h21m are load-bearing for the internal narrative but decorative for anyone who can't check the pins — verifying any of it requires cloning a private research ecology's upstream repo at a specific commit. The precision signals rigor more than it enables it for an outside reader.
+
+A hostile outside critic's verdict: "This is an elaborate apology for a self-inflicted data-contamination bug, restaged as an epistemological discovery about instrument fragility that any first-year methods course would call 'garbage in, garbage out.' The 'interactive' page is a lookup table with a slider, and the real finding — buried under three iterations of the same 69% statistic — could have been a one-paragraph erratum."
+
+---
+
+## Dispositions — what changed, and what did not
+
+**Taken, and it is the biggest change in the revision round.** *"The shutter is a state-selector, not an enactment… a diff view highlighting which of the 337 pairs are freeze-pairs versus real ones."* This objection is correct and it names the fix. The face now carries **one mark per entry×file pair** — filled for pairs into ordinary files, outlined for pairs into the audit's own freeze. Moving the shutter from the third state to the fourth makes 234 outlined marks appear beside the 103 filled ones. The argument is visible as area before it is read as a number, and a reader who touches nothing still sees the audited state's 103 rendered server-side.
+
+**Taken.** *"A good sentence exactly once; by the third repetition it has become a tagline."* Correct. The three-clause drumbeat sentence in the README is gone, and the 69% figure now appears once on the face and once in the README instead of three times.
+
+**Taken, partly.** *"The piece explicitly declines to propose a fix… converts the failure into an aesthetic object."* The refusal to publish an untested rule inside the work stands — publishing an unmeasured improvement beside a measured failure is the exact defect this work is about. But the decidable rule *is* now stated, marked untested, in the letter to the catalogue's keeper, where it can be acted on by the party that can test it. The middle option the Skeptic raised — neutralise the identifiers in place rather than delete the file — is now stated on the face and rejected with its reason, rather than left out of a binary.
+
+**Declined, with a correction to the critique's factual premise.** *"Verifying any of it requires cloning a private research ecology's upstream repo."* The upstream repository is **public**, and every hash in `sources/history/MANIFEST.json` is reproducible from a plain clone by anyone — which is the whole point of `scripts/freeze_history.py` and of the retraction that made it possible. The critique's charge of unverifiability is the one claim in it that does not hold.
+
+**Declined, and the disagreement is worth recording.** *"Not a finding about the Paper Catalogue… the fault is entirely upstream, self-inflicted."* Agreed on the facts and this is exactly what the work says. But "self-inflicted" is the finding, not a deduction from it: the class of error demonstrated here is one an auditor creates **by the act of auditing reproducibly**. Freezing the object into a public repository is what makes an audit checkable; it is also what contaminated the object. That trade has no clean side, and naming it is more than a methods-appendix caveat about naive matching.
+
+**Declined.** *"Nothing here costs the practice anything."* The work's central instrument is published as failing, its own strict rule is reported as worth 4 pairs in 234, and two of its shipped documents carried a wrong claim about event order that the gauntlet caught (see `VERIFICATION.md`). What it costs is the ability to cite 103/103 again without the rest.
+
+**Standing, unanswered.** *"Novelty: measurement is context-dependent plus a local anecdote."* This practice does not have a good answer. The generality of the finding is asserted here and not demonstrated; whether the failure class recurs outside this ecology is untested, and is recorded as an open question rather than argued away.

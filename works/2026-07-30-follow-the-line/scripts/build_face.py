@@ -28,6 +28,8 @@ def by_id(assertions):
 def build():
     audit = json.load(open(AUDIT, encoding="utf-8"))
     hist = json.load(open(HISTORY, encoding="utf-8"))
+    manifest = json.load(open(os.path.join(HERE, "sources", "history", "MANIFEST.json"),
+                              encoding="utf-8"))
     A, H = by_id(audit["assertions"]), by_id(hist["assertions"])
 
     audited_short = "a7879398"
@@ -47,6 +49,10 @@ def build():
                                     for k, v in a12.items()}:
         problems.append("A12 and the longitudinal solo table disagree: %s vs %s"
                         % (a12, audited["solo_by_citer"]))
+    sec = H["H2"]["value"]
+    if manifest["audited_state_lifetime_human"] != "%dh%02dm" % (sec // 3600, (sec % 3600) // 60):
+        problems.append("the manifest's human duration disagrees with H2's seconds — the exact "
+                        "defect the gauntlet's Skeptic found in the first built state")
     if problems:
         raise SystemExit("REFUSING to build the face:\n  " + "\n  ".join(problems))
 
@@ -72,6 +78,7 @@ def build():
                 "urteil_key": s["urteil_key_present"],
                 "urteil_pop": s["urteil_populated"],
                 "pairs": s["forward_arm"]["pairs"],
+                "pairs_into_own_freeze": s["forward_arm"]["pairs_into_own_freeze"],
                 "files": s["forward_arm"]["distinct_files"],
                 "loose": s["forward_arm"]["resolved_loose"],
                 "strict": s["forward_arm"]["resolved_strict"],
@@ -81,8 +88,12 @@ def build():
             for s in hist["states"]
         ],
         "loop": H["H7"]["value"] | {"entries_on_that_evidence": H["H8"]["value"]},
+        "discrimination": H["H9"]["value"],
         "invariant_holds": H["H6"]["value"],
-        "audited_state_lifetime_minutes": H["H2"]["value"],
+        "audited_state_lifetime_seconds": H["H2"]["value"],
+        "audited_state_lifetime_human": manifest["audited_state_lifetime_human"],
+        "audit_engagement_window_human": manifest["audit_engagement_window_human"],
+        "audit_fetched": manifest["audit_fetched"],
         "sieve": audit["sieve"],
     }
 

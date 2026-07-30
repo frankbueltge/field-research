@@ -8,9 +8,9 @@
   },
   {
    "id": "H2",
-   "note": "The audited state a7879398 was committed 2026-07-28T01:41:37+02:00 and replaced by cc9c2cf1 at 2026-07-28T08:03:19+00:00. A finding about this object is a finding about a window, and this is the window.",
-   "title": "Minutes the audited state stood before it was replaced",
-   "value": 502
+   "note": "The audited state a7879398 was committed 2026-07-28T01:41:37+02:00 and replaced by cc9c2cf1 at 2026-07-28T08:03:19+00:00. A finding about this object is a finding about a window. Two windows are defensible, and both are reported rather than the more dramatic one alone: the audited state's own lifetime, 8h21m, and the narrower window in which this practice actually engaged it — from its fetch at 2026-07-28T03:39:38+00:00 to the replacement, 4h23m. The audit's own window is the smaller number.",
+   "title": "Seconds the audited state stood before it was replaced",
+   "value": 30102
   },
   {
    "id": "H3",
@@ -71,7 +71,7 @@
   },
   {
    "id": "H7",
-   "note": "At f21f275 — a repository state later than the audit's pin, fixed and public before this session wrote anything — the latest catalogue state's back-references into this repository score **337 of 337 under the audit's loose rule and 333 of 337 under its strict rule**. A reader would call that a clean pass. It is not: **234 of those 337 pairs resolve into this audit's OWN frozen copies of the catalogue** — files that are a snapshot of the object, not a citation of anything. The identifiers are in them because the audit put them there. Both rules pass, and both are wrong, on 69% of the pairs. This is the audit's central instrument failing on evidence the audit itself manufactured, and it is reported here rather than repaired quietly, because the failure is the result.",
+   "note": "At f21f275 — a repository state later than the audit's pin, fixed and public before this session wrote anything — the latest catalogue state's back-references into this repository score **337 of 337 under the audit's loose rule and 333 of 337 under its strict rule**. A reader would call that a clean pass. It is not: **234 of those 337 pairs resolve into this audit's OWN frozen copies of the catalogue** — files that are a snapshot of the object, not a citation of anything. The identifiers are in them because the audit put them there. Both rules pass, and both are wrong, on 69% of the pairs. This is the audit's central instrument failing on evidence the audit itself manufactured, and it is reported here rather than repaired quietly, because the failure is the result. Scope, stated because the Skeptic demanded it at the gauntlet: this is an existence proof against ONE document class — a JSON snapshot of a catalogue, in which every entry's canonical URL sits beside its identifier, which is exactly why the strict rule passes too. It is not a demonstration that the rule fails on copies in general.",
    "title": "The audit's own rule, at a repository pin where the new evidence exists",
    "value": {
     "loose": 337,
@@ -88,6 +88,17 @@
    "note": "Of the 119 entries the latest state attributes to this practice, this many have no evidence in this repository except the audit's frozen copy of the catalogue. The other 40 are the originally audited entries, whose evidence is unchanged and still resolves. The mechanism is a loop and not a lie: this practice froze the catalogue in order to audit it, the freeze landed in a public repository, an automated scout read the repository, found the catalogue's own identifiers there, and recorded this practice as citing them. **The auditor's instrument became evidence inside the audited object.** Nothing here says the scout is careless — this practice built the same class of discrimination into its own sieve (A9) precisely because the trap is easy to fall into, and then laid the bait for it.",
    "title": "Entries newly attributed to this practice whose only evidence here is that freeze",
    "value": 79
+  },
+  {
+   "id": "H9",
+   "note": "A test of this work's own causal account, put to it by the Skeptic at the gauntlet and run here rather than argued. If the mechanism were simply 'the identifier occurs in the freeze', every catalogued entry would have been relabelled, since the freeze is a copy of the whole catalogue. It was not. 90 entries whose identifiers also occur in the freeze were left alone, and **not one of them carries a DOI- or arXiv-shaped identifier**, while 76 of the 79 that were taken do. The scout discriminates by identifier shape — the same decidable move this audit uses in its own sieve. That sharpens the finding rather than softening it: the failure is not indiscriminate scraping, it is a well-built rule meeting a document class nobody's rule accounts for.",
+   "title": "What separates the entries the rebuild took from the ones it left",
+   "value": {
+    "matched_the_freeze_but_not_taken": 90,
+    "newly_labelled": 79,
+    "newly_labelled_identifier_shaped": 76,
+    "of_those_identifier_shaped": 0
+   }
   }
  ],
  "caveats": {
@@ -107,6 +118,7 @@
     "distinct_files": 0,
     "field_entries": 40,
     "pairs": 0,
+    "pairs_into_own_freeze": 0,
     "resolved_loose": 0,
     "resolved_strict": 0,
     "unresolved_file_not_at_repo_pin": [],
@@ -154,6 +166,7 @@
     "distinct_files": 24,
     "field_entries": 40,
     "pairs": 103,
+    "pairs_into_own_freeze": 0,
     "resolved_loose": 103,
     "resolved_strict": 103,
     "unresolved_file_not_at_repo_pin": [],
@@ -201,6 +214,7 @@
     "distinct_files": 24,
     "field_entries": 40,
     "pairs": 103,
+    "pairs_into_own_freeze": 0,
     "resolved_loose": 103,
     "resolved_strict": 103,
     "unresolved_file_not_at_repo_pin": [],
@@ -248,6 +262,7 @@
     "distinct_files": 26,
     "field_entries": 119,
     "pairs": 337,
+    "pairs_into_own_freeze": 234,
     "resolved_loose": 103,
     "resolved_strict": 103,
     "unresolved_file_not_at_repo_pin": [
@@ -1232,6 +1247,7 @@
     "distinct_files": 26,
     "field_entries": 119,
     "pairs": 337,
+    "pairs_into_own_freeze": 234,
     "resolved_loose": 103,
     "resolved_strict": 103,
     "unresolved_file_not_at_repo_pin": [

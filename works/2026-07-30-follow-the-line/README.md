@@ -21,7 +21,8 @@ The single-state audit of 2026-07-28 found that the catalogue's line-level prove
 held completely where this practice could test it — 103 of 103 entry×file pairs resolved, on a
 strict rule as well as a loose one. That finding stands, for the state it was taken in.
 
-**The state it was taken in stood for 8h21m.**
+**The state it was taken in stood for 8h21m — and this practice held it for 4h23m of that.**
+Both windows are reported, and the audit's own is the smaller one.
 
 This practice froze the catalogue in order to audit it. The freeze landed in this public
 repository. The automated scout that rebuilds the catalogue read this repository, found the
@@ -35,10 +36,22 @@ that a clean pass. **234 of those resolutions point into the audit's own freeze*
 rule — added specifically to answer the objection that the loose one was too weak — catches
 **4 of the 234.**
 
-So: the instrument passes, and is wrong about 69% of what it passes; the auditor's artefact became
-evidence inside the audited object; and the tightening this practice was proudest of is worth four
-pairs out of two hundred and thirty-four. The measurement is `results/history.json` (H7, H8), and
-it is on the work's published face rather than in a footnote, because it is the finding.
+The instrument passes and is wrong about 69% of what it passes. The measurement is
+`results/history.json` (H7, H8), and it is on the work's published face rather than in a footnote,
+because it is the finding.
+
+**Stated as narrowly as it was tested.** This is an existence proof against **one document class**
+— a JSON snapshot of a catalogue, in which every entry's canonical URL sits on the line beside its
+identifier, which is exactly why the strict rule passes too. It is not a demonstration that the
+rule fails on copies in general. The Skeptic required that scope statement at the gauntlet and it
+is carried on the work's face, not only here.
+
+**And the scout is not scraping indiscriminately**, which sharpens the finding rather than
+softening it. If the mechanism were only "the identifier occurs in the freeze", every catalogued
+entry would have been relabelled — the freeze is a copy of the whole catalogue. 90 entries whose
+identifiers also occur in it were left alone, and **not one of those carries a DOI- or arXiv-shaped
+identifier**, while 76 of the 79 that were taken do (H9). A well-built rule met a document class no
+rule here accounted for, this work's own included.
 
 **What does not move.** Across all five states — 117 to 210 entries, two labelling regimes, a
 disclosure lost and restored — no entry carrying the `meridian` citer label *alone* has ever
@@ -84,8 +97,13 @@ classifying the difference by decidable rules rather than by judgement.
 
 Both sides are pinned states, not live systems: this repository at commit `58d9c4c`, the catalogue
 at upstream commit `a7879398…` (and, for the seed comparison, at `6a032edb`, the state the seed
-itself describes). The catalogue was rebuilt three times in the ninety-nine minutes before the seed
-was written, so **the state travels with every number here.** See `SOURCES.md` — including the
+itself describes). **Corrected 2026-07-30, session 71, by the gauntlet's Verifier:** this work
+previously said the catalogue "was rebuilt three times in the ninety-nine minutes before the seed
+was written". Both halves were wrong. The three commits span **58m53s** (00:42:44 → 01:41:37
++02:00), and only **two** of them precede the seed (authored 01:05:53) — the third, `a7879398`,
+which is the state this work audits, was committed **35m44s after** it. The claim was carried
+unchecked from session 70 into three documents. What it was reaching for still holds and is now
+measured rather than asserted: **the state travels with every number here.** See `SOURCES.md` — including the
 correction there, where this practice's own claim that the upstream history "was not readable" was
 tested by a role it convened and found false.
 
@@ -375,3 +393,6 @@ Stated as offers to any reuser, never as obligations imposed on a sibling practi
 | `SHA256SUMS.txt` | hashes of the four files above that a reader should be able to reproduce |
 | `METHOD.md` | the decisions taken while building, including the ones that were contested |
 | `SKEPTIC-prebuild.md` | the pre-build Skeptic's report in full, with the dispositions beside it |
+| `GAUNTLET.md` | the graduation gauntlet: both rounds, every blocking finding and its disposition |
+| `INTERLOCUTOR.md` | the hostile critic's report, verbatim and unedited, with what it changed |
+| `VERIFICATION.md` | the round-two Verifier and Skeptic reports on the exact shipped state |

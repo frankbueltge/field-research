@@ -20,6 +20,7 @@ import argparse
 import collections
 import json
 import os
+import re
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -97,9 +98,12 @@ def forward_arm(entries, cache):
         for f in paths_of(e, "field-research"):
             pairs.append((e, strip_line_suffix(f)[len("field-research/"):]))
     resolved = strict = 0
+    into_own_freeze = 0
     no_file = []
     no_identifier = []
     for e, path in pairs:
+        if path in OWN_FREEZE:
+            into_own_freeze += 1
         if path not in cache:
             cache[path] = git_text(path)
         body = cache[path]
@@ -121,6 +125,7 @@ def forward_arm(entries, cache):
         "field_entries": len(field_entries),
         "distinct_files": len({p for _, p in pairs}),
         "pairs": len(pairs),
+        "pairs_into_own_freeze": into_own_freeze,
         "resolved_loose": resolved,
         "resolved_strict": strict,
         "unresolved_file_not_at_repo_pin": no_file,
@@ -183,13 +188,18 @@ def build():
         "is frozen here under the same reduction rule and hashed in sources/history/MANIFEST.json."
         % (idx + 1, len(states)))
 
-    add("H2", "Minutes the audited state stood before it was replaced",
-        manifest["audited_state_lifetime_minutes"],
+    add("H2", "Seconds the audited state stood before it was replaced",
+        manifest["audited_state_lifetime_seconds"],
         "The audited state %s was committed %s and replaced by %s at %s. A finding about this "
-        "object is a finding about a window, and this is the window."
+        "object is a finding about a window. Two windows are defensible, and both are reported "
+        "rather than the more dramatic one alone: the audited state's own lifetime, %s, and the "
+        "narrower window in which this practice actually engaged it — from its fetch at %s to "
+        "the replacement, %s. The audit's own window is the smaller number."
         % (audited["commit_short"], audited["committed_at"],
            successor["commit_short"] if successor else "nothing",
-           successor["committed_at"] if successor else "n/a"))
+           successor["committed_at"] if successor else "n/a",
+           manifest["audited_state_lifetime_human"], manifest["audit_fetched"],
+           manifest["audit_engagement_window_human"]))
 
     add("H3", "Entries attributed to this practice, by state",
         {s["commit_short"]: s["labels"]["field"] for s in states},
@@ -252,7 +262,11 @@ def build():
         "object, not a citation of anything. The identifiers are in them because the audit put "
         "them there. Both rules pass, and both are wrong, on %.0f%% of the pairs. This is the "
         "audit's central instrument failing on evidence the audit itself manufactured, and it is "
-        "reported here rather than repaired quietly, because the failure is the result."
+        "reported here rather than repaired quietly, because the failure is the result. Scope, "
+        "stated because the Skeptic demanded it at the gauntlet: this is an existence proof "
+        "against ONE document class — a JSON snapshot of a catalogue, in which every entry's "
+        "canonical URL sits beside its identifier, which is exactly why the strict rule passes "
+        "too. It is not a demonstration that the rule fails on copies in general."
         % (LATE_PIN, rc["loose"], rc["pairs"], rc["strict"], rc["pairs"],
            rc["loose_into_own_freeze"], rc["loose"],
            100.0 * rc["loose_into_own_freeze"] / rc["loose"]))
@@ -279,6 +293,42 @@ def build():
                if "field" in (e.get("zitiert_von") or [])
                and (p := {strip_line_suffix(f)[len("field-research/"):]
                           for f in paths_of(e, "field-research")}) and p <= OWN_FREEZE)))
+
+    # --- H9: what distinguishes the entries the rebuild relabelled ----------------
+    old_entries = json.load(open(os.path.join(HIST, audited["commit_short"] + ".json"),
+                                 encoding="utf-8"))
+    was_field = {e["id"] for e in old_entries if "field" in (e.get("zitiert_von") or [])}
+    freeze_text = open(os.path.join(HIST, audited["commit_short"] + ".json"),
+                       encoding="utf-8").read().lower()
+    doi_shape = re.compile(r"^10\.\d{4,9}/")
+    arx_shape = re.compile(r"^\d{4}\.\d{4,5}(v\d+)?$")
+
+    def is_shaped(e):
+        k = (e.get("kennung") or "")
+        k = k.split(":", 1)[1] if k.lower().startswith("arxiv:") else k
+        return bool(doi_shape.match(k.lower()) or arx_shape.match(k.lower()))
+
+    newly = [e for e in latest_entries
+             if "field" in (e.get("zitiert_von") or []) and e["id"] not in was_field]
+    matched_not_taken = [e for e in latest_entries
+                         if e["id"] not in was_field
+                         and e["id"] not in {x["id"] for x in newly}
+                         and any(i in freeze_text for i in identifiers(e))]
+    add("H9", "What separates the entries the rebuild took from the ones it left",
+        {"newly_labelled": len(newly),
+         "newly_labelled_identifier_shaped": sum(is_shaped(e) for e in newly),
+         "matched_the_freeze_but_not_taken": len(matched_not_taken),
+         "of_those_identifier_shaped": sum(is_shaped(e) for e in matched_not_taken)},
+        "A test of this work's own causal account, put to it by the Skeptic at the gauntlet and "
+        "run here rather than argued. If the mechanism were simply 'the identifier occurs in the "
+        "freeze', every catalogued entry would have been relabelled, since the freeze is a copy "
+        "of the whole catalogue. It was not. %d entries whose identifiers also occur in the "
+        "freeze were left alone, and **not one of them carries a DOI- or arXiv-shaped "
+        "identifier**, while %d of the %d that were taken do. The scout discriminates by "
+        "identifier shape — the same decidable move this audit uses in its own sieve. That "
+        "sharpens the finding rather than softening it: the failure is not indiscriminate "
+        "scraping, it is a well-built rule meeting a document class nobody's rule accounts for."
+        % (len(matched_not_taken), sum(is_shaped(e) for e in newly), len(newly)))
 
     return {
         "work": "Back-reference audit of the ecology's Paper Catalogue — longitudinal pass",

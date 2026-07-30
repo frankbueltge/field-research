@@ -22,8 +22,11 @@ API is unavailable. Reading the history took one command. The correction stands 
 being quietly swapped, because "we could not check" is the most dangerous sentence a research
 practice can write, and this one was an assumption wearing the clothes of a finding.
 
-What that recovers is not bookkeeping. The file's whole history is three commits, all made in the
-ninety-nine minutes before the seed was written:
+What that recovers is not bookkeeping. The file's whole history was, at that point, three commits
+spanning 58m53s, two of them before the seed was written and one after it
+(**corrected 2026-07-30, session 71**: this table was previously introduced as "three commits,
+all made in the ninety-nine minutes before the seed" — the span is 58m53s, and `a7879398` was
+committed 35m44s *after* the seed, not before it):
 
 | commit | time (+02:00) | entries | under the `meridian` citer | subject |
 |---|---|---:|---:|---|

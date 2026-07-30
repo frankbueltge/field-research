@@ -1,6 +1,15 @@
 {
+ "audit_engagement_window_human": "4h23m",
+ "audit_fetched": "2026-07-28T03:39:38+00:00",
  "audited_state": "a7879398",
- "audited_state_lifetime_minutes": 502,
+ "audited_state_lifetime_human": "8h21m",
+ "audited_state_lifetime_seconds": 30102,
+ "discrimination": {
+  "matched_the_freeze_but_not_taken": 90,
+  "newly_labelled": 79,
+  "newly_labelled_identifier_shaped": 76,
+  "of_those_identifier_shaped": 0
+ },
  "generated_from": {
   "audit": "results/audit.json",
   "history": "results/history.json",
@@ -55,6 +64,7 @@
    "loose": 0,
    "missing_at_pin": 0,
    "pairs": 0,
+   "pairs_into_own_freeze": 0,
    "shared": 33,
    "short": "03067c54",
    "solo": {
@@ -98,6 +108,7 @@
    "loose": 103,
    "missing_at_pin": 0,
    "pairs": 103,
+   "pairs_into_own_freeze": 0,
    "shared": 100,
    "short": "6a032edb",
    "solo": {
@@ -141,6 +152,7 @@
    "loose": 103,
    "missing_at_pin": 0,
    "pairs": 103,
+   "pairs_into_own_freeze": 0,
    "shared": 100,
    "short": "a7879398",
    "solo": {
@@ -184,6 +196,7 @@
    "loose": 103,
    "missing_at_pin": 234,
    "pairs": 337,
+   "pairs_into_own_freeze": 234,
    "shared": 151,
    "short": "cc9c2cf1",
    "solo": {
@@ -227,6 +240,7 @@
    "loose": 103,
    "missing_at_pin": 234,
    "pairs": 337,
+   "pairs_into_own_freeze": 234,
    "shared": 151,
    "short": "78a609d8",
    "solo": {

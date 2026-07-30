@@ -25,8 +25,11 @@ const marks = states.map((s) => ({
   audited: s.short === data.audited_state,
 }))
 
-const hours = Math.floor(data.audited_state_lifetime_minutes / 60)
-const mins = data.audited_state_lifetime_minutes % 60
+// The duration is rendered from the single seconds value the manifest and the assertions share,
+// by the same truncating rule, so no two surfaces of this work can disagree about it. They did,
+// by one minute, in the first built state; the gauntlet's Skeptic and Verifier both caught it.
+const lifetime = data.audited_state_lifetime_human
+const engaged = data.audit_engagement_window_human
 const wrongShare = Math.round((loop.loose_into_own_freeze / loop.loose) * 100)
 const strictCaught = loop.pairs_into_own_freeze - loop.strict_into_own_freeze
 ---
@@ -113,6 +116,24 @@ const strictCaught = loop.pairs_into_own_freeze - loop.strict_into_own_freeze
       </div>
     </dl>
 
+    <h3 class="ftl-h3">Every entry×file pair the catalogue asserts into this repository</h3>
+    <p class="ftl-note">
+      One mark per pair. Filled marks are pairs into ordinary files of this repository. Outlined
+      marks are pairs into the audit's own frozen copy of the catalogue — a snapshot of the object,
+      not a citation of anything. Move the shutter to the fourth state and watch what the rebuild
+      added.
+    </p>
+    <div class="ftl-grid" id="ftl-grid" aria-hidden="true">
+      {Array.from({ length: audited.pairs }, (_, i) => (
+        <span class={i < audited.pairs - audited.pairs_into_own_freeze
+          ? 'ftl-mark' : 'ftl-mark ftl-mark-freeze'}></span>
+      ))}
+    </div>
+    <p class="ftl-gridline" id="ftl-gridline">
+      {audited.pairs} pairs · {audited.pairs - audited.pairs_into_own_freeze} into ordinary files ·
+      {audited.pairs_into_own_freeze} into the audit's own freeze
+    </p>
+
     <p class="ftl-flag" id="ftl-flag">
       The disclosure the audit credited this catalogue for — a per-entry field saying that a
       relevance sentence was written by a generative model — is present on
@@ -174,17 +195,31 @@ const strictCaught = loop.pairs_into_own_freeze - loop.strict_into_own_freeze
         them.</li>
     </ul>
     <p class="ftl-note">
-      A rule that scores {loop.loose} of {loop.pairs} cannot tell a citation from a copy. The
-      repair is not to tighten the rule — this practice already tightened it, and the tightening
-      caught {strictCaught} of {loop.pairs_into_own_freeze}. The repair is to stop reading
-      "the identifier is in the file" as evidence of anything at all without knowing what kind of
-      file it is. This practice built exactly that discrimination into the other arm of its own
-      sieve, and then laid the bait for the same mistake in someone else's.
+      The instrument passes and is wrong about {wrongShare}% of what it passes. Tightening the
+      rule is not the repair — this practice already tightened it, and the tightening caught
+      {strictCaught} of {loop.pairs_into_own_freeze}, because a JSON snapshot of a catalogue puts
+      every entry's canonical URL on the line beside its identifier, which is precisely what the
+      strict rule looks for. <strong>Stated as narrowly as it was tested:</strong> this is an
+      existence proof that the rule cannot distinguish a citation from one document class — a
+      snapshot of the catalogue itself — not a demonstration that it fails on copies in general.
+      The repair is to ask what kind of file the evidence is before counting it.
     </p>
     <p class="ftl-note">
-      The freeze is not deleted. Moving it would break {loop.pairs_into_own_freeze}
-      back-references in the object this work audits. The loop has a lock, and naming it is the
-      only honest move available.
+      <strong>The scout is not scraping indiscriminately, and that sharpens the finding.</strong>
+      If the mechanism were only "the identifier occurs in the freeze", every catalogued entry
+      would have been relabelled, since the freeze is a copy of the whole catalogue.
+      {data.discrimination.matched_the_freeze_but_not_taken} entries whose identifiers also occur
+      in it were left alone, and not one of those carries a DOI- or arXiv-shaped identifier, while
+      {data.discrimination.newly_labelled_identifier_shaped} of the
+      {data.discrimination.newly_labelled} that were taken do. It is a well-built rule meeting a
+      document class no rule here accounted for — including this work's own.
+    </p>
+    <p class="ftl-note">
+      The freeze is not deleted. Deleting or moving it would break {loop.pairs_into_own_freeze}
+      back-references in the object this work audits, to make this practice's record look tidier.
+      Neutralising the identifiers in place instead — keeping the paths, breaking the contents —
+      fails the same test for the same reason: it breaks the same pairs, one layer down. The loop
+      has a lock, and naming it is the only honest move available.
     </p>
   </section>
 
@@ -279,6 +314,19 @@ const strictCaught = loop.pairs_into_own_freeze - loop.strict_into_own_freeze
           'generative model — is present on ' + s.urteil_key + ' entries in this state.'
       }
 
+      const grid = byId('ftl-grid')
+      grid.textContent = ''
+      const frag = document.createDocumentFragment()
+      for (let i = 0; i < s.pairs; i++) {
+        const mark = document.createElement('span')
+        mark.className = i < s.pairs - s.pairs_into_own_freeze ? 'ftl-mark' : 'ftl-mark ftl-mark-freeze'
+        frag.appendChild(mark)
+      }
+      grid.appendChild(frag)
+      byId('ftl-gridline').textContent =
+        s.pairs + ' pairs · ' + (s.pairs - s.pairs_into_own_freeze) +
+        ' into ordinary files · ' + s.pairs_into_own_freeze + " into the audit's own freeze"
+
       const rows = byId('ftl-solo').querySelectorAll('tr')
       rows.forEach((row, i) => {
         const c = citers[i]
@@ -292,6 +340,8 @@ const strictCaught = loop.pairs_into_own_freeze - loop.strict_into_own_freeze
         b.classList.toggle('ftl-btn-on', b.getAttribute('data-state') === short)
       })
     }
+
+    paint(data.audited_state)
 
     picker.addEventListener('click', (ev) => {
       const btn = ev.target instanceof Element ? ev.target.closest('button') : null
@@ -370,6 +420,20 @@ const strictCaught = loop.pairs_into_own_freeze - loop.strict_into_own_freeze
   .ftl-cell dt { font-size: 0.72rem; color: #6a6d72; margin-bottom: 0.2rem; }
   .ftl-cell dd { margin: 0; font-size: 1.45rem; font-weight: 700; letter-spacing: -0.02em; }
 
+  .ftl-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin: 0 0 0.4rem;
+    padding: 0.5rem;
+    border: 1px solid #c9c5bb;
+    min-height: 3rem;
+    align-content: flex-start;
+  }
+  .ftl-mark { width: 7px; height: 7px; background: #17181a; display: block; }
+  .ftl-mark-freeze { background: transparent; border: 1px solid #8c2f1d; width: 5px; height: 5px; }
+  .ftl-gridline { font-size: 0.78rem; color: #3d4046; margin: 0 0 1rem; }
+
   .ftl-flag {
     font-size: 0.83rem;
     border-left: 3px solid #17181a;
@@ -409,7 +473,21 @@ const strictCaught = loop.pairs_into_own_freeze - loop.strict_into_own_freeze
     .ftl-btn-on { background: #e8e6e1; color: #16171a; border-color: #e8e6e1; }
     .ftl-readout { background: #3a3d43; border-color: #3a3d43; }
     .ftl-cell { background: #16171a; }
-    .ftl-flag { background: #202226; border-left-color: #e8e6e1; }
+    .ftl-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin: 0 0 0.4rem;
+    padding: 0.5rem;
+    border: 1px solid #c9c5bb;
+    min-height: 3rem;
+    align-content: flex-start;
+  }
+  .ftl-mark { width: 7px; height: 7px; background: #17181a; display: block; }
+  .ftl-mark-freeze { background: transparent; border: 1px solid #8c2f1d; width: 5px; height: 5px; }
+  .ftl-gridline { font-size: 0.78rem; color: #3d4046; margin: 0 0 1rem; }
+
+  .ftl-flag { background: #202226; border-left-color: #e8e6e1; }
     .ftl-flag-gone { background: #2b1e1c; border-left-color: #c2593f; }
     .ftl-table th, .ftl-table td { border-bottom-color: #3a3d43; }
     .ftl-row-mark td, .ftl-row-mark th { background: #202226; }

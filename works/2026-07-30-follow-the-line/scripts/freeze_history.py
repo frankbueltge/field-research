@@ -37,6 +37,11 @@ OUTDIR = os.path.join(HERE, "sources", "history")
 AUDITED_STATE = "a7879398"
 AUDIT_DELIVERED = "2026-07-28"
 
+# When this practice actually fetched the object it audited (SOURCES.md §1). Recorded because
+# the audited state's own lifetime and the window in which the audit engaged it are two
+# different, equally defensible measures of the same shutter, and the smaller one is the audit's.
+AUDIT_FETCHED = "2026-07-28T03:39:38+00:00"
+
 
 def git(clone, *args):
     return subprocess.run(["git", "-C", clone, *args], capture_output=True, text=True,
@@ -79,19 +84,29 @@ def main():
     lifetime = ts(states[idx + 1]["committed_at"]) - ts(states[idx]["committed_at"])
     # the disclosure: written at the audited state, absent at the next, restored at the last
     gone = ts(states[-1]["committed_at"]) - ts(states[idx + 1]["committed_at"])
+    # the audit's own window: from the fetch to the moment the fetched state was replaced
+    engaged = ts(states[idx + 1]["committed_at"]) - ts(AUDIT_FETCHED)
+
+    def human(delta):
+        """Truncating, never rounding -- so that every rendering of this duration, here and on
+        the work's face, derives from the same seconds by the same rule. A rounded minute count
+        and a truncated human string disagreed by one minute in the first shipped state of this
+        work; the Skeptic caught it at the gauntlet and this is the root fix."""
+        sec = int(delta.total_seconds())
+        return "%dh%02dm" % (sec // 3600, (sec % 3600) // 60)
 
     manifest = {
         "file": FILE,
         "upstream": "https://github.com/frankbueltge/frankbueltge.de",
         "audited_state": AUDITED_STATE,
         "audit_delivered": AUDIT_DELIVERED,
-        "audited_state_lifetime_minutes": round(lifetime.total_seconds() / 60),
-        "audited_state_lifetime_human": "%dh%02dm" % (lifetime.total_seconds() // 3600,
-                                                      (lifetime.total_seconds() % 3600) // 60),
-        "disclosure_lifetime_human": "%dh%02dm" % (lifetime.total_seconds() // 3600,
-                                                   (lifetime.total_seconds() % 3600) // 60),
-        "disclosure_absent_human": "%dh%02dm" % (gone.total_seconds() // 3600,
-                                                 (gone.total_seconds() % 3600) // 60),
+        "audit_fetched": AUDIT_FETCHED,
+        "audited_state_lifetime_seconds": int(lifetime.total_seconds()),
+        "audited_state_lifetime_human": human(lifetime),
+        "audit_engagement_window_seconds": int(engaged.total_seconds()),
+        "audit_engagement_window_human": human(engaged),
+        "disclosure_lifetime_human": human(lifetime),
+        "disclosure_absent_human": human(gone),
         "states": states,
     }
     with open(os.path.join(OUTDIR, "MANIFEST.json"), "w", encoding="utf-8") as fh:
@@ -100,8 +115,9 @@ def main():
     for s in states:
         print("%s  %s  %4d entries  %s" % (s["commit"][:8], s["committed_at"], s["entries"],
                                            s["subject"][:60]))
-    print("audited state stood %s; disclosure absent %s"
-          % (manifest["audited_state_lifetime_human"], manifest["disclosure_absent_human"]))
+    print("audited state stood %s (the audit engaged it for %s); disclosure absent %s"
+          % (manifest["audited_state_lifetime_human"],
+             manifest["audit_engagement_window_human"], manifest["disclosure_absent_human"]))
     return 0
 
 
