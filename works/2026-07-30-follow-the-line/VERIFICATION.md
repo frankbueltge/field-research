@@ -176,8 +176,12 @@ recorded as owed rather than assumed.
 
 **What the three rounds actually established**, and it is worth separating from the verdict: the
 arithmetic is sound and was re-derived four times by two independent roles, twice from fresh public
-clones. Every defect found across all three rounds — six in total — was in prose, in a template, or
-in a test's definition. **Not one was in the measurement.** The instrument works; the sentences
+clones. Every defect found across all three rounds was in prose, in a template, or
+in a test's definition. **Not one was in the measurement.** *(This sentence said "six in total"
+until the round-four delta check counted them: the headed findings in this file and in `GAUNTLET.md`
+come to **10** across the three failed rounds — 2 + 5 + 3. The six was never derived from the
+record; it was written in session 71's minutes and copied from there. Corrected here and in
+`GAUNTLET.md`.)* The instrument works; the sentences
 about it kept not working, which for a work about instruments failing quietly is either an
 embarrassment or the result, and this practice does not get to choose which.
 
@@ -220,8 +224,11 @@ against the specific defect of round two — every identifier used in the templa
 frontmatter.
 
 The vendor boundary was checked by diffing a frozen state against the raw upstream file: the
-redaction is real, applied to every entry that carries the field, and the only vendor-shaped
-strings anywhere in the work are inside frozen third-party data, as `SOURCES.md` §1 states.
+redaction is real, applied to every entry that carries the field, and no vendor-shaped string
+appears in any file this practice authored. The three that exist are third-party bibliographic
+fact — two verbatim paper titles and one person's name — and they occur both in the frozen data
+under `sources/` and, unchanged, in `results/history.json`, which is generated from it. *(That last
+clause was added at the delta check, which found this paragraph had named only the frozen files.)*
 
 ## What the Skeptic found — and the one thing three rounds had missed
 
@@ -290,5 +297,21 @@ difference is enumerated here rather than glossed, because a work that failed th
 
 **Not one of these changes a measured value.** All four `--check` targets were re-run on the final
 state and pass; `results/audit.json` differs from its round-four state in the `status` string only.
-That claim is not asked to be taken on trust: it was checked by a fifth role convened against this
-exact shipped state, whose report is the last section of `GAUNTLET.md`.
+
+> **This paragraph was written in the future tense of its own evidence, and the role it invoked
+> caught it.** It originally ended: *"That claim is not asked to be taken on trust: it was checked by
+> a fifth role convened against this exact shipped state, whose report is the last section of
+> `GAUNTLET.md`."* When that sentence was written, the fifth role had not yet reported and
+> `GAUNTLET.md` had no such section. It is the **third** occurrence in this work of one specific
+> defect — a document narrating a review step in the past tense before the step happened — after
+> round two (this file, referenced by three documents before it existed) and round three (this file
+> and `GAUNTLET.md` each pointing at the other for a result in neither). It was caught by the very
+> role it falsely invoked, which read the sentence, went to `GAUNTLET.md`, found no such section,
+> and returned FAIL. The claim is now true — the check ran, it failed, this is what it found — but
+> it was not true when it was written, and the difference is the whole subject of this work.
+
+The delta check did run, and its report is the last section of `GAUNTLET.md`. **It returned FAIL on
+two findings, both in prose written for the ship:** the forward reference above, and a defect count
+carried unchecked out of the previous session's minutes. Neither touched a measured value; every
+number, hash and guard it tested reproduced exactly. Both are corrected in the open rather than
+swapped out, and the round that checked the correction is recorded there too.

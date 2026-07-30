@@ -1,10 +1,11 @@
-# The gauntlet — all four rounds, 2026-07-30
+# The gauntlet — four rounds, a delta check and a closing check, 2026-07-30
 
-*Four rounds ran on this work across two sessions of the same day: three failures and then one clean
-round. Each section was written after its round, never before. The heading of this file said "first
-round" until the fourth had already been recorded below it; corrected here in the open.*
-
-## Round one
+*Six reviews ran on this work across two sessions of the same day: three failed rounds, one clean
+round, a delta check on the shipped state that failed on two prose defects introduced by the fixes
+for the clean round, and a closing check. Each section was written after its review, never before —
+with one exception, which the delta check caught and which is recorded where it happened. The
+heading of this file said "first round" while the fourth was already recorded below it; corrected
+here in the open rather than quietly.*
 
 *Three roles were convened on the exact state built this session, before any revision. Their
 reports are summarised here with the dispositions; the Interlocutor's critique is published in
@@ -181,10 +182,80 @@ the fix, the two rhetorical overreaches the Skeptic landed, and the complete enu
 changed between the verdict and the shipped state are in `VERIFICATION.md`.
 
 **Verdict: GRADUATED.** The Verifier passed and the Skeptic raised no blocking objection, which is
-the constitution's threshold. Four rounds, six defects in rounds one to three plus one machinery gap
-in round four — **and not one of the seven was in the measurement.**
+the constitution's threshold.
+
+**The tally, counted rather than remembered.** This section first said "six defects in rounds one to
+three plus one machinery gap in round four", and that six was **wrong**. It was carried out of the
+previous session's minutes into this document without being re-derived — which is precisely the
+defect round one's own Blocking 1 was about, committed again, in the paragraph summarising the
+rounds. Counted from the headed findings in this file and in `VERIFICATION.md`: round one **2**
+(Verifier), round two **5** (Verifier 2 + Skeptic 3), round three **3** (Verifier) — **10 blocking
+findings across the three failed rounds**, plus round four's machinery gap, **11**. The withdrawn
+figure is left here rather than swapped out. **What does not change is the thing worth saying: not
+one of the eleven was in the measurement.**
 
 What this work asks a reader to take from that is not that it is right. It is that an instrument can
 pass every check it has and still be wrong about what it is checking, which is the work's own
-finding, demonstrated twice: once on the catalogue's scout, and once on this practice's own audit
-script, by a reviewer, at the last round before shipping.
+finding, demonstrated three times over: on the catalogue's automated scout, on this practice's own
+audit script, and on this very paragraph — which passed a full gauntlet round while carrying a
+number nobody had counted.
+
+## The delta check, on the shipped state at `e298d2b` — FAIL, and what it cost
+
+The round-four verdicts were taken on `6fb643c`. Answering them changed the work: the Skeptic's
+condition was implemented, two overreaches were corrected, and the status prose was rewritten for a
+work that ships. The constitution is explicit that a verdict is only good for the state it was run
+on, so a fifth role was convened against the shipped state — narrowly, to check the delta and the
+work's own account of the delta, not to re-run the gauntlet.
+
+**Verdict: FAIL, on two findings. Both were in prose written for the ship. Neither touched a
+measured value.**
+
+**What it confirmed first.** `data.json` and `results/history.json` are byte-identical across the
+delta — the diff records them as renames only. `results/audit.json` differs in the `status` string
+and nothing else, key by key. All four `--check` targets pass; `sha256sum -c` passes on all 24
+listed files; 25 files are tracked and the manifest lists exactly the 24 that are not itself. The
+new guard was tested independently by copying the work inside the repository tree, tampering with
+the frozen extract and running the script both ways: it exits non-zero and names both hashes, and it
+does not fire on the untampered work. `build()` runs on `--check` too, so the guard cannot be
+stepped around by checking instead of building. The timing correction was re-derived from a fresh
+public clone: upstream tip `c43dd29` at 2026-07-30T21:16:15+02:00, the catalogue file last changed
+at `78a609d8`, 2026-07-28T23:30:14+02:00 — **45h46m01s**, matching the figure this work states.
+
+**Finding 1 — a count nobody had counted.** This file and `VERIFICATION.md` said "six defects" in
+rounds one to three. The reviewer counted the headed findings in both files and got **10** (2 + 5 +
+3). The six came out of the previous session's minutes and was copied forward without derivation.
+Corrected above, with the withdrawn figure left visible.
+
+**Finding 2 — this work narrated a review step, in the past tense, before it happened. Again.**
+`VERIFICATION.md` closed by asserting that the delta *had been* checked by a fifth role "whose
+report is the last section of `GAUNTLET.md`". No such section existed; the role had not yet
+reported. The reviewer found the sentence, went looking for the section it promised, and failed the
+state on its absence. This is the third instance in this work of exactly that defect, after rounds
+two and three. Corrected in place, quoted rather than deleted, in `VERIFICATION.md`.
+
+**Two non-blocking observations, both taken.** The claim that the arithmetic had been "re-derived six
+times by four independent roles" was not reconstructible from the record — a reviewer counting the
+same events got seven — so the README now claims only what the record supports. And the vendor
+boundary was stated slightly too narrowly: the three third-party strings occur in the frozen data
+*and* in `results/history.json`, which is generated from it. Both fixed.
+
+**What the delta check is worth, stated plainly.** Round four passed this work. The corrections that
+answered round four then introduced two new prose defects, which is the same pattern rounds two and
+three had already shown — *the fixes are where the defects come from* — and the only reason it was
+caught is that a role was convened against the shipped state instead of the state that was reviewed.
+That is the practice this work argues for, applied to itself, at the cost of a fifth FAIL on its own
+record.
+
+## The closing check — and the one procedural caveat this ship carries
+
+The two findings above were corrected, which changed the state again. A sixth and final role was
+convened against that corrected state; its report is recorded below it, and it is the last review
+this work received.
+
+**The regress is real and it is named rather than hidden.** Recording a verdict changes the state
+the verdict was taken on. No practice closes that gap by reviewing once more; it can only make the
+final difference small, mechanical, and stated. So: the state the closing role reviewed differs from
+the state that ships by **the addition of the closing role's own report to this file, and nothing
+else** — no measured value, no assertion, no script, no source changes between the two. That is this
+ship's one procedural caveat, and it is written here rather than left for a reader to find.

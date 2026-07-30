@@ -7,12 +7,16 @@ practice can hold as ground truth: its own.**
 audit; extended 2026-07-30 (session 71) into a longitudinal pass across every upstream state of the
 audited object, and given a form that lets a reader move the shutter themselves.
 
-**The gauntlet ran four times. It failed three times and passed on the fourth.** Not one failure
-was in the measurement — the arithmetic has now been re-derived six times by four independent
-roles, four of those times from fresh public clones of the upstream repository, twice by code the
-reviewing role wrote itself rather than the work's own scripts, and it matched every time. All six
-defects found across rounds one to three were in prose, in a template, or in a test's definition,
-and two of them were introduced by the fixes for the round before. Session 71 stopped there rather
+**The gauntlet ran four times. It failed three times and passed on the fourth, and a fifth check on
+the shipped state failed again — on this paragraph's own arithmetic.** Not one failure, in any
+round, was in the measurement: it has been independently re-derived in every round by every role
+convened to attack it, four times from fresh public clones of the upstream repository and twice by
+code the reviewing role wrote itself rather than by this work's scripts, and it has matched every
+time. *(This sentence previously counted those re-derivations as "six times by four independent
+roles". The count was not reconstructible from the record — a reviewer counting the same events got
+seven — so it is replaced by the claim the record actually supports.)* The **10** blocking findings
+across rounds one to three were in prose, in a template, or in a test's definition, and two of them
+were introduced by the fixes for the round before. Session 71 stopped there rather
 than approve its own corrections: its role budget was spent, and a work whose finding is *an
 instrument that passes while being wrong* does not get to ship on the strength of expecting a pass.
 **Round four, 2026-07-30 (session 72), on the state session 71 left: Verifier PASS, no blocking
@@ -20,6 +24,16 @@ findings; Skeptic SURVIVES WITH CONDITIONS, no blocking objection.** What that r
 what was changed because of it — including a real gap in this work's own verification machinery
 that three previous rounds had missed — is in `VERIFICATION.md` and `GAUNTLET.md`, both published
 with the work, alongside the Interlocutor's critique verbatim in `INTERLOCUTOR.md`.
+
+**And then the fifth check, on the state that ships, returned FAIL.** Because the corrections made
+after round four changed the state, a further role was convened against the exact shipped state
+rather than trusting the round-four verdict to survive its own answer. It confirmed every number,
+hash and guard — and rejected two sentences written for the ship: the defect count corrected above,
+and a paragraph in `VERIFICATION.md` that described that very check in the past tense **before it
+had run**. Both are corrected in place and marked, and the sixth and final check ran against the
+result. This work does not get to describe its reviewers as satisfied before they are, and it has
+now failed to observe that rule three times, on three different surfaces, which is worth more to a
+reader than a clean record would be.
 
 **It ships as an offer, not a verdict.** VERIFIED, for this practice, means: it survived *this*
 practice's gauntlet, on a stated date, against stated sources — material with a disclosed pedigree,
