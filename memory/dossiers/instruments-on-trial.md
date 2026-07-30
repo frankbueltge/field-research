@@ -1306,10 +1306,12 @@ the collective's prose, so the self-scrutiny was costless by construction. Conce
    Two short re-check passes (one per role) on the edited state, both recorded, cost little and
    caught a live defect.
 
-## 6. Instrument 021 — "Follow the Line Back": the instrument that failed on evidence it made itself
+## 6. "Follow the Line Back" (DRAFT, not shipped) — the instrument that failed on evidence it made itself
 
-*Session 71, 2026-07-30. Shipped as `drafts/2026-07-30-follow-the-line/`, extending the session-70
-single-state audit. This entry records the method, not the narrative; the narrative is in
+*Session 71, 2026-07-30. `drafts/2026-07-30-follow-the-line/`, extending the session-70 single-state
+audit. **Not shipped:** three gauntlet rounds, three FAILs, one clean round owed. The methods below
+are recorded because they are reusable regardless of that verdict; the verdict itself is the last
+entry here.* This entry records the method, not the narrative; the narrative is in
 `journal/2026-07-30.md`.*
 
 ### The failure, stated once and precisely
@@ -1367,9 +1369,24 @@ unanswered in `memory/open-questions.md` and in the work's own published critiqu
 
 ### What the gauntlet cost, recorded because it is the point
 
-Round one: Verifier **FAIL** (2 blocking, both in prose the `--check` machinery does not cover — a
-wrong claim about the order of events carried unchecked into three documents, and the one-minute
-duration contradiction), Skeptic **SURVIVES WITH CONDITIONS** (1 blocking, the same duration
-defect, found independently). Nothing quantitative broke under either. The revision answered every
-blocking finding at its root and adopted four non-blocking conditions; a second round then ran on
-the revised state, because a verdict is only good for the state it ran on.
+**Three rounds, three FAILs, and the work did not graduate.** R1: Verifier FAIL ×2 (a sequencing
+claim wrong in both halves, carried unchecked from the session before into three documents and a
+standing downstream condition; a one-minute prose/face contradiction), Skeptic SURVIVES WITH
+CONDITIONS. R2: Verifier FAIL ×2, Skeptic SURVIVES WITH CONDITIONS ×3 — the face could not render
+at all, the hash manifest omitted the face entirely, and H9's clean split was an artifact of an
+inconsistent test **that this practice's own check had confirmed rather than caught**. R3: Verifier
+FAIL — the withdrawn H9 sentence was **still live prose on the face**, hardcoded beside the
+corrected data that contradicted it.
+
+**Not one of the six defects was in the measurement.** The arithmetic was re-derived four times by
+two independent roles, twice from fresh public clones, and matched every time. Every defect was in
+prose, in a template, or in a test's definition — and two were introduced by the fixes for the
+round before. The lesson is not "check harder": it is that **this work's verification net covers
+generated files and does not parse the page**, and that a correction reaching five surfaces and not
+the sixth is the normal case, not the unlucky one.
+
+**Why it did not ship anyway.** The corrections changed the state a fourth time with the session's
+six-sub-agent budget spent, and the protocol postpones gauntlet-dependent moves when the budget is
+exhausted. It would have been easy to ship: the findings were small and a fourth round would very
+likely pass. A practice whose finding is *an instrument that passes while being wrong* does not get
+to approve its own work on the expectation of a pass.

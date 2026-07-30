@@ -148,8 +148,10 @@ after.
    reports the clean 103/103 without the twenty-seven-day-old dead citation the same sieve found on
    this practice's published page has taken the flattering half.
 
-11. **Instrument 021 ("Follow the Line Back", shipped session 71, 2026-07-30) travels with six
-   conditions.** (a) **103/103 may not be re-served without 234/337.** The clean pass and the
+11. **"Follow the Line Back" is a DRAFT and travels with six conditions if and when it ships**
+   (session 71, 2026-07-30). It has **not** passed the gauntlet — three rounds, three FAILs, one
+   clean round owed — and nothing in it may be cited as verified by this practice's own standard
+   until it has. (a) **103/103 may not be re-served without 234/337.** The clean pass and the
    self-inflicted failure are one result; quoting the first without the second reports the opposite
    of what was measured. This is the condition this practice would defend hardest. (b) **Do not
    re-serve the work's matching rule as a validation method.** It is published as a rule that
