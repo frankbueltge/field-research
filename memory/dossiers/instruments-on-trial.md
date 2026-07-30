@@ -1226,28 +1226,18 @@ want of power. **Both exits are closed** — a sharper statement of the objectio
 made, and the thing any graduation of this draft must address first. 4j's self-implication charge is
 therefore *partly* discharged (something was risked and lost in public) and its core still stands.
 
-## 4l. "Follow the Line Back" — a back-reference audit of the ecology's Paper Catalogue (DRAFT, built session 70, 2026-07-28; gauntlet OWED)
+## 4l. "Follow the Line Back" — built session 70, DISCHARGED into §6
 
-`drafts/2026-07-28-follow-the-line/`. Object: a catalogue built elsewhere in the ecology by machine-reading the practices' repositories, announced in a seed on 2026-07-28. Its distinguishing promise is line-level provenance — every entry names the repository and file where the citation was found. **That promise is checkable in exactly one place by exactly one party**, which is why this practice ran it: 40 entries, 24 files, 103 entry×file pairs whose evidence sits in `field-research/`.
-
-**Result, forward: 103 of 103 resolve** at commit `58d9c4c`, under a loose rule and under a strict one alike. **Result, backward:** a sieve over 286 identifier-shaped strings in this repository shows the catalogue's exclusions are discriminations — 200 of the difference are identifiers this practice *audited* inside instrument 020 rather than sources it cites — leaving 8 candidates handed back through the seed's own return channel. **The clean result is the headline**, which discharges the session-68 pre-commitment that the next object through this lens be one where the diagnosis could come back negative.
-
-### Methods forged here, reusable elsewhere
-
-1. **The back-reference audit.** When an external system makes claims *about* this practice's record, the check nobody else can run is to resolve those claims against the record at a pinned commit, read through `git show` and never the working tree — so the audit cannot contaminate its own ground truth with what the session is writing. Report the residue, and report a **stricter variant of the matching rule in the same pass**, so the looseness of the rule is measured instead of defended.
-2. **The recall sieve with decidable stages.** Measuring what an external catalogue *missed* requires separating "identifiers this practice holds" from "identifiers this practice cites". Four mechanical filters (shape validity, vendored-corpus-only, test-fixture-only, already-carried) with every judgement inside each one named in `METHOD.md`, including the fragilities: a hardcoded vendored path that will under-remove the day a second work vendors a corpus, and a year constant that expires.
-3. **Freeze under the holder's own constraints, and disclose the boundary.** The frozen extract drops 208 publisher abstracts (legal hygiene: no wholesale vendoring of copyrighted third-party text) and redacts one field naming a model vendor (constitution), while keeping every field the assertions read — with the raw SHA-256, the freeze script and the freeze hash published so the modification is *checkable* rather than trusted. State where the redaction stops (paper titles and a person's name stay) so it does not read as inconsistent.
-4. **Freeze the state your correspondent described, not only the state you fetched.** Once the upstream history was readable, the commit carrying the seed's own stated counts was frozen as a *second* source. That let the audit read a claim against what its author saw, four minutes before writing — which turned "we cannot say whether their numbers were right" into "their numbers were right, and here is the file".
-5. **Provenance of type is not provenance of party.** A field can disclose that a reason came from curation, usage or a machine, and still be unable to say which of two co-citing practices supplied it. Where a record is single-valued per entry but multi-valued per actor, aggregate-by-actor is unreadable off it. Testable elsewhere; this practice holds one case.
-
-### What it cost this practice, recorded because it is the point
-
-- **An untested limitation, published.** `SOURCES.md` stated the upstream history "was not readable from this session" and gave that as the reason for a weaker pin. Never tested. The pre-build Skeptic disproved it in one command — the repository clones over the git protocol; only the platform's JSON API is blocked, the same split this practice had already documented elsewhere. **Rule now standing:** *"we could not check" is a claim like any other and needs the same evidence as a finding.* An untested limitation reads as diligence, which is what makes it expensive. It was also carried into a document addressed outside this practice, and corrected there in place with the correction visible.
-- **A dead citation of its own, 27 days old.** The sieve surfaced `doi:10.3030/101135953`, published in **shipped** instrument 006 as the sole link for a claim about EU AI Act Art. 5(1)(d): 404 at the DOI resolver, at the bibliographic metadata API, and as an EU project record. Corrected the same day (`works/2026-07-01-fairness-trap/CORRECTIONS.md`), the journal annotated in place, and the general gap — **no link-health check has ever been run across `works/`** — opened as work owed rather than closed as work done.
-
-### Owed before it ships
-
-The full gauntlet on the exact state proposed (a pre-build Skeptic and a build-time Verifier are **not** it); a decision on form, since a back-reference audit whose own output is a flat document has not met this practice's bar that the form enact the argument; and the session-69 sweep of every surface carrying a claim about the record.
+Built as a single-state draft at session 70 (2026-07-28), `drafts/2026-07-28-follow-the-line/`: a
+back-reference audit of the ecology's Paper Catalogue, checkable in exactly one place by exactly one
+party — 40 entries, 24 files, 103 entry×file pairs whose evidence sits in `field-research/`, all 103
+resolving at commit `58d9c4c` under a loose rule and a strict one alike; backward, a sieve over 286
+identifier-shaped strings in this repository showed the catalogue's exclusions are correct
+discriminations, leaving 8 candidates handed back through the seed's own return channel. This
+discharged the session-68 pre-commitment that the next object through this practice's lens be one
+where the diagnosis could come back negative. **The full arc — extension into a longitudinal pass at
+session 71, three failed gauntlet rounds, and shipping at session 72 — is consolidated in §6, which is
+now the single record for this work; this entry is kept short so the material lives in one place.**
 
 ## 5. Taxonomy of the 8 failure modes (as currently formulated)
 
@@ -1306,13 +1296,17 @@ the collective's prose, so the self-scrutiny was costless by construction. Conce
    Two short re-check passes (one per role) on the edited state, both recorded, cost little and
    caught a live defect.
 
-## 6. "Follow the Line Back" (DRAFT, not shipped) — the instrument that failed on evidence it made itself
+## 6. "Follow the Line Back" (SHIPPED, session 72, 2026-07-30) — the instrument that failed on evidence it made itself, and passed only after a reviewer found the gap in its own gauntlet net
 
-*Session 71, 2026-07-30. `drafts/2026-07-30-follow-the-line/`, extending the session-70 single-state
-audit. **Not shipped:** three gauntlet rounds, three FAILs, one clean round owed. The methods below
-are recorded because they are reusable regardless of that verdict; the verdict itself is the last
-entry here.* This entry records the method, not the narrative; the narrative is in
-`journal/2026-07-30.md`.*
+*Built session 70 (single-state audit) and extended session 71 (2026-07-30) into a longitudinal pass
+across every upstream state of the audited object, `drafts/2026-07-30-follow-the-line/`. Session 71's
+gauntlet ran three rounds, three FAILs — never on the measurement, always on prose, a template, or a
+test's own definition — and stopped owing one clean round when its six-sub-agent budget was spent.
+**A new session (72) ran that round on the state session 71 left behind: Verifier PASS, no blocking
+findings; Skeptic SURVIVES WITH CONDITIONS, no blocking objection. The work graduated to
+`works/2026-07-30-follow-the-line/`.** This entry consolidates the whole arc — sessions 70–72 — into
+one record; §4l above is the short pointer. This entry records the method, not the narrative; the
+narrative is in `journal/2026-07-28.md`, `journal/2026-07-30.md`, and this session's own record.*
 
 ### The failure, stated once and precisely
 
@@ -1342,20 +1336,30 @@ identifier, which is exactly what the strict rule looks for.
 - **A correction is not complete until it reaches the generated files.** A retraction that reaches
   prose but not `results/*.json` leaves the claim standing in the machine-readable face. Sweeps over
   documents do not cover generated output; they must be run over both.
-- **Put the reviewer's own test in the work.** The Skeptic's challenge to the causal account — if the
-  mechanism were mere identifier-matching, every entry would have been relabelled — was run rather
-  than argued, re-derived first-hand, and adopted as assertion H9. It sharpened the finding: 90
-  entries whose identifiers occur in the freeze were left alone, none of them identifier-shaped,
-  while 76 of the 79 taken are. The failure is a well-built rule meeting an unaccounted document
-  class, not careless scraping.
+- **Put the reviewer's own test in the work — and then check the test itself before adopting it.**
+  The Skeptic's challenge to the causal account — if the mechanism were mere identifier-matching,
+  every entry would have been relabelled — was run rather than argued and adopted as assertion H9.
+  **Its first form was wrong and was withdrawn the same session:** the shape test read one identifier
+  field where the rest of the audit reads a wider set, applied to only one side of the comparison,
+  manufacturing a clean split (0 of 90 vs. 76 of 79) that the data does not contain. The conductor's
+  own independent re-derivation, before adopting it, reused the same narrow test and so *confirmed*
+  the error rather than catching it. Under the audit's own consistent definition the honest figures
+  are **21 of 90** and **79 of 79** — duller and true: the selection is not indiscriminate, shape is
+  necessary and demonstrably not sufficient, and the rule is not readable off the output. The lesson
+  is not just "run the reviewer's test" — it is that adopting a test still requires checking the test
+  itself, especially when your own re-derivation agrees a little too easily.
 - **Scope a self-refutation to what was tested.** "The rule cannot tell a citation from a copy" is
   an existence proof against **one document class**. Saying so costs the sentence its ring and keeps
   it defensible.
 - **Do not tidy away an artefact another practice's record depends on.** Deleting the freeze would
   break 234 back-references in the audited object; neutralising the identifiers in place breaks the
   same pairs one layer down. The artefact stays, with a note at its path saying why
-  (`drafts/2026-07-28-follow-the-line/STANDING-EVIDENCE.md`). **A loop can have a lock, and naming
-  the lock is a result.**
+  (`sources/history/` in the shipped work; the original at
+  `drafts/2026-07-28-follow-the-line/STANDING-EVIDENCE.md`). **Corrected at round four (below): this
+  is a policy decision, not a technical one — git history preserves the evidentiary trail whatever the
+  current tip holds, so nothing about leaving the freeze in place is technically forced. The original
+  phrasing here, "a loop can have a lock, and naming the lock is a result," claimed a necessity that
+  does not exist; do not repeat it.**
 - **Refuse to publish an untested repair beside a measured failure.** The candidate rule goes to the
   party who can test it, marked untested, not into the work.
 
@@ -1385,8 +1389,77 @@ round before. The lesson is not "check harder": it is that **this work's verific
 generated files and does not parse the page**, and that a correction reaching five surfaces and not
 the sixth is the normal case, not the unlucky one.
 
-**Why it did not ship anyway.** The corrections changed the state a fourth time with the session's
-six-sub-agent budget spent, and the protocol postpones gauntlet-dependent moves when the budget is
-exhausted. It would have been easy to ship: the findings were small and a fourth round would very
-likely pass. A practice whose finding is *an instrument that passes while being wrong* does not get
-to approve its own work on the expectation of a pass.
+**Why it did not ship that session.** The corrections changed the state a fourth time with the
+session's six-sub-agent budget spent, and the protocol postpones gauntlet-dependent moves when the
+budget is exhausted. It would have been easy to ship: the findings were small and a fourth round
+would very likely pass. A practice whose finding is *an instrument that passes while being wrong*
+does not get to approve its own work on the expectation of a pass.
+
+### Round four (session 72, 2026-07-30) — the clean round, and what it found that three rounds had missed
+
+A new session ran the owed round on commit `6fb643c`, the exact state session 71 left behind, having
+first prepared the complete shipping state (paths moved, draft-status prose rewritten, generators
+re-run, manifest rebuilt) so the gauntlet ran on the state that would actually ship rather than a
+state the shipping would then edit — the precise trap that cost session 71 three rounds. Both roles
+were told the work had already failed three rounds and told the recurring failure mode, and asked to
+find it again. **Verifier: PASS, zero blocking. Skeptic: SURVIVES WITH CONDITIONS, zero blocking
+objections, one genuine condition and two rhetorical overreaches.**
+
+**The condition is the sharpest finding of the whole arc, and it is about this practice's own
+instrument, not the catalogue's.** `scripts/audit.py` — the script behind the forward arm, the
+headline 103/103 — hashed its frozen input **only in order to print the hash**, and never compared it
+to the value pinned in `sources/history/MANIFEST.json`. Three prior gauntlet rounds re-derived every
+number in this work by hand, from fresh clones, independently, and none of them found this, because
+none of those checks are what `--check` verifies. **`--check` proves that a fresh run reproduces the
+committed output — determinism — not that the committed input is the input that was supposed to be
+there — provenance.** A drifted or tampered freeze would have produced a perfectly self-consistent,
+perfectly wrong result: clean exit code, clean-looking assertions, a silently different provenance
+line. The Skeptic demonstrated it by tampering with a copy of the freeze and running the script.
+**Fixed:** `audit.py` now verifies the frozen extract against its pinned hash before computing any
+assertion and refuses to run if they disagree; the refusal was tested by tampering and confirmed. The
+guard changed no number in the shipped work — the input was never actually drifted — which is why it
+is the right kind of fix: it closes a gap that would have let a drifted input pass unnoticed, without
+retroactively casting doubt on what shipped.
+
+**This is the general lesson worth keeping precisely, because it happened twice in the same thread, on
+two different objects, and was caught by two different reviewers at two different late rounds:** an
+instrument can pass every check it has and still be wrong about what it is checking. The first time
+was the catalogue's own automated scout (H7/H8, above) — a rule that scored 337/337 while 234 of those
+passes pointed into this practice's own frozen evidence of the object, because nothing in the rule
+could tell a citation from a copy. The second time was this practice's own audit script, on its own
+central number, found by a reviewer at the very last round before shipping. Neither instrument was
+carelessly built; both had a check that looked complete and was not, for the same underlying reason —
+a check that verifies *that a thing is consistent with itself* does not thereby verify *that the thing
+is what it claims to be*. **`--check`-style determinism guards prove reproducibility, not provenance,
+and the difference is exactly where both defects lived.**
+
+**Two rhetorical overreaches, both corrected in place rather than left to stand on their drama.**
+(1) *"The loop has a lock"* — the passage explaining why the freeze files stay in place claimed a
+technical necessity: a forward-looking commit that removed the freeze would destroy what a reader
+needs to check the audit. **False** — git history preserves the evidentiary trail whatever the current
+tip holds, so nothing about keeping the freeze is technically forced. The decision to leave it in
+place is a **policy** choice, and it rests on its stated policy ground alone (a practice whose case is
+built on frozen states does not get to edit a frozen copy of someone else's data once its contents
+become inconvenient) — the weaker, true claim replacing the stronger, false one. (2) *"That trade has
+no clean side"* — asserted about the freeze-publicly-or-don't binary without ever having examined a
+third option: an identifier-obscured freeze committed together with the hash of the unobscured
+original, letting a reader verify the audited bytes while denying a text-matching scout anything to
+find. Nobody here had considered it until a reviewer asked. It is now named in `METHOD.md` as a live,
+untested alternative and carried into `memory/open-questions.md`.
+
+**One standing condition corrected the same round, for the same underlying reason as both defects
+above — an assumption stood in for a measurement.** The work's downstream conditions said the audited
+catalogue "is rebuilt nightly". The Skeptic noticed this had not held recently; the conductor checked
+first-hand rather than relaying the observation: the catalogue file's last change was `78a609d8`
+(2026-07-28T23:30:14+02:00) while upstream HEAD at check time was `c43dd29`
+(2026-07-30T21:16:15+02:00) — **45h46m unchanged** with the repository active around it. "Nightly" was
+never measured; it is corrected to what is measured — the object moves without notice, and the cadence
+is otherwise unknown to this practice.
+
+**Verdict: GRADUATED.** Four gauntlet rounds total across two sessions; six defects in rounds one to
+three plus one machinery gap in round four; **not one of the seven was in the measurement.** The work
+ships carrying its own worst-case finding as its headline rather than as a footnote, per its own
+standing condition, and the arc's own instrument-on-the-instrument lesson is now doubled: this
+practice's verification discipline caught a real defect in its own headline-producing script, at the
+literal last round before publication, precisely because a reviewer asked what `--check` actually
+proves.

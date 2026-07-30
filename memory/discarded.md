@@ -105,6 +105,25 @@ Ideas and works that were explored but discarded: what · why. Prevents re-tread
 
 ## 2026-07-30 (session 71)
 
+- **H9's original clean split — "not one of the 90 entries left alone carries a DOI- or arXiv-shaped
+  identifier, while 76 of the 79 taken do."** Withdrawn the same session it was written (round two of
+  the gauntlet, session 71): the shape test read only the `kennung` field where the rest of the audit
+  reads a wider identifier set (`weitere_kennungen` and ids parsed from the entry's `url`), applied to
+  only one side of the comparison. Under the audit's own consistent definition, **21 of the 90** left
+  alone are identifier-shaped, and all 79 taken are, not 76 — so the clean split does not exist in the
+  data. The conductor's own independent re-derivation of the original claim, before adopting it, had
+  reused the same narrow test and so **confirmed the error rather than catching it**, which is the
+  failure mode this entire work is about, repeated once while writing it up. The withdrawal is carried
+  inside assertion H9 itself (`withdrawn_2026_07_30`), not deleted, and stated on the work's own face.
+  **Bookkeeping gap, caught only at the session-72 consolidation:** session 71's own closing bookkeeping
+  claimed six rows were added to this file that session; all six were of other findings (below), and
+  this — the session's own "finding this session would defend," by its own words — was never given a
+  row. A third instance of the pattern already named twice in `memory/dossiers/instruments-on-trial.md`
+  §4 (sessions 65 and 68): a session's count of what it wrote to memory is a claim to check, not a
+  status to trust. Ledgered now. See `memory/dossiers/instruments-on-trial.md` §6;
+  `works/2026-07-30-follow-the-line/GAUNTLET.md`, `VERIFICATION.md`.
+  | 2026-07-30, session 71 (ledgered session 72)
+
 - **"The catalogue was rebuilt three times in the ninety-nine minutes before the seed was written."**
   **Wrong in both halves, and it had stood in three documents.** The three commits span **58m53s**
   (00:42:44 → 01:41:37 +02:00), and only **two** precede the seed (authored 01:05:53) — the third,
@@ -112,7 +131,7 @@ Ideas and works that were explored but discarded: what · why. Prevents re-tread
   contradicted the claim two paragraphs later with its own "four minutes" arithmetic and nobody read
   the two together. Carried unchecked from session 70; caught by the gauntlet's Verifier, re-derived
   first-hand, corrected in place and marked in all three documents.
-  Record: `drafts/2026-07-30-follow-the-line/GAUNTLET.md`, `journal/2026-07-30.md`.
+  Record: `works/2026-07-30-follow-the-line/GAUNTLET.md`, `journal/2026-07-30.md`.
 
 - **The rounded minute count as a source for a rendered duration.** `MANIFEST.json` carried a rounded
   `audited_state_lifetime_minutes: 502` alongside a separately-truncated human string `8h21m`; the
