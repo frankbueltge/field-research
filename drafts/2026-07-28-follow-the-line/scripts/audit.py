@@ -36,6 +36,12 @@ OUT = os.path.join(HERE, "results", "audit.json")
 
 PIN = "58d9c4c"
 
+# The catalogue side, pinned to upstream commits. Established 2026-07-28 after this practice's
+# published claim that the upstream history was unreadable was tested and found false; carried
+# into this file on 2026-07-30 (see the `corrections` block in the output's `pin`).
+UPSTREAM_COMMIT = "a7879398326d0b6e546cbeab8b7216ca31700f5e"   # the state audited, 01:41:37+02:00
+SEED_STATE_COMMIT = "6a032edb"                                 # the state the seed described
+
 # The catalogue names citers with short labels; their evidence paths carry repository
 # prefixes. This is the mapping the audit tests, not a mapping it assumes.
 LABEL_TO_PREFIX = {
@@ -130,9 +136,14 @@ def build():
 
     # --- A1 the object -----------------------------------------------------------
     add("A1", "Entries in the frozen catalogue extract", len(entries),
-        "The freeze is a fetched state at a time, not an upstream commit: this practice's "
-        "programmatic access does not reach the site repository's history, so no commit could "
-        "be pinned. SHA-256 of the raw fetch and of the freeze are in SOURCES.md.")
+        "The freeze is the catalogue file at upstream commit %s (2026-07-28T01:41:37+02:00); the "
+        "state the seed describes is frozen alongside it at %s (01:01:18) and asserted in A15. "
+        "SHA-256 of both freezes are in SOURCES.md. CORRECTION 2026-07-30: until this run, this "
+        "note stated that no upstream commit could be pinned because the site repository's "
+        "history was not readable from here. That was false and had never been tested; it was "
+        "retracted in the prose on 2026-07-28 (SOURCES.md, journal/2026-07-28.md) but survived "
+        "unretracted in this machine-readable output for two days. See pin.corrections."
+        % (UPSTREAM_COMMIT[:8], SEED_STATE_COMMIT[:8]))
 
     # --- A2 do the citer labels correspond to the evidence paths? -----------------
     violations = []
@@ -380,9 +391,26 @@ def build():
         "status": "DRAFT — built 2026-07-28, not yet through the gauntlet",
         "pin": {
             "repository_commit": PIN,
+            "catalogue_upstream_commit": UPSTREAM_COMMIT,
+            "catalogue_seed_state_commit": SEED_STATE_COMMIT,
             "catalogue_freeze_sha256": sha256(FROZEN),
-            "note": "The catalogue side is pinned by content hash, not by an upstream commit; "
-                    "see SOURCES.md for why, and for the fetch times.",
+            "note": "Both sides are pinned to commits. The catalogue freeze is additionally "
+                    "pinned by content hash; see SOURCES.md for the hashes and the fetch times.",
+            "corrections": [
+                {
+                    "date": "2026-07-30",
+                    "retracted": "The catalogue side is pinned by content hash, not by an "
+                                 "upstream commit, because this practice's programmatic access "
+                                 "does not reach the site repository's history.",
+                    "why": "False, and never tested before it was published. The repository "
+                           "clones over the plain git protocol; only the platform's JSON API is "
+                           "unavailable. Disproved by a role this practice convened on "
+                           "2026-07-28 and corrected in the prose the same day — but the "
+                           "correction did not reach this file until 2026-07-30.",
+                    "replaced_by": "pin.catalogue_upstream_commit, "
+                                   "pin.catalogue_seed_state_commit, A1, A15",
+                },
+            ],
         },
         "caveats": {
             "what_is_checked": "Only the arm of the catalogue whose evidence lies in this "
