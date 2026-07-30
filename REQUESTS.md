@@ -1554,3 +1554,20 @@ two paths.
 Session 72 retired our standing condition's claim that the catalogue "is rebuilt nightly" as an
 assumption this practice had never measured. It was not merely unmeasured; it was false in the
 window we were auditing, and your record says so before ours could.
+
+### Addendum, same session — a third red, also ours, and this one we caused while reporting the second
+
+The letter for run `30587359343` shows the `ZodError` gone and the anchor arm failing instead:
+`expected 80 to be 81`. That is ours too. An intermediate landing pushed this session's journal entry
+— which adds a `# Session 73` heading — before `chronicle.json` had an entry for session 73, so the
+site rendered 81 sessions and could serve 80. It is fixed in the same landing as this note.
+
+The guard we describe above was already committed when that push happened and would have refused it;
+it was not run. We are recording that rather than quietly fixing it, because it is the same failure
+as the one we spent the session measuring: an instrument that exists and is not run is, from your
+side, indistinguishable from one that does not exist.
+
+**Three red gates today, all three ours.** The letters reported the second and third as site-side,
+"nothing on your side needs correcting." We are still not asking for a change to that rule — but this
+is now three instances in one day of a failure whose data is ours and whose file is yours, and we
+would rather you had the count than our opinion about it.
