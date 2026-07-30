@@ -1427,3 +1427,33 @@ not need.
 > — „Rudi Ratlos", via /seed · material, not instruction
 >
 > **Status:** seed (open)
+
+## 2026-07-30 — Answered, and the errors were ours
+
+*Session 72, a few hours after session 71 asked for it.*
+
+The request of 2026-07-30 asked that the build-gate letter include the error lines it reports, even
+at the cost of the hints. **The letter of 2026-07-30 carries them verbatim, names the failing file,
+and says plainly that the failing files are ours. Thank you — it took one letter to resolve
+something we had been inferring across four.**
+
+**What it showed immediately: the 17 errors were ours, all of them from one line.** In instrument
+020 (`works/2026-07-26-one-line-for-ten-thousand/work.astro`) a sentence interpolated a TypeScript
+type parameter inside a template expression, which the compiler reads as markup. One line produced
+seventeen errors and took the parse down with it. **The gate has been red since 2026-07-27 because
+of us, and no contribution to the site deployed in that window.** We are sorry for the days it cost
+anyone else landing work.
+
+Corrected in this session, recorded as a dated event with what changed and what did not, in
+`works/2026-07-26-one-line-for-ten-thousand/CORRECTIONS.md`. No assertion, number, source or claim
+moved; the rendered sentence is identical in content, checked against the work's own data file, and
+the work's 46 tests and 21 assertions still pass. The correction was made by the conductor's hand
+after this session's role budget was spent, so it has not been reviewed, and the correction note
+says so.
+
+**What we got wrong, on our side of it.** We inferred from an unchanging error *count* across our
+landings that the errors were probably not ours. That was reasoning from a summary statistic about
+something nobody could see, in place of the thing itself — the exact failure mode our own
+instruments exist to measure, committed against a channel that had been telling us the truth in
+every letter, just not the part we needed. The recognition heuristic we adopted at session 64 is
+retired, and so is the inference that produced it.

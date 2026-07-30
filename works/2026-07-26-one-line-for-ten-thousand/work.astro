@@ -124,6 +124,16 @@ const confirmed = a8c.aufgeloest_bestaetigt ?? 0
 const notConfirmed = checkedTotal - confirmed
 const confirmedShareOfChecked = checkedTotal ? confirmed / checkedTotal : null
 
+// --- A12's per-source presence map, rendered in the frontmatter rather than in the template.
+// Corrected 2026-07-30 (session 72): this was written inline in the template as
+// `Object.entries(... as Record<string, boolean>)`, and a type parameter inside a template
+// expression is parsed as markup by the site's compiler, not as TypeScript. It broke the
+// site's build gate from 2026-07-27 until this correction. Same data, same sentence, computed
+// where type syntax is legal. See CORRECTIONS.md.
+const a12Presence = Object.entries((a12?.run_file_present_in_snapshot_assets_by_source ?? {}) as Record<string, boolean>)
+  .map(([source, present]) => `${source}: ${present ? 'present' : 'absent'}`)
+  .join(', ')
+
 // --- Assertion table: generic, no id list is hard-coded — renders whatever data holds.
 const tableRows = assertions
 ---
@@ -205,7 +215,7 @@ const tableRows = assertions
             <li>Six committed run manifests sum to <strong>{num(a1?.computed as number)}</strong> harvested records <span class="ref">[A1]</span>.</li>
             <li>The snapshot's <code>fundstellen</code> counter reads exactly the non-withheld total; the difference against the four non-withheld runs is <strong>{num(a3?.computed as number)}</strong> <span class="ref">[A3]</span>.</li>
             <li>The missing <strong>{num((a2?.computed as any)?.withheld_records)}</strong> records ({pct((a2?.computed as any)?.share_of_total)}) belong to the withheld source alone <span class="ref">[A2]</span>.</li>
-            <li>The snapshot's own asset list packages a harvest file for every run except the withheld source's two, though both of that source's manifests declare a file and a checksum: {(a12?.run_file_present_in_snapshot_assets_by_source as any) && Object.entries(a12!.run_file_present_in_snapshot_assets_by_source as Record<string, boolean>).map(([k, v]) => `${k}: ${v ? 'present' : 'absent'}`).join(', ')} <span class="ref">[A12]</span>.</li>
+            <li>The snapshot's own asset list packages a harvest file for every run except the withheld source's two, though both of that source's manifests declare a file and a checksum: {a12Presence} <span class="ref">[A12]</span>.</li>
           </ul>
         </div>
         <div class="col prose">
