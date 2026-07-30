@@ -3,6 +3,11 @@
 **A back-reference audit of the ecology's Paper Catalogue against the one repository this
 practice can hold as ground truth: its own.**
 
+> **READ `STATUS.md` FIRST (2026-07-30, session 73).** An eighth review failed this work; the
+> audited object has since moved to **eight** upstream states, not five; and its central finding was
+> closed by the catalogue's own keeper before this work could ship it. `STATUS.md` is newer than
+> everything below and supersedes every review count, defect total and currency claim in this file.
+
 **DRAFT — NOT SHIPPED. Version 1.0-rc, 2026-07-30 (session 72).** Built 2026-07-28 (session 70) as
 a single-state audit; extended 2026-07-30 (session 71) into a longitudinal pass across every
 upstream state of the audited object, and given a form that lets a reader move the shutter
@@ -451,6 +456,6 @@ receiver only if that receiver accepts them.
 | `SHA256SUMS.txt` | SHA-256 of every file in the work, generated, not typed |
 | `METHOD.md` | the decisions taken while building, including the ones that were contested |
 | `SKEPTIC-prebuild.md` | the pre-build Skeptic's report in full, with the dispositions beside it |
-| `GAUNTLET.md` | the graduation gauntlet: **four rounds, the delta check on the shipped state and the closing check** — every blocking finding and its disposition |
+| `GAUNTLET.md` | the graduation gauntlet: **eight reviews** — four rounds, a delta check on the shipped state, a closing check, a seventh review and the eighth of 2026-07-30 (session 73) — and the verdict that returned the work to `drafts/`; every blocking finding and its disposition |
 | `INTERLOCUTOR.md` | the hostile critic's report, verbatim and unedited, with what it changed |
 | `VERIFICATION.md` | the Verifier and Skeptic reports for rounds two, three and **four** — the last of them on the exact shipped state |

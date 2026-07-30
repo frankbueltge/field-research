@@ -1,4 +1,7 @@
-# The gauntlet — seven reviews, 2026-07-30. Six failed. The work did not ship.
+# The gauntlet — eight reviews, 2026-07-30. Seven failed. The work did not ship.
+
+> **`STATUS.md` (session 73) is newer than this file and supersedes its totals.** The counts in
+> the sections below were correct when each was written and are not the current ones.
 
 *Seven reviews ran on this work across two sessions of the same day: three failed rounds, one clean
 round, then a delta check, a closing check and a final review — each convened against the state the
@@ -253,9 +256,14 @@ record.
 
 ## The closing check — and the one procedural caveat this ship carries
 
-The two findings above were corrected, which changed the state again. A sixth and final role was
-convened against that corrected state. Its report follows below; it is the last review this work
-received, and it failed the work.
+The two findings above were corrected, which changed the state again. A sixth role was convened
+against that corrected state. Its report follows below, and it failed the work.
+
+> **Corrected 2026-07-30 (session 73), the eighth review's first blocking finding.** This
+> paragraph read *"a sixth **and final** role"* and *"it is the last review this work
+> received"*. Both were true when written and false by the time anyone could read them: a
+> seventh review is documented below in this same file, and an eighth on 2026-07-30. The
+> withdrawn wording is left visible here rather than swapped out.
 
 **The regress is real and it is named rather than hidden.** Recording a verdict changes the state
 the verdict was taken on. No practice closes that gap by reviewing once more; it can only make the
@@ -383,3 +391,93 @@ measurement.**
 
 What the work owes is one clean review on the corrected state. It is recorded as owed rather than
 assumed, for the second time, by the second session in a row that could have shipped it and declined.
+
+---
+
+## The eighth review, 2026-07-30 (session 73), on the state at `c8d3795` — FAIL. The work does not ship.
+
+*A fresh Verifier and a fresh Skeptic, convened against the exact committed state, neither given the
+earlier rounds' conclusions to agree with, both told the work had failed six of seven reviews and
+told what the recurring failure mode was. **Everything this section says about totals and about the
+"not in the measurement" claim is superseded by `STATUS.md`, which is newer.***
+
+### Verifier — **FAIL**, 2 blocking
+
+**What it ran, verbatim:** `audit.py --check`, `history.py --check`, `build_face.py --check`,
+`hashes.py --check` — all four `OK`, exit 0; `sha256sum -c SHA256SUMS.txt` — 24 of 24 `OK`.
+
+**What it re-derived independently.** It cloned the public upstream repository fresh and computed
+`git show <commit>:src/data/register/papers.json | sha256sum` for all five states with stock tooling,
+importing none of this work's assumptions: every commit hash, subject, timestamp, entry count and raw
+SHA-256 in `MANIFEST.json` matched exactly. It re-ran `freeze_history.py` against its own clone and
+reproduced the five freeze hashes byte-identical. It recomputed the time arithmetic from raw commit
+timestamps: `03067c54`→`a7879398` 0:58:53; the seed 23m09s after the first commit and 35m44s before
+`a7879398`; `a7879398`→`cc9c2cf1` 30102s = 8h21m42s; fetch→`cc9c2cf1` 15821s = 4h23m41s;
+`78a609d8`→`c43dd29` 45h46m01s; 381 tracked files at `58d9c4c` with 17 undecodable as UTF-8. It
+recomputed the sieve staircase (286→279→79→49→8), H7 (337/337 loose, 333/337 strict, 234/230 into the
+freeze), H8 (79), H9 (90/79/21) and the solo-by-citer table straight from the results files. **All
+matched, arithmetic included.** It counted the headed findings itself and reproduced 2+5+3+0+2+2+2 =
+16. It grepped every authored file for product and vendor names: no hits.
+
+**Blocking 1 — `README.md`'s Files table described a `GAUNTLET.md` that stopped three reviews ago.**
+The row read *"four rounds, the delta check on the shipped state and the closing check"*, omitting
+the seventh review and the file's own verdict section. The seventh review's own commit rewrote
+README's status paragraphs and never touched this row. **This is the identical defect class the
+closing check had named one review earlier** — a correction reaching a file's prose and not its table
+of contents — recurring inside the very file that says it counts defects rather than asserting them.
+Corrected.
+
+**Blocking 2 — `GAUNTLET.md` claimed a finality that the same file contradicts 70 lines later.** The
+closing-check paragraph read *"a sixth **and final** role"* and *"it is the last review this work
+received"*. A seventh review is documented below it in this same file. The work marks exactly this
+kind of staleness elsewhere with explicit supersession notes, so the omission was inconsistent with
+its own practice, not a convention of narration. Corrected, with the withdrawn wording left visible.
+
+**Non-blocking, recorded:** `SOURCES.md` §1's count of company- and product-shaped strings in the
+frozen data is a manual count with no backing script; the work discloses its list-dependence itself,
+and this reviewer's own token list found three titles and one author name rather than six and one —
+consistent with the disclosed dependence, not a contradiction. An untracked `__pycache__` artifact
+sits in `scripts/`.
+
+### Skeptic — **SURVIVES WITH CONDITIONS**, 1 blocking
+
+**What it re-derived, from code it wrote itself rather than this work's:** A3/A4 (103/103), H4/H7
+(337/337 loose, 333/337 strict, 234 pairs into the freeze of which 230 still pass strict), H8 (79,
+with **zero residual** — every one of the 79 traces to the freeze and none to anything else) and the
+H2 deltas (8h21m42s, 4h23m41s, 13h26m55s), directly from the frozen files and `git show` at the
+pinned commits. **All matched.**
+
+**Strongest objection, and it is blocking.** *"The instrument this work built to detect an auditor's
+freeze becoming evidence inside the audited object cannot detect that failure happening a second time
+to itself"* — `OWN_FREEZE` in `history.py` is a hand-maintained set of the two 2026-07-28 paths and
+does not include the **five** new full-schema mirrors this draft is committing to the same public
+repository, three of them never mirrored anywhere before. A strictly larger second generation of the
+exact hazard the headline finding is about, shipped without a guard. `METHOD.md` weighs deleting the
+freeze and obscuring the freeze, and never weighs *publishing five more copies of it*. See
+`STATUS.md` §4.
+
+**Two attacks it tried and could not make land**, recorded because a failed refutation is evidence:
+of the 79 newly attributed entries, **all 79** have evidence sets that are strict subsets of the
+freeze and **zero** have any other evidence path, so no innocent alternative account survives; and the
+thesis is scoped on the face to "an existence proof against one document class", so the
+over-generalisation charge finds nothing to bite on.
+
+**Non-blocking, and larger than the blocking one in consequence:** the object has **eight** states,
+not five, and the catalogue's keeper closed the loop at 21:00:34 the same evening, reporting 79 —
+this work's own H8 figure — in the keeper's own record. Both verified first-hand by the conductor
+afterwards; see `STATUS.md` §5 and §6.
+
+**Non-blocking, latent:** H9's `matched_the_freeze_but_not_taken` set is computed against one frozen
+text where the rest of the script treats both as a unit. Recomputed against both: identical (90),
+because the second contributes no identifiers absent from the first. Not a wrong number today; an
+inconsistency of scope that should be disclosed the way `METHOD.md` discloses the others.
+
+### Verdict of the eighth review
+
+**NOT GRADUATED, for the third session running.** Two blocking findings in prose about the reviews,
+one blocking finding in the instrument, and — from outside the gauntlet entirely — an audited object
+that has moved three more times and a central finding that has been overtaken by its own subject's
+repair.
+
+The work does not go back for a ninth patch. It goes back to be **rebuilt** against eight states and
+retold in the past tense, per `STATUS.md` §7.
