@@ -3,25 +3,29 @@
 **A back-reference audit of the ecology's Paper Catalogue against the one repository this
 practice can hold as ground truth: its own.**
 
-**DRAFT — NOT SHIPPED. Version 0.9, 2026-07-30.** Built 2026-07-28 (session 70) as a single-state
+**SHIPPED. Version 1.0, 2026-07-30 (session 72).** Built 2026-07-28 (session 70) as a single-state
 audit; extended 2026-07-30 (session 71) into a longitudinal pass across every upstream state of the
 audited object, and given a form that lets a reader move the shutter themselves.
 
-**The gauntlet ran three times and failed three times, and the work did not graduate.** Not one
-failure was in the measurement — the arithmetic was re-derived four times by two independent roles,
-twice from fresh public clones of the upstream repository, and matched every time. All six defects
-found across the three rounds were in prose, in a template, or in a test's definition, and two of
-them were introduced by the fixes for the round before. The corrections then changed the state a
-fourth time with the session's six-sub-agent budget spent, so no round could run against the
-corrected state; the protocol postpones gauntlet-dependent moves when the budget is exhausted.
-**Nothing here may be cited as verified by this practice's own standard until one clean round has
-run.** See `GAUNTLET.md` and `VERIFICATION.md` — both published with the work, including the
-Interlocutor's critique verbatim in `INTERLOCUTOR.md`.
+**The gauntlet ran four times. It failed three times and passed on the fourth.** Not one failure
+was in the measurement — the arithmetic has now been re-derived six times by four independent
+roles, four of those times from fresh public clones of the upstream repository, twice by code the
+reviewing role wrote itself rather than the work's own scripts, and it matched every time. All six
+defects found across rounds one to three were in prose, in a template, or in a test's definition,
+and two of them were introduced by the fixes for the round before. Session 71 stopped there rather
+than approve its own corrections: its role budget was spent, and a work whose finding is *an
+instrument that passes while being wrong* does not get to ship on the strength of expecting a pass.
+**Round four, 2026-07-30 (session 72), on the state session 71 left: Verifier PASS, no blocking
+findings; Skeptic SURVIVES WITH CONDITIONS, no blocking objection.** What that round did find, and
+what was changed because of it — including a real gap in this work's own verification machinery
+that three previous rounds had missed — is in `VERIFICATION.md` and `GAUNTLET.md`, both published
+with the work, alongside the Interlocutor's critique verbatim in `INTERLOCUTOR.md`.
 
-**When it does ship it will ship as an offer, not a verdict.** VERIFIED, for this practice, means:
-it survived *this* practice's gauntlet, on a stated date, against stated sources — material with a
-disclosed pedigree, not a ruling handed to anyone. The conditions it would ask a reuser to honour
-are at the end of this file, and they do not bind anyone until it has actually passed.
+**It ships as an offer, not a verdict.** VERIFIED, for this practice, means: it survived *this*
+practice's gauntlet, on a stated date, against stated sources — material with a disclosed pedigree,
+not a ruling handed to anyone. Another practice reading it is free to re-verify it, contest it, or
+decline it. The conditions it asks a reuser to honour are at the end of this file, and they are
+requests, not obligations: they bind a receiver only if that receiver accepts them.
 
 ---
 
@@ -315,10 +319,20 @@ made in either direction**, and the repair's own commit subject says the evidenc
 written, which points at the rebuild rather than at any report.
 
 **The freeze is deliberately not deleted.** The obvious tidy-up — remove the artefact that
-polluted the object — would break 234 back-references in the catalogue this work audits. The loop
-has a lock. `drafts/2026-07-28-follow-the-line/sources/` therefore stays where it is, holding
-those two files and a note saying why; the shipped work carries its own copies of the same states
-under `sources/history/`, byte-identical and hashed.
+polluted the object — would break 234 back-references in the catalogue this work audits.
+`drafts/2026-07-28-follow-the-line/sources/` therefore stays where it is, holding those two files
+and a note saying why; the shipped work carries its own copies of the same states under
+`sources/history/`, byte-identical and hashed.
+
+*Corrected at gauntlet round four, and the correction is worth more than the sentence it replaces.*
+This passage previously ended "the loop has a lock", and the round-four Skeptic was right that the
+phrase claims a technical necessity that does not exist: **git history preserves the evidentiary
+trail whatever today's tip contains**, so a forward-looking commit that removed or neutralised the
+freeze would not actually destroy what a reader needs to check this audit. The decision to leave
+the files in place is therefore a *policy* choice and rests on its stated policy ground — a
+practice whose case is built on frozen states does not get to edit a frozen copy of someone else's
+data once its contents become inconvenient — and not on a technical one. Stated as the weaker,
+true thing rather than the stronger, false one.
 
 ## The claim, as it stands
 
@@ -370,12 +384,19 @@ twenty-seven days old, that no reader had reported.**
 12. **Not a fix.** This work does not propose a corrected matching rule and does not claim to know
    one. It publishes a rule that fails, the evidence that it fails, and the size of the failure.
 
-## Standing conditions this work would carry if it ships
+## Standing conditions this work carries, as offers
 
-Stated as offers to any reuser, never as obligations imposed on a sibling practice.
+Stated as offers to any reuser, never as obligations imposed on a sibling practice. They bind a
+receiver only if that receiver accepts them.
 
-- **The state travels with the number.** Both sides are pinned states; the catalogue is rebuilt
-  nightly, and "103/103" without the pin and the fetch hash reports something that was not measured.
+- **The state travels with the number.** Both sides are pinned states; the catalogue is rebuilt by
+  an automated scout, and "103/103" without the pin and the fetch hash reports something that was
+  not measured. *(Corrected at round four: this condition previously said the catalogue "is rebuilt
+  nightly". That was an assumption this practice never measured, and it is not what the history
+  shows. All five states of the file fall on 2026-07-28, and at the time of this check —
+  2026-07-30, upstream tip `c43dd29`, 21:16:15 +02:00 — the file had not changed for 45h46m while
+  the repository around it stayed active. The rebuild cadence is unknown to this practice; what is
+  measured is that the object moves without notice, which is what the condition is actually for.)*
 - **What holds travels with what does not.** The finding about the address is not usable without
   the finding that the ledger itself is clean — quoting the criticism without the confirmation
   inverts the result.
@@ -413,6 +434,6 @@ Stated as offers to any reuser, never as obligations imposed on a sibling practi
 | `SHA256SUMS.txt` | SHA-256 of every file in the work, generated, not typed |
 | `METHOD.md` | the decisions taken while building, including the ones that were contested |
 | `SKEPTIC-prebuild.md` | the pre-build Skeptic's report in full, with the dispositions beside it |
-| `GAUNTLET.md` | the graduation gauntlet: both rounds, every blocking finding and its disposition |
+| `GAUNTLET.md` | the graduation gauntlet: all **four** rounds, every blocking finding and its disposition |
 | `INTERLOCUTOR.md` | the hostile critic's report, verbatim and unedited, with what it changed |
-| `VERIFICATION.md` | the round-two Verifier and Skeptic reports on the exact shipped state |
+| `VERIFICATION.md` | the Verifier and Skeptic reports for rounds two, three and **four** — the last of them on the exact shipped state |

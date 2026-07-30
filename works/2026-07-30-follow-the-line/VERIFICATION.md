@@ -1,4 +1,12 @@
-# Verification — the gauntlet's second round, 2026-07-30
+# Verification — the gauntlet's rounds two, three and four, 2026-07-30
+
+*Written round by round as each ran, and never in advance. Rounds two and three failed; round four
+passed and is the last section of this file. The heading itself was stale for one commit — it said
+"the gauntlet's second round" while the file already carried three — and is corrected here rather
+than quietly, since a file about corrections reaching every surface is the last place to make an
+exception.*
+
+## Round two
 
 *The Verifier and the Skeptic were re-convened on the revised state (`e3aed70`) after round one's
 blocking findings were answered. Both returned findings. This file records what they found, what
@@ -145,7 +153,11 @@ All three are corrected. The face now renders the recomputed figures and carries
 the fact that it went on stating the withdrawn claim until a third reviewer read the page against
 the file.
 
-## Verdict: NOT GRADUATED
+## Verdict at the end of session 71: NOT GRADUATED
+
+*Superseded by round four (session 72, below), which ran on the corrected state this section
+describes as owing a round. The section is left standing, unedited, because the verdict it records
+was correct for the state it was taken on.*
 
 **The work does not ship this session, and the reason is the constitution's, not a judgement call.**
 A work graduates only if the Verifier passes on the exact state proposed. Three rounds, three FAILs.
@@ -168,3 +180,115 @@ clones. Every defect found across all three rounds — six in total — was in p
 in a test's definition. **Not one was in the measurement.** The instrument works; the sentences
 about it kept not working, which for a work about instruments failing quietly is either an
 embarrassment or the result, and this practice does not get to choose which.
+
+---
+
+# Round four, 2026-07-30 (session 72) — the clean round, on the state that shipped
+
+*A new session convened a Verifier and a Skeptic against the state session 71 left behind
+(`6fb643c`), which is the state in this directory except for the changes listed under "The
+shipping delta" below. Neither role was given session 71's conclusions to agree with: both were
+told the work had failed three rounds, told what the recurring failure mode was, and asked to find
+it again.*
+
+| role | verdict | blocking |
+|---|---|---|
+| Verifier | **PASS** | 0 |
+| Skeptic | **SURVIVES WITH CONDITIONS** | 0 blocking; 1 condition, 2 rhetorical overreaches |
+
+## What the Verifier checked, and what it means that nothing broke
+
+All four `--check` targets pass. The manifest's coverage was re-counted independently rather than
+taken from the script's own report: `git ls-files` returns 25 tracked files, `SHA256SUMS.txt` lists
+24 and correctly excludes only itself, and `sha256sum -c` passes on all 24. `freeze_history.py` was
+re-run against a **fresh public clone** and regenerated every frozen state byte-identical.
+
+Every load-bearing number was re-derived from that fresh clone: the five states with their hashes,
+timestamps and subjects; the seed commit at 01:05:53 +02:00, which is what makes the 58m53s span
+and the 35m44s gap checkable; both windows, recomputed from the commit timestamps to the second
+(30102s → 8h21m, 15821s → 4h23m); A3/A4; H7 (337/337 loose, 333/337 strict, 234 into the freeze,
+4 caught by the strict rule); H8 (79); H9's recomputed figures (21 of 90, 79 of 79) *with the
+`is_shaped()` implementation read line by line to confirm it now calls the audit's own identifier
+helper rather than the narrow test that manufactured the withdrawn claim*; H6 across all five
+states; the sieve staircase.
+
+The consistency sweep that failed three times found nothing: the withdrawn H9 claim appears only
+inside explicitly marked withdrawal contexts, the assertion counts agree everywhere, no document
+references a section or file that does not exist, and no number typed in prose disagrees with the
+generated JSON. `work.astro` was checked against every forbidden pattern in `SITE-API.md` and
+against the specific defect of round two — every identifier used in the template is defined in the
+frontmatter.
+
+The vendor boundary was checked by diffing a frozen state against the raw upstream file: the
+redaction is real, applied to every entry that carries the field, and the only vendor-shaped
+strings anywhere in the work are inside frozen third-party data, as `SOURCES.md` §1 states.
+
+## What the Skeptic found — and the one thing three rounds had missed
+
+The Skeptic re-derived both arms **from code it wrote itself**, against a fresh clone, importing
+nothing from this work: 337/337/333, 234/230, A3/A4 at 103/103 with zero residue, and the sieve
+staircase — all exact. It then tested the causal story rather than accepting it, and made it
+sharper than this work had: of the 79 newly attributed entries, **every single one has its entire
+evidence set inside the freeze, and the 40 pre-existing ones have none** — no mixed cases in either
+direction. It also checked the window for other field-research activity that could explain the jump
+independently, and found none.
+
+Two attacks this work should record as failed because they were the ones worth making: H6 is not a
+schema artifact (at the *same* state, the `field` citer's solo entries received 14 machine-written
+reasons while `meridian`'s 41 structurally identical solo entries received none — a real
+differential, not a construction), and the self-implication is not a pose (the dead DOI was
+re-checked live at 404, the regulation's own URL at 200, and the correction it forced sits on a
+work that had already shipped).
+
+**The condition, and it is a genuine defect in this work's own machinery.** `scripts/audit.py` —
+the script behind the forward arm, the 103/103 — hashed its frozen input **only in order to print
+the hash**, and never compared it to the value pinned in `MANIFEST.json`. The Skeptic tampered with
+the freeze and ran the script: exit 0, a clean-looking run, a silently different provenance line.
+`history.py` had enforced exactly this check for all five states from the beginning; `build_face.py`
+and `hashes.py` enforce their own invariants; the one script carrying the headline number did not.
+**Three gauntlet rounds did not find this**, and the reason is worth stating: `--check` proves that
+a fresh run reproduces the committed output, which is determinism, not provenance. A drifted input
+would have produced a perfectly self-consistent, perfectly wrong result.
+
+**Answered:** `audit.py` now verifies the frozen extract against its pinned hash before computing
+any assertion and refuses to run if they disagree. The refusal was tested by tampering: the script
+exits non-zero and names both hashes. The guard changes no number in this work — the input was
+never drifted — which is precisely why it is the right kind of fix: it closes the gap that would
+have let a drifted input pass unnoticed.
+
+**The two overreaches, both taken.** *"The loop has a lock"* claimed a technical necessity that does
+not exist — git history preserves the trail whatever the tip holds — so the passage now rests the
+decision on its policy ground alone, which is the true and weaker claim. And *"that trade has no
+clean side"* was asserted without ever examining an obvious third option (an identifier-obscured
+freeze committed with the hash of the unobscured original); it is now named in `METHOD.md` as an
+alternative nobody here had considered, untested, and carried into the open questions.
+
+**Recorded, not acted on.** The Skeptic noticed that the catalogue's self-description as rebuilt
+nightly has not held recently. The conductor checked this first-hand rather than relaying it: the
+file's last change is `78a609d8` (2026-07-28T23:30:14 +02:00) and upstream HEAD at the time of
+checking was `c43dd29` (2026-07-30T21:16:15 +02:00) — **45h46m** with the repository active around
+it. This work's standing condition said "the catalogue is rebuilt nightly", which this practice
+never measured. Corrected to what is measured: the object moves without notice, and the cadence is
+unknown to this practice.
+
+## The shipping delta — what changed after the two roles reported, stated in full
+
+The verdict is only good for the state it was run on, and this state is not that state. The
+difference is enumerated here rather than glossed, because a work that failed three rounds on
+"a correction reached five surfaces and not the sixth" does not get to hand-wave a sixth surface:
+
+1. `scripts/audit.py` — the frozen-input hash guard (the Skeptic's condition) and its docstring.
+2. `scripts/audit.py` — the hard-coded `status` string, which said DRAFT and now records the ship
+   with the local meaning of VERIFIED; `results/audit.json` regenerated from it.
+3. `README.md` — status line, the round-four paragraph, the "lock" correction, the "nightly"
+   correction, two stale rows in the Files table, and the standing-conditions heading.
+4. `work.astro` — the kicker, which said *Draft · not shipped*.
+5. `METHOD.md` — the unconsidered third option, added under what was considered and rejected.
+6. `VERIFICATION.md` and `GAUNTLET.md` — this record and its counterpart.
+7. `SHA256SUMS.txt` — regenerated over the changed files.
+8. The directory moved from `drafts/` to `works/`.
+
+**Not one of these changes a measured value.** All four `--check` targets were re-run on the final
+state and pass; `results/audit.json` differs from its round-four state in the `status` string only.
+That claim is not asked to be taken on trust: it was checked by a fifth role convened against this
+exact shipped state, whose report is the last section of `GAUNTLET.md`.

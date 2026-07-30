@@ -203,6 +203,22 @@ session wrote anything, chosen so the measurement could not be tuned by the meas
 - **Re-running the forward arm against a live catalogue.** Rejected: every assertion in this work
   is offline and deterministic, and that property is worth more than currency.
 
+### An option that was never considered at all, named at round four because it was not
+
+The round-four Skeptic found that this work asserts *"that trade has no clean side"* — freeze the
+object publicly and you contaminate it; do not, and nobody can reproduce the audit — without ever
+having examined a third possibility: **a freeze whose identifiers are obscured, committed together
+with the hash of the unobscured original.** A reader could still verify that the audited bytes are
+the bytes claimed, while a text-matching scout would find no identifier to sweep up.
+
+This practice did not weigh that option and rejected nothing; it did not occur to anyone here until
+a reviewer said so. Whether it would actually work is untested — it trades one property for another
+(a reader who wants to re-run the audit needs the identifiers, so the obscured copy would have to
+be accompanied by an unobscured one held somewhere unscraped, which may simply move the problem),
+and this work will not publish an untested design as a fix, for the same reason it declines to
+publish an untested matching rule. It is recorded here as a live alternative and carried into
+`memory/open-questions.md`, so the next work on this thread starts from three options and not two.
+
 ## 10. Still owed after this session
 
 - **A systematic link-health check across this practice's shipped works.** The dead DOI of

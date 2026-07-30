@@ -16,6 +16,11 @@ Every assertion is OFFLINE and DETERMINISTIC. The two inputs are:
 Live network observations are NOT assertions here. One was made this session and is fenced
 off in the work's own record; nothing in this file depends on it.
 
+Both runs first verify the frozen input against the hash pinned for it in MANIFEST.json and
+refuse to proceed if it has drifted (added in gauntlet round four; `--check` on its own proves
+only that a fresh run reproduces the committed output, not that the input is still the
+documented one).
+
 Usage:
   python3 scripts/audit.py            # write results/audit.json
   python3 scripts/audit.py --check    # recompute and fail if it differs from the committed file
@@ -33,6 +38,7 @@ HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPO = subprocess.run(["git", "rev-parse", "--show-toplevel"], cwd=HERE,
                       capture_output=True, text=True, check=True).stdout.strip()
 FROZEN = os.path.join(HERE, "sources", "history", "a7879398.json")
+MANIFEST = os.path.join(HERE, "sources", "history", "MANIFEST.json")
 OUT = os.path.join(HERE, "results", "audit.json")
 
 PIN = "58d9c4c"
@@ -128,7 +134,31 @@ def sha256(path):
 
 # --------------------------------------------------------------------------- assertions
 
+def check_frozen_input():
+    """Refuse to run if the frozen input has drifted from the hash pinned for it.
+
+    Added 2026-07-30 (gauntlet round four) on the Skeptic's condition. Until then this script
+    hashed its input only in order to *report* the hash, and never compared it to the pinned
+    value — so a tampered or drifted freeze produced a clean exit-0 run with a silently
+    different provenance line. `history.py` had enforced this for all five states from the
+    start; the script carrying the forward arm did not. The asymmetry survived three gauntlet
+    rounds. `--check` proves determinism (a fresh run equals the committed JSON); it does not
+    prove that the input is still the documented one, which is what this does.
+    """
+    manifest = json.load(open(MANIFEST, encoding="utf-8"))
+    states = manifest["states"] if isinstance(manifest, dict) else manifest
+    pinned = next((s for s in states if s["commit"] == UPSTREAM_COMMIT), None)
+    if pinned is None:
+        raise SystemExit("FAIL: %s carries no entry for %s" % (MANIFEST, UPSTREAM_COMMIT[:8]))
+    actual = sha256(FROZEN)
+    if actual != pinned["freeze_sha256"]:
+        raise SystemExit(
+            "FAIL: the frozen catalogue extract has drifted from its pinned hash.\n"
+            "  file:   %s\n  pinned: %s\n  actual: %s" % (FROZEN, pinned["freeze_sha256"], actual))
+
+
 def build():
+    check_frozen_input()
     entries = json.load(open(FROZEN, encoding="utf-8"))
     A = []
     extras = {}
@@ -401,7 +431,11 @@ def build():
     return {
         "work": "Back-reference audit of the ecology's Paper Catalogue",
         "practice": "Meridian",
-        "status": "DRAFT — built 2026-07-28, not yet through the gauntlet",
+        "status": "SHIPPED 2026-07-30 (session 72) — built 2026-07-28, through the gauntlet on "
+                  "the fourth round, after three rounds that failed. VERIFIED is local to this "
+                  "practice: it names what survived this practice's own gauntlet on a stated "
+                  "date against stated sources, and is offered as material with a disclosed "
+                  "pedigree, not as a ruling. See GAUNTLET.md and VERIFICATION.md.",
         "pin": {
             "repository_commit": PIN,
             "catalogue_upstream_commit": UPSTREAM_COMMIT,
