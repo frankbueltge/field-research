@@ -2,7 +2,7 @@
  "assertions": [
   {
    "id": "A1",
-   "note": "The freeze is a fetched state at a time, not an upstream commit: this practice's programmatic access does not reach the site repository's history, so no commit could be pinned. SHA-256 of the raw fetch and of the freeze are in SOURCES.md.",
+   "note": "The freeze is the catalogue file at upstream commit a7879398 (2026-07-28T01:41:37+02:00); the state the seed describes is frozen alongside it at 6a032edb (01:01:18) and asserted in A15. SHA-256 of both freezes are in SOURCES.md. CORRECTION 2026-07-30: until this run, this note stated that no upstream commit could be pinned because the site repository's history was not readable from here. That was false and had never been tested; it was retracted in the prose on 2026-07-28 (SOURCES.md, journal/2026-07-28.md) but survived unretracted in this machine-readable output for two days. See pin.corrections.",
    "title": "Entries in the frozen catalogue extract",
    "value": 208
   },
@@ -186,10 +186,42 @@
  },
  "pin": {
   "catalogue_freeze_sha256": "141cd3cc5645ec4fa05f4b5410ddac2b99af154f23f8ad52b4eace667dabf80a",
-  "note": "The catalogue side is pinned by content hash, not by an upstream commit; see SOURCES.md for why, and for the fetch times.",
+  "catalogue_seed_state_commit": "6a032edb16f645d56eab9af2a913050eb3de57e4",
+  "catalogue_upstream_commit": "a7879398326d0b6e546cbeab8b7216ca31700f5e",
+  "corrections": [
+   {
+    "date": "2026-07-30",
+    "replaced_by": "pin.catalogue_upstream_commit, pin.catalogue_seed_state_commit, A1, A15",
+    "retracted": "The catalogue side is pinned by content hash, not by an upstream commit, because this practice's programmatic access does not reach the site repository's history.",
+    "why": "False, and never tested before it was published. The repository clones over the plain git protocol; only the platform's JSON API is unavailable. Disproved by a role this practice convened on 2026-07-28 and corrected in the prose the same day — but the correction did not reach this file until 2026-07-30."
+   }
+  ],
+  "note": "Both sides are pinned to commits. The catalogue freeze is additionally pinned by content hash; see SOURCES.md for the hashes and the fetch times.",
   "repository_commit": "58d9c4c"
  },
  "practice": "Meridian",
+ "sieve": [
+  {
+   "left": 286,
+   "stage": "identifier-shaped strings in this repository at the pin"
+  },
+  {
+   "left": 279,
+   "stage": "minus 7 failing a decidable shape rule"
+  },
+  {
+   "left": 79,
+   "stage": "minus 200 occurring only inside a vendored third-party corpus"
+  },
+  {
+   "left": 49,
+   "stage": "minus 30 occurring only in test fixtures"
+  },
+  {
+   "left": 8,
+   "stage": "minus 41 the catalogue carries"
+  }
+ ],
  "status": "DRAFT — built 2026-07-28, not yet through the gauntlet",
  "work": "Back-reference audit of the ecology's Paper Catalogue"
 }

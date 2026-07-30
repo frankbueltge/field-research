@@ -1,0 +1,2212 @@
+{
+ "assertions": [
+  {
+   "id": "H1",
+   "note": "All five commits of `src/data/register/papers.json`, from the catalogue's first build to its latest state at the time of this run. The audit measured state 3 of 5. Every state is frozen here under the same reduction rule and hashed in sources/history/MANIFEST.json.",
+   "title": "Upstream states of the audited file",
+   "value": 5
+  },
+  {
+   "id": "H2",
+   "note": "The audited state a7879398 was committed 2026-07-28T01:41:37+02:00 and replaced by cc9c2cf1 at 2026-07-28T08:03:19+00:00. A finding about this object is a finding about a window, and this is the window.",
+   "title": "Minutes the audited state stood before it was replaced",
+   "value": 502
+  },
+  {
+   "id": "H3",
+   "note": "The count the audit checked was 40. At the state current at this run it is 119 — the automated rebuild of cc9c2cf1 multiplied the claims made about this repository by 2.98. **Those additional entries have never been audited by anyone**, and only this practice can audit them.",
+   "title": "Entries attributed to this practice, by state",
+   "value": {
+    "03067c54": 40,
+    "6a032edb": 40,
+    "78a609d8": 119,
+    "a7879398": 40,
+    "cc9c2cf1": 119
+   }
+  },
+  {
+   "id": "H4",
+   "note": "Each catalogue state's back-references into this repository, resolved against this repository at 58d9c4c — the same repository pin the audit used, held fixed so that what varies is the catalogue and nothing else. A pair that fails because the cited file is younger than the repository pin is reported separately in each state's `forward_arm`, since that is a fact about the two pins and not about the catalogue.",
+   "title": "The forward arm re-run at every state",
+   "value": {
+    "03067c54": "0/0 loose, 0/0 strict",
+    "6a032edb": "103/103 loose, 103/103 strict",
+    "78a609d8": "103/337 loose, 103/337 strict",
+    "a7879398": "103/103 loose, 103/103 strict",
+    "cc9c2cf1": "103/337 loose, 103/337 strict"
+   }
+  },
+  {
+   "id": "H5",
+   "note": "The audit credited the catalogue — in its own words, and it still would — for disclosing per entry that a relevance sentence was written by a generative model. That disclosure was written at a7879398, was ABSENT from the very next state cc9c2cf1, and was restored at 78a609d8 with the field present on every entry rather than only on the judged ones. The disclosure the audit praised survived 8h21m before an automated rebuild dropped it, and was absent for 13h26m. This practice did not report the loss — it had not noticed it, because it was measuring one state. The repair and the delivery of the audit (2026-07-28) fall on the same day; **no causal claim is made in either direction**, and the repair's own subject line says the evidence was never written, which points at the rebuild rather than at any report.",
+   "title": "The machine-judgement disclosure, by state",
+   "value": {
+    "03067c54": {
+     "key_present": 0,
+     "populated": 0
+    },
+    "6a032edb": {
+     "key_present": 0,
+     "populated": 0
+    },
+    "78a609d8": {
+     "key_present": 210,
+     "populated": 27
+    },
+    "a7879398": {
+     "key_present": 27,
+     "populated": 27
+    },
+    "cc9c2cf1": {
+     "key_present": 0,
+     "populated": 0
+    }
+   }
+  },
+  {
+   "id": "H6",
+   "note": "Across all 5 states — 117 to 210 entries, two different labelling regimes, a disclosure lost and restored — no entry carrying the `meridian` citer label ALONE has ever carried anything but the template usage line. Per state: {\"03067c54\": {\"gebrauch\": 21, \"praxis\": 0, \"urteil\": 0}, \"6a032edb\": {\"gebrauch\": 42, \"praxis\": 0, \"urteil\": 0}, \"78a609d8\": {\"gebrauch\": 21, \"praxis\": 0, \"urteil\": 0}, \"a7879398\": {\"gebrauch\": 41, \"praxis\": 0, \"urteil\": 0}, \"cc9c2cf1\": {\"gebrauch\": 21, \"praxis\": 0, \"urteil\": 0}}. The audit's core finding is the only one of its findings that is not a property of the window it was taken in. If this ever stops being true, this assertion flips to false rather than quietly weakening.",
+   "title": "The one finding that does not move",
+   "value": true
+  },
+  {
+   "id": "H7",
+   "note": "At f21f275 — a repository state later than the audit's pin, fixed and public before this session wrote anything — the latest catalogue state's back-references into this repository score **337 of 337 under the audit's loose rule and 333 of 337 under its strict rule**. A reader would call that a clean pass. It is not: **234 of those 337 pairs resolve into this audit's OWN frozen copies of the catalogue** — files that are a snapshot of the object, not a citation of anything. The identifiers are in them because the audit put them there. Both rules pass, and both are wrong, on 69% of the pairs. This is the audit's central instrument failing on evidence the audit itself manufactured, and it is reported here rather than repaired quietly, because the failure is the result.",
+   "title": "The audit's own rule, at a repository pin where the new evidence exists",
+   "value": {
+    "loose": 337,
+    "loose_into_own_freeze": 234,
+    "missing_file": 0,
+    "pairs": 337,
+    "pairs_into_own_freeze": 234,
+    "strict": 333,
+    "strict_into_own_freeze": 230
+   }
+  },
+  {
+   "id": "H8",
+   "note": "Of the 119 entries the latest state attributes to this practice, this many have no evidence in this repository except the audit's frozen copy of the catalogue. The other 40 are the originally audited entries, whose evidence is unchanged and still resolves. The mechanism is a loop and not a lie: this practice froze the catalogue in order to audit it, the freeze landed in a public repository, an automated scout read the repository, found the catalogue's own identifiers there, and recorded this practice as citing them. **The auditor's instrument became evidence inside the audited object.** Nothing here says the scout is careless — this practice built the same class of discrimination into its own sieve (A9) precisely because the trap is easy to fall into, and then laid the bait for it.",
+   "title": "Entries newly attributed to this practice whose only evidence here is that freeze",
+   "value": 79
+  }
+ ],
+ "caveats": {
+  "latest_is_also_a_window": "The state called latest here is the latest at this run. It has no privileged status and will be replaced too.",
+  "not_an_audit_of_the_new_entries": "H3 counts the entries added by the rebuild. It does not assert that they are wrong; it asserts that nobody has checked them.",
+  "repository_pin_held_fixed": "Every state's forward arm is resolved against this repository at one commit. Later catalogue states cite files that may postdate that commit; those pairs are counted separately and are not charged to the catalogue."
+ },
+ "practice": "Meridian",
+ "repository_pin": "58d9c4c",
+ "states": [
+  {
+   "commit": "03067c54125c042177c57b95ef609ceba1cae7be",
+   "commit_short": "03067c54",
+   "committed_at": "2026-07-28T00:42:44+02:00",
+   "entries": 117,
+   "forward_arm": {
+    "distinct_files": 0,
+    "field_entries": 40,
+    "pairs": 0,
+    "resolved_loose": 0,
+    "resolved_strict": 0,
+    "unresolved_file_not_at_repo_pin": [],
+    "unresolved_identifier_not_in_file": []
+   },
+   "labels": {
+    "atelier": 56,
+    "field": 40,
+    "meridian": 51,
+    "studio": 4
+   },
+   "shared_entries": 33,
+   "solo_by_citer": {
+    "atelier": {
+     "gebrauch": 20,
+     "praxis": 5,
+     "urteil": 0
+    },
+    "field": {
+     "gebrauch": 36,
+     "praxis": 0,
+     "urteil": 0
+    },
+    "meridian": {
+     "gebrauch": 21,
+     "praxis": 0,
+     "urteil": 0
+    },
+    "studio": {
+     "gebrauch": 2,
+     "praxis": 0,
+     "urteil": 0
+    }
+   },
+   "subject": "feat(papers): Paper-Katalog aus dem, was die Praxen zitieren",
+   "urteil_key_present": 0,
+   "urteil_populated": 0
+  },
+  {
+   "commit": "6a032edb16f645d56eab9af2a913050eb3de57e4",
+   "commit_short": "6a032edb",
+   "committed_at": "2026-07-28T01:01:18+02:00",
+   "entries": 206,
+   "forward_arm": {
+    "distinct_files": 24,
+    "field_entries": 40,
+    "pairs": 103,
+    "resolved_loose": 103,
+    "resolved_strict": 103,
+    "unresolved_file_not_at_repo_pin": [],
+    "unresolved_identifier_not_in_file": []
+   },
+   "labels": {
+    "atelier": 124,
+    "field": 40,
+    "meridian": 139,
+    "studio": 4
+   },
+   "shared_entries": 100,
+   "solo_by_citer": {
+    "atelier": {
+     "gebrauch": 19,
+     "praxis": 7,
+     "urteil": 0
+    },
+    "field": {
+     "gebrauch": 36,
+     "praxis": 0,
+     "urteil": 0
+    },
+    "meridian": {
+     "gebrauch": 42,
+     "praxis": 0,
+     "urteil": 0
+    },
+    "studio": {
+     "gebrauch": 2,
+     "praxis": 0,
+     "urteil": 0
+    }
+   },
+   "subject": "feat(papers): zwei Wege, und jeder Eintrag belegt seine Herkunft",
+   "urteil_key_present": 0,
+   "urteil_populated": 0
+  },
+  {
+   "commit": "a7879398326d0b6e546cbeab8b7216ca31700f5e",
+   "commit_short": "a7879398",
+   "committed_at": "2026-07-28T01:41:37+02:00",
+   "entries": 208,
+   "forward_arm": {
+    "distinct_files": 24,
+    "field_entries": 40,
+    "pairs": 103,
+    "resolved_loose": 103,
+    "resolved_strict": 103,
+    "unresolved_file_not_at_repo_pin": [],
+    "unresolved_identifier_not_in_file": []
+   },
+   "labels": {
+    "atelier": 127,
+    "field": 40,
+    "meridian": 138,
+    "studio": 4
+   },
+   "shared_entries": 100,
+   "solo_by_citer": {
+    "atelier": {
+     "gebrauch": 13,
+     "praxis": 11,
+     "urteil": 5
+    },
+    "field": {
+     "gebrauch": 22,
+     "praxis": 0,
+     "urteil": 14
+    },
+    "meridian": {
+     "gebrauch": 41,
+     "praxis": 0,
+     "urteil": 0
+    },
+    "studio": {
+     "gebrauch": 2,
+     "praxis": 0,
+     "urteil": 0
+    }
+   },
+   "subject": "feat(papers): 27 Urteile geschrieben — sichtbar maschinell, weiter toVerify",
+   "urteil_key_present": 27,
+   "urteil_populated": 27
+  },
+  {
+   "commit": "cc9c2cf1adad1754e4440443dc8ce501cdb7d854",
+   "commit_short": "cc9c2cf1",
+   "committed_at": "2026-07-28T08:03:19+00:00",
+   "entries": 210,
+   "forward_arm": {
+    "distinct_files": 26,
+    "field_entries": 119,
+    "pairs": 337,
+    "resolved_loose": 103,
+    "resolved_strict": 103,
+    "unresolved_file_not_at_repo_pin": [
+     {
+      "id": "antonio-somaini-latent-spaces-ai-art-and-the-archive",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "antonio-somaini-latent-spaces-ai-art-and-the-archive",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "chris-lu-towards-end-to-end-automation-of-ai-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "chris-lu-towards-end-to-end-automation-of-ai-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "juraj-gottweis-accelerating-scientific-discovery-with-co-scientist",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "juraj-gottweis-accelerating-scientific-discovery-with-co-scientist",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "jonas-dolezal-the-impact-of-ai-generated-text-on-the-internet",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "jonas-dolezal-the-impact-of-ai-generated-text-on-the-internet",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "unbekannt-retraction-human-in-the-loop-artificial-intelligence-system-for-system",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "unbekannt-retraction-human-in-the-loop-artificial-intelligence-system-for-system",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "theint-moh-moh-zaw-research-integrity-within-systematic-reviews-investigating-th",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "theint-moh-moh-zaw-research-integrity-within-systematic-reviews-investigating-th",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "zonglin-yang-sciintegrity-bench-a-benchmark-for-evaluating-academic-integrity-in",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "zonglin-yang-sciintegrity-bench-a-benchmark-for-evaluating-academic-integrity-in",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "jingyuan-liu-what-is-actually-being-annotated-inter-prompt-reliability-as-a-meas",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "jingyuan-liu-what-is-actually-being-annotated-inter-prompt-reliability-as-a-meas",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "ruta-binkyte-inspectable-ai-for-science-a-research-object-approach-to-generative",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ruta-binkyte-inspectable-ai-for-science-a-research-object-approach-to-generative",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "samar-ansari-compound-deception-in-elite-peer-review-a-failure-mode-taxonomy-of-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "samar-ansari-compound-deception-in-elite-peer-review-a-failure-mode-taxonomy-of-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "mingzhe-li-source-or-it-didn-t-happen-a-multi-agent-framework-for-citation-hallu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "mingzhe-li-source-or-it-didn-t-happen-a-multi-agent-framework-for-citation-hallu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "hailey-onweller-cited-but-not-verified-parsing-and-evaluating-source-attribution",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "hailey-onweller-cited-but-not-verified-parsing-and-evaluating-source-attribution",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "almene-de-meran-meguimtsop-sciintbench-measuring-llm-compliance-with-research-in",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "almene-de-meran-meguimtsop-sciintbench-measuring-llm-compliance-with-research-in",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "adnan-al-ali-different-time-different-language-revisiting-the-bias-against-non-n",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "adnan-al-ali-different-time-different-language-revisiting-the-bias-against-non-n",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "razeen-a-rasheed-from-fluent-to-verifiable-claim-level-auditability-for-deep-res",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "razeen-a-rasheed-from-fluent-to-verifiable-claim-level-auditability-for-deep-res",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "youxin-zhu-statabench-dataset-and-framework-for-evaluating-statistical-analysis-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "youxin-zhu-statabench-dataset-and-framework-for-evaluating-statistical-analysis-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "romina-omidi-on-google-s-synthid-text-llm-watermarking-system-theoretical-analys",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "romina-omidi-on-google-s-synthid-text-llm-watermarking-system-theoretical-analys",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "enis-golaszewski-verifying-provenance-of-digital-media-why-the-c2pa-specificatio",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "enis-golaszewski-verifying-provenance-of-digital-media-why-the-c2pa-specificatio",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "wojciech-zarzecki-the-reliability-gap-in-benchmark-auditing-distribution-shift-a",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "wojciech-zarzecki-the-reliability-gap-in-benchmark-auditing-distribution-shift-a",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "alexander-nemecek-authenticated-contradictions-from-desynchronized-provenance-an",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "alexander-nemecek-authenticated-contradictions-from-desynchronized-provenance-an",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "mubashara-akhtar-when-ai-benchmarks-plateau-a-systematic-study-of-benchmark-satu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "mubashara-akhtar-when-ai-benchmarks-plateau-a-systematic-study-of-benchmark-satu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "yutaro-yamada-towards-end-to-end-automation-of-ai-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "yutaro-yamada-towards-end-to-end-automation-of-ai-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "joachim-baumann-stop-automating-peer-review-without-rigorous-evaluation",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "joachim-baumann-stop-automating-peer-review-without-rigorous-evaluation",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "fariba-jangjoo-lost-in-retraining-roaming-the-parameter-space-of-exponential-fam",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "fariba-jangjoo-lost-in-retraining-roaming-the-parameter-space-of-exponential-fam",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "johan-fredrikzon-rethinking-error-hallucinations-and-epistemological-indifferenc",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "johan-fredrikzon-rethinking-error-hallucinations-and-epistemological-indifferenc",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "kevin-m-kallmes-retracted-human-in-the-loop-artificial-intelligence-system-for-s",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "kevin-m-kallmes-retracted-human-in-the-loop-artificial-intelligence-system-for-s",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "kareem-el-badry-how-to-use-gaia-parallaxes-for-stars-with-poor-astrometric-fits",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "kareem-el-badry-how-to-use-gaia-parallaxes-for-stars-with-poor-astrometric-fits",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "dmitry-kobak-delving-into-llm-assisted-writing-in-biomedical-publications-throug",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "dmitry-kobak-delving-into-llm-assisted-writing-in-biomedical-publications-throug",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "samuel-schmidgall-agent-laboratory-using-llm-agents-as-research-assistants",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "samuel-schmidgall-agent-laboratory-using-llm-agents-as-research-assistants",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "pranav-narayanan-venkit-deeptrace-auditing-deep-research-ai-systems-for-tracking",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "pranav-narayanan-venkit-deeptrace-auditing-deep-research-ai-systems-for-tracking",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "ludovico-mitchener-kosmos-an-ai-scientist-for-autonomous-discovery",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ludovico-mitchener-kosmos-an-ai-scientist-for-autonomous-discovery",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "joachim-baumann-large-language-model-hacking-quantifying-the-hidden-risks-of-usi",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "joachim-baumann-large-language-model-hacking-quantifying-the-hidden-risks-of-usi",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "cooper-elsworth-measuring-the-environmental-impact-of-delivering-ai-at-google-sc",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "cooper-elsworth-measuring-the-environmental-impact-of-delivering-ai-at-google-sc",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "minjun-zhu-ai-scientists-fail-without-strong-implementation-capability",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "minjun-zhu-ai-scientists-fail-without-strong-implementation-capability",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "jenny-zhang-darwin-godel-machine-open-ended-evolution-of-self-improving-agents",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "jenny-zhang-darwin-godel-machine-open-ended-evolution-of-self-improving-agents",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "joeran-beel-evaluating-sakana-s-ai-scientist-bold-claims-mixed-results-and-a-pro",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "joeran-beel-evaluating-sakana-s-ai-scientist-bold-claims-mixed-results-and-a-pro",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "lakshya-a-agrawal-gepa-reflective-prompt-evolution-can-outperform-reinforcement-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "lakshya-a-agrawal-gepa-reflective-prompt-evolution-can-outperform-reinforcement-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "zhivar-sourati-the-shrinking-landscape-of-linguistic-diversity-in-the-age-of-lar",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "zhivar-sourati-the-shrinking-landscape-of-linguistic-diversity-in-the-age-of-lar",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "minseok-jung-group-adaptive-threshold-optimization-for-robust-ai-generated-text-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "minseok-jung-group-adaptive-threshold-optimization-for-robust-ai-generated-text-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "f-moradi-jangal-impact-of-qcd-sum-rules-coupling-constants-on-neutron-stars-stru",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "f-moradi-jangal-impact-of-qcd-sum-rules-coupling-constants-on-neutron-stars-stru",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "xiaowei-zhu-reliably-bounding-false-positives-a-zero-shot-machine-generated-text",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "xiaowei-zhu-reliably-bounding-false-positives-a-zero-shot-machine-generated-text",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "shivalika-singh-the-leaderboard-illusion",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "shivalika-singh-the-leaderboard-illusion",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "ahmad-r-pratama-the-accuracy-bias-trade-offs-in-ai-text-detection-tools-and-thei",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ahmad-r-pratama-the-accuracy-bias-trade-offs-in-ai-text-detection-tools-and-thei",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "kevin-stowe-identifying-bias-in-machine-generated-text-detection",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "kevin-stowe-identifying-bias-in-machine-generated-text-detection",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "matthias-gerstgrasser-is-model-collapse-inevitable-breaking-the-curse-of-recursi",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "matthias-gerstgrasser-is-model-collapse-inevitable-breaking-the-curse-of-recursi",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "terence-broad-is-computational-creativity-flourishing-on-the-dead-internet",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "terence-broad-is-computational-creativity-flourishing-on-the-dead-internet",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "jon-mccormack-no-longer-trending-on-artstation-prompt-analysis-of-generative-ai-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "jon-mccormack-no-longer-trending-on-artstation-prompt-analysis-of-generative-ai-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "claudio-celis-bueno-not-what-but-where-is-creativity-towards-a-relational-materi",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "claudio-celis-bueno-not-what-but-where-is-creativity-towards-a-relational-materi",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "tim-deane-freeman-deleuze-digital-media-and-thought",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "tim-deane-freeman-deleuze-digital-media-and-thought",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "sumanth-dathathri-scalable-watermarking-for-identifying-large-language-model-out",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "dino-pedreschi-human-ai-coevolution",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ilia-shumailov-ai-models-collapse-when-trained-on-recursively-generated-data",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ilia-shumailov-ai-models-collapse-when-trained-on-recursively-generated-data",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "elvis-dohmatob-a-tale-of-tails-model-collapse-as-a-change-of-scaling-laws",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "elvis-dohmatob-a-tale-of-tails-model-collapse-as-a-change-of-scaling-laws",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "ali-borji-a-note-on-shumailov-et-al-2024-ai-models-collapse-when-trained-on-recu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ali-borji-a-note-on-shumailov-et-al-2024-ai-models-collapse-when-trained-on-recu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "hermano-velten-extended-error-threshold-mechanism-in-it-quasispecies-theory-via-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "hermano-velten-extended-error-threshold-mechanism-in-it-quasispecies-theory-via-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "duncan-carr-agnew-a-global-timekeeping-problem-postponed-by-global-warming",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "duncan-carr-agnew-a-global-timekeeping-problem-postponed-by-global-warming",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "xiang-cheng-to-err-is-human-to-annotate-silicon-toward-robust-reproducibility-in",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "xiang-cheng-to-err-is-human-to-annotate-silicon-toward-robust-reproducibility-in",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "christopher-barrie-prompt-stability-scoring-for-text-annotation-with-large-langu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "christopher-barrie-prompt-stability-scoring-for-text-annotation-with-large-langu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "mike-perkins-simple-techniques-to-bypass-genai-text-detectors-implications-for-i",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "mike-perkins-simple-techniques-to-bypass-genai-text-detectors-implications-for-i",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "rita-gonzalez-marquez-learning-representations-of-learning-representations",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "rita-gonzalez-marquez-learning-representations-of-learning-representations",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "mike-perkins-genai-detection-tools-adversarial-techniques-and-implications-for-i",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "mike-perkins-genai-detection-tools-adversarial-techniques-and-implications-for-i",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "qihao-zhao-mmlu-cf-a-contamination-free-multi-task-language-understanding-benchm",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "qihao-zhao-mmlu-cf-a-contamination-free-multi-task-language-understanding-benchm",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "nicola-perugini-medical-lawfare-the-nakba-and-israel-s-attacks-on-palestinian-he",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "nicola-perugini-medical-lawfare-the-nakba-and-israel-s-attacks-on-palestinian-he",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "yara-asi-nowhere-and-no-one-is-safe-spatial-analysis-of-damage-to-critical-civil",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "yara-asi-nowhere-and-no-one-is-safe-spatial-analysis-of-damage-to-critical-civil",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "weixin-liang-monitoring-ai-modified-content-at-scale-a-case-study-on-the-impact-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "weixin-liang-monitoring-ai-modified-content-at-scale-a-case-study-on-the-impact-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "ziv-epstein-art-and-the-science-of-generative-ai-a-deeper-dive",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ziv-epstein-art-and-the-science-of-generative-ai-a-deeper-dive",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "ilia-shumailov-the-curse-of-recursion-training-on-generated-data-makes-models-fo",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ilia-shumailov-the-curse-of-recursion-training-on-generated-data-makes-models-fo",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "sina-alemohammad-self-consuming-generative-models-go-mad",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "sina-alemohammad-self-consuming-generative-models-go-mad",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "dietmar-koering-exploring-the-human-ai-nexus-a-friendly-dispute-between-second-o",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "dietmar-koering-exploring-the-human-ai-nexus-a-friendly-dispute-between-second-o",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "pengfei-li-making-ai-less-thirsty-uncovering-and-addressing-the-secret-water-foo",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "pengfei-li-making-ai-less-thirsty-uncovering-and-addressing-the-secret-water-foo",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "weixin-liang-gpt-detectors-are-biased-against-non-native-english-writers",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "weixin-liang-gpt-detectors-are-biased-against-non-native-english-writers",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "nicholas-pangakis-automated-annotation-with-generative-ai-requires-validation",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "nicholas-pangakis-automated-annotation-with-generative-ai-requires-validation",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "kyle-morgan-so-you-want-to-survey-a-state-legislator-call-me-maybe",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "kyle-morgan-so-you-want-to-survey-a-state-legislator-call-me-maybe",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "alina-beygelzimer-has-the-machine-learning-review-process-become-more-arbitrary-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "alina-beygelzimer-has-the-machine-learning-review-process-become-more-arbitrary-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "vishakh-padmakumar-does-writing-with-language-models-reduce-content-diversity",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "vishakh-padmakumar-does-writing-with-language-models-reduce-content-diversity",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "alex-golovin-the-fifth-catalogue-of-nearby-stars-cns5",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "alex-golovin-the-fifth-catalogue-of-nearby-stars-cns5",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "daniel-v-tausk-on-the-incorrect-use-of-carlisle-s-method-for-dichotomous-variabl",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "daniel-v-tausk-on-the-incorrect-use-of-carlisle-s-method-for-dichotomous-variabl",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "j-rybizki-a-classifier-for-spurious-astrometric-solutions-in-gaia-edr3",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "j-rybizki-a-classifier-for-spurious-astrometric-solutions-in-gaia-edr3",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "kareem-el-badry-a-million-binaries-from-gaia-edr3-sample-selection-and-validatio",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "kareem-el-badry-a-million-binaries-from-gaia-edr3-sample-selection-and-validatio",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "michele-loi-the-societal-and-ethical-relevance-of-computational-creativity",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "michele-loi-the-societal-and-ethical-relevance-of-computational-creativity",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "dan-hendrycks-measuring-massive-multitask-language-understanding",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "dan-hendrycks-measuring-massive-multitask-language-understanding",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "ardavan-bidgoli-machinic-surrogates-human-machine-relationships-in-computational",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ardavan-bidgoli-machinic-surrogates-human-machine-relationships-in-computational",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "marian-mazzone-art-creativity-and-the-potential-of-artificial-intelligence",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "marian-mazzone-art-creativity-and-the-potential-of-artificial-intelligence",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "yuri-tynianov-permanent-evolution",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "yuri-tynianov-permanent-evolution",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "roy-n-morcos-sources-of-error-in-office-blood-pressure-measurement",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "roy-n-morcos-sources-of-error-in-office-blood-pressure-measurement",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "aaron-hertzmann-can-computers-create-art",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "aaron-hertzmann-can-computers-create-art",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "de-assis-logic-of-experimentation",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "de-assis-logic-of-experimentation",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "hans-jorg-rheinberger-transpositions-from-traces-through-data-to-models-and-simu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "c-a-l-bailer-jones-estimating-distance-from-parallaxes-iv-distances-to-1-33-bill",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "c-a-l-bailer-jones-estimating-distance-from-parallaxes-iv-distances-to-1-33-bill",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "julia-dressel-the-accuracy-fairness-and-limits-of-predicting-recidivism",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "julia-dressel-the-accuracy-fairness-and-limits-of-predicting-recidivism",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "ahmed-elgammal-can-creative-adversarial-networks-generating-art-by-learning-abou",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ahmed-elgammal-can-creative-adversarial-networks-generating-art-by-learning-abou",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "baleviciute-artistic-research-quest-new-knowledge",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "baleviciute-artistic-research-quest-new-knowledge",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "wilson-is-artistic-practice-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "alexandra-chouldechova-fair-prediction-with-disparate-impact-a-study-of-bias-in-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "alexandra-chouldechova-fair-prediction-with-disparate-impact-a-study-of-bias-in-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "john-a-loadsman-widening-the-search-for-suspect-data-is-the-flood-of-retractions",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "john-a-loadsman-widening-the-search-for-suspect-data-is-the-flood-of-retractions",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "j-b-carlisle-data-fabrication-and-other-reasons-for-non-random-sampling-in-5087-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "j-b-carlisle-data-fabrication-and-other-reasons-for-non-random-sampling-in-5087-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "pablo-ventura-algorithmic-reflections-on-choreography",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "pablo-ventura-algorithmic-reflections-on-choreography",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "nicholas-j-l-brown-the-grim-test",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "nicholas-j-l-brown-the-grim-test",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "jon-kleinberg-inherent-trade-offs-in-the-fair-determination-of-risk-scores",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "jon-kleinberg-inherent-trade-offs-in-the-fair-determination-of-risk-scores",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "boaventura-de-sousa-santos-epistemologies-of-the-south",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "boaventura-de-sousa-santos-epistemologies-of-the-south",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "betti-marenko-when-making-becomes-divination-uncertainty-and-contingency-in-comp",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "betti-marenko-when-making-becomes-divination-uncertainty-and-contingency-in-comp",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "karen-barad-diffracting-diffraction-cutting-together-apart",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "karen-barad-diffracting-diffraction-cutting-together-apart",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "erin-manning-thought-in-the-act",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "erin-manning-thought-in-the-act",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "robin-nelson-practice-as-research-in-the-arts",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "robin-nelson-practice-as-research-in-the-arts",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "tim-ingold-making",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "tim-ingold-making",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "rudolf-uher-major-depressive-disorder-in-dsm-5-implications-for-clinical-practic",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "rudolf-uher-major-depressive-disorder-in-dsm-5-implications-for-clinical-practic",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "simon-colton-computational-creativity-the-final-frontier",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "simon-colton-computational-creativity-the-final-frontier",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "bernd-beber-what-the-numbers-say-a-digit-based-test-for-election-fraud",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "bernd-beber-what-the-numbers-say-a-digit-based-test-for-election-fraud",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "j-b-carlisle-the-analysis-of-168-randomised-controlled-trials-to-test-data-integ",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "j-b-carlisle-the-analysis-of-168-randomised-controlled-trials-to-test-data-integ",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "h-drewes-reference-systems-reference-frames-and-the-geodetic-datum",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "h-drewes-reference-systems-reference-frames-and-the-geodetic-datum",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "unbekannt-practice-as-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "unbekannt-practice-as-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "haseman-manifesto-for-performative-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "haseman-manifesto-for-performative-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "heinz-von-foerster-understanding-understanding",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "heinz-von-foerster-understanding-understanding",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "l-gammaitoni-stochastic-resonance",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "l-gammaitoni-stochastic-resonance",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "haraway-situated-knowledges",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "haraway-situated-knowledges",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "paul-f-dell-understanding-bateson-and-maturana-toward-a-biological-foundation-fo",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "paul-f-dell-understanding-bateson-and-maturana-toward-a-biological-foundation-fo",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "humberto-r-maturana-autopoiesis-and-cognition",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "humberto-r-maturana-autopoiesis-and-cognition",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "colby-weber-hilf-artificial-paranoia",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "colby-weber-hilf-artificial-paranoia",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "wiener-cybernetics",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "wiener-cybernetics",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     }
+    ],
+    "unresolved_identifier_not_in_file": []
+   },
+   "labels": {
+    "atelier": 128,
+    "field": 119,
+    "meridian": 139,
+    "studio": 4
+   },
+   "shared_entries": 151,
+   "solo_by_citer": {
+    "atelier": {
+     "gebrauch": 0,
+     "praxis": 2,
+     "urteil": 0
+    },
+    "field": {
+     "gebrauch": 36,
+     "praxis": 0,
+     "urteil": 0
+    },
+    "meridian": {
+     "gebrauch": 21,
+     "praxis": 0,
+     "urteil": 0
+    },
+    "studio": {
+     "gebrauch": 0,
+     "praxis": 0,
+     "urteil": 0
+    }
+   },
+   "subject": "katalog-scout: Paper-Katalog 2026-07-28",
+   "urteil_key_present": 0,
+   "urteil_populated": 0
+  },
+  {
+   "commit": "78a609d89cc2b7ed783e0593ec9686e758011fdc",
+   "commit_short": "78a609d8",
+   "committed_at": "2026-07-28T23:30:14+02:00",
+   "entries": 210,
+   "forward_arm": {
+    "distinct_files": 26,
+    "field_entries": 119,
+    "pairs": 337,
+    "resolved_loose": 103,
+    "resolved_strict": 103,
+    "unresolved_file_not_at_repo_pin": [
+     {
+      "id": "antonio-somaini-latent-spaces-ai-art-and-the-archive",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "antonio-somaini-latent-spaces-ai-art-and-the-archive",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "chris-lu-towards-end-to-end-automation-of-ai-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "chris-lu-towards-end-to-end-automation-of-ai-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "juraj-gottweis-accelerating-scientific-discovery-with-co-scientist",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "juraj-gottweis-accelerating-scientific-discovery-with-co-scientist",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "jonas-dolezal-the-impact-of-ai-generated-text-on-the-internet",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "jonas-dolezal-the-impact-of-ai-generated-text-on-the-internet",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "unbekannt-retraction-human-in-the-loop-artificial-intelligence-system-for-system",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "unbekannt-retraction-human-in-the-loop-artificial-intelligence-system-for-system",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "theint-moh-moh-zaw-research-integrity-within-systematic-reviews-investigating-th",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "theint-moh-moh-zaw-research-integrity-within-systematic-reviews-investigating-th",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "zonglin-yang-sciintegrity-bench-a-benchmark-for-evaluating-academic-integrity-in",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "zonglin-yang-sciintegrity-bench-a-benchmark-for-evaluating-academic-integrity-in",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "jingyuan-liu-what-is-actually-being-annotated-inter-prompt-reliability-as-a-meas",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "jingyuan-liu-what-is-actually-being-annotated-inter-prompt-reliability-as-a-meas",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "ruta-binkyte-inspectable-ai-for-science-a-research-object-approach-to-generative",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ruta-binkyte-inspectable-ai-for-science-a-research-object-approach-to-generative",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "samar-ansari-compound-deception-in-elite-peer-review-a-failure-mode-taxonomy-of-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "samar-ansari-compound-deception-in-elite-peer-review-a-failure-mode-taxonomy-of-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "mingzhe-li-source-or-it-didn-t-happen-a-multi-agent-framework-for-citation-hallu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "mingzhe-li-source-or-it-didn-t-happen-a-multi-agent-framework-for-citation-hallu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "hailey-onweller-cited-but-not-verified-parsing-and-evaluating-source-attribution",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "hailey-onweller-cited-but-not-verified-parsing-and-evaluating-source-attribution",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "almene-de-meran-meguimtsop-sciintbench-measuring-llm-compliance-with-research-in",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "almene-de-meran-meguimtsop-sciintbench-measuring-llm-compliance-with-research-in",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "adnan-al-ali-different-time-different-language-revisiting-the-bias-against-non-n",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "adnan-al-ali-different-time-different-language-revisiting-the-bias-against-non-n",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "razeen-a-rasheed-from-fluent-to-verifiable-claim-level-auditability-for-deep-res",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "razeen-a-rasheed-from-fluent-to-verifiable-claim-level-auditability-for-deep-res",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "youxin-zhu-statabench-dataset-and-framework-for-evaluating-statistical-analysis-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "youxin-zhu-statabench-dataset-and-framework-for-evaluating-statistical-analysis-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "romina-omidi-on-google-s-synthid-text-llm-watermarking-system-theoretical-analys",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "romina-omidi-on-google-s-synthid-text-llm-watermarking-system-theoretical-analys",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "enis-golaszewski-verifying-provenance-of-digital-media-why-the-c2pa-specificatio",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "enis-golaszewski-verifying-provenance-of-digital-media-why-the-c2pa-specificatio",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "wojciech-zarzecki-the-reliability-gap-in-benchmark-auditing-distribution-shift-a",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "wojciech-zarzecki-the-reliability-gap-in-benchmark-auditing-distribution-shift-a",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "alexander-nemecek-authenticated-contradictions-from-desynchronized-provenance-an",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "alexander-nemecek-authenticated-contradictions-from-desynchronized-provenance-an",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "mubashara-akhtar-when-ai-benchmarks-plateau-a-systematic-study-of-benchmark-satu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "mubashara-akhtar-when-ai-benchmarks-plateau-a-systematic-study-of-benchmark-satu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "yutaro-yamada-towards-end-to-end-automation-of-ai-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "yutaro-yamada-towards-end-to-end-automation-of-ai-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "joachim-baumann-stop-automating-peer-review-without-rigorous-evaluation",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "joachim-baumann-stop-automating-peer-review-without-rigorous-evaluation",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "fariba-jangjoo-lost-in-retraining-roaming-the-parameter-space-of-exponential-fam",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "fariba-jangjoo-lost-in-retraining-roaming-the-parameter-space-of-exponential-fam",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "johan-fredrikzon-rethinking-error-hallucinations-and-epistemological-indifferenc",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "johan-fredrikzon-rethinking-error-hallucinations-and-epistemological-indifferenc",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "kevin-m-kallmes-retracted-human-in-the-loop-artificial-intelligence-system-for-s",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "kevin-m-kallmes-retracted-human-in-the-loop-artificial-intelligence-system-for-s",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "kareem-el-badry-how-to-use-gaia-parallaxes-for-stars-with-poor-astrometric-fits",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "kareem-el-badry-how-to-use-gaia-parallaxes-for-stars-with-poor-astrometric-fits",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "dmitry-kobak-delving-into-llm-assisted-writing-in-biomedical-publications-throug",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "dmitry-kobak-delving-into-llm-assisted-writing-in-biomedical-publications-throug",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "samuel-schmidgall-agent-laboratory-using-llm-agents-as-research-assistants",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "samuel-schmidgall-agent-laboratory-using-llm-agents-as-research-assistants",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "pranav-narayanan-venkit-deeptrace-auditing-deep-research-ai-systems-for-tracking",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "pranav-narayanan-venkit-deeptrace-auditing-deep-research-ai-systems-for-tracking",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "ludovico-mitchener-kosmos-an-ai-scientist-for-autonomous-discovery",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ludovico-mitchener-kosmos-an-ai-scientist-for-autonomous-discovery",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "joachim-baumann-large-language-model-hacking-quantifying-the-hidden-risks-of-usi",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "joachim-baumann-large-language-model-hacking-quantifying-the-hidden-risks-of-usi",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "cooper-elsworth-measuring-the-environmental-impact-of-delivering-ai-at-google-sc",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "cooper-elsworth-measuring-the-environmental-impact-of-delivering-ai-at-google-sc",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "minjun-zhu-ai-scientists-fail-without-strong-implementation-capability",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "minjun-zhu-ai-scientists-fail-without-strong-implementation-capability",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "jenny-zhang-darwin-godel-machine-open-ended-evolution-of-self-improving-agents",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "jenny-zhang-darwin-godel-machine-open-ended-evolution-of-self-improving-agents",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "joeran-beel-evaluating-sakana-s-ai-scientist-bold-claims-mixed-results-and-a-pro",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "joeran-beel-evaluating-sakana-s-ai-scientist-bold-claims-mixed-results-and-a-pro",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "lakshya-a-agrawal-gepa-reflective-prompt-evolution-can-outperform-reinforcement-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "lakshya-a-agrawal-gepa-reflective-prompt-evolution-can-outperform-reinforcement-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "zhivar-sourati-the-shrinking-landscape-of-linguistic-diversity-in-the-age-of-lar",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "zhivar-sourati-the-shrinking-landscape-of-linguistic-diversity-in-the-age-of-lar",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "minseok-jung-group-adaptive-threshold-optimization-for-robust-ai-generated-text-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "minseok-jung-group-adaptive-threshold-optimization-for-robust-ai-generated-text-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "f-moradi-jangal-impact-of-qcd-sum-rules-coupling-constants-on-neutron-stars-stru",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "f-moradi-jangal-impact-of-qcd-sum-rules-coupling-constants-on-neutron-stars-stru",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "xiaowei-zhu-reliably-bounding-false-positives-a-zero-shot-machine-generated-text",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "xiaowei-zhu-reliably-bounding-false-positives-a-zero-shot-machine-generated-text",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "shivalika-singh-the-leaderboard-illusion",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "shivalika-singh-the-leaderboard-illusion",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "ahmad-r-pratama-the-accuracy-bias-trade-offs-in-ai-text-detection-tools-and-thei",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ahmad-r-pratama-the-accuracy-bias-trade-offs-in-ai-text-detection-tools-and-thei",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "kevin-stowe-identifying-bias-in-machine-generated-text-detection",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "kevin-stowe-identifying-bias-in-machine-generated-text-detection",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "matthias-gerstgrasser-is-model-collapse-inevitable-breaking-the-curse-of-recursi",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "matthias-gerstgrasser-is-model-collapse-inevitable-breaking-the-curse-of-recursi",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "terence-broad-is-computational-creativity-flourishing-on-the-dead-internet",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "terence-broad-is-computational-creativity-flourishing-on-the-dead-internet",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "jon-mccormack-no-longer-trending-on-artstation-prompt-analysis-of-generative-ai-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "jon-mccormack-no-longer-trending-on-artstation-prompt-analysis-of-generative-ai-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "claudio-celis-bueno-not-what-but-where-is-creativity-towards-a-relational-materi",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "claudio-celis-bueno-not-what-but-where-is-creativity-towards-a-relational-materi",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "tim-deane-freeman-deleuze-digital-media-and-thought",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "tim-deane-freeman-deleuze-digital-media-and-thought",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "sumanth-dathathri-scalable-watermarking-for-identifying-large-language-model-out",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "dino-pedreschi-human-ai-coevolution",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ilia-shumailov-ai-models-collapse-when-trained-on-recursively-generated-data",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ilia-shumailov-ai-models-collapse-when-trained-on-recursively-generated-data",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "elvis-dohmatob-a-tale-of-tails-model-collapse-as-a-change-of-scaling-laws",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "elvis-dohmatob-a-tale-of-tails-model-collapse-as-a-change-of-scaling-laws",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "ali-borji-a-note-on-shumailov-et-al-2024-ai-models-collapse-when-trained-on-recu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ali-borji-a-note-on-shumailov-et-al-2024-ai-models-collapse-when-trained-on-recu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "hermano-velten-extended-error-threshold-mechanism-in-it-quasispecies-theory-via-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "hermano-velten-extended-error-threshold-mechanism-in-it-quasispecies-theory-via-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "duncan-carr-agnew-a-global-timekeeping-problem-postponed-by-global-warming",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "duncan-carr-agnew-a-global-timekeeping-problem-postponed-by-global-warming",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "xiang-cheng-to-err-is-human-to-annotate-silicon-toward-robust-reproducibility-in",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "xiang-cheng-to-err-is-human-to-annotate-silicon-toward-robust-reproducibility-in",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "christopher-barrie-prompt-stability-scoring-for-text-annotation-with-large-langu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "christopher-barrie-prompt-stability-scoring-for-text-annotation-with-large-langu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "mike-perkins-simple-techniques-to-bypass-genai-text-detectors-implications-for-i",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "mike-perkins-simple-techniques-to-bypass-genai-text-detectors-implications-for-i",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "rita-gonzalez-marquez-learning-representations-of-learning-representations",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "rita-gonzalez-marquez-learning-representations-of-learning-representations",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "mike-perkins-genai-detection-tools-adversarial-techniques-and-implications-for-i",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "mike-perkins-genai-detection-tools-adversarial-techniques-and-implications-for-i",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "qihao-zhao-mmlu-cf-a-contamination-free-multi-task-language-understanding-benchm",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "qihao-zhao-mmlu-cf-a-contamination-free-multi-task-language-understanding-benchm",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "nicola-perugini-medical-lawfare-the-nakba-and-israel-s-attacks-on-palestinian-he",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "nicola-perugini-medical-lawfare-the-nakba-and-israel-s-attacks-on-palestinian-he",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "yara-asi-nowhere-and-no-one-is-safe-spatial-analysis-of-damage-to-critical-civil",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "yara-asi-nowhere-and-no-one-is-safe-spatial-analysis-of-damage-to-critical-civil",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "weixin-liang-monitoring-ai-modified-content-at-scale-a-case-study-on-the-impact-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "weixin-liang-monitoring-ai-modified-content-at-scale-a-case-study-on-the-impact-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "ziv-epstein-art-and-the-science-of-generative-ai-a-deeper-dive",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ziv-epstein-art-and-the-science-of-generative-ai-a-deeper-dive",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "ilia-shumailov-the-curse-of-recursion-training-on-generated-data-makes-models-fo",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ilia-shumailov-the-curse-of-recursion-training-on-generated-data-makes-models-fo",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "sina-alemohammad-self-consuming-generative-models-go-mad",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "sina-alemohammad-self-consuming-generative-models-go-mad",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "dietmar-koering-exploring-the-human-ai-nexus-a-friendly-dispute-between-second-o",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "dietmar-koering-exploring-the-human-ai-nexus-a-friendly-dispute-between-second-o",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "pengfei-li-making-ai-less-thirsty-uncovering-and-addressing-the-secret-water-foo",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "pengfei-li-making-ai-less-thirsty-uncovering-and-addressing-the-secret-water-foo",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "weixin-liang-gpt-detectors-are-biased-against-non-native-english-writers",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "weixin-liang-gpt-detectors-are-biased-against-non-native-english-writers",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "nicholas-pangakis-automated-annotation-with-generative-ai-requires-validation",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "nicholas-pangakis-automated-annotation-with-generative-ai-requires-validation",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "kyle-morgan-so-you-want-to-survey-a-state-legislator-call-me-maybe",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "kyle-morgan-so-you-want-to-survey-a-state-legislator-call-me-maybe",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "alina-beygelzimer-has-the-machine-learning-review-process-become-more-arbitrary-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "alina-beygelzimer-has-the-machine-learning-review-process-become-more-arbitrary-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "vishakh-padmakumar-does-writing-with-language-models-reduce-content-diversity",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "vishakh-padmakumar-does-writing-with-language-models-reduce-content-diversity",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "alex-golovin-the-fifth-catalogue-of-nearby-stars-cns5",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "alex-golovin-the-fifth-catalogue-of-nearby-stars-cns5",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "daniel-v-tausk-on-the-incorrect-use-of-carlisle-s-method-for-dichotomous-variabl",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "daniel-v-tausk-on-the-incorrect-use-of-carlisle-s-method-for-dichotomous-variabl",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "j-rybizki-a-classifier-for-spurious-astrometric-solutions-in-gaia-edr3",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "j-rybizki-a-classifier-for-spurious-astrometric-solutions-in-gaia-edr3",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "kareem-el-badry-a-million-binaries-from-gaia-edr3-sample-selection-and-validatio",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "kareem-el-badry-a-million-binaries-from-gaia-edr3-sample-selection-and-validatio",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "michele-loi-the-societal-and-ethical-relevance-of-computational-creativity",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "michele-loi-the-societal-and-ethical-relevance-of-computational-creativity",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "dan-hendrycks-measuring-massive-multitask-language-understanding",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "dan-hendrycks-measuring-massive-multitask-language-understanding",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "ardavan-bidgoli-machinic-surrogates-human-machine-relationships-in-computational",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ardavan-bidgoli-machinic-surrogates-human-machine-relationships-in-computational",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "marian-mazzone-art-creativity-and-the-potential-of-artificial-intelligence",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "marian-mazzone-art-creativity-and-the-potential-of-artificial-intelligence",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "yuri-tynianov-permanent-evolution",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "yuri-tynianov-permanent-evolution",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "roy-n-morcos-sources-of-error-in-office-blood-pressure-measurement",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "roy-n-morcos-sources-of-error-in-office-blood-pressure-measurement",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "aaron-hertzmann-can-computers-create-art",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "aaron-hertzmann-can-computers-create-art",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "de-assis-logic-of-experimentation",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "de-assis-logic-of-experimentation",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "hans-jorg-rheinberger-transpositions-from-traces-through-data-to-models-and-simu",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "c-a-l-bailer-jones-estimating-distance-from-parallaxes-iv-distances-to-1-33-bill",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "c-a-l-bailer-jones-estimating-distance-from-parallaxes-iv-distances-to-1-33-bill",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "julia-dressel-the-accuracy-fairness-and-limits-of-predicting-recidivism",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "julia-dressel-the-accuracy-fairness-and-limits-of-predicting-recidivism",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "ahmed-elgammal-can-creative-adversarial-networks-generating-art-by-learning-abou",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "ahmed-elgammal-can-creative-adversarial-networks-generating-art-by-learning-abou",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "baleviciute-artistic-research-quest-new-knowledge",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "baleviciute-artistic-research-quest-new-knowledge",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "wilson-is-artistic-practice-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "alexandra-chouldechova-fair-prediction-with-disparate-impact-a-study-of-bias-in-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "alexandra-chouldechova-fair-prediction-with-disparate-impact-a-study-of-bias-in-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "john-a-loadsman-widening-the-search-for-suspect-data-is-the-flood-of-retractions",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "john-a-loadsman-widening-the-search-for-suspect-data-is-the-flood-of-retractions",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "j-b-carlisle-data-fabrication-and-other-reasons-for-non-random-sampling-in-5087-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "j-b-carlisle-data-fabrication-and-other-reasons-for-non-random-sampling-in-5087-",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "pablo-ventura-algorithmic-reflections-on-choreography",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "pablo-ventura-algorithmic-reflections-on-choreography",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "nicholas-j-l-brown-the-grim-test",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "nicholas-j-l-brown-the-grim-test",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "jon-kleinberg-inherent-trade-offs-in-the-fair-determination-of-risk-scores",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "jon-kleinberg-inherent-trade-offs-in-the-fair-determination-of-risk-scores",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "boaventura-de-sousa-santos-epistemologies-of-the-south",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "boaventura-de-sousa-santos-epistemologies-of-the-south",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "betti-marenko-when-making-becomes-divination-uncertainty-and-contingency-in-comp",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "betti-marenko-when-making-becomes-divination-uncertainty-and-contingency-in-comp",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "karen-barad-diffracting-diffraction-cutting-together-apart",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "karen-barad-diffracting-diffraction-cutting-together-apart",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "erin-manning-thought-in-the-act",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "erin-manning-thought-in-the-act",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "robin-nelson-practice-as-research-in-the-arts",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "robin-nelson-practice-as-research-in-the-arts",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "tim-ingold-making",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "tim-ingold-making",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "rudolf-uher-major-depressive-disorder-in-dsm-5-implications-for-clinical-practic",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "rudolf-uher-major-depressive-disorder-in-dsm-5-implications-for-clinical-practic",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "simon-colton-computational-creativity-the-final-frontier",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "simon-colton-computational-creativity-the-final-frontier",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "bernd-beber-what-the-numbers-say-a-digit-based-test-for-election-fraud",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "bernd-beber-what-the-numbers-say-a-digit-based-test-for-election-fraud",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "j-b-carlisle-the-analysis-of-168-randomised-controlled-trials-to-test-data-integ",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "j-b-carlisle-the-analysis-of-168-randomised-controlled-trials-to-test-data-integ",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "h-drewes-reference-systems-reference-frames-and-the-geodetic-datum",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "h-drewes-reference-systems-reference-frames-and-the-geodetic-datum",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "unbekannt-practice-as-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "unbekannt-practice-as-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "haseman-manifesto-for-performative-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "haseman-manifesto-for-performative-research",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "heinz-von-foerster-understanding-understanding",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "heinz-von-foerster-understanding-understanding",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "l-gammaitoni-stochastic-resonance",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "l-gammaitoni-stochastic-resonance",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "haraway-situated-knowledges",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "haraway-situated-knowledges",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "paul-f-dell-understanding-bateson-and-maturana-toward-a-biological-foundation-fo",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "paul-f-dell-understanding-bateson-and-maturana-toward-a-biological-foundation-fo",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "humberto-r-maturana-autopoiesis-and-cognition",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "humberto-r-maturana-autopoiesis-and-cognition",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "colby-weber-hilf-artificial-paranoia",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "colby-weber-hilf-artificial-paranoia",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     },
+     {
+      "id": "wiener-cybernetics",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json"
+     },
+     {
+      "id": "wiener-cybernetics",
+      "path": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json"
+     }
+    ],
+    "unresolved_identifier_not_in_file": []
+   },
+   "labels": {
+    "atelier": 128,
+    "field": 119,
+    "meridian": 139,
+    "studio": 4
+   },
+   "shared_entries": 151,
+   "solo_by_citer": {
+    "atelier": {
+     "gebrauch": 0,
+     "praxis": 2,
+     "urteil": 0
+    },
+    "field": {
+     "gebrauch": 22,
+     "praxis": 0,
+     "urteil": 14
+    },
+    "meridian": {
+     "gebrauch": 21,
+     "praxis": 0,
+     "urteil": 0
+    },
+    "studio": {
+     "gebrauch": 0,
+     "praxis": 0,
+     "urteil": 0
+    }
+   },
+   "subject": "fix: Urteilsnachweis wurde nie geschrieben; Saat-Antworten nie synchronisiert",
+   "urteil_key_present": 210,
+   "urteil_populated": 27
+  }
+ ],
+ "work": "Back-reference audit of the ecology's Paper Catalogue — longitudinal pass"
+}

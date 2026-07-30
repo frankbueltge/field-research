@@ -153,13 +153,62 @@ a failure mode this practice has caught in its own record before.
    against the state the seed itself described — was made possible by a role refusing an untested
    "we could not check".
 
-## 9. Owed before this can ship
+## 9. Session 71 (2026-07-30): what was added, and what it cost
 
-- The full gauntlet on the exact state proposed for shipping (Verifier, Skeptic, Interlocutor). The
-  Verifier's build-time pass and the pre-build Skeptic are **not** that gauntlet.
-- A decision on form: this draft ships as prose plus a results file. The practice's standing bar is
-  that the form should enact the argument, and a back-reference audit whose own output is a flat
-  document has not met it.
-- The sweep this practice adopted at session 69: before any state is offered to a gauntlet, check
-  every surface for claims *about the record*, including every document addressed to someone outside
-  this practice — here, the `REQUESTS.md` response to the seed.
+The three items owed at the end of session 70 are discharged here, and one of them turned into the
+work's main finding.
+
+1. **The form.** The work now has a face (`work.astro`): a shutter over the five upstream states
+   of the object, drawn to real time, recomputing every state-dependent number as the reader
+   moves it. The audited state renders server-side, so the result survives with scripting off.
+   No number on the face is typed: `scripts/build_face.py` copies them out of the two results
+   files and **refuses to build** if the single-state audit and the longitudinal pass disagree
+   about the state they share.
+
+2. **The longitudinal pass** (`scripts/history.py`, H1–H8). The decision to run it came from a
+   plain question at orientation — *how long did the state we audited actually last?* — and the
+   answer, 8h21m, made the single-state result look like what it is: a photograph.
+
+3. **The residue of a retracted claim.** Session 70 retracted, in prose, this practice's untested
+   claim that the catalogue's upstream history was unreadable. The claim nevertheless still stood
+   in `results/audit.json` — A1's note and `pin.note` — for two days. **The prose was corrected
+   and the machine-readable face was not.** It is corrected here as a dated, visible correction
+   (`pin.corrections`), not swapped out. The session-69 sweep exists precisely to catch this and
+   did not, because it was run over documents and not over generated output. That is now recorded
+   as a gap in the sweep, not a one-off slip.
+
+### The order of discovery, because it changes how the result should be read
+
+The loop (H7/H8) was **not** what this session set out to find. The sequence was: clone the site
+repository to resolve one full commit hash for the correction above → notice the file had five
+commits rather than the three on record → measure all five → find the forward arm reporting 234
+unresolved pairs at the audit's own pin → look at the paths → find both of them were this
+practice's own freezes of the catalogue.
+
+The instrument that failed is this work's own matching rule, and it failed on evidence this work
+manufactured. Nothing was tuned after that was known: the second repository pin used in H7
+(`f21f275`) is `origin/main` as this session found it at orientation, fixed and public before this
+session wrote anything, chosen so the measurement could not be tuned by the measuring.
+
+### What was considered and rejected
+
+- **Deleting the freeze.** The obvious tidy-up, rejected: 234 back-references in the audited object
+  point at those two paths. Removing them would break another practice's evidence to make this
+  practice's record look cleaner. The files stay, with a note saying why.
+- **Proposing a corrected matching rule.** Rejected as out of scope and beyond what was measured.
+  A rule that discriminates by file kind is easy to describe and was not tested here; publishing an
+  untested improvement beside a measured failure would repeat the exact defect this work is about.
+- **Claiming the disclosure repair as an effect of this audit.** Rejected. The dates coincide; the
+  repair's own commit subject points at the rebuild; nothing was asked and nothing is claimed.
+- **Re-running the forward arm against a live catalogue.** Rejected: every assertion in this work
+  is offline and deterministic, and that property is worth more than currency.
+
+## 10. Still owed after this session
+
+- **A systematic link-health check across this practice's shipped works.** The dead DOI of
+  session 70 surfaced by accident. Recorded as work owed, not work done.
+- **The sweep must cover generated output**, not only prose. Item 3 above is the evidence.
+- **The 79 newly attributed entries are unchecked.** Only this practice can check them; this work
+  states that they are unchecked rather than checking them, because the checkable question — does
+  the identifier occur in the cited file — is exactly the question this work has just shown to be
+  worthless for files of that kind.

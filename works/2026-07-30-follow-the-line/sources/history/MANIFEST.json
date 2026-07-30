@@ -1,0 +1,52 @@
+{
+ "audit_delivered": "2026-07-28",
+ "audited_state": "a7879398",
+ "audited_state_lifetime_human": "8h21m",
+ "audited_state_lifetime_minutes": 502,
+ "disclosure_absent_human": "13h26m",
+ "disclosure_lifetime_human": "8h21m",
+ "file": "src/data/register/papers.json",
+ "states": [
+  {
+   "commit": "03067c54125c042177c57b95ef609ceba1cae7be",
+   "committed_at": "2026-07-28T00:42:44+02:00",
+   "entries": 117,
+   "freeze_sha256": "d7a585ff54db13c89cac6081e8efa70c6bee3a06ea66a8b0e0dacc6da06bc203",
+   "raw_sha256": "d8b91096ce519b0fa9080ed7e12b93e2400239a04829dac8d527e97794ca372a",
+   "subject": "feat(papers): Paper-Katalog aus dem, was die Praxen zitieren"
+  },
+  {
+   "commit": "6a032edb16f645d56eab9af2a913050eb3de57e4",
+   "committed_at": "2026-07-28T01:01:18+02:00",
+   "entries": 206,
+   "freeze_sha256": "31c44ec54ac265ae2b2fc6d55f9ed4e955d19a93921ba03ff6ee19d775a60c61",
+   "raw_sha256": "5d4b4568f9ca429116c643c3e23191d06e62ab62d23173036375c4a9e56b4185",
+   "subject": "feat(papers): zwei Wege, und jeder Eintrag belegt seine Herkunft"
+  },
+  {
+   "commit": "a7879398326d0b6e546cbeab8b7216ca31700f5e",
+   "committed_at": "2026-07-28T01:41:37+02:00",
+   "entries": 208,
+   "freeze_sha256": "141cd3cc5645ec4fa05f4b5410ddac2b99af154f23f8ad52b4eace667dabf80a",
+   "raw_sha256": "d59518024580e910e5ab7843bc07ce3e58b3f3362bd33452c6dc5d34a340d76a",
+   "subject": "feat(papers): 27 Urteile geschrieben — sichtbar maschinell, weiter toVerify"
+  },
+  {
+   "commit": "cc9c2cf1adad1754e4440443dc8ce501cdb7d854",
+   "committed_at": "2026-07-28T08:03:19+00:00",
+   "entries": 210,
+   "freeze_sha256": "ae9b8b2a1b4edabd01af8d7116e76d3ee7b2816296ff90561caf3521a45e4117",
+   "raw_sha256": "56abbf9c6edff7688ce895a0e999349279ef7b4e3cd13c54e5972df3f2628087",
+   "subject": "katalog-scout: Paper-Katalog 2026-07-28"
+  },
+  {
+   "commit": "78a609d89cc2b7ed783e0593ec9686e758011fdc",
+   "committed_at": "2026-07-28T23:30:14+02:00",
+   "entries": 210,
+   "freeze_sha256": "d933d352f2cb301015952333b925dc88a71faca9f301936e4f3156d8346cab74",
+   "raw_sha256": "3cc6e4533b2cb847635439d963f01d33dd41f2d70c9da1bda20f93bc7072179b",
+   "subject": "fix: Urteilsnachweis wurde nie geschrieben; Saat-Antworten nie synchronisiert"
+  }
+ ],
+ "upstream": "https://github.com/frankbueltge/frankbueltge.de"
+}

@@ -66,14 +66,43 @@ one **person's name**. Those are third-party bibliographic facts about the texts
 the same facts this practice's own shipped works already cite. The prohibition is on naming this
 practice's own tooling and its vendors, not on reporting the literature.
 
+### 1a. Every state, not one (added 2026-07-30, session 71)
+
+The single-state freeze above is now one of five. `scripts/freeze_history.py` walks the full
+upstream history of the catalogue file from a plain clone and writes one frozen state per commit
+through the **same reduction rule**, so the states are comparable to each other and to the two
+freezes made on 2026-07-28. Both of those reproduce **byte-for-byte** from the cloned history —
+an independent confirmation of the 2026-07-28 pins by a different route than the one used then.
+
+Raw and freeze SHA-256 for every state, with commit and timestamp, are in
+`sources/history/MANIFEST.json`. Summary:
+
+| state | committed (+02:00) | entries | freeze SHA-256 (first 16) |
+|---|---|---:|---|
+| `03067c54` | 2026-07-28 00:42:44 | 117 | `d7a585ff54db13c8` |
+| `6a032edb` | 2026-07-28 01:01:18 | 206 | `31c44ec54ac265ae` |
+| `a7879398` | 2026-07-28 01:41:37 | 208 | `141cd3cc5645ec4f` |
+| `cc9c2cf1` | 2026-07-28 10:03:19 | 210 | `ae9b8b2a1b4edabd` |
+| `78a609d8` | 2026-07-28 23:30:14 | 210 | `d933d352f2cb3010` |
+
+The two hashes recorded on 2026-07-28 — `141cd3cc…` and `31c44ec5…` — appear unchanged above.
+
+**Where the 2026-07-28 freezes still live.** `sources/papers.frozen.json` and
+`sources/papers.seed-state.frozen.json` were **not** moved into this work when it graduated, and
+are **not** deleted. They remain at `drafts/2026-07-28-follow-the-line/sources/` because 234
+back-references in the audited catalogue point at those exact paths (H7/H8). Moving or deleting
+them would break another practice's evidence. The shipped work carries byte-identical copies of
+the same two states under `sources/history/` as `a7879398.json` and `6a032edb.json`.
+
 | | |
 |---|---|
-| SHA-256 of `sources/papers.frozen.json` (current state, from `a7879398`) | `141cd3cc5645ec4fa05f4b5410ddac2b99af154f23f8ad52b4eace667dabf80a` |
-| SHA-256 of `sources/papers.seed-state.frozen.json` (from `6a032edb`) | `31c44ec54ac265ae2b2fc6d55f9ed4e955d19a93921ba03ff6ee19d775a60c61` |
+| SHA-256 of `sources/history/a7879398.json` (the audited state) | `141cd3cc5645ec4fa05f4b5410ddac2b99af154f23f8ad52b4eace667dabf80a` |
+| SHA-256 of `sources/history/6a032edb.json` (the state the seed describes) | `31c44ec54ac265ae2b2fc6d55f9ed4e955d19a93921ba03ff6ee19d775a60c61` |
 | SHA-256 of `scripts/freeze.py` | `634d73e4406a5d039d4d31e2001b88dcb2fef4554c9e6b546b9a500014a14d67` |
 
-Reproduction chain for a reader: fetch the raw URL → check the raw SHA-256 → run
-`python3 scripts/freeze.py <raw> /tmp/f.json` → check that hash against the freeze hash above.
+Reproduction chain for a reader: clone the public site repository → run
+`python3 scripts/freeze_history.py <clone>` → compare every raw and freeze hash against
+`sources/history/MANIFEST.json` → run the three `--check` targets.
 
 ## 2. The ground truth: this repository at a pinned commit
 

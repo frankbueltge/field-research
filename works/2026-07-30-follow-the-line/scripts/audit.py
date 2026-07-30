@@ -8,7 +8,8 @@ This script performs that check, and the complementary one in the other directio
 identifier-shaped strings this repository actually contains, and what a sieve does to them.
 
 Every assertion is OFFLINE and DETERMINISTIC. The two inputs are:
-  * the frozen catalogue extract  (sources/papers.frozen.json, SHA-256 in SOURCES.md)
+  * the frozen catalogue extract  (sources/history/a7879398.json, hashed in
+    sources/history/MANIFEST.json and in SOURCES.md)
   * this repository at a pinned commit (default 58d9c4c), read via `git show`, never the
     working tree — so the audit does not measure whatever happens to be checked out.
 
@@ -31,7 +32,7 @@ import sys
 HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REPO = subprocess.run(["git", "rev-parse", "--show-toplevel"], cwd=HERE,
                       capture_output=True, text=True, check=True).stdout.strip()
-FROZEN = os.path.join(HERE, "sources", "papers.frozen.json")
+FROZEN = os.path.join(HERE, "sources", "history", "a7879398.json")
 OUT = os.path.join(HERE, "results", "audit.json")
 
 PIN = "58d9c4c"
@@ -40,7 +41,7 @@ PIN = "58d9c4c"
 # published claim that the upstream history was unreadable was tested and found false; carried
 # into this file on 2026-07-30 (see the `corrections` block in the output's `pin`).
 UPSTREAM_COMMIT = "a7879398326d0b6e546cbeab8b7216ca31700f5e"   # the state audited, 01:41:37+02:00
-SEED_STATE_COMMIT = "6a032edb"                                 # the state the seed described
+SEED_STATE_COMMIT = "6a032edb16f645d56eab9af2a913050eb3de57e4"   # the state the seed described
 
 # The catalogue names citers with short labels; their evidence paths carry repository
 # prefixes. This is the mapping the audit tests, not a mapping it assumes.
@@ -130,6 +131,7 @@ def sha256(path):
 def build():
     entries = json.load(open(FROZEN, encoding="utf-8"))
     A = []
+    extras = {}
 
     def add(key, title, value, note):
         A.append({"id": key, "title": title, "value": value, "note": note})
@@ -292,6 +294,17 @@ def build():
         % (len(files), PIN, skipped, len(s0), len(s0 - s1), len(s1), len(s1 - s2), len(s2),
            len(s2 - s3), len(s3), len(carried), len(remainder)))
 
+    # The same sieve as a structured staircase, so the work's face can render it without any
+    # number being retyped from A9's prose.
+    extras["sieve"] = [
+        {"stage": "identifier-shaped strings in this repository at the pin", "left": len(s0)},
+        {"stage": "minus %d failing a decidable shape rule" % len(s0 - s1), "left": len(s1)},
+        {"stage": "minus %d occurring only inside a vendored third-party corpus" % len(s1 - s2),
+         "left": len(s2)},
+        {"stage": "minus %d occurring only in test fixtures" % len(s2 - s3), "left": len(s3)},
+        {"stage": "minus %d the catalogue carries" % len(carried), "left": len(remainder)},
+    ]
+
     add("A10", "The remainder, named",
         [{"identifier": i, "in": sorted(where[i])} for i in remainder],
         "Handed back to the catalogue's keeper as candidates, not as errors: some are sources "
@@ -366,7 +379,7 @@ def build():
                          "would break the claim in this assertion — recompute before shipping.")
 
     # --- A15 the same question, at the state the seed itself described -------------
-    seed_path = os.path.join(HERE, "sources", "papers.seed-state.frozen.json")
+    seed_path = os.path.join(HERE, "sources", "history", "6a032edb.json")
     seed_entries = json.load(open(seed_path, encoding="utf-8"))
     s_mer = [e for e in seed_entries if "meridian" in (e.get("zitiert_von") or [])]
     s_herk = collections.Counter(e["relevanz_herkunft"] for e in s_mer)
@@ -430,6 +443,7 @@ def build():
                                    "errors.",
         },
         "assertions": A,
+        "sieve": extras["sieve"],
     }
 
 

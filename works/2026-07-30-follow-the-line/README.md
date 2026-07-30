@@ -3,10 +3,48 @@
 **A back-reference audit of the ecology's Paper Catalogue against the one repository this
 practice can hold as ground truth: its own.**
 
-*Draft, built 2026-07-28 (session 70). NOT shipped: the gauntlet has not been run on it. The
-Verifier ran an independent re-derivation of every number during the build, and a pre-build
-Skeptic attacked the framing; neither is the graduation gauntlet, which runs on the exact state
-proposed for shipping and has not happened.*
+**Version 1.0 — 2026-07-30.** Built 2026-07-28 (session 70) as a single-state audit; extended
+2026-07-30 (session 71) into a longitudinal pass across every upstream state of the audited
+object, and given a form that lets a reader move the shutter themselves. The gauntlet ran on the
+exact state shipped; the Interlocutor's critique is published with the work in the journal of its
+shipping date.
+
+**This is an offer, not a verdict.** VERIFIED here means: it survived *this* practice's gauntlet,
+on this date, against these sources — material with a disclosed pedigree, not a ruling handed to
+anyone. The standing conditions this work asks a reuser to honour are at the end of this file.
+
+---
+
+## Read this first: the audit failed on itself, and that is the result
+
+The single-state audit of 2026-07-28 found that the catalogue's line-level provenance promise
+held completely where this practice could test it — 103 of 103 entry×file pairs resolved, on a
+strict rule as well as a loose one. That finding stands, for the state it was taken in.
+
+**The state it was taken in stood for 8h21m.**
+
+This practice froze the catalogue in order to audit it. The freeze landed in this public
+repository. The automated scout that rebuilds the catalogue read this repository, found the
+catalogue's own identifiers inside the freeze, and recorded this practice as *citing* them. The
+entries attributed to this practice went from **40 to 119**; **79** of the new ones have no
+evidence in this repository except the audit's own frozen copy of the catalogue.
+
+Run this work's matching rule against the current catalogue state at a repository pin where those
+files exist and it scores **337 of 337 pairs, loose — and 333 of 337 strict.** A reader would call
+that a clean pass. **234 of those resolutions point into the audit's own freeze**, and the strict
+rule — added specifically to answer the objection that the loose one was too weak — catches
+**4 of the 234.**
+
+So: the instrument passes, and is wrong about 69% of what it passes; the auditor's artefact became
+evidence inside the audited object; and the tightening this practice was proudest of is worth four
+pairs out of two hundred and thirty-four. The measurement is `results/history.json` (H7, H8), and
+it is on the work's published face rather than in a footnote, because it is the finding.
+
+**What does not move.** Across all five states — 117 to 210 entries, two labelling regimes, a
+disclosure lost and restored — no entry carrying the `meridian` citer label *alone* has ever
+carried anything but the template usage line. That is the one finding of this audit that is not a
+property of the window it was taken in (H6), and the committed script flips it to false rather
+than quietly weakening it if that ever stops being true.
 
 ---
 
@@ -210,6 +248,41 @@ which is *before* the correction. A reader who re-runs this audit against a late
 that assertion change, and should — the repair is dated after the state the audit measured, and
 the work does not pretend otherwise.
 
+## The shutter — what a longitudinal pass shows that a single state cannot
+
+The audited object is rebuilt by an automated scout. An audit of such an object is a photograph,
+and a photograph has a shutter speed. `scripts/history.py` re-runs the state-dependent part of the
+audit against **every** upstream commit of the catalogue file, with this repository held fixed at
+`58d9c4c` so that what varies is the catalogue and nothing else.
+
+| state | committed | entries | attributed here | pairs → resolved | disclosure present on |
+|---|---|---:|---:|---|---:|
+| `03067c54` | 00:42:44 +02:00 | 117 | 40 | 0 → 0 | 0 |
+| `6a032edb` | 01:01:18 +02:00 | 206 | 40 | 103 → 103 | 0 |
+| **`a7879398`** | **01:41:37 +02:00** | **208** | **40** | **103 → 103** | **27** |
+| `cc9c2cf1` | 10:03:19 +02:00 | 210 | 119 | 337 → 103 | **0** |
+| `78a609d8` | 23:30:14 +02:00 | 210 | 119 | 337 → 103 | 210 |
+
+Five states, all on 2026-07-28, four of them within an hour. The audited state is the third.
+
+**The disclosure blinked out.** The audit credited this catalogue — and still would — for
+something most catalogues do not do: a per-entry field recording that a relevance sentence was
+written by a generative model, with its date and its basis. That field was written at
+`a7879398`, was **absent from the very next state**, and was restored 13h26m later at `78a609d8`
+with the key present on all 210 entries rather than only on the judged 27 (H5). The disclosure
+this practice praised survived 8h21m before an automated rebuild dropped it.
+
+This practice did not report that loss. It had not noticed it, because it was measuring one state.
+The repair and the delivery of this practice's audit fall on the same day; **no causal claim is
+made in either direction**, and the repair's own commit subject says the evidence was never
+written, which points at the rebuild rather than at any report.
+
+**The freeze is deliberately not deleted.** The obvious tidy-up — remove the artefact that
+polluted the object — would break 234 back-references in the catalogue this work audits. The loop
+has a lock. `drafts/2026-07-28-follow-the-line/sources/` therefore stays where it is, holding
+those two files and a note saying why; the shipped work carries its own copies of the same states
+under `sources/history/`, byte-identical and hashed.
+
 ## The claim, as it stands
 
 **The catalogue's promise holds where this practice can test it — 103 of 103 back-references
@@ -236,8 +309,9 @@ twenty-seven days old, that no reader had reported.**
 4. **Not that the eight-item remainder are catalogue errors.** They are candidates for its
    keeper's judgement. At least one is this practice's own defect.
 5. **Not that the seed's stated counts (206, 139) were wrong when written.** The frozen file says
-   208 and 138, but it was fetched after the seed and no upstream history was reachable from here.
-   The difference is drift between a description and a later state; nothing more is supported.
+   208 and 138 — but that is a later upstream commit. The state the seed describes was
+   subsequently located in the upstream history and is asserted in A15: at `6a032edb` the counts
+   are exactly 206 and 139. The difference is drift between a description and a later state.
 6. **Not that the machine-written relevance sentences are false.** None of them was checked
    against the texts. What is measured is where they come from, because the catalogue says so.
 7. **Not a link-health audit of this practice's archive.** The dead DOI surfaced by accident. No
@@ -246,6 +320,18 @@ twenty-seven days old, that no reader had reported.**
    history could not be read — was false, and was caught by a role this practice convened rather
    than by this practice. It is corrected in `SOURCES.md` in place, and the report that caught it
    is published in `SKEPTIC-prebuild.md`.
+9. **Not a causal claim about the repair of the disclosure.** It was restored on the same day this
+   practice delivered its audit. Whether the keeper read the report is unknown and unasked, and
+   the repair's own commit subject points at the rebuild. Nothing here claims credit.
+10. **Not a claim that the 79 newly attributed entries are wrong.** They are the predictable
+   consequence of a text scraper meeting a snapshot. The claim is narrower and harder: nobody has
+   checked them, and only this practice can — the same asymmetry that made this audit worth
+   running, now pointing back at the auditor.
+11. **Not a claim that the catalogue's scout is careless.** This practice built the same
+   discrimination into the other arm of its own sieve (A9) *because* the trap is easy to fall
+   into — and then laid the bait for it. The instrument that failed here is this one.
+12. **Not a fix.** This work does not propose a corrected matching rule and does not claim to know
+   one. It publishes a rule that fails, the evidence that it fails, and the size of the failure.
 
 ## Standing conditions this work would carry if it ships
 
@@ -264,6 +350,12 @@ Stated as offers to any reuser, never as obligations imposed on a sibling practi
   may not be re-served as properties of the pinned state.
 - **The audit's own defect is part of the result, not a footnote to it.** A reuse that reports the
   clean 103/103 without the dead DOI on this practice's own page takes the flattering half.
+- **103/103 may not be re-served without 234/337.** The clean pass and the self-inflicted failure
+  are one result. Any reuse that quotes the first without the second reports the opposite of what
+  was measured, and this is the condition this work would defend hardest.
+- **Do not re-serve this work's matching rule as a validation method.** It is published as a rule
+  that demonstrably cannot tell a citation from a copy. Reuse it as a negative result, or
+  discriminate by file kind before you count.
 
 ## Files
 
@@ -271,10 +363,15 @@ Stated as offers to any reuser, never as obligations imposed on a sibling practi
 |---|---|
 | `scripts/audit.py` | the instrument; **15** offline assertions (A1–A15), `--check` for byte-identity |
 | `scripts/freeze.py` | produces the frozen extract from a raw fetch (what it drops and why) |
-| `sources/papers.frozen.json` | the frozen catalogue extract |
+| `scripts/history.py` | the longitudinal pass; **8** further assertions (H1–H8), `--check` for byte-identity |
+| `scripts/freeze_history.py` | re-derives every frozen state from the public upstream history (the only script needing the network) |
+| `scripts/build_face.py` | builds `data.json` for the published face; refuses to build if the two results files disagree |
+| `work.astro` | the published face: the shutter, the loop, the sieve — every number read from `data.json` |
+| `sources/history/*.json` | the catalogue at each of its five upstream states, same reduction rule |
+| `sources/history/MANIFEST.json` | raw and freeze SHA-256 per state, with commit and time |
+| `results/history.json` | the longitudinal assertions, with their own caveats |
 | `results/audit.json` | the assertions, with caveats carried in the file itself |
 | `SOURCES.md` | provenance, pins, the redaction boundary, and the fenced live probes |
 | `SHA256SUMS.txt` | hashes of the four files above that a reader should be able to reproduce |
 | `METHOD.md` | the decisions taken while building, including the ones that were contested |
 | `SKEPTIC-prebuild.md` | the pre-build Skeptic's report in full, with the dispositions beside it |
-| `sources/papers.seed-state.frozen.json` | the catalogue at the commit the seed itself describes |

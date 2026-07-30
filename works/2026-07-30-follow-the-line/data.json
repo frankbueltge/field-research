@@ -1,0 +1,261 @@
+{
+ "audited_state": "a7879398",
+ "audited_state_lifetime_minutes": 502,
+ "generated_from": {
+  "audit": "results/audit.json",
+  "history": "results/history.json",
+  "note": "Every number on the face comes from these two files. This build fails if they contradict each other about the state they share."
+ },
+ "invariant_holds": true,
+ "late_repository_pin": "f21f275",
+ "loop": {
+  "entries_on_that_evidence": 79,
+  "loose": 337,
+  "loose_into_own_freeze": 234,
+  "missing_file": 0,
+  "pairs": 337,
+  "pairs_into_own_freeze": 234,
+  "strict": 333,
+  "strict_into_own_freeze": 230
+ },
+ "repository_pin": "58d9c4c",
+ "sieve": [
+  {
+   "left": 286,
+   "stage": "identifier-shaped strings in this repository at the pin"
+  },
+  {
+   "left": 279,
+   "stage": "minus 7 failing a decidable shape rule"
+  },
+  {
+   "left": 79,
+   "stage": "minus 200 occurring only inside a vendored third-party corpus"
+  },
+  {
+   "left": 49,
+   "stage": "minus 30 occurring only in test fixtures"
+  },
+  {
+   "left": 8,
+   "stage": "minus 41 the catalogue carries"
+  }
+ ],
+ "states": [
+  {
+   "at": "2026-07-28T00:42:44+02:00",
+   "entries": 117,
+   "files": 0,
+   "labels": {
+    "atelier": 56,
+    "field": 40,
+    "meridian": 51,
+    "studio": 4
+   },
+   "loose": 0,
+   "missing_at_pin": 0,
+   "pairs": 0,
+   "shared": 33,
+   "short": "03067c54",
+   "solo": {
+    "atelier": {
+     "gebrauch": 20,
+     "praxis": 5,
+     "urteil": 0
+    },
+    "field": {
+     "gebrauch": 36,
+     "praxis": 0,
+     "urteil": 0
+    },
+    "meridian": {
+     "gebrauch": 21,
+     "praxis": 0,
+     "urteil": 0
+    },
+    "studio": {
+     "gebrauch": 2,
+     "praxis": 0,
+     "urteil": 0
+    }
+   },
+   "strict": 0,
+   "subject": "feat(papers): Paper-Katalog aus dem, was die Praxen zitieren",
+   "urteil_key": 0,
+   "urteil_pop": 0,
+   "wrong_identifier": 0
+  },
+  {
+   "at": "2026-07-28T01:01:18+02:00",
+   "entries": 206,
+   "files": 24,
+   "labels": {
+    "atelier": 124,
+    "field": 40,
+    "meridian": 139,
+    "studio": 4
+   },
+   "loose": 103,
+   "missing_at_pin": 0,
+   "pairs": 103,
+   "shared": 100,
+   "short": "6a032edb",
+   "solo": {
+    "atelier": {
+     "gebrauch": 19,
+     "praxis": 7,
+     "urteil": 0
+    },
+    "field": {
+     "gebrauch": 36,
+     "praxis": 0,
+     "urteil": 0
+    },
+    "meridian": {
+     "gebrauch": 42,
+     "praxis": 0,
+     "urteil": 0
+    },
+    "studio": {
+     "gebrauch": 2,
+     "praxis": 0,
+     "urteil": 0
+    }
+   },
+   "strict": 103,
+   "subject": "feat(papers): zwei Wege, und jeder Eintrag belegt seine Herkunft",
+   "urteil_key": 0,
+   "urteil_pop": 0,
+   "wrong_identifier": 0
+  },
+  {
+   "at": "2026-07-28T01:41:37+02:00",
+   "entries": 208,
+   "files": 24,
+   "labels": {
+    "atelier": 127,
+    "field": 40,
+    "meridian": 138,
+    "studio": 4
+   },
+   "loose": 103,
+   "missing_at_pin": 0,
+   "pairs": 103,
+   "shared": 100,
+   "short": "a7879398",
+   "solo": {
+    "atelier": {
+     "gebrauch": 13,
+     "praxis": 11,
+     "urteil": 5
+    },
+    "field": {
+     "gebrauch": 22,
+     "praxis": 0,
+     "urteil": 14
+    },
+    "meridian": {
+     "gebrauch": 41,
+     "praxis": 0,
+     "urteil": 0
+    },
+    "studio": {
+     "gebrauch": 2,
+     "praxis": 0,
+     "urteil": 0
+    }
+   },
+   "strict": 103,
+   "subject": "feat(papers): 27 Urteile geschrieben — sichtbar maschinell, weiter toVerify",
+   "urteil_key": 27,
+   "urteil_pop": 27,
+   "wrong_identifier": 0
+  },
+  {
+   "at": "2026-07-28T08:03:19+00:00",
+   "entries": 210,
+   "files": 26,
+   "labels": {
+    "atelier": 128,
+    "field": 119,
+    "meridian": 139,
+    "studio": 4
+   },
+   "loose": 103,
+   "missing_at_pin": 234,
+   "pairs": 337,
+   "shared": 151,
+   "short": "cc9c2cf1",
+   "solo": {
+    "atelier": {
+     "gebrauch": 0,
+     "praxis": 2,
+     "urteil": 0
+    },
+    "field": {
+     "gebrauch": 36,
+     "praxis": 0,
+     "urteil": 0
+    },
+    "meridian": {
+     "gebrauch": 21,
+     "praxis": 0,
+     "urteil": 0
+    },
+    "studio": {
+     "gebrauch": 0,
+     "praxis": 0,
+     "urteil": 0
+    }
+   },
+   "strict": 103,
+   "subject": "katalog-scout: Paper-Katalog 2026-07-28",
+   "urteil_key": 0,
+   "urteil_pop": 0,
+   "wrong_identifier": 0
+  },
+  {
+   "at": "2026-07-28T23:30:14+02:00",
+   "entries": 210,
+   "files": 26,
+   "labels": {
+    "atelier": 128,
+    "field": 119,
+    "meridian": 139,
+    "studio": 4
+   },
+   "loose": 103,
+   "missing_at_pin": 234,
+   "pairs": 337,
+   "shared": 151,
+   "short": "78a609d8",
+   "solo": {
+    "atelier": {
+     "gebrauch": 0,
+     "praxis": 2,
+     "urteil": 0
+    },
+    "field": {
+     "gebrauch": 22,
+     "praxis": 0,
+     "urteil": 14
+    },
+    "meridian": {
+     "gebrauch": 21,
+     "praxis": 0,
+     "urteil": 0
+    },
+    "studio": {
+     "gebrauch": 0,
+     "praxis": 0,
+     "urteil": 0
+    }
+   },
+   "strict": 103,
+   "subject": "fix: Urteilsnachweis wurde nie geschrieben; Saat-Antworten nie synchronisiert",
+   "urteil_key": 210,
+   "urteil_pop": 27,
+   "wrong_identifier": 0
+  }
+ ]
+}

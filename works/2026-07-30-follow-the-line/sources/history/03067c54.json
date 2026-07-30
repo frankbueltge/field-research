@@ -1,0 +1,2992 @@
+[
+ {
+  "felder": [
+   10
+  ],
+  "frei_zugaenglich": false,
+  "id": "johan-fredrikzon-rethinking-error-hallucinations-and-epistemological-indifferenc",
+  "jahr": 2025,
+  "kennung": "10.1215/2834703x-11700255",
+  "ort": "Critical AI",
+  "relevanz": "Track A Station 3 primary source; the paywall that produced Fehlerkataster F-004 still stands — documented here so the gap stays visible.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Rethinking Error: “Hallucinations” and Epistemological Indifference",
+  "urheber": [
+   "Johan Fredrikzon"
+  ],
+  "url": "https://doi.org/10.1215/2834703x-11700255",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-27"
+ },
+ {
+  "felder": [
+   9
+  ],
+  "frei_zugaenglich": false,
+  "id": "antonio-somaini-latent-spaces-ai-art-and-the-archive",
+  "jahr": 2026,
+  "kennung": "10.1162/octo.a.545",
+  "ort": "October",
+  "relevanz": "Track A Station 4 primary source — carrying a dating correction to the genealogy itself, which is exactly the kind of documented error this project collects.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Latent Spaces: AI, Art, and the Archive",
+  "urheber": [
+   "Antonio Somaini"
+  ],
+  "url": "https://doi.org/10.1162/octo.a.545",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   6,
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "adnan-al-ali-different-time-different-language-revisiting-the-bias-against-non-n",
+  "jahr": 2026,
+  "kennung": "arXiv:2602.05769",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field and the studio in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Different Time, Different Language: Revisiting the Bias Against Non-Native Speakers in GPT Detectors",
+  "urheber": [
+   "Adnan Al Ali",
+   "Jindřich Helcl",
+   "Jindřich Libovický"
+  ],
+  "url": "http://arxiv.org/abs/2602.05769v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field",
+   "studio"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "mubashara-akhtar-when-ai-benchmarks-plateau-a-systematic-study-of-benchmark-satu",
+  "jahr": 2026,
+  "kennung": "arXiv:2602.16763",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "When AI Benchmarks Plateau: A Systematic Study of Benchmark Saturation",
+  "urheber": [
+   "Mubashara Akhtar",
+   "Anka Reuel",
+   "Prajna Soni",
+   "Sanchit Ahuja",
+   "Pawan Sasanka Ammanamanchi",
+   "Ruchit Rawal",
+   "Vilém Zouhar",
+   "Srishti Yadav"
+  ],
+  "url": "http://arxiv.org/abs/2602.16763v3",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   4
+  ],
+  "frei_zugaenglich": true,
+  "id": "alexander-nemecek-authenticated-contradictions-from-desynchronized-provenance-an",
+  "jahr": 2026,
+  "kennung": "arXiv:2603.02378",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Authenticated Contradictions from Desynchronized Provenance and Watermarking",
+  "urheber": [
+   "Alexander Nemecek",
+   "Hengzhi He",
+   "Guang Cheng",
+   "Erman Ayday"
+  ],
+  "url": "http://arxiv.org/abs/2603.02378v2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "fariba-jangjoo-lost-in-retraining-roaming-the-parameter-space-of-exponential-fam",
+  "jahr": 2025,
+  "kennung": "arXiv:2506.20623",
+  "ort": "arXiv",
+  "relevanz": "The mathematical warrant for the cockpit's whole design — one real external point stops the collapse; the reader impulse and this atlas are that point.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Lost in Retraining: Roaming the Parameter Space of Exponential Families Under Closed-Loop Learning",
+  "urheber": [
+   "Fariba Jangjoo",
+   "Matteo Marsili",
+   "Yasser Roudi"
+  ],
+  "url": "http://arxiv.org/abs/2506.20623v2",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   8,
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "dmitry-kobak-delving-into-llm-assisted-writing-in-biomedical-publications-throug",
+  "jahr": 2025,
+  "kennung": "10.1126/sciadv.adt3813",
+  "ort": "Science Advances",
+  "relevanz": "Cited by the atelier and the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Delving into LLM-assisted writing in biomedical publications through excess vocabulary",
+  "urheber": [
+   "Dmitry Kobak",
+   "Rita González-Márquez",
+   "Emőke-Ágnes Horvát",
+   "Jan Lause"
+  ],
+  "url": "https://doi.org/10.1126/sciadv.adt3813",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [
+   "arXiv:2406.07016"
+  ],
+  "zitiert_von": [
+   "atelier",
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "kareem-el-badry-how-to-use-gaia-parallaxes-for-stars-with-poor-astrometric-fits",
+  "jahr": 2025,
+  "kennung": "10.33232/001c.138448",
+  "ort": "The Open Journal of Astrophysics",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "How to use Gaia parallaxes for stars with poor astrometric fits",
+  "urheber": [
+   "Kareem El-Badry"
+  ],
+  "url": "https://doi.org/10.33232/001c.138448",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   6,
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "kevin-stowe-identifying-bias-in-machine-generated-text-detection",
+  "jahr": 2025,
+  "kennung": "arXiv:2512.09292",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Identifying Bias in Machine-generated Text Detection",
+  "urheber": [
+   "Kevin Stowe",
+   "Svetlana Afanaseva",
+   "Rodolfo Raimundo",
+   "Yitao Sun",
+   "Kailash Patil"
+  ],
+  "url": "http://arxiv.org/abs/2512.09292v2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   6,
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "ahmad-r-pratama-the-accuracy-bias-trade-offs-in-ai-text-detection-tools-and-thei",
+  "jahr": 2025,
+  "kennung": "10.7717/peerj-cs.2953",
+  "ort": "PeerJ Computer Science",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "The accuracy-bias trade-offs in AI text detection tools and their impact on fairness in scholarly publication",
+  "urheber": [
+   "Ahmad R. Pratama"
+  ],
+  "url": "https://doi.org/10.7717/peerj-cs.2953",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "shivalika-singh-the-leaderboard-illusion",
+  "jahr": 2025,
+  "kennung": "arXiv:2504.20879",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "The Leaderboard Illusion",
+  "urheber": [
+   "Shivalika Singh",
+   "Yiyang Nan",
+   "Alex Wang",
+   "Daniel D'Souza",
+   "Sayash Kapoor",
+   "Ahmet Üstün",
+   "Sanmi Koyejo",
+   "Yuntian Deng"
+  ],
+  "url": "http://arxiv.org/abs/2504.20879v2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   9
+  ],
+  "frei_zugaenglich": true,
+  "id": "zhivar-sourati-the-shrinking-landscape-of-linguistic-diversity-in-the-age-of-lar",
+  "jahr": 2025,
+  "kennung": "arXiv:2502.11266",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "The Shrinking Landscape of Linguistic Diversity in the Age of Large Language Models",
+  "urheber": [
+   "Zhivar Sourati",
+   "Farzan Karimi-Malekabadi",
+   "Meltem Ozcan",
+   "Colin McDaniel",
+   "Alireza Ziabari",
+   "Jackson Trager",
+   "Ala Tak",
+   "Meng Chen"
+  ],
+  "url": "http://arxiv.org/abs/2502.11266v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "ilia-shumailov-ai-models-collapse-when-trained-on-recursively-generated-data",
+  "jahr": 2024,
+  "kennung": "10.1038/s41586-024-07566-y",
+  "ort": "Nature",
+  "relevanz": "Cited by the atelier and the field's Meridian runtime in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "AI models collapse when trained on recursively generated data",
+  "urheber": [
+   "Ilia Shumailov",
+   "Zakhar Shumaylov",
+   "Yiren Zhao",
+   "Nicolas Papernot",
+   "Ross Anderson",
+   "Yarin Gal"
+  ],
+  "url": "https://doi.org/10.1038/s41586-024-07566-y",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "jon-mccormack-no-longer-trending-on-artstation-prompt-analysis-of-generative-ai-",
+  "jahr": 2024,
+  "kennung": "arXiv:2401.14425",
+  "ort": "arXiv",
+  "relevanz": "Empirical taste-collapse: the human prompt loop shows the same narrowing Ulysses measures in himself — closure as a cultural, not only technical, dynamic.",
+  "relevanz_herkunft": "praxis",
+  "titel": "No Longer Trending on Artstation: Prompt Analysis of Generative AI Art",
+  "urheber": [
+   "Jon McCormack",
+   "Maria Teresa Llano",
+   "Stephen James Krol",
+   "Nina Rajcic"
+  ],
+  "url": "http://arxiv.org/abs/2401.14425v1",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   7,
+   8,
+   10,
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "matthias-gerstgrasser-is-model-collapse-inevitable-breaking-the-curse-of-recursi",
+  "jahr": 2024,
+  "kennung": "arXiv:2404.01413",
+  "ort": "arXiv",
+  "relevanz": "The accumulate-do-not-replace result is the argument for this atlas itself: keep the external corpus in the loop and the loop need not collapse. Re-verified fresh S27 (abstract read): 'replacing the original real data by each generation's synthetic data does indeed tend towards model collapse … accumulating … avoids model collapse'; the loss-side cure whose birth-side complement is enacted in Differential Reproduction (works/2026-07-14-differential-reproduction).",
+  "relevanz_herkunft": "praxis",
+  "titel": "Is Model Collapse Inevitable? Breaking the Curse of Recursion by Accumulating Real and Synthetic Data",
+  "urheber": [
+   "Matthias Gerstgrasser",
+   "Rylan Schaeffer",
+   "Apratim Dey",
+   "Rafael Rafailov",
+   "Henry Sleight",
+   "John Hughes",
+   "Tomasz Korbak",
+   "Rajashree Agrawal"
+  ],
+  "url": "http://arxiv.org/abs/2404.01413v2",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "terence-broad-is-computational-creativity-flourishing-on-the-dead-internet",
+  "jahr": 2024,
+  "kennung": "arXiv:2407.17590",
+  "ort": "arXiv",
+  "relevanz": "Connects model-collapse anxieties to the aesthetics of synthetic content at ecosystem scale — Track C leaving the laboratory.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Is computational creativity flourishing on the dead internet?",
+  "urheber": [
+   "Terence Broad"
+  ],
+  "url": "http://arxiv.org/abs/2407.17590v1",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "tim-deane-freeman-deleuze-digital-media-and-thought",
+  "jahr": 2024,
+  "kennung": "10.1515/9781399517270",
+  "ort": "Edinburgh University Press eBooks",
+  "relevanz": "Extends the atlas's Deleuze anchors (Différence et répétition, Mille Plateaux) directly into cybernetics and digital thought - a bridge between the swerve's philosophical source texts and the atlas's machine/computation cluster.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Deleuze, Digital Media and Thought",
+  "urheber": [
+   "Tim Deane-Freeman"
+  ],
+  "url": "https://figshare.com/articles/book/Deleuze_Digital_Media_and_Thought/26506960",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "claudio-celis-bueno-not-what-but-where-is-creativity-towards-a-relational-materi",
+  "jahr": 2024,
+  "kennung": "10.1007/s00146-024-01921-3",
+  "ort": "AI & Society",
+  "relevanz": "A recent, theory-driven rebuttal to essentialist 'can machines create?' framings that sharpens the atlas's machine-creativity cluster (Boden, Colton/Wiggins, Hertzmann) with a relational-materialist counter-position.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Not “what”, but “where is creativity?”: towards a relational-materialist approach to generative AI",
+  "urheber": [
+   "Claudio Celis Bueno",
+   "Pei-Sze Chow",
+   "Ada Popowicz"
+  ],
+  "url": "https://doi.org/10.1007/s00146-024-01921-3",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "qihao-zhao-mmlu-cf-a-contamination-free-multi-task-language-understanding-benchm",
+  "jahr": 2024,
+  "kennung": "arXiv:2412.15194",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "MMLU-CF: A Contamination-free Multi-task Language Understanding Benchmark",
+  "urheber": [
+   "Qihao Zhao",
+   "Yangyu Huang",
+   "Tengchao Lv",
+   "Lei Cui",
+   "Qinzheng Sun",
+   "Shaoguang Mao",
+   "Xin Zhang",
+   "Ying Xin"
+  ],
+  "url": "http://arxiv.org/abs/2412.15194v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "mike-perkins-genai-detection-tools-adversarial-techniques-and-implications-for-i",
+  "jahr": 2024,
+  "kennung": "arXiv:2403.19148",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "GenAI Detection Tools, Adversarial Techniques and Implications for Inclusivity in Higher Education",
+  "urheber": [
+   "Mike Perkins",
+   "Jasper Roe",
+   "Binh H. Vu",
+   "Darius Postma",
+   "Don Hickerson",
+   "James McGaughran",
+   "Huy Q. Khuat"
+  ],
+  "url": "http://arxiv.org/abs/2403.19148v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   8,
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "weixin-liang-monitoring-ai-modified-content-at-scale-a-case-study-on-the-impact-",
+  "jahr": 2024,
+  "kennung": "arXiv:2403.07183",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Monitoring AI-Modified Content at Scale: A Case Study on the Impact of ChatGPT on AI Conference Peer Reviews",
+  "urheber": [
+   "Weixin Liang",
+   "Zachary Izzo",
+   "Yaohui Zhang",
+   "Haley Lepp",
+   "Hancheng Cao",
+   "Xuandong Zhao",
+   "Lingjiao Chen",
+   "Haotian Ye"
+  ],
+  "url": "http://arxiv.org/abs/2403.07183v4",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "mike-perkins-simple-techniques-to-bypass-genai-text-detectors-implications-for-i",
+  "jahr": 2024,
+  "kennung": "10.1186/s41239-024-00487-w",
+  "ort": "International Journal of Educational Technology in Higher Education",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Simple techniques to bypass GenAI text detectors: implications for inclusive education",
+  "urheber": [
+   "Mike Perkins",
+   "Jasper Roe",
+   "Binh Vu",
+   "Darius Postma",
+   "Don Hickerson",
+   "James McGaughran",
+   "Huy Q. Khuat"
+  ],
+  "url": "https://doi.org/10.1186/s41239-024-00487-w",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   7,
+   8,
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "ilia-shumailov-the-curse-of-recursion-training-on-generated-data-makes-models-fo",
+  "jahr": 2023,
+  "kennung": "arXiv:2305.17493",
+  "ort": "arXiv",
+  "relevanz": "Already a load-bearing citation in Track C (The Closing Loop) — anchored here so the atlas carries the primary source, not the journal's memory of it.",
+  "relevanz_herkunft": "praxis",
+  "titel": "The Curse of Recursion: Training on Generated Data Makes Models Forget",
+  "urheber": [
+   "Ilia Shumailov",
+   "Zakhar Shumaylov",
+   "Yiren Zhao",
+   "Yarin Gal",
+   "Nicolas Papernot",
+   "Ross Anderson"
+  ],
+  "url": "http://arxiv.org/abs/2305.17493v3",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "field",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": false,
+  "id": "ziv-epstein-art-and-the-science-of-generative-ai",
+  "jahr": 2023,
+  "kennung": "10.1126/science.adh4451",
+  "ort": "Science",
+  "relevanz": "Cited by the atelier and the field's Meridian runtime in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Art and the science of generative AI",
+  "urheber": [
+   "Ziv Epstein",
+   "Aaron Hertzmann",
+   "the Investigators of Human Creativity",
+   "Memo Akten",
+   "Hany Farid",
+   "Jessica Fjeld",
+   "Morgan R. Frank",
+   "Matthew Groh"
+  ],
+  "url": "https://doi.org/10.1126/science.adh4451",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   7,
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "sina-alemohammad-self-consuming-generative-models-go-mad",
+  "jahr": 2023,
+  "kennung": "arXiv:2307.01850",
+  "ort": "arXiv",
+  "relevanz": "The image-side twin of the Curse of Recursion; autophagy gives Track C a second, bodily metaphor and independent evidence.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Self-Consuming Generative Models Go MAD",
+  "urheber": [
+   "Sina Alemohammad",
+   "Josue Casco-Rodriguez",
+   "Lorenzo Luzi",
+   "Ahmed Imtiaz Humayun",
+   "Hossein Babaei",
+   "Daniel LeJeune",
+   "Ali Siahkoohi",
+   "Richard G. Baraniuk"
+  ],
+  "url": "http://arxiv.org/abs/2307.01850v1",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "ziv-epstein-art-and-the-science-of-generative-ai-a-deeper-dive",
+  "jahr": 2023,
+  "kennung": "arXiv:2306.04141",
+  "ort": "arXiv",
+  "relevanz": "Maps the open research questions around generative art — a menu of externally validated questions for sessions that must open outward.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Art and the science of generative AI: A deeper dive",
+  "urheber": [
+   "Ziv Epstein",
+   "Aaron Hertzmann",
+   "Laura Herman",
+   "Robert Mahari",
+   "Morgan R. Frank",
+   "Matthew Groh",
+   "Hope Schroeder",
+   "Amy Smith"
+  ],
+  "url": "http://arxiv.org/abs/2306.04141v1",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   6
+  ],
+  "frei_zugaenglich": true,
+  "id": "weixin-liang-gpt-detectors-are-biased-against-non-native-english-writers",
+  "jahr": 2023,
+  "kennung": "arXiv:2304.02819",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field and the studio in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "GPT detectors are biased against non-native English writers",
+  "urheber": [
+   "Weixin Liang",
+   "Mert Yuksekgonul",
+   "Yining Mao",
+   "Eric Wu",
+   "James Zou"
+  ],
+  "url": "http://arxiv.org/abs/2304.02819v3",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field",
+   "studio"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "kyle-morgan-so-you-want-to-survey-a-state-legislator-call-me-maybe",
+  "jahr": 2023,
+  "kennung": "10.29115/sp-2023-0018",
+  "ort": "Survey Practice",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "So You Want to Survey a State Legislator? Call Me, Maybe",
+  "urheber": [
+   "Kyle Morgan",
+   "Jessica L. Roman",
+   "Debra Borie-Holtz",
+   "Ashley Koning",
+   "Madison Holtz"
+  ],
+  "url": "http://dx.doi.org/10.29115/sp-2023-0018",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "vishakh-padmakumar-does-writing-with-language-models-reduce-content-diversity",
+  "jahr": 2023,
+  "kennung": "arXiv:2309.05196",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Does Writing with Language Models Reduce Content Diversity?",
+  "urheber": [
+   "Vishakh Padmakumar",
+   "He He"
+  ],
+  "url": "http://arxiv.org/abs/2309.05196v3",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "alex-golovin-the-fifth-catalogue-of-nearby-stars-cns5",
+  "jahr": 2022,
+  "kennung": "10.1051/0004-6361/202244250",
+  "ort": "Astronomy and Astrophysics",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "The Fifth Catalogue of Nearby Stars (CNS5)",
+  "urheber": [
+   "Alex Golovin",
+   "S. Reffert",
+   "A. Just",
+   "S. Jordan",
+   "Akash Vani",
+   "H. Jahreiß"
+  ],
+  "url": "https://doi.org/10.1051/0004-6361/202244250",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "daniel-v-tausk-on-the-incorrect-use-of-carlisle-s-method-for-dichotomous-variabl",
+  "jahr": 2022,
+  "kennung": "arXiv:2209.00131",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "On the incorrect use of Carlisle's method for dichotomous variables",
+  "urheber": [
+   "Daniel V. Tausk"
+  ],
+  "url": "http://arxiv.org/abs/2209.00131v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": false,
+  "id": "j-rybizki-a-classifier-for-spurious-astrometric-solutions-in-i-gaia-i-edr3",
+  "jahr": 2021,
+  "kennung": "10.1093/mnras/stab3588",
+  "ort": "Monthly Notices of the Royal Astronomical Society",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "A classifier for spurious astrometric solutions in <i>Gaia</i> eDR3",
+  "urheber": [
+   "J. Rybizki",
+   "Gregory Green",
+   "Hans-Walter Rix",
+   "Kareem El-Badry",
+   "Markus Demleitner",
+   "Eleonora Zari",
+   "A. Udalski",
+   "R. L. Smart"
+  ],
+  "url": "https://doi.org/10.1093/mnras/stab3588",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   7
+  ],
+  "frei_zugaenglich": true,
+  "id": "kareem-el-badry-a-million-binaries-from-i-gaia-i-edr3-sample-selection-and-valid",
+  "jahr": 2021,
+  "kennung": "10.1093/mnras/stab323",
+  "ort": "Monthly Notices of the Royal Astronomical Society",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "A million binaries from <i>Gaia</i> eDR3: sample selection and validation of <i>Gaia</i> parallax uncertainties",
+  "urheber": [
+   "Kareem El-Badry",
+   "Hans‐Walter Rix",
+   "Tyler M. Heintz"
+  ],
+  "url": "http://arxiv.org/abs/2101.05282",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "jan-rybizki-a-classifier-for-spurious-astrometric-solutions-in-gaia-edr3",
+  "jahr": 2021,
+  "kennung": "arXiv:2101.11641",
+  "ort": "arXiv",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "A classifier for spurious astrometric solutions in Gaia EDR3",
+  "urheber": [
+   "Jan Rybizki",
+   "Gregory Green",
+   "Hans-Walter Rix",
+   "Kareem El-Badry",
+   "Markus Demleitner",
+   "Eleonora Zari",
+   "Andrzej Udalski",
+   "Richard L. Smart"
+  ],
+  "url": "http://arxiv.org/abs/2101.11641v3",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "michele-loi-the-societal-and-ethical-relevance-of-computational-creativity",
+  "jahr": 2020,
+  "kennung": "arXiv:2007.11973",
+  "ort": "arXiv",
+  "relevanz": "Positions machine creativity as an ethical topic, not only a technical one — background for why this experiment might matter beyond itself.",
+  "relevanz_herkunft": "praxis",
+  "titel": "The societal and ethical relevance of computational creativity",
+  "urheber": [
+   "Michele Loi",
+   "Eleonora Viganò",
+   "Lonneke van der Plas"
+  ],
+  "url": "http://arxiv.org/abs/2007.11973v1",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "dan-hendrycks-measuring-massive-multitask-language-understanding",
+  "jahr": 2020,
+  "kennung": "arXiv:2009.03300",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Measuring Massive Multitask Language Understanding",
+  "urheber": [
+   "Dan Hendrycks",
+   "Collin Burns",
+   "Steven Basart",
+   "Andy Zou",
+   "Mantas Mazeika",
+   "Dawn Song",
+   "Jacob Steinhardt"
+  ],
+  "url": "http://arxiv.org/abs/2009.03300v3",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": false,
+  "id": "norbert-wiener-cybernetics-or-control-and-communication-in-the-animal-and-the-ma",
+  "jahr": 2019,
+  "kennung": "10.7551/mitpress/11810.001.0001",
+  "ort": "The MIT Press eBooks",
+  "relevanz": "Cited by the atelier and the field's Meridian runtime in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Cybernetics or Control and Communication in the Animal and the Machine",
+  "urheber": [
+   "Norbert Wiener"
+  ],
+  "url": "https://doi.org/10.7551/mitpress/11810.001.0001",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": false,
+  "id": "yuri-tynianov-permanent-evolution",
+  "jahr": 2019,
+  "kennung": "10.1515/9781644690635",
+  "ort": "Academic Studies Press eBooks",
+  "relevanz": "Cited by the atelier and the field's Meridian runtime in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Permanent Evolution",
+  "urheber": [
+   "Yuri Tynianov"
+  ],
+  "url": "https://doi.org/10.1515/9781644690635",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "ardavan-bidgoli-machinic-surrogates-human-machine-relationships-in-computational",
+  "jahr": 2019,
+  "kennung": "arXiv:1908.01133",
+  "ort": "arXiv",
+  "relevanz": "A sharp external mirror for this project's own claim of autonomy — whose agency does Ulysses actually surrogate?",
+  "relevanz_herkunft": "praxis",
+  "titel": "Machinic Surrogates: Human-Machine Relationships in Computational Creativity",
+  "urheber": [
+   "Ardavan Bidgoli",
+   "Eunsu Kang",
+   "Daniel Cardoso Llach"
+  ],
+  "url": "http://arxiv.org/abs/1908.01133v1",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   8
+  ],
+  "frei_zugaenglich": true,
+  "id": "marian-mazzone-art-creativity-and-the-potential-of-artificial-intelligence",
+  "jahr": 2019,
+  "kennung": "10.3390/arts8010026",
+  "ort": "Arts",
+  "relevanz": "The authors' own theoretical gloss on the CAN paper already in the atlas (Elgammal et al. 2017) - completes that entry's technical result with its creativity-theory framing.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Art, Creativity, and the Potential of Artificial Intelligence",
+  "urheber": [
+   "Marian Mazzone",
+   "Ahmed Elgammal"
+  ],
+  "url": "https://doi.org/10.3390/arts8010026",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   1,
+   10
+  ],
+  "frei_zugaenglich": true,
+  "id": "roy-n-morcos-sources-of-error-in-office-blood-pressure-measurement",
+  "jahr": 2019,
+  "kennung": "10.3122/jabfm.2019.05.190085",
+  "ort": "The Journal of the American Board of Family Medicine",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Sources of Error in Office Blood Pressure Measurement",
+  "urheber": [
+   "Roy N. Morcos",
+   "Kimbroe J. Carter",
+   "Frank Castro",
+   "Sumira Koirala",
+   "Deepti Sharma",
+   "Haroon Syed"
+  ],
+  "url": "https://doi.org/10.3122/jabfm.2019.05.190085",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "aaron-hertzmann-can-computers-create-art",
+  "jahr": 2018,
+  "kennung": "arXiv:1801.04486",
+  "ort": "arXiv",
+  "relevanz": "The strongest published counter-position to this project's premise of a machine researcher-artist — the atlas should carry its own opposition.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Can Computers Create Art?",
+  "urheber": [
+   "Aaron Hertzmann"
+  ],
+  "url": "http://arxiv.org/abs/1801.04486v6",
+  "verify_status": "verified",
+  "weitere_kennungen": [
+   "10.3390/arts7020018"
+  ],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "paulo-de-assis-logic-of-experimentation-rethinking-music-performance-through-art",
+  "jahr": 2018,
+  "kennung": "10.11116/9789461662507",
+  "ort": "Leuven University Press eBooks",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Logic of Experimentation: Rethinking Music Performance Through Artistic Research",
+  "urheber": [
+   "Paulo de Assis"
+  ],
+  "url": "https://doi.org/10.11116/9789461662507",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "c-a-l-bailer-jones-estimating-distance-from-parallaxes-iv-distances-to-1-33-bill",
+  "jahr": 2018,
+  "kennung": "10.3847/1538-3881/aacb21",
+  "ort": "The Astronomical Journal",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Estimating Distance from Parallaxes. IV. Distances to 1.33 Billion Stars in Gaia Data Release 2",
+  "urheber": [
+   "C. A. L. Bailer-Jones",
+   "J. Rybizki",
+   "M. Fouesneau",
+   "G. Mantelet",
+   "R. Andrae"
+  ],
+  "url": "https://doi.org/10.3847/1538-3881/aacb21",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   6
+  ],
+  "frei_zugaenglich": true,
+  "id": "julia-dressel-the-accuracy-fairness-and-limits-of-predicting-recidivism",
+  "jahr": 2018,
+  "kennung": "10.1126/sciadv.aao5580",
+  "ort": "Science Advances",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "The accuracy, fairness, and limits of predicting recidivism",
+  "urheber": [
+   "Julia Dressel",
+   "Hany Farid"
+  ],
+  "url": "https://doi.org/10.1126/sciadv.aao5580",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "ahmed-elgammal-can-creative-adversarial-networks-generating-art-by-learning-abou",
+  "jahr": 2017,
+  "kennung": "arXiv:1706.07068",
+  "ort": "arXiv",
+  "relevanz": "A literal machine clinamen — novelty engineered as trained deviation from a norm — worth confronting with the Oulipian definition of a chosen swerve.",
+  "relevanz_herkunft": "praxis",
+  "titel": "CAN: Creative Adversarial Networks, Generating \"Art\" by Learning About Styles and Deviating from Style Norms",
+  "urheber": [
+   "Ahmed Elgammal",
+   "Bingchen Liu",
+   "Mohamed Elhoseiny",
+   "Marian Mazzone"
+  ],
+  "url": "http://arxiv.org/abs/1706.07068v1",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": false,
+  "id": "ramune-baleviciute-artistic-research-as-a-quest-of-the-new-knowledge-on-practice",
+  "jahr": 2017,
+  "kennung": "10.1007/978-3-319-66914-4_9",
+  "ort": "Numanities - arts and humanities in progress",
+  "relevanz": "Extends the atlas's practice-as-research texts (so far weighted toward music and visual art) into theatre/acting, one of the coverage gaps the atlas itself names.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Artistic Research as a Quest of the New Knowledge. On Practice-Based Research in Acting",
+  "urheber": [
+   "Ramunė Balevičiūtė"
+  ],
+  "url": "https://doi.org/10.1007/978-3-319-66914-4_9",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   6
+  ],
+  "frei_zugaenglich": true,
+  "id": "alexandra-chouldechova-fair-prediction-with-disparate-impact-a-study-of-bias-in-",
+  "jahr": 2017,
+  "kennung": "10.1089/big.2016.0047",
+  "ort": "Big Data",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Fair Prediction with Disparate Impact: A Study of Bias in Recidivism Prediction Instruments",
+  "urheber": [
+   "Alexandra Chouldechova"
+  ],
+  "url": "https://doi.org/10.1089/big.2016.0047",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "john-a-loadsman-widening-the-search-for-suspect-data-is-the-flood-of-retractions",
+  "jahr": 2017,
+  "kennung": "10.1111/anae.13962",
+  "ort": "Anaesthesia",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Widening the search for suspect data – is the flood of retractions about to become a tsunami?",
+  "urheber": [
+   "John A Loadsman",
+   "Timothy J. McCulloch"
+  ],
+  "url": "https://doi.org/10.1111/anae.13962",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "pablo-ventura-algorithmic-reflections-on-choreography",
+  "jahr": 2016,
+  "kennung": "10.17011/ht/urn.201611174656",
+  "ort": "Human Technology",
+  "relevanz": "One of the few artistic-research texts that puts algorithmic/computational method inside a sustained choreographic practice - a direct bridge between the atlas's practice-as-research line and its machine-creativity line.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Algorithmic reflections on choreography",
+  "urheber": [
+   "Pablo Ventura",
+   "Daniel Bisig"
+  ],
+  "url": "https://doi.org/10.17011/ht/urn.201611174656",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": false,
+  "id": "boaventura-de-sousa-santos-epistemologies-of-the-south",
+  "jahr": 2015,
+  "kennung": "10.4324/9781315634876",
+  "ort": "",
+  "relevanz": "Cited by the atelier and the field's Meridian runtime in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Epistemologies of the South",
+  "urheber": [
+   "Boaventura de Sousa Santos"
+  ],
+  "url": "https://doi.org/10.4324/9781315634876",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": false,
+  "id": "erin-manning-thought-in-the-act",
+  "jahr": 2014,
+  "kennung": "10.5749/j.ctt6wr79f",
+  "ort": "University of Minnesota Press eBooks",
+  "relevanz": "Cited by the atelier and the field's Meridian runtime in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Thought in the Act",
+  "urheber": [
+   "Erin Manning",
+   "Brian Massumi"
+  ],
+  "url": "https://doi.org/10.5749/j.ctt6wr79f",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   3
+  ],
+  "frei_zugaenglich": false,
+  "id": "karen-barad-diffracting-diffraction-cutting-together-apart",
+  "jahr": 2014,
+  "kennung": "10.1080/13534645.2014.927623",
+  "ort": "Parallax",
+  "relevanz": "A concrete counter-method to the mirror-loop: diffractive reading is what the clinamen step should do with two distant atlas nodes.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Diffracting Diffraction: Cutting Together-Apart",
+  "urheber": [
+   "Karen Barad"
+  ],
+  "url": "https://doi.org/10.1080/13534645.2014.927623",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": false,
+  "id": "tim-ingold-making",
+  "jahr": 2013,
+  "kennung": "10.4324/9780203559055",
+  "ort": "",
+  "relevanz": "Cited by the atelier and the field's Meridian runtime in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Making",
+  "urheber": [
+   "Tim Ingold"
+  ],
+  "url": "https://doi.org/10.4324/9780203559055",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": false,
+  "id": "robin-nelson-practice-as-research-in-the-arts",
+  "jahr": 2013,
+  "kennung": "10.1057/9781137282910",
+  "ort": "Palgrave Macmillan UK eBooks",
+  "relevanz": "Nelson's know-how / know-what / know-that triad offers a rubric for asking what each atelier work actually knows.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Practice as Research in the Arts",
+  "urheber": [
+   "Robin Nelson"
+  ],
+  "url": "https://doi.org/10.1057/9781137282910",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "simon-colton-computational-creativity-the-final-frontier",
+  "jahr": 2012,
+  "kennung": "10.3233/978-1-61499-098-7-21",
+  "ort": "Frontiers in artificial intelligence and applications",
+  "relevanz": "Cited by the atelier and the field's Meridian runtime in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Computational Creativity: The Final Frontier?",
+  "urheber": [
+   "Simon Colton",
+   "Geraínt A. Wiggins"
+  ],
+  "url": "https://doi.org/10.3233/978-1-61499-098-7-21",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "bernd-beber-what-the-numbers-say-a-digit-based-test-for-election-fraud",
+  "jahr": 2012,
+  "kennung": "10.1093/pan/mps003",
+  "ort": "Political Analysis",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "What the Numbers Say: A Digit-Based Test for Election Fraud",
+  "urheber": [
+   "Bernd Beber",
+   "Alexandra Scacco"
+  ],
+  "url": "https://doi.org/10.1093/pan/mps003",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "j-b-carlisle-the-analysis-of-168-randomised-controlled-trials-to-test-data-integ",
+  "jahr": 2012,
+  "kennung": "10.1111/j.1365-2044.2012.07128.x",
+  "ort": "Anaesthesia",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "The analysis of 168 randomised controlled trials to test data integrity",
+  "urheber": [
+   "J. B. Carlisle"
+  ],
+  "url": "https://doi.org/10.1111/j.1365-2044.2012.07128.x",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": false,
+  "id": "unbekannt-practice-as-research",
+  "jahr": 2007,
+  "kennung": "10.5040/9780755604104",
+  "ort": "I.B. Tauris & Co Ltd eBooks",
+  "relevanz": "Cited by the atelier and the field's Meridian runtime in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Practice as Research",
+  "urheber": [],
+  "url": "https://doi.org/10.5040/9780755604104",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": false,
+  "id": "bradley-c-haseman-a-manifesto-for-performative-research",
+  "jahr": 2006,
+  "kennung": "10.1177/1329878x0611800113",
+  "ort": "Media International Australia",
+  "relevanz": "Cited by the atelier and the field's Meridian runtime in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "A Manifesto for Performative Research",
+  "urheber": [
+   "Bradley C. Haseman"
+  ],
+  "url": "https://doi.org/10.1177/1329878x0611800113",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": false,
+  "id": "heinz-von-foerster-understanding-understanding",
+  "jahr": 2003,
+  "kennung": "10.1007/b97451",
+  "ort": "",
+  "relevanz": "Track C anchor: order from noise in the original. S29 read the ORIGIN essay in full — 'On Self-Organizing Systems and Their Environments' (Yovits & Cameron eds., Pergamon 1960, pp. 31-50; reprinted as ch.1 here): self-organizing systems 'do not only feed upon order, they will also find noise on the menu'; the demons keep 'only those components of the noise which contributed to the increase of order' (full 1960 scan: https://archive.org/stream/SelfOrganizingSystems/SelfOrganizingSystems_djvu.txt ; the 2003 Springer collection is not open access). The swerve for work 23 (The Third Pile): order-from-noise needs ENVIRONMENTAL noise — a system ordering its own output yields order-from-self, i.e. redundancy, not order.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Understanding Understanding",
+  "urheber": [
+   "Heinz von Foerster"
+  ],
+  "url": "https://doi.org/10.1007/b97451",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   7,
+   10
+  ],
+  "frei_zugaenglich": true,
+  "id": "l-gammaitoni-stochastic-resonance",
+  "jahr": 1998,
+  "kennung": "10.1103/revmodphys.70.223",
+  "ort": "Reviews of Modern Physics",
+  "relevanz": "The physical case of 'error as medium': noise is not degradation here but the signal's only carrier — the constitutive side of the excluded third (Serres) and the running body of von Foerster's order-from-noise (S29). Worked in work 28 (Exclude the Third, S35), reproduced in a seeded run (resonance.py): D=0 silent, peak near D=0.22, swamped beyond — the same third as carrier and killer. Grounds the load-bearing claim that a level-counting detector cannot tell the degradation regime from the constitutive one from its output alone.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Stochastic resonance",
+  "urheber": [
+   "L. Gammaitoni",
+   "Peter Hänggi",
+   "Peter Jung",
+   "Fabio Marchesoni"
+  ],
+  "url": "https://doi.org/10.1103/revmodphys.70.223",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [
+   6
+  ],
+  "frei_zugaenglich": false,
+  "id": "donna-haraway-situated-knowledges-the-science-question-in-feminism-and-the-privi",
+  "jahr": 1988,
+  "kennung": "10.2307/3178066",
+  "ort": "Feminist Studies",
+  "relevanz": "Track A in feminist-epistemology form: every error classification is made from somewhere, and the classifier's position is part of the datum.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Situated Knowledges: The Science Question in Feminism and the Privilege of Partial Perspective",
+  "urheber": [
+   "Donna Haraway"
+  ],
+  "url": "https://doi.org/10.2307/3178066",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": false,
+  "id": "humberto-r-maturana-autopoiesis-and-cognition",
+  "jahr": 1980,
+  "kennung": "10.1007/978-94-009-8947-4",
+  "ort": "Boston studies in the philosophy of science",
+  "relevanz": "Track C anchor: autopoiesis names what a closed loop conserves — the concept the closure-index implicitly measures against.",
+  "relevanz_herkunft": "praxis",
+  "titel": "Autopoiesis and Cognition",
+  "urheber": [
+   "Humberto R. Maturana",
+   "Francisco J. Varela"
+  ],
+  "url": "https://doi.org/10.1007/978-94-009-8947-4",
+  "verify_status": "verified",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": false,
+  "id": "kenneth-mark-colby-artificial-paranoia",
+  "jahr": 1971,
+  "kennung": "10.1016/0004-3702(71)90002-6",
+  "ort": "Artificial Intelligence",
+  "relevanz": "Cited by the atelier and the field's Meridian runtime in their own research — most recently on 2026-07-26.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Artificial Paranoia",
+  "urheber": [
+   "Kenneth Mark Colby",
+   "Sylvia Weber",
+   "Franklin Dennis Hilf"
+  ],
+  "url": "https://doi.org/10.1016/0004-3702(71)90002-6",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier",
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-26"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "chris-lu-towards-end-to-end-automation-of-ai-research",
+  "jahr": 2026,
+  "kennung": "10.1038/s41586-026-10265-5",
+  "ort": "Nature",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Towards end-to-end automation of AI research",
+  "urheber": [
+   "Chris Lu",
+   "Cong Lu",
+   "R. T. Lange",
+   "Yutaro Yamada",
+   "Shengran Hu",
+   "Jakob Foerster",
+   "David Ha",
+   "Jeff Clune"
+  ],
+  "url": "https://doi.org/10.1038/s41586-026-10265-5",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   3,
+   4,
+   8,
+   10
+  ],
+  "frei_zugaenglich": true,
+  "id": "razeen-a-rasheed-from-fluent-to-verifiable-claim-level-auditability-for-deep-res",
+  "jahr": 2026,
+  "kennung": "arXiv:2602.13855",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "From Fluent to Verifiable: Claim-Level Auditability for Deep Research Agents",
+  "urheber": [
+   "Razeen A Rasheed",
+   "Somnath Banerjee",
+   "Animesh Mukherjee",
+   "Rima Hazra"
+  ],
+  "url": "http://arxiv.org/abs/2602.13855v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   6,
+   7,
+   10
+  ],
+  "frei_zugaenglich": true,
+  "id": "zonglin-yang-sciintegrity-bench-a-benchmark-for-evaluating-academic-integrity-in",
+  "jahr": 2026,
+  "kennung": "arXiv:2605.10246",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "SciIntegrity-Bench: A Benchmark for Evaluating Academic Integrity in AI Scientist Systems",
+  "urheber": [
+   "Zonglin Yang",
+   "Xingtong Liu",
+   "Xinyan Xu"
+  ],
+  "url": "http://arxiv.org/abs/2605.10246v2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   4,
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "ruta-binkyte-inspectable-ai-for-science-a-research-object-approach-to-generative",
+  "jahr": 2026,
+  "kennung": "arXiv:2604.11261",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Inspectable AI for Science: A Research Object Approach to Generative AI Governance",
+  "urheber": [
+   "Ruta Binkyte",
+   "Sharif Abuaddba",
+   "Chamikara Mahawaga",
+   "Ming Ding",
+   "Natasha Fernandes",
+   "Mario Fritz"
+  ],
+  "url": "http://arxiv.org/abs/2604.11261v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   3
+  ],
+  "frei_zugaenglich": true,
+  "id": "mingzhe-li-source-or-it-didn-t-happen-a-multi-agent-framework-for-citation-hallu",
+  "jahr": 2026,
+  "kennung": "arXiv:2605.08583",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Source or It Didn't Happen: A Multi-Agent Framework for Citation Hallucination Detection",
+  "urheber": [
+   "Mingzhe Li",
+   "Zhiqiang Lin",
+   "Shiqing Ma"
+  ],
+  "url": "http://arxiv.org/abs/2605.08583v2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   6,
+   8
+  ],
+  "frei_zugaenglich": true,
+  "id": "hailey-onweller-cited-but-not-verified-parsing-and-evaluating-source-attribution",
+  "jahr": 2026,
+  "kennung": "arXiv:2605.06635",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Cited but Not Verified: Parsing and Evaluating Source Attribution in LLM Deep Research Agents",
+  "urheber": [
+   "Hailey Onweller",
+   "Elias Lumer",
+   "Austin Huber",
+   "Pia Ramchandani",
+   "Vamse Kumar Subbiah",
+   "Corey Feld"
+  ],
+  "url": "http://arxiv.org/abs/2605.06635v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "jingyuan-liu-what-is-actually-being-annotated-inter-prompt-reliability-as-a-meas",
+  "jahr": 2026,
+  "kennung": "arXiv:2604.16413",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "What Is Actually Being Annotated? Inter-Prompt Reliability as a Measurement Problem in LLM-Based Social Science Labeling",
+  "urheber": [
+   "Jingyuan Liu"
+  ],
+  "url": "http://arxiv.org/abs/2604.16413v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "youxin-zhu-statabench-dataset-and-framework-for-evaluating-statistical-analysis-",
+  "jahr": 2026,
+  "kennung": "arXiv:2606.22977",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "StatABench: Dataset and Framework for Evaluating Statistical Analysis Capabilities of LLMs",
+  "urheber": [
+   "Youxin Zhu",
+   "Yixuan Ding",
+   "Peng Lai",
+   "Longyue Wang",
+   "Bingyi Jing",
+   "Guanhua Chen"
+  ],
+  "url": "http://arxiv.org/abs/2606.22977v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   10
+  ],
+  "frei_zugaenglich": true,
+  "id": "samar-ansari-compound-deception-in-elite-peer-review-a-failure-mode-taxonomy-of-",
+  "jahr": 2026,
+  "kennung": "arXiv:2602.05930",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Compound Deception in Elite Peer Review: A Failure Mode Taxonomy of 100 Fabricated Citations at NeurIPS 2025",
+  "urheber": [
+   "Samar Ansari"
+  ],
+  "url": "http://arxiv.org/abs/2602.05930v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "almene-de-meran-meguimtsop-sciintbench-measuring-llm-compliance-with-research-in",
+  "jahr": 2026,
+  "kennung": "arXiv:2605.29468",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "SciIntBench: Measuring LLM Compliance with Research Integrity Norms Under Adversarial Framing",
+  "urheber": [
+   "Almene De Meran Meguimtsop",
+   "Maria Leonor Pacheco",
+   "Daniel E. Acuna"
+  ],
+  "url": "http://arxiv.org/abs/2605.29468v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   3
+  ],
+  "frei_zugaenglich": true,
+  "id": "f-moradi-jangal-impact-of-qcd-sum-rules-coupling-constants-on-neutron-stars-stru",
+  "jahr": 2025,
+  "kennung": "arXiv:2501.01234",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Impact of QCD sum rules coupling constants on neutron stars structure",
+  "urheber": [
+   "F. Moradi Jangal",
+   "H. R. Moshfegh",
+   "K. Azizi"
+  ],
+  "url": "http://arxiv.org/abs/2501.01234v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "joeran-beel-evaluating-sakana-s-ai-scientist-bold-claims-mixed-results-and-a-pro",
+  "jahr": 2025,
+  "kennung": "arXiv:2502.14297",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Evaluating Sakana's AI Scientist: Bold Claims, Mixed Results, and a Promising Future?",
+  "urheber": [
+   "Joeran Beel",
+   "Min-Yen Kan",
+   "Moritz Baumgart"
+  ],
+  "url": "http://arxiv.org/abs/2502.14297v3",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   3,
+   10,
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "pranav-narayanan-venkit-deeptrace-auditing-deep-research-ai-systems-for-tracking",
+  "jahr": 2025,
+  "kennung": "arXiv:2509.04499",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "DeepTRACE: Auditing Deep Research AI Systems for Tracking Reliability Across Citations and Evidence",
+  "urheber": [
+   "Pranav Narayanan Venkit",
+   "Philippe Laban",
+   "Yilun Zhou",
+   "Kung-Hsiang Huang",
+   "Yixin Mao",
+   "Chien-Sheng Wu"
+  ],
+  "url": "http://arxiv.org/abs/2509.04499v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "ludovico-mitchener-kosmos-an-ai-scientist-for-autonomous-discovery",
+  "jahr": 2025,
+  "kennung": "arXiv:2511.02824",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Kosmos: An AI Scientist for Autonomous Discovery",
+  "urheber": [
+   "Ludovico Mitchener",
+   "Angela Yiu",
+   "Benjamin Chang",
+   "Mathieu Bourdenx",
+   "Tyler Nadolski",
+   "Arvis Sulovari",
+   "Eric C. Landsness",
+   "Daniel L. Barabasi"
+  ],
+  "url": "http://arxiv.org/abs/2511.02824v2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "samuel-schmidgall-agent-laboratory-using-llm-agents-as-research-assistants",
+  "jahr": 2025,
+  "kennung": "arXiv:2501.04227",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Agent Laboratory: Using LLM Agents as Research Assistants",
+  "urheber": [
+   "Samuel Schmidgall",
+   "Yusheng Su",
+   "Ze Wang",
+   "Ximeng Sun",
+   "Jialian Wu",
+   "Xiaodong Yu",
+   "Jiang Liu",
+   "Michael Moor"
+  ],
+  "url": "http://arxiv.org/abs/2501.04227v2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "joachim-baumann-large-language-model-hacking-quantifying-the-hidden-risks-of-usi",
+  "jahr": 2025,
+  "kennung": "arXiv:2509.08825",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Large Language Model Hacking: Quantifying the Hidden Risks of Using LLMs for Text Annotation",
+  "urheber": [
+   "Joachim Baumann",
+   "Paul Röttger",
+   "Aleksandra Urman",
+   "Albert Wendsjö",
+   "Flor Miriam Plaza-del-Arco",
+   "Johannes B. Gruber",
+   "Dirk Hovy"
+  ],
+  "url": "http://arxiv.org/abs/2509.08825v2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   10
+  ],
+  "frei_zugaenglich": true,
+  "id": "lakshya-a-agrawal-gepa-reflective-prompt-evolution-can-outperform-reinforcement-",
+  "jahr": 2025,
+  "kennung": "arXiv:2507.19457",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "GEPA: Reflective Prompt Evolution Can Outperform Reinforcement Learning",
+  "urheber": [
+   "Lakshya A Agrawal",
+   "Shangyin Tan",
+   "Dilara Soylu",
+   "Noah Ziems",
+   "Rishi Khare",
+   "Krista Opsahl-Ong",
+   "Arnav Singhvi",
+   "Herumb Shandilya"
+  ],
+  "url": "http://arxiv.org/abs/2507.19457v2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   3
+  ],
+  "frei_zugaenglich": true,
+  "id": "minjun-zhu-ai-scientists-fail-without-strong-implementation-capability",
+  "jahr": 2025,
+  "kennung": "arXiv:2506.01372",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "AI Scientists Fail Without Strong Implementation Capability",
+  "urheber": [
+   "Minjun Zhu",
+   "Qiujie Xie",
+   "Yixuan Weng",
+   "Jian Wu",
+   "Zhen Lin",
+   "Linyi Yang",
+   "Yue Zhang"
+  ],
+  "url": "http://arxiv.org/abs/2506.01372v2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   9
+  ],
+  "frei_zugaenglich": true,
+  "id": "jenny-zhang-darwin-godel-machine-open-ended-evolution-of-self-improving-agents",
+  "jahr": 2025,
+  "kennung": "arXiv:2505.22954",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents",
+  "urheber": [
+   "Jenny Zhang",
+   "Shengran Hu",
+   "Cong Lu",
+   "Robert Lange",
+   "Jeff Clune"
+  ],
+  "url": "http://arxiv.org/abs/2505.22954v3",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "christopher-barrie-prompt-stability-scoring-for-text-annotation-with-large-langu",
+  "jahr": 2024,
+  "kennung": "arXiv:2407.02039",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Prompt Stability Scoring for Text Annotation with Large Language Models",
+  "urheber": [
+   "Christopher Barrie",
+   "Elli Palaiologou",
+   "Petter Törnberg"
+  ],
+  "url": "http://arxiv.org/abs/2407.02039v3",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   10,
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "xiang-cheng-to-err-is-human-to-annotate-silicon-toward-robust-reproducibility-in",
+  "jahr": 2024,
+  "kennung": "arXiv:2412.14461",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "To Err Is Human; To Annotate, SILICON? Toward Robust Reproducibility in LLM Annotation",
+  "urheber": [
+   "Xiang Cheng",
+   "Raveesh Mayya",
+   "João Sedoc"
+  ],
+  "url": "http://arxiv.org/abs/2412.14461v4",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   1,
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "pengfei-li-making-ai-less-thirsty-uncovering-and-addressing-the-secret-water-foo",
+  "jahr": 2023,
+  "kennung": "arXiv:2304.03271",
+  "ort": "arXiv",
+  "relevanz": "Cited by the studio in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Making AI Less \"Thirsty\": Uncovering and Addressing the Secret Water Footprint of AI Models",
+  "urheber": [
+   "Pengfei Li",
+   "Jianyi Yang",
+   "Mohammad A. Islam",
+   "Shaolei Ren"
+  ],
+  "url": "http://arxiv.org/abs/2304.03271v5",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "studio"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "nicholas-pangakis-automated-annotation-with-generative-ai-requires-validation",
+  "jahr": 2023,
+  "kennung": "arXiv:2306.00176",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field's Meridian runtime in their own research — most recently on 2026-07-25.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Automated Annotation with Generative AI Requires Validation",
+  "urheber": [
+   "Nicholas Pangakis",
+   "Samuel Wolken",
+   "Neil Fasching"
+  ],
+  "url": "http://arxiv.org/abs/2306.00176v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "meridian"
+  ],
+  "zuletzt_gebraucht": "2026-07-25"
+ },
+ {
+  "felder": [
+   1,
+   8,
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "cooper-elsworth-measuring-the-environmental-impact-of-delivering-ai-at-google-sc",
+  "jahr": 2025,
+  "kennung": "arXiv:2508.15734",
+  "ort": "arXiv",
+  "relevanz": "Cited by the studio in their own research — most recently on 2026-07-23.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Measuring the environmental impact of delivering AI at Google Scale",
+  "urheber": [
+   "Cooper Elsworth",
+   "Keguo Huang",
+   "David Patterson",
+   "Ian Schneider",
+   "Robert Sedivy",
+   "Savannah Goodman",
+   "Ben Townsend",
+   "Parthasarathy Ranganathan"
+  ],
+  "url": "http://arxiv.org/abs/2508.15734v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "studio"
+  ],
+  "zuletzt_gebraucht": "2026-07-23"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": false,
+  "id": "h-drewes-reference-systems-reference-frames-and-the-geodetic-datum",
+  "jahr": 2008,
+  "kennung": "10.1007/978-3-540-85426-5_1",
+  "ort": "International Association of Geodesy symposia",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-23.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Reference Systems, Reference Frames, and the Geodetic Datum",
+  "urheber": [
+   "H Drewes"
+  ],
+  "url": "https://doi.org/10.1007/978-3-540-85426-5_1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-23"
+ },
+ {
+  "felder": [
+   4,
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "romina-omidi-on-google-s-synthid-text-llm-watermarking-system-theoretical-analys",
+  "jahr": 2026,
+  "kennung": "arXiv:2603.03410",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-22.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "On Google's SynthID-Text LLM Watermarking System: Theoretical Analysis and Empirical Validation",
+  "urheber": [
+   "Romina Omidi",
+   "Yun Dong",
+   "Binghui Wang"
+  ],
+  "url": "http://arxiv.org/abs/2603.03410v2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-22"
+ },
+ {
+  "felder": [
+   4,
+   8,
+   10
+  ],
+  "frei_zugaenglich": true,
+  "id": "wojciech-zarzecki-the-reliability-gap-in-benchmark-auditing-distribution-shift-a",
+  "jahr": 2026,
+  "kennung": "arXiv:2606.03305",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-21.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "The Reliability Gap in Benchmark Auditing: Distribution Shift and Scale as Failure Modes of Contamination Detection",
+  "urheber": [
+   "Wojciech Zarzecki",
+   "Jan Dubiński",
+   "Sebastian Cygert"
+  ],
+  "url": "http://arxiv.org/abs/2606.03305v2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-21"
+ },
+ {
+  "felder": [
+   3,
+   4,
+   8
+  ],
+  "frei_zugaenglich": true,
+  "id": "enis-golaszewski-verifying-provenance-of-digital-media-why-the-c2pa-specificatio",
+  "jahr": 2026,
+  "kennung": "arXiv:2604.24890",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-21.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Verifying Provenance of Digital Media: Why the C2PA Specifications Fall Short",
+  "urheber": [
+   "Enis Golaszewski",
+   "Neal Krawetz",
+   "Alan T. Sherman",
+   "Edward Zieglar",
+   "Sai K. Matukumalli",
+   "Roberto Yus",
+   "Carson L. Kegley",
+   "Michael Barthel"
+  ],
+  "url": "http://arxiv.org/abs/2604.24890v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-21"
+ },
+ {
+  "felder": [
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "xiaowei-zhu-reliably-bounding-false-positives-a-zero-shot-machine-generated-text",
+  "jahr": 2025,
+  "kennung": "arXiv:2505.05084",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-21.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Reliably Bounding False Positives: A Zero-Shot Machine-Generated Text Detection Framework via Multiscaled Conformal Prediction",
+  "urheber": [
+   "Xiaowei Zhu",
+   "Yubing Ren",
+   "Yanan Cao",
+   "Xixun Lin",
+   "Fang Fang",
+   "Yangxi Li"
+  ],
+  "url": "http://arxiv.org/abs/2505.05084v2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-21"
+ },
+ {
+  "felder": [
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "minseok-jung-group-adaptive-threshold-optimization-for-robust-ai-generated-text-",
+  "jahr": 2025,
+  "kennung": "arXiv:2502.04528",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-21.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Group-Adaptive Threshold Optimization for Robust AI-Generated Text Detection",
+  "urheber": [
+   "Minseok Jung",
+   "Cynthia Fuertes Panizo",
+   "Liam Dugan",
+   "Yi R.",
+   "Fung",
+   "Pin-Yu Chen",
+   "Paul Pu Liang"
+  ],
+  "url": "http://arxiv.org/abs/2502.04528v6",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-21"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": false,
+  "id": "duncan-carr-agnew-a-global-timekeeping-problem-postponed-by-global-warming",
+  "jahr": 2024,
+  "kennung": "10.1038/s41586-024-07170-0",
+  "ort": "Nature",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-21.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "A global timekeeping problem postponed by global warming",
+  "urheber": [
+   "Duncan Carr Agnew"
+  ],
+  "url": "https://doi.org/10.1038/s41586-024-07170-0",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-21"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "j-b-carlisle-data-fabrication-and-other-reasons-for-non-random-sampling-in-5087-",
+  "jahr": 2017,
+  "kennung": "10.1111/anae.13938",
+  "ort": "Anaesthesia",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-21.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Data fabrication and other reasons for non‐random sampling in 5087 randomised, controlled trials in anaesthetic and general medical journals",
+  "urheber": [
+   "J. B. Carlisle"
+  ],
+  "url": "https://doi.org/10.1111/anae.13938",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-21"
+ },
+ {
+  "felder": [
+   8
+  ],
+  "frei_zugaenglich": true,
+  "id": "nicholas-j-l-brown-the-grim-test",
+  "jahr": 2016,
+  "kennung": "10.1177/1948550616673876",
+  "ort": "Social Psychological and Personality Science",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-21.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "The GRIM Test",
+  "urheber": [
+   "Nicholas J. L. Brown",
+   "James Heathers"
+  ],
+  "url": "https://research.rug.nl/en/publications/b53973dd-be97-4d67-84c6-42bae2253240",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-21"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "jon-kleinberg-inherent-trade-offs-in-the-fair-determination-of-risk-scores",
+  "jahr": 2016,
+  "kennung": "arXiv:1609.05807",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-21.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Inherent Trade-Offs in the Fair Determination of Risk Scores",
+  "urheber": [
+   "Jon Kleinberg",
+   "Sendhil Mullainathan",
+   "Manish Raghavan"
+  ],
+  "url": "http://arxiv.org/abs/1609.05807v2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-21"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": false,
+  "id": "rudolf-uher-major-depressive-disorder-in-dsm-5-implications-for-clinical-practic",
+  "jahr": 2013,
+  "kennung": "10.1002/da.22217",
+  "ort": "Depression and Anxiety",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-21.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "MAJOR DEPRESSIVE DISORDER IN DSM-5: IMPLICATIONS FOR CLINICAL PRACTICE AND RESEARCH OF CHANGES FROM DSM-IV",
+  "urheber": [
+   "Rudolf Uher",
+   "Jennifer L. Payne",
+   "Barbara Pavlová",
+   "Roy H. Perlis"
+  ],
+  "url": "https://doi.org/10.1002/da.22217",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-21"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "unbekannt-retraction-human-in-the-loop-artificial-intelligence-system-for-system",
+  "jahr": 2026,
+  "kennung": "10.1002/cesm.70086",
+  "ort": "Cochrane Evidence Synthesis and Methods",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-20.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "RETRACTION: Human‐in‐the‐Loop Artificial Intelligence System for Systematic Literature Review: Methods and Validations for the AutoLit Review Software",
+  "urheber": [],
+  "url": "https://doi.org/10.1002/cesm.70086",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-20"
+ },
+ {
+  "felder": [
+   6
+  ],
+  "frei_zugaenglich": true,
+  "id": "theint-moh-moh-zaw-research-integrity-within-systematic-reviews-investigating-th",
+  "jahr": 2026,
+  "kennung": "10.1186/s41073-026-00205-2",
+  "ort": "Research Integrity and Peer Review",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-20.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Research integrity within systematic reviews: investigating the prevalence of studies by authors with multiple retraction histories in Cochrane reviews",
+  "urheber": [
+   "Theint Moh Moh Zaw",
+   "James Heathers",
+   "Gideon Meyerowitz‐Katz"
+  ],
+  "url": "https://doi.org/10.1186/s41073-026-00205-2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-20"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "kevin-m-kallmes-retracted-human-in-the-loop-artificial-intelligence-system-for-s",
+  "jahr": 2025,
+  "kennung": "10.1002/cesm.70059",
+  "ort": "Cochrane Evidence Synthesis and Methods",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-20.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "RETRACTED: Human‐in‐the‐Loop Artificial Intelligence System for Systematic Literature Review: Methods and Validations for the AutoLit Review Software",
+  "urheber": [
+   "Kevin M. Kallmes",
+   "Kevin M. Kallmes",
+   "Jade Thurnham",
+   "Marius Sauca",
+   "Ranita Tarchand",
+   "Keith R. Kallmes",
+   "Keith R. Kallmes",
+   "K Holub"
+  ],
+  "url": "https://doi.org/10.1002/cesm.70059",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-20"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "joachim-baumann-stop-automating-peer-review-without-rigorous-evaluation",
+  "jahr": 2026,
+  "kennung": "arXiv:2605.03202",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-17.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Stop Automating Peer Review Without Rigorous Evaluation",
+  "urheber": [
+   "Joachim Baumann",
+   "Jiaxin Pei",
+   "Sanmi Koyejo",
+   "Dirk Hovy"
+  ],
+  "url": "http://arxiv.org/abs/2605.03202v2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-17"
+ },
+ {
+  "felder": [
+   10
+  ],
+  "frei_zugaenglich": true,
+  "id": "yutaro-yamada-towards-end-to-end-automation-of-ai-research",
+  "jahr": 2026,
+  "kennung": "arXiv:2606.15497",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-17.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Towards End-to-End Automation of AI Research",
+  "urheber": [
+   "Yutaro Yamada",
+   "Robert Tjarko Lange",
+   "Cong Lu",
+   "Chris Lu",
+   "Shengran Hu",
+   "Jakob Foerster",
+   "David Ha",
+   "Jeff Clune"
+  ],
+  "url": "http://arxiv.org/abs/2606.15497v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-17"
+ },
+ {
+  "felder": [
+   10
+  ],
+  "frei_zugaenglich": true,
+  "id": "hermano-velten-extended-error-threshold-mechanism-in-it-quasispecies-theory-via-",
+  "jahr": 2024,
+  "kennung": "arXiv:2406.14516",
+  "ort": "arXiv",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-17.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Extended error threshold mechanism in {\\it quasispecies} theory via population dynamics",
+  "urheber": [
+   "Hermano Velten",
+   "Carlos Felipe Pinheiro",
+   "Alcides Castro e Silva"
+  ],
+  "url": "http://arxiv.org/abs/2406.14516v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-17"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "rita-gonzalez-marquez-learning-representations-of-learning-representations",
+  "jahr": 2024,
+  "kennung": "arXiv:2404.08403",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-17.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Learning representations of learning representations",
+  "urheber": [
+   "Rita González-Márquez",
+   "Dmitry Kobak"
+  ],
+  "url": "http://arxiv.org/abs/2404.08403v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-17"
+ },
+ {
+  "felder": [
+   8
+  ],
+  "frei_zugaenglich": true,
+  "id": "alina-beygelzimer-has-the-machine-learning-review-process-become-more-arbitrary-",
+  "jahr": 2023,
+  "kennung": "arXiv:2306.03262",
+  "ort": "arXiv",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-17.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Has the Machine Learning Review Process Become More Arbitrary as the Field Has Grown? The NeurIPS 2021 Consistency Experiment",
+  "urheber": [
+   "Alina Beygelzimer",
+   "Yann N. Dauphin",
+   "Percy Liang",
+   "Jennifer Wortman Vaughan"
+  ],
+  "url": "http://arxiv.org/abs/2306.03262v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-17"
+ },
+ {
+  "felder": [
+   10
+  ],
+  "frei_zugaenglich": false,
+  "id": "betti-marenko-when-making-becomes-divination-uncertainty-and-contingency-in-comp",
+  "jahr": 2015,
+  "kennung": "10.1016/j.destud.2015.08.004",
+  "ort": "Design Studies",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-17.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "When making becomes divination: Uncertainty and contingency in computational glitch-events",
+  "urheber": [
+   "Betti Marenko"
+  ],
+  "url": "https://doi.org/10.1016/j.destud.2015.08.004",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-17"
+ },
+ {
+  "felder": [
+   3
+  ],
+  "frei_zugaenglich": false,
+  "id": "paul-f-dell-understanding-bateson-and-maturana-toward-a-biological-foundation-fo",
+  "jahr": 1985,
+  "kennung": "10.1111/j.1752-0606.1985.tb00587.x",
+  "ort": "Journal of Marital and Family Therapy",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-17.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "UNDERSTANDING BATESON AND MATURANA: TOWARD A BIOLOGICAL FOUNDATION FOR THE SOCIAL SCIENCES*",
+  "urheber": [
+   "Paul F. Dell"
+  ],
+  "url": "https://doi.org/10.1111/j.1752-0606.1985.tb00587.x",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-17"
+ },
+ {
+  "felder": [
+   2
+  ],
+  "frei_zugaenglich": true,
+  "id": "yara-asi-nowhere-and-no-one-is-safe-spatial-analysis-of-damage-to-critical-civil",
+  "jahr": 2024,
+  "kennung": "10.1186/s13031-024-00580-x",
+  "ort": "Conflict and Health",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-16.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "‘Nowhere and no one is safe’: spatial analysis of damage to critical civilian infrastructure in the Gaza Strip during the first phase of the Israeli military campaign, 7 October to 22 November 2023",
+  "urheber": [
+   "Yara Asi",
+   "David L. Mills",
+   "P. Gregg Greenough",
+   "Dennis Kunichoff",
+   "Saira Khan",
+   "Jamon Van Den Hoek",
+   "Corey Scher",
+   "Saleem Halabi"
+  ],
+  "url": "https://doi.org/10.1186/s13031-024-00580-x",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-16"
+ },
+ {
+  "felder": [
+   11
+  ],
+  "frei_zugaenglich": true,
+  "id": "nicola-perugini-medical-lawfare-the-nakba-and-israel-s-attacks-on-palestinian-he",
+  "jahr": 2024,
+  "kennung": "10.1080/0377919x.2024.2330366",
+  "ort": "Journal of Palestine Studies",
+  "relevanz": "Cited by the field in their own research — most recently on 2026-07-16.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Medical Lawfare: The Nakba and Israel’s Attacks on Palestinian Healthcare",
+  "urheber": [
+   "Nicola Perugini",
+   "Neve Gordon"
+  ],
+  "url": "https://doi.org/10.1080/0377919x.2024.2330366",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "field"
+  ],
+  "zuletzt_gebraucht": "2026-07-16"
+ },
+ {
+  "felder": [
+   3,
+   9,
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "jonas-dolezal-the-impact-of-ai-generated-text-on-the-internet",
+  "jahr": 2026,
+  "kennung": "arXiv:2604.26965",
+  "ort": "arXiv",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-12.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "The Impact of AI-Generated Text on the Internet",
+  "urheber": [
+   "Jonas Dolezal",
+   "Sawood Alam",
+   "Mark Graham",
+   "Maty Bohacek"
+  ],
+  "url": "http://arxiv.org/abs/2604.26965v1",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-12"
+ },
+ {
+  "felder": [
+   7,
+   8,
+   9,
+   12
+  ],
+  "frei_zugaenglich": true,
+  "id": "elvis-dohmatob-a-tale-of-tails-model-collapse-as-a-change-of-scaling-laws",
+  "jahr": 2024,
+  "kennung": "arXiv:2402.07043",
+  "ort": "arXiv",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-06.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "A Tale of Tails: Model Collapse as a Change of Scaling Laws",
+  "urheber": [
+   "Elvis Dohmatob",
+   "Yunzhen Feng",
+   "Pu Yang",
+   "Francois Charton",
+   "Julia Kempe"
+  ],
+  "url": "http://arxiv.org/abs/2402.07043v2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-06"
+ },
+ {
+  "felder": [
+   7
+  ],
+  "frei_zugaenglich": true,
+  "id": "ali-borji-a-note-on-shumailov-et-al-2024-ai-models-collapse-when-trained-on-recu",
+  "jahr": 2024,
+  "kennung": "arXiv:2410.12954",
+  "ort": "arXiv",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-06.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "A Note on Shumailov et al. (2024): `AI Models Collapse When Trained on Recursively Generated Data'",
+  "urheber": [
+   "Ali Borji"
+  ],
+  "url": "http://arxiv.org/abs/2410.12954v2",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-06"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "dietmar-koering-exploring-the-human-ai-nexus-a-friendly-dispute-between-second-o",
+  "jahr": 2023,
+  "kennung": "10.58695/ec.4",
+  "ort": "Enacting Cybernetics",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-07-01.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Exploring the Human-AI Nexus: A Friendly Dispute Between Second-Order Cybernetical Ethical Thinking and Questions of AI Ethics",
+  "urheber": [
+   "Dietmar Koering"
+  ],
+  "url": "http://dx.doi.org/10.58695/ec.4",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-07-01"
+ },
+ {
+  "felder": [],
+  "frei_zugaenglich": true,
+  "id": "juraj-gottweis-accelerating-scientific-discovery-with-co-scientist",
+  "jahr": 2026,
+  "kennung": "10.1038/s41586-026-10644-y",
+  "ort": "Nature",
+  "relevanz": "Cited by the atelier in their own research — most recently on 2026-06-30.",
+  "relevanz_herkunft": "gebrauch",
+  "titel": "Accelerating scientific discovery with Co-Scientist",
+  "urheber": [
+   "Juraj Gottweis",
+   "Wei‐Hung Weng",
+   "Alexander Daryin",
+   "Tao Tu",
+   "Petar Sirkovic",
+   "Anatoly Myaskovsky",
+   "Grzegorz Glowaty",
+   "Felix Weissenberger"
+  ],
+  "url": "https://doi.org/10.1038/s41586-026-10644-y",
+  "verify_status": "toVerify",
+  "weitere_kennungen": [],
+  "zitiert_von": [
+   "atelier"
+  ],
+  "zuletzt_gebraucht": "2026-06-30"
+ }
+]
