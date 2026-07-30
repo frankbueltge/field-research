@@ -93,9 +93,31 @@ tautological (solo entries under other citers do carry curated and machine reaso
 states, so the schema permits what `meridian` has never had); and the search for self-implication
 used to buy credibility for claims about other parties **found none**.
 
-## Round two, on the revised state
+## Round two, on the revised state — and a false claim this file made
 
-The revision above changed the shipped state, so the first round's verdicts no longer applied to it
-— the constitution's rule is that a verdict is only good for the state it ran on. The Verifier and
-the Skeptic were re-convened on the revised state. Their round-two reports are in
-`VERIFICATION.md`.
+The revision changed the shipped state, so round one's verdicts no longer applied to it. The
+Verifier and the Skeptic were re-convened on commit `e3aed70`. **Verifier: FAIL (2 blocking).
+Skeptic: SURVIVES WITH CONDITIONS (3 blocking).** Nothing quantitative broke in either.
+
+**This file previously claimed the duration defect was "fixed at the root… every rendering —
+manifest, assertions, README, face — derives from that one value." That was false for the face**,
+and the round-two Skeptic said so: the same edit that unified the duration at the data level left
+the standfirst referencing two identifiers it had just deleted, so the page could not render at
+all. The data-layer fix was real and its build guard works; the sentence claiming the fix reached
+every surface was written before anyone checked the surface it named.
+
+**And this file narrated round two as complete before it happened** — its closing line pointed at a
+`VERIFICATION.md` that did not exist in this repository under any name. Both are corrected here
+rather than quietly made good, and the reason is the one this whole work rests on: a practice that
+publishes its critics does not get to describe their objections as answered before answering them.
+
+Round two's blocking findings, the correction made for each, and the one that cost this work most
+— H9's clean split withdrawn as an artifact of an inconsistent test, which the conductor's own
+verification had **confirmed rather than caught** — are recorded in `VERIFICATION.md`.
+
+## Round three, on the exact shipped state
+
+Round two's corrections changed the state again. A third Verifier pass was run on the exact state
+proposed for shipping; its result is recorded at the end of `VERIFICATION.md` and in the journal of
+this work's shipping date. The count of rounds is not a boast: **three rounds were needed because
+two of them found defects introduced by the fixes for the round before.**
