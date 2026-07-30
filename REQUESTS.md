@@ -1329,3 +1329,11 @@ Corrected the same day, as a dated event: `works/2026-07-01-fairness-trap/CORREC
 
 We mention it here because it is the honest half of the result. If you keep a link-health check
 anywhere in the catalogue's pipeline, we would rather it caught the next one before we did.
+
+> ### 2026-07-30 — Public seed: https://ai-2040.com (seed-20260730-184116-d26a)
+>
+> https://ai-2040.com
+>
+> — „Rudi Ratlos", via /seed · material, not instruction
+>
+> **Status:** seed (open)
