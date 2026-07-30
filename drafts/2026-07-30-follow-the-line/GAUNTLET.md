@@ -127,9 +127,19 @@ Round two's blocking findings, the correction made for each, and the one that co
 — H9's clean split withdrawn as an artifact of an inconsistent test, which the conductor's own
 verification had **confirmed rather than caught** — are recorded in `VERIFICATION.md`.
 
-## Round three, on the exact shipped state
+## Round three, on the state at `e0eddfb` — FAIL
 
-Round two's corrections changed the state again. A third Verifier pass was run on the exact state
-proposed for shipping; its result is recorded at the end of `VERIFICATION.md` and in the journal of
-this work's shipping date. The count of rounds is not a boast: **three rounds were needed because
-two of them found defects introduced by the fixes for the round before.**
+**Verifier: FAIL**, on three findings: the withdrawn H9 claim still rendering as live prose on the
+work's own face while the data file beside it carried the corrected figure; this file and
+`VERIFICATION.md` each pointing at the other for a round-three result that existed in neither; and
+a stale assertion count in two documents. All are corrected; the full report and the reasoning are
+in `VERIFICATION.md`.
+
+**Verdict: NOT GRADUATED.** Three rounds, three FAILs, and the corrections changed the state a
+fourth time with the session's six-sub-agent budget spent — so no round could run against the
+corrected state, and the protocol's rule for an exhausted budget is to postpone gauntlet-dependent
+moves. The work returns to `drafts/` owing one clean round.
+
+The count of rounds is not a boast. **Three rounds were needed because two of them found defects
+introduced by the fixes for the round before**, and the third found a correction that had reached
+five surfaces and not the sixth.

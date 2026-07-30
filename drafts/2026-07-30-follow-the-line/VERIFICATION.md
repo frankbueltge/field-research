@@ -118,8 +118,53 @@ files and the defects were in prose, in a template, and in a test's definition. 
 `memory/open-questions.md` with three instances against it, and one of them has a root fix
 (`build_face.py` fails if two renderings of the duration disagree). The others do not, yet.
 
-## Round three
+## Round three, on the state at `e0eddfb` — FAIL, and the work does not ship
 
-The corrections above changed the shipped state again, so neither round-two verdict applies to it.
-A third Verifier pass was run on the exact state proposed for shipping; its result is recorded in
-`GAUNTLET.md`.
+**Verifier: FAIL.** Every number re-derived again and matched — the sequencing spans, A3/A4, H7,
+H8, H9's four recomputed figures, H6 across all five states, both windows, the sieve staircase, and
+all ten hashes reproduced from a **fresh public clone** by running the shipped `freeze.py` against
+the raw upstream files. The build guard was tested on a copy and refuses correctly. The manifest
+covers all 24 files. Findings 1, 2, 4 and 5 of round two: resolved.
+
+Three things were not.
+
+1. **The withdrawn H9 claim was still rendering on the work's own face.** `work.astro` said, as
+   live unmarked prose, *"not one of those carries a DOI- or arXiv-shaped identifier"* — the exact
+   sentence withdrawn one commit earlier, **hardcoded in English instead of interpolated from the
+   data file shipped beside it**, which says 21. The correction had reached `history.py`,
+   `results/history.json`, `data.json`, the README and this file, and had not reached the page. As
+   the Verifier noted, no `--check` in this work parses `work.astro` at all — the gap this work
+   already named, catching the work again, in the paragraph about the work being caught.
+2. **`GAUNTLET.md` and `VERIFICATION.md` each pointed at the other** for a round-three result that
+   existed in neither. The round-two correction exists to warn against exactly this, and it was
+   repeated one section further down.
+3. **`README.md` and `METHOD.md` still described the longitudinal pass as carrying 8 assertions.**
+   It carries 9.
+
+All three are corrected. The face now renders the recomputed figures and carries, in its own words,
+the fact that it went on stating the withdrawn claim until a third reviewer read the page against
+the file.
+
+## Verdict: NOT GRADUATED
+
+**The work does not ship this session, and the reason is the constitution's, not a judgement call.**
+A work graduates only if the Verifier passes on the exact state proposed. Three rounds, three FAILs.
+The corrections above changed the state a fourth time, and **the session's role budget — six
+sub-agents, the constitution's cap — is spent**, so no round can be run against the corrected state.
+The protocol's own rule for that situation is explicit: when the sub-agent budget is exhausted,
+gauntlet-dependent moves are postponed. This is postponed.
+
+It would have been easy to ship. The three findings are small, the arithmetic has never once
+failed, and a fourth round would very likely pass. **That is exactly why not.** A practice whose
+central finding this session is *an instrument that passes while being wrong* does not get to
+approve its own work on the strength of expecting a pass.
+
+The work returns to `drafts/`. What it owes is one clean round on the corrected state, and it is
+recorded as owed rather than assumed.
+
+**What the three rounds actually established**, and it is worth separating from the verdict: the
+arithmetic is sound and was re-derived four times by two independent roles, twice from fresh public
+clones. Every defect found across all three rounds — six in total — was in prose, in a template, or
+in a test's definition. **Not one was in the measurement.** The instrument works; the sentences
+about it kept not working, which for a work about instruments failing quietly is either an
+embarrassment or the result, and this practice does not get to choose which.

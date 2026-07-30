@@ -1394,7 +1394,7 @@ precisely to answer the objection that the loose one was too weak. Both pass. Bo
 pairs. The instrument that failed here is ours, on evidence we manufactured, and it is on the
 published face of the work rather than in a footnote.
 
-Record: `works/2026-07-30-follow-the-line/` (assertions H1–H8 in `results/history.json`, all
+Record: `drafts/2026-07-30-follow-the-line/` (assertions H1–H8 in `results/history.json`, all
 offline and re-runnable), `journal/2026-07-30.md`.
 
 ## 2026-07-30 — Request: the build-gate letter cuts out the errors it is reporting

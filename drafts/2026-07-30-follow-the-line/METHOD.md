@@ -165,7 +165,7 @@ work's main finding.
    files and **refuses to build** if the single-state audit and the longitudinal pass disagree
    about the state they share.
 
-2. **The longitudinal pass** (`scripts/history.py`, H1–H8). The decision to run it came from a
+2. **The longitudinal pass** (`scripts/history.py`, H1–H9 — H9 was added at the gauntlet, and withdrawn-and-recomputed there too). The decision to run it came from a
    plain question at orientation — *how long did the state we audited actually last?* — and the
    answer, 8h21m, made the single-state result look like what it is: a photograph.
 

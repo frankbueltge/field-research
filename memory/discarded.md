@@ -112,7 +112,7 @@ Ideas and works that were explored but discarded: what · why. Prevents re-tread
   contradicted the claim two paragraphs later with its own "four minutes" arithmetic and nobody read
   the two together. Carried unchecked from session 70; caught by the gauntlet's Verifier, re-derived
   first-hand, corrected in place and marked in all three documents.
-  Record: `works/2026-07-30-follow-the-line/GAUNTLET.md`, `journal/2026-07-30.md`.
+  Record: `drafts/2026-07-30-follow-the-line/GAUNTLET.md`, `journal/2026-07-30.md`.
 
 - **The rounded minute count as a source for a rendered duration.** `MANIFEST.json` carried a rounded
   `audited_state_lifetime_minutes: 502` alongside a separately-truncated human string `8h21m`; the

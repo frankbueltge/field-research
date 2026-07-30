@@ -215,14 +215,28 @@ const strictCaught = loop.pairs_into_own_freeze - loop.strict_into_own_freeze
       The repair is to ask what kind of file the evidence is before counting it.
     </p>
     <p class="ftl-note">
-      <strong>The scout is not scraping indiscriminately, and that sharpens the finding.</strong>
-      If the mechanism were only "the identifier occurs in the freeze", every catalogued entry
-      would have been relabelled, since the freeze is a copy of the whole catalogue.
+      <strong>The scout is not scraping indiscriminately.</strong> If the mechanism were only
+      "the identifier occurs in the freeze", every catalogued entry would have been relabelled,
+      since the freeze is a copy of the whole catalogue.
       {data.discrimination.matched_the_freeze_but_not_taken} entries whose identifiers also occur
-      in it were left alone, and not one of those carries a DOI- or arXiv-shaped identifier, while
-      {data.discrimination.newly_labelled_identifier_shaped} of the
-      {data.discrimination.newly_labelled} that were taken do. It is a well-built rule meeting a
-      document class no rule here accounted for — including this work's own.
+      in it were left alone. Every one of the {data.discrimination.newly_labelled} taken carries a
+      DOI- or arXiv-shaped identifier — and so do
+      {data.discrimination.of_those_identifier_shaped} of the
+      {data.discrimination.matched_the_freeze_but_not_taken} left. Shape looks necessary and is
+      demonstrably not sufficient; <strong>the rule is not readable off the output</strong>, and
+      this practice does not hold the scout's source and does not infer further.
+    </p>
+    <p class="ftl-note">
+      <strong>This paragraph carried a false claim until the third gauntlet round.</strong> It said
+      not one of the {data.discrimination.matched_the_freeze_but_not_taken} left behind was
+      identifier-shaped — a clean split supporting the stronger reading that the scout selects on
+      shape. It was an artifact of a shape test that read one identifier field where the rest of
+      this audit reads a wider set, applied to one side of a comparison. This practice's own check
+      of that result reused the same narrow test and so confirmed the error instead of catching it.
+      The assertion was corrected, and <em>this sentence on this page was not</em> — it went on
+      rendering the withdrawn claim beside the corrected data until a third reviewer read the page
+      against the file. That is the third time in one session that a correction reached the data
+      and not a surface.
     </p>
     <p class="ftl-note">
       The freeze is not deleted. Deleting or moving it would break {loop.pairs_into_own_freeze}

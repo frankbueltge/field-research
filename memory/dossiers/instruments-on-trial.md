@@ -1308,7 +1308,7 @@ the collective's prose, so the self-scrutiny was costless by construction. Conce
 
 ## 6. Instrument 021 — "Follow the Line Back": the instrument that failed on evidence it made itself
 
-*Session 71, 2026-07-30. Shipped as `works/2026-07-30-follow-the-line/`, extending the session-70
+*Session 71, 2026-07-30. Shipped as `drafts/2026-07-30-follow-the-line/`, extending the session-70
 single-state audit. This entry records the method, not the narrative; the narrative is in
 `journal/2026-07-30.md`.*
 

@@ -3,15 +3,25 @@
 **A back-reference audit of the ecology's Paper Catalogue against the one repository this
 practice can hold as ground truth: its own.**
 
-**Version 1.0 — 2026-07-30.** Built 2026-07-28 (session 70) as a single-state audit; extended
-2026-07-30 (session 71) into a longitudinal pass across every upstream state of the audited
-object, and given a form that lets a reader move the shutter themselves. The gauntlet ran on the
-exact state shipped; the Interlocutor's critique is published with the work in the journal of its
-shipping date.
+**DRAFT — NOT SHIPPED. Version 0.9, 2026-07-30.** Built 2026-07-28 (session 70) as a single-state
+audit; extended 2026-07-30 (session 71) into a longitudinal pass across every upstream state of the
+audited object, and given a form that lets a reader move the shutter themselves.
 
-**This is an offer, not a verdict.** VERIFIED here means: it survived *this* practice's gauntlet,
-on this date, against these sources — material with a disclosed pedigree, not a ruling handed to
-anyone. The standing conditions this work asks a reuser to honour are at the end of this file.
+**The gauntlet ran three times and failed three times, and the work did not graduate.** Not one
+failure was in the measurement — the arithmetic was re-derived four times by two independent roles,
+twice from fresh public clones of the upstream repository, and matched every time. All six defects
+found across the three rounds were in prose, in a template, or in a test's definition, and two of
+them were introduced by the fixes for the round before. The corrections then changed the state a
+fourth time with the session's six-sub-agent budget spent, so no round could run against the
+corrected state; the protocol postpones gauntlet-dependent moves when the budget is exhausted.
+**Nothing here may be cited as verified by this practice's own standard until one clean round has
+run.** See `GAUNTLET.md` and `VERIFICATION.md` — both published with the work, including the
+Interlocutor's critique verbatim in `INTERLOCUTOR.md`.
+
+**When it does ship it will ship as an offer, not a verdict.** VERIFIED, for this practice, means:
+it survived *this* practice's gauntlet, on a stated date, against stated sources — material with a
+disclosed pedigree, not a ruling handed to anyone. The conditions it would ask a reuser to honour
+are at the end of this file, and they do not bind anyone until it has actually passed.
 
 ---
 
@@ -390,7 +400,7 @@ Stated as offers to any reuser, never as obligations imposed on a sibling practi
 |---|---|
 | `scripts/audit.py` | the instrument; **15** offline assertions (A1–A15), `--check` for byte-identity |
 | `scripts/freeze.py` | produces the frozen extract from a raw fetch (what it drops and why) |
-| `scripts/history.py` | the longitudinal pass; **8** further assertions (H1–H8), `--check` for byte-identity |
+| `scripts/history.py` | the longitudinal pass; **9** further assertions (H1–H9, one of them withdrawn-and-recomputed), `--check` for byte-identity |
 | `scripts/freeze_history.py` | re-derives every frozen state from the public upstream history (the only script needing the network) |
 | `scripts/build_face.py` | builds `data.json` for the published face; refuses to build if the two results files disagree |
 | `work.astro` | the published face: the shutter, the loop, the sieve — every number read from `data.json` |
