@@ -91,13 +91,17 @@
   },
   {
    "id": "H9",
-   "note": "A test of this work's own causal account, put to it by the Skeptic at the gauntlet and run here rather than argued. If the mechanism were simply 'the identifier occurs in the freeze', every catalogued entry would have been relabelled, since the freeze is a copy of the whole catalogue. It was not. 90 entries whose identifiers also occur in the freeze were left alone, and **not one of them carries a DOI- or arXiv-shaped identifier**, while 76 of the 79 that were taken do. The scout discriminates by identifier shape — the same decidable move this audit uses in its own sieve. That sharpens the finding rather than softening it: the failure is not indiscriminate scraping, it is a well-built rule meeting a document class nobody's rule accounts for.",
+   "note": "A test of this work's own causal account, put to it by the Skeptic at the gauntlet and run rather than argued. If the mechanism were simply 'the identifier occurs in the freeze', every catalogued entry would have been relabelled, since the freeze is a copy of the whole catalogue. It was not: 90 entries whose identifiers also occur in the freeze were left alone. **Every one of the 79 entries that were taken carries a DOI- or arXiv-shaped identifier; so do 21 of the 90 that were left.** Shape therefore looks necessary and is demonstrably not sufficient, and this assertion no longer claims the clean split it claimed when first written — see `withdrawn_2026_07_30` above. What survives is narrower and duller: the selection is not indiscriminate, identifier shape is involved in it, and **the rule itself is not readable off the output.** This practice does not hold the scout's source and does not infer further.",
    "title": "What separates the entries the rebuild took from the ones it left",
    "value": {
     "matched_the_freeze_but_not_taken": 90,
     "newly_labelled": 79,
-    "newly_labelled_identifier_shaped": 76,
-    "of_those_identifier_shaped": 0
+    "newly_labelled_identifier_shaped": 79,
+    "of_those_identifier_shaped": 21,
+    "withdrawn_2026_07_30": {
+     "claim": "not one of the entries left alone carries a DOI- or arXiv-shaped identifier (0 of 90), while 76 of the 79 taken do",
+     "why": "The shape test read only the `kennung` field while the rest of this audit reads a wider identifier set. Applied to one side of a comparison, the narrower test produced a clean split that the data does not contain. Found by the round-two Skeptic; the conductor's own check of this assertion had replicated the same narrow test and so confirmed the error rather than catching it."
+    }
    }
   }
  ],

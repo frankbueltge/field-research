@@ -46,12 +46,21 @@ identifier, which is exactly why the strict rule passes too. It is not a demonst
 rule fails on copies in general. The Skeptic required that scope statement at the gauntlet and it
 is carried on the work's face, not only here.
 
-**And the scout is not scraping indiscriminately**, which sharpens the finding rather than
-softening it. If the mechanism were only "the identifier occurs in the freeze", every catalogued
-entry would have been relabelled — the freeze is a copy of the whole catalogue. 90 entries whose
-identifiers also occur in it were left alone, and **not one of those carries a DOI- or arXiv-shaped
-identifier**, while 76 of the 79 that were taken do (H9). A well-built rule met a document class no
-rule here accounted for, this work's own included.
+**And the scout is not scraping indiscriminately.** If the mechanism were only "the identifier
+occurs in the freeze", every catalogued entry would have been relabelled — the freeze is a copy of
+the whole catalogue. 90 entries whose identifiers also occur in it were left alone. **Every one of
+the 79 taken carries a DOI- or arXiv-shaped identifier; so do 21 of the 90 left.** Shape looks
+necessary and is demonstrably not sufficient, and the rule itself is **not readable off the
+output** — this practice does not hold the scout's source and does not infer further (H9).
+
+*Correction, same day, and it is the sharpest thing that happened to this work.* H9 first reported
+that **none** of the 90 was identifier-shaped, against 76 of the 79 — a clean split that would have
+carried the stronger claim "the scout discriminates by identifier shape". It was an artifact: the
+shape test read only one identifier field while the rest of the audit reads a wider set, and it was
+applied to one side of a comparison. The round-two Skeptic caught it. **The conductor's own check
+of that assertion had used the same narrow test and so confirmed the error instead of catching it**
+— which is the failure mode this entire work is about, committed once more, inside the work, while
+writing it up.
 
 **What does not move.** Across all five states — 117 to 210 entries, two labelling regimes, a
 disclosure lost and restored — no entry carrying the `meridian` citer label *alone* has ever

@@ -304,9 +304,16 @@ def build():
     arx_shape = re.compile(r"^\d{4}\.\d{4,5}(v\d+)?$")
 
     def is_shaped(e):
-        k = (e.get("kennung") or "")
-        k = k.split(":", 1)[1] if k.lower().startswith("arxiv:") else k
-        return bool(doi_shape.match(k.lower()) or arx_shape.match(k.lower()))
+        """Shape-tested over the SAME identifier set the rest of this audit uses.
+
+        CORRECTED 2026-07-30 by the round-two Skeptic. The first version of this test read only
+        the entry's `kennung` field, while every other part of this audit reads `identifiers()` —
+        which also draws on `weitere_kennungen` and on ids parsed out of the entry's URL. Applied
+        to one side of a comparison, the narrow test manufactured a clean result: it reported 0 of
+        90 left-alone entries as identifier-shaped, when 21 of them are, their ids simply stored
+        as full arXiv URLs. The withdrawn figures were 0 and 76; the honest ones are 21 and 79.
+        """
+        return any(doi_shape.match(i) or arx_shape.match(i) for i in identifiers(e))
 
     newly = [e for e in latest_entries
              if "field" in (e.get("zitiert_von") or []) and e["id"] not in was_field]
@@ -318,17 +325,29 @@ def build():
         {"newly_labelled": len(newly),
          "newly_labelled_identifier_shaped": sum(is_shaped(e) for e in newly),
          "matched_the_freeze_but_not_taken": len(matched_not_taken),
-         "of_those_identifier_shaped": sum(is_shaped(e) for e in matched_not_taken)},
+         "of_those_identifier_shaped": sum(is_shaped(e) for e in matched_not_taken),
+         "withdrawn_2026_07_30": {
+             "claim": "not one of the entries left alone carries a DOI- or arXiv-shaped "
+                      "identifier (0 of 90), while 76 of the 79 taken do",
+             "why": "The shape test read only the `kennung` field while the rest of this audit "
+                    "reads a wider identifier set. Applied to one side of a comparison, the "
+                    "narrower test produced a clean split that the data does not contain. "
+                    "Found by the round-two Skeptic; the conductor's own check of this assertion "
+                    "had replicated the same narrow test and so confirmed the error rather than "
+                    "catching it."}},
         "A test of this work's own causal account, put to it by the Skeptic at the gauntlet and "
-        "run here rather than argued. If the mechanism were simply 'the identifier occurs in the "
+        "run rather than argued. If the mechanism were simply 'the identifier occurs in the "
         "freeze', every catalogued entry would have been relabelled, since the freeze is a copy "
-        "of the whole catalogue. It was not. %d entries whose identifiers also occur in the "
-        "freeze were left alone, and **not one of them carries a DOI- or arXiv-shaped "
-        "identifier**, while %d of the %d that were taken do. The scout discriminates by "
-        "identifier shape — the same decidable move this audit uses in its own sieve. That "
-        "sharpens the finding rather than softening it: the failure is not indiscriminate "
-        "scraping, it is a well-built rule meeting a document class nobody's rule accounts for."
-        % (len(matched_not_taken), sum(is_shaped(e) for e in newly), len(newly)))
+        "of the whole catalogue. It was not: %d entries whose identifiers also occur in the "
+        "freeze were left alone. **Every one of the %d entries that were taken carries a DOI- or "
+        "arXiv-shaped identifier; so do %d of the %d that were left.** Shape therefore looks "
+        "necessary and is demonstrably not sufficient, and this assertion no longer claims the "
+        "clean split it claimed when first written — see `withdrawn_2026_07_30` above. What "
+        "survives is narrower and duller: the selection is not indiscriminate, identifier shape "
+        "is involved in it, and **the rule itself is not readable off the output.** This practice "
+        "does not hold the scout's source and does not infer further."
+        % (len(matched_not_taken), len(newly), sum(is_shaped(e) for e in matched_not_taken),
+           len(matched_not_taken)))
 
     return {
         "work": "Back-reference audit of the ecology's Paper Catalogue — longitudinal pass",

@@ -118,10 +118,20 @@ const strictCaught = loop.pairs_into_own_freeze - loop.strict_into_own_freeze
 
     <h3 class="ftl-h3">Every entry×file pair the catalogue asserts into this repository</h3>
     <p class="ftl-note">
-      One mark per pair. Filled marks are pairs into ordinary files of this repository. Outlined
-      marks are pairs into the audit's own frozen copy of the catalogue — a snapshot of the object,
-      not a citation of anything. Move the shutter to the fourth state and watch what the rebuild
-      added.
+      One mark per pair the catalogue <em>asserts</em>. Filled marks are pairs into ordinary files
+      of this repository. Outlined marks are pairs into the audit's own frozen copy of the
+      catalogue — a snapshot of the object, not a citation of anything. Move the shutter to the
+      fourth state and watch what the rebuild added.
+    </p>
+    <p class="ftl-note">
+      <strong>Read the outlined marks precisely.</strong> They are assertions, not confirmations.
+      At the repository pin this panel uses (<code>{data.repository_pin}</code>) the two freeze
+      files did not yet exist, so those pairs do not resolve here at all — which is why the
+      "resolving" figure above stays at {audited.loose} while the pair count triples. That the
+      same pairs <em>do</em> resolve, and pass both rules, is a separate measurement at a later
+      pin, and it is the one in the next panel. The distinction matters: this panel shows what was
+      claimed about this repository, the next shows what the audit's own rule then said about the
+      claim.
     </p>
     <div class="ftl-grid" id="ftl-grid" aria-hidden="true">
       {Array.from({ length: audited.pairs }, (_, i) => (
@@ -217,9 +227,17 @@ const strictCaught = loop.pairs_into_own_freeze - loop.strict_into_own_freeze
     <p class="ftl-note">
       The freeze is not deleted. Deleting or moving it would break {loop.pairs_into_own_freeze}
       back-references in the object this work audits, to make this practice's record look tidier.
-      Neutralising the identifiers in place instead — keeping the paths, breaking the contents —
-      fails the same test for the same reason: it breaks the same pairs, one layer down. The loop
-      has a lock, and naming it is the only honest move available.
+      Neutralising the identifiers in place — keeping the paths, breaking the contents — is the
+      stronger version of the objection and the Skeptic pressed it at the gauntlet: unlike
+      deletion it would stop the next rebuild re-attributing these entries, arresting the
+      contamination going forward, and it only breaks back-references this work already calls
+      illegitimate. That asymmetry is real and was elided in the first version of this paragraph.
+      It is declined for a different reason, stated plainly: it would edit a frozen copy of
+      somebody else's data, held here as evidence, after the fact — and a practice whose whole
+      case rests on frozen states does not get to edit one because its contents became
+      inconvenient. Arresting the loop is the catalogue keeper's move to make, on their side,
+      which is why the decidable rule was sent to them rather than applied here. The loop has a
+      lock, and naming the lock is the only honest move this practice has.
     </p>
   </section>
 
