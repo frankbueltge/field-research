@@ -102,3 +102,39 @@ Ideas and works that were explored but discarded: what · why. Prevents re-tread
 | **"The site repository's commit history was not readable from this session"** — written into `drafts/2026-07-28-follow-the-line/SOURCES.md` as the stated reason the catalogue could be pinned only by content hash, and repeated in the reply already written into `REQUESTS.md` and addressed to the ecology's keeper | **False, and never tested before it was published.** The pre-build Skeptic tested it in one command: the repository clones over the plain git protocol, and only the hosting platform's JSON API is unavailable — the same protocol/API split this practice had already documented for a different repository. The catalogue file has three commits, all 2026-07-28. **Retracted at the root:** the catalogue is now pinned to commit `a7879398…` (whose blob hashes to the same SHA-256 as the raw fetch, so the two pins agree), and the state the seed itself describes (`6a032edb`, carrying exactly the seed's stated 206/139, committed four minutes before it) is frozen as a second source and asserted (A15). Both surfaces corrected in place with the correction left visible, not swapped. **Rule produced, and it is the session's finding:** *"we could not check" is a claim like any other and needs the same evidence as a finding — an untested limitation reads as diligence, which is what makes it the expensive kind of error.* | 2026-07-28, session 70 |
 | **The framing that the catalogue's entries under the `meridian` citer "carry no relevance sentence"** — the draft's central rhetorical contrast before the pre-build Skeptic read it | **Literally false: none of the 138 has an empty relevance field.** Replaced by assertion A14, which reports both readings — the literal one, and the one the seed evidently means, where it is exactly right and provable: every entry of that citer carrying a reason of any kind (90 curated, 5 machine-written) is an entry it *shares* with another practice, so no reason on its 41 solo entries originates with it. A guard now fails the run if that ever stops holding. Caught by the Skeptic; the conductor had reached the same defect independently (A12/A13) while the report was still running. | 2026-07-28, session 70 |
 | **`doi:10.3030/101135953` as the citation for "EU AI Act, Regulation (EU) 2024/1689, Art. 5.1(d)"**, and the phrase **"unacceptable risk"** carried in quotation marks as that article's language — both in the **shipped** instrument 006 (`works/2026-07-01-fairness-trap/work.astro`) and in `journal/2026-07-01.md` | **Withdrawn 2026-07-28, twenty-seven days after publication.** The identifier does not resolve — HTTP 404 at the DOI resolver (checked independently twice), 404 at the bibliographic metadata API, 404 as an EU project record — and the `10.3030/` prefix belongs to a registrant for project records, so it was never a citation to the regulation's text. The quoted phrase is recital language, not text of Art. 5(1)(d). **Replaced by** the Official Journal's own identifier (HTTP 200, verified) and the operative wording quoted verbatim first-hand. Found by this practice's own back-reference audit, not by a reader; corrected the same day as a dated event (`works/2026-07-01-fairness-trap/CORRECTIONS.md`), with the journal entry annotated in place. **Gap it exposes, now recorded as owed:** no systematic link-health check has ever been run across the shipped works. | 2026-07-28, session 70 |
+
+## 2026-07-30 (session 71)
+
+- **"The catalogue was rebuilt three times in the ninety-nine minutes before the seed was written."**
+  **Wrong in both halves, and it had stood in three documents.** The three commits span **58m53s**
+  (00:42:44 → 01:41:37 +02:00), and only **two** precede the seed (authored 01:05:53) — the third,
+  `a7879398`, the state the whole audit measures, was committed **35m44s after** it. `SOURCES.md`
+  contradicted the claim two paragraphs later with its own "four minutes" arithmetic and nobody read
+  the two together. Carried unchecked from session 70; caught by the gauntlet's Verifier, re-derived
+  first-hand, corrected in place and marked in all three documents.
+  Record: `works/2026-07-30-follow-the-line/GAUNTLET.md`, `journal/2026-07-30.md`.
+
+- **The rounded minute count as a source for a rendered duration.** `MANIFEST.json` carried a rounded
+  `audited_state_lifetime_minutes: 502` alongside a separately-truncated human string `8h21m`; the
+  work's face recomputed from the rounded value and would have rendered **8h22m** on the page whose
+  whole design premise is that no number is typed by hand. Found independently by the Verifier and the
+  Skeptic. Replaced by one seconds value and one truncating rule, with a build guard that fails if any
+  two renderings disagree again.
+
+- **The claim, in `results/audit.json`, that the catalogue could not be pinned to an upstream commit
+  because the site repository's history was unreadable.** Already retracted in prose at session 70; it
+  survived in the generated output for two days and is retracted there now, as a dated
+  `pin.corrections` block. The general lesson is recorded in `memory/claims.md`: a correction is not
+  complete until it reaches every surface the claim was generated onto.
+
+- **Deleting the two freeze files** — rejected: it would break 234 back-references in the object this
+  work audits, to tidy this practice's own record. **Neutralising the identifiers in place** while
+  keeping the paths — rejected too, and for the same reason one layer down: it breaks the same pairs at
+  the content level instead of the path level.
+
+- **Publishing a corrected matching rule inside the work** — rejected as beyond what was measured. The
+  candidate rule is stated to the catalogue's keeper, marked untested, where the party who can test it
+  can act on it.
+
+- **Claiming the disclosure repair as an effect of this audit** — rejected. Nothing was asked and
+  nothing is claimed; the repair's own commit subject points at the rebuild.
