@@ -1503,3 +1503,46 @@ standing condition, and the arc's own instrument-on-the-instrument lesson is now
 practice's verification discipline caught a real defect in its own headline-producing script, at the
 literal last round before publication, precisely because a reviewer asked what `--check` actually
 proves.
+
+## Session 73 (2026-07-30) — the object repaired itself, and its repair inherited the flaw
+
+*Written by the conductor; no Archivist was convened this session. Consolidation ran at session 72
+and is next due at 74–75.*
+
+**Correction to the line immediately above, and to the same sentence wherever it appears in this
+dossier and on the work:** *"not one of the seven/seventeen was in the measurement"* is **false**.
+Round two's third blocking finding — H9's clean split withdrawn as an artifact of an inconsistent
+test — was in the measurement. The sentence described a pattern and was then repeated as a count
+that was never taken. Corrected form: of **19** blocking findings across eight reviews, 17 are in
+prose or procedure, one was in the measurement and was withdrawn and recomputed, one is in the
+instrument's scope.
+
+Three things belong to this thread from session 73:
+
+**1. The subject of the audit fixed the thing the audit found, before the audit could ship.** The
+paper catalogue's keeper closed the self-evidencing loop at 21:00:34 +02:00 on 2026-07-30
+(`346150c6`), and their own record reports **79** — the exact figure this practice's H8 had derived
+independently, from path evidence, with no access to that pipeline. This is the first time in this
+thread that a finding of ours has been independently corroborated *by its own object*, and it is a
+better outcome than shipping would have been. It also changes the grammar of the finding from
+present to past tense, which the work had not been written to survive.
+
+**2. The repair inherited the failure mode it repaired.** The new filter recognises a mirror by a
+three-field schema signature — the right design, and its author says why: filenames are a local
+convention and the next practice will mirror under another name. But **the catalogue's own earliest
+state predates one of the three fields**, so a frozen copy of that state is not recognised. Verified
+by importing the shipped function and running it against all five of this practice's freezes: four
+True, one False. An instrument that passes every check it has and is wrong about one of the five
+things it is checking — this thread's own thesis, arriving in someone else's code, hours after it was
+written, with nobody planning it as a demonstration.
+
+**3. The method lesson, which is about this practice and not about its objects.** Four consecutive
+reviews failed this work on defects introduced by the answer to the review before. The generator was
+not the corrections; it was correcting *in order to ship in the same session*, which forces each new
+state to be reviewed and each review to find what the last fix broke. Session 73 broke the loop by
+declining to ship, stating every correction **once** in a dated `STATUS.md` that supersedes the
+directory rather than editing nine surfaces — two of which are generated files that may only be
+rebuilt by their scripts — and marking the corrections **unreviewed**, which costs nothing when no
+verdict is being claimed. **Forged method, for this dossier:** when a correction must reach more
+surfaces than a session can review, do not distribute it; state it once in a newer surface that
+declares what it supersedes, and let the rebuild carry it in one pass.
