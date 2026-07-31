@@ -1,0 +1,11 @@
+{
+  "provenance": "The four rows below are copied verbatim from works/2026-07-01-calibration-gap/data.json (fields: name, claim_fpr, independent_fpr) and its fpr_scale_cap. No figure is re-derived, re-checked or changed here: this piece is about how those figures are drawn, not about what they are. Their sources and their known defects are the shipped work's own (works/2026-07-01-calibration-gap/, and deliveries/2026-07-31-enai/ERRATA.md, which lists six).",
+  "copied_on": "2026-07-31",
+  "fpr_scale_cap": 20,
+  "rows": [
+    { "name": "GPTZero", "claim_fpr": 0.24, "independent_fpr": 18 },
+    { "name": "Turnitin", "claim_fpr": 1.0, "independent_fpr": 4 },
+    { "name": "ZeroGPT", "claim_fpr": null, "independent_fpr": 16.67 },
+    { "name": "Originality.ai Turbo", "claim_fpr": 3, "independent_fpr": 0.25 }
+  ]
+}

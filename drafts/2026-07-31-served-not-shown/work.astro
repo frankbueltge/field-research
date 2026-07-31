@@ -1,0 +1,146 @@
+---
+// drafts/2026-07-31-served-not-shown/work.astro
+// "Two Columns, One Policy" — the face of the render census, session 76 (2026-07-31).
+//
+// NOT SHIPPED. This file has NOT been through the gauntlet: it was built after the session's
+// Verifier and Skeptic had already run on the report, on the Interlocutor's charge that a
+// finding about invisible rendering should be a rendered thing rather than an essay about one.
+// Shipping it owes a fresh gauntlet on the exact shipped state. Until then it stays here.
+//
+// What it does: draws the same four measurements twice in one viewport, under one policy —
+// the site's own. The left column uses the sanctioned mechanism (a component <style> block,
+// which the build hashes and the policy admits) and inline SVG, whose geometry lives in
+// attributes and not in CSS. The right column is the markup of the shipped work, verbatim:
+// bars whose entire existence is an inline style="" attribute. Under the policy this page is
+// served with, the left column draws and the right column does not. No caption performs the
+// finding; the reader's own browser does.
+//
+// The right column is deliberately given NO class this file styles. That is the point: it
+// receives exactly what the site gives any unstyled markup, which is what the eight affected
+// works receive today.
+//
+// CSP: no client script, no define:vars, no external fetch, no inline style attribute anywhere
+// in the LEFT column or the frame. The inline style attributes in the right column are the
+// specimen under examination — they are inert by construction, which is the whole argument.
+import data from './data.json'
+
+const CAP = data.fpr_scale_cap
+const rows = data.rows
+
+// Bar geometry for the left column, in SVG user units. An SVG width is an attribute, not a
+// style declaration, so nothing here depends on inline CSS being applied.
+const TRACK = 300
+const barLen = (v: number | null): number =>
+  v === null || v === 0 ? 1 : Math.min((v / CAP) * TRACK, TRACK)
+const fmt = (v: number | null): string => (v !== null ? `${v}%` : 'n/d')
+
+// The right column reproduces the shipped work's own percentage-width computation verbatim.
+const pctWidth = (v: number | null): string =>
+  v === null || v === 0 ? '0.15%' : `${Math.min((v / CAP) * 100, 100).toFixed(2)}%`
+---
+
+<div class="sns">
+  <div class="wrap">
+
+    <p class="kicker">Meridian &middot; render census &middot; 2026-07-31 &middot; draft, not shipped</p>
+    <h1>Two Columns, One Policy</h1>
+    <p class="lede">The same four measurements, drawn twice, on one page, under one
+    Content&#8209;Security&#8209;Policy &mdash; this site's own. Left: the mechanism this practice's
+    constitution requires. Right: the markup of a work it published on 2026&#8209;07&#8209;01 and
+    committed for delivery to an outside reader on 2026&#8209;07&#8209;31, verbatim.</p>
+
+    <div class="cols">
+
+      <section class="col">
+        <h2>As declared <span class="tag ok">component &lt;style&gt; + SVG attributes</span></h2>
+        {rows.map(r => (
+          <div class="row">
+            <div class="name">{r.name}</div>
+            <svg class="chart" viewBox="0 0 420 34" role="img"
+                 aria-label={`${r.name}: vendor specification ${fmt(r.claim_fpr)}, independent measurement ${fmt(r.independent_fpr)}, false positive rate, scale 0 to ${CAP} percent`}>
+              <text x="0" y="11" class="lbl">spec</text>
+              <rect x="42" y="4" width={TRACK} height="7" class="track" />
+              <rect x="42" y="4" width={barLen(r.claim_fpr)} height="7" class="spec" />
+              <text x="352" y="11" class="val">{fmt(r.claim_fpr)}</text>
+              <text x="0" y="28" class="lbl">measured</text>
+              <rect x="42" y="21" width={TRACK} height="7" class="track" />
+              <rect x="42" y="21" width={barLen(r.independent_fpr)} height="7" class="meas" />
+              <text x="352" y="28" class="val meas-t">{fmt(r.independent_fpr)}</text>
+            </svg>
+          </div>
+        ))}
+        <p class="foot">Scale 0&ndash;{CAP}&#160;% false&#8209;positive rate. Figures copied
+        unchanged from the shipped work; their sources, and the six known defects in them, are
+        that work's own.</p>
+      </section>
+
+      <section class="col">
+        <h2>As served <span class="tag bad">inline style="" attributes</span></h2>
+        {rows.map(r => (
+          <div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 0.45rem;">
+              <span style="font-weight: 700; color: #e8e8e8; font-size: 0.8rem;">{r.name}</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.22rem;">
+              <span style="width: 5.5rem; text-align: right; font-size: 0.6rem; color: #5a5a5a; flex-shrink: 0;">spec</span>
+              <div style="flex: 1; background: #1e1e1e; height: 7px; position: relative;">
+                <div style={`position: absolute; top: 0; left: 0; height: 100%; background: #555; width: ${pctWidth(r.claim_fpr)};`}></div>
+              </div>
+              <span style="width: 3.5rem; font-size: 0.6rem; color: #7a7a7a;">{fmt(r.claim_fpr)}</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.22rem;">
+              <span style="width: 5.5rem; text-align: right; font-size: 0.6rem; color: #5a5a5a; flex-shrink: 0;">measured</span>
+              <div style="flex: 1; background: #1e1e1e; height: 7px; position: relative;">
+                <div style={`position: absolute; top: 0; left: 0; height: 100%; background: #c0392b; width: ${pctWidth(r.independent_fpr)};`}></div>
+              </div>
+              <span style="width: 3.5rem; font-size: 0.6rem; color: #c0392b;">{fmt(r.independent_fpr)}</span>
+            </div>
+          </div>
+        ))}
+      </section>
+
+    </div>
+
+    <p class="note"><strong>If the two columns look the same to you</strong>, the page you are
+    reading is not being served under the policy this piece is about &mdash; a local file, an
+    archived copy, a reader mode. Under that policy, an inline <code>style=""</code> attribute has
+    no effect: <code>style-src</code> carries hash&#8209;sources, which make
+    <code>'unsafe-inline'</code> inoperative, and no <code>'unsafe-hashes'</code>. Eight of this
+    practice's twenty published works carry their whole visual argument that way &mdash; 594 such
+    attributes, all inert. Method, instrument and the full count:
+    <code>drafts/2026-07-31-served-not-shown/</code>.</p>
+
+  </div>
+</div>
+
+<style>
+  .sns{
+    --paper:#0d0d0d; --ink:#d4d4d4; --dim:#6b6b6b; --faint:#3f3f3f;
+    --spec:#7a7a7a; --meas:#c0392b; --ok:#2f6b3a;
+    background:var(--paper); color:var(--ink);
+    font-family:"DejaVu Sans Mono","Courier New",monospace; line-height:1.55;
+  }
+  .sns *{box-sizing:border-box}
+  .sns .wrap{max-width:1040px;margin:0 auto;padding:28px 20px 48px}
+  .sns .kicker{font-size:11px;letter-spacing:.16em;color:var(--dim);margin:0 0 .5rem;text-transform:uppercase}
+  .sns h1{font-size:22px;font-weight:700;letter-spacing:.1em;margin:0 0 .6rem;color:#e8e8e8}
+  .sns .lede{font-size:13px;color:#9a9a9a;margin:0 0 1.8rem;max-width:62ch}
+  .sns .cols{display:flex;flex-wrap:wrap;gap:2rem;border-top:1px solid var(--faint);padding-top:1.4rem}
+  .sns .col{flex:1 1 320px;min-width:0}
+  .sns h2{font-size:12px;letter-spacing:.12em;color:var(--dim);margin:0 0 1.2rem;font-weight:400;text-transform:uppercase}
+  .sns .tag{display:inline-block;font-size:10px;letter-spacing:.08em;padding:1px 6px;border:1px solid currentColor;margin-left:.4rem;text-transform:none}
+  .sns .tag.ok{color:var(--ok)}
+  .sns .tag.bad{color:var(--meas)}
+  .sns .row{margin-bottom:1.5rem}
+  .sns .name{font-size:13px;font-weight:700;color:#e8e8e8;margin-bottom:.3rem}
+  .sns .chart{width:100%;height:auto;display:block}
+  .sns .chart .track{fill:#1e1e1e}
+  .sns .chart .spec{fill:var(--spec)}
+  .sns .chart .meas{fill:var(--meas)}
+  .sns .chart .lbl{font-family:inherit;font-size:9px;fill:#5a5a5a}
+  .sns .chart .val{font-family:inherit;font-size:9px;fill:#7a7a7a}
+  .sns .chart .val.meas-t{fill:var(--meas)}
+  .sns .foot{font-size:11px;color:#5a5a5a;margin-top:1.4rem;border-top:1px solid #1e1e1e;padding-top:.6rem}
+  .sns .note{font-size:11px;color:#6b6b6b;margin-top:2rem;border-top:1px solid var(--faint);padding-top:.8rem;max-width:72ch}
+  .sns code{font-family:inherit;color:#8a8a8a}
+</style>

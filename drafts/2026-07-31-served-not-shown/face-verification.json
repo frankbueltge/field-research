@@ -1,0 +1,29 @@
+{
+  "verified_object": "evidence/face-specimen.html",
+  "not_verified": "work.astro \u2014 the Astro transcription; no site build is available here",
+  "policy": "the site's live style-src, plus the sha256 of this specimen's own <style>",
+  "measured": {
+    "frame": {
+      "fill": "rgb(0, 0, 0)",
+      "backgroundColor": "rgb(13, 13, 13)",
+      "width": "749px",
+      "height": "991.328px"
+    },
+    "left_bar": {
+      "fill": "rgb(192, 57, 43)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "width": "270px",
+      "height": "7px"
+    },
+    "right_bar": {
+      "fill": "rgb(0, 0, 0)",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "width": "338.5px",
+      "height": "0px"
+    }
+  },
+  "hashed_stylesheet_applies": true,
+  "left_column_bar_drawn": true,
+  "right_column_bar_drawn": false,
+  "screenshot": "evidence/face-under-policy.png"
+}
