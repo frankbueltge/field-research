@@ -54,14 +54,26 @@ SLUG = '2026-07-01-calibration-gap'
 sys.path.insert(0, CENSUS_DIR)
 from census import WORK_URL, browser, directive, dump_dom, fetch, meta_csp, screenshot, serve  # noqa: E402
 
-# Geometry constants -- must mirror work.astro's frontmatter exactly (TRACK, HAIRLINE,
-# ROW_PITCH, TRACK_X, VALUE_X, and the barLen/toolChart formulas) since this script is a
-# from-scratch transcription of the template, not an execution of it.
-TRACK = 300
+# Geometry constants are PARSED OUT OF work.astro rather than restated here. An earlier
+# state of this pair drifted -- the component moved its track to x=100 and its value text
+# to x=410 while this file still said 42 and 352, so the specimen would have verified a
+# layout the work no longer had. A transcription that can silently disagree with its
+# original is not a verification.
+def astro_const(src, name):
+    m = re.search(r'const\s+%s\s*=\s*([0-9.]+)' % name, src)
+    if not m:
+        raise SystemExit('verify_render: constant %s not found in work.astro' % name)
+    v = float(m.group(1))
+    return int(v) if v.is_integer() else v
+
+
+_ASTRO = open(os.path.join(HERE, 'work.astro'), encoding='utf-8').read()
+TRACK = astro_const(_ASTRO, 'TRACK')
 HAIRLINE = TRACK * 0.0015
-TRACK_X = 42
-VALUE_X = 352
-ROW_PITCH = 17
+TRACK_X = astro_const(_ASTRO, 'TRACK_X')
+VALUE_X = astro_const(_ASTRO, 'VALUE_X')
+ROW_PITCH = astro_const(_ASTRO, 'ROW_PITCH')
+VIEWBOX_W = astro_const(_ASTRO, 'CHART_VIEWBOX_W')
 
 
 def bar_len(v, cap):
@@ -72,6 +84,18 @@ def bar_len(v, cap):
 
 def fmt(v, suffix='%'):
     return f'{v}{suffix}' if v is not None else 'n/d'
+
+
+def short_url(url):
+    if not url:
+        return ''
+    return re.sub(r'/$', '', re.sub(r'^https?://', '', url))
+
+
+def link_html(url):
+    if not url:
+        return ''
+    return '<a class="cc-link" href="%s">%s</a>' % (url, short_url(url))
 
 
 def esc(s):
@@ -108,11 +132,11 @@ def extract_style_block(astro_source):
 
 def tool_chart(tool, cap):
     rows = [
-        ('spec', tool['claim_fpr'], 'cc-bar--spec', 'cc-val--spec'),
-        ('measured', tool['independent_fpr'], 'cc-bar--meas', 'cc-val--meas'),
+        ('spec', tool['claim_fpr'], 'cc-chart-bar--spec', 'cc-val--spec'),
+        ('measured', tool['independent_fpr'], 'cc-chart-bar--meas', 'cc-val--meas'),
     ]
     if tool['nnes_fpr'] is not None:
-        rows.append(('NNES*', tool['nnes_fpr'], 'cc-bar--nnes', 'cc-val--nnes'))
+        rows.append(('NNES*', tool['nnes_fpr'], 'cc-chart-bar--nnes', 'cc-val--nnes'))
     laid = []
     for i, (label, value, bar_cls, val_cls) in enumerate(rows):
         laid.append({
@@ -138,22 +162,22 @@ def build_body(data):
         rows_svg = []
         for r in rows:
             rows_svg.append(
-                '<g><text x="0" y="%s" class="cc-chart-lbl">%s</text>'
+                '<g><text x="%s" y="%s" class="cc-chart-lbl">%s</text>'
                 '<rect x="%s" y="%s" width="%s" height="7" class="cc-chart-track"/>'
                 '<rect x="%s" y="%s" width="%.4f" height="7" class="cc-chart-bar %s"/>'
                 '<text x="%s" y="%s" class="cc-chart-val %s">%s</text></g>'
-                % (r['label_y'], esc(r['label']), TRACK_X, r['y'], TRACK,
+                % (TRACK_X - 6, r['label_y'], esc(r['label']), TRACK_X, r['y'], TRACK,
                    TRACK_X, r['y'], r['width'], r['bar_cls'],
                    VALUE_X, r['label_y'], r['val_cls'], esc(r['formatted'])))
         tools_html.append(
             '<div class="cc-tool">'
             '<div class="cc-tool-head"><span class="cc-tool-name">%s</span>'
             '<span class="cc-tool-stats">spec: %s &middot; measured: %s</span></div>'
-            '<svg class="cc-chart" viewBox="0 0 420 %s" role="img" aria-label="%s">%s</svg>'
+            '<svg class="cc-chart" viewBox="0 0 %s %s" role="img" aria-label="%s">%s</svg>'
             '<div class="cc-finding">%s</div>'
             '</div>'
             % (esc(tool['name']), esc(fmt(tool['claim_fpr'])), esc(fmt(tool['independent_fpr'])),
-               height, esc(aria), ''.join(rows_svg), esc(tool['key_finding'])))
+               VIEWBOX_W, height, esc(aria), ''.join(rows_svg), esc(tool['key_finding'])))
 
     cases_html = []
     for c in data['harm_cases']:
@@ -173,63 +197,60 @@ def build_body(data):
             '<div class="cc-case-outcome">%s</div>'
             '%s'
             '<div class="cc-case-source">%s</div>'
+            '<div class="cc-case-source">%s</div>'
+            '%s'
             '</div>'
-            % (esc(c['institution']), c['year'], sub, esc(c['outcome']), caveat_html, esc(c['source'])))
+            % (esc(c['institution']), c['year'], sub, esc(c['outcome']), caveat_html, esc(c['source']),
+               link_html(c.get('source_url')) + (
+                   ' &middot; ' + link_html(c['source_url_secondary'])
+                   if c.get('source_url_secondary') else ''),
+               ('<div class="cc-case-access">%s</div>' % esc(c['access_note'])
+                if c.get('access_note') else '')))
 
     sources_html = []
     for s in data['benchmark_sources']:
         sources_html.append(
             '<div class="cc-source-row"><span class="cc-source-name">%s</span>'
-            '<span class="cc-source-finding">%s</span></div>' % (esc(s['name']), esc(s['finding'])))
+            '<span class="cc-source-finding">%s%s</span></div>'
+            % (esc(s['name']), esc(s['finding']),
+               (' &middot; ' + link_html(s['url'])) if s.get('url') else ''))
 
-    # The three correction/revision paragraphs and the closing note are copied verbatim
-    # from work.astro (they are not derived from data.json), so they are transcribed
-    # literally here rather than templated.
-    correction = (
-        'CORRECTION (2026-07-03): the Originality.ai row previously displayed a vendor claim of 0.2% FPR '
-        'against an independent measurement of 37% FPR (“a 185x gap”). Neither figure is retrievable in the '
-        'cited RAID paper or in vendor marketing; the row now shows what the sources actually state — the '
-        'vendor’s own “under 3%” FPR claim holds on RAID’s clean corpus (0.07–0.47%), while claimed accuracy '
-        'collapses out-of-domain (8.5% on code, 55.8% on unseen domains, at 5% FPR). Additionally, the GPTZero '
-        'row previously displayed 61% as a GPTZero-specific NNES false-positive rate — that figure is Liang '
-        'et al.’s seven-detector average (61.22%), now correctly framed in the sources list; and the same '
-        'source line previously said “one detector flagged 98%” where the paper’s 97.8% is the fraction of '
-        'essays flagged by at least one of seven detectors. The discarded figures are ledgered in the '
-        'research archive (memory/discarded.md, session 06).')
-    reverify = (
-        'RE-VERIFICATION COMPLETED (2026-07-03, session 07): every remaining pre-constitution figure was '
-        're-checked against live primary sources. Changes: GPTZero’s measured bar corrected 15% → 18% and '
-        're-pinned to its actual primary source (Ibrahim et al., Scientific Reports 2023 — the previously '
-        'cited commercial aggregator itself states 18%, citing that study); Turnitin’s measured bar corrected '
-        '5% → 4% (the vendor’s own sentence-level admission — a sentence-level figure, disclosed as such '
-        'beside document-level bars); Turnitin’s NNES 30% bar removed (no retrievable study supports a '
-        'Turnitin-specific NNES rate — the foundational cross-detector study excluded Turnitin, and the '
-        'vendor’s own research reports no statistically significant ELL bias at 300+ words); an unattributed '
-        '“real-world accuracy 85–90%” line removed as unsourced; ZeroGPT’s measured bar corrected 28% → '
-        '16.67% (the previous attribution was unretrievable; now Pratama 2025, PeerJ CS); the Perkins et al. '
-        '17.4% restated as a 17.4-percentage-point mean drop (39.5% → 22.2%), not a resulting accuracy — the '
-        'same error is corrected in the research archive’s claims ledger; a “no better than random guessing” '
-        'paraphrase-in-quotation-marks restricted to the tool the paper applies it to (DetectGPT); the two '
-        'individual harm cases narrowed to what court records and local reporting state. The FPR scale was '
-        're-capped 65% → 20% after the removals. Verified figures that stood: both vendors’ spec claims, the '
-        'Perkins 46.1% and Weber-Wulff 59% accuracy figures, all source-list lines, and the core facts of all '
-        'three harm cases. Discards ledgered in memory/discarded.md (session 07).')
-    revision = (
-        'REVISION (2026-07-12, session 33): two changes to the harm register, on a binding team steer and a '
-        'downstream correction report (the lab’s production wing, via REQUESTS.md). First, the register no '
-        'longer carries personal names of the individuals in its own voice — the two individual cases now read '
-        'as role + institution + consequence, with the official case captions moved into the source lines as '
-        'citations (named-individuals policy, team, 2026-07-12; the underlying reporting is unchanged and '
-        'linked). Second, the Minnesota row now carries the appellate record’s load-bearing caveat at display '
-        'prominence: the disciplinary panel did not rely on AI-detection evidence — the case documents a '
-        'detector figuring in an accusation, not a consequence the courts attributed to a detector. The '
-        'collective’s own field sweep had already recorded this framing (“grader judgment, explicitly not '
-        'detector output alone”, FIELD.md); the register row had never been updated to match. Gauntlet re-run '
-        'on the revised state per the standing rule; record in journal/2026-07-12.md, session 33.')
-    footer_note = (
-        'This certificate is itself a measurement instrument — it documents the gap between specification '
-        'and performance in tools now deployed to judge the authenticity of human writing. '
-        'Method and data are open: frankbueltge.de/field / github.com/frankbueltge/field-research')
+    # Specification sources — added 2026-08-01 with the repair. The spec side of this
+    # certificate carried no source of any kind until that date.
+    specs_html = []
+    for sp in data.get('specification_sources', []):
+        specs_html.append(
+            '<div class="cc-spec">'
+            '<div class="cc-spec-head"><span class="cc-spec-tool">%s</span>'
+            '<span class="cc-spec-claim">%s</span></div>'
+            '%s%s'
+            '<div class="cc-spec-caveat">%s</div>'
+            '</div>'
+            % (esc(sp['tool']), esc(sp['claim_shown']),
+               ('<div class="cc-spec-quote">&ldquo;%s&rdquo;</div>' % esc(sp['verbatim']))
+               if sp.get('verbatim') else '',
+               ('<div class="cc-spec-url">%s</div>' % link_html(sp['url'])) if sp.get('url') else '',
+               esc(sp['caveat'])))
+
+    # The static prose blocks (the dated correction/revision/repair notes, the
+    # specification lede and the closing note) are NOT derived from data.json. An earlier
+    # version of this harness transcribed them by hand, which lets the specimen and the
+    # work drift apart silently. They are now EXTRACTED from work.astro itself, so the
+    # specimen provably carries the same text the component does.
+    astro = open(os.path.join(HERE, 'work.astro'), encoding='utf-8').read()
+
+    def block(cls, nth=0):
+        found = re.findall(r'<div class="%s">(.*?)</div>' % cls, astro, re.S)
+        if len(found) <= nth:
+            raise SystemExit('verify_render: could not extract .%s #%d from work.astro' % (cls, nth))
+        return re.sub(r'\s+', ' ', found[nth]).strip()
+
+    correction = block('cc-correction')
+    reverify = block('cc-note', 0)
+    revision = block('cc-note', 1)
+    repair = block('cc-note', 2)
+    spec_lede = block('cc-spec-lede')
+    footer_note = block('cc-footer-note')
 
     body = (
         '<div class="cc">'
@@ -248,7 +269,7 @@ def build_body(data):
         '</div>'
         '%s'
         '<div class="cc-matrix-footnote">NNES = Non-Native English Speakers. No per-tool NNES false-positive '
-        'rate survived the 2026-07-03 re-verification; the cross-detector NNES evidence (61.22% seven-detector '
+        'rate survived the 2026-07-03 re-verification; the cross-detector NNES evidence (61.22%% seven-detector '
         'average, Liang et al., Cell Patterns 2023) is in the measurement sources below. Confidence ratings '
         'vary — see data.json for per-tool methodology notes.</div>'
         '</div>'
@@ -257,16 +278,23 @@ def build_body(data):
         '%s'
         '</div>'
         '<div class="cc-sources">'
+        '<div class="cc-sources-title">SPECIFICATION SOURCES — WHERE THE CLAIM BARS COME FROM</div>'
+        '<div class="cc-spec-lede">%s</div>'
+        '%s'
+        '</div>'
+        '<div class="cc-sources">'
         '<div class="cc-sources-title">MEASUREMENT SOURCES</div>'
         '%s'
         '<div class="cc-correction">%s</div>'
         '<div class="cc-note">%s</div>'
         '<div class="cc-note">%s</div>'
+        '<div class="cc-note">%s</div>'
         '<div class="cc-footer-note">%s</div>'
         '</div>'
         '</div>'
-        % (data['generated'], cap, ''.join(tools_html), ''.join(cases_html), ''.join(sources_html),
-           correction, reverify, revision, footer_note))
+        % (data['generated'], cap, ''.join(tools_html), ''.join(cases_html),
+           spec_lede, ''.join(specs_html), ''.join(sources_html),
+           correction, reverify, revision, repair, footer_note))
     return body
 
 

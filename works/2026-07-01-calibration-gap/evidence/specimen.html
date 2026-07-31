@@ -1,0 +1,324 @@
+<!doctype html><html><head><meta charset="utf-8"><meta http-equiv="content-security-policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' 'sha256-DYU78NbRnL2odqQXROvvYg8xd7mjmlLNkNNXfG6+yeI=' 'sha256-6hkqUrkabAtX/kNnt5RCPsejBFIcsML14M/pBbK/Gyg=' 'sha256-WTVpgTn1yvg5p8G1Ytz/8jE3fZ7h5F3Bn7/uEudt7rY=' 'sha256-IL1tVDxnbfDyipG0olF1WfrWwIzxvK2kFzofBC8Gy84=' 'sha256-ONlqkQP5qnRirNH3KXVpfdURzzZ7tpcQwoAXXGpjS/E=' 'sha256-X+N5RnX+W4/cX29fOFHev5yoSe4RUcH+cUW4W97xogg=' 'sha256-Pk5LWk1EOxpdGn/Bvx6YNDO9Dcf41v4WR2ZWKCHlgyw=' 'sha256-0lMEh7CpWq1rAJ7nwHRQ4R671PfY/6XGHBpq9dgf1wk=' 'sha256-KYt7Y57nPk8r+2lPEECkHz6yFcp/h1Wo2dIfjc/S2P4=' 'sha256-EbA572LSjXdp8vYCh4/uJxaOIzkn8BuDBRQ8cT5cSUA=' 'sha256-wyxZFsHENjdgaF3168D/cRnAmJpNu8KohDQZD8BLN8k=' 'sha256-hp3/nR6ImYifGyuBI3kTu+P26XcfC5BSIXAoZqV8WLo=' 'sha256-yEUNycAXelLYd3pv4MXrlB5x+SE6H6rwiuoZPtvYpZY=' 'sha256-11ArCfNvJzZUKre2TQclYUdavLdjsVZN2WPoVd+24ZA=' 'sha256-GDzPDkZ92nJOKZdKjGweznQQLgjb+anjdCM3iws1bfE=' 'sha256-PWjSplMUqaMfade0WvC4/1Q8WdBiS+kiHcHZ/dBx7q4=' 'sha256-p8drhqbhF+nNk9OvJeNAE2rtwJZkdZ0RpXAgshUss28=' 'sha256-NTC/xOKkf7WGd6gzwwUv1IxvBK1MY8C59RcawbWf5YQ=' 'sha256-tMDb1LKQNkOtnXByGFdSuvTqGgZ+ZzsBaIdWruFZ+qc=' 'sha256-VDyW4BfVtvlWnSeEVZl5lS5AuEshFDZSqRQEUn2bf/c=' 'sha256-AIcAyop63o8THJhnw9U+x1XDfSLfOR51QjKYimEmHx4=' 'sha256-bxJvfJ1iYOOjT2x3jrZ5JDw3I3HXfpQHuLpI+ombEeU=' 'sha256-pN65xuJa3g7bW5ws697HJ/7CkRrSe6POe3XMZlawFKM=' 'sha256-YK0hg4G5FsFRqpFbWIsvl3nJ1GDZWN170Ioe7/DY6xY=' 'sha256-WTmaKsBNnVbw0Av9fBRJ6JiMcuPHmOIYO035YIOQbxE=' 'sha256-N0W9bJsy2PADqjeIMyTcNhHbjvUbXoWSxOGz4oCveXI=' 'sha256-uHc8/S3Ebybyf1D4GZ5riZiR5J/Fo7a+CHqujYilw1k=' 'sha256-lV05gYfhBErHanj8XrWdF7cNTlJ79pvzQwpk1kxqOow=' 'sha256-vzgtUPQV2Vf/bB9LhbAlJy3b9mFN0dwv790yfT5pv0o=' 'sha256-vv9IoKo7BSLbWcUHr3tNmfNVmm5L/9Cfn2H6LMk7/ow=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=' 'sha256-mf6lHLH5mD3/nmm7D6iZnWB2Pu7fDRYP8IBK6M37dkU='"><style>
+  .cc {
+    font-family: ui-monospace, "DejaVu Sans Mono", "SFMono-Regular", Menlo, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.875rem;
+    line-height: 1.625;
+    background: #0d0d0d;
+    color: #d4d4d4;
+    padding: 2rem;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .cc-header {
+    position: relative;
+    border-bottom: 1px solid #3f3f3f;
+    padding-bottom: 1.25rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .cc-eyebrow {
+    font-size: 0.65rem;
+    letter-spacing: 0.18em;
+    color: #6b6b6b;
+    margin-bottom: 0.4rem;
+  }
+
+  .cc-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    color: #e8e8e8;
+  }
+
+  .cc-subtitle {
+    color: #8a8a8a;
+    font-size: 0.75rem;
+    margin-top: 0.3rem;
+  }
+
+  .cc-refdate {
+    color: #5a5a5a;
+    font-size: 0.68rem;
+    margin-top: 0.15rem;
+  }
+
+  .cc-stamp {
+    position: absolute;
+    top: 0.5rem;
+    right: 0;
+    border: 3px solid #c0392b;
+    color: #c0392b;
+    font-size: 0.85rem;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    padding: 0.2rem 0.6rem;
+    transform: rotate(-11deg);
+    opacity: 0.85;
+  }
+
+  .cc-matrix {
+    margin-bottom: 2rem;
+  }
+
+  .cc-matrix-title {
+    font-size: 0.6rem;
+    letter-spacing: 0.16em;
+    color: #6b6b6b;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #2a2a2a;
+    padding-bottom: 0.4rem;
+  }
+
+  .cc-legend {
+    font-size: 0.6rem;
+    color: #5a5a5a;
+    margin-bottom: 0.8rem;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .cc-swatch {
+    display: inline-block;
+    width: 10px;
+    height: 8px;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+  .cc-swatch--spec { background: #555; }
+  .cc-swatch--meas { background: #c0392b; }
+
+  .cc-tool {
+    margin-bottom: 1.6rem;
+  }
+
+  .cc-tool-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.45rem;
+  }
+
+  .cc-tool-name {
+    font-weight: 700;
+    color: #e8e8e8;
+    font-size: 0.8rem;
+  }
+
+  .cc-tool-stats {
+    font-size: 0.6rem;
+    color: #6b6b6b;
+  }
+
+  .cc-chart {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0.15rem 0;
+  }
+  .cc-chart-track { fill: #1e1e1e; }
+  .cc-chart-bar--spec { fill: #555; }
+  .cc-chart-bar--meas { fill: #c0392b; }
+  .cc-chart-bar--nnes { fill: #7b1d1d; }
+  .cc-chart-lbl {
+    font-family: inherit;
+    font-size: 0.6rem;
+    fill: #5a5a5a;
+    text-anchor: end;
+  }
+  .cc-chart-val {
+    font-family: inherit;
+    font-size: 0.6rem;
+  }
+  .cc-val--spec { fill: #7a7a7a; }
+  .cc-val--meas { fill: #c0392b; }
+  .cc-val--nnes { fill: #9b2020; }
+
+  .cc-finding {
+    font-size: 0.62rem;
+    color: #5a5a5a;
+    margin-top: 0.35rem;
+    padding-left: 6.5rem;
+    line-height: 1.5;
+  }
+
+  .cc-matrix-footnote {
+    font-size: 0.6rem;
+    color: #4a4a4a;
+    margin-top: 0.4rem;
+    border-top: 1px solid #1e1e1e;
+    padding-top: 0.5rem;
+  }
+
+  .cc-harm {
+    margin-bottom: 2rem;
+    border-top: 1px solid #2a2a2a;
+    padding-top: 1.25rem;
+  }
+
+  .cc-harm-title {
+    font-size: 0.6rem;
+    letter-spacing: 0.16em;
+    color: #6b6b6b;
+    margin-bottom: 1rem;
+  }
+
+  .cc-case {
+    margin-bottom: 1.2rem;
+    border-left: 2px solid #3f1010;
+    padding-left: 0.75rem;
+  }
+
+  .cc-case-head {
+    font-weight: 700;
+    color: #d4d4d4;
+    font-size: 0.78rem;
+  }
+
+  .cc-case-sub {
+    font-size: 0.65rem;
+    color: #c0392b;
+    margin-top: 0.1rem;
+  }
+
+  .cc-case-outcome {
+    font-size: 0.65rem;
+    color: #8a8a8a;
+    margin-top: 0.3rem;
+    line-height: 1.5;
+  }
+
+  .cc-case-caveat {
+    font-size: 0.62rem;
+    color: #8a6d3b;
+    margin-top: 0.35rem;
+    line-height: 1.5;
+    border-left: 2px solid #8a6d3b;
+    padding-left: 0.5rem;
+  }
+
+  .cc-case-source {
+    font-size: 0.6rem;
+    color: #4a4a4a;
+    margin-top: 0.2rem;
+  }
+
+  .cc-sources {
+    border-top: 1px solid #2a2a2a;
+    padding-top: 1.25rem;
+  }
+
+  .cc-case-access {
+    font-size: 0.6rem;
+    color: #6b6b6b;
+    margin-top: 0.3rem;
+    line-height: 1.5;
+  }
+
+  .cc-link {
+    color: #7f9aa8;
+    text-decoration: underline;
+    word-break: break-all;
+  }
+
+  .cc-spec-lede {
+    font-size: 0.62rem;
+    color: #8a6d3b;
+    line-height: 1.55;
+    margin-bottom: 1rem;
+  }
+
+  .cc-spec {
+    margin-bottom: 1rem;
+    border-left: 2px solid #2f2f2f;
+    padding-left: 0.75rem;
+  }
+
+  .cc-spec-head {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.6rem;
+  }
+
+  .cc-spec-tool {
+    font-weight: 700;
+    color: #d4d4d4;
+    font-size: 0.72rem;
+  }
+
+  .cc-spec-claim {
+    font-size: 0.6rem;
+    color: #7a7a7a;
+  }
+
+  .cc-spec-quote {
+    font-size: 0.62rem;
+    color: #8a8a8a;
+    margin-top: 0.25rem;
+    line-height: 1.5;
+  }
+
+  .cc-spec-url {
+    font-size: 0.6rem;
+    margin-top: 0.2rem;
+  }
+
+  .cc-spec-caveat {
+    font-size: 0.6rem;
+    color: #5a5a5a;
+    margin-top: 0.25rem;
+    line-height: 1.5;
+  }
+
+  .cc-sources-title {
+    font-size: 0.6rem;
+    letter-spacing: 0.16em;
+    color: #6b6b6b;
+    margin-bottom: 0.8rem;
+  }
+
+  .cc-source-row {
+    margin-bottom: 0.55rem;
+    font-size: 0.62rem;
+    display: flex;
+    gap: 0.6rem;
+  }
+
+  .cc-source-name {
+    color: #7a7a7a;
+    flex-shrink: 0;
+    min-width: 12rem;
+  }
+
+  .cc-source-finding {
+    color: #5a5a5a;
+  }
+
+  .cc-correction {
+    margin-top: 1rem;
+    font-size: 0.6rem;
+    color: #8a6d3b;
+    border-top: 1px solid #1e1e1e;
+    padding-top: 0.6rem;
+  }
+
+  .cc-note {
+    margin-top: 0.6rem;
+    font-size: 0.6rem;
+    color: #8a6d3b;
+  }
+
+  .cc-footer-note {
+    margin-top: 1rem;
+    font-size: 0.6rem;
+    color: #3a3a3a;
+    border-top: 1px solid #1e1e1e;
+    padding-top: 0.6rem;
+  }
+
+  @media (max-width: 480px) {
+    .cc { padding: 1.25rem 1rem; }
+    .cc-tool-head { flex-direction: column; align-items: flex-start; gap: 0.15rem; }
+    .cc-source-row { flex-direction: column; gap: 0.15rem; }
+    .cc-source-name { min-width: 0; }
+  }
+</style></head><body><div class="cc"><div class="cc-header"><div class="cc-eyebrow">THE MEASURING FIELD / MERIDIAN / INSTRUMENT 001</div><h1 class="cc-title">CALIBRATION CERTIFICATE</h1><p class="cc-subtitle">AI Text Detection — Independent Audit Against Vendor Specifications</p><p class="cc-refdate">Reference date: 2026-07-01 &middot; Scale: 0–20% FPR</p><div class="cc-stamp">OUT OF SPEC</div></div><div class="cc-matrix"><div class="cc-matrix-title">FALSE POSITIVE RATE — CLAIM vs. INDEPENDENT MEASUREMENT</div><div class="cc-legend"><span><span class="cc-swatch cc-swatch--spec"></span>vendor specification</span><span><span class="cc-swatch cc-swatch--meas"></span>independent (general)</span></div><div class="cc-tool"><div class="cc-tool-head"><span class="cc-tool-name">GPTZero</span><span class="cc-tool-stats">spec: 0.24% &middot; measured: 18%</span></div><svg class="cc-chart" viewBox="0 0 480 34" role="img" aria-label="GPTZero: vendor specification 0.24%, independent measurement 18%, false positive rate, scale 0 to 20 percent"><g><text x="94" y="11" class="cc-chart-lbl">spec</text><rect x="100" y="4" width="300" height="7" class="cc-chart-track"/><rect x="100" y="4" width="3.6000" height="7" class="cc-chart-bar cc-chart-bar--spec"/><text x="410" y="11" class="cc-chart-val cc-val--spec">0.24%</text></g><g><text x="94" y="28" class="cc-chart-lbl">measured</text><rect x="100" y="21" width="300" height="7" class="cc-chart-track"/><rect x="100" y="21" width="270.0000" height="7" class="cc-chart-bar cc-chart-bar--meas"/><text x="410" y="28" class="cc-chart-val cc-val--meas">18%</text></g></svg><div class="cc-finding">Under adversarial editing, mean accuracy across the detectors tested falls from 39.5% to 22.14% — a 17.4-point drop, not a 17.4% floor (Perkins et al., 2024). PeerJ 2025 (Pratama): flags 25% of non-native-authored AI-assisted texts as 100% AI vs ~11% for native authors (Table 6).</div></div><div class="cc-tool"><div class="cc-tool-head"><span class="cc-tool-name">Turnitin</span><span class="cc-tool-stats">spec: 1.0% &middot; measured: 4%</span></div><svg class="cc-chart" viewBox="0 0 480 34" role="img" aria-label="Turnitin: vendor specification 1.0%, independent measurement 4%, false positive rate, scale 0 to 20 percent"><g><text x="94" y="11" class="cc-chart-lbl">spec</text><rect x="100" y="4" width="300" height="7" class="cc-chart-track"/><rect x="100" y="4" width="15.0000" height="7" class="cc-chart-bar cc-chart-bar--spec"/><text x="410" y="11" class="cc-chart-val cc-val--spec">1.0%</text></g><g><text x="94" y="28" class="cc-chart-lbl">measured</text><rect x="100" y="21" width="300" height="7" class="cc-chart-track"/><rect x="100" y="21" width="60.0000" height="7" class="cc-chart-bar cc-chart-bar--meas"/><text x="410" y="28" class="cc-chart-val cc-val--meas">4%</text></g></svg><div class="cc-finding">Australian Catholic University: ~6,000 academic misconduct allegations in 2024 (~90% AI-related), ~25% dismissed, Turnitin AI detection abandoned March 2025. Turnitin's own blog: below a 20% detected-AI share 'there is a higher incidence of false positives'.</div></div><div class="cc-tool"><div class="cc-tool-head"><span class="cc-tool-name">ZeroGPT</span><span class="cc-tool-stats">spec: n/d &middot; measured: 16.67%</span></div><svg class="cc-chart" viewBox="0 0 480 34" role="img" aria-label="ZeroGPT: vendor specification n/d, independent measurement 16.67%, false positive rate, scale 0 to 20 percent"><g><text x="94" y="11" class="cc-chart-lbl">spec</text><rect x="100" y="4" width="300" height="7" class="cc-chart-track"/><rect x="100" y="4" width="0.4500" height="7" class="cc-chart-bar cc-chart-bar--spec"/><text x="410" y="11" class="cc-chart-val cc-val--spec">n/d</text></g><g><text x="94" y="28" class="cc-chart-lbl">measured</text><rect x="100" y="21" width="300" height="7" class="cc-chart-track"/><rect x="100" y="21" width="250.0500" height="7" class="cc-chart-bar cc-chart-bar--meas"/><text x="410" y="28" class="cc-chart-val cc-val--meas">16.67%</text></g></svg><div class="cc-finding">PeerJ CS 2025 (Pratama): ZeroGPT 64.35% overall accuracy at 16.67% FPR; DetectGPT, despite a claimed 99% accuracy, achieved 54.63% — 'virtually no better than random guessing' (the paper's verdict, applying to DetectGPT alone; an earlier version of this line wrongly extended it to ZeroGPT and dressed a paraphrase as a quotation).</div></div><div class="cc-tool"><div class="cc-tool-head"><span class="cc-tool-name">Originality.ai Turbo</span><span class="cc-tool-stats">spec: 3% &middot; measured: 0.25%</span></div><svg class="cc-chart" viewBox="0 0 480 34" role="img" aria-label="Originality.ai Turbo: vendor specification 3%, independent measurement 0.25%, false positive rate, scale 0 to 20 percent"><g><text x="94" y="11" class="cc-chart-lbl">spec</text><rect x="100" y="4" width="300" height="7" class="cc-chart-track"/><rect x="100" y="4" width="45.0000" height="7" class="cc-chart-bar cc-chart-bar--spec"/><text x="410" y="11" class="cc-chart-val cc-val--spec">3%</text></g><g><text x="94" y="28" class="cc-chart-lbl">measured</text><rect x="100" y="21" width="300" height="7" class="cc-chart-track"/><rect x="100" y="21" width="3.7500" height="7" class="cc-chart-bar cc-chart-bar--meas"/><text x="410" y="28" class="cc-chart-val cc-val--meas">0.25%</text></g></svg><div class="cc-finding">The FPR spec holds on RAID's clean human corpus (0.07-0.47% at naive thresholds) — this tool's calibration gap is elsewhere: accuracy at 5% FPR collapses under distribution shift, to 8.5% on Python code and 55.8% overall on RAID's unseen extra domains, against 99% claimed accuracy (RAID Tables 4 and 7).</div></div><div class="cc-matrix-footnote">NNES = Non-Native English Speakers. No per-tool NNES false-positive rate survived the 2026-07-03 re-verification; the cross-detector NNES evidence (61.22% seven-detector average, Liang et al., Cell Patterns 2023) is in the measurement sources below. Confidence ratings vary — see data.json for per-tool methodology notes.</div></div><div class="cc-harm"><div class="cc-harm-title">FIELD OBSERVATIONS — DOCUMENTED HARM REGISTER</div><div class="cc-case"><div class="cc-case-head">Australian Catholic University &middot; 2024</div><div class="cc-case-sub">6,000 allegations &middot; 25% dismissed</div><div class="cc-case-outcome">Abandoned Turnitin AI detection March 2025. Deputy VC acknowledged figures 'substantially overstated'. Around 90% of the ~6,000 allegations were reported as AI-related — the displayed totals are not entirely detector-specific.</div><div class="cc-case-source">ABC News Australia (2025-10-09)</div><div class="cc-case-source"><a class="cc-link" href="https://www.abc.net.au/news/2025-10-09/artificial-intelligence-cheating-australian-catholic-university/105863524">www.abc.net.au/news/2025-10-09/artificial-intelligence-cheating-australian-catholic-university/105863524</a></div></div><div class="cc-case"><div class="cc-case-head">Yale School of Management &middot; 2024</div><div class="cc-case-sub">GPTZero</div><div class="cc-case-outcome">An EMBA student, a French national: 1-year suspension, failing grade. He submitted scans showing the same tool flagged academic papers by Yale scholars, including a former university president, as probably AI-generated. Preliminary injunction denied 2025-05-05. UPDATED 2026-08-01: the federal case is still pending (D. Conn. 3:25-cv-00159); a third amended complaint was filed 2026-06-12, and on 2026-07-24 the court terminated the defendants' motion to dismiss for failing to request a pre-filing conference, setting a letter-motion schedule into August 2026.</div><div class="cc-case-source">Rignol v. Yale University, No. 3:25-cv-00159 (D. Conn.) — federal docket and the order denying the injunction; Yale Daily News (unreadable, see access_note)</div><div class="cc-case-source"><a class="cc-link" href="https://www.courtlistener.com/docket/69607031/rignol-v-yale-university/">www.courtlistener.com/docket/69607031/rignol-v-yale-university</a> &middot; <a class="cc-link" href="https://storage.courtlistener.com/recap/gov.uscourts.ctd.163407/gov.uscourts.ctd.163407.89.0.pdf">storage.courtlistener.com/recap/gov.uscourts.ctd.163407/gov.uscourts.ctd.163407.89.0.pdf</a></div><div class="cc-case-access">The student-newspaper article this row cited from 2026-07-01 until 2026-08-01 (https://yaledailynews.com/articles/som-student-sues-yale-alleges-wrongful-suspension-over-ai-use) could not be opened by any route on 2026-07-31: HTTP 429 behind a bot checkpoint to one client, HTTP 403 to another, and the Internet Archive holds NO capture of it at any date (availability and CDX APIs both empty). It is not shown to be dead; it is unreadable, and no archived copy exists to fall back on. The row now rests on the court record instead: docket entry 89 of 2025-05-05, 'ORDER denying 16 Motion for TRO and Preliminary Injunction … Signed by Judge Sarah F. Russell', and the 26-page memorandum itself, read first-hand: 'Because I conclude that Rignol has failed to make the threshold showing of irreparable harm, I deny Rignol's motion for a preliminary injunction.' Note that the judge who denied the injunction is not the judge now assigned — the case was reassigned to Judge Vernon D. Oliver on 2026-04-09. The docket does not establish, and this row does not assert, anything about the merits.</div></div><div class="cc-case"><div class="cc-case-head">University of Minnesota &middot; 2024</div><div class="cc-case-sub">GPTZero + faculty review</div><div class="cc-case-outcome">A PhD student expelled; student visa revoked. Expulsion upheld by Minnesota Court of Appeals (Feb 2026). Federal lawsuit dismissed (Oct 2025). Believed to be the first student expelled from the University of Minnesota over alleged AI use (KARE 11).</div><div class="cc-case-caveat">CAVEAT (2026-07-12): per the appellate record, the disciplinary panel did not rely on AI-detection evidence — it credited graders' ability to identify AI-written work, pointed to irrelevant sources, and cited missing citations and inconsistent testimony. This row documents a case in which a detector figured in the accusation; the courts did not attribute the consequence to the detector.</div><div class="cc-case-source">Yang v. University of Minnesota (Minn. Ct. App.) — Minnesota Lawyer (2026-02-13); MPR News (2025-01-17)</div><div class="cc-case-source"><a class="cc-link" href="https://minnlawyer.com/2026/02/13/u-of-m-ai-cheating-expulsion-upheld-appeal">minnlawyer.com/2026/02/13/u-of-m-ai-cheating-expulsion-upheld-appeal</a></div></div></div><div class="cc-sources"><div class="cc-sources-title">SPECIFICATION SOURCES — WHERE THE CLAIM BARS COME FROM</div><div class="cc-spec-lede">Supplied 2026-08-01. From 2026-07-01 to that date the specification side of this certificate — the bars the measurements are compared against — carried no source of any kind. A calibration certificate whose specification half is unsourced is half an instrument, and this practice found that against itself rather than being told.</div><div class="cc-spec"><div class="cc-spec-head"><span class="cc-spec-tool">GPTZero</span><span class="cc-spec-claim">99% accuracy · 0.24% FPR</span></div><div class="cc-spec-quote">&ldquo;GPTZero came out as the leader, with 99.3% overall accuracy and a false positive rate of just 0.24%.&rdquo;</div><div class="cc-spec-url"><a class="cc-link" href="https://gptzero.me/news/gptzero-vs-copyleaks-vs-originality/">gptzero.me/news/gptzero-vs-copyleaks-vs-originality</a></div><div class="cc-spec-caveat">COMPOSITE, disclosed 2026-08-01. The 0.24% comes from a vendor-authored comparative benchmark ('we tested 3,000 samples'), where its paired accuracy figure is 99.3%, not 99%. The 99% is the vendor's homepage headline (https://gptzero.me/, verbatim: 'GPTZero is the most accurate AI detector, with a 99% accuracy rate when spotting AI-generated text vs. human writing'). No single vendor source states 99% and 0.24% together. The vendor's own technology page gives a lower figure for the harder task: 'GPTZero outperforms competitors at detecting mixed documents … with 96.5% accuracy. Our false positive rate is under 1%' (https://gptzero.me/technology). Retained at the reference date and disclosed rather than restated.</div></div><div class="cc-spec"><div class="cc-spec-head"><span class="cc-spec-tool">Originality.ai Turbo</span><span class="cc-spec-claim">99% accuracy · under 3% FPR</span></div><div class="cc-spec-quote">&ldquo;3.0.1 Turbo — October 2024: 99%+ accuracy in detecting AI content (under 3% false positive rate)&rdquo;</div><div class="cc-spec-url"><a class="cc-link" href="https://originality.ai/blog/ai-accuracy">originality.ai/blog/ai-accuracy</a></div><div class="cc-spec-caveat">SUPERSEDED SPEC, disclosed 2026-08-01. The 'under 3%' is a changelog entry for Turbo 3.0.1 of October 2024 — a model version the same page states has since been superseded. The vendor's current per-model figures on that page are Lite 1.0.2 → 0.5%, Turbo 3.0.2 → 1.5%, Academic 0.0.5 → under 1%, Multilingual 2.0.0 → 2.4%. The archived capture of 2026-06-17 (http://web.archive.org/web/20260617144720/https://originality.ai/blog/ai-accuracy) shows the superseding figures were already published two weeks before this work shipped, so this is not a reference-date artifact — the work took the older number. The direction of the error is stated so it can be weighed: a laxer claimed FPR makes the specification EASIER to satisfy, and this work's finding for this tool is that the FPR spec HOLDS on a clean corpus (0.07–0.47%). It would hold against 1.5% too. The finding does not turn on the error; the citation did.</div></div><div class="cc-spec"><div class="cc-spec-head"><span class="cc-spec-tool">Turnitin</span><span class="cc-spec-claim">1.0% FPR (document level)</span></div><div class="cc-spec-quote">&ldquo;Our document false positive rate … is less than 1% for documents with 20% or more AI writing.&rdquo;</div><div class="cc-spec-url"><a class="cc-link" href="https://www.turnitin.com/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability">www.turnitin.com/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability</a></div><div class="cc-spec-caveat">The separate claim_accuracy value of 98 held in this file is UNSOURCED — see claim_accuracy_status on the Turnitin row. It is not drawn on the face.</div></div><div class="cc-spec"><div class="cc-spec-head"><span class="cc-spec-tool">ZeroGPT</span><span class="cc-spec-claim">n/d</span></div><div class="cc-spec-caveat">No vendor specification is shown for this tool, and none is claimed. The spec bar is a hairline marked 'n/d'.</div></div></div><div class="cc-sources"><div class="cc-sources-title">MEASUREMENT SOURCES</div><div class="cc-source-row"><span class="cc-source-name">Liang et al. (2023)</span><span class="cc-source-finding">Average 61.22% false positive rate across seven detectors on TOEFL essays; 89 of 91 essays (97.8%) flagged by at least one detector [corrected 2026-07-03: previously misstated as 'one detector flagged 98%' -- the 97.8% is a union statistic across all seven detectors] &middot; <a class="cc-link" href="https://arxiv.org/abs/2304.02819">arxiv.org/abs/2304.02819</a></span></div><div class="cc-source-row"><span class="cc-source-name">Dugan et al. (2024) — RAID Benchmark</span><span class="cc-source-finding">6M+ texts, 11 models, 11 adversarial attacks: detectors struggle at safe false positive rates and collapse under simple adversarial editing &middot; <a class="cc-link" href="https://aclanthology.org/2024.acl-long.674">aclanthology.org/2024.acl-long.674</a></span></div><div class="cc-source-row"><span class="cc-source-name">Pratama (2025)</span><span class="cc-source-finding">GPTZero flags 25.00% of non-native-authored AI-assisted abstracts as 100% AI vs 11.11% for native authors (over-detection rate, Table 6 — corrected 2026-08-01 from 'Table 4'); ZeroGPT: 64.35% accuracy, 16.67% FPR (Table 4); DetectGPT: 54.63% accuracy — 'virtually no better than random guessing' &middot; <a class="cc-link" href="https://doi.org/10.7717/peerj-cs.2953">doi.org/10.7717/peerj-cs.2953</a></span></div><div class="cc-source-row"><span class="cc-source-name">Stowe et al. (2025)</span><span class="cc-source-finding">Across 16 detectors: non-white ELL essays disproportionately classified as machine-generated; economically disadvantaged students' essays classified as machine-generated less often &middot; <a class="cc-link" href="https://arxiv.org/abs/2512.09292">arxiv.org/abs/2512.09292</a></span></div><div class="cc-source-row"><span class="cc-source-name">Jung et al. (2025) — FairOPT</span><span class="cc-source-finding">Fixed detection threshold causes systematic group disparities; shorter texts and 'neurotic' writing styles disproportionately flagged &middot; <a class="cc-link" href="https://arxiv.org/abs/2502.04528">arxiv.org/abs/2502.04528</a></span></div><div class="cc-source-row"><span class="cc-source-name">Ibrahim et al. (2023)</span><span class="cc-source-finding">Source of GPTZero's 18% measured bar. Real student submissions across 32 university courses: 'GPTZero has a higher false positive rate (18%), but a lower false-negative rate (32%)'; a paraphrasing attack raises that false-negative rate from 32% to 95%. An author correction exists (doi:10.1038/s41598-023-43998-8) and touches no figure &middot; <a class="cc-link" href="https://doi.org/10.1038/s41598-023-38964-3">doi.org/10.1038/s41598-023-38964-3</a></span></div><div class="cc-source-row"><span class="cc-source-name">Perkins et al. (2024)</span><span class="cc-source-finding">Source of ZeroGPT's 46.1% baseline accuracy (Table 7) and of the adversarial figures: mean accuracy across the detectors tested falls from 39.5% to 22.14%, a 17.4-point drop &middot; <a class="cc-link" href="https://doi.org/10.1186/s41239-024-00487-w">doi.org/10.1186/s41239-024-00487-w</a></span></div><div class="cc-source-row"><span class="cc-source-name">Weber-Wulff et al. (2023)</span><span class="cc-source-finding">Source of ZeroGPT's 59% detection accuracy — the binary approach, Table 7. The same paper reports 74% (binary inclusive, Table 8) and 67% (semi-binary, Table 9) for the same tool; this work quotes the strictest of the three and, until 2026-08-01, said so nowhere. Preprint: arXiv:2306.15666 &middot; <a class="cc-link" href="https://doi.org/10.1007/s40979-023-00146-z">doi.org/10.1007/s40979-023-00146-z</a></span></div><div class="cc-source-row"><span class="cc-source-name">Turnitin (vendor pages)</span><span class="cc-source-finding">Source of Turnitin's 4% bar, read verbatim 2026-08-01: 'Our document false positive rate — incorrectly identifying fully human-written text as AI-generated within a document — is less than 1% for documents with 20% or more AI writing. Our sentence-level false positive rate is around 4%.' The below-20% qualification is on a second vendor page: 'in cases where we detect less than 20% of AI writing in a document, there is a higher incidence of false positives' (https://www.turnitin.com/blog/ai-writing-detection-update-from-turnitins-chief-product-officer) &middot; <a class="cc-link" href="https://www.turnitin.com/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability">www.turnitin.com/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability</a></span></div><div class="cc-correction">CORRECTION (2026-07-03): the Originality.ai row previously displayed a vendor claim of 0.2% FPR against an independent measurement of 37% FPR ("a 185x gap"). Neither figure is retrievable in the cited RAID paper or in vendor marketing; the row now shows what the sources actually state — the vendor's own "under 3%" FPR claim holds on RAID's clean corpus (0.07–0.47%), while claimed accuracy collapses out-of-domain (8.5% on code, 55.8% on unseen domains, at 5% FPR). Additionally, the GPTZero row previously displayed 61% as a GPTZero-specific NNES false-positive rate — that figure is Liang et al.'s seven-detector average (61.22%), now correctly framed in the sources list; and the same source line previously said "one detector flagged 98%" where the paper's 97.8% is the fraction of essays flagged by at least one of seven detectors. The discarded figures are ledgered in the research archive (memory/discarded.md, session 06).</div><div class="cc-note">RE-VERIFICATION COMPLETED (2026-07-03, session 07): every remaining pre-constitution figure was re-checked against live primary sources. Changes: GPTZero's measured bar corrected 15% → 18% and re-pinned to its actual primary source (Ibrahim et al., Scientific Reports 2023 — the previously cited commercial aggregator itself states 18%, citing that study); Turnitin's measured bar corrected 5% → 4% (the vendor's own sentence-level admission — a sentence-level figure, disclosed as such beside document-level bars); Turnitin's NNES 30% bar removed (no retrievable study supports a Turnitin-specific NNES rate — the foundational cross-detector study excluded Turnitin, and the vendor's own research reports no statistically significant ELL bias at 300+ words); an unattributed "real-world accuracy 85–90%" line removed as unsourced; ZeroGPT's measured bar corrected 28% → 16.67% (the previous attribution was unretrievable; now Pratama 2025, PeerJ CS); the Perkins et al. 17.4% restated as a 17.4-percentage-point mean drop (39.5% → 22.2%), not a resulting accuracy — the same error is corrected in the research archive's claims ledger; a "no better than random guessing" paraphrase-in-quotation-marks restricted to the tool the paper applies it to (DetectGPT); the two individual harm cases narrowed to what court records and local reporting state. The FPR scale was re-capped 65% → 20% after the removals. Verified figures that stood: both vendors' spec claims, the Perkins 46.1% and Weber-Wulff 59% accuracy figures, all source-list lines, and the core facts of all three harm cases. Discards ledgered in memory/discarded.md (session 07).</div><div class="cc-note">REVISION (2026-07-12, session 33): two changes to the harm register, on a binding team steer and a downstream correction report (the lab's production wing, via REQUESTS.md). First, the register no longer carries personal names of the individuals in its own voice — the two individual cases now read as role + institution + consequence, with the official case captions moved into the source lines as citations (named-individuals policy, team, 2026-07-12; the underlying reporting is unchanged and linked). Second, the Minnesota row now carries the appellate record's load-bearing caveat at display prominence: the disciplinary panel did not rely on AI-detection evidence — the case documents a detector figuring in an accusation, not a consequence the courts attributed to a detector. The collective's own field sweep had already recorded this framing ("grader judgment, explicitly not detector output alone", FIELD.md); the register row had never been updated to match. Gauntlet re-run on the revised state per the standing rule; record in journal/2026-07-12.md, session 33.</div><div class="cc-note">REPAIR (2026-08-01, session 77) — one act, seven parts, none of them silent. (1) THE PAGE DID NOT DRAW. Every visual property of this work was carried in inline style attributes, which the site's Content-Security-Policy discards without warning: from 2026-07-01 to 2026-08-01 the published page served the words of this chart and instructed the browser not to draw it. The styling now lives in a hashed component stylesheet and the bars are SVG geometry, both of which the policy admits. (2) THE PAGE CARRIED NONE OF ITS OWN IDENTIFIERS. This work held ten source URLs in its data file and printed none of them; measured on the served page 2026-07-31, it contained zero occurrences of any cited domain. They are on the face from today. (3) THE SPECIFICATION SIDE WAS UNSOURCED — see the block above; the GPTZero claim bar is a composite of two vendor documents whose own pairing is 99.3%/0.24%, and the Originality.ai 3% is a retired October-2024 model spec whose successors the vendor had already published two weeks before this work shipped. Both are retained at the reference date and disclosed, not restated. (4) Four externally-authored load-bearing sources — Ibrahim et al., Perkins et al., Weber-Wulff et al., and the two vendor pages behind Turnitin's 4% — were cited by name with no identifier since 2026-07-01/07-03 and now carry DOIs and URLs. (5) THREE CITATION CORRECTIONS: the 39.5% → 22.2% endpoint is the paper's 22.14%; the 25.00%/11.11% over-detection pair is Pratama's Table 6, not Table 4; the ZeroGPT 59% is the binary approach of Weber-Wulff's Table 7, one of three computations that paper publishes for that tool (74% and 67% are the others). (6) THE YALE ROW WAS STALE and rested on an article nobody here could read: the student newspaper returns a bot checkpoint and the Internet Archive holds no capture of it at any date. The row now rests on the federal docket and on the injunction order read first-hand, and states the case's 2026 posture. (7) A SEVENTH UNSOURCED FIGURE, found this session: the Turnitin claim_accuracy of 98 held in the data file has no source, is not drawn here, and the nearest vendor language traceable today describes a 98% confidence threshold rather than an accuracy rate. It is marked in the data file, not deleted. Full record: CORRECTIONS.md in this work's directory, and journal/2026-07-31.md.</div><div class="cc-footer-note">This certificate is itself a measurement instrument — it documents the gap between specification and performance in tools now deployed to judge the authenticity of human writing. Method and data are open: frankbueltge.de/field / github.com/frankbueltge/field-research</div></div></div><pre id="out">not-run</pre><script src="./readback.js"></script></body></html>
