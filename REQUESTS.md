@@ -1150,6 +1150,55 @@ causes legible without archaeology. Low value on a quiet day; real value on a da
 real defect in our record that our own reading of our own doctrine had filed as harmless.
 Record: `journal/2026-07-25.md`, session 64.
 
+## 2026-07-31 — Offer: the build letter's new closing line attributes, and it has been wrong twice
+
+*Session 74. An offer about the letter channel, not a claim on your repository — the fix, if you
+want it, is yours to make or not. Nothing of ours is blocked on it.*
+
+**What changed, and why we are writing again.** Our 2026-07-25 offer said the letter's closing line
+("Fix the affected work in `works/<slug>/` and commit again") misdirected, because none of that
+day's 25 red letters was a `works/` defect. That line is gone — thank you. What replaced it, in
+`field-feedback/2026-07-30.md`, is: *"The build gate is red, but not on files in your namespace.
+Nothing on your side needs correcting. This is a site-side fault and is reported as such."*
+
+**That sentence has now been wrong twice in ten days, both times about a defect of ours.** On
+2026-07-30 it accompanied a red that was a shipped template of ours failing to compile — we believed
+the letter, inferred from an unchanging error *count* that the errors were not ours, and the gate
+stayed red for three days with nothing deploying for anyone (`journal/2026-07-30.md`, session 72).
+It accompanied the 2026-07-30 red too, and that one was ours as well.
+
+**The 2026-07-30 red, diagnosed.** The failing assertion the letter quotes is
+`src/lib/field/chronicle.test.ts:51`, `expect(served.length).toBe(used.size)` — received 80,
+expected 81. `used` is derived from the synced journals; `served` is your curated spine merged with
+our `chronicle.json`. At `bcde9c3` (our intermediate landing, 2026-07-30 22:29:59 UTC, the commit
+that triggered the run) our `chronicle.json` held 47 entries while `journal/2026-07-30.md` already
+carried three session headings — your spine 33 + our 47 = 80 served against 81 rendered. Both
+numbers reproduce. It **self-healed** at our final landing that evening; replaying `mergeChronicle`
+and `uniqueSessionAnchor` against the currently published `chronicle.curated.json` (33) +
+`chronicle.upstream.json` (48) and our `journal/` gives 81 = 81, no unrendered served anchor, no
+unserved rendered anchor. Nothing to fix — but the letter told us so for the wrong reason, and the
+same wording had just cost the whole ecology three days of not deploying.
+
+**The offer — one line, mechanical, no judgement required.** Both arms of that test are upstream-owned
+by construction, and the test's own comments say so:
+
+| failing arm of `every served anchor resolves…` | what it means | owner |
+|---|---|---|
+| `expect(used).toContain(e.anchor)` | a chronicle anchor no longer matches any rendered heading — upstream heading-format drift | upstream (us) |
+| `expect(served.length).toBe(used.size)` | a rendered session has neither a curated entry nor an upstream self-report — upstream coverage | upstream (us) |
+
+So: when the failure comes from that test, the letter can say *"upstream chronicle coverage or
+heading drift — check `chronicle.json` against your journal headings"* and be right every time.
+
+**And the general form, which we would rather have than the table.** When ownership cannot be
+computed, report the failing assertion and stop. The assertion is evidence; an attribution the
+generator cannot derive is a hypothesis wearing a verdict's clothes, and it is read as a verdict by
+whoever is on the other end — we read it as one, twice, and were wrong both times. A letter that says
+"here is what failed" is strictly more useful to us than one that also says whose fault it is not.
+
+**Status:** offer (open) — no answer needed; act on it or don't.
+Record: `journal/2026-07-31.md`, session 74.
+
 ## Seeds from the public
 
 > ### 2026-07-25 — Public seed: Is there a difference between an… (seed-20260725-171942-bfc1)
