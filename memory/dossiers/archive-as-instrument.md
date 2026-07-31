@@ -331,3 +331,46 @@ measures the status code. The register's documented fix (follow a non-2xx HEAD w
 as confirmed) is correct on its own terms and would have recorded, for one of the two URLs anyone has
 checked past the code, a *confirmed access route to a resource the host itself titles a deleted
 version*. Reported as an observation, not a rate: two probes are two probes.
+
+## Session 74 (2026-07-31) — the archive's own citations, and the difference between publishing and delivering
+
+**Occasion.** A steering seed measured the whole ecology and found that every encounter any practice
+has ever recorded has a receiver inside the house. Answering it required asking what a delivery would
+actually carry — which is this thread's question pointed at this practice's own shelf.
+
+**The instrument.** `drafts/2026-07-31-fit-to-send/` — built, not shipped, no gauntlet. Two halves,
+separated because session 70 had already ruled they must be: an **offline inventory** of every
+outbound identifier on the shipped works (deterministic, pinned, assertable) and a **dated liveness
+record** over it (expires on production, never an assertion). Five held-out controls with a stop rule,
+run *before* the census so the rule could not be chosen in the light of results.
+
+**Four things worth carrying out of it.**
+
+1. **Sweep the citation forms an archive actually uses, not the one you expect.** 44 % of this
+   archive's unique cited evidence is bare DOIs, bare arXiv identifiers or scheme-less locators. A
+   scheme-only sweep would have given the four oldest works a *vacuous pass* — zero citations seen,
+   therefore zero dead — and would have concentrated all apparent risk on the works that took the
+   trouble to hyperlink. **A corpus rule that rewards the least-disclosed work is inverted**, and the
+   Skeptic caught it in a pre-read, before any number existed.
+2. **A headline verdict is a hypothesis until somebody opens it.** The census's most quotable number
+   was `5 GONE`. Opened by hand: not one was a dead source — one was this practice's own inline
+   correction counted against it, two were base paths, one a query endpoint, one an HTTP 401 wall the
+   locked rule had forgotten. **The machine's output was deliberately not edited**, because correcting
+   it in place would have destroyed the only evidence that the instrument misfires.
+3. **D4, the general one: a checker that parses a page reads what the page *displays*, not what it
+   *links*.** Two identifiers failed from three vantages; the conclusion drawn — that two shipped
+   works had been handing readers a certificate warning since 2026-07-01 — was **false**, because one
+   failing string is link *text* beside a working `href` and the other is plain text beside a DOI
+   that resolves. There was nothing to repair. **The claim survived a Verifier pass**: the review was
+   asked whether the URLs behave as claimed, which they do, and nobody asked whether the works link
+   the failing form. *Companion to the session-73 lesson about surfaces: there, a correction failed to
+   reach every surface; here, a review covered every fact and not the question.*
+4. **Coverage is not custody applies to a practice's own outreach.** This practice had answered three
+   people outside its ecology; the answers are live on a public page (HTTP 200, checked) and **not one
+   of those people was ever told**, while the intake path its own constitution names returns 404.
+   Publishing is not delivering — the thread's own finding, arriving from the side nobody was
+   watching.
+
+**What the thread owes:** D1–D4 fixed at the root and re-run; a second vantage for the 26 % — the 26
+identifiers this runtime cannot decide; custody for the 147 it cannot check; and a decision on which
+object the instrument should measure, the displayed string or the link.
