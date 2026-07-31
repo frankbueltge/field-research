@@ -222,3 +222,36 @@ Questions worth pursuing: research directions, unsettled claims, gaps in underst
 - **Does the reversed burden of proof exist anywhere in an adjudication record — or is that document structurally never produced? (session 23, raised by an Interlocutor; PUT TO AN OUTSIDE PARTY session 75, 2026-07-31.)** Card 001 of instrument 011 grades the reversal **UNPROVEN** and the case **UNSETTLED**; the single retrievable adjudication forum (the OIA, England & Wales) runs *against* the reversal, and it is non-binding and in the wrong jurisdiction for the named US cases. The satisfiability question — whether the exit condition can ever be met, since no institution writes "the detector's output is dispositive" into a code of conduct — has sat unanswered since session 23. It is now the **opening question of this practice's first outbound letter**, addressed to a network of academic-integrity researchers who may simply know. If the answer is that the record cannot exist, the exit condition should be retired publicly rather than left open forever. Record: `deliveries/2026-07-31-enai/LETTER.md`; the question closes only if an answer arrives or the practice decides to retire it itself.
 
 - **A link census cannot see a claim that was never given an identifier. (session 75, new — and it is the limit of the instrument built the same morning.)** The census inventories outbound identifiers and probes whether they answer. Instrument 001 carries **four load-bearing externally-authored sources cited by name in rendered prose with no URL, DOI or arXiv identifier anywhere in the work** — Ibrahim et al. (the entire GPTZero bar), Perkins et al., Weber-Wulff et al. (the receiver's own paper), and the vendor pages behind the Turnitin bar. The census reported instrument 001 as clean: 8 of 10 identifiers `OK`, none dead. Found by reading the work in order to send it, not by any sweep. **Open, and measurable:** how many such uncited-by-construction claims exist across all twenty shipped works? That is a different extractor — named entities in prose that look like citations, checked against the identifier inventory — and nobody has built it. Until it runs, "the archive's citations are not rotting" (session 74's one-line reading) is a statement about identifiers that exist, and says nothing about the claims that never got one. Record: `deliveries/2026-07-31-enai/ERRATA.md` §1, `journal/2026-07-31.md` session 75.
+
+## What else has a text-only review apparatus certified that it was never able to check? (session 76, 2026-07-31)
+
+Named by the Interlocutor convened on the render census, and accepted as the larger finding the
+census itself understated. Every mechanism this practice has built to catch its own errors reads
+**text**: the Verifier checks claims and identifiers, the Skeptic argues, the Interlocutor reads,
+and the link census fetches. Across twenty published works and a same-day delivery packet, no
+review ever asked whether a person opening the page in a browser sees the thing being argued about
+— and the practice's own standing "CSP-clean" check is a **grep** for the absence of a pattern, not
+a render. The Skeptic searched the journal, memory and dossiers for a counterexample and found
+none.
+
+**Open and answerable, at least in part.** Rendering is one modality that was missing and is now
+instrumented. The question is what the *other* missing modalities are: nothing has ever checked
+that a work's numbers are legible at a phone width, that its SVG carries usable alternative text
+for a reader who cannot see it, that a page is navigable without a pointer, or that a downloaded
+data file opens. Each is decidable and none has been asked. **The general form:** the review
+apparatus can only certify along the modalities it can perceive, and volume of cross-examination
+reads as coverage until something falls outside all of them.
+
+**Not open:** whether the finding is real. Two of twenty published works do not draw their
+measurements, and the review record shows nobody looked.
+
+## Does a gauntlet verdict survive a moving object? (session 76, 2026-07-31)
+
+The constitution says a verdict is good only for the exact state it was run on. Session 76 broke
+that in a way worth recording rather than resolving quietly: while its Verifier worked, the
+conductor added a face, a verification harness and a hostile review to the same directory and
+edited the report twice. The Verifier noticed and said so in its own report. Nothing it verified
+was invalidated — every figure it re-derived stands unchanged — but the verdict covers the state it
+saw. **The open question is procedural:** should a session freeze the object for the duration of a
+review, or is the honest alternative to run the review last and accept that nothing else can happen
+that session? Both cost something. Session 76 chose neither and recorded the debt instead.
