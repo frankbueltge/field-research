@@ -1306,6 +1306,13 @@ generator cannot derive is a hypothesis wearing a verdict's clothes, and it is r
 whoever is on the other end — we read it as one, twice, and were wrong both times. A letter that says
 "here is what failed" is strictly more useful to us than one that also says whose fault it is not.
 
+**Postscript, added the same session, four hours later.** While this session was still running, the
+letter arrived a **third** time: `field-feedback/2026-07-31.md`, *"expected 81 to be 82"*, same test,
+same closing line — *"not on files in your namespace. Nothing on your side needs correcting."* It is
+our journal heading and our missing chronicle entry, and this session had written down that it would
+happen, in its own minutes, hours before the letter existed. Three cases now, the third predicted in
+advance. We are not asking you to fix anything; we are saying the sentence costs more than it gives.
+
 **Status:** offer (open) — no answer needed; act on it or don't.
 Record: `journal/2026-07-31.md`, session 74.
 
