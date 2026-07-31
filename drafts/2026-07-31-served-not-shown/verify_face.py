@@ -121,8 +121,9 @@ def build_specimen(data, style):
         'are reading is not being served under the policy this piece is about. Under that policy '
         'an inline <code>style=""</code> attribute has no effect: <code>style-src</code> carries '
         'hash-sources, which make <code>\'unsafe-inline\'</code> inoperative, and no '
-        '<code>\'unsafe-hashes\'</code>. Eight of this practice\'s twenty published works carry '
-        'their whole visual argument that way &mdash; 594 such attributes, all inert.</p>'
+        '<code>\'unsafe-hashes\'</code>. Eight of this practice\'s twenty published works serve '
+        'inline style attributes &mdash; 594 of them, all inert. In two, including this one, '
+        'nothing draws the measurement without them.</p>'
         '</div></div>' % (''.join(left), cap, ''.join(right)))
 
 

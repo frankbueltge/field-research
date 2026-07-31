@@ -171,12 +171,24 @@ def layer0(chrome, style_src):
     }
 
 
+# Every work that serves inline style attributes is rendered, plus a control. The first version
+# of this list held two of the eight and the report generalised from them; the session's Skeptic
+# rendered the other five and found six of the eight draw their charts anyway, through SVG
+# presentation attributes that no style-src directive touches. Rendering all of them is the fix.
 SPECIMENS = [
     # (slug, why it is here)
     ('2026-07-01-calibration-gap', 'the piece committed for outbound delivery on 2026-07-31'),
     ('2026-07-01-the-edition', 'the largest count in the corpus'),
+    ('2026-07-01-digit-mirror', 'affected work — checked rather than assumed'),
+    ('2026-07-01-naive-detector', 'affected work — checked rather than assumed'),
+    ('2026-07-01-plausibility-engine', 'affected work — checked rather than assumed'),
+    ('2026-07-01-provenance-horizon', 'affected work — checked rather than assumed'),
+    ('2026-07-01-score-horizon', 'affected work — checked rather than assumed'),
+    ('2026-07-01-fairness-trap', 'affected work — across the seam, has a <style> block too'),
     ('2026-07-09-the-floor', 'CONTROL — a work that uses a component <style> block'),
 ]
+
+SHAPES = r'<(rect|circle|path|line|polyline|polygon|ellipse)\b'
 
 
 def layer2(chrome, pages, outdir):
@@ -220,11 +232,19 @@ def source_facts(slug):
     if not os.path.exists(p):
         return {'work_astro': False}
     s = open(p, encoding='utf-8').read()
+    # The escape hatch that decides how much a blocked style attribute costs: a shape drawn with
+    # SVG presentation attributes (fill=, stroke=) is drawn whatever style-src says, because no
+    # style-src directive reaches a presentation attribute. A work with no <svg> at all has no
+    # such fallback, and that is the difference between losing decoration and losing the argument.
     return {
         'work_astro': True,
         'static_style_attrs': len(re.findall(r'\sstyle="', s)),
         'interpolated_style_attrs': len(re.findall(r'\sstyle=\{', s)),
         'component_style_blocks': len(re.findall(r'<style', s)),
+        'svg_elements': len(re.findall(r'<svg', s)),
+        'svg_shape_elements': len(re.findall(SHAPES, s)),
+        'svg_shapes_carrying_style_attr': len(re.findall(SHAPES + r'[^>]*\sstyle=', s)),
+        'fill_or_stroke_attrs': len(re.findall(r'\s(?:fill|stroke)=', s)),
     }
 
 
@@ -251,8 +271,15 @@ def main():
             if not style_src:
                 style_src = directive(meta_csp(html), 'style-src')
 
+    # Assert rather than assume that one policy governs the whole corpus.
+    policies = {}
+    for slug, (_, html) in pages.items():
+        policies.setdefault(directive(meta_csp(html), 'style-src'), []).append(slug)
+
     out['policy'] = {
         'style_src': style_src,
+        'identical_across_all_pages': len(policies) == 1,
+        'distinct_style_src_directives': len(policies),
         'has_hash_source': "'sha256-" in style_src,
         'has_unsafe_inline': "'unsafe-inline'" in style_src,
         'has_unsafe_hashes': "'unsafe-hashes'" in style_src,
@@ -271,11 +298,17 @@ def main():
     out['layer2'] = layer2(chrome, pages, os.path.join(HERE, 'evidence'))
 
     served = [r for r in out['layer1'] if r.get('served_inline_style_attrs')]
+    no_fallback = [r for r in served if not r.get('svg_elements')]
+    fallback = [r for r in served if r.get('svg_elements')]
     out['summary'] = {
         'works_with_served_inline_style_attrs': len(served),
         'total_served_inline_style_attrs': sum(r['served_inline_style_attrs'] for r in served),
         'works_with_zero': len([r for r in out['layer1']
                                 if r.get('served_inline_style_attrs') == 0]),
+        'affected_without_svg_fallback': [r['slug'] for r in no_fallback],
+        'attrs_without_svg_fallback': sum(r['served_inline_style_attrs'] for r in no_fallback),
+        'affected_with_svg_fallback': [r['slug'] for r in fallback],
+        'attrs_with_svg_fallback': sum(r['served_inline_style_attrs'] for r in fallback),
     }
 
     json.dump(out, open(os.path.join(HERE, 'results.json'), 'w'), indent=2)

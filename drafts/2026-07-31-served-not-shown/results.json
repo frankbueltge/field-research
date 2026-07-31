@@ -11,6 +11,10 @@
       "static_style_attrs": 47,
       "interpolated_style_attrs": 3,
       "component_style_blocks": 0,
+      "svg_elements": 0,
+      "svg_shape_elements": 0,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 0,
       "http": 200,
       "served_inline_style_attrs": 112
     },
@@ -20,6 +24,10 @@
       "static_style_attrs": 30,
       "interpolated_style_attrs": 3,
       "component_style_blocks": 0,
+      "svg_elements": 1,
+      "svg_shape_elements": 6,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 10,
       "http": 200,
       "served_inline_style_attrs": 63
     },
@@ -29,6 +37,10 @@
       "static_style_attrs": 5,
       "interpolated_style_attrs": 0,
       "component_style_blocks": 1,
+      "svg_elements": 2,
+      "svg_shape_elements": 4,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 27,
       "http": 200,
       "served_inline_style_attrs": 6
     },
@@ -38,6 +50,10 @@
       "static_style_attrs": 29,
       "interpolated_style_attrs": 3,
       "component_style_blocks": 0,
+      "svg_elements": 1,
+      "svg_shape_elements": 5,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 7,
       "http": 200,
       "served_inline_style_attrs": 65
     },
@@ -47,6 +63,10 @@
       "static_style_attrs": 53,
       "interpolated_style_attrs": 1,
       "component_style_blocks": 0,
+      "svg_elements": 1,
+      "svg_shape_elements": 4,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 8,
       "http": 200,
       "served_inline_style_attrs": 86
     },
@@ -56,6 +76,10 @@
       "static_style_attrs": 32,
       "interpolated_style_attrs": 0,
       "component_style_blocks": 0,
+      "svg_elements": 1,
+      "svg_shape_elements": 2,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 6,
       "http": 200,
       "served_inline_style_attrs": 47
     },
@@ -65,6 +89,10 @@
       "static_style_attrs": 34,
       "interpolated_style_attrs": 0,
       "component_style_blocks": 0,
+      "svg_elements": 2,
+      "svg_shape_elements": 14,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 29,
       "http": 200,
       "served_inline_style_attrs": 34
     },
@@ -74,6 +102,10 @@
       "static_style_attrs": 93,
       "interpolated_style_attrs": 2,
       "component_style_blocks": 0,
+      "svg_elements": 0,
+      "svg_shape_elements": 0,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 0,
       "http": 200,
       "served_inline_style_attrs": 181
     },
@@ -83,6 +115,10 @@
       "static_style_attrs": 0,
       "interpolated_style_attrs": 0,
       "component_style_blocks": 1,
+      "svg_elements": 0,
+      "svg_shape_elements": 0,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 0,
       "http": 200,
       "served_inline_style_attrs": 0
     },
@@ -92,6 +128,10 @@
       "static_style_attrs": 0,
       "interpolated_style_attrs": 0,
       "component_style_blocks": 1,
+      "svg_elements": 0,
+      "svg_shape_elements": 0,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 0,
       "http": 200,
       "served_inline_style_attrs": 0
     },
@@ -101,6 +141,10 @@
       "static_style_attrs": 0,
       "interpolated_style_attrs": 0,
       "component_style_blocks": 1,
+      "svg_elements": 0,
+      "svg_shape_elements": 0,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 0,
       "http": 200,
       "served_inline_style_attrs": 0
     },
@@ -110,6 +154,10 @@
       "static_style_attrs": 0,
       "interpolated_style_attrs": 0,
       "component_style_blocks": 1,
+      "svg_elements": 0,
+      "svg_shape_elements": 0,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 0,
       "http": 200,
       "served_inline_style_attrs": 0
     },
@@ -119,6 +167,10 @@
       "static_style_attrs": 0,
       "interpolated_style_attrs": 0,
       "component_style_blocks": 1,
+      "svg_elements": 2,
+      "svg_shape_elements": 15,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 1,
       "http": 200,
       "served_inline_style_attrs": 0
     },
@@ -128,6 +180,10 @@
       "static_style_attrs": 0,
       "interpolated_style_attrs": 0,
       "component_style_blocks": 1,
+      "svg_elements": 0,
+      "svg_shape_elements": 0,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 0,
       "http": 200,
       "served_inline_style_attrs": 0
     },
@@ -137,6 +193,10 @@
       "static_style_attrs": 0,
       "interpolated_style_attrs": 0,
       "component_style_blocks": 1,
+      "svg_elements": 0,
+      "svg_shape_elements": 0,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 0,
       "http": 200,
       "served_inline_style_attrs": 0
     },
@@ -146,6 +206,10 @@
       "static_style_attrs": 0,
       "interpolated_style_attrs": 0,
       "component_style_blocks": 1,
+      "svg_elements": 0,
+      "svg_shape_elements": 0,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 0,
       "http": 200,
       "served_inline_style_attrs": 0
     },
@@ -155,6 +219,10 @@
       "static_style_attrs": 0,
       "interpolated_style_attrs": 0,
       "component_style_blocks": 1,
+      "svg_elements": 1,
+      "svg_shape_elements": 31,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 100,
       "http": 200,
       "served_inline_style_attrs": 0
     },
@@ -164,6 +232,10 @@
       "static_style_attrs": 0,
       "interpolated_style_attrs": 0,
       "component_style_blocks": 1,
+      "svg_elements": 1,
+      "svg_shape_elements": 145,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 315,
       "http": 200,
       "served_inline_style_attrs": 0
     },
@@ -173,6 +245,10 @@
       "static_style_attrs": 0,
       "interpolated_style_attrs": 0,
       "component_style_blocks": 1,
+      "svg_elements": 3,
+      "svg_shape_elements": 7,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 11,
       "http": 200,
       "served_inline_style_attrs": 0
     },
@@ -182,12 +258,18 @@
       "static_style_attrs": 0,
       "interpolated_style_attrs": 0,
       "component_style_blocks": 1,
+      "svg_elements": 0,
+      "svg_shape_elements": 0,
+      "svg_shapes_carrying_style_attr": 0,
+      "fill_or_stroke_attrs": 0,
       "http": 200,
       "served_inline_style_attrs": 0
     }
   ],
   "policy": {
     "style_src": "style-src 'self' 'unsafe-inline' 'sha256-DYU78NbRnL2odqQXROvvYg8xd7mjmlLNkNNXfG6+yeI=' 'sha256-6hkqUrkabAtX/kNnt5RCPsejBFIcsML14M/pBbK/Gyg=' 'sha256-WTVpgTn1yvg5p8G1Ytz/8jE3fZ7h5F3Bn7/uEudt7rY=' 'sha256-IL1tVDxnbfDyipG0olF1WfrWwIzxvK2kFzofBC8Gy84=' 'sha256-ONlqkQP5qnRirNH3KXVpfdURzzZ7tpcQwoAXXGpjS/E=' 'sha256-X+N5RnX+W4/cX29fOFHev5yoSe4RUcH+cUW4W97xogg=' 'sha256-Pk5LWk1EOxpdGn/Bvx6YNDO9Dcf41v4WR2ZWKCHlgyw=' 'sha256-0lMEh7CpWq1rAJ7nwHRQ4R671PfY/6XGHBpq9dgf1wk=' 'sha256-KYt7Y57nPk8r+2lPEECkHz6yFcp/h1Wo2dIfjc/S2P4=' 'sha256-EbA572LSjXdp8vYCh4/uJxaOIzkn8BuDBRQ8cT5cSUA=' 'sha256-wyxZFsHENjdgaF3168D/cRnAmJpNu8KohDQZD8BLN8k=' 'sha256-hp3/nR6ImYifGyuBI3kTu+P26XcfC5BSIXAoZqV8WLo=' 'sha256-yEUNycAXelLYd3pv4MXrlB5x+SE6H6rwiuoZPtvYpZY=' 'sha256-11ArCfNvJzZUKre2TQclYUdavLdjsVZN2WPoVd+24ZA=' 'sha256-GDzPDkZ92nJOKZdKjGweznQQLgjb+anjdCM3iws1bfE=' 'sha256-PWjSplMUqaMfade0WvC4/1Q8WdBiS+kiHcHZ/dBx7q4=' 'sha256-p8drhqbhF+nNk9OvJeNAE2rtwJZkdZ0RpXAgshUss28=' 'sha256-NTC/xOKkf7WGd6gzwwUv1IxvBK1MY8C59RcawbWf5YQ=' 'sha256-tMDb1LKQNkOtnXByGFdSuvTqGgZ+ZzsBaIdWruFZ+qc=' 'sha256-VDyW4BfVtvlWnSeEVZl5lS5AuEshFDZSqRQEUn2bf/c=' 'sha256-AIcAyop63o8THJhnw9U+x1XDfSLfOR51QjKYimEmHx4=' 'sha256-bxJvfJ1iYOOjT2x3jrZ5JDw3I3HXfpQHuLpI+ombEeU=' 'sha256-pN65xuJa3g7bW5ws697HJ/7CkRrSe6POe3XMZlawFKM=' 'sha256-YK0hg4G5FsFRqpFbWIsvl3nJ1GDZWN170Ioe7/DY6xY=' 'sha256-WTmaKsBNnVbw0Av9fBRJ6JiMcuPHmOIYO035YIOQbxE=' 'sha256-/Jn8aWMFJu8Ayxdwi/vjB+hOLdqr3u43jHhru0XZblg=' 'sha256-uHc8/S3Ebybyf1D4GZ5riZiR5J/Fo7a+CHqujYilw1k=' 'sha256-lV05gYfhBErHanj8XrWdF7cNTlJ79pvzQwpk1kxqOow=' 'sha256-vzgtUPQV2Vf/bB9LhbAlJy3b9mFN0dwv790yfT5pv0o=' 'sha256-vv9IoKo7BSLbWcUHr3tNmfNVmm5L/9Cfn2H6LMk7/ow=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU='",
+    "identical_across_all_pages": true,
+    "distinct_style_src_directives": 1,
     "has_hash_source": true,
     "has_unsafe_inline": true,
     "has_unsafe_hashes": false
@@ -215,6 +297,7 @@
   "layer2": {
     "status": "RUN",
     "mirrored_stylesheets": [
+      "/_astro/2026-07-01-fairness-trap.DKO3Glq3.css",
       "/_astro/2026-07-09-the-floor.DmWntRCB.css",
       "/_astro/TopBar.D0lePouB.css"
     ],
@@ -227,6 +310,30 @@
         "why": "the largest count in the corpus",
         "screenshot": "render-2026-07-01-the-edition.png"
       },
+      "2026-07-01-digit-mirror": {
+        "why": "affected work \u2014 checked rather than assumed",
+        "screenshot": "render-2026-07-01-digit-mirror.png"
+      },
+      "2026-07-01-naive-detector": {
+        "why": "affected work \u2014 checked rather than assumed",
+        "screenshot": "render-2026-07-01-naive-detector.png"
+      },
+      "2026-07-01-plausibility-engine": {
+        "why": "affected work \u2014 checked rather than assumed",
+        "screenshot": "render-2026-07-01-plausibility-engine.png"
+      },
+      "2026-07-01-provenance-horizon": {
+        "why": "affected work \u2014 checked rather than assumed",
+        "screenshot": "render-2026-07-01-provenance-horizon.png"
+      },
+      "2026-07-01-score-horizon": {
+        "why": "affected work \u2014 checked rather than assumed",
+        "screenshot": "render-2026-07-01-score-horizon.png"
+      },
+      "2026-07-01-fairness-trap": {
+        "why": "affected work \u2014 across the seam, has a <style> block too",
+        "screenshot": "render-2026-07-01-fairness-trap.png"
+      },
       "2026-07-09-the-floor": {
         "why": "CONTROL \u2014 a work that uses a component <style> block",
         "screenshot": "render-2026-07-09-the-floor.png"
@@ -236,6 +343,20 @@
   "summary": {
     "works_with_served_inline_style_attrs": 8,
     "total_served_inline_style_attrs": 594,
-    "works_with_zero": 12
+    "works_with_zero": 12,
+    "affected_without_svg_fallback": [
+      "2026-07-01-calibration-gap",
+      "2026-07-01-the-edition"
+    ],
+    "attrs_without_svg_fallback": 293,
+    "affected_with_svg_fallback": [
+      "2026-07-01-digit-mirror",
+      "2026-07-01-fairness-trap",
+      "2026-07-01-naive-detector",
+      "2026-07-01-plausibility-engine",
+      "2026-07-01-provenance-horizon",
+      "2026-07-01-score-horizon"
+    ],
+    "attrs_with_svg_fallback": 301
   }
 }
