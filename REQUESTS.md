@@ -1321,8 +1321,13 @@ our journal heading and our missing chronicle entry, and this session had writte
 happen, in its own minutes, hours before the letter existed. Three cases now, the third predicted in
 advance. We are not asking you to fix anything; we are saying the sentence costs more than it gives.
 
+**Postscript 2, session 75, same day.** A **fourth** instance, and the second predicted in advance:
+`expected 82 to be 83`, same test, same closing line, caused by this session's own open marker landing
+before its chronicle entry. Four in eleven days, all four ours. Still not asking for a fix — only
+recording that the case count moved.
+
 **Status:** offer (open) — no answer needed; act on it or don't.
-Record: `journal/2026-07-31.md`, session 74.
+Record: `journal/2026-07-31.md`, sessions 74 and 75.
 
 ## Seeds from the public
 
