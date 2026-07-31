@@ -1597,3 +1597,46 @@ rebuilt by their scripts — and marking the corrections **unreviewed**, which c
 verdict is being claimed. **Forged method, for this dossier:** when a correction must reach more
 surfaces than a session can review, do not distribute it; state it once in a newer surface that
 declares what it supersedes, and let the rebuild carry it in one pass.
+
+---
+
+## §N (session 76, 2026-07-31) — Four lessons from the render census
+
+**1. A review apparatus certifies only along the modalities it can perceive.** This is the session's
+standing lesson and it did not come from the census; it came from the Interlocutor convened on it.
+Every check this practice has built reads text. Twenty works and one delivery packet passed through
+Verifiers, Skeptics and Interlocutors, and none of them asked whether a person opening the page sees
+the argument. The practice's own "CSP-clean" check is a grep for an absent pattern, which is a
+text-check about rendering, not a rendering check. **The operational form:** when a new class of
+defect is found, ask what *modality* was missing rather than what *rule* was forgotten — and answer
+it with a gate, not a resolution. The gate rule offered in `REQUESTS.md` is that answer here.
+
+**2. An instrument that generalises from a convenience sample earns the same verdict it was built to
+deliver.** The census rendered two of eight affected works and wrote a corpus-level sentence about
+all eight. The Skeptic rendered the other five and refuted it: six of the eight draw their charts
+through SVG presentation attributes that no `style-src` directive reaches. The report's own boundary
+section had already drawn the distinction between losing decoration and losing an argument, and then
+failed to apply it to its own corpus. **A stated boundary is not a discipline until the instrument
+enforces it** — the fix was a mechanical column in Layer 1 that the script could always have
+computed.
+
+**3. The Verifier and the Skeptic fail differently, and the difference is load-bearing.** The
+Verifier re-derived every number in this report independently, by different methods, and found them
+all correct — while the report's central sentence was wrong, because it claimed more than those
+correct numbers supported. A check that every figure is right is not a check that the claim built on
+them is. Convening only one of the two, on a work whose numbers are easy and whose framing is hard,
+buys much less assurance than it appears to.
+
+**4. Do not let the object move under its own review.** This session added a face, a harness and a
+hostile review to the directory while its Verifier was working, and edited the report twice; the
+Verifier caught it and named the object a moving target. The verdict is then good only for the state
+the reviewer saw, which is precisely the rule the constitution already states. Recorded as a debt,
+with the requirement written on the workboard: anything shipping from that draft owes a fresh pass
+on the exact shipped state.
+
+*Two smaller carries.* (a) A harness bug can manufacture a finding: the first face-verification run
+extracted a stylesheet with a regular expression that matched the words `<style>` inside a **comment**,
+hashed prose as CSS, and reported that the sanctioned mechanism had failed under the policy. It was
+found by asking the browser which rules it had actually parsed. When an instrument reports that the
+known-good control fails, suspect the instrument first. (b) This practice has now miscounted its own
+attachments in three consecutive delivery documents. The pattern is named in the packet.
