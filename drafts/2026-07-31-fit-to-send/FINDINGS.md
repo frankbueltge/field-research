@@ -35,7 +35,16 @@ a rule:
   (an API endpoint, a base path). `NOT-A-LOCATOR` catches only syntactic placeholders.
 - **D3 — 401 belongs with `BLOCKED`**, by the locked rule's own logic.
 
-## 2. The two network failures are real, and they are the same shape
+## 2. The two network failures are real — and what this section first said about them was false
+
+> **CORRECTED 2026-07-31, after the Verifier's pass and by the conductor's own hand.** This section
+> originally ended: *"Two shipped works have been handing readers a security warning and a reset
+> since 2026-07-01."* **That is false.** Neither failing string is a link. The corrected account is
+> below; the withdrawn sentence is quoted here so it cannot read as a live assertion anywhere.
+>
+> The Verifier confirmed every fetch result in this section and did not catch the error, because it
+> was asked to check whether the URLs behave as claimed — which they do — and not whether the works
+> *link* the failing form. Nobody checked the one thing that decided what the finding meant.
 
 Both were re-checked from a second vantage inside the probe (which agreed) and then a third by hand:
 
@@ -46,11 +55,31 @@ Both were re-checked from a second vantage inside the probe (which agreed) and t
   'marcellodibello.com'"*, from two vantages. **`https://www.marcellodibello.com/…` returns HTTP
   200.**
 
-Two shipped instruments cite a bare-host form that fails while the `www.` form of the same document
-answers. The second is the sharper of the two: a reader following that citation meets a certificate
-warning, which is what a reader has been meeting since 2026-07-01. **These are the only two
-identifiers in the corpus that the probe found broken in a way a reader would notice, and both are
-one prefix away from working.**
+Both failing strings were then read in the files that carry them, which is what should have happened
+before the first version of this section was written:
+
+- `works/2026-07-01-fairness-trap/work.astro:610` — the `href` is
+  **`https://www.marcellodibello.com/…`**, the working form. Only the *link text* on line 611 is the
+  bare host. **A reader who clicks arrives.**
+- `works/2026-07-01-digit-mirror/work.astro:372` — the SOURCES block contains **no links at all**.
+  `jabfm.org/content/32/5/732` is plain display text beside `doi:10.3122/jabfm.2019.05.190085`, and
+  that DOI resolves: HTTP 200, final URL `https://www.jabfm.org/content/32/5/732`. **A reader who
+  follows the identifier arrives.**
+
+**So there is nothing here to repair on either work, and the session's impulse to repair it would
+have been a fix to a defect that does not exist.** The true and much narrower statement:
+
+> Two citation strings *displayed* on shipped works do not resolve when copied, while the link or
+> identifier printed beside them does.
+
+**D4 — and it is the largest defect in this instrument.** The sweep reads what a page *displays*, not
+what it *links*. Every `OK`, `GONE` and `BLOCKED` in this census is therefore a verdict about a
+**string shown to a reader**, not about a hyperlink. That is a legitimate object — it is what a reader
+who copies a citation gets, and this archive prints many citations as bare text — but it is not the
+question "do this work's links work", and until this correction the record read as though it were.
+The three cases now form one family: a bare-host display beside a working link (006), a bare display
+string beside a working identifier (004), and an ellipsis-abbreviated display string whose full form
+lives only in the repository (017, §4).
 
 ## 3. One `SOFT-GONE`, and this practice had already found it
 
@@ -79,19 +108,30 @@ sharpest instance, and it was found by a false positive.
 At `2026-07-31T04:16:41Z`, over 162 unique evidence identifiers on the 20 shipped works:
 
 - **No confirmed dead source.** The five `GONE` decompose as above; zero are link rot.
-- **Two citations a reader cannot follow as written** (§2), both repairable by one prefix.
+- **Two citation strings a reader cannot follow if they copy them** (§2) — beside a working link and a
+  working identifier respectively. **Nothing to repair.**
 - **One soft-gone**, already known and disclosed by this practice.
 - **26 of 162 — 16 % — `BLOCKED`**: the archive's link health at those identifiers is not knowable
   from where this practice stands, and no number that hides them is honest.
-- **Custody is thin.** Only 25 structural token bindings exist across the whole corpus; for the
-  overwhelming majority of identifiers, whether the page still holds the claim the work rests on it
-  is `NOT-AUTOMATICALLY-CHECKABLE`, and this instrument does not decide it. **In those words: the
-  custody layer of this instrument is thin, and its `OK` means "something answered", not "the source
-  still says what we said it says".**
+- **Custody is thin, and thinner than the binding count suggests.** The corpus yields **25 structural
+  token bindings over 21 unique URLs — and only 15 were mechanically resolved.** Six were downgraded
+  to `NOT-AUTOMATICALLY-CHECKABLE` because the response is not text-like, and **one of those six is
+  the standard PDF at the centre of §4**, so nobody has checked whether it still holds what
+  instrument 017 says it holds. Final tally at Layer 2: **1 `HELD`, 14 `NOT-HELD`, 147 of 162
+  `NOT-AUTOMATICALLY-CHECKABLE`.** *(Reconciliation added 2026-07-31 after the Verifier's finding F1:
+  this section previously cited "25 structural token bindings" without disclosing that only 15
+  resolved — a reader could have believed the standard's custody was checked. It was not.)*
+  **In those words: the custody layer of this instrument is thin, and its `OK` means "something
+  answered", not "the source still says what we said it says".**
 
 The honest one-line reading — knowing that a one-line reading is itself the composite the Skeptic
-warned about — is: **the archive's citations are not rotting; the archive's citations are, in
-several places, not followable, and one sixth of them cannot be checked from here at all.**
+warned about — is: **the archive's citations are not rotting; several of the citation strings it
+prints for readers to copy do not work, while the links beside them do; and one sixth of them cannot
+be checked from here at all.**
+
+*(Ecology-internal identifiers: 7 of the 162 unique URLs point inside this ecology on the conductor's
+reading, which counts a sibling repository the practice audits; the probe's own `self` flag is
+narrower and marks 3. Both are stated because they answer different questions — Verifier finding F2.)*
 
 ## 6. For the delivery this session is preparing
 
