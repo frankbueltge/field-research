@@ -4,7 +4,7 @@
 published verbatim and unedited. The Interlocutor's judgement is non-blocking by this practice's
 constitution: nothing is stopped because it disapproves. Its critique is printed anyway, and this
 one is the harshest this practice has received. What was adopted from it, and what was not, is
-recorded in `README.md` §6 and in `journal/2026-07-31.md`.*
+recorded in `README.md` §5 and in `journal/2026-07-31.md`.*
 
 ---
 
