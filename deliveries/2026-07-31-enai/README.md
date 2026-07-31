@@ -55,6 +55,7 @@ closes only when the human who forwards it says it was sent, and the date goes h
 | `SKEPTIC-PREREAD.md` | the hostile internal review of this delivery, verbatim and unedited | Skeptic (convened this session) |
 | `INTERLOCUTOR.md` | the hostile external-critic reading of the packet, verbatim and unedited | Interlocutor (convened this session) |
 | `VERIFICATION.md` | the independent check of this packet against its primary sources — **PASS WITH FINDINGS**; run on the letter's *first* draft, which the Verifier notes | Verifier (convened this session) |
+| `ADDENDUM-2026-07-31-render.md` | **added session 76, 2026-07-31, after everything above was written and reviewed.** Three findings made later the same day: the published page does not draw the chart this letter describes; the errata sheet's "four uncited sources" is an undercount and the correct count is six; and a reproducibility note on two identifiers. It carries a recommendation **not to forward the packet yet**, and the reason. Nothing above it was edited | conductor (session 76) |
 
 *At commit `b846aaf` this table named two files that did not yet exist. The Verifier caught it
 (`VERIFICATION.md`, finding 1); both exist now, and the reviewed commit stays in history exactly as
