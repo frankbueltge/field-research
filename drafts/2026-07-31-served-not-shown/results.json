@@ -1,0 +1,241 @@
+{
+  "instrument": "Served, Not Shown \u2014 render census",
+  "site": "https://frankbueltge.de",
+  "browser": "/opt/pw-browsers/chromium-1194/chrome-linux/chrome",
+  "network": true,
+  "works_examined": 20,
+  "layer1": [
+    {
+      "slug": "2026-07-01-calibration-gap",
+      "work_astro": true,
+      "static_style_attrs": 47,
+      "interpolated_style_attrs": 3,
+      "component_style_blocks": 0,
+      "http": 200,
+      "served_inline_style_attrs": 112
+    },
+    {
+      "slug": "2026-07-01-digit-mirror",
+      "work_astro": true,
+      "static_style_attrs": 30,
+      "interpolated_style_attrs": 3,
+      "component_style_blocks": 0,
+      "http": 200,
+      "served_inline_style_attrs": 63
+    },
+    {
+      "slug": "2026-07-01-fairness-trap",
+      "work_astro": true,
+      "static_style_attrs": 5,
+      "interpolated_style_attrs": 0,
+      "component_style_blocks": 1,
+      "http": 200,
+      "served_inline_style_attrs": 6
+    },
+    {
+      "slug": "2026-07-01-naive-detector",
+      "work_astro": true,
+      "static_style_attrs": 29,
+      "interpolated_style_attrs": 3,
+      "component_style_blocks": 0,
+      "http": 200,
+      "served_inline_style_attrs": 65
+    },
+    {
+      "slug": "2026-07-01-plausibility-engine",
+      "work_astro": true,
+      "static_style_attrs": 53,
+      "interpolated_style_attrs": 1,
+      "component_style_blocks": 0,
+      "http": 200,
+      "served_inline_style_attrs": 86
+    },
+    {
+      "slug": "2026-07-01-provenance-horizon",
+      "work_astro": true,
+      "static_style_attrs": 32,
+      "interpolated_style_attrs": 0,
+      "component_style_blocks": 0,
+      "http": 200,
+      "served_inline_style_attrs": 47
+    },
+    {
+      "slug": "2026-07-01-score-horizon",
+      "work_astro": true,
+      "static_style_attrs": 34,
+      "interpolated_style_attrs": 0,
+      "component_style_blocks": 0,
+      "http": 200,
+      "served_inline_style_attrs": 34
+    },
+    {
+      "slug": "2026-07-01-the-edition",
+      "work_astro": true,
+      "static_style_attrs": 93,
+      "interpolated_style_attrs": 2,
+      "component_style_blocks": 0,
+      "http": 200,
+      "served_inline_style_attrs": 181
+    },
+    {
+      "slug": "2026-07-02-standing-docket",
+      "work_astro": true,
+      "static_style_attrs": 0,
+      "interpolated_style_attrs": 0,
+      "component_style_blocks": 1,
+      "http": 200,
+      "served_inline_style_attrs": 0
+    },
+    {
+      "slug": "2026-07-02-taxonomy-on-trial",
+      "work_astro": true,
+      "static_style_attrs": 0,
+      "interpolated_style_attrs": 0,
+      "component_style_blocks": 1,
+      "http": 200,
+      "served_inline_style_attrs": 0
+    },
+    {
+      "slug": "2026-07-05-backward-regime-test",
+      "work_astro": true,
+      "static_style_attrs": 0,
+      "interpolated_style_attrs": 0,
+      "component_style_blocks": 1,
+      "http": 200,
+      "served_inline_style_attrs": 0
+    },
+    {
+      "slug": "2026-07-06-two-meters",
+      "work_astro": true,
+      "static_style_attrs": 0,
+      "interpolated_style_attrs": 0,
+      "component_style_blocks": 1,
+      "http": 200,
+      "served_inline_style_attrs": 0
+    },
+    {
+      "slug": "2026-07-09-the-floor",
+      "work_astro": true,
+      "static_style_attrs": 0,
+      "interpolated_style_attrs": 0,
+      "component_style_blocks": 1,
+      "http": 200,
+      "served_inline_style_attrs": 0
+    },
+    {
+      "slug": "2026-07-11-split-seal",
+      "work_astro": true,
+      "static_style_attrs": 0,
+      "interpolated_style_attrs": 0,
+      "component_style_blocks": 1,
+      "http": 200,
+      "served_inline_style_attrs": 0
+    },
+    {
+      "slug": "2026-07-17-comparable-with-humans",
+      "work_astro": true,
+      "static_style_attrs": 0,
+      "interpolated_style_attrs": 0,
+      "component_style_blocks": 1,
+      "http": 200,
+      "served_inline_style_attrs": 0
+    },
+    {
+      "slug": "2026-07-20-coverage-not-custody",
+      "work_astro": true,
+      "static_style_attrs": 0,
+      "interpolated_style_attrs": 0,
+      "component_style_blocks": 1,
+      "http": 200,
+      "served_inline_style_attrs": 0
+    },
+    {
+      "slug": "2026-07-24-where-the-chain-breaks",
+      "work_astro": true,
+      "static_style_attrs": 0,
+      "interpolated_style_attrs": 0,
+      "component_style_blocks": 1,
+      "http": 200,
+      "served_inline_style_attrs": 0
+    },
+    {
+      "slug": "2026-07-25-no-signal-to-extend",
+      "work_astro": true,
+      "static_style_attrs": 0,
+      "interpolated_style_attrs": 0,
+      "component_style_blocks": 1,
+      "http": 200,
+      "served_inline_style_attrs": 0
+    },
+    {
+      "slug": "2026-07-26-one-line-for-ten-thousand",
+      "work_astro": true,
+      "static_style_attrs": 0,
+      "interpolated_style_attrs": 0,
+      "component_style_blocks": 1,
+      "http": 200,
+      "served_inline_style_attrs": 0
+    },
+    {
+      "slug": "2026-07-26-unable-to-ring-its-own-bell",
+      "work_astro": true,
+      "static_style_attrs": 0,
+      "interpolated_style_attrs": 0,
+      "component_style_blocks": 1,
+      "http": 200,
+      "served_inline_style_attrs": 0
+    }
+  ],
+  "policy": {
+    "style_src": "style-src 'self' 'unsafe-inline' 'sha256-DYU78NbRnL2odqQXROvvYg8xd7mjmlLNkNNXfG6+yeI=' 'sha256-6hkqUrkabAtX/kNnt5RCPsejBFIcsML14M/pBbK/Gyg=' 'sha256-WTVpgTn1yvg5p8G1Ytz/8jE3fZ7h5F3Bn7/uEudt7rY=' 'sha256-IL1tVDxnbfDyipG0olF1WfrWwIzxvK2kFzofBC8Gy84=' 'sha256-ONlqkQP5qnRirNH3KXVpfdURzzZ7tpcQwoAXXGpjS/E=' 'sha256-X+N5RnX+W4/cX29fOFHev5yoSe4RUcH+cUW4W97xogg=' 'sha256-Pk5LWk1EOxpdGn/Bvx6YNDO9Dcf41v4WR2ZWKCHlgyw=' 'sha256-0lMEh7CpWq1rAJ7nwHRQ4R671PfY/6XGHBpq9dgf1wk=' 'sha256-KYt7Y57nPk8r+2lPEECkHz6yFcp/h1Wo2dIfjc/S2P4=' 'sha256-EbA572LSjXdp8vYCh4/uJxaOIzkn8BuDBRQ8cT5cSUA=' 'sha256-wyxZFsHENjdgaF3168D/cRnAmJpNu8KohDQZD8BLN8k=' 'sha256-hp3/nR6ImYifGyuBI3kTu+P26XcfC5BSIXAoZqV8WLo=' 'sha256-yEUNycAXelLYd3pv4MXrlB5x+SE6H6rwiuoZPtvYpZY=' 'sha256-11ArCfNvJzZUKre2TQclYUdavLdjsVZN2WPoVd+24ZA=' 'sha256-GDzPDkZ92nJOKZdKjGweznQQLgjb+anjdCM3iws1bfE=' 'sha256-PWjSplMUqaMfade0WvC4/1Q8WdBiS+kiHcHZ/dBx7q4=' 'sha256-p8drhqbhF+nNk9OvJeNAE2rtwJZkdZ0RpXAgshUss28=' 'sha256-NTC/xOKkf7WGd6gzwwUv1IxvBK1MY8C59RcawbWf5YQ=' 'sha256-tMDb1LKQNkOtnXByGFdSuvTqGgZ+ZzsBaIdWruFZ+qc=' 'sha256-VDyW4BfVtvlWnSeEVZl5lS5AuEshFDZSqRQEUn2bf/c=' 'sha256-AIcAyop63o8THJhnw9U+x1XDfSLfOR51QjKYimEmHx4=' 'sha256-bxJvfJ1iYOOjT2x3jrZ5JDw3I3HXfpQHuLpI+ombEeU=' 'sha256-pN65xuJa3g7bW5ws697HJ/7CkRrSe6POe3XMZlawFKM=' 'sha256-YK0hg4G5FsFRqpFbWIsvl3nJ1GDZWN170Ioe7/DY6xY=' 'sha256-WTmaKsBNnVbw0Av9fBRJ6JiMcuPHmOIYO035YIOQbxE=' 'sha256-/Jn8aWMFJu8Ayxdwi/vjB+hOLdqr3u43jHhru0XZblg=' 'sha256-uHc8/S3Ebybyf1D4GZ5riZiR5J/Fo7a+CHqujYilw1k=' 'sha256-lV05gYfhBErHanj8XrWdF7cNTlJ79pvzQwpk1kxqOow=' 'sha256-vzgtUPQV2Vf/bB9LhbAlJy3b9mFN0dwv790yfT5pv0o=' 'sha256-vv9IoKo7BSLbWcUHr3tNmfNVmm5L/9Cfn2H6LMk7/ow=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU='",
+    "has_hash_source": true,
+    "has_unsafe_inline": true,
+    "has_unsafe_hashes": false
+  },
+  "layer0": {
+    "status": "RUN",
+    "style_src_under_test": "style-src 'self' 'unsafe-inline' 'sha256-DYU78NbRnL2odqQXROvvYg8xd7mjmlLNkNNXfG6+yeI=' 'sha256-6hkqUrkabAtX/kNnt5RCPsejBFIcsML14M/pBbK/Gyg=' 'sha256-WTVpgTn1yvg5p8G1Ytz/8jE3fZ7h5F3Bn7/uEudt7rY=' 'sha256-IL1tVDxnbfDyipG0olF1WfrWwIzxvK2kFzofBC8Gy84=' 'sha256-ONlqkQP5qnRirNH3KXVpfdURzzZ7tpcQwoAXXGpjS/E=' 'sha256-X+N5RnX+W4/cX29fOFHev5yoSe4RUcH+cUW4W97xogg=' 'sha256-Pk5LWk1EOxpdGn/Bvx6YNDO9Dcf41v4WR2ZWKCHlgyw=' 'sha256-0lMEh7CpWq1rAJ7nwHRQ4R671PfY/6XGHBpq9dgf1wk=' 'sha256-KYt7Y57nPk8r+2lPEECkHz6yFcp/h1Wo2dIfjc/S2P4=' 'sha256-EbA572LSjXdp8vYCh4/uJxaOIzkn8BuDBRQ8cT5cSUA=' 'sha256-wyxZFsHENjdgaF3168D/cRnAmJpNu8KohDQZD8BLN8k=' 'sha256-hp3/nR6ImYifGyuBI3kTu+P26XcfC5BSIXAoZqV8WLo=' 'sha256-yEUNycAXelLYd3pv4MXrlB5x+SE6H6rwiuoZPtvYpZY=' 'sha256-11ArCfNvJzZUKre2TQclYUdavLdjsVZN2WPoVd+24ZA=' 'sha256-GDzPDkZ92nJOKZdKjGweznQQLgjb+anjdCM3iws1bfE=' 'sha256-PWjSplMUqaMfade0WvC4/1Q8WdBiS+kiHcHZ/dBx7q4=' 'sha256-p8drhqbhF+nNk9OvJeNAE2rtwJZkdZ0RpXAgshUss28=' 'sha256-NTC/xOKkf7WGd6gzwwUv1IxvBK1MY8C59RcawbWf5YQ=' 'sha256-tMDb1LKQNkOtnXByGFdSuvTqGgZ+ZzsBaIdWruFZ+qc=' 'sha256-VDyW4BfVtvlWnSeEVZl5lS5AuEshFDZSqRQEUn2bf/c=' 'sha256-AIcAyop63o8THJhnw9U+x1XDfSLfOR51QjKYimEmHx4=' 'sha256-bxJvfJ1iYOOjT2x3jrZ5JDw3I3HXfpQHuLpI+ombEeU=' 'sha256-pN65xuJa3g7bW5ws697HJ/7CkRrSe6POe3XMZlawFKM=' 'sha256-YK0hg4G5FsFRqpFbWIsvl3nJ1GDZWN170Ioe7/DY6xY=' 'sha256-WTmaKsBNnVbw0Av9fBRJ6JiMcuPHmOIYO035YIOQbxE=' 'sha256-/Jn8aWMFJu8Ayxdwi/vjB+hOLdqr3u43jHhru0XZblg=' 'sha256-uHc8/S3Ebybyf1D4GZ5riZiR5J/Fo7a+CHqujYilw1k=' 'sha256-lV05gYfhBErHanj8XrWdF7cNTlJ79pvzQwpk1kxqOow=' 'sha256-vzgtUPQV2Vf/bB9LhbAlJy3b9mFN0dwv790yfT5pv0o=' 'sha256-vv9IoKo7BSLbWcUHr3tNmfNVmm5L/9Cfn2H6LMk7/ow=' 'sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU='",
+    "measured": {
+      "under_policy": {
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 0, 0)",
+        "width": "764px",
+        "height": "18px"
+      },
+      "control": {
+        "backgroundColor": "rgb(13, 13, 13)",
+        "color": "rgb(192, 57, 43)",
+        "width": "420px",
+        "height": "160px"
+      }
+    },
+    "control_applies_inline_style": true,
+    "policy_applies_inline_style": false
+  },
+  "layer2": {
+    "status": "RUN",
+    "mirrored_stylesheets": [
+      "/_astro/2026-07-09-the-floor.DmWntRCB.css",
+      "/_astro/TopBar.D0lePouB.css"
+    ],
+    "specimens": {
+      "2026-07-01-calibration-gap": {
+        "why": "the piece committed for outbound delivery on 2026-07-31",
+        "screenshot": "render-2026-07-01-calibration-gap.png"
+      },
+      "2026-07-01-the-edition": {
+        "why": "the largest count in the corpus",
+        "screenshot": "render-2026-07-01-the-edition.png"
+      },
+      "2026-07-09-the-floor": {
+        "why": "CONTROL \u2014 a work that uses a component <style> block",
+        "screenshot": "render-2026-07-09-the-floor.png"
+      }
+    }
+  },
+  "summary": {
+    "works_with_served_inline_style_attrs": 8,
+    "total_served_inline_style_attrs": 594,
+    "works_with_zero": 12
+  }
+}
