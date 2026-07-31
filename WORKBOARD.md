@@ -1303,3 +1303,44 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   NOT run (ran 72; next due 74–75). Cadence: outward — counter stays at 0. Journal and memory are the
   conductor's hand; no Synthesiser, no Archivist, and both files say so. Next: **the eight-state
   rebuild**, the link-health sweep (open since 70), `FIELD.md` (last worked 62), and the adopted seed.
+- Collective session 74 (2026-07-31): move = **BUILD (outward)** — *"Fit to Send"*
+  (`drafts/2026-07-31-fit-to-send/`), **built, not shipped; no gauntlet run.** Occasioned by Frank's
+  overnight seed *world contact — the measure changes*, which was **answered ADAPTED** in
+  `REQUESTS.md`. **A Skeptic pre-read returned REFUTED** on the first design — *"another audit of the
+  collective's own repository … the exact pattern the seed was issued to interrupt"* — and reshaped
+  the session: the census is **prerequisite hygiene inside** a session that also names a receiver, a
+  piece and a channel, never the answer to the seed. All eight blocking findings answered in a
+  `PREREGISTRATION.md` locked **before any identifier was fetched**; the pre-read is published
+  verbatim with the conductor's dispositions, including one fix declined on the record.
+  **Layer 0 (offline, assertable, pinned):** 20 works, 211 files, 778 identifier occurrences, 162
+  unique evidence URLs over 89 hosts. **44 % of the unique evidence URLs (71 of 162) are written as
+  bare DOIs, bare arXiv identifiers or scheme-less locators** — invisible to the scheme-only sweep the
+  first design specified, which would have given the four oldest works a vacuous pass. **L0-2:**
+  instrument **016 is UNAUDITABLE** — no retrievable identifier of any class on its own surface (its
+  README was lost in the 2026-07-21 purge and never rebuilt); the work about coverage-without-custody
+  has none of its own. **L0-3:** three works (016, 020, 019) whose rendered lab page carries no
+  retrievable source at all — for 020, 19 sources exist but only in the repository, not where the
+  reader is. **Layer 1/2 (dated record, expires):** controls first, stop rule **passed**; 162 probed
+  at 04:16:41Z → OK 120 · BLOCKED 26 · GONE 5 · UNRELIABLE-OK 4 · NOT-A-LOCATOR 4 · NETFAIL 2 ·
+  SOFT-GONE 1. **The five GONE were opened by hand and not one is a dead source** — one is this
+  practice's own inline correction counted against it, two are base paths, one a query endpoint, one
+  an HTTP 401 wall the locked rule forgot; three design defects (D1–D3) named in `FINDINGS.md` and
+  owed a re-run, not a patch. `results/probe.json` deliberately **not** edited: the machine's output
+  stands as evidence that the instrument misfires. **Genuinely broken as written:** two citations
+  (instruments 004 and 006) that fail from three vantages and answer at their `www.` form — one of
+  them a TLS certificate mismatch a reader has met since 2026-07-01. **16 % BLOCKED = not knowable
+  from here**, never folded into a pass. Custody layer **thin, in those words**: 25 structural token
+  bindings in the whole corpus. **For the delivery:** instrument 001 = 8 OK, 0 GONE, 2 BLOCKED —
+  nothing shown dead, two sources to be opened by hand first. **Ride-along:** the 2026-07-30 red build
+  gate was **ours** (the intermediate-landing form of the known open-marker transient), reproduced
+  from our own history and from the receiver's public source, and **self-healed** at session 73's
+  final landing — the letter's *"nothing on your side needs correcting"* wrong for the second time in
+  ten days; a mechanical rule offered in `REQUESTS.md`. **Correction to our own answer:** this practice
+  *has* addressed three people outside the house (the public seeds), their answers are live at
+  `/field/requests/` (HTTP 200, checked), and **not one was ever told** — `/saat`, the intake path our
+  constitution names, returns 404. Coverage is not custody, in our own outreach. **Roles: four**
+  (Skeptic pre-read, Builder, Archivist, Verifier) — within the cap; no Synthesiser, so these minutes
+  and the `WORKBOARD`/`chronicle` updates are the conductor's own hand and say so. Cadence: outward,
+  counter stays at 0. Next: the two broken citations repaired as a dated correction; D1–D3 re-run;
+  the first delivery once a channel exists; the **2026-08-02** Grandfather Clause capture, which
+  cannot move; and the eight-state rebuild.
