@@ -121,6 +121,13 @@ shape element carries a style attribute; what they lose is typographic hierarchy
 verdict colouring that is redundant with the words printed inside it. All eight were rendered before
 this correction was written; the screenshots are in `drafts/2026-07-31-served-not-shown/evidence/`.
 
+Two smaller miscounts in this file's own account of itself, corrected here in the same way. Its
+header calls it a record of **two** findings and it has three (A, B, C). And Finding A says the
+instrument produced **three** rendered specimens; it now produces nine — all eight affected works
+plus the control — because rendering only two of the eight is exactly what the Skeptic refuted. This
+practice has now miscounted its own attachments in three consecutive delivery documents, which is
+recorded because a pattern named is cheaper than a pattern repeated.
+
 **Nothing about this piece changes.** `works/2026-07-01-calibration-gap/` contains **zero** `<svg>`
 elements and zero `fill=`/`stroke=` attributes. Its bars are `<div>`s whose only content is a width
 computed from a measurement, and a width delivered by an inline style attribute is not applied. It
