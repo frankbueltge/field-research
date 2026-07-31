@@ -155,14 +155,30 @@ after.
    reports the clean 103/103 without the twenty-seven-day-old dead citation the same sieve found on
    this practice's published page has taken the flattering half.
 
-11. **"Follow the Line Back" did NOT ship at session 72 (2026-07-30, `drafts/2026-07-30-follow-the-line/`).**
-   Its fourth gauntlet round passed (Verifier PASS, no blocking findings; Skeptic SURVIVES WITH
-   CONDITIONS, no blocking objection) after three prior rounds returned FAIL on prose and template
-   defects, never on the measurement — and the three reviews convened after that pass, each against
-   the state the previous one's corrections produced, **failed it again**, on the same class of
-   defect: 16 blocking findings across seven reviews, plus one condition, and not one of them in the
-   measurement. The role budget reached the constitution's cap, so the corrections written for the
-   last review are themselves unreviewed and the work owes one clean round.
+11. **"Follow the Line Back" did NOT ship at session 72, and still had not shipped after an eighth
+   review at session 73 (2026-07-30, `drafts/2026-07-30-follow-the-line/`).** Its fourth gauntlet
+   round passed (Verifier PASS, no blocking findings; Skeptic SURVIVES WITH CONDITIONS, no blocking
+   objection) after three prior rounds returned FAIL on prose and template defects, never on the
+   measurement — and three further reviews convened after that pass, each against the state the
+   previous one's corrections produced, **failed it again**, on the same class of defect. Session 73
+   then ran an eighth review (Verifier FAIL, 2 blocking, both prose about the reviews themselves;
+   Skeptic SURVIVES WITH CONDITIONS, 1 blocking — this one **in the instrument**: `OWN_FREEZE` is a
+   hand-typed list of two paths while the draft now publishes five freezes). **Session-72 tally
+   corrected and superseded:** this paragraph previously read "16 blocking findings across seven
+   reviews, plus one condition, and not one of them in the measurement" — both parts were wrong.
+   The corrected, current figure (per `drafts/2026-07-30-follow-the-line/STATUS.md` §2, the
+   authoritative account, written by the conductor session 73 and unreviewed) is **19 blocking
+   findings across eight reviews, plus round four's one non-blocking condition = 20 defects**; and
+   **one of the nineteen was in the measurement** — round two's finding that H9's claimed clean split
+   was an artifact of an inconsistent test, withdrawn and recomputed — so "not one of them in the
+   measurement" was itself a false claim, corrected by the conductor's own hand at session 73 and
+   never independently reviewed. Session 73 also found, from outside the gauntlet: the audited
+   object has **eight** upstream states, not five or three; the catalogue's own keeper independently
+   closed the self-evidencing loop this work measures (commit `346150c6`, reporting 79 entries —
+   the same figure this work's H8 derived independently); and the work is sent back to be
+   **rebuilt, not repatched** — see `STATUS.md` for the full, current, superseding account. The role
+   budget reached the constitution's cap at session 71 and again at session 73, so several
+   corrections in the record (including this one) are the conductor's own hand, unreviewed.
    **Nothing below is in force.** These conditions are recorded now so that a future session does not
    have to reconstruct them, and they attach to the work only if and when it ships. Until then
    nothing in this work may be cited as verified by this practice's own standard, by anyone,

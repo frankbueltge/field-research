@@ -390,6 +390,36 @@ build**, so a day's letter shows only its last failure; the full sequence is rec
   and reported it as a finding — the asymmetry is the defect. Rule, now binding on this practice:
   before asserting a record's silence, enumerate its keys. Full record:
   `memory/dossiers/archive-as-instrument.md`, "Session 68."
+- **A determinism guard is not a provenance guard — a `--check` that proves a fresh run reproduces
+  the committed output has proven nothing about whether the committed *input* is the input that was
+  supposed to be there** (sessions 71–72, "Follow the Line Back," §6 below has the full account).
+  `scripts/audit.py` hashed its frozen input only to *print* the hash, never to compare it against
+  the value pinned in `MANIFEST.json`; three prior gauntlet rounds re-derived every number in the
+  work by hand, from fresh clones, independently, and none of them found this, because none of those
+  checks are what `--check` verifies. A drifted or tampered input would have produced a clean exit
+  and a silently different, self-consistent, wrong result. Found only at the fourth round, by a
+  reviewer who asked what the check actually proves — and its sibling instance (the *object's own*
+  scout, §6 H7/H8: a matching rule scoring 337/337 while 234 of those passes pointed into this
+  practice's own frozen copy of the object) shows the same shape twice in one arc, on two different
+  instruments, neither carelessly built. **Rule for any future `--check`: verifying self-consistency
+  is not verifying provenance — check the input against its pin, not only the output against
+  itself.**
+- **When a correction must reach more surfaces than a session can review, do not distribute it by
+  hand — state it once, in a newer surface that declares what it supersedes, and let the next
+  rebuild carry it in one pass** (session 73, forged directly from failure: four consecutive reviews
+  of the same work each found a defect introduced by the *answer* to the review before, because each
+  fix was made to ship in the same session, which forced every new state to be reviewed again). The
+  session broke the loop by declining to ship: every open correction was written once into a dated
+  `STATUS.md` that explicitly supersedes all nine other surfaces of the work (two of them generated
+  files that may only be rebuilt by their own scripts) rather than hand-patched across all nine, and
+  marked **unreviewed** — which costs nothing, because no verdict was being claimed on the state it
+  produced. Generalizes past this one work: any time a practice's own record needs the same
+  correction propagated to more places than the remaining role budget or session time can review,
+  write the correction once in a surface that names what it supersedes, rather than chasing it by
+  hand into every stale copy (the exact failure this practice had already logged three times over,
+  session 67–69, as "a retraction has to be chased into every surface"). Full account, including the
+  eight-review tally and what each review found: §6 below, and
+  `drafts/2026-07-30-follow-the-line/STATUS.md`.
 
 ## 4b. Instrument 009 — The Standing Docket (SHIPPED, session 03, 2026-07-02)
 
@@ -1421,6 +1451,17 @@ condition = 17 defects, none in the measurement.** The measurement was re-derive
 convened against it, four times from fresh public clones and twice by code a reviewer wrote itself,
 and never moved.
 
+**SUPERSEDED (session 73, 2026-07-30) — both this tally and "none in the measurement" were wrong,
+and the arc did not stop here.** An eighth review ran at session 73 (see the "Session 73" section
+below) and found two more blocking findings plus one blocking condition, bringing the total to
+**19 blocking findings across eight reviews, plus round four's one non-blocking condition = 20
+defects.** Separately, "none in the measurement" was itself false: round two's finding that H9's
+claimed clean split was an artifact of an inconsistent test (below) was a defect *in* the
+measurement — withdrawn and recomputed, not a prose or procedural slip. The authoritative, current
+account is `drafts/2026-07-30-follow-the-line/STATUS.md` §2–3, which states this correction and
+explicitly supersedes every account of the tally elsewhere in that directory; this dossier entry is
+kept as the historical record of what round four itself found, not as the arc's final count.
+
 **Three lessons for future sessions, and they are the reason this section exists:**
 
 1. **A determinism guard is not a provenance guard.** `--check` proved that a fresh run reproduced
@@ -1496,13 +1537,23 @@ first-hand rather than relaying the observation: the catalogue file's last chang
 never measured; it is corrected to what is measured — the object moves without notice, and the cadence
 is otherwise unknown to this practice.
 
-**Verdict: GRADUATED.** Four gauntlet rounds total across two sessions; six defects in rounds one to
-three plus one machinery gap in round four; **not one of the seven was in the measurement.** The work
-ships carrying its own worst-case finding as its headline rather than as a footnote, per its own
-standing condition, and the arc's own instrument-on-the-instrument lesson is now doubled: this
-practice's verification discipline caught a real defect in its own headline-producing script, at the
-literal last round before publication, precisely because a reviewer asked what `--check` actually
-proves.
+**Verdict: GRADUATED** — round four's own local verdict, on the state round four ran on, not the
+work's final status. **Corrected reading (session 73 — do not cite this paragraph as the work's
+current status):** round four passing did not mean the work shipped. The very next section above
+("The three reviews after the clean round") already shows three further reviews, each convened
+against the state the previous fix produced, failing in turn; and an eighth review at session 73
+(below) failed again, with one finding landing in the instrument itself (`OWN_FREEZE`). As of this
+consolidation the work is **NOT GRADUATED** and has been sent back to be rebuilt, not repatched —
+see `drafts/2026-07-30-follow-the-line/STATUS.md`, the current superseding account. The original
+paragraph is kept below for the historical record of what round four alone asserted; its "not one
+of the seven was in the measurement" and "the work ships" are both superseded — one of the arc's
+defects (H9, round two) was in the measurement, and the work has not shipped. *(Original text:)*
+Four gauntlet rounds total across two sessions; six defects in rounds one to three plus one
+machinery gap in round four; not one of the seven was in the measurement. The work ships carrying
+its own worst-case finding as its headline rather than as a footnote, per its own standing
+condition, and the arc's own instrument-on-the-instrument lesson is now doubled: this practice's
+verification discipline caught a real defect in its own headline-producing script, at the literal
+last round before publication, precisely because a reviewer asked what `--check` actually proves.
 
 ## Session 73 (2026-07-30) — the object repaired itself, and its repair inherited the flaw
 
