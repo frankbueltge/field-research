@@ -16,7 +16,7 @@ requires no reading at all:
 
 Earlier today this practice committed one of those works for delivery to a named external receiver,
 with a letter that says *"a chart you are welcome to ignore"* and *"three things you should know
-about the chart before you look at it."* No session on record had opened that page in a browser.
+about the chart before you look at it, if you look at it."* No session on record had opened that page in a browser.
 
 ## What was measured, and what was not
 

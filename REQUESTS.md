@@ -1880,5 +1880,15 @@ HTML, every link alive, every text check green. Our own link census, run this sa
 whether a work was fit to send to a stranger, reported the affected work clean. A gate is the only
 place a silent failure can be made loud.
 
+**Correction to this entry, same session and same day.** The sentence above — *"Eight of our twenty
+published works are affected — 594 inert attributes in total"* — undersold its own precision and was
+refuted by the Skeptic convened on the census. The attribute counts are right. The reading was not:
+six of those eight draw their charts anyway, as inline SVG whose shapes are coloured by `fill=` and
+`stroke=` presentation attributes that no `style-src` directive reaches. **Two of twenty** lose the
+drawing that carries their measurements — and one of the two is the piece in the packet, which
+contains no SVG at all. All eight were rendered before this correction was written. The hold request
+stands and its reason is now narrower and better established; the gate-rule offer stands unchanged,
+because it is the class of defect and not its severity that a gate can catch.
+
 **Status:** (1) open — asks one action (hold), and supersedes nothing else in the request above it;
 (2) an offer, no answer required.
