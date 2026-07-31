@@ -1,0 +1,683 @@
+{
+  "C1_true_404": {
+    "description": "nonsense path on a host in the census; expect GONE",
+    "error": null,
+    "expected": "GONE",
+    "fired_correctly": true,
+    "status": 404,
+    "url": "https://arxiv.org/abs/9999.99999-nonsense-fit-to-send-c1-check",
+    "verdict": "GONE"
+  },
+  "C2_consent_wall": {
+    "description": "a frozen x-twitter URL, object-data, outside the probed corpus \u2014 whatever this produces is itself the finding",
+    "error": null,
+    "final_url": "https://x.com/9_tzav",
+    "note": "OK: the wall (if any) is invisible to a plain GET at Layer 1",
+    "source": "works/2026-07-20-coverage-not-custody/sample.json (x-twitter stratum, object-data)",
+    "status": 200,
+    "title": "\u05ea\u05e0\u05d5\u05e2\u05ea \u05e6\u05d5 9- \u05d1\u05e9\u05d9\u05e8\u05d5\u05ea \u05d4\u05e2\u05dd (@9_tzav) / X",
+    "url": "https://x.com/9_tzav",
+    "verdict": "OK"
+  },
+  "C3_soft_404": {
+    "description": "known 200-but-deleted page; expect SOFT-GONE",
+    "error": null,
+    "expected": "SOFT-GONE",
+    "final_url": "https://www.kaggle.com/deleted-dataset-version/18354222",
+    "fired_correctly": true,
+    "status": 200,
+    "title": "Kaggle Deleted Dataset Version",
+    "url": "https://www.kaggle.com/dsv/18354222",
+    "verdict": "SOFT-GONE"
+  },
+  "C4_token_check": {
+    "altered_token": "documentation examples without needing PERMISSION-DENIED-XYZ-ALTERED",
+    "altered_token_result": "NOT-HELD",
+    "description": "one stable page, checked once with its real text and once altered",
+    "expected": "HELD for the real token, NOT-HELD for the altered one",
+    "fired_correctly": true,
+    "real_token": "documentation examples without needing permission",
+    "real_token_result": "HELD",
+    "url": "https://example.com"
+  },
+  "C5_per_host_soft_404_sweep": {
+    "description": "one nonsense-path request per distinct host in the census",
+    "n_hosts_swept": 89,
+    "rows": [
+      {
+        "host": "aafp.org",
+        "probe_url": "https://aafp.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "academicintegrity.org",
+        "probe_url": "https://academicintegrity.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 410,
+        "verdict": "GONE"
+      },
+      {
+        "host": "aclanthology.org",
+        "probe_url": "https://aclanthology.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "ai-act-service-desk.ec.europa.eu",
+        "probe_url": "https://ai-act-service-desk.ec.europa.eu/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "amacad.org",
+        "probe_url": "https://amacad.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "apaf.org",
+        "probe_url": "https://apaf.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "api.github.com",
+        "probe_url": "https://api.github.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 403,
+        "verdict": "BLOCKED"
+      },
+      {
+        "host": "archive.cdc.gov",
+        "probe_url": "https://archive.cdc.gov/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "artificialintelligenceact.eu",
+        "probe_url": "https://artificialintelligenceact.eu/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "arxiv.org",
+        "probe_url": "https://arxiv.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "cambridge.org",
+        "probe_url": "https://cambridge.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 403,
+        "verdict": "BLOCKED"
+      },
+      {
+        "host": "caselaw.nationalarchives.gov.uk",
+        "probe_url": "https://caselaw.nationalarchives.gov.uk/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "cdn-dynmedia-1.microsoft.com",
+        "probe_url": "https://cdn-dynmedia-1.microsoft.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "commons.wikimedia.org",
+        "probe_url": "https://commons.wikimedia.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "community.openai.com",
+        "probe_url": "https://community.openai.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "cv.iptc.org",
+        "probe_url": "https://cv.iptc.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "datacenters.lbl.gov",
+        "probe_url": "https://datacenters.lbl.gov/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "datamatters.sidley.com",
+        "probe_url": "https://datamatters.sidley.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "digimarc.com",
+        "probe_url": "https://digimarc.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "documentcloud.org",
+        "probe_url": "https://documentcloud.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "doi.org",
+        "probe_url": "https://doi.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 400,
+        "verdict": "GONE"
+      },
+      {
+        "host": "en.wikipedia.org",
+        "probe_url": "https://en.wikipedia.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "eur-lex.europa.eu",
+        "probe_url": "https://eur-lex.europa.eu/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "export.arxiv.org",
+        "probe_url": "https://export.arxiv.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "frankbueltge.de",
+        "probe_url": "https://frankbueltge.de/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "ghgprotocol.org",
+        "probe_url": "https://ghgprotocol.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "github.com",
+        "probe_url": "https://github.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 403,
+        "verdict": "BLOCKED"
+      },
+      {
+        "host": "hackerfactor.com",
+        "probe_url": "https://hackerfactor.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": true,
+        "status": 200,
+        "verdict": "OK"
+      },
+      {
+        "host": "harvardlawreview.org",
+        "probe_url": "https://harvardlawreview.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "info.arxiv.org",
+        "probe_url": "https://info.arxiv.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "jaapl.org",
+        "probe_url": "https://jaapl.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "jabfm.org",
+        "probe_url": "https://jabfm.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": null,
+        "verdict": "NETFAIL"
+      },
+      {
+        "host": "lrb.co.uk",
+        "probe_url": "https://lrb.co.uk/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "marcellodibello.com",
+        "probe_url": "https://marcellodibello.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": null,
+        "verdict": "NETFAIL"
+      },
+      {
+        "host": "metricgate.com",
+        "probe_url": "https://metricgate.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": true,
+        "status": 200,
+        "verdict": "OK"
+      },
+      {
+        "host": "minnlawyer.com",
+        "probe_url": "https://minnlawyer.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "motherjones.com",
+        "probe_url": "https://motherjones.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "nber.org",
+        "probe_url": "https://nber.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "ncbi.nlm.nih.gov",
+        "probe_url": "https://ncbi.nlm.nih.gov/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "noclimateresultsfound.com",
+        "probe_url": "https://noclimateresultsfound.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "ohchr.org",
+        "probe_url": "https://ohchr.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": true,
+        "status": 200,
+        "verdict": "OK"
+      },
+      {
+        "host": "partnershiponai.org",
+        "probe_url": "https://partnershiponai.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "pmc.ncbi.nlm.nih.gov",
+        "probe_url": "https://pmc.ncbi.nlm.nih.gov/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "policyreview.info",
+        "probe_url": "https://policyreview.info/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "propublica.org",
+        "probe_url": "https://propublica.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "psychiatry.org",
+        "probe_url": "https://psychiatry.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "pubmed.ncbi.nlm.nih.gov",
+        "probe_url": "https://pubmed.ncbi.nlm.nih.gov/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "rand.org",
+        "probe_url": "https://rand.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 403,
+        "verdict": "BLOCKED"
+      },
+      {
+        "host": "raw.githubusercontent.com",
+        "probe_url": "https://raw.githubusercontent.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "reuters.com",
+        "probe_url": "https://reuters.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 401,
+        "verdict": "GONE"
+      },
+      {
+        "host": "spec.c2pa.org",
+        "probe_url": "https://spec.c2pa.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "storage.googleapis.com",
+        "probe_url": "https://storage.googleapis.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "sustainability.google",
+        "probe_url": "https://sustainability.google/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "tbray.org",
+        "probe_url": "https://tbray.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "web.williams.edu",
+        "probe_url": "https://web.williams.edu/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "websites.umich.edu",
+        "probe_url": "https://websites.umich.edu/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 403,
+        "verdict": "BLOCKED"
+      },
+      {
+        "host": "worldprivacyforum.org",
+        "probe_url": "https://worldprivacyforum.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.aafp.org",
+        "probe_url": "https://www.aafp.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.abc.net.au",
+        "probe_url": "https://www.abc.net.au/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.brookings.edu",
+        "probe_url": "https://www.brookings.edu/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.bsfrey.ch",
+        "probe_url": "https://www.bsfrey.ch/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.cambridge.org",
+        "probe_url": "https://www.cambridge.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 403,
+        "verdict": "BLOCKED"
+      },
+      {
+        "host": "www.computerweekly.com",
+        "probe_url": "https://www.computerweekly.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.datacenterdynamics.com",
+        "probe_url": "https://www.datacenterdynamics.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 403,
+        "verdict": "BLOCKED"
+      },
+      {
+        "host": "www.devsustainability.com",
+        "probe_url": "https://www.devsustainability.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.documentcloud.org",
+        "probe_url": "https://www.documentcloud.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.gov.uk",
+        "probe_url": "https://www.gov.uk/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.gstatic.com",
+        "probe_url": "https://www.gstatic.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.kaggle.com",
+        "probe_url": "https://www.kaggle.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.legislation.gov.uk",
+        "probe_url": "https://www.legislation.gov.uk/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.marcellodibello.com",
+        "probe_url": "https://www.marcellodibello.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.ncbi.nlm.nih.gov",
+        "probe_url": "https://www.ncbi.nlm.nih.gov/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.ohchr.org",
+        "probe_url": "https://www.ohchr.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 403,
+        "verdict": "BLOCKED"
+      },
+      {
+        "host": "www.oiahe.org.uk",
+        "probe_url": "https://www.oiahe.org.uk/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.postofficehorizoninquiry.org.uk",
+        "probe_url": "https://www.postofficehorizoninquiry.org.uk/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.propublica.org",
+        "probe_url": "https://www.propublica.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.psychiatry.org",
+        "probe_url": "https://www.psychiatry.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.rehva.eu",
+        "probe_url": "https://www.rehva.eu/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.scconline.com",
+        "probe_url": "https://www.scconline.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.science.org",
+        "probe_url": "https://www.science.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 403,
+        "verdict": "BLOCKED"
+      },
+      {
+        "host": "www.sciencedirect.com",
+        "probe_url": "https://www.sciencedirect.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 403,
+        "verdict": "BLOCKED"
+      },
+      {
+        "host": "www.smartenergydecisions.com",
+        "probe_url": "https://www.smartenergydecisions.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 403,
+        "verdict": "BLOCKED"
+      },
+      {
+        "host": "www.strausstroy.com",
+        "probe_url": "https://www.strausstroy.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.sunbirddcim.com",
+        "probe_url": "https://www.sunbirddcim.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.tbray.org",
+        "probe_url": "https://www.tbray.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.theguardian.com",
+        "probe_url": "https://www.theguardian.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "www.turnitin.com",
+        "probe_url": "https://www.turnitin.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 403,
+        "verdict": "BLOCKED"
+      },
+      {
+        "host": "www.w3.org",
+        "probe_url": "https://www.w3.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 404,
+        "verdict": "GONE"
+      },
+      {
+        "host": "yaledailynews.com",
+        "probe_url": "https://yaledailynews.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+        "soft_404_host": false,
+        "status": 429,
+        "verdict": "BLOCKED"
+      }
+    ],
+    "soft_404_hosts": [
+      "hackerfactor.com",
+      "metricgate.com",
+      "ohchr.org"
+    ]
+  },
+  "stop_rule": {
+    "c1_fired_correctly": true,
+    "c3_fired_correctly": true,
+    "pass": true,
+    "rule": "C1 and C3 must both fire correctly, or no census null is reportable"
+  }
+}
