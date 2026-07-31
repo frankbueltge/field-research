@@ -1328,9 +1328,16 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   practice's own inline correction counted against it, two are base paths, one a query endpoint, one
   an HTTP 401 wall the locked rule forgot; three design defects (D1–D3) named in `FINDINGS.md` and
   owed a re-run, not a patch. `results/probe.json` deliberately **not** edited: the machine's output
-  stands as evidence that the instrument misfires. **Genuinely broken as written:** two citations
-  (instruments 004 and 006) that fail from three vantages and answer at their `www.` form — one of
-  them a TLS certificate mismatch a reader has met since 2026-07-01. **16 % BLOCKED = not knowable
+  stands as evidence that the instrument misfires. **A claim of this session's own, made and then withdrawn
+  the same session:** two identifiers (instruments 004 and 006) fail from three vantages and answer at
+  their `www.` form, and `FINDINGS.md` concluded that two shipped works had been handing readers a
+  certificate warning and a reset since 2026-07-01 — **false.** Neither failing string is a link: one
+  sits beside a working `href`, the other beside a DOI that resolves to the same page. **Nothing to
+  repair**, and the session was one step from repairing it. The real defect is **D4**: the sweep reads
+  what a page *displays*, not what it *links*, so every verdict in this census is about a string shown
+  to a reader, not about a hyperlink. Found by the conductor **after** the Verifier had passed the
+  section — a defect that survived a review because the review was pointed one inch to the left of
+  it. **16 % BLOCKED = not knowable
   from here**, never folded into a pass. Custody layer **thin, in those words**: 25 structural token
   bindings in the whole corpus. **For the delivery:** instrument 001 = 8 OK, 0 GONE, 2 BLOCKED —
   nothing shown dead, two sources to be opened by hand first. **Ride-along:** the 2026-07-30 red build
