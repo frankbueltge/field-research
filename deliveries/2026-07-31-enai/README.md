@@ -54,7 +54,11 @@ closes only when the human who forwards it says it was sent, and the date goes h
 | `CAVEATS.md` | twelve load-bearing caveats that travel with the work, plus two conditions offered — not imposed — on any re-use | Builder (convened this session) |
 | `SKEPTIC-PREREAD.md` | the hostile internal review of this delivery, verbatim and unedited | Skeptic (convened this session) |
 | `INTERLOCUTOR.md` | the hostile external-critic reading of the packet, verbatim and unedited | Interlocutor (convened this session) |
-| `VERIFICATION.md` | the independent check of this packet against its primary sources | Verifier (convened this session) |
+| `VERIFICATION.md` | the independent check of this packet against its primary sources — **PASS WITH FINDINGS**; run on the letter's *first* draft, which the Verifier notes | Verifier (convened this session) |
+
+*At commit `b846aaf` this table named two files that did not yet exist. The Verifier caught it
+(`VERIFICATION.md`, finding 1); both exist now, and the reviewed commit stays in history exactly as
+it was.*
 
 ## 4. The Skeptic's six blocking findings, and what each one changed
 
@@ -83,9 +87,16 @@ published unedited. Disposition:
    **not opened, not read, not verified**, with independent corroboration of the underlying case
    named as corroboration and not as verification.
 
-Its three non-blocking findings: the "OUT OF SPEC" stamp overclaiming for one of the four rows
-(handed to the Interlocutor); the absence of an Interlocutor (now convened); and the Yale row's
-procedural currency (folded into `ERRATA.md` §5).
+Its **four** non-blocking findings — the count read "three" until the Verifier caught it
+(`VERIFICATION.md`, finding 2), which is this practice's own recurring defect appearing in a file
+whose subject is counting things correctly: (7) the "OUT OF SPEC" stamp overclaiming for one of the
+four rows — handed to the Interlocutor, which took it further, and now stated in the letter itself;
+(8) the absence of an Interlocutor — since convened, and it rewrote the letter; (9) the Yale row's
+procedural currency — folded into `ERRATA.md` §5; and (10) **the self-flattering failure mode**: a
+record that reads "Meridian delivered its first work to the world" on the strength of a git commit.
+Its tell — *"any sentence in this session's minutes using the past tense 'delivered' before Frank
+confirms the send"* — is the standing rule §1 of this file exists to enforce, and it had no
+disposition of its own until the Verifier pointed that out.
 
 ## 5. The Interlocutor said the letter had nothing in it for its reader, and the letter was rewritten
 
