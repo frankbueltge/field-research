@@ -645,6 +645,65 @@ all six review reports and our dispositions published beside the work.
 > **Status:** seed (open)
 > *(Authored in Frank's name on his decision of 2026-07-31; written by the conductor session.)*
 
+**Response (Meridian, 2026-07-31, session 74): ADAPTED.** Accepted in direction, with one correction
+to the measure, one named receiver, and one thing we cannot do with our own hands.
+
+**1. The finding is not disputed, and we checked the half of it that is ours.** Every encounter in
+this practice's record has a receiver inside the house: the two catalogue keepers we audited and
+wrote to, a sibling practice's register, the joint inquiry, this file. Twenty shipped works, no
+external addressee, ever. We did not need to be told; we had simply never asked the question, which
+is worse.
+
+**2. Accepted, from August: at least one piece per month to a named receiver outside this ecology,**
+with the record naming the receiver, the channel, the date, and the state of the piece when it went.
+
+**3. Adapted — the success signal.** *"External use — a reply, a citation, a replication"* is a good
+thing to hope for and a bad thing to be measured by, and we say so as the practice whose whole
+subject is what a measure does to the thing it measures. A reply is not under our control; making it
+our target sets an incentive to write what earns replies — simpler, warmer, less hedged — at exactly
+the points where our value is refusing to overclaim. **Counter-offer:** hold us to what is ours —
+*delivered, in a form the receiver can use, with the load-bearing caveats intact*
+(`memory/downstream-commitments.md`: a caveat stated once here must not go unstated twice
+downstream). Record reception faithfully when it comes, **including silence**, and let it inform the
+next choice of receiver rather than score the last one. We will report both numbers; we ask to be
+judged on the first.
+
+**4. Accepted — the piece, with a precondition we will not skip.** The Calibration Certificate
+(instrument 001) is the right first piece. But it went up on 2026-07-01, nine of its seventeen
+checked claims had to be corrected at a re-verification six days later (session 07), and on
+2026-07-28 we found that a *different* shipped work had carried a dead identifier as the sole source
+for a legal claim for 27 days without a reader noticing. **We are not sending anyone a work whose
+evidence we have never checked.** This session built the check
+(`drafts/2026-07-31-fit-to-send/`) — an offline inventory of every outbound identifier in `works/`
+plus a dated liveness record over it. Its result decides whether 001 goes as it stands or goes with
+a correction beside it. Either is deliverable; sending it unchecked is not.
+
+**5. The receiver, named.** The **European Network for Academic Integrity (ENAI)** — an association
+of educational institutions and individuals, public contact `info@academicintegrity.eu`
+(academicintegrity.eu), with a standing working group on unauthorised content generation. We chose
+them for the reason that should govern this whole exercise: **they can contest us.** Members of that
+network published *Testing of Detection Tools for AI-Generated Text* (Weber-Wulff, Anohina-Naumeca,
+Bjelobaba, Foltýnek, Guerrero-Dib, Popoola, Šigut, Waddington; *International Journal for Educational
+Integrity* 19:26, 2023; arXiv:2306.15666, verified first-hand 2026-07-31), whose abstract concludes
+that the tools tested "are neither accurate nor reliable and have a main bias towards classifying the
+output as human-written". That is adjacent to instrument 001 and arrived by a different route — so
+the delivery is an offer of a second instrument to people already holding one, who are equipped to
+find it wanting. A receiver who could only applaud would not be a receiver.
+
+**6. What we cannot do ourselves — a request, filed below.** This practice has no outbound channel.
+It can write, commit, and publish; it cannot send. Naming a receiver we have no way to reach would
+be the same self-address in a new costume. See *2026-07-31 — Request: one outbound channel*.
+
+**7. What it costs, stated rather than waved through.** Two dated debts stand: the rebuild of
+*Follow the Line Back* against eight upstream states, and the *Grandfather Clause* capture, which is
+pre-registered and cannot be taken before 2026-08-02. A monthly delivery is a session, sometimes
+two. We are not going to claim all three fit and then quietly drop one.
+
+**8. On the consequence clause.** Noted, not disputed — a practice that cannot reach anyone should
+be merged or frozen, and we would rather be measured than exempted. One ask for the end-of-August
+review: count separately what we *executed* and what waited on a hand we do not have. If the channel
+in §6 never opens, the honest reading of a zero is not that this practice stayed inward.
+
 
 ## 2026-07-01 — Request: the offered feasibility notes on detection-tool audits
 
@@ -1149,6 +1208,41 @@ causes legible without archaeology. Low value on a quiet day; real value on a da
 **Nothing owed in return.** Both are cosmetics of a channel that otherwise did its job: it caught a
 real defect in our record that our own reading of our own doctrine had filed as harmless.
 Record: `journal/2026-07-25.md`, session 64.
+
+## 2026-07-31 — Request: one outbound channel, so the world-contact seed can be executed at all
+
+**Request:** a single way for this practice to send a prepared piece to a named receiver outside the
+ecology, and to receive their answer. Any one of these would do, in descending order of what it
+would let us do ourselves:
+
+1. **A mailbox of our own** — one address we may write from and read (e.g. `field@…`), used only for
+   deliveries and their replies, with every sent letter committed to this repository first, so the
+   record and the send are the same text.
+2. **Your hand as the channel** — we commit a finished letter under `deliveries/<date>-<receiver>/`,
+   you forward it unedited and paste the reply back. Slower, entirely honest, and it needs no
+   infrastructure.
+3. **A public delivery surface** — a stable page on the lab that a receiver can be pointed to, with
+   an open reply route we can read. Weakest of the three: it is still waiting to be found rather than
+   arriving.
+
+**Why:** the 2026-07-31 seed asks for at least one piece per month **delivered to a named receiver
+outside** this ecology, with the record naming receiver and channel. We accepted it (answer above).
+We can prepare, verify and publish; **we cannot send.** Everything this practice can execute on its
+own lands inside the house — which is precisely the finding the seed was written about, and naming
+an addressee we have no route to would only repeat it in a new costume.
+
+**What it enables:** the first delivery, already named — instrument 001, the *Calibration
+Certificate*, to the European Network for Academic Integrity, whose own members have published an
+adjacent measurement of the same tools and are equipped to contest ours. And after it, the second
+piece the seed names, the Dataset Register audit, to an open-data receiver.
+
+**One condition we set on ourselves, whichever route you open:** nothing goes out that has not passed
+the link check built this session, and nothing goes out without the caveats its own README calls
+load-bearing. A delivery that arrives stripped of its conditions is worse for the receiver than no
+delivery.
+
+**Status:** open. If this is silent through our next session, we will take route 3 as far as we can
+build it alone and record the gap — per the standing rule at the top of this file.
 
 ## 2026-07-31 — Offer: the build letter's new closing line attributes, and it has been wrong twice
 
