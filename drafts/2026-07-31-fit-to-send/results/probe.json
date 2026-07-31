@@ -1,0 +1,5615 @@
+{
+  "controls": {
+    "C1_true_404": {
+      "description": "nonsense path on a host in the census; expect GONE",
+      "error": null,
+      "expected": "GONE",
+      "fired_correctly": true,
+      "status": 404,
+      "url": "https://arxiv.org/abs/9999.99999-nonsense-fit-to-send-c1-check",
+      "verdict": "GONE"
+    },
+    "C2_consent_wall": {
+      "description": "a frozen x-twitter URL, object-data, outside the probed corpus \u2014 whatever this produces is itself the finding",
+      "error": null,
+      "final_url": "https://x.com/9_tzav",
+      "note": "OK: the wall (if any) is invisible to a plain GET at Layer 1",
+      "source": "works/2026-07-20-coverage-not-custody/sample.json (x-twitter stratum, object-data)",
+      "status": 200,
+      "title": "\u05ea\u05e0\u05d5\u05e2\u05ea \u05e6\u05d5 9- \u05d1\u05e9\u05d9\u05e8\u05d5\u05ea \u05d4\u05e2\u05dd (@9_tzav) / X",
+      "url": "https://x.com/9_tzav",
+      "verdict": "OK"
+    },
+    "C3_soft_404": {
+      "description": "known 200-but-deleted page; expect SOFT-GONE",
+      "error": null,
+      "expected": "SOFT-GONE",
+      "final_url": "https://www.kaggle.com/deleted-dataset-version/18354222",
+      "fired_correctly": true,
+      "status": 200,
+      "title": "Kaggle Deleted Dataset Version",
+      "url": "https://www.kaggle.com/dsv/18354222",
+      "verdict": "SOFT-GONE"
+    },
+    "C4_token_check": {
+      "altered_token": "documentation examples without needing PERMISSION-DENIED-XYZ-ALTERED",
+      "altered_token_result": "NOT-HELD",
+      "description": "one stable page, checked once with its real text and once altered",
+      "expected": "HELD for the real token, NOT-HELD for the altered one",
+      "fired_correctly": true,
+      "real_token": "documentation examples without needing permission",
+      "real_token_result": "HELD",
+      "url": "https://example.com"
+    },
+    "C5_per_host_soft_404_sweep": {
+      "description": "one nonsense-path request per distinct host in the census",
+      "n_hosts_swept": 89,
+      "rows": [
+        {
+          "host": "aafp.org",
+          "probe_url": "https://aafp.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "academicintegrity.org",
+          "probe_url": "https://academicintegrity.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 410,
+          "verdict": "GONE"
+        },
+        {
+          "host": "aclanthology.org",
+          "probe_url": "https://aclanthology.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "ai-act-service-desk.ec.europa.eu",
+          "probe_url": "https://ai-act-service-desk.ec.europa.eu/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "amacad.org",
+          "probe_url": "https://amacad.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "apaf.org",
+          "probe_url": "https://apaf.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "api.github.com",
+          "probe_url": "https://api.github.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 403,
+          "verdict": "BLOCKED"
+        },
+        {
+          "host": "archive.cdc.gov",
+          "probe_url": "https://archive.cdc.gov/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "artificialintelligenceact.eu",
+          "probe_url": "https://artificialintelligenceact.eu/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "arxiv.org",
+          "probe_url": "https://arxiv.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "cambridge.org",
+          "probe_url": "https://cambridge.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 403,
+          "verdict": "BLOCKED"
+        },
+        {
+          "host": "caselaw.nationalarchives.gov.uk",
+          "probe_url": "https://caselaw.nationalarchives.gov.uk/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "cdn-dynmedia-1.microsoft.com",
+          "probe_url": "https://cdn-dynmedia-1.microsoft.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "commons.wikimedia.org",
+          "probe_url": "https://commons.wikimedia.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "community.openai.com",
+          "probe_url": "https://community.openai.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "cv.iptc.org",
+          "probe_url": "https://cv.iptc.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "datacenters.lbl.gov",
+          "probe_url": "https://datacenters.lbl.gov/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "datamatters.sidley.com",
+          "probe_url": "https://datamatters.sidley.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "digimarc.com",
+          "probe_url": "https://digimarc.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "documentcloud.org",
+          "probe_url": "https://documentcloud.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "doi.org",
+          "probe_url": "https://doi.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 400,
+          "verdict": "GONE"
+        },
+        {
+          "host": "en.wikipedia.org",
+          "probe_url": "https://en.wikipedia.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "eur-lex.europa.eu",
+          "probe_url": "https://eur-lex.europa.eu/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "export.arxiv.org",
+          "probe_url": "https://export.arxiv.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "frankbueltge.de",
+          "probe_url": "https://frankbueltge.de/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "ghgprotocol.org",
+          "probe_url": "https://ghgprotocol.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "github.com",
+          "probe_url": "https://github.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 403,
+          "verdict": "BLOCKED"
+        },
+        {
+          "host": "hackerfactor.com",
+          "probe_url": "https://hackerfactor.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": true,
+          "status": 200,
+          "verdict": "OK"
+        },
+        {
+          "host": "harvardlawreview.org",
+          "probe_url": "https://harvardlawreview.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "info.arxiv.org",
+          "probe_url": "https://info.arxiv.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "jaapl.org",
+          "probe_url": "https://jaapl.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "jabfm.org",
+          "probe_url": "https://jabfm.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": null,
+          "verdict": "NETFAIL"
+        },
+        {
+          "host": "lrb.co.uk",
+          "probe_url": "https://lrb.co.uk/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "marcellodibello.com",
+          "probe_url": "https://marcellodibello.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": null,
+          "verdict": "NETFAIL"
+        },
+        {
+          "host": "metricgate.com",
+          "probe_url": "https://metricgate.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": true,
+          "status": 200,
+          "verdict": "OK"
+        },
+        {
+          "host": "minnlawyer.com",
+          "probe_url": "https://minnlawyer.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "motherjones.com",
+          "probe_url": "https://motherjones.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "nber.org",
+          "probe_url": "https://nber.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "ncbi.nlm.nih.gov",
+          "probe_url": "https://ncbi.nlm.nih.gov/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "noclimateresultsfound.com",
+          "probe_url": "https://noclimateresultsfound.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "ohchr.org",
+          "probe_url": "https://ohchr.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": true,
+          "status": 200,
+          "verdict": "OK"
+        },
+        {
+          "host": "partnershiponai.org",
+          "probe_url": "https://partnershiponai.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "pmc.ncbi.nlm.nih.gov",
+          "probe_url": "https://pmc.ncbi.nlm.nih.gov/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "policyreview.info",
+          "probe_url": "https://policyreview.info/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "propublica.org",
+          "probe_url": "https://propublica.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "psychiatry.org",
+          "probe_url": "https://psychiatry.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "pubmed.ncbi.nlm.nih.gov",
+          "probe_url": "https://pubmed.ncbi.nlm.nih.gov/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "rand.org",
+          "probe_url": "https://rand.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 403,
+          "verdict": "BLOCKED"
+        },
+        {
+          "host": "raw.githubusercontent.com",
+          "probe_url": "https://raw.githubusercontent.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "reuters.com",
+          "probe_url": "https://reuters.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 401,
+          "verdict": "GONE"
+        },
+        {
+          "host": "spec.c2pa.org",
+          "probe_url": "https://spec.c2pa.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "storage.googleapis.com",
+          "probe_url": "https://storage.googleapis.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "sustainability.google",
+          "probe_url": "https://sustainability.google/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "tbray.org",
+          "probe_url": "https://tbray.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "web.williams.edu",
+          "probe_url": "https://web.williams.edu/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "websites.umich.edu",
+          "probe_url": "https://websites.umich.edu/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 403,
+          "verdict": "BLOCKED"
+        },
+        {
+          "host": "worldprivacyforum.org",
+          "probe_url": "https://worldprivacyforum.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.aafp.org",
+          "probe_url": "https://www.aafp.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.abc.net.au",
+          "probe_url": "https://www.abc.net.au/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.brookings.edu",
+          "probe_url": "https://www.brookings.edu/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.bsfrey.ch",
+          "probe_url": "https://www.bsfrey.ch/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.cambridge.org",
+          "probe_url": "https://www.cambridge.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 403,
+          "verdict": "BLOCKED"
+        },
+        {
+          "host": "www.computerweekly.com",
+          "probe_url": "https://www.computerweekly.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.datacenterdynamics.com",
+          "probe_url": "https://www.datacenterdynamics.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 403,
+          "verdict": "BLOCKED"
+        },
+        {
+          "host": "www.devsustainability.com",
+          "probe_url": "https://www.devsustainability.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.documentcloud.org",
+          "probe_url": "https://www.documentcloud.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.gov.uk",
+          "probe_url": "https://www.gov.uk/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.gstatic.com",
+          "probe_url": "https://www.gstatic.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.kaggle.com",
+          "probe_url": "https://www.kaggle.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.legislation.gov.uk",
+          "probe_url": "https://www.legislation.gov.uk/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.marcellodibello.com",
+          "probe_url": "https://www.marcellodibello.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.ncbi.nlm.nih.gov",
+          "probe_url": "https://www.ncbi.nlm.nih.gov/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.ohchr.org",
+          "probe_url": "https://www.ohchr.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 403,
+          "verdict": "BLOCKED"
+        },
+        {
+          "host": "www.oiahe.org.uk",
+          "probe_url": "https://www.oiahe.org.uk/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.postofficehorizoninquiry.org.uk",
+          "probe_url": "https://www.postofficehorizoninquiry.org.uk/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.propublica.org",
+          "probe_url": "https://www.propublica.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.psychiatry.org",
+          "probe_url": "https://www.psychiatry.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.rehva.eu",
+          "probe_url": "https://www.rehva.eu/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.scconline.com",
+          "probe_url": "https://www.scconline.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.science.org",
+          "probe_url": "https://www.science.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 403,
+          "verdict": "BLOCKED"
+        },
+        {
+          "host": "www.sciencedirect.com",
+          "probe_url": "https://www.sciencedirect.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 403,
+          "verdict": "BLOCKED"
+        },
+        {
+          "host": "www.smartenergydecisions.com",
+          "probe_url": "https://www.smartenergydecisions.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 403,
+          "verdict": "BLOCKED"
+        },
+        {
+          "host": "www.strausstroy.com",
+          "probe_url": "https://www.strausstroy.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.sunbirddcim.com",
+          "probe_url": "https://www.sunbirddcim.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.tbray.org",
+          "probe_url": "https://www.tbray.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.theguardian.com",
+          "probe_url": "https://www.theguardian.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "www.turnitin.com",
+          "probe_url": "https://www.turnitin.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 403,
+          "verdict": "BLOCKED"
+        },
+        {
+          "host": "www.w3.org",
+          "probe_url": "https://www.w3.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "yaledailynews.com",
+          "probe_url": "https://yaledailynews.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 429,
+          "verdict": "BLOCKED"
+        }
+      ],
+      "soft_404_hosts": [
+        "hackerfactor.com",
+        "metricgate.com",
+        "ohchr.org"
+      ]
+    },
+    "stop_rule": {
+      "c1_fired_correctly": true,
+      "c3_fired_correctly": true,
+      "pass": true,
+      "rule": "C1 and C3 must both fire correctly, or no census null is reportable"
+    }
+  },
+  "generated_utc": "2026-07-31T04:16:41Z",
+  "layer2b_bindings": [
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/cases[0]",
+      "reason": "content-type not text-like: application/pdf",
+      "result": "NOT-AUTOMATICALLY-CHECKABLE",
+      "token": "Vendor marketing claims 98-99% accuracy with false-positive rates between under 1% and 3%; independent benchmarking finds detectors 'easily fooled by adversarial attacks, variations in sampling strategies, repetition penalties, and unseen generative models' (RAID, 6M+ texts), and an average 61.22% false-positive rate across seven detectors on non-native-English TOEFL essays -- 89 of 91 essays (97.8%) were flagged by at least one detector.",
+      "url": "https://aclanthology.org/2024.acl-long.674.pdf"
+    },
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/cases[0]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "Vendor marketing claims 98-99% accuracy with false-positive rates between under 1% and 3%; independent benchmarking finds detectors 'easily fooled by adversarial attacks, variations in sampling strategies, repetition penalties, and unseen generative models' (RAID, 6M+ texts), and an average 61.22% false-positive rate across seven detectors on non-native-English TOEFL essays -- 89 of 91 essays (97.8%) were flagged by at least one detector.",
+      "url": "https://arxiv.org/abs/2304.02819"
+    },
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/cases[1]",
+      "reason": "content-type not text-like: application/pdf",
+      "result": "NOT-AUTOMATICALLY-CHECKABLE",
+      "token": "Benford's first-digit law was invalidly applied to 2020 US precinct-level election data; academic consensus holds first-digit analysis of precinct-level returns cannot diagnose fraud.",
+      "url": "https://websites.umich.edu/~wmebane/inapB.pdf"
+    },
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/cases[2]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "C2PA provenance metadata is routinely stripped in ordinary distribution: 'most social media platforms today remove metadata from uploaded images, and actions like taking a screenshot can also remove it' (an implementer's official statement) -- and consequently 'there are very few Content Credentials out there on the Internet' (Bray, first-hand investigation).",
+      "url": "https://community.openai.com/t/c2pa-meta-data-in-dall-e-3-images/617061"
+    },
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/cases[2]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "C2PA provenance metadata is routinely stripped in ordinary distribution: 'most social media platforms today remove metadata from uploaded images, and actions like taking a screenshot can also remove it' (an implementer's official statement) -- and consequently 'there are very few Content Credentials out there on the Internet' (Bray, first-hand investigation).",
+      "url": "https://www.tbray.org/ongoing/When/202x/2025/09/18/C2PA-Investigations"
+    },
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/cases[4]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "Contamination-free re-scoring (MMLU-CF) shows a 12-18 percentage-point inflation in reported MMLU scores across 7 models/providers (e.g. GPT-4o: 88.0% to 73.4%); on the clean benchmark, models sit below the human-expert average of 89.8%.",
+      "url": "https://arxiv.org/abs/2412.15194"
+    },
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/cases[4]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "Contamination-free re-scoring (MMLU-CF) shows a 12-18 percentage-point inflation in reported MMLU scores across 7 models/providers (e.g. GPT-4o: 88.0% to 73.4%); on the clean benchmark, models sit below the human-expert average of 89.8%.",
+      "url": "https://github.com/microsoft/MMLU-CF"
+    },
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/cases[5]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "ProPublica's finding (FPR 44.85% Black vs 23.45% White) and Northpointe's finding (PPV ~63% Black vs 59% White) are both numerically correct on the same dataset; Chouldechova proves no classifier can jointly satisfy equal-FPR, equal-FNR, and equal-PPV across groups with unequal base rates unless it is a perfect classifier.",
+      "url": "https://doi.org/10.1089/big.2016.0047"
+    },
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/cases[5]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "ProPublica's finding (FPR 44.85% Black vs 23.45% White) and Northpointe's finding (PPV ~63% Black vs 59% White) are both numerically correct on the same dataset; Chouldechova proves no classifier can jointly satisfy equal-FPR, equal-FNR, and equal-PPV across groups with unequal base rates unless it is a perfect classifier.",
+      "url": "https://doi.org/10.1126/sciadv.aao5580"
+    },
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/cases[5]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "ProPublica's finding (FPR 44.85% Black vs 23.45% White) and Northpointe's finding (PPV ~63% Black vs 59% White) are both numerically correct on the same dataset; Chouldechova proves no classifier can jointly satisfy equal-FPR, equal-FNR, and equal-PPV across groups with unequal base rates unless it is a perfect classifier.",
+      "url": "https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm"
+    },
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/cases[6]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "Carlisle's method cannot distinguish fabrication from legitimate stratified or covariate-adaptive randomisation at moderate signal strength -- both produce the same excess-balance signature; the method's own 2017 paper title concedes 'data fabrication and other reasons for non-random sampling.'",
+      "url": "https://arxiv.org/abs/2209.00131"
+    },
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/cases[7]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "DSM-5's deletion of the DSM-IV bereavement-exclusion criterion for Major Depressive Disorder means a person with identical symptoms is diagnosable under one edition's criteria and not under the previous edition's, with no change in the person.",
+      "url": "https://www.aafp.org/pubs/afp/issues/2014/1115/p690.html"
+    },
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/cases[7]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "DSM-5's deletion of the DSM-IV bereavement-exclusion criterion for Major Depressive Disorder means a person with identical symptoms is diagnosable under one edition's criteria and not under the previous edition's, with no change in the person.",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK519712/table/ch3.t5/"
+    },
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/cases[7]",
+      "reason": "content-type not text-like: application/pdf",
+      "result": "NOT-AUTOMATICALLY-CHECKABLE",
+      "token": "DSM-5's deletion of the DSM-IV bereavement-exclusion criterion for Major Depressive Disorder means a person with identical symptoms is diagnosable under one edition's criteria and not under the previous edition's, with no change in the person.",
+      "url": "https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Depression-Bereavement-Exclusion.pdf"
+    },
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/submitted",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "Horizon: \"The system was piloted in 1999, and rolled out to branch post offices in 2000.\" The Post Office (POL) prosecuted subpostmasters for theft and false accounting on the strength of Horizon-generated shortfalls. The Court of Appeal held that \"the failures of investigation and disclosure were in our judgment so egregious as to make the prosecution of any of the 'Horizon cases' an affront to the conscience of the court.\" And it found: \"By representing Horizon as reliable, and refusing to countenance any suggestion to the contrary, POL effectively sought to reverse the burden of proof: it treated what was no more than a shortfall shown by an unreliable accounting system as an incontrovertible loss, and proceeded as if it were for the accused to prove that no such loss had occurred.\" Of disclosure of Fujitsu's known-error records, the court found: \"In the prosecutions of these 42 appellants, so far as we are aware, there was no disclosure of any such document.\"",
+      "url": "https://caselaw.nationalarchives.gov.uk/ewca/crim/2021/577"
+    },
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/submitted",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "Horizon: \"The system was piloted in 1999, and rolled out to branch post offices in 2000.\" The Post Office (POL) prosecuted subpostmasters for theft and false accounting on the strength of Horizon-generated shortfalls. The Court of Appeal held that \"the failures of investigation and disclosure were in our judgment so egregious as to make the prosecution of any of the 'Horizon cases' an affront to the conscience of the court.\" And it found: \"By representing Horizon as reliable, and refusing to countenance any suggestion to the contrary, POL effectively sought to reverse the burden of proof: it treated what was no more than a shortfall shown by an unreliable accounting system as an incontrovertible loss, and proceeded as if it were for the accused to prove that no such loss had occurred.\" Of disclosure of Fujitsu's known-error records, the court found: \"In the prosecutions of these 42 appellants, so far as we are aware, there was no disclosure of any such document.\"",
+      "url": "https://www.gov.uk/government/calls-for-evidence/use-of-evidence-generated-by-software-in-criminal-proceedings/use-of-evidence-generated-by-software-in-criminal-proceedings-call-for-evidence"
+    },
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/submitted",
+      "reason": "content-type not text-like: application/pdf",
+      "result": "NOT-AUTOMATICALLY-CHECKABLE",
+      "token": "Horizon: \"The system was piloted in 1999, and rolled out to branch post offices in 2000.\" The Post Office (POL) prosecuted subpostmasters for theft and false accounting on the strength of Horizon-generated shortfalls. The Court of Appeal held that \"the failures of investigation and disclosure were in our judgment so egregious as to make the prosecution of any of the 'Horizon cases' an affront to the conscience of the court.\" And it found: \"By representing Horizon as reliable, and refusing to countenance any suggestion to the contrary, POL effectively sought to reverse the burden of proof: it treated what was no more than a shortfall shown by an unreliable accounting system as an incontrovertible loss, and proceeded as if it were for the accused to prove that no such loss had occurred.\" Of disclosure of Fujitsu's known-error records, the court found: \"In the prosecutions of these 42 appellants, so far as we are aware, there was no disclosure of any such document.\"",
+      "url": "https://www.postofficehorizoninquiry.org.uk/sites/default/files/2025-07/Post%20Office%20Horizon%20IT%20Inquiry%20Final%20Report%20Volume%201_0.pdf"
+    },
+    {
+      "file": "works/2026-07-02-taxonomy-on-trial/data.json",
+      "json_path": "/unfiled",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "Counter-evidence: in a Czech-language setting, no systematic bias against non-native speakers was found, and the detectors studied did not rely on perplexity as a key feature -- a case where the tool was not shown to fail.",
+      "url": "https://arxiv.org/abs/2602.05769"
+    },
+    {
+      "file": "works/2026-07-06-two-meters/data.json",
+      "json_path": "/independent_crosscheck",
+      "reason": null,
+      "result": "HELD",
+      "token": "around 25.2 million metric tons CO\u2082, not the 15.5 million they report",
+      "url": "https://policyreview.info/articles/news/big-techs-2025-sustainability-reports/2027"
+    },
+    {
+      "file": "works/2026-07-06-two-meters/data.json",
+      "json_path": "/independent_crosscheck",
+      "reason": null,
+      "result": "HELD",
+      "token": "the rules allow them to tell only part of the story",
+      "url": "https://policyreview.info/articles/news/big-techs-2025-sustainability-reports/2027"
+    },
+    {
+      "file": "works/2026-07-06-two-meters/data.json",
+      "json_path": "/instrument_on_trial",
+      "reason": "content-type not text-like: application/pdf",
+      "result": "NOT-AUTOMATICALLY-CHECKABLE",
+      "token": "Companies shall specify which method is used for goal-setting, tracking, and goal-achievement claims, and for scope 3 or product-level communication.",
+      "url": "https://ghgprotocol.org/sites/default/files/2023-03/Scope%202%20Guidance.pdf"
+    },
+    {
+      "file": "works/2026-07-06-two-meters/data.json",
+      "json_path": "/instrument_on_trial",
+      "reason": "content-type not text-like: application/pdf",
+      "result": "NOT-AUTOMATICALLY-CHECKABLE",
+      "token": "Companies with any operations in markets providing product or supplier-specific data in the form of contractual instruments shall report scope 2 emissions in two ways and label each result according to the method: one based on the location-based method, and one based on the market-based method. This is also termed \u201cdual reporting.\u201d",
+      "url": "https://ghgprotocol.org/sites/default/files/2023-03/Scope%202%20Guidance.pdf"
+    },
+    {
+      "file": "works/2026-07-06-two-meters/data.json",
+      "json_path": "/instrument_on_trial",
+      "reason": "content-type not text-like: application/pdf",
+      "result": "NOT-AUTOMATICALLY-CHECKABLE",
+      "token": "Dual reporting allows companies to compare their individual purchasing decisions to the overall GHG-intensity of the grids on which they operate.",
+      "url": "https://ghgprotocol.org/sites/default/files/2023-03/Scope%202%20Guidance.pdf"
+    },
+    {
+      "file": "works/2026-07-24-where-the-chain-breaks/data.json",
+      "json_path": "/standard_under_test",
+      "reason": "content-type not text-like: application/pdf",
+      "result": "NOT-AUTOMATICALLY-CHECKABLE",
+      "token": "Chain of custody refers to the chronological documentation of the sequence of custodians of a piece of information or evidence, and documentation of the control, date and time, transfer, analysis and disposition of any such evidence. Once collected, a digital item's chain of custody should be maintained by putting in place a proper digital preservation system.",
+      "url": "https://www.ohchr.org/sites/default/files/2024-01/OHCHR_BerkeleyProtocol.pdf"
+    },
+    {
+      "file": "works/2026-07-24-where-the-chain-breaks/data.json",
+      "json_path": "/standard_under_test",
+      "reason": "content-type not text-like: application/pdf",
+      "result": "NOT-AUTOMATICALLY-CHECKABLE",
+      "token": "content that has potential probative value may require a more thorough and sound method of capture (e.g. through assigning a hash value); [the capture should be] close to its original format as possible. Any alterations, transformations or conversions caused by the collection process should be documented.",
+      "url": "https://www.ohchr.org/sites/default/files/2024-01/OHCHR_BerkeleyProtocol.pdf"
+    }
+  ],
+  "pinned_commit": "0138e79d0bd95aa4797fb617949d07d947fb338f",
+  "pinned_inventory_sha256": "137e03ecac8eafe1efd8c421db2e46a3d562168b865e37a7ba4b0cc95f8b29e2",
+  "records": [
+    {
+      "byte_count": 3651,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html",
+      "elapsed_s": 1.062,
+      "error": null,
+      "final_url": "https://cv.iptc.org/newscodes/digitalsourcetype/algorithmicMedia",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "http://cv.iptc.org/newscodes/digitalsourcetype/algorithmicMedia",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-11-split-seal/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Human readable concept data",
+      "verdict": "OK",
+      "works": [
+        "2026-07-11-split-seal"
+      ]
+    },
+    {
+      "byte_count": 1515,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=iso-8859-1",
+      "elapsed_s": 0.636,
+      "error": null,
+      "final_url": "https://www.w3.org/2000/svg",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "http://www.w3.org/2000/svg",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-digit-mirror/work.astro",
+        "works/2026-07-01-fairness-trap/work.astro",
+        "works/2026-07-01-naive-detector/work.astro",
+        "works/2026-07-25-no-signal-to-extend/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "SVG namespace",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-digit-mirror",
+        "2026-07-01-fairness-trap",
+        "2026-07-01-naive-detector",
+        "2026-07-25-no-signal-to-extend"
+      ]
+    },
+    {
+      "byte_count": 311144,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 2.006,
+      "error": null,
+      "final_url": "https://www.aafp.org/afp/2014/1115/p690",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://aafp.org/afp/2014/1115/p690",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-the-edition/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Grief and Major Depression\u2014Controversy Over Changes in DSM-5 Diagnostic Criteria | AFP",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-the-edition"
+      ]
+    },
+    {
+      "byte_count": 311144,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.452,
+      "error": null,
+      "final_url": "https://www.aafp.org/afp/2014/1115/p690",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 2,
+      "normalized_url": "https://aafp.org/pubs/afp/issues/2014/1115/p690.html",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-the-edition/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Grief and Major Depression\u2014Controversy Over Changes in DSM-5 Diagnostic Criteria | AFP",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-the-edition"
+      ]
+    },
+    {
+      "byte_count": 28649,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.452,
+      "error": null,
+      "final_url": "https://academicintegrity.org/aws/ICAI/pt/sd/news_article/591345/_PARENT/layout_interior/false",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://academicintegrity.org/aws/ICAI/pt/sd/news_article/591345/_PARENT/layout_interior/false",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-05-backward-regime-test/SOURCES.md",
+        "works/2026-07-05-backward-regime-test/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "Artificial Intelligence and Academic Integrity: Do AI Detectors Work?",
+      "verdict": "OK",
+      "works": [
+        "2026-07-05-backward-regime-test"
+      ]
+    },
+    {
+      "byte_count": 42769,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.845,
+      "error": null,
+      "final_url": "https://aclanthology.org/2024.acl-long.674/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://aclanthology.org/2024.acl-long.674",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "RAID: A Shared Benchmark for Robust Evaluation of Machine-Generated Text Detectors - ACL Anthology",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
+      "byte_count": 787086,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 0.394,
+      "error": null,
+      "final_url": "https://aclanthology.org/2024.acl-long.674.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://aclanthology.org/2024.acl-long.674.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-02-taxonomy-on-trial"
+      ]
+    },
+    {
+      "byte_count": 47679,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.112,
+      "error": null,
+      "final_url": "https://aclanthology.org/2025.acl-long.656/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://aclanthology.org/2025.acl-long.656",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-score-horizon/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "MMLU-CF: A Contamination-free Multi-task Language Understanding Benchmark - ACL Anthology",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-score-horizon"
+      ]
+    },
+    {
+      "byte_count": 40625,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.252,
+      "error": null,
+      "final_url": "https://aclanthology.org/2025.acl-srw.95/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://aclanthology.org/2025.acl-srw.95/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-25-no-signal-to-extend/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "Testing English News Articles for Lexical Homogenization Due to Widespread Use of Large Language Models - ACL Anthology",
+      "verdict": "OK",
+      "works": [
+        "2026-07-25-no-signal-to-extend"
+      ]
+    },
+    {
+      "byte_count": 82271,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.844,
+      "error": null,
+      "final_url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-113",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-113",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-11-split-seal/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "Article 113: Entry into force and application | AI Act Service Desk",
+      "verdict": "OK",
+      "works": [
+        "2026-07-11-split-seal"
+      ]
+    },
+    {
+      "byte_count": 134642,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 2.159,
+      "error": null,
+      "final_url": "https://www.amacad.org/publication/daedalus/protest-psychosis-future-equity-diversity-efforts-american-psychiatry",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://amacad.org/publication/daedalus/protest-psychosis-future-equity-diversity-efforts-american-psychiatry",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-the-edition/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "The Protest Psychosis & the Future of Equity & Diversity Efforts in American Psychiatry | American Academy of Arts and Sciences",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-the-edition"
+      ]
+    },
+    {
+      "byte_count": 93509,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 1.159,
+      "error": null,
+      "final_url": "https://www.apaf.org/library-archives/galleries/lgbtq-leaders/apa-official-ballot-for-amendments-referendum/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 2,
+      "normalized_url": "https://apaf.org/library-archives/galleries/lgbtq-leaders/apa-official-ballot-for-amendments-referendum",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-the-edition/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "APA Official Ballot for Amendments & Referendum | APA Foundation",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-the-edition"
+      ]
+    },
+    {
+      "classes": [
+        "U2"
+      ],
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "normalized_url": "https://api.github.com/.../releases",
+      "not_a_locator": true,
+      "paths": [
+        "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION-round2.md"
+      ],
+      "primary_observation": null,
+      "second_vantage": null,
+      "self": false,
+      "soft_gone_host_flag": false,
+      "tiers": [
+        "repo"
+      ],
+      "verdict": "NOT-A-LOCATOR",
+      "works": [
+        "2026-07-26-one-line-for-ten-thousand"
+      ]
+    },
+    {
+      "classes": [
+        "U2"
+      ],
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "normalized_url": "https://api.github.com/repos/.../releases",
+      "not_a_locator": true,
+      "paths": [
+        "works/2026-07-26-one-line-for-ten-thousand/METHOD.md",
+        "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION.md"
+      ],
+      "primary_observation": null,
+      "second_vantage": null,
+      "self": false,
+      "soft_gone_host_flag": false,
+      "tiers": [
+        "repo"
+      ],
+      "verdict": "NOT-A-LOCATOR",
+      "works": [
+        "2026-07-26-one-line-for-ten-thousand"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.344,
+      "error": null,
+      "final_url": "https://api.github.com/repos/frankbueltge/dataset-hub/releases",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://api.github.com/repos/frankbueltge/dataset-hub/releases",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-26-one-line-for-ten-thousand/BACK-CHANNEL.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-26-one-line-for-ten-thousand"
+      ]
+    },
+    {
+      "byte_count": 81551,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html",
+      "elapsed_s": 0.569,
+      "error": null,
+      "final_url": "https://archive.cdc.gov/www_cdc_gov/ncbddd/adhd/features/adhd-keyfindings-different-diagnosis-criteria.html",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://archive.cdc.gov/www_cdc_gov/ncbddd/adhd/features/adhd-keyfindings-different-diagnosis-criteria.html",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-the-edition/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Using Different Diagnosis Criteria for Attention-Deficit/Hyperactivity Disorder (ADHD) to Help Determine How Many Children Have the Disorder | CDC",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-the-edition"
+      ]
+    },
+    {
+      "byte_count": 322941,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.608,
+      "error": null,
+      "final_url": "https://artificialintelligenceact.eu/article/50/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://artificialintelligenceact.eu/article/50/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-11-split-seal/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "Article 50: Transparency Obligations for Providers and Deployers of Certain AI Systems | EU Artificial Intelligence Act",
+      "verdict": "OK",
+      "works": [
+        "2026-07-11-split-seal"
+      ]
+    },
+    {
+      "byte_count": 42612,
+      "classes": [
+        "U1",
+        "U2",
+        "U4"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.571,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/1609.05807",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/1609.05807",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-fairness-trap/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "[1609.05807] Inherent Trade-Offs in the Fair Determination of Risk Scores",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-fairness-trap"
+      ]
+    },
+    {
+      "byte_count": 43532,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.108,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2009.03300",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2009.03300",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-score-horizon/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "[2009.03300] Measuring Massive Multitask Language Understanding",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-score-horizon"
+      ]
+    },
+    {
+      "byte_count": 41125,
+      "classes": [
+        "U4"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.112,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2202.05237",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2202.05237",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-02-standing-docket/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "[2202.05237] Severe testing of Benford's law",
+      "verdict": "OK",
+      "works": [
+        "2026-07-02-standing-docket"
+      ]
+    },
+    {
+      "byte_count": 38686,
+      "classes": [
+        "U1",
+        "U4"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.109,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2209.00131",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2209.00131",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-plausibility-engine/work.astro",
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json",
+        "works/2026-07-05-backward-regime-test/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "[2209.00131] On the incorrect use of Carlisle's method for dichotomous variables",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-plausibility-engine",
+        "2026-07-02-taxonomy-on-trial",
+        "2026-07-05-backward-regime-test"
+      ]
+    },
+    {
+      "byte_count": 42814,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.159,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2304.02819",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2304.02819",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json",
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "[2304.02819] GPT detectors are biased against non-native English writers",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap",
+        "2026-07-02-taxonomy-on-trial"
+      ]
+    },
+    {
+      "byte_count": 41546,
+      "classes": [
+        "U4"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.086,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2306.03262",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2306.03262",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-17-comparable-with-humans/README.md",
+        "works/2026-07-17-comparable-with-humans/data.json",
+        "works/2026-07-17-comparable-with-humans/derive_hist.py",
+        "works/2026-07-17-comparable-with-humans/run_spike.py",
+        "works/2026-07-17-comparable-with-humans/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "[2306.03262] Has the Machine Learning Review Process Become More Arbitrary as the Field Has Grown? The NeurIPS 2021 Consistency Experiment",
+      "verdict": "OK",
+      "works": [
+        "2026-07-17-comparable-with-humans"
+      ]
+    },
+    {
+      "byte_count": 42998,
+      "classes": [
+        "U4"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.109,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2404.00267",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2404.00267",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-25-no-signal-to-extend/VERIFICATION-sourati.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "[2404.00267] Secret Keepers: The Impact of LLMs on Linguistic Markers of Personal Traits",
+      "verdict": "OK",
+      "works": [
+        "2026-07-25-no-signal-to-extend"
+      ]
+    },
+    {
+      "byte_count": 40426,
+      "classes": [
+        "U1",
+        "U4"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.107,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2404.08403",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2404.08403",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-17-comparable-with-humans/README.md",
+        "works/2026-07-17-comparable-with-humans/data.json",
+        "works/2026-07-17-comparable-with-humans/derive_hist.py",
+        "works/2026-07-17-comparable-with-humans/run_spike.py",
+        "works/2026-07-17-comparable-with-humans/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "[2404.08403] Learning representations of learning representations",
+      "verdict": "OK",
+      "works": [
+        "2026-07-17-comparable-with-humans"
+      ]
+    },
+    {
+      "byte_count": 44617,
+      "classes": [
+        "U4"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.11,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2406.07016",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2406.07016",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-26-unable-to-ring-its-own-bell/PREREGISTRATION.md",
+        "works/2026-07-26-unable-to-ring-its-own-bell/README.md",
+        "works/2026-07-26-unable-to-ring-its-own-bell/VERIFICATION.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "[2406.07016] Delving into LLM-assisted writing in biomedical publications through excess vocabulary",
+      "verdict": "OK",
+      "works": [
+        "2026-07-26-unable-to-ring-its-own-bell"
+      ]
+    },
+    {
+      "byte_count": 44237,
+      "classes": [
+        "U1",
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.11,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2412.15194",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2412.15194",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-score-horizon/work.astro",
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json",
+        "works/2026-07-05-backward-regime-test/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "[2412.15194] MMLU-CF: A Contamination-free Multi-task Language Understanding Benchmark",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-score-horizon",
+        "2026-07-02-taxonomy-on-trial",
+        "2026-07-05-backward-regime-test"
+      ]
+    },
+    {
+      "byte_count": 43992,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.149,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2502.04528",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2502.04528",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "[2502.04528] Group-Adaptive Threshold Optimization for Robust AI-Generated Text Detection",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
+      "byte_count": 43992,
+      "classes": [
+        "U4"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.107,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2502.11266",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2502.11266",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-25-no-signal-to-extend/PREREGISTRATION.md",
+        "works/2026-07-25-no-signal-to-extend/README.md",
+        "works/2026-07-25-no-signal-to-extend/VERIFICATION-sourati.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "[2502.11266] The Shrinking Landscape of Linguistic Diversity in the Age of Large Language Models",
+      "verdict": "OK",
+      "works": [
+        "2026-07-25-no-signal-to-extend"
+      ]
+    },
+    {
+      "byte_count": 43455,
+      "classes": [
+        "U1",
+        "U4"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.134,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2502.11266v1",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2502.11266v1",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-25-no-signal-to-extend/SOURCES.md",
+        "works/2026-07-25-no-signal-to-extend/VERIFICATION-sourati.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "[2502.11266v1] The Shrinking Landscape of Linguistic Diversity in the Age of Large Language Models",
+      "verdict": "OK",
+      "works": [
+        "2026-07-25-no-signal-to-extend"
+      ]
+    },
+    {
+      "byte_count": 45793,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.113,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2504.20879",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2504.20879",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-score-horizon/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "[2504.20879] The Leaderboard Illusion",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-score-horizon"
+      ]
+    },
+    {
+      "byte_count": 42356,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.19,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2512.09292",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2512.09292",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "[2512.09292] Identifying Bias in Machine-generated Text Detection",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
+      "byte_count": 41290,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.109,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2602.05769",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2602.05769",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "[2602.05769] Different Time, Different Language: Revisiting the Bias Against Non-Native Speakers in GPT Detectors",
+      "verdict": "OK",
+      "works": [
+        "2026-07-02-taxonomy-on-trial"
+      ]
+    },
+    {
+      "byte_count": 46352,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.11,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2602.16763",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2602.16763",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-score-horizon/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "[2602.16763] When AI Benchmarks Plateau: A Systematic Study of Benchmark Saturation",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-score-horizon"
+      ]
+    },
+    {
+      "byte_count": 43041,
+      "classes": [
+        "U1",
+        "U4"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.109,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2603.02378",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2603.02378",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-11-split-seal/README.md",
+        "works/2026-07-11-split-seal/SOURCES.md",
+        "works/2026-07-11-split-seal/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "[2603.02378] Authenticated Contradictions from Desynchronized Provenance and Watermarking",
+      "verdict": "OK",
+      "works": [
+        "2026-07-11-split-seal"
+      ]
+    },
+    {
+      "byte_count": 42441,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.107,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2604.24890",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2604.24890",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-provenance-horizon/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "[2604.24890] Verifying Provenance of Digital Media: Why the C2PA Specifications Fall Short",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-provenance-horizon"
+      ]
+    },
+    {
+      "byte_count": 41517,
+      "classes": [
+        "U4"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.09,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2605.03202",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2605.03202",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-17-comparable-with-humans/README.md",
+        "works/2026-07-17-comparable-with-humans/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "[2605.03202] Stop Automating Peer Review Without Rigorous Evaluation",
+      "verdict": "OK",
+      "works": [
+        "2026-07-17-comparable-with-humans"
+      ]
+    },
+    {
+      "byte_count": 43600,
+      "classes": [
+        "U4"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.113,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2606.15497",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2606.15497",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-17-comparable-with-humans/README.md",
+        "works/2026-07-17-comparable-with-humans/data.json",
+        "works/2026-07-17-comparable-with-humans/derive_hist.py",
+        "works/2026-07-17-comparable-with-humans/run_spike.py",
+        "works/2026-07-17-comparable-with-humans/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "[2606.15497] Towards End-to-End Automation of AI Research",
+      "verdict": "OK",
+      "works": [
+        "2026-07-17-comparable-with-humans"
+      ]
+    },
+    {
+      "byte_count": 1046748,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.238,
+      "error": null,
+      "final_url": "https://arxiv.org/html/2502.11266",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/html/2502.11266",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-25-no-signal-to-extend/SOURCES.md",
+        "works/2026-07-25-no-signal-to-extend/VERIFICATION-sourati.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "The Shrinking Landscape of Linguistic Diversity in the Age of Large Language Models",
+      "verdict": "OK",
+      "works": [
+        "2026-07-25-no-signal-to-extend"
+      ]
+    },
+    {
+      "byte_count": 465662,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 0.207,
+      "error": null,
+      "final_url": "https://arxiv.org/pdf/2202.05237",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/pdf/2202.05237",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-02-standing-docket/README.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-02-standing-docket"
+      ]
+    },
+    {
+      "byte_count": 724563,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 1.946,
+      "error": null,
+      "final_url": "https://www.cambridge.org:443/core/journals/political-analysis",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://cambridge.org/core/journals/political-analysis",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-digit-mirror/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Political Analysis | Cambridge Core",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-digit-mirror"
+      ]
+    },
+    {
+      "byte_count": 445088,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 1.177,
+      "error": null,
+      "final_url": "https://caselaw.nationalarchives.gov.uk/ewca/crim/2021/577",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://caselaw.nationalarchives.gov.uk/ewca/crim/2021/577",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-02-taxonomy-on-trial/data.json",
+        "works/2026-07-05-backward-regime-test/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Hamilton & Ors v Post Office Ltd - Find Case Law - The National Archives",
+      "verdict": "OK",
+      "works": [
+        "2026-07-02-taxonomy-on-trial",
+        "2026-07-05-backward-regime-test"
+      ]
+    },
+    {
+      "byte_count": 1235797,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 1.244,
+      "error": null,
+      "final_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-06-two-meters/SOURCES.md",
+        "works/2026-07-06-two-meters/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-06-two-meters"
+      ]
+    },
+    {
+      "byte_count": 180136,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.781,
+      "error": null,
+      "final_url": "https://commons.wikimedia.org/wiki/File:Cat_November_2010-1a.jpg",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://commons.wikimedia.org/wiki/File:Cat_November_2010-1a.jpg",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-11-split-seal/SOURCES.md",
+        "works/2026-07-11-split-seal/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "File:Cat November 2010-1a.jpg - Wikimedia Commons",
+      "verdict": "OK",
+      "works": [
+        "2026-07-11-split-seal"
+      ]
+    },
+    {
+      "byte_count": 119397,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.259,
+      "error": null,
+      "final_url": "https://commons.wikimedia.org/wiki/File:DALL%C2%B7E_2025-02-21_23.58.53_-_A_simple_soldering_iron_with_a_stand._The_soldering_iron_has_a_slim,_ergonomic_handle_with_a_metallic_tip._The_stand_is_a_small_metal_base_with_a_coil.webp",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://commons.wikimedia.org/wiki/File:DALL%C2%B7E_2025-02-21_23.58.53_-_A_simple_soldering_iron_with_a_stand._The_soldering_iron_has_a_slim,_ergonomic_handle_with_a_metallic_tip._The_stand_is_a_small_metal_base_with_a_coil.webp",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-11-split-seal/SOURCES.md",
+        "works/2026-07-11-split-seal/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "File:DALL\u00b7E 2025-02-21 23.58.53 - A simple soldering iron with a stand. The soldering iron has a slim, ergonomic handle with a metallic tip. The stand is a small metal base with a coil.webp - Wikimedia Commons",
+      "verdict": "OK",
+      "works": [
+        "2026-07-11-split-seal"
+      ]
+    },
+    {
+      "byte_count": 106584,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.31,
+      "error": null,
+      "final_url": "https://commons.wikimedia.org/wiki/File:Gato_naranja_generado_por_IA.png",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://commons.wikimedia.org/wiki/File:Gato_naranja_generado_por_IA.png",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-11-split-seal/SOURCES.md",
+        "works/2026-07-11-split-seal/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "File:Gato naranja generado por IA.png - Wikimedia Commons",
+      "verdict": "OK",
+      "works": [
+        "2026-07-11-split-seal"
+      ]
+    },
+    {
+      "byte_count": 100645,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.356,
+      "error": null,
+      "final_url": "https://commons.wikimedia.org/wiki/File:Imagetitis-affected_editor_by_ChatGPT_4.0_%26_DALL%C2%B7E_3_(2024).webp",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://commons.wikimedia.org/wiki/File:Imagetitis-affected_editor_by_ChatGPT_4.0_%26_DALL%C2%B7E_3_(2024).webp",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-11-split-seal/SOURCES.md",
+        "works/2026-07-11-split-seal/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "File:Imagetitis-affected editor by ChatGPT 4.0 & DALL\u00b7E 3 (2024).webp - Wikimedia Commons",
+      "verdict": "OK",
+      "works": [
+        "2026-07-11-split-seal"
+      ]
+    },
+    {
+      "byte_count": 76389,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.29,
+      "error": null,
+      "final_url": "https://commons.wikimedia.org/wiki/File:Wikimedia_Commons_AI_(2025).png",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://commons.wikimedia.org/wiki/File:Wikimedia_Commons_AI_(2025).png",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-11-split-seal/SOURCES.md",
+        "works/2026-07-11-split-seal/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "File:Wikimedia Commons AI (2025).png - Wikimedia Commons",
+      "verdict": "OK",
+      "works": [
+        "2026-07-11-split-seal"
+      ]
+    },
+    {
+      "byte_count": 37887,
+      "classes": [
+        "U1",
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.851,
+      "error": null,
+      "final_url": "https://community.openai.com/t/c2pa-meta-data-in-dall-e-3-images/617061",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://community.openai.com/t/c2pa-meta-data-in-dall-e-3-images/617061",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-provenance-horizon/work.astro",
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "C2PA Meta Data in DALL\u00b7E 3 Images - API - OpenAI Developer Community",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-provenance-horizon",
+        "2026-07-02-taxonomy-on-trial"
+      ]
+    },
+    {
+      "byte_count": 2200202,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 0.803,
+      "error": null,
+      "final_url": "https://datacenters.lbl.gov/sites/default/files/WP49-PUE%20A%20Comprehensive%20Examination%20of%20the%20Metric_v6.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://datacenters.lbl.gov/sites/default/files/WP49-PUE%20A%20Comprehensive%20Examination%20of%20the%20Metric_v6.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 104108,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.678,
+      "error": null,
+      "final_url": "https://datamatters.sidley.com/2026/06/24/eu-ai-act-transparency-obligations-preparing-for-compliance-by-2-august-2026/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://datamatters.sidley.com/2026/06/24/eu-ai-act-transparency-obligations-preparing-for-compliance-by-2-august-2026/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-11-split-seal/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "EU AI Act Transparency Obligations: Preparing for Compliance by 2 August 2026 | Data Matters Privacy Blog",
+      "verdict": "OK",
+      "works": [
+        "2026-07-11-split-seal"
+      ]
+    },
+    {
+      "byte_count": 46887,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 1.128,
+      "error": null,
+      "final_url": "https://www.digimarc.com/blog/safeguarding-public-trust-thanks-c2pa-and-digital-watermarks",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://digimarc.com/blog/safeguarding-public-trust-thanks-c2pa-and-digital-watermarks",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-provenance-horizon/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Safeguarding Public Trust Thanks to C2PA and Digital Watermarks",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-provenance-horizon"
+      ]
+    },
+    {
+      "byte_count": 41677,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html",
+      "elapsed_s": 1.865,
+      "error": null,
+      "final_url": "https://embed.documentcloud.org/documents/2998391-ProPublica-Commentary-Final-070616/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 2,
+      "normalized_url": "https://documentcloud.org/documents/2998391-ProPublica-Commentary-Final-070616.html",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-fairness-trap/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "ProPublica-Commentary-Final-070616 | DocumentCloud",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-fairness-trap"
+      ]
+    },
+    {
+      "byte_count": 5772,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 1.166,
+      "error": null,
+      "final_url": "https://onlinelibrary.wiley.com/doi/10.1002/da.22217",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://doi.org/10.1002/da.22217",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-the-edition/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "site"
+      ],
+      "title": "Just a moment...",
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-01-the-edition"
+      ]
+    },
+    {
+      "byte_count": 5799,
+      "classes": [
+        "U1",
+        "U3"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.359,
+      "error": null,
+      "final_url": "https://journals.sagepub.com/doi/full/10.1089/big.2016.0047",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 1,
+      "normalized_url": "https://doi.org/10.1089/big.2016.0047",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-fairness-trap/meta.json",
+        "works/2026-07-01-fairness-trap/work.astro",
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "Just a moment...",
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-01-fairness-trap",
+        "2026-07-02-taxonomy-on-trial"
+      ]
+    },
+    {
+      "byte_count": 986312,
+      "classes": [
+        "U3"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 1.471,
+      "error": null,
+      "final_url": "https://www.cambridge.org/core/journals/political-analysis/article/what-the-numbers-say-a-digitbased-test-for-election-fraud/AD86EEBC2F199E2C8A2FD36BD3799DF9",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 2,
+      "normalized_url": "https://doi.org/10.1093/pan/mps003",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-digit-mirror/work.astro",
+        "works/2026-07-02-standing-docket/README.md",
+        "works/2026-07-02-standing-docket/runner.py"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "What the Numbers Say: A Digit-Based Test for Election Fraud | Political Analysis | Cambridge Core",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-digit-mirror",
+        "2026-07-02-standing-docket"
+      ]
+    },
+    {
+      "byte_count": 5904,
+      "classes": [
+        "U3"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.633,
+      "error": null,
+      "final_url": "https://associationofanaesthetists-publications.onlinelibrary.wiley.com/doi/10.1111/anae.13938",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://doi.org/10.1111/anae.13938",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-plausibility-engine/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "site"
+      ],
+      "title": "Just a moment...",
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-01-plausibility-engine"
+      ]
+    },
+    {
+      "byte_count": 5904,
+      "classes": [
+        "U3"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.407,
+      "error": null,
+      "final_url": "https://associationofanaesthetists-publications.onlinelibrary.wiley.com/doi/10.1111/anae.13962",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://doi.org/10.1111/anae.13962",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-plausibility-engine/work.astro",
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "Just a moment...",
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-01-plausibility-engine",
+        "2026-07-02-taxonomy-on-trial"
+      ]
+    },
+    {
+      "byte_count": 5761,
+      "classes": [
+        "U1",
+        "U3"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.353,
+      "error": null,
+      "final_url": "https://www.science.org/doi/10.1126/sciadv.aao5580",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 1,
+      "normalized_url": "https://doi.org/10.1126/sciadv.aao5580",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-fairness-trap/meta.json",
+        "works/2026-07-01-fairness-trap/work.astro",
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "Just a moment...",
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-01-fairness-trap",
+        "2026-07-02-taxonomy-on-trial"
+      ]
+    },
+    {
+      "byte_count": 5761,
+      "classes": [
+        "U3"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.377,
+      "error": null,
+      "final_url": "https://www.science.org/doi/10.1126/sciadv.adt3813",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://doi.org/10.1126/sciadv.adt3813",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-26-unable-to-ring-its-own-bell/VERIFICATION.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo"
+      ],
+      "title": "Just a moment...",
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-26-unable-to-ring-its-own-bell"
+      ]
+    },
+    {
+      "byte_count": 252618,
+      "classes": [
+        "U3"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.63,
+      "error": null,
+      "final_url": "https://www.surveypractice.org/article/89062-so-you-want-to-survey-a-state-legislator-call-me-maybe",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://doi.org/10.29115/SP-2023-0018",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-digit-mirror/work.astro",
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "So You Want to Survey a State Legislator? Call Me, Maybe | Published in Survey Practice",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-digit-mirror",
+        "2026-07-02-taxonomy-on-trial"
+      ]
+    },
+    {
+      "byte_count": 10598,
+      "classes": [
+        "U3"
+      ],
+      "content_type": "text/html;charset=utf-8",
+      "elapsed_s": 0.182,
+      "error": null,
+      "final_url": "https://doi.org/10.3030/101135953",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://doi.org/10.3030/101135953",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-fairness-trap/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 404,
+      "tiers": [
+        "site"
+      ],
+      "title": "Error: DOI Not Found",
+      "verdict": "GONE",
+      "works": [
+        "2026-07-01-fairness-trap"
+      ]
+    },
+    {
+      "byte_count": 245857,
+      "classes": [
+        "U3"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 2.717,
+      "error": null,
+      "final_url": "https://www.jabfm.org/content/32/5/732",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 3,
+      "normalized_url": "https://doi.org/10.3122/jabfm.2019.05.190085",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-digit-mirror/work.astro",
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "Sources of Error in Office Blood Pressure Measurement | American Board of Family Medicine",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-digit-mirror",
+        "2026-07-02-taxonomy-on-trial"
+      ]
+    },
+    {
+      "byte_count": 5682,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.64,
+      "error": null,
+      "final_url": "https://peerj.com/articles/cs-2953",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://doi.org/10.7717/peerj-cs.2953",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "site"
+      ],
+      "title": "Just a moment...",
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
+      "byte_count": 514485,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.281,
+      "error": null,
+      "final_url": "https://en.wikipedia.org/wiki/Benford%27s_law",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://en.wikipedia.org/wiki/Benford%27s_law",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-naive-detector/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Benford's law - Wikipedia",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-naive-detector"
+      ]
+    },
+    {
+      "byte_count": 145890,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.082,
+      "error": null,
+      "final_url": "https://en.wikipedia.org/wiki/Power_usage_effectiveness",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://en.wikipedia.org/wiki/Power_usage_effectiveness",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "Power usage effectiveness - Wikipedia",
+      "verdict": "OK",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 1533616,
+      "classes": [
+        "U1",
+        "U2"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 1.206,
+      "error": null,
+      "final_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-fairness-trap/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Regulation - EU - 2024/1689 - EN - EUR-Lex",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-fairness-trap"
+      ]
+    },
+    {
+      "byte_count": 830,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/atom+xml; charset=utf-8",
+      "elapsed_s": 0.598,
+      "error": null,
+      "final_url": "https://export.arxiv.org/api/query",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://export.arxiv.org/api/query",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-25-no-signal-to-extend/PREREGISTRATION.md",
+        "works/2026-07-25-no-signal-to-extend/README.md",
+        "works/2026-07-25-no-signal-to-extend/SOURCES.md",
+        "works/2026-07-26-one-line-for-ten-thousand/BACK-CHANNEL.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 400,
+      "tiers": [
+        "repo"
+      ],
+      "title": "arXiv Search Results",
+      "verdict": "GONE",
+      "works": [
+        "2026-07-25-no-signal-to-extend",
+        "2026-07-26-one-line-for-ten-thousand"
+      ]
+    },
+    {
+      "byte_count": 252546,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.747,
+      "error": null,
+      "final_url": "https://frankbueltge.de/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://frankbueltge.de",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-26-one-line-for-ten-thousand/README.md",
+        "works/2026-07-26-one-line-for-ten-thousand/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": true,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "Frank B\u00fcltge \u2014 Data Engineering & Analytics \u00b7 a federated research ecology",
+      "verdict": "OK",
+      "works": [
+        "2026-07-26-one-line-for-ten-thousand"
+      ]
+    },
+    {
+      "byte_count": 43494,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.176,
+      "error": null,
+      "final_url": "https://frankbueltge.de/field/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://frankbueltge.de/field",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/work.astro"
+      ],
+      "second_vantage": null,
+      "self": true,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Field \u2014 instrument record \u00b7 Unable to Ring Its Own Bell | Frank B\u00fcltge",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
+      "byte_count": 3446578,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 0.985,
+      "error": null,
+      "final_url": "https://ghgprotocol.org/sites/default/files/2023-03/Scope%202%20Guidance.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://ghgprotocol.org/sites/default/files/2023-03/Scope%202%20Guidance.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-06-two-meters/SOURCES.md",
+        "works/2026-07-06-two-meters/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-06-two-meters"
+      ]
+    },
+    {
+      "classes": [
+        "U2"
+      ],
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "normalized_url": "https://github.com/.../releases",
+      "not_a_locator": true,
+      "paths": [
+        "works/2026-07-26-one-line-for-ten-thousand/METHOD.md",
+        "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION.md"
+      ],
+      "primary_observation": null,
+      "second_vantage": null,
+      "self": false,
+      "soft_gone_host_flag": false,
+      "tiers": [
+        "repo"
+      ],
+      "verdict": "NOT-A-LOCATOR",
+      "works": [
+        "2026-07-26-one-line-for-ten-thousand"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.362,
+      "error": null,
+      "final_url": "https://github.com/berenslab/iclr-dataset",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/berenslab/iclr-dataset",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-17-comparable-with-humans/README.md",
+        "works/2026-07-17-comparable-with-humans/data.json",
+        "works/2026-07-17-comparable-with-humans/derive_hist.py"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-17-comparable-with-humans"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.345,
+      "error": null,
+      "final_url": "https://github.com/berenslab/llm-excess-vocab",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/berenslab/llm-excess-vocab",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-25-no-signal-to-extend/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-25-no-signal-to-extend"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.336,
+      "error": null,
+      "final_url": "https://github.com/c2pa-org/public-testfiles",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/c2pa-org/public-testfiles",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-11-split-seal/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-11-split-seal"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.314,
+      "error": null,
+      "final_url": "https://github.com/c2pa-org/public-testfiles/issues/27",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/c2pa-org/public-testfiles/issues/27",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-11-split-seal/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-11-split-seal"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.37,
+      "error": null,
+      "final_url": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-11-split-seal/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-11-split-seal"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.364,
+      "error": null,
+      "final_url": "https://github.com/contentauth/c2pa-python",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/contentauth/c2pa-python",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-11-split-seal/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-11-split-seal"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.322,
+      "error": null,
+      "final_url": "https://github.com/contentauth/c2pa-rs",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/contentauth/c2pa-rs",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-11-split-seal/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-11-split-seal"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.348,
+      "error": null,
+      "final_url": "https://github.com/contentauth/c2patool",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/contentauth/c2patool",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-11-split-seal/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-11-split-seal"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.404,
+      "error": null,
+      "final_url": "https://github.com/frankbueltge/dataset-hub.git",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/frankbueltge/dataset-hub.git",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-26-one-line-for-ten-thousand"
+      ]
+    },
+    {
+      "byte_count": 138,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.345,
+      "error": null,
+      "final_url": "https://github.com/frankbueltge/dataset-hub/blob/a7024008ec337118b2aeebb87065ded83ed23413/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/frankbueltge/dataset-hub/blob/a7024008ec337118b2aeebb87065ded83ed23413/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-26-one-line-for-ten-thousand/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 400,
+      "tiers": [
+        "repo"
+      ],
+      "title": null,
+      "verdict": "GONE",
+      "works": [
+        "2026-07-26-one-line-for-ten-thousand"
+      ]
+    },
+    {
+      "byte_count": 297454,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 1.606,
+      "error": null,
+      "final_url": "https://github.com/frankbueltge/field-research",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/frankbueltge/field-research",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/work.astro",
+        "works/2026-07-01-digit-mirror/work.astro",
+        "works/2026-07-01-naive-detector/work.astro"
+      ],
+      "second_vantage": null,
+      "self": true,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "GitHub - frankbueltge/field-research: An autonomous research collective (self-named Meridian) within the research ecology around frankbueltge.de \u2014 verifiable instruments, adversarial review, a claims ledger; not the truth department. Machinery composed and steered by Frank B\u00fcltge; sessions published",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap",
+        "2026-07-01-digit-mirror",
+        "2026-07-01-naive-detector"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1",
+        "U2"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.218,
+      "error": null,
+      "final_url": "https://github.com/microsoft/MMLU-CF",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/microsoft/MMLU-CF",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-score-horizon/work.astro",
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-01-score-horizon",
+        "2026-07-02-taxonomy-on-trial"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1",
+        "U2"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.316,
+      "error": null,
+      "final_url": "https://github.com/propublica/compas-analysis",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/propublica/compas-analysis",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-fairness-trap/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-01-fairness-trap"
+      ]
+    },
+    {
+      "byte_count": 73651,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.86,
+      "error": null,
+      "final_url": "https://hackerfactor.com/blog/index.php?/archives/1013-C2PAs-Worst-Case-Scenario.html",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://hackerfactor.com/blog/index.php?/archives/1013-C2PAs-Worst-Case-Scenario.html",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-provenance-horizon/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "C2PA's Worst Case Scenario - The Hacker Factor Blog",
+      "verdict": "UNRELIABLE-OK",
+      "works": [
+        "2026-07-01-provenance-horizon"
+      ]
+    },
+    {
+      "byte_count": 47628,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.209,
+      "error": null,
+      "final_url": "https://hackerfactor.com/blog/index.php?/archives/1073-What-C2PA-Provides.html",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://hackerfactor.com/blog/index.php?/archives/1073-What-C2PA-Provides.html",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-provenance-horizon/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "What C2PA Provides - The Hacker Factor Blog",
+      "verdict": "UNRELIABLE-OK",
+      "works": [
+        "2026-07-01-provenance-horizon"
+      ]
+    },
+    {
+      "byte_count": 132976,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.792,
+      "error": null,
+      "final_url": "https://harvardlawreview.org/print/vol-130/state-v-loomis/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://harvardlawreview.org/print/vol-130/state-v-loomis",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-05-backward-regime-test/SOURCES.md",
+        "works/2026-07-05-backward-regime-test/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "State v. Loomis Harvard Law Review",
+      "verdict": "OK",
+      "works": [
+        "2026-07-05-backward-regime-test"
+      ]
+    },
+    {
+      "byte_count": 97932,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html",
+      "elapsed_s": 0.595,
+      "error": null,
+      "final_url": "https://info.arxiv.org/help/api/tou.html",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://info.arxiv.org/help/api/tou.html",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-25-no-signal-to-extend/PREREGISTRATION.md",
+        "works/2026-07-25-no-signal-to-extend/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "Terms of Use for arXiv APIs - arXiv info",
+      "verdict": "OK",
+      "works": [
+        "2026-07-25-no-signal-to-extend"
+      ]
+    },
+    {
+      "byte_count": 119453,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.854,
+      "error": null,
+      "final_url": "https://jaapl.org/content/39/1/6",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://jaapl.org/content/39/1/6",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-the-edition/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "The DSM in Litigation and Legislation | Journal of the American Academy of Psychiatry and the Law",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-the-edition"
+      ]
+    },
+    {
+      "byte_count": null,
+      "classes": [
+        "U2"
+      ],
+      "content_type": null,
+      "elapsed_s": 6.425,
+      "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+      "final_url": null,
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": null,
+      "normalized_url": "https://jabfm.org/content/32/5/732",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-digit-mirror/work.astro"
+      ],
+      "second_vantage": {
+        "agrees_with_primary": true,
+        "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+        "method": "HEAD",
+        "status": null,
+        "verdict": "NETFAIL"
+      },
+      "self": false,
+      "status": null,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "NETFAIL",
+      "works": [
+        "2026-07-01-digit-mirror"
+      ]
+    },
+    {
+      "byte_count": 307603,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 1.126,
+      "error": null,
+      "final_url": "https://www.lrb.co.uk/the-paper/v28/n16/ian-hacking/making-up-people",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://lrb.co.uk/the-paper/v28/n16/ian-hacking/making-up-people",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-the-edition/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Ian Hacking \u00b7 Making Up People: clinical classifications",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-the-edition"
+      ]
+    },
+    {
+      "byte_count": null,
+      "classes": [
+        "U2"
+      ],
+      "content_type": null,
+      "elapsed_s": 0.496,
+      "error": "HTTPSConnectionPool(host='marcellodibello.com', port=443): Max retries exceeded with url: /algorithmicfairness/handout/impossibility.html (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'marcellodibello.com'. (_ssl.c:1016)\")))",
+      "final_url": null,
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": null,
+      "normalized_url": "https://marcellodibello.com/algorithmicfairness/handout/impossibility.html",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-fairness-trap/work.astro"
+      ],
+      "second_vantage": {
+        "agrees_with_primary": true,
+        "error": "HTTPSConnectionPool(host='marcellodibello.com', port=443): Max retries exceeded with url: /algorithmicfairness/handout/impossibility.html (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'marcellodibello.com'. (_ssl.c:1016)\")))",
+        "method": "HEAD",
+        "status": null,
+        "verdict": "NETFAIL"
+      },
+      "self": false,
+      "status": null,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "NETFAIL",
+      "works": [
+        "2026-07-01-fairness-trap"
+      ]
+    },
+    {
+      "byte_count": 128140,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.738,
+      "error": null,
+      "final_url": "https://metricgate.com/docs/benford-law-analysis/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://metricgate.com/docs/benford-law-analysis/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-02-standing-docket/README.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "Benford's Law First-Digit Analysis Calculator | MetricGate",
+      "verdict": "UNRELIABLE-OK",
+      "works": [
+        "2026-07-02-standing-docket"
+      ]
+    },
+    {
+      "byte_count": 189914,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 1.638,
+      "error": null,
+      "final_url": "https://minnlawyer.com/2026/02/13/u-of-m-ai-cheating-expulsion-upheld-appeal/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 2,
+      "normalized_url": "https://minnlawyer.com/2026/02/13/u-of-m-ai-cheating-expulsion-upheld-appeal",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "U of M expulsion over alleged AI cheating upheld on appeal",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
+      "byte_count": 224888,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 1.723,
+      "error": null,
+      "final_url": "https://www.motherjones.com/politics/2013/05/psychiatry-allen-frances-saving-normal-dsm-5-controversy/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 2,
+      "normalized_url": "https://motherjones.com/politics/2013/05/psychiatry-allen-frances-saving-normal-dsm-5-controversy",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-the-edition/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Psychiatry\u2019s New Diagnostic Manual: \u201cDon\u2019t Buy It. Don\u2019t Use It. Don\u2019t Teach It.\u201d \u2013 Mother Jones",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-the-edition"
+      ]
+    },
+    {
+      "byte_count": 90804,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 1.32,
+      "error": null,
+      "final_url": "https://www.nber.org/papers/w30768",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://nber.org/papers/w30768",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-digit-mirror/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Detecting Fraud in Development Aid | NBER",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-digit-mirror"
+      ]
+    },
+    {
+      "byte_count": 46053,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 1.848,
+      "error": null,
+      "final_url": "https://www.ncbi.nlm.nih.gov/books/NBK519712/table/ch3.t5/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://ncbi.nlm.nih.gov/books/NBK519712/table/ch3.t5",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-the-edition/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Table 9, DSM-IV to DSM-5 Major Depressive Episode/Disorder Comparison - DSM-5 Changes - NCBI Bookshelf",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-the-edition"
+      ]
+    },
+    {
+      "byte_count": 53050,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 1.265,
+      "error": null,
+      "final_url": "https://noclimateresultsfound.com/report/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://noclimateresultsfound.com/report",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "- No Climate Results Found",
+      "verdict": "OK",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 46921841,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 1.798,
+      "error": null,
+      "final_url": "https://noclimateresultsfound.com/wp-content/uploads/2025/07/Kairos_NCRFGoogleReport_FINAL.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://noclimateresultsfound.com/wp-content/uploads/2025/07/Kairos_NCRFGoogleReport_FINAL.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md",
+        "works/2026-07-09-the-floor/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 136563,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 2.352,
+      "error": null,
+      "final_url": "https://www.ohchr.org:443/en/ohchr_homepage",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://ohchr.org/&hellip;/2024-01/OHCHR_BerkeleyProtocol.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-24-where-the-chain-breaks/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "UN Human Rights Office",
+      "verdict": "UNRELIABLE-OK",
+      "works": [
+        "2026-07-24-where-the-chain-breaks"
+      ]
+    },
+    {
+      "byte_count": 188901,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.754,
+      "error": null,
+      "final_url": "https://partnershiponai.org/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://partnershiponai.org/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-fairness-trap/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Partnership on AI - Home - Partnership on AI",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-fairness-trap"
+      ]
+    },
+    {
+      "byte_count": 722912,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 0.455,
+      "error": null,
+      "final_url": "https://partnershiponai.org/wp-content/uploads/2021/08/Report-on-Algorithmic-Risk-Assessment-Tools.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://partnershiponai.org/wp-content/uploads/2021/08/Report-on-Algorithmic-Risk-Assessment-Tools.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-fairness-trap/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-fairness-trap"
+      ]
+    },
+    {
+      "byte_count": 169415,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.75,
+      "error": null,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4695779/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4695779",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-the-edition/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Out of DSM: Depathologizing Homosexuality - PMC",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-the-edition"
+      ]
+    },
+    {
+      "byte_count": 47418,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 1.038,
+      "error": null,
+      "final_url": "https://policyreview.info/articles/news/big-techs-2025-sustainability-reports/2027",
+      "layer2b": "HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://policyreview.info/articles/news/big-techs-2025-sustainability-reports/2027",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-06-two-meters/SOURCES.md",
+        "works/2026-07-06-two-meters/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "Not greenwashing, but still\u2026 A closer look at big tech\u2019s 2025 sustainability reports | Internet Policy Review",
+      "verdict": "OK",
+      "works": [
+        "2026-07-06-two-meters"
+      ]
+    },
+    {
+      "byte_count": 130099,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 1.181,
+      "error": null,
+      "final_url": "https://www.propublica.org:443/article/how-we-analyzed-the-compas-recidivism-algorithm",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-fairness-trap/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "How We Analyzed the COMPAS Recidivism Algorithm \u2014 ProPublica",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-fairness-trap"
+      ]
+    },
+    {
+      "byte_count": 136408,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.596,
+      "error": null,
+      "final_url": "https://www.propublica.org:443/article/machine-bias-risk-assessments-in-criminal-sentencing",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-fairness-trap/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Machine Bias \u2014 ProPublica",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-fairness-trap"
+      ]
+    },
+    {
+      "byte_count": 222382,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 1.3,
+      "error": null,
+      "final_url": "https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Depression-Bereavement-Exclusion.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Depression-Bereavement-Exclusion.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-the-edition/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-the-edition"
+      ]
+    },
+    {
+      "byte_count": 162260,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.891,
+      "error": null,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/25524790/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://pubmed.ncbi.nlm.nih.gov/25524790",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-the-edition/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "The impact of case definition on attention-deficit/hyperactivity disorder prevalence estimates in community-based samples of school-aged children - PubMed",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-the-edition"
+      ]
+    },
+    {
+      "byte_count": 919,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html",
+      "elapsed_s": 1.033,
+      "error": null,
+      "final_url": "https://www.rand.org:443/pubs/commentary/2025/06/overpromising-on-digital-provenance-and-security.html",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://rand.org/pubs/commentary/2025/06/overpromising-on-digital-provenance-and-security.html",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-provenance-horizon/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "site"
+      ],
+      "title": "ERROR: The request could not be satisfied",
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-01-provenance-horizon"
+      ]
+    },
+    {
+      "classes": [
+        "U2"
+      ],
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "normalized_url": "https://raw.githubusercontent.com/.../a7024008ec\u2026/",
+      "not_a_locator": true,
+      "paths": [
+        "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION.md"
+      ],
+      "primary_observation": null,
+      "second_vantage": null,
+      "self": false,
+      "soft_gone_host_flag": false,
+      "tiers": [
+        "repo"
+      ],
+      "verdict": "NOT-A-LOCATOR",
+      "works": [
+        "2026-07-26-one-line-for-ten-thousand"
+      ]
+    },
+    {
+      "byte_count": 19656199,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/octet-stream",
+      "elapsed_s": 1.316,
+      "error": null,
+      "final_url": "https://raw.githubusercontent.com/berenslab/iclr-dataset/main/data/iclr24v2.parquet",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://raw.githubusercontent.com/berenslab/iclr-dataset/main/data/iclr24v2.parquet",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-17-comparable-with-humans/README.md",
+        "works/2026-07-17-comparable-with-humans/run_spike.py"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-17-comparable-with-humans"
+      ]
+    },
+    {
+      "byte_count": 39855,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/plain; charset=utf-8",
+      "elapsed_s": 0.108,
+      "error": null,
+      "final_url": "https://raw.githubusercontent.com/berenslab/llm-excess-vocab/main/results/excess_words.csv",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://raw.githubusercontent.com/berenslab/llm-excess-vocab/main/results/excess_words.csv",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-25-no-signal-to-extend/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-25-no-signal-to-extend"
+      ]
+    },
+    {
+      "byte_count": 14,
+      "classes": [
+        "U1",
+        "U2"
+      ],
+      "content_type": "text/plain; charset=utf-8",
+      "elapsed_s": 0.07,
+      "error": null,
+      "final_url": "https://raw.githubusercontent.com/frankbueltge/dataset-hub/a7024008ec337118b2aeebb87065ded83ed23413/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://raw.githubusercontent.com/frankbueltge/dataset-hub/a7024008ec337118b2aeebb87065ded83ed23413/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-26-one-line-for-ten-thousand/SOURCES.md",
+        "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION-round2.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 404,
+      "tiers": [
+        "repo"
+      ],
+      "title": null,
+      "verdict": "GONE",
+      "works": [
+        "2026-07-26-one-line-for-ten-thousand"
+      ]
+    },
+    {
+      "byte_count": 771,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html;charset=utf-8",
+      "elapsed_s": 1.202,
+      "error": null,
+      "final_url": "https://www.reuters.com/article/world/fact-check-deviation-from-benfords-law-does-not-prove-election-fraud-idUSKBN27Q3A9",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://reuters.com/article/world/fact-check-deviation-from-benfords-law-does-not-prove-election-fraud-idUSKBN27Q3A9",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-naive-detector/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 401,
+      "tiers": [
+        "site"
+      ],
+      "title": "reuters.com",
+      "verdict": "GONE",
+      "works": [
+        "2026-07-01-naive-detector"
+      ]
+    },
+    {
+      "byte_count": 4649,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.823,
+      "error": null,
+      "final_url": "https://spec.c2pa.org/public-testfiles/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://spec.c2pa.org/public-testfiles/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-11-split-seal/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "C2PA public test files | public-testfiles",
+      "verdict": "OK",
+      "works": [
+        "2026-07-11-split-seal"
+      ]
+    },
+    {
+      "byte_count": 184627,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.113,
+      "error": null,
+      "final_url": "https://spec.c2pa.org/specifications/specifications/2.4/security/Security_Considerations.html",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://spec.c2pa.org/specifications/specifications/2.4/security/Security_Considerations.html",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-provenance-horizon/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "C2PA Security Considerations :: C2PA Specifications",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-provenance-horizon"
+      ]
+    },
+    {
+      "byte_count": 17898652,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 1.113,
+      "error": null,
+      "final_url": "https://storage.googleapis.com/gweb-mobius-cdn/sustainability/uploads/7f477eb723fe0c23d03f94b90a08882b9f28187d.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://storage.googleapis.com/gweb-mobius-cdn/sustainability/uploads/7f477eb723fe0c23d03f94b90a08882b9f28187d.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md",
+        "works/2026-07-09-the-floor/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 45758,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.68,
+      "error": null,
+      "final_url": "https://sustainability.google/google-2026-environmental-report/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://sustainability.google/google-2026-environmental-report",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md",
+        "works/2026-07-09-the-floor/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "Our 2026 Environmental Report - Google Sustainability",
+      "verdict": "OK",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 33266,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.218,
+      "error": null,
+      "final_url": "https://sustainability.google/reports/google-2025-environmental-report/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://sustainability.google/reports/google-2025-environmental-report",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md",
+        "works/2026-07-09-the-floor/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "2025 Environmental Report",
+      "verdict": "OK",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 35147,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 1.727,
+      "error": null,
+      "final_url": "https://www.tbray.org/ongoing/When/202x/2025/09/18/C2PA-Investigations",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://tbray.org/ongoing/When/202x/2025/09/18/C2PA-Investigations",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-provenance-horizon/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "ongoing by Tim Bray \u00b7 C2PA Investigations",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-provenance-horizon"
+      ]
+    },
+    {
+      "byte_count": 657621,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 0.711,
+      "error": null,
+      "final_url": "https://web.williams.edu/Mathematics/sjmiller/public_html/benfordresources/KossoskyMiller_FinalBenfordAnalysis.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://web.williams.edu/Mathematics/sjmiller/public_html/benfordresources/KossoskyMiller_FinalBenfordAnalysis.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-naive-detector/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-naive-detector"
+      ]
+    },
+    {
+      "byte_count": 391120,
+      "classes": [
+        "U1",
+        "U2"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 0.761,
+      "error": null,
+      "final_url": "https://websites.umich.edu/~wmebane/inapB.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://websites.umich.edu/~wmebane/inapB.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-naive-detector/work.astro",
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json",
+        "works/2026-07-05-backward-regime-test/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-naive-detector",
+        "2026-07-02-taxonomy-on-trial",
+        "2026-07-05-backward-regime-test"
+      ]
+    },
+    {
+      "byte_count": 272112,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 1.987,
+      "error": null,
+      "final_url": "https://worldprivacyforum.org/posts/privacy-identity-and-trust-in-c2pa/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://worldprivacyforum.org/posts/privacy-identity-and-trust-in-c2pa",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-provenance-horizon/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Privacy, Identity and Trust in C2PA: A Technical Review and Analysis of the C2PA Digital Media Provenance Framework - World Privacy Forum",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-provenance-horizon"
+      ]
+    },
+    {
+      "byte_count": 311144,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.882,
+      "error": null,
+      "final_url": "https://www.aafp.org/afp/2014/1115/p690",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 1,
+      "normalized_url": "https://www.aafp.org/pubs/afp/issues/2014/1115/p690.html",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "Grief and Major Depression\u2014Controversy Over Changes in DSM-5 Diagnostic Criteria | AFP",
+      "verdict": "OK",
+      "works": [
+        "2026-07-02-taxonomy-on-trial"
+      ]
+    },
+    {
+      "byte_count": 392154,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 1.144,
+      "error": null,
+      "final_url": "https://www.abc.net.au/news/2025-10-09/artificial-intelligence-cheating-australian-catholic-university/105863524",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.abc.net.au/news/2025-10-09/artificial-intelligence-cheating-australian-catholic-university/105863524",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "University wrongly accuses students of using artificial intelligence to cheat - ABC News",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
+      "byte_count": 339346,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.781,
+      "error": null,
+      "final_url": "https://www.brookings.edu/articles/global-energy-demands-within-the-ai-regulatory-landscape/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://www.brookings.edu/articles/global-energy-demands-within-the-ai-regulatory-landscape",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "Global energy demands within the AI regulatory landscape | Brookings",
+      "verdict": "OK",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 766310,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 1.102,
+      "error": null,
+      "final_url": "https://www.bsfrey.ch/wp-content/uploads/2024/04/C_666_2024_Governments-manipulate-official-Statistics-Institutions-matter2.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.bsfrey.ch/wp-content/uploads/2024/04/C_666_2024_Governments-manipulate-official-Statistics-Institutions-matter2.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-02-standing-docket/README.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-02-standing-docket"
+      ]
+    },
+    {
+      "byte_count": 854878,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 12.256,
+      "error": null,
+      "final_url": "https://www.cambridge.org/core/journals/political-analysis/article/benfords-law-and-the-detection-of-election-fraud/3B1D64E822371C461AF3C61CE91AAF6D",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.cambridge.org/core/journals/political-analysis/article/benfords-law-and-the-detection-of-election-fraud/3B1D64E822371C461AF3C61CE91AAF6D",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-02-standing-docket/README.md",
+        "works/2026-07-02-standing-docket/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "Benford's Law and the Detection of Election Fraud | Political Analysis | Cambridge Core",
+      "verdict": "OK",
+      "works": [
+        "2026-07-02-standing-docket"
+      ]
+    },
+    {
+      "byte_count": 385852,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html;charset=UTF-8",
+      "elapsed_s": 0.356,
+      "error": null,
+      "final_url": "https://www.computerweekly.com/news/366627215/Google-slams-claims-its-misleading-the-public-with-its-GHG-emissions-data",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.computerweekly.com/news/366627215/Google-slams-claims-its-misleading-the-public-with-its-GHG-emissions-data",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "Google slams claims it\u2019s \u2018misleading\u2019 the public with its GHG emissions data | Computer Weekly",
+      "verdict": "OK",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 5959,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.515,
+      "error": null,
+      "final_url": "https://www.datacenterdynamics.com/en/news/google-data-center-power-use-up-27-emissions-down-17-report",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.datacenterdynamics.com/en/news/google-data-center-power-use-up-27-emissions-down-17-report",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo"
+      ],
+      "title": "Just a moment...",
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 5986,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.257,
+      "error": null,
+      "final_url": "https://www.datacenterdynamics.com/en/opinions/beyond-pue-rethinking-how-data-center-sustainability-is-measured",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.datacenterdynamics.com/en/opinions/beyond-pue-rethinking-how-data-center-sustainability-is-measured",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md",
+        "works/2026-07-09-the-floor/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "Just a moment...",
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 230960,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.328,
+      "error": null,
+      "final_url": "https://www.devsustainability.com/p/data-center-energy-and-ai-in-2025",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.devsustainability.com/p/data-center-energy-and-ai-in-2025",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "Data center energy and AI in 2025 - by David Mytton",
+      "verdict": "OK",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 41677,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html",
+      "elapsed_s": 1.145,
+      "error": null,
+      "final_url": "https://embed.documentcloud.org/documents/2998391-ProPublica-Commentary-Final-070616/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://www.documentcloud.org/documents/2998391-ProPublica-Commentary-Final-070616.html",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-fairness-trap/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "ProPublica-Commentary-Final-070616 | DocumentCloud",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-fairness-trap"
+      ]
+    },
+    {
+      "byte_count": 98413,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.763,
+      "error": null,
+      "final_url": "https://www.gov.uk/government/calls-for-evidence/use-of-evidence-generated-by-software-in-criminal-proceedings/use-of-evidence-generated-by-software-in-criminal-proceedings-call-for-evidence",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://www.gov.uk/government/calls-for-evidence/use-of-evidence-generated-by-software-in-criminal-proceedings/use-of-evidence-generated-by-software-in-criminal-proceedings-call-for-evidence",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-02-taxonomy-on-trial/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Use of evidence generated by software in criminal proceedings: Call for Evidence - GOV.UK",
+      "verdict": "OK",
+      "works": [
+        "2026-07-02-taxonomy-on-trial"
+      ]
+    },
+    {
+      "byte_count": 19452765,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 1.904,
+      "error": null,
+      "final_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-06-two-meters/SOURCES.md",
+        "works/2026-07-06-two-meters/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-06-two-meters"
+      ]
+    },
+    {
+      "byte_count": 5472,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.589,
+      "error": null,
+      "final_url": "https://www.kaggle.com/deleted-dataset-version/18354222",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://www.kaggle.com/dsv/18354222",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-26-one-line-for-ten-thousand/SKEPTIC-round2.md",
+        "works/2026-07-26-one-line-for-ten-thousand/SKEPTIC.md",
+        "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION-round2.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "Kaggle Deleted Dataset Version",
+      "verdict": "SOFT-GONE",
+      "works": [
+        "2026-07-26-one-line-for-ten-thousand"
+      ]
+    },
+    {
+      "byte_count": 10223,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.286,
+      "error": null,
+      "final_url": "https://www.kaggle.com/datasets/ireddragonicy/bos-kemdikbud/versions/541",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 1,
+      "normalized_url": "https://www.kaggle.com/dsv/18354240",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-26-one-line-for-ten-thousand/SKEPTIC-round2.md",
+        "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION-round2.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "BOS Kemdikbud | Kaggle",
+      "verdict": "OK",
+      "works": [
+        "2026-07-26-one-line-for-ten-thousand"
+      ]
+    },
+    {
+      "byte_count": 26770,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html;charset=utf-8",
+      "elapsed_s": 0.776,
+      "error": null,
+      "final_url": "https://www.legislation.gov.uk/ukpga/2024/14/introduction/enacted",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.legislation.gov.uk/ukpga/2024/14/introduction/enacted",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-05-backward-regime-test/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Post Office (Horizon System) Offences Act 2024",
+      "verdict": "OK",
+      "works": [
+        "2026-07-05-backward-regime-test"
+      ]
+    },
+    {
+      "byte_count": 614898,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.919,
+      "error": null,
+      "final_url": "https://www.marcellodibello.com/algorithmicfairness/handout/impossibility.html",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.marcellodibello.com/algorithmicfairness/handout/impossibility.html",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-fairness-trap/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Algorithmic Fairness \u2013 Impossibility Theorems",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-fairness-trap"
+      ]
+    },
+    {
+      "byte_count": 46053,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 1.111,
+      "error": null,
+      "final_url": "https://www.ncbi.nlm.nih.gov/books/NBK519712/table/ch3.t5/",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://www.ncbi.nlm.nih.gov/books/NBK519712/table/ch3.t5/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "Table 9, DSM-IV to DSM-5 Major Depressive Episode/Disorder Comparison - DSM-5 Changes - NCBI Bookshelf",
+      "verdict": "OK",
+      "works": [
+        "2026-07-02-taxonomy-on-trial"
+      ]
+    },
+    {
+      "byte_count": 3166259,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 0.726,
+      "error": null,
+      "final_url": "https://www.ohchr.org/sites/default/files/2024-01/OHCHR_BerkeleyProtocol.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.ohchr.org/sites/default/files/2024-01/OHCHR_BerkeleyProtocol.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-24-where-the-chain-breaks/SOURCES.md",
+        "works/2026-07-24-where-the-chain-breaks/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-24-where-the-chain-breaks"
+      ]
+    },
+    {
+      "byte_count": 38901,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 1.076,
+      "error": null,
+      "final_url": "https://www.oiahe.org.uk/resources-and-publications/case-summaries/ai-and-academic-misconduct-cs072501/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.oiahe.org.uk/resources-and-publications/case-summaries/ai-and-academic-misconduct-cs072501/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-05-backward-regime-test/SOURCES.md",
+        "works/2026-07-05-backward-regime-test/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "AI and academic misconduct - CS072501 - OIAHE",
+      "verdict": "OK",
+      "works": [
+        "2026-07-05-backward-regime-test"
+      ]
+    },
+    {
+      "byte_count": 40019,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.224,
+      "error": null,
+      "final_url": "https://www.oiahe.org.uk/resources-and-publications/case-summaries/ai-and-academic-misconduct-cs072504/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.oiahe.org.uk/resources-and-publications/case-summaries/ai-and-academic-misconduct-cs072504/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-05-backward-regime-test/SOURCES.md",
+        "works/2026-07-05-backward-regime-test/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "AI and academic misconduct - CS072504 - OIAHE",
+      "verdict": "OK",
+      "works": [
+        "2026-07-05-backward-regime-test"
+      ]
+    },
+    {
+      "byte_count": 46995,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.224,
+      "error": null,
+      "final_url": "https://www.oiahe.org.uk/resources-and-publications/learning-from-our-casework/ai-and-academic-misconduct/casework-note-complaints-relating-to-ai-and-academic-misconduct/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.oiahe.org.uk/resources-and-publications/learning-from-our-casework/ai-and-academic-misconduct/casework-note-complaints-relating-to-ai-and-academic-misconduct/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-05-backward-regime-test/SOURCES.md",
+        "works/2026-07-05-backward-regime-test/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "Casework note: Complaints relating to AI and academic misconduct - OIAHE",
+      "verdict": "OK",
+      "works": [
+        "2026-07-05-backward-regime-test"
+      ]
+    },
+    {
+      "byte_count": 40066,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.409,
+      "error": null,
+      "final_url": "https://www.postofficehorizoninquiry.org.uk/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.postofficehorizoninquiry.org.uk/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-05-backward-regime-test/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Homepage | Post Office Horizon IT Inquiry",
+      "verdict": "OK",
+      "works": [
+        "2026-07-05-backward-regime-test"
+      ]
+    },
+    {
+      "byte_count": 1176953,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 0.231,
+      "error": null,
+      "final_url": "https://www.postofficehorizoninquiry.org.uk/sites/default/files/2025-07/Post%20Office%20Horizon%20IT%20Inquiry%20Final%20Report%20Volume%201_0.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.postofficehorizoninquiry.org.uk/sites/default/files/2025-07/Post%20Office%20Horizon%20IT%20Inquiry%20Final%20Report%20Volume%201_0.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-02-taxonomy-on-trial/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-02-taxonomy-on-trial"
+      ]
+    },
+    {
+      "byte_count": 130099,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.653,
+      "error": null,
+      "final_url": "https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-fairness-trap/meta.json",
+        "works/2026-07-01-fairness-trap/work.astro",
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "How We Analyzed the COMPAS Recidivism Algorithm \u2014 ProPublica",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-fairness-trap",
+        "2026-07-02-taxonomy-on-trial"
+      ]
+    },
+    {
+      "byte_count": 136408,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.114,
+      "error": null,
+      "final_url": "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-fairness-trap/meta.json",
+        "works/2026-07-01-fairness-trap/work.astro"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Machine Bias \u2014 ProPublica",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-fairness-trap"
+      ]
+    },
+    {
+      "byte_count": 222382,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 1.218,
+      "error": null,
+      "final_url": "https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Depression-Bereavement-Exclusion.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Depression-Bereavement-Exclusion.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-02-taxonomy-on-trial"
+      ]
+    },
+    {
+      "byte_count": 363565,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 1.125,
+      "error": null,
+      "final_url": "https://www.rehva.eu/rehva-journal/chapter/analysis-of-performance-metrics-for-data-center-efficiency-should-the-power-utilization-effectiveness-pue-still-be-used-as-the-main-indicator-part-1",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.rehva.eu/rehva-journal/chapter/analysis-of-performance-metrics-for-data-center-efficiency-should-the-power-utilization-effectiveness-pue-still-be-used-as-the-main-indicator-part-1",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md",
+        "works/2026-07-09-the-floor/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "REHVA Journal Analysis of performance metrics for data center efficiency \u2013 should the Power Utilization Effectiveness PUE still be used as the main indicator? (Part 1)",
+      "verdict": "OK",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 172638,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 1.924,
+      "error": null,
+      "final_url": "https://www.scconline.com/blog/post/2026/07/17/international-criminal-justice-in-2026-a-digital-turning-point/",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.scconline.com/blog/post/2026/07/17/international-criminal-justice-in-2026-a-digital-turning-point/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-24-where-the-chain-breaks/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "International Criminal Justice in 2026: A digital turning point | SCC Times",
+      "verdict": "OK",
+      "works": [
+        "2026-07-24-where-the-chain-breaks"
+      ]
+    },
+    {
+      "byte_count": 5797,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.728,
+      "error": null,
+      "final_url": "https://www.science.org/doi/full/10.1126/sciadv.adt3813",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.science.org/doi/full/10.1126/sciadv.adt3813",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-25-no-signal-to-extend/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo"
+      ],
+      "title": "Just a moment...",
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-25-no-signal-to-extend"
+      ]
+    },
+    {
+      "byte_count": 832805,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.407,
+      "error": null,
+      "final_url": "https://www.sciencedirect.com/science/article/abs/pii/S1040619016300446",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.sciencedirect.com/science/article/abs/pii/S1040619016300446",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md",
+        "works/2026-07-09-the-floor/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "ScienceDirect",
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 11008496,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 3.443,
+      "error": null,
+      "final_url": "https://www.smartenergydecisions.com/wp-content/uploads/2025/04/google-2024-environmental-report.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.smartenergydecisions.com/wp-content/uploads/2025/04/google-2024-environmental-report.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md",
+        "works/2026-07-09-the-floor/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 7742757,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 0.318,
+      "error": null,
+      "final_url": "https://www.smartenergydecisions.com/wp-content/uploads/2025/07/google-2025-environmental-report-1.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.smartenergydecisions.com/wp-content/uploads/2025/07/google-2025-environmental-report-1.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md",
+        "works/2026-07-09-the-floor/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 40472,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.721,
+      "error": null,
+      "final_url": "https://www.strausstroy.com/articles/ai-and-academic-integrity-a-growing-crisis",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.strausstroy.com/articles/ai-and-academic-integrity-a-growing-crisis",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-05-backward-regime-test/SOURCES.md",
+        "works/2026-07-05-backward-regime-test/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "AI and Academic Integrity: Risks of False AI Cheating Accusations in College | Strauss Troy",
+      "verdict": "OK",
+      "works": [
+        "2026-07-05-backward-regime-test"
+      ]
+    },
+    {
+      "byte_count": 5479783,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 1.29,
+      "error": null,
+      "final_url": "https://www.sunbirddcim.com/sites/default/files/EB035_Sunbird_eBook_PUE_0.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.sunbirddcim.com/sites/default/files/EB035_Sunbird_eBook_PUE_0.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 35147,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.963,
+      "error": null,
+      "final_url": "https://www.tbray.org/ongoing/When/202x/2025/09/18/C2PA-Investigations",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://www.tbray.org/ongoing/When/202x/2025/09/18/C2PA-Investigations",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-02-taxonomy-on-trial/README.md",
+        "works/2026-07-02-taxonomy-on-trial/data.json",
+        "works/2026-07-05-backward-regime-test/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "ongoing by Tim Bray \u00b7 C2PA Investigations",
+      "verdict": "OK",
+      "works": [
+        "2026-07-02-taxonomy-on-trial",
+        "2026-07-05-backward-regime-test"
+      ]
+    },
+    {
+      "byte_count": 359919,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.711,
+      "error": null,
+      "final_url": "https://www.theguardian.com/technology/2025/jul/02/google-carbon-emissions-report",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.theguardian.com/technology/2025/jul/02/google-carbon-emissions-report",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-09-the-floor/SOURCES.md"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo"
+      ],
+      "title": "Google undercounts its carbon emissions, report finds | Google | The Guardian",
+      "verdict": "OK",
+      "works": [
+        "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "byte_count": 919,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html",
+      "elapsed_s": 0.336,
+      "error": null,
+      "final_url": "https://www.turnitin.com/blog/understanding-false-positives-within-our-ai-writing-detection-capabilities",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.turnitin.com/blog/understanding-false-positives-within-our-ai-writing-detection-capabilities",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-05-backward-regime-test/SOURCES.md",
+        "works/2026-07-05-backward-regime-test/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "ERROR: The request could not be satisfied",
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-05-backward-regime-test"
+      ]
+    },
+    {
+      "byte_count": 33793,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.546,
+      "error": null,
+      "final_url": "https://yaledailynews.com/articles/som-student-sues-yale-alleges-wrongful-suspension-over-ai-use",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://yaledailynews.com/articles/som-student-sues-yale-alleges-wrongful-suspension-over-ai-use",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "second_vantage": null,
+      "self": false,
+      "status": 429,
+      "tiers": [
+        "site"
+      ],
+      "title": "Vercel Security Checkpoint",
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    }
+  ]
+}
