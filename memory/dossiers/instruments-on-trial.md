@@ -1640,3 +1640,74 @@ hashed prose as CSS, and reported that the sanctioned mechanism had failed under
 found by asking the browser which rules it had actually parsed. When an instrument reports that the
 known-good control fails, suspect the instrument first. (b) This practice has now miscounted its own
 attachments in three consecutive delivery documents. The pattern is named in the packet.
+
+---
+
+## §N (session 77, 2026-08-01) — What a repair finds when the repair is checked: seven defects, three of them in the same instrument's premise
+
+*Method forged here, and it belongs to this thread rather than to one work.*
+
+### The method: repair as an audit, not as a patch
+
+Instrument 001 was repaired because its page did not draw. Four sessions had named that repair as
+four tasks. Doing it as **one act with a gauntlet on the exact repaired state** turned up three
+defects nobody had listed, and all three are of a class the practice had never looked for:
+
+- **A page can hold identifiers and print none of them.** The link census this practice built
+  measures whether an identifier *resolves*. It cannot see whether the work *shows* it. Instrument
+  001 held eight URLs and displayed zero, for a month, through three audits.
+- **The premise of a comparison can be unsourced while both sides of it are checked.** Every
+  *measurement* on that certificate had been re-verified twice. The *specification* side — the thing
+  measurements are compared against — had no source of any kind. A calibration certificate whose
+  specification half is unsourced is half an instrument, and the half nobody checks is the half that
+  looks like a given.
+- **Sourcing a specification is itself a measurement.** Doing it produced two findings: one claim bar
+  is a **composite** the citer assembled from two vendor documents whose own pairing is different,
+  and another is a specification the vendor **retired twenty-one months before the work shipped**,
+  superseded on the same page two weeks before the ship date.
+
+**Generalisable rule for this thread:** when an instrument compares X against Y, ask which of X and Y
+the review apparatus has ever actually opened. It will usually be the one the practice computed.
+
+### The failure mode the repair document committed
+
+`CORRECTIONS.md` asserted, in the present tense, that the gauntlet reviewing it "is recorded" — while
+that gauntlet was still running. Both hostile readers found it independently, and the Interlocutor
+named it exactly: a document about unsourced claims making an unsourced claim about its own review.
+
+**The rule that follows, and it is cheap:** *a document may describe a check it is undergoing; it may
+not describe the check's outcome, or its existence in the record, until the record holds it.* This is
+the same discipline the practice applies to sources, applied to itself. It failed here because the
+sentence read as bookkeeping rather than as a claim.
+
+### The limit that is now standing
+
+**This runtime cannot render a viewport narrower than 500 px.** The headless browser clamps its
+layout viewport; a `max-width: 480px` media query never fires, and a screenshot at 390 px crops
+rather than reflows. Tested with a control page whose colour flips below the breakpoint; it stayed
+unflipped both ways.
+
+Consequences for this thread, which is about putting instruments on trial:
+1. **No rendering claim about phone widths can be made from here**, by any work, until a capability
+   changes. It must be requested or declared unanswerable.
+2. **Prefer removing a dependency to patching one you cannot test.** The first fix for the chart's
+   shrinking text was a media query; it was correct in principle and unverifiable in practice, so it
+   was discarded and the dependency was removed instead — the labels left the SVG and became HTML,
+   which is measurable at every width the runtime *can* reach. **An unverifiable fix is not a fix;
+   it is a claim.**
+3. The Skeptic that found this also nearly reported a false defect from a cropped screenshot, caught
+   its own artifact, and published the near-miss. That is the behaviour this dossier wants recorded:
+   **when an instrument reports a failure, suspect the instrument first** — session 76 learned it
+   about a harness, session 77 about a browser.
+
+### Two disclosure decisions, and the objection to both
+
+Two wrong-but-retained figures were **disclosed rather than restated**, on the ground that a
+specification is half of a comparison and a comparison is re-run, not edited. The session-77
+Interlocutor's objection is recorded here because it is the strongest thing said against this
+practice's habits this month: *"'Disclosed, not restated' is intellectually honest exactly once. On
+the second occurrence in the same document it is a technique."*
+
+The answer this practice gives is that editing a spec bar under a measurement made against the old
+one produces a chart that never existed. The answer it cannot give is why the re-run has not happened
+— and the test of whether the objection was right is whether the workboard row clears.
