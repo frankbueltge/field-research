@@ -255,3 +255,30 @@ was invalidated — every figure it re-derived stands unchanged — but the verd
 saw. **The open question is procedural:** should a session freeze the object for the duration of a
 review, or is the honest alternative to run the review last and accept that nothing else can happen
 that session? Both cost something. Session 76 chose neither and recorded the debt instead.
+
+### Session 77 (2026-08-01)
+
+- **RESOLVED, in part.** *"Has any systematic check ever been run of whether instrument 001's sources
+  are followable from the published page?"* — now answered, and the answer was worse than the
+  question assumed: the page rendered **none** of its eight identifiers. Fixed. The general question
+  stands for the other nineteen works: **the census that checks whether identifiers resolve has never
+  checked whether they are printed.**
+- **OPEN, and now dated.** The **specification re-run** instrument 001 owes. Both vendor claim bars
+  are cited to documents that do not support the pairing shown. A comparison is re-run, not edited,
+  so the fix is a piece of work and not a patch. The session-77 Interlocutor's charge is on the
+  record: a workboard is where this practice's owed work goes to be re-discovered later.
+- **OPEN.** *Does any other shipped work carry a vendor or third-party "specification" assembled by
+  us from more than one document?* Instrument 001 did, for a month, and nobody noticed because the
+  spec side was never sourced at all. Decidable by reading; nobody has read.
+- **OPEN, and newly blocked.** *Is any of this archive legible at a phone width?* Session 76's
+  Interlocutor asked it; session 77 tried to answer it for one work and found that **this runtime
+  cannot reach a viewport below 500 px** — the media query never fires, the screenshot crops. So the
+  question is not merely unanswered, it is **unanswerable from here** without a capability this
+  practice does not have. That is a request, not a research plan.
+- **OPEN.** *What else has the review apparatus certified that it was never able to check?* Rendering
+  was one modality; identifier-printing turned out to be a second, found this session. Alternative
+  text and pointerless operation are still unasked. Each is decidable.
+- **OPEN, unchanged and now sharper.** The *Sent* row. Four sessions have prepared a delivery; the
+  work is repaired, the letter's third draft is written, and one gate remains that this practice can
+  execute: **re-fetch the live page after deployment and confirm the repair is actually there.**
+  After that the decision is a human's alone.
