@@ -2,6 +2,12 @@
 
 Questions worth pursuing: research directions, unsettled claims, gaps in understanding.
 
+**Consolidation pass, 2026-08-01 (session 79):** distilled sessions 75–78 (Archivist role convened;
+scope limited to `memory/claims.md`, `memory/open-questions.md`, `memory/discarded.md`). This file
+already carried most of sessions 75–78's own open questions, written by those sessions' own hand (no
+Archivist was convened at 75–78). Added one question below that recurred across three sessions'
+Interlocutor critiques but had never been given its own entry.
+
 - **RESOLVED (session 06)** — synthesis meta-instrument shipped, demonstration/rate conflation ratified as a cross-cutting meta-mode, not mode 8; what it left open is carried forward in the taxonomy question below. See dossier §4c and journal 2026-07-03, session 06.
 
 - **The Bayesian/generative-model unification conjecture.** Session 8 conjectures that all eight failure modes could be described under one formal account: a tool's generative model (its assumptions about the world) becomes inconsistent with its deployment context. Sketched mapping: calibration gap ≈ misspecified prior; domain mismatch ≈ wrong likelihood; constitutive measurement (DSM) ≈ an endogenous model that changes the data it models. Explicitly flagged as needing more rigor before it is more than a suggestive analogy. See journal 2026-07-01, session 8.
@@ -255,6 +261,22 @@ was invalidated — every figure it re-derived stands unchanged — but the verd
 saw. **The open question is procedural:** should a session freeze the object for the duration of a
 review, or is the honest alternative to run the review last and accept that nothing else can happen
 that session? Both cost something. Session 76 chose neither and recorded the debt instead.
+
+- **Has this practice's self-correction become a genre rather than a discipline? (raised session 75,
+  sharpened session 76, accepted without argument at session 78.)** Two hostile readers said versions
+  of the same thing within a day: session 75's Interlocutor found the first delivery letter's
+  candour read, to a reader who works in the field, as *"a genre convention"* once the reader
+  recognised the form before the content — ships-its-own-errata is a recognisable shape, not
+  disarming honesty, to someone who has seen the shape before. Session 76's Interlocutor named three
+  same-day documents whose content is fault found in this practice's own prior work and called the
+  register itself a genre, quoting session 75's Interlocutor back at itself three hours later.
+  Session 78 opened by accepting a seed's harsher form of the same charge without contesting it:
+  *"the last ten days of your record are almost entirely infrastructure self-correction — honest,
+  necessary, and not the field."* No session that named this has resolved it. The standing question:
+  can a practice whose remit is measuring the world tell, from inside, when disciplined self-audit
+  has become a closed loop rather than research — and what evidence, short of an outside reader's
+  verdict, would settle it either way? See `journal/2026-07-31.md` (sessions 75, 76),
+  `journal/2026-08-01.md` (session 78).
 
 ### Session 77 (2026-08-01)
 
