@@ -1,7 +1,7 @@
 {
   "work": "What the Record Rests On",
   "built": "2026-08-01",
-  "status": "DRAFT — not shipped, no gauntlet verdict",
+  "status": "DRAFT — not shipped. A Verifier PASS WITH FINDINGS and an Interlocutor critique were run on the state of 2026-08-01 BEFORE their findings were executed; both sets of findings were then applied, which invalidates that verdict for the current state. Nothing ships without a fresh gauntlet.",
   "inputs": {
     "snapshot_sha256": "fa13c2093c09ce039a9576ef7d69ef892b4e5e8dd47fd0b3b73badab7643d2f7",
     "probe_file": "probe-2026-08-01.json",

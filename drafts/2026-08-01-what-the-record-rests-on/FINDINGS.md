@@ -21,6 +21,12 @@ The interesting part is the other third, because it is not what a link-rot study
 | the page answered and the stored passage is **no longer in it** | 2.0% of pages that served a document | [0.1 – 4.0] |
 | the page answered and **still holds** the stored passage | 95.2% of pages that served a document | [92.1 – 98.2] |
 
+The last two rows do not sum to 100% and are not meant to: the denominator of both is the 176
+records whose URL served this vantage a document, and it also contains 2 `PARTIAL` cases (overlap
+between 0.10 and 0.50) and 7 `SHELL` cases (a 200 yielding fewer than 100 words). Those 9 records
+are in the denominator and in neither row — disclosed here after the Verifier pointed out that the
+composition of that denominator was nowhere stated.
+
 The first four rows are the whole of what did not answer with a document: they sum to 31.5%, and
 the estimate for "did not answer 200" computed independently is 31.4% [24.1 – 38.8]. The 0.1-point
 gap is rounding of each row, not a missing class. That residual row — 19 of 260 records: six other
@@ -86,10 +92,13 @@ rather than to the instrument:
 | 6881 | 0.027 | 0.908 | page answers, cited text not in what it serves |
 | 1521 | 0.000 | 0.000 | **not attributable** — the archived copy does not hold it either |
 
-Two further pages returned 200 and yielded so little text that nothing could be compared
-(`SHELL`), while their archived copies from the register's download date hold the passage in full.
-Those are not counted as drift; they are counted as pages that no longer serve a document to a
-reader like this one.
+Seven further pages returned 200 and yielded so little text that nothing could be compared
+(`SHELL`). For **three** of them the archived copy from the register's download date holds the
+passage at the same threshold used everywhere else here (overlap 1.00, 1.00 and 0.83); for three it
+does not (0.00, 0.02, 0.00), and one could not be fetched from the archive at all. The three that
+hold are not counted as drift; they are counted as pages that no longer serve a document to a reader
+like this one. *Corrected after the Verifier, which caught that an earlier version said "two … in
+full" — a silently stricter reading of the threshold that dropped the case scoring 0.83.*
 
 ## The vantage measured itself, and the result was the opposite of the assumption
 
@@ -99,9 +108,18 @@ request imitates a desktop browser because the comparison literature does — an
 choice *cost* seven documents rather than winning any. The assumption that a crawler must look like
 a browser to be let in did not survive its own test here.
 
-Both outcomes are recorded per URL in `probe-2026-08-01.json`. The headline numbers above use the
-primary request only; using the better of the two would lower the withheld rate by roughly 2.7
-points and is not done, because a rate assembled from whichever attempt worked is not a rate.
+Both outcomes are recorded per URL in `probe-2026-08-01.json`. Only **two** of the seven were in the
+withheld class to begin with (the other five were generic 4xx or an unclassified status), so taking
+the better of the two attempts would lower the withheld rate by **1.87 weighted points**, from 23.6%
+to 21.7%, and the does-not-answer-200 rate by **3.32 points**, from 31.4% to 28.1%. The headline
+numbers use the primary request only, because a rate assembled from whichever attempt happened to
+work is not a rate.
+
+*Corrected after the Verifier: an earlier version of this paragraph said "roughly 2.7 points", which
+was 7/260 — an unweighted count of all seven flips, applied to a weighted corpus estimate, in a
+document whose method file says this instrument does not print bare percentages. The error was the
+exact one the discipline exists to prevent, and it was in the paragraph about measuring one's own
+instrument.*
 
 ## Age
 
@@ -111,7 +129,7 @@ enough to fit a decay curve, and none is fitted. What can be said:
 - All 12 hard-gone citations (404 / 410 / no DNS) are in strata published **2022 or earlier**. The
   four most recent strata — 2023, 2024, 2025, 2026, 80 records — contain none.
 - The oldest stratum is the worst served today: **7 of 20** citations published 2014 or earlier
-  delivered their passage, against 11 to 15 of 20 in every other stratum.
+  delivered their passage, against 10 to 15 of 20 in every other stratum.
 - Withholding runs the other way: the highest refusal counts are in the newest strata (8 of 20 in
   2024, 6 of 20 in each of 2025 and 2026) against 0 of 20 in 2017. **Conjecture, not a finding:**
   access control is a property of the publisher today rather than of the document's age, and recent
