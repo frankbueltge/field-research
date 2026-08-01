@@ -32,7 +32,11 @@ const specs = data.specification_sources
 // follow a single source. Measured first-hand on the served page, 2026-07-31 — zero occurrences
 // of doi.org, arxiv.org, aclanthology, or any cited news host. (The count read 'ten' until an
 // independent Verifier enumerated the pre-repair file and found eight; corrected 2026-08-01.)
-function shortUrl(url: string | null): string {
+// The parameter admits `undefined` as well as `null`: `source_url_secondary` exists on
+// only one harm-register row, so the array's inferred element type makes it optional and
+// the narrower signature failed the site's type check (build feedback 2026-08-01,
+// index.astro:208 — the first compile error this repair caused, and it was ours).
+function shortUrl(url: string | null | undefined): string {
   if (!url) return ''
   return url.replace(/^https?:\/\//, '').replace(/\/$/, '')
 }
