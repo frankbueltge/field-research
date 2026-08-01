@@ -65,4 +65,43 @@ No blocking findings. Everything the constitution treats as load-bearing — eve
 
 The verdict above is good only for commit `745752b`. Eight Skeptic conditions and this Verifier's two count findings were then executed, which invalidates it for the later state. Rather than convene a seventh role, the **same** Verifier was sent back to the revised state for a narrow re-check. Its report is appended below by the conductor, unedited, and the conditions it was asked to confirm were: the two corrected counts; that no measurement moved in the second round either; that the new `spec_flag`, methodology and access-note text is supported; that the SVG-to-HTML restructure did not break the mechanism; and that nothing in the file now asserts a check that has not run.
 
-*(Appended after the run — see below.)*
+### Micro-check, round 1 — commit `8b24d21` — **FAIL**, one blocking finding
+
+*Published verbatim. This is the round that earned the micro-check its place.*
+
+**1. The two counts.** Both fixed correctly, in-place-corrected rather than erased. `CORRECTIONS.md` §2 now reads *"held **eight** source URLs"* with a parenthetical attributing the correction to the Verifier's enumeration; `work.astro`'s frontmatter comment matches. The "48,910 bytes" clause is withdrawn, not defended. Neither over- nor under-states what I found — my own figures (8, and 49,042) are quoted back exactly. **Accurate.**
+
+**2. No measurement moved, second round.** Re-ran the same structured diff (`745752b` → HEAD) over `claim_fpr`/`independent_fpr`/`nnes_fpr`/`claim_accuracy`/`fpr_scale_cap`/`generated` and every harm-case core field: zero drift. The three pre-2026-08-01 note blocks are still byte-identical. Only additive fields (`spec_flag` ×3) and prose-caveat rewrites within the same 2026-08-01 event were touched — revision-in-an-open-session, not a silent edit to a closed dated record. The REPAIR note was cut to a pointer, but every fact it used to state inline still renders on the face elsewhere, unchanged, from `data.json`; the CORRECTIONS.md link resolves live (HTTP 200). **Nothing lost.**
+
+**3. The new text — BLOCKING problem found.** `spec_flag` values check out against sources already verified. But the new Yale `access_note` — rendered on the face, and restated as settled fact in `CORRECTIONS.md` §8 — **overclaims in the direction I was asked to check.** I re-extracted the cited injunction PDF and it explicitly states: *"the penalty for this finding would be a one-year suspension from SOM"*; *"Tsung's letter notes that Rignol's suspension began on November 20, 2024"*; *"issuing Plaintiff a grade of F and marking his transcript… for the Sourcing and Managing Funds course."* The suspension and the failing grade **are** corroborated by the injunction order — directly, repeatedly, unambiguously. The PDF also contains the word "scans" (*"the ChatGPTZero scans produced by Rouwenhorst"*, of Rignol's own exam) — so the flat claim *"Neither document mentions scans"* is also false as written, even though the narrower point it is reaching for (no mention of Yale-scholars'-papers-scans or a former president — 0 hits for "president") is correct. The original Skeptic finding was narrower and correct. Whoever executed that condition over-extended it and introduced a new, checkable inaccuracy into a row whose entire point is now "state precisely what the court record does and doesn't support."
+
+**4. The restructure.** Re-ran `verify_render.py`: **PASS**, all 10 checks true. Independently reproduced the narrow-width claims with my own minimal control pages: `--window-size=390,900` and `=320,900` both report `innerWidth: 500` in this runtime's headless browser, and a 480px media-query control page stays unflipped at both — the "clamps at 500px" limit is accurately stated, not convenient. `label_font_size` constant (9.6px) at 1200/900/500; `bar_box_height` constant (7); `bar_box_width` varies (627→577→217). `<details>`/`<summary>` and the two `class:list` usages are not on the forbidden list; full re-grep confirms zero `style=` and no forbidden construct.
+
+**5. Unrun-check assertions.** Grepped all five files. `CORRECTIONS.md` discloses rather than hides the exact bug, attributed to the Skeptic and Interlocutor by name. `VERIFICATION.md`'s closing section announces this micro-check is running and correctly stops short of stating a conclusion — it does not preempt this verdict. No other unrun-check assertions found.
+
+**Verdict: FAIL.** 1 BLOCKING — the Yale row's `access_note` and `CORRECTIONS.md` §8 assert that the suspension and failing grade are uncorroborated and that the order does not mention scans. Both are false against the very PDF cited in the same field. This is worse than the pre-condition state, which made no such claim.
+
+### Micro-check, round 2 — commit `43cf61c` — **PASS**
+
+*Run after the blocking finding was fixed, the primary document re-opened first-hand by the conductor, and a new caveat added to the Yale row.*
+
+**1. The corrected division — accurate in both directions.** I independently re-extracted the PDF and confirm the *"SOM penalized Rignol by issuing him an F in the course and suspending him from classes for one year"* sentence is verbatim, that "president" has zero occurrences, and that the sole "scans" hit is Rouwenhorst's scans of Rignol's own exam. `CORRECTIONS.md` §8 and `SKEPTIC.md`'s execution table state the same division and narrate the correction rather than erasing it. No remaining over- or under-claim in either direction.
+
+**2. The new caveat — quotes check out, framing is honest, parallel is fair with the asymmetry disclosed.** All three quotations verified verbatim at their cited paragraphs; the range "Choi Aff. ¶¶ 32–34" correctly spans them. On strength: the caveat attributes the statement to Choi's affidavit as recounted at docket 89 and closes with *"the defendants' account as summarised by the court at the preliminary-injunction stage, not a final adjudication of the facts"* — legally accurate (a PI-denial order's background section recites declarations; the holding here rested only on lack of irreparable harm) and it does **not** read as a judicial finding of fact. On the Minnesota parallel: fair as to the pattern, but the cases differ in evidentiary weight — Minnesota's caveat rests on an appellate opinion on the merits, Yale's on one defendant's affidavit at the preliminary stage. The caveat's final sentence flags exactly this asymmetry. **Non-blocking observation, not a defect:** an explicit "unlike Minnesota, this has not been through appellate review" would strengthen it further, but nothing currently misleads.
+
+**3. Nothing else moved.** Only the Yale `access_note` and the new `caveat` changed in the work's data; `work.astro`, `meta.json` and `verify_render.py` are byte-identical; the regenerated specimen and verification JSON differ only as outputs of the harness. Structured re-diff of every numeric and harm-case field against `8b24d21`: zero drift. The three pre-2026-08-01 dated blocks remain byte-identical to `745752b`. Re-ran `verify_render.py`: **PASS**, 10/10.
+
+**Verdict: PASS.** No blocking findings; no non-blocking findings beyond the observation in item 2. The caveat does not overstate what a preliminary-injunction ruling can establish, and I would have said so plainly if it read otherwise. Every quotation checked against the primary source verbatim.
+
+---
+
+## The one thing the second micro-check offered and this practice did not take
+
+Its item 2 suggested adding an explicit clause noting that, unlike the Minnesota case, the Yale
+caveat has not been through appellate review. The suggestion is good and it was **deliberately not
+applied**, for the reason this whole session is about: **a verdict is good only for the exact state
+it was run on.** Applying it would have moved the object under a verdict issued seconds earlier, and
+the shipped state would then be one nobody had checked. It is recorded instead as owed — in
+`memory/open-questions.md` and on the workboard — and a later session may make the edit and re-run
+the check on it. The suggestion is published here so that a reader can see the difference between
+what was checked and what was merely suggested.
