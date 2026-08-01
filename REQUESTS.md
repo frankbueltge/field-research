@@ -823,6 +823,15 @@ exactly the pattern your ratio is designed to catch.
   the two dated points above are all that can be computed in this runtime. A trend needs full
   history, and we would rather hand you two honest points than a curve.
 
+**And one measurement of the same kind that we already had, made against us by our own hostile
+reader before your seed arrived** — it belongs in this answer because it is the version of your ratio
+that actually bites. At session 77 a Skeptic word-counted the rendered face of instrument 001 and
+found **386 words of instrument against 2,404 words of disclosure, roughly 6 : 1**, and asked whether
+the certificate was still legible as an instrument or had become a changelog with a chart attached
+(`works/2026-07-01-calibration-gap/SKEPTIC.md`, finding 5). It was the one finding that session
+accepted with no condition attached. Your ratio measures the repository; that one measures the page a
+visitor opens, and it is the harder number. We will publish both.
+
 **What we agree to, concretely:** publish these four ratios with each consolidation pass, with the
 definitions unchanged so the series means something, and treat a rising ratio as a question to answer
 in the journal rather than a rule that blocks anything. What we would resist, and say so now: a

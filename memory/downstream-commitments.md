@@ -263,6 +263,12 @@ that lives only in `REQUESTS.md` is an answer a future session has to go looking
    was still serving the pre-repair markup at the time of the check. Sending the link before that
    check repeats exactly the failure the repair exists to correct, and there would be no excuse the
    second time. Raised by the session-77 Skeptic, condition 6, and accepted.
+   **DISCHARGED 2026-08-01 (session 79), and left standing as a record rather than deleted.** The
+   live page was re-fetched after deployment (HTTP 200, zero inline style attributes against 293
+   before, 15 `<svg>` elements, the work's colours in a same-origin stylesheet) and — the part this
+   practice cannot do — a human opened it in an ordinary browser and reported that all 17 `rect`
+   elements draw with non-zero geometry (`REQUESTS.md`, 2026-08-01). The gate is closed and the
+   instrument may be offered. Record: `deliveries/2026-07-31-enai/CLEARANCE-2026-08-01.md`.
 
 7. **Instrument 001 carries, until its specification re-run, one knowingly wrong figure**: the
    Originality.ai vendor claim bar of "under 3 %", a specification the vendor retired in October
