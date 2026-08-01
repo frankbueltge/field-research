@@ -186,7 +186,10 @@ student-newspaper article which, checked on 2026-07-31, **could not be opened by
 capture of it at any date** (availability API and CDX API both returned empty). It is not shown to
 be dead. It is unreadable, and there is no archived copy to fall back on.
 
-**What was done.** The row now rests on the court record, read first-hand:
+**What was done.** The row now rests on the court record, read first-hand — and see §8 for the two
+things a closing micro-check changed here after this section was written: the division between what
+the record supports and what it does not was wrong on the first attempt, and reading the order in
+full produced a caveat about the case itself that this register had never applied.
 
 - The federal docket, `https://www.courtlistener.com/docket/69607031/rignol-v-yale-university/`
   (HTTP 200, read 2026-07-31): filed 2025-02-03; **still pending**, not dismissed, not settled, no
@@ -231,10 +234,34 @@ conditions. Both are published in full in `journal/2026-07-31.md`, session 77, a
 executed is listed there against what was done. What they changed here, beyond the corrections
 already folded into §§2–3 above:
 
-- The Yale row now states, on the face, **which half of it the court record supports and which half
-  it does not.** The suspension, the scans, the Yale scholars and the former president rest on the
-  unreadable article alone; only the procedural facts rest on the docket. Citing a docket beside a
-  sentence the docket does not support is an implication of corroboration, and it is now closed.
+- The Yale row now states, on the face, **which parts of it the court record supports and which it
+  does not** — and this practice got that division wrong on the first attempt and was caught.
+
+  The first version claimed the suspension and the failing grade were uncorroborated. **They are
+  not.** A closing micro-check by the same Verifier opened the injunction order and found it says,
+  in the court's own summary: *"SOM penalized Rignol by issuing him an F in the course and
+  suspending him from classes for one year."* The corrected division: **supported** — the EMBA
+  enrolment, that he is *"a French national authorized to live and work in the United States on an
+  investor visa"*, the F, and the one-year suspension; **not supported by anything readable** — that
+  the same tool flagged papers by Yale scholars including a former university president. The order
+  contains no occurrence of "president", and its one use of "scans" refers to scans of Rignol's own
+  exam. In executing a condition to stop over-claiming corroboration, this practice over-claimed in
+  the opposite direction, on the face of the work. That is recorded because it happened.
+
+- **And opening that order produced a finding about the case, not about this repository.** The order
+  states that the Honor Committee, in concluding that AI had been used, relied on the refusal to
+  produce a requested document and on *"strong similarities between [Rignol]'s response and the
+  ChatGPT response to one of the Sourcing and Managing Funds exam questions"* — and that *"Choi says
+  that the Honor Committee did not rely on the ChatGPTZero scans produced by Rouwenhorst"* (Choi
+  Aff. ¶¶ 32–34, as recounted at docket 89). **So this row, like the Minnesota row, documents a
+  detector figuring in an accusation rather than a consequence the record attributes to a
+  detector.** The register has carried exactly that caveat on Minnesota since 2026-07-12 and had
+  never applied it here — through three audits and a delivery packet. The Yale row now carries it at
+  display prominence, with the limits stated: it is the defendants' account as summarised by a court
+  at the preliminary-injunction stage, not a final adjudication.
+
+  This is the most consequential correction in the set, and it exists because a Verifier was sent
+  back to re-check a fix and read the primary document instead of the summary of it.
 - The two specification defects are marked **beside the bars they qualify**, not only in a block
   below the harm register. A caveat a skimming reader cannot see is disclosed only in the lawyer's
   sense.
