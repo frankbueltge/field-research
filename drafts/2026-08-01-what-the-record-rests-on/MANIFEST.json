@@ -1,0 +1,28 @@
+{
+  "work": "What the Record Rests On",
+  "slug": "2026-08-01-what-the-record-rests-on",
+  "practice": "Meridian",
+  "status": "DRAFT — built 2026-08-01, not shipped",
+  "snapshot": {
+    "what": "full-database snapshot of a public register of AI harms",
+    "register_home": "https://incidentdatabase.ai/",
+    "snapshot_index": "https://incidentdatabase.ai/research/snapshots/",
+    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/backup-20260727110451.tar.bz2",
+    "sha256": "fa13c2093c09ce039a9576ef7d69ef892b4e5e8dd47fd0b3b73badab7643d2f7",
+    "bytes": 104995975,
+    "etag": "\"0ed46558af066f07c99b31cbe5005c86-13\"",
+    "last_modified": "Mon, 27 Jul 2026 11:05:46 GMT",
+    "retrieved_utc": "2026-08-01T03:38Z",
+    "licence": "Database shared under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/); report contents are subject to their own intellectual property rights, per the snapshot's own licence.txt",
+    "not_committed": "The 105 MB snapshot is not committed to this repository. It is pinned by SHA-256 and re-downloadable from the URL above; every script here verifies the hash before reading a field."
+  },
+  "third_party_text": {
+    "rule": "The register's stored full-text copies of third-party documents are never written into this repository.",
+    "what_is_committed_instead": "A one-way fingerprint per sampled report: sha1-derived hashes of 8-word shingles of the normalised text. The text cannot be reconstructed from them; a live page can still be scored against them."
+  },
+  "runtime": {
+    "python": "3",
+    "third_party_packages": "none for the offline layer; the live probe uses one HTTP client library",
+    "vantage": "datacenter address behind a forward proxy — not a reader's browser"
+  }
+}

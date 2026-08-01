@@ -1,0 +1,216 @@
+{
+  "layer": "L0 — offline inventory, assertable",
+  "snapshot": {
+    "what": "full-database snapshot of a public register of AI harms",
+    "register_home": "https://incidentdatabase.ai/",
+    "snapshot_index": "https://incidentdatabase.ai/research/snapshots/",
+    "url": "https://pub-72b2b2fc36ec423189843747af98f80e.r2.dev/backup-20260727110451.tar.bz2",
+    "sha256": "fa13c2093c09ce039a9576ef7d69ef892b4e5e8dd47fd0b3b73badab7643d2f7",
+    "bytes": 104995975,
+    "etag": "\"0ed46558af066f07c99b31cbe5005c86-13\"",
+    "last_modified": "Mon, 27 Jul 2026 11:05:46 GMT",
+    "retrieved_utc": "2026-08-01T03:38Z",
+    "licence": "Database shared under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/); report contents are subject to their own intellectual property rights, per the snapshot's own licence.txt",
+    "not_committed": "The 105 MB snapshot is not committed to this repository. It is pinned by SHA-256 and re-downloadable from the URL above; every script here verifies the hash before reading a field."
+  },
+  "reports_csv": {
+    "member": "mongodump_full_snapshot/reports.csv",
+    "bytes": 39256307
+  },
+  "population": {
+    "records_in_reports_csv": 7408,
+    "included_unit": "report records whose url field begins with http:// or https://",
+    "included_records": 6602,
+    "distinct_urls_among_included": 6541,
+    "included_records_sharing_a_url_with_another_record": 119,
+    "distinct_urls_used_more_than_once": 58
+  },
+  "excluded": {
+    "unit": "report records",
+    "total": 806,
+    "by_tags_field": {
+      "variant:unreviewed": 805,
+      "variant:approved": 1
+    },
+    "records_tagged_variant_prefix": 806,
+    "records_with_empty_title": 806,
+    "records_with_empty_description": 806,
+    "stored_text_length": {
+      "empty": 1,
+      "40_chars_or_fewer": 679,
+      "more_than_40_chars": 126
+    },
+    "note": "What is observed, not what is assumed. Every excluded record carries a tag with a 'variant:' prefix, and every one has an empty title and an empty description. The class is NOT homogeneous: most hold 40 characters or less of stored text — many hold the single character '1' — while 126 hold more, and those read as substantive accounts of an incident (e.g. report 3205). At least one, report 2587, holds placeholder fixture prose beginning 'New text example... Lorem ipsum'. The register's published glossary uses 'variant' for a taxonomic relationship between incidents; whether the tag on these records means the same thing is NOT established here and is not asserted. Excluded from this measurement for one reason only: a citation census cannot measure a record that makes no citation."
+  },
+  "declared_subclasses_kept_in_population": {
+    "unit": "report records",
+    "url_points_at_a_web_archive_or_cache": 0,
+    "url_points_at_the_registers_own_site": 1,
+    "by_language": {
+      "en": 6358,
+      "es": 58,
+      "it": 26,
+      "de": 22,
+      "zh-CN": 21,
+      "fr": 18,
+      "sq": 10,
+      "pt": 9,
+      "ja": 8,
+      "ko": 7
+    }
+  },
+  "held_text": {
+    "unit": "report records (included only)",
+    "records_with_stored_full_text_over_200_chars": 6585,
+    "records_with_stored_full_text_200_chars_or_less": 17,
+    "chars_p10": 1682,
+    "chars_median": 4075,
+    "chars_p90": 9876,
+    "chars_max": 49972
+  },
+  "age_distribution": {
+    "unit": "report records (included only)",
+    "by_publication_year": {
+      "1996": 1,
+      "1998": 1,
+      "2003": 1,
+      "2004": 4,
+      "2007": 1,
+      "2008": 3,
+      "2009": 22,
+      "2010": 3,
+      "2011": 8,
+      "2012": 15,
+      "2013": 32,
+      "2014": 21,
+      "2015": 125,
+      "2016": 251,
+      "2017": 413,
+      "2018": 427,
+      "2019": 124,
+      "2020": 230,
+      "2021": 316,
+      "2022": 444,
+      "2023": 1026,
+      "2024": 1098,
+      "2025": 1448,
+      "2026": 588
+    },
+    "by_register_download_year": {
+      "2019": 1149,
+      "2020": 86,
+      "2021": 134,
+      "2022": 886,
+      "2023": 1073,
+      "2024": 885,
+      "2025": 1590,
+      "2026": 798,
+      "{'$n": 1
+    }
+  },
+  "integrity_classes": {
+    "unit": "report records (included only)",
+    "date_published_after_date_downloaded": {
+      "count": 19,
+      "share_of_included": 0.00288,
+      "report_numbers": [
+        "174",
+        "254",
+        "357",
+        "468",
+        "462",
+        "545",
+        "609",
+        "706",
+        "860",
+        "1249",
+        "2167",
+        "2789",
+        "3838",
+        "4041",
+        "4240",
+        "5477",
+        "6716",
+        "6793",
+        "7051"
+      ],
+      "why_it_matters": "L2 asks whether a public archive holds a capture at or before the date the register recorded downloading the document. These records prove that field carries a non-zero error rate, so the L2 precedence result is reported with them flagged and excluded from the precedence rate."
+    },
+    "register_declares_its_stored_text_a_stand_in": {
+      "count": 46,
+      "report_numbers": [
+        "5104",
+        "5123",
+        "5125",
+        "5129",
+        "5130",
+        "5180",
+        "5182",
+        "5272",
+        "5360",
+        "5375",
+        "5377",
+        "5392",
+        "5393",
+        "5418",
+        "5419",
+        "5430",
+        "5482",
+        "5528",
+        "5531",
+        "5534",
+        "5542",
+        "5550",
+        "6092",
+        "6141",
+        "6190",
+        "6242",
+        "6243",
+        "6314",
+        "6337",
+        "6338",
+        "6675",
+        "6679",
+        "6774",
+        "6999",
+        "7065",
+        "7317",
+        "7341",
+        "7411",
+        "7471",
+        "7472",
+        "7473",
+        "7481",
+        "7512",
+        "7517",
+        "7572",
+        "7597"
+      ],
+      "why_it_matters": "The register states in these records' own text that what it holds is a placeholder, not a copy of the cited document. Scoring them for drift would report the register's disclosed incompleteness as a change in somebody else's page. They are measured at L1 and L2 and excluded from L3."
+    }
+  },
+  "strata": {
+    "definition": "publication year 2015..2026; everything published 2014 or earlier pooled",
+    "sizes_in_population": {
+      "2015": 125,
+      "2016": 251,
+      "2017": 413,
+      "2018": 427,
+      "2019": 124,
+      "2020": 230,
+      "2021": 316,
+      "2022": 444,
+      "2023": 1026,
+      "2024": 1098,
+      "2025": 1448,
+      "2026": 588,
+      "<=2014": 112
+    },
+    "earliest_publication_year_in_pooled_stratum": "1996"
+  },
+  "sampling": {
+    "seed": "meridian-2026-08-01-what-the-record-rests-on",
+    "allocation": "equal allocation, 20 report records per stratum",
+    "note": "Equal allocation gives each stratum the same precision and therefore does NOT give a self-weighting corpus estimate. Any corpus-wide rate must be a stratum-size-weighted estimate and must be reported with its interval."
+  }
+}
