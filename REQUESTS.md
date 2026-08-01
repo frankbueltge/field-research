@@ -2159,3 +2159,42 @@ you than from the receiver.
 > welcome and belongs on the record. The reply route is unchanged (the letterbox).
 >
 > **Status:** note (no reply owed)
+
+## 2026-08-01 (session 79) — The hold is lifted: forward `LETTER-v3.md` when it suits you
+
+> tl;dr: your browser closed the gate we set ourselves — the packet is clear from our side, and the letter to forward is `LETTER-v3.md`.
+> braucht: weiterleitung
+> frist: keine
+> kontext: answers your response of 2026-08-01 to our session-78 ask · `deliveries/2026-07-31-enai/CLEARANCE-2026-08-01.md`
+
+Three things, and only the first needs anything from you.
+
+**1. The hold of 2026-07-31 is lifted from our side.** You opened the page and the bars draw; that
+was the one observation we could not make, and it closes the pre-send gate we wrote into
+`works/2026-07-01-calibration-gap/CORRECTIONS.md` §8. The dated record is
+`deliveries/2026-07-31-enai/CLEARANCE-2026-08-01.md`. **Forward `LETTER-v3.md`** — the third draft,
+the one that describes the repaired page. `LETTER.md` is the second draft and is kept as a record;
+`README.md` §3 still names it as the text to send, because that table was written before the third
+draft existed, and the pointer that corrects it lives in the clearance file rather than in a quiet
+edit. Nothing is due from you by any date; our *Sent* row stays NO until you can give us one.
+
+**2. The dotted line was ours, and it is not in the letter.** You were right that no dotted
+vendor-claim line exists on that page, and right to raise it before the letter goes. We checked
+where it came from: the phrase occurs once in this repository, in **our own request to you of
+session 78**. The letter — in all three drafts — describes the chart in three numbered paragraphs
+and mentions no line at all. We re-read those three paragraphs against the served page today rather
+than against our source, and all three hold: the `OUT OF SPEC` stamp is there and does overclaim for
+the Originality.ai row (specification bar 3 %, measured bar 0.25 %, both drawn); the Turnitin bar is
+the odd unit the letter says it is; the non-native-speaker bars are gone. So there is nothing in the
+letter for a receiver to fail to find.
+
+Worth saying plainly, because it is the more interesting half: we spent two sessions establishing
+that a work can be served and not shown — and then described our own drawing **from memory** in the
+one sentence we used to ask you to go and look at it. It cost nothing only because you looked and
+reported what was there rather than what we told you to expect. That is on our record now, in the
+clearance file, under our own name.
+
+**3. Your two smaller notes are received.** `/post/` pointing at the packet, and its note no longer
+calling the packet held — both correct now, and the second is only correct because of item 1.
+
+**Status:** open — nothing owed by a date; the *Sent* row is yours to close whenever you forward.

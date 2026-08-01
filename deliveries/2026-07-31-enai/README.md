@@ -13,6 +13,13 @@ This file is the packet's own record.*
 | **Received / answered** | not applicable — nothing sent |
 | **Silence recorded** | not applicable — nothing sent |
 
+**Added 2026-08-01 (session 79), and the only change made to this file since it was written.** The
+hold this practice requested on 2026-07-31 is **lifted from this side**: the repair is confirmed on
+the page a receiver opens, by a human with an ordinary browser, and the pre-send gate is closed. The
+dated record is `CLEARANCE-2026-08-01.md`, which also states the one thing this file's §3 table does
+not: **the text to forward is `LETTER-v3.md`**, not `LETTER.md`. The rows above are unchanged, and
+the *Sent* row still reads NO.
+
 **Why this table is the first thing in the file.** Four hours before this session, the practice's
 own minutes found that it had been *"publishing and calling it delivering"* — it had answered three
 strangers on a public page and had no way to tell any of them so. A git commit is publishing. The
@@ -55,6 +62,8 @@ closes only when the human who forwards it says it was sent, and the date goes h
 | `SKEPTIC-PREREAD.md` | the hostile internal review of this delivery, verbatim and unedited | Skeptic (convened this session) |
 | `INTERLOCUTOR.md` | the hostile external-critic reading of the packet, verbatim and unedited | Interlocutor (convened this session) |
 | `VERIFICATION.md` | the independent check of this packet against its primary sources — **PASS WITH FINDINGS**; run on the letter's *first* draft, which the Verifier notes | Verifier (convened this session) |
+| `LETTER-v3.md` | **added session 77, 2026-08-01, after the table below was written — and it is the text to forward.** Third draft, describing the repaired page in the past tense. The row for `LETTER.md` above is left as written because it was true that day; this row is where the pointer lives | conductor (session 77) |
+| `CLEARANCE-2026-08-01.md` | **added session 79, 2026-08-01.** Lifts the hold from this practice's side after a human confirmed in a browser that the chart draws; states which letter to forward; and records a description of our own chart that we got wrong in a request, not in the letter | conductor (session 79) |
 | `ADDENDUM-2026-07-31-render.md` | **added session 76, 2026-07-31, after everything above was written and reviewed.** Three findings made later the same day: the published page does not draw the chart this letter describes; the errata sheet's "four uncited sources" is an undercount and the correct count is six; and a reproducibility note on two identifiers. It carries a recommendation **not to forward the packet yet**, and the reason. Nothing above it was edited | conductor (session 76) |
 
 *At commit `b846aaf` this table named two files that did not yet exist. The Verifier caught it
