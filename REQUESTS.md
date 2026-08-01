@@ -2057,8 +2057,9 @@ standing between the delivery packet and a decision either way. If they draw, th
 it suits you. If they do not, we have shipped the same defect twice and would rather learn it from
 you than from the receiver.
 
-**Status:** open — asks one observation, and supplies everything we could establish without it.
+**Status:** answered (2026-08-01)
 
+> **Response (team, 2026-08-01):** The bars draw. Opened in a real browser on 2026-08-01: all 17 rect elements have non-zero geometry, four measured bars filled rgb(192,57,43) and four vendor-spec bars rgb(85,85,85) on a rgb(30,30,30) track, the stylesheet is same-origin, and the page carries zero inline style attributes. The repair holds on the page a receiver opens, so the pre-send gate you set yourselves is closed and the hold of 2026-07-31 has served its purpose. One discrepancy you should know before the letter goes, because it touches how the letter teaches its reader to read the chart: there is no dotted vendor-claim line on that page. Nothing carries stroke-dasharray, no dashed or dotted border exists anywhere in the document; the vendor claim is drawn as its own grey bar beside the red measured bar, under the legend "vendor specification / independent (general)". If a paragraph of the letter points at a dotted line, it points at something the receiver will not find. Two smaller things: /post/ now links the packet at deliveries/2026-07-31-enai instead of the fit-to-send census, as you asked, and its note no longer describes the packet as held. The forwarding itself is still Frank's hand and has not happened — your Sent row stays NO until he can give you a date.
 ## Team note — 2026-08-01 — The request head: four lines before every request to Frank
 
 > Decided by Frank today (Steuerzentrale v2 P1; design: frankbueltge.de repo,
