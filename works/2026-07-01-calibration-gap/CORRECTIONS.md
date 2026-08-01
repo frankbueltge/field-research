@@ -15,8 +15,18 @@ Prepared for delivery to an outside reader, this work was checked against itself
 that made it. It failed that check in seven ways. All seven were found here, by us, before anything
 was sent — not by the receiver, and not by a reader.
 
-The full deliberation is in `journal/2026-07-31.md`, session 77. The gauntlet run for this state —
-Verifier, Skeptic, and the hostile Interlocutor critique published in full — is recorded there.
+The full deliberation is in `journal/2026-07-31.md`, session 77, together with the gauntlet this
+repair was put through: a Verifier, a Skeptic and a hostile Interlocutor, each published in full,
+including the parts this practice does not accept.
+
+> **A correction to this document, made inside the same session and left visible rather than
+> tidied.** The sentence above originally read that the gauntlet *"is recorded there"* — written
+> while the gauntlet was still running, and therefore an assertion of a check that did not yet
+> exist. Both the Skeptic and the Interlocutor found it independently, and the Interlocutor put it
+> the way it deserves: a document whose whole subject is unsourced claims had made an unsourced
+> claim about its own review. The finding is recorded here rather than quietly rewritten, because
+> that is what this register is for. The gauntlet has since run, on the state this document
+> describes, and everything below carries its conditions.
 
 ### 1. The published page did not draw its chart
 
@@ -57,17 +67,30 @@ it was caught here rather than by a reviewer.
 
 ### 2. The page carried none of its own identifiers
 
-**What was wrong.** `data.json` held **ten** source URLs. The face rendered a source's `name` and
-`finding` and never its `url`; the harm register rendered `source` and never `source_url`. Measured
-first-hand on the served page on 2026-07-31 (HTTP 200, 48,910 bytes): **zero** occurrences of
-`doi.org`, `arxiv.org`, `aclanthology`, or of any cited news host. Every anchor on that page belonged
-to the site's own chrome.
+**What was wrong.** `data.json` held **eight** source URLs — five in `benchmark_sources`, three in
+the harm register. *(This paragraph said "ten" until the Verifier enumerated the pre-repair file and
+counted eight. The count was wrong in two places in this work and both are corrected; the
+substantive claim is unaffected, and the Verifier independently reproduced it.)* The face rendered a
+source's `name` and `finding` and never its `url`; the harm register rendered `source` and never
+`source_url`. Measured first-hand on the served page on 2026-07-31 (HTTP 200): **zero** occurrences
+of `doi.org`, `arxiv.org`, `aclanthology`, or of any cited news host. Every anchor on that page
+belonged to the site's own chrome. *(This sentence also carried a page size of "48,910 bytes". An
+independent re-fetch the next day, with the same user-agent, returned 49,042 bytes, repeatably. The
+figure was stated with a precision the measurement does not have — the page is about 49 kB and the
+exact count is not stable across fetches — so the number is withdrawn rather than defended.)*
 
 So the errata sheet prepared for the delivery understated the defect in a second direction. It
 reported four sources cited with no retrievable identifier. The truth was worse: **no source on that
 page was followable at all**, including the six that had identifiers all along.
 
 **What was done.** Identifiers are rendered on the face, as links and as visible text.
+
+**What is still not followable, and must not be rounded away.** One of the eight — the
+student-newspaper article under the Yale row — cannot be opened by anyone here and has no archived
+copy anywhere (§6). Printing its URL does not make it followable. So the honest form of the claim is
+that **every load-bearing source on this page can now be followed except one, which is named, whose
+unreadability is stated on the face, and whose part of the row is now marked as resting on it
+alone.**
 
 ### 3. The specification side of a calibration certificate was unsourced
 
@@ -99,14 +122,25 @@ rather than quietly restated:
   superseding figures were already published **two weeks before this work shipped** — so this is not
   an artifact of the work's reference date. The work took the older number.
 
-**Why the bars were not restated.** Both are retained at the work's stated reference date
-(2026-07-01) and disclosed in place, because restating them would change what the instrument
-measured without re-running the comparison. The direction of the second error is stated so a reader
-can weigh it rather than take our word: a **laxer** claimed false-positive rate makes the
-specification **easier** to satisfy, and this work's finding for that tool is that the specification
-**holds** on a clean corpus (0.07–0.47 %). It would hold against 1.5 % as well. The finding does not
-turn on the error; the citation did. A refresh of both specifications to their current published
-state is owed and is on the workboard as its own move.
+**Why the bars were not restated — on the real grounds, after a Skeptic struck down the first
+version of this paragraph.** That version called this a *reference-date* decision: retained as the
+figure known on 2026-07-01. **That defence is unavailable and the paragraph that made it disproved
+it two sentences earlier**, since the archive shows the better figure was on the same vendor page
+two weeks before this work shipped. The work took the wrong number off a page that already carried
+the right one.
+
+The bars are retained for one reason only, stated without borrowed legitimacy: **a specification is
+half of a comparison, and a comparison is re-run, not edited.** Changing the spec bar under a
+measurement that was made against the old one produces a chart that never existed. Until the re-run
+happens, the Originality.ai spec bar is a **known-wrong figure, published knowingly**, with the
+vendor's current rates printed beside it and a marker on the chart itself. The re-run is owed and is
+on the workboard as its own move. If it does not happen, that is a failure and this paragraph is the
+evidence for it.
+
+The direction of the error is stated so a reader can weigh it rather than take our word: a **laxer**
+claimed false-positive rate makes the specification **easier** to satisfy, and this work's finding
+for that tool is that the specification **holds** on a clean corpus (0.07–0.47 %). It would hold
+against 1.5 % as well. The finding does not turn on the error; the citation did.
 
 ### 4. Four load-bearing sources were cited by name with no identifier
 
@@ -187,6 +221,42 @@ carrying it could be opened from here, so this practice does not assert it.
 The figure is **retained and marked** in `data.json` (`claim_accuracy_status`), not silently deleted,
 because a deletion would hide that it was ever published. Its status is: unsourced, unverified, and
 probably a category error.
+
+### 8. What the gauntlet changed, and the pre-send gate it imposed
+
+The Verifier returned **PASS WITH FINDINGS** on the state of 2026-08-01 (three non-blocking: the
+"ten"/eight count, the byte-count precision, and a disclosed limit on its own reach into three
+image-embedded source tables). The Skeptic returned **SURVIVES WITH CONDITIONS** with eight
+conditions. Both are published in full in `journal/2026-07-31.md`, session 77, and every condition
+executed is listed there against what was done. What they changed here, beyond the corrections
+already folded into §§2–3 above:
+
+- The Yale row now states, on the face, **which half of it the court record supports and which half
+  it does not.** The suspension, the scans, the Yale scholars and the former president rest on the
+  unreadable article alone; only the procedural facts rest on the docket. Citing a docket beside a
+  sentence the docket does not support is an implication of corroboration, and it is now closed.
+- The two specification defects are marked **beside the bars they qualify**, not only in a block
+  below the harm register. A caveat a skimming reader cannot see is disclosed only in the lawyer's
+  sense.
+- **Each tool's methodology note is now on the page**, folded under its own chart, instead of the
+  footnote's old instruction to go and read a data file. The footnote said so about itself; a work
+  that tells a reader its method lives elsewhere has not published its method.
+- **The chart's text no longer shrinks with the container.** The row labels and values left the SVG
+  and became ordinary HTML; only the two rects remain inside it. The first attempt at this was a
+  media query raising the SVG font size, and it could not be verified — this runtime's headless
+  browser clamps its layout viewport at 500 px, so the query never fires (tested with a control page
+  whose colour flips below 480 px; it did not flip). Rather than ship an unverifiable patch, the
+  dependency was removed. `render-verification.json` now records the label's computed font size and
+  box height at 1200, 900 and 500 px: identical at all three, while the bar's width changes and its
+  height does not. **No measurement here reaches a true phone width, and none is claimed to.**
+
+**The pre-send gate, binding on this practice and stated so it can be checked.** The verification
+above is of a specimen and of this source file. It is **not** a verification of the live page. The
+published site is built and deployed separately from this repository, and at the time of writing it
+still serves the pre-repair markup. So: **before this work is offered to any outside receiver, the
+live URL must be re-fetched after deployment and the repair confirmed on the page a receiver would
+actually open.** Sending the link before that check repeats precisely the failure this repair
+exists to correct — and this practice would have no excuse the second time.
 
 ---
 
