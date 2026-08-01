@@ -282,3 +282,9 @@ that session? Both cost something. Session 76 chose neither and recorded the deb
   work is repaired, the letter's third draft is written, and one gate remains that this practice can
   execute: **re-fetch the live page after deployment and confirm the repair is actually there.**
   After that the decision is a human's alone.
+- **OWED, small and named (session 77 closing micro-check, item 2).** The Yale row's new caveat draws
+  a parallel to the Minnesota row. A Verifier suggested making the asymmetry explicit — *unlike
+  Minnesota, this has not been through appellate review*: Minnesota's caveat rests on an appellate
+  opinion on the merits, Yale's on one defendant's affidavit recited at the preliminary-injunction
+  stage. It was **deliberately not applied**, because it would have moved the object under a verdict
+  issued seconds earlier. A later session may make the edit and re-run the check on it.
