@@ -1,0 +1,1098 @@
+{
+  "work": "What the Record Rests On",
+  "built": "2026-08-01",
+  "status": "DRAFT — not shipped, no gauntlet verdict",
+  "inputs": {
+    "snapshot_sha256": "fa13c2093c09ce039a9576ef7d69ef892b4e5e8dd47fd0b3b73badab7643d2f7",
+    "probe_file": "probe-2026-08-01.json",
+    "probe_started_utc": "2026-08-01T03:56:45Z",
+    "probe_finished_utc": "2026-08-01T04:39:15Z",
+    "vantage": "datacenter address behind a forward proxy; not a reader's browser"
+  },
+  "population": {
+    "records_in_reports_csv": 7408,
+    "included_unit": "report records whose url field begins with http:// or https://",
+    "included_records": 6602,
+    "distinct_urls_among_included": 6541,
+    "included_records_sharing_a_url_with_another_record": 119,
+    "distinct_urls_used_more_than_once": 58
+  },
+  "sample": {
+    "seed": "meridian-2026-08-01-what-the-record-rests-on",
+    "n": 260,
+    "allocation": "equal allocation, 20 report records per stratum",
+    "strata_population_sizes": {
+      "2015": 125,
+      "2016": 251,
+      "2017": 413,
+      "2018": 427,
+      "2019": 124,
+      "2020": 230,
+      "2021": 316,
+      "2022": 444,
+      "2023": 1026,
+      "2024": 1098,
+      "2025": 1448,
+      "2026": 588,
+      "<=2014": 112
+    }
+  },
+  "counts_in_sample": {
+    "l1_class": {
+      "HTTP_200": 177,
+      "HTTP_403": 41,
+      "HTTP_404": 10,
+      "HTTP_401": 10,
+      "HTTP_4XX": 6,
+      "TIMEOUT": 6,
+      "HTTP_5XX": 3,
+      "HTTP_OTHER": 2,
+      "HTTP_410": 1,
+      "DNS_FAIL": 1,
+      "TLS_ERROR": 1,
+      "REDIRECT_TO_ROOT": 1,
+      "CONNECT_FAIL": 1
+    },
+    "l1_class_on_self_identifying_retry": {
+      "HTTP_403": 39,
+      "HTTP_404": 11,
+      "HTTP_401": 10,
+      "HTTP_200": 7,
+      "TIMEOUT": 6,
+      "HTTP_5XX": 3,
+      "HTTP_410": 1,
+      "DNS_FAIL": 1,
+      "TLS_ERROR": 1,
+      "HTTP_4XX": 1,
+      "HTTP_OTHER": 1,
+      "CONNECT_FAIL": 1
+    },
+    "l3_class": {
+      "HOLDS": 162,
+      "NOT_APPLICABLE": 82,
+      "SHELL": 7,
+      "ABSENT": 5,
+      "PARTIAL": 2,
+      "NON_HTML": 1,
+      "NO_HELD_TEXT": 1
+    },
+    "l2_class": {
+      "CAPTURED": 231,
+      "CDX_UNAVAILABLE": 24,
+      "NO_CAPTURE": 5
+    },
+    "l3c_class": {
+      "ARCHIVED_COPY_HOLDS": 53,
+      "NO_CAPTURE_BEFORE_DOWNLOAD": 16,
+      "ARCHIVE_FETCH_FAILED": 14,
+      "ARCHIVED_COPY_ABSENT": 8,
+      "NO_CAPTURE": 4,
+      "ARCHIVED_COPY_PARTIAL": 2
+    }
+  },
+  "estimates_for_the_population_of_sourced_report_records": {
+    "citation_does_not_answer_200": {
+      "estimable": true,
+      "weighted_estimate": 0.3142,
+      "standard_error": 0.0375,
+      "ci95": [
+        0.2406,
+        0.3877
+      ],
+      "sample_n_in_scope": 260,
+      "unweighted_sample_rate": 0.3154,
+      "design_effect_from_weighting": 1.643,
+      "effective_sample_size": 158.2,
+      "per_stratum": {
+        "2015": {
+          "stratum_population": 125,
+          "sampled": 20,
+          "with_property": 7,
+          "rate_in_stratum": 0.35,
+          "weight": 0.01893
+        },
+        "2016": {
+          "stratum_population": 251,
+          "sampled": 20,
+          "with_property": 5,
+          "rate_in_stratum": 0.25,
+          "weight": 0.03802
+        },
+        "2017": {
+          "stratum_population": 413,
+          "sampled": 20,
+          "with_property": 5,
+          "rate_in_stratum": 0.25,
+          "weight": 0.06256
+        },
+        "2018": {
+          "stratum_population": 427,
+          "sampled": 20,
+          "with_property": 5,
+          "rate_in_stratum": 0.25,
+          "weight": 0.06468
+        },
+        "2019": {
+          "stratum_population": 124,
+          "sampled": 20,
+          "with_property": 8,
+          "rate_in_stratum": 0.4,
+          "weight": 0.01878
+        },
+        "2020": {
+          "stratum_population": 230,
+          "sampled": 20,
+          "with_property": 5,
+          "rate_in_stratum": 0.25,
+          "weight": 0.03484
+        },
+        "2021": {
+          "stratum_population": 316,
+          "sampled": 20,
+          "with_property": 3,
+          "rate_in_stratum": 0.15,
+          "weight": 0.04786
+        },
+        "2022": {
+          "stratum_population": 444,
+          "sampled": 20,
+          "with_property": 6,
+          "rate_in_stratum": 0.3,
+          "weight": 0.06725
+        },
+        "2023": {
+          "stratum_population": 1026,
+          "sampled": 20,
+          "with_property": 5,
+          "rate_in_stratum": 0.25,
+          "weight": 0.15541
+        },
+        "2024": {
+          "stratum_population": 1098,
+          "sampled": 20,
+          "with_property": 8,
+          "rate_in_stratum": 0.4,
+          "weight": 0.16631
+        },
+        "2025": {
+          "stratum_population": 1448,
+          "sampled": 20,
+          "with_property": 7,
+          "rate_in_stratum": 0.35,
+          "weight": 0.21933
+        },
+        "2026": {
+          "stratum_population": 588,
+          "sampled": 20,
+          "with_property": 7,
+          "rate_in_stratum": 0.35,
+          "weight": 0.08906
+        },
+        "<=2014": {
+          "stratum_population": 112,
+          "sampled": 20,
+          "with_property": 11,
+          "rate_in_stratum": 0.55,
+          "weight": 0.01696
+        }
+      },
+      "population_covered": 6602
+    },
+    "citation_is_hard_gone_404_410_or_no_dns": {
+      "estimable": true,
+      "weighted_estimate": 0.0271,
+      "standard_error": 0.0082,
+      "ci95": [
+        0.0111,
+        0.0432
+      ],
+      "sample_n_in_scope": 260,
+      "unweighted_sample_rate": 0.0462,
+      "design_effect_from_weighting": 1.643,
+      "effective_sample_size": 158.2,
+      "per_stratum": {
+        "2015": {
+          "stratum_population": 125,
+          "sampled": 20,
+          "with_property": 1,
+          "rate_in_stratum": 0.05,
+          "weight": 0.01893
+        },
+        "2016": {
+          "stratum_population": 251,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.03802
+        },
+        "2017": {
+          "stratum_population": 413,
+          "sampled": 20,
+          "with_property": 3,
+          "rate_in_stratum": 0.15,
+          "weight": 0.06256
+        },
+        "2018": {
+          "stratum_population": 427,
+          "sampled": 20,
+          "with_property": 1,
+          "rate_in_stratum": 0.05,
+          "weight": 0.06468
+        },
+        "2019": {
+          "stratum_population": 124,
+          "sampled": 20,
+          "with_property": 1,
+          "rate_in_stratum": 0.05,
+          "weight": 0.01878
+        },
+        "2020": {
+          "stratum_population": 230,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.03484
+        },
+        "2021": {
+          "stratum_population": 316,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.04786
+        },
+        "2022": {
+          "stratum_population": 444,
+          "sampled": 20,
+          "with_property": 3,
+          "rate_in_stratum": 0.15,
+          "weight": 0.06725
+        },
+        "2023": {
+          "stratum_population": 1026,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.15541
+        },
+        "2024": {
+          "stratum_population": 1098,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.16631
+        },
+        "2025": {
+          "stratum_population": 1448,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.21933
+        },
+        "2026": {
+          "stratum_population": 588,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.08906
+        },
+        "<=2014": {
+          "stratum_population": 112,
+          "sampled": 20,
+          "with_property": 3,
+          "rate_in_stratum": 0.15,
+          "weight": 0.01696
+        }
+      },
+      "population_covered": 6602
+    },
+    "citation_withheld_from_this_vantage_401_402_403_451": {
+      "estimable": true,
+      "weighted_estimate": 0.2361,
+      "standard_error": 0.0352,
+      "ci95": [
+        0.1672,
+        0.3051
+      ],
+      "sample_n_in_scope": 260,
+      "unweighted_sample_rate": 0.1962,
+      "design_effect_from_weighting": 1.643,
+      "effective_sample_size": 158.2,
+      "per_stratum": {
+        "2015": {
+          "stratum_population": 125,
+          "sampled": 20,
+          "with_property": 5,
+          "rate_in_stratum": 0.25,
+          "weight": 0.01893
+        },
+        "2016": {
+          "stratum_population": 251,
+          "sampled": 20,
+          "with_property": 1,
+          "rate_in_stratum": 0.05,
+          "weight": 0.03802
+        },
+        "2017": {
+          "stratum_population": 413,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.06256
+        },
+        "2018": {
+          "stratum_population": 427,
+          "sampled": 20,
+          "with_property": 3,
+          "rate_in_stratum": 0.15,
+          "weight": 0.06468
+        },
+        "2019": {
+          "stratum_population": 124,
+          "sampled": 20,
+          "with_property": 5,
+          "rate_in_stratum": 0.25,
+          "weight": 0.01878
+        },
+        "2020": {
+          "stratum_population": 230,
+          "sampled": 20,
+          "with_property": 2,
+          "rate_in_stratum": 0.1,
+          "weight": 0.03484
+        },
+        "2021": {
+          "stratum_population": 316,
+          "sampled": 20,
+          "with_property": 3,
+          "rate_in_stratum": 0.15,
+          "weight": 0.04786
+        },
+        "2022": {
+          "stratum_population": 444,
+          "sampled": 20,
+          "with_property": 3,
+          "rate_in_stratum": 0.15,
+          "weight": 0.06725
+        },
+        "2023": {
+          "stratum_population": 1026,
+          "sampled": 20,
+          "with_property": 4,
+          "rate_in_stratum": 0.2,
+          "weight": 0.15541
+        },
+        "2024": {
+          "stratum_population": 1098,
+          "sampled": 20,
+          "with_property": 8,
+          "rate_in_stratum": 0.4,
+          "weight": 0.16631
+        },
+        "2025": {
+          "stratum_population": 1448,
+          "sampled": 20,
+          "with_property": 6,
+          "rate_in_stratum": 0.3,
+          "weight": 0.21933
+        },
+        "2026": {
+          "stratum_population": 588,
+          "sampled": 20,
+          "with_property": 6,
+          "rate_in_stratum": 0.3,
+          "weight": 0.08906
+        },
+        "<=2014": {
+          "stratum_population": 112,
+          "sampled": 20,
+          "with_property": 5,
+          "rate_in_stratum": 0.25,
+          "weight": 0.01696
+        }
+      },
+      "population_covered": 6602
+    },
+    "citation_redirected_to_site_root": {
+      "estimable": true,
+      "weighted_estimate": 0.0009,
+      "standard_error": 0.0009,
+      "ci95": [
+        0.0,
+        0.0026
+      ],
+      "sample_n_in_scope": 260,
+      "unweighted_sample_rate": 0.0038,
+      "design_effect_from_weighting": 1.643,
+      "effective_sample_size": 158.2,
+      "per_stratum": {
+        "2015": {
+          "stratum_population": 125,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.01893
+        },
+        "2016": {
+          "stratum_population": 251,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.03802
+        },
+        "2017": {
+          "stratum_population": 413,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.06256
+        },
+        "2018": {
+          "stratum_population": 427,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.06468
+        },
+        "2019": {
+          "stratum_population": 124,
+          "sampled": 20,
+          "with_property": 1,
+          "rate_in_stratum": 0.05,
+          "weight": 0.01878
+        },
+        "2020": {
+          "stratum_population": 230,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.03484
+        },
+        "2021": {
+          "stratum_population": 316,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.04786
+        },
+        "2022": {
+          "stratum_population": 444,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.06725
+        },
+        "2023": {
+          "stratum_population": 1026,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.15541
+        },
+        "2024": {
+          "stratum_population": 1098,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.16631
+        },
+        "2025": {
+          "stratum_population": 1448,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.21933
+        },
+        "2026": {
+          "stratum_population": 588,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.08906
+        },
+        "<=2014": {
+          "stratum_population": 112,
+          "sampled": 20,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.01696
+        }
+      },
+      "population_covered": 6602
+    },
+    "among_pages_that_served_a_document_the_stored_passage_is_gone": {
+      "estimable": true,
+      "weighted_estimate": 0.0202,
+      "standard_error": 0.0099,
+      "ci95": [
+        0.0008,
+        0.0396
+      ],
+      "sample_n_in_scope": 176,
+      "unweighted_sample_rate": 0.0284,
+      "design_effect_from_weighting": 1.683,
+      "effective_sample_size": 104.5,
+      "per_stratum": {
+        "2015": {
+          "stratum_population": 125,
+          "sampled": 13,
+          "with_property": 1,
+          "rate_in_stratum": 0.0769,
+          "weight": 0.01893
+        },
+        "2016": {
+          "stratum_population": 251,
+          "sampled": 15,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.03802
+        },
+        "2017": {
+          "stratum_population": 413,
+          "sampled": 15,
+          "with_property": 1,
+          "rate_in_stratum": 0.0667,
+          "weight": 0.06256
+        },
+        "2018": {
+          "stratum_population": 427,
+          "sampled": 15,
+          "with_property": 1,
+          "rate_in_stratum": 0.0667,
+          "weight": 0.06468
+        },
+        "2019": {
+          "stratum_population": 124,
+          "sampled": 12,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.01878
+        },
+        "2020": {
+          "stratum_population": 230,
+          "sampled": 15,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.03484
+        },
+        "2021": {
+          "stratum_population": 316,
+          "sampled": 17,
+          "with_property": 1,
+          "rate_in_stratum": 0.0588,
+          "weight": 0.04786
+        },
+        "2022": {
+          "stratum_population": 444,
+          "sampled": 13,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.06725
+        },
+        "2023": {
+          "stratum_population": 1026,
+          "sampled": 15,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.15541
+        },
+        "2024": {
+          "stratum_population": 1098,
+          "sampled": 12,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.16631
+        },
+        "2025": {
+          "stratum_population": 1448,
+          "sampled": 13,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.21933
+        },
+        "2026": {
+          "stratum_population": 588,
+          "sampled": 12,
+          "with_property": 1,
+          "rate_in_stratum": 0.0833,
+          "weight": 0.08906
+        },
+        "<=2014": {
+          "stratum_population": 112,
+          "sampled": 9,
+          "with_property": 0,
+          "rate_in_stratum": 0.0,
+          "weight": 0.01696
+        }
+      },
+      "population_covered": 6602
+    },
+    "among_pages_that_served_a_document_the_stored_passage_still_holds": {
+      "estimable": true,
+      "weighted_estimate": 0.9516,
+      "standard_error": 0.0154,
+      "ci95": [
+        0.9214,
+        0.9817
+      ],
+      "sample_n_in_scope": 176,
+      "unweighted_sample_rate": 0.9205,
+      "design_effect_from_weighting": 1.683,
+      "effective_sample_size": 104.5,
+      "per_stratum": {
+        "2015": {
+          "stratum_population": 125,
+          "sampled": 13,
+          "with_property": 12,
+          "rate_in_stratum": 0.9231,
+          "weight": 0.01893
+        },
+        "2016": {
+          "stratum_population": 251,
+          "sampled": 15,
+          "with_property": 14,
+          "rate_in_stratum": 0.9333,
+          "weight": 0.03802
+        },
+        "2017": {
+          "stratum_population": 413,
+          "sampled": 15,
+          "with_property": 14,
+          "rate_in_stratum": 0.9333,
+          "weight": 0.06256
+        },
+        "2018": {
+          "stratum_population": 427,
+          "sampled": 15,
+          "with_property": 14,
+          "rate_in_stratum": 0.9333,
+          "weight": 0.06468
+        },
+        "2019": {
+          "stratum_population": 124,
+          "sampled": 12,
+          "with_property": 10,
+          "rate_in_stratum": 0.8333,
+          "weight": 0.01878
+        },
+        "2020": {
+          "stratum_population": 230,
+          "sampled": 15,
+          "with_property": 15,
+          "rate_in_stratum": 1.0,
+          "weight": 0.03484
+        },
+        "2021": {
+          "stratum_population": 316,
+          "sampled": 17,
+          "with_property": 13,
+          "rate_in_stratum": 0.7647,
+          "weight": 0.04786
+        },
+        "2022": {
+          "stratum_population": 444,
+          "sampled": 13,
+          "with_property": 13,
+          "rate_in_stratum": 1.0,
+          "weight": 0.06725
+        },
+        "2023": {
+          "stratum_population": 1026,
+          "sampled": 15,
+          "with_property": 14,
+          "rate_in_stratum": 0.9333,
+          "weight": 0.15541
+        },
+        "2024": {
+          "stratum_population": 1098,
+          "sampled": 12,
+          "with_property": 12,
+          "rate_in_stratum": 1.0,
+          "weight": 0.16631
+        },
+        "2025": {
+          "stratum_population": 1448,
+          "sampled": 13,
+          "with_property": 13,
+          "rate_in_stratum": 1.0,
+          "weight": 0.21933
+        },
+        "2026": {
+          "stratum_population": 588,
+          "sampled": 12,
+          "with_property": 11,
+          "rate_in_stratum": 0.9167,
+          "weight": 0.08906
+        },
+        "<=2014": {
+          "stratum_population": 112,
+          "sampled": 9,
+          "with_property": 7,
+          "rate_in_stratum": 0.7778,
+          "weight": 0.01696
+        }
+      },
+      "population_covered": 6602
+    },
+    "citation_still_delivers_the_stored_passage_to_this_vantage": {
+      "estimable": true,
+      "weighted_estimate": 0.6434,
+      "standard_error": 0.0384,
+      "ci95": [
+        0.5683,
+        0.7186
+      ],
+      "sample_n_in_scope": 260,
+      "unweighted_sample_rate": 0.6231,
+      "design_effect_from_weighting": 1.643,
+      "effective_sample_size": 158.2,
+      "per_stratum": {
+        "2015": {
+          "stratum_population": 125,
+          "sampled": 20,
+          "with_property": 12,
+          "rate_in_stratum": 0.6,
+          "weight": 0.01893
+        },
+        "2016": {
+          "stratum_population": 251,
+          "sampled": 20,
+          "with_property": 14,
+          "rate_in_stratum": 0.7,
+          "weight": 0.03802
+        },
+        "2017": {
+          "stratum_population": 413,
+          "sampled": 20,
+          "with_property": 14,
+          "rate_in_stratum": 0.7,
+          "weight": 0.06256
+        },
+        "2018": {
+          "stratum_population": 427,
+          "sampled": 20,
+          "with_property": 14,
+          "rate_in_stratum": 0.7,
+          "weight": 0.06468
+        },
+        "2019": {
+          "stratum_population": 124,
+          "sampled": 20,
+          "with_property": 10,
+          "rate_in_stratum": 0.5,
+          "weight": 0.01878
+        },
+        "2020": {
+          "stratum_population": 230,
+          "sampled": 20,
+          "with_property": 15,
+          "rate_in_stratum": 0.75,
+          "weight": 0.03484
+        },
+        "2021": {
+          "stratum_population": 316,
+          "sampled": 20,
+          "with_property": 13,
+          "rate_in_stratum": 0.65,
+          "weight": 0.04786
+        },
+        "2022": {
+          "stratum_population": 444,
+          "sampled": 20,
+          "with_property": 13,
+          "rate_in_stratum": 0.65,
+          "weight": 0.06725
+        },
+        "2023": {
+          "stratum_population": 1026,
+          "sampled": 20,
+          "with_property": 14,
+          "rate_in_stratum": 0.7,
+          "weight": 0.15541
+        },
+        "2024": {
+          "stratum_population": 1098,
+          "sampled": 20,
+          "with_property": 12,
+          "rate_in_stratum": 0.6,
+          "weight": 0.16631
+        },
+        "2025": {
+          "stratum_population": 1448,
+          "sampled": 20,
+          "with_property": 13,
+          "rate_in_stratum": 0.65,
+          "weight": 0.21933
+        },
+        "2026": {
+          "stratum_population": 588,
+          "sampled": 20,
+          "with_property": 11,
+          "rate_in_stratum": 0.55,
+          "weight": 0.08906
+        },
+        "<=2014": {
+          "stratum_population": 112,
+          "sampled": 20,
+          "with_property": 7,
+          "rate_in_stratum": 0.35,
+          "weight": 0.01696
+        }
+      },
+      "population_covered": 6602
+    },
+    "public_archive_holds_at_least_one_capture": {
+      "estimable": true,
+      "weighted_estimate": 0.9796,
+      "standard_error": 0.0118,
+      "ci95": [
+        0.9564,
+        1.0
+      ],
+      "sample_n_in_scope": 236,
+      "unweighted_sample_rate": 0.9788,
+      "design_effect_from_weighting": 1.696,
+      "effective_sample_size": 139.1,
+      "per_stratum": {
+        "2015": {
+          "stratum_population": 125,
+          "sampled": 17,
+          "with_property": 16,
+          "rate_in_stratum": 0.9412,
+          "weight": 0.01893
+        },
+        "2016": {
+          "stratum_population": 251,
+          "sampled": 20,
+          "with_property": 20,
+          "rate_in_stratum": 1.0,
+          "weight": 0.03802
+        },
+        "2017": {
+          "stratum_population": 413,
+          "sampled": 18,
+          "with_property": 18,
+          "rate_in_stratum": 1.0,
+          "weight": 0.06256
+        },
+        "2018": {
+          "stratum_population": 427,
+          "sampled": 16,
+          "with_property": 16,
+          "rate_in_stratum": 1.0,
+          "weight": 0.06468
+        },
+        "2019": {
+          "stratum_population": 124,
+          "sampled": 18,
+          "with_property": 18,
+          "rate_in_stratum": 1.0,
+          "weight": 0.01878
+        },
+        "2020": {
+          "stratum_population": 230,
+          "sampled": 18,
+          "with_property": 18,
+          "rate_in_stratum": 1.0,
+          "weight": 0.03484
+        },
+        "2021": {
+          "stratum_population": 316,
+          "sampled": 18,
+          "with_property": 18,
+          "rate_in_stratum": 1.0,
+          "weight": 0.04786
+        },
+        "2022": {
+          "stratum_population": 444,
+          "sampled": 20,
+          "with_property": 19,
+          "rate_in_stratum": 0.95,
+          "weight": 0.06725
+        },
+        "2023": {
+          "stratum_population": 1026,
+          "sampled": 18,
+          "with_property": 18,
+          "rate_in_stratum": 1.0,
+          "weight": 0.15541
+        },
+        "2024": {
+          "stratum_population": 1098,
+          "sampled": 16,
+          "with_property": 15,
+          "rate_in_stratum": 0.9375,
+          "weight": 0.16631
+        },
+        "2025": {
+          "stratum_population": 1448,
+          "sampled": 18,
+          "with_property": 18,
+          "rate_in_stratum": 1.0,
+          "weight": 0.21933
+        },
+        "2026": {
+          "stratum_population": 588,
+          "sampled": 19,
+          "with_property": 18,
+          "rate_in_stratum": 0.9474,
+          "weight": 0.08906
+        },
+        "<=2014": {
+          "stratum_population": 112,
+          "sampled": 20,
+          "with_property": 19,
+          "rate_in_stratum": 0.95,
+          "weight": 0.01696
+        }
+      },
+      "population_covered": 6602
+    },
+    "archive_holds_a_capture_at_or_before_the_registers_download_date": {
+      "estimable": true,
+      "weighted_estimate": 0.9012,
+      "standard_error": 0.0275,
+      "ci95": [
+        0.8474,
+        0.9551
+      ],
+      "sample_n_in_scope": 229,
+      "unweighted_sample_rate": 0.8908,
+      "design_effect_from_weighting": 1.684,
+      "effective_sample_size": 136.0,
+      "per_stratum": {
+        "2015": {
+          "stratum_population": 125,
+          "sampled": 16,
+          "with_property": 11,
+          "rate_in_stratum": 0.6875,
+          "weight": 0.01893
+        },
+        "2016": {
+          "stratum_population": 251,
+          "sampled": 20,
+          "with_property": 19,
+          "rate_in_stratum": 0.95,
+          "weight": 0.03802
+        },
+        "2017": {
+          "stratum_population": 413,
+          "sampled": 18,
+          "with_property": 17,
+          "rate_in_stratum": 0.9444,
+          "weight": 0.06256
+        },
+        "2018": {
+          "stratum_population": 427,
+          "sampled": 16,
+          "with_property": 16,
+          "rate_in_stratum": 1.0,
+          "weight": 0.06468
+        },
+        "2019": {
+          "stratum_population": 124,
+          "sampled": 17,
+          "with_property": 15,
+          "rate_in_stratum": 0.8824,
+          "weight": 0.01878
+        },
+        "2020": {
+          "stratum_population": 230,
+          "sampled": 18,
+          "with_property": 16,
+          "rate_in_stratum": 0.8889,
+          "weight": 0.03484
+        },
+        "2021": {
+          "stratum_population": 316,
+          "sampled": 18,
+          "with_property": 18,
+          "rate_in_stratum": 1.0,
+          "weight": 0.04786
+        },
+        "2022": {
+          "stratum_population": 444,
+          "sampled": 18,
+          "with_property": 17,
+          "rate_in_stratum": 0.9444,
+          "weight": 0.06725
+        },
+        "2023": {
+          "stratum_population": 1026,
+          "sampled": 18,
+          "with_property": 17,
+          "rate_in_stratum": 0.9444,
+          "weight": 0.15541
+        },
+        "2024": {
+          "stratum_population": 1098,
+          "sampled": 15,
+          "with_property": 13,
+          "rate_in_stratum": 0.8667,
+          "weight": 0.16631
+        },
+        "2025": {
+          "stratum_population": 1448,
+          "sampled": 18,
+          "with_property": 15,
+          "rate_in_stratum": 0.8333,
+          "weight": 0.21933
+        },
+        "2026": {
+          "stratum_population": 588,
+          "sampled": 18,
+          "with_property": 17,
+          "rate_in_stratum": 0.9444,
+          "weight": 0.08906
+        },
+        "<=2014": {
+          "stratum_population": 112,
+          "sampled": 19,
+          "with_property": 13,
+          "rate_in_stratum": 0.6842,
+          "weight": 0.01696
+        }
+      },
+      "population_covered": 6602
+    }
+  },
+  "calibration_control": {
+    "what_it_is": "control layer: the archived capture nearest to and not after the register's recorded download date, run through the same extractor against the same fingerprint, to separate loss on the live web from a mismatch between extraction pipelines",
+    "run_on": "only the cases where the live page did not clearly still hold the stored passage",
+    "not_a_sample": "These counts are a control on the instrument, not an estimate of any population. No rate here may be read as a corpus rate.",
+    "n": 97,
+    "by_live_class": {
+      "NOT_APPLICABLE": {
+        "ARCHIVED_COPY_HOLDS": 44,
+        "NO_CAPTURE_BEFORE_DOWNLOAD": 16,
+        "NO_CAPTURE": 4,
+        "ARCHIVE_FETCH_FAILED": 13,
+        "ARCHIVED_COPY_ABSENT": 3,
+        "ARCHIVED_COPY_PARTIAL": 2
+      },
+      "ABSENT": {
+        "ARCHIVED_COPY_HOLDS": 4,
+        "ARCHIVED_COPY_ABSENT": 1
+      },
+      "SHELL": {
+        "ARCHIVED_COPY_HOLDS": 3,
+        "ARCHIVED_COPY_ABSENT": 3,
+        "ARCHIVE_FETCH_FAILED": 1
+      },
+      "PARTIAL": {
+        "ARCHIVED_COPY_HOLDS": 2
+      },
+      "NON_HTML": {
+        "ARCHIVED_COPY_ABSENT": 1
+      }
+    },
+    "decidable_cases": 63,
+    "archived_copy_holds_the_stored_passage": 53,
+    "reading": "Where the archived capture taken at or before the register's own download date still contains the stored passage, the extractor and the stored copy agree, and the loss measured on the live page today is a loss on the live web. Where it does not, the mismatch predates today and cannot be called drift."
+  },
+  "standing_scope_exclusions": [
+    "No claim is made about why any document stopped answering. Nothing here can distinguish an ordinary expiry from a deliberate removal, and no such claim is made.",
+    "There is no control corpus of contemporaneous citations on other subjects, so nothing here says whether citations about AI harm decay faster or slower than citations in general.",
+    "Every live number is what one datacenter vantage saw on one day. Classes that record refusal to this vantage are reported separately and are never counted as removal.",
+    "Lexical overlap measures words, not meaning. A rewritten or translated page that says the same thing scores as loss, and that is a limit of the measure, not a finding."
+  ]
+}
