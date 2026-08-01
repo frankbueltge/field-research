@@ -128,7 +128,7 @@ overwhelmingly news journalism — the class the same study finds among the leas
 
 This work does not explain that gap and does not claim to. Three candidate explanations are
 compatible with everything measured here, and nothing here separates them: the register's citations
-skew to large publishers with durable URL schemes; a majority of the corpus is recent (2,546 of
+skew to large publishers with durable URL schemes; much of the corpus is recent (2,036 of
 6,602 sourced records were published in 2025 or 2026) and has not had time to rot; and the sampling
 unit is a citation the register's editors chose, not a link found in the wild. **The honest reading
 is that the number is real and its cause is not established.**
