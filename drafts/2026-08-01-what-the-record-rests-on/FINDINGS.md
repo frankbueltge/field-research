@@ -17,8 +17,16 @@ The interesting part is the other third, because it is not what a link-rot study
 | the document is **gone** — 404, 410, or the host no longer resolves | **2.7%** | [1.1 – 4.3] |
 | the document was **withheld from this vantage** — 401, 402, 403, 451 | **23.6%** | [16.7 – 30.5] |
 | the citation **redirected to the site root** (the soft-404 case) | 0.1% | [0.0 – 0.3] |
+| everything else that did not answer — 4xx and 5xx other than the above, timeouts, TLS and connection failures | **5.1%** | [2.0 – 8.2] |
 | the page answered and the stored passage is **no longer in it** | 2.0% of pages that served a document | [0.1 – 4.0] |
 | the page answered and **still holds** the stored passage | 95.2% of pages that served a document | [92.1 – 98.2] |
+
+The first four rows are the whole of what did not answer with a document: they sum to 31.5%, and
+the estimate for "did not answer 200" computed independently is 31.4% [24.1 – 38.8]. The 0.1-point
+gap is rounding of each row, not a missing class. That residual row — 19 of 260 records: six other
+4xx, six timeouts, three 5xx, two unclassified statuses, one TLS failure, one connection failure —
+was **missing from the first version of this table**, which printed only the named classes and left
+5 weighted points off the page. It was put back after a hostile reader added the rows up.
 
 **Almost none of the loss is decay. Most of it is access control.** Refusal outnumbers
 disappearance here by roughly nine to one, and the two are not the same fact about the world: a 403
@@ -122,11 +130,16 @@ existed in 2013 gone a decade later; 23% of news webpages carrying at least one 
 all Wikipedia reference links no longer accessible. Its rule is deliberately conservative — a page
 counts as dead only on error codes that definitively signal the page or host is gone.
 
-Measured by a comparable rule, **this register's citations are gone at 2.7%**, an order of magnitude
-below the general-web figure and well below the Wikipedia reference figure, for a corpus that is
-overwhelmingly news journalism — the class the same study finds among the least durable.
+Measured by a rule of comparable strictness, this register's citations are gone at 2.7%. That is
+far below the general-web and Wikipedia-reference figures above, for a corpus that is overwhelmingly
+news journalism — the class the same study finds among the least durable. **This sentence is
+orientation and not a result**, and it is written without emphasis on purpose: the populations, the
+sampling frames and the dead-rules differ, and a reader who carries "an order of magnitude better"
+away from here is carrying something this work did not measure. An earlier version of this paragraph
+put that comparison in bold as its climax while the paragraph above it disclaimed exactly that move.
+A hostile reader called it, and it was right to.
 
-This work does not explain that gap and does not claim to. Three candidate explanations are
+This work does not explain the gap and does not claim to. Three candidate explanations are
 compatible with everything measured here, and nothing here separates them: the register's citations
 skew to large publishers with durable URL schemes; much of the corpus is recent (2,036 of
 6,602 sourced records were published in 2025 or 2026) and has not had time to rot; and the sampling
@@ -155,6 +168,30 @@ Repeated from `METHOD.md` because it is the part most likely to be dropped in a 
 - **Not an editorial audit.** Nothing in HTTP status data supports a claim about the register's
   practices. The stored-copy field is, on its face, a mitigation this register built against exactly
   this problem — and the control layer above is what shows it works.
+
+## The instrument turned on its own authors, and it cannot see the defect they shipped
+
+Added after this work's Interlocutor observed that a measurement of somebody else's evidence base,
+made by a practice with two known holes in its own, had performed no reflexive turn at all. Two
+measurements, run with the same code path as everything above, on 2026-08-01:
+
+| what was probed | L1 | what layer 3 would do with it |
+|---|---|---|
+| a citation in one of this practice's own shipped works, `https://doi.org/10.3030/101135953` | **HTTP_404** | not applicable — it does not answer |
+| this practice's own repaired published page, `https://frankbueltge.de/field/werke/2026-07-01-calibration-gap/` | **HTTP_200**, 4,066 words extractable | comparable — it would be scored, and it would score as holding |
+
+The first is the plain one: **that identifier is still dead.** It was published for a claim about
+the EU AI Act on 2026-07-01, found dead by accident 27 days later, and it returns 404 today. This
+practice's own archive contributes to the 2.7% class it just measured in somebody else's.
+
+The second is the one worth the space. Two days ago this practice established that the same page
+served its entire visual argument in inline style attributes the site's policy silently discards —
+the words arrived, the drawing did not. **This instrument would have called that page healthy.** It
+answers 200, it yields 4,066 words, and every measurement in this document is a measurement of text.
+A page can pass all four layers here and still show a reader nothing.
+
+That is not a caveat added for modesty. It is a limit of the design, it is stated as one, and it is
+the strongest argument in this document for why a census of citations is not a census of evidence.
 
 ## The one sentence this work is for
 

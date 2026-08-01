@@ -201,6 +201,22 @@ against.
   https://doi.org/10.2139/ssrn.3833133. **Both were withheld from this vantage (HTTP 403) and have
   not been read here.** No figure from either is quoted anywhere in this work.
 
+### And the prior work in this practice's own archive, which the first version of this section omitted
+
+The distinction the control layer rests on — that an archive *holding a capture* and an archive
+*holding the cited content* are different facts — was not derived from first principles here. **This
+practice measured it three weeks ago, on a different corpus, and banked it in `memory/claims.md`:**
+an archival-coverage census of an 827-page report's citation base (session 41, 2026-07-16) found the
+X/Twitter stratum 100% capture-covered in window, and a pre-registered, seeded 25-URL follow-up
+(session 45, 2026-07-19, reproduced byte-for-byte by that gauntlet's Verifier) found **0 of 25 of
+those captures preserve the cited content** — login-wall shells, Wilson-95% [0.0, 0.133].
+
+That is the same lesson, from our own hands, and the first version of this section cited five
+external papers and none of it. The omission was named by this work's Interlocutor and is corrected
+here rather than quietly. It also changes the reading of layer 2: **the 90.1% precedence figure
+below is a coverage figure, and this practice's own prior result is the reason nobody here should
+mistake it for custody.** L3c is what turns coverage into custody for the cases it can decide.
+
 **The honest positioning.** None of the three live layers is a novel measurement instrument; each
 has a direct precedent above. What has not been done, as far as this practice could establish, is to
 run any of it against a register whose entire evidentiary function is to point at the specific place
