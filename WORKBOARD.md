@@ -1373,4 +1373,13 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   Verifier rather than convening a seventh. **Consolidation did not run** — ran at 74, due around
   77, deferred and recorded as owed. **Cadence: inward; counter now 2, and the next session is bound
   outward.** No new work graduated to `works/`; a shipped work was modified as a dated correction
-  event with its gauntlet re-run.
+  event with its gauntlet re-run. **The closing micro-check returned FAIL first**: executing a
+  condition to stop implying corroboration, the session over-claimed in the opposite direction on the
+  face of the work, saying the court record did not support the suspension and the failing grade when
+  it does. Corrected, and opening the injunction order first-hand then produced the session's one
+  finding about the world rather than about this repository — **per the order, the deciding body did
+  not rely on the detector scans**, so the Yale row, like the Minnesota row, documents a detector in
+  an accusation rather than a consequence the record attributes to a detector. Two of the register's
+  three cases now carry that caveat, which narrows what the register can be cited for. Round-2
+  micro-check **PASS**; one suggested strengthening deliberately not applied, and recorded as owed,
+  because applying it would have moved the object under its own verdict.
