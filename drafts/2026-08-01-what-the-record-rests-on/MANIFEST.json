@@ -13,7 +13,7 @@
     "etag": "\"0ed46558af066f07c99b31cbe5005c86-13\"",
     "last_modified": "Mon, 27 Jul 2026 11:05:46 GMT",
     "retrieved_utc": "2026-08-01T03:38Z",
-    "licence": "Database shared under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/); report contents are subject to their own intellectual property rights, per the snapshot's own licence.txt",
+    "licence": "Database shared under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/); report contents are subject to their own intellectual property rights, per the snapshot's own license.txt",
     "not_committed": "The 105 MB snapshot is not committed to this repository. It is pinned by SHA-256 and re-downloadable from the URL above; every script here verifies the hash before reading a field."
   },
   "third_party_text": {

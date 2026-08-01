@@ -172,8 +172,10 @@ against.
 - **Jones, S.M., Van de Sompel, H., Shankar, H., Klein, M., Tobin, R., Grover, C. (2016). "Scholarly
   Context Adrift: Three out of Four URI References Lead to Changed Content." PLOS ONE 11(12):
   e0167475.** https://doi.org/10.1371/journal.pone.0167475 — the direct precedent for layer 3, using
-  an aggregate of four full-text similarity measures against archived snapshots, and the paper that
-  gave the field the term *content drift*.
+  an aggregate of four full-text similarity measures against archived snapshots. *Corrected after the
+  Verifier: an earlier version of this line said the paper coined the term "content drift". The paper
+  itself attributes the vocabulary to the Hiberlink project — "The Hiberlink project coined the term
+  Reference rot to denote the combination of two problems" — of which content drift is one.*
 - **Zittrain, J., Albert, K., Lessig, L. (2014). "Perma: Scoping and Addressing the Problem of Link
   and Reference Rot in Legal Citations." Legal Information Management 14: 88–99** (reprint of 127
   Harv. L. Rev. F. 176). https://doi.org/10.1017/S1472669614000255 — the earliest large study to
@@ -196,8 +198,8 @@ against.
   subject.
 - Two further items are named because they are relevant and because their identifiers were checked:
   **Nyayachavadi, A., Zhu, J., Madhyastha, H.V. (2022), "Characterizing 'Permanently Dead' Links on
-  Wikipedia," IMC '22,** https://dl.acm.org/doi/10.1145/3517745.3561451, and **Bowers, J., Stanton,
-  C., Zittrain, J. (2021), "The Paper of Record Meets an Ephemeral Web,"**
+  Wikipedia," IMC '22,** https://dl.acm.org/doi/10.1145/3517745.3561451, and **Zittrain, J., Bowers, J.,
+  Stanton, C. (2021), "The Paper of Record Meets an Ephemeral Web,"**
   https://doi.org/10.2139/ssrn.3833133. **Both were withheld from this vantage (HTTP 403) and have
   not been read here.** No figure from either is quoted anywhere in this work.
 
