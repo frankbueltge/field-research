@@ -43,6 +43,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 import sys
 import tempfile
 
@@ -70,10 +71,8 @@ def astro_const(src, name):
 _ASTRO = open(os.path.join(HERE, 'work.astro'), encoding='utf-8').read()
 TRACK = astro_const(_ASTRO, 'TRACK')
 HAIRLINE = TRACK * 0.0015
-TRACK_X = astro_const(_ASTRO, 'TRACK_X')
-VALUE_X = astro_const(_ASTRO, 'VALUE_X')
 ROW_PITCH = astro_const(_ASTRO, 'ROW_PITCH')
-VIEWBOX_W = astro_const(_ASTRO, 'CHART_VIEWBOX_W')
+VIEWBOX_W = astro_const(_ASTRO, 'BAR_VIEWBOX_W')
 
 
 def bar_len(v, cap):
@@ -137,20 +136,15 @@ def tool_chart(tool, cap):
     ]
     if tool['nnes_fpr'] is not None:
         rows.append(('NNES*', tool['nnes_fpr'], 'cc-chart-bar--nnes', 'cc-val--nnes'))
-    laid = []
-    for i, (label, value, bar_cls, val_cls) in enumerate(rows):
-        laid.append({
-            'label': label, 'bar_cls': bar_cls, 'val_cls': val_cls,
-            'y': 4 + i * ROW_PITCH, 'label_y': 11 + i * ROW_PITCH,
-            'width': bar_len(value, cap), 'formatted': fmt(value),
-        })
-    height = 34 + (len(rows) - 2) * ROW_PITCH
+    laid = [{'label': lbl, 'bar_cls': bc, 'val_cls': vc,
+             'width': bar_len(v, cap), 'formatted': fmt(v)}
+            for lbl, v, bc, vc in rows]
     aria = ('%s: vendor specification %s, independent measurement %s'
             % (tool['name'], fmt(tool['claim_fpr']), fmt(tool['independent_fpr'])))
     if tool['nnes_fpr'] is not None:
         aria += ', NNES %s' % fmt(tool['nnes_fpr'])
     aria += ', false positive rate, scale 0 to %s percent' % cap
-    return laid, height, aria
+    return laid, aria
 
 
 def build_body(data):
@@ -158,26 +152,37 @@ def build_body(data):
 
     tools_html = []
     for tool in data['tools']:
-        rows, height, aria = tool_chart(tool, cap)
-        rows_svg = []
+        rows, aria = tool_chart(tool, cap)
+        rows_html = []
         for r in rows:
-            rows_svg.append(
-                '<g><text x="%s" y="%s" class="cc-chart-lbl">%s</text>'
-                '<rect x="%s" y="%s" width="%s" height="7" class="cc-chart-track"/>'
-                '<rect x="%s" y="%s" width="%.4f" height="7" class="cc-chart-bar %s"/>'
-                '<text x="%s" y="%s" class="cc-chart-val %s">%s</text></g>'
-                % (TRACK_X - 6, r['label_y'], esc(r['label']), TRACK_X, r['y'], TRACK,
-                   TRACK_X, r['y'], r['width'], r['bar_cls'],
-                   VALUE_X, r['label_y'], r['val_cls'], esc(r['formatted'])))
+            rows_html.append(
+                '<div class="cc-row"><span class="cc-row-lbl">%s</span>'
+                '<svg class="cc-row-bar" viewBox="0 0 %s %s" preserveAspectRatio="none" '
+                'aria-hidden="true" focusable="false">'
+                '<rect x="0" y="0" width="%s" height="%s" class="cc-chart-track"/>'
+                '<rect x="0" y="0" width="%.4f" height="%s" class="cc-chart-bar %s"/>'
+                '</svg><span class="cc-row-val %s">%s</span></div>'
+                % (esc(r['label']), VIEWBOX_W, ROW_PITCH, VIEWBOX_W, ROW_PITCH,
+                   r['width'], ROW_PITCH, r['bar_cls'], r['val_cls'], esc(r['formatted'])))
+        extras = ''
+        if tool.get('spec_flag'):
+            extras += '<div class="cc-specflag">%s</div>' % esc(tool['spec_flag'])
+        extras += ('<div class="cc-finding">%s</div>' % esc(tool['key_finding']))
+        extras += ('<details class="cc-method"><summary class="cc-method-tag">method, sources '
+                   'and what was corrected on this row</summary>'
+                   '<div class="cc-method-body">%s</div>' % esc(tool['confidence_note']))
+        if tool.get('claim_accuracy_status'):
+            extras += ('<div class="cc-method-body">%s</div>'
+                       % esc(tool['claim_accuracy_status']))
+        extras += '</details>' 
         tools_html.append(
             '<div class="cc-tool">'
             '<div class="cc-tool-head"><span class="cc-tool-name">%s</span>'
             '<span class="cc-tool-stats">spec: %s &middot; measured: %s</span></div>'
-            '<svg class="cc-chart" viewBox="0 0 %s %s" role="img" aria-label="%s">%s</svg>'
-            '<div class="cc-finding">%s</div>'
-            '</div>'
+            '<div class="cc-rows" role="group" aria-label="%s">%s</div>'
+            '%s</div>'
             % (esc(tool['name']), esc(fmt(tool['claim_fpr'])), esc(fmt(tool['independent_fpr'])),
-               VIEWBOX_W, height, esc(aria), ''.join(rows_svg), esc(tool['key_finding'])))
+               esc(aria), ''.join(rows_html), extras))
 
     cases_html = []
     for c in data['harm_cases']:
@@ -311,12 +316,17 @@ READBACK = """
       height: cs.height,
       borderTopWidth: cs.borderTopWidth,
       borderTopStyle: cs.borderTopStyle,
-      borderTopColor: cs.borderTopColor
+      borderTopColor: cs.borderTopColor,
+      fontSize: cs.fontSize,
+      boxWidth: el.getBoundingClientRect().width,
+      boxHeight: el.getBoundingClientRect().height
     };
   }
   document.getElementById('out').textContent = JSON.stringify({
+    viewport: window.innerWidth,
     container: readEl('.cc'),
     measured_bar: readEl('.cc-chart-bar--meas'),
+    row_label: readEl('.cc-row-lbl'),
     stamp: readEl('.cc-stamp')
   });
 })();
@@ -383,8 +393,44 @@ def main():
             dom = dump_dom(chrome, base + '/index.html')
             m = re.search(r'<pre id="out">(.*?)</pre>', dom, re.S)
             measured = json.loads(m.group(1)) if m and m.group(1) != 'not-run' else None
+
+            # NARROW-WIDTH CHECK. Row labels and values are HTML, not SVG text, precisely so
+            # that they do not shrink with the container. This measures that: the same page,
+            # rendered at three widths, must report the SAME computed font-size and the SAME
+            # label box height, while the bar's width changes and its height does not.
+            #
+            # HONEST LIMIT, tested rather than assumed: this runtime's headless browser
+            # clamps its layout viewport at 500px. Asking for 390 yields innerWidth 500, and
+            # a screenshot at 390 crops rather than reflows -- a control page whose media
+            # query flips the background colour below 480px stayed unflipped at both. So no
+            # measurement here reaches a true phone width, and none is claimed to. What is
+            # established is that text size is INDEPENDENT of width across the range that can
+            # be reached, which is the property that makes the phone width safe.
+            narrow = {}
+            for w in (1200, 900, 500):
+                d = subprocess.run(
+                    [chrome, '--headless=new', '--no-sandbox', '--disable-gpu',
+                     '--window-size=%d,900' % w, '--dump-dom', base + '/index.html'],
+                    capture_output=True, text=True, timeout=180).stdout
+                mm = re.search(r'<pre id="out">(.*?)</pre>', d, re.S)
+                if mm and mm.group(1) != 'not-run':
+                    r = json.loads(mm.group(1))
+                    narrow[str(w)] = {
+                        'viewport': r.get('viewport'),
+                        'label_font_size': (r.get('row_label') or {}).get('fontSize'),
+                        'label_box_height': (r.get('row_label') or {}).get('boxHeight'),
+                        'bar_box_width': (r.get('measured_bar') or {}).get('boxWidth'),
+                        'bar_box_height': (r.get('measured_bar') or {}).get('boxHeight'),
+                    }
+            fonts = {v['label_font_size'] for v in narrow.values()}
+            heights = {v['bar_box_height'] for v in narrow.values()}
+            widths = {v['bar_box_width'] for v in narrow.values()}
+            text_size_independent_of_width = len(fonts) == 1 and len(narrow) == 3
+            bar_height_constant = len(heights) == 1
+            bar_width_responsive = len(widths) == 3
+
             screenshot(chrome, base + '/index.html',
-                       os.path.join(evidence_dir, 'render.png'), size='900,1600')
+                       os.path.join(HERE, 'evidence', 'render.png'), size='1000,4400')
         finally:
             httpd.shutdown()
     finally:
@@ -406,6 +452,9 @@ def main():
             and stamp.get('borderTopWidth') == '3px'
             and stamp.get('borderTopColor') == 'rgb(192, 57, 43)'
         ),
+        'row_text_size_independent_of_width': text_size_independent_of_width,
+        'bar_height_constant_across_widths': bar_height_constant,
+        'bar_width_responsive_across_widths': bar_width_responsive,
     }
     overall = all(checks.values())
 
@@ -420,6 +469,14 @@ def main():
         'style_attrs_in_source': style_attrs_in_source,
         'style_attrs_in_specimen': style_attrs_in_specimen,
         'measured': measured,
+        'narrow_width': narrow,
+        'narrow_width_limit': (
+            "this runtime's headless browser clamps its layout viewport at 500px; a request "
+            "for 390 reports innerWidth 500 and a screenshot at 390 crops rather than "
+            "reflows (verified with a control page whose media query flips a colour below "
+            "480px, which stayed unflipped at both). No measurement here reaches a true "
+            "phone width, and none is claimed to."
+        ),
         'checks': checks,
         'overall_pass': overall,
         'specimen': 'evidence/specimen.html',

@@ -10,7 +10,7 @@ const CAP = data.fpr_scale_cap
 // scaled to user units instead of percent, reproduces the same proportions
 // -- this time as real rect geometry rather than an inline attribute the
 // site's policy would drop.
-const TRACK = 300
+const TRACK = 300 // bar length in SVG user units; equals BAR_VIEWBOX_W
 const HAIRLINE = TRACK * 0.0015
 
 function barLen(val: number | null): number {
@@ -27,30 +27,32 @@ const cases = data.harm_cases
 const sources = data.benchmark_sources
 const specs = data.specification_sources
 
-// Identifiers are rendered on the face from 2026-08-01. Until that date this work held ten
+// Identifiers are rendered on the face from 2026-08-01. Until that date this work held eight
 // identifiers in data.json and printed none of them: a reader on the published page could not
 // follow a single source. Measured first-hand on the served page, 2026-07-31 — zero occurrences
-// of doi.org, arxiv.org, aclanthology, or any cited news host.
+// of doi.org, arxiv.org, aclanthology, or any cited news host. (The count read 'ten' until an
+// independent Verifier enumerated the pre-repair file and found eight; corrected 2026-08-01.)
 function shortUrl(url: string | null): string {
   if (!url) return ''
   return url.replace(/^https?:\/\//, '').replace(/\/$/, '')
 }
 
-// Per-tool row layout for the SVG chart: 2 rows (spec, measured), or 3 when
-// an NNES figure is present. Mechanism verified in
-// drafts/2026-07-31-served-not-shown/: a component style block (hashed by
-// the site build, admitted by the policy) plus SVG presentation attributes
-// (fill=, width=, x=, y=) survive the site's style-src; an inline styling
-// attribute does not.
-// TRACK_X/VALUE_X give the row label ("measured", "NNES*") enough user-unit
-// width to sit fully left of the track without overlapping it: measured
-// directly in a real browser (evidence/render.png) after an earlier,
-// narrower draft (TRACK_X=42) let "measured" run past the SVG's own left
-// edge at this component's actual rendered width.
-const ROW_PITCH = 17
-const TRACK_X = 100
-const VALUE_X = 410
-const CHART_VIEWBOX_W = 480
+// Per-tool row layout. Mechanism verified in drafts/2026-07-31-served-not-shown/: a
+// component style block (hashed by the site build, admitted by the policy) plus SVG
+// presentation attributes (fill=, width=, x=, y=) survive the site's style-src; an inline
+// styling attribute does not.
+//
+// The row LABEL and the row VALUE are HTML, not SVG text, and that is deliberate. SVG text
+// is scaled by the viewBox-to-viewport factor exactly as the bars are, so inside a fluid
+// chart it shrinks with the container even though its CSS font-size never changes: a
+// Skeptic measured 19px at a 900px container and 10px at ~405px. The first fix attempted
+// here was a max-width media query raising the user-unit size; it could not be verified,
+// because this runtime's headless browser clamps its layout viewport at 500px and the
+// query never fires (tested, not assumed). So the dependency was removed instead of
+// patched: only the two rects live in the SVG, where scaling is what you want, and every
+// character on the row is HTML at a constant size at any width.
+const ROW_PITCH = 7
+const BAR_VIEWBOX_W = 300
 
 type Tool = (typeof tools)[number]
 
@@ -62,21 +64,22 @@ function toolChart(tool: Tool) {
   if (tool.nnes_fpr !== null) {
     rows.push({ label: 'NNES*', value: tool.nnes_fpr, barClass: 'cc-chart-bar--nnes', valClass: 'cc-val--nnes' })
   }
-  const laidOut = rows.map((r, i) => ({
+  return rows.map(r => ({
     label: r.label,
     barClass: r.barClass,
     valClass: r.valClass,
-    y: 4 + i * ROW_PITCH,
-    labelY: 11 + i * ROW_PITCH,
     width: barLen(r.value),
     formatted: fmt(r.value),
   }))
-  const height = 34 + (rows.length - 2) * ROW_PITCH
-  const ariaLabel =
-    `${tool.name}: vendor specification ${fmt(tool.claim_fpr)}, independent measurement ${fmt(tool.independent_fpr)}` +
-    (tool.nnes_fpr !== null ? `, NNES ${fmt(tool.nnes_fpr)}` : '') +
-    `, false positive rate, scale 0 to ${CAP} percent`
-  return { rows: laidOut, height, ariaLabel }
+}
+
+// Every figure on a row is also spoken as ordinary text, so the bars carry no meaning a
+// reader without them would lose. The group label states the comparison once.
+function toolAria(tool: Tool): string {
+  return `${tool.name}: vendor specification ${fmt(tool.claim_fpr)}, independent measurement `
+    + `${fmt(tool.independent_fpr)}`
+    + (tool.nnes_fpr !== null ? `, NNES ${fmt(tool.nnes_fpr)}` : '')
+    + `, false positive rate, scale 0 to ${CAP} percent`
 }
 ---
 
@@ -131,20 +134,35 @@ function toolChart(tool: Tool) {
             </span>
           </div>
 
-          <svg class="cc-chart" viewBox={`0 0 ${CHART_VIEWBOX_W} ${chart.height}`} role="img" aria-label={chart.ariaLabel}>
-            {chart.rows.map(r => (
-              <g>
-                <text x={TRACK_X - 6} y={r.labelY} class="cc-chart-lbl">{r.label}</text>
-                <rect x={TRACK_X} y={r.y} width={TRACK} height="7" class="cc-chart-track" />
-                <rect x={TRACK_X} y={r.y} width={r.width} height="7" class:list={['cc-chart-bar', r.barClass]} />
-                <text x={VALUE_X} y={r.labelY} class:list={['cc-chart-val', r.valClass]}>{r.formatted}</text>
-              </g>
+          <div class="cc-rows" role="group" aria-label={toolAria(tool)}>
+            {chart.map(r => (
+              <div class="cc-row">
+                <span class="cc-row-lbl">{r.label}</span>
+                <svg class="cc-row-bar" viewBox={`0 0 ${BAR_VIEWBOX_W} ${ROW_PITCH}`}
+                     preserveAspectRatio="none" aria-hidden="true" focusable="false">
+                  <rect x="0" y="0" width={BAR_VIEWBOX_W} height={ROW_PITCH} class="cc-chart-track" />
+                  <rect x="0" y="0" width={r.width} height={ROW_PITCH} class:list={['cc-chart-bar', r.barClass]} />
+                </svg>
+                <span class:list={['cc-row-val', r.valClass]}>{r.formatted}</span>
+              </div>
             ))}
-          </svg>
+          </div>
+
+          {'spec_flag' in tool && (
+            <div class="cc-specflag">{tool.spec_flag}</div>
+          )}
 
           <div class="cc-finding">
             {tool.key_finding}
           </div>
+
+          <details class="cc-method">
+            <summary class="cc-method-tag">method, sources and what was corrected on this row</summary>
+            <div class="cc-method-body">{tool.confidence_note}</div>
+            {'claim_accuracy_status' in tool && (
+              <div class="cc-method-body">{tool.claim_accuracy_status}</div>
+            )}
+          </details>
         </div>
       )
     })}
@@ -153,7 +171,7 @@ function toolChart(tool: Tool) {
       NNES = Non-Native English Speakers. No per-tool NNES false-positive rate survived the
       2026-07-03 re-verification; the cross-detector NNES evidence (61.22% seven-detector average,
       Liang et al., Cell Patterns 2023) is in the measurement sources below.
-      Confidence ratings vary — see data.json for per-tool methodology notes.
+      Confidence ratings vary; each tool's methodology note is printed under its own chart above.
     </div>
   </div>
 
@@ -295,30 +313,16 @@ function toolChart(tool: Tool) {
     </div>
 
     <div class="cc-note">
-      REPAIR (2026-08-01, session 77) — one act, seven parts, none of them silent. (1) THE PAGE DID NOT
-      DRAW. Every visual property of this work was carried in inline style attributes, which the site's
-      Content-Security-Policy discards without warning: from 2026-07-01 to 2026-08-01 the published page
-      served the words of this chart and instructed the browser not to draw it. The styling now lives in
-      a hashed component stylesheet and the bars are SVG geometry, both of which the policy admits.
-      (2) THE PAGE CARRIED NONE OF ITS OWN IDENTIFIERS. This work held ten source URLs in its data file
-      and printed none of them; measured on the served page 2026-07-31, it contained zero occurrences of
-      any cited domain. They are on the face from today. (3) THE SPECIFICATION SIDE WAS UNSOURCED — see
-      the block above; the GPTZero claim bar is a composite of two vendor documents whose own pairing is
-      99.3%/0.24%, and the Originality.ai 3% is a retired October-2024 model spec whose successors the
-      vendor had already published two weeks before this work shipped. Both are retained at the reference
-      date and disclosed, not restated. (4) Four externally-authored load-bearing sources — Ibrahim et
-      al., Perkins et al., Weber-Wulff et al., and the two vendor pages behind Turnitin's 4% — were cited
-      by name with no identifier since 2026-07-01/07-03 and now carry DOIs and URLs. (5) THREE CITATION
-      CORRECTIONS: the 39.5% → 22.2% endpoint is the paper's 22.14%; the 25.00%/11.11% over-detection
-      pair is Pratama's Table 6, not Table 4; the ZeroGPT 59% is the binary approach of Weber-Wulff's
-      Table 7, one of three computations that paper publishes for that tool (74% and 67% are the others).
-      (6) THE YALE ROW WAS STALE and rested on an article nobody here could read: the student newspaper
-      returns a bot checkpoint and the Internet Archive holds no capture of it at any date. The row now
-      rests on the federal docket and on the injunction order read first-hand, and states the case's
-      2026 posture. (7) A SEVENTH UNSOURCED FIGURE, found this session: the Turnitin claim_accuracy of 98
-      held in the data file has no source, is not drawn here, and the nearest vendor language traceable
-      today describes a 98% confidence threshold rather than an accuracy rate. It is marked in the data
-      file, not deleted. Full record: CORRECTIONS.md in this work's directory, and journal/2026-07-31.md.
+      REPAIR (2026-08-01, session 77): this work was checked against itself before being offered to a
+      reader outside this practice, and failed that check in seven ways — the published page did not
+      draw its chart at all under the site's security policy; it printed none of the source
+      identifiers it held; and the specification side of a calibration certificate was unsourced,
+      which on sourcing turned out to include one composite claim and one specification the vendor
+      had already retired. All seven are set out, with what each check does and does not establish,
+      in CORRECTIONS.md in this work's directory — a dated register, not an edit:
+      github.com/frankbueltge/field-research/blob/main/works/2026-07-01-calibration-gap/CORRECTIONS.md
+      No measurement changed. The deliberation, including the hostile review that struck down the
+      first version of this repair, is in journal/2026-07-31.md, session 77.
     </div>
 
     <div class="cc-footer-note">
@@ -441,29 +445,45 @@ function toolChart(tool: Tool) {
     color: #6b6b6b;
   }
 
-  .cc-chart {
-    width: 100%;
-    height: auto;
-    display: block;
+  .cc-rows {
     margin: 0.15rem 0;
   }
+
+  .cc-row {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.22rem;
+  }
+
+  .cc-row-lbl {
+    width: 5.5rem;
+    flex-shrink: 0;
+    text-align: right;
+    font-size: 0.6rem;
+    color: #5a5a5a;
+  }
+
+  .cc-row-bar {
+    flex: 1;
+    min-width: 0;
+    height: 7px;
+    display: block;
+  }
+
+  .cc-row-val {
+    width: 3.5rem;
+    flex-shrink: 0;
+    font-size: 0.6rem;
+  }
+
   .cc-chart-track { fill: #1e1e1e; }
   .cc-chart-bar--spec { fill: #555; }
   .cc-chart-bar--meas { fill: #c0392b; }
   .cc-chart-bar--nnes { fill: #7b1d1d; }
-  .cc-chart-lbl {
-    font-family: inherit;
-    font-size: 0.6rem;
-    fill: #5a5a5a;
-    text-anchor: end;
-  }
-  .cc-chart-val {
-    font-family: inherit;
-    font-size: 0.6rem;
-  }
-  .cc-val--spec { fill: #7a7a7a; }
-  .cc-val--meas { fill: #c0392b; }
-  .cc-val--nnes { fill: #9b2020; }
+  .cc-val--spec { color: #7a7a7a; }
+  .cc-val--meas { color: #c0392b; }
+  .cc-val--nnes { color: #9b2020; }
 
   .cc-finding {
     font-size: 0.62rem;
@@ -537,6 +557,35 @@ function toolChart(tool: Tool) {
   .cc-sources {
     border-top: 1px solid #2a2a2a;
     padding-top: 1.25rem;
+  }
+
+  .cc-specflag {
+    font-size: 0.6rem;
+    color: #8a6d3b;
+    line-height: 1.5;
+    margin-top: 0.3rem;
+    padding-left: 0.5rem;
+    border-left: 2px solid #8a6d3b;
+  }
+
+  .cc-method {
+    font-size: 0.58rem;
+    color: #4f4f4f;
+    line-height: 1.5;
+    margin-top: 0.35rem;
+    padding-left: 6.5rem;
+  }
+
+  .cc-method-tag {
+    color: #6b6b6b;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+  }
+
+  .cc-method-body {
+    margin-top: 0.3rem;
+    padding-left: 0.5rem;
+    border-left: 1px solid #2a2a2a;
   }
 
   .cc-case-access {
@@ -649,6 +698,9 @@ function toolChart(tool: Tool) {
 
   @media (max-width: 480px) {
     .cc { padding: 1.25rem 1rem; }
+    .cc-row-lbl { width: 4.25rem; }
+    .cc-method { padding-left: 0; }
+    .cc-finding { padding-left: 0; }
     .cc-tool-head { flex-direction: column; align-items: flex-start; gap: 0.15rem; }
     .cc-source-row { flex-direction: column; gap: 0.15rem; }
     .cc-source-name { min-width: 0; }
