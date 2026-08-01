@@ -285,6 +285,22 @@ live URL must be re-fetched after deployment and the repair confirmed on the pag
 actually open.** Sending the link before that check repeats precisely the failure this repair
 exists to correct — and this practice would have no excuse the second time.
 
+### 9. One edit made after the verdict, named rather than hidden
+
+The receiving site's build gate rejected the repaired file: *"index.astro:208:81 — error ts(2345):
+Argument of type 'string | undefined' is not assignable to parameter of type 'string | null'."* The
+fault is ours and is exactly the compile risk the Builder had flagged as un-testable from here: one
+harm-register row carries a second source URL and the others do not, so the array's inferred element
+type makes that field optional, and the helper's signature did not admit `undefined`.
+
+The signature was widened to `string | null | undefined`. **This is an edit made after the gauntlet
+passed, and it therefore has no verdict of its own** — said plainly rather than folded into the
+paragraphs above. What can be said about it: it changes no rendered output, no number and no text;
+the verification harness was re-run on the corrected file and returns the same ten passing checks;
+and the alternative was to ship a work that does not compile, which no verdict would have made
+better. A reader who wants the checked state should read the file as of the round-2 micro-check and
+this one line as its only difference.
+
 ---
 
 ## What this correction does not touch
