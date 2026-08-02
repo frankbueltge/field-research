@@ -114,7 +114,8 @@ def main() -> int:
     strata = {}
     for r in rows:
         st = strata.setdefault(r["stratum"], {"n": 0, "indeterminate": 0, "marked": 0,
-                                              "states": {}})
+                                              "states": {},
+                                              "in_decision_rule": r["in_decision_rule"]})
         st["n"] += 1
         st["states"][r["state"]] = st["states"].get(r["state"], 0) + 1
         if r["state"] == "indeterminate-at-capture":
@@ -122,6 +123,22 @@ def main() -> int:
         if r["state"] == "machine-readable-marked":
             st["marked"] += 1
     for name, st in strata.items():
+        # AMENDMENT, made after the capture and before scoring, and said so in
+        # CAPTURE-NOTES.md: the registry carries one group that is NOT one of the three
+        # pre-registered strata (`X-observation-only`). It is recorded and probed
+        # because what it shows is worth showing, but it supplies no numerator, no
+        # denominator and no interval to anything. The guard is structural — it turns on
+        # a flag written into the registry, not on any result — and it can only remove
+        # numbers from the record, never add them.
+        if not st["in_decision_rule"]:
+            st["effective_n"] = None
+            st["indeterminate_rate"] = None
+            st["capture_inconclusive"] = None
+            st["marked_proportion"] = None
+            st["wilson_95"] = None
+            st["directional_label"] = ("outside the pre-registered strata — observation "
+                                       "only, supplies no numerator to any label")
+            continue
         st["effective_n"] = st["n"] - st["indeterminate"]
         st["indeterminate_rate"] = round(st["indeterminate"] / st["n"], 4) if st["n"] else None
         st["capture_inconclusive"] = bool(st["n"] and st["indeterminate"] / st["n"] > 0.40)
