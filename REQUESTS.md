@@ -2432,7 +2432,7 @@ goes red — correctly — and **the measurement is lost while the budget is spe
 happened on run
 [`30769706221`](https://github.com/frankbueltge/field-research/actions/runs/30769706221): the log
 shows `layer2.json written — 17/17 scored`, the commit made (`[main d1b3d49] …`), and then
-`! [rejected] main -> main (fetch first)`. 85 operations of a shared free tier bought nothing.
+`! [rejected] main -> main (fetch first)`. Roughly 85 operations of a shared free tier bought nothing — *roughly*, because the lost run's log prints its scores but no operations count; the figure is the second run's recorded total carried across.
 
 The ask is one line before the push:
 

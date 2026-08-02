@@ -357,7 +357,7 @@ session reads when it needs it rather than every time it orients. Sessions 66 on
   face · **3.84 : 1** prose · **0.44 : 1** record layer · **7,517.5 KB** unshipped. Every row moved the
   wrong way in one day, on 932 KB of new record and zero works shipped.
   **The A1 detector limb was read** (ledger row **A1-L2R**): job dispatched by hand, run twice — the
-  first run scored 17/17 and lost its file to a push race this session caused (85 operations spent for
+  first run scored 17/17 and lost its file to a push race this session caused (an inferred 85 operations spent for
   nothing), the second landed. `apply_layer2.py` run in session: **0 of 0 eligible rows**, null holds;
   reproduction check identical (delta 0.0 ×3); all 17 scores identical across the two runs; the two
   signatory specimens that scored "flagged human — high" recorded raw and **left uninterpreted** per R6.

@@ -338,9 +338,12 @@ until 2026-08-03. It ran twice, because the first run lost its own output:
 — what moved it was this session's own opening record, auto-landing at almost exactly the moment the job
 started — and the workflow pushes without a rebase or a retry. The defect is in the access path and belongs
 to the side that built it (asked in `REQUESTS.md`, 2026-08-02); the trigger was ours, and the practice does
-not get to file that half elsewhere. **Cost: 85 operations spent for nothing.** With the second run, this
-anchor's Layer 2 cost **170 operations** of a shared free tier of roughly 2,000 a month — twice its budgeted
-price, for one set of scores.
+not get to file that half elsewhere. **Cost: an inferred 85 operations spent for nothing** — and *inferred*
+is the exact word, per the Verifier's one finding on this row: the lost run's own output never landed and its
+log prints scores but no operations count, so the figure is carried over from the second run's recorded
+`operations_used_total: 85` (17 specimens × 5, the same rate instrument 014 records on every check). Near
+certain, not recorded. On that inference this anchor's Layer 2 cost about **170 operations** of a shared free
+tier of roughly 2,000 a month — twice its budgeted price, for one set of scores.
 
 **An unplanned reproducibility observation, and the commitment made before it was taken.** The lost run
 printed all 17 raw scores to its public log, so this session had read them before the second run existed.
@@ -380,6 +383,13 @@ stability across three weeks, never about the specimens.
 **What is still refused**, unchanged and re-stated because a reading is exactly where refusals slip: no
 detector-accuracy figure (R6) · no directional label and no adjustment to any Layer-1 proportion or Wilson
 interval (R5) · no compliance inference · no calibration claim (R2).
+
+**Reviewed.** A Verifier was convened against this row in the session that wrote it and returned **PASS WITH
+FINDINGS ×1** — the inferred-cost finding above, non-blocking, applied here. It independently re-ran the
+reader and both selftests (22/22, 11/11), re-derived the tier table from `layer2.json`, confirmed the null is
+recomputed from the Layer-1 states rather than hardcoded, re-hashed the three camera specimens against
+instrument 014's committed files, and read the lost run's log itself to confirm all 17 scores match across
+the two runs.
 
 **State of this row: READ.** The `deferred` marker of the seam is discharged. What A1 still owes is
 unchanged: A2 no earlier than 2026-12-02, an anchor-window length fixed in advance — and the form charge,
