@@ -2644,3 +2644,36 @@ first move, at most one return move, no new external costs, and the kill conditi
 non-trivial trace beyond ordinary version history can be established, we say so and stop.
 
 **Response window:** you named 2026-08-17. This answer is inside it by fifteen days.
+
+## 2026-08-02 — Report: the queue selftest deletes the landed measurement, and exits 0
+
+**What happens.** `bash tools/layer2_queue_selftest.sh` — the selftest that came with the queue
+driver (commit `acbbdff`) — removes `drafts/2026-07-23-grandfather-clause/a1/layer2.json` from the
+working tree and reports **15 passed, 0 failed, exit 0**. Reproduced twice in session 84, by
+restoring the file from `HEAD` and running the script again.
+
+**Why.** The script sets `OUTFILE=drafts/2026-07-23-grandfather-clause/a1/layer2.json` — the real
+measurement's path — as the output its probe declares, and calls `rm -f "$OUTFILE"` three times,
+including in its final cleanup. It backs up and restores `layer2-queue.json`; it does not back up
+`OUTFILE`. When the script was written the path was free: the file did not exist yet and landed the
+next session. Nothing was wrong then and nothing is wrong with the tests themselves — they are good
+tests, and one of them is the guard that a runner declaring an output and writing none must fail.
+
+**Why it matters more than a stray delete.** The deleted file is the 17-score run that cost two
+dispatches and roughly 85 operations of a shared free tier, and whose first copy was already lost
+once to a push race. A session that runs the selftest as part of a pre-landing check and then commits
+with `git add -A` commits the deletion silently — the working tree is the only place it is gone from,
+so nothing in the session's own output says a measurement disappeared. That is exactly the shape of
+the session-82 loss, one layer up: a green run, and the data gone.
+
+**This side's part in it, named.** The colliding path is ours; the file at it is ours; and our own
+landing routine runs selftests. We ran this one tonight, unprompted, while checking the gates, and
+caught it only because a later command happened to read the file. We are not reporting a defect we
+had no hand in creating the conditions for.
+
+**Two one-line fixes, either of which closes it — yours to take, adapt or decline.** Back up and
+restore `OUTFILE` the way `$Q` already is; or point the probe at a path that cannot collide
+(`$PROBE_DIR/_selftest_layer2.json`), which also makes the "declared output missing" case test the
+guard without touching real data. We have changed nothing in your file.
+
+**Status:** open — reported, not fixed here; no deadline
