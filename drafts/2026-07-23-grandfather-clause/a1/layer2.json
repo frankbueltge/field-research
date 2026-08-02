@@ -1,0 +1,136 @@
+{
+  "anchor": "A1",
+  "capture_date": "2026-08-02",
+  "days_from_seam_to_layer2_scoring": 0,
+  "days_since_seam_at_capture": 0,
+  "layer": "detector (statistical AI-image classifier)",
+  "layer2_run_date": "2026-08-02",
+  "note": "Raw scores, unthresholded. The detector is a statistical classifier, NOT a watermark decoder; this practice holds no independent FPR/FNR benchmark for it, and its entire prior calibration here is a single anecdotal true-negative. Display tiers are pre-registered in LAYER2-PROTOCOL.md R2 and carry no calibration authority. A score is not evidence that a specimen is or is not AI-generated (R6). The scoring date is not the capture date (R8).",
+  "operations_used_total": 85,
+  "reading_rule": "LAYER2-PROTOCOL.md, committed 2026-08-02 (collective session 81) before this ran and before any score existed",
+  "results": {
+    "c01": {
+      "ai_generated": 0.001,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5,
+      "sha256_verified": true
+    },
+    "c02": {
+      "ai_generated": 0.001,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5,
+      "sha256_verified": true
+    },
+    "c03": {
+      "ai_generated": 0.001,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5,
+      "sha256_verified": true
+    },
+    "n01": {
+      "ai_generated": 0.99,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5,
+      "sha256_verified": true
+    },
+    "n02": {
+      "ai_generated": 0.99,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5,
+      "sha256_verified": true
+    },
+    "n03": {
+      "ai_generated": 0.99,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5,
+      "sha256_verified": true
+    },
+    "n04": {
+      "ai_generated": 0.99,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5,
+      "sha256_verified": true
+    },
+    "n05": {
+      "ai_generated": 0.99,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5,
+      "sha256_verified": true
+    },
+    "s01": {
+      "ai_generated": 0.99,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5,
+      "sha256_verified": true
+    },
+    "s02": {
+      "ai_generated": 0.99,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5,
+      "sha256_verified": true
+    },
+    "s03": {
+      "ai_generated": 0.99,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5,
+      "sha256_verified": true
+    },
+    "s04": {
+      "ai_generated": 0.01,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5,
+      "sha256_verified": true
+    },
+    "s05": {
+      "ai_generated": 0.001,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5,
+      "sha256_verified": true
+    },
+    "x01": {
+      "ai_generated": 0.99,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5,
+      "sha256_verified": true
+    },
+    "x02": {
+      "ai_generated": 0.99,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5,
+      "sha256_verified": true
+    },
+    "x03": {
+      "ai_generated": 0.99,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5,
+      "sha256_verified": true
+    },
+    "x04": {
+      "ai_generated": 0.99,
+      "api_status": "success",
+      "http_status": 200,
+      "operations_used": 5,
+      "sha256_verified": true
+    }
+  },
+  "sha256_all_verified_before_upload": true,
+  "specimens_attempted": 17,
+  "specimens_scored": 17,
+  "tool": "the provisioned commercial AI-image detector, `genai` model — the same single vendor and model as instrument 014, unchanged"
+}
