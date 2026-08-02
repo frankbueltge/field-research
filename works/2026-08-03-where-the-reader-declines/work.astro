@@ -18,6 +18,10 @@ type Relation = (typeof RELATIONS)[number]
 const cases = data.cases
 const inPop = cases.filter((c) => c.in_population)
 
+// The definitions come out of JSON as `{}`; name their shape once here rather
+// than casting at each use site.
+const defs = data.criteria.definitions as Record<Relation, string>
+
 // --- the confusion grid, counted here so the figure cannot drift from it ----
 const grid: Record<string, Record<string, number>> = {}
 for (const g of [...RELATIONS, 'undecidable']) {
@@ -73,7 +77,7 @@ const maxCell = Math.max(...Object.values(grid).flatMap((row) => Object.values(r
       {RELATIONS.map((r) => (
         <div>
           <dt data-rel={r}>{r}</dt>
-          <dd>{data.criteria.definitions[r]}</dd>
+          <dd>{defs[r]}</dd>
         </div>
       ))}
     </dl>
@@ -264,6 +268,15 @@ const maxCell = Math.max(...Object.values(grid).flatMap((row) => Object.values(r
       definition. Nothing here separates <em>applies a broad category literally</em> from
       <em>declines to commit</em>. What is measured is the distribution; the disposition is not
       established, and would need a third reader or an ablation on the category's width.
+    </p>
+    <p class="limits">
+      <strong>What is not independently checked.</strong> The split in §2 — which sources are in
+      the claim's population — is one person's reading. Every one of the sixty carries its
+      one-line reason, in both directions, so any single line can be disputed without
+      reconstructing the rest. But <em>disclosed</em> is not <em>verified</em>: no second reader
+      has made that judgement independently, and an earlier automated attempt at the same split
+      put the single <code>supports</code> case on the wrong side. This work ships with that hole
+      open and named.
     </p>
     <p class="limits">
       <strong>Which reader, and which field.</strong> The machine is not a representative
