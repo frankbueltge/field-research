@@ -258,19 +258,34 @@ that debt paid.
 
 **What was built.** A runner that re-computes all 17 committed sha256 hashes and **refuses to upload
 anything if one differs** — scoring happens on another day, on other hardware, from a checkout of `main`, so
-"the same bytes" is a claim to be checked. A reading rule, `a1/LAYER2-PROTOCOL.md`, committed before the job
-was queued and therefore before any score existed. A deterministic offline reader that applies it. Two
-selftests that run the rule and the runner's refusals **before the data they will handle exists**.
+"the same bytes" is a claim to be checked. A reading rule, `a1/LAYER2-PROTOCOL.md`, committed before any
+detector score existed. A deterministic offline reader that applies it. Two selftests that run the rule and
+the runner's refusals **before the data they will handle exists**.
+
+*The ordering claim is narrowed, per the Verifier: the rule, the four tools and the queue entry landed in
+**one commit**, `4fceebc`, so git shows where they sit in history, not that the rule was authored before the
+job was queued. What git does establish is that `a1/layer2.json` has never existed at any commit in this
+repository. This is the boundary the Skeptic drew against A1 on the seam — commit order proves where things
+landed, not what the author had seen — arriving a second time, one session later, from a different role.*
 
 **The null this row states before the data arrives, because it is a property of the capture and not of the
 data.** The pre-registration gives Layer 2 one analytically load-bearing state,
 **`unmarked-but-detector-flagged`** — no synthetic manifest present, yet the pixels score ≥0.90. The reading
-rule restricts it to Layer-1 state `unmarked-at-capture` and excludes `indeterminate-at-capture`, because the
-pre-registration excludes indeterminate rows from numerator and denominator precisely on the ground that a
-missing manifest there may be the host's doing. **A1 has zero `unmarked-at-capture` rows** (16 of 17 carry no
-manifest and every one of them is indeterminate; the seventeenth is `machine-readable-marked`). So **the
-state will be empty at A1 whatever the detector returns**, and the promised payload is unreachable at this
-anchor for reasons fixed on 2026-08-02, before this arm existed.
+rule restricts it to Layer-1 state `unmarked-at-capture` and excludes `indeterminate-at-capture`, because a
+missing manifest there may be the host's doing. **A1 has zero `unmarked-at-capture` rows** — its 17 rows
+divide as 13 `indeterminate-at-capture` · 2 `manifest-not-synthetic` · 1 `manifest-invalid` · 1
+`machine-readable-marked`, and the 13 that carry no manifest at all are every one of them indeterminate. So
+**the state will be empty at A1 whatever the detector returns**, and the promised payload is unreachable at
+this anchor for reasons fixed on 2026-08-02, before this arm existed.
+
+*Two things about that paragraph are corrections made in the same session, before any score existed, and they
+are stated rather than tidied away. Its arithmetic first read "16 of 17 carry no manifest … the seventeenth is
+`machine-readable-marked`" — **wrong by three specimens**, the camera-control rows carrying manifests that are
+simply not synthetic; found by the Interlocutor, confirmed by the Verifier, conclusion unaffected. And the
+restriction itself is an **extension** of the pre-registration, not a quotation from it: the locked text says
+"no synthetic manifest present (Layer 1 negative)", which on its face would include indeterminate rows. It is
+adopted anyway, in the direction of claiming less — and it is the choice that makes this arm's own payload
+null at this anchor.*
 
 **What the pass therefore delivers, at its real size:** the `deferred` marker is discharged — the second limb
 is *read* rather than *unread* — plus three further true-negative observations on the camera-capture control,

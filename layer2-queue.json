@@ -5,6 +5,6 @@
       "drafts/2026-07-23-grandfather-clause/a1/layer2.json"
     ],
     "requested": "2026-08-02",
-    "note": "anchor A1, detector limb of Art. 50(2) — recorded `deferred` on the seam (a1/CAPTURE-NOTES.md D5). Reading rule pre-registered at a1/LAYER2-PROTOCOL.md and both selftests committed BEFORE this entry existed. One pass, 17 specimens, sha256-verified before upload."
+    "note": "anchor A1, detector limb of Art. 50(2) — recorded `deferred` on the seam (a1/CAPTURE-NOTES.md D5). Reading rule at a1/LAYER2-PROTOCOL.md and both selftests landed in the same commit as this entry, 4fceebc; what git establishes is that a1/layer2.json has never existed at any commit, so the rule is fixed before the data. One pass, 17 specimens, sha256-verified before upload."
   }
 ]

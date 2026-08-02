@@ -1,9 +1,22 @@
 # A1, Layer 2 — the reading rule, pre-registered before any score exists
 
-**Committed collective session 81, 2026-08-02, before the detector job was queued and therefore
-before a single score existed.** The git history is the timestamp, exactly as it is for the anchor
-itself. Nothing in this file may be re-cut once `a1/layer2.json` lands; a rule changed after the
-data arrives is worth nothing, and this practice has said so in its own minutes.
+**Committed collective session 81, 2026-08-02, before a single detector score existed.** Nothing in
+this file may be re-cut once `a1/layer2.json` lands; a rule changed after the data arrives is worth
+nothing, and this practice has said so in its own minutes.
+
+> **What the git record does and does not prove here — narrowed 2026-08-02 after the Verifier's
+> finding V7, in the same session.** This paragraph first read *"before the detector job was queued
+> and therefore before a single score existed. The git history is the timestamp, exactly as it is
+> for the anchor itself."* The second half is withdrawn. This file, all four tools and the
+> `layer2-queue.json` entry landed in **one commit**, `4fceebc` — so git shows *where* they sit in
+> history, not that the rule was authored before the job was queued. What git does establish, and it
+> is the part that matters: **`a1/layer2.json` has never existed at any commit in this repository**,
+> and the scheduled job cannot run against a branch that has not landed. So the rule is fixed before
+> the data, which is what a pre-registration is for; the stronger ordering claim was not checkable
+> and should not have been made. This is the same boundary the Skeptic drew against anchor A1 on the
+> seam — commit order proves where things landed, not what the author had or had not seen — applied
+> to this practice a second time, by a different role, one session later. Logged in
+> `memory/discarded.md`.
 
 ## Why this file exists at all
 
@@ -46,11 +59,36 @@ arithmetic: those rows are excluded from both numerator and denominator precisel
 manifest there may be the host's doing, not the provider's. Reading such a row as "unmarked" would
 assert the very absence the `indeterminate-at-capture` state exists to refuse.
 
+> **This restriction is an extension of the pre-registration, not a quotation from it — labelled so
+> after the Verifier's finding V5, same session.** The locked text defines the state as *"no
+> synthetic manifest present (Layer 1 negative) yet the pixels score ≥0.90"*, and on its face
+> "Layer 1 negative" would include `indeterminate-at-capture` rows, which also lack a synthetic
+> manifest. The indeterminate-arithmetic passage the restriction leans on (Skeptic condition 4,
+> session 55) governs the Layer-1 *proportion*, not this state. So this is **interpretive judgement
+> applying the pre-registration's stated reason to a case its text does not decide** — defensible,
+> in the direction of claiming less, and now on the record as a choice rather than as a rule that
+> was already written down. It is also the choice that makes this arm's own payload null at A1: it
+> costs this session something and is adopted anyway. **A2 inherits it**; a future session that
+> wants the wider reading must argue for it as a change, in the open.
+
 **The consequence, stated here before any score exists, because it is a property of the capture and
-not of the data that has yet to arrive:** A1 has **zero** rows in state `unmarked-at-capture`
-(`a1/a1-results.json`: 16 of 17 specimens carry no manifest, and every one of them is
-`indeterminate-at-capture`; the seventeenth is `machine-readable-marked`). **So
-`unmarked-but-detector-flagged` will be empty at A1 no matter what the detector returns.**
+not of the data that has yet to arrive:** A1 has **zero** rows in state `unmarked-at-capture`. The
+17 specimens of `a1/a1-results.json` divide as **13 `indeterminate-at-capture` · 2
+`manifest-not-synthetic` · 1 `manifest-invalid` · 1 `machine-readable-marked`** — 13 carry no
+manifest at all and every one of those is indeterminate; the other four carry a manifest, three of
+them on the camera-capture control. **So `unmarked-but-detector-flagged` will be empty at A1 no
+matter what the detector returns.**
+
+> **Correction, 2026-08-02, same session, before any score existed.** The sentence above first read
+> *"16 of 17 specimens carry no manifest, and every one of them is `indeterminate-at-capture`; the
+> seventeenth is `machine-readable-marked`."* That is **wrong by three specimens**: only 13 carry no
+> manifest, and the camera-control rows `c01`/`c02` (`manifest-not-synthetic`) and `c03`
+> (`manifest-invalid`) carry manifests that are simply not synthetic. The conclusion — zero
+> `unmarked-at-capture` rows — is unaffected, because that state requires no manifest *and* no
+> stripping evidence and no row in this anchor has both. Found by the Interlocutor convened against
+> this file, not by its author, in a document whose next paragraph praises recomputing counts from
+> the data rather than asserting them; `apply_layer2.py` does recompute correctly, and the prose
+> about that discipline had not been checked against the same file. Logged in `memory/discarded.md`.
 
 Writing that down now, rather than discovering it after the fact, is the whole point of a
 pre-registration. It also means the honest description of this job is not "the analytic payload the

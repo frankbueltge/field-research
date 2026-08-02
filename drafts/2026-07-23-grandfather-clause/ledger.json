@@ -221,14 +221,14 @@
    "what_changed_and_it_was_not_on_this_side": "The detector credential exists only as a repository secret and a research session is not the kind of run that can see one (instrument 014, session 09; a1/CAPTURE-NOTES.md D5). Session 80 asked the team for a route; the answer was built the same day as a queue (tools/layer2_queue.py, .github/workflows/layer2-queue.yml, REQUESTS.md 2026-08-02) in which a session commits its specimens, its own runner and one entry, and a scheduled job runs that runner with the credential. The driver scores nothing. The arm itself stayed owed by this practice.",
    "what_was_built": {
     "runner": "a1/tools/run_layer2.py — inherits instrument 014's detector arm; re-computes all 17 committed sha256 hashes and refuses to upload anything if one differs",
-    "reading_rule": "a1/LAYER2-PROTOCOL.md — committed before the job was queued and therefore before any score existed",
+    "reading_rule": "a1/LAYER2-PROTOCOL.md — committed before any detector score existed. Narrowed the same session after Verifier V7: this file, the four tools and the queue entry landed in ONE commit (4fceebc), so git shows where they sit in history, not that the rule was authored before the job was queued. What git does establish is that a1/layer2.json has never existed at any commit.",
     "reader": "a1/tools/apply_layer2.py — deterministic, offline, run by a later session and not inside the credentialled job",
     "selftests": [
      "a1/tools/apply_layer2_selftest.py",
      "a1/tools/run_layer2_selftest.py"
     ]
    },
-   "pre_registered_null_stated_before_the_data": "The pre-registration's one analytically load-bearing Layer-2 state, unmarked-but-detector-flagged, is restricted by LAYER2-PROTOCOL.md R3 to Layer-1 state unmarked-at-capture and excludes indeterminate-at-capture, because the pre-registration excludes indeterminate rows from numerator and denominator on the ground that a missing manifest there may be the host's doing. A1 has ZERO unmarked-at-capture rows (16 of 17 carry no manifest and every one is indeterminate-at-capture; the seventeenth is machine-readable-marked). The state will therefore be empty at A1 whatever the detector returns. The promised payload is unreachable at this anchor for reasons fixed on 2026-08-02, before this arm existed.",
+   "pre_registered_null_stated_before_the_data": "The pre-registration's one analytically load-bearing Layer-2 state, unmarked-but-detector-flagged, is restricted by LAYER2-PROTOCOL.md R3 to Layer-1 state unmarked-at-capture and excludes indeterminate-at-capture. That restriction is an EXTENSION of the pre-registration, not a quotation from it (Verifier V5, this session): the locked text says 'no synthetic manifest present (Layer 1 negative)', which on its face would include indeterminate rows. It is adopted because a missing manifest there may be the host's doing, and it is the choice that makes this arm's payload null. A1's 17 rows divide as 13 indeterminate-at-capture, 2 manifest-not-synthetic, 1 manifest-invalid, 1 machine-readable-marked; 13 carry no manifest at all and every one of those is indeterminate. ZERO rows are unmarked-at-capture, so the state will be empty at A1 whatever the detector returns.",
    "what_the_pass_delivers": [
     "the `deferred` marker is discharged: the second limb of Art. 50(2) is read rather than unread",
     "three further true-negative observations on the camera-capture control (descriptive; no accuracy rate from three files)",
@@ -243,7 +243,12 @@
    ],
    "budget": "one pass, 17 checks, against a free tier of roughly 2,000 operations a month (014 dossier §4d). The queue driver removes a finished entry, so nothing is scored twice by that path.",
    "state": "QUEUED, NOT READ — layer2-queue.json carries one entry; the scheduled job runs daily. When a1/layer2.json lands, a later session runs a1/tools/apply_layer2.py and answers for what it says.",
-   "if_the_job_fails": "that is the access path's first real test, and it belongs to the side that built it — not to this ledger."
+   "if_the_job_fails": "that is the access path's first real test, and it belongs to the side that built it — not to this ledger.",
+   "corrections_made_the_same_session_before_any_score": [
+    "R3's supporting arithmetic first read '16 of 17 specimens carry no manifest ... the seventeenth is machine-readable-marked'. Wrong by three specimens: 13 carry no manifest; the camera-control rows c01/c02 (manifest-not-synthetic) and c03 (manifest-invalid) carry manifests that are not synthetic. The conclusion (zero unmarked-at-capture) is unaffected. Found by the Interlocutor, confirmed by the Verifier (V4).",
+    "The framing 'the git history is the timestamp' was withdrawn for this file (Verifier V7).",
+    "R3's exclusion is now labelled as interpretive extension rather than as following from the pre-registration (Verifier V5)."
+   ]
   }
  ],
  "pending_anchors": [

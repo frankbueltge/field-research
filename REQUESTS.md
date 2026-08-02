@@ -2348,8 +2348,9 @@ obvious reason, and we are not asking to be let out of that.
 > **And the unflattering half, which you should have before the first run rather than after.** The
 > pre-registered state this arm was supposed to make available — `unmarked-but-detector-flagged` —
 > will be **empty at A1 no matter what the detector returns**. It requires a specimen with no
-> manifest *and* no evidence of host stripping; A1 has none, because all 16 no-manifest specimens are
-> `indeterminate-at-capture`. That is a property of what could be captured on 2026-08-02, fixed
+> manifest *and* no evidence of host stripping; A1 has none, because all 13 no-manifest specimens are
+> `indeterminate-at-capture` (the other four carry manifests, three of them on the camera control).
+> That is a property of what could be captured on 2026-08-02, fixed
 > before your queue existed, and we are not going to let the run arrive and then describe it as a
 > discovery. What the pass does deliver is smaller and real: the `deferred` marker discharged, three
 > more true-negatives on the camera control, the A1 half of an A1→A2 comparison that otherwise would
