@@ -1,0 +1,404 @@
+---
+import data from './data.json';
+
+// Every number rendered below comes from data.json, which build_face.py writes
+// from the committed anchor files. Nothing here is hand-typed except prose, and
+// nothing here reads a clock: data.as_at is a committed constant.
+//
+// Layer-1 marking states and Layer-2 detector scores are kept structurally
+// apart on this page, and the builder refuses to emit a record carrying both.
+// The reason is in the detector section, in the open.
+
+const S = data.seams;
+const spine = data.spine;
+
+// --- the spine's geometry, computed here so no coordinate is typed by hand ---
+const day = (iso: string) => Math.floor(Date.parse(iso + 'T00:00:00Z') / 86400000);
+const x0 = day(spine[0].date);
+const x1 = day(S.grace_end);
+const W = 960, PAD = 54;
+const px = (iso: string) => PAD + ((day(iso) - x0) / (x1 - x0)) * (W - 2 * PAD);
+const AXIS_Y = 96;
+
+const strataLabel: Record<string, string> = {
+  'S-signatory': 'S — signatory',
+  'N-nonsignatory': 'N — non-signatory',
+  'C-camera-control': 'C — camera control',
+  'X-observation-only': 'X — observation only',
+};
+const shortName = (s: string) => strataLabel[s] ?? s;
+
+const pc = (v: number | null) => (v === null ? '—' : (v * 100).toFixed(0) + ' %');
+const ci = (v: number[] | null) =>
+  v === null ? '—' : '[' + (v[0] * 100).toFixed(1) + ', ' + (v[1] * 100).toFixed(1) + ']';
+
+const R = data.readings;
+const altBy: Record<string, any> = Object.fromEntries(R.post_hoc.rows.map((r: any) => [r.stratum, r]));
+const changed = data.state_changes;
+const det = data.detector;
+const bandsSeen = det.bands.filter((b: any) => b.count > 0);
+const inRule = data.specimens_layer1.filter((s: any) => s.in_decision_rule);
+const outOfRule = data.specimens_layer1.filter((s: any) => !s.in_decision_rule);
+---
+
+<div class="gc">
+  <p class="wall">
+    On 2 August 2026 a European law began requiring providers of generative systems to mark their
+    outputs so a machine can tell they were made by a machine. Systems already on the market have
+    until 2 December to comply, so an unmarked file here breaks nothing. This ledger reads what
+    providers ship across those dates. Seventeen files were frozen by hash on the first day and read
+    twice — once by the rule written down beforehand, once by the rule we now think correct. They
+    disagree. The first one counts.
+  </p>
+
+  <section class="spine-wrap">
+    <h2>The spine</h2>
+    <svg class="spine" viewBox={`0 0 ${W} 170`} role="img"
+         aria-label="Time axis from July to December 2026 carrying two legal dates and four ledger anchors; the last anchor is locked and cannot be taken yet.">
+      <defs>
+        <pattern id="gc-hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+          <line x1="0" y1="0" x2="0" y2="7" class="hatch-line" />
+        </pattern>
+      </defs>
+
+      <rect x={px(S.application)} y="34" width={px(S.grace_end) - px(S.application)} height="62"
+            fill="url(#gc-hatch)" class="grace" />
+      <text x={(px(S.application) + px(S.grace_end)) / 2} y="28" class="band-label" text-anchor="middle"
+        >an unmarked output in this window is consistent with full compliance</text>
+
+      <line x1={PAD} y1={AXIS_Y} x2={W - PAD} y2={AXIS_Y} class="axis" />
+      <line x1={px(S.application)} y1="34" x2={px(S.application)} y2="126" class="seam" />
+      <line x1={px(S.grace_end)} y1="34" x2={px(S.grace_end)} y2="126" class="seam" />
+
+      {spine.map((a: any) => (
+        <g>
+          {a.status === 'locked' ? (
+            <rect x={px(a.date) - 7} y={AXIS_Y - 7} width="14" height="14" class="anchor-locked" />
+          ) : (
+            <circle cx={px(a.date)} cy={AXIS_Y} r={a.status === 'context' ? 5 : 7}
+                    class={a.status === 'context' ? 'anchor-context' : 'anchor-filled'} />
+          )}
+          <text x={px(a.date)} y={AXIS_Y - 16}
+                class={a.status === 'context' ? 'anchor-name ghost' : 'anchor-name'}
+                text-anchor="middle">{a.anchor}</text>
+          <text x={px(a.date)} y={AXIS_Y + 26} class="anchor-date" text-anchor="middle">{a.date}</text>
+        </g>
+      ))}
+
+      <text x={px(S.application)} y="142" class="seam-label" text-anchor="middle">marking duty applies</text>
+      <text x={px(S.grace_end)} y="142" class="seam-label" text-anchor="end">grace expires</text>
+      <text x={px(S.grace_end)} y="158" class="seam-label" text-anchor="end"
+        >{data.days_to_a2_at_as_at} days after this page was built</text>
+    </svg>
+    <ul class="legend">
+      {spine.map((a: any) => (
+        <li><b>{a.anchor}</b> · {a.date} · <span class={'st-' + a.status}>{a.status}</span> — {a.label}</li>
+      ))}
+    </ul>
+  </section>
+
+  <section>
+    <h2>The same seventeen files, read twice</h2>
+    <p>
+      Rule <b>A1-S</b> was fixed in writing before any specimen was scored: a file arriving with no
+      XMP, no EXIF and no text chunk had been through a container rebuild, so its silence about
+      marking proved nothing — <span class="mono">indeterminate-at-capture</span>. Then one file
+      arrived over that same path carrying a valid manifest. The premise is false. The refuted rule
+      still governs this anchor, because it is the one that was locked; the corrected rule
+      <b> A1-S′</b> is recorded, dated, and carries no authority here.
+    </p>
+
+    <table class="two">
+      <caption>
+        Layer 1, the marking arm. The left block is the reading that counts. The right block is the
+        corrected rule, computed after its own data existed and shown at lower weight for that reason.
+      </caption>
+      <thead>
+        <tr>
+          <th rowspan="2">stratum</th><th rowspan="2">N</th>
+          <th colspan="4" class="gov-head">governing — A1-S</th>
+          <th colspan="4" class="alt-head">non-governing — A1-S′</th>
+        </tr>
+        <tr>
+          <th class="gov-head">eff. N</th><th class="gov-head">marked</th><th class="gov-head">rate</th><th class="gov-head">Wilson 95 %</th>
+          <th class="alt-head">eff. N</th><th class="alt-head">marked</th><th class="alt-head">rate</th><th class="alt-head">Wilson 95 %</th>
+        </tr>
+      </thead>
+      <tbody>
+        {R.governing.rows.map((r: any) => (
+          <tr>
+            <td class="lab">{shortName(r.stratum)}</td>
+            <td class="num">{r.n}</td>
+            <td class="num gov">{r.effective_n === null ? '—' : r.effective_n}</td>
+            <td class="num gov">{r.marked === null ? '—' : r.marked}</td>
+            <td class="num gov">{pc(r.marked_proportion)}</td>
+            <td class="num gov">{ci(r.wilson_95)}{r.capture_inconclusive ? <span class="flag"> capture-inconclusive</span> : null}</td>
+            {altBy[r.stratum] ? (
+              R.unchanged_strata.includes(r.stratum) ? (
+                <td class="alt same" colspan="4">unchanged — the corrected rule moves nothing here</td>
+              ) : (
+                <>
+                  <td class="num alt">{altBy[r.stratum].effective_n === null ? '—' : altBy[r.stratum].effective_n}</td>
+                  <td class="num alt">{altBy[r.stratum].marked}</td>
+                  <td class="num alt">{pc(altBy[r.stratum].marked_proportion)}</td>
+                  <td class="num alt">{ci(altBy[r.stratum].wilson_95)}</td>
+                </>
+              )
+            ) : (
+              <td class="alt none" colspan="4">no corrected reading — never in the decision rule</td>
+            )}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+
+    <p class="finding">
+      <b>One stratum of four moved: {R.moved_strata.map(shortName).join(', ')}.</b>
+      {' '}{R.unchanged_strata.map(shortName).join(' and ')} are identical under both rules — that
+      sameness is a result, not a gap — and {R.no_corrected_reading.map(shortName).join(', ')} was
+      never in the decision rule at all. Inside the stratum that moved,
+      {' '}<b>{changed.count} of {changed.of_total}</b> files change state
+      ({changed.ids.join(', ')}), every one of them
+      {changed.from_to.map((p: string[]) => <span class="mono"> {p[0]} → {p[1]}</span>)}.
+    </p>
+    <p>
+      No file's bytes changed and no measurement was repeated. What moved was the rule. Under the
+      locked rule that stratum is <i>capture-inconclusive</i> on a single usable file; under the
+      corrected rule it has five usable files. Both descriptions are of the same seventeen objects,
+      and the page publishes the weaker one as the answer.
+    </p>
+    <p class="caveat">
+      Neither block is a compliance rate and neither is evidence about any provider's conduct. The
+      right-hand block is shown so the cost of the left-hand one is legible — not so a reader can
+      prefer it. Five files in one stratum decide nothing about anything, which is why no direction
+      is claimed anywhere on this page.
+    </p>
+  </section>
+
+  <section>
+    <h2>What this instrument cannot say, and what keeps it from saying it</h2>
+    <table class="locked">
+      <thead><tr><th>the empty cell</th><th>the field it would fill</th><th>what keeps it empty</th><th>earliest</th></tr></thead>
+      <tbody>
+        {data.locked_cells.map((c: any) => (
+          <tr>
+            <td class="lab">{c.cell}</td>
+            <td>{c.would_say}</td>
+            <td>{c.kept_empty_by}</td>
+            <td class="num">
+              {c.earliest}
+              {c.days_away_at_as_at !== null ? <span class="days"> · {c.days_away_at_as_at} d</span> : null}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <p class="caveat">
+      Each row names a field, never a number and never a direction. Nothing in this table predicts
+      what the next anchor will hold.
+    </p>
+  </section>
+
+  <section>
+    <h2>Layer 2 — the detector arm, read under a rule fixed before any score existed</h2>
+    <p>
+      All {det.scored} of {det.attempted} specimens scored on {det.run_date}; the reading rule was
+      committed on {det.rule_committed}, before the arm ran. Hashes re-verified before upload:
+      {' '}{det.hashes_verified_before_upload ? 'yes' : 'no'}.
+    </p>
+    <p class="caveat gate">
+      <b>Why this section carries no file names.</b> {det.join_not_rendered} Two adjacent columns
+      would let any reader do by eye what the rule forbids the code to do, and a caption is not a
+      guard: the builder refuses to write a record holding a marking state and a detector score
+      together. One residue is stated rather than hidden — the three reproduction pairs below are
+      named, and those three files appear in the table above, so three of seventeen remain joinable
+      by hand.
+    </p>
+    <table class="bands">
+      <caption>Score bands, frozen by an earlier work and inherited unchanged. The raw floats are the record; the band is display.</caption>
+      <thead><tr><th>band</th><th>files</th></tr></thead>
+      <tbody>
+        {bandsSeen.map((b: any) => (
+          <tr><td class="mono">{b.band}</td><td class="num">{b.count}</td></tr>
+        ))}
+      </tbody>
+    </table>
+    <p class="scores mono">{det.scores_sorted_no_identity.join('  ')}</p>
+    <p class="caveat">All {det.scored} raw scores, ascending, carrying no identity.</p>
+
+    <p class="finding">
+      <b>{det.eligible_count} of {det.scored}</b> specimens were eligible for the one state this arm
+      exists to fill. The emptiness was written down before the arm ran, and the arm was run
+      anyway — which is what makes it a null instead of an excuse.
+    </p>
+    <p>
+      Three of the seventeen had been scored once before, weeks earlier, as the same bytes:
+      {det.reproduction.pairs.map((p: any) => (
+        <span class="mono"> {p.a1_id} {p.score_earlier}→{p.score_now} (Δ {p.delta})</span>
+      ))}. Byte-identity verified by hash, not assumed. A reproduction check on the reader, not new
+      evidence about the files.
+    </p>
+    <details>
+      <summary>What this arm refused to compute, and the inherited wording it declines to use</summary>
+      <ul>{det.refusals.map((r: string) => <li>{r}</li>)}</ul>
+      <p>
+        The bands above arrive from the earlier work under verdict-shaped names —
+        {det.bands.map((b: any) => <span class="mono"> {b.band} “{b.inherited_label}”</span>)}. Those
+        names assert something about a file. This page uses the numeric range instead and keeps the
+        original wording here, where it is disclosure rather than a label.
+      </p>
+    </details>
+  </section>
+
+  <section>
+    <h2>The seventeen</h2>
+    <table class="spec">
+      <caption>Marking states only. Detector scores are not in this table, by construction.</caption>
+      <thead>
+        <tr><th>id</th><th>provider</th><th>stratum</th><th>days from seam</th><th>state — governing</th><th>state — corrected</th><th>sha256</th></tr>
+      </thead>
+      <tbody>
+        {inRule.map((s: any) => (
+          <tr class={s.state_changed ? 'moved' : ''}>
+            <td class="mono">{s.id}</td>
+            <td>{s.provider}</td>
+            <td class="mono">{s.stratum.split('-')[0]}</td>
+            <td class="num mono">{s.days_since_seam}</td>
+            <td class="mono">{s.state_governing}</td>
+            <td class="mono">{s.state_changed ? s.state_post_hoc : '='}</td>
+            <td class="mono hash">{s.sha256_short}</td>
+          </tr>
+        ))}
+        <tr class="divider"><td colspan="7">
+          below the line: {outOfRule.length} files outside the decision rule — they supply no
+          numerator to anything, and the decision-rule N is {inRule.length}, not {data.specimens_layer1.length}
+        </td></tr>
+        {outOfRule.map((s: any) => (
+          <tr class="out">
+            <td class="mono">{s.id}</td>
+            <td>{s.provider}</td>
+            <td class="mono">{s.stratum.split('-')[0]}</td>
+            <td class="num mono">{s.days_since_seam}</td>
+            <td class="mono">{s.state_governing}</td>
+            <td class="mono">{s.state_changed ? s.state_post_hoc : '='}</td>
+            <td class="mono hash">{s.sha256_short}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <p class="caveat">
+      A row marked <span class="mono">=</span> did not move between the readings. Providers are named
+      because every claim here is about a file this ledger holds by hash — never about a company's
+      conduct, and never about compliance.
+    </p>
+  </section>
+
+  <footer class="prov">
+    <p>
+      <b>{data.work}</b> · anchor {data.anchor}, captured {data.anchor_date},
+      {' '}{data.days_since_seam_at_capture} days from the seam · pre-registered {data.pre_registered} ·
+      built from committed files as at {data.as_at}, {data.determinism}. The load-bearing comparison
+      of this ledger is A1 → A2 and cannot be made before {S.grace_end}.
+      <b> Not a compliance audit. No row states or implies a compliance rate.</b>
+    </p>
+    <p class="inputs">
+      Built from:{data.inputs.map((i: any) => <span class="mono"> {i.file} {i.sha256.slice(0, 12)}</span>)}
+    </p>
+  </footer>
+</div>
+
+<style>
+  .gc {
+    --ink: #1c1a17;
+    --paper: #f6f3ec;
+    --rule: #c6c0b0;
+    --gov: #23323b;
+    --alt: #8a7a5e;
+    --dim: #6b6558;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 1.6rem;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  .gc h2 {
+    font-size: 1.02rem;
+    font-weight: normal;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 0.3rem;
+    margin: 2.4rem 0 0.9rem;
+  }
+  .gc .wall { font-size: 1.12rem; line-height: 1.62; margin: 0 0 1.4rem; max-width: 40em; }
+  .gc p { max-width: 46em; }
+
+  .gc .spine { width: 100%; height: auto; display: block; }
+  .gc .axis { stroke: var(--ink); stroke-width: 1.2; }
+  .gc .seam { stroke: var(--ink); stroke-width: 1; stroke-dasharray: 3 3; }
+  .gc .hatch-line { stroke: var(--rule); stroke-width: 1; }
+  .gc .grace { stroke: none; }
+  .gc .anchor-filled { fill: var(--ink); }
+  .gc .anchor-context { fill: none; stroke: var(--dim); stroke-width: 1.1; stroke-dasharray: 2 2; }
+  .gc .anchor-locked { fill: var(--paper); stroke: var(--ink); stroke-width: 1.4; stroke-dasharray: 2 2; }
+  .gc .anchor-name, .gc .anchor-date, .gc .seam-label, .gc .band-label {
+    font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+    fill: var(--ink);
+  }
+  .gc .anchor-name { font-size: 13px; }
+  .gc .anchor-name.ghost { fill: var(--dim); font-size: 11px; }
+  .gc .anchor-date, .gc .seam-label { font-size: 10px; fill: var(--dim); }
+  .gc .band-label { font-size: 10.5px; fill: var(--dim); }
+
+  .gc .legend { list-style: none; padding: 0; margin: 0.4rem 0 0; font-size: 0.86rem; color: var(--dim); }
+  .gc .st-locked { letter-spacing: 0.06em; }
+
+  .gc table {
+    border-collapse: collapse;
+    font-size: 0.84rem;
+    margin: 0.8rem 0 0.6rem;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .gc caption { text-align: left; font-size: 0.82rem; color: var(--dim); padding-bottom: 0.4rem; white-space: normal; max-width: 46em; }
+  .gc th, .gc td { border-bottom: 1px solid var(--rule); padding: 0.32rem 0.55rem; text-align: left; vertical-align: top; }
+  .gc th { font-weight: normal; font-size: 0.76rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--dim); }
+  .gc .gov-head { color: var(--gov); border-bottom: 2px solid var(--gov); }
+  .gc .alt-head { color: var(--alt); border-bottom: 1px solid var(--alt); font-size: 0.7rem; }
+  .gc td.gov { color: var(--gov); }
+  .gc td.alt { color: var(--alt); font-size: 0.78rem; }
+  .gc td.same, .gc td.none { font-style: italic; white-space: normal; }
+  .gc .num { text-align: right; font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace; }
+  .gc .lab { font-weight: bold; }
+  .gc .flag { font-family: Georgia, serif; font-style: italic; font-size: 0.78rem; }
+  .gc .mono { font-family: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace; font-size: 0.92em; }
+  .gc .hash { color: var(--dim); }
+  .gc tr.moved td { background: #ece3d1; }
+  .gc tr.out td { color: var(--dim); }
+  .gc tr.divider td { white-space: normal; font-style: italic; color: var(--dim); border-top: 2px solid var(--ink); font-size: 0.78rem; }
+
+  .gc table.locked td, .gc table.locked th { white-space: normal; }
+  .gc table.locked { display: table; width: 100%; }
+  .gc table.locked td:nth-child(2), .gc table.locked td:nth-child(3) { font-size: 0.82rem; }
+  .gc table.bands { display: table; width: auto; min-width: 16rem; }
+  .gc .days { color: var(--ink); }
+
+  .gc .finding { border-left: 3px solid var(--ink); padding-left: 0.9rem; margin: 1rem 0; }
+  .gc .caveat { font-size: 0.85rem; color: var(--dim); }
+  .gc .caveat.gate { border-left: 1px solid var(--rule); padding-left: 0.9rem; }
+  .gc .scores { font-size: 0.8rem; overflow-x: auto; white-space: nowrap; max-width: 100%; }
+  .gc details { font-size: 0.85rem; margin: 0.6rem 0; max-width: 46em; }
+  .gc summary { cursor: pointer; color: var(--dim); }
+
+  .gc .prov { border-top: 1px solid var(--rule); margin-top: 2.2rem; padding-top: 0.8rem; font-size: 0.82rem; color: var(--dim); }
+  .gc .prov .inputs { font-size: 0.75rem; }
+
+  @media (max-width: 640px) {
+    .gc { padding: 1rem; font-size: 15px; }
+    .gc table.locked { display: block; overflow-x: auto; }
+  }
+</style>

@@ -1,0 +1,563 @@
+{
+ "anchor": "A1",
+ "anchor_date": "2026-08-02",
+ "as_at": "2026-08-02",
+ "built_by": "build_face.py",
+ "days_since_seam_at_capture": 0,
+ "days_to_a2_at_as_at": 122,
+ "detector": {
+  "attempted": 17,
+  "bands": [
+   {
+    "band": "0.90 – 1.00",
+    "count": 12,
+    "inherited_label": "flagged AI — high"
+   },
+   {
+    "band": "0.50 – 0.90",
+    "count": 0,
+    "inherited_label": "AI-leaning"
+   },
+   {
+    "band": "0.10 – 0.50",
+    "count": 0,
+    "inherited_label": "human-leaning"
+   },
+   {
+    "band": "0.00 – 0.10",
+    "count": 5,
+    "inherited_label": "flagged human — high"
+   }
+  ],
+  "eligible_count": 0,
+  "hashes_verified_before_upload": true,
+  "join_not_rendered": "The per-specimen join of marking state and detector score exists in a1/a1-layer2-reading.json, committed and public. It is deliberately not rendered on this face: two adjacent columns are a division a reader performs by eye, and R6 forbids this arm to compute one.",
+  "refusals": [
+   "No detector-accuracy figure is computed (R6): the S/N specimens' generated character is the provider's claim about its own gallery page, not verified provenance.",
+   "No directional label is assigned and no Layer-1 proportion or Wilson interval is adjusted (R5): the load-bearing comparison remains A1 -> A2 on Layer 1.",
+   "No compliance inference (README, 'What this is NOT'): in-market systems held grace until 2026-12-02 and pre-seam outputs never needed retroactive marking.",
+   "The detector carries no calibration authority (R2, instrument 014's standing caveat); tiers are display, the raw floats are the record."
+  ],
+  "reproduction": {
+   "all_reproduced": true,
+   "pairs": [
+    {
+     "a1_id": "c01",
+     "delta": 0.0,
+     "earlier_id": "c08",
+     "identical": true,
+     "score_earlier": 0.001,
+     "score_now": 0.001
+    },
+    {
+     "a1_id": "c02",
+     "delta": 0.0,
+     "earlier_id": "c09",
+     "identical": true,
+     "score_earlier": 0.001,
+     "score_now": 0.001
+    },
+    {
+     "a1_id": "c03",
+     "delta": 0.0,
+     "earlier_id": "c10",
+     "identical": true,
+     "score_earlier": 0.001,
+     "score_now": 0.001
+    }
+   ],
+   "what_this_is": "same bytes, same vendor and model, scored again weeks later — a reproduction check on the detector, not new evidence about the specimens. Byte-identity verified here by sha256, not assumed."
+  },
+  "rule_committed": "2026-08-02 (collective session 81)",
+  "run_date": "2026-08-02",
+  "scored": 17,
+  "scores_sorted_no_identity": [
+   0.001,
+   0.001,
+   0.001,
+   0.001,
+   0.01,
+   0.99,
+   0.99,
+   0.99,
+   0.99,
+   0.99,
+   0.99,
+   0.99,
+   0.99,
+   0.99,
+   0.99,
+   0.99,
+   0.99
+  ]
+ },
+ "determinism": "no clock is read; AS_AT is a committed constant",
+ "inputs": [
+  {
+   "file": "a1-alt-reading.json",
+   "sha256": "5143d1987a983cb709dd9e28f168e6dc25daa2763d172bac19318247398a61f0"
+  },
+  {
+   "file": "a1-layer2-reading.json",
+   "sha256": "8bc820fd7ced7ac9a575a558461d35112b77f61a742c6bbdeec99e0e3b497ec6"
+  },
+  {
+   "file": "a1-results.json",
+   "sha256": "4773a479f21a680230c992e6c469343dc1216e8a90399cb57b1de86cdb8add55"
+  },
+  {
+   "file": "ledger.json",
+   "sha256": "ad69634f824573d39b42f59764f17fd0efa8128659eed806be5968a3b97639e2"
+  }
+ ],
+ "locked_cells": [
+  {
+   "cell": "directional label for S-signatory and N-nonsignatory",
+   "days_away_at_as_at": 122,
+   "earliest": "2026-12-02",
+   "kept_empty_by": "the pre-registered load-bearing pair is A1 → A2 and the CI-overlap gate; a single anchor carries no direction. Both strata are also capture-inconclusive under the governing rule.",
+   "would_say": "one of the values fixed in advance: adoption-shift · reversal · null — not distinguishable from sampling noise"
+  },
+  {
+   "cell": "led-the-timeline for S-signatory",
+   "days_away_at_as_at": null,
+   "earliest": "not at this anchor",
+   "kept_empty_by": "a capture-inconclusive stratum is forced into no directional label by the rule locked on 2026-07-23",
+   "would_say": "the A1-only descriptive label led-the-timeline"
+  },
+  {
+   "cell": "unmarked-but-detector-flagged",
+   "days_away_at_as_at": 122,
+   "earliest": "A2, if any specimen there is unmarked-at-capture",
+   "kept_empty_by": "0 of 17 specimens are eligible: the state requires a specimen in unmarked-at-capture under the GOVERNING reading, and the governing reading has none. The emptiness was written down before the detector ran.",
+   "would_say": "the count of specimens in the pre-registered state unmarked-but-detector-flagged — the statute's second limb, read independently of the provider's marking"
+  },
+  {
+   "cell": "marked proportion for N-nonsignatory",
+   "days_away_at_as_at": 122,
+   "earliest": "A2, on a capture path with a positive control",
+   "kept_empty_by": "effective N = 0. All five arrived over a path not shown to preserve manifests, so all five are indeterminate-at-capture and excluded from numerator and denominator alike.",
+   "would_say": "the field marked-proportion, with its Wilson interval, for this stratum"
+  },
+  {
+   "cell": "any compliance reading, at any anchor in this window",
+   "days_away_at_as_at": null,
+   "earliest": "never, for this window",
+   "kept_empty_by": "in-market systems hold grace until 2026-12-02 and pre-seam outputs never need retroactive marking, so an unmarked output in this window is consistent with full compliance",
+   "would_say": "no field exists for it — the cell is unavailable, not merely empty"
+  }
+ ],
+ "pre_registered": "2026-07-23 (collective session 55)",
+ "readings": {
+  "governing": {
+   "rows": [
+    {
+     "capture_inconclusive": true,
+     "effective_n": 1,
+     "indeterminate": 4,
+     "marked": 1,
+     "marked_proportion": 1.0,
+     "n": 5,
+     "reproduced_by_this_script": true,
+     "stratum": "S-signatory",
+     "wilson_95": [
+      0.2065,
+      1.0
+     ]
+    },
+    {
+     "capture_inconclusive": true,
+     "effective_n": 0,
+     "indeterminate": 5,
+     "marked": 0,
+     "marked_proportion": null,
+     "n": 5,
+     "reproduced_by_this_script": true,
+     "stratum": "N-nonsignatory",
+     "wilson_95": null
+    },
+    {
+     "capture_inconclusive": false,
+     "effective_n": 3,
+     "indeterminate": 0,
+     "marked": 0,
+     "marked_proportion": 0.0,
+     "n": 3,
+     "reproduced_by_this_script": true,
+     "stratum": "C-camera-control",
+     "wilson_95": [
+      0.0,
+      0.5615
+     ]
+    },
+    {
+     "capture_inconclusive": null,
+     "effective_n": null,
+     "indeterminate": 4,
+     "marked": 0,
+     "marked_proportion": null,
+     "n": 4,
+     "reproduced_by_this_script": false,
+     "stratum": "X-observation-only",
+     "wilson_95": null
+    }
+   ],
+   "rule": "A1-S — fixed in writing before any specimen was scored",
+   "status": "GOVERNING"
+  },
+  "moved_strata": [
+   "S-signatory"
+  ],
+  "no_corrected_reading": [
+   "X-observation-only"
+  ],
+  "post_hoc": {
+   "governing_reading": "a1-results.json (Rule A1-S)",
+   "non_stripping_paths": [
+    "cdn.sanity.io/images",
+    "github.com/c2pa-org"
+   ],
+   "rows": [
+    {
+     "capture_inconclusive": false,
+     "effective_n": 5,
+     "indeterminate": 0,
+     "marked": 1,
+     "marked_proportion": 0.2,
+     "n": 5,
+     "reproduced_by_this_script": true,
+     "stratum": "S-signatory",
+     "wilson_95": [
+      0.0362,
+      0.6245
+     ]
+    },
+    {
+     "capture_inconclusive": true,
+     "effective_n": 0,
+     "indeterminate": 5,
+     "marked": 0,
+     "marked_proportion": null,
+     "n": 5,
+     "reproduced_by_this_script": true,
+     "stratum": "N-nonsignatory",
+     "wilson_95": null
+    },
+    {
+     "capture_inconclusive": false,
+     "effective_n": 3,
+     "indeterminate": 0,
+     "marked": 0,
+     "marked_proportion": 0.0,
+     "n": 3,
+     "reproduced_by_this_script": true,
+     "stratum": "C-camera-control",
+     "wilson_95": [
+      0.0,
+      0.5615
+     ]
+    }
+   ],
+   "rule": "POST-HOC, NON-GOVERNING — Rule A1-S′",
+   "status": "NON-GOVERNING"
+  },
+  "unchanged_strata": [
+   "C-camera-control",
+   "N-nonsignatory"
+  ]
+ },
+ "seams": {
+  "application": "2026-08-02",
+  "grace_end": "2026-12-02"
+ },
+ "specimens_layer1": [
+  {
+   "days_since_seam": 0,
+   "id": "s01",
+   "in_decision_rule": true,
+   "path_shown_non_stripping": true,
+   "provider": "Black Forest Labs",
+   "sha256": "b33c232bab92e2aeb8a870715831ccbf71114b40cd59de46df5059f8e24eea68",
+   "sha256_short": "b33c232bab92",
+   "source_type_short": "curated-source",
+   "state_changed": true,
+   "state_governing": "indeterminate-at-capture",
+   "state_post_hoc": "unmarked-at-capture",
+   "stratum": "S-signatory"
+  },
+  {
+   "days_since_seam": 0,
+   "id": "s02",
+   "in_decision_rule": true,
+   "path_shown_non_stripping": true,
+   "provider": "Black Forest Labs",
+   "sha256": "c112244ff54c37cf26a8dc6970507fbd013d9eb213107c70fdd3f579d6552abb",
+   "sha256_short": "c112244ff54c",
+   "source_type_short": "curated-source",
+   "state_changed": true,
+   "state_governing": "indeterminate-at-capture",
+   "state_post_hoc": "unmarked-at-capture",
+   "stratum": "S-signatory"
+  },
+  {
+   "days_since_seam": 0,
+   "id": "s03",
+   "in_decision_rule": true,
+   "path_shown_non_stripping": true,
+   "provider": "Black Forest Labs",
+   "sha256": "4bfb43a31cde2ce838928dc7fbddc95a95ae2d95a4aa128177dcef136490b412",
+   "sha256_short": "4bfb43a31cde",
+   "source_type_short": "curated-source",
+   "state_changed": true,
+   "state_governing": "indeterminate-at-capture",
+   "state_post_hoc": "unmarked-at-capture",
+   "stratum": "S-signatory"
+  },
+  {
+   "days_since_seam": 0,
+   "id": "s04",
+   "in_decision_rule": true,
+   "path_shown_non_stripping": true,
+   "provider": "Black Forest Labs",
+   "sha256": "e6e069a7a1e8882590e4ef1e02c4d787f0861fc5de9a9c1acd487a9d45319cf3",
+   "sha256_short": "e6e069a7a1e8",
+   "source_type_short": "curated-source",
+   "state_changed": false,
+   "state_governing": "machine-readable-marked",
+   "state_post_hoc": "machine-readable-marked",
+   "stratum": "S-signatory"
+  },
+  {
+   "days_since_seam": 0,
+   "id": "s05",
+   "in_decision_rule": true,
+   "path_shown_non_stripping": true,
+   "provider": "Black Forest Labs",
+   "sha256": "69d033cb171682662f66525d4e06a785be2c30882e9f087e32f2505d6713faae",
+   "sha256_short": "69d033cb1716",
+   "source_type_short": "curated-source",
+   "state_changed": true,
+   "state_governing": "indeterminate-at-capture",
+   "state_post_hoc": "unmarked-at-capture",
+   "stratum": "S-signatory"
+  },
+  {
+   "days_since_seam": 0,
+   "id": "n01",
+   "in_decision_rule": true,
+   "path_shown_non_stripping": false,
+   "provider": "Stability AI",
+   "sha256": "1a16756fc319fd4b775c456fb4e2ce2809097a639d6760abbdf082d13085c0b4",
+   "sha256_short": "1a16756fc319",
+   "source_type_short": "curated-source",
+   "state_changed": false,
+   "state_governing": "indeterminate-at-capture",
+   "state_post_hoc": "indeterminate-at-capture",
+   "stratum": "N-nonsignatory"
+  },
+  {
+   "days_since_seam": 0,
+   "id": "n02",
+   "in_decision_rule": true,
+   "path_shown_non_stripping": false,
+   "provider": "Stability AI",
+   "sha256": "a220d30b053d20cbe146a08fea8b4336bf281fcddd4bbb916fc29e80f981048b",
+   "sha256_short": "a220d30b053d",
+   "source_type_short": "curated-source",
+   "state_changed": false,
+   "state_governing": "indeterminate-at-capture",
+   "state_post_hoc": "indeterminate-at-capture",
+   "stratum": "N-nonsignatory"
+  },
+  {
+   "days_since_seam": 0,
+   "id": "n03",
+   "in_decision_rule": true,
+   "path_shown_non_stripping": false,
+   "provider": "Stability AI",
+   "sha256": "1ceaaaf6306fb3f2fa2baf7dce621b63d34ceec6f7656aa37873b95e6319206e",
+   "sha256_short": "1ceaaaf6306f",
+   "source_type_short": "curated-source",
+   "state_changed": false,
+   "state_governing": "indeterminate-at-capture",
+   "state_post_hoc": "indeterminate-at-capture",
+   "stratum": "N-nonsignatory"
+  },
+  {
+   "days_since_seam": 0,
+   "id": "n04",
+   "in_decision_rule": true,
+   "path_shown_non_stripping": false,
+   "provider": "Stability AI",
+   "sha256": "34ca2d3e760725bccfb07c033e1fa2afac9b2168d1e973224a8274514865741c",
+   "sha256_short": "34ca2d3e7607",
+   "source_type_short": "curated-source",
+   "state_changed": false,
+   "state_governing": "indeterminate-at-capture",
+   "state_post_hoc": "indeterminate-at-capture",
+   "stratum": "N-nonsignatory"
+  },
+  {
+   "days_since_seam": 0,
+   "id": "n05",
+   "in_decision_rule": true,
+   "path_shown_non_stripping": false,
+   "provider": "Stability AI",
+   "sha256": "1531b7e3cce1d92e0284772f389cfcc6656ff53b8e7d2aac93917e3bba8cc440",
+   "sha256_short": "1531b7e3cce1",
+   "source_type_short": "curated-source",
+   "state_changed": false,
+   "state_governing": "indeterminate-at-capture",
+   "state_post_hoc": "indeterminate-at-capture",
+   "stratum": "N-nonsignatory"
+  },
+  {
+   "days_since_seam": 0,
+   "id": "c01",
+   "in_decision_rule": true,
+   "path_shown_non_stripping": true,
+   "provider": "Truepic (Lens SDK hardware capture)",
+   "sha256": "379aabc7d04ee8c8fb04e18925428463353ab6fb6696ee3d7aa11710c6b2e147",
+   "sha256_short": "379aabc7d04e",
+   "source_type_short": "inherited-014-control",
+   "state_changed": false,
+   "state_governing": "manifest-not-synthetic",
+   "state_post_hoc": "manifest-not-synthetic",
+   "stratum": "C-camera-control"
+  },
+  {
+   "days_since_seam": 0,
+   "id": "c02",
+   "in_decision_rule": true,
+   "path_shown_non_stripping": true,
+   "provider": "Truepic (Lens SDK hardware capture)",
+   "sha256": "e9a7d020de9edb1c13602f5e1a42fdb67e6ea1728d7f7d88a316cd2e3ce989c9",
+   "sha256_short": "e9a7d020de9e",
+   "source_type_short": "inherited-014-control",
+   "state_changed": false,
+   "state_governing": "manifest-not-synthetic",
+   "state_post_hoc": "manifest-not-synthetic",
+   "stratum": "C-camera-control"
+  },
+  {
+   "days_since_seam": 0,
+   "id": "c03",
+   "in_decision_rule": true,
+   "path_shown_non_stripping": true,
+   "provider": "Nikon (camera capture)",
+   "sha256": "721e75362ccc4ff943f5140ebc89897aa501d056cfb0dc7a6aeb68382e412cc5",
+   "sha256_short": "721e75362ccc",
+   "source_type_short": "inherited-014-control",
+   "state_changed": false,
+   "state_governing": "manifest-invalid",
+   "state_post_hoc": "manifest-invalid",
+   "stratum": "C-camera-control"
+  },
+  {
+   "days_since_seam": 0,
+   "id": "x01",
+   "in_decision_rule": false,
+   "path_shown_non_stripping": false,
+   "provider": "Google",
+   "sha256": "108478f283a820eace20da368717383c88fe8f65fdd4d27f299847d19afd76a5",
+   "sha256_short": "108478f283a8",
+   "source_type_short": "curated-source",
+   "state_changed": false,
+   "state_governing": "indeterminate-at-capture",
+   "state_post_hoc": "indeterminate-at-capture",
+   "stratum": "X-observation-only"
+  },
+  {
+   "days_since_seam": 0,
+   "id": "x02",
+   "in_decision_rule": false,
+   "path_shown_non_stripping": false,
+   "provider": "Google",
+   "sha256": "13a7b4d47841c911d644275dc23d391beb43f8b549c16904d2382e5ea8c82550",
+   "sha256_short": "13a7b4d47841",
+   "source_type_short": "curated-source",
+   "state_changed": false,
+   "state_governing": "indeterminate-at-capture",
+   "state_post_hoc": "indeterminate-at-capture",
+   "stratum": "X-observation-only"
+  },
+  {
+   "days_since_seam": 0,
+   "id": "x03",
+   "in_decision_rule": false,
+   "path_shown_non_stripping": false,
+   "provider": "Google",
+   "sha256": "06b3e7292d7c773bf69905ea8846a0eb6e0209280d2d862c1e7004132625f9ea",
+   "sha256_short": "06b3e7292d7c",
+   "source_type_short": "curated-source",
+   "state_changed": false,
+   "state_governing": "indeterminate-at-capture",
+   "state_post_hoc": "indeterminate-at-capture",
+   "stratum": "X-observation-only"
+  },
+  {
+   "days_since_seam": 0,
+   "id": "x04",
+   "in_decision_rule": false,
+   "path_shown_non_stripping": false,
+   "provider": "Google",
+   "sha256": "d812e7679bd176ccd16abd8e5980af16924448ce23315fe8bc4fe759a695df62",
+   "sha256_short": "d812e7679bd1",
+   "source_type_short": "curated-source",
+   "state_changed": false,
+   "state_governing": "indeterminate-at-capture",
+   "state_post_hoc": "indeterminate-at-capture",
+   "stratum": "X-observation-only"
+  }
+ ],
+ "spine": [
+  {
+   "anchor": "A0",
+   "date": "2026-07-11",
+   "days_from_application_seam": -22,
+   "label": "inherited registry, excluded from the decision rule",
+   "status": "context"
+  },
+  {
+   "anchor": "A-inst",
+   "date": "2026-07-23",
+   "days_from_application_seam": -10,
+   "label": "institutional baseline, captured before the seam",
+   "status": "filled"
+  },
+  {
+   "anchor": "A1",
+   "date": "2026-08-02",
+   "days_from_application_seam": 0,
+   "label": "fresh capture, taken on the seam itself",
+   "status": "filled"
+  },
+  {
+   "anchor": "A2",
+   "date": "2026-12-02",
+   "days_from_application_seam": 122,
+   "label": "first session on or after the grace expiry — not yet takeable",
+   "status": "locked"
+  }
+ ],
+ "state_changes": {
+  "count": 4,
+  "from_to": [
+   [
+    "indeterminate-at-capture",
+    "unmarked-at-capture"
+   ]
+  ],
+  "ids": [
+   "s01",
+   "s02",
+   "s03",
+   "s05"
+  ],
+  "of_total": 17
+ },
+ "unchecked_strata": [
+  "X-observation-only"
+ ],
+ "work": "The Grandfather Clause"
+}
