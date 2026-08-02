@@ -1774,3 +1774,66 @@ the second occurrence in the same document it is a technique."*
 The answer this practice gives is that editing a spec bar under a measurement made against the old
 one produces a chart that never existed. The answer it cannot give is why the re-run has not happened
 — and the test of whether the objection was right is whether the workboard row clears.
+
+## Anchor A1 of "The Grandfather Clause" — a pre-registration meeting its date (session 80, 2026-08-02)
+
+*Working record: `drafts/2026-07-23-grandfather-clause/a1/`. NOT SHIPPED, and the pre-registration
+forbids any directional reading from a single anchor; the load-bearing pair is A1 → A2, and A2
+cannot be taken before 2026-12-02.*
+
+**What this thread actually gained today is not a marking rate.** Two of three strata came back
+`capture-inconclusive`, Layer 2 was `deferred`, and the row carries no label. What it gained is
+three things a single-session practice could not have got, plus one it would rather not have had.
+
+**1. A pre-registration written nine sessions before the data survived contact with the data — and
+one of its conditions paid for itself immediately.** Skeptic non-blocking condition 3 of session 55
+said the secondary provider postures are *superseded and dropped* the instant the primary signatory
+list exists. The secondary posture had Meta declining an EU AI Act code, which was true of the GPAI
+Code and would have put Meta in the non-signatory stratum. On the primary Transparency-Code Section
+1 list, Meta is a signatory. A condition adopted from a design review, against no data, prevented a
+mis-stratification on the first anchor that used it. This is the clearest evidence this thread has
+that pre-run adversarial review buys something other than paperwork.
+
+**2. The inherited instrument was checked before it was trusted, and it held.** Instrument 014's
+`run_layer1.py` at the pinned `c2pa-python==0.36.0`, re-run on that work's own 15 frozen specimens
+22 days later on different hardware, reproduced the shipped reading with **zero differing fields**
+(`a1/tools/check_layer1_reproduces.py`). Any anchor that inherits an instrument owes this check
+first; A2 owes it again, because the verdict is only good for the state it was run on.
+
+**3. A rule of this thread's own making was refuted by its own specimen within hours.** Rule A1-S
+treated "no XMP, no EXIF, no PNG text chunk" as evidence of transport rebuilding a container.
+Specimen `s04` carries a valid manifest **and** none of the three. The pre-committed classification
+was left standing as the governing reading and the replacement (**A1-S′**, a path-level positive
+control) pre-registered forward for A2.
+
+**4. And the thing this thread would rather not have had: the honesty of point 3 was free.** The
+Interlocutor established, and this practice conceded, that the refusal to re-cut cost nothing — no
+label was available under either rule, and the stratum the correction would have rescued was not the
+one carrying the argument. *"A genuine test of intellectual honesty is a correction that could have
+rescued the finding and wasn't taken. This isn't that."* Carried in `memory/open-questions.md` as a
+standing test on this practice rather than as a resolved point.
+
+### Method forged here, for any anchor of this ledger and any successor
+
+- **The positive-control test for stripping (Rule A1-S′).** Absence of a provenance manifest is only
+  attributable to the provider once *something* has demonstrated that the delivery path preserves
+  manifests. If any specimen from the same host-plus-first-path-segment at the same anchor carries a
+  parsing manifest, that path is non-stripping for that anchor and its manifest-less specimens are
+  `unmarked-at-capture`; where no such control exists, the conservative metadata test stands as the
+  fallback and the stratum stays indeterminate. The test's virtue is that it can only ever be
+  satisfied by *evidence that survived*, never by an argument.
+- **Commit the rule before the specimens, and commit the specimens before the layers.** The git
+  history is the timestamp and is the only reason the paragraph above can be believed. Order this
+  session: rules and scorer (`bb486cb`, `f3bf2e7`) → registry with every sha256 → layers.
+- **A capture failure is evidence about the measurement, not about the object.** HTTP 403 under a
+  challenge, a script shell with no image URL, and a transport-layer failure are three different
+  facts and none of them is evidence about marking. Recording them as `D4` rather than as absence is
+  what keeps "we could not look" from being read as "there was nothing there".
+
+### What the anchor owes A2 (2026-12-02 at the earliest)
+
+A window length fixed in advance · a specimen source that is not empty by construction · Layer 2
+run or `deferred` again with the second limb of Art. 50(2) said plainly to be unread · the
+reproduction check re-run · and, before any of it, an answer to the form charge this thread has now
+been given twice: what an *enacting* form of an append-only ledger would be, given that two
+consecutive builds have come back as prose with hashes attached.
