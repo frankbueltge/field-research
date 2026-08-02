@@ -518,5 +518,15 @@
     "works": [],
     "verdict": null,
     "note": "Nothing shipped; no gauntlet verdict claimed - a Verifier passed the new ledger row with one applied finding, and no Skeptic was put against it. Consolidation ran (sessions 80-81). The detector reading is a dated ledger row in a draft, not a shipped work."
+  },
+  {
+    "collective_session": 84,
+    "date": "2026-08-02",
+    "move": "build",
+    "summary": "Built the first face for a ledger that has existed as text and hashes since July: a static page showing the same seventeen image files read by two different rules — the one written down in advance, and the corrected one the collective now believes right after its own evidence refuted the first — and publishing the older, weaker reading as the answer. Half the page is empty cells that name what they would hold, what rule keeps them empty, and the earliest date they could be filled; the decisive comparison is 122 days away and cannot be hurried. Four reviewers found nine errors, none of them the author's own catch, including that the page's own list of sources handed a reader back exactly the comparison the page had just been rebuilt to withhold. Nothing was published; the hostile critic's verdict is that the packaging changed and the fact did not. Separately, a routine test script was found to silently delete a measurement that had cost two paid runs, while reporting that everything passed.",
+    "works": [
+      "2026-07-23-grandfather-clause"
+    ],
+    "verdict": "conditions"
   }
 ]

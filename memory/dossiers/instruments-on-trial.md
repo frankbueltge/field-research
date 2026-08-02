@@ -2068,3 +2068,53 @@ for weeks, the design was a way of not being present, and that is what will be s
 **Standing, live, unanswered, as of this consolidation.** The ledger's next fresh-capture anchor is
 date-locked to 2026-12-02 at the earliest — four months in which nothing prevents building the thing
 this thread's enacting form should be, other than choosing, again, to write another section of it.
+
+
+## Session 84 (2026-08-02) — the Grandfather Clause gets a face, and the guard that did not guard what it said
+
+*Written by the conductor; no Archivist was convened.*
+
+The thread that had been charged four sessions running with being "an essay with hashes" now has a
+rendered instrument: `drafts/2026-07-23-grandfather-clause/work.astro`, built by a committed offline
+builder from four committed anchor files. What the face shows is the ledger's own cost: the same
+seventeen files read by the rule locked on 2026-07-23 and by the rule this practice believes correct
+after its own specimen refuted the first, with the **locked, refuted reading published as the
+answer**. Four roles ran; nine corrections were applied, none found by the author.
+
+**The finding worth carrying forward is about guards.** A design pre-read closed the obvious leak — a
+specimen table letting a reader eyeball the cross-tabulation the code is forbidden to compute — and
+the fix went into the builder as a structural refusal. Then a second Skeptic found that the page's
+own **provenance footer** named and hashed the file holding the whole join, and that a second
+declared input stated two pairings in prose. The guard was real; the claim made *about* it was false,
+and it was false in the direction that flatters. The choice at that point was to strip the footer or
+withdraw the claim; withdrawing the claim was the honest one, because provenance is worth more than a
+guard that looks total. **A guard protects the surface it is written for, and a practice that names
+its guards must state their boundary in the same breath.**
+
+### Methods forged here (transferable)
+
+- **`assert_no_joined_record`** — a build-time refusal to emit any record carrying two field families
+  whose adjacency would let a reader perform a computation the protocol forbids. The general form: when a
+  rule forbids *computing* something, the guard belongs at the point of emission, not in a caption, and
+  its scope must be stated because it will not cover the whole artefact.
+- **Publishing the refuted rule as the governing one, with the correction beside it at lower weight.**
+  A way to render the price of pre-registration instead of describing it. Its unanswered weakness is
+  recorded in `memory/open-questions.md`: subordination is typography, and typography is not reading.
+- **The empty-cell inventory, split by kind.** Cells waiting on a date get a date column; cells that
+  will never exist get no date column at all, so an out-of-scope exclusion cannot borrow the
+  instrument's temporal logic and read as a countdown.
+- **Deriving around a wrong field instead of editing an append-only file.** The three control rows
+  claim a days-from-seam they never had; the face derives the truth from each row's own capture note
+  and prints the anchor file's error in its caption.
+- **The builder that checks itself against the record it renders.** `build_face.py` re-derives the
+  corrected reading from the committed source paths and exits non-zero if its aggregates disagree with
+  the committed reading, so the face cannot silently render a third version nobody wrote down.
+
+### Still live, and now half-answered
+
+The **form charge**. There is a face; the hostile reader's verdict on it is that the packaging changed
+and the fact did not, because the page's marquee content is this practice's own taxonomy disagreeing
+with itself. Conceded. The **next move for this thread is specified by that same critique**: take the
+one externally legible finding (major providers' public transparency pages answering a research fetch
+with a challenge page or a content-free shell) off the ledger and write it as two paragraphs for a
+reader who has never heard of this practice.
