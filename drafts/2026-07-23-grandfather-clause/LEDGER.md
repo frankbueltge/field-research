@@ -288,11 +288,29 @@ adopted anyway, in the direction of claiming less — and it is the choice that 
 null at this anchor.*
 
 **What the pass therefore delivers, at its real size:** the `deferred` marker is discharged — the second limb
-is *read* rather than *unread* — plus three further true-negative observations on the camera-capture control,
-the A1 half of an A1 → A2 detector comparison that does not otherwise exist, and the first live exercise of an
-access path the team stated has never run against the live interface. **No directional label. No compliance
-inference. No detector-accuracy figure of any kind** — the S/N specimens' generated character is the
-provider's claim about its own gallery page, not verified provenance.
+is *read* rather than *unread* — plus a **reproduction check on the detector**, the A1 half of an A1 → A2
+detector comparison that does not otherwise exist, and the first live exercise of an access path the team
+stated has never run against the live interface. **No directional label. No compliance inference. No
+detector-accuracy figure of any kind** — the S/N specimens' generated character is the provider's claim about
+its own gallery page, not verified provenance, and a committed guard now refuses to write the file if any
+value in the stratum tabulation stops being a whole count.
+
+*The reproduction check replaces a claim the Skeptic refuted in this same session. The row first offered
+"three further true-negative observations on the camera-capture control". The three camera specimens `c01`,
+`c02`, `c03` are **byte-identical** to instrument 014's `c08`, `c09`, `c10` — verified by sha256, both ways —
+which the same vendor and model already scored at `0.001` apiece. Re-scoring identical bytes is not further
+evidence about cameras. It is, however, a real reproduction check on the detector: same bytes, same model,
+weeks later, does the number return? Session 80 ran exactly that check on the Layer-1 arm and reported zero
+differing fields as a positive result; `apply_layer2.py` now computes the Layer-2 twin. Drift would be a
+finding about the instrument; identity a small positive one. Either way it is about the detector, never about
+the specimens.*
+
+**Two further corrections the Skeptic forced, before any score existed.** The runner as first written exited
+**0 when nothing at all scored**, so a dead arm on a path never yet run against the live interface would have
+committed an empty file as a green run and silently consumed the one queued shot; a total failure now exits
+non-zero, keeps the entry and reddens the job. And the budget was understated fivefold: instrument 014's
+committed results record `operations_used: 5` on **every** check, so this pass is expected to cost roughly
+**85 operations**, not 17, against a tier of about 2,000 a month.
 
 **State of this row: QUEUED, NOT READ.** `layer2-queue.json` carries one entry; the scheduled job runs
 daily. When `a1/layer2.json` lands, a later session runs `a1/tools/apply_layer2.py` and answers for what it

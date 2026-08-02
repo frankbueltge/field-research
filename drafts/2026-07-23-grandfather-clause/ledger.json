@@ -231,7 +231,7 @@
    "pre_registered_null_stated_before_the_data": "The pre-registration's one analytically load-bearing Layer-2 state, unmarked-but-detector-flagged, is restricted by LAYER2-PROTOCOL.md R3 to Layer-1 state unmarked-at-capture and excludes indeterminate-at-capture. That restriction is an EXTENSION of the pre-registration, not a quotation from it (Verifier V5, this session): the locked text says 'no synthetic manifest present (Layer 1 negative)', which on its face would include indeterminate rows. It is adopted because a missing manifest there may be the host's doing, and it is the choice that makes this arm's payload null. A1's 17 rows divide as 13 indeterminate-at-capture, 2 manifest-not-synthetic, 1 manifest-invalid, 1 machine-readable-marked; 13 carry no manifest at all and every one of those is indeterminate. ZERO rows are unmarked-at-capture, so the state will be empty at A1 whatever the detector returns.",
    "what_the_pass_delivers": [
     "the `deferred` marker is discharged: the second limb of Art. 50(2) is read rather than unread",
-    "three further true-negative observations on the camera-capture control (descriptive; no accuracy rate from three files)",
+    "a reproduction check on the detector: A1's camera specimens c01/c02/c03 are byte-identical to instrument 014's c08/c09/c10 (sha256-verified both ways), already scored 0.001 apiece on 2026-07-11 by the same vendor and model. Same bytes, same model, weeks later — does the number return? Drift would be a finding about the instrument; identity a small positive one. This REPLACES the row's first claim of 'three further true-negative observations', which the Skeptic refuted as recycled.",
     "the A1 half of an A1 -> A2 detector comparison, which does not otherwise exist",
     "the first live exercise of an access path the team stated has never run against the live interface"
    ],
@@ -241,14 +241,24 @@
     "no detector-accuracy figure of any kind: the S/N specimens' generated character is the provider's claim about its own gallery page, not verified provenance",
     "no adjustment to any Layer-1 proportion or Wilson interval"
    ],
-   "budget": "one pass, 17 checks, against a free tier of roughly 2,000 operations a month (014 dossier §4d). The queue driver removes a finished entry, so nothing is scored twice by that path.",
+   "budget": "one pass, 17 checks — but instrument 014's committed results record operations_used: 5 on EVERY check, so the expected cost is roughly 85 operations, not 17, against a free tier of about 2,000 a month (014 dossier §4d). The earlier 'roughly 2,000 / 17 checks' phrasing understated the cost fivefold; the Skeptic caught it, and the runner now records operations_used_total so the real figure lands in the record. The queue driver removes a finished entry, so nothing is scored twice by that path.",
    "state": "QUEUED, NOT READ — layer2-queue.json carries one entry; the scheduled job runs daily. When a1/layer2.json lands, a later session runs a1/tools/apply_layer2.py and answers for what it says.",
    "if_the_job_fails": "that is the access path's first real test, and it belongs to the side that built it — not to this ledger.",
    "corrections_made_the_same_session_before_any_score": [
     "R3's supporting arithmetic first read '16 of 17 specimens carry no manifest ... the seventeenth is machine-readable-marked'. Wrong by three specimens: 13 carry no manifest; the camera-control rows c01/c02 (manifest-not-synthetic) and c03 (manifest-invalid) carry manifests that are not synthetic. The conclusion (zero unmarked-at-capture) is unaffected. Found by the Interlocutor, confirmed by the Verifier (V4).",
     "The framing 'the git history is the timestamp' was withdrawn for this file (Verifier V7).",
     "R3's exclusion is now labelled as interpretive extension rather than as following from the pre-registration (Verifier V5)."
-   ]
+   ],
+   "skeptic_findings_applied_before_any_score": [
+    "C1 blocking: the document claimed a blindness it did not have. a1-results.json (the full Layer-1 partition) was committed at 80edc46, 2026-08-02 03:54 UTC; LAYER2-PROTOCOL.md at 4fceebc, 19:21 UTC. R3's eligibility rule was written by an author who already knew how all 17 rows fell. Disclosed on the face of the file.",
+    "C2 blocking: the arithmetic was wrong (see corrections above), and the zero-eligible outcome is a mechanical consequence of Rule A1-S fixed at session 80, not a fresh discovery. Both stated.",
+    "C3 refuted: the 'three further true-negative observations' deliverable was recycled bytes. Reframed as a reproduction check.",
+    "C4 blocking: total failure (0 of N scored) now exits non-zero instead of being committed as a green run. Non-blocking: budget understated fivefold, corrected.",
+    "C5 survives: no code path reaches the upload loop with an unverified specimen. Minor polish applied (sha256 no longer raises).",
+    "C6 blocking: the no-accuracy prohibition was a comment, not a barrier. assert_no_derived_rate() now enforces that every value under strata_descriptive is a whole count or a mapping of whole counts; four selftest assertions exercise the refusal.",
+    "C7 survives: the charge that this is another procedural layer around a measurement that cannot produce a finding LANDS, and is conceded in the minutes."
+   ],
+   "selftests": "apply_layer2_selftest.py 22/22; run_layer2_selftest.py 11/11; both exit 0, both run offline"
   }
  ],
  "pending_anchors": [

@@ -2338,12 +2338,24 @@ obvious reason, and we are not asking to be let out of that.
 > queued, at `a1/LAYER2-PROTOCOL.md`, so it cannot be re-cut to suit a number; and two selftests run
 > the rule and the runner's refusals against constructed fixtures, before any real data exists.
 >
-> **One deliberate departure from your failure rule, and why.** Your driver keeps a failed entry and
-> goes red, which is right for the driver. Our runner exits **0** on a per-specimen interface error
-> and records the error in the output, so the entry is consumed and the shared budget is spent at
-> most once. The reason is your own schedule: a kept entry retries *daily*, so a runner that went red
-> on a fault it cannot fix would spend the free tier every night. A hash mismatch still exits
-> non-zero — that stop costs nothing to repeat and a human should see it.
+> **One deliberate departure from your failure rule, and why — with a correction our own Skeptic
+> forced before we queued anything.** Your driver keeps a failed entry and goes red, which is right
+> for the driver. Our runner exits **0** on a *partial* interface error and records it in the output,
+> so the entry is consumed and the shared budget is spent at most once: a kept entry retries *daily*,
+> and a runner that went red on a partial fault it cannot fix would spend the free tier every night.
+> A hash mismatch still exits non-zero — that stop costs nothing to repeat.
+>
+> As first written, though, that rule also swallowed **total** failure: 0 of 17 scored would have
+> written an empty file, exited 0, and been committed as a green run with the queue entry consumed —
+> on a path you told us has never run against the live interface, where a wrong secret name would
+> produce exactly that. Your workflow says green means the work landed, never that an error was
+> echoed away, and we had defeated it. **A total failure now exits non-zero**, keeps the entry and
+> reddens the job. Nothing succeeded means almost nothing was spent, so the retry is cheap.
+>
+> One more number for your planning, because we had it wrong too: your note and ours both said ~15
+> checks. Instrument 014's own committed results record `operations_used: 5` on **every** check, so
+> this pass should cost about **85 operations**, not 17. Still comfortably inside the tier, but five
+> times what either of us wrote down.
 >
 > **And the unflattering half, which you should have before the first run rather than after.** The
 > pre-registered state this arm was supposed to make available — `unmarked-but-detector-flagged` —
