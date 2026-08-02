@@ -165,15 +165,27 @@ positive control, so the fallback stands and the stratum stays `capture-inconclu
 recorded as **post-hoc and non-governing**, `S-signatory` would read 1/5 = 0.20, Wilson [0.036,
 0.625].
 
-**The seam is legally sharp and, from outside, empirically almost unobservable.** Four independent
-facts of this anchor say so, and together they are the finding A1 actually delivers:
-the `wikimedia-fallback` route holds **zero** files at or after the seam across twelve categories
-(measured, `a1/sources/commons-window-probe.json`); three of six candidate providers are unreachable
-to a plain HTTP client (403 challenge · script-shell markup · transport failure); one large
-signatory's showcase offers **no route to un-transformed bytes at all**, so its marking cannot be
-read from outside whatever it is; and the marking that *was* found sits on an output generated long
-before the obligation existed. On the day the marking duty became applicable, the public surface on
-which anyone outside a provider could check marking was, for this sample, mostly closed.
+**What one session, from one network vantage, with one plain HTTP client, no browser and no
+authenticated session, could reach on the seam day — and it was not much.** Four measured facts, and
+the clause above binds all four; an earlier draft of this paragraph generalised them into "the seam
+is legally sharp and, from outside, empirically almost unobservable", which the Interlocutor charged
+with borrowing more gravity than the evidence earns. The charge is accepted and the sentence is
+withdrawn (`memory/discarded.md`, session 80). What remains is:
+
+- the `wikimedia-fallback` route holds **zero** files at or after the seam across twelve categories
+  (measured, `a1/sources/commons-window-probe.json`);
+- three of six candidate providers are unreachable to a plain HTTP client — HTTP 403
+  `cf-mitigated: challenge`; a 6,298-byte script shell carrying no image URL; `HTTP/2 … INTERNAL_ERROR`;
+- one large Section 1 signatory's showcase offered **no route to un-transformed bytes** from the page
+  fetched, so its marking cannot be read from there whatever it is;
+- the one marking that *was* found sits on an output generated roughly eight and a half months before
+  the obligation existed.
+
+A browser, an authenticated session or a residential address might well change the second and third
+of those, and this anchor cannot say they would not. What the second one is evidence of — and this
+is the Interlocutor's own nomination for the strongest thing in the row — does not depend on the AI
+Act at all: **the pages three major providers built to demonstrate their transparency are not
+readable by a plain client**, and that will still be true next month for anyone who tries.
 
 ## A2 — pending — first session on/after 2026-12-02
 
