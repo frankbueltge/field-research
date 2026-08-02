@@ -1,48 +1,218 @@
 {
-  "work": "The Grandfather Clause",
-  "kind": "append-only date-anchored ledger",
-  "pre_registered": "2026-07-23 (collective session 55)",
-  "note": "Rows are append-only. A correction is a NEW dated row, never an edit to an existing one. Each fresh-capture anchor commits its sample list and every sha256 BEFORE either layer runs.",
-  "anchors": [
-    {
-      "anchor": "A-inst",
-      "date": "2026-07-23",
-      "type": "institutional-baseline",
-      "captured_before_deadline": true,
-      "observations": {
-        "art50_2_marking_duty_applies": "2026-08-02",
-        "marking_duty_text": "outputs marked in a machine-readable format and detectable as artificially generated or manipulated (Art. 50(2), Reg. (EU) 2024/1689)",
-        "grandfathering_in_market_systems_until": "2026-12-02",
-        "grandfathering_status": "provisional — Commission FAQ (17 Jul 2026) states 'a targeted grandfathering rule ... If adopted'; Digital Omnibus politically agreed, OJ publication pending as of this anchor",
-        "no_retroactive_marking": "outputs generated and already made available before 2026-08-02 need not be marked/labelled retroactively (Commission FAQ, 17 Jul 2026)",
-        "guidelines_secondary": "Guidelines on Article 50 transparency, Communication C(2026) 5054 final, dated 2026-07-20 — SECONDARY (identifier/date from ppc.land; re-verify against primary guidelines text before load-bearing use)",
-        "code_of_practice": "Code of Practice on Transparency of AI-Generated Content, final published 2026-06-10; voluntary; presumption-of-compliance for signatories",
-        "code_technical_measures_secondary": {
-          "text_watermark_threshold_tokens": 200,
-          "two_layer_marking": "at least two machine-readable layers: digitally-signed + timestamped metadata AND an imperceptible watermark (single-layer only in narrow cases)",
-          "free_detection_default": true,
-          "detection_carveout_below_monthly_users": 1000000,
-          "eu_icons": ["AI GENERATED", "AI MODIFIED", "AI"],
-          "tier": "SECONDARY (ppc.land summary of C(2026) 5054); to be re-verified against the primary guidelines text before any load-bearing use"
-        },
-        "signatory_mechanism": "signatory form to AI Office; per Commission FAQ submit by 2026-07-27 18:00 CEST to appear on the initial list published before 2026-08-02 (a secondary reported 2026-07-22; primary FAQ governs)",
-        "provider_postures_secondary": "Meta publicly declined the EU AI Act GPAI Code of Practice citing 'legal uncertainties' (Joel Kaplan); OpenAI and Mistral stated they would support the voluntary Code. NOTE: these documented refusals/supports are primarily reported against the GPAI (models) Code, which is distinct from the Transparency-of-AI-generated-content Code this work concerns; provider posture toward the Transparency Code is to be verified against its primary signatory list at anchor A1."
-      }
+ "work": "The Grandfather Clause",
+ "kind": "append-only date-anchored ledger",
+ "pre_registered": "2026-07-23 (collective session 55)",
+ "note": "Rows are append-only. A correction is a NEW dated row, never an edit to an existing one. Each fresh-capture anchor commits its sample list and every sha256 BEFORE either layer runs.",
+ "anchors": [
+  {
+   "anchor": "A-inst",
+   "date": "2026-07-23",
+   "type": "institutional-baseline",
+   "captured_before_deadline": true,
+   "observations": {
+    "art50_2_marking_duty_applies": "2026-08-02",
+    "marking_duty_text": "outputs marked in a machine-readable format and detectable as artificially generated or manipulated (Art. 50(2), Reg. (EU) 2024/1689)",
+    "grandfathering_in_market_systems_until": "2026-12-02",
+    "grandfathering_status": "provisional — Commission FAQ (17 Jul 2026) states 'a targeted grandfathering rule ... If adopted'; Digital Omnibus politically agreed, OJ publication pending as of this anchor",
+    "no_retroactive_marking": "outputs generated and already made available before 2026-08-02 need not be marked/labelled retroactively (Commission FAQ, 17 Jul 2026)",
+    "guidelines_secondary": "Guidelines on Article 50 transparency, Communication C(2026) 5054 final, dated 2026-07-20 — SECONDARY (identifier/date from ppc.land; re-verify against primary guidelines text before load-bearing use)",
+    "code_of_practice": "Code of Practice on Transparency of AI-Generated Content, final published 2026-06-10; voluntary; presumption-of-compliance for signatories",
+    "code_technical_measures_secondary": {
+     "text_watermark_threshold_tokens": 200,
+     "two_layer_marking": "at least two machine-readable layers: digitally-signed + timestamped metadata AND an imperceptible watermark (single-layer only in narrow cases)",
+     "free_detection_default": true,
+     "detection_carveout_below_monthly_users": 1000000,
+     "eu_icons": [
+      "AI GENERATED",
+      "AI MODIFIED",
+      "AI"
+     ],
+     "tier": "SECONDARY (ppc.land summary of C(2026) 5054); to be re-verified against the primary guidelines text before any load-bearing use"
     },
-    {
-      "anchor": "A0",
-      "date": "2026-07-11",
-      "type": "grandfathered-baseline-reference",
-      "captured_before_deadline": true,
-      "excluded_from_decision_rule": true,
-      "exclusion_reason": "014 selection-circularity — its wild specimens (w01–w03) were selected FOR carrying intact manifests (014 README, 'Selection circularity' caveat); using them as a baseline marking rate would mechanically overstate pre-deadline prevalence. A0 is context/narrative only; it supplies no numerator to any label. Any row citing A0 carries this caveat inline (Skeptic condition 3, session 55).",
-      "grandfather_status": "doubly grandfathered — outputs made available before 2026-08-02 (no retroactive marking) from systems already on the market (grace to 2026-12-02)",
-      "source": "works/2026-07-11-split-seal/ (instrument 014); 15 sha256-pinned specimens, two-layer-scored; see data/specimens.json, data/layer1.json, data/layer2.json",
-      "observation": "Reference only — not re-scored this session, and NOT a baseline marking rate (see exclusion_reason). Illustrates the pre-deadline two-layer state of a fixed, manifest-selected specimen set."
+    "signatory_mechanism": "signatory form to AI Office; per Commission FAQ submit by 2026-07-27 18:00 CEST to appear on the initial list published before 2026-08-02 (a secondary reported 2026-07-22; primary FAQ governs)",
+    "provider_postures_secondary": "Meta publicly declined the EU AI Act GPAI Code of Practice citing 'legal uncertainties' (Joel Kaplan); OpenAI and Mistral stated they would support the voluntary Code. NOTE: these documented refusals/supports are primarily reported against the GPAI (models) Code, which is distinct from the Transparency-of-AI-generated-content Code this work concerns; provider posture toward the Transparency Code is to be verified against its primary signatory list at anchor A1."
+   }
+  },
+  {
+   "anchor": "A0",
+   "date": "2026-07-11",
+   "type": "grandfathered-baseline-reference",
+   "captured_before_deadline": true,
+   "excluded_from_decision_rule": true,
+   "exclusion_reason": "014 selection-circularity — its wild specimens (w01–w03) were selected FOR carrying intact manifests (014 README, 'Selection circularity' caveat); using them as a baseline marking rate would mechanically overstate pre-deadline prevalence. A0 is context/narrative only; it supplies no numerator to any label. Any row citing A0 carries this caveat inline (Skeptic condition 3, session 55).",
+   "grandfather_status": "doubly grandfathered — outputs made available before 2026-08-02 (no retroactive marking) from systems already on the market (grace to 2026-12-02)",
+   "source": "works/2026-07-11-split-seal/ (instrument 014); 15 sha256-pinned specimens, two-layer-scored; see data/specimens.json, data/layer1.json, data/layer2.json",
+   "observation": "Reference only — not re-scored this session, and NOT a baseline marking rate (see exclusion_reason). Illustrates the pre-deadline two-layer state of a fixed, manifest-selected specimen set."
+  },
+  {
+   "anchor": "A1",
+   "date": "2026-08-02",
+   "type": "fresh-capture",
+   "days_since_seam": 0,
+   "captured_on_the_seam_itself": true,
+   "legal_state_at_this_anchor": {
+    "status_of_the_grandfathering": "ADOPTED AND IN FORCE — supersedes the 'provisional / If adopted' reading recorded at A-inst. Regulation (EU) 2026/1744 of 8 July 2026 (Digital Omnibus on AI), OJ L series 24.7.2026, in force 27.7.2026 (Art. 4: third day following publication).",
+    "enacted_provision": "Reg. (EU) 2026/1744 item (39)(b) adds Article 111(4) to Reg. (EU) 2024/1689: 'Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, that have been placed on the market before 2 August 2026 shall take the necessary steps in order to comply with Article 50(2) by 2 December 2026.'",
+    "recital": "(38) — 'a transitional period of four months for providers who have already placed their systems on the market before the 2 August 2026'",
+    "scope_narrower_than_the_guidance_says": "the enacted Art. 111(4) reads 'placed on the market' only; the Commission's signing-FAQ describes the rule as covering systems 'placed on the market OR PUT INTO SERVICE' before 2 August 2026. The guidance is broader than the statute it describes.",
+    "guidance_lag": "the Commission signing-FAQ, page-stated 'Last update 29 July 2026' — five days after OJ publication, two days after entry into force, four days before the seam — still reads 'The AI Omnibus proposal ... envisages a targeted grandfathering rule ... If adopted'. The same page states elsewhere that 'The procedure for the adequacy assessment of codes of practice has been amended by the AI Omnibus.'",
+    "no_retroactive_marking": "unchanged: outputs generated and already made available before 2026-08-02 need not be marked or labelled retroactively (Commission FAQ).",
+    "presumption_language_placed_side_by_side_not_resolved": "Reg. (EU) 2026/1744 recital (41): the codes of practice under Art. 50(7)/56(6) 'have limited legal effect, and in particular do not grant a presumption of conformity'. Commission Code policy page: signatories 'can rely on its measures to demonstrate compliance'. Both quoted verbatim; this ledger does not adjudicate between them. NOTE: this qualifies the A-inst row's phrase 'presumption-of-compliance for signatories', which is not repeated here as settled.",
+    "verification": "all nine legal claims independently re-fetched and confirmed verbatim by a Verifier convened this session — VERIFIER VERDICT: PASS, no corrections required."
+   },
+   "stratification": {
+    "primary_list": "Commission news page 'Strong backing for the Code of Practice on Transparency of AI-generated Content', published 31 July 2026 — Section 1 signatories: 83, Section 2: 152. Parsed to exactly those counts; page bytes and parse committed under a1/sources/.",
+    "secondary_postures_dropped": "per Skeptic non-blocking 3 (session 55), the SOURCES.md §5 GPAI-Code postures are superseded and dropped at this anchor.",
+    "the_rule_earned_its_place": "the dropped secondary posture recorded Meta as having declined an EU AI Act code (true of the GPAI Code). On the primary Transparency-Code list Meta is a Section 1 signatory. The hard rule prevented a mis-stratification on the first anchor to use it.",
+    "S-signatory": "Black Forest Labs — on the Section 1 list",
+    "N-nonsignatory": "Stability AI — absent from the Section 1 list at this date; absence is non-signatory status on this date and nothing more, the list being updated on an ongoing basis",
+    "C-camera-control": "Truepic x2, Nikon x1 — inherited from instrument 014, NOT a fresh capture (deviation D2)",
+    "X-observation-only": "Google — recorded and probed, outside the pre-registered strata, supplies no numerator to any label"
+   },
+   "governing_reading_rule_A1_S": {
+    "C-camera-control": {
+     "capture_inconclusive": false,
+     "directional_label": "not computable at a single anchor — the pre-registered load-bearing comparison is A1 -> A2",
+     "effective_n": 3,
+     "in_decision_rule": true,
+     "indeterminate": 0,
+     "indeterminate_rate": 0.0,
+     "marked": 0,
+     "marked_proportion": 0.0,
+     "n": 3,
+     "states": {
+      "manifest-invalid": 1,
+      "manifest-not-synthetic": 2
+     },
+     "wilson_95": [
+      0.0,
+      0.5615
+     ]
+    },
+    "N-nonsignatory": {
+     "capture_inconclusive": true,
+     "directional_label": "not computable at a single anchor — the pre-registered load-bearing comparison is A1 -> A2",
+     "effective_n": 0,
+     "in_decision_rule": true,
+     "indeterminate": 5,
+     "indeterminate_rate": 1.0,
+     "marked": 0,
+     "marked_proportion": null,
+     "n": 5,
+     "states": {
+      "indeterminate-at-capture": 5
+     },
+     "wilson_95": null
+    },
+    "S-signatory": {
+     "capture_inconclusive": true,
+     "directional_label": "not computable at a single anchor — the pre-registered load-bearing comparison is A1 -> A2",
+     "effective_n": 1,
+     "in_decision_rule": true,
+     "indeterminate": 4,
+     "indeterminate_rate": 0.8,
+     "marked": 1,
+     "marked_proportion": 1.0,
+     "n": 5,
+     "states": {
+      "indeterminate-at-capture": 4,
+      "machine-readable-marked": 1
+     },
+     "wilson_95": [
+      0.2065,
+      1.0
+     ]
+    },
+    "X-observation-only": {
+     "capture_inconclusive": null,
+     "directional_label": "outside the pre-registered strata — observation only, supplies no numerator to any label",
+     "effective_n": null,
+     "in_decision_rule": false,
+     "indeterminate": 4,
+     "indeterminate_rate": null,
+     "marked": 0,
+     "marked_proportion": null,
+     "n": 4,
+     "states": {
+      "indeterminate-at-capture": 4
+     },
+     "wilson_95": null
     }
-  ],
-  "pending_anchors": [
-    {"anchor": "A1", "trigger": "first collective session on/after 2026-08-02", "action": "fresh per-provider capture (N=5 per generative stratum, 3 control) + two-layer score, per README PRE-REGISTERED PROTOCOL"},
-    {"anchor": "A2", "trigger": "first collective session on/after 2026-12-02", "action": "fresh per-provider capture + two-layer score; grace expired"}
-  ]
+   },
+   "post_hoc_non_governing_reading_rule_A1_S_prime": {
+    "C-camera-control": {
+     "capture_inconclusive": false,
+     "directional_label": "none — a single anchor cannot carry one, and this reading is post-hoc besides",
+     "effective_n": 3,
+     "indeterminate": 0,
+     "marked": 0,
+     "marked_proportion": 0.0,
+     "n": 3,
+     "states": {
+      "manifest-invalid": 1,
+      "manifest-not-synthetic": 2
+     },
+     "wilson_95": [
+      0.0,
+      0.5615
+     ]
+    },
+    "N-nonsignatory": {
+     "capture_inconclusive": true,
+     "directional_label": "none — a single anchor cannot carry one, and this reading is post-hoc besides",
+     "effective_n": 0,
+     "indeterminate": 5,
+     "marked": 0,
+     "marked_proportion": null,
+     "n": 5,
+     "states": {
+      "indeterminate-at-capture": 5
+     },
+     "wilson_95": null
+    },
+    "S-signatory": {
+     "capture_inconclusive": false,
+     "directional_label": "none — a single anchor cannot carry one, and this reading is post-hoc besides",
+     "effective_n": 5,
+     "indeterminate": 0,
+     "marked": 1,
+     "marked_proportion": 0.2,
+     "n": 5,
+     "states": {
+      "machine-readable-marked": 1,
+      "unmarked-at-capture": 4
+     },
+     "wilson_95": [
+      0.0362,
+      0.6245
+     ]
+    }
+   },
+   "layer2": "deferred — the Actions-only credential path is unreachable from a session container; the pre-registered unmarked-but-detector-flagged state is UNAVAILABLE at this anchor, so the second limb of Art. 50(2) ('detectable as artificially generated') goes unread here.",
+   "directional_label": "NONE. The pre-registration makes the load-bearing comparison the fresh-capture pair A1 -> A2 (A2 not before 2026-12-02). A single anchor carries no adoption-shift, no reversal. led-the-timeline is additionally blocked by the pre-registered rule that a capture-inconclusive stratum is forced into no directional label.",
+   "the_one_marked_specimen": "s04 (Black Forest Labs gallery, sha256 e6e069a7...): valid C2PA manifest, signer 'Black Forest Labs Inc.', claim generator 'Black Forest Labs API' with 'Flux.1', assertion c2pa.actions.v2 action c2pa.created with digitalSourceType trainedAlgorithmicMedia, plus a c2pa.ai_generated_content assertion. Signature timestamp 2025-11-18T12:17:34+00:00 — the marking predates the seam by roughly eight and a half months, i.e. it is on an output the statute would never have required to be marked. Stated as a fact about one file; no rate, no label, no compliance inference. CAVEAT inherited from instrument 014: 'Valid' here means the signature verifies, not that the signer sits on an official trust list; no trust-list arm was run at this anchor.",
+   "instrument_control": "Layer 1, at the pinned c2pa-python 0.36.0, reproduced instrument 014's 2026-07-11 reading on all 15 of its frozen specimens with zero differing fields (a1/tools/check_layer1_reproduces.py). The inherited instrument had not moved.",
+   "deviations": "D1 empty wikimedia-fallback window (measured: zero files at or after the seam across 12 categories) - D2 inherited control - D3 product gallery - D4 three providers unobservable by plain HTTP - D5 Layer 2 deferred - D6 observation-only group. Full text: a1/CAPTURE-NOTES.md.",
+   "rule_correction": "Rule A1-S (this anchor's committed stripping rule) was refuted by its own specimen s04 and is replaced, FOR A2 ONWARD, by Rule A1-S' (path-level positive control). The refutation and the new rule are in a1/CAPTURE-NOTES.md; the governing reading of A1 remains the one computed under A1-S.",
+   "artifacts": {
+    "specimen_registry": "a1/specimens.json",
+    "governing": "a1/a1-results.json",
+    "post_hoc": "a1/a1-alt-reading.json",
+    "notes": "a1/CAPTURE-NOTES.md",
+    "sources": "a1/sources/"
+   }
+  }
+ ],
+ "pending_anchors": [
+  {
+   "anchor": "A1",
+   "trigger": "first collective session on/after 2026-08-02",
+   "action": "fresh per-provider capture (N=5 per generative stratum, 3 control) + two-layer score, per README PRE-REGISTERED PROTOCOL"
+  },
+  {
+   "anchor": "A2",
+   "trigger": "first collective session on/after 2026-12-02",
+   "action": "fresh per-provider capture + two-layer score; grace expired"
+  }
+ ]
 }
