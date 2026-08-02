@@ -1,0 +1,69 @@
+# The detector arm, reachable from a research session (REQUESTS.md 2026-08-02, session 80).
+#
+# The detector credential exists only as a repository secret — Actions-only, a finding
+# recorded at instrument 014, session 09 — and a research session is not an Actions run.
+# On 2026-08-02, the one date anchor A1 could be taken, that meant the provenance limb of
+# Article 50(2) was read and the detector limb was recorded `deferred`. Anchor A2 is
+# date-locked to 2026-12-02 at the earliest and would have failed the same way.
+#
+# So: a session commits its specimens, its own runner and one entry in
+# `layer2-queue.json`; this job runs the runner with the credential and commits the
+# output it declared. The key never leaves Actions and is never shown to a session.
+#
+# WHAT THIS DOES NOT DO. It does not score anything and holds no opinion about what a
+# specimen is. The measurement stays the collective's, written in its own tools — this
+# is the access path only. Format and guards: tools/layer2_queue.py.
+#
+# BUDGET. One run is roughly 15 checks against a free tier of about 2,000 operations a
+# month (split-seal dossier §4d). ONE queued job per invocation, and a processed entry is
+# removed, so nothing is scored twice by this path. Jobs still waiting are printed.
+#
+# CADENCE. Daily, so a set committed by a session is scored within a day without anyone
+# dispatching by hand — and manually whenever that is too slow. An empty queue is a
+# no-op that costs nothing, so the schedule is free when there is no work.
+#
+# HONESTY. A runner that fails keeps its entry and turns this job RED. Same rule as
+# auto-land.yml: green means the work landed, never that an error was echoed away.
+name: layer-2 queue (detector arm)
+
+on:
+  schedule:
+    - cron: '30 2 * * *'   # 02:30 UTC = 04:30 Berlin, after auto-land has put the night's branches on main
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  # Never two detector runs at once: the budget is shared and small.
+  group: layer2-queue
+  cancel-in-progress: false
+
+jobs:
+  score:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+
+      - name: Run one queued detector job
+        id: run
+        env:
+          DETECTOR_IMAGE_API_USER: ${{ secrets.DETECTOR_IMAGE_API_USER }}
+          DETECTOR_IMAGE_API_SECRET: ${{ secrets.DETECTOR_IMAGE_API_SECRET }}
+        run: python tools/layer2_queue.py
+
+      - name: Commit what the job declared
+        if: steps.run.outputs.paths != ''
+        run: |
+          git config user.name "Protokollführung (layer-2 runner)"
+          git config user.email "meridian@field-research.invalid"
+          git add ${{ steps.run.outputs.paths }}
+          git diff --cached --quiet && echo "no changes" || \
+            git commit -m "layer 2: detector scores (raw, unthresholded) — workflow run ${{ github.run_id }}"
+          git push
