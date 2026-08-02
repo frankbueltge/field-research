@@ -10,7 +10,7 @@ a measurement, and nothing this file prints is a finding about anything in the w
 subject is `apply_layer2.py`. Fixtures are written to a temporary directory and the real `a1/`
 is never touched — asserted, not assumed, at the end of the run.
 
-    python3 apply_layer2_selftest.py        # 17 assertions, exit 0 on pass
+    python3 apply_layer2_selftest.py        # 22 assertions, exit 0 on pass
 """
 import json
 import shutil
@@ -156,6 +156,36 @@ def main() -> int:
         check("case 5: a missing layer2.json is a clear stop, not a traceback",
               r.returncode != 0 and "has not run" in r.stderr
               and "Traceback" not in r.stderr)
+
+        # --- case 6: the R6 guard, which makes the no-accuracy prohibition checkable ----
+        # The Skeptic's objection (C6, session 81) was that R6 was a comment, not a barrier:
+        # `strata_descriptive` already holds a stratum-by-tier cross-tabulation, so one added
+        # division would produce the forbidden rate. The guard's invariant is that every value
+        # under it is a whole count or a mapping of whole counts. Exercised directly.
+        import importlib.util
+        spec = importlib.util.spec_from_file_location("al2", SCRIPT)
+        al2 = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(al2)
+
+        def guard_rejects(strata) -> bool:
+            try:
+                al2.assert_no_derived_rate(strata)
+            except SystemExit:
+                return True
+            return False
+
+        check("R6 guard: passes a clean stratum of counts",
+              not guard_rejects({"S": {"n": 5, "scored": 5,
+                                       "tiers": {"flagged AI — high": 3},
+                                       "layer1_states": {"indeterminate-at-capture": 5}}}))
+        check("R6 guard: rejects a derived rate over stratum x tier — the exact forbidden move",
+              guard_rejects({"S": {"n": 5, "scored": 5, "flagged_rate": 0.6}}))
+        check("R6 guard: rejects a float hidden inside the tier mapping",
+              guard_rejects({"S": {"n": 5, "tiers": {"flagged AI — high": 0.6}}}))
+        check("R6 guard: rejects a non-count value that is neither int nor mapping of ints",
+              guard_rejects({"S": {"n": 5, "note": "AI-leaning dominates"}}))
+        check("R6 guard: the real output passed it — case 1 wrote its file",
+              (tmp / "c1" / "a1" / "a1-layer2-reading.json").is_file())
 
     check("the real a1/ directory was not touched", sorted(p.name for p in A1.iterdir()) == a1_before)
 

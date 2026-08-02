@@ -4,6 +4,17 @@
 this file may be re-cut once `a1/layer2.json` lands; a rule changed after the data arrives is worth
 nothing, and this practice has said so in its own minutes.
 
+> **What this file is blind to, and what it is not — the Skeptic's blocking condition C1, applied.**
+> "Before any score exists" covers the *detector's* number and nothing else. It does **not** mean
+> this document was written blind: `a1/a1-results.json`, carrying the complete Layer-1 partition of
+> all 17 specimens, was committed at `80edc46`, **2026-08-02 03:54 UTC**, and this file at
+> `4fceebc`, **19:21 UTC** the same day — more than fifteen hours later. So R3's eligibility rule was
+> authored by an author who already knew exactly how the 17 rows fell, and therefore already knew
+> what that rule's consequence would be. The phrase "before any score exists" was doing work it had
+> not earned; that is corrected here rather than left for a reader to notice. The one blindness this
+> file can honestly claim is the one that matters for a *detector* rule, and it is the only one it
+> claims from here on.
+
 > **What the git record does and does not prove here — narrowed 2026-08-02 after the Verifier's
 > finding V7, in the same session.** This paragraph first read *"before the detector job was queued
 > and therefore before a single score existed. The git history is the timestamp, exactly as it is
@@ -90,10 +101,18 @@ matter what the detector returns.**
 > the data rather than asserting them; `apply_layer2.py` does recompute correctly, and the prose
 > about that discipline had not been checked against the same file. Logged in `memory/discarded.md`.
 
-Writing that down now, rather than discovering it after the fact, is the whole point of a
-pre-registration. It also means the honest description of this job is not "the analytic payload the
-pre-registration promised Layer 2 would carry" — that payload is unreachable at this anchor for
-reasons fixed on 2026-08-02. What the job does deliver is R4, and nothing beyond it.
+Writing that down before the scores arrive is worth something — it removes any later temptation to
+present an empty state as a result. But it is **not a discovery**, and the Skeptic was right to say
+so (C2): the emptiness is a mechanical consequence of Rule A1-S, which was fixed at session 80 and
+assigns `indeterminate-at-capture` to every manifest-absent row carrying stripping evidence
+(`a1/tools/score_a1.py`). The literal state `unmarked-at-capture` was never going to appear in this
+anchor under any Layer-2 rule whatsoever. What R3 adds is the *reason* for excluding indeterminate
+rows and a commitment that binds A2, where the state is genuinely live; the arithmetic at A1 was
+already settled the day before this file existed.
+
+The honest description of this job is therefore not "the analytic payload the pre-registration
+promised Layer 2 would carry". That payload is unreachable at this anchor. What the job does deliver
+is R4, and nothing beyond it.
 
 ## R4 — What Layer 2 therefore does deliver at A1
 
@@ -102,9 +121,20 @@ Four things, each descriptive, none of them a directional or compliance claim:
 1. **The `deferred` marker is discharged.** The second limb of the statutory sentence is *read*
    rather than *unread*. A row that says "we did not measure this" and a row that says "we measured
    it and here is what came back" are different rows, and only one of them can be argued with.
-2. **Three further true-negative observations on the camera-capture control.** `c01`–`c03` are
-   hardware-capture provenance specimens (the 014 lineage). Descriptive only; no accuracy rate is
-   computed from three files, and none may be.
+2. ~~**Three further true-negative observations on the camera-capture control.**~~
+   **REFUTED, same session, by the Skeptic (C3), and replaced.** `c01`–`c03` are not merely "the
+   014 lineage" — they are **byte-identical** to instrument 014's `c08`/`c09`/`c10`, which the same
+   vendor and model already scored at `0.001` apiece
+   (`works/2026-07-11-split-seal/data/layer2.json`). Verified here by sha256, both ways. Re-scoring
+   identical bytes is not further evidence about cameras; it is a repeat of a known measurement, and
+   calling it "further" was wrong.
+   **What it is instead, stated as the purpose rather than discovered afterwards: a reproduction
+   check on the detector.** Same bytes, same vendor, same model, weeks later — does the number come
+   back the same? Session 80 ran precisely this check on the *Layer-1* arm and reported zero
+   differing fields as a positive result; this is its Layer-2 twin, and `apply_layer2.py` computes
+   it (`inherited_specimen_reproduction`), verifying byte-identity itself rather than trusting a
+   filename. A drift here would be a real finding about the instrument; identity would be a small
+   positive one. Either way it is about the detector, never about the specimens.
 3. **The A1 half of an A1 → A2 detector comparison.** A2 is date-locked to 2026-12-02 at the
    earliest. Without this pass there is no A1 half to compare against, and the detector axis would
    be unavailable for the whole ledger.
@@ -128,12 +158,31 @@ detector-accuracy figure of any kind is computed at A1** — no true-positive ra
 rate, no agreement statistic against stratum. `apply_layer2.py` does not compute one and must not be
 extended to.
 
+**And that prohibition is now checkable rather than merely stated** — the Skeptic's blocking finding
+C6, applied. Its objection was exact: `strata_descriptive` already holds a stratum-by-tier
+cross-tabulation, so *one added division* would produce the forbidden detector-flagged rate by
+provider posture, and nothing but a comment stood in the way. `assert_no_derived_rate()` now
+enforces the invariant that **every value under `strata_descriptive` is a whole count, or a mapping
+of labels to whole counts.** A rate is a float; the moment anyone divides anything there, the tool
+refuses to write its output. Four selftest assertions exercise the refusal. This is not proof of
+good intent — it is a tripwire a future edit has to remove **on purpose, in the open**, which is all
+a guard of this kind can honestly be.
+
 ## R7 — Failure semantics, and why they are asymmetric
 
 - **sha256 mismatch → abort before any upload, exit non-zero.** The queue keeps the entry, the job
   goes red, and a human sees it. This costs no budget, so a daily red is the right price.
-- **Any per-specimen interface failure → recorded in the output file, run continues, exit 0.** The
-  file is written and the queue entry is consumed.
+- **A partial interface failure → recorded in the output file, run continues, exit 0.** The file is
+  written and the queue entry is consumed.
+- **A total failure — not one specimen scored → exit non-zero.** The entry stays queued, the job
+  goes red, and it gets looked at. *Added after the Skeptic's blocking finding C4, same session:* as
+  first written this rule made "0 of 17 scored" indistinguishable from "17 of 17 scored" at the
+  monitoring level, because the driver checks only that the declared output file exists and then
+  pops the entry. On a path the team has said has never run against the live interface, a wrong
+  secret name or a changed endpoint would have committed an empty file as a green run and silently
+  spent the one queued shot. That defeats the driver's own stated rule — *green means the work
+  landed, never that an error was echoed away* — and the budget argument does not cover it, because
+  a run in which nothing succeeded has spent almost nothing and is cheap to retry.
 
 The asymmetry is deliberate and is about a **shared, finite budget**. One pass is 17 checks against
 a free tier of roughly 2,000 operations a month (014 dossier §4d). An entry that stays queued is
@@ -154,6 +203,13 @@ this is the same discipline the pre-registration already imposes on capture lag
 One pass over the 17 specimens, once, for this anchor. The queue driver removes a finished entry, so
 nothing is scored twice by that path. Should a re-run ever be warranted, it is a **new dated event**
 with its own stated reason in the ledger — never a quiet second attempt at a nicer number.
+
+**The cost, corrected after the Skeptic's finding C4 (non-blocking):** "17 checks" is accurate and
+misleading. Instrument 014's committed results record `operations_used: 5` on **every one** of its
+fifteen checks, so a 17-specimen pass is expected to cost roughly **85 operations** against the
+~2,000-a-month tier — five times what the earlier phrasing invited a reader to assume. The runner
+now records `operations_used_total` so the actual figure lands in the record instead of being
+inferred.
 
 ## R10 — The amendment is a new dated event, never a patch
 

@@ -24,15 +24,24 @@ A mismatch aborts having spent nothing.
 
 FAILURE SEMANTICS, AND WHY THEY ARE ASYMMETRIC (protocol R7). A hash mismatch exits non-zero
 BEFORE any call: the queue keeps the entry, the job goes red, a human looks, and it costs no
-budget to repeat. A per-specimen interface failure is recorded in the output and the run exits
-0: the file is written, the queue entry is consumed, and the shared budget is spent AT MOST
-ONCE. A queued entry is retried daily, so a runner that went red on an interface fault it
-cannot fix would spend the practice's shared free tier every night. Errors belong in the record,
-not in a retry loop.
+budget to repeat. A PARTIAL interface failure is recorded in the output and the run exits 0:
+the file is written, the queue entry is consumed, and the shared budget is spent AT MOST ONCE.
+A queued entry is retried daily, so a runner that went red on a partial fault it cannot fix
+would spend the practice's shared free tier every night. Errors belong in the record, not in a
+retry loop.
 
-BUDGET (protocol R9). One pass, 17 checks, against a free tier of roughly 2,000 operations a
-month (014 dossier §4d). Once, for this anchor. A re-run would be a new dated event with its
-own stated reason.
+BUT A TOTAL FAILURE IS NOT A SUCCESS (Skeptic C4, session 81, blocking — applied). If NOT ONE
+specimen scored, this exits non-zero: the entry stays queued and the job goes red. Nothing was
+measured, so almost nothing was spent, and the queue driver's honesty rule — green means the
+work landed, never that an error was echoed away — must not be defeated by a runner that writes
+an empty file and returns 0. As first written, this script did exactly that.
+
+BUDGET (protocol R9). One pass, 17 checks. At the operation cost instrument 014 actually
+recorded — `operations_used: 5` on every one of its fifteen checks
+(`works/2026-07-11-split-seal/data/layer2.json`) — that is roughly **85 operations**, not 17,
+against a free tier of about 2,000 a month (014 dossier §4d). The earlier wording said "17
+checks" and invited a five-fold underestimate; the Skeptic caught it. Once, for this anchor. A
+re-run would be a new dated event with its own stated reason.
 
 Output: `../layer2.json`. It does NOT touch `a1-results.json`, whose `layer2: "deferred"` is the
 true record of what session 80 could reach on the seam and stays as it is (protocol R10).
@@ -56,11 +65,26 @@ MIME = {".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".png": "image/png",
 
 
 def sha256(path: Path) -> str:
-    h = hashlib.sha256()
-    with path.open("rb") as fh:
-        for chunk in iter(lambda: fh.read(65536), b""):
-            h.update(chunk)
-    return h.hexdigest()
+    """Never raises: an unreadable specimen must produce the tool's own refusal, not a traceback."""
+    try:
+        h = hashlib.sha256()
+        with path.open("rb") as fh:
+            for chunk in iter(lambda: fh.read(65536), b""):
+                h.update(chunk)
+        return h.hexdigest()
+    except OSError as exc:
+        return f"unreadable: {type(exc).__name__}: {exc}"
+
+
+def total_failure(scored: int, attempted: int) -> bool:
+    """Nothing scored at all, out of something attempted — a dead arm, not a partial fault.
+
+    Pulled out as its own function so the decision can be unit-tested without a network call
+    (Skeptic C4, session 81). The end-to-end path cannot be tested here: proving it would mean
+    calling the live interface with bad credentials, and this practice does not make outbound
+    calls to prove a branch.
+    """
+    return attempted > 0 and scored == 0
 
 
 def days_between(a: str, b: str) -> int:
@@ -139,6 +163,8 @@ def main() -> int:
         "days_from_seam_to_layer2_scoring": days_between(SEAM, run_date),
         "specimens_scored": scored,
         "specimens_attempted": len(specimens),
+        "operations_used_total": sum(e["operations_used"] for e in results.values()
+                                     if isinstance(e.get("operations_used"), int)),
         "sha256_all_verified_before_upload": True,
         "note": ("Raw scores, unthresholded. The detector is a statistical classifier, NOT a "
                  "watermark decoder; this practice holds no independent FPR/FNR benchmark for it, "
@@ -153,7 +179,17 @@ def main() -> int:
         encoding="utf-8")
     print(f"layer2.json written — {scored}/{len(specimens)} scored, "
           f"{days_between(SEAM, run_date)} day(s) after the seam")
-    # Exit 0 even on partial failure, on purpose: R7. The record carries the errors.
+
+    if total_failure(scored, len(specimens)):
+        # R7, second limb. Nothing scored is not a partial fault, it is a dead arm: the entry
+        # stays queued, the job goes red, and it is looked at. Almost no budget was spent
+        # precisely because nothing succeeded, so a retry is cheap. The file is left on disk
+        # with its errors for whoever looks.
+        sys.exit("NOT ONE specimen scored — the detector arm did not run. Entry kept in the "
+                 "queue and the job reddened on purpose; layer2.json carries the per-specimen "
+                 "errors. This is infrastructure, not a reading.")
+
+    # Exit 0 on PARTIAL failure, on purpose: R7. The record carries the errors.
     return 0
 
 

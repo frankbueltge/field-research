@@ -2,9 +2,11 @@
 """A1 — apply the pre-registered Layer-2 reading rule to whatever the detector returned.
 
 Committed collective session 81, 2026-08-02, **before any score existed** — together with
-`../LAYER2-PROTOCOL.md`, which is the rule this file executes. That order is the only reason
-its output counts as a pre-registered reading rather than an interpretation shaped to fit a
-number, and it is checkable in the git log.
+`../LAYER2-PROTOCOL.md`, which is the rule this file executes. That is what makes its output a
+pre-registered reading rather than an interpretation shaped to fit a number. What git actually
+establishes, narrowed after the Verifier's finding V7: `../layer2.json` has never existed at any
+commit in this repository. It does NOT establish the order in which this file and the queue
+entry were authored — they landed in the same commit.
 
 Deterministic and offline. It makes no network call and needs no credential. It is NOT run
 inside the credentialled job: interpretation is an act of the collective, in session, and a
@@ -34,18 +36,109 @@ A1 has zero `unmarked-at-capture` rows, so this state is empty at A1 whatever th
 That was written down before the scores existed; this script recomputes the eligible count from
 the data rather than asserting it, so the claim is checked and not merely repeated.
 """
+import hashlib
 import json
 import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 A1 = HERE.parent
+# Repository root, for the inherited-specimen reproduction check below. Resolved by walking up
+# from a1/ rather than by a fixed depth, so a moved directory fails loudly instead of quietly.
+REPO = A1.parent.parent.parent
+SPLIT_SEAL = REPO / "works" / "2026-07-11-split-seal"
 
 # Boundaries inherited verbatim from instrument 014 and unchanged (protocol R2): >=0.90
 # "flagged AI — high", 0.50-0.90 "AI-leaning", 0.10-0.50 "human-leaning", <=0.10 "flagged
 # human — high". Display only; the raw floats are the record.
 FLAG_THRESHOLD = 0.90
 ELIGIBLE_FOR_FLAG_STATE = "unmarked-at-capture"
+
+
+def inherited_reproduction(rows: list[dict]) -> dict:
+    """Which A1 specimens are byte-identical to an instrument-014 specimen already scored?
+
+    ADDED after the Skeptic refuted this arm's claim of "three further true-negative
+    observations" (C4/C3, session 81): A1's camera-control files `c01`/`c02`/`c03` are
+    byte-identical to 014's `c08`/`c09`/`c10`, which the same vendor and model already scored
+    at 0.001 apiece. Scoring them again is not new evidence about cameras. What it IS, and what
+    this function makes it, is a REPRODUCTION CHECK: same bytes, same vendor, same model, weeks
+    later — does the number come back the same? Session 80 ran exactly this check on the Layer-1
+    arm and reported zero differing fields as a positive result. This is its Layer-2 twin.
+
+    Byte-identity is verified here from the files themselves. It is never assumed from a name.
+    """
+    if not SPLIT_SEAL.is_dir():
+        return {"status": "could not check — instrument 014's directory was not found at "
+                          f"{SPLIT_SEAL}"}
+    prior_scores = json.loads((SPLIT_SEAL / "data" / "layer2.json").read_text())["results"]
+    prior_specimens = json.loads((SPLIT_SEAL / "data" / "specimens.json").read_text())
+    by_hash = {}
+    for s in prior_specimens:
+        p = SPLIT_SEAL / "specimens" / s["file"]
+        if p.is_file():
+            by_hash[hashlib.sha256(p.read_bytes()).hexdigest()] = s["id"]
+
+    a1_specimens = {s["id"]: s for s in json.loads((A1 / "specimens.json").read_text())}
+    pairs = []
+    for r in rows:
+        p = A1 / "specimens" / a1_specimens[r["id"]]["file"]
+        if not p.is_file():
+            continue
+        digest = hashlib.sha256(p.read_bytes()).hexdigest()
+        prior_id = by_hash.get(digest)
+        if prior_id is None:
+            continue
+        then = prior_scores.get(prior_id, {}).get("ai_generated")
+        now = r["ai_generated"]
+        pairs.append({
+            "a1_id": r["id"], "instrument_014_id": prior_id, "sha256": digest,
+            "score_2026_07_11": then, "score_at_this_run": now,
+            "identical": (isinstance(then, (int, float)) and isinstance(now, (int, float))
+                          and then == now),
+            "delta": (round(now - then, 6)
+                      if isinstance(then, (int, float)) and isinstance(now, (int, float))
+                      else None),
+        })
+    return {
+        "what_this_is": "same bytes, same vendor and model, scored again weeks later — a "
+                        "reproduction check on the detector, not new evidence about the "
+                        "specimens. Byte-identity verified here by sha256, not assumed.",
+        "why_it_exists": "the Skeptic refuted this arm's claim of 'three further true-negative "
+                         "observations' (session 81): these files were already scored under "
+                         "instrument 014. Reframed rather than dropped.",
+        "pairs": pairs,
+        "all_reproduced": bool(pairs) and all(p["identical"] for p in pairs),
+    }
+
+
+def assert_no_derived_rate(strata: dict) -> None:
+    """Make R6's prohibition checkable instead of merely stated (Skeptic C6, session 81).
+
+    The Skeptic's objection was exact: `strata_descriptive` already holds a stratum-by-tier
+    cross-tabulation, so a single added line could turn it into the detector-flagged rate by
+    provider posture that R6 forbids — and nothing but a comment stood in the way.
+
+    The invariant that closes it: EVERY value under `strata_descriptive` is a whole count, or a
+    mapping of labels to whole counts. A rate is a float. So the moment anyone divides anything
+    here, this refuses to write the file, and the selftest exercises the refusal. It is not a
+    proof of good intent; it is a tripwire that a future edit has to remove ON PURPOSE, in the
+    open, which is all a guard of this kind can honestly be.
+    """
+    for name, st in strata.items():
+        for key, value in st.items():
+            if isinstance(value, bool) or isinstance(value, float):
+                sys.exit(f"R6 guard: strata_descriptive['{name}']['{key}'] is not a whole "
+                         f"count ({value!r}). Every value here must be a count or a mapping of "
+                         "counts — a derived rate over stratum x tier is exactly what the "
+                         "pre-registration forbids (LAYER2-PROTOCOL.md R6).")
+            if isinstance(value, int):
+                continue
+            if isinstance(value, dict) and all(isinstance(v, int) and not isinstance(v, bool)
+                                               for v in value.values()):
+                continue
+            sys.exit(f"R6 guard: strata_descriptive['{name}']['{key}'] is neither a count nor a "
+                     f"mapping of counts ({type(value).__name__}). See LAYER2-PROTOCOL.md R6.")
 
 
 def tier(score: float) -> str:
@@ -112,6 +205,8 @@ def main() -> int:
             st["scored"] += 1
             st["tiers"][r["tier"]] = st["tiers"].get(r["tier"], 0) + 1
 
+    assert_no_derived_rate(strata)
+
     out = {
         "anchor": "A1",
         "reading": "Layer 2 — the detector limb of Article 50(2), read under the rule committed "
@@ -136,6 +231,7 @@ def main() -> int:
                      "not as a finding about the detector or about marking."),
         },
         "strata_descriptive": strata,
+        "inherited_specimen_reproduction": inherited_reproduction(rows),
         "refusals": [
             "No detector-accuracy figure is computed (R6): the S/N specimens' generated "
             "character is the provider's claim about its own gallery page, not verified "

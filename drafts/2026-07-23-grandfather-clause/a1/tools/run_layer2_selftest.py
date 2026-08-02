@@ -16,7 +16,7 @@ all, by construction and not by mocking.
 
 Fixtures are three bytes long and are not specimens. The real `a1/` is never touched.
 
-    python3 run_layer2_selftest.py        # 7 assertions, exit 0 on pass
+    python3 run_layer2_selftest.py        # 11 assertions, exit 0 on pass
 """
 import hashlib
 import json
@@ -97,6 +97,24 @@ def main() -> int:
         r = run(a1, CREDS)
         check("missing specimen file: same refusal, not a traceback",
               r.returncode != 0 and "is missing" in r.stderr and "Traceback" not in r.stderr)
+
+    # --- 4: the total-failure decision (Skeptic C4), unit-tested without a network call --
+    # As first written this runner exited 0 when NOTHING scored, so a dead arm would have been
+    # committed as a green run and the queue entry consumed. The decision now lives in its own
+    # function. The end-to-end path is deliberately NOT exercised: proving it would mean calling
+    # the live interface with bad credentials, and this practice does not make outbound calls to
+    # prove a branch. That limit is stated rather than hidden.
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("rl2", SCRIPT)
+    rl2 = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(rl2)
+    check("total failure: 0 of 17 scored is a failure, not a success",
+          rl2.total_failure(0, 17) is True)
+    check("total failure: a partial run is NOT treated as total failure",
+          rl2.total_failure(1, 17) is False)
+    check("total failure: a full run is not a failure", rl2.total_failure(17, 17) is False)
+    check("total failure: an empty specimen list is not a failure (nothing was attempted)",
+          rl2.total_failure(0, 0) is False)
 
     check("the real a1/ directory was not touched",
           sorted(p.name for p in A1.iterdir()) == a1_before)
