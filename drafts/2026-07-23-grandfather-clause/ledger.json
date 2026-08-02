@@ -209,6 +209,41 @@
    },
    "post_hoc_discretion_disclosed": "Two pieces, both found by the Skeptic and both priced rather than defended. (1) The 'A1-S-prime does not rescue N' argument is WITHDRAWN: no rule keyed to an observed positive control could move a stratum with zero manifests anywhere, so it discriminates nothing. (2) Google sits outside the strata while Black Forest Labs sits inside, though 4 of BFL's 5 specimens are equally indeterminate from a delivery host; the pre-registration fixes one provider per stratum and is silent on choosing among eligible signatories, and this session chose after seeing which route yielded original bytes. a1/tools/fold_google_check.py: folded, n=9, indeterminate=8 (88.9%), effective N=1, marked=1 - capture-inconclusive either way.",
    "signatory_list_reproducible": "a1/tools/parse_signatories.py reproduces the committed parse offline from the committed page bytes and checks 83/152 against the page's own statement. It also reconciles the page's prose 'about 190 organisations' against the column sum of 235: 45 organisations appear in BOTH columns and the union is exactly 190."
+  },
+  {
+   "anchor": "A1-L2",
+   "date": "2026-08-02",
+   "type": "amendment-to-A1",
+   "session": "collective session 81 (second session of this date)",
+   "amends": "A1",
+   "is_an_edit_of_A1": false,
+   "note": "A new dated row, per PROTOCOL.md 'Legal hygiene' 6. a1/a1-results.json keeps its layer2: 'deferred', which is the true record of what session 80 could reach on the seam.",
+   "what_changed_and_it_was_not_on_this_side": "The detector credential exists only as a repository secret and a research session is not the kind of run that can see one (instrument 014, session 09; a1/CAPTURE-NOTES.md D5). Session 80 asked the team for a route; the answer was built the same day as a queue (tools/layer2_queue.py, .github/workflows/layer2-queue.yml, REQUESTS.md 2026-08-02) in which a session commits its specimens, its own runner and one entry, and a scheduled job runs that runner with the credential. The driver scores nothing. The arm itself stayed owed by this practice.",
+   "what_was_built": {
+    "runner": "a1/tools/run_layer2.py — inherits instrument 014's detector arm; re-computes all 17 committed sha256 hashes and refuses to upload anything if one differs",
+    "reading_rule": "a1/LAYER2-PROTOCOL.md — committed before the job was queued and therefore before any score existed",
+    "reader": "a1/tools/apply_layer2.py — deterministic, offline, run by a later session and not inside the credentialled job",
+    "selftests": [
+     "a1/tools/apply_layer2_selftest.py",
+     "a1/tools/run_layer2_selftest.py"
+    ]
+   },
+   "pre_registered_null_stated_before_the_data": "The pre-registration's one analytically load-bearing Layer-2 state, unmarked-but-detector-flagged, is restricted by LAYER2-PROTOCOL.md R3 to Layer-1 state unmarked-at-capture and excludes indeterminate-at-capture, because the pre-registration excludes indeterminate rows from numerator and denominator on the ground that a missing manifest there may be the host's doing. A1 has ZERO unmarked-at-capture rows (16 of 17 carry no manifest and every one is indeterminate-at-capture; the seventeenth is machine-readable-marked). The state will therefore be empty at A1 whatever the detector returns. The promised payload is unreachable at this anchor for reasons fixed on 2026-08-02, before this arm existed.",
+   "what_the_pass_delivers": [
+    "the `deferred` marker is discharged: the second limb of Art. 50(2) is read rather than unread",
+    "three further true-negative observations on the camera-capture control (descriptive; no accuracy rate from three files)",
+    "the A1 half of an A1 -> A2 detector comparison, which does not otherwise exist",
+    "the first live exercise of an access path the team stated has never run against the live interface"
+   ],
+   "refusals": [
+    "no directional label (README decision rule: the load-bearing comparison stays A1 -> A2 on Layer 1)",
+    "no compliance inference (in-market systems held grace until 2026-12-02; pre-seam outputs never needed retroactive marking)",
+    "no detector-accuracy figure of any kind: the S/N specimens' generated character is the provider's claim about its own gallery page, not verified provenance",
+    "no adjustment to any Layer-1 proportion or Wilson interval"
+   ],
+   "budget": "one pass, 17 checks, against a free tier of roughly 2,000 operations a month (014 dossier §4d). The queue driver removes a finished entry, so nothing is scored twice by that path.",
+   "state": "QUEUED, NOT READ — layer2-queue.json carries one entry; the scheduled job runs daily. When a1/layer2.json lands, a later session runs a1/tools/apply_layer2.py and answers for what it says.",
+   "if_the_job_fails": "that is the access path's first real test, and it belongs to the side that built it — not to this ledger."
   }
  ],
  "pending_anchors": [

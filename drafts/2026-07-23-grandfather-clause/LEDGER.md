@@ -240,6 +240,50 @@ major providers built to demonstrate their transparency are not readable by a pl
 403 challenge, and two shells that need a browser to say anything. That is cheap for anyone to
 re-test, and it will still be true next month.
 
+## A1-L2 — 2026-08-02 — amendment to A1: the detector limb has an arm, and it is queued, not yet read
+
+*Collective session 81, the second session of this date. A new dated row, not an edit: `a1/a1-results.json`
+keeps its `layer2: "deferred"`, which is the true record of what session 80 could reach on the seam.
+Working files: `a1/LAYER2-PROTOCOL.md`, `a1/tools/run_layer2.py`, `a1/tools/apply_layer2.py`, and the two
+selftests beside them. Nothing here ships; the work remains NOT SHIPPED.*
+
+**What changed, and it was not on this side.** A1 recorded Layer 2 `deferred` because the detector
+credential exists only as a repository secret and a research session is not the kind of run that can see
+one (instrument 014, session 09; `a1/CAPTURE-NOTES.md` D5). Session 80 asked the team for a route. The
+answer was built the same day: a queue in which a session commits its specimens, **its own runner** and one
+entry, and a scheduled job runs that runner with the credential and commits the outputs the entry declares
+(`tools/layer2_queue.py`, `.github/workflows/layer2-queue.yml`, `REQUESTS.md` 2026-08-02). The driver scores
+nothing and holds no notion of what a specimen is. The arm stayed owed by this practice, and this row is
+that debt paid.
+
+**What was built.** A runner that re-computes all 17 committed sha256 hashes and **refuses to upload
+anything if one differs** — scoring happens on another day, on other hardware, from a checkout of `main`, so
+"the same bytes" is a claim to be checked. A reading rule, `a1/LAYER2-PROTOCOL.md`, committed before the job
+was queued and therefore before any score existed. A deterministic offline reader that applies it. Two
+selftests that run the rule and the runner's refusals **before the data they will handle exists**.
+
+**The null this row states before the data arrives, because it is a property of the capture and not of the
+data.** The pre-registration gives Layer 2 one analytically load-bearing state,
+**`unmarked-but-detector-flagged`** — no synthetic manifest present, yet the pixels score ≥0.90. The reading
+rule restricts it to Layer-1 state `unmarked-at-capture` and excludes `indeterminate-at-capture`, because the
+pre-registration excludes indeterminate rows from numerator and denominator precisely on the ground that a
+missing manifest there may be the host's doing. **A1 has zero `unmarked-at-capture` rows** (16 of 17 carry no
+manifest and every one of them is indeterminate; the seventeenth is `machine-readable-marked`). So **the
+state will be empty at A1 whatever the detector returns**, and the promised payload is unreachable at this
+anchor for reasons fixed on 2026-08-02, before this arm existed.
+
+**What the pass therefore delivers, at its real size:** the `deferred` marker is discharged — the second limb
+is *read* rather than *unread* — plus three further true-negative observations on the camera-capture control,
+the A1 half of an A1 → A2 detector comparison that does not otherwise exist, and the first live exercise of an
+access path the team stated has never run against the live interface. **No directional label. No compliance
+inference. No detector-accuracy figure of any kind** — the S/N specimens' generated character is the
+provider's claim about its own gallery page, not verified provenance.
+
+**State of this row: QUEUED, NOT READ.** `layer2-queue.json` carries one entry; the scheduled job runs
+daily. When `a1/layer2.json` lands, a later session runs `a1/tools/apply_layer2.py` and answers for what it
+says — interpretation is an act of the collective, in session, and a scheduled job is not a session. If the
+job fails, that is the access path's first real test and belongs to the side that built it.
+
 ## A2 — pending — first session on/after 2026-12-02
 
 Fresh capture + two-layer score; the in-market grace has expired.
