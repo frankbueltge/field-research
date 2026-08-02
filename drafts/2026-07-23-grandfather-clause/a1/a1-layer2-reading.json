@@ -1,0 +1,277 @@
+{
+ "anchor": "A1",
+ "capture_date": "2026-08-02",
+ "days_from_seam_to_layer2_scoring": 0,
+ "days_since_seam_at_capture": 0,
+ "inherited_specimen_reproduction": {
+  "all_reproduced": true,
+  "pairs": [
+   {
+    "a1_id": "c01",
+    "delta": 0.0,
+    "identical": true,
+    "instrument_014_id": "c08",
+    "score_2026_07_11": 0.001,
+    "score_at_this_run": 0.001,
+    "sha256": "379aabc7d04ee8c8fb04e18925428463353ab6fb6696ee3d7aa11710c6b2e147"
+   },
+   {
+    "a1_id": "c02",
+    "delta": 0.0,
+    "identical": true,
+    "instrument_014_id": "c09",
+    "score_2026_07_11": 0.001,
+    "score_at_this_run": 0.001,
+    "sha256": "e9a7d020de9edb1c13602f5e1a42fdb67e6ea1728d7f7d88a316cd2e3ce989c9"
+   },
+   {
+    "a1_id": "c03",
+    "delta": 0.0,
+    "identical": true,
+    "instrument_014_id": "c10",
+    "score_2026_07_11": 0.001,
+    "score_at_this_run": 0.001,
+    "sha256": "721e75362ccc4ff943f5140ebc89897aa501d056cfb0dc7a6aeb68382e412cc5"
+   }
+  ],
+  "what_this_is": "same bytes, same vendor and model, scored again weeks later — a reproduction check on the detector, not new evidence about the specimens. Byte-identity verified here by sha256, not assumed.",
+  "why_it_exists": "the Skeptic refuted this arm's claim of 'three further true-negative observations' (session 81): these files were already scored under instrument 014. Reframed rather than dropped."
+ },
+ "layer2_run_date": "2026-08-02",
+ "reading": "Layer 2 — the detector limb of Article 50(2), read under the rule committed at LAYER2-PROTOCOL.md before any score existed",
+ "reading_rule_committed": "2026-08-02 (collective session 81)",
+ "refusals": [
+  "No detector-accuracy figure is computed (R6): the S/N specimens' generated character is the provider's claim about its own gallery page, not verified provenance.",
+  "No directional label is assigned and no Layer-1 proportion or Wilson interval is adjusted (R5): the load-bearing comparison remains A1 -> A2 on Layer 1.",
+  "No compliance inference (README, 'What this is NOT'): in-market systems held grace until 2026-12-02 and pre-seam outputs never needed retroactive marking.",
+  "The detector carries no calibration authority (R2, instrument 014's standing caveat); tiers are display, the raw floats are the record."
+ ],
+ "sha256_all_verified_before_upload": true,
+ "specimens": [
+  {
+   "ai_generated": 0.99,
+   "eligible_for_unmarked_but_detector_flagged": false,
+   "id": "s01",
+   "in_decision_rule": true,
+   "layer1_state": "indeterminate-at-capture",
+   "provider": "Black Forest Labs",
+   "stratum": "S-signatory",
+   "tier": "flagged AI — high"
+  },
+  {
+   "ai_generated": 0.99,
+   "eligible_for_unmarked_but_detector_flagged": false,
+   "id": "s02",
+   "in_decision_rule": true,
+   "layer1_state": "indeterminate-at-capture",
+   "provider": "Black Forest Labs",
+   "stratum": "S-signatory",
+   "tier": "flagged AI — high"
+  },
+  {
+   "ai_generated": 0.99,
+   "eligible_for_unmarked_but_detector_flagged": false,
+   "id": "s03",
+   "in_decision_rule": true,
+   "layer1_state": "indeterminate-at-capture",
+   "provider": "Black Forest Labs",
+   "stratum": "S-signatory",
+   "tier": "flagged AI — high"
+  },
+  {
+   "ai_generated": 0.01,
+   "eligible_for_unmarked_but_detector_flagged": false,
+   "id": "s04",
+   "in_decision_rule": true,
+   "layer1_state": "machine-readable-marked",
+   "provider": "Black Forest Labs",
+   "stratum": "S-signatory",
+   "tier": "flagged human — high"
+  },
+  {
+   "ai_generated": 0.001,
+   "eligible_for_unmarked_but_detector_flagged": false,
+   "id": "s05",
+   "in_decision_rule": true,
+   "layer1_state": "indeterminate-at-capture",
+   "provider": "Black Forest Labs",
+   "stratum": "S-signatory",
+   "tier": "flagged human — high"
+  },
+  {
+   "ai_generated": 0.99,
+   "eligible_for_unmarked_but_detector_flagged": false,
+   "id": "n01",
+   "in_decision_rule": true,
+   "layer1_state": "indeterminate-at-capture",
+   "provider": "Stability AI",
+   "stratum": "N-nonsignatory",
+   "tier": "flagged AI — high"
+  },
+  {
+   "ai_generated": 0.99,
+   "eligible_for_unmarked_but_detector_flagged": false,
+   "id": "n02",
+   "in_decision_rule": true,
+   "layer1_state": "indeterminate-at-capture",
+   "provider": "Stability AI",
+   "stratum": "N-nonsignatory",
+   "tier": "flagged AI — high"
+  },
+  {
+   "ai_generated": 0.99,
+   "eligible_for_unmarked_but_detector_flagged": false,
+   "id": "n03",
+   "in_decision_rule": true,
+   "layer1_state": "indeterminate-at-capture",
+   "provider": "Stability AI",
+   "stratum": "N-nonsignatory",
+   "tier": "flagged AI — high"
+  },
+  {
+   "ai_generated": 0.99,
+   "eligible_for_unmarked_but_detector_flagged": false,
+   "id": "n04",
+   "in_decision_rule": true,
+   "layer1_state": "indeterminate-at-capture",
+   "provider": "Stability AI",
+   "stratum": "N-nonsignatory",
+   "tier": "flagged AI — high"
+  },
+  {
+   "ai_generated": 0.99,
+   "eligible_for_unmarked_but_detector_flagged": false,
+   "id": "n05",
+   "in_decision_rule": true,
+   "layer1_state": "indeterminate-at-capture",
+   "provider": "Stability AI",
+   "stratum": "N-nonsignatory",
+   "tier": "flagged AI — high"
+  },
+  {
+   "ai_generated": 0.001,
+   "eligible_for_unmarked_but_detector_flagged": false,
+   "id": "c01",
+   "in_decision_rule": true,
+   "layer1_state": "manifest-not-synthetic",
+   "provider": "Truepic (Lens SDK hardware capture)",
+   "stratum": "C-camera-control",
+   "tier": "flagged human — high"
+  },
+  {
+   "ai_generated": 0.001,
+   "eligible_for_unmarked_but_detector_flagged": false,
+   "id": "c02",
+   "in_decision_rule": true,
+   "layer1_state": "manifest-not-synthetic",
+   "provider": "Truepic (Lens SDK hardware capture)",
+   "stratum": "C-camera-control",
+   "tier": "flagged human — high"
+  },
+  {
+   "ai_generated": 0.001,
+   "eligible_for_unmarked_but_detector_flagged": false,
+   "id": "c03",
+   "in_decision_rule": true,
+   "layer1_state": "manifest-invalid",
+   "provider": "Nikon (camera capture)",
+   "stratum": "C-camera-control",
+   "tier": "flagged human — high"
+  },
+  {
+   "ai_generated": 0.99,
+   "eligible_for_unmarked_but_detector_flagged": false,
+   "id": "x01",
+   "in_decision_rule": false,
+   "layer1_state": "indeterminate-at-capture",
+   "provider": "Google",
+   "stratum": "X-observation-only",
+   "tier": "flagged AI — high"
+  },
+  {
+   "ai_generated": 0.99,
+   "eligible_for_unmarked_but_detector_flagged": false,
+   "id": "x02",
+   "in_decision_rule": false,
+   "layer1_state": "indeterminate-at-capture",
+   "provider": "Google",
+   "stratum": "X-observation-only",
+   "tier": "flagged AI — high"
+  },
+  {
+   "ai_generated": 0.99,
+   "eligible_for_unmarked_but_detector_flagged": false,
+   "id": "x03",
+   "in_decision_rule": false,
+   "layer1_state": "indeterminate-at-capture",
+   "provider": "Google",
+   "stratum": "X-observation-only",
+   "tier": "flagged AI — high"
+  },
+  {
+   "ai_generated": 0.99,
+   "eligible_for_unmarked_but_detector_flagged": false,
+   "id": "x04",
+   "in_decision_rule": false,
+   "layer1_state": "indeterminate-at-capture",
+   "provider": "Google",
+   "stratum": "X-observation-only",
+   "tier": "flagged AI — high"
+  }
+ ],
+ "specimens_attempted": 17,
+ "specimens_scored": 17,
+ "strata_descriptive": {
+  "C-camera-control": {
+   "layer1_states": {
+    "manifest-invalid": 1,
+    "manifest-not-synthetic": 2
+   },
+   "n": 3,
+   "scored": 3,
+   "tiers": {
+    "flagged human — high": 3
+   }
+  },
+  "N-nonsignatory": {
+   "layer1_states": {
+    "indeterminate-at-capture": 5
+   },
+   "n": 5,
+   "scored": 5,
+   "tiers": {
+    "flagged AI — high": 5
+   }
+  },
+  "S-signatory": {
+   "layer1_states": {
+    "indeterminate-at-capture": 4,
+    "machine-readable-marked": 1
+   },
+   "n": 5,
+   "scored": 5,
+   "tiers": {
+    "flagged AI — high": 3,
+    "flagged human — high": 2
+   }
+  },
+  "X-observation-only": {
+   "layer1_states": {
+    "indeterminate-at-capture": 4
+   },
+   "n": 4,
+   "scored": 4,
+   "tiers": {
+    "flagged AI — high": 4
+   }
+  }
+ },
+ "unmarked_but_detector_flagged": {
+  "count": 0,
+  "eligible_ids": [],
+  "eligible_rows": 0,
+  "flagged_ids": [],
+  "note": "Requires Layer-1 state 'unmarked-at-capture' AND ai_generated >= 0.90. indeterminate-at-capture rows are NOT eligible (protocol R3). If eligible_rows is 0 this state is empty as a property of the capture, not as a finding about the detector or about marking."
+ },
+ "unscored_specimens": []
+}

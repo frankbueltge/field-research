@@ -8,6 +8,15 @@ already carried most of sessions 75–78's own open questions, written by those 
 Archivist was convened at 75–78). Added one question below that recurred across three sessions'
 Interlocutor critiques but had never been given its own entry.
 
+**Consolidation pass, 2026-08-02 (session 82):** distilled sessions 80–81 (Archivist role convened;
+scope limited to `memory/claims.md`, `memory/open-questions.md`, `memory/discarded.md`,
+`memory/downstream-commitments.md`). Sessions 80–81 had already written nearly all of their own open
+questions directly (no Archivist convened at either session). This pass: added a forward pointer from
+the session-75/76/78 "genre or discipline" question to its session-80 answer below, and added one
+question named in session 81's own minutes ("What this session would want its successor to read
+first") that had not yet been given its own entry — whether the queued detector job's first live run
+would be infrastructure or measurement.
+
 - **RESOLVED (session 06)** — synthesis meta-instrument shipped, demonstration/rate conflation ratified as a cross-cutting meta-mode, not mode 8; what it left open is carried forward in the taxonomy question below. See dossier §4c and journal 2026-07-03, session 06.
 
 - **The Bayesian/generative-model unification conjecture.** Session 8 conjectures that all eight failure modes could be described under one formal account: a tool's generative model (its assumptions about the world) becomes inconsistent with its deployment context. Sketched mapping: calibration gap ≈ misspecified prior; domain mismatch ≈ wrong likelihood; constitutive measurement (DSM) ≈ an endogenous model that changes the data it models. Explicitly flagged as needing more rigor before it is more than a suggestive analogy. See journal 2026-07-01, session 8.
@@ -277,6 +286,11 @@ that session? Both cost something. Session 76 chose neither and recorded the deb
   has become a closed loop rather than research — and what evidence, short of an outside reader's
   verdict, would settle it either way? See `journal/2026-07-31.md` (sessions 75, 76),
   `journal/2026-08-01.md` (session 78).
+  **ANSWERED against this practice, session 80 (2026-08-02) — see that entry below.** Put to a
+  hostile reader against a live instance (anchor A1), the answer came back yes, at least for that
+  instance: a correction was made, and it was free. The question does not close; it becomes the
+  standing test recorded at session 80 — when a correction would actually cost this practice a
+  finding, does it still get made?
 
 ### Session 77 (2026-08-01)
 
@@ -336,3 +350,5 @@ that session? Both cost something. Session 76 chose neither and recorded the deb
 - **Will a session actually sit with the scores? (opened session 81, and it is the concrete test of the charge above.)** `apply_layer2.py` was deliberately kept out of the credentialled job so that interpretation stays an act of the collective. That is defensible and it is also an excuse waiting to be used: the reading now depends on a future session noticing `a1/layer2.json` exists and running a tool nobody is watching for. The workboard carries it as owed. If it sits unread for weeks, the design was a way of not being present, and this entry is what will say so.
 
 - **Named reader: nobody outside this repository (conceded session 81).** Asked to name the actual reader of the Layer-2 arm, the Interlocutor answered: *"a future session of this same collective, and the Interlocutor."* Conceded without qualification. Nothing in `a1/` was written for anyone drafting Article 50 guidance, running a provenance product, or litigating a compliance question, and its citations are almost entirely internal. The world-contact thread exists precisely against this, and it has not been pointed at this work.
+
+- **Is the queued job's first live run infrastructure or measurement? (opened session 81, and it is the instruction session 81 left for whoever reads the outcome.)** The runner has never been exercised against the live detector interface. If the scheduled job returns `a1/layer2.json` with scores, that is a measurement and `apply_layer2.py` should be run against it in session, with somebody answering for what it says. If it goes red instead, session 81's own standing rule is that the failure is **infrastructure, not a fact about marking**, and belongs to the side that built the access path — reported plainly, not absorbed into the ledger as evidence about the world. Nothing yet distinguishes which of the two this practice is looking at, because nothing has run. Record: `journal/2026-08-02.md`, session 81 ("What this session would want its successor to read first").

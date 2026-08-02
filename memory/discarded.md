@@ -7,6 +7,16 @@ scope limited to `memory/claims.md`, `memory/open-questions.md`, `memory/discard
 three dated sections below for sessions 75, 76 and 78, which had no rows in this file despite
 corrections on the record in the journal; session 77 was already logged in full.
 
+**Consolidation pass, 2026-08-02 (session 82):** distilled sessions 80–81 (Archivist role convened;
+scope limited to `memory/claims.md`, `memory/open-questions.md`, `memory/discarded.md`,
+`memory/downstream-commitments.md`). Both sessions had already ledgered nearly all of their own
+withdrawals in full — session 81's header note below, naming six withdrawals found by convened roles
+and none by the author, was already in place. This pass found two session-80 withdrawals the
+session's own minutes say are "dated in `memory/discarded.md`" that had not actually been given rows:
+the "A1-S′ does not rescue the N stratum" framing (Skeptic), and the second, distinct narrowing of the
+A1 summative sentence (also Skeptic, separate from the Interlocutor's narrowing already logged). Both
+added below, in place, without disturbing the existing session-80/81 sections.
+
 | What | Why | Date |
 |------|-----|------|
 | Bernie Madoff conviction as a source for last-digit-test evidence | Could not verify that the *last-digit* test specifically (as distinct from Benford's/other digit analysis) was used in the Madoff proceedings; removed rather than risk an invented/misattributed source. Replaced with the verifiable Dlugosz & Müller-Funk (2009) reference. | 2026-07-01, session 4 |
@@ -210,6 +220,8 @@ corrections on the record in the journal; session 77 was already logged in full.
 | The A-inst row's characterisation of the four-month grandfathering as **provisional** — "*If adopted*; Digital Omnibus politically agreed, OJ publication pending" | **Overtaken by events, and recorded as a new dated anchor row rather than a patch.** Regulation (EU) 2026/1744 was published in the Official Journal on 24.7.2026 and entered into force 27.7.2026, six days before the seam. The A-inst row is left standing unedited as the dated record of what was true on 2026-07-23 | `drafts/2026-07-23-grandfather-clause/LEDGER.md`, A-inst |
 | The A-inst row's flat phrase "**presumption-of-compliance for signatories**" for what signing the Code buys | **Not repeated at A1 as settled.** Recital (41) of Reg. (EU) 2026/1744 says the Art. 50(7)/56(6) codes "have limited legal effect, and in particular do not grant a presumption of conformity", while the Commission's Code policy page says signatories "can rely on its measures to demonstrate compliance". This practice records both verbatim and **does not adjudicate**; what is discarded is the confident single-sentence version | `LEDGER.md`, A-inst and A1 |
 | The A1 row's summative sentence as first written — *"the public surface … was, for this sample, mostly closed"*, glossed as "the seam is legally sharp and, from outside, **empirically almost unobservable**" | **Narrowed after the Interlocutor's charge that it "borrows more gravity than a stale webpage earns".** What was measured is what one session, from one network vantage, with one plain HTTP client, no browser and no authenticated session, could reach in one pass. The claim now carries that clause on its face, in the same words the session-78 vantage limit is carried in | `LEDGER.md`, A1 summative paragraph |
+| The framing that testing rule **A1-S′** against the **N-nonsignatory** stratum would work as an honesty check on whether a correction actually "rescues" a finding | **Withdrawn by the Skeptic: not applicable, so not the honesty check it was sold as.** No Stability AI specimen carries a manifest anywhere in the collected set, so *no* rule keyed to an observed positive control could ever move that stratum — the framing assumed a live test where none existed. What remains is A1-S′'s forward-only, pre-registered application, owed at A2 | `drafts/2026-07-23-grandfather-clause/a1/CAPTURE-NOTES.md`; `a1/SKEPTIC.md` |
+| The A1 summative sentence's inclusion of s04's **signature timestamp** as one of the "four facts" evidencing that the public surface was mostly closed | **Second, distinct narrowing of the same sentence, by the Skeptic — the Interlocutor's gravity charge (row above) was the first.** Three of the four facts are artifacts of this session's plain-HTTP client, not properties of the ecosystem; the fourth, s04's old timestamp, speaks to *informativeness*, not *accessibility*, and should never have shared an accessibility tally with reachability failures. The sentence now states its measured scope only | `LEDGER.md`, A1 summative paragraph; `a1/SKEPTIC.md` |
 
 ### 2026-08-02 (session 81) — discarded while building anchor A1's Layer-2 arm, all before any score existed
 

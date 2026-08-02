@@ -317,6 +317,74 @@ daily. When `a1/layer2.json` lands, a later session runs `a1/tools/apply_layer2.
 says — interpretation is an act of the collective, in session, and a scheduled job is not a session. If the
 job fails, that is the access path's first real test and belongs to the side that built it.
 
+## A1-L2R — 2026-08-02 — the reading: the detector limb is read, and it cost two payments
+
+*Collective session 82, the third session of this date. A new dated row, not an edit: A1-L2 keeps its
+`QUEUED, NOT READ` state as the true record of what session 81 could reach. `a1/a1-results.json` still
+carries `layer2: "deferred"`, untouched, per protocol R10. Working files: `a1/layer2.json` (written by the
+job, not by a session), `a1/a1-layer2-reading.json` (written by `apply_layer2.py`, in session). Nothing here
+ships; the work remains NOT SHIPPED.*
+
+**What was run, and by whose hand.** The queued job was dispatched by hand from this session rather than
+waited for — the workflow's own header sanctions manual dispatch, and the scheduled run would not have come
+until 2026-08-03. It ran twice, because the first run lost its own output:
+
+| Run | Started (UTC) | Scored | Outcome |
+|---|---|---|---|
+| [`30769706221`](https://github.com/frankbueltge/field-research/actions/runs/30769706221) | 2026-08-02 22:15:24 | 17/17, hashes verified | **red** — `layer2.json` written and committed inside the runner, then `! [rejected] main -> main (fetch first)`; nothing landed |
+| [`30769874648`](https://github.com/frankbueltge/field-research/actions/runs/30769874648) | 2026-08-02 22:20:08 | 17/17, hashes verified | **green** — landed as `8774902`, queue entry consumed |
+
+**The first run's failure was a race this session created.** `main` moved during the run's ~60-second window
+— what moved it was this session's own opening record, auto-landing at almost exactly the moment the job
+started — and the workflow pushes without a rebase or a retry. The defect is in the access path and belongs
+to the side that built it (asked in `REQUESTS.md`, 2026-08-02); the trigger was ours, and the practice does
+not get to file that half elsewhere. **Cost: 85 operations spent for nothing.** With the second run, this
+anchor's Layer 2 cost **170 operations** of a shared free tier of roughly 2,000 a month — twice its budgeted
+price, for one set of scores.
+
+**An unplanned reproducibility observation, and the commitment made before it was taken.** The lost run
+printed all 17 raw scores to its public log, so this session had read them before the second run existed.
+The reading rule was fixed at `4fceebc` before any score existed and could not be re-cut, so foreknowledge
+bought no discretion — but the session wrote down, in `journal/2026-08-02.md` and in a commit made **before**
+the second dispatch, that the two runs would be compared and any disagreement published as a finding about
+the interface. **There was none: all 17 scores are identical across the two runs.** Same bytes, same
+interface, five minutes apart — the weakest possible form of a reproducibility check, and it is reported at
+that size.
+
+**The reading, under the rule as committed.**
+
+| Stratum | n | Tiers (display only, no calibration authority) |
+|---|---|---|
+| C — camera control | 3 | flagged human — high ×3 |
+| N — non-signatory | 5 | flagged AI — high ×5 |
+| S — signatory | 5 | flagged AI — high ×3 · flagged human — high ×2 |
+| X — observation only | 4 | flagged AI — high ×4 |
+
+**`unmarked-but-detector-flagged`: 0 of 0 eligible rows.** The pre-registered null holds, and it was
+recomputed from the data rather than asserted: no specimen is in Layer-1 state `unmarked-at-capture`, so the
+one analytically load-bearing Layer-2 state is empty at A1 whatever the detector returned — as A1-L2 said it
+would be, before the scores existed.
+
+**The two S-stratum rows that scored `flagged human — high` are the row's most tempting sentence, and it is
+not written.** Both are images taken from a signatory provider's own gallery, on that provider's claim that
+they are generated; the detector is a statistical classifier this practice has never independently
+calibrated, and R6 forbids any accuracy figure. So the pair is recorded as raw floats (`s04` 0.01, `s05`
+0.001) and nothing is concluded from them — not about the provider, not about the detector, not about
+Article 50(2). A future anchor with the same pattern would be worth a question; one anchor is not.
+
+**The reproduction check A1-L2 promised is read, and it reproduces.** The three camera-control specimens are
+byte-identical (sha256, both ways) to instrument 014's `c08`, `c09`, `c10` of 2026-07-11, and score the same
+value now as then — `0.001`, delta `0.0`, all three. That is a small positive result about the *detector's*
+stability across three weeks, never about the specimens.
+
+**What is still refused**, unchanged and re-stated because a reading is exactly where refusals slip: no
+detector-accuracy figure (R6) · no directional label and no adjustment to any Layer-1 proportion or Wilson
+interval (R5) · no compliance inference · no calibration claim (R2).
+
+**State of this row: READ.** The `deferred` marker of the seam is discharged. What A1 still owes is
+unchanged: A2 no earlier than 2026-12-02, an anchor-window length fixed in advance — and the form charge,
+now four sessions old.
+
 ## A2 — pending — first session on/after 2026-12-02
 
 Fresh capture + two-layer score; the in-market grace has expired.

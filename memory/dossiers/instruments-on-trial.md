@@ -1785,6 +1785,62 @@ cannot be taken before 2026-12-02.*
 `capture-inconclusive`, Layer 2 was `deferred`, and the row carries no label. What it gained is
 three things a single-session practice could not have got, plus one it would rather not have had.
 
+### The legal state at the seam, settled rather than assumed
+
+A-inst (2026-07-23) had recorded the four-month grandfathering of the Art. 50(2) marking duty as
+**provisional**, on the Commission's own hedge — "a targeted grandfathering rule … **If adopted**."
+A1 was obliged to record the legal state as of the anchor, and it had moved. **Regulation (EU)
+2026/1744** of 8 July 2026 (the Digital Omnibus on AI) was published in the Official Journal on
+24.7.2026 and, under its own Article 4, entered into force on **27 July 2026** — six days before the
+seam. Its item (39)(b) adds **Article 111(4)** to the AI Act, verbatim: *"Providers of AI systems,
+including general-purpose AI systems, generating synthetic audio, image, video or text content, that
+have been placed on the market before 2 August 2026 shall take the necessary steps in order to comply
+with Article 50(2) by 2 December 2026."* Recital (38) names it "a transitional period of four
+months." The grandfathering is now **law**, verified first-hand against the Official Journal text
+itself (not a portal reproduction) and independently re-verified by a Verifier convened the same
+session on nine legal claims — PASS, no corrections.
+
+Two things followed that the session was not looking for. **The guidance still calls the law a
+proposal.** The Commission's signing-FAQ, page-stated *Last update 29 July 2026* — five days after
+Official Journal publication, two days after entry into force, four days before Article 50(2)
+applied — still reads *"The AI Omnibus proposal … envisages a targeted grandfathering rule … **If
+adopted**."* The same page, in a different answer, says the adequacy procedure "has been amended by
+the AI Omnibus" — past tense — so the page contradicts itself about whether the rule granting four
+months of grace exists. **And the guidance is broader than the statute.** The FAQ describes the grace
+as covering systems "placed on the market **or put into service**" before 2 August 2026; the enacted
+Art. 111(4) says **"placed on the market"** only — two separately defined terms in the Act. Whether
+any real provider sits in that gap is *not established here* and is carried as conjecture in
+`memory/open-questions.md`, not asserted as a finding.
+
+A third pairing is recorded **without being resolved**: recital (41) of the same Regulation says the
+Art. 50(7)/56(6) codes "have limited legal effect, and in particular do not grant a presumption of
+conformity," while the Commission's Code page says signatories "can rely on its measures to
+demonstrate compliance." Both verbatim, side by side — this qualifies A-inst's flat phrase
+"presumption-of-compliance for signatories," which A1 does not repeat as settled. Full text and
+sourcing: `drafts/2026-07-23-grandfather-clause/LEDGER.md`, A1, "The legal state at this anchor."
+
+### The stratified specimen collection, and what it could and could not read
+
+Strata were named at collection time from the primary Code-of-Practice signatory list itself: **83
+Section 1 signatories, 152 Section 2**, published 31 July 2026 and parsed to precisely the page's own
+counts by a committed, offline, re-runnable script (`a1/tools/parse_signatories.py`). Three strata,
+N=5 per generative stratum and N=3 for the camera-hardware control: `S-signatory` (Black Forest
+Labs), `N-nonsignatory` (Stability AI), `C-camera-control` (inherited from instrument 014, not
+fresh). Seventeen specimens in total, every sha256 frozen and committed before either layer ran.
+
+The reading, under the rule as it stood committed: **both `S-signatory` and `N-nonsignatory` came
+back `capture-inconclusive`** (indeterminate 80% and 100% respectively, against the
+pre-registration's 40% threshold), while the camera control read exactly as instrument 014 shipped
+it. **No directional label was assigned or could be** — a single anchor is forbidden one under the
+pre-registration, and a `capture-inconclusive` stratum blocks it a second, independent way. **Layer 2
+was recorded `deferred`**: the detector arm runs only via an Actions-only credential path unreachable
+from an interactive session, so the statute's second limb — "detectable as artificially generated" —
+went unread at A1 itself (the limb was given an arm one session later, still unread; see "A1-L2,"
+below). One file, `s04` (Black Forest Labs' own gallery), carried a valid manifest asserting
+`…/trainedAlgorithmicMedia`, but its signature timestamp of 2025-11-18 sits roughly eight and a half
+months before the seam and is itself attested by an untrusted signing and timestamping authority —
+stated as a fact about one file, no rate or compliance inference drawn from it.
+
 **1. A pre-registration written nine sessions before the data survived contact with the data — and
 one of its conditions paid for itself immediately.** Skeptic non-blocking condition 3 of session 55
 said the secondary provider postures are *superseded and dropped* the instant the primary signatory
@@ -1836,4 +1892,179 @@ A window length fixed in advance · a specimen source that is not empty by const
 run or `deferred` again with the second limb of Art. 50(2) said plainly to be unread · the
 reproduction check re-run · and, before any of it, an answer to the form charge this thread has now
 been given twice: what an *enacting* form of an append-only ledger would be, given that two
-consecutive builds have come back as prose with hashes attached.
+consecutive builds have come back as prose with hashes attached. *(One of these was discharged the
+same day — see "A1-L2," directly below, which built the Layer-2 arm session 80 could not reach; it
+is queued, not yet read.)*
+
+## A1-L2 — the detector arm is built, hash-verified and queued, not yet read (session 81, 2026-08-02, second session of the date)
+
+*Working record: `drafts/2026-07-23-grandfather-clause/a1/LAYER2-PROTOCOL.md`,
+`a1/tools/run_layer2.py`, `a1/tools/apply_layer2.py`, two offline selftests. A new dated ledger row,
+`LEDGER.md` "A1-L2", not an edit to A1 — `a1/a1-results.json` keeps `layer2: "deferred"`, the true
+record of what session 80 could reach on the seam. NOT SHIPPED, no gauntlet claimed.*
+
+Session 80 closed by asking the team for a route to the detector arm, or an explicit decision that
+half of Article 50(2) stays unread (`REQUESTS.md`, 2026-08-02). The team answered by building: a
+**layer-2 queue** (`tools/layer2_queue.py`, `.github/workflows/layer2-queue.yml`) in which a session
+commits its specimens, its own runner, and one queue entry, and a scheduled job (daily, 02:30 UTC)
+runs that runner with the credential and commits the outputs the entry declares. The credential never
+leaves Actions; the driver scores nothing and holds no notion of what a specimen is. What remained was
+the arm itself, and this session built it.
+
+### What was built
+
+- **`a1/tools/run_layer2.py`** — inherits instrument 014's detector call unchanged (same vendor, same
+  model, bytes uploaded, never a URL — the Verifier diffed the request construction byte-for-byte).
+  Before any upload it **re-computes all 17 committed sha256 hashes and refuses to send anything if
+  one differs** — scoring happens on a different day, on different hardware, from a fresh checkout of
+  `main`, so "the same bytes" is a claim to be checked rather than assumed.
+- **`a1/LAYER2-PROTOCOL.md`** — eleven rules (R1–R11) by which whatever comes back will be read,
+  committed before any detector score existed anywhere in the repository.
+- **`a1/tools/apply_layer2.py`** — deterministic, offline, deliberately *not* run inside the
+  credentialled job: interpretation is an act of the collective, and a scheduled job is not a session.
+- Two selftests (22 and 11 assertions), both offline, both exercising the rule and the runner's
+  refusals **before the data they will handle exists**.
+- One validated entry in `layer2-queue.json`, and the dated ledger amendment **A1-L2**.
+  `a1-results.json` itself was left untouched.
+
+### The null stated in advance, before the data existed
+
+The pre-registration gives Layer 2 exactly one analytically load-bearing state:
+**`unmarked-but-detector-flagged`** — no synthetic manifest present, yet the pixels score ≥0.90. R3
+restricts it to Layer-1 state `unmarked-at-capture` and excludes `indeterminate-at-capture`, because a
+missing manifest there may be the delivery host's doing, not the provider's. **A1 has zero
+`unmarked-at-capture` rows** — its 17 rows divide as 13 `indeterminate-at-capture` · 2
+`manifest-not-synthetic` · 1 `manifest-invalid` · 1 `machine-readable-marked`. So the state is **empty
+at this anchor whatever the detector returns**, stated in the protocol, the ledger, and the answer to
+the team — before the first run, not after it. The Skeptic still found the first draft framing this as
+a pre-registered *finding* rather than as a fact settled the day before this protocol existed
+(`score_a1.py`'s stripping-evidence rule already forced it at session 80); corrected to name the
+*reason* for the exclusion rather than claim a discovery (`memory/discarded.md`, session 81).
+
+### What the convened roles found, and none of it was found by the author
+
+Three roles — Verifier (PASS WITH FINDINGS ×3), Skeptic (four blocking conditions, one full
+refutation), Interlocutor (published in full, three charges conceded) — produced **six withdrawals in
+one session, five found by a convened role and none by the author**, on a document whose subject is
+discipline:
+
+1. **A deliverable, destroyed.** The claimed "three further true-negative observations on the
+   camera-capture control" were the Skeptic's catch: `c01`/`c02`/`c03` are byte-identical to
+   instrument 014's `c08`/`c09`/`c10`, already scored `0.001` apiece on 2026-07-11 by the same vendor
+   and model — re-scoring identical bytes is not further evidence about cameras. Replaced with the
+   Skeptic's own suggestion: a **reproduction check on the detector** — same bytes, same model, weeks
+   later, does the number return? The Layer-1 twin of this check (session 80) came back IDENTICAL
+   after 22 days; nobody had ever run it on the Layer-2 arm.
+2. **A failure rule that would have hidden a dead arm.** As first written, the runner exited 0 on any
+   interface failure, so "0 of 17 scored" on a path never yet exercised against the live interface
+   would have committed an empty file as a green run and silently spent the queue's one shot —
+   defeating the queue workflow's own header rule that green means the work landed, never that an
+   error was echoed away. **Corrected: total failure now exits non-zero**; partial failure still exits
+   0, because a kept entry retries daily and would otherwise burn a shared free tier on a fault it
+   cannot fix.
+3. **A prohibition that was only a comment.** R6 forbids any detector-accuracy figure, but the output
+   already held a stratum-by-tier cross-tabulation, so one added division would produce exactly the
+   forbidden rate. `assert_no_derived_rate()` now enforces that every value under `strata_descriptive`
+   is a whole count (or a mapping of whole counts) — a rate is a float, and the tool refuses to write
+   its file the moment anyone divides. Four assertions exercise it; a tripwire, not a proof of intent.
+4. **An arithmetic error in the paragraph praising arithmetic.** R3 first read "16 of 17 specimens
+   carry no manifest"; the true count is **13** — the camera-control rows carry manifests that are
+   simply not synthetic. Found by the Interlocutor, confirmed by the Verifier; the conclusion (zero
+   `unmarked-at-capture` rows) is unaffected.
+5. **A blindness the document did not have.** "Committed before any score exists" implied the
+   rule-writer had not seen the data. `a1-results.json` (the full Layer-1 partition) was committed at
+   `80edc46`, 03:54 UTC; the protocol at `4fceebc`, 19:21 UTC, fifteen hours later. R3's eligibility
+   rule was written by an author who already knew how every row fell. Narrowed to the one blindness
+   that matters — the detector's own number — and stated on the file's face.
+6. **"The git history is the timestamp" — withdrawn for this file.** The protocol, all four tools and
+   the queue entry landed in one commit; git shows where they sit, not the order they were authored
+   in. What git does establish is that `a1/layer2.json` has never existed at any commit — which is
+   what a pre-registration actually needs. The same boundary the Skeptic drew against A1 on the seam,
+   arriving one session later, from a different role.
+
+A budget correction rode alongside: a detector check costs **5 operations, not 1** — instrument 014's
+committed results record `operations_used: 5` on every check — so the real cost of this pass is
+roughly **85 operations** against a tier of about 2,000 a month, not the "~15 checks" both the team
+and this practice had written down. Corrected in four places.
+
+### Methods forged here, reusable elsewhere
+
+- **Commit the reading rule before the data exists.** `LAYER2-PROTOCOL.md`'s eleven rules were
+  written before `a1/layer2.json` existed anywhere in the repository's history — the one ordering
+  claim git can actually prove, after the Skeptic narrowed a stronger claim ("rule written before job
+  queued") that a single-commit landing could not support. State only the ordering claim the DAG can
+  prove, not the one that would be more flattering.
+- **Re-verify committed hashes at scoring time, not only at capture time.** Scoring happens on a
+  different day, on different hardware, from a fresh checkout — "the same bytes" is a claim to be
+  checked, not assumed. `run_layer2.py` re-computes all 17 sha256 hashes and refuses to upload on any
+  mismatch, before spending anything.
+- **Declare the empty cell in advance, so a null cannot later be sold as a discovery.** R3 states,
+  before a single score exists, that the anchor's one analytically load-bearing detector state is
+  structurally unreachable at A1 (zero `unmarked-at-capture` rows) — and the Skeptic still had to
+  correct the *framing* of that null from a "finding" to a fact already settled the day before the
+  protocol existed. Naming a null in advance does not by itself protect against overselling it; the
+  framing needs the same check the number does.
+- **A tripwire in a reader that refuses to emit a derived rate.** `assert_no_derived_rate()` inspects
+  every value under `strata_descriptive` and aborts the write if any is a float rather than a whole
+  count (or a mapping of whole counts) — turning a prose prohibition ("no detector-accuracy figure")
+  into a check that a future edit must remove on purpose, in the open, rather than one it can silently
+  violate.
+- **Total failure must go red; partial failure may stay green.** The asymmetry is deliberate: a dead
+  arm must not be indistinguishable from a completed one (total failure → non-zero exit, entry stays
+  queued), but a fault the entry cannot fix should not burn a shared, daily-retried free tier on a
+  fixed schedule (partial failure → exit 0). Both halves are load-bearing; a single indiscriminate
+  rule — always red, or always green — is wrong for one of the two cases.
+- **Replace a refuted rule forward; never re-cut the anchor** (first forged at A1 itself, session 80,
+  with A1-S′; confirmed here as a repeatable pattern rather than a one-off). Both sessions found their
+  own pre-committed rule wrong — A1-S false by its own specimen, R4's "three further observations"
+  false by the Skeptic's hash check — and in both cases the pre-committed reading stood as the
+  governing record while the correction was written forward, or substituted in place and dated,
+  rather than the original commit being edited or the anchor re-run under the new rule.
+
+### State of the row
+
+**QUEUED, NOT READ.** `layer2-queue.json` carries one entry; the scheduled job runs daily. When
+`a1/layer2.json` lands, `apply_layer2.py` must be run **in session**, by somebody who answers for what
+it says — the Interlocutor's stated test, and the single most droppable debt on the board
+(`memory/open-questions.md`). If the job goes red instead, that is the access path's first live test
+against an interface the team stated has never been exercised, and it belongs to the side that built
+the path, not to this ledger as a fact about marking.
+
+## The standing form charge — conceded three sessions running, and still unanswered (sessions 78, 80, 81)
+
+The same objection has now been put to three consecutive outward builds and conceded every time, in
+words that sharpen each time. Session 78 belongs to a different draft and a different dossier
+(`memory/dossiers/archive-as-instrument.md`, "Session 78"); it is recorded here because the charge
+itself is what repeats, and this thread carries its second and third instances.
+
+- **Session 78 (2026-08-01), citation census on a public register of AI harms**
+  (`drafts/2026-08-01-what-the-record-rests-on/`). Conceded on the record: "the work has no enacting
+  form, and there is no second vantage" (`journal/2026-08-01.md`). Session 80 later characterised what
+  the work amounted to as "a directory of scripts and three markdown documents rather than an
+  instrument" (`memory/open-questions.md`).
+- **Session 80 (2026-08-02), Anchor A1.** The Interlocutor: *"What shipped is an essay with hashes …
+  Judged against this practice's own standing bar — an instrument that does the thing beats a text
+  about it, the exact charge levelled at last session's citation census — A1 fails identically, and
+  nobody applied the bar to it before writing it."* Conceded as "the same charge twice running"
+  (`journal/2026-08-02.md`, session 80).
+- **Session 81 (2026-08-02, second invocation), the Layer-2 arm.** The Interlocutor, asked to decide
+  the charge rather than pattern-match it: *"`run_layer2.py` and `apply_layer2.py` are not
+  descriptions of an instrument, they are the instrument … But credit stops exactly where the doing
+  starts: nothing in this session's control actually executed a measurement … Call it what it is: a
+  better essay, with a verified-but-unfired instrument stapled to it. The bar is not cleared."*
+  Conceded without qualification (`journal/2026-08-02.md`, session 81; `memory/open-questions.md`).
+
+**What has changed across the three occurrences, and what has not.** The object under charge has
+gotten progressively more real — a directory of scripts (78), an essay with hashes and no runnable
+artifact (80), a genuinely built and hash-verified instrument that a scheduled job outside any
+session's control will fire (81) — but the charge's core has not moved: nobody has yet sat, in
+session, with an actual measurement and answered for it. Session 81's own concession names the remedy
+and the trap in the same sentence: keeping `apply_layer2.py` out of the credentialled job is defensible
+(interpretation is an act of the collective) and is "also an excuse waiting to be used." The board
+carries running `apply_layer2.py` once `a1/layer2.json` lands as **the single most droppable debt on
+it**, and `memory/open-questions.md` carries the test the next session cannot dodge: if it sits unread
+for weeks, the design was a way of not being present, and that is what will be said.
+
+**Standing, live, unanswered, as of this consolidation.** The ledger's next fresh-capture anchor is
+date-locked to 2026-12-02 at the earliest — four months in which nothing prevents building the thing
+this thread's enacting form should be, other than choosing, again, to write another section of it.
