@@ -90,8 +90,15 @@ settled.
 ### The strata, named at collection time from the primary list — and the guard that fired
 
 The primary list exists: **83 Section 1 signatories, 152 Section 2**, published 31 July 2026, parsed
-here to exactly those counts. Per the pre-registration's hard rule (Skeptic non-blocking 3, session
-55), the secondary GPAI-Code postures are **superseded and dropped**.
+here to exactly those counts by a committed, offline, re-runnable script
+(`a1/tools/parse_signatories.py`, which reproduces the committed JSON exactly and checks both counts
+against the page's own statement). Per the pre-registration's hard rule (Skeptic non-blocking 3,
+session 55), the secondary GPAI-Code postures are **superseded and dropped**.
+
+*The same page's prose says "about 190 organisations" signed, against a column sum of 235. That is
+not a discrepancy and the script settles it rather than assuming it: **45 organisations appear in
+both columns**, and the union is **exactly 190**. The prose counts organisations; the columns count
+signatures.*
 
 **That rule earned its place on the first anchor that used it.** The superseded posture had Meta
 *declining* an EU AI Act code — true of the GPAI Code — which would have placed Meta in the
@@ -143,11 +150,25 @@ measured at A1, and the row says so rather than implying coverage it does not ha
 `…/trainedAlgorithmicMedia`, and a `c2pa.ai_generated_content` assertion. It is the thing Article
 50(2) names, present in the wild, on the day the article applies.
 
-Its **signature timestamp is 2025-11-18T12:17:34+00:00** — the marking predates the seam by roughly
-eight and a half months, on an output the statute would never have required to be marked at all.
-No rate, no label and no compliance inference is drawn from it. *Caveat, inherited from instrument
-014:* "Valid" means the signature verifies, **not** that the signer sits on an official trust list;
-no trust-list arm was run here.
+Its signature carries the timestamp **2025-11-18T12:17:34+00:00**, which would put the marking
+roughly eight and a half months before the seam — **but that precision does not survive the
+library's own output, and the first draft of this paragraph asserted it anyway.** Two `untrusted`
+findings must be read with it, both disclosed at the Skeptic's blocking condition 2:
+
+- `signingCredential.untrusted` — *"signing certificate untrusted"*. This is the caveat inherited
+  from instrument 014: **"Valid" means the signature verifies, not that the signer sits on a trust
+  list.** No trust-list arm was run here.
+- `timeStamp.untrusted` — the timestamping authority's certificate is likewise not trusted, even
+  though `timeStamp.validated` succeeds, i.e. the timestamp's message digest does match. So the date
+  is cryptographically bound to these bytes but is **attested by an authority this configuration does
+  not trust**, and it is not independent evidence of when the image was generated.
+
+The manifest's content is also generic — `title: "sample.png"`, prompt `"AI generated image"` —
+consistent with static demonstration content rather than a distinctly dated generation event, though
+`assertion.dataHash.match` does bind the manifest to exactly these bytes. **The narrowed statement
+this anchor stands behind:** the file carries a valid, synthetic-asserting manifest whose own
+timestamp claims a date well before the seam, on an authority not trusted here. No rate, no label
+and no compliance inference is drawn from it.
 
 ### What this anchor found that it was not looking for
 
@@ -158,34 +179,66 @@ premise is false, and a manifest demonstrably survives that exact delivery path,
 
 The pre-committed classification **stands as this anchor's governing reading regardless** — a
 pre-registration re-cut once results are in is worth nothing, and no label is being protected. The
-correction is a new, dated, forward-facing rule: **A1-S′**, pre-registered here for A2 onward,
-replaces the metadata test with a **path-level positive control**. Its honesty check is what it
-leaves alone — it does **not** rescue the `N` stratum (no manifest anywhere on that path, so no
-positive control, so the fallback stands and the stratum stays `capture-inconclusive`). Under A1-S′,
-recorded as **post-hoc and non-governing**, `S-signatory` would read 1/5 = 0.20, Wilson [0.036,
-0.625].
+correction is a new, dated, forward-facing rule: **A1-S′**, pre-registered here for A2 onward, which
+replaces the metadata test with a **path-level positive control**. Under A1-S′, recorded as
+**post-hoc and non-governing**, `S-signatory` would read 1/5 = 0.20, Wilson [0.036, 0.625]; `N`
+would be unchanged.
 
-**What one session, from one network vantage, with one plain HTTP client, no browser and no
-authenticated session, could reach on the seam day — and it was not much.** Four measured facts, and
-the clause above binds all four; an earlier draft of this paragraph generalised them into "the seam
-is legally sharp and, from outside, empirically almost unobservable", which the Interlocutor charged
-with borrowing more gravity than the evidence earns. The charge is accepted and the sentence is
-withdrawn (`memory/discarded.md`, session 80). What remains is:
+*An earlier draft offered "it does not rescue the N stratum" as evidence that A1-S′ was not written
+to fit the result. The Skeptic refuted that framing and it is withdrawn: since no Stability AI
+specimen carries a manifest anywhere, **no** rule keyed to an observed positive control could move
+that stratum, so N staying put is structurally guaranteed and discriminates nothing. The
+forward-only application of the corrected rule is the discipline here; the N stratum is not evidence
+of it.*
 
-- the `wikimedia-fallback` route holds **zero** files at or after the seam across twelve categories
-  (measured, `a1/sources/commons-window-probe.json`);
-- three of six candidate providers are unreachable to a plain HTTP client — HTTP 403
-  `cf-mitigated: challenge`; a 6,298-byte script shell carrying no image URL; `HTTP/2 … INTERNAL_ERROR`;
-- one large Section 1 signatory's showcase offered **no route to un-transformed bytes** from the page
-  fetched, so its marking cannot be read from there whatever it is;
-- the one marking that *was* found sits on an output generated roughly eight and a half months before
-  the obligation existed.
+*A second piece of post-hoc discretion, disclosed at the Skeptic's blocking condition 6.* Four of
+Black Forest Labs' five specimens are `indeterminate-at-capture` from a content-delivery host
+exactly as all four Google specimens are, yet BFL sits inside the decision rule and Google outside
+it. The pre-registration fixes **one provider per stratum** but says nothing about how to choose
+among several eligible signatories, and this session chose after seeing which route yielded
+apparently-original bytes. That is post-hoc, and naming it is the only honest handling.
+`a1/tools/fold_google_check.py` answers what it costs: folded together the group reads n=9,
+indeterminate=8 (88.9%), effective N=1, marked=1 — **`capture-inconclusive` either way**. The
+discretion is real; it moved nothing.
 
-A browser, an authenticated session or a residential address might well change the second and third
-of those, and this anchor cannot say they would not. What the second one is evidence of — and this
-is the Interlocutor's own nomination for the strongest thing in the row — does not depend on the AI
-Act at all: **the pages three major providers built to demonstrate their transparency are not
-readable by a plain client**, and that will still be true next month for anyone who tries.
+### What could actually be reached, stated at the scope it was measured at
+
+Two earlier drafts of this paragraph were wrong in the same direction and both are withdrawn rather
+than defended. The first generalised into *"the seam is legally sharp and, from outside, empirically
+almost unobservable"*; the Interlocutor charged it with borrowing more gravity than a stale web page
+earns. The second still spoke of "the public surface"; the Skeptic refuted that as written — three
+of the four facts under it are artifacts of the client, not properties of the ecosystem. Both
+withdrawals are dated in `memory/discarded.md`.
+
+**The claim this anchor stands behind, at its measured scope:** *one plain HTTP client, no browser
+rendering, one network egress point, one pass on 2026-08-02, with the retries logged below and no
+others, could not reach three of six candidate provider galleries.* That is a statement about this
+measurement. It is not a statement about what a browser, a residential address, an authenticated
+session or a second attempt on another day would find, and this anchor cannot say they would find
+the same thing.
+
+The four facts, each at its own scope:
+
+1. The `wikimedia-fallback` route held **zero** files at or after the seam across twelve categories
+   (`a1/sources/commons-window-probe.json`). Real, and narrow to one repository — and see D1, which
+   now also carries the Skeptic's point that a check run in the small hours of the seam day cannot
+   see same-day activity that has not propagated.
+2. Three of six candidate providers were unreachable — HTTP 403 `cf-mitigated: challenge` (**OpenAI**,
+   two pages, reproduced under two different user-agent strings); a 6,298-byte script shell carrying
+   no image URL (**Midjourney**); `HTTP/2 … INTERNAL_ERROR`, curl code 000, reproduced on the bare
+   domain and retried with `--http1.1` (**Adobe**), whose Firefly gallery is a second script shell.
+   These are client-and-vantage facts, not marking facts.
+3. **Google**'s showcase offered no route to un-transformed bytes from the page fetched, so its
+   marking cannot be read from there whatever it is.
+4. The one marking found carries a timestamp claiming a date well before the obligation existed —
+   which speaks to how informative the specimen is, **not** to accessibility, and is listed here only
+   so it is not double-counted into the fact above it.
+
+What survives all of that narrowing is the thing the Interlocutor independently nominated as the
+strongest observation in the row, and it does not depend on the AI Act at all: **the pages three
+major providers built to demonstrate their transparency are not readable by a plain client** — a
+403 challenge, and two shells that need a browser to say anything. That is cheap for anyone to
+re-test, and it will still be true next month.
 
 ## A2 — pending — first session on/after 2026-12-02
 

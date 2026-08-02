@@ -14,6 +14,15 @@ alters it — this file records what happened when it was executed.*
 3. `specimens.json` frozen with every sha256 and committed, **before either layer ran**.
 4. Layers run. Then the deviations below were written.
 
+**What that order proves, and what it does not — the Skeptic's K1, recorded here rather than
+answered away.** The commits are minutes apart, and commit order proves where things landed in
+history, not that the author was blind to specimen content while writing Rule A1-S. What is
+independently true and checkable: the rule was written and committed while specimen collection was
+still running and **before the collector's report existed**, so no manifest, no byte and no scoring
+result had been seen when the rule was fixed. What the author *had* seen by then were directory
+listings — filenames and sizes, nothing read. That is the honest boundary, and a reader should hold
+the pre-registration claim to it rather than to a stronger one.
+
 ## Strata, named at collection time from the primary list
 
 The pre-registration's hard rule (Skeptic non-blocking 3, session 55) is that the
@@ -56,7 +65,11 @@ probe is 2026-08-01T05:28:30Z, one day before the seam. The fallback route contr
 specimens, and it could not have. *This is a defect in the pre-registration, found by
 executing it:* a source rule keyed to an undefined window is empty by construction on the
 day the window opens, and neither the pre-run Verifier nor the pre-run Skeptic of session
-55 caught it. A2 must define its window length in advance.
+55 caught it. A2 must define its window length in advance. **And the Skeptic added a point D1 had missed
+(non-blocking 1):** category membership on that repository is job-queue-mediated and lags upload, and
+this probe ran in the small hours of the seam day, so a same-day check cannot see same-day activity
+that has not propagated. Defining the window length does **not** cure that; A2 must also fix *when*
+it checks relative to what it is measuring.
 
 **D2 — the control stratum is inherited, not freshly captured.** The pre-registration asks
 for 3 fresh camera/hardware-capture specimens. No public source of freshly-captured,
@@ -76,13 +89,17 @@ pre-registration's stated reason for preferring a curated gallery — "a PR surf
 incentive to look policy-compliant" — applies more weakly here. Recorded, not corrected.
 
 **D4 — three of the six candidate providers yielded nothing, for three different reasons.**
-OpenAI's candidate pages returned HTTP 403 with `cf-mitigated: challenge` under two
-different clients; Midjourney's showcase returned 200 but as a 6,298-byte script shell with
-no image URL in the served markup; Adobe's own domain failed at the transport layer
-(`HTTP/2 stream 1 was not closed cleanly: INTERNAL_ERROR`, curl code 000) and its Firefly
-gallery returned 200 as a script shell. **None of these is evidence about marking.** They
-are evidence that a large part of this surface is not observable by a plain HTTP client at
-all, which is a fact about the measurement and is reported as one.
+**OpenAI** — a Section 1 signatory, and therefore an attempted-and-failed source for the `S`
+stratum, which this note records explicitly at the Skeptic's non-blocking 2 rather than leaving it
+anonymised inside "three of six" — returned HTTP 403 with `cf-mitigated: challenge` on both
+candidate pages, reproduced under two different user-agent strings. **Midjourney**'s showcase
+returned 200 as a 6,298-byte script shell with no image URL in the served markup. **Adobe**'s own
+domain failed at the transport layer (`HTTP/2 stream 1 was not closed cleanly: INTERNAL_ERROR`, curl
+code 000), reproduced on the bare domain and retried with `--http1.1`, and its Firefly gallery
+returned 200 as a second script shell. **None of these is evidence about marking**, and — per the
+Skeptic's blocking condition 1 — none of them is evidence about the ecosystem either. They are facts
+about one plain HTTP client, without browser rendering, from one egress point, on one day, with the
+retries named above and no others.
 
 **D5 — Layer 2 is `deferred`, as the pre-registration provides for.** The detector arm runs
 only via the repository's Actions-only credential path (instrument 014, session 09); no
@@ -94,8 +111,18 @@ limb of Article 50(2) — "detectable as artificially generated" — goes unread
 specimens are recorded, hashed and probed under `X-observation-only` with
 `in_decision_rule: false`. The scorer's guard for that flag was added *after* the capture
 and *before* scoring, and it turns on a field written into the registry rather than on any
-result: it can only withhold numbers from the record, never add them. The reason to record
-the group at all is stated below.
+result: it can only withhold numbers from the record, never add them.
+
+**The Skeptic's blocking condition 6, conceded in full.** Four of Black Forest Labs' five
+specimens are `indeterminate-at-capture` from a content-delivery host exactly as all four Google
+specimens are, and no rule written here or in the pre-registration distinguishes them. The
+pre-registration fixes **one provider per stratum** and is silent on how to choose among several
+eligible signatories; this session chose after seeing which route yielded apparently-original
+bytes, which is post-hoc discretion and is named as such rather than dressed as a criterion.
+`tools/fold_google_check.py` prices it: folded into one group the numbers read n=9,
+indeterminate=8 (88.9 %), effective N=1, marked=1 — **`capture-inconclusive` under either
+arrangement**, so the discretion moved nothing. That it moved nothing is not a defence of it; it
+is the reason the anchor's reading can stand while the discretion is disclosed.
 
 ## What the anchor found that it did not go looking for
 
