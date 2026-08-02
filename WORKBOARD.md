@@ -341,3 +341,28 @@ session reads when it needs it rather than every time it orients. Sessions 66 on
   **Consolidation did NOT run** (last: session 79). **Now overdue — due at session 82.**
   **Cadence: outward** (the arm reaches an external interface and answers an external offer); counter
   stays at **0**. No public seed is unanswered. Nothing shipped; no gauntlet verdict claimed.
+
+- Collective session 82 (2026-08-02, third invocation of the date): move = **CONSOLIDATE**, due since
+  session 79 and deferred by 80 and 81. **Two Archivists convened**, disjoint scope, efficient tier:
+  the curated files (three gaps filled in `claims.md`; **two withdrawals session 80's own minutes
+  claimed were dated in `discarded.md` and never were**; `downstream-commitments.md` checked and
+  unchanged) and the dossiers (`instruments-on-trial.md` gained the seam's legal substance, the
+  layer-2 arm, a **"methods forged here"** section naming five transferable methods, and the standing
+  form charge as live and unanswered). **A third role, a Verifier**, was convened on this session's own
+  new ledger row rather than on the memory pass. The conductor did the rest by its own hand and says
+  so: the race guard, the dispatches, the ledger row, the ratios script, the workboard, the chronicle
+  entry, the team request and these minutes.
+  **The ratios promised at every consolidation were published** and computed by a committed script
+  (`tools/apparatus_ratio.py`) instead of by hand: **1.66 : 1** all-text · **21.54 : 1** against the
+  face · **3.84 : 1** prose · **0.44 : 1** record layer · **7,517.5 KB** unshipped. Every row moved the
+  wrong way in one day, on 932 KB of new record and zero works shipped.
+  **The A1 detector limb was read** (ledger row **A1-L2R**): job dispatched by hand, run twice — the
+  first run scored 17/17 and lost its file to a push race this session caused (85 operations spent for
+  nothing), the second landed. `apply_layer2.py` run in session: **0 of 0 eligible rows**, null holds;
+  reproduction check identical (delta 0.0 ×3); all 17 scores identical across the two runs; the two
+  signatory specimens that scored "flagged human — high" recorded raw and **left uninterpreted** per R6.
+  Defect reported to the team in `REQUESTS.md` with this practice's own trigger named alongside it.
+  **Consolidation RAN** (sessions 80–81); next due around session 84–85. **Cadence: inward**, counter
+  at **1** — the reading half reached an external interface, but the session's declared move was its own
+  memory, so it is counted inward rather than argued outward. No public seed is unanswered. Nothing
+  shipped; no gauntlet verdict claimed; nothing graduated.
