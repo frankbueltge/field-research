@@ -29,6 +29,8 @@
     "inherited_label": "flagged human — high"
    }
   ],
+  "boundary_cases": 0,
+  "boundary_rule": "The frozen band wording is ambiguous at exactly 0.10 and 0.50. This page resolves 0.10 into the lowest band and 0.50 into the AI-leaning band. Disclosed because the tie-break is this page's, not the earlier work's.",
   "eligible_count": 0,
   "hashes_verified_before_upload": true,
   "join_not_rendered": "The per-specimen join of marking state and detector score exists in a1/a1-layer2-reading.json, committed and public. It is deliberately not rendered on this face: two adjacent columns are a division a reader performs by eye, and R6 forbids this arm to compute one.",
@@ -116,13 +118,15 @@
    "days_away_at_as_at": 122,
    "earliest": "2026-12-02",
    "kept_empty_by": "the pre-registered load-bearing pair is A1 → A2 and the CI-overlap gate; a single anchor carries no direction. Both strata are also capture-inconclusive under the governing rule.",
+   "kind": "fillable",
    "would_say": "one of the values fixed in advance: adoption-shift · reversal · null — not distinguishable from sampling noise"
   },
   {
    "cell": "led-the-timeline for S-signatory",
    "days_away_at_as_at": null,
-   "earliest": "not at this anchor",
+   "earliest": "never, at this anchor",
    "kept_empty_by": "a capture-inconclusive stratum is forced into no directional label by the rule locked on 2026-07-23",
+   "kind": "out-of-scope",
    "would_say": "the A1-only descriptive label led-the-timeline"
   },
   {
@@ -130,6 +134,7 @@
    "days_away_at_as_at": 122,
    "earliest": "A2, if any specimen there is unmarked-at-capture",
    "kept_empty_by": "0 of 17 specimens are eligible: the state requires a specimen in unmarked-at-capture under the GOVERNING reading, and the governing reading has none. The emptiness was written down before the detector ran.",
+   "kind": "fillable",
    "would_say": "the count of specimens in the pre-registered state unmarked-but-detector-flagged — the statute's second limb, read independently of the provider's marking"
   },
   {
@@ -137,6 +142,7 @@
    "days_away_at_as_at": 122,
    "earliest": "A2, on a capture path with a positive control",
    "kept_empty_by": "effective N = 0. All five arrived over a path not shown to preserve manifests, so all five are indeterminate-at-capture and excluded from numerator and denominator alike.",
+   "kind": "fillable",
    "would_say": "the field marked-proportion, with its Wilson interval, for this stratum"
   },
   {
@@ -144,6 +150,7 @@
    "days_away_at_as_at": null,
    "earliest": "never, for this window",
    "kept_empty_by": "in-market systems hold grace until 2026-12-02 and pre-seam outputs never need retroactive marking, so an unmarked output in this window is consistent with full compliance",
+   "kind": "out-of-scope",
    "would_say": "no field exists for it — the cell is unavailable, not merely empty"
   }
  ],
@@ -272,7 +279,9 @@
  },
  "specimens_layer1": [
   {
+   "captured_note": "2026-08-02",
    "days_since_seam": 0,
+   "fresh_capture": true,
    "id": "s01",
    "in_decision_rule": true,
    "path_shown_non_stripping": true,
@@ -286,7 +295,9 @@
    "stratum": "S-signatory"
   },
   {
+   "captured_note": "2026-08-02",
    "days_since_seam": 0,
+   "fresh_capture": true,
    "id": "s02",
    "in_decision_rule": true,
    "path_shown_non_stripping": true,
@@ -300,7 +311,9 @@
    "stratum": "S-signatory"
   },
   {
+   "captured_note": "2026-08-02",
    "days_since_seam": 0,
+   "fresh_capture": true,
    "id": "s03",
    "in_decision_rule": true,
    "path_shown_non_stripping": true,
@@ -314,7 +327,9 @@
    "stratum": "S-signatory"
   },
   {
+   "captured_note": "2026-08-02",
    "days_since_seam": 0,
+   "fresh_capture": true,
    "id": "s04",
    "in_decision_rule": true,
    "path_shown_non_stripping": true,
@@ -328,7 +343,9 @@
    "stratum": "S-signatory"
   },
   {
+   "captured_note": "2026-08-02",
    "days_since_seam": 0,
+   "fresh_capture": true,
    "id": "s05",
    "in_decision_rule": true,
    "path_shown_non_stripping": true,
@@ -342,7 +359,9 @@
    "stratum": "S-signatory"
   },
   {
+   "captured_note": "2026-08-02",
    "days_since_seam": 0,
+   "fresh_capture": true,
    "id": "n01",
    "in_decision_rule": true,
    "path_shown_non_stripping": false,
@@ -356,7 +375,9 @@
    "stratum": "N-nonsignatory"
   },
   {
+   "captured_note": "2026-08-02",
    "days_since_seam": 0,
+   "fresh_capture": true,
    "id": "n02",
    "in_decision_rule": true,
    "path_shown_non_stripping": false,
@@ -370,7 +391,9 @@
    "stratum": "N-nonsignatory"
   },
   {
+   "captured_note": "2026-08-02",
    "days_since_seam": 0,
+   "fresh_capture": true,
    "id": "n03",
    "in_decision_rule": true,
    "path_shown_non_stripping": false,
@@ -384,7 +407,9 @@
    "stratum": "N-nonsignatory"
   },
   {
+   "captured_note": "2026-08-02",
    "days_since_seam": 0,
+   "fresh_capture": true,
    "id": "n04",
    "in_decision_rule": true,
    "path_shown_non_stripping": false,
@@ -398,7 +423,9 @@
    "stratum": "N-nonsignatory"
   },
   {
+   "captured_note": "2026-08-02",
    "days_since_seam": 0,
+   "fresh_capture": true,
    "id": "n05",
    "in_decision_rule": true,
    "path_shown_non_stripping": false,
@@ -412,7 +439,9 @@
    "stratum": "N-nonsignatory"
   },
   {
+   "captured_note": "inherited; frozen 2026-07-11 in instrument 014",
    "days_since_seam": 0,
+   "fresh_capture": false,
    "id": "c01",
    "in_decision_rule": true,
    "path_shown_non_stripping": true,
@@ -426,7 +455,9 @@
    "stratum": "C-camera-control"
   },
   {
+   "captured_note": "inherited; frozen 2026-07-11 in instrument 014",
    "days_since_seam": 0,
+   "fresh_capture": false,
    "id": "c02",
    "in_decision_rule": true,
    "path_shown_non_stripping": true,
@@ -440,7 +471,9 @@
    "stratum": "C-camera-control"
   },
   {
+   "captured_note": "inherited; frozen 2026-07-11 in instrument 014",
    "days_since_seam": 0,
+   "fresh_capture": false,
    "id": "c03",
    "in_decision_rule": true,
    "path_shown_non_stripping": true,
@@ -454,7 +487,9 @@
    "stratum": "C-camera-control"
   },
   {
+   "captured_note": "2026-08-02",
    "days_since_seam": 0,
+   "fresh_capture": true,
    "id": "x01",
    "in_decision_rule": false,
    "path_shown_non_stripping": false,
@@ -468,7 +503,9 @@
    "stratum": "X-observation-only"
   },
   {
+   "captured_note": "2026-08-02",
    "days_since_seam": 0,
+   "fresh_capture": true,
    "id": "x02",
    "in_decision_rule": false,
    "path_shown_non_stripping": false,
@@ -482,7 +519,9 @@
    "stratum": "X-observation-only"
   },
   {
+   "captured_note": "2026-08-02",
    "days_since_seam": 0,
+   "fresh_capture": true,
    "id": "x03",
    "in_decision_rule": false,
    "path_shown_non_stripping": false,
@@ -496,7 +535,9 @@
    "stratum": "X-observation-only"
   },
   {
+   "captured_note": "2026-08-02",
    "days_since_seam": 0,
+   "fresh_capture": true,
    "id": "x04",
    "in_decision_rule": false,
    "path_shown_non_stripping": false,

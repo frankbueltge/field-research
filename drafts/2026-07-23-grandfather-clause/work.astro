@@ -37,6 +37,8 @@ const altBy: Record<string, any> = Object.fromEntries(R.post_hoc.rows.map((r: an
 const changed = data.state_changes;
 const det = data.detector;
 const bandsSeen = det.bands.filter((b: any) => b.count > 0);
+const fillable = data.locked_cells.filter((c: any) => c.kind === 'fillable');
+const outOfScope = data.locked_cells.filter((c: any) => c.kind === 'out-of-scope');
 const inRule = data.specimens_layer1.filter((s: any) => s.in_decision_rule);
 const outOfRule = data.specimens_layer1.filter((s: any) => !s.in_decision_rule);
 ---
@@ -88,7 +90,7 @@ const outOfRule = data.specimens_layer1.filter((s: any) => !s.in_decision_rule);
       <text x={px(S.application)} y="142" class="seam-label" text-anchor="middle">marking duty applies</text>
       <text x={px(S.grace_end)} y="142" class="seam-label" text-anchor="end">grace expires</text>
       <text x={px(S.grace_end)} y="158" class="seam-label" text-anchor="end"
-        >{data.days_to_a2_at_as_at} days after this page was built</text>
+        >{data.days_to_a2_at_as_at} days after this page&#8217;s data was frozen</text>
     </svg>
     <ul class="legend">
       {spine.map((a: any) => (
@@ -177,10 +179,11 @@ const outOfRule = data.specimens_layer1.filter((s: any) => !s.in_decision_rule);
 
   <section>
     <h2>What this instrument cannot say, and what keeps it from saying it</h2>
+    <h3>Empty, and waiting for a date</h3>
     <table class="locked">
       <thead><tr><th>the empty cell</th><th>the field it would fill</th><th>what keeps it empty</th><th>earliest</th></tr></thead>
       <tbody>
-        {data.locked_cells.map((c: any) => (
+        {fillable.map((c: any) => (
           <tr>
             <td class="lab">{c.cell}</td>
             <td>{c.would_say}</td>
@@ -193,9 +196,25 @@ const outOfRule = data.specimens_layer1.filter((s: any) => !s.in_decision_rule);
         ))}
       </tbody>
     </table>
+
+    <h3>Empty by design — no date will fill these</h3>
+    <table class="locked">
+      <thead><tr><th>the cell</th><th>the field it would fill</th><th>why it does not exist here</th></tr></thead>
+      <tbody>
+        {outOfScope.map((c: any) => (
+          <tr>
+            <td class="lab">{c.cell}</td>
+            <td>{c.would_say}</td>
+            <td>{c.kept_empty_by}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
     <p class="caveat">
-      Each row names a field, never a number and never a direction. Nothing in this table predicts
-      what the next anchor will hold.
+      The two tables are kept apart because a waiting cell and an impossible one are different
+      things, and a countdown column beside the second would lend it a temporal logic it has not
+      got. Each row names a field, never a number and never a direction. Nothing here predicts what
+      the next anchor will hold.
     </p>
   </section>
 
@@ -210,9 +229,12 @@ const outOfRule = data.specimens_layer1.filter((s: any) => !s.in_decision_rule);
       <b>Why this section carries no file names.</b> {det.join_not_rendered} Two adjacent columns
       would let any reader do by eye what the rule forbids the code to do, and a caption is not a
       guard: the builder refuses to write a record holding a marking state and a detector score
-      together. One residue is stated rather than hidden — the three reproduction pairs below are
-      named, and those three files appear in the table above, so three of seventeen remain joinable
-      by hand.
+      together. <b>What that guard does not do is hide the join, and this page will not pretend
+      otherwise.</b> The file holding all seventeen rows of it is named in the footer below with its
+      hash, one of this page's four declared inputs, and a second input states two of the pairings in
+      prose. Three more are joinable by hand from the reproduction pairs below. The guard governs
+      what this page presents, not what a reader can open — and a page that concealed its inputs to
+      make the guard look stronger would be trading provenance for the appearance of rigour.
     </p>
     <table class="bands">
       <caption>Score bands, frozen by an earlier work and inherited unchanged. The raw floats are the record; the band is display.</caption>
@@ -228,8 +250,11 @@ const outOfRule = data.specimens_layer1.filter((s: any) => !s.in_decision_rule);
 
     <p class="finding">
       <b>{det.eligible_count} of {det.scored}</b> specimens were eligible for the one state this arm
-      exists to fill. The emptiness was written down before the arm ran, and the arm was run
-      anyway — which is what makes it a null instead of an excuse.
+      exists to fill. The emptiness was written down before any detector score existed, and the arm
+      was run anyway — which is what keeps it a null rather than an excuse. With the narrowing its
+      own protocol file already carries: the rule was written after the marking states of all
+      seventeen files were known, so the emptiness was closer to arithmetic than to foresight. What
+      the author was blind to was the detector's number, and nothing more.
     </p>
     <p>
       Three of the seventeen had been scored once before, weeks earlier, as the same bytes:
@@ -247,6 +272,8 @@ const outOfRule = data.specimens_layer1.filter((s: any) => !s.in_decision_rule);
         names assert something about a file. This page uses the numeric range instead and keeps the
         original wording here, where it is disclosure rather than a label.
       </p>
+      <p>{det.boundary_rule} At this anchor {det.boundary_cases} specimens sit on a boundary, so no
+        count above depends on the tie-break.</p>
     </details>
   </section>
 
@@ -263,7 +290,7 @@ const outOfRule = data.specimens_layer1.filter((s: any) => !s.in_decision_rule);
             <td class="mono">{s.id}</td>
             <td>{s.provider}</td>
             <td class="mono">{s.stratum.split('-')[0]}</td>
-            <td class="num mono">{s.days_since_seam}</td>
+            <td class="num mono">{s.fresh_capture ? s.days_since_seam : 'inherited'}</td>
             <td class="mono">{s.state_governing}</td>
             <td class="mono">{s.state_changed ? s.state_post_hoc : '='}</td>
             <td class="mono hash">{s.sha256_short}</td>
@@ -278,7 +305,7 @@ const outOfRule = data.specimens_layer1.filter((s: any) => !s.in_decision_rule);
             <td class="mono">{s.id}</td>
             <td>{s.provider}</td>
             <td class="mono">{s.stratum.split('-')[0]}</td>
-            <td class="num mono">{s.days_since_seam}</td>
+            <td class="num mono">{s.fresh_capture ? s.days_since_seam : 'inherited'}</td>
             <td class="mono">{s.state_governing}</td>
             <td class="mono">{s.state_changed ? s.state_post_hoc : '='}</td>
             <td class="mono hash">{s.sha256_short}</td>
@@ -287,7 +314,12 @@ const outOfRule = data.specimens_layer1.filter((s: any) => !s.in_decision_rule);
       </tbody>
     </table>
     <p class="caveat">
-      A row marked <span class="mono">=</span> did not move between the readings. Providers are named
+      A row marked <span class="mono">=</span> did not move between the readings. Rows reading
+      <span class="mono">inherited</span> in the days column are not fresh captures at all: their
+      bytes were frozen weeks before the seam by an earlier work and re-used here as a control, and
+      the anchor file records them with a days-from-seam of zero, which they do not have. The face
+      derives the distinction from each row's own capture note rather than trusting that field.
+      Providers are named
       because every claim here is about a file this ledger holds by hash — never about a company's
       conduct, and never about compliance.
     </p>
@@ -297,7 +329,7 @@ const outOfRule = data.specimens_layer1.filter((s: any) => !s.in_decision_rule);
     <p>
       <b>{data.work}</b> · anchor {data.anchor}, captured {data.anchor_date},
       {' '}{data.days_since_seam_at_capture} days from the seam · pre-registered {data.pre_registered} ·
-      built from committed files as at {data.as_at}, {data.determinism}. The load-bearing comparison
+      data frozen at {data.as_at}, {data.determinism} — a later rebuild of the site does not move this number. The load-bearing comparison
       of this ledger is A1 → A2 and cannot be made before {S.grace_end}.
       <b> Not a compliance audit. No row states or implies a compliance rate.</b>
     </p>
@@ -332,6 +364,14 @@ const outOfRule = data.specimens_layer1.filter((s: any) => !s.in_decision_rule);
     border-bottom: 1px solid var(--rule);
     padding-bottom: 0.3rem;
     margin: 2.4rem 0 0.9rem;
+  }
+  .gc h3 {
+    font-size: 0.82rem;
+    font-weight: normal;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--dim);
+    margin: 1.4rem 0 0.2rem;
   }
   .gc .wall { font-size: 1.12rem; line-height: 1.62; margin: 0 0 1.4rem; max-width: 40em; }
   .gc p { max-width: 46em; }

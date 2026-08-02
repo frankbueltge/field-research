@@ -153,6 +153,12 @@ def main():
             "source_type_short": s.get("source_type", "").split(" (")[0].split(",")[0],
             "in_decision_rule": s["in_decision_rule"],
             "days_since_seam": s.get("days_since_seam"),
+            # Verifier finding (session 84): three control rows carry
+            # days_since_seam 0 while their own "captured" field says the bytes
+            # were frozen weeks earlier in an older work. Derived here rather
+            # than editing an append-only anchor file, so the face can say so.
+            "fresh_capture": s.get("captured") == results["date"],
+            "captured_note": s.get("captured"),
             "state_governing": governing,
             "state_post_hoc": post_hoc,
             "state_changed": post_hoc != governing,
@@ -238,6 +244,8 @@ def main():
     if sum(b["count"] for b in bands) != len(specimens):
         fail("bands do not partition the specimens")
 
+    boundary_cases = sum(
+        1 for x in specimens if l2_by_id[x["id"]]["ai_generated"] in (0.10, 0.50))
     scores_sorted = sorted(l2_by_id[x["id"]]["ai_generated"] for x in specimens)
     eligible = [x for x in specimens
                 if l2_by_id[x["id"]]["eligible_for_unmarked_but_detector_flagged"]]
@@ -276,6 +284,7 @@ def main():
     n_specimens = len(specimens)
     locked = [
         {
+            "kind": "fillable",
             "cell": "directional label for S-signatory and N-nonsignatory",
             "would_say": "one of the values fixed in advance: adoption-shift · reversal · "
                          "null — not distinguishable from sampling noise",
@@ -286,14 +295,16 @@ def main():
             "days_away_at_as_at": days_to_a2,
         },
         {
+            "kind": "out-of-scope",
             "cell": "led-the-timeline for S-signatory",
             "would_say": "the A1-only descriptive label led-the-timeline",
             "kept_empty_by": "a capture-inconclusive stratum is forced into no directional label "
                              "by the rule locked on 2026-07-23",
-            "earliest": "not at this anchor",
+            "earliest": "never, at this anchor",
             "days_away_at_as_at": None,
         },
         {
+            "kind": "fillable",
             "cell": "unmarked-but-detector-flagged",
             "would_say": "the count of specimens in the pre-registered state "
                          "unmarked-but-detector-flagged — the statute's second limb, read "
@@ -306,6 +317,7 @@ def main():
             "days_away_at_as_at": days_to_a2,
         },
         {
+            "kind": "fillable",
             "cell": "marked proportion for N-nonsignatory",
             "would_say": "the field marked-proportion, with its Wilson interval, for this stratum",
             "kept_empty_by": "effective N = 0. All five arrived over a path not shown to preserve "
@@ -315,6 +327,7 @@ def main():
             "days_away_at_as_at": days_to_a2,
         },
         {
+            "kind": "out-of-scope",
             "cell": "any compliance reading, at any anchor in this window",
             "would_say": "no field exists for it — the cell is unavailable, not merely empty",
             "kept_empty_by": "in-market systems hold grace until 2026-12-02 and pre-seam outputs "
@@ -369,6 +382,12 @@ def main():
             "bands": bands,
             "scores_sorted_no_identity": scores_sorted,
             "eligible_count": len(eligible),
+            "boundary_cases": boundary_cases,
+            "boundary_rule": (
+                "The frozen band wording is ambiguous at exactly 0.10 and 0.50. This page "
+                "resolves 0.10 into the lowest band and 0.50 into the AI-leaning band. "
+                "Disclosed because the tie-break is this page's, not the earlier work's."
+            ),
             "join_not_rendered": (
                 "The per-specimen join of marking state and detector score exists in "
                 "a1/a1-layer2-reading.json, committed and public. It is deliberately not "
