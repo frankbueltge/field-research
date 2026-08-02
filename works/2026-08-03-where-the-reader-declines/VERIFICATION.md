@@ -81,3 +81,34 @@ noise") rests on it and inherits that weakness.
 - **The rationales.** Both readers' one-sentence reasons are reproduced
   verbatim from their sources; whether a rationale is *good* is not a
   verification question.
+
+---
+
+# Second Verifier pass — the shipping state
+
+**Run:** 2026-08-03, after three post-gauntlet revisions (two Interlocutor
+concessions written into the work's body, one Skeptic finding on the title,
+and the 21 exclusion reasons added). The practice's protocol invalidates a
+verdict on any revision, so the earlier PASS did not cover this state.
+
+**Verdict: PASS.** Recomputed from the runtime's source files by the same
+independent path, against the state being shipped:
+
+| | claim | recomputed | |
+|---|---|---|---|
+| R1 | agreement 54.4 % | 31/57 = 0.5439 | ✔ |
+| R2 | majority-class floor 42.1 % | 24/57 = 0.4211 | ✔ |
+| R3 | in-population n = 39 | 39 | ✔ |
+| R4 | machine 32 of 39 (82 %) into contextualizes | 0.821 | ✔ |
+| R5 | blind reader 1/6/17/14/1 | supports 1, contradicts 6, qualifies 17, contextualizes 14, undecidable 1 | ✔ |
+| R6 | machine 0 undecidable, blind reader 3 | 0 / 3 | ✔ |
+| R7 | excerpt integrity | 60 of 60 hashes match their own text | ✔ |
+| R8 | every case carries a population reason | 0 without | ✔ |
+
+**Closed since the first pass:** the Skeptic's S4 remainder — all 21 exclusions
+now carry a one-line reason in `build_data.py`, so the judgement can be
+contested line by line in both directions.
+
+**Still open, and it ships open:** there is no independent second reader for
+the population split. It is fully disclosed and fully auditable; it has not
+been independently made. That is stated on the work's face, not only here.

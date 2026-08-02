@@ -103,6 +103,35 @@ POPULATION: dict[int, str] = {
 }
 
 
+# Position -> why this source is OUTSIDE the claim's population. Written out for
+# the same reason the inclusions are: a reader who disputes an exclusion should
+# be able to dispute that one line, not reconstruct the whole judgement. Added
+# after the Skeptic's S4 recorded their absence as owed.
+EXCLUDED: dict[int, str] = {
+    1: "adversarial pre-training for logical reasoning — reasoning capability, no research cycle",
+    2: "benchmark for verifiers of chain-of-thought — reasoning verification, not research",
+    4: "claim verification through fact detection — fact-checking, not research automation",
+    8: "long-horizon robotic planning",
+    9: "formalising logical reasoning tasks with theorem provers",
+    10: "self-rewarding correction on mathematical reasoning",
+    12: "multi-agent framework for disruption-aware planning — operations, not research",
+    16: "world modelling for language-model agents in general",
+    18: "LLM-as-a-judge for code validation and refinement",
+    19: "self-evolving code agents, measured on a code benchmark",
+    20: "repairing language-model pipelines at runtime — engineering, not research",
+    26: "cross-platform computer-use agents",
+    29: "self-training and continual learning as capability growth",
+    30: "hallucination versus creativity in LLMs — a property study, no research system",
+    31: "negotiation tactics in Diplomacy",
+    33: "decomposing self-correction on grade-school word problems",
+    36: "reliability of LLM-as-a-judge via item response theory — judging in general",
+    37: "how context errors affect LLM reasoning",
+    38: "stylistic evaluation of Chinese legalese",
+    50: "topology optimisation — engineering design, not a research cycle",
+    52: "an information-theoretic study using AlphaFold2 representations: science done WITH a model, not a system automating research",
+}
+
+
 def sha256_of(path: Path) -> str:
     return "sha256:" + hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -140,7 +169,8 @@ def build(runtime: Path) -> dict:
                 "excerpt": case["excerpt"],
                 "excerpt_sha256": case["excerpt_sha256"],
                 "in_population": position in POPULATION,
-                "population_reason": POPULATION.get(position),
+                "population_reason": POPULATION.get(position) or EXCLUDED.get(position),
+                "exclusion_reason": EXCLUDED.get(position),
                 "gold": {
                     "relation": case["expected_relation"],
                     "rationale": case["expected_rationale"],
