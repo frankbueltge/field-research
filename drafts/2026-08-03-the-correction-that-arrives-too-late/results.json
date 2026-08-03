@@ -1,0 +1,4293 @@
+{
+ "pinned_commit": "54cb79035eb9f1d27f25a150c8fbc0b80ef77fb0",
+ "working_tree_clean": false,
+ "rule": "drafts/2026-08-03-the-correction-that-arrives-too-late/RULE.md",
+ "register": {
+  "path": "memory/discarded.md",
+  "entries_parsed": 148,
+  "rows": 141,
+  "bullets": 7,
+  "entries_with_no_session_attribution": 1,
+  "sessions_present": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   12,
+   13,
+   14,
+   17,
+   18,
+   19,
+   20,
+   23,
+   29,
+   39,
+   40,
+   43,
+   46,
+   47,
+   48,
+   49,
+   51,
+   53,
+   58,
+   59,
+   64,
+   65,
+   66,
+   67,
+   68,
+   69,
+   70,
+   71,
+   73,
+   74,
+   75,
+   76,
+   77,
+   78,
+   80,
+   81
+  ],
+  "entries_excluded_by_rights_rule": 3
+ },
+ "limb_a": {
+  "announcements_found": 55,
+  "excluded_by_negation": 6,
+  "excluded_as_retrospective_commentary": 2,
+  "unattributable": 0,
+  "counted": 47,
+  "reached": 39,
+  "not_reached": 8,
+  "count_claims": 11,
+  "count_mismatch": 7,
+  "corroboration_not_corroborated": 27,
+  "records": [
+   {
+    "file": "2026-07-01.md",
+    "line": 10,
+    "text": "> **Erratum (added post-hoc).** This is the collective's first session, *before* the verification gauntlet existed. Three vendor performance figures in Thread 1 (Turnitin, ZeroGPT, Originality.ai) were later found **unsourced or inverted** by the collective's own audit and are flagged inline below; see `memory/discarded.md` (session 07). They are retained as a **documented error — the method — not as live claims.**",
+    "sessions": [
+     7
+    ],
+    "attribution": "on-line",
+    "own_session": 1,
+    "verdict": "RETROSPECTIVE-COMMENTARY"
+   },
+   {
+    "file": "2026-07-01.md",
+    "line": 1672,
+    "text": "- `memory/discarded.md` — 18 rows from the sessions' discard ledgers, with deferred items (Rosenhan, drapetomania) marked as deferred rather than discarded.",
+    "sessions": [
+     1
+    ],
+    "attribution": "heading",
+    "own_session": 1,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    },
+    "count_claim": {
+     "claimed": 18,
+     "actual_rows_for_session": 4,
+     "verdict": "COUNT-MISMATCH"
+    }
+   },
+   {
+    "file": "2026-07-03.md",
+    "line": 67,
+    "text": "`memory/discarded.md`; shipped Instrument 001 corrected (Originality row rebuilt on the real",
+    "sessions": [
+     6
+    ],
+    "attribution": "heading",
+    "own_session": 6,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 2,
+     "sample": [
+      "instrument",
+      "originality"
+     ],
+     "signal": "CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-03.md",
+    "line": 211,
+    "text": "as unsourced; ledgered in `memory/discarded.md` with full trails.",
+    "sessions": [
+     6
+    ],
+    "attribution": "heading",
+    "own_session": 6,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 1,
+     "sample": [
+      "unsourced"
+     ],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-03.md",
+    "line": 399,
+    "text": "- Six discard entries ledgered (memory/discarded.md, session 07): the Turnitin NNES bar, the",
+    "sessions": [
+     7
+    ],
+    "attribution": "on-line",
+    "own_session": 7,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 1,
+     "sample": [
+      "turnitin"
+     ],
+     "signal": "NOT-CORROBORATED"
+    },
+    "count_claim": {
+     "claimed": 6,
+     "actual_rows_for_session": 9,
+     "verdict": "COUNT-MISMATCH"
+    }
+   },
+   {
+    "file": "2026-07-05.md",
+    "line": 169,
+    "text": "the refiling counterfactual. (Ledgered in `memory/discarded.md`.)",
+    "sessions": [
+     9
+    ],
+    "attribution": "heading",
+    "own_session": 9,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 2,
+     "sample": [
+      "counterfactual",
+      "refiling"
+     ],
+     "signal": "CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-05.md",
+    "line": 355,
+    "text": "the round-1 Skeptic; replaced with the new UNSETTLED grade. (Ledgered in `memory/discarded.md`.)",
+    "sessions": [
+     10
+    ],
+    "attribution": "heading",
+    "own_session": 10,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 4,
+     "sample": [
+      "replaced",
+      "round-1",
+      "skeptic",
+      "unsettled"
+     ],
+     "signal": "CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-05.md",
+    "line": 399,
+    "text": "- **memory/discarded.md** — two session-08 discards that had never been ledgered despite being",
+    "verdict": "EXCLUDED-BY-NEGATION",
+    "sessions": [],
+    "attribution": null
+   },
+   {
+    "file": "2026-07-06.md",
+    "line": 52,
+    "text": "(both ledgered in `memory/discarded.md`, session 12; both disclosed on the work itself):",
+    "sessions": [
+     12
+    ],
+    "attribution": "on-line",
+    "own_session": 12,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-06.md",
+    "line": 360,
+    "text": "a disclosed window note. Ledgered in `memory/discarded.md` (session 13).",
+    "sessions": [
+     13
+    ],
+    "attribution": "on-line",
+    "own_session": 13,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 1,
+     "sample": [
+      "window"
+     ],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-07.md",
+    "line": 119,
+    "text": "- **`memory/discarded.md`:** three session-14 rows (the ICML 2025 venue error; the over-generalised",
+    "sessions": [
+     14
+    ],
+    "attribution": "on-line",
+    "own_session": 14,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 2,
+     "sample": [
+      "over-generalised",
+      "session-14"
+     ],
+     "signal": "CORROBORATED"
+    },
+    "count_claim": {
+     "claimed": 3,
+     "actual_rows_for_session": 3,
+     "verdict": "COUNT-MATCH"
+    }
+   },
+   {
+    "file": "2026-07-09.md",
+    "line": 407,
+    "text": "Frances-quote discard. Replaced with the verified wording; ledgered in `memory/discarded.md`.",
+    "sessions": [
+     17
+    ],
+    "attribution": "heading",
+    "own_session": 17,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 5,
+     "sample": [
+      "discard",
+      "frances-quote",
+      "replaced",
+      "verified",
+      "wording"
+     ],
+     "signal": "CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-09.md",
+    "line": 540,
+    "text": "- Four ledgered in `memory/discarded.md` (session 17): the fabricated-wording \"12%\" quotation; the",
+    "sessions": [
+     17
+    ],
+    "attribution": "on-line",
+    "own_session": 17,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 1,
+     "sample": [
+      "quotation"
+     ],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-10.md",
+    "line": 272,
+    "text": "## Discards and corrections (in-gauntlet, ledgered in memory/discarded.md)",
+    "sessions": [
+     18
+    ],
+    "attribution": "heading",
+    "own_session": 18,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-10.md",
+    "line": 434,
+    "text": "corrected before ledgering (Verifier finding a). Both ledgered in `memory/discarded.md`.",
+    "sessions": [
+     19
+    ],
+    "attribution": "heading",
+    "own_session": 19,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 4,
+     "sample": [
+      "corrected",
+      "finding",
+      "ledgering",
+      "verifier"
+     ],
+     "signal": "CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-10.md",
+    "line": 623,
+    "text": "## Discards / honestly recorded (ledgered in memory/discarded.md)",
+    "sessions": [
+     20
+    ],
+    "attribution": "heading",
+    "own_session": 20,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-10.md",
+    "line": 1011,
+    "text": "`memory/discarded.md` — one row for the two corrected stale defects. `WORKBOARD.md` row and",
+    "sessions": [
+     23
+    ],
+    "attribution": "heading",
+    "own_session": 23,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 2,
+     "sample": [
+      "corrected",
+      "defects"
+     ],
+     "signal": "CORROBORATED"
+    },
+    "count_claim": {
+     "claimed": 1,
+     "actual_rows_for_session": 1,
+     "verdict": "COUNT-MATCH"
+    }
+   },
+   {
+    "file": "2026-07-15.md",
+    "line": 113,
+    "text": "- **`discarded.md` completeness — held, with the reasoning on the record.** The ledger's per-instance",
+    "sessions": [
+     38
+    ],
+    "attribution": "heading",
+    "own_session": 38,
+    "verdict": "NOT-REACHED",
+    "missing": [
+     38
+    ],
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-15.md",
+    "line": 118,
+    "text": "fresh `discarded.md` rows would duplicate the record, not complete it — consolidation does not",
+    "sessions": [
+     38
+    ],
+    "attribution": "heading",
+    "own_session": 38,
+    "verdict": "NOT-REACHED",
+    "missing": [
+     38
+    ],
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-16.md",
+    "line": 77,
+    "text": "a self-inflicted handle error. Logged in `memory/discarded.md`.",
+    "sessions": [
+     39
+    ],
+    "attribution": "heading",
+    "own_session": 39,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 2,
+     "sample": [
+      "handle",
+      "self-inflicted"
+     ],
+     "signal": "CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-16.md",
+    "line": 172,
+    "text": "`memory/discarded.md` records the handle-typo correction; WORKBOARD row + chronicle updated.",
+    "sessions": [
+     39
+    ],
+    "attribution": "heading",
+    "own_session": 39,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-16.md",
+    "line": 263,
+    "text": "\"183\" characterized); two discarded.md rows.",
+    "sessions": [
+     40
+    ],
+    "attribution": "heading",
+    "own_session": 40,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-16.md",
+    "line": 329,
+    "text": "- `memory/claims.md`: Carlisle row corrected + new three-counts row. `memory/discarded.md`:",
+    "sessions": [
+     40
+    ],
+    "attribution": "heading",
+    "own_session": 40,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 3,
+     "sample": [
+      "carlisle",
+      "claims",
+      "corrected"
+     ],
+     "signal": "CORROBORATED"
+    },
+    "count_claim": {
+     "claimed": 3,
+     "actual_rows_for_session": 4,
+     "verdict": "COUNT-MISMATCH"
+    }
+   },
+   {
+    "file": "2026-07-16.md",
+    "line": 404,
+    "text": "3. **`discarded.md` row** for instrument 005's superseded rework sentence (\"the rate rises",
+    "sessions": [
+     41
+    ],
+    "attribution": "heading",
+    "own_session": 41,
+    "verdict": "NOT-REACHED",
+    "missing": [
+     41
+    ],
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-16.md",
+    "line": 408,
+    "text": "4. **`discarded.md` row** for instrument 010's retired \"field-submitted\" wording plus the",
+    "sessions": [
+     41
+    ],
+    "attribution": "heading",
+    "own_session": 41,
+    "verdict": "NOT-REACHED",
+    "missing": [
+     41
+    ],
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-16.md",
+    "line": 493,
+    "text": "RESOLVED-at-scale; dossier §4 +2 lessons; discarded.md +2 rows (all consolidation edits",
+    "sessions": [
+     41
+    ],
+    "attribution": "heading",
+    "own_session": 41,
+    "verdict": "NOT-REACHED",
+    "missing": [
+     41
+    ],
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    },
+    "count_claim": {
+     "claimed": 2,
+     "actual_rows_for_session": 0,
+     "verdict": "COUNT-MISMATCH"
+    }
+   },
+   {
+    "file": "2026-07-18.md",
+    "line": 66,
+    "text": "- **`discarded.md` — two rows added.** The \"A.3.2 paywalled\" mischaracterisation (factually wrong —",
+    "sessions": [
+     44
+    ],
+    "attribution": "heading",
+    "own_session": 44,
+    "verdict": "NOT-REACHED",
+    "missing": [
+     44
+    ],
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    },
+    "count_claim": {
+     "claimed": 2,
+     "actual_rows_for_session": 0,
+     "verdict": "COUNT-MISMATCH"
+    }
+   },
+   {
+    "file": "2026-07-20.md",
+    "line": 196,
+    "text": "3. **`memory/discarded.md`** — one row added: the superseded news/org figures **29/40 (archived)**",
+    "sessions": [
+     47
+    ],
+    "attribution": "heading",
+    "own_session": 47,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 2,
+     "sample": [
+      "archived",
+      "figures"
+     ],
+     "signal": "CORROBORATED"
+    },
+    "count_claim": {
+     "claimed": 1,
+     "actual_rows_for_session": 0,
+     "verdict": "COUNT-MISMATCH"
+    }
+   },
+   {
+    "file": "2026-07-20.md",
+    "line": 218,
+    "text": "- No discarded.md row for the `run.log` containment breach (a process defect, not a discarded",
+    "sessions": [
+     47
+    ],
+    "attribution": "heading",
+    "own_session": 47,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-20.md",
+    "line": 430,
+    "text": "- The \"22 KB–7.3 MB\" body-range floor → corrected + ledgered (`memory/discarded.md`), dated",
+    "sessions": [
+     6
+    ],
+    "attribution": "heading",
+    "own_session": 6,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-21.md",
+    "line": 93,
+    "text": "gauntleted ship; row added to `memory/discarded.md`; retrievable at `fa63bb3`.",
+    "sessions": [
+     49
+    ],
+    "attribution": "heading",
+    "own_session": 49,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 2,
+     "sample": [
+      "fa63bb3",
+      "retrievable"
+     ],
+     "signal": "CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-21.md",
+    "line": 310,
+    "text": "The hypothesis is dead and ledgered (`memory/discarded.md`, session 51); it never reached a",
+    "verdict": "EXCLUDED-BY-NEGATION",
+    "sessions": [],
+    "attribution": null
+   },
+   {
+    "file": "2026-07-21.md",
+    "line": 351,
+    "text": "`memory/discarded.md`; the original session-33 journal entry stands as minutes, the",
+    "sessions": [
+     33
+    ],
+    "attribution": "on-line",
+    "own_session": 51,
+    "verdict": "RETROSPECTIVE-COMMENTARY"
+   },
+   {
+    "file": "2026-07-21.md",
+    "line": 512,
+    "text": "fetched. Not a classification change; ledgered here rather than in `discarded.md`",
+    "sessions": [
+     46
+    ],
+    "attribution": "heading",
+    "own_session": 46,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-23.md",
+    "line": 567,
+    "text": "first-hand read of para 155 (ledgered in `memory/discarded.md`).",
+    "sessions": [
+     58
+    ],
+    "attribution": "heading",
+    "own_session": 58,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 1,
+     "sample": [
+      "first-hand"
+     ],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-24.md",
+    "line": 222,
+    "text": "Protocol court-minimum row confirmed shipped; sha256 pinned). `memory/discarded.md`: the round-1/round-2",
+    "sessions": [
+     59
+    ],
+    "attribution": "heading",
+    "own_session": 59,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 3,
+     "sample": [
+      "confirmed",
+      "round-1",
+      "round-2"
+     ],
+     "signal": "CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-25.md",
+    "line": 151,
+    "text": "precedes us; ledgered in the commitment itself, not in `memory/discarded.md`, because it was",
+    "sessions": [
+     61
+    ],
+    "attribution": "heading",
+    "own_session": 61,
+    "verdict": "NOT-REACHED",
+    "missing": [
+     61
+    ],
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-25.md",
+    "line": 574,
+    "text": "as is every memory edit this session (dossier §4, `discarded.md`, chronicle entry 64).",
+    "sessions": [
+     64
+    ],
+    "attribution": "heading",
+    "own_session": 64,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-25.md",
+    "line": 710,
+    "text": "correction appended to `RESULTS-NOTE.md`; ledgered in `memory/discarded.md`. It is the second time",
+    "sessions": [
+     65
+    ],
+    "attribution": "heading",
+    "own_session": 65,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 3,
+     "sample": [
+      "appended",
+      "correction",
+      "second"
+     ],
+     "signal": "CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-26.md",
+    "line": 198,
+    "text": "shipped work but **never ledgered that correction in `memory/discarded.md`**, while its closing",
+    "verdict": "EXCLUDED-BY-NEGATION",
+    "sessions": [],
+    "attribution": null
+   },
+   {
+    "file": "2026-07-26.md",
+    "line": 213,
+    "text": "carries the new draft row. `memory/claims.md`, `memory/open-questions.md`, `memory/discarded.md`",
+    "sessions": [
+     66
+    ],
+    "attribution": "heading",
+    "own_session": 66,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-26.md",
+    "line": 581,
+    "text": "Rechtsposition.* The withdrawal is dated in `METHOD.md` and ledgered in `memory/discarded.md`; it is",
+    "sessions": [
+     68
+    ],
+    "attribution": "heading",
+    "own_session": 68,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 3,
+     "sample": [
+      "method",
+      "rechtsposition",
+      "withdrawal"
+     ],
+     "signal": "CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-26.md",
+    "line": 597,
+    "text": "one with six. So **two claims are withdrawn**, both ledgered in `memory/discarded.md`:",
+    "sessions": [
+     68
+    ],
+    "attribution": "heading",
+    "own_session": 68,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 2,
+     "sample": [
+      "claims",
+      "withdrawn"
+     ],
+     "signal": "CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-26.md",
+    "line": 682,
+    "text": "deleted (`SKEPTIC.md`, `memory/discarded.md`, and dated correction blocks in `README.md`, `SOURCES.md`,",
+    "sessions": [
+     68
+    ],
+    "attribution": "heading",
+    "own_session": 68,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 4,
+     "sample": [
+      "correction",
+      "deleted",
+      "skeptic",
+      "sources"
+     ],
+     "signal": "CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-26.md",
+    "line": 741,
+    "text": "`discarded.md` (four rows), `open-questions.md` (three), `dossiers/archive-as-instrument.md` (the audit,",
+    "sessions": [
+     68
+    ],
+    "attribution": "heading",
+    "own_session": 68,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 3,
+     "sample": [
+      "archive-as-instrument",
+      "dossiers",
+      "open-questions"
+     ],
+     "signal": "CORROBORATED"
+    },
+    "count_claim": {
+     "claimed": 4,
+     "actual_rows_for_session": 6,
+     "verdict": "COUNT-MISMATCH"
+    }
+   },
+   {
+    "file": "2026-07-27.md",
+    "line": 97,
+    "text": "closing bookkeeping counted **four rows** written to `memory/discarded.md`, and the fifth — the",
+    "sessions": [
+     69
+    ],
+    "attribution": "heading",
+    "own_session": 69,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 4,
+     "sample": [
+      "bookkeeping",
+      "closing",
+      "counted",
+      "written"
+     ],
+     "signal": "CORROBORATED"
+    },
+    "count_claim": {
+     "claimed": 4,
+     "actual_rows_for_session": 4,
+     "verdict": "COUNT-MATCH"
+    }
+   },
+   {
+    "file": "2026-07-27.md",
+    "line": 310,
+    "text": "- `memory/` updated: `discarded.md` (the consolidation's late row plus this round's withdrawals),",
+    "sessions": [
+     69
+    ],
+    "attribution": "heading",
+    "own_session": 69,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-28.md",
+    "line": 222,
+    "text": "`memory/discarded.md` row, these minutes, the corrected `REQUESTS.md` reply, and the opening",
+    "sessions": [
+     70
+    ],
+    "attribution": "heading",
+    "own_session": 70,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 3,
+     "sample": [
+      "corrected",
+      "minutes",
+      "requests"
+     ],
+     "signal": "CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-07-30.md",
+    "line": 912,
+    "text": "today. Memory was updated in place: three rows to `claims.md`, three to `discarded.md`, three",
+    "sessions": [
+     73
+    ],
+    "attribution": "heading",
+    "own_session": 73,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    },
+    "count_claim": {
+     "claimed": 3,
+     "actual_rows_for_session": 3,
+     "verdict": "COUNT-MATCH"
+    }
+   },
+   {
+    "file": "2026-08-01.md",
+    "line": 564,
+    "text": "happened — so those two files were largely current — **and `discarded.md` had not a single row for",
+    "sessions": [
+     79
+    ],
+    "attribution": "heading",
+    "own_session": 79,
+    "verdict": "NOT-REACHED",
+    "missing": [
+     79
+    ],
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-08-01.md",
+    "line": 649,
+    "text": "`discarded.md` had **no rows at all** for three of the four sessions distilled, in a month whose",
+    "verdict": "EXCLUDED-BY-NEGATION",
+    "sessions": [],
+    "attribution": null
+   },
+   {
+    "file": "2026-08-02.md",
+    "line": 214,
+    "text": "facts. The withdrawal is dated in `memory/discarded.md`.",
+    "sessions": [
+     80
+    ],
+    "attribution": "heading",
+    "own_session": 80,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 0,
+     "sample": [],
+     "signal": "NOT-CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-08-02.md",
+    "line": 246,
+    "text": "session**, the Interlocutor having hit it first; both withdrawals are dated in `memory/discarded.md`.",
+    "sessions": [
+     80
+    ],
+    "attribution": "heading",
+    "own_session": 80,
+    "verdict": "REACHED",
+    "corroboration": {
+     "shared_tokens": 2,
+     "sample": [
+      "having",
+      "interlocutor"
+     ],
+     "signal": "CORROBORATED"
+    }
+   },
+   {
+    "file": "2026-08-02.md",
+    "line": 773,
+    "text": "withdrawals that session 80's own minutes claim are \"dated in `memory/discarded.md`\" turned out never",
+    "verdict": "EXCLUDED-BY-NEGATION",
+    "sessions": [],
+    "attribution": null
+   },
+   {
+    "file": "2026-08-02.md",
+    "line": 1125,
+    "text": "80's own minutes said were recorded in `discarded.md` and which had never been recorded there. The",
+    "verdict": "EXCLUDED-BY-NEGATION",
+    "sessions": [],
+    "attribution": null
+   }
+  ]
+ },
+ "limb_b": {
+  "headline_unit": "register entries with at least one occurrence unmarked in its own document (RULE.md §7, deviation D9)",
+  "entries_checkable": 145,
+  "entries_yielding_a_key_string": 82,
+  "entries_with_any_occurrence": 40,
+  "entries_with_an_unmarked_occurrence": 16,
+  "entry_lines_with_an_unmarked_occurrence": [
+   54,
+   56,
+   61,
+   71,
+   74,
+   76,
+   78,
+   90,
+   95,
+   96,
+   101,
+   102,
+   113,
+   119,
+   211,
+   222
+  ],
+  "key_strings": 111,
+  "surfaces_searched": 490,
+  "occurrences": 166,
+  "occurrences_marked_in_place": 73,
+  "occurrences_unmarked": 93,
+  "by_surface_class": {
+   "archive": {
+    "total": 7,
+    "unmarked": 3
+   },
+   "shipped": {
+    "total": 96,
+    "unmarked": 65
+   },
+   "drafts": {
+    "total": 17,
+    "unmarked": 12
+   },
+   "journal": {
+    "total": 34,
+    "unmarked": 12
+   },
+   "curated-memory": {
+    "total": 11,
+    "unmarked": 1
+   },
+   "other": {
+    "total": 1,
+    "unmarked": 0
+   }
+  },
+  "keys_with_unmarked_occurrences": 19,
+  "keys_with_no_occurrence_anywhere": 59,
+  "unmarked_detail": {
+   "0/25 across every in-window capture": [
+    {
+     "file": "archive/recovered/2026-07-20-hollow-copy/PRE-REGISTRATION.md",
+     "line": 12,
+     "offset": 0,
+     "surface_class": "archive",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "0/25 across every in-window capture"
+     ]
+    },
+    {
+     "file": "archive/workboard/bookkeeping-sessions-01-65.md",
+     "line": 840,
+     "offset": 19,
+     "surface_class": "archive",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "0/25 across every in-window capture"
+     ]
+    }
+   ],
+   "11 to 15 of 20 in every other stratum": [
+    {
+     "file": "drafts/2026-08-01-what-the-record-rests-on/VERIFICATION.md",
+     "line": 57,
+     "offset": 59,
+     "surface_class": "drafts",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "11 to 15 of 20 in every other stratum"
+     ]
+    }
+   ],
+   "9.991 Ablehnungszeilen mit Kennungen und 10.056 Fundstellen-Zeilen im Snapshot": [
+    {
+     "file": "works/2026-07-26-one-line-for-ten-thousand/SKEPTIC-round2.md",
+     "line": 34,
+     "offset": 262,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "9.991 Ablehnungszeilen mit Kennungen und 10.056 Fundstellen-Zeilen im Snapshot"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-one-line-for-ten-thousand/SKEPTIC-round2.md",
+     "line": 42,
+     "offset": 40,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "9.991 Ablehnungszeilen mit Kennungen und 10.056 Fundstellen-Zeilen im Snapshot"
+     ]
+    }
+   ],
+   "CLEARED ON THE ADJUDICATION RECORD": [
+    {
+     "file": "journal/2026-07-10.md",
+     "line": 580,
+     "offset": 27,
+     "surface_class": "journal",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "CLEARED ON THE ADJUDICATION RECORD"
+     ]
+    }
+   ],
+   "EU AI Act, Regulation (EU) 2024/1689, Art. 5.1(d)": [
+    {
+     "file": "drafts/2026-07-30-follow-the-line/results/audit.json",
+     "line": 123,
+     "offset": 80,
+     "surface_class": "drafts",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "EU AI Act, Regulation (EU) 2024/1689, Art. 5.1(d)"
+     ]
+    },
+    {
+     "file": "journal/2026-07-01.md",
+     "line": 1043,
+     "offset": 2,
+     "surface_class": "journal",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "EU AI Act, Regulation (EU) 2024/1689, Art. 5.1(d)"
+     ]
+    }
+   ],
+   "Google 2026 Environmental Report": [
+    {
+     "file": "works/2026-07-09-the-floor/SOURCES.md",
+     "line": 108,
+     "offset": 24,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "Google 2026 Environmental Report"
+     ]
+    },
+    {
+     "file": "works/2026-07-09-the-floor/SOURCES.md",
+     "line": 110,
+     "offset": 2,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "Google 2026 Environmental Report"
+     ]
+    },
+    {
+     "file": "works/2026-07-09-the-floor/data.json",
+     "line": 189,
+     "offset": 16,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "Google 2026 Environmental Report"
+     ]
+    }
+   ],
+   "NO PRESUMPTION FOUND (default holds, unrebutted)": [
+    {
+     "file": "journal/2026-07-10.md",
+     "line": 399,
+     "offset": 33,
+     "surface_class": "journal",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO PRESUMPTION FOUND (default holds, unrebutted)"
+     ]
+    }
+   ],
+   "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT": [
+    {
+     "file": "journal/2026-07-26.md",
+     "line": 104,
+     "offset": 51,
+     "surface_class": "journal",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "journal/2026-07-26.md",
+     "line": 244,
+     "offset": 45,
+     "surface_class": "journal",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "journal/2026-07-26.md",
+     "line": 445,
+     "offset": 52,
+     "surface_class": "journal",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "memory/dossiers/instruments-on-trial.md",
+     "line": 1231,
+     "offset": 3,
+     "surface_class": "curated-memory",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/PREREGISTRATION.md",
+     "line": 291,
+     "offset": 15,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/README.md",
+     "line": 66,
+     "offset": 34,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/README.md",
+     "line": 363,
+     "offset": 53,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 212,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 258,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 304,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 352,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 402,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 453,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 511,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 573,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 635,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 685,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 731,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 777,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 823,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 869,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 923,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 983,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 1044,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+     "line": 1106,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/envelope.json",
+     "line": 2796,
+     "offset": 18,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/envelope.json",
+     "line": 6916,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/envelope.json",
+     "line": 9691,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/envelope.json",
+     "line": 11777,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/envelope.json",
+     "line": 14552,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/envelope.json",
+     "line": 17327,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+     "line": 505,
+     "offset": 22,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+     "line": 588,
+     "offset": 22,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+     "line": 671,
+     "offset": 22,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+     "line": 756,
+     "offset": 22,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+     "line": 843,
+     "offset": 22,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+     "line": 933,
+     "offset": 22,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+     "line": 1028,
+     "offset": 22,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+     "line": 1127,
+     "offset": 22,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+     "line": 1226,
+     "offset": 22,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+     "line": 1309,
+     "offset": 22,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+     "line": 1392,
+     "offset": 22,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+     "line": 1475,
+     "offset": 22,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+     "line": 1560,
+     "offset": 22,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+     "line": 1651,
+     "offset": 22,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+     "line": 1748,
+     "offset": 22,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+     "line": 1846,
+     "offset": 22,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/summary.md",
+     "line": 346,
+     "offset": 14,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/summary.md",
+     "line": 836,
+     "offset": 14,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/summary.md",
+     "line": 1178,
+     "offset": 14,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/summary.md",
+     "line": 1438,
+     "offset": 14,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/summary.md",
+     "line": 1780,
+     "offset": 14,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/summary.md",
+     "line": 2122,
+     "offset": 14,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/scripts/envelope_units.py",
+     "line": 377,
+     "offset": 24,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/tests/test_classification_ladder.py",
+     "line": 132,
+     "offset": 45,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/work.astro",
+     "line": 6,
+     "offset": 18,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    },
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/work.astro",
+     "line": 114,
+     "offset": 35,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+     ]
+    }
+   ],
+   "One candidate refiling — gauntlet owed": [
+    {
+     "file": "journal/2026-07-10.md",
+     "line": 523,
+     "offset": 33,
+     "surface_class": "journal",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "One candidate refiling — gauntlet owed"
+     ]
+    },
+    {
+     "file": "journal/2026-07-10.md",
+     "line": 847,
+     "offset": 31,
+     "surface_class": "journal",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "One candidate refiling — gauntlet owed"
+     ]
+    }
+   ],
+   "Stop Automating Peer Review Without Rigorous Evaluation": [
+    {
+     "file": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json",
+     "line": 4066,
+     "offset": 12,
+     "surface_class": "drafts",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "Stop Automating Peer Review Without Rigorous Evaluation"
+     ]
+    },
+    {
+     "file": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json",
+     "line": 3742,
+     "offset": 12,
+     "surface_class": "drafts",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "Stop Automating Peer Review Without Rigorous Evaluation"
+     ]
+    },
+    {
+     "file": "drafts/2026-07-30-follow-the-line/sources/history/03067c54.json",
+     "line": 2644,
+     "offset": 12,
+     "surface_class": "drafts",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "Stop Automating Peer Review Without Rigorous Evaluation"
+     ]
+    },
+    {
+     "file": "drafts/2026-07-30-follow-the-line/sources/history/6a032edb.json",
+     "line": 3742,
+     "offset": 12,
+     "surface_class": "drafts",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "Stop Automating Peer Review Without Rigorous Evaluation"
+     ]
+    },
+    {
+     "file": "drafts/2026-07-30-follow-the-line/sources/history/78a609d8.json",
+     "line": 913,
+     "offset": 12,
+     "surface_class": "drafts",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "Stop Automating Peer Review Without Rigorous Evaluation"
+     ]
+    },
+    {
+     "file": "drafts/2026-07-30-follow-the-line/sources/history/a7879398.json",
+     "line": 4066,
+     "offset": 12,
+     "surface_class": "drafts",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "Stop Automating Peer Review Without Rigorous Evaluation"
+     ]
+    },
+    {
+     "file": "drafts/2026-07-30-follow-the-line/sources/history/cc9c2cf1.json",
+     "line": 876,
+     "offset": 12,
+     "surface_class": "drafts",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "Stop Automating Peer Review Without Rigorous Evaluation"
+     ]
+    },
+    {
+     "file": "drafts/2026-07-31-fit-to-send/results/probe.json",
+     "line": 1965,
+     "offset": 29,
+     "surface_class": "drafts",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "Stop Automating Peer Review Without Rigorous Evaluation"
+     ]
+    },
+    {
+     "file": "works/2026-07-17-comparable-with-humans/work.astro",
+     "line": 211,
+     "offset": 20,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "Stop Automating Peer Review Without Rigorous Evaluation"
+     ]
+    }
+   ],
+   "Total operational (scope 1 + market-based scope 2)": [
+    {
+     "file": "journal/2026-07-06.md",
+     "line": 35,
+     "offset": 14,
+     "surface_class": "journal",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "Total operational (scope 1 + market-based scope 2)"
+     ]
+    }
+   ],
+   "Two further pages … hold the passage in full": [
+    {
+     "file": "drafts/2026-08-01-what-the-record-rests-on/VERIFICATION.md",
+     "line": 90,
+     "offset": 36,
+     "surface_class": "drafts",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "Two further pages … hold the passage in full"
+     ]
+    }
+   ],
+   "a non-computable metric value inside the envelope window halts the run for that metric": [
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/PRELOCK-REVISIONS.md",
+     "line": 14,
+     "offset": 25,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "a non-computable metric value inside the envelope window halts the run for that metric"
+     ]
+    }
+   ],
+   "best possible representation of what was seen at the time of collection": [
+    {
+     "file": "works/2026-07-24-where-the-chain-breaks/README.md",
+     "line": 41,
+     "offset": 6,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "best possible representation of what was seen at the time of collection"
+     ]
+    },
+    {
+     "file": "works/2026-07-24-where-the-chain-breaks/data.json",
+     "line": 61,
+     "offset": 115,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "best possible representation of what was seen at the time of collection"
+     ]
+    },
+    {
+     "file": "works/2026-07-24-where-the-chain-breaks/meta.json",
+     "line": 6,
+     "offset": 343,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "best possible representation of what was seen at the time of collection"
+     ]
+    }
+   ],
+   "borrows more gravity than a stale webpage earns": [
+    {
+     "file": "drafts/2026-07-23-grandfather-clause/a1/INTERLOCUTOR.md",
+     "line": 44,
+     "offset": 52,
+     "surface_class": "drafts",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "borrows more gravity than a stale webpage earns"
+     ]
+    }
+   ],
+   "candidate refiling with a gauntlet owed": [
+    {
+     "file": "journal/2026-07-05.md",
+     "line": 248,
+     "offset": 35,
+     "surface_class": "journal",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "candidate refiling with a gauntlet owed"
+     ]
+    }
+   ],
+   "measures the archiving infrastructure only": [
+    {
+     "file": "archive/recovered/2026-07-20-hollow-copy/README.md",
+     "line": 15,
+     "offset": 168,
+     "surface_class": "archive",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "measures the archiving infrastructure only"
+     ]
+    },
+    {
+     "file": "journal/2026-07-24.md",
+     "line": 83,
+     "offset": 14,
+     "surface_class": "journal",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "measures the archiving infrastructure only"
+     ]
+    },
+    {
+     "file": "works/2026-07-24-where-the-chain-breaks/work.astro",
+     "line": 195,
+     "offset": 34,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "measures the archiving infrastructure only"
+     ]
+    }
+   ],
+   "no null from it may be reported as informative at all": [
+    {
+     "file": "works/2026-07-26-unable-to-ring-its-own-bell/PREREGISTRATION.md",
+     "line": 364,
+     "offset": 21,
+     "surface_class": "shipped",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "no null from it may be reported as informative at all"
+     ]
+    }
+   ],
+   "the Court of Appeal's own language": [
+    {
+     "file": "journal/2026-07-03.md",
+     "line": 572,
+     "offset": 30,
+     "surface_class": "journal",
+     "marked_in_place": false,
+     "markers": [],
+     "keys": [
+      "the Court of Appeal's own language"
+     ]
+    }
+   ]
+  },
+  "all_occurrences": [
+   {
+    "file": "archive/recovered/2026-07-20-hollow-copy/PRE-REGISTRATION.md",
+    "line": 12,
+    "offset": 0,
+    "surface_class": "archive",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "0/25 across every in-window capture"
+    ]
+   },
+   {
+    "file": "archive/recovered/2026-07-20-hollow-copy/README.md",
+    "line": 15,
+    "offset": 168,
+    "surface_class": "archive",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "measures the archiving infrastructure only"
+    ]
+   },
+   {
+    "file": "archive/workboard/bookkeeping-sessions-01-65.md",
+    "line": 258,
+    "offset": 40,
+    "surface_class": "archive",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "discarded"
+    ],
+    "keys": [
+     "NO PRESUMPTION FOUND (default holds, unrebutted)"
+    ]
+   },
+   {
+    "file": "archive/workboard/bookkeeping-sessions-01-65.md",
+    "line": 840,
+    "offset": 19,
+    "surface_class": "archive",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "0/25 across every in-window capture"
+    ]
+   },
+   {
+    "file": "archive/workboard/open-works-full-2026-08-01.md",
+    "line": 41,
+    "offset": 2418,
+    "surface_class": "archive",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "discarded",
+     "retract",
+     "struck",
+     "superseded",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "0/25 across every in-window capture"
+    ]
+   },
+   {
+    "file": "archive/workboard/open-works-full-2026-08-01.md",
+    "line": 69,
+    "offset": 671,
+    "surface_class": "archive",
+    "marked_in_place": true,
+    "markers": [
+     "discarded",
+     "retract",
+     "struck",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "best possible representation of what was seen at the time of collection"
+    ]
+   },
+   {
+    "file": "archive/workboard/open-works-full-2026-08-01.md",
+    "line": 71,
+    "offset": 437,
+    "surface_class": "archive",
+    "marked_in_place": true,
+    "markers": [
+     "discarded",
+     "retract",
+     "struck",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "deliveries/2026-07-31-enai/INTERLOCUTOR.md",
+    "line": 23,
+    "offset": 64,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "correction",
+     "errata"
+    ],
+    "keys": [
+     "the honest reason to write at all"
+    ]
+   },
+   {
+    "file": "deliveries/2026-07-31-enai/INTERLOCUTOR.md",
+    "line": 23,
+    "offset": 575,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "correction",
+     "errata"
+    ],
+    "keys": [
+     "the honest reason to write at all"
+    ]
+   },
+   {
+    "file": "drafts/2026-07-23-grandfather-clause/LEDGER.md",
+    "line": 299,
+    "offset": 1,
+    "surface_class": "drafts",
+    "marked_in_place": true,
+    "markers": [
+     "correction"
+    ],
+    "keys": [
+     "three further true-negative observations on the camera-capture control"
+    ]
+   },
+   {
+    "file": "drafts/2026-07-23-grandfather-clause/a1/INTERLOCUTOR.md",
+    "line": 44,
+    "offset": 52,
+    "surface_class": "drafts",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "borrows more gravity than a stale webpage earns"
+    ]
+   },
+   {
+    "file": "drafts/2026-07-23-grandfather-clause/a1/SKEPTIC-L2.md",
+    "line": 31,
+    "offset": 11,
+    "surface_class": "drafts",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "was wrong"
+    ],
+    "keys": [
+     "a property of the capture, not of the data"
+    ]
+   },
+   {
+    "file": "drafts/2026-07-23-grandfather-clause/ledger.json",
+    "line": 60,
+    "offset": 142,
+    "surface_class": "drafts",
+    "marked_in_place": true,
+    "markers": [
+     "correction",
+     "superseded",
+     "supersedes"
+    ],
+    "keys": [
+     "have limited legal effect, and in particular do not grant a presumption of conformity"
+    ]
+   },
+   {
+    "file": "drafts/2026-07-23-grandfather-clause/ledger.json",
+    "line": 60,
+    "offset": 272,
+    "surface_class": "drafts",
+    "marked_in_place": true,
+    "markers": [
+     "correction",
+     "superseded",
+     "supersedes"
+    ],
+    "keys": [
+     "can rely on its measures to demonstrate compliance"
+    ]
+   },
+   {
+    "file": "drafts/2026-07-28-follow-the-line/sources/papers.frozen.json",
+    "line": 4066,
+    "offset": 12,
+    "surface_class": "drafts",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "Stop Automating Peer Review Without Rigorous Evaluation"
+    ]
+   },
+   {
+    "file": "drafts/2026-07-28-follow-the-line/sources/papers.seed-state.frozen.json",
+    "line": 3742,
+    "offset": 12,
+    "surface_class": "drafts",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "Stop Automating Peer Review Without Rigorous Evaluation"
+    ]
+   },
+   {
+    "file": "drafts/2026-07-30-follow-the-line/README.md",
+    "line": 28,
+    "offset": 49,
+    "surface_class": "drafts",
+    "marked_in_place": true,
+    "markers": [
+     "correction"
+    ],
+    "keys": [
+     "Not one of the seventeen was in the measurement"
+    ]
+   },
+   {
+    "file": "drafts/2026-07-30-follow-the-line/results/audit.json",
+    "line": 123,
+    "offset": 80,
+    "surface_class": "drafts",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "EU AI Act, Regulation (EU) 2024/1689, Art. 5.1(d)"
+    ]
+   },
+   {
+    "file": "drafts/2026-07-30-follow-the-line/sources/history/03067c54.json",
+    "line": 2644,
+    "offset": 12,
+    "surface_class": "drafts",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "Stop Automating Peer Review Without Rigorous Evaluation"
+    ]
+   },
+   {
+    "file": "drafts/2026-07-30-follow-the-line/sources/history/6a032edb.json",
+    "line": 3742,
+    "offset": 12,
+    "surface_class": "drafts",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "Stop Automating Peer Review Without Rigorous Evaluation"
+    ]
+   },
+   {
+    "file": "drafts/2026-07-30-follow-the-line/sources/history/78a609d8.json",
+    "line": 913,
+    "offset": 12,
+    "surface_class": "drafts",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "Stop Automating Peer Review Without Rigorous Evaluation"
+    ]
+   },
+   {
+    "file": "drafts/2026-07-30-follow-the-line/sources/history/a7879398.json",
+    "line": 4066,
+    "offset": 12,
+    "surface_class": "drafts",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "Stop Automating Peer Review Without Rigorous Evaluation"
+    ]
+   },
+   {
+    "file": "drafts/2026-07-30-follow-the-line/sources/history/cc9c2cf1.json",
+    "line": 876,
+    "offset": 12,
+    "surface_class": "drafts",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "Stop Automating Peer Review Without Rigorous Evaluation"
+    ]
+   },
+   {
+    "file": "drafts/2026-07-31-fit-to-send/results/probe.json",
+    "line": 1965,
+    "offset": 29,
+    "surface_class": "drafts",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "Stop Automating Peer Review Without Rigorous Evaluation"
+    ]
+   },
+   {
+    "file": "drafts/2026-08-01-what-the-record-rests-on/VERIFICATION.md",
+    "line": 57,
+    "offset": 59,
+    "surface_class": "drafts",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "11 to 15 of 20 in every other stratum"
+    ]
+   },
+   {
+    "file": "drafts/2026-08-01-what-the-record-rests-on/VERIFICATION.md",
+    "line": 90,
+    "offset": 36,
+    "surface_class": "drafts",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "Two further pages … hold the passage in full"
+    ]
+   },
+   {
+    "file": "journal/2026-07-01.md",
+    "line": 170,
+    "offset": 7,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "discarded"
+    ],
+    "keys": [
+     "GPT detectors are becoming undetectable"
+    ]
+   },
+   {
+    "file": "journal/2026-07-01.md",
+    "line": 1043,
+    "offset": 2,
+    "surface_class": "journal",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "EU AI Act, Regulation (EU) 2024/1689, Art. 5.1(d)"
+    ]
+   },
+   {
+    "file": "journal/2026-07-01.md",
+    "line": 1113,
+    "offset": 2,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "struck"
+    ],
+    "keys": [
+     "EU AI Act, Regulation (EU) 2024/1689, Art. 5.1(d)"
+    ]
+   },
+   {
+    "file": "journal/2026-07-03.md",
+    "line": 350,
+    "offset": 39,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "discarded"
+    ],
+    "keys": [
+     "First documented US PhD expulsion for AI use"
+    ]
+   },
+   {
+    "file": "journal/2026-07-03.md",
+    "line": 572,
+    "offset": 30,
+    "surface_class": "journal",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "the Court of Appeal's own language"
+    ]
+   },
+   {
+    "file": "journal/2026-07-03.md",
+    "line": 641,
+    "offset": 3,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "discarded"
+    ],
+    "keys": [
+     "Files cleanly, by the same logic as card 001"
+    ]
+   },
+   {
+    "file": "journal/2026-07-05.md",
+    "line": 248,
+    "offset": 35,
+    "surface_class": "journal",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "candidate refiling with a gauntlet owed"
+    ]
+   },
+   {
+    "file": "journal/2026-07-05.md",
+    "line": 402,
+    "offset": 17,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "discarded"
+    ],
+    "keys": [
+     "the Court of Appeal's own language"
+    ]
+   },
+   {
+    "file": "journal/2026-07-06.md",
+    "line": 35,
+    "offset": 14,
+    "surface_class": "journal",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "Total operational (scope 1 + market-based scope 2)"
+    ]
+   },
+   {
+    "file": "journal/2026-07-07.md",
+    "line": 90,
+    "offset": 7,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "corrected"
+    ],
+    "keys": [
+     "believed to be the first student expelled from the University of Minnesota"
+    ]
+   },
+   {
+    "file": "journal/2026-07-09.md",
+    "line": 416,
+    "offset": 1,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "discarded"
+    ],
+    "keys": [
+     "Google 2026 Environmental Report"
+    ]
+   },
+   {
+    "file": "journal/2026-07-10.md",
+    "line": 399,
+    "offset": 33,
+    "surface_class": "journal",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO PRESUMPTION FOUND (default holds, unrebutted)"
+    ]
+   },
+   {
+    "file": "journal/2026-07-10.md",
+    "line": 523,
+    "offset": 33,
+    "surface_class": "journal",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "One candidate refiling — gauntlet owed"
+    ]
+   },
+   {
+    "file": "journal/2026-07-10.md",
+    "line": 580,
+    "offset": 27,
+    "surface_class": "journal",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "CLEARED ON THE ADJUDICATION RECORD"
+    ]
+   },
+   {
+    "file": "journal/2026-07-10.md",
+    "line": 847,
+    "offset": 31,
+    "surface_class": "journal",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "One candidate refiling — gauntlet owed"
+    ]
+   },
+   {
+    "file": "journal/2026-07-17.md",
+    "line": 64,
+    "offset": 20,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "rejected",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "Stop Automating Peer Review Without Rigorous Evaluation"
+    ]
+   },
+   {
+    "file": "journal/2026-07-17.md",
+    "line": 327,
+    "offset": 3,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "discarded"
+    ],
+    "keys": [
+     "Supplementary A.3.2 paywalled / not retrieved"
+    ]
+   },
+   {
+    "file": "journal/2026-07-17.md",
+    "line": 328,
+    "offset": 41,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "discarded"
+    ],
+    "keys": [
+     "sample size stated, exact sampling not."
+    ]
+   },
+   {
+    "file": "journal/2026-07-24.md",
+    "line": 83,
+    "offset": 14,
+    "surface_class": "journal",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "measures the archiving infrastructure only"
+    ]
+   },
+   {
+    "file": "journal/2026-07-24.md",
+    "line": 113,
+    "offset": 36,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "corrected"
+    ],
+    "keys": [
+     "0/25 across every in-window capture"
+    ]
+   },
+   {
+    "file": "journal/2026-07-25.md",
+    "line": 526,
+    "offset": 13,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "correction",
+     "discarded",
+     "retract"
+    ],
+    "keys": [
+     "entries 61 and 63 both landed and the shortfall persisted"
+    ]
+   },
+   {
+    "file": "journal/2026-07-26.md",
+    "line": 104,
+    "offset": 51,
+    "surface_class": "journal",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "journal/2026-07-26.md",
+    "line": 244,
+    "offset": 45,
+    "surface_class": "journal",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "journal/2026-07-26.md",
+    "line": 410,
+    "offset": 5,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "discarded",
+     "superseded",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "For MTLD there is no such excuse: it is simply insensitive at this scale"
+    ]
+   },
+   {
+    "file": "journal/2026-07-26.md",
+    "line": 445,
+    "offset": 52,
+    "surface_class": "journal",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "journal/2026-07-26.md",
+    "line": 700,
+    "offset": 5,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "discarded",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "No machine-readable field anywhere in the tree declares that anything was withheld"
+    ]
+   },
+   {
+    "file": "journal/2026-07-26.md",
+    "line": 703,
+    "offset": 5,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "discarded",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "One of the gaps is irreducible, because a register may not log what it may not store"
+    ]
+   },
+   {
+    "file": "journal/2026-07-27.md",
+    "line": 144,
+    "offset": 29,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "source-label reduction (by ledger `quelle` field)"
+    ]
+   },
+   {
+    "file": "journal/2026-07-27.md",
+    "line": 280,
+    "offset": 5,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "discarded",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "The 65 are duplicate identifiers across the two harvest runs"
+    ]
+   },
+   {
+    "file": "journal/2026-07-27.md",
+    "line": 283,
+    "offset": 33,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "discarded",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "source-label reduction (by ledger `quelle` field)"
+    ]
+   },
+   {
+    "file": "journal/2026-07-28.md",
+    "line": 161,
+    "offset": 5,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "discarded",
+     "retract",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "The site repository's commit history was not readable from this session"
+    ]
+   },
+   {
+    "file": "journal/2026-07-30.md",
+    "line": 177,
+    "offset": 8,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "corrected"
+    ],
+    "keys": [
+     "finding this session would defend,"
+    ]
+   },
+   {
+    "file": "journal/2026-08-01.md",
+    "line": 277,
+    "offset": 4,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction"
+    ],
+    "keys": [
+     "11 to 15 of 20 in every other stratum"
+    ]
+   },
+   {
+    "file": "journal/2026-08-01.md",
+    "line": 288,
+    "offset": 4,
+    "surface_class": "journal",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "was wrong",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "Two further pages … hold the passage in full"
+    ]
+   },
+   {
+    "file": "memory/claims.md",
+    "line": 35,
+    "offset": 550,
+    "surface_class": "curated-memory",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "discarded",
+     "errata"
+    ],
+    "keys": [
+     "believed to be the first student expelled from the University of Minnesota"
+    ]
+   },
+   {
+    "file": "memory/claims.md",
+    "line": 45,
+    "offset": 252,
+    "surface_class": "curated-memory",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "discarded",
+     "retract"
+    ],
+    "keys": [
+     "modest and not statistically significant at conventional thresholds"
+    ]
+   },
+   {
+    "file": "memory/claims.md",
+    "line": 67,
+    "offset": 366,
+    "surface_class": "curated-memory",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "discarded"
+    ],
+    "keys": [
+     "Total operational (scope 1 + market-based scope 2)"
+    ]
+   },
+   {
+    "file": "memory/claims.md",
+    "line": 82,
+    "offset": 2002,
+    "surface_class": "curated-memory",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "no longer",
+     "supersedes"
+    ],
+    "keys": [
+     "NO PRESUMPTION FOUND (default holds, unrebutted)"
+    ]
+   },
+   {
+    "file": "memory/claims.md",
+    "line": 96,
+    "offset": 1563,
+    "surface_class": "curated-memory",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "not a claim",
+     "was wrong",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "Stop Automating Peer Review Without Rigorous Evaluation"
+    ]
+   },
+   {
+    "file": "memory/claims.md",
+    "line": 113,
+    "offset": 1748,
+    "surface_class": "curated-memory",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "discarded",
+     "retract",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "memory/claims.md",
+    "line": 243,
+    "offset": 164,
+    "surface_class": "curated-memory",
+    "marked_in_place": true,
+    "markers": [
+     "correction",
+     "no longer",
+     "superseded",
+     "supersedes"
+    ],
+    "keys": [
+     "have limited legal effect, and in particular do not grant a presumption of conformity"
+    ]
+   },
+   {
+    "file": "memory/claims.md",
+    "line": 243,
+    "offset": 296,
+    "surface_class": "curated-memory",
+    "marked_in_place": true,
+    "markers": [
+     "correction",
+     "no longer",
+     "superseded",
+     "supersedes"
+    ],
+    "keys": [
+     "can rely on its measures to demonstrate compliance"
+    ]
+   },
+   {
+    "file": "memory/dossiers/instruments-on-trial.md",
+    "line": 160,
+    "offset": 12,
+    "surface_class": "curated-memory",
+    "marked_in_place": true,
+    "markers": [
+     "correction"
+    ],
+    "keys": [
+     "modest and not statistically significant at conventional thresholds"
+    ]
+   },
+   {
+    "file": "memory/dossiers/instruments-on-trial.md",
+    "line": 1231,
+    "offset": 3,
+    "surface_class": "curated-memory",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "memory/dossiers/world-contact.md",
+    "line": 139,
+    "offset": 34,
+    "surface_class": "curated-memory",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "errata"
+    ],
+    "keys": [
+     "the honest reason to write at all"
+    ]
+   },
+   {
+    "file": "notes/2026-07-25-repair-chronicle-anchor/OPENING.md",
+    "line": 49,
+    "offset": 16,
+    "surface_class": "other",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "retract",
+     "was wrong"
+    ],
+    "keys": [
+     "the shortfall has not healed across three landings"
+    ]
+   },
+   {
+    "file": "works/2026-07-01-calibration-gap/INTERLOCUTOR.md",
+    "line": 13,
+    "offset": 187,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "correction"
+    ],
+    "keys": [
+     "The gauntlet run for this state — Verifier, Skeptic, and the hostile Interlocutor critique published in full — is recorded there."
+    ]
+   },
+   {
+    "file": "works/2026-07-01-calibration-gap/SKEPTIC.md",
+    "line": 79,
+    "offset": 22,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "struck",
+     "superseded"
+    ],
+    "keys": [
+     "every load-bearing source on it can be followed"
+    ]
+   },
+   {
+    "file": "works/2026-07-01-calibration-gap/data.json",
+    "line": 142,
+    "offset": 800,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "struck",
+     "superseded",
+     "was wrong"
+    ],
+    "keys": [
+     "this was the best figure known at the time"
+    ]
+   },
+   {
+    "file": "works/2026-07-01-calibration-gap/evidence/specimen.html",
+    "line": 372,
+    "offset": 21018,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "discarded",
+     "no longer",
+     "struck",
+     "superseded",
+     "was wrong"
+    ],
+    "keys": [
+     "this was the best figure known at the time"
+    ]
+   },
+   {
+    "file": "works/2026-07-05-backward-regime-test/data.json",
+    "line": 213,
+    "offset": 86,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "rejected"
+    ],
+    "keys": [
+     "NOT recorded as a candidate refiling"
+    ]
+   },
+   {
+    "file": "works/2026-07-09-the-floor/SOURCES.md",
+    "line": 39,
+    "offset": 4,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "discarded"
+    ],
+    "keys": [
+     "Total operational (scope 1 + market-based scope 2)"
+    ]
+   },
+   {
+    "file": "works/2026-07-09-the-floor/SOURCES.md",
+    "line": 43,
+    "offset": 3,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "discarded"
+    ],
+    "keys": [
+     "Ironwood is nearly 30 times more power efficient than our first Cloud TPU from 2018"
+    ]
+   },
+   {
+    "file": "works/2026-07-09-the-floor/SOURCES.md",
+    "line": 47,
+    "offset": 47,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "discarded"
+    ],
+    "keys": [
+     "vs the earliest-generation Cloud TPU v2"
+    ]
+   },
+   {
+    "file": "works/2026-07-09-the-floor/SOURCES.md",
+    "line": 108,
+    "offset": 24,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "Google 2026 Environmental Report"
+    ]
+   },
+   {
+    "file": "works/2026-07-09-the-floor/SOURCES.md",
+    "line": 110,
+    "offset": 2,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "Google 2026 Environmental Report"
+    ]
+   },
+   {
+    "file": "works/2026-07-09-the-floor/SOURCES.md",
+    "line": 169,
+    "offset": 30,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "superseded"
+    ],
+    "keys": [
+     "Google 2026 Environmental Report"
+    ]
+   },
+   {
+    "file": "works/2026-07-09-the-floor/data.json",
+    "line": 189,
+    "offset": 16,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "Google 2026 Environmental Report"
+    ]
+   },
+   {
+    "file": "works/2026-07-17-comparable-with-humans/work.astro",
+    "line": 211,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "Stop Automating Peer Review Without Rigorous Evaluation"
+    ]
+   },
+   {
+    "file": "works/2026-07-24-where-the-chain-breaks/README.md",
+    "line": 26,
+    "offset": 18,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "struck"
+    ],
+    "keys": [
+     "measures the archiving infrastructure only"
+    ]
+   },
+   {
+    "file": "works/2026-07-24-where-the-chain-breaks/README.md",
+    "line": 27,
+    "offset": 32,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "struck"
+    ],
+    "keys": [
+     "implies nothing about the report's evidentiary claims"
+    ]
+   },
+   {
+    "file": "works/2026-07-24-where-the-chain-breaks/README.md",
+    "line": 41,
+    "offset": 6,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "best possible representation of what was seen at the time of collection"
+    ]
+   },
+   {
+    "file": "works/2026-07-24-where-the-chain-breaks/README.md",
+    "line": 138,
+    "offset": 50,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected"
+    ],
+    "keys": [
+     "measures the archiving infrastructure only"
+    ]
+   },
+   {
+    "file": "works/2026-07-24-where-the-chain-breaks/README.md",
+    "line": 139,
+    "offset": 21,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected"
+    ],
+    "keys": [
+     "implies nothing about the report's evidentiary claims"
+    ]
+   },
+   {
+    "file": "works/2026-07-24-where-the-chain-breaks/README.md",
+    "line": 140,
+    "offset": 63,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected"
+    ],
+    "keys": [
+     "0/25 across every in-window capture"
+    ]
+   },
+   {
+    "file": "works/2026-07-24-where-the-chain-breaks/SOURCES.md",
+    "line": 89,
+    "offset": 7,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected"
+    ],
+    "keys": [
+     "0/25 across every in-window capture"
+    ]
+   },
+   {
+    "file": "works/2026-07-24-where-the-chain-breaks/data.json",
+    "line": 31,
+    "offset": 212,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "struck"
+    ],
+    "keys": [
+     "best possible representation of what was seen at the time of collection"
+    ]
+   },
+   {
+    "file": "works/2026-07-24-where-the-chain-breaks/data.json",
+    "line": 47,
+    "offset": 376,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "struck"
+    ],
+    "keys": [
+     "0/25 across every in-window capture"
+    ]
+   },
+   {
+    "file": "works/2026-07-24-where-the-chain-breaks/data.json",
+    "line": 61,
+    "offset": 115,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "best possible representation of what was seen at the time of collection"
+    ]
+   },
+   {
+    "file": "works/2026-07-24-where-the-chain-breaks/meta.json",
+    "line": 6,
+    "offset": 343,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "best possible representation of what was seen at the time of collection"
+    ]
+   },
+   {
+    "file": "works/2026-07-24-where-the-chain-breaks/work.astro",
+    "line": 195,
+    "offset": 34,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "measures the archiving infrastructure only"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-one-line-for-ten-thousand/SKEPTIC-round2.md",
+    "line": 34,
+    "offset": 262,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "9.991 Ablehnungszeilen mit Kennungen und 10.056 Fundstellen-Zeilen im Snapshot"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-one-line-for-ten-thousand/SKEPTIC-round2.md",
+    "line": 42,
+    "offset": 40,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "9.991 Ablehnungszeilen mit Kennungen und 10.056 Fundstellen-Zeilen im Snapshot"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-one-line-for-ten-thousand/SKEPTIC.md",
+    "line": 37,
+    "offset": 15,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "withdraw"
+    ],
+    "keys": [
+     "No machine-readable field anywhere in the tree declares that anything was withheld"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-one-line-for-ten-thousand/SKEPTIC.md",
+    "line": 39,
+    "offset": 33,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "withdraw"
+    ],
+    "keys": [
+     "a third of the harvest undeclared"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-one-line-for-ten-thousand/SOURCES.md",
+    "line": 159,
+    "offset": 26,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "discarded",
+     "withdraw"
+    ],
+    "keys": [
+     "comes from the register's prose rather than from its records"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION-round2.md",
+    "line": 40,
+    "offset": 180,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "discarded",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "source-label reduction (by ledger `quelle` field)"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION-round2.md",
+    "line": 47,
+    "offset": 48,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "discarded",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "this audit's data was computed at 2026-07-26T23:55Z, about nine hours later"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION-round2.md",
+    "line": 98,
+    "offset": 148,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "correction",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "source-label reduction (by ledger `quelle` field)"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION.md",
+    "line": 86,
+    "offset": 483,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "discarded",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "9.991 Ablehnungszeilen mit Kennungen und 10.056 Fundstellen-Zeilen im Snapshot"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION.md",
+    "line": 90,
+    "offset": 171,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "discarded",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "declared nowhere in a machine-readable field"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION.md",
+    "line": 127,
+    "offset": 102,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "corrected",
+     "correction",
+     "discarded",
+     "withdraw",
+     "withdrawn"
+    ],
+    "keys": [
+     "declared nowhere in a machine-readable field"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/PRELOCK-REVISIONS.md",
+    "line": 14,
+    "offset": 25,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "a non-computable metric value inside the envelope window halts the run for that metric"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/PREREGISTRATION.md",
+    "line": 291,
+    "offset": 15,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/PREREGISTRATION.md",
+    "line": 364,
+    "offset": 21,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "no null from it may be reported as informative at all"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/README.md",
+    "line": 66,
+    "offset": 34,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/README.md",
+    "line": 363,
+    "offset": 53,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/RESULTS-NOTE.md",
+    "line": 105,
+    "offset": 0,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "superseded"
+    ],
+    "keys": [
+     "For MTLD there is no such excuse: it is simply insensitive at this scale"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/SKEPTIC-GAUNTLET.md",
+    "line": 17,
+    "offset": 53,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "correction"
+    ],
+    "keys": [
+     "For MTLD there is no such excuse: it is simply insensitive at this scale"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 212,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 258,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 304,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 352,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 402,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 453,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 511,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 573,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 635,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 685,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 731,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 777,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 823,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 869,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 923,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 983,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 1044,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/data.json",
+    "line": 1106,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/meta.json",
+    "line": 6,
+    "offset": 294,
+    "surface_class": "shipped",
+    "marked_in_place": true,
+    "markers": [
+     "withdraw"
+    ],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/envelope.json",
+    "line": 2796,
+    "offset": 18,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/envelope.json",
+    "line": 6916,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/envelope.json",
+    "line": 9691,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/envelope.json",
+    "line": 11777,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/envelope.json",
+    "line": 14552,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/envelope.json",
+    "line": 17327,
+    "offset": 20,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+    "line": 505,
+    "offset": 22,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+    "line": 588,
+    "offset": 22,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+    "line": 671,
+    "offset": 22,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+    "line": 756,
+    "offset": 22,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+    "line": 843,
+    "offset": 22,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+    "line": 933,
+    "offset": 22,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+    "line": 1028,
+    "offset": 22,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+    "line": 1127,
+    "offset": 22,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+    "line": 1226,
+    "offset": 22,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+    "line": 1309,
+    "offset": 22,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+    "line": 1392,
+    "offset": 22,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+    "line": 1475,
+    "offset": 22,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+    "line": 1560,
+    "offset": 22,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+    "line": 1651,
+    "offset": 22,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+    "line": 1748,
+    "offset": 22,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/sensitivity.json",
+    "line": 1846,
+    "offset": 22,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/summary.md",
+    "line": 346,
+    "offset": 14,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/summary.md",
+    "line": 836,
+    "offset": 14,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/summary.md",
+    "line": 1178,
+    "offset": 14,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/summary.md",
+    "line": 1438,
+    "offset": 14,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/summary.md",
+    "line": 1780,
+    "offset": 14,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/results/summary.md",
+    "line": 2122,
+    "offset": 14,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/scripts/envelope_units.py",
+    "line": 377,
+    "offset": 24,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/tests/test_classification_ladder.py",
+    "line": 132,
+    "offset": 45,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/work.astro",
+    "line": 6,
+    "offset": 18,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   },
+   {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/work.astro",
+    "line": 114,
+    "offset": 35,
+    "surface_class": "shipped",
+    "marked_in_place": false,
+    "markers": [],
+    "keys": [
+     "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+    ]
+   }
+  ]
+ }
+}

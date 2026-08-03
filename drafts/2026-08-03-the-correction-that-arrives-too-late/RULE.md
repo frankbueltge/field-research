@@ -108,7 +108,11 @@ of announcements that did not arrive can only be larger, never smaller.
    `discarded`, `correction`, `corrected`, `rejected`, `no longer`, `not a claim`, `in error`,
    `was wrong`, `struck`.
    Otherwise it is **UNMARKED — legible as live**.
-7. **Direction of the error, stated before the run.** The marker list is deliberately broad and
+7. **Direction of the error, stated before the run — WITHDRAWN after the run; see §7.** The
+   claim below survived first contact with an independent reader and did not survive the second:
+   because this practice's dominant discipline is to leave the wrong text standing and carry the
+   correction in a *sibling* file, a same-document test can also **over**-count failures. The text
+   as written stands here, struck by this note, and is not a live assertion. The marker list is deliberately broad and
    the neighbourhood deliberately wide, so the test is **generous to this archive**: a page that
    merely happens to say "corrected" near the claim counts as marked. Limb B therefore reports a
    **lower bound** on unmarked survival. Any number it produces is the least bad reading of the
@@ -134,5 +138,33 @@ Every number in the write-up is read from `results.json`; nothing is typed by ha
 
 ## 7. Deviations from this rule
 
-*(Appended after the run. Each deviation: what changed, why, and what the number was before and
-after — or "none".)*
+Nine. Two were parser defects found by the builder on the first run; seven are conditions set by an
+independent design review (the Skeptic's pre-read, returned after that first run — the honest
+sequence, recorded in the session minutes). The pre-registered numbers are kept: the first run's
+output is committed unchanged as `results-as-preregistered.json`, so every effect below is checkable
+by diffing the two files.
+
+| # | What changed | Why | Effect on the numbers |
+|---|---|---|---|
+| **D1** | Session attribution accepts any level-1 heading naming a session (`# Journal — DATE (collective session NN)`, `# Collective session NN`, `# Session — DATE (…)`), not only `# Session NN` | Only 20 of the 31 journal files use the pre-registered form; 18 announcements were unattributable purely because of heading style | counted announcements 31 → 49; unattributable 18 → 0 |
+| **D2** | A number immediately preceded by `session`/`session-` is an identifier, not a stated row count | The pre-registered pattern read "the session-33 journal entry stands as minutes" as a claim of *33 rows* | one spurious count-mismatch removed |
+| **D3** | A line inside session X's minutes that names session Y is tagged `RETROSPECTIVE-COMMENTARY` and excluded from the counted set | Pre-read finding 2: a later session's description of an earlier session's claim is not that session's own announcement, and merging the two double-counts one event | 2 lines moved out of the counted set; NOT-REACHED 9 → 8 |
+| **D4** | Occurrences deduplicated by (file, line, character offset), not by (key, file); every key matching one location is listed on that one occurrence | Pre-read finding 4: this register re-quotes overlapping spans of the same sentence across correction rounds, so one exposed location could be counted twice | occurrences 168 → 166 |
+| **D5** | Rights exclusion extended with `purge`/`purged` | Pre-read finding 3: the register's own wording for the 2026-07-21 event is "lost in the 2026-07-21 history purge" and contains none of the five pre-registered keywords. Checked by hand before widening: `journal/2026-07-22.md:38–42` records that the purge **was** the removal of names from git history — the same rights-sensitive event | 3 register entries excluded from key extraction (0 → 3); key strings 113 → 111 |
+| **D6** | `.svg` added to the searched surface extensions | Pre-read finding 6: this archive has shipped verbatim quoted text inside SVG, so the pre-registered set was blind to it by construction | surfaces 489 → 490; no new occurrence found |
+| **D7** | Number words extended one–twenty | Pre-read finding 11 | none observed |
+| **D8** | Added a disclosed secondary signal: do ≥2 distinctive words of the announcement recur in the register rows filed under that session? Reported per announcement; **never** used to overturn a verdict | Pre-read finding 12: narrows the session-granularity ceiling of §3.5 with data already parsed | new field, no verdict changed |
+| **D9** | The headline unit is pre-committed as **withdrawal-level**: how many register entries have ≥1 occurrence unmarked in its own document. Occurrence percentages are supporting detail only | Pre-read finding 5: §1 asks whether a withdrawal reaches *every* surface, so an occurrence-level percentage would answer a different question | reporting only |
+
+**One condition of the pre-read was refused, and this is the refusal.** Finding 1 required either
+widening the marking test to sibling files (`CORRECTIONS.md`, `ERRATA.md`, a `*-NOTE.md` next to the
+occurrence) or restating the headline. **The headline is restated; the test is not widened.** Widening
+it would have let a directory's mere possession of a corrections file launder every unmarked
+occurrence inside it, and this instrument measures its own author's archive — the one place where a
+generous rule is worth least. So Limb B measures exactly this and says so everywhere it is reported:
+**"unmarked in its own document, within ten lines."** It does **not** measure "unmarked in the
+archive", and the pre-read is right that for this practice's dominant discipline — leave the wrong
+text standing, carry the correction in a sibling file — the two can differ, in the direction that
+makes this test **over-count** failures rather than under-count them. §4.7's claimed direction of
+error is therefore **withdrawn**: Limb B errs in both directions, and only the per-case adjudication
+published with the results says which way each case fell.
