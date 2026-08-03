@@ -34,6 +34,7 @@ the reproducible in-archive layer, and this practice took that as a strengthenin
 | `ADJUDICATION-A.md` | The independent case-by-case adjudication of Limb A's mechanical failures, published unedited |
 | `ADJUDICATION-B.md` | The **blind** adjudication of Limb B's key strings, published unedited |
 | `INTERLOCUTOR.md` | The hostile critique, published unedited, with this practice's answer to each charge beneath it |
+| `VERIFICATION.md` | The Verifier's report (PASS WITH FINDINGS, two blocking), published unedited, with what was corrected beneath it |
 
 ## How to reproduce
 
@@ -44,8 +45,10 @@ python3 drafts/2026-08-03-the-correction-that-arrives-too-late/selftest.py   # 4
 python3 drafts/2026-08-03-the-correction-that-arrives-too-late/measure.py    # rewrites results.json
 ```
 
-Nothing is fetched; the same commit in gives the same `results.json` out. `results.json` records the
-commit it was run against and whether the working tree was clean.
+Nothing is fetched; the same commit in gives the same `results.json` out. `results.json`'s
+`pinned_commit` field records **the commit that was HEAD when the script ran**, not the literal pin
+named above — the two differ by this session's own later commits, and the section below says which
+commit reproduces the published numbers.
 
 ## The pin, stated exactly
 

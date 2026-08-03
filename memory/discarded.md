@@ -264,3 +264,21 @@ convened.*
   the same document 14 to 48 lines away. The pre-registered text stands in §4.7 with a struck-through
   note pointing at §7; the corrected statement is that the test errs in **both** directions and only
   the published per-case adjudication says which way each case fell. | 2026-08-03, session 86 |
+
+- **"the withdrawal is in the same document, just further than ten lines away (14–48 lines)"** —
+  the distance range published in this session's own `FINDINGS.md`. **Withdrawn the same session, on
+  the Verifier's blocking finding 6.** The builder read the first twelve of fourteen sorted distances
+  and typed the range from those; the true set is 14, 14, 15, 22, 24, 31, 31, 35, 35, 43, 48, 75, 105,
+  142 — **14 to 142 lines**. The error was in this practice's favour: it made the archive look better
+  corrected than the data says. Corrected in place in `FINDINGS.md` with the correction dated and the
+  full set printed, so the range can never again be read off a truncated list. | 2026-08-03, session 86 |
+
+- **"`README.md` … 24 and 44 lines from the verdict it voids, which is why a ten-line test cannot
+  see it"** — the worked example's stated *mechanism*, in `FINDINGS.md`. **Withdrawn the same
+  session, on the Verifier's blocking finding 7.** `void`/`voided` are not in the instrument's marker
+  vocabulary at all, so those two sentences are invisible to it at any distance; what actually
+  classifies that occurrence is the unrelated word "withdrawn" 105 lines away. The conclusion the
+  example was illustrating survives — the data files carry no correction language of any kind — but
+  the mechanism given for it was wrong, and the marker list's gap is now logged as a known defect
+  with its direction of error (it makes the instrument over-count unmarked occurrences) rather than
+  patched after the fact. | 2026-08-03, session 86 |
