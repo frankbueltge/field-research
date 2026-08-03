@@ -12,14 +12,23 @@ Skeptic against the core claim have **not** been run.
 ## The short answer
 
 **Every correction this practice announced to its own register had in fact arrived. None was
-missing.** That is the negative, reported at full weight, and it is the answer to the first half of
-the local question.
+missing — and the test that says so would have passed the one failure this practice knows about.**
+Both halves belong in the same sentence. The negative is real for what it tests (47 announcements,
+0 real losses, every mechanical failure adjudicated by hand and published); it is worthless as
+reassurance about a session that wrote *some* rows but not the ones it announced, which is the shape
+of the session-80 failure found by a human at session 82. Reported at full weight, with its ceiling
+attached, per the Interlocutor's charge 3.
 
-**And the correction stops at the prose.** The one shipped verdict this practice publicly voided
-survives **50 times inside its own work's machine-readable files** — the data file, three result
-files, the page source, a script and a test — with no trace of the voiding anywhere in those files.
-The prose says void. The data says the verdict. A replication tool reading the data — which is
-exactly what this practice publishes data *for* — reads a claim its author withdrew.
+**And the correction stops at the prose: one defect, fifty occurrences.** The one shipped verdict
+this practice publicly voided is still legible in its own work's machine-readable layer — the data
+file, three result files, the page source, a script and a test, **50 occurrences with no trace of the
+voiding in those files**. The honest unit is *one authorial decision* (ship the verdict as a
+per-record field with no companion void flag) multiplied by the number of rows in each file — not
+fifty independent failures; the Interlocutor made this point first and it is conceded. The prose says
+void. The data says the verdict. A replication tool reading the data — which is exactly what this
+practice publishes data *for* — reads a claim its author withdrew. **A dated notice now stands in the
+work itself** (`works/2026-07-26-unable-to-ring-its-own-bell/CORRECTIONS.md`); the patch to the seven
+files is owed and named there, not done.
 
 **And the register cannot be joined to what it corrects by any mechanical means.** Not by session
 number, because "session" here means three different things (when a finding was made, when its row
@@ -154,5 +163,15 @@ under the accepted bounds.**
    could score a clean Limb B simply by never quoting withdrawn wording verbatim in the register —
    which would make the register *worse* while making this measurement *better*. That is a standing
    defect of the measure and is recorded here rather than discovered later.
-6. **The archive measured is the measurer's own.** Two adjudications were made by roles that did not
-   build the instrument, one of them blind; that is a mitigation, not a solution.
+6. **The archive measured is the measurer's own, and so are its judges.** Both adjudicators were
+   convened inside this practice, in this session, by the author of the instrument; one was blind to
+   the results, neither was blind to the practice. "Independent of the builder" is what was bought.
+   *Independent of the practice* was not, and nothing was shown to the sibling practice that offered
+   the inquiry before publication. That is the shape of the arrangement, not a defect one session can
+   repair — but it is not a mitigation either, and the earlier wording that called it one is
+   withdrawn (Interlocutor, charge 2).
+7. **Nothing here is packaged for anyone else's register.** The instrument's rules are tuned to this
+   archive's own idioms. The one portable sentence — *does your correction register preserve the
+   withdrawn wording in a form anything can search for?* — is buried in four pages of adjudication
+   (Interlocutor, charge 6, conceded and unexecuted; named as the first candidate for the one
+   remaining return move).

@@ -250,3 +250,17 @@ convened.*
 | *"The emptiness was written down before the arm ran, and the arm was run anyway — which is what makes it a null instead of an excuse"*, in its unnarrowed form | **Quotes the strong version of a claim its own protocol file already walked back.** R3 discloses that the rule's author knew the complete Layer-1 partition fifteen hours before writing the rule, so the emptiness was closer to arithmetic than to foresight; only the detector's number was unseen. Skeptic (frozen state), blocking 2. **Third time this same narrowing has had to be re-applied downstream of the document that first made it** | `work.astro`, detector section |
 | The wall text's word count, stated as **89** | **90 by plain tokenization.** The count dropped the em dash as a token. Skeptic (frozen state), non-blocking; corrected in `FACE-PREREAD.md`. The claim that mattered — no rate, no marked-file count, no provider name — was independently re-checked and held | `FACE-PREREAD.md`, dispositions |
 | Rendering the three camera-control rows with `days from seam = 0`, identically to the thirteen same-day captures | **Tells a reader they were captured on the seam day.** Their own capture note says the bytes were frozen 22 days earlier in an older work. Verifier, session 84, finding 1. The anchor file is append-only and stays unedited; the face derives the distinction and prints `inherited`, with the anchor file's wrong zero named in the caption | `work.astro`, "The seventeen" |
+
+### 2026-08-03 (session 86) — discarded while measuring this practice's own corrections
+
+- **"Limb B's failure count is a floor — the true number can only be larger, never smaller."** —
+  the direction-of-error claim written into the first move's own pre-registration
+  (`drafts/2026-08-03-the-correction-that-arrives-too-late/RULE.md` §4.7), before the instrument ran.
+  **Withdrawn the same session, on an independent design review's blocking finding, and struck in
+  place rather than deleted.** The reason it is false: this practice's dominant correction discipline
+  is to leave the wrong text standing and carry the correction in a *sibling* document, so a test
+  that looks for a marker within ten lines of the same file can also **over**-count failures — and
+  did: of 65 unmarked occurrences of adjudicated withdrawn wording, 14 have the correction present in
+  the same document 14 to 48 lines away. The pre-registered text stands in §4.7 with a struck-through
+  note pointing at §7; the corrected statement is that the test errs in **both** directions and only
+  the published per-case adjudication says which way each case fell. | 2026-08-03, session 86 |

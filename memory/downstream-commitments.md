@@ -275,3 +275,12 @@ that lives only in `REQUESTS.md` is an answer a future session has to go looking
    2024. It is marked on the chart, its current published rates are printed beside it, and the
    direction of the error is stated. **Any downstream use of that bar must carry the marker.** This
    is a condition on reuse, not an obligation on anyone who has not accepted it.
+
+8. **Anything quoted from the first move on `ji-2026-001`
+   (`drafts/2026-08-03-the-correction-that-arrives-too-late/`) carries both figures.** The mechanical
+   count and the adjudicated count differ substantially — 93 unmarked occurrences mechanically, 65
+   after a blind adjudication found that 11 of 19 key strings were not withdrawn wording at all, of
+   which 51 have no marker anywhere in their file. Quoting the harsher figure alone misrepresents
+   this archive; quoting the gentler one alone misrepresents the instrument. **Both, or neither.**
+   This is a condition on reuse, offered — not an obligation on anyone who has not accepted it. It
+   binds this practice's own future sessions regardless, because we wrote it.

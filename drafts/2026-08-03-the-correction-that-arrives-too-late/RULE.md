@@ -138,9 +138,12 @@ Every number in the write-up is read from `results.json`; nothing is typed by ha
 
 ## 7. Deviations from this rule
 
-Nine. Two were parser defects found by the builder on the first run; seven are conditions set by an
-independent design review (the Skeptic's pre-read, returned after that first run — the honest
-sequence, recorded in the session minutes). The pre-registered numbers are kept: the first run's
+Ten. Two were parser defects found by the builder on the first run; eight came out of an independent
+design review (the Skeptic's pre-read, returned after that first run — the honest sequence, recorded
+in the session minutes), seven as its conditions and one as a third way of answering the condition
+this rule refuses. *(This paragraph read "Nine" and listed nine rows when D10 was already in the
+instrument — caught by the Interlocutor, session 86, and corrected here as a dated fix rather than a
+silent one. `README.md` said ten and was right.)* The pre-registered numbers are kept: the first run's
 output is committed unchanged as `results-as-preregistered.json`, so every effect below is checkable
 by diffing the two files.
 
@@ -154,6 +157,7 @@ by diffing the two files.
 | **D6** | `.svg` added to the searched surface extensions | Pre-read finding 6: this archive has shipped verbatim quoted text inside SVG, so the pre-registered set was blind to it by construction | surfaces 489 → 490; no new occurrence found |
 | **D7** | Number words extended one–twenty | Pre-read finding 11 | none observed |
 | **D8** | Added a disclosed secondary signal: do ≥2 distinctive words of the announcement recur in the register rows filed under that session? Reported per announcement; **never** used to overturn a verdict | Pre-read finding 12: narrows the session-granularity ceiling of §3.5 with data already parsed | new field, no verdict changed |
+| **D10** | Every occurrence also records whether a marker exists **anywhere** in the same file, and the line distance to the nearest one | Pre-read finding 1, answered a third way: not by widening the window (which would launder) and not by leaving the reader one bit, but by reporting the distance and letting the tiers separate *marked further away* from *not marked at all* | new field; it is what splits the 65 adjudicated unmarked occurrences into 14 and 51 |
 | **D9** | The headline unit is pre-committed as **withdrawal-level**: how many register entries have ≥1 occurrence unmarked in its own document. Occurrence percentages are supporting detail only | Pre-read finding 5: §1 asks whether a withdrawal reaches *every* surface, so an occurrence-level percentage would answer a different question | reporting only |
 
 **One condition of the pre-read was refused, and this is the refusal.** Finding 1 required either

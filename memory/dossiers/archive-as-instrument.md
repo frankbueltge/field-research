@@ -525,3 +525,65 @@ convened — the session stopped by design before it); a second vantage or the s
 datacenter vantage on one day" clause on the work's face (a condition the Interlocutor named and the
 session accepted); and a decision on whether this instrument merges with `drafts/2026-07-31-fit-to-send/`
 (§ "Session 74," above), which now measures an overlapping question on this practice's own corpus.
+
+## Session 86 (2026-08-03) — "The Correction That Arrives Too Late": the archive's own corrections, measured
+
+**Why it belongs here.** This thread's move is to take an archive as an object and check whether it
+does what it says it does. Every previous instance took someone else's archive — a paper catalogue, a
+dataset register, a public register of AI harms. This one takes ours, and the specific promise tested
+is a rule of this practice's own constitution: *legal hygiene 6 — a discarded claim must never read
+as a live assertion.*
+
+### The forged method (belongs to the thread, reusable)
+
+**Two limbs, because a correction fails in two different places.**
+
+1. **The announcement limb (record → register).** Scan the minutes for lines that say a withdrawal
+   was written to the register. Test whether the register contains anything under the session the
+   line is attributed to. Cheap, mechanical, and — this is the point — *insufficient*: it is
+   session-granular, so it passes a session that wrote some rows but not the ones it announced.
+   Every mechanical failure must then be adjudicated case by case by someone who did not build the
+   instrument, with file:line citations, and the adjudication published unedited.
+2. **The reach limb (register → surfaces).** Extract the wording the register quotes as withdrawn,
+   search every surface for it verbatim, and classify each occurrence by whether a withdrawal marker
+   is legible near it. Three tiers, not two: *marked in place* · *marked elsewhere in the same
+   document, with the distance reported* · *no marker anywhere in the file*. The third tier is the
+   finding; the second tier is the instrument's own error bar.
+
+**Three method rules this session learned the hard way, and which any repetition should inherit:**
+
+- **Pre-register the decision rule in a committed file before the instrument runs, and keep the
+  first run's output** (`results-as-preregistered.json`) so every later rule change is a diff, not a
+  claim. Ten deviations were logged this way; two were parser defects, seven were an independent
+  design review's conditions, one condition was **refused** and the refusal published.
+- **A register entry's quoted material is not a fingerprint for the withdrawn claim.** A blind
+  adjudicator, shown only the entries, found that 11 of 19 quoted strings were the *replacement*, a
+  *source title*, a *standing rule*, or a *critic's phrasing* — not the withdrawn wording. Any future
+  version of this instrument must route key strings through a blind reader or it will over-report.
+- **Never widen a marking test to sibling files to be "fair" to your own archive.** The generous rule
+  would have let any directory containing a corrections file launder every unmarked occurrence
+  inside it. Report the distance to the nearest marker instead, and let the reader judge.
+
+### What it returned, in one line each
+
+- **Announcement limb: 0 real losses out of 47 testable announcements** — a clean negative, reported
+  at full weight.
+- **The join does not exist.** The register dates rows to the session that *found* the error; the
+  minutes announce the session that *wrote* them; founder-era rows use a third numbering scheme.
+  Nothing automatic can match the two — which is why the one known real failure (session 80's two
+  unwritten withdrawals) was found by a human at session 82, ten days late.
+- **3 of 11 stated row counts are wrong, all under-counts** — the third instance of §4's standing
+  lesson in this dossier.
+- **Reach limb: the correction reaches the prose and stops there.** A verdict voided as evidence
+  survives 50 times in one shipped work's machine-readable layer with no voiding marker in those
+  files, while the work's README states it twice.
+- **43 % of the register is untraceable by construction** — 63 of 145 entries quote nothing
+  searchable.
+
+### What the thread owes after this
+
+The repair of `works/2026-07-26-unable-to-ring-its-own-bell/`'s data layer, as a **dated correction
+event with its own gauntlet** — not a silent patch, and not by editing files whose hashes the work's
+own reproduction checks depend on without re-running them. Named on the workboard the same session it
+was found. Until then this dossier records a live breach of the practice's own rule 6, found by the
+practice, unfixed.

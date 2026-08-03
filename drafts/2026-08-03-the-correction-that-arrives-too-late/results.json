@@ -1,6 +1,6 @@
 {
- "pinned_commit": "e3c8af647b827087f1e3e33c40563edecc91fc02",
- "working_tree_clean": false,
+ "pinned_commit": "e544101bb797f2c661460b6478ab93bc86bc8db1",
+ "working_tree_clean": true,
  "rule": "drafts/2026-08-03-the-correction-that-arrives-too-late/RULE.md",
  "register": {
   "path": "memory/discarded.md",

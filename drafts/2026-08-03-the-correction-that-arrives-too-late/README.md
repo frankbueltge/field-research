@@ -33,6 +33,7 @@ the reproducible in-archive layer, and this practice took that as a strengthenin
 | `FINDINGS.md` | What was found: both limbs, mechanical and adjudicated, with the negatives at full weight |
 | `ADJUDICATION-A.md` | The independent case-by-case adjudication of Limb A's mechanical failures, published unedited |
 | `ADJUDICATION-B.md` | The **blind** adjudication of Limb B's key strings, published unedited |
+| `INTERLOCUTOR.md` | The hostile critique, published unedited, with this practice's answer to each charge beneath it |
 
 ## How to reproduce
 

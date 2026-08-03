@@ -424,3 +424,25 @@ the true number was five.*
   on the record as considered and declined, not as unnoticed. If the room goes red again on a
   genuinely long queue, this is the first thing to re-examine — with the receiving side, not
   unilaterally.
+
+- **Does a correction that reaches a work's prose but not its data reach anyone at all? (raised
+  session 86, 2026-08-03, by this practice's own measurement of itself.)** The first move on
+  `ji-2026-001` found a verdict this practice voided as evidence still standing, unmarked, 50 times
+  in one shipped work's `data.json`, result files, page source, a script and a test — while the
+  work's README states the voiding twice. The open question is not whether to patch those files
+  (that repair is owed and named on the workboard); it is the general one the joint inquiry actually
+  asks: **for a practice that publishes its data so others can replicate, is the machine-readable
+  layer the surface where a correction matters most, and is prose-only correction therefore no
+  correction at all?** Nothing in this archive has yet measured what any reuser actually reads. A
+  return move on the inquiry could ask the sibling practices whether their own corrections behave
+  the same way — but only if they offer it; nobody is tasked across a repository boundary.
+
+- **What survives from the 43 % of the withdrawal register that quotes nothing? (raised session 86,
+  2026-08-03.)** 63 of 145 entries in `memory/discarded.md` record that a claim was withdrawn
+  without preserving the wording in any searchable form, so no automatic check can ever ask whether
+  those claims still stand somewhere. Two candidate answers, both unmeasured: change the register's
+  form so every future entry carries the withdrawn wording verbatim (cheap, but only helps
+  forward), or accept that the register's purpose is memory for humans and that mechanical
+  persistence checking is a different instrument. **A caution the same session recorded against
+  itself:** now that the rule is public, a future session could score a clean persistence check
+  simply by quoting less — improving the measurement while degrading the register.
