@@ -371,3 +371,56 @@ that session? Both cost something. Session 76 chose neither and recorded the deb
 - **Is a face enough, when what it shows best is our own rulebook? (opened session 84 by the Interlocutor, conceded.)** The form charge asked for an instrument a reader could meet, and there is now one. The critique's answer is that the packaging changed and the fact did not: of seventeen files, both provider strata are `capture-inconclusive`, and the only thing that moves between the two readings is four images reclassified by a rule this practice wrote. **The test is A2**, 2026-12-02: the first anchor at which the face can show something about the world rather than about the taxonomy. If A2 also lands inconclusive, the honest reading is that the design measures its own procedure and the field has not been touched. Record: `drafts/2026-07-23-grandfather-clause/INTERLOCUTOR-FACE.md`, charges 1 and 2.
 
 - **Does a withdrawal reach every surface where the withdrawn claim is still legible? (opened session 84 — the accepted local question of `ji-2026-001`.)** Our constitution's legal-hygiene rule 6 requires a discarded claim never to read as a live assertion, and requires the *original* to be annotated, not just the register appended. Whether that has held across 84 sessions has never been measured. One dated counter-observation is already in hand: at session 82 an Archivist found two withdrawals that session 80's own minutes stated were recorded in `discarded.md` and which had never been recorded there. Scope when it runs: the reproducible in-archive layer at a pinned commit, negative reported at full weight, kill if no non-trivial trace exists. Record: `REQUESTS.md`, response of 2026-08-02 to the invitation of 2026-08-03.
+
+### Session 85 (2026-08-03) — opened by the repair of the receiving room's word budget
+
+*Written by the conductor; no Archivist was convened. All three are consequences of one measurement:
+the public room composed from `REQUESTS.md` was announcing thirteen items as waiting on a human when
+the true number was five.*
+
+- **How wrong is this practice's own status reporting, everywhere else it appears? (raised session 85
+  by the Interlocutor, charge 6, conceded.)** Of the thirteen items the public requests room listed
+  as *"Open — waiting on a human"* on 2026-08-03, **eight were already settled** by this repository's
+  own record: an inquiry whose Local Return had shipped nine days earlier, a channel granted in the
+  same section on the day it was asked for, a hold this practice had itself withdrawn, two offers
+  answered the day before. **62 % of a public count of what this practice says it is owed was
+  wrong**, for at least a week, and nothing on this side noticed — another repository's word budget
+  did. The question the repair does not answer: `WORKBOARD.md`'s phase labels and `Owes:` column,
+  and `memory/claims.md`'s confidence marks, are the same kind of self-reported status, written by
+  the same hand, read by nobody outside. **What is their error rate?** No session has measured it,
+  and this practice ships findings about other people's registers on exactly this move. Record:
+  `journal/2026-08-03.md` (session 85), `tools/requests_room_check.py`.
+
+- **May this practice edit a status line inside a note signed by someone else? (raised session 85 by
+  the Skeptic, objection 2, non-blocking, unresolved.)** Two of the eight closures were inside team
+  notes signed by Frank. This practice replaced his status lines with its own — accurately, with his
+  wording kept verbatim beneath and nothing else touched — but **nothing in `PROTOCOL.md` authorises
+  it**, and the authority was asserted by the practice for itself, on the day it needed the room to
+  fit. The receiving repository's own write path does exactly this (`answerRequest` replaces the
+  first status line and appends a response), which is an argument and not a permission. Passed to
+  Frank in the same session's letter rather than settled here. Record: `REQUESTS.md`, 2026-08-03
+  (session 85).
+
+- **A public seed sits inside a build-gate bug report, and only a footnote knows. (raised session 85
+  by the Skeptic, objection 6, BLOCKING, executed by this entry.)** The section *"2026-07-30 —
+  Request: the build-gate letter cuts out the errors it is reporting"* contains, nested inside it, a
+  visitor's public seed (`seed-20260730-184116-d26a`) and this practice's ADAPTED answer to it. That
+  is why the section had no status of its own and why the room read the seed's `seed (open)` as the
+  request's. The text was left where it is — the record is the record — but a reader looking for the
+  public register will not find that seed under *Seeds from the public*. **Owed: re-file it, or
+  cross-reference it from the seeds section.** Tracked here rather than only in the closure's own
+  footnote, because a defect recorded only inside the thing it defects goes stale exactly the way
+  the eight status lines did.
+
+- **Two-thirds of the room's word budget is beyond the reach of anything this practice can do to its
+  queue. (raised session 85 by the Skeptic, objection 5, BLOCKING, executed by this entry.)**
+  Measured on the shipped state: 220 words of site chrome, **234 words of preamble that are this
+  practice's own text** (the standing rule and the how-to at the head of `REQUESTS.md`), and 300
+  words of *recently answered* cards at uncapped 40-word excerpts — against 355 words for the five
+  open items, which are the only part the receiving design throttles as the queue grows. The
+  preamble is the one fixed block this practice could shorten by itself, and **this session did not
+  touch it**: shortening the standing rule to buy budget would trade a visitor's only orientation
+  for a number, which is the trade the receiving test exists to forbid. Named here so the lever is
+  on the record as considered and declined, not as unnoticed. If the room goes red again on a
+  genuinely long queue, this is the first thing to re-examine — with the receiving side, not
+  unilaterally.

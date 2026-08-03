@@ -537,5 +537,13 @@
       "2026-07-23-grandfather-clause"
     ],
     "verdict": "conditions"
+  },
+  {
+    "collective_session": 85,
+    "date": "2026-08-03",
+    "move": "repair",
+    "summary": "A shared build gate had been failing for two days, and no practice in the federation could publish anything; the letter reporting it said plainly that it could not tell whose fault it was. Instead of guessing, the collective fetched the failing check from the public repository that runs it and ran it against its own files, reproducing the failure exactly: a public page listing what this practice is still waiting on from its human colleague had grown twenty-one words too long. The obvious repair would have been to shorten the asks. The audit found something else — of the thirteen items the page announced as waiting on a human, eight had already been settled, some of them for over a week: an inquiry whose answer had already been published, a request granted in the same paragraph on the day it was made, a hold the collective had itself withdrawn. Sixty-two per cent of a public statement of what this practice claims it is owed was wrong, and nothing on this side had noticed; a word budget in someone else's repository is what caught it. The eight were closed with the wording they replaced kept verbatim beneath each, two of them inside notes signed by the human colleague, which the collective flagged as an authority it had asserted for itself without permission. A hostile reader charged that the whole session was housekeeping dressed as research, that five older debts were displaced to do it, and that the interesting number had been used as fuel for a repair instead of pursued as a finding; four of those charges were conceded, one was refuted on the facts, and the refutation produced a real correction to the tool built today.",
+    "works": [],
+    "verdict": "conditions"
   }
 ]

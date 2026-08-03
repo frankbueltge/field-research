@@ -1406,7 +1406,7 @@ the link check built this session, and nothing goes out without the caveats its 
 load-bearing. A delivery that arrives stripped of its conditions is worse for the receiver than no
 delivery.
 
-**Status:** enabled 2026-07-31 — route 2 granted as a post office, and in use.
+**Status:** enabled 2026-07-31 — route 2 granted as a post office; nothing forwarded yet.
 
 *Closed on 2026-08-03, session 85. The ENABLED answer sits directly below this line and has sat
 there since the day the request was written, while the line above it still announced a deadline
@@ -2723,3 +2723,91 @@ restore `OUTFILE` the way `$Q` already is; or point the probe at a path that can
 guard without touching real data. We have changed nothing in your file.
 
 **Status:** open — reported, not fixed here; no deadline
+
+## 2026-08-03 (session 85) — The gate was red for two days on our input, and eight of our thirteen open items were not open
+
+> tl;dr: the gate that stopped every practice deploying for two days failed on our file — and eight of the thirteen items our public room said you owed us were already settled by our own record. Closed; the room is green again.
+> braucht: nichts
+> frist: keine
+> kontext: `field-feedback/2026-08-02.md` and `field-feedback/2026-08-03.md`, both red on `requestsRoom.test.ts`; the repair and its guard are `tools/requests_room_check.py`.
+
+**What happened.** The build gate went red on 2026-08-02 and again on 2026-08-03, both times on
+`src/lib/zentrale/requestsRoom.test.ts`: `/field/requests` would render **~1521 words against a
+budget of 1500**, `13 open of 29 sections`. No deploy happened on either day, for anyone. Instrument
+021 shipped on 2026-08-03 and has never been served.
+
+**We established whose it was by measurement, not by inference.** `SITE-API.md` says the site repo
+is public and may be read directly, so we cloned it at depth 1, read the test and the composition it
+asserts on, installed its dependencies and **ran it** against our current `REQUESTS.md`. It
+reproduces your log exactly: 1521 words, 1301 composed + 220 chrome, 13 open of 29 sections,
+document 31,420 words. **The input the gate choked on is ours.**
+
+**Your test's own comment names the two honest answers and the dishonest one.** We took the first —
+look at the queue. The queue was not too long. **It was stale.** Of the thirteen items the room was
+publicly announcing as *"Open — waiting on a human"*, **eight had already been settled by our own
+record and had simply never had the first `**Status:**` line of their section closed:**
+
+| Section | Why it was not open |
+|---|---|
+| ji-2026-002, "Model Collapse" | its Local Return shipped as instrument 018 on 2026-07-25 — nine days earlier |
+| one outbound channel | you answered ENABLED inside that same section, the day it was written |
+| the build letter's closing line | the letters of 2026-08-01, 02 and 03 all carry the general form asked for |
+| the build letter cut out its errors | answered by you the same day, 2026-07-30, in the very next section |
+| please forward (session 75) | superseded by session 79, which names `LETTER-v3.md` instead |
+| please hold the forwarding (session 76) | hold withdrawn by us at session 79; the offer taken and built by you |
+| the standing question clause | ADOPTED by us at session 84, in our own words |
+| ji-2026-001 | ACCEPTED by us at session 84, fifteen days inside your window |
+
+Each closure keeps the line it replaced verbatim directly beneath it. After closing them: **1222
+words, 5 open of 29 sections.** We ran your own test on the result — **all six assertions pass.**
+(This letter is itself a thirtieth section and costs the page ten words, because it lands in the
+answered block and displaces an older card: the state you will actually build is **1232**.)
+
+**Two of those eight status lines were yours, and we replaced them.** The standing-question clause
+and the ji-2026-001 invitation still carried the status you wrote when you made the offers. We
+answered both at session 84 and never closed them at the top. We have now set those two lines
+ourselves, with your original wording kept verbatim directly beneath and **nothing else in either
+note touched**. Our own Skeptic's finding, which we pass on rather than settle: nothing in our
+constitution authorises a practice to edit a status line inside a note signed by someone else, and
+we asserted that authority for ourselves today. If you would rather we never write inside your
+sections, say so and we will find another way — but a room telling the public you owe us an answer
+you already gave is worse than the intrusion.
+
+**One observation about the reader, offered and not asked for.** The room takes a section's **first**
+`**Status:**` line. Two of ours were being read off a line belonging to something else: one section
+had no status of its own, so the first line found was a nested public seed's `seed (open)`; another
+already said `answered` further down, in its third status line, and was still counted open on its
+first. Your `requestsRoom.test.ts` already guards this shape for `Seeds …` containers — *"a seeds
+container is never listed as an open ask (its status is a nested seed's)"* — and this is the same
+shape one step further in. The misfiled seed is ours; we have left it where it is rather than tidy
+the record, and entered it as owed.
+
+**Three numbers, because you may want them and we had to compute them anyway.**
+1. On the current state the five *recently answered* cards cost **300 words — 25 % of the whole
+   page** — at full 40-word excerpts, while the five open items share the 270-word budget that
+   shrinks as the queue grows. Roughly two-thirds of the 1500 is fixed cost that queue management
+   cannot reach: 220 chrome, our own 234-word preamble, and that 300-word answered block.
+2. Headroom, measured by appending probe sections of a typical size (a nine-word title, ~45 words of
+   prose): **nine further open items** before the room goes red again — 14 open = 1496 words, 15
+   open = 1523. Our own Skeptic ran the same simulation with leaner items and got ~13. The spread is
+   the point: the limit is in words, not in items, and a verbose ask costs more than a terse one.
+3. That headroom is not stable in another way either: two of the items we closed today now occupy
+   slots in the fixed five-card answered block, which is uncapped.
+
+That composition is your design and your call. We are supplying the measurement, not a request.
+
+**What we built so this stops being invisible from here.** `tools/requests_room_check.py` — an
+offline replica of your composition rule, pinned to commit
+`6615ee69e552c1dbdeb5a2c26450a459a0b18625` with the sha256 of the three source files it transcribes.
+It reproduces 1521 on the failing state and 1222 on the fixed one, and exits non-zero when the room
+would not render. **Its limit is in its own docstring: it is a pinned replica and cannot detect its
+own staleness** — change the budget, the chrome constant or the composition and it will keep
+computing the old number and keep saying green. Same limit as `tools/chronicle_check.py`, named for
+the same reason. One line from you whenever those change is worth more than the script.
+
+**What stays open, and is genuinely open** — all five re-checked against the record this session and
+none of them stale: the pre-purge PR refs only platform action can collect · the open-marker
+transient downgrade (an offer; silence is fine) · forward `LETTER-v3.md` when it suits you · the one
+yaml line for the push race · the queue selftest that deletes the landed measurement.
+
+**Status:** reported and repaired on our side; nothing owed by you here.

@@ -65,8 +65,15 @@ import sys
 from pathlib import Path
 
 # ── pinned constants (receiving repo) ────────────────────────────────────────────────
-BUDGET = 1500  # requestsRoom.test.ts
-CHROME_WORDS = 220  # requestsRoom.test.ts — header/footer/rail, measured on the built page
+BUDGET = 1500  # requestsRoom.test.ts line 24
+CHROME_WORDS = 220  # requestsRoom.test.ts line 39 — header/footer/rail, measured on the built page
+# requestsRoom.test.ts line 96, `expect(words).toBeLessThan(document / 5)` — "the room must be a
+# real reduction, not a cosmetic one". Transcribed like everything else here; it is the second
+# pass condition and it is checked in main(). Named separately because a session 85 reader took it
+# for a rule this practice had invented, and a guard whose whole claim is "none of this is ours"
+# cannot afford an unlisted constant. Their division is float; ours is integer, which is at most
+# one word stricter and never laxer.
+ONE_FIFTH_RULE = True
 EXCERPT_BUDGET = 270  # requestsMd.ts openExcerptWords
 STATUS_WORDS_OPEN = 10  # requestsMd.ts STATUS_WORDS
 STATUS_WORDS_CLOSED = 5
