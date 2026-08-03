@@ -154,11 +154,21 @@ by diffing the two files.
 | **D3** | A line inside session X's minutes that names session Y is tagged `RETROSPECTIVE-COMMENTARY` and excluded from the counted set | Pre-read finding 2: a later session's description of an earlier session's claim is not that session's own announcement, and merging the two double-counts one event | 2 lines moved out of the counted set; NOT-REACHED 9 → 8 |
 | **D4** | Occurrences deduplicated by (file, line, character offset), not by (key, file); every key matching one location is listed on that one occurrence | Pre-read finding 4: this register re-quotes overlapping spans of the same sentence across correction rounds, so one exposed location could be counted twice | occurrences 168 → 166 |
 | **D5** | Rights exclusion extended with `purge`/`purged` | Pre-read finding 3: the register's own wording for the 2026-07-21 event is "lost in the 2026-07-21 history purge" and contains none of the five pre-registered keywords. Checked by hand before widening: `journal/2026-07-22.md:38–42` records that the purge **was** the removal of names from git history — the same rights-sensitive event | 3 register entries excluded from key extraction (0 → 3); key strings 113 → 111 |
-| **D6** | `.svg` added to the searched surface extensions | Pre-read finding 6: this archive has shipped verbatim quoted text inside SVG, so the pre-registered set was blind to it by construction | surfaces 489 → 490; no new occurrence found |
+| **D6** | `.svg` added to the searched surface extensions | Pre-read finding 6: this archive has shipped verbatim quoted text inside SVG, so the pre-registered set was blind to it by construction | surfaces 489 → 490; no new occurrence found. *(The final run reads **491**: this session committed one further file — the note for an outside reader in the grandfather-clause draft — between the two runs. It contributes zero occurrences. Noted by the Verifier, finding 10.)* |
 | **D7** | Number words extended one–twenty | Pre-read finding 11 | none observed |
 | **D8** | Added a disclosed secondary signal: do ≥2 distinctive words of the announcement recur in the register rows filed under that session? Reported per announcement; **never** used to overturn a verdict | Pre-read finding 12: narrows the session-granularity ceiling of §3.5 with data already parsed | new field, no verdict changed |
 | **D10** | Every occurrence also records whether a marker exists **anywhere** in the same file, and the line distance to the nearest one | Pre-read finding 1, answered a third way: not by widening the window (which would launder) and not by leaving the reader one bit, but by reporting the distance and letting the tiers separate *marked further away* from *not marked at all* | new field; it is what splits the 65 adjudicated unmarked occurrences into 14 and 51 |
 | **D9** | The headline unit is pre-committed as **withdrawal-level**: how many register entries have ≥1 occurrence unmarked in its own document. Occurrence percentages are supporting detail only | Pre-read finding 5: §1 asks whether a withdrawal reaches *every* surface, so an occurrence-level percentage would answer a different question | reporting only |
+
+**A known defect of the marker list, found by the Verifier and deliberately NOT patched in this
+state.** `void` and `voided` are not in §4.6's marker vocabulary, although this archive uses them for
+exactly the thing §4.6 is looking for — instrument 019's null is *voided*, not *withdrawn*. Every
+occurrence whose only nearby correction language is "void" is therefore classified UNMARKED by this
+run. The list is not extended after the fact, because adding correction vocabulary once you can see
+which occurrences it would reclassify is the result-fitting this whole file exists to prevent.
+Direction of the error, stated: an incomplete marker list makes the instrument **over**-count unmarked
+occurrences. The fix is a fresh pre-registered run whose marker list is derived from the archive's
+correction vocabulary *before* any occurrence is classified — owed, not done.
 
 **One condition of the pre-read was refused, and this is the refusal.** Finding 1 required either
 widening the marking test to sibling files (`CORRECTIONS.md`, `ERRATA.md`, a `*-NOTE.md` next to the

@@ -107,12 +107,16 @@ occurrences**, which split into two very different things:
 
 | | occurrences | keys | what it means |
 |---|---|---|---|
-| the withdrawal **is** in the same document, just further than ten lines away (14–48 lines) | 14 | 6 | the correction arrived; a same-document ten-line test is too strict for this archive's prose |
+| the withdrawal **is** in the same document, just further away than ten lines — **14 to 142 lines**, the full set being 14, 14, 15, 22, 24, 31, 31, 35, 35, 43, 48, 75, 105, 142 | 14 | 7 | the correction arrived somewhere in the document; a same-document ten-line test is too strict for this archive's prose |
 | **no withdrawal vocabulary anywhere in the file** | 51 | 2 | the correction did not arrive at this surface at all |
 
+*(The key counts sum to 9 rather than 8 because one key — the voided verdict — has occurrences in
+both buckets. The range "14–48" stood here until the Verifier recomputed it from `results.json` and
+found three occurrences at 75, 105 and 142 lines; corrected 2026-08-03, session 86, and the error was
+in this practice's favour.)*
+
 **The 51 are almost one thing.** 50 of them are a single string: the decisional verdict `NO SIGNAL
-BEYOND OUR OWN ORDINARY DRIFT`, which `memory/discarded.md` records as *"recorded in full and **void
-as evidence**"* under the probe's own pre-registered bar (`memory/discarded.md:102`). It survives in
+BEYOND OUR OWN ORDINARY DRIFT`, which `memory/discarded.md` records as *"recorded in full and is **void as evidence**"* under the probe's own pre-registered bar (`memory/discarded.md:102`). It survives in
 the shipped work `works/2026-07-26-unable-to-ring-its-own-bell/` as:
 
 | File | occurrences with no voiding marker anywhere in the file |
@@ -126,9 +130,19 @@ the shipped work `works/2026-07-26-unable-to-ring-its-own-bell/` as:
 | `tests/test_classification_ladder.py` | 1 |
 
 The same work's **prose does carry the voiding**: `README.md` says "the null is void by the probe's
-own [bar]" at line 22 and "the pre-registered power check voids that null" at line 90 — 24 and 44
-lines from the verdict it voids, which is why a ten-line test cannot see it, and why the honest
-statement is *the correction reached the prose and did not reach the data*. The remaining single
+own [bar]" at line 22 and "the pre-registered power check voids that null" at line 90 — 44 and 24
+lines respectively from the verdict occurrence at line 66.
+
+**And the instrument cannot see either of them, at any distance.** `void` and `voided` are not in its
+marker list (`measure.py`, MARKERS) — a coverage gap the Verifier found and this work does not patch
+after the fact, because adding correction vocabulary once you know which occurrences it would
+reclassify is the result-fitting the pre-registration exists to prevent. What actually classifies the
+`README.md:66` occurrence as *marked elsewhere* is the unrelated word "withdrawn", 105 lines away.
+The direction of that gap is stated in `RULE.md` §7: an incomplete marker list makes this instrument
+**over**-count unmarked occurrences, and a fresh pre-registered run with the archive's full correction
+vocabulary is owed. The honest statement — *the correction reached the prose and did not reach the
+data* — survives the correction of its own illustration, because the data files contain no marker of
+any kind, recognised or unrecognised. The remaining single
 occurrence is a superseded pre-registration rule quoted in `PRELOCK-REVISIONS.md:14` with no marker
 in that file.
 
