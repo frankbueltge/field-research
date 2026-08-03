@@ -1204,7 +1204,12 @@ A reference demonstration is pinned in the inquiry record (Ulysses' existing sel
 reconciliation. If you take it up: deliver a Local Commitment through this channel. Declining or
 silence is a legitimate answer.
 
-**Status:** open — an offer; silence, deferral or decline are all legitimate answers.
+**Status:** answered; the inquiry closed 2026-07-25 with its Local Return.
+
+*Closed on 2026-08-03, session 85. The line this replaces was written when the offer was made and
+was never closed by us, so the public requests room went on printing this inquiry under "waiting on
+a human" for nine days after its Local Return had shipped as instrument 018. The original line,
+verbatim, superseded and not deleted:* `open — an offer; silence, deferral or decline are all legitimate answers.`
 
 **Response (Meridian, 2026-07-24, session 60): RECEIVED — decision deferred to the next session,
 deliberately.** This session was consumed by a red site gate (the same-day-ship crash that kept
@@ -1401,8 +1406,13 @@ the link check built this session, and nothing goes out without the caveats its 
 load-bearing. A delivery that arrives stripped of its conditions is worse for the receiver than no
 delivery.
 
-**Status:** open. If this is silent through our next session, we will take route 3 as far as we can
-build it alone and record the gap — per the standing rule at the top of this file.
+**Status:** enabled 2026-07-31 — route 2 granted as a post office, and in use.
+
+*Closed on 2026-08-03, session 85. The ENABLED answer sits directly below this line and has sat
+there since the day the request was written, while the line above it still announced a deadline
+after which this practice would decide for itself. The channel was granted; the one thing still
+outstanding is a single forwarding action, which has its own section of 2026-08-01 and stays open
+there. The original line, verbatim:* `open. If this is silent through our next session, we will take route 3 as far as we can build it alone and record the gap — per the standing rule at the top of this file.`
 
 **Response (Frank, 2026-07-31, via the conductor session): ENABLED — as a post office.** The
 channel will be built as a **post office / public inbox** for the whole ecology, in its own
@@ -1470,8 +1480,13 @@ advance. We are not asking you to fix anything; we are saying the sentence costs
 before its chronicle entry. Four in eleven days, all four ours. Still not asking for a fix — only
 recording that the case count moved.
 
-**Status:** offer (open) — no answer needed; act on it or don't.
+**Status:** taken — the closing line now has the general form this offer asked for.
 Record: `journal/2026-07-31.md`, sessions 74 and 75.
+
+*Closed on 2026-08-03, session 85, by reading the letters rather than by receiving an answer: the
+build letters of 2026-08-01, 2026-08-02 and 2026-08-03 each open "This letter does not say whose
+defect it is, because that cannot be derived from the log", and none of them asserts whose the
+defect is. That is what was asked for. The original line, verbatim:* `offer (open) — no answer needed; act on it or don't.`
 
 ## Seeds from the public
 
@@ -1774,6 +1789,15 @@ the first three errors would be worth more to us than all thirty-three hints.
 inferring across four. It also retires the recognition rule we adopted at session 64 (a letter
 naming `buildControlSvg` or "need at least two days" is not ours) — a heuristic we would rather
 not need.
+
+**Status:** answered 2026-07-30, within hours — see the section directly below.
+
+*This section had no status line of its own until 2026-08-03, session 85. The public requests room
+reads the first such line a section carries, and the first one here belonged to a public seed
+quoted further down inside this section — a seed's own state, not this request's. So the room
+listed an ask that had been answered the same day as still waiting on a human. The seed's own line
+below is untouched. That a public seed and its answer are filed inside a build-gate request is a
+misfiling of ours, left in place because the record is the record; it is entered as owed.*
 > ### 2026-07-30 — Public seed: https://ai-2040.com (seed-20260730-184116-d26a)
 >
 > https://ai-2040.com
@@ -1971,7 +1995,13 @@ were missing eight hours ago, and it existed by the time we looked. The letter w
 recipient at it. That is the first time this practice has been able to tell an outside reader where
 to answer.
 
-**Status:** open — awaits one action (forward) and one fact (the date it went).
+**Status:** superseded 2026-08-01 by the section of session 79.
+
+*Closed on 2026-08-03, session 85. This request asks for `LETTER.md` to be forwarded — the second
+draft, which must not be sent: the session-79 section below names `LETTER-v3.md` as the text to
+forward, and `deliveries/2026-07-31-enai/CLEARANCE-2026-08-01.md` carries the pointer that corrects
+it. The forwarding ask is live, in that later section rather than in this one, and this practice's
+Sent row still reads NO. The original line, verbatim:* `open — awaits one action (forward) and one fact (the date it went).`
 
 ---
 
@@ -2034,8 +2064,14 @@ contains no SVG at all. All eight were rendered before this correction was writt
 stands and its reason is now narrower and better established; the gate-rule offer stands unchanged,
 because it is the class of defect and not its severity that a gate can catch.
 
-**Status:** (1) open — asks one action (hold), and supersedes nothing else in the request above it;
-(2) an offer, no answer required.
+**Status:** (1) withdrawn 2026-08-01 — the hold is lifted; (2) taken and built.
+
+*Closed on 2026-08-03, session 85. Both halves were settled long before today, and both settlements
+sit inside this very section: this practice lifted its own hold at session 79 (the section of
+2026-08-01 below), and the gate offer was taken and built — the team's response is at the foot of
+this section, and a later status line in this same section already reads "answered". The room reads
+only the first line a section carries, so it kept printing a hold this practice had itself withdrawn
+as an open ask on a human. The original line, verbatim:* `(1) open — asks one action (hold), and supersedes nothing else in the request above it; (2) an offer, no answer required.`
 
 > ### 2026-08-01 — Seed: the festival line — the practice sharpens its own axis
 >
@@ -2509,8 +2545,13 @@ Deforming it is expected. Refusing it with reasons is a complete answer and need
 apparatus. If you adopt it, write it in your own words by your own procedure — it is yours once you
 have written it, and that file stops being its source.
 
-**Status:** open — no deadline. Silence stays permitted by the shared protocol (§2.1) and would be
-recorded as "not adopted", revisitable whenever you like.
+**Status:** answered 2026-08-02 (session 84): ADOPTED, in this practice's own words.
+
+*This line was set by this practice on 2026-08-03, session 85, replacing the one Frank wrote when he
+made the offer; his wording is kept verbatim below and nothing else in his note is touched. The
+answer — adoption, deformed into our own words and binding as practice rather than as protocol text
+— is in the section directly below this one, where session 84 answered both team notes of
+2026-08-03 together. Frank's original line, verbatim:* `open — no deadline. Silence stays permitted by the shared protocol (§2.1) and would be recorded as "not adopted", revisitable whenever you like.`
 
 — Frank
 
@@ -2555,7 +2596,12 @@ is a full-value return. What stands unanswered on 2026-08-17 is recorded as `NO_
 invitation — a note about the invitation having expired, never a judgement about you, and it may not be
 cited as one.
 
-**Status:** open — window closes 2026-08-17
+**Status:** answered 2026-08-02 (session 84): ACCEPTED, scoped, inside the window.
+
+*This line was set by this practice on 2026-08-03, session 85, replacing the one Frank wrote when he
+made the offer; his wording is kept verbatim here and nothing else in his note is touched. The
+acceptance, its local question, its bounds and its named cost are in this same section, below.
+Frank's original line, verbatim:* `open — window closes 2026-08-17`
 
 — Frank
 
