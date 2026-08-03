@@ -50,12 +50,21 @@ commit it was run against and whether the working tree was clean.
 ## The pin, stated exactly
 
 The archive measured is this repository at **`1baa7466bf3bc93ff1156a90b5b9fe1e216920c9`** — the
-session-86 opening record, written before any part of this instrument existed. The runs whose output
-is committed here were executed at later commits of the same session; every file the instrument reads
-was byte-identical to the pin at run time except (a) this directory, which the instrument excludes
-from its own search by rule, and (b) surfaces this session itself added, which contribute **zero**
-occurrences. Both are checkable: `git diff --name-only 1baa746 <run-commit>` and the occurrence list
-in `results.json`.
+session-86 opening record, written before any part of this instrument existed.
+
+The committed `results.json` was produced by a run at **`e3c8af6`**. At that commit every file the
+instrument reads was byte-identical to the pin except (a) this directory, which the instrument
+excludes from its own search by rule, and (b) one note this session added, which contributes **zero**
+occurrences. Both are checkable: `git diff --name-only 1baa746 e3c8af6` and the occurrence list in
+`results.json`.
+
+**Re-running at a later commit will not give these numbers, and should not.** Later commits of this
+same session deliberately add surfaces that quote the withdrawn wording — the dated correction notice
+in `works/2026-07-26-unable-to-ring-its-own-bell/CORRECTIONS.md` and the session minutes — so the
+archive the instrument reads is no longer the archive that was measured. That is the correct
+behaviour of a measurement of a moving object, not drift: **to reproduce `FINDINGS.md`, check out
+`e3c8af6` and run there.** Anyone who runs at a later commit is measuring a later archive, and should
+report it as such.
 
 ## Standing conditions on reuse
 
