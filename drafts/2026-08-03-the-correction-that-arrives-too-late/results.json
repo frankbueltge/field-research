@@ -1,5 +1,5 @@
 {
- "pinned_commit": "54cb79035eb9f1d27f25a150c8fbc0b80ef77fb0",
+ "pinned_commit": "e3c8af647b827087f1e3e33c40563edecc91fc02",
  "working_tree_clean": false,
  "rule": "drafts/2026-08-03-the-correction-that-arrives-too-late/RULE.md",
  "register": {
@@ -1085,10 +1085,12 @@
    222
   ],
   "key_strings": 111,
-  "surfaces_searched": 490,
+  "surfaces_searched": 491,
   "occurrences": 166,
   "occurrences_marked_in_place": 73,
   "occurrences_unmarked": 93,
+  "occurrences_unmarked_but_marked_elsewhere_in_file": 38,
+  "occurrences_with_no_marker_anywhere_in_the_file": 55,
   "by_surface_class": {
    "archive": {
     "total": 7,
@@ -1125,6 +1127,8 @@
      "offset": 0,
      "surface_class": "archive",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "0/25 across every in-window capture"
@@ -1136,6 +1140,8 @@
      "offset": 19,
      "surface_class": "archive",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 28,
      "markers": [],
      "keys": [
       "0/25 across every in-window capture"
@@ -1149,6 +1155,8 @@
      "offset": 59,
      "surface_class": "drafts",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 15,
      "markers": [],
      "keys": [
       "11 to 15 of 20 in every other stratum"
@@ -1162,6 +1170,8 @@
      "offset": 262,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 22,
      "markers": [],
      "keys": [
       "9.991 Ablehnungszeilen mit Kennungen und 10.056 Fundstellen-Zeilen im Snapshot"
@@ -1173,6 +1183,8 @@
      "offset": 40,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 14,
      "markers": [],
      "keys": [
       "9.991 Ablehnungszeilen mit Kennungen und 10.056 Fundstellen-Zeilen im Snapshot"
@@ -1186,6 +1198,8 @@
      "offset": 27,
      "surface_class": "journal",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 43,
      "markers": [],
      "keys": [
       "CLEARED ON THE ADJUDICATION RECORD"
@@ -1199,6 +1213,8 @@
      "offset": 80,
      "surface_class": "drafts",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 68,
      "markers": [],
      "keys": [
       "EU AI Act, Regulation (EU) 2024/1689, Art. 5.1(d)"
@@ -1210,6 +1226,8 @@
      "offset": 2,
      "surface_class": "journal",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 36,
      "markers": [],
      "keys": [
       "EU AI Act, Regulation (EU) 2024/1689, Art. 5.1(d)"
@@ -1223,6 +1241,8 @@
      "offset": 24,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 59,
      "markers": [],
      "keys": [
       "Google 2026 Environmental Report"
@@ -1234,6 +1254,8 @@
      "offset": 2,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 57,
      "markers": [],
      "keys": [
       "Google 2026 Environmental Report"
@@ -1245,6 +1267,8 @@
      "offset": 16,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 21,
      "markers": [],
      "keys": [
       "Google 2026 Environmental Report"
@@ -1258,6 +1282,8 @@
      "offset": 33,
      "surface_class": "journal",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 25,
      "markers": [],
      "keys": [
       "NO PRESUMPTION FOUND (default holds, unrebutted)"
@@ -1271,6 +1297,8 @@
      "offset": 51,
      "surface_class": "journal",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 35,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1282,6 +1310,8 @@
      "offset": 45,
      "surface_class": "journal",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 31,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1293,6 +1323,8 @@
      "offset": 52,
      "surface_class": "journal",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 31,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1304,6 +1336,8 @@
      "offset": 3,
      "surface_class": "curated-memory",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 24,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1315,6 +1349,8 @@
      "offset": 15,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 142,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1326,6 +1362,8 @@
      "offset": 34,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 105,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1337,6 +1375,8 @@
      "offset": 53,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 75,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1348,6 +1388,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1359,6 +1401,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1370,6 +1414,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1381,6 +1427,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1392,6 +1440,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1403,6 +1453,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1414,6 +1466,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1425,6 +1479,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1436,6 +1492,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1447,6 +1505,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1458,6 +1518,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1469,6 +1531,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1480,6 +1544,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1491,6 +1557,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1502,6 +1570,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1513,6 +1583,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1524,6 +1596,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1535,6 +1609,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1546,6 +1622,8 @@
      "offset": 18,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1557,6 +1635,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1568,6 +1648,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1579,6 +1661,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1590,6 +1674,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1601,6 +1687,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1612,6 +1700,8 @@
      "offset": 22,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1623,6 +1713,8 @@
      "offset": 22,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1634,6 +1726,8 @@
      "offset": 22,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1645,6 +1739,8 @@
      "offset": 22,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1656,6 +1752,8 @@
      "offset": 22,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1667,6 +1765,8 @@
      "offset": 22,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1678,6 +1778,8 @@
      "offset": 22,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1689,6 +1791,8 @@
      "offset": 22,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1700,6 +1804,8 @@
      "offset": 22,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1711,6 +1817,8 @@
      "offset": 22,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1722,6 +1830,8 @@
      "offset": 22,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1733,6 +1843,8 @@
      "offset": 22,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1744,6 +1856,8 @@
      "offset": 22,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1755,6 +1869,8 @@
      "offset": 22,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1766,6 +1882,8 @@
      "offset": 22,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1777,6 +1895,8 @@
      "offset": 22,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1788,6 +1908,8 @@
      "offset": 14,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1799,6 +1921,8 @@
      "offset": 14,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1810,6 +1934,8 @@
      "offset": 14,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1821,6 +1947,8 @@
      "offset": 14,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1832,6 +1960,8 @@
      "offset": 14,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1843,6 +1973,8 @@
      "offset": 14,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1854,6 +1986,8 @@
      "offset": 24,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1865,6 +1999,8 @@
      "offset": 45,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1876,6 +2012,8 @@
      "offset": 18,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1887,6 +2025,8 @@
      "offset": 35,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -1900,6 +2040,8 @@
      "offset": 33,
      "surface_class": "journal",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 22,
      "markers": [],
      "keys": [
       "One candidate refiling — gauntlet owed"
@@ -1911,6 +2053,8 @@
      "offset": 31,
      "surface_class": "journal",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 14,
      "markers": [],
      "keys": [
       "One candidate refiling — gauntlet owed"
@@ -1924,6 +2068,8 @@
      "offset": 12,
      "surface_class": "drafts",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 140,
      "markers": [],
      "keys": [
       "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -1935,6 +2081,8 @@
      "offset": 12,
      "surface_class": "drafts",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 143,
      "markers": [],
      "keys": [
       "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -1946,6 +2094,8 @@
      "offset": 12,
      "surface_class": "drafts",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 28,
      "markers": [],
      "keys": [
       "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -1957,6 +2107,8 @@
      "offset": 12,
      "surface_class": "drafts",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 143,
      "markers": [],
      "keys": [
       "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -1968,6 +2120,8 @@
      "offset": 12,
      "surface_class": "drafts",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 109,
      "markers": [],
      "keys": [
       "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -1979,6 +2133,8 @@
      "offset": 12,
      "surface_class": "drafts",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 140,
      "markers": [],
      "keys": [
       "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -1990,6 +2146,8 @@
      "offset": 12,
      "surface_class": "drafts",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 106,
      "markers": [],
      "keys": [
       "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -2001,6 +2159,8 @@
      "offset": 29,
      "surface_class": "drafts",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -2012,6 +2172,8 @@
      "offset": 20,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 15,
      "markers": [],
      "keys": [
       "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -2025,6 +2187,8 @@
      "offset": 14,
      "surface_class": "journal",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 12,
      "markers": [],
      "keys": [
       "Total operational (scope 1 + market-based scope 2)"
@@ -2038,6 +2202,8 @@
      "offset": 36,
      "surface_class": "drafts",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 48,
      "markers": [],
      "keys": [
       "Two further pages … hold the passage in full"
@@ -2051,6 +2217,8 @@
      "offset": 25,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "a non-computable metric value inside the envelope window halts the run for that metric"
@@ -2064,6 +2232,8 @@
      "offset": 6,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 13,
      "markers": [],
      "keys": [
       "best possible representation of what was seen at the time of collection"
@@ -2075,6 +2245,8 @@
      "offset": 115,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 20,
      "markers": [],
      "keys": [
       "best possible representation of what was seen at the time of collection"
@@ -2086,6 +2258,8 @@
      "offset": 343,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "best possible representation of what was seen at the time of collection"
@@ -2099,6 +2273,8 @@
      "offset": 52,
      "surface_class": "drafts",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 11,
      "markers": [],
      "keys": [
       "borrows more gravity than a stale webpage earns"
@@ -2112,6 +2288,8 @@
      "offset": 35,
      "surface_class": "journal",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 14,
      "markers": [],
      "keys": [
       "candidate refiling with a gauntlet owed"
@@ -2125,6 +2303,8 @@
      "offset": 168,
      "surface_class": "archive",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 23,
      "markers": [],
      "keys": [
       "measures the archiving infrastructure only"
@@ -2136,6 +2316,8 @@
      "offset": 14,
      "surface_class": "journal",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 30,
      "markers": [],
      "keys": [
       "measures the archiving infrastructure only"
@@ -2147,6 +2329,8 @@
      "offset": 34,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": false,
+     "nearest_marker_line_distance": null,
      "markers": [],
      "keys": [
       "measures the archiving infrastructure only"
@@ -2160,6 +2344,8 @@
      "offset": 21,
      "surface_class": "shipped",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 69,
      "markers": [],
      "keys": [
       "no null from it may be reported as informative at all"
@@ -2173,6 +2359,8 @@
      "offset": 30,
      "surface_class": "journal",
      "marked_in_place": false,
+     "marker_anywhere_in_file": true,
+     "nearest_marker_line_distance": 35,
      "markers": [],
      "keys": [
       "the Court of Appeal's own language"
@@ -2187,6 +2375,8 @@
     "offset": 0,
     "surface_class": "archive",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "0/25 across every in-window capture"
@@ -2198,6 +2388,8 @@
     "offset": 168,
     "surface_class": "archive",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 23,
     "markers": [],
     "keys": [
      "measures the archiving infrastructure only"
@@ -2209,6 +2401,8 @@
     "offset": 40,
     "surface_class": "archive",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 2,
     "markers": [
      "corrected",
      "discarded"
@@ -2223,6 +2417,8 @@
     "offset": 19,
     "surface_class": "archive",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 28,
     "markers": [],
     "keys": [
      "0/25 across every in-window capture"
@@ -2234,6 +2430,8 @@
     "offset": 2418,
     "surface_class": "archive",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "corrected",
      "correction",
@@ -2254,6 +2452,8 @@
     "offset": 671,
     "surface_class": "archive",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "discarded",
      "retract",
@@ -2271,6 +2471,8 @@
     "offset": 437,
     "surface_class": "archive",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "discarded",
      "retract",
@@ -2288,6 +2490,8 @@
     "offset": 64,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "correction",
      "errata"
@@ -2302,6 +2506,8 @@
     "offset": 575,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "correction",
      "errata"
@@ -2316,6 +2522,8 @@
     "offset": 1,
     "surface_class": "drafts",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 9,
     "markers": [
      "correction"
     ],
@@ -2329,6 +2537,8 @@
     "offset": 52,
     "surface_class": "drafts",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 11,
     "markers": [],
     "keys": [
      "borrows more gravity than a stale webpage earns"
@@ -2340,6 +2550,8 @@
     "offset": 11,
     "surface_class": "drafts",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 2,
     "markers": [
      "corrected",
      "was wrong"
@@ -2354,6 +2566,8 @@
     "offset": 142,
     "surface_class": "drafts",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "correction",
      "superseded",
@@ -2369,6 +2583,8 @@
     "offset": 272,
     "surface_class": "drafts",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "correction",
      "superseded",
@@ -2384,6 +2600,8 @@
     "offset": 12,
     "surface_class": "drafts",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 140,
     "markers": [],
     "keys": [
      "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -2395,6 +2613,8 @@
     "offset": 12,
     "surface_class": "drafts",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 143,
     "markers": [],
     "keys": [
      "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -2406,6 +2626,8 @@
     "offset": 49,
     "surface_class": "drafts",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 5,
     "markers": [
      "correction"
     ],
@@ -2419,6 +2641,8 @@
     "offset": 80,
     "surface_class": "drafts",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 68,
     "markers": [],
     "keys": [
      "EU AI Act, Regulation (EU) 2024/1689, Art. 5.1(d)"
@@ -2430,6 +2654,8 @@
     "offset": 12,
     "surface_class": "drafts",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 28,
     "markers": [],
     "keys": [
      "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -2441,6 +2667,8 @@
     "offset": 12,
     "surface_class": "drafts",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 143,
     "markers": [],
     "keys": [
      "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -2452,6 +2680,8 @@
     "offset": 12,
     "surface_class": "drafts",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 109,
     "markers": [],
     "keys": [
      "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -2463,6 +2693,8 @@
     "offset": 12,
     "surface_class": "drafts",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 140,
     "markers": [],
     "keys": [
      "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -2474,6 +2706,8 @@
     "offset": 12,
     "surface_class": "drafts",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 106,
     "markers": [],
     "keys": [
      "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -2485,6 +2719,8 @@
     "offset": 29,
     "surface_class": "drafts",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -2496,6 +2732,8 @@
     "offset": 59,
     "surface_class": "drafts",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 15,
     "markers": [],
     "keys": [
      "11 to 15 of 20 in every other stratum"
@@ -2507,6 +2745,8 @@
     "offset": 36,
     "surface_class": "drafts",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 48,
     "markers": [],
     "keys": [
      "Two further pages … hold the passage in full"
@@ -2518,6 +2758,8 @@
     "offset": 7,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 4,
     "markers": [
      "discarded"
     ],
@@ -2531,6 +2773,8 @@
     "offset": 2,
     "surface_class": "journal",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 36,
     "markers": [],
     "keys": [
      "EU AI Act, Regulation (EU) 2024/1689, Art. 5.1(d)"
@@ -2542,6 +2786,8 @@
     "offset": 2,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "corrected",
      "correction",
@@ -2557,6 +2803,8 @@
     "offset": 39,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 4,
     "markers": [
      "discarded"
     ],
@@ -2570,6 +2818,8 @@
     "offset": 30,
     "surface_class": "journal",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 35,
     "markers": [],
     "keys": [
      "the Court of Appeal's own language"
@@ -2581,6 +2831,8 @@
     "offset": 3,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "discarded"
     ],
@@ -2594,6 +2846,8 @@
     "offset": 35,
     "surface_class": "journal",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 14,
     "markers": [],
     "keys": [
      "candidate refiling with a gauntlet owed"
@@ -2605,6 +2859,8 @@
     "offset": 17,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 3,
     "markers": [
      "discarded"
     ],
@@ -2618,6 +2874,8 @@
     "offset": 14,
     "surface_class": "journal",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 12,
     "markers": [],
     "keys": [
      "Total operational (scope 1 + market-based scope 2)"
@@ -2629,6 +2887,8 @@
     "offset": 7,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "corrected"
     ],
@@ -2642,6 +2902,8 @@
     "offset": 1,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 6,
     "markers": [
      "corrected",
      "discarded"
@@ -2656,6 +2918,8 @@
     "offset": 33,
     "surface_class": "journal",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 25,
     "markers": [],
     "keys": [
      "NO PRESUMPTION FOUND (default holds, unrebutted)"
@@ -2667,6 +2931,8 @@
     "offset": 33,
     "surface_class": "journal",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 22,
     "markers": [],
     "keys": [
      "One candidate refiling — gauntlet owed"
@@ -2678,6 +2944,8 @@
     "offset": 27,
     "surface_class": "journal",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 43,
     "markers": [],
     "keys": [
      "CLEARED ON THE ADJUDICATION RECORD"
@@ -2689,6 +2957,8 @@
     "offset": 31,
     "surface_class": "journal",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 14,
     "markers": [],
     "keys": [
      "One candidate refiling — gauntlet owed"
@@ -2700,6 +2970,8 @@
     "offset": 20,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 4,
     "markers": [
      "rejected",
      "withdraw",
@@ -2715,6 +2987,8 @@
     "offset": 3,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "corrected",
      "discarded"
@@ -2729,6 +3003,8 @@
     "offset": 41,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "corrected",
      "discarded"
@@ -2743,6 +3019,8 @@
     "offset": 14,
     "surface_class": "journal",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 30,
     "markers": [],
     "keys": [
      "measures the archiving infrastructure only"
@@ -2754,6 +3032,8 @@
     "offset": 36,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "corrected"
     ],
@@ -2767,6 +3047,8 @@
     "offset": 13,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "correction",
      "discarded",
@@ -2782,6 +3064,8 @@
     "offset": 51,
     "surface_class": "journal",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 35,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -2793,6 +3077,8 @@
     "offset": 45,
     "surface_class": "journal",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 31,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -2804,6 +3090,8 @@
     "offset": 5,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "discarded",
      "superseded",
@@ -2820,6 +3108,8 @@
     "offset": 52,
     "surface_class": "journal",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 31,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -2831,6 +3121,8 @@
     "offset": 5,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 2,
     "markers": [
      "corrected",
      "correction",
@@ -2848,6 +3140,8 @@
     "offset": 5,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "corrected",
      "correction",
@@ -2865,6 +3159,8 @@
     "offset": 29,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 8,
     "markers": [
      "withdraw",
      "withdrawn"
@@ -2879,6 +3175,8 @@
     "offset": 5,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "corrected",
      "correction",
@@ -2896,6 +3194,8 @@
     "offset": 33,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "corrected",
      "correction",
@@ -2913,6 +3213,8 @@
     "offset": 5,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "corrected",
      "correction",
@@ -2931,6 +3233,8 @@
     "offset": 8,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 2,
     "markers": [
      "corrected"
     ],
@@ -2944,6 +3248,8 @@
     "offset": 4,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 5,
     "markers": [
      "corrected",
      "correction"
@@ -2958,6 +3264,8 @@
     "offset": 4,
     "surface_class": "journal",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 2,
     "markers": [
      "corrected",
      "was wrong",
@@ -2974,6 +3282,8 @@
     "offset": 550,
     "surface_class": "curated-memory",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "corrected",
      "correction",
@@ -2990,6 +3300,8 @@
     "offset": 252,
     "surface_class": "curated-memory",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "corrected",
      "correction",
@@ -3006,6 +3318,8 @@
     "offset": 366,
     "surface_class": "curated-memory",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "corrected",
      "discarded"
@@ -3020,6 +3334,8 @@
     "offset": 2002,
     "surface_class": "curated-memory",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 3,
     "markers": [
      "corrected",
      "no longer",
@@ -3035,6 +3351,8 @@
     "offset": 1563,
     "surface_class": "curated-memory",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "corrected",
      "correction",
@@ -3053,6 +3371,8 @@
     "offset": 1748,
     "surface_class": "curated-memory",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "corrected",
      "correction",
@@ -3071,6 +3391,8 @@
     "offset": 164,
     "surface_class": "curated-memory",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "correction",
      "no longer",
@@ -3087,6 +3409,8 @@
     "offset": 296,
     "surface_class": "curated-memory",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "correction",
      "no longer",
@@ -3103,6 +3427,8 @@
     "offset": 12,
     "surface_class": "curated-memory",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 5,
     "markers": [
      "correction"
     ],
@@ -3116,6 +3442,8 @@
     "offset": 3,
     "surface_class": "curated-memory",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 24,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3127,6 +3455,8 @@
     "offset": 34,
     "surface_class": "curated-memory",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "corrected",
      "correction",
@@ -3142,6 +3472,8 @@
     "offset": 16,
     "surface_class": "other",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "corrected",
      "correction",
@@ -3158,6 +3490,8 @@
     "offset": 187,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "correction"
     ],
@@ -3171,6 +3505,8 @@
     "offset": 22,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "corrected",
      "correction",
@@ -3187,6 +3523,8 @@
     "offset": 800,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "struck",
      "superseded",
@@ -3202,6 +3540,8 @@
     "offset": 21018,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "corrected",
      "correction",
@@ -3221,6 +3561,8 @@
     "offset": 86,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 2,
     "markers": [
      "corrected",
      "correction",
@@ -3236,6 +3578,8 @@
     "offset": 4,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 5,
     "markers": [
      "corrected",
      "correction",
@@ -3251,6 +3595,8 @@
     "offset": 3,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "corrected",
      "correction",
@@ -3266,6 +3612,8 @@
     "offset": 47,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "corrected",
      "correction",
@@ -3281,6 +3629,8 @@
     "offset": 24,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 59,
     "markers": [],
     "keys": [
      "Google 2026 Environmental Report"
@@ -3292,6 +3642,8 @@
     "offset": 2,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 57,
     "markers": [],
     "keys": [
      "Google 2026 Environmental Report"
@@ -3303,6 +3655,8 @@
     "offset": 30,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "corrected",
      "superseded"
@@ -3317,6 +3671,8 @@
     "offset": 16,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 21,
     "markers": [],
     "keys": [
      "Google 2026 Environmental Report"
@@ -3328,6 +3684,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 15,
     "markers": [],
     "keys": [
      "Stop Automating Peer Review Without Rigorous Evaluation"
@@ -3339,6 +3697,8 @@
     "offset": 18,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 2,
     "markers": [
      "struck"
     ],
@@ -3352,6 +3712,8 @@
     "offset": 32,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "struck"
     ],
@@ -3365,6 +3727,8 @@
     "offset": 6,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 13,
     "markers": [],
     "keys": [
      "best possible representation of what was seen at the time of collection"
@@ -3376,6 +3740,8 @@
     "offset": 50,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 2,
     "markers": [
      "corrected"
     ],
@@ -3389,6 +3755,8 @@
     "offset": 21,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "corrected"
     ],
@@ -3402,6 +3770,8 @@
     "offset": 63,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "corrected"
     ],
@@ -3415,6 +3785,8 @@
     "offset": 7,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 5,
     "markers": [
      "corrected"
     ],
@@ -3428,6 +3800,8 @@
     "offset": 212,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 10,
     "markers": [
      "struck"
     ],
@@ -3441,6 +3815,8 @@
     "offset": 376,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 6,
     "markers": [
      "struck"
     ],
@@ -3454,6 +3830,8 @@
     "offset": 115,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 20,
     "markers": [],
     "keys": [
      "best possible representation of what was seen at the time of collection"
@@ -3465,6 +3843,8 @@
     "offset": 343,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "best possible representation of what was seen at the time of collection"
@@ -3476,6 +3856,8 @@
     "offset": 34,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "measures the archiving infrastructure only"
@@ -3487,6 +3869,8 @@
     "offset": 262,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 22,
     "markers": [],
     "keys": [
      "9.991 Ablehnungszeilen mit Kennungen und 10.056 Fundstellen-Zeilen im Snapshot"
@@ -3498,6 +3882,8 @@
     "offset": 40,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 14,
     "markers": [],
     "keys": [
      "9.991 Ablehnungszeilen mit Kennungen und 10.056 Fundstellen-Zeilen im Snapshot"
@@ -3509,6 +3895,8 @@
     "offset": 15,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 8,
     "markers": [
      "corrected",
      "withdraw"
@@ -3523,6 +3911,8 @@
     "offset": 33,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 6,
     "markers": [
      "corrected",
      "withdraw"
@@ -3537,6 +3927,8 @@
     "offset": 26,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "corrected",
      "discarded",
@@ -3552,6 +3944,8 @@
     "offset": 180,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "corrected",
      "discarded",
@@ -3568,6 +3962,8 @@
     "offset": 48,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "corrected",
      "discarded",
@@ -3584,6 +3980,8 @@
     "offset": 148,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 1,
     "markers": [
      "correction",
      "withdraw",
@@ -3599,6 +3997,8 @@
     "offset": 483,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "corrected",
      "correction",
@@ -3616,6 +4016,8 @@
     "offset": 171,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "corrected",
      "correction",
@@ -3633,6 +4035,8 @@
     "offset": 102,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "corrected",
      "correction",
@@ -3650,6 +4054,8 @@
     "offset": 25,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "a non-computable metric value inside the envelope window halts the run for that metric"
@@ -3661,6 +4067,8 @@
     "offset": 15,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 142,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3672,6 +4080,8 @@
     "offset": 21,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 69,
     "markers": [],
     "keys": [
      "no null from it may be reported as informative at all"
@@ -3683,6 +4093,8 @@
     "offset": 34,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 105,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3694,6 +4106,8 @@
     "offset": 53,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 75,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3705,6 +4119,8 @@
     "offset": 0,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 7,
     "markers": [
      "superseded"
     ],
@@ -3718,6 +4134,8 @@
     "offset": 53,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 8,
     "markers": [
      "correction"
     ],
@@ -3731,6 +4149,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3742,6 +4162,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3753,6 +4175,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3764,6 +4188,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3775,6 +4201,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3786,6 +4214,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3797,6 +4227,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3808,6 +4240,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3819,6 +4253,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3830,6 +4266,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3841,6 +4279,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3852,6 +4292,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3863,6 +4305,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3874,6 +4318,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3885,6 +4331,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3896,6 +4344,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3907,6 +4357,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3918,6 +4370,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3929,6 +4383,8 @@
     "offset": 294,
     "surface_class": "shipped",
     "marked_in_place": true,
+    "marker_anywhere_in_file": true,
+    "nearest_marker_line_distance": 0,
     "markers": [
      "withdraw"
     ],
@@ -3942,6 +4398,8 @@
     "offset": 18,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3953,6 +4411,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3964,6 +4424,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3975,6 +4437,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3986,6 +4450,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -3997,6 +4463,8 @@
     "offset": 20,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4008,6 +4476,8 @@
     "offset": 22,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4019,6 +4489,8 @@
     "offset": 22,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4030,6 +4502,8 @@
     "offset": 22,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4041,6 +4515,8 @@
     "offset": 22,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4052,6 +4528,8 @@
     "offset": 22,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4063,6 +4541,8 @@
     "offset": 22,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4074,6 +4554,8 @@
     "offset": 22,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4085,6 +4567,8 @@
     "offset": 22,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4096,6 +4580,8 @@
     "offset": 22,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4107,6 +4593,8 @@
     "offset": 22,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4118,6 +4606,8 @@
     "offset": 22,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4129,6 +4619,8 @@
     "offset": 22,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4140,6 +4632,8 @@
     "offset": 22,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4151,6 +4645,8 @@
     "offset": 22,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4162,6 +4658,8 @@
     "offset": 22,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4173,6 +4671,8 @@
     "offset": 22,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4184,6 +4684,8 @@
     "offset": 14,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4195,6 +4697,8 @@
     "offset": 14,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4206,6 +4710,8 @@
     "offset": 14,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4217,6 +4723,8 @@
     "offset": 14,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4228,6 +4736,8 @@
     "offset": 14,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4239,6 +4749,8 @@
     "offset": 14,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4250,6 +4762,8 @@
     "offset": 24,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4261,6 +4775,8 @@
     "offset": 45,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4272,6 +4788,8 @@
     "offset": 18,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
@@ -4283,6 +4801,8 @@
     "offset": 35,
     "surface_class": "shipped",
     "marked_in_place": false,
+    "marker_anywhere_in_file": false,
+    "nearest_marker_line_distance": null,
     "markers": [],
     "keys": [
      "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"

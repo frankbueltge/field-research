@@ -335,9 +335,18 @@ def scan(keys, files):
                         hi = min(len(lines), i + NEIGHBOURHOOD + 1)
                         nb = "\n".join(lowered[lo:hi])
                         marked = sorted({mk for mk in MARKERS if mk in nb})
+                        # DEVIATION D10 (RULE.md §7), from pre-read finding 1 read a
+                        # third way: instead of widening the window (which would
+                        # launder) or leaving the reader with one bit, report the
+                        # distance to the nearest marker anywhere in the same file.
+                        dists = [abs(j - i) for j, ll in enumerate(lowered)
+                                 if any(mk in ll for mk in MARKERS)]
+                        nearest = min(dists) if dists else None
                         rec = {"file": f, "line": i + 1, "offset": start,
                                "surface_class": surface_class(f),
                                "marked_in_place": bool(marked),
+                               "marker_anywhere_in_file": nearest is not None,
+                               "nearest_marker_line_distance": nearest,
                                "markers": marked, "keys": []}
                         occ[ident] = rec
                     if k not in rec["keys"]:
@@ -463,6 +472,11 @@ def main():
             "occurrences": len(occurrences),
             "occurrences_marked_in_place": sum(1 for o in occurrences if o["marked_in_place"]),
             "occurrences_unmarked": sum(1 for o in occurrences if not o["marked_in_place"]),
+            "occurrences_unmarked_but_marked_elsewhere_in_file":
+                sum(1 for o in occurrences
+                    if not o["marked_in_place"] and o["marker_anywhere_in_file"]),
+            "occurrences_with_no_marker_anywhere_in_the_file":
+                sum(1 for o in occurrences if not o["marker_anywhere_in_file"]),
             "by_surface_class": by_class,
             "keys_with_unmarked_occurrences": len(unmarked),
             "keys_with_no_occurrence_anywhere": sum(1 for k in keys if k not in by_key),
