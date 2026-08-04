@@ -41,6 +41,12 @@ WITHHOLD = (
     "machine",
     "population_reason",
     "position",
+    # Added to data.json by the correction this study forced, AFTER blind-input.json was
+    # generated. Listed so `--check` still reproduces the file the readers actually saw;
+    # withheld for the same reason as everything else here — they are judgements about the
+    # case. Found by the Verifier (F4), 2026-08-04.
+    "in_population_second_readers",
+    "in_population_status",
 )
 
 

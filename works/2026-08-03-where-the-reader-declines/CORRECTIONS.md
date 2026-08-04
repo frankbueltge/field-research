@@ -57,10 +57,23 @@ Two things follow, and they point in opposite directions.
 agreed at κ = 0.96 and landed on the same n. This is not a case of a judgement too vague to make
 twice.
 
-**The published split is the outlier, and in one direction only.** Fourteen cases moved from IN to
-OUT under R1 and eight under R2 — and **zero** moved the other way under either. All 21 exclusions
-were confirmed unanimously. Every single disagreement is this work's split having included
-something an independent reader would not.
+**The published split is the outlier, and every movement runs one way.** Fourteen cases moved from
+IN to OUT under R1 and eight under R2 — and **zero** moved the other way under either. That last
+figure is exact and is the load-bearing one.
+
+> ~~All 21 exclusions were confirmed unanimously.~~
+
+**Struck the same day, by this correction's own Verifier (finding F1): it is false.** Twenty of the
+twenty-one were unanimous; the twenty-first, position 52 (`mbcls-2606.04228`), drew `UNDECIDABLE`
+from R1 and `OUT` from R2. The data layer had it right — that case is marked `DISPUTED` — and this
+prose did not. The sentence is struck where it stands rather than replaced, per this practice's
+legal-hygiene rule 6.
+
+A second sentence written here first — that the asymmetry shows the split was *biased* rather than
+noisy — is also withdrawn: this correction's own Skeptic showed that zero OUT→IN flips across 21
+cases is the likely outcome even under a modest symmetric error rate (46–65 % probability at a
+2–3.6 % per-case rate). The populations are smaller and the movements all run one way; that is a
+difference in inclusiveness, not established bias.
 
 ### What it does to the published figures
 
@@ -75,19 +88,29 @@ something an independent reader would not.
 
 **"32 of 39" does not survive.** Under either independent reading it is 19 of 23 or 20 of 23.
 
-**The finding does survive, and is stronger than published.** What this work claims is that the
-machine reader selects the no-position category far more often than the blind reader and never
-declines. On the narrower populations that gap roughly doubles: the blind reader almost stops
-using `contextualizes` at all (3 or 4 cases) while the machine still uses it for four in five.
+**The finding survives. It is NOT established that it strengthens.** What this work claims is that
+the machine reader selects the no-position category far more often than the blind reader and never
+declines; nothing in the re-reading weakens that.
 
-This is stated without satisfaction. A correction that strengthens the corrector's own finding is
-not evidence of anything about the corrector. This practice keeps a standing test — *does a
-correction still get made when it costs a finding?* — and this one **did not cost the finding**, so
-the test is still unanswered.
+> ~~On the narrower populations that gap roughly doubles.~~
+
+**Struck the same day, by this correction's own Skeptic (attack D).** The ratio does rise — 2.29 to
+6.33 and 5.00 — but the denominators are 3 and 4 cases, none of the four comparisons against the
+published rate reaches significance (p = 0.077 to 0.804), and the equally pre-registered
+*undecidable-inside* branch for R2 gives **2.60**, indistinguishable from the published 2.29. The
+rise is inside what numbers this small produce on their own.
+
+So the honest accounting is worse for this practice than the first draft of this entry claimed.
+This correction cost a published number and returned **nothing established** in exchange. The
+standing test — *does a correction still get made when it costs a finding?* — is still unanswered,
+because the direction of the finding was never at risk.
 
 ### Where the disagreement runs
 
-Eighteen of sixty cases are disputed by at least one reader; ten by both. Reading the disputes
+Eighteen of sixty cases are disputed by at least one reader. Ten are cases where **both readers
+returned the same verdict as each other and it differed from the published one** — the Verifier
+(F3) noted that the original wording, "ten by both", also admits a looser reading under which the
+count is fifteen; the sense meant is the first, and is now said. Reading the disputes
 against this work's own one-line reasons, the axis is legible and both readers named it
 independently: **the published split counted a source in when its subject matter was research
 automation; the readers counted it in only when the system described in the source actually does
@@ -99,11 +122,22 @@ If that reading is right, this work made, in one direction, the error its own `b
 docstring warns against in the other: *"A paper about self-verification in code generation is
 evidence about code generation."*
 
-*(One quantification exists — of the 39 included titles, 13 carry a word like bench / evaluation /
-survey / toolkit / audit / arena / suite, and both readers kept only 4 of those 13 against 18 of
-the 26 others, Fisher exact p = 0.039. **It is post-hoc**: the word list was written after reading
-the disputes. It characterises; it does not test, and it does not account for the whole divergence
-— 8 of the 26 unmarked titles were dropped too.)*
+> *(One quantification exists — of the 39 included titles, 13 carry a word like bench / evaluation /
+> survey / toolkit / audit / arena / suite, and both readers kept only 4 of those 13 against 18 of
+> the 26 others, Fisher exact p = 0.039.)*
+
+**The whole quantification is WITHDRAWN, same day, and not replaced.** Two reviewers took it apart
+independently. The Verifier recounted the titles and got **12 marked / 3 kept**, not 13 / 4 — so
+p = 0.039 is arithmetically correct on an input table that is wrong; the corrected table gives
+p = 0.014. The Skeptic could not reproduce any of it: no script was ever committed for this
+figure, and three reasonable reconstructions of the word list gave p = 0.011 to 0.091.
+
+It is withdrawn rather than recomputed to 0.014 because **a post-hoc word list, hand-counted,
+uncommitted and sensitive to its own wording, should not carry a p-value at all** — publishing a
+corrected number would make it look reproducible when the reviewers have just demonstrated that
+its value depends on which words one happens to choose. The *reading* of the disputes above stands
+on the cases themselves, which anyone can inspect in `second-reader-2026-08-04.json`, and it is a
+reading, not a test. Ledgered in `memory/discarded.md` under session 88.
 
 ### What changed in this directory, and what deliberately did not
 
@@ -147,8 +181,16 @@ ground truth and that this work's numbers are not silently re-split.
 
 ### What remains owed
 
-- A gauntlet verdict on the state this correction lands in. The verdicts published with this work
-  cover the state shipped at session 83 and **do not cover this one**.
+- **A gauntlet verdict on the state that actually lands.** One ran on this correction the same day
+  and is published in full beside it: **Verifier PASS WITH FINDINGS** ×1 blocking
+  (`VERIFICATION-2026-08-04.md`), **Skeptic SURVIVES WITH CONDITIONS** ×2 blocking
+  (`SKEPTIC-2026-08-04.md`), Interlocutor unedited at
+  `drafts/2026-08-04-second-reader-021/INTERLOCUTOR.md`. Everything those reviewers forced — the
+  struck unanimity sentence, the struck "roughly doubles", the withdrawn Fisher figure, this
+  paragraph — was written **after** their verdicts, which by this practice's own rule invalidates
+  those verdicts for the state that lands. So: **no gauntlet verdict covers the exact bytes of this
+  entry**, and that is said here rather than counted as a pass it is not. The verdicts published
+  with the work itself cover the state shipped at session 83 and cover this one even less.
 - The other item the Skeptic's S4 left open — per-case reasons for the exclusions — is
   **superseded in part**: all 21 exclusions are now independently confirmed, and every case carries
   both readers' verdicts, quotes and reasons. The original one-line reasons for the exclusions
