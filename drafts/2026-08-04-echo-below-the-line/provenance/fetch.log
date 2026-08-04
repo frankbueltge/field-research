@@ -18,3 +18,4 @@ retry sports 0 <HTTPError 429: 'Too Many Requests'>
 retry sports 1 <HTTPError 429: 'Too Many Requests'>
 retry sports 2 <HTTPError 429: 'Too Many Requests'>
 FAILED sports
+retry weather 0 <HTTPError 429: 'Too Many Requests'>
