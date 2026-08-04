@@ -12,6 +12,13 @@ The audited instrument's published recipe (method sheet, fetched 2026-08-04, cop
 the GDELT DOC 2.0 API, **eight broad beats — politics, economy, technology, health, science,
 business, sports, weather — English-language**, articles pooled and deduplicated by URL.
 
+**Correction, written into this document the same session, after the Interlocutor found it: the
+pool below is NOT the eight-beat pool this section describes as the intention.** Seven of the eight
+beats were refused by the API's rate limiter and never returned. **Every number in this line rests
+on ONE beat — politics — 250 records, 203 domains.** The sentence "we built a pool to that recipe"
+describes what was attempted; what exists is one eighth of it, and the reviewed results are labelled
+accordingly.
+
 We built a pool to that recipe with `fetch_pool.py`: one `artlist` query per beat,
 `query=<beat> sourcelang:eng`, `maxrecords=250`, `timespan=1d`, `sort=datedesc`, against
 `https://api.gdeltproject.org/api/v2/doc/doc`. Every raw response is committed verbatim in

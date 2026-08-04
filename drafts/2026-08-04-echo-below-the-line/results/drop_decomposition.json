@@ -1,0 +1,57 @@
+{
+  "source_file": "provenance/gdelt-politics.json",
+  "source_sha256": "9a254eed4f62bc18c860eb9a55b7cf21f9c28b07fef859ab43a95e2f2fc0c0d2",
+  "pool_size": 250,
+  "echo_titles_domain_unit": 59,
+  "echo_titles_publisher_unit": 8,
+  "titles_that_lost_echo_status": 51,
+  "total_drop_pp": 20.4,
+  "attribution_by_publisher_group": [
+    {
+      "publisher_group_representative_domain": "abc7amarillo.com",
+      "domains_in_group": 13,
+      "titles_that_lost_echo_status": 13,
+      "percentage_points_of_the_drop": 5.2
+    },
+    {
+      "publisher_group_representative_domain": "asianimage.co.uk",
+      "domains_in_group": 10,
+      "titles_that_lost_echo_status": 10,
+      "percentage_points_of_the_drop": 4.0
+    },
+    {
+      "publisher_group_representative_domain": "argentinastar.com",
+      "domains_in_group": 11,
+      "titles_that_lost_echo_status": 10,
+      "percentage_points_of_the_drop": 4.0
+    },
+    {
+      "publisher_group_representative_domain": "4029tv.com",
+      "domains_in_group": 8,
+      "titles_that_lost_echo_status": 8,
+      "percentage_points_of_the_drop": 3.2
+    },
+    {
+      "publisher_group_representative_domain": "cessnockadvertiser.com.au",
+      "domains_in_group": 4,
+      "titles_that_lost_echo_status": 4,
+      "percentage_points_of_the_drop": 1.6
+    },
+    {
+      "publisher_group_representative_domain": "simcoereformer.ca",
+      "domains_in_group": 3,
+      "titles_that_lost_echo_status": 3,
+      "percentage_points_of_the_drop": 1.2
+    },
+    {
+      "publisher_group_representative_domain": "dddnews.com",
+      "domains_in_group": 3,
+      "titles_that_lost_echo_status": 3,
+      "percentage_points_of_the_drop": 1.2
+    }
+  ],
+  "share_of_drop_from_largest_group_pp": 5.2,
+  "share_of_drop_from_top_four_groups_pp": 16.4,
+  "number_of_publisher_groups_causing_any_loss": 7,
+  "note": "A title 'loses echo status' when every 6-token phrase that put it in a >=3-domain echo is no longer carried by >=3 distinct publisher units. Attribution is to the publisher group of the title's own domain. A shared URL path shows same-item republication through common publishing infrastructure; it is not evidence of common ownership and no ownership claim is made."
+}
