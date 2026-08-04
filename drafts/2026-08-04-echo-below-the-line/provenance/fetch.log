@@ -1,2 +1,5 @@
 cached politics 250
 retry economy 0 <HTTPError 429: 'Too Many Requests'>
+retry economy 1 <HTTPError 429: 'Too Many Requests'>
+retry economy 2 <HTTPError 429: 'Too Many Requests'>
+FAILED economy

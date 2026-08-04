@@ -23,7 +23,13 @@ And the same sheet declares its own limit:
 
 > v1 reads titles, not full text; paraphrased coordination escapes it (arrives in v2).
 
-**The claim: a disclosed limit is not a measured limit.** The instrument tells its readers that
+**The claim: a disclosed limit is not a measured limit.** *(Sharpened after this session's own
+neighbours scout objected to the first wording — see `NEIGHBOURS.md`. The accurate sentence is:
+**a disclosed limit, an undisclosed size, and a disclosed fix already on the maker's roadmap.**
+The same method sheet schedules a v2 using TF-IDF/cosine precisely to "catch paraphrased
+coordination (reworded wire copy that verbatim misses)". Nothing here was concealed by anyone, and
+any sentence in this line that reads as "we found what they hid" is a defect to be struck.)*
+The instrument tells its readers that
 paraphrase escapes its rule; it does not tell them *how much* escapes, and the number it publishes
 on its front page — on 2026-08-04, "20.5% of today's scanned news stream was echo" — is read by a
 visitor as the size of the echo, not as the size of one detector's catch. The difference between

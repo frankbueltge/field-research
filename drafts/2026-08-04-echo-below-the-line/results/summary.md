@@ -1,6 +1,6 @@
 # Echo index: published rule vs near-duplicate rule
 
-Generated: 2026-08-04T23:02:18Z
+Generated: 2026-08-04T23:05:04Z
 
 ## Input files
 
@@ -20,13 +20,41 @@ Headline (most-replicated echo phrase): "what ex son in law is" (13 domains)
 
 ## Rule B sweep (near-duplicate clustering)
 
-| t | echo index B | clusters | largest cluster size | largest cluster domains | gap vs A (pp) | caught by B not A |
+| t | echo index B | clusters | largest cluster size | largest cluster domains | gap vs A (pp) |
+|---|---|---|---|---|---|
+| 0.9 | 22.00% | 191 | 13 | 13 | -1.60 |
+| 0.8 | 22.00% | 190 | 13 | 13 | -1.60 |
+| 0.7 | 22.80% | 188 | 13 | 13 | -0.80 |
+| 0.6 | 24.40% | 186 | 13 | 13 | +0.80 |
+| 0.5 | 24.80% | 183 | 13 | 13 | +1.20 |
+
+## A and B are not nested
+
+Rule A can flag a title on the strength of a single shared 6-token phrase even when the rest of the title differs; Rule B requires the whole normalised title to be similar. These are different conditions, so neither rule's catch is a subset of the other's. Both directions, at every swept threshold:
+
+| t | caught by A, not B | caught by B, not A | caught by both | echo index A | echo index B | which is larger |
 |---|---|---|---|---|---|---|
-| 0.9 | 22.00% | 191 | 13 | 13 | -1.60 | 0 |
-| 0.8 | 22.00% | 190 | 13 | 13 | -1.60 | 0 |
-| 0.7 | 22.80% | 188 | 13 | 13 | -0.80 | 1 |
-| 0.6 | 24.40% | 186 | 13 | 13 | +0.80 | 2 |
-| 0.5 | 24.80% | 183 | 13 | 13 | +1.20 | 3 |
+| 0.9 | 4 | 0 | 55 | 23.60% | 22.00% | A > B |
+| 0.8 | 4 | 0 | 55 | 23.60% | 22.00% | A > B |
+| 0.7 | 3 | 1 | 56 | 23.60% | 22.80% | A > B |
+| 0.6 | 0 | 2 | 59 | 23.60% | 24.40% | B > A |
+| 0.5 | 0 | 3 | 59 | 23.60% | 24.80% | B > A |
+
+No direction is softened here: where B(t) falls below A in this table, that is reported as measured, not adjusted.
+
+## Rule C: is 'distinct domain' a sound unit?
+
+URL paths seen in the pool that are served by >=2 distinct domains: **12**  
+URL paths served by >=3 distinct domains: **7**  
+Path served by the most distinct domains: `/news/nation-world/moreno-said-its-not-clear-what-ex-son-in-law-miller-is-capable-of-amid-abuse-allegations-police-station-tmz-social-media` -- 13 domains  
+Domain-group size distribution over paths with >=2 domains (size -> number of such paths): {2: 5, 3: 2, 4: 1, 8: 1, 10: 2, 13: 1}
+
+Collapsing domains that share >=1 identical URL path (transitively) into publisher groups: **203 domains** collapse into **155 publisher groups**.  
+Publisher-group size counts (group size -> number of groups): {1: 145, 2: 3, 3: 2, 4: 1, 8: 1, 10: 1, 11: 1, 13: 1}
+
+Echo index A recomputed with '>=3 distinct domains' replaced by '>=3 distinct publisher groups': **3.20%** (original domain-based Echo index A: 23.60%, drop of **20.40 percentage points**).
+
+*A shared URL path shows the same item was republished through a shared publishing system across those domains. It does not show, and this output does not claim, common ownership of those domains.*
 
 ## Judgement calls
 
@@ -41,3 +69,7 @@ Headline (most-replicated echo phrase): "what ex son in law is" (13 domains)
 - Threshold sweep (0.9 down to 0.5) is a fixed, pre-declared grid, not a search for the most dramatic gap; all five values are reported together, not cherry-picked.
 - Domain is taken as GDELT's reported 'domain' field verbatim; no attempt is made to detect co-owned outlets or wire-service syndicates publishing under multiple domains, which would tend to inflate the apparent domain count of a real echo.
 - Example pairs (Rule B catches, Rule A does not) are chosen deterministically by sorting on (similarity descending, then url pair ascending) and are illustrative, not a random or representative sample of the gap.
+- Rule A and Rule B are NOT nested: Rule A can flag a title on the strength of a single shared 6-token phrase even if the rest of the title differs a lot (low whole-title Jaccard), while Rule B requires the whole normalised title to be similar. So a title can be caught by A and missed by B, and vice versa; both directions are reported at every threshold, and on at least one input B(0.9) was measured BELOW A -- the near-duplicate rule did not simply add cases on top of the exact-phrase rule.
+- Rule C's URL-path grouping uses the exact path string with no normalisation (no trailing-slash collapsing, no case-folding, no stripping of tracking segments embedded in the path itself); two paths that are the same item but differ by one character will not be grouped, so the collapse is a lower bound on true shared-item republication, not an exact count.
+- Rule C's publisher grouping is transitive and can chain exactly like Rule B's single-linkage clustering: two domains that never share a path directly can end up in the same publisher group via a third domain that shares a different path with each. This is disclosed, not hidden.
+- A shared URL path is evidence of shared publishing infrastructure (the same item, byte-for-byte path, served from multiple domains); it is not evidence of common ownership and must not be read as one. No ownership claim is made anywhere in this output.

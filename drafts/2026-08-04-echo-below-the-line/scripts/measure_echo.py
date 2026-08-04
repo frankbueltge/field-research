@@ -56,7 +56,9 @@ import json
 import os
 import re
 import sys
+from collections import Counter
 from datetime import datetime, timezone
+from urllib.parse import urlsplit
 
 WORKDIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROVENANCE_DIR = os.path.join(WORKDIR, "provenance")
@@ -111,6 +113,25 @@ RULE_B_TEXT = (
     "chaining is visible rather than hidden."
 )
 
+RULE_C_TEXT = (
+    "Tests whether 'distinct domain' is a sound unit of independence for "
+    "Rules A and B. For every pooled article, take the URL path (the URL "
+    "with scheme+host stripped off the front and query string/fragment "
+    "stripped off the back, taken verbatim, no further normalisation). "
+    "Where the SAME path string is served by >=2 distinct domains, those "
+    "domains are linked; publisher groups are the connected components of "
+    "this domain-link graph (transitive: if domain X shares a path with Y, "
+    "and Y shares a different path with Z, then X, Y and Z form one group "
+    "even though X and Z may share no path directly). Rule A is then "
+    "recomputed unchanged except that the >=3-distinct-domain bar becomes "
+    "a >=3-distinct-publisher-group bar. A shared URL path is evidence "
+    "that the same item was republished through a shared publishing "
+    "system (a wire feed, a syndication network, a shared CMS); it is NOT "
+    "evidence of common ownership, and no ownership claim is made or "
+    "implied anywhere in this output -- the result is reported strictly "
+    "as 'same-item republication under multiple domains'."
+)
+
 JUDGEMENT_CALLS = [
     "Normalisation is lossy: lowercase + collapse any non-alphanumeric run "
     "to a single space. Numbers, hyphens, punctuation, and diacritics are "
@@ -156,6 +177,29 @@ JUDGEMENT_CALLS = [
     "deterministically by sorting on (similarity descending, then url pair "
     "ascending) and are illustrative, not a random or representative "
     "sample of the gap.",
+    "Rule A and Rule B are NOT nested: Rule A can flag a title on the "
+    "strength of a single shared 6-token phrase even if the rest of the "
+    "title differs a lot (low whole-title Jaccard), while Rule B requires "
+    "the whole normalised title to be similar. So a title can be caught "
+    "by A and missed by B, and vice versa; both directions are reported "
+    "at every threshold, and on at least one input B(0.9) was measured "
+    "BELOW A -- the near-duplicate rule did not simply add cases on top "
+    "of the exact-phrase rule.",
+    "Rule C's URL-path grouping uses the exact path string with no "
+    "normalisation (no trailing-slash collapsing, no case-folding, no "
+    "stripping of tracking segments embedded in the path itself); two "
+    "paths that are the same item but differ by one character will not "
+    "be grouped, so the collapse is a lower bound on true shared-item "
+    "republication, not an exact count.",
+    "Rule C's publisher grouping is transitive and can chain exactly like "
+    "Rule B's single-linkage clustering: two domains that never share a "
+    "path directly can end up in the same publisher group via a third "
+    "domain that shares a different path with each. This is disclosed, "
+    "not hidden.",
+    "A shared URL path is evidence of shared publishing infrastructure "
+    "(the same item, byte-for-byte path, served from multiple domains); "
+    "it is not evidence of common ownership and must not be read as one. "
+    "No ownership claim is made anywhere in this output.",
 ]
 
 
@@ -420,6 +464,142 @@ def rule_a_covered_titles(recs):
     return covered
 
 
+def url_path(url):
+    """Return the URL path only: scheme+host stripped from the front,
+    query string and fragment stripped from the back. No further
+    normalisation (see judgement_calls). Returns '' if unparseable or
+    empty.
+    """
+    if not url:
+        return ""
+    try:
+        parsed = urlsplit(url)
+    except ValueError:
+        return ""
+    return parsed.path or ""
+
+
+def build_path_domain_groups(recs):
+    """Map URL path -> set of distinct domains that served an article at
+    that exact path. Records with an empty path are excluded (there is no
+    meaningful 'path' to group on).
+    """
+    path_to_domains = {}
+    for r in recs:
+        path = url_path(r["url"])
+        if not path:
+            continue
+        path_to_domains.setdefault(path, set()).add(r["domain"])
+    return path_to_domains
+
+
+def rule_c_path_stats(path_to_domains):
+    """Diagnostics on how many paths are shared by >=2 / >=3 domains, and
+    the size distribution of domain-groups for paths with >=2 domains.
+    """
+    ge2_paths = [p for p, doms in path_to_domains.items() if len(doms) >= 2]
+    ge3_paths = [p for p, doms in path_to_domains.items() if len(doms) >= 3]
+    size_dist = Counter(len(path_to_domains[p]) for p in ge2_paths)
+
+    max_entry = None
+    if path_to_domains:
+        max_path = max(
+            path_to_domains.items(),
+            key=lambda kv: (len(kv[1]), kv[0]),
+        )
+        max_entry = {
+            "path": max_path[0],
+            "domain_count": len(max_path[1]),
+            "domains": sorted(max_path[1]),
+        }
+
+    return {
+        "paths_with_any_domain": len(path_to_domains),
+        "paths_with_ge2_domains": len(ge2_paths),
+        "paths_with_ge3_domains": len(ge3_paths),
+        "domain_group_size_distribution_for_ge2_paths": dict(
+            sorted(size_dist.items())
+        ),
+        "path_with_most_domains": max_entry,
+    }
+
+
+def build_publisher_groups(recs, path_to_domains):
+    """Union-find domains that share at least one identical URL path
+    (transitively). Returns (domain_to_publisher_id, distinct_domains,
+    distinct_publishers, publisher_group_size_counts) where
+    publisher_group_size_counts maps group-size -> number of groups of
+    that size (includes singleton groups, size 1).
+    """
+    domains = sorted({r["domain"] for r in recs if r["domain"]})
+    domain_index = {d: i for i, d in enumerate(domains)}
+    dsu = DSU(len(domains))
+
+    for path, doms in path_to_domains.items():
+        if len(doms) < 2:
+            continue
+        doms_sorted = sorted(doms)
+        first_idx = domain_index[doms_sorted[0]]
+        for d in doms_sorted[1:]:
+            dsu.union(first_idx, domain_index[d])
+
+    # Assign compact, deterministic publisher ids in order of first
+    # appearance among sorted domain names.
+    root_to_id = {}
+    domain_to_publisher_id = {}
+    for d in domains:
+        root = dsu.find(domain_index[d])
+        if root not in root_to_id:
+            root_to_id[root] = len(root_to_id)
+        domain_to_publisher_id[d] = root_to_id[root]
+
+    group_sizes = Counter(domain_to_publisher_id.values())
+    publisher_group_size_counts = Counter(group_sizes.values())
+
+    return (
+        domain_to_publisher_id,
+        len(domains),
+        len(root_to_id),
+        dict(sorted(publisher_group_size_counts.items())),
+    )
+
+
+def rule_a_with_unit_map(recs, domain_to_unit):
+    """Recompute Rule A's echo index, but grouping domains into whatever
+    units domain_to_unit maps them to (e.g. publisher groups instead of
+    raw domains) before applying the >=3-distinct-unit bar. Structurally
+    identical to rule_a(), duplicated rather than parameterising rule_a()
+    itself so the original, method-sheet-literal Rule A implementation
+    stays untouched and independently auditable.
+    """
+    n = len(recs)
+    shingle_to_units = {}
+    per_title_shingles = []
+    for rec in recs:
+        sh = shingles(rec["tokens"])
+        per_title_shingles.append(sh)
+        unit = domain_to_unit.get(rec["domain"], rec["domain"])
+        for s in set(sh):
+            shingle_to_units.setdefault(s, set()).add(unit)
+
+    echo_shingles = {s for s, units in shingle_to_units.items()
+                      if len(units) >= MIN_ECHO_DOMAINS}
+
+    titles_in_echo = 0
+    for rec, sh in zip(recs, per_title_shingles):
+        if any(s in echo_shingles for s in sh):
+            titles_in_echo += 1
+
+    echo_index = (titles_in_echo / n) if n else 0.0
+
+    return {
+        "pool_size": n,
+        "titles_in_echo": titles_in_echo,
+        "echo_index": echo_index,
+        "distinct_echo_phrases": len(echo_shingles),
+    }
+
+
 def find_examples(recs, sims, t, a_covered_indices, n, max_examples=MAX_EXAMPLES):
     """Find up to max_examples directly-linked pairs (i, j) with sim >= t,
     different domains, where:
@@ -513,7 +693,8 @@ def main():
     for br in b_results:
         t = br["threshold"]
         gap_pp = (br["echo_index"] - a_result["echo_index"]) * 100.0
-        # count of titles caught by B's counting clusters but not by A's echo phrases
+        # count of titles caught by B's counting clusters but not by A's echo phrases,
+        # and the reverse direction (A catches, B's counting clusters do not)
         dsu = DSU(n)
         for (i, j), s in sims.items():
             if s >= t:
@@ -528,16 +709,49 @@ def main():
             if len(doms) >= MIN_ECHO_DOMAINS:
                 b_covered.update(members)
         caught_by_b_not_a = len(b_covered - a_covered)
+        caught_by_a_not_b = len(a_covered - b_covered)
+        caught_by_both = len(a_covered & b_covered)
         gap_table.append({
             "threshold": t,
             "echo_index_b": br["echo_index"],
             "gap_pp": gap_pp,
             "titles_caught_by_b_not_a": caught_by_b_not_a,
+            "titles_caught_by_a_not_b": caught_by_a_not_b,
+            "titles_caught_by_both": caught_by_both,
         })
 
     examples_by_threshold = {}
     for t in EXAMPLE_THRESHOLDS:
-        examples_by_threshold[str(t)] = find_examples(recs, sims, t, a_covered, n)
+        exs = find_examples(recs, sims, t, a_covered, n)
+        examples_by_threshold[str(t)] = {
+            "count": len(exs),
+            "examples": exs,
+        }
+
+    # --- Rule C: is 'distinct domain' a sound unit of independence? ---
+    path_to_domains = build_path_domain_groups(recs)
+    c_path_stats = rule_c_path_stats(path_to_domains)
+    (domain_to_publisher_id, distinct_domains_c, distinct_publishers_c,
+     publisher_group_size_counts) = build_publisher_groups(recs, path_to_domains)
+    a_collapsed = rule_a_with_unit_map(recs, domain_to_publisher_id)
+    collapsed_drop_pp = (a_result["echo_index"] - a_collapsed["echo_index"]) * 100.0
+    rule_c_result = {
+        "path_stats": c_path_stats,
+        "distinct_domains": distinct_domains_c,
+        "distinct_publisher_groups_after_collapse": distinct_publishers_c,
+        "publisher_group_size_counts": publisher_group_size_counts,
+        "echo_index_a_original_by_domain": a_result["echo_index"],
+        "echo_index_a_collapsed_by_publisher": a_collapsed["echo_index"],
+        "titles_in_echo_collapsed": a_collapsed["titles_in_echo"],
+        "distinct_echo_phrases_collapsed": a_collapsed["distinct_echo_phrases"],
+        "drop_pp_original_minus_collapsed": collapsed_drop_pp,
+        "limit_statement": (
+            "A shared URL path shows the same item was republished "
+            "through a shared publishing system across those domains. "
+            "It does not show, and this output does not claim, common "
+            "ownership of those domains."
+        ),
+    }
 
     generated_utc = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
@@ -546,6 +760,7 @@ def main():
         "rule_definitions": {
             "rule_a": RULE_A_TEXT,
             "rule_b": RULE_B_TEXT,
+            "rule_c": RULE_C_TEXT,
         },
         "parameters": {
             "shingle_n": SHINGLE_N,
@@ -561,7 +776,8 @@ def main():
         "rule_a_result": a_result,
         "rule_b_sweep": b_results,
         "rule_b_sweep_stopwords_removed_variant": b_results_nostop,
-        "gap_table_b_minus_a": gap_table,
+        "gap_table_a_vs_b": gap_table,
+        "rule_c_result": rule_c_result,
         "judgement_calls": JUDGEMENT_CALLS,
     }
 
@@ -580,7 +796,10 @@ def main():
             "so a reader can see which side of the pair (if either) Rule A "
             "already caught. Ordering is deterministic: similarity "
             "descending, then by the lexicographically smaller url in the "
-            "pair."
+            "pair. Each threshold entry carries an explicit 'count' field; "
+            "count 0 with an empty 'examples' list is a reported finding "
+            "(no qualifying pair existed at that threshold), not a gap in "
+            "the data."
         ),
         "examples_by_threshold": examples_by_threshold,
     }
@@ -629,17 +848,94 @@ def main():
 
     md_lines.append("## Rule B sweep (near-duplicate clustering)\n")
     md_lines.append("| t | echo index B | clusters | largest cluster size | "
-                     "largest cluster domains | gap vs A (pp) | "
-                     "caught by B not A |")
-    md_lines.append("|---|---|---|---|---|---|---|")
+                     "largest cluster domains | gap vs A (pp) |")
+    md_lines.append("|---|---|---|---|---|---|")
     for br, gt in zip(b_results, gap_table):
         md_lines.append(
             f"| {br['threshold']} | {br['echo_index']*100:.2f}% | "
             f"{br['num_clusters']} | {br['largest_cluster_size']} | "
             f"{br['largest_cluster_domain_count']} | "
-            f"{gt['gap_pp']:+.2f} | {gt['titles_caught_by_b_not_a']} |"
+            f"{gt['gap_pp']:+.2f} |"
         )
     md_lines.append("")
+
+    md_lines.append("## A and B are not nested\n")
+    md_lines.append(
+        "Rule A can flag a title on the strength of a single shared "
+        "6-token phrase even when the rest of the title differs; Rule B "
+        "requires the whole normalised title to be similar. These are "
+        "different conditions, so neither rule's catch is a subset of "
+        "the other's. Both directions, at every swept threshold:\n"
+    )
+    md_lines.append("| t | caught by A, not B | caught by B, not A | "
+                     "caught by both | echo index A | echo index B | "
+                     "which is larger |")
+    md_lines.append("|---|---|---|---|---|---|---|")
+    for gt in gap_table:
+        t = gt["threshold"]
+        if gt["gap_pp"] > 0:
+            larger = "B > A"
+        elif gt["gap_pp"] < 0:
+            larger = "A > B"
+        else:
+            larger = "A = B"
+        md_lines.append(
+            f"| {t} | {gt['titles_caught_by_a_not_b']} | "
+            f"{gt['titles_caught_by_b_not_a']} | "
+            f"{gt['titles_caught_by_both']} | "
+            f"{a_result['echo_index']*100:.2f}% | "
+            f"{gt['echo_index_b']*100:.2f}% | {larger} |"
+        )
+    md_lines.append("")
+    md_lines.append(
+        "No direction is softened here: where B(t) falls below A in this "
+        "table, that is reported as measured, not adjusted."
+    )
+    md_lines.append("")
+
+    md_lines.append("## Rule C: is 'distinct domain' a sound unit?\n")
+    cps = rule_c_result["path_stats"]
+    md_lines.append(
+        f"URL paths seen in the pool that are served by >=2 distinct "
+        f"domains: **{cps['paths_with_ge2_domains']}**  "
+    )
+    md_lines.append(
+        f"URL paths served by >=3 distinct domains: "
+        f"**{cps['paths_with_ge3_domains']}**  "
+    )
+    if cps["path_with_most_domains"]:
+        pm = cps["path_with_most_domains"]
+        md_lines.append(
+            f"Path served by the most distinct domains: `{pm['path']}` "
+            f"-- {pm['domain_count']} domains  "
+        )
+    md_lines.append(
+        f"Domain-group size distribution over paths with >=2 domains "
+        f"(size -> number of such paths): "
+        f"{cps['domain_group_size_distribution_for_ge2_paths']}\n"
+    )
+    md_lines.append(
+        f"Collapsing domains that share >=1 identical URL path "
+        f"(transitively) into publisher groups: "
+        f"**{rule_c_result['distinct_domains']} domains** collapse into "
+        f"**{rule_c_result['distinct_publisher_groups_after_collapse']} "
+        f"publisher groups**.  "
+    )
+    md_lines.append(
+        f"Publisher-group size counts (group size -> number of groups): "
+        f"{rule_c_result['publisher_group_size_counts']}\n"
+    )
+    md_lines.append(
+        f"Echo index A recomputed with '>=3 distinct domains' replaced by "
+        f"'>=3 distinct publisher groups': "
+        f"**{rule_c_result['echo_index_a_collapsed_by_publisher']*100:.2f}%** "
+        f"(original domain-based Echo index A: "
+        f"{rule_c_result['echo_index_a_original_by_domain']*100:.2f}%, "
+        f"drop of **{rule_c_result['drop_pp_original_minus_collapsed']:.2f} "
+        f"percentage points**).\n"
+    )
+    md_lines.append(f"*{rule_c_result['limit_statement']}*\n")
+
     md_lines.append("## Judgement calls\n")
     for jc in JUDGEMENT_CALLS:
         md_lines.append(f"- {jc}")
@@ -663,14 +959,29 @@ def main():
     if a_result["headline"]:
         print(f"headline_phrase: \"{a_result['headline']['shingle']}\" "
               f"domains={a_result['headline']['domain_count']}")
-    print("rule_B_sweep:")
+    print("rule_B_sweep (A and B are NOT nested -- both directions shown):")
     for br, gt in zip(b_results, gap_table):
         print(f"  t={br['threshold']}: echo_index_B={br['echo_index']*100:.2f}%  "
               f"gap={gt['gap_pp']:+.2f}pp  "
               f"caught_by_B_not_A={gt['titles_caught_by_b_not_a']}  "
+              f"caught_by_A_not_B={gt['titles_caught_by_a_not_b']}  "
+              f"caught_by_both={gt['titles_caught_by_both']}  "
               f"clusters={br['num_clusters']}  "
               f"largest_cluster={br['largest_cluster_size']} "
               f"(domains={br['largest_cluster_domain_count']})")
+    print("examples_by_threshold (>=3-domain-counting-cluster pairs only):")
+    for t in EXAMPLE_THRESHOLDS:
+        print(f"  t={t}: count={examples_by_threshold[str(t)]['count']}")
+    print("rule_C (domain vs publisher-group as unit of independence):")
+    print(f"  paths_with_ge2_domains={cps['paths_with_ge2_domains']}  "
+          f"paths_with_ge3_domains={cps['paths_with_ge3_domains']}")
+    print(f"  distinct_domains={rule_c_result['distinct_domains']}  "
+          f"distinct_publisher_groups="
+          f"{rule_c_result['distinct_publisher_groups_after_collapse']}")
+    print(f"  echo_index_A_original={rule_c_result['echo_index_a_original_by_domain']*100:.2f}%  "
+          f"echo_index_A_collapsed="
+          f"{rule_c_result['echo_index_a_collapsed_by_publisher']*100:.2f}%  "
+          f"drop_pp={rule_c_result['drop_pp_original_minus_collapsed']:.2f}")
     print(f"wrote: {summary_path}")
     print(f"wrote: {examples_path}")
     print(f"wrote: {md_path}")
