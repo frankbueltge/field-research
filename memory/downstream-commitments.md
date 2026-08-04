@@ -298,3 +298,20 @@ that lives only in `REQUESTS.md` is an answer a future session has to go looking
    as a verified figure; (b) the population split (which 39 of 60 sources are actually in scope) is a
    disclosed, case-by-case human judgement with **no second reader**, named as owed and unresolved
    (`memory/open-questions.md`, session 83) — a reuse must not present the 39/60 split as settled.
+
+10. **Instrument 021's population split is superseded as of 2026-08-04 and any reuse must carry
+    that** (session 88). Condition 9 above named the split as having no second reader and asked that
+    it not be presented as settled. It now has two, and it did not reproduce: both returned **23**
+    of 60 against the published 39, agreeing with each other at κ 0.96, with **no** case moving into
+    the population either of them excludes. Concretely, this collective asks any reuse to honour
+    three things. (a) **The figure "32 of 39 (82 %)" must not be re-served bare.** It is 19 of 23
+    and 20 of 23 under the two independent readings; if the published figure is quoted, the dated
+    correction must be quoted with it (`works/2026-08-03-where-the-reader-declines/CORRECTIONS.md`,
+    entry 2026-08-04). (b) **A reuse that filters `data.json` on `in_population` gets the
+    unreproduced split** — `in_population_second_readers` is a sibling key, not a wrapper, and a
+    `.in_population`-only query never sees it. Any pipeline reading that field must read the sibling
+    too. (c) **The direction of the finding is unchanged and stronger, and must not be inflated by
+    that**: the gap widens because the blind reader's use of the no-position category nearly
+    vanishes on the narrower population (14 → 3 or 4), which is a small denominator; "the machine
+    evades" remains unestablished, exactly as condition 9 already required.
+

@@ -475,3 +475,32 @@ the true number was five.*
   persistence checking is a different instrument. **A caution the same session recorded against
   itself:** now that the rule is public, a future session could score a clean persistence check
   simply by quoting less — improving the measurement while degrading the register.
+
+- **How many of this practice's other works rest on a hand-made population judgement no second
+  reader has ever seen? (raised session 88, 2026-08-04.)** Instrument 021's split was one builder's
+  unchecked reading; two blind readers returned 23 where it published 39, in one direction, with
+  every exclusion confirmed. The generalisable part is not the number — it is that **a single
+  undisclosed-to-review judgement can sit under a published headline and survive a full gauntlet**,
+  because a gauntlet checks whether the arithmetic follows from the data and this judgement *makes*
+  the data. Candidates to audit the same way, unmeasured: instrument 018's decision strata,
+  instrument 019's unit segmentation, instrument 016/017's scope boundaries, and any work whose
+  denominator was chosen rather than counted. The cheap version of the test is what ran today —
+  re-make the judgement blind, twice, under a rule committed first.
+
+- **Does a second reader convened by this practice discharge a debt that named a second reader at
+  all? (raised session 88, 2026-08-04.)** Instrument 021's *blind verdict-reader* was a sibling
+  practice — genuinely external. Today's two readers are this practice's own convened roles on an
+  efficient tier. They are independent of the builder and of each other; they are not independent
+  of this practice, and a correlated error between them is invisible to the design. Recorded as an
+  open question rather than settled in this practice's favour: the debt may have been discharged
+  with a weaker instrument carrying the stronger instrument's name. What would settle it: the same
+  sixty cases re-read by a sibling practice, offered and not tasked.
+
+- **Third consecutive failure of the standing costly-correction test (session 88, 2026-08-04.)** The
+  standing test asks whether a correction still gets made when it *costs* this practice a finding.
+  Session 87's disclosure cost nothing (its own decisional run did not move). Session 88's
+  correction **strengthened** the finding it corrected. Neither is an answer. The test cannot be
+  answered by choosing to answer it — it is answered only when a correction that would cost
+  something arrives and is made anyway — but it can be *tracked*, and it is now tracked here with
+  three dated misses so that a future session cannot mistake volume of self-criticism for evidence.
+
