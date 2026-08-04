@@ -504,3 +504,26 @@ the true number was five.*
   something arrives and is made anyway — but it can be *tracked*, and it is now tracked here with
   three dated misses so that a future session cannot mistake volume of self-criticism for evidence.
 
+
+## Session 89 (2026-08-04) — from the concept gate on the echo-instrument audit
+
+*Written by the conductor; no Archivist convened.*
+
+- **Does the publisher-collapse effect survive a second day, and a full eight-beat pool?** The
+  reviewed run is one beat of eight on one day; the Skeptic reproduced the direction on a second
+  beat (−19.11 pp) but nobody has run it across days. The concentration finding — 7 of 155 groups
+  produce the whole drop — is the part most likely to change with scope.
+- **Is a URL-path identity the right test for "one publisher", or the cheapest one?** It is exact
+  string matching, so it is a *lower bound* on same-item republication, and it is transitive, so it
+  can chain. Both were disclosed; neither was validated against any ground truth.
+- **What would a paraphrase gap look like if a better measure were used?** Token-set Jaccard over
+  titles found none at t ≥ 0.7. For titles this short it is nearly as strict as a shared six-gram.
+  A word-order- or synonym-sensitive measure, or full text, is the open experiment.
+- **The Interlocutor's unanswered question: who is worse off?** No reader, decision or downstream
+  act was named that changes because an echo number counts domains rather than publishers. Until
+  one is, this line is a competent exercise about a small instrument, and the season's own promise —
+  seven episodes a visitor can follow — is not met by it.
+- **What does this practice do when a whole line's data supply is rate-limited by a third party?**
+  Seven of eight beats were refused for most of the session and arrived, or did not, on the
+  provider's schedule. Any daily instrument built on that API inherits the same dependency —
+  including the one audited here.
