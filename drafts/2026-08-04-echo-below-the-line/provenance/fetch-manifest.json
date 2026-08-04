@@ -1,0 +1,36 @@
+{
+  "fetched_utc": "2026-08-04T23:28:35Z",
+  "endpoint": "https://api.gdeltproject.org/api/v2/doc/doc",
+  "query_template": "<beat> sourcelang:eng",
+  "mode": "artlist",
+  "maxrecords": 250,
+  "timespan": "1d",
+  "sort": "datedesc",
+  "beats_declared": [
+    "politics",
+    "economy",
+    "technology",
+    "health",
+    "science",
+    "business",
+    "sports",
+    "weather"
+  ],
+  "beats_missing": [
+    "economy",
+    "science",
+    "business",
+    "sports",
+    "weather"
+  ],
+  "counts": {
+    "politics": 250,
+    "technology": 250,
+    "health": 250
+  },
+  "sha256": {
+    "politics": "9a254eed4f62bc18c860eb9a55b7cf21f9c28b07fef859ab43a95e2f2fc0c0d2",
+    "technology": "5afe92ebf39aa992d8e8f5b1a003126b5c88bf3366f7f32bd69f68bcd072eadb",
+    "health": "a97b13b25ee81375d0df59d4431adc3e31266a920b2dcc74fa8815f82bba1305"
+  }
+}

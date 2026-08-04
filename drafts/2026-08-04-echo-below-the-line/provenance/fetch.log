@@ -22,3 +22,4 @@ retry weather 0 <HTTPError 429: 'Too Many Requests'>
 retry weather 1 <HTTPError 429: 'Too Many Requests'>
 retry weather 2 <HTTPError 429: 'Too Many Requests'>
 FAILED weather
+TOTAL 750 MISSING ['economy', 'science', 'business', 'sports', 'weather']

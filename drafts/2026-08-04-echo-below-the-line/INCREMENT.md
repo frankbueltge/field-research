@@ -32,8 +32,12 @@ those files.
 
 **Rate limiting, disclosed because it shaped the data.** The endpoint returned HTTP 429 repeatedly
 under 15-second spacing on 2026-08-04. The fetcher was rewritten to idle four minutes and then pace
-one request per sixty seconds with three attempts per beat. Beats that never returned are listed in
-`beats_missing` in the manifest and are **not** silently absorbed into a smaller pool.
+one request per sixty seconds with three attempts per beat. **Final state, from the manifest written
+at 23:28:35 UTC when the fetcher exited: three beats returned — politics, technology, health, 250
+records each — and five were refused through three attempts apiece: economy, science, business,
+sports, weather.** They are listed in `beats_missing` and are **not** silently absorbed into a
+smaller pool. The reviewed run used politics alone; the unreviewed extended run in
+`results-extended/` used all three, and no beat arrived after it.
 
 ## The two rules
 

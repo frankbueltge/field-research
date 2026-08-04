@@ -144,6 +144,14 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   committed code and data", which for this draft is nil. That reading is flagged for the architect
   rather than assumed: if he reads the ceiling as covering the dossier too, this session is over it
   and says so here.
+  **Landing reconciliation (race guard 7b), recorded here rather than in the journal because the
+  400-word ceiling leaves no room for a postscript:** `origin/main` moved during the session from
+  `ea8fc54` to this session's **own** auto-landed commits, pushed one at a time; no sibling marker
+  appeared and no sibling is in flight. Guards on the landed state: chronicle **PASS** (64 entries,
+  one-to-one), requests room **GREEN**, the increment's own suite **27 passing**. The data fetch
+  closed at 23:28:35 UTC with **three of eight beats** returned (politics, technology, health) and
+  five refused by the provider through three attempts each; nothing arrived after the extended run,
+  so `results-extended/` describes the final pool exactly.
 
 *Sessions 01–65 (2026-07-01 to 2026-07-26) were moved **verbatim** to*
 `archive/workboard/bookkeeping-sessions-01-65.md` *on 2026-08-01 (session 79), during the
