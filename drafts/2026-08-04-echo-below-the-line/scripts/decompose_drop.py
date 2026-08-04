@@ -12,14 +12,26 @@ deterministic, no network.
 import json, re, collections, hashlib
 from urllib.parse import urlsplit
 
-RAW = 'provenance/gdelt-politics.json'
-arts = json.load(open(RAW))['articles']
+import glob, os, sys
+# Default: the exact file the session's three reviewers reviewed. Pass --all to decompose the
+# larger, unreviewed pool of every beat file present.
+if '--all' in sys.argv:
+    RAW = sorted(glob.glob('provenance/gdelt-*.json'))
+else:
+    RAW = ['provenance/gdelt-politics.json']
+arts = []
+for f in RAW:
+    arts.extend(json.load(open(f))['articles'])
 seen, pool = set(), []
 for a in arts:
     if a['url'] in seen: continue
     seen.add(a['url']); pool.append(a)
 
-def norm(t): return re.sub(r'[^a-z0-9]+', ' ', t.lower()).strip()
+# Unicode-aware by default, matching the fixed normalisation in measure_echo.py; the reviewed
+# state used the ASCII-only pattern, reproducible with ECHO_ASCII_ONLY=1.
+import os as _os
+_PAT = re.compile(r'[^a-z0-9]+') if _os.environ.get('ECHO_ASCII_ONLY') == '1' else re.compile(r'[\W_]+', re.UNICODE)
+def norm(t): return _PAT.sub(' ', t.lower()).strip()
 def toks(t): return norm(t).split()
 
 # publisher groups: domains transitively linked by an identical URL path
@@ -71,8 +83,9 @@ for g, n in attrib.most_common():
                  "percentage_points_of_the_drop": round(100.0 * n / len(pool), 2)})
 
 out = {
-    "source_file": RAW,
-    "source_sha256": hashlib.sha256(open(RAW,'rb').read()).hexdigest(),
+    "source_files": RAW,
+    "source_sha256": {f: hashlib.sha256(open(f,'rb').read()).hexdigest() for f in RAW},
+    "normalisation": "ascii-only" if _os.environ.get('ECHO_ASCII_ONLY') == '1' else "unicode-aware",
     "pool_size": len(pool),
     "echo_titles_domain_unit": len(A),
     "echo_titles_publisher_unit": len(C),
@@ -84,7 +97,9 @@ out = {
     "number_of_publisher_groups_causing_any_loss": len(rows),
     "note": "A title 'loses echo status' when every 6-token phrase that put it in a >=3-domain echo is no longer carried by >=3 distinct publisher units. Attribution is to the publisher group of the title's own domain. A shared URL path shows same-item republication through common publishing infrastructure; it is not evidence of common ownership and no ownership claim is made."
 }
-json.dump(out, open('results/drop_decomposition.json','w'), indent=2)
+outdir = os.environ.get('ECHO_RESULTS_DIR', 'results')
+os.makedirs(outdir, exist_ok=True)
+json.dump(out, open(os.path.join(outdir, 'drop_decomposition.json'), 'w'), indent=2)
 print(json.dumps({k: v for k, v in out.items() if k != 'attribution_by_publisher_group'}, indent=2))
 print("\nattribution (group size -> titles lost):")
 for r in rows: print(f"  {r['domains_in_group']:>3} domains  {r['titles_that_lost_echo_status']:>3} titles  {r['percentage_points_of_the_drop']:>6} pp   {r['publisher_group_representative_domain']}")

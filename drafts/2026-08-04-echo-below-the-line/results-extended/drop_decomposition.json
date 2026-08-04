@@ -1,0 +1,138 @@
+{
+  "source_files": [
+    "provenance/gdelt-health.json",
+    "provenance/gdelt-politics.json",
+    "provenance/gdelt-technology.json"
+  ],
+  "source_sha256": {
+    "provenance/gdelt-health.json": "a97b13b25ee81375d0df59d4431adc3e31266a920b2dcc74fa8815f82bba1305",
+    "provenance/gdelt-politics.json": "9a254eed4f62bc18c860eb9a55b7cf21f9c28b07fef859ab43a95e2f2fc0c0d2",
+    "provenance/gdelt-technology.json": "5afe92ebf39aa992d8e8f5b1a003126b5c88bf3366f7f32bd69f68bcd072eadb"
+  },
+  "normalisation": "unicode-aware",
+  "pool_size": 712,
+  "echo_titles_domain_unit": 159,
+  "echo_titles_publisher_unit": 36,
+  "titles_that_lost_echo_status": 123,
+  "total_drop_pp": 17.28,
+  "attribution_by_publisher_group": [
+    {
+      "publisher_group_representative_domain": "asiabulletin.com",
+      "domains_in_group": 20,
+      "titles_that_lost_echo_status": 24,
+      "percentage_points_of_the_drop": 3.37
+    },
+    {
+      "publisher_group_representative_domain": "asianimage.co.uk",
+      "domains_in_group": 14,
+      "titles_that_lost_echo_status": 18,
+      "percentage_points_of_the_drop": 2.53
+    },
+    {
+      "publisher_group_representative_domain": "4029tv.com",
+      "domains_in_group": 12,
+      "titles_that_lost_echo_status": 18,
+      "percentage_points_of_the_drop": 2.53
+    },
+    {
+      "publisher_group_representative_domain": "abc7amarillo.com",
+      "domains_in_group": 13,
+      "titles_that_lost_echo_status": 13,
+      "percentage_points_of_the_drop": 1.83
+    },
+    {
+      "publisher_group_representative_domain": "argentinastar.com",
+      "domains_in_group": 11,
+      "titles_that_lost_echo_status": 10,
+      "percentage_points_of_the_drop": 1.4
+    },
+    {
+      "publisher_group_representative_domain": "1055thedove.com",
+      "domains_in_group": 6,
+      "titles_that_lost_echo_status": 6,
+      "percentage_points_of_the_drop": 0.84
+    },
+    {
+      "publisher_group_representative_domain": "coldlakesun.com",
+      "domains_in_group": 4,
+      "titles_that_lost_echo_status": 4,
+      "percentage_points_of_the_drop": 0.56
+    },
+    {
+      "publisher_group_representative_domain": "cessnockadvertiser.com.au",
+      "domains_in_group": 4,
+      "titles_that_lost_echo_status": 4,
+      "percentage_points_of_the_drop": 0.56
+    },
+    {
+      "publisher_group_representative_domain": "hepburnadvocate.com.au",
+      "domains_in_group": 3,
+      "titles_that_lost_echo_status": 3,
+      "percentage_points_of_the_drop": 0.42
+    },
+    {
+      "publisher_group_representative_domain": "greatbendpost.com",
+      "domains_in_group": 3,
+      "titles_that_lost_echo_status": 3,
+      "percentage_points_of_the_drop": 0.42
+    },
+    {
+      "publisher_group_representative_domain": "fox23maine.com",
+      "domains_in_group": 4,
+      "titles_that_lost_echo_status": 3,
+      "percentage_points_of_the_drop": 0.42
+    },
+    {
+      "publisher_group_representative_domain": "citizensvoice.com",
+      "domains_in_group": 6,
+      "titles_that_lost_echo_status": 3,
+      "percentage_points_of_the_drop": 0.42
+    },
+    {
+      "publisher_group_representative_domain": "simcoereformer.ca",
+      "domains_in_group": 4,
+      "titles_that_lost_echo_status": 3,
+      "percentage_points_of_the_drop": 0.42
+    },
+    {
+      "publisher_group_representative_domain": "dddnews.com",
+      "domains_in_group": 3,
+      "titles_that_lost_echo_status": 3,
+      "percentage_points_of_the_drop": 0.42
+    },
+    {
+      "publisher_group_representative_domain": "975kgkl.com",
+      "domains_in_group": 4,
+      "titles_that_lost_echo_status": 3,
+      "percentage_points_of_the_drop": 0.42
+    },
+    {
+      "publisher_group_representative_domain": "aspenpublicradio.org",
+      "domains_in_group": 8,
+      "titles_that_lost_echo_status": 2,
+      "percentage_points_of_the_drop": 0.28
+    },
+    {
+      "publisher_group_representative_domain": "krmg.com",
+      "domains_in_group": 1,
+      "titles_that_lost_echo_status": 1,
+      "percentage_points_of_the_drop": 0.14
+    },
+    {
+      "publisher_group_representative_domain": "panow.com",
+      "domains_in_group": 1,
+      "titles_that_lost_echo_status": 1,
+      "percentage_points_of_the_drop": 0.14
+    },
+    {
+      "publisher_group_representative_domain": "kuow.org",
+      "domains_in_group": 3,
+      "titles_that_lost_echo_status": 1,
+      "percentage_points_of_the_drop": 0.14
+    }
+  ],
+  "share_of_drop_from_largest_group_pp": 3.37,
+  "share_of_drop_from_top_four_groups_pp": 10.26,
+  "number_of_publisher_groups_causing_any_loss": 19,
+  "note": "A title 'loses echo status' when every 6-token phrase that put it in a >=3-domain echo is no longer carried by >=3 distinct publisher units. Attribution is to the publisher group of the title's own domain. A shared URL path shows same-item republication through common publishing infrastructure; it is not evidence of common ownership and no ownership claim is made."
+}

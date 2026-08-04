@@ -1,6 +1,11 @@
 {
-  "source_file": "provenance/gdelt-politics.json",
-  "source_sha256": "9a254eed4f62bc18c860eb9a55b7cf21f9c28b07fef859ab43a95e2f2fc0c0d2",
+  "source_files": [
+    "provenance/gdelt-politics.json"
+  ],
+  "source_sha256": {
+    "provenance/gdelt-politics.json": "9a254eed4f62bc18c860eb9a55b7cf21f9c28b07fef859ab43a95e2f2fc0c0d2"
+  },
+  "normalisation": "ascii-only",
   "pool_size": 250,
   "echo_titles_domain_unit": 59,
   "echo_titles_publisher_unit": 8,
