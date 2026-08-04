@@ -1,0 +1,2 @@
+cached politics 250
+retry economy 0 <HTTPError 429: 'Too Many Requests'>
