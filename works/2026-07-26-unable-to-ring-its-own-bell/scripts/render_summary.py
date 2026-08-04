@@ -61,6 +61,12 @@ def render_verdict(lines, verdict):
     lines.append("")
     lines.append(f"verdict text: {verdict['verdict']}")
     lines.append("")
+    # Dated correction, 2026-08-04 (session 87): where a verdict carries the notice,
+    # the notice is printed immediately beneath it, not once at the top of the file.
+    # A reader who lands on line 1780 of this dump must meet it there.
+    if verdict.get("verdict_status"):
+        lines.append(f"> **{verdict['verdict_status']}**")
+        lines.append("")
     lines.append(f"denominator={verdict.get('denominator')}  single_channel={verdict.get('single_channel')}")
     lines.append(f"headline_bucket_counts={verdict.get('headline_bucket_counts')}")
     lines.append(f"headline_label_counts={verdict.get('headline_label_counts')}")
@@ -233,6 +239,10 @@ def main():
         "here is traceable to those two JSON files (full, unrounded precision there; values "
         "below are rounded for readability only)."
     )
+    lines.append("")
+    # Dated correction, 2026-08-04 (session 87). Read from envelope.json, not
+    # written here: the notice is defined once, in scripts/envelope_units.py.
+    lines.append(f"> **{env['_void_notice']}**")
     lines.append("")
     render_envelope(lines, env)
     render_sensitivity(lines, sens)

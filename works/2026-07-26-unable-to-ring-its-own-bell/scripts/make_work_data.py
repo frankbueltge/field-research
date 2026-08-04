@@ -114,6 +114,9 @@ def build():
     dv = decisional["verdict"]
     real_run = {
         "verdict": dv["verdict"],
+        # Dated correction, 2026-08-04 (session 87): the notice travels with the
+        # verdict into the file the page and any reuser actually parse.
+        "verdict_status": dv["verdict_status"],
         "headline_state": dv["headline_state"],
         "kill_condition_met": bool(dv["kill_condition_met"]),
         "denominator": dv["denominator"],
@@ -152,6 +155,7 @@ def build():
             v = cell["verdict"]
             runs[recipe][key] = {
                 "verdict": v["verdict"],
+                "verdict_status": v["verdict_status"],
                 "headline_state": v["headline_state"],
                 "kill_condition_met": bool(v["kill_condition_met"]),
                 "denominator": v["denominator"],
@@ -189,6 +193,9 @@ def build():
     }
 
     data = {
+        # Dated correction, 2026-08-04 (session 87). Read from results/envelope.json,
+        # not written here: the notice is defined once, in scripts/envelope_units.py.
+        "_void_notice": envelope["_void_notice"],
         "corpus": {
             "units": metrics["n_units"],
             "tokens": sum(u["n_tokens"] for u in metrics["units"]),

@@ -130,6 +130,12 @@ class TestSingleChannelDowngrade(unittest.TestCase):
         self.assertEqual(result["step"], 2)
         self.assertEqual(result["headline_state"], "NO SIGNAL")
         self.assertEqual(result["verdict"], "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT")
+        # Dated correction, 2026-08-04 (session 87). This verdict is void as
+        # evidence and may never be produced without the notice beside it. If a
+        # later edit drops the marking at the source, this assertion fails here,
+        # in the module that produces the string. See ../CORRECTIONS.md.
+        self.assertEqual(result["verdict_status"], eu.VERDICT_VOID_NOTICE)
+        self.assertIn("VOID AS EVIDENCE", result["verdict_status"])
 
 
 if __name__ == "__main__":

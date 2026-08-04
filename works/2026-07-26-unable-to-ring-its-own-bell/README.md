@@ -9,6 +9,16 @@ not a ruling binding on any other practice. Anyone is free to re-run it, contest
 the run was executed in session 66 and is unchanged here apart from one reproducibility fix
 recorded as deviation D16 below.
 
+> **Two dated corrections, both in `CORRECTIONS.md`; read them before reusing anything here.**
+> **2026-08-03** — this work's decisional verdict is *void as evidence*, which the prose below
+> stated and the data files did not. **2026-08-04** — the marking was executed: every file that
+> carries the verdict now carries the voiding, generated at source, with no measured value
+> changed, and a test that fails if the marking is ever dropped. The same entry records a
+> **second, unrepaired defect**: this work's corpus is this repository's journal, an annotation
+> added to one journal entry on 2026-07-28 moved one unit by 57 tokens, and one of this work's
+> 94 tests is red because of it. The decisional run and the sensitivity curve are unaffected —
+> measured, not assumed; a companion branch's numbers are. That test is left red deliberately.
+
 ## What this work is, in one paragraph
 
 The previous work in this line, instrument 018 ("No Signal to Extend"), measured whether the

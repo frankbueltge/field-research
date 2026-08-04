@@ -55,6 +55,29 @@ SIM_BLOCK_SIZE = 5
 DELTA_THRESHOLD = 0.5
 MIN_COMPUTABLE_FOR_DECIDABLE = 2
 
+# ---------------------------------------------------------------------------
+# The step-2 verdict, and the notice that must travel with it (added 2026-08-04,
+# session 87, as a dated correction -- see ../CORRECTIONS.md).
+#
+# This work's decisional verdict was voided at publication by this work's own
+# pre-registered power check. The prose said so; the data files did not, and the
+# data is the form in which the claim reaches anyone who reuses the work. So the
+# marking is emitted here, at the one place the verdict string is produced, and
+# every file downstream of this script inherits it. Never write the verdict
+# string without VERDICT_VOID_NOTICE beside it; tests/test_void_marking.py fails
+# if any published file carries one without the other.
+# ---------------------------------------------------------------------------
+VERDICT_NO_SIGNAL = "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+VERDICT_VOID_NOTICE = (
+    "VOID AS EVIDENCE. The verdict recorded in this file is recorded in full and is void as "
+    "evidence. It was voided at publication by this work's own pre-registered power check "
+    "(PREREGISTRATION.md §9.4): the battery fires at no injection level under either donor "
+    "recipe, so the locked informativeness label is UNABLE-TO-RING-ITS-OWN-BELL and no null "
+    "from this instrument may be reported as informative. Registered in memory/discarded.md at "
+    "the repository root. This marking was added on 2026-08-04 as a dated correction and "
+    "changes no measured value in this file; see CORRECTIONS.md in this work's directory."
+)
+
 MARGIN_METRIC_DIRECTIONS = {
     "mtld": "low",
     "hapax_share": "low",
@@ -374,7 +397,8 @@ def evaluate_verdict(metrics_dict, metric_names):
             "any_anomaly_decidable_metrics": any_decidable, "any_anomaly_metrics": any_anomalous,
             "denominator": len(any_decidable), "headline_state": "NO SIGNAL",
             "headline_bucket_counts": {}, "headline_label_counts": {}, "kill_condition_met": True,
-            "verdict": "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT",
+            "verdict": VERDICT_NO_SIGNAL,
+            "verdict_status": VERDICT_VOID_NOTICE,
         }
 
     # Step 3: plurality over all of this branch's metrics' labels.
@@ -563,6 +587,7 @@ def build_results(units):
         return dec_verdict["headline_state"] != v["headline_state"]
 
     out = {
+        "_void_notice": VERDICT_VOID_NOTICE,
         "generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "windows": {
             "envelope": list(ENVELOPE_RANGE), "reference": list(REFERENCE_RANGE),

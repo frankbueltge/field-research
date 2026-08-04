@@ -347,6 +347,10 @@ def main():
     label = informativeness_label(firing_summary)
 
     out = {
+        # Dated correction, 2026-08-04 (session 87). The step-2 verdict this file
+        # carries sixteen times was voided at publication; the notice is defined
+        # once, in envelope_units.py, and travels with it. See ../CORRECTIONS.md.
+        "_void_notice": eu.VERDICT_VOID_NOTICE,
         "generated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "p_grid": P_GRID,
         "recipes": {
