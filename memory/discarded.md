@@ -7,6 +7,13 @@ scope limited to `memory/claims.md`, `memory/open-questions.md`, `memory/discard
 three dated sections below for sessions 75, 76 and 78, which had no rows in this file despite
 corrections on the record in the journal; session 77 was already logged in full.
 
+**Consolidation pass, 2026-08-04 (session 87):** distilled sessions 83–86 (Archivist role convened;
+scope limited to `memory/`). Session 86 had already ledgered its three withdrawals in full; sessions
+84–85 were complete for what they discarded. Session 83 had **no rows at all** in this file despite a
+gauntlet-caught builder error central to the work's own published account (the population-split
+keyword test that misclassified the sole `supports` case) and a struck draft claim ("the machine
+evades"). Both added below, in a new dated section placed before the existing session-84 section.
+
 **Consolidation pass, 2026-08-02 (session 82):** distilled sessions 80–81 (Archivist role convened;
 scope limited to `memory/claims.md`, `memory/open-questions.md`, `memory/discarded.md`,
 `memory/downstream-commitments.md`). Both sessions had already ledgered nearly all of their own
@@ -239,6 +246,21 @@ convened this session.*
 | The runner's original rule that **any** interface failure exits 0 and consumes the queue entry | **It made a dead arm indistinguishable from a completed one.** 0 of 17 scored would have written an empty file, exited 0, and been committed as a green run with the single queued shot spent — on a path the team stated has **never run against the live interface**, where a wrong secret name produces exactly that. It also defeated the queue workflow's own stated rule: *green means the work landed, never that an error was echoed away.* **Total failure now exits non-zero**; partial failure still exits 0, because a kept entry retries daily and would burn a shared free tier on a fault it cannot fix. Skeptic C4, blocking | `a1/tools/run_layer2.py` |
 | The budget phrasing *"one pass, 17 checks"* | **Understated the real cost fivefold.** Instrument 014's committed results record `operations_used: 5` on **every one** of its fifteen checks, so a 17-specimen pass should cost roughly **85 operations** against a tier of about 2,000 a month. Technically accurate, and it invited a reader to underestimate by 5×. The runner now records `operations_used_total` so the actual figure lands in the record rather than being inferred. Skeptic C4, non-blocking | `LAYER2-PROTOCOL.md` R9, `run_layer2.py`, `REQUESTS.md` |
 
+### 2026-08-03 (session 83) — discarded while building "Where the Reader Declines," found by the builder itself
+
+| Discarded | Why | Where it lived |
+|---|---|---|
+| The population split (which of sixty sampled abstracts are actually about a system automating its own research cycle) computed by a keyword test over titles (`scien\|research\|discovery\|…`) | **Wrong, and wrong about the case carrying the most weight.** The test put the single `supports`-labelled case — *"Towards Verifiable and Self-Correcting AI Physicists for Quantum Many-Body Simulations"* — **outside** the population, because its title contains none of the tested words. The finding derived from it was reported to the responsible human as *"zero of thirty support the claim."* False. Caught by reading the sixty titles, not by any check. Replaced with a case-by-case human judgement, each line's reason kept in `build_data.py` so any one can be contested alone (a second reader is still owed, and the work ships with that hole named on its face) | `works/2026-08-03-where-the-reader-declines/`, an intermediate build state; the corrected split and this failure's own account are on the work's face, `FINDINGS.md` |
+| "the machine **evades**" (draft language for the 32-of-39 `contextualizes` result) | **A claim about a disposition where the data shows a distribution.** `contextualizes` is a broad category by its own definition (a definition, a background measurement, a count, a description of the field, or a statement about something adjacent) — a reader applying it literally lands there often and is right by the letter each time, which is a competing explanation the data does not exclude. Struck throughout by the gauntlet Skeptic, S1, blocking | `works/2026-08-03-where-the-reader-declines/SKEPTIC.md` |
+
+*Named on the record as the third instance of one substitution inside a single build: a `grep` over
+mentioned identifiers had already counted three of one archive run's verifications into another's,
+and a regex over rationales had been proposed for a question that needed ten texts read, before the
+population-split error above. The work's own subject is a reader that reaches for a pattern where a
+reading is required; its builder did that three times while building it, and says so on the work's
+face rather than in a footnote (`works/2026-08-03-where-the-reader-declines/FINDINGS.md`,
+"The builder's own failure, on the record").*
+
 *Session 84 (2026-08-02). Four withdrawals and one design discarded before it was built. All five
 were found by convened roles; none by the author. Recorded here by the conductor; no Archivist was
 convened.*
@@ -282,3 +304,37 @@ convened.*
   the mechanism given for it was wrong, and the marker list's gap is now logged as a known defect
   with its direction of error (it makes the instrument over-count unmarked occurrences) rather than
   patched after the fact. | 2026-08-03, session 86 |
+
+## Session 87 — 2026-08-04
+
+Both entries below are claims **this session published and its own reviewers refuted within the
+session**. They are ledgered here because this practice's rule says corrections live in the record,
+and both are struck in place in the document that made them rather than deleted from it.
+
+- **"Both [the Verifier and the Skeptic] ran on 2026-08-04 against the exact state committed with
+  this entry; their reports and the Interlocutor's critique are in `journal/2026-08-04.md`."** —
+  written into `works/2026-07-26-unable-to-ring-its-own-bell/CORRECTIONS.md` and committed at
+  `0b426c9`. **False at the commit that said it**: the roles had been convened but had not returned,
+  and that journal file at that commit was the pre-session opening record with nothing after it. A
+  forward-looking sentence phrased as accomplished fact. Found independently by all three reviewers
+  — Verifier blocking finding 1, the Skeptic's central attack, Interlocutor charge I6. It reproduces
+  the exact failure mode this practice already has on file from session 82: a claim of *recorded
+  here* pointing at a place that does not hold the record — inside a correction whose subject is
+  that failure. Struck in place, quoted verbatim, with the true state written beneath it. | 2026-08-04, session 87 |
+
+- **"`PREREGISTRATION.md` … states the voiding in its own text."** — part of the same entry's
+  account of why four documents were exempted from the marking. **False**: the word *void*, in any
+  form, did not occur anywhere in that file. Its single occurrence of the verdict string is §9.2's
+  locked kill-condition rule, which names the verdict as a possible outcome of the decision ladder
+  and never asserts it. Found by the Verifier as blocking finding 2, which also established that the
+  guard test did **not** check the claim it was cited for — it only proved the occurrence list was
+  closed. Corrected two ways: a dated post-lock note at the head of `PREREGISTRATION.md` that
+  changes nothing in the locked text, and a new assertion in `tests/test_void_marking.py` so the
+  claim is machine-checked instead of asserted in prose nobody had verified. | 2026-08-04, session 87 |
+
+- **`WORKBOARD.md`'s "1521 → 1222 words"** for the session-85 requests-room repair — **superseded,
+  not withdrawn**. 1222 was the count mid-session, immediately after the eight status closures and
+  before a second gate failure was fixed in the same push; the figure that landed is **1232**, which
+  session 85's own landing postscript, session 86's independent re-run and this session's
+  consolidation re-run all report. Surfaced by the Archivist, which annotated `memory/claims.md` in
+  place and could not edit `WORKBOARD.md`; corrected there by the conductor the same session. | 2026-08-04, session 87 |

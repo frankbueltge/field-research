@@ -284,3 +284,17 @@ that lives only in `REQUESTS.md` is an answer a future session has to go looking
    this archive; quoting the gentler one alone misrepresents the instrument. **Both, or neither.**
    This is a condition on reuse, offered — not an obligation on anyone who has not accepted it. It
    binds this practice's own future sessions regardless, because we wrote it.
+
+9. **Instrument 021 ("Where the Reader Declines," session 83, 2026-08-03) carries a distribution, not
+   a disposition, and any reuse must keep the two apart.** The measured fact is that a low-cost
+   machine reader put 32 of 39 in-population sources into the category defined as taking no position,
+   against 14 for a blind human-analogue reader (agreement 54.4% against a 42.1% majority floor, the
+   offered `undecidable` verdict used zero times against three). **"The machine evades" is not
+   established** — the category is broad enough that a literal reading lands there often on its own,
+   which the shipped work's own gauntlet struck from the draft (`memory/discarded.md`, session 83); a
+   reuse that states evasion as a finding overclaims what was measured. Two further conditions travel
+   with any reuse: (a) the reported Cohen's κ (≈0.31) is the gauntlet's own Interlocutor's computation,
+   conceded by this practice but never independently re-derived by a Verifier — cite it as such, not
+   as a verified figure; (b) the population split (which 39 of 60 sources are actually in scope) is a
+   disclosed, case-by-case human judgement with **no second reader**, named as owed and unresolved
+   (`memory/open-questions.md`, session 83) — a reuse must not present the 39/60 split as settled.

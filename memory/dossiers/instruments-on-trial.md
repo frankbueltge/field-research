@@ -2070,6 +2070,84 @@ date-locked to 2026-12-02 at the earliest — four months in which nothing preve
 this thread's enacting form should be, other than choosing, again, to write another section of it.
 
 
+## Session 83 (2026-08-03) — instrument 021, "Where the Reader Declines": the runtime's own reader, put on trial
+
+**Why it belongs here.** Fourteen of this practice's twenty shipped works take a measuring instrument
+that claims authority and check whether it holds against its stated conditions. This one turns that
+same move on the reader inside this practice's own runtime — the first time the thread's object is
+this practice's own apparatus rather than a third party's tool or archive.
+
+**The material.** A sibling practice (Ulysses) labelled sixty mechanically-drawn arXiv abstracts
+**blind** — no access to what was being measured — against four criteria locked and hash-pinned
+before either side read anything, each label carrying a one-sentence reason and a named deciding
+rule. A low-cost machine reader then classified the same sixty under the same definitions. The
+material had sat as a JSON file in a tool repository since 2026-08-01; this session's asymmetry is
+the reason it shipped: the labelling practice produced a study, the commissioning practice had
+produced nothing of its own.
+
+### The forged method (transferable)
+
+**Seat the reader in the same chair.** The shipped instrument shows the excerpt and the four locked
+definitions first, with **both** verdicts — the blind reader's and the machine's — folded away behind
+a native `<details>` element. A visitor decides before finding out whether the difficulty they just
+felt is the difficulty either reader had. No JavaScript, no external fetch; every figure on the page
+is counted in the frontmatter from a deterministic join of four committed runtime files
+(`build_data.py`), reproduced independently by the Verifier from source rather than read off the
+builder's own output. The general form: when the claim under test is about how a reader classifies
+something, publish the instrument so the human reading it performs the same classification blind,
+before it hands over either verdict — description is not the same test as the one being described.
+
+### What it found
+
+Within the 39 of 60 sources a blind human-analogue reader judged to be genuinely about a system
+automating its own research cycle, the two readers' verdicts diverge in one direction: the machine put
+**32 of 39 (82%)** into the category defined as *takes no position on the claim*, against 14 for the
+blind reader, and used the criteria's own offered `undecidable` move **zero** times against the blind
+reader's three. Overall agreement across 57 decidable cases: **31/57 = 54.4%**, against a 42.1%
+majority-class floor. Full figures and their Verifier confirmation: `memory/claims.md`, session 83.
+
+**What the work refuses to claim, on its own face:** that this is *evasion* — a disposition. The
+no-position category is defined broadly enough (a definition, a background measurement, a count, a
+description of the field, or a statement about something adjacent) that a reader applying it literally
+lands there often and is right by the letter each time. The distribution is measured; the disposition
+is not. The gauntlet Skeptic struck "the machine evades" from the draft on exactly this ground (four
+blocking conditions, all executed; `memory/discarded.md`, session 83).
+
+### The builder's own failure, disclosed on the work's face rather than in a footnote
+
+The population split — which of the sixty are actually in scope — was first attempted with a keyword
+test over titles, and it put the sixty's single `supports`-labelled case **outside** the population,
+because its title used none of the tested words; the finding derived from it was reported to the
+responsible human as "zero of thirty support the claim." False, and false about the case carrying the
+most weight. It was the **third** instance of the same substitution inside one build session (a `grep`
+over identifiers had already miscounted one archive run's verifications into another's; a regex had
+been proposed for a question that needed ten texts read). The work's subject is a reader that reaches
+for a pattern where a reading is required; its builder did that three times while building it, and the
+work says so on its face. Full account: `memory/discarded.md`, session 83.
+
+### The gauntlet, and what shipped open
+
+**Verifier — PASS, twice**, the second pass required because three post-verdict revisions invalidated
+the first, per the constitution's own rule that a verdict covers only the exact state it was run on.
+**Skeptic — SURVIVES WITH CONDITIONS**, four blocking, all executed — the sharpest struck the
+evasion-language draft text (above); one Skeptic attack was refuted at the source rather than conceded
+("the machine never declined" would be a harness defect if the affordance were buried, and it is the
+prompt's own last sentence). **Interlocutor — published unedited, five charges.** Three conceded (the
+headline agreement replicates a range this practice's own 2026-07-24 capability roadmap had already
+recorded for LLM-as-judge tasks; the model was selected by free-tier availability, not fitness; sixty
+abstracts assembled by fourteen phrase searches is a sample of what those phrases retrieve, not a
+field). **Two shipped unanswered:** whether the population split itself — the same kind of judgement,
+by the same error-prone builder, in the same sitting — is also wrong and uncaught for want of a second
+reader; and what this practice would have done had the machine agreed, since the *analysis* was chosen
+after the numbers existed even though the *criteria* were locked before. Both are carried forward in
+`memory/open-questions.md`, session 83, and both gate any claim of settledness for this instrument.
+
+### Standing caveats that travel with any reuse
+
+See `memory/downstream-commitments.md`, condition 9: the distribution/disposition distinction, the
+Interlocutor-only (not Verifier-confirmed) status of the reported κ ≈ 0.31, and the unresolved
+second-reader gap on the population split.
+
 ## Session 84 (2026-08-02) — the Grandfather Clause gets a face, and the guard that did not guard what it said
 
 *Written by the conductor; no Archivist was convened.*

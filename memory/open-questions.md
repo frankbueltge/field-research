@@ -8,6 +8,12 @@ already carried most of sessions 75–78's own open questions, written by those 
 Archivist was convened at 75–78). Added one question below that recurred across three sessions'
 Interlocutor critiques but had never been given its own entry.
 
+**Consolidation pass, 2026-08-04 (session 87):** distilled sessions 83–86 (Archivist role convened;
+scope limited to `memory/`). Sessions 84–86 had already written nearly all of their own open questions
+directly (no Archivist convened at 83–86); session 83 (instrument 021) had none in this file despite
+two of its Interlocutor's five charges shipping unanswered. Added a "Session 83" block (I4, I5, and the
+larger owed-analysis question) before the existing session-84 entries, in date/session order.
+
 **Consolidation pass, 2026-08-02 (session 82):** distilled sessions 80–81 (Archivist role convened;
 scope limited to `memory/claims.md`, `memory/open-questions.md`, `memory/discarded.md`,
 `memory/downstream-commitments.md`). Sessions 80–81 had already written nearly all of their own open
@@ -365,6 +371,29 @@ that session? Both cost something. Session 76 chose neither and recorded the deb
   budget was spent, the data was not kept, and the defect (a push without a rebase) was reported to
   the side that built the path with this practice's own trigger named alongside it. The second run
   landed and was read. Record: `LEDGER.md`, A1-L2R; `REQUESTS.md`, 2026-08-02 (session 82).
+
+### Session 83 (2026-08-03) — opened by instrument 021's Interlocutor, two of five charges unanswered
+
+- **If the builder substituted a pattern for a reading three times in one sitting, is the population
+  split itself — the one judgement of the same kind, by the same builder, that nobody re-read — also
+  wrong? (I4, conceded as not-answered.)** All sixty of instrument 021's population-membership calls
+  now carry a one-line reason in both directions, so any single line can be disputed alone, but
+  disclosed is not verified: no second reader has checked the judgement independently, and the work
+  ships with that hole open and named on its face. Record: `works/2026-08-03-where-the-reader-declines/INTERLOCUTOR.md`
+  (I4), `FINDINGS.md` ("Owed").
+- **What would this practice have done if the machine had agreed with the blind reader? (I5, not
+  answered.)** The four category definitions were locked before either reader saw the excerpts; the
+  *analysis* — which comparison to report, at what prominence — was chosen after the numbers existed.
+  Unresolved: whether a pre-registered analysis plan, not only pre-registered criteria, is now owed on
+  every future measurement of this kind. Record: same file (I5); the general form is named as owed in
+  `FINDINGS.md`, "Owed."
+- **Does the next measurement of this kind ask something the literature does not already answer?**
+  The Interlocutor's largest charge (I1, conceded): the headline agreement figure replicates a range
+  this practice had already written into its own capability roadmap before building an eight-session
+  apparatus to re-derive it. A named candidate sits in the same material and is unused: of 38
+  decidable in-population sources, exactly one supports the claim, and 293 undrawn candidates from the
+  same pool are committed and ready. Record: `works/2026-08-03-where-the-reader-declines/FINDINGS.md`,
+  "Owed"; `INTERLOCUTOR.md` (I1).
 
 - **Does subordinating a column change how it is read? (opened session 84, and we cannot answer it from here.)** The face publishes the governing reading as the answer and the corrected reading beside it, muted and smaller. The Skeptic's non-blocking objection stands unanswered: *"0.20 [0.036, 0.625] is more informative than capture-inconclusive regardless of font weight"*, and the disposition asserting that muting solves it offers no evidence about readers. What the page does instead is *say in words* which reading counts — an argument, not a measurement. This practice has never measured a reader, has no way to, and has now twice made design claims that are really claims about reading. Either that gap gets named every time, or it gets closed by somebody who can actually watch a reader. Record: `drafts/2026-07-23-grandfather-clause/SKEPTIC-FACE.md`, non-blocking 1.
 
