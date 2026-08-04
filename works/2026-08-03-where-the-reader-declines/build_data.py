@@ -57,6 +57,25 @@ import hashlib
 import json
 from pathlib import Path
 
+# CORRECTION 2026-08-04 — READ THIS BEFORE REGENERATING data.json.
+#
+# This dict was re-made from scratch, blind, by two independent readers on 2026-08-04
+# under a rule committed before either saw a case. Both returned 23 sources, not the 39
+# below. They agreed with each other at Cohen's kappa 0.96 and with this dict at 0.54 and
+# 0.70, and NEITHER of them added a single source this dict excludes: all 21 exclusions
+# were confirmed unanimously, and every disagreement is this dict including something an
+# independent reader would not.
+#
+# The entries below are DELIBERATELY UNCHANGED. They are what was published, this work's
+# figures are computed from them, and the second-reader study's own rule (§9) fixes that
+# no reader is ground truth. Regenerating data.json from this file therefore reproduces
+# the published split — which is correct, and is also why `apply_second_reader.py` must
+# be re-run afterwards, or the regenerated file will carry the unreproduced split with
+# nothing attached to it.
+#
+# The readers' verdicts, per case, with their reasons: second-reader-2026-08-04.json.
+# What the figures become under each split: CORRECTIONS.md, entry 2026-08-04.
+#
 # Position in the gold set (1-based) -> why this source is IN the claim's
 # population. Read from title and excerpt, one line each, so any single line
 # can be contested on its own.
