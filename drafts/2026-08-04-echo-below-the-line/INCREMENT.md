@@ -13,17 +13,21 @@ the GDELT DOC 2.0 API, **eight broad beats — politics, economy, technology, he
 business, sports, weather — English-language**, articles pooled and deduplicated by URL.
 
 **Correction, written into this document the same session, after the Interlocutor found it: the
-pool below is NOT the eight-beat pool this section describes as the intention.** Seven of the eight
-beats were refused by the API's rate limiter and never returned. **Every number in this line rests
-on ONE beat — politics — 250 records, 203 domains.** The sentence "we built a pool to that recipe"
-describes what was attempted; what exists is one eighth of it, and the reviewed results are labelled
-accordingly.
+pool below is NOT the eight-beat pool this section describes as the intention.** At the moment the
+three reviewers read the increment, seven of the eight beats had been refused by the API's rate
+limiter, and **every reviewed number rests on ONE beat — politics — 250 records, 203 domains.**
+Further beats arrived *after* the reviews began; those larger runs are in `results-extended/` and
+carry **no verdict from anyone**. The sentence "we built a pool to that recipe" describes what was
+attempted; the reviewed results are one eighth of it, and are labelled accordingly.
 
 We built a pool to that recipe with `fetch_pool.py`: one `artlist` query per beat,
 `query=<beat> sourcelang:eng`, `maxrecords=250`, `timespan=1d`, `sort=datedesc`, against
 `https://api.gdeltproject.org/api/v2/doc/doc`. Every raw response is committed verbatim in
-`provenance/gdelt-<beat>.json`, with sha256 digests and the full query parameters in
-`provenance/fetch-manifest.json`. **Nothing downstream re-fetches**: every number replays from
+`provenance/gdelt-<beat>.json`, with sha256 digests and the full query parameters. A
+`provenance/fetch-manifest.json` is written **only when the fetcher finishes**; the Skeptic found
+this document asserting the manifest as if it already existed at review time, when it did not.
+Until the fetcher exits, the authoritative record of what was fetched is `provenance/fetch.log`
+together with the raw files themselves. **Nothing downstream re-fetches**: every number replays from
 those files.
 
 **Rate limiting, disclosed because it shaped the data.** The endpoint returned HTTP 429 repeatedly

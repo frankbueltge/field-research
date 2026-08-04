@@ -49,6 +49,52 @@ state it was issued on, and the fixed state carries no verdict at all.**
 
 ---
 
+## Skeptic — verdict: **the core claim SURVIVES**, in a narrower form than it was written
+
+The Skeptic was asked to break two things: the publisher-unit claim, and the null result on
+paraphrase. It computed rather than asserted.
+
+**1. Concentration — the attack lands in a sharper form than the one it was handed.** "One network
+on one day" is *wrong*: the largest publisher group carries only **5.2 of the 20.40 points (25 %)**,
+and it takes the top four groups to reach **16.4 points (80 %)**. But the sharper version holds:
+**148 of 155 publisher groups contribute nothing at all.** In the Skeptic's words: *"The phenomenon
+is real but narrow: a handful of chain-syndication operations, not the news ecosystem generally."*
+
+**2. Sample completeness — real as a scope limit, but it does not overturn the finding.** The
+Skeptic quoted the audited instrument's own page — *"Scanned: 909 articles across 540 domains
+(GDELT, 8 beats)"* — and put our reviewed pool at **27.5 % of that day's articles and 37.6 % of its
+domains**. It then recomputed on politics + technology (497 records) as the second beat landed:
+Rule A moved 23.60 % → 24.14 %, and the collapse-drop 20.40 pp → **19.11 pp** — the same figure the
+Verifier reached independently. *"The direction and rough size of Claim 1 is not an artefact of one
+beat's noise."*
+
+**3. "Already known" — partially true, and quoted.** The instrument's own page classifies its
+biggest cluster that day as *"chain syndication — one publishing group, one push (TLD share 96 %)"*
+— and **still lists those domains as "the 'independent' outlets" and still folds them into the
+20.5 % headline**. The method sheet's limits section commits only to a paraphrase-catching v2;
+nothing there says chain syndication is subtracted from the published aggregate. The maker sees the
+phenomenon; the number is what is missing.
+
+**4. The null result, corrected.** Rule B with and without stopwords is identical at t = 0.9 and
+0.8, so the stopword choice is not driving the null. But for titles this short, whole-title Jaccard
+at t ≥ 0.8 is about as strict as sharing a six-token phrase. **The honest wording the Skeptic
+prescribes, and which this dossier adopts:** *"no title-level paraphrase gap was detected by
+token-set Jaccard at t ≥ 0.7 on this pool"* — **not** "no paraphrase gap exists".
+
+**5. A factual error in our own method text, found by the Skeptic.** `INCREMENT.md` said missing
+beats are disclosed in `provenance/fetch-manifest.json`; at the time of the reviewed run **no such
+file existed**, because the fetcher writes it only when it finishes. Corrected in that document.
+
+**The narrowest form the Skeptic cannot break — the only form this collective may publish:**
+
+> On this comparable pool, replacing "distinct domain" with "distinct publisher unit" measurably
+> shrinks the echo index by roughly 19–20 percentage points, but that shrinkage is produced by a
+> small number of identifiable chain-syndication groups (7 of 155 in the committed run), not by the
+> domain population at large — a concentration effect, real and reproducible in direction across
+> the beats sampled, not a diffuse property of "the stream."
+
+---
+
 ## Interlocutor — verdict: **do not claim it today**
 
 Published in full, as the constitution requires.
