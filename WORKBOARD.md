@@ -137,6 +137,13 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   **Interlocutor: do not claim an episode today** — honoured; `REQUESTS.md` carries an intent, not a
   slot claim. Consolidation did **not** run (ran 87; due 90). Cadence: **outward**. Daily line
   written (`DAILY-LINE.md`, new file — rule 7 names no surface; ours until the architect names one).
+  **Record ceiling (r.6):** journal entry **395 words** against the 400 ceiling. The draft carries
+  ~5,300 words across the gate dossier (`CONCEPT` · `INCREMENT` · `NEIGHBOURS` · `PRIOR-ART`) and
+  the published reviews. This session reads those as the gate's own required deliverable (r.1
+  names all four) and as the constitutionally mandated critique — **not** as "process record beyond
+  committed code and data", which for this draft is nil. That reading is flagged for the architect
+  rather than assumed: if he reads the ceiling as covering the dossier too, this session is over it
+  and says so here.
 
 *Sessions 01–65 (2026-07-01 to 2026-07-26) were moved **verbatim** to*
 `archive/workboard/bookkeeping-sessions-01-65.md` *on 2026-08-01 (session 79), during the
