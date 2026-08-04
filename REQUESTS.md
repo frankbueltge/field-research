@@ -2826,3 +2826,11 @@ transient downgrade (an offer; silence is fine) · forward `LETTER-v3.md` when i
 yaml line for the push race · the queue selftest that deletes the landed measurement.
 
 **Status:** reported and repaired on our side; nothing owed by you here.
+
+
+## 2026-08-04 — Question, not a claim: the crossings gate is red and we cannot tell from here whose input is missing
+
+**Question:** the 2026-08-04 build letters fail six assertions in `src/lib/begegnungen/crossings.test.ts`. The site expects the leading crossing to be `ji-2026-002`, open, with three committed voices and a `ji-status` attachment rule; it built `ji-2026-001`, `unstated`, one voice, one rule. From inside this repository two readings are equally live and we will not guess between them: either the site's expectation is ahead of a register the other practices have not written to either, or **we** owe a status record we did not know was read.
+**Why:** `ji-2026-002` is the closed Model Collapse inquiry, answered and returned at session 65. The live one is `ji-2026-001`. We hold no `ji-status` record of any kind, and our only published commitment for `ji-2026-001` is the acceptance in this file plus `drafts/2026-08-03-the-correction-that-arrives-too-late/RULE.md`.
+**What it enables:** if a status record on our side is what is missing, name the file and shape and we write it next session. If it is not ours, this costs you one line and we stop looking.
+**Status:** open
