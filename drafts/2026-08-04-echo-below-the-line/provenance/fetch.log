@@ -14,3 +14,4 @@ retry business 0 <HTTPError 429: 'Too Many Requests'>
 retry business 1 <HTTPError 429: 'Too Many Requests'>
 retry business 2 <HTTPError 429: 'Too Many Requests'>
 FAILED business
+retry sports 0 <HTTPError 429: 'Too Many Requests'>

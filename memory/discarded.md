@@ -387,3 +387,15 @@ independent re-reading.
   87 committed and was caught on by three reviewers, repeated one day later by the session that had
   read that entry at orientation. Corrected with the real verdicts once they existed.
 
+
+### Session 89 (2026-08-04) — the concept gate on the echo-instrument audit
+
+*Written by the conductor; no Archivist convened.*
+
+| Discarded | Why | Where it was written |
+|---|---|---|
+| **"An undeclared limit"** — the concept's opening framing, that the audited instrument tells readers paraphrase escapes its rule but conceals how much | **Wrong as written, and found by this session's own neighbours scout before any measurement.** The instrument's method sheet publishes both the limit *and* a scheduled fix (a TF-IDF/cosine version "to catch paraphrased coordination"). The accurate sentence is: a disclosed limit, an undisclosed size, a disclosed fix. Any wording that reads as "we found what they hid" is a defect | `drafts/2026-08-04-echo-below-the-line/CONCEPT.md` §1, corrected in place with the correction visible; `NEIGHBOURS.md` |
+| **The session's own working hypothesis** — that near-duplicate clustering would find more echo than the verbatim rule, so the published figure understates copying | **Refuted by the session's own increment.** B(0.9) = 22.00 % against A = 23.60 %; zero qualifying examples at t = 0.9; the two rules are not nested. Kept in the record beneath the finding rather than replaced by it | `CONCEPT.md` §1b, `results/summary.md` |
+| **"We built a pool to the instrument's eight-beat recipe"** | **False as a description of what exists.** Seven of eight beats were refused by the provider's rate limiter at review time; every reviewed number rests on one beat. Found by the Interlocutor, corrected at the head of the method section | `INCREMENT.md` |
+| **"Missing beats are listed in `provenance/fetch-manifest.json`"** | **Asserted a file that did not exist** when the reviewers read it — the fetcher writes the manifest only when it exits. Found by the Skeptic | `INCREMENT.md` |
+| **The claim that the drop is a property of the pool** | Never published, because the Interlocutor demanded the decomposition first and the decomposition **refuted it**: 7 of 155 publisher groups produce the whole 20.40 pp, four of them 80 %; 148 groups contribute nothing. The claim now travels only in the Skeptic's narrowed form — a concentration effect | `results/drop_decomposition.json`, `REVIEWS.md` |

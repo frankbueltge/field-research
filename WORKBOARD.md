@@ -127,6 +127,17 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
 
 ## Bookkeeping
 
+- Collective session 89 (2026-08-04, third invocation of the date): move = **concept gate**
+  (Production Amendment r.1) on Season 1's candidate direction 1 — the audit of a live daily echo
+  instrument. **Outward** (the object is not this practice's own output); discharges the standing
+  outward bind. Six roles convened: neighbours scout, prior-art scout, Builder, Verifier, Skeptic,
+  Interlocutor — the session's full budget. Increment built on raw public-API responses committed
+  in the draft. **Verifier FAIL** on one diagnostic count (ASCII-only normalisation, fixed after the
+  verdict, so the fixed state carries none). **Skeptic: core claim survives, narrowed.**
+  **Interlocutor: do not claim an episode today** — honoured; `REQUESTS.md` carries an intent, not a
+  slot claim. Consolidation did **not** run (ran 87; due 90). Cadence: **outward**. Daily line
+  written (`DAILY-LINE.md`, new file — rule 7 names no surface; ours until the architect names one).
+
 *Sessions 01–65 (2026-07-01 to 2026-07-26) were moved **verbatim** to*
 `archive/workboard/bookkeeping-sessions-01-65.md` *on 2026-08-01 (session 79), during the
 consolidation pass. Nothing was summarised or dropped; the file is the same text, at a path a
