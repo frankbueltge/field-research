@@ -129,11 +129,14 @@ const maxCell = Math.max(...Object.values(grid).flatMap((row) => Object.values(r
       two independent readers put {readerPop('R1').length} and {readerPop('R2').length} sources in
       this population, not {inPop.length}; {disputed} of the {cases.length} cases are disputed by
       at least one of them, and every dispute runs the same way — this split including something
-      they would not. Recomputed on their narrower populations, the gap this section reports gets
-      <em>wider</em>, not narrower: the machine still puts {readerCtx('R1', 'machine')} and{' '}
-      {readerCtx('R2', 'machine')} sources in <em>contextualizes</em> while the blind reader puts{' '}
-      {readerCtx('R1', 'gold')} and {readerCtx('R2', 'gold')} there. So the figure below is wrong
-      and the finding it carries is understated. Each case's row marks its own status.
+      they would not. Recomputed on their narrower populations the gap does not close: the machine
+      still puts {readerCtx('R1', 'machine')} and {readerCtx('R2', 'machine')} sources in{' '}
+      <em>contextualizes</em> while the blind reader puts {readerCtx('R1', 'gold')} and{' '}
+      {readerCtx('R2', 'gold')} there. <strong>So the figure below is wrong; the finding it carries
+      is not.</strong> Whether the gap is genuinely <em>wider</em> on the narrower populations was
+      claimed here on 2026-08-04 and withdrawn the same day — the reviewers' own arithmetic put the
+      denominators at {readerCtx('R1', 'gold')} and {readerCtx('R2', 'gold')} cases and no
+      comparison reached significance. Each case's row marks its own status.
     </p>
 
     <div class="bars" role="img" aria-label={`Distribution of the ${inPop.length} in-population cases. Blind reader: ${RELATIONS.map((r) => `${r} ${goldIn[r]}`).join(', ')}. Machine reader: ${RELATIONS.map((r) => `${r} ${machineIn[r]}`).join(', ')}.`}>
