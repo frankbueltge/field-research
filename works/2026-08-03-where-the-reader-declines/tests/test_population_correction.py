@@ -87,6 +87,37 @@ class TestTheCountsAreTheOnesPublished(unittest.TestCase):
                      if not c["in_population"] and c["in_population_second_readers"][who] == "IN"]
             self.assertEqual(added, [], f"{who} added excluded case(s): {added}")
 
+    def test_the_exclusions_are_twenty_of_twenty_one_not_unanimous(self):
+        """Withdrawn claim, locked so it cannot be restated.
+
+        Session 88 published "all 21 exclusions were confirmed unanimously" in four files.
+        Its own Verifier refuted it: position 52 drew UNDECIDABLE from R1. The zero that
+        actually carries the finding is asserted separately above.
+        """
+        out_cases = [c for c in DATA["cases"] if not c["in_population"]]
+        self.assertEqual(len(out_cases), 21)
+        unanimous = [c for c in out_cases
+                     if c["in_population_second_readers"] == {"R1": "OUT", "R2": "OUT"}]
+        self.assertEqual(len(unanimous), 20, "the exclusions are 20 of 21 unanimous, not 21")
+        odd = [c for c in out_cases if c not in unanimous]
+        self.assertEqual(odd[0]["case_id"], "mbcls-2606.04228")
+        self.assertEqual(odd[0]["in_population_second_readers"], {"R1": "UNDECIDABLE", "R2": "OUT"})
+        # Rule 6: the withdrawn sentence STAYS, struck. What must not happen is that it
+        # stands as a live assertion. So every occurrence must be inside a struck quotation.
+        needle = "All 21 exclusions were confirmed unanimously"
+        for path, text in (("CORRECTIONS.md", CORRECTIONS), ("build_data.py", BUILDER)):
+            live = [ln for ln in text.splitlines()
+                    if needle in ln and not (ln.lstrip().startswith(">") and "~~" in ln)]
+            self.assertEqual(live, [], f"{path} states the withdrawn unanimity claim live")
+        self.assertIn("~~All 21 exclusions were confirmed unanimously.~~", CORRECTIONS,
+                      "the withdrawn sentence was deleted instead of struck")
+
+    def test_the_withdrawn_fisher_figure_is_not_restated(self):
+        """The post-hoc p-value was withdrawn entirely, not corrected to a new number."""
+        self.assertIn("WITHDRAWN, same day, and not replaced", CORRECTIONS)
+        live = CORRECTIONS.split("The whole quantification is WITHDRAWN")[1]
+        self.assertNotIn("p = 0.039.)*", live, "the withdrawn figure reappears after its withdrawal")
+
     def test_eighteen_cases_are_disputed(self):
         n = sum(1 for c in DATA["cases"] if c["in_population_status"].startswith("DISPUTED"))
         self.assertEqual(n, 18)
@@ -144,7 +175,12 @@ class TestTheCorrectionReachesTheOtherSurfaces(unittest.TestCase):
         review had already run. Three reviewers caught it. Not twice."""
         m = re.search(r"^.*\bgauntlet\b.*$", CORRECTIONS, re.M | re.I)
         self.assertIsNotNone(m)
-        self.assertIn("do not cover this one", CORRECTIONS)
+        # A gauntlet did run on this correction, and then the corrections it forced were
+        # applied after its verdicts. Both facts must stay on the face of the entry.
+        self.assertIn("no gauntlet verdict covers the exact bytes of this", CORRECTIONS)
+        for report in ("VERIFICATION-2026-08-04.md", "SKEPTIC-2026-08-04.md"):
+            self.assertTrue((WORK / report).exists(), f"{report} is cited and missing")
+            self.assertIn(report, CORRECTIONS)
 
 
 class TestNoPublishedValueWasChanged(unittest.TestCase):

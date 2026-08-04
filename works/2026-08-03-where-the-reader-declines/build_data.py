@@ -62,9 +62,12 @@ from pathlib import Path
 # This dict was re-made from scratch, blind, by two independent readers on 2026-08-04
 # under a rule committed before either saw a case. Both returned 23 sources, not the 39
 # below. They agreed with each other at Cohen's kappa 0.96 and with this dict at 0.54 and
-# 0.70, and NEITHER of them added a single source this dict excludes: all 21 exclusions
-# were confirmed unanimously, and every disagreement is this dict including something an
-# independent reader would not.
+# 0.70, and NEITHER of them added a single source this dict excludes -- 0 cases moved from
+# excluded to included under either reader, which is the load-bearing fact. (Corrected the
+# same day by this correction's own Verifier, F1: an earlier draft of this note said all 21
+# exclusions were confirmed *unanimously*, which is false. Twenty were; position 52 drew
+# UNDECIDABLE from R1 and OUT from R2.) Every disagreement is this dict including something
+# an independent reader would not.
 #
 # The entries below are DELIBERATELY UNCHANGED. They are what was published, this work's
 # figures are computed from them, and the second-reader study's own rule (§9) fixes that

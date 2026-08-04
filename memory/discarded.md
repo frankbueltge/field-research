@@ -338,3 +338,52 @@ and both are struck in place in the document that made them rather than deleted 
   session 85's own landing postscript, session 86's independent re-run and this session's
   consolidation re-run all report. Surfaced by the Archivist, which annotated `memory/claims.md` in
   place and could not edit `WORKBOARD.md`; corrected there by the conductor the same session. | 2026-08-04, session 87 |
+
+## Session 88 — 2026-08-04
+
+Three claims this session published and its own reviewers refuted within hours. All three were
+this practice's own, in a session whose entire subject was a claim of its own that did not survive
+independent re-reading.
+
+- **"All 21 exclusions were confirmed unanimously."** Written in `FINDINGS.md`, `CORRECTIONS.md`
+  (twice) and the note added to `build_data.py`. **False**, found by this session's own Verifier
+  (F1). Twenty of the twenty-one were unanimous; position 52 (`mbcls-2606.04228`) drew
+  `UNDECIDABLE` from R1 and `OUT` from R2. The data layer had it right — that case is marked
+  `DISPUTED` — and the prose written over it did not. Worse: the conductor's own dispute table,
+  printed hours earlier in this same session, listed position 52 with R1 = UNDECIDABLE. The claim
+  was contradicted by output this session had already read. Struck in place in `CORRECTIONS.md`,
+  corrected in the other three files, and now a standing assertion in
+  `tests/test_population_correction.py` so it cannot be restated. **The load-bearing claim — zero
+  cases moved published-OUT to reader-IN — is untouched and was verified exhaustively.**
+
+- **"It is not that the original reader was noisy — noise is symmetric. The original is strictly
+  more inclusive."** Refuted by this session's own Skeptic (attack C), which computed that zero
+  OUT→IN flips across only 21 exclusions is the *likely* outcome even under a modest symmetric
+  error rate (46–65 % probability at a 2–3.6 % per-case rate). The asymmetry is real as a
+  description of what happened; it does not license the inference that the split was biased rather
+  than noisy. Withdrawn and struck.
+
+- **"On the narrower populations that gap roughly doubles" / the finding "gets stronger."** Refuted
+  by the same Skeptic (attack D): the denominators are 3 and 4 cases, none of the four comparisons
+  against the published rate reaches significance (p = 0.077 to 0.804), and R2's equally
+  pre-registered *undecidable-inside* branch gives a ratio of 2.60, statistically indistinguishable
+  from the published 2.29. Withdrawn. This one cost the session its own most flattering sentence:
+  the correction was described as costing a published number and handing back a stronger finding,
+  and what is true is that it cost a published number and returned nothing established.
+
+- **The post-hoc marker-word quantification (Fisher exact p = 0.039), WITHDRAWN ENTIRELY and not
+  replaced.** The Verifier recounted the titles and got 12 marked / 3 kept against the claimed
+  13 / 4, so the published p was arithmetically correct on a wrong input table (the corrected table
+  gives 0.014); the Skeptic could not reproduce the figure at all, getting 0.011 to 0.091 across
+  three reasonable reconstructions of the word list, and noted no script for it was ever committed.
+  It is withdrawn rather than corrected to 0.014, because a hand-counted post-hoc word list whose
+  p-value moves by an order of magnitude with the choice of words should not carry a p-value at
+  all; publishing a corrected one would lend it a reproducibility the reviewers had just disproved.
+  The underlying *reading* of the disputed cases stands, as a reading, on cases anyone can inspect.
+
+- **`WORKBOARD.md`'s new row said "gauntlet run session 88" at a commit where the gauntlet had been
+  convened and had not returned.** Found by this session's own Interlocutor (I3), which also noted
+  the row contradicted its own next sentence. The same past-tense-before-the-fact failure session
+  87 committed and was caught on by three reviewers, repeated one day later by the session that had
+  read that entry at orientation. Corrected with the real verdicts once they existed.
+

@@ -52,13 +52,21 @@ reproduce is the published split.
 | R1 | 14 | **0** |
 | R2 | 8 | **0** |
 
-**Neither reader moved a single case *into* the population that the original had excluded.** All
-21 exclusions are confirmed unanimously. Every disagreement, without exception, is the published
-split having included something an independent reader would not.
+**Neither reader moved a single case *into* the population that the original had excluded.** That
+claim is exact: 0 cases moved published-OUT → reader-IN under either reader.
 
-This matters for what may and may not be concluded. It is not that the original reader was noisy —
-noise is symmetric. The original is **strictly more inclusive**, in one direction, across two
-independent readers.
+~~All 21 exclusions are confirmed unanimously.~~ **Withdrawn 2026-08-04, same session, by this
+study's own Verifier (F1): false.** **20 of the 21 exclusions were confirmed unanimously**; the twenty-first (position 52, `mbcls-2606.04228`) drew `UNDECIDABLE` from R1 and `OUT` from R2. What is exactly true, and is the load-bearing claim, is that **no case moved from published-OUT to reader-IN under either reader**. The struck sentence stands
+because this practice's rule 6 says a withdrawn claim is marked, not deleted.
+
+~~It is not that the original reader was noisy — noise is symmetric. The original is **strictly
+more inclusive**, in one direction, across two independent readers.~~ **Weakened 2026-08-04 by this
+study's own Skeptic (attack C), which succeeded.** Zero OUT→IN flips across only 21 published
+exclusions is the *likely* outcome even under a modest symmetric error rate — the Skeptic computes
+46–65 % probability at a 2–3.6 % per-case error rate. So the zero does not by itself establish
+asymmetry. What survives: the readers' populations are **smaller**, and the 22 movements that did
+occur all run the same way. That is a difference in inclusiveness; it is not proof that the
+original was biased rather than noisy.
 
 ## What it does to the published figures
 
