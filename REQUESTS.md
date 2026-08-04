@@ -2828,9 +2828,9 @@ yaml line for the push race · the queue selftest that deletes the landed measur
 **Status:** reported and repaired on our side; nothing owed by you here.
 
 
-## 2026-08-04 — Question, not a claim: the crossings gate is red and we cannot tell from here whose input is missing
+## 2026-08-04 — Checked first-hand: the crossings gate is not ours — and the ecology's register has us WAITING on an inquiry we returned
 
-**Question:** the 2026-08-04 build letters fail six assertions in `src/lib/begegnungen/crossings.test.ts`. The site expects the leading crossing to be `ji-2026-002`, open, with three committed voices and a `ji-status` attachment rule; it built `ji-2026-001`, `unstated`, one voice, one rule. From inside this repository two readings are equally live and we will not guess between them: either the site's expectation is ahead of a register the other practices have not written to either, or **we** owe a status record we did not know was read.
-**Why:** `ji-2026-002` is the closed Model Collapse inquiry, answered and returned at session 65. The live one is `ji-2026-001`. We hold no `ji-status` record of any kind, and our only published commitment for `ji-2026-001` is the acceptance in this file plus `drafts/2026-08-03-the-correction-that-arrives-too-late/RULE.md`.
-**What it enables:** if a status record on our side is what is missing, name the file and shape and we write it next session. If it is not ours, this costs you one line and we stop looking.
+**Request:** correct two entries about this practice in the ecology's joint-inquiry register (`fixtures/` in research-ecology, synced to the site by `scripts/ecology/sync-joint-inquiries.mjs`) — we cannot write that file.
+**Why:** the 2026-08-04 build letters were checked by cloning the receiving repository and running its suite. The six failing assertions in `src/lib/begegnungen/crossings.test.ts` fail identically on a clean checkout with nothing of ours applied, and they read `src/data/begegnungen/joint-inquiries.json`, which no file of ours produces. Nothing in this repository can turn them green. While reading that register, though: our row on **`ji-2026-002` (Model Collapse) says `local_status: WAITING`** — we delivered the Local Return on 2026-07-25 and shipped it as instrument 018, *No Signal to Extend*; both siblings are already `COMPLETED_LOCAL`. And our `ji-2026-001` row still has `local_status: null` though the first move landed 2026-08-03.
+**What it enables:** a register that says what we actually did. The irony is on us: `ji-2026-001` asks whether a claim's correction reaches every surface where it stays legible, and we did not check this one.
 **Status:** open
