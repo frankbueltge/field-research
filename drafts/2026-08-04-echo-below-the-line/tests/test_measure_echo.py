@@ -272,5 +272,160 @@ class TestRuleAAndB(unittest.TestCase):
         self.assertEqual(b1, b2)
 
 
+class TestUrlPath(unittest.TestCase):
+    def test_strips_scheme_host_query_fragment(self):
+        self.assertEqual(
+            me.url_path("https://example.com/a/b/c?x=1&y=2#frag"),
+            "/a/b/c",
+        )
+
+    def test_no_query_no_fragment(self):
+        self.assertEqual(me.url_path("http://example.com/only/path"),
+                          "/only/path")
+
+    def test_empty_and_none(self):
+        self.assertEqual(me.url_path(""), "")
+        self.assertEqual(me.url_path(None), "")
+
+    def test_root_path(self):
+        self.assertEqual(me.url_path("https://example.com/"), "/")
+
+    def test_same_path_different_hosts_are_equal_strings(self):
+        p1 = me.url_path("https://siteone.example/story/same-item?ref=a")
+        p2 = me.url_path("https://sitetwo.example/story/same-item?ref=b")
+        self.assertEqual(p1, p2)
+        self.assertEqual(p1, "/story/same-item")
+
+
+class TestRuleC(unittest.TestCase):
+    """
+    Synthetic pool for Rule C, worked out by hand.
+
+    Group X -- 3 domains, ALL three serve the exact same URL path (a
+    single shared-path group of size 3), and all three carry the same
+    6-token+ title so Rule A (domain-based) counts them as a 3-domain
+    echo. Under Rule C's publisher collapse, these 3 domains merge into
+    ONE publisher group (they all share one path), so the collapsed rule
+    must NOT count this title as an echo (only 1 distinct publisher, not
+    >=3):
+      x1.example  /wire/shared-story-id   "storm brings heavy rain and
+                                            flooding across the region"
+      x2.example  /wire/shared-story-id   (same title)
+      x3.example  /wire/shared-story-id   (same title)
+
+    Group Y -- 3 domains that also share one common 6-gram title (so
+    Rule A counts them too), but each serves its OWN distinct URL path
+    (no path is shared by more than 1 domain), so all three remain
+    separate, singleton publisher groups after collapse -- 3 distinct
+    publishers survives the >=3 bar, so the collapsed rule must STILL
+    count this title as an echo:
+      y1.example  /local/y1-report        "council approves new transit
+                                            budget for downtown corridor"
+      y2.example  /local/y2-report        (same title)
+      y3.example  /local/y3-report        (same title)
+
+    Group Z -- a 2-domain shared-path pair, used only to check path-level
+    diagnostics (paths_with_ge2_domains / paths_with_ge3_domains), not
+    tied to any echo title:
+      z1.example  /shared/two-only
+      z2.example  /shared/two-only
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        title_x = "Storm brings heavy rain and flooding across the region"
+        title_y = "Council approves new transit budget for downtown corridor"
+        pool_defs = [
+            (title_x, "x1.example", "https://x1.example/wire/shared-story-id"),
+            (title_x, "x2.example", "https://x2.example/wire/shared-story-id"),
+            (title_x, "x3.example", "https://x3.example/wire/shared-story-id"),
+
+            (title_y, "y1.example", "https://y1.example/local/y1-report"),
+            (title_y, "y2.example", "https://y2.example/local/y2-report"),
+            (title_y, "y3.example", "https://y3.example/local/y3-report"),
+
+            ("Unrelated filler title about nothing in particular at all",
+             "z1.example", "https://z1.example/shared/two-only"),
+            ("A second unrelated filler title about something else again",
+             "z2.example", "https://z2.example/shared/two-only"),
+        ]
+        cls.recs = make_recs(pool_defs)
+        cls.path_to_domains = me.build_path_domain_groups(cls.recs)
+
+    def test_group1_shares_a_verbatim_6gram_across_3_domains_sanity(self):
+        # sanity: group X titles are identical and >=6 tokens
+        toks = self.recs[0]["tokens"]
+        self.assertGreaterEqual(len(toks), me.SHINGLE_N)
+        self.assertEqual(self.recs[0]["norm"], self.recs[1]["norm"])
+        self.assertEqual(self.recs[1]["norm"], self.recs[2]["norm"])
+
+    def test_path_stats_counts_shared_paths_correctly(self):
+        stats = me.rule_c_path_stats(self.path_to_domains)
+        # exactly 2 paths are shared by >=2 domains: the group-X path
+        # (3 domains) and the group-Z path (2 domains)
+        self.assertEqual(stats["paths_with_ge2_domains"], 2)
+        # exactly 1 path is shared by >=3 domains: the group-X path
+        self.assertEqual(stats["paths_with_ge3_domains"], 1)
+        self.assertEqual(
+            stats["domain_group_size_distribution_for_ge2_paths"],
+            {2: 1, 3: 1},
+        )
+        self.assertEqual(stats["path_with_most_domains"]["domain_count"], 3)
+
+    def test_publisher_groups_collapse_group_x_not_group_y(self):
+        domain_to_publisher, n_domains, n_publishers, size_counts = (
+            me.build_publisher_groups(self.recs, self.path_to_domains)
+        )
+        self.assertEqual(n_domains, 8)
+        # group X (3 domains) -> 1 publisher; group Y (3 domains) -> 3
+        # separate publishers (no shared path); group Z (2 domains) -> 1
+        # publisher. Total publishers = 1 (X) + 3 (Y) + 1 (Z) = 5.
+        self.assertEqual(n_publishers, 5)
+        self.assertEqual(
+            domain_to_publisher["x1.example"],
+            domain_to_publisher["x2.example"],
+        )
+        self.assertEqual(
+            domain_to_publisher["x2.example"],
+            domain_to_publisher["x3.example"],
+        )
+        self.assertNotEqual(
+            domain_to_publisher["y1.example"],
+            domain_to_publisher["y2.example"],
+        )
+        self.assertNotEqual(
+            domain_to_publisher["y2.example"],
+            domain_to_publisher["y3.example"],
+        )
+        self.assertEqual(
+            domain_to_publisher["z1.example"],
+            domain_to_publisher["z2.example"],
+        )
+        # size_counts: one group of size 3 (X), three groups of size 1 (Y),
+        # one group of size 2 (Z)
+        self.assertEqual(size_counts, {1: 3, 2: 1, 3: 1})
+
+    def test_collapsed_rule_a_drops_group_x_but_keeps_group_y(self):
+        domain_to_publisher, _, _, _ = me.build_publisher_groups(
+            self.recs, self.path_to_domains
+        )
+        original = me.rule_a(self.recs)
+        collapsed = me.rule_a_with_unit_map(self.recs, domain_to_publisher)
+
+        # Original (domain-based) Rule A counts BOTH group X and group Y
+        # as echoes: 3 domains each, 3 titles each = 6 titles total.
+        self.assertEqual(original["titles_in_echo"], 6)
+
+        # Collapsed (publisher-based) Rule A must drop group X (now only
+        # 1 distinct publisher) but keep group Y (still 3 distinct
+        # publishers) -> exactly the 3 group-Y titles remain.
+        self.assertEqual(collapsed["titles_in_echo"], 3)
+        self.assertLess(collapsed["echo_index"], original["echo_index"])
+
+        # confirm which indices survive: group Y is indices 3,4,5
+        covered_before = me.rule_a_covered_titles(self.recs)
+        self.assertEqual(covered_before, {0, 1, 2, 3, 4, 5})
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)

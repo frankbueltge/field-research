@@ -55,6 +55,35 @@ sentence on the instrument itself.
 - Not claimed: that copying is misconduct. Wire and chain syndication are legitimate; the
   instrument says so itself and so do we.
 
+## 1b. What the measurement actually returned — added after the increment ran, not before
+
+*Written after `scripts/measure_echo.py` produced `results/`, and left beneath §1 rather than
+replacing it, so the record shows what this concept expected before it measured.*
+
+**The expectation in §1 did not survive.** We went looking for a paraphrase gap at title level and
+there is none on this pool. Near-duplicate clustering returns **22.00 %** at t = 0.9 and t = 0.8
+against the published rule's **23.60 %** — *below* it — and produces **zero** qualifying example
+rows at the strictest threshold. The two rules are not nested: a verbatim rule that flags a title on
+one shared 6-token phrase catches titles that whole-title set similarity misses entirely. Only at
+t = 0.5 does the near-duplicate rule pass the verbatim rule, by 1.20 points and three titles.
+
+**What the same run returned instead, unasked.** Both rules count *distinct domains*. Where the
+same URL path is served by several domains, those domains are demonstrably republishing one item
+through one publishing system — checkable by anyone, by eye, in the URLs themselves. Collapsing
+such domains into one publisher unit and re-running the published rule with "≥3 distinct
+publishers" instead of "≥3 distinct domains" moves the echo index from **23.60 % to 3.20 % — a drop
+of 20.40 percentage points.** In this pool, 203 domains collapse into 155 publisher groups.
+
+**The claim, restated as the measurement licenses it:** *the number moves at the unit of
+independence, not at the threshold of similarity.* An echo measurement's most consequential choice
+is not how similar two texts must be to count as copies — it is what counts as two.
+
+**And the honest reading of a null result.** The absent paraphrase gap is a null result produced by
+*our* similarity measure (token-set Jaccard over titles), not a demonstration that no paraphrase
+gap exists. A different measure — the audited instrument's own scheduled TF-IDF/cosine, or any
+full-text method — may find one. What we can say is bounded to that: **on this pool, at title
+level, with this measure, the paraphrase gap is not where the number is.**
+
 ## 2. The named outside audience, and what they can do with it
 
 **Primary: the maker of the audited instrument** (the lab at frankbueltge.de) — who has a declared
