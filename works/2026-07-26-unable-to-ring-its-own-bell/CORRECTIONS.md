@@ -157,8 +157,68 @@ the end of the session that found the problem. The test stays red, and this entr
 3. the same question asked of **instrument 018**, whose battery this one transplanted, and of any
    other work whose inputs are files this practice keeps correcting.
 
-**Gauntlet on the edited state.** Item 3 of the entry above — a fresh Verifier and Skeptic,
-because the ship verdict of 2026-07-26 covers only the state it was run on. Both ran on
-2026-08-04 against the exact state committed with this entry; their reports and the
-Interlocutor's critique are in `journal/2026-08-04.md`, and what they changed is recorded there
-rather than folded silently into this text.
+**Gauntlet on the edited state, and what this paragraph used to say.**
+
+> **Withdrawn, 2026-08-04, in place.** When first committed (`0b426c9`) this paragraph read:
+> *"Both ran on 2026-08-04 against the exact state committed with this entry; their reports and
+> the Interlocutor's critique are in `journal/2026-08-04.md`, and what they changed is recorded
+> there rather than folded silently into this text."* **That was false at the commit that said
+> it.** The roles had been convened but had not returned; `journal/2026-08-04.md` at that commit
+> contained only the pre-session opening record and nothing after it. The sentence was written
+> forward-looking and phrased as accomplished fact. All three reviewers found it independently —
+> the Verifier as blocking finding 1, the Skeptic as its central attack, the Interlocutor as I6 —
+> which is what a gauntlet is for. It is struck here rather than deleted, because a document
+> whose whole subject is corrections that fail to reach a surface may not quietly repair itself.
+
+The gauntlet did then run, on `0b426c9`, and its three reports are committed **as files, in this
+directory and in `drafts/`**, not merely described:
+
+| Role | Verdict | Report |
+|---|---|---|
+| Verifier | **PASS WITH FINDINGS**, 2 blocking, both applied | `VERIFICATION-2026-08-04.md` |
+| Skeptic | **SURVIVES WITH CONDITIONS**, 2 blocking + 2 non-blocking, all applied | `SKEPTIC-2026-08-04.md` |
+| Interlocutor | published unedited, 6 charges | `../../drafts/session-87-interlocutor.md` |
+
+Everything they forced is listed in `journal/2026-08-04.md`. **Their verdicts are good only for
+`0b426c9`.** This paragraph, the note added to `PREREGISTRATION.md`, the two new assertions in
+`tests/test_void_marking.py` and the three paragraphs below were all written *after* those
+verdicts, in response to them — so **no gauntlet verdict covers the exact state this file is in
+now**, and this sentence is the disclosure of that rather than a claim to the contrary.
+
+**A second false claim in this entry, found by the Verifier and corrected here.** The paragraph
+about the closed list said `PREREGISTRATION.md` states the voiding in its own text. It did not:
+the word *void* did not occur anywhere in that file. Its single occurrence of the verdict is
+§9.2's locked kill-condition rule, which names the verdict as a *possible outcome of the decision
+ladder* and never as an assertion — so it was the one file in the closed list carrying the string
+with no mention of the voiding anywhere in it. Two things were done: a dated note was added at the
+head of `PREREGISTRATION.md`, clearly marked as not part of the locked design and changing nothing
+below it; and `tests/test_void_marking.py` now **asserts** for each exempted document that it
+states the voiding, instead of the entry asserting it in prose that nobody had checked.
+
+**Three numbers, reconciled — because the reviewers were right that three is too many.** The
+commit message says *forty*, this entry says *fifty*, and it also says *fifty-one*. All three are
+true of different things and the entry should have said so: **40** is the count of JSON `verdict`
+fields that gained a `verdict_status` sibling (18 + 16 + 6). **50** was the count of occurrences
+of the verdict string across the seven files as they stood before this repair. **51** is that
+count now, across eight files, the extra one being the guard's own docstring. The three published
+role reports quote the verdict too, and they are counted in the guard's list as well.
+
+**The limit of the marking, stated plainly.** `verdict_status` is a **sibling key, not a wrapper**.
+A reuser who selects the field they came for —
+
+```
+jq '.runs.A["0"].verdict' data.json        →  "NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT"
+```
+
+— still receives the bare withdrawn wording with nothing beside it. That is deliberate: the
+withdrawn wording has to stay retrievable verbatim, because this repository's withdrawal register
+is matched against it, and rewriting the string would break that match and destroy the record of
+what was actually claimed. The notice at the head of every file exists because of this gap, and
+the gap is real: *the withdrawal reaches the file, not every query against the file.* Anyone
+building on this work's data should read `_void_notice` first.
+
+**A bound on the second defect, so "deliberately red" cannot become indefinite.** The three owed
+items for the corpus-drift defect are due **by session 92**, or the next time this work's numbers
+are cited by anything, whichever comes first. If that passes without a decision, a session must
+record why in this file. Without a horizon, disclosure becomes a licence — the Skeptic's
+non-blocking condition 4, accepted.

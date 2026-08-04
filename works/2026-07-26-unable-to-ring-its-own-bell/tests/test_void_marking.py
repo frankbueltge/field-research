@@ -20,12 +20,30 @@ than over fixtures, that the verdict and the notice never travel apart.
 It is deliberately a test and not a checklist. A note in a corrections file
 records that something was fixed; a test fails when it is unfixed again.
 
-WHAT IT DOES NOT DO
--------------------
-It checks the files this work publishes. It cannot check a copy of `data.json`
-that someone else has already taken, and it cannot check the prose of a third
-party who quotes the verdict. The marking is an offer to a future reader of this
-directory, not a recall.
+WHAT IT DOES NOT DO — written down because two reviewers had to find these
+------------------------------------------------------------------------
+1. **Nothing runs it automatically.** No hook, no gate, and no orientation ritual
+   in this repository runs any `works/*/tests/` suite. This guard fires only when
+   a human or a session runs it by hand. That is the same limit two earlier
+   guards in this repository carry (`tools/chronicle_check.py`,
+   `tools/requests_room_check.py`) and it was not written down until the session
+   87 Interlocutor pointed out that it hadn't been.
+2. **It is stricter on data than on prose.** For the three JSON files it checks
+   that the notice sits *beside* the verdict (sibling key), and for the summary
+   dump that it sits within four lines. For `work.astro`, `envelope_units.py`,
+   `test_classification_ladder.py` and this file it checks only that the voiding
+   is stated *somewhere* in the file. The pinned occurrence counts stop a new
+   unmarked occurrence appearing unnoticed, but proximity is not enforced there.
+3. **`verdict_status` is a sibling key, not a wrapper.** A reuser who selects the
+   `verdict` field alone still receives the bare withdrawn wording. That is
+   deliberate — the withdrawn wording must stay retrievable verbatim, because the
+   repository's withdrawal register is matched against it — and it is the reason
+   the notice is also at the head of every file. It is a real gap and it is
+   stated on the work's face rather than closed.
+4. **It checks the files this work publishes.** It cannot check a copy of
+   `data.json` someone has already taken, or a third party's prose quoting the
+   verdict. The marking is an offer to a future reader of this directory, not a
+   recall.
 """
 import json
 import os
@@ -143,10 +161,20 @@ class TestNoOtherPublishedFileCarriesItUnmarked(unittest.TestCase):
     """The counts above are a closed list. This test proves the list is closed."""
 
     SKIP_DIRS = {".git", "__pycache__"}
-    # Files whose occurrence is the correction record itself, or the locked
-    # design that defines the verdict as a possible outcome rather than
-    # asserting it. Both are marked in place and are not data.
-    ALLOWED_ELSEWHERE = {"CORRECTIONS.md", "README.md", "PREREGISTRATION.md", "meta.json"}
+    # Prose documents whose occurrence is the correction record itself, or the
+    # work's own description. Each must state the voiding in its own text, and
+    # the test below asserts that rather than taking it on trust — the session 87
+    # Verifier found that the entry claiming it had never been checked, and that
+    # one of the four did not in fact do it.
+    STATES_THE_VOIDING = {
+        "CORRECTIONS.md", "README.md", "meta.json", "PREREGISTRATION.md",
+        # The 2026-08-04 gauntlet's own reports, published unedited. They quote
+        # the verdict because they are checking the marking of it, and each says
+        # so in its own text. They are counted, not exempted, for the same reason
+        # the guard counts its own docstring.
+        "VERIFICATION-2026-08-04.md", "SKEPTIC-2026-08-04.md",
+    }
+    ALLOWED_ELSEWHERE = STATES_THE_VOIDING
 
     def test_every_occurrence_in_the_work_is_in_one_of_the_two_tables(self):
         known = set(JSON_FILES) | set(TEXT_FILES) | self.ALLOWED_ELSEWHERE
@@ -165,6 +193,21 @@ class TestNoOtherPublishedFileCarriesItUnmarked(unittest.TestCase):
                 if VERDICT in text:
                     stray.append(rel)
         self.assertEqual(stray, [], f"unaccounted occurrences of the voided verdict: {stray}")
+
+    def test_each_exempted_prose_document_really_does_state_the_voiding(self):
+        """The exemption is only legitimate if the file marks the occurrence itself.
+
+        Added 2026-08-04 after the Verifier established that the correction entry
+        asserted this of four files and it was true of only three.
+        """
+        for name in self.STATES_THE_VOIDING:
+            with self.subTest(file=name):
+                text = (WORK_DIR / name).read_text(encoding="utf-8")
+                self.assertIn(VERDICT, text, f"{name}: no longer carries the verdict at all")
+                self.assertRegex(
+                    text, r"[Vv]oid(ed|s|ing)?\b",
+                    f"{name}: carries the voided verdict and never says it was voided",
+                )
 
 
 if __name__ == "__main__":

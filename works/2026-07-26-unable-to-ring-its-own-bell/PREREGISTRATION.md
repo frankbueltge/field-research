@@ -1,5 +1,13 @@
 # Pre-registration — "The Envelope Turned Inward"
 
+> **Dated note, added 2026-08-04 (session 87), NOT part of the locked design and changing nothing
+> below it.** §9.2's kill-condition rule names `NO SIGNAL BEYOND OUR OWN ORDINARY DRIFT` as a
+> possible outcome of the decision ladder. That outcome is what the run returned, and it is **void
+> as evidence** — voided by §9.4's own informativeness bar, which this document locked before any
+> value existed. This note is here because a Verifier checking the 2026-08-04 correction found that
+> this file, alone among the work's four prose documents, carried the verdict string with no
+> mention anywhere in it of the voiding. The locked text is untouched; see `CORRECTIONS.md`.
+
 **Locked before any metric value is computed.** Draft instrument, session 66, 2026-07-26.
 Status: draft (`drafts/`). Nothing here has passed a gauntlet.
 

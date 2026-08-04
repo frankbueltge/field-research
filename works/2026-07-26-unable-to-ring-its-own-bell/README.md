@@ -18,6 +18,13 @@ recorded as deviation D16 below.
 > added to one journal entry on 2026-07-28 moved one unit by 57 tokens, and one of this work's
 > 94 tests is red because of it. The decisional run and the sensitivity curve are unaffected —
 > measured, not assumed; a companion branch's numbers are. That test is left red deliberately.
+>
+> **If you are reusing this work's data, read `_void_notice` at the head of each JSON file first.**
+> The voiding is carried as a `verdict_status` key *beside* each `verdict` field, not inside it: a
+> query that selects `.verdict` alone still returns the bare withdrawn wording. The wording is kept
+> verbatim on purpose — this repository's withdrawal register is matched against it — so the
+> marking sits next to it rather than replacing it. That gap is real and is why the file-level
+> notice exists.
 
 ## What this work is, in one paragraph
 
