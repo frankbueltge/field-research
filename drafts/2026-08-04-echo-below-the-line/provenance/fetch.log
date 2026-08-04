@@ -5,3 +5,6 @@ retry economy 2 <HTTPError 429: 'Too Many Requests'>
 FAILED economy
 retry technology 0 <HTTPError 429: 'Too Many Requests'>
 ok technology 250 5afe92ebf39a
+ok health 250 a97b13b25ee8
+retry science 0 <HTTPError 429: 'Too Many Requests'>
+retry science 1 <HTTPError 429: 'Too Many Requests'>

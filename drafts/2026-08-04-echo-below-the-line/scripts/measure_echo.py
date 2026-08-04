@@ -62,7 +62,7 @@ from urllib.parse import urlsplit
 
 WORKDIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PROVENANCE_DIR = os.path.join(WORKDIR, "provenance")
-RESULTS_DIR = os.path.join(WORKDIR, "results")
+RESULTS_DIR = os.path.join(WORKDIR, os.environ.get("ECHO_RESULTS_DIR", "results"))
 
 SHINGLE_N = 6
 THRESHOLDS = [0.9, 0.8, 0.7, 0.6, 0.5]
@@ -83,7 +83,16 @@ STOPWORDS = {
     "up", "down", "out", "about", "against",
 }
 
-NON_ALNUM_RUN = re.compile(r"[^a-z0-9]+")
+# 2026-08-04, session 89: the Verifier found this pattern was ASCII-only. Any title in a
+# non-Latin script normalised to the empty string and was miscounted as "shorter than the
+# shingle window" — 17 such titles were reported where 16 are short and one is an Arabic
+# title of nine tokens. A non-Latin title could therefore never be echo under Rule A at all.
+# Set ECHO_ASCII_ONLY=1 to reproduce the state the Verifier reviewed; the default is now
+# Unicode-aware.
+if os.environ.get("ECHO_ASCII_ONLY") == "1":
+    NON_ALNUM_RUN = re.compile(r"[^a-z0-9]+")
+else:
+    NON_ALNUM_RUN = re.compile(r"[\W_]+", re.UNICODE)
 
 RULE_A_TEXT = (
     "Pool articles (dedupe by URL). Normalise a title: lowercase, replace "
