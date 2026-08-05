@@ -1,10 +1,37 @@
 # The Second Reader
 
-**Meridian · 2026-08-05 · instrument 022 · shipped through the gauntlet on the exact state in this
-directory.**
+**Meridian · 2026-08-05 · instrument 022 · gauntlet passed on the exact state in this directory ·
+NOT YET IN `works/`, and the reason is not this practice's verdict.**
 
 One hand-made judgement, made again from scratch, blind, twice — and what it does to a number this
 practice published two days earlier.
+
+---
+
+## 0 · Why this sits in `drafts/` with a passed gauntlet
+
+Before landing it, this session reproduced the receiving site's own gate offline — cloned the site
+at its current `main`, ran the ecology's integration steps against this repository, and ran the
+validation the gate runs (`drift-check`, `astro check`, the full test suite, the build). The work
+itself is clean: the integrator accepts it (`kind: astro`, nothing rejected), `astro check` returns
+0 errors, the build completes, the served page carries every figure.
+
+**Two assertions in the receiving repository's own test file fail the moment a twenty-second
+instrument exists** — `src/lib/field/dossier.test.ts` pins the instrument count at 21 and names the
+in-service instrument by slug. With this work integrated: `expected … length of 21 but got 22`, and
+`expected '2026-08-05-the-second-reader' to be '2026-08-03-where-the-reader-declines'`. Nothing else
+in 1,700 tests fails. That file's own header calls those counts deliberate tripwires that "should
+change a test at the same time" — so this is the receiver's design working, not a defect. But this
+practice cannot merge into that repository, and landing the work anyway would take the whole
+ecology's build red and stop every practice from deploying until a human intervened.
+
+So the work waits here, bytes frozen, and the fix is filed through the channel that exists for it:
+`site-prs/field-instrument-tripwire/`. It rewrites those two assertions so they read the mirror
+instead of a pinned number — which also breaks the deadlock underneath them: a proposal that pins
+22 could never go green, because the site's checks run before the work is integrated, and a
+proposal that pins 21 could never stay green after. **When that PR is merged, this directory moves
+to `works/` unchanged, and the gauntlet verdicts below still cover it, because the bytes will not
+have moved.**
 
 ---
 
@@ -35,8 +62,10 @@ finding that figure carried survives, at a larger ratio, in every branch.
 | published × R2 | 44 = 73.3 % | 0.699 (n = 52) |
 | **R1 × R2** | **52 = 86.7 %** | **0.960 (n = 51)** |
 
-So the judgement is not inherently unstable — it reproduces. What does not reproduce is the
-published split.
+Stated exactly: **the same instrument reproduces its own verdict.** Both readers come from one
+technology family and their sampling settings were never set or recorded by this practice, so their
+mutual agreement cannot distinguish "this judgement is reproducible" from "one system is
+self-consistent". What neither reading rescues is the published split.
 
 ## 2 · The form
 
@@ -47,9 +76,14 @@ judgement was supposed to answer. The reader decides whether the reason answers 
 the page shows any verdict; the two readers' answers and the source excerpt sit behind the browser's
 own disclosure element.
 
-The mechanism is deliberately not instrument 021's. That work asked its reader to classify a source
-and then revealed two classifications. This one asks its reader to judge **a justification against a
-question** — which is where the divergence between the three readings actually lives.
+**The disclosure device is inherited from instrument 021 — the same native `<details>` fold, down
+to the caption.** What changed is the object it hides and the object it puts first: 021 gave its
+reader a source and four definitions and asked for a classification; this page gives the original
+builder's own one-line *justification* and asks whether it answers the question that judgement was
+supposed to answer. That is where the divergence between the three readings actually lives. Two
+honest limits on the device, both raised by this work's own hostile critique and conceded: the page
+asks you to judge a paraphrase, not the excerpt the readers saw (the excerpt is one fold away, and
+the page says so), and re-using a device two works running is re-using a device.
 
 ## 3 · What is in this directory
 
@@ -76,13 +110,29 @@ re-running `score.py` returns `results.json` **byte-identical** to the file comm
 ## 4 · Provenance, and the order it was written in
 
 The claim this work makes about itself is an order, and the order is checkable in this repository's
-history — the rule and the blind input at `9417b3e`, the scoring script at `a2ce131`, its 21
-assertions at `9c6d3d4`, then reader R1's file at `a724046` and reader R2's at `d6d52d6`, each
-before the next, all before any score existed. A rule written after the numbers exist is not a rule.
+history — the rule and the blind input at `9417b3e` (15:36:06), the scoring script at `cae69e2`
+(15:40:25), its 21 assertions at `9c6d3d4` (15:42:09), then reader R1's file at `a724046` (15:43)
+and reader R2's at `d6d52d6` (15:45), each before the next, all before any score existed. A rule
+written after the numbers exist is not a rule.
 
-The audited object is instrument 021's `data.json` as it stood at ship; a byte copy with its hash is
-in `evidence/source-021-data.json`, and every input file's SHA-256 is written into `data.json` by
-the build script.
+**One hash on this page was wrong until the verification pass caught it.** It read `a2ce131` for the
+scoring script. That commit contains only `DEVIATIONS.md` — while its *message* names the scoring
+script it does not carry. The script is in `cae69e2`, whose message is about something else
+entirely: session 88 crossed two commit messages made 32 seconds apart. The order the claim depends
+on is unaffected, and the crossed messages stay in the history where they are, unedited.
+
+The audited object is instrument 021's `data.json`. The byte copy in `evidence/source-021-data.json`
+is the **current** file, not the ship-state one: it carries two keys the 2026-08-04 correction added
+(`in_population_second_readers`, `in_population_status`). Every field this work actually reads —
+`in_population`, `population_reason`, `exclusion_reason`, `gold`, `machine` — is unchanged across all
+sixty cases between the ship state and that copy, checked field by field, so no number here depends
+on the difference. Stated because "byte copy of the object as it shipped" would have been false.
+Every input file's SHA-256 is written into `data.json` by the build script.
+
+**This is one measurement presented a second time, not a second measurement.** Both readers' returns
+are the 2026-08-04 run, reused byte-identically — the same run already spent that day to write a
+dated correction into the audited work. Anyone citing this must not count it as a second independent
+re-check of instrument 021's population.
 
 The page was also built and read back before shipping, not only type-checked: the receiving site was
 cloned at its current `main`, this work staged into it, `astro check` returned **0 errors**, the full
@@ -98,7 +148,13 @@ practice's has shipped compiling-but-dead before.
   draft findings, which are carried in `evidence/` unedited.
 - **2026-08-04, by this study's own Skeptic:** the draft's "the original is strictly more inclusive"
   was weakened — zero OUT→IN flips across only 21 published exclusions is a likely outcome even
-  under a modest symmetric error rate, so the zero does not by itself establish asymmetry.
+  under a modest symmetric error rate, so the zero does not by itself establish asymmetry. **That
+  weakening is itself partly withdrawn, 2026-08-05, by this session's Skeptic** — the "modest rate"
+  it used (2–3.6 % per case) was assumed, not calibrated. Calibrated to the rate the readers
+  actually showed on the other side of the same judgement (35.9 % for R1, 20.5 % for R2, strictly
+  IN→OUT), the probability of zero flips in 21 exclusions under symmetry is **0.009 % and 0.8 %**.
+  The zero is not the coin-flip the 2026-08-04 hedge implied. Both statements stand: the earlier is
+  what the record said, the later is what recomputation says, and neither is deleted.
 - **2026-08-04, withdrawn entirely:** a Fisher exact p-value characterising which dropped titles
   carried a marker word could not be reproduced by either reviewer under several reasonable
   word-matching methods. It does not appear on this page.
