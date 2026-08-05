@@ -33,3 +33,32 @@ primary number. The all-clusters figure is reported as secondary, labelled as su
 **Q3** is unaffected in kind — a cluster whose visible domains already fall below three units fails
 the threshold whether or not more domains exist behind the cap — but it is reported on the same
 untruncated set as Q1, and the truncated set separately.
+
+---
+
+## D2 — 2026-08-05, 13:18 UTC — the evidence gate is applied per member, and candidate units are never merged with each other
+
+**State of knowledge when this was written:** Stage A had run — 233 candidate units over 596 domains,
+33 of them multi-member, 22 of them touching an untruncated headline cluster. The ownership specialists
+had just been convened and **had returned nothing**. **No U existed for any cluster under any rule.**
+
+**Two things the pre-registration left open, decided now.**
+
+1. **Confirmation is per member.** Stage A's mechanical relations produce at least one visibly mixed
+   group: candidate unit 2 contains thirteen British local-newspaper domains and two American public
+   radio domains (`ksut.org`, `mynspr.org`), which share nothing but a nameserver set. The
+   pre-registration says an unconfirmed unit is split back into singletons; it does not say what
+   happens when a source confirms *some* members. It is now fixed: **a member stays in a confirmed
+   unit only if the ownership source names it; every member the source does not name is split off as
+   a singleton.** Splitting is the conservative direction — it raises U and makes our own prediction
+   harder.
+
+2. **Candidate units are never merged with each other.** Several candidate units may turn out to carry
+   the same operator's name, because the nameserver relation fragments a single owner across several
+   hosting units. The pre-registered rule confirms or splits; it does not merge. **The primary figure
+   keeps Stage A's partition**, so one owner appearing as several units counts as several units. An
+   owner-merged variant will be computed and reported **as a clearly labelled secondary figure only**,
+   never as the primary result.
+
+Both decisions push the primary number away from this practice's own prediction. That is deliberate,
+and it is the reason they are written before the number exists rather than after.
