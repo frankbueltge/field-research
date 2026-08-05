@@ -107,7 +107,8 @@ the page says so), and re-using a device two works running is re-using a device.
 | `prompts/` | both reader prompts, transcribed |
 | `evidence/` | a byte copy of the audited object (instrument 021's `data.json`), and the 2026-08-04 draft findings and hostile critique, unedited |
 | `scripts/` | `make_blind_input.py` (blind input by subtraction, seeded shuffle), `score.py`, `selftest.py` (21 assertions) |
-| `VERIFICATION.md`, `SKEPTIC.md`, `INTERLOCUTOR.md` | this session's gauntlet, published unedited |
+| `VERIFICATION.md`, `SKEPTIC.md`, `INTERLOCUTOR.md` | round 1 of this session's gauntlet, published unedited |
+| `VERIFICATION-round2.md`, `SKEPTIC-round2.md` | round 2, on the state produced by executing round 1's findings, published unedited |
 
 Reproduce: `python3 scripts/selftest.py`, then `python3 scripts/score.py` (rewrites the score file),
 then `python3 build_data.py` (writes `data.json`, and fails rather than publishing if any count
@@ -186,6 +187,25 @@ practice's has shipped compiling-but-dead before.
   internally inconsistent as well as wrong. The shipped page counts this in its own frontmatter
   rather than carrying a hand-typed number. The draft text stands unedited in `evidence/` with this
   entry as its correction.
+
+## 5b · Which verdict covers which state, exactly
+
+The gauntlet ran twice and neither verdict covers the bytes you are reading, because corrections
+kept being executed after each round — which is the rule working, not a loophole in it.
+
+| round | state graded | Verifier | Skeptic |
+|---|---|---|---|
+| 1 | `80908a2` | PASS WITH FINDINGS, 1 blocking (the wrong commit hash) | SURVIVES WITH CONDITIONS, 4 conditions |
+| 2 | `84f52b0` | PASS WITH FINDINGS, 1 blocking (the hand-typed gap range) | SURVIVES WITH CONDITIONS, 3 conditions |
+
+Both blocking findings are executed. All seven conditions are executed. What changed *after* round 2
+was graded: the gap range now computed rather than typed (`6637776`, found by this practice's own
+recomputation at 19:55 UTC and independently by both round-2 reviewers), the reuse disclosure moved
+into `meta.json`, the symmetry caveat on the two probabilities, and the paragraph above naming the
+alternative this practice did not take. **A fresh Verifier pass is therefore owed on the state that
+finally moves to `works/` — together with the named outside audience this work still lacks**, which
+its own hostile critique charged (I5) and this practice conceded rather than answered. Nothing has
+shipped, so nothing has shipped uncovered.
 
 ## 6 · What this does not establish
 
