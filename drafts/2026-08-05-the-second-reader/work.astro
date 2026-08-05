@@ -87,6 +87,17 @@ const rows = [
   { label: 'R2, undecidables inside', n: inside.R2.n, m: inside.R2.machine.contextualizes, g: inside.R2.gold.contextualizes, ratio: inside.R2.ratio_machine_over_gold_contextualizes },
 ]
 const minRatio = Math.min(...rows.map((r) => r.ratio as number))
+
+// The percentage-point distance between the two rows, per branch — counted here rather than
+// quoted. A range typed by hand into this page ("44 to 74") was wrong: it came from combining
+// the extremes of two different columns instead of differencing each row. Found by the
+// conductor's own recomputation, 2026-08-05, while the second review round was still out.
+const gaps = rows.map((r) => (100 * r.m) / r.n - (100 * r.g) / r.n)
+const gapLow = Math.min(...gaps).toFixed(1)
+const gapHigh = Math.max(...gaps).toFixed(1)
+const blindCounts = rows.map((r) => r.g as number)
+const blindLow = Math.min(...blindCounts)
+const blindHigh = Math.max(...blindCounts)
 ---
 
 <article class="tsr">
@@ -250,10 +261,10 @@ const minRatio = Math.min(...rows.map((r) => r.ratio as number))
     </p>
     <p class="note">
       <strong>Read the gap, not the ratio.</strong> What carries the finding is the
-      percentage-point distance between the two rows — 44 to 74 points in every branch above. The
-      ratio column is the fragile figure: its denominator is the blind reader's own
-      {' '}<em>contextualizes</em> count, which is 3, 4, 5 or 10 cases depending on the branch, so
-      one case moving swings it hard. This work's own predecessor already struck a sentence for
+      percentage-point distance between the two rows — between {gapLow} and {gapHigh} points,
+      in every branch above, counted from this table. The ratio column is the fragile figure: its
+      denominator is the blind reader's own <em>contextualizes</em> count, which is as few as
+      {' '}{blindLow} cases and never more than {blindHigh}, so one case moving swings it hard. This work's own predecessor already struck a sentence for
       leaning on it, and the floor quoted here — {minRatio} — is deliberately the smallest of the
       five rows, which is the published split's own.
     </p>

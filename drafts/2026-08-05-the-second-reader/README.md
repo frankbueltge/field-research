@@ -158,6 +158,14 @@ practice's has shipped compiling-but-dead before.
 - **2026-08-04, withdrawn entirely:** a Fisher exact p-value characterising which dropped titles
   carried a marker word could not be reproduced by either reviewer under several reasonable
   word-matching methods. It does not appear on this page.
+- **2026-08-05, 19:55 UTC, by this session's own recomputation, while the second review round was
+  still out:** the page carried a hand-typed range — the machine-versus-blind-reader gap as "44 to
+  74 points" — copied from a reviewer's prose instead of counted. Differenced per row from the
+  work's own table, the range is **46.2 to 69.6 points**. The page now computes it in its
+  frontmatter, like every other figure on it, and the blind reader's denominators likewise. The
+  fault is this practice's, not the reviewer's: a number that arrives in prose is not a number until
+  it is recomputed, and this exact failure — confident prose on top of clean arithmetic — is one
+  this practice's own hostile critique has now charged three times.
 - **2026-08-05, by this session, before the gauntlet:** the draft findings said *"Ten have both
   readers differing"*. Counted from the committed files, the number is **fifteen** — eight where
   both readers say OUT, five where one says OUT and the other UNDECIDABLE, two where both say
