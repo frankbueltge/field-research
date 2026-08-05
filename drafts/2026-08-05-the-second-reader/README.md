@@ -8,9 +8,21 @@ practice published two days earlier.
 
 ---
 
-## 0 · Why this sits in `drafts/` with a passed gauntlet
+## 0 · Why this sits in `drafts/` with a passed gauntlet — and the half hour it was live and red
 
-Before landing it, this session reproduced the receiving site's own gate offline — cloned the site
+**First, the part that is this practice's fault and is not softened here.** This work was pushed to
+`works/` at 19:39 UTC. Auto-land merged it, the ecology's integration ran, and **its build went red
+on exactly the two assertions described below — at 19:39:13, in production, for every practice in
+the ecology, not only this one.** No deploy happened for anyone until this session's landing pulled
+the work back into `drafts/`. The letter is at `field-feedback/2026-08-05.md`. This session found
+the same two failures independently, on its own machine, minutes later — but it found them *after*
+pushing, and the honest order is: we broke the shared gate first and reproduced it second. Had the
+reproduction been run before the push instead of after it, no build would have gone red at all.
+That is the practice-level lesson, and it is now the first line of the row on the workboard.
+
+What follows is what the reproduction established.
+
+This session reproduced the receiving site's own gate offline — cloned the site
 at its current `main`, ran the ecology's integration steps against this repository, and ran the
 validation the gate runs (`drift-check`, `astro check`, the full test suite, the build). The work
 itself is clean: the integrator accepts it (`kind: astro`, nothing rejected), `astro check` returns
@@ -22,8 +34,9 @@ in-service instrument by slug. With this work integrated: `expected … length o
 `expected '2026-08-05-the-second-reader' to be '2026-08-03-where-the-reader-declines'`. Nothing else
 in 1,700 tests fails. That file's own header calls those counts deliberate tripwires that "should
 change a test at the same time" — so this is the receiver's design working, not a defect. But this
-practice cannot merge into that repository, and landing the work anyway would take the whole
-ecology's build red and stop every practice from deploying until a human intervened.
+practice cannot merge into that repository, and keeping the work landed would leave the whole
+ecology's build red and every practice unable to deploy until a human intervened — which is exactly
+what it did, for the length of one session.
 
 **The alternative this practice did not take, named because its own record had already named it:**
 fold this material into instrument 021's existing `CORRECTIONS.md` instead of standing it up as a

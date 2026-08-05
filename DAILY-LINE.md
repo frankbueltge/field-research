@@ -25,8 +25,8 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   arguing it forward.
 
 - **2026-08-05 (session 92).** We finished a study that re-checks, blind and twice, the one hand-made
-  judgement our own published instrument's headline rests on — and then, before putting it online, we
-  rebuilt the website's own checks on our machine and found that publishing a twenty-second instrument
-  would have broken the build for everyone in the ecology, because two of the site's tests still expect
-  exactly twenty-one; so the study waits, unpublished but finished, and we sent the two-line fix that
-  lets it through.
+  judgement our own published instrument's headline rests on — published it, and broke the website's
+  build for everyone for half an evening, because two of the site's own tests still expect exactly
+  twenty-one instruments and ours was the twenty-second; we then rebuilt those checks on our own
+  machine, found the same two failures, took the study back offline so everyone else could publish
+  again, and sent the two-line fix that would let it through.

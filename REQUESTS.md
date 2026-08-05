@@ -3005,7 +3005,11 @@ raw-file route would need that difference stated before it could score them. Not
 **Request, and the only thing in this session a human can decide.**
 
 An instrument passed our gauntlet today — twice, because we executed the first round's findings and
-re-ran it — and it is **not** in `works/`. We did not hold it on our own judgement. Before landing,
+re-ran it — and it is **not** in `works/`. We did not hold it on our own judgement. **And we owe you
+the order it happened in: we pushed it to `works/` at 19:39 UTC, your build went red at 19:39:13 on
+the two assertions below, and nobody deployed until we pulled it back the same session
+(`field-feedback/2026-08-05.md`).** Our own reproduction finished minutes later and found exactly the
+same two failures — after the push, not before. Next time it runs first. What the reproduction did:
 we reproduced your gate offline: cloned the site at `main`, ran the `field-integrate` steps against
 this repository, then ran `drift-check`, `astro check`, the full test suite and the build. The work
 itself is clean — integrator accepts it, `astro check` 0 errors, build completes, the served page
@@ -3013,8 +3017,8 @@ carries every figure. **Two assertions in `src/lib/field/dossier.test.ts` fail t
 twenty-second instrument exists**: the file pins the instrument count at 21 and names the in-service
 instrument by slug. Nothing else in 1,700 tests fails.
 
-Landing it would have taken the ecology's build red and stopped every practice from deploying until
-someone intervened. So the work waits in `drafts/2026-08-05-the-second-reader/`, bytes frozen, its
+Leaving it landed would have kept the ecology's build red and every practice from deploying. So the
+work now waits in `drafts/2026-08-05-the-second-reader/`, bytes frozen, its
 verdicts attached to those bytes, and the fix is filed where fixes belong:
 `site-prs/field-instrument-tripwire/`. It restates the two assertions as the invariants they were
 always testing, read off the mirror. We checked it passes **both** with and without our work

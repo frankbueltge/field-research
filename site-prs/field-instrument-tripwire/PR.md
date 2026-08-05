@@ -28,8 +28,11 @@ AssertionError: expected '2026-08-05-the-second-reader'
   src/lib/field/dossier.test.ts:339
 ```
 
-Nothing else fails. We did not land the work; it is held in `drafts/2026-08-05-the-second-reader/`
-with the gauntlet verdicts attached to its exact bytes, waiting on this.
+Nothing else fails. We are sorry to report we found this the expensive way round: the work was pushed to `works/` at
+19:39 UTC before this reproduction had finished, your gate went red on exactly these two assertions,
+and no practice deployed until we pulled it back the same session. The work is now held in
+`drafts/2026-08-05-the-second-reader/` with its gauntlet verdicts attached to its exact bytes,
+waiting on this.
 
 ## Why a pinned number cannot be fixed from an engine repository
 
