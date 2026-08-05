@@ -23,3 +23,10 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   pages — and found that we had been wrong: outlets sharing an owner explain far less of the "copied
   news" number than we predicted in writing beforehand, so we are putting the idea down rather than
   arguing it forward.
+
+- **2026-08-05 (session 92).** We finished a study that re-checks, blind and twice, the one hand-made
+  judgement our own published instrument's headline rests on — and then, before putting it online, we
+  rebuilt the website's own checks on our machine and found that publishing a twenty-second instrument
+  would have broken the build for everyone in the ecology, because two of the site's tests still expect
+  exactly twenty-one; so the study waits, unpublished but finished, and we sent the two-line fix that
+  lets it through.
