@@ -1,0 +1,3931 @@
+{
+ "n_domains": 596,
+ "n_candidate_units": 233,
+ "units": [
+  {
+   "id": "cand-1013kissfm.iheart.com",
+   "size": 109,
+   "members": [
+    "1013kissfm.iheart.com",
+    "1019bigwaax.iheart.com",
+    "1021thebull.iheart.com",
+    "1061fmtalk.iheart.com",
+    "1075kissfm.iheart.com",
+    "107mus.iheart.com",
+    "1190kex.iheart.com",
+    "1430kasi.iheart.com",
+    "1450wkip.iheart.com",
+    "55krc.iheart.com",
+    "570wkbn.iheart.com",
+    "600wrec.iheart.com",
+    "650keni.iheart.com",
+    "790waeb.iheart.com",
+    "800wvhu.iheart.com",
+    "925wpap.iheart.com",
+    "937now.iheart.com",
+    "943wsc.iheart.com",
+    "953bull.iheart.com",
+    "955thebull.iheart.com",
+    "95ksj.iheart.com",
+    "95wxtk.iheart.com",
+    "961kissonline.iheart.com",
+    "963starcountry.iheart.com",
+    "969thekat.iheart.com",
+    "973thebullicons.iheart.com",
+    "975online.iheart.com",
+    "975wcos.iheart.com",
+    "979kissfm.iheart.com",
+    "97kicksfm.iheart.com",
+    "991kglx.iheart.com",
+    "999xtc.iheart.com",
+    "aggie96.iheart.com",
+    "b100wobb.iheart.com",
+    "big1047.iheart.com",
+    "big955chicago.iheart.com",
+    "bill95.iheart.com",
+    "bob949.iheart.com",
+    "buckeyecountry943.iheart.com",
+    "bull1057.iheart.com",
+    "channeldayton.iheart.com",
+    "country1005.iheart.com",
+    "ctqcountry.iheart.com",
+    "hot1019nwa.iheart.com",
+    "hot949fm.iheart.com",
+    "jetradio1400.iheart.com",
+    "kbmr.iheart.com",
+    "kc101.iheart.com",
+    "kfyi.iheart.com",
+    "khvhradio.iheart.com",
+    "kiak.iheart.com",
+    "kiss1067.iheart.com",
+    "kiss959fm.iheart.com",
+    "kissfmhv.iheart.com",
+    "kisslima.iheart.com",
+    "kisswheeling.iheart.com",
+    "kix104.iheart.com",
+    "kixcountry929.iheart.com",
+    "kj97.iheart.com",
+    "klvi.iheart.com",
+    "knrs.iheart.com",
+    "knst.iheart.com",
+    "kogo.iheart.com",
+    "kssn.iheart.com",
+    "ktok.iheart.com",
+    "kwhn.iheart.com",
+    "kykr.iheart.com",
+    "mykiss951.iheart.com",
+    "mysouth1061.iheart.com",
+    "newsradio1290wtks.iheart.com",
+    "newsradio540.iheart.com",
+    "newsradio910wltp.iheart.com",
+    "newsradio967.iheart.com",
+    "newsradiori.iheart.com",
+    "newstalk1230.iheart.com",
+    "newstalk1400online.iheart.com",
+    "patriotla.iheart.com",
+    "power973.iheart.com",
+    "powertalk1460.iheart.com",
+    "q102.iheart.com",
+    "star104.iheart.com",
+    "talk1200boston.iheart.com",
+    "talkradio1080.iheart.com",
+    "thebig98.iheart.com",
+    "thekat.iheart.com",
+    "thetwister.iheart.com",
+    "wbhpam.iheart.com",
+    "wdov.iheart.com",
+    "wdrm.iheart.com",
+    "wflanews.iheart.com",
+    "wflaorlando.iheart.com",
+    "wgiram.iheart.com",
+    "wgy.iheart.com",
+    "wham1180.iheart.com",
+    "whoradio.iheart.com",
+    "whyn.iheart.com",
+    "wjbo.iheart.com",
+    "wjno.iheart.com",
+    "wlac.iheart.com",
+    "wlap.iheart.com",
+    "wmeq.iheart.com",
+    "wmmbam.iheart.com",
+    "wnoe.iheart.com",
+    "wonw1280.iheart.com",
+    "woodradio.iheart.com",
+    "wpoc.iheart.com",
+    "wrko.iheart.com",
+    "wrno.iheart.com",
+    "z107fm.iheart.com"
+   ],
+   "relation_counts": {
+    "A1": 108,
+    "A2": 108
+   },
+   "ns_sets": [
+    "pdns196.ultradns.biz|pdns196.ultradns.co.uk|pdns196.ultradns.com|pdns196.ultradns.info|pdns196.ultradns.net|pdns196.ultradns.org"
+   ],
+   "final_hosts": [
+    "1013kissfm.iheart.com",
+    "1019bigwaax.iheart.com",
+    "1021thebull.iheart.com",
+    "1061fmtalk.iheart.com",
+    "1075kissfm.iheart.com",
+    "107mus.iheart.com",
+    "1190kex.iheart.com",
+    "1430kasi.iheart.com",
+    "1450wkip.iheart.com",
+    "55krc.iheart.com",
+    "570wkbn.iheart.com",
+    "600wrec.iheart.com",
+    "650keni.iheart.com",
+    "790waeb.iheart.com",
+    "800wvhu.iheart.com",
+    "925wpap.iheart.com",
+    "937now.iheart.com",
+    "943wsc.iheart.com",
+    "953bull.iheart.com",
+    "955thebull.iheart.com",
+    "95ksj.iheart.com",
+    "95wxtk.iheart.com",
+    "961kissonline.iheart.com",
+    "963starcountry.iheart.com",
+    "969thekat.iheart.com",
+    "973thebullicons.iheart.com",
+    "975online.iheart.com",
+    "975wcos.iheart.com",
+    "979kissfm.iheart.com",
+    "97kicksfm.iheart.com",
+    "991kglx.iheart.com",
+    "999xtc.iheart.com",
+    "aggie96.iheart.com",
+    "b100wobb.iheart.com",
+    "big1047.iheart.com",
+    "big955chicago.iheart.com",
+    "bill95.iheart.com",
+    "bob949.iheart.com",
+    "buckeyecountry943.iheart.com",
+    "bull1057.iheart.com",
+    "channeldayton.iheart.com",
+    "country1005.iheart.com",
+    "ctqcountry.iheart.com",
+    "hot1019nwa.iheart.com",
+    "hot949fm.iheart.com",
+    "jetradio1400.iheart.com",
+    "kbmr.iheart.com",
+    "kc101.iheart.com",
+    "kfyi.iheart.com",
+    "kiak.iheart.com",
+    "kiss1067.iheart.com",
+    "kiss959fm.iheart.com",
+    "kissfmhv.iheart.com",
+    "kisslima.iheart.com",
+    "kisswheeling.iheart.com",
+    "kix104.iheart.com",
+    "kixcountry929.iheart.com",
+    "kj97.iheart.com",
+    "klvi.iheart.com",
+    "knrs.iheart.com",
+    "knst.iheart.com",
+    "kogo.iheart.com",
+    "kssn.iheart.com",
+    "ktok.iheart.com",
+    "kwhn.iheart.com",
+    "kykr.iheart.com",
+    "mykiss951.iheart.com",
+    "mysouth1061.iheart.com",
+    "newsradio1290wtks.iheart.com",
+    "newsradio540.iheart.com",
+    "newsradio910wltp.iheart.com",
+    "newsradio967.iheart.com",
+    "newsradiori.iheart.com",
+    "newstalk1230.iheart.com",
+    "newstalk1400online.iheart.com",
+    "patriotla.iheart.com",
+    "power973.iheart.com",
+    "powertalk1460.iheart.com",
+    "q102.iheart.com",
+    "star104.iheart.com",
+    "talk1200boston.iheart.com",
+    "talkradio1080.iheart.com",
+    "thebig98.iheart.com",
+    "thekat.iheart.com",
+    "thetwister.iheart.com",
+    "wbhpam.iheart.com",
+    "wdov.iheart.com",
+    "wdrm.iheart.com",
+    "wflanews.iheart.com",
+    "wflaorlando.iheart.com",
+    "wgiram.iheart.com",
+    "wgy.iheart.com",
+    "wham1180.iheart.com",
+    "whoradio.iheart.com",
+    "whyn.iheart.com",
+    "wjbo.iheart.com",
+    "wjno.iheart.com",
+    "wlac.iheart.com",
+    "wlap.iheart.com",
+    "wmeq.iheart.com",
+    "wmmbam.iheart.com",
+    "wnoe.iheart.com",
+    "wonw1280.iheart.com",
+    "woodradio.iheart.com",
+    "wpoc.iheart.com",
+    "wrko.iheart.com",
+    "wrno.iheart.com",
+    "z107fm.iheart.com"
+   ]
+  },
+  {
+   "id": "cand-afghanistannews.net",
+   "size": 79,
+   "members": [
+    "afghanistannews.net",
+    "afghanistansun.com",
+    "africaleader.com",
+    "albuquerqueexpress.com",
+    "argentinastar.com",
+    "asiabulletin.com",
+    "austinglobe.com",
+    "australiannews.net",
+    "azerbaijannews.net",
+    "bangladeshsun.com",
+    "batonrougepost.com",
+    "bignewsnetwork.com",
+    "birminghamstar.com",
+    "bostonstar.com",
+    "brazilsun.com",
+    "britainnews.net",
+    "bruneinews.net",
+    "cambodiantimes.com",
+    "caribbeanherald.com",
+    "cincinnatisun.com",
+    "clevelandstar.com",
+    "coloradostar.com",
+    "dallassun.com",
+    "europesun.com",
+    "floridastatesman.com",
+    "greekherald.com",
+    "haitisun.com",
+    "hawaiitelegraph.com",
+    "heraldglobe.com",
+    "hongkongherald.com",
+    "indiagazette.com",
+    "iranherald.com",
+    "iraqsun.com",
+    "irishsun.com",
+    "israelherald.com",
+    "jamaicantimes.com",
+    "japanherald.com",
+    "londonmercury.com",
+    "mainemirror.com",
+    "malaysiasun.com",
+    "massachusettssun.com",
+    "memphissun.com",
+    "mexicostar.com",
+    "middleeaststar.com",
+    "milwaukeesun.com",
+    "nashvilleherald.com",
+    "nepalnational.com",
+    "neworleanssun.com",
+    "newyorkstatesman.com",
+    "newyorktelegraph.com",
+    "newzealandstar.com",
+    "nigeriasun.com",
+    "northkoreatimes.com",
+    "ohiostandard.com",
+    "oklahomacitysun.com",
+    "orlandoecho.com",
+    "pakistantelegraph.com",
+    "parisguardian.com",
+    "phoenixherald.com",
+    "pittsburghstar.com",
+    "russiaherald.com",
+    "saltlakecitysun.com",
+    "sanantoniopost.com",
+    "sandiegosun.com",
+    "shanghaisun.com",
+    "sierraleonetimes.com",
+    "singaporestar.com",
+    "srilankasource.com",
+    "sydneysun.com",
+    "taiwansun.com",
+    "tennesseedaily.com",
+    "texasguardian.com",
+    "theuknews.com",
+    "torontotelegraph.com",
+    "trinidadtimes.com",
+    "tucsonpost.com",
+    "utahindependent.com",
+    "vietnamtribune.com",
+    "zimbabwestar.com"
+   ],
+   "relation_counts": {
+    "A2": 78
+   },
+   "ns_sets": [
+    "dana.ns.cloudflare.com|yichun.ns.cloudflare.com"
+   ],
+   "final_hosts": [
+    "afghanistannews.net",
+    "afghanistansun.com",
+    "africaleader.com",
+    "albuquerqueexpress.com",
+    "argentinastar.com",
+    "asiabulletin.com",
+    "austinglobe.com",
+    "australiannews.net",
+    "azerbaijannews.net",
+    "bangladeshsun.com",
+    "batonrougepost.com",
+    "bignewsnetwork.com",
+    "birminghamstar.com",
+    "bostonstar.com",
+    "britainnews.net",
+    "bruneinews.net",
+    "cambodiantimes.com",
+    "caribbeanherald.com",
+    "cincinnatisun.com",
+    "clevelandstar.com",
+    "coloradostar.com",
+    "dallassun.com",
+    "europesun.com",
+    "floridastatesman.com",
+    "greekherald.com",
+    "haitisun.com",
+    "hawaiitelegraph.com",
+    "heraldglobe.com",
+    "hongkongherald.com",
+    "indiagazette.com",
+    "iranherald.com",
+    "iraqsun.com",
+    "irishsun.com",
+    "israelherald.com",
+    "jamaicantimes.com",
+    "japanherald.com",
+    "londonmercury.com",
+    "mainemirror.com",
+    "malaysiasun.com",
+    "massachusettssun.com",
+    "memphissun.com",
+    "mexicostar.com",
+    "middleeaststar.com",
+    "milwaukeesun.com",
+    "nashvilleherald.com",
+    "nepalnational.com",
+    "neworleanssun.com",
+    "newyorkstatesman.com",
+    "newyorktelegraph.com",
+    "newzealandstar.com",
+    "nigeriasun.com",
+    "northkoreatimes.com",
+    "ohiostandard.com",
+    "oklahomacitysun.com",
+    "orlandoecho.com",
+    "pakistantelegraph.com",
+    "parisguardian.com",
+    "phoenixherald.com",
+    "pittsburghstar.com",
+    "russiaherald.com",
+    "saltlakecitysun.com",
+    "sanantoniopost.com",
+    "sandiegosun.com",
+    "shanghaisun.com",
+    "sierraleonetimes.com",
+    "singaporestar.com",
+    "srilankasource.com",
+    "sydneysun.com",
+    "taiwansun.com",
+    "tennesseedaily.com",
+    "texasguardian.com",
+    "theuknews.com",
+    "torontotelegraph.com",
+    "trinidadtimes.com",
+    "tucsonpost.com",
+    "utahindependent.com",
+    "vietnamtribune.com",
+    "zimbabwestar.com"
+   ]
+  },
+  {
+   "id": "cand-asianimage.co.uk",
+   "size": 19,
+   "members": [
+    "asianimage.co.uk",
+    "bicesteradvertiser.net",
+    "bucksfreepress.co.uk",
+    "chesterstandard.co.uk",
+    "clydebankpost.co.uk",
+    "denbighshirefreepress.co.uk",
+    "ealingtimes.co.uk",
+    "eppingforestguardian.co.uk",
+    "eveningnews24.co.uk",
+    "heraldseries.co.uk",
+    "kilburntimes.co.uk",
+    "leighjournal.co.uk",
+    "northwalespioneer.co.uk",
+    "richmondandtwickenhamtimes.co.uk",
+    "sthelensstar.co.uk",
+    "stourbridgenews.co.uk",
+    "tivysideadvertiser.co.uk",
+    "wandsworthguardian.co.uk",
+    "warringtonguardian.co.uk"
+   ],
+   "relation_counts": {
+    "A2": 18
+   },
+   "ns_sets": [
+    "ns1-02.azure-dns.com|ns2-02.azure-dns.net|ns3-02.azure-dns.org|ns4-02.azure-dns.info"
+   ],
+   "final_hosts": [
+    "asianimage.co.uk",
+    "bicesteradvertiser.net",
+    "bucksfreepress.co.uk",
+    "chesterstandard.co.uk",
+    "clydebankpost.co.uk",
+    "denbighshirefreepress.co.uk",
+    "ealingtimes.co.uk",
+    "eppingforestguardian.co.uk",
+    "eveningnews24.co.uk",
+    "heraldseries.co.uk",
+    "kilburntimes.co.uk",
+    "leighjournal.co.uk",
+    "northwalespioneer.co.uk",
+    "richmondandtwickenhamtimes.co.uk",
+    "sthelensstar.co.uk",
+    "stourbridgenews.co.uk",
+    "tivysideadvertiser.co.uk",
+    "wandsworthguardian.co.uk",
+    "warringtonguardian.co.uk"
+   ]
+  },
+  {
+   "id": "cand-bracknellnews.co.uk",
+   "size": 17,
+   "members": [
+    "bracknellnews.co.uk",
+    "brentwoodlive.co.uk",
+    "enfieldindependent.co.uk",
+    "glasgowtimes.co.uk",
+    "hampshirechronicle.co.uk",
+    "harwichandmanningtreestandard.co.uk",
+    "hillingdontimes.co.uk",
+    "kidderminstershuttle.co.uk",
+    "ludlowadvertiser.co.uk",
+    "messengernewspapers.co.uk",
+    "northwichguardian.co.uk",
+    "sloughobserver.co.uk",
+    "southwalesargus.co.uk",
+    "southwalesguardian.co.uk",
+    "surreycomet.co.uk",
+    "theargus.co.uk",
+    "theboltonnews.co.uk"
+   ],
+   "relation_counts": {
+    "A2": 16
+   },
+   "ns_sets": [
+    "ns1-04.azure-dns.com|ns2-04.azure-dns.net|ns3-04.azure-dns.org|ns4-04.azure-dns.info"
+   ],
+   "final_hosts": [
+    "bracknellnews.co.uk",
+    "brentwoodlive.co.uk",
+    "enfieldindependent.co.uk",
+    "glasgowtimes.co.uk",
+    "hampshirechronicle.co.uk",
+    "harwichandmanningtreestandard.co.uk",
+    "hillingdontimes.co.uk",
+    "kidderminstershuttle.co.uk",
+    "ludlowadvertiser.co.uk",
+    "messengernewspapers.co.uk",
+    "northwichguardian.co.uk",
+    "sloughobserver.co.uk",
+    "southwalesargus.co.uk",
+    "southwalesguardian.co.uk",
+    "surreycomet.co.uk",
+    "theargus.co.uk",
+    "theboltonnews.co.uk"
+   ]
+  },
+  {
+   "id": "cand-andoveradvertiser.co.uk",
+   "size": 15,
+   "members": [
+    "andoveradvertiser.co.uk",
+    "barryanddistrictnews.co.uk",
+    "borehamwoodtimes.co.uk",
+    "bridgwatermercury.co.uk",
+    "burnhamandhighbridgeweeklynews.co.uk",
+    "countypress.co.uk",
+    "countytimes.co.uk",
+    "falmouthpacket.co.uk",
+    "freepressseries.co.uk",
+    "harrowtimes.co.uk",
+    "irvinetimes.com",
+    "milfordmercury.co.uk",
+    "thenorthernecho.co.uk",
+    "wiltsglosstandard.co.uk",
+    "yorkpress.co.uk"
+   ],
+   "relation_counts": {
+    "A2": 14
+   },
+   "ns_sets": [
+    "ns1-07.azure-dns.com|ns2-07.azure-dns.net|ns3-07.azure-dns.org|ns4-07.azure-dns.info"
+   ],
+   "final_hosts": [
+    "andoveradvertiser.co.uk",
+    "barryanddistrictnews.co.uk",
+    "borehamwoodtimes.co.uk",
+    "bridgwatermercury.co.uk",
+    "burnhamandhighbridgeweeklynews.co.uk",
+    "countypress.co.uk",
+    "countytimes.co.uk",
+    "falmouthpacket.co.uk",
+    "freepressseries.co.uk",
+    "harrowtimes.co.uk",
+    "irvinetimes.com",
+    "milfordmercury.co.uk",
+    "thenorthernecho.co.uk",
+    "wiltsglosstandard.co.uk",
+    "yorkpress.co.uk"
+   ]
+  },
+  {
+   "id": "cand-bournemouthecho.co.uk",
+   "size": 15,
+   "members": [
+    "bournemouthecho.co.uk",
+    "chelmsfordweeklynews.co.uk",
+    "dudleynews.co.uk",
+    "gazetteandherald.co.uk",
+    "guardian-series.co.uk",
+    "ipswichstar.co.uk",
+    "ksut.org",
+    "lancashiretelegraph.co.uk",
+    "mynspr.org",
+    "newsshopper.co.uk",
+    "northwaleschronicle.co.uk",
+    "nwemail.co.uk",
+    "oxfordmail.co.uk",
+    "salisburyjournal.co.uk",
+    "swindonadvertiser.co.uk"
+   ],
+   "relation_counts": {
+    "A2": 14
+   },
+   "ns_sets": [
+    "ns1-09.azure-dns.com|ns2-09.azure-dns.net|ns3-09.azure-dns.org|ns4-09.azure-dns.info"
+   ],
+   "final_hosts": [
+    "bournemouthecho.co.uk",
+    "chelmsfordweeklynews.co.uk",
+    "dudleynews.co.uk",
+    "gazetteandherald.co.uk",
+    "guardian-series.co.uk",
+    "ipswichstar.co.uk",
+    "lancashiretelegraph.co.uk",
+    "newsshopper.co.uk",
+    "northwaleschronicle.co.uk",
+    "nwemail.co.uk",
+    "oxfordmail.co.uk",
+    "salisburyjournal.co.uk",
+    "swindonadvertiser.co.uk"
+   ]
+  },
+  {
+   "id": "cand-braintreeandwithamtimes.co.uk",
+   "size": 14,
+   "members": [
+    "braintreeandwithamtimes.co.uk",
+    "eadt.co.uk",
+    "eveshamjournal.co.uk",
+    "gazette-news.co.uk",
+    "gazetteherald.co.uk",
+    "halsteadgazette.co.uk",
+    "hexham-courant.co.uk",
+    "ledburyreporter.co.uk",
+    "peeblesshirenews.com",
+    "redditchadvertiser.co.uk",
+    "westerntelegraph.co.uk",
+    "whtimes.co.uk",
+    "wiltshiretimes.co.uk",
+    "yourlocalguardian.co.uk"
+   ],
+   "relation_counts": {
+    "A2": 13
+   },
+   "ns_sets": [
+    "ns1-06.azure-dns.com|ns2-06.azure-dns.net|ns3-06.azure-dns.org|ns4-06.azure-dns.info"
+   ],
+   "final_hosts": [
+    "braintreeandwithamtimes.co.uk",
+    "eadt.co.uk",
+    "eveshamjournal.co.uk",
+    "gazette-news.co.uk",
+    "gazetteherald.co.uk",
+    "halsteadgazette.co.uk",
+    "hexham-courant.co.uk",
+    "ledburyreporter.co.uk",
+    "peeblesshirenews.com",
+    "redditchadvertiser.co.uk",
+    "westerntelegraph.co.uk",
+    "whtimes.co.uk",
+    "wiltshiretimes.co.uk",
+    "yourlocalguardian.co.uk"
+   ]
+  },
+  {
+   "id": "cand-bromsgroveadvertiser.co.uk",
+   "size": 14,
+   "members": [
+    "bromsgroveadvertiser.co.uk",
+    "chardandilminsternews.co.uk",
+    "clactonandfrintongazette.co.uk",
+    "dailyecho.co.uk",
+    "echo-news.co.uk",
+    "edp24.co.uk",
+    "gazetteseries.co.uk",
+    "maldonandburnhamstandard.co.uk",
+    "malverngazette.co.uk",
+    "penarthtimes.co.uk",
+    "thewestmorlandgazette.co.uk",
+    "thewestonmercury.co.uk",
+    "times-series.co.uk",
+    "watfordobserver.co.uk"
+   ],
+   "relation_counts": {
+    "A2": 13
+   },
+   "ns_sets": [
+    "ns1-03.azure-dns.com|ns2-03.azure-dns.net|ns3-03.azure-dns.org|ns4-03.azure-dns.info"
+   ],
+   "final_hosts": [
+    "bromsgroveadvertiser.co.uk",
+    "chardandilminsternews.co.uk",
+    "clactonandfrintongazette.co.uk",
+    "dailyecho.co.uk",
+    "echo-news.co.uk",
+    "edp24.co.uk",
+    "gazetteseries.co.uk",
+    "maldonandburnhamstandard.co.uk",
+    "malverngazette.co.uk",
+    "penarthtimes.co.uk",
+    "thewestmorlandgazette.co.uk",
+    "thewestonmercury.co.uk",
+    "times-series.co.uk",
+    "watfordobserver.co.uk"
+   ]
+  },
+  {
+   "id": "cand-basingstokegazette.co.uk",
+   "size": 12,
+   "members": [
+    "basingstokegazette.co.uk",
+    "bridportnews.co.uk",
+    "burytimes.co.uk",
+    "cotswoldjournal.co.uk",
+    "dorsetecho.co.uk",
+    "leaderlive.co.uk",
+    "london-now.co.uk",
+    "thetelegraphandargus.co.uk",
+    "thisisoxfordshire.co.uk",
+    "thisiswiltshire.co.uk",
+    "wharfedaleobserver.co.uk",
+    "witneygazette.co.uk"
+   ],
+   "relation_counts": {
+    "A2": 11
+   },
+   "ns_sets": [
+    "ns1-05.azure-dns.com|ns2-05.azure-dns.net|ns3-05.azure-dns.org|ns4-05.azure-dns.info"
+   ],
+   "final_hosts": [
+    "basingstokegazette.co.uk",
+    "bridportnews.co.uk",
+    "burytimes.co.uk",
+    "cotswoldjournal.co.uk",
+    "dorsetecho.co.uk",
+    "leaderlive.co.uk",
+    "london-now.co.uk",
+    "thetelegraphandargus.co.uk",
+    "thisisoxfordshire.co.uk",
+    "thisiswiltshire.co.uk",
+    "wharfedaleobserver.co.uk",
+    "witneygazette.co.uk"
+   ]
+  },
+  {
+   "id": "cand-bordertelegraph.com",
+   "size": 12,
+   "members": [
+    "bordertelegraph.com",
+    "darlingtonandstocktontimes.co.uk",
+    "eastlothiancourier.com",
+    "halesowennews.co.uk",
+    "impartialreporter.com",
+    "keighleynews.co.uk",
+    "rhyljournal.co.uk",
+    "runcornandwidnesworld.co.uk",
+    "somersetcountygazette.co.uk",
+    "stroudnewsandjournal.co.uk",
+    "thetottenhamindependent.co.uk",
+    "wirralglobe.co.uk"
+   ],
+   "relation_counts": {
+    "A2": 11
+   },
+   "ns_sets": [
+    "ns1-08.azure-dns.com|ns2-08.azure-dns.net|ns3-08.azure-dns.org|ns4-08.azure-dns.info"
+   ],
+   "final_hosts": [
+    "bordertelegraph.com",
+    "darlingtonandstocktontimes.co.uk",
+    "eastlothiancourier.com",
+    "halesowennews.co.uk",
+    "impartialreporter.com",
+    "keighleynews.co.uk",
+    "rhyljournal.co.uk",
+    "runcornandwidnesworld.co.uk",
+    "somersetcountygazette.co.uk",
+    "stroudnewsandjournal.co.uk",
+    "thetottenhamindependent.co.uk",
+    "wirralglobe.co.uk"
+   ]
+  },
+  {
+   "id": "cand-campbellrivermirror.com",
+   "size": 10,
+   "members": [
+    "campbellrivermirror.com",
+    "comoxvalleyrecord.com",
+    "cranbrooktownsman.com",
+    "mapleridgenews.com",
+    "northislandgazette.com",
+    "peacearchnews.com",
+    "pqbnews.com",
+    "sookenewsmirror.com",
+    "vernonmorningstar.com",
+    "westerlynews.ca"
+   ],
+   "relation_counts": {
+    "A2": 9
+   },
+   "ns_sets": [
+    "rosa.ns.cloudflare.com|salvador.ns.cloudflare.com"
+   ],
+   "final_hosts": [
+    "campbellrivermirror.com",
+    "comoxvalleyrecord.com",
+    "cranbrooktownsman.com",
+    "mapleridgenews.com",
+    "northislandgazette.com",
+    "peacearchnews.com",
+    "pqbnews.com",
+    "sookenewsmirror.com",
+    "vernonmorningstar.com",
+    "westerlynews.ca"
+   ]
+  },
+  {
+   "id": "cand-cravenherald.co.uk",
+   "size": 10,
+   "members": [
+    "cravenherald.co.uk",
+    "dumbartonreporter.co.uk",
+    "dunfermlinepress.com",
+    "greenocktelegraph.co.uk",
+    "hamhigh.co.uk",
+    "newsandstar.co.uk",
+    "readingchronicle.co.uk",
+    "thurrockgazette.co.uk",
+    "timesandstar.co.uk",
+    "wimbledonguardian.co.uk"
+   ],
+   "relation_counts": {
+    "A2": 9
+   },
+   "ns_sets": [
+    "ns1-01.azure-dns.com|ns2-01.azure-dns.net|ns3-01.azure-dns.org|ns4-01.azure-dns.info"
+   ],
+   "final_hosts": [
+    "cravenherald.co.uk",
+    "dumbartonreporter.co.uk",
+    "dunfermlinepress.com",
+    "greenocktelegraph.co.uk",
+    "hamhigh.co.uk",
+    "newsandstar.co.uk",
+    "readingchronicle.co.uk",
+    "thurrockgazette.co.uk",
+    "timesandstar.co.uk",
+    "wimbledonguardian.co.uk"
+   ]
+  },
+  {
+   "id": "cand-kcbx.org",
+   "size": 8,
+   "members": [
+    "kcbx.org",
+    "kccu.org",
+    "kios.org",
+    "ksfr.org",
+    "northernpublicradio.org",
+    "wknofm.org",
+    "wvtf.org",
+    "wyso.org"
+   ],
+   "relation_counts": {
+    "A2": 7
+   },
+   "ns_sets": [
+    "curitiba.ns.porkbun.com|fortaleza.ns.porkbun.com|maceio.ns.porkbun.com|salvador.ns.porkbun.com"
+   ],
+   "final_hosts": [
+    "kcbx.org",
+    "ksfr.org"
+   ]
+  },
+  {
+   "id": "cand-cecildaily.com",
+   "size": 5,
+   "members": [
+    "cecildaily.com",
+    "gazettextra.com",
+    "leadertelegram.com",
+    "somdnews.com",
+    "stardem.com"
+   ],
+   "relation_counts": {
+    "A2": 4
+   },
+   "ns_sets": [
+    "ns0.dnsmadeeasy.com|ns1.dnsmadeeasy.com|ns2.dnsmadeeasy.com|ns3.dnsmadeeasy.com|ns4.dnsmadeeasy.com"
+   ],
+   "final_hosts": [
+    "cecildaily.com",
+    "gazettextra.com",
+    "leadertelegram.com",
+    "somdnews.com",
+    "stardem.com"
+   ]
+  },
+  {
+   "id": "cand-dissexpress.co.uk",
+   "size": 5,
+   "members": [
+    "dissexpress.co.uk",
+    "fenlandcitizen.co.uk",
+    "lynnnews.co.uk",
+    "newarkadvertiser.co.uk",
+    "rutland-times.co.uk"
+   ],
+   "relation_counts": {
+    "A2": 4
+   },
+   "ns_sets": [
+    "ns.heartinternet.uk|ns2.heartinternet.uk"
+   ],
+   "final_hosts": [
+    "dissexpress.co.uk",
+    "fenlandcitizen.co.uk",
+    "lynnnews.co.uk",
+    "newarkadvertiser.co.uk",
+    "rutland-times.co.uk"
+   ]
+  },
+  {
+   "id": "cand-ijpr.org",
+   "size": 5,
+   "members": [
+    "ijpr.org",
+    "kacu.org",
+    "kasu.org",
+    "kvpr.org",
+    "wfdd.org"
+   ],
+   "relation_counts": {
+    "A2": 4
+   },
+   "ns_sets": [
+    "freedns1.registrar-servers.com|freedns2.registrar-servers.com|freedns3.registrar-servers.com|freedns4.registrar-servers.com|freedns5.registrar-servers.com"
+   ],
+   "final_hosts": [
+    "kvpr.org",
+    "wfdd.org"
+   ]
+  },
+  {
+   "id": "cand-clickondetroit.com",
+   "size": 4,
+   "members": [
+    "clickondetroit.com",
+    "clickorlando.com",
+    "news4jax.com",
+    "wsls.com"
+   ],
+   "relation_counts": {
+    "A2": 3
+   },
+   "ns_sets": [
+    "ns1.grahamdigital.com|ns2.grahamdigital.com|ns3.grahamdigital.com|ns4.grahamdigital.com|ns5.grahamdigital.com|ns6.grahamdigital.com"
+   ],
+   "final_hosts": [
+    "clickondetroit.com",
+    "clickorlando.com",
+    "news4jax.com",
+    "wsls.com"
+   ]
+  },
+  {
+   "id": "cand-niagarafallsreview.ca",
+   "size": 4,
+   "members": [
+    "niagarafallsreview.ca",
+    "stcatharinesstandard.ca",
+    "thepeterboroughexaminer.com",
+    "wsiu.org"
+   ],
+   "relation_counts": {
+    "A2": 3
+   },
+   "ns_sets": [
+    "dns1.easydns.com|dns2.easydns.net|dns3.easydns.ca"
+   ],
+   "final_hosts": [
+    "niagarafallsreview.ca",
+    "stcatharinesstandard.ca",
+    "thepeterboroughexaminer.com",
+    "wsiu.org"
+   ]
+  },
+  {
+   "id": "cand-wdbo.com",
+   "size": 4,
+   "members": [
+    "wdbo.com",
+    "wgauradio.com",
+    "wokv.com",
+    "wsbradio.com"
+   ],
+   "relation_counts": {
+    "A2": 3
+   },
+   "ns_sets": [
+    "ns1.cmgdns.com|ns2.cmgdns.com|ns3.cmgdns.com|ns4.cmgdns.com"
+   ],
+   "final_hosts": [
+    "wdbo.com",
+    "wgauradio.com",
+    "wokv.com",
+    "wsbradio.com"
+   ]
+  },
+  {
+   "id": "cand-arabherald.com",
+   "size": 3,
+   "members": [
+    "arabherald.com",
+    "laosnews.net",
+    "myanmarnews.net"
+   ],
+   "relation_counts": {
+    "A2": 2
+   },
+   "ns_sets": [
+    "pdns11.domaincontrol.com|pdns12.domaincontrol.com"
+   ],
+   "final_hosts": [
+    "arabherald.com",
+    "laosnews.net",
+    "myanmarnews.net"
+   ]
+  },
+  {
+   "id": "cand-interlochenpublicradio.org",
+   "size": 3,
+   "members": [
+    "interlochenpublicradio.org",
+    "kawc.org",
+    "wysu.org"
+   ],
+   "relation_counts": {
+    "A2": 2
+   },
+   "ns_sets": [
+    "dns1.registrar-servers.com|dns2.registrar-servers.com"
+   ],
+   "final_hosts": [
+    "wysu.org"
+   ]
+  },
+  {
+   "id": "cand-kalw.org",
+   "size": 3,
+   "members": [
+    "kalw.org",
+    "kenw.org",
+    "wrvo.org"
+   ],
+   "relation_counts": {
+    "A2": 2
+   },
+   "ns_sets": [
+    "pdns1.registrar-servers.com|pdns2.registrar-servers.com"
+   ],
+   "final_hosts": [
+    "wrvo.org"
+   ]
+  },
+  {
+   "id": "cand-kvnf.org",
+   "size": 3,
+   "members": [
+    "kvnf.org",
+    "lufkindailynews.com",
+    "wxxinews.org"
+   ],
+   "relation_counts": {
+    "A2": 2
+   },
+   "ns_sets": [
+    "ns1.hover.com|ns2.hover.com"
+   ],
+   "final_hosts": [
+    "lufkindailynews.com"
+   ]
+  },
+  {
+   "id": "cand-news.prairiepublic.org",
+   "size": 3,
+   "members": [
+    "news.prairiepublic.org",
+    "news.wjct.org",
+    "radio.wpsu.org"
+   ],
+   "relation_counts": {
+    "A2": 2
+   },
+   "ns_sets": [
+    "ns-1389.awsdns-45.org|ns-1983.awsdns-55.co.uk|ns-375.awsdns-46.com|ns-772.awsdns-32.net"
+   ],
+   "final_hosts": [
+    "news.prairiepublic.org",
+    "news.wjct.org",
+    "radio.wpsu.org"
+   ]
+  },
+  {
+   "id": "cand-ominecaexpress.com",
+   "size": 3,
+   "members": [
+    "ominecaexpress.com",
+    "quesnelobserver.com",
+    "wltribune.com"
+   ],
+   "relation_counts": {
+    "A2": 2
+   },
+   "ns_sets": [
+    "chance.ns.cloudflare.com|harlee.ns.cloudflare.com"
+   ],
+   "final_hosts": [
+    "ominecaexpress.com",
+    "quesnelobserver.com",
+    "wltribune.com"
+   ]
+  },
+  {
+   "id": "cand-rockymounttelegram.com",
+   "size": 3,
+   "members": [
+    "rockymounttelegram.com",
+    "thegazette.com",
+    "wrkf.org"
+   ],
+   "relation_counts": {
+    "A2": 2
+   },
+   "ns_sets": [
+    "ns10.digicertdns.com|ns11.digicertdns.com|ns12.digicertdns.com|ns13.digicertdns.net|ns14.digicertdns.net|ns15.digicertdns.net"
+   ],
+   "final_hosts": [
+    "rockymounttelegram.com",
+    "thegazette.com"
+   ]
+  },
+  {
+   "id": "cand-aspenpublicradio.org",
+   "size": 2,
+   "members": [
+    "aspenpublicradio.org",
+    "wxpr.org"
+   ],
+   "relation_counts": {
+    "A2": 1
+   },
+   "ns_sets": [
+    "ns5.worldnic.com|ns6.worldnic.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-brandonsun.com",
+   "size": 2,
+   "members": [
+    "brandonsun.com",
+    "winnipegfreepress.com"
+   ],
+   "relation_counts": {
+    "A2": 1
+   },
+   "ns_sets": [
+    "dns1.mts.net|dns2.mts.net"
+   ],
+   "final_hosts": [
+    "brandonsun.com",
+    "winnipegfreepress.com"
+   ]
+  },
+  {
+   "id": "cand-butlereagle.com",
+   "size": 2,
+   "members": [
+    "butlereagle.com",
+    "krvs.org"
+   ],
+   "relation_counts": {
+    "A2": 1
+   },
+   "ns_sets": [
+    "dns1.name-services.com|dns2.name-services.com|dns3.name-services.com|dns4.name-services.com|dns5.name-services.com"
+   ],
+   "final_hosts": [
+    "butlereagle.com"
+   ]
+  },
+  {
+   "id": "cand-dailygazette.com",
+   "size": 2,
+   "members": [
+    "dailygazette.com",
+    "wvgazettemail.com"
+   ],
+   "relation_counts": {
+    "A2": 1
+   },
+   "ns_sets": [
+    "dns1.easydns.com|dns2.easydns.net|dns3.easydns.org"
+   ],
+   "final_hosts": [
+    "dailygazette.com",
+    "wvgazettemail.com"
+   ]
+  },
+  {
+   "id": "cand-erienewsnow.com",
+   "size": 2,
+   "members": [
+    "erienewsnow.com",
+    "southcarolinapublicradio.org"
+   ],
+   "relation_counts": {
+    "A2": 1
+   },
+   "ns_sets": [
+    "ns69.domaincontrol.com|ns70.domaincontrol.com"
+   ],
+   "final_hosts": [
+    "erienewsnow.com"
+   ]
+  },
+  {
+   "id": "cand-kcci.com",
+   "size": 2,
+   "members": [
+    "kcci.com",
+    "wyff4.com"
+   ],
+   "relation_counts": {
+    "A2": 1
+   },
+   "ns_sets": [
+    "ns-105.awsdns-13.com|ns-1154.awsdns-16.org|ns-1932.awsdns-49.co.uk|ns-750.awsdns-29.net"
+   ],
+   "final_hosts": [
+    "kcci.com",
+    "wyff4.com"
+   ]
+  },
+  {
+   "id": "cand-tspr.org",
+   "size": 2,
+   "members": [
+    "tspr.org",
+    "upr.org"
+   ],
+   "relation_counts": {
+    "A2": 1
+   },
+   "ns_sets": [
+    "ns53.worldnic.com|ns54.worldnic.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-13wham.com",
+   "size": 1,
+   "members": [
+    "13wham.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1050.awsdns-03.org|ns-1918.awsdns-47.co.uk|ns-224.awsdns-28.com|ns-689.awsdns-22.net"
+   ],
+   "final_hosts": [
+    "13wham.com"
+   ]
+  },
+  {
+   "id": "cand-abc7amarillo.com",
+   "size": 1,
+   "members": [
+    "abc7amarillo.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1441.awsdns-52.org|ns-2045.awsdns-63.co.uk|ns-351.awsdns-43.com|ns-806.awsdns-36.net"
+   ],
+   "final_hosts": [
+    "abc7amarillo.com"
+   ]
+  },
+  {
+   "id": "cand-abcnews.com",
+   "size": 1,
+   "members": [
+    "abcnews.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1511.awsdns-60.org|ns-1594.awsdns-07.co.uk|ns-163.awsdns-20.com|ns-983.awsdns-58.net"
+   ],
+   "final_hosts": [
+    "abcnews.com"
+   ]
+  },
+  {
+   "id": "cand-abcnews4.com",
+   "size": 1,
+   "members": [
+    "abcnews4.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1342.awsdns-39.org|ns-175.awsdns-21.com|ns-1795.awsdns-32.co.uk|ns-831.awsdns-39.net"
+   ],
+   "final_hosts": [
+    "abcnews4.com"
+   ]
+  },
+  {
+   "id": "cand-aol.co.uk",
+   "size": 1,
+   "members": [
+    "aol.co.uk"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1433.awsdns-51.org|ns-2036.awsdns-62.co.uk|ns-5.awsdns-00.com|ns-643.awsdns-16.net"
+   ],
+   "final_hosts": [
+    "aol.co.uk"
+   ]
+  },
+  {
+   "id": "cand-apr.org",
+   "size": 1,
+   "members": [
+    "apr.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ext-dns1.ua.edu|ext-dns2.ua.edu|ext-dns3.ua.edu"
+   ],
+   "final_hosts": [
+    "apr.org"
+   ]
+  },
+  {
+   "id": "cand-areanews.com.au",
+   "size": 1,
+   "members": [
+    "areanews.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1073.awsdns-06.org|ns-1630.awsdns-11.co.uk|ns-392.awsdns-49.com|ns-720.awsdns-26.net"
+   ],
+   "final_hosts": [
+    "areanews.com.au"
+   ]
+  },
+  {
+   "id": "cand-armidaleexpress.com.au",
+   "size": 1,
+   "members": [
+    "armidaleexpress.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1391.awsdns-45.org|ns-1643.awsdns-13.co.uk|ns-222.awsdns-27.com|ns-585.awsdns-09.net"
+   ],
+   "final_hosts": [
+    "armidaleexpress.com.au"
+   ]
+  },
+  {
+   "id": "cand-asiaone.com",
+   "size": 1,
+   "members": [
+    "asiaone.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1338.awsdns-39.org|ns-1729.awsdns-24.co.uk|ns-264.awsdns-33.com|ns-682.awsdns-21.net"
+   ],
+   "final_hosts": [
+    "asiaone.com"
+   ]
+  },
+  {
+   "id": "cand-bangordailynews.com",
+   "size": 1,
+   "members": [
+    "bangordailynews.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1250.awsdns-28.org|ns-1633.awsdns-12.co.uk|ns-360.awsdns-45.com|ns-610.awsdns-12.net"
+   ],
+   "final_hosts": [
+    "bangordailynews.com"
+   ]
+  },
+  {
+   "id": "cand-batemansbaypost.com.au",
+   "size": 1,
+   "members": [
+    "batemansbaypost.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1081.awsdns-07.org|ns-1989.awsdns-56.co.uk|ns-64.awsdns-08.com|ns-889.awsdns-47.net"
+   ],
+   "final_hosts": [
+    "batemansbaypost.com.au"
+   ]
+  },
+  {
+   "id": "cand-begadistrictnews.com.au",
+   "size": 1,
+   "members": [
+    "begadistrictnews.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1088.awsdns-08.org|ns-2010.awsdns-59.co.uk|ns-481.awsdns-60.com|ns-994.awsdns-60.net"
+   ],
+   "final_hosts": [
+    "begadistrictnews.com.au"
+   ]
+  },
+  {
+   "id": "cand-bendigoadvertiser.com.au",
+   "size": 1,
+   "members": [
+    "bendigoadvertiser.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1258.awsdns-29.org|ns-1978.awsdns-55.co.uk|ns-281.awsdns-35.com|ns-992.awsdns-60.net"
+   ],
+   "final_hosts": [
+    "bendigoadvertiser.com.au"
+   ]
+  },
+  {
+   "id": "cand-blayneychronicle.com.au",
+   "size": 1,
+   "members": [
+    "blayneychronicle.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1139.awsdns-14.org|ns-1543.awsdns-00.co.uk|ns-158.awsdns-19.com|ns-801.awsdns-36.net"
+   ],
+   "final_hosts": [
+    "blayneychronicle.com.au"
+   ]
+  },
+  {
+   "id": "cand-bluemountainsgazette.com.au",
+   "size": 1,
+   "members": [
+    "bluemountainsgazette.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1367.awsdns-42.org|ns-1659.awsdns-15.co.uk|ns-244.awsdns-30.com|ns-603.awsdns-11.net"
+   ],
+   "final_hosts": [
+    "bluemountainsgazette.com.au"
+   ]
+  },
+  {
+   "id": "cand-bordermail.com.au",
+   "size": 1,
+   "members": [
+    "bordermail.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1239.awsdns-26.org|ns-1627.awsdns-11.co.uk|ns-296.awsdns-37.com|ns-647.awsdns-16.net"
+   ],
+   "final_hosts": [
+    "bordermail.com.au"
+   ]
+  },
+  {
+   "id": "cand-bozemandailychronicle.com",
+   "size": 1,
+   "members": [
+    "bozemandailychronicle.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns25.domaincontrol.com|ns26.domaincontrol.com"
+   ],
+   "final_hosts": [
+    "bozemandailychronicle.com"
+   ]
+  },
+  {
+   "id": "cand-braidwoodtimes.com.au",
+   "size": 1,
+   "members": [
+    "braidwoodtimes.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1052.awsdns-03.org|ns-1550.awsdns-01.co.uk|ns-254.awsdns-31.com|ns-799.awsdns-35.net"
+   ],
+   "final_hosts": [
+    "braidwoodtimes.com.au"
+   ]
+  },
+  {
+   "id": "cand-breakingnews.ie",
+   "size": 1,
+   "members": [
+    "breakingnews.ie"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "donna.ns.cloudflare.com|jake.ns.cloudflare.com"
+   ],
+   "final_hosts": [
+    "breakingnews.ie"
+   ]
+  },
+  {
+   "id": "cand-bunburymail.com.au",
+   "size": 1,
+   "members": [
+    "bunburymail.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1174.awsdns-18.org|ns-1539.awsdns-00.co.uk|ns-251.awsdns-31.com|ns-669.awsdns-19.net"
+   ],
+   "final_hosts": [
+    "bunburymail.com.au"
+   ]
+  },
+  {
+   "id": "cand-camdencourier.com.au",
+   "size": 1,
+   "members": [
+    "camdencourier.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1468.awsdns-55.org|ns-2036.awsdns-62.co.uk|ns-205.awsdns-25.com|ns-916.awsdns-50.net"
+   ],
+   "final_hosts": [
+    "camdencourier.com.au"
+   ]
+  },
+  {
+   "id": "cand-canberratimes.com.au",
+   "size": 1,
+   "members": [
+    "canberratimes.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1357.awsdns-41.org|ns-16.awsdns-02.com|ns-1685.awsdns-18.co.uk|ns-867.awsdns-44.net"
+   ],
+   "final_hosts": [
+    "canberratimes.com.au"
+   ]
+  },
+  {
+   "id": "cand-capeandislands.org",
+   "size": 1,
+   "members": [
+    "capeandislands.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1288.awsdns-33.org|ns-1560.awsdns-03.co.uk|ns-207.awsdns-25.com|ns-948.awsdns-54.net"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-cbs4local.com",
+   "size": 1,
+   "members": [
+    "cbs4local.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1206.awsdns-22.org|ns-1759.awsdns-27.co.uk|ns-453.awsdns-56.com|ns-655.awsdns-17.net"
+   ],
+   "final_hosts": [
+    "cbs4local.com"
+   ]
+  },
+  {
+   "id": "cand-centralwesterndaily.com.au",
+   "size": 1,
+   "members": [
+    "centralwesterndaily.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1323.awsdns-37.org|ns-1902.awsdns-45.co.uk|ns-25.awsdns-03.com|ns-599.awsdns-10.net"
+   ],
+   "final_hosts": [
+    "centralwesterndaily.com.au"
+   ]
+  },
+  {
+   "id": "cand-cessnockadvertiser.com.au",
+   "size": 1,
+   "members": [
+    "cessnockadvertiser.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1463.awsdns-54.org|ns-1560.awsdns-03.co.uk|ns-42.awsdns-05.com|ns-610.awsdns-12.net"
+   ],
+   "final_hosts": [
+    "cessnockadvertiser.com.au"
+   ]
+  },
+  {
+   "id": "cand-cnycentral.com",
+   "size": 1,
+   "members": [
+    "cnycentral.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1242.awsdns-27.org|ns-1912.awsdns-47.co.uk|ns-640.awsdns-16.net|ns-75.awsdns-09.com"
+   ],
+   "final_hosts": [
+    "cnycentral.com"
+   ]
+  },
+  {
+   "id": "cand-cootamundraherald.com.au",
+   "size": 1,
+   "members": [
+    "cootamundraherald.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1168.awsdns-18.org|ns-1813.awsdns-34.co.uk|ns-388.awsdns-48.com|ns-810.awsdns-37.net"
+   ],
+   "final_hosts": [
+    "cootamundraherald.com.au"
+   ]
+  },
+  {
+   "id": "cand-crookwellgazette.com.au",
+   "size": 1,
+   "members": [
+    "crookwellgazette.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1027.awsdns-00.org|ns-1618.awsdns-10.co.uk|ns-459.awsdns-57.com|ns-687.awsdns-21.net"
+   ],
+   "final_hosts": [
+    "crookwellgazette.com.au"
+   ]
+  },
+  {
+   "id": "cand-dailyadvertiser.com.au",
+   "size": 1,
+   "members": [
+    "dailyadvertiser.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1020.awsdns-63.net|ns-1399.awsdns-46.org|ns-157.awsdns-19.com|ns-2023.awsdns-60.co.uk"
+   ],
+   "final_hosts": [
+    "dailyadvertiser.com.au"
+   ]
+  },
+  {
+   "id": "cand-dailyliberal.com.au",
+   "size": 1,
+   "members": [
+    "dailyliberal.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1258.awsdns-29.org|ns-1724.awsdns-23.co.uk|ns-447.awsdns-55.com|ns-574.awsdns-07.net"
+   ],
+   "final_hosts": [
+    "dailyliberal.com.au"
+   ]
+  },
+  {
+   "id": "cand-delawarepublic.org",
+   "size": 1,
+   "members": [
+    "delawarepublic.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns05.domaincontrol.com|ns06.domaincontrol.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-dungogchronicle.com.au",
+   "size": 1,
+   "members": [
+    "dungogchronicle.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1007.awsdns-61.net|ns-1110.awsdns-10.org|ns-1794.awsdns-32.co.uk|ns-230.awsdns-28.com"
+   ],
+   "final_hosts": [
+    "dungogchronicle.com.au"
+   ]
+  },
+  {
+   "id": "cand-dunyanews.tv",
+   "size": 1,
+   "members": [
+    "dunyanews.tv"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "dns1.dunyanews.tv|dns2.dunyatv.tv|ns3.dunyatv.tv|ns5.dunyanews.tv"
+   ],
+   "final_hosts": [
+    "dunyanews.tv"
+   ]
+  },
+  {
+   "id": "cand-durangoherald.com",
+   "size": 1,
+   "members": [
+    "durangoherald.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "megan.ns.cloudflare.com|owen.ns.cloudflare.com"
+   ],
+   "final_hosts": [
+    "durangoherald.com"
+   ]
+  },
+  {
+   "id": "cand-easternriverinachronicle.com.au",
+   "size": 1,
+   "members": [
+    "easternriverinachronicle.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1001.awsdns-61.net|ns-1267.awsdns-30.org|ns-1551.awsdns-01.co.uk|ns-346.awsdns-43.com"
+   ],
+   "final_hosts": [
+    "easternriverinachronicle.com.au"
+   ]
+  },
+  {
+   "id": "cand-edenmagnet.com.au",
+   "size": 1,
+   "members": [
+    "edenmagnet.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1210.awsdns-23.org|ns-1889.awsdns-44.co.uk|ns-445.awsdns-55.com|ns-787.awsdns-34.net"
+   ],
+   "final_hosts": [
+    "edenmagnet.com.au"
+   ]
+  },
+  {
+   "id": "cand-examiner.com.au",
+   "size": 1,
+   "members": [
+    "examiner.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1005.awsdns-61.net|ns-1525.awsdns-62.org|ns-1793.awsdns-32.co.uk|ns-324.awsdns-40.com"
+   ],
+   "final_hosts": [
+    "examiner.com.au"
+   ]
+  },
+  {
+   "id": "cand-fox11online.com",
+   "size": 1,
+   "members": [
+    "fox11online.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1272.awsdns-31.org|ns-2006.awsdns-58.co.uk|ns-389.awsdns-48.com|ns-898.awsdns-48.net"
+   ],
+   "final_hosts": [
+    "fox11online.com"
+   ]
+  },
+  {
+   "id": "cand-fox17.com",
+   "size": 1,
+   "members": [
+    "fox17.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1118.awsdns-11.org|ns-1986.awsdns-56.co.uk|ns-480.awsdns-60.com|ns-941.awsdns-53.net"
+   ],
+   "final_hosts": [
+    "fox17.com"
+   ]
+  },
+  {
+   "id": "cand-fox23.com",
+   "size": 1,
+   "members": [
+    "fox23.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1006.awsdns-61.net|ns-1349.awsdns-40.org|ns-2029.awsdns-61.co.uk|ns-227.awsdns-28.com"
+   ],
+   "final_hosts": [
+    "fox23.com"
+   ]
+  },
+  {
+   "id": "cand-fox56.com",
+   "size": 1,
+   "members": [
+    "fox56.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1270.awsdns-30.org|ns-186.awsdns-23.com|ns-1877.awsdns-42.co.uk|ns-974.awsdns-57.net"
+   ],
+   "final_hosts": [
+    "fox56.com"
+   ]
+  },
+  {
+   "id": "cand-gleninnesexaminer.com.au",
+   "size": 1,
+   "members": [
+    "gleninnesexaminer.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1041.awsdns-02.org|ns-1812.awsdns-34.co.uk|ns-260.awsdns-32.com|ns-556.awsdns-05.net"
+   ],
+   "final_hosts": [
+    "gleninnesexaminer.com.au"
+   ]
+  },
+  {
+   "id": "cand-gloucesteradvocate.com.au",
+   "size": 1,
+   "members": [
+    "gloucesteradvocate.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1482.awsdns-57.org|ns-1699.awsdns-20.co.uk|ns-288.awsdns-36.com|ns-992.awsdns-60.net"
+   ],
+   "final_hosts": [
+    "gloucesteradvocate.com.au"
+   ]
+  },
+  {
+   "id": "cand-goskagit.com",
+   "size": 1,
+   "members": [
+    "goskagit.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns39.domaincontrol.com|ns40.domaincontrol.com"
+   ],
+   "final_hosts": [
+    "goskagit.com"
+   ]
+  },
+  {
+   "id": "cand-goulburnpost.com.au",
+   "size": 1,
+   "members": [
+    "goulburnpost.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1113.awsdns-11.org|ns-2000.awsdns-58.co.uk|ns-270.awsdns-33.com|ns-662.awsdns-18.net"
+   ],
+   "final_hosts": [
+    "goulburnpost.com.au"
+   ]
+  },
+  {
+   "id": "cand-greatlakesadvocate.com.au",
+   "size": 1,
+   "members": [
+    "greatlakesadvocate.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1062.awsdns-04.org|ns-1584.awsdns-06.co.uk|ns-43.awsdns-05.com|ns-526.awsdns-01.net"
+   ],
+   "final_hosts": [
+    "greatlakesadvocate.com.au"
+   ]
+  },
+  {
+   "id": "cand-hardenexpress.com.au",
+   "size": 1,
+   "members": [
+    "hardenexpress.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1077.awsdns-06.org|ns-1593.awsdns-07.co.uk|ns-239.awsdns-29.com|ns-832.awsdns-40.net"
+   ],
+   "final_hosts": [
+    "hardenexpress.com.au"
+   ]
+  },
+  {
+   "id": "cand-hepburnadvocate.com.au",
+   "size": 1,
+   "members": [
+    "hepburnadvocate.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1113.awsdns-11.org|ns-1879.awsdns-42.co.uk|ns-354.awsdns-44.com|ns-965.awsdns-56.net"
+   ],
+   "final_hosts": [
+    "hepburnadvocate.com.au"
+   ]
+  },
+  {
+   "id": "cand-houstonpublicmedia.org",
+   "size": 1,
+   "members": [
+    "houstonpublicmedia.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns.b1ddi.houstonpublicmedia.org|ns5.dns.uh.edu|ns6.dns.uh.edu"
+   ],
+   "final_hosts": [
+    "houstonpublicmedia.org"
+   ]
+  },
+  {
+   "id": "cand-hppr.org",
+   "size": 1,
+   "members": [
+    "hppr.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-cloud-d1.googledomains.com|ns-cloud-d2.googledomains.com|ns-cloud-d3.googledomains.com|ns-cloud-d4.googledomains.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-illawarramercury.com.au",
+   "size": 1,
+   "members": [
+    "illawarramercury.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1334.awsdns-38.org|ns-1788.awsdns-31.co.uk|ns-377.awsdns-47.com|ns-632.awsdns-15.net"
+   ],
+   "final_hosts": [
+    "illawarramercury.com.au"
+   ]
+  },
+  {
+   "id": "cand-inverelltimes.com.au",
+   "size": 1,
+   "members": [
+    "inverelltimes.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1492.awsdns-58.org|ns-2040.awsdns-63.co.uk|ns-487.awsdns-60.com|ns-614.awsdns-12.net"
+   ],
+   "final_hosts": [
+    "inverelltimes.com.au"
+   ]
+  },
+  {
+   "id": "cand-iowapublicradio.org",
+   "size": 1,
+   "members": [
+    "iowapublicradio.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns1.onlydns.com|ns2.onlydns.us"
+   ],
+   "final_hosts": [
+    "iowapublicradio.org"
+   ]
+  },
+  {
+   "id": "cand-irrigator.com.au",
+   "size": 1,
+   "members": [
+    "irrigator.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1000.awsdns-61.net|ns-1304.awsdns-35.org|ns-1710.awsdns-21.co.uk|ns-469.awsdns-58.com"
+   ],
+   "final_hosts": [
+    "irrigator.com.au"
+   ]
+  },
+  {
+   "id": "cand-isp.netscape.com",
+   "size": 1,
+   "members": [
+    "isp.netscape.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1110.awsdns-10.org|ns-1989.awsdns-56.co.uk|ns-397.awsdns-49.com|ns-527.awsdns-01.net"
+   ],
+   "final_hosts": [
+    "isp.netscape.com"
+   ]
+  },
+  {
+   "id": "cand-juneesoutherncross.com.au",
+   "size": 1,
+   "members": [
+    "juneesoutherncross.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1254.awsdns-28.org|ns-146.awsdns-18.com|ns-1555.awsdns-02.co.uk|ns-710.awsdns-24.net"
+   ],
+   "final_hosts": [
+    "juneesoutherncross.com.au"
+   ]
+  },
+  {
+   "id": "cand-kansaspublicradio.org",
+   "size": 1,
+   "members": [
+    "kansaspublicradio.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1020.awsdns-63.net|ns-1137.awsdns-14.org|ns-2001.awsdns-58.co.uk|ns-397.awsdns-49.com"
+   ],
+   "final_hosts": [
+    "kansaspublicradio.org"
+   ]
+  },
+  {
+   "id": "cand-katherinetimes.com.au",
+   "size": 1,
+   "members": [
+    "katherinetimes.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1243.awsdns-27.org|ns-1929.awsdns-49.co.uk|ns-448.awsdns-56.com|ns-791.awsdns-34.net"
+   ],
+   "final_hosts": [
+    "katherinetimes.com.au"
+   ]
+  },
+  {
+   "id": "cand-katu.com",
+   "size": 1,
+   "members": [
+    "katu.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1003.awsdns-61.net|ns-1486.awsdns-57.org|ns-1819.awsdns-35.co.uk|ns-391.awsdns-48.com"
+   ],
+   "final_hosts": [
+    "katu.com"
+   ]
+  },
+  {
+   "id": "cand-kazu.org",
+   "size": 1,
+   "members": [
+    "kazu.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "dnssec1.cenic.org|dnssec2.cenic.org|ns1.csumb.edu|ns4.csumb.edu"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-kbia.org",
+   "size": 1,
+   "members": [
+    "kbia.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns10001.missouri.edu|ns10002.missouri.edu"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-kclu.org",
+   "size": 1,
+   "members": [
+    "kclu.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-13.awsdns-01.com|ns-1475.awsdns-56.org|ns-1570.awsdns-04.co.uk|ns-637.awsdns-15.net"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-kedm.org",
+   "size": 1,
+   "members": [
+    "kedm.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ulm-extdns1.ulm.edu|ulm-extdns2.ulm.edu"
+   ],
+   "final_hosts": [
+    "kedm.org"
+   ]
+  },
+  {
+   "id": "cand-kentonline.co.uk",
+   "size": 1,
+   "members": [
+    "kentonline.co.uk"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns1.namecity.com|ns2.namecity.com"
+   ],
+   "final_hosts": [
+    "kentonline.co.uk"
+   ]
+  },
+  {
+   "id": "cand-ketr.org",
+   "size": 1,
+   "members": [
+    "ketr.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "dns1.tamuc.edu|dns2.tamuc.edu|dns3.tamuc.edu"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-kfoxtv.com",
+   "size": 1,
+   "members": [
+    "kfoxtv.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1456.awsdns-54.org|ns-1785.awsdns-31.co.uk|ns-408.awsdns-51.com|ns-984.awsdns-59.net"
+   ],
+   "final_hosts": [
+    "kfoxtv.com"
+   ]
+  },
+  {
+   "id": "cand-kfvs12.com",
+   "size": 1,
+   "members": [
+    "kfvs12.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns01.gcd-dns.com|ns02.gcd-dns.com"
+   ],
+   "final_hosts": [
+    "kfvs12.com"
+   ]
+  },
+  {
+   "id": "cand-kgou.org",
+   "size": 1,
+   "members": [
+    "kgou.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns75.domaincontrol.com|ns76.domaincontrol.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-khqa.com",
+   "size": 1,
+   "members": [
+    "khqa.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "denver.ns.cloudflare.com|vivienne.ns.cloudflare.com"
+   ],
+   "final_hosts": [
+    "khqa.com"
+   ]
+  },
+  {
+   "id": "cand-kjzz.org",
+   "size": 1,
+   "members": [
+    "kjzz.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "pablo.ns.cloudflare.com|robin.ns.cloudflare.com"
+   ],
+   "final_hosts": [
+    "kjzz.org"
+   ]
+  },
+  {
+   "id": "cand-klcc.org",
+   "size": 1,
+   "members": [
+    "klcc.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns81.worldnic.com|ns82.worldnic.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-kmuw.org",
+   "size": 1,
+   "members": [
+    "kmuw.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "elbert.wichita.edu|princeton.wichita.edu"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-kmxt.org",
+   "size": 1,
+   "members": [
+    "kmxt.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns51.worldnic.com|ns52.worldnic.com"
+   ],
+   "final_hosts": [
+    "kmxt.org"
+   ]
+  },
+  {
+   "id": "cand-knau.org",
+   "size": 1,
+   "members": [
+    "knau.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns5.dnsmadeeasy.com|ns6.dnsmadeeasy.com|ns7.dnsmadeeasy.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-knpr.org",
+   "size": 1,
+   "members": [
+    "knpr.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1245.awsdns-27.org|ns-1786.awsdns-31.co.uk|ns-524.awsdns-01.net|ns-64.awsdns-08.com"
+   ],
+   "final_hosts": [
+    "knpr.org"
+   ]
+  },
+  {
+   "id": "cand-kpbs.org",
+   "size": 1,
+   "members": [
+    "kpbs.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns01.sdsu.edu|ns02.sdsu.edu"
+   ],
+   "final_hosts": [
+    "kpbs.org"
+   ]
+  },
+  {
+   "id": "cand-kpcw.org",
+   "size": 1,
+   "members": [
+    "kpcw.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns1.dnsbycomodo.net|ns2.dnsbycomodo.net"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-krcu.org",
+   "size": 1,
+   "members": [
+    "krcu.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns1.bigrivertel.net|ns2.bigrivertel.net"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-krmg.com",
+   "size": 1,
+   "members": [
+    "krmg.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1464.awsdns-55.org|ns-1994.awsdns-57.co.uk|ns-419.awsdns-52.com|ns-664.awsdns-19.net"
+   ],
+   "final_hosts": [
+    "krmg.com"
+   ]
+  },
+  {
+   "id": "cand-krwg.org",
+   "size": 1,
+   "members": [
+    "krwg.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns53.domaincontrol.com|ns54.domaincontrol.com"
+   ],
+   "final_hosts": [
+    "krwg.org"
+   ]
+  },
+  {
+   "id": "cand-ksat.com",
+   "size": 1,
+   "members": [
+    "ksat.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns10.dnsmadeeasy.com|ns11.dnsmadeeasy.com|ns12.dnsmadeeasy.com|ns13.dnsmadeeasy.com|ns14.dnsmadeeasy.com|ns15.dnsmadeeasy.com"
+   ],
+   "final_hosts": [
+    "ksat.com"
+   ]
+  },
+  {
+   "id": "cand-ksmu.org",
+   "size": 1,
+   "members": [
+    "ksmu.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "canopus.missouristate.edu|msu-dnsp01.missouristate.edu|sirius.missouristate.edu"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-ktep.org",
+   "size": 1,
+   "members": [
+    "ktep.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-cloud-c1.googledomains.com|ns-cloud-c2.googledomains.com|ns-cloud-c3.googledomains.com|ns-cloud-c4.googledomains.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-ktxs.com",
+   "size": 1,
+   "members": [
+    "ktxs.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1206.awsdns-22.org|ns-1827.awsdns-36.co.uk|ns-203.awsdns-25.com|ns-971.awsdns-57.net"
+   ],
+   "final_hosts": [
+    "ktxs.com"
+   ]
+  },
+  {
+   "id": "cand-kuaf.com",
+   "size": 1,
+   "members": [
+    "kuaf.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns1.uark.edu|ns2.uark.edu|ns3.uark.edu"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-kunc.org",
+   "size": 1,
+   "members": [
+    "kunc.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns1.worldnic.com|ns2.worldnic.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-kunm.org",
+   "size": 1,
+   "members": [
+    "kunm.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "dns101.register.com|dns102.register.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-kunr.org",
+   "size": 1,
+   "members": [
+    "kunr.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "nsx1.unr.edu|nsx2.unr.edu|nsx3.unr.edu"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-kuow.org",
+   "size": 1,
+   "members": [
+    "kuow.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1512.awsdns-61.org|ns-1900.awsdns-45.co.uk|ns-425.awsdns-53.com|ns-516.awsdns-00.net"
+   ],
+   "final_hosts": [
+    "kuow.org"
+   ]
+  },
+  {
+   "id": "cand-kwbu.org",
+   "size": 1,
+   "members": [
+    "kwbu.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns1bdg.name.com|ns2fkr.name.com|ns3fgh.name.com|ns4ghm.name.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-kwit.org",
+   "size": 1,
+   "members": [
+    "kwit.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns75.worldnic.com|ns76.worldnic.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-kxl.com",
+   "size": 1,
+   "members": [
+    "kxl.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "darwin.ns.cloudflare.com|linda.ns.cloudflare.com"
+   ],
+   "final_hosts": [
+    "kxl.com"
+   ]
+  },
+  {
+   "id": "cand-kyuk.org",
+   "size": 1,
+   "members": [
+    "kyuk.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns1159.dns.dyn.com|ns2182.dns.dyn.com|ns3145.dns.dyn.com|ns4170.dns.dyn.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-kzyx.org",
+   "size": 1,
+   "members": [
+    "kzyx.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "dns1.mcn.org|dns2.mcn.org"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-lancasteronline.com",
+   "size": 1,
+   "members": [
+    "lancasteronline.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "margaret.ns.cloudflare.com|mitch.ns.cloudflare.com"
+   ],
+   "final_hosts": [
+    "lancasteronline.com"
+   ]
+  },
+  {
+   "id": "cand-lasvegassun.com",
+   "size": 1,
+   "members": [
+    "lasvegassun.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "jay.ns.cloudflare.com|may.ns.cloudflare.com"
+   ],
+   "final_hosts": [
+    "lasvegassun.com"
+   ]
+  },
+  {
+   "id": "cand-lbc.co.uk",
+   "size": 1,
+   "members": [
+    "lbc.co.uk"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns0.as39202.net|ns1.as39202.net|ns2.as39202.co.uk"
+   ],
+   "final_hosts": [
+    "lbc.co.uk"
+   ]
+  },
+  {
+   "id": "cand-lithgowmercury.com.au",
+   "size": 1,
+   "members": [
+    "lithgowmercury.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1522.awsdns-62.org|ns-1577.awsdns-05.co.uk|ns-279.awsdns-34.com|ns-839.awsdns-40.net"
+   ],
+   "final_hosts": [
+    "lithgowmercury.com.au"
+   ]
+  },
+  {
+   "id": "cand-macleayargus.com.au",
+   "size": 1,
+   "members": [
+    "macleayargus.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1431.awsdns-50.org|ns-1866.awsdns-41.co.uk|ns-451.awsdns-56.com|ns-537.awsdns-03.net"
+   ],
+   "final_hosts": [
+    "macleayargus.com.au"
+   ]
+  },
+  {
+   "id": "cand-maitlandmercury.com.au",
+   "size": 1,
+   "members": [
+    "maitlandmercury.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1320.awsdns-37.org|ns-1835.awsdns-37.co.uk|ns-250.awsdns-31.com|ns-818.awsdns-38.net"
+   ],
+   "final_hosts": [
+    "maitlandmercury.com.au"
+   ]
+  },
+  {
+   "id": "cand-mandurahmail.com.au",
+   "size": 1,
+   "members": [
+    "mandurahmail.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1071.awsdns-05.org|ns-1666.awsdns-16.co.uk|ns-341.awsdns-42.com|ns-809.awsdns-37.net"
+   ],
+   "final_hosts": [
+    "mandurahmail.com.au"
+   ]
+  },
+  {
+   "id": "cand-manningrivertimes.com.au",
+   "size": 1,
+   "members": [
+    "manningrivertimes.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1000.awsdns-61.net|ns-1081.awsdns-07.org|ns-1603.awsdns-08.co.uk|ns-77.awsdns-09.com"
+   ],
+   "final_hosts": [
+    "manningrivertimes.com.au"
+   ]
+  },
+  {
+   "id": "cand-merimbulanewsweekly.com.au",
+   "size": 1,
+   "members": [
+    "merimbulanewsweekly.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1049.awsdns-03.org|ns-1944.awsdns-51.co.uk|ns-376.awsdns-47.com|ns-667.awsdns-19.net"
+   ],
+   "final_hosts": [
+    "merimbulanewsweekly.com.au"
+   ]
+  },
+  {
+   "id": "cand-moreechampion.com.au",
+   "size": 1,
+   "members": [
+    "moreechampion.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1407.awsdns-47.org|ns-1676.awsdns-17.co.uk|ns-366.awsdns-45.com|ns-966.awsdns-56.net"
+   ],
+   "final_hosts": [
+    "moreechampion.com.au"
+   ]
+  },
+  {
+   "id": "cand-mudgeeguardian.com.au",
+   "size": 1,
+   "members": [
+    "mudgeeguardian.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1300.awsdns-34.org|ns-1805.awsdns-33.co.uk|ns-199.awsdns-24.com|ns-859.awsdns-43.net"
+   ],
+   "final_hosts": [
+    "mudgeeguardian.com.au"
+   ]
+  },
+  {
+   "id": "cand-muswellbrookchronicle.com.au",
+   "size": 1,
+   "members": [
+    "muswellbrookchronicle.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1488.awsdns-58.org|ns-1870.awsdns-41.co.uk|ns-212.awsdns-26.com|ns-723.awsdns-26.net"
+   ],
+   "final_hosts": [
+    "muswellbrookchronicle.com.au"
+   ]
+  },
+  {
+   "id": "cand-myfox28columbus.com",
+   "size": 1,
+   "members": [
+    "myfox28columbus.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1272.awsdns-31.org|ns-1578.awsdns-05.co.uk|ns-332.awsdns-41.com|ns-529.awsdns-02.net"
+   ],
+   "final_hosts": [
+    "myfox28columbus.com"
+   ]
+  },
+  {
+   "id": "cand-mymotherlode.com",
+   "size": 1,
+   "members": [
+    "mymotherlode.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns29.domaincontrol.com|ns30.domaincontrol.com"
+   ],
+   "final_hosts": [
+    "mymotherlode.com"
+   ]
+  },
+  {
+   "id": "cand-mynews4.com",
+   "size": 1,
+   "members": [
+    "mynews4.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1188.awsdns-20.org|ns-1689.awsdns-19.co.uk|ns-303.awsdns-37.com|ns-753.awsdns-30.net"
+   ],
+   "final_hosts": [
+    "mynews4.com"
+   ]
+  },
+  {
+   "id": "cand-naroomanewsonline.com.au",
+   "size": 1,
+   "members": [
+    "naroomanewsonline.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1097.awsdns-09.org|ns-156.awsdns-19.com|ns-1653.awsdns-14.co.uk|ns-955.awsdns-55.net"
+   ],
+   "final_hosts": [
+    "naroomanewsonline.com.au"
+   ]
+  },
+  {
+   "id": "cand-narrominenewsonline.com.au",
+   "size": 1,
+   "members": [
+    "narrominenewsonline.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1226.awsdns-25.org|ns-1599.awsdns-07.co.uk|ns-286.awsdns-35.com|ns-642.awsdns-16.net"
+   ],
+   "final_hosts": [
+    "narrominenewsonline.com.au"
+   ]
+  },
+  {
+   "id": "cand-nbcmontana.com",
+   "size": 1,
+   "members": [
+    "nbcmontana.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1439.awsdns-51.org|ns-1744.awsdns-26.co.uk|ns-420.awsdns-52.com|ns-948.awsdns-54.net"
+   ],
+   "final_hosts": [
+    "nbcmontana.com"
+   ]
+  },
+  {
+   "id": "cand-nbcnews.com",
+   "size": 1,
+   "members": [
+    "nbcnews.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "nsa1.nbcnews.com|nsa2.nbcnews.com|nsa3.nbcnews.com|nsa4.nbcnews.com|nsa5.nbcnews.com|nsa6.nbcnews.com"
+   ],
+   "final_hosts": [
+    "nbcnews.com"
+   ]
+  },
+  {
+   "id": "cand-nebraska.tv",
+   "size": 1,
+   "members": [
+    "nebraska.tv"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1261.awsdns-29.org|ns-1716.awsdns-22.co.uk|ns-343.awsdns-42.com|ns-667.awsdns-19.net"
+   ],
+   "final_hosts": [
+    "nebraska.tv"
+   ]
+  },
+  {
+   "id": "cand-newburytoday.co.uk",
+   "size": 1,
+   "members": [
+    "newburytoday.co.uk"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns11.domaincontrol.com|ns12.domaincontrol.com"
+   ],
+   "final_hosts": [
+    "newburytoday.co.uk"
+   ]
+  },
+  {
+   "id": "cand-newcastleherald.com.au",
+   "size": 1,
+   "members": [
+    "newcastleherald.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1157.awsdns-16.org|ns-1923.awsdns-48.co.uk|ns-38.awsdns-04.com|ns-773.awsdns-32.net"
+   ],
+   "final_hosts": [
+    "newcastleherald.com.au"
+   ]
+  },
+  {
+   "id": "cand-news-gazette.com",
+   "size": 1,
+   "members": [
+    "news-gazette.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1491.awsdns-58.org|ns-1759.awsdns-27.co.uk|ns-281.awsdns-35.com|ns-542.awsdns-03.net"
+   ],
+   "final_hosts": [
+    "news-gazette.com"
+   ]
+  },
+  {
+   "id": "cand-northcountrypublicradio.org",
+   "size": 1,
+   "members": [
+    "northcountrypublicradio.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "carl.ns.cloudflare.com|tori.ns.cloudflare.com"
+   ],
+   "final_hosts": [
+    "northcountrypublicradio.org"
+   ]
+  },
+  {
+   "id": "cand-northerndailyleader.com.au",
+   "size": 1,
+   "members": [
+    "northerndailyleader.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1315.awsdns-36.org|ns-167.awsdns-20.com|ns-1732.awsdns-24.co.uk|ns-805.awsdns-36.net"
+   ],
+   "final_hosts": [
+    "northerndailyleader.com.au"
+   ]
+  },
+  {
+   "id": "cand-northweststar.com.au",
+   "size": 1,
+   "members": [
+    "northweststar.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1182.awsdns-19.org|ns-1960.awsdns-53.co.uk|ns-302.awsdns-37.com|ns-521.awsdns-01.net"
+   ],
+   "final_hosts": [
+    "northweststar.com.au"
+   ]
+  },
+  {
+   "id": "cand-nsnews.com",
+   "size": 1,
+   "members": [
+    "nsnews.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "braden.ns.cloudflare.com|pearl.ns.cloudflare.com"
+   ],
+   "final_hosts": [
+    "nsnews.com"
+   ]
+  },
+  {
+   "id": "cand-nvi.com.au",
+   "size": 1,
+   "members": [
+    "nvi.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1491.awsdns-58.org|ns-1852.awsdns-39.co.uk|ns-295.awsdns-36.com|ns-619.awsdns-13.net"
+   ],
+   "final_hosts": [
+    "nvi.com.au"
+   ]
+  },
+  {
+   "id": "cand-nynganobserver.com.au",
+   "size": 1,
+   "members": [
+    "nynganobserver.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1198.awsdns-21.org|ns-1873.awsdns-42.co.uk|ns-364.awsdns-45.com|ns-864.awsdns-44.net"
+   ],
+   "final_hosts": [
+    "nynganobserver.com.au"
+   ]
+  },
+  {
+   "id": "cand-oberonreview.com.au",
+   "size": 1,
+   "members": [
+    "oberonreview.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-122.awsdns-15.com|ns-1350.awsdns-40.org|ns-1841.awsdns-38.co.uk|ns-922.awsdns-51.net"
+   ],
+   "final_hosts": [
+    "oberonreview.com.au"
+   ]
+  },
+  {
+   "id": "cand-panow.com",
+   "size": 1,
+   "members": [
+    "panow.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "gordon.ns.cloudflare.com|melinda.ns.cloudflare.com"
+   ],
+   "final_hosts": [
+    "panow.com"
+   ]
+  },
+  {
+   "id": "cand-perthnow.com.au",
+   "size": 1,
+   "members": [
+    "perthnow.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1378.awsdns-44.org|ns-1752.awsdns-27.co.uk|ns-197.awsdns-24.com|ns-732.awsdns-27.net"
+   ],
+   "final_hosts": [
+    "perthnow.com.au"
+   ]
+  },
+  {
+   "id": "cand-portnews.com.au",
+   "size": 1,
+   "members": [
+    "portnews.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1427.awsdns-50.org|ns-1646.awsdns-13.co.uk|ns-63.awsdns-07.com|ns-711.awsdns-24.net"
+   ],
+   "final_hosts": [
+    "portnews.com.au"
+   ]
+  },
+  {
+   "id": "cand-portstephensexaminer.com.au",
+   "size": 1,
+   "members": [
+    "portstephensexaminer.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1361.awsdns-42.org|ns-1913.awsdns-47.co.uk|ns-428.awsdns-53.com|ns-677.awsdns-20.net"
+   ],
+   "final_hosts": [
+    "portstephensexaminer.com.au"
+   ]
+  },
+  {
+   "id": "cand-postregister.com",
+   "size": 1,
+   "members": [
+    "postregister.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns03.domaincontrol.com|ns04.domaincontrol.com"
+   ],
+   "final_hosts": [
+    "postregister.com"
+   ]
+  },
+  {
+   "id": "cand-publicradiotulsa.org",
+   "size": 1,
+   "members": [
+    "publicradiotulsa.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "dns.onenet.net|ns01.ad.utulsa.edu|ns02.ad.utulsa.edu|terra.osrhe.edu"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-queanbeyanage.com.au",
+   "size": 1,
+   "members": [
+    "queanbeyanage.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1493.awsdns-58.org|ns-1854.awsdns-39.co.uk|ns-258.awsdns-32.com|ns-656.awsdns-18.net"
+   ],
+   "final_hosts": [
+    "queanbeyanage.com.au"
+   ]
+  },
+  {
+   "id": "cand-redlandcitybulletin.com.au",
+   "size": 1,
+   "members": [
+    "redlandcitybulletin.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1217.awsdns-24.org|ns-1812.awsdns-34.co.uk|ns-330.awsdns-41.com|ns-818.awsdns-38.net"
+   ],
+   "final_hosts": [
+    "redlandcitybulletin.com.au"
+   ]
+  },
+  {
+   "id": "cand-rte.ie",
+   "size": 1,
+   "members": [
+    "rte.ie"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "blue.foundationdns.com|blue.foundationdns.net|blue.foundationdns.org"
+   ],
+   "final_hosts": [
+    "rte.ie"
+   ]
+  },
+  {
+   "id": "cand-sconeadvocate.com.au",
+   "size": 1,
+   "members": [
+    "sconeadvocate.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1417.awsdns-49.org|ns-1654.awsdns-14.co.uk|ns-166.awsdns-20.com|ns-626.awsdns-14.net"
+   ],
+   "final_hosts": [
+    "sconeadvocate.com.au"
+   ]
+  },
+  {
+   "id": "cand-seattletimes.com",
+   "size": 1,
+   "members": [
+    "seattletimes.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1127.awsdns-12.org|ns-1952.awsdns-52.co.uk|ns-335.awsdns-41.com|ns-676.awsdns-20.net"
+   ],
+   "final_hosts": [
+    "seattletimes.com"
+   ]
+  },
+  {
+   "id": "cand-singletonargus.com.au",
+   "size": 1,
+   "members": [
+    "singletonargus.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1103.awsdns-09.org|ns-1755.awsdns-27.co.uk|ns-321.awsdns-40.com|ns-886.awsdns-46.net"
+   ],
+   "final_hosts": [
+    "singletonargus.com.au"
+   ]
+  },
+  {
+   "id": "cand-sitkasentinel.com",
+   "size": 1,
+   "members": [
+    "sitkasentinel.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns1.dns-parking.com|ns2.dns-parking.com"
+   ],
+   "final_hosts": [
+    "sitkasentinel.com"
+   ]
+  },
+  {
+   "id": "cand-smdailyjournal.com",
+   "size": 1,
+   "members": [
+    "smdailyjournal.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns47.domaincontrol.com|ns48.domaincontrol.com"
+   ],
+   "final_hosts": [
+    "smdailyjournal.com"
+   ]
+  },
+  {
+   "id": "cand-southcoastregister.com.au",
+   "size": 1,
+   "members": [
+    "southcoastregister.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-112.awsdns-14.com|ns-1150.awsdns-15.org|ns-1875.awsdns-42.co.uk|ns-658.awsdns-18.net"
+   ],
+   "final_hosts": [
+    "southcoastregister.com.au"
+   ]
+  },
+  {
+   "id": "cand-southernhighlandnews.com.au",
+   "size": 1,
+   "members": [
+    "southernhighlandnews.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1159.awsdns-16.org|ns-1819.awsdns-35.co.uk|ns-503.awsdns-62.com|ns-710.awsdns-24.net"
+   ],
+   "final_hosts": [
+    "southernhighlandnews.com.au"
+   ]
+  },
+  {
+   "id": "cand-standard.co.uk",
+   "size": 1,
+   "members": [
+    "standard.co.uk"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "lars.ns.cloudflare.com|rihana.ns.cloudflare.com"
+   ],
+   "final_hosts": [
+    "standard.co.uk"
+   ]
+  },
+  {
+   "id": "cand-standard.net.au",
+   "size": 1,
+   "members": [
+    "standard.net.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1339.awsdns-39.org|ns-1943.awsdns-50.co.uk|ns-285.awsdns-35.com|ns-872.awsdns-45.net"
+   ],
+   "final_hosts": [
+    "standard.net.au"
+   ]
+  },
+  {
+   "id": "cand-stratford-herald.com",
+   "size": 1,
+   "members": [
+    "stratford-herald.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns1.livedns.co.uk|ns2.livedns.co.uk|ns3.livedns.co.uk"
+   ],
+   "final_hosts": [
+    "stratford-herald.com"
+   ]
+  },
+  {
+   "id": "cand-tenterfieldstar.com.au",
+   "size": 1,
+   "members": [
+    "tenterfieldstar.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1043.awsdns-02.org|ns-1690.awsdns-19.co.uk|ns-502.awsdns-62.com|ns-700.awsdns-23.net"
+   ],
+   "final_hosts": [
+    "tenterfieldstar.com.au"
+   ]
+  },
+  {
+   "id": "cand-theadvocate.com.au",
+   "size": 1,
+   "members": [
+    "theadvocate.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1518.awsdns-61.org|ns-2031.awsdns-61.co.uk|ns-374.awsdns-46.com|ns-692.awsdns-22.net"
+   ],
+   "final_hosts": [
+    "theadvocate.com.au"
+   ]
+  },
+  {
+   "id": "cand-thecourier.com.au",
+   "size": 1,
+   "members": [
+    "thecourier.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1062.awsdns-04.org|ns-1767.awsdns-28.co.uk|ns-297.awsdns-37.com|ns-963.awsdns-56.net"
+   ],
+   "final_hosts": [
+    "thecourier.com.au"
+   ]
+  },
+  {
+   "id": "cand-theleader.com.au",
+   "size": 1,
+   "members": [
+    "theleader.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1091.awsdns-08.org|ns-1821.awsdns-35.co.uk|ns-349.awsdns-43.com|ns-934.awsdns-52.net"
+   ],
+   "final_hosts": [
+    "theleader.com.au"
+   ]
+  },
+  {
+   "id": "cand-therural.com.au",
+   "size": 1,
+   "members": [
+    "therural.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1064.awsdns-05.org|ns-1625.awsdns-11.co.uk|ns-175.awsdns-21.com|ns-941.awsdns-53.net"
+   ],
+   "final_hosts": [
+    "therural.com.au"
+   ]
+  },
+  {
+   "id": "cand-turnto10.com",
+   "size": 1,
+   "members": [
+    "turnto10.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1371.awsdns-43.org|ns-1977.awsdns-55.co.uk|ns-206.awsdns-25.com|ns-953.awsdns-55.net"
+   ],
+   "final_hosts": [
+    "turnto10.com"
+   ]
+  },
+  {
+   "id": "cand-turnto23.com",
+   "size": 1,
+   "members": [
+    "turnto23.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-143.awsdns-17.com|ns-1521.awsdns-62.org|ns-1954.awsdns-52.co.uk|ns-843.awsdns-41.net"
+   ],
+   "final_hosts": [
+    "turnto23.com"
+   ]
+  },
+  {
+   "id": "cand-ualrpublicradio.org",
+   "size": 1,
+   "members": [
+    "ualrpublicradio.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns13.domaincontrol.com|ns14.domaincontrol.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-ulladullatimes.com.au",
+   "size": 1,
+   "members": [
+    "ulladullatimes.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-146.awsdns-18.com|ns-1506.awsdns-60.org|ns-1537.awsdns-00.co.uk|ns-948.awsdns-54.net"
+   ],
+   "final_hosts": [
+    "ulladullatimes.com.au"
+   ]
+  },
+  {
+   "id": "cand-union-bulletin.com",
+   "size": 1,
+   "members": [
+    "union-bulletin.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-cloud-b1.googledomains.com|ns-cloud-b2.googledomains.com|ns-cloud-b3.googledomains.com|ns-cloud-b4.googledomains.com"
+   ],
+   "final_hosts": [
+    "union-bulletin.com"
+   ]
+  },
+  {
+   "id": "cand-upnorthlive.com",
+   "size": 1,
+   "members": [
+    "upnorthlive.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1441.awsdns-52.org|ns-1683.awsdns-18.co.uk|ns-172.awsdns-21.com|ns-625.awsdns-14.net"
+   ],
+   "final_hosts": [
+    "upnorthlive.com"
+   ]
+  },
+  {
+   "id": "cand-waer.org",
+   "size": 1,
+   "members": [
+    "waer.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns93.worldnic.com|ns94.worldnic.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wamc.org",
+   "size": 1,
+   "members": [
+    "wamc.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1399.awsdns-46.org|ns-2023.awsdns-60.co.uk|ns-318.awsdns-39.com|ns-859.awsdns-43.net"
+   ],
+   "final_hosts": [
+    "wamc.org"
+   ]
+  },
+  {
+   "id": "cand-wbaa.org",
+   "size": 1,
+   "members": [
+    "wbaa.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns1.wintek.com|ns2.wintek.com|ns3.wintek.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wboi.org",
+   "size": 1,
+   "members": [
+    "wboi.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1365.awsdns-42.org|ns-1821.awsdns-35.co.uk|ns-391.awsdns-48.com|ns-618.awsdns-13.net"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wbrz.com",
+   "size": 1,
+   "members": [
+    "wbrz.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1497.awsdns-59.org|ns-1741.awsdns-25.co.uk|ns-457.awsdns-57.com|ns-882.awsdns-46.net"
+   ],
+   "final_hosts": [
+    "wbrz.com"
+   ]
+  },
+  {
+   "id": "cand-wcbe.org",
+   "size": 1,
+   "members": [
+    "wcbe.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1353.awsdns-41.org|ns-1814.awsdns-34.co.uk|ns-302.awsdns-37.com|ns-712.awsdns-25.net"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wclk.com",
+   "size": 1,
+   "members": [
+    "wclk.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1190.awsdns-20.org|ns-185.awsdns-23.com|ns-2008.awsdns-59.co.uk|ns-678.awsdns-20.net"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wcsufm.org",
+   "size": 1,
+   "members": [
+    "wcsufm.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns73.domaincontrol.com|ns74.domaincontrol.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wcti12.com",
+   "size": 1,
+   "members": [
+    "wcti12.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1520.awsdns-62.org|ns-2018.awsdns-60.co.uk|ns-436.awsdns-54.com|ns-615.awsdns-12.net"
+   ],
+   "final_hosts": [
+    "wcti12.com"
+   ]
+  },
+  {
+   "id": "cand-wdiy.org",
+   "size": 1,
+   "members": [
+    "wdiy.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1096.awsdns-09.org|ns-1606.awsdns-08.co.uk|ns-229.awsdns-28.com|ns-836.awsdns-40.net"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-weartv.com",
+   "size": 1,
+   "members": [
+    "weartv.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1003.awsdns-61.net|ns-1209.awsdns-23.org|ns-1685.awsdns-18.co.uk|ns-28.awsdns-03.com"
+   ],
+   "final_hosts": [
+    "weartv.com"
+   ]
+  },
+  {
+   "id": "cand-wellingtontimes.com.au",
+   "size": 1,
+   "members": [
+    "wellingtontimes.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1200.awsdns-22.org|ns-1609.awsdns-09.co.uk|ns-236.awsdns-29.com|ns-728.awsdns-27.net"
+   ],
+   "final_hosts": [
+    "wellingtontimes.com.au"
+   ]
+  },
+  {
+   "id": "cand-wemu.org",
+   "size": 1,
+   "members": [
+    "wemu.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns43.domaincontrol.com|ns44.domaincontrol.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-westernadvocate.com.au",
+   "size": 1,
+   "members": [
+    "westernadvocate.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1353.awsdns-41.org|ns-1604.awsdns-08.co.uk|ns-20.awsdns-02.com|ns-786.awsdns-34.net"
+   ],
+   "final_hosts": [
+    "westernadvocate.com.au"
+   ]
+  },
+  {
+   "id": "cand-wfae.org",
+   "size": 1,
+   "members": [
+    "wfae.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "arya.ns.cloudflare.com|noel.ns.cloudflare.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-whqr.org",
+   "size": 1,
+   "members": [
+    "whqr.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns85.worldnic.com|ns86.worldnic.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-whro.org",
+   "size": 1,
+   "members": [
+    "whro.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns1.whro.net|ns2.whro.net|vns1.whro.net|vns2.whro.net"
+   ],
+   "final_hosts": [
+    "whro.org"
+   ]
+  },
+  {
+   "id": "cand-winknews.com",
+   "size": 1,
+   "members": [
+    "winknews.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "hank.ns.cloudflare.com|lia.ns.cloudflare.com"
+   ],
+   "final_hosts": [
+    "winknews.com"
+   ]
+  },
+  {
+   "id": "cand-wkms.org",
+   "size": 1,
+   "members": [
+    "wkms.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "arbiter.murraystate.edu|dns1.murraystate.edu|dns2test.murraystate.edu|dns3.murraystate.edu|flood.murraystate.edu"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wkyufm.org",
+   "size": 1,
+   "members": [
+    "wkyufm.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns1.wku.edu|ns2.wku.edu|ns3.wku.edu"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wlrn.org",
+   "size": 1,
+   "members": [
+    "wlrn.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns67.worldnic.com|ns68.worldnic.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wmra.org",
+   "size": 1,
+   "members": [
+    "wmra.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "it-ns3-19.jmu.edu|it-ns4-20.jmu.edu|it-ns5-21.jmu.edu"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wmuk.org",
+   "size": 1,
+   "members": [
+    "wmuk.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns1.ace4hosting.com|ns2.ace4hosting.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wncw.org",
+   "size": 1,
+   "members": [
+    "wncw.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-01.mcnc.org|ns-02.mcnc.org"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wnmufm.org",
+   "size": 1,
+   "members": [
+    "wnmufm.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns21.domaincontrol.com|ns22.domaincontrol.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wnyc.org",
+   "size": 1,
+   "members": [
+    "wnyc.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1486.awsdns-57.org|ns-1643.awsdns-13.co.uk|ns-380.awsdns-47.com|ns-689.awsdns-22.net"
+   ],
+   "final_hosts": [
+    "wnyc.org"
+   ]
+  },
+  {
+   "id": "cand-woonsocketcall.com",
+   "size": 1,
+   "members": [
+    "woonsocketcall.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns13.worldnic.com|ns14.worldnic.com"
+   ],
+   "final_hosts": [
+    "woonsocketcall.com"
+   ]
+  },
+  {
+   "id": "cand-wpde.com",
+   "size": 1,
+   "members": [
+    "wpde.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1190.awsdns-20.org|ns-1717.awsdns-22.co.uk|ns-382.awsdns-47.com|ns-700.awsdns-23.net"
+   ],
+   "final_hosts": [
+    "wpde.com"
+   ]
+  },
+  {
+   "id": "cand-wset.com",
+   "size": 1,
+   "members": [
+    "wset.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1403.awsdns-47.org|ns-1595.awsdns-07.co.uk|ns-382.awsdns-47.com|ns-873.awsdns-45.net"
+   ],
+   "final_hosts": [
+    "wset.com"
+   ]
+  },
+  {
+   "id": "cand-wtov9.com",
+   "size": 1,
+   "members": [
+    "wtov9.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1081.awsdns-07.org|ns-2001.awsdns-58.co.uk|ns-504.awsdns-63.com|ns-969.awsdns-57.net"
+   ],
+   "final_hosts": [
+    "wtov9.com"
+   ]
+  },
+  {
+   "id": "cand-wuft.org",
+   "size": 1,
+   "members": [
+    "wuft.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ens.name.ufl.edu|rns.name.ufl.edu"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wuky.org",
+   "size": 1,
+   "members": [
+    "wuky.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "sndc1.net.uky.edu|sndc2.net.uky.edu"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wutc.org",
+   "size": 1,
+   "members": [
+    "wutc.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ens1.utc.edu|ens2.utc.edu"
+   ],
+   "final_hosts": [
+    "wutc.org"
+   ]
+  },
+  {
+   "id": "cand-wuwf.org",
+   "size": 1,
+   "members": [
+    "wuwf.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1260.awsdns-29.org|ns-1689.awsdns-19.co.uk|ns-262.awsdns-32.com|ns-722.awsdns-26.net"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wvasfm.org",
+   "size": 1,
+   "members": [
+    "wvasfm.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1399.awsdns-46.org|ns-1952.awsdns-52.co.uk|ns-320.awsdns-40.com|ns-786.awsdns-34.net"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wvik.org",
+   "size": 1,
+   "members": [
+    "wvik.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1108.awsdns-10.org|ns-1805.awsdns-33.co.uk|ns-201.awsdns-25.com|ns-541.awsdns-03.net"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wvxu.org",
+   "size": 1,
+   "members": [
+    "wvxu.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns33.domaincontrol.com|ns34.domaincontrol.com"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wwmt.com",
+   "size": 1,
+   "members": [
+    "wwmt.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1511.awsdns-60.org|ns-1726.awsdns-23.co.uk|ns-180.awsdns-22.com|ns-590.awsdns-09.net"
+   ],
+   "final_hosts": [
+    "wwmt.com"
+   ]
+  },
+  {
+   "id": "cand-wwno.org",
+   "size": 1,
+   "members": [
+    "wwno.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1419.awsdns-49.org|ns-1881.awsdns-43.co.uk|ns-70.awsdns-08.com|ns-945.awsdns-54.net"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wyomingpublicmedia.org",
+   "size": 1,
+   "members": [
+    "wyomingpublicmedia.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "oldasuw.uwyo.edu|roper.uwyo.edu"
+   ],
+   "final_hosts": []
+  },
+  {
+   "id": "cand-wypr.org",
+   "size": 1,
+   "members": [
+    "wypr.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "hadlee.ns.cloudflare.com|jaziel.ns.cloudflare.com"
+   ],
+   "final_hosts": [
+    "wypr.org"
+   ]
+  },
+  {
+   "id": "cand-yakimaherald.com",
+   "size": 1,
+   "members": [
+    "yakimaherald.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-cloud-e1.googledomains.com|ns-cloud-e2.googledomains.com|ns-cloud-e3.googledomains.com|ns-cloud-e4.googledomains.com"
+   ],
+   "final_hosts": [
+    "yakimaherald.com"
+   ]
+  },
+  {
+   "id": "cand-yasstribune.com.au",
+   "size": 1,
+   "members": [
+    "yasstribune.com.au"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns-1331.awsdns-38.org|ns-1812.awsdns-34.co.uk|ns-317.awsdns-39.com|ns-717.awsdns-25.net"
+   ],
+   "final_hosts": [
+    "yasstribune.com.au"
+   ]
+  },
+  {
+   "id": "cand-yoursourceone.com",
+   "size": 1,
+   "members": [
+    "yoursourceone.com"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "ns35.domaincontrol.com|ns36.domaincontrol.com"
+   ],
+   "final_hosts": [
+    "yoursourceone.com"
+   ]
+  },
+  {
+   "id": "cand-ypradio.org",
+   "size": 1,
+   "members": [
+    "ypradio.org"
+   ],
+   "relation_counts": {},
+   "ns_sets": [
+    "dns01.msubillings.edu|dns02.msubillings.edu"
+   ],
+   "final_hosts": []
+  }
+ ]
+}

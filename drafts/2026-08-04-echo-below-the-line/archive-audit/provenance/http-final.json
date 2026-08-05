@@ -1,0 +1,4180 @@
+{
+ "checked_utc_start": "2026-08-05T13:01:25Z",
+ "checked_utc_end": "2026-08-05T13:03:08Z",
+ "n_domains": 596,
+ "n_with_final_host": 519,
+ "records": [
+  {
+   "domain": "1013kissfm.iheart.com",
+   "checked_utc": "2026-08-05T13:01:25Z",
+   "final_host": "1013kissfm.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "1019bigwaax.iheart.com",
+   "checked_utc": "2026-08-05T13:01:25Z",
+   "final_host": "1019bigwaax.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "1021thebull.iheart.com",
+   "checked_utc": "2026-08-05T13:01:25Z",
+   "final_host": "1021thebull.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "1061fmtalk.iheart.com",
+   "checked_utc": "2026-08-05T13:01:25Z",
+   "final_host": "1061fmtalk.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "1075kissfm.iheart.com",
+   "checked_utc": "2026-08-05T13:01:25Z",
+   "final_host": "1075kissfm.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "107mus.iheart.com",
+   "checked_utc": "2026-08-05T13:01:25Z",
+   "final_host": "107mus.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "1190kex.iheart.com",
+   "checked_utc": "2026-08-05T13:01:25Z",
+   "final_host": "1190kex.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "13wham.com",
+   "checked_utc": "2026-08-05T13:01:25Z",
+   "final_host": "13wham.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "1430kasi.iheart.com",
+   "checked_utc": "2026-08-05T13:01:25Z",
+   "final_host": "1430kasi.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "1450wkip.iheart.com",
+   "checked_utc": "2026-08-05T13:01:25Z",
+   "final_host": "1450wkip.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "55krc.iheart.com",
+   "checked_utc": "2026-08-05T13:01:25Z",
+   "final_host": "55krc.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "570wkbn.iheart.com",
+   "checked_utc": "2026-08-05T13:01:25Z",
+   "final_host": "570wkbn.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "600wrec.iheart.com",
+   "checked_utc": "2026-08-05T13:01:27Z",
+   "final_host": "600wrec.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "650keni.iheart.com",
+   "checked_utc": "2026-08-05T13:01:27Z",
+   "final_host": "650keni.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "790waeb.iheart.com",
+   "checked_utc": "2026-08-05T13:01:27Z",
+   "final_host": "790waeb.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "800wvhu.iheart.com",
+   "checked_utc": "2026-08-05T13:01:27Z",
+   "final_host": "800wvhu.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "925wpap.iheart.com",
+   "checked_utc": "2026-08-05T13:01:27Z",
+   "final_host": "925wpap.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "937now.iheart.com",
+   "checked_utc": "2026-08-05T13:01:27Z",
+   "final_host": "937now.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "943wsc.iheart.com",
+   "checked_utc": "2026-08-05T13:01:27Z",
+   "final_host": "943wsc.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "953bull.iheart.com",
+   "checked_utc": "2026-08-05T13:01:27Z",
+   "final_host": "953bull.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "955thebull.iheart.com",
+   "checked_utc": "2026-08-05T13:01:27Z",
+   "final_host": "955thebull.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "95ksj.iheart.com",
+   "checked_utc": "2026-08-05T13:01:27Z",
+   "final_host": "95ksj.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "95wxtk.iheart.com",
+   "checked_utc": "2026-08-05T13:01:28Z",
+   "final_host": "95wxtk.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "961kissonline.iheart.com",
+   "checked_utc": "2026-08-05T13:01:28Z",
+   "final_host": "961kissonline.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "963starcountry.iheart.com",
+   "checked_utc": "2026-08-05T13:01:28Z",
+   "final_host": "963starcountry.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "969thekat.iheart.com",
+   "checked_utc": "2026-08-05T13:01:28Z",
+   "final_host": "969thekat.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "973thebullicons.iheart.com",
+   "checked_utc": "2026-08-05T13:01:28Z",
+   "final_host": "973thebullicons.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "975online.iheart.com",
+   "checked_utc": "2026-08-05T13:01:28Z",
+   "final_host": "975online.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "975wcos.iheart.com",
+   "checked_utc": "2026-08-05T13:01:28Z",
+   "final_host": "975wcos.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "979kissfm.iheart.com",
+   "checked_utc": "2026-08-05T13:01:29Z",
+   "final_host": "979kissfm.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "97kicksfm.iheart.com",
+   "checked_utc": "2026-08-05T13:01:29Z",
+   "final_host": "97kicksfm.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "991kglx.iheart.com",
+   "checked_utc": "2026-08-05T13:01:29Z",
+   "final_host": "991kglx.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "999xtc.iheart.com",
+   "checked_utc": "2026-08-05T13:01:29Z",
+   "final_host": "999xtc.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "abc7amarillo.com",
+   "checked_utc": "2026-08-05T13:01:29Z",
+   "final_host": "abc7amarillo.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "abcnews.com",
+   "checked_utc": "2026-08-05T13:01:29Z",
+   "final_host": "abcnews.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "abcnews4.com",
+   "checked_utc": "2026-08-05T13:01:29Z",
+   "final_host": "abcnews4.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "afghanistannews.net",
+   "checked_utc": "2026-08-05T13:01:29Z",
+   "final_host": "www.afghanistannews.net",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "afghanistansun.com",
+   "checked_utc": "2026-08-05T13:01:29Z",
+   "final_host": "www.afghanistansun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "africaleader.com",
+   "checked_utc": "2026-08-05T13:01:29Z",
+   "final_host": "www.africaleader.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "aggie96.iheart.com",
+   "checked_utc": "2026-08-05T13:01:29Z",
+   "final_host": "aggie96.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "albuquerqueexpress.com",
+   "checked_utc": "2026-08-05T13:01:29Z",
+   "final_host": "www.albuquerqueexpress.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "andoveradvertiser.co.uk",
+   "checked_utc": "2026-08-05T13:01:29Z",
+   "final_host": "www.andoveradvertiser.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "aol.co.uk",
+   "checked_utc": "2026-08-05T13:01:29Z",
+   "final_host": "www.aol.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "apr.org",
+   "checked_utc": "2026-08-05T13:01:29Z",
+   "final_host": "www.apr.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "arabherald.com",
+   "checked_utc": "2026-08-05T13:01:30Z",
+   "final_host": "www.arabherald.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "areanews.com.au",
+   "checked_utc": "2026-08-05T13:01:30Z",
+   "final_host": "www.areanews.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "argentinastar.com",
+   "checked_utc": "2026-08-05T13:01:30Z",
+   "final_host": "www.argentinastar.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "armidaleexpress.com.au",
+   "checked_utc": "2026-08-05T13:01:30Z",
+   "final_host": "www.armidaleexpress.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "asiabulletin.com",
+   "checked_utc": "2026-08-05T13:01:30Z",
+   "final_host": "www.asiabulletin.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "asianimage.co.uk",
+   "checked_utc": "2026-08-05T13:01:30Z",
+   "final_host": "www.asianimage.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "asiaone.com",
+   "checked_utc": "2026-08-05T13:01:30Z",
+   "final_host": "www.asiaone.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "aspenpublicradio.org",
+   "checked_utc": "2026-08-05T13:01:30Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "austinglobe.com",
+   "checked_utc": "2026-08-05T13:01:31Z",
+   "final_host": "www.austinglobe.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "australiannews.net",
+   "checked_utc": "2026-08-05T13:01:31Z",
+   "final_host": "www.australiannews.net",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "azerbaijannews.net",
+   "checked_utc": "2026-08-05T13:01:31Z",
+   "final_host": "www.azerbaijannews.net",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "b100wobb.iheart.com",
+   "checked_utc": "2026-08-05T13:01:31Z",
+   "final_host": "b100wobb.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bangladeshsun.com",
+   "checked_utc": "2026-08-05T13:01:31Z",
+   "final_host": "www.bangladeshsun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bangordailynews.com",
+   "checked_utc": "2026-08-05T13:01:31Z",
+   "final_host": "www.bangordailynews.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "barryanddistrictnews.co.uk",
+   "checked_utc": "2026-08-05T13:01:31Z",
+   "final_host": "www.barryanddistrictnews.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "basingstokegazette.co.uk",
+   "checked_utc": "2026-08-05T13:01:31Z",
+   "final_host": "www.basingstokegazette.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "batemansbaypost.com.au",
+   "checked_utc": "2026-08-05T13:01:31Z",
+   "final_host": "www.batemansbaypost.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "batonrougepost.com",
+   "checked_utc": "2026-08-05T13:01:32Z",
+   "final_host": "www.batonrougepost.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "begadistrictnews.com.au",
+   "checked_utc": "2026-08-05T13:01:32Z",
+   "final_host": "www.begadistrictnews.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bendigoadvertiser.com.au",
+   "checked_utc": "2026-08-05T13:01:32Z",
+   "final_host": "www.bendigoadvertiser.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bicesteradvertiser.net",
+   "checked_utc": "2026-08-05T13:01:32Z",
+   "final_host": "www.bicesteradvertiser.net",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "big1047.iheart.com",
+   "checked_utc": "2026-08-05T13:01:32Z",
+   "final_host": "big1047.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "big955chicago.iheart.com",
+   "checked_utc": "2026-08-05T13:01:32Z",
+   "final_host": "big955chicago.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bignewsnetwork.com",
+   "checked_utc": "2026-08-05T13:01:32Z",
+   "final_host": "www.bignewsnetwork.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bill95.iheart.com",
+   "checked_utc": "2026-08-05T13:01:32Z",
+   "final_host": "bill95.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "birminghamstar.com",
+   "checked_utc": "2026-08-05T13:01:33Z",
+   "final_host": "www.birminghamstar.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "blayneychronicle.com.au",
+   "checked_utc": "2026-08-05T13:01:33Z",
+   "final_host": "www.blayneychronicle.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bluemountainsgazette.com.au",
+   "checked_utc": "2026-08-05T13:01:33Z",
+   "final_host": "www.bluemountainsgazette.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bob949.iheart.com",
+   "checked_utc": "2026-08-05T13:01:33Z",
+   "final_host": "bob949.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bordermail.com.au",
+   "checked_utc": "2026-08-05T13:01:33Z",
+   "final_host": "www.bordermail.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bordertelegraph.com",
+   "checked_utc": "2026-08-05T13:01:33Z",
+   "final_host": "www.bordertelegraph.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "borehamwoodtimes.co.uk",
+   "checked_utc": "2026-08-05T13:01:33Z",
+   "final_host": "www.borehamwoodtimes.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bostonstar.com",
+   "checked_utc": "2026-08-05T13:01:33Z",
+   "final_host": "www.bostonstar.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bournemouthecho.co.uk",
+   "checked_utc": "2026-08-05T13:01:33Z",
+   "final_host": "www.bournemouthecho.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bozemandailychronicle.com",
+   "checked_utc": "2026-08-05T13:01:34Z",
+   "final_host": "www.bozemandailychronicle.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bracknellnews.co.uk",
+   "checked_utc": "2026-08-05T13:01:34Z",
+   "final_host": "www.bracknellnews.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "braidwoodtimes.com.au",
+   "checked_utc": "2026-08-05T13:01:34Z",
+   "final_host": "www.braidwoodtimes.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "braintreeandwithamtimes.co.uk",
+   "checked_utc": "2026-08-05T13:01:34Z",
+   "final_host": "www.braintreeandwithamtimes.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "brandonsun.com",
+   "checked_utc": "2026-08-05T13:01:34Z",
+   "final_host": "www.brandonsun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "brazilsun.com",
+   "checked_utc": "2026-08-05T13:01:34Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(OSError('Tunnel connection failed: 502 Bad Gateway'))"
+  },
+  {
+   "domain": "breakingnews.ie",
+   "checked_utc": "2026-08-05T13:01:35Z",
+   "final_host": "www.breakingnews.ie",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "brentwoodlive.co.uk",
+   "checked_utc": "2026-08-05T13:01:35Z",
+   "final_host": "www.brentwoodlive.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bridgwatermercury.co.uk",
+   "checked_utc": "2026-08-05T13:01:35Z",
+   "final_host": "www.bridgwatermercury.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bridportnews.co.uk",
+   "checked_utc": "2026-08-05T13:01:35Z",
+   "final_host": "www.bridportnews.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "britainnews.net",
+   "checked_utc": "2026-08-05T13:01:35Z",
+   "final_host": "www.britainnews.net",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bromsgroveadvertiser.co.uk",
+   "checked_utc": "2026-08-05T13:01:35Z",
+   "final_host": "www.bromsgroveadvertiser.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bruneinews.net",
+   "checked_utc": "2026-08-05T13:01:35Z",
+   "final_host": "www.bruneinews.net",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "buckeyecountry943.iheart.com",
+   "checked_utc": "2026-08-05T13:01:35Z",
+   "final_host": "buckeyecountry943.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bucksfreepress.co.uk",
+   "checked_utc": "2026-08-05T13:01:35Z",
+   "final_host": "www.bucksfreepress.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bull1057.iheart.com",
+   "checked_utc": "2026-08-05T13:01:35Z",
+   "final_host": "bull1057.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "bunburymail.com.au",
+   "checked_utc": "2026-08-05T13:01:36Z",
+   "final_host": "www.bunburymail.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "burnhamandhighbridgeweeklynews.co.uk",
+   "checked_utc": "2026-08-05T13:01:36Z",
+   "final_host": "www.burnhamandhighbridgeweeklynews.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "burytimes.co.uk",
+   "checked_utc": "2026-08-05T13:01:36Z",
+   "final_host": "www.burytimes.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "butlereagle.com",
+   "checked_utc": "2026-08-05T13:01:36Z",
+   "final_host": "www.butlereagle.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "cambodiantimes.com",
+   "checked_utc": "2026-08-05T13:01:36Z",
+   "final_host": "www.cambodiantimes.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "camdencourier.com.au",
+   "checked_utc": "2026-08-05T13:01:36Z",
+   "final_host": "www.camdencourier.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "campbellrivermirror.com",
+   "checked_utc": "2026-08-05T13:01:36Z",
+   "final_host": "campbellrivermirror.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "canberratimes.com.au",
+   "checked_utc": "2026-08-05T13:01:36Z",
+   "final_host": "www.canberratimes.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "capeandislands.org",
+   "checked_utc": "2026-08-05T13:01:36Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "caribbeanherald.com",
+   "checked_utc": "2026-08-05T13:01:37Z",
+   "final_host": "www.caribbeanherald.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "cbs4local.com",
+   "checked_utc": "2026-08-05T13:01:37Z",
+   "final_host": "cbs4local.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "cecildaily.com",
+   "checked_utc": "2026-08-05T13:01:37Z",
+   "final_host": "www.cecildaily.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "centralwesterndaily.com.au",
+   "checked_utc": "2026-08-05T13:01:37Z",
+   "final_host": "www.centralwesterndaily.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "cessnockadvertiser.com.au",
+   "checked_utc": "2026-08-05T13:01:37Z",
+   "final_host": "www.cessnockadvertiser.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "channeldayton.iheart.com",
+   "checked_utc": "2026-08-05T13:01:37Z",
+   "final_host": "channeldayton.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "chardandilminsternews.co.uk",
+   "checked_utc": "2026-08-05T13:01:38Z",
+   "final_host": "www.chardandilminsternews.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "chelmsfordweeklynews.co.uk",
+   "checked_utc": "2026-08-05T13:01:38Z",
+   "final_host": "www.chelmsfordweeklynews.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "chesterstandard.co.uk",
+   "checked_utc": "2026-08-05T13:01:38Z",
+   "final_host": "www.chesterstandard.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "cincinnatisun.com",
+   "checked_utc": "2026-08-05T13:01:38Z",
+   "final_host": "www.cincinnatisun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "clactonandfrintongazette.co.uk",
+   "checked_utc": "2026-08-05T13:01:38Z",
+   "final_host": "www.clactonandfrintongazette.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "clevelandstar.com",
+   "checked_utc": "2026-08-05T13:01:38Z",
+   "final_host": "www.clevelandstar.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "clickondetroit.com",
+   "checked_utc": "2026-08-05T13:01:38Z",
+   "final_host": "www.clickondetroit.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "clickorlando.com",
+   "checked_utc": "2026-08-05T13:01:38Z",
+   "final_host": "www.clickorlando.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "clydebankpost.co.uk",
+   "checked_utc": "2026-08-05T13:01:39Z",
+   "final_host": "www.clydebankpost.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "cnycentral.com",
+   "checked_utc": "2026-08-05T13:01:39Z",
+   "final_host": "cnycentral.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "coloradostar.com",
+   "checked_utc": "2026-08-05T13:01:39Z",
+   "final_host": "www.coloradostar.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "comoxvalleyrecord.com",
+   "checked_utc": "2026-08-05T13:01:39Z",
+   "final_host": "comoxvalleyrecord.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "cootamundraherald.com.au",
+   "checked_utc": "2026-08-05T13:01:39Z",
+   "final_host": "www.cootamundraherald.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "cotswoldjournal.co.uk",
+   "checked_utc": "2026-08-05T13:01:39Z",
+   "final_host": "www.cotswoldjournal.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "country1005.iheart.com",
+   "checked_utc": "2026-08-05T13:01:39Z",
+   "final_host": "country1005.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "countypress.co.uk",
+   "checked_utc": "2026-08-05T13:01:39Z",
+   "final_host": "www.countypress.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "countytimes.co.uk",
+   "checked_utc": "2026-08-05T13:01:40Z",
+   "final_host": "www.countytimes.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "cranbrooktownsman.com",
+   "checked_utc": "2026-08-05T13:01:40Z",
+   "final_host": "cranbrooktownsman.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "cravenherald.co.uk",
+   "checked_utc": "2026-08-05T13:01:40Z",
+   "final_host": "www.cravenherald.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "crookwellgazette.com.au",
+   "checked_utc": "2026-08-05T13:01:40Z",
+   "final_host": "www.crookwellgazette.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "ctqcountry.iheart.com",
+   "checked_utc": "2026-08-05T13:01:40Z",
+   "final_host": "ctqcountry.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "dailyadvertiser.com.au",
+   "checked_utc": "2026-08-05T13:01:40Z",
+   "final_host": "www.dailyadvertiser.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "dailyecho.co.uk",
+   "checked_utc": "2026-08-05T13:01:40Z",
+   "final_host": "www.dailyecho.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "dailygazette.com",
+   "checked_utc": "2026-08-05T13:01:41Z",
+   "final_host": "www.dailygazette.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "dailyliberal.com.au",
+   "checked_utc": "2026-08-05T13:01:41Z",
+   "final_host": "www.dailyliberal.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "dallassun.com",
+   "checked_utc": "2026-08-05T13:01:41Z",
+   "final_host": "www.dallassun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "darlingtonandstocktontimes.co.uk",
+   "checked_utc": "2026-08-05T13:01:41Z",
+   "final_host": "www.darlingtonandstocktontimes.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "delawarepublic.org",
+   "checked_utc": "2026-08-05T13:01:41Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "denbighshirefreepress.co.uk",
+   "checked_utc": "2026-08-05T13:01:41Z",
+   "final_host": "www.denbighshirefreepress.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "dissexpress.co.uk",
+   "checked_utc": "2026-08-05T13:01:41Z",
+   "final_host": "www.dissexpress.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "dorsetecho.co.uk",
+   "checked_utc": "2026-08-05T13:01:42Z",
+   "final_host": "www.dorsetecho.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "dudleynews.co.uk",
+   "checked_utc": "2026-08-05T13:01:42Z",
+   "final_host": "www.dudleynews.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "dumbartonreporter.co.uk",
+   "checked_utc": "2026-08-05T13:01:42Z",
+   "final_host": "www.dumbartonreporter.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "dunfermlinepress.com",
+   "checked_utc": "2026-08-05T13:01:42Z",
+   "final_host": "www.dunfermlinepress.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "dungogchronicle.com.au",
+   "checked_utc": "2026-08-05T13:01:42Z",
+   "final_host": "www.dungogchronicle.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "dunyanews.tv",
+   "checked_utc": "2026-08-05T13:01:42Z",
+   "final_host": "dunyanews.tv",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "durangoherald.com",
+   "checked_utc": "2026-08-05T13:01:42Z",
+   "final_host": "www.durangoherald.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "eadt.co.uk",
+   "checked_utc": "2026-08-05T13:01:43Z",
+   "final_host": "www.eadt.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "ealingtimes.co.uk",
+   "checked_utc": "2026-08-05T13:01:43Z",
+   "final_host": "www.ealingtimes.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "easternriverinachronicle.com.au",
+   "checked_utc": "2026-08-05T13:01:43Z",
+   "final_host": "www.easternriverinachronicle.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "eastlothiancourier.com",
+   "checked_utc": "2026-08-05T13:01:43Z",
+   "final_host": "www.eastlothiancourier.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "echo-news.co.uk",
+   "checked_utc": "2026-08-05T13:01:43Z",
+   "final_host": "www.echo-news.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "edenmagnet.com.au",
+   "checked_utc": "2026-08-05T13:01:43Z",
+   "final_host": "www.edenmagnet.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "edp24.co.uk",
+   "checked_utc": "2026-08-05T13:01:43Z",
+   "final_host": "www.edp24.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "enfieldindependent.co.uk",
+   "checked_utc": "2026-08-05T13:01:43Z",
+   "final_host": "www.enfieldindependent.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "eppingforestguardian.co.uk",
+   "checked_utc": "2026-08-05T13:01:43Z",
+   "final_host": "www.eppingforestguardian.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "erienewsnow.com",
+   "checked_utc": "2026-08-05T13:01:44Z",
+   "final_host": "erienewsnow.com",
+   "status": 429,
+   "error": "HTTP 429"
+  },
+  {
+   "domain": "europesun.com",
+   "checked_utc": "2026-08-05T13:01:44Z",
+   "final_host": "www.europesun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "eveningnews24.co.uk",
+   "checked_utc": "2026-08-05T13:01:44Z",
+   "final_host": "www.eveningnews24.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "eveshamjournal.co.uk",
+   "checked_utc": "2026-08-05T13:01:44Z",
+   "final_host": "www.eveshamjournal.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "examiner.com.au",
+   "checked_utc": "2026-08-05T13:01:44Z",
+   "final_host": "www.examiner.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "falmouthpacket.co.uk",
+   "checked_utc": "2026-08-05T13:01:45Z",
+   "final_host": "www.falmouthpacket.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "fenlandcitizen.co.uk",
+   "checked_utc": "2026-08-05T13:01:45Z",
+   "final_host": "www.fenlandcitizen.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "floridastatesman.com",
+   "checked_utc": "2026-08-05T13:01:45Z",
+   "final_host": "www.floridastatesman.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "fox11online.com",
+   "checked_utc": "2026-08-05T13:01:45Z",
+   "final_host": "fox11online.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "fox17.com",
+   "checked_utc": "2026-08-05T13:01:46Z",
+   "final_host": "fox17.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "fox23.com",
+   "checked_utc": "2026-08-05T13:01:46Z",
+   "final_host": "fox23.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "fox56.com",
+   "checked_utc": "2026-08-05T13:01:46Z",
+   "final_host": "fox56.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "freepressseries.co.uk",
+   "checked_utc": "2026-08-05T13:01:46Z",
+   "final_host": "www.freepressseries.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "gazette-news.co.uk",
+   "checked_utc": "2026-08-05T13:01:46Z",
+   "final_host": "www.gazette-news.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "gazetteandherald.co.uk",
+   "checked_utc": "2026-08-05T13:01:46Z",
+   "final_host": "www.gazetteandherald.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "gazetteherald.co.uk",
+   "checked_utc": "2026-08-05T13:01:46Z",
+   "final_host": "www.gazetteherald.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "gazetteseries.co.uk",
+   "checked_utc": "2026-08-05T13:01:46Z",
+   "final_host": "www.gazetteseries.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "gazettextra.com",
+   "checked_utc": "2026-08-05T13:01:46Z",
+   "final_host": "www.gazettextra.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "glasgowtimes.co.uk",
+   "checked_utc": "2026-08-05T13:01:46Z",
+   "final_host": "www.glasgowtimes.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "gleninnesexaminer.com.au",
+   "checked_utc": "2026-08-05T13:01:46Z",
+   "final_host": "www.gleninnesexaminer.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "gloucesteradvocate.com.au",
+   "checked_utc": "2026-08-05T13:01:46Z",
+   "final_host": "www.gloucesteradvocate.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "goskagit.com",
+   "checked_utc": "2026-08-05T13:01:46Z",
+   "final_host": "www.goskagit.com",
+   "status": 429,
+   "error": "HTTP 429"
+  },
+  {
+   "domain": "goulburnpost.com.au",
+   "checked_utc": "2026-08-05T13:01:47Z",
+   "final_host": "www.goulburnpost.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "greatlakesadvocate.com.au",
+   "checked_utc": "2026-08-05T13:01:47Z",
+   "final_host": "www.greatlakesadvocate.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "greekherald.com",
+   "checked_utc": "2026-08-05T13:01:47Z",
+   "final_host": "www.greekherald.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "greenocktelegraph.co.uk",
+   "checked_utc": "2026-08-05T13:01:47Z",
+   "final_host": "www.greenocktelegraph.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "guardian-series.co.uk",
+   "checked_utc": "2026-08-05T13:01:47Z",
+   "final_host": "www.guardian-series.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "haitisun.com",
+   "checked_utc": "2026-08-05T13:01:47Z",
+   "final_host": "www.haitisun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "halesowennews.co.uk",
+   "checked_utc": "2026-08-05T13:01:47Z",
+   "final_host": "www.halesowennews.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "halsteadgazette.co.uk",
+   "checked_utc": "2026-08-05T13:01:47Z",
+   "final_host": "www.halsteadgazette.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "hamhigh.co.uk",
+   "checked_utc": "2026-08-05T13:01:48Z",
+   "final_host": "www.hamhigh.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "hampshirechronicle.co.uk",
+   "checked_utc": "2026-08-05T13:01:48Z",
+   "final_host": "www.hampshirechronicle.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "hardenexpress.com.au",
+   "checked_utc": "2026-08-05T13:01:48Z",
+   "final_host": "www.hardenexpress.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "harrowtimes.co.uk",
+   "checked_utc": "2026-08-05T13:01:48Z",
+   "final_host": "www.harrowtimes.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "harwichandmanningtreestandard.co.uk",
+   "checked_utc": "2026-08-05T13:01:48Z",
+   "final_host": "www.harwichandmanningtreestandard.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "hawaiitelegraph.com",
+   "checked_utc": "2026-08-05T13:01:48Z",
+   "final_host": "www.hawaiitelegraph.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "hepburnadvocate.com.au",
+   "checked_utc": "2026-08-05T13:01:48Z",
+   "final_host": "www.hepburnadvocate.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "heraldglobe.com",
+   "checked_utc": "2026-08-05T13:01:49Z",
+   "final_host": "www.heraldglobe.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "heraldseries.co.uk",
+   "checked_utc": "2026-08-05T13:01:49Z",
+   "final_host": "www.heraldseries.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "hexham-courant.co.uk",
+   "checked_utc": "2026-08-05T13:01:49Z",
+   "final_host": "www.hexham-courant.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "hillingdontimes.co.uk",
+   "checked_utc": "2026-08-05T13:01:49Z",
+   "final_host": "www.hillingdontimes.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "hongkongherald.com",
+   "checked_utc": "2026-08-05T13:01:49Z",
+   "final_host": "www.hongkongherald.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "hot1019nwa.iheart.com",
+   "checked_utc": "2026-08-05T13:01:49Z",
+   "final_host": "hot1019nwa.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "hot949fm.iheart.com",
+   "checked_utc": "2026-08-05T13:01:49Z",
+   "final_host": "hot949fm.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "houstonpublicmedia.org",
+   "checked_utc": "2026-08-05T13:01:49Z",
+   "final_host": "www.houstonpublicmedia.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "hppr.org",
+   "checked_utc": "2026-08-05T13:01:49Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "ijpr.org",
+   "checked_utc": "2026-08-05T13:01:49Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "illawarramercury.com.au",
+   "checked_utc": "2026-08-05T13:01:50Z",
+   "final_host": "www.illawarramercury.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "impartialreporter.com",
+   "checked_utc": "2026-08-05T13:01:50Z",
+   "final_host": "www.impartialreporter.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "indiagazette.com",
+   "checked_utc": "2026-08-05T13:01:50Z",
+   "final_host": "www.indiagazette.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "interlochenpublicradio.org",
+   "checked_utc": "2026-08-05T13:01:50Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "inverelltimes.com.au",
+   "checked_utc": "2026-08-05T13:01:50Z",
+   "final_host": "www.inverelltimes.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "iowapublicradio.org",
+   "checked_utc": "2026-08-05T13:01:50Z",
+   "final_host": "www.iowapublicradio.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "ipswichstar.co.uk",
+   "checked_utc": "2026-08-05T13:01:50Z",
+   "final_host": "www.ipswichstar.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "iranherald.com",
+   "checked_utc": "2026-08-05T13:01:50Z",
+   "final_host": "www.iranherald.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "iraqsun.com",
+   "checked_utc": "2026-08-05T13:01:51Z",
+   "final_host": "www.iraqsun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "irishsun.com",
+   "checked_utc": "2026-08-05T13:01:51Z",
+   "final_host": "www.irishsun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "irrigator.com.au",
+   "checked_utc": "2026-08-05T13:01:51Z",
+   "final_host": "www.irrigator.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "irvinetimes.com",
+   "checked_utc": "2026-08-05T13:01:51Z",
+   "final_host": "www.irvinetimes.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "isp.netscape.com",
+   "checked_utc": "2026-08-05T13:01:51Z",
+   "final_host": "isp.netscape.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "israelherald.com",
+   "checked_utc": "2026-08-05T13:01:51Z",
+   "final_host": "www.israelherald.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "jamaicantimes.com",
+   "checked_utc": "2026-08-05T13:01:51Z",
+   "final_host": "www.jamaicantimes.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "japanherald.com",
+   "checked_utc": "2026-08-05T13:01:51Z",
+   "final_host": "www.japanherald.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "jetradio1400.iheart.com",
+   "checked_utc": "2026-08-05T13:01:52Z",
+   "final_host": "jetradio1400.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "juneesoutherncross.com.au",
+   "checked_utc": "2026-08-05T13:01:52Z",
+   "final_host": "www.juneesoutherncross.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kacu.org",
+   "checked_utc": "2026-08-05T13:01:52Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kalw.org",
+   "checked_utc": "2026-08-05T13:01:52Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kansaspublicradio.org",
+   "checked_utc": "2026-08-05T13:01:53Z",
+   "final_host": "kansaspublicradio.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kasu.org",
+   "checked_utc": "2026-08-05T13:01:53Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "katherinetimes.com.au",
+   "checked_utc": "2026-08-05T13:01:53Z",
+   "final_host": "www.katherinetimes.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "katu.com",
+   "checked_utc": "2026-08-05T13:01:53Z",
+   "final_host": "katu.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kawc.org",
+   "checked_utc": "2026-08-05T13:01:53Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kazu.org",
+   "checked_utc": "2026-08-05T13:01:53Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kbia.org",
+   "checked_utc": "2026-08-05T13:01:53Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kbmr.iheart.com",
+   "checked_utc": "2026-08-05T13:01:53Z",
+   "final_host": "kbmr.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kc101.iheart.com",
+   "checked_utc": "2026-08-05T13:01:54Z",
+   "final_host": "kc101.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kcbx.org",
+   "checked_utc": "2026-08-05T13:01:54Z",
+   "final_host": "www.kcbx.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kcci.com",
+   "checked_utc": "2026-08-05T13:01:55Z",
+   "final_host": "www.kcci.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kccu.org",
+   "checked_utc": "2026-08-05T13:01:55Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kclu.org",
+   "checked_utc": "2026-08-05T13:01:55Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kedm.org",
+   "checked_utc": "2026-08-05T13:01:55Z",
+   "final_host": "www.kedm.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "keighleynews.co.uk",
+   "checked_utc": "2026-08-05T13:01:56Z",
+   "final_host": "www.keighleynews.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kentonline.co.uk",
+   "checked_utc": "2026-08-05T13:01:56Z",
+   "final_host": "www.kentonline.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kenw.org",
+   "checked_utc": "2026-08-05T13:01:56Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "ketr.org",
+   "checked_utc": "2026-08-05T13:01:57Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kfoxtv.com",
+   "checked_utc": "2026-08-05T13:01:57Z",
+   "final_host": "kfoxtv.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kfvs12.com",
+   "checked_utc": "2026-08-05T13:01:58Z",
+   "final_host": "www.kfvs12.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kfyi.iheart.com",
+   "checked_utc": "2026-08-05T13:01:58Z",
+   "final_host": "kfyi.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kgou.org",
+   "checked_utc": "2026-08-05T13:01:58Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "khqa.com",
+   "checked_utc": "2026-08-05T13:01:59Z",
+   "final_host": "www.khqa.com",
+   "status": 429,
+   "error": "HTTP 429"
+  },
+  {
+   "domain": "khvhradio.iheart.com",
+   "checked_utc": "2026-08-05T13:01:59Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kiak.iheart.com",
+   "checked_utc": "2026-08-05T13:01:59Z",
+   "final_host": "kiak.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kidderminstershuttle.co.uk",
+   "checked_utc": "2026-08-05T13:01:59Z",
+   "final_host": "www.kidderminstershuttle.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kilburntimes.co.uk",
+   "checked_utc": "2026-08-05T13:01:59Z",
+   "final_host": "www.kilburntimes.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kios.org",
+   "checked_utc": "2026-08-05T13:02:00Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kiss1067.iheart.com",
+   "checked_utc": "2026-08-05T13:02:00Z",
+   "final_host": "kiss1067.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kiss959fm.iheart.com",
+   "checked_utc": "2026-08-05T13:02:00Z",
+   "final_host": "kiss959fm.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kissfmhv.iheart.com",
+   "checked_utc": "2026-08-05T13:02:01Z",
+   "final_host": "kissfmhv.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kisslima.iheart.com",
+   "checked_utc": "2026-08-05T13:02:01Z",
+   "final_host": "kisslima.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kisswheeling.iheart.com",
+   "checked_utc": "2026-08-05T13:02:01Z",
+   "final_host": "kisswheeling.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kix104.iheart.com",
+   "checked_utc": "2026-08-05T13:02:01Z",
+   "final_host": "kix104.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kixcountry929.iheart.com",
+   "checked_utc": "2026-08-05T13:02:01Z",
+   "final_host": "kixcountry929.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kj97.iheart.com",
+   "checked_utc": "2026-08-05T13:02:01Z",
+   "final_host": "kj97.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kjzz.org",
+   "checked_utc": "2026-08-05T13:02:02Z",
+   "final_host": "www.kjzz.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "klcc.org",
+   "checked_utc": "2026-08-05T13:02:02Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "klvi.iheart.com",
+   "checked_utc": "2026-08-05T13:02:02Z",
+   "final_host": "klvi.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kmuw.org",
+   "checked_utc": "2026-08-05T13:02:02Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kmxt.org",
+   "checked_utc": "2026-08-05T13:02:02Z",
+   "final_host": "www.kmxt.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "knau.org",
+   "checked_utc": "2026-08-05T13:02:02Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "knpr.org",
+   "checked_utc": "2026-08-05T13:02:02Z",
+   "final_host": "knpr.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "knrs.iheart.com",
+   "checked_utc": "2026-08-05T13:02:02Z",
+   "final_host": "knrs.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "knst.iheart.com",
+   "checked_utc": "2026-08-05T13:02:03Z",
+   "final_host": "knst.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kogo.iheart.com",
+   "checked_utc": "2026-08-05T13:02:03Z",
+   "final_host": "kogo.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kpbs.org",
+   "checked_utc": "2026-08-05T13:02:03Z",
+   "final_host": "www.kpbs.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kpcw.org",
+   "checked_utc": "2026-08-05T13:02:03Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "krcu.org",
+   "checked_utc": "2026-08-05T13:02:04Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "krmg.com",
+   "checked_utc": "2026-08-05T13:02:04Z",
+   "final_host": "krmg.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "krvs.org",
+   "checked_utc": "2026-08-05T13:02:04Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "krwg.org",
+   "checked_utc": "2026-08-05T13:02:04Z",
+   "final_host": "www.krwg.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "ksat.com",
+   "checked_utc": "2026-08-05T13:02:04Z",
+   "final_host": "www.ksat.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "ksfr.org",
+   "checked_utc": "2026-08-05T13:02:05Z",
+   "final_host": "www.ksfr.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "ksmu.org",
+   "checked_utc": "2026-08-05T13:02:05Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kssn.iheart.com",
+   "checked_utc": "2026-08-05T13:02:05Z",
+   "final_host": "kssn.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "ksut.org",
+   "checked_utc": "2026-08-05T13:02:05Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "ktep.org",
+   "checked_utc": "2026-08-05T13:02:06Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "ktok.iheart.com",
+   "checked_utc": "2026-08-05T13:02:06Z",
+   "final_host": "ktok.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "ktxs.com",
+   "checked_utc": "2026-08-05T13:02:07Z",
+   "final_host": "ktxs.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kuaf.com",
+   "checked_utc": "2026-08-05T13:02:07Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kunc.org",
+   "checked_utc": "2026-08-05T13:02:08Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kunm.org",
+   "checked_utc": "2026-08-05T13:02:08Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kunr.org",
+   "checked_utc": "2026-08-05T13:02:08Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kuow.org",
+   "checked_utc": "2026-08-05T13:02:09Z",
+   "final_host": "www.kuow.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kvnf.org",
+   "checked_utc": "2026-08-05T13:02:10Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kvpr.org",
+   "checked_utc": "2026-08-05T13:02:10Z",
+   "final_host": "www.kvpr.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kwbu.org",
+   "checked_utc": "2026-08-05T13:02:10Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kwhn.iheart.com",
+   "checked_utc": "2026-08-05T13:02:10Z",
+   "final_host": "kwhn.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kwit.org",
+   "checked_utc": "2026-08-05T13:02:10Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kxl.com",
+   "checked_utc": "2026-08-05T13:02:11Z",
+   "final_host": "www.kxl.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kykr.iheart.com",
+   "checked_utc": "2026-08-05T13:02:11Z",
+   "final_host": "kykr.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "kyuk.org",
+   "checked_utc": "2026-08-05T13:02:11Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "kzyx.org",
+   "checked_utc": "2026-08-05T13:02:12Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "lancashiretelegraph.co.uk",
+   "checked_utc": "2026-08-05T13:02:12Z",
+   "final_host": "www.lancashiretelegraph.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "lancasteronline.com",
+   "checked_utc": "2026-08-05T13:02:12Z",
+   "final_host": "lancasteronline.com",
+   "status": 429,
+   "error": "HTTP 429"
+  },
+  {
+   "domain": "laosnews.net",
+   "checked_utc": "2026-08-05T13:02:12Z",
+   "final_host": "www.laosnews.net",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "lasvegassun.com",
+   "checked_utc": "2026-08-05T13:02:12Z",
+   "final_host": "lasvegassun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "lbc.co.uk",
+   "checked_utc": "2026-08-05T13:02:13Z",
+   "final_host": "www.lbc.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "leaderlive.co.uk",
+   "checked_utc": "2026-08-05T13:02:13Z",
+   "final_host": "www.leaderlive.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "leadertelegram.com",
+   "checked_utc": "2026-08-05T13:02:13Z",
+   "final_host": "www.leadertelegram.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "ledburyreporter.co.uk",
+   "checked_utc": "2026-08-05T13:02:13Z",
+   "final_host": "www.ledburyreporter.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "leighjournal.co.uk",
+   "checked_utc": "2026-08-05T13:02:14Z",
+   "final_host": "www.leighjournal.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "lithgowmercury.com.au",
+   "checked_utc": "2026-08-05T13:02:14Z",
+   "final_host": "www.lithgowmercury.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "london-now.co.uk",
+   "checked_utc": "2026-08-05T13:02:14Z",
+   "final_host": "www.london-now.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "londonmercury.com",
+   "checked_utc": "2026-08-05T13:02:15Z",
+   "final_host": "www.londonmercury.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "ludlowadvertiser.co.uk",
+   "checked_utc": "2026-08-05T13:02:15Z",
+   "final_host": "www.ludlowadvertiser.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "lufkindailynews.com",
+   "checked_utc": "2026-08-05T13:02:15Z",
+   "final_host": "lufkindailynews.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "lynnnews.co.uk",
+   "checked_utc": "2026-08-05T13:02:15Z",
+   "final_host": "www.lynnnews.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "macleayargus.com.au",
+   "checked_utc": "2026-08-05T13:02:15Z",
+   "final_host": "www.macleayargus.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "mainemirror.com",
+   "checked_utc": "2026-08-05T13:02:15Z",
+   "final_host": "www.mainemirror.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "maitlandmercury.com.au",
+   "checked_utc": "2026-08-05T13:02:16Z",
+   "final_host": "www.maitlandmercury.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "malaysiasun.com",
+   "checked_utc": "2026-08-05T13:02:16Z",
+   "final_host": "www.malaysiasun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "maldonandburnhamstandard.co.uk",
+   "checked_utc": "2026-08-05T13:02:16Z",
+   "final_host": "www.maldonandburnhamstandard.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "malverngazette.co.uk",
+   "checked_utc": "2026-08-05T13:02:16Z",
+   "final_host": "www.malverngazette.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "mandurahmail.com.au",
+   "checked_utc": "2026-08-05T13:02:16Z",
+   "final_host": "www.mandurahmail.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "manningrivertimes.com.au",
+   "checked_utc": "2026-08-05T13:02:17Z",
+   "final_host": "www.manningrivertimes.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "mapleridgenews.com",
+   "checked_utc": "2026-08-05T13:02:17Z",
+   "final_host": "mapleridgenews.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "massachusettssun.com",
+   "checked_utc": "2026-08-05T13:02:17Z",
+   "final_host": "www.massachusettssun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "memphissun.com",
+   "checked_utc": "2026-08-05T13:02:17Z",
+   "final_host": "www.memphissun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "merimbulanewsweekly.com.au",
+   "checked_utc": "2026-08-05T13:02:17Z",
+   "final_host": "www.merimbulanewsweekly.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "messengernewspapers.co.uk",
+   "checked_utc": "2026-08-05T13:02:17Z",
+   "final_host": "www.messengernewspapers.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "mexicostar.com",
+   "checked_utc": "2026-08-05T13:02:17Z",
+   "final_host": "www.mexicostar.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "middleeaststar.com",
+   "checked_utc": "2026-08-05T13:02:17Z",
+   "final_host": "www.middleeaststar.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "milfordmercury.co.uk",
+   "checked_utc": "2026-08-05T13:02:18Z",
+   "final_host": "www.milfordmercury.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "milwaukeesun.com",
+   "checked_utc": "2026-08-05T13:02:18Z",
+   "final_host": "www.milwaukeesun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "moreechampion.com.au",
+   "checked_utc": "2026-08-05T13:02:18Z",
+   "final_host": "www.moreechampion.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "mudgeeguardian.com.au",
+   "checked_utc": "2026-08-05T13:02:18Z",
+   "final_host": "www.mudgeeguardian.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "muswellbrookchronicle.com.au",
+   "checked_utc": "2026-08-05T13:02:18Z",
+   "final_host": "www.muswellbrookchronicle.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "myanmarnews.net",
+   "checked_utc": "2026-08-05T13:02:18Z",
+   "final_host": "www.myanmarnews.net",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "myfox28columbus.com",
+   "checked_utc": "2026-08-05T13:02:18Z",
+   "final_host": "myfox28columbus.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "mykiss951.iheart.com",
+   "checked_utc": "2026-08-05T13:02:18Z",
+   "final_host": "mykiss951.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "mymotherlode.com",
+   "checked_utc": "2026-08-05T13:02:18Z",
+   "final_host": "mymotherlode.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "mynews4.com",
+   "checked_utc": "2026-08-05T13:02:18Z",
+   "final_host": "mynews4.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "mynspr.org",
+   "checked_utc": "2026-08-05T13:02:18Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "mysouth1061.iheart.com",
+   "checked_utc": "2026-08-05T13:02:19Z",
+   "final_host": "mysouth1061.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "naroomanewsonline.com.au",
+   "checked_utc": "2026-08-05T13:02:19Z",
+   "final_host": "www.naroomanewsonline.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "narrominenewsonline.com.au",
+   "checked_utc": "2026-08-05T13:02:19Z",
+   "final_host": "www.narrominenewsonline.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "nashvilleherald.com",
+   "checked_utc": "2026-08-05T13:02:19Z",
+   "final_host": "www.nashvilleherald.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "nbcmontana.com",
+   "checked_utc": "2026-08-05T13:02:19Z",
+   "final_host": "nbcmontana.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "nbcnews.com",
+   "checked_utc": "2026-08-05T13:02:19Z",
+   "final_host": "www.nbcnews.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "nebraska.tv",
+   "checked_utc": "2026-08-05T13:02:19Z",
+   "final_host": "nebraska.tv",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "nepalnational.com",
+   "checked_utc": "2026-08-05T13:02:19Z",
+   "final_host": "www.nepalnational.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "newarkadvertiser.co.uk",
+   "checked_utc": "2026-08-05T13:02:20Z",
+   "final_host": "www.newarkadvertiser.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "newburytoday.co.uk",
+   "checked_utc": "2026-08-05T13:02:20Z",
+   "final_host": "www.newburytoday.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "newcastleherald.com.au",
+   "checked_utc": "2026-08-05T13:02:20Z",
+   "final_host": "www.newcastleherald.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "neworleanssun.com",
+   "checked_utc": "2026-08-05T13:02:20Z",
+   "final_host": "www.neworleanssun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "news-gazette.com",
+   "checked_utc": "2026-08-05T13:02:20Z",
+   "final_host": "news-gazette.com",
+   "status": 429,
+   "error": "HTTP 429"
+  },
+  {
+   "domain": "news.prairiepublic.org",
+   "checked_utc": "2026-08-05T13:02:20Z",
+   "final_host": "news.prairiepublic.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "news.wjct.org",
+   "checked_utc": "2026-08-05T13:02:20Z",
+   "final_host": "news.wjct.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "news4jax.com",
+   "checked_utc": "2026-08-05T13:02:21Z",
+   "final_host": "www.news4jax.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "newsandstar.co.uk",
+   "checked_utc": "2026-08-05T13:02:21Z",
+   "final_host": "www.newsandstar.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "newsradio1290wtks.iheart.com",
+   "checked_utc": "2026-08-05T13:02:21Z",
+   "final_host": "newsradio1290wtks.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "newsradio540.iheart.com",
+   "checked_utc": "2026-08-05T13:02:21Z",
+   "final_host": "newsradio540.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "newsradio910wltp.iheart.com",
+   "checked_utc": "2026-08-05T13:02:21Z",
+   "final_host": "newsradio910wltp.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "newsradio967.iheart.com",
+   "checked_utc": "2026-08-05T13:02:21Z",
+   "final_host": "newsradio967.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "newsradiori.iheart.com",
+   "checked_utc": "2026-08-05T13:02:21Z",
+   "final_host": "newsradiori.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "newsshopper.co.uk",
+   "checked_utc": "2026-08-05T13:02:21Z",
+   "final_host": "www.newsshopper.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "newstalk1230.iheart.com",
+   "checked_utc": "2026-08-05T13:02:21Z",
+   "final_host": "newstalk1230.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "newstalk1400online.iheart.com",
+   "checked_utc": "2026-08-05T13:02:22Z",
+   "final_host": "newstalk1400online.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "newyorkstatesman.com",
+   "checked_utc": "2026-08-05T13:02:22Z",
+   "final_host": "www.newyorkstatesman.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "newyorktelegraph.com",
+   "checked_utc": "2026-08-05T13:02:22Z",
+   "final_host": "www.newyorktelegraph.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "newzealandstar.com",
+   "checked_utc": "2026-08-05T13:02:22Z",
+   "final_host": "www.newzealandstar.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "niagarafallsreview.ca",
+   "checked_utc": "2026-08-05T13:02:22Z",
+   "final_host": "www.niagarafallsreview.ca",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "nigeriasun.com",
+   "checked_utc": "2026-08-05T13:02:22Z",
+   "final_host": "www.nigeriasun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "northcountrypublicradio.org",
+   "checked_utc": "2026-08-05T13:02:22Z",
+   "final_host": "www.northcountrypublicradio.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "northerndailyleader.com.au",
+   "checked_utc": "2026-08-05T13:02:22Z",
+   "final_host": "www.northerndailyleader.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "northernpublicradio.org",
+   "checked_utc": "2026-08-05T13:02:22Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "northislandgazette.com",
+   "checked_utc": "2026-08-05T13:02:22Z",
+   "final_host": "northislandgazette.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "northkoreatimes.com",
+   "checked_utc": "2026-08-05T13:02:22Z",
+   "final_host": "www.northkoreatimes.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "northwaleschronicle.co.uk",
+   "checked_utc": "2026-08-05T13:02:23Z",
+   "final_host": "www.northwaleschronicle.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "northwalespioneer.co.uk",
+   "checked_utc": "2026-08-05T13:02:23Z",
+   "final_host": "www.northwalespioneer.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "northweststar.com.au",
+   "checked_utc": "2026-08-05T13:02:23Z",
+   "final_host": "www.northweststar.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "northwichguardian.co.uk",
+   "checked_utc": "2026-08-05T13:02:23Z",
+   "final_host": "www.northwichguardian.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "nsnews.com",
+   "checked_utc": "2026-08-05T13:02:23Z",
+   "final_host": "nsnews.com",
+   "status": 403,
+   "error": "HTTP 403"
+  },
+  {
+   "domain": "nvi.com.au",
+   "checked_utc": "2026-08-05T13:02:23Z",
+   "final_host": "www.nvi.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "nwemail.co.uk",
+   "checked_utc": "2026-08-05T13:02:23Z",
+   "final_host": "www.nwemail.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "nynganobserver.com.au",
+   "checked_utc": "2026-08-05T13:02:23Z",
+   "final_host": "www.nynganobserver.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "oberonreview.com.au",
+   "checked_utc": "2026-08-05T13:02:23Z",
+   "final_host": "www.oberonreview.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "ohiostandard.com",
+   "checked_utc": "2026-08-05T13:02:24Z",
+   "final_host": "www.ohiostandard.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "oklahomacitysun.com",
+   "checked_utc": "2026-08-05T13:02:24Z",
+   "final_host": "www.oklahomacitysun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "ominecaexpress.com",
+   "checked_utc": "2026-08-05T13:02:24Z",
+   "final_host": "ominecaexpress.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "orlandoecho.com",
+   "checked_utc": "2026-08-05T13:02:24Z",
+   "final_host": "www.orlandoecho.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "oxfordmail.co.uk",
+   "checked_utc": "2026-08-05T13:02:24Z",
+   "final_host": "www.oxfordmail.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "pakistantelegraph.com",
+   "checked_utc": "2026-08-05T13:02:24Z",
+   "final_host": "www.pakistantelegraph.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "panow.com",
+   "checked_utc": "2026-08-05T13:02:25Z",
+   "final_host": "panow.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "parisguardian.com",
+   "checked_utc": "2026-08-05T13:02:25Z",
+   "final_host": "www.parisguardian.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "patriotla.iheart.com",
+   "checked_utc": "2026-08-05T13:02:25Z",
+   "final_host": "patriotla.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "peacearchnews.com",
+   "checked_utc": "2026-08-05T13:02:25Z",
+   "final_host": "peacearchnews.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "peeblesshirenews.com",
+   "checked_utc": "2026-08-05T13:02:25Z",
+   "final_host": "www.peeblesshirenews.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "penarthtimes.co.uk",
+   "checked_utc": "2026-08-05T13:02:25Z",
+   "final_host": "www.penarthtimes.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "perthnow.com.au",
+   "checked_utc": "2026-08-05T13:02:25Z",
+   "final_host": "www.perthnow.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "phoenixherald.com",
+   "checked_utc": "2026-08-05T13:02:25Z",
+   "final_host": "www.phoenixherald.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "pittsburghstar.com",
+   "checked_utc": "2026-08-05T13:02:25Z",
+   "final_host": "www.pittsburghstar.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "portnews.com.au",
+   "checked_utc": "2026-08-05T13:02:26Z",
+   "final_host": "www.portnews.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "portstephensexaminer.com.au",
+   "checked_utc": "2026-08-05T13:02:26Z",
+   "final_host": "www.portstephensexaminer.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "postregister.com",
+   "checked_utc": "2026-08-05T13:02:26Z",
+   "final_host": "www.postregister.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "power973.iheart.com",
+   "checked_utc": "2026-08-05T13:02:26Z",
+   "final_host": "power973.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "powertalk1460.iheart.com",
+   "checked_utc": "2026-08-05T13:02:26Z",
+   "final_host": "powertalk1460.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "pqbnews.com",
+   "checked_utc": "2026-08-05T13:02:26Z",
+   "final_host": "pqbnews.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "publicradiotulsa.org",
+   "checked_utc": "2026-08-05T13:02:26Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "q102.iheart.com",
+   "checked_utc": "2026-08-05T13:02:26Z",
+   "final_host": "q102.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "queanbeyanage.com.au",
+   "checked_utc": "2026-08-05T13:02:26Z",
+   "final_host": "www.queanbeyanage.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "quesnelobserver.com",
+   "checked_utc": "2026-08-05T13:02:26Z",
+   "final_host": "quesnelobserver.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "radio.wpsu.org",
+   "checked_utc": "2026-08-05T13:02:26Z",
+   "final_host": "radio.wpsu.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "readingchronicle.co.uk",
+   "checked_utc": "2026-08-05T13:02:27Z",
+   "final_host": "www.readingchronicle.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "redditchadvertiser.co.uk",
+   "checked_utc": "2026-08-05T13:02:27Z",
+   "final_host": "www.redditchadvertiser.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "redlandcitybulletin.com.au",
+   "checked_utc": "2026-08-05T13:02:27Z",
+   "final_host": "www.redlandcitybulletin.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "rhyljournal.co.uk",
+   "checked_utc": "2026-08-05T13:02:27Z",
+   "final_host": "www.rhyljournal.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "richmondandtwickenhamtimes.co.uk",
+   "checked_utc": "2026-08-05T13:02:27Z",
+   "final_host": "www.richmondandtwickenhamtimes.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "rockymounttelegram.com",
+   "checked_utc": "2026-08-05T13:02:27Z",
+   "final_host": "www.rockymounttelegram.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "rte.ie",
+   "checked_utc": "2026-08-05T13:02:27Z",
+   "final_host": "www.rte.ie",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "runcornandwidnesworld.co.uk",
+   "checked_utc": "2026-08-05T13:02:28Z",
+   "final_host": "www.runcornandwidnesworld.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "russiaherald.com",
+   "checked_utc": "2026-08-05T13:02:28Z",
+   "final_host": "www.russiaherald.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "rutland-times.co.uk",
+   "checked_utc": "2026-08-05T13:02:28Z",
+   "final_host": "www.rutland-times.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "salisburyjournal.co.uk",
+   "checked_utc": "2026-08-05T13:02:28Z",
+   "final_host": "www.salisburyjournal.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "saltlakecitysun.com",
+   "checked_utc": "2026-08-05T13:02:28Z",
+   "final_host": "www.saltlakecitysun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "sanantoniopost.com",
+   "checked_utc": "2026-08-05T13:02:29Z",
+   "final_host": "www.sanantoniopost.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "sandiegosun.com",
+   "checked_utc": "2026-08-05T13:02:29Z",
+   "final_host": "www.sandiegosun.com",
+   "status": 429,
+   "error": "HTTP 429"
+  },
+  {
+   "domain": "sconeadvocate.com.au",
+   "checked_utc": "2026-08-05T13:02:29Z",
+   "final_host": "www.sconeadvocate.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "seattletimes.com",
+   "checked_utc": "2026-08-05T13:02:29Z",
+   "final_host": "www.seattletimes.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "shanghaisun.com",
+   "checked_utc": "2026-08-05T13:02:29Z",
+   "final_host": "www.shanghaisun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "sierraleonetimes.com",
+   "checked_utc": "2026-08-05T13:02:29Z",
+   "final_host": "www.sierraleonetimes.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "singaporestar.com",
+   "checked_utc": "2026-08-05T13:02:29Z",
+   "final_host": "www.singaporestar.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "singletonargus.com.au",
+   "checked_utc": "2026-08-05T13:02:29Z",
+   "final_host": "www.singletonargus.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "sitkasentinel.com",
+   "checked_utc": "2026-08-05T13:02:30Z",
+   "final_host": "sitkasentinel.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "sloughobserver.co.uk",
+   "checked_utc": "2026-08-05T13:02:30Z",
+   "final_host": "www.sloughobserver.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "smdailyjournal.com",
+   "checked_utc": "2026-08-05T13:02:30Z",
+   "final_host": "smdailyjournal.com",
+   "status": 403,
+   "error": "HTTP 403"
+  },
+  {
+   "domain": "somdnews.com",
+   "checked_utc": "2026-08-05T13:02:30Z",
+   "final_host": "www.somdnews.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "somersetcountygazette.co.uk",
+   "checked_utc": "2026-08-05T13:02:30Z",
+   "final_host": "www.somersetcountygazette.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "sookenewsmirror.com",
+   "checked_utc": "2026-08-05T13:02:30Z",
+   "final_host": "sookenewsmirror.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "southcarolinapublicradio.org",
+   "checked_utc": "2026-08-05T13:02:30Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "southcoastregister.com.au",
+   "checked_utc": "2026-08-05T13:02:30Z",
+   "final_host": "www.southcoastregister.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "southernhighlandnews.com.au",
+   "checked_utc": "2026-08-05T13:02:30Z",
+   "final_host": "www.southernhighlandnews.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "southwalesargus.co.uk",
+   "checked_utc": "2026-08-05T13:02:30Z",
+   "final_host": "www.southwalesargus.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "southwalesguardian.co.uk",
+   "checked_utc": "2026-08-05T13:02:31Z",
+   "final_host": "www.southwalesguardian.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "srilankasource.com",
+   "checked_utc": "2026-08-05T13:02:31Z",
+   "final_host": "www.srilankasource.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "standard.co.uk",
+   "checked_utc": "2026-08-05T13:02:31Z",
+   "final_host": "www.standard.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "standard.net.au",
+   "checked_utc": "2026-08-05T13:02:31Z",
+   "final_host": "www.standard.net.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "star104.iheart.com",
+   "checked_utc": "2026-08-05T13:02:31Z",
+   "final_host": "star104.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "stardem.com",
+   "checked_utc": "2026-08-05T13:02:31Z",
+   "final_host": "www.stardem.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "stcatharinesstandard.ca",
+   "checked_utc": "2026-08-05T13:02:31Z",
+   "final_host": "www.stcatharinesstandard.ca",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "sthelensstar.co.uk",
+   "checked_utc": "2026-08-05T13:02:31Z",
+   "final_host": "www.sthelensstar.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "stourbridgenews.co.uk",
+   "checked_utc": "2026-08-05T13:02:32Z",
+   "final_host": "www.stourbridgenews.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "stratford-herald.com",
+   "checked_utc": "2026-08-05T13:02:32Z",
+   "final_host": "www.stratford-herald.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "stroudnewsandjournal.co.uk",
+   "checked_utc": "2026-08-05T13:02:32Z",
+   "final_host": "www.stroudnewsandjournal.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "surreycomet.co.uk",
+   "checked_utc": "2026-08-05T13:02:32Z",
+   "final_host": "www.surreycomet.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "swindonadvertiser.co.uk",
+   "checked_utc": "2026-08-05T13:02:32Z",
+   "final_host": "www.swindonadvertiser.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "sydneysun.com",
+   "checked_utc": "2026-08-05T13:02:32Z",
+   "final_host": "www.sydneysun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "taiwansun.com",
+   "checked_utc": "2026-08-05T13:02:32Z",
+   "final_host": "www.taiwansun.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "talk1200boston.iheart.com",
+   "checked_utc": "2026-08-05T13:02:32Z",
+   "final_host": "talk1200boston.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "talkradio1080.iheart.com",
+   "checked_utc": "2026-08-05T13:02:32Z",
+   "final_host": "talkradio1080.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "tennesseedaily.com",
+   "checked_utc": "2026-08-05T13:02:32Z",
+   "final_host": "www.tennesseedaily.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "tenterfieldstar.com.au",
+   "checked_utc": "2026-08-05T13:02:33Z",
+   "final_host": "www.tenterfieldstar.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "texasguardian.com",
+   "checked_utc": "2026-08-05T13:02:33Z",
+   "final_host": "www.texasguardian.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "theadvocate.com.au",
+   "checked_utc": "2026-08-05T13:02:33Z",
+   "final_host": "www.theadvocate.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "theargus.co.uk",
+   "checked_utc": "2026-08-05T13:02:33Z",
+   "final_host": "www.theargus.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "thebig98.iheart.com",
+   "checked_utc": "2026-08-05T13:02:33Z",
+   "final_host": "thebig98.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "theboltonnews.co.uk",
+   "checked_utc": "2026-08-05T13:02:33Z",
+   "final_host": "www.theboltonnews.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "thecourier.com.au",
+   "checked_utc": "2026-08-05T13:02:33Z",
+   "final_host": "www.thecourier.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "thegazette.com",
+   "checked_utc": "2026-08-05T13:02:33Z",
+   "final_host": "www.thegazette.com",
+   "status": 429,
+   "error": "HTTP 429"
+  },
+  {
+   "domain": "thekat.iheart.com",
+   "checked_utc": "2026-08-05T13:02:34Z",
+   "final_host": "thekat.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "theleader.com.au",
+   "checked_utc": "2026-08-05T13:02:34Z",
+   "final_host": "www.theleader.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "thenorthernecho.co.uk",
+   "checked_utc": "2026-08-05T13:02:34Z",
+   "final_host": "www.thenorthernecho.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "thepeterboroughexaminer.com",
+   "checked_utc": "2026-08-05T13:02:34Z",
+   "final_host": "www.thepeterboroughexaminer.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "therural.com.au",
+   "checked_utc": "2026-08-05T13:02:34Z",
+   "final_host": "www.therural.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "thetelegraphandargus.co.uk",
+   "checked_utc": "2026-08-05T13:02:34Z",
+   "final_host": "www.thetelegraphandargus.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "thetottenhamindependent.co.uk",
+   "checked_utc": "2026-08-05T13:02:34Z",
+   "final_host": "www.thetottenhamindependent.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "thetwister.iheart.com",
+   "checked_utc": "2026-08-05T13:02:34Z",
+   "final_host": "thetwister.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "theuknews.com",
+   "checked_utc": "2026-08-05T13:02:35Z",
+   "final_host": "www.theuknews.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "thewestmorlandgazette.co.uk",
+   "checked_utc": "2026-08-05T13:02:35Z",
+   "final_host": "www.thewestmorlandgazette.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "thewestonmercury.co.uk",
+   "checked_utc": "2026-08-05T13:02:35Z",
+   "final_host": "www.thewestonmercury.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "thisisoxfordshire.co.uk",
+   "checked_utc": "2026-08-05T13:02:35Z",
+   "final_host": "www.thisisoxfordshire.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "thisiswiltshire.co.uk",
+   "checked_utc": "2026-08-05T13:02:35Z",
+   "final_host": "www.thisiswiltshire.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "thurrockgazette.co.uk",
+   "checked_utc": "2026-08-05T13:02:35Z",
+   "final_host": "www.thurrockgazette.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "times-series.co.uk",
+   "checked_utc": "2026-08-05T13:02:35Z",
+   "final_host": "www.times-series.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "timesandstar.co.uk",
+   "checked_utc": "2026-08-05T13:02:35Z",
+   "final_host": "www.timesandstar.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "tivysideadvertiser.co.uk",
+   "checked_utc": "2026-08-05T13:02:35Z",
+   "final_host": "www.tivysideadvertiser.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "torontotelegraph.com",
+   "checked_utc": "2026-08-05T13:02:35Z",
+   "final_host": "www.torontotelegraph.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "trinidadtimes.com",
+   "checked_utc": "2026-08-05T13:02:36Z",
+   "final_host": "www.trinidadtimes.com",
+   "status": 429,
+   "error": "HTTP 429"
+  },
+  {
+   "domain": "tspr.org",
+   "checked_utc": "2026-08-05T13:02:36Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "tucsonpost.com",
+   "checked_utc": "2026-08-05T13:02:36Z",
+   "final_host": "www.tucsonpost.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "turnto10.com",
+   "checked_utc": "2026-08-05T13:02:36Z",
+   "final_host": "turnto10.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "turnto23.com",
+   "checked_utc": "2026-08-05T13:02:36Z",
+   "final_host": "www.turnto23.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "ualrpublicradio.org",
+   "checked_utc": "2026-08-05T13:02:36Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "ulladullatimes.com.au",
+   "checked_utc": "2026-08-05T13:02:36Z",
+   "final_host": "www.ulladullatimes.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "union-bulletin.com",
+   "checked_utc": "2026-08-05T13:02:36Z",
+   "final_host": "union-bulletin.com",
+   "status": 429,
+   "error": "HTTP 429"
+  },
+  {
+   "domain": "upnorthlive.com",
+   "checked_utc": "2026-08-05T13:02:37Z",
+   "final_host": "upnorthlive.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "upr.org",
+   "checked_utc": "2026-08-05T13:02:37Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "utahindependent.com",
+   "checked_utc": "2026-08-05T13:02:37Z",
+   "final_host": "www.utahindependent.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "vernonmorningstar.com",
+   "checked_utc": "2026-08-05T13:02:37Z",
+   "final_host": "vernonmorningstar.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "vietnamtribune.com",
+   "checked_utc": "2026-08-05T13:02:37Z",
+   "final_host": "www.vietnamtribune.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "waer.org",
+   "checked_utc": "2026-08-05T13:02:37Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wamc.org",
+   "checked_utc": "2026-08-05T13:02:37Z",
+   "final_host": "www.wamc.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wandsworthguardian.co.uk",
+   "checked_utc": "2026-08-05T13:02:37Z",
+   "final_host": "www.wandsworthguardian.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "warringtonguardian.co.uk",
+   "checked_utc": "2026-08-05T13:02:37Z",
+   "final_host": "www.warringtonguardian.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "watfordobserver.co.uk",
+   "checked_utc": "2026-08-05T13:02:38Z",
+   "final_host": "www.watfordobserver.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wbaa.org",
+   "checked_utc": "2026-08-05T13:02:38Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wbhpam.iheart.com",
+   "checked_utc": "2026-08-05T13:02:38Z",
+   "final_host": "wbhpam.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wboi.org",
+   "checked_utc": "2026-08-05T13:02:38Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wbrz.com",
+   "checked_utc": "2026-08-05T13:02:38Z",
+   "final_host": "www.wbrz.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wcbe.org",
+   "checked_utc": "2026-08-05T13:02:38Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wclk.com",
+   "checked_utc": "2026-08-05T13:02:38Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wcsufm.org",
+   "checked_utc": "2026-08-05T13:02:38Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wcti12.com",
+   "checked_utc": "2026-08-05T13:02:39Z",
+   "final_host": "wcti12.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wdbo.com",
+   "checked_utc": "2026-08-05T13:02:39Z",
+   "final_host": "www.wdbo.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wdiy.org",
+   "checked_utc": "2026-08-05T13:02:39Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wdov.iheart.com",
+   "checked_utc": "2026-08-05T13:02:40Z",
+   "final_host": "wdov.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wdrm.iheart.com",
+   "checked_utc": "2026-08-05T13:02:40Z",
+   "final_host": "wdrm.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "weartv.com",
+   "checked_utc": "2026-08-05T13:02:41Z",
+   "final_host": "weartv.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wellingtontimes.com.au",
+   "checked_utc": "2026-08-05T13:02:41Z",
+   "final_host": "www.wellingtontimes.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wemu.org",
+   "checked_utc": "2026-08-05T13:02:41Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "westerlynews.ca",
+   "checked_utc": "2026-08-05T13:02:42Z",
+   "final_host": "westerlynews.ca",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "westernadvocate.com.au",
+   "checked_utc": "2026-08-05T13:02:43Z",
+   "final_host": "www.westernadvocate.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "westerntelegraph.co.uk",
+   "checked_utc": "2026-08-05T13:02:43Z",
+   "final_host": "www.westerntelegraph.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wfae.org",
+   "checked_utc": "2026-08-05T13:02:43Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wfdd.org",
+   "checked_utc": "2026-08-05T13:02:43Z",
+   "final_host": "www.wfdd.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wflanews.iheart.com",
+   "checked_utc": "2026-08-05T13:02:44Z",
+   "final_host": "wflanews.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wflaorlando.iheart.com",
+   "checked_utc": "2026-08-05T13:02:44Z",
+   "final_host": "wflaorlando.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wgauradio.com",
+   "checked_utc": "2026-08-05T13:02:44Z",
+   "final_host": "www.wgauradio.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wgiram.iheart.com",
+   "checked_utc": "2026-08-05T13:02:45Z",
+   "final_host": "wgiram.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wgy.iheart.com",
+   "checked_utc": "2026-08-05T13:02:45Z",
+   "final_host": "wgy.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wham1180.iheart.com",
+   "checked_utc": "2026-08-05T13:02:45Z",
+   "final_host": "wham1180.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wharfedaleobserver.co.uk",
+   "checked_utc": "2026-08-05T13:02:45Z",
+   "final_host": "www.wharfedaleobserver.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "whoradio.iheart.com",
+   "checked_utc": "2026-08-05T13:02:45Z",
+   "final_host": "whoradio.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "whqr.org",
+   "checked_utc": "2026-08-05T13:02:45Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "whro.org",
+   "checked_utc": "2026-08-05T13:02:45Z",
+   "final_host": "www.whro.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "whtimes.co.uk",
+   "checked_utc": "2026-08-05T13:02:45Z",
+   "final_host": "www.whtimes.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "whyn.iheart.com",
+   "checked_utc": "2026-08-05T13:02:45Z",
+   "final_host": "whyn.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wiltsglosstandard.co.uk",
+   "checked_utc": "2026-08-05T13:02:46Z",
+   "final_host": "www.wiltsglosstandard.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wiltshiretimes.co.uk",
+   "checked_utc": "2026-08-05T13:02:46Z",
+   "final_host": "www.wiltshiretimes.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wimbledonguardian.co.uk",
+   "checked_utc": "2026-08-05T13:02:46Z",
+   "final_host": "www.wimbledonguardian.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "winknews.com",
+   "checked_utc": "2026-08-05T13:02:46Z",
+   "final_host": "www.winknews.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "winnipegfreepress.com",
+   "checked_utc": "2026-08-05T13:02:46Z",
+   "final_host": "www.winnipegfreepress.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wirralglobe.co.uk",
+   "checked_utc": "2026-08-05T13:02:46Z",
+   "final_host": "www.wirralglobe.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "witneygazette.co.uk",
+   "checked_utc": "2026-08-05T13:02:46Z",
+   "final_host": "www.witneygazette.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wjbo.iheart.com",
+   "checked_utc": "2026-08-05T13:02:46Z",
+   "final_host": "wjbo.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wjno.iheart.com",
+   "checked_utc": "2026-08-05T13:02:46Z",
+   "final_host": "wjno.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wkms.org",
+   "checked_utc": "2026-08-05T13:02:47Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wknofm.org",
+   "checked_utc": "2026-08-05T13:02:47Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wkyufm.org",
+   "checked_utc": "2026-08-05T13:02:47Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wlac.iheart.com",
+   "checked_utc": "2026-08-05T13:02:47Z",
+   "final_host": "wlac.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wlap.iheart.com",
+   "checked_utc": "2026-08-05T13:02:47Z",
+   "final_host": "wlap.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wlrn.org",
+   "checked_utc": "2026-08-05T13:02:47Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wltribune.com",
+   "checked_utc": "2026-08-05T13:02:48Z",
+   "final_host": "wltribune.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wmeq.iheart.com",
+   "checked_utc": "2026-08-05T13:02:48Z",
+   "final_host": "wmeq.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wmmbam.iheart.com",
+   "checked_utc": "2026-08-05T13:02:48Z",
+   "final_host": "wmmbam.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wmra.org",
+   "checked_utc": "2026-08-05T13:02:48Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wmuk.org",
+   "checked_utc": "2026-08-05T13:02:48Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wncw.org",
+   "checked_utc": "2026-08-05T13:02:48Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wnmufm.org",
+   "checked_utc": "2026-08-05T13:02:49Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wnoe.iheart.com",
+   "checked_utc": "2026-08-05T13:02:49Z",
+   "final_host": "wnoe.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wnyc.org",
+   "checked_utc": "2026-08-05T13:02:49Z",
+   "final_host": "wnyc.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wokv.com",
+   "checked_utc": "2026-08-05T13:02:49Z",
+   "final_host": "www.wokv.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wonw1280.iheart.com",
+   "checked_utc": "2026-08-05T13:02:49Z",
+   "final_host": "wonw1280.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "woodradio.iheart.com",
+   "checked_utc": "2026-08-05T13:02:50Z",
+   "final_host": "woodradio.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "woonsocketcall.com",
+   "checked_utc": "2026-08-05T13:02:50Z",
+   "final_host": "www.woonsocketcall.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wpde.com",
+   "checked_utc": "2026-08-05T13:02:50Z",
+   "final_host": "wpde.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wpoc.iheart.com",
+   "checked_utc": "2026-08-05T13:02:51Z",
+   "final_host": "wpoc.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wrkf.org",
+   "checked_utc": "2026-08-05T13:02:51Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not vali"
+  },
+  {
+   "domain": "wrko.iheart.com",
+   "checked_utc": "2026-08-05T13:02:51Z",
+   "final_host": "wrko.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wrno.iheart.com",
+   "checked_utc": "2026-08-05T13:02:51Z",
+   "final_host": "wrno.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wrvo.org",
+   "checked_utc": "2026-08-05T13:02:51Z",
+   "final_host": "www.wrvo.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wsbradio.com",
+   "checked_utc": "2026-08-05T13:02:51Z",
+   "final_host": "www.wsbradio.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wset.com",
+   "checked_utc": "2026-08-05T13:02:52Z",
+   "final_host": "wset.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wsiu.org",
+   "checked_utc": "2026-08-05T13:02:52Z",
+   "final_host": "www.wsiu.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wsls.com",
+   "checked_utc": "2026-08-05T13:02:53Z",
+   "final_host": "www.wsls.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wtov9.com",
+   "checked_utc": "2026-08-05T13:02:53Z",
+   "final_host": "wtov9.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wuft.org",
+   "checked_utc": "2026-08-05T13:02:53Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wuky.org",
+   "checked_utc": "2026-08-05T13:02:53Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wutc.org",
+   "checked_utc": "2026-08-05T13:02:53Z",
+   "final_host": "www.wutc.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wuwf.org",
+   "checked_utc": "2026-08-05T13:02:53Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wvasfm.org",
+   "checked_utc": "2026-08-05T13:02:53Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wvgazettemail.com",
+   "checked_utc": "2026-08-05T13:02:54Z",
+   "final_host": "www.wvgazettemail.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wvik.org",
+   "checked_utc": "2026-08-05T13:02:54Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wvtf.org",
+   "checked_utc": "2026-08-05T13:02:54Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wvxu.org",
+   "checked_utc": "2026-08-05T13:02:55Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_s"
+  },
+  {
+   "domain": "wwmt.com",
+   "checked_utc": "2026-08-05T13:02:55Z",
+   "final_host": "wwmt.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wwno.org",
+   "checked_utc": "2026-08-05T13:02:55Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wxpr.org",
+   "checked_utc": "2026-08-05T13:02:55Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wxxinews.org",
+   "checked_utc": "2026-08-05T13:02:55Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wyff4.com",
+   "checked_utc": "2026-08-05T13:02:55Z",
+   "final_host": "www.wyff4.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wyomingpublicmedia.org",
+   "checked_utc": "2026-08-05T13:02:55Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wypr.org",
+   "checked_utc": "2026-08-05T13:02:55Z",
+   "final_host": "wypr.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "wyso.org",
+   "checked_utc": "2026-08-05T13:02:55Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "wysu.org",
+   "checked_utc": "2026-08-05T13:02:56Z",
+   "final_host": "wysu.org",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "yakimaherald.com",
+   "checked_utc": "2026-08-05T13:02:56Z",
+   "final_host": "www.yakimaherald.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "yasstribune.com.au",
+   "checked_utc": "2026-08-05T13:02:57Z",
+   "final_host": "www.yasstribune.com.au",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "yorkpress.co.uk",
+   "checked_utc": "2026-08-05T13:02:59Z",
+   "final_host": "www.yorkpress.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "yourlocalguardian.co.uk",
+   "checked_utc": "2026-08-05T13:02:59Z",
+   "final_host": "www.yourlocalguardian.co.uk",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "yoursourceone.com",
+   "checked_utc": "2026-08-05T13:03:00Z",
+   "final_host": "www.yoursourceone.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "ypradio.org",
+   "checked_utc": "2026-08-05T13:03:00Z",
+   "final_host": null,
+   "status": null,
+   "error": "URLError(ConnectionResetError(104, 'Connection reset by peer'))"
+  },
+  {
+   "domain": "z107fm.iheart.com",
+   "checked_utc": "2026-08-05T13:03:00Z",
+   "final_host": "z107fm.iheart.com",
+   "status": 200,
+   "error": null
+  },
+  {
+   "domain": "zimbabwestar.com",
+   "checked_utc": "2026-08-05T13:03:00Z",
+   "final_host": "www.zimbabwestar.com",
+   "status": 200,
+   "error": null
+  }
+ ]
+}
