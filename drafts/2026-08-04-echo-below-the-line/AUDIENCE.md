@@ -87,11 +87,18 @@ Herfindahl-Hirschman Index (HHI) and Gini coefficient"). Concentration indices c
 outlets are exactly the family of numbers a domain/publisher confusion moves, and it moves them
 **downward** — an HHI over domains understates concentration whenever one operation holds several
 domains.
-**UNVERIFIED and load-bearing if used:** the scout reports a sentence in the full text noticing
-that republished articles carry a canonical link back to the original, without the concentration
-metric being adjusted for it. The conductor verified the paper, its authors and its use of HHI/Gini
-first-hand, and did **not** verify that sentence. It must be read in the full text before anyone
-cites it, and it is not cited as fact here.
+**Verified by the conductor after the scout returned**, in the paper's own HTML full text at
+https://arxiv.org/html/2410.23842 (fetched 2026-08-05). The sentence is there, verbatim:
+
+> "The articles include a canonical hyperlink pointing to the original URL in the BBC's website,
+> which can be seen in the republished articles pages' source codes."
+
+So the paper **names** the mechanism — the same content served from a second outlet, identifiable
+from the page itself. **Stated as a reading, not as a verified fact:** a full-text search returned
+no provision in its method for excluding or collapsing such republished results before the
+concentration indices are computed. That is an *absence* claim, and absence claims from a text
+search are the weakest kind; anyone citing it should re-read the method section themselves. What is
+verified is the quotation and the paper's use of HHI and Gini over outlets.
 **What they could do with it:** recompute one concentration figure with domains collapsed to
 publishing operations and report both.
 
