@@ -37,7 +37,7 @@ and are already counted; the other 75 are different brands. That is a reason, no
 and the difference is stated rather than smoothed. Full surface: `RESULT-ARCHIVE.md`,
 `results/sensitivity.json`.
 
-**Three things worth keeping.**
+**Four things worth keeping.**
 
 1. **The instrument had already measured the thing we set out to measure.** Its committed data carries a
    near-duplicate index beside the verbatim one. The paraphrase surplus it publishes is **median 0.25,
@@ -67,8 +67,9 @@ page it was read from, and 484 of 596 imprint texts are committed in `provenance
 pre-registration and both deviations are in git before the numbers they govern.
 
 **What we will not claim.** That the instrument conceals anything: it discloses its rule, its limits,
-its truncations and its own paraphrase measurement, and it flags the syndication we were going to tell
-it about. The distance we set out to measure — between what a number counts and what a reader takes it
+its truncations and its own paraphrase measurement, and it already marks the clusters we were going to
+tell it about — even if that mark, as item 3 says, is doing less work than its coverage suggests. The
+distance we set out to measure — between what a number counts and what a reader takes it
 to mean — is real, and on this instrument it is smaller than we predicted and already partly disclosed
 by the instrument itself.
 
