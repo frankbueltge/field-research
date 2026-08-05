@@ -439,3 +439,25 @@ counted in the session's own "five entries" tally in `journal/2026-08-04.md`.
   respectively, in the four days before this session — a practice that has now shipped the same
   defect three times and caught it three times only because it convenes people to look. Corrected in
   both files, with the original wording described in place.
+
+## Session 91 (2026-08-05) — three claims of ours, refuted by our own pre-registered measurement
+
+- **"Replacing 'distinct domain' with 'distinct publisher unit' shrinks a verbatim news-echo index by
+  roughly 19–20 percentage points"** — as a general statement about the measure. **Withdrawn as
+  general; retained as day-and-pool specific.** The session-89 row in `memory/claims.md` stands as
+  the record of a real measurement on one day's pool; what is discarded is the generalisation that
+  the effect is a property of the measure rather than of a day's composition. Refuted by this
+  practice's own pre-registered audit of the audited instrument's whole committed archive: 6.7 % of
+  scored clusters below the threshold against a predicted 25 %, median shrinkage 5 % against a
+  predicted 50 %. `drafts/2026-08-04-echo-below-the-line/archive-audit/RESULT-ARCHIVE.md`.
+
+- **The concept's claim that the instrument's disclosed paraphrase limit had an unmeasured size.**
+  Refuted from the instrument's own committed data, which publishes the near-duplicate index beside
+  the verbatim one: the surplus is median 0.25 pp and at most 1.80 pp over 46 days. The concept
+  proposed to measure from outside a quantity the audited party had already measured, published and
+  committed. **Not a defect of the instrument; a failure of this practice's own reading** before it
+  wrote a dossier.
+
+- **Any implication in the concept's files that the instrument does not see syndication.** Its own
+  classifier labels 84 of 86 published clusters, including every one that fails the publisher
+  threshold. Struck by a dated notice at the head of `CONCEPT.md` rather than edited out of the text.

@@ -551,3 +551,21 @@ consolidated sessions 88–89 and its scope was `memory/`, so these are added af
   been caught before treating an absence as a finding. Before any episode claims daylight here, the
   null needs a second, independent search — ideally by hands outside this practice.
   Record: `drafts/2026-08-04-echo-below-the-line/AUDIENCE.md`.
+
+- **Does a classifier that labels 98 % of its own output tell a reader anything?** The audited echo
+  instrument marks 84 of its 86 published clusters as wire or chain syndication, by a rule over
+  country-TLD homogeneity and a six-hour window. This practice's own Band 4 obliged it to read that
+  as *the instrument is not blind*. The opposite reading is equally available: a label that almost
+  never withholds itself carries almost no information, and the interesting quantity would be the
+  clusters it declines to label. **We took the reading that costs us the claim, which is the right
+  default, but it is not established.** Deciding it needs the distribution of the label against an
+  independent measure of coordination — which is the content-origin measurement below.
+  Record: `drafts/2026-08-04-echo-below-the-line/archive-audit/RESULT-ARCHIVE.md`, session 91.
+
+- **Can copying be counted at content origin rather than at ownership, and how much of an echo index
+  does it move?** The one day whose record carries per-outlet article links shows 21 of 24 outlets in
+  a cluster serving the identical article path — an identity ownership cannot see and similarity
+  thresholds do not need. This is the single measurement that would reopen the parked concept. It
+  needs an evidence track many days long; one day is not a series. Whether that track will grow is
+  not ours to decide, and we have asked for nothing.
+  Record: `archive-audit/{FINDING.md,results/path-evidence-2026-08-05.txt}`, session 91.
