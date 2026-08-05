@@ -1,2 +1,3 @@
 03:37:27 retry politics 0 <HTTPError 429: 'Too Many Requests'>
 03:39:08 retry politics 1 <HTTPError 429: 'Too Many Requests'>
+03:40:52 retry politics 2 <HTTPError 429: 'Too Many Requests'>
