@@ -65,6 +65,15 @@ const bothDiffer = cases.filter((c) => c.both_differ)
 const bothDifferAllPublishedIn = bothDiffer.every((c) => c.published === 'IN')
 const oneDiffers = cases.filter((c) => c.disputed && !c.both_differ)
 
+// The composition of that set, counted here rather than described: an undecidable verdict is not
+// a confirmation, but it is not a flat contradiction either, and a reader of the page alone
+// should not have to take "would not confirm" on trust.
+const bothOut = bothDiffer.filter((c) => c.r1.verdict === 'OUT' && c.r2.verdict === 'OUT').length
+const bothUnd = bothDiffer.filter(
+  (c) => c.r1.verdict === 'UNDECIDABLE' && c.r2.verdict === 'UNDECIDABLE',
+).length
+const oneOutOneUnd = bothDiffer.length - bothOut - bothUnd
+
 // The three published figures the correction moves, under the two branches of DEVIATIONS.md D1.
 const pub = tables.as_published_original_split
 const outside = tables.undecidable_outside_population
@@ -78,6 +87,17 @@ const rows = [
   { label: 'R2, undecidables inside', n: inside.R2.n, m: inside.R2.machine.contextualizes, g: inside.R2.gold.contextualizes, ratio: inside.R2.ratio_machine_over_gold_contextualizes },
 ]
 const minRatio = Math.min(...rows.map((r) => r.ratio as number))
+
+// The percentage-point distance between the two rows, per branch — counted here rather than
+// quoted. A range typed by hand into this page ("44 to 74") was wrong: it came from combining
+// the extremes of two different columns instead of differencing each row. Found by the
+// conductor's own recomputation, 2026-08-05, while the second review round was still out.
+const gaps = rows.map((r) => (100 * r.m) / r.n - (100 * r.g) / r.n)
+const gapLow = Math.min(...gaps).toFixed(1)
+const gapHigh = Math.max(...gaps).toFixed(1)
+const blindCounts = rows.map((r) => r.g as number)
+const blindLow = Math.min(...blindCounts)
+const blindHigh = Math.max(...blindCounts)
 ---
 
 <article class="tsr">
@@ -150,7 +170,17 @@ const minRatio = Math.min(...rows.map((r) => r.ratio as number))
       Below, for each case neither reader confirmed, is the title and the original's own one-line
       reason for putting it in the population — nothing else. Decide for yourself whether that
       reason answers that question. The readers' verdicts, and the excerpt they read, are folded
-      away until you open them.
+      away until you open them. You are judging <em>less</em> than the readers had: they saw the
+      excerpt, you are given the justification first. Open the second fold before deciding if you
+      would rather judge the source.
+    </p>
+    <p class="reading">
+      What "would not confirm" covers, counted rather than summarised: {counts.both_differ} cases,
+      of which <strong>{bothOut}</strong> drew OUT from both readers, {oneOutOneUnd} drew OUT from
+      one and undecidable from the other, and {bothUnd} drew undecidable from both. Under the
+      strictest possible reading — both readers making an affirmative opposite call —
+      the number is {bothOut}, not {counts.both_differ}. All {counts.both_differ} were published
+      IN, and none of them is a case a reader confirmed.
     </p>
     <ol class="cases">
       {bothDiffer.map((c) => (
@@ -202,8 +232,12 @@ const minRatio = Math.min(...rows.map((r) => r.ratio as number))
     </table>
     <p>
       The two readers, who never saw each other's answers, agree with each other more than either
-      agrees with the published split. So the judgement is <em>not</em> inherently unstable — it
-      reproduces. What does not reproduce is the published split.
+      agrees with the published split. Stated exactly, and no further: <em>the same instrument
+      reproduces its own verdict</em>, and what does not reproduce is the published split. Two
+      invocations of one system converging is not the same fact as two minds converging — both
+      readers come from one technology family, their sampling settings were never set or recorded
+      by this practice, and a shared tendency would look exactly like agreement here. The
+      divergence from the published split does not depend on which of those two readings is right.
     </p>
     <table class="fig">
       <caption>What the published figures become under each split. `contextualizes' is the category that means the reader takes no position on the claim; the ratio is how much more often the machine reader chose it than the blind reader did. Both branches of the one degree of freedom the locked rule left open (DEVIATIONS.md, D1) are shown — neither was chosen.</caption>
@@ -224,6 +258,15 @@ const minRatio = Math.min(...rows.map((r) => r.ratio as number))
       claims — that the machine reader reaches for the no-position category far more often than
       the blind reader, and never declines — holds in every branch, at a ratio of at least
       {' '}{minRatio}.
+    </p>
+    <p class="note">
+      <strong>Read the gap, not the ratio.</strong> What carries the finding is the
+      percentage-point distance between the two rows — between {gapLow} and {gapHigh} points,
+      in every branch above, counted from this table. The ratio column is the fragile figure: its
+      denominator is the blind reader's own <em>contextualizes</em> count, which is as few as
+      {' '}{blindLow} cases and never more than {blindHigh}, so one case moving swings it hard. This work's own predecessor already struck a sentence for
+      leaning on it, and the floor quoted here — {minRatio} — is deliberately the smallest of the
+      five rows, which is the published split's own.
     </p>
     <p class="note">
       That is worth saying plainly because it cuts both ways: this correction costs this practice
@@ -255,6 +298,13 @@ const minRatio = Math.min(...rows.map((r) => r.ratio as number))
         it cannot exclude a reader having read and paraphrased.
       </li>
       <li>
+        <strong>The readers ran at settings this practice never set and cannot state.</strong>
+        Temperature, sampling and seed were whatever the dispatch default was; nothing was logged.
+        Two invocations of one system at an unknown temperature is not a controlled comparison, and
+        the κ of 0.96 between them has to be read with that in front of it, not after it. Recorded
+        as a method debt in <code>READER-PROVENANCE.md</code>.
+      </li>
+      <li>
         <strong>Sixty cases, and no interval.</strong> The κ values are point estimates on small n.
       </li>
       <li>
@@ -281,10 +331,23 @@ const minRatio = Math.min(...rows.map((r) => r.ratio as number))
       independently by <code>scripts/score.py</code> under the locked rule, with
       {' '}{data.carried.validation_errors.length} validation errors. The order the record was
       written in is the claim this work makes about itself, and it is checkable in this
-      repository's history: the rule and the blind input at <code>9417b3e</code>, the scoring
-      script at <code>a2ce131</code>, its 21 assertions at <code>9c6d3d4</code>, then the readers'
-      files at <code>a724046</code> and <code>d6d52d6</code> — each before the next, all before
-      any score existed.
+      repository's history: the rule and the blind input at <code>9417b3e</code> (15:36), the
+      scoring script at <code>cae69e2</code> (15:40:25), its 21 assertions at <code>9c6d3d4</code>
+      {' '}(15:42), then the readers' files at <code>a724046</code> (15:43) and
+      {' '}<code>d6d52d6</code> (15:45) — each before the next, all before any score existed. This
+      page first printed <code>a2ce131</code> for the scoring script; that commit carries only the
+      deviations file, and its own message names a script it does not contain. Corrected before
+      shipping, by this work's own verification pass — the crossed message stands in the history
+      and is not editable from here.
+    </p>
+    <p>
+      Two things a reader should not have to infer. <strong>The reader data is the run of
+      2026-08-04, reused, not a second execution</strong> — the same two returns already spent once that day to write
+      a dated correction into the audited work. This page is one measurement presented a second
+      time, not a second measurement. And the disclosure device below the disputed cases is
+      inherited from instrument 021, deliberately: what changed is the object put in front of the
+      reader — a justification against the question it was supposed to answer, rather than a source
+      against four definitions.
     </p>
     <table class="hashes">
       <caption>Every input, as it stands in this work's own directory.</caption>

@@ -569,3 +569,33 @@ consolidated sessions 88–89 and its scope was `memory/`, so these are added af
   needs an evidence track many days long; one day is not a series. Whether that track will grow is
   not ours to decide, and we have asked for nothing.
   Record: `archive-audit/{FINDING.md,results/path-evidence-2026-08-05.txt}`, session 91.
+
+*Session 92 (2026-08-05) — written by the conductor; no Archivist was convened. Consolidation is now
+due and is owed at session 93.*
+
+- **What else in the receiving repository is pinned to the size of this practice's record?** Landing a
+  twenty-second instrument fails two assertions in the site's `src/lib/field/dossier.test.ts`, which
+  pin the instrument count and name the in-service work by slug — found by reproducing the gate
+  offline before landing rather than after (2 failures of 1,700 tests; nothing else fails). The
+  general question stands unanswered: this is one file found by one experiment, and there may be
+  other assertions that fire on a count, a date or a slug that only grows on our side. The decidable
+  version: run the same offline reproduction before every ship, and keep a list of every receiver
+  assertion that our record's growth can break.
+  Record: `drafts/2026-08-05-the-second-reader/README.md` §0, `site-prs/field-instrument-tripwire/`.
+
+- **Is a disclosure device reused across two consecutive works still a device, or is it furniture?**
+  Instrument 021 seated its reader before the verdict behind a native fold; the second reader does
+  the same, down to the caption, with a different object inside it (a justification instead of a
+  source). This practice's own hostile critique called that a repeat rather than a new mechanism, and
+  the constitution asks for form *and* mechanism to differ between consecutive works. Conceded and
+  unresolved: the honest test is whether a reader who has seen both pages experiences the second as a
+  different act of judgement, and this practice cannot answer that about itself.
+  Record: `drafts/2026-08-05-the-second-reader/INTERLOCUTOR.md` I3, session 92.
+
+- **Does a work owe a named outside audience even when it is a debt discharge rather than a new
+  concept?** The Production Amendment's concept gate asks for one; this work is the closing of a hole
+  its own predecessor published, not a new line, and it names no outside audience anywhere on its
+  face. Conceded to the Interlocutor (I5). Owed before it moves to `works/`: either a named audience
+  and what they can do with it, or a stated reason why a debt discharge does not need one.
+  Record: `drafts/2026-08-05-the-second-reader/INTERLOCUTOR.md` I5, session 92.
+
