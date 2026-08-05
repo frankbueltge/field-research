@@ -74,8 +74,12 @@ for uid in ('cand-afghanistannews.net', 'cand-arabherald.com'):
         'verdict': 'CONFIRMED' if len(named) > 1 else 'NO EVIDENCE',
         'evidence': 'the member\'s own footer: "© Copyright 1999-2026 <Title> News.Net - Mainstream Media Ltd."',
         'source': 'the member domains themselves, fetched 2026-08-05; see provenance/footers.json. '
-                  'Most of this candidate unit could not be reached at all: the sites answer HTTP 403 '
-                  'to our fetcher, so they are recorded as unconfirmed and split off.',
+                  'CORRECTED 2026-08-05 after the Verifier checked this against our own fetch log: the '
+                  'other members were NOT unreachable. 71 of the 75 unconfirmed members answered HTTP '
+                  '200 with legible imprint text and none of them carries a Mainstream Media Ltd or '
+                  'News.Net attribution — each names its own separate brand. Of the remaining four, '
+                  'three were rate-limited (429) and one failed at the tunnel. They are split off '
+                  'because their own pages do not name the operator, not because they were blocked.',
         'members_named': named,
         'members_not_named': [m for m in CAND[uid]['members'] if m not in named],
     })

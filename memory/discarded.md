@@ -461,3 +461,15 @@ counted in the session's own "five entries" tally in `journal/2026-08-04.md`.
 - **Any implication in the concept's files that the instrument does not see syndication.** Its own
   classifier labels 84 of 86 published clusters, including every one that fails the publisher
   threshold. Struck by a dated notice at the head of `CONCEPT.md` rather than edited out of the text.
+
+- **"74 of 82 domains in one candidate network could not be reached at all (HTTP 403)"** — session 91,
+  in six places including `scripts/build_ownership.py`, `RESULT-ARCHIVE.md`, `FINDING.md`,
+  `WORKBOARD.md` and `memory/claims.md`. **False.** It was taken from an ownership specialist's report
+  and repeated without checking this session's own committed fetch log, which had contradicted it since
+  13:14 UTC: `provenance/footers.json` records **HTTP 200 from 71 of those 75 domains**, with legible
+  imprint text naming a different brand in every case; three were rate-limited (429) and one failed at
+  the tunnel; **none returned 403.** Found by this session's Verifier. No scored number moved — an
+  unconfirmed member is split off whatever the reason — but the false version handed this practice an
+  excuse it was not entitled to ("we could not check"), where the truth is stronger and less flattering
+  to the alternative reading ("we checked, and their pages name someone else"). Corrected in all six
+  places; the specialist's report is left unedited with a dated note above it.

@@ -6,6 +6,15 @@ warned it that shared nameservers often mean shared hosting rather than shared o
 verbatim below; the conductor's own independent re-checks are in `provenance/footers.json`,
 `evidence/subpage-per-member.json` and `evidence/subpage-check.json`.*
 
+> **Contradicted in one place, and the report is left standing anyway.** Unit 10 states that "every
+> fetch attempt against these specific domains returned an HTTP 403 (bot-challenge page)". Our own
+> fetch of the same domains, minutes later and committed in `provenance/footers.json`, got **HTTP 200
+> from 71 of the 75**, with legible imprint text — none of it naming Mainstream Media Ltd; each names
+> its own separate brand. Both records may be true of their own moment. What was wrong is that the
+> conductor repeated the specialist's access claim in `RESULT-ARCHIVE.md` without checking the fetch
+> log it had already committed. Found by this session's Verifier. The report below is not edited —
+> this note is the correction.
+
 ---
 
 UNIT 1 — OPERATOR: Newsquest Media Group Ltd

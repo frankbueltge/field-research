@@ -39,7 +39,8 @@ is withdrawn. Here is the whole surface instead (`scripts/sensitivity.py`, `resu
 | + owner-merge **and** all 82 on pattern | 12/30 = **40.0 %** | **7.83** | holds | holds | **Band 1** |
 
 **Why the scored result still stands, stated as evidence rather than as robustness.** The Band 1 row
-requires accepting 75 domains that no published source names. The operator's own corporate page says
+requires accepting 75 domains that no published source names — and whose own pages, which we fetched and
+committed, name a different brand instead. The operator's own corporate page says
 Mainstream Media Ltd *"is principally operator of the News.Net sites"* — and **every one of the 7
 domains in this candidate group that actually carries the News.Net brand was reachable and is already
 confirmed in the primary.** The other 75 are `.com` titles under different brands (`indiagazette.com`,
@@ -49,8 +50,8 @@ produced five phantom publishers out of separately licensed public radio station
 same audit. The row is published because it is real; it is not adopted because its evidence is the kind
 this audit exists to distrust.
 
-**What that leaves honest to say:** the refutation is **not robust to one decision about one
-unreachable network of 75 domains.** Q2 flips on that decision alone. A reader who thinks a corporate
+**What that leaves honest to say:** the refutation is **not robust to one decision about one network
+of 75 domains.** Q2 flips on that decision alone. A reader who thinks a corporate
 "we operate the X sites" statement should extend across an operator's other brands gets Band 2, and
 combined with the owner merge gets Band 1. We do not think it should, and we have said why, but the
 result is one judgement call away from the opposite verdict and that is now on its face.
@@ -70,14 +71,14 @@ control: 21 domains that share nameservers turned out to be separately licensed 
 organisations — a school district, three universities, a state university system, an arts centre, five
 independent non-profits — running on one shared content platform. Machine grouping proposed them; the
 evidence gate split them all back apart. Two more domains were split out of a confirmed Newsquest unit
-for the same reason, and 74 of a 79-domain candidate network were split off because their sites answer
-HTTP 403 and could not be checked at all.
+for the same reason, and 75 of an 82-domain candidate network were split off because **their own pages
+name a different brand** — they were read, and what they say is not what the group's flagship says.
 
 | operator | units | confirmed members | evidence |
 |---|---|---|---|
 | Newsquest Media Group Ltd | 9 | 126 | each title's own page: "… is owned and operated by Newsquest Media Group Ltd" |
 | iHeartMedia, Inc. | 1 | 109 of 109 | every station page carries "iHeartMedia, Inc"; also 109 subdomains of one registrable domain |
-| Mainstream Media Ltd ("News.Net") | 2 | 7 of 82 | the members' own footer; **74 unreachable (HTTP 403), split off** |
+| Mainstream Media Ltd ("News.Net") | 2 | 7 of 82 | the members' own footer; **75 read and carrying no such attribution, split off** |
 | Iliffe Media Group Ltd | 1 | 5 | each title's own page names Iliffe Media; operator's portfolio lists the five |
 | Adams Publishing Group / APG | 1 | 4 of 5 | each site's contact/about page names APG Media as publisher |
 | Cox Media Group | 1 | 4 | each site's footer: "© Cox Media Group" |
@@ -170,10 +171,17 @@ its own evidence track, and it is not visible at the unit of ownership.* Ownersh
 - It measures the two clusters the instrument publishes per day, **not the index**. The archive does not
   commit the full title list, so the published `echo_index` cannot be recomputed at the publisher unit.
   Every sentence above is about clusters, never about the index.
-- **74 of 82 domains in one candidate network could not be reached at all** (HTTP 403). Had they been
-  checkable, the primary figures could only have moved *towards* our prediction, not away from it. The
-  refutation therefore rests on evidence that is incomplete in the direction that would have helped us,
-  and we still report it as a refutation.
+- **Corrected after review, and the correction removes an excuse rather than granting one.** This file
+  first said 74 domains of that network "could not be reached at all (HTTP 403)" — taken from the
+  ownership specialist's report and repeated without checking our own fetch log, which had contradicted
+  it since 13:14 UTC. Our own committed `provenance/footers.json` shows **71 of the 75 answered HTTP 200
+  with legible imprint text, and not one carries a Mainstream Media Ltd or News.Net attribution**; each
+  names its own separate brand (`afghanistansun.com`: "© Copyright 1999-2026 Afghanistan Sun. All rights
+  reserved."). Of the remaining four, three were rate-limited (429) and one failed at the tunnel. **Zero
+  returned 403.** Found by this session's Verifier, in six places including the evidence-assembly script.
+  No scored number moves — an unconfirmed member is split off whatever the reason — but the sensitivity
+  argument above gets *stronger*: the Band 1 row does not rest on domains we could not check, it rests on
+  domains we did check and which do not name the operator.
 - Ownership is today's ownership; the clusters are up to six weeks old. Where a title changed hands in
   between, the source's own date is what the confirmation rests on.
 - The instrument caps its committed masthead lists at 40 (`"mastheads": sorted(doms)[:40]` in its own

@@ -36,7 +36,7 @@ it, each with its line in that file at that commit:
 | the echo threshold | 40 | `MIN_DOMAINS = 3        # ein "Echo" gilt ab drei verschiedenen Quellen` |
 | the phrase length | 39 | `SHINGLE_N = 6` |
 | **the masthead cap** | 294 | `"mastheads": sorted(doms)[:40],` |
-| the evidence-track cap | 289 | `evidence = sorted(per_dom.values(), key=…)[:40]` |
+| the evidence-track cap | 289 | `evidence = sorted(per_dom.values(), key=lambda e: (e["at"] or "9999", e["domain"]))[:40]` |
 | the near-duplicate threshold | 121 | `SOFT_TAU = 0.72  # Cosinus-Schwelle für „paraphrasierte" Koordination (v2)` |
 
 And two behaviours, quoted from the same file:
@@ -44,8 +44,7 @@ And two behaviours, quoted from the same file:
 - **`soft_echo_index` is the implemented v2 near-duplicate index**, seeded with the verbatim clusters
   so that it can only be larger: `soft_clusters(...)`'s docstring says the verbatim clusters are
   unioned first "damit wortgleiche Artikel garantiert zusammenbleiben (soft ⊇ verbatim) — TF-IDF
-  mergt nur Paraphrasen obendrauf" (line 182). `soft_echo_index = len(soft_idx)/len(articles)`
-  (line 317).
+  mergt nur Paraphrasen obendrauf" (line 182). `soft_echo_index = round(len(soft_idx) / len(articles), 3) if articles else 0.0` (line 317).
 - **`syndication.label` is a TLD-and-time heuristic, not an ownership judgement**:
   `classify_syndication` (line 129) computes the share of the most common **country TLD** across the
   mastheads and whether the spread is `span_hours <= 6`; `tld_share >= 0.8 and tight` →

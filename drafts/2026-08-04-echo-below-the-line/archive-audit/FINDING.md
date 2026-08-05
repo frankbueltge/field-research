@@ -28,7 +28,9 @@ publisher's local-newspaper network or one broadcaster's stations supplying the 
 property of that day's pool.
 
 **And the refutation is one judgement call from its opposite, which our own Skeptic found and we had
-denied.** 75 domains of one network answer HTTP 403 and were split off for want of evidence. Accept
+denied.** 75 domains of one network were split off because their own pages name a different brand than
+the operator our evidence confirms — a correction our own Verifier forced, after this page first said,
+wrongly, that they were unreachable. Accept
 them on their naming pattern and the median ratio goes 1.05 → 2.33; accept them *and* merge each
 confirmed owner across the units our nameserver rule split it into, and the result is 40 % of clusters
 below threshold, median 7.83 — the band that would have licensed an arc. We do not accept them,

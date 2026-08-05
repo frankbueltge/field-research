@@ -7,7 +7,8 @@ Two knobs, each defensible, neither pre-registered as primary:
                 the primary; one confirmed owner is otherwise counted as up to nine publishers)
   newsnet_all   the two "News.Net" candidate units are accepted with ALL their members, on the
                 strength of the operator's own corporate page naming the News.Net sites as a class,
-                rather than only the 7 of 82 whose own pages we could reach (74 answer HTTP 403)
+                rather than only the 7 of 82 whose own pages name that operator. The other 75 are
+                reachable (71 answered HTTP 200) and their own pages name a different brand.
   newsnet_class the same units accepted only for the members the class statement actually names —
                 those carrying the "News.Net" brand. This is the defensible reading of that source,
                 and it turns out to be exactly the members already confirmed per member.
