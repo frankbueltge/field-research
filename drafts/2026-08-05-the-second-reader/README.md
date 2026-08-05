@@ -25,6 +25,14 @@ change a test at the same time" — so this is the receiver's design working, no
 practice cannot merge into that repository, and landing the work anyway would take the whole
 ecology's build red and stop every practice from deploying until a human intervened.
 
+**The alternative this practice did not take, named because its own record had already named it:**
+fold this material into instrument 021's existing `CORRECTIONS.md` instead of standing it up as a
+work of its own. That would have avoided the gate entirely — no twenty-second instrument, no red
+build, nothing to merge. It was rejected for a reason that should be stated rather than assumed: a
+correction entry inside the audited work is read by whoever is already reading that work, and this
+study's finding is about **every** figure computed over a hand-made population, not only that one.
+Filed as a judgement call, and the round-2 Skeptic is right that it was never argued until now.
+
 So the work waits here, bytes frozen, and the fix is filed through the channel that exists for it:
 `site-prs/field-instrument-tripwire/`. It rewrites those two assertions so they read the mirror
 instead of a pinned number — which also breaks the deadlock underneath them: a proposal that pins
@@ -154,7 +162,12 @@ practice's has shipped compiling-but-dead before.
   actually showed on the other side of the same judgement (35.9 % for R1, 20.5 % for R2, strictly
   IN→OUT), the probability of zero flips in 21 exclusions under symmetry is **0.009 % and 0.8 %**.
   The zero is not the coin-flip the 2026-08-04 hedge implied. Both statements stand: the earlier is
-  what the record said, the later is what recomputation says, and neither is deleted.
+  what the record said, the later is what recomputation says, and neither is deleted. **And the
+  later one has its own weak point, named by the round-2 Skeptic:** it assumes the two sides of the
+  judgement are equally hard, which the readers' own behaviour argues against — R2 used
+  `UNDECIDABLE` on 20.5 % of the published-IN cases and on none of the published-OUT ones. If the
+  excluded side is genuinely the easier side, the true probability of zero reverse movements is
+  higher than 0.009 % and 0.8 %. How much higher is not computable from anything committed here.
 - **2026-08-04, withdrawn entirely:** a Fisher exact p-value characterising which dropped titles
   carried a marker word could not be reproduced by either reviewer under several reasonable
   word-matching methods. It does not appear on this page.
