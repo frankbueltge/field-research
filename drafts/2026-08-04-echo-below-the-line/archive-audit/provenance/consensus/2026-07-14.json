@@ -1,0 +1,244 @@
+{
+  "generated_at": "2026-07-14T08:10:37+00:00",
+  "date": "2026-07-14",
+  "echo_index": 0.241,
+  "soft_echo_index": 0.242,
+  "headline": {
+    "phrase": "police investigating ann widdecombe death continue",
+    "sample_title": "Police investigating Ann Widdecombe death continue to question suspect",
+    "domain_count": 53,
+    "mastheads": [
+      "barryanddistrictnews.co.uk",
+      "bordertelegraph.com",
+      "bournemouthecho.co.uk",
+      "braintreeandwithamtimes.co.uk",
+      "bridgwatermercury.co.uk",
+      "bridportnews.co.uk",
+      "burnhamandhighbridgeweeklynews.co.uk",
+      "burytimes.co.uk",
+      "chesterstandard.co.uk",
+      "clydebankpost.co.uk",
+      "countypress.co.uk",
+      "dailyecho.co.uk",
+      "dissexpress.co.uk",
+      "dudleynews.co.uk",
+      "eadt.co.uk",
+      "echo-news.co.uk",
+      "eppingforestguardian.co.uk",
+      "eveningnews24.co.uk",
+      "falmouthpacket.co.uk",
+      "fenlandcitizen.co.uk",
+      "freepressseries.co.uk",
+      "gazette-news.co.uk",
+      "gazetteandherald.co.uk",
+      "gazetteherald.co.uk",
+      "halesowennews.co.uk",
+      "halsteadgazette.co.uk",
+      "hampshirechronicle.co.uk",
+      "harwichandmanningtreestandard.co.uk",
+      "kilburntimes.co.uk",
+      "leaderlive.co.uk",
+      "maldonandburnhamstandard.co.uk",
+      "northwalespioneer.co.uk",
+      "northwichguardian.co.uk",
+      "nwemail.co.uk",
+      "peeblesshirenews.com",
+      "penarthtimes.co.uk",
+      "redditchadvertiser.co.uk",
+      "runcornandwidnesworld.co.uk",
+      "rutland-times.co.uk",
+      "salisburyjournal.co.uk"
+    ],
+    "article_count": 53,
+    "first_domain": "bridgwatermercury.co.uk",
+    "first_seen": "2026-07-14T05:15+00:00",
+    "span_hours": 2.2,
+    "cascade": [
+      {
+        "at": "2026-07-14T05:15+00:00",
+        "domain": "bridgwatermercury.co.uk"
+      },
+      {
+        "at": "2026-07-14T05:15+00:00",
+        "domain": "burnhamandhighbridgeweeklynews.co.uk"
+      },
+      {
+        "at": "2026-07-14T05:15+00:00",
+        "domain": "dissexpress.co.uk"
+      },
+      {
+        "at": "2026-07-14T05:15+00:00",
+        "domain": "halesowennews.co.uk"
+      },
+      {
+        "at": "2026-07-14T05:15+00:00",
+        "domain": "hampshirechronicle.co.uk"
+      },
+      {
+        "at": "2026-07-14T05:15+00:00",
+        "domain": "harwichandmanningtreestandard.co.uk"
+      },
+      {
+        "at": "2026-07-14T05:15+00:00",
+        "domain": "leaderlive.co.uk"
+      },
+      {
+        "at": "2026-07-14T05:15+00:00",
+        "domain": "nwemail.co.uk"
+      },
+      {
+        "at": "2026-07-14T05:15+00:00",
+        "domain": "runcornandwidnesworld.co.uk"
+      },
+      {
+        "at": "2026-07-14T05:15+00:00",
+        "domain": "somersetcountygazette.co.uk"
+      },
+      {
+        "at": "2026-07-14T05:15+00:00",
+        "domain": "witneygazette.co.uk"
+      },
+      {
+        "at": "2026-07-14T05:30+00:00",
+        "domain": "halsteadgazette.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.95,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 53,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "jordan and uae targeted in response",
+    "sample_title": "US launches more strikes on Iran as Bahrain , Jordan and UAE targeted in response",
+    "domain_count": 27,
+    "mastheads": [
+      "bournemouthecho.co.uk",
+      "chardandilminsternews.co.uk",
+      "chesterstandard.co.uk",
+      "countypress.co.uk",
+      "dailyecho.co.uk",
+      "dudleynews.co.uk",
+      "echo-news.co.uk",
+      "eveningnews24.co.uk",
+      "falmouthpacket.co.uk",
+      "freepressseries.co.uk",
+      "gazette-news.co.uk",
+      "gazetteandherald.co.uk",
+      "kilburntimes.co.uk",
+      "leaderlive.co.uk",
+      "maldonandburnhamstandard.co.uk",
+      "northwichguardian.co.uk",
+      "oxfordmail.co.uk",
+      "peeblesshirenews.com",
+      "redditchadvertiser.co.uk",
+      "salisburyjournal.co.uk",
+      "southwalesguardian.co.uk",
+      "stourbridgenews.co.uk",
+      "surreycomet.co.uk",
+      "thenorthernecho.co.uk",
+      "tivysideadvertiser.co.uk",
+      "warringtonguardian.co.uk",
+      "watfordobserver.co.uk"
+    ],
+    "article_count": 27,
+    "first_domain": "oxfordmail.co.uk",
+    "first_seen": "2026-07-14T06:00+00:00",
+    "span_hours": 1.5,
+    "cascade": [
+      {
+        "at": "2026-07-14T06:00+00:00",
+        "domain": "oxfordmail.co.uk"
+      },
+      {
+        "at": "2026-07-14T06:15+00:00",
+        "domain": "chardandilminsternews.co.uk"
+      },
+      {
+        "at": "2026-07-14T06:15+00:00",
+        "domain": "salisburyjournal.co.uk"
+      },
+      {
+        "at": "2026-07-14T06:15+00:00",
+        "domain": "southwalesguardian.co.uk"
+      },
+      {
+        "at": "2026-07-14T06:30+00:00",
+        "domain": "countypress.co.uk"
+      },
+      {
+        "at": "2026-07-14T06:30+00:00",
+        "domain": "dudleynews.co.uk"
+      },
+      {
+        "at": "2026-07-14T06:30+00:00",
+        "domain": "northwichguardian.co.uk"
+      },
+      {
+        "at": "2026-07-14T06:30+00:00",
+        "domain": "stourbridgenews.co.uk"
+      },
+      {
+        "at": "2026-07-14T06:30+00:00",
+        "domain": "warringtonguardian.co.uk"
+      },
+      {
+        "at": "2026-07-14T06:45+00:00",
+        "domain": "chesterstandard.co.uk"
+      },
+      {
+        "at": "2026-07-14T06:45+00:00",
+        "domain": "leaderlive.co.uk"
+      },
+      {
+        "at": "2026-07-14T06:45+00:00",
+        "domain": "maldonandburnhamstandard.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.96,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 27,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1292,
+    "domains_scanned": 645,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 0,
+      "technology": 250,
+      "health": 0,
+      "science": 250,
+      "business": 250,
+      "sports": 250,
+      "weather": 250
+    },
+    "beats_failed": 2,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-14"
+  }
+}

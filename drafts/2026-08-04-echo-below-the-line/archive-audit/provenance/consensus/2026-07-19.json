@@ -1,0 +1,244 @@
+{
+  "generated_at": "2026-07-19T08:24:40+00:00",
+  "date": "2026-07-19",
+  "echo_index": 0.217,
+  "soft_echo_index": 0.223,
+  "headline": {
+    "phrase": "jinping pitches china as leader of",
+    "sample_title": "Xi Jinping pitches China as leader of new global AI order",
+    "domain_count": 36,
+    "mastheads": [
+      "argentinastar.com",
+      "austinglobe.com",
+      "azerbaijannews.net",
+      "bignewsnetwork.com",
+      "birminghamstar.com",
+      "bostonstar.com",
+      "britainnews.net",
+      "cambodiantimes.com",
+      "cincinnatisun.com",
+      "dallassun.com",
+      "europesun.com",
+      "heraldglobe.com",
+      "iraqsun.com",
+      "jamaicantimes.com",
+      "laosnews.net",
+      "londonmercury.com",
+      "malaysiasun.com",
+      "mexicostar.com",
+      "middleeaststar.com",
+      "milwaukeesun.com",
+      "nashvilleherald.com",
+      "neworleanssun.com",
+      "newyorktelegraph.com",
+      "northkoreatimes.com",
+      "ohiostandard.com",
+      "orlandoecho.com",
+      "pakistantelegraph.com",
+      "pittsburghstar.com",
+      "saltlakecitysun.com",
+      "sanantoniopost.com",
+      "shanghaisun.com",
+      "srilankasource.com",
+      "sydneysun.com",
+      "taiwansun.com",
+      "texasguardian.com",
+      "tucsonpost.com"
+    ],
+    "article_count": 36,
+    "first_domain": "taiwansun.com",
+    "first_seen": "2026-07-19T03:45+00:00",
+    "span_hours": 3.8,
+    "cascade": [
+      {
+        "at": "2026-07-19T03:45+00:00",
+        "domain": "taiwansun.com"
+      },
+      {
+        "at": "2026-07-19T03:45+00:00",
+        "domain": "texasguardian.com"
+      },
+      {
+        "at": "2026-07-19T03:45+00:00",
+        "domain": "tucsonpost.com"
+      },
+      {
+        "at": "2026-07-19T04:45+00:00",
+        "domain": "bignewsnetwork.com"
+      },
+      {
+        "at": "2026-07-19T05:00+00:00",
+        "domain": "britainnews.net"
+      },
+      {
+        "at": "2026-07-19T05:00+00:00",
+        "domain": "europesun.com"
+      },
+      {
+        "at": "2026-07-19T05:00+00:00",
+        "domain": "heraldglobe.com"
+      },
+      {
+        "at": "2026-07-19T05:00+00:00",
+        "domain": "laosnews.net"
+      },
+      {
+        "at": "2026-07-19T05:00+00:00",
+        "domain": "middleeaststar.com"
+      },
+      {
+        "at": "2026-07-19T05:00+00:00",
+        "domain": "milwaukeesun.com"
+      },
+      {
+        "at": "2026-07-19T05:00+00:00",
+        "domain": "neworleanssun.com"
+      },
+      {
+        "at": "2026-07-19T05:00+00:00",
+        "domain": "newyorktelegraph.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "com",
+      "tld_share": 0.92,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 36,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "jobs data tops economic agenda as",
+    "sample_title": "Jobs data tops economic agenda as Iran war re - escalates",
+    "domain_count": 31,
+    "mastheads": [
+      "armidaleexpress.com.au",
+      "bendigoadvertiser.com.au",
+      "blayneychronicle.com.au",
+      "braidwoodtimes.com.au",
+      "camdencourier.com.au",
+      "centralwesterndaily.com.au",
+      "cessnockadvertiser.com.au",
+      "cootamundraherald.com.au",
+      "dailyadvertiser.com.au",
+      "easternriverinachronicle.com.au",
+      "examiner.com.au",
+      "gloucesteradvocate.com.au",
+      "hardenexpress.com.au",
+      "inverelltimes.com.au",
+      "juneesoutherncross.com.au",
+      "katherinetimes.com.au",
+      "lithgowmercury.com.au",
+      "macleayargus.com.au",
+      "manningrivertimes.com.au",
+      "moreechampion.com.au",
+      "northweststar.com.au",
+      "nynganobserver.com.au",
+      "oberonreview.com.au",
+      "portstephensexaminer.com.au",
+      "redlandcitybulletin.com.au",
+      "singletonargus.com.au",
+      "southcoastregister.com.au",
+      "standard.net.au",
+      "tenterfieldstar.com.au",
+      "theadvocate.com.au",
+      "thecourier.com.au"
+    ],
+    "article_count": 31,
+    "first_domain": "easternriverinachronicle.com.au",
+    "first_seen": "2026-07-19T03:45+00:00",
+    "span_hours": 3.5,
+    "cascade": [
+      {
+        "at": "2026-07-19T03:45+00:00",
+        "domain": "easternriverinachronicle.com.au"
+      },
+      {
+        "at": "2026-07-19T03:45+00:00",
+        "domain": "northweststar.com.au"
+      },
+      {
+        "at": "2026-07-19T03:45+00:00",
+        "domain": "tenterfieldstar.com.au"
+      },
+      {
+        "at": "2026-07-19T03:45+00:00",
+        "domain": "theadvocate.com.au"
+      },
+      {
+        "at": "2026-07-19T04:30+00:00",
+        "domain": "inverelltimes.com.au"
+      },
+      {
+        "at": "2026-07-19T04:30+00:00",
+        "domain": "katherinetimes.com.au"
+      },
+      {
+        "at": "2026-07-19T04:30+00:00",
+        "domain": "macleayargus.com.au"
+      },
+      {
+        "at": "2026-07-19T04:45+00:00",
+        "domain": "centralwesterndaily.com.au"
+      },
+      {
+        "at": "2026-07-19T04:45+00:00",
+        "domain": "cootamundraherald.com.au"
+      },
+      {
+        "at": "2026-07-19T04:45+00:00",
+        "domain": "dailyadvertiser.com.au"
+      },
+      {
+        "at": "2026-07-19T04:45+00:00",
+        "domain": "manningrivertimes.com.au"
+      },
+      {
+        "at": "2026-07-19T04:45+00:00",
+        "domain": "southcoastregister.com.au"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "au",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 31,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1258,
+    "domains_scanned": 554,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 0,
+      "economy": 250,
+      "technology": 250,
+      "health": 250,
+      "science": 250,
+      "business": 250,
+      "sports": 0,
+      "weather": 250
+    },
+    "beats_failed": 2,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-19"
+  }
+}

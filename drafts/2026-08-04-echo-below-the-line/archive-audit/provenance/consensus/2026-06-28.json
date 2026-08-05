@@ -1,0 +1,219 @@
+{
+  "generated_at": "2026-06-28T08:55:15+00:00",
+  "date": "2026-06-28",
+  "echo_index": 0.219,
+  "soft_echo_index": 0.232,
+  "headline": {
+    "phrase": "kenny taylor appeasement of one nation",
+    "sample_title": "Mark Kenny | Taylor appeasement of One Nation akin to surrender | Harden Murrumburrah Express",
+    "domain_count": 25,
+    "mastheads": [
+      "areanews.com.au",
+      "armidaleexpress.com.au",
+      "begadistrictnews.com.au",
+      "bluemountainsgazette.com.au",
+      "bunburymail.com.au",
+      "centralwesterndaily.com.au",
+      "cootamundraherald.com.au",
+      "dailyadvertiser.com.au",
+      "dungogchronicle.com.au",
+      "hardenexpress.com.au",
+      "hepburnadvocate.com.au",
+      "irrigator.com.au",
+      "manningrivertimes.com.au",
+      "merimbulanewsweekly.com.au",
+      "moreechampion.com.au",
+      "muswellbrookchronicle.com.au",
+      "newcastleherald.com.au",
+      "northerndailyleader.com.au",
+      "nynganobserver.com.au",
+      "queanbeyanage.com.au",
+      "redlandcitybulletin.com.au",
+      "southcoastregister.com.au",
+      "southernhighlandnews.com.au",
+      "theadvocate.com.au",
+      "ulladullatimes.com.au"
+    ],
+    "article_count": 25,
+    "first_domain": "bluemountainsgazette.com.au",
+    "first_seen": "2026-06-27T20:30+00:00",
+    "span_hours": 4.0,
+    "cascade": [
+      {
+        "at": "2026-06-27T20:30+00:00",
+        "domain": "bluemountainsgazette.com.au"
+      },
+      {
+        "at": "2026-06-27T20:30+00:00",
+        "domain": "hardenexpress.com.au"
+      },
+      {
+        "at": "2026-06-27T20:30+00:00",
+        "domain": "southcoastregister.com.au"
+      },
+      {
+        "at": "2026-06-27T20:30+00:00",
+        "domain": "southernhighlandnews.com.au"
+      },
+      {
+        "at": "2026-06-27T20:45+00:00",
+        "domain": "armidaleexpress.com.au"
+      },
+      {
+        "at": "2026-06-27T20:45+00:00",
+        "domain": "begadistrictnews.com.au"
+      },
+      {
+        "at": "2026-06-27T20:45+00:00",
+        "domain": "bunburymail.com.au"
+      },
+      {
+        "at": "2026-06-27T20:45+00:00",
+        "domain": "muswellbrookchronicle.com.au"
+      },
+      {
+        "at": "2026-06-27T20:45+00:00",
+        "domain": "northerndailyleader.com.au"
+      },
+      {
+        "at": "2026-06-27T20:45+00:00",
+        "domain": "theadvocate.com.au"
+      },
+      {
+        "at": "2026-06-27T21:00+00:00",
+        "domain": "centralwesterndaily.com.au"
+      },
+      {
+        "at": "2026-06-27T21:00+00:00",
+        "domain": "manningrivertimes.com.au"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "au",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 25,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "sessions why we look outside ourselves",
+    "sample_title": "Soul Sessions : Why We Look Outside Ourselves for Truth | 101 . 9 The Twister",
+    "domain_count": 18,
+    "mastheads": [
+      "1021thebull.iheart.com",
+      "925wpap.iheart.com",
+      "953bull.iheart.com",
+      "955thebull.iheart.com",
+      "95ksj.iheart.com",
+      "969thekat.iheart.com",
+      "97kicksfm.iheart.com",
+      "aggie96.iheart.com",
+      "b100wobb.iheart.com",
+      "bob949.iheart.com",
+      "country1005.iheart.com",
+      "kiak.iheart.com",
+      "kix104.iheart.com",
+      "mysouth1061.iheart.com",
+      "thetwister.iheart.com",
+      "wdrm.iheart.com",
+      "wnoe.iheart.com",
+      "wpoc.iheart.com"
+    ],
+    "article_count": 18,
+    "first_domain": "country1005.iheart.com",
+    "first_seen": "2026-06-28T04:45+00:00",
+    "span_hours": 3.8,
+    "cascade": [
+      {
+        "at": "2026-06-28T04:45+00:00",
+        "domain": "country1005.iheart.com"
+      },
+      {
+        "at": "2026-06-28T04:45+00:00",
+        "domain": "kix104.iheart.com"
+      },
+      {
+        "at": "2026-06-28T06:00+00:00",
+        "domain": "wpoc.iheart.com"
+      },
+      {
+        "at": "2026-06-28T07:15+00:00",
+        "domain": "925wpap.iheart.com"
+      },
+      {
+        "at": "2026-06-28T07:15+00:00",
+        "domain": "953bull.iheart.com"
+      },
+      {
+        "at": "2026-06-28T07:15+00:00",
+        "domain": "955thebull.iheart.com"
+      },
+      {
+        "at": "2026-06-28T07:15+00:00",
+        "domain": "thetwister.iheart.com"
+      },
+      {
+        "at": "2026-06-28T07:45+00:00",
+        "domain": "1021thebull.iheart.com"
+      },
+      {
+        "at": "2026-06-28T07:45+00:00",
+        "domain": "97kicksfm.iheart.com"
+      },
+      {
+        "at": "2026-06-28T07:45+00:00",
+        "domain": "aggie96.iheart.com"
+      },
+      {
+        "at": "2026-06-28T07:45+00:00",
+        "domain": "bob949.iheart.com"
+      },
+      {
+        "at": "2026-06-28T07:45+00:00",
+        "domain": "wnoe.iheart.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "com",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 18,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1120,
+    "domains_scanned": 592,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 0,
+      "economy": 250,
+      "technology": 250,
+      "health": 0,
+      "science": 0,
+      "business": 250,
+      "sports": 250,
+      "weather": 250
+    },
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-06-28"
+  }
+}

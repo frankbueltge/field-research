@@ -1,0 +1,241 @@
+{
+  "generated_at": "2026-06-29T11:05:39+00:00",
+  "date": "2026-06-29",
+  "echo_index": 0.263,
+  "soft_echo_index": 0.281,
+  "headline": {
+    "phrase": "big leap in battery performance scientists",
+    "sample_title": "Breakthrough could lead to  big leap in battery performance , scientists say",
+    "domain_count": 35,
+    "mastheads": [
+      "asianimage.co.uk",
+      "bucksfreepress.co.uk",
+      "cotswoldjournal.co.uk",
+      "countypress.co.uk",
+      "dailyecho.co.uk",
+      "denbighshirefreepress.co.uk",
+      "dunfermlinepress.com",
+      "eadt.co.uk",
+      "eastlothiancourier.com",
+      "edp24.co.uk",
+      "eppingforestguardian.co.uk",
+      "eveningnews24.co.uk",
+      "falmouthpacket.co.uk",
+      "gazetteandherald.co.uk",
+      "gazetteherald.co.uk",
+      "glasgowtimes.co.uk",
+      "greenocktelegraph.co.uk",
+      "hamhigh.co.uk",
+      "harrowtimes.co.uk",
+      "hexham-courant.co.uk",
+      "hillingdontimes.co.uk",
+      "impartialreporter.com",
+      "leaderlive.co.uk",
+      "newsandstar.co.uk",
+      "northwaleschronicle.co.uk",
+      "nwemail.co.uk",
+      "redditchadvertiser.co.uk",
+      "sloughobserver.co.uk",
+      "southwalesargus.co.uk",
+      "southwalesguardian.co.uk",
+      "swindonadvertiser.co.uk",
+      "thetelegraphandargus.co.uk",
+      "thisiswiltshire.co.uk",
+      "timesandstar.co.uk",
+      "wharfedaleobserver.co.uk"
+    ],
+    "article_count": 35,
+    "first_domain": "gazetteherald.co.uk",
+    "first_seen": "2026-06-29T04:45+00:00",
+    "span_hours": 3.2,
+    "cascade": [
+      {
+        "at": "2026-06-29T04:45+00:00",
+        "domain": "gazetteherald.co.uk"
+      },
+      {
+        "at": "2026-06-29T04:45+00:00",
+        "domain": "nwemail.co.uk"
+      },
+      {
+        "at": "2026-06-29T04:45+00:00",
+        "domain": "thisiswiltshire.co.uk"
+      },
+      {
+        "at": "2026-06-29T05:00+00:00",
+        "domain": "bucksfreepress.co.uk"
+      },
+      {
+        "at": "2026-06-29T05:00+00:00",
+        "domain": "dunfermlinepress.com"
+      },
+      {
+        "at": "2026-06-29T05:00+00:00",
+        "domain": "eadt.co.uk"
+      },
+      {
+        "at": "2026-06-29T05:00+00:00",
+        "domain": "eastlothiancourier.com"
+      },
+      {
+        "at": "2026-06-29T05:00+00:00",
+        "domain": "falmouthpacket.co.uk"
+      },
+      {
+        "at": "2026-06-29T05:00+00:00",
+        "domain": "gazetteandherald.co.uk"
+      },
+      {
+        "at": "2026-06-29T05:00+00:00",
+        "domain": "impartialreporter.com"
+      },
+      {
+        "at": "2026-06-29T05:00+00:00",
+        "domain": "redditchadvertiser.co.uk"
+      },
+      {
+        "at": "2026-06-29T05:00+00:00",
+        "domain": "sloughobserver.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.91,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 35,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "sausage rolls healthier without ruining flaky",
+    "sample_title": "Scientists bid to make sausage rolls healthier without ruining flaky pastry",
+    "domain_count": 30,
+    "mastheads": [
+      "andoveradvertiser.co.uk",
+      "bicesteradvertiser.net",
+      "bournemouthecho.co.uk",
+      "bucksfreepress.co.uk",
+      "clydebankpost.co.uk",
+      "countypress.co.uk",
+      "dudleynews.co.uk",
+      "dunfermlinepress.com",
+      "eadt.co.uk",
+      "eastlothiancourier.com",
+      "falmouthpacket.co.uk",
+      "gazetteandherald.co.uk",
+      "gazetteherald.co.uk",
+      "greenocktelegraph.co.uk",
+      "hamhigh.co.uk",
+      "hexham-courant.co.uk",
+      "hillingdontimes.co.uk",
+      "impartialreporter.com",
+      "leaderlive.co.uk",
+      "newsandstar.co.uk",
+      "redditchadvertiser.co.uk",
+      "rhyljournal.co.uk",
+      "richmondandtwickenhamtimes.co.uk",
+      "sloughobserver.co.uk",
+      "southwalesargus.co.uk",
+      "southwalesguardian.co.uk",
+      "stroudnewsandjournal.co.uk",
+      "swindonadvertiser.co.uk",
+      "times-series.co.uk",
+      "wharfedaleobserver.co.uk"
+    ],
+    "article_count": 30,
+    "first_domain": "clydebankpost.co.uk",
+    "first_seen": "2026-06-29T04:45+00:00",
+    "span_hours": 3.0,
+    "cascade": [
+      {
+        "at": "2026-06-29T04:45+00:00",
+        "domain": "clydebankpost.co.uk"
+      },
+      {
+        "at": "2026-06-29T04:45+00:00",
+        "domain": "gazetteherald.co.uk"
+      },
+      {
+        "at": "2026-06-29T04:45+00:00",
+        "domain": "stroudnewsandjournal.co.uk"
+      },
+      {
+        "at": "2026-06-29T04:45+00:00",
+        "domain": "times-series.co.uk"
+      },
+      {
+        "at": "2026-06-29T05:00+00:00",
+        "domain": "bucksfreepress.co.uk"
+      },
+      {
+        "at": "2026-06-29T05:00+00:00",
+        "domain": "dunfermlinepress.com"
+      },
+      {
+        "at": "2026-06-29T05:00+00:00",
+        "domain": "eadt.co.uk"
+      },
+      {
+        "at": "2026-06-29T05:00+00:00",
+        "domain": "eastlothiancourier.com"
+      },
+      {
+        "at": "2026-06-29T05:00+00:00",
+        "domain": "falmouthpacket.co.uk"
+      },
+      {
+        "at": "2026-06-29T05:00+00:00",
+        "domain": "gazetteandherald.co.uk"
+      },
+      {
+        "at": "2026-06-29T05:00+00:00",
+        "domain": "impartialreporter.com"
+      },
+      {
+        "at": "2026-06-29T05:00+00:00",
+        "domain": "redditchadvertiser.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.87,
+      "distinct_tlds": 3
+    },
+    "soft_domain_count": 30,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 936,
+    "domains_scanned": 562,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 0,
+      "technology": 0,
+      "health": 250,
+      "science": 250,
+      "business": 0,
+      "sports": 0,
+      "weather": 250
+    },
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-06-29"
+  }
+}

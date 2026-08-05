@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-07-04T08:42:46+00:00",
+  "date": "2026-07-04",
+  "echo_index": 0.0,
+  "soft_echo_index": 0.0,
+  "headline": null,
+  "runner_up": null,
+  "stats": {
+    "articles_scanned": 0,
+    "domains_scanned": 0,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 0,
+      "economy": 0,
+      "technology": 0,
+      "health": 0,
+      "science": 0,
+      "business": 0,
+      "sports": 0,
+      "weather": 0
+    },
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-04"
+  }
+}

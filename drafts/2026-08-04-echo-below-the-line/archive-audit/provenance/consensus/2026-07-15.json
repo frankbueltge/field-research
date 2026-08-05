@@ -1,0 +1,218 @@
+{
+  "generated_at": "2026-07-15T08:18:29+00:00",
+  "date": "2026-07-15",
+  "echo_index": 0.228,
+  "soft_echo_index": 0.234,
+  "headline": {
+    "phrase": "handling confusion as new case confirmed",
+    "sample_title": "Bird handling  confusion  as new case confirmed",
+    "domain_count": 24,
+    "mastheads": [
+      "bunburymail.com.au",
+      "cootamundraherald.com.au",
+      "crookwellgazette.com.au",
+      "easternriverinachronicle.com.au",
+      "edenmagnet.com.au",
+      "gloucesteradvocate.com.au",
+      "goulburnpost.com.au",
+      "greatlakesadvocate.com.au",
+      "hepburnadvocate.com.au",
+      "inverelltimes.com.au",
+      "juneesoutherncross.com.au",
+      "lithgowmercury.com.au",
+      "mandurahmail.com.au",
+      "merimbulanewsweekly.com.au",
+      "moreechampion.com.au",
+      "naroomanewsonline.com.au",
+      "narrominenewsonline.com.au",
+      "nvi.com.au",
+      "nynganobserver.com.au",
+      "oberonreview.com.au",
+      "portnews.com.au",
+      "thecourier.com.au",
+      "ulladullatimes.com.au",
+      "yasstribune.com.au"
+    ],
+    "article_count": 24,
+    "first_domain": "bunburymail.com.au",
+    "first_seen": "2026-07-15T04:45+00:00",
+    "span_hours": 3.0,
+    "cascade": [
+      {
+        "at": "2026-07-15T04:45+00:00",
+        "domain": "bunburymail.com.au"
+      },
+      {
+        "at": "2026-07-15T04:45+00:00",
+        "domain": "merimbulanewsweekly.com.au"
+      },
+      {
+        "at": "2026-07-15T04:45+00:00",
+        "domain": "portnews.com.au"
+      },
+      {
+        "at": "2026-07-15T05:15+00:00",
+        "domain": "cootamundraherald.com.au"
+      },
+      {
+        "at": "2026-07-15T05:15+00:00",
+        "domain": "gloucesteradvocate.com.au"
+      },
+      {
+        "at": "2026-07-15T05:15+00:00",
+        "domain": "lithgowmercury.com.au"
+      },
+      {
+        "at": "2026-07-15T05:15+00:00",
+        "domain": "moreechampion.com.au"
+      },
+      {
+        "at": "2026-07-15T05:15+00:00",
+        "domain": "nvi.com.au"
+      },
+      {
+        "at": "2026-07-15T05:30+00:00",
+        "domain": "oberonreview.com.au"
+      },
+      {
+        "at": "2026-07-15T05:30+00:00",
+        "domain": "ulladullatimes.com.au"
+      },
+      {
+        "at": "2026-07-15T06:15+00:00",
+        "domain": "crookwellgazette.com.au"
+      },
+      {
+        "at": "2026-07-15T06:15+00:00",
+        "domain": "hepburnadvocate.com.au"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "au",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 24,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "mystery bidder buys t rex nicknamed",
+    "sample_title": "Mystery bidder buys T . rex nicknamed  Gu for a record $50 million",
+    "domain_count": 17,
+    "mastheads": [
+      "aspenpublicradio.org",
+      "delawarepublic.org",
+      "iowapublicradio.org",
+      "kedm.org",
+      "knpr.org",
+      "krvs.org",
+      "ksmu.org",
+      "kvpr.org",
+      "kzyx.org",
+      "northernpublicradio.org",
+      "tspr.org",
+      "ualrpublicradio.org",
+      "waer.org",
+      "wbaa.org",
+      "wmuk.org",
+      "wnmufm.org",
+      "wyomingpublicmedia.org"
+    ],
+    "article_count": 17,
+    "first_domain": "northernpublicradio.org",
+    "first_seen": "2026-07-15T06:45+00:00",
+    "span_hours": 1.0,
+    "cascade": [
+      {
+        "at": "2026-07-15T06:45+00:00",
+        "domain": "northernpublicradio.org"
+      },
+      {
+        "at": "2026-07-15T06:45+00:00",
+        "domain": "tspr.org"
+      },
+      {
+        "at": "2026-07-15T06:45+00:00",
+        "domain": "wbaa.org"
+      },
+      {
+        "at": "2026-07-15T07:00+00:00",
+        "domain": "krvs.org"
+      },
+      {
+        "at": "2026-07-15T07:00+00:00",
+        "domain": "kzyx.org"
+      },
+      {
+        "at": "2026-07-15T07:00+00:00",
+        "domain": "wmuk.org"
+      },
+      {
+        "at": "2026-07-15T07:00+00:00",
+        "domain": "wyomingpublicmedia.org"
+      },
+      {
+        "at": "2026-07-15T07:15+00:00",
+        "domain": "delawarepublic.org"
+      },
+      {
+        "at": "2026-07-15T07:30+00:00",
+        "domain": "kvpr.org"
+      },
+      {
+        "at": "2026-07-15T07:45+00:00",
+        "domain": "aspenpublicradio.org"
+      },
+      {
+        "at": "2026-07-15T07:45+00:00",
+        "domain": "iowapublicradio.org"
+      },
+      {
+        "at": "2026-07-15T07:45+00:00",
+        "domain": "kedm.org"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "org",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 17,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 657,
+    "domains_scanned": 317,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 0,
+      "economy": 250,
+      "technology": 250,
+      "health": 0,
+      "science": 250,
+      "business": 0,
+      "sports": 0,
+      "weather": 0
+    },
+    "beats_failed": 5,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-15"
+  }
+}

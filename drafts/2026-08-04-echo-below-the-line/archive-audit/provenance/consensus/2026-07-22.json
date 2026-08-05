@@ -1,0 +1,257 @@
+{
+  "generated_at": "2026-07-22T08:35:04+00:00",
+  "date": "2026-07-22",
+  "echo_index": 0.215,
+  "soft_echo_index": 0.219,
+  "headline": {
+    "phrase": "job for the health insurance about",
+    "sample_title": "Staying in a job for the health insurance ? About 1 in 4 Americans do , a survey says",
+    "domain_count": 57,
+    "mastheads": [
+      "apr.org",
+      "aspenpublicradio.org",
+      "capeandislands.org",
+      "delawarepublic.org",
+      "iowapublicradio.org",
+      "kacu.org",
+      "kalw.org",
+      "kansaspublicradio.org",
+      "kazu.org",
+      "kclu.org",
+      "kenw.org",
+      "kgou.org",
+      "kios.org",
+      "kjzz.org",
+      "klcc.org",
+      "kmxt.org",
+      "knau.org",
+      "kpbs.org",
+      "krvs.org",
+      "krwg.org",
+      "ksfr.org",
+      "ksmu.org",
+      "kunc.org",
+      "kunm.org",
+      "kvnf.org",
+      "kvpr.org",
+      "kwit.org",
+      "kyuk.org",
+      "mynspr.org",
+      "news.prairiepublic.org",
+      "northernpublicradio.org",
+      "southcarolinapublicradio.org",
+      "ualrpublicradio.org",
+      "waer.org",
+      "wdiy.org",
+      "wemu.org",
+      "wfae.org",
+      "wfdd.org",
+      "wkms.org",
+      "wknofm.org"
+    ],
+    "article_count": 57,
+    "first_domain": "kunm.org",
+    "first_seen": "2026-07-22T04:30+00:00",
+    "span_hours": 3.5,
+    "cascade": [
+      {
+        "at": "2026-07-22T04:30+00:00",
+        "domain": "kunm.org"
+      },
+      {
+        "at": "2026-07-22T04:30+00:00",
+        "domain": "wkyufm.org"
+      },
+      {
+        "at": "2026-07-22T04:45+00:00",
+        "domain": "kjzz.org"
+      },
+      {
+        "at": "2026-07-22T04:45+00:00",
+        "domain": "ksmu.org"
+      },
+      {
+        "at": "2026-07-22T04:45+00:00",
+        "domain": "kvpr.org"
+      },
+      {
+        "at": "2026-07-22T04:45+00:00",
+        "domain": "southcarolinapublicradio.org"
+      },
+      {
+        "at": "2026-07-22T04:45+00:00",
+        "domain": "wknofm.org"
+      },
+      {
+        "at": "2026-07-22T04:45+00:00",
+        "domain": "wmuk.org"
+      },
+      {
+        "at": "2026-07-22T04:45+00:00",
+        "domain": "wuky.org"
+      },
+      {
+        "at": "2026-07-22T04:45+00:00",
+        "domain": "wutc.org"
+      },
+      {
+        "at": "2026-07-22T04:45+00:00",
+        "domain": "wxxinews.org"
+      },
+      {
+        "at": "2026-07-22T05:00+00:00",
+        "domain": "kios.org"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "org",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 57,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "japanese woman becomes country first mayor",
+    "sample_title": "Japanese woman becomes country first mayor to take maternity leave",
+    "domain_count": 40,
+    "mastheads": [
+      "afghanistannews.net",
+      "arabherald.com",
+      "argentinastar.com",
+      "asiabulletin.com",
+      "australiannews.net",
+      "bangladeshsun.com",
+      "britainnews.net",
+      "caribbeanherald.com",
+      "cincinnatisun.com",
+      "clevelandstar.com",
+      "coloradostar.com",
+      "hawaiitelegraph.com",
+      "indiagazette.com",
+      "jamaicantimes.com",
+      "laosnews.net",
+      "londonmercury.com",
+      "malaysiasun.com",
+      "memphissun.com",
+      "middleeaststar.com",
+      "nashvilleherald.com",
+      "neworleanssun.com",
+      "newyorkstatesman.com",
+      "newzealandstar.com",
+      "nigeriasun.com",
+      "northkoreatimes.com",
+      "oklahomacitysun.com",
+      "pakistantelegraph.com",
+      "parisguardian.com",
+      "pittsburghstar.com",
+      "russiaherald.com",
+      "sandiegosun.com",
+      "sierraleonetimes.com",
+      "singaporestar.com",
+      "srilankasource.com",
+      "sydneysun.com",
+      "taiwansun.com",
+      "trinidadtimes.com",
+      "utahindependent.com",
+      "vietnamtribune.com",
+      "zimbabwestar.com"
+    ],
+    "article_count": 40,
+    "first_domain": "caribbeanherald.com",
+    "first_seen": "2026-07-22T04:30+00:00",
+    "span_hours": 3.2,
+    "cascade": [
+      {
+        "at": "2026-07-22T04:30+00:00",
+        "domain": "caribbeanherald.com"
+      },
+      {
+        "at": "2026-07-22T04:30+00:00",
+        "domain": "laosnews.net"
+      },
+      {
+        "at": "2026-07-22T04:30+00:00",
+        "domain": "sierraleonetimes.com"
+      },
+      {
+        "at": "2026-07-22T04:30+00:00",
+        "domain": "trinidadtimes.com"
+      },
+      {
+        "at": "2026-07-22T04:45+00:00",
+        "domain": "argentinastar.com"
+      },
+      {
+        "at": "2026-07-22T04:45+00:00",
+        "domain": "newyorkstatesman.com"
+      },
+      {
+        "at": "2026-07-22T04:45+00:00",
+        "domain": "nigeriasun.com"
+      },
+      {
+        "at": "2026-07-22T04:45+00:00",
+        "domain": "pakistantelegraph.com"
+      },
+      {
+        "at": "2026-07-22T05:00+00:00",
+        "domain": "middleeaststar.com"
+      },
+      {
+        "at": "2026-07-22T05:00+00:00",
+        "domain": "northkoreatimes.com"
+      },
+      {
+        "at": "2026-07-22T05:15+00:00",
+        "domain": "zimbabwestar.com"
+      },
+      {
+        "at": "2026-07-22T05:30+00:00",
+        "domain": "oklahomacitysun.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "com",
+      "tld_share": 0.9,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 40,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1351,
+    "domains_scanned": 656,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 0,
+      "technology": 0,
+      "health": 250,
+      "science": 250,
+      "business": 250,
+      "sports": 250,
+      "weather": 250
+    },
+    "beats_failed": 2,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-22"
+  }
+}

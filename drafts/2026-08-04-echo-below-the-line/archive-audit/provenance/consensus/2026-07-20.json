@@ -1,0 +1,244 @@
+{
+  "generated_at": "2026-07-20T09:04:04+00:00",
+  "date": "2026-07-20",
+  "echo_index": 0.209,
+  "soft_echo_index": 0.212,
+  "headline": {
+    "phrase": "carries out another round of airstrikes",
+    "sample_title": "US carries out another round of airstrikes on Iran after death of service member",
+    "domain_count": 62,
+    "mastheads": [
+      "bicesteradvertiser.net",
+      "bordertelegraph.com",
+      "borehamwoodtimes.co.uk",
+      "braintreeandwithamtimes.co.uk",
+      "brentwoodlive.co.uk",
+      "bromsgroveadvertiser.co.uk",
+      "burnhamandhighbridgeweeklynews.co.uk",
+      "burytimes.co.uk",
+      "chelmsfordweeklynews.co.uk",
+      "clactonandfrintongazette.co.uk",
+      "clydebankpost.co.uk",
+      "cravenherald.co.uk",
+      "denbighshirefreepress.co.uk",
+      "dudleynews.co.uk",
+      "dumbartonreporter.co.uk",
+      "eadt.co.uk",
+      "ealingtimes.co.uk",
+      "echo-news.co.uk",
+      "eppingforestguardian.co.uk",
+      "falmouthpacket.co.uk",
+      "gazetteandherald.co.uk",
+      "gazetteseries.co.uk",
+      "guardian-series.co.uk",
+      "halesowennews.co.uk",
+      "harrowtimes.co.uk",
+      "hexham-courant.co.uk",
+      "hillingdontimes.co.uk",
+      "impartialreporter.com",
+      "ipswichstar.co.uk",
+      "irvinetimes.com",
+      "kidderminstershuttle.co.uk",
+      "kilburntimes.co.uk",
+      "lancashiretelegraph.co.uk",
+      "leaderlive.co.uk",
+      "ledburyreporter.co.uk",
+      "london-now.co.uk",
+      "ludlowadvertiser.co.uk",
+      "malverngazette.co.uk",
+      "newsandstar.co.uk",
+      "northwalespioneer.co.uk"
+    ],
+    "article_count": 62,
+    "first_domain": "hillingdontimes.co.uk",
+    "first_seen": "2026-07-20T05:30+00:00",
+    "span_hours": 3.0,
+    "cascade": [
+      {
+        "at": "2026-07-20T05:30+00:00",
+        "domain": "hillingdontimes.co.uk"
+      },
+      {
+        "at": "2026-07-20T05:30+00:00",
+        "domain": "irvinetimes.com"
+      },
+      {
+        "at": "2026-07-20T05:30+00:00",
+        "domain": "lancashiretelegraph.co.uk"
+      },
+      {
+        "at": "2026-07-20T05:30+00:00",
+        "domain": "penarthtimes.co.uk"
+      },
+      {
+        "at": "2026-07-20T05:45+00:00",
+        "domain": "halesowennews.co.uk"
+      },
+      {
+        "at": "2026-07-20T05:45+00:00",
+        "domain": "wiltshiretimes.co.uk"
+      },
+      {
+        "at": "2026-07-20T06:00+00:00",
+        "domain": "bromsgroveadvertiser.co.uk"
+      },
+      {
+        "at": "2026-07-20T06:00+00:00",
+        "domain": "clactonandfrintongazette.co.uk"
+      },
+      {
+        "at": "2026-07-20T06:00+00:00",
+        "domain": "harrowtimes.co.uk"
+      },
+      {
+        "at": "2026-07-20T06:00+00:00",
+        "domain": "hexham-courant.co.uk"
+      },
+      {
+        "at": "2026-07-20T06:00+00:00",
+        "domain": "northwalespioneer.co.uk"
+      },
+      {
+        "at": "2026-07-20T06:00+00:00",
+        "domain": "tivysideadvertiser.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.9,
+      "distinct_tlds": 3
+    },
+    "soft_domain_count": 62,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "biggest jackpot game powerball to launch",
+    "sample_title": "World biggest jackpot game Powerball to launch in united kingdom this week",
+    "domain_count": 27,
+    "mastheads": [
+      "basingstokegazette.co.uk",
+      "brentwoodlive.co.uk",
+      "bromsgroveadvertiser.co.uk",
+      "bucksfreepress.co.uk",
+      "clactonandfrintongazette.co.uk",
+      "dumbartonreporter.co.uk",
+      "echo-news.co.uk",
+      "gazette-news.co.uk",
+      "guardian-series.co.uk",
+      "harrowtimes.co.uk",
+      "harwichandmanningtreestandard.co.uk",
+      "hexham-courant.co.uk",
+      "hillingdontimes.co.uk",
+      "impartialreporter.com",
+      "irvinetimes.com",
+      "lancashiretelegraph.co.uk",
+      "malverngazette.co.uk",
+      "newburytoday.co.uk",
+      "northwalespioneer.co.uk",
+      "nwemail.co.uk",
+      "salisburyjournal.co.uk",
+      "sloughobserver.co.uk",
+      "southwalesargus.co.uk",
+      "thetelegraphandargus.co.uk",
+      "timesandstar.co.uk",
+      "tivysideadvertiser.co.uk",
+      "wandsworthguardian.co.uk"
+    ],
+    "article_count": 27,
+    "first_domain": "bucksfreepress.co.uk",
+    "first_seen": "2026-07-20T05:15+00:00",
+    "span_hours": 1.8,
+    "cascade": [
+      {
+        "at": "2026-07-20T05:15+00:00",
+        "domain": "bucksfreepress.co.uk"
+      },
+      {
+        "at": "2026-07-20T05:15+00:00",
+        "domain": "nwemail.co.uk"
+      },
+      {
+        "at": "2026-07-20T05:15+00:00",
+        "domain": "salisburyjournal.co.uk"
+      },
+      {
+        "at": "2026-07-20T05:15+00:00",
+        "domain": "southwalesargus.co.uk"
+      },
+      {
+        "at": "2026-07-20T05:30+00:00",
+        "domain": "gazette-news.co.uk"
+      },
+      {
+        "at": "2026-07-20T05:30+00:00",
+        "domain": "hillingdontimes.co.uk"
+      },
+      {
+        "at": "2026-07-20T05:30+00:00",
+        "domain": "irvinetimes.com"
+      },
+      {
+        "at": "2026-07-20T05:30+00:00",
+        "domain": "lancashiretelegraph.co.uk"
+      },
+      {
+        "at": "2026-07-20T06:00+00:00",
+        "domain": "bromsgroveadvertiser.co.uk"
+      },
+      {
+        "at": "2026-07-20T06:00+00:00",
+        "domain": "clactonandfrintongazette.co.uk"
+      },
+      {
+        "at": "2026-07-20T06:00+00:00",
+        "domain": "harrowtimes.co.uk"
+      },
+      {
+        "at": "2026-07-20T06:00+00:00",
+        "domain": "hexham-courant.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.93,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 27,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1465,
+    "domains_scanned": 702,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 250,
+      "technology": 250,
+      "health": 250,
+      "science": 0,
+      "business": 250,
+      "sports": 250,
+      "weather": 250
+    },
+    "beats_failed": 1,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-20"
+  }
+}

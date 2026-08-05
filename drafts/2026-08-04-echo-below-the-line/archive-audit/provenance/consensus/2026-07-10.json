@@ -1,0 +1,249 @@
+{
+  "generated_at": "2026-07-10T09:41:03+00:00",
+  "date": "2026-07-10",
+  "echo_index": 0.275,
+  "soft_echo_index": 0.288,
+  "headline": {
+    "phrase": "stalwart ann widdecombe became unlikely dancefloor",
+    "sample_title": "In Pictures : Commons stalwart Ann Widdecombe became unlikely dancefloor queen",
+    "domain_count": 48,
+    "mastheads": [
+      "andoveradvertiser.co.uk",
+      "asianimage.co.uk",
+      "braintreeandwithamtimes.co.uk",
+      "bridgwatermercury.co.uk",
+      "chardandilminsternews.co.uk",
+      "chelmsfordweeklynews.co.uk",
+      "countypress.co.uk",
+      "cravenherald.co.uk",
+      "dudleynews.co.uk",
+      "eppingforestguardian.co.uk",
+      "eveshamjournal.co.uk",
+      "freepressseries.co.uk",
+      "gazetteandherald.co.uk",
+      "guardian-series.co.uk",
+      "halesowennews.co.uk",
+      "halsteadgazette.co.uk",
+      "hamhigh.co.uk",
+      "hampshirechronicle.co.uk",
+      "hexham-courant.co.uk",
+      "hillingdontimes.co.uk",
+      "keighleynews.co.uk",
+      "kilburntimes.co.uk",
+      "leaderlive.co.uk",
+      "leighjournal.co.uk",
+      "malverngazette.co.uk",
+      "milfordmercury.co.uk",
+      "newsandstar.co.uk",
+      "northwalespioneer.co.uk",
+      "oxfordmail.co.uk",
+      "penarthtimes.co.uk",
+      "rhyljournal.co.uk",
+      "salisburyjournal.co.uk",
+      "sloughobserver.co.uk",
+      "somersetcountygazette.co.uk",
+      "southwalesargus.co.uk",
+      "southwalesguardian.co.uk",
+      "stourbridgenews.co.uk",
+      "theargus.co.uk",
+      "theboltonnews.co.uk",
+      "thetelegraphandargus.co.uk"
+    ],
+    "article_count": 48,
+    "first_domain": "dudleynews.co.uk",
+    "first_seen": "2026-07-10T06:30+00:00",
+    "span_hours": 2.0,
+    "cascade": [
+      {
+        "at": "2026-07-10T06:30+00:00",
+        "domain": "dudleynews.co.uk"
+      },
+      {
+        "at": "2026-07-10T06:30+00:00",
+        "domain": "halesowennews.co.uk"
+      },
+      {
+        "at": "2026-07-10T06:30+00:00",
+        "domain": "hampshirechronicle.co.uk"
+      },
+      {
+        "at": "2026-07-10T06:30+00:00",
+        "domain": "sloughobserver.co.uk"
+      },
+      {
+        "at": "2026-07-10T06:30+00:00",
+        "domain": "wiltsglosstandard.co.uk"
+      },
+      {
+        "at": "2026-07-10T06:30+00:00",
+        "domain": "wiltshiretimes.co.uk"
+      },
+      {
+        "at": "2026-07-10T06:30+00:00",
+        "domain": "yourlocalguardian.co.uk"
+      },
+      {
+        "at": "2026-07-10T06:45+00:00",
+        "domain": "halsteadgazette.co.uk"
+      },
+      {
+        "at": "2026-07-10T06:45+00:00",
+        "domain": "thetelegraphandargus.co.uk"
+      },
+      {
+        "at": "2026-07-10T06:45+00:00",
+        "domain": "thewestmorlandgazette.co.uk"
+      },
+      {
+        "at": "2026-07-10T07:00+00:00",
+        "domain": "chelmsfordweeklynews.co.uk"
+      },
+      {
+        "at": "2026-07-10T07:00+00:00",
+        "domain": "eveshamjournal.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 48,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "and iran exchange intensifying fire across",
+    "sample_title": "U . S . and Iran exchange intensifying fire across Mideast , threatening ceasefire deal",
+    "domain_count": 32,
+    "mastheads": [
+      "asiaone.com",
+      "aspenpublicradio.org",
+      "dunyanews.tv",
+      "houstonpublicmedia.org",
+      "interlochenpublicradio.org",
+      "kacu.org",
+      "kalw.org",
+      "katu.com",
+      "kbia.org",
+      "kedm.org",
+      "klcc.org",
+      "kmxt.org",
+      "krvs.org",
+      "ksfr.org",
+      "ktep.org",
+      "kuaf.com",
+      "kvpr.org",
+      "kyuk.org",
+      "news-gazette.com",
+      "northcountrypublicradio.org",
+      "publicradiotulsa.org",
+      "radio.wpsu.org",
+      "wcbe.org",
+      "wfdd.org",
+      "wlrn.org",
+      "wmra.org",
+      "wnyc.org",
+      "wsbradio.com",
+      "wuky.org",
+      "wvtf.org",
+      "wxpr.org",
+      "wypr.org"
+    ],
+    "article_count": 32,
+    "first_domain": "klcc.org",
+    "first_seen": "2026-07-10T06:45+00:00",
+    "span_hours": 2.5,
+    "cascade": [
+      {
+        "at": "2026-07-10T06:45+00:00",
+        "domain": "klcc.org"
+      },
+      {
+        "at": "2026-07-10T07:00+00:00",
+        "domain": "asiaone.com"
+      },
+      {
+        "at": "2026-07-10T07:00+00:00",
+        "domain": "dunyanews.tv"
+      },
+      {
+        "at": "2026-07-10T07:00+00:00",
+        "domain": "houstonpublicmedia.org"
+      },
+      {
+        "at": "2026-07-10T07:00+00:00",
+        "domain": "kbia.org"
+      },
+      {
+        "at": "2026-07-10T07:00+00:00",
+        "domain": "ksfr.org"
+      },
+      {
+        "at": "2026-07-10T07:00+00:00",
+        "domain": "news-gazette.com"
+      },
+      {
+        "at": "2026-07-10T07:00+00:00",
+        "domain": "wnyc.org"
+      },
+      {
+        "at": "2026-07-10T07:00+00:00",
+        "domain": "wsbradio.com"
+      },
+      {
+        "at": "2026-07-10T07:00+00:00",
+        "domain": "wvtf.org"
+      },
+      {
+        "at": "2026-07-10T07:15+00:00",
+        "domain": "interlochenpublicradio.org"
+      },
+      {
+        "at": "2026-07-10T07:15+00:00",
+        "domain": "kacu.org"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "org",
+      "tld_share": 0.81,
+      "distinct_tlds": 3
+    },
+    "soft_domain_count": 32,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1239,
+    "domains_scanned": 568,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 250,
+      "technology": 0,
+      "health": 250,
+      "science": 250,
+      "business": 250,
+      "sports": 250,
+      "weather": 0
+    },
+    "beats_failed": 2,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-10"
+  }
+}

@@ -1,0 +1,243 @@
+{
+  "generated_at": "2026-07-24T08:36:10+00:00",
+  "date": "2026-07-24",
+  "echo_index": 0.287,
+  "soft_echo_index": 0.287,
+  "headline": {
+    "phrase": "heatwave and online shopping rebound delivers",
+    "sample_title": "Heatwave and online shopping rebound delivers boost to June retail spending",
+    "domain_count": 33,
+    "mastheads": [
+      "bordertelegraph.com",
+      "bournemouthecho.co.uk",
+      "bracknellnews.co.uk",
+      "bridportnews.co.uk",
+      "burnhamandhighbridgeweeklynews.co.uk",
+      "cotswoldjournal.co.uk",
+      "cravenherald.co.uk",
+      "denbighshirefreepress.co.uk",
+      "dissexpress.co.uk",
+      "eastlothiancourier.com",
+      "edp24.co.uk",
+      "gazette-news.co.uk",
+      "glasgowtimes.co.uk",
+      "harwichandmanningtreestandard.co.uk",
+      "lancashiretelegraph.co.uk",
+      "malverngazette.co.uk",
+      "messengernewspapers.co.uk",
+      "milfordmercury.co.uk",
+      "readingchronicle.co.uk",
+      "salisburyjournal.co.uk",
+      "somersetcountygazette.co.uk",
+      "standard.co.uk",
+      "stroudnewsandjournal.co.uk",
+      "surreycomet.co.uk",
+      "theargus.co.uk",
+      "theboltonnews.co.uk",
+      "thewestmorlandgazette.co.uk",
+      "thewestonmercury.co.uk",
+      "thisiswiltshire.co.uk",
+      "wandsworthguardian.co.uk",
+      "watfordobserver.co.uk",
+      "wharfedaleobserver.co.uk",
+      "wiltsglosstandard.co.uk"
+    ],
+    "article_count": 33,
+    "first_domain": "dissexpress.co.uk",
+    "first_seen": "2026-07-24T07:00+00:00",
+    "span_hours": 1.2,
+    "cascade": [
+      {
+        "at": "2026-07-24T07:00+00:00",
+        "domain": "dissexpress.co.uk"
+      },
+      {
+        "at": "2026-07-24T07:00+00:00",
+        "domain": "thewestmorlandgazette.co.uk"
+      },
+      {
+        "at": "2026-07-24T07:15+00:00",
+        "domain": "bordertelegraph.com"
+      },
+      {
+        "at": "2026-07-24T07:15+00:00",
+        "domain": "malverngazette.co.uk"
+      },
+      {
+        "at": "2026-07-24T07:15+00:00",
+        "domain": "messengernewspapers.co.uk"
+      },
+      {
+        "at": "2026-07-24T07:15+00:00",
+        "domain": "standard.co.uk"
+      },
+      {
+        "at": "2026-07-24T07:30+00:00",
+        "domain": "cotswoldjournal.co.uk"
+      },
+      {
+        "at": "2026-07-24T07:30+00:00",
+        "domain": "eastlothiancourier.com"
+      },
+      {
+        "at": "2026-07-24T07:30+00:00",
+        "domain": "glasgowtimes.co.uk"
+      },
+      {
+        "at": "2026-07-24T07:30+00:00",
+        "domain": "lancashiretelegraph.co.uk"
+      },
+      {
+        "at": "2026-07-24T07:30+00:00",
+        "domain": "salisburyjournal.co.uk"
+      },
+      {
+        "at": "2026-07-24T07:30+00:00",
+        "domain": "stroudnewsandjournal.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.94,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 33,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "other struggling rural and regional families",
+    "sample_title": "One mother fight for her son now helps other struggling rural and regional families",
+    "domain_count": 33,
+    "mastheads": [
+      "begadistrictnews.com.au",
+      "bluemountainsgazette.com.au",
+      "braidwoodtimes.com.au",
+      "bunburymail.com.au",
+      "camdencourier.com.au",
+      "canberratimes.com.au",
+      "crookwellgazette.com.au",
+      "dungogchronicle.com.au",
+      "easternriverinachronicle.com.au",
+      "gleninnesexaminer.com.au",
+      "greatlakesadvocate.com.au",
+      "irrigator.com.au",
+      "katherinetimes.com.au",
+      "lithgowmercury.com.au",
+      "macleayargus.com.au",
+      "manningrivertimes.com.au",
+      "merimbulanewsweekly.com.au",
+      "moreechampion.com.au",
+      "mudgeeguardian.com.au",
+      "muswellbrookchronicle.com.au",
+      "newcastleherald.com.au",
+      "northweststar.com.au",
+      "nvi.com.au",
+      "portnews.com.au",
+      "portstephensexaminer.com.au",
+      "redlandcitybulletin.com.au",
+      "singletonargus.com.au",
+      "southernhighlandnews.com.au",
+      "tenterfieldstar.com.au",
+      "thecourier.com.au",
+      "therural.com.au",
+      "ulladullatimes.com.au",
+      "yasstribune.com.au"
+    ],
+    "article_count": 33,
+    "first_domain": "thecourier.com.au",
+    "first_seen": "2026-07-24T04:45+00:00",
+    "span_hours": 3.2,
+    "cascade": [
+      {
+        "at": "2026-07-24T04:45+00:00",
+        "domain": "thecourier.com.au"
+      },
+      {
+        "at": "2026-07-24T05:00+00:00",
+        "domain": "greatlakesadvocate.com.au"
+      },
+      {
+        "at": "2026-07-24T05:00+00:00",
+        "domain": "lithgowmercury.com.au"
+      },
+      {
+        "at": "2026-07-24T05:00+00:00",
+        "domain": "moreechampion.com.au"
+      },
+      {
+        "at": "2026-07-24T05:00+00:00",
+        "domain": "muswellbrookchronicle.com.au"
+      },
+      {
+        "at": "2026-07-24T05:00+00:00",
+        "domain": "newcastleherald.com.au"
+      },
+      {
+        "at": "2026-07-24T05:15+00:00",
+        "domain": "bunburymail.com.au"
+      },
+      {
+        "at": "2026-07-24T05:15+00:00",
+        "domain": "camdencourier.com.au"
+      },
+      {
+        "at": "2026-07-24T05:15+00:00",
+        "domain": "canberratimes.com.au"
+      },
+      {
+        "at": "2026-07-24T05:15+00:00",
+        "domain": "irrigator.com.au"
+      },
+      {
+        "at": "2026-07-24T05:30+00:00",
+        "domain": "gleninnesexaminer.com.au"
+      },
+      {
+        "at": "2026-07-24T05:30+00:00",
+        "domain": "macleayargus.com.au"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "au",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 33,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 902,
+    "domains_scanned": 502,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 0,
+      "economy": 0,
+      "technology": 0,
+      "health": 250,
+      "science": 250,
+      "business": 0,
+      "sports": 250,
+      "weather": 250
+    },
+    "beats_failed": 4,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-24"
+  }
+}

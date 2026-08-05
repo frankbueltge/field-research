@@ -1,0 +1,236 @@
+{
+  "generated_at": "2026-07-26T08:32:38+00:00",
+  "date": "2026-07-26",
+  "echo_index": 0.246,
+  "soft_echo_index": 0.253,
+  "headline": {
+    "phrase": "billion eu fine talks lower threat",
+    "sample_title": "Google hit with $1 billion EU fine ; talks lower threat of more action",
+    "domain_count": 31,
+    "mastheads": [
+      "afghanistansun.com",
+      "arabherald.com",
+      "birminghamstar.com",
+      "bostonstar.com",
+      "cambodiantimes.com",
+      "cincinnatisun.com",
+      "clevelandstar.com",
+      "iraqsun.com",
+      "israelherald.com",
+      "jamaicantimes.com",
+      "japanherald.com",
+      "londonmercury.com",
+      "malaysiasun.com",
+      "mexicostar.com",
+      "middleeaststar.com",
+      "nashvilleherald.com",
+      "nigeriasun.com",
+      "orlandoecho.com",
+      "pakistantelegraph.com",
+      "parisguardian.com",
+      "phoenixherald.com",
+      "pittsburghstar.com",
+      "russiaherald.com",
+      "sanantoniopost.com",
+      "sandiegosun.com",
+      "sierraleonetimes.com",
+      "sydneysun.com",
+      "trinidadtimes.com",
+      "tucsonpost.com",
+      "vietnamtribune.com",
+      "zimbabwestar.com"
+    ],
+    "article_count": 31,
+    "first_domain": "cambodiantimes.com",
+    "first_seen": "2026-07-26T00:00+00:00",
+    "span_hours": 4.5,
+    "cascade": [
+      {
+        "at": "2026-07-26T00:00+00:00",
+        "domain": "cambodiantimes.com"
+      },
+      {
+        "at": "2026-07-26T00:00+00:00",
+        "domain": "clevelandstar.com"
+      },
+      {
+        "at": "2026-07-26T00:00+00:00",
+        "domain": "jamaicantimes.com"
+      },
+      {
+        "at": "2026-07-26T00:00+00:00",
+        "domain": "malaysiasun.com"
+      },
+      {
+        "at": "2026-07-26T00:00+00:00",
+        "domain": "sandiegosun.com"
+      },
+      {
+        "at": "2026-07-26T00:15+00:00",
+        "domain": "afghanistansun.com"
+      },
+      {
+        "at": "2026-07-26T00:15+00:00",
+        "domain": "birminghamstar.com"
+      },
+      {
+        "at": "2026-07-26T00:15+00:00",
+        "domain": "sydneysun.com"
+      },
+      {
+        "at": "2026-07-26T00:45+00:00",
+        "domain": "cincinnatisun.com"
+      },
+      {
+        "at": "2026-07-26T00:45+00:00",
+        "domain": "middleeaststar.com"
+      },
+      {
+        "at": "2026-07-26T00:45+00:00",
+        "domain": "phoenixherald.com"
+      },
+      {
+        "at": "2026-07-26T00:45+00:00",
+        "domain": "vietnamtribune.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "com",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 31,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "increase british salad produce amid drought",
+    "sample_title": "Sainsbury to increase British salad produce amid drought fears abroad",
+    "domain_count": 28,
+    "mastheads": [
+      "asianimage.co.uk",
+      "basingstokegazette.co.uk",
+      "borehamwoodtimes.co.uk",
+      "chelmsfordweeklynews.co.uk",
+      "cotswoldjournal.co.uk",
+      "countytimes.co.uk",
+      "denbighshirefreepress.co.uk",
+      "dorsetecho.co.uk",
+      "echo-news.co.uk",
+      "enfieldindependent.co.uk",
+      "fenlandcitizen.co.uk",
+      "gazette-news.co.uk",
+      "gazetteherald.co.uk",
+      "halsteadgazette.co.uk",
+      "hampshirechronicle.co.uk",
+      "hexham-courant.co.uk",
+      "hillingdontimes.co.uk",
+      "lbc.co.uk",
+      "ledburyreporter.co.uk",
+      "ludlowadvertiser.co.uk",
+      "malverngazette.co.uk",
+      "messengernewspapers.co.uk",
+      "stratford-herald.com",
+      "theargus.co.uk",
+      "thetottenhamindependent.co.uk",
+      "wandsworthguardian.co.uk",
+      "wharfedaleobserver.co.uk",
+      "wimbledonguardian.co.uk"
+    ],
+    "article_count": 28,
+    "first_domain": "chelmsfordweeklynews.co.uk",
+    "first_seen": "2026-07-26T03:00+00:00",
+    "span_hours": 4.0,
+    "cascade": [
+      {
+        "at": "2026-07-26T03:00+00:00",
+        "domain": "chelmsfordweeklynews.co.uk"
+      },
+      {
+        "at": "2026-07-26T03:00+00:00",
+        "domain": "fenlandcitizen.co.uk"
+      },
+      {
+        "at": "2026-07-26T03:00+00:00",
+        "domain": "hampshirechronicle.co.uk"
+      },
+      {
+        "at": "2026-07-26T03:00+00:00",
+        "domain": "lbc.co.uk"
+      },
+      {
+        "at": "2026-07-26T03:00+00:00",
+        "domain": "messengernewspapers.co.uk"
+      },
+      {
+        "at": "2026-07-26T03:00+00:00",
+        "domain": "thetottenhamindependent.co.uk"
+      },
+      {
+        "at": "2026-07-26T03:30+00:00",
+        "domain": "asianimage.co.uk"
+      },
+      {
+        "at": "2026-07-26T03:30+00:00",
+        "domain": "cotswoldjournal.co.uk"
+      },
+      {
+        "at": "2026-07-26T03:30+00:00",
+        "domain": "echo-news.co.uk"
+      },
+      {
+        "at": "2026-07-26T03:30+00:00",
+        "domain": "enfieldindependent.co.uk"
+      },
+      {
+        "at": "2026-07-26T03:30+00:00",
+        "domain": "hexham-courant.co.uk"
+      },
+      {
+        "at": "2026-07-26T03:30+00:00",
+        "domain": "stratford-herald.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.96,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 28,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 900,
+    "domains_scanned": 473,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 0,
+      "economy": 0,
+      "technology": 250,
+      "health": 250,
+      "science": 0,
+      "business": 0,
+      "sports": 250,
+      "weather": 250
+    },
+    "beats_failed": 4,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-26"
+  }
+}

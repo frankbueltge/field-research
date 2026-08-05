@@ -1,0 +1,250 @@
+{
+  "generated_at": "2026-07-13T09:32:34+00:00",
+  "date": "2026-07-13",
+  "echo_index": 0.22,
+  "soft_echo_index": 0.222,
+  "headline": {
+    "phrase": "pagegroup sees tough but stable united",
+    "sample_title": "PageGroup sees  tough but stable  united kingdom jobs market",
+    "domain_count": 41,
+    "mastheads": [
+      "andoveradvertiser.co.uk",
+      "aol.co.uk",
+      "borehamwoodtimes.co.uk",
+      "bournemouthecho.co.uk",
+      "bridportnews.co.uk",
+      "bromsgroveadvertiser.co.uk",
+      "bucksfreepress.co.uk",
+      "burytimes.co.uk",
+      "chesterstandard.co.uk",
+      "cravenherald.co.uk",
+      "denbighshirefreepress.co.uk",
+      "dudleynews.co.uk",
+      "dumbartonreporter.co.uk",
+      "fenlandcitizen.co.uk",
+      "freepressseries.co.uk",
+      "greenocktelegraph.co.uk",
+      "guardian-series.co.uk",
+      "harrowtimes.co.uk",
+      "hexham-courant.co.uk",
+      "hillingdontimes.co.uk",
+      "irvinetimes.com",
+      "kilburntimes.co.uk",
+      "lbc.co.uk",
+      "leaderlive.co.uk",
+      "ledburyreporter.co.uk",
+      "london-now.co.uk",
+      "ludlowadvertiser.co.uk",
+      "maldonandburnhamstandard.co.uk",
+      "newburytoday.co.uk",
+      "newsshopper.co.uk",
+      "northwichguardian.co.uk",
+      "nwemail.co.uk",
+      "penarthtimes.co.uk",
+      "salisburyjournal.co.uk",
+      "somersetcountygazette.co.uk",
+      "stourbridgenews.co.uk",
+      "swindonadvertiser.co.uk",
+      "theargus.co.uk",
+      "timesandstar.co.uk",
+      "warringtonguardian.co.uk"
+    ],
+    "article_count": 41,
+    "first_domain": "andoveradvertiser.co.uk",
+    "first_seen": "2026-07-13T08:00+00:00",
+    "span_hours": 0.8,
+    "cascade": [
+      {
+        "at": "2026-07-13T08:00+00:00",
+        "domain": "andoveradvertiser.co.uk"
+      },
+      {
+        "at": "2026-07-13T08:00+00:00",
+        "domain": "guardian-series.co.uk"
+      },
+      {
+        "at": "2026-07-13T08:00+00:00",
+        "domain": "hexham-courant.co.uk"
+      },
+      {
+        "at": "2026-07-13T08:00+00:00",
+        "domain": "kilburntimes.co.uk"
+      },
+      {
+        "at": "2026-07-13T08:00+00:00",
+        "domain": "salisburyjournal.co.uk"
+      },
+      {
+        "at": "2026-07-13T08:15+00:00",
+        "domain": "aol.co.uk"
+      },
+      {
+        "at": "2026-07-13T08:15+00:00",
+        "domain": "bournemouthecho.co.uk"
+      },
+      {
+        "at": "2026-07-13T08:15+00:00",
+        "domain": "bridportnews.co.uk"
+      },
+      {
+        "at": "2026-07-13T08:15+00:00",
+        "domain": "bromsgroveadvertiser.co.uk"
+      },
+      {
+        "at": "2026-07-13T08:15+00:00",
+        "domain": "fenlandcitizen.co.uk"
+      },
+      {
+        "at": "2026-07-13T08:15+00:00",
+        "domain": "freepressseries.co.uk"
+      },
+      {
+        "at": "2026-07-13T08:15+00:00",
+        "domain": "harrowtimes.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.97,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 41,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "his hospitalization breaking weeks of silence",
+    "sample_title": "McConnell says a fall led to his hospitalization , breaking weeks of silence",
+    "domain_count": 33,
+    "mastheads": [
+      "aspenpublicradio.org",
+      "delawarepublic.org",
+      "houstonpublicmedia.org",
+      "iowapublicradio.org",
+      "kazu.org",
+      "kedm.org",
+      "kios.org",
+      "knau.org",
+      "knpr.org",
+      "krvs.org",
+      "krwg.org",
+      "ksut.org",
+      "kunr.org",
+      "kvpr.org",
+      "kwit.org",
+      "mynspr.org",
+      "northcountrypublicradio.org",
+      "turnto23.com",
+      "wbrz.com",
+      "wclk.com",
+      "wcsufm.org",
+      "wfdd.org",
+      "wkms.org",
+      "wlrn.org",
+      "wmra.org",
+      "wrvo.org",
+      "wsiu.org",
+      "wuft.org",
+      "wutc.org",
+      "wvtf.org",
+      "wxxinews.org",
+      "wyomingpublicmedia.org",
+      "wypr.org"
+    ],
+    "article_count": 33,
+    "first_domain": "ksut.org",
+    "first_seen": "2026-07-13T06:15+00:00",
+    "span_hours": 2.5,
+    "cascade": [
+      {
+        "at": "2026-07-13T06:15+00:00",
+        "domain": "ksut.org"
+      },
+      {
+        "at": "2026-07-13T07:00+00:00",
+        "domain": "houstonpublicmedia.org"
+      },
+      {
+        "at": "2026-07-13T07:00+00:00",
+        "domain": "kios.org"
+      },
+      {
+        "at": "2026-07-13T07:00+00:00",
+        "domain": "wfdd.org"
+      },
+      {
+        "at": "2026-07-13T07:00+00:00",
+        "domain": "wutc.org"
+      },
+      {
+        "at": "2026-07-13T07:00+00:00",
+        "domain": "wvtf.org"
+      },
+      {
+        "at": "2026-07-13T07:15+00:00",
+        "domain": "knau.org"
+      },
+      {
+        "at": "2026-07-13T07:15+00:00",
+        "domain": "wclk.com"
+      },
+      {
+        "at": "2026-07-13T07:45+00:00",
+        "domain": "delawarepublic.org"
+      },
+      {
+        "at": "2026-07-13T07:45+00:00",
+        "domain": "mynspr.org"
+      },
+      {
+        "at": "2026-07-13T07:45+00:00",
+        "domain": "wypr.org"
+      },
+      {
+        "at": "2026-07-13T08:00+00:00",
+        "domain": "kedm.org"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "org",
+      "tld_share": 0.91,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 33,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1643,
+    "domains_scanned": 671,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 250,
+      "technology": 250,
+      "health": 250,
+      "science": 250,
+      "business": 250,
+      "sports": 250,
+      "weather": 250
+    },
+    "beats_failed": 0,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-13"
+  }
+}

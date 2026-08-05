@@ -1,0 +1,256 @@
+{
+  "generated_at": "2026-07-17T08:14:42+00:00",
+  "date": "2026-07-17",
+  "echo_index": 0.24,
+  "soft_echo_index": 0.242,
+  "headline": {
+    "phrase": "cameron scerri bega man cancer fight",
+    "sample_title": "Cameron Scerri : Bega man cancer fight fuelled by optimism | Harden Murrumburrah Express",
+    "domain_count": 44,
+    "mastheads": [
+      "armidaleexpress.com.au",
+      "bendigoadvertiser.com.au",
+      "bordermail.com.au",
+      "braidwoodtimes.com.au",
+      "bunburymail.com.au",
+      "canberratimes.com.au",
+      "cootamundraherald.com.au",
+      "crookwellgazette.com.au",
+      "dailyadvertiser.com.au",
+      "dailyliberal.com.au",
+      "edenmagnet.com.au",
+      "examiner.com.au",
+      "gleninnesexaminer.com.au",
+      "gloucesteradvocate.com.au",
+      "goulburnpost.com.au",
+      "greatlakesadvocate.com.au",
+      "hardenexpress.com.au",
+      "hepburnadvocate.com.au",
+      "illawarramercury.com.au",
+      "inverelltimes.com.au",
+      "irrigator.com.au",
+      "juneesoutherncross.com.au",
+      "lithgowmercury.com.au",
+      "macleayargus.com.au",
+      "mandurahmail.com.au",
+      "manningrivertimes.com.au",
+      "naroomanewsonline.com.au",
+      "newcastleherald.com.au",
+      "northerndailyleader.com.au",
+      "nvi.com.au",
+      "nynganobserver.com.au",
+      "oberonreview.com.au",
+      "portstephensexaminer.com.au",
+      "queanbeyanage.com.au",
+      "redlandcitybulletin.com.au",
+      "sconeadvocate.com.au",
+      "singletonargus.com.au",
+      "southcoastregister.com.au",
+      "southernhighlandnews.com.au",
+      "standard.net.au"
+    ],
+    "article_count": 44,
+    "first_domain": "bunburymail.com.au",
+    "first_seen": "2026-07-17T04:30+00:00",
+    "span_hours": 3.2,
+    "cascade": [
+      {
+        "at": "2026-07-17T04:30+00:00",
+        "domain": "bunburymail.com.au"
+      },
+      {
+        "at": "2026-07-17T04:30+00:00",
+        "domain": "northerndailyleader.com.au"
+      },
+      {
+        "at": "2026-07-17T04:30+00:00",
+        "domain": "wellingtontimes.com.au"
+      },
+      {
+        "at": "2026-07-17T05:00+00:00",
+        "domain": "gleninnesexaminer.com.au"
+      },
+      {
+        "at": "2026-07-17T05:00+00:00",
+        "domain": "illawarramercury.com.au"
+      },
+      {
+        "at": "2026-07-17T05:00+00:00",
+        "domain": "nvi.com.au"
+      },
+      {
+        "at": "2026-07-17T05:00+00:00",
+        "domain": "redlandcitybulletin.com.au"
+      },
+      {
+        "at": "2026-07-17T05:00+00:00",
+        "domain": "westernadvocate.com.au"
+      },
+      {
+        "at": "2026-07-17T05:15+00:00",
+        "domain": "cootamundraherald.com.au"
+      },
+      {
+        "at": "2026-07-17T05:15+00:00",
+        "domain": "mandurahmail.com.au"
+      },
+      {
+        "at": "2026-07-17T05:15+00:00",
+        "domain": "manningrivertimes.com.au"
+      },
+      {
+        "at": "2026-07-17T05:15+00:00",
+        "domain": "oberonreview.com.au"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "au",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 44,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "strongly dissatisfied following decision to nationalise",
+    "sample_title": "China  strongly dissatisfied  following decision to nationalise British Steel",
+    "domain_count": 39,
+    "mastheads": [
+      "andoveradvertiser.co.uk",
+      "asianimage.co.uk",
+      "basingstokegazette.co.uk",
+      "braintreeandwithamtimes.co.uk",
+      "brentwoodlive.co.uk",
+      "bridportnews.co.uk",
+      "bromsgroveadvertiser.co.uk",
+      "chesterstandard.co.uk",
+      "clactonandfrintongazette.co.uk",
+      "darlingtonandstocktontimes.co.uk",
+      "dudleynews.co.uk",
+      "dumbartonreporter.co.uk",
+      "echo-news.co.uk",
+      "enfieldindependent.co.uk",
+      "freepressseries.co.uk",
+      "gazette-news.co.uk",
+      "gazetteherald.co.uk",
+      "guardian-series.co.uk",
+      "harrowtimes.co.uk",
+      "heraldseries.co.uk",
+      "hillingdontimes.co.uk",
+      "impartialreporter.com",
+      "irvinetimes.com",
+      "kentonline.co.uk",
+      "lbc.co.uk",
+      "london-now.co.uk",
+      "maldonandburnhamstandard.co.uk",
+      "milfordmercury.co.uk",
+      "northwalespioneer.co.uk",
+      "sthelensstar.co.uk",
+      "theargus.co.uk",
+      "thenorthernecho.co.uk",
+      "thetottenhamindependent.co.uk",
+      "thewestmorlandgazette.co.uk",
+      "tivysideadvertiser.co.uk",
+      "wandsworthguardian.co.uk",
+      "watfordobserver.co.uk",
+      "whtimes.co.uk",
+      "wiltshiretimes.co.uk"
+    ],
+    "article_count": 39,
+    "first_domain": "clactonandfrintongazette.co.uk",
+    "first_seen": "2026-07-17T06:00+00:00",
+    "span_hours": 1.5,
+    "cascade": [
+      {
+        "at": "2026-07-17T06:00+00:00",
+        "domain": "clactonandfrintongazette.co.uk"
+      },
+      {
+        "at": "2026-07-17T06:00+00:00",
+        "domain": "darlingtonandstocktontimes.co.uk"
+      },
+      {
+        "at": "2026-07-17T06:00+00:00",
+        "domain": "thewestmorlandgazette.co.uk"
+      },
+      {
+        "at": "2026-07-17T06:15+00:00",
+        "domain": "basingstokegazette.co.uk"
+      },
+      {
+        "at": "2026-07-17T06:15+00:00",
+        "domain": "impartialreporter.com"
+      },
+      {
+        "at": "2026-07-17T06:15+00:00",
+        "domain": "milfordmercury.co.uk"
+      },
+      {
+        "at": "2026-07-17T06:15+00:00",
+        "domain": "watfordobserver.co.uk"
+      },
+      {
+        "at": "2026-07-17T06:30+00:00",
+        "domain": "brentwoodlive.co.uk"
+      },
+      {
+        "at": "2026-07-17T06:30+00:00",
+        "domain": "bridportnews.co.uk"
+      },
+      {
+        "at": "2026-07-17T06:30+00:00",
+        "domain": "bromsgroveadvertiser.co.uk"
+      },
+      {
+        "at": "2026-07-17T06:30+00:00",
+        "domain": "freepressseries.co.uk"
+      },
+      {
+        "at": "2026-07-17T06:30+00:00",
+        "domain": "gazette-news.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.95,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 39,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1268,
+    "domains_scanned": 627,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 0,
+      "economy": 250,
+      "technology": 0,
+      "health": 250,
+      "science": 250,
+      "business": 250,
+      "sports": 250,
+      "weather": 250
+    },
+    "beats_failed": 2,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-17"
+  }
+}

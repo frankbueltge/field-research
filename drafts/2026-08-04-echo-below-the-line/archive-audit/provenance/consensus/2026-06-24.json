@@ -1,0 +1,190 @@
+{
+  "generated_at": "2026-06-24T09:34:37+00:00",
+  "date": "2026-06-24",
+  "echo_index": 0.204,
+  "soft_echo_index": 0.206,
+  "headline": {
+    "phrase": "olympians push for climate change solutions",
+    "sample_title": "In visit to Capitol , Jessie Diggins and other Olympians push for climate change solutions",
+    "domain_count": 11,
+    "mastheads": [
+      "gazettextra.com",
+      "ksat.com",
+      "kxl.com",
+      "news-gazette.com",
+      "postregister.com",
+      "sitkasentinel.com",
+      "somdnews.com",
+      "wdbo.com",
+      "winnipegfreepress.com",
+      "wokv.com",
+      "wsls.com"
+    ],
+    "article_count": 11,
+    "first_domain": "gazettextra.com",
+    "first_seen": "2026-06-24T05:00+00:00",
+    "span_hours": 3.2,
+    "cascade": [
+      {
+        "at": "2026-06-24T05:00+00:00",
+        "domain": "gazettextra.com"
+      },
+      {
+        "at": "2026-06-24T05:15+00:00",
+        "domain": "winnipegfreepress.com"
+      },
+      {
+        "at": "2026-06-24T06:15+00:00",
+        "domain": "ksat.com"
+      },
+      {
+        "at": "2026-06-24T06:30+00:00",
+        "domain": "news-gazette.com"
+      },
+      {
+        "at": "2026-06-24T07:15+00:00",
+        "domain": "kxl.com"
+      },
+      {
+        "at": "2026-06-24T07:15+00:00",
+        "domain": "postregister.com"
+      },
+      {
+        "at": "2026-06-24T07:30+00:00",
+        "domain": "sitkasentinel.com"
+      },
+      {
+        "at": "2026-06-24T07:30+00:00",
+        "domain": "wokv.com"
+      },
+      {
+        "at": "2026-06-24T07:45+00:00",
+        "domain": "somdnews.com"
+      },
+      {
+        "at": "2026-06-24T08:15+00:00",
+        "domain": "wdbo.com"
+      },
+      {
+        "at": "2026-06-24T08:15+00:00",
+        "domain": "wsls.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "com",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 11,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "rapidly closing gap with cheaper models",
+    "sample_title": "US remains global leader in AI , but China rapidly closing gap with cheaper models : JP Morgan",
+    "domain_count": 11,
+    "mastheads": [
+      "afghanistannews.net",
+      "arabherald.com",
+      "birminghamstar.com",
+      "greekherald.com",
+      "londonmercury.com",
+      "mainemirror.com",
+      "middleeaststar.com",
+      "newyorkstatesman.com",
+      "oklahomacitysun.com",
+      "russiaherald.com",
+      "sierraleonetimes.com"
+    ],
+    "article_count": 11,
+    "first_domain": "birminghamstar.com",
+    "first_seen": "2026-06-24T07:30+00:00",
+    "span_hours": 1.5,
+    "cascade": [
+      {
+        "at": "2026-06-24T07:30+00:00",
+        "domain": "birminghamstar.com"
+      },
+      {
+        "at": "2026-06-24T07:30+00:00",
+        "domain": "mainemirror.com"
+      },
+      {
+        "at": "2026-06-24T07:45+00:00",
+        "domain": "greekherald.com"
+      },
+      {
+        "at": "2026-06-24T08:15+00:00",
+        "domain": "newyorkstatesman.com"
+      },
+      {
+        "at": "2026-06-24T08:15+00:00",
+        "domain": "russiaherald.com"
+      },
+      {
+        "at": "2026-06-24T08:45+00:00",
+        "domain": "middleeaststar.com"
+      },
+      {
+        "at": "2026-06-24T08:45+00:00",
+        "domain": "sierraleonetimes.com"
+      },
+      {
+        "at": "2026-06-24T09:00+00:00",
+        "domain": "afghanistannews.net"
+      },
+      {
+        "at": "2026-06-24T09:00+00:00",
+        "domain": "arabherald.com"
+      },
+      {
+        "at": "2026-06-24T09:00+00:00",
+        "domain": "londonmercury.com"
+      },
+      {
+        "at": "2026-06-24T09:00+00:00",
+        "domain": "oklahomacitysun.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "com",
+      "tld_share": 0.91,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 11,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1316,
+    "domains_scanned": 680,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 0,
+      "technology": 250,
+      "health": 0,
+      "science": 250,
+      "business": 250,
+      "sports": 250,
+      "weather": 250
+    },
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-06-24"
+  }
+}

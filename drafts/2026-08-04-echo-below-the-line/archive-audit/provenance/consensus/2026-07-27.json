@@ -1,0 +1,223 @@
+{
+  "generated_at": "2026-07-27T09:58:32+00:00",
+  "date": "2026-07-27",
+  "echo_index": 0.202,
+  "soft_echo_index": 0.207,
+  "headline": {
+    "phrase": "money train fugitive developer liberal links",
+    "sample_title": "  Money train : fugitive developer Liberal links boast",
+    "domain_count": 23,
+    "mastheads": [
+      "armidaleexpress.com.au",
+      "bordermail.com.au",
+      "braidwoodtimes.com.au",
+      "bunburymail.com.au",
+      "cessnockadvertiser.com.au",
+      "crookwellgazette.com.au",
+      "dailyliberal.com.au",
+      "gleninnesexaminer.com.au",
+      "inverelltimes.com.au",
+      "juneesoutherncross.com.au",
+      "katherinetimes.com.au",
+      "macleayargus.com.au",
+      "manningrivertimes.com.au",
+      "merimbulanewsweekly.com.au",
+      "moreechampion.com.au",
+      "mudgeeguardian.com.au",
+      "narrominenewsonline.com.au",
+      "northweststar.com.au",
+      "portnews.com.au",
+      "portstephensexaminer.com.au",
+      "redlandcitybulletin.com.au",
+      "singletonargus.com.au",
+      "wellingtontimes.com.au"
+    ],
+    "article_count": 23,
+    "first_domain": "armidaleexpress.com.au",
+    "first_seen": "2026-07-27T05:00+00:00",
+    "span_hours": 3.2,
+    "cascade": [
+      {
+        "at": "2026-07-27T05:00+00:00",
+        "domain": "armidaleexpress.com.au"
+      },
+      {
+        "at": "2026-07-27T05:00+00:00",
+        "domain": "gleninnesexaminer.com.au"
+      },
+      {
+        "at": "2026-07-27T05:00+00:00",
+        "domain": "inverelltimes.com.au"
+      },
+      {
+        "at": "2026-07-27T05:00+00:00",
+        "domain": "juneesoutherncross.com.au"
+      },
+      {
+        "at": "2026-07-27T05:00+00:00",
+        "domain": "manningrivertimes.com.au"
+      },
+      {
+        "at": "2026-07-27T05:15+00:00",
+        "domain": "moreechampion.com.au"
+      },
+      {
+        "at": "2026-07-27T05:45+00:00",
+        "domain": "portnews.com.au"
+      },
+      {
+        "at": "2026-07-27T06:00+00:00",
+        "domain": "dailyliberal.com.au"
+      },
+      {
+        "at": "2026-07-27T06:15+00:00",
+        "domain": "braidwoodtimes.com.au"
+      },
+      {
+        "at": "2026-07-27T06:15+00:00",
+        "domain": "mudgeeguardian.com.au"
+      },
+      {
+        "at": "2026-07-27T06:15+00:00",
+        "domain": "northweststar.com.au"
+      },
+      {
+        "at": "2026-07-27T06:15+00:00",
+        "domain": "wellingtontimes.com.au"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "au",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 23,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "western canada hit by new wildfires",
+    "sample_title": "Western Canada hit by new wildfires as crisis worsens",
+    "domain_count": 23,
+    "mastheads": [
+      "albuquerqueexpress.com",
+      "argentinastar.com",
+      "asiabulletin.com",
+      "birminghamstar.com",
+      "brazilsun.com",
+      "cincinnatisun.com",
+      "greekherald.com",
+      "heraldglobe.com",
+      "hongkongherald.com",
+      "irishsun.com",
+      "londonmercury.com",
+      "mainemirror.com",
+      "massachusettssun.com",
+      "memphissun.com",
+      "neworleanssun.com",
+      "ohiostandard.com",
+      "orlandoecho.com",
+      "saltlakecitysun.com",
+      "sanantoniopost.com",
+      "taiwansun.com",
+      "tennesseedaily.com",
+      "tucsonpost.com",
+      "utahindependent.com"
+    ],
+    "article_count": 23,
+    "first_domain": "londonmercury.com",
+    "first_seen": "2026-07-27T05:30+00:00",
+    "span_hours": 1.8,
+    "cascade": [
+      {
+        "at": "2026-07-27T05:30+00:00",
+        "domain": "londonmercury.com"
+      },
+      {
+        "at": "2026-07-27T05:30+00:00",
+        "domain": "utahindependent.com"
+      },
+      {
+        "at": "2026-07-27T05:45+00:00",
+        "domain": "birminghamstar.com"
+      },
+      {
+        "at": "2026-07-27T05:45+00:00",
+        "domain": "orlandoecho.com"
+      },
+      {
+        "at": "2026-07-27T06:00+00:00",
+        "domain": "tennesseedaily.com"
+      },
+      {
+        "at": "2026-07-27T06:15+00:00",
+        "domain": "cincinnatisun.com"
+      },
+      {
+        "at": "2026-07-27T06:15+00:00",
+        "domain": "heraldglobe.com"
+      },
+      {
+        "at": "2026-07-27T06:15+00:00",
+        "domain": "memphissun.com"
+      },
+      {
+        "at": "2026-07-27T06:15+00:00",
+        "domain": "neworleanssun.com"
+      },
+      {
+        "at": "2026-07-27T06:45+00:00",
+        "domain": "greekherald.com"
+      },
+      {
+        "at": "2026-07-27T06:45+00:00",
+        "domain": "massachusettssun.com"
+      },
+      {
+        "at": "2026-07-27T07:00+00:00",
+        "domain": "albuquerqueexpress.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "com",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 23,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1298,
+    "domains_scanned": 605,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 0,
+      "technology": 250,
+      "health": 250,
+      "science": 250,
+      "business": 0,
+      "sports": 250,
+      "weather": 250
+    },
+    "beats_failed": 2,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-27"
+  }
+}

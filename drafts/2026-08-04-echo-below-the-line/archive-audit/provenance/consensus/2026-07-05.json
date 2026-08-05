@@ -1,0 +1,225 @@
+{
+  "generated_at": "2026-07-05T08:58:57+00:00",
+  "date": "2026-07-05",
+  "echo_index": 0.192,
+  "soft_echo_index": 0.2,
+  "headline": {
+    "phrase": "deadly finalists reflect the very best",
+    "sample_title": "Deadly finalists reflect the very best of community",
+    "domain_count": 24,
+    "mastheads": [
+      "batemansbaypost.com.au",
+      "braidwoodtimes.com.au",
+      "dailyliberal.com.au",
+      "dungogchronicle.com.au",
+      "hardenexpress.com.au",
+      "illawarramercury.com.au",
+      "katherinetimes.com.au",
+      "maitlandmercury.com.au",
+      "merimbulanewsweekly.com.au",
+      "moreechampion.com.au",
+      "mudgeeguardian.com.au",
+      "newcastleherald.com.au",
+      "northerndailyleader.com.au",
+      "northweststar.com.au",
+      "nynganobserver.com.au",
+      "oberonreview.com.au",
+      "queanbeyanage.com.au",
+      "redlandcitybulletin.com.au",
+      "southcoastregister.com.au",
+      "standard.net.au",
+      "tenterfieldstar.com.au",
+      "theadvocate.com.au",
+      "wellingtontimes.com.au",
+      "yasstribune.com.au"
+    ],
+    "article_count": 24,
+    "first_domain": "theadvocate.com.au",
+    "first_seen": "2026-07-05T06:00+00:00",
+    "span_hours": 2.5,
+    "cascade": [
+      {
+        "at": "2026-07-05T06:00+00:00",
+        "domain": "theadvocate.com.au"
+      },
+      {
+        "at": "2026-07-05T06:30+00:00",
+        "domain": "batemansbaypost.com.au"
+      },
+      {
+        "at": "2026-07-05T06:30+00:00",
+        "domain": "dungogchronicle.com.au"
+      },
+      {
+        "at": "2026-07-05T06:30+00:00",
+        "domain": "wellingtontimes.com.au"
+      },
+      {
+        "at": "2026-07-05T07:00+00:00",
+        "domain": "dailyliberal.com.au"
+      },
+      {
+        "at": "2026-07-05T07:00+00:00",
+        "domain": "moreechampion.com.au"
+      },
+      {
+        "at": "2026-07-05T07:00+00:00",
+        "domain": "northerndailyleader.com.au"
+      },
+      {
+        "at": "2026-07-05T07:00+00:00",
+        "domain": "southcoastregister.com.au"
+      },
+      {
+        "at": "2026-07-05T07:00+00:00",
+        "domain": "standard.net.au"
+      },
+      {
+        "at": "2026-07-05T07:30+00:00",
+        "domain": "braidwoodtimes.com.au"
+      },
+      {
+        "at": "2026-07-05T07:30+00:00",
+        "domain": "katherinetimes.com.au"
+      },
+      {
+        "at": "2026-07-05T07:30+00:00",
+        "domain": "maitlandmercury.com.au"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "au",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 24,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "justin coulson tackle screen wars with",
+    "sample_title": "Dr Justin Coulson : Tackle screen wars with a 6 - pillar plan | Harden Murrumburrah Express",
+    "domain_count": 24,
+    "mastheads": [
+      "batemansbaypost.com.au",
+      "braidwoodtimes.com.au",
+      "bunburymail.com.au",
+      "dailyadvertiser.com.au",
+      "dailyliberal.com.au",
+      "dungogchronicle.com.au",
+      "examiner.com.au",
+      "goulburnpost.com.au",
+      "hardenexpress.com.au",
+      "illawarramercury.com.au",
+      "juneesoutherncross.com.au",
+      "katherinetimes.com.au",
+      "maitlandmercury.com.au",
+      "merimbulanewsweekly.com.au",
+      "moreechampion.com.au",
+      "newcastleherald.com.au",
+      "northerndailyleader.com.au",
+      "northweststar.com.au",
+      "nynganobserver.com.au",
+      "queanbeyanage.com.au",
+      "redlandcitybulletin.com.au",
+      "southernhighlandnews.com.au",
+      "standard.net.au",
+      "yasstribune.com.au"
+    ],
+    "article_count": 24,
+    "first_domain": "batemansbaypost.com.au",
+    "first_seen": "2026-07-05T06:30+00:00",
+    "span_hours": 1.8,
+    "cascade": [
+      {
+        "at": "2026-07-05T06:30+00:00",
+        "domain": "batemansbaypost.com.au"
+      },
+      {
+        "at": "2026-07-05T06:30+00:00",
+        "domain": "dungogchronicle.com.au"
+      },
+      {
+        "at": "2026-07-05T06:30+00:00",
+        "domain": "examiner.com.au"
+      },
+      {
+        "at": "2026-07-05T06:30+00:00",
+        "domain": "goulburnpost.com.au"
+      },
+      {
+        "at": "2026-07-05T07:00+00:00",
+        "domain": "dailyliberal.com.au"
+      },
+      {
+        "at": "2026-07-05T07:00+00:00",
+        "domain": "moreechampion.com.au"
+      },
+      {
+        "at": "2026-07-05T07:00+00:00",
+        "domain": "northerndailyleader.com.au"
+      },
+      {
+        "at": "2026-07-05T07:00+00:00",
+        "domain": "standard.net.au"
+      },
+      {
+        "at": "2026-07-05T07:15+00:00",
+        "domain": "juneesoutherncross.com.au"
+      },
+      {
+        "at": "2026-07-05T07:30+00:00",
+        "domain": "braidwoodtimes.com.au"
+      },
+      {
+        "at": "2026-07-05T07:30+00:00",
+        "domain": "bunburymail.com.au"
+      },
+      {
+        "at": "2026-07-05T07:30+00:00",
+        "domain": "katherinetimes.com.au"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "au",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 24,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1016,
+    "domains_scanned": 486,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 250,
+      "technology": 0,
+      "health": 250,
+      "science": 214,
+      "business": 250,
+      "sports": 0,
+      "weather": 0
+    },
+    "beats_failed": 3,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-05"
+  }
+}

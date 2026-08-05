@@ -1,0 +1,227 @@
+{
+  "generated_at": "2026-07-18T07:55:26+00:00",
+  "date": "2026-07-18",
+  "echo_index": 0.19,
+  "soft_echo_index": 0.193,
+  "headline": {
+    "phrase": "boats with refugees sink off myanmar",
+    "sample_title": "Over 500 feared dead after two boats with refugees sink off Myanmar",
+    "domain_count": 31,
+    "mastheads": [
+      "africaleader.com",
+      "albuquerqueexpress.com",
+      "arabherald.com",
+      "asiabulletin.com",
+      "bangladeshsun.com",
+      "bostonstar.com",
+      "britainnews.net",
+      "bruneinews.net",
+      "caribbeanherald.com",
+      "clevelandstar.com",
+      "coloradostar.com",
+      "dallassun.com",
+      "europesun.com",
+      "floridastatesman.com",
+      "haitisun.com",
+      "hawaiitelegraph.com",
+      "hongkongherald.com",
+      "irishsun.com",
+      "israelherald.com",
+      "laosnews.net",
+      "massachusettssun.com",
+      "nashvilleherald.com",
+      "newyorkstatesman.com",
+      "parisguardian.com",
+      "phoenixherald.com",
+      "russiaherald.com",
+      "saltlakecitysun.com",
+      "sanantoniopost.com",
+      "sierraleonetimes.com",
+      "singaporestar.com",
+      "tennesseedaily.com"
+    ],
+    "article_count": 31,
+    "first_domain": "asiabulletin.com",
+    "first_seen": "2026-07-18T04:30+00:00",
+    "span_hours": 2.8,
+    "cascade": [
+      {
+        "at": "2026-07-18T04:30+00:00",
+        "domain": "asiabulletin.com"
+      },
+      {
+        "at": "2026-07-18T04:30+00:00",
+        "domain": "bangladeshsun.com"
+      },
+      {
+        "at": "2026-07-18T04:30+00:00",
+        "domain": "britainnews.net"
+      },
+      {
+        "at": "2026-07-18T04:30+00:00",
+        "domain": "coloradostar.com"
+      },
+      {
+        "at": "2026-07-18T04:30+00:00",
+        "domain": "newyorkstatesman.com"
+      },
+      {
+        "at": "2026-07-18T04:30+00:00",
+        "domain": "parisguardian.com"
+      },
+      {
+        "at": "2026-07-18T04:45+00:00",
+        "domain": "arabherald.com"
+      },
+      {
+        "at": "2026-07-18T04:45+00:00",
+        "domain": "floridastatesman.com"
+      },
+      {
+        "at": "2026-07-18T04:45+00:00",
+        "domain": "massachusettssun.com"
+      },
+      {
+        "at": "2026-07-18T05:00+00:00",
+        "domain": "africaleader.com"
+      },
+      {
+        "at": "2026-07-18T05:00+00:00",
+        "domain": "clevelandstar.com"
+      },
+      {
+        "at": "2026-07-18T05:00+00:00",
+        "domain": "haitisun.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "com",
+      "tld_share": 0.9,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 31,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "ungovernable voters lament constant state of",
+    "sample_title": "  Ungovernable : voters lament constant state of crisis",
+    "domain_count": 19,
+    "mastheads": [
+      "armidaleexpress.com.au",
+      "centralwesterndaily.com.au",
+      "cootamundraherald.com.au",
+      "dailyadvertiser.com.au",
+      "dungogchronicle.com.au",
+      "greatlakesadvocate.com.au",
+      "katherinetimes.com.au",
+      "manningrivertimes.com.au",
+      "moreechampion.com.au",
+      "nvi.com.au",
+      "perthnow.com.au",
+      "portstephensexaminer.com.au",
+      "redlandcitybulletin.com.au",
+      "singletonargus.com.au",
+      "southcoastregister.com.au",
+      "standard.net.au",
+      "tenterfieldstar.com.au",
+      "therural.com.au",
+      "westernadvocate.com.au"
+    ],
+    "article_count": 19,
+    "first_domain": "dungogchronicle.com.au",
+    "first_seen": "2026-07-17T23:30+00:00",
+    "span_hours": 3.2,
+    "cascade": [
+      {
+        "at": "2026-07-17T23:30+00:00",
+        "domain": "dungogchronicle.com.au"
+      },
+      {
+        "at": "2026-07-17T23:30+00:00",
+        "domain": "katherinetimes.com.au"
+      },
+      {
+        "at": "2026-07-17T23:30+00:00",
+        "domain": "perthnow.com.au"
+      },
+      {
+        "at": "2026-07-17T23:30+00:00",
+        "domain": "tenterfieldstar.com.au"
+      },
+      {
+        "at": "2026-07-17T23:30+00:00",
+        "domain": "westernadvocate.com.au"
+      },
+      {
+        "at": "2026-07-18T00:00+00:00",
+        "domain": "redlandcitybulletin.com.au"
+      },
+      {
+        "at": "2026-07-18T00:00+00:00",
+        "domain": "singletonargus.com.au"
+      },
+      {
+        "at": "2026-07-18T00:15+00:00",
+        "domain": "armidaleexpress.com.au"
+      },
+      {
+        "at": "2026-07-18T00:15+00:00",
+        "domain": "centralwesterndaily.com.au"
+      },
+      {
+        "at": "2026-07-18T00:15+00:00",
+        "domain": "cootamundraherald.com.au"
+      },
+      {
+        "at": "2026-07-18T00:15+00:00",
+        "domain": "dailyadvertiser.com.au"
+      },
+      {
+        "at": "2026-07-18T00:15+00:00",
+        "domain": "manningrivertimes.com.au"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "au",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 19,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1323,
+    "domains_scanned": 670,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 0,
+      "technology": 250,
+      "health": 0,
+      "science": 250,
+      "business": 250,
+      "sports": 250,
+      "weather": 250
+    },
+    "beats_failed": 2,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-18"
+  }
+}

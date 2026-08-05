@@ -1,0 +1,211 @@
+{
+  "generated_at": "2026-06-22T10:07:23+00:00",
+  "date": "2026-06-22",
+  "echo_index": 0.222,
+  "soft_echo_index": 0.222,
+  "headline": {
+    "phrase": "canada spends big on aussie technology",
+    "sample_title": "Radar deal done : Canada spends big on Aussie technology",
+    "domain_count": 18,
+    "mastheads": [
+      "batemansbaypost.com.au",
+      "begadistrictnews.com.au",
+      "bendigoadvertiser.com.au",
+      "bordermail.com.au",
+      "centralwesterndaily.com.au",
+      "dailyadvertiser.com.au",
+      "easternriverinachronicle.com.au",
+      "edenmagnet.com.au",
+      "goulburnpost.com.au",
+      "illawarramercury.com.au",
+      "juneesoutherncross.com.au",
+      "macleayargus.com.au",
+      "mandurahmail.com.au",
+      "moreechampion.com.au",
+      "muswellbrookchronicle.com.au",
+      "oberonreview.com.au",
+      "southcoastregister.com.au",
+      "standard.net.au"
+    ],
+    "article_count": 18,
+    "first_domain": "batemansbaypost.com.au",
+    "first_seen": "2026-06-22T08:45+00:00",
+    "span_hours": 0.8,
+    "cascade": [
+      {
+        "at": "2026-06-22T08:45+00:00",
+        "domain": "batemansbaypost.com.au"
+      },
+      {
+        "at": "2026-06-22T08:45+00:00",
+        "domain": "centralwesterndaily.com.au"
+      },
+      {
+        "at": "2026-06-22T08:45+00:00",
+        "domain": "edenmagnet.com.au"
+      },
+      {
+        "at": "2026-06-22T08:45+00:00",
+        "domain": "goulburnpost.com.au"
+      },
+      {
+        "at": "2026-06-22T09:00+00:00",
+        "domain": "illawarramercury.com.au"
+      },
+      {
+        "at": "2026-06-22T09:00+00:00",
+        "domain": "muswellbrookchronicle.com.au"
+      },
+      {
+        "at": "2026-06-22T09:15+00:00",
+        "domain": "begadistrictnews.com.au"
+      },
+      {
+        "at": "2026-06-22T09:15+00:00",
+        "domain": "dailyadvertiser.com.au"
+      },
+      {
+        "at": "2026-06-22T09:15+00:00",
+        "domain": "easternriverinachronicle.com.au"
+      },
+      {
+        "at": "2026-06-22T09:15+00:00",
+        "domain": "juneesoutherncross.com.au"
+      },
+      {
+        "at": "2026-06-22T09:15+00:00",
+        "domain": "macleayargus.com.au"
+      },
+      {
+        "at": "2026-06-22T09:15+00:00",
+        "domain": "oberonreview.com.au"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "au",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 18,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "nationals ape hanson liar slogan as",
+    "sample_title": "Nationals ape Hanson  liar  slogan as tax debate flares",
+    "domain_count": 17,
+    "mastheads": [
+      "batemansbaypost.com.au",
+      "begadistrictnews.com.au",
+      "bendigoadvertiser.com.au",
+      "bordermail.com.au",
+      "dailyadvertiser.com.au",
+      "easternriverinachronicle.com.au",
+      "edenmagnet.com.au",
+      "goulburnpost.com.au",
+      "illawarramercury.com.au",
+      "juneesoutherncross.com.au",
+      "macleayargus.com.au",
+      "mandurahmail.com.au",
+      "moreechampion.com.au",
+      "oberonreview.com.au",
+      "southcoastregister.com.au",
+      "standard.net.au",
+      "yasstribune.com.au"
+    ],
+    "article_count": 17,
+    "first_domain": "batemansbaypost.com.au",
+    "first_seen": "2026-06-22T08:45+00:00",
+    "span_hours": 0.8,
+    "cascade": [
+      {
+        "at": "2026-06-22T08:45+00:00",
+        "domain": "batemansbaypost.com.au"
+      },
+      {
+        "at": "2026-06-22T08:45+00:00",
+        "domain": "edenmagnet.com.au"
+      },
+      {
+        "at": "2026-06-22T08:45+00:00",
+        "domain": "goulburnpost.com.au"
+      },
+      {
+        "at": "2026-06-22T08:45+00:00",
+        "domain": "yasstribune.com.au"
+      },
+      {
+        "at": "2026-06-22T09:00+00:00",
+        "domain": "illawarramercury.com.au"
+      },
+      {
+        "at": "2026-06-22T09:15+00:00",
+        "domain": "begadistrictnews.com.au"
+      },
+      {
+        "at": "2026-06-22T09:15+00:00",
+        "domain": "dailyadvertiser.com.au"
+      },
+      {
+        "at": "2026-06-22T09:15+00:00",
+        "domain": "easternriverinachronicle.com.au"
+      },
+      {
+        "at": "2026-06-22T09:15+00:00",
+        "domain": "juneesoutherncross.com.au"
+      },
+      {
+        "at": "2026-06-22T09:15+00:00",
+        "domain": "macleayargus.com.au"
+      },
+      {
+        "at": "2026-06-22T09:15+00:00",
+        "domain": "oberonreview.com.au"
+      },
+      {
+        "at": "2026-06-22T09:15+00:00",
+        "domain": "southcoastregister.com.au"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "au",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 17,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 702,
+    "domains_scanned": 374,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 0,
+      "economy": 250,
+      "technology": 250,
+      "health": 0,
+      "science": 0,
+      "business": 0,
+      "sports": 250,
+      "weather": 0
+    },
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-06-22"
+  }
+}

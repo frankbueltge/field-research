@@ -1,0 +1,218 @@
+{
+  "generated_at": "2026-06-27T08:41:36+00:00",
+  "date": "2026-06-27",
+  "echo_index": 0.388,
+  "soft_echo_index": 0.388,
+  "headline": {
+    "phrase": "open seventh session of scottish parliament",
+    "sample_title": "King to formally open seventh session of Scottish Parliament",
+    "domain_count": 50,
+    "mastheads": [
+      "barryanddistrictnews.co.uk",
+      "bridportnews.co.uk",
+      "bucksfreepress.co.uk",
+      "burnhamandhighbridgeweeklynews.co.uk",
+      "chardandilminsternews.co.uk",
+      "clactonandfrintongazette.co.uk",
+      "countytimes.co.uk",
+      "darlingtonandstocktontimes.co.uk",
+      "dunfermlinepress.com",
+      "eastlothiancourier.com",
+      "eppingforestguardian.co.uk",
+      "eveshamjournal.co.uk",
+      "freepressseries.co.uk",
+      "gazetteherald.co.uk",
+      "gazetteseries.co.uk",
+      "glasgowtimes.co.uk",
+      "guardian-series.co.uk",
+      "halsteadgazette.co.uk",
+      "hamhigh.co.uk",
+      "heraldseries.co.uk",
+      "hexham-courant.co.uk",
+      "irvinetimes.com",
+      "kentonline.co.uk",
+      "lbc.co.uk",
+      "leighjournal.co.uk",
+      "london-now.co.uk",
+      "ludlowadvertiser.co.uk",
+      "maldonandburnhamstandard.co.uk",
+      "milfordmercury.co.uk",
+      "newburytoday.co.uk",
+      "northwalespioneer.co.uk",
+      "nwemail.co.uk",
+      "oxfordmail.co.uk",
+      "redditchadvertiser.co.uk",
+      "salisburyjournal.co.uk",
+      "sloughobserver.co.uk",
+      "southwalesguardian.co.uk",
+      "swindonadvertiser.co.uk",
+      "theargus.co.uk",
+      "theboltonnews.co.uk"
+    ],
+    "article_count": 50,
+    "first_domain": "burnhamandhighbridgeweeklynews.co.uk",
+    "first_seen": "2026-06-27T04:45+00:00",
+    "span_hours": 3.2,
+    "cascade": [
+      {
+        "at": "2026-06-27T04:45+00:00",
+        "domain": "burnhamandhighbridgeweeklynews.co.uk"
+      },
+      {
+        "at": "2026-06-27T04:45+00:00",
+        "domain": "halsteadgazette.co.uk"
+      },
+      {
+        "at": "2026-06-27T04:45+00:00",
+        "domain": "ludlowadvertiser.co.uk"
+      },
+      {
+        "at": "2026-06-27T04:45+00:00",
+        "domain": "oxfordmail.co.uk"
+      },
+      {
+        "at": "2026-06-27T05:00+00:00",
+        "domain": "bridportnews.co.uk"
+      },
+      {
+        "at": "2026-06-27T05:00+00:00",
+        "domain": "chardandilminsternews.co.uk"
+      },
+      {
+        "at": "2026-06-27T05:00+00:00",
+        "domain": "newburytoday.co.uk"
+      },
+      {
+        "at": "2026-06-27T05:00+00:00",
+        "domain": "nwemail.co.uk"
+      },
+      {
+        "at": "2026-06-27T05:00+00:00",
+        "domain": "redditchadvertiser.co.uk"
+      },
+      {
+        "at": "2026-06-27T05:00+00:00",
+        "domain": "swindonadvertiser.co.uk"
+      },
+      {
+        "at": "2026-06-27T05:00+00:00",
+        "domain": "thetottenhamindependent.co.uk"
+      },
+      {
+        "at": "2026-06-27T05:00+00:00",
+        "domain": "thewestmorlandgazette.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.93,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 50,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "horse track aqueduct ending live races",
+    "sample_title": "Final stretch : NYC last horse track , Aqueduct , ending live races",
+    "domain_count": 10,
+    "mastheads": [
+      "bozemandailychronicle.com",
+      "erienewsnow.com",
+      "gazettextra.com",
+      "lasvegassun.com",
+      "niagarafallsreview.ca",
+      "sitkasentinel.com",
+      "stcatharinesstandard.ca",
+      "union-bulletin.com",
+      "winknews.com",
+      "yoursourceone.com"
+    ],
+    "article_count": 10,
+    "first_domain": "niagarafallsreview.ca",
+    "first_seen": "2026-06-27T05:00+00:00",
+    "span_hours": 3.2,
+    "cascade": [
+      {
+        "at": "2026-06-27T05:00+00:00",
+        "domain": "niagarafallsreview.ca"
+      },
+      {
+        "at": "2026-06-27T05:00+00:00",
+        "domain": "winknews.com"
+      },
+      {
+        "at": "2026-06-27T05:15+00:00",
+        "domain": "lasvegassun.com"
+      },
+      {
+        "at": "2026-06-27T05:15+00:00",
+        "domain": "stcatharinesstandard.ca"
+      },
+      {
+        "at": "2026-06-27T05:30+00:00",
+        "domain": "bozemandailychronicle.com"
+      },
+      {
+        "at": "2026-06-27T05:30+00:00",
+        "domain": "gazettextra.com"
+      },
+      {
+        "at": "2026-06-27T05:30+00:00",
+        "domain": "sitkasentinel.com"
+      },
+      {
+        "at": "2026-06-27T07:00+00:00",
+        "domain": "union-bulletin.com"
+      },
+      {
+        "at": "2026-06-27T08:15+00:00",
+        "domain": "erienewsnow.com"
+      },
+      {
+        "at": "2026-06-27T08:15+00:00",
+        "domain": "yoursourceone.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "com",
+      "tld_share": 0.8,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 10,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 250,
+    "domains_scanned": 201,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 0,
+      "economy": 0,
+      "technology": 0,
+      "health": 0,
+      "science": 0,
+      "business": 0,
+      "sports": 250,
+      "weather": 0
+    },
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-06-27"
+  }
+}

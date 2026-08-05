@@ -1,0 +1,224 @@
+{
+  "generated_at": "2026-07-25T08:14:06+00:00",
+  "date": "2026-07-25",
+  "echo_index": 0.268,
+  "soft_echo_index": 0.268,
+  "headline": {
+    "phrase": "response meeting after cairngorms wildfire evacuation",
+    "sample_title": "Scottish Government holds response meeting after Cairngorms wildfire evacuation",
+    "domain_count": 52,
+    "mastheads": [
+      "asianimage.co.uk",
+      "basingstokegazette.co.uk",
+      "bridgwatermercury.co.uk",
+      "burnhamandhighbridgeweeklynews.co.uk",
+      "burytimes.co.uk",
+      "clactonandfrintongazette.co.uk",
+      "clydebankpost.co.uk",
+      "countypress.co.uk",
+      "countytimes.co.uk",
+      "darlingtonandstocktontimes.co.uk",
+      "dorsetecho.co.uk",
+      "dumbartonreporter.co.uk",
+      "dunfermlinepress.com",
+      "eastlothiancourier.com",
+      "echo-news.co.uk",
+      "eppingforestguardian.co.uk",
+      "glasgowtimes.co.uk",
+      "guardian-series.co.uk",
+      "halsteadgazette.co.uk",
+      "hamhigh.co.uk",
+      "harrowtimes.co.uk",
+      "harwichandmanningtreestandard.co.uk",
+      "hexham-courant.co.uk",
+      "hillingdontimes.co.uk",
+      "impartialreporter.com",
+      "ipswichstar.co.uk",
+      "irvinetimes.com",
+      "kidderminstershuttle.co.uk",
+      "kilburntimes.co.uk",
+      "lancashiretelegraph.co.uk",
+      "leaderlive.co.uk",
+      "ledburyreporter.co.uk",
+      "leighjournal.co.uk",
+      "ludlowadvertiser.co.uk",
+      "messengernewspapers.co.uk",
+      "newarkadvertiser.co.uk",
+      "northwaleschronicle.co.uk",
+      "penarthtimes.co.uk",
+      "richmondandtwickenhamtimes.co.uk",
+      "runcornandwidnesworld.co.uk"
+    ],
+    "article_count": 52,
+    "first_domain": "countytimes.co.uk",
+    "first_seen": "2026-07-25T03:45+00:00",
+    "span_hours": 4.0,
+    "cascade": [
+      {
+        "at": "2026-07-25T03:45+00:00",
+        "domain": "countytimes.co.uk"
+      },
+      {
+        "at": "2026-07-25T03:45+00:00",
+        "domain": "impartialreporter.com"
+      },
+      {
+        "at": "2026-07-25T03:45+00:00",
+        "domain": "messengernewspapers.co.uk"
+      },
+      {
+        "at": "2026-07-25T03:45+00:00",
+        "domain": "thewestmorlandgazette.co.uk"
+      },
+      {
+        "at": "2026-07-25T04:00+00:00",
+        "domain": "asianimage.co.uk"
+      },
+      {
+        "at": "2026-07-25T04:00+00:00",
+        "domain": "burytimes.co.uk"
+      },
+      {
+        "at": "2026-07-25T04:00+00:00",
+        "domain": "guardian-series.co.uk"
+      },
+      {
+        "at": "2026-07-25T04:00+00:00",
+        "domain": "hexham-courant.co.uk"
+      },
+      {
+        "at": "2026-07-25T04:00+00:00",
+        "domain": "lancashiretelegraph.co.uk"
+      },
+      {
+        "at": "2026-07-25T04:00+00:00",
+        "domain": "leighjournal.co.uk"
+      },
+      {
+        "at": "2026-07-25T04:00+00:00",
+        "domain": "newarkadvertiser.co.uk"
+      },
+      {
+        "at": "2026-07-25T04:00+00:00",
+        "domain": "swindonadvertiser.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.9,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 52,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "oregon firefighters brace for windy and",
+    "sample_title": "Oregon firefighters brace for windy and hot weather as they battle dozens of blazes",
+    "domain_count": 11,
+    "mastheads": [
+      "abcnews.com",
+      "bangordailynews.com",
+      "clickondetroit.com",
+      "clickorlando.com",
+      "dailygazette.com",
+      "goskagit.com",
+      "isp.netscape.com",
+      "khqa.com",
+      "postregister.com",
+      "stcatharinesstandard.ca",
+      "thegazette.com"
+    ],
+    "article_count": 13,
+    "first_domain": "thegazette.com",
+    "first_seen": "2026-07-25T03:45+00:00",
+    "span_hours": 3.2,
+    "cascade": [
+      {
+        "at": "2026-07-25T03:45+00:00",
+        "domain": "thegazette.com"
+      },
+      {
+        "at": "2026-07-25T04:00+00:00",
+        "domain": "clickondetroit.com"
+      },
+      {
+        "at": "2026-07-25T04:00+00:00",
+        "domain": "clickorlando.com"
+      },
+      {
+        "at": "2026-07-25T04:30+00:00",
+        "domain": "goskagit.com"
+      },
+      {
+        "at": "2026-07-25T05:00+00:00",
+        "domain": "abcnews.com"
+      },
+      {
+        "at": "2026-07-25T05:00+00:00",
+        "domain": "dailygazette.com"
+      },
+      {
+        "at": "2026-07-25T05:00+00:00",
+        "domain": "stcatharinesstandard.ca"
+      },
+      {
+        "at": "2026-07-25T05:30+00:00",
+        "domain": "bangordailynews.com"
+      },
+      {
+        "at": "2026-07-25T05:30+00:00",
+        "domain": "isp.netscape.com"
+      },
+      {
+        "at": "2026-07-25T06:00+00:00",
+        "domain": "khqa.com"
+      },
+      {
+        "at": "2026-07-25T07:00+00:00",
+        "domain": "postregister.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "com",
+      "tld_share": 0.91,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 11,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 489,
+    "domains_scanned": 309,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 0,
+      "economy": 0,
+      "technology": 0,
+      "health": 0,
+      "science": 250,
+      "business": 0,
+      "sports": 0,
+      "weather": 250
+    },
+    "beats_failed": 6,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-25"
+  }
+}

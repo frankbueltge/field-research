@@ -1,0 +1,220 @@
+{
+  "generated_at": "2026-06-26T09:33:04+00:00",
+  "date": "2026-06-26",
+  "echo_index": 0.279,
+  "soft_echo_index": 0.279,
+  "headline": {
+    "phrase": "britain grid operator makes fresh call",
+    "sample_title": "Britain grid operator makes fresh call for power as heatwave goes on",
+    "domain_count": 23,
+    "mastheads": [
+      "bournemouthecho.co.uk",
+      "burytimes.co.uk",
+      "cravenherald.co.uk",
+      "dumbartonreporter.co.uk",
+      "edp24.co.uk",
+      "eveshamjournal.co.uk",
+      "hillingdontimes.co.uk",
+      "kilburntimes.co.uk",
+      "lynnnews.co.uk",
+      "messengernewspapers.co.uk",
+      "northwaleschronicle.co.uk",
+      "northwichguardian.co.uk",
+      "oxfordmail.co.uk",
+      "readingchronicle.co.uk",
+      "salisburyjournal.co.uk",
+      "somersetcountygazette.co.uk",
+      "southwalesargus.co.uk",
+      "surreycomet.co.uk",
+      "theboltonnews.co.uk",
+      "thewestonmercury.co.uk",
+      "warringtonguardian.co.uk",
+      "wiltshiretimes.co.uk",
+      "yourlocalguardian.co.uk"
+    ],
+    "article_count": 23,
+    "first_domain": "lynnnews.co.uk",
+    "first_seen": "2026-06-26T08:00+00:00",
+    "span_hours": 1.0,
+    "cascade": [
+      {
+        "at": "2026-06-26T08:00+00:00",
+        "domain": "lynnnews.co.uk"
+      },
+      {
+        "at": "2026-06-26T08:15+00:00",
+        "domain": "cravenherald.co.uk"
+      },
+      {
+        "at": "2026-06-26T08:15+00:00",
+        "domain": "messengernewspapers.co.uk"
+      },
+      {
+        "at": "2026-06-26T08:15+00:00",
+        "domain": "oxfordmail.co.uk"
+      },
+      {
+        "at": "2026-06-26T08:15+00:00",
+        "domain": "readingchronicle.co.uk"
+      },
+      {
+        "at": "2026-06-26T08:15+00:00",
+        "domain": "salisburyjournal.co.uk"
+      },
+      {
+        "at": "2026-06-26T08:15+00:00",
+        "domain": "thewestonmercury.co.uk"
+      },
+      {
+        "at": "2026-06-26T08:15+00:00",
+        "domain": "wiltshiretimes.co.uk"
+      },
+      {
+        "at": "2026-06-26T08:45+00:00",
+        "domain": "bournemouthecho.co.uk"
+      },
+      {
+        "at": "2026-06-26T08:45+00:00",
+        "domain": "edp24.co.uk"
+      },
+      {
+        "at": "2026-06-26T08:45+00:00",
+        "domain": "eveshamjournal.co.uk"
+      },
+      {
+        "at": "2026-06-26T08:45+00:00",
+        "domain": "kilburntimes.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 23,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "drink responsibly as sweltering heat continues",
+    "sample_title": "Ambulance chief warns people to  drink responsibly  as sweltering heat continues",
+    "domain_count": 21,
+    "mastheads": [
+      "bournemouthecho.co.uk",
+      "chelmsfordweeklynews.co.uk",
+      "cravenherald.co.uk",
+      "dailyecho.co.uk",
+      "dumbartonreporter.co.uk",
+      "eveshamjournal.co.uk",
+      "glasgowtimes.co.uk",
+      "greenocktelegraph.co.uk",
+      "harrowtimes.co.uk",
+      "impartialreporter.com",
+      "kilburntimes.co.uk",
+      "newsshopper.co.uk",
+      "northwaleschronicle.co.uk",
+      "northwichguardian.co.uk",
+      "salisburyjournal.co.uk",
+      "somersetcountygazette.co.uk",
+      "surreycomet.co.uk",
+      "thenorthernecho.co.uk",
+      "thewestonmercury.co.uk",
+      "wiltshiretimes.co.uk",
+      "yourlocalguardian.co.uk"
+    ],
+    "article_count": 21,
+    "first_domain": "impartialreporter.com",
+    "first_seen": "2026-06-26T06:15+00:00",
+    "span_hours": 2.8,
+    "cascade": [
+      {
+        "at": "2026-06-26T06:15+00:00",
+        "domain": "impartialreporter.com"
+      },
+      {
+        "at": "2026-06-26T06:30+00:00",
+        "domain": "dailyecho.co.uk"
+      },
+      {
+        "at": "2026-06-26T07:00+00:00",
+        "domain": "newsshopper.co.uk"
+      },
+      {
+        "at": "2026-06-26T07:00+00:00",
+        "domain": "surreycomet.co.uk"
+      },
+      {
+        "at": "2026-06-26T07:00+00:00",
+        "domain": "thenorthernecho.co.uk"
+      },
+      {
+        "at": "2026-06-26T07:00+00:00",
+        "domain": "yourlocalguardian.co.uk"
+      },
+      {
+        "at": "2026-06-26T08:00+00:00",
+        "domain": "chelmsfordweeklynews.co.uk"
+      },
+      {
+        "at": "2026-06-26T08:15+00:00",
+        "domain": "cravenherald.co.uk"
+      },
+      {
+        "at": "2026-06-26T08:15+00:00",
+        "domain": "greenocktelegraph.co.uk"
+      },
+      {
+        "at": "2026-06-26T08:15+00:00",
+        "domain": "salisburyjournal.co.uk"
+      },
+      {
+        "at": "2026-06-26T08:15+00:00",
+        "domain": "thewestonmercury.co.uk"
+      },
+      {
+        "at": "2026-06-26T08:15+00:00",
+        "domain": "wiltshiretimes.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.95,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 21,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 707,
+    "domains_scanned": 415,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 0,
+      "technology": 0,
+      "health": 250,
+      "science": 0,
+      "business": 0,
+      "sports": 0,
+      "weather": 250
+    },
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-06-26"
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "generated_at": "2026-07-30T08:32:44+00:00",
+  "date": "2026-07-30",
+  "echo_index": 0.34,
+  "soft_echo_index": 0.348,
+  "headline": {
+    "phrase": "retaliation for attack on military base",
+    "sample_title": "US launches strikes on Iran in retaliation for attack on military base",
+    "domain_count": 41,
+    "mastheads": [
+      "andoveradvertiser.co.uk",
+      "bordertelegraph.com",
+      "borehamwoodtimes.co.uk",
+      "bournemouthecho.co.uk",
+      "braintreeandwithamtimes.co.uk",
+      "brentwoodlive.co.uk",
+      "bridgwatermercury.co.uk",
+      "bromsgroveadvertiser.co.uk",
+      "burytimes.co.uk",
+      "chardandilminsternews.co.uk",
+      "chesterstandard.co.uk",
+      "countypress.co.uk",
+      "dumbartonreporter.co.uk",
+      "ealingtimes.co.uk",
+      "edp24.co.uk",
+      "eppingforestguardian.co.uk",
+      "eveningnews24.co.uk",
+      "eveshamjournal.co.uk",
+      "gazette-news.co.uk",
+      "halesowennews.co.uk",
+      "halsteadgazette.co.uk",
+      "harrowtimes.co.uk",
+      "heraldseries.co.uk",
+      "kidderminstershuttle.co.uk",
+      "kilburntimes.co.uk",
+      "leighjournal.co.uk",
+      "ludlowadvertiser.co.uk",
+      "newsandstar.co.uk",
+      "northwaleschronicle.co.uk",
+      "northwalespioneer.co.uk",
+      "peeblesshirenews.com",
+      "penarthtimes.co.uk",
+      "readingchronicle.co.uk",
+      "redditchadvertiser.co.uk",
+      "runcornandwidnesworld.co.uk",
+      "stroudnewsandjournal.co.uk",
+      "thetottenhamindependent.co.uk",
+      "thisiswiltshire.co.uk",
+      "timesandstar.co.uk",
+      "westerntelegraph.co.uk"
+    ],
+    "article_count": 41,
+    "first_domain": "bromsgroveadvertiser.co.uk",
+    "first_seen": "2026-07-30T03:30+00:00",
+    "span_hours": 3.5,
+    "cascade": [
+      {
+        "at": "2026-07-30T03:30+00:00",
+        "domain": "bromsgroveadvertiser.co.uk"
+      },
+      {
+        "at": "2026-07-30T03:30+00:00",
+        "domain": "eveningnews24.co.uk"
+      },
+      {
+        "at": "2026-07-30T03:30+00:00",
+        "domain": "eveshamjournal.co.uk"
+      },
+      {
+        "at": "2026-07-30T03:30+00:00",
+        "domain": "leighjournal.co.uk"
+      },
+      {
+        "at": "2026-07-30T03:30+00:00",
+        "domain": "northwaleschronicle.co.uk"
+      },
+      {
+        "at": "2026-07-30T03:30+00:00",
+        "domain": "penarthtimes.co.uk"
+      },
+      {
+        "at": "2026-07-30T03:30+00:00",
+        "domain": "yorkpress.co.uk"
+      },
+      {
+        "at": "2026-07-30T03:45+00:00",
+        "domain": "braintreeandwithamtimes.co.uk"
+      },
+      {
+        "at": "2026-07-30T03:45+00:00",
+        "domain": "bridgwatermercury.co.uk"
+      },
+      {
+        "at": "2026-07-30T03:45+00:00",
+        "domain": "halsteadgazette.co.uk"
+      },
+      {
+        "at": "2026-07-30T04:00+00:00",
+        "domain": "bournemouthecho.co.uk"
+      },
+      {
+        "at": "2026-07-30T04:00+00:00",
+        "domain": "ealingtimes.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.95,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 41,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "for rescue in southwestern japan quake",
+    "sample_title": "Hope dwindles for rescue in southwestern Japan quake as death toll climbs to 23",
+    "domain_count": 30,
+    "mastheads": [
+      "brandonsun.com",
+      "clickondetroit.com",
+      "delawarepublic.org",
+      "goskagit.com",
+      "kacu.org",
+      "kansaspublicradio.org",
+      "kbia.org",
+      "kcbx.org",
+      "kjzz.org",
+      "knpr.org",
+      "ksut.org",
+      "kunr.org",
+      "nbcnews.com",
+      "news-gazette.com",
+      "news.wjct.org",
+      "news4jax.com",
+      "publicradiotulsa.org",
+      "rockymounttelegram.com",
+      "tspr.org",
+      "wamc.org",
+      "wbaa.org",
+      "wboi.org",
+      "wfdd.org",
+      "wkms.org",
+      "wuft.org",
+      "wuwf.org",
+      "wvasfm.org",
+      "wxxinews.org",
+      "wysu.org",
+      "ypradio.org"
+    ],
+    "article_count": 30,
+    "first_domain": "news.wjct.org",
+    "first_seen": "2026-07-30T05:45+00:00",
+    "span_hours": 2.0,
+    "cascade": [
+      {
+        "at": "2026-07-30T05:45+00:00",
+        "domain": "news.wjct.org"
+      },
+      {
+        "at": "2026-07-30T05:45+00:00",
+        "domain": "wvasfm.org"
+      },
+      {
+        "at": "2026-07-30T06:00+00:00",
+        "domain": "kbia.org"
+      },
+      {
+        "at": "2026-07-30T06:00+00:00",
+        "domain": "kunr.org"
+      },
+      {
+        "at": "2026-07-30T06:00+00:00",
+        "domain": "news4jax.com"
+      },
+      {
+        "at": "2026-07-30T06:00+00:00",
+        "domain": "tspr.org"
+      },
+      {
+        "at": "2026-07-30T06:00+00:00",
+        "domain": "wamc.org"
+      },
+      {
+        "at": "2026-07-30T06:00+00:00",
+        "domain": "wkms.org"
+      },
+      {
+        "at": "2026-07-30T06:00+00:00",
+        "domain": "ypradio.org"
+      },
+      {
+        "at": "2026-07-30T06:15+00:00",
+        "domain": "clickondetroit.com"
+      },
+      {
+        "at": "2026-07-30T06:15+00:00",
+        "domain": "goskagit.com"
+      },
+      {
+        "at": "2026-07-30T06:15+00:00",
+        "domain": "kacu.org"
+      }
+    ],
+    "syndication": {
+      "label": "mixed",
+      "top_tld": "org",
+      "tld_share": 0.77,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 39,
+    "soft_echo_extra": 9
+  },
+  "stats": {
+    "articles_scanned": 1271,
+    "domains_scanned": 644,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 250,
+      "technology": 250,
+      "health": 0,
+      "science": 250,
+      "business": 250,
+      "sports": 0,
+      "weather": 250
+    },
+    "beats_failed": 2,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-30"
+  }
+}

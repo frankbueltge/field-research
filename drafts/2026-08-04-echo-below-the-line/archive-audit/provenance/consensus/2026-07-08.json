@@ -1,0 +1,204 @@
+{
+  "generated_at": "2026-07-08T08:38:08+00:00",
+  "date": "2026-07-08",
+  "echo_index": 0.11,
+  "soft_echo_index": 0.114,
+  "headline": {
+    "phrase": "mcconnell wife speaks after china trip",
+    "sample_title": "Sen . McConnell Wife Speaks After China Trip",
+    "domain_count": 14,
+    "mastheads": [
+      "1190kex.iheart.com",
+      "1450wkip.iheart.com",
+      "kfyi.iheart.com",
+      "klvi.iheart.com",
+      "kwhn.iheart.com",
+      "newsradio540.iheart.com",
+      "newsradiori.iheart.com",
+      "talkradio1080.iheart.com",
+      "wdov.iheart.com",
+      "wgiram.iheart.com",
+      "wham1180.iheart.com",
+      "wjbo.iheart.com",
+      "wjno.iheart.com",
+      "wmeq.iheart.com"
+    ],
+    "article_count": 14,
+    "first_domain": "kwhn.iheart.com",
+    "first_seen": "2026-07-08T06:30+00:00",
+    "span_hours": 0.8,
+    "cascade": [
+      {
+        "at": "2026-07-08T06:30+00:00",
+        "domain": "kwhn.iheart.com"
+      },
+      {
+        "at": "2026-07-08T06:30+00:00",
+        "domain": "newsradio540.iheart.com"
+      },
+      {
+        "at": "2026-07-08T06:30+00:00",
+        "domain": "talkradio1080.iheart.com"
+      },
+      {
+        "at": "2026-07-08T06:30+00:00",
+        "domain": "wjno.iheart.com"
+      },
+      {
+        "at": "2026-07-08T06:45+00:00",
+        "domain": "1190kex.iheart.com"
+      },
+      {
+        "at": "2026-07-08T06:45+00:00",
+        "domain": "1450wkip.iheart.com"
+      },
+      {
+        "at": "2026-07-08T06:45+00:00",
+        "domain": "klvi.iheart.com"
+      },
+      {
+        "at": "2026-07-08T06:45+00:00",
+        "domain": "newsradiori.iheart.com"
+      },
+      {
+        "at": "2026-07-08T06:45+00:00",
+        "domain": "wdov.iheart.com"
+      },
+      {
+        "at": "2026-07-08T07:15+00:00",
+        "domain": "kfyi.iheart.com"
+      },
+      {
+        "at": "2026-07-08T07:15+00:00",
+        "domain": "wgiram.iheart.com"
+      },
+      {
+        "at": "2026-07-08T07:15+00:00",
+        "domain": "wham1180.iheart.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "com",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 14,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "1 causes chilcotin air quality warning",
+    "sample_title": "Brunswick complex wildfire shuts Hwy 1 , causes Chilcotin air quality warning",
+    "domain_count": 13,
+    "mastheads": [
+      "campbellrivermirror.com",
+      "comoxvalleyrecord.com",
+      "cranbrooktownsman.com",
+      "mapleridgenews.com",
+      "northislandgazette.com",
+      "ominecaexpress.com",
+      "peacearchnews.com",
+      "pqbnews.com",
+      "quesnelobserver.com",
+      "sookenewsmirror.com",
+      "vernonmorningstar.com",
+      "westerlynews.ca",
+      "wltribune.com"
+    ],
+    "article_count": 13,
+    "first_domain": "comoxvalleyrecord.com",
+    "first_seen": "2026-07-08T05:15+00:00",
+    "span_hours": 2.8,
+    "cascade": [
+      {
+        "at": "2026-07-08T05:15+00:00",
+        "domain": "comoxvalleyrecord.com"
+      },
+      {
+        "at": "2026-07-08T05:45+00:00",
+        "domain": "westerlynews.ca"
+      },
+      {
+        "at": "2026-07-08T06:00+00:00",
+        "domain": "campbellrivermirror.com"
+      },
+      {
+        "at": "2026-07-08T06:00+00:00",
+        "domain": "pqbnews.com"
+      },
+      {
+        "at": "2026-07-08T06:15+00:00",
+        "domain": "northislandgazette.com"
+      },
+      {
+        "at": "2026-07-08T06:15+00:00",
+        "domain": "sookenewsmirror.com"
+      },
+      {
+        "at": "2026-07-08T06:30+00:00",
+        "domain": "ominecaexpress.com"
+      },
+      {
+        "at": "2026-07-08T06:30+00:00",
+        "domain": "peacearchnews.com"
+      },
+      {
+        "at": "2026-07-08T06:30+00:00",
+        "domain": "quesnelobserver.com"
+      },
+      {
+        "at": "2026-07-08T06:30+00:00",
+        "domain": "vernonmorningstar.com"
+      },
+      {
+        "at": "2026-07-08T07:15+00:00",
+        "domain": "cranbrooktownsman.com"
+      },
+      {
+        "at": "2026-07-08T07:15+00:00",
+        "domain": "wltribune.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "com",
+      "tld_share": 0.92,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 13,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 708,
+    "domains_scanned": 389,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 0,
+      "economy": 0,
+      "technology": 0,
+      "health": 250,
+      "science": 0,
+      "business": 250,
+      "sports": 0,
+      "weather": 250
+    },
+    "beats_failed": 5,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-08"
+  }
+}

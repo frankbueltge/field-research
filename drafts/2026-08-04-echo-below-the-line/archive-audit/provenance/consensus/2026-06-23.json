@@ -1,0 +1,222 @@
+{
+  "generated_at": "2026-06-23T16:49:30+00:00",
+  "date": "2026-06-23",
+  "echo_index": 0.213,
+  "soft_echo_index": 0.217,
+  "headline": {
+    "phrase": "united kingdom ireland reset taoiseach says",
+    "sample_title": "Keir Starmer had  significant role  in united kingdom - Ireland reset , Taoiseach says",
+    "domain_count": 31,
+    "mastheads": [
+      "andoveradvertiser.co.uk",
+      "borehamwoodtimes.co.uk",
+      "bucksfreepress.co.uk",
+      "chardandilminsternews.co.uk",
+      "clactonandfrintongazette.co.uk",
+      "dailyecho.co.uk",
+      "dumbartonreporter.co.uk",
+      "dunfermlinepress.com",
+      "eveningnews24.co.uk",
+      "gazetteandherald.co.uk",
+      "gazetteherald.co.uk",
+      "greenocktelegraph.co.uk",
+      "halsteadgazette.co.uk",
+      "harrowtimes.co.uk",
+      "kidderminstershuttle.co.uk",
+      "leighjournal.co.uk",
+      "malverngazette.co.uk",
+      "messengernewspapers.co.uk",
+      "newsandstar.co.uk",
+      "northwichguardian.co.uk",
+      "nwemail.co.uk",
+      "penarthtimes.co.uk",
+      "readingchronicle.co.uk",
+      "redditchadvertiser.co.uk",
+      "runcornandwidnesworld.co.uk",
+      "stourbridgenews.co.uk",
+      "stroudnewsandjournal.co.uk",
+      "thisisoxfordshire.co.uk",
+      "thisiswiltshire.co.uk",
+      "times-series.co.uk",
+      "wiltshiretimes.co.uk"
+    ],
+    "article_count": 31,
+    "first_domain": "dailyecho.co.uk",
+    "first_seen": "2026-06-23T14:45+00:00",
+    "span_hours": 1.2,
+    "cascade": [
+      {
+        "at": "2026-06-23T14:45+00:00",
+        "domain": "dailyecho.co.uk"
+      },
+      {
+        "at": "2026-06-23T14:45+00:00",
+        "domain": "eveningnews24.co.uk"
+      },
+      {
+        "at": "2026-06-23T14:45+00:00",
+        "domain": "harrowtimes.co.uk"
+      },
+      {
+        "at": "2026-06-23T15:00+00:00",
+        "domain": "runcornandwidnesworld.co.uk"
+      },
+      {
+        "at": "2026-06-23T15:15+00:00",
+        "domain": "dumbartonreporter.co.uk"
+      },
+      {
+        "at": "2026-06-23T15:15+00:00",
+        "domain": "messengernewspapers.co.uk"
+      },
+      {
+        "at": "2026-06-23T15:15+00:00",
+        "domain": "stroudnewsandjournal.co.uk"
+      },
+      {
+        "at": "2026-06-23T15:15+00:00",
+        "domain": "thisisoxfordshire.co.uk"
+      },
+      {
+        "at": "2026-06-23T15:15+00:00",
+        "domain": "thisiswiltshire.co.uk"
+      },
+      {
+        "at": "2026-06-23T15:15+00:00",
+        "domain": "times-series.co.uk"
+      },
+      {
+        "at": "2026-06-23T15:30+00:00",
+        "domain": "borehamwoodtimes.co.uk"
+      },
+      {
+        "at": "2026-06-23T15:30+00:00",
+        "domain": "nwemail.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.97,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 31,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "big payouts for first amendment retaliation",
+    "sample_title": "People fired over Charlie Kirk posts get big payouts for First Amendment retaliation",
+    "domain_count": 15,
+    "mastheads": [
+      "ijpr.org",
+      "kansaspublicradio.org",
+      "kawc.org",
+      "kazu.org",
+      "kccu.org",
+      "kgou.org",
+      "ksmu.org",
+      "kzyx.org",
+      "radio.wpsu.org",
+      "wcsufm.org",
+      "whqr.org",
+      "wknofm.org",
+      "wkyufm.org",
+      "wutc.org",
+      "wxpr.org"
+    ],
+    "article_count": 15,
+    "first_domain": "radio.wpsu.org",
+    "first_seen": "2026-06-23T14:00+00:00",
+    "span_hours": 2.0,
+    "cascade": [
+      {
+        "at": "2026-06-23T14:00+00:00",
+        "domain": "radio.wpsu.org"
+      },
+      {
+        "at": "2026-06-23T14:15+00:00",
+        "domain": "kzyx.org"
+      },
+      {
+        "at": "2026-06-23T14:15+00:00",
+        "domain": "whqr.org"
+      },
+      {
+        "at": "2026-06-23T14:30+00:00",
+        "domain": "wknofm.org"
+      },
+      {
+        "at": "2026-06-23T15:00+00:00",
+        "domain": "ijpr.org"
+      },
+      {
+        "at": "2026-06-23T15:00+00:00",
+        "domain": "ksmu.org"
+      },
+      {
+        "at": "2026-06-23T15:15+00:00",
+        "domain": "kccu.org"
+      },
+      {
+        "at": "2026-06-23T15:15+00:00",
+        "domain": "wcsufm.org"
+      },
+      {
+        "at": "2026-06-23T15:15+00:00",
+        "domain": "wutc.org"
+      },
+      {
+        "at": "2026-06-23T15:30+00:00",
+        "domain": "kawc.org"
+      },
+      {
+        "at": "2026-06-23T15:45+00:00",
+        "domain": "kansaspublicradio.org"
+      },
+      {
+        "at": "2026-06-23T15:45+00:00",
+        "domain": "kgou.org"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "org",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 15,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 713,
+    "domains_scanned": 443,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 250,
+      "technology": 0,
+      "health": 0,
+      "science": 0,
+      "business": 0,
+      "sports": 0,
+      "weather": 250
+    },
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-06-23"
+  }
+}

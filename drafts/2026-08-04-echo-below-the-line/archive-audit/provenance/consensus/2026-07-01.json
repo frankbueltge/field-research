@@ -1,0 +1,220 @@
+{
+  "generated_at": "2026-07-01T09:54:08+00:00",
+  "date": "2026-07-01",
+  "echo_index": 0.346,
+  "soft_echo_index": 0.346,
+  "headline": {
+    "phrase": "protected jeffrey donaldson in any circumstance",
+    "sample_title": "I would never have protected Jeffrey Donaldson in any circumstance – Edwin Poots",
+    "domain_count": 26,
+    "mastheads": [
+      "andoveradvertiser.co.uk",
+      "bordertelegraph.com",
+      "breakingnews.ie",
+      "chesterstandard.co.uk",
+      "cotswoldjournal.co.uk",
+      "eppingforestguardian.co.uk",
+      "eveningnews24.co.uk",
+      "fenlandcitizen.co.uk",
+      "freepressseries.co.uk",
+      "glasgowtimes.co.uk",
+      "halsteadgazette.co.uk",
+      "hamhigh.co.uk",
+      "hampshirechronicle.co.uk",
+      "harrowtimes.co.uk",
+      "lancashiretelegraph.co.uk",
+      "newarkadvertiser.co.uk",
+      "northwaleschronicle.co.uk",
+      "northwichguardian.co.uk",
+      "nwemail.co.uk",
+      "rhyljournal.co.uk",
+      "somersetcountygazette.co.uk",
+      "surreycomet.co.uk",
+      "swindonadvertiser.co.uk",
+      "timesandstar.co.uk",
+      "warringtonguardian.co.uk",
+      "watfordobserver.co.uk"
+    ],
+    "article_count": 26,
+    "first_domain": "lancashiretelegraph.co.uk",
+    "first_seen": "2026-06-30T15:00+00:00",
+    "span_hours": 1.8,
+    "cascade": [
+      {
+        "at": "2026-06-30T15:00+00:00",
+        "domain": "lancashiretelegraph.co.uk"
+      },
+      {
+        "at": "2026-06-30T15:15+00:00",
+        "domain": "andoveradvertiser.co.uk"
+      },
+      {
+        "at": "2026-06-30T15:15+00:00",
+        "domain": "eppingforestguardian.co.uk"
+      },
+      {
+        "at": "2026-06-30T15:15+00:00",
+        "domain": "freepressseries.co.uk"
+      },
+      {
+        "at": "2026-06-30T15:15+00:00",
+        "domain": "nwemail.co.uk"
+      },
+      {
+        "at": "2026-06-30T15:15+00:00",
+        "domain": "timesandstar.co.uk"
+      },
+      {
+        "at": "2026-06-30T15:45+00:00",
+        "domain": "bordertelegraph.com"
+      },
+      {
+        "at": "2026-06-30T15:45+00:00",
+        "domain": "glasgowtimes.co.uk"
+      },
+      {
+        "at": "2026-06-30T15:45+00:00",
+        "domain": "swindonadvertiser.co.uk"
+      },
+      {
+        "at": "2026-06-30T16:00+00:00",
+        "domain": "chesterstandard.co.uk"
+      },
+      {
+        "at": "2026-06-30T16:00+00:00",
+        "domain": "cotswoldjournal.co.uk"
+      },
+      {
+        "at": "2026-06-30T16:00+00:00",
+        "domain": "hampshirechronicle.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.92,
+      "distinct_tlds": 3
+    },
+    "soft_domain_count": 26,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "jackson posts heartfelt message after emotional",
+    "sample_title": "Alan Jackson Posts Heartfelt Message After Emotional , Sold - Out Final Show",
+    "domain_count": 18,
+    "mastheads": [
+      "107mus.iheart.com",
+      "963starcountry.iheart.com",
+      "973thebullicons.iheart.com",
+      "975wcos.iheart.com",
+      "991kglx.iheart.com",
+      "big1047.iheart.com",
+      "big955chicago.iheart.com",
+      "bill95.iheart.com",
+      "buckeyecountry943.iheart.com",
+      "bull1057.iheart.com",
+      "ctqcountry.iheart.com",
+      "kbmr.iheart.com",
+      "kixcountry929.iheart.com",
+      "kj97.iheart.com",
+      "kssn.iheart.com",
+      "kykr.iheart.com",
+      "thebig98.iheart.com",
+      "thekat.iheart.com"
+    ],
+    "article_count": 18,
+    "first_domain": "975wcos.iheart.com",
+    "first_seen": "2026-06-30T17:45+00:00",
+    "span_hours": 1.5,
+    "cascade": [
+      {
+        "at": "2026-06-30T17:45+00:00",
+        "domain": "975wcos.iheart.com"
+      },
+      {
+        "at": "2026-06-30T17:45+00:00",
+        "domain": "kj97.iheart.com"
+      },
+      {
+        "at": "2026-06-30T18:00+00:00",
+        "domain": "107mus.iheart.com"
+      },
+      {
+        "at": "2026-06-30T18:00+00:00",
+        "domain": "buckeyecountry943.iheart.com"
+      },
+      {
+        "at": "2026-06-30T18:15+00:00",
+        "domain": "963starcountry.iheart.com"
+      },
+      {
+        "at": "2026-06-30T18:15+00:00",
+        "domain": "kixcountry929.iheart.com"
+      },
+      {
+        "at": "2026-06-30T18:15+00:00",
+        "domain": "kssn.iheart.com"
+      },
+      {
+        "at": "2026-06-30T18:15+00:00",
+        "domain": "thekat.iheart.com"
+      },
+      {
+        "at": "2026-06-30T18:30+00:00",
+        "domain": "kykr.iheart.com"
+      },
+      {
+        "at": "2026-06-30T18:45+00:00",
+        "domain": "973thebullicons.iheart.com"
+      },
+      {
+        "at": "2026-06-30T18:45+00:00",
+        "domain": "bill95.iheart.com"
+      },
+      {
+        "at": "2026-06-30T18:45+00:00",
+        "domain": "bull1057.iheart.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "com",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 18,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 725,
+    "domains_scanned": 541,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 0,
+      "technology": 0,
+      "health": 0,
+      "science": 0,
+      "business": 0,
+      "sports": 250,
+      "weather": 250
+    },
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-01"
+  }
+}

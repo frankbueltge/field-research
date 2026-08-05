@@ -1,0 +1,218 @@
+{
+  "generated_at": "2026-07-28T08:38:40+00:00",
+  "date": "2026-07-28",
+  "echo_index": 0.182,
+  "soft_echo_index": 0.182,
+  "headline": {
+    "phrase": "death hit friend and fellow broadcaster",
+    "sample_title": "Dermot Murnaghan death hit friend and fellow broadcaster  like ton of bricks  ",
+    "domain_count": 22,
+    "mastheads": [
+      "andoveradvertiser.co.uk",
+      "basingstokegazette.co.uk",
+      "borehamwoodtimes.co.uk",
+      "chesterstandard.co.uk",
+      "countytimes.co.uk",
+      "dailyecho.co.uk",
+      "denbighshirefreepress.co.uk",
+      "dumbartonreporter.co.uk",
+      "gazetteandherald.co.uk",
+      "hamhigh.co.uk",
+      "kidderminstershuttle.co.uk",
+      "maldonandburnhamstandard.co.uk",
+      "milfordmercury.co.uk",
+      "northwaleschronicle.co.uk",
+      "nwemail.co.uk",
+      "redditchadvertiser.co.uk",
+      "swindonadvertiser.co.uk",
+      "theargus.co.uk",
+      "thewestonmercury.co.uk",
+      "thisiswiltshire.co.uk",
+      "thurrockgazette.co.uk",
+      "westerntelegraph.co.uk"
+    ],
+    "article_count": 22,
+    "first_domain": "andoveradvertiser.co.uk",
+    "first_seen": "2026-07-28T05:15+00:00",
+    "span_hours": 1.2,
+    "cascade": [
+      {
+        "at": "2026-07-28T05:15+00:00",
+        "domain": "andoveradvertiser.co.uk"
+      },
+      {
+        "at": "2026-07-28T05:15+00:00",
+        "domain": "chesterstandard.co.uk"
+      },
+      {
+        "at": "2026-07-28T05:15+00:00",
+        "domain": "thurrockgazette.co.uk"
+      },
+      {
+        "at": "2026-07-28T05:30+00:00",
+        "domain": "dumbartonreporter.co.uk"
+      },
+      {
+        "at": "2026-07-28T05:30+00:00",
+        "domain": "northwaleschronicle.co.uk"
+      },
+      {
+        "at": "2026-07-28T05:30+00:00",
+        "domain": "westerntelegraph.co.uk"
+      },
+      {
+        "at": "2026-07-28T05:45+00:00",
+        "domain": "basingstokegazette.co.uk"
+      },
+      {
+        "at": "2026-07-28T05:45+00:00",
+        "domain": "borehamwoodtimes.co.uk"
+      },
+      {
+        "at": "2026-07-28T05:45+00:00",
+        "domain": "dailyecho.co.uk"
+      },
+      {
+        "at": "2026-07-28T05:45+00:00",
+        "domain": "denbighshirefreepress.co.uk"
+      },
+      {
+        "at": "2026-07-28T05:45+00:00",
+        "domain": "hamhigh.co.uk"
+      },
+      {
+        "at": "2026-07-28T05:45+00:00",
+        "domain": "maldonandburnhamstandard.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 22,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "prescribing role for aussie pharmacists boosts",
+    "sample_title": "New prescribing role for Aussie pharmacists boosts patient access | Harden Murrumburrah Express",
+    "domain_count": 19,
+    "mastheads": [
+      "bunburymail.com.au",
+      "canberratimes.com.au",
+      "crookwellgazette.com.au",
+      "greatlakesadvocate.com.au",
+      "hardenexpress.com.au",
+      "illawarramercury.com.au",
+      "katherinetimes.com.au",
+      "maitlandmercury.com.au",
+      "mudgeeguardian.com.au",
+      "northerndailyleader.com.au",
+      "northweststar.com.au",
+      "nvi.com.au",
+      "sconeadvocate.com.au",
+      "singletonargus.com.au",
+      "southernhighlandnews.com.au",
+      "standard.net.au",
+      "wellingtontimes.com.au",
+      "westernadvocate.com.au",
+      "yasstribune.com.au"
+    ],
+    "article_count": 19,
+    "first_domain": "canberratimes.com.au",
+    "first_seen": "2026-07-28T06:15+00:00",
+    "span_hours": 2.0,
+    "cascade": [
+      {
+        "at": "2026-07-28T06:15+00:00",
+        "domain": "canberratimes.com.au"
+      },
+      {
+        "at": "2026-07-28T06:15+00:00",
+        "domain": "northerndailyleader.com.au"
+      },
+      {
+        "at": "2026-07-28T06:15+00:00",
+        "domain": "northweststar.com.au"
+      },
+      {
+        "at": "2026-07-28T06:15+00:00",
+        "domain": "wellingtontimes.com.au"
+      },
+      {
+        "at": "2026-07-28T06:30+00:00",
+        "domain": "bunburymail.com.au"
+      },
+      {
+        "at": "2026-07-28T06:30+00:00",
+        "domain": "crookwellgazette.com.au"
+      },
+      {
+        "at": "2026-07-28T06:30+00:00",
+        "domain": "hardenexpress.com.au"
+      },
+      {
+        "at": "2026-07-28T06:30+00:00",
+        "domain": "katherinetimes.com.au"
+      },
+      {
+        "at": "2026-07-28T06:30+00:00",
+        "domain": "maitlandmercury.com.au"
+      },
+      {
+        "at": "2026-07-28T06:30+00:00",
+        "domain": "mudgeeguardian.com.au"
+      },
+      {
+        "at": "2026-07-28T06:30+00:00",
+        "domain": "nvi.com.au"
+      },
+      {
+        "at": "2026-07-28T06:30+00:00",
+        "domain": "singletonargus.com.au"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "au",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 19,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1470,
+    "domains_scanned": 690,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 0,
+      "economy": 250,
+      "technology": 250,
+      "health": 250,
+      "science": 250,
+      "business": 250,
+      "sports": 250,
+      "weather": 250
+    },
+    "beats_failed": 1,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-28"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "generated_at": "2026-06-30T09:41:11+00:00",
+  "date": "2026-06-30",
+  "echo_index": 0.146,
+  "soft_echo_index": 0.157,
+  "headline": {
+    "phrase": "sainsbury says sales encouraging but impact",
+    "sample_title": "Sainsbury says sales encouraging but impact of Iran war still  uncertain  ",
+    "domain_count": 14,
+    "mastheads": [
+      "basingstokegazette.co.uk",
+      "bracknellnews.co.uk",
+      "chesterstandard.co.uk",
+      "countypress.co.uk",
+      "dailyecho.co.uk",
+      "gazetteherald.co.uk",
+      "kilburntimes.co.uk",
+      "leaderlive.co.uk",
+      "maldonandburnhamstandard.co.uk",
+      "northwichguardian.co.uk",
+      "thenorthernecho.co.uk",
+      "westerntelegraph.co.uk",
+      "wharfedaleobserver.co.uk",
+      "yourlocalguardian.co.uk"
+    ],
+    "article_count": 14,
+    "first_domain": "countypress.co.uk",
+    "first_seen": "2026-06-30T08:00+00:00",
+    "span_hours": 1.2,
+    "cascade": [
+      {
+        "at": "2026-06-30T08:00+00:00",
+        "domain": "countypress.co.uk"
+      },
+      {
+        "at": "2026-06-30T08:00+00:00",
+        "domain": "kilburntimes.co.uk"
+      },
+      {
+        "at": "2026-06-30T08:00+00:00",
+        "domain": "northwichguardian.co.uk"
+      },
+      {
+        "at": "2026-06-30T08:00+00:00",
+        "domain": "westerntelegraph.co.uk"
+      },
+      {
+        "at": "2026-06-30T08:45+00:00",
+        "domain": "basingstokegazette.co.uk"
+      },
+      {
+        "at": "2026-06-30T08:45+00:00",
+        "domain": "bracknellnews.co.uk"
+      },
+      {
+        "at": "2026-06-30T08:45+00:00",
+        "domain": "chesterstandard.co.uk"
+      },
+      {
+        "at": "2026-06-30T08:45+00:00",
+        "domain": "gazetteherald.co.uk"
+      },
+      {
+        "at": "2026-06-30T08:45+00:00",
+        "domain": "leaderlive.co.uk"
+      },
+      {
+        "at": "2026-06-30T08:45+00:00",
+        "domain": "maldonandburnhamstandard.co.uk"
+      },
+      {
+        "at": "2026-06-30T08:45+00:00",
+        "domain": "thenorthernecho.co.uk"
+      },
+      {
+        "at": "2026-06-30T08:45+00:00",
+        "domain": "wharfedaleobserver.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 14,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "fork out for gambling exclusion campaign",
+    "sample_title": "Betting apps fork out for gambling exclusion campaign",
+    "domain_count": 12,
+    "mastheads": [
+      "bordermail.com.au",
+      "camdencourier.com.au",
+      "canberratimes.com.au",
+      "goulburnpost.com.au",
+      "hepburnadvocate.com.au",
+      "illawarramercury.com.au",
+      "lithgowmercury.com.au",
+      "merimbulanewsweekly.com.au",
+      "nynganobserver.com.au",
+      "perthnow.com.au",
+      "sconeadvocate.com.au",
+      "theleader.com.au"
+    ],
+    "article_count": 12,
+    "first_domain": "canberratimes.com.au",
+    "first_seen": "2026-06-30T07:45+00:00",
+    "span_hours": 1.5,
+    "cascade": [
+      {
+        "at": "2026-06-30T07:45+00:00",
+        "domain": "canberratimes.com.au"
+      },
+      {
+        "at": "2026-06-30T08:00+00:00",
+        "domain": "goulburnpost.com.au"
+      },
+      {
+        "at": "2026-06-30T08:00+00:00",
+        "domain": "illawarramercury.com.au"
+      },
+      {
+        "at": "2026-06-30T08:00+00:00",
+        "domain": "perthnow.com.au"
+      },
+      {
+        "at": "2026-06-30T08:00+00:00",
+        "domain": "sconeadvocate.com.au"
+      },
+      {
+        "at": "2026-06-30T08:45+00:00",
+        "domain": "bordermail.com.au"
+      },
+      {
+        "at": "2026-06-30T08:45+00:00",
+        "domain": "camdencourier.com.au"
+      },
+      {
+        "at": "2026-06-30T08:45+00:00",
+        "domain": "lithgowmercury.com.au"
+      },
+      {
+        "at": "2026-06-30T08:45+00:00",
+        "domain": "nynganobserver.com.au"
+      },
+      {
+        "at": "2026-06-30T08:45+00:00",
+        "domain": "theleader.com.au"
+      },
+      {
+        "at": "2026-06-30T09:15+00:00",
+        "domain": "hepburnadvocate.com.au"
+      },
+      {
+        "at": "2026-06-30T09:15+00:00",
+        "domain": "merimbulanewsweekly.com.au"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "au",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 12,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 923,
+    "domains_scanned": 506,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 0,
+      "economy": 0,
+      "technology": 0,
+      "health": 0,
+      "science": 250,
+      "business": 250,
+      "sports": 250,
+      "weather": 250
+    },
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-06-30"
+  }
+}

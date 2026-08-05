@@ -1,0 +1,218 @@
+{
+  "generated_at": "2026-07-07T09:49:16+00:00",
+  "date": "2026-07-07",
+  "echo_index": 0.214,
+  "soft_echo_index": 0.215,
+  "headline": {
+    "phrase": "whats driving europes auto industry crisis",
+    "sample_title": "Running on empty : Whats driving Europes auto industry crisis",
+    "domain_count": 26,
+    "mastheads": [
+      "afghanistannews.net",
+      "azerbaijannews.net",
+      "bangladeshsun.com",
+      "birminghamstar.com",
+      "bruneinews.net",
+      "cincinnatisun.com",
+      "coloradostar.com",
+      "greekherald.com",
+      "heraldglobe.com",
+      "hongkongherald.com",
+      "iranherald.com",
+      "irishsun.com",
+      "jamaicantimes.com",
+      "laosnews.net",
+      "londonmercury.com",
+      "middleeaststar.com",
+      "nepalnational.com",
+      "newyorkstatesman.com",
+      "newzealandstar.com",
+      "oklahomacitysun.com",
+      "parisguardian.com",
+      "sierraleonetimes.com",
+      "taiwansun.com",
+      "theuknews.com",
+      "tucsonpost.com",
+      "utahindependent.com"
+    ],
+    "article_count": 26,
+    "first_domain": "birminghamstar.com",
+    "first_seen": "2026-07-07T05:15+00:00",
+    "span_hours": 2.2,
+    "cascade": [
+      {
+        "at": "2026-07-07T05:15+00:00",
+        "domain": "birminghamstar.com"
+      },
+      {
+        "at": "2026-07-07T05:15+00:00",
+        "domain": "coloradostar.com"
+      },
+      {
+        "at": "2026-07-07T05:15+00:00",
+        "domain": "hongkongherald.com"
+      },
+      {
+        "at": "2026-07-07T05:30+00:00",
+        "domain": "azerbaijannews.net"
+      },
+      {
+        "at": "2026-07-07T05:30+00:00",
+        "domain": "jamaicantimes.com"
+      },
+      {
+        "at": "2026-07-07T05:30+00:00",
+        "domain": "nepalnational.com"
+      },
+      {
+        "at": "2026-07-07T05:45+00:00",
+        "domain": "greekherald.com"
+      },
+      {
+        "at": "2026-07-07T05:45+00:00",
+        "domain": "middleeaststar.com"
+      },
+      {
+        "at": "2026-07-07T05:45+00:00",
+        "domain": "parisguardian.com"
+      },
+      {
+        "at": "2026-07-07T06:00+00:00",
+        "domain": "bangladeshsun.com"
+      },
+      {
+        "at": "2026-07-07T06:00+00:00",
+        "domain": "londonmercury.com"
+      },
+      {
+        "at": "2026-07-07T06:00+00:00",
+        "domain": "sierraleonetimes.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "com",
+      "tld_share": 0.85,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 26,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "amid iran war but gas production",
+    "sample_title": "Shell sees boost from oil price spike amid Iran war , but gas production hit",
+    "domain_count": 15,
+    "mastheads": [
+      "andoveradvertiser.co.uk",
+      "barryanddistrictnews.co.uk",
+      "bournemouthecho.co.uk",
+      "bridportnews.co.uk",
+      "countytimes.co.uk",
+      "dailyecho.co.uk",
+      "eppingforestguardian.co.uk",
+      "hamhigh.co.uk",
+      "kentonline.co.uk",
+      "maldonandburnhamstandard.co.uk",
+      "milfordmercury.co.uk",
+      "nwemail.co.uk",
+      "redditchadvertiser.co.uk",
+      "richmondandtwickenhamtimes.co.uk",
+      "standard.co.uk"
+    ],
+    "article_count": 15,
+    "first_domain": "eppingforestguardian.co.uk",
+    "first_seen": "2026-07-07T08:15+00:00",
+    "span_hours": 0.5,
+    "cascade": [
+      {
+        "at": "2026-07-07T08:15+00:00",
+        "domain": "eppingforestguardian.co.uk"
+      },
+      {
+        "at": "2026-07-07T08:30+00:00",
+        "domain": "bournemouthecho.co.uk"
+      },
+      {
+        "at": "2026-07-07T08:30+00:00",
+        "domain": "hamhigh.co.uk"
+      },
+      {
+        "at": "2026-07-07T08:30+00:00",
+        "domain": "kentonline.co.uk"
+      },
+      {
+        "at": "2026-07-07T08:30+00:00",
+        "domain": "redditchadvertiser.co.uk"
+      },
+      {
+        "at": "2026-07-07T08:45+00:00",
+        "domain": "andoveradvertiser.co.uk"
+      },
+      {
+        "at": "2026-07-07T08:45+00:00",
+        "domain": "barryanddistrictnews.co.uk"
+      },
+      {
+        "at": "2026-07-07T08:45+00:00",
+        "domain": "bridportnews.co.uk"
+      },
+      {
+        "at": "2026-07-07T08:45+00:00",
+        "domain": "countytimes.co.uk"
+      },
+      {
+        "at": "2026-07-07T08:45+00:00",
+        "domain": "dailyecho.co.uk"
+      },
+      {
+        "at": "2026-07-07T08:45+00:00",
+        "domain": "maldonandburnhamstandard.co.uk"
+      },
+      {
+        "at": "2026-07-07T08:45+00:00",
+        "domain": "milfordmercury.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 15,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1091,
+    "domains_scanned": 588,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 0,
+      "economy": 0,
+      "technology": 250,
+      "health": 0,
+      "science": 250,
+      "business": 250,
+      "sports": 250,
+      "weather": 250
+    },
+    "beats_failed": 3,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-07"
+  }
+}

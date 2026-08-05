@@ -1,0 +1,239 @@
+{
+  "generated_at": "2026-07-21T08:35:44+00:00",
+  "date": "2026-07-21",
+  "echo_index": 0.233,
+  "soft_echo_index": 0.235,
+  "headline": {
+    "phrase": "burnham first day as prime minister",
+    "sample_title": "A look at Andy Burnham first day as Prime Minister",
+    "domain_count": 59,
+    "mastheads": [
+      "andoveradvertiser.co.uk",
+      "barryanddistrictnews.co.uk",
+      "basingstokegazette.co.uk",
+      "bicesteradvertiser.net",
+      "bordertelegraph.com",
+      "borehamwoodtimes.co.uk",
+      "bournemouthecho.co.uk",
+      "braintreeandwithamtimes.co.uk",
+      "brentwoodlive.co.uk",
+      "bridgwatermercury.co.uk",
+      "bromsgroveadvertiser.co.uk",
+      "burytimes.co.uk",
+      "denbighshirefreepress.co.uk",
+      "dorsetecho.co.uk",
+      "dudleynews.co.uk",
+      "dumbartonreporter.co.uk",
+      "dunfermlinepress.com",
+      "eadt.co.uk",
+      "eastlothiancourier.com",
+      "echo-news.co.uk",
+      "enfieldindependent.co.uk",
+      "eppingforestguardian.co.uk",
+      "falmouthpacket.co.uk",
+      "freepressseries.co.uk",
+      "gazetteandherald.co.uk",
+      "gazetteherald.co.uk",
+      "guardian-series.co.uk",
+      "halesowennews.co.uk",
+      "harwichandmanningtreestandard.co.uk",
+      "hexham-courant.co.uk",
+      "hillingdontimes.co.uk",
+      "impartialreporter.com",
+      "irvinetimes.com",
+      "kidderminstershuttle.co.uk",
+      "kilburntimes.co.uk",
+      "lancashiretelegraph.co.uk",
+      "lbc.co.uk",
+      "ledburyreporter.co.uk",
+      "leighjournal.co.uk",
+      "ludlowadvertiser.co.uk"
+    ],
+    "article_count": 59,
+    "first_domain": "dunfermlinepress.com",
+    "first_seen": "2026-07-21T05:00+00:00",
+    "span_hours": 3.0,
+    "cascade": [
+      {
+        "at": "2026-07-21T05:00+00:00",
+        "domain": "dunfermlinepress.com"
+      },
+      {
+        "at": "2026-07-21T05:00+00:00",
+        "domain": "freepressseries.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:00+00:00",
+        "domain": "irvinetimes.com"
+      },
+      {
+        "at": "2026-07-21T05:15+00:00",
+        "domain": "dudleynews.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:15+00:00",
+        "domain": "falmouthpacket.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:15+00:00",
+        "domain": "halesowennews.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:15+00:00",
+        "domain": "leighjournal.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:15+00:00",
+        "domain": "messengernewspapers.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:15+00:00",
+        "domain": "northwalespioneer.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:30+00:00",
+        "domain": "bromsgroveadvertiser.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:30+00:00",
+        "domain": "echo-news.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:30+00:00",
+        "domain": "enfieldindependent.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.85,
+      "distinct_tlds": 3
+    },
+    "soft_domain_count": 59,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "to appear in court charged with",
+    "sample_title": "Man , 28 , set to appear in court charged with murder of Ann Widdecombe",
+    "domain_count": 22,
+    "mastheads": [
+      "asianimage.co.uk",
+      "bromsgroveadvertiser.co.uk",
+      "chesterstandard.co.uk",
+      "eadt.co.uk",
+      "enfieldindependent.co.uk",
+      "falmouthpacket.co.uk",
+      "gazetteherald.co.uk",
+      "hampshirechronicle.co.uk",
+      "hexham-courant.co.uk",
+      "hillingdontimes.co.uk",
+      "impartialreporter.com",
+      "irvinetimes.com",
+      "leighjournal.co.uk",
+      "newburytoday.co.uk",
+      "northwalespioneer.co.uk",
+      "rte.ie",
+      "sthelensstar.co.uk",
+      "swindonadvertiser.co.uk",
+      "thetelegraphandargus.co.uk",
+      "thisisoxfordshire.co.uk",
+      "timesandstar.co.uk",
+      "yourlocalguardian.co.uk"
+    ],
+    "article_count": 22,
+    "first_domain": "asianimage.co.uk",
+    "first_seen": "2026-07-21T05:00+00:00",
+    "span_hours": 3.0,
+    "cascade": [
+      {
+        "at": "2026-07-21T05:00+00:00",
+        "domain": "asianimage.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:00+00:00",
+        "domain": "irvinetimes.com"
+      },
+      {
+        "at": "2026-07-21T05:00+00:00",
+        "domain": "thetelegraphandargus.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:15+00:00",
+        "domain": "falmouthpacket.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:15+00:00",
+        "domain": "leighjournal.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:15+00:00",
+        "domain": "northwalespioneer.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:30+00:00",
+        "domain": "bromsgroveadvertiser.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:30+00:00",
+        "domain": "enfieldindependent.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:30+00:00",
+        "domain": "hillingdontimes.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:30+00:00",
+        "domain": "swindonadvertiser.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:30+00:00",
+        "domain": "thisisoxfordshire.co.uk"
+      },
+      {
+        "at": "2026-07-21T05:30+00:00",
+        "domain": "timesandstar.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.86,
+      "distinct_tlds": 3
+    },
+    "soft_domain_count": 22,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1248,
+    "domains_scanned": 557,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 250,
+      "technology": 250,
+      "health": 0,
+      "science": 250,
+      "business": 250,
+      "sports": 250,
+      "weather": 0
+    },
+    "beats_failed": 2,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-21"
+  }
+}

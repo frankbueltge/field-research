@@ -1,0 +1,233 @@
+{
+  "generated_at": "2026-07-29T08:47:32+00:00",
+  "date": "2026-07-29",
+  "echo_index": 0.167,
+  "soft_echo_index": 0.171,
+  "headline": {
+    "phrase": "as effort to rescue survivors continues",
+    "sample_title": "Earthquake leaves 13 dead in Japan as effort to rescue survivors continues",
+    "domain_count": 35,
+    "mastheads": [
+      "andoveradvertiser.co.uk",
+      "basingstokegazette.co.uk",
+      "bournemouthecho.co.uk",
+      "bridportnews.co.uk",
+      "chesterstandard.co.uk",
+      "dailyecho.co.uk",
+      "denbighshirefreepress.co.uk",
+      "eastlothiancourier.com",
+      "enfieldindependent.co.uk",
+      "eppingforestguardian.co.uk",
+      "falmouthpacket.co.uk",
+      "gazetteseries.co.uk",
+      "hampshirechronicle.co.uk",
+      "harwichandmanningtreestandard.co.uk",
+      "heraldseries.co.uk",
+      "keighleynews.co.uk",
+      "kidderminstershuttle.co.uk",
+      "maldonandburnhamstandard.co.uk",
+      "messengernewspapers.co.uk",
+      "northwaleschronicle.co.uk",
+      "oxfordmail.co.uk",
+      "readingchronicle.co.uk",
+      "redditchadvertiser.co.uk",
+      "richmondandtwickenhamtimes.co.uk",
+      "runcornandwidnesworld.co.uk",
+      "stroudnewsandjournal.co.uk",
+      "surreycomet.co.uk",
+      "theboltonnews.co.uk",
+      "thenorthernecho.co.uk",
+      "times-series.co.uk",
+      "timesandstar.co.uk",
+      "wiltsglosstandard.co.uk",
+      "wiltshiretimes.co.uk",
+      "witneygazette.co.uk",
+      "yorkpress.co.uk"
+    ],
+    "article_count": 35,
+    "first_domain": "andoveradvertiser.co.uk",
+    "first_seen": "2026-07-29T04:30+00:00",
+    "span_hours": 3.2,
+    "cascade": [
+      {
+        "at": "2026-07-29T04:30+00:00",
+        "domain": "andoveradvertiser.co.uk"
+      },
+      {
+        "at": "2026-07-29T04:30+00:00",
+        "domain": "bournemouthecho.co.uk"
+      },
+      {
+        "at": "2026-07-29T04:30+00:00",
+        "domain": "chesterstandard.co.uk"
+      },
+      {
+        "at": "2026-07-29T04:30+00:00",
+        "domain": "denbighshirefreepress.co.uk"
+      },
+      {
+        "at": "2026-07-29T04:30+00:00",
+        "domain": "eppingforestguardian.co.uk"
+      },
+      {
+        "at": "2026-07-29T04:30+00:00",
+        "domain": "hampshirechronicle.co.uk"
+      },
+      {
+        "at": "2026-07-29T04:30+00:00",
+        "domain": "runcornandwidnesworld.co.uk"
+      },
+      {
+        "at": "2026-07-29T04:30+00:00",
+        "domain": "stroudnewsandjournal.co.uk"
+      },
+      {
+        "at": "2026-07-29T04:30+00:00",
+        "domain": "surreycomet.co.uk"
+      },
+      {
+        "at": "2026-07-29T04:30+00:00",
+        "domain": "timesandstar.co.uk"
+      },
+      {
+        "at": "2026-07-29T04:30+00:00",
+        "domain": "wiltshiretimes.co.uk"
+      },
+      {
+        "at": "2026-07-29T04:45+00:00",
+        "domain": "eastlothiancourier.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.97,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 35,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "year to peak with temperatures of",
+    "sample_title": "Fourth heatwave of year to peak with temperatures of up to 35C",
+    "domain_count": 21,
+    "mastheads": [
+      "barryanddistrictnews.co.uk",
+      "bridportnews.co.uk",
+      "bromsgroveadvertiser.co.uk",
+      "cotswoldjournal.co.uk",
+      "dailyecho.co.uk",
+      "darlingtonandstocktontimes.co.uk",
+      "dunfermlinepress.com",
+      "falmouthpacket.co.uk",
+      "greenocktelegraph.co.uk",
+      "guardian-series.co.uk",
+      "hillingdontimes.co.uk",
+      "ipswichstar.co.uk",
+      "keighleynews.co.uk",
+      "london-now.co.uk",
+      "newburytoday.co.uk",
+      "northwaleschronicle.co.uk",
+      "stratford-herald.com",
+      "swindonadvertiser.co.uk",
+      "times-series.co.uk",
+      "watfordobserver.co.uk",
+      "witneygazette.co.uk"
+    ],
+    "article_count": 21,
+    "first_domain": "hillingdontimes.co.uk",
+    "first_seen": "2026-07-29T02:30+00:00",
+    "span_hours": 1.2,
+    "cascade": [
+      {
+        "at": "2026-07-29T02:30+00:00",
+        "domain": "hillingdontimes.co.uk"
+      },
+      {
+        "at": "2026-07-29T02:30+00:00",
+        "domain": "keighleynews.co.uk"
+      },
+      {
+        "at": "2026-07-29T02:30+00:00",
+        "domain": "london-now.co.uk"
+      },
+      {
+        "at": "2026-07-29T02:30+00:00",
+        "domain": "witneygazette.co.uk"
+      },
+      {
+        "at": "2026-07-29T02:45+00:00",
+        "domain": "bridportnews.co.uk"
+      },
+      {
+        "at": "2026-07-29T02:45+00:00",
+        "domain": "falmouthpacket.co.uk"
+      },
+      {
+        "at": "2026-07-29T02:45+00:00",
+        "domain": "swindonadvertiser.co.uk"
+      },
+      {
+        "at": "2026-07-29T03:00+00:00",
+        "domain": "barryanddistrictnews.co.uk"
+      },
+      {
+        "at": "2026-07-29T03:00+00:00",
+        "domain": "bromsgroveadvertiser.co.uk"
+      },
+      {
+        "at": "2026-07-29T03:00+00:00",
+        "domain": "dailyecho.co.uk"
+      },
+      {
+        "at": "2026-07-29T03:00+00:00",
+        "domain": "darlingtonandstocktontimes.co.uk"
+      },
+      {
+        "at": "2026-07-29T03:00+00:00",
+        "domain": "greenocktelegraph.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.9,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 21,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1272,
+    "domains_scanned": 658,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 0,
+      "economy": 0,
+      "technology": 250,
+      "health": 250,
+      "science": 250,
+      "business": 250,
+      "sports": 250,
+      "weather": 250
+    },
+    "beats_failed": 2,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-29"
+  }
+}

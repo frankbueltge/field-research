@@ -1,0 +1,253 @@
+{
+  "generated_at": "2026-07-12T08:23:21+00:00",
+  "date": "2026-07-12",
+  "echo_index": 0.284,
+  "soft_echo_index": 0.29,
+  "headline": {
+    "phrase": "of the murder of ann widdecombe",
+    "sample_title": "Police arrest 28 - year - old man on suspicion of the murder of Ann Widdecombe",
+    "domain_count": 45,
+    "mastheads": [
+      "asianimage.co.uk",
+      "brentwoodlive.co.uk",
+      "bridgwatermercury.co.uk",
+      "bridportnews.co.uk",
+      "chardandilminsternews.co.uk",
+      "clydebankpost.co.uk",
+      "cotswoldjournal.co.uk",
+      "countypress.co.uk",
+      "dorsetecho.co.uk",
+      "eadt.co.uk",
+      "echo-news.co.uk",
+      "eveshamjournal.co.uk",
+      "gazette-news.co.uk",
+      "greenocktelegraph.co.uk",
+      "guardian-series.co.uk",
+      "halsteadgazette.co.uk",
+      "hamhigh.co.uk",
+      "harwichandmanningtreestandard.co.uk",
+      "hexham-courant.co.uk",
+      "ipswichstar.co.uk",
+      "kentonline.co.uk",
+      "kidderminstershuttle.co.uk",
+      "kilburntimes.co.uk",
+      "lancashiretelegraph.co.uk",
+      "newburytoday.co.uk",
+      "newsandstar.co.uk",
+      "northwalespioneer.co.uk",
+      "northwichguardian.co.uk",
+      "peeblesshirenews.com",
+      "redditchadvertiser.co.uk",
+      "rutland-times.co.uk",
+      "salisburyjournal.co.uk",
+      "sloughobserver.co.uk",
+      "southwalesargus.co.uk",
+      "southwalesguardian.co.uk",
+      "stratford-herald.com",
+      "theboltonnews.co.uk",
+      "thetelegraphandargus.co.uk",
+      "thetottenhamindependent.co.uk",
+      "thisisoxfordshire.co.uk"
+    ],
+    "article_count": 45,
+    "first_domain": "sloughobserver.co.uk",
+    "first_seen": "2026-07-12T01:00+00:00",
+    "span_hours": 3.0,
+    "cascade": [
+      {
+        "at": "2026-07-12T01:00+00:00",
+        "domain": "sloughobserver.co.uk"
+      },
+      {
+        "at": "2026-07-12T01:00+00:00",
+        "domain": "stratford-herald.com"
+      },
+      {
+        "at": "2026-07-12T01:15+00:00",
+        "domain": "brentwoodlive.co.uk"
+      },
+      {
+        "at": "2026-07-12T01:15+00:00",
+        "domain": "cotswoldjournal.co.uk"
+      },
+      {
+        "at": "2026-07-12T01:15+00:00",
+        "domain": "dorsetecho.co.uk"
+      },
+      {
+        "at": "2026-07-12T01:15+00:00",
+        "domain": "eveshamjournal.co.uk"
+      },
+      {
+        "at": "2026-07-12T01:15+00:00",
+        "domain": "harwichandmanningtreestandard.co.uk"
+      },
+      {
+        "at": "2026-07-12T01:15+00:00",
+        "domain": "northwichguardian.co.uk"
+      },
+      {
+        "at": "2026-07-12T01:15+00:00",
+        "domain": "wiltsglosstandard.co.uk"
+      },
+      {
+        "at": "2026-07-12T01:45+00:00",
+        "domain": "halsteadgazette.co.uk"
+      },
+      {
+        "at": "2026-07-12T01:45+00:00",
+        "domain": "kidderminstershuttle.co.uk"
+      },
+      {
+        "at": "2026-07-12T01:45+00:00",
+        "domain": "northwalespioneer.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.95,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 47,
+    "soft_echo_extra": 2
+  },
+  "runner_up": {
+    "phrase": "strait of hormuz tehran lashes out",
+    "sample_title": "US attacks Iran over ship being hit in Strait of Hormuz ; Tehran lashes out again at Gulf Arab states",
+    "domain_count": 36,
+    "mastheads": [
+      "apr.org",
+      "clickondetroit.com",
+      "durangoherald.com",
+      "houstonpublicmedia.org",
+      "interlochenpublicradio.org",
+      "kansaspublicradio.org",
+      "kclu.org",
+      "kenw.org",
+      "kios.org",
+      "kjzz.org",
+      "kmuw.org",
+      "krcu.org",
+      "krmg.com",
+      "ksmu.org",
+      "kunm.org",
+      "kwit.org",
+      "kyuk.org",
+      "lancasteronline.com",
+      "news.prairiepublic.org",
+      "news4jax.com",
+      "nsnews.com",
+      "panow.com",
+      "sitkasentinel.com",
+      "thegazette.com",
+      "upr.org",
+      "wemu.org",
+      "wlrn.org",
+      "wmra.org",
+      "wmuk.org",
+      "wnmufm.org",
+      "wnyc.org",
+      "wsiu.org",
+      "wsls.com",
+      "wvtf.org",
+      "wypr.org",
+      "yakimaherald.com"
+    ],
+    "article_count": 37,
+    "first_domain": "kclu.org",
+    "first_seen": "2026-07-12T06:00+00:00",
+    "span_hours": 2.0,
+    "cascade": [
+      {
+        "at": "2026-07-12T06:00+00:00",
+        "domain": "kclu.org"
+      },
+      {
+        "at": "2026-07-12T06:00+00:00",
+        "domain": "kjzz.org"
+      },
+      {
+        "at": "2026-07-12T06:00+00:00",
+        "domain": "ksmu.org"
+      },
+      {
+        "at": "2026-07-12T06:00+00:00",
+        "domain": "news.prairiepublic.org"
+      },
+      {
+        "at": "2026-07-12T06:00+00:00",
+        "domain": "wnmufm.org"
+      },
+      {
+        "at": "2026-07-12T06:15+00:00",
+        "domain": "clickondetroit.com"
+      },
+      {
+        "at": "2026-07-12T06:15+00:00",
+        "domain": "interlochenpublicradio.org"
+      },
+      {
+        "at": "2026-07-12T06:15+00:00",
+        "domain": "kansaspublicradio.org"
+      },
+      {
+        "at": "2026-07-12T06:15+00:00",
+        "domain": "kios.org"
+      },
+      {
+        "at": "2026-07-12T06:15+00:00",
+        "domain": "krmg.com"
+      },
+      {
+        "at": "2026-07-12T06:15+00:00",
+        "domain": "kunm.org"
+      },
+      {
+        "at": "2026-07-12T06:15+00:00",
+        "domain": "kwit.org"
+      }
+    ],
+    "syndication": {
+      "label": "mixed",
+      "top_tld": "org",
+      "tld_share": 0.69,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 36,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1312,
+    "domains_scanned": 654,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 250,
+      "technology": 0,
+      "health": 250,
+      "science": 0,
+      "business": 250,
+      "sports": 250,
+      "weather": 250
+    },
+    "beats_failed": 2,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-12"
+  }
+}

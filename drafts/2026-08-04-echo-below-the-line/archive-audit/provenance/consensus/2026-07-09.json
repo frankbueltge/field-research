@@ -1,0 +1,207 @@
+{
+  "generated_at": "2026-07-09T09:50:53+00:00",
+  "date": "2026-07-09",
+  "echo_index": 0.135,
+  "soft_echo_index": 0.136,
+  "headline": {
+    "phrase": "democrat ends run for key senate",
+    "sample_title": "Democrat ends run for key Senate seat after rape claim",
+    "domain_count": 16,
+    "mastheads": [
+      "areanews.com.au",
+      "armidaleexpress.com.au",
+      "bendigoadvertiser.com.au",
+      "bluemountainsgazette.com.au",
+      "camdencourier.com.au",
+      "cessnockadvertiser.com.au",
+      "edenmagnet.com.au",
+      "greatlakesadvocate.com.au",
+      "hepburnadvocate.com.au",
+      "irrigator.com.au",
+      "naroomanewsonline.com.au",
+      "narrominenewsonline.com.au",
+      "northweststar.com.au",
+      "oberonreview.com.au",
+      "thecourier.com.au",
+      "yasstribune.com.au"
+    ],
+    "article_count": 16,
+    "first_domain": "camdencourier.com.au",
+    "first_seen": "2026-07-09T07:15+00:00",
+    "span_hours": 2.0,
+    "cascade": [
+      {
+        "at": "2026-07-09T07:15+00:00",
+        "domain": "camdencourier.com.au"
+      },
+      {
+        "at": "2026-07-09T07:15+00:00",
+        "domain": "naroomanewsonline.com.au"
+      },
+      {
+        "at": "2026-07-09T07:15+00:00",
+        "domain": "northweststar.com.au"
+      },
+      {
+        "at": "2026-07-09T07:30+00:00",
+        "domain": "cessnockadvertiser.com.au"
+      },
+      {
+        "at": "2026-07-09T07:30+00:00",
+        "domain": "irrigator.com.au"
+      },
+      {
+        "at": "2026-07-09T07:30+00:00",
+        "domain": "oberonreview.com.au"
+      },
+      {
+        "at": "2026-07-09T07:45+00:00",
+        "domain": "bendigoadvertiser.com.au"
+      },
+      {
+        "at": "2026-07-09T07:45+00:00",
+        "domain": "bluemountainsgazette.com.au"
+      },
+      {
+        "at": "2026-07-09T07:45+00:00",
+        "domain": "greatlakesadvocate.com.au"
+      },
+      {
+        "at": "2026-07-09T07:45+00:00",
+        "domain": "hepburnadvocate.com.au"
+      },
+      {
+        "at": "2026-07-09T08:00+00:00",
+        "domain": "areanews.com.au"
+      },
+      {
+        "at": "2026-07-09T08:00+00:00",
+        "domain": "armidaleexpress.com.au"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "au",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 16,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "a positive note after meeting zelenskyy",
+    "sample_title": "Trump wraps NATO summit on a positive note , after meeting Zelenskyy",
+    "domain_count": 14,
+    "mastheads": [
+      "apr.org",
+      "kalw.org",
+      "kbia.org",
+      "ketr.org",
+      "knpr.org",
+      "ksut.org",
+      "kuaf.com",
+      "kunc.org",
+      "kvpr.org",
+      "kyuk.org",
+      "northernpublicradio.org",
+      "waer.org",
+      "wclk.com",
+      "wvasfm.org"
+    ],
+    "article_count": 14,
+    "first_domain": "apr.org",
+    "first_seen": "2026-07-09T07:30+00:00",
+    "span_hours": 1.8,
+    "cascade": [
+      {
+        "at": "2026-07-09T07:30+00:00",
+        "domain": "apr.org"
+      },
+      {
+        "at": "2026-07-09T07:30+00:00",
+        "domain": "kbia.org"
+      },
+      {
+        "at": "2026-07-09T07:30+00:00",
+        "domain": "ketr.org"
+      },
+      {
+        "at": "2026-07-09T07:30+00:00",
+        "domain": "kunc.org"
+      },
+      {
+        "at": "2026-07-09T07:45+00:00",
+        "domain": "kalw.org"
+      },
+      {
+        "at": "2026-07-09T07:45+00:00",
+        "domain": "northernpublicradio.org"
+      },
+      {
+        "at": "2026-07-09T07:45+00:00",
+        "domain": "wclk.com"
+      },
+      {
+        "at": "2026-07-09T08:00+00:00",
+        "domain": "ksut.org"
+      },
+      {
+        "at": "2026-07-09T08:00+00:00",
+        "domain": "kuaf.com"
+      },
+      {
+        "at": "2026-07-09T08:00+00:00",
+        "domain": "wvasfm.org"
+      },
+      {
+        "at": "2026-07-09T09:15+00:00",
+        "domain": "knpr.org"
+      },
+      {
+        "at": "2026-07-09T09:15+00:00",
+        "domain": "kvpr.org"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "org",
+      "tld_share": 0.86,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 14,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 675,
+    "domains_scanned": 351,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 0,
+      "economy": 250,
+      "technology": 250,
+      "health": 250,
+      "science": 0,
+      "business": 0,
+      "sports": 0,
+      "weather": 0
+    },
+    "beats_failed": 5,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-09"
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "generated_at": "2026-07-11T08:02:09+00:00",
+  "date": "2026-07-11",
+  "echo_index": 0.275,
+  "soft_echo_index": 0.279,
+  "headline": {
+    "phrase": "police investigating ann widdecombe death release",
+    "sample_title": "Police investigating Ann Widdecombe death release man from custody",
+    "domain_count": 28,
+    "mastheads": [
+      "bridgwatermercury.co.uk",
+      "chesterstandard.co.uk",
+      "clydebankpost.co.uk",
+      "dorsetecho.co.uk",
+      "echo-news.co.uk",
+      "edp24.co.uk",
+      "eveshamjournal.co.uk",
+      "gazetteandherald.co.uk",
+      "hampshirechronicle.co.uk",
+      "keighleynews.co.uk",
+      "kilburntimes.co.uk",
+      "lancashiretelegraph.co.uk",
+      "leaderlive.co.uk",
+      "newburytoday.co.uk",
+      "northwalespioneer.co.uk",
+      "penarthtimes.co.uk",
+      "rutland-times.co.uk",
+      "sloughobserver.co.uk",
+      "southwalesguardian.co.uk",
+      "stratford-herald.com",
+      "thisiswiltshire.co.uk",
+      "tivysideadvertiser.co.uk",
+      "wiltsglosstandard.co.uk",
+      "wiltshiretimes.co.uk",
+      "wimbledonguardian.co.uk",
+      "wirralglobe.co.uk",
+      "witneygazette.co.uk",
+      "yourlocalguardian.co.uk"
+    ],
+    "article_count": 28,
+    "first_domain": "clydebankpost.co.uk",
+    "first_seen": "2026-07-11T06:30+00:00",
+    "span_hours": 1.0,
+    "cascade": [
+      {
+        "at": "2026-07-11T06:30+00:00",
+        "domain": "clydebankpost.co.uk"
+      },
+      {
+        "at": "2026-07-11T06:30+00:00",
+        "domain": "eveshamjournal.co.uk"
+      },
+      {
+        "at": "2026-07-11T06:30+00:00",
+        "domain": "northwalespioneer.co.uk"
+      },
+      {
+        "at": "2026-07-11T06:30+00:00",
+        "domain": "sloughobserver.co.uk"
+      },
+      {
+        "at": "2026-07-11T06:30+00:00",
+        "domain": "stratford-herald.com"
+      },
+      {
+        "at": "2026-07-11T06:30+00:00",
+        "domain": "wiltsglosstandard.co.uk"
+      },
+      {
+        "at": "2026-07-11T06:30+00:00",
+        "domain": "wirralglobe.co.uk"
+      },
+      {
+        "at": "2026-07-11T06:45+00:00",
+        "domain": "chesterstandard.co.uk"
+      },
+      {
+        "at": "2026-07-11T06:45+00:00",
+        "domain": "dorsetecho.co.uk"
+      },
+      {
+        "at": "2026-07-11T06:45+00:00",
+        "domain": "hampshirechronicle.co.uk"
+      },
+      {
+        "at": "2026-07-11T06:45+00:00",
+        "domain": "lancashiretelegraph.co.uk"
+      },
+      {
+        "at": "2026-07-11T06:45+00:00",
+        "domain": "wiltshiretimes.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.96,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 28,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "cyclosporiasis seen in at least 18",
+    "sample_title": "Cyclosporiasis Seen In At Least 18 States",
+    "domain_count": 27,
+    "mastheads": [
+      "1061fmtalk.iheart.com",
+      "55krc.iheart.com",
+      "570wkbn.iheart.com",
+      "600wrec.iheart.com",
+      "650keni.iheart.com",
+      "943wsc.iheart.com",
+      "jetradio1400.iheart.com",
+      "khvhradio.iheart.com",
+      "knst.iheart.com",
+      "ktok.iheart.com",
+      "newsradio1290wtks.iheart.com",
+      "newsradio540.iheart.com",
+      "newsradio967.iheart.com",
+      "newstalk1400online.iheart.com",
+      "patriotla.iheart.com",
+      "powertalk1460.iheart.com",
+      "wflanews.iheart.com",
+      "wflaorlando.iheart.com",
+      "wgy.iheart.com",
+      "whoradio.iheart.com",
+      "whyn.iheart.com",
+      "wlac.iheart.com",
+      "wlap.iheart.com",
+      "wmeq.iheart.com",
+      "wmmbam.iheart.com",
+      "wonw1280.iheart.com",
+      "wrko.iheart.com"
+    ],
+    "article_count": 27,
+    "first_domain": "ktok.iheart.com",
+    "first_seen": "2026-07-11T05:30+00:00",
+    "span_hours": 2.0,
+    "cascade": [
+      {
+        "at": "2026-07-11T05:30+00:00",
+        "domain": "ktok.iheart.com"
+      },
+      {
+        "at": "2026-07-11T05:30+00:00",
+        "domain": "newsradio1290wtks.iheart.com"
+      },
+      {
+        "at": "2026-07-11T06:00+00:00",
+        "domain": "600wrec.iheart.com"
+      },
+      {
+        "at": "2026-07-11T06:00+00:00",
+        "domain": "khvhradio.iheart.com"
+      },
+      {
+        "at": "2026-07-11T06:00+00:00",
+        "domain": "newsradio967.iheart.com"
+      },
+      {
+        "at": "2026-07-11T06:15+00:00",
+        "domain": "wlac.iheart.com"
+      },
+      {
+        "at": "2026-07-11T06:30+00:00",
+        "domain": "570wkbn.iheart.com"
+      },
+      {
+        "at": "2026-07-11T06:30+00:00",
+        "domain": "650keni.iheart.com"
+      },
+      {
+        "at": "2026-07-11T06:30+00:00",
+        "domain": "943wsc.iheart.com"
+      },
+      {
+        "at": "2026-07-11T06:30+00:00",
+        "domain": "wflanews.iheart.com"
+      },
+      {
+        "at": "2026-07-11T06:30+00:00",
+        "domain": "whyn.iheart.com"
+      },
+      {
+        "at": "2026-07-11T06:30+00:00",
+        "domain": "wmeq.iheart.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "com",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 27,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1138,
+    "domains_scanned": 565,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 0,
+      "technology": 250,
+      "health": 250,
+      "science": 250,
+      "business": 0,
+      "sports": 0,
+      "weather": 250
+    },
+    "beats_failed": 3,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-11"
+  }
+}

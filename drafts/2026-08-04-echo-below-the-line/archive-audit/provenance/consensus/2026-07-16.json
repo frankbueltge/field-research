@@ -1,0 +1,257 @@
+{
+  "generated_at": "2026-07-16T08:17:42+00:00",
+  "date": "2026-07-16",
+  "echo_index": 0.282,
+  "soft_echo_index": 0.283,
+  "headline": {
+    "phrase": "will be in andy burnham cabinet",
+    "sample_title": "Who will be in Andy Burnham Cabinet ? ",
+    "domain_count": 49,
+    "mastheads": [
+      "barryanddistrictnews.co.uk",
+      "basingstokegazette.co.uk",
+      "bordertelegraph.com",
+      "bournemouthecho.co.uk",
+      "bracknellnews.co.uk",
+      "braintreeandwithamtimes.co.uk",
+      "bromsgroveadvertiser.co.uk",
+      "burnhamandhighbridgeweeklynews.co.uk",
+      "chardandilminsternews.co.uk",
+      "clydebankpost.co.uk",
+      "cotswoldjournal.co.uk",
+      "countypress.co.uk",
+      "countytimes.co.uk",
+      "dorsetecho.co.uk",
+      "dunfermlinepress.com",
+      "ealingtimes.co.uk",
+      "echo-news.co.uk",
+      "edp24.co.uk",
+      "eveningnews24.co.uk",
+      "falmouthpacket.co.uk",
+      "fenlandcitizen.co.uk",
+      "gazette-news.co.uk",
+      "hamhigh.co.uk",
+      "hampshirechronicle.co.uk",
+      "harrowtimes.co.uk",
+      "harwichandmanningtreestandard.co.uk",
+      "irvinetimes.com",
+      "keighleynews.co.uk",
+      "lancashiretelegraph.co.uk",
+      "leighjournal.co.uk",
+      "london-now.co.uk",
+      "lynnnews.co.uk",
+      "maldonandburnhamstandard.co.uk",
+      "newarkadvertiser.co.uk",
+      "nwemail.co.uk",
+      "rhyljournal.co.uk",
+      "rutland-times.co.uk",
+      "salisburyjournal.co.uk",
+      "southwalesguardian.co.uk",
+      "stratford-herald.com"
+    ],
+    "article_count": 49,
+    "first_domain": "bordertelegraph.com",
+    "first_seen": "2026-07-16T04:30+00:00",
+    "span_hours": 2.0,
+    "cascade": [
+      {
+        "at": "2026-07-16T04:30+00:00",
+        "domain": "bordertelegraph.com"
+      },
+      {
+        "at": "2026-07-16T04:30+00:00",
+        "domain": "lancashiretelegraph.co.uk"
+      },
+      {
+        "at": "2026-07-16T04:30+00:00",
+        "domain": "lynnnews.co.uk"
+      },
+      {
+        "at": "2026-07-16T04:30+00:00",
+        "domain": "nwemail.co.uk"
+      },
+      {
+        "at": "2026-07-16T04:30+00:00",
+        "domain": "thisiswiltshire.co.uk"
+      },
+      {
+        "at": "2026-07-16T04:45+00:00",
+        "domain": "bracknellnews.co.uk"
+      },
+      {
+        "at": "2026-07-16T04:45+00:00",
+        "domain": "burnhamandhighbridgeweeklynews.co.uk"
+      },
+      {
+        "at": "2026-07-16T04:45+00:00",
+        "domain": "ealingtimes.co.uk"
+      },
+      {
+        "at": "2026-07-16T04:45+00:00",
+        "domain": "edp24.co.uk"
+      },
+      {
+        "at": "2026-07-16T04:45+00:00",
+        "domain": "eveningnews24.co.uk"
+      },
+      {
+        "at": "2026-07-16T04:45+00:00",
+        "domain": "stroudnewsandjournal.co.uk"
+      },
+      {
+        "at": "2026-07-16T04:45+00:00",
+        "domain": "thewestonmercury.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.9,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 49,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "disables ship trying to breach blockade",
+    "sample_title": "US airstrikes hit northern Iran as it disables ship trying to breach blockade",
+    "domain_count": 45,
+    "mastheads": [
+      "asianimage.co.uk",
+      "barryanddistrictnews.co.uk",
+      "basingstokegazette.co.uk",
+      "bicesteradvertiser.net",
+      "braintreeandwithamtimes.co.uk",
+      "bromsgroveadvertiser.co.uk",
+      "cotswoldjournal.co.uk",
+      "countypress.co.uk",
+      "denbighshirefreepress.co.uk",
+      "dorsetecho.co.uk",
+      "dudleynews.co.uk",
+      "dunfermlinepress.com",
+      "echo-news.co.uk",
+      "gazette-news.co.uk",
+      "gazetteherald.co.uk",
+      "halesowennews.co.uk",
+      "harrowtimes.co.uk",
+      "harwichandmanningtreestandard.co.uk",
+      "heraldseries.co.uk",
+      "impartialreporter.com",
+      "ipswichstar.co.uk",
+      "irvinetimes.com",
+      "london-now.co.uk",
+      "maldonandburnhamstandard.co.uk",
+      "messengernewspapers.co.uk",
+      "northwichguardian.co.uk",
+      "oxfordmail.co.uk",
+      "peeblesshirenews.com",
+      "penarthtimes.co.uk",
+      "rhyljournal.co.uk",
+      "salisburyjournal.co.uk",
+      "southwalesargus.co.uk",
+      "southwalesguardian.co.uk",
+      "sthelensstar.co.uk",
+      "stourbridgenews.co.uk",
+      "surreycomet.co.uk",
+      "thetottenhamindependent.co.uk",
+      "thewestmorlandgazette.co.uk",
+      "thurrockgazette.co.uk",
+      "wandsworthguardian.co.uk"
+    ],
+    "article_count": 45,
+    "first_domain": "cotswoldjournal.co.uk",
+    "first_seen": "2026-07-16T05:45+00:00",
+    "span_hours": 2.0,
+    "cascade": [
+      {
+        "at": "2026-07-16T05:45+00:00",
+        "domain": "cotswoldjournal.co.uk"
+      },
+      {
+        "at": "2026-07-16T05:45+00:00",
+        "domain": "countypress.co.uk"
+      },
+      {
+        "at": "2026-07-16T05:45+00:00",
+        "domain": "dunfermlinepress.com"
+      },
+      {
+        "at": "2026-07-16T05:45+00:00",
+        "domain": "gazette-news.co.uk"
+      },
+      {
+        "at": "2026-07-16T05:45+00:00",
+        "domain": "harwichandmanningtreestandard.co.uk"
+      },
+      {
+        "at": "2026-07-16T05:45+00:00",
+        "domain": "northwichguardian.co.uk"
+      },
+      {
+        "at": "2026-07-16T05:45+00:00",
+        "domain": "penarthtimes.co.uk"
+      },
+      {
+        "at": "2026-07-16T06:00+00:00",
+        "domain": "braintreeandwithamtimes.co.uk"
+      },
+      {
+        "at": "2026-07-16T06:00+00:00",
+        "domain": "echo-news.co.uk"
+      },
+      {
+        "at": "2026-07-16T06:00+00:00",
+        "domain": "london-now.co.uk"
+      },
+      {
+        "at": "2026-07-16T06:00+00:00",
+        "domain": "maldonandburnhamstandard.co.uk"
+      },
+      {
+        "at": "2026-07-16T06:00+00:00",
+        "domain": "rhyljournal.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.88,
+      "distinct_tlds": 3
+    },
+    "soft_domain_count": 45,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1235,
+    "domains_scanned": 571,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 250,
+      "technology": 250,
+      "health": 250,
+      "science": 250,
+      "business": 250,
+      "sports": 0,
+      "weather": 0
+    },
+    "beats_failed": 2,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-16"
+  }
+}

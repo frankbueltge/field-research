@@ -1,0 +1,220 @@
+{
+  "generated_at": "2026-07-23T08:38:19+00:00",
+  "date": "2026-07-23",
+  "echo_index": 0.217,
+  "soft_echo_index": 0.218,
+  "headline": {
+    "phrase": "passes 1 1 trillion defense policy",
+    "sample_title": "House Passes $1 . 1 Trillion Defense Policy Bill",
+    "domain_count": 22,
+    "mastheads": [
+      "1019bigwaax.iheart.com",
+      "1430kasi.iheart.com",
+      "1450wkip.iheart.com",
+      "790waeb.iheart.com",
+      "800wvhu.iheart.com",
+      "943wsc.iheart.com",
+      "95wxtk.iheart.com",
+      "jetradio1400.iheart.com",
+      "knrs.iheart.com",
+      "kogo.iheart.com",
+      "ktok.iheart.com",
+      "newsradio1290wtks.iheart.com",
+      "newsradio910wltp.iheart.com",
+      "newsradio967.iheart.com",
+      "newstalk1230.iheart.com",
+      "talk1200boston.iheart.com",
+      "wbhpam.iheart.com",
+      "wflanews.iheart.com",
+      "wmeq.iheart.com",
+      "woodradio.iheart.com",
+      "wrko.iheart.com",
+      "wrno.iheart.com"
+    ],
+    "article_count": 22,
+    "first_domain": "jetradio1400.iheart.com",
+    "first_seen": "2026-07-23T06:30+00:00",
+    "span_hours": 1.5,
+    "cascade": [
+      {
+        "at": "2026-07-23T06:30+00:00",
+        "domain": "jetradio1400.iheart.com"
+      },
+      {
+        "at": "2026-07-23T06:30+00:00",
+        "domain": "newsradio1290wtks.iheart.com"
+      },
+      {
+        "at": "2026-07-23T06:30+00:00",
+        "domain": "wrko.iheart.com"
+      },
+      {
+        "at": "2026-07-23T06:45+00:00",
+        "domain": "1019bigwaax.iheart.com"
+      },
+      {
+        "at": "2026-07-23T06:45+00:00",
+        "domain": "800wvhu.iheart.com"
+      },
+      {
+        "at": "2026-07-23T06:45+00:00",
+        "domain": "943wsc.iheart.com"
+      },
+      {
+        "at": "2026-07-23T06:45+00:00",
+        "domain": "newstalk1230.iheart.com"
+      },
+      {
+        "at": "2026-07-23T06:45+00:00",
+        "domain": "wmeq.iheart.com"
+      },
+      {
+        "at": "2026-07-23T06:45+00:00",
+        "domain": "woodradio.iheart.com"
+      },
+      {
+        "at": "2026-07-23T07:15+00:00",
+        "domain": "1430kasi.iheart.com"
+      },
+      {
+        "at": "2026-07-23T07:15+00:00",
+        "domain": "1450wkip.iheart.com"
+      },
+      {
+        "at": "2026-07-23T07:15+00:00",
+        "domain": "knrs.iheart.com"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "com",
+      "tld_share": 1.0,
+      "distinct_tlds": 1
+    },
+    "soft_domain_count": 22,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "openai blamed a hacking event on",
+    "sample_title": "OpenAI blamed a hacking event on its AI models gone rogue . Here is what to know",
+    "domain_count": 21,
+    "mastheads": [
+      "apr.org",
+      "delawarepublic.org",
+      "kasu.org",
+      "kawc.org",
+      "kbia.org",
+      "knau.org",
+      "ksut.org",
+      "kvnf.org",
+      "kwit.org",
+      "kyuk.org",
+      "news.prairiepublic.org",
+      "northernpublicradio.org",
+      "smdailyjournal.com",
+      "tspr.org",
+      "wamc.org",
+      "wemu.org",
+      "wncw.org",
+      "wnyc.org",
+      "wrkf.org",
+      "wvgazettemail.com",
+      "wyomingpublicmedia.org"
+    ],
+    "article_count": 21,
+    "first_domain": "wvgazettemail.com",
+    "first_seen": "2026-07-23T04:15+00:00",
+    "span_hours": 3.8,
+    "cascade": [
+      {
+        "at": "2026-07-23T04:15+00:00",
+        "domain": "wvgazettemail.com"
+      },
+      {
+        "at": "2026-07-23T05:00+00:00",
+        "domain": "smdailyjournal.com"
+      },
+      {
+        "at": "2026-07-23T06:00+00:00",
+        "domain": "wyomingpublicmedia.org"
+      },
+      {
+        "at": "2026-07-23T06:15+00:00",
+        "domain": "apr.org"
+      },
+      {
+        "at": "2026-07-23T06:15+00:00",
+        "domain": "knau.org"
+      },
+      {
+        "at": "2026-07-23T06:15+00:00",
+        "domain": "kvnf.org"
+      },
+      {
+        "at": "2026-07-23T06:15+00:00",
+        "domain": "wamc.org"
+      },
+      {
+        "at": "2026-07-23T06:30+00:00",
+        "domain": "delawarepublic.org"
+      },
+      {
+        "at": "2026-07-23T06:30+00:00",
+        "domain": "kasu.org"
+      },
+      {
+        "at": "2026-07-23T06:30+00:00",
+        "domain": "kawc.org"
+      },
+      {
+        "at": "2026-07-23T06:30+00:00",
+        "domain": "wnyc.org"
+      },
+      {
+        "at": "2026-07-23T06:45+00:00",
+        "domain": "kbia.org"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "org",
+      "tld_share": 0.9,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 21,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 1100,
+    "domains_scanned": 586,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 0,
+      "economy": 250,
+      "technology": 250,
+      "health": 250,
+      "science": 250,
+      "business": 0,
+      "sports": 0,
+      "weather": 250
+    },
+    "beats_failed": 3,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-23"
+  }
+}

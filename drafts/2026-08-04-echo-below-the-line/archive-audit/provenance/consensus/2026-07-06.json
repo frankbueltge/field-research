@@ -1,0 +1,226 @@
+{
+  "generated_at": "2026-07-06T10:30:00+00:00",
+  "date": "2026-07-06",
+  "echo_index": 0.211,
+  "soft_echo_index": 0.214,
+  "headline": {
+    "phrase": "political headwinds tribe in colorado brings",
+    "sample_title": "Despite stiff political headwinds , tribe in Colorado brings utility scale solar project online",
+    "domain_count": 31,
+    "mastheads": [
+      "apr.org",
+      "capeandislands.org",
+      "interlochenpublicradio.org",
+      "kansaspublicradio.org",
+      "kedm.org",
+      "kenw.org",
+      "kios.org",
+      "kmxt.org",
+      "ksfr.org",
+      "ksmu.org",
+      "ksut.org",
+      "kwbu.org",
+      "kzyx.org",
+      "mynspr.org",
+      "news.prairiepublic.org",
+      "radio.wpsu.org",
+      "waer.org",
+      "wclk.com",
+      "wfae.org",
+      "wkms.org",
+      "wknofm.org",
+      "wlrn.org",
+      "wncw.org",
+      "wnmufm.org",
+      "wnyc.org",
+      "wsiu.org",
+      "wvik.org",
+      "wvxu.org",
+      "wypr.org",
+      "wysu.org",
+      "ypradio.org"
+    ],
+    "article_count": 31,
+    "first_domain": "wknofm.org",
+    "first_seen": "2026-07-06T06:15+00:00",
+    "span_hours": 3.5,
+    "cascade": [
+      {
+        "at": "2026-07-06T06:15+00:00",
+        "domain": "wknofm.org"
+      },
+      {
+        "at": "2026-07-06T06:30+00:00",
+        "domain": "news.prairiepublic.org"
+      },
+      {
+        "at": "2026-07-06T06:30+00:00",
+        "domain": "wfae.org"
+      },
+      {
+        "at": "2026-07-06T06:30+00:00",
+        "domain": "wkms.org"
+      },
+      {
+        "at": "2026-07-06T06:30+00:00",
+        "domain": "ypradio.org"
+      },
+      {
+        "at": "2026-07-06T07:00+00:00",
+        "domain": "wncw.org"
+      },
+      {
+        "at": "2026-07-06T07:00+00:00",
+        "domain": "wsiu.org"
+      },
+      {
+        "at": "2026-07-06T07:00+00:00",
+        "domain": "wypr.org"
+      },
+      {
+        "at": "2026-07-06T07:15+00:00",
+        "domain": "kansaspublicradio.org"
+      },
+      {
+        "at": "2026-07-06T07:15+00:00",
+        "domain": "kios.org"
+      },
+      {
+        "at": "2026-07-06T07:15+00:00",
+        "domain": "mynspr.org"
+      },
+      {
+        "at": "2026-07-06T07:45+00:00",
+        "domain": "wysu.org"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "org",
+      "tld_share": 0.97,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 31,
+    "soft_echo_extra": 0
+  },
+  "runner_up": {
+    "phrase": "farage faces mounting pressure to level",
+    "sample_title": "Farage faces mounting pressure to  level with the public  about ally support",
+    "domain_count": 18,
+    "mastheads": [
+      "barryanddistrictnews.co.uk",
+      "braintreeandwithamtimes.co.uk",
+      "bridgwatermercury.co.uk",
+      "dudleynews.co.uk",
+      "dumbartonreporter.co.uk",
+      "eastlothiancourier.com",
+      "eppingforestguardian.co.uk",
+      "gazetteherald.co.uk",
+      "guardian-series.co.uk",
+      "impartialreporter.com",
+      "keighleynews.co.uk",
+      "kentonline.co.uk",
+      "lancashiretelegraph.co.uk",
+      "redditchadvertiser.co.uk",
+      "rutland-times.co.uk",
+      "salisburyjournal.co.uk",
+      "thurrockgazette.co.uk",
+      "tivysideadvertiser.co.uk"
+    ],
+    "article_count": 18,
+    "first_domain": "gazetteherald.co.uk",
+    "first_seen": "2026-07-06T08:30+00:00",
+    "span_hours": 1.2,
+    "cascade": [
+      {
+        "at": "2026-07-06T08:30+00:00",
+        "domain": "gazetteherald.co.uk"
+      },
+      {
+        "at": "2026-07-06T08:45+00:00",
+        "domain": "barryanddistrictnews.co.uk"
+      },
+      {
+        "at": "2026-07-06T08:45+00:00",
+        "domain": "eppingforestguardian.co.uk"
+      },
+      {
+        "at": "2026-07-06T08:45+00:00",
+        "domain": "keighleynews.co.uk"
+      },
+      {
+        "at": "2026-07-06T08:45+00:00",
+        "domain": "kentonline.co.uk"
+      },
+      {
+        "at": "2026-07-06T08:45+00:00",
+        "domain": "lancashiretelegraph.co.uk"
+      },
+      {
+        "at": "2026-07-06T09:00+00:00",
+        "domain": "braintreeandwithamtimes.co.uk"
+      },
+      {
+        "at": "2026-07-06T09:00+00:00",
+        "domain": "dumbartonreporter.co.uk"
+      },
+      {
+        "at": "2026-07-06T09:00+00:00",
+        "domain": "guardian-series.co.uk"
+      },
+      {
+        "at": "2026-07-06T09:00+00:00",
+        "domain": "impartialreporter.com"
+      },
+      {
+        "at": "2026-07-06T09:00+00:00",
+        "domain": "rutland-times.co.uk"
+      },
+      {
+        "at": "2026-07-06T09:00+00:00",
+        "domain": "thurrockgazette.co.uk"
+      }
+    ],
+    "syndication": {
+      "label": "wire/chain syndication",
+      "top_tld": "uk",
+      "tld_share": 0.89,
+      "distinct_tlds": 2
+    },
+    "soft_domain_count": 18,
+    "soft_echo_extra": 0
+  },
+  "stats": {
+    "articles_scanned": 939,
+    "domains_scanned": 531,
+    "beats": [
+      "politics",
+      "economy",
+      "technology",
+      "health",
+      "science",
+      "business",
+      "sports",
+      "weather"
+    ],
+    "per_beat": {
+      "politics": 250,
+      "economy": 0,
+      "technology": 0,
+      "health": 250,
+      "science": 0,
+      "business": 250,
+      "sports": 250,
+      "weather": 0
+    },
+    "beats_failed": 4,
+    "shingle_n": 6,
+    "min_domains": 3
+  },
+  "source": {
+    "name": "GDELT DOC 2.0 API",
+    "url": "https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/",
+    "license": "GDELT — open / frei nutzbar",
+    "retrieved": "2026-07-06"
+  }
+}
