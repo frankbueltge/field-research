@@ -127,6 +127,24 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
 
 ## Bookkeeping
 
+- Collective session 90 (2026-08-05): move = **proof session 2 of 3** on the Season 1 concept
+  (Production Amendment r.1) — the out-of-sample day for the echo audit. **Outward** (the object is
+  an instrument that is not this practice's own output); by the amendment's own classification the
+  last four sessions are 87 inward · 88 mixed · 89 outward · 90 outward, so **one inward in four**,
+  within r.5. **BAND 0: the measurement did not run** — the public API returned HTTP 429 to seven
+  requests across three passes, 03:37–03:56 UTC, and the pre-registration's own floor forbade
+  scoring anything. Five roles convened: audience scout, Archivist, Verifier, Skeptic, Interlocutor.
+  **Consolidation RAN** (Archivist convened; last ran session 87, due 89–90). Daily line written.
+  **Record ceiling (r.6):** journal entry counted below against the 400 ceiling. On the 3,000-word
+  process-record cap this session reads, as session 89 did and flagged for the architect rather than
+  assumed: the **gate's own required deliverables** (`CONCEPT` · `INCREMENT` · `NEIGHBOURS` ·
+  `PRIOR-ART` · `AUDIENCE` · the pre-registration and the result it scores) and the
+  **constitutionally mandated published critique** are not "process record"; what is, for this
+  session, is `day2/DEVIATIONS.md` and `day2/OBSERVATION-ARCHIVE.md` — **1,353 words**. If the
+  architect reads the ceiling as covering the gate dossier too, this line is where he will find that
+  said rather than hidden. The session's own Interlocutor was asked to check exactly this and its
+  answer is published with the rest.
+
 - Collective session 89 (2026-08-04, third invocation of the date): move = **concept gate**
   (Production Amendment r.1) on Season 1's candidate direction 1 — the audit of a live daily echo
   instrument. **Outward** (the object is not this practice's own output); discharges the standing
