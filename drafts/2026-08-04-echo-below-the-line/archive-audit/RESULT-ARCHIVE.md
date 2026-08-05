@@ -23,11 +23,37 @@ is itself published.* Band 4 was written to say that if the instrument already f
 cluster, the claim must be restated as being about what its **index counts**, not about what it fails
 to see. Both apply. **The concept parks.** The one-page finding is `FINDING.md`.
 
-**The generous variant does not rescue it.** The secondary owner-merged partition — which merges one
-confirmed owner's domains across the several candidate units the nameserver relation split them into —
-gives 26.7 % below threshold (Q1 would hold) but a median ratio of **1.07** (Q2 still fails). That is
-Band 2 at best, not Band 1. **No partition of this evidence reaches the band that would have licensed
-an episode arc**, and that is said here rather than left for a reader to derive.
+### How fragile the refutation is — corrected after review, and it was fragile
+
+**This section replaces a sentence that was wrong.** The first version of this file said *"no partition
+of this evidence reaches the band that would have licensed an episode arc."* That was asserted, not
+tested; the session's own Skeptic tested it and **found a partition that reaches Band 1.** The sentence
+is withdrawn. Here is the whole surface instead (`scripts/sensitivity.py`, `results/sensitivity.json`):
+
+| partition | U < 3 | median ratio | Q1 | Q2 | band |
+|---|---|---|---|---|---|
+| **pre-registered primary — the scored result** | 2/30 = **6.7 %** | **1.05** | fails | fails | **Band 3** |
+| + owner-merge (the disclosed secondary) | 8/30 = 26.7 % | 1.07 | holds | fails | Band 2 |
+| + News.Net accepted for the brand its source names | 2/30 = 6.7 % | 1.05 | fails | fails | Band 3 |
+| + News.Net accepted for **all 82** members, on naming pattern | 6/30 = 20.0 % | 2.33 | fails | holds | Band 2 |
+| + owner-merge **and** all 82 on pattern | 12/30 = **40.0 %** | **7.83** | holds | holds | **Band 1** |
+
+**Why the scored result still stands, stated as evidence rather than as robustness.** The Band 1 row
+requires accepting 75 domains that no published source names. The operator's own corporate page says
+Mainstream Media Ltd *"is principally operator of the News.Net sites"* — and **every one of the 7
+domains in this candidate group that actually carries the News.Net brand was reachable and is already
+confirmed in the primary.** The other 75 are `.com` titles under different brands (`indiagazette.com`,
+`parisguardian.com`, `birminghamstar.com` …). Accepting them is accepting a naming pattern as ownership
+evidence — the one move both ownership specialists were instructed to refuse, and the move that
+produced five phantom publishers out of separately licensed public radio stations elsewhere in this
+same audit. The row is published because it is real; it is not adopted because its evidence is the kind
+this audit exists to distrust.
+
+**What that leaves honest to say:** the refutation is **not robust to one decision about one
+unreachable network of 75 domains.** Q2 flips on that decision alone. A reader who thinks a corporate
+"we operate the X sites" statement should extend across an operator's other brands gets Band 2, and
+combined with the owner merge gets Band 1. We do not think it should, and we have said why, but the
+result is one judgement call away from the opposite verdict and that is now on its face.
 
 ---
 
@@ -98,8 +124,12 @@ numbers is therefore the instrument's own measurement of what paraphrase adds:
 > **median 0.25 pp, mean 0.38 pp, maximum 1.80 pp, over 46 days.** It differs from zero on 33 of 46 days.
 
 Day 1's F1 estimated this gap from outside and found it small. The instrument had already measured it,
-published it, and it is small. This retires the concept's original claim about paraphrase entirely —
-not as a caveat but as an answer, from the audited party's own data.
+published it, and it is small. **Scoped as the Skeptic required:** this retires the concept's original
+paraphrase claim *as paraphrase is operationalised by that detector* — token TF-IDF with cosine
+similarity at τ = 0.72, seeded so that soft ⊇ verbatim. It is not evidence that paraphrased
+coordination is small as a phenomenon; a semantic or embedding-based detector with different recall
+could find more. What it does retire is this concept's premise that the size of the gap was
+*unmeasured*.
 
 **2. On the one day the record carries article links, day 1's original rule fires hard.**
 From 2026-08-05 the snapshots record a per-outlet URL. On that day, and only that day, day 1's rule —
@@ -121,11 +151,17 @@ its own evidence track, and it is not visible at the unit of ownership.* Ownersh
 
 1. **The prediction was ours and it was wrong.** Q1 and Q2 were written to be generous to a finding we
    already believed. The finding did not survive its own archive.
-2. **Q3 was written to be able to cost us, and it did.** All 30 primary clusters — and 84 of all 86 —
-   already carry the instrument's own `wire/chain syndication` label. The instrument is not blind to
-   the phenomenon; its published classifier flags essentially every cluster it publishes. Any sentence
-   in this concept's earlier files implying the instrument does not see syndication is wrong, and the
-   dossier carries a dated notice to that effect.
+2. **Q3 was written to be able to cost us, and it did — but it could not have told us much either
+   way, and the first version of this file drew the flattering conclusion from it.** All 30 primary
+   clusters, and 84 of all 86, carry the instrument's own `wire/chain syndication` label. **Restated
+   after review:** that label is a rule over country-TLD homogeneity (≥ 0.8) and a spread of ≤ 6 hours,
+   with no ownership content anywhere in its body. At a 97.7 % firing rate, both failing clusters
+   carrying it is roughly what chance alone would produce (0.977² ≈ 95.5 %) even if the label tracked
+   ownership not at all — which mechanically it does not. So Q3 shows that **the label fires almost
+   unconditionally**, not that the instrument tracks ownership concentration. The earlier wording here
+   — "the instrument is not blind to what we proposed to show it" — is withdrawn as an inference the
+   test could not support. What stands: any sentence in this concept's earlier files implying the
+   instrument does not *notice* syndication is wrong, and the dossier carries a dated notice.
 3. **The day-1 20.40 pp figure was a one-pool figure.** It is restated in `../CONCEPT.md` as specific to
    that day and that pool, per Band 2's instruction, which Band 3 subsumes.
 
@@ -144,3 +180,9 @@ its own evidence track, and it is not visible at the unit of ownership.* Ownersh
   source). Thirteen headline clusters are therefore excluded from the primary set. **The served archive
   page discloses this** — it prints the 40 names and then "+ N more" — so this is a limit of the
   committed artefact, not a concealment, and it is stated that way.
+  **Added after review, because it points against us:** those 13 excluded clusters are the largest and
+  most syndicated stories in the archive (up to 76 domains), and even at their acknowledged
+  *lower-bound* U they have a **median ratio of 3.64** against the scored set's 1.05. The exclusion was
+  pre-registered before any result existed and it is arithmetically the conservative choice — including
+  them would have made Q1's share smaller, 2/43 rather than 2/30 — but the excluded stories collapse
+  harder than the scored ones, and a reader should have that in the same breath as the exclusion.

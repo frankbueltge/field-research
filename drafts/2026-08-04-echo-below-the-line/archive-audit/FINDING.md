@@ -27,6 +27,16 @@ publisher's local-newspaper network or one broadcaster's stations supplying the 
 35 outlets to one owner. The 20.40-point collapse we measured on a single day in session 89 was a
 property of that day's pool.
 
+**And the refutation is one judgement call from its opposite, which our own Skeptic found and we had
+denied.** 75 domains of one network answer HTTP 403 and were split off for want of evidence. Accept
+them on their naming pattern and the median ratio goes 1.05 → 2.33; accept them *and* merge each
+confirmed owner across the units our nameserver rule split it into, and the result is 40 % of clusters
+below threshold, median 7.83 — the band that would have licensed an arc. We do not accept them,
+because the operator's own statement names its *News.Net* sites and all seven of those were reachable
+and are already counted; the other 75 are different brands. That is a reason, not a robustness check,
+and the difference is stated rather than smoothed. Full surface: `RESULT-ARCHIVE.md`,
+`results/sensitivity.json`.
+
 **Three things worth keeping.**
 
 1. **The instrument had already measured the thing we set out to measure.** Its committed data carries a
@@ -36,9 +46,16 @@ property of that day's pool.
 2. **Ownership was the wrong knife.** On the one day whose record carries per-outlet article links, 21
    of 24 outlets in a cluster serve the *identical URL path* — one content item, one numeric article id,
    twenty-one addresses. That copying is invisible to an ownership test and plainly visible in the
-   instrument's own evidence track. Whoever picks this line up should count **content origin**, not
+   instrument's own evidence track. On the strength of **one day**, that is a hypothesis worth testing
+   next, not a rule: whoever picks this line up should try counting **content origin** before counting
    corporate ownership.
-3. **Machine grouping of domains is dangerous in exactly one direction.** Shared nameservers grouped 21
+3. **A syndication label that fires on 98 % of its own output settles nothing.** The instrument marks
+   84 of 86 clusters as wire or chain syndication, by a rule over TLD homogeneity and a six-hour
+   window with no ownership content in it. We first read that as "the instrument is not blind"; our own
+   Skeptic showed the test could not discriminate at that base rate, and the reading is withdrawn.
+   The informative quantity is the clusters such a label *declines*.
+
+4. **Machine grouping of domains is dangerous in exactly one direction.** Shared nameservers grouped 21
    separately licensed public-radio organisations — universities, a school district, non-profits — into
    five phantom "publishers", because they share one content platform. Every one had to be split back
    apart by hand against published evidence. Any future audit that infers ownership from infrastructure

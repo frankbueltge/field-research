@@ -1,0 +1,80 @@
+{
+ "primary_set_size": 30,
+ "variants": [
+  {
+   "variant": "pre-registered primary (the scored result)",
+   "owner_merge": false,
+   "newsnet_all": false,
+   "newsnet_class": false,
+   "Q1_holds": false,
+   "Q2_holds": false,
+   "band": "Band 3",
+   "n": 30,
+   "n_below": 2,
+   "share_below": 0.06666666666666667,
+   "median_ratio": 1.0479166666666666,
+   "max_ratio": 22.0,
+   "n_ratio_ge_5": 2
+  },
+  {
+   "variant": "+ owner-merge only (the disclosed secondary)",
+   "owner_merge": true,
+   "newsnet_all": false,
+   "newsnet_class": false,
+   "Q1_holds": true,
+   "Q2_holds": false,
+   "band": "Band 2",
+   "n": 30,
+   "n_below": 8,
+   "share_below": 0.26666666666666666,
+   "median_ratio": 1.0657327586206895,
+   "max_ratio": 35.0,
+   "n_ratio_ge_5": 12
+  },
+  {
+   "variant": "+ News.Net: only the brand the source names",
+   "owner_merge": false,
+   "newsnet_all": false,
+   "newsnet_class": true,
+   "Q1_holds": false,
+   "Q2_holds": false,
+   "band": "Band 3",
+   "n": 30,
+   "n_below": 2,
+   "share_below": 0.06666666666666667,
+   "median_ratio": 1.0479166666666666,
+   "max_ratio": 22.0,
+   "n_ratio_ge_5": 2
+  },
+  {
+   "variant": "+ News.Net: ALL 82 members, on pattern",
+   "owner_merge": false,
+   "newsnet_all": true,
+   "newsnet_class": false,
+   "Q1_holds": false,
+   "Q2_holds": true,
+   "band": "Band 2",
+   "n": 30,
+   "n_below": 6,
+   "share_below": 0.2,
+   "median_ratio": 2.3333333333333335,
+   "max_ratio": 22.0,
+   "n_ratio_ge_5": 6
+  },
+  {
+   "variant": "+ owner-merge AND all 82 on pattern",
+   "owner_merge": true,
+   "newsnet_all": true,
+   "newsnet_class": false,
+   "Q1_holds": true,
+   "Q2_holds": true,
+   "band": "Band 1",
+   "n": 30,
+   "n_below": 12,
+   "share_below": 0.4,
+   "median_ratio": 7.833333333333333,
+   "max_ratio": 36.0,
+   "n_ratio_ge_5": 16
+  }
+ ]
+}
