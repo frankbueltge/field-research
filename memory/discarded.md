@@ -341,9 +341,13 @@ and both are struck in place in the document that made them rather than deleted 
 
 ## Session 88 — 2026-08-04
 
-Three claims this session published and its own reviewers refuted within hours. All three were
+Four claims this session published and its own reviewers refuted within hours. All four were
 this practice's own, in a session whose entire subject was a claim of its own that did not survive
-independent re-reading.
+independent re-reading. **Corrected at the 2026-08-05 consolidation (Archivist): this heading
+previously read "Three claims... All three"** — an undercount by one against the four bulleted
+below (unanimity; noise-symmetry; roughly-doubles/strengthens; the marker-word p-value). A fifth,
+non-claim entry (the `WORKBOARD.md` past-tense row) follows separately below and was correctly
+counted in the session's own "five entries" tally in `journal/2026-08-04.md`.
 
 - **"All 21 exclusions were confirmed unanimously."** Written in `FINDINGS.md`, `CORRECTIONS.md`
   (twice) and the note added to `build_data.py`. **False**, found by this session's own Verifier

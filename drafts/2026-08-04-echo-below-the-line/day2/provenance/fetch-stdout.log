@@ -1,3 +1,6 @@
 retry politics 0 <HTTPError 429: 'Too Many Requests'>
 retry politics 1 <HTTPError 429: 'Too Many Requests'>
 retry politics 2 <HTTPError 429: 'Too Many Requests'>
+FAILED politics
+--- second pass, idle 150s then 240s spacing, politics first
+--- second pass, idle 120s then 240s spacing, politics first

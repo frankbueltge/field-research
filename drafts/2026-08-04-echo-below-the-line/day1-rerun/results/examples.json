@@ -1,0 +1,103 @@
+{
+  "generated_utc": "2026-08-05T03:42:49Z",
+  "note": "Each entry is a directly-linked pair (Jaccard similarity of token sets, stopwords kept, >= the stated threshold) of titles from different domains, where (a) their single-linkage cluster at that threshold spans >=3 distinct domains -- i.e. it is a cluster that actually counts toward Echo index B, not one discarded by Rule B's own domain bar -- and (b) at least one of the two titles does not individually belong to any Rule A echo phrase. 'caught_by_rule_a_1/2' indicates whether that specific title individually belongs to a Rule A echo, so a reader can see which side of the pair (if either) Rule A already caught. Ordering is deterministic: similarity descending, then by the lexicographically smaller url in the pair. Each threshold entry carries an explicit 'count' field; count 0 with an empty 'examples' list is a reported finding (no qualifying pair existed at that threshold), not a gap in the data.",
+  "examples_by_threshold": {
+    "0.9": {
+      "count": 0,
+      "examples": []
+    },
+    "0.7": {
+      "count": 8,
+      "examples": [
+        {
+          "similarity": 0.7,
+          "title_1": "Springsteen wife Patti Scialfa cancer is in remission",
+          "domain_1": "latimes.com",
+          "url_1": "https://www.latimes.com/entertainment-arts/story/2026-08-04/patti-scialfa-cancer-remission-bruce-springsteen",
+          "caught_by_rule_a_1": false,
+          "title_2": "Bruce Springsteen says wife Patti Scialfa cancer in remission",
+          "domain_2": "4029tv.com",
+          "url_2": "https://www.4029tv.com/article/bruce-springsteen-patti-scialfa-cancer-in-remission/73346233",
+          "caught_by_rule_a_2": true
+        },
+        {
+          "similarity": 0.7,
+          "title_1": "Springsteen wife Patti Scialfa cancer is in remission",
+          "domain_1": "latimes.com",
+          "url_1": "https://www.latimes.com/entertainment-arts/story/2026-08-04/patti-scialfa-cancer-remission-bruce-springsteen",
+          "caught_by_rule_a_1": false,
+          "title_2": "Bruce Springsteen says wife Patti Scialfa cancer in remission",
+          "domain_2": "koco.com",
+          "url_2": "https://www.koco.com/article/bruce-springsteen-patti-scialfa-cancer-in-remission/73346233",
+          "caught_by_rule_a_2": true
+        },
+        {
+          "similarity": 0.7,
+          "title_1": "Springsteen wife Patti Scialfa cancer is in remission",
+          "domain_1": "latimes.com",
+          "url_1": "https://www.latimes.com/entertainment-arts/story/2026-08-04/patti-scialfa-cancer-remission-bruce-springsteen",
+          "caught_by_rule_a_1": false,
+          "title_2": "Bruce Springsteen says wife Patti Scialfa cancer in remission",
+          "domain_2": "wbaltv.com",
+          "url_2": "https://www.wbaltv.com/article/bruce-springsteen-patti-scialfa-cancer-in-remission/73346233",
+          "caught_by_rule_a_2": true
+        },
+        {
+          "similarity": 0.7,
+          "title_1": "Springsteen wife Patti Scialfa cancer is in remission",
+          "domain_1": "latimes.com",
+          "url_1": "https://www.latimes.com/entertainment-arts/story/2026-08-04/patti-scialfa-cancer-remission-bruce-springsteen",
+          "caught_by_rule_a_1": false,
+          "title_2": "Bruce Springsteen says wife Patti Scialfa cancer in remission",
+          "domain_2": "wesh.com",
+          "url_2": "https://www.wesh.com/article/bruce-springsteen-patti-scialfa-cancer-in-remission/73346233",
+          "caught_by_rule_a_2": true
+        },
+        {
+          "similarity": 0.7,
+          "title_1": "Bruce Springsteen says wife Patti Scialfa cancer in remission",
+          "domain_1": "wlwt.com",
+          "url_1": "https://www.wlwt.com/article/bruce-springsteen-patti-scialfa-cancer-in-remission/73346233",
+          "caught_by_rule_a_1": true,
+          "title_2": "Springsteen wife Patti Scialfa cancer is in remission",
+          "domain_2": "latimes.com",
+          "url_2": "https://www.latimes.com/entertainment-arts/story/2026-08-04/patti-scialfa-cancer-remission-bruce-springsteen",
+          "caught_by_rule_a_2": false
+        },
+        {
+          "similarity": 0.7,
+          "title_1": "Bruce Springsteen says wife Patti Scialfa cancer in remission",
+          "domain_1": "wpbf.com",
+          "url_1": "https://www.wpbf.com/article/bruce-springsteen-patti-scialfa-cancer-in-remission/73346233",
+          "caught_by_rule_a_1": true,
+          "title_2": "Springsteen wife Patti Scialfa cancer is in remission",
+          "domain_2": "latimes.com",
+          "url_2": "https://www.latimes.com/entertainment-arts/story/2026-08-04/patti-scialfa-cancer-remission-bruce-springsteen",
+          "caught_by_rule_a_2": false
+        },
+        {
+          "similarity": 0.7,
+          "title_1": "Bruce Springsteen says wife Patti Scialfa cancer in remission",
+          "domain_1": "wxii12.com",
+          "url_1": "https://www.wxii12.com/article/bruce-springsteen-patti-scialfa-cancer-in-remission/73346233",
+          "caught_by_rule_a_1": true,
+          "title_2": "Springsteen wife Patti Scialfa cancer is in remission",
+          "domain_2": "latimes.com",
+          "url_2": "https://www.latimes.com/entertainment-arts/story/2026-08-04/patti-scialfa-cancer-remission-bruce-springsteen",
+          "caught_by_rule_a_2": false
+        },
+        {
+          "similarity": 0.7,
+          "title_1": "Springsteen wife Patti Scialfa cancer is in remission",
+          "domain_1": "latimes.com",
+          "url_1": "https://www.latimes.com/entertainment-arts/story/2026-08-04/patti-scialfa-cancer-remission-bruce-springsteen",
+          "caught_by_rule_a_1": false,
+          "title_2": "Bruce Springsteen says wife Patti Scialfa cancer in remission",
+          "domain_2": "wyff4.com",
+          "url_2": "https://www.wyff4.com/article/bruce-springsteen-patti-scialfa-cancer-in-remission/73346233",
+          "caught_by_rule_a_2": true
+        }
+      ]
+    }
+  }
+}

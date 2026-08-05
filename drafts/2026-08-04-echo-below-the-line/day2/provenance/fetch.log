@@ -1,3 +1,7 @@
 03:37:27 retry politics 0 <HTTPError 429: 'Too Many Requests'>
 03:39:08 retry politics 1 <HTTPError 429: 'Too Many Requests'>
 03:40:52 retry politics 2 <HTTPError 429: 'Too Many Requests'>
+03:42:22 FAILED politics
+03:44:30 first pass stopped by hand after politics failed three times; the remaining beats would have spent ~40 minutes of provider cooldown on beats the pre-registration does not score. Second pass starts with politics.
+03:43:54 --- second pass, idle 150s then 240s spacing, politics first
+03:44:22 --- second pass, idle 120s then 240s spacing, politics first

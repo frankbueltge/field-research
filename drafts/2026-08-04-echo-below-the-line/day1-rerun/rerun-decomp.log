@@ -1,0 +1,27 @@
+{
+  "source_files": [
+    "provenance/gdelt-politics.json"
+  ],
+  "source_sha256": {
+    "provenance/gdelt-politics.json": "9a254eed4f62bc18c860eb9a55b7cf21f9c28b07fef859ab43a95e2f2fc0c0d2"
+  },
+  "normalisation": "unicode-aware",
+  "pool_size": 250,
+  "echo_titles_domain_unit": 59,
+  "echo_titles_publisher_unit": 8,
+  "titles_that_lost_echo_status": 51,
+  "total_drop_pp": 20.4,
+  "share_of_drop_from_largest_group_pp": 5.2,
+  "share_of_drop_from_top_four_groups_pp": 16.4,
+  "number_of_publisher_groups_causing_any_loss": 7,
+  "note": "A title 'loses echo status' when every 6-token phrase that put it in a >=3-domain echo is no longer carried by >=3 distinct publisher units. Attribution is to the publisher group of the title's own domain. A shared URL path shows same-item republication through common publishing infrastructure; it is not evidence of common ownership and no ownership claim is made."
+}
+
+attribution (group size -> titles lost):
+   13 domains   13 titles     5.2 pp   abc7amarillo.com
+   10 domains   10 titles     4.0 pp   asianimage.co.uk
+   11 domains   10 titles     4.0 pp   argentinastar.com
+    8 domains    8 titles     3.2 pp   4029tv.com
+    4 domains    4 titles     1.6 pp   cessnockadvertiser.com.au
+    3 domains    3 titles     1.2 pp   simcoereformer.ca
+    3 domains    3 titles     1.2 pp   dddnews.com
