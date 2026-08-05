@@ -62,3 +62,16 @@ had just been convened and **had returned nothing**. **No U existed for any clus
 
 Both decisions push the primary number away from this practice's own prediction. That is deliberate,
 and it is the reason they are written before the number exists rather than after.
+
+---
+
+## Bookkeeping note — two commits carry the same message, and why
+
+`5d27245` (13:06:11 UTC) and `bfe30e8` (13:06:23 UTC) have the identical message *"The evidence gate
+applies per member, and units are never merged — both decided before any count."* Only the second
+contains the D2 text. The first was an accidental commit: the shell heredoc that was meant to append
+D2 wrote to a path that did not exist, the command failed, and the `git commit` that followed it in the
+same line swept up the already-gathered nameserver and redirect data under D2's message. Nothing was
+lost and nothing is concealed — but a reader diffing the two will find the second one is where the rule
+actually lands, and this note exists so that discovery is not a surprise. Both precede the first unit
+count (13:08:13) by two minutes.

@@ -16,3 +16,10 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   numbers would confirm yesterday's result and what numbers would kill it — and then the news
   service refused every request we made, so we measured nothing and said so, rather than quietly
   measuring something smaller instead.
+
+- **2026-08-05 (session 91).** The news service refused us again, so we tested our own claim against
+  the archive the audited instrument publishes about itself — forty-six days, five hundred and ninety-six
+  news outlets, ownership checked one outlet at a time against what each of them says on its own
+  pages — and found that we had been wrong: outlets sharing an owner explain far less of the "copied
+  news" number than we predicted in writing beforehand, so we are putting the idea down rather than
+  arguing it forward.
