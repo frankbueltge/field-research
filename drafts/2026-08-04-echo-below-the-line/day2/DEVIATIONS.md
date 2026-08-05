@@ -25,6 +25,35 @@ secondary all-beats figure — if any beat ever arrives — is drawn under a dif
 1's. The primary comparison is unaffected: a single-beat query does not depend on what was asked
 before it.
 
+### D2a — the log is not purely chronological, and two of its lines were typed by hand
+
+*Added 2026-08-05 on this session's own Skeptic's blocking condition. It found this by reading the
+git history of the log file, and it is right.*
+
+`provenance/fetch.log` is written by the fetch scripts with `flush=True` on every line, so the
+machine-written lines are in true append order with true clock timestamps. **Two lines in it are
+not machine-written.** The line beginning `03:44:30 first pass stopped by hand…` and the line
+beginning `03:56 second pass stopped by hand…` were appended by the conductor with `printf`, and
+their timestamps were **typed, not read from a clock** — which is why the second one has no
+seconds. The first of them sits in the file **above** two machine lines whose timestamps are
+earlier than its own (`03:43:54` and `03:44:22`), because the shell that appended it and the shell
+that started the next pass raced.
+
+So the sentence at the head of this file — *"written as the session ran, not reconstructed
+afterwards"* — is true of the prose and **not** true of the log's ordering, and any reading of
+`fetch.log` as a purely machine-generated chronology is wrong. The log is left **unedited**: a
+correction that rewrites the evidence to look tidier is the failure this practice exists to catch.
+
+**What is unaffected, and how that is checkable.** Every `retry`/`ok`/`FAILED` line — the whole
+refusal record — is machine-written. The two hand-typed lines are annotations and carry no HTTP
+result. And the concurrency the Skeptic raises as a possibility is visible in the log and did not
+produce overlapping requests: two second-pass instances started 28 s apart (`03:43:54` idle 150 s,
+`03:44:22` idle 120 s), one was killed before either idle expired, and **exactly one** request line
+follows (`03:46:35`). No two requests in the whole session are less than 90 seconds apart. This
+practice cannot rule out that its own three passes contributed to the provider's refusals — eight
+requests in nineteen minutes is not nothing — and that possibility is now on the record rather than
+argued away.
+
 ## D3 — the measurement scripts were run as byte-identical copies, not in place
 
 `scripts/measure_echo.py` resolves its input and output directories from **its own file location**
@@ -56,12 +85,20 @@ decomposition was produced under the pre-fix ASCII-only normalisation
 defaults to Unicode-aware. So day 1's politics pool was re-run from its committed raw file
 (sha256 `9a254eed…`) under today's defaults, into `day1-rerun/`.
 
-**It reproduces exactly.** Pool 250, domains 203, publisher groups 155, A = 23.60 %, B(0.9) =
-22.00 %, P = 3.20 %, drop = 20.40 pp, total drop 20.40 pp, top-four 16.40 pp, 7 groups causing any
-loss — every figure identical to the committed day-1 run, with `normalisation` now reading
-`unicode-aware`. The Verifier's session-89 fix therefore changes nothing on this pool, which is
-worth knowing: the fix mattered for the diagnostic count it was raised against, not for the
-headline.
+**The headline reproduces byte-for-byte, and exactly one measured number moves.** Pool 250, domains
+203, publisher groups 155, A = 23.60 %, B(0.9) = 22.00 %, P = 3.20 %, drop = 20.40 pp, total drop
+20.40 pp, top-four 16.40 pp, 7 groups causing any loss — all identical. Of 223 common leaves in
+`summary.json`, **two differ**: `generated_utc`, and `rule_a_result.short_titles_lt_6_tokens`
+**17 → 16**. Of `drop_decomposition.json`'s 40 leaves, one differs: `normalisation`, `ascii-only` →
+`unicode-aware`. The 17→16 is the exact count session 89's Verifier issued its FAIL on, moving to
+the value it said was right.
+
+**Corrected 2026-08-05, on this session's own Skeptic's blocking condition. This paragraph
+previously read:** *"It reproduces exactly … every figure identical to the committed day-1 run …
+The Verifier's session-89 fix therefore changes nothing on this pool."* That was false and
+checkable against two committed files, and it deleted the one visible piece of evidence that a
+defect this practice was failed on had actually been repaired. Struck here rather than rewritten
+away.
 
 `score_day2.py` prefers `day1-rerun/` for exactly this reason and says so in its own output when it
 has to fall back.

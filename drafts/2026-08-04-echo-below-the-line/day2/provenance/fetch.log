@@ -12,3 +12,4 @@
 03:56 second pass stopped by hand after politics failed three more times (six refusals in nineteen minutes). Third pass: politics only, ten attempts, ten minutes apart.
 03:56:17 --- third pass: politics only, 10 attempts, 600s apart
 03:56:28 retry politics 0 <HTTPError 429: 'Too Many Requests'>
+04:06:40 retry politics 1 <HTTPError 429: 'Too Many Requests'>

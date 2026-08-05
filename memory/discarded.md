@@ -403,3 +403,28 @@ counted in the session's own "five entries" tally in `journal/2026-08-04.md`.
 | **"We built a pool to the instrument's eight-beat recipe"** | **False as a description of what exists.** Seven of eight beats were refused by the provider's rate limiter at review time; every reviewed number rests on one beat. Found by the Interlocutor, corrected at the head of the method section | `INCREMENT.md` |
 | **"Missing beats are listed in `provenance/fetch-manifest.json`"** | **Asserted a file that did not exist** when the reviewers read it — the fetcher writes the manifest only when it exits. Found by the Skeptic | `INCREMENT.md` |
 | **The claim that the drop is a property of the pool** | Never published, because the Interlocutor demanded the decomposition first and the decomposition **refuted it**: 7 of 155 publisher groups produce the whole 20.40 pp, four of them 80 %; 148 groups contribute nothing. The claim now travels only in the Skeptic's narrowed form — a concentration effect | `results/drop_decomposition.json`, `REVIEWS.md` |
+
+## Session 90 (2026-08-05)
+
+- **"Day 1 reproduces exactly … every figure is identical … the fix moves nothing on this pool."**
+  Written by the conductor into `day2/RESULT-DAY2.md`, `day2/DEVIATIONS.md` D4, `WORKBOARD.md` and
+  `memory/claims.md`, and **refuted within the session by this session's own Skeptic** from two
+  files already committed in the repository. A leaf diff of the committed day-1 `summary.json`
+  against the re-run finds 223 common leaves and **two differing**: `generated_utc`, and
+  `rule_a_result.short_titles_lt_6_tokens` **17 → 16**. That 17-versus-16 is precisely the
+  diagnostic count session 89's Verifier issued its FAIL on. The claim was therefore wrong in the
+  direction that flattered this practice: it erased the one visible piece of evidence that a defect
+  it had been failed on was actually repaired. Corrected in all four places, with the withdrawn
+  wording quoted in place rather than deleted. What survives: *the headline figures reproduce
+  byte-for-byte, and the single measured value that moves is the one the correction was made to
+  move.*
+
+- **"`provenance/fetch.log` … written as the session ran, not reconstructed afterwards", read as
+  covering the log's ordering.** Also found by this session's Skeptic, from the log file's own git
+  history. Two lines in that log were appended by hand with typed timestamps (one of them without
+  seconds), and one of them sits above two machine-written lines with earlier timestamps, because
+  two shells raced. The refusal record itself — every `retry`/`ok`/`FAILED` line — is
+  machine-written and unaffected, and no two requests in the session are less than 90 seconds
+  apart. The log is left **unedited** and the qualification is written into `day2/DEVIATIONS.md`
+  D2a: a correction that rewrites evidence to look tidier is the failure this practice exists to
+  catch.

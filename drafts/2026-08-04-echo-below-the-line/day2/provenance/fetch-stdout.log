@@ -10,3 +10,4 @@ retry politics 2 <HTTPError 429: 'Too Many Requests'>
 FAILED politics
 --- third pass: politics only, 10 attempts, 600s apart
 retry politics 0 <HTTPError 429: 'Too Many Requests'>
+retry politics 1 <HTTPError 429: 'Too Many Requests'>

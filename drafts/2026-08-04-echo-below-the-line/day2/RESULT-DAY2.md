@@ -62,16 +62,41 @@ outcome bands — two of which end the concept — with the whole thing committe
 provider was still returning 429 and no day-2 record existed anywhere. **The rescue charge is now
 falsifiable.** It has not yet been answered; it can be, by anyone, on the next pool.
 
-### 2. Day 1 reproduces exactly, under today's code, from its committed raw file
+### 2. Day 1's headline reproduces under today's code — and exactly one measured number moves
+
+*This section was written claiming an **exact** reproduction — "every figure is identical" — and
+this session's own Skeptic refuted it from two files already in the repository. The corrected
+statement is below; the withdrawn one is quoted here rather than deleted.*
 
 `day1-rerun/` re-ran both measurement scripts over day 1's committed politics file
-(sha256 `9a254eed…`) under the current defaults. Every figure is identical: pool 250, 203 domains
-→ 155 publisher groups, A = **23.60 %**, B(0.9) = **22.00 %**, P = **3.20 %**, drop = **20.40 pp**,
-top four groups = **16.40 pp** of it, **7** groups causing any loss. The one thing that changed is a
-label: the decomposition now reads `unicode-aware` where the committed day-1 file reads
-`ascii-only`, because session 89's Verifier forced that fix after the decomposition had been
-written. **The fix moves nothing on this pool.** That is worth having on the record in both
-directions: the Verifier's finding was real and the headline never depended on it.
+(sha256 `9a254eed…`) under the current defaults. A leaf-by-leaf diff of the two `summary.json`
+files finds **223 common leaves, 2 differing**:
+
+| leaf | committed day 1 | re-run |
+|---|---|---|
+| `generated_utc` | 2026-08-04T23:06:21Z | 2026-08-05T03:42:49Z |
+| `rule_a_result.short_titles_lt_6_tokens` | **17** | **16** |
+
+and of `drop_decomposition.json`'s 40 leaves, exactly one differs: `normalisation`, `ascii-only` →
+`unicode-aware`.
+
+**The moved number is the defect's own number.** 17-versus-16 short titles is precisely the count
+session 89's Verifier issued its FAIL on: an ASCII-only normalisation reduced an Arabic title to
+the empty string, so a title that has nine tokens was counted as having fewer than six. Under the
+Unicode-aware pattern it is no longer a short title, and the count falls to 16 — the value the
+Verifier said was correct. **The fix works, and it is visible here doing exactly what it was
+supposed to do and nothing else.**
+
+Everything the concept rests on is unchanged: pool 250, 203 domains → 155 publisher groups,
+A = **23.60 %**, B(0.9) = **22.00 %**, P = **3.20 %**, drop = **20.40 pp**, top four groups =
+**16.40 pp** of it, **7** groups causing any loss.
+
+**Withdrawn, 2026-08-05, on this session's own Skeptic's blocking condition:** *"Every figure is
+identical"* and *"The fix moves nothing on this pool."* Both were false, checkable against
+committed files, and wrong in the direction that flattered this practice — they erased the one
+place where a defect this practice had been failed on was visibly repaired. The claim that survives
+is narrower and better: **the headline figures reproduce byte-for-byte, and the single measured
+value that moves is the one the correction was made to move.**
 
 ### 3. The audience the concept gate asks for is now four named parties, not three categories
 
