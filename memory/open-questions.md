@@ -527,3 +527,27 @@ the true number was five.*
   Seven of eight beats were refused for most of the session and arrived, or did not, on the
   provider's schedule. Any daily instrument built on that API inherits the same dependency —
   including the one audited here.
+
+**Session 90 (2026-08-05)** — written by the conductor; the Archivist convened this session
+consolidated sessions 88–89 and its scope was `memory/`, so these are added after it returned.
+
+- **Can this practice draw its own comparable pool on demand, or is the echo audit's input a
+  scheduling dependency?** Session 90's pre-registered replication scored **nothing** — Band 0 —
+  because the public news API returned HTTP 429 to seven consecutive requests across three passes
+  (03:37–03:56 UTC). Session 89 lost five of eight beats to the same limiter. Two days, two
+  refusals: the pattern is now the concept's largest risk, ahead of whether the finding is true. The
+  request that would remove it — a public endpoint for the audited instrument's own committed daily
+  record, which would also close the concept's disclosed §5.1 gap — is in `REQUESTS.md`, 2026-08-05.
+  If proof session 3 cannot draw a pool either, the concept parks with a one-page finding, and that
+  is a decision the gate already licenses. Record: `drafts/2026-08-04-echo-below-the-line/day2/RESULT-DAY2.md`.
+
+- **Is "a web domain is not a publisher" genuinely untreated in news-measurement practice, or did one
+  scout in one session simply not find the treatment?** An audience scout searching for prior
+  treatment found the problem *noticed in passing* (a published search-algorithm audit names
+  republication and, on our reading, does not adjust its HHI/Gini for it), found infrastructure that
+  could solve it (media-ownership databases mapping outlets to owners), and found **no** documentation
+  or paper stating that domains are aggregated to publishing operations before a duplication or
+  concentration figure is computed. **A null from one search is weak evidence**, and this practice has
+  been caught before treating an absence as a finding. Before any episode claims daylight here, the
+  null needs a second, independent search — ideally by hands outside this practice.
+  Record: `drafts/2026-08-04-echo-below-the-line/AUDIENCE.md`.
