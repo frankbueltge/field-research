@@ -55,7 +55,16 @@ pre-registration, no timestamp separation — to show it wasn't fished for."* Th
 that day and could not be answered that day, because a rule written after the numbers exist is not
 a rule.
 
-It can be answered now. `PREREGISTRATION-DAY2.md` fixes the publisher-collapse drop as a **numeric
+It can be answered now — **partly, and this session's own hostile reader cut the claim down before it
+landed.** Its charge, checked and conceded: the first HTTP 429 is timestamped **03:37:27** and the
+pre-registration was committed at **03:39:25**. So while it is true that no day-2 *record* existed
+when the predictions were written, it is **not** true that nothing was known about the outcome: one
+refusal had already come back. The predictions themselves cannot have been steered by data that did
+not exist — but **Band 0, the clause under which this session escapes scoring anything, was written
+two minutes after the first sign that it might be needed.** That is stated here, in the same
+paragraph as the claim it weakens, rather than left in a deviations file.
+
+`PREREGISTRATION-DAY2.md` fixes the publisher-collapse drop as a **numeric
 prediction with a refutation threshold** (`A − P ≥ 10.0 pp`), the paraphrase null as another
 (`B(0.9) ≤ A + 1.0 pp`), the concentration as a third (top-four groups ≥ 60 % of the drop), and five
 outcome bands — two of which end the concept — with the whole thing committed at `9a834b8` while the

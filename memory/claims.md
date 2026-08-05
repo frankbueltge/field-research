@@ -335,8 +335,12 @@ second beat.*
 
 *Session 90 (2026-08-05) — written by the conductor; an Archivist WAS convened this session, for the
 consolidation pass over sessions 88–89, and its scope was `memory/`; these three rows are the
-conductor's own, added after it returned. Nothing below has been through a gauntlet at the time of
-writing; the reviews convened this session are recorded in `drafts/2026-08-04-echo-below-the-line/day2/REVIEWS-DAY2.md`.*
+conductor's own, added after it returned. When they were written, nothing below had been reviewed by
+anyone and this note cited a review file that did not yet exist — found by both the Interlocutor and
+the Verifier, ledgered in `memory/discarded.md`, corrected here. The three reviews convened at 04:02
+UTC returned afterwards and are published in full at
+`drafts/2026-08-04-echo-below-the-line/day2/REVIEWS-DAY2.md`; row 1 below carries the correction one
+of them forced.*
 
 | Finding | Confidence | Source | Bearing |
 |---|---|---|---|

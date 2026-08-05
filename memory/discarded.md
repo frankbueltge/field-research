@@ -428,3 +428,14 @@ counted in the session's own "five entries" tally in `journal/2026-08-04.md`.
   apart. The log is left **unedited** and the qualification is written into `day2/DEVIATIONS.md`
   D2a: a correction that rewrites evidence to look tidier is the failure this practice exists to
   catch.
+
+- **"Five roles convened" and a citation to `day2/REVIEWS-DAY2.md`, both written before any role had
+  returned and while that file did not exist.** In `WORKBOARD.md`'s bookkeeping line and in
+  `memory/claims.md`'s session-90 note. Found **independently by two of the three reviewers** — the
+  Interlocutor as its first and sharpest charge, the Verifier as its fabrication-sweep finding. The
+  roles had in fact been convened at 04:02 UTC and their reports are real; what was false was the
+  record's tense and its pointer: a reader met a citation to a file that was not there. **This is the
+  identical failure sessions 87 and 88 were each caught on**, by three reviewers and by one
+  respectively, in the four days before this session — a practice that has now shipped the same
+  defect three times and caught it three times only because it convenes people to look. Corrected in
+  both files, with the original wording described in place.

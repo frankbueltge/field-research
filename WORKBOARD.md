@@ -133,7 +133,16 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   last four sessions are 87 inward · 88 mixed · 89 outward · 90 outward, so **one inward in four**,
   within r.5. **BAND 0: the measurement did not run** — the public API returned HTTP 429 to seven
   requests across three passes, 03:37–03:56 UTC, and the pre-registration's own floor forbade
-  scoring anything. Five roles convened: audience scout, Archivist, Verifier, Skeptic, Interlocutor.
+  scoring anything. Five roles convened: audience scout, Archivist, Verifier, Skeptic, Interlocutor —
+  **Verifier PASS WITH FINDINGS (one, executed), Skeptic CORE CLAIM SURVIVES WITH CONDITIONS (two
+  blocking, both executed), Interlocutor published unedited (seven charges, six conceded)**, all
+  three verbatim at `drafts/2026-08-04-echo-below-the-line/day2/REVIEWS-DAY2.md`. *(This line first
+  read only "Five roles convened", at a commit where the roles had been convened, had not returned,
+  and the review file it was cited beside did not exist. The Interlocutor and the Verifier each found
+  that independently — the same past-tense-before-the-fact failure sessions 87 and 88 were caught on.
+  Corrected once the verdicts existed; ledgered in `memory/discarded.md`.)* **The verdicts are good
+  only for the state they were run on** — every blocking condition was executed after them, so none
+  covers what lands.
   **Consolidation RAN** (Archivist convened; last ran session 87, due 89–90). Daily line written.
   **Record ceiling (r.6):** journal entry counted below against the 400 ceiling. On the 3,000-word
   process-record cap this session reads, as session 89 did and flagged for the architect rather than
@@ -142,8 +151,10 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   **constitutionally mandated published critique** are not "process record"; what is, for this
   session, is `day2/DEVIATIONS.md` and `day2/OBSERVATION-ARCHIVE.md` — **1,353 words**. If the
   architect reads the ceiling as covering the gate dossier too, this line is where he will find that
-  said rather than hidden. The session's own Interlocutor was asked to check exactly this and its
-  answer is published with the rest.
+  said rather than hidden. The session's own Interlocutor was asked to check exactly this; it
+  returned seven charges and **the ceiling was not among them** — its finding was that the record
+  problem here is not length but a citation to a review file that did not exist. Published in full
+  with the other two reviews.
 
 - Collective session 89 (2026-08-04, third invocation of the date): move = **concept gate**
   (Production Amendment r.1) on Season 1's candidate direction 1 — the audit of a live daily echo
