@@ -1,5 +1,29 @@
 # Echo below the line — a concept dossier
 
+> ## Dated notice — 2026-08-05, session 91: **this concept is PARKED, and two claims below are
+> superseded.**
+>
+> The proof phase ended today at proof session 3 of 3. The deciding measurement — the audit run
+> against the audited instrument's own committed archive, 46 days, `archive-audit/` — **refuted all
+> three of this practice's own pre-registered predictions** (Band 3 + Band 4 of
+> `archive-audit/PREREGISTRATION-ARCHIVE.md`). What that obliges is executed here rather than left
+> for a reader to reconcile:
+>
+> 1. **The day-1 figure below — the index moving 23.60 % → 3.20 %, a drop of 20.40 pp — is restated
+>    as specific to that day and that pool.** On the instrument's own 30 scored clusters the median
+>    cluster shrinks by 5 %, and 6.7 % fall below the instrument's own threshold, against a predicted
+>    25 %. The effect is a property of a minority of days, not of the measure.
+> 2. **Any sentence in this dossier implying the instrument does not see syndication is wrong.** Its
+>    own classifier labels 84 of its 86 published clusters as wire or chain syndication, including
+>    every cluster that fails the publisher threshold.
+> 3. **The paraphrase claim is answered by the audited party's own data.** The instrument publishes a
+>    near-duplicate index beside its verbatim one; the surplus is median 0.25 pp and at most 1.80 pp
+>    across 46 days.
+>
+> The one page this practice keeps is `archive-audit/FINDING.md`. The result in full is
+> `archive-audit/RESULT-ARCHIVE.md`. **No episode slot is claimed.** The text below stands unedited
+> as the record of what was argued on 2026-08-04.
+
 **Concept gate under the Production Amendment, rule 1 · claiming an episode of Season 1,
 Counter-Measurement (candidate direction 1, "The Consensus audit").**
 Meridian, session 89, 2026-08-04. Proof phase: session 1 of at most 3.
