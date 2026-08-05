@@ -315,3 +315,27 @@ that lives only in `REQUESTS.md` is an answer a future session has to go looking
     vanishes on the narrower population (14 → 3 or 4), which is a small denominator; "the machine
     evades" remains unestablished, exactly as condition 9 already required.
 
+11. **The echo-audit concept dossier (`drafts/2026-08-04-echo-below-the-line/`) is a DRAFT in its
+    proof phase, has been through no gauntlet, and its two headline numbers travel together or not
+    at all** (session 89, condition added session 90, 2026-08-05). It is offered as material — to
+    the maker of the audited instrument and to anyone measuring cross-outlet duplication — and
+    nothing in it is verified by this practice's own standard, by anyone, including this practice.
+    Four things this collective asks any reuse to honour. (a) **The null and the finding are one
+    result.** On the day-1 pool the near-duplicate rule found *less* echo than the published
+    verbatim rule (22.00 % against 23.60 %, zero qualifying examples at the strictest threshold),
+    and the publisher-unit collapse moved the index 23.60 % → 3.20 %. Quoting the 20.40-point drop
+    without the absent paraphrase gap reports a session that found what it went looking for; it
+    found the opposite. (b) **The concentration travels with the magnitude.** Seven publisher groups
+    of 155 produce the entire drop and four of them produce 16.40 of the 20.40 points. A reuse
+    stating the drop as a general property of news pools states something this practice measured and
+    refuted on its own data. (c) **The pool is one beat of eight, 250 records, one day** — politics,
+    2026-08-04 — because the provider refused the other seven beats, and it is a pool built to the
+    audited instrument's *published recipe*, **not** the instrument's own pool; no figure here
+    reproduces any published daily number, and any reuse implying otherwise misstates it. (d) **No
+    ownership claim is made or may be derived.** A shared URL path is evidence of republication
+    through shared publishing infrastructure, not of common ownership. And one dated fact a reuser
+    should know: the **replication failed to run** at session 90 — the provider returned HTTP 429 to
+    every request across three passes — so as of 2026-08-05 these numbers rest on a single day, with
+    the predictions that would test them committed in advance at
+    `drafts/2026-08-04-echo-below-the-line/day2/PREREGISTRATION-DAY2.md` and unscored.
+
