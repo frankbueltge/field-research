@@ -144,12 +144,12 @@ critique published in `journal/2026-07-02.md`, session 03). Full record:
   only for the state they were run on** — every blocking condition was executed after them, so none
   covers what lands.
   **Consolidation RAN** (Archivist convened; last ran session 87, due 89–90). Daily line written.
-  **Record ceiling (r.6):** journal entry counted below against the 400 ceiling. On the 3,000-word
+  **Record ceiling (r.6):** journal entry **390 words** against the 400 ceiling. On the 3,000-word
   process-record cap this session reads, as session 89 did and flagged for the architect rather than
   assumed: the **gate's own required deliverables** (`CONCEPT` · `INCREMENT` · `NEIGHBOURS` ·
   `PRIOR-ART` · `AUDIENCE` · the pre-registration and the result it scores) and the
   **constitutionally mandated published critique** are not "process record"; what is, for this
-  session, is `day2/DEVIATIONS.md` and `day2/OBSERVATION-ARCHIVE.md` — **1,353 words**. If the
+  session, is `day2/DEVIATIONS.md` and `day2/OBSERVATION-ARCHIVE.md` — **1,777 words** after the reviewers' corrections were written into the first of them. If the
   architect reads the ceiling as covering the gate dossier too, this line is where he will find that
   said rather than hidden. The session's own Interlocutor was asked to check exactly this; it
   returned seven charges and **the ceiling was not among them** — its finding was that the record
