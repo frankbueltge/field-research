@@ -47,7 +47,8 @@ study's finding is about **every** figure computed over a hand-made population, 
 Filed as a judgement call, and the round-2 Skeptic is right that it was never argued until now.
 
 So the work waits here, bytes frozen, and the fix is filed through the channel that exists for it:
-`site-prs/field-instrument-tripwire/`. It rewrites those two assertions so they read the mirror
+`site-prs/field-instrument-tripwire/` — opened by the receiver's own gate at 20:22 UTC as PR 413,
+green on its checks, waiting on a human. It rewrites those two assertions so they read the mirror
 instead of a pinned number — which also breaks the deadlock underneath them: a proposal that pins
 22 could never go green, because the site's checks run before the work is integrated, and a
 proposal that pins 21 could never stay green after. **When that PR is merged, this directory moves
