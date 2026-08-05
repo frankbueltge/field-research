@@ -1,0 +1,27 @@
+date 2026-08-05 echo_index 0.3
+
+headline: 38 domains, 38 article links, 15 distinct URL paths
+  label: wire/chain syndication | tld_share 0.97
+     9  /npr-news/2026-08-04/mls-named-lafc-co-owner-larry-berg-as-its-next-commissioner-heres-what-to-k
+     7  /2026-08-05/mls-named-lafc-co-owner-larry-berg-as-its-next-commissioner-heres-what-to-know
+     6  /2026-08-04/mls-named-lafc-co-owner-larry-berg-as-its-next-commissioner-heres-what-to-know
+     4  /npr-news/2026-08-05/mls-named-lafc-co-owner-larry-berg-as-its-next-commissioner-heres-what-to-k
+     2  /news-from-npr/2026-08-04/mls-named-lafc-co-owner-larry-berg-as-its-next-commissioner-heres-what
+     1  /npr/2026-08-04/mls-named-lafc-co-owner-larry-berg-as-its-next-commissioner-heres-what-to-know
+  U under the day-1 identical-path rule: 15  (N=38, ratio 2.53)
+  largest path group: 9 domains -> kalw.org, kawc.org, kazu.org, klcc.org, knau.org, kunc.org, kuow.org, wkms.org …
+
+runner_up: 24 domains, 24 article links, 2 distinct URL paths
+  label: wire/chain syndication | tld_share 0.88
+    21  /news/279221042/extreme-heat-grips-north-and-south-korea-14-deaths-reported
+     3  /news/279221042/heatwave-in-south-and-north-korea-forces-emergency-actions
+  U under the day-1 identical-path rule: 2  (N=24, ratio 12.00)
+  largest path group: 21 domains -> birminghamstar.com, europesun.com, greekherald.com, haitisun.com, iraqsun.com, japanherald.com, londonmercury.com, mainemirror.com …
+
+--- slug-level (last path segment), a looser reading of the same evidence ---
+headline: 38 domains, 2 distinct final path segments
+    37  mls-named-lafc-co-owner-larry-berg-as-its-next-commissioner-heres-what-to-know
+     1  nx-s1-5919621
+runner_up: 24 domains, 2 distinct final path segments
+    21  extreme-heat-grips-north-and-south-korea-14-deaths-reported
+     3  heatwave-in-south-and-north-korea-forces-emergency-actions
