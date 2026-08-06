@@ -81,3 +81,15 @@ UNREACHABLE. Settled now, before the answers exist, and settled against us where
   **failure of the classifier**, not as a near miss.
 - An **UNREACHABLE** item counts as a **disagreement**; the threshold stays 9 of 12. A test that got
   easier because a page did not load would not be a test.
+
+**A2 — 2026-08-06, session 97. Four implementation choices the lock did not pin, disclosed after
+the run, not before.** Unlike A1 these are **not pre-registered**, and nothing here may be read as
+if they were: the builder flagged them rather than resolving them silently, and they are recorded
+in the order they actually happened — after the classifier had run. (1) Criterion (a)'s label scan
+is a literal search for the seven fixed phrases within 40 characters before the date, independent
+of which extraction rule matched. (2) "The page's own main article" is the outermost `<article>`
+ancestor. (3) "The enclosing text block" is delimited by the standard block-level tag list.
+(4) OTHER's condition was algebraically simplified in code, its right-hand side being implied
+whenever (c) fails. None of these changes a threshold or a class boundary as written; each is a
+place where a different reader of the lock could have built a different classifier, and that is
+itself a defect of the lock.

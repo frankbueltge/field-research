@@ -22,6 +22,18 @@ Inputs (read-only, all in this directory):
                        row that carries a V: only SELF is served; OTHER and
                        UNATTRIBUTABLE show the date, the class and the evidence,
                        with an explicit refusal in place of a defensible date.
+  adjudication-result.json — PREREGISTRATION-3.md's R4: a blind hand adjudication
+                       of a 12-row stratified sample, scored by the conductor, not
+                       this script. R4 was KILLED (8/12 agreement, threshold 9),
+                       all four disagreements on the UNATTRIBUTABLE class. Per the
+                       lock's own terms this withdraws the three-class labelling
+                       rather than licensing a tuning pass — this build does not
+                       change any threshold, label set, or criterion in response;
+                       it only (a) renames UNATTRIBUTABLE on the reader's face to
+                       "referent not established by this instrument", since the
+                       adjudication shows that class is a property of the rule, not
+                       of the page, and (b) prints the withdrawal, with its numbers,
+                       where a reader cannot miss it.
 
 Output:
   instrument.html
@@ -48,6 +60,7 @@ signals_ec = load("signals.json")
 signals_2 = load("signals-2.json")
 ec_rescore = load("ec-rescore.json")
 referents = load("referents.json")
+adjudication = load("adjudication-result.json")
 
 # One record per locked V hit, keyed by URL — this is the referent test's own
 # output (referent_test.py), not recomputed here. 62 expected; asserted below
@@ -523,6 +536,15 @@ DATA = {
             "class_totals": referents["counts"]["class_totals"],
             "predictions": referents["predictions"],
         },
+        "adjudication": {
+            "preregistration": "PREREGISTRATION-3.md, R4",
+            "n": adjudication["n"],
+            "agreement": adjudication["agreement"],
+            "threshold": adjudication["threshold"],
+            "verdict": adjudication["verdict"],
+            "by_machine_class": adjudication["by_machine_class"],
+            "adjudicator_caveat": adjudication.get("adjudicator_caveat"),
+        },
     },
     "authorities": [{"key": k, "label": lbl} for k, lbl in AUTHORITIES],
     "rows": ALL_ROWS,
@@ -580,6 +602,13 @@ if RECONCILE_NOTES:
         print("  - " + note)
 else:
     print("no reconciliation notes")
+print()
+print(f"R4 (blind hand adjudication, PREREGISTRATION-3.md): {adjudication['agreement']}/{adjudication['n']} "
+      f"agreement, threshold {adjudication['threshold']} -> {adjudication['verdict']}. "
+      f"By class: {adjudication['by_machine_class']}. "
+      "Per the lock's own terms this withdraws the three-class labelling; the instrument shows "
+      "this withdrawal on its face and renames UNATTRIBUTABLE without changing any threshold, "
+      "label set, or criterion.")
 print()
 
 # ---------------------------------------------------------------------------
@@ -686,6 +715,37 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
   letter-spacing: 0.08em;
   color: var(--muted);
   margin: 0 0 1rem;
+}
+.aot .aot-withdrawal {
+  border: 2px solid var(--bad-border);
+  background: var(--bad-bg);
+  border-radius: 4px;
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 1.4rem;
+  font-size: 0.88rem;
+}
+.aot .aot-withdrawal h2 {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--bad-border);
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  font-family: var(--mono);
+}
+.aot .aot-withdrawal p { margin: 0 0 0.55rem; }
+.aot .aot-withdrawal p:last-child { margin-bottom: 0; }
+.aot .aot-withdrawal table.aot-withdrawal-table {
+  border-collapse: collapse;
+  margin: 0.4rem 0 0.6rem;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+}
+.aot .aot-withdrawal table.aot-withdrawal-table th,
+.aot .aot-withdrawal table.aot-withdrawal-table td {
+  border: 1px solid var(--bad-border);
+  padding: 0.25rem 0.6rem;
+  text-align: left;
 }
 .aot .aot-standing {
   border: 1px solid var(--border);
@@ -993,6 +1053,8 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
   <h1>As of Today</h1>
   <p class="aot-kicker">a citation slip for official policy pages — three self-reported dates, checked against each other</p>
 
+  <div class="aot-withdrawal" id="aot-withdrawal"></div>
+
   <div class="aot-standing">
     <h2>What this instrument does and does not do</h2>
     <ul>
@@ -1001,7 +1063,7 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
       <li>S is itself only the publishing system's own claim about the page — it is not verified against anything.</li>
       <li>No archived capture history was reachable for any of these pages, for either measurement session, so nothing here can be checked against what actually changed.</li>
       <li>This instrument's own rules for extracting V from a page are known to be defective on part of the corpus: a rule can read a date printed for a <em>different</em> document the page displays or discusses, not the page's own currency (D10/D11) — that is deliberate: the instrument marks its own bad rows in place, on the slip, rather than quietly dropping them.</li>
-      <li>Every V hit was re-fetched fresh and classified <strong>SELF / OTHER / UNATTRIBUTABLE</strong> by the referent test (<code>PREREGISTRATION-3.md</code>): does a page-currency label sit within 40 characters before the date, does any ancestor put the date inside a link, list item, other article, or card/teaser/listing container, does the enclosing text block link or quote. Only <strong>SELF</strong> is served as a defensible date; <strong>OTHER</strong> and <strong>UNATTRIBUTABLE</strong> show the date, the class, and the evidence, with an explicit refusal in place of a defensible date.</li>
+      <li>Every V hit was re-fetched fresh and classified <strong>SELF / OTHER / referent-not-established</strong> by the referent test (<code>PREREGISTRATION-3.md</code>): does a page-currency label sit within 40 characters before the date, does any ancestor put the date inside a link, list item, other article, or card/teaser/listing container, does the enclosing text block link or quote. Only <strong>SELF</strong> is served as a defensible date; <strong>OTHER</strong> and <strong>referent-not-established</strong> show the date, the class, and the evidence, with an explicit refusal in place of a defensible date. <strong>See the notice above the fold:</strong> the third class failed its own pre-registered blind-adjudication test today and is withdrawn, not trusted as a discovery.</li>
     </ul>
     <div class="aot-timestamps" id="aot-timestamps"></div>
   </div>
@@ -1057,6 +1119,44 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
     return m[1] + " " + m[2] + " UTC";
   }
 
+  // ---- withdrawal banner: R4, the blind hand adjudication, KILLED ----
+  (function renderWithdrawal() {
+    var box = document.getElementById("aot-withdrawal");
+    var adj = DATA.meta.adjudication;
+    if (!adj) return;
+    box.appendChild(el("h2", null, "Withdrawn, not tuned — the classifier failed its own pre-registered test"));
+    box.appendChild(el("p", null,
+      "PREREGISTRATION-3.md's R4 required a blind hand adjudication of a 12-row stratified " +
+      "sample to agree with the machine class on at least 9 of 12. It scored " + adj.agreement +
+      " of " + adj.n + " (threshold " + adj.threshold + ") — " + adj.verdict + ". By the lock's " +
+      "own terms this withdraws the three-class labelling below; nothing here has been tuned in " +
+      "response, and no threshold, label set, or criterion has been changed."));
+    var table = el("table", "aot-withdrawal-table", null);
+    var thead = el("tr", null, null);
+    ["Machine class", "Agreement with the blind human reader"].forEach(function (h) {
+      thead.appendChild(el("th", null, h));
+    });
+    table.appendChild(thead);
+    Object.keys(adj.by_machine_class || {}).forEach(function (k) {
+      var tr = el("tr", null, null);
+      tr.appendChild(el("td", null, k));
+      tr.appendChild(el("td", null, adj.by_machine_class[k]));
+      table.appendChild(tr);
+    });
+    box.appendChild(table);
+    box.appendChild(el("p", null,
+      "All four disagreements were on the class this instrument used to call UNATTRIBUTABLE. On " +
+      "every one of those four, the blind reader found a referent the machine did not — twice " +
+      "another document's date, twice the page's own dated line. So that class is renamed below " +
+      "to “referent not established by this instrument”: it means the machine could not " +
+      "tell, never that the page carries no such date. The conservative serving rule is unchanged " +
+      "— only a SELF-labelled date is ever offered as defensible — because it strictly reduces " +
+      "wrong answers regardless of this result, not because this result vindicates it."));
+    if (adj.adjudicator_caveat) {
+      box.appendChild(el("p", null, "The adjudicator's own caveat, verbatim: " + adj.adjudicator_caveat));
+    }
+  })();
+
   // ---- standing block timestamps ----
   (function renderTimestamps() {
     var box = document.getElementById("aot-timestamps");
@@ -1100,10 +1200,11 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
     var oc = DATA.meta.other_by_authority || {};
     var ac = DATA.meta.unattributable_by_authority || {};
     foot.appendChild(el("div", null,
-      "Referent test (PREREGISTRATION-3.md), SELF / OTHER / UNATTRIBUTABLE by authority: " +
+      "Referent test (PREREGISTRATION-3.md), SELF / OTHER / referent-not-established by authority: " +
       DATA.authorities.map(function (a) {
         return a.label + " " + (sc[a.key] || 0) + "/" + (oc[a.key] || 0) + "/" + (ac[a.key] || 0);
-      }).join(", ") + ". Only SELF is served as a defensible date."));
+      }).join(", ") + ". Only SELF is served as a defensible date. The third class failed its own " +
+      "blind-adjudication test (see the notice above the fold) and is shown withdrawn."));
     var rt = DATA.meta.referent_test || {};
     if (rt.hits_tested) {
       foot.appendChild(el("div", null,
@@ -1152,7 +1253,7 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
         var btn = el("button", "aot-url-btn", null);
         btn.type = "button";
         btn.appendChild(document.createTextNode(pathLabel(row)));
-        var FLAG_LABEL = { SELF: "self", OTHER: "other", UNATTRIBUTABLE: "unattributable" };
+        var FLAG_LABEL = { SELF: "self", OTHER: "other", UNATTRIBUTABLE: "not established" };
         if (row.referent_class && FLAG_LABEL[row.referent_class]) {
           btn.appendChild(el("span", "aot-flag", FLAG_LABEL[row.referent_class]));
         }
@@ -1210,10 +1311,14 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
     UNATTRIBUTABLE: {
       cls: "aot-suspect",
       badgeCls: "aot-badge-suspect",
-      badgeText: "UNATTRIBUTABLE — no referent evidence",
+      badgeText: "referent not established by this instrument",
       note: "Neither a page-currency label nor link/card/quote evidence was found near this date — " +
-        "including every date taken from a bare <time datetime> with no visible label. Not served " +
-        "as a defensible date."
+        "including every date taken from a bare <time datetime> with no visible label. This means " +
+        "the machine could not tell, not that the page carries no such date: on a blind sample of " +
+        "twelve (PREREGISTRATION-3.md, R4 — KILLED, 8/12 against a threshold of 9), a human reader " +
+        "resolved 4 of 4 rows in this class, twice finding another document's date and twice " +
+        "finding the page's own dated line. See the withdrawal notice above. Not served as a " +
+        "defensible date."
     }
   };
 
@@ -1394,7 +1499,9 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
     var det2 = el("details", "aot-evidence", null);
     det2.appendChild(el("summary", null, "Referent test evidence (PREREGISTRATION-3.md)"));
     var t2 = el("table", "aot-evidence-table", null);
-    evidenceRow(t2, "Referent class", row.referent_class || row.referent_status || "not classified");
+    evidenceRow(t2, "Referent class (internal name)", row.referent_class === "UNATTRIBUTABLE"
+      ? "UNATTRIBUTABLE — shown above as “referent not established by this instrument”"
+      : (row.referent_class || row.referent_status || "not classified"));
     evidenceRow(t2, "Fresh fetch, re-extracted date", row.referent_fresh_v_fmt);
     evidenceRow(t2, "Fresh fetch, re-extraction rule", row.referent_fresh_v_rule);
     evidenceRow(t2, "Changed vs. locked run", row.referent_changed ? "yes — see note above" : "no");
@@ -1470,8 +1577,8 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
     note.appendChild(p1);
     var p2 = el("div", null,
       "The V counts above include every printed date found, including the rows the referent test " +
-      "(PREREGISTRATION-3.md) classifies OTHER or UNATTRIBUTABLE — a non-defensible V is still a V " +
-      "for coverage purposes. Each slip's \"date a reader could defend\" excludes those same rows, " +
+      "(PREREGISTRATION-3.md) classifies OTHER or referent-not-established — a non-defensible V is " +
+      "still a V for coverage purposes. Each slip's \"date a reader could defend\" excludes those same rows, " +
       "falling back to the sitemap date or to none. So a page can count toward V here and still " +
       "show \"no defensible date\" on its slip: that is by design, not a discrepancy to reconcile.");
     note.appendChild(p2);
