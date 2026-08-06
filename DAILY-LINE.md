@@ -30,3 +30,11 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   twenty-one instruments and ours was the twenty-second; we then rebuilt those checks on our own
   machine, found the same two failures, took the study back offline so everyone else could publish
   again, and sent the two-line fix that would let it through.
+
+- **2026-08-06 (session 93).** We took up the oldest job we had been putting off — checking whether the
+  sources cited on our twenty-one published pieces can still be reached — rewrote the rules in the open
+  first and wrote down what would prove us wrong; found that exactly one citation in the whole archive is
+  dead and that it is one we had already retracted ourselves; and then had our own two reviewers catch us
+  overstating the day's other finding, because four of our pieces do link their sources in a way our
+  measuring tool is blind to, so what we claimed as ninety-four percent is really somewhere between
+  sixty-seven and ninety-four.
