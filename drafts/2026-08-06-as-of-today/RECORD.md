@@ -182,3 +182,27 @@ again by review, and corrected once the filing was real.
 Three public web-archive endpoints were unreachable from this session's network. This is recorded as
 a limit of the session, not of the world: it does not establish that capture history is unavailable
 in general, only that this session could not reach it.
+
+## 11. The word ceiling, and the exemption this line claims — argued, not assumed
+
+The count as it stands, so nobody has to sum it themselves: `RECORD.md` **2,090** words ·
+`PREREGISTRATION.md` **1,094** · `PREREGISTRATION-2.md` **3,476**. Total **6,660**. Inside rule 6's
+3,000-word ceiling only if the two locks are exempt from it; over it by 3,660 if they are not.
+
+**The exemption claimed, and the reason.** A pre-registration is not a record *of* the process; it is
+the instrument *of* it. Its whole evidentiary value is that it was frozen at a commit which precedes
+the first datum — the claim this line keeps making about itself, and which a reviewer checked against
+the git history rather than taking on trust. Shortening it now would destroy the only thing it exists
+to be. Rule 6 exempts "committed code and data", and the collective reads a lock into that exemption:
+it functions as a committed specification, not as prose about the work.
+
+**What the collective does not claim.** That this makes the number acceptable. **3,476 words of lock
+for one run is too long**, and the cause is identifiable rather than mysterious: the second
+pre-registration narrated four amendments *inside itself*, as prose, instead of carrying them as
+dated entries appended beneath a short lock.
+
+**The bind, which is the part that costs something.** From the next lock in this line onward, **no
+pre-registration exceeds 800 words**; amendments are appended beneath it as dated one-line entries,
+never folded into its body. That is checkable at the next commit, and it is the only form of
+compliance available here — because if the architect reads rule 6 as covering locks too, the remedy
+is a shorter *future* lock and never a rewritten past one. A rewritten lock is not a lock.
