@@ -282,13 +282,19 @@ def build_row(authority_key, raw, scored):
     run_ts = RUN_TS_BY_AUTHORITY[authority_key]
     v_postdates_run = bool(v_dt is not None and v_dt > run_ts)
 
-    # --- "the date the reader could defend": a SELF-classified V, else S, else none ---
+    # --- "the date the reader could defend": a SELF-classified V, or nothing. ---
+    # D12, this round: S used to fill this slot when V was not usable. On GOV.UK
+    # all seven sitemap <lastmod> values cluster within about two minutes of a
+    # single bulk regeneration on 2026-08-05 — a publishing-system heartbeat, not
+    # a claim about any one page's content — so that fallback served a date up to
+    # ~188 days from the page's own visible date (see D12_GOVUK_EXAMPLE below) as
+    # "the date a reader could defend". Withdrawn: S is never the defensible date
+    # now, only ever shown as a labelled machine signal alongside the refusal.
     v_usable = bool(v) and referent_class == "SELF"
     v_present_not_defensible = bool(v) and not v_usable
+    s_withheld_from_defend = bool(s) and not v_usable  # D12: true whenever S existed but is not served
     if v_usable:
         defend_source, defend_iso = "V", v
-    elif s:
-        defend_source, defend_iso = "S", s
     else:
         defend_source, defend_iso = None, None
 
@@ -312,6 +318,14 @@ def build_row(authority_key, raw, scored):
     distance_days = None
     if dp_machine is not None and dp_defend is not None:
         distance_days = abs((dp_machine - dp_defend).days)
+
+    # D12: kept for display even though S is no longer ever served — this is
+    # exactly the gap the old fallback was silently handing out as "defensible".
+    dp_v = date_part(v)
+    dp_s = date_part(s)
+    v_to_s_distance_days = None
+    if dp_v is not None and dp_s is not None:
+        v_to_s_distance_days = abs((dp_v - dp_s).days)
 
     return {
         "authority": authority_key,
@@ -350,8 +364,10 @@ def build_row(authority_key, raw, scored):
         "defend_source": defend_source,
         "defend_fmt": fmt_date_iso(defend_iso),
         "v_present_not_defensible": v_present_not_defensible,
+        "s_withheld_from_defend": s_withheld_from_defend,
         "only_defensible_was_flagged": only_defensible_was_flagged,
         "distance_days": distance_days,
+        "v_to_s_distance_days": v_to_s_distance_days,
         "no_signal_at_all": not (h or s or v),
     }
 
@@ -385,6 +401,60 @@ assert _v_urls_here == _v_urls_tested, (
     f"{len(_v_urls_tested - _v_urls_here)} stale. Re-run referent_test.py."
 )
 assert len(_v_urls_here) == 62, f"expected 62 V hits per PREREGISTRATION-3.md, found {len(_v_urls_here)}"
+
+# ---------------------------------------------------------------------------
+# D12 — computed from the data, not typed by hand: the sitemap-fallback
+# defect this round removes. GOV.UK's seven sitemap <lastmod> values, and how
+# tightly they cluster, and the specific gap the fallback used to serve as
+# "defensible" on one row.
+# ---------------------------------------------------------------------------
+
+_govuk_rows = rows_by_authority.get("GOVUK", [])
+_govuk_s_times = sorted(parse_iso(r["s"]) for r in _govuk_rows if r["s"])
+D12_GOVUK_S_N = len(_govuk_s_times)
+if _govuk_s_times:
+    D12_GOVUK_S_MIN = _govuk_s_times[0]
+    D12_GOVUK_S_MAX = _govuk_s_times[-1]
+    D12_GOVUK_S_FULL_SPREAD_S = (D12_GOVUK_S_MAX - D12_GOVUK_S_MIN).total_seconds()
+    # the tight core: every timestamp within 10 minutes of the earliest one
+    _core = [t for t in _govuk_s_times if (t - D12_GOVUK_S_MIN).total_seconds() <= 600]
+    D12_GOVUK_S_CORE_N = len(_core)
+    D12_GOVUK_S_CORE_SPREAD_S = (max(_core) - min(_core)).total_seconds()
+    D12_GOVUK_S_OUTLIER_N = D12_GOVUK_S_N - D12_GOVUK_S_CORE_N
+else:
+    D12_GOVUK_S_MIN = D12_GOVUK_S_MAX = None
+    D12_GOVUK_S_FULL_SPREAD_S = D12_GOVUK_S_CORE_N = D12_GOVUK_S_CORE_SPREAD_S = D12_GOVUK_S_OUTLIER_N = None
+
+_d12_example = next(
+    (r for r in _govuk_rows if r["url"].endswith("secure-ai-infrastructure-call-for-information")),
+    None,
+)
+D12_EXAMPLE = None
+if _d12_example is not None:
+    D12_EXAMPLE = {
+        "url": _d12_example["url"],
+        "v_fmt": _d12_example["v_fmt"],
+        "s_fmt": _d12_example["s_fmt"],
+        "gap_days": _d12_example["v_to_s_distance_days"],
+    }
+
+# The conductor's report described "all seven" clustering within "about two
+# minutes". Computed here rather than repeated by hand: six of the seven do
+# (within under two minutes of each other); the seventh — the organisations
+# page, a different template — was regenerated the same day, hours later.
+# Both figures are printed below and on the page; neither is silently
+# rounded to match the description that prompted this check.
+
+# ---------------------------------------------------------------------------
+# D13 — named, not fixed. Two ways this round found the referent test's own
+# rule, not the page, producing the wrong class. Computed so the counts on
+# the page are real, not asserted.
+# ---------------------------------------------------------------------------
+
+D13_PUBLISHED_ROWS = [r for r in ALL_ROWS if r["v_rule"] == "V2-published" and r["v"]]
+D13_GOVUK_PUBLISHED_ROWS = [r for r in D13_PUBLISHED_ROWS if r["authority"] == "GOVUK"]
+D13_SEE_ALL_UPDATES_URL = "https://www.gov.uk/government/publications/ian-hogarths-declared-outside-interests"
+D13_SEE_ALL_UPDATES_ROW = next((r for r in ALL_ROWS if r["url"] == D13_SEE_ALL_UPDATES_URL), None)
 
 # ---------------------------------------------------------------------------
 # Coverage panel — two bases, computed from the rows
@@ -500,6 +570,23 @@ for r in ALL_ROWS:
         )
 
 # ---------------------------------------------------------------------------
+# Item 4 of this round: how many of the 177 measured pages carry a defensible
+# date now that S can never fill that slot — computed from the rows, printed
+# below and embedded for the page.
+# ---------------------------------------------------------------------------
+
+DEFENSIBLE_TOTAL = sum(1 for r in ALL_ROWS if r["defend_source"] == "V")
+DEFENSIBLE_BY_AUTHORITY = {k: sum(1 for r in rows_by_authority[k] if r["defend_source"] == "V")
+                            for k, _ in AUTHORITIES}
+# Sanity: the defensible slot is now filled if and only if V classified SELF —
+# no other path into it exists any more. Assert this rather than assume it.
+assert DEFENSIBLE_TOTAL == sum(CLASS_COUNTS["all"][k]["SELF"] for k, _ in AUTHORITIES), (
+    "defensible count no longer equals the SELF count — S is filling the slot again"
+)
+for r in ALL_ROWS:
+    assert not (r["defend_source"] == "S"), f"S in the defensible slot: {r['url']}"
+
+# ---------------------------------------------------------------------------
 # Assemble the embedded data blob
 # ---------------------------------------------------------------------------
 
@@ -544,6 +631,24 @@ DATA = {
             "verdict": adjudication["verdict"],
             "by_machine_class": adjudication["by_machine_class"],
             "adjudicator_caveat": adjudication.get("adjudicator_caveat"),
+        },
+        "defensible_total": DEFENSIBLE_TOTAL,
+        "defensible_by_authority": DEFENSIBLE_BY_AUTHORITY,
+        "d12": {
+            "govuk_s_n": D12_GOVUK_S_N,
+            "govuk_s_min_utc": D12_GOVUK_S_MIN.isoformat() if D12_GOVUK_S_MIN else None,
+            "govuk_s_max_utc": D12_GOVUK_S_MAX.isoformat() if D12_GOVUK_S_MAX else None,
+            "govuk_s_full_spread_seconds": D12_GOVUK_S_FULL_SPREAD_S,
+            "govuk_s_core_n": D12_GOVUK_S_CORE_N,
+            "govuk_s_core_spread_seconds": D12_GOVUK_S_CORE_SPREAD_S,
+            "govuk_s_outlier_n": D12_GOVUK_S_OUTLIER_N,
+            "example": D12_EXAMPLE,
+        },
+        "d13": {
+            "published_label_never_self_n": len(D13_PUBLISHED_ROWS),
+            "govuk_published_n": len(D13_GOVUK_PUBLISHED_ROWS),
+            "see_all_updates_url": D13_SEE_ALL_UPDATES_URL,
+            "see_all_updates_class": D13_SEE_ALL_UPDATES_ROW["referent_class"] if D13_SEE_ALL_UPDATES_ROW else None,
         },
     },
     "authorities": [{"key": k, "label": lbl} for k, lbl in AUTHORITIES],
@@ -609,6 +714,24 @@ print(f"R4 (blind hand adjudication, PREREGISTRATION-3.md): {adjudication['agree
       "Per the lock's own terms this withdraws the three-class labelling; the instrument shows "
       "this withdrawal on its face and renames UNATTRIBUTABLE without changing any threshold, "
       "label set, or criterion.")
+print()
+print(f"D12 — S withdrawn from the defensible slot. Defensible dates after this change: "
+      f"{DEFENSIBLE_TOTAL} / {len(ALL_ROWS)}")
+for k, lbl in AUTHORITIES:
+    print(f"  {lbl:60s} {DEFENSIBLE_BY_AUTHORITY[k]}")
+print(f"  GOV.UK sitemap <lastmod> spread: {D12_GOVUK_S_N} values, "
+      f"{D12_GOVUK_S_CORE_N} within {D12_GOVUK_S_CORE_SPREAD_S:.0f}s of each other, "
+      f"{D12_GOVUK_S_OUTLIER_N} outlier(s), full spread {D12_GOVUK_S_FULL_SPREAD_S:.0f}s "
+      f"({D12_GOVUK_S_MIN.isoformat() if D12_GOVUK_S_MIN else '?'} to {D12_GOVUK_S_MAX.isoformat() if D12_GOVUK_S_MAX else '?'})")
+if D12_EXAMPLE:
+    print(f"  example withdrawn: {D12_EXAMPLE['url']} — V {D12_EXAMPLE['v_fmt']}, "
+          f"S {D12_EXAMPLE['s_fmt']}, gap {D12_EXAMPLE['gap_days']} days")
+print()
+print(f"D13 — named, not fixed. V2-published hits that can never classify SELF because the lock's "
+      f"label set contains no form of 'published': {len(D13_PUBLISHED_ROWS)} total "
+      f"({len(D13_GOVUK_PUBLISHED_ROWS)} on GOV.UK). Second instance: {D13_SEE_ALL_UPDATES_URL} "
+      f"classifies {D13_SEE_ALL_UPDATES_ROW['referent_class'] if D13_SEE_ALL_UPDATES_ROW else '?'} "
+      "because an unrelated 'See all updates' link shares its metadata block.")
 print()
 
 # ---------------------------------------------------------------------------
@@ -1425,31 +1548,41 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
         "Ordinary tooling reads in this order: Last-Modified header first, then sitemap, then a printed date."));
     }
 
-    // defensible line
+    // defensible line — D12: V classified SELF, or an explicit refusal. S is
+    // never in this slot any more, however tempting a fallback it once was.
     var dLine = el("div", "aot-verdict-line", null);
     var dLabel = el("span", "aot-verdict-label", "The date a reader could defend: ");
     dLine.appendChild(dLabel);
     if (row.defend_fmt) {
       dLine.appendChild(document.createTextNode(row.defend_fmt + " (from " + row.defend_source + ")."));
-    } else if (row.only_defensible_was_flagged) {
-      dLine.appendChild(document.createTextNode("no defensible date at all."));
-      dLine.classList.add("aot-nodate");
     } else {
-      dLine.appendChild(document.createTextNode("none — no sitemap entry and no printed date."));
+      dLine.appendChild(document.createTextNode("no defensible date — refused, not guessed."));
       dLine.classList.add("aot-nodate");
     }
     box.appendChild(dLine);
-    if (row.v_present_not_defensible) {
-      var sInfo = badgeInfoFor(row);
-      var sLabel = sInfo ? sInfo.badgeText : (row.referent_class || "not classified");
-      if (row.only_defensible_was_flagged) {
+    if (!row.defend_fmt) {
+      if (row.v_present_not_defensible && row.s_withheld_from_defend) {
+        var sInfo = badgeInfoFor(row);
+        var sLabel = sInfo ? sInfo.badgeText : (row.referent_class || "not classified");
         box.appendChild(el("div", "aot-verdict-note",
-          "The only printed date on this page is classed " + sLabel + " and there is no sitemap " +
-          "entry to fall back to, so no defensible date is offered here — refused, not guessed."));
+          "The printed date on this page is classed " + sLabel + ", and the sitemap carries a date " +
+          "too (shown above, as S) — but S is never served in this slot (D12): it is the publishing " +
+          "system's own claim about when the record was generated, not a claim about this page's " +
+          "content, and it can be a bulk regeneration timestamp shared across unrelated pages."));
+      } else if (row.v_present_not_defensible) {
+        var sInfo2 = badgeInfoFor(row);
+        var sLabel2 = sInfo2 ? sInfo2.badgeText : (row.referent_class || "not classified");
+        box.appendChild(el("div", "aot-verdict-note",
+          "The printed date on this page is classed " + sLabel2 + ", and there is no sitemap entry " +
+          "either, so no defensible date is offered here."));
+      } else if (row.s_withheld_from_defend) {
+        box.appendChild(el("div", "aot-verdict-note",
+          "This page prints no date a reader could cite. The sitemap carries a date (shown above, " +
+          "as S), but S is never served in this slot (D12): it is the publishing system's own claim " +
+          "about when the record was generated, not a claim about this page's content."));
       } else {
         box.appendChild(el("div", "aot-verdict-note",
-          "The printed date on this page is classed " + sLabel + ", so it is excluded here and " +
-          "the sitemap date is used instead."));
+          "This page offers no printed date and no sitemap entry — nothing here to defend or refuse a claim about."));
       }
     }
     box.appendChild(el("div", "aot-verdict-note",
