@@ -1177,6 +1177,7 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
   <p class="aot-kicker">a citation slip for official policy pages — three self-reported dates, checked against each other</p>
 
   <div class="aot-withdrawal" id="aot-withdrawal"></div>
+  <div class="aot-withdrawal" id="aot-d12"></div>
 
   <div class="aot-standing">
     <h2>What this instrument does and does not do</h2>
@@ -1278,6 +1279,54 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
     if (adj.adjudicator_caveat) {
       box.appendChild(el("p", null, "The adjudicator's own caveat, verbatim: " + adj.adjudicator_caveat));
     }
+  })();
+
+  // ---- D12 banner: the sitemap fallback is withdrawn ----
+  (function renderD12() {
+    var box = document.getElementById("aot-d12");
+    var d12 = DATA.meta.d12;
+    if (!d12) return;
+    box.appendChild(el("h2", null, "D12 — the sitemap fallback is withdrawn"));
+    box.appendChild(el("p", null,
+      "Until this round, when a page's printed date (V) was not classified SELF, this instrument " +
+      "filled “the date a reader could defend” from the sitemap's own <lastmod> (S) instead. " +
+      "On GOV.UK that served a bulk regeneration timestamp as if it were evidence about one page: " +
+      "of " + d12.govuk_s_n + " sitemap dates, " + d12.govuk_s_core_n + " sit within " +
+      Math.round(d12.govuk_s_core_spread_seconds) + " seconds of each other" +
+      (d12.govuk_s_outlier_n ? (" and " + d12.govuk_s_outlier_n + " outlier was regenerated the same day, hours later") : "") +
+      " — a publishing-system heartbeat, not a per-page claim."));
+    if (d12.example) {
+      box.appendChild(el("p", null,
+        "Example: " + d12.example.url + " prints its own “Published " + d12.example.v_fmt +
+        "”, but the sitemap-fallback rule was serving " + d12.example.s_fmt + " as the " +
+        "“defensible” date instead — " + d12.example.gap_days + " days away from the " +
+        "page's own visible date."));
+    }
+    box.appendChild(el("p", null,
+      "That behaviour is withdrawn. S is still shown on every slip below, labelled as what it is " +
+      "— a machine signal, with its own caveat — but it can no longer occupy the “date a reader " +
+      "could defend” slot. No threshold, label set, or classification criterion changed to do this."));
+  })();
+
+  // ---- D13: named, not fixed — appended to the standing list from the data ----
+  (function renderD13() {
+    var d13 = DATA.meta.d13;
+    if (!d13) return;
+    var ul = document.querySelector(".aot-standing ul");
+    if (!ul) return;
+    var li = el("li", null, null);
+    li.appendChild(document.createTextNode(
+      "D13, named and not fixed this round — the referent test's own rule, not the page, producing " +
+      "the wrong class, in two ways found by review. (1) The page-currency label set has no form of " +
+      "“published”, so GOV.UK's own idiom (“Updates to this page — Published ‹date›”) can never " +
+      "classify SELF: " + d13.published_label_never_self_n + " V2-published hits are affected (" +
+      d13.govuk_published_n + " on GOV.UK), and a blind reader called two of them SELF where the " +
+      "machine declined. (2) " + d13.see_all_updates_url + " carries a literal “Last updated” label " +
+      "but classifies " + (d13.see_all_updates_class || "?") + " because an unrelated “See all " +
+      "updates” link shares its metadata block — a criterion tuned to one authority's template " +
+      "disqualifying another's standard widget. Both are stated here as defects of our rule, not of " +
+      "the pages, and are left unfixed by this round's licence."));
+    ul.appendChild(li);
   })();
 
   // ---- standing block timestamps ----
@@ -1507,6 +1556,16 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
       li.appendChild(tag);
       li.appendChild(document.createTextNode(info.text));
       if (!info.present) li.classList.add("aot-absent");
+      if (sig === "s" && info.present) {
+        var sCaveat = "S is the publishing system's own claim about when this record was " +
+          "generated in the sitemap, not evidence about this page's own content (D12) — never " +
+          "served as the date a reader could defend.";
+        if (row.v_to_s_distance_days !== null && row.v_to_s_distance_days !== undefined) {
+          sCaveat += " Gap from the printed date (V) on this page: " + row.v_to_s_distance_days +
+            (row.v_to_s_distance_days === 1 ? " day." : " days.");
+        }
+        li.appendChild(el("div", "aot-verdict-note", sCaveat));
+      }
       if (sig === "v" && row.v) {
         var info2 = badgeInfoFor(row);
         if (info2) {
