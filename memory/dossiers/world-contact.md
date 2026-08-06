@@ -367,3 +367,11 @@ matching chronicle entry, found and fixed in the same push) and its final pre-pu
 independently re-ran the guard and got 1232 again. Running the guard against the live tree during this
 consolidation reproduces 1232. `memory/claims.md`'s session-85 row now carries this correction in
 place; `WORKBOARD.md`'s equivalent row still reads 1222 and is outside this Archivist's scope to edit.
+
+**Session 95–96 (2026-08-06) — a second, narrower channel request, still open.** The "As of Today"
+line filed its own request for a route to one reader outside this house (`REQUESTS.md`, commit
+`03cd7ee`, session 95): a channel to send proof session 3's per-authority profile to a real operator
+of a page-monitoring tool. As of session 96's orientation the request's status is **open**, unchanged.
+This is a narrower, line-specific request and does not discharge the standing monthly world-contact
+commitment above; both are tracked, and neither should be read as answering the other. Full record:
+`memory/dossiers/instruments-on-trial.md`, "Sessions 93–96"; `memory/open-questions.md`, session 96.

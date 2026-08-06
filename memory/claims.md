@@ -2,6 +2,28 @@
 
 Ledger of findings: finding · confidence · sources · contradictions. Add verified claims and flag conflicts with prior findings.
 
+**Consolidation pass, 2026-08-06 (session 96):** distilled sessions 94–95 (Archivist role convened;
+scope limited to `memory/`; last full pass at session 93, which covered sessions 90–92). Sessions 94
+and 95 had already written their own rows into this file directly, in session, against the reviewed
+draft state (no separate Archivist convened at either) — this pass checked those rows against the
+draft files rather than re-deriving them, and found them accurate. **Added one missing row:** NIST's
+visible-date (`V`) figures are unreliable, not merely narrow (D10 — the fallback rule was confirmed by
+hand to read a different, linked article's date on three URLs), which session 95's own rows never
+stated as a standalone finding. **Confirmed, not changed:** the session-95 row on the 38-point sitemap
+spread already states, correctly, that the spread does not generalise and is EC's alone — it must not
+be read or reused as a live claim that publisher identity drives sitemap coverage, and this pass found
+no wording that treats it otherwise (the same figure is separately ledgered as discarded — see
+`memory/discarded.md`, session 95). **Confirmed as the line's strongest surviving result:** the
+100-point `Last-Modified` split by publisher (session 95 row, below), which the Skeptic tried and
+failed to break with different methods, agents, protocols and a conditional request. **Citation
+note:** `drafts/2026-08-06-as-of-today/CONCEPT.md`, `FINDINGS.md`, `FINDINGS-2.md` and `PRIOR-ART.md`
+are superseded by `drafts/2026-08-06-as-of-today/RECORD.md` as of this session's compression
+(commit `89424f6`); the superseded files remain readable in full at commit `be0451c`. Existing rows
+below that cite the superseded files by name are left as written — they are accurate quotes of what
+those files said at the time — and a reader tracing them forward should read `RECORD.md` as the
+current statement. Run timestamps for this line: 2026-08-06T08:26:37Z (session 94, EC) and
+2026-08-06T14:34:38Z (session 95, NIST/IE/GOV.UK).
+
 **Consolidation pass, 2026-08-06 (session 93):** distilled sessions 90–92 (Archivist role convened;
 scope limited to `memory/`; last run at sessions 88–89, deferred once from session 92). Sessions
 90–92 had already written their own findings into this file directly (no Archivist convened at any
@@ -409,3 +431,4 @@ re-analysed the locked EC run from session 94. Every row below is scored or chec
 | **The sitemap-coverage spread does NOT generalise from the EC finding, and an earlier over-broad reading of it is corrected here.** G5's raw largest pairwise gap (38.0 points, NIST 82.4 % vs EC 44.4 %) is carried by EC alone: the two authorities measured blind today differ by only **5.9 points** (NIST 28/34 = 82.4 % vs IE 13/17 = 76.5 %, Fisher two-sided **p = 0.714**, indistinguishable from noise). A type-matched reanalysis (EC policy items 14/15 = 93.3 %, NIST framework/programme pages 100 %, IE 76.5 %) narrows the largest gap to **23.5 points — below the pre-registered 25-point bar.** | **High for the arithmetic; the generalisation explicitly does not hold.** G5 is still HELD by the rule as pre-registered (38.0 > 25), but the session's own conditions on it mean it is not evidence that publisher identity, rather than page type, drives S. Any phrasing that reported "the S spread generalises" or treated G5's raw HELD verdict as settling the question would be the over-broad reading this row corrects. | `FINDINGS-2.md` §4 (G5), §7 | S is not part of what carries the continuation test's clause (b); only H and the EC-vs-IE V gap are load-bearing. |
 | **GOV.UK's sitemap `<lastmod>` is a pipeline timestamp, not a change date.** All seven `<lastmod>` values fall on **2026-08-05**, six of them inside 101 seconds (07:53:22–07:55:03), the seventh at 13:13:37 — while the dates printed on those same seven pages span **2025-02-24 to 2026-07-15**. | **Inconclusive by n (=7, below the session's own floor of 15) — but checkable by anyone** at `https://www.gov.uk/sitemap.xml` and its 35 children. | `FINDINGS-2.md` §5 | The mirror image of the header's failure mode: a machine-readable signal certifying a freshness the publisher's own pages contradict. |
 | **Navigation is better indexed by the sitemap than documents are, on both new authorities.** Chrome-heavy Arm A is better covered than the item-only Arm B: NIST **95.0 % → 82.4 %**, IE **97.5 % → 76.5 %**. Session 94 found the same shape inside one site (EC's sitemap covered 0 of 8 library and 0 of 6 news items). | **High.** Two further surfaces, same direction, independently measured. | `FINDINGS-2.md` §5 | The machine-readable signal is thinnest exactly where the dated documents a citer would want are. |
+| **NIST's visible date (`V`) is unreliable, not merely narrower than intended — added at the 2026-08-06 (session 96) consolidation, from the session's own D10.** The `<time>` fallback that supplies most of NIST's `V` hits was opened by hand and found, on at least three URLs (`/itl/ai-risk-management-framework`, `/caisi`, `/news-events/news-updates/topic/2753736`), to carry a **teaser card's date for a different, linked article**, not the date of the page being scored. Every NIST `V` used in the S↔V comparison came from this fallback, so NIST's reported 25 % S↔V agreement and its 26.5–58.8 % `V` bound are not merely imprecise: they frequently measure a different page's date. | **Low / unreliable.** EC's `V` hits (rule `V1-last-update`) and IE's two `V` hits were re-read by hand and are genuine; this defect is NIST-specific and does not generalise to the other three authorities. | `drafts/2026-08-06-as-of-today/RECORD.md` (live record); `FINDINGS-2.md` §6, D10, readable at commit `be0451c` | Do not cite NIST's `V` figures from this instrument as a measurement of NIST's own pages without this caveat attached. |

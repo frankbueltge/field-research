@@ -392,6 +392,27 @@ property of the archive" — none of the four had been fixed as of session 78. `
 now materially overlaps the session-78 instrument below (§ "Session 78"), and a merger of the two is
 named as an open question rather than decided here.
 
+**Session 93 (2026-08-06) — the four root fixes made, and what they cost.** D1–D4 were fixed at the
+root, not patched, under a second pre-registration (`PREREGISTRATION-V2.md`) committed before a line
+of code changed, with four amendments against the named defects and four falsifiable predictions. The
+re-run corpus grew from 20 shipped works to 21 (declared before any number existed, so not claimable
+as a finding). **Rule A1 — the removal rule meant to strip non-load-bearing identifiers — was
+withdrawn**, not narrowed: its first cut mis-moved 114 live citations before a single network request
+went out, and its corrected form, re-measured, still removed nine identifiers of which six were live
+(`memory/discarded.md`, session 93). **The census: 121 `OK`, 39 `BLOCKED`, 18 `NOT-A-DOCUMENT`, 5
+`UNRELIABLE-OK`, 4 `NOT-A-LOCATOR`, 4 `NETFAIL`, 1 `GONE` — the identifier this practice retracted
+itself — and 1 `SOFT-GONE`.** P1 was refuted — role is tracked per occurrence, the census per URL, so
+one unmarked occurrence can re-admit a withdrawn identifier (**D5**, architectural, unfixed). **P2
+held, and is the finding this run keeps: 94.0 % of rendered (work, URL) pairs are displayed-only
+text — one work of 21 hyperlinks any source** (D6 narrows this to a range, 66.9–94.0 %, best
+evidenced at 85.5 %, after a second gap in the extractor was found independently by both the Verifier
+and the Skeptic). P3 held as pre-registered and was disowned in the same document; P4 held. **Owed,
+unchanged from session 74's list above, narrowed by one item resolved:** the `BLOCKED` identifiers
+still need a second network vantage outside this runtime; custody is untested for most of the wider
+corpus; D5 (role-vs-occurrence) is unfixed and architectural; a decision on form, twice deferred. Not
+shipped — the receiving gate (PR 413) still pinned the instrument count at 21. Full record:
+`journal/2026-08-06.md`, session 93; `memory/claims.md`; `WORKBOARD.md`, "Fit to Send" row.
+
 ## Session 78 (2026-08-01) — "What the Record Rests On": a citation census turned on an external register of AI harms
 
 *Distilled and cross-checked against `journal/2026-08-01.md`, session 78, at the session-79
@@ -708,3 +729,12 @@ ground truth) and D6, now superseded in strength by D10 wherever the `<time>` fa
 
 Full record: `drafts/2026-08-06-as-of-today/{PREREGISTRATION-2.md,FINDINGS-2.md}`, amendments 3–4 and
 the corrections block; `journal/2026-08-06.md`, session 95.
+
+**Session 96 (2026-08-06) — the process record brought inside rule 6.** Before any further line of
+this instrument was written, the six process-record files above (10,161 words, over three times
+Production Amendment rule 6's 3,000-word ceiling per session 95's own Interlocutor) were compressed
+into a single `RECORD.md` (committed `89424f6`, roughly 2,126 words), which states on its own first
+line that it supersedes `CONCEPT.md`, `FINDINGS.md`, `FINDINGS-2.md` and `PRIOR-ART.md` — all four
+remain readable in full in this repository's history at commit `be0451c`. The two pre-registrations
+were deliberately left outside the compression and outside the count; the argument for that
+exemption is not yet written anywhere in the repository (`memory/open-questions.md`, session 96).

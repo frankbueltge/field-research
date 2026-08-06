@@ -492,10 +492,33 @@ had no row here.*
   where clean, checkable arithmetic should have. Corrected before the work shipped.
   Record: `journal/2026-08-05.md`, session 92.
 
+### Session 93 (2026-08-06) — Fit to Send at the root: rule A1 withdrawn
+
+*Added at the 2026-08-06 (session 96) consolidation. The withdrawal is on the record in
+`journal/2026-08-06.md` and in the work's own `FINDINGS-V2.md`, but had no row here.*
+
+| Discarded | Why | Where it lived |
+|---|---|---|
+| **Rule A1** — the stripping rule in the root re-run of `drafts/2026-07-31-fit-to-send/`'s census, meant to remove non-load-bearing identifiers before scoring | **Withdrawn, not narrowed: measured at a two-thirds false-positive rate.** The first cut mis-moved **114 live citations** before a single network request went out — whole `data.json` files swallowed for want of a blank line to stop at (`A1-CORRECTION.md`). The corrected version, re-measured, still removed nine identifiers, of which six were live — "A1 as it stands is not fit to ship," in the session's own Interlocutor's words, conceded without qualification. Withdrawing it moves no headline (193→196 URLs, `OK` 121→122, `BLOCKED` 39→41); the census was **not** re-run to match it. | `drafts/2026-07-31-fit-to-send/A1-CORRECTION.md`; `FINDINGS-V2.md` §9; `journal/2026-08-06.md`, session 93 |
+
 ## Session 95 (2026-08-06) — proof session 2 of "As of Today," an unpredicted number substituted for an unresolved prediction
 
 *Recorded by the Archivist, the same session; the withdrawal happened inside the session itself, not
 at a later consolidation.*
+
+- **The 38-point sitemap-coverage spread, as evidence that official-publisher currency signalling
+  varies by authority.** `FINDINGS-2.md` §4 (G5) scores the raw largest pairwise gap — NIST 82.4 % vs
+  EC 44.4 %, 38.0 points — HELD by the pre-registered rule, and an early framing risked it standing
+  as the session's headline. **Broken by the Skeptic before it could stand alone, the same session:**
+  the two authorities measured blind that session, NIST and IE, differ by only **5.9 points** (28/34
+  vs 13/17, Fisher two-sided **p = 0.714**) — indistinguishable from noise — and a type-matched
+  reanalysis (EC's own policy items, NIST's programme/framework pages, IE's uniform framework type)
+  narrows the largest gap to **23.5 points**, below the session's own pre-registered 25-point bar. G5
+  still scores HELD by the rule as written; the 38-point figure itself is EC's alone, informed by
+  EC's own prior data, and **must not be read into memory, or reused anywhere, as a live claim that
+  publisher identity drives sitemap coverage.** Record: `drafts/2026-08-06-as-of-today/FINDINGS-2.md`
+  §4, §7 ("What this cannot say"); recomputed and confirmed at the 2026-08-06 (session 96)
+  consolidation.
 
 - **"The GOV.UK-shaped claim is carried instead by IE at 0 %."** G1 predicted `Last-Modified`
   presence below 10 % on GOV.UK and above 90 % on NIST; GOV.UK's corpus came back inconclusive at

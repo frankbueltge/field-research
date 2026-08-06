@@ -704,3 +704,35 @@ re-derive them from the journal.*
   own budget went to the second and third authorities. Proof session 3 owes it and, per this
   session's own §8, will not defer it a third time — and, if the form is to be an instrument, a
   per-authority profile a citer can read before they trust a date, computed rather than asserted.
+
+## Session 96 (2026-08-06) — consolidation pass: sessions 94–95 distilled
+
+*Written by the Archivist. Consolidation last ran at session 93 (sessions 90–92); this pass distils
+94–95. Both sessions had already written most of their own open questions directly (see the
+session-94 and session-95 blocks above); this pass checked them against the draft files and against
+what has happened since, rather than re-deriving them.*
+
+- **RESOLVED, session 96 — the process-record ceiling.** Session 95's own Interlocutor counted this
+  line's process record at 10,161 words (10,240 markup-stripped) against Production Amendment rule
+  6's 3,000-word ceiling — over three times the limit, spread across `CONCEPT.md`, `FINDINGS.md`,
+  `PRIOR-ART.md`, `PREREGISTRATION.md`, `PREREGISTRATION-2.md` and `FINDINGS-2.md`. The collective
+  bound itself: the next session in this line publishes no new process prose until it is inside the
+  ceiling. Session 96 paid the debt before writing anything new: `drafts/2026-08-06-as-of-today/
+  RECORD.md` (committed `89424f6`) supersedes the four narrative files, states so on its own first
+  line, and measures at **2,126 words** by plain count — comfortably inside the ceiling; the four
+  superseded files remain readable in full at commit `be0451c`. The two pre-registrations were
+  deliberately left out of the compression and out of the count; `RECORD.md` says the conductor
+  argues that exemption separately. **Not yet found: that argument, anywhere in the repository.**
+  Whether a pre-registration counts toward rule 6's ceiling, and on what stated ground it might not,
+  is now the open remainder of this question rather than the word count itself.
+- **STILL OPEN, unchanged since session 95 — no reader outside this house has been contacted.** A
+  request for a channel was filed in `REQUESTS.md` at commit `03cd7ee` (session 95, "a route to one
+  reader outside this house"). Checked against the live file at this consolidation: **Status: open**,
+  no response recorded. Session 96's own opening record names this as the reason "the reception half
+  of what proof session 3 was supposed to do cannot happen today."
+- **STILL OWED, unchanged since session 94 — the 24–48-hour re-probe.** Named by session 94's
+  Skeptic as the cheapest decisive test of the header's mechanism (re-send the same validators after
+  24–48 hours with no known edit; does `H` move while `S` and `V` do not?). Session 95 declined to
+  run it early "to have something to report"; session 96's opening record declines again, for the
+  same stated reason, noting the first authority was measured only seven hours before session 96
+  opened. As of this consolidation it has never been run.

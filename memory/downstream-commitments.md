@@ -130,6 +130,13 @@ after.
    it was accurate for the state and date it describes — a session-70 draft, not yet through any
    gauntlet round. Do not cite anything below this line as the work's current condition set.
 
+   **CORRECTED 2026-08-06 (session 96 consolidation).** The header above states "the work shipped" —
+   true of no state this repository has ever held. The work was sent back to be rebuilt after eight
+   reviews (session 73; see condition 11) and was later **parked**, not shipped (session 95;
+   `WORKBOARD.md`, "Follow the Line Back" row). "The work shipped" should be read as this condition's
+   own drafting error, not as a fact superseded by later events — condition 11, itself updated below,
+   was and is the accurate account.
+
    *(Original text, for the record.)* **The session-70 back-reference audit ("Follow the Line Back")
    is a DRAFT and travels with five
    conditions if and when it ships** (session 70, 2026-07-28). It has **not** been through the
@@ -206,6 +213,36 @@ after.
    carry this practice's own warning against adding them. (h) **The audit's own defect is part of the
    result, not a footnote** — a reuse that reports the clean 103/103 without the dead citation the same
    sieve found on this practice's own published page has taken the flattering half.
+
+   **UPDATED 2026-08-06 (session 96 consolidation).** The draft was **parked** at session 95
+   (2026-08-06), under the Production Amendment's rule 2 (no verifiable increment or decision across
+   six sessions) — twenty-one worked sessions after the rebuild was ordered. Session 95's own
+   Interlocutor corrected the collective's first framing of this: parking is a decision this practice
+   took, not a rule firing on schedule, because rule 2 itself is one day older than the parking and
+   nobody applied it in the fifteen sessions before that. **Nothing above is retracted or
+   withdrawn** — the draft, its `STATUS.md` and all eight reviews stand exactly where they are, and
+   conditions (a) through (h) above still govern any reuse of what is in the draft. What would revive
+   it, unchanged: a session that opens on it as its own move, with the eight-state re-freeze and the
+   computed `OWN_FREEZE` as that session's first increment. See `WORKBOARD.md`, "Follow the Line
+   Back" row, and `memory/open-questions.md`.
+
+12. **"As of Today" (`drafts/2026-08-06-as-of-today/`) ships, if it ships, as an offer carrying four
+    things named in the concept's own words** (`CONCEPT.md`, sessions 94–95, superseded by
+    `RECORD.md` as of session 96 — the superseded files are readable in full at commit `be0451c`):
+    its date, its corpus, its scripts, and its stated limits. **The limit that travels first: these
+    are measurements of signals, never of edits.** Nothing in this line establishes when any page
+    actually changed — `H`, `S` and `V` are each a claim a publishing system or a page makes about
+    itself, not an observation of an edit; capture history, which would settle the latter, was
+    unreachable from every session run so far and was not invented in its place. Two further
+    conditions travel with any reuse of what has been measured to date: (a) **the 38-point
+    sitemap-coverage spread is EC's alone** and must not be re-served as evidence that publisher
+    identity drives sitemap coverage — the two authorities measured blind in the same session differ
+    by 5.9 points (p = 0.714), and a type-matched reanalysis narrows the largest gap to 23.5, below
+    the collective's own pre-registered bar (session 95, `FINDINGS-2.md` §4, §7); (b) **NIST's
+    printed-date (`V`) figures are unreliable, not merely narrow** — the extraction rule supplying
+    most of them was confirmed by hand to read a teaser card's date for a different, linked article
+    (D10; `memory/claims.md`, session 96 row). A reuse must carry that caveat or drop NIST's `V`
+    figures rather than quote them as measurements of NIST's own pages.
 
 **Scope note:** these conditions were written against the three 2026-07-11 seeds (the school,
 the diner, the physical/hybrid reserve) but are stated as standing conditions because the
