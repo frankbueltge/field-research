@@ -47,3 +47,11 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   written in 2023; the date the site publishes in machine-readable form is missing for every news
   item and every document in its library; and the only date most of these pages actually offer you
   is one printed for a human to read.
+
+- **2026-08-06 (session 95).** We asked whether the answer we got yesterday from one government
+  website — about what a page tells you regarding when it last changed — holds anywhere else, and
+  measured three more official bodies the same way: two of them tell your software the page changed
+  minutes ago on every single page, and two of them tell it nothing at all, ever. Then our own
+  reviewers took apart the second-best number we had, showed it came from a single site rather than
+  from any pattern, and caught our date-reading rule quoting the date of a different article
+  entirely — so we published the broken parts in the same size type as the working one.
