@@ -14,6 +14,14 @@ Inputs (read-only, all in this directory):
   ec-rescore.json   — used ONLY to cross-check which four EC URLs are "chrome"
                        (the instrument's own coverage numbers are computed from
                        the raw rows in signals.json, not copied from this file)
+  referents.json    — PREREGISTRATION-3.md, the referent test: every locked V hit
+                       (62 of them), re-extracted from a fresh fetch and classified
+                       SELF / OTHER / UNATTRIBUTABLE, with the evidence the
+                       classification used. Written by referent_test.py. This is
+                       now the sole source of the served defensible date for any
+                       row that carries a V: only SELF is served; OTHER and
+                       UNATTRIBUTABLE show the date, the class and the evidence,
+                       with an explicit refusal in place of a defensible date.
 
 Output:
   instrument.html
@@ -39,6 +47,15 @@ def load(name):
 signals_ec = load("signals.json")
 signals_2 = load("signals-2.json")
 ec_rescore = load("ec-rescore.json")
+referents = load("referents.json")
+
+# One record per locked V hit, keyed by URL — this is the referent test's own
+# output (referent_test.py), not recomputed here. 62 expected; asserted below
+# once every row has been built, against the actual V-bearing rows found in
+# the locked signal files themselves (so a stale referents.json — one that no
+# longer matches signals.json / signals-2.json — fails the build loudly rather
+# than silently mis-labelling rows).
+REFERENT_BY_URL = {rec["url"]: rec for rec in referents["records"]}
 
 RUN1_UTC = signals_ec["run_started_utc"]      # 2026-08-06T08:26:37+00:00
 RUN2_UTC = signals_2["run_started_utc"]       # 2026-08-06T14:34:38+00:00
@@ -102,10 +119,17 @@ AUTHORITIES = [
 ]
 AUTHORITY_LABEL = dict(AUTHORITIES)
 
-# D10/D11 — wrong-referent V. Confirmed by hand, on two different extraction
-# rules and two different authorities: the printed date belongs to a
-# different document than the one the URL was fetched for. Note text is
-# stored per URL because the evidence differs by case.
+# --- Hand-confirmed rows — kept as annotation, not as the decision rule ---
+#
+# D10/D11 were first caught by hand, one URL at a time, before the referent
+# test (PREREGISTRATION-3.md) existed. That hand-reading is stronger evidence
+# than the machine classification below, not weaker, and this build must not
+# lose it: every row here is still shown on its slip, clearly labelled
+# "hand-confirmed". But it no longer DECIDES what gets served as defensible —
+# that is now the referent test's computed SELF / OTHER / UNATTRIBUTABLE
+# class alone (see REFERENT_BY_URL and build_row, below). Where the two
+# disagree, both are shown and the disagreement is reported in
+# RECONCILE_NOTES rather than silently favouring one.
 CONFIRMED_WRONG_REFERENT = {
     "https://www.nist.gov/itl/ai-risk-management-framework": (
         "Confirmed wrong-referent (D10): opened by hand — the captured <time datetime> "
@@ -151,31 +175,26 @@ CONFIRMED_WRONG_REFERENT = {
 
 # Rows whose label-rule hit (V1-last-update / V2-published) has actually been
 # re-read by hand and found genuine, as a group, per the collective's own
-# record — not a per-row individual check, a documented batch finding.
+# record — not a per-row individual check, a documented batch finding. Kept
+# as annotation for the same reason as CONFIRMED_WRONG_REFERENT, above.
 HAND_CHECKED_RULE_AUTHORITIES = {
     ("EC", "V1-last-update"),
 }
 
-# D10/D11 tiering: every V hit lands in exactly one of four tiers, checked in
-# this priority order. The fallback rule (V3-time-element) is not the only
-# source of wrong-referent dates — label rules (V1/V2) can match a date
-# printed for a document the page discusses rather than the page itself, so
-# this tiering applies across rules, not just to the <time> fallback:
-#   1. confirmed_wrong_referent — opened by hand (or, for the two rows
-#      surfaced by the future-date detector, confirmed against the live
-#      page): the printed date belongs to a different document.
-#   2. suspect — every other V3-time-element row: flagged, not opened by
-#      hand, so not further characterised than "may be another page's date".
-#   3. hand_checked — a label-rule hit from a group the record has already
-#      re-read by hand and found genuine (EC's "Last update" labels).
-#   4. unaudited — every other label-rule hit: not opened by hand, and in
-#      every Irish case that was opened by hand it turned out to name a
-#      different document's date, so this is a candidate, not a warranty.
-# A separate, general "future-date" detector (any V later than the run that
-# captured it) still runs over every row regardless of rule or authority; it
-# is what first surfaced two of the confirmed_wrong_referent rows, but it is
-# a symptom of the same wrong-referent defect, not a distinct fault, and it
-# does not create its own tier.
+# --- The referent test decides defensibility now (PREREGISTRATION-3.md) ---
+#
+# Every row that carries a V was re-extracted from a fresh fetch and
+# classified SELF / OTHER / UNATTRIBUTABLE by referent_test.py, with the
+# evidence recorded alongside (element ancestry, whether the match sits in a
+# link/list-item/card, the enclosing text block). Only SELF is served as the
+# defensible date; OTHER and UNATTRIBUTABLE are shown with their evidence and
+# an explicit refusal. This replaces the old hand-maintained four-tier system
+# (confirmed_wrong_referent / suspect / hand_checked / unaudited) entirely —
+# that system is why D11 existed in the first place: it trusted label-rule
+# hits (V1/V2) by default and only excluded the <time> fallback. The general
+# "future-date" detector (any V later than the run that captured it) still
+# runs over every row; it no longer sets a tier, only a cross-checking note
+# next to the row's own referent class.
 
 def parse_iso(s):
     if not s:
@@ -220,35 +239,51 @@ def build_row(authority_key, raw, scored):
     else:
         s_state = raw.get("s_state")
 
-    # --- D10/D11 tiering, computed over every authority and every rule alike ---
-    is_v3_rule = (v_rule == "V3-time-element")
-    is_label_rule = v_rule in ("V1-last-update", "V2-published")
-    is_confirmed_referent = bool(v) and url in CONFIRMED_WRONG_REFERENT
-    confirmed_note = CONFIRMED_WRONG_REFERENT.get(url) if is_confirmed_referent else None
+    # --- The referent test (PREREGISTRATION-3.md), looked up by URL ---
+    referent = REFERENT_BY_URL.get(url) if v else None
+    if not v:
+        referent_class = None
+        referent_status = None
+    elif referent is None:
+        referent_class = None
+        referent_status = "not-covered-by-referent-test"
+    elif referent.get("fetch") != "OK":
+        referent_class = None
+        referent_status = "referent-fetch-failed"
+    else:
+        referent_class = referent["class"]
+        referent_status = "classified"
+
+    referent_evidence = referent.get("evidence") if referent else None
+    referent_class_reason = referent.get("class_reason") if referent else None
+    referent_changed = bool(referent.get("changed")) if referent else False
+    referent_fresh_v = referent.get("fresh_v") if referent else None
+    referent_fresh_v_raw = referent.get("fresh_v_raw") if referent else None
+    referent_fresh_v_rule = referent.get("fresh_v_rule") if referent else None
+
+    # Hand-confirmed annotations — displayed, never used to decide defensibility.
+    hand_confirmed_note = CONFIRMED_WRONG_REFERENT.get(url) if v else None
+    hand_checked_genuine = bool(v) and bool(v_rule) and (authority_key, v_rule) in HAND_CHECKED_RULE_AUTHORITIES
 
     v_dt = parse_iso(v)
     run_ts = RUN_TS_BY_AUTHORITY[authority_key]
     v_postdates_run = bool(v_dt is not None and v_dt > run_ts)
 
-    if is_confirmed_referent:
-        flag_tier = "confirmed_wrong_referent"
-    elif is_v3_rule:
-        flag_tier = "suspect"
-    elif is_label_rule and (authority_key, v_rule) in HAND_CHECKED_RULE_AUTHORITIES:
-        flag_tier = "hand_checked"
-    elif is_label_rule:
-        flag_tier = "unaudited"
+    # --- "the date the reader could defend": a SELF-classified V, else S, else none ---
+    v_usable = bool(v) and referent_class == "SELF"
+    v_present_not_defensible = bool(v) and not v_usable
+    if v_usable:
+        defend_source, defend_iso = "V", v
+    elif s:
+        defend_source, defend_iso = "S", s
     else:
-        flag_tier = None
+        defend_source, defend_iso = None, None
 
-    # Only the two excluded tiers (confirmed_wrong_referent, suspect) are kept
-    # out of what a reader could defend — those are the tiers with evidence
-    # against them. hand_checked and unaudited keep their defensible-date
-    # role: we have no evidence against an unaudited hit, only a pattern from
-    # the cases that were checked, so it is not excluded, only labelled.
-    v_excluded_from_defend = flag_tier in ("confirmed_wrong_referent", "suspect")
+    only_defensible_was_flagged = (defend_source is None) and v_present_not_defensible
 
-    # --- "the date a machine is handed": H, else S, else V, else none ---
+    # --- "the date a machine is handed": H, else S, else V, else none (the
+    # referent test does not touch this line — it is what naive tooling would
+    # still return, in the same order it always read in) ---
     if h:
         machine_source, machine_iso = "H", h
     elif s:
@@ -257,19 +292,7 @@ def build_row(authority_key, raw, scored):
         machine_source, machine_iso = "V", v
     else:
         machine_source, machine_iso = None, None
-    machine_is_flagged_v = (machine_source == "V" and v_excluded_from_defend)
-
-    # --- "the date the reader could defend": V (if not flagged), else S, else none ---
-    v_usable = bool(v) and not v_excluded_from_defend
-    skipped_flagged_v = bool(v) and v_excluded_from_defend
-    if v_usable:
-        defend_source, defend_iso = "V", v
-    elif s:
-        defend_source, defend_iso = "S", s
-    else:
-        defend_source, defend_iso = None, None
-
-    only_defensible_was_flagged = (defend_source is None) and skipped_flagged_v
+    machine_is_flagged_v = (machine_source == "V" and v_present_not_defensible)
 
     dp_machine = date_part(machine_iso)
     dp_defend = date_part(defend_iso)
@@ -296,15 +319,24 @@ def build_row(authority_key, raw, scored):
         "v_raw": raw.get("v_raw"),
         "v_rule": v_rule,
         "etag": raw.get("etag"),
-        "flag_tier": flag_tier,
-        "confirmed_note": confirmed_note,
+        "referent_class": referent_class,
+        "referent_status": referent_status,
+        "referent_class_reason": referent_class_reason,
+        "referent_evidence": referent_evidence,
+        "referent_changed": referent_changed,
+        "referent_fresh_v": referent_fresh_v,
+        "referent_fresh_v_fmt": fmt_date_iso(referent_fresh_v) if referent_fresh_v else None,
+        "referent_fresh_v_raw": referent_fresh_v_raw,
+        "referent_fresh_v_rule": referent_fresh_v_rule,
+        "hand_confirmed_note": hand_confirmed_note,
+        "hand_checked_genuine": hand_checked_genuine,
         "v_postdates_run": v_postdates_run,
         "machine_source": machine_source,
         "machine_fmt": fmt_date_iso(machine_iso),
         "machine_is_flagged_v": machine_is_flagged_v,
         "defend_source": defend_source,
         "defend_fmt": fmt_date_iso(defend_iso),
-        "skipped_flagged_v": skipped_flagged_v,
+        "v_present_not_defensible": v_present_not_defensible,
         "only_defensible_was_flagged": only_defensible_was_flagged,
         "distance_days": distance_days,
         "no_signal_at_all": not (h or s or v),
@@ -328,6 +360,18 @@ for key in ("GOVUK", "NIST", "IE"):
 ALL_ROWS = []
 for key, _ in AUTHORITIES:
     ALL_ROWS.extend(rows_by_authority[key])
+
+# The referent test must cover exactly the rows that carry a V here, or the
+# stored referents.json no longer matches the locked signal files it claims
+# to be testing — fail loudly rather than silently mis-labelling rows.
+_v_urls_here = {r["url"] for r in ALL_ROWS if r["v"]}
+_v_urls_tested = set(REFERENT_BY_URL)
+assert _v_urls_here == _v_urls_tested, (
+    "referents.json does not cover exactly the V-bearing rows in the locked signal "
+    f"files: {len(_v_urls_here - _v_urls_tested)} untested, "
+    f"{len(_v_urls_tested - _v_urls_here)} stale. Re-run referent_test.py."
+)
+assert len(_v_urls_here) == 62, f"expected 62 V hits per PREREGISTRATION-3.md, found {len(_v_urls_here)}"
 
 # ---------------------------------------------------------------------------
 # Coverage panel — two bases, computed from the rows
@@ -367,40 +411,68 @@ assert _ec_scored["n"] == _rescore_b["n_ok"] == 36, "EC scored-subset n mismatch
 assert _ec_scored["v"] == _rescore_b["P4_v_n"] == 31, "EC scored-subset V-count mismatch"
 
 # ---------------------------------------------------------------------------
-# D10/D11 tiering — badge counts and the future-date detector's catch,
-# computed generally over every row, every authority. The rule that "any V
-# used in the defensible-date computation must not postdate that authority's
-# run timestamp" is asserted below, not merely hoped for. The future-date
-# detector is a general rule (not special-cased to one URL) that surfaces
-# candidates for confirmed_wrong_referent; both of its current catches are
-# confirmed against the live page, so they land in that tier, not a separate
-# "future" tier.
+# Referent-class counts (SELF / OTHER / UNATTRIBUTABLE), computed over every
+# row, every authority, from the referent test's own output — not
+# recomputed, only tallied. The future-date detector still runs, generally,
+# over every row; it no longer sets a tier of its own, it is reported
+# alongside whatever the referent test independently found for that row (the
+# two are expected to agree; a future-dated V that the referent test still
+# calls SELF would be worth a second look, so that disagreement, if any, is
+# surfaced below rather than assumed away).
 # ---------------------------------------------------------------------------
 
 FUTURE_V_ROWS = [r for r in ALL_ROWS if r["v_postdates_run"]]
-_future_not_confirmed = [r for r in FUTURE_V_ROWS if r["flag_tier"] != "confirmed_wrong_referent"]
-if _future_not_confirmed:
+_future_still_self = [r for r in FUTURE_V_ROWS if r["referent_class"] == "SELF"]
+if _future_still_self:
     RECONCILE_NOTES.append(
         "Future-dated V rule: the general detector (any printed V later than the authority's "
-        "own run timestamp) caught a row that has not been confirmed wrong-referent by hand: " +
-        "; ".join(f"{r['authority']} {r['url']} (v={r['v_fmt']})" for r in _future_not_confirmed) +
-        ". Reported here rather than silenced; this row is still excluded from the defensible "
-        "date because it is future-dated, but is shown as 'suspect' rather than 'confirmed', "
-        "pending the same hand-check the other two future catches already had."
+        "own run timestamp) caught a row that the referent test still classifies SELF: " +
+        "; ".join(f"{r['authority']} {r['url']} (v={r['v_fmt']})" for r in _future_still_self) +
+        ". Shown on its slip as SELF (defensible) because that is what the referent evidence "
+        "supports; flagged here because a future-dated 'last update' label is unusual enough to "
+        "warrant a second look, not because the referent test's own criteria were not met."
     )
 
-TIER_KEYS = ("confirmed_wrong_referent", "suspect", "hand_checked", "unaudited")
+# Hand-confirmed rows (CONFIRMED_WRONG_REFERENT) versus the referent test's
+# own class — reported wherever they disagree, in both directions, rather
+# than letting either one silently override the other.
+_hand_vs_referent_conflicts = []
+for r in ALL_ROWS:
+    if r["hand_confirmed_note"] and r["referent_class"] == "SELF":
+        _hand_vs_referent_conflicts.append(
+            f"{r['authority']} {r['url']}: hand-confirmed wrong-referent, but the referent test "
+            "classifies it SELF (would be served as defensible) — shown as SELF on its slip "
+            "per the referent test's own rule, with the hand-confirmed note displayed alongside "
+            "as a conflicting, stronger annotation."
+        )
+    elif r["hand_confirmed_note"] and r["referent_class"] == "UNATTRIBUTABLE":
+        _hand_vs_referent_conflicts.append(
+            f"{r['authority']} {r['url']}: hand-confirmed wrong-referent (which the referent "
+            "test's OTHER class exists to catch), but the automated evidence for this specific "
+            "row falls short of OTHER's bar (no link, no quotation mark in the enclosing text "
+            "block) and it lands in UNATTRIBUTABLE instead. Both classes are non-defensible, so "
+            "the served date is the same either way; the difference is only in which evidence "
+            "the slip shows. Not claimed as a discovery — surfaced because the hand reading and "
+            "the machine reading diverge and that is worth a reader's own eyes."
+        )
+if _hand_vs_referent_conflicts:
+    RECONCILE_NOTES.append(
+        "Hand-confirmed rows versus the referent test's own class — "
+        + "; ".join(_hand_vs_referent_conflicts)
+    )
 
-TIER_COUNTS = {"all": {}, "scored": {}}
+CLASS_KEYS = ("SELF", "OTHER", "UNATTRIBUTABLE")
+
+CLASS_COUNTS = {"all": {}, "scored": {}}
 for key, _ in AUTHORITIES:
     rows = rows_by_authority[key]
     scored_rows = [r for r in rows if r["scored"]]
     for basis, rset in (("all", rows), ("scored", scored_rows)):
-        counts = {k: 0 for k in TIER_KEYS}
+        counts = {k: 0 for k in CLASS_KEYS}
         for r in rset:
-            if r["flag_tier"] in counts:
-                counts[r["flag_tier"]] += 1
-        TIER_COUNTS[basis][key] = counts
+            if r["referent_class"] in counts:
+                counts[r["referent_class"]] += 1
+        CLASS_COUNTS[basis][key] = counts
 
 # The defensible-date rule must never hand back a V later than the run that
 # captured it. Assert this over every row, not just the ones expected to
@@ -432,16 +504,30 @@ DATA = {
         "total_rows": len(ALL_ROWS),
         "future_v_n": len(FUTURE_V_ROWS),
         "future_v_rows": [
-            {"authority": r["authority"], "url": r["url"], "v": r["v"], "v_fmt": r["v_fmt"]}
+            {"authority": r["authority"], "url": r["url"], "v": r["v"], "v_fmt": r["v_fmt"],
+             "referent_class": r["referent_class"]}
             for r in FUTURE_V_ROWS
         ],
-        "unaudited_by_authority": {k: TIER_COUNTS["all"][k]["unaudited"] for k, _ in AUTHORITIES},
-        "hand_checked_by_authority": {k: TIER_COUNTS["all"][k]["hand_checked"] for k, _ in AUTHORITIES},
+        "self_by_authority": {k: CLASS_COUNTS["all"][k]["SELF"] for k, _ in AUTHORITIES},
+        "other_by_authority": {k: CLASS_COUNTS["all"][k]["OTHER"] for k, _ in AUTHORITIES},
+        "unattributable_by_authority": {k: CLASS_COUNTS["all"][k]["UNATTRIBUTABLE"] for k, _ in AUTHORITIES},
+        "hand_confirmed_n": sum(1 for r in ALL_ROWS if r["hand_confirmed_note"]),
+        "hand_checked_genuine_n": sum(1 for r in ALL_ROWS if r["hand_checked_genuine"]),
+        "referent_test": {
+            "preregistration": "PREREGISTRATION-3.md",
+            "run_started_utc": referents.get("run_started_utc"),
+            "run_finished_utc": referents.get("run_finished_utc"),
+            "hits_tested": referents.get("true_hit_count"),
+            "fetch_fail_n": referents["counts"]["fetch_fail"],
+            "changed_n": referents["counts"]["changed"],
+            "class_totals": referents["counts"]["class_totals"],
+            "predictions": referents["predictions"],
+        },
     },
     "authorities": [{"key": k, "label": lbl} for k, lbl in AUTHORITIES],
     "rows": ALL_ROWS,
     "coverage": COVERAGE,
-    "tier_counts": TIER_COUNTS,
+    "class_counts": CLASS_COUNTS,
 }
 
 JSON_BLOB = json.dumps(DATA, ensure_ascii=False, separators=(",", ":"))
@@ -472,24 +558,21 @@ print(f"rows with no signal at all: {len(NO_SIGNAL_ROWS)} / {len(ALL_ROWS)}")
 for r in NO_SIGNAL_ROWS:
     print(f"  {r['authority_label']}: {r['url']}")
 print()
-print("D10/D11 badge tiers — all measured pages "
-      "(confirmed-wrong-referent / suspect / hand-checked / unaudited):")
+print("referent class (PREREGISTRATION-3.md) — all measured pages (SELF / OTHER / UNATTRIBUTABLE):")
 for k, lbl in AUTHORITIES:
-    c = TIER_COUNTS["all"][k]
-    print(f"  {lbl:60s} {c['confirmed_wrong_referent']} / {c['suspect']} / "
-          f"{c['hand_checked']} / {c['unaudited']}")
+    c = CLASS_COUNTS["all"][k]
+    print(f"  {lbl:60s} {c['SELF']} / {c['OTHER']} / {c['UNATTRIBUTABLE']}")
 print()
-print("D10/D11 badge tiers — scored subset:")
+print("referent class — scored subset:")
 for k, lbl in AUTHORITIES:
-    c = TIER_COUNTS["scored"][k]
-    print(f"  {lbl:60s} {c['confirmed_wrong_referent']} / {c['suspect']} / "
-          f"{c['hand_checked']} / {c['unaudited']}")
+    c = CLASS_COUNTS["scored"][k]
+    print(f"  {lbl:60s} {c['SELF']} / {c['OTHER']} / {c['UNATTRIBUTABLE']}")
 print()
 print(f"future-dated V rows caught by the general D6/D11 detector (V later than that "
       f"authority's run timestamp): {len(FUTURE_V_ROWS)}")
 for r in FUTURE_V_ROWS:
     print(f"  {r['authority_label']}: {r['url']}  v={r['v_fmt']} ({r['v']})  "
-          f"run={RUN_TS_BY_AUTHORITY[r['authority']].isoformat()}  tier={r['flag_tier']}")
+          f"run={RUN_TS_BY_AUTHORITY[r['authority']].isoformat()}  referent_class={r['referent_class']}")
 print()
 if RECONCILE_NOTES:
     print("RECONCILIATION NOTES (could not resolve from raw rows alone):")
