@@ -1,4 +1,186 @@
 {
+  "a1_audit_records": [
+    {
+      "byte_count": 24,
+      "classes": [],
+      "content_type": "text/plain",
+      "elapsed_s": 0.03,
+      "error": null,
+      "final_url": "http://web.archive.org/web/20260617144720/https://originality.ai/blog/ai-accuracy",
+      "n_redirects": 0,
+      "normalized_url": "http://web.archive.org/web/20260617144720/https://originality.ai/blog/ai-accuracy",
+      "not_a_locator": false,
+      "paths": [],
+      "presentation": "n/a",
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": []
+    },
+    {
+      "byte_count": 787086,
+      "classes": [],
+      "content_type": "application/pdf",
+      "elapsed_s": 0.721,
+      "error": null,
+      "final_url": "https://aclanthology.org/2024.acl-long.674.pdf",
+      "n_redirects": 0,
+      "normalized_url": "https://aclanthology.org/2024.acl-long.674.pdf",
+      "not_a_locator": false,
+      "paths": [],
+      "presentation": "n/a",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [],
+      "title": null,
+      "verdict": "OK",
+      "works": []
+    },
+    {
+      "byte_count": 42814,
+      "classes": [],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.559,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2304.02819",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2304.02819",
+      "not_a_locator": false,
+      "paths": [],
+      "presentation": "n/a",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [],
+      "title": "[2304.02819] GPT detectors are biased against non-native English writers",
+      "verdict": "OK",
+      "works": []
+    },
+    {
+      "byte_count": 37887,
+      "classes": [],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.581,
+      "error": null,
+      "final_url": "https://community.openai.com/t/c2pa-meta-data-in-dall-e-3-images/617061",
+      "n_redirects": 0,
+      "normalized_url": "https://community.openai.com/t/c2pa-meta-data-in-dall-e-3-images/617061",
+      "not_a_locator": false,
+      "paths": [],
+      "presentation": "n/a",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [],
+      "title": "C2PA Meta Data in DALL\u00b7E 3 Images - API - OpenAI Developer Community",
+      "verdict": "OK",
+      "works": []
+    },
+    {
+      "byte_count": 276589,
+      "classes": [],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 1.863,
+      "error": null,
+      "final_url": "https://www.nature.com/articles/s41598-023-43998-8",
+      "n_redirects": 1,
+      "normalized_url": "https://doi.org/10.1038/s41598-023-43998-8",
+      "not_a_locator": false,
+      "paths": [],
+      "presentation": "n/a",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [],
+      "title": "Author Correction: Perception, performance, and detectability of conversational artificial intelligence across 32 university courses | Scientific Reports",
+      "verdict": "OK",
+      "works": []
+    },
+    {
+      "byte_count": 502672,
+      "classes": [],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 1.353,
+      "error": null,
+      "final_url": "https://link.springer.com/article/10.1186/s41239-024-00487-w",
+      "n_redirects": 2,
+      "normalized_url": "https://doi.org/10.1186/s41239-024-00487-w",
+      "not_a_locator": false,
+      "paths": [],
+      "presentation": "n/a",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [],
+      "title": "Simple techniques to bypass GenAI text detectors: implications for inclusive education | International Journal of Educational Technology in Higher Education | Springer Nature Link",
+      "verdict": "OK",
+      "works": []
+    },
+    {
+      "byte_count": 10598,
+      "classes": [],
+      "content_type": "text/html;charset=utf-8",
+      "elapsed_s": 0.19,
+      "error": null,
+      "final_url": "https://doi.org/10.3030/101135953",
+      "n_redirects": 0,
+      "normalized_url": "https://doi.org/10.3030/101135953",
+      "not_a_locator": false,
+      "paths": [],
+      "presentation": "n/a",
+      "second_vantage": null,
+      "self": false,
+      "status": 404,
+      "tiers": [],
+      "title": "Error: DOI Not Found",
+      "verdict": "GONE",
+      "works": []
+    },
+    {
+      "byte_count": 35147,
+      "classes": [],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.924,
+      "error": null,
+      "final_url": "https://www.tbray.org/ongoing/When/202x/2025/09/18/C2PA-Investigations",
+      "n_redirects": 0,
+      "normalized_url": "https://www.tbray.org/ongoing/When/202x/2025/09/18/C2PA-Investigations",
+      "not_a_locator": false,
+      "paths": [],
+      "presentation": "n/a",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [],
+      "title": "ongoing by Tim Bray \u00b7 C2PA Investigations",
+      "verdict": "OK",
+      "works": []
+    },
+    {
+      "byte_count": 33790,
+      "classes": [],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.631,
+      "error": null,
+      "final_url": "https://yaledailynews.com/articles/som-student-sues-yale-alleges-wrongful-suspension-over-ai-use",
+      "n_redirects": 0,
+      "normalized_url": "https://yaledailynews.com/articles/som-student-sues-yale-alleges-wrongful-suspension-over-ai-use",
+      "not_a_locator": false,
+      "paths": [],
+      "presentation": "n/a",
+      "second_vantage": null,
+      "self": false,
+      "status": 429,
+      "tiers": [],
+      "title": "Vercel Security Checkpoint",
+      "verdict": "BLOCKED",
+      "works": []
+    }
+  ],
   "controls": {
     "C1_true_404": {
       "description": "nonsense path on a host in the census; expect GONE",
@@ -43,7 +225,7 @@
     },
     "C5_per_host_soft_404_sweep": {
       "description": "one nonsense-path request per distinct host in the census",
-      "n_hosts_swept": 89,
+      "n_hosts_swept": 99,
       "rows": [
         {
           "host": "aafp.org",
@@ -72,6 +254,20 @@
           "soft_404_host": false,
           "status": 404,
           "verdict": "GONE"
+        },
+        {
+          "host": "aicid.net",
+          "probe_url": "https://aicid.net/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "aixiv.science",
+          "probe_url": "https://aixiv.science/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": true,
+          "status": 200,
+          "verdict": "OK"
         },
         {
           "host": "amacad.org",
@@ -207,6 +403,13 @@
           "verdict": "GONE"
         },
         {
+          "host": "europepmc.org",
+          "probe_url": "https://europepmc.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
           "host": "export.arxiv.org",
           "probe_url": "https://export.arxiv.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
           "soft_404_host": false,
@@ -233,6 +436,13 @@
           "soft_404_host": false,
           "status": 403,
           "verdict": "BLOCKED"
+        },
+        {
+          "host": "gptzero.me",
+          "probe_url": "https://gptzero.me/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
         },
         {
           "host": "hackerfactor.com",
@@ -268,6 +478,13 @@
           "soft_404_host": false,
           "status": null,
           "verdict": "NETFAIL"
+        },
+        {
+          "host": "khanhthanhdev.github.io",
+          "probe_url": "https://khanhthanhdev.github.io/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
         },
         {
           "host": "lrb.co.uk",
@@ -333,6 +550,13 @@
           "verdict": "OK"
         },
         {
+          "host": "originality.ai",
+          "probe_url": "https://originality.ai/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
           "host": "partnershiponai.org",
           "probe_url": "https://partnershiponai.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
           "soft_404_host": false,
@@ -375,6 +599,13 @@
           "verdict": "GONE"
         },
         {
+          "host": "qiushisun.github.io",
+          "probe_url": "https://qiushisun.github.io/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
           "host": "rand.org",
           "probe_url": "https://rand.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
           "soft_404_host": false,
@@ -393,11 +624,25 @@
           "probe_url": "https://reuters.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
           "soft_404_host": false,
           "status": 401,
+          "verdict": "BLOCKED"
+        },
+        {
+          "host": "reveal-dataset.github.io",
+          "probe_url": "https://reveal-dataset.github.io/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
           "verdict": "GONE"
         },
         {
           "host": "spec.c2pa.org",
           "probe_url": "https://spec.c2pa.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 404,
+          "verdict": "GONE"
+        },
+        {
+          "host": "storage.courtlistener.com",
+          "probe_url": "https://storage.courtlistener.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
           "soft_404_host": false,
           "status": 404,
           "verdict": "GONE"
@@ -422,6 +667,13 @@
           "soft_404_host": false,
           "status": 404,
           "verdict": "GONE"
+        },
+        {
+          "host": "web.archive.org",
+          "probe_url": "https://web.archive.org/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": null,
+          "verdict": "NETFAIL"
         },
         {
           "host": "web.williams.edu",
@@ -468,9 +720,9 @@
         {
           "host": "www.bsfrey.ch",
           "probe_url": "https://www.bsfrey.ch/fit-to-send-nonsense-path-c5-check-9f31a7e2",
-          "soft_404_host": false,
-          "status": 404,
-          "verdict": "GONE"
+          "soft_404_host": true,
+          "status": 200,
+          "verdict": "OK"
         },
         {
           "host": "www.cambridge.org",
@@ -485,6 +737,13 @@
           "soft_404_host": false,
           "status": 404,
           "verdict": "GONE"
+        },
+        {
+          "host": "www.courtlistener.com",
+          "probe_url": "https://www.courtlistener.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
+          "soft_404_host": false,
+          "status": 403,
+          "verdict": "BLOCKED"
         },
         {
           "host": "www.datacenterdynamics.com",
@@ -660,19 +919,14 @@
           "soft_404_host": false,
           "status": 404,
           "verdict": "GONE"
-        },
-        {
-          "host": "yaledailynews.com",
-          "probe_url": "https://yaledailynews.com/fit-to-send-nonsense-path-c5-check-9f31a7e2",
-          "soft_404_host": false,
-          "status": 429,
-          "verdict": "BLOCKED"
         }
       ],
       "soft_404_hosts": [
+        "aixiv.science",
         "hackerfactor.com",
         "metricgate.com",
-        "ohchr.org"
+        "ohchr.org",
+        "www.bsfrey.ch"
       ]
     },
     "stop_rule": {
@@ -682,8 +936,120 @@
       "rule": "C1 and C3 must both fire correctly, or no census null is reportable"
     }
   },
-  "generated_utc": "2026-07-31T04:16:41Z",
+  "generated_utc": "2026-08-06T03:54:26Z",
   "layer2b_bindings": [
+    {
+      "file": "works/2026-07-01-calibration-gap/data.json",
+      "json_path": "/specification_sources[0]",
+      "reason": "content-type not text-like: None",
+      "result": "NOT-AUTOMATICALLY-CHECKABLE",
+      "token": "99% accuracy \u00b7 0.24% FPR",
+      "url": "http://web.archive.org/web/20260702095038/https://gptzero.me/"
+    },
+    {
+      "file": "works/2026-07-01-calibration-gap/data.json",
+      "json_path": "/specification_sources[0]",
+      "reason": "content-type not text-like: None",
+      "result": "NOT-AUTOMATICALLY-CHECKABLE",
+      "token": "GPTZero came out as the leader, with 99.3% overall accuracy and a false positive rate of just 0.24%.",
+      "url": "http://web.archive.org/web/20260702095038/https://gptzero.me/"
+    },
+    {
+      "file": "works/2026-07-01-calibration-gap/data.json",
+      "json_path": "/specification_sources[0]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "99% accuracy \u00b7 0.24% FPR",
+      "url": "https://gptzero.me/"
+    },
+    {
+      "file": "works/2026-07-01-calibration-gap/data.json",
+      "json_path": "/specification_sources[0]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "GPTZero came out as the leader, with 99.3% overall accuracy and a false positive rate of just 0.24%.",
+      "url": "https://gptzero.me/"
+    },
+    {
+      "file": "works/2026-07-01-calibration-gap/data.json",
+      "json_path": "/specification_sources[0]",
+      "reason": "content-type not text-like: None",
+      "result": "NOT-AUTOMATICALLY-CHECKABLE",
+      "token": "99% accuracy \u00b7 0.24% FPR",
+      "url": "https://gptzero.me/news/gptzero-vs-copyleaks-vs-originality/"
+    },
+    {
+      "file": "works/2026-07-01-calibration-gap/data.json",
+      "json_path": "/specification_sources[0]",
+      "reason": "content-type not text-like: None",
+      "result": "NOT-AUTOMATICALLY-CHECKABLE",
+      "token": "GPTZero came out as the leader, with 99.3% overall accuracy and a false positive rate of just 0.24%.",
+      "url": "https://gptzero.me/news/gptzero-vs-copyleaks-vs-originality/"
+    },
+    {
+      "file": "works/2026-07-01-calibration-gap/data.json",
+      "json_path": "/specification_sources[0]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "99% accuracy \u00b7 0.24% FPR",
+      "url": "https://gptzero.me/technology"
+    },
+    {
+      "file": "works/2026-07-01-calibration-gap/data.json",
+      "json_path": "/specification_sources[0]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "GPTZero came out as the leader, with 99.3% overall accuracy and a false positive rate of just 0.24%.",
+      "url": "https://gptzero.me/technology"
+    },
+    {
+      "file": "works/2026-07-01-calibration-gap/data.json",
+      "json_path": "/specification_sources[1]",
+      "reason": "url not in census (unexpected)",
+      "result": "NOT-AUTOMATICALLY-CHECKABLE",
+      "token": "3.0.1 Turbo \u2014 October 2024: 99%+ accuracy in detecting AI content (under 3% false positive rate)",
+      "url": "http://web.archive.org/web/20260617144720/https://originality.ai/blog/ai-accuracy"
+    },
+    {
+      "file": "works/2026-07-01-calibration-gap/data.json",
+      "json_path": "/specification_sources[1]",
+      "reason": "url not in census (unexpected)",
+      "result": "NOT-AUTOMATICALLY-CHECKABLE",
+      "token": "99% accuracy \u00b7 under 3% FPR",
+      "url": "http://web.archive.org/web/20260617144720/https://originality.ai/blog/ai-accuracy"
+    },
+    {
+      "file": "works/2026-07-01-calibration-gap/data.json",
+      "json_path": "/specification_sources[1]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "3.0.1 Turbo \u2014 October 2024: 99%+ accuracy in detecting AI content (under 3% false positive rate)",
+      "url": "https://originality.ai/blog/ai-accuracy"
+    },
+    {
+      "file": "works/2026-07-01-calibration-gap/data.json",
+      "json_path": "/specification_sources[1]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "99% accuracy \u00b7 under 3% FPR",
+      "url": "https://originality.ai/blog/ai-accuracy"
+    },
+    {
+      "file": "works/2026-07-01-calibration-gap/data.json",
+      "json_path": "/specification_sources[2]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "1.0% FPR (document level)",
+      "url": "https://www.turnitin.com/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability"
+    },
+    {
+      "file": "works/2026-07-01-calibration-gap/data.json",
+      "json_path": "/specification_sources[2]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "Our document false positive rate \u2026 is less than 1% for documents with 20% or more AI writing.",
+      "url": "https://www.turnitin.com/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability"
+    },
     {
       "file": "works/2026-07-02-taxonomy-on-trial/data.json",
       "json_path": "/cases[0]",
@@ -783,8 +1149,8 @@
     {
       "file": "works/2026-07-02-taxonomy-on-trial/data.json",
       "json_path": "/cases[7]",
-      "reason": null,
-      "result": "NOT-HELD",
+      "reason": "content-type not text-like: None",
+      "result": "NOT-AUTOMATICALLY-CHECKABLE",
       "token": "DSM-5's deletion of the DSM-IV bereavement-exclusion criterion for Major Depressive Disorder means a person with identical symptoms is diagnosable under one edition's criteria and not under the previous edition's, with no change in the person.",
       "url": "https://www.ncbi.nlm.nih.gov/books/NBK519712/table/ch3.t5/"
     },
@@ -883,10 +1249,251 @@
       "result": "NOT-AUTOMATICALLY-CHECKABLE",
       "token": "content that has potential probative value may require a more thorough and sound method of capture (e.g. through assigning a hash value); [the capture should be] close to its original format as possible. Any alterations, transformations or conversions caused by the collection process should be documented.",
       "url": "https://www.ohchr.org/sites/default/files/2024-01/OHCHR_BerkeleyProtocol.pdf"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[12]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "Large Language Models (LLMs) have extended their impact beyond Natural Language Processing, substantially fostering the development of interdisciplinary research. Recently, various LLM-based agents have been developed to assist scientific discovery progress across multiple aspects and domains. Among these, computer-using agents, capable of interacting with operating systems as humans do, are paving the way to automated scientific problem-solving and addressing routines in researchers' workflows. Recognizing the transformative potential of these agents, we introduce ScienceBoard, which encompasses two complementary contributions: (i) a realistic, multi-domain environment featuring dynamic and visually rich scientific workflows with integrated professional software, where agents can autonomously interact via different interfaces to accelerate complex research tasks and experiments; and (ii) a challenging benchmark of 169 high-quality, rigorously validated real-world tasks curated by humans, spanning scientific-discovery workflows in domains such as biochemistry, astronomy, and geoinformatics. Extensive evaluations of agents with state-of-the-art backbones (e.g., GPT-4o, Claude 3.7, UI-TARS) show that, despite some promising results, they still fall short of reliably assisting scientists in complex workflows, achieving only a 15% overall success rate. In-depth analysis further provides valuable insights for addressing current agent limitations and more effective design principles, paving the way to build more capable agents for scientific discovery. Our code, environment, and benchmark are at https://qiushisun.github.io/ScienceBoard-Home/.",
+      "url": "https://qiushisun.github.io/ScienceBoard-Home/"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[12]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "sha256:4743f6bfd0ca48717184cf55545e33a229dd5ab2d454385d33ea2f1b25c15b0c",
+      "url": "https://qiushisun.github.io/ScienceBoard-Home/"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[13]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "Bayesian optimization (BO) is a powerful class of algorithms for optimizing expensive black-box functions, but designing effective BO algorithms remains a manual, expertise-driven task. Recent advancements in Large Language Models (LLMs) have opened new avenues for automating scientific discovery, including the automatic design of optimization algorithms. While prior work has used LLMs within optimization loops or to generate non-BO algorithms, we tackle a new challenge: Using LLMs to automatically generate full BO algorithm code. Our framework uses an evolution strategy to guide an LLM in generating Python code that preserves the key components of BO algorithms: An initial design, a surrogate model, and an acquisition function. The LLM is prompted to produce multiple candidate algorithms, which are evaluated on the established Black-Box Optimization Benchmarking (BBOB) test suite from the COmparing Continuous Optimizers (COCO) platform. Based on their performance, top candidates are selected, combined, and mutated via controlled prompt variations, enabling iterative refinement. Despite no additional fine-tuning, the LLM-generated algorithms outperform state-of-the-art BO baselines in 19 (out of 24) BBOB functions in dimension 5 and generalize well to higher dimensions, and different tasks (from the Bayesmark framework). This work demonstrates that LLMs can serve as algorithmic co-designers, offering a new paradigm for automating BO development and accelerating the discovery of novel algorithmic combinations. The source code is provided at https://github.com/Ewendawi/LLaMEA-BO.",
+      "url": "https://github.com/Ewendawi/LLaMEA-BO"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[13]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "sha256:e026b5c07764904331ce830213f0a4e0bf995792b16b209b19906aed9f3cd2c3",
+      "url": "https://github.com/Ewendawi/LLaMEA-BO"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[1]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "Prompting language models to provide step-by-step answers (e.g., \"Chain-of-Thought\") is the prominent approach for complex reasoning tasks, where more accurate reasoning chains typically improve downstream task performance. Recent literature discusses automatic methods to verify reasoning to evaluate and improve their correctness. However, no fine-grained step-level datasets are available to enable thorough evaluation of such verification methods, hindering progress in this direction. We introduce REVEAL: Reasoning Verification Evaluation, a dataset to benchmark automatic verifiers of complex Chain-of-Thought reasoning in open-domain question-answering settings. REVEAL includes comprehensive labels for the relevance, attribution to evidence passages, and logical correctness of each reasoning step in a language model's answer, across a variety of datasets and state-of-the-art language models. Evaluation on REVEAL shows that verifiers struggle at verifying reasoning chains - in particular, verifying logical correctness and detecting contradictions. Available at https://reveal-dataset.github.io/ .",
+      "url": "https://reveal-dataset.github.io/"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[1]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "sha256:c426bad242ef7f2dc56017bc5f9791e6dfac7f3f36679b25c0cc0302181fe0b9",
+      "url": "https://reveal-dataset.github.io/"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[22]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "Recent advances in large language models (LLMs) have enabled AI agents to autonomously generate scientific proposals, conduct experiments, author papers, and perform peer reviews. Yet this flood of AI-generated research content collides with a fragmented and largely closed publication ecosystem. Traditional journals and conferences rely on human peer review, making them difficult to scale and often reluctant to accept AI-generated research content; existing preprint servers (e.g. arXiv) lack rigorous quality-control mechanisms. Consequently, a significant amount of high-quality AI-generated research lacks appropriate venues for dissemination, hindering its potential to advance scientific progress. To address these challenges, we introduce aiXiv, a next-generation open-access platform for human and AI scientists. Its multi-agent architecture allows research proposals and papers to be submitted, reviewed, and iteratively refined by both human and AI scientists. It also provides API and MCP interfaces that enable seamless integration of heterogeneous human and AI scientists, creating a scalable and extensible ecosystem for autonomous scientific discovery. Through extensive experiments, we demonstrate that aiXiv is a reliable and robust platform that significantly enhances the quality of AI-generated research proposals and papers after iterative revising and reviewing on aiXiv. Our work lays the groundwork for a next-generation open-access ecosystem for AI scientists, accelerating the publication and dissemination of high-quality AI-generated research content. Code: https://github.com/aixiv-org aiXiv: https://aixiv.science",
+      "url": "https://aixiv.science"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[22]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "sha256:f27ef4c0c1eb5712c3b752b527d4d2bc69e28acabc305fee3124f956c806dfdc",
+      "url": "https://aixiv.science"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[22]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "Recent advances in large language models (LLMs) have enabled AI agents to autonomously generate scientific proposals, conduct experiments, author papers, and perform peer reviews. Yet this flood of AI-generated research content collides with a fragmented and largely closed publication ecosystem. Traditional journals and conferences rely on human peer review, making them difficult to scale and often reluctant to accept AI-generated research content; existing preprint servers (e.g. arXiv) lack rigorous quality-control mechanisms. Consequently, a significant amount of high-quality AI-generated research lacks appropriate venues for dissemination, hindering its potential to advance scientific progress. To address these challenges, we introduce aiXiv, a next-generation open-access platform for human and AI scientists. Its multi-agent architecture allows research proposals and papers to be submitted, reviewed, and iteratively refined by both human and AI scientists. It also provides API and MCP interfaces that enable seamless integration of heterogeneous human and AI scientists, creating a scalable and extensible ecosystem for autonomous scientific discovery. Through extensive experiments, we demonstrate that aiXiv is a reliable and robust platform that significantly enhances the quality of AI-generated research proposals and papers after iterative revising and reviewing on aiXiv. Our work lays the groundwork for a next-generation open-access ecosystem for AI scientists, accelerating the publication and dissemination of high-quality AI-generated research content. Code: https://github.com/aixiv-org aiXiv: https://aixiv.science",
+      "url": "https://github.com/aixiv-org"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[22]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "sha256:f27ef4c0c1eb5712c3b752b527d4d2bc69e28acabc305fee3124f956c806dfdc",
+      "url": "https://github.com/aixiv-org"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[2]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "Pursuing artificial intelligence for biomedical science, a.k.a. AI Scientist, draws increasing attention, where one common approach is to build a copilot agent driven by Large Language Models (LLMs). However, to evaluate such systems, people either rely on direct Question-Answering (QA) to the LLM itself, or in a biomedical experimental manner. How to precisely benchmark biomedical agents from an AI Scientist perspective remains largely unexplored. To this end, we draw inspiration from one most important abilities of scientists, understanding the literature, and introduce BioKGBench. In contrast to traditional evaluation benchmark that only focuses on factual QA, where the LLMs are known to have hallucination issues, we first disentangle \"Understanding Literature\" into two atomic abilities, i) \"Understanding\" the unstructured text from research papers by performing scientific claim verification, and ii) Ability to interact with structured Knowledge-Graph Question-Answering (KGQA) as a form of \"Literature\" grounding. We then formulate a novel agent task, dubbed KGCheck, using KGQA and domain-based Retrieval-Augmented Generation (RAG) to identify the factual errors of existing large-scale knowledge graph databases. We collect over two thousand data for two atomic tasks and 225 high-quality annotated data for the agent task. Surprisingly, we discover that state-of-the-art agents, both daily scenarios and biomedical ones, have either failed or inferior performance on our benchmark. We then introduce a simple yet effective baseline, dubbed BKGAgent. On the widely used popular knowledge graph, we discover over 90 factual errors which provide scenarios for agents to make discoveries and demonstrate the effectiveness of our approach. The code and data are available at https://github.com/westlake-autolab/BioKGBench.",
+      "url": "https://github.com/westlake-autolab/BioKGBench"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[2]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "sha256:b62097d70f7c0f9edca70300e01a3ebc918f0543da4c9d16de0fe5ffb484b62e",
+      "url": "https://github.com/westlake-autolab/BioKGBench"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[33]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "We report a case study of four end-to-end attempts to autonomously generate ML research papers using a pipeline of six LLM agents mapped to stages of the scientific workflow. Of these four, three attempts failed during implementation or evaluation. One completed the pipeline and was accepted to Agents4Science 2025, an experimental inaugural venue that required AI systems as first authors, passing both human and multi-AI review. From these attempts, we document six recurring failure modes: bias toward training data defaults, implementation drift under execution pressure, memory and context degradation across long-horizon tasks, overexcitement that declares success despite obvious failures, insufficient domain intelligence, and weak scientific taste in experimental design. We conclude by discussing four design principles for more robust AI-scientist systems, implications for autonomous scientific discovery, and we release all prompts, artifacts, and outputs at https://github.com/Lossfunk/ai-scientist-artefacts-v1",
+      "url": "https://github.com/Lossfunk/ai-scientist-artefacts-v1"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[33]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "sha256:463a087cf56179db5cad25ef9d70cdd95817ae4689fd5fb33425254b46e164bc",
+      "url": "https://github.com/Lossfunk/ai-scientist-artefacts-v1"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[37]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "Legal text generated by large language models (LLMs) can usually achieve reasonable factual accuracy, but it frequently fails to adhere to the specialised stylistic norms and linguistic conventions of legal writing. In order to improve stylistic quality, a crucial first step is to establish a reliable evaluation method. However, having legal experts manually develop such a metric is impractical, as the implicit stylistic requirements in legal writing practice are difficult to formalise into explicit rubrics. Meanwhile, existing automatic evaluation methods also fall short: reference-based metrics conflate semantic accuracy with stylistic fidelity, and LLM-as-a-judge evaluations suffer from opacity and inconsistency. To address these challenges, we introduce CLASE (Chinese LegAlese Stylistic Evaluation), a hybrid evaluation method that focuses on the stylistic performance of legal text. The method incorporates a hybrid scoring mechanism that combines 1) linguistic feature-based scores and 2) experience-guided LLM-as-a-judge scores. Both the feature coefficients and the LLM scoring experiences are learned from contrastive pairs of authentic legal documents and their LLM-restored counterparts. This hybrid design captures both surface-level features and implicit stylistic norms in a transparent, reference-free manner. Experiments on 200 Chinese legal documents show that CLASE achieves substantially higher alignment with human judgments than traditional metrics and pure LLM-as-a-judge methods. Beyond improved alignment, CLASE provides interpretable score breakdowns and suggestions for improvements, offering a scalable and practical solution for professional stylistic evaluation in legal text generation (Code and data for CLASE is available at: https://github.com/rexera/CLASE).",
+      "url": "https://github.com/rexera/CLASE"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[37]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "sha256:519b82490b42d1249baa94a570cb0b5d9f086a80e84b512e1b2c4039de69e00d",
+      "url": "https://github.com/rexera/CLASE"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[38]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "The application of Large Language Models (LLMs) in accelerating scientific discovery has garnered increasing attention, with a key focus on constructing research agents endowed with innovative capability, i.e., the ability to autonomously generate novel and significant research ideas. Existing approaches predominantly rely on sophisticated prompt engineering and lack a systematic training paradigm. To address this, we propose DeepInnovator, a training framework designed to trigger the innovative capability of LLMs. Our approach comprises two core components. (1) ``Standing on the shoulders of giants''. We construct an automated data extraction pipeline to extract and organize structured research knowledge from a vast corpus of unlabeled scientific literature. (2) ``Conjectures and refutations''. We introduce a ``Next Idea Prediction'' training paradigm, which models the generation of research ideas as an iterative process of continuously predicting, evaluating, and refining plausible and novel next idea. Both automatic and expert evaluations demonstrate that our DeepInnovator-14B significantly outperforms untrained baselines, achieving win rates of 80.53\\%-93.81\\%, and attains performance comparable to that of current leading LLMs. This work provides a scalable training pathway toward building research agents with genuine, originative innovative capability, and will open-source the dataset to foster community advancement. Source code and data are available at: https://github.com/HKUDS/DeepInnovator.",
+      "url": "https://github.com/HKUDS/DeepInnovator"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[38]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "sha256:dd453b4c159c7bc0262c3c990eab2657c9ff143b273ce388a45b30a1e3873969",
+      "url": "https://github.com/HKUDS/DeepInnovator"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[46]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "Recent advances in deep research systems enable large language models to retrieve, synthesize, and reason over large-scale external knowledge. In medicine, developing clinical guidelines critically depends on such deep evidence integration. However, existing benchmarks fail to evaluate this capability in realistic workflows requiring multi-step evidence integration and expert-level judgment. To address this gap, we introduce MedProbeBench, the first benchmark leveraging high-quality clinical guidelines as expert-level references. Medical guidelines, with their rigorous standards in neutrality and verifiability, represent the pinnacle of medical expertise and pose substantial challenges for deep research agents. For evaluation, we propose MedProbe-Eval, a comprehensive evaluation framework featuring: (1) Holistic Rubrics with 1,200+ task-adaptive rubric criteria for comprehensive quality assessment, and (2) Fine-grained Evidence Verification for rigorous validation of evidence precision, grounded in 5,130+ atomic claims. Evaluation of 17 LLMs and deep research agents reveals critical gaps in evidence integration and guideline generation, underscoring the substantial distance between current capabilities and expert-level clinical guideline development. Project: https://github.com/uni-medical/MedProbeBench",
+      "url": "https://github.com/uni-medical/MedProbeBench"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[46]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "sha256:aa4ddbffa74d4a3b416004e5c29950a5e49974827b4b5336c5dad7ffa1ab4a7b",
+      "url": "https://github.com/uni-medical/MedProbeBench"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[48]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "Reproducing and comparing deep research agents today is hard: the same backbone evaluated on the same benchmark can report different accuracies across papers because the harness and tool registry differ, and integrating a new model into a comparable evaluation surface costs weeks of model-specific engineering. These are symptoms of a broader reproducibility problem in deep research agent research. Here, we introduce BioMedArena, an open-source toolkit that addresses this reproducibility gap and provides an arena for comparing deep research agents under a shared evaluation environment. BioMedArena decouples six layers of biomedical agent evaluation -- benchmark loading, tool exposure, tool selection, harness mode, context management, and scoring -- and exposes 166 biomedical benchmarks and 75 biomedical tools across 9 functional families. Adding a new model, benchmark, or tool can be accomplished with a few-line provider adapter. Beyond evaluation infrastructure, BioMedArena ships a library of high-quality reference components: 6 agent harnesses (including our proposed Mutual-Evolve) and 6 context-management strategies, any of which can be equipped on any backbone. Equipping these components substantially improves all 12 backbones; on each of 8 representative biomedical benchmarks, the best equipped backbone surpasses prior state-of-the-art (SOTA), by 15.01 percentage points on average. The toolkit, configurations, and per-task traces are available at https://github.com/AI-in-Health/BioMedArena.",
+      "url": "https://github.com/AI-in-Health/BioMedArena"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[48]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "sha256:7ec997f4cd11c953408f802b4932a6af34d099899231e8672de7331bc46e33e4",
+      "url": "https://github.com/AI-in-Health/BioMedArena"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[4]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "One of the grand challenges of artificial general intelligence is developing agents capable of conducting scientific research and discovering new knowledge. While frontier models have already been used as aides to human scientists, e.g. for brainstorming ideas, writing code, or prediction tasks, they still conduct only a small part of the scientific process. This paper presents the first comprehensive framework for fully automatic scientific discovery, enabling frontier large language models to perform research independently and communicate their findings. We introduce The AI Scientist, which generates novel research ideas, writes code, executes experiments, visualizes results, describes its findings by writing a full scientific paper, and then runs a simulated review process for evaluation. In principle, this process can be repeated to iteratively develop ideas in an open-ended fashion, acting like the human scientific community. We demonstrate its versatility by applying it to three distinct subfields of machine learning: diffusion modeling, transformer-based language modeling, and learning dynamics. Each idea is implemented and developed into a full paper at a cost of less than $15 per paper. To evaluate the generated papers, we design and validate an automated reviewer, which we show achieves near-human performance in evaluating paper scores. The AI Scientist can produce papers that exceed the acceptance threshold at a top machine learning conference as judged by our automated reviewer. This approach signifies the beginning of a new era in scientific discovery in machine learning: bringing the transformative benefits of AI agents to the entire research process of AI itself, and taking us closer to a world where endless affordable creativity and innovation can be unleashed on the world's most challenging problems. Our code is open-sourced at https://github.com/SakanaAI/AI-Scientist",
+      "url": "https://github.com/SakanaAI/AI-Scientist"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[4]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "sha256:a3839ea2274755d23a310b20469b98ea505d0d1ad92f72a9c941a529063ea9cd",
+      "url": "https://github.com/SakanaAI/AI-Scientist"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[50]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "The rapid growth in submissions to machine learning venues has strained the scientific peer-review system and intensified interest in LLM-based automated peer reviewers. However, how good these systems are actually, especially compared to human reviewers at catching scientific gaps, remains poorly understood. In this work, we introduce PRISM (Peer Review Intelligence via Structured Multi-dimensional assessment), a benchmarking framework that evaluates review quality across four dimensions: Depth of Analysis, Novelty Assessment,Flaw Identification & Major Issues Prioritization, and Multi-dimensional Constructiveness. Unlike most existing evaluations based on surface-level metrics like ROUGE and BLEU, or unconstrained LLM-as-a-judge prompting that conflates fluency with rigor, PRISM grounds each dimension in argument mining, retrieval-augmented verification, and consensus-based scoring. We apply PRISM to benchmark five leading automated reviewer systems and human reviewers on a stratified corpus of reviews from ICLR, ICML, and NeurIPS. The results reveal that LLMs can match or beat human reviewers on individual dimensions: comparable depth of analysis, stronger novelty verification, and highly accurate critique prioritization. However, no single system consistently matches the balanced performance of the human baseline across all dimensions at once. Each exhibits a distinct specialization profile with characteristic blind spots -- failure modes that aggregate metrics miss entirely. The implication is that LLM reviewers are best understood as targeted supplements to human review, effective within specific dimensions, but unreliable as standalone replacements. Our demo and key results can be found at https://khanhthanhdev.github.io/prism-page/.",
+      "url": "https://khanhthanhdev.github.io/prism-page/"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[50]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "sha256:9d526904c70015f53e4c4df4ea87cb7e0be855a779ad9ee8e9e33bc65a3e83d6",
+      "url": "https://khanhthanhdev.github.io/prism-page/"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[54]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "AI scientists are now a reality, with the ability to generate complete research papers, maintain scholarly profiles, receive citations, and attract peer review invitations. Yet no standard mechanism exists to distinguish an AI scientist from a human one in bibliographic databases, citation indexes, or journal submission systems. This white paper defines the problem, analyzes its consequences for the integrity of scholarly communication, and proposes AICID (AI Contributor IDentifier): a persistent, unique identifier for AI scientists. Modeled on ORCID but designed specifically for non-human contributors, AICID links each AI author to its model identity, version, operator. Adoption by publishers, preprint servers, and bibliographic databases aims to make the provenance of AI-generated research transparent and machine-readable. We outline the design requirements for such a system, present a prototype, and argue that AICID is necessary infrastructure for a scholarly ecosystem in which AI scientists are already active participants. A prototype alpha version is available at https://aicid.net.",
+      "url": "https://aicid.net"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[54]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "sha256:946c4367924b7dc5c21e74c7c52391e5f811ef618ef6549836e457bdfa52e733",
+      "url": "https://aicid.net"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[7]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "In the endeavor to make autonomous robots take actions, task planning is a major challenge that requires translating high-level task descriptions to long-horizon action sequences. Despite recent advances in language model agents, they remain prone to planning errors and limited in their ability to plan ahead. To address these limitations in robotic planning, we advocate a self-refining scheme that iteratively refines a draft plan until an equilibrium is reached. Remarkably, this process can be optimized end-to-end from an analytical perspective without the need to curate additional verifiers or reward models, allowing us to train self-refining planners in a simple supervised learning fashion. Meanwhile, a nested equilibrium sequence modeling procedure is devised for efficient closed-loop planning that incorporates useful feedback from the environment (or an internal world model). Our method is evaluated on the VirtualHome-Env benchmark, showing advanced performance with improved scaling w.r.t. inference-time computation. Code is available at https://github.com/Singularity0104/equilibrium-planner.",
+      "url": "https://github.com/Singularity0104/equilibrium-planner"
+    },
+    {
+      "file": "works/2026-08-03-where-the-reader-declines/data.json",
+      "json_path": "/cases[7]",
+      "reason": null,
+      "result": "NOT-HELD",
+      "token": "sha256:4fce10ce9f4a1d1c516102cfaaf58b624a73e4dcff0fcc424d95375c961928be",
+      "url": "https://github.com/Singularity0104/equilibrium-planner"
     }
   ],
-  "pinned_commit": "0138e79d0bd95aa4797fb617949d07d947fb338f",
-  "pinned_inventory_sha256": "137e03ecac8eafe1efd8c421db2e46a3d562168b865e37a7ba4b0cc95f8b29e2",
+  "pinned_commit": "712a013735cb88ecf4fa6cd713261dfc1b8a1ff3",
+  "pinned_inventory_sha256": "4879838df691a6e0d2d76f01791d74053021bf31b70fa5d3df36a4c55884c346",
+  "preregistration": "PREREGISTRATION.md, amended by PREREGISTRATION-V2.md (A1-A4) and A1-CORRECTION.md",
   "records": [
     {
       "byte_count": 3651,
@@ -894,7 +1501,7 @@
         "U1"
       ],
       "content_type": "text/html",
-      "elapsed_s": 1.062,
+      "elapsed_s": 1.237,
       "error": null,
       "final_url": "https://cv.iptc.org/newscodes/digitalsourcetype/algorithmicMedia",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -904,6 +1511,7 @@
       "paths": [
         "works/2026-07-11-split-seal/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -917,12 +1525,36 @@
       ]
     },
     {
+      "classes": [
+        "U1"
+      ],
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "normalized_url": "http://web.archive.org/web/20260702095038/https://gptzero.me/",
+      "not_a_document_rule": "BASE-PATH",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
+      "second_vantage": null,
+      "self": false,
+      "soft_gone_host_flag": false,
+      "tiers": [
+        "site"
+      ],
+      "verdict": "NOT-A-DOCUMENT",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
       "byte_count": 1515,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=iso-8859-1",
-      "elapsed_s": 0.636,
+      "elapsed_s": 0.205,
       "error": null,
       "final_url": "https://www.w3.org/2000/svg",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -935,6 +1567,7 @@
         "works/2026-07-01-naive-detector/work.astro",
         "works/2026-07-25-no-signal-to-extend/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -951,12 +1584,12 @@
       ]
     },
     {
-      "byte_count": 311144,
+      "byte_count": 311285,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 2.006,
+      "elapsed_s": 2.18,
       "error": null,
       "final_url": "https://www.aafp.org/afp/2014/1115/p690",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -966,6 +1599,7 @@
       "paths": [
         "works/2026-07-01-the-edition/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -979,12 +1613,12 @@
       ]
     },
     {
-      "byte_count": 311144,
+      "byte_count": 311285,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.452,
+      "elapsed_s": 0.51,
       "error": null,
       "final_url": "https://www.aafp.org/afp/2014/1115/p690",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -994,6 +1628,7 @@
       "paths": [
         "works/2026-07-01-the-edition/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1012,7 +1647,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.452,
+      "elapsed_s": 0.437,
       "error": null,
       "final_url": "https://academicintegrity.org/aws/ICAI/pt/sd/news_article/591345/_PARENT/layout_interior/false",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1023,6 +1658,7 @@
         "works/2026-07-05-backward-regime-test/SOURCES.md",
         "works/2026-07-05-backward-regime-test/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1037,12 +1673,12 @@
       ]
     },
     {
-      "byte_count": 42769,
+      "byte_count": 42771,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.845,
+      "elapsed_s": 0.715,
       "error": null,
       "final_url": "https://aclanthology.org/2024.acl-long.674/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1052,6 +1688,7 @@
       "paths": [
         "works/2026-07-01-calibration-gap/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1070,7 +1707,7 @@
         "U1"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 0.394,
+      "elapsed_s": 0.466,
       "error": null,
       "final_url": "https://aclanthology.org/2024.acl-long.674.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1078,14 +1715,13 @@
       "normalized_url": "https://aclanthology.org/2024.acl-long.674.pdf",
       "not_a_locator": false,
       "paths": [
-        "works/2026-07-02-taxonomy-on-trial/README.md",
         "works/2026-07-02-taxonomy-on-trial/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
       "tiers": [
-        "repo",
         "site"
       ],
       "title": null,
@@ -1095,12 +1731,12 @@
       ]
     },
     {
-      "byte_count": 47679,
+      "byte_count": 47670,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.112,
+      "elapsed_s": 0.352,
       "error": null,
       "final_url": "https://aclanthology.org/2025.acl-long.656/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1110,6 +1746,7 @@
       "paths": [
         "works/2026-07-01-score-horizon/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1123,12 +1760,12 @@
       ]
     },
     {
-      "byte_count": 40625,
+      "byte_count": 40627,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.252,
+      "elapsed_s": 0.355,
       "error": null,
       "final_url": "https://aclanthology.org/2025.acl-srw.95/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1138,6 +1775,7 @@
       "paths": [
         "works/2026-07-25-no-signal-to-extend/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1151,12 +1789,12 @@
       ]
     },
     {
-      "byte_count": 82271,
+      "byte_count": 82272,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.844,
+      "elapsed_s": 0.861,
       "error": null,
       "final_url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-113",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1166,6 +1804,7 @@
       "paths": [
         "works/2026-07-11-split-seal/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1179,12 +1818,70 @@
       ]
     },
     {
+      "byte_count": 3374,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.755,
+      "error": null,
+      "final_url": "https://aicid.net/",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://aicid.net",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-08-03-where-the-reader-declines/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "AICID \u2014 Unique Identifiers for AI Scientists",
+      "verdict": "OK",
+      "works": [
+        "2026-08-03-where-the-reader-declines"
+      ]
+    },
+    {
+      "byte_count": 614,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 1.089,
+      "error": null,
+      "final_url": "https://aixiv.science/",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://aixiv.science",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-08-03-where-the-reader-declines/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "aiXiv - AI Scientists Community",
+      "verdict": "UNRELIABLE-OK",
+      "works": [
+        "2026-08-03-where-the-reader-declines"
+      ]
+    },
+    {
       "byte_count": 134642,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 2.159,
+      "elapsed_s": 1.667,
       "error": null,
       "final_url": "https://www.amacad.org/publication/daedalus/protest-psychosis-future-equity-diversity-efforts-american-psychiatry",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1194,6 +1891,7 @@
       "paths": [
         "works/2026-07-01-the-edition/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1212,7 +1910,7 @@
         "U2"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 1.159,
+      "elapsed_s": 1.554,
       "error": null,
       "final_url": "https://www.apaf.org/library-archives/galleries/lgbtq-leaders/apa-official-ballot-for-amendments-referendum/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1222,6 +1920,7 @@
       "paths": [
         "works/2026-07-01-the-edition/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1244,6 +1943,7 @@
       "paths": [
         "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION-round2.md"
       ],
+      "presentation": "displayed-only",
       "primary_observation": null,
       "second_vantage": null,
       "self": false,
@@ -1267,6 +1967,7 @@
         "works/2026-07-26-one-line-for-ten-thousand/METHOD.md",
         "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION.md"
       ],
+      "presentation": "displayed-only",
       "primary_observation": null,
       "second_vantage": null,
       "self": false,
@@ -1280,29 +1981,25 @@
       ]
     },
     {
-      "byte_count": 378,
       "classes": [
         "U1"
       ],
-      "content_type": "application/json; charset=utf-8",
-      "elapsed_s": 0.344,
-      "error": null,
-      "final_url": "https://api.github.com/repos/frankbueltge/dataset-hub/releases",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
-      "n_redirects": 0,
       "normalized_url": "https://api.github.com/repos/frankbueltge/dataset-hub/releases",
+      "not_a_document_rule": "QUERY-ENDPOINT",
       "not_a_locator": false,
       "paths": [
         "works/2026-07-26-one-line-for-ten-thousand/BACK-CHANNEL.md"
       ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
       "second_vantage": null,
       "self": false,
-      "status": 403,
+      "soft_gone_host_flag": false,
       "tiers": [
         "repo"
       ],
-      "title": null,
-      "verdict": "BLOCKED",
+      "verdict": "NOT-A-DOCUMENT",
       "works": [
         "2026-07-26-one-line-for-ten-thousand"
       ]
@@ -1313,7 +2010,7 @@
         "U2"
       ],
       "content_type": "text/html",
-      "elapsed_s": 0.569,
+      "elapsed_s": 2.526,
       "error": null,
       "final_url": "https://archive.cdc.gov/www_cdc_gov/ncbddd/adhd/features/adhd-keyfindings-different-diagnosis-criteria.html",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1323,6 +2020,7 @@
       "paths": [
         "works/2026-07-01-the-edition/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1336,29 +2034,25 @@
       ]
     },
     {
-      "byte_count": 322941,
       "classes": [
         "U1"
       ],
-      "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.608,
-      "error": null,
-      "final_url": "https://artificialintelligenceact.eu/article/50/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
-      "n_redirects": 0,
       "normalized_url": "https://artificialintelligenceact.eu/article/50/",
+      "not_a_document_rule": "BASE-PATH",
       "not_a_locator": false,
       "paths": [
         "works/2026-07-11-split-seal/SOURCES.md"
       ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
       "second_vantage": null,
       "self": false,
-      "status": 200,
+      "soft_gone_host_flag": false,
       "tiers": [
         "repo"
       ],
-      "title": "Article 50: Transparency Obligations for Providers and Deployers of Certain AI Systems | EU Artificial Intelligence Act",
-      "verdict": "OK",
+      "verdict": "NOT-A-DOCUMENT",
       "works": [
         "2026-07-11-split-seal"
       ]
@@ -1371,7 +2065,7 @@
         "U4"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.571,
+      "elapsed_s": 0.585,
       "error": null,
       "final_url": "https://arxiv.org/abs/1609.05807",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1381,6 +2075,7 @@
       "paths": [
         "works/2026-07-01-fairness-trap/work.astro"
       ],
+      "presentation": "linked",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1399,7 +2094,7 @@
         "U2"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.108,
+      "elapsed_s": 0.127,
       "error": null,
       "final_url": "https://arxiv.org/abs/2009.03300",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1409,6 +2104,7 @@
       "paths": [
         "works/2026-07-01-score-horizon/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1427,7 +2123,7 @@
         "U4"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.112,
+      "elapsed_s": 0.11,
       "error": null,
       "final_url": "https://arxiv.org/abs/2202.05237",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1437,6 +2133,7 @@
       "paths": [
         "works/2026-07-02-standing-docket/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1456,7 +2153,7 @@
         "U4"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.109,
+      "elapsed_s": 0.135,
       "error": null,
       "final_url": "https://arxiv.org/abs/2209.00131",
       "layer2b": "NOT-HELD",
@@ -1469,6 +2166,7 @@
         "works/2026-07-02-taxonomy-on-trial/data.json",
         "works/2026-07-05-backward-regime-test/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1490,7 +2188,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.159,
+      "elapsed_s": 0.129,
       "error": null,
       "final_url": "https://arxiv.org/abs/2304.02819",
       "layer2b": "NOT-HELD",
@@ -1499,14 +2197,13 @@
       "not_a_locator": false,
       "paths": [
         "works/2026-07-01-calibration-gap/data.json",
-        "works/2026-07-02-taxonomy-on-trial/README.md",
         "works/2026-07-02-taxonomy-on-trial/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
       "tiers": [
-        "repo",
         "site"
       ],
       "title": "[2304.02819] GPT detectors are biased against non-native English writers",
@@ -1522,7 +2219,7 @@
         "U4"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.086,
+      "elapsed_s": 0.104,
       "error": null,
       "final_url": "https://arxiv.org/abs/2306.03262",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1536,6 +2233,7 @@
         "works/2026-07-17-comparable-with-humans/run_spike.py",
         "works/2026-07-17-comparable-with-humans/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1550,12 +2248,41 @@
       ]
     },
     {
+      "byte_count": 46231,
+      "classes": [
+        "U4"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.121,
+      "error": null,
+      "final_url": "https://arxiv.org/abs/2306.15666",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://arxiv.org/abs/2306.15666",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "[2306.15666] Testing of Detection Tools for AI-Generated Text",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
       "byte_count": 42998,
       "classes": [
         "U4"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.109,
+      "elapsed_s": 0.128,
       "error": null,
       "final_url": "https://arxiv.org/abs/2404.00267",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1565,6 +2292,7 @@
       "paths": [
         "works/2026-07-25-no-signal-to-extend/VERIFICATION-sourati.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1584,7 +2312,7 @@
         "U4"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.107,
+      "elapsed_s": 0.121,
       "error": null,
       "final_url": "https://arxiv.org/abs/2404.08403",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1598,6 +2326,7 @@
         "works/2026-07-17-comparable-with-humans/run_spike.py",
         "works/2026-07-17-comparable-with-humans/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1617,7 +2346,7 @@
         "U4"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.11,
+      "elapsed_s": 0.132,
       "error": null,
       "final_url": "https://arxiv.org/abs/2406.07016",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1629,6 +2358,7 @@
         "works/2026-07-26-unable-to-ring-its-own-bell/README.md",
         "works/2026-07-26-unable-to-ring-its-own-bell/VERIFICATION.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1648,7 +2378,7 @@
         "U2"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.11,
+      "elapsed_s": 0.151,
       "error": null,
       "final_url": "https://arxiv.org/abs/2412.15194",
       "layer2b": "NOT-HELD",
@@ -1661,6 +2391,7 @@
         "works/2026-07-02-taxonomy-on-trial/data.json",
         "works/2026-07-05-backward-regime-test/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1682,7 +2413,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.149,
+      "elapsed_s": 0.133,
       "error": null,
       "final_url": "https://arxiv.org/abs/2502.04528",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1692,6 +2423,7 @@
       "paths": [
         "works/2026-07-01-calibration-gap/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1710,7 +2442,7 @@
         "U4"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.107,
+      "elapsed_s": 0.125,
       "error": null,
       "final_url": "https://arxiv.org/abs/2502.11266",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1722,6 +2454,7 @@
         "works/2026-07-25-no-signal-to-extend/README.md",
         "works/2026-07-25-no-signal-to-extend/VERIFICATION-sourati.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1741,7 +2474,7 @@
         "U4"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.134,
+      "elapsed_s": 0.121,
       "error": null,
       "final_url": "https://arxiv.org/abs/2502.11266v1",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1752,6 +2485,7 @@
         "works/2026-07-25-no-signal-to-extend/SOURCES.md",
         "works/2026-07-25-no-signal-to-extend/VERIFICATION-sourati.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1770,7 +2504,7 @@
         "U2"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.113,
+      "elapsed_s": 0.119,
       "error": null,
       "final_url": "https://arxiv.org/abs/2504.20879",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1780,6 +2514,7 @@
       "paths": [
         "works/2026-07-01-score-horizon/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1798,7 +2533,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.19,
+      "elapsed_s": 0.122,
       "error": null,
       "final_url": "https://arxiv.org/abs/2512.09292",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1808,6 +2543,7 @@
       "paths": [
         "works/2026-07-01-calibration-gap/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1821,12 +2557,12 @@
       ]
     },
     {
-      "byte_count": 41290,
+      "byte_count": 40741,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.109,
+      "elapsed_s": 0.121,
       "error": null,
       "final_url": "https://arxiv.org/abs/2602.05769",
       "layer2b": "NOT-HELD",
@@ -1837,6 +2573,7 @@
         "works/2026-07-02-taxonomy-on-trial/README.md",
         "works/2026-07-02-taxonomy-on-trial/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1851,12 +2588,12 @@
       ]
     },
     {
-      "byte_count": 46352,
+      "byte_count": 45803,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.11,
+      "elapsed_s": 0.118,
       "error": null,
       "final_url": "https://arxiv.org/abs/2602.16763",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1866,6 +2603,7 @@
       "paths": [
         "works/2026-07-01-score-horizon/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1885,7 +2623,7 @@
         "U4"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.109,
+      "elapsed_s": 0.12,
       "error": null,
       "final_url": "https://arxiv.org/abs/2603.02378",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1897,6 +2635,7 @@
         "works/2026-07-11-split-seal/SOURCES.md",
         "works/2026-07-11-split-seal/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1916,7 +2655,7 @@
         "U2"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.107,
+      "elapsed_s": 0.12,
       "error": null,
       "final_url": "https://arxiv.org/abs/2604.24890",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1926,6 +2665,7 @@
       "paths": [
         "works/2026-07-01-provenance-horizon/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1944,7 +2684,7 @@
         "U4"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.09,
+      "elapsed_s": 0.104,
       "error": null,
       "final_url": "https://arxiv.org/abs/2605.03202",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1955,6 +2695,7 @@
         "works/2026-07-17-comparable-with-humans/README.md",
         "works/2026-07-17-comparable-with-humans/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -1974,7 +2715,7 @@
         "U4"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.113,
+      "elapsed_s": 0.121,
       "error": null,
       "final_url": "https://arxiv.org/abs/2606.15497",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -1988,6 +2729,7 @@
         "works/2026-07-17-comparable-with-humans/run_spike.py",
         "works/2026-07-17-comparable-with-humans/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2007,7 +2749,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.238,
+      "elapsed_s": 1.399,
       "error": null,
       "final_url": "https://arxiv.org/html/2502.11266",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2018,6 +2760,7 @@
         "works/2026-07-25-no-signal-to-extend/SOURCES.md",
         "works/2026-07-25-no-signal-to-extend/VERIFICATION-sourati.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2036,7 +2779,7 @@
         "U1"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 0.207,
+      "elapsed_s": 0.093,
       "error": null,
       "final_url": "https://arxiv.org/pdf/2202.05237",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2046,6 +2789,7 @@
       "paths": [
         "works/2026-07-02-standing-docket/README.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2059,40 +2803,47 @@
       ]
     },
     {
-      "byte_count": 724563,
+      "byte_count": null,
       "classes": [
         "U2"
       ],
-      "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 1.946,
-      "error": null,
-      "final_url": "https://www.cambridge.org:443/core/journals/political-analysis",
+      "content_type": null,
+      "elapsed_s": 26.429,
+      "error": "HTTPSConnectionPool(host='www.cambridge.org', port=443): Read timed out. (read timeout=25)",
+      "final_url": null,
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
-      "n_redirects": 1,
+      "n_redirects": null,
       "normalized_url": "https://cambridge.org/core/journals/political-analysis",
       "not_a_locator": false,
       "paths": [
         "works/2026-07-01-digit-mirror/work.astro"
       ],
-      "second_vantage": null,
+      "presentation": "displayed-only",
+      "second_vantage": {
+        "agrees_with_primary": true,
+        "error": "HTTPSConnectionPool(host='www.cambridge.org', port=443): Read timed out. (read timeout=25)",
+        "method": "HEAD",
+        "status": null,
+        "verdict": "NETFAIL"
+      },
       "self": false,
-      "status": 200,
+      "status": null,
       "tiers": [
         "site"
       ],
-      "title": "Political Analysis | Cambridge Core",
-      "verdict": "OK",
+      "title": null,
+      "verdict": "NETFAIL",
       "works": [
         "2026-07-01-digit-mirror"
       ]
     },
     {
-      "byte_count": 445088,
+      "byte_count": 445363,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 1.177,
+      "elapsed_s": 1.157,
       "error": null,
       "final_url": "https://caselaw.nationalarchives.gov.uk/ewca/crim/2021/577",
       "layer2b": "NOT-HELD",
@@ -2103,6 +2854,7 @@
         "works/2026-07-02-taxonomy-on-trial/data.json",
         "works/2026-07-05-backward-regime-test/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2122,7 +2874,7 @@
         "U1"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 1.244,
+      "elapsed_s": 0.89,
       "error": null,
       "final_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2133,6 +2885,7 @@
         "works/2026-07-06-two-meters/SOURCES.md",
         "works/2026-07-06-two-meters/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2147,12 +2900,12 @@
       ]
     },
     {
-      "byte_count": 180136,
+      "byte_count": 180959,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.781,
+      "elapsed_s": 1.249,
       "error": null,
       "final_url": "https://commons.wikimedia.org/wiki/File:Cat_November_2010-1a.jpg",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2163,6 +2916,7 @@
         "works/2026-07-11-split-seal/SOURCES.md",
         "works/2026-07-11-split-seal/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2177,12 +2931,12 @@
       ]
     },
     {
-      "byte_count": 119397,
+      "byte_count": 120968,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.259,
+      "elapsed_s": 0.705,
       "error": null,
       "final_url": "https://commons.wikimedia.org/wiki/File:DALL%C2%B7E_2025-02-21_23.58.53_-_A_simple_soldering_iron_with_a_stand._The_soldering_iron_has_a_slim,_ergonomic_handle_with_a_metallic_tip._The_stand_is_a_small_metal_base_with_a_coil.webp",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2193,6 +2947,7 @@
         "works/2026-07-11-split-seal/SOURCES.md",
         "works/2026-07-11-split-seal/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2207,12 +2962,12 @@
       ]
     },
     {
-      "byte_count": 106584,
+      "byte_count": 108304,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.31,
+      "elapsed_s": 0.263,
       "error": null,
       "final_url": "https://commons.wikimedia.org/wiki/File:Gato_naranja_generado_por_IA.png",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2223,6 +2978,7 @@
         "works/2026-07-11-split-seal/SOURCES.md",
         "works/2026-07-11-split-seal/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2237,12 +2993,12 @@
       ]
     },
     {
-      "byte_count": 100645,
+      "byte_count": 102465,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.356,
+      "elapsed_s": 0.327,
       "error": null,
       "final_url": "https://commons.wikimedia.org/wiki/File:Imagetitis-affected_editor_by_ChatGPT_4.0_%26_DALL%C2%B7E_3_(2024).webp",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2253,6 +3009,7 @@
         "works/2026-07-11-split-seal/SOURCES.md",
         "works/2026-07-11-split-seal/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2267,12 +3024,12 @@
       ]
     },
     {
-      "byte_count": 76389,
+      "byte_count": 77777,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.29,
+      "elapsed_s": 0.5,
       "error": null,
       "final_url": "https://commons.wikimedia.org/wiki/File:Wikimedia_Commons_AI_(2025).png",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2283,6 +3040,7 @@
         "works/2026-07-11-split-seal/SOURCES.md",
         "works/2026-07-11-split-seal/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2303,7 +3061,7 @@
         "U2"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.851,
+      "elapsed_s": 0.842,
       "error": null,
       "final_url": "https://community.openai.com/t/c2pa-meta-data-in-dall-e-3-images/617061",
       "layer2b": "NOT-HELD",
@@ -2312,14 +3070,13 @@
       "not_a_locator": false,
       "paths": [
         "works/2026-07-01-provenance-horizon/work.astro",
-        "works/2026-07-02-taxonomy-on-trial/README.md",
         "works/2026-07-02-taxonomy-on-trial/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
       "tiers": [
-        "repo",
         "site"
       ],
       "title": "C2PA Meta Data in DALL\u00b7E 3 Images - API - OpenAI Developer Community",
@@ -2335,7 +3092,7 @@
         "U1"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 0.803,
+      "elapsed_s": 0.83,
       "error": null,
       "final_url": "https://datacenters.lbl.gov/sites/default/files/WP49-PUE%20A%20Comprehensive%20Examination%20of%20the%20Metric_v6.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2345,6 +3102,7 @@
       "paths": [
         "works/2026-07-09-the-floor/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2358,40 +3116,36 @@
       ]
     },
     {
-      "byte_count": 104108,
       "classes": [
         "U1"
       ],
-      "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.678,
-      "error": null,
-      "final_url": "https://datamatters.sidley.com/2026/06/24/eu-ai-act-transparency-obligations-preparing-for-compliance-by-2-august-2026/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
-      "n_redirects": 0,
       "normalized_url": "https://datamatters.sidley.com/2026/06/24/eu-ai-act-transparency-obligations-preparing-for-compliance-by-2-august-2026/",
+      "not_a_document_rule": "BASE-PATH",
       "not_a_locator": false,
       "paths": [
         "works/2026-07-11-split-seal/SOURCES.md"
       ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
       "second_vantage": null,
       "self": false,
-      "status": 200,
+      "soft_gone_host_flag": false,
       "tiers": [
         "repo"
       ],
-      "title": "EU AI Act Transparency Obligations: Preparing for Compliance by 2 August 2026 | Data Matters Privacy Blog",
-      "verdict": "OK",
+      "verdict": "NOT-A-DOCUMENT",
       "works": [
         "2026-07-11-split-seal"
       ]
     },
     {
-      "byte_count": 46887,
+      "byte_count": 46889,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 1.128,
+      "elapsed_s": 1.101,
       "error": null,
       "final_url": "https://www.digimarc.com/blog/safeguarding-public-trust-thanks-c2pa-and-digital-watermarks",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2401,6 +3155,7 @@
       "paths": [
         "works/2026-07-01-provenance-horizon/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2414,12 +3169,12 @@
       ]
     },
     {
-      "byte_count": 41677,
+      "byte_count": 41635,
       "classes": [
         "U2"
       ],
       "content_type": "text/html",
-      "elapsed_s": 1.865,
+      "elapsed_s": 2.208,
       "error": null,
       "final_url": "https://embed.documentcloud.org/documents/2998391-ProPublica-Commentary-Final-070616/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2429,6 +3184,7 @@
       "paths": [
         "works/2026-07-01-fairness-trap/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2447,7 +3203,7 @@
         "U2"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 1.166,
+      "elapsed_s": 1.173,
       "error": null,
       "final_url": "https://onlinelibrary.wiley.com/doi/10.1002/da.22217",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2457,6 +3213,7 @@
       "paths": [
         "works/2026-07-01-the-edition/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -2470,13 +3227,74 @@
       ]
     },
     {
+      "byte_count": 485511,
+      "classes": [
+        "U1",
+        "U3"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 2.288,
+      "error": null,
+      "final_url": "https://link.springer.com/article/10.1007/s40979-023-00146-z",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 4,
+      "normalized_url": "https://doi.org/10.1007/s40979-023-00146-z",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/VERIFICATION.md",
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "repo",
+        "site"
+      ],
+      "title": "Testing of detection tools for AI-generated text | International Journal for Educational Integrity | Springer Nature Link",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
+      "byte_count": 454829,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 2.548,
+      "error": null,
+      "final_url": "https://www.nature.com/articles/s41598-023-38964-3",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 4,
+      "normalized_url": "https://doi.org/10.1038/s41598-023-38964-3",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Perception, performance, and detectability of conversational artificial intelligence across 32 university courses | Scientific Reports",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
       "byte_count": 5799,
       "classes": [
         "U1",
         "U3"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.359,
+      "elapsed_s": 0.733,
       "error": null,
       "final_url": "https://journals.sagepub.com/doi/full/10.1089/big.2016.0047",
       "layer2b": "NOT-HELD",
@@ -2489,6 +3307,7 @@
         "works/2026-07-02-taxonomy-on-trial/README.md",
         "works/2026-07-02-taxonomy-on-trial/data.json"
       ],
+      "presentation": "linked",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -2504,16 +3323,16 @@
       ]
     },
     {
-      "byte_count": 986312,
+      "byte_count": null,
       "classes": [
         "U3"
       ],
-      "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 1.471,
-      "error": null,
-      "final_url": "https://www.cambridge.org/core/journals/political-analysis/article/what-the-numbers-say-a-digitbased-test-for-election-fraud/AD86EEBC2F199E2C8A2FD36BD3799DF9",
+      "content_type": null,
+      "elapsed_s": 30.741,
+      "error": "HTTPSConnectionPool(host='www.cambridge.org', port=443): Read timed out. (read timeout=25)",
+      "final_url": null,
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
-      "n_redirects": 2,
+      "n_redirects": null,
       "normalized_url": "https://doi.org/10.1093/pan/mps003",
       "not_a_locator": false,
       "paths": [
@@ -2521,15 +3340,22 @@
         "works/2026-07-02-standing-docket/README.md",
         "works/2026-07-02-standing-docket/runner.py"
       ],
-      "second_vantage": null,
+      "presentation": "displayed-only",
+      "second_vantage": {
+        "agrees_with_primary": true,
+        "error": "HTTPSConnectionPool(host='www.cambridge.org', port=443): Read timed out. (read timeout=25)",
+        "method": "HEAD",
+        "status": null,
+        "verdict": "NETFAIL"
+      },
       "self": false,
-      "status": 200,
+      "status": null,
       "tiers": [
         "repo",
         "site"
       ],
-      "title": "What the Numbers Say: A Digit-Based Test for Election Fraud | Political Analysis | Cambridge Core",
-      "verdict": "OK",
+      "title": null,
+      "verdict": "NETFAIL",
       "works": [
         "2026-07-01-digit-mirror",
         "2026-07-02-standing-docket"
@@ -2541,7 +3367,7 @@
         "U3"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.633,
+      "elapsed_s": 0.678,
       "error": null,
       "final_url": "https://associationofanaesthetists-publications.onlinelibrary.wiley.com/doi/10.1111/anae.13938",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2551,6 +3377,7 @@
       "paths": [
         "works/2026-07-01-plausibility-engine/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -2569,7 +3396,7 @@
         "U3"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.407,
+      "elapsed_s": 0.546,
       "error": null,
       "final_url": "https://associationofanaesthetists-publications.onlinelibrary.wiley.com/doi/10.1111/anae.13962",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2581,6 +3408,7 @@
         "works/2026-07-02-taxonomy-on-trial/README.md",
         "works/2026-07-02-taxonomy-on-trial/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -2602,7 +3430,7 @@
         "U3"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.353,
+      "elapsed_s": 0.553,
       "error": null,
       "final_url": "https://www.science.org/doi/10.1126/sciadv.aao5580",
       "layer2b": "NOT-HELD",
@@ -2615,6 +3443,7 @@
         "works/2026-07-02-taxonomy-on-trial/README.md",
         "works/2026-07-02-taxonomy-on-trial/data.json"
       ],
+      "presentation": "linked",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -2635,7 +3464,7 @@
         "U3"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.377,
+      "elapsed_s": 0.39,
       "error": null,
       "final_url": "https://www.science.org/doi/10.1126/sciadv.adt3813",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2645,6 +3474,7 @@
       "paths": [
         "works/2026-07-26-unable-to-ring-its-own-bell/VERIFICATION.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -2658,12 +3488,41 @@
       ]
     },
     {
-      "byte_count": 252618,
+      "byte_count": 502671,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 1.124,
+      "error": null,
+      "final_url": "https://link.springer.com/article/10.1186/s41239-024-00487-w",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 2,
+      "normalized_url": "https://doi.org/10.1186/s41239-024-00487-w",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Simple techniques to bypass GenAI text detectors: implications for inclusive education | International Journal of Educational Technology in Higher Education | Springer Nature Link",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
+      "byte_count": 253322,
       "classes": [
         "U3"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.63,
+      "elapsed_s": 0.985,
       "error": null,
       "final_url": "https://www.surveypractice.org/article/89062-so-you-want-to-survey-a-state-legislator-call-me-maybe",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2675,6 +3534,7 @@
         "works/2026-07-02-taxonomy-on-trial/README.md",
         "works/2026-07-02-taxonomy-on-trial/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2695,7 +3555,7 @@
         "U3"
       ],
       "content_type": "text/html;charset=utf-8",
-      "elapsed_s": 0.182,
+      "elapsed_s": 0.372,
       "error": null,
       "final_url": "https://doi.org/10.3030/101135953",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2703,27 +3563,28 @@
       "normalized_url": "https://doi.org/10.3030/101135953",
       "not_a_locator": false,
       "paths": [
-        "works/2026-07-01-fairness-trap/work.astro"
+        "works/2026-07-26-unable-to-ring-its-own-bell/VERIFICATION-2026-08-04.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 404,
       "tiers": [
-        "site"
+        "repo"
       ],
       "title": "Error: DOI Not Found",
       "verdict": "GONE",
       "works": [
-        "2026-07-01-fairness-trap"
+        "2026-07-26-unable-to-ring-its-own-bell"
       ]
     },
     {
-      "byte_count": 245857,
+      "byte_count": 246192,
       "classes": [
         "U3"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 2.717,
+      "elapsed_s": 3.291,
       "error": null,
       "final_url": "https://www.jabfm.org/content/32/5/732",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2735,6 +3596,7 @@
         "works/2026-07-02-taxonomy-on-trial/README.md",
         "works/2026-07-02-taxonomy-on-trial/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2755,7 +3617,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.64,
+      "elapsed_s": 0.721,
       "error": null,
       "final_url": "https://peerj.com/articles/cs-2953",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2765,6 +3627,7 @@
       "paths": [
         "works/2026-07-01-calibration-gap/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -2778,12 +3641,12 @@
       ]
     },
     {
-      "byte_count": 514485,
+      "byte_count": 514487,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.281,
+      "elapsed_s": 0.295,
       "error": null,
       "final_url": "https://en.wikipedia.org/wiki/Benford%27s_law",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2793,6 +3656,7 @@
       "paths": [
         "works/2026-07-01-naive-detector/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2806,12 +3670,12 @@
       ]
     },
     {
-      "byte_count": 145890,
+      "byte_count": 145827,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.082,
+      "elapsed_s": 0.094,
       "error": null,
       "final_url": "https://en.wikipedia.org/wiki/Power_usage_effectiveness",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2821,6 +3685,7 @@
       "paths": [
         "works/2026-07-09-the-floor/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2834,13 +3699,13 @@
       ]
     },
     {
-      "byte_count": 1533616,
+      "byte_count": 1535174,
       "classes": [
         "U1",
         "U2"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 1.206,
+      "elapsed_s": 1.817,
       "error": null,
       "final_url": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2850,6 +3715,7 @@
       "paths": [
         "works/2026-07-01-fairness-trap/work.astro"
       ],
+      "presentation": "linked",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2863,17 +3729,41 @@
       ]
     },
     {
-      "byte_count": 830,
+      "byte_count": 28181,
       "classes": [
         "U1"
       ],
-      "content_type": "application/atom+xml; charset=utf-8",
-      "elapsed_s": 0.598,
+      "content_type": "text/html;charset=UTF-8",
+      "elapsed_s": 1.097,
       "error": null,
-      "final_url": "https://export.arxiv.org/api/query",
+      "final_url": "https://europepmc.org/article/PMC/12453642",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
-      "n_redirects": 0,
+      "n_redirects": 1,
+      "normalized_url": "https://europepmc.org/articles/PMC12453642",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Europe PMC",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
+      "classes": [
+        "U1"
+      ],
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
       "normalized_url": "https://export.arxiv.org/api/query",
+      "not_a_document_rule": "QUERY-ENDPOINT",
       "not_a_locator": false,
       "paths": [
         "works/2026-07-25-no-signal-to-extend/PREREGISTRATION.md",
@@ -2881,26 +3771,27 @@
         "works/2026-07-25-no-signal-to-extend/SOURCES.md",
         "works/2026-07-26-one-line-for-ten-thousand/BACK-CHANNEL.md"
       ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
       "second_vantage": null,
       "self": false,
-      "status": 400,
+      "soft_gone_host_flag": false,
       "tiers": [
         "repo"
       ],
-      "title": "arXiv Search Results",
-      "verdict": "GONE",
+      "verdict": "NOT-A-DOCUMENT",
       "works": [
         "2026-07-25-no-signal-to-extend",
         "2026-07-26-one-line-for-ten-thousand"
       ]
     },
     {
-      "byte_count": 252546,
+      "byte_count": 326833,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.747,
+      "elapsed_s": 0.728,
       "error": null,
       "final_url": "https://frankbueltge.de/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2911,6 +3802,7 @@
         "works/2026-07-26-one-line-for-ten-thousand/README.md",
         "works/2026-07-26-one-line-for-ten-thousand/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": true,
       "status": 200,
@@ -2924,12 +3816,12 @@
       ]
     },
     {
-      "byte_count": 43494,
+      "byte_count": 395824,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.176,
+      "elapsed_s": 0.422,
       "error": null,
       "final_url": "https://frankbueltge.de/field/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2939,14 +3831,63 @@
       "paths": [
         "works/2026-07-01-calibration-gap/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": true,
       "status": 200,
       "tiers": [
         "site"
       ],
-      "title": "Field \u2014 instrument record \u00b7 Unable to Ring Its Own Bell | Frank B\u00fcltge",
+      "title": "Field \u2014 the instrument dossier \u00b7 Meridian | Frank B\u00fcltge",
       "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
+      "classes": [
+        "U1"
+      ],
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "normalized_url": "https://frankbueltge.de/field/werke/2026-07-01-calibration-gap/",
+      "not_a_document_rule": "BASE-PATH",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/VERIFICATION.md"
+      ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
+      "second_vantage": null,
+      "self": true,
+      "soft_gone_host_flag": false,
+      "tiers": [
+        "repo"
+      ],
+      "verdict": "NOT-A-DOCUMENT",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
+      "classes": [
+        "U1"
+      ],
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "normalized_url": "https://frankbueltge.de/field/werke/{slug}/",
+      "not_a_document_rule": "BASE-PATH",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/SKEPTIC.md"
+      ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
+      "second_vantage": null,
+      "self": true,
+      "soft_gone_host_flag": false,
+      "tiers": [
+        "repo"
+      ],
+      "verdict": "NOT-A-DOCUMENT",
       "works": [
         "2026-07-01-calibration-gap"
       ]
@@ -2957,7 +3898,7 @@
         "U1"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 0.985,
+      "elapsed_s": 1.068,
       "error": null,
       "final_url": "https://ghgprotocol.org/sites/default/files/2023-03/Scope%202%20Guidance.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -2968,6 +3909,7 @@
         "works/2026-07-06-two-meters/SOURCES.md",
         "works/2026-07-06-two-meters/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -2992,6 +3934,7 @@
         "works/2026-07-26-one-line-for-ten-thousand/METHOD.md",
         "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION.md"
       ],
+      "presentation": "displayed-only",
       "primary_observation": null,
       "second_vantage": null,
       "self": false,
@@ -3010,7 +3953,210 @@
         "U1"
       ],
       "content_type": "application/json; charset=utf-8",
-      "elapsed_s": 0.362,
+      "elapsed_s": 0.392,
+      "error": null,
+      "final_url": "https://github.com/AI-in-Health/BioMedArena",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/AI-in-Health/BioMedArena",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-08-03-where-the-reader-declines/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-08-03-where-the-reader-declines"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.359,
+      "error": null,
+      "final_url": "https://github.com/Ewendawi/LLaMEA-BO",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/Ewendawi/LLaMEA-BO",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-08-03-where-the-reader-declines/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-08-03-where-the-reader-declines"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.371,
+      "error": null,
+      "final_url": "https://github.com/HKUDS/DeepInnovator",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/HKUDS/DeepInnovator",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-08-03-where-the-reader-declines/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-08-03-where-the-reader-declines"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.363,
+      "error": null,
+      "final_url": "https://github.com/Lossfunk/ai-scientist-artefacts-v1",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/Lossfunk/ai-scientist-artefacts-v1",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-08-03-where-the-reader-declines/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-08-03-where-the-reader-declines"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.336,
+      "error": null,
+      "final_url": "https://github.com/SakanaAI/AI-Scientist",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/SakanaAI/AI-Scientist",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-08-03-where-the-reader-declines/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-08-03-where-the-reader-declines"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.375,
+      "error": null,
+      "final_url": "https://github.com/Singularity0104/equilibrium-planner",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/Singularity0104/equilibrium-planner",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-08-03-where-the-reader-declines/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-08-03-where-the-reader-declines"
+      ]
+    },
+    {
+      "byte_count": 249,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.22,
+      "error": null,
+      "final_url": "https://github.com/aixiv-org",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/aixiv-org",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-08-03-where-the-reader-declines/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-08-03-where-the-reader-declines"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.389,
       "error": null,
       "final_url": "https://github.com/berenslab/iclr-dataset",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3022,6 +4168,7 @@
         "works/2026-07-17-comparable-with-humans/data.json",
         "works/2026-07-17-comparable-with-humans/derive_hist.py"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -3041,7 +4188,7 @@
         "U1"
       ],
       "content_type": "application/json; charset=utf-8",
-      "elapsed_s": 0.345,
+      "elapsed_s": 0.404,
       "error": null,
       "final_url": "https://github.com/berenslab/llm-excess-vocab",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3051,6 +4198,7 @@
       "paths": [
         "works/2026-07-25-no-signal-to-extend/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -3069,7 +4217,7 @@
         "U1"
       ],
       "content_type": "application/json; charset=utf-8",
-      "elapsed_s": 0.336,
+      "elapsed_s": 0.37,
       "error": null,
       "final_url": "https://github.com/c2pa-org/public-testfiles",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3079,6 +4227,7 @@
       "paths": [
         "works/2026-07-11-split-seal/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -3097,7 +4246,7 @@
         "U1"
       ],
       "content_type": "application/json; charset=utf-8",
-      "elapsed_s": 0.314,
+      "elapsed_s": 0.4,
       "error": null,
       "final_url": "https://github.com/c2pa-org/public-testfiles/issues/27",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3107,6 +4256,7 @@
       "paths": [
         "works/2026-07-11-split-seal/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -3125,7 +4275,7 @@
         "U1"
       ],
       "content_type": "application/json; charset=utf-8",
-      "elapsed_s": 0.37,
+      "elapsed_s": 0.39,
       "error": null,
       "final_url": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3135,6 +4285,7 @@
       "paths": [
         "works/2026-07-11-split-seal/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -3153,7 +4304,7 @@
         "U1"
       ],
       "content_type": "application/json; charset=utf-8",
-      "elapsed_s": 0.364,
+      "elapsed_s": 0.392,
       "error": null,
       "final_url": "https://github.com/contentauth/c2pa-python",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3163,6 +4314,7 @@
       "paths": [
         "works/2026-07-11-split-seal/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -3181,7 +4333,7 @@
         "U1"
       ],
       "content_type": "application/json; charset=utf-8",
-      "elapsed_s": 0.322,
+      "elapsed_s": 0.384,
       "error": null,
       "final_url": "https://github.com/contentauth/c2pa-rs",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3191,6 +4343,7 @@
       "paths": [
         "works/2026-07-11-split-seal/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -3209,7 +4362,7 @@
         "U1"
       ],
       "content_type": "application/json; charset=utf-8",
-      "elapsed_s": 0.348,
+      "elapsed_s": 0.361,
       "error": null,
       "final_url": "https://github.com/contentauth/c2patool",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3219,6 +4372,7 @@
       "paths": [
         "works/2026-07-11-split-seal/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -3237,7 +4391,7 @@
         "U1"
       ],
       "content_type": "application/json; charset=utf-8",
-      "elapsed_s": 0.404,
+      "elapsed_s": 0.341,
       "error": null,
       "final_url": "https://github.com/frankbueltge/dataset-hub.git",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3247,6 +4401,7 @@
       "paths": [
         "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -3260,40 +4415,36 @@
       ]
     },
     {
-      "byte_count": 138,
       "classes": [
         "U1"
       ],
-      "content_type": "application/json; charset=utf-8",
-      "elapsed_s": 0.345,
-      "error": null,
-      "final_url": "https://github.com/frankbueltge/dataset-hub/blob/a7024008ec337118b2aeebb87065ded83ed23413/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
-      "n_redirects": 0,
       "normalized_url": "https://github.com/frankbueltge/dataset-hub/blob/a7024008ec337118b2aeebb87065ded83ed23413/",
+      "not_a_document_rule": "BASE-PATH",
       "not_a_locator": false,
       "paths": [
         "works/2026-07-26-one-line-for-ten-thousand/SOURCES.md"
       ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
       "second_vantage": null,
       "self": false,
-      "status": 400,
+      "soft_gone_host_flag": false,
       "tiers": [
         "repo"
       ],
-      "title": null,
-      "verdict": "GONE",
+      "verdict": "NOT-A-DOCUMENT",
       "works": [
         "2026-07-26-one-line-for-ten-thousand"
       ]
     },
     {
-      "byte_count": 297454,
+      "byte_count": 286382,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 1.606,
+      "elapsed_s": 0.87,
       "error": null,
       "final_url": "https://github.com/frankbueltge/field-research",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3305,6 +4456,7 @@
         "works/2026-07-01-digit-mirror/work.astro",
         "works/2026-07-01-naive-detector/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": true,
       "status": 200,
@@ -3320,13 +4472,42 @@
       ]
     },
     {
+      "byte_count": 356267,
+      "classes": [
+        "U2"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.844,
+      "error": null,
+      "final_url": "https://github.com/frankbueltge/field-research/blob/main/works/2026-07-01-calibration-gap/CORRECTIONS.md",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/frankbueltge/field-research/blob/main/works/2026-07-01-calibration-gap/CORRECTIONS.md",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/work.astro"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": true,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "field-research/works/2026-07-01-calibration-gap/CORRECTIONS.md at main \u00b7 frankbueltge/field-research \u00b7 GitHub",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
       "byte_count": 378,
       "classes": [
         "U1",
         "U2"
       ],
       "content_type": "application/json; charset=utf-8",
-      "elapsed_s": 0.218,
+      "elapsed_s": 0.203,
       "error": null,
       "final_url": "https://github.com/microsoft/MMLU-CF",
       "layer2b": "NOT-HELD",
@@ -3338,6 +4519,7 @@
         "works/2026-07-02-taxonomy-on-trial/README.md",
         "works/2026-07-02-taxonomy-on-trial/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -3359,7 +4541,7 @@
         "U2"
       ],
       "content_type": "application/json; charset=utf-8",
-      "elapsed_s": 0.316,
+      "elapsed_s": 0.364,
       "error": null,
       "final_url": "https://github.com/propublica/compas-analysis",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3369,6 +4551,7 @@
       "paths": [
         "works/2026-07-01-fairness-trap/work.astro"
       ],
+      "presentation": "linked",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -3382,12 +4565,181 @@
       ]
     },
     {
-      "byte_count": 73651,
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.374,
+      "error": null,
+      "final_url": "https://github.com/rexera/CLASE",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/rexera/CLASE",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-08-03-where-the-reader-declines/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-08-03-where-the-reader-declines"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.373,
+      "error": null,
+      "final_url": "https://github.com/uni-medical/MedProbeBench",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/uni-medical/MedProbeBench",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-08-03-where-the-reader-declines/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-08-03-where-the-reader-declines"
+      ]
+    },
+    {
+      "byte_count": 378,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/json; charset=utf-8",
+      "elapsed_s": 0.352,
+      "error": null,
+      "final_url": "https://github.com/westlake-autolab/BioKGBench",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://github.com/westlake-autolab/BioKGBench",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-08-03-where-the-reader-declines/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-08-03-where-the-reader-declines"
+      ]
+    },
+    {
+      "byte_count": 293132,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.645,
+      "error": null,
+      "final_url": "https://gptzero.me/",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://gptzero.me/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-5 & Gemini",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
+      "classes": [
+        "U1"
+      ],
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "normalized_url": "https://gptzero.me/news/gptzero-vs-copyleaks-vs-originality/",
+      "not_a_document_rule": "BASE-PATH",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
+      "second_vantage": null,
+      "self": false,
+      "soft_gone_host_flag": false,
+      "tiers": [
+        "site"
+      ],
+      "verdict": "NOT-A-DOCUMENT",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
+      "byte_count": 146725,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.136,
+      "error": null,
+      "final_url": "https://gptzero.me/technology",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://gptzero.me/technology",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "GPTZero Technology - AI Detection",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
+      "byte_count": 73986,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.86,
+      "elapsed_s": 0.902,
       "error": null,
       "final_url": "https://hackerfactor.com/blog/index.php?/archives/1013-C2PAs-Worst-Case-Scenario.html",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3397,6 +4749,7 @@
       "paths": [
         "works/2026-07-01-provenance-horizon/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -3410,7 +4763,7 @@
       ]
     },
     {
-      "byte_count": 47628,
+      "byte_count": 47963,
       "classes": [
         "U2"
       ],
@@ -3425,6 +4778,7 @@
       "paths": [
         "works/2026-07-01-provenance-horizon/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -3443,7 +4797,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.792,
+      "elapsed_s": 1.19,
       "error": null,
       "final_url": "https://harvardlawreview.org/print/vol-130/state-v-loomis/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3454,6 +4808,7 @@
         "works/2026-07-05-backward-regime-test/SOURCES.md",
         "works/2026-07-05-backward-regime-test/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -3468,41 +4823,37 @@
       ]
     },
     {
-      "byte_count": 97932,
       "classes": [
         "U1"
       ],
-      "content_type": "text/html",
-      "elapsed_s": 0.595,
-      "error": null,
-      "final_url": "https://info.arxiv.org/help/api/tou.html",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
-      "n_redirects": 0,
       "normalized_url": "https://info.arxiv.org/help/api/tou.html",
+      "not_a_document_rule": "QUERY-ENDPOINT",
       "not_a_locator": false,
       "paths": [
         "works/2026-07-25-no-signal-to-extend/PREREGISTRATION.md",
         "works/2026-07-25-no-signal-to-extend/SOURCES.md"
       ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
       "second_vantage": null,
       "self": false,
-      "status": 200,
+      "soft_gone_host_flag": false,
       "tiers": [
         "repo"
       ],
-      "title": "Terms of Use for arXiv APIs - arXiv info",
-      "verdict": "OK",
+      "verdict": "NOT-A-DOCUMENT",
       "works": [
         "2026-07-25-no-signal-to-extend"
       ]
     },
     {
-      "byte_count": 119453,
+      "byte_count": 119411,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.854,
+      "elapsed_s": 0.713,
       "error": null,
       "final_url": "https://jaapl.org/content/39/1/6",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3512,6 +4863,7 @@
       "paths": [
         "works/2026-07-01-the-edition/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -3530,7 +4882,7 @@
         "U2"
       ],
       "content_type": null,
-      "elapsed_s": 6.425,
+      "elapsed_s": 6.443,
       "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
       "final_url": null,
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3540,6 +4892,7 @@
       "paths": [
         "works/2026-07-01-digit-mirror/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": {
         "agrees_with_primary": true,
         "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
@@ -3559,12 +4912,41 @@
       ]
     },
     {
-      "byte_count": 307603,
+      "byte_count": 874,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.648,
+      "error": null,
+      "final_url": "https://khanhthanhdev.github.io/prism-page/",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://khanhthanhdev.github.io/prism-page/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-08-03-where-the-reader-declines/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "Redirecting to PRISM Benchmark\u2026",
+      "verdict": "OK",
+      "works": [
+        "2026-08-03-where-the-reader-declines"
+      ]
+    },
+    {
+      "byte_count": 308007,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 1.126,
+      "elapsed_s": 2.882,
       "error": null,
       "final_url": "https://www.lrb.co.uk/the-paper/v28/n16/ian-hacking/making-up-people",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3574,6 +4956,7 @@
       "paths": [
         "works/2026-07-01-the-edition/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -3592,7 +4975,7 @@
         "U2"
       ],
       "content_type": null,
-      "elapsed_s": 0.496,
+      "elapsed_s": 0.497,
       "error": "HTTPSConnectionPool(host='marcellodibello.com', port=443): Max retries exceeded with url: /algorithmicfairness/handout/impossibility.html (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'marcellodibello.com'. (_ssl.c:1016)\")))",
       "final_url": null,
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3602,6 +4985,7 @@
       "paths": [
         "works/2026-07-01-fairness-trap/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": {
         "agrees_with_primary": true,
         "error": "HTTPSConnectionPool(host='marcellodibello.com', port=443): Max retries exceeded with url: /algorithmicfairness/handout/impossibility.html (Caused by SSLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'marcellodibello.com'. (_ssl.c:1016)\")))",
@@ -3621,40 +5005,36 @@
       ]
     },
     {
-      "byte_count": 128140,
       "classes": [
         "U1"
       ],
-      "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.738,
-      "error": null,
-      "final_url": "https://metricgate.com/docs/benford-law-analysis/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
-      "n_redirects": 0,
       "normalized_url": "https://metricgate.com/docs/benford-law-analysis/",
+      "not_a_document_rule": "BASE-PATH",
       "not_a_locator": false,
       "paths": [
         "works/2026-07-02-standing-docket/README.md"
       ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
       "second_vantage": null,
       "self": false,
-      "status": 200,
+      "soft_gone_host_flag": true,
       "tiers": [
         "repo"
       ],
-      "title": "Benford's Law First-Digit Analysis Calculator | MetricGate",
-      "verdict": "UNRELIABLE-OK",
+      "verdict": "NOT-A-DOCUMENT",
       "works": [
         "2026-07-02-standing-docket"
       ]
     },
     {
-      "byte_count": 189914,
+      "byte_count": 189478,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 1.638,
+      "elapsed_s": 4.941,
       "error": null,
       "final_url": "https://minnlawyer.com/2026/02/13/u-of-m-ai-cheating-expulsion-upheld-appeal/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3664,6 +5044,7 @@
       "paths": [
         "works/2026-07-01-calibration-gap/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -3677,12 +5058,12 @@
       ]
     },
     {
-      "byte_count": 224888,
+      "byte_count": 226089,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 1.723,
+      "elapsed_s": 1.421,
       "error": null,
       "final_url": "https://www.motherjones.com/politics/2013/05/psychiatry-allen-frances-saving-normal-dsm-5-controversy/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3692,6 +5073,7 @@
       "paths": [
         "works/2026-07-01-the-edition/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -3705,12 +5087,12 @@
       ]
     },
     {
-      "byte_count": 90804,
+      "byte_count": 91682,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 1.32,
+      "elapsed_s": 1.255,
       "error": null,
       "final_url": "https://www.nber.org/papers/w30768",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3720,6 +5102,7 @@
       "paths": [
         "works/2026-07-01-digit-mirror/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -3733,12 +5116,12 @@
       ]
     },
     {
-      "byte_count": 46053,
+      "byte_count": 46019,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 1.848,
+      "elapsed_s": 2.043,
       "error": null,
       "final_url": "https://www.ncbi.nlm.nih.gov/books/NBK519712/table/ch3.t5/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3748,6 +5131,7 @@
       "paths": [
         "works/2026-07-01-the-edition/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -3766,7 +5150,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 1.265,
+      "elapsed_s": 1.348,
       "error": null,
       "final_url": "https://noclimateresultsfound.com/report/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3776,6 +5160,7 @@
       "paths": [
         "works/2026-07-09-the-floor/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -3794,7 +5179,7 @@
         "U1"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 1.798,
+      "elapsed_s": 1.532,
       "error": null,
       "final_url": "https://noclimateresultsfound.com/wp-content/uploads/2025/07/Kairos_NCRFGoogleReport_FINAL.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3805,6 +5190,7 @@
         "works/2026-07-09-the-floor/SOURCES.md",
         "works/2026-07-09-the-floor/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -3819,12 +5205,12 @@
       ]
     },
     {
-      "byte_count": 136563,
+      "byte_count": 136987,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 2.352,
+      "elapsed_s": 1.786,
       "error": null,
       "final_url": "https://www.ohchr.org:443/en/ohchr_homepage",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3834,6 +5220,7 @@
       "paths": [
         "works/2026-07-24-where-the-chain-breaks/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -3847,12 +5234,41 @@
       ]
     },
     {
-      "byte_count": 188901,
+      "byte_count": 164430,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.618,
+      "error": null,
+      "final_url": "https://originality.ai/blog/ai-accuracy",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://originality.ai/blog/ai-accuracy",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "We Have 99% Accuracy in Detecting AI: Originality.ai Study \u2013 Originality.AI",
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
+      "byte_count": 188417,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.754,
+      "elapsed_s": 0.988,
       "error": null,
       "final_url": "https://partnershiponai.org/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3862,6 +5278,7 @@
       "paths": [
         "works/2026-07-01-fairness-trap/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -3880,7 +5297,7 @@
         "U1"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 0.455,
+      "elapsed_s": 0.391,
       "error": null,
       "final_url": "https://partnershiponai.org/wp-content/uploads/2021/08/Report-on-Algorithmic-Risk-Assessment-Tools.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3890,6 +5307,7 @@
       "paths": [
         "works/2026-07-01-fairness-trap/work.astro"
       ],
+      "presentation": "linked",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -3908,7 +5326,7 @@
         "U2"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.75,
+      "elapsed_s": 0.748,
       "error": null,
       "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4695779/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3918,6 +5336,7 @@
       "paths": [
         "works/2026-07-01-the-edition/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -3936,7 +5355,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 1.038,
+      "elapsed_s": 0.997,
       "error": null,
       "final_url": "https://policyreview.info/articles/news/big-techs-2025-sustainability-reports/2027",
       "layer2b": "HELD",
@@ -3947,6 +5366,7 @@
         "works/2026-07-06-two-meters/SOURCES.md",
         "works/2026-07-06-two-meters/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -3961,12 +5381,12 @@
       ]
     },
     {
-      "byte_count": 130099,
+      "byte_count": 129749,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 1.181,
+      "elapsed_s": 1.597,
       "error": null,
       "final_url": "https://www.propublica.org:443/article/how-we-analyzed-the-compas-recidivism-algorithm",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -3976,6 +5396,7 @@
       "paths": [
         "works/2026-07-01-fairness-trap/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -3989,12 +5410,12 @@
       ]
     },
     {
-      "byte_count": 136408,
+      "byte_count": 136058,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.596,
+      "elapsed_s": 0.182,
       "error": null,
       "final_url": "https://www.propublica.org:443/article/machine-bias-risk-assessments-in-criminal-sentencing",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4004,6 +5425,7 @@
       "paths": [
         "works/2026-07-01-fairness-trap/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4022,7 +5444,7 @@
         "U2"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 1.3,
+      "elapsed_s": 1.317,
       "error": null,
       "final_url": "https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Depression-Bereavement-Exclusion.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4032,6 +5454,7 @@
       "paths": [
         "works/2026-07-01-the-edition/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4050,7 +5473,7 @@
         "U2"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.891,
+      "elapsed_s": 1.102,
       "error": null,
       "final_url": "https://pubmed.ncbi.nlm.nih.gov/25524790/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4060,6 +5483,7 @@
       "paths": [
         "works/2026-07-01-the-edition/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4073,12 +5497,41 @@
       ]
     },
     {
+      "byte_count": 46809,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.584,
+      "error": null,
+      "final_url": "https://qiushisun.github.io/ScienceBoard-Home/",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://qiushisun.github.io/ScienceBoard-Home/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-08-03-where-the-reader-declines/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "ScienceBoard",
+      "verdict": "OK",
+      "works": [
+        "2026-08-03-where-the-reader-declines"
+      ]
+    },
+    {
       "byte_count": 919,
       "classes": [
         "U2"
       ],
       "content_type": "text/html",
-      "elapsed_s": 1.033,
+      "elapsed_s": 1.082,
       "error": null,
       "final_url": "https://www.rand.org:443/pubs/commentary/2025/06/overpromising-on-digital-provenance-and-security.html",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4088,6 +5541,7 @@
       "paths": [
         "works/2026-07-01-provenance-horizon/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -4110,6 +5564,7 @@
       "paths": [
         "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION.md"
       ],
+      "presentation": "displayed-only",
       "primary_observation": null,
       "second_vantage": null,
       "self": false,
@@ -4128,7 +5583,7 @@
         "U1"
       ],
       "content_type": "application/octet-stream",
-      "elapsed_s": 1.316,
+      "elapsed_s": 1.485,
       "error": null,
       "final_url": "https://raw.githubusercontent.com/berenslab/iclr-dataset/main/data/iclr24v2.parquet",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4139,6 +5594,7 @@
         "works/2026-07-17-comparable-with-humans/README.md",
         "works/2026-07-17-comparable-with-humans/run_spike.py"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4157,7 +5613,7 @@
         "U1"
       ],
       "content_type": "text/plain; charset=utf-8",
-      "elapsed_s": 0.108,
+      "elapsed_s": 0.114,
       "error": null,
       "final_url": "https://raw.githubusercontent.com/berenslab/llm-excess-vocab/main/results/excess_words.csv",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4167,6 +5623,7 @@
       "paths": [
         "works/2026-07-25-no-signal-to-extend/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4180,31 +5637,27 @@
       ]
     },
     {
-      "byte_count": 14,
       "classes": [
         "U1",
         "U2"
       ],
-      "content_type": "text/plain; charset=utf-8",
-      "elapsed_s": 0.07,
-      "error": null,
-      "final_url": "https://raw.githubusercontent.com/frankbueltge/dataset-hub/a7024008ec337118b2aeebb87065ded83ed23413/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
-      "n_redirects": 0,
       "normalized_url": "https://raw.githubusercontent.com/frankbueltge/dataset-hub/a7024008ec337118b2aeebb87065ded83ed23413/",
+      "not_a_document_rule": "BASE-PATH",
       "not_a_locator": false,
       "paths": [
         "works/2026-07-26-one-line-for-ten-thousand/SOURCES.md",
         "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION-round2.md"
       ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
       "second_vantage": null,
       "self": false,
-      "status": 404,
+      "soft_gone_host_flag": false,
       "tiers": [
         "repo"
       ],
-      "title": null,
-      "verdict": "GONE",
+      "verdict": "NOT-A-DOCUMENT",
       "works": [
         "2026-07-26-one-line-for-ten-thousand"
       ]
@@ -4215,7 +5668,7 @@
         "U2"
       ],
       "content_type": "text/html;charset=utf-8",
-      "elapsed_s": 1.202,
+      "elapsed_s": 1.583,
       "error": null,
       "final_url": "https://www.reuters.com/article/world/fact-check-deviation-from-benfords-law-does-not-prove-election-fraud-idUSKBN27Q3A9",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4225,6 +5678,7 @@
       "paths": [
         "works/2026-07-01-naive-detector/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 401,
@@ -4232,9 +5686,38 @@
         "site"
       ],
       "title": "reuters.com",
-      "verdict": "GONE",
+      "verdict": "BLOCKED",
       "works": [
         "2026-07-01-naive-detector"
+      ]
+    },
+    {
+      "byte_count": 16722,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html; charset=utf-8",
+      "elapsed_s": 0.587,
+      "error": null,
+      "final_url": "https://reveal-dataset.github.io/",
+      "layer2b": "NOT-HELD",
+      "n_redirects": 0,
+      "normalized_url": "https://reveal-dataset.github.io/",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-08-03-where-the-reader-declines/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": "REVEAL",
+      "verdict": "OK",
+      "works": [
+        "2026-08-03-where-the-reader-declines"
       ]
     },
     {
@@ -4243,7 +5726,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.823,
+      "elapsed_s": 0.722,
       "error": null,
       "final_url": "https://spec.c2pa.org/public-testfiles/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4253,6 +5736,7 @@
       "paths": [
         "works/2026-07-11-split-seal/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4271,7 +5755,7 @@
         "U2"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.113,
+      "elapsed_s": 0.154,
       "error": null,
       "final_url": "https://spec.c2pa.org/specifications/specifications/2.4/security/Security_Considerations.html",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4281,6 +5765,7 @@
       "paths": [
         "works/2026-07-01-provenance-horizon/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4294,12 +5779,41 @@
       ]
     },
     {
+      "byte_count": 273577,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "application/pdf",
+      "elapsed_s": 1.091,
+      "error": null,
+      "final_url": "https://storage.courtlistener.com/recap/gov.uscourts.ctd.163407/gov.uscourts.ctd.163407.89.0.pdf",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://storage.courtlistener.com/recap/gov.uscourts.ctd.163407/gov.uscourts.ctd.163407.89.0.pdf",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 200,
+      "tiers": [
+        "site"
+      ],
+      "title": null,
+      "verdict": "OK",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
       "byte_count": 17898652,
       "classes": [
         "U1"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 1.113,
+      "elapsed_s": 1.057,
       "error": null,
       "final_url": "https://storage.googleapis.com/gweb-mobius-cdn/sustainability/uploads/7f477eb723fe0c23d03f94b90a08882b9f28187d.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4310,6 +5824,7 @@
         "works/2026-07-09-the-floor/SOURCES.md",
         "works/2026-07-09-the-floor/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4329,7 +5844,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.68,
+      "elapsed_s": 1.906,
       "error": null,
       "final_url": "https://sustainability.google/google-2026-environmental-report/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4340,6 +5855,7 @@
         "works/2026-07-09-the-floor/SOURCES.md",
         "works/2026-07-09-the-floor/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4359,7 +5875,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.218,
+      "elapsed_s": 0.321,
       "error": null,
       "final_url": "https://sustainability.google/reports/google-2025-environmental-report/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4370,6 +5886,7 @@
         "works/2026-07-09-the-floor/SOURCES.md",
         "works/2026-07-09-the-floor/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4389,7 +5906,7 @@
         "U2"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 1.727,
+      "elapsed_s": 1.907,
       "error": null,
       "final_url": "https://www.tbray.org/ongoing/When/202x/2025/09/18/C2PA-Investigations",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4399,6 +5916,7 @@
       "paths": [
         "works/2026-07-01-provenance-horizon/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4417,7 +5935,7 @@
         "U2"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 0.711,
+      "elapsed_s": 0.754,
       "error": null,
       "final_url": "https://web.williams.edu/Mathematics/sjmiller/public_html/benfordresources/KossoskyMiller_FinalBenfordAnalysis.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4427,6 +5945,7 @@
       "paths": [
         "works/2026-07-01-naive-detector/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4446,7 +5965,7 @@
         "U2"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 0.761,
+      "elapsed_s": 0.796,
       "error": null,
       "final_url": "https://websites.umich.edu/~wmebane/inapB.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4459,6 +5978,7 @@
         "works/2026-07-02-taxonomy-on-trial/data.json",
         "works/2026-07-05-backward-regime-test/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4475,12 +5995,12 @@
       ]
     },
     {
-      "byte_count": 272112,
+      "byte_count": 273479,
       "classes": [
         "U2"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 1.987,
+      "elapsed_s": 1.639,
       "error": null,
       "final_url": "https://worldprivacyforum.org/posts/privacy-identity-and-trust-in-c2pa/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4490,6 +6010,7 @@
       "paths": [
         "works/2026-07-01-provenance-horizon/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4503,12 +6024,12 @@
       ]
     },
     {
-      "byte_count": 311144,
+      "byte_count": 311285,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.882,
+      "elapsed_s": 0.903,
       "error": null,
       "final_url": "https://www.aafp.org/afp/2014/1115/p690",
       "layer2b": "NOT-HELD",
@@ -4519,6 +6040,7 @@
         "works/2026-07-02-taxonomy-on-trial/README.md",
         "works/2026-07-02-taxonomy-on-trial/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4533,12 +6055,12 @@
       ]
     },
     {
-      "byte_count": 392154,
+      "byte_count": 55,
       "classes": [
         "U1"
       ],
-      "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 1.144,
+      "content_type": "text/html",
+      "elapsed_s": 0.753,
       "error": null,
       "final_url": "https://www.abc.net.au/news/2025-10-09/artificial-intelligence-cheating-australian-catholic-university/105863524",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4548,25 +6070,26 @@
       "paths": [
         "works/2026-07-01-calibration-gap/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
-      "status": 200,
+      "status": 403,
       "tiers": [
         "site"
       ],
-      "title": "University wrongly accuses students of using artificial intelligence to cheat - ABC News",
-      "verdict": "OK",
+      "title": null,
+      "verdict": "BLOCKED",
       "works": [
         "2026-07-01-calibration-gap"
       ]
     },
     {
-      "byte_count": 339346,
+      "byte_count": 339974,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.781,
+      "elapsed_s": 0.918,
       "error": null,
       "final_url": "https://www.brookings.edu/articles/global-energy-demands-within-the-ai-regulatory-landscape/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4576,6 +6099,7 @@
       "paths": [
         "works/2026-07-09-the-floor/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4594,7 +6118,7 @@
         "U1"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 1.102,
+      "elapsed_s": 1.224,
       "error": null,
       "final_url": "https://www.bsfrey.ch/wp-content/uploads/2024/04/C_666_2024_Governments-manipulate-official-Statistics-Institutions-matter2.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4604,6 +6128,7 @@
       "paths": [
         "works/2026-07-02-standing-docket/README.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4611,18 +6136,18 @@
         "repo"
       ],
       "title": null,
-      "verdict": "OK",
+      "verdict": "UNRELIABLE-OK",
       "works": [
         "2026-07-02-standing-docket"
       ]
     },
     {
-      "byte_count": 854878,
+      "byte_count": 854850,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 12.256,
+      "elapsed_s": 18.04,
       "error": null,
       "final_url": "https://www.cambridge.org/core/journals/political-analysis/article/benfords-law-and-the-detection-of-election-fraud/3B1D64E822371C461AF3C61CE91AAF6D",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4633,6 +6158,7 @@
         "works/2026-07-02-standing-docket/README.md",
         "works/2026-07-02-standing-docket/work.astro"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4647,12 +6173,12 @@
       ]
     },
     {
-      "byte_count": 385852,
+      "byte_count": 4839,
       "classes": [
         "U1"
       ],
-      "content_type": "text/html;charset=UTF-8",
-      "elapsed_s": 0.356,
+      "content_type": "text/html; charset=UTF-8",
+      "elapsed_s": 0.499,
       "error": null,
       "final_url": "https://www.computerweekly.com/news/366627215/Google-slams-claims-its-misleading-the-public-with-its-GHG-emissions-data",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4662,16 +6188,41 @@
       "paths": [
         "works/2026-07-09-the-floor/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
-      "status": 200,
+      "status": 403,
       "tiers": [
         "repo"
       ],
-      "title": "Google slams claims it\u2019s \u2018misleading\u2019 the public with its GHG emissions data | Computer Weekly",
-      "verdict": "OK",
+      "title": "Attention Required! | Cloudflare",
+      "verdict": "BLOCKED",
       "works": [
         "2026-07-09-the-floor"
+      ]
+    },
+    {
+      "classes": [
+        "U1"
+      ],
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "normalized_url": "https://www.courtlistener.com/docket/69607031/rignol-v-yale-university/",
+      "not_a_document_rule": "BASE-PATH",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
+      "second_vantage": null,
+      "self": false,
+      "soft_gone_host_flag": false,
+      "tiers": [
+        "site"
+      ],
+      "verdict": "NOT-A-DOCUMENT",
+      "works": [
+        "2026-07-01-calibration-gap"
       ]
     },
     {
@@ -4680,7 +6231,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.515,
+      "elapsed_s": 1.239,
       "error": null,
       "final_url": "https://www.datacenterdynamics.com/en/news/google-data-center-power-use-up-27-emissions-down-17-report",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4690,6 +6241,7 @@
       "paths": [
         "works/2026-07-09-the-floor/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -4708,7 +6260,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.257,
+      "elapsed_s": 0.323,
       "error": null,
       "final_url": "https://www.datacenterdynamics.com/en/opinions/beyond-pue-rethinking-how-data-center-sustainability-is-measured",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4719,6 +6271,7 @@
         "works/2026-07-09-the-floor/SOURCES.md",
         "works/2026-07-09-the-floor/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -4733,12 +6286,12 @@
       ]
     },
     {
-      "byte_count": 230960,
+      "byte_count": 231350,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.328,
+      "elapsed_s": 0.478,
       "error": null,
       "final_url": "https://www.devsustainability.com/p/data-center-energy-and-ai-in-2025",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4748,6 +6301,7 @@
       "paths": [
         "works/2026-07-09-the-floor/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4761,12 +6315,12 @@
       ]
     },
     {
-      "byte_count": 41677,
+      "byte_count": 41635,
       "classes": [
         "U1"
       ],
       "content_type": "text/html",
-      "elapsed_s": 1.145,
+      "elapsed_s": 1.16,
       "error": null,
       "final_url": "https://embed.documentcloud.org/documents/2998391-ProPublica-Commentary-Final-070616/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4776,6 +6330,7 @@
       "paths": [
         "works/2026-07-01-fairness-trap/work.astro"
       ],
+      "presentation": "linked",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4794,7 +6349,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.763,
+      "elapsed_s": 1.427,
       "error": null,
       "final_url": "https://www.gov.uk/government/calls-for-evidence/use-of-evidence-generated-by-software-in-criminal-proceedings/use-of-evidence-generated-by-software-in-criminal-proceedings-call-for-evidence",
       "layer2b": "NOT-HELD",
@@ -4804,6 +6359,7 @@
       "paths": [
         "works/2026-07-02-taxonomy-on-trial/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4822,7 +6378,7 @@
         "U1"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 1.904,
+      "elapsed_s": 1.769,
       "error": null,
       "final_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4833,6 +6389,7 @@
         "works/2026-07-06-two-meters/SOURCES.md",
         "works/2026-07-06-two-meters/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4847,12 +6404,12 @@
       ]
     },
     {
-      "byte_count": 5472,
+      "byte_count": 5422,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.589,
+      "elapsed_s": 1.313,
       "error": null,
       "final_url": "https://www.kaggle.com/deleted-dataset-version/18354222",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4864,6 +6421,7 @@
         "works/2026-07-26-one-line-for-ten-thousand/SKEPTIC.md",
         "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION-round2.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4877,12 +6435,12 @@
       ]
     },
     {
-      "byte_count": 10223,
+      "byte_count": 10283,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.286,
+      "elapsed_s": 0.505,
       "error": null,
       "final_url": "https://www.kaggle.com/datasets/ireddragonicy/bos-kemdikbud/versions/541",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4893,6 +6451,7 @@
         "works/2026-07-26-one-line-for-ten-thousand/SKEPTIC-round2.md",
         "works/2026-07-26-one-line-for-ten-thousand/VERIFICATION-round2.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4911,7 +6470,7 @@
         "U1"
       ],
       "content_type": "text/html;charset=utf-8",
-      "elapsed_s": 0.776,
+      "elapsed_s": 0.779,
       "error": null,
       "final_url": "https://www.legislation.gov.uk/ukpga/2024/14/introduction/enacted",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4921,6 +6480,7 @@
       "paths": [
         "works/2026-07-05-backward-regime-test/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4939,7 +6499,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.919,
+      "elapsed_s": 0.798,
       "error": null,
       "final_url": "https://www.marcellodibello.com/algorithmicfairness/handout/impossibility.html",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -4949,6 +6509,7 @@
       "paths": [
         "works/2026-07-01-fairness-trap/work.astro"
       ],
+      "presentation": "linked",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -4962,31 +6523,27 @@
       ]
     },
     {
-      "byte_count": 46053,
       "classes": [
         "U1"
       ],
-      "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 1.111,
-      "error": null,
-      "final_url": "https://www.ncbi.nlm.nih.gov/books/NBK519712/table/ch3.t5/",
-      "layer2b": "NOT-HELD",
-      "n_redirects": 0,
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
       "normalized_url": "https://www.ncbi.nlm.nih.gov/books/NBK519712/table/ch3.t5/",
+      "not_a_document_rule": "BASE-PATH",
       "not_a_locator": false,
       "paths": [
         "works/2026-07-02-taxonomy-on-trial/README.md",
         "works/2026-07-02-taxonomy-on-trial/data.json"
       ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
       "second_vantage": null,
       "self": false,
-      "status": 200,
+      "soft_gone_host_flag": false,
       "tiers": [
         "repo",
         "site"
       ],
-      "title": "Table 9, DSM-IV to DSM-5 Major Depressive Episode/Disorder Comparison - DSM-5 Changes - NCBI Bookshelf",
-      "verdict": "OK",
+      "verdict": "NOT-A-DOCUMENT",
       "works": [
         "2026-07-02-taxonomy-on-trial"
       ]
@@ -4997,7 +6554,7 @@
         "U1"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 0.726,
+      "elapsed_s": 0.904,
       "error": null,
       "final_url": "https://www.ohchr.org/sites/default/files/2024-01/OHCHR_BerkeleyProtocol.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -5008,6 +6565,7 @@
         "works/2026-07-24-where-the-chain-breaks/SOURCES.md",
         "works/2026-07-24-where-the-chain-breaks/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -5022,102 +6580,90 @@
       ]
     },
     {
-      "byte_count": 38901,
       "classes": [
         "U1"
       ],
-      "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 1.076,
-      "error": null,
-      "final_url": "https://www.oiahe.org.uk/resources-and-publications/case-summaries/ai-and-academic-misconduct-cs072501/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
-      "n_redirects": 0,
       "normalized_url": "https://www.oiahe.org.uk/resources-and-publications/case-summaries/ai-and-academic-misconduct-cs072501/",
+      "not_a_document_rule": "BASE-PATH",
       "not_a_locator": false,
       "paths": [
         "works/2026-07-05-backward-regime-test/SOURCES.md",
         "works/2026-07-05-backward-regime-test/data.json"
       ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
       "second_vantage": null,
       "self": false,
-      "status": 200,
+      "soft_gone_host_flag": false,
       "tiers": [
         "repo",
         "site"
       ],
-      "title": "AI and academic misconduct - CS072501 - OIAHE",
-      "verdict": "OK",
+      "verdict": "NOT-A-DOCUMENT",
       "works": [
         "2026-07-05-backward-regime-test"
       ]
     },
     {
-      "byte_count": 40019,
       "classes": [
         "U1"
       ],
-      "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.224,
-      "error": null,
-      "final_url": "https://www.oiahe.org.uk/resources-and-publications/case-summaries/ai-and-academic-misconduct-cs072504/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
-      "n_redirects": 0,
       "normalized_url": "https://www.oiahe.org.uk/resources-and-publications/case-summaries/ai-and-academic-misconduct-cs072504/",
+      "not_a_document_rule": "BASE-PATH",
       "not_a_locator": false,
       "paths": [
         "works/2026-07-05-backward-regime-test/SOURCES.md",
         "works/2026-07-05-backward-regime-test/data.json"
       ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
       "second_vantage": null,
       "self": false,
-      "status": 200,
+      "soft_gone_host_flag": false,
       "tiers": [
         "repo",
         "site"
       ],
-      "title": "AI and academic misconduct - CS072504 - OIAHE",
-      "verdict": "OK",
+      "verdict": "NOT-A-DOCUMENT",
       "works": [
         "2026-07-05-backward-regime-test"
       ]
     },
     {
-      "byte_count": 46995,
       "classes": [
         "U1"
       ],
-      "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.224,
-      "error": null,
-      "final_url": "https://www.oiahe.org.uk/resources-and-publications/learning-from-our-casework/ai-and-academic-misconduct/casework-note-complaints-relating-to-ai-and-academic-misconduct/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
-      "n_redirects": 0,
       "normalized_url": "https://www.oiahe.org.uk/resources-and-publications/learning-from-our-casework/ai-and-academic-misconduct/casework-note-complaints-relating-to-ai-and-academic-misconduct/",
+      "not_a_document_rule": "BASE-PATH",
       "not_a_locator": false,
       "paths": [
         "works/2026-07-05-backward-regime-test/SOURCES.md",
         "works/2026-07-05-backward-regime-test/data.json"
       ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
       "second_vantage": null,
       "self": false,
-      "status": 200,
+      "soft_gone_host_flag": false,
       "tiers": [
         "repo",
         "site"
       ],
-      "title": "Casework note: Complaints relating to AI and academic misconduct - OIAHE",
-      "verdict": "OK",
+      "verdict": "NOT-A-DOCUMENT",
       "works": [
         "2026-07-05-backward-regime-test"
       ]
     },
     {
-      "byte_count": 40066,
+      "byte_count": 40103,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.409,
+      "elapsed_s": 0.687,
       "error": null,
       "final_url": "https://www.postofficehorizoninquiry.org.uk/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -5127,6 +6673,7 @@
       "paths": [
         "works/2026-07-05-backward-regime-test/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -5145,7 +6692,7 @@
         "U1"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 0.231,
+      "elapsed_s": 0.243,
       "error": null,
       "final_url": "https://www.postofficehorizoninquiry.org.uk/sites/default/files/2025-07/Post%20Office%20Horizon%20IT%20Inquiry%20Final%20Report%20Volume%201_0.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -5155,6 +6702,7 @@
       "paths": [
         "works/2026-07-02-taxonomy-on-trial/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -5168,12 +6716,12 @@
       ]
     },
     {
-      "byte_count": 130099,
+      "byte_count": 129751,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.653,
+      "elapsed_s": 0.488,
       "error": null,
       "final_url": "https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm",
       "layer2b": "NOT-HELD",
@@ -5186,6 +6734,7 @@
         "works/2026-07-02-taxonomy-on-trial/README.md",
         "works/2026-07-02-taxonomy-on-trial/data.json"
       ],
+      "presentation": "linked",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -5201,12 +6750,12 @@
       ]
     },
     {
-      "byte_count": 136408,
+      "byte_count": 136060,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.114,
+      "elapsed_s": 0.106,
       "error": null,
       "final_url": "https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -5217,6 +6766,7 @@
         "works/2026-07-01-fairness-trap/meta.json",
         "works/2026-07-01-fairness-trap/work.astro"
       ],
+      "presentation": "linked",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -5235,7 +6785,7 @@
         "U1"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 1.218,
+      "elapsed_s": 0.749,
       "error": null,
       "final_url": "https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Depression-Bereavement-Exclusion.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -5246,6 +6796,7 @@
         "works/2026-07-02-taxonomy-on-trial/README.md",
         "works/2026-07-02-taxonomy-on-trial/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -5265,7 +6816,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 1.125,
+      "elapsed_s": 1.27,
       "error": null,
       "final_url": "https://www.rehva.eu/rehva-journal/chapter/analysis-of-performance-metrics-for-data-center-efficiency-should-the-power-utilization-effectiveness-pue-still-be-used-as-the-main-indicator-part-1",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -5276,6 +6827,7 @@
         "works/2026-07-09-the-floor/SOURCES.md",
         "works/2026-07-09-the-floor/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -5290,40 +6842,36 @@
       ]
     },
     {
-      "byte_count": 172638,
       "classes": [
         "U1"
       ],
-      "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 1.924,
-      "error": null,
-      "final_url": "https://www.scconline.com/blog/post/2026/07/17/international-criminal-justice-in-2026-a-digital-turning-point/",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
-      "n_redirects": 0,
       "normalized_url": "https://www.scconline.com/blog/post/2026/07/17/international-criminal-justice-in-2026-a-digital-turning-point/",
+      "not_a_document_rule": "BASE-PATH",
       "not_a_locator": false,
       "paths": [
         "works/2026-07-24-where-the-chain-breaks/SOURCES.md"
       ],
+      "presentation": "displayed-only",
+      "primary_observation": null,
       "second_vantage": null,
       "self": false,
-      "status": 200,
+      "soft_gone_host_flag": false,
       "tiers": [
         "repo"
       ],
-      "title": "International Criminal Justice in 2026: A digital turning point | SCC Times",
-      "verdict": "OK",
+      "verdict": "NOT-A-DOCUMENT",
       "works": [
         "2026-07-24-where-the-chain-breaks"
       ]
     },
     {
-      "byte_count": 5797,
+      "byte_count": 5776,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.728,
+      "elapsed_s": 0.603,
       "error": null,
       "final_url": "https://www.science.org/doi/full/10.1126/sciadv.adt3813",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -5333,6 +6881,7 @@
       "paths": [
         "works/2026-07-25-no-signal-to-extend/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -5351,7 +6900,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.407,
+      "elapsed_s": 0.434,
       "error": null,
       "final_url": "https://www.sciencedirect.com/science/article/abs/pii/S1040619016300446",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -5362,6 +6911,7 @@
         "works/2026-07-09-the-floor/SOURCES.md",
         "works/2026-07-09-the-floor/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -5381,7 +6931,7 @@
         "U1"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 3.443,
+      "elapsed_s": 0.855,
       "error": null,
       "final_url": "https://www.smartenergydecisions.com/wp-content/uploads/2025/04/google-2024-environmental-report.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -5392,6 +6942,7 @@
         "works/2026-07-09-the-floor/SOURCES.md",
         "works/2026-07-09-the-floor/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -5411,7 +6962,7 @@
         "U1"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 0.318,
+      "elapsed_s": 0.257,
       "error": null,
       "final_url": "https://www.smartenergydecisions.com/wp-content/uploads/2025/07/google-2025-environmental-report-1.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -5422,6 +6973,7 @@
         "works/2026-07-09-the-floor/SOURCES.md",
         "works/2026-07-09-the-floor/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -5436,12 +6988,12 @@
       ]
     },
     {
-      "byte_count": 40472,
+      "byte_count": 40688,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.721,
+      "elapsed_s": 0.62,
       "error": null,
       "final_url": "https://www.strausstroy.com/articles/ai-and-academic-integrity-a-growing-crisis",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -5452,6 +7004,7 @@
         "works/2026-07-05-backward-regime-test/SOURCES.md",
         "works/2026-07-05-backward-regime-test/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -5471,7 +7024,7 @@
         "U1"
       ],
       "content_type": "application/pdf",
-      "elapsed_s": 1.29,
+      "elapsed_s": 0.806,
       "error": null,
       "final_url": "https://www.sunbirddcim.com/sites/default/files/EB035_Sunbird_eBook_PUE_0.pdf",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -5481,6 +7034,7 @@
       "paths": [
         "works/2026-07-09-the-floor/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -5499,7 +7053,7 @@
         "U1"
       ],
       "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.963,
+      "elapsed_s": 0.801,
       "error": null,
       "final_url": "https://www.tbray.org/ongoing/When/202x/2025/09/18/C2PA-Investigations",
       "layer2b": "NOT-HELD",
@@ -5507,15 +7061,14 @@
       "normalized_url": "https://www.tbray.org/ongoing/When/202x/2025/09/18/C2PA-Investigations",
       "not_a_locator": false,
       "paths": [
-        "works/2026-07-02-taxonomy-on-trial/README.md",
         "works/2026-07-02-taxonomy-on-trial/data.json",
         "works/2026-07-05-backward-regime-test/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
       "tiers": [
-        "repo",
         "site"
       ],
       "title": "ongoing by Tim Bray \u00b7 C2PA Investigations",
@@ -5526,12 +7079,12 @@
       ]
     },
     {
-      "byte_count": 359919,
+      "byte_count": 360080,
       "classes": [
         "U1"
       ],
       "content_type": "text/html; charset=UTF-8",
-      "elapsed_s": 0.711,
+      "elapsed_s": 0.764,
       "error": null,
       "final_url": "https://www.theguardian.com/technology/2025/jul/02/google-carbon-emissions-report",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -5541,6 +7094,7 @@
       "paths": [
         "works/2026-07-09-the-floor/SOURCES.md"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 200,
@@ -5559,7 +7113,36 @@
         "U1"
       ],
       "content_type": "text/html",
-      "elapsed_s": 0.336,
+      "elapsed_s": 0.801,
+      "error": null,
+      "final_url": "https://www.turnitin.com/blog/ai-writing-detection-update-from-turnitins-chief-product-officer",
+      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "n_redirects": 0,
+      "normalized_url": "https://www.turnitin.com/blog/ai-writing-detection-update-from-turnitins-chief-product-officer",
+      "not_a_locator": false,
+      "paths": [
+        "works/2026-07-01-calibration-gap/data.json"
+      ],
+      "presentation": "displayed-only",
+      "second_vantage": null,
+      "self": false,
+      "status": 403,
+      "tiers": [
+        "site"
+      ],
+      "title": "ERROR: The request could not be satisfied",
+      "verdict": "BLOCKED",
+      "works": [
+        "2026-07-01-calibration-gap"
+      ]
+    },
+    {
+      "byte_count": 919,
+      "classes": [
+        "U1"
+      ],
+      "content_type": "text/html",
+      "elapsed_s": 0.07,
       "error": null,
       "final_url": "https://www.turnitin.com/blog/understanding-false-positives-within-our-ai-writing-detection-capabilities",
       "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
@@ -5570,6 +7153,7 @@
         "works/2026-07-05-backward-regime-test/SOURCES.md",
         "works/2026-07-05-backward-regime-test/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
       "status": 403,
@@ -5584,28 +7168,29 @@
       ]
     },
     {
-      "byte_count": 33793,
+      "byte_count": 919,
       "classes": [
         "U1"
       ],
-      "content_type": "text/html; charset=utf-8",
-      "elapsed_s": 0.546,
+      "content_type": "text/html",
+      "elapsed_s": 0.068,
       "error": null,
-      "final_url": "https://yaledailynews.com/articles/som-student-sues-yale-alleges-wrongful-suspension-over-ai-use",
-      "layer2b": "NOT-AUTOMATICALLY-CHECKABLE",
+      "final_url": "https://www.turnitin.com/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability",
+      "layer2b": "NOT-HELD",
       "n_redirects": 0,
-      "normalized_url": "https://yaledailynews.com/articles/som-student-sues-yale-alleges-wrongful-suspension-over-ai-use",
+      "normalized_url": "https://www.turnitin.com/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability",
       "not_a_locator": false,
       "paths": [
         "works/2026-07-01-calibration-gap/data.json"
       ],
+      "presentation": "displayed-only",
       "second_vantage": null,
       "self": false,
-      "status": 429,
+      "status": 403,
       "tiers": [
         "site"
       ],
-      "title": "Vercel Security Checkpoint",
+      "title": "ERROR: The request could not be satisfied",
       "verdict": "BLOCKED",
       "works": [
         "2026-07-01-calibration-gap"
