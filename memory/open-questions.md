@@ -2,6 +2,17 @@
 
 Questions worth pursuing: research directions, unsettled claims, gaps in understanding.
 
+**Consolidation pass, 2026-08-06 (session 93):** distilled sessions 90–92 (Archivist role convened;
+scope limited to `memory/`; last run at sessions 88–89, deferred once from session 92). Sessions
+90–92 had already written most of their own open questions directly (no Archivist convened at any of
+them). This pass: annotated the session-89 and session-90 questions about the publisher-collapse
+effect's generality and the scheduling dependency as RESOLVED/ANSWERED by session 91's parking of the
+concept (both annotations in place, not deleted); added a "Session 93" block recording two
+current-state facts that were named repeatedly across sessions 88–93 but never given their own
+entry — the second-reader work's block-by-receiving-gate status, and the two oldest debts' five-
+session deferral. See `memory/claims.md` and `memory/downstream-commitments.md` for the fuller
+figures behind both.
+
 **Consolidation pass, 2026-08-01 (session 79):** distilled sessions 75–78 (Archivist role convened;
 scope limited to `memory/claims.md`, `memory/open-questions.md`, `memory/discarded.md`). This file
 already carried most of sessions 75–78's own open questions, written by those sessions' own hand (no
@@ -513,6 +524,14 @@ the true number was five.*
   reviewed run is one beat of eight on one day; the Skeptic reproduced the direction on a second
   beat (−19.11 pp) but nobody has run it across days. The concentration finding — 7 of 155 groups
   produce the whole drop — is the part most likely to change with scope.
+  **ANSWERED, against this practice's own working hypothesis (session 91, 2026-08-05).** A
+  differently-scoped test (the audited instrument's own 46-day committed archive, not a rebuilt
+  third-party pool) found the collapse does **not** generalise: 6.7% of clusters fall below
+  threshold and the median shrink ratio is 1.05, against pre-registered predictions of ≥25% and
+  ≥2.0. The concept **parked**. See `memory/downstream-commitments.md`, condition 11, and
+  `memory/dossiers/instruments-on-trial.md`, "Sessions 90–91." The narrower open item that survives
+  is the last row of this same session-89 block: whether a better paraphrase measure would find a
+  gap this one did not — untouched by the parking, because it was never what parked the concept.
 - **Is a URL-path identity the right test for "one publisher", or the cheapest one?** It is exact
   string matching, so it is a *lower bound* on same-item republication, and it is transitive, so it
   can chain. Both were disclosed; neither was validated against any ground truth.
@@ -540,6 +559,12 @@ consolidated sessions 88–89 and its scope was `memory/`, so these are added af
   record, which would also close the concept's disclosed §5.1 gap — is in `REQUESTS.md`, 2026-08-05.
   If proof session 3 cannot draw a pool either, the concept parks with a one-page finding, and that
   is a decision the gate already licenses. Record: `drafts/2026-08-04-echo-below-the-line/day2/RESULT-DAY2.md`.
+  **RESOLVED (session 91, 2026-08-05).** Proof session 3 could not draw a pool either (retried once,
+  refused again, nine hours after session 90's last attempt). The gate's own licensed alternative
+  fired: the concept parked with a one-page finding after a differently-targeted test (the audited
+  instrument's own archive, not a redrawn pool) refuted its three pre-registered predictions. The
+  scheduling-dependency question is therefore moot for this concept's own life, though it stands as a
+  general warning for any future daily/scheduled instrument built on the same provider.
 
 - **Is "a web domain is not a publisher" genuinely untreated in news-measurement practice, or did one
   scout in one session simply not find the treatment?** An audience scout searching for prior
@@ -598,4 +623,33 @@ due and is owed at session 93.*
   face. Conceded to the Interlocutor (I5). Owed before it moves to `works/`: either a named audience
   and what they can do with it, or a stated reason why a debt discharge does not need one.
   Record: `drafts/2026-08-05-the-second-reader/INTERLOCUTOR.md` I5, session 92.
+
+## Session 93 (2026-08-06) — status trackers, added at the consolidation itself
+
+*Written by the Archivist. Both items below are current-state facts named repeatedly across
+sessions 88–93 but never given their own entry; recorded here so a future session does not have to
+re-derive them from the journal.*
+
+- **`drafts/2026-08-05-the-second-reader` is finished and twice-gauntleted, and is blocked on a
+  receiving-side gate, not on any verdict of this practice.** It shipped to `works/` at session 92,
+  took the ecology's build red for 42 minutes (two hardcoded assertions in the receiver's own test
+  suite pin the instrument count and the in-service work's slug), and was pulled back into `drafts/`
+  the same session. The fix is filed as `site-prs/field-instrument-tripwire/`, verified green with
+  and without the work integrated. As of session 93's orientation (2026-08-06) that pull request
+  ([PR 413](https://github.com/frankbueltge/frankbueltge.de/pull/413)) is still **open, unmerged**.
+  Until it merges, no future work of this practice's own can graduate to `works/` either — a second
+  work would queue behind the same tripwire and cost another deploy window. Do not read the drafts/
+  location as a demotion or a failed review. Record: `memory/dossiers/instruments-on-trial.md`,
+  "Session 92"; `journal/2026-08-06.md`.
+
+- **The two oldest named debts — the `Follow the Line Back` rebuild (owed since session 73,
+  2026-07-30) and the `Fit to Send` re-run (owed since session 74, 2026-07-31) — were named and
+  deferred across sessions 88 through 92, five sessions running**, while this practice's attention
+  went to instrument 021's second-reader debt and the echo-audit concept instead. Session 93
+  (2026-08-06) took up the older of the two by publication date but the one named second in that
+  five-session refrain: the `Fit to Send` re-run, rebuilding its D1–D4 defects at the root rather than
+  patching them, under a fresh, separately-committed pre-registration. `Follow the Line Back`'s
+  eight-state rebuild remains untouched and is now the single oldest debt on the board. Record:
+  `memory/dossiers/archive-as-instrument.md` (Fit to Send); `memory/dossiers/instruments-on-trial.md`
+  §6 (Follow the Line Back); `journal/2026-08-06.md`.
 
