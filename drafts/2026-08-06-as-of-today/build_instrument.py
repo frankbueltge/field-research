@@ -1000,8 +1000,8 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
       <li>It is a snapshot taken at two moments on one day, not a monitor and not a history.</li>
       <li>S is itself only the publishing system's own claim about the page — it is not verified against anything.</li>
       <li>No archived capture history was reachable for any of these pages, for either measurement session, so nothing here can be checked against what actually changed.</li>
-      <li>This instrument's own rules for extracting V from a page are known to be defective on part of the corpus (a fallback that can read a different article's date, or a future date, off the same page) — that is deliberate: the instrument marks its own bad rows in place, on the slip, rather than quietly dropping them.</li>
-      <li>D11: the wrong-referent failure is not a property of one extraction rule. It has been confirmed under two different rules, on two different authorities — a &lt;time&gt; fallback on NIST and a text-label rule on Ireland's — so it is treated here as a property of extracting any date from a page that displays other documents' dates, not as one rule's bug.</li>
+      <li>This instrument's own rules for extracting V from a page are known to be defective on part of the corpus: a rule can read a date printed for a <em>different</em> document the page displays or discusses, not the page's own currency (D10/D11) — that is deliberate: the instrument marks its own bad rows in place, on the slip, rather than quietly dropping them.</li>
+      <li>Every V hit was re-fetched fresh and classified <strong>SELF / OTHER / UNATTRIBUTABLE</strong> by the referent test (<code>PREREGISTRATION-3.md</code>): does a page-currency label sit within 40 characters before the date, does any ancestor put the date inside a link, list item, other article, or card/teaser/listing container, does the enclosing text block link or quote. Only <strong>SELF</strong> is served as a defensible date; <strong>OTHER</strong> and <strong>UNATTRIBUTABLE</strong> show the date, the class, and the evidence, with an explicit refusal in place of a defensible date.</li>
     </ul>
     <div class="aot-timestamps" id="aot-timestamps"></div>
   </div>
@@ -1186,52 +1186,88 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
     return { text: row.authority_label + " — " + row.path + ": " + reason, present: false };
   }
 
-  // Four tiers. confirmed_wrong_referent's note comes from the row itself
-  // (row.confirmed_note) because the evidence differs case by case; the
-  // other three tiers share one standing note per tier.
-  var TIER_INFO = {
-    confirmed_wrong_referent: {
-      cls: "aot-confirmed",
-      badgeCls: "aot-badge-confirmed",
-      badgeText: "confirmed wrong-referent",
-      excluded: true
-    },
-    suspect: {
-      cls: "aot-suspect",
-      badgeCls: "aot-badge-suspect",
-      badgeText: "suspect",
-      excluded: true,
-      note: "Suspect (D10): this date comes from a fallback that reads the datetime attribute " +
-        "of a <time> element, which may belong to a teaser card linking to a different article " +
-        "rather than to this page. Not opened by hand to confirm."
-    },
-    hand_checked: {
+  // The referent test's three classes (PREREGISTRATION-3.md). Only SELF is
+  // served as a defensible date; OTHER and UNATTRIBUTABLE are shown with
+  // their evidence and an explicit refusal, below.
+  var CLASS_INFO = {
+    SELF: {
       cls: "aot-ok",
       badgeCls: "aot-badge-ok",
-      badgeText: "hand-checked",
-      excluded: false,
-      note: "Hand-checked: this on-page “Last update” label was read by hand in an earlier " +
-        "session and found genuine — not a citation to another document's date. Kept as a " +
-        "defensible date."
+      badgeText: "SELF — defensible",
+      note: "All three referent criteria hold: a page-currency label ends within 40 characters " +
+        "before the date, no ancestor is a link, list item, other article, or card/teaser/listing " +
+        "container, and the enclosing text block neither links nor quotes. Served as the date a " +
+        "reader could defend."
     },
-    unaudited: {
-      cls: "aot-info",
-      badgeCls: "aot-badge-info",
-      badgeText: "unaudited",
-      excluded: false,
-      note: "Unaudited (D11): this date was matched by a rule that reads a date label printed in " +
-        "the page text. In every case of this kind opened by hand so far, the label named a " +
-        "different document's publish date, not this page's own currency — so this is a " +
-        "candidate, not a warranty. Kept as a defensible date because there is no evidence " +
-        "against this specific row, only a pattern from the rows that were checked."
+    OTHER: {
+      cls: "aot-confirmed",
+      badgeCls: "aot-badge-confirmed",
+      badgeText: "OTHER — another document's date",
+      note: "The referent evidence points at a different document: the enclosing text block links " +
+        "or quotes a document title, or the date sits inside a link or a card/teaser/listing " +
+        "container. Not served as a defensible date."
+    },
+    UNATTRIBUTABLE: {
+      cls: "aot-suspect",
+      badgeCls: "aot-badge-suspect",
+      badgeText: "UNATTRIBUTABLE — no referent evidence",
+      note: "Neither a page-currency label nor link/card/quote evidence was found near this date — " +
+        "including every date taken from a bare <time datetime> with no visible label. Not served " +
+        "as a defensible date."
     }
   };
 
-  function noteFor(row, tier) {
-    if (row.flag_tier === "confirmed_wrong_referent" && row.confirmed_note) {
-      return row.confirmed_note;
+  var REFERENT_STATUS_INFO = {
+    "referent-fetch-failed": {
+      cls: "aot-info", badgeCls: "aot-badge-info", badgeText: "referent re-check failed",
+      note: "The referent test's fresh fetch of this URL failed, so this date could not be " +
+        "re-classified this run. Not served as a defensible date, honestly, rather than guessed."
+    },
+    "not-covered-by-referent-test": {
+      cls: "aot-info", badgeCls: "aot-badge-info", badgeText: "not covered by referent test",
+      note: "This printed date is not among the 62 hits the referent test covered. Not served as " +
+        "a defensible date."
     }
-    return tier.note;
+  };
+
+  function chainSummary(chain) {
+    if (!chain || !chain.length) return "—";
+    return chain.map(function (n) {
+      var s = n.tag;
+      if (n.class) s += "." + n.class.trim().split(/\s+/).join(".");
+      if (n.id) s += "#" + n.id;
+      return s;
+    }).join(" < ");
+  }
+
+  function noteFor(row) {
+    var parts = [];
+    if (row.referent_status === "classified") {
+      parts.push(CLASS_INFO[row.referent_class].note);
+      if (row.referent_class_reason) parts.push(row.referent_class_reason + ".");
+    } else if (REFERENT_STATUS_INFO[row.referent_status]) {
+      parts.push(REFERENT_STATUS_INFO[row.referent_status].note);
+    }
+    if (row.referent_changed) {
+      parts.push("The referent test's fresh fetch found a different date (" +
+        (row.referent_fresh_v_fmt || row.referent_fresh_v_raw || "—") +
+        ") than the locked run recorded (" + row.v_fmt + "); marked CHANGED, excluded from the " +
+        "test's own agreement figures, still classified from the fresh page.");
+    }
+    if (row.hand_confirmed_note) {
+      parts.push("Hand-confirmed annotation (stronger evidence, kept regardless of the machine " +
+        "class): " + row.hand_confirmed_note);
+    }
+    if (row.hand_checked_genuine) {
+      parts.push("This row's rule/authority was also hand-checked as a batch in an earlier " +
+        "session and found genuine.");
+    }
+    return parts.join(" ");
+  }
+
+  function badgeInfoFor(row) {
+    if (row.referent_status === "classified") return CLASS_INFO[row.referent_class];
+    return REFERENT_STATUS_INFO[row.referent_status] || null;
   }
 
   function renderSentences(container, row) {
@@ -1243,13 +1279,15 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
       li.appendChild(tag);
       li.appendChild(document.createTextNode(info.text));
       if (!info.present) li.classList.add("aot-absent");
-      if (sig === "v" && row.flag_tier) {
-        var tier = TIER_INFO[row.flag_tier];
-        li.classList.add(tier.cls);
-        var badge = el("span", "aot-badge " + tier.badgeCls, tier.badgeText);
-        li.appendChild(badge);
-        var note = el("div", "aot-verdict-note", noteFor(row, tier));
-        li.appendChild(note);
+      if (sig === "v" && row.v) {
+        var info2 = badgeInfoFor(row);
+        if (info2) {
+          li.classList.add(info2.cls);
+          var badge = el("span", "aot-badge " + info2.badgeCls, info2.badgeText);
+          li.appendChild(badge);
+          var note = el("div", "aot-verdict-note", noteFor(row));
+          li.appendChild(note);
+        }
       }
       ul.appendChild(li);
     });
@@ -1272,11 +1310,11 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
     }
     box.appendChild(mLine);
     if (row.machine_is_flagged_v) {
-      var mTier = TIER_INFO[row.flag_tier];
+      var mInfo = badgeInfoFor(row);
       box.appendChild(el("div", "aot-verdict-note",
-        "This is the printed date, and it is flagged " + mTier.badgeText + " below — it is what " +
-        "ordinary tooling would still be handed, in the order H, then S, then V, because neither " +
-        "H nor S exists on this page."));
+        "This is the printed date, and it is classed " + (mInfo ? mInfo.badgeText : row.referent_class) +
+        " below — it is what ordinary tooling would still be handed, in the order H, then S, then " +
+        "V, because neither H nor S exists on this page."));
     } else {
       box.appendChild(el("div", "aot-verdict-note",
         "Ordinary tooling reads in this order: Last-Modified header first, then sitemap, then a printed date."));
@@ -1296,16 +1334,17 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
       dLine.classList.add("aot-nodate");
     }
     box.appendChild(dLine);
-    if (row.skipped_flagged_v) {
-      var sTier = TIER_INFO[row.flag_tier];
+    if (row.v_present_not_defensible) {
+      var sInfo = badgeInfoFor(row);
+      var sLabel = sInfo ? sInfo.badgeText : (row.referent_class || "not classified");
       if (row.only_defensible_was_flagged) {
         box.appendChild(el("div", "aot-verdict-note",
-          "The only printed date on this page is flagged " + sTier.badgeText + " and there is no " +
-          "sitemap entry to fall back to, so it is not offered here as an answer."));
+          "The only printed date on this page is classed " + sLabel + " and there is no sitemap " +
+          "entry to fall back to, so no defensible date is offered here — refused, not guessed."));
       } else {
         box.appendChild(el("div", "aot-verdict-note",
-          "The printed date on this page is flagged " + sTier.badgeText + ", so it is excluded " +
-          "here and the sitemap date is used instead."));
+          "The printed date on this page is classed " + sLabel + ", so it is excluded here and " +
+          "the sitemap date is used instead."));
       }
     }
     box.appendChild(el("div", "aot-verdict-note",
@@ -1344,12 +1383,44 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
     evidenceRow(table, "ETag", row.etag);
     evidenceRow(table, "Sitemap state", row.s_state);
     evidenceRow(table, "Sitemap <lastmod>", row.s);
-    evidenceRow(table, "Printed date (raw string)", row.v_raw);
+    evidenceRow(table, "Printed date (raw string, locked run)", row.v_raw);
     evidenceRow(table, "Extraction rule", row.v_rule);
-    evidenceRow(table, "V flag (D10 / D11)", row.flag_tier ? TIER_INFO[row.flag_tier].badgeText : "none");
     evidenceRow(table, "In the collective's scored subset", row.scored ? "yes" : "no (chrome / not in arm B)");
     det.appendChild(table);
     container.appendChild(det);
+
+    if (!row.v) return;
+
+    var det2 = el("details", "aot-evidence", null);
+    det2.appendChild(el("summary", null, "Referent test evidence (PREREGISTRATION-3.md)"));
+    var t2 = el("table", "aot-evidence-table", null);
+    evidenceRow(t2, "Referent class", row.referent_class || row.referent_status || "not classified");
+    evidenceRow(t2, "Fresh fetch, re-extracted date", row.referent_fresh_v_fmt);
+    evidenceRow(t2, "Fresh fetch, re-extraction rule", row.referent_fresh_v_rule);
+    evidenceRow(t2, "Changed vs. locked run", row.referent_changed ? "yes — see note above" : "no");
+    var ev = row.referent_evidence;
+    if (ev) {
+      evidenceRow(t2, "Matched-node ancestor chain (nearest first)", chainSummary(ev.element_chain));
+      evidenceRow(t2, "Enclosing text block", (ev.enclosing_block_tag || "—") +
+        (ev.enclosing_block_class ? "." + ev.enclosing_block_class.trim().split(/\s+/).join(".") : ""));
+      evidenceRow(t2, "Block links (contains <a>) / quotes", (ev.enclosing_block_has_a ? "yes" : "no") +
+        " / " + (ev.enclosing_block_has_quote ? "yes" : "no"));
+      evidenceRow(t2, "Inside <a> / <li> / card-teaser-listing container",
+        (ev.in_a_ancestor ? "yes" : "no") + " / " + (ev.in_li_ancestor ? "yes" : "no") + " / " +
+        (ev.in_card_like_ancestor ? "yes" : "no"));
+      evidenceRow(t2, "Other-article ancestor (not the page's own)", ev.other_article_ancestor ? "yes" : "no");
+      evidenceRow(t2, "Currency label within 40 chars before the date",
+        ev.label_within_40_chars ? ("yes — “" + ev.label_text_as_found + "”, " + ev.label_gap_chars + " char gap") : "no");
+      evidenceRow(t2, "Criteria a / b / c", (ev.criterion_a ? "hold" : "fail") + " / " +
+        (ev.criterion_b ? "hold" : "fail") + " / " + (ev.criterion_c ? "hold" : "fail"));
+      evidenceRow(t2, "Text around the match", ev.match_context);
+      evidenceRow(t2, "Location approximate (fresh-page structure re-matched, not the locked run's)",
+        ev.approximate_location ? "yes" : "no");
+    } else {
+      evidenceRow(t2, "Evidence", row.referent_class_reason || "not available");
+    }
+    det2.appendChild(t2);
+    container.appendChild(det2);
   }
 
   function renderSlip(row) {
@@ -1398,9 +1469,9 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
       "URL fetched, chrome included, and was not the basis any P1–P4 prediction was scored against.");
     note.appendChild(p1);
     var p2 = el("div", null,
-      "The V counts above include every printed date found, including the rows the citation " +
-      "slips flag as suspect or confirmed-defective (D10/D6) — a flagged V is still a V for " +
-      "coverage purposes. Each slip's \"date a reader could defend\" excludes those same rows, " +
+      "The V counts above include every printed date found, including the rows the referent test " +
+      "(PREREGISTRATION-3.md) classifies OTHER or UNATTRIBUTABLE — a non-defensible V is still a V " +
+      "for coverage purposes. Each slip's \"date a reader could defend\" excludes those same rows, " +
       "falling back to the sitemap date or to none. So a page can count toward V here and still " +
       "show \"no defensible date\" on its slip: that is by design, not a discrepancy to reconcile.");
     note.appendChild(p2);
