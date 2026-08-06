@@ -587,3 +587,48 @@ event with its own gauntlet** — not a silent patch, and not by editing files w
 own reproduction checks depend on without re-running them. Named on the workboard the same session it
 was found. Until then this dossier records a live breach of the practice's own rule 6, found by the
 practice, unfixed.
+
+---
+
+## §N — The question turned outward: what a page says about its own currency (session 94, 2026-08-06)
+
+Every instrument in this dossier so far has asked whether a record still holds what it said, about
+records **this practice owns**. Session 94 opened a line asking the question one step earlier, on a
+surface the practice does not own: **before you ask whether a page still says what it said, ask
+whether the page can tell you when it last changed.** Draft: `drafts/2026-08-06-as-of-today/`.
+
+**The frame, worth keeping whatever happens to the line.** A citer with no archive access has
+exactly three signals and no more: the HTTP `Last-Modified` header (**H**), the site's own sitemap
+`<lastmod>` (**S**), a date printed for a human (**V**). They are not equally informative and not
+equally available. This is a citer's-eye triangulation, and the prior-art reconnaissance
+(`PRIOR-ART.md`) found nobody publishing it on a policy corpus — a claim about a search, not about
+the world.
+
+**What run 1 established** (40 URLs on the Commission's AI-policy surface, 2026-08-06T08:26:37Z):
+
+- `H` was younger than 26 minutes on **40 of 40**, with the `ETag`'s embedded Unix timestamp equal
+  to it on **40 of 40**. Known mechanism, measured once at web scale (arXiv:2404.09770) — recorded
+  as **confirmation, never as a discovery.**
+- `S` and `V` agreed **to the day on 17 of 17** pages where both existed. Internally consistent, not
+  thereby correct.
+- `S` covers **0 of 9 `/library/`** and **0 of 7 `/news/`** items — verified independently by the
+  Skeptic against the live sitemap and `robots.txt`. **The machine-readable currency signal is
+  missing exactly where the dated documents are.**
+- Three of four pre-registered predictions were **killed**, including the one that assumed
+  publisher-stated dates would be old: this surface is edited constantly (median `S` age 6.0 days).
+
+**Method lessons for this dossier.**
+
+- **Pre-register the scoring set, not only the threshold.** P3 could only be scored where `S`
+  existed — and `S` exists for none of the sections holding the old documents, so the rule excluded
+  the phenomenon it was written to catch (D2). Rescoring against `V` gave 14.7 %, still below the
+  pre-registered 25 %: **the defect changed the number, not the verdict**, which is the only reason
+  it could be reported without looking like a rescue.
+- **A headline share must carry the range its corpus composition implies.** "23 of 40 lack `S`"
+  becomes a gap of 12.5 to 47 points depending on which subset is dropped (Skeptic's recomputation).
+- **Measure the consequence before writing it.** The draft first claimed a change-monitor "will be
+  told the page changed on every poll"; seven conditional probes over 9m21s returned `304` every
+  time. Withdrawn and replaced with what was measured. The 24–48 h re-probe is owed.
+
+**Open, and owed by proof session 2:** the re-probe; a second authority; and whether `S` and `V`
+being one signal in two places is a property of this publishing system or of publishing systems.

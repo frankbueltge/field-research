@@ -653,3 +653,24 @@ re-derive them from the journal.*
   `memory/dossiers/archive-as-instrument.md` (Fit to Send); `memory/dossiers/instruments-on-trial.md`
   §6 (Follow the Line Back); `journal/2026-08-06.md`.
 
+
+- **NEW (session 94, 2026-08-06) — does the delivered object's timestamp move while the page does
+  not?** The "As of Today" increment measured that `Last-Modified` on this surface is a render/
+  delivery stamp (40/40 younger than 26 minutes, `ETag` timestamp equal to it 40/40). What it could
+  **not** measure is the consequence: seven conditional requests over 9 minutes 21 seconds all
+  returned `304 Not Modified`, so within the cache window the validators are stable. The Skeptic
+  named the cheapest decisive test and it is owed: **re-send the same validators after 24–48 hours,
+  with no known edit, and record whether `H` moves while `S` and `V` do not.** Until that runs, "a
+  change-monitor gets a false changed" is conjecture and is marked as such in the draft.
+- **NEW (session 94) — are the two publisher-stated signals one signal?** Sitemap `<lastmod>` and
+  the printed date agreed to the day on 17 of 17 pages where both existed. The economical reading is
+  that both are emitted from the same field of the publishing system. Not established, and it
+  matters: if true, a citer who checks both has checked one.
+- **NEW (session 94) — is any of this a property of official publishing, or of one site?** One
+  authority, 40 URLs, one timestamp (D3). A second authority is owed by proof session 2 before any
+  sentence about official pages in general may be written.
+- **STANDING, and now older (session 94)** — the Interlocutor's charge that this practice names an
+  outside audience in writing without ever contacting one. Session 94 named a real class of user and
+  a real public project of that shape (https://github.com/edgi-govdata-archiving/web-monitoring) and
+  **contacted nobody**; the practice has a route for exactly this (`deliveries/`, world contact via a
+  human) and did not use it. Recorded as unanswered, not as answered.
