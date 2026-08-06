@@ -164,3 +164,154 @@ here so no part of it can later be presented as a confirmation.
 
 *Not known: any corpus-wide share, any gap, any agreement rate, any coverage figure, for either new
 authority.*
+
+---
+
+## Amendment 1 — 2026-08-06, at the corpus stage, before any date signal existed
+
+**What forced it.** The GOVUK seed fixed in C2-RULE-1,
+`https://www.gov.uk/government/collections/ai-regulation`, **returns HTTP 404.** The corpus run
+recorded it as `FAILED / 404` (`corpus-2.json`, first run). The orientation probe that put it in
+this document read its response headers with `curl -I -L` and **did not capture the status line** —
+so the "known beforehand" disclosure above describing GOVUK's seed as `HTTP 200, no Last-Modified,
+max-age=30, age: 0` was in fact a description of **GOV.UK's 404 error page**. That sentence is
+wrong and is corrected here rather than edited away above.
+
+**Why this correction is not a free hand.** A pre-registered seed that does not exist must be
+replaced or its authority dropped; replacing it after seeing results would be tuning. Nothing had
+been measured when this was written: the signal collector for the new authorities did not yet
+exist, and `signals-2.json` did not exist. **No prediction below is changed, in either direction.**
+
+**The replacement rule, stated before the replacement was chosen.** The GOVUK seed is the
+highest-level live GOV.UK page owned by the United Kingdom's own official AI body, selected by HTTP
+status alone. Candidates checked, in the order checked, with the status each returned at ~14:28Z:
+
+| Candidate | Status |
+|---|---|
+| `…/government/collections/a-pro-innovation-approach-to-ai-regulation` | 404 |
+| `…/government/publications/ai-regulation-a-pro-innovation-approach` | 200 — a single publication page, not a hub |
+| `…/government/collections/ai-safety-institute-publications` | 404 |
+| **`https://www.gov.uk/government/organisations/ai-security-institute`** | **200 — taken** |
+| `…/government/organisations/department-for-science-innovation-and-technology` | 200 — a whole department, wider than AI |
+| `…/government/topics/science-and-innovation` | 410 |
+
+**GOVUK seed, as amended:** `https://www.gov.uk/government/organisations/ai-security-institute` —
+the AI Security Institute's own page, which, like the EC and NIST seeds, is a hub that sends a
+reader on to dated items. `collect_corpus_2.py` is updated to this seed and re-run; the first run's
+`FAILED / 404` row is kept in the record, not overwritten.
+
+**Disclosed, so it cannot be claimed as a confirmation** (probe at 14:29Z on the amended seed):
+HTTP 200, **no `Last-Modified` header**, `etag: W/"b54d6d7c3a4474ddbf98c994e254716b"`,
+`cache-control: max-age=300, public`, `age: 27`. One page is still not a corpus, and every
+corpus-wide share in G1 remains an open prediction.
+
+**Also disclosed at this stage, and not a prediction:** the C2-RULE-5 control ran on the EC seed and
+found **30 of the 40** locked session-94 EC URLs reproduced by the new link-region rule. That number
+is a property of the rule change, not of any authority's currency signals.
+
+---
+
+## Amendment 2 — 2026-08-06, still at the corpus stage, still before any date signal existed
+
+**What happened.** Under the amended seed, GOVUK's corpus is **7 URLs — below the floor of 15**, so
+by C2-RULE-4 **GOVUK is inconclusive and is not re-scoped.** That stands and is not revisited.
+
+**Why it is 7, recorded as an unpredicted observation about the site's architecture, not as a
+result about its dates.** The seed page carries 81 links in total but only 14 inside its `<main>`
+region; of those, 4 point at paths beginning `/search` and are dropped by C2-RULE-3. GOV.UK's
+organisation hub does not list its documents as links — it sends a reader to a **search query**.
+The rule that excludes search endpoints was written before any of this was seen, and it is not
+being relaxed now to rescue a number.
+
+**What GOVUK still contributes, and what it may not.** The 7 URLs are measured with the same rules
+and reported. **Every GOVUK figure is marked inconclusive (n = 7) and scores nothing** — not for a
+prediction, not for the continuation test, in either direction.
+
+**One further authority, by a procedure fixed before any candidate was inspected.** With GOVUK
+below the floor, a generalisation claim would rest on two authorities. So one more is added, and
+the selection procedure is written here *before it is run*:
+
+> Take the following five candidate hubs, in this fixed order, and test each for (a) HTTP 200,
+> (b) an XML sitemap reachable at `/sitemap.xml` or named in `robots.txt`, (c) no bot interstitial.
+> **The first candidate that passes all three is taken; the search stops there.** If its corpus
+> also falls below the floor of 15, it is likewise inconclusive and **no further authority is
+> added** — one attempt, declared as one.
+>
+> 1. Australia — `https://www.industry.gov.au/science-technology-and-innovation/technology/artificial-intelligence`
+> 2. Canada — `https://ised-isde.canada.ca/site/ised/en/artificial-intelligence`
+> 3. Ireland — `https://enterprise.gov.ie/en/what-we-do/innovation-research-development/artificial-intelligence/`
+> 4. Japan — `https://www.digital.go.jp/policies/ai`
+> 5. Singapore — `https://www.imda.gov.sg/how-we-can-help/artificial-intelligence`
+
+The order is alphabetical by country and was written down before any of the five was fetched. A
+candidate that 404s is simply disqualified; that is not a judgement about the country.
+
+**The predictions are not rewritten.** G1, G3 and G4 name GOVUK explicitly; where GOVUK is
+inconclusive those clauses are reported **NOT RESOLVABLE on GOVUK**, and the new authority is
+scored in its own right rather than substituted into GOVUK's place. G5 and the continuation test's
+clause (b) range over "the authorities measured", which now means EC, NIST and the new one, with
+GOVUK's n = 7 excluded from both.
+
+---
+
+## Amendment 3 — 2026-08-06, corpus stage, before any date signal existed: the chrome control
+
+**What forced it.** Two of the three measured authorities have no `<main>` element, so C2-RULE-2's
+fallback takes the whole document, and the whole document includes site chrome. It shows in the
+data before any date was collected: IE's first extracted links are *Privacy-Statement*,
+*cookie-management*, *publications*, *legislation*, *faqs*. A corpus of navigation is a poor stand-in
+for "the pages this hub sends a reader to". The rule is pre-registered and **is not being relaxed**;
+the primary scoring stays on the corpora as extracted.
+
+**The control, fixed before any signal exists.** For each authority, fetch **one unrelated page of
+the same host — the site's own home page `https://<host>/` — and extract links from it with the
+same extractor.** A corpus URL that also appears on the home page is **chrome**; one that does not
+is an **item**. This is a measurement, not a judgement: no URL is hand-classified.
+
+**How it is allowed to count.** Every headline figure is reported twice: over the full
+pre-registered corpus (**the scored figure**) and over the item-only subset (**the robustness
+figure**, stated with its n). **Predictions are scored on the full corpus only.** If the two
+readings disagree, that disagreement is itself reported, in the same type size, as a defect of the
+corpus rule (D7) — the instrument's own limit, not a result about any authority.
+
+For EC, whose corpus and signals are locked from session 94, the chrome control is computed the
+same way and applied as a **re-analysis of locked data**, clearly labelled; the locked figures
+themselves are not altered.
+
+---
+
+## Amendment 4 — 2026-08-06, corpus stage, before any date signal existed: the chrome filter moves into selection
+
+**What the amendment-3 control returned, immediately and before any date signal was collected:**
+of the 40 pre-registered corpus URLs, **NIST 39 and IE 39 are chrome** — links that also appear on
+the host's own home page. Scoring the currency signals of a navigation bar and calling it "what
+this hub tells a citer about its documents" would be a false headline, and it would be false for
+reasons visible in the corpus, not in the results.
+
+**The change.** For all authorities measured today, the corpus is the **first 40 same-host links in
+document order that are not chrome**, chrome being defined exactly as amendment 3 defines it
+(appearing on `https://<host>/`, same extractor). The host root itself is chrome by definition and
+is excluded. Everything else in C2-RULE-3 and C2-RULE-4 is unchanged, floor included.
+
+**What this decision was made on, and what it was blind to.** It was made on **corpus composition
+only**. At the moment of writing, no `Last-Modified`, no sitemap `<lastmod>` and no visible date had
+been collected for GOVUK, NIST or IE — `collect_signals_2.py` did not yet exist. The commit order in
+this repository is the evidence and is meant to be checked.
+
+**Both arms are kept and both are reported.** Arm A — the corpora exactly as first pre-registered
+(40/40/7). Arm B — the chrome-filtered corpora (NIST **35**, IE **17**, GOVUK **7**). **Predictions
+are scored on Arm B.** Arm A is measured and reported alongside; where the two arms disagree, the
+disagreement is reported in the same type size as the headline, as defect **D7** of the corpus rule.
+
+**EC is not re-collected.** Its locked corpus of 40 (of which 36 are items by the same control) and
+its locked signals from 08:26:37Z stand as measured; EC's Arm B figures are a **re-analysis of
+locked data**, labelled as such wherever they appear.
+
+**GOVUK remains inconclusive** at n = 7 under C2-RULE-4 — both arms agree, because none of its 7 is
+chrome — and scores nothing.
+
+*Correction to amendment 4, same stage, still before any date signal: the executed rule yields
+**NIST 34**, not the 35 quoted above. The difference is the host root `https://www.nist.gov/`,
+which the amendment's own sentence excludes as chrome by definition and which the earlier probe
+had counted as an item. IE is 17 and GOVUK 7 as stated. With the root excluded, **40 of 40** Arm-A
+NIST URLs are chrome and 39 of 40 IE.*
