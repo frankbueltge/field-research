@@ -1,0 +1,150 @@
+{
+ "instrument": "as-of-today",
+ "run_started_utc": "2026-08-06T08:26:37+00:00",
+ "corpus_size": 40,
+ "fetched_ok": 40,
+ "netfail": [],
+ "predictions": [
+  {
+   "id": "P1",
+   "claim": "≥80% of URLs with a Last-Modified header carry one younger than 24h",
+   "threshold": ">= 0.80",
+   "observed": 1.0,
+   "n": "40/40",
+   "verdict": "HELD"
+  },
+  {
+   "id": "P2",
+   "claim": "median |H - S| exceeds 30 days",
+   "threshold": "> 30 days",
+   "observed": 5.96,
+   "n": "17 pairs",
+   "verdict": "KILLED"
+  },
+  {
+   "id": "P3",
+   "claim": "≥25% of pairs have S older than 180d while H is younger than 24h",
+   "threshold": ">= 0.25",
+   "observed": 0.0588,
+   "n": "1/17",
+   "verdict": "KILLED"
+  },
+  {
+   "id": "P4",
+   "claim": "a visible date is found on fewer than half the pages",
+   "threshold": "< 0.50",
+   "observed": 0.85,
+   "n": "34/40",
+   "verdict": "KILLED"
+  }
+ ],
+ "unpredicted_observations": {
+  "sitemap_coverage": {
+   "in_sitemap": 17,
+   "of": 40,
+   "share": 0.425
+  },
+  "visible_date_coverage": {
+   "with_v": 34,
+   "of": 40,
+   "share": 0.85
+  },
+  "S_and_V_agree_to_the_day": {
+   "agree": 17,
+   "of": 17,
+   "share": 1.0,
+   "disagreements": []
+  },
+  "median_age_days": {
+   "S": 6.0,
+   "V": 10.4,
+   "H_hours": 0.41
+  },
+  "H_age_hours_max": 0.43,
+  "post_hoc_split_landing_vs_item": {
+   "note": "one path segment after /en/ = section landing page; two or more = item page. Defined after the run, reported as an observation, not a scored result.",
+   "landing": {
+    "n": 8,
+    "with_s": 0,
+    "with_v": 2
+   },
+   "item": {
+    "n": 32,
+    "with_s": 17,
+    "with_v": 32
+   }
+  },
+  "P3_phenomenon_measured_against_V_instead_of_S": {
+   "note": "NOT a prediction and NOT scored. P3 could only be scored where S exists, and S exists for none of the /news/ or /library/ items — i.e. the scoring set excluded most of the corpus's older documents. This is the same count run against the visible date V, computed after the run and reported as an observation. It is a defect of the pre-registered rule (D2), reported, not repaired.",
+   "hits": [
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies",
+     "v": "2025-05-22",
+     "v_age_days": 441.4
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/factpages/ai-continent-action-plan",
+     "v": "2025-05-07",
+     "v_age_days": 456.4
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act",
+     "v": "2025-07-31",
+     "v_age_days": 371.4
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/impact-assessment-regulation-artificial-intelligence",
+     "v": "2023-06-20",
+     "v_age_days": 1143.4
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/study-supporting-impact-assessment-ai-regulation",
+     "v": "2023-01-30",
+     "v_age_days": 1284.4
+    }
+   ],
+   "of_pairs": 34
+  },
+  "sitemap_coverage_by_section": {
+   "factpages": {
+    "in_sitemap": 1,
+    "total": 1
+   },
+   "faqs": {
+    "in_sitemap": 1,
+    "total": 1
+   },
+   "library": {
+    "in_sitemap": 0,
+    "total": 9
+   },
+   "news": {
+    "in_sitemap": 0,
+    "total": 7
+   },
+   "policies": {
+    "in_sitemap": 15,
+    "total": 17
+   }
+  },
+  "pages_with_no_date_signal_but_H": [
+   "https://digital-strategy.ec.europa.eu/en/shaping-europes-digital-future",
+   "https://digital-strategy.ec.europa.eu/en/activities",
+   "https://digital-strategy.ec.europa.eu/en/news",
+   "https://digital-strategy.ec.europa.eu/en/library",
+   "https://digital-strategy.ec.europa.eu/en/funding",
+   "https://digital-strategy.ec.europa.eu/en/consultations"
+  ],
+  "v_rule_used": {
+   "V1-last-update": 33,
+   "V3-time-element": 1,
+   "null": 6
+  },
+  "sitemap_pagination": {
+   "pages_requested": 40,
+   "identical_bytes_every_page": true,
+   "urls_indexed": 805,
+   "reading": "?page=N returned byte-identical content to page 1 on every request, so the site serves one sitemap of this size and does not paginate it. The 39 extra requests were wasted and are disclosed as an instrument defect (D1)."
+  }
+ }
+}

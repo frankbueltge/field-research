@@ -1,0 +1,105 @@
+# FINDINGS — "As of Today", run 1
+
+**Run:** 2026-08-06T08:26:37Z (UTC), one pass. **Corpus:** 40 URLs on
+`digital-strategy.ec.europa.eu`, selected by C-RULE-1..4 of `PREREGISTRATION.md` and committed
+before any date signal was collected. **Fetched:** 40 of 40, no `NETFAIL`.
+**Scored against:** the four predictions written before the first request went out.
+
+Everything here is a statement about what the pages *say* about their own currency. Nothing here
+establishes when a page actually changed; the capture history that would settle that was
+unreachable from this session's network (opening record, `journal/2026-08-06.md`).
+
+## The four predictions
+
+| | Prediction | Rule | Observed | Verdict |
+|---|---|---|---|---|
+| **P1** | ≥ 80 % of pages carry a `Last-Modified` younger than 24 h | ≥ 0.80 | **1.00 (40/40)** | **HELD** |
+| **P2** | median &#124;H − S&#124; > 30 days | > 30 d | **5.96 d** (17 pairs) | **KILLED** |
+| **P3** | ≥ 25 % of pairs: S older than 180 d while H younger than 24 h | ≥ 0.25 | **0.059 (1/17)** | **KILLED** |
+| **P4** | a visible date on fewer than half the pages | < 0.50 | **0.85 (34/40)** | **KILLED** |
+
+**One held, three killed.** The pre-registration's own continuation test — *at least one of P1–P3
+holds and at least one is killed* — is met, and it is met in the least flattering way available:
+the prediction that survived is the one the literature had already made.
+
+### P1, held, and it is not a discovery
+
+Every page in the corpus returned a `Last-Modified` header, and every one of them was younger than
+**26 minutes** (median 25 min; oldest 0.43 h). The `ETag` values are of the form
+`W/"1786003255-gzip"` — a Unix timestamp of the same render. The header answers *"when was this
+delivered?"*, not *"when did this change?"*.
+
+This was already measured once at web scale: Thompson, WebSci'24
+(https://arxiv.org/abs/2404.09770) reports `Last-Modified` present on ~17 % of crawled responses,
+and in one crawl 53 % of those stamped within 0.0 s of the crawl itself. **P1 confirms a known
+mechanism on a specific surface. It is reported here as confirmation, not as a finding.**
+
+### P2 and P3, killed, and why
+
+Both assumed that the publisher-stated date would often be old. On the 17 corpus URLs the sitemap
+lists, it is not: median age **6.0 days**. This is a regulatory surface in the middle of an
+implementation wave, and its policy pages are genuinely being edited. Only one of the 17 was older
+than 180 days.
+
+**A defect of the pre-registered rule, disclosed and not repaired (D2).** P3 could only be scored
+where `S` exists — and `S` exists for **none** of the corpus's `/news/` (0 of 7) or `/library/`
+(0 of 9) items, which is exactly where the old documents are. Run against the *visible* date `V`
+instead, the same count gives **5 of 34 (14.7 %)** pages carrying a printed date older than 180 days
+while the header says minutes: the two 2023 impact-assessment documents (1 143 and 1 284 days), the
+February-2025 prohibited-practices guidelines page, and two others. **14.7 % is still below the
+pre-registered 25 %, so P3 fails on both readings** — the defect changes the number and not the
+verdict, and it is recorded here so that it cannot later be presented as a rescue.
+
+### P4, killed, and it inverts the concept's own assumption
+
+A printed date was found on **34 of 40** pages — and on **32 of 32** item pages. The 6 without one
+are all section landing pages (`/en/news`, `/en/library`, `/en/funding`, `/en/consultations`,
+`/en/activities`, `/en/shaping-europes-digital-future`) — indexes rather than documents, which is a
+fair reason for them to carry no date and is stated as such rather than counted as a failure.
+
+## Unpredicted observations — reported as observations, scored as nothing
+
+1. **The two publisher-stated signals are one signal in two places.** Where both exist (17 pages),
+   `S` and `V` agree **to the day, 17 of 17**. No disagreement anywhere in the corpus. The most
+   economical reading is that both are emitted from the same field in the publishing system;
+   this is inference, not established here.
+2. **The machine-readable signal is missing exactly where dated documents live.** `S` covers 15 of
+   17 `/policies/` pages, the single `/faqs/` and `/factpages/` page — and **0 of 9 `/library/`
+   and 0 of 7 `/news/` items.**
+3. **Coverage is inverted from what a tool would want.** The date a *human* can read: 34/40. The
+   date a *machine* can read reliably: 17/40. The date a machine gets for free: 40/40, and it is
+   the useless one.
+4. **Six pages state no date at all** other than the delivery header. All six are landing pages.
+5. **Post-hoc split, disclosed as post-hoc** (one path segment after `/en/` = landing page, two or
+   more = item page): landing pages 8 — `S` on 0, `V` on 2; item pages 32 — `S` on 17, `V` on 32.
+
+## Defects of this instrument, named by this run
+
+- **D1 — wasted requests.** `collect_signals.py` followed `sitemap.xml?page=N` up to 40 pages on the
+  assumption that the site paginates. Every page returned **byte-identical** content (171 552 bytes,
+  805 URLs). 39 of the 40 sitemap requests were pointless. Disclosed; the URL index is unaffected.
+- **D2 — the scoring set excluded the phenomenon.** See P3 above.
+- **D3 — one authority, one moment.** 40 URLs from a single site at a single timestamp. Nothing here
+  supports a statement about official pages in general, and none is made.
+- **D4 — `V` is extracted by a fixed pattern set** (`PREREGISTRATION.md` M-3). It found a label on
+  34 pages; it cannot prove it found every label a human would see. Session 93's D6 is the precedent
+  for exactly this failure, so the figure is stated as *found by these patterns*, not as *present*.
+- **D5 — `S` is a claim too.** The sitemap's `<lastmod>` is the publishing system's assertion. Its
+  agreement with `V` shows internal consistency, not correctness.
+
+## What this run supports, stated at the strength it can carry
+
+On this surface, on this date: **a citer or a tool asking "when did this page last change?" gets an
+answer that is always "just now" if it asks the transport layer, gets no answer at all on 23 of 40
+pages if it asks the sitemap, and gets a plausible answer on 34 of 40 if a human reads the page.**
+Whether those printed dates are true is not established here and would need capture history.
+
+## Reproduce
+
+```
+python3 collect_corpus.py      # rebuilds corpus.json from the live seed page
+python3 collect_signals.py     # fetches the 40 pages + the sitemap -> signals.json
+python3 analyse.py             # scores P1-P4 -> results.json
+```
+The surface moves; a re-run will not reproduce these numbers, and the committed
+`signals.json` is the record of this moment.
