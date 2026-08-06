@@ -1,0 +1,611 @@
+{
+ "control": "post-hoc V probe — labelled, scores nothing",
+ "probed_utc": "2026-08-06T14:42:52+00:00",
+ "note": "EC pages are re-fetched now, hours after their locked 08:26:37Z collection; the probe measures the extractor, not EC's state at that time",
+ "authorities": {
+  "GOVUK": {
+   "n_arm_b_ok": 7,
+   "prereg_v_n": 7,
+   "prereg_v_share": 100.0,
+   "probe_v_n": 6,
+   "probe_v_share": 85.7,
+   "missed_by_prereg_pattern": 0,
+   "rows": [
+    {
+     "url": "https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology",
+     "prereg_v": "2026-07-15T00:00:00+00:00",
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.gov.uk/government/publications/ai-security-institute-frontier-ai-trends-report-factsheet",
+     "prereg_v": "2025-12-18T00:00:00+00:00",
+     "probe_v": "18 December 2025",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.gov.uk/government/publications/secure-ai-infrastructure-call-for-information",
+     "prereg_v": "2026-01-29T00:00:00+00:00",
+     "probe_v": "29 January 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.gov.uk/government/news/uk-and-australia-pact-on-fast-moving-ai-security-risks",
+     "prereg_v": "2026-05-25T00:00:00+00:00",
+     "probe_v": "25 May 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.gov.uk/government/news/openai-and-microsoft-join-uks-international-coalition-to-safeguard-ai-development",
+     "prereg_v": "2026-02-19T00:00:00+00:00",
+     "probe_v": "19 February 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.gov.uk/government/publications/assessment-of-ai-capabilities-and-the-impact-on-the-uk-labour-market",
+     "prereg_v": "2026-01-28T00:00:00+00:00",
+     "probe_v": "28 January 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.gov.uk/government/publications/ian-hogarths-declared-outside-interests",
+     "prereg_v": "2025-02-24T00:00:00+00:00",
+     "probe_v": "18 October 2024",
+     "fetch": "OK"
+    }
+   ]
+  },
+  "NIST": {
+   "n_arm_b_ok": 34,
+   "prereg_v_n": 9,
+   "prereg_v_share": 26.5,
+   "probe_v_n": 13,
+   "probe_v_share": 38.2,
+   "missed_by_prereg_pattern": 11,
+   "rows": [
+    {
+     "url": "https://www.nist.gov/artificial-intelligence/ai-congressional-mandates-executive-orders-and-actions",
+     "prereg_v": null,
+     "probe_v": "January 21, 2025",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+     "prereg_v": "2023-01-26T12:00:00+00:00",
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/programs-projects/concept-note-ai-rmf-profile-trustworthy-ai-critical-infrastructure",
+     "prereg_v": "2026-04-07T12:00:00+00:00",
+     "probe_v": "April 6, 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/artificial-intelligence/nist-information-technology-laboratory-itl-ai-program",
+     "prereg_v": null,
+     "probe_v": "March 12, 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/caisi",
+     "prereg_v": "2026-03-23T12:00:00+00:00",
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/ai-research",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/artificial-intelligence/ai-research-identifying-managing-harmful-bias-ai",
+     "prereg_v": null,
+     "probe_v": "April 6, 2020",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/artificial-intelligence/ai-research-explainability",
+     "prereg_v": null,
+     "probe_v": "April 6, 2020",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/artificial-intelligence/ai-research-security-and-resilience",
+     "prereg_v": null,
+     "probe_v": "April 20, 2020",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/artificial-intelligence/nists-ai-standards-zero-drafts-pilot-project-accelerate-standardization",
+     "prereg_v": null,
+     "probe_v": "March 4, 2025",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/artificial-intelligence/ai-research/tevv-athlon-framework-evaluating-ai-systems",
+     "prereg_v": null,
+     "probe_v": "August 4, 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/artificial-intelligence/ai-standards",
+     "prereg_v": null,
+     "probe_v": "August 3, 2021",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/artificial-intelligence/nist-ai-consortium",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/artificial-intelligence/technical-contributions-ai-governance",
+     "prereg_v": null,
+     "probe_v": "July 26, 2021",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/artificial-intelligence/itl-ai-engagement",
+     "prereg_v": null,
+     "probe_v": "June 16, 2020",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/agentic-ai",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/ai-test-evaluation-validation-and-verification-tevv",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/applied-ai",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/autonomous-systems",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/hardware-ai",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/machine-learning",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/trustworthy-and-responsible-ai",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/news-events/events/2026/07/securing-ai-data-center-architecture-security-posture-and-emerging",
+     "prereg_v": null,
+     "probe_v": "May 6, 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/news-events/news/2026/07/department-commerce-announces-letters-intent-7-companies-874-million",
+     "prereg_v": "2026-07-29T12:00:00+00:00",
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/news-events/news/2026/07/announcing-nists-artificial-intelligence-technology-evaluation-aite",
+     "prereg_v": "2026-07-27T12:00:00+00:00",
+     "probe_v": "July 28, 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/news-events/news-updates/topic/2753736",
+     "prereg_v": "2026-08-04T12:00:00+00:00",
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/blogs/taking-measure/ai-doctors-office-how-standards-can-support-trustworthiness",
+     "prereg_v": "2026-01-07T12:00:00+00:00",
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/blogs/taking-measure/robots-and-ai-are-working-together-bring-you-better-medicines-shampoo-and-more",
+     "prereg_v": "2025-01-15T12:00:00+00:00",
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/blogs/taking-measure/trash-cash-how-ai-and-machine-learning-can-help-make-recycling-less-expensive",
+     "prereg_v": "2024-05-15T12:00:00+00:00",
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/blogs/taking-measure/categories/2753736",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/publications/search/topic/2753736",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/laboratories/projects-programs/topic/2753736",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/patents/topic/2753736",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://www.nist.gov/news-events/upcoming-events/topic/2753736",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    }
+   ]
+  },
+  "IE": {
+   "n_arm_b_ok": 17,
+   "prereg_v_n": 2,
+   "prereg_v_share": 11.8,
+   "probe_v_n": 0,
+   "probe_v_share": 0.0,
+   "missed_by_prereg_pattern": 0,
+   "rows": [
+    {
+     "url": "https://enterprise.gov.ie/ga/a-ndeanaimid/nualaiocht-taighde-forbairt/artificial-intelligence",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://enterprise.gov.ie/en/what-we-do/supports-for-smes/digital-transformation",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://enterprise.gov.ie/en/what-we-do/innovation-research-development/artificial-intelligence/how-ai-applies-to-my-organisation.html",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://enterprise.gov.ie/en/what-we-do/innovation-research-development/artificial-intelligence/digital-and-ai-strategy.html",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://enterprise.gov.ie/en/what-we-do/supports-for-smes/digital-transformation/charter-for-digital-inclusion",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://enterprise.gov.ie/en/what-we-do/supports-for-smes/digital-transformation/grow-digital",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://enterprise.gov.ie/en/what-we-do/innovation-research-development/european-digital-innovation-hubs",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://enterprise.gov.ie/en/what-we-do/innovation-research-development/artificial-intelligence/eu-ai-act/eu-ai-act-and-my-organisation.html",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://enterprise.gov.ie/en/publications/ireland-in-the-digital-decade.html",
+     "prereg_v": "2025-06-16T00:00:00+00:00",
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://enterprise.gov.ie/en/what-we-do/the-business-environment/digital-single-market/eu-digital-single-market-aspects/digital-services-act",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://enterprise.gov.ie/en/what-we-do/innovation-research-development/disruptive-technologies-innovation-fund",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://enterprise.gov.ie/en/what-we-do/innovation-research-development/research-development-and-innovation-programmes",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://enterprise.gov.ie/en/what-we-do/innovation-research-development/construction-innovation",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://enterprise.gov.ie/en/what-we-do/innovation-research-development/european-space-agency",
+     "prereg_v": "2019-06-19T00:00:00+00:00",
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://enterprise.gov.ie/en/what-we-do/innovation-research-development/smart-specialisation",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://enterprise.gov.ie/en/what-we-do/innovation-research-development/intellectual-property",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://enterprise.gov.ie/en/Our-Offices-and-Agencies",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    }
+   ]
+  },
+  "EC": {
+   "n_arm_b_ok": 36,
+   "prereg_v_n": 31,
+   "prereg_v_share": 86.1,
+   "probe_v_n": 30,
+   "probe_v_share": 83.3,
+   "missed_by_prereg_pattern": 0,
+   "rows": [
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/shaping-europes-digital-future",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies",
+     "prereg_v": "2025-05-22T00:00:00+00:00",
+     "probe_v": "22 May 2025",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/activities",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/funding",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/events",
+     "prereg_v": "2026-12-02T00:00:00+00:00",
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/consultations",
+     "prereg_v": null,
+     "probe_v": null,
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/artificial-intelligence",
+     "prereg_v": "2026-08-03T00:00:00+00:00",
+     "probe_v": "3 August 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence",
+     "prereg_v": "2026-07-31T00:00:00+00:00",
+     "probe_v": "31 July 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/factpages/ai-continent-action-plan",
+     "prereg_v": "2025-05-07T00:00:00+00:00",
+     "probe_v": "7 May 2025",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-factories",
+     "prereg_v": "2026-08-03T00:00:00+00:00",
+     "probe_v": "3 August 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-pact",
+     "prereg_v": "2026-08-03T00:00:00+00:00",
+     "probe_v": "3 August 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act",
+     "prereg_v": "2025-07-31T00:00:00+00:00",
+     "probe_v": "31 July 2025",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-ai-system-definition-facilitate-first-ai-acts-rules-application",
+     "prereg_v": "2026-04-08T00:00:00+00:00",
+     "probe_v": "8 April 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-scope-obligations-providers-general-purpose-ai-models-under-ai-act",
+     "prereg_v": "2026-04-20T00:00:00+00:00",
+     "probe_v": "20 April 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai",
+     "prereg_v": "2026-07-31T00:00:00+00:00",
+     "probe_v": "31 July 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models",
+     "prereg_v": "2026-03-26T00:00:00+00:00",
+     "probe_v": "26 March 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+     "prereg_v": "2026-07-31T00:00:00+00:00",
+     "probe_v": "31 July 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/eu-icons-labelling-ai-generated-content",
+     "prereg_v": "2026-07-20T00:00:00+00:00",
+     "probe_v": "20 July 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/guidelines-transparency-ai-generated-content",
+     "prereg_v": "2026-08-05T00:00:00+00:00",
+     "probe_v": "6 August 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/news/supporting-implementation-ai-act-clear-guidelines",
+     "prereg_v": "2026-07-31T00:00:00+00:00",
+     "probe_v": "31 July 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/enforcement-ai-act",
+     "prereg_v": "2026-07-31T00:00:00+00:00",
+     "probe_v": "31 July 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-board",
+     "prereg_v": "2026-07-09T00:00:00+00:00",
+     "probe_v": "9 July 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-scientific-panel",
+     "prereg_v": "2026-06-01T00:00:00+00:00",
+     "probe_v": "1 June 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-advisory-forum",
+     "prereg_v": "2026-06-01T00:00:00+00:00",
+     "probe_v": "1 June 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-act-governance-and-enforcement",
+     "prereg_v": "2026-07-31T00:00:00+00:00",
+     "probe_v": "31 July 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/eu-action-plan-cybersecurity-and-artificial-intelligence",
+     "prereg_v": "2026-07-10T00:00:00+00:00",
+     "probe_v": "10 July 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/digital-omnibus-ai-regulation-proposal",
+     "prereg_v": "2026-07-27T00:00:00+00:00",
+     "probe_v": "27 July 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/digital-rulebook",
+     "prereg_v": "2026-07-27T00:00:00+00:00",
+     "probe_v": "27 July 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/news/eu-agrees-simplify-ai-rules-boost-innovation-and-ban-nudification-apps-protect-citizens",
+     "prereg_v": "2026-05-08T00:00:00+00:00",
+     "probe_v": "8 May 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force",
+     "prereg_v": "2026-07-31T00:00:00+00:00",
+     "probe_v": "31 July 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/impact-assessment-regulation-artificial-intelligence",
+     "prereg_v": "2023-06-20T00:00:00+00:00",
+     "probe_v": "20 June 2023",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/library/study-supporting-impact-assessment-ai-regulation",
+     "prereg_v": "2023-01-30T00:00:00+00:00",
+     "probe_v": "30 January 2023",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/faqs/navigating-ai-act",
+     "prereg_v": "2026-07-27T00:00:00+00:00",
+     "probe_v": "27 July 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-act-standardisation",
+     "prereg_v": "2026-08-03T00:00:00+00:00",
+     "probe_v": "3 August 2026",
+     "fetch": "OK"
+    },
+    {
+     "url": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-guidelines-transparency-obligations-providers-and-deployers-certain-ai-systems",
+     "prereg_v": "2026-07-27T00:00:00+00:00",
+     "probe_v": "27 July 2026",
+     "fetch": "OK"
+    }
+   ]
+  }
+ }
+}

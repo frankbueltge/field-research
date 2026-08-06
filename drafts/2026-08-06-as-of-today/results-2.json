@@ -1,0 +1,370 @@
+{
+ "instrument": "as-of-today",
+ "stage": "analysis, proof session 2",
+ "preregistration": "PREREGISTRATION-2.md (amendments 1-4)",
+ "run_started_utc": "2026-08-06T14:34:38+00:00",
+ "scored_arm": "B (chrome-filtered, amendment 4)",
+ "authorities": {
+  "GOVUK": {
+   "seed": "https://www.gov.uk/government/organisations/ai-security-institute",
+   "sitemap": {
+    "index": "https://www.gov.uk/sitemap.xml",
+    "index_status": 200,
+    "is_sitemap_index": true,
+    "children_total": 35,
+    "children_read": 35,
+    "children_unread": 0,
+    "budget_bound": "all-corpus-urls-matched",
+    "bytes": 190027460
+   },
+   "arm_b": {
+    "n_fetched": 7,
+    "n_ok": 7,
+    "n_netfail": 0,
+    "h_n": 0,
+    "h_share": 0.0,
+    "s_n": 7,
+    "s_share": 100.0,
+    "v_n": 7,
+    "v_share": 100.0,
+    "h_fresh_24h_n": 0,
+    "h_fresh_24h_share_of_h": null,
+    "sv_both_n": 7,
+    "sv_agree_to_day_n": 0,
+    "sv_agree_share": 0.0,
+    "hs_both_n": 0,
+    "hs_gap_days_median": null,
+    "hs_gap_over_1d_n": 0,
+    "hs_gap_over_1d_share": null
+   },
+   "arm_a": {
+    "n_fetched": 7,
+    "n_ok": 7,
+    "n_netfail": 0,
+    "h_n": 0,
+    "h_share": 0.0,
+    "s_n": 7,
+    "s_share": 100.0,
+    "v_n": 7,
+    "v_share": 100.0,
+    "h_fresh_24h_n": 0,
+    "h_fresh_24h_share_of_h": null,
+    "sv_both_n": 7,
+    "sv_agree_to_day_n": 0,
+    "sv_agree_share": 0.0,
+    "hs_both_n": 0,
+    "hs_gap_days_median": null,
+    "hs_gap_over_1d_n": 0,
+    "hs_gap_over_1d_share": null
+   },
+   "inconclusive_n_under_15": true
+  },
+  "NIST": {
+   "seed": "https://www.nist.gov/artificial-intelligence",
+   "sitemap": {
+    "index": "https://www.nist.gov/sitemap.xml",
+    "index_status": 200,
+    "is_sitemap_index": true,
+    "children_total": 56,
+    "children_read": 56,
+    "children_unread": 0,
+    "budget_bound": null,
+    "bytes": 28263431
+   },
+   "arm_b": {
+    "n_fetched": 34,
+    "n_ok": 34,
+    "n_netfail": 0,
+    "h_n": 34,
+    "h_share": 100.0,
+    "s_n": 28,
+    "s_share": 82.4,
+    "v_n": 9,
+    "v_share": 26.5,
+    "h_fresh_24h_n": 34,
+    "h_fresh_24h_share_of_h": 100.0,
+    "sv_both_n": 8,
+    "sv_agree_to_day_n": 2,
+    "sv_agree_share": 25.0,
+    "hs_both_n": 28,
+    "hs_gap_days_median": 69.85,
+    "hs_gap_over_1d_n": 27,
+    "hs_gap_over_1d_share": 96.4
+   },
+   "arm_a": {
+    "n_fetched": 40,
+    "n_ok": 40,
+    "n_netfail": 0,
+    "h_n": 40,
+    "h_share": 100.0,
+    "s_n": 38,
+    "s_share": 95.0,
+    "v_n": 10,
+    "v_share": 25.0,
+    "h_fresh_24h_n": 40,
+    "h_fresh_24h_share_of_h": 100.0,
+    "sv_both_n": 9,
+    "sv_agree_to_day_n": 0,
+    "sv_agree_share": 0.0,
+    "hs_both_n": 38,
+    "hs_gap_days_median": 345.57,
+    "hs_gap_over_1d_n": 38,
+    "hs_gap_over_1d_share": 100.0
+   },
+   "inconclusive_n_under_15": false
+  },
+  "IE": {
+   "seed": "https://enterprise.gov.ie/en/what-we-do/innovation-research-development/artificial-intelligence/",
+   "sitemap": {
+    "index": "https://enterprise.gov.ie/sitemap.xml",
+    "index_status": 200,
+    "is_sitemap_index": false,
+    "children_total": 0,
+    "children_read": 0,
+    "children_unread": 0,
+    "budget_bound": null,
+    "bytes": 1296575
+   },
+   "arm_b": {
+    "n_fetched": 17,
+    "n_ok": 17,
+    "n_netfail": 0,
+    "h_n": 0,
+    "h_share": 0.0,
+    "s_n": 13,
+    "s_share": 76.5,
+    "v_n": 2,
+    "v_share": 11.8,
+    "h_fresh_24h_n": 0,
+    "h_fresh_24h_share_of_h": null,
+    "sv_both_n": 2,
+    "sv_agree_to_day_n": 0,
+    "sv_agree_share": 0.0,
+    "hs_both_n": 0,
+    "hs_gap_days_median": null,
+    "hs_gap_over_1d_n": 0,
+    "hs_gap_over_1d_share": null
+   },
+   "arm_a": {
+    "n_fetched": 40,
+    "n_ok": 40,
+    "n_netfail": 0,
+    "h_n": 0,
+    "h_share": 0.0,
+    "s_n": 39,
+    "s_share": 97.5,
+    "v_n": 0,
+    "v_share": 0.0,
+    "h_fresh_24h_n": 0,
+    "h_fresh_24h_share_of_h": null,
+    "sv_both_n": 0,
+    "sv_agree_to_day_n": 0,
+    "sv_agree_share": null,
+    "hs_both_n": 0,
+    "hs_gap_days_median": null,
+    "hs_gap_over_1d_n": 0,
+    "hs_gap_over_1d_share": null
+   },
+   "inconclusive_n_under_15": false
+  },
+  "EC": {
+   "seed": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+   "source": "locked session-94 signals.json, re-analysed; NOT re-collected",
+   "locked_run_started_utc": "2026-08-06T08:26:37+00:00",
+   "arm_b": {
+    "n_fetched": 36,
+    "n_ok": 36,
+    "n_netfail": 0,
+    "h_n": 36,
+    "h_share": 100.0,
+    "s_n": 16,
+    "s_share": 44.4,
+    "v_n": 31,
+    "v_share": 86.1,
+    "h_fresh_24h_n": 36,
+    "h_fresh_24h_share_of_h": 100.0,
+    "sv_both_n": 16,
+    "sv_agree_to_day_n": 16,
+    "sv_agree_share": 100.0,
+    "hs_both_n": 16,
+    "hs_gap_days_median": 5.93,
+    "hs_gap_over_1d_n": 16,
+    "hs_gap_over_1d_share": 100.0
+   },
+   "arm_a": {
+    "n_fetched": 40,
+    "n_ok": 40,
+    "n_netfail": 0,
+    "h_n": 40,
+    "h_share": 100.0,
+    "s_n": 17,
+    "s_share": 42.5,
+    "v_n": 34,
+    "v_share": 85.0,
+    "h_fresh_24h_n": 40,
+    "h_fresh_24h_share_of_h": 100.0,
+    "sv_both_n": 17,
+    "sv_agree_to_day_n": 17,
+    "sv_agree_share": 100.0,
+    "hs_both_n": 17,
+    "hs_gap_days_median": 5.96,
+    "hs_gap_over_1d_n": 17,
+    "hs_gap_over_1d_share": 100.0
+   },
+   "inconclusive_n_under_15": false
+  }
+ },
+ "predictions": {
+  "G1": {
+   "statement": "H present on <10 % of GOVUK and >90 % of NIST",
+   "govuk_h_share": 0.0,
+   "govuk_verdict": "NOT RESOLVABLE — GOVUK inconclusive at n=7 (C2-RULE-4, amendment 2)",
+   "nist_h_share": 100.0,
+   "nist_verdict": "HELD",
+   "verdict": "HELD (NIST half only; GOVUK half not resolvable)"
+  },
+  "G2": {
+   "statement": "where H exists, >=80 % younger than 24 h — KNOWN MECHANISM, SCORES NOTHING",
+   "per_authority": {
+    "EC": {
+     "h_n": 36,
+     "fresh_share": 100.0,
+     "verdict": "HELD"
+    },
+    "NIST": {
+     "h_n": 34,
+     "fresh_share": 100.0,
+     "verdict": "HELD"
+    },
+    "IE": {
+     "h_n": 0,
+     "verdict": "NOT APPLICABLE (fewer than 10 H)"
+    },
+    "GOVUK": {
+     "h_n": 0,
+     "verdict": "NOT APPLICABLE (fewer than 10 H)"
+    }
+   },
+   "counts_toward_continuation": false
+  },
+  "G3": {
+   "statement": "S and V agree to the day on <80 % for at least one new authority",
+   "per_authority": {
+    "NIST": {
+     "both_n": 8,
+     "agree_share": 25.0
+    },
+    "IE": {
+     "both_n": 2,
+     "agree_share": 0.0
+    }
+   },
+   "below_80": [
+    "NIST",
+    "IE"
+   ],
+   "verdict": "HELD",
+   "ec_baseline": {
+    "both_n": 16,
+    "agree_share": 100.0
+   }
+  },
+  "G4": {
+   "statement": "sitemap coverage of the hub's own outbound corpus is < 100 %",
+   "nist_s_share": 82.4,
+   "ie_s_share": 76.5,
+   "govuk_verdict": "NOT RESOLVABLE — inconclusive at n=7",
+   "verdict": "HELD"
+  },
+  "G5": {
+   "statement": "largest pairwise difference in S-coverage > 25 points",
+   "s_shares": {
+    "EC": 44.4,
+    "NIST": 82.4,
+    "IE": 76.5
+   },
+   "spread_points": 38.0,
+   "verdict": "HELD"
+  },
+  "G6": {
+   "statement": "|H-S| > 1 day for >=60 % of URLs where both exist (INFORMED BY EC)",
+   "pooled_n": 28,
+   "over_1d_n": 27,
+   "over_1d_share": 96.4,
+   "median_gap_days": 69.85,
+   "verdict": "HELD"
+  }
+ },
+ "continuation_test": {
+  "clause_a_at_least_one_of_G1_G3_G4_G5_G6_holds": true,
+  "holds": [
+   "G1",
+   "G3",
+   "G4",
+   "G5",
+   "G6"
+  ],
+  "clause_b_profile_spread_over_25_points": true,
+  "profile_spreads": {
+   "h_share": 100.0,
+   "s_share": 38.0,
+   "v_share": 74.3
+  },
+  "citer_profiles": {
+   "EC": {
+    "h_share": 100.0,
+    "s_share": 44.4,
+    "v_share": 86.1
+   },
+   "NIST": {
+    "h_share": 100.0,
+    "s_share": 82.4,
+    "v_share": 26.5
+   },
+   "IE": {
+    "h_share": 0.0,
+    "s_share": 76.5,
+    "v_share": 11.8
+   }
+  },
+  "verdict": "CONTINUE"
+ },
+ "d7_arm_disagreement": {
+  "NIST": {
+   "h_share": {
+    "arm_b": 100.0,
+    "arm_a": 100.0
+   },
+   "s_share": {
+    "arm_b": 82.4,
+    "arm_a": 95.0
+   },
+   "v_share": {
+    "arm_b": 26.5,
+    "arm_a": 25.0
+   },
+   "sv_agree_share": {
+    "arm_b": 25.0,
+    "arm_a": 0.0
+   }
+  },
+  "IE": {
+   "h_share": {
+    "arm_b": 0.0,
+    "arm_a": 0.0
+   },
+   "s_share": {
+    "arm_b": 76.5,
+    "arm_a": 97.5
+   },
+   "v_share": {
+    "arm_b": 11.8,
+    "arm_a": 0.0
+   },
+   "sv_agree_share": {
+    "arm_b": 0.0,
+    "arm_a": null
+   }
+  }
+ }
+}
