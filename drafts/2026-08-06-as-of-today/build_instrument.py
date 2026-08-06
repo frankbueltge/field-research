@@ -1092,18 +1092,32 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
         "Future-dated printed dates, found by a general detector comparing every row's V to " +
         "that authority's own run timestamp (not special-cased to one URL): " + futureRows.length +
         " row" + (futureRows.length === 1 ? "" : "s") + " — " +
-        futureRows.map(function (r) { return r.authority + " " + r.url + " (v=" + r.v_fmt + ")"; }).join("; ") +
-        ". Both are symptoms of the same wrong-referent defect (D10/D11), confirmed by hand " +
-        "against the live pages, and are shown under \"confirmed wrong-referent\" on their " +
-        "slips, not as a separate tier."));
+        futureRows.map(function (r) { return r.authority + " " + r.url + " (v=" + r.v_fmt + ", referent class " + r.referent_class + ")"; }).join("; ") +
+        ". The referent test (below) independently classified both OTHER — another document's " +
+        "date, not this page's own."));
     }
-    var uc = DATA.meta.unaudited_by_authority || {};
-    var hc = DATA.meta.hand_checked_by_authority || {};
+    var sc = DATA.meta.self_by_authority || {};
+    var oc = DATA.meta.other_by_authority || {};
+    var ac = DATA.meta.unattributable_by_authority || {};
     foot.appendChild(el("div", null,
-      "Unaudited label-rule hits (D11, not opened by hand): " +
-      DATA.authorities.map(function (a) { return a.label + " " + (uc[a.key] || 0); }).join(", ") +
-      ". Hand-checked label-rule hits, found genuine: " +
-      DATA.authorities.map(function (a) { return a.label + " " + (hc[a.key] || 0); }).join(", ") + "."));
+      "Referent test (PREREGISTRATION-3.md), SELF / OTHER / UNATTRIBUTABLE by authority: " +
+      DATA.authorities.map(function (a) {
+        return a.label + " " + (sc[a.key] || 0) + "/" + (oc[a.key] || 0) + "/" + (ac[a.key] || 0);
+      }).join(", ") + ". Only SELF is served as a defensible date."));
+    var rt = DATA.meta.referent_test || {};
+    if (rt.hits_tested) {
+      foot.appendChild(el("div", null,
+        "Referent test run: " + rt.hits_tested + " locked V hits re-fetched fresh and re-classified, " +
+        rt.fetch_fail_n + " fetch failure" + (rt.fetch_fail_n === 1 ? "" : "s") + ", " +
+        rt.changed_n + " row" + (rt.changed_n === 1 ? "" : "s") +
+        " where the fresh date differs from the locked run (excluded from the test's own agreement " +
+        "figures, still classified and still shown here). Started " + fmtUtc(rt.run_started_utc) + "."));
+    }
+    foot.appendChild(el("div", null,
+      "Hand-confirmed wrong-referent rows (D10/D11, opened by hand before the referent test " +
+      "existed — stronger evidence than the machine class, kept as an annotation and never " +
+      "overridden by it): " + (DATA.meta.hand_confirmed_n || 0) + ". Hand-checked label-rule hits " +
+      "found genuine, as a batch: " + (DATA.meta.hand_checked_genuine_n || 0) + "."));
   })();
 
   // ---- grouping ----
@@ -1138,14 +1152,9 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
         var btn = el("button", "aot-url-btn", null);
         btn.type = "button";
         btn.appendChild(document.createTextNode(pathLabel(row)));
-        var FLAG_LABEL = {
-          confirmed_wrong_referent: "wrong-referent",
-          suspect: "suspect",
-          hand_checked: "hand-checked",
-          unaudited: "unaudited"
-        };
-        if (row.flag_tier && FLAG_LABEL[row.flag_tier]) {
-          btn.appendChild(el("span", "aot-flag", FLAG_LABEL[row.flag_tier]));
+        var FLAG_LABEL = { SELF: "self", OTHER: "other", UNATTRIBUTABLE: "unattributable" };
+        if (row.referent_class && FLAG_LABEL[row.referent_class]) {
+          btn.appendChild(el("span", "aot-flag", FLAG_LABEL[row.referent_class]));
         }
         if (row.url === selectedUrl) btn.classList.add("aot-selected");
         btn.addEventListener("click", function () {
