@@ -25,7 +25,7 @@ the prediction that survived is the one the literature had already made.
 ### P1, held, and it is not a discovery
 
 Every page in the corpus returned a `Last-Modified` header, and every one of them was younger than
-**26 minutes** (median 25 min; oldest 0.43 h). The `ETag` values are of the form
+**26 minutes** (median 24.4 min; oldest 25.7 min = 0.43 h). The `ETag` values are of the form
 `W/"1786003255-gzip"` — a Unix timestamp of the same render. The header answers *"when was this
 delivered?"*, not *"when did this change?"*.
 
@@ -42,11 +42,13 @@ implementation wave, and its policy pages are genuinely being edited. Only one o
 than 180 days.
 
 **A defect of the pre-registered rule, disclosed and not repaired (D2).** P3 could only be scored
-where `S` exists — and `S` exists for **none** of the corpus's `/news/` (0 of 7) or `/library/`
-(0 of 9) items, which is exactly where the old documents are. Run against the *visible* date `V`
+where `S` exists — and `S` exists for **none** of the corpus's `/news/` (0 of 6) or `/library/`
+(0 of 8) item pages, which is exactly where the old documents are. Run against the *visible* date `V`
 instead, the same count gives **5 of 34 (14.7 %)** pages carrying a printed date older than 180 days
 while the header says minutes: the two 2023 impact-assessment documents (1 143 and 1 284 days), the
-February-2025 prohibited-practices guidelines page, and two others. **14.7 % is still below the
+prohibited-practices guidelines page (printed date 31 July 2025, 371 days), the AI-continent
+factpage (456 days) — and one section landing page, `/en/policies` (441 days), which the rest of
+this document treats as a non-document category and which is named here rather than quietly counted. **14.7 % is still below the
 pre-registered 25 %, so P3 fails on both readings** — the defect changes the number and not the
 verdict, and it is recorded here so that it cannot later be presented as a rescue.
 
@@ -63,9 +65,9 @@ fair reason for them to carry no date and is stated as such rather than counted 
    `S` and `V` agree **to the day, 17 of 17**. No disagreement anywhere in the corpus. The most
    economical reading is that both are emitted from the same field in the publishing system;
    this is inference, not established here.
-2. **The machine-readable signal is missing exactly where dated documents live.** `S` covers 15 of
-   17 `/policies/` pages, the single `/faqs/` and `/factpages/` page — and **0 of 9 `/library/`
-   and 0 of 7 `/news/` items.**
+2. **The machine-readable signal is missing exactly where dated documents live.** Counting item
+   pages only: `S` covers 15 of 16 `/policies/` items, the single `/faqs/` and the single
+   `/factpages/` page — and **0 of 8 `/library/` and 0 of 6 `/news/` items.**
 3. **Coverage is inverted from what a tool would want.** The date a *human* can read: 34/40. The
    date a *machine* can read reliably: 17/40. The date a machine gets for free: 40/40, and it is
    the useless one.
@@ -102,17 +104,61 @@ one blocking objection. Three of its attacks it reported as failed attacks, in i
   Commission guidance page" as a standing prescription rather than about the 40 pages measured at
   one timestamp. Rescoped.
 
+## What the Verifier found — PASS WITH FINDINGS, three of them blocking
+
+*Convened this session, independently of the builder, against commit `0f0a1d8`. It recomputed every
+figure from `signals.json` with its own code rather than re-running `analyse.py`, and checked each
+external citation by fetching it. Its full verdict is summarised in the session's journal entry.*
+
+**Blocking, all three fixed at the root rather than in prose:**
+
+1. **A denominator was wrong in this instrument's own code (D7).** `sitemap_coverage_by_section`
+   counted a section's *landing* page inside that section's total, inflating three denominators by
+   one each. The published figures were "15 of 17 `/policies/`, 0 of 9 `/library/`, 0 of 7 `/news/`";
+   the correct item-page figures are **15 of 16, 0 of 8, 0 of 6**. `analyse.py` is fixed, the run
+   re-analysed from the untouched `signals.json`, and every affected number restated here, on the
+   workboard, and in `memory/claims.md`. **No verdict moves** — the sections still contain zero
+   sitemap entries — but the numbers were wrong and were printed.
+2. **`CONCEPT.md` stated the central asymmetry backwards.** "…unavailable on 6 of 40 and 23 of 40
+   pages respectively" pairs, in the order the sentence introduces them, `S`=6 and `V`=23 — the
+   inverse of the data. Rewritten without "respectively" and with each figure attached to its signal.
+3. **The concept cited a file that did not exist at the audited commit.** `PRIOR-ART.md` was written
+   after the reviewers were dispatched and committed at `4662309`. Conceded in full; the
+   Interlocutor charged the same thing independently, and the answer is in the journal.
+
+**Non-blocking, accepted and applied:** the median `H` age is 24.4 minutes, not 25 · D1's
+"byte-identical" overstated a log that recorded only length and URL count · the `V3` fallback matched
+a **future** date on `/en/events` (02 December 2026 — an upcoming-event date, not a currency signal),
+so the 34/40 count carries at least one false positive; **P4 is killed either way** (33/40 is still
+above half), and this is now D6 · the prose date for one P3-vs-`V` hit disagreed with the measured
+one · one of those five hits is a landing page, now named as such.
+
+**What the Verifier reproduced exactly:** all four prediction values and their denominators; the
+5.96-day median; the 1/17 and 5/34 counts; `S`↔`V` agreement 17/17; `V` on 34/40 and on all 32 item
+pages; the `ETag`-equals-`Last-Modified` identity on 40/40; that `analyse.py`'s thresholds and
+comparison directions match the pre-registration verbatim, with no threshold moved and no killed
+verdict softened in prose. On citations: the load-bearing arXiv paper's two figures were confirmed
+against its own text; two publisher pages returned 403 to every route and are recorded as
+corroborated by index rather than fetched.
+
 ## Defects of this instrument, named by this run
 
 - **D1 — wasted requests.** `collect_signals.py` followed `sitemap.xml?page=N` up to 40 pages on the
-  assumption that the site paginates. Every page returned **byte-identical** content (171 552 bytes,
-  805 URLs). 39 of the 40 sitemap requests were pointless. Disclosed; the URL index is unaffected.
+  assumption that the site paginates. Every request returned the **same byte-length and the same URL
+  count** (171 552 bytes, 805 URLs); the bodies themselves were not hashed, so byte-for-byte identity
+  is not evidenced by the committed log — the Skeptic's independent fetch did report page 1 and
+  `?page=2` byte-identical. 39 of the 40 sitemap requests were pointless. The URL index is unaffected.
 - **D2 — the scoring set excluded the phenomenon.** See P3 above.
 - **D3 — one authority, one moment.** 40 URLs from a single site at a single timestamp. Nothing here
   supports a statement about official pages in general, and none is made.
 - **D4 — `V` is extracted by a fixed pattern set** (`PREREGISTRATION.md` M-3). It found a label on
   34 pages; it cannot prove it found every label a human would see. Session 93's D6 is the precedent
   for exactly this failure, so the figure is stated as *found by these patterns*, not as *present*.
+- **D6 — the `V3` fallback is not scoped to currency.** `<time datetime>` matched an upcoming-event
+  date on `/en/events`, a date in the future. At least one of the 34 `V` hits is a false positive.
+  D4 named only false negatives; this is the opposite error, found by the Verifier.
+- **D7 — a landing page was counted in its own section's denominator.** Fixed in `analyse.py` and
+  restated everywhere the wrong figures appeared. See the Verifier section above.
 - **D5 — `S` is a claim too.** The sitemap's `<lastmod>` is the publishing system's assertion. Its
   agreement with `V` shows internal consistency, not correctness.
 

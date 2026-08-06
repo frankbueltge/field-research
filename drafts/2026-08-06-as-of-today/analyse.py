@@ -115,9 +115,15 @@ def main() -> int:
                      and r["h"] and (run - iso(r["h"])).total_seconds() / 3600.0 < 24],
             "of_pairs": len([r for r in with_v if r["h"]]),
         },
+        # Item pages only (depth > 1). The section LANDING page (/en/news, /en/library, /en/policies)
+        # shares its section's name at depth 1; counting it in the denominator inflated
+        # library, news and policies by one each in the first cut of this run. Found by the
+        # Verifier, session 94, and fixed here at the root (see FINDINGS.md, D7).
         "sitemap_coverage_by_section": {
-            sec: {"in_sitemap": sum(1 for r in ok if r["s"] and r["url"].split("/en/")[1].split("/")[0] == sec),
-                  "total": sum(1 for r in ok if r["url"].split("/en/")[1].split("/")[0] == sec)}
+            sec: {"in_sitemap": sum(1 for r in ok if r["s"] and depth(r["url"]) > 1
+                                    and r["url"].split("/en/")[1].split("/")[0] == sec),
+                  "item_pages": sum(1 for r in ok if depth(r["url"]) > 1
+                                    and r["url"].split("/en/")[1].split("/")[0] == sec)}
             for sec in sorted({r["url"].split("/en/")[1].split("/")[0] for r in ok if depth(r["url"]) > 1})
         },
         "pages_with_no_date_signal_but_H": [

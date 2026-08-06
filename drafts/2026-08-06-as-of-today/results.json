@@ -108,23 +108,23 @@
   "sitemap_coverage_by_section": {
    "factpages": {
     "in_sitemap": 1,
-    "total": 1
+    "item_pages": 1
    },
    "faqs": {
     "in_sitemap": 1,
-    "total": 1
+    "item_pages": 1
    },
    "library": {
     "in_sitemap": 0,
-    "total": 9
+    "item_pages": 8
    },
    "news": {
     "in_sitemap": 0,
-    "total": 7
+    "item_pages": 6
    },
    "policies": {
     "in_sitemap": 15,
-    "total": 17
+    "item_pages": 16
    }
   },
   "pages_with_no_date_signal_but_H": [

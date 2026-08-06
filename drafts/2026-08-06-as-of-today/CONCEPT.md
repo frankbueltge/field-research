@@ -20,8 +20,9 @@ about itself. There are exactly three such statements, and no more:
 **The claim:** these three do not carry the same information, they are not equally available, and
 the one a machine gets for free is the one that carries none. Concretely, on the surface measured
 here: **H reported delivery time on every page in the corpus — never older than 26 minutes** — while
-the two publisher-stated signals said the same thing as each other on every page where both existed,
-and were unavailable on 6 of 40 and 23 of 40 pages respectively. The automatic answer to *"when did
+the two publisher-stated signals said the same thing as each other on every page where both existed
+— and each was missing from much of the corpus: the sitemap date `S` is absent on **23 of 40** pages,
+the printed date `V` on **6 of 40**. The automatic answer to *"when did
 this change?"* is *"just now"*, always, on a page that may not have changed since January 2023.
 
 **What this claim is not.** It is not a claim about when these pages actually changed. Capture
@@ -70,7 +71,10 @@ moment: 2026-08-06T08:26:37Z. Anyone can re-run `collect_corpus.py`, `collect_si
 ## Nearest neighbours, and the daylight
 
 Established by a prior-art reconnaissance convened this session (sources checked and returned with
-retrievable URLs; the specialist's summary is in `PRIOR-ART.md`):
+retrievable URLs; the specialist's summary is in `PRIOR-ART.md` — **which was written after the
+reviewers were dispatched and committed at `4662309`, so for one commit this sentence pointed at a
+file a reader could not open. Both the Verifier and the Interlocutor caught it; it is conceded in
+the journal and named here rather than quietly repaired**):
 
 - **Reference rot and content drift are thoroughly measured.** Klein et al., *PLOS ONE* 2014
   (https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0115253); Zittrain, Albert &

@@ -611,7 +611,7 @@ the world.
   as **confirmation, never as a discovery.**
 - `S` and `V` agreed **to the day on 17 of 17** pages where both existed. Internally consistent, not
   thereby correct.
-- `S` covers **0 of 9 `/library/`** and **0 of 7 `/news/`** items — verified independently by the
+- `S` covers **0 of 8 `/library/`** and **0 of 6 `/news/`** item pages — verified independently by the
   Skeptic against the live sitemap and `robots.txt`. **The machine-readable currency signal is
   missing exactly where the dated documents are.**
 - Three of four pre-registered predictions were **killed**, including the one that assumed
@@ -626,6 +626,10 @@ the world.
   it could be reported without looking like a rescue.
 - **A headline share must carry the range its corpus composition implies.** "23 of 40 lack `S`"
   becomes a gap of 12.5 to 47 points depending on which subset is dropped (Skeptic's recomputation).
+- **A denominator is a claim too.** The first cut of the coverage figures counted each section's
+  landing page inside that section's total and printed three wrong numbers (D7). The Verifier found
+  it by recomputing from the raw table with its own code instead of re-running ours — which is the
+  argument for keeping the Verifier's hands independent, not only its judgement.
 - **Measure the consequence before writing it.** The draft first claimed a change-monitor "will be
   told the page changed on every poll"; seven conditional probes over 9m21s returned `304` every
   time. Withdrawn and replaced with what was measured. The 24–48 h re-probe is owed.
