@@ -66,3 +66,18 @@ afterwards as a reason to renegotiate that.
 ## Amendments
 
 *(None at lock time. Any amendment is appended here, dated, before the datum it affects.)*
+
+**A1 — 2026-08-06, session 97. How R4's agreement is counted.** Written **after** the classifier ran
+and **before** the blind adjudication returned; the commit order is the evidence and is meant to be
+checked. The lock said "agrees with the machine class" without saying how a human verdict maps onto
+the three machine classes, and the adjudicator was given the four answers SELF · OTHER · UNCLEAR ·
+UNREACHABLE. Settled now, before the answers exist, and settled against us where it is arguable:
+
+- **SELF ↔ SELF** and **OTHER ↔ OTHER** are agreements. **UNCLEAR ↔ UNATTRIBUTABLE** is an
+  agreement — both say *the referent cannot be established from the page*.
+- Every other pairing is a disagreement, including **human SELF vs machine UNATTRIBUTABLE**. That
+  pairing is the one most likely to arise (a page printing "Published: ‹date›" carries no *update*
+  label, so the classifier cannot call it SELF while a reader might), and it is counted as a
+  **failure of the classifier**, not as a near miss.
+- An **UNREACHABLE** item counts as a **disagreement**; the threshold stays 9 of 12. A test that got
+  easier because a page did not load would not be a test.

@@ -1,0 +1,153 @@
+{
+ "seed": 97,
+ "method": "records sorted by url, CHANGED rows excluded, 4 drawn per class with a seeded RNG",
+ "drawn_utc": "2026-08-06",
+ "items": [
+  {
+   "id": 1,
+   "url": "https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models",
+   "date_string": "26 March 2026",
+   "authority": "EC"
+  },
+  {
+   "id": 2,
+   "url": "https://digital-strategy.ec.europa.eu/en/news/eu-agrees-simplify-ai-rules-boost-innovation-and-ban-nudification-apps-protect-citizens",
+   "date_string": "8 May 2026",
+   "authority": "EC"
+  },
+  {
+   "id": 3,
+   "url": "https://digital-strategy.ec.europa.eu/en/policies/artificial-intelligence",
+   "date_string": "3 August 2026",
+   "authority": "EC"
+  },
+  {
+   "id": 4,
+   "url": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-guidelines-transparency-obligations-providers-and-deployers-certain-ai-systems",
+   "date_string": "27 July 2026",
+   "authority": "EC"
+  },
+  {
+   "id": 5,
+   "url": "https://enterprise.gov.ie/en/what-we-do/innovation-research-development/european-space-agency",
+   "date_string": "19 June 2019",
+   "authority": "IE"
+  },
+  {
+   "id": 6,
+   "url": "https://digital-strategy.ec.europa.eu/en/events",
+   "date_string": "02 December 2026",
+   "authority": "EC"
+  },
+  {
+   "id": 7,
+   "url": "https://www.nist.gov/el",
+   "date_string": "2026-07-14T12:00:00Z",
+   "authority": "NIST"
+  },
+  {
+   "id": 8,
+   "url": "https://www.nist.gov/mml",
+   "date_string": "2026-07-31T12:00:00Z",
+   "authority": "NIST"
+  },
+  {
+   "id": 9,
+   "url": "https://enterprise.gov.ie/en/publications/ireland-in-the-digital-decade.html",
+   "date_string": "16 June 2025",
+   "authority": "IE"
+  },
+  {
+   "id": 10,
+   "url": "https://www.nist.gov/programs-projects/concept-note-ai-rmf-profile-trustworthy-ai-critical-infrastructure",
+   "date_string": "2026-04-07T12:00:00Z",
+   "authority": "NIST"
+  },
+  {
+   "id": 11,
+   "url": "https://www.gov.uk/government/publications/assessment-of-ai-capabilities-and-the-impact-on-the-uk-labour-market",
+   "date_string": "28 January 2026",
+   "authority": "GOVUK"
+  },
+  {
+   "id": 12,
+   "url": "https://www.gov.uk/government/publications/secure-ai-infrastructure-call-for-information",
+   "date_string": "29 January 2026",
+   "authority": "GOVUK"
+  }
+ ],
+ "machine_classes_sealed": [
+  {
+   "id": 1,
+   "url": "https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models",
+   "class": "SELF",
+   "rule": "V1-last-update"
+  },
+  {
+   "id": 2,
+   "url": "https://digital-strategy.ec.europa.eu/en/news/eu-agrees-simplify-ai-rules-boost-innovation-and-ban-nudification-apps-protect-citizens",
+   "class": "SELF",
+   "rule": "V1-last-update"
+  },
+  {
+   "id": 3,
+   "url": "https://digital-strategy.ec.europa.eu/en/policies/artificial-intelligence",
+   "class": "SELF",
+   "rule": "V1-last-update"
+  },
+  {
+   "id": 4,
+   "url": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-guidelines-transparency-obligations-providers-and-deployers-certain-ai-systems",
+   "class": "SELF",
+   "rule": "V1-last-update"
+  },
+  {
+   "id": 5,
+   "url": "https://enterprise.gov.ie/en/what-we-do/innovation-research-development/european-space-agency",
+   "class": "OTHER",
+   "rule": "V2-published"
+  },
+  {
+   "id": 6,
+   "url": "https://digital-strategy.ec.europa.eu/en/events",
+   "class": "OTHER",
+   "rule": "V3-time-element"
+  },
+  {
+   "id": 7,
+   "url": "https://www.nist.gov/el",
+   "class": "OTHER",
+   "rule": "V3-time-element"
+  },
+  {
+   "id": 8,
+   "url": "https://www.nist.gov/mml",
+   "class": "OTHER",
+   "rule": "V3-time-element"
+  },
+  {
+   "id": 9,
+   "url": "https://enterprise.gov.ie/en/publications/ireland-in-the-digital-decade.html",
+   "class": "UNATTRIBUTABLE",
+   "rule": "V2-published"
+  },
+  {
+   "id": 10,
+   "url": "https://www.nist.gov/programs-projects/concept-note-ai-rmf-profile-trustworthy-ai-critical-infrastructure",
+   "class": "UNATTRIBUTABLE",
+   "rule": "V3-time-element"
+  },
+  {
+   "id": 11,
+   "url": "https://www.gov.uk/government/publications/assessment-of-ai-capabilities-and-the-impact-on-the-uk-labour-market",
+   "class": "UNATTRIBUTABLE",
+   "rule": "V2-published"
+  },
+  {
+   "id": 12,
+   "url": "https://www.gov.uk/government/publications/secure-ai-infrastructure-call-for-information",
+   "class": "UNATTRIBUTABLE",
+   "rule": "V2-published"
+  }
+ ]
+}
