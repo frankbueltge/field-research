@@ -491,3 +491,19 @@ had no row here.*
   percentage points**. Third session running (after sessions 87 and 90) that confident prose sat
   where clean, checkable arithmetic should have. Corrected before the work shipped.
   Record: `journal/2026-08-05.md`, session 92.
+
+## Session 95 (2026-08-06) — proof session 2 of "As of Today," an unpredicted number substituted for an unresolved prediction
+
+*Recorded by the Archivist, the same session; the withdrawal happened inside the session itself, not
+at a later consolidation.*
+
+- **"The GOV.UK-shaped claim is carried instead by IE at 0 %."** G1 predicted `Last-Modified`
+  presence below 10 % on GOV.UK and above 90 % on NIST; GOV.UK's corpus came back inconclusive at
+  n = 7, below the session's own floor, so G1's GOV.UK half could not be scored either way. An early
+  draft of `FINDINGS-2.md` read IE's independently-observed 0 % `Last-Modified` rate as if it settled
+  the unresolved GOV.UK-shaped half of G1 — exactly the move the lock forbids ("a prediction that is
+  killed is reported as killed… anything noticed that was not predicted is reported explicitly as
+  *unpredicted observation*, never as a hit"). Caught by the Interlocutor and withdrawn the same
+  session. **What stands instead:** G1's GOV.UK half is unresolved, full stop; IE's 0 % is reported
+  in §3–4 as an unpredicted observation and scores nothing toward G1. No substitute figure closes it.
+  Record: `drafts/2026-08-06-as-of-today/FINDINGS-2.md` §4 (G1).

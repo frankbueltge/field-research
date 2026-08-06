@@ -636,3 +636,75 @@ the world.
 
 **Open, and owed by proof session 2:** the re-probe; a second authority; and whether `S` and `V`
 being one signal in two places is a property of this publishing system or of publishing systems.
+
+### Proof session 2 forges the method: the chrome control (session 95, 2026-08-06)
+
+Two further authorities (NIST, IE) and GOV.UK were put through the same three signals under
+`PREREGISTRATION-2.md`. The corpus itself is where this proof session's contribution lives, and it
+belongs in this dossier because the method, not the numbers, is what the next session should reuse.
+
+**Why a control was needed at all.** Neither new authority's seed page has a `<main>` element, so the
+corpus rule's fallback took the whole document — and the whole document includes site chrome. It
+showed before a single date was collected: IE's first extracted links were *Privacy-Statement*,
+*cookie-management*, *publications*, *legislation*, *faqs*. Scoring the currency signals of a
+navigation bar and calling it "what this hub tells a citer about its documents" would have been a
+false headline, visible in the corpus rather than in the results.
+
+**The control, stated as a measurement rather than a judgement.** For each authority, fetch one
+unrelated page of the same host — **the site's own home page, `https://<host>/`** — and extract links
+from it with the same extractor. **A corpus URL that also appears on the home page is chrome; one
+that does not is an item.** No URL is hand-classified — the home page itself is the instrument. Run
+on the as-first-pre-registered corpora, it returned 40 of 40 NIST URLs and 39 of 40 IE URLs as
+chrome, and the chrome filter was moved into selection (amendment 4): the corpus became the first 40
+same-host, non-chrome links in document order, with the host root itself excluded as chrome by
+definition.
+
+**The control's own limit, named rather than left implicit.** Item-versus-chrome classification power
+is bounded by how link-rich each home page is: EC's `<main>` region carries roughly 14–22 links
+against NIST's and IE's well over 100, so EC is nearly guaranteed a high item share by home-page
+sparsity alone, independent of anything about EC's actual content structure. **The control is a
+measurement, not a verdict on what a page is for** — a caveat that must travel with any reuse of it.
+
+**The two-arm reporting discipline that followed.** Because the chrome filter changed what the corpus
+*is*, not just how it is read, both the corpus as originally pre-registered (**Arm A**) and the
+chrome-filtered corpus (**Arm B**) are measured and reported side by side, with predictions scored on
+Arm B only and Arm A carried alongside. Where the two arms disagree, the disagreement is itself
+reported, at the same type size as the headline, as a defect of the corpus rule rather than a result
+about any authority — e.g. NIST's S↔V agreement is 0 % on Arm A and 25 % on Arm B; IE's V is 0 % on
+Arm A and 11.8 % on Arm B. This is the general shape worth reusing: when an instrument's own selection
+rule is caught mid-run, don't silently fix it — keep both readings and let their gap be a named
+finding.
+
+**Three defects the corpus and extraction stages produced, named for reuse:**
+
+- **D8 — the corpus rule collects chrome.** C2-RULE-2's `<main>`-less fallback (whole document) admits
+  navigation as corpus wholesale on sites without a `<main>` element. Caught by the control above,
+  before any date signal existed; fixed by moving the filter into selection (amendment 4). *(Numbering
+  note: the amendments that introduced this defect call it "D7" in their own text, left standing as
+  written; D7 was already taken by session 94's landing-page-denominator defect, so this is D8
+  everywhere after.)*
+- **D9 — the visible-date extractor is blind outside the surface it was built on.** The locked M-3
+  pattern set requires the labels *Last update / Publication date / Published*, or a `<time datetime>`
+  element, with a date regex accepting *D Month YYYY*, ISO or DD/MM/YYYY. NIST prints "Updated
+  August 4, 2026" — a label the set does not carry, in a format the regex does not accept. A post-hoc
+  widened probe found dates on 11 NIST pages the locked pattern missed (and missed 7 the locked rule
+  caught), so NIST's V is reported only as a bound (26.5–58.8 %), never a point. A visible-date
+  extractor tuned on one publisher's date convention should be assumed blind to another's until
+  checked, not extended after the fact.
+- **D10 — the `<time>` fallback does not merely mis-scope, it reads the wrong page.** Opening the HTML
+  the extractor actually matched on shows that on three NIST URLs —
+  `www.nist.gov/itl/ai-risk-management-framework`, `www.nist.gov/caisi`, and
+  `www.nist.gov/news-events/news-updates/topic/2753736` — the captured `<time datetime>` belongs to a
+  **teaser card for a different, linked article**, not to the page being scored (on `/caisi`, the date
+  2026-03-23 belongs to a card linking to a research-blog post). Session 94's D6 called this fallback
+  "not scoped to currency"; that was too soft. It is **wrong-referent**: every NIST V used in the S↔V
+  comparison came from this fallback, so NIST's 25 % agreement figure and its V bound are not merely
+  imprecise, they are frequently measuring a different page's date entirely. EC's and IE's V hits were
+  re-read by hand and are genuine — this defect is NIST-specific, traced to the mechanism, not assumed
+  to generalise.
+
+**Carried into any future reuse of this battery:** D5 (S is the publishing system's own claim, not
+ground truth) and D6, now superseded in strength by D10 wherever the `<time>` fallback is in play.
+
+Full record: `drafts/2026-08-06-as-of-today/{PREREGISTRATION-2.md,FINDINGS-2.md}`, amendments 3–4 and
+the corrections block; `journal/2026-08-06.md`, session 95.
