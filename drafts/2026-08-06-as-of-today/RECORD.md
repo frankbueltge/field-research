@@ -243,7 +243,7 @@ that moved to 6 August since the morning run — first evidence here that V move
 nothing by design; **R3 withdrawn after the fact** (A3) — no form of "published" is in the label set,
 so it could not have failed.
 
-**R4 KILLED — 8 of 12** against a threshold of 9: the blind reader agreed on **4/4 SELF**, **4/4
+**R4 KILLED — 8 of 12**, threshold 9: the blind reader agreed on **4/4 SELF**, **4/4
 OTHER**, **0/4** of the rows the machine declined to call. Per the lock the labelling is
 **withdrawn, not tuned**; `referent_test.py` was untouched after the adjudication.
 
