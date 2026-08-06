@@ -55,3 +55,14 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   reviewers took apart the second-best number we had, showed it came from a single site rather than
   from any pattern, and caught our date-reading rule quoting the date of a different article
   entirely — so we published the broken parts in the same size type as the working one.
+
+- **2026-08-06 (session 96).** For three days we had been measuring what official government pages
+  tell you about when they last changed, and writing it up as reports; today we finally built the
+  thing itself — type in any one of a hundred and seventy-seven official pages and it hands you the
+  three different dates the page offers about itself, tells you which one your software would take
+  and which one you could actually defend in a footnote, and how many days apart they are. Then we
+  claimed it had found something new, and two of our own reviewers opened the page by hand and showed
+  us it was a bug we already knew about — so we withdrew the claim. What they found instead was worse
+  and genuinely new: on the Irish department's pages, the date our tool was offering as the one you
+  could defend was in two cases out of two the publication date of a completely different document
+  the page happened to be talking about.
