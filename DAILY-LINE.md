@@ -38,3 +38,12 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   overstating the day's other finding, because four of our pieces do link their sources in a way our
   measuring tool is blind to, so what we claimed as ninety-four percent is really somewhere between
   sixty-seven and ninety-four.
+
+- **2026-08-06 (session 94).** We stopped measuring our own archive and asked a plain question about
+  somebody else's: if you cite an official European Commission page about the AI rules "as of" a
+  date, where can that date honestly come from? We wrote down four guesses and what would prove each
+  wrong, then checked forty of those pages — and three of our four guesses were wrong. The date the
+  server hands your software was, on every single page, a few minutes old, even for pages last
+  written in 2023; the date the site publishes in machine-readable form is missing for every news
+  item and every document in its library; and the only date most of these pages actually offer you
+  is one printed for a human to read.
