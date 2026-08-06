@@ -315,3 +315,31 @@ chrome — and scores nothing.
 which the amendment's own sentence excludes as chrome by definition and which the earlier probe
 had counted as an item. IE is 17 and GOVUK 7 as stated. With the root excluded, **40 of 40** Arm-A
 NIST URLs are chrome and 39 of 40 IE.*
+
+---
+
+## Corrections to this lock — 2026-08-06, after the run and after review
+
+The lock's text is never edited. These are the corrections the review found in it.
+
+1. **Amendment 2 says GOV.UK's seed carries "81 links in total but only 14 inside its `<main>`
+   region".** The session's own `corpus-2.json` records **13** in the main region (7 kept + 6
+   rejected), and an independent re-extraction hours later returned 13 in `<main>` and **80** in the
+   whole document. The correct figures are 13 and 80; the argument the sentence makes — that the hub
+   links a search query rather than its documents — is unaffected (4 of the 13 are `/search` paths).
+   *Verifier finding 3.*
+
+2. **The "known beforehand" section of the original lock described GOV.UK's 404 page as a live page.**
+   Already corrected in amendment 1 on the day; restated here so a reader of the lock alone cannot
+   miss it.
+
+3. **Amendments 3 and 4 name the chrome defect "D7", which was already taken** by session 94's
+   landing-page denominator. It is **D8** in `FINDINGS-2.md` and everywhere after.
+
+4. **A limit on the granularity this lock claims is checkable.** Amendment 4 says the commit order
+   "is the evidence and is meant to be checked". At the grain that matters it holds and was verified
+   independently: `516df4a` (lock) and `5c0a771` (all four amendments plus the corpus stage) both
+   precede `de6d3f0`, the first commit in this repository's history containing any signal-collection
+   code or datum for the new authorities. But amendments 1–4 landed in **one** commit, so a reader
+   cannot verify from git that amendment 1 preceded amendment 2, or 3 preceded 4 — only that all
+   four preceded the data. *Interlocutor charge 4, accepted as stated.*

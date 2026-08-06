@@ -1,0 +1,40 @@
+{
+ "purpose": "re-score of session 94's P1-P4 on EC's item-only subset; locked data unchanged",
+ "chrome_excluded": [
+  "https://digital-strategy.ec.europa.eu/en/news",
+  "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
+  "https://digital-strategy.ec.europa.eu/en/news/eu-launches-ai-gigafactories-call-boost-europes-computing-capacity-and-unlock-more-eu30-billion",
+  "https://digital-strategy.ec.europa.eu/en/policies/ai-office"
+ ],
+ "arm_a": {
+  "arm": "A (all 40, as scored in session 94)",
+  "n_ok": 40,
+  "P1_share_h_under_24h": 100.0,
+  "P1_verdict": "HELD",
+  "P2_median_hs_gap_days": 5.96,
+  "P2_verdict": "KILLED",
+  "P3_stale_s_fresh_h_n": 1,
+  "P3_pairs_n": 17,
+  "P3_share": 5.9,
+  "P3_verdict": "KILLED",
+  "P4_v_n": 34,
+  "P4_share": 85.0,
+  "P4_verdict": "KILLED"
+ },
+ "arm_b": {
+  "arm": "B (items only, 36)",
+  "n_ok": 36,
+  "P1_share_h_under_24h": 100.0,
+  "P1_verdict": "HELD",
+  "P2_median_hs_gap_days": 5.93,
+  "P2_verdict": "KILLED",
+  "P3_stale_s_fresh_h_n": 1,
+  "P3_pairs_n": 16,
+  "P3_share": 6.2,
+  "P3_verdict": "KILLED",
+  "P4_v_n": 31,
+  "P4_share": 86.1,
+  "P4_verdict": "KILLED"
+ },
+ "verdicts_that_move": []
+}
