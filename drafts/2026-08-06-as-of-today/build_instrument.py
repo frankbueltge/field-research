@@ -102,26 +102,80 @@ AUTHORITIES = [
 ]
 AUTHORITY_LABEL = dict(AUTHORITIES)
 
+# D10/D11 — wrong-referent V. Confirmed by hand, on two different extraction
+# rules and two different authorities: the printed date belongs to a
+# different document than the one the URL was fetched for. Note text is
+# stored per URL because the evidence differs by case.
 CONFIRMED_WRONG_REFERENT = {
-    "https://www.nist.gov/itl/ai-risk-management-framework",
-    "https://www.nist.gov/caisi",
-    "https://www.nist.gov/news-events/news-updates/topic/2753736",
+    "https://www.nist.gov/itl/ai-risk-management-framework": (
+        "Confirmed wrong-referent (D10): opened by hand — the captured <time datetime> "
+        "belongs to a teaser card for a different, linked article, not to this page."
+    ),
+    "https://www.nist.gov/caisi": (
+        "Confirmed wrong-referent (D10): opened by hand — the captured date 2026-03-23 "
+        "belongs to a card linking to a research-blog post, not to this page."
+    ),
+    "https://www.nist.gov/news-events/news-updates/topic/2753736": (
+        "Confirmed wrong-referent (D10): opened by hand — the captured <time datetime> "
+        "belongs to a teaser card for a different, linked article, not to this page."
+    ),
+    "https://www.nist.gov/publications": (
+        'Confirmed wrong-referent (D10/D11): the <time datetime="2026-09-29T12:00:00Z"> sits '
+        'inside <article class="nist-teaser" about="/publications/advancing-resilience-across-'
+        'lifeline-infrastructure-systems-need-consistent-guidance">, a "Recent Publications" '
+        "teaser card for a different, linked publication — not this page. First surfaced because "
+        "the date postdates the run that captured it (the future-date detector, below), then "
+        "confirmed by hand against the live page."
+    ),
+    "https://digital-strategy.ec.europa.eu/en/events": (
+        'Confirmed wrong-referent (D10/D11): the matched <time> sits inside '
+        '<article class="ecl-content-item"> linking to '
+        "/en/events/save-date-cef-digital-community-conference-2026 — a listing-page teaser for "
+        "a different, linked event, not this page. First surfaced because the date postdates the "
+        "run that captured it (the future-date detector, below), then confirmed by hand against "
+        "the live page."
+    ),
+    "https://enterprise.gov.ie/en/publications/ireland-in-the-digital-decade.html": (
+        'Confirmed wrong-referent (D11): matched text "…published on 16 June 2025" is the '
+        "publish date of an EU annual report (the Digital Economy and Society Index) discussed "
+        "on this page, not the page's own currency. Caught by a label rule (V2-published), not "
+        "the <time> fallback — the wrong-referent defect is not confined to one extraction rule."
+    ),
+    "https://enterprise.gov.ie/en/what-we-do/innovation-research-development/european-space-agency": (
+        'Confirmed wrong-referent (D11): matched text "…National Space Strategy for Enterprise '
+        '2019-2025, published on 19 June 2019, establishes a framework…" is the publish date of '
+        "a cited strategy document, not the page's own currency. Caught by a label rule "
+        "(V2-published), not the <time> fallback."
+    ),
 }
 
-# D10 is a property of the V3-time-element extraction rule itself, not of one
-# authority: the fallback reads the datetime attribute of a <time> element,
-# which may belong to a teaser card for a different, linked article, on any
-# surface that uses it. Every row using this rule is flagged, in one of three
-# tiers (checked below, at build time):
-#   1. confirmed_wrong_referent — opened by hand, the captured date belongs
-#      to a different page (the three NIST URLs above).
-#   2. confirmed_future — D6: the captured V postdates the run that captured
-#      it. A date in the future cannot be a statement about when a page last
-#      changed. Detected generally, over ALL rows regardless of v_rule or
-#      authority, by comparing V's date to that authority's own run
-#      timestamp — not special-cased to one URL.
-#   3. suspect — every other V3-time-element row: flagged, not opened by
+# Rows whose label-rule hit (V1-last-update / V2-published) has actually been
+# re-read by hand and found genuine, as a group, per the collective's own
+# record — not a per-row individual check, a documented batch finding.
+HAND_CHECKED_RULE_AUTHORITIES = {
+    ("EC", "V1-last-update"),
+}
+
+# D10/D11 tiering: every V hit lands in exactly one of four tiers, checked in
+# this priority order. The fallback rule (V3-time-element) is not the only
+# source of wrong-referent dates — label rules (V1/V2) can match a date
+# printed for a document the page discusses rather than the page itself, so
+# this tiering applies across rules, not just to the <time> fallback:
+#   1. confirmed_wrong_referent — opened by hand (or, for the two rows
+#      surfaced by the future-date detector, confirmed against the live
+#      page): the printed date belongs to a different document.
+#   2. suspect — every other V3-time-element row: flagged, not opened by
 #      hand, so not further characterised than "may be another page's date".
+#   3. hand_checked — a label-rule hit from a group the record has already
+#      re-read by hand and found genuine (EC's "Last update" labels).
+#   4. unaudited — every other label-rule hit: not opened by hand, and in
+#      every Irish case that was opened by hand it turned out to name a
+#      different document's date, so this is a candidate, not a warranty.
+# A separate, general "future-date" detector (any V later than the run that
+# captured it) still runs over every row regardless of rule or authority; it
+# is what first surfaced two of the confirmed_wrong_referent rows, but it is
+# a symptom of the same wrong-referent defect, not a distinct fault, and it
+# does not create its own tier.
 
 def parse_iso(s):
     if not s:
@@ -166,11 +220,11 @@ def build_row(authority_key, raw, scored):
     else:
         s_state = raw.get("s_state")
 
-    # --- D10/D6 tiering, computed over every authority alike ---
+    # --- D10/D11 tiering, computed over every authority and every rule alike ---
     is_v3_rule = (v_rule == "V3-time-element")
-    is_confirmed_referent = url in CONFIRMED_WRONG_REFERENT
-    if is_confirmed_referent:
-        assert is_v3_rule, f"confirmed-referent URL not on the V3-time-element rule: {url}"
+    is_label_rule = v_rule in ("V1-last-update", "V2-published")
+    is_confirmed_referent = bool(v) and url in CONFIRMED_WRONG_REFERENT
+    confirmed_note = CONFIRMED_WRONG_REFERENT.get(url) if is_confirmed_referent else None
 
     v_dt = parse_iso(v)
     run_ts = RUN_TS_BY_AUTHORITY[authority_key]
@@ -178,19 +232,21 @@ def build_row(authority_key, raw, scored):
 
     if is_confirmed_referent:
         flag_tier = "confirmed_wrong_referent"
-    elif v_postdates_run:
-        flag_tier = "confirmed_future"
     elif is_v3_rule:
         flag_tier = "suspect"
+    elif is_label_rule and (authority_key, v_rule) in HAND_CHECKED_RULE_AUTHORITIES:
+        flag_tier = "hand_checked"
+    elif is_label_rule:
+        flag_tier = "unaudited"
     else:
         flag_tier = None
 
-    # A flagged V (any of the three tiers) is excluded from what a reader
-    # could defend — it falls through to S, the same way a suspect V already
-    # did before this V3 rule covered every authority. This is a general
-    # rule over the data (v_postdates_run OR is_v3_rule), not a special case
-    # for any one URL.
-    v_excluded_from_defend = is_v3_rule or v_postdates_run
+    # Only the two excluded tiers (confirmed_wrong_referent, suspect) are kept
+    # out of what a reader could defend — those are the tiers with evidence
+    # against them. hand_checked and unaudited keep their defensible-date
+    # role: we have no evidence against an unaudited hit, only a pattern from
+    # the cases that were checked, so it is not excluded, only labelled.
+    v_excluded_from_defend = flag_tier in ("confirmed_wrong_referent", "suspect")
 
     # --- "the date a machine is handed": H, else S, else V, else none ---
     if h:
@@ -201,7 +257,7 @@ def build_row(authority_key, raw, scored):
         machine_source, machine_iso = "V", v
     else:
         machine_source, machine_iso = None, None
-    machine_is_flagged_v = (machine_source == "V" and flag_tier is not None)
+    machine_is_flagged_v = (machine_source == "V" and v_excluded_from_defend)
 
     # --- "the date the reader could defend": V (if not flagged), else S, else none ---
     v_usable = bool(v) and not v_excluded_from_defend
@@ -241,6 +297,7 @@ def build_row(authority_key, raw, scored):
         "v_rule": v_rule,
         "etag": raw.get("etag"),
         "flag_tier": flag_tier,
+        "confirmed_note": confirmed_note,
         "v_postdates_run": v_postdates_run,
         "machine_source": machine_source,
         "machine_fmt": fmt_date_iso(machine_iso),
@@ -310,29 +367,36 @@ assert _ec_scored["n"] == _rescore_b["n_ok"] == 36, "EC scored-subset n mismatch
 assert _ec_scored["v"] == _rescore_b["P4_v_n"] == 31, "EC scored-subset V-count mismatch"
 
 # ---------------------------------------------------------------------------
-# D10/D6 tiering — badge counts and the future-date rule's catch, computed
-# generally over every row, every authority. The rule that "any V used in
-# the defensible-date computation must not postdate that authority's run
-# timestamp" is asserted below, not merely hoped for.
+# D10/D11 tiering — badge counts and the future-date detector's catch,
+# computed generally over every row, every authority. The rule that "any V
+# used in the defensible-date computation must not postdate that authority's
+# run timestamp" is asserted below, not merely hoped for. The future-date
+# detector is a general rule (not special-cased to one URL) that surfaces
+# candidates for confirmed_wrong_referent; both of its current catches are
+# confirmed against the live page, so they land in that tier, not a separate
+# "future" tier.
 # ---------------------------------------------------------------------------
 
 FUTURE_V_ROWS = [r for r in ALL_ROWS if r["v_postdates_run"]]
-if len(FUTURE_V_ROWS) != 1:
+_future_not_confirmed = [r for r in FUTURE_V_ROWS if r["flag_tier"] != "confirmed_wrong_referent"]
+if _future_not_confirmed:
     RECONCILE_NOTES.append(
-        "Future-dated V rule: the general rule (any printed V later than the authority's own "
-        f"run timestamp) was expected to catch one URL (EC /en/events) but catches "
-        f"{len(FUTURE_V_ROWS)} over the full data: " +
-        "; ".join(f"{r['authority']} {r['url']} (v={r['v_fmt']})" for r in FUTURE_V_ROWS) +
-        ". Implemented as a general rule, not a special case, so the second catch is reported "
-        "here rather than silenced."
+        "Future-dated V rule: the general detector (any printed V later than the authority's "
+        "own run timestamp) caught a row that has not been confirmed wrong-referent by hand: " +
+        "; ".join(f"{r['authority']} {r['url']} (v={r['v_fmt']})" for r in _future_not_confirmed) +
+        ". Reported here rather than silenced; this row is still excluded from the defensible "
+        "date because it is future-dated, but is shown as 'suspect' rather than 'confirmed', "
+        "pending the same hand-check the other two future catches already had."
     )
+
+TIER_KEYS = ("confirmed_wrong_referent", "suspect", "hand_checked", "unaudited")
 
 TIER_COUNTS = {"all": {}, "scored": {}}
 for key, _ in AUTHORITIES:
     rows = rows_by_authority[key]
     scored_rows = [r for r in rows if r["scored"]]
     for basis, rset in (("all", rows), ("scored", scored_rows)):
-        counts = {"confirmed_wrong_referent": 0, "confirmed_future": 0, "suspect": 0}
+        counts = {k: 0 for k in TIER_KEYS}
         for r in rset:
             if r["flag_tier"] in counts:
                 counts[r["flag_tier"]] += 1
@@ -371,6 +435,8 @@ DATA = {
             {"authority": r["authority"], "url": r["url"], "v": r["v"], "v_fmt": r["v_fmt"]}
             for r in FUTURE_V_ROWS
         ],
+        "unaudited_by_authority": {k: TIER_COUNTS["all"][k]["unaudited"] for k, _ in AUTHORITIES},
+        "hand_checked_by_authority": {k: TIER_COUNTS["all"][k]["hand_checked"] for k, _ in AUTHORITIES},
     },
     "authorities": [{"key": k, "label": lbl} for k, lbl in AUTHORITIES],
     "rows": ALL_ROWS,
@@ -406,24 +472,24 @@ print(f"rows with no signal at all: {len(NO_SIGNAL_ROWS)} / {len(ALL_ROWS)}")
 for r in NO_SIGNAL_ROWS:
     print(f"  {r['authority_label']}: {r['url']}")
 print()
-print("D10/D6 badge tiers — all measured pages (confirmed-wrong-referent / confirmed-future / suspect):")
+print("D10/D11 badge tiers — all measured pages "
+      "(confirmed-wrong-referent / suspect / hand-checked / unaudited):")
 for k, lbl in AUTHORITIES:
     c = TIER_COUNTS["all"][k]
-    print(f"  {lbl:60s} {c['confirmed_wrong_referent']} / {c['confirmed_future']} / {c['suspect']}")
+    print(f"  {lbl:60s} {c['confirmed_wrong_referent']} / {c['suspect']} / "
+          f"{c['hand_checked']} / {c['unaudited']}")
 print()
-print("D10/D6 badge tiers — scored subset:")
+print("D10/D11 badge tiers — scored subset:")
 for k, lbl in AUTHORITIES:
     c = TIER_COUNTS["scored"][k]
-    print(f"  {lbl:60s} {c['confirmed_wrong_referent']} / {c['confirmed_future']} / {c['suspect']}")
+    print(f"  {lbl:60s} {c['confirmed_wrong_referent']} / {c['suspect']} / "
+          f"{c['hand_checked']} / {c['unaudited']}")
 print()
-print(f"future-dated V rows caught by the general D6 rule (V later than that authority's run "
-      f"timestamp): {len(FUTURE_V_ROWS)}")
+print(f"future-dated V rows caught by the general D6/D11 detector (V later than that "
+      f"authority's run timestamp): {len(FUTURE_V_ROWS)}")
 for r in FUTURE_V_ROWS:
     print(f"  {r['authority_label']}: {r['url']}  v={r['v_fmt']} ({r['v']})  "
-          f"run={RUN_TS_BY_AUTHORITY[r['authority']].isoformat()}")
-if len(FUTURE_V_ROWS) != 1:
-    print(f"  NOTE: the conductor's spec named one URL (EC /en/events); the general rule over "
-          f"all rows and all authorities catches {len(FUTURE_V_ROWS)}. Reported here, not silenced.")
+          f"run={RUN_TS_BY_AUTHORITY[r['authority']].isoformat()}  tier={r['flag_tier']}")
 print()
 if RECONCILE_NOTES:
     print("RECONCILIATION NOTES (could not resolve from raw rows alone):")
@@ -453,8 +519,10 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
   --warn-border: #c98a2a;
   --bad-bg: #fbe9e6;
   --bad-border: #a8402a;
-  --future-bg: #e9edfa;
-  --future-border: #35529c;
+  --info-bg: #e9edfa;
+  --info-border: #35529c;
+  --ok-bg: #e8f1e6;
+  --ok-border: #3d6b34;
   --mono: "IBM Plex Mono", "Courier New", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
   font-family: var(--serif);
@@ -479,8 +547,10 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
     --warn-border: #c98a2a;
     --bad-bg: #3a1a14;
     --bad-border: #d16a4e;
-    --future-bg: #182140;
-    --future-border: #7d94d6;
+    --info-bg: #182140;
+    --info-border: #7d94d6;
+    --ok-bg: #16281a;
+    --ok-border: #7bab6f;
   }
 }
 .aot[data-theme="dark"] {
@@ -496,8 +566,10 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
   --warn-border: #c98a2a;
   --bad-bg: #3a1a14;
   --bad-border: #d16a4e;
-  --future-bg: #182140;
-  --future-border: #7d94d6;
+  --info-bg: #182140;
+  --info-border: #7d94d6;
+  --ok-bg: #16281a;
+  --ok-border: #7bab6f;
 }
 .aot[data-theme="light"] {
   --fg: #1a1a17;
@@ -512,8 +584,10 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
   --warn-border: #c98a2a;
   --bad-bg: #fbe9e6;
   --bad-border: #a8402a;
-  --future-bg: #e9edfa;
-  --future-border: #35529c;
+  --info-bg: #e9edfa;
+  --info-border: #35529c;
+  --ok-bg: #e8f1e6;
+  --ok-border: #3d6b34;
 }
 .aot * { box-sizing: border-box; }
 .aot h1 {
@@ -698,7 +772,8 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
 .aot .aot-sentences li.aot-absent { color: var(--muted); font-style: italic; }
 .aot .aot-sentences li.aot-suspect { background: var(--warn-bg); }
 .aot .aot-sentences li.aot-confirmed { background: var(--bad-bg); }
-.aot .aot-sentences li.aot-future { background: var(--future-bg); }
+.aot .aot-sentences li.aot-info { background: var(--info-bg); }
+.aot .aot-sentences li.aot-ok { background: var(--ok-bg); }
 .aot .aot-badge {
   display: inline-block;
   font-family: var(--mono);
@@ -713,7 +788,8 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
 }
 .aot .aot-badge-suspect { color: var(--warn-border); border-color: var(--warn-border); }
 .aot .aot-badge-confirmed { color: var(--bad-border); border-color: var(--bad-border); background: var(--bad-bg); }
-.aot .aot-badge-future { color: var(--future-border); border-color: var(--future-border); background: var(--future-bg); }
+.aot .aot-badge-info { color: var(--info-border); border-color: var(--info-border); background: var(--info-bg); }
+.aot .aot-badge-ok { color: var(--ok-border); border-color: var(--ok-border); background: var(--ok-bg); }
 
 .aot .aot-verdict {
   border: 1px solid var(--border);
@@ -841,7 +917,8 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
       <li>It is a snapshot taken at two moments on one day, not a monitor and not a history.</li>
       <li>S is itself only the publishing system's own claim about the page — it is not verified against anything.</li>
       <li>No archived capture history was reachable for any of these pages, for either measurement session, so nothing here can be checked against what actually changed.</li>
-      <li>This instrument's own rule for extracting V from a page is known to be defective on part of the corpus (a fallback that can read a different article's date, or a future date, off the same page) — that is deliberate: the instrument marks its own bad rows in place, on the slip, rather than quietly dropping them.</li>
+      <li>This instrument's own rules for extracting V from a page are known to be defective on part of the corpus (a fallback that can read a different article's date, or a future date, off the same page) — that is deliberate: the instrument marks its own bad rows in place, on the slip, rather than quietly dropping them.</li>
+      <li>D11: the wrong-referent failure is not a property of one extraction rule. It has been confirmed under two different rules, on two different authorities — a &lt;time&gt; fallback on NIST and a text-label rule on Ireland's — so it is treated here as a property of extracting any date from a page that displays other documents' dates, not as one rule's bug.</li>
     </ul>
     <div class="aot-timestamps" id="aot-timestamps"></div>
   </div>
@@ -929,12 +1006,21 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
     var futureRows = DATA.meta.future_v_rows || [];
     if (futureRows.length > 0) {
       foot.appendChild(el("div", null,
-        "Future-dated printed dates (D6), found by comparing every row's V to that authority's " +
-        "own run timestamp, not special-cased to one URL: " + futureRows.length + " row" +
-        (futureRows.length === 1 ? "" : "s") + " — " +
+        "Future-dated printed dates, found by a general detector comparing every row's V to " +
+        "that authority's own run timestamp (not special-cased to one URL): " + futureRows.length +
+        " row" + (futureRows.length === 1 ? "" : "s") + " — " +
         futureRows.map(function (r) { return r.authority + " " + r.url + " (v=" + r.v_fmt + ")"; }).join("; ") +
-        "."));
+        ". Both are symptoms of the same wrong-referent defect (D10/D11), confirmed by hand " +
+        "against the live pages, and are shown under \"confirmed wrong-referent\" on their " +
+        "slips, not as a separate tier."));
     }
+    var uc = DATA.meta.unaudited_by_authority || {};
+    var hc = DATA.meta.hand_checked_by_authority || {};
+    foot.appendChild(el("div", null,
+      "Unaudited label-rule hits (D11, not opened by hand): " +
+      DATA.authorities.map(function (a) { return a.label + " " + (uc[a.key] || 0); }).join(", ") +
+      ". Hand-checked label-rule hits, found genuine: " +
+      DATA.authorities.map(function (a) { return a.label + " " + (hc[a.key] || 0); }).join(", ") + "."));
   })();
 
   // ---- grouping ----
@@ -969,12 +1055,14 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
         var btn = el("button", "aot-url-btn", null);
         btn.type = "button";
         btn.appendChild(document.createTextNode(pathLabel(row)));
-        if (row.flag_tier === "confirmed_wrong_referent") {
-          btn.appendChild(el("span", "aot-flag", "wrong-referent"));
-        } else if (row.flag_tier === "confirmed_future") {
-          btn.appendChild(el("span", "aot-flag", "future-dated"));
-        } else if (row.flag_tier === "suspect") {
-          btn.appendChild(el("span", "aot-flag", "suspect"));
+        var FLAG_LABEL = {
+          confirmed_wrong_referent: "wrong-referent",
+          suspect: "suspect",
+          hand_checked: "hand-checked",
+          unaudited: "unaudited"
+        };
+        if (row.flag_tier && FLAG_LABEL[row.flag_tier]) {
+          btn.appendChild(el("span", "aot-flag", FLAG_LABEL[row.flag_tier]));
         }
         if (row.url === selectedUrl) btn.classList.add("aot-selected");
         btn.addEventListener("click", function () {
@@ -1006,31 +1094,53 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
     return { text: row.authority_label + " — " + row.path + ": " + reason, present: false };
   }
 
+  // Four tiers. confirmed_wrong_referent's note comes from the row itself
+  // (row.confirmed_note) because the evidence differs case by case; the
+  // other three tiers share one standing note per tier.
   var TIER_INFO = {
     confirmed_wrong_referent: {
       cls: "aot-confirmed",
       badgeCls: "aot-badge-confirmed",
       badgeText: "confirmed wrong-referent",
-      note: "Confirmed wrong-referent (D10): opened by hand — the captured date belongs to a " +
-        "teaser card for a different, linked article, not to this page."
-    },
-    confirmed_future: {
-      cls: "aot-future",
-      badgeCls: "aot-badge-future",
-      badgeText: "confirmed future-dated",
-      note: "Confirmed future-dated (D6): this printed date is after the run that captured it. " +
-        "A date in the future cannot be a statement about when this page last changed — the " +
-        "<time> fallback matched a card advertising an upcoming event, not the page's own history."
+      excluded: true
     },
     suspect: {
       cls: "aot-suspect",
       badgeCls: "aot-badge-suspect",
       badgeText: "suspect",
+      excluded: true,
       note: "Suspect (D10): this date comes from a fallback that reads the datetime attribute " +
         "of a <time> element, which may belong to a teaser card linking to a different article " +
         "rather than to this page. Not opened by hand to confirm."
+    },
+    hand_checked: {
+      cls: "aot-ok",
+      badgeCls: "aot-badge-ok",
+      badgeText: "hand-checked",
+      excluded: false,
+      note: "Hand-checked: this on-page “Last update” label was read by hand in an earlier " +
+        "session and found genuine — not a citation to another document's date. Kept as a " +
+        "defensible date."
+    },
+    unaudited: {
+      cls: "aot-info",
+      badgeCls: "aot-badge-info",
+      badgeText: "unaudited",
+      excluded: false,
+      note: "Unaudited (D11): this date was matched by a rule that reads a date label printed in " +
+        "the page text. In every case of this kind opened by hand so far, the label named a " +
+        "different document's publish date, not this page's own currency — so this is a " +
+        "candidate, not a warranty. Kept as a defensible date because there is no evidence " +
+        "against this specific row, only a pattern from the rows that were checked."
     }
   };
+
+  function noteFor(row, tier) {
+    if (row.flag_tier === "confirmed_wrong_referent" && row.confirmed_note) {
+      return row.confirmed_note;
+    }
+    return tier.note;
+  }
 
   function renderSentences(container, row) {
     var ul = el("ul", "aot-sentences", null);
@@ -1046,7 +1156,7 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
         li.classList.add(tier.cls);
         var badge = el("span", "aot-badge " + tier.badgeCls, tier.badgeText);
         li.appendChild(badge);
-        var note = el("div", "aot-verdict-note", tier.note);
+        var note = el("div", "aot-verdict-note", noteFor(row, tier));
         li.appendChild(note);
       }
       ul.appendChild(li);
@@ -1144,7 +1254,7 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
     evidenceRow(table, "Sitemap <lastmod>", row.s);
     evidenceRow(table, "Printed date (raw string)", row.v_raw);
     evidenceRow(table, "Extraction rule", row.v_rule);
-    evidenceRow(table, "V flag (D10 / D6)", row.flag_tier ? TIER_INFO[row.flag_tier].badgeText : "none");
+    evidenceRow(table, "V flag (D10 / D11)", row.flag_tier ? TIER_INFO[row.flag_tier].badgeText : "none");
     evidenceRow(table, "In the collective's scored subset", row.scored ? "yes" : "no (chrome / not in arm B)");
     det.appendChild(table);
     container.appendChild(det);
