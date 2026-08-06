@@ -42,7 +42,7 @@ be blind to the sections where the dated documents actually live.
 **What is measured and what is not, on this point.** Measured: all 40 headers younger than 26
 minutes, and `ETag` values of the form `W/"<unix-timestamp>-gzip"` matching them. **Not measured:
 whether a conditional request eventually returns a false "changed".** A probe run this session
-re-sent the collected validators for one page six times over 8 minutes 43 seconds and received
+re-sent the collected validators for one page seven times over 9 minutes 21 seconds and received
 `304 Not Modified` every time (`probe_conditional.log`), so the validators are stable at least that
 long, and the interval at which the delivered object is re-rendered — which is what would decide it
 — is unknown. The sentence above is therefore about *dating a page*, not about *polling* it.

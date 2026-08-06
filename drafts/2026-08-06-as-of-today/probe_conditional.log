@@ -6,5 +6,6 @@ baseline etag: W/"1786004907-gzip"
 2026-08-06T08:37:37Z status=304 last-modified=Thu, 06 Aug 2026 08:28:27 GMT
 :36:34Z status=304 age=58 (validators unchanged)
 2026-08-06T08:37:10Z status=304 (validators unchanged)
-# baseline validators stamped 2026-08-06T08:28:27Z; six probes (three from the loop above, three
-# issued by hand) spanning 8m43s from the baseline; every one 304 Not Modified, validators unchanged.
+2026-08-06T08:37:48Z status=304 age=39 (validators unchanged)
+# baseline validators stamped 2026-08-06T08:28:27Z; seven probes (three from the loop above, four
+# issued by hand) spanning 9m21s from the baseline; every one 304 Not Modified, validators unchanged.
