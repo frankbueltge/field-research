@@ -37,7 +37,11 @@ INVENTORY_JSON = RESULTS_DIR / "inventory.json"
 INVENTORY_MD = RESULTS_DIR / "INVENTORY.md"
 
 # Given, not derived: the pin the preregistration names. Not read from git.
-PINNED_COMMIT = "0138e79d0bd95aa4797fb617949d07d947fb338f"
+# v2 (PREREGISTRATION-V2.md §1, session 93, 2026-08-06): re-pinned to this session's opening
+# marker commit. The v1 pin was 0138e79d0bd95aa4797fb617949d07d947fb338f over 20 work
+# directories; the corpus is now 21.
+PINNED_COMMIT = "712a013735cb88ecf4fa6cd713261dfc1b8a1ff3"
+EXPECTED_WORK_DIRS = 21
 
 # §2.1 U2: "host.tld/path where the TLD is in a fixed list committed with the script."
 U2_TLDS = [
@@ -61,6 +65,38 @@ RECOVERY_SUBSTRING = "RECOVERY"
 # markdown (.md) files — see "Implementation decisions" for why .md-only.
 CORRECTION_HEADING_SUBSTRINGS = (
     "corrected", "withdrawn", "was wrong", "superseded", "discarded",
+)
+
+# --- v2 amendment A1 (PREREGISTRATION-V2.md §2), answers defect D1 -----------------------
+# The v1 heading list above, plus the noun form, applied INLINE and FORWARD-ONLY within a
+# block. The single added word is `correction`, because the case that forced D1 uses the noun
+# ("Correction, 2026-07-28." on works/2026-07-01-fairness-trap/work.astro:590). Nothing else
+# is added: extending a locked list to a new scope is the least post-hoc move available.
+INLINE_CORRECTION_MARKERS = CORRECTION_HEADING_SUBSTRINGS + ("correction",)
+
+# A marker's scope ends at the first of these, searched forward from the marker's offset.
+# `\n\n` is a blank line; the rest are block-break tokens in markup.
+BLOCK_BREAK_TOKENS = ("\n\n", "<br", "</p>", "<p ", "<p>", "<li", "</li>", "<h")
+
+# A1-corrected, 2026-08-06, same session, before any network request — see
+# `A1-CORRECTION.md`. The scope above is additionally capped at the END OF THE MARKER'S OWN
+# LINE. Without this cap, a file carrying no blank line and no markup block token — every
+# compact `data.json` in this corpus — gives a marker unbounded scope, and 114 live citations
+# were reclassified as correction records on the first run. The cap is what makes the rule
+# line-local, which is the narrowest reading of "within the same block" that still catches the
+# case D1 names (marker and identifier on one line, work.astro:590).
+SCOPE_ENDS_AT_LINE_END = True
+
+# --- v2 amendment A4 (PREREGISTRATION-V2.md §2), answers defect D4 -----------------------
+# An occurrence is `linked` when the characters immediately before it are a markdown link
+# target, an href=/src= attribute opener, or an autolink `<`. Everything else is `displayed`:
+# printed for a human to read, and to copy. Read off the committed source, not a browser —
+# the claim this licenses is "not linked in the committed source", never "not clickable".
+LINK_OPENERS = (
+    "](",
+    'href="', "href='", 'href={"', "href={'", "href={`",
+    'src="', "src='", 'src={"', "src={'",
+    "<",
 )
 
 # Role rule, bullet 2: frozen third-party data the works STUDY, not cite — named explicitly
@@ -212,6 +248,53 @@ def line_of_offset(text: str, offset: int) -> int:
 
 
 # ---------------------------------------------------------------------------
+# v2 amendment A1 — inline correction scopes (all file types, forward-only)
+# ---------------------------------------------------------------------------
+
+def inline_correction_spans(text: str) -> list[tuple[int, int]]:
+    """Return character spans (start, end) covered by an inline correction marker.
+
+    Each span runs from the marker's own offset forward to the first block break
+    (blank line or markup block token), per PREREGISTRATION-V2.md §2/A1. Forward-only:
+    a live citation printed *above* a correction note is not swallowed by it.
+    """
+    lowered = text.lower()
+    spans: list[tuple[int, int]] = []
+    for marker in INLINE_CORRECTION_MARKERS:
+        start = 0
+        while True:
+            i = lowered.find(marker, start)
+            if i == -1:
+                break
+            ends = [lowered.find(tok, i + len(marker)) for tok in BLOCK_BREAK_TOKENS]
+            ends = [e for e in ends if e != -1]
+            if SCOPE_ENDS_AT_LINE_END:
+                eol = text.find("\n", i)
+                ends.append(eol if eol != -1 else len(text))
+            end = min(ends) if ends else len(text)
+            spans.append((i, end))
+            start = i + len(marker)
+    return spans
+
+
+def offset_in_spans(offset: int, spans: list[tuple[int, int]]) -> bool:
+    return any(s <= offset < e for s, e in spans)
+
+
+# ---------------------------------------------------------------------------
+# v2 amendment A4 — presentation: linked in the committed source, or displayed
+# ---------------------------------------------------------------------------
+
+def presentation_of(text: str, start: int) -> str:
+    """`linked` if one of the pre-registered link openers ends exactly where the identifier
+    begins; `displayed` otherwise. Decided from the committed source alone."""
+    for opener in LINK_OPENERS:
+        if start >= len(opener) and text[start - len(opener):start] == opener:
+            return "linked"
+    return "displayed"
+
+
+# ---------------------------------------------------------------------------
 # Tier / role assignment
 # ---------------------------------------------------------------------------
 
@@ -345,7 +428,10 @@ def build_inventory() -> dict:
     token_bindings_record = []
 
     works = list(iter_work_dirs())
-    assert len(works) == 20, f"expected 20 work directories, found {len(works)}"
+    assert len(works) == EXPECTED_WORK_DIRS, (
+        f"expected {EXPECTED_WORK_DIRS} work directories, found {len(works)}"
+    )
+    role_changes: list[dict] = []   # A1: every evidence -> correction-record move, published
 
     for work_name in works:
         for rel_path, abs_path in iter_scanned_files(work_name):
@@ -364,18 +450,34 @@ def build_inventory() -> dict:
             tier = compute_tier(rel_path)
             is_md = abs_path.suffix.lower() == ".md"
             heading_lines = correction_heading_lines(text) if is_md else set()
+            inline_spans = inline_correction_spans(text)   # A1
 
             for ident in extract_identifiers(text):
                 line_no = line_of_offset(text, ident["start"])
                 under_heading = (line_no - 1) in heading_lines
-                role = compute_role(rel_path, tier, under_heading)
+                inline_marked = offset_in_spans(ident["start"], inline_spans)   # A1
+                role_v1_scope = compute_role(rel_path, tier, under_heading)
+                role = compute_role(rel_path, tier, under_heading or inline_marked)
                 normalized_url = normalize(ident["cls"], ident["raw"])
+                if role != role_v1_scope:
+                    # A1 requires every such move to be publishable line by line, so that a
+                    # reviewer can dispute any one of them. A silent role change is a
+                    # suppressed citation.
+                    role_changes.append({
+                        "path": repo_rel,
+                        "line": line_no,
+                        "raw": ident["raw"],
+                        "normalized_url": normalized_url,
+                        "from_role": role_v1_scope,
+                        "to_role": role,
+                    })
                 identifiers_record.append({
                     "work": work_name,
                     "path": repo_rel,
                     "tier": tier,
                     "class": ident["cls"],
                     "role": role,
+                    "presentation": presentation_of(text, ident["start"]),   # A4
                     "raw": ident["raw"],
                     "normalized_url": normalized_url,
                     "line": line_no,
@@ -395,6 +497,7 @@ def build_inventory() -> dict:
     identifiers_record.sort(key=lambda r: (
         r["work"], r["path"], r["class"], r["line"], r["raw"], r["role"],
     ))
+    role_changes.sort(key=lambda r: (r["path"], r["line"], r["raw"]))
     token_bindings_record.sort(key=lambda r: (
         r["file"], r["json_path"], r["url"], r["token"],
     ))
@@ -403,8 +506,10 @@ def build_inventory() -> dict:
 
     inventory = {
         "pinned_commit": PINNED_COMMIT,
-        "object": "the 20 work directories under works/ at the pinned commit",
+        "object": f"the {EXPECTED_WORK_DIRS} work directories under works/ at the pinned commit",
+        "preregistration": "PREREGISTRATION.md, amended by PREREGISTRATION-V2.md (A1-A4)",
         "works": works,
+        "a1_role_changes": role_changes,
         "u2_tld_list": list(U2_TLDS),
         "allowed_extensions": sorted(ALLOWED_EXTENSIONS),
         "files": files_record,
@@ -444,11 +549,46 @@ def compute_assertions(works: list[str], identifiers: list[dict]) -> dict:
     ]
     no_site_evidence = sorted(w for w, n in site_evidence_by_work.items() if n == 0)
 
+    # L0-4 (v2 amendment A4): evidence occurrences by presentation, and the displayed-only set.
+    # "Displayed-only" is decided PER WORK: a normalised URL that appears in that work's `site`
+    # tier and is never `linked` anywhere in that work — including its repo and sub files.
+    pres_counts: dict[tuple, int] = {}
+    linked_urls_by_work: dict[str, set[str]] = {w: set() for w in works}
+    site_evidence_urls_by_work: dict[str, set[str]] = {w: set() for w in works}
+    for ident in identifiers:
+        if ident["role"] != "evidence":
+            continue
+        key = (ident["work"], ident["tier"], ident["presentation"])
+        pres_counts[key] = pres_counts.get(key, 0) + 1
+        if ident["presentation"] == "linked":
+            linked_urls_by_work[ident["work"]].add(ident["normalized_url"])
+        if ident["tier"] == "site":
+            site_evidence_urls_by_work[ident["work"]].add(ident["normalized_url"])
+
+    l0_4_counts = [
+        {"work": w, "tier": t, "presentation": p, "count": n}
+        for (w, t, p), n in sorted(pres_counts.items())
+    ]
+    displayed_only = []
+    for w in sorted(works):
+        for url in sorted(site_evidence_urls_by_work[w] - linked_urls_by_work[w]):
+            displayed_only.append({"work": w, "normalized_url": url})
+
+    site_unique_total = len({
+        (w, u) for w in works for u in site_evidence_urls_by_work[w]
+    })
+
     return {
         "L0_1_counts": l0_1,
         "L0_2_UNAUDITABLE": uninauditable,
         "L0_3_site_tier_evidence": l0_3,
         "L0_3_works_with_no_site_evidence": no_site_evidence,
+        "L0_4_presentation_counts": l0_4_counts,
+        "L0_4_site_displayed_only": displayed_only,
+        "L0_4_site_unique_work_url_pairs": site_unique_total,
+        "L0_4_site_displayed_only_share": (
+            round(len(displayed_only) / site_unique_total, 4) if site_unique_total else None
+        ),
     }
 
 
@@ -518,6 +658,48 @@ def write_inventory_md(inventory: dict, path: Path) -> None:
     )
     lines.append(f"Total identifier occurrences recorded (all tiers, all roles): **{n_identifier_occurrences}**.")
     lines.append(f"Structural token bindings found (Layer 2b candidates): **{len(inventory['token_bindings'])}**.")
+    lines.append("")
+
+    # --- v2 amendment A4 -------------------------------------------------------------
+    a = inventory["assertions"]
+    lines.append("## L0-4 — presentation: linked in the committed source, or displayed for a reader to copy")
+    lines.append("")
+    lines.append("*Read off the committed source, not off a browser. What this licenses is "
+                 "\"not linked in the committed source\", never \"not clickable\".*")
+    lines.append("")
+    lines.append("| work | site linked | site displayed | repo linked | repo displayed |")
+    lines.append("|---|---|---|---|---|")
+    pc = {(r["work"], r["tier"], r["presentation"]): r["count"] for r in a["L0_4_presentation_counts"]}
+    for w in works:
+        lines.append(
+            f"| {w} | {pc.get((w,'site','linked'),0)} | {pc.get((w,'site','displayed'),0)} "
+            f"| {pc.get((w,'repo','linked'),0)} | {pc.get((w,'repo','displayed'),0)} |"
+        )
+    lines.append("")
+    share = a["L0_4_site_displayed_only_share"]
+    lines.append(
+        f"**Displayed-only in the rendered tier: {len(a['L0_4_site_displayed_only'])} of "
+        f"{a['L0_4_site_unique_work_url_pairs']} unique (work, URL) pairs "
+        f"= {share:.1%}**" if share is not None else "(no site-tier evidence)"
+    )
+    lines.append("")
+
+    # --- v2 amendment A1 -------------------------------------------------------------
+    changes = inventory["a1_role_changes"]
+    lines.append("## A1 — every identifier the inline-correction rule moved out of `evidence`")
+    lines.append("")
+    lines.append("*Published in full so any one of them can be disputed. A silent role change is a "
+                 "suppressed citation.*")
+    lines.append("")
+    if changes:
+        lines.append("| file | line | identifier | from | to |")
+        lines.append("|---|---|---|---|---|")
+        for c in changes:
+            lines.append(
+                f"| `{c['path']}` | {c['line']} | `{c['raw']}` | {c['from_role']} | {c['to_role']} |"
+            )
+    else:
+        lines.append("(none)")
     lines.append("")
 
     path.write_text("\n".join(lines) + "\n", encoding="utf-8")
