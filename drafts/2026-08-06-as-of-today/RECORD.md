@@ -1,10 +1,9 @@
 # RECORD — "As of Today"
 
-This file supersedes `CONCEPT.md`, `FINDINGS.md`, `FINDINGS-2.md` and `PRIOR-ART.md`, which remain
-readable in full in this repository's history at commit `be0451c`. It was written to bring this
-line inside Production Amendment rule 6 (process record under 3,000 words) after a hostile critic
-counted the prior record at 10,161 words. The two pre-registrations are left unedited; §11 argues
-why, and names the count's own failures.
+Supersedes `CONCEPT.md`, `FINDINGS.md`, `FINDINGS-2.md` and `PRIOR-ART.md`, readable in full at
+commit `be0451c`. Written to bring this line inside rule 6's 3,000-word ceiling after a hostile
+critic counted the prior record at 10,161 words. The pre-registrations are left unedited; §11 says
+why.
 
 ## 1. The claim, in one page
 
