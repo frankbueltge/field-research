@@ -54,8 +54,10 @@ a conditional request does over longer intervals is untested here and is named a
 (3) fall back to the printed `V` label, which was present on 34 of 40 pages and on **all 32** item
 pages, and is the only date most of these pages offer at all.
 
-**A second, plainer audience:** anyone writing "as of &lt;date&gt;" about a Commission guidance
-page. The date they can defend is the printed one; the one their tooling will hand them is today's.
+**A second, plainer audience:** anyone writing "as of &lt;date&gt;" about one of these pages. For
+the 40 measured here, at 2026-08-06T08:26:37Z, the date they could defend was the printed one, and
+the one their tooling handed them was that morning. Whether that holds for a page outside this
+corpus is not established by this run.
 
 ## The first checkable increment — run, in this session
 

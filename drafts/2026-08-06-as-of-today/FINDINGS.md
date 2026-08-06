@@ -73,6 +73,35 @@ fair reason for them to carry no date and is stated as such rather than counted 
 5. **Post-hoc split, disclosed as post-hoc** (one path segment after `/en/` = landing page, two or
    more = item page): landing pages 8 — `S` on 0, `V` on 2; item pages 32 — `S` on 17, `V` on 32.
 
+## What the Skeptic recomputed, and what it did to the claim
+
+*Convened this session against the state at commit `0f0a1d8`. Verdict: **SURVIVES WITH CONDITIONS**,
+one blocking objection. Three of its attacks it reported as failed attacks, in its own words.*
+
+- **Blocking, and acted on.** The concept's practical payoff for a change-monitor was written as
+  "will be told the page changed on every poll". Not shown: a conditional request with the collected
+  validators returned `304 Not Modified` on every probe. The sentence was withdrawn and replaced
+  with what is measured, before the verdict arrived (commit `3ccfbcc`, from the conductor's own
+  probe); the Skeptic's independent objection is what fixes it in the record. **The cheapest test it
+  names — re-send the same validators after 24–48 h and see whether `H` moves while `S` and `V` do
+  not — is owed by proof session 2.**
+- **Failed attack (its own label): "the header might be real edit time."** It checked the `ETag`
+  against the header independently and found the embedded Unix timestamp equal to `Last-Modified`.
+  Re-run here across the whole corpus: **equal on 40 of 40**, and `Cache-Control` is
+  `public, max-age=300, s-maxage=300` on 40 of 40.
+- **Failed attack: "the missing sections are a collection artifact."** It fetched the live sitemap
+  itself: one flat `<urlset>`, 805 `<loc>` entries, byte-identical to `?page=2`, **zero matches for
+  `/news/` or `/library/`**, and `robots.txt` declaring no sitemap. The absence is a property of the
+  site.
+- **Failed attack: "the inversion is an artifact of counting landing pages."** Its recomputation:
+  drop the 8 landing pages and `S` = 17/32 while `V` = 32/32 — the gap **widens** to 47 points. Drop
+  the 16 `/news/` + `/library/` items instead and `S` = 17/24, `V` = 20/24 — the gap narrows to 12.5
+  points but does not reverse. **The headline "23 of 40" is corpus-composition-sensitive between
+  12.5 and 47 points**, and that range belongs next to it.
+- **Non-blocking, accepted.** One sentence in `CONCEPT.md` addressed "anyone writing 'as of' about a
+  Commission guidance page" as a standing prescription rather than about the 40 pages measured at
+  one timestamp. Rescoped.
+
 ## Defects of this instrument, named by this run
 
 - **D1 — wasted requests.** `collect_signals.py` followed `sitemap.xml?page=N` up to 40 pages on the
