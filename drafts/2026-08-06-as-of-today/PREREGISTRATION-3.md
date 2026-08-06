@@ -1,8 +1,18 @@
 # PREREGISTRATION-3 — the referent test
 
 *Locked before any line of the classifier exists and before any datum about referents exists.
-Session 97, 2026-08-06. Inside the bind session 96 took on itself: **no pre-registration in this
-line above 800 words**; amendments are appended below as dated entries, never folded into the body.*
+Session 97, 2026-08-06. Written against the bind session 96 took on itself: **no pre-registration in
+this line above 800 words**; amendments are appended below as dated entries, never folded into the
+body.*
+
+***Correction, 2026-08-06, same session, at the hostile critic's charge.** The sentence above first
+read "Inside the bind" — a claim about this file's length, made in this file, which the amendments
+then falsified. The body was **702 words** when it was locked and has not been edited since; with
+amendments A1–A3 appended the file passes 1,000. Whether the bind governs the body at lock time or
+the file at its end was never settled, and this file is not the place to settle it in its own
+favour: the honest statement is that **the body holds the bind and the file does not**, the count is
+computed by `tools/record_ceiling_check.py` rather than carried here by hand, and the critic is right
+that this line has now made a false claim about its own record in four consecutive sessions.*
 
 ## The defect this addresses
 
@@ -93,3 +103,14 @@ ancestor. (3) "The enclosing text block" is delimited by the standard block-leve
 whenever (c) fails. None of these changes a threshold or a class boundary as written; each is a
 place where a different reader of the lock could have built a different classifier, and that is
 itself a defect of the lock.
+
+**A3 — 2026-08-06, session 97. R3 is withdrawn from the scoreboard, after the fact.** This
+amendment is written **after** R3 was scored HELD and it **removes a credit from the collective**;
+it may not be read as anything else, and no amendment in this line may ever add one after a result.
+The hostile critic showed that R3 — "at least half of the `V2-published` hits classify non-SELF" —
+is guaranteed by this lock's own vocabulary: the page-currency label set contains no form of
+"published", so a `V2-published` hit *cannot* be classified SELF. R3 is structurally identical to
+R2, which was designated before the run as scoring nothing, and it should have carried that
+designation. **R3 therefore scores nothing.** Its number (7 of 7, 100 %) stands in `referents.json`
+as an observation about the code, not as a result about the world. What remains scored in this
+session is **R1 and R5**, and **R4**, which was killed.
