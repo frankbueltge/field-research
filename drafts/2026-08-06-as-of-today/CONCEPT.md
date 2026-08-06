@@ -34,13 +34,22 @@ assertion, no more verified than the rest.
 **Anyone who runs an automated watch on official policy pages** — the shape of tool that polls a
 page and reports "this changed". The pattern is real and has real users: the Environmental Data &
 Governance Initiative maintains a public "Website Monitoring" project for exactly this on government
-sites (https://github.com/edgi-govdata-archiving/web-monitoring). A monitor of that kind that trusts
-`Last-Modified`, an `ETag`, or a conditional request will, on this surface, be told the page changed
-on every poll — and a monitor that instead trusts the sitemap will be blind to the sections where
-the dated documents actually live.
+sites (https://github.com/edgi-govdata-archiving/web-monitoring). A monitor of that kind that reads
+`Last-Modified` as a change date will, on this surface, date every page to the last few minutes —
+including pages whose own printed date is 2023 — and a monitor that instead trusts the sitemap will
+be blind to the sections where the dated documents actually live.
 
-**What they can do with it, concretely:** (1) not use `H` or a conditional request as a change
-signal on this surface; (2) know that `S` covers `/policies/` here and covers **none** of
+**What is measured and what is not, on this point.** Measured: all 40 headers younger than 26
+minutes, and `ETag` values of the form `W/"<unix-timestamp>-gzip"` matching them. **Not measured:
+whether a conditional request eventually returns a false "changed".** A probe run this session
+re-sent the collected validators for one page six times over 8 minutes 43 seconds and received
+`304 Not Modified` every time (`probe_conditional.log`), so the validators are stable at least that
+long, and the interval at which the delivered object is re-rendered — which is what would decide it
+— is unknown. The sentence above is therefore about *dating a page*, not about *polling* it.
+
+**What they can do with it, concretely:** (1) not read `H` as a change date on this surface — what
+a conditional request does over longer intervals is untested here and is named above as untested;
+(2) know that `S` covers `/policies/` here and covers **none** of
 `/news/` or `/library/` — the guidelines, notices and press items a reader is most likely to cite;
 (3) fall back to the printed `V` label, which was present on 34 of 40 pages and on **all 32** item
 pages, and is the only date most of these pages offer at all.
