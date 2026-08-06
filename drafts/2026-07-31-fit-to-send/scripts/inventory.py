@@ -67,6 +67,20 @@ CORRECTION_HEADING_SUBSTRINGS = (
     "corrected", "withdrawn", "was wrong", "superseded", "discarded",
 )
 
+# --- v2 amendment A1 — WITHDRAWN 2026-08-06, same session it was introduced --------------
+# Measured at a two-thirds false-positive rate (FINDINGS-V2.md §6: of the nine identifiers it
+# removed from the census, six were live and working), and it bought nothing — withdrawing it
+# does not move the single GONE (FINDINGS-V2.md §9). D1 returns to being a known, disclosed,
+# unfixed defect, which is the honest state.
+#
+# The flag below is left TRUE on purpose, and that is not the decision being reversed. The
+# committed results/inventory.json was produced with A1 on; `--check` reproduces it only while
+# this value matches the run that produced it, and a result recomputed to agree with a later
+# decision is not a result. So the committed state keeps its own switch setting and stays
+# checkable, and the withdrawal binds the NEXT run: set this to False before re-running, and
+# expect 196 unique evidence URLs instead of 193 (FINDINGS-V2.md §9).
+A1_ENABLED = True
+
 # --- v2 amendment A1 (PREREGISTRATION-V2.md §2), answers defect D1 -----------------------
 # The v1 heading list above, plus the noun form, applied INLINE and FORWARD-ONLY within a
 # block. The single added word is `correction`, because the case that forced D1 uses the noun
@@ -450,7 +464,7 @@ def build_inventory() -> dict:
             tier = compute_tier(rel_path)
             is_md = abs_path.suffix.lower() == ".md"
             heading_lines = correction_heading_lines(text) if is_md else set()
-            inline_spans = inline_correction_spans(text)   # A1
+            inline_spans = inline_correction_spans(text) if A1_ENABLED else []   # A1 (withdrawn)
 
             for ident in extract_identifiers(text):
                 line_no = line_of_offset(text, ident["start"])
