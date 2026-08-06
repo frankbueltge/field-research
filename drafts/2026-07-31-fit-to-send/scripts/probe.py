@@ -95,6 +95,29 @@ C4_ALTERED_TOKEN = "documentation examples without needing PERMISSION-DENIED-XYZ
 _PLACEHOLDER_SEGMENTS = {"path", "owner", "repo"}
 
 
+def not_a_document_rule(normalized_url: str) -> str | None:
+    """v2 amendment A2 (PREREGISTRATION-V2.md §2), answers defect D2.
+
+    A citation that is a *method* rather than a document, decided from the normalised string
+    alone, before any network call. Returns the sub-rule that fired, or None.
+
+    BASE-PATH      — path ends with `/` and carries >= 2 non-empty segments. A host root
+                     (`https://example.com/`) has zero and stays in the census: a site root
+                     is a document.
+    QUERY-ENDPOINT — host begins `api.` or the path carries a segment exactly `api`, AND the
+                     URL has no query string. A parameterless endpoint is a method; the same
+                     endpoint carrying parameters returns a document and stays in the census.
+    """
+    parsed = urlparse(normalized_url)
+    segments = [s for s in parsed.path.split("/") if s]
+    if parsed.path.endswith("/") and len(segments) >= 2:
+        return "BASE-PATH"
+    is_api = parsed.netloc.lower().startswith("api.") or any(s.lower() == "api" for s in segments)
+    if is_api and not parsed.query:
+        return "QUERY-ENDPOINT"
+    return None
+
+
 def is_not_a_locator(normalized_url: str) -> bool:
     """A citation that was never fetchable, decided from the string alone, before any network
     call. Three literal triggers plus a bare placeholder path segment, per the conductor's
@@ -254,7 +277,11 @@ def classify_verdict(obs: dict, soft_404_hosts: set[str], host: str) -> str:
     status = obs["status"]
     if status is None:
         return "NETFAIL"
-    if status in (403, 429):
+    # v2 amendment A3 (PREREGISTRATION-V2.md §2), answers defect D3: 401 is an authorisation
+    # refusal — a wall, not a death. The locked v1 table excluded 403 and 429 and forgot 401,
+    # so a paywall was published as a removal. 402/407/451 were considered and declined: no
+    # case for any of them exists in this corpus.
+    if status in (401, 403, 429):
         return "BLOCKED"
     if 500 <= status < 600:
         return "SERVER-ERROR"
@@ -458,14 +485,21 @@ def load_evidence_urls(inventory: dict) -> list[dict]:
         row["paths"].add(ident["path"])
         row["classes"].add(ident["class"])
         row["tiers"].add(ident["tier"])
+        row.setdefault("presentations", set()).add(ident["presentation"])
     rows = []
     for u, row in by_url.items():
+        pres = row.get("presentations", set())
         rows.append({
             "normalized_url": u,
             "works": sorted(row["works"]),
             "paths": sorted(row["paths"]),
             "classes": sorted(row["classes"]),
             "tiers": sorted(row["tiers"]),
+            # v2 amendment A4, at census-URL level: an identifier that is linked *anywhere* in
+            # the archive's committed source counts as linked; one that is only ever printed
+            # for a reader to copy is displayed-only. This is the population P3 is scored on;
+            # P2's population is the narrower per-work, site-tier one in L0-4.
+            "presentation": "linked" if "linked" in pres else "displayed-only",
         })
     rows.sort(key=lambda r: r["normalized_url"])
     return rows
@@ -483,6 +517,20 @@ def run_census(evidence_rows: list[dict], soft_404_hosts: set[str]) -> list[dict
                 "self": is_self(u),
                 "not_a_locator": True,
                 "verdict": "NOT-A-LOCATOR",
+                "primary_observation": None,
+                "second_vantage": None,
+                "soft_gone_host_flag": host in soft_404_hosts,
+            })
+            continue
+
+        nad = not_a_document_rule(u)      # v2 amendment A2 — before any request
+        if nad is not None:
+            records.append({
+                **{k: v for k, v in row.items()},
+                "self": is_self(u),
+                "not_a_locator": False,
+                "not_a_document_rule": nad,
+                "verdict": "NOT-A-DOCUMENT",
                 "primary_observation": None,
                 "second_vantage": None,
                 "soft_gone_host_flag": host in soft_404_hosts,
@@ -644,6 +692,27 @@ def main():
     print(f"Running census over {len(census_urls)} unique evidence URLs...")
     census_records = run_census(evidence_rows, soft_404_hosts)
 
+    # 2b) The A1 audit — NOT part of the census, and it changes no census number.
+    # PREREGISTRATION-V2.md §2/A1 required every identifier the inline-correction rule removes
+    # from `evidence` to be publishable line by line "so that a reviewer can dispute any one of
+    # them". Publishing the list is the promised defence; probing it as well is strictly more
+    # information at no cost to the rule, so a reader can see not only WHICH citations A1 took
+    # out of the census but what would have happened to them. Added after seeing the offline
+    # change-list and before the census ran; stated here rather than presented as design.
+    a1_audit_urls = sorted({
+        c["normalized_url"] for c in inventory.get("a1_role_changes", [])
+        if c["from_role"] == "evidence"
+    })
+    a1_audit_rows = [{
+        "normalized_url": u, "works": [], "paths": [], "classes": [], "tiers": [],
+        "presentation": "n/a",
+    } for u in a1_audit_urls]
+    print(f"Running the A1 audit over {len(a1_audit_rows)} identifiers A1 removed from the census...")
+    a1_audit_records = [
+        {k: v for k, v in r.items() if k != "_body_text"}
+        for r in run_census(a1_audit_rows, soft_404_hosts)
+    ]
+
     # 3) Layer 2b.
     census_by_url = {r["normalized_url"]: r for r in census_records}
     layer2b_results = run_layer2b(inventory, census_by_url)
@@ -675,6 +744,9 @@ def main():
         "controls": controls,
         "records": final_records,
         "layer2b_bindings": layer2b_results,
+        "a1_audit_records": a1_audit_records,
+        "preregistration": "PREREGISTRATION.md, amended by PREREGISTRATION-V2.md (A1-A4) "
+                            "and A1-CORRECTION.md",
     }
     PROBE_JSON.write_text(json.dumps(probe, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     print(f"Wrote {PROBE_JSON}")
@@ -718,6 +790,36 @@ def write_probe_md(probe: dict, inventory: dict, path: Path) -> None:
     for w in works:
         cells = [str(by_work_verdict.get((w, v), 0)) for v in all_verdicts]
         lines.append(f"| {w} | " + " | ".join(cells) + " |")
+    lines.append("")
+
+    # --- v2 amendment A4: the two questions, answered apart -----------------------------
+    lines.append("## Linked, or only displayed — the two questions kept apart (A4)")
+    lines.append("")
+    lines.append(
+        "*`linked` = the identifier appears inside a link target in the committed source "
+        "somewhere in the archive. `displayed-only` = it is only ever printed for a reader to "
+        "read and copy. Read off the source, not off a browser.*"
+    )
+    lines.append("")
+    lines.append("| presentation | n | OK | not OK | not-OK share |")
+    lines.append("|---|---|---|---|---|")
+    split_summary = {}
+    for pres in ("linked", "displayed-only"):
+        rows = [r for r in records if r.get("presentation") == pres]
+        n = len(rows)
+        ok = sum(1 for r in rows if r["verdict"] == "OK")
+        not_ok = n - ok
+        share = (not_ok / n) if n else None
+        split_summary[pres] = {"n": n, "ok": ok, "not_ok": not_ok, "not_ok_share": share}
+        share_txt = f"{share:.1%}" if share is not None else "—"
+        lines.append(f"| {pres} | {n} | {ok} | {not_ok} | {share_txt} |")
+    lines.append("")
+    sl, sd = split_summary["linked"]["not_ok_share"], split_summary["displayed-only"]["not_ok_share"]
+    if sl is not None and sd is not None:
+        lines.append(
+            f"**Gap between the two shares: {abs(sd - sl) * 100:.1f} percentage points.** "
+            f"(P3 in `PREREGISTRATION-V2.md` §4 predicted at least 5.)"
+        )
     lines.append("")
 
     lines.append("## Per work: everything that is not OK")

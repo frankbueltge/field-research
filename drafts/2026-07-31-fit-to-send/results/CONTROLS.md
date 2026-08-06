@@ -6,7 +6,7 @@ None of the five controls below are inside the probed corpus.
 - **C2 (consent/bot wall)** — `https://x.com/9_tzav` (source: works/2026-07-20-coverage-not-custody/sample.json (x-twitter stratum, object-data)) -> status 200, title 'תנועת צו 9- בשירות העם (@9_tzav) / X', verdict `OK`. OK: the wall (if any) is invisible to a plain GET at Layer 1
 - **C3 (soft-404-as-200)** — `https://www.kaggle.com/dsv/18354222` -> status 200, final URL `https://www.kaggle.com/deleted-dataset-version/18354222`, title 'Kaggle Deleted Dataset Version', verdict `SOFT-GONE` (expected `SOFT-GONE`). PASS.
 - **C4 (Layer-2b token check)** — `https://example.com`: real token -> `HELD`; altered token -> `NOT-HELD`. PASS.
-- **C5 (per-host soft-404 sweep)** — 89 hosts swept; soft-404 hosts found: ['hackerfactor.com', 'metricgate.com', 'ohchr.org'].
+- **C5 (per-host soft-404 sweep)** — 99 hosts swept; soft-404 hosts found: ['aixiv.science', 'hackerfactor.com', 'metricgate.com', 'ohchr.org', 'www.bsfrey.ch'].
 
 ## Stop rule
 
@@ -20,6 +20,8 @@ C1 fired correctly: **True**. C3 fired correctly: **True**. Stop rule: **PASS �
 | academicintegrity.org | 410 | GONE |  |
 | aclanthology.org | 404 | GONE |  |
 | ai-act-service-desk.ec.europa.eu | 404 | GONE |  |
+| aicid.net | 404 | GONE |  |
+| aixiv.science | 200 | OK | yes |
 | amacad.org | 404 | GONE |  |
 | apaf.org | 404 | GONE |  |
 | api.github.com | 403 | BLOCKED |  |
@@ -39,15 +41,18 @@ C1 fired correctly: **True**. C3 fired correctly: **True**. Stop rule: **PASS �
 | doi.org | 400 | GONE |  |
 | en.wikipedia.org | 404 | GONE |  |
 | eur-lex.europa.eu | 404 | GONE |  |
+| europepmc.org | 404 | GONE |  |
 | export.arxiv.org | 404 | GONE |  |
 | frankbueltge.de | 404 | GONE |  |
 | ghgprotocol.org | 404 | GONE |  |
 | github.com | 403 | BLOCKED |  |
+| gptzero.me | 404 | GONE |  |
 | hackerfactor.com | 200 | OK | yes |
 | harvardlawreview.org | 404 | GONE |  |
 | info.arxiv.org | 404 | GONE |  |
 | jaapl.org | 404 | GONE |  |
 | jabfm.org | None | NETFAIL |  |
+| khanhthanhdev.github.io | 404 | GONE |  |
 | lrb.co.uk | 404 | GONE |  |
 | marcellodibello.com | None | NETFAIL |  |
 | metricgate.com | 200 | OK | yes |
@@ -57,28 +62,34 @@ C1 fired correctly: **True**. C3 fired correctly: **True**. Stop rule: **PASS �
 | ncbi.nlm.nih.gov | 404 | GONE |  |
 | noclimateresultsfound.com | 404 | GONE |  |
 | ohchr.org | 200 | OK | yes |
+| originality.ai | 404 | GONE |  |
 | partnershiponai.org | 404 | GONE |  |
 | pmc.ncbi.nlm.nih.gov | 404 | GONE |  |
 | policyreview.info | 404 | GONE |  |
 | propublica.org | 404 | GONE |  |
 | psychiatry.org | 404 | GONE |  |
 | pubmed.ncbi.nlm.nih.gov | 404 | GONE |  |
+| qiushisun.github.io | 404 | GONE |  |
 | rand.org | 403 | BLOCKED |  |
 | raw.githubusercontent.com | 404 | GONE |  |
-| reuters.com | 401 | GONE |  |
+| reuters.com | 401 | BLOCKED |  |
+| reveal-dataset.github.io | 404 | GONE |  |
 | spec.c2pa.org | 404 | GONE |  |
+| storage.courtlistener.com | 404 | GONE |  |
 | storage.googleapis.com | 404 | GONE |  |
 | sustainability.google | 404 | GONE |  |
 | tbray.org | 404 | GONE |  |
+| web.archive.org | None | NETFAIL |  |
 | web.williams.edu | 404 | GONE |  |
 | websites.umich.edu | 403 | BLOCKED |  |
 | worldprivacyforum.org | 404 | GONE |  |
 | www.aafp.org | 404 | GONE |  |
 | www.abc.net.au | 404 | GONE |  |
 | www.brookings.edu | 404 | GONE |  |
-| www.bsfrey.ch | 404 | GONE |  |
+| www.bsfrey.ch | 200 | OK | yes |
 | www.cambridge.org | 403 | BLOCKED |  |
 | www.computerweekly.com | 404 | GONE |  |
+| www.courtlistener.com | 403 | BLOCKED |  |
 | www.datacenterdynamics.com | 403 | BLOCKED |  |
 | www.devsustainability.com | 404 | GONE |  |
 | www.documentcloud.org | 404 | GONE |  |
@@ -104,5 +115,4 @@ C1 fired correctly: **True**. C3 fired correctly: **True**. Stop rule: **PASS �
 | www.theguardian.com | 404 | GONE |  |
 | www.turnitin.com | 403 | BLOCKED |  |
 | www.w3.org | 404 | GONE |  |
-| yaledailynews.com | 429 | BLOCKED |  |
 

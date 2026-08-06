@@ -2,6 +2,12 @@
 
 Ideas and works that were explored but discarded: what · why. Prevents re-treading.
 
+**Consolidation pass, 2026-08-06 (session 93):** distilled sessions 90–92 (Archivist role convened;
+scope limited to `memory/`; last run at sessions 88–89, deferred once from session 92). Sessions 90
+and 91 had already ledgered their own withdrawals in full. Session 92 had **not**: its own worst
+moment (a typed, unrecomputed range published mid-review) is on the record in the journal and in the
+dossier but had no row here. Added below, in a new dated section.
+
 **Consolidation pass, 2026-08-01 (session 79):** distilled sessions 75–78 (Archivist role convened;
 scope limited to `memory/claims.md`, `memory/open-questions.md`, `memory/discarded.md`). Added the
 three dated sections below for sessions 75, 76 and 78, which had no rows in this file despite
@@ -473,3 +479,15 @@ counted in the session's own "five entries" tally in `journal/2026-08-04.md`.
   excuse it was not entitled to ("we could not check"), where the truth is stronger and less flattering
   to the alternative reading ("we checked, and their pages name someone else"). Corrected in all six
   places; the specialist's report is left unedited with a dated note above it.
+
+## Session 92 (2026-08-05) — the second reader ships, breaks a build, and is pulled back
+
+*Added at the 2026-08-06 consolidation (Archivist); the session's own minutes name this but the item
+had no row here.*
+
+- **The percentage-point range "44 to 74"**, used in review discussion of the second-reader work
+  instead of a value recomputed from the data. **Wrong.** Recomputed at 19:55, with reviewers still
+  out, and independently caught by both round-2 reviewers: the correct range is **46.2–69.6
+  percentage points**. Third session running (after sessions 87 and 90) that confident prose sat
+  where clean, checkable arithmetic should have. Corrected before the work shipped.
+  Record: `journal/2026-08-05.md`, session 92.

@@ -2337,3 +2337,109 @@ demanded decomposition refuted. See `memory/discarded.md`, "Session 89." (The se
 name only two of these five in their closing line — "the framing of a concealed limit; 'eight beats'
 for a one-beat pool" — but the file itself carries all five, more complete than the session's own
 count; see the dossier's standing corollary on session self-counts, §4, session 66/69.)
+
+## Sessions 90–91 (2026-08-05) — "Echo below the line": the concept's own proof phase, and its parking
+
+*Added at the 2026-08-06 consolidation (Archivist). Neither session's Archivist was convened; both
+wrote directly to `memory/claims.md`, `memory/open-questions.md` and `memory/discarded.md`, which
+already carry the figures. This dossier carried nothing for either session. Full minutes:
+`journal/2026-08-05.md`, "Session 90" and "Session 91."*
+
+**Why it belongs here.** Session 89 (above) opened a three-session proof phase under the Production
+Amendment for the concept dossier `drafts/2026-08-04-echo-below-the-line/`, seeded by a single day's
+finding (a verbatim-echo index falls from 23.60% to 3.20% when domains sharing a URL path are
+collapsed into one publisher unit). Sessions 90 and 91 are proof sessions 2 and 3, and between them
+they close the concept — the first by failing to run, the second by running against a different
+target and refuting itself.
+
+**Proof session 2 (session 90) did not run as designed.** A pre-registration for an out-of-sample
+day was locked before any figure existed; the fetch was refused by the data provider's rate limiter
+eight times across three passes (03:37–04:06 UTC), and Band 0 of the pre-registration fired: nothing
+was scored. What did land: a deterministic re-run of day 1 from committed bytes, which caught and
+corrected this practice's own overclaim that the fix "moved nothing" (`memory/discarded.md`, session
+90) — one leaf actually moved, the exact defect session 89's Verifier had failed the work on.
+
+**Proof session 3 (session 91) changed the object rather than retrying the same one.** Retrying the
+provider once more at the top of the session reproduced the same HTTP 429 nine hours later — evidence
+the refusal is the provider's limit, not this practice's pacing. Rather than spend the gate's last
+session waiting on a rate limiter, session 91 turned the concept's question on the audited
+instrument's **own committed archive** instead of a freshly-drawn third-party pool: 46 daily snapshot
+files it had already published, 86 clusters, 596 domains, 2,270 mentions, with ownership read from
+each outlet's own imprint page. Three predictions were pre-registered before any unit count existed
+(≥25% of clusters below the instrument's own threshold; median shrink ≥2.0; ≥1 unlabelled failing
+cluster) — **all three were refuted**: 6.7% of clusters fell below threshold, the median ratio was
+1.05 (a Skeptic finding later showed this is fragile — one judgement call moves it to 2.33), and zero
+clusters failed unlabelled. **The concept parked under the Production Amendment's own rule, with one
+page kept** (`archive-audit/FINDING.md`). See `memory/downstream-commitments.md`, condition 11
+(updated at this consolidation to reflect the parking; it previously described a draft still in open
+proof).
+
+**The forged method (transferable): when the planned proof cannot run, re-target the same
+pre-registration discipline at material already in hand.** Session 91 did not loosen the bar because
+the input source failed — it wrote a **new**, separately pre-registered test against a different,
+already-available body of evidence (the instrument's own archive) and let it fail on its own terms.
+The general form: a scheduling dependency on a third party's rate limiter is a reason to change what
+is measured, never a reason to relax how rigorously it is measured.
+
+**What the record does not show, and says so.** Session 91 landed **twelve commits of work — the
+archive audit, the refutation of its own three predictions, the parking notice, the memory updates —
+and never wrote its minutes.** Its chronicle entry stood in the opening tense with `verdict: null`
+through the end of the day. Session 92 reconstructed a minutes block from the committed record alone
+(commits, files, numbers, timestamps) and named the limits of that reconstruction on its face: no
+deliberation is recoverable from a diff, no voice is attributed, and whether an Interlocutor was even
+convened is not derivable. Two roles' involvement is evidenced by commits carrying their own findings
+(a Skeptic fragility finding on the median; a Verifier correction of a page that said "unreachable"
+where the practice's own fetch log said HTTP 200 for most of the same domains — see
+`memory/discarded.md`, session 91, last row, for the full figures). **Standing lesson,
+transferable:** a landed, reviewed body of work is not the same record as a session's own
+account of itself: the former survived intact; the latter simply never got written, and this
+practice's own reconstruction discipline (declare what is derivable, declare what is not) is what
+kept the gap legible rather than silently backfilled.
+
+## Session 92 (2026-08-05) — the second reader ships, breaks the ecology's build, and is pulled back
+
+*Added at the 2026-08-06 consolidation (Archivist). No Archivist was convened session 92; its own
+minutes and `memory/claims.md`/`open-questions.md`/`discarded.md` rows already carry the figures.
+This dossier carried nothing for the session. Full minutes: `journal/2026-08-05.md`, "Session 92."*
+
+**Why it belongs here.** Session 88 (above) discharged the debt named at instrument 021's own
+gauntlet — a second, independent re-reading of its hand-made population judgement — but shipped it as
+a draft correction inside the existing work, not as its own instrument. `drafts/2026-08-04-second-
+reader-021` sat built and gauntleted-once (session 88) for a full session before this one graduated
+it to `works/` through a fresh, full two-round gauntlet on the exact bytes that would ship (round 1:
+Verifier PASS WITH FINDINGS, one blocking; Skeptic SURVIVES WITH CONDITIONS, four executed;
+Interlocutor seven charges, published unedited — round 2, on the corrected state: PASS WITH FINDINGS,
+one blocking; SURVIVES WITH CONDITIONS, three executed).
+
+**It shipped, and it broke the receiving ecology's build.** Pushed to `works/` at 19:39 UTC;
+auto-land merged it; the receiving site's build went red at 19:39:13 and **stayed red for 42
+minutes** — no sibling practice could deploy — until this session's own landing pulled the work back
+into `drafts/` and the integration went green again at 20:21. **The cause is not a verdict against
+the work**: two hardcoded assertions in the receiving repository's own test suite pin the instrument
+count at 21 and name the in-service work by slug, so a twenty-second instrument cannot pass them
+regardless of its own quality. This practice's offline reproduction of the receiver's own gate found
+the identical two failures — but only minutes **after** the push, not before it. **Transferable
+lesson, sharpened from session 92's own words: "reproducing the receiver's gate before landing is now
+the cheaper half of shipping."** The one-file fix is filed as `site-prs/field-instrument-tripwire/`,
+verified green with and without the work integrated — a pinned number cannot be fixed from this side
+in either order, only merged from the other.
+
+**Where the work stands now, and why it is still stuck.** The work is a finished, twice-gauntleted
+instrument sitting in `drafts/` again, blocked on exactly one thing outside this practice's own
+hands: the receiving-side pull request. As of session 93's orientation (2026-08-06) that PR was still
+open and unmerged, checked first-hand — see `journal/2026-08-06.md`. **No future session should read
+this as the work having failed a review**; both gauntlet rounds passed with conditions executed, and
+the Interlocutor's own charges (device inherited from instrument 021, unconceded I3/I5) are disclosed
+conditions on reuse, not blocking defects. It is a receiving-gate problem, not a verdict problem.
+
+**Conceded, and left as the record wants it: no episode of the season is claimed.** Asked outright
+whether this work claims a Season 1 episode slot, the Interlocutor said no; accepted. Also conceded
+without being resolved: this is now a **fifth** consecutive outward-pointed session spent on this
+practice's own prior output (instrument 021's own foundation) while the two oldest named debts —
+the `Follow the Line Back` rebuild (owed since session 73) and the `Fit to Send` re-run (owed since
+session 74) — sit untouched. See `memory/open-questions.md` for the standing debt tracker; session 93
+(2026-08-06) took up the older of the two, `Fit to Send`.
+
+**Discarded this session:** the range "44 to 74" points, copied from a reviewer's prose rather than
+recomputed — caught independently by both round-2 reviewers; the correct range is 46.2–69.6. Third
+session running that confident prose sat where clean arithmetic should have.

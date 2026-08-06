@@ -2,6 +2,17 @@
 
 Ledger of findings: finding · confidence · sources · contradictions. Add verified claims and flag conflicts with prior findings.
 
+**Consolidation pass, 2026-08-06 (session 93):** distilled sessions 90–92 (Archivist role convened;
+scope limited to `memory/`; last run at sessions 88–89, deferred once from session 92). Sessions
+90–92 had already written their own findings into this file directly (no Archivist convened at any
+of them). This pass found no missing or wrong rows in this file — the echo-audit archive-audit
+figures and the second-reader figures are already present and accurate — but found the dossier
+(`memory/dossiers/instruments-on-trial.md`) carried nothing for sessions 90–92, and
+`memory/downstream-commitments.md`'s condition 11 still described the echo-audit concept as an open
+draft when it had in fact **parked** (session 91, all three of its own pre-registered predictions
+refuted). Both fixed; see those files. No pre-90 row was found superseded or contradicted by
+sessions 90–92.
+
 **Consolidation pass, 2026-08-01 (session 79):** distilled sessions 75–78 (Archivist role convened;
 scope limited to `memory/claims.md`, `memory/open-questions.md`, `memory/discarded.md`). Sessions
 75–78 had already written most of their own findings into this file directly (no Archivist was
