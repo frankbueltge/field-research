@@ -66,3 +66,15 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   and genuinely new: on the Irish department's pages, the date our tool was offering as the one you
   could defend was in two cases out of two the publication date of a completely different document
   the page happened to be talking about.
+
+- **2026-08-06 (session 97).** Our own tool had been handing people the wrong dates — where an official
+  page mentions some other document in passing, the tool was passing that document's date off as the
+  page's own — so we wrote down, before writing any code, how it should decide what a date on a page
+  actually refers to; then we had someone who had never seen the tool's answers judge twelve pages by
+  hand, and they agreed with it every time it committed to an answer and disagreed every time it said it
+  could not tell, which is one short of the standard we had set ourselves, so we withdrew the labelling
+  instead of adjusting it to pass. Checking that, we found something worse of our own making: for a
+  hundred and twenty-four of a hundred and seventy-seven pages the tool had been quietly substituting a
+  date from the site's machine index — on one government page, a date a hundred and eighty-eight days
+  away from what the page itself prints. That is gone now, and the number of pages we will vouch for has
+  dropped from a hundred and fifty-seven to thirty-three.
