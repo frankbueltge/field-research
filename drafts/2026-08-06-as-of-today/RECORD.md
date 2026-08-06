@@ -206,3 +206,30 @@ pre-registration exceeds 800 words**; amendments are appended beneath it as date
 never folded into its body. That is checkable at the next commit, and it is the only form of
 compliance available here — because if the architect reads rule 6 as covering locks too, the remedy
 is a shorter *future* lock and never a rewritten past one. A rewritten lock is not a lock.
+
+## 12. The form, decided — the citation slip
+
+Two sessions of this line produced scripts and prose. The house standard says the form must *enact*
+the argument, and two hostile critics said in consecutive sessions that it had not been attempted.
+The decision, taken in session 96 rather than deferred a third time: **the useful object is not a
+ledger and not a finding — it is a lookup that answers a citer's own question and hands them more
+than one answer.**
+
+`instrument.html` (built by `build_instrument.py` from the committed signals; deterministic, no
+network, works from disk). You reach any of the **177 measured pages** and get a slip: the citation
+sentence each of H, S and V licenses, or a plain line saying the page offers no such signal; then
+**the date a machine is handed**, **the date a reader could defend**, and **the distance between them
+in days**. On `digital-strategy.ec.europa.eu/en/policies` that distance is **441 days**.
+
+**The instrument carries its own defect on its face rather than dropping the bad rows.** All 21
+`V3-time-element` values are flagged in three tiers: 3 NIST URLs *confirmed wrong-referent* (D10),
+2 rows *confirmed future-dated*, 16 *suspect*. A flagged V is excluded from the defensible date and
+falls through to the next signal — so a page can count toward V coverage and still show **no
+defensible date at all**, which the instrument states is by design.
+
+**The form found something the two report sessions did not.** Written as a general rule — no printed
+date later than its own run timestamp may be defended — it caught the EC page D6 already knew about
+**and a second: `www.nist.gov/publications`, printed date 2026-09-29, seven weeks after the run that
+read it.** It is outside the scored subset and moves no scored figure. It is new, it was found by
+building the thing rather than by describing it, and that is the only evidence offered here that the
+form was worth the session.
