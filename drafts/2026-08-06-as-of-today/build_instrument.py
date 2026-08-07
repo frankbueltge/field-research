@@ -14,6 +14,26 @@ Inputs (read-only, all in this directory):
   ec-rescore.json   — used ONLY to cross-check which four EC URLs are "chrome"
                        (the instrument's own coverage numbers are computed from
                        the raw rows in signals.json, not copied from this file)
+  referents.json    — PREREGISTRATION-3.md, the referent test: every locked V hit
+                       (62 of them), re-extracted from a fresh fetch and classified
+                       SELF / OTHER / UNATTRIBUTABLE, with the evidence the
+                       classification used. Written by referent_test.py. This is
+                       now the sole source of the served defensible date for any
+                       row that carries a V: only SELF is served; OTHER and
+                       UNATTRIBUTABLE show the date, the class and the evidence,
+                       with an explicit refusal in place of a defensible date.
+  adjudication-result.json — PREREGISTRATION-3.md's R4: a blind hand adjudication
+                       of a 12-row stratified sample, scored by the conductor, not
+                       this script. R4 was KILLED (8/12 agreement, threshold 9),
+                       all four disagreements on the UNATTRIBUTABLE class. Per the
+                       lock's own terms this withdraws the three-class labelling
+                       rather than licensing a tuning pass — this build does not
+                       change any threshold, label set, or criterion in response;
+                       it only (a) renames UNATTRIBUTABLE on the reader's face to
+                       "referent not established by this instrument", since the
+                       adjudication shows that class is a property of the rule, not
+                       of the page, and (b) prints the withdrawal, with its numbers,
+                       where a reader cannot miss it.
 
 Output:
   instrument.html
@@ -39,6 +59,16 @@ def load(name):
 signals_ec = load("signals.json")
 signals_2 = load("signals-2.json")
 ec_rescore = load("ec-rescore.json")
+referents = load("referents.json")
+adjudication = load("adjudication-result.json")
+
+# One record per locked V hit, keyed by URL — this is the referent test's own
+# output (referent_test.py), not recomputed here. 62 expected; asserted below
+# once every row has been built, against the actual V-bearing rows found in
+# the locked signal files themselves (so a stale referents.json — one that no
+# longer matches signals.json / signals-2.json — fails the build loudly rather
+# than silently mis-labelling rows).
+REFERENT_BY_URL = {rec["url"]: rec for rec in referents["records"]}
 
 RUN1_UTC = signals_ec["run_started_utc"]      # 2026-08-06T08:26:37+00:00
 RUN2_UTC = signals_2["run_started_utc"]       # 2026-08-06T14:34:38+00:00
@@ -102,10 +132,17 @@ AUTHORITIES = [
 ]
 AUTHORITY_LABEL = dict(AUTHORITIES)
 
-# D10/D11 — wrong-referent V. Confirmed by hand, on two different extraction
-# rules and two different authorities: the printed date belongs to a
-# different document than the one the URL was fetched for. Note text is
-# stored per URL because the evidence differs by case.
+# --- Hand-confirmed rows — kept as annotation, not as the decision rule ---
+#
+# D10/D11 were first caught by hand, one URL at a time, before the referent
+# test (PREREGISTRATION-3.md) existed. That hand-reading is stronger evidence
+# than the machine classification below, not weaker, and this build must not
+# lose it: every row here is still shown on its slip, clearly labelled
+# "hand-confirmed". But it no longer DECIDES what gets served as defensible —
+# that is now the referent test's computed SELF / OTHER / UNATTRIBUTABLE
+# class alone (see REFERENT_BY_URL and build_row, below). Where the two
+# disagree, both are shown and the disagreement is reported in
+# RECONCILE_NOTES rather than silently favouring one.
 CONFIRMED_WRONG_REFERENT = {
     "https://www.nist.gov/itl/ai-risk-management-framework": (
         "Confirmed wrong-referent (D10): opened by hand — the captured <time datetime> "
@@ -151,31 +188,26 @@ CONFIRMED_WRONG_REFERENT = {
 
 # Rows whose label-rule hit (V1-last-update / V2-published) has actually been
 # re-read by hand and found genuine, as a group, per the collective's own
-# record — not a per-row individual check, a documented batch finding.
+# record — not a per-row individual check, a documented batch finding. Kept
+# as annotation for the same reason as CONFIRMED_WRONG_REFERENT, above.
 HAND_CHECKED_RULE_AUTHORITIES = {
     ("EC", "V1-last-update"),
 }
 
-# D10/D11 tiering: every V hit lands in exactly one of four tiers, checked in
-# this priority order. The fallback rule (V3-time-element) is not the only
-# source of wrong-referent dates — label rules (V1/V2) can match a date
-# printed for a document the page discusses rather than the page itself, so
-# this tiering applies across rules, not just to the <time> fallback:
-#   1. confirmed_wrong_referent — opened by hand (or, for the two rows
-#      surfaced by the future-date detector, confirmed against the live
-#      page): the printed date belongs to a different document.
-#   2. suspect — every other V3-time-element row: flagged, not opened by
-#      hand, so not further characterised than "may be another page's date".
-#   3. hand_checked — a label-rule hit from a group the record has already
-#      re-read by hand and found genuine (EC's "Last update" labels).
-#   4. unaudited — every other label-rule hit: not opened by hand, and in
-#      every Irish case that was opened by hand it turned out to name a
-#      different document's date, so this is a candidate, not a warranty.
-# A separate, general "future-date" detector (any V later than the run that
-# captured it) still runs over every row regardless of rule or authority; it
-# is what first surfaced two of the confirmed_wrong_referent rows, but it is
-# a symptom of the same wrong-referent defect, not a distinct fault, and it
-# does not create its own tier.
+# --- The referent test decides defensibility now (PREREGISTRATION-3.md) ---
+#
+# Every row that carries a V was re-extracted from a fresh fetch and
+# classified SELF / OTHER / UNATTRIBUTABLE by referent_test.py, with the
+# evidence recorded alongside (element ancestry, whether the match sits in a
+# link/list-item/card, the enclosing text block). Only SELF is served as the
+# defensible date; OTHER and UNATTRIBUTABLE are shown with their evidence and
+# an explicit refusal. This replaces the old hand-maintained four-tier system
+# (confirmed_wrong_referent / suspect / hand_checked / unaudited) entirely —
+# that system is why D11 existed in the first place: it trusted label-rule
+# hits (V1/V2) by default and only excluded the <time> fallback. The general
+# "future-date" detector (any V later than the run that captured it) still
+# runs over every row; it no longer sets a tier, only a cross-checking note
+# next to the row's own referent class.
 
 def parse_iso(s):
     if not s:
@@ -220,35 +252,57 @@ def build_row(authority_key, raw, scored):
     else:
         s_state = raw.get("s_state")
 
-    # --- D10/D11 tiering, computed over every authority and every rule alike ---
-    is_v3_rule = (v_rule == "V3-time-element")
-    is_label_rule = v_rule in ("V1-last-update", "V2-published")
-    is_confirmed_referent = bool(v) and url in CONFIRMED_WRONG_REFERENT
-    confirmed_note = CONFIRMED_WRONG_REFERENT.get(url) if is_confirmed_referent else None
+    # --- The referent test (PREREGISTRATION-3.md), looked up by URL ---
+    referent = REFERENT_BY_URL.get(url) if v else None
+    if not v:
+        referent_class = None
+        referent_status = None
+    elif referent is None:
+        referent_class = None
+        referent_status = "not-covered-by-referent-test"
+    elif referent.get("fetch") != "OK":
+        referent_class = None
+        referent_status = "referent-fetch-failed"
+    else:
+        referent_class = referent["class"]
+        referent_status = "classified"
+
+    referent_evidence = referent.get("evidence") if referent else None
+    referent_class_reason = referent.get("class_reason") if referent else None
+    referent_changed = bool(referent.get("changed")) if referent else False
+    referent_fresh_v = referent.get("fresh_v") if referent else None
+    referent_fresh_v_raw = referent.get("fresh_v_raw") if referent else None
+    referent_fresh_v_rule = referent.get("fresh_v_rule") if referent else None
+
+    # Hand-confirmed annotations — displayed, never used to decide defensibility.
+    hand_confirmed_note = CONFIRMED_WRONG_REFERENT.get(url) if v else None
+    hand_checked_genuine = bool(v) and bool(v_rule) and (authority_key, v_rule) in HAND_CHECKED_RULE_AUTHORITIES
 
     v_dt = parse_iso(v)
     run_ts = RUN_TS_BY_AUTHORITY[authority_key]
     v_postdates_run = bool(v_dt is not None and v_dt > run_ts)
 
-    if is_confirmed_referent:
-        flag_tier = "confirmed_wrong_referent"
-    elif is_v3_rule:
-        flag_tier = "suspect"
-    elif is_label_rule and (authority_key, v_rule) in HAND_CHECKED_RULE_AUTHORITIES:
-        flag_tier = "hand_checked"
-    elif is_label_rule:
-        flag_tier = "unaudited"
+    # --- "the date the reader could defend": a SELF-classified V, or nothing. ---
+    # D12, this round: S used to fill this slot when V was not usable. On GOV.UK
+    # all seven sitemap <lastmod> values cluster within about two minutes of a
+    # single bulk regeneration on 2026-08-05 — a publishing-system heartbeat, not
+    # a claim about any one page's content — so that fallback served a date up to
+    # ~188 days from the page's own visible date (see D12_GOVUK_EXAMPLE below) as
+    # "the date a reader could defend". Withdrawn: S is never the defensible date
+    # now, only ever shown as a labelled machine signal alongside the refusal.
+    v_usable = bool(v) and referent_class == "SELF"
+    v_present_not_defensible = bool(v) and not v_usable
+    s_withheld_from_defend = bool(s) and not v_usable  # D12: true whenever S existed but is not served
+    if v_usable:
+        defend_source, defend_iso = "V", v
     else:
-        flag_tier = None
+        defend_source, defend_iso = None, None
 
-    # Only the two excluded tiers (confirmed_wrong_referent, suspect) are kept
-    # out of what a reader could defend — those are the tiers with evidence
-    # against them. hand_checked and unaudited keep their defensible-date
-    # role: we have no evidence against an unaudited hit, only a pattern from
-    # the cases that were checked, so it is not excluded, only labelled.
-    v_excluded_from_defend = flag_tier in ("confirmed_wrong_referent", "suspect")
+    only_defensible_was_flagged = (defend_source is None) and v_present_not_defensible
 
-    # --- "the date a machine is handed": H, else S, else V, else none ---
+    # --- "the date a machine is handed": H, else S, else V, else none (the
+    # referent test does not touch this line — it is what naive tooling would
+    # still return, in the same order it always read in) ---
     if h:
         machine_source, machine_iso = "H", h
     elif s:
@@ -257,25 +311,21 @@ def build_row(authority_key, raw, scored):
         machine_source, machine_iso = "V", v
     else:
         machine_source, machine_iso = None, None
-    machine_is_flagged_v = (machine_source == "V" and v_excluded_from_defend)
-
-    # --- "the date the reader could defend": V (if not flagged), else S, else none ---
-    v_usable = bool(v) and not v_excluded_from_defend
-    skipped_flagged_v = bool(v) and v_excluded_from_defend
-    if v_usable:
-        defend_source, defend_iso = "V", v
-    elif s:
-        defend_source, defend_iso = "S", s
-    else:
-        defend_source, defend_iso = None, None
-
-    only_defensible_was_flagged = (defend_source is None) and skipped_flagged_v
+    machine_is_flagged_v = (machine_source == "V" and v_present_not_defensible)
 
     dp_machine = date_part(machine_iso)
     dp_defend = date_part(defend_iso)
     distance_days = None
     if dp_machine is not None and dp_defend is not None:
         distance_days = abs((dp_machine - dp_defend).days)
+
+    # D12: kept for display even though S is no longer ever served — this is
+    # exactly the gap the old fallback was silently handing out as "defensible".
+    dp_v = date_part(v)
+    dp_s = date_part(s)
+    v_to_s_distance_days = None
+    if dp_v is not None and dp_s is not None:
+        v_to_s_distance_days = abs((dp_v - dp_s).days)
 
     return {
         "authority": authority_key,
@@ -296,17 +346,28 @@ def build_row(authority_key, raw, scored):
         "v_raw": raw.get("v_raw"),
         "v_rule": v_rule,
         "etag": raw.get("etag"),
-        "flag_tier": flag_tier,
-        "confirmed_note": confirmed_note,
+        "referent_class": referent_class,
+        "referent_status": referent_status,
+        "referent_class_reason": referent_class_reason,
+        "referent_evidence": referent_evidence,
+        "referent_changed": referent_changed,
+        "referent_fresh_v": referent_fresh_v,
+        "referent_fresh_v_fmt": fmt_date_iso(referent_fresh_v) if referent_fresh_v else None,
+        "referent_fresh_v_raw": referent_fresh_v_raw,
+        "referent_fresh_v_rule": referent_fresh_v_rule,
+        "hand_confirmed_note": hand_confirmed_note,
+        "hand_checked_genuine": hand_checked_genuine,
         "v_postdates_run": v_postdates_run,
         "machine_source": machine_source,
         "machine_fmt": fmt_date_iso(machine_iso),
         "machine_is_flagged_v": machine_is_flagged_v,
         "defend_source": defend_source,
         "defend_fmt": fmt_date_iso(defend_iso),
-        "skipped_flagged_v": skipped_flagged_v,
+        "v_present_not_defensible": v_present_not_defensible,
+        "s_withheld_from_defend": s_withheld_from_defend,
         "only_defensible_was_flagged": only_defensible_was_flagged,
         "distance_days": distance_days,
+        "v_to_s_distance_days": v_to_s_distance_days,
         "no_signal_at_all": not (h or s or v),
     }
 
@@ -328,6 +389,72 @@ for key in ("GOVUK", "NIST", "IE"):
 ALL_ROWS = []
 for key, _ in AUTHORITIES:
     ALL_ROWS.extend(rows_by_authority[key])
+
+# The referent test must cover exactly the rows that carry a V here, or the
+# stored referents.json no longer matches the locked signal files it claims
+# to be testing — fail loudly rather than silently mis-labelling rows.
+_v_urls_here = {r["url"] for r in ALL_ROWS if r["v"]}
+_v_urls_tested = set(REFERENT_BY_URL)
+assert _v_urls_here == _v_urls_tested, (
+    "referents.json does not cover exactly the V-bearing rows in the locked signal "
+    f"files: {len(_v_urls_here - _v_urls_tested)} untested, "
+    f"{len(_v_urls_tested - _v_urls_here)} stale. Re-run referent_test.py."
+)
+assert len(_v_urls_here) == 62, f"expected 62 V hits per PREREGISTRATION-3.md, found {len(_v_urls_here)}"
+
+# ---------------------------------------------------------------------------
+# D12 — computed from the data, not typed by hand: the sitemap-fallback
+# defect this round removes. GOV.UK's seven sitemap <lastmod> values, and how
+# tightly they cluster, and the specific gap the fallback used to serve as
+# "defensible" on one row.
+# ---------------------------------------------------------------------------
+
+_govuk_rows = rows_by_authority.get("GOVUK", [])
+_govuk_s_times = sorted(parse_iso(r["s"]) for r in _govuk_rows if r["s"])
+D12_GOVUK_S_N = len(_govuk_s_times)
+if _govuk_s_times:
+    D12_GOVUK_S_MIN = _govuk_s_times[0]
+    D12_GOVUK_S_MAX = _govuk_s_times[-1]
+    D12_GOVUK_S_FULL_SPREAD_S = (D12_GOVUK_S_MAX - D12_GOVUK_S_MIN).total_seconds()
+    # the tight core: every timestamp within 10 minutes of the earliest one
+    _core = [t for t in _govuk_s_times if (t - D12_GOVUK_S_MIN).total_seconds() <= 600]
+    D12_GOVUK_S_CORE_N = len(_core)
+    D12_GOVUK_S_CORE_SPREAD_S = (max(_core) - min(_core)).total_seconds()
+    D12_GOVUK_S_OUTLIER_N = D12_GOVUK_S_N - D12_GOVUK_S_CORE_N
+else:
+    D12_GOVUK_S_MIN = D12_GOVUK_S_MAX = None
+    D12_GOVUK_S_FULL_SPREAD_S = D12_GOVUK_S_CORE_N = D12_GOVUK_S_CORE_SPREAD_S = D12_GOVUK_S_OUTLIER_N = None
+
+_d12_example = next(
+    (r for r in _govuk_rows if r["url"].endswith("secure-ai-infrastructure-call-for-information")),
+    None,
+)
+D12_EXAMPLE = None
+if _d12_example is not None:
+    D12_EXAMPLE = {
+        "url": _d12_example["url"],
+        "v_fmt": _d12_example["v_fmt"],
+        "s_fmt": _d12_example["s_fmt"],
+        "gap_days": _d12_example["v_to_s_distance_days"],
+    }
+
+# The conductor's report described "all seven" clustering within "about two
+# minutes". Computed here rather than repeated by hand: six of the seven do
+# (within under two minutes of each other); the seventh — the organisations
+# page, a different template — was regenerated the same day, hours later.
+# Both figures are printed below and on the page; neither is silently
+# rounded to match the description that prompted this check.
+
+# ---------------------------------------------------------------------------
+# D13 — named, not fixed. Two ways this round found the referent test's own
+# rule, not the page, producing the wrong class. Computed so the counts on
+# the page are real, not asserted.
+# ---------------------------------------------------------------------------
+
+D13_PUBLISHED_ROWS = [r for r in ALL_ROWS if r["v_rule"] == "V2-published" and r["v"]]
+D13_GOVUK_PUBLISHED_ROWS = [r for r in D13_PUBLISHED_ROWS if r["authority"] == "GOVUK"]
+D13_SEE_ALL_UPDATES_URL = "https://www.gov.uk/government/publications/ian-hogarths-declared-outside-interests"
+D13_SEE_ALL_UPDATES_ROW = next((r for r in ALL_ROWS if r["url"] == D13_SEE_ALL_UPDATES_URL), None)
 
 # ---------------------------------------------------------------------------
 # Coverage panel — two bases, computed from the rows
@@ -367,40 +494,68 @@ assert _ec_scored["n"] == _rescore_b["n_ok"] == 36, "EC scored-subset n mismatch
 assert _ec_scored["v"] == _rescore_b["P4_v_n"] == 31, "EC scored-subset V-count mismatch"
 
 # ---------------------------------------------------------------------------
-# D10/D11 tiering — badge counts and the future-date detector's catch,
-# computed generally over every row, every authority. The rule that "any V
-# used in the defensible-date computation must not postdate that authority's
-# run timestamp" is asserted below, not merely hoped for. The future-date
-# detector is a general rule (not special-cased to one URL) that surfaces
-# candidates for confirmed_wrong_referent; both of its current catches are
-# confirmed against the live page, so they land in that tier, not a separate
-# "future" tier.
+# Referent-class counts (SELF / OTHER / UNATTRIBUTABLE), computed over every
+# row, every authority, from the referent test's own output — not
+# recomputed, only tallied. The future-date detector still runs, generally,
+# over every row; it no longer sets a tier of its own, it is reported
+# alongside whatever the referent test independently found for that row (the
+# two are expected to agree; a future-dated V that the referent test still
+# calls SELF would be worth a second look, so that disagreement, if any, is
+# surfaced below rather than assumed away).
 # ---------------------------------------------------------------------------
 
 FUTURE_V_ROWS = [r for r in ALL_ROWS if r["v_postdates_run"]]
-_future_not_confirmed = [r for r in FUTURE_V_ROWS if r["flag_tier"] != "confirmed_wrong_referent"]
-if _future_not_confirmed:
+_future_still_self = [r for r in FUTURE_V_ROWS if r["referent_class"] == "SELF"]
+if _future_still_self:
     RECONCILE_NOTES.append(
         "Future-dated V rule: the general detector (any printed V later than the authority's "
-        "own run timestamp) caught a row that has not been confirmed wrong-referent by hand: " +
-        "; ".join(f"{r['authority']} {r['url']} (v={r['v_fmt']})" for r in _future_not_confirmed) +
-        ". Reported here rather than silenced; this row is still excluded from the defensible "
-        "date because it is future-dated, but is shown as 'suspect' rather than 'confirmed', "
-        "pending the same hand-check the other two future catches already had."
+        "own run timestamp) caught a row that the referent test still classifies SELF: " +
+        "; ".join(f"{r['authority']} {r['url']} (v={r['v_fmt']})" for r in _future_still_self) +
+        ". Shown on its slip as SELF (defensible) because that is what the referent evidence "
+        "supports; flagged here because a future-dated 'last update' label is unusual enough to "
+        "warrant a second look, not because the referent test's own criteria were not met."
     )
 
-TIER_KEYS = ("confirmed_wrong_referent", "suspect", "hand_checked", "unaudited")
+# Hand-confirmed rows (CONFIRMED_WRONG_REFERENT) versus the referent test's
+# own class — reported wherever they disagree, in both directions, rather
+# than letting either one silently override the other.
+_hand_vs_referent_conflicts = []
+for r in ALL_ROWS:
+    if r["hand_confirmed_note"] and r["referent_class"] == "SELF":
+        _hand_vs_referent_conflicts.append(
+            f"{r['authority']} {r['url']}: hand-confirmed wrong-referent, but the referent test "
+            "classifies it SELF (would be served as defensible) — shown as SELF on its slip "
+            "per the referent test's own rule, with the hand-confirmed note displayed alongside "
+            "as a conflicting, stronger annotation."
+        )
+    elif r["hand_confirmed_note"] and r["referent_class"] == "UNATTRIBUTABLE":
+        _hand_vs_referent_conflicts.append(
+            f"{r['authority']} {r['url']}: hand-confirmed wrong-referent (which the referent "
+            "test's OTHER class exists to catch), but the automated evidence for this specific "
+            "row falls short of OTHER's bar (no link, no quotation mark in the enclosing text "
+            "block) and it lands in UNATTRIBUTABLE instead. Both classes are non-defensible, so "
+            "the served date is the same either way; the difference is only in which evidence "
+            "the slip shows. Not claimed as a discovery — surfaced because the hand reading and "
+            "the machine reading diverge and that is worth a reader's own eyes."
+        )
+if _hand_vs_referent_conflicts:
+    RECONCILE_NOTES.append(
+        "Hand-confirmed rows versus the referent test's own class — "
+        + "; ".join(_hand_vs_referent_conflicts)
+    )
 
-TIER_COUNTS = {"all": {}, "scored": {}}
+CLASS_KEYS = ("SELF", "OTHER", "UNATTRIBUTABLE")
+
+CLASS_COUNTS = {"all": {}, "scored": {}}
 for key, _ in AUTHORITIES:
     rows = rows_by_authority[key]
     scored_rows = [r for r in rows if r["scored"]]
     for basis, rset in (("all", rows), ("scored", scored_rows)):
-        counts = {k: 0 for k in TIER_KEYS}
+        counts = {k: 0 for k in CLASS_KEYS}
         for r in rset:
-            if r["flag_tier"] in counts:
-                counts[r["flag_tier"]] += 1
-        TIER_COUNTS[basis][key] = counts
+            if r["referent_class"] in counts:
+                counts[r["referent_class"]] += 1
+        CLASS_COUNTS[basis][key] = counts
 
 # The defensible-date rule must never hand back a V later than the run that
 # captured it. Assert this over every row, not just the ones expected to
@@ -413,6 +568,23 @@ for r in ALL_ROWS:
             f"defensible V postdates the run timestamp — the future-date rule "
             f"failed to exclude it: {r['url']} v={r['v']} run={run_ts.isoformat()}"
         )
+
+# ---------------------------------------------------------------------------
+# Item 4 of this round: how many of the 177 measured pages carry a defensible
+# date now that S can never fill that slot — computed from the rows, printed
+# below and embedded for the page.
+# ---------------------------------------------------------------------------
+
+DEFENSIBLE_TOTAL = sum(1 for r in ALL_ROWS if r["defend_source"] == "V")
+DEFENSIBLE_BY_AUTHORITY = {k: sum(1 for r in rows_by_authority[k] if r["defend_source"] == "V")
+                            for k, _ in AUTHORITIES}
+# Sanity: the defensible slot is now filled if and only if V classified SELF —
+# no other path into it exists any more. Assert this rather than assume it.
+assert DEFENSIBLE_TOTAL == sum(CLASS_COUNTS["all"][k]["SELF"] for k, _ in AUTHORITIES), (
+    "defensible count no longer equals the SELF count — S is filling the slot again"
+)
+for r in ALL_ROWS:
+    assert not (r["defend_source"] == "S"), f"S in the defensible slot: {r['url']}"
 
 # ---------------------------------------------------------------------------
 # Assemble the embedded data blob
@@ -432,16 +604,57 @@ DATA = {
         "total_rows": len(ALL_ROWS),
         "future_v_n": len(FUTURE_V_ROWS),
         "future_v_rows": [
-            {"authority": r["authority"], "url": r["url"], "v": r["v"], "v_fmt": r["v_fmt"]}
+            {"authority": r["authority"], "url": r["url"], "v": r["v"], "v_fmt": r["v_fmt"],
+             "referent_class": r["referent_class"]}
             for r in FUTURE_V_ROWS
         ],
-        "unaudited_by_authority": {k: TIER_COUNTS["all"][k]["unaudited"] for k, _ in AUTHORITIES},
-        "hand_checked_by_authority": {k: TIER_COUNTS["all"][k]["hand_checked"] for k, _ in AUTHORITIES},
+        "self_by_authority": {k: CLASS_COUNTS["all"][k]["SELF"] for k, _ in AUTHORITIES},
+        "other_by_authority": {k: CLASS_COUNTS["all"][k]["OTHER"] for k, _ in AUTHORITIES},
+        "unattributable_by_authority": {k: CLASS_COUNTS["all"][k]["UNATTRIBUTABLE"] for k, _ in AUTHORITIES},
+        "hand_confirmed_n": sum(1 for r in ALL_ROWS if r["hand_confirmed_note"]),
+        "hand_checked_genuine_n": sum(1 for r in ALL_ROWS if r["hand_checked_genuine"]),
+        "referent_test": {
+            "preregistration": "PREREGISTRATION-3.md",
+            "run_started_utc": referents.get("run_started_utc"),
+            "run_finished_utc": referents.get("run_finished_utc"),
+            "hits_tested": referents.get("true_hit_count"),
+            "fetch_fail_n": referents["counts"]["fetch_fail"],
+            "changed_n": referents["counts"]["changed"],
+            "class_totals": referents["counts"]["class_totals"],
+            "predictions": referents["predictions"],
+        },
+        "adjudication": {
+            "preregistration": "PREREGISTRATION-3.md, R4",
+            "n": adjudication["n"],
+            "agreement": adjudication["agreement"],
+            "threshold": adjudication["threshold"],
+            "verdict": adjudication["verdict"],
+            "by_machine_class": adjudication["by_machine_class"],
+            "adjudicator_caveat": adjudication.get("adjudicator_caveat"),
+        },
+        "defensible_total": DEFENSIBLE_TOTAL,
+        "defensible_by_authority": DEFENSIBLE_BY_AUTHORITY,
+        "d12": {
+            "govuk_s_n": D12_GOVUK_S_N,
+            "govuk_s_min_utc": D12_GOVUK_S_MIN.isoformat() if D12_GOVUK_S_MIN else None,
+            "govuk_s_max_utc": D12_GOVUK_S_MAX.isoformat() if D12_GOVUK_S_MAX else None,
+            "govuk_s_full_spread_seconds": D12_GOVUK_S_FULL_SPREAD_S,
+            "govuk_s_core_n": D12_GOVUK_S_CORE_N,
+            "govuk_s_core_spread_seconds": D12_GOVUK_S_CORE_SPREAD_S,
+            "govuk_s_outlier_n": D12_GOVUK_S_OUTLIER_N,
+            "example": D12_EXAMPLE,
+        },
+        "d13": {
+            "published_label_never_self_n": len(D13_PUBLISHED_ROWS),
+            "govuk_published_n": len(D13_GOVUK_PUBLISHED_ROWS),
+            "see_all_updates_url": D13_SEE_ALL_UPDATES_URL,
+            "see_all_updates_class": D13_SEE_ALL_UPDATES_ROW["referent_class"] if D13_SEE_ALL_UPDATES_ROW else None,
+        },
     },
     "authorities": [{"key": k, "label": lbl} for k, lbl in AUTHORITIES],
     "rows": ALL_ROWS,
     "coverage": COVERAGE,
-    "tier_counts": TIER_COUNTS,
+    "class_counts": CLASS_COUNTS,
 }
 
 JSON_BLOB = json.dumps(DATA, ensure_ascii=False, separators=(",", ":"))
@@ -472,24 +685,21 @@ print(f"rows with no signal at all: {len(NO_SIGNAL_ROWS)} / {len(ALL_ROWS)}")
 for r in NO_SIGNAL_ROWS:
     print(f"  {r['authority_label']}: {r['url']}")
 print()
-print("D10/D11 badge tiers — all measured pages "
-      "(confirmed-wrong-referent / suspect / hand-checked / unaudited):")
+print("referent class (PREREGISTRATION-3.md) — all measured pages (SELF / OTHER / UNATTRIBUTABLE):")
 for k, lbl in AUTHORITIES:
-    c = TIER_COUNTS["all"][k]
-    print(f"  {lbl:60s} {c['confirmed_wrong_referent']} / {c['suspect']} / "
-          f"{c['hand_checked']} / {c['unaudited']}")
+    c = CLASS_COUNTS["all"][k]
+    print(f"  {lbl:60s} {c['SELF']} / {c['OTHER']} / {c['UNATTRIBUTABLE']}")
 print()
-print("D10/D11 badge tiers — scored subset:")
+print("referent class — scored subset:")
 for k, lbl in AUTHORITIES:
-    c = TIER_COUNTS["scored"][k]
-    print(f"  {lbl:60s} {c['confirmed_wrong_referent']} / {c['suspect']} / "
-          f"{c['hand_checked']} / {c['unaudited']}")
+    c = CLASS_COUNTS["scored"][k]
+    print(f"  {lbl:60s} {c['SELF']} / {c['OTHER']} / {c['UNATTRIBUTABLE']}")
 print()
 print(f"future-dated V rows caught by the general D6/D11 detector (V later than that "
       f"authority's run timestamp): {len(FUTURE_V_ROWS)}")
 for r in FUTURE_V_ROWS:
     print(f"  {r['authority_label']}: {r['url']}  v={r['v_fmt']} ({r['v']})  "
-          f"run={RUN_TS_BY_AUTHORITY[r['authority']].isoformat()}  tier={r['flag_tier']}")
+          f"run={RUN_TS_BY_AUTHORITY[r['authority']].isoformat()}  referent_class={r['referent_class']}")
 print()
 if RECONCILE_NOTES:
     print("RECONCILIATION NOTES (could not resolve from raw rows alone):")
@@ -497,6 +707,31 @@ if RECONCILE_NOTES:
         print("  - " + note)
 else:
     print("no reconciliation notes")
+print()
+print(f"R4 (blind hand adjudication, PREREGISTRATION-3.md): {adjudication['agreement']}/{adjudication['n']} "
+      f"agreement, threshold {adjudication['threshold']} -> {adjudication['verdict']}. "
+      f"By class: {adjudication['by_machine_class']}. "
+      "Per the lock's own terms this withdraws the three-class labelling; the instrument shows "
+      "this withdrawal on its face and renames UNATTRIBUTABLE without changing any threshold, "
+      "label set, or criterion.")
+print()
+print(f"D12 — S withdrawn from the defensible slot. Defensible dates after this change: "
+      f"{DEFENSIBLE_TOTAL} / {len(ALL_ROWS)}")
+for k, lbl in AUTHORITIES:
+    print(f"  {lbl:60s} {DEFENSIBLE_BY_AUTHORITY[k]}")
+print(f"  GOV.UK sitemap <lastmod> spread: {D12_GOVUK_S_N} values, "
+      f"{D12_GOVUK_S_CORE_N} within {D12_GOVUK_S_CORE_SPREAD_S:.0f}s of each other, "
+      f"{D12_GOVUK_S_OUTLIER_N} outlier(s), full spread {D12_GOVUK_S_FULL_SPREAD_S:.0f}s "
+      f"({D12_GOVUK_S_MIN.isoformat() if D12_GOVUK_S_MIN else '?'} to {D12_GOVUK_S_MAX.isoformat() if D12_GOVUK_S_MAX else '?'})")
+if D12_EXAMPLE:
+    print(f"  example withdrawn: {D12_EXAMPLE['url']} — V {D12_EXAMPLE['v_fmt']}, "
+          f"S {D12_EXAMPLE['s_fmt']}, gap {D12_EXAMPLE['gap_days']} days")
+print()
+print(f"D13 — named, not fixed. V2-published hits that can never classify SELF because the lock's "
+      f"label set contains no form of 'published': {len(D13_PUBLISHED_ROWS)} total "
+      f"({len(D13_GOVUK_PUBLISHED_ROWS)} on GOV.UK). Second instance: {D13_SEE_ALL_UPDATES_URL} "
+      f"classifies {D13_SEE_ALL_UPDATES_ROW['referent_class'] if D13_SEE_ALL_UPDATES_ROW else '?'} "
+      "because an unrelated 'See all updates' link shares its metadata block.")
 print()
 
 # ---------------------------------------------------------------------------
@@ -603,6 +838,37 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
   letter-spacing: 0.08em;
   color: var(--muted);
   margin: 0 0 1rem;
+}
+.aot .aot-withdrawal {
+  border: 2px solid var(--bad-border);
+  background: var(--bad-bg);
+  border-radius: 4px;
+  padding: 0.9rem 1.1rem;
+  margin-bottom: 1.4rem;
+  font-size: 0.88rem;
+}
+.aot .aot-withdrawal h2 {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--bad-border);
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  font-family: var(--mono);
+}
+.aot .aot-withdrawal p { margin: 0 0 0.55rem; }
+.aot .aot-withdrawal p:last-child { margin-bottom: 0; }
+.aot .aot-withdrawal table.aot-withdrawal-table {
+  border-collapse: collapse;
+  margin: 0.4rem 0 0.6rem;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+}
+.aot .aot-withdrawal table.aot-withdrawal-table th,
+.aot .aot-withdrawal table.aot-withdrawal-table td {
+  border: 1px solid var(--bad-border);
+  padding: 0.25rem 0.6rem;
+  text-align: left;
 }
 .aot .aot-standing {
   border: 1px solid var(--border);
@@ -910,6 +1176,9 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
   <h1>As of Today</h1>
   <p class="aot-kicker">a citation slip for official policy pages — three self-reported dates, checked against each other</p>
 
+  <div class="aot-withdrawal" id="aot-withdrawal"></div>
+  <div class="aot-withdrawal" id="aot-d12"></div>
+
   <div class="aot-standing">
     <h2>What this instrument does and does not do</h2>
     <ul>
@@ -917,8 +1186,8 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
       <li>It is a snapshot taken at two moments on one day, not a monitor and not a history.</li>
       <li>S is itself only the publishing system's own claim about the page — it is not verified against anything.</li>
       <li>No archived capture history was reachable for any of these pages, for either measurement session, so nothing here can be checked against what actually changed.</li>
-      <li>This instrument's own rules for extracting V from a page are known to be defective on part of the corpus (a fallback that can read a different article's date, or a future date, off the same page) — that is deliberate: the instrument marks its own bad rows in place, on the slip, rather than quietly dropping them.</li>
-      <li>D11: the wrong-referent failure is not a property of one extraction rule. It has been confirmed under two different rules, on two different authorities — a &lt;time&gt; fallback on NIST and a text-label rule on Ireland's — so it is treated here as a property of extracting any date from a page that displays other documents' dates, not as one rule's bug.</li>
+      <li>This instrument's own rules for extracting V from a page are known to be defective on part of the corpus: a rule can read a date printed for a <em>different</em> document the page displays or discusses, not the page's own currency (D10/D11) — that is deliberate: the instrument marks its own bad rows in place, on the slip, rather than quietly dropping them.</li>
+      <li>Every V hit was re-fetched fresh and classified <strong>SELF / OTHER / referent-not-established</strong> by the referent test (<code>PREREGISTRATION-3.md</code>): does a page-currency label sit within 40 characters before the date, does any ancestor put the date inside a link, list item, other article, or card/teaser/listing container, does the enclosing text block link or quote. Only <strong>SELF</strong> is served as a defensible date; <strong>OTHER</strong> and <strong>referent-not-established</strong> show the date, the class, and the evidence, with an explicit refusal in place of a defensible date. <strong>See the notice above the fold:</strong> the third class failed its own pre-registered blind-adjudication test today and is withdrawn, not trusted as a discovery.</li>
     </ul>
     <div class="aot-timestamps" id="aot-timestamps"></div>
   </div>
@@ -974,6 +1243,92 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
     return m[1] + " " + m[2] + " UTC";
   }
 
+  // ---- withdrawal banner: R4, the blind hand adjudication, KILLED ----
+  (function renderWithdrawal() {
+    var box = document.getElementById("aot-withdrawal");
+    var adj = DATA.meta.adjudication;
+    if (!adj) return;
+    box.appendChild(el("h2", null, "Withdrawn, not tuned — the classifier failed its own pre-registered test"));
+    box.appendChild(el("p", null,
+      "PREREGISTRATION-3.md's R4 required a blind hand adjudication of a 12-row stratified " +
+      "sample to agree with the machine class on at least 9 of 12. It scored " + adj.agreement +
+      " of " + adj.n + " (threshold " + adj.threshold + ") — " + adj.verdict + ". By the lock's " +
+      "own terms this withdraws the three-class labelling below; nothing here has been tuned in " +
+      "response, and no threshold, label set, or criterion has been changed."));
+    var table = el("table", "aot-withdrawal-table", null);
+    var thead = el("tr", null, null);
+    ["Machine class", "Agreement with the blind human reader"].forEach(function (h) {
+      thead.appendChild(el("th", null, h));
+    });
+    table.appendChild(thead);
+    Object.keys(adj.by_machine_class || {}).forEach(function (k) {
+      var tr = el("tr", null, null);
+      tr.appendChild(el("td", null, k));
+      tr.appendChild(el("td", null, adj.by_machine_class[k]));
+      table.appendChild(tr);
+    });
+    box.appendChild(table);
+    box.appendChild(el("p", null,
+      "All four disagreements were on the class this instrument used to call UNATTRIBUTABLE. On " +
+      "every one of those four, the blind reader found a referent the machine did not — twice " +
+      "another document's date, twice the page's own dated line. So that class is renamed below " +
+      "to “referent not established by this instrument”: it means the machine could not " +
+      "tell, never that the page carries no such date. The conservative serving rule is unchanged " +
+      "— only a SELF-labelled date is ever offered as defensible — because it strictly reduces " +
+      "wrong answers regardless of this result, not because this result vindicates it."));
+    if (adj.adjudicator_caveat) {
+      box.appendChild(el("p", null, "The adjudicator's own caveat, verbatim: " + adj.adjudicator_caveat));
+    }
+  })();
+
+  // ---- D12 banner: the sitemap fallback is withdrawn ----
+  (function renderD12() {
+    var box = document.getElementById("aot-d12");
+    var d12 = DATA.meta.d12;
+    if (!d12) return;
+    box.appendChild(el("h2", null, "D12 — the sitemap fallback is withdrawn"));
+    box.appendChild(el("p", null,
+      "Until this round, when a page's printed date (V) was not classified SELF, this instrument " +
+      "filled “the date a reader could defend” from the sitemap's own <lastmod> (S) instead. " +
+      "On GOV.UK that served a bulk regeneration timestamp as if it were evidence about one page: " +
+      "of " + d12.govuk_s_n + " sitemap dates, " + d12.govuk_s_core_n + " sit within " +
+      Math.round(d12.govuk_s_core_spread_seconds) + " seconds of each other" +
+      (d12.govuk_s_outlier_n ? (" and " + d12.govuk_s_outlier_n + " outlier was regenerated the same day, hours later") : "") +
+      " — a publishing-system heartbeat, not a per-page claim."));
+    if (d12.example) {
+      box.appendChild(el("p", null,
+        "Example: " + d12.example.url + " prints its own “Published " + d12.example.v_fmt +
+        "”, but the sitemap-fallback rule was serving " + d12.example.s_fmt + " as the " +
+        "“defensible” date instead — " + d12.example.gap_days + " days away from the " +
+        "page's own visible date."));
+    }
+    box.appendChild(el("p", null,
+      "That behaviour is withdrawn. S is still shown on every slip below, labelled as what it is " +
+      "— a machine signal, with its own caveat — but it can no longer occupy the “date a reader " +
+      "could defend” slot. No threshold, label set, or classification criterion changed to do this."));
+  })();
+
+  // ---- D13: named, not fixed — appended to the standing list from the data ----
+  (function renderD13() {
+    var d13 = DATA.meta.d13;
+    if (!d13) return;
+    var ul = document.querySelector(".aot-standing ul");
+    if (!ul) return;
+    var li = el("li", null, null);
+    li.appendChild(document.createTextNode(
+      "D13, named and not fixed this round — the referent test's own rule, not the page, producing " +
+      "the wrong class, in two ways found by review. (1) The page-currency label set has no form of " +
+      "“published”, so GOV.UK's own idiom (“Updates to this page — Published ‹date›”) can never " +
+      "classify SELF: " + d13.published_label_never_self_n + " V2-published hits are affected (" +
+      d13.govuk_published_n + " on GOV.UK), and a blind reader called two of them SELF where the " +
+      "machine declined. (2) " + d13.see_all_updates_url + " carries a literal “Last updated” label " +
+      "but classifies " + (d13.see_all_updates_class || "?") + " because an unrelated “See all " +
+      "updates” link shares its metadata block — a criterion tuned to one authority's template " +
+      "disqualifying another's standard widget. Both are stated here as defects of our rule, not of " +
+      "the pages, and are left unfixed by this round's licence."));
+    ul.appendChild(li);
+  })();
+
   // ---- standing block timestamps ----
   (function renderTimestamps() {
     var box = document.getElementById("aot-timestamps");
@@ -1009,18 +1364,33 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
         "Future-dated printed dates, found by a general detector comparing every row's V to " +
         "that authority's own run timestamp (not special-cased to one URL): " + futureRows.length +
         " row" + (futureRows.length === 1 ? "" : "s") + " — " +
-        futureRows.map(function (r) { return r.authority + " " + r.url + " (v=" + r.v_fmt + ")"; }).join("; ") +
-        ". Both are symptoms of the same wrong-referent defect (D10/D11), confirmed by hand " +
-        "against the live pages, and are shown under \"confirmed wrong-referent\" on their " +
-        "slips, not as a separate tier."));
+        futureRows.map(function (r) { return r.authority + " " + r.url + " (v=" + r.v_fmt + ", referent class " + r.referent_class + ")"; }).join("; ") +
+        ". The referent test (below) independently classified both OTHER — another document's " +
+        "date, not this page's own."));
     }
-    var uc = DATA.meta.unaudited_by_authority || {};
-    var hc = DATA.meta.hand_checked_by_authority || {};
+    var sc = DATA.meta.self_by_authority || {};
+    var oc = DATA.meta.other_by_authority || {};
+    var ac = DATA.meta.unattributable_by_authority || {};
     foot.appendChild(el("div", null,
-      "Unaudited label-rule hits (D11, not opened by hand): " +
-      DATA.authorities.map(function (a) { return a.label + " " + (uc[a.key] || 0); }).join(", ") +
-      ". Hand-checked label-rule hits, found genuine: " +
-      DATA.authorities.map(function (a) { return a.label + " " + (hc[a.key] || 0); }).join(", ") + "."));
+      "Referent test (PREREGISTRATION-3.md), SELF / OTHER / referent-not-established by authority: " +
+      DATA.authorities.map(function (a) {
+        return a.label + " " + (sc[a.key] || 0) + "/" + (oc[a.key] || 0) + "/" + (ac[a.key] || 0);
+      }).join(", ") + ". Only SELF is served as a defensible date. The third class failed its own " +
+      "blind-adjudication test (see the notice above the fold) and is shown withdrawn."));
+    var rt = DATA.meta.referent_test || {};
+    if (rt.hits_tested) {
+      foot.appendChild(el("div", null,
+        "Referent test run: " + rt.hits_tested + " locked V hits re-fetched fresh and re-classified, " +
+        rt.fetch_fail_n + " fetch failure" + (rt.fetch_fail_n === 1 ? "" : "s") + ", " +
+        rt.changed_n + " row" + (rt.changed_n === 1 ? "" : "s") +
+        " where the fresh date differs from the locked run (excluded from the test's own agreement " +
+        "figures, still classified and still shown here). Started " + fmtUtc(rt.run_started_utc) + "."));
+    }
+    foot.appendChild(el("div", null,
+      "Hand-confirmed wrong-referent rows (D10/D11, opened by hand before the referent test " +
+      "existed — stronger evidence than the machine class, kept as an annotation and never " +
+      "overridden by it): " + (DATA.meta.hand_confirmed_n || 0) + ". Hand-checked label-rule hits " +
+      "found genuine, as a batch: " + (DATA.meta.hand_checked_genuine_n || 0) + "."));
   })();
 
   // ---- grouping ----
@@ -1055,14 +1425,9 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
         var btn = el("button", "aot-url-btn", null);
         btn.type = "button";
         btn.appendChild(document.createTextNode(pathLabel(row)));
-        var FLAG_LABEL = {
-          confirmed_wrong_referent: "wrong-referent",
-          suspect: "suspect",
-          hand_checked: "hand-checked",
-          unaudited: "unaudited"
-        };
-        if (row.flag_tier && FLAG_LABEL[row.flag_tier]) {
-          btn.appendChild(el("span", "aot-flag", FLAG_LABEL[row.flag_tier]));
+        var FLAG_LABEL = { SELF: "self", OTHER: "other", UNATTRIBUTABLE: "not established" };
+        if (row.referent_class && FLAG_LABEL[row.referent_class]) {
+          btn.appendChild(el("span", "aot-flag", FLAG_LABEL[row.referent_class]));
         }
         if (row.url === selectedUrl) btn.classList.add("aot-selected");
         btn.addEventListener("click", function () {
@@ -1094,52 +1459,92 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
     return { text: row.authority_label + " — " + row.path + ": " + reason, present: false };
   }
 
-  // Four tiers. confirmed_wrong_referent's note comes from the row itself
-  // (row.confirmed_note) because the evidence differs case by case; the
-  // other three tiers share one standing note per tier.
-  var TIER_INFO = {
-    confirmed_wrong_referent: {
-      cls: "aot-confirmed",
-      badgeCls: "aot-badge-confirmed",
-      badgeText: "confirmed wrong-referent",
-      excluded: true
-    },
-    suspect: {
-      cls: "aot-suspect",
-      badgeCls: "aot-badge-suspect",
-      badgeText: "suspect",
-      excluded: true,
-      note: "Suspect (D10): this date comes from a fallback that reads the datetime attribute " +
-        "of a <time> element, which may belong to a teaser card linking to a different article " +
-        "rather than to this page. Not opened by hand to confirm."
-    },
-    hand_checked: {
+  // The referent test's three classes (PREREGISTRATION-3.md). Only SELF is
+  // served as a defensible date; OTHER and UNATTRIBUTABLE are shown with
+  // their evidence and an explicit refusal, below.
+  var CLASS_INFO = {
+    SELF: {
       cls: "aot-ok",
       badgeCls: "aot-badge-ok",
-      badgeText: "hand-checked",
-      excluded: false,
-      note: "Hand-checked: this on-page “Last update” label was read by hand in an earlier " +
-        "session and found genuine — not a citation to another document's date. Kept as a " +
-        "defensible date."
+      badgeText: "SELF — defensible",
+      note: "All three referent criteria hold: a page-currency label ends within 40 characters " +
+        "before the date, no ancestor is a link, list item, other article, or card/teaser/listing " +
+        "container, and the enclosing text block neither links nor quotes. Served as the date a " +
+        "reader could defend."
     },
-    unaudited: {
-      cls: "aot-info",
-      badgeCls: "aot-badge-info",
-      badgeText: "unaudited",
-      excluded: false,
-      note: "Unaudited (D11): this date was matched by a rule that reads a date label printed in " +
-        "the page text. In every case of this kind opened by hand so far, the label named a " +
-        "different document's publish date, not this page's own currency — so this is a " +
-        "candidate, not a warranty. Kept as a defensible date because there is no evidence " +
-        "against this specific row, only a pattern from the rows that were checked."
+    OTHER: {
+      cls: "aot-confirmed",
+      badgeCls: "aot-badge-confirmed",
+      badgeText: "OTHER — another document's date",
+      note: "The referent evidence points at a different document: the enclosing text block links " +
+        "or quotes a document title, or the date sits inside a link or a card/teaser/listing " +
+        "container. Not served as a defensible date."
+    },
+    UNATTRIBUTABLE: {
+      cls: "aot-suspect",
+      badgeCls: "aot-badge-suspect",
+      badgeText: "referent not established by this instrument",
+      note: "Neither a page-currency label nor link/card/quote evidence was found near this date — " +
+        "including every date taken from a bare <time datetime> with no visible label. This means " +
+        "the machine could not tell, not that the page carries no such date: on a blind sample of " +
+        "twelve (PREREGISTRATION-3.md, R4 — KILLED, 8/12 against a threshold of 9), a human reader " +
+        "resolved 4 of 4 rows in this class, twice finding another document's date and twice " +
+        "finding the page's own dated line. See the withdrawal notice above. Not served as a " +
+        "defensible date."
     }
   };
 
-  function noteFor(row, tier) {
-    if (row.flag_tier === "confirmed_wrong_referent" && row.confirmed_note) {
-      return row.confirmed_note;
+  var REFERENT_STATUS_INFO = {
+    "referent-fetch-failed": {
+      cls: "aot-info", badgeCls: "aot-badge-info", badgeText: "referent re-check failed",
+      note: "The referent test's fresh fetch of this URL failed, so this date could not be " +
+        "re-classified this run. Not served as a defensible date, honestly, rather than guessed."
+    },
+    "not-covered-by-referent-test": {
+      cls: "aot-info", badgeCls: "aot-badge-info", badgeText: "not covered by referent test",
+      note: "This printed date is not among the 62 hits the referent test covered. Not served as " +
+        "a defensible date."
     }
-    return tier.note;
+  };
+
+  function chainSummary(chain) {
+    if (!chain || !chain.length) return "—";
+    return chain.map(function (n) {
+      var s = n.tag;
+      if (n.class) s += "." + n.class.trim().split(/\s+/).join(".");
+      if (n.id) s += "#" + n.id;
+      return s;
+    }).join(" < ");
+  }
+
+  function noteFor(row) {
+    var parts = [];
+    if (row.referent_status === "classified") {
+      parts.push(CLASS_INFO[row.referent_class].note);
+      if (row.referent_class_reason) parts.push(row.referent_class_reason + ".");
+    } else if (REFERENT_STATUS_INFO[row.referent_status]) {
+      parts.push(REFERENT_STATUS_INFO[row.referent_status].note);
+    }
+    if (row.referent_changed) {
+      parts.push("The referent test's fresh fetch found a different date (" +
+        (row.referent_fresh_v_fmt || row.referent_fresh_v_raw || "—") +
+        ") than the locked run recorded (" + row.v_fmt + "); marked CHANGED, excluded from the " +
+        "test's own agreement figures, still classified from the fresh page.");
+    }
+    if (row.hand_confirmed_note) {
+      parts.push("Hand-confirmed annotation (stronger evidence, kept regardless of the machine " +
+        "class): " + row.hand_confirmed_note);
+    }
+    if (row.hand_checked_genuine) {
+      parts.push("This row's rule/authority was also hand-checked as a batch in an earlier " +
+        "session and found genuine.");
+    }
+    return parts.join(" ");
+  }
+
+  function badgeInfoFor(row) {
+    if (row.referent_status === "classified") return CLASS_INFO[row.referent_class];
+    return REFERENT_STATUS_INFO[row.referent_status] || null;
   }
 
   function renderSentences(container, row) {
@@ -1151,13 +1556,25 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
       li.appendChild(tag);
       li.appendChild(document.createTextNode(info.text));
       if (!info.present) li.classList.add("aot-absent");
-      if (sig === "v" && row.flag_tier) {
-        var tier = TIER_INFO[row.flag_tier];
-        li.classList.add(tier.cls);
-        var badge = el("span", "aot-badge " + tier.badgeCls, tier.badgeText);
-        li.appendChild(badge);
-        var note = el("div", "aot-verdict-note", noteFor(row, tier));
-        li.appendChild(note);
+      if (sig === "s" && info.present) {
+        var sCaveat = "S is the publishing system's own claim about when this record was " +
+          "generated in the sitemap, not evidence about this page's own content (D12) — never " +
+          "served as the date a reader could defend.";
+        if (row.v_to_s_distance_days !== null && row.v_to_s_distance_days !== undefined) {
+          sCaveat += " Gap from the printed date (V) on this page: " + row.v_to_s_distance_days +
+            (row.v_to_s_distance_days === 1 ? " day." : " days.");
+        }
+        li.appendChild(el("div", "aot-verdict-note", sCaveat));
+      }
+      if (sig === "v" && row.v) {
+        var info2 = badgeInfoFor(row);
+        if (info2) {
+          li.classList.add(info2.cls);
+          var badge = el("span", "aot-badge " + info2.badgeCls, info2.badgeText);
+          li.appendChild(badge);
+          var note = el("div", "aot-verdict-note", noteFor(row));
+          li.appendChild(note);
+        }
       }
       ul.appendChild(li);
     });
@@ -1180,40 +1597,51 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
     }
     box.appendChild(mLine);
     if (row.machine_is_flagged_v) {
-      var mTier = TIER_INFO[row.flag_tier];
+      var mInfo = badgeInfoFor(row);
       box.appendChild(el("div", "aot-verdict-note",
-        "This is the printed date, and it is flagged " + mTier.badgeText + " below — it is what " +
-        "ordinary tooling would still be handed, in the order H, then S, then V, because neither " +
-        "H nor S exists on this page."));
+        "This is the printed date, and it is classed " + (mInfo ? mInfo.badgeText : row.referent_class) +
+        " below — it is what ordinary tooling would still be handed, in the order H, then S, then " +
+        "V, because neither H nor S exists on this page."));
     } else {
       box.appendChild(el("div", "aot-verdict-note",
         "Ordinary tooling reads in this order: Last-Modified header first, then sitemap, then a printed date."));
     }
 
-    // defensible line
+    // defensible line — D12: V classified SELF, or an explicit refusal. S is
+    // never in this slot any more, however tempting a fallback it once was.
     var dLine = el("div", "aot-verdict-line", null);
     var dLabel = el("span", "aot-verdict-label", "The date a reader could defend: ");
     dLine.appendChild(dLabel);
     if (row.defend_fmt) {
       dLine.appendChild(document.createTextNode(row.defend_fmt + " (from " + row.defend_source + ")."));
-    } else if (row.only_defensible_was_flagged) {
-      dLine.appendChild(document.createTextNode("no defensible date at all."));
-      dLine.classList.add("aot-nodate");
     } else {
-      dLine.appendChild(document.createTextNode("none — no sitemap entry and no printed date."));
+      dLine.appendChild(document.createTextNode("no defensible date — refused, not guessed."));
       dLine.classList.add("aot-nodate");
     }
     box.appendChild(dLine);
-    if (row.skipped_flagged_v) {
-      var sTier = TIER_INFO[row.flag_tier];
-      if (row.only_defensible_was_flagged) {
+    if (!row.defend_fmt) {
+      if (row.v_present_not_defensible && row.s_withheld_from_defend) {
+        var sInfo = badgeInfoFor(row);
+        var sLabel = sInfo ? sInfo.badgeText : (row.referent_class || "not classified");
         box.appendChild(el("div", "aot-verdict-note",
-          "The only printed date on this page is flagged " + sTier.badgeText + " and there is no " +
-          "sitemap entry to fall back to, so it is not offered here as an answer."));
+          "The printed date on this page is classed " + sLabel + ", and the sitemap carries a date " +
+          "too (shown above, as S) — but S is never served in this slot (D12): it is the publishing " +
+          "system's own claim about when the record was generated, not a claim about this page's " +
+          "content, and it can be a bulk regeneration timestamp shared across unrelated pages."));
+      } else if (row.v_present_not_defensible) {
+        var sInfo2 = badgeInfoFor(row);
+        var sLabel2 = sInfo2 ? sInfo2.badgeText : (row.referent_class || "not classified");
+        box.appendChild(el("div", "aot-verdict-note",
+          "The printed date on this page is classed " + sLabel2 + ", and there is no sitemap entry " +
+          "either, so no defensible date is offered here."));
+      } else if (row.s_withheld_from_defend) {
+        box.appendChild(el("div", "aot-verdict-note",
+          "This page prints no date a reader could cite. The sitemap carries a date (shown above, " +
+          "as S), but S is never served in this slot (D12): it is the publishing system's own claim " +
+          "about when the record was generated, not a claim about this page's content."));
       } else {
         box.appendChild(el("div", "aot-verdict-note",
-          "The printed date on this page is flagged " + sTier.badgeText + ", so it is excluded " +
-          "here and the sitemap date is used instead."));
+          "This page offers no printed date and no sitemap entry — nothing here to defend or refuse a claim about."));
       }
     }
     box.appendChild(el("div", "aot-verdict-note",
@@ -1252,12 +1680,46 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
     evidenceRow(table, "ETag", row.etag);
     evidenceRow(table, "Sitemap state", row.s_state);
     evidenceRow(table, "Sitemap <lastmod>", row.s);
-    evidenceRow(table, "Printed date (raw string)", row.v_raw);
+    evidenceRow(table, "Printed date (raw string, locked run)", row.v_raw);
     evidenceRow(table, "Extraction rule", row.v_rule);
-    evidenceRow(table, "V flag (D10 / D11)", row.flag_tier ? TIER_INFO[row.flag_tier].badgeText : "none");
     evidenceRow(table, "In the collective's scored subset", row.scored ? "yes" : "no (chrome / not in arm B)");
     det.appendChild(table);
     container.appendChild(det);
+
+    if (!row.v) return;
+
+    var det2 = el("details", "aot-evidence", null);
+    det2.appendChild(el("summary", null, "Referent test evidence (PREREGISTRATION-3.md)"));
+    var t2 = el("table", "aot-evidence-table", null);
+    evidenceRow(t2, "Referent class (internal name)", row.referent_class === "UNATTRIBUTABLE"
+      ? "UNATTRIBUTABLE — shown above as “referent not established by this instrument”"
+      : (row.referent_class || row.referent_status || "not classified"));
+    evidenceRow(t2, "Fresh fetch, re-extracted date", row.referent_fresh_v_fmt);
+    evidenceRow(t2, "Fresh fetch, re-extraction rule", row.referent_fresh_v_rule);
+    evidenceRow(t2, "Changed vs. locked run", row.referent_changed ? "yes — see note above" : "no");
+    var ev = row.referent_evidence;
+    if (ev) {
+      evidenceRow(t2, "Matched-node ancestor chain (nearest first)", chainSummary(ev.element_chain));
+      evidenceRow(t2, "Enclosing text block", (ev.enclosing_block_tag || "—") +
+        (ev.enclosing_block_class ? "." + ev.enclosing_block_class.trim().split(/\s+/).join(".") : ""));
+      evidenceRow(t2, "Block links (contains <a>) / quotes", (ev.enclosing_block_has_a ? "yes" : "no") +
+        " / " + (ev.enclosing_block_has_quote ? "yes" : "no"));
+      evidenceRow(t2, "Inside <a> / <li> / card-teaser-listing container",
+        (ev.in_a_ancestor ? "yes" : "no") + " / " + (ev.in_li_ancestor ? "yes" : "no") + " / " +
+        (ev.in_card_like_ancestor ? "yes" : "no"));
+      evidenceRow(t2, "Other-article ancestor (not the page's own)", ev.other_article_ancestor ? "yes" : "no");
+      evidenceRow(t2, "Currency label within 40 chars before the date",
+        ev.label_within_40_chars ? ("yes — “" + ev.label_text_as_found + "”, " + ev.label_gap_chars + " char gap") : "no");
+      evidenceRow(t2, "Criteria a / b / c", (ev.criterion_a ? "hold" : "fail") + " / " +
+        (ev.criterion_b ? "hold" : "fail") + " / " + (ev.criterion_c ? "hold" : "fail"));
+      evidenceRow(t2, "Text around the match", ev.match_context);
+      evidenceRow(t2, "Location approximate (fresh-page structure re-matched, not the locked run's)",
+        ev.approximate_location ? "yes" : "no");
+    } else {
+      evidenceRow(t2, "Evidence", row.referent_class_reason || "not available");
+    }
+    det2.appendChild(t2);
+    container.appendChild(det2);
   }
 
   function renderSlip(row) {
@@ -1306,9 +1768,9 @@ HTML_TEMPLATE = r"""<title>As of Today — the citation slip</title>
       "URL fetched, chrome included, and was not the basis any P1–P4 prediction was scored against.");
     note.appendChild(p1);
     var p2 = el("div", null,
-      "The V counts above include every printed date found, including the rows the citation " +
-      "slips flag as suspect or confirmed-defective (D10/D6) — a flagged V is still a V for " +
-      "coverage purposes. Each slip's \"date a reader could defend\" excludes those same rows, " +
+      "The V counts above include every printed date found, including the rows the referent test " +
+      "(PREREGISTRATION-3.md) classifies OTHER or referent-not-established — a non-defensible V is " +
+      "still a V for coverage purposes. Each slip's \"date a reader could defend\" excludes those same rows, " +
       "falling back to the sitemap date or to none. So a page can count toward V here and still " +
       "show \"no defensible date\" on its slip: that is by design, not a discrepancy to reconcile.");
     note.appendChild(p2);

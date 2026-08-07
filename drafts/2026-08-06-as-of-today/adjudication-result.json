@@ -1,0 +1,138 @@
+{
+ "test": "R4 blind adjudication",
+ "scored_utc": "2026-08-06",
+ "mapping": "PREREGISTRATION-3 amendment A1",
+ "agreement": 8,
+ "n": 12,
+ "threshold": 9,
+ "verdict": "KILLED",
+ "rows": [
+  {
+   "id": 1,
+   "url": "https://digital-strategy.ec.europa.eu/en/library/explanatory-notice-and-template-public-summary-training-content-general-purpose-ai-models",
+   "rule": "V1-last-update",
+   "machine": "SELF",
+   "human": "SELF",
+   "agreement": true,
+   "human_quote": "Related topics Artificial intelligence Last update 26 March 2026 Print as PDF",
+   "human_reason": "page's own footer block under an explicit 'Last update' heading"
+  },
+  {
+   "id": 2,
+   "url": "https://digital-strategy.ec.europa.eu/en/news/eu-agrees-simplify-ai-rules-boost-innovation-and-ban-nudification-apps-protect-citizens",
+   "rule": "V1-last-update",
+   "machine": "SELF",
+   "human": "SELF",
+   "agreement": true,
+   "human_quote": "<h4>Last update</h4><p>8 May 2026</p>",
+   "human_reason": "same standard footer widget; distinct from the in-body 'Publication 07 May 2026' press-release line"
+  },
+  {
+   "id": 3,
+   "url": "https://digital-strategy.ec.europa.eu/en/policies/artificial-intelligence",
+   "rule": "V1-last-update",
+   "machine": "SELF",
+   "human": "SELF",
+   "agreement": true,
+   "human_quote": "<h4>Last update</h4><p>3 August 2026</p>",
+   "human_reason": "SELF but ambiguous: the footer date coincides with an unrelated 'Latest News' teaser card carrying the same calendar date"
+  },
+  {
+   "id": 4,
+   "url": "https://digital-strategy.ec.europa.eu/en/news/commission-publishes-guidelines-transparency-obligations-providers-and-deployers-certain-ai-systems",
+   "rule": "V1-last-update",
+   "machine": "SELF",
+   "human": "SELF",
+   "agreement": true,
+   "human_quote": "…under Article 50 of the AI Act. Last update 27 July 2026 Print as PDF",
+   "human_reason": "same footer widget; a nearby 'Related content' card carries a different date, 20 July 2026"
+  },
+  {
+   "id": 5,
+   "url": "https://enterprise.gov.ie/en/what-we-do/innovation-research-development/european-space-agency",
+   "rule": "V2-published",
+   "machine": "OTHER",
+   "human": "OTHER",
+   "agreement": true,
+   "human_quote": "National Space Strategy for Enterprise 2019-2025, published on 19 June 2019, establishes a framework…",
+   "human_reason": "belongs to a linked strategy document; the page has no page-level 'last updated' field at all"
+  },
+  {
+   "id": 6,
+   "url": "https://digital-strategy.ec.europa.eu/en/events",
+   "rule": "V3-time-element",
+   "machine": "OTHER",
+   "human": "OTHER",
+   "agreement": true,
+   "human_quote": "<time datetime=\"02 December 2026\">02 December 2026</time> … Save the Date: CEF Digital Community Conference 2026",
+   "human_reason": "the event's own date on a listing card"
+  },
+  {
+   "id": 7,
+   "url": "https://www.nist.gov/el",
+   "rule": "V3-time-element",
+   "machine": "OTHER",
+   "human": "OTHER",
+   "agreement": true,
+   "human_quote": "NIST Receives New Patent for Microbe-Killing Water Heater … <time datetime=\"2026-07-14T12:00:00Z\">July 14, 2026</time>",
+   "human_reason": "news-teaser card date for a different article on the lab's landing page"
+  },
+  {
+   "id": 8,
+   "url": "https://www.nist.gov/mml",
+   "rule": "V3-time-element",
+   "machine": "OTHER",
+   "human": "OTHER",
+   "agreement": true,
+   "human_quote": "A New Standard for Measuring Harmful Elements in Tobacco … <time datetime=\"2026-07-31T12:00:00Z\">July 31, 2026</time>",
+   "human_reason": "same pattern, a teaser card for a different story"
+  },
+  {
+   "id": 9,
+   "url": "https://enterprise.gov.ie/en/publications/ireland-in-the-digital-decade.html",
+   "rule": "V2-published",
+   "machine": "UNATTRIBUTABLE",
+   "human": "OTHER",
+   "agreement": false,
+   "human_quote": "The 2025 annual report on the State of the Digital Decade… was published on 16 June 2025.",
+   "human_reason": "belongs to the referenced report, not this page; no page-level 'last updated' field present"
+  },
+  {
+   "id": 10,
+   "url": "https://www.nist.gov/programs-projects/concept-note-ai-rmf-profile-trustworthy-ai-critical-infrastructure",
+   "rule": "V3-time-element",
+   "machine": "UNATTRIBUTABLE",
+   "human": "OTHER",
+   "agreement": false,
+   "human_quote": "Dates — Started: <time datetime=\"2026-04-07T12:00:00Z\">April 2026</time> (page's own line reads: Created April 6, 2026, Updated July 17, 2026)",
+   "human_reason": "a project 'Started' field, a different value from the page's own Created/Updated line"
+  },
+  {
+   "id": 11,
+   "url": "https://www.gov.uk/government/publications/assessment-of-ai-capabilities-and-the-impact-on-the-uk-labour-market",
+   "rule": "V2-published",
+   "machine": "UNATTRIBUTABLE",
+   "human": "SELF",
+   "agreement": false,
+   "human_quote": "Updates to this page Published 28 January 2026",
+   "human_reason": "standard publication-history line for the page itself"
+  },
+  {
+   "id": 12,
+   "url": "https://www.gov.uk/government/publications/secure-ai-infrastructure-call-for-information",
+   "rule": "V2-published",
+   "machine": "UNATTRIBUTABLE",
+   "human": "SELF",
+   "agreement": false,
+   "human_quote": "Updates to this page Published 29 January 2026",
+   "human_reason": "same pattern"
+  }
+ ],
+ "adjudicator": "an independent role convened this session; it did not build the classifier and was given only URL and date string, never the machine class",
+ "adjudicator_caveat": "Reported verbatim by the adjudicator: several pages carry two or more differently-labelled dates side by side, and only the labelled footer field is reliably self-referential; item 3's own 'Last update' footer coincides with an unrelated teaser card of the same calendar date; item 10 shows the reverse trap, where a project 'Started' field and a hidden article:published_time meta tag agree to the second while the page's human-visible Created/Updated line carries entirely different dates.",
+ "by_machine_class": {
+  "SELF": "4/4 agree",
+  "OTHER": "4/4 agree",
+  "UNATTRIBUTABLE": "0/4 agree"
+ }
+}

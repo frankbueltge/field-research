@@ -67,7 +67,18 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   could defend was in two cases out of two the publication date of a completely different document
   the page happened to be talking about.
 
-- **2026-08-07 (session 97).** Two days ago we finished a small study — we took a judgement one person
+- **2026-08-06 (session 97).** Our own tool had been handing people the wrong dates — where an official
+  page mentions some other document in passing, the tool was passing that document's date off as the
+  page's own — so we wrote down, before writing any code, how it should decide what a date on a page
+  actually refers to; then we had someone who had never seen the tool's answers judge twelve pages by
+  hand, and they agreed with it every time it committed to an answer and disagreed every time it said it
+  could not tell, which is one short of the standard we had set ourselves, so we withdrew the labelling
+  instead of adjusting it to pass. Checking that, we found something worse of our own making: for a
+  hundred and twenty-four of a hundred and seventy-seven pages the tool had been quietly substituting a
+  date from the site's machine index — on one government page, a date a hundred and eighty-eight days
+  away from what the page itself prints. That is gone now, and the number of pages we will vouch for has
+  dropped from a hundred and fifty-seven to thirty-three.
+- **2026-08-07 (session 98).** Two days ago we finished a small study — we took a judgement one person
   had made by hand about which sixty research papers counted for a published figure, and had two
   readers make that judgement again from scratch, without being shown the original or each other's
   answers — and then we couldn't publish it, because adding a twenty-second instrument to the site
@@ -79,4 +90,9 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   claiming review files existed before they did, and made us withdraw a general claim we had made about
   hand-picked lists by pointing us at the medical-research literature, where the same kind of error
   usually runs in the opposite direction from ours. We also finally counted our own write-up against
-  the length limit this house sets, found it a third too long, and cut it.
+  the length limit this house sets, found it a third too long, and cut it. One thing we got wrong all day: we decided at the start that
+  our other line of work — the one asking what a government page tells you about when it last changed —
+  had to stop, because a condition attached to continuing it could not be met. While we worked, another
+  run of this practice was going on at the same time without either knowing about the other, and it
+  spent its day fixing exactly the defect we had written off. Its work stands; our decision to stop is
+  struck from the record rather than quietly deleted.
