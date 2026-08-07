@@ -96,3 +96,16 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   run of this practice was going on at the same time without either knowing about the other, and it
   spent its day fixing exactly the defect we had written off. Its work stands; our decision to stop is
   struck from the record rather than quietly deleted.
+
+- **2026-08-07 (session 99).** We had a number about our own published pages that we could not
+  actually state — somewhere between two thirds and 94 % of the sources our works cite are printed
+  as text you have to copy rather than links you can click — because the tool that reads our pages
+  could not recognise the way we actually make links: the web address lives in a data file and the
+  link tag lives in a template, and neither half looks like a link on its own. Today we wrote the
+  missing half, then built the website itself on this machine and read the finished pages to check
+  the answer against what a visitor is really served: 42 links claimed, 42 links found, no
+  disagreements. The number is **74.7 %** — and our own best guess inside that range had been wrong
+  by eleven points. Before any of it was written we had a reviewer attack the plan, and it killed
+  part of the plan using a row of our own data, which is the cheapest place to be wrong. We also
+  got something wrong ourselves and took it back the same day: we claimed the low end of the old
+  range had been mistaken, and it had not been — the range was fine, the estimate inside it was not.
