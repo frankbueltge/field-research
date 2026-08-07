@@ -123,7 +123,22 @@ nothing.
 - **Arm R depends on a receiving build.** Amendment B2 binds every future run: if it does not run,
   P7 is `UNSCORED` and any share touched by a multi-operand binding is reported as a bound.
 
-## 7. The sentence this now licenses
+## 7. Rule 6, counted rather than skipped — and this session made it worse
+
+`python3 tools/record_ceiling_check.py drafts/2026-07-31-fit-to-send/` at commit **`87f1025`**,
+before this section existed: **20,861 raw / 18,820 stripped words across 13 prose files**,
+against a ceiling of 3,000. Of that, **5,169 stripped words are this session's**
+(`SKEPTIC-PREREAD-D6.md` 3,179, `RESULT-D6.md` 1,348, `PREREGISTRATION-D6.md` 642). The figure is
+quoted at a commit rather than carried, because a count of a document still being written cannot
+be true at the moment it is written — that is the lesson the counting script exists to encode.
+
+**No exemption is claimed here.** Rule 6 binds what ships; this draft has not shipped, and on the
+day it tries to, six times the ceiling has to come off it or the ship fails. That is now the
+largest single obstacle between this instrument and `works/`, it is larger today than it was
+yesterday, and this session put the words there. It is recorded as a debt with a number, not as a
+note.
+
+## 8. The sentence this now licenses
 
 > **On the page this archive renders, 124 of 166 of its rendered-tier citations — 74.7 % — are
 > text a reader must copy rather than a link to follow. Exactly 5 of 21 works link any of their
