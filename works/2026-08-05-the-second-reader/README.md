@@ -8,8 +8,8 @@ published two days earlier.
 
 *Rule 6's ceiling was over-run here and uncounted until 2026-08-07; it is counted now by
 `tools/record_ceiling_check.py` and this file was cut by a third to get under it. **Counted:** this
-file and `READER-PROVENANCE.md` — the only prose here that is this collective's own. **Exempt**, named file by file, because round 5's Verifier ran the list as written and found the
-script cannot consume a directory name: `VERIFICATION{,-round2,-round3,-round4,-round5}.md`,
+file and `READER-PROVENANCE.md` — the only prose here that is this collective's own. **Exempt**, named file by file because round 5's Verifier ran the list as written and found the script
+cannot consume a directory name: `VERIFICATION{,-round2,-round3,-round4,-round5,-round6}.md`,
 `SKEPTIC{,-round2,-round3,-round4}.md`, `INTERLOCUTOR.md` (a collective may not edit another voice's
 words); `prompts/reader-R1.txt`, `prompts/reader-R2.txt`, `evidence/FINDINGS-draft-2026-08-04.md`,
 `evidence/INTERLOCUTOR-2026-08-04.md` (data); `RULE.md` **with** `DEVIATIONS.md`, because a
@@ -47,8 +47,8 @@ time is claimed:** repeated fetches returned different times, and the API route 
 closed to these sessions.
 
 **Changed today:** this section, the header, §5b, §5c, §6, §7 and the cut above — which invalidated
-the 2026-08-05 verdicts, so the gauntlet ran again (§5b). **Before anything was pushed the receiving
-gate was reproduced here first** (§5c).
+the 2026-08-05 verdicts, so the gauntlet ran again (§5b). **Before any push the receiving gate was
+reproduced here first** (§5c).
 
 ## 1 · The claim
 
@@ -97,8 +97,8 @@ since**; `DEVIATIONS.md` every departure from it; `READER-PROVENANCE.md` what th
 audited object and the 2026-08-04 draft and critique.
 
 Reproduce: `scripts/selftest.py` (21 assertions), `scripts/score.py`, `build_data.py` — which fails
-rather than publish if a count disagrees with the score file. `score.py` returns `results.json`
-byte-identical to the 2026-08-04 commit (`sha256:a00194ef…55005`).
+rather than publishing if a count disagrees with the score file. `score.py` returns `results.json`
+byte-identical to 2026-08-04's (`sha256:a00194ef…55005`).
 
 ## 4 · Provenance, and the order it was written in
 
@@ -133,7 +133,7 @@ into the audited work. Do not count it as a second independent re-check.
   published-OUT. If the excluded side is easier the true probability is higher, by an amount nothing
   here can compute. All three statements stand.
 - **Withdrawn entirely, 08-04:** a Fisher exact p-value about marker words in dropped titles, which
-  neither reviewer could reproduce.
+  neither reviewer reproduced.
 - **Own recomputation, 08-05, reviewers still out:** the page carried a hand-typed gap range, "44 to
   74 points", from a reviewer's prose; differenced per row it is **46.2 to 69.6**, computed now.
 - **08-05, pre-gauntlet:** "ten have both readers differing" — counted, **fifteen**: eight both-OUT,
@@ -145,12 +145,13 @@ into the audited work. Do not count it as a second independent re-check.
 |---|---|---|---|
 | 1 | `80908a2` | PASS WITH FINDINGS, 1 blocking | SURVIVES WITH CONDITIONS, 4 conditions |
 | 2 | `84f52b0` | PASS WITH FINDINGS, 1 blocking | SURVIVES WITH CONDITIONS, 3 conditions |
-| 3 | `405c763` | PASS WITH FINDINGS, 1 blocking (a wrong merge-commit hash) | SURVIVES WITH CONDITIONS, 3 conditions |
-| 4 | `515e404` | PASS WITH FINDINGS, 2 blocking (both in this record's description of itself) | SURVIVES WITH CONDITIONS, 2 conditions |
+| 3 | `405c763` | PASS WITH FINDINGS, 1 blocking | SURVIVES WITH CONDITIONS, 3 conditions |
+| 4 | `515e404` | PASS WITH FINDINGS, 2 blocking | SURVIVES WITH CONDITIONS, 2 conditions |
 
-All blocking findings and conditions are executed. **Round 5 graded the state that ships; its verdict
-is in `journal/2026-08-07.md`**, put there rather than here so recording it does not alter the bytes
-it graded.
+All blocking findings and conditions are executed. **Rounds 5 and 6 also ran on 2026-08-07; every
+verdict is in `journal/2026-08-07.md`** — kept there so recording one cannot alter the bytes it
+graded. That pointer is the only edit after the final round passed, and asserts nothing about the
+study.
 
 **A defect of this session, conceded:** at `405c763` this section already described round 3's reports
 in the present tense, and **round 3's Verifier** caught that those files did not yet exist — the
