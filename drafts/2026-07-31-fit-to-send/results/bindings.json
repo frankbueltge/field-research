@@ -1,0 +1,1980 @@
+{
+  "_what": "D6 — resolving a data-bound link attribute back to the field it renders",
+  "_preregistration": "PREREGISTRATION-D6.md (locked before this script existed; amended in its §7 by SKEPTIC-PREREAD-D6.md, also before it existed)",
+  "_pinned_commit": "712a013735cb88ecf4fa6cd713261dfc1b8a1ff3",
+  "_arm_s": {
+    ".gitkeep": {
+      "bindings": [],
+      "imports": [],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    },
+    "2026-07-01-calibration-gap": {
+      "bindings": [
+        {
+          "attr": "href",
+          "expr": "c.source_url",
+          "status": "RESOLVED-EXPRESSION",
+          "keys": [
+            "source_url"
+          ],
+          "path": "works/2026-07-01-calibration-gap/work.astro",
+          "line": 210
+        },
+        {
+          "attr": "href",
+          "expr": "c.source_url_secondary",
+          "status": "RESOLVED-EXPRESSION",
+          "keys": [
+            "source_url_secondary"
+          ],
+          "path": "works/2026-07-01-calibration-gap/work.astro",
+          "line": 212
+        },
+        {
+          "attr": "href",
+          "expr": "sp.url",
+          "status": "RESOLVED-EXPRESSION",
+          "keys": [
+            "url"
+          ],
+          "path": "works/2026-07-01-calibration-gap/work.astro",
+          "line": 247
+        },
+        {
+          "attr": "href",
+          "expr": "s.url",
+          "status": "RESOLVED-EXPRESSION",
+          "keys": [
+            "url"
+          ],
+          "path": "works/2026-07-01-calibration-gap/work.astro",
+          "line": 266
+        }
+      ],
+      "imports": [
+        "data.json"
+      ],
+      "linked_by_binding": [
+        "https://aclanthology.org/2024.acl-long.674",
+        "https://arxiv.org/abs/2304.02819",
+        "https://arxiv.org/abs/2502.04528",
+        "https://arxiv.org/abs/2512.09292",
+        "https://doi.org/10.1007/s40979-023-00146-z",
+        "https://doi.org/10.1038/s41598-023-38964-3",
+        "https://doi.org/10.1186/s41239-024-00487-w",
+        "https://doi.org/10.7717/peerj-cs.2953",
+        "https://gptzero.me/news/gptzero-vs-copyleaks-vs-originality/",
+        "https://minnlawyer.com/2026/02/13/u-of-m-ai-cheating-expulsion-upheld-appeal",
+        "https://originality.ai/blog/ai-accuracy",
+        "https://storage.courtlistener.com/recap/gov.uscourts.ctd.163407/gov.uscourts.ctd.163407.89.0.pdf",
+        "https://www.abc.net.au/news/2025-10-09/artificial-intelligence-cheating-australian-catholic-university/105863524",
+        "https://www.courtlistener.com/docket/69607031/rignol-v-yale-university/",
+        "https://www.turnitin.com/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability"
+      ],
+      "resolved_rows": [
+        {
+          "file": "data.json",
+          "container": ".harm_cases[].source_url",
+          "key": "source_url",
+          "operand_index": 0,
+          "normalized_url": "https://www.abc.net.au/news/2025-10-09/artificial-intelligence-cheating-australian-catholic-university/105863524",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 210,
+          "binding_expr": "c.source_url"
+        },
+        {
+          "file": "data.json",
+          "container": ".harm_cases[].source_url",
+          "key": "source_url",
+          "operand_index": 0,
+          "normalized_url": "https://www.courtlistener.com/docket/69607031/rignol-v-yale-university/",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 210,
+          "binding_expr": "c.source_url"
+        },
+        {
+          "file": "data.json",
+          "container": ".harm_cases[].source_url",
+          "key": "source_url",
+          "operand_index": 0,
+          "normalized_url": "https://minnlawyer.com/2026/02/13/u-of-m-ai-cheating-expulsion-upheld-appeal",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 210,
+          "binding_expr": "c.source_url"
+        },
+        {
+          "file": "data.json",
+          "container": ".harm_cases[].source_url_secondary",
+          "key": "source_url_secondary",
+          "operand_index": 0,
+          "normalized_url": "https://storage.courtlistener.com/recap/gov.uscourts.ctd.163407/gov.uscourts.ctd.163407.89.0.pdf",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 212,
+          "binding_expr": "c.source_url_secondary"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://arxiv.org/abs/2304.02819",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 247,
+          "binding_expr": "sp.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://aclanthology.org/2024.acl-long.674",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 247,
+          "binding_expr": "sp.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://doi.org/10.7717/peerj-cs.2953",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 247,
+          "binding_expr": "sp.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://arxiv.org/abs/2512.09292",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 247,
+          "binding_expr": "sp.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://arxiv.org/abs/2502.04528",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 247,
+          "binding_expr": "sp.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://doi.org/10.1038/s41598-023-38964-3",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 247,
+          "binding_expr": "sp.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://doi.org/10.1186/s41239-024-00487-w",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 247,
+          "binding_expr": "sp.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://doi.org/10.1007/s40979-023-00146-z",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 247,
+          "binding_expr": "sp.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://www.turnitin.com/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 247,
+          "binding_expr": "sp.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".specification_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://gptzero.me/news/gptzero-vs-copyleaks-vs-originality/",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 247,
+          "binding_expr": "sp.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".specification_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://originality.ai/blog/ai-accuracy",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 247,
+          "binding_expr": "sp.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".specification_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://www.turnitin.com/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 247,
+          "binding_expr": "sp.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://arxiv.org/abs/2304.02819",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 266,
+          "binding_expr": "s.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://aclanthology.org/2024.acl-long.674",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 266,
+          "binding_expr": "s.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://doi.org/10.7717/peerj-cs.2953",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 266,
+          "binding_expr": "s.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://arxiv.org/abs/2512.09292",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 266,
+          "binding_expr": "s.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://arxiv.org/abs/2502.04528",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 266,
+          "binding_expr": "s.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://doi.org/10.1038/s41598-023-38964-3",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 266,
+          "binding_expr": "s.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://doi.org/10.1186/s41239-024-00487-w",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 266,
+          "binding_expr": "s.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://doi.org/10.1007/s40979-023-00146-z",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 266,
+          "binding_expr": "s.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".benchmark_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://www.turnitin.com/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 266,
+          "binding_expr": "s.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".specification_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://gptzero.me/news/gptzero-vs-copyleaks-vs-originality/",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 266,
+          "binding_expr": "s.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".specification_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://originality.ai/blog/ai-accuracy",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 266,
+          "binding_expr": "s.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".specification_sources[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://www.turnitin.com/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 266,
+          "binding_expr": "s.url"
+        }
+      ],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {
+        "source_url": [
+          ".harm_cases[]"
+        ],
+        "source_url_secondary": [
+          ".harm_cases[]"
+        ],
+        "url": [
+          ".benchmark_sources[]",
+          ".specification_sources[]"
+        ]
+      },
+      "ambiguous_keys": [
+        "url"
+      ]
+    },
+    "2026-07-01-digit-mirror": {
+      "bindings": [],
+      "imports": [],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    },
+    "2026-07-01-fairness-trap": {
+      "bindings": [],
+      "imports": [],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    },
+    "2026-07-01-naive-detector": {
+      "bindings": [],
+      "imports": [],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    },
+    "2026-07-01-plausibility-engine": {
+      "bindings": [],
+      "imports": [],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    },
+    "2026-07-01-provenance-horizon": {
+      "bindings": [],
+      "imports": [],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    },
+    "2026-07-01-score-horizon": {
+      "bindings": [],
+      "imports": [],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    },
+    "2026-07-01-the-edition": {
+      "bindings": [],
+      "imports": [],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    },
+    "2026-07-02-standing-docket": {
+      "bindings": [],
+      "imports": [
+        "data.json"
+      ],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    },
+    "2026-07-02-taxonomy-on-trial": {
+      "bindings": [],
+      "imports": [
+        "data.json"
+      ],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    },
+    "2026-07-05-backward-regime-test": {
+      "bindings": [],
+      "imports": [
+        "data.json"
+      ],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    },
+    "2026-07-06-two-meters": {
+      "bindings": [
+        {
+          "attr": "href",
+          "expr": "instrument.source_url",
+          "status": "RESOLVED-EXPRESSION",
+          "keys": [
+            "source_url"
+          ],
+          "path": "works/2026-07-06-two-meters/work.astro",
+          "line": 152
+        },
+        {
+          "attr": "href",
+          "expr": "company.source_url",
+          "status": "RESOLVED-EXPRESSION",
+          "keys": [
+            "source_url"
+          ],
+          "path": "works/2026-07-06-two-meters/work.astro",
+          "line": 172
+        },
+        {
+          "attr": "href",
+          "expr": "crosscheck.url",
+          "status": "RESOLVED-EXPRESSION",
+          "keys": [
+            "url"
+          ],
+          "path": "works/2026-07-06-two-meters/work.astro",
+          "line": 292
+        }
+      ],
+      "imports": [
+        "data.json"
+      ],
+      "linked_by_binding": [
+        "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+        "https://ghgprotocol.org/sites/default/files/2023-03/Scope%202%20Guidance.pdf",
+        "https://policyreview.info/articles/news/big-techs-2025-sustainability-reports/2027",
+        "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf"
+      ],
+      "resolved_rows": [
+        {
+          "file": "data.json",
+          "container": ".instrument_on_trial.source_url",
+          "key": "source_url",
+          "operand_index": 0,
+          "normalized_url": "https://ghgprotocol.org/sites/default/files/2023-03/Scope%202%20Guidance.pdf",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 152,
+          "binding_expr": "instrument.source_url"
+        },
+        {
+          "file": "data.json",
+          "container": ".companies[].source_url",
+          "key": "source_url",
+          "operand_index": 0,
+          "normalized_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 152,
+          "binding_expr": "instrument.source_url"
+        },
+        {
+          "file": "data.json",
+          "container": ".companies[].source_url",
+          "key": "source_url",
+          "operand_index": 0,
+          "normalized_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 152,
+          "binding_expr": "instrument.source_url"
+        },
+        {
+          "file": "data.json",
+          "container": ".instrument_on_trial.source_url",
+          "key": "source_url",
+          "operand_index": 0,
+          "normalized_url": "https://ghgprotocol.org/sites/default/files/2023-03/Scope%202%20Guidance.pdf",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 172,
+          "binding_expr": "company.source_url"
+        },
+        {
+          "file": "data.json",
+          "container": ".companies[].source_url",
+          "key": "source_url",
+          "operand_index": 0,
+          "normalized_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 172,
+          "binding_expr": "company.source_url"
+        },
+        {
+          "file": "data.json",
+          "container": ".companies[].source_url",
+          "key": "source_url",
+          "operand_index": 0,
+          "normalized_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 172,
+          "binding_expr": "company.source_url"
+        },
+        {
+          "file": "data.json",
+          "container": ".independent_crosscheck.url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://policyreview.info/articles/news/big-techs-2025-sustainability-reports/2027",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 292,
+          "binding_expr": "crosscheck.url"
+        }
+      ],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {
+        "source_url": [
+          ".companies[]",
+          ".instrument_on_trial"
+        ],
+        "url": [
+          ".independent_crosscheck"
+        ]
+      },
+      "ambiguous_keys": [
+        "source_url"
+      ]
+    },
+    "2026-07-09-the-floor": {
+      "bindings": [
+        {
+          "attr": "href",
+          "expr": "postscript.report.official_url",
+          "status": "RESOLVED-EXPRESSION",
+          "keys": [
+            "official_url"
+          ],
+          "path": "works/2026-07-09-the-floor/work.astro",
+          "line": 290
+        },
+        {
+          "attr": "href",
+          "expr": "e.url",
+          "status": "RESOLVED-EXPRESSION",
+          "keys": [
+            "url"
+          ],
+          "path": "works/2026-07-09-the-floor/work.astro",
+          "line": 308
+        },
+        {
+          "attr": "href",
+          "expr": "r.official_url ?? r.pdf_mirror_extracted",
+          "status": "RESOLVED-EXPRESSION",
+          "keys": [
+            "official_url",
+            "pdf_mirror_extracted"
+          ],
+          "path": "works/2026-07-09-the-floor/work.astro",
+          "line": 327
+        }
+      ],
+      "imports": [
+        "data.json"
+      ],
+      "linked_by_binding": [
+        "https://noclimateresultsfound.com/wp-content/uploads/2025/07/Kairos_NCRFGoogleReport_FINAL.pdf",
+        "https://sustainability.google/google-2026-environmental-report",
+        "https://sustainability.google/reports/google-2025-environmental-report",
+        "https://www.datacenterdynamics.com/en/opinions/beyond-pue-rethinking-how-data-center-sustainability-is-measured",
+        "https://www.rehva.eu/rehva-journal/chapter/analysis-of-performance-metrics-for-data-center-efficiency-should-the-power-utilization-effectiveness-pue-still-be-used-as-the-main-indicator-part-1",
+        "https://www.sciencedirect.com/science/article/abs/pii/S1040619016300446",
+        "https://www.smartenergydecisions.com/wp-content/uploads/2025/04/google-2024-environmental-report.pdf"
+      ],
+      "resolved_rows": [
+        {
+          "file": "data.json",
+          "container": ".subject.reports[].official_url",
+          "key": "official_url",
+          "operand_index": 0,
+          "normalized_url": "https://sustainability.google/reports/google-2025-environmental-report",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 290,
+          "binding_expr": "postscript.report.official_url"
+        },
+        {
+          "file": "data.json",
+          "container": ".subsequent_disclosure.report.official_url",
+          "key": "official_url",
+          "operand_index": 0,
+          "normalized_url": "https://sustainability.google/google-2026-environmental-report",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 290,
+          "binding_expr": "postscript.report.official_url"
+        },
+        {
+          "file": "data.json",
+          "container": ".prior_art.entries[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://noclimateresultsfound.com/wp-content/uploads/2025/07/Kairos_NCRFGoogleReport_FINAL.pdf",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 308,
+          "binding_expr": "e.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".prior_art.entries[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://www.sciencedirect.com/science/article/abs/pii/S1040619016300446",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 308,
+          "binding_expr": "e.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".prior_art.entries[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://www.datacenterdynamics.com/en/opinions/beyond-pue-rethinking-how-data-center-sustainability-is-measured",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 308,
+          "binding_expr": "e.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".prior_art.entries[].url",
+          "key": "url",
+          "operand_index": 0,
+          "normalized_url": "https://www.rehva.eu/rehva-journal/chapter/analysis-of-performance-metrics-for-data-center-efficiency-should-the-power-utilization-effectiveness-pue-still-be-used-as-the-main-indicator-part-1",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 308,
+          "binding_expr": "e.url"
+        },
+        {
+          "file": "data.json",
+          "container": ".subject.reports[].official_url",
+          "key": "official_url",
+          "operand_index": 0,
+          "normalized_url": "https://sustainability.google/reports/google-2025-environmental-report",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 327,
+          "binding_expr": "r.official_url ?? r.pdf_mirror_extracted"
+        },
+        {
+          "file": "data.json",
+          "container": ".subject.reports[].pdf_mirror_extracted",
+          "key": "pdf_mirror_extracted",
+          "operand_index": 1,
+          "normalized_url": "https://www.smartenergydecisions.com/wp-content/uploads/2025/04/google-2024-environmental-report.pdf",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 327,
+          "binding_expr": "r.official_url ?? r.pdf_mirror_extracted"
+        },
+        {
+          "file": "data.json",
+          "container": ".subsequent_disclosure.report.official_url",
+          "key": "official_url",
+          "operand_index": 0,
+          "normalized_url": "https://sustainability.google/google-2026-environmental-report",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 327,
+          "binding_expr": "r.official_url ?? r.pdf_mirror_extracted"
+        }
+      ],
+      "shadowed_rows": [
+        {
+          "file": "data.json",
+          "container": ".subject.reports[].pdf_mirror_extracted",
+          "key": "pdf_mirror_extracted",
+          "normalized_url": "https://www.smartenergydecisions.com/wp-content/uploads/2025/07/google-2025-environmental-report-1.pdf",
+          "shadowed_by": "official_url",
+          "binding_line": 327,
+          "binding_expr": "r.official_url ?? r.pdf_mirror_extracted"
+        }
+      ],
+      "container_patterns_by_key": {
+        "official_url": [
+          ".subject.reports[]",
+          ".subsequent_disclosure.report"
+        ],
+        "url": [
+          ".prior_art.entries[]"
+        ],
+        "pdf_mirror_extracted": [
+          ".subject.reports[]"
+        ]
+      },
+      "ambiguous_keys": [
+        "official_url"
+      ]
+    },
+    "2026-07-11-split-seal": {
+      "bindings": [
+        {
+          "attr": "href",
+          "expr": "r.source",
+          "status": "RESOLVED-EXPRESSION",
+          "keys": [
+            "source"
+          ],
+          "path": "works/2026-07-11-split-seal/work.astro",
+          "line": 516
+        }
+      ],
+      "imports": [
+        "data.json"
+      ],
+      "linked_by_binding": [
+        "https://commons.wikimedia.org/wiki/File:Cat_November_2010-1a.jpg",
+        "https://commons.wikimedia.org/wiki/File:DALL%C2%B7E_2025-02-21_23.58.53_-_A_simple_soldering_iron_with_a_stand._The_soldering_iron_has_a_slim,_ergonomic_handle_with_a_metallic_tip._The_stand_is_a_small_metal_base_with_a_coil.webp",
+        "https://commons.wikimedia.org/wiki/File:Gato_naranja_generado_por_IA.png",
+        "https://commons.wikimedia.org/wiki/File:Imagetitis-affected_editor_by_ChatGPT_4.0_%26_DALL%C2%B7E_3_(2024).webp",
+        "https://commons.wikimedia.org/wiki/File:Wikimedia_Commons_AI_(2025).png",
+        "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg"
+      ],
+      "resolved_rows": [
+        {
+          "file": "data.json",
+          "container": ".specimens[].source",
+          "key": "source",
+          "operand_index": 0,
+          "normalized_url": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 516,
+          "binding_expr": "r.source"
+        },
+        {
+          "file": "data.json",
+          "container": ".specimens[].source",
+          "key": "source",
+          "operand_index": 0,
+          "normalized_url": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 516,
+          "binding_expr": "r.source"
+        },
+        {
+          "file": "data.json",
+          "container": ".specimens[].source",
+          "key": "source",
+          "operand_index": 0,
+          "normalized_url": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 516,
+          "binding_expr": "r.source"
+        },
+        {
+          "file": "data.json",
+          "container": ".specimens[].source",
+          "key": "source",
+          "operand_index": 0,
+          "normalized_url": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 516,
+          "binding_expr": "r.source"
+        },
+        {
+          "file": "data.json",
+          "container": ".specimens[].source",
+          "key": "source",
+          "operand_index": 0,
+          "normalized_url": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 516,
+          "binding_expr": "r.source"
+        },
+        {
+          "file": "data.json",
+          "container": ".specimens[].source",
+          "key": "source",
+          "operand_index": 0,
+          "normalized_url": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 516,
+          "binding_expr": "r.source"
+        },
+        {
+          "file": "data.json",
+          "container": ".specimens[].source",
+          "key": "source",
+          "operand_index": 0,
+          "normalized_url": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 516,
+          "binding_expr": "r.source"
+        },
+        {
+          "file": "data.json",
+          "container": ".specimens[].source",
+          "key": "source",
+          "operand_index": 0,
+          "normalized_url": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 516,
+          "binding_expr": "r.source"
+        },
+        {
+          "file": "data.json",
+          "container": ".specimens[].source",
+          "key": "source",
+          "operand_index": 0,
+          "normalized_url": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 516,
+          "binding_expr": "r.source"
+        },
+        {
+          "file": "data.json",
+          "container": ".specimens[].source",
+          "key": "source",
+          "operand_index": 0,
+          "normalized_url": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 516,
+          "binding_expr": "r.source"
+        },
+        {
+          "file": "data.json",
+          "container": ".specimens[].source",
+          "key": "source",
+          "operand_index": 0,
+          "normalized_url": "https://commons.wikimedia.org/wiki/File:DALL%C2%B7E_2025-02-21_23.58.53_-_A_simple_soldering_iron_with_a_stand._The_soldering_iron_has_a_slim,_ergonomic_handle_with_a_metallic_tip._The_stand_is_a_small_metal_base_with_a_coil.webp",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 516,
+          "binding_expr": "r.source"
+        },
+        {
+          "file": "data.json",
+          "container": ".specimens[].source",
+          "key": "source",
+          "operand_index": 0,
+          "normalized_url": "https://commons.wikimedia.org/wiki/File:Imagetitis-affected_editor_by_ChatGPT_4.0_%26_DALL%C2%B7E_3_(2024).webp",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 516,
+          "binding_expr": "r.source"
+        },
+        {
+          "file": "data.json",
+          "container": ".specimens[].source",
+          "key": "source",
+          "operand_index": 0,
+          "normalized_url": "https://commons.wikimedia.org/wiki/File:Gato_naranja_generado_por_IA.png",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 516,
+          "binding_expr": "r.source"
+        },
+        {
+          "file": "data.json",
+          "container": ".specimens[].source",
+          "key": "source",
+          "operand_index": 0,
+          "normalized_url": "https://commons.wikimedia.org/wiki/File:Wikimedia_Commons_AI_(2025).png",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 516,
+          "binding_expr": "r.source"
+        },
+        {
+          "file": "data.json",
+          "container": ".specimens[].source",
+          "key": "source",
+          "operand_index": 0,
+          "normalized_url": "https://commons.wikimedia.org/wiki/File:Cat_November_2010-1a.jpg",
+          "shadowed_by_earlier_operand": false,
+          "binding_line": 516,
+          "binding_expr": "r.source"
+        }
+      ],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {
+        "source": [
+          ".specimens[]"
+        ]
+      },
+      "ambiguous_keys": []
+    },
+    "2026-07-17-comparable-with-humans": {
+      "bindings": [],
+      "imports": [
+        "data.json"
+      ],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    },
+    "2026-07-20-coverage-not-custody": {
+      "bindings": [],
+      "imports": [
+        "data.json"
+      ],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    },
+    "2026-07-24-where-the-chain-breaks": {
+      "bindings": [],
+      "imports": [],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    },
+    "2026-07-25-no-signal-to-extend": {
+      "bindings": [],
+      "imports": [],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    },
+    "2026-07-26-one-line-for-ten-thousand": {
+      "bindings": [],
+      "imports": [
+        "data.json"
+      ],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    },
+    "2026-07-26-unable-to-ring-its-own-bell": {
+      "bindings": [],
+      "imports": [
+        "data.json"
+      ],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    },
+    "2026-08-03-where-the-reader-declines": {
+      "bindings": [],
+      "imports": [
+        "data.json",
+        "second-reader-2026-08-04.json"
+      ],
+      "linked_by_binding": [],
+      "resolved_rows": [],
+      "shadowed_rows": [],
+      "container_patterns_by_key": {},
+      "ambiguous_keys": []
+    }
+  },
+  "_recomputed": {
+    "denominator_site_unique_work_url_pairs": 166,
+    "displayed_only_before": 156,
+    "displayed_only_after": 124,
+    "share_before": 0.9398,
+    "share_after": 0.747,
+    "pairs_reclassified": [
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://aclanthology.org/2024.acl-long.674"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://arxiv.org/abs/2304.02819"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://arxiv.org/abs/2502.04528"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://arxiv.org/abs/2512.09292"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://doi.org/10.1007/s40979-023-00146-z"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://doi.org/10.1038/s41598-023-38964-3"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://doi.org/10.1186/s41239-024-00487-w"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://doi.org/10.7717/peerj-cs.2953"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://gptzero.me/news/gptzero-vs-copyleaks-vs-originality/"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://minnlawyer.com/2026/02/13/u-of-m-ai-cheating-expulsion-upheld-appeal"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://originality.ai/blog/ai-accuracy"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://storage.courtlistener.com/recap/gov.uscourts.ctd.163407/gov.uscourts.ctd.163407.89.0.pdf"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://www.abc.net.au/news/2025-10-09/artificial-intelligence-cheating-australian-catholic-university/105863524"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://www.courtlistener.com/docket/69607031/rignol-v-yale-university/"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://www.turnitin.com/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability"
+      },
+      {
+        "work": "2026-07-06-two-meters",
+        "normalized_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf"
+      },
+      {
+        "work": "2026-07-06-two-meters",
+        "normalized_url": "https://ghgprotocol.org/sites/default/files/2023-03/Scope%202%20Guidance.pdf"
+      },
+      {
+        "work": "2026-07-06-two-meters",
+        "normalized_url": "https://policyreview.info/articles/news/big-techs-2025-sustainability-reports/2027"
+      },
+      {
+        "work": "2026-07-06-two-meters",
+        "normalized_url": "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf"
+      },
+      {
+        "work": "2026-07-09-the-floor",
+        "normalized_url": "https://noclimateresultsfound.com/wp-content/uploads/2025/07/Kairos_NCRFGoogleReport_FINAL.pdf"
+      },
+      {
+        "work": "2026-07-09-the-floor",
+        "normalized_url": "https://sustainability.google/google-2026-environmental-report"
+      },
+      {
+        "work": "2026-07-09-the-floor",
+        "normalized_url": "https://sustainability.google/reports/google-2025-environmental-report"
+      },
+      {
+        "work": "2026-07-09-the-floor",
+        "normalized_url": "https://www.datacenterdynamics.com/en/opinions/beyond-pue-rethinking-how-data-center-sustainability-is-measured"
+      },
+      {
+        "work": "2026-07-09-the-floor",
+        "normalized_url": "https://www.rehva.eu/rehva-journal/chapter/analysis-of-performance-metrics-for-data-center-efficiency-should-the-power-utilization-effectiveness-pue-still-be-used-as-the-main-indicator-part-1"
+      },
+      {
+        "work": "2026-07-09-the-floor",
+        "normalized_url": "https://www.sciencedirect.com/science/article/abs/pii/S1040619016300446"
+      },
+      {
+        "work": "2026-07-09-the-floor",
+        "normalized_url": "https://www.smartenergydecisions.com/wp-content/uploads/2025/04/google-2024-environmental-report.pdf"
+      },
+      {
+        "work": "2026-07-11-split-seal",
+        "normalized_url": "https://commons.wikimedia.org/wiki/File:Cat_November_2010-1a.jpg"
+      },
+      {
+        "work": "2026-07-11-split-seal",
+        "normalized_url": "https://commons.wikimedia.org/wiki/File:DALL%C2%B7E_2025-02-21_23.58.53_-_A_simple_soldering_iron_with_a_stand._The_soldering_iron_has_a_slim,_ergonomic_handle_with_a_metallic_tip._The_stand_is_a_small_metal_base_with_a_coil.webp"
+      },
+      {
+        "work": "2026-07-11-split-seal",
+        "normalized_url": "https://commons.wikimedia.org/wiki/File:Gato_naranja_generado_por_IA.png"
+      },
+      {
+        "work": "2026-07-11-split-seal",
+        "normalized_url": "https://commons.wikimedia.org/wiki/File:Imagetitis-affected_editor_by_ChatGPT_4.0_%26_DALL%C2%B7E_3_(2024).webp"
+      },
+      {
+        "work": "2026-07-11-split-seal",
+        "normalized_url": "https://commons.wikimedia.org/wiki/File:Wikimedia_Commons_AI_(2025).png"
+      },
+      {
+        "work": "2026-07-11-split-seal",
+        "normalized_url": "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg"
+      }
+    ],
+    "displayed_only_after_pairs": [
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "http://web.archive.org/web/20260702095038/https://gptzero.me/"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://arxiv.org/abs/2306.15666"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://europepmc.org/articles/PMC12453642"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://frankbueltge.de/field"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://github.com/frankbueltge/field-research"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://github.com/frankbueltge/field-research/blob/main/works/2026-07-01-calibration-gap/CORRECTIONS.md"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://gptzero.me/"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://gptzero.me/technology"
+      },
+      {
+        "work": "2026-07-01-calibration-gap",
+        "normalized_url": "https://www.turnitin.com/blog/ai-writing-detection-update-from-turnitins-chief-product-officer"
+      },
+      {
+        "work": "2026-07-01-digit-mirror",
+        "normalized_url": "http://www.w3.org/2000/svg"
+      },
+      {
+        "work": "2026-07-01-digit-mirror",
+        "normalized_url": "https://cambridge.org/core/journals/political-analysis"
+      },
+      {
+        "work": "2026-07-01-digit-mirror",
+        "normalized_url": "https://doi.org/10.1093/pan/mps003"
+      },
+      {
+        "work": "2026-07-01-digit-mirror",
+        "normalized_url": "https://doi.org/10.29115/SP-2023-0018"
+      },
+      {
+        "work": "2026-07-01-digit-mirror",
+        "normalized_url": "https://doi.org/10.3122/jabfm.2019.05.190085"
+      },
+      {
+        "work": "2026-07-01-digit-mirror",
+        "normalized_url": "https://github.com/frankbueltge/field-research"
+      },
+      {
+        "work": "2026-07-01-digit-mirror",
+        "normalized_url": "https://jabfm.org/content/32/5/732"
+      },
+      {
+        "work": "2026-07-01-digit-mirror",
+        "normalized_url": "https://nber.org/papers/w30768"
+      },
+      {
+        "work": "2026-07-01-fairness-trap",
+        "normalized_url": "http://www.w3.org/2000/svg"
+      },
+      {
+        "work": "2026-07-01-fairness-trap",
+        "normalized_url": "https://documentcloud.org/documents/2998391-ProPublica-Commentary-Final-070616.html"
+      },
+      {
+        "work": "2026-07-01-fairness-trap",
+        "normalized_url": "https://marcellodibello.com/algorithmicfairness/handout/impossibility.html"
+      },
+      {
+        "work": "2026-07-01-fairness-trap",
+        "normalized_url": "https://partnershiponai.org/"
+      },
+      {
+        "work": "2026-07-01-fairness-trap",
+        "normalized_url": "https://propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm"
+      },
+      {
+        "work": "2026-07-01-fairness-trap",
+        "normalized_url": "https://propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing"
+      },
+      {
+        "work": "2026-07-01-naive-detector",
+        "normalized_url": "http://www.w3.org/2000/svg"
+      },
+      {
+        "work": "2026-07-01-naive-detector",
+        "normalized_url": "https://en.wikipedia.org/wiki/Benford%27s_law"
+      },
+      {
+        "work": "2026-07-01-naive-detector",
+        "normalized_url": "https://github.com/frankbueltge/field-research"
+      },
+      {
+        "work": "2026-07-01-naive-detector",
+        "normalized_url": "https://reuters.com/article/world/fact-check-deviation-from-benfords-law-does-not-prove-election-fraud-idUSKBN27Q3A9"
+      },
+      {
+        "work": "2026-07-01-naive-detector",
+        "normalized_url": "https://web.williams.edu/Mathematics/sjmiller/public_html/benfordresources/KossoskyMiller_FinalBenfordAnalysis.pdf"
+      },
+      {
+        "work": "2026-07-01-naive-detector",
+        "normalized_url": "https://websites.umich.edu/~wmebane/inapB.pdf"
+      },
+      {
+        "work": "2026-07-01-plausibility-engine",
+        "normalized_url": "https://arxiv.org/abs/2209.00131"
+      },
+      {
+        "work": "2026-07-01-plausibility-engine",
+        "normalized_url": "https://doi.org/10.1111/anae.13938"
+      },
+      {
+        "work": "2026-07-01-plausibility-engine",
+        "normalized_url": "https://doi.org/10.1111/anae.13962"
+      },
+      {
+        "work": "2026-07-01-provenance-horizon",
+        "normalized_url": "https://arxiv.org/abs/2604.24890"
+      },
+      {
+        "work": "2026-07-01-provenance-horizon",
+        "normalized_url": "https://community.openai.com/t/c2pa-meta-data-in-dall-e-3-images/617061"
+      },
+      {
+        "work": "2026-07-01-provenance-horizon",
+        "normalized_url": "https://digimarc.com/blog/safeguarding-public-trust-thanks-c2pa-and-digital-watermarks"
+      },
+      {
+        "work": "2026-07-01-provenance-horizon",
+        "normalized_url": "https://hackerfactor.com/blog/index.php?/archives/1013-C2PAs-Worst-Case-Scenario.html"
+      },
+      {
+        "work": "2026-07-01-provenance-horizon",
+        "normalized_url": "https://hackerfactor.com/blog/index.php?/archives/1073-What-C2PA-Provides.html"
+      },
+      {
+        "work": "2026-07-01-provenance-horizon",
+        "normalized_url": "https://rand.org/pubs/commentary/2025/06/overpromising-on-digital-provenance-and-security.html"
+      },
+      {
+        "work": "2026-07-01-provenance-horizon",
+        "normalized_url": "https://spec.c2pa.org/specifications/specifications/2.4/security/Security_Considerations.html"
+      },
+      {
+        "work": "2026-07-01-provenance-horizon",
+        "normalized_url": "https://tbray.org/ongoing/When/202x/2025/09/18/C2PA-Investigations"
+      },
+      {
+        "work": "2026-07-01-provenance-horizon",
+        "normalized_url": "https://worldprivacyforum.org/posts/privacy-identity-and-trust-in-c2pa"
+      },
+      {
+        "work": "2026-07-01-score-horizon",
+        "normalized_url": "https://aclanthology.org/2025.acl-long.656"
+      },
+      {
+        "work": "2026-07-01-score-horizon",
+        "normalized_url": "https://arxiv.org/abs/2009.03300"
+      },
+      {
+        "work": "2026-07-01-score-horizon",
+        "normalized_url": "https://arxiv.org/abs/2412.15194"
+      },
+      {
+        "work": "2026-07-01-score-horizon",
+        "normalized_url": "https://arxiv.org/abs/2504.20879"
+      },
+      {
+        "work": "2026-07-01-score-horizon",
+        "normalized_url": "https://arxiv.org/abs/2602.16763"
+      },
+      {
+        "work": "2026-07-01-score-horizon",
+        "normalized_url": "https://github.com/microsoft/MMLU-CF"
+      },
+      {
+        "work": "2026-07-01-the-edition",
+        "normalized_url": "https://aafp.org/afp/2014/1115/p690"
+      },
+      {
+        "work": "2026-07-01-the-edition",
+        "normalized_url": "https://aafp.org/pubs/afp/issues/2014/1115/p690.html"
+      },
+      {
+        "work": "2026-07-01-the-edition",
+        "normalized_url": "https://amacad.org/publication/daedalus/protest-psychosis-future-equity-diversity-efforts-american-psychiatry"
+      },
+      {
+        "work": "2026-07-01-the-edition",
+        "normalized_url": "https://apaf.org/library-archives/galleries/lgbtq-leaders/apa-official-ballot-for-amendments-referendum"
+      },
+      {
+        "work": "2026-07-01-the-edition",
+        "normalized_url": "https://archive.cdc.gov/www_cdc_gov/ncbddd/adhd/features/adhd-keyfindings-different-diagnosis-criteria.html"
+      },
+      {
+        "work": "2026-07-01-the-edition",
+        "normalized_url": "https://doi.org/10.1002/da.22217"
+      },
+      {
+        "work": "2026-07-01-the-edition",
+        "normalized_url": "https://jaapl.org/content/39/1/6"
+      },
+      {
+        "work": "2026-07-01-the-edition",
+        "normalized_url": "https://lrb.co.uk/the-paper/v28/n16/ian-hacking/making-up-people"
+      },
+      {
+        "work": "2026-07-01-the-edition",
+        "normalized_url": "https://motherjones.com/politics/2013/05/psychiatry-allen-frances-saving-normal-dsm-5-controversy"
+      },
+      {
+        "work": "2026-07-01-the-edition",
+        "normalized_url": "https://ncbi.nlm.nih.gov/books/NBK519712/table/ch3.t5"
+      },
+      {
+        "work": "2026-07-01-the-edition",
+        "normalized_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4695779"
+      },
+      {
+        "work": "2026-07-01-the-edition",
+        "normalized_url": "https://psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Depression-Bereavement-Exclusion.pdf"
+      },
+      {
+        "work": "2026-07-01-the-edition",
+        "normalized_url": "https://pubmed.ncbi.nlm.nih.gov/25524790"
+      },
+      {
+        "work": "2026-07-02-standing-docket",
+        "normalized_url": "https://arxiv.org/abs/2202.05237"
+      },
+      {
+        "work": "2026-07-02-standing-docket",
+        "normalized_url": "https://www.cambridge.org/core/journals/political-analysis/article/benfords-law-and-the-detection-of-election-fraud/3B1D64E822371C461AF3C61CE91AAF6D"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://aclanthology.org/2024.acl-long.674.pdf"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://arxiv.org/abs/2209.00131"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://arxiv.org/abs/2304.02819"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://arxiv.org/abs/2412.15194"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://arxiv.org/abs/2602.05769"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://caselaw.nationalarchives.gov.uk/ewca/crim/2021/577"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://community.openai.com/t/c2pa-meta-data-in-dall-e-3-images/617061"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://doi.org/10.1089/big.2016.0047"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://doi.org/10.1111/anae.13962"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://doi.org/10.1126/sciadv.aao5580"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://doi.org/10.29115/SP-2023-0018"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://doi.org/10.3122/jabfm.2019.05.190085"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://github.com/microsoft/MMLU-CF"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://websites.umich.edu/~wmebane/inapB.pdf"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://www.aafp.org/pubs/afp/issues/2014/1115/p690.html"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://www.gov.uk/government/calls-for-evidence/use-of-evidence-generated-by-software-in-criminal-proceedings/use-of-evidence-generated-by-software-in-criminal-proceedings-call-for-evidence"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://www.ncbi.nlm.nih.gov/books/NBK519712/table/ch3.t5/"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://www.postofficehorizoninquiry.org.uk/sites/default/files/2025-07/Post%20Office%20Horizon%20IT%20Inquiry%20Final%20Report%20Volume%201_0.pdf"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://www.psychiatry.org/File%20Library/Psychiatrists/Practice/DSM/APA_DSM-5-Depression-Bereavement-Exclusion.pdf"
+      },
+      {
+        "work": "2026-07-02-taxonomy-on-trial",
+        "normalized_url": "https://www.tbray.org/ongoing/When/202x/2025/09/18/C2PA-Investigations"
+      },
+      {
+        "work": "2026-07-05-backward-regime-test",
+        "normalized_url": "https://academicintegrity.org/aws/ICAI/pt/sd/news_article/591345/_PARENT/layout_interior/false"
+      },
+      {
+        "work": "2026-07-05-backward-regime-test",
+        "normalized_url": "https://arxiv.org/abs/2209.00131"
+      },
+      {
+        "work": "2026-07-05-backward-regime-test",
+        "normalized_url": "https://arxiv.org/abs/2412.15194"
+      },
+      {
+        "work": "2026-07-05-backward-regime-test",
+        "normalized_url": "https://caselaw.nationalarchives.gov.uk/ewca/crim/2021/577"
+      },
+      {
+        "work": "2026-07-05-backward-regime-test",
+        "normalized_url": "https://harvardlawreview.org/print/vol-130/state-v-loomis"
+      },
+      {
+        "work": "2026-07-05-backward-regime-test",
+        "normalized_url": "https://websites.umich.edu/~wmebane/inapB.pdf"
+      },
+      {
+        "work": "2026-07-05-backward-regime-test",
+        "normalized_url": "https://www.legislation.gov.uk/ukpga/2024/14/introduction/enacted"
+      },
+      {
+        "work": "2026-07-05-backward-regime-test",
+        "normalized_url": "https://www.oiahe.org.uk/resources-and-publications/case-summaries/ai-and-academic-misconduct-cs072501/"
+      },
+      {
+        "work": "2026-07-05-backward-regime-test",
+        "normalized_url": "https://www.oiahe.org.uk/resources-and-publications/case-summaries/ai-and-academic-misconduct-cs072504/"
+      },
+      {
+        "work": "2026-07-05-backward-regime-test",
+        "normalized_url": "https://www.oiahe.org.uk/resources-and-publications/learning-from-our-casework/ai-and-academic-misconduct/casework-note-complaints-relating-to-ai-and-academic-misconduct/"
+      },
+      {
+        "work": "2026-07-05-backward-regime-test",
+        "normalized_url": "https://www.postofficehorizoninquiry.org.uk/"
+      },
+      {
+        "work": "2026-07-05-backward-regime-test",
+        "normalized_url": "https://www.strausstroy.com/articles/ai-and-academic-integrity-a-growing-crisis"
+      },
+      {
+        "work": "2026-07-05-backward-regime-test",
+        "normalized_url": "https://www.tbray.org/ongoing/When/202x/2025/09/18/C2PA-Investigations"
+      },
+      {
+        "work": "2026-07-05-backward-regime-test",
+        "normalized_url": "https://www.turnitin.com/blog/understanding-false-positives-within-our-ai-writing-detection-capabilities"
+      },
+      {
+        "work": "2026-07-09-the-floor",
+        "normalized_url": "https://storage.googleapis.com/gweb-mobius-cdn/sustainability/uploads/7f477eb723fe0c23d03f94b90a08882b9f28187d.pdf"
+      },
+      {
+        "work": "2026-07-09-the-floor",
+        "normalized_url": "https://www.smartenergydecisions.com/wp-content/uploads/2025/07/google-2025-environmental-report-1.pdf"
+      },
+      {
+        "work": "2026-07-11-split-seal",
+        "normalized_url": "http://cv.iptc.org/newscodes/digitalsourcetype/algorithmicMedia"
+      },
+      {
+        "work": "2026-07-11-split-seal",
+        "normalized_url": "https://arxiv.org/abs/2603.02378"
+      },
+      {
+        "work": "2026-07-17-comparable-with-humans",
+        "normalized_url": "https://arxiv.org/abs/2306.03262"
+      },
+      {
+        "work": "2026-07-17-comparable-with-humans",
+        "normalized_url": "https://arxiv.org/abs/2404.08403"
+      },
+      {
+        "work": "2026-07-17-comparable-with-humans",
+        "normalized_url": "https://arxiv.org/abs/2605.03202"
+      },
+      {
+        "work": "2026-07-17-comparable-with-humans",
+        "normalized_url": "https://arxiv.org/abs/2606.15497"
+      },
+      {
+        "work": "2026-07-17-comparable-with-humans",
+        "normalized_url": "https://github.com/berenslab/iclr-dataset"
+      },
+      {
+        "work": "2026-07-24-where-the-chain-breaks",
+        "normalized_url": "https://ohchr.org/&hellip;/2024-01/OHCHR_BerkeleyProtocol.pdf"
+      },
+      {
+        "work": "2026-07-24-where-the-chain-breaks",
+        "normalized_url": "https://www.ohchr.org/sites/default/files/2024-01/OHCHR_BerkeleyProtocol.pdf"
+      },
+      {
+        "work": "2026-07-25-no-signal-to-extend",
+        "normalized_url": "http://www.w3.org/2000/svg"
+      },
+      {
+        "work": "2026-08-03-where-the-reader-declines",
+        "normalized_url": "https://aicid.net"
+      },
+      {
+        "work": "2026-08-03-where-the-reader-declines",
+        "normalized_url": "https://aixiv.science"
+      },
+      {
+        "work": "2026-08-03-where-the-reader-declines",
+        "normalized_url": "https://github.com/AI-in-Health/BioMedArena"
+      },
+      {
+        "work": "2026-08-03-where-the-reader-declines",
+        "normalized_url": "https://github.com/Ewendawi/LLaMEA-BO"
+      },
+      {
+        "work": "2026-08-03-where-the-reader-declines",
+        "normalized_url": "https://github.com/HKUDS/DeepInnovator"
+      },
+      {
+        "work": "2026-08-03-where-the-reader-declines",
+        "normalized_url": "https://github.com/Lossfunk/ai-scientist-artefacts-v1"
+      },
+      {
+        "work": "2026-08-03-where-the-reader-declines",
+        "normalized_url": "https://github.com/SakanaAI/AI-Scientist"
+      },
+      {
+        "work": "2026-08-03-where-the-reader-declines",
+        "normalized_url": "https://github.com/Singularity0104/equilibrium-planner"
+      },
+      {
+        "work": "2026-08-03-where-the-reader-declines",
+        "normalized_url": "https://github.com/aixiv-org"
+      },
+      {
+        "work": "2026-08-03-where-the-reader-declines",
+        "normalized_url": "https://github.com/rexera/CLASE"
+      },
+      {
+        "work": "2026-08-03-where-the-reader-declines",
+        "normalized_url": "https://github.com/uni-medical/MedProbeBench"
+      },
+      {
+        "work": "2026-08-03-where-the-reader-declines",
+        "normalized_url": "https://github.com/westlake-autolab/BioKGBench"
+      },
+      {
+        "work": "2026-08-03-where-the-reader-declines",
+        "normalized_url": "https://khanhthanhdev.github.io/prism-page/"
+      },
+      {
+        "work": "2026-08-03-where-the-reader-declines",
+        "normalized_url": "https://qiushisun.github.io/ScienceBoard-Home/"
+      },
+      {
+        "work": "2026-08-03-where-the-reader-declines",
+        "normalized_url": "https://reveal-dataset.github.io/"
+      }
+    ]
+  },
+  "_binding_works": [
+    "2026-07-01-calibration-gap",
+    "2026-07-06-two-meters",
+    "2026-07-09-the-floor",
+    "2026-07-11-split-seal"
+  ],
+  "_arm_r": {
+    "status": "RAN",
+    "site_commit": "660a5767b7a5480fb62738c7d7b2ad36497c3444",
+    "pages": {
+      "_chrome_links_excluded": [
+        "https://creativecommons.org/licenses/by/4.0/",
+        "https://frankbueltge.de",
+        "https://github.com/frankbueltge",
+        "https://github.com/frankbueltge/field-research"
+      ],
+      "2026-07-01-calibration-gap": {
+        "status": "READ",
+        "page_bytes": 71772,
+        "linked_urls_before_chrome_exclusion": [
+          "https://aclanthology.org/2024.acl-long.674",
+          "https://arxiv.org/abs/2304.02819",
+          "https://arxiv.org/abs/2502.04528",
+          "https://arxiv.org/abs/2512.09292",
+          "https://creativecommons.org/licenses/by/4.0/",
+          "https://doi.org/10.1007/s40979-023-00146-z",
+          "https://doi.org/10.1038/s41598-023-38964-3",
+          "https://doi.org/10.1186/s41239-024-00487-w",
+          "https://doi.org/10.7717/peerj-cs.2953",
+          "https://frankbueltge.de",
+          "https://github.com/frankbueltge",
+          "https://github.com/frankbueltge/field-research",
+          "https://gptzero.me/news/gptzero-vs-copyleaks-vs-originality/",
+          "https://minnlawyer.com/2026/02/13/u-of-m-ai-cheating-expulsion-upheld-appeal",
+          "https://originality.ai/blog/ai-accuracy",
+          "https://storage.courtlistener.com/recap/gov.uscourts.ctd.163407/gov.uscourts.ctd.163407.89.0.pdf",
+          "https://www.abc.net.au/news/2025-10-09/artificial-intelligence-cheating-australian-catholic-university/105863524",
+          "https://www.courtlistener.com/docket/69607031/rignol-v-yale-university/",
+          "https://www.turnitin.com/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability"
+        ],
+        "linked_urls": [
+          "https://aclanthology.org/2024.acl-long.674",
+          "https://arxiv.org/abs/2304.02819",
+          "https://arxiv.org/abs/2502.04528",
+          "https://arxiv.org/abs/2512.09292",
+          "https://doi.org/10.1007/s40979-023-00146-z",
+          "https://doi.org/10.1038/s41598-023-38964-3",
+          "https://doi.org/10.1186/s41239-024-00487-w",
+          "https://doi.org/10.7717/peerj-cs.2953",
+          "https://gptzero.me/news/gptzero-vs-copyleaks-vs-originality/",
+          "https://minnlawyer.com/2026/02/13/u-of-m-ai-cheating-expulsion-upheld-appeal",
+          "https://originality.ai/blog/ai-accuracy",
+          "https://storage.courtlistener.com/recap/gov.uscourts.ctd.163407/gov.uscourts.ctd.163407.89.0.pdf",
+          "https://www.abc.net.au/news/2025-10-09/artificial-intelligence-cheating-australian-catholic-university/105863524",
+          "https://www.courtlistener.com/docket/69607031/rignol-v-yale-university/",
+          "https://www.turnitin.com/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability"
+        ]
+      },
+      "2026-07-06-two-meters": {
+        "status": "READ",
+        "page_bytes": 81990,
+        "linked_urls_before_chrome_exclusion": [
+          "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+          "https://creativecommons.org/licenses/by/4.0/",
+          "https://frankbueltge.de",
+          "https://ghgprotocol.org/sites/default/files/2023-03/Scope%202%20Guidance.pdf",
+          "https://github.com/frankbueltge",
+          "https://github.com/frankbueltge/field-research",
+          "https://policyreview.info/articles/news/big-techs-2025-sustainability-reports/2027",
+          "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf"
+        ],
+        "linked_urls": [
+          "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+          "https://ghgprotocol.org/sites/default/files/2023-03/Scope%202%20Guidance.pdf",
+          "https://policyreview.info/articles/news/big-techs-2025-sustainability-reports/2027",
+          "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf"
+        ]
+      },
+      "2026-07-09-the-floor": {
+        "status": "READ",
+        "page_bytes": 64310,
+        "linked_urls_before_chrome_exclusion": [
+          "https://creativecommons.org/licenses/by/4.0/",
+          "https://frankbueltge.de",
+          "https://github.com/frankbueltge",
+          "https://github.com/frankbueltge/field-research",
+          "https://noclimateresultsfound.com/wp-content/uploads/2025/07/Kairos_NCRFGoogleReport_FINAL.pdf",
+          "https://sustainability.google/google-2026-environmental-report",
+          "https://sustainability.google/reports/google-2025-environmental-report",
+          "https://www.datacenterdynamics.com/en/opinions/beyond-pue-rethinking-how-data-center-sustainability-is-measured",
+          "https://www.rehva.eu/rehva-journal/chapter/analysis-of-performance-metrics-for-data-center-efficiency-should-the-power-utilization-effectiveness-pue-still-be-used-as-the-main-indicator-part-1",
+          "https://www.sciencedirect.com/science/article/abs/pii/S1040619016300446",
+          "https://www.smartenergydecisions.com/wp-content/uploads/2025/04/google-2024-environmental-report.pdf"
+        ],
+        "linked_urls": [
+          "https://noclimateresultsfound.com/wp-content/uploads/2025/07/Kairos_NCRFGoogleReport_FINAL.pdf",
+          "https://sustainability.google/google-2026-environmental-report",
+          "https://sustainability.google/reports/google-2025-environmental-report",
+          "https://www.datacenterdynamics.com/en/opinions/beyond-pue-rethinking-how-data-center-sustainability-is-measured",
+          "https://www.rehva.eu/rehva-journal/chapter/analysis-of-performance-metrics-for-data-center-efficiency-should-the-power-utilization-effectiveness-pue-still-be-used-as-the-main-indicator-part-1",
+          "https://www.sciencedirect.com/science/article/abs/pii/S1040619016300446",
+          "https://www.smartenergydecisions.com/wp-content/uploads/2025/04/google-2024-environmental-report.pdf"
+        ]
+      },
+      "2026-07-11-split-seal": {
+        "status": "READ",
+        "page_bytes": 102630,
+        "linked_urls_before_chrome_exclusion": [
+          "https://commons.wikimedia.org/wiki/File:Cat_November_2010-1a.jpg",
+          "https://commons.wikimedia.org/wiki/File:DALL%C2%B7E_2025-02-21_23.58.53_-_A_simple_soldering_iron_with_a_stand._The_soldering_iron_has_a_slim,_ergonomic_handle_with_a_metallic_tip._The_stand_is_a_small_metal_base_with_a_coil.webp",
+          "https://commons.wikimedia.org/wiki/File:Gato_naranja_generado_por_IA.png",
+          "https://commons.wikimedia.org/wiki/File:Imagetitis-affected_editor_by_ChatGPT_4.0_%26_DALL%C2%B7E_3_(2024).webp",
+          "https://commons.wikimedia.org/wiki/File:Wikimedia_Commons_AI_(2025).png",
+          "https://creativecommons.org/licenses/by/4.0/",
+          "https://frankbueltge.de",
+          "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg",
+          "https://github.com/frankbueltge",
+          "https://github.com/frankbueltge/field-research"
+        ],
+        "linked_urls": [
+          "https://commons.wikimedia.org/wiki/File:Cat_November_2010-1a.jpg",
+          "https://commons.wikimedia.org/wiki/File:DALL%C2%B7E_2025-02-21_23.58.53_-_A_simple_soldering_iron_with_a_stand._The_soldering_iron_has_a_slim,_ergonomic_handle_with_a_metallic_tip._The_stand_is_a_small_metal_base_with_a_coil.webp",
+          "https://commons.wikimedia.org/wiki/File:Gato_naranja_generado_por_IA.png",
+          "https://commons.wikimedia.org/wiki/File:Imagetitis-affected_editor_by_ChatGPT_4.0_%26_DALL%C2%B7E_3_(2024).webp",
+          "https://commons.wikimedia.org/wiki/File:Wikimedia_Commons_AI_(2025).png",
+          "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg"
+        ]
+      }
+    },
+    "grade": {
+      "2026-07-01-calibration-gap": {
+        "status": "GRADED",
+        "agreement": [
+          "https://aclanthology.org/2024.acl-long.674",
+          "https://arxiv.org/abs/2304.02819",
+          "https://arxiv.org/abs/2502.04528",
+          "https://arxiv.org/abs/2512.09292",
+          "https://doi.org/10.1007/s40979-023-00146-z",
+          "https://doi.org/10.1038/s41598-023-38964-3",
+          "https://doi.org/10.1186/s41239-024-00487-w",
+          "https://doi.org/10.7717/peerj-cs.2953",
+          "https://gptzero.me/news/gptzero-vs-copyleaks-vs-originality/",
+          "https://minnlawyer.com/2026/02/13/u-of-m-ai-cheating-expulsion-upheld-appeal",
+          "https://originality.ai/blog/ai-accuracy",
+          "https://storage.courtlistener.com/recap/gov.uscourts.ctd.163407/gov.uscourts.ctd.163407.89.0.pdf",
+          "https://www.abc.net.au/news/2025-10-09/artificial-intelligence-cheating-australian-catholic-university/105863524",
+          "https://www.courtlistener.com/docket/69607031/rignol-v-yale-university/",
+          "https://www.turnitin.com/blog/understanding-the-false-positive-rate-for-sentences-of-our-ai-writing-detection-capability"
+        ],
+        "s_over_counts": [],
+        "s_misses": []
+      },
+      "2026-07-06-two-meters": {
+        "status": "GRADED",
+        "agreement": [
+          "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+          "https://ghgprotocol.org/sites/default/files/2023-03/Scope%202%20Guidance.pdf",
+          "https://policyreview.info/articles/news/big-techs-2025-sustainability-reports/2027",
+          "https://www.gstatic.com/gumdrop/sustainability/google-2025-environmental-report.pdf"
+        ],
+        "s_over_counts": [],
+        "s_misses": []
+      },
+      "2026-07-09-the-floor": {
+        "status": "GRADED",
+        "agreement": [
+          "https://noclimateresultsfound.com/wp-content/uploads/2025/07/Kairos_NCRFGoogleReport_FINAL.pdf",
+          "https://sustainability.google/google-2026-environmental-report",
+          "https://sustainability.google/reports/google-2025-environmental-report",
+          "https://www.datacenterdynamics.com/en/opinions/beyond-pue-rethinking-how-data-center-sustainability-is-measured",
+          "https://www.rehva.eu/rehva-journal/chapter/analysis-of-performance-metrics-for-data-center-efficiency-should-the-power-utilization-effectiveness-pue-still-be-used-as-the-main-indicator-part-1",
+          "https://www.sciencedirect.com/science/article/abs/pii/S1040619016300446",
+          "https://www.smartenergydecisions.com/wp-content/uploads/2025/04/google-2024-environmental-report.pdf"
+        ],
+        "s_over_counts": [],
+        "s_misses": []
+      },
+      "2026-07-11-split-seal": {
+        "status": "GRADED",
+        "agreement": [
+          "https://commons.wikimedia.org/wiki/File:Cat_November_2010-1a.jpg",
+          "https://commons.wikimedia.org/wiki/File:DALL%C2%B7E_2025-02-21_23.58.53_-_A_simple_soldering_iron_with_a_stand._The_soldering_iron_has_a_slim,_ergonomic_handle_with_a_metallic_tip._The_stand_is_a_small_metal_base_with_a_coil.webp",
+          "https://commons.wikimedia.org/wiki/File:Gato_naranja_generado_por_IA.png",
+          "https://commons.wikimedia.org/wiki/File:Imagetitis-affected_editor_by_ChatGPT_4.0_%26_DALL%C2%B7E_3_(2024).webp",
+          "https://commons.wikimedia.org/wiki/File:Wikimedia_Commons_AI_(2025).png",
+          "https://github.com/c2pa-org/public-testfiles/tree/main/legacy/1.4/image/jpeg"
+        ],
+        "s_over_counts": [],
+        "s_misses": []
+      }
+    },
+    "corpus_check": {
+      "2026-07-01-calibration-gap": {
+        "status": "GRADED",
+        "page_linked": 15,
+        "we_call_linked": 15,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      },
+      "2026-07-01-digit-mirror": {
+        "status": "GRADED",
+        "page_linked": 0,
+        "we_call_linked": 0,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      },
+      "2026-07-01-fairness-trap": {
+        "status": "GRADED",
+        "page_linked": 10,
+        "we_call_linked": 10,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      },
+      "2026-07-01-naive-detector": {
+        "status": "GRADED",
+        "page_linked": 0,
+        "we_call_linked": 0,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      },
+      "2026-07-01-plausibility-engine": {
+        "status": "GRADED",
+        "page_linked": 0,
+        "we_call_linked": 0,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      },
+      "2026-07-01-provenance-horizon": {
+        "status": "GRADED",
+        "page_linked": 0,
+        "we_call_linked": 0,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      },
+      "2026-07-01-score-horizon": {
+        "status": "GRADED",
+        "page_linked": 0,
+        "we_call_linked": 0,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      },
+      "2026-07-01-the-edition": {
+        "status": "GRADED",
+        "page_linked": 0,
+        "we_call_linked": 0,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      },
+      "2026-07-02-standing-docket": {
+        "status": "GRADED",
+        "page_linked": 0,
+        "we_call_linked": 0,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      },
+      "2026-07-02-taxonomy-on-trial": {
+        "status": "GRADED",
+        "page_linked": 0,
+        "we_call_linked": 0,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      },
+      "2026-07-05-backward-regime-test": {
+        "status": "GRADED",
+        "page_linked": 0,
+        "we_call_linked": 0,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      },
+      "2026-07-06-two-meters": {
+        "status": "GRADED",
+        "page_linked": 4,
+        "we_call_linked": 4,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      },
+      "2026-07-09-the-floor": {
+        "status": "GRADED",
+        "page_linked": 7,
+        "we_call_linked": 7,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      },
+      "2026-07-11-split-seal": {
+        "status": "GRADED",
+        "page_linked": 6,
+        "we_call_linked": 6,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      },
+      "2026-07-17-comparable-with-humans": {
+        "status": "GRADED",
+        "page_linked": 0,
+        "we_call_linked": 0,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      },
+      "2026-07-24-where-the-chain-breaks": {
+        "status": "GRADED",
+        "page_linked": 0,
+        "we_call_linked": 0,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      },
+      "2026-07-25-no-signal-to-extend": {
+        "status": "GRADED",
+        "page_linked": 0,
+        "we_call_linked": 0,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      },
+      "2026-08-03-where-the-reader-declines": {
+        "status": "GRADED",
+        "page_linked": 0,
+        "we_call_linked": 0,
+        "we_say_linked_page_does_not": [],
+        "page_links_we_call_displayed": []
+      }
+    }
+  }
+}

@@ -263,6 +263,14 @@ instrument runs without A1.
    occurrence in another. Architectural; unfixed, and not fixable by any marker rule.
 2. **D6** (§3) — the extractor cannot see a data-bound `href={…}`, which is how this archive
    actually links. Until it can, every presentation figure here is a bound, not a measurement.
+   > **ANSWERED 2026-08-07 (session 99) — see `RESULT-D6.md`; this file is not rewritten.** A
+   > resolver now follows a binding back to the field it renders, and the served page was read to
+   > grade it: **124 of 166 displayed-only, 74.7 %**, 42 links claimed and 42 found, zero
+   > disagreements across the 18 works carrying a rendered-tier citation. **§3's "66.9 %" was not
+   > a floor.** It assumed all 45 pairs in the four binding works are links; **32 are.** The true
+   > value lies above that figure, and the reading labelled there as "an upper bound on the
+   > correction" was wrong in the direction that flattered this archive. §3's range and its
+   > 85.5 % point stand in this file as written, superseded rather than edited.
 3. **A named outside audience.** The Production Amendment's concept gate requires one and this
    instrument has never had one. The Interlocutor's first charge, conceded without qualification.
 4. **A decision on form**, still open. Not taken this session — see the journal, where the
