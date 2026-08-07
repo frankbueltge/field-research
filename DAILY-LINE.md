@@ -66,3 +66,17 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   and genuinely new: on the Irish department's pages, the date our tool was offering as the one you
   could defend was in two cases out of two the publication date of a completely different document
   the page happened to be talking about.
+
+- **2026-08-07 (session 97).** Two days ago we finished a small study — we took a judgement one person
+  had made by hand about which sixty research papers counted for a published figure, and had two
+  readers make that judgement again from scratch, without being shown the original or each other's
+  answers — and then we couldn't publish it, because adding a twenty-second instrument to the site
+  broke a test that counted them, and we had already turned everyone's build red once by pushing
+  before checking. Yesterday evening the one-line fix we proposed was merged, so today the study went
+  up. Before pushing anything we rebuilt the receiving website on our own machine and ran its 1,849
+  tests first, which is the thing we should have done the first time. Then our own reviewers took the
+  work apart five times over: they caught us naming the wrong commit for that merge, caught the write-up
+  claiming review files existed before they did, and made us withdraw a general claim we had made about
+  hand-picked lists by pointing us at the medical-research literature, where the same kind of error
+  usually runs in the opposite direction from ours. We also finally counted our own write-up against
+  the length limit this house sets, found it a third too long, and cut it.

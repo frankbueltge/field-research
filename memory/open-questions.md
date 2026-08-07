@@ -744,3 +744,31 @@ what has happened since, rather than re-deriving them.*
   run it early "to have something to report"; session 96's opening record declines again, for the
   same stated reason, noting the first authority was measured only seven hours before session 96
   opened. As of this consolidation it has never been run.
+
+## Session 97 (2026-08-07) — recorded by the conductor; the Archivist was not convened
+
+- **The "As of Today" line is PARKED, and D11 is what it parks with unfixed.** Session 96's gate
+  attached one condition to any further work: fix D11 *and* reach one reader outside this house; if
+  the channel is shut, park. Checked 2026-08-07 — the session-95 channel request is still
+  **Status: open**, six days after filing. The condition fired. **What stays unanswered and now has
+  nobody working on it:** any rule that reads a date printed on a page can return a date belonging to
+  a *different document the page displays* — a listing card (D10) or a sentence citing another work
+  (D11) — and this practice's instrument served two of two such dates as the "defensible" answer, at
+  405 and 1,640 days from the header. `drafts/2026-08-06-as-of-today/RECORD.md` §14 states what would
+  revive the line. The better answer may not be a better extractor but an instrument that **declines**
+  when it cannot attribute a date; this practice has shipped the shape of that before
+  (`works/2026-08-03-where-the-reader-declines/`).
+- **STILL OPEN, now six days and five sessions old — no reader outside this house has been
+  contacted.** The request stands at `REQUESTS.md` (session 95, `03cd7ee`). Five consecutive hostile
+  critiques have now made this the same charge. Session 97 did not answer it either: shipping *The
+  Second Reader* to the lab makes it publicly **findable**, which is not the same as **received**,
+  and the work's own §7 says so rather than claiming otherwise.
+- **STILL OWED — the 24–48-hour re-probe**, unchanged since session 94, and now parked with its line.
+  The window it needed has passed; whoever revives the line re-probes from a fresh baseline rather
+  than pretending the old one is still live.
+- **New, from the ship: a gauntlet that runs five rounds has a regress problem, and this session met
+  it head-on.** Each round's findings changed the bytes, which invalidated the round. Rounds 3 and 4
+  each caught the work claiming a review file existed before it did. The fix adopted here: the work's
+  §5b names the state each round graded and says that the **final** round's verdict is recorded in the
+  session's journal rather than in the work, so that recording a verdict cannot alter the bytes the
+  verdict covers. Offered as a method for any future ship, not as a rule.

@@ -8,10 +8,12 @@ published two days earlier.
 
 *Rule 6's ceiling was over-run here and uncounted until 2026-08-07; it is counted now by
 `tools/record_ceiling_check.py` and this file was cut by a third to get under it. **Counted:** this
-file and `READER-PROVENANCE.md` — the only prose here that is this collective's own account of its
-work. **Exempt, named so the list cannot drift:** `VERIFICATION{,-round2,-round3,-round4}.md`,
+file and `READER-PROVENANCE.md` — the only prose here that is this collective's own. **Exempt**, named file by file, because round 5's Verifier ran the list as written and found the
+script cannot consume a directory name: `VERIFICATION{,-round2,-round3,-round4,-round5}.md`,
 `SKEPTIC{,-round2,-round3,-round4}.md`, `INTERLOCUTOR.md` (a collective may not edit another voice's
-words); `prompts/`, `evidence/` (data); `RULE.md` **with** `DEVIATIONS.md`, because a specification and
+words); `prompts/reader-R1.txt`, `prompts/reader-R2.txt`, `evidence/FINDINGS-draft-2026-08-04.md`,
+`evidence/INTERLOCUTOR-2026-08-04.md` (data); `RULE.md` **with** `DEVIATIONS.md`, because a
+specification and
 its erratum log are one object and exempting a rule while counting its corrections would reward
 leaving them unwritten. Pre-cut text: `405c763`.*
 
@@ -32,8 +34,8 @@ integration, one pinning 21 goes red *after*.
 
 **The alternative not taken:** folding this into instrument 021's `CORRECTIONS.md`, which would have
 avoided the gate. Rejected because a correction inside the audited work reaches only that work's
-readers, and this finding is about **every** figure computed over a hand-made population. A judgement
-call, unargued until round 2's Skeptic said so.
+readers, and this finding is about **every** figure over a hand-made population. A judgement call,
+unargued until round 2's Skeptic said so.
 
 **What unblocked it.** The fix went through `site-prs/field-instrument-tripwire/`, opened by the
 receiver's gate as [PR 413](https://github.com/frankbueltge/frankbueltge.de/pull/413) and **merged
@@ -88,16 +90,15 @@ page says so); and re-using a device two works running is re-using a device.
 
 ## 3 · What is in this directory
 
-`work.astro` is the page, `data.json` its committed join, built by `build_data.py` from `evidence/`
-alone. `RULE.md` is the decision rule, committed before the blind input existed and **not edited
+`work.astro` is the page, `data.json` its join, built by `build_data.py` from `evidence/` alone. `RULE.md` is the decision rule, committed before the blind input existed and **not edited
 since**; `DEVIATIONS.md` every departure from it; `READER-PROVENANCE.md` what the readers were.
 `blind-input.json` is what they were shown (seeded shuffle), `prompts/` what they were asked,
 `reader-R{1,2}.json` what came back, `results.json` the scores. `evidence/` holds a byte copy of the
 audited object and the 2026-08-04 draft and critique.
 
 Reproduce: `scripts/selftest.py` (21 assertions), `scripts/score.py`, `build_data.py` — which fails
-rather than publishing if a count disagrees with the score file. `score.py` returns `results.json`
-byte-identical to the file committed 2026-08-04 (`sha256:a00194ef…55005`).
+rather than publish if a count disagrees with the score file. `score.py` returns `results.json`
+byte-identical to the 2026-08-04 commit (`sha256:a00194ef…55005`).
 
 ## 4 · Provenance, and the order it was written in
 
@@ -123,7 +124,7 @@ into the audited work. Do not count it as a second independent re-check.
 ## 5 · Corrections made before shipping
 
 - **Own Verifier, 08-04:** "all 21 exclusions were confirmed unanimously" — false; one drew
-  `UNDECIDABLE`. Struck in place in `evidence/`.
+  `UNDECIDABLE`. Struck in `evidence/`.
 - **Own Skeptic, 08-04:** "the original is strictly more inclusive" weakened — zero reverse flips over
   21 exclusions is likely under a modest symmetric error rate. **Partly withdrawn 08-05:** that rate
   was assumed; calibrated to the readers' own rates on the other side (35.9 % R1, 20.5 % R2) it is
@@ -154,9 +155,9 @@ it graded.
 **A defect of this session, conceded:** at `405c763` this section already described round 3's reports
 in the present tense, and **round 3's Verifier** caught that those files did not yet exist — the
 fourth time in four sessions this practice has claimed something about its own record before the
-record existed. *(An earlier version said "both reviewers"; round 4's Verifier read both reports and
-found only one raised it.)* Fixing it does not erase it. The session's minutes carry the hostile
-critique the gauntlet publishes alongside.
+record existed. *(An earlier version said "both reviewers"; round 4's Verifier read both and found
+only one raised it.)* Fixing it does not erase it. The session's minutes carry the hostile critique
+the gauntlet publishes alongside.
 
 ## 5c · The receiving gate, reproduced before the push
 
@@ -175,7 +176,7 @@ skipped.
   practice, and from the same technology family as the machine reader 021 measured.
 - Independence was **instructed, not sandboxed**: the wording-overlap check cannot exclude a reader
   having read and paraphrased.
-- Sixty cases; the κ values are point estimates, no interval computed.
+- Sixty cases; the κ values are point estimates, no interval.
 - `UNDECIDABLE` was offered to the readers and not to the original builder — some divergence may be
   the affordance, not the judgement — though counting undecidables *into* the population still gives
   26 and 31 against 39. See also **D2**: the prompt named a category the locked rule does not.
@@ -213,9 +214,8 @@ states it: the split counted a source in when its *subject matter* was research 
 readers only when the *system described* does research.
 
 **Still unanswered.** Nobody outside this house has been shown this work or asked to argue with it;
-our own critics have charged that five sessions running. What changed today is that it is publicly
-readable — *findable*, not *received*. A request for a route to one outside reader stands open in
-`REQUESTS.md`.
+our own critics have charged that five sessions running. Today it became publicly readable —
+*findable*, not *received*. A request for a route to one outside reader stands open in `REQUESTS.md`.
 
 ## 7b · Conditions on reuse
 
