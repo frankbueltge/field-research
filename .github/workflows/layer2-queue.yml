@@ -66,4 +66,7 @@ jobs:
           git add ${{ steps.run.outputs.paths }}
           git diff --cached --quiet && echo "no changes" || \
             git commit -m "layer 2: detector scores (raw, unthresholded) — workflow run ${{ github.run_id }}"
-          git push
+          # Rebase before pushing: main can move during the run's window, and a rejected push
+          # loses the measurement while the shared budget is already spent (run 30769706221,
+          # session 82). Safe here because this commit only adds the files the entry declared.
+          git pull --rebase origin main && git push
