@@ -119,3 +119,38 @@ last session refuted P1 and the reason was worth more than the prediction.
   rewrite, because a record edited to agree with a later session is not a record.
 - **It does not ship the work.** No Interlocutor is convened, the form decision stays open, and the
   work still has no named outside reader.
+
+## 7. Amendments forced by the pre-read — 2026-08-07, before the build
+
+*The Skeptic returned **BUILD WITH CONDITIONS** with two blocking findings. Its verbatim return and
+the disposition of every finding are in `SKEPTIC-PREREAD-D6.md`. The design above is **not**
+rewritten — the amendments are stated here, dated, so that what was locked and what was changed
+after review stay separable.*
+
+**B1 (from blocking finding 1) — S3/S4 resolve a `??` chain per container object, not per key
+name.** The rule as locked said `r.official_url ?? r.pdf_mirror_extracted` → "both". That is false:
+`??` short-circuits, so on any row where the first operand has a value the second is never
+rendered. The Skeptic found a committed row where exactly this holds. **The rule becomes:** for each
+object in the imported data carrying at least one operand key, mark the **first operand with a
+usable value on that object**, and mark a later operand only on objects where every earlier operand
+is absent or null. The single-operand case is the same code path.
+
+**B2 (from blocking finding 4) — the render arm's absence must be visible in the result, not
+silent.** If Arm R does not run, **P7 is reported `UNSCORED`**, and any recomputed share touched by
+a multi-operand binding is reported as a **bound** with that caveat on its face. This binds every
+future run of this resolver, including runs where Arm R is inconvenient rather than impossible.
+
+**B3 (from non-blocking finding 2) — the container-ambiguity flag is a disclosure, not a
+downgrade.** The flag fires on path shape alone and, as the Skeptic showed, fires on three works
+whose colliding keys are *both* genuinely bound. So a flagged pair is no longer reported only as a
+`strict`/`permissive` bound: it is reported, flagged, and **handed to Arm R to grade**. The false-
+alarm rate of the flag becomes a measured number instead of an argued one.
+
+**B4 (from non-blocking finding 5) — P8 and P6 are scored with their discount attached.** P8 is
+close to entailed by P5 on a fixed denominator of 166, and P6 is close to guaranteed by this
+archive's habit of parallel citation arrays sharing a generic key name. Both are still scored;
+neither is reported as an independent confirmation.
+
+**B5 (from non-blocking finding 3) — the renamed-field miss is recorded as checked and cleared.**
+It does not occur in the pinned four (the one helper-built row preserves its key name), and the
+result file says so, so that a future run over a changed population knows the check is owed.
