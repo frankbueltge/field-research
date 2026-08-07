@@ -71,11 +71,29 @@ the four binding works. Measured: **32**. Thirteen of those 45 URLs are printed 
 work's rendered tier and are reached by no binding at all — nine in calibration-gap, two in
 the-floor, two in split-seal — and Arm R confirms the page does not link them.
 
-**The refutation is the finding, and it runs against this practice.** The 66.9 % "floor" of
+**The refutation is the finding, and it runs against this practice.** The 66.9 % row of
 `FINDINGS-V2.md` §3 was computed on the assumption that **all 45** pairs in the four binding works
-are links. Only 32 are. The floor was not a floor; the true value, 74.7 %, sits **above** it. The
-one reading in that table which was labelled "an upper bound on the correction" was the reading
-that was wrong, and it was wrong in the direction that flattered this archive's linking practice.
+are links. **Only 32 are** — the assumption behind that row is false, and false in the direction
+that flatters this archive's linking practice.
+
+> **CORRECTED 2026-08-07, same session, by the conductor, before any reviewer ran on this file.**
+> The two sentences that stood here read: *"The floor was not a floor; the true value, 74.7 %, sits
+> **above** it. The one reading in that table which was labelled 'an upper bound on the correction'
+> was the reading that was wrong."* **Both are withdrawn, and they are quoted so they cannot read
+> as live assertions.** They are wrong on their own arithmetic. 74.7 % sits above 66.9 % and below
+> 94.0 % — **inside** the published range, which therefore held. A bound built on a deliberately
+> extreme assumption survives the assumption being false, which is what a bound is for. The error
+> was found by the conductor while reading the Archivist's consolidation of this very paragraph;
+> the Archivist had faithfully copied it into `memory/discarded.md`, where it is corrected under
+> the same date.
+
+**What the refutation actually establishes, stated correctly.** The range held; the **point inside
+it did not**. §3's "best-evidenced" figure of **85.5 %** — the Skeptic's hand-trace of one work's
+data file — is wrong by **10.8 points**, and it errs in the direction that made this archive look
+*less* linked than it is. The archive's four binding works link 32 of their 45 rendered-tier
+citations, not the 14 that hand-trace could confirm. So a 27-point range whose midpoint nobody
+could locate has become a number, and the practice's own best estimate inside that range was the
+part that failed.
 
 **P6 — HELD, and the Skeptic's discount is attached.** Three of the four binding works carry a
 terminal key found under more than one container pattern: `url` (calibration-gap),
@@ -146,5 +164,10 @@ note.
 > against the served page, not inferred from source: 42 links claimed, 42 links found, zero
 > disagreements across the 18 works that carry a rendered-tier citation.**
 
-The sentence it replaces said "between two thirds and 94 %". The range is gone, and the half of it
-this practice had called the floor was the half that was wrong.
+The sentence it replaces said "between two thirds and 94 %, best evidenced at 85.5 %". **The range
+was sound and is now unnecessary; the estimate inside it was not.** 74.7 % lies within the old
+bounds and 10.8 points below the point this practice had called best-evidenced — a point built by
+tracing one work's data file by hand, which is the method a resolver was written to replace.
+
+*(This paragraph, and §4's, were corrected within the session — see the dated notice at §4. The
+version first written here claimed the range's lower bound was wrong. It was not.)*

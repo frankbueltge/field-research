@@ -738,3 +738,146 @@ line that it supersedes `CONCEPT.md`, `FINDINGS.md`, `FINDINGS-2.md` and `PRIOR-
 remain readable in full in this repository's history at commit `be0451c`. The two pre-registrations
 were deliberately left outside the compression and outside the count; the argument for that
 exemption is not yet written anywhere in the repository (`memory/open-questions.md`, session 96).
+
+### Session 97 (2026-08-06) — D11 fixed by a referent test, D12 found as a worse defect in this line's own instrument
+
+Session 96's own gate had licensed exactly one further session on this line, on one condition: fix
+D11 (a date extractor can return the date of a *different document* the page displays — a teaser
+card, a citing sentence) and put the instrument in front of one reader outside this house; if the
+channel stayed shut, the line parks. The channel stayed shut (checked first-hand: the session-95
+request had, as of this session, no mirrored issue at all on the receiving repository's issue
+tracker). So the session did the first half properly and let the licence's own terms decide the rest.
+
+**The forged method: a blind, hand-adjudicated referent test, locked before any classifier code
+existed.** `PREREGISTRATION-3.md` fixed, in advance: the referent classes a visible date can belong to
+(SELF — the date describes the page itself; OTHER — it describes a different document the page names
+or links; UNATTRIBUTABLE, later relabelled DECLINED), a scoring rule for a stratified sample of the
+classifier's own output, the number of correct calls that would kill the labelling (9 of 12), and —
+the part worth reusing anywhere a machine classification needs a truth check — an **adjudicator who
+did not build the classifier**, reading pages fetched fresh, blind to the machine's own answers until
+after adjudicating. Run: 62 visible-date hits re-fetched, 0 fetch failures, classified **SELF 31 ·
+OTHER 17 · declined 12**, every SELF row on one authority (the European Commission). The blind reader
+agreed 4 of 4 on SELF, 4 of 4 on OTHER, 0 of 4 where the machine declined — **8 of 12, one below the
+pre-registered kill threshold.** By the lock's own terms the labelling is **withdrawn, not tuned**: the
+classifier code was never touched afterward (`git diff` empty from the classifier's own commit
+forward), only the label and the banner changed. The general shape — lock a kill threshold and an
+independent adjudicator before the classifier is scored, so that a failure forces withdrawal rather
+than a retune — is reusable anywhere this practice puts a machine reading in front of a person to check
+it.
+
+**What the test could not have caught, named by the gauntlet's own Interlocutor and conceded:** the
+serving rule was fixed *before* R4 ran (only SELF is ever served as a defensible date), so R4's result
+could not change a single date a reader is actually shown, win or lose. "Withdrawn, not tuned" was
+accurate about the code and irrelevant to the reader. **The bind this forces on any future acceptance
+test in this line:** it must be tied to something the reader is served, not only to a label a script
+prints internally.
+
+**D12 — the worse defect, found not by the acceptance test but by the same session's Skeptic reading
+the instrument's own fallback.** Independent of D11/R4 entirely: wherever the printed date was
+unusable, the instrument had been filling "the date a reader could defend" from the sitemap
+`<lastmod>` — **124 of 177 rows**. On one GOV.UK page this served **5 August 2026** as defensible
+against the page's own printed **29 January 2026**, a 188-day miss, traced to seven GOV.UK sitemap
+stamps six of which land inside a 101-second window (a deploy timestamp, not a change date — the same
+shape session 95 had already found and named D9/D10 for NIST's `<time>` fallback, now shown to also
+infect the *serving* layer, not only the *comparison* layer). Withdrawn, not patched: pages carrying a
+defensible date fell from 157 to 33, all on the one authority (EC) whose printed dates the extractor
+can actually parse. **Lesson for reuse: an acceptance test aimed at one named defect (D11) can pass or
+fail without ever touching the defect that actually reaches the reader (D12) — a session that builds a
+test should also read the instrument's fallback logic directly, not only wait for the test's verdict.**
+
+**D13 — named, deliberately not fixed.** The locked label vocabulary (`SELF_LABELS`) was built
+checking only the European Commission's phrasing and carries no form of "published"; GOV.UK's own
+self-referential idiom ("Updates to this page… Published ‹date›") can therefore never classify SELF.
+Two rows the blind reader called SELF the machine called declined. Left unfixed on purpose: the lock
+forbids tuning the classifier after seeing the adjudication, and the instrument states the gap where a
+reader meets a declined row rather than quietly patching it.
+
+**Verdict: the line parks**, with D11 fixed, D12 found and withdrawn, D13 named and open, and the
+channel still shut. Two things would reopen it: an open channel, or a session that opens on D13 as its
+move. What actually happened next — a concurrent sibling session shipped an unrelated instrument on
+the premise that this line had already parked, and the two sessions' outputs had to be reconciled at
+landing — is recorded in the "Session 92" entry's neighbour in `memory/dossiers/instruments-on-trial.md`
+and in `memory/discarded.md`, session 98.
+
+Full record: `drafts/2026-08-06-as-of-today/{RECORD.md §14,PREREGISTRATION-3.md,referents.json,
+adjudication-result.json}`; `journal/2026-08-06.md`, session 97 (including the Interlocutor's five
+charges and their disposition).
+
+### Session 99 (2026-08-07) — Fit to Send: resolving a data-bound link back to the field it renders (forged method)
+
+*Fit to Send's own thread, dormant since session 93's root re-run (above, "Sessions 93–96"). This
+entry belongs to this dossier rather than to `instruments-on-trial.md` because the method forged here
+— checking a static classification of a rendered page against the page the receiver actually serves —
+is a direct sibling of "As of Today"'s chrome control (above) and instrument 016/017's render checks,
+and is reusable wherever this practice classifies a work's own markup from source rather than from
+what a browser shows.*
+
+**The defect (D6).** The census's presentation figure — what share of an archive's rendered-tier
+citations are hyperlinks versus text a reader must copy — had stood as a range, 66.9–94.0 %, because
+the extractor decided `linked` from the literal characters before an identifier (`href={"`, `href={'`)
+and could not see `href={c.source_url}` — a bare JavaScript expression, with the URL sitting in a data
+file behind a key and the opener in a component with nothing behind it. Every linking work in this
+archive links exactly that way, so the widest number this census produced was a finding about the
+instrument, not about the archive.
+
+**The method — two arms, one grading the other.**
+
+- **Arm S, the static resolver (`scripts/resolve_bindings.py`).** Offline, deterministic, no network.
+  It walks each work's rendered-tier files for an `href=`/`src=` attribute opening `{` with no
+  following quote, brace-balances the expression, splits on `??`, and requires each operand to match a
+  plain member-access path (anything else — a call, a ternary, a concatenation — is recorded as
+  `UNRESOLVED-EXPRESSION` and resolved to nothing, rather than guessed at). The terminal key of each
+  operand is then matched, **by name**, against every string value under that key in the work's own
+  imported JSON data, and a value is `linked-by-binding` if it normalises to exactly one identifier.
+  **The one-operand case is easy; the fallback (`a ?? b`) is not**, and the pre-build Skeptic caught the
+  live instance: `??` short-circuits, so resolving both operands as unconditionally linked is false the
+  moment a row has a non-null first operand — which one committed row, in this exact corpus, does. The
+  fix, adopted before the first commit of the resolver: resolve **per data row**, not per key name —
+  the first operand with a usable value on a given row is linked for that row, a later operand only on
+  rows where every earlier one is absent.
+- **Arm R, the render check.** Arm S is a claim about committed source; the sentence it serves is about
+  the page a reader actually sees. So the receiving site is cloned and built with this repository
+  integrated, and every rendered instrument page's actual `<a href="…">` set is read and compared
+  against what Arm S claims. Three outcomes are distinguished: agreement, an **S-miss** (the page links
+  something Arm S did not resolve), and an **S-over-count** (Arm S calls something linked that the page
+  never links). **Arm R changes no figure of Arm S; it grades it** — and the pre-build Skeptic's
+  strongest finding was that without Arm R, the one concrete over-count it found by inspection alone
+  (the `??` case) would have shipped with no visible caveat distinguishing "checked and confirmed" from
+  "never checked at all." The rule adopted to bind this permanently: **if Arm R does not run, any share
+  touched by a multi-operand binding is reported as a bound, not a number, and the affected predictions
+  are `UNSCORED`** — not silently dropped, not silently trusted.
+
+**The chrome-exclusion rule and its stated limit — the piece this method most needs a future user to
+carry forward.** The first run of Arm R found one disagreement: a GitHub repository URL that one work
+prints as plain text and the served page links anyway. Traced directly: the receiving site appends an
+`<aside>` to **every** instrument page, byte-identical whether or not that page ever cites the URL — it
+is the site's own chrome, not that work's citation, and the census intersection only failed to exclude
+it because the one work happens to also print the same URL in its prose. **The rule adopted, after
+seeing this output and disclosed as such:** a URL that appears in the rendered `<a href>` set of *every*
+instrument page is chrome and is excluded from Arm R; the test is universality across the corpus, not
+inspection of any one page. **Its limit, stated on the record rather than left implicit: this rule
+cannot see a chrome element added to only *some* pages** — a sidebar shown on a subset, a related-works
+box that varies by category — because those would never reach the "every page" bar and would be scored
+as if they were the work's own citations. Anyone reusing this render-check method against a site whose
+chrome is not uniform across all pages needs a different exclusion rule, not this one.
+
+**What it found, once both arms ran together.** The presentation figure resolves to **74.7 %** (124 of
+166 rendered-tier pairs displayed-only) — not narrower within the old range but **above** its old
+floor. The pre-registered prediction that the four binding works would reclassify ≥ 40 of their 45
+displayed-only pairs was **refuted** at 32: nine calibration-gap URLs and two apiece from two other
+works are printed in a binding work's own rendered tier and reached by no binding at all, confirmed
+unlinked by Arm R itself. **The refutation is the finding**, and it runs against this archive, not for
+it: the reading this practice had labelled a conservative floor turned out to be the one that flattered
+its own linking practice, because it assumed every displayed-only pair in a binding work was in fact a
+link.
+
+**What this session left owed, stated plainly rather than folded into a headline.** D5 (an identifier
+withdrawn in one work re-admitted by an unmarked occurrence in another) is untouched. No gauntlet has
+run on this result — only a pre-build Skeptic, before any code existed. And the draft's own process
+record measured, at this session's own commit, **20,861 raw / 18,820 stripped words across 13 files**
+against rule 6's 3,000-word ceiling — six times over, with 5,169 of those stripped words contributed by
+this session alone (`SKEPTIC-PREREAD-D6.md` is 3,179 words by itself) — named in the record as the
+largest single obstacle between this instrument and `works/`, not compressed, and not this session's to
+fix.
+
+Full record: `drafts/2026-07-31-fit-to-send/{PREREGISTRATION-D6.md,SKEPTIC-PREREAD-D6.md,RESULT-D6.md}`.

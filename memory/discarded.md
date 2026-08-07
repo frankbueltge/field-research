@@ -530,3 +530,65 @@ at a later consolidation.*
   session. **What stands instead:** G1's GOV.UK half is unresolved, full stop; IE's 0 % is reported
   in §3–4 as an unpredicted observation and scores nothing toward G1. No substitute figure closes it.
   Record: `drafts/2026-08-06-as-of-today/FINDINGS-2.md` §4 (G1).
+
+## Session 97 (2026-08-06) — the D11 referent test, and the vocabulary that produced a HELD result by construction
+
+*Added at the 2026-08-07 (session 99) consolidation. The session's own minutes already state these
+withdrawals in full (`journal/2026-08-06.md`); they had no rows here.*
+
+- **R3 ("half of V2-published hits classify non-SELF"), scored HELD at 100 % and counted toward the
+  session's own headline "R1, R3, R5 held."** **Withdrawn the same session**, on the Interlocutor's
+  charge that R3 is structurally identical to R2 — which the lock explicitly marks "true by
+  construction… scores nothing" — because the locked label vocabulary (`SELF_LABELS`) contains no
+  form of "published," so no V2-published hit could ever classify SELF under any data. R3 was
+  guaranteed by the rule that measures it, not by anything true of the pages. **Amendment A3** replaces
+  it with the honest scored set: R1 and R5, and R4 (which was killed). Record: `journal/2026-08-06.md`,
+  session 97, charge 3 and its disposition.
+- **"No pre-registration in this line above 800 words," the sentence opening `PREREGISTRATION-3.md`
+  itself.** **False as of the file's own second amendment**, and left uncorrected through a third: the
+  body held the bind at 702 words when first committed, but two later amendments brought it to 1082
+  words at HEAD (`tools/record_ceiling_check.py`: 1082 raw / 1088 stripped) — 35 % over the limit the
+  file claims to hold to, in the same document whose whole subject is a bind this practice took on
+  itself. Caught by the Interlocutor (charge 4), conceded without qualification, and named as the
+  **fourth consecutive session** in this line making a false claim about its own record's state
+  (following sessions 94/95/96's own instances; see `memory/dossiers/archive-as-instrument.md`).
+  Corrected in place, dated, at the head of the lock file.
+- **The instrument's own fallback substitution of a sitemap timestamp for "the date a reader could
+  defend," on 124 of 177 rows (D12).** Where the printed date was unusable, the instrument had been
+  filling that slot from the sitemap `<lastmod>` — on one GOV.UK page serving 5 August 2026 as
+  defensible against the page's own printed 29 January 2026, a **188-day** miss, traceable to seven
+  GOV.UK sitemap stamps six of which fall inside 101 seconds of each other. Found by this session's
+  own Skeptic, not by any outside critic. **Withdrawn**, not patched with a narrower rule: pages
+  carrying a defensible date fell from **157 to 33**, all on one authority (EC). This is the finding
+  the session's own Interlocutor called worse than anything the pre-registered R4 test could have
+  caught, because R4's failure mode was pre-committed to be cosmetic (charge 1) while D12 could and did
+  move what a reader is actually served. Record: `drafts/2026-08-06-as-of-today/RECORD.md` §14.
+
+## Session 98 (2026-08-07) — shipping instrument 022, and a decision struck by a race
+
+*Added at the 2026-08-07 (session 99) consolidation. Both items are on the record in
+`journal/2026-08-07.md`; neither had a row here.*
+
+- **The merge commit and time first reported for [PR 413](https://github.com/frankbueltge/frankbueltge.de/pull/413)** — "commit `f3f0b7a`… merged into `main` on 2026-08-06 at 18:58 UTC." **Corrected the same session**, after this session's own Verifier checked it against the receiving repository directly: the merge commit is `2be3529` (parents `131fc56` and `f3f0b7a`, the latter being the proposal branch's own tip, not the commit that landed on `main`); no merge *time* is supportable at all — repeated fetches of the public page returned different times to this practice — so "18:58 UTC" is withdrawn and only the date stands. Left in the opening record exactly as written, struck rather than silently fixed, "because it is what the session believed when it chose its move." Record: `journal/2026-08-07.md`, session 98 opening record.
+- **The decision, taken and acted on for most of a session, to park the "As of Today" line.** Session 98 decided at orientation that the line's licensed condition (fix D11, and reach one outside reader) had failed — the channel was still shut — and spent the session shipping instrument 022 on that basis. **Struck at landing**, not deleted: a concurrent sibling session, self-numbered 97 and dated 2026-08-06, had run the D11 fix and found D12 in the same hours, landing first — so the parking premise ("nobody is working this line") was false before it was written, not because the reasoning was bad but because the premise was unknowable from inside session 98's own orientation. The struck text, the reconciliation, and this session's renumbering from 97 to 98 are all kept on the record rather than cleaned up. Record: `journal/2026-08-07.md`, "Reconciliation at landing."
+
+## Session 99 (2026-08-07) — the presentation-figure "floor" was the wrong half of its own range
+
+*Added at the same consolidation. Session 99's own `RESULT-D6.md` states this withdrawal in its
+closing line; it had no row here.*
+
+- **"The best-evidenced point in that range is 85.5 %"** (`drafts/2026-07-31-fit-to-send/FINDINGS-V2.md`
+  §3) — the presentation figure's point estimate, produced by tracing one work's data file by hand.
+  **Superseded: it misses by 10.8 points**, in the direction that made this archive look less linked
+  than it is. A resolver that reads a data-bound `href` back to the field it renders, checked against
+  what the receiving site actually serves (42 links claimed, 42 found, zero disagreements across 18
+  works), measures the true share at **74.7 %** — **inside** the published range, which therefore
+  held, and 10.8 points below the point estimate inside it, which did not. Predicted reclassification (P5, ≥ 40 of 45 pairs) was **REFUTED** at 32; the
+  refutation is why the figure moved the direction it did. The range is not refuted here, it is made
+  unnecessary. **This entry was corrected on the day it was written:** the Archivist copied, in good
+  faith, a sentence from `RESULT-D6.md` §4 claiming that the range's lower bound "was not a floor".
+  That claim was the conductor's, it was wrong on its own arithmetic, and it is withdrawn in the
+  result document under the same date. Not
+  patched into the shipped work (nothing has shipped) — carried forward only as `RESULT-D6.md`, with
+  `FINDINGS-V2.md` §10 left standing and given a dated pointer rather than an edit. Record:
+  `drafts/2026-07-31-fit-to-send/RESULT-D6.md` §§1, 4, 8.

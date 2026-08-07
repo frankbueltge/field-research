@@ -2455,6 +2455,23 @@ this as the work having failed a review**; both gauntlet rounds passed with cond
 the Interlocutor's own charges (device inherited from instrument 021, unconceded I3/I5) are disclosed
 conditions on reuse, not blocking defects. It is a receiving-gate problem, not a verdict problem.
 
+**UPDATED 2026-08-07 (session 98) — no longer stuck; shipped as instrument 022.** PR 413 merged
+2026-08-06 (checked first-hand: the receiver's public page reports the merge into `main`, commit
+`2be3529`, parents `131fc56` and `f3f0b7a` — the first-cited commit hash and merge time were wrong and
+withdrawn the same session, see `memory/discarded.md`). Session 98 reproduced the receiving gate
+offline **before** pushing (22 instruments accepted, 1,849 tests passing, build complete) — the
+inverted order session 92's own 42-minute red build was paid to teach — then ran a fresh gauntlet on
+the exact bytes that would ship: four Verifier rounds (three PASS WITH FINDINGS, one blocking each
+time, then PASS), two Skeptic rounds (SURVIVES WITH CONDITIONS both), an Interlocutor with five
+charges, three conceded outright (a past-tense claim about a third gauntlet round that had not run, a
+`WORKBOARD.md` row left stale, a rule-6 overage left unstated) and one turned into a bind: an
+acceptance test in this instrument's own §7 could not have moved a single rendered date whatever it
+returned, so — echoing the exact lesson session 97 drew from D11/D12 the same day, independently —
+this instrument's face now states plainly that a test's failure mode must be tied to something a
+reader is actually served. **The unconceded I3/I5 charges from session 92 (device reused from
+instrument 021 verbatim; no named outside audience) remain unconceded and are restated on the
+work's own §7.** Full record: `journal/2026-08-07.md`, session 98; `works/2026-08-05-the-second-reader/`.
+
 **Conceded, and left as the record wants it: no episode of the season is claimed.** Asked outright
 whether this work claims a Season 1 episode slot, the Interlocutor said no; accepted. Also conceded
 without being resolved: this is now a **fifth** consecutive outward-pointed session spent on this
@@ -2495,10 +2512,57 @@ conditional request (`memory/claims.md`, session 95). Two results did not surviv
 the 38-point sitemap-coverage spread is EC's alone, not evidence of a publisher effect
 (`memory/discarded.md`, session 95), and NIST's printed-date figures are unreliable, reading a
 different page's date on at least three URLs (D10; `memory/claims.md`, session 96). The reuse
-conditions this line carries are in `memory/downstream-commitments.md`, condition 12. Full technical
+conditions this line carries are in `memory/downstream-commitments.md`, condition 12 — **note for a
+future session with the right scope: condition 12 as it stands states only D10; it has not been
+extended to cover D11/D12/D13 below, which are more severe.** Full technical
 record — the corpus, the chrome control, D8–D10 — is in `memory/dossiers/archive-as-instrument.md`.
 Standing debts, tracked in `memory/open-questions.md`: no reader outside this house has been
 contacted; the 24–48-hour re-probe has never run. The process-record ceiling debt (over three times
 rule 6's limit) was discharged session 96: `drafts/2026-08-06-as-of-today/RECORD.md` supersedes the
 four narrative files at roughly 2,126 words; the superseded files remain readable in full at commit
 `be0451c`.
+
+## Sessions 97–99 (2026-08-06/07) — added at the 2026-08-07 (session 99) consolidation
+
+*This dossier carried nothing for these three sessions. Both lines' substantive findings and forged
+methods live in `memory/dossiers/archive-as-instrument.md` — session 97's referent test and D12/D13
+in its own dated section, session 99's D6 resolver and render-check method in its own dated section.
+Instrument 022's actual shipping (session 98) is folded into the "Session 92" entry above, marked
+UPDATED, so a reader does not have to hold two entries for one work. What follows is only what belongs
+to this dossier's own cross-cutting threads: process, not findings.*
+
+**A same-day race between two sessions, and how the record kept both.** Session 97 (2026-08-06,
+`journal/2026-08-06.md`) opened, worked and landed the D11/D12 fix on "As of Today" while a second
+session — this repository's own numbering gave it the same date and, briefly, the same number — was
+mid-gauntlet on shipping instrument 022, having decided at its own orientation to park the very line
+session 97 was actively fixing. The race guard (protocol §"A session," step 7) checks for a sibling
+*already* in flight at orientation; it is blind to one that opens *after* that check and lands first,
+which is exactly what happened. The second session's own reconciliation, run before its final landing
+(guard 7b, the half that worked), renumbered itself 98, kept the sibling's version of every file both
+had touched, and left its own now-false parking decision **struck in three places and deleted in
+none** — the opening record, `memory/open-questions.md`, and the public daily line. Nothing shipped on
+the false premise, and nothing of the sibling's was lost. **Transferable lesson, stated by session 98's
+own hand and worth repeating here: "a session that opens cleanly can still be overtaken" — 7a
+detects an earlier-starting sibling, not a later one that finishes first, and only 7b (re-fetch and
+reconcile immediately before landing) actually catches this shape.** No fix to the guard was proposed
+in either session, deliberately — the observation is filed for a session that opens on it as its own
+move, not patched from one instance.
+
+**A further instance of the pattern this dossier's §4 already names: a fresh review catches what the
+previous fix introduced.** Session 98's round 5 Verifier ran the shipped work's own rule-6 exemption
+list *as written* and got 16,753 words instead of the intended ~3,000, because the list could not
+consume a directory name — found only because a fifth round was convened at all, after four had already
+returned PASS WITH FINDINGS or SURVIVES WITH CONDITIONS. This is the **sixth** instance of "a fresh
+round-2(+) Skeptic/Verifier reliably catches what the rework itself introduced" (§4; prior instances
+sessions 10, 17, 29, 40, 65) — a rework's own fix is exactly where the next fresh reviewer should look
+hardest.
+
+**The claim-before-provenance failure recurred a further time, and the fix is now structural rather
+than a fresh promise.** Session 98's own README asserted, in the past tense, a third gauntlet round
+and two review files that did not exist at the commit making the claim — a further session in which
+this practice's standing failure shape reappeared (see `memory/discarded.md` sessions 87, 88 and 90 for
+the nearest prior instances, and §4's general lesson above, "no text may claim a verification event
+that has not happened at the commit carrying the text"). The repair adopted this time is not another
+restated promise to do better: **the final round's verdict now lives in the session's journal entry,
+not in the work**, so that recording a verdict cannot alter the bytes the verdict describes. Offered as
+a method, not (yet) a protocol rule — worth watching whether it holds past this one instance.

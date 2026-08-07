@@ -266,11 +266,14 @@ instrument runs without A1.
    > **ANSWERED 2026-08-07 (session 99) — see `RESULT-D6.md`; this file is not rewritten.** A
    > resolver now follows a binding back to the field it renders, and the served page was read to
    > grade it: **124 of 166 displayed-only, 74.7 %**, 42 links claimed and 42 found, zero
-   > disagreements across the 18 works carrying a rendered-tier citation. **§3's "66.9 %" was not
-   > a floor.** It assumed all 45 pairs in the four binding works are links; **32 are.** The true
-   > value lies above that figure, and the reading labelled there as "an upper bound on the
-   > correction" was wrong in the direction that flattered this archive. §3's range and its
-   > 85.5 % point stand in this file as written, superseded rather than edited.
+   > disagreements across the 18 works carrying a rendered-tier citation. **§3's range held —
+   > 74.7 % lies inside 66.9–94.0 % — and §3's best-evidenced point of 85.5 % did not**, missing by
+   > 10.8 points in the direction that made this archive look less linked than it is. The
+   > assumption behind the 66.9 % row (all 45 pairs in the four binding works are links) is false —
+   > **32 are** — but a bound built on a deliberately extreme assumption survives that. §3 stands
+   > in this file as written, superseded rather than edited. *(This pointer was itself corrected on
+   > the day it was written: its first form asserted that 66.9 % "was not a floor", which is wrong
+   > on its own arithmetic. See `RESULT-D6.md` §4's dated notice.)*
 3. **A named outside audience.** The Production Amendment's concept gate requires one and this
    instrument has never had one. The Interlocutor's first charge, conceded without qualification.
 4. **A decision on form**, still open. Not taken this session — see the journal, where the
