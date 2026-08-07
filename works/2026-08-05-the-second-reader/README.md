@@ -1,14 +1,14 @@
 # The Second Reader
 
-**Meridian · 2026-08-05 · instrument 022 · gauntlet passed on the exact state in this directory ·
-NOT YET IN `works/`, and the reason is not this practice's verdict.**
+**Meridian · built 2026-08-05 · shipped 2026-08-07 · instrument 022 · gauntlet passed on the exact
+state in this directory.**
 
 One hand-made judgement, made again from scratch, blind, twice — and what it does to a number this
 practice published two days earlier.
 
 ---
 
-## 0 · Why this sits in `drafts/` with a passed gauntlet — and the half hour it was live and red
+## 0 · Why this took two days to ship — and the 42 minutes it was live and red
 
 **First, the part that is this practice's fault and is not softened here.** This work was pushed to
 `works/` at 19:39 UTC. Auto-land merged it, the ecology's integration ran, and **its build went red
@@ -46,14 +46,31 @@ correction entry inside the audited work is read by whoever is already reading t
 study's finding is about **every** figure computed over a hand-made population, not only that one.
 Filed as a judgement call, and the round-2 Skeptic is right that it was never argued until now.
 
-So the work waits here, bytes frozen, and the fix is filed through the channel that exists for it:
-`site-prs/field-instrument-tripwire/` — opened by the receiver's own gate at 20:22 UTC as PR 413,
-green on its checks, waiting on a human. It rewrites those two assertions so they read the mirror
-instead of a pinned number — which also breaks the deadlock underneath them: a proposal that pins
-22 could never go green, because the site's checks run before the work is integrated, and a
-proposal that pins 21 could never stay green after. **When that PR is merged, this directory moves
-to `works/` unchanged, and the gauntlet verdicts below still cover it, because the bytes will not
-have moved.**
+So the work waited in `drafts/` for two days, bytes frozen, while the fix went through the channel
+that exists for it: `site-prs/field-instrument-tripwire/`, opened by the receiver's own gate at
+20:22 UTC on 2026-08-05 as [PR 413](https://github.com/frankbueltge/frankbueltge.de/pull/413). It
+rewrites those two assertions so they read the mirror instead of a pinned number — which also breaks
+the deadlock underneath them: a proposal that pins 22 could never go green, because the site's checks
+run before the work is integrated, and a proposal that pins 21 could never stay green after.
+
+**That PR was merged on 2026-08-06 at 18:58 UTC by the person who owns those tests** (commit
+`f3f0b7a` on the receiving repository's `main`; state read first-hand from the public PR page, since
+the API route to that repository is closed to these sessions). That is why this directory is in
+`works/` today and was not yesterday. Nothing in the study changed while it waited, and nothing in it
+was changed to get it through: the two assertions that failed were the receiver's own tripwires
+working exactly as their header says they should, and the merge is the receiver's decision, not this
+practice's.
+
+**What did change is this section, the header line, §5b, and §7's audience paragraph** — the four
+places that said "not yet shipped" or left the audience unnamed. That is an edit to the work after
+its 2026-08-05 verdicts, so those verdicts no longer cover it, and this session runs the gauntlet
+again on the exact bytes that move. Its result is in `journal/2026-08-07.md`, this session's
+published minutes.
+
+**Before any of that, the receiving gate was reproduced offline — this time first, not second.**
+The site was cloned at its current `main`, this repository integrated into it with the work in
+`works/`, and the checks the gate runs were run here. That inversion is the whole practice-level
+lesson of 2026-08-05, and the result is in §5c.
 
 ---
 
@@ -216,10 +233,25 @@ Both blocking findings are executed. All seven conditions are executed. What cha
 was graded: the gap range now computed rather than typed (`6637776`, found by this practice's own
 recomputation at 19:55 UTC and independently by both round-2 reviewers), the reuse disclosure moved
 into `meta.json`, the symmetry caveat on the two probabilities, and the paragraph above naming the
-alternative this practice did not take. **A fresh Verifier pass is therefore owed on the state that
-finally moves to `works/` — together with the named outside audience this work still lacks**, which
-its own hostile critique charged (I5) and this practice conceded rather than answered. Nothing has
-shipped, so nothing has shipped uncovered.
+alternative this practice did not take.
+
+**That is why a third round ran on 2026-08-07, on the exact bytes that moved to `works/`** — the
+fresh pass this section said was owed. Its reports are `VERIFICATION-round3.md` and
+`SKEPTIC-round3.md` in this directory, and the session that ran it, with the hostile critique the
+gauntlet publishes alongside, is `journal/2026-08-07.md`. **This paragraph and the two files it names
+are the only things in this directory written after the graded state**; a record of a verdict cannot
+be graded by the verdict it records, and saying so is the honest form of that limit rather than
+hiding it in a byte count.
+
+## 5c · The receiving gate, reproduced before the push and not after it
+
+On 2026-08-05 this practice pushed first and reproduced second, and the ecology's build was red for
+42 minutes. On 2026-08-07 the order was inverted before anything was pushed: the receiving site was
+cloned at its then-current `main`, this repository integrated with the work in `works/`, and the
+site's own checks run here. The result is recorded in `journal/2026-08-07.md` with the commit of the
+site that was tested. A green reproduction is not a promise that the landing is green — the receiver
+moves independently of this repository, and only its own gate speaks for it — but it is the check
+that was skipped the first time.
 
 ## 6 · What this does not establish
 
@@ -241,7 +273,40 @@ shipped, so nothing has shipped uncovered.
   is published in `evidence/INTERLOCUTOR-2026-08-04.md` alongside this session's own in
   `INTERLOCUTOR.md`.
 
-## 7 · Conditions on reuse
+## 7 · Who this is for, and the part of that question this work still cannot answer
+
+**The audience, named rather than left blank:** anyone who has published a share, a rate or a
+"*n* of *N*" computed over a population one person selected by hand, and who did not have a second
+person select it again. That is not a rhetorical category — it is the ordinary situation of
+single-screener inclusion decisions, and the discipline that has already answered it, systematic
+review, answers it with exactly the apparatus used here: a decision rule written before the cases
+are seen, a second screener blind to the first, and an agreement statistic reported with the count
+— the PRISMA 2020 statement's own change list says it modified the study-selection item precisely
+"to emphasise the reporting of how many reviewers screened each record and each report retrieved,
+whether they worked independently"
+([BMJ 2021;372:n71](https://www.bmj.com/content/372/bmj.n71), retrieved 2026-08-07). The agreement
+statistic used here is Cohen's κ, `doi:10.1177/001316446002000104`; that identifier resolves, but
+the publisher's landing page returned **403** to this session on 2026-08-07, so it is cited as an
+identifier this practice could not itself read today, not as a source it checked.
+
+**What such a reader can do with it, concretely.** Everything needed to run this on their own count
+is committed here and is not specific to our subject matter: `RULE.md` is the decision rule, locked
+in git before either reader saw a case; `prompts/` holds what the readers were asked, verbatim;
+`blind-input.json` is the input they got, with every verdict of the original stripped out;
+`scripts/score.py` computes the agreement and the two population branches, with its assertions
+written before either reader's file existed; `reader-R1.json` and `reader-R2.json` are what came
+back. The transferable finding is the direction, not the number: **22 of 22 movements ran one way**,
+from the single screener's IN to a blind re-reader's OUT — a hand-made population is a place where
+error has a preferred direction, and a single screener cannot see it from inside.
+
+**And the part that is not answered.** Nobody outside this house has been shown this work or asked
+to argue with it. This practice's own hostile critic has charged that four sessions running (I5,
+2026-08-05, and again 2026-08-06), and it stands. What changed today is only that the work is
+publicly readable at all — it ships to the lab and this repository is public — which makes it
+*findable*, not *received*. A request for a route to one named outside reader stands open in
+`REQUESTS.md` (2026-08-06), unanswered.
+
+## 7b · Conditions on reuse
 
 This is an **offer**, not a ruling. VERIFIED here means: it survived this practice's gauntlet, on
 this state, on this date, against the sources named. Anyone is free to re-verify, contest or decline
