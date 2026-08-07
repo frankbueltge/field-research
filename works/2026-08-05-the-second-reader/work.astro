@@ -56,6 +56,28 @@ const pairing = (name: string) => {
   if (!found) throw new Error(`pairing missing from results.json: ${name}`)
   return found
 }
+// Two limits the 2026-08-07 gauntlet required on the page rather than only on its shelf, both
+// counted here from the same committed join, never typed:
+//   (a) how far the two readers' divergences overlap — what a correlated error would look like;
+//   (b) how much of the movement sits on the one category the dispatched prompt named by example
+//       (DEVIATIONS.md D2 — the locked rule gives no example, the prompt does).
+const pubIn = cases.filter((c) => c.published === 'IN')
+const r1OutOfPubIn = pubIn.filter((c) => c.r1.verdict === 'OUT')
+const r2OutOfPubIn = pubIn.filter((c) => c.r2.verdict === 'OUT')
+const r1OutIds = new Set(r1OutOfPubIn.map((c) => c.case_id))
+const r2InsideR1 = r2OutOfPubIn.every((c) => r1OutIds.has(c.case_id))
+const diverges = (r: (c: Case) => Reading) =>
+  new Set(cases.filter((c) => r(c).verdict !== c.published).map((c) => c.case_id))
+const d1 = diverges((c) => c.r1)
+const d2 = diverges((c) => c.r2)
+const divergeOverlap = [...d1].filter((id) => d2.has(id)).length
+// The prompt's illustrative category, matched on the title as the deviations entry matches it.
+const promptWord = /bench|evaluat|audit|suite/i
+const pubInFlagged = pubIn.filter((c) => promptWord.test(c.title)).length
+const movedIds = new Set([...r1OutOfPubIn, ...r2OutOfPubIn].map((c) => c.case_id))
+const movedCases = pubIn.filter((c) => movedIds.has(c.case_id))
+const movedFlagged = movedCases.filter((c) => promptWord.test(c.title)).length
+
 const short = (v: string) => (v === 'UNDECIDABLE' ? '?' : v === 'IN' ? 'IN' : 'OUT')
 const cls = (v: string) => (v === 'IN' ? 'v-in' : v === 'OUT' ? 'v-out' : 'v-und')
 
@@ -291,6 +313,24 @@ const blindHigh = Math.max(...blindCounts)
         They are independent of the builder and of each other; they are not independent of this
         practice, and a correlated error between them would be invisible to this design. What they
         were, and the one thing that cannot be disclosed, is in <code>READER-PROVENANCE.md</code>.
+      </li>
+      <li>
+        <strong>And the correlation is not hypothetical — here is its size.</strong> Within the
+        {pubIn.length} published-IN cases, R2's {r2OutOfPubIn.length} OUT verdicts are
+        {r2InsideR1 ? 'a subset of' : 'not a subset of'} R1's {r1OutOfPubIn.length}; across all
+        {cases.length} cases the two readers disagree with the published split on {d1.size} and
+        {d2.size} cases respectively, and {divergeOverlap} of those are the same case. Two readers
+        who diverge on almost exactly the same cases are what a shared blind spot looks like, and
+        nothing in this design can tell that apart from two readers who are simply both right.
+      </li>
+      <li>
+        <strong>The dispatched prompt named a category the locked rule does not.</strong> Both
+        prompts add an example — a source that is "a general framework or benchmark" — as a
+        candidate for <code>UNDECIDABLE</code>; <code>RULE.md</code> contains no such example.
+        That category is over-represented in the movement: {pubInFlagged} of the {pubIn.length}
+        published-IN titles carry a benchmark/evaluation/audit/suite word, against {movedFlagged}
+        of the {movedCases.length} cases a reader actually moved to OUT. Found on 2026-08-07, two
+        days after the run, and logged as <code>DEVIATIONS.md</code> D2 rather than quietly fixed.
       </li>
       <li>
         <strong>Independence was instructed, not sandboxed.</strong> A wording-overlap check

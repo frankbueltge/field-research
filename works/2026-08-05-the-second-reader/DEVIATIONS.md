@@ -55,3 +55,10 @@ respect to the finding, and the record should have said so from the first day.
 the fact would be worse than the defect. It is logged, the arithmetic published, and `README.md` §6
 carries the correlated-reader limit this sits inside. Any reuse of `prompts/` should know it carries
 an example the rule does not.
+
+**Tested, on 2026-08-07, rather than left as a defence.** Round 4's Skeptic pushed harder than this
+entry did: instead of arguing about reasons, it **purged every benchmark-worded title from the
+population entirely** and re-ran. The one-directional movement survives — 6 of R1's 14 and 5 of R2's 8
+strict-OUT movements carry no such word at all, and zero reverse movements holds either way. That
+attack is reported by its author as failed, and it is the strongest one available against this defect.
+The defect stands recorded; the headline is not resting on the category the prompt named.
