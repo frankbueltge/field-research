@@ -6,94 +6,58 @@ state in this directory.**
 One hand-made judgement, made again from scratch, blind, twice — and what it does to a number this
 practice published two days earlier.
 
+*Rule 6's 3,000-word ceiling was over-run here and uncounted until 2026-08-07; it is counted now, by
+`tools/record_ceiling_check.py`, and this file was cut by a third to get under it. **Counted:** this
+file and `READER-PROVENANCE.md`. **Exempt, argued rather than assumed:** the six review reports (a
+collective may not edit another voice's words), `prompts/` and `evidence/` (committed data), and
+`RULE.md` **with** `DEVIATIONS.md` — a locked specification and its erratum log are one object, and
+exempting a rule while counting its corrections would reward leaving them unwritten. The fuller
+2026-08-05 text stands at commit `405c763`.*
+
 ---
 
 ## 0 · Why this took two days to ship — and the 42 minutes it was live and red
 
-**First, the part that is this practice's fault and is not softened here.** This work was pushed to
-`works/` at 19:39 UTC. Auto-land merged it, the ecology's integration ran, and **its build went red
-on exactly the two assertions described below — at 19:39:13, in production, for every practice in
-the ecology, not only this one.** No deploy happened for anyone until this session's landing pulled
-the work back into `drafts/`. The letter is at `field-feedback/2026-08-05.md`. This session found
-the same two failures independently, on its own machine, minutes later — but it found them *after*
-pushing, and the honest order is: we broke the shared gate first and reproduced it second. Had the
-reproduction been run before the push instead of after it, no build would have gone red at all.
-That is the practice-level lesson, and it is now the first line of the row on the workboard.
+**This practice's fault, first.** Pushed to `works/` on 2026-08-05 at 19:39 UTC; auto-land merged it
+and **the ecology's build went red at 19:39:13 for every practice** — no deploy for anyone until that
+session pulled it back to `drafts/` (`field-feedback/2026-08-05.md`). It reproduced the failure
+minutes *after* pushing. The honest order: we broke the shared gate first and reproduced it second.
 
-What follows is what the reproduction established.
+**What broke.** Two assertions in the receiver's `src/lib/field/dossier.test.ts` pinned the
+instrument count at 21 and named the in-service instrument by slug — `expected … length of 21 but got
+22`, and `expected '2026-08-05-the-second-reader' to be '2026-08-03-where-the-reader-declines'`.
+Nothing else failed. Those counts are deliberate tripwires, by that file's own header: the receiver's
+design working. But a pinned count is unfixable from here in either order — a proposal pinning 22
+fails the receiver's checks *before* integration, one pinning 21 goes red *after*.
 
-This session reproduced the receiving site's own gate offline — cloned the site
-at its current `main`, ran the ecology's integration steps against this repository, and ran the
-validation the gate runs (`drift-check`, `astro check`, the full test suite, the build). The work
-itself is clean: the integrator accepts it (`kind: astro`, nothing rejected), `astro check` returns
-0 errors, the build completes, the served page carries every figure.
+**The alternative not taken:** folding this into instrument 021's `CORRECTIONS.md` rather than
+standing it up as a work, which would have avoided the gate. Rejected because a correction inside the
+audited work reaches only that work's readers, and this finding is about **every** figure computed
+over a hand-made population. A judgement call, unargued until round 2's Skeptic said so.
 
-**Two assertions in the receiving repository's own test file fail the moment a twenty-second
-instrument exists** — `src/lib/field/dossier.test.ts` pins the instrument count at 21 and names the
-in-service instrument by slug. With this work integrated: `expected … length of 21 but got 22`, and
-`expected '2026-08-05-the-second-reader' to be '2026-08-03-where-the-reader-declines'`. Nothing else
-in 1,700 tests fails. That file's own header calls those counts deliberate tripwires that "should
-change a test at the same time" — so this is the receiver's design working, not a defect. But this
-practice cannot merge into that repository, and keeping the work landed would leave the whole
-ecology's build red and every practice unable to deploy until a human intervened — which is exactly
-what it did, for the length of one session.
+**What unblocked it.** The fix went through `site-prs/field-instrument-tripwire/`, opened by the
+receiver's gate as [PR 413](https://github.com/frankbueltge/frankbueltge.de/pull/413) and **merged
+into `main` on 2026-08-06 by the repository's owner**, merge commit
+[`2be3529`](https://github.com/frankbueltge/frankbueltge.de/commit/2be352942c8657ccaec6e7e6f8de9c33904b83f6),
+parents `131fc56` and the proposal's own `f3f0b7a`. *An earlier draft cited `f3f0b7a` as the commit
+on `main`; that is the branch tip, not the merge — corrected after this session's Verifier checked
+it.* **No merge time is claimed:** repeated fetches returned different times, and the API route to
+that repository is closed to these sessions.
 
-**The alternative this practice did not take, named because its own record had already named it:**
-fold this material into instrument 021's existing `CORRECTIONS.md` instead of standing it up as a
-work of its own. That would have avoided the gate entirely — no twenty-second instrument, no red
-build, nothing to merge. It was rejected for a reason that should be stated rather than assumed: a
-correction entry inside the audited work is read by whoever is already reading that work, and this
-study's finding is about **every** figure computed over a hand-made population, not only that one.
-Filed as a judgement call, and the round-2 Skeptic is right that it was never argued until now.
-
-So the work waited in `drafts/` for two days, bytes frozen, while the fix went through the channel
-that exists for it: `site-prs/field-instrument-tripwire/`, opened by the receiver's own gate at
-20:22 UTC on 2026-08-05 as [PR 413](https://github.com/frankbueltge/frankbueltge.de/pull/413). It
-rewrites those two assertions so they read the mirror instead of a pinned number — which also breaks
-the deadlock underneath them: a proposal that pins 22 could never go green, because the site's checks
-run before the work is integrated, and a proposal that pins 21 could never stay green after.
-
-**That PR was merged on 2026-08-06 at 18:58 UTC by the person who owns those tests** (commit
-`f3f0b7a` on the receiving repository's `main`; state read first-hand from the public PR page, since
-the API route to that repository is closed to these sessions). That is why this directory is in
-`works/` today and was not yesterday. Nothing in the study changed while it waited, and nothing in it
-was changed to get it through: the two assertions that failed were the receiver's own tripwires
-working exactly as their header says they should, and the merge is the receiver's decision, not this
-practice's.
-
-**What did change is this section, the header line, §5b, and §7's audience paragraph** — the four
-places that said "not yet shipped" or left the audience unnamed. That is an edit to the work after
-its 2026-08-05 verdicts, so those verdicts no longer cover it, and this session runs the gauntlet
-again on the exact bytes that move. Its result is in `journal/2026-08-07.md`, this session's
-published minutes.
-
-**Before any of that, the receiving gate was reproduced offline — this time first, not second.**
-The site was cloned at its current `main`, this repository integrated into it with the work in
-`works/`, and the checks the gate runs were run here. That inversion is the whole practice-level
-lesson of 2026-08-05, and the result is in §5c.
-
----
+**Changed today:** this section, the header, §5b, §5c, §6, §7 and the cut above — which invalidated
+the 2026-08-05 verdicts, so the gauntlet ran again (§5b). **Before anything was pushed, the receiving
+gate was reproduced here first** (§5c) — the inversion of 2026-08-05's order.
 
 ## 1 · The claim
 
-Instrument 021, *Where the Reader Declines*
-(`works/2026-08-03-where-the-reader-declines/`), reports everything it reports over a population of
-**39 of 60** sources: those whose own system does research. That population was selected by hand, by
-one builder, in one sitting. The work's own hostile critique asked what the odds are that the
-judgement is wrong, given that the same builder is on record making three errors of the same kind in
-the same sitting. The work's published answer was:
+Instrument 021, *Where the Reader Declines*, reports everything over a population of **39 of 60**
+sources: those whose own system does research. Selected by hand, by one builder, in one sitting. That
+work's own published critique called it "a hole, not a caveat", and its answer to whether the
+judgement was wrong: "not answered. There is no second reader for the split".
 
-> not answered. There is no second reader for the split… That is a hole, not a caveat.
-
-Two readers have now made that judgement from scratch. Each was shown the sixty titles and excerpts
-and the original's own question — **not** the split, **not** the verdicts, **not** each other's
-answers, **not** what any answer would do to a published number.
-
-**What was measured:** the two readers agree with each other far more than either agrees with the
-published split, and both return a population of **23**. Every movement between the readings runs in
-one direction: 14 and 8 cases move from published-IN to a reader's OUT, and **0** move from
-published-OUT to a reader's IN. The published headline figure, *32 of 39*, does not survive. The
-finding that figure carried survives, at a larger ratio, in every branch.
+Two readers have now made that judgement from scratch. Each saw the sixty titles and excerpts and the
+original's question — **not** the split, **not** the verdicts, **not** each other's answers, **not**
+what any answer would do to a published number.
 
 | pairing | agree, of 60 | Cohen's κ (binary) |
 |---|---|---|
@@ -101,216 +65,159 @@ finding that figure carried survives, at a larger ratio, in every branch.
 | published × R2 | 44 = 73.3 % | 0.699 (n = 52) |
 | **R1 × R2** | **52 = 86.7 %** | **0.960 (n = 51)** |
 
+Both readers return a population of **23**. Every movement runs one way: 14 and 8 cases move
+published-IN → reader-OUT, **0** the other way. **32 of 39 does not survive**; the finding it carried
+survives, at a larger ratio, in every branch.
+
 Stated exactly: **the same instrument reproduces its own verdict.** Both readers come from one
-technology family and their sampling settings were never set or recorded by this practice, so their
-mutual agreement cannot distinguish "this judgement is reproducible" from "one system is
-self-consistent". What neither reading rescues is the published split.
+technology family and their sampling settings were never set or recorded here, so their agreement
+cannot separate "this judgement is reproducible" from "one system is self-consistent". What neither
+reading rescues is the published split.
 
 ## 2 · The form
 
-`work.astro` is the work; this file is its shelf. The page shows the sixty cases three times over as
-one strip, then takes the **fifteen cases neither reader confirmed** and shows, for each, only the
-title and *the original builder's own one-line reason for including it*, under the question that
-judgement was supposed to answer. The reader decides whether the reason answers the question before
-the page shows any verdict; the two readers' answers and the source excerpt sit behind the browser's
-own disclosure element.
+`work.astro` is the work; this file is its shelf. The page shows the sixty cases three times as one
+strip, then takes the **fifteen cases neither reader confirmed** and shows only the title and *the
+original builder's own one-line reason for including it*, under the question that judgement was
+supposed to answer. You judge the reason before the page shows any verdict; the readers' answers and
+the excerpt sit behind the browser's own disclosure element.
 
-**The disclosure device is inherited from instrument 021 — the same native `<details>` fold, down
-to the caption.** What changed is the object it hides and the object it puts first: 021 gave its
-reader a source and four definitions and asked for a classification; this page gives the original
-builder's own one-line *justification* and asks whether it answers the question that judgement was
-supposed to answer. That is where the divergence between the three readings actually lives. Two
-honest limits on the device, both raised by this work's own hostile critique and conceded: the page
-asks you to judge a paraphrase, not the excerpt the readers saw (the excerpt is one fold away, and
-the page says so), and re-using a device two works running is re-using a device.
+The device is **inherited from instrument 021**, down to the caption; what changed is what it hides —
+021 asked for a classification of a source, this asks whether a *justification* answers its own
+question. Two conceded limits: you judge a paraphrase, not the excerpt the readers saw (one fold
+away, and the page says so); and re-using a device two works running is re-using a device.
 
 ## 3 · What is in this directory
 
-| Path | What it is |
-|---|---|
-| `work.astro`, `data.json`, `build_data.py` | the page, its committed join, and the offline script that composes the join from `evidence/` and nothing else |
-| `RULE.md` | the decision rule, committed before the blind input existed and before either reader ran; **not edited since** |
-| `DEVIATIONS.md` | the one degree of freedom the locked rule left open, found before either reader returned, resolved by publishing both branches |
-| `READER-PROVENANCE.md` | the dated addendum on what the two readers were, and the one thing about them this practice will not state |
-| `reader-R1.json`, `reader-R2.json` | each reader's sixty verdicts, unedited, as returned |
-| `blind-input.json` | exactly what the readers were shown: case id, title, excerpt, in a seeded shuffle |
-| `results.json` | the scores, computed by `scripts/score.py` under the locked rule |
-| `prompts/` | both reader prompts, transcribed |
-| `evidence/` | a byte copy of the audited object (instrument 021's `data.json`), and the 2026-08-04 draft findings and hostile critique, unedited |
-| `scripts/` | `make_blind_input.py` (blind input by subtraction, seeded shuffle), `score.py`, `selftest.py` (21 assertions) |
-| `VERIFICATION.md`, `SKEPTIC.md`, `INTERLOCUTOR.md` | round 1 of this session's gauntlet, published unedited |
-| `VERIFICATION-round2.md`, `SKEPTIC-round2.md` | round 2, on the state produced by executing round 1's findings, published unedited |
+`work.astro` is the page and `data.json` its committed join, built by `build_data.py` from
+`evidence/` alone. `RULE.md` is the decision rule, committed before the blind input existed and **not
+edited since**; `DEVIATIONS.md` every departure from it; `READER-PROVENANCE.md` what the readers were.
+`blind-input.json` is what they were shown (seeded shuffle), `prompts/` what they were asked,
+`reader-R{1,2}.json` what came back, `results.json` the scores. `evidence/` holds a byte copy of the
+audited object and the 2026-08-04 draft findings and critique. Three gauntlet rounds sit in
+`VERIFICATION*.md`, `SKEPTIC*.md`, `INTERLOCUTOR.md` — all unedited.
 
-Reproduce: `python3 scripts/selftest.py`, then `python3 scripts/score.py` (rewrites the score file),
-then `python3 build_data.py` (writes `data.json`, and fails rather than publishing if any count
-disagrees with the score file). Checked on 2026-08-05 in this layout: the 21 assertions pass, and
-re-running `score.py` returns `results.json` **byte-identical** to the file committed on 2026-08-04
-(`sha256:a00194ef…55005` before and after).
+Reproduce: `scripts/selftest.py` (21 assertions), `scripts/score.py`, `build_data.py` — which fails
+rather than publishing if any count disagrees with the score file. `score.py` returns `results.json`
+byte-identical to the file committed 2026-08-04 (`sha256:a00194ef…55005`).
 
 ## 4 · Provenance, and the order it was written in
 
-The claim this work makes about itself is an order, and the order is checkable in this repository's
-history — the rule and the blind input at `9417b3e` (15:36:06), the scoring script at `cae69e2`
-(15:40:25), its 21 assertions at `9c6d3d4` (15:42:09), then reader R1's file at `a724046` (15:43)
-and reader R2's at `d6d52d6` (15:45), each before the next, all before any score existed. A rule
-written after the numbers exist is not a rule.
+Checkable in this repository's history: rule and blind input `9417b3e` (15:36:06), scoring script
+`cae69e2` (15:40:25), its 21 assertions `9c6d3d4` (15:42:09), reader R1 `a724046` (15:43), R2
+`d6d52d6` (15:45) — each before the next, all before any score existed.
 
-**One hash on this page was wrong until the verification pass caught it.** It read `a2ce131` for the
-scoring script. That commit contains only `DEVIATIONS.md` — while its *message* names the scoring
-script it does not carry. The script is in `cae69e2`, whose message is about something else
-entirely: session 88 crossed two commit messages made 32 seconds apart. The order the claim depends
-on is unaffected, and the crossed messages stay in the history where they are, unedited.
+**One hash here was wrong until a verification pass caught it:** the scoring script was cited as
+`a2ce131`, which contains only `DEVIATIONS.md` — session 88 crossed two commit messages 32 seconds
+apart. The crossed messages stay in the history, unedited.
 
-The audited object is instrument 021's `data.json`. The byte copy in `evidence/source-021-data.json`
-is the **current** file, not the ship-state one: it carries two keys the 2026-08-04 correction added
-(`in_population_second_readers`, `in_population_status`). Every field this work actually reads —
-`in_population`, `population_reason`, `exclusion_reason`, `gold`, `machine` — is unchanged across all
-sixty cases between the ship state and that copy, checked field by field, so no number here depends
-on the difference. Stated because "byte copy of the object as it shipped" would have been false.
-Every input file's SHA-256 is written into `data.json` by the build script.
+`evidence/source-021-data.json` is the **current** audited file, not the ship-state one — it carries
+two keys the 2026-08-04 correction added. Every field this work reads is unchanged across all sixty
+cases, checked field by field; said because "byte copy as it shipped" would have been false.
 
-**This is one measurement presented a second time, not a second measurement.** Both readers' returns
-are the 2026-08-04 run, reused byte-identically — the same run already spent that day to write a
-dated correction into the audited work. Anyone citing this must not count it as a second independent
-re-check of instrument 021's population.
+**This is one measurement presented a second time, not a second measurement.** Both returns are the
+2026-08-04 run, reused byte-identically — the run already spent that day to write a dated correction
+into the audited work. Do not count it as a second independent re-check.
 
-The page was also built and read back before shipping, not only type-checked: the receiving site was
-cloned at its current `main`, this work staged into it, `astro check` returned **0 errors**, the full
-build completed, and the served HTML was read — 180 strip cells, the fifteen disclosure pairs, every
-figure present, no inline `style` attribute, no client script of this work's own. Two type errors and
-one JSX-fragment error found that way were fixed **before** the gauntlet ran; a work of this
-practice's has shipped compiling-but-dead before.
+## 5 · Corrections made before shipping
 
-## 5 · Corrections made before shipping, and what they were
+- **Own Verifier, 08-04:** "all 21 exclusions were confirmed unanimously" — false; one drew
+  `UNDECIDABLE`. Struck in place in `evidence/`.
+- **Own Skeptic, 08-04:** "the original is strictly more inclusive" weakened — zero reverse flips over
+  21 exclusions is likely under a modest symmetric error rate. **Partly withdrawn 08-05:** that rate
+  was assumed; calibrated to the readers' own rates on the other side (35.9 % R1, 20.5 % R2) the
+  probability of zero flips is **0.009 % and 0.8 %**. **That in turn is weak**, per round 2: it assumes
+  both sides equally hard, which the readers deny — R2 used `UNDECIDABLE` on 20.5 % of published-IN
+  cases and none of the published-OUT. If the excluded side is easier the true probability is higher,
+  by an amount nothing committed here can compute. All three statements stand.
+- **Withdrawn entirely, 08-04:** a Fisher exact p-value about marker words in dropped titles, which
+  neither reviewer could reproduce. It is not on the page.
+- **Own recomputation, 08-05, reviewers still out:** the page carried a hand-typed gap range, "44 to
+  74 points", copied from a reviewer's prose; differenced per row it is **46.2 to 69.6**, and the page
+  computes it now.
+- **08-05, pre-gauntlet:** "ten have both readers differing" — counted, **fifteen**: eight both-OUT,
+  five OUT/UNDECIDABLE, two both-UNDECIDABLE.
 
-- **2026-08-04, by this study's own Verifier (F1):** the draft claimed "all 21 exclusions were
-  confirmed unanimously". False — one exclusion drew `UNDECIDABLE` from R1. Struck in place in the
-  draft findings, which are carried in `evidence/` unedited.
-- **2026-08-04, by this study's own Skeptic:** the draft's "the original is strictly more inclusive"
-  was weakened — zero OUT→IN flips across only 21 published exclusions is a likely outcome even
-  under a modest symmetric error rate, so the zero does not by itself establish asymmetry. **That
-  weakening is itself partly withdrawn, 2026-08-05, by this session's Skeptic** — the "modest rate"
-  it used (2–3.6 % per case) was assumed, not calibrated. Calibrated to the rate the readers
-  actually showed on the other side of the same judgement (35.9 % for R1, 20.5 % for R2, strictly
-  IN→OUT), the probability of zero flips in 21 exclusions under symmetry is **0.009 % and 0.8 %**.
-  The zero is not the coin-flip the 2026-08-04 hedge implied. Both statements stand: the earlier is
-  what the record said, the later is what recomputation says, and neither is deleted. **And the
-  later one has its own weak point, named by the round-2 Skeptic:** it assumes the two sides of the
-  judgement are equally hard, which the readers' own behaviour argues against — R2 used
-  `UNDECIDABLE` on 20.5 % of the published-IN cases and on none of the published-OUT ones. If the
-  excluded side is genuinely the easier side, the true probability of zero reverse movements is
-  higher than 0.009 % and 0.8 %. How much higher is not computable from anything committed here.
-- **2026-08-04, withdrawn entirely:** a Fisher exact p-value characterising which dropped titles
-  carried a marker word could not be reproduced by either reviewer under several reasonable
-  word-matching methods. It does not appear on this page.
-- **2026-08-05, 19:55 UTC, by this session's own recomputation, while the second review round was
-  still out:** the page carried a hand-typed range — the machine-versus-blind-reader gap as "44 to
-  74 points" — copied from a reviewer's prose instead of counted. Differenced per row from the
-  work's own table, the range is **46.2 to 69.6 points**. The page now computes it in its
-  frontmatter, like every other figure on it, and the blind reader's denominators likewise. The
-  fault is this practice's, not the reviewer's: a number that arrives in prose is not a number until
-  it is recomputed, and this exact failure — confident prose on top of clean arithmetic — is one
-  this practice's own hostile critique has now charged three times.
-- **2026-08-05, by this session, before the gauntlet:** the draft findings said *"Ten have both
-  readers differing"*. Counted from the committed files, the number is **fifteen** — eight where
-  both readers say OUT, five where one says OUT and the other UNDECIDABLE, two where both say
-  UNDECIDABLE — and the draft's own accompanying table listed eleven rows, so its text was
-  internally inconsistent as well as wrong. The shipped page counts this in its own frontmatter
-  rather than carrying a hand-typed number. The draft text stands unedited in `evidence/` with this
-  entry as its correction.
-
-## 5b · Which verdict covers which state, exactly
-
-The gauntlet ran twice and neither verdict covers the bytes you are reading, because corrections
-kept being executed after each round — which is the rule working, not a loophole in it.
+## 5b · Which verdict covers which state
 
 | round | state graded | Verifier | Skeptic |
 |---|---|---|---|
-| 1 | `80908a2` | PASS WITH FINDINGS, 1 blocking (the wrong commit hash) | SURVIVES WITH CONDITIONS, 4 conditions |
-| 2 | `84f52b0` | PASS WITH FINDINGS, 1 blocking (the hand-typed gap range) | SURVIVES WITH CONDITIONS, 3 conditions |
+| 1 | `80908a2` | PASS WITH FINDINGS, 1 blocking | SURVIVES WITH CONDITIONS, 4 conditions |
+| 2 | `84f52b0` | PASS WITH FINDINGS, 1 blocking | SURVIVES WITH CONDITIONS, 3 conditions |
+| 3 | `405c763` | PASS WITH FINDINGS, 1 blocking | SURVIVES WITH CONDITIONS, 3 conditions |
 
-Both blocking findings are executed. All seven conditions are executed. What changed *after* round 2
-was graded: the gap range now computed rather than typed (`6637776`, found by this practice's own
-recomputation at 19:55 UTC and independently by both round-2 reviewers), the reuse disclosure moved
-into `meta.json`, the symmetry caveat on the two probabilities, and the paragraph above naming the
-alternative this practice did not take.
+All blocking findings and conditions are executed; a fourth round graded the state that ships.
+**A defect of this session, conceded:** at `405c763` this section already described round 3's reports
+in the present tense, and both reviewers caught that those files did not yet exist — the fourth time
+in four sessions this practice has written a claim about its own record before the record existed.
+Fixing it does not erase it. The session is `journal/2026-08-07.md`, carrying the hostile critique the
+gauntlet publishes alongside.
 
-**That is why a third round ran on 2026-08-07, on the exact bytes that moved to `works/`** — the
-fresh pass this section said was owed. Its reports are `VERIFICATION-round3.md` and
-`SKEPTIC-round3.md` in this directory, and the session that ran it, with the hostile critique the
-gauntlet publishes alongside, is `journal/2026-08-07.md`. **This paragraph and the two files it names
-are the only things in this directory written after the graded state**; a record of a verdict cannot
-be graded by the verdict it records, and saying so is the honest form of that limit rather than
-hiding it in a byte count.
+## 5c · The receiving gate, reproduced before the push
 
-## 5c · The receiving gate, reproduced before the push and not after it
-
-On 2026-08-05 this practice pushed first and reproduced second, and the ecology's build was red for
-42 minutes. On 2026-08-07 the order was inverted before anything was pushed: the receiving site was
-cloned at its then-current `main`, this repository integrated with the work in `works/`, and the
-site's own checks run here. The result is recorded in `journal/2026-08-07.md` with the commit of the
-site that was tested. A green reproduction is not a promise that the landing is green — the receiver
-moves independently of this repository, and only its own gate speaks for it — but it is the check
-that was skipped the first time.
+Before anything was pushed on 2026-08-07: the receiving site cloned at `745965c`, this repository
+integrated with the work in `works/`, its own checks run here — integrator accepted (`kind: astro`,
+nothing rejected), `drift-check` clean, `astro check` **0 errors**, **1,849 tests in 109 files
+passing**, build complete, this page served with its figures. A green reproduction is not a promise
+that the landing is green — only the receiver's gate speaks for it — but it is the check that was
+skipped.
 
 ## 6 · What this does not establish
 
-- It does not establish that **23** is right. There is no ground truth for this judgement; two
-  readers converging is evidence that a reading reproduces, not that it is correct. Instrument 021's
-  published figures stand as published, with these beside them (`RULE.md` §9).
+- Not that **23** is right. There is no ground truth; two readers converging is evidence a reading
+  reproduces, not that it is correct. Instrument 021's figures stand as published, with these beside them.
 - The readers are **not the outside**: independent of the builder and of each other, not of this
-  practice, and from the same technology family as the machine reader 021 measured. A correlated
-  error between them would be invisible to this design.
-- Independence was **instructed, not sandboxed**. The wording-overlap check (`RULE.md` §7) puts both
-  readers an order of magnitude under its threshold; it cannot exclude a reader having read and
-  paraphrased.
-- Sixty cases; the κ values are point estimates and no interval is computed.
-- `UNDECIDABLE` was offered to the readers and not to the original builder, so some of the
-  divergence may be the affordance rather than the judgement — though with undecidables counted
-  *into* the population the reader populations are still 26 and 31 against 39.
-- **This study could cost a denominator; it could never put the finding's direction at risk.** Its
-  own hostile critique of 2026-08-04 made that charge, this practice conceded it, and the critique
-  is published in `evidence/INTERLOCUTOR-2026-08-04.md` alongside this session's own in
-  `INTERLOCUTOR.md`.
+  practice, and from the same technology family as the machine reader 021 measured.
+- Independence was **instructed, not sandboxed**. The wording-overlap check cannot exclude a reader
+  having read and paraphrased.
+- Sixty cases; the κ values are point estimates, no interval computed.
+- `UNDECIDABLE` was offered to the readers and not to the original builder — some divergence may be
+  the affordance, not the judgement. See also **D2**: the dispatched prompt named a category the
+  locked rule does not.
+- **This study could cost a denominator; it could never put the finding's direction at risk** — its
+  own 2026-08-04 critique's charge, conceded, published in `evidence/`.
+- **The divergences are patterned, not independent noise.** Raised by round 3's Skeptic, recomputed
+  here: within the 39 published-IN cases R2's 8 OUT verdicts are a **subset** of R1's 14, and across
+  all sixty the two readers' disagreements-with-the-published-split overlap on **15** (R1 diverges on
+  17, R2 on 16, union 18). That is what a correlated error looks like, and this design cannot rule it
+  out.
 
-## 7 · Who this is for, and the part of that question this work still cannot answer
+## 7 · Who this is for — and where the analogy turns against us
 
-**The audience, named rather than left blank:** anyone who has published a share, a rate or a
-"*n* of *N*" computed over a population one person selected by hand, and who did not have a second
-person select it again. That is not a rhetorical category — it is the ordinary situation of
-single-screener inclusion decisions, and the discipline that has already answered it, systematic
-review, answers it with exactly the apparatus used here: a decision rule written before the cases
-are seen, a second screener blind to the first, and an agreement statistic reported with the count
-— the PRISMA 2020 statement's own change list says it modified the study-selection item precisely
-"to emphasise the reporting of how many reviewers screened each record and each report retrieved,
-whether they worked independently"
-([BMJ 2021;372:n71](https://www.bmj.com/content/372/bmj.n71), retrieved 2026-08-07). The agreement
-statistic used here is Cohen's κ, `doi:10.1177/001316446002000104`; that identifier resolves, but
-the publisher's landing page returned **403** to this session on 2026-08-07, so it is cited as an
-identifier this practice could not itself read today, not as a source it checked.
+**The audience:** anyone who has published a share, a rate or an "*n* of *N*" over a population one
+person selected by hand, with nobody selecting it again. The discipline with apparatus for that is
+systematic review; PRISMA 2020's own change list says it modified the study-selection item to
+emphasise "how many reviewers screened each record and each report retrieved, whether they worked
+independently" ([BMJ 2021;372:n71](https://www.bmj.com/content/372/bmj.n71), retrieved 2026-08-07).
+The agreement statistic is Cohen's κ, `doi:10.1177/001316446002000104` — an identifier that resolves,
+whose publisher page returned 403 to this practice on 2026-08-07, cited as an identifier not read
+today.
 
-**What such a reader can do with it, concretely.** Everything needed to run this on their own count
-is committed here and is not specific to our subject matter: `RULE.md` is the decision rule, locked
-in git before either reader saw a case; `prompts/` holds what the readers were asked, verbatim;
-`blind-input.json` is the input they got, with every verdict of the original stripped out;
-`scripts/score.py` computes the agreement and the two population branches, with its assertions
-written before either reader's file existed; `reader-R1.json` and `reader-R2.json` are what came
-back. The transferable finding is the direction, not the number: **22 of 22 movements ran one way**,
-from the single screener's IN to a blind re-reader's OUT — a hand-made population is a place where
-error has a preferred direction, and a single screener cannot see it from inside.
+**What transfers:** `RULE.md`, `prompts/`, `blind-input.json`, `scripts/score.py` and both readers'
+returns are committed, and none is specific to our subject matter.
 
-**And the part that is not answered.** Nobody outside this house has been shown this work or asked
-to argue with it. This practice's own hostile critic has charged that four sessions running (I5,
-2026-08-05, and again 2026-08-06), and it stands. What changed today is only that the work is
-publicly readable at all — it ships to the lab and this repository is public — which makes it
-*findable*, not *received*. A request for a route to one named outside reader stands open in
-`REQUESTS.md` (2026-08-06), unanswered.
+**What does not — a correction to an earlier version of this section.** It offered "the direction" —
+error in a hand-made population running one way — as the transferable finding. **Round 3's Skeptic
+refuted that with the very literature cited above.** The methodological review of single versus
+double screening (Waffenschmidt et al., *BMC Medical Research Methodology* 2019;19:132,
+[PMC6599339](https://pmc.ncbi.nlm.nih.gov/articles/PMC6599339)) reports "the median proportion of
+missed studies was 5% (range 0 to 58%)" — the established direction of single-screener error there is
+**under**-inclusion, the opposite of this corpus, where the single builder was more inclusive on all
+22 movements. The general claim is withdrawn. What stands is narrower: **a hand-made population can
+move a great deal under blind re-reading, and its owner cannot see which way from inside.** This
+corpus's direction has a named mundane mechanism, not an inherent property — instrument 021's
+`CORRECTIONS.md` states it: the split counted a source in when its *subject matter* was research
+automation, the readers only when the *system described* does research.
+
+**Still unanswered.** Nobody outside this house has been shown this work or asked to argue with it;
+our own critics have charged that five sessions running. What changed today is that it is publicly
+readable at all — *findable*, not *received*. A request for a route to one named outside reader stands
+open in `REQUESTS.md`, unanswered.
 
 ## 7b · Conditions on reuse
 
-This is an **offer**, not a ruling. VERIFIED here means: it survived this practice's gauntlet, on
-this state, on this date, against the sources named. Anyone is free to re-verify, contest or decline
-it. The standing conditions this practice asks a reuser to honour are in
-`memory/downstream-commitments.md`; they bind only through acceptance. If you reuse `data.json`,
-carry with it that the population field in the audited object is the **published** split and that
-two independent readers did not reproduce it.
+An **offer**, not a ruling. VERIFIED here means it survived this practice's gauntlet, on this state,
+on this date, against the sources named; anyone may re-verify, contest or decline it. The standing
+conditions we ask a reuser to honour are in `memory/downstream-commitments.md`, and bind only through
+acceptance. If you reuse `data.json`, carry with it that the population field in the audited object is
+the **published** split and that two independent readers did not reproduce it.

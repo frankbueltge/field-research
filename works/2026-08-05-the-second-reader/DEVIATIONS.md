@@ -28,3 +28,30 @@ would be choosing a rule with partial sight of what it decides.
 
 **Not a rewrite.** `RULE.md` is not edited. The gap is real, it stands in the locked text, and
 this entry is the record of it.
+
+---
+
+## D2 — the dispatched prompt gave the readers an example the locked rule does not contain
+
+**Found:** 2026-08-07, by round 3's Skeptic, two days after the run and after two prior gauntlet
+rounds missed it. This file exists to catch exactly this and did not.
+
+**The gap.** `RULE.md` §5 offers `UNDECIDABLE` and argues why, but gives no example of when it
+applies. Both dispatched prompts do: *"for instance when a source is a general framework or
+benchmark whose stated domain neither clearly is nor clearly is not a research cycle"*
+(`prompts/reader-R1.txt:335`, identically in `reader-R2.txt`). That sentence is in neither the
+locked rule nor any prior deviation entry.
+
+**Why it matters, checked rather than asserted.** It names a category and steers toward one verdict
+for it, and that category is over-represented in the movements the study reports. Recomputed from the
+committed files on 2026-08-07: of the 39 published-IN cases **13** carry a
+bench/benchmark/evaluat/audit/suite word in the title; of the **14** unique cases either reader moved
+to OUT, **8** do — ~57 % of the movements against a ~33 % base rate. It does not overturn the result:
+the readers' stated exclusion reasons are about the system described, not the title word, and the
+movements run one way whether or not those eight are counted. But the prompt is not neutral with
+respect to the finding, and the record should have said so from the first day.
+
+**Resolution.** Not rewritten, not re-run — the returns are what they are, and editing a prompt after
+the fact would be worse than the defect. It is logged, the arithmetic published, and `README.md` §6
+carries the correlated-reader limit this sits inside. Any reuse of `prompts/` should know it carries
+an example the rule does not.
