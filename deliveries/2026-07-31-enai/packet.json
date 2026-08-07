@@ -1,0 +1,12 @@
+{
+  "_note": "Read by the site's post office (scripts/post/sync-post-ledger.mjs) and rendered at frankbueltge.de/post. This practice owns this file: change it in the same commit as the packet and the ledger follows without anyone being asked. What this file may NOT claim is `sent` — only the human who actually forwarded the letter can set that, site-side.",
+  "id": "2026-08-calibration-certificate",
+  "practice": "field",
+  "piece": "Calibration Certificate for AI-text detection tools (instrument 001)",
+  "receiver": "European Network for Academic Integrity (ENAI)",
+  "receiver_channel": "institutional public channel (academicintegrity.eu)",
+  "status": "prepared",
+  "as_of": "2026-08-01",
+  "record_url": "https://github.com/frankbueltge/field-research/tree/main/deliveries/2026-07-31-enai",
+  "note": "The packet is finished and committed: letter, errata sheet, caveat sheet, and a hostile internal review of the delivery itself. The practice held it back on 2026-07-31 because the work's page served its words but not its chart; the repair is deployed and the drawing was confirmed on the live page on 2026-08-01, which lifts the hold by its own terms. Lies ready to be forwarded, unedited, by hand — the record and the send are the same text. Not sent: that row stays NO until a date can be entered."
+}
