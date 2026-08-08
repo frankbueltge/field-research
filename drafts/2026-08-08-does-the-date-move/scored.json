@@ -1,7 +1,7 @@
 {
- "instrument": "does-the-date-move / increment 1",
- "run_started_utc": "2026-08-08T00:52:35.477413+00:00",
- "run_finished_utc": "2026-08-08T01:06:33.093273+00:00",
+ "instrument": "does-the-date-move / increment 1, run 2 (D1 fixed)",
+ "run_started_utc": "2026-08-08T01:08:50.697717+00:00",
+ "run_finished_utc": "2026-08-08T01:17:58.827236+00:00",
  "coverage": [
   {
    "authority": "EC",
@@ -27,9 +27,9 @@
   {
    "authority": "NIST",
    "url": "https://www.nist.gov/",
-   "observations": 0,
-   "captures_in_window": null,
-   "errors": 1
+   "observations": 3,
+   "captures_in_window": 5000,
+   "errors": 0
   },
   {
    "authority": "NIST",
@@ -84,78 +84,90 @@
  "per_authority": {
   "EC": {
    "scored": 31,
-   "SUBSTANTIVE": 27,
-   "v_unscorable": 19,
+   "IDENTICAL": 7,
+   "v_IDENTICAL_STILL": 7,
    "h_MOVED": 31,
-   "h_SUBSTANTIVE_MOVED": 27,
-   "IDENTICAL": 4,
-   "v_IDENTICAL_STILL": 4,
-   "h_IDENTICAL_MOVED": 4,
+   "h_IDENTICAL_MOVED": 7,
+   "SUBSTANTIVE": 23,
+   "v_SUBSTANTIVE_STILL": 6,
+   "h_SUBSTANTIVE_MOVED": 23,
+   "TRIVIAL": 1,
+   "v_TRIVIAL_STILL": 1,
+   "h_TRIVIAL_MOVED": 1,
+   "v_unscorable": 7,
    "dropped": 2,
-   "v_SUBSTANTIVE_MOVED": 6,
-   "v_SUBSTANTIVE_STILL": 2
+   "v_SUBSTANTIVE_MOVED": 10
   },
   "NIST": {
-   "dropped": 11,
-   "scored": 22,
-   "SUBSTANTIVE": 22,
-   "v_unscorable": 22,
-   "h_MOVED": 22,
-   "h_SUBSTANTIVE_MOVED": 22
+   "scored": 24,
+   "SUBSTANTIVE": 21,
+   "v_SUBSTANTIVE_MOVED": 16,
+   "h_MOVED": 24,
+   "h_SUBSTANTIVE_MOVED": 21,
+   "dropped": 9,
+   "v_SUBSTANTIVE_STILL": 5,
+   "TRIVIAL": 3,
+   "v_TRIVIAL_STILL": 3,
+   "h_TRIVIAL_MOVED": 3
   },
   "GOVUK": {
    "scored": 13,
-   "SUBSTANTIVE": 13,
-   "v_unscorable": 13,
+   "SUBSTANTIVE": 11,
+   "v_SUBSTANTIVE_MOVED": 10,
    "h_unscorable": 13,
-   "dropped": 20
+   "v_SUBSTANTIVE_STILL": 1,
+   "dropped": 20,
+   "TRIVIAL": 2,
+   "v_TRIVIAL_STILL": 2
   },
   "IE": {
    "dropped": 19,
    "scored": 3,
-   "SUBSTANTIVE": 3,
-   "v_unscorable": 3,
-   "h_unscorable": 3
+   "TRIVIAL": 1,
+   "v_TRIVIAL_STILL": 1,
+   "h_unscorable": 3,
+   "IDENTICAL": 2,
+   "v_IDENTICAL_STILL": 2
   }
  },
  "ratio_distribution": {
-  "n": 69,
-  "exactly_1.0": 4,
-  "ge_0.98_lt_1.0": 0,
-  "lt_0.98": 65,
+  "n": 71,
+  "exactly_1.0": 9,
+  "ge_0.98_lt_1.0": 7,
+  "lt_0.98": 55,
   "deciles": [
-   0.0036,
-   0.007,
-   0.0094,
-   0.0147,
-   0.0224,
-   0.0307,
-   0.0509,
-   0.0715,
-   0.4151,
-   0.877
+   0.171,
+   0.5864,
+   0.6607,
+   0.7339,
+   0.7694,
+   0.83,
+   0.877,
+   0.9352,
+   0.9929,
+   1.0
   ]
  },
  "P1": {
   "statement": "V fails to move in >50% of SUBSTANTIVE V-scorable pairs on >=1 authority",
   "per_authority": {
    "EC": {
-    "substantive_scorable_for_v": 8,
-    "v_still": 2,
-    "v_moved": 6,
-    "share_still": 0.25
+    "substantive_scorable_for_v": 16,
+    "v_still": 6,
+    "v_moved": 10,
+    "share_still": 0.375
    },
    "NIST": {
-    "substantive_scorable_for_v": 0,
-    "v_still": 0,
-    "v_moved": 0,
-    "share_still": null
+    "substantive_scorable_for_v": 21,
+    "v_still": 5,
+    "v_moved": 16,
+    "share_still": 0.2381
    },
    "GOVUK": {
-    "substantive_scorable_for_v": 0,
-    "v_still": 0,
-    "v_moved": 0,
-    "share_still": null
+    "substantive_scorable_for_v": 11,
+    "v_still": 1,
+    "v_moved": 10,
+    "share_still": 0.0909
    },
    "IE": {
     "substantive_scorable_for_v": 0,
@@ -172,8 +184,8 @@
   "ec_pairs_scorable_for_h": 31,
   "h_moved": 31,
   "share_moved": 1.0,
-  "h_moved_where_text_identical": 4,
-  "text_identical_scorable_for_h": 4,
+  "h_moved_where_text_identical": 7,
+  "text_identical_scorable_for_h": 7,
   "verdict": "HELD"
  },
  "P3": {
@@ -184,12 +196,36 @@
  },
  "P4": {
   "statement": "adjacent CDX digests differ in >=90% of pairs (confirmatory)",
-  "adjacent_pairs": 3094,
-  "digest_differs": 3079,
-  "share": 0.9952,
+  "adjacent_pairs": 8093,
+  "digest_differs": 8073,
+  "share": 0.9975,
   "verdict": "HELD"
  },
  "silent_change_cases": [
+  {
+   "authority": "EC",
+   "url": "https://digital-strategy.ec.europa.eu/en/policies",
+   "from": "2026-03",
+   "to": "2026-04",
+   "ratio": 0.859808,
+   "v": "2025-05-22T00:00:00+00:00"
+  },
+  {
+   "authority": "EC",
+   "url": "https://digital-strategy.ec.europa.eu/en/policies",
+   "from": "2026-04",
+   "to": "2026-05",
+   "ratio": 0.946871,
+   "v": "2025-05-22T00:00:00+00:00"
+  },
+  {
+   "authority": "EC",
+   "url": "https://digital-strategy.ec.europa.eu/en/policies",
+   "from": "2026-05",
+   "to": "2026-06",
+   "ratio": 0.868592,
+   "v": "2025-05-22T00:00:00+00:00"
+  },
   {
    "authority": "EC",
    "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
@@ -205,7 +241,63 @@
    "to": "2026-03",
    "ratio": 0.978551,
    "v": "2026-01-14T00:00:00+00:00"
+  },
+  {
+   "authority": "EC",
+   "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+   "from": "2026-06",
+   "to": "2026-07",
+   "ratio": 0.953451,
+   "v": "2026-06-01T00:00:00+00:00"
+  },
+  {
+   "authority": "NIST",
+   "url": "https://www.nist.gov/publications",
+   "from": "2025-10",
+   "to": "2025-11",
+   "ratio": 0.8921,
+   "v": "2025-12-31T12:00:00+00:00"
+  },
+  {
+   "authority": "NIST",
+   "url": "https://www.nist.gov/publications",
+   "from": "2026-01",
+   "to": "2026-02",
+   "ratio": 0.830017,
+   "v": "2026-04-21T12:00:00+00:00"
+  },
+  {
+   "authority": "NIST",
+   "url": "https://www.nist.gov/publications",
+   "from": "2026-02",
+   "to": "2026-03",
+   "ratio": 0.806539,
+   "v": "2026-04-21T12:00:00+00:00"
+  },
+  {
+   "authority": "NIST",
+   "url": "https://www.nist.gov/publications",
+   "from": "2026-04",
+   "to": "2026-05",
+   "ratio": 0.769433,
+   "v": "2026-06-30T12:00:00+00:00"
+  },
+  {
+   "authority": "NIST",
+   "url": "https://www.nist.gov/publications",
+   "from": "2026-05",
+   "to": "2026-06",
+   "ratio": 0.709038,
+   "v": "2026-06-30T12:00:00+00:00"
+  },
+  {
+   "authority": "GOVUK",
+   "url": "https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology",
+   "from": "2026-06",
+   "to": "2026-07",
+   "ratio": 0.678288,
+   "v": "2026-06-15T00:00:00+00:00"
   }
  ],
- "silent_change_total": 2
+ "silent_change_total": 12
 }

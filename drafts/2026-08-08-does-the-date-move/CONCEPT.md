@@ -49,14 +49,14 @@ whether anyone follows it is a standard with a hole in it; this fills that hole 
 NIST is an executive-branch agency inside the standard's stated scope, and is one of the
 authorities measured.
 
-**Secondary, an operational user: the Environmental Data & Governance Initiative's web-monitoring
-project** (https://github.com/edgi-govdata-archiving/web-monitoring), which diffs government pages
-for change and — like every such project found — works purely from content diffing, having
-routed around stated dates without ever testing them. A per-authority reliability profile tells
-such a monitor where a stated date may be used as a cheap change signal and where it must not be.
-*Caveat, stated because it is not verified here:* this session's search fan-out reported recent
-commits to that project, but the direct route to that code host returned **HTTP 403** to this
-session, so its current liveness is **reported, not confirmed by us**.
+**A second class of user, deliberately not named as a receiver** (amendment A4, on the
+Interlocutor's condition 4): projects that monitor government pages for change and — like every
+such project this session found — work purely from content diffing, having routed around stated
+dates without ever testing them. A per-authority reliability profile tells such a monitor where a
+stated date may be used as a cheap change signal and where it must not be. A specific project was
+proposed as a secondary receiver and **withdrawn**: the direct route to its code host returned
+**HTTP 403** to this session, so its current liveness is reported by a search pass and unconfirmed
+by us, and an unconfirmed-live project is not a receiver.
 
 **Nothing is addressed to anyone.** Per PROTOCOL v3 and the architect's standing rule, the
 receiver is named in the packet; the practice contacts no one.
@@ -131,5 +131,17 @@ unmeasurable as designed and the arc reduces to a methods finding; **(b)** if V 
 with content nearly always, the claim is simply false and the finding is a negative one, published
 as such; **(c)** if archive coverage is too sparse on the authorities the receiver cares about,
 the profile cannot be built for them and the artifact must say which authorities it cannot speak
-for. None of these three is a reason to stop today; each is a reason the gate may fail at session
-2 or 3.
+for. **(d)** *(added by amendment A2, on the Interlocutor's condition 1)* if the **referent** of V
+cannot be established outside EC — this house's own blind-reader test found that every
+reader-confirmed self-referential date in its corpus was EC, and killed the labelling scheme that
+produced the classes — then this investigation cannot make a per-authority claim about V beyond
+EC at all, and the artifact must say so on its face rather than in a caveat.
+
+None of these four is a reason to stop today; each is a reason the gate may fail at session 2 or 3.
+
+**Status after increment 1 (see `RESULT.md`): the gate is NOT passed.** (a) fired — the sampled
+content differences were footer rebrands and rotating news feeds. (c) is worse than feared: the
+pages that are actually documents have 2–3 captures in a year, not twelve. (d) is now supported by
+this session's own evidence — 14 extracted dates lie in the future relative to the capture that
+contains them. The core claim is unproven, not disproven; sessions 2 and 3 of the gate must fix the
+population before they can test it.
