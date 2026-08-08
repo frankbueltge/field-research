@@ -1,0 +1,211 @@
+{
+ "instrument": "does-the-date-move / increment 1",
+ "run_started_utc": "2026-08-08T00:52:35.477413+00:00",
+ "run_finished_utc": "2026-08-08T01:06:33.093273+00:00",
+ "coverage": [
+  {
+   "authority": "EC",
+   "url": "https://digital-strategy.ec.europa.eu/en/policies",
+   "observations": 12,
+   "captures_in_window": 42,
+   "errors": 0
+  },
+  {
+   "authority": "EC",
+   "url": "https://digital-strategy.ec.europa.eu/en/events",
+   "observations": 11,
+   "captures_in_window": 38,
+   "errors": 0
+  },
+  {
+   "authority": "EC",
+   "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+   "observations": 12,
+   "captures_in_window": 325,
+   "errors": 0
+  },
+  {
+   "authority": "NIST",
+   "url": "https://www.nist.gov/",
+   "observations": 0,
+   "captures_in_window": null,
+   "errors": 1
+  },
+  {
+   "authority": "NIST",
+   "url": "https://www.nist.gov/publications",
+   "observations": 12,
+   "captures_in_window": 733,
+   "errors": 0
+  },
+  {
+   "authority": "NIST",
+   "url": "https://www.nist.gov/cybersecurity-and-privacy",
+   "observations": 12,
+   "captures_in_window": 779,
+   "errors": 0
+  },
+  {
+   "authority": "GOVUK",
+   "url": "https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology",
+   "observations": 12,
+   "captures_in_window": 1172,
+   "errors": 0
+  },
+  {
+   "authority": "GOVUK",
+   "url": "https://www.gov.uk/government/publications/ai-security-institute-frontier-ai-trends-report-factsheet",
+   "observations": 2,
+   "captures_in_window": 2,
+   "errors": 0
+  },
+  {
+   "authority": "GOVUK",
+   "url": "https://www.gov.uk/government/publications/secure-ai-infrastructure-call-for-information",
+   "observations": 3,
+   "captures_in_window": 3,
+   "errors": 0
+  },
+  {
+   "authority": "IE",
+   "url": "https://enterprise.gov.ie/en/publications/ireland-in-the-digital-decade.html",
+   "observations": 1,
+   "captures_in_window": 2,
+   "errors": 0
+  },
+  {
+   "authority": "IE",
+   "url": "https://enterprise.gov.ie/en/what-we-do/innovation-research-development/european-space-agency",
+   "observations": 7,
+   "captures_in_window": 8,
+   "errors": 0
+  }
+ ],
+ "per_authority": {
+  "EC": {
+   "scored": 31,
+   "SUBSTANTIVE": 27,
+   "v_unscorable": 19,
+   "h_MOVED": 31,
+   "h_SUBSTANTIVE_MOVED": 27,
+   "IDENTICAL": 4,
+   "v_IDENTICAL_STILL": 4,
+   "h_IDENTICAL_MOVED": 4,
+   "dropped": 2,
+   "v_SUBSTANTIVE_MOVED": 6,
+   "v_SUBSTANTIVE_STILL": 2
+  },
+  "NIST": {
+   "dropped": 11,
+   "scored": 22,
+   "SUBSTANTIVE": 22,
+   "v_unscorable": 22,
+   "h_MOVED": 22,
+   "h_SUBSTANTIVE_MOVED": 22
+  },
+  "GOVUK": {
+   "scored": 13,
+   "SUBSTANTIVE": 13,
+   "v_unscorable": 13,
+   "h_unscorable": 13,
+   "dropped": 20
+  },
+  "IE": {
+   "dropped": 19,
+   "scored": 3,
+   "SUBSTANTIVE": 3,
+   "v_unscorable": 3,
+   "h_unscorable": 3
+  }
+ },
+ "ratio_distribution": {
+  "n": 69,
+  "exactly_1.0": 4,
+  "ge_0.98_lt_1.0": 0,
+  "lt_0.98": 65,
+  "deciles": [
+   0.0036,
+   0.007,
+   0.0094,
+   0.0147,
+   0.0224,
+   0.0307,
+   0.0509,
+   0.0715,
+   0.4151,
+   0.877
+  ]
+ },
+ "P1": {
+  "statement": "V fails to move in >50% of SUBSTANTIVE V-scorable pairs on >=1 authority",
+  "per_authority": {
+   "EC": {
+    "substantive_scorable_for_v": 8,
+    "v_still": 2,
+    "v_moved": 6,
+    "share_still": 0.25
+   },
+   "NIST": {
+    "substantive_scorable_for_v": 0,
+    "v_still": 0,
+    "v_moved": 0,
+    "share_still": null
+   },
+   "GOVUK": {
+    "substantive_scorable_for_v": 0,
+    "v_still": 0,
+    "v_moved": 0,
+    "share_still": null
+   },
+   "IE": {
+    "substantive_scorable_for_v": 0,
+    "v_still": 0,
+    "v_moved": 0,
+    "share_still": null
+   }
+  },
+  "authorities_meeting_it": [],
+  "verdict": "NOT HELD"
+ },
+ "P2": {
+  "statement": "EC: H moves in >=90% of H-scorable pairs",
+  "ec_pairs_scorable_for_h": 31,
+  "h_moved": 31,
+  "share_moved": 1.0,
+  "h_moved_where_text_identical": 4,
+  "text_identical_scorable_for_h": 4,
+  "verdict": "HELD"
+ },
+ "P3": {
+  "statement": "at least one IDENTICAL pair where V moved",
+  "count": 0,
+  "cases": [],
+  "verdict": "NOT HELD"
+ },
+ "P4": {
+  "statement": "adjacent CDX digests differ in >=90% of pairs (confirmatory)",
+  "adjacent_pairs": 3094,
+  "digest_differs": 3079,
+  "share": 0.9952,
+  "verdict": "HELD"
+ },
+ "silent_change_cases": [
+  {
+   "authority": "EC",
+   "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+   "from": "2026-01",
+   "to": "2026-02",
+   "ratio": 0.958701,
+   "v": "2026-01-14T00:00:00+00:00"
+  },
+  {
+   "authority": "EC",
+   "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+   "from": "2026-02",
+   "to": "2026-03",
+   "ratio": 0.978551,
+   "v": "2026-01-14T00:00:00+00:00"
+  }
+ ],
+ "silent_change_total": 2
+}

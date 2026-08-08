@@ -4,7 +4,7 @@ Monthly observations of archived captures; per observation: normalised text hash
 visible date V (extractor reused unmodified from the 'As of Today' line), and the
 origin's own Last-Modified as preserved by the archive (x-archive-orig-last-modified).
 """
-import json, re, sys, time, hashlib, difflib, datetime as dt
+import json, re, sys, time, gzip, zlib, hashlib, difflib, datetime as dt
 import urllib.request, urllib.parse, urllib.error
 
 sys.path.insert(0, "/home/user/field-research/drafts/2026-08-06-as-of-today")
@@ -16,13 +16,37 @@ MONTHS = [(2025, m) for m in range(8, 13)] + [(2026, m) for m in range(1, 8)]  #
 HEXTOK = re.compile(r"\b[0-9a-fA-F]{16,}\b")
 
 
+def decode_body(raw: bytes, enc: str | None) -> tuple[bytes, str]:
+    """D1 fix. The archive replays the ORIGINAL payload, so a capture the origin served
+    gzipped arrives gzipped and no client library unpacks it for us. Run 1 hashed those
+    compressed bytes as if they were text. Detect by magic bytes, not by trusting the header."""
+    if raw[:2] == b"\x1f\x8b":
+        try:
+            return gzip.decompress(raw), "gzip"
+        except Exception:                           # noqa: BLE001
+            return raw, "gzip-FAILED"
+    if enc and "deflate" in enc.lower():
+        for wbits in (-15, 15):
+            try:
+                return zlib.decompress(raw, wbits), "deflate"
+            except Exception:                       # noqa: BLE001
+                continue
+        return raw, "deflate-FAILED"
+    if enc and "br" in enc.lower().split(","):
+        return raw, "br-UNSUPPORTED"
+    return raw, "identity"
+
+
 def get(url, timeout=90, tries=3):
     last = None
     for i in range(tries):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": UA})
             with urllib.request.urlopen(req, timeout=timeout) as r:
-                return r.status, r.read(), {k.lower(): v for k, v in r.headers.items()}
+                hdr = {k.lower(): v for k, v in r.headers.items()}
+                body, how = decode_body(r.read(), hdr.get("content-encoding"))
+                hdr["_decoded_as"] = how
+                return r.status, body, hdr
         except Exception as e:                      # noqa: BLE001 - recorded, never silently swallowed
             last = e
             time.sleep(4 * (i + 1))
@@ -67,6 +91,7 @@ def observe(url, cap):
         "h_raw": hdr.get("x-archive-orig-last-modified"),
         "v_raw": v["v_raw"], "v": normalise_v(v["v_raw"]), "v_rule": v["v_rule"],
         "text_sha256": hashlib.sha256(t.encode()).hexdigest(), "text_len": len(t),
+        "decoded_as": hdr.get("_decoded_as"),
         "_text": t,
     }
 
@@ -78,7 +103,7 @@ def main():
     for a, n in (("NIST", 3), ("GOVUK", 3), ("IE", 2)):
         pop += [(a, r["url"]) for r in sig2["authorities"][a]["rows"] if r.get("v")][:n]
 
-    out = {"instrument": "does-the-date-move / increment 1",
+    out = {"instrument": "does-the-date-move / increment 1, run 2 (D1 fixed)",
            "preregistration": "PREREGISTRATION.md, committed before this file existed",
            "run_started_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
            "months": [f"{y:04d}-{m:02d}" for y, m in MONTHS], "urls": []}
