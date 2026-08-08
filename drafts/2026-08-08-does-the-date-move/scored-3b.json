@@ -1,0 +1,341 @@
+{
+ "fetch_date_utc": "2026-08-08",
+ "authorities": {
+  "nist": {
+   "measured_with_date": 79,
+   "sampled": 80,
+   "distinct_values": 14,
+   "distinct_value_ratio": 0.1772,
+   "modal_value": "2017-02-19",
+   "modal_n": 24,
+   "modal_share": 0.3038,
+   "top5": [
+    [
+     "2017-02-19",
+     24
+    ],
+    [
+     "2018-11-10",
+     22
+    ],
+    [
+     "2021-10-12",
+     13
+    ],
+    [
+     "2026-05-07",
+     8
+    ],
+    [
+     "2020-01-27",
+     2
+    ]
+   ],
+   "cross_year_sharing": 0.8734,
+   "cross_year_n": 69,
+   "v_updated_in_future": 0,
+   "v_updated_before_published": 0,
+   "validity_violation_share": 0.0,
+   "published_year_range": [
+    "1982",
+    "1990",
+    "1992",
+    "1993",
+    "1996",
+    "1997",
+    "1998",
+    "2001",
+    "2002",
+    "2003",
+    "2005",
+    "2007",
+    "2008",
+    "2010",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015"
+   ]
+  },
+  "epa": {
+   "measured_with_date": 80,
+   "sampled": 80,
+   "distinct_values": 61,
+   "distinct_value_ratio": 0.7625,
+   "modal_value": "2024-02-20",
+   "modal_n": 3,
+   "modal_share": 0.0375,
+   "top5": [
+    [
+     "2024-02-20",
+     3
+    ],
+    [
+     "2023-08-22",
+     3
+    ],
+    [
+     "2022-11-09",
+     3
+    ],
+    [
+     "2024-02-21",
+     3
+    ],
+    [
+     "2023-10-30",
+     2
+    ]
+   ],
+   "cross_year_sharing": 0.1125,
+   "cross_year_n": 9,
+   "v_updated_in_future": 0,
+   "v_updated_before_published": 0,
+   "validity_violation_share": 0.0,
+   "published_year_range": [
+    "2019",
+    "2020",
+    "2021"
+   ]
+  },
+  "govuk": {
+   "measured_with_date": 80,
+   "sampled": 80,
+   "distinct_values": 69,
+   "distinct_value_ratio": 0.8625,
+   "modal_value": "2026-07-20",
+   "modal_n": 3,
+   "modal_share": 0.0375,
+   "top5": [
+    [
+     "2026-07-20",
+     3
+    ],
+    [
+     "2026-05-20",
+     2
+    ],
+    [
+     "2026-07-27",
+     2
+    ],
+    [
+     "2026-07-29",
+     2
+    ],
+    [
+     "2026-08-03",
+     2
+    ]
+   ],
+   "cross_year_sharing": 0.2125,
+   "cross_year_n": 17,
+   "v_updated_in_future": 0,
+   "v_updated_before_published": 0,
+   "validity_violation_share": 0.0,
+   "published_year_range": [
+    "2003",
+    "2006",
+    "2007",
+    "2008",
+    "2009",
+    "2011",
+    "2012",
+    "2013",
+    "2014",
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026"
+   ]
+  }
+ },
+ "predictions": {
+  "Q1 EPA cross-year sharing >= 50%": {
+   "value": 0.1125,
+   "threshold": 0.5,
+   "verdict": "NOT HELD"
+  },
+  "Q2 EPA modal share >= 20%": {
+   "value": 0.0375,
+   "threshold": 0.2,
+   "verdict": "NOT HELD"
+  },
+  "Q3 NIST cross-year sharing >= 40%": {
+   "value": 0.8734,
+   "threshold": 0.4,
+   "verdict": "HELD"
+  },
+  "Q4 distinct-value ratio < 0.6 on NIST and EPA": {
+   "nist": 0.1772,
+   "epa": 0.7625,
+   "threshold": 0.6,
+   "verdict": "NOT HELD"
+  },
+  "Q5 control: GOV.UK ratio > 0.8 and modal share < 10%": {
+   "ratio": 0.8625,
+   "modal_share": 0.0375,
+   "verdict": "HELD"
+  },
+  "Q6 validity violations < 2%": {
+   "nist": 0.0,
+   "epa": 0.0,
+   "govuk": 0.0,
+   "threshold": 0.02,
+   "verdict": "HELD"
+  },
+  "Q7 falsifier: date is document-specific on NIST and EPA": {
+   "verdict": "did not fire"
+  }
+ },
+ "largest_cluster_members": {
+  "nist": [
+   {
+    "url": "https://www.nist.gov/publications/alternative-analyses-measurements-planck-constant",
+    "v_published": "2012-07-05",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/application-quantitative-cavity-ring-down-spectroscopy-measruements-line-shapes-and",
+    "v_published": "2002-06-07",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/basing-cybersecurity-training-user-perceptions",
+    "v_published": "2012-04-02",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/broadband-noise-limit-photodetection-ultralow-jitter-optical-pulses",
+    "v_published": "2014-11-14",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/characterization-wafer-diode-noise-sources",
+    "v_published": "1998-06-01",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/determination-cd-cr-and-hg-srm-2584-trace-elements-indoor-dust-high-resolution",
+    "v_published": "2001-08-01",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/dimensional-metrology-lab-chip-internal-structures-comparison-optical-coherence",
+    "v_published": "2015-04-08",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/exponential-scaling-clock-stability-atom-number",
+    "v_published": "2015-03-28",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/general-security-requirements-equipment-using-data-encryption-standard",
+    "v_published": "1982-04-14",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/guidelines-cell-phone-and-pda-security",
+    "v_published": "2008-11-03",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/line-monitoring-osnrcdpmd-degradation-effects-using-neural-network-based-training",
+    "v_published": "2008-09-01",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/mapping-trends-reorientational-mobilities-tetrahydroborate-anions-neutron-scattering",
+    "v_published": "2013-12-15",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/nanomanufacturing-concerns-about-measurements-made-sem-part-iii-vibration-and-drift",
+    "v_published": "2014-12-01",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/proficiency-testing-pressure-calibration-national-voluntary-laboratory-accreditation",
+    "v_published": "2013-12-03",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/prototyping-sp4-secure-data-network-system-transport-protocol-interoperability",
+    "v_published": "1990-01-01",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/recommendation-triple-data-encryption-algorithm-tdea-block-cipher",
+    "v_published": "2012-01-23",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/red-color-19th-century-thai-glass-studied-x-ray-and-optical-spectroscopy",
+    "v_published": "2014-07-02",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/report-tmach-experiment",
+    "v_published": "1997-07-01",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/shrec-2014-track-automatic-location-landmarks-used-manual-anthropometry",
+    "v_published": "2014-06-12",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/testing-model-checker-insuring-fault-visibility",
+    "v_published": "2003-01-05",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/tunable-stable-source-femtosecond-pulses-near-2-ym-supercontinuum-erbium-mode-locked",
+    "v_published": "2014-11-07",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/two-svds-su14ffice-spectral-decompositions-probabilistic-topic-modeling-and-latent",
+    "v_published": "2012-12-06",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/users-guide-running-draft-nist-sp-800-90b-section-9-entropy-estimation-tests",
+    "v_published": "2015-03-10",
+    "v_updated": "2017-02-19"
+   },
+   {
+    "url": "https://www.nist.gov/publications/xforms-user-interfaces-small-arcane-nontrivial-datasets",
+    "v_published": "2014-08-11",
+    "v_updated": "2017-02-19"
+   }
+  ],
+  "epa": [
+   {
+    "url": "https://www.epa.gov/newsreleases/administrator-wheeler-wraps-visit-mississippi-highlights-agriculture-partnership",
+    "v_published": "2021-01-11",
+    "v_updated": "2024-02-20"
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/newly-released-epa-plan-will-aid-salmon-survival-columbia-river",
+    "v_published": "2021-01-07",
+    "v_updated": "2024-02-20"
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/springfield-mass-organization-invited-apply-epa-wifia-loan-improve-water-quality",
+    "v_published": "2021-01-12",
+    "v_updated": "2024-02-20"
+   }
+  ]
+ }
+}

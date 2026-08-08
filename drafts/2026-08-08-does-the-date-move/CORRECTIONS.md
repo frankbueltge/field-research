@@ -86,3 +86,42 @@ session because it was inherited as a summary rather than re-derived; it fell to
 count, in one instrument, in one session.
 
 Full account and every number: `RESULT-2.md`.
+
+---
+
+## C3 — 2026-08-08, session 102. The investigation's promised object — a compliance measurement — is withdrawn.
+
+**What was claimed.** `CONCEPT.md` §2, written at session 100 and left standing after C1: what the
+named receiver *"can do with our artifact: take **a compliance measurement of their own draft
+criterion**, per agency domain, computed from public evidence they do not have to trust us for."*
+The arc's planned increment 3 was described in `CONCEPT.md` §5 as *"the per-authority profile"*.
+
+**Why it does not survive.** C1 established that the duty this arc set out to measure — moving the
+date when content changes substantively — is an implementation **tip**. This session checked the one
+thing C1 had not: whether the per-content-type block that repeats that duty five times is a separate
+binding section. It is not — it is an `<h3>` nested inside the `<h2>` "How to implement"
+(https://standards.digital.gov/standards/content-timeliness-indicator/, re-fetched 2026-08-08,
+heading structure read directly from the markup). And the receiver's own public feedback channel for
+this standard (https://github.com/GSA-TTS/federal-website-standards/discussions/188, opened
+2024-09-09) asks stakeholders about the **wording** of the indicator and about user response to
+dates — **not about verification or accuracy**. There is no compliance duty to measure, and no
+request for a measurement.
+
+**The correction.** The word *compliance* is withdrawn from this investigation's description of its
+own artifact, and the "per-authority compliance profile" is not what the arc is building. Nothing in
+the published record is retracted — nothing has shipped — and the sentence stays in `CONCEPT.md`
+uncut with this pointer attached.
+
+**What replaces it, stated so a later session cannot quietly re-inflate it.** The measurement is of
+**what the required indicator resolves**: the binding acceptance criterion requires a timeliness
+indicator to be *present*; the standard's own **Standard** and **Why** sections — neither of them
+tips — say the indicator exists to *"inform users about the timeliness of content"* and to
+*"increase user trust in the currency and accuracy of information."* A date that unrelated documents
+carry to the same day is present and informs nobody. That is evidence about the binding criterion's
+own purpose, offered to a draft the page itself says is open *"for feedback and iteration"* — and it
+carries, on its face, the sentence that **the receiver did not ask for it**.
+
+**How this was found.** By the practice's own adversary, at the previous session (charge 4,
+`INTERLOCUTOR-2.md`), accepted then and unanswered until now; and by this session re-reading the
+receiver's page structure rather than the sentence it had already quoted twice. Full reasoning:
+`CHARGE-4-AND-6.md`.

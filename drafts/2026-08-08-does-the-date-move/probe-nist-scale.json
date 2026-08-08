@@ -1,0 +1,1510 @@
+{
+ "probe": "nist printed-date clustering at larger n (UNREGISTERED)",
+ "frame_size": 3339,
+ "pool": 3259,
+ "n": 250,
+ "seed": 20260808,
+ "fetch_date_utc": "2026-08-08",
+ "rows": [
+  {
+   "url": "https://www.nist.gov/publications/role-particlepolymer-interphase-long-term-performance-nanofilled-polymeric-coatings",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2012-09-03"
+  },
+  {
+   "url": "https://www.nist.gov/publications/perfluorinated-alkyl-acids-wildlife",
+   "status": "MEASURED",
+   "v_updated": "2020-01-27",
+   "v_published": "2015-04-21"
+  },
+  {
+   "url": "https://www.nist.gov/publications/amplifier-and-transistor-noise-parameter-measurements",
+   "status": "MEASURED",
+   "v_updated": "2020-01-27",
+   "v_published": "2014-10-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/guide-selecting-information-technology-security-products",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2003-10-09"
+  },
+  {
+   "url": "https://www.nist.gov/publications/vetting-security-mobile-applications",
+   "status": "MEASURED",
+   "v_updated": "2021-05-04",
+   "v_published": "2015-01-26"
+  },
+  {
+   "url": "https://www.nist.gov/publications/single-point-optical-calibration-accelerometers-nist",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2006-06-21"
+  },
+  {
+   "url": "https://www.nist.gov/publications/regional-homogenization-surface-temperature-records-using-robust-statistical-methods",
+   "status": "MEASURED",
+   "v_updated": "2020-01-27",
+   "v_published": "2013-09-12"
+  },
+  {
+   "url": "https://www.nist.gov/publications/characterizing-free-and-surface-coupled-vibrations-heated-tip-atomic-force-microscope",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-08-06"
+  },
+  {
+   "url": "https://www.nist.gov/publications/afterpulse-reduction-through-prompt-quenching-silicon-reach-through-single-photon",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-08-13"
+  },
+  {
+   "url": "https://www.nist.gov/publications/domain-engineered-ppln-entangled-photon-generation-and-other-quantum-information",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2014-05-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/thermochemical-characterization-materials-using-novel-laser-heating-technique",
+   "status": "MEASURED",
+   "v_updated": "2021-06-24",
+   "v_published": "2014-01-12"
+  },
+  {
+   "url": "https://www.nist.gov/publications/new-insights-subsurface-imaging-carbon-nanotubes-polymer-composites-scanning-electron",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2015-02-04"
+  },
+  {
+   "url": "https://www.nist.gov/publications/cvss-implementation-guidance",
+   "status": "MEASURED",
+   "v_updated": "2026-05-07",
+   "v_published": "2014-04-28"
+  },
+  {
+   "url": "https://www.nist.gov/publications/recommended-security-controls-federal-information-systems-and-organizations-includes",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2010-05-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/american-association-laboratory-accreditation-a2la",
+   "status": "MEASURED",
+   "v_updated": "2014-08-07",
+   "v_published": "2001-08-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/microresonator-frequency-comb-optical-clock",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-07-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/characterizing-indoor-air-quality-performance-using-graphical-approach",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2016-03-08"
+  },
+  {
+   "url": "https://www.nist.gov/publications/use-high-temperature-integrating-sphere-reflectometer-surface-temperature-measurements",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2007-05-30"
+  },
+  {
+   "url": "https://www.nist.gov/publications/quasiparticle-scattering-topological-crystalline-insulator-snte-001-surface-states",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2014-06-27"
+  },
+  {
+   "url": "https://www.nist.gov/publications/behavior-charring-solids-under-fire-level-heat-fluxes",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "1994-10-17"
+  },
+  {
+   "url": "https://www.nist.gov/publications/new-combinational-logic-minimization-technique-applications-cryptology",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2010-05-19"
+  },
+  {
+   "url": "https://www.nist.gov/publications/high-resolution-passive-video-rate-imaging-350-ghz",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2011-05-26"
+  },
+  {
+   "url": "https://www.nist.gov/publications/applications-molecular-dynamics-study-thermal-degradation-polymers",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "1996-10-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/social-and-physical-aspects-seismic-risk",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2011-12-30"
+  },
+  {
+   "url": "https://www.nist.gov/publications/iodide-based-li7p2s8i-superionic-conductor",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2015-02-02"
+  },
+  {
+   "url": "https://www.nist.gov/publications/thermal-infrared-scale-verifications-10-um-using-nist-eos-txr",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "2000-11-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/message-recovery-and-pseudo-preimage-attacks-compression-function-hamsi-256",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2010-08-07"
+  },
+  {
+   "url": "https://www.nist.gov/publications/improved-algorithm-congruent-matching-cells-cmc-method-firearm-evidence-identifications",
+   "status": "MEASURED",
+   "v_updated": "2018-11-14",
+   "v_published": "2015-04-28"
+  },
+  {
+   "url": "https://www.nist.gov/publications/theoretical-concepts-spectrophotometric-measurements",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-07-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/run-diversity-evaluation-service",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2014-07-06"
+  },
+  {
+   "url": "https://www.nist.gov/publications/experimental-and-modeling-study-thermal-exposure-self-contained-breathing-apparatus",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2015-06-10"
+  },
+  {
+   "url": "https://www.nist.gov/publications/challenges-and-benefits-methodology-scoring-web-content-accessibility-guidelines-wcag",
+   "status": "MEASURED",
+   "v_updated": "2026-05-07",
+   "v_published": "2014-10-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/making-optical-atomic-clocks-more-stable-10-16-level-laser-stabilization",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2011-01-23"
+  },
+  {
+   "url": "https://www.nist.gov/publications/potential-hazard-due-induced-radioactivity-secondary-radiotherapy-report-aapm-task",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-12-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/restoration-firearm-serial-numbers-electron-backscatter-diffraction-ebsd",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2015-02-08"
+  },
+  {
+   "url": "https://www.nist.gov/publications/summary-article-iea-hpp-annex-36-quality-installationquality-maintanace-sensitivity",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2015-02-24"
+  },
+  {
+   "url": "https://www.nist.gov/publications/building-and-fire-research-laboratory-activities-accomplishments-and-recognitions-2000",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2002-01-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/calibration-thin-film-platinum-sensors-use-jila-sr-ii-clock",
+   "status": "MEASURED",
+   "v_updated": "2026-05-07",
+   "v_published": "2015-03-29"
+  },
+  {
+   "url": "https://www.nist.gov/publications/burning-oil-spills",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "1989-10-19"
+  },
+  {
+   "url": "https://www.nist.gov/publications/dimensional-measurement-traceability-3d-imaging-data",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2009-01-19"
+  },
+  {
+   "url": "https://www.nist.gov/publications/ph-dependent-interactions-bacillus-anthracis-anthrax-toxin-complexes",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2013-08-07"
+  },
+  {
+   "url": "https://www.nist.gov/publications/response-block-copolymer-thin-film-morphology-line-width-roughness-chemoepitaxial",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-07-21"
+  },
+  {
+   "url": "https://www.nist.gov/publications/managing-data-types-corba-approach-and-automapautolink-mpi-solution",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "1999-03-12"
+  },
+  {
+   "url": "https://www.nist.gov/publications/acoustic-gas-thermometry",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2014-01-16"
+  },
+  {
+   "url": "https://www.nist.gov/publications/equations-state-demand-application-surrogate-fuel-development",
+   "status": "MEASURED",
+   "v_updated": "2026-05-07",
+   "v_published": "2011-01-15"
+  },
+  {
+   "url": "https://www.nist.gov/publications/shrec14614-track-retrieval-and-classification-textured-3d-models",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-06-12"
+  },
+  {
+   "url": "https://www.nist.gov/publications/measurement-dynamic-impact-toughness-impact-tested-precracked-charpy-specimens",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2015-06-18"
+  },
+  {
+   "url": "https://www.nist.gov/publications/guide-applying-risk-management-framework-federal-information-systems-security-life",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2010-02-22"
+  },
+  {
+   "url": "https://www.nist.gov/publications/computer-tools-determine-material-properties-fire-growth-modeling-cone-calorimeter-data",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "2003-01-27"
+  },
+  {
+   "url": "https://www.nist.gov/publications/measuring-absolute-infrared-spectral-radiance-correlated-photons-new-arrangements-0",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "1997-12-31"
+  },
+  {
+   "url": "https://www.nist.gov/publications/magnetic-structure-and-anisotropy-copd5nife-multilayers",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2015-01-08"
+  },
+  {
+   "url": "https://www.nist.gov/publications/high-dimensional-hyperentanglement-mode-locked-two-photon-states",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2015-06-28"
+  },
+  {
+   "url": "https://www.nist.gov/publications/chip-photon-number-resolving-telecom-band-detectors-scalable-photonic-information",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2012-07-30"
+  },
+  {
+   "url": "https://www.nist.gov/publications/report-first-international-comparison-small-force-facilities-pilot-study-micronewton",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2011-11-28"
+  },
+  {
+   "url": "https://www.nist.gov/publications/automated-guided-vehicle-bumper-test-method-development",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2015-06-02"
+  },
+  {
+   "url": "https://www.nist.gov/publications/characterization-high-od-ultrathin-infrared-neutral-density-filters",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "1998-01-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/enabling-smart-manufacturing-research-and-development-using-product-lifecycle-test-bed",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2015-06-08"
+  },
+  {
+   "url": "https://www.nist.gov/publications/generalized-data-driven-energy-prediction-model-uncertainty-milling-machine-tool-using",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2015-06-07"
+  },
+  {
+   "url": "https://www.nist.gov/publications/shell-dependent-blinking-cdse-based-coreshell-nanocrystals",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2010-05-09"
+  },
+  {
+   "url": "https://www.nist.gov/publications/carbon-monoxide-dispersion-residential-buildings-literature-review-and-technical",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "1996-10-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/high-throughput-screening-substrates-synthesis-and-functionalization-2d-materials",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2015-08-26"
+  },
+  {
+   "url": "https://www.nist.gov/publications/aloft-pc-smoke-plume-trajectory-model-personal-computers",
+   "status": "MEASURED",
+   "v_updated": "2021-06-02",
+   "v_published": "2003-03-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/simple-method-high-precision-calibration-angle-encoder-using-electronic-nulling",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2015-03-09"
+  },
+  {
+   "url": "https://www.nist.gov/publications/pseudomagnetic-fields-locally-strained-graphene-drumhead",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-08-24"
+  },
+  {
+   "url": "https://www.nist.gov/publications/preliminary-characterization-study-gold-coated-concentrator-hemispherical-longwave",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2010-11-15"
+  },
+  {
+   "url": "https://www.nist.gov/publications/environmental-performance-green-building-code-and-certification-systems",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2014-01-31"
+  },
+  {
+   "url": "https://www.nist.gov/publications/far-ultraviolet-signatures-3hentp-reaction-noble-gas-mixtures",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2010-12-08"
+  },
+  {
+   "url": "https://www.nist.gov/publications/statistical-modeling-cement-heat-hydration",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2010-09-15"
+  },
+  {
+   "url": "https://www.nist.gov/publications/herding-second-preimage-and-trojan-message-attacks-beyond-merkle-damgaard",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2009-11-02"
+  },
+  {
+   "url": "https://www.nist.gov/publications/electronic-authentication-guideline-0",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2004-06-30"
+  },
+  {
+   "url": "https://www.nist.gov/publications/viscosity-modifiers-enhance-early-age-performance-and-long-term-durability-concrete",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2013-09-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/tof-sims-3d-imaging-native-and-non-native-species-within-hela-cells",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2013-11-25"
+  },
+  {
+   "url": "https://www.nist.gov/publications/computer-security-incident-handling-guide",
+   "status": "MEASURED",
+   "v_updated": "2021-05-04",
+   "v_published": "2012-08-06"
+  },
+  {
+   "url": "https://www.nist.gov/publications/systems-administration-guidance-securing-microsoft-windows-2000-professional-system",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2002-11-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/developing-advanced-humidity-standards-measure-trace-water-vapor-specialty-gases",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2006-01-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/quantum-dot-fret-sensor-enzymatic-activity-microfluidic-device",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2010-06-21"
+  },
+  {
+   "url": "https://www.nist.gov/publications/combined-buoyancy-and-pressure-driven-flow-through-horizontal-vent",
+   "status": "MEASURED",
+   "v_updated": "2021-06-02",
+   "v_published": "1994-04-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/r134aal2o3-nanolubricant-mixture-pool-boiling-rectangular-finned-surface",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2012-10-31"
+  },
+  {
+   "url": "https://www.nist.gov/publications/reduced-deadtime-and-higher-rate-photon-counting-detection-using-multiplexed-detector",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2007-01-19"
+  },
+  {
+   "url": "https://www.nist.gov/publications/high-throughput-measurements-thermochromic-behavior-v1-xnbxo2-combinatorial-thin-film",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2014-09-02"
+  },
+  {
+   "url": "https://www.nist.gov/publications/detecting-differential-expression-rna-sequence-data-using-quasi-likelihood-shrunken",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2012-10-12"
+  },
+  {
+   "url": "https://www.nist.gov/publications/stress-mapping-micromachined-polycrystalline-silicon-devices-confocal-raman-microscopy",
+   "status": "MEASURED",
+   "v_updated": "2022-01-04",
+   "v_published": "2014-06-14"
+  },
+  {
+   "url": "https://www.nist.gov/publications/characterization-metal-powders-used-additive-manufacturing",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2014-09-16"
+  },
+  {
+   "url": "https://www.nist.gov/publications/angular-dependence-spin-orbit-spin-transfer-torques",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2015-04-05"
+  },
+  {
+   "url": "https://www.nist.gov/publications/distributed-communication-methods-and-role-based-access-control-use-health-care",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "1996-04-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/initial-testing-sias-blocked-impurity-band-bib-trap-detector",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2012-10-31"
+  },
+  {
+   "url": "https://www.nist.gov/publications/sate-v-background",
+   "status": "MEASURED",
+   "v_updated": "2021-05-04",
+   "v_published": "2014-03-14"
+  },
+  {
+   "url": "https://www.nist.gov/publications/radionuclide-standardization-primary-methods-overview",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "2009-02-17"
+  },
+  {
+   "url": "https://www.nist.gov/publications/preparation-nanocomposite-plasmonic-films-made-cellulose-nanocrystals-or-mesoporous",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-04-10"
+  },
+  {
+   "url": "https://www.nist.gov/publications/security-metrics-guide-information-technology-systems",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2003-08-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/reflection-absorption-infrared-spectroscopy-during-atomic-layer-deposition-hfo2-films",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2010-06-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/automation-consideration-during-project-design",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "2002-09-23"
+  },
+  {
+   "url": "https://www.nist.gov/publications/characterization-hydrogen-flame-ion-source-mass-spectrometry",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "1999-12-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/revised-model-role-based-access-control",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "1998-07-09"
+  },
+  {
+   "url": "https://www.nist.gov/publications/collaborative-robotics-gateway-factory-automation",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-09-03"
+  },
+  {
+   "url": "https://www.nist.gov/publications/assessment-glassy-phase-reactivity-fly-ashes-used-geopolymer-cements",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2013-06-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/photonic-technology-quantum-information-processing",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2003-12-31"
+  },
+  {
+   "url": "https://www.nist.gov/publications/measurement-weighted-led-radiance-related-photobiological-safety",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2010-11-30"
+  },
+  {
+   "url": "https://www.nist.gov/publications/use-volumetric-pipets-nist-handbook-133-checking-net-contents-packaged-goods",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-07-07"
+  },
+  {
+   "url": "https://www.nist.gov/publications/specification-extensible-configuration-checklist-description-format-xccdf",
+   "status": "MEASURED",
+   "v_updated": "2026-04-21",
+   "v_published": "2005-01-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/spray-deposition-and-photopolymerization-organic-inorganic-thiol-ene-resins-fabrication",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-06-08"
+  },
+  {
+   "url": "https://www.nist.gov/publications/creation-libraries-recurring-mass-spectra-large-data-sets-assisted-dual-column-workflow",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2014-09-18"
+  },
+  {
+   "url": "https://www.nist.gov/publications/influence-interfacial-chemistry-and-molecular-length-electronic-properties-metal",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2011-12-15"
+  },
+  {
+   "url": "https://www.nist.gov/publications/metrological-challenges-introduced-new-tolerancing-standards",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-02-12"
+  },
+  {
+   "url": "https://www.nist.gov/publications/new-national-air-kerma-standard-low-energy-electronic-brachytherapy-sources",
+   "status": "MEASURED",
+   "v_updated": "2026-05-07",
+   "v_published": "2014-10-06"
+  },
+  {
+   "url": "https://www.nist.gov/publications/review-us-and-european-security-evaluation-criteria",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "1992-03-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/its-90-calibration-radiometers-using-wirethin-film-thermocuples-nist-rtp-tool-effective",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "1999-09-08"
+  },
+  {
+   "url": "https://www.nist.gov/publications/guidelines-cell-phone-forensics",
+   "status": "MEASURED",
+   "v_updated": "2021-06-24",
+   "v_published": "2007-05-29"
+  },
+  {
+   "url": "https://www.nist.gov/publications/epr-and-osl-emergency-dosimetry-teeth-direct-comparison-two-techniques",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-03-20"
+  },
+  {
+   "url": "https://www.nist.gov/publications/multiplicative-complexity-boolean-functions-four-and-five-variables",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2015-03-17"
+  },
+  {
+   "url": "https://www.nist.gov/publications/comparison-sensitivity-and-image-contrast-spontaneous-raman-and-coherent-stokes-raman",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2011-02-08"
+  },
+  {
+   "url": "https://www.nist.gov/publications/vibrational-and-optical-spectroscopies-integrated-environmental-transmission-electron",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2015-02-28"
+  },
+  {
+   "url": "https://www.nist.gov/publications/towards-147periodic-table148-bugs",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2015-06-19"
+  },
+  {
+   "url": "https://www.nist.gov/publications/standards-biothermodynamics",
+   "status": "MEASURED",
+   "v_updated": "2026-05-07",
+   "v_published": "2014-05-15"
+  },
+  {
+   "url": "https://www.nist.gov/publications/preparation-silver-nanoparticle-loaded-cotton-threads-facilitate-measurement",
+   "status": "MEASURED",
+   "v_updated": "2026-05-07",
+   "v_published": "2015-01-26"
+  },
+  {
+   "url": "https://www.nist.gov/publications/standardization-smart-grid-customer-interfaces",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2015-07-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/absolute-and-relative-stability-optical-frequency-reference-based-spectral-hole-burning",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2013-12-06"
+  },
+  {
+   "url": "https://www.nist.gov/publications/cathodoluminescence-quantum-efficiency-quantum-dot-thin-films",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2014-07-07"
+  },
+  {
+   "url": "https://www.nist.gov/publications/information-technology-security-training-requirements-role-and-performance-based-model",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "1998-04-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/advanced-mass-calibration-and-measurement-assurance-program-state-calibration",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2014-09-26"
+  },
+  {
+   "url": "https://www.nist.gov/publications/robust-ferromagnetism-compressed-permanent-magnet-sm2co17",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-09-07"
+  },
+  {
+   "url": "https://www.nist.gov/publications/calibration-accelerometers-extended-frequencies-utilizing-piezoelectric-shakers",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-10-06"
+  },
+  {
+   "url": "https://www.nist.gov/publications/viscosity-ratio-measurements-capillary-viscometers",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2013-11-27"
+  },
+  {
+   "url": "https://www.nist.gov/publications/alternative-approaches-situ-burning-operations",
+   "status": "MEASURED",
+   "v_updated": "2014-08-07",
+   "v_published": "1999-02-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/elevated-temperature-adhesion-testing-spray-applied-fire-resistive-materials",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2015-05-13"
+  },
+  {
+   "url": "https://www.nist.gov/publications/design-fabrication-and-testing-serial-kinematic-mems-xy-stage-multi-finger-manipulation",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2012-08-29"
+  },
+  {
+   "url": "https://www.nist.gov/publications/computational-modeling-and-validation-aerosol-deposition-ventilation-ducts",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-06-20"
+  },
+  {
+   "url": "https://www.nist.gov/publications/sample-prefractionation-mass-spectrometry-quantification-low-abundance-membrane",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2012-06-19"
+  },
+  {
+   "url": "https://www.nist.gov/publications/nanoparticle-size-and-shape-evaluation-using-tsom-optical-microscopy-method",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2010-06-06"
+  },
+  {
+   "url": "https://www.nist.gov/publications/nonproportionality-scintillation-light-yield-bismuth-germanate",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2014-11-11"
+  },
+  {
+   "url": "https://www.nist.gov/publications/piv-card-application-and-middleware-interface-test-guidelines-sp800-73-2-compliance",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2009-03-31"
+  },
+  {
+   "url": "https://www.nist.gov/publications/statistical-methods-change-point-detection-surface-temperature-records",
+   "status": "MEASURED",
+   "v_updated": "2020-01-27",
+   "v_published": "2013-09-12"
+  },
+  {
+   "url": "https://www.nist.gov/publications/optical-two-way-time-and-frequency-transfer-over-free-space",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2013-04-28"
+  },
+  {
+   "url": "https://www.nist.gov/publications/standardization-broadband-uv-measurements",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2013-01-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/coherent-diabatic-ion-transport-and-separation-multizone-trap-array",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2012-08-24"
+  },
+  {
+   "url": "https://www.nist.gov/publications/polaron-mediated-spin-correlations-metallic-and-insulating-la1-xaxmno3-acasr-or-ba",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-12-03"
+  },
+  {
+   "url": "https://www.nist.gov/publications/thermal-analysis-refrigeration-systems-used-vaccine-storage-report-pharmaceutical-grade",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2012-08-02"
+  },
+  {
+   "url": "https://www.nist.gov/publications/gallium-nitride-nanowires-achieve-crystalline-perfection",
+   "status": "MEASURED",
+   "v_updated": "2019-12-19",
+   "v_published": "2011-10-25"
+  },
+  {
+   "url": "https://www.nist.gov/publications/secure-domain-name-system-dns-deployment-guide",
+   "status": "MEASURED",
+   "v_updated": "2021-05-04",
+   "v_published": "2006-05-16"
+  },
+  {
+   "url": "https://www.nist.gov/publications/integrated-detection-system-against-false-data-injection-attacks-smart-grid",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-03-03"
+  },
+  {
+   "url": "https://www.nist.gov/publications/effect-installation-faults-air-air-heat-pump-performance",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2015-01-20"
+  },
+  {
+   "url": "https://www.nist.gov/publications/uncertainty-machine-users-manual",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2013-07-10"
+  },
+  {
+   "url": "https://www.nist.gov/publications/genapp-module-execution-and-airavata-integration",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-10-31"
+  },
+  {
+   "url": "https://www.nist.gov/publications/buoyant-flows-shafts",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "1996-10-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/security-and-privacy-controls-federal-information-systems-and-organizations-including",
+   "status": "MEASURED",
+   "v_updated": "2020-09-27",
+   "v_published": "2015-01-21"
+  },
+  {
+   "url": "https://www.nist.gov/publications/foundations-modeling-cryobiology-i-concentration-gibbs-energy-and-chemical-potential",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-09-20"
+  },
+  {
+   "url": "https://www.nist.gov/publications/liquid-contact-resonance-atomic-force-microscopy-experimental-reconstruction",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-06-11"
+  },
+  {
+   "url": "https://www.nist.gov/publications/building-and-fire-research-laboratory-accomplishments-1995-1996",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "1997-03-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/ancilla-assisted-calibration-measuring-apparatus",
+   "status": "MEASURED",
+   "v_updated": "2021-05-27",
+   "v_published": "2012-06-18"
+  },
+  {
+   "url": "https://www.nist.gov/publications/comparison-independently-calculated-ab-initio-normal-mode-displacements-three-c-h",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-03-18"
+  },
+  {
+   "url": "https://www.nist.gov/publications/photoexcitation-dynamics-nanolayered-c60-zinc-phthalocyanine-films",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2012-02-16"
+  },
+  {
+   "url": "https://www.nist.gov/publications/nist-recommended-practice-guide-installing-maintaining-and-verifying-your-charpy-impact",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2000-10-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/recommendation-block-cipher-modes-operation-methods-key-wrapping",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2012-12-13"
+  },
+  {
+   "url": "https://www.nist.gov/publications/early-observations-macroscopic-quantum-jumps-single-atoms",
+   "status": "MEASURED",
+   "v_updated": "2021-06-02",
+   "v_published": "2015-03-25"
+  },
+  {
+   "url": "https://www.nist.gov/publications/guidelines-smart-grid-cyber-security",
+   "status": "MEASURED",
+   "v_updated": "2026-05-07",
+   "v_published": "2010-08-31"
+  },
+  {
+   "url": "https://www.nist.gov/publications/burning-smoke-production-and-smoke-dispersion-oil-spill-combustion",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "1988-06-07"
+  },
+  {
+   "url": "https://www.nist.gov/publications/evolution-gammagamma-prime-microstructure-ternary-co-al-w-alloys",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2015-06-29"
+  },
+  {
+   "url": "https://www.nist.gov/publications/simulation-and-analysis-sustainable-product-development",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2013-01-09"
+  },
+  {
+   "url": "https://www.nist.gov/publications/recommendation-random-number-generation-using-deterministic-random-bit-generators-3",
+   "status": "MEASURED",
+   "v_updated": "2026-05-07",
+   "v_published": "2012-01-23"
+  },
+  {
+   "url": "https://www.nist.gov/publications/comparison-algorithms-calculate-plume-centerline-temperature-and-ceiling-jet",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2000-01-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/face-recognition-vendor-test-frvt-performance-automated-gender-classification",
+   "status": "MEASURED",
+   "v_updated": "2026-05-07",
+   "v_published": "2015-04-20"
+  },
+  {
+   "url": "https://www.nist.gov/publications/predicting-j-v-curve-organic-photovoltaics-using-impedance-spectroscopy",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-06-02"
+  },
+  {
+   "url": "https://www.nist.gov/publications/hyperfine-paschen-back-faraday-effect",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-03-26"
+  },
+  {
+   "url": "https://www.nist.gov/publications/quantum-critical-fluctuations-heavy-fermion-compound-cenis0935pd00652ge2",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-12-02"
+  },
+  {
+   "url": "https://www.nist.gov/publications/origin-charge-gap-lamnpo",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-11-17"
+  },
+  {
+   "url": "https://www.nist.gov/publications/high-resolution-gamma-ray-spectrometer-based-superconducting-microcalorimeters",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2012-09-28"
+  },
+  {
+   "url": "https://www.nist.gov/publications/greedy-backpressure-routing-smart-grid-sensor-networks",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-01-13"
+  },
+  {
+   "url": "https://www.nist.gov/publications/results-solar-reflective-band-end-end-testing-viirs-f1-sensor-using-t-sircus",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2011-10-23"
+  },
+  {
+   "url": "https://www.nist.gov/publications/randomized-intraclass-distance-minimizing-binary-codes-face-recognition",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-09-25"
+  },
+  {
+   "url": "https://www.nist.gov/publications/evaluation-low-ohmic-resistance-measurement-capabilities-between-vsl-and-nist",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2012-09-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/face-recognition-vendor-test-frvt-performance-face-identification-algorithms-nist-ir",
+   "status": "MEASURED",
+   "v_updated": "2024-02-29",
+   "v_published": "2014-05-20"
+  },
+  {
+   "url": "https://www.nist.gov/publications/hybrid-miniature-fabry-perot-sensor-dual-optical-cavities-simultaneous-pressure-and",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-04-14"
+  },
+  {
+   "url": "https://www.nist.gov/publications/high-flux-hyperentangled-photon-pairs-microstructure-fiber-sagnac-interferometer",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2007-09-16"
+  },
+  {
+   "url": "https://www.nist.gov/publications/genomic-reference-materials-clinical-application",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2014-11-21"
+  },
+  {
+   "url": "https://www.nist.gov/publications/time-resolved-vibrational-spectroscopy-fefe-hydrogenase-model-compounds",
+   "status": "MEASURED",
+   "v_updated": "2026-05-07",
+   "v_published": "2012-05-21"
+  },
+  {
+   "url": "https://www.nist.gov/publications/short-range-magnetic-correlations-highly-correlated-electron-compound-cecu4ga",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-09-24"
+  },
+  {
+   "url": "https://www.nist.gov/publications/spectral-responsivity-calibrations-two-type-pyroelectric-radiometers-using-three",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2012-08-15"
+  },
+  {
+   "url": "https://www.nist.gov/publications/molecular-based-virial-coefficients-co2-h2o-mixtures",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2015-08-07"
+  },
+  {
+   "url": "https://www.nist.gov/publications/linear-xor-and-additive-checksums-don-t-protect-damgaard-merkle-hashes-generic-attacks",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2008-04-16"
+  },
+  {
+   "url": "https://www.nist.gov/publications/fusion-biometric-algorithms-recognition-problem",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "2005-01-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/calibration-ir-test-chambers-missile-defense-transfer-radiometer",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2013-09-30"
+  },
+  {
+   "url": "https://www.nist.gov/publications/faster-better-cheaper-new-automated-vacuum-calibration-service-nist",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2012-10-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/adiabatic-preparation-many-body-states-optical-lattices",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2010-06-22"
+  },
+  {
+   "url": "https://www.nist.gov/publications/srm-november-spotlight-2014",
+   "status": "MEASURED",
+   "v_updated": "2020-01-27",
+   "v_published": "2014-11-04"
+  },
+  {
+   "url": "https://www.nist.gov/publications/laser-scanner-two-face-errors-spherical-targets",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-11-11"
+  },
+  {
+   "url": "https://www.nist.gov/publications/assessment-guidelines-conducting-round-robin-studies-additive-manufacturing",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-04-16"
+  },
+  {
+   "url": "https://www.nist.gov/publications/gps-integrity-architecture-opportunities",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2013-09-16"
+  },
+  {
+   "url": "https://www.nist.gov/publications/behavior-unrestrained-and-restrained-steel-columns-adjacent-localized-fire",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2014-12-12"
+  },
+  {
+   "url": "https://www.nist.gov/publications/intelligent-machine-monitoring-system-energy-prediction-using-gaussian-process",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-10-27"
+  },
+  {
+   "url": "https://www.nist.gov/publications/extension-thermoml-iupac-standard-thermodynamic-data-communications-iupac",
+   "status": "MEASURED",
+   "v_updated": "2026-05-07",
+   "v_published": "2011-09-07"
+  },
+  {
+   "url": "https://www.nist.gov/publications/how-oxidation-and-dissolution-diabase-and-granite-control-porosity-during-weathering",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2015-01-12"
+  },
+  {
+   "url": "https://www.nist.gov/publications/high-sensitivity-bacterial-detection-using-biotin-tagged-phage-quantum-dot",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2006-03-19"
+  },
+  {
+   "url": "https://www.nist.gov/publications/forming-spherical-gold-nanoparticles-polymorphic-nanoparticles-using-single-laser-pulse",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2014-06-12"
+  },
+  {
+   "url": "https://www.nist.gov/publications/optical-passive-sensor-calibration-satellite-remote-sensing-and-legacy-noaa-and-nist",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-06-25"
+  },
+  {
+   "url": "https://www.nist.gov/publications/highly-stable-positively-charged-dendron-encapsulated-gold-nanoparticles",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2014-03-13"
+  },
+  {
+   "url": "https://www.nist.gov/publications/design-and-test-reliable-high-strength-ingressive-polycrystalline-silicon-microgripper",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2015-01-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/dynamic-customization-validation-and-integration-product-data-models-using-semantic-web",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-10-09"
+  },
+  {
+   "url": "https://www.nist.gov/publications/dynamic-spectrum-access-current-state-art-and-future-challenges",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-02-02"
+  },
+  {
+   "url": "https://www.nist.gov/publications/asia",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "2000-04-04"
+  },
+  {
+   "url": "https://www.nist.gov/publications/pmml-manufacturing-applications",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-09-12"
+  },
+  {
+   "url": "https://www.nist.gov/publications/bibliography-selected-computer-security-publications-january-1980-october-1989",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "1990-11-30"
+  },
+  {
+   "url": "https://www.nist.gov/publications/detection-orthogonality-macromolecular-separations-role-line-viscometer-characterizing",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2015-05-21"
+  },
+  {
+   "url": "https://www.nist.gov/publications/applicability-correlations-between-species-formation-and-global-equivalence-ratio-12",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "1999-07-05"
+  },
+  {
+   "url": "https://www.nist.gov/publications/recommendation-key-management-part-1-general-revised-march-2007-edition",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2007-03-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/guide-industrial-control-systems-ics-security-final-draft",
+   "status": "MEASURED",
+   "v_updated": "2017-07-26",
+   "v_published": "2008-09-02"
+  },
+  {
+   "url": "https://www.nist.gov/publications/nanomanufacturing-metrology-cellulosic-nanomaterials-update",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-12-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/decoherence-quantum-superpositions-through-coupling-engineering-reservoirs",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "1999-12-31"
+  },
+  {
+   "url": "https://www.nist.gov/publications/kilohertz-rotation-nanorods-propelled-ultrasound-traced-microvortex-advection",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2014-08-26"
+  },
+  {
+   "url": "https://www.nist.gov/publications/emps-radiation-thermometer-designs",
+   "status": "MEASURED",
+   "v_updated": "2026-05-07",
+   "v_published": "2010-07-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/effects-high-intensity-neutron-flux-situ-spin-exchange-optical-pumping-he-3",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2009-09-17"
+  },
+  {
+   "url": "https://www.nist.gov/publications/correlation-measurements-between-pm-and-am-noise-oscillators",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-05-22"
+  },
+  {
+   "url": "https://www.nist.gov/publications/economical-mixtures-reduce-both-thermal-and-autogenous-shrinkage-contributions-early",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2008-07-02"
+  },
+  {
+   "url": "https://www.nist.gov/publications/release-nist-interagency-report-7946-cvss-implementation-guidance",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-07-09"
+  },
+  {
+   "url": "https://www.nist.gov/publications/low-cost-time-transfer-receiver-contributions-coordinated-universal-time",
+   "status": "MEASURED",
+   "v_updated": "2026-05-07",
+   "v_published": "2014-11-06"
+  },
+  {
+   "url": "https://www.nist.gov/publications/microresonator-based-optical-frequency-combs",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2011-04-29"
+  },
+  {
+   "url": "https://www.nist.gov/publications/piezoelectric-shaker-developments-calibration-accelerometers-extended-frequencies",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2012-06-12"
+  },
+  {
+   "url": "https://www.nist.gov/publications/bell-violation-using-entangled-photons-without-fair-sampling-assumption",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2013-04-13"
+  },
+  {
+   "url": "https://www.nist.gov/publications/engineering-plant-cell-walls-tuning-lignin-monomer-composition-deconstructable-biofuels",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-02-26"
+  },
+  {
+   "url": "https://www.nist.gov/publications/approach-measuring-reductions-construction-worker-illnesses-and-injuries-baseline",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2000-09-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/cybersecurity-testbed-industrial-control-systems",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-10-09"
+  },
+  {
+   "url": "https://www.nist.gov/publications/comparison-fire-sprinkler-piping-materials-steel-copper-chlorinated-polyvinyl-chloride",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "1994-06-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/mechanisms-criticality-environmental-adhesion-loss",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2015-05-13"
+  },
+  {
+   "url": "https://www.nist.gov/publications/algorithm-validation-using-multicolor-phantoms",
+   "status": "MEASURED",
+   "v_updated": "2020-01-27",
+   "v_published": "2012-05-09"
+  },
+  {
+   "url": "https://www.nist.gov/publications/microwave-characterization-flip-chip-mmic-interconnections",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "1995-05-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/time-domain-network-analysis-using-multiline-trl-calibration",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "1994-12-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/boussinesq-algorithm-buoyant-convection-polygonal-domains",
+   "status": "MEASURED",
+   "v_updated": "2021-06-02",
+   "v_published": "1992-04-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/connecting-buildings-public-safety-networks",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "2009-07-10"
+  },
+  {
+   "url": "https://www.nist.gov/publications/benchmark-experimental-database-multiphase-combustion-model-input-and-validation",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "1999-02-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/materials-testing-standards-additive-manufacturing-polymer-materials-state-art-and",
+   "status": "MEASURED",
+   "v_updated": "2026-05-07",
+   "v_published": "2015-05-15"
+  },
+  {
+   "url": "https://www.nist.gov/publications/buoyant-turbulent-jets-and-flames-part-1-adiabatic-wall-plumes-annual-report",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "1999-10-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/generalizing-face-quality-and-factor-measures-video",
+   "status": "MEASURED",
+   "v_updated": "2024-02-29",
+   "v_published": "2014-09-23"
+  },
+  {
+   "url": "https://www.nist.gov/publications/optical-amplification-and-pulse-interleaving-low-noise-photonics-microwave-generation",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-03-12"
+  },
+  {
+   "url": "https://www.nist.gov/publications/viscosity-ratio-measurements-capillary-viscometers-0",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-05-20"
+  },
+  {
+   "url": "https://www.nist.gov/publications/polystyrene-block-polyisoprene-diblock-copolymer-micelles-coupled-pressure-and",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-01-31"
+  },
+  {
+   "url": "https://www.nist.gov/publications/determining-mechanical-reliability-brittle-materials",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2013-04-17"
+  },
+  {
+   "url": "https://www.nist.gov/publications/development-nist-rocky-flats-soil-standard",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "2007-03-29"
+  },
+  {
+   "url": "https://www.nist.gov/publications/relaxation-timescales-and-decay-correlations-long-range-interacting-quantum-simulator",
+   "status": "MEASURED",
+   "v_updated": "2024-08-27",
+   "v_published": "2013-08-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/measurement-equilibrium-elemental-vapor-pressures-using-x-ray-induced-fluorescence",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2011-03-22"
+  },
+  {
+   "url": "https://www.nist.gov/publications/smoothed-particle-hydrodynamics-based-fluid-model-spatially-dependent-viscosity",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2010-10-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/trapped-ions-entanglement-and-quantum-computing-ed-bl-fearey",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "1997-12-31"
+  },
+  {
+   "url": "https://www.nist.gov/publications/what-4500-people-can-tell-you-150-employees-attitudes-toward-organizational-password",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2015-08-02"
+  },
+  {
+   "url": "https://www.nist.gov/publications/building-analytical-support-homeland-security",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2015-02-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/horizontal-convective-boiling-r134a-r1234yfr134a-and-r1234zeewithin-micro-fin-tube",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2014-06-24"
+  },
+  {
+   "url": "https://www.nist.gov/publications/modeling-network-diversity-evaluating-robustness-networks-against-zero-day-attacks",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-09-10"
+  },
+  {
+   "url": "https://www.nist.gov/publications/metrology-remote-sensing-radiometry-ed-s-morain-page-budge",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "2004-01-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/realization-infrared-spectral-radiant-power-response-scale-cryogenic-bolometer",
+   "status": "MEASURED",
+   "v_updated": "2017-02-17",
+   "v_published": "1998-01-01"
+  },
+  {
+   "url": "https://www.nist.gov/publications/m2m-dobdc-mmgmn-fe-co-ni-metal-organic-frameworks-exhibiting-increased-charge-density",
+   "status": "MEASURED",
+   "v_updated": "2021-10-12",
+   "v_published": "2014-08-13"
+  },
+  {
+   "url": "https://www.nist.gov/publications/estimating-heterogeneity-variance-meta-analysis",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2012-08-06"
+  },
+  {
+   "url": "https://www.nist.gov/publications/new-golden-age-algorithms-and-data-structures",
+   "status": "MEASURED",
+   "v_updated": "2017-02-19",
+   "v_published": "2012-10-29"
+  },
+  {
+   "url": "https://www.nist.gov/publications/atoms-steps-microscopic-origins-crystal-growth",
+   "status": "MEASURED",
+   "v_updated": "2018-11-10",
+   "v_published": "2014-07-01"
+  }
+ ]
+}
