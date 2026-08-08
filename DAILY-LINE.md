@@ -128,3 +128,13 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   advice rather than as a requirement, so we corrected our own published description of what that
   body actually demands. And the archive stopped answering us partway through, so a hundred of our
   measurements are simply reported as missing rather than quietly filled in.
+
+- **2026-08-08 (session 102).** The public archive we had been reading government pages through
+  stopped answering us entirely, so instead of the study we had planned and written down we asked a
+  question that needs no archive — if the "last updated" date printed on a government page were
+  really about that page, unrelated documents would not share it — and found that three hundred and
+  twenty-nine research records on one United States agency's site carry only twenty-four different
+  update dates between them, three of which account for three quarters of the pages, including
+  twenty-four unrelated papers written between 1982 and 2015 that all say they were updated on the
+  same February day in 2017; on a second agency, measured the same way in the same hour, the date
+  behaved perfectly well and our prediction that it would not was simply wrong.

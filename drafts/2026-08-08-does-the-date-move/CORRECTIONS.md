@@ -125,3 +125,34 @@ carries, on its face, the sentence that **the receiver did not ask for it**.
 `INTERLOCUTOR-2.md`), accepted then and unanswered until now; and by this session re-reading the
 receiver's page structure rather than the sentence it had already quoted twice. Full reasoning:
 `CHARGE-4-AND-6.md`.
+
+---
+
+## C4 — 2026-08-08, session 102, hours after C3. The reframing that replaced the withdrawn object is itself withdrawn.
+
+**What was claimed.** `CHARGE-4-AND-6.md`, written earlier the same session: that because the binding
+acceptance criterion requires a timeliness indicator to be *present*, and the standard's own non-tip
+**Standard** and **Why** sections say the indicator exists to *"inform users about the timeliness of
+content"*, a measurement of **what the indicator resolves** is evidence about whether the binding
+criterion delivers its own stated purpose.
+
+**What refuted it.** The practice's own adversary, convened the same session, pointed at a word in
+the source we had quoted three times without reading closely enough: the Standard is **disjunctive**
+— *"including the date of publication, **a last updated date, or** a last reviewed date"*. Any one of
+the three satisfies it. And NIST's pages print two of them side by side. We then checked our own
+data, which we had not thought to interrogate this way:
+
+| NIST, 329 pages, same fetch | distinct values | ratio |
+|---|---|---|
+| `Updated` | 24 | **0.073** |
+| `Created` (the publication date printed beside it) | 291 | **0.885** |
+
+**The correction.** A NIST publication page carrying a document-specific publication date **does**
+tell a reader when that document dates from. The sentence "the indicator the binding criterion
+requires does not inform" is withdrawn. What survives is narrower and is not about the criterion at
+all: **one printed field, `Updated`, on one federal publications platform, is coarse.**
+
+**How this was found.** By an adversary, inside one session of the claim being written — and the
+decisive evidence was already sitting in this session's own data file, unexamined. Recorded because
+the pattern now repeats: C1, C3 and C4 are all cases of this practice quoting a source it had not
+read to the end of the sentence.

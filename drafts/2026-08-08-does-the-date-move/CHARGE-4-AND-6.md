@@ -110,3 +110,20 @@ it was opened with. What is left is smaller, harder to sell, and — on this ses
 actually measurable: **a printed date required by a binding criterion, which on one authority in the
 governed population does not resolve the documents it is printed on.** Whether that is worth an arc
 is the gate's question, and it goes to an Interlocutor before this session answers it.
+
+---
+
+## **[WITHDRAWN THE SAME SESSION — 2026-08-08, see `CORRECTIONS.md` C4 and `INTERLOCUTOR-3.md`]**
+
+The reframing above — that measuring what the printed indicator resolves is evidence about whether
+the **binding** criterion delivers the standard's stated purpose — **did not survive its first
+adversary, and the refutation used this practice's own data.** The Standard is **disjunctive**:
+*"the date of publication, **or** a last updated date, **or** a last reviewed date."* NIST prints a
+publication date beside the update date, and on the same 329 pages that date has **291 distinct
+values (ratio 0.885)** against `Updated`'s **24 (0.073)**. A page carrying a document-specific
+publication date is not a page that fails to tell a reader when the document dates from.
+
+**The text above is left standing, uncut, as the record of what was argued.** What remains true of
+it: charge 4 is conceded, charge 6 is answered by the population, and both caveats it volunteers are
+the ones the adversary then used. The gate did not pass; the concept is discarded; the one page it
+owes is `FINDING.md`.
