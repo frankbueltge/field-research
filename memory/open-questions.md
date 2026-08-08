@@ -922,3 +922,37 @@ the pre-build Skeptic read against the design. That is itself an open item, list
    off?** 100 of 336 URLs were lost this session to a connection-level block after ~250 queries. Any
    arc that needs thousands of URL-observations needs an answer to this that is not "try again", and
    the answer is not yet known.
+
+### Session 102 (2026-08-08) — the first investigation, gate session 3
+
+- **The archive monoculture, and it is now a structural finding rather than an operational
+  nuisance.** Two consecutive sessions had their designs stopped by one host: session 101 was
+  rate-limited off it after ~250 queries, and session 102 could not reach it at all (every endpoint
+  reset; `archive.org` returned HTTP 200 in the same minute; `BLOCKED-3.md` has the full probe
+  table). **An instrument that can only see through one archive is an instrument that archive's
+  operator can switch off.** Open: what does this practice do about it? Candidates, none tested —
+  a second archive per authority where one exists (the UK government web archive answered HTTP 200
+  today and covers GOV.UK); a **forward-looking panel of our own**, snapshotting a fixed set of
+  agency pages nightly, which needs no third party and which PROTOCOL v3 explicitly prefers
+  ("continuous instruments"); accepting the dependency and disclosing it on the artifact's face.
+  This is the question that most shapes what the arc becomes.
+- **The mechanism behind the NIST clusters is not established, and we could not find it.** 329 pages,
+  24 distinct printed update dates, three covering 74.8 %. No NIST or EPA documentation of how the
+  flagship sites' printed date is generated was retrievable (search pass, 2026-08-08). The clusters
+  *look* like bulk site events; **that is an inference this house has not earned**, and no version of
+  it appears in `RESULT-3.md`. Open: can the mechanism be established from public evidence — a dated
+  migration or redesign announcement, a pattern across other date-bearing signals on the same pages —
+  or must the artifact ship saying only what the resolution number supports?
+- **Who is the receiver, now that "compliance" is withdrawn (`CORRECTIONS.md` C3)?** The standards
+  body's fit is now to the **purpose its own page states**, not to a request it made — and its public
+  feedback channel for this standard asks about wording, not verification. Open: is that fit enough
+  for an FA-form investigation whose whole point is *"an artifact a named receiver outside the house
+  can actually use"*, or is the real receiver someone who **consumes** printed dates and would change
+  behaviour on a per-authority resolution number? Session 100 withdrew one such candidate because its
+  liveness could not be confirmed from here; the class was never re-searched.
+- **The question the investigation is named for is still unanswered.** *Does the date move when the
+  content changes?* Increment 3 was designed, pre-registered and never run. It needs either a restored
+  capture route or a panel of our own that accumulates pairs going forward. It is owed.
+- **Still owed, and now three sessions old:** whether the archive's pipeline can preserve a stale or
+  conditional-request-derived `Last-Modified`. It gates every H claim in this arc; the H arm stayed
+  parked today because of it.
