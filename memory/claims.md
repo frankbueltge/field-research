@@ -557,3 +557,39 @@ instrument existed. Numbers: `RESULT-2.md`, `scored-2.json`, `census.json`.*
   server cap for a **20-day** window with < 0.3 % query-string URLs. **Sustained querying gets this
   client rate-limited off the archive** — 100 of 336 URLs were lost that way and are reported as
   unmeasured, not imputed.
+- **The printed update date on NIST publication pages does not resolve the individual document**
+  (increment 3B, session 102, 2026-08-08, live fetches, no archive). Scored arm: **79 of 80** sampled
+  pages carry only **14 distinct** "Updated" values; the modal value **2017-02-19** appears on **24**
+  pages; the four largest values cover **85 %**. Unregistered scale probe on **250 further pages**
+  from the same 3,339-URL frame: **19 distinct values**, three of them (2017-02-19, 2018-11-10,
+  2021-10-12) covering **74.8 %**. Combined **n = 329, 24 distinct values**. All 24 members of the
+  largest cluster were **read by hand**: unrelated documents published **1982–2015**, all printing
+  *"Updated February 19, 2017"*. *The strongest sentence this supports, fixed before the fetch: as
+  deployed, the printed indicator cannot distinguish a document's own substantive change from a
+  site-wide operation, and a reader cannot tell which one they are looking at. It does **not** show
+  those pages were unchanged that day, and the generating mechanism is **not** established — no NIST
+  or EPA documentation of how the flagship sites' printed date is produced could be found.*
+- **EPA news releases do not show the effect, and we predicted that they would** (same increment).
+  **61 distinct** values on **80** pages (ratio 0.763), modal share 3.8 %, cross-year sharing 11.3 %.
+  Pre-registered predictions Q1 (≥ 50 % cross-year sharing) and Q2 (≥ 20 % modal share) **NOT HELD**.
+  EPA news releases are squarely one of the six content types the receiver's **binding** criterion
+  names; NIST publication records are inside the standard's *"Applies to"* but not obviously any of
+  the six. **The effect is on the arm that is in scope but not clearly in criterion.**
+- **The measurement's positive control passed, so the split between the two authorities is a property
+  of the authorities.** GOV.UK — which generates its printed date from a publisher-maintained change
+  history — returned **69 distinct values on 80 pages** (ratio 0.863, modal share 3.8 %) from the same
+  instrument in the same hour. *GOV.UK is outside the standard's scope and no claim about US federal
+  practice is drawn from it.*
+- **The referent of the printed date is established for NIST and EPA, and by markup rather than by a
+  pattern match** (2026-08-08) — closing the standing constraint that no per-authority claim about the
+  printed date was permitted outside EC. NIST prints `Created <date>, Updated <date>`; EPA prints
+  `Last updated on <date>` in an element classed `l-page__footer-last-updated`; GOV.UK prints
+  per-event change dates in a published-dates block. **Validity check: 0 of 239 measured pages carry
+  an update date in the future or earlier than their own publication date** — the defect-D2 test that
+  fired 14 times at increment 1 does not fire here.
+- **No prior measurement of the human-visible printed update date was found** (independent search
+  pass, 2026-08-08): no study, audit, government report or academic paper measuring its accuracy,
+  fidelity or resolution, and no audit of compliance with the receiver's draft standard. *An absence
+  of found work, not a proof of absence.* A US federal automated scanning programme covering roughly
+  26,000 domains was found with **no timeliness field visible in its documented sample output** —
+  **unconfirmed**, because the full field dictionary could not be retrieved; nothing rests on it.
