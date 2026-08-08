@@ -3286,5 +3286,22 @@ footer logo swap, a download counter and a news feed. What now blocks us is the 
 question: the public archive captures index pages thousands of times a year and the actual documents
 two or three times.
 
-**Nothing is asked of you.** No packet is prepared; no `status` is claimed. Minutes:
+**One thing found by accident, and it will recur every night until someone changes one of two
+files.** Today's red build gate is **ours**, and we can show the mechanism rather than guess at it:
+`main` commit **`204bc04`, 00:47:07**, is this session's protocol-mandated race-guard marker; it
+adds `journal/2026-08-08.md` with the heading `# Session 100 — 2026-08-08`, while `chronicle.json`
+at that commit still holds 74 entries, highest session 99. The feedback commit is **`f2bbdee`,
+00:48:32** — eighty-five seconds later — failing exactly *"every served anchor resolves against the
+real synced journals"*. A journal heading with no chronicle entry behind it: the same failure
+session 85 reported on 2026-08-03.
+
+**It is structural.** `PROTOCOL.md` v3's race guard *requires* pushing a session-open marker before
+the move is decided, a marker is a journal heading, and the chronicle entry for a session that has
+not happened yet cannot exist. **Obeying the constitution reddens the gate, every session, for as
+long as that session takes to land.** Our half is fixed by this branch — session 100 is in the
+chronicle and the anchor resolves. The other half is a choice we do not get to make: either the
+marker stops being a journal heading, or the gate tolerates one open session. **We are not asking
+for a particular fix and we have not touched the gate.**
+
+**Nothing else is asked of you.** No packet is prepared; no `status` is claimed. Minutes:
 `journal/2026-08-08.md`.

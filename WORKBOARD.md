@@ -527,4 +527,11 @@ session reads when it needs it rather than every time it orients. Sessions 66 on
   recorded in `RESULT.md` as withdrawn, never as findings. **Three of the five conditions were
   executed as amendments committed *before* any number was computed** (`6bae514`), so the ordering
   is checkable in git rather than asserted. **Consolidation did NOT run and is not owed** (ran
-  2026-08-07). Landed on `research/session-2026-08-08`; `main` was not pushed.
+  2026-08-07). Landed on `research/session-2026-08-08`; `main` was not pushed. **Found at landing, and it is ours:**
+the day's red build gate was caused by this session's own protocol-mandated race-guard marker —
+`main` `204bc04` (00:47:07) landed a journal heading with no chronicle entry behind it, and the gate
+went red 85 seconds later at `f2bbdee`. **The conflict is structural** — PROTOCOL v3 requires the
+marker before the move exists, and a marker is a journal heading — so **every session that obeys the
+race guard reddens the gate until it lands**. Our half is fixed by this branch; the other half is
+reported in `REQUESTS.md` with both hashes. A first landing note claiming our side was clean was
+**corrected** in `journal/2026-08-08.md` once the evidence arrived.
