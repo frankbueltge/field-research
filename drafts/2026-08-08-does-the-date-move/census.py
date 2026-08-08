@@ -15,7 +15,7 @@ from concurrent.futures import ThreadPoolExecutor
 # Fetch schedule only, not the measurement: a single index query costs 8-14 s, and 336 of them
 # in sequence do not fit in a session. Four workers, one query each, no retry storm. The value
 # computed per URL is identical either way; nothing about the sample or the window changes.
-WORKERS = 4
+WORKERS = 2
 
 BASE = "/home/user/field-research/drafts/2026-08-08-does-the-date-move"
 UA = "field-research/1.0 (non-commercial research; polite, rate-limited)"

@@ -1,0 +1,49 @@
+frames reused from frames.json (built earlier this session)
+receiver: frame 16 -> sample 16
+nist: frame 3339 -> sample 80
+epa: frame 3126 -> sample 80
+govuk: frame 1000 -> sample 80
+energy: frame 712 -> sample 80
+resuming: 36 URLs already measured
+[receiver 1/16] n12=6 m12=4 pairable=True https://standards.digital.gov/standards/html-page-title/
+[receiver 2/16] n12=8 m12=5 pairable=True https://standards.digital.gov/standards/
+[receiver 3/16] n12=0 m12=0 pairable=True https://standards.digital.gov/get-involved/
+[receiver 4/16] n12=2 m12=2 pairable=True https://standards.digital.gov/standards/contact-page/
+[receiver 6/16] n12=4 m12=3 pairable=True https://standards.digital.gov/standards/banner/
+[receiver 7/16] n12=4 m12=4 pairable=True https://standards.digital.gov/standards/meta-page-description/
+[receiver 8/16] n12=6 m12=5 pairable=True https://standards.digital.gov/contact/
+[receiver 9/16] n12=11 m12=7 pairable=True https://standards.digital.gov/
+[receiver 10/16] n12=2 m12=2 pairable=True https://standards.digital.gov/standards/site-search/
+[receiver 11/16] n12=3 m12=3 pairable=True https://standards.digital.gov/standards/content-timeliness-indicator/
+[receiver 12/16] n12=2 m12=2 pairable=True https://standards.digital.gov/standards/external-link/[receiver 12/16] n12=7 m12=6 pairable=True https://standards.digital.gov/about/
+
+[receiver 13/16] n12=4 m12=3 pairable=True https://standards.digital.gov/standards/page-level-feedback/
+[receiver 14/16] n12=0 m12=0 pairable=True https://standards.digital.gov/search/
+[receiver 16/16] n12=0 m12=0 pairable=True https://standards.digital.gov/404.html
+[receiver 16/16] n12=2 m12=2 pairable=True https://standards.digital.gov/standards/language-selector/
+[nist 1/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/testing-model-checker-insuring-fault-visibility
+[nist 2/80] n12=1 m12=1 pairable=True https://www.nist.gov/publications/certification-total-arsenic-blood-and-urine-standard-reference-materials-radiochemical
+[nist 3/80] n12=3 m12=3 pairable=True https://www.nist.gov/publications/polar-codes-qkd-environment
+[nist 4/80] n12=3 m12=3 pairable=True https://www.nist.gov/publications/critical-behavior-zero-field-magnetic-fluctuations-perpendicularly-magnetized-thin
+[nist 6/80] n12=3 m12=3 pairable=True https://www.nist.gov/publications/determination-cd-cr-and-hg-srm-2584-trace-elements-indoor-dust-high-resolution
+[nist 7/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/characterization-wafer-diode-noise-sources
+[nist 8/80] n12=3 m12=3 pairable=True https://www.nist.gov/publications/general-security-requirements-equipment-using-data-encryption-standard
+[nist 8/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/velocity-divergence-constraint-large-eddy-simulation-low-mach-flows
+[nist 9/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/alkali-silica-reaction-degradation-nuclear-power-plant-concrete-structures-scoping
+[nist 10/80] n12=3 m12=3 pairable=True https://www.nist.gov/publications/interlaboratory-comparison-sizing-and-counting-subvisible-particles-mimicking-protein
+[nist 11/80] n12=3 m12=3 pairable=True https://www.nist.gov/publications/tunable-stable-source-femtosecond-pulses-near-2-ym-supercontinuum-erbium-mode-locked
+[nist 12/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/efficient-diffractive-phase-optics-electrons
+[nist 13/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/enduring-appeal-least-squares-fitting-computational-coordinate-metrology
+[nist 14/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/char-enhancing-approaches-polymer-flammability-effect-radicals-magic-angle-spinning-13c
+[nist 15/80] n12=5 m12=4 pairable=True https://www.nist.gov/publications/guidelines-cell-phone-and-pda-security
+[nist 16/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/predictive-power-annellation-theory-case-c32h16-benzenoid-polycyclic-aromatic
+[nist 17/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/application-quantitative-cavity-ring-down-spectroscopy-measruements-line-shapes-and
+[nist 18/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/characterization-confined-ceiling-jet-presence-upper-layer-transient-and-steady-state
+[nist 19/80] n12=3 m12=3 pairable=True https://www.nist.gov/publications/high-confidence-level-calibration-afm-based-fracture-testing-nanobeams
+[nist 20/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/acoustic-emission-structural-materials-exposed-open-flames
+[nist 21/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/building-one-time-memories-isolated-qubits
+[nist 22/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/guide-using-vulnerability-naming-schemes
+[nist 23/80] n12=3 m12=3 pairable=True https://www.nist.gov/publications/recommendation-existing-application-specific-key-derivation-functions-0
+[nist 24/80] n12=6 m12=6 pairable=True https://www.nist.gov/publications/secure-hash-standard-shs
+[nist 25/80] n12=3 m12=3 pairable=True https://www.nist.gov/publications/freezing-behavior-and-diffusion-water-proximity-single-supported-zwitterionic-and
+[nist 26/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/prototyping-sp4-secure-data-network-system-transport-protocol-interoperability
