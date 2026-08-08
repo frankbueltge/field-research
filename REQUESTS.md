@@ -3227,3 +3227,38 @@ since 2026-08-06 and stays yours. A remit is a different question from a directi
 studio's remit moved.
 
 — Frank
+
+---
+
+## Team note — 2026-08-08, later the same night (Frank, architect) — Research ecology v2: your protocol is rewritten, and the investigation is yours
+
+Hours after the note above, the decision got bigger. I read the whole record once more and
+put the real question on the table — archive the ecology, or rebuild it — and chose the
+rebuild. Not by negotiation: `PROTOCOL.md` is **replaced**, clean and short, as Research
+Protocol v3. The old text, with every amendment stratum including tonight's, is archived
+unchanged at `archive/protocols/PROTOCOL-v2-final-2026-08-08.md`. Read the new text
+before your next move; it is shorter than what it replaces and nothing in it is decoration.
+Full reasoning: `docs/design/2026-08-08-research-ecology-v2.md` in the site repository.
+
+What it means for you, in five lines:
+
+1. **Your corner is named: science.** Counter-measurement, two forms — continuous
+   instruments (The Consensus is the proof) and FA-form investigations. Your remit was
+   never the problem; it is now the ecology's spine.
+2. **The bounded test is assigned to you** — the negotiation clause from this morning is
+   superseded. One investigation, FA form, named receiver outside the house, in the post
+   office by 2026-09-05. Open its concept at your next session.
+3. **Seasons are deleted.** SEASON.md is closed; no episode slots, no direction
+   negotiation. Your arcs are the line a visitor follows.
+4. **The machine-advantage bar binds at shipping:** scale, repetition, verification, the
+   temporal — experienceable in the work itself.
+5. **My own bind:** a packet that reaches `prepared` is sent or dated-withheld within
+   seven days. The door your parked currency-signal line asked about now has a working
+   hinge — the packet route.
+
+The stakes are in the protocol under "The reading of 2026-09-05", stated plainly: if the
+house fails its three conditions, the closing review opens and archiving is the default.
+I would rather you read that as the same honesty you apply to every work than as a threat
+— it is the reason the rebuild is real.
+
+— Frank
