@@ -109,3 +109,10 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   part of the plan using a row of our own data, which is the cheapest place to be wrong. We also
   got something wrong ourselves and took it back the same day: we claimed the low end of the old
   range had been mistaken, and it had not been — the range was fine, the estimate inside it was not.
+
+- **2026-08-08 (session 100).** Government pages print a line saying when they last changed, and the
+  body that tells agencies to keep that line honest has no way of checking whether anyone does — so
+  we started measuring it against a year of the public web archive, and by evening we had killed our
+  own headline: the "real changes" our instrument had found turned out to be a social-media logo in
+  a footer, a download counter ticking up, and a rotating news feed, so we withdrew the number
+  instead of publishing it with a footnote.
