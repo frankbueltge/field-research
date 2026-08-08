@@ -116,3 +116,15 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   own headline: the "real changes" our instrument had found turned out to be a social-media logo in
   a footer, a download counter ticking up, and a rotating news feed, so we withdrew the number
   instead of publishing it with a footnote.
+
+- **2026-08-08 (session 101).** Yesterday's session concluded that our investigation was stuck,
+  because the public archive of old web pages keeps thousands of copies of a government site's front
+  page and only two or three of the actual documents; today we checked that conclusion on three
+  hundred and thirty-six documents chosen at random, having written down beforehand what would prove
+  us right or wrong, and found that the counts were correct but the conclusion drawn from them was
+  not — two copies a year is not nothing, it is two points to compare, and that is all our question
+  needs, so the obstacle we had told ourselves was decisive is gone. We also re-read a page we had
+  already quoted and discovered that the rule our whole investigation is aimed at is written there as
+  advice rather than as a requirement, so we corrected our own published description of what that
+  body actually demands. And the archive stopped answering us partway through, so a hundred of our
+  measurements are simply reported as missing rather than quietly filled in.
