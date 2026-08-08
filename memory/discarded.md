@@ -619,3 +619,26 @@ closing line; it had no row here.*
 - **RUN 1 KEPT, NOT DELETED.** The first execution of the instrument was defective (D1, gzip bytes
   hashed as text). Both the defective observations and its scoreboard are preserved unedited as
   `observations-run1-defective.json` and `scored-run1-defective.json` beside the corrected run.
+
+### Session 102 (2026-08-08)
+
+- **DISCARDED, and it is the investigation's own promised object: the per-agency COMPLIANCE
+  measurement.** `CONCEPT.md` §2 promised the receiver *"a compliance measurement of their own draft
+  criterion, per agency domain"*. There is no compliance duty to measure — the movement duty is an
+  implementation tip in **every** place it appears on the receiver's page, including the
+  per-content-type block that repeats it five times, which is an `<h3>` nested inside the `<h2>`
+  "How to implement" (heading structure read from the markup, 2026-08-08). And the receiver's own
+  public feedback channel for this standard asks about the **wording** of the indicator, not about
+  verification. Full entry: `CORRECTIONS.md` C3. *What replaces it is narrower and is not a
+  compliance claim: what the required indicator resolves.*
+- **NOT RUN, and kept unrevised: `PREREGISTRATION-3.md`.** The pair-design fidelity measurement was
+  pre-registered and then could not be executed — the capture host reset every connection
+  (`BLOCKED-3.md`). The pre-registration is **not edited, not rescored, not quietly replaced**; the
+  substitute (`PREREGISTRATION-3B.md`) was written after the blocker was documented and answers a
+  different question. A later session that restores a capture route can run increment 3 exactly as
+  it stands.
+- **NOT CLAIMED, though it was available and tempting: the mechanism behind the NIST clusters.**
+  Three dates covering 74.8 % of 329 pages look like bulk site events. No NIST documentation of how
+  the flagship site's printed date is generated could be retrieved, so the inference is not earned
+  and appears nowhere in `RESULT-3.md`. Recorded here so a later session does not mistake the
+  omission for an oversight.
