@@ -41,7 +41,11 @@ origin's own headers with it. The investigation is what the wall was hiding.
 `standards.digital.gov`** — the body that authored the timeliness standard quoted above. The fit
 is exact and it is documented on their own page: the standard is in **Draft**, is expressly "being
 shared with federal agencies and other stakeholders for feedback and iteration", and its
-acceptance criteria contain a duty with **no measurement attached**. What they can do with our
+acceptance criteria contain a duty with **no measurement attached**. **[CORRECTED — see
+`CORRECTIONS.md` C1, 2026-08-08 session 101: the duty about moving the date sits under "How to
+implement", which the page itself calls tips; the acceptance criteria state a duty of *presence*.
+The sentence as written overstates the receiver's own obligation and is withdrawn. The text is left
+standing here, uncut, as the record of what was claimed.]** What they can do with our
 artifact: take a compliance measurement of their own draft criterion, per agency domain, computed
 from public evidence they do not have to trust us for — because the method and the capture
 identifiers are published with it and re-run to the same numbers. A standard that cannot say

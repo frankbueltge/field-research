@@ -34,3 +34,7 @@ energy: frame 712 -> sample 80
 [nist 12/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/char-enhancing-approaches-polymer-flammability-effect-radicals-magic-angle-spinning-13c
 [nist 13/80] n12=5 m12=4 pairable=True https://www.nist.gov/publications/guidelines-cell-phone-and-pda-security
 [nist 14/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/enduring-appeal-least-squares-fitting-computational-coordinate-metrology
+[nist 15/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/application-quantitative-cavity-ring-down-spectroscopy-measruements-line-shapes-and
+[nist 16/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/predictive-power-annellation-theory-case-c32h16-benzenoid-polycyclic-aromatic
+[nist 17/80] n12=3 m12=3 pairable=True https://www.nist.gov/publications/high-confidence-level-calibration-afm-based-fracture-testing-nanobeams
+[nist 18/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/characterization-confined-ceiling-jet-presence-upper-layer-transient-and-steady-state
