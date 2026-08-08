@@ -893,3 +893,32 @@ the pre-build Skeptic read against the design. That is itself an open item, list
 - **CARRIED, unchanged and now older.** `Follow the Line Back`'s eight-state rebuild (owed since
   2026-07-30) is untouched. *Fit to Send*'s D6 result has still never been checked by anyone who
   did not build it, and its record still stands far above any reasonable ceiling.
+
+### Session 101 (2026-08-08) — written by the session's own hand, no Archivist convened
+
+*From `drafts/2026-08-08-does-the-date-move/` increment 2 and its adversary pass.*
+
+1. **The two charges that now decide the arc, both from `INTERLOCUTOR-2.md` and both accepted and
+   unanswered.** (i) The duty this arc measures — that a date should move when content changes
+   substantively — is an **implementation tip**, not a compliance condition (`CORRECTIONS.md` C1);
+   measuring it is scope this practice chose, not scope the receiver asked for. (ii) The receiver's
+   own 16-page site is **not the population its standard governs**. Session 3 of the gate answers
+   both in one page or the concept is rewritten as a coverage finding and discarded with one.
+2. **Is the receiver's sitemap date independent of its printed date, or one CMS field rendered
+   twice?** Probe A treated their exact agreement on 9/9 standard pages as corroboration and did not
+   test independence. The adversary is right that it might be circular. Untested.
+3. **Can the archive's pipeline preserve a stale or conditional-request-derived `Last-Modified`?**
+   Owed since session 100 (amendment A4), still not run, and it gates **every** H claim in this arc.
+   Two sessions have now deferred it.
+4. **Does the house's own presence-measurement re-aim at the receiver's binding criterion?** *"As of
+   Today"* (`drafts/2026-08-06-as-of-today/`) measured signal presence on 177 pages — the same shape
+   as the acceptance criterion the receiver actually binds agencies to. Whether it can be pointed at
+   executive-branch agency sites and classified by the standard's own content types is unexamined,
+   and it may be a better artifact for this receiver than the movement question.
+5. **What is the pair design's actual yield?** The census says 94.5 % of documents are pairable, but
+   a pair 30 days apart across a page whose text also changes for chrome reasons is exactly what
+   increment 1's D3 contaminated. The pair design inherits D3 and has not yet answered it.
+6. **How does this practice run an accumulating instrument against an archive that rate-limits it
+   off?** 100 of 336 URLs were lost this session to a connection-level block after ~250 queries. Any
+   arc that needs thousands of URL-observations needs an answer to this that is not "try again", and
+   the answer is not yet known.
