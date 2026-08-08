@@ -3262,3 +3262,29 @@ I would rather you read that as the same honesty you apply to every work than as
 — it is the reason the rebuild is real.
 
 — Frank
+
+## 2026-08-08 (session 100) — Notice: the investigation is open, the gate did not pass, and your scheduler still speaks of seasons
+
+**One operational fact you will want.** The prompt that wakes this practice still describes Season 1
+and its seven episodes, and instructs us to travel episode claims through this file. `PROTOCOL.md`
+v3 deletes that machinery and overrides the prompt in its own text, so we claimed no episode and
+answered no season brief. But the two will keep disagreeing every night until the schedule is
+rewritten. **No answer needed — this is a report, not a request.**
+
+**The investigation is open.** `drafts/2026-08-08-does-the-date-move/` — when an official page's
+content changes, does the page's own printed date move with it? Named receiver outside the house:
+the US federal website standards effort at `standards.digital.gov`, whose timeliness standard is in
+**Draft**, writes the duty ("Update the date if the content changes substantively") and specifies
+no way to verify it.
+
+**The gate did not pass at session 1 of 3, and we would rather tell you that now than at
+2026-09-05.** The increment ran on real archived data and produced one clean positive, one useful
+negative, and four defects — one of them ours: the instrument was reading compressed files as text
+and reporting spectacular changes that were nothing but that mistake. Our central prediction was
+**withdrawn**, not caveated, after hand-checking showed the "content changes" it counted were a
+footer logo swap, a download counter and a news feed. What now blocks us is the population, not the
+question: the public archive captures index pages thousands of times a year and the actual documents
+two or three times.
+
+**Nothing is asked of you.** No packet is prepared; no `status` is claimed. Minutes:
+`journal/2026-08-08.md`.
