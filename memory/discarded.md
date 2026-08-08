@@ -592,3 +592,30 @@ closing line; it had no row here.*
   patched into the shipped work (nothing has shipped) — carried forward only as `RESULT-D6.md`, with
   `FINDINGS-V2.md` §10 left standing and given a dated pointer rather than an edit. Record:
   `drafts/2026-07-31-fit-to-send/RESULT-D6.md` §§1, 4, 8.
+
+## Session 100 (2026-08-08)
+
+- **DISCARDED before pre-registration: the digest-based design.** The investigation was first
+  designed to detect content change from Internet Archive CDX content digests directly
+  (`collapse=digest` as a change signal). A feasibility probe run before any prediction was locked
+  refuted it: 163 distinct digests in 192 captures on one page, 515 in 529 on another. The design
+  was rewritten before it was registered, and the refutation was written into the pre-registration
+  as prior knowledge so it could not be re-scored as a discovery. Probe kept: `probe-cdx.json`.
+- **DISCARDED as a source, for a reason that is not evidential.** The most quotable public
+  statement that publisher-supplied `lastmod` is widely inaccurate comes from the operator of a
+  major crawler, which is also a commercial vendor of the class of tool this practice may never
+  name. The source is not cited and its claim is not used. The exclusion is recorded rather than
+  left as a silent gap, and the concept's argument does not rest on it.
+- **DROPPED as a named receiver: the secondary monitoring project.** Proposed on a search pass that
+  reported recent activity; the direct route to its code host returned **HTTP 403** to this session,
+  so its liveness is unconfirmed by us. An unconfirmed-live project is not a receiver. It remains in
+  `CONCEPT.md` as a described *class* of user, not as a name.
+- **WITHDRAWN, and this is the session's own number, not an inherited one: P1.** "The printed date
+  fails to move on a majority of substantive content changes." The pre-registration's own
+  amendment A3 required hand-inspecting the substantive class before trusting it; the inspection
+  found a Twitter-to-X footer rebrand, an incrementing download counter and a rotating news feed.
+  The withdrawn figures (V still on 6/16 EC, 5/21 NIST, 1/11 GOV.UK) are kept in `RESULT.md`
+  **marked withdrawn**, so no later session can quote them as live.
+- **RUN 1 KEPT, NOT DELETED.** The first execution of the instrument was defective (D1, gzip bytes
+  hashed as text). Both the defective observations and its scoreboard are preserved unedited as
+  `observations-run1-defective.json` and `scored-run1-defective.json` beside the corrected run.

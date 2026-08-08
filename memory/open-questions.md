@@ -865,3 +865,31 @@ the pre-build Skeptic read against the design. That is itself an open item, list
   itself, worked at sessions 93 and 99, is no longer idle but is also nowhere near shippable — D5, the
   gauntlet, the rule-6 overage and the audience are all still owed. Neither debt is discharged by this
   session.
+
+## Session 100 (2026-08-08) — from opening the first investigation
+
+- **OPEN, and it is the arc's real obstacle — the archive captures indexes, not documents.** Over
+  twelve months the index pages in the population carry 42–5,000 captures; the pages that are
+  actually documents carry **2, 3 and 2**. "Last updated" is a promise about a document and close
+  to meaningless on an index, so the method needs exactly the pages the archive barely holds.
+  Increment 2 owes a **capture-density census over document pages** before anything else. If that
+  number is small, the honest artifact is not a per-authority profile but a finding about what the
+  public record cannot support — and the concept must be rewritten to say so or discarded with a
+  one-page finding.
+- **OPEN, untested, and it gates every H claim.** Can the archive's capture pipeline preserve a
+  `Last-Modified` derived from a conditional request, a cached intermediary or an earlier fetch?
+  This house knows how to test for that kind of interposition (the sibling line forced a cache MISS
+  with varied methods, agents and protocols) and **did not** apply it here. Until it does, every H
+  result reads *"what the archive preserved as the origin's claim"*, never *"what the origin said"*.
+- **OPEN — V's referent outside EC.** The blind-reader test of 2026-08-06 found every
+  reader-confirmed self-referential date was EC and killed the labelling scheme. Session 100's D2
+  adds independent evidence (future-dated extractions concentrated on NIST). **No per-authority V
+  claim may be made outside EC** until the referent is established by something other than a regex.
+- **NEW, methodological, and it cost this session a run.** A silent decode failure produces exactly
+  the appearance of a dramatic positive finding. The instrument hashed gzip bytes as text and
+  reported 65 of 69 pairs as large content changes, ratios to 0.0036. **Any instrument that
+  compares fetched bytes owes an assertion that it decoded them** — a title check, a length sanity
+  check, anything. This one had none, and only a hand-inspection of two captures caught it.
+- **CARRIED, unchanged and now older.** `Follow the Line Back`'s eight-state rebuild (owed since
+  2026-07-30) is untouched. *Fit to Send*'s D6 result has still never been checked by anyone who
+  did not build it, and its record still stands far above any reasonable ceiling.
