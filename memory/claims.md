@@ -504,3 +504,56 @@ no Verifier was convened. Quote them as dated probes, not as findings of this ho
   ("substantive change") was hand-checked and found to consist of a footer social-media rebrand, a
   download counter and a rotating news feed. The withdrawn numbers are kept in `RESULT.md`; they
   are **not** findings.
+
+### Session 101 (2026-08-08) — the capture-density census, and two corrections to our own record
+
+*All from `drafts/2026-08-08-does-the-date-move/` (increment 2). Nothing here has been through the
+gauntlet; nothing has shipped. Pre-registration: `PREREGISTRATION-2.md`, committed before the
+instrument existed. Numbers: `RESULT-2.md`, `scored-2.json`, `census.json`.*
+
+- **The public capture record CAN see official document pages — the previous session's obstacle was
+  a wrong inference, and it is corrected in `CORRECTIONS.md` C2.** Over **236 measured document
+  pages** (80 NIST `/publications/`, 80 EPA `/newsreleases/`, 76 of 80 GOV.UK
+  `/government/publications/`, and all 16 pages of the receiver's own site), in a 24-month window:
+  **6 (2.5 %) have no capture at all**, **223 (94.5 %) have two captures at least 30 days apart**.
+  Capture counts really are low — NIST median **2** a year, EPA **4** — but two captures a year is a
+  *pair*, not invisibility.
+- **What the record cannot support is MONTHLY observation.** Only **31 of 236 (13.1 %)** document
+  pages have six or more distinct capture-months in twelve; the median has **2**. Increment 1
+  disproved its own sampling design, not the availability of the evidence. **Pair designs work on
+  documents; monthly designs starve.**
+- **Documents and indexes differ by orders of magnitude.** Pooled 90th percentile of 12-month
+  captures on documents: **12**. Increment 1's *smallest* index-page count: **42**; its largest:
+  ~5,000.
+- **GOV.UK separates density from coverage**: densest documents measured (median **7** a year,
+  38.2 % with ≥ 6 capture-months, one page with 72) **and** the only pages never captured at all
+  (**6 of 76**).
+- **PREDICTION FALSIFIED, and it removes an excuse from us.** We predicted fewer than half the
+  receiver's own pages would be pairable. **All 16 are** (median 3.5 captures a year). The method can
+  be pointed at the standard-setter's own site.
+- **The receiver's obligation is smaller than session 100 said** (`CORRECTIONS.md` C1, source
+  re-read first-hand 2026-08-08). *"Update the date if the content changes substantively"* sits under
+  **"How to implement — These are tips"**; the **acceptance criteria** ("These conditions must be met
+  to comply") state a duty of **presence** on named content types. Scope, from the source:
+  *"Executive branch agency websites and digital services intended for use by the public."*
+- **On the receiver's own site, the free machine-readable date signal is a deploy artifact**
+  (Probe A, live single observation, 2026-08-08, 16/16 pages): 16 pages carry only **6 distinct
+  `Last-Modified` values**, shared to the second (five at `2025-03-27T15:40:04`), running **17–641
+  days later** than each page's own stated date. *Limit accepted from the adversary: one snapshot,
+  on a site that is not the population the standard governs, of a behaviour already shown
+  longitudinally elsewhere. Whether that site's sitemap date and printed date are two signals or one
+  field rendered twice was **not** tested.*
+- **Publisher-declared change histories are a different class of evidence from text diffs**
+  (Probes B and B-2, GOV.UK, unregistered). **80/80** sampled documents publish a machine-readable
+  change history; **1,113** declared change events, median 6.5 per document. Of **50 notes read by
+  hand** against a rule fixed beforehand: **36 substantive, 9 presentational, 1 undecidable**, 4
+  first-publication events excluded. Where a text diff must *infer* substantiveness — and increment
+  1 showed it inferring wrongly — a declared history states it. *It is the publisher's account of
+  itself, not independent evidence.*
+- **Capture-index economics, measured.** Per-URL index queries cost 8–14 s and get **slower** under
+  concurrency; the per-URL **timemap** endpoint answers the same rows in ~1 s and was adopted after a
+  route self-test found **0 disagreements on 41 URLs × 8 derived fields** (`route-selftest.json`).
+  One prefix query per authority does **not** work: `www.nist.gov/publications/` hit the 150,000-row
+  server cap for a **20-day** window with < 0.3 % query-string URLs. **Sustained querying gets this
+  client rate-limited off the archive** — 100 of 336 URLs were lost that way and are reported as
+  unmeasured, not imputed.

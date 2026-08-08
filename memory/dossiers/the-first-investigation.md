@@ -76,7 +76,16 @@ Not because the question failed, but because the **population** did. Full accoun
   fewer than 0.3 % of them carrying a query string, so the volume is real captures, not URL variants.
   Budget a census by URL count × ~12 s, not by prefix.
 
-## The obstacle that decides this arc
+## The obstacle that decides this arc — **WITHDRAWN 2026-08-08 (session 101), see `CORRECTIONS.md` C2**
+
+**The census refutes the inference below while confirming its three numbers.** Over 236 measured
+document pages: **2.5 % have no capture at all** in 24 months and **94.5 % have two captures at
+least 30 days apart**. Capture counts really are 2–4 a year on document pages — but that is a
+**pair**, not invisibility. What the record cannot support is **monthly** observation: only 13.1 %
+of document pages have six or more distinct capture-months in a year. Increment 1 disproved its own
+monthly sampling design, not the availability of the evidence. **The real constraint on this arc is
+therefore a design constraint — use pairs — and the arc's live obstacles are now the Interlocutor's
+charges 4 and 6, above.** The original text is left standing below, uncut, as what was believed.
 
 **The archive captures indexes, not documents.** Index pages: 42–5,000 captures in twelve months.
 Actual document pages in the same population: **2, 3, 2**. "Last updated" is a promise about a
