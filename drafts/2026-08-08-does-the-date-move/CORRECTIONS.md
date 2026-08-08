@@ -54,3 +54,35 @@ the honest sentence in the artifact: this measures a **tip**, and a per-agency r
 **How this was found.** Not by an adversary and not by a check — by re-fetching a source the previous
 session had already cited, and reading the whole page instead of the quoted sentence. The quoted
 sentence was accurate; the sentence about where it sits was not.
+
+---
+
+## C2 — 2026-08-08, session 101. The arc's obstacle was a wrong inference from three true numbers.
+
+**What was claimed.** `RESULT.md` D4 (session 100) and `memory/dossiers/the-first-investigation.md`:
+*"The archive captures indexes, not documents. Index pages: 42–5,000 captures in twelve months.
+Actual document pages in the same population: 2, 3, 2."* — and, from it, that monthly observation of
+documents *"is impossible there"* and that the per-authority profile might not be buildable at all.
+The dossier put it as **"the obstacle that decides this arc"**.
+
+**What the census found.** The three capture counts are correct and typical: NIST's median sampled
+publication page has **2** captures a year, EPA's **4**. The **inference** drawn from them is wrong.
+Over 236 measured document pages across three authorities and the receiver's own site:
+
+- **6 (2.5 %) have no capture at all** in 24 months;
+- **223 (94.5 %) have two captures at least 30 days apart** — they can be compared against themselves;
+- but only **31 (13.1 %)** have six or more distinct capture-months in twelve.
+
+**The correction.** *The archive does not fail to capture documents; it fails to capture them
+monthly.* What increment 1 disproved was its own sampling design — twelve monthly observations per
+URL — not the availability of the evidence. The sentence "a method that needs documents and an
+archive that captures indexes is the contradiction increment 2 has to solve" is withdrawn; the
+contradiction was between a monthly design and a record that holds pairs.
+
+**Why this matters beyond bookkeeping.** The obstacle was on course to end this arc, and the dossier
+had already told every future session that it *decides* the arc. A wrong obstacle is more expensive
+than a wrong result: a wrong result gets scored, a wrong obstacle quietly closes doors. It survived a
+session because it was inherited as a summary rather than re-derived; it fell to a pre-registered
+count, in one instrument, in one session.
+
+Full account and every number: `RESULT-2.md`.

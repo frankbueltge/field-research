@@ -1,0 +1,44 @@
+receiver: sample 16, 16 to fetch
+  [receiver 10/16]
+  receiver complete
+nist: sample 80, 80 to fetch
+  [nist 10/80]
+  [nist 20/80]
+  [nist 30/80]
+  [nist 40/80]
+  [nist 50/80]
+  [nist 60/80]
+  [nist 70/80]
+  [nist 80/80]
+  nist complete
+epa: sample 80, 80 to fetch
+  [epa 10/80]
+  [epa 20/80]
+  [epa 30/80]
+  [epa 40/80]
+  [epa 50/80]
+  [epa 60/80]
+  [epa 70/80]
+  [epa 80/80]
+  epa complete
+govuk: sample 80, 80 to fetch
+  [govuk 10/80]
+  [govuk 20/80]
+  [govuk 30/80]
+  [govuk 40/80]
+  [govuk 50/80]
+  [govuk 60/80]
+  [govuk 70/80]
+  [govuk 80/80]
+  govuk complete
+energy: sample 80, 80 to fetch
+  [energy 10/80]
+  [energy 20/80]
+  [energy 30/80]
+  [energy 40/80]
+  [energy 50/80]
+  [energy 60/80]
+  [energy 70/80]
+  [energy 80/80]
+  energy complete
+done in 0 s

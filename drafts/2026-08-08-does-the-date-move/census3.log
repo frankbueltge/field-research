@@ -47,3 +47,6 @@ resuming: 36 URLs already measured
 [nist 24/80] n12=6 m12=6 pairable=True https://www.nist.gov/publications/secure-hash-standard-shs
 [nist 25/80] n12=3 m12=3 pairable=True https://www.nist.gov/publications/freezing-behavior-and-diffusion-water-proximity-single-supported-zwitterionic-and
 [nist 26/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/prototyping-sp4-secure-data-network-system-transport-protocol-interoperability
+[nist 27/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/surface-sensitive-raman-microscopy-total-internal-reflection-illumination
+[nist 28/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/two-svds-su14ffice-spectral-decompositions-probabilistic-topic-modeling-and-latent
+[nist 29/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/optical-phase-noise-atmospheric-fluctuations-and-its-impact-optical-time-frequency

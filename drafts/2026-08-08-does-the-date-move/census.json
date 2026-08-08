@@ -1,5 +1,6 @@
 {
- "generated_utc": "2026-08-08T04:04:04Z",
+ "generated_utc": "2026-08-08T04:07:21Z",
+ "route": "per-URL timemap; see module docstring and route-selftest.json",
  "seed": 20260808,
  "window24": [
   "20240801",
@@ -20,26 +21,50 @@
  "authorities": {
   "receiver": [
    {
-    "url": "https://standards.digital.gov/standards/html-page-title/",
-    "n24": 20,
+    "url": "https://standards.digital.gov/",
+    "n24": 47,
     "truncated": false,
-    "n12": 6,
-    "months24": 10,
-    "months12": 4,
-    "first": "20241103195649",
+    "n12": 11,
+    "months24": 17,
+    "months12": 7,
+    "first": "20240928012607",
     "last": "20260701172350",
     "pairable": true,
-    "span_days": 604
+    "span_days": 641
    },
    {
-    "url": "https://standards.digital.gov/standards/",
-    "n24": 37,
+    "url": "https://standards.digital.gov/404.html",
+    "n24": 7,
     "truncated": false,
-    "n12": 8,
+    "n12": 0,
+    "months24": 4,
+    "months12": 0,
+    "first": "20241127044819",
+    "last": "20250527225649",
+    "pairable": true,
+    "span_days": 181
+   },
+   {
+    "url": "https://standards.digital.gov/about/",
+    "n24": 33,
+    "truncated": false,
+    "n12": 7,
     "months24": 14,
+    "months12": 6,
+    "first": "20241001204922",
+    "last": "20260701172350",
+    "pairable": true,
+    "span_days": 637
+   },
+   {
+    "url": "https://standards.digital.gov/contact/",
+    "n24": 25,
+    "truncated": false,
+    "n12": 6,
+    "months24": 13,
     "months12": 5,
-    "first": "20241002011556",
-    "last": "20260701172339",
+    "first": "20241002123417",
+    "last": "20260701172350",
     "pairable": true,
     "span_days": 637
    },
@@ -56,28 +81,28 @@
     "span_days": 181
    },
    {
-    "url": "https://standards.digital.gov/standards/contact-page/",
-    "n24": 12,
+    "url": "https://standards.digital.gov/search/",
+    "n24": 8,
     "truncated": false,
-    "n12": 2,
-    "months24": 8,
-    "months12": 2,
-    "first": "20241127044819",
-    "last": "20260115143602",
+    "n12": 0,
+    "months24": 6,
+    "months12": 0,
+    "first": "20241103193235",
+    "last": "20250618115709",
     "pairable": true,
-    "span_days": 414
+    "span_days": 226
    },
    {
-    "url": "https://standards.digital.gov/standards/site-search/",
-    "n24": 12,
+    "url": "https://standards.digital.gov/standards/",
+    "n24": 37,
     "truncated": false,
-    "n12": 2,
-    "months24": 7,
-    "months12": 2,
-    "first": "20241103185122",
-    "last": "20260223052803",
+    "n12": 8,
+    "months24": 14,
+    "months12": 5,
+    "first": "20241002011556",
+    "last": "20260701172339",
     "pairable": true,
-    "span_days": 476
+    "span_days": 637
    },
    {
     "url": "https://standards.digital.gov/standards/banner/",
@@ -92,52 +117,16 @@
     "span_days": 426
    },
    {
-    "url": "https://standards.digital.gov/standards/meta-page-description/",
-    "n24": 15,
+    "url": "https://standards.digital.gov/standards/contact-page/",
+    "n24": 12,
     "truncated": false,
-    "n12": 4,
-    "months24": 10,
-    "months12": 4,
-    "first": "20241127044820",
-    "last": "20260701172350",
+    "n12": 2,
+    "months24": 8,
+    "months12": 2,
+    "first": "20241127044819",
+    "last": "20260115143602",
     "pairable": true,
-    "span_days": 581
-   },
-   {
-    "url": "https://standards.digital.gov/contact/",
-    "n24": 25,
-    "truncated": false,
-    "n12": 6,
-    "months24": 13,
-    "months12": 5,
-    "first": "20241002123417",
-    "last": "20260701172350",
-    "pairable": true,
-    "span_days": 637
-   },
-   {
-    "url": "https://standards.digital.gov/",
-    "n24": 47,
-    "truncated": false,
-    "n12": 11,
-    "months24": 17,
-    "months12": 7,
-    "first": "20240928012607",
-    "last": "20260701172350",
-    "pairable": true,
-    "span_days": 641
-   },
-   {
-    "url": "https://standards.digital.gov/about/",
-    "n24": 33,
-    "truncated": false,
-    "n12": 7,
-    "months24": 14,
-    "months12": 6,
-    "first": "20241001204922",
-    "last": "20260701172350",
-    "pairable": true,
-    "span_days": 637
+    "span_days": 414
    },
    {
     "url": "https://standards.digital.gov/standards/content-timeliness-indicator/",
@@ -164,28 +153,16 @@
     "span_days": 451
    },
    {
-    "url": "https://standards.digital.gov/standards/page-level-feedback/",
-    "n24": 9,
+    "url": "https://standards.digital.gov/standards/html-page-title/",
+    "n24": 20,
     "truncated": false,
-    "n12": 4,
-    "months24": 6,
-    "months12": 3,
-    "first": "20250320142148",
-    "last": "20260306022301",
+    "n12": 6,
+    "months24": 10,
+    "months12": 4,
+    "first": "20241103195649",
+    "last": "20260701172350",
     "pairable": true,
-    "span_days": 350
-   },
-   {
-    "url": "https://standards.digital.gov/search/",
-    "n24": 8,
-    "truncated": false,
-    "n12": 0,
-    "months24": 6,
-    "months12": 0,
-    "first": "20241103193235",
-    "last": "20250618115709",
-    "pairable": true,
-    "span_days": 226
+    "span_days": 604
    },
    {
     "url": "https://standards.digital.gov/standards/language-selector/",
@@ -200,16 +177,3216 @@
     "span_days": 458
    },
    {
-    "url": "https://standards.digital.gov/404.html",
+    "url": "https://standards.digital.gov/standards/meta-page-description/",
+    "n24": 15,
+    "truncated": false,
+    "n12": 4,
+    "months24": 10,
+    "months12": 4,
+    "first": "20241127044820",
+    "last": "20260701172350",
+    "pairable": true,
+    "span_days": 581
+   },
+   {
+    "url": "https://standards.digital.gov/standards/page-level-feedback/",
+    "n24": 9,
+    "truncated": false,
+    "n12": 4,
+    "months24": 6,
+    "months12": 3,
+    "first": "20250320142148",
+    "last": "20260306022301",
+    "pairable": true,
+    "span_days": 350
+   },
+   {
+    "url": "https://standards.digital.gov/standards/site-search/",
+    "n24": 12,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20241103185122",
+    "last": "20260223052803",
+    "pairable": true,
+    "span_days": 476
+   }
+  ],
+  "nist": [
+   {
+    "url": "https://www.nist.gov/publications/acoustic-emission-structural-materials-exposed-open-flames",
+    "n24": 11,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20250127234636",
+    "last": "20260312173929",
+    "pairable": true,
+    "span_days": 408
+   },
+   {
+    "url": "https://www.nist.gov/publications/affordable-fire-safety-board-and-care-homes-regulatory-challenge-interim-report",
+    "n24": 11,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20240910220312",
+    "last": "20260211225328",
+    "pairable": true,
+    "span_days": 519
+   },
+   {
+    "url": "https://www.nist.gov/publications/alkali-silica-reaction-degradation-nuclear-power-plant-concrete-structures-scoping",
+    "n24": 10,
+    "truncated": false,
+    "n12": 2,
+    "months24": 8,
+    "months12": 2,
+    "first": "20240917065217",
+    "last": "20260418205459",
+    "pairable": true,
+    "span_days": 578
+   },
+   {
+    "url": "https://www.nist.gov/publications/alternative-analyses-measurements-planck-constant",
+    "n24": 11,
+    "truncated": false,
+    "n12": 2,
+    "months24": 8,
+    "months12": 2,
+    "first": "20241105232934",
+    "last": "20260218102015",
+    "pairable": true,
+    "span_days": 469
+   },
+   {
+    "url": "https://www.nist.gov/publications/alternative-fire-extinguishing-agents-marketed-united-states-being-suitable-class-fires",
+    "n24": 10,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20241110002822",
+    "last": "20260314180221",
+    "pairable": true,
+    "span_days": 489
+   },
+   {
+    "url": "https://www.nist.gov/publications/application-quantitative-cavity-ring-down-spectroscopy-measruements-line-shapes-and",
+    "n24": 10,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20241203145222",
+    "last": "20260520232704",
+    "pairable": true,
+    "span_days": 533
+   },
+   {
+    "url": "https://www.nist.gov/publications/autobid-20-microcomputer-system-police-patrol-vehicle-selection",
+    "n24": 9,
+    "truncated": false,
+    "n12": 2,
+    "months24": 6,
+    "months12": 2,
+    "first": "20250127234135",
+    "last": "20260207163058",
+    "pairable": true,
+    "span_days": 375
+   },
+   {
+    "url": "https://www.nist.gov/publications/basing-cybersecurity-training-user-perceptions",
+    "n24": 14,
+    "truncated": false,
+    "n12": 3,
+    "months24": 9,
+    "months12": 2,
+    "first": "20241103100443",
+    "last": "20260212105037",
+    "pairable": true,
+    "span_days": 466
+   },
+   {
+    "url": "https://www.nist.gov/publications/broadband-noise-limit-photodetection-ultralow-jitter-optical-pulses",
+    "n24": 10,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20240929105626",
+    "last": "20260518225900",
+    "pairable": true,
+    "span_days": 596
+   },
+   {
+    "url": "https://www.nist.gov/publications/building-one-time-memories-isolated-qubits",
+    "n24": 12,
+    "truncated": false,
+    "n12": 2,
+    "months24": 8,
+    "months12": 2,
+    "first": "20241114175618",
+    "last": "20260312050031",
+    "pairable": true,
+    "span_days": 482
+   },
+   {
+    "url": "https://www.nist.gov/publications/calibration-and-characterization-seaprism-radiometer-aeronet-oc",
+    "n24": 14,
+    "truncated": false,
+    "n12": 2,
+    "months24": 9,
+    "months12": 2,
+    "first": "20241014023217",
+    "last": "20260209062411",
+    "pairable": true,
+    "span_days": 483
+   },
+   {
+    "url": "https://www.nist.gov/publications/calorimetric-and-equilibrium-investigation-reaction-methyl-ferulateaq-h2ol-methanolaq",
+    "n24": 10,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20250118151156",
+    "last": "20260315084740",
+    "pairable": true,
+    "span_days": 420
+   },
+   {
+    "url": "https://www.nist.gov/publications/certification-total-arsenic-blood-and-urine-standard-reference-materials-radiochemical",
+    "n24": 12,
+    "truncated": false,
+    "n12": 1,
+    "months24": 8,
+    "months12": 1,
+    "first": "20241211233524",
+    "last": "20251114191224",
+    "pairable": true,
+    "span_days": 337
+   },
+   {
+    "url": "https://www.nist.gov/publications/char-enhancing-approaches-polymer-flammability-effect-radicals-magic-angle-spinning-13c",
+    "n24": 10,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20250127234733",
+    "last": "20260314142436",
+    "pairable": true,
+    "span_days": 410
+   },
+   {
+    "url": "https://www.nist.gov/publications/characterization-confined-ceiling-jet-presence-upper-layer-transient-and-steady-state",
+    "n24": 8,
+    "truncated": false,
+    "n12": 2,
+    "months24": 8,
+    "months12": 2,
+    "first": "20240810202718",
+    "last": "20260308111752",
+    "pairable": true,
+    "span_days": 574
+   },
+   {
+    "url": "https://www.nist.gov/publications/characterization-electrothermal-actuation-nanometer-and-microradian-precision",
+    "n24": 13,
+    "truncated": false,
+    "n12": 3,
+    "months24": 8,
+    "months12": 3,
+    "first": "20241007140536",
+    "last": "20260421051937",
+    "pairable": true,
+    "span_days": 560
+   },
+   {
+    "url": "https://www.nist.gov/publications/characterization-wafer-diode-noise-sources",
+    "n24": 10,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20250128021118",
+    "last": "20260214114404",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.nist.gov/publications/computational-model-rise-and-dispersion-wind-blown-buoyancy-driven-plumes-part-2",
+    "n24": 10,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20241004054405",
+    "last": "20260607205518",
+    "pairable": true,
+    "span_days": 611
+   },
+   {
+    "url": "https://www.nist.gov/publications/computer-integrated-knowledge-system-ciks-construction-materials-components-and-systems",
+    "n24": 15,
+    "truncated": false,
+    "n12": 5,
+    "months24": 9,
+    "months12": 3,
+    "first": "20241210223049",
+    "last": "20260515121009",
+    "pairable": true,
+    "span_days": 520
+   },
+   {
+    "url": "https://www.nist.gov/publications/critical-behavior-zero-field-magnetic-fluctuations-perpendicularly-magnetized-thin",
+    "n24": 11,
+    "truncated": false,
+    "n12": 3,
+    "months24": 8,
+    "months12": 3,
+    "first": "20250127234610",
+    "last": "20260308174309",
+    "pairable": true,
+    "span_days": 404
+   },
+   {
+    "url": "https://www.nist.gov/publications/determination-cd-cr-and-hg-srm-2584-trace-elements-indoor-dust-high-resolution",
+    "n24": 12,
+    "truncated": false,
+    "n12": 3,
+    "months24": 9,
+    "months12": 3,
+    "first": "20240810042052",
+    "last": "20260607151554",
+    "pairable": true,
+    "span_days": 666
+   },
+   {
+    "url": "https://www.nist.gov/publications/development-ultrasmall-angle-x-ray-scattering-x-ray-photon-correlation-spectroscopy",
+    "n24": 12,
+    "truncated": false,
+    "n12": 3,
+    "months24": 9,
+    "months12": 3,
+    "first": "20240813054607",
+    "last": "20260422020630",
+    "pairable": true,
+    "span_days": 616
+   },
+   {
+    "url": "https://www.nist.gov/publications/dimensional-metrology-lab-chip-internal-structures-comparison-optical-coherence",
+    "n24": 12,
+    "truncated": false,
+    "n12": 3,
+    "months24": 7,
+    "months12": 3,
+    "first": "20241005060403",
+    "last": "20260607234312",
+    "pairable": true,
+    "span_days": 610
+   },
+   {
+    "url": "https://www.nist.gov/publications/efficient-diffractive-phase-optics-electrons",
+    "n24": 11,
+    "truncated": false,
+    "n12": 2,
+    "months24": 9,
+    "months12": 2,
+    "first": "20240803010750",
+    "last": "20260313174258",
+    "pairable": true,
+    "span_days": 587
+   },
+   {
+    "url": "https://www.nist.gov/publications/electrodermal-activity-and-eye-movements-inform-usability-passwords",
+    "n24": 15,
+    "truncated": false,
+    "n12": 3,
+    "months24": 9,
+    "months12": 3,
+    "first": "20241014053757",
+    "last": "20260311135229",
+    "pairable": true,
+    "span_days": 513
+   },
+   {
+    "url": "https://www.nist.gov/publications/enduring-appeal-least-squares-fitting-computational-coordinate-metrology",
+    "n24": 10,
+    "truncated": false,
+    "n12": 2,
+    "months24": 8,
+    "months12": 2,
+    "first": "20250127234446",
+    "last": "20260314003133",
+    "pairable": true,
+    "span_days": 410
+   },
+   {
+    "url": "https://www.nist.gov/publications/energy-performance-sensitivity-net-zero-energy-home-design-and-use-specifications",
+    "n24": 14,
+    "truncated": false,
+    "n12": 3,
+    "months24": 9,
+    "months12": 3,
+    "first": "20241005135528",
+    "last": "20260310223439",
+    "pairable": true,
+    "span_days": 521
+   },
+   {
+    "url": "https://www.nist.gov/publications/evaluating-texture-compression-masking-effects-using-objective-image-quality-assessment",
+    "n24": 14,
+    "truncated": false,
+    "n12": 3,
+    "months24": 9,
+    "months12": 3,
+    "first": "20241009223119",
+    "last": "20260609154813",
+    "pairable": true,
+    "span_days": 607
+   },
+   {
+    "url": "https://www.nist.gov/publications/exponential-scaling-clock-stability-atom-number",
+    "n24": 10,
+    "truncated": false,
+    "n12": 2,
+    "months24": 8,
+    "months12": 2,
+    "first": "20240809004307",
+    "last": "20260314105614",
+    "pairable": true,
+    "span_days": 582
+   },
+   {
+    "url": "https://www.nist.gov/publications/freezing-behavior-and-diffusion-water-proximity-single-supported-zwitterionic-and",
+    "n24": 13,
+    "truncated": false,
+    "n12": 3,
+    "months24": 7,
+    "months12": 3,
+    "first": "20241212080225",
+    "last": "20260307083117",
+    "pairable": true,
+    "span_days": 450
+   },
+   {
+    "url": "https://www.nist.gov/publications/general-security-requirements-equipment-using-data-encryption-standard",
+    "n24": 11,
+    "truncated": false,
+    "n12": 3,
+    "months24": 7,
+    "months12": 3,
+    "first": "20241016052010",
+    "last": "20260308143943",
+    "pairable": true,
+    "span_days": 508
+   },
+   {
+    "url": "https://www.nist.gov/publications/graphene-dielectric-micromembrane-optoelectromechanical-hybrid-devices",
+    "n24": 13,
+    "truncated": false,
+    "n12": 2,
+    "months24": 8,
+    "months12": 2,
+    "first": "20241027015351",
+    "last": "20260316153119",
+    "pairable": true,
+    "span_days": 505
+   },
+   {
+    "url": "https://www.nist.gov/publications/guide-using-vulnerability-naming-schemes",
+    "n24": 9,
+    "truncated": false,
+    "n12": 2,
+    "months24": 6,
+    "months12": 2,
+    "first": "20250127234611",
+    "last": "20260312113457",
+    "pairable": true,
+    "span_days": 408
+   },
+   {
+    "url": "https://www.nist.gov/publications/guidelines-cell-phone-and-pda-security",
+    "n24": 14,
+    "truncated": false,
+    "n12": 5,
+    "months24": 10,
+    "months12": 4,
+    "first": "20241012121110",
+    "last": "20260311221353",
+    "pairable": true,
+    "span_days": 515
+   },
+   {
+    "url": "https://www.nist.gov/publications/guidelines-selection-and-use-transport-layer-security-tls-implementations",
+    "n24": 12,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20240915081507",
+    "last": "20260521153103",
+    "pairable": true,
+    "span_days": 613
+   },
+   {
+    "url": "https://www.nist.gov/publications/high-confidence-level-calibration-afm-based-fracture-testing-nanobeams",
+    "n24": 13,
+    "truncated": false,
+    "n12": 3,
+    "months24": 7,
+    "months12": 3,
+    "first": "20241203195551",
+    "last": "20260312190538",
+    "pairable": true,
+    "span_days": 463
+   },
+   {
+    "url": "https://www.nist.gov/publications/hydrogen-dynamics-laves-phase-hydride-yfe2h26-inelastic-and-quasielastic-neutron",
+    "n24": 10,
+    "truncated": false,
+    "n12": 2,
+    "months24": 6,
+    "months12": 2,
+    "first": "20250127234055",
+    "last": "20251212210902",
+    "pairable": true,
+    "span_days": 318
+   },
+   {
+    "url": "https://www.nist.gov/publications/interlaboratory-comparison-sizing-and-counting-subvisible-particles-mimicking-protein",
+    "n24": 15,
+    "truncated": false,
+    "n12": 3,
+    "months24": 9,
+    "months12": 3,
+    "first": "20240908075521",
+    "last": "20260513142012",
+    "pairable": true,
+    "span_days": 612
+   },
+   {
+    "url": "https://www.nist.gov/publications/leveraging-common-development-framework-and-delivery-approaches-through-effective",
+    "n24": 15,
+    "truncated": false,
+    "n12": 3,
+    "months24": 9,
+    "months12": 3,
+    "first": "20240929090728",
+    "last": "20260315175340",
+    "pairable": true,
+    "span_days": 532
+   },
+   {
+    "url": "https://www.nist.gov/publications/line-monitoring-osnrcdpmd-degradation-effects-using-neural-network-based-training",
+    "n24": 12,
+    "truncated": false,
+    "n12": 2,
+    "months24": 9,
+    "months12": 2,
+    "first": "20240814010634",
+    "last": "20260308212321",
+    "pairable": true,
+    "span_days": 571
+   },
+   {
+    "url": "https://www.nist.gov/publications/linear-algebra-and-sequential-importance-ssampling-network-reliability",
+    "n24": 11,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20250114210807",
+    "last": "20260217003901",
+    "pairable": true,
+    "span_days": 398
+   },
+   {
+    "url": "https://www.nist.gov/publications/lte-uplink-performance-interference-band-device-device-d2d-communications",
+    "n24": 11,
+    "truncated": false,
+    "n12": 2,
+    "months24": 6,
+    "months12": 2,
+    "first": "20241114015316",
+    "last": "20260307071956",
+    "pairable": true,
+    "span_days": 478
+   },
+   {
+    "url": "https://www.nist.gov/publications/mapping-trends-reorientational-mobilities-tetrahydroborate-anions-neutron-scattering",
+    "n24": 10,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20250127234541",
+    "last": "20260308172606",
+    "pairable": true,
+    "span_days": 404
+   },
+   {
+    "url": "https://www.nist.gov/publications/measurement-o2o3o4-and-o3o4o5-super-coster-kronig-rates-tungsten-asymmetric-diffraction",
+    "n24": 12,
+    "truncated": false,
+    "n12": 2,
+    "months24": 9,
+    "months12": 2,
+    "first": "20240814145507",
+    "last": "20260214115055",
+    "pairable": true,
+    "span_days": 548
+   },
+   {
+    "url": "https://www.nist.gov/publications/mechanical-properties-austenitic-stainless-steel-made-additive-manufacturing",
+    "n24": 12,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20241005043840",
+    "last": "20260423005334",
+    "pairable": true,
+    "span_days": 564
+   },
+   {
+    "url": "https://www.nist.gov/publications/mutual-cross-modulation-two-laser-beams-individual-photon-level",
     "n24": 7,
     "truncated": false,
-    "n12": 0,
-    "months24": 4,
-    "months12": 0,
-    "first": "20241127044819",
-    "last": "20250527225649",
+    "n12": 1,
+    "months24": 5,
+    "months12": 1,
+    "first": "20250128020900",
+    "last": "20260210003115",
     "pairable": true,
-    "span_days": 181
+    "span_days": 377
+   },
+   {
+    "url": "https://www.nist.gov/publications/nanomanufacturing-concerns-about-measurements-made-sem-part-iii-vibration-and-drift",
+    "n24": 11,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20241207210249",
+    "last": "20260124053750",
+    "pairable": true,
+    "span_days": 412
+   },
+   {
+    "url": "https://www.nist.gov/publications/optical-phase-noise-atmospheric-fluctuations-and-its-impact-optical-time-frequency",
+    "n24": 12,
+    "truncated": false,
+    "n12": 2,
+    "months24": 8,
+    "months12": 2,
+    "first": "20241007173227",
+    "last": "20260315141950",
+    "pairable": true,
+    "span_days": 523
+   },
+   {
+    "url": "https://www.nist.gov/publications/overview-radiometric-calibration-moby-ed-wl-barnes",
+    "n24": 13,
+    "truncated": false,
+    "n12": 2,
+    "months24": 9,
+    "months12": 2,
+    "first": "20240807031347",
+    "last": "20260210191946",
+    "pairable": true,
+    "span_days": 552
+   },
+   {
+    "url": "https://www.nist.gov/publications/photon-efficient-high-dimensional-quantum-key-distribution-0",
+    "n24": 12,
+    "truncated": false,
+    "n12": 2,
+    "months24": 8,
+    "months12": 2,
+    "first": "20241004221718",
+    "last": "20260211042925",
+    "pairable": true,
+    "span_days": 494
+   },
+   {
+    "url": "https://www.nist.gov/publications/polar-codes-qkd-environment",
+    "n24": 10,
+    "truncated": false,
+    "n12": 3,
+    "months24": 7,
+    "months12": 3,
+    "first": "20250128020231",
+    "last": "20260410192428",
+    "pairable": true,
+    "span_days": 437
+   },
+   {
+    "url": "https://www.nist.gov/publications/predictive-power-annellation-theory-case-c32h16-benzenoid-polycyclic-aromatic",
+    "n24": 10,
+    "truncated": false,
+    "n12": 2,
+    "months24": 6,
+    "months12": 2,
+    "first": "20250127234520",
+    "last": "20260213044058",
+    "pairable": true,
+    "span_days": 381
+   },
+   {
+    "url": "https://www.nist.gov/publications/proficiency-testing-pressure-calibration-national-voluntary-laboratory-accreditation",
+    "n24": 11,
+    "truncated": false,
+    "n12": 2,
+    "months24": 9,
+    "months12": 2,
+    "first": "20240806142604",
+    "last": "20260207111848",
+    "pairable": true,
+    "span_days": 549
+   },
+   {
+    "url": "https://www.nist.gov/publications/prototyping-sp4-secure-data-network-system-transport-protocol-interoperability",
+    "n24": 11,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20250128020640",
+    "last": "20260218193406",
+    "pairable": true,
+    "span_days": 386
+   },
+   {
+    "url": "https://www.nist.gov/publications/rbac-standard-rationale-comments-critique-ansi-standard-role-based-access-control",
+    "n24": 10,
+    "truncated": false,
+    "n12": 3,
+    "months24": 8,
+    "months12": 3,
+    "first": "20241113184914",
+    "last": "20260307002427",
+    "pairable": true,
+    "span_days": 478
+   },
+   {
+    "url": "https://www.nist.gov/publications/recommendation-existing-application-specific-key-derivation-functions-0",
+    "n24": 9,
+    "truncated": false,
+    "n12": 3,
+    "months24": 7,
+    "months12": 3,
+    "first": "20241206125515",
+    "last": "20260607230643",
+    "pairable": true,
+    "span_days": 548
+   },
+   {
+    "url": "https://www.nist.gov/publications/recommendation-triple-data-encryption-algorithm-tdea-block-cipher",
+    "n24": 13,
+    "truncated": false,
+    "n12": 3,
+    "months24": 9,
+    "months12": 3,
+    "first": "20241206132107",
+    "last": "20260311051045",
+    "pairable": true,
+    "span_days": 459
+   },
+   {
+    "url": "https://www.nist.gov/publications/reconstruction-mode-structure-faint-sources-and-its-applications",
+    "n24": 12,
+    "truncated": false,
+    "n12": 3,
+    "months24": 9,
+    "months12": 3,
+    "first": "20240807004745",
+    "last": "20260307072704",
+    "pairable": true,
+    "span_days": 577
+   },
+   {
+    "url": "https://www.nist.gov/publications/red-color-19th-century-thai-glass-studied-x-ray-and-optical-spectroscopy",
+    "n24": 12,
+    "truncated": false,
+    "n12": 2,
+    "months24": 9,
+    "months12": 2,
+    "first": "20241002202110",
+    "last": "20260305091500",
+    "pairable": true,
+    "span_days": 518
+   },
+   {
+    "url": "https://www.nist.gov/publications/report-tmach-experiment",
+    "n24": 12,
+    "truncated": false,
+    "n12": 3,
+    "months24": 9,
+    "months12": 3,
+    "first": "20241014023115",
+    "last": "20260310070553",
+    "pairable": true,
+    "span_days": 512
+   },
+   {
+    "url": "https://www.nist.gov/publications/resilience-internet-colluding-country-induced-connectivity-disruptions",
+    "n24": 14,
+    "truncated": false,
+    "n12": 4,
+    "months24": 10,
+    "months12": 4,
+    "first": "20240809181430",
+    "last": "20260607201815",
+    "pairable": true,
+    "span_days": 667
+   },
+   {
+    "url": "https://www.nist.gov/publications/second-national-ballistics-imaging-comparison-nbic-2",
+    "n24": 17,
+    "truncated": false,
+    "n12": 2,
+    "months24": 9,
+    "months12": 2,
+    "first": "20241001012311",
+    "last": "20260317094643",
+    "pairable": true,
+    "span_days": 532
+   },
+   {
+    "url": "https://www.nist.gov/publications/secure-hash-standard-shs",
+    "n24": 20,
+    "truncated": false,
+    "n12": 6,
+    "months24": 14,
+    "months12": 6,
+    "first": "20240928173742",
+    "last": "20260606100212",
+    "pairable": true,
+    "span_days": 615
+   },
+   {
+    "url": "https://www.nist.gov/publications/security-and-privacy-controls-federal-information-systems-and-organizations-including-0",
+    "n24": 17,
+    "truncated": false,
+    "n12": 3,
+    "months24": 10,
+    "months12": 3,
+    "first": "20240928201541",
+    "last": "20260213065830",
+    "pairable": true,
+    "span_days": 502
+   },
+   {
+    "url": "https://www.nist.gov/publications/self-calibrating-optomechanical-force-sensor-femtonewton-resolution",
+    "n24": 14,
+    "truncated": false,
+    "n12": 3,
+    "months24": 9,
+    "months12": 3,
+    "first": "20240928154803",
+    "last": "20260310034733",
+    "pairable": true,
+    "span_days": 527
+   },
+   {
+    "url": "https://www.nist.gov/publications/shrec-2014-track-automatic-location-landmarks-used-manual-anthropometry",
+    "n24": 11,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20241209094842",
+    "last": "20260312171714",
+    "pairable": true,
+    "span_days": 458
+   },
+   {
+    "url": "https://www.nist.gov/publications/spatial-and-spectral-mode-selection-heralded-single-photons-pulsed-parametric-down",
+    "n24": 11,
+    "truncated": false,
+    "n12": 2,
+    "months24": 6,
+    "months12": 2,
+    "first": "20250128021420",
+    "last": "20260314004824",
+    "pairable": true,
+    "span_days": 409
+   },
+   {
+    "url": "https://www.nist.gov/publications/state-and-measurement-tomography-exchange-only-spin-qubit",
+    "n24": 10,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20241112073631",
+    "last": "20260317135659",
+    "pairable": true,
+    "span_days": 490
+   },
+   {
+    "url": "https://www.nist.gov/publications/structural-analysis-soft-multicomponent-nanoparticle-clusters-using-electrospray",
+    "n24": 14,
+    "truncated": false,
+    "n12": 2,
+    "months24": 9,
+    "months12": 2,
+    "first": "20240813122605",
+    "last": "20260518185449",
+    "pairable": true,
+    "span_days": 643
+   },
+   {
+    "url": "https://www.nist.gov/publications/supply-chain-risk-management-practices-federal-information-systems-and-organizations",
+    "n24": 13,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20241004085752",
+    "last": "20260316063217",
+    "pairable": true,
+    "span_days": 527
+   },
+   {
+    "url": "https://www.nist.gov/publications/surface-sensitive-raman-microscopy-total-internal-reflection-illumination",
+    "n24": 10,
+    "truncated": false,
+    "n12": 2,
+    "months24": 6,
+    "months12": 2,
+    "first": "20250127234715",
+    "last": "20260422052207",
+    "pairable": true,
+    "span_days": 449
+   },
+   {
+    "url": "https://www.nist.gov/publications/survey-background-scattering-materials-found-small-angle-neutron-scattering",
+    "n24": 12,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20241006204342",
+    "last": "20260212224722",
+    "pairable": true,
+    "span_days": 494
+   },
+   {
+    "url": "https://www.nist.gov/publications/testing-model-checker-insuring-fault-visibility",
+    "n24": 10,
+    "truncated": false,
+    "n12": 2,
+    "months24": 8,
+    "months12": 2,
+    "first": "20241008135613",
+    "last": "20260114203512",
+    "pairable": true,
+    "span_days": 463
+   },
+   {
+    "url": "https://www.nist.gov/publications/transcriptional-analysis-global-regulatory-networks-active-pseudomonas-syringae-during",
+    "n24": 11,
+    "truncated": false,
+    "n12": 2,
+    "months24": 6,
+    "months12": 2,
+    "first": "20241007120813",
+    "last": "20260211114351",
+    "pairable": true,
+    "span_days": 491
+   },
+   {
+    "url": "https://www.nist.gov/publications/tunable-stable-source-femtosecond-pulses-near-2-ym-supercontinuum-erbium-mode-locked",
+    "n24": 14,
+    "truncated": false,
+    "n12": 3,
+    "months24": 8,
+    "months12": 3,
+    "first": "20240926185458",
+    "last": "20260308050740",
+    "pairable": true,
+    "span_days": 527
+   },
+   {
+    "url": "https://www.nist.gov/publications/two-svds-su14ffice-spectral-decompositions-probabilistic-topic-modeling-and-latent",
+    "n24": 14,
+    "truncated": false,
+    "n12": 2,
+    "months24": 8,
+    "months12": 2,
+    "first": "20240810193439",
+    "last": "20260310152412",
+    "pairable": true,
+    "span_days": 576
+   },
+   {
+    "url": "https://www.nist.gov/publications/users-guide-running-draft-nist-sp-800-90b-section-9-entropy-estimation-tests",
+    "n24": 12,
+    "truncated": false,
+    "n12": 2,
+    "months24": 8,
+    "months12": 2,
+    "first": "20241006081001",
+    "last": "20260217003949",
+    "pairable": true,
+    "span_days": 498
+   },
+   {
+    "url": "https://www.nist.gov/publications/velocity-divergence-constraint-large-eddy-simulation-low-mach-flows",
+    "n24": 13,
+    "truncated": false,
+    "n12": 2,
+    "months24": 10,
+    "months12": 2,
+    "first": "20240912013321",
+    "last": "20260419074035",
+    "pairable": true,
+    "span_days": 584
+   },
+   {
+    "url": "https://www.nist.gov/publications/viscosity-measurements-dna-solutions-and-without-condensing-agents",
+    "n24": 9,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20250127234041",
+    "last": "20260216181745",
+    "pairable": true,
+    "span_days": 384
+   },
+   {
+    "url": "https://www.nist.gov/publications/xforms-user-interfaces-small-arcane-nontrivial-datasets",
+    "n24": 10,
+    "truncated": false,
+    "n12": 2,
+    "months24": 8,
+    "months12": 2,
+    "first": "20241015124549",
+    "last": "20260219040347",
+    "pairable": true,
+    "span_days": 491
+   }
+  ],
+  "epa": [
+   {
+    "url": "https://www.epa.gov/newsreleases/administrator-wheeler-wraps-visit-mississippi-highlights-agriculture-partnership",
+    "n24": 15,
+    "truncated": false,
+    "n12": 6,
+    "months24": 9,
+    "months12": 4,
+    "first": "20250123135614",
+    "last": "20260609141235",
+    "pairable": true,
+    "span_days": 502
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/bogus-basin-recreational-association-and-epa-settle-alleged-stormwater-violations-ski",
+    "n24": 15,
+    "truncated": false,
+    "n12": 4,
+    "months24": 6,
+    "months12": 2,
+    "first": "20240812171649",
+    "last": "20260218154713",
+    "pairable": true,
+    "span_days": 554
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/central-valley-meat-company-incorporated-agrees-improve-drinking-water-hanford",
+    "n24": 12,
+    "truncated": false,
+    "n12": 5,
+    "months24": 5,
+    "months12": 3,
+    "first": "20250201022636",
+    "last": "20260218152637",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/cheyenne-epa-announces-wyomings-primacy-class-vi-underground-injection-control-program",
+    "n24": 12,
+    "truncated": false,
+    "n12": 5,
+    "months24": 5,
+    "months12": 2,
+    "first": "20241222140918",
+    "last": "20260218154841",
+    "pairable": true,
+    "span_days": 423
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/city-aberdeen-sd-receives-300000-assess-and-revitalize-properties",
+    "n24": 11,
+    "truncated": false,
+    "n12": 4,
+    "months24": 4,
+    "months12": 2,
+    "first": "20250201022623",
+    "last": "20260218152009",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-50-epa-celebrates-progress-advancing-chemical-safety",
+    "n24": 12,
+    "truncated": false,
+    "n12": 5,
+    "months24": 6,
+    "months12": 3,
+    "first": "20250201022606",
+    "last": "20260515054554",
+    "pairable": true,
+    "span_days": 468
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-administrator-wheeler-awards-first-ever-trash-free-waters-grant-great-lakes",
+    "n24": 11,
+    "truncated": false,
+    "n12": 4,
+    "months24": 5,
+    "months12": 2,
+    "first": "20250122215014",
+    "last": "20260218152435",
+    "pairable": true,
+    "span_days": 391
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-administrator-wheeler-wraps-visit-michigan",
+    "n24": 12,
+    "truncated": false,
+    "n12": 6,
+    "months24": 5,
+    "months12": 3,
+    "first": "20250201005701",
+    "last": "20260518161810",
+    "pairable": true,
+    "span_days": 471
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-and-state-kansas-reach-agreement-hollyfrontier-alleged-clean-air-act-violations",
+    "n24": 11,
+    "truncated": false,
+    "n12": 5,
+    "months24": 5,
+    "months12": 3,
+    "first": "20250201022817",
+    "last": "20260218153922",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-announce-meskwaki-nation-near-des-moines-iowa-first-tribe-region-achieve-epa",
+    "n24": 11,
+    "truncated": false,
+    "n12": 5,
+    "months24": 5,
+    "months12": 3,
+    "first": "20250201005957",
+    "last": "20260218183431",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-announces-20-million-improve-access-drinking-water-tribal-communities",
+    "n24": 15,
+    "truncated": false,
+    "n12": 6,
+    "months24": 9,
+    "months12": 4,
+    "first": "20241204112854",
+    "last": "20260412050557",
+    "pairable": true,
+    "span_days": 493
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-announces-2020-energy-starr-certified-manufacturing-plants-including-6-arizona",
+    "n24": 11,
+    "truncated": false,
+    "n12": 4,
+    "months24": 5,
+    "months12": 2,
+    "first": "20250201022606",
+    "last": "20260218152146",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-announces-33-members-environmental-financial-advisory-board",
+    "n24": 11,
+    "truncated": false,
+    "n12": 5,
+    "months24": 5,
+    "months12": 3,
+    "first": "20250201022610",
+    "last": "20260515020648",
+    "pairable": true,
+    "span_days": 467
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-announces-46-million-funding-available-reduce-emissions-diesel-engines",
+    "n24": 12,
+    "truncated": false,
+    "n12": 5,
+    "months24": 6,
+    "months12": 3,
+    "first": "20250123135611",
+    "last": "20260511031824",
+    "pairable": true,
+    "span_days": 472
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-announces-6-billion-new-funding-water-infrastructure-projects",
+    "n24": 11,
+    "truncated": false,
+    "n12": 4,
+    "months24": 5,
+    "months12": 2,
+    "first": "20250118094759",
+    "last": "20260218153053",
+    "pairable": true,
+    "span_days": 396
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-announces-657840-community-scale-air-toxics-monitoring-grant-puget-sound-clean-air",
+    "n24": 12,
+    "truncated": false,
+    "n12": 4,
+    "months24": 4,
+    "months12": 2,
+    "first": "20250201022911",
+    "last": "20260218154144",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-announces-660k-supplemental-funds-clean-and-reuse-brownfield-sites-maine",
+    "n24": 10,
+    "truncated": false,
+    "n12": 4,
+    "months24": 5,
+    "months12": 2,
+    "first": "20250122011605",
+    "last": "20260218154854",
+    "pairable": true,
+    "span_days": 392
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-announces-additional-235-million-water-infrastructure-loan-miami-dade-county",
+    "n24": 10,
+    "truncated": false,
+    "n12": 4,
+    "months24": 4,
+    "months12": 2,
+    "first": "20250201023022",
+    "last": "20260218154339",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-announces-five-texas-2020-energy-starr-certified-manufacturing-plants",
+    "n24": 10,
+    "truncated": false,
+    "n12": 4,
+    "months24": 4,
+    "months12": 2,
+    "first": "20250201022651",
+    "last": "20260218154654",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-announces-selection-duluth-minn-receive-300000-funding-brownfields-multipurpose",
+    "n24": 12,
+    "truncated": false,
+    "n12": 5,
+    "months24": 6,
+    "months12": 3,
+    "first": "20250201010034",
+    "last": "20260517070218",
+    "pairable": true,
+    "span_days": 470
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-announces-selection-wsu-129727-grant-help-communities-turn-food-waste-fuel-and",
+    "n24": 14,
+    "truncated": false,
+    "n12": 4,
+    "months24": 6,
+    "months12": 2,
+    "first": "20250114135911",
+    "last": "20260218153939",
+    "pairable": true,
+    "span_days": 400
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-awards-15000-grant-sustainable-food-management",
+    "n24": 12,
+    "truncated": false,
+    "n12": 4,
+    "months24": 5,
+    "months12": 2,
+    "first": "20250124004354",
+    "last": "20260218152815",
+    "pairable": true,
+    "span_days": 390
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-awards-25000-grant-north-carolina-state-university-raleigh-innovative-technology",
+    "n24": 15,
+    "truncated": false,
+    "n12": 5,
+    "months24": 8,
+    "months12": 3,
+    "first": "20241010093952",
+    "last": "20260511114050",
+    "pairable": true,
+    "span_days": 578
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-awards-40000-school-bus-rebates-bertie-county-board-education-north-carolina",
+    "n24": 13,
+    "truncated": false,
+    "n12": 5,
+    "months24": 7,
+    "months12": 3,
+    "first": "20250121072212",
+    "last": "20260518042054",
+    "pairable": true,
+    "span_days": 481
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-awards-96000-improve-eau-claire-river-watershed",
+    "n24": 11,
+    "truncated": false,
+    "n12": 4,
+    "months24": 6,
+    "months12": 2,
+    "first": "20250123140053",
+    "last": "20260218182412",
+    "pairable": true,
+    "span_days": 391
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-awards-environmental-justice-grants-communities-and-tribes-alaska-oregon-and",
+    "n24": 14,
+    "truncated": false,
+    "n12": 4,
+    "months24": 6,
+    "months12": 2,
+    "first": "20241219145010",
+    "last": "20260218184458",
+    "pairable": true,
+    "span_days": 426
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-awards-railroad-commission-texas-over-527000-protect-groundwater",
+    "n24": 12,
+    "truncated": false,
+    "n12": 4,
+    "months24": 6,
+    "months12": 2,
+    "first": "20241126075824",
+    "last": "20260218184058",
+    "pairable": true,
+    "span_days": 449
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-awards-utah-department-environmental-quality-959k-restore-fisheries-improve-water",
+    "n24": 16,
+    "truncated": false,
+    "n12": 6,
+    "months24": 7,
+    "months12": 4,
+    "first": "20250123140124",
+    "last": "20260514071855",
+    "pairable": true,
+    "span_days": 475
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-begins-public-comment-period-proposed-soil-cleanup-plan-bautsch-gray-mine",
+    "n24": 12,
+    "truncated": false,
+    "n12": 5,
+    "months24": 6,
+    "months12": 3,
+    "first": "20250201005806",
+    "last": "20260511022048",
+    "pairable": true,
+    "span_days": 464
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-begins-reviews-three-connecticut-superfund-site-cleanups-year",
+    "n24": 12,
+    "truncated": false,
+    "n12": 5,
+    "months24": 6,
+    "months12": 3,
+    "first": "20250201023110",
+    "last": "20260309114245",
+    "pairable": true,
+    "span_days": 401
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-celebrates-new-bedford-harbor-cleanup-accomplishments-leading-economic-development",
+    "n24": 14,
+    "truncated": false,
+    "n12": 5,
+    "months24": 6,
+    "months12": 3,
+    "first": "20240807164709",
+    "last": "20260307235456",
+    "pairable": true,
+    "span_days": 577
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-concludes-hazardous-waste-cleanups-oregon-after-september-wildfires",
+    "n24": 12,
+    "truncated": false,
+    "n12": 4,
+    "months24": 6,
+    "months12": 2,
+    "first": "20241230055252",
+    "last": "20260218152745",
+    "pairable": true,
+    "span_days": 415
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-finalizes-cleanup-plan-contaminated-soil-and-groundwater-cpsmadison-superfund-site",
+    "n24": 11,
+    "truncated": false,
+    "n12": 4,
+    "months24": 4,
+    "months12": 2,
+    "first": "20250201010059",
+    "last": "20260218184830",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-finalizes-streamlined-system-managing-recycling-aerosol-cans-saving-more-5-million",
+    "n24": 12,
+    "truncated": false,
+    "n12": 4,
+    "months24": 5,
+    "months12": 2,
+    "first": "20250201005844",
+    "last": "20260218182807",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-grant-cherokee-nation-will-fund-hazardous-waste-work",
+    "n24": 11,
+    "truncated": false,
+    "n12": 4,
+    "months24": 4,
+    "months12": 2,
+    "first": "20250201010041",
+    "last": "20260218183930",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-highlights-enforcement-actions-against-those-who-violate-defeat-device-and",
+    "n24": 17,
+    "truncated": false,
+    "n12": 5,
+    "months24": 8,
+    "months12": 3,
+    "first": "20240918163354",
+    "last": "20260312163517",
+    "pairable": true,
+    "span_days": 540
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-hold-local-foods-local-places-technical-assistance-workshop-frankfort-kentucky",
+    "n24": 13,
+    "truncated": false,
+    "n12": 4,
+    "months24": 7,
+    "months12": 2,
+    "first": "20241117104656",
+    "last": "20260218183346",
+    "pairable": true,
+    "span_days": 458
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-honors-northwest-companies-top-environmental-performance-moving-more-goods-more",
+    "n24": 12,
+    "truncated": false,
+    "n12": 4,
+    "months24": 5,
+    "months12": 2,
+    "first": "20240819130722",
+    "last": "20260218152129",
+    "pairable": true,
+    "span_days": 548
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-initiative-continues-improve-safety-ammonia-refrigeration-facilities-new-england",
+    "n24": 10,
+    "truncated": false,
+    "n12": 4,
+    "months24": 4,
+    "months12": 2,
+    "first": "20241207133850",
+    "last": "20260218154505",
+    "pairable": true,
+    "span_days": 438
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-innovation-center-us-dairy-enter-first-time-mou-advance-engagement-agriculture",
+    "n24": 13,
+    "truncated": false,
+    "n12": 5,
+    "months24": 6,
+    "months12": 3,
+    "first": "20250123135624",
+    "last": "20260515194139",
+    "pairable": true,
+    "span_days": 477
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-lauds-coatesville-veterans-affairs-medical-center-federal-green-challenge-award",
+    "n24": 11,
+    "truncated": false,
+    "n12": 4,
+    "months24": 4,
+    "months12": 2,
+    "first": "20250201010025",
+    "last": "20260218182725",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-proposes-modifications-centredale-manor-restoration-project-superfund-site-remedy",
+    "n24": 11,
+    "truncated": false,
+    "n12": 5,
+    "months24": 5,
+    "months12": 3,
+    "first": "20250201005940",
+    "last": "20260218184320",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-public-meeting-october-24-discuss-cleanup-vernay-laboratories-site-yellow-springs",
+    "n24": 9,
+    "truncated": false,
+    "n12": 5,
+    "months24": 5,
+    "months12": 3,
+    "first": "20250201010017",
+    "last": "20260218182400",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-publishes-2019-annual-toxics-release-inventory-report-and-analysis-facilities-new",
+    "n24": 13,
+    "truncated": false,
+    "n12": 4,
+    "months24": 6,
+    "months12": 2,
+    "first": "20241229211848",
+    "last": "20260218153358",
+    "pairable": true,
+    "span_days": 415
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-publishes-2019-annual-toxics-release-inventory-report-and-analysis-great-lakes",
+    "n24": 11,
+    "truncated": false,
+    "n12": 4,
+    "months24": 4,
+    "months12": 2,
+    "first": "20250201023144",
+    "last": "20260218154154",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-reaches-settlement-unauthorized-wetlands-destruction-along-des-moines-river",
+    "n24": 14,
+    "truncated": false,
+    "n12": 5,
+    "months24": 8,
+    "months12": 3,
+    "first": "20241128023920",
+    "last": "20260301154056",
+    "pairable": true,
+    "span_days": 458
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-recognizes-cranston-ri-wastewater-facility-excellence",
+    "n24": 13,
+    "truncated": false,
+    "n12": 5,
+    "months24": 5,
+    "months12": 2,
+    "first": "20250201022816",
+    "last": "20260218153155",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-recognizes-lancaster-nh-wastewater-treatment-trainer-excellence",
+    "n24": 12,
+    "truncated": false,
+    "n12": 5,
+    "months24": 5,
+    "months12": 3,
+    "first": "20250201023128",
+    "last": "20260412155347",
+    "pairable": true,
+    "span_days": 435
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-recognizes-three-leaders-florida-reducing-water-waste",
+    "n24": 12,
+    "truncated": false,
+    "n12": 4,
+    "months24": 5,
+    "months12": 2,
+    "first": "20250124093230",
+    "last": "20260218183044",
+    "pairable": true,
+    "span_days": 390
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-requests-applications-2-million-funding-great-lakes-trash-free-water-projects",
+    "n24": 9,
+    "truncated": false,
+    "n12": 4,
+    "months24": 4,
+    "months12": 2,
+    "first": "20250201005536",
+    "last": "20260218182246",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-requests-comments-designations-and-recommendations-recycled-content-products",
+    "n24": 11,
+    "truncated": false,
+    "n12": 5,
+    "months24": 6,
+    "months12": 3,
+    "first": "20240805235902",
+    "last": "20260519002850",
+    "pairable": true,
+    "span_days": 651
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-solicits-grant-applications-recycling-and-food-waste-reduction-projects",
+    "n24": 13,
+    "truncated": false,
+    "n12": 4,
+    "months24": 6,
+    "months12": 2,
+    "first": "20250123135839",
+    "last": "20260218152650",
+    "pairable": true,
+    "span_days": 391
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-takes-action-address-pfas-drinking-water",
+    "n24": 79,
+    "truncated": false,
+    "n12": 17,
+    "months24": 19,
+    "months12": 8,
+    "first": "20240819021611",
+    "last": "20260703000528",
+    "pairable": true,
+    "span_days": 682
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epa-welcomes-additional-members-biden-harris-leadership-team",
+    "n24": 11,
+    "truncated": false,
+    "n12": 4,
+    "months24": 5,
+    "months12": 2,
+    "first": "20240812134227",
+    "last": "20260218152822",
+    "pairable": true,
+    "span_days": 555
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/epas-greenchill-program-celebrates-smart-refrigerant-management-across-supermarket-0",
+    "n24": 12,
+    "truncated": false,
+    "n12": 4,
+    "months24": 5,
+    "months12": 2,
+    "first": "20250124115406",
+    "last": "20260218154743",
+    "pairable": true,
+    "span_days": 390
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/former-myrtle-beach-air-force-base-wins-2019-federal-facility-excellence-site-reuse",
+    "n24": 15,
+    "truncated": false,
+    "n12": 5,
+    "months24": 8,
+    "months12": 3,
+    "first": "20241117112855",
+    "last": "20260515144522",
+    "pairable": true,
+    "span_days": 544
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/icymi-administrator-wheeler-visits-western-states-reaffirms-president-trumps",
+    "n24": 10,
+    "truncated": false,
+    "n12": 5,
+    "months24": 6,
+    "months12": 3,
+    "first": "20250201022613",
+    "last": "20260517220405",
+    "pairable": true,
+    "span_days": 470
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/icymi-epa-state-and-local-partners-team-address-pfas-across-country",
+    "n24": 19,
+    "truncated": false,
+    "n12": 8,
+    "months24": 9,
+    "months12": 4,
+    "first": "20241207061204",
+    "last": "20260519161227",
+    "pairable": true,
+    "span_days": 528
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/icymi-florida-now-meets-all-epa-air-quality-standards-largest-state-hit-benchmark",
+    "n24": 11,
+    "truncated": false,
+    "n12": 4,
+    "months24": 4,
+    "months12": 2,
+    "first": "20250201022917",
+    "last": "20260218153058",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/la-epa-publica-el-inventario-de-emisiones-toxicas-de-2019",
+    "n24": 10,
+    "truncated": false,
+    "n12": 4,
+    "months24": 4,
+    "months12": 2,
+    "first": "20250201023009",
+    "last": "20260218153543",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/la-epa-urge-las-comunidades-afectadas-por-el-huracan-laura-que-eviten-los-peligros-del",
+    "n24": 15,
+    "truncated": false,
+    "n12": 4,
+    "months24": 7,
+    "months12": 2,
+    "first": "20241002062850",
+    "last": "20260218154425",
+    "pairable": true,
+    "span_days": 504
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/leading-shippers-carriers-and-logistics-firms-epa-region-3-earn-epa-distinction",
+    "n24": 10,
+    "truncated": false,
+    "n12": 4,
+    "months24": 4,
+    "months12": 2,
+    "first": "20250201005843",
+    "last": "20260218182618",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/mark-progress-us-epa-reclassifies-beckman-instruments-superfund-site",
+    "n24": 10,
+    "truncated": false,
+    "n12": 4,
+    "months24": 4,
+    "months12": 2,
+    "first": "20250201005816",
+    "last": "20260218183844",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/media-advisory-epa-regional-4-administrator-mary-s-walker-make-significant-brownfields",
+    "n24": 10,
+    "truncated": false,
+    "n12": 4,
+    "months24": 4,
+    "months12": 2,
+    "first": "20250201005724",
+    "last": "20260218184655",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/media-advisory-epa-stands-first-wildfire-recovery-response-staging-area-central-point",
+    "n24": 11,
+    "truncated": false,
+    "n12": 4,
+    "months24": 5,
+    "months12": 2,
+    "first": "20250123202827",
+    "last": "20260218152640",
+    "pairable": true,
+    "span_days": 390
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/newly-released-epa-plan-will-aid-salmon-survival-columbia-river",
+    "n24": 13,
+    "truncated": false,
+    "n12": 4,
+    "months24": 5,
+    "months12": 2,
+    "first": "20240812124138",
+    "last": "20260218152036",
+    "pairable": true,
+    "span_days": 555
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/north-smithfield-ri-facility-reduce-harmful-air-pollution-under-settlement-epa",
+    "n24": 14,
+    "truncated": false,
+    "n12": 4,
+    "months24": 6,
+    "months12": 2,
+    "first": "20241128044231",
+    "last": "20260218153457",
+    "pairable": true,
+    "span_days": 447
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/sinclair-oil-pay-16-million-penalty-and-install-additional-pollution-controls-sinclair",
+    "n24": 15,
+    "truncated": false,
+    "n12": 4,
+    "months24": 6,
+    "months12": 2,
+    "first": "20250118225642",
+    "last": "20260218184042",
+    "pairable": true,
+    "span_days": 395
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/springfield-mass-organization-invited-apply-epa-wifia-loan-improve-water-quality",
+    "n24": 10,
+    "truncated": false,
+    "n12": 4,
+    "months24": 4,
+    "months12": 2,
+    "first": "20250201022844",
+    "last": "20260218153116",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/statement-administrator-andrew-wheeler-regarding-departure-assistant-administrator",
+    "n24": 14,
+    "truncated": false,
+    "n12": 7,
+    "months24": 6,
+    "months12": 4,
+    "first": "20250102215131",
+    "last": "20260412015000",
+    "pairable": true,
+    "span_days": 464
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/trump-administration-designates-officials-implement-actions-new-water-subcabinet",
+    "n24": 11,
+    "truncated": false,
+    "n12": 4,
+    "months24": 5,
+    "months12": 2,
+    "first": "20250201023003",
+    "last": "20260218154035",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/two-eastern-massachusetts-companies-earn-epa-distinction-freight-shipping-efficiency",
+    "n24": 11,
+    "truncated": false,
+    "n12": 4,
+    "months24": 4,
+    "months12": 2,
+    "first": "20250201005919",
+    "last": "20260218184526",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/us-epa-awards-more-116-million-reduce-diesel-emissions-california",
+    "n24": 12,
+    "truncated": false,
+    "n12": 5,
+    "months24": 7,
+    "months12": 3,
+    "first": "20250121071947",
+    "last": "20260515030018",
+    "pairable": true,
+    "span_days": 478
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/us-epa-celebrates-20-years-superfund-redevelopment-operating-industries-inc-landfill",
+    "n24": 13,
+    "truncated": false,
+    "n12": 5,
+    "months24": 7,
+    "months12": 3,
+    "first": "20250124174639",
+    "last": "20260218183208",
+    "pairable": true,
+    "span_days": 390
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/us-epa-honors-honolulus-army-reserve-9th-mission-support-command-federal-green",
+    "n24": 12,
+    "truncated": false,
+    "n12": 5,
+    "months24": 5,
+    "months12": 3,
+    "first": "20250201010055",
+    "last": "20260511002437",
+    "pairable": true,
+    "span_days": 463
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/us-epa-otorga-255000-para-promover-proyectos-ambientales-en-la-region-fronteriza-entre",
+    "n24": 13,
+    "truncated": false,
+    "n12": 4,
+    "months24": 6,
+    "months12": 2,
+    "first": "20240807102913",
+    "last": "20260218153832",
+    "pairable": true,
+    "span_days": 560
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/us-epa-selects-two-california-organizations-funding-support-food-waste-reduction",
+    "n24": 12,
+    "truncated": false,
+    "n12": 4,
+    "months24": 5,
+    "months12": 2,
+    "first": "20250201023048",
+    "last": "20260218154611",
+    "pairable": true,
+    "span_days": 382
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/us-epa-settles-growers-ice-company-improve-chemical-safety-salinas-facility",
+    "n24": 13,
+    "truncated": false,
+    "n12": 4,
+    "months24": 5,
+    "months12": 2,
+    "first": "20250118134202",
+    "last": "20260218184116",
+    "pairable": true,
+    "span_days": 396
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/us-epa-settles-honolulu-based-bei-hawaii-over-chlorine-gas-release-and-pesticides",
+    "n24": 13,
+    "truncated": false,
+    "n12": 4,
+    "months24": 5,
+    "months12": 2,
+    "first": "20250118174241",
+    "last": "20260218153907",
+    "pairable": true,
+    "span_days": 395
+   },
+   {
+    "url": "https://www.epa.gov/newsreleases/watersense-challenges-homeowners-take-10-minutes-find-and-fix-leak-week",
+    "n24": 12,
+    "truncated": false,
+    "n12": 5,
+    "months24": 6,
+    "months12": 3,
+    "first": "20250123011328",
+    "last": "20260520112500",
+    "pairable": true,
+    "span_days": 482
+   }
+  ],
+  "govuk": [
+   {
+    "url": "https://www.gov.uk/government/publications/adult-social-care-learning-and-development-support-scheme",
+    "n24": 28,
+    "truncated": false,
+    "n12": 16,
+    "months24": 17,
+    "months12": 10,
+    "first": "20240906154905",
+    "last": "20260722031747",
+    "pairable": true,
+    "span_days": 683
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/ai-airlock-sandbox-phase-2-programme-report",
+    "n24": 1,
+    "truncated": false,
+    "n12": 1,
+    "months24": 1,
+    "months12": 1,
+    "first": "20260730194457",
+    "last": "20260730194457",
+    "pairable": false,
+    "span_days": null
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/ambient-voice-technology-enabled-products",
+    "n24": 0,
+    "truncated": false,
+    "n12": 0,
+    "months24": 0,
+    "months12": 0,
+    "first": null,
+    "last": null,
+    "pairable": false,
+    "span_days": null
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/anglian-waterways-registration-charges",
+    "n24": 3,
+    "truncated": false,
+    "n12": 2,
+    "months24": 3,
+    "months12": 2,
+    "first": "20250619184450",
+    "last": "20260510050905",
+    "pairable": true,
+    "span_days": 324
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/apprenticeship-funding-rules-and-assessment-plan-guidance-2026-to-2027",
+    "n24": 1,
+    "truncated": false,
+    "n12": 1,
+    "months24": 1,
+    "months12": 1,
+    "first": "20260510063219",
+    "last": "20260510063219",
+    "pairable": false,
+    "span_days": null
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/basic-check-guidance-and-policies",
+    "n24": 22,
+    "truncated": false,
+    "n12": 16,
+    "months24": 12,
+    "months12": 7,
+    "first": "20240814114538",
+    "last": "20260716043642",
+    "pairable": true,
+    "span_days": 700
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/better-regulation-framework",
+    "n24": 30,
+    "truncated": false,
+    "n12": 16,
+    "months24": 20,
+    "months12": 11,
+    "first": "20240824212802",
+    "last": "20260720172302",
+    "pairable": true,
+    "span_days": 694
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/calculating-foreign-tax-credit-relief-on-income-hs263-self-assessment-helpsheet",
+    "n24": 25,
+    "truncated": false,
+    "n12": 8,
+    "months24": 15,
+    "months12": 6,
+    "first": "20240821023932",
+    "last": "20260716142311",
+    "pairable": true,
+    "span_days": 694
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/car-parts-checked-at-an-mot",
+    "n24": 9,
+    "truncated": false,
+    "n12": 3,
+    "months24": 7,
+    "months12": 2,
+    "first": "20240822170814",
+    "last": "20260215192340",
+    "pairable": true,
+    "span_days": 542
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/cervical-screening-description-in-brief",
+    "n24": 21,
+    "truncated": false,
+    "n12": 10,
+    "months24": 11,
+    "months12": 5,
+    "first": "20241113093114",
+    "last": "20260419061815",
+    "pairable": true,
+    "span_days": 521
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/channel-and-prevent-multi-agency-panel-pmap-guidance",
+    "n24": 42,
+    "truncated": false,
+    "n12": 16,
+    "months24": 19,
+    "months12": 8,
+    "first": "20240806104220",
+    "last": "20260709193652",
+    "pairable": true,
+    "span_days": 702
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/charity-reporting-and-accounting-the-essentials-november-2016-cc15d",
+    "n24": 22,
+    "truncated": false,
+    "n12": 14,
+    "months24": 13,
+    "months12": 7,
+    "first": "20240807221303",
+    "last": "20260731132616",
+    "pairable": true,
+    "span_days": 722
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/child-sexual-exploitation-definition-and-guide-for-practitioners",
+    "n24": 34,
+    "truncated": false,
+    "n12": 18,
+    "months24": 14,
+    "months12": 8,
+    "first": "20240822164307",
+    "last": "20260721013351",
+    "pairable": true,
+    "span_days": 697
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/childrens-homes-inspection-documents",
+    "n24": 3,
+    "truncated": false,
+    "n12": 2,
+    "months24": 3,
+    "months12": 2,
+    "first": "20250620140958",
+    "last": "20260207114039",
+    "pairable": true,
+    "span_days": 231
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/civil-service-competency-framework",
+    "n24": 21,
+    "truncated": false,
+    "n12": 10,
+    "months24": 14,
+    "months12": 7,
+    "first": "20241009171513",
+    "last": "20260729083421",
+    "pairable": true,
+    "span_days": 657
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/countryside-stewardship-higher-tier-csht",
+    "n24": 25,
+    "truncated": false,
+    "n12": 25,
+    "months24": 10,
+    "months12": 10,
+    "first": "20250910131318",
+    "last": "20260723173902",
+    "pairable": true,
+    "span_days": 316
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/data-element-23-documents-and-other-reference-codes-union-of-the-customs-declaration-service-cds",
+    "n24": 14,
+    "truncated": false,
+    "n12": 8,
+    "months24": 11,
+    "months12": 7,
+    "first": "20250221175241",
+    "last": "20260731095336",
+    "pairable": true,
+    "span_days": 524
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/diabetic-eye-screening-description-in-brief",
+    "n24": 9,
+    "truncated": false,
+    "n12": 5,
+    "months24": 8,
+    "months12": 5,
+    "first": "20241219203737",
+    "last": "20260410205208",
+    "pairable": true,
+    "span_days": 477
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/disabled-travellers",
+    "n24": 93,
+    "truncated": false,
+    "n12": 25,
+    "months24": 24,
+    "months12": 12,
+    "first": "20240822141322",
+    "last": "20260728150023",
+    "pairable": true,
+    "span_days": 705
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/electronic-travel-authorisation-eta-privacy-information-notice",
+    "n24": 48,
+    "truncated": false,
+    "n12": 25,
+    "months24": 19,
+    "months12": 10,
+    "first": "20241114165156",
+    "last": "20260726170911",
+    "pairable": true,
+    "span_days": 619
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/employment-tribunal-hearings-claimant-guide-t424",
+    "n24": 5,
+    "truncated": false,
+    "n12": 2,
+    "months24": 5,
+    "months12": 2,
+    "first": "20240813062412",
+    "last": "20260608212230",
+    "pairable": true,
+    "span_days": 664
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/employment-tribunals-after-your-claim-is-accepted-t421",
+    "n24": 4,
+    "truncated": false,
+    "n12": 1,
+    "months24": 3,
+    "months12": 1,
+    "first": "20240920140623",
+    "last": "20260207201933",
+    "pairable": true,
+    "span_days": 505
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/esfa-subcontracting-standard",
+    "n24": 9,
+    "truncated": false,
+    "n12": 9,
+    "months24": 2,
+    "months12": 2,
+    "first": "20250920090843",
+    "last": "20260221013308",
+    "pairable": true,
+    "span_days": 153
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/exempt-exm",
+    "n24": 57,
+    "truncated": false,
+    "n12": 17,
+    "months24": 19,
+    "months12": 9,
+    "first": "20240824012808",
+    "last": "20260714220942",
+    "pairable": true,
+    "span_days": 689
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/fire-safety-england-regulations-2022-fire-door-guidance",
+    "n24": 14,
+    "truncated": false,
+    "n12": 7,
+    "months24": 11,
+    "months12": 5,
+    "first": "20240925000115",
+    "last": "20260217124711",
+    "pairable": true,
+    "span_days": 510
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/fire-safety-risk-assessment-sleeping-accommodation",
+    "n24": 10,
+    "truncated": false,
+    "n12": 7,
+    "months24": 8,
+    "months12": 5,
+    "first": "20240910123638",
+    "last": "20260114063821",
+    "pairable": true,
+    "span_days": 490
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/fit-note-guidance-for-employers-and-line-managers",
+    "n24": 9,
+    "truncated": false,
+    "n12": 3,
+    "months24": 8,
+    "months12": 3,
+    "first": "20240828201638",
+    "last": "20260216213021",
+    "pairable": true,
+    "span_days": 537
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/food-safety-in-a-power-cut-advice-for-consumers",
+    "n24": 0,
+    "truncated": false,
+    "n12": 0,
+    "months24": 0,
+    "months12": 0,
+    "first": null,
+    "last": null,
+    "pairable": false,
+    "span_days": null
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/form-mn1-guidance",
+    "n24": 24,
+    "truncated": false,
+    "n12": 12,
+    "months24": 14,
+    "months12": 5,
+    "first": "20240907032930",
+    "last": "20260727045328",
+    "pairable": true,
+    "span_days": 688
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/form-ukf-guidance",
+    "n24": 22,
+    "truncated": false,
+    "n12": 13,
+    "months24": 12,
+    "months12": 5,
+    "first": "20240914135106",
+    "last": "20260727091238",
+    "pairable": true,
+    "span_days": 680
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/global-business-mobility-eligible-occupations-and-codes",
+    "n24": 6,
+    "truncated": false,
+    "n12": 3,
+    "months24": 5,
+    "months12": 3,
+    "first": "20241216194748",
+    "last": "20260216084232",
+    "pairable": true,
+    "span_days": 426
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/higher-tier-capital-grants-2026",
+    "n24": 6,
+    "truncated": false,
+    "n12": 6,
+    "months24": 3,
+    "months12": 3,
+    "first": "20260105020132",
+    "last": "20260313195725",
+    "pairable": true,
+    "span_days": 67
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/how-to-bring-a-complaint-to-the-independent-case-examiner",
+    "n24": 0,
+    "truncated": false,
+    "n12": 0,
+    "months24": 0,
+    "months12": 0,
+    "first": null,
+    "last": null,
+    "pairable": false,
+    "span_days": null
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/how-to-chill-freeze-and-defrost-food-safely",
+    "n24": 14,
+    "truncated": false,
+    "n12": 14,
+    "months24": 1,
+    "months12": 1,
+    "first": "20260711160220",
+    "last": "20260731230950",
+    "pairable": false,
+    "span_days": 20
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/how-to-complete-form-chv1",
+    "n24": 0,
+    "truncated": false,
+    "n12": 0,
+    "months24": 0,
+    "months12": 0,
+    "first": null,
+    "last": null,
+    "pairable": false,
+    "span_days": null
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/human-papillomavirus-hpv-the-green-book-chapter-18a",
+    "n24": 38,
+    "truncated": false,
+    "n12": 20,
+    "months24": 21,
+    "months12": 11,
+    "first": "20240803172236",
+    "last": "20260728094009",
+    "pairable": true,
+    "span_days": 723
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/illegal-working-penalties-uk-report",
+    "n24": 25,
+    "truncated": false,
+    "n12": 17,
+    "months24": 16,
+    "months12": 10,
+    "first": "20241101015324",
+    "last": "20260730052111",
+    "pairable": true,
+    "span_days": 636
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/in-service-exhaust-emission-standards-for-road-vehicles",
+    "n24": 7,
+    "truncated": false,
+    "n12": 3,
+    "months24": 4,
+    "months12": 2,
+    "first": "20240927130808",
+    "last": "20260312225031",
+    "pairable": true,
+    "span_days": 531
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/indefinite-leave-to-remain-calculating-continuous-period-in-uk",
+    "n24": 9,
+    "truncated": false,
+    "n12": 4,
+    "months24": 8,
+    "months12": 4,
+    "first": "20250128031955",
+    "last": "20260412100305",
+    "pairable": true,
+    "span_days": 439
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/jsp-375-health-and-safety-handbook-volume-2",
+    "n24": 6,
+    "truncated": false,
+    "n12": 3,
+    "months24": 6,
+    "months12": 3,
+    "first": "20240902025438",
+    "last": "20260725075616",
+    "pairable": true,
+    "span_days": 691
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/jsp-464-tri-service-accommodation-regulations-tsars",
+    "n24": 12,
+    "truncated": false,
+    "n12": 5,
+    "months24": 6,
+    "months12": 3,
+    "first": "20240916213353",
+    "last": "20260731035855",
+    "pairable": true,
+    "span_days": 682
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/long-residence",
+    "n24": 13,
+    "truncated": false,
+    "n12": 7,
+    "months24": 8,
+    "months12": 4,
+    "first": "20241222202353",
+    "last": "20260213234047",
+    "pairable": true,
+    "span_days": 418
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/lulworth-access-times",
+    "n24": 18,
+    "truncated": false,
+    "n12": 12,
+    "months24": 15,
+    "months12": 9,
+    "first": "20240806012431",
+    "last": "20260721012033",
+    "pairable": true,
+    "span_days": 713
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/medical-devices-post-market-surveillance-requirements",
+    "n24": 16,
+    "truncated": false,
+    "n12": 10,
+    "months24": 9,
+    "months12": 5,
+    "first": "20250115162401",
+    "last": "20260512132535",
+    "pairable": true,
+    "span_days": 481
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/meningococcal-b-menb-time-limited-vaccination-offer-information-for-healthcare-practitioners",
+    "n24": 1,
+    "truncated": false,
+    "n12": 1,
+    "months24": 1,
+    "months12": 1,
+    "first": "20260715043741",
+    "last": "20260715043741",
+    "pairable": false,
+    "span_days": null
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/mmrv-patient-group-direction-pgd-template",
+    "n24": 5,
+    "truncated": false,
+    "n12": 5,
+    "months24": 3,
+    "months12": 3,
+    "first": "20251128164947",
+    "last": "20260515152534",
+    "pairable": true,
+    "span_days": 167
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/msn-1856-mf-amendment-1-uk-requirements-for-master-and-deck-officers",
+    "n24": 8,
+    "truncated": false,
+    "n12": 6,
+    "months24": 5,
+    "months12": 3,
+    "first": "20250207102445",
+    "last": "20260724165538",
+    "pairable": true,
+    "span_days": 532
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/naturalisation-as-a-british-citizen-by-discretion-nationality-policy-guidance",
+    "n24": 25,
+    "truncated": false,
+    "n12": 14,
+    "months24": 13,
+    "months12": 7,
+    "first": "20241203205909",
+    "last": "20260710135053",
+    "pairable": true,
+    "span_days": 583
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/nhs-cost-recovery-overseas-visitors",
+    "n24": 25,
+    "truncated": false,
+    "n12": 15,
+    "months24": 13,
+    "months12": 9,
+    "first": "20241227225144",
+    "last": "20260616221035",
+    "pairable": true,
+    "span_days": 535
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/notices-restrictions-and-protection-of-third-party-interests-pg19",
+    "n24": 1,
+    "truncated": false,
+    "n12": 1,
+    "months24": 1,
+    "months12": 1,
+    "first": "20260520172430",
+    "last": "20260520172430",
+    "pairable": false,
+    "span_days": null
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/ogden-tables-actuarial-compensation-tables-for-injury-and-death",
+    "n24": 15,
+    "truncated": false,
+    "n12": 3,
+    "months24": 9,
+    "months12": 3,
+    "first": "20240805151223",
+    "last": "20260501175536",
+    "pairable": true,
+    "span_days": 634
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/outdoor-advertisements-and-signs-a-guide-for-advertisers",
+    "n24": 15,
+    "truncated": false,
+    "n12": 7,
+    "months24": 8,
+    "months12": 3,
+    "first": "20240930163632",
+    "last": "20260422214817",
+    "pairable": true,
+    "span_days": 569
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/overseas-companies-in-the-uk-registration-filing-and-disclosure-obligations",
+    "n24": 79,
+    "truncated": false,
+    "n12": 72,
+    "months24": 15,
+    "months12": 11,
+    "first": "20240920172620",
+    "last": "20260730042032",
+    "pairable": true,
+    "span_days": 677
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/pension-schemes-newsletter-183-july-2026",
+    "n24": 1,
+    "truncated": false,
+    "n12": 1,
+    "months24": 1,
+    "months12": 1,
+    "first": "20260731090531",
+    "last": "20260731090531",
+    "pairable": false,
+    "span_days": null
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/people-with-significant-control-summary-guidance",
+    "n24": 11,
+    "truncated": false,
+    "n12": 11,
+    "months24": 6,
+    "months12": 6,
+    "first": "20251119114751",
+    "last": "20260730075929",
+    "pairable": true,
+    "span_days": 252
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/personal-information-use-in-borders-immigration-and-citizenship",
+    "n24": 51,
+    "truncated": false,
+    "n12": 19,
+    "months24": 20,
+    "months12": 9,
+    "first": "20240824134241",
+    "last": "20260726170847",
+    "pairable": true,
+    "span_days": 701
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/physical-activity-guidelines-uk-chief-medical-officers-report",
+    "n24": 41,
+    "truncated": false,
+    "n12": 26,
+    "months24": 20,
+    "months12": 10,
+    "first": "20240809112430",
+    "last": "20260725222913",
+    "pairable": true,
+    "span_days": 715
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/policy-profession-standards",
+    "n24": 12,
+    "truncated": false,
+    "n12": 3,
+    "months24": 10,
+    "months12": 3,
+    "first": "20240824212814",
+    "last": "20260412003114",
+    "pairable": true,
+    "span_days": 595
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/public-service-pensions-remedy-newsletter-july-2026",
+    "n24": 1,
+    "truncated": false,
+    "n12": 1,
+    "months24": 1,
+    "months12": 1,
+    "first": "20260725022715",
+    "last": "20260725022715",
+    "pairable": false,
+    "span_days": null
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/recalls-and-alerts",
+    "n24": 0,
+    "truncated": false,
+    "n12": 0,
+    "months24": 0,
+    "months12": 0,
+    "first": null,
+    "last": null,
+    "pairable": false,
+    "span_days": null
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/recycling-assessment-methodology-materials-and-outputs",
+    "n24": 9,
+    "truncated": false,
+    "n12": 7,
+    "months24": 8,
+    "months12": 6,
+    "first": "20250420193639",
+    "last": "20260728225043",
+    "pairable": true,
+    "span_days": 464
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/sailing-pleasure-craft-to-and-from-the-uk",
+    "n24": 2,
+    "truncated": false,
+    "n12": 2,
+    "months24": 2,
+    "months12": 2,
+    "first": "20260608090143",
+    "last": "20260712091425",
+    "pairable": true,
+    "span_days": 34
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/school-and-college-security",
+    "n24": 7,
+    "truncated": false,
+    "n12": 3,
+    "months24": 7,
+    "months12": 3,
+    "first": "20240905202740",
+    "last": "20260517184344",
+    "pairable": true,
+    "span_days": 618
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/searching-screening-and-confiscation",
+    "n24": 32,
+    "truncated": false,
+    "n12": 13,
+    "months24": 19,
+    "months12": 9,
+    "first": "20240805001837",
+    "last": "20260701144816",
+    "pairable": true,
+    "span_days": 695
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/sentencing-act-offence-exclusions",
+    "n24": 0,
+    "truncated": false,
+    "n12": 0,
+    "months24": 0,
+    "months12": 0,
+    "first": null,
+    "last": null,
+    "pairable": false,
+    "span_days": null
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/skilled-worker-visa-eligible-salary-if-youre-under-26-studying-training-or-in-a-postdoctoral-role",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/specialist-schemes-testing-station-map",
+    "n24": 5,
+    "truncated": false,
+    "n12": 2,
+    "months24": 5,
+    "months12": 2,
+    "first": "20240828135337",
+    "last": "20260212112344",
+    "pairable": true,
+    "span_days": 532
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/sr2022-no-4-non-hazardous-waste-recycling-with-asbestos-hazardous-batteries-cable-and-weee-storage",
+    "n24": 3,
+    "truncated": false,
+    "n12": 1,
+    "months24": 3,
+    "months12": 1,
+    "first": "20250413111704",
+    "last": "20260311231158",
+    "pairable": true,
+    "span_days": 332
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/store-a-will-with-the-probate-service",
+    "n24": 16,
+    "truncated": false,
+    "n12": 10,
+    "months24": 12,
+    "months12": 7,
+    "first": "20240805095949",
+    "last": "20260715114351",
+    "pairable": true,
+    "span_days": 709
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/terms-and-conditions-for-booking-and-taking-the-life-in-the-uk-test",
+    "n24": 19,
+    "truncated": false,
+    "n12": 5,
+    "months24": 14,
+    "months12": 4,
+    "first": "20240807210850",
+    "last": "20260626142216",
+    "pairable": true,
+    "span_days": 687
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/the-nhs-constitution-for-england",
+    "n24": 89,
+    "truncated": false,
+    "n12": 41,
+    "months24": 22,
+    "months12": 10,
+    "first": "20240806005013",
+    "last": "20260730075201",
+    "pairable": true,
+    "span_days": 723
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/the-uk-forestry-standard",
+    "n24": 20,
+    "truncated": false,
+    "n12": 6,
+    "months24": 15,
+    "months12": 6,
+    "first": "20240829143623",
+    "last": "20260618145009",
+    "pairable": true,
+    "span_days": 658
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/the-writing-framework",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/travelling-to-the-uk",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/turing-scheme-international-placements-2026-to-2027",
+    "n24": 6,
+    "truncated": false,
+    "n12": 6,
+    "months24": 3,
+    "months12": 3,
+    "first": "20260120101711",
+    "last": "20260419062758",
+    "pairable": true,
+    "span_days": 88
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/uk-strategic-export-control-lists-the-consolidated-list-of-strategic-military-and-dual-use-items-that-require-export-authorisation",
+    "n24": 25,
+    "truncated": false,
+    "n12": 7,
+    "months24": 15,
+    "months12": 6,
+    "first": "20240917153342",
+    "last": "20260509202537",
+    "pairable": true,
+    "span_days": 599
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/using-emergency-adrenaline-auto-injectors-in-schools",
+    "n24": 7,
+    "truncated": false,
+    "n12": 4,
+    "months24": 5,
+    "months12": 3,
+    "first": "20240921154450",
+    "last": "20260710101808",
+    "pairable": true,
+    "span_days": 656
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/vaccination-of-individuals-with-uncertain-or-incomplete-immunisation",
+    "n24": 7,
+    "truncated": false,
+    "n12": 7,
+    "months24": 3,
+    "months12": 3,
+    "first": "20260509005135",
+    "last": "20260731081704",
+    "pairable": true,
+    "span_days": 83
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/warm-homes-local-grant",
+    "n24": 32,
+    "truncated": false,
+    "n12": 14,
+    "months24": 15,
+    "months12": 7,
+    "first": "20240923155218",
+    "last": "20260721064014",
+    "pairable": true,
+    "span_days": 665
+   },
+   {
+    "url": "https://www.gov.uk/government/publications/working-whilst-an-asylum-claim-is-considered",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   }
+  ],
+  "energy": [
+   {
+    "url": "https://www.energy.gov/articles/10-questions-particle-physicist-dave-schmitz",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/2012-national-electricity-forum",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/2017-gmi-peer-review-presentations-devices-and-integrated-systems",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/2017-gmi-peer-review-presentations-institutional-support",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/75-breakthroughs-americas-national-laboratories-0",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/americas-first-offshore-wind-farm",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/belgiums-ghent-university-prepares-their-e-cube-solar-decathlon-2011",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/brookhaven-lab-captures-e-colis-sticky-fingers-film",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/building-better-future-through-clean-energy",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/california-recovery-act-snapshot",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/chapter-8-advancing-clean-transportation-and-vehicle-systems-and-technologies",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/clean-cities-expands-and-strengthens-nationwide-partnerships",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/concentrating-california-solar-power",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/creating-star-earth",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/department-energy-advances-32-million-funding-advanced-technologies",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/department-energy-announces-145-million-advance-geothermal-drilling-technologies",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/department-energy-announces-18-new-projects-accelerate-production-macroalgae-energy-and",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/department-energy-announces-19-million-advanced-battery-and-electrification-research",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/department-energy-announces-21-new-projects-develop-high-performance-circuits-industrial",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/department-energy-announces-39-million-innovative-hydrogen-and-fuel-cell-technologies",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/department-energy-awards-six-research-contracts-totaling-258-million-accelerate-us",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/department-energy-cites-bechtel-national-inc-worker-safety-and-health-violations",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/department-energy-quadrennial-technology-review-framing-document",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/department-energy-releases-2011-strategic-plan",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/doe-announces-80-million-investment-build-supercritical-carbon-dioxide-pilot-plant-test",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/doe-laboratories-sign-memorandum-understanding-innovative-coal-research",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/doe-we17-women-engineers-national-labs-inspiring-future-generations",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/energy-department-advances-additional-20-million-research-awards",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/energy-department-announces-158-million-investment-innovation-hydrogen-and-fuel-cell",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/energy-department-announces-25-million-combined-heat-and-power-technologies",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/energy-department-federal-news-radio",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/energy-department-invests-44m-advanced-carbon-capture-technologies-projects",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/energy-department-offers-conditional-commitment-first-advanced-fossil-energy-loan",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/energy-department-releases-first-ever-state-national-labs-report",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/energy-tweets-state-union-2013",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/fact-sheet-obama-administration-announces-new-financing-renewable-energy-projects-and",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/geek-up6102011-thermoelectrics-great-power-key-ingredient-bones-nanostructure",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/gmis-first-program-review",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/google-hangout-americas-growing-solar-industry",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/helping-alaska-native-communities-reduce-their-energy-costs",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/history-electric-car",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/history-nuclear-power-space",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/how-3d-printers-work",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/infographic-everything-you-need-know-about-supercomputers-0",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/joining-forces-clean-energy-companies-commit-hire-veterans",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/map-watch-30-years-us-solar-industry-growth",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/new-wave-power-project-oregon",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/north-american-energy-ministerial-joint-summary-november-14-15-2017",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/not-your-fathers-weatherization-qa-contractor-mike-richart",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/nuclear-waste-policy-act",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/oppenheimer-science-and-energy-leadership-program-building-network-future-doe-leaders",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/plain-language-compliance-report-2015",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/preparing-todays-leaders-tomorrows-scientific-and-energy-challenges",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/revised-2018-arpa-e-summit-agenda-update",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/road-fuel-savings-gm-technology-ramps-engine-efficiency",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/secretary-energy-rick-perry-visit-mcnary-dam-pacific-northwest-national-laboratory-and",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/secretary-moniz-remarks-nuclear-security-iaea-conference",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/secretary-perry-statement-budget-blueprint",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/smoothing-renewable-wind-energy-texas",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/solar-loan-week-conditional-loan-arizona-solar-project",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/stem-integral-part-ames-laboratorys-mission",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/supporting-stem-investment-our-future",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/talking-stem-navajo-nation-stem-sation-day",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/tapping-next-generation-supercomputers-bring-fusion-energy-world",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/team-china-transforms-shipping-containers-solar-powered-house",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/tracking-santa-interview-head-researcher",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/transformative-tech-2018-arpa-e-energy-innovation-summit",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/under-secretary-paul-dabbar-participates-white-house-summit-ai-american-industry",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/united-states-russia-sign-agreement-further-research-and-development-collaboration-nuclear",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/updates-interagency-task-force-natural-gas-storage-safety-working-stakeholders",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/us-department-energy-announces-325-million-advance-solid-oxide-fuel-cell-technologies",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/us-department-energy-cabinet-exit-memo",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/us-department-energy-issues-small-business-research-and-development-funding-opportunity",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/us-department-energy-projects-win-32-rd-100-awards-2016",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/us-secretary-energy-rick-perry-host-north-american-energy-ministerial",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/us-wind-industry-continues-expand",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/video-recovery-act-numbers",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/vintage-doe-accomplishments",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/water-energy-nexus-challenges-and-opportunities",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
+   },
+   {
+    "url": "https://www.energy.gov/articles/whats-energy-got-do-it-new-mou-will-strengthen-and-expand-collaborations-medicine-and",
+    "error": "URLError: <urlopen error [Errno 104] Connection reset by peer>"
    }
   ]
  }

@@ -1,0 +1,138 @@
+{
+ "per_authority": {
+  "receiver": {
+   "sampled": 16,
+   "measured": 16,
+   "errors": 0,
+   "zero_capture_24m": 0,
+   "zero_capture_24m_pct": 0.0,
+   "n12_median": 3.5,
+   "n12_mean": 3.81,
+   "n12_p90": 7.5,
+   "n12_max": 11,
+   "months12_median": 3.0,
+   "months12_ge6": 2,
+   "months12_ge6_pct": 12.5,
+   "months12_ge2": 13,
+   "pairable": 16,
+   "pairable_pct": 100.0,
+   "truncated": 0
+  },
+  "nist": {
+   "sampled": 80,
+   "measured": 80,
+   "errors": 0,
+   "zero_capture_24m": 0,
+   "zero_capture_24m_pct": 0.0,
+   "n12_median": 2.0,
+   "n12_mean": 2.41,
+   "n12_p90": 3.0,
+   "n12_max": 6,
+   "months12_median": 2.0,
+   "months12_ge6": 1,
+   "months12_ge6_pct": 1.2,
+   "months12_ge2": 78,
+   "pairable": 80,
+   "pairable_pct": 100.0,
+   "truncated": 0
+  },
+  "epa": {
+   "sampled": 80,
+   "measured": 80,
+   "errors": 0,
+   "zero_capture_24m": 0,
+   "zero_capture_24m_pct": 0.0,
+   "n12_median": 4.0,
+   "n12_mean": 4.69,
+   "n12_p90": 5.0,
+   "n12_max": 17,
+   "months12_median": 2.0,
+   "months12_ge6": 1,
+   "months12_ge6_pct": 1.2,
+   "months12_ge2": 80,
+   "pairable": 80,
+   "pairable_pct": 100.0,
+   "truncated": 0
+  },
+  "govuk": {
+   "sampled": 80,
+   "measured": 76,
+   "errors": 4,
+   "zero_capture_24m": 6,
+   "zero_capture_24m_pct": 7.9,
+   "n12_median": 7.0,
+   "n12_mean": 9.33,
+   "n12_p90": 18.5,
+   "n12_max": 72,
+   "months12_median": 4.0,
+   "months12_ge6": 29,
+   "months12_ge6_pct": 38.2,
+   "months12_ge2": 61,
+   "pairable": 63,
+   "pairable_pct": 82.9,
+   "truncated": 0
+  },
+  "energy": {
+   "sampled": 80,
+   "measured": 0,
+   "errors": 80,
+   "zero_capture_24m": 0,
+   "zero_capture_24m_pct": null,
+   "n12_median": null,
+   "n12_mean": null,
+   "n12_p90": null,
+   "n12_max": null,
+   "months12_median": null,
+   "months12_ge6": 0,
+   "months12_ge6_pct": null,
+   "months12_ge2": 0,
+   "pairable": 0,
+   "pairable_pct": null,
+   "truncated": 0
+  }
+ },
+ "pooled": {
+  "measured": 236,
+  "errors": 84,
+  "n12_median": 4.0,
+  "n12_p90": 12.0,
+  "months12_ge6": 31,
+  "months12_ge6_pct": 13.1,
+  "pairable": 223,
+  "pairable_pct": 94.5,
+  "zero_capture_24m": 6,
+  "zero_capture_24m_pct": 2.5
+ },
+ "predictions": {
+  "P5": {
+   "claim": "pooled median n12 <= 4",
+   "value": 4.0,
+   "verdict": "HELD"
+  },
+  "P6": {
+   "claim": "< 25% of document pages have months12 >= 6",
+   "value": 13.1,
+   "verdict": "HELD"
+  },
+  "P7": {
+   "claim": ">= 1 authority with >= 30 pairable document pages",
+   "value": "nist=80",
+   "verdict": "HELD"
+  },
+  "P8": {
+   "claim": "pooled p90 of n12 < 42 (increment 1's smallest index-page count)",
+   "value": 12.0,
+   "verdict": "HELD"
+  },
+  "P9": {
+   "claim": "FALSIFIER: >= 50% of document pages have months12 >= 6 -> D4 withdrawn",
+   "value": 13.1,
+   "verdict": "did not fire"
+  },
+  "P10": {
+   "claim": "< 50% of the receiver's own pages are pairable",
+   "value": 100.0,
+   "verdict": "NOT HELD"
+  }
+ }
+}
