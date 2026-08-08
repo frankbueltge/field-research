@@ -1,0 +1,12 @@
+receiver: prefix standards.digital.gov/ frame 16 sample 16
+    20240801-20260731: 1513 rows
+  receiver done: {'frame_urls': 16, 'frame_urls_with_any_capture_24m': 16, 'distinct_urls_under_prefix': 68, 'total_captures_under_prefix_24m': 1513}
+nist: prefix www.nist.gov/publications/ frame 3339 sample 80
+    20240801-20260731: 150000 rows CAPPED
+      20240801-20241129: 61104 rows
+      20241130-20250330: 150000 rows CAPPED
+        20241130-20241219: 30227 rows
+        20241220-20250108: 13039 rows
+        20250109-20250128: 95698 rows
+        20250129-20250217: 150000 rows CAPPED
+          20250129-20250131: 16057 rows

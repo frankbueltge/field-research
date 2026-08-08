@@ -38,3 +38,6 @@ energy: frame 712 -> sample 80
 [nist 16/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/predictive-power-annellation-theory-case-c32h16-benzenoid-polycyclic-aromatic
 [nist 17/80] n12=3 m12=3 pairable=True https://www.nist.gov/publications/high-confidence-level-calibration-afm-based-fracture-testing-nanobeams
 [nist 18/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/characterization-confined-ceiling-jet-presence-upper-layer-transient-and-steady-state
+[nist 19/80] n12=3 m12=3 pairable=True https://www.nist.gov/publications/interlaboratory-comparison-sizing-and-counting-subvisible-particles-mimicking-protein
+[nist 20/80] n12=2 m12=2 pairable=True https://www.nist.gov/publications/guide-using-vulnerability-naming-schemes
+[nist 21/80] n12=3 m12=3 pairable=True https://www.nist.gov/publications/recommendation-existing-application-specific-key-derivation-functions-0

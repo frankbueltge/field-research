@@ -1,0 +1,228 @@
+{
+ "generated_utc": "2026-08-08T03:59:00Z",
+ "route": "prefix query, see module docstring",
+ "seed": 20260808,
+ "window24": [
+  "20240801",
+  "20260731"
+ ],
+ "window12": [
+  "20250801",
+  "20260731"
+ ],
+ "frame_sizes": {
+  "nist": 3339,
+  "epa": 3126,
+  "govuk": 1000,
+  "energy_candidate_n": 712,
+  "energy": 712,
+  "receiver": 16
+ },
+ "authorities": {
+  "receiver": [
+   {
+    "url": "https://standards.digital.gov/",
+    "n24": 47,
+    "truncated": false,
+    "n12": 11,
+    "months24": 17,
+    "months12": 7,
+    "first": "20240928012607",
+    "last": "20260701172350",
+    "pairable": true,
+    "span_days": 641
+   },
+   {
+    "url": "https://standards.digital.gov/404.html",
+    "n24": 7,
+    "truncated": false,
+    "n12": 0,
+    "months24": 4,
+    "months12": 0,
+    "first": "20241127044819",
+    "last": "20250527225649",
+    "pairable": true,
+    "span_days": 181
+   },
+   {
+    "url": "https://standards.digital.gov/about/",
+    "n24": 33,
+    "truncated": false,
+    "n12": 7,
+    "months24": 14,
+    "months12": 6,
+    "first": "20241001204922",
+    "last": "20260701172350",
+    "pairable": true,
+    "span_days": 637
+   },
+   {
+    "url": "https://standards.digital.gov/contact/",
+    "n24": 25,
+    "truncated": false,
+    "n12": 6,
+    "months24": 13,
+    "months12": 5,
+    "first": "20241002123417",
+    "last": "20260701172350",
+    "pairable": true,
+    "span_days": 637
+   },
+   {
+    "url": "https://standards.digital.gov/get-involved/",
+    "n24": 7,
+    "truncated": false,
+    "n12": 0,
+    "months24": 5,
+    "months12": 0,
+    "first": "20241127044819",
+    "last": "20250527225700",
+    "pairable": true,
+    "span_days": 181
+   },
+   {
+    "url": "https://standards.digital.gov/search/",
+    "n24": 8,
+    "truncated": false,
+    "n12": 0,
+    "months24": 6,
+    "months12": 0,
+    "first": "20241103193235",
+    "last": "20250618115709",
+    "pairable": true,
+    "span_days": 226
+   },
+   {
+    "url": "https://standards.digital.gov/standards/",
+    "n24": 37,
+    "truncated": false,
+    "n12": 8,
+    "months24": 14,
+    "months12": 5,
+    "first": "20241002011556",
+    "last": "20260701172339",
+    "pairable": true,
+    "span_days": 637
+   },
+   {
+    "url": "https://standards.digital.gov/standards/banner/",
+    "n24": 15,
+    "truncated": false,
+    "n12": 4,
+    "months24": 10,
+    "months12": 3,
+    "first": "20241103183631",
+    "last": "20260104160156",
+    "pairable": true,
+    "span_days": 426
+   },
+   {
+    "url": "https://standards.digital.gov/standards/contact-page/",
+    "n24": 12,
+    "truncated": false,
+    "n12": 2,
+    "months24": 8,
+    "months12": 2,
+    "first": "20241127044819",
+    "last": "20260115143602",
+    "pairable": true,
+    "span_days": 414
+   },
+   {
+    "url": "https://standards.digital.gov/standards/content-timeliness-indicator/",
+    "n24": 15,
+    "truncated": false,
+    "n12": 3,
+    "months24": 10,
+    "months12": 3,
+    "first": "20241103182738",
+    "last": "20260701172350",
+    "pairable": true,
+    "span_days": 604
+   },
+   {
+    "url": "https://standards.digital.gov/standards/external-link/",
+    "n24": 13,
+    "truncated": false,
+    "n12": 2,
+    "months24": 10,
+    "months12": 2,
+    "first": "20241127044818",
+    "last": "20260222032513",
+    "pairable": true,
+    "span_days": 451
+   },
+   {
+    "url": "https://standards.digital.gov/standards/html-page-title/",
+    "n24": 20,
+    "truncated": false,
+    "n12": 6,
+    "months24": 10,
+    "months12": 4,
+    "first": "20241103195649",
+    "last": "20260701172350",
+    "pairable": true,
+    "span_days": 604
+   },
+   {
+    "url": "https://standards.digital.gov/standards/language-selector/",
+    "n24": 15,
+    "truncated": false,
+    "n12": 2,
+    "months24": 10,
+    "months12": 2,
+    "first": "20241127044821",
+    "last": "20260228140128",
+    "pairable": true,
+    "span_days": 458
+   },
+   {
+    "url": "https://standards.digital.gov/standards/meta-page-description/",
+    "n24": 15,
+    "truncated": false,
+    "n12": 4,
+    "months24": 10,
+    "months12": 4,
+    "first": "20241127044820",
+    "last": "20260701172350",
+    "pairable": true,
+    "span_days": 581
+   },
+   {
+    "url": "https://standards.digital.gov/standards/page-level-feedback/",
+    "n24": 9,
+    "truncated": false,
+    "n12": 4,
+    "months24": 6,
+    "months12": 3,
+    "first": "20250320142148",
+    "last": "20260306022301",
+    "pairable": true,
+    "span_days": 350
+   },
+   {
+    "url": "https://standards.digital.gov/standards/site-search/",
+    "n24": 12,
+    "truncated": false,
+    "n12": 2,
+    "months24": 7,
+    "months12": 2,
+    "first": "20241103185122",
+    "last": "20260223052803",
+    "pairable": true,
+    "span_days": 476
+   }
+  ]
+ },
+ "frame_wide": {
+  "receiver": {
+   "frame_urls": 16,
+   "frame_urls_with_any_capture_24m": 16,
+   "distinct_urls_under_prefix": 68,
+   "total_captures_under_prefix_24m": 1513
+  }
+ },
+ "truncated_windows": {
+  "receiver": []
+ }
+}
