@@ -1,0 +1,2499 @@
+{
+ "instrument": "does-the-date-move / increment 1",
+ "preregistration": "PREREGISTRATION.md, committed before this file existed",
+ "run_started_utc": "2026-08-08T00:52:35.477413+00:00",
+ "months": [
+  "2025-08",
+  "2025-09",
+  "2025-10",
+  "2025-11",
+  "2025-12",
+  "2026-01",
+  "2026-02",
+  "2026-03",
+  "2026-04",
+  "2026-05",
+  "2026-06",
+  "2026-07"
+ ],
+ "urls": [
+  {
+   "authority": "EC",
+   "url": "https://digital-strategy.ec.europa.eu/en/policies",
+   "observations": {
+    "2025-08": {
+     "timestamp": "20250816095635",
+     "cdx_digest": "4EALLXDWLDZJQ2LEVAQ5MXBPCIC5O6VB",
+     "http_status": 200,
+     "bytes": 7463,
+     "h_raw": "Sat, 16 Aug 2025 09:01:40 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "3461ed4f14898a68de707799eb8471590f0e7817bdcf08d964d7e288b3b33729",
+     "text_len": 4339
+    },
+    "2025-09": {
+     "timestamp": "20250915084216",
+     "cdx_digest": "34PPYSLHEIMVLD7LYHEFS6PK2CNIBND6",
+     "http_status": 200,
+     "bytes": 7350,
+     "h_raw": "Mon, 15 Sep 2025 08:37:55 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "948e6fc1d0130797ba867804cb081558799daf2250eb178763be1b7c96d2ede3",
+     "text_len": 3615
+    },
+    "2025-10": {
+     "timestamp": "20251017113929",
+     "cdx_digest": "Z4A7WSMGIWIZ2L2B42HK2E5DA4OAKYQI",
+     "http_status": 200,
+     "bytes": 7353,
+     "h_raw": "Fri, 17 Oct 2025 11:08:23 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "e614252302bc8095073321fdcdbf8d24d7e40f9df8c32ace127eecda1fb3a201",
+     "text_len": 3661
+    },
+    "2025-11": {
+     "timestamp": "20251115233338",
+     "cdx_digest": "YPCLXHRFAMKRKRPVEZZ7WMOJ6UNUV2LI",
+     "http_status": 200,
+     "bytes": 45491,
+     "h_raw": "Sat, 15 Nov 2025 23:09:43 GMT",
+     "v_raw": "22 May 2025",
+     "v": "2025-05-22T00:00:00+00:00",
+     "v_rule": "V1-last-update",
+     "text_sha256": "4b93477c5fb245c2b9a13d0ca9bbb8e70649d11b4e7259290905c1f73b03b7d9",
+     "text_len": 1737
+    },
+    "2025-12": {
+     "timestamp": "20251212084458",
+     "cdx_digest": "LSZRXWORM673S5EB3V3HEXVNGFSCGADO",
+     "http_status": 200,
+     "bytes": 47234,
+     "h_raw": "Fri, 12 Dec 2025 08:27:53 GMT",
+     "v_raw": "22 May 2025",
+     "v": "2025-05-22T00:00:00+00:00",
+     "v_rule": "V1-last-update",
+     "text_sha256": "4b93477c5fb245c2b9a13d0ca9bbb8e70649d11b4e7259290905c1f73b03b7d9",
+     "text_len": 1737
+    },
+    "2026-01": {
+     "timestamp": "20260124171444",
+     "cdx_digest": "CG5JOSWXA4QB5NVWWOFYTZT2TGCFRBUV",
+     "http_status": 200,
+     "bytes": 45495,
+     "h_raw": "Sat, 24 Jan 2026 17:03:04 GMT",
+     "v_raw": "22 May 2025",
+     "v": "2025-05-22T00:00:00+00:00",
+     "v_rule": "V1-last-update",
+     "text_sha256": "4b93477c5fb245c2b9a13d0ca9bbb8e70649d11b4e7259290905c1f73b03b7d9",
+     "text_len": 1737
+    },
+    "2026-02": {
+     "timestamp": "20260210174214",
+     "cdx_digest": "55U2NGNAL6PMM45WYWATNQLRQHPDKVK2",
+     "http_status": 200,
+     "bytes": 45477,
+     "h_raw": "Tue, 10 Feb 2026 17:05:13 GMT",
+     "v_raw": "22 May 2025",
+     "v": "2025-05-22T00:00:00+00:00",
+     "v_rule": "V1-last-update",
+     "text_sha256": "4b93477c5fb245c2b9a13d0ca9bbb8e70649d11b4e7259290905c1f73b03b7d9",
+     "text_len": 1737
+    },
+    "2026-03": {
+     "timestamp": "20260305205259",
+     "cdx_digest": "BLFVEYWZLYPEY6CZWNMSOPSPTXPFU4HW",
+     "http_status": 200,
+     "bytes": 45477,
+     "h_raw": "Thu, 05 Mar 2026 20:03:52 GMT",
+     "v_raw": "22 May 2025",
+     "v": "2025-05-22T00:00:00+00:00",
+     "v_rule": "V1-last-update",
+     "text_sha256": "4b93477c5fb245c2b9a13d0ca9bbb8e70649d11b4e7259290905c1f73b03b7d9",
+     "text_len": 1737
+    },
+    "2026-04": {
+     "timestamp": "20260415160838",
+     "cdx_digest": "P2QIBJB7DBQV2G22SVQ7TGAE5FXR47QY",
+     "http_status": 200,
+     "bytes": 7676,
+     "h_raw": "Wed, 15 Apr 2026 16:01:22 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "e5b5626e2aac072722df3d2f8036cf1af54175a14de958d6d5a1411961734c57",
+     "text_len": 2694
+    },
+    "2026-05": {
+     "timestamp": "20260519061617",
+     "cdx_digest": "NAEG7MQCNR3NI3G7LWN6322GGYSARECJ",
+     "http_status": 200,
+     "bytes": 45739,
+     "h_raw": "Tue, 19 May 2026 06:02:00 GMT",
+     "v_raw": "22 May 2025",
+     "v": "2025-05-22T00:00:00+00:00",
+     "v_rule": "V1-last-update",
+     "text_sha256": "e59bc5ad2ce642fe468e75c1c5860d8afaa5dd6bb0524dec76f21051d6947df6",
+     "text_len": 1694
+    },
+    "2026-06": {
+     "timestamp": "20260615165851",
+     "cdx_digest": "XJUZX6KSB7DF6I4PKWAXEAB6B4QSZJEJ",
+     "http_status": 200,
+     "bytes": 7913,
+     "h_raw": "Mon, 15 Jun 2026 16:58:25 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "0d26c40eeb70d9214fb089e63d9257e4f50d2a5710e9b737ede0cf34d5ecc82b",
+     "text_len": 3397
+    },
+    "2026-07": {
+     "timestamp": "20260706221711",
+     "cdx_digest": "MT7HS72CJNRQXQDDIPPXZGBAU4A33ALY",
+     "http_status": 200,
+     "bytes": 7900,
+     "h_raw": "Mon, 06 Jul 2026 22:00:56 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "8f9e7793ae6c795ee2c8516af0f20c2edf20d974247ba5a04bc4d9df47ec6c87",
+     "text_len": 3607
+    }
+   },
+   "errors": [],
+   "cdx_adjacent_pairs": 41,
+   "cdx_adjacent_digest_differs": 40,
+   "captures_200_in_window": 42,
+   "pairs": [
+    {
+     "from": "2025-08",
+     "to": "2025-09",
+     "status": "SCORED",
+     "ratio": 0.005532,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Sat, 16 Aug 2025 09:01:40 GMT",
+     "h_to": "Mon, 15 Sep 2025 08:37:55 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-09",
+     "to": "2025-10",
+     "status": "SCORED",
+     "ratio": 0.028862,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Mon, 15 Sep 2025 08:37:55 GMT",
+     "h_to": "Fri, 17 Oct 2025 11:08:23 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-10",
+     "to": "2025-11",
+     "status": "SCORED",
+     "ratio": 0.007781,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": "2025-05-22T00:00:00+00:00",
+     "v": "UNSCORABLE",
+     "h_from": "Fri, 17 Oct 2025 11:08:23 GMT",
+     "h_to": "Sat, 15 Nov 2025 23:09:43 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-11",
+     "to": "2025-12",
+     "status": "SCORED",
+     "ratio": 1.0,
+     "content": "IDENTICAL",
+     "v_from": "2025-05-22T00:00:00+00:00",
+     "v_to": "2025-05-22T00:00:00+00:00",
+     "v": "STILL",
+     "h_from": "Sat, 15 Nov 2025 23:09:43 GMT",
+     "h_to": "Fri, 12 Dec 2025 08:27:53 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-12",
+     "to": "2026-01",
+     "status": "SCORED",
+     "ratio": 1.0,
+     "content": "IDENTICAL",
+     "v_from": "2025-05-22T00:00:00+00:00",
+     "v_to": "2025-05-22T00:00:00+00:00",
+     "v": "STILL",
+     "h_from": "Fri, 12 Dec 2025 08:27:53 GMT",
+     "h_to": "Sat, 24 Jan 2026 17:03:04 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-01",
+     "to": "2026-02",
+     "status": "SCORED",
+     "ratio": 1.0,
+     "content": "IDENTICAL",
+     "v_from": "2025-05-22T00:00:00+00:00",
+     "v_to": "2025-05-22T00:00:00+00:00",
+     "v": "STILL",
+     "h_from": "Sat, 24 Jan 2026 17:03:04 GMT",
+     "h_to": "Tue, 10 Feb 2026 17:05:13 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-02",
+     "to": "2026-03",
+     "status": "SCORED",
+     "ratio": 1.0,
+     "content": "IDENTICAL",
+     "v_from": "2025-05-22T00:00:00+00:00",
+     "v_to": "2025-05-22T00:00:00+00:00",
+     "v": "STILL",
+     "h_from": "Tue, 10 Feb 2026 17:05:13 GMT",
+     "h_to": "Thu, 05 Mar 2026 20:03:52 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-03",
+     "to": "2026-04",
+     "status": "SCORED",
+     "ratio": 0.008125,
+     "content": "SUBSTANTIVE",
+     "v_from": "2025-05-22T00:00:00+00:00",
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Thu, 05 Mar 2026 20:03:52 GMT",
+     "h_to": "Wed, 15 Apr 2026 16:01:22 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-04",
+     "to": "2026-05",
+     "status": "SCORED",
+     "ratio": 0.007293,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": "2025-05-22T00:00:00+00:00",
+     "v": "UNSCORABLE",
+     "h_from": "Wed, 15 Apr 2026 16:01:22 GMT",
+     "h_to": "Tue, 19 May 2026 06:02:00 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-05",
+     "to": "2026-06",
+     "status": "SCORED",
+     "ratio": 0.012178,
+     "content": "SUBSTANTIVE",
+     "v_from": "2025-05-22T00:00:00+00:00",
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Tue, 19 May 2026 06:02:00 GMT",
+     "h_to": "Mon, 15 Jun 2026 16:58:25 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-06",
+     "to": "2026-07",
+     "status": "SCORED",
+     "ratio": 0.071959,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Mon, 15 Jun 2026 16:58:25 GMT",
+     "h_to": "Mon, 06 Jul 2026 22:00:56 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    }
+   ]
+  },
+  {
+   "authority": "EC",
+   "url": "https://digital-strategy.ec.europa.eu/en/events",
+   "observations": {
+    "2025-08": {
+     "timestamp": "20250816095636",
+     "cdx_digest": "N7NCKHBIR6XE3N2AW6YC5MFMWZ44UJ5L",
+     "http_status": 200,
+     "bytes": 9562,
+     "h_raw": "Sat, 16 Aug 2025 09:01:23 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "0816733a14a37f0159ffd90d585f7205594fae256be4266c3c3f35fbda0cd003",
+     "text_len": 3931
+    },
+    "2025-09": {
+     "timestamp": "20250916082142",
+     "cdx_digest": "SGC2JTEGQLWTKDXWLP5YIZJ7RLFURQ4K",
+     "http_status": 200,
+     "bytes": 64783,
+     "h_raw": "Tue, 16 Sep 2025 08:02:45 GMT",
+     "v_raw": " - ",
+     "v": null,
+     "v_rule": "V3-time-element",
+     "text_sha256": "090e0980e3bc6a2f132731864e941901e9ff0cbca3d28cf9372a5434225c6f5a",
+     "text_len": 2962
+    },
+    "2025-10": {
+     "timestamp": "20251014131739",
+     "cdx_digest": "3O377DCRBI2XRKGZ5NP3SK53QSZNND6B",
+     "http_status": 200,
+     "bytes": 69875,
+     "h_raw": "Tue, 14 Oct 2025 13:00:53 GMT",
+     "v_raw": " - ",
+     "v": null,
+     "v_rule": "V3-time-element",
+     "text_sha256": "64d43a9a6c9ba944df42471021237ee69c9ecf8f56a321215eb58cdda7bdd985",
+     "text_len": 2998
+    },
+    "2025-11": {
+     "timestamp": "20251118190631",
+     "cdx_digest": "ITUBYRQUWLKEORYYFUKRKZXAVMQQRL3M",
+     "http_status": 200,
+     "bytes": 65341,
+     "h_raw": "Tue, 18 Nov 2025 19:03:38 GMT",
+     "v_raw": " - ",
+     "v": null,
+     "v_rule": "V3-time-element",
+     "text_sha256": "7653164ad87f2c9209623a8b044b40cc746fe185c5cba0e9039db1845eca3275",
+     "text_len": 2895
+    },
+    "2025-12": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-01": {
+     "timestamp": "20260123164711",
+     "cdx_digest": "X6NX4ZTNR2OISUYG7QCTKA2Q7WMEDETV",
+     "http_status": 200,
+     "bytes": 10233,
+     "h_raw": "Fri, 23 Jan 2026 16:03:38 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "24a70d60a2ed0f3392fec97ad9dd067d1aae93e6990dab753688b6456346cab8",
+     "text_len": 5319
+    },
+    "2026-02": {
+     "timestamp": "20260216080533",
+     "cdx_digest": "6X7OQVDMMFTEVPTK2H7MPIVDYNDRXAWT",
+     "http_status": 200,
+     "bytes": 59221,
+     "h_raw": "Mon, 16 Feb 2026 08:03:12 GMT",
+     "v_raw": "16 April 2026",
+     "v": "2026-04-16T00:00:00+00:00",
+     "v_rule": "V3-time-element",
+     "text_sha256": "5bd6ea8bc60406ce725303c3896b4d5df9eb0e3319f95c66559709c06046cbf9",
+     "text_len": 2436
+    },
+    "2026-03": {
+     "timestamp": "20260315080107",
+     "cdx_digest": "5WRKM6FMHNZ63PJUJZHH65O24LTYW554",
+     "http_status": 200,
+     "bytes": 66715,
+     "h_raw": "Sun, 15 Mar 2026 08:01:07 GMT",
+     "v_raw": " - ",
+     "v": null,
+     "v_rule": "V3-time-element",
+     "text_sha256": "d3bce5ac037193364add77109016fa4ad9b4d24c73e519cf9ffda6a4ab2b87a6",
+     "text_len": 2714
+    },
+    "2026-04": {
+     "timestamp": "20260415085004",
+     "cdx_digest": "SMGLS65RFNQYGLKOGDIWDYWJGESPR3IN",
+     "http_status": 200,
+     "bytes": 10052,
+     "h_raw": "Wed, 15 Apr 2026 08:01:50 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "04eeae189fafb648a814c096b66474220be6ac639d9917a24fbd9ea840705faf",
+     "text_len": 5032
+    },
+    "2026-05": {
+     "timestamp": "20260517023701",
+     "cdx_digest": "74LEKC5CMDVRFA43H4FRXLCFCW36VM4J",
+     "http_status": 200,
+     "bytes": 10386,
+     "h_raw": "Sun, 17 May 2026 02:11:49 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "e1e3830ff9fcf5a4fa5479c8013c444d2bff5c51502dff311c10deab04f26909",
+     "text_len": 6409
+    },
+    "2026-06": {
+     "timestamp": "20260616040528",
+     "cdx_digest": "BWOMHAQGMNQPCDRAKVQC626YSMUJVBXJ",
+     "http_status": 200,
+     "bytes": 10523,
+     "h_raw": "Tue, 16 Jun 2026 04:03:25 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "fe2f0cdf68d4c3920f81e63365bdbc46854b7500c660213e298a4ca89ebd4c2f",
+     "text_len": 5889
+    },
+    "2026-07": {
+     "timestamp": "20260716112050",
+     "cdx_digest": "4YZS6HXNECWQCKMYCXLPQPX7TYMDVJXP",
+     "http_status": 200,
+     "bytes": 10481,
+     "h_raw": "Thu, 16 Jul 2026 11:01:42 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "2dda3de6f9908624abd0f673e7734c9079576e934d4bb798a2228bbac99ed5f8",
+     "text_len": 3829
+    }
+   },
+   "errors": [],
+   "cdx_adjacent_pairs": 37,
+   "cdx_adjacent_digest_differs": 34,
+   "captures_200_in_window": 38,
+   "pairs": [
+    {
+     "from": "2025-08",
+     "to": "2025-09",
+     "status": "SCORED",
+     "ratio": 0.011316,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Sat, 16 Aug 2025 09:01:23 GMT",
+     "h_to": "Tue, 16 Sep 2025 08:02:45 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-09",
+     "to": "2025-10",
+     "status": "SCORED",
+     "ratio": 0.660738,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Tue, 16 Sep 2025 08:02:45 GMT",
+     "h_to": "Tue, 14 Oct 2025 13:00:53 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-10",
+     "to": "2025-11",
+     "status": "SCORED",
+     "ratio": 0.459189,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Tue, 14 Oct 2025 13:00:53 GMT",
+     "h_to": "Tue, 18 Nov 2025 19:03:38 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-11",
+     "to": "2025-12",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-12",
+     "to": "2026-01",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-01",
+     "to": "2026-02",
+     "status": "SCORED",
+     "ratio": 0.006447,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": "2026-04-16T00:00:00+00:00",
+     "v": "UNSCORABLE",
+     "h_from": "Fri, 23 Jan 2026 16:03:38 GMT",
+     "h_to": "Mon, 16 Feb 2026 08:03:12 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-02",
+     "to": "2026-03",
+     "status": "SCORED",
+     "ratio": 0.415146,
+     "content": "SUBSTANTIVE",
+     "v_from": "2026-04-16T00:00:00+00:00",
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Mon, 16 Feb 2026 08:03:12 GMT",
+     "h_to": "Sun, 15 Mar 2026 08:01:07 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-03",
+     "to": "2026-04",
+     "status": "SCORED",
+     "ratio": 0.009037,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Sun, 15 Mar 2026 08:01:07 GMT",
+     "h_to": "Wed, 15 Apr 2026 08:01:50 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-04",
+     "to": "2026-05",
+     "status": "SCORED",
+     "ratio": 0.020802,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Wed, 15 Apr 2026 08:01:50 GMT",
+     "h_to": "Sun, 17 May 2026 02:11:49 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-05",
+     "to": "2026-06",
+     "status": "SCORED",
+     "ratio": 0.017726,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Sun, 17 May 2026 02:11:49 GMT",
+     "h_to": "Tue, 16 Jun 2026 04:03:25 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-06",
+     "to": "2026-07",
+     "status": "SCORED",
+     "ratio": 0.022433,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Tue, 16 Jun 2026 04:03:25 GMT",
+     "h_to": "Thu, 16 Jul 2026 11:01:42 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    }
+   ]
+  },
+  {
+   "authority": "EC",
+   "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-office",
+   "observations": {
+    "2025-08": {
+     "timestamp": "20250816095637",
+     "cdx_digest": "OBRWHBR4LXVPVLECEWGR7X36GMCARJLX",
+     "http_status": 200,
+     "bytes": 14050,
+     "h_raw": "Sat, 16 Aug 2025 09:08:06 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "47d1d94ff67bd3c92ff42a41889c8838b888ed628fd14f2d68f534b1e740564d",
+     "text_len": 5571
+    },
+    "2025-09": {
+     "timestamp": "20250916082306",
+     "cdx_digest": "ANVKGWT7M2DHC2KG3VP23GKJM2ZOSOO2",
+     "http_status": 200,
+     "bytes": 75387,
+     "h_raw": "Tue, 16 Sep 2025 08:01:11 GMT",
+     "v_raw": "12 September 2025",
+     "v": "2025-09-12T00:00:00+00:00",
+     "v_rule": "V1-last-update",
+     "text_sha256": "83384488e7b1d404b2ba51f3d53228c372779df93f818973172a89f778263f7b",
+     "text_len": 11378
+    },
+    "2025-10": {
+     "timestamp": "20251015171013",
+     "cdx_digest": "54LOX2TLT6JV2G65MMTTAGYFCXTAIB5Y",
+     "http_status": 200,
+     "bytes": 77015,
+     "h_raw": "Wed, 15 Oct 2025 17:04:23 GMT",
+     "v_raw": "8 October 2025",
+     "v": "2025-10-08T00:00:00+00:00",
+     "v_rule": "V1-last-update",
+     "text_sha256": "05fa1fd57cc5032541a779627b7c46eb819ba7b85bdbe6ac2cfb1974ffa359cb",
+     "text_len": 12837
+    },
+    "2025-11": {
+     "timestamp": "20251115032934",
+     "cdx_digest": "CJIO6ODZJ47QGYLM5RTAG44SBKLCBU7N",
+     "http_status": 200,
+     "bytes": 75405,
+     "h_raw": "Sat, 15 Nov 2025 03:02:28 GMT",
+     "v_raw": "23 October 2025",
+     "v": "2025-10-23T00:00:00+00:00",
+     "v_rule": "V1-last-update",
+     "text_sha256": "8d99b04f3568df94aa017d4e593013a6070666092723f346d2c25207ada92cba",
+     "text_len": 12886
+    },
+    "2025-12": {
+     "timestamp": "20251217061730",
+     "cdx_digest": "4O4APB7QYNHU7ID5W75TQMMZ2I2UHUSC",
+     "http_status": 200,
+     "bytes": 77595,
+     "h_raw": "Wed, 17 Dec 2025 06:02:45 GMT",
+     "v_raw": "19 November 2025",
+     "v": "2025-11-19T00:00:00+00:00",
+     "v_rule": "V1-last-update",
+     "text_sha256": "13157a5d21030d8ad6ac471b2ea2a4e8a10266d040bdea127885e5322c0da31c",
+     "text_len": 13297
+    },
+    "2026-01": {
+     "timestamp": "20260115061401",
+     "cdx_digest": "RHRKDHSHIOJFEBADERZAFUUZUYJQY7FM",
+     "http_status": 200,
+     "bytes": 77664,
+     "h_raw": "Thu, 15 Jan 2026 06:02:46 GMT",
+     "v_raw": "14 January 2026",
+     "v": "2026-01-14T00:00:00+00:00",
+     "v_rule": "V1-last-update",
+     "text_sha256": "4042d781ba86329a99041ec40447d726f70b97be0b84c95d204ea7a2e14378c9",
+     "text_len": 13364
+    },
+    "2026-02": {
+     "timestamp": "20260220134711",
+     "cdx_digest": "2XILN3ZN2QS36XA6QOGZ2NLXLHPKECNE",
+     "http_status": 200,
+     "bytes": 77862,
+     "h_raw": "Fri, 20 Feb 2026 13:02:37 GMT",
+     "v_raw": "14 January 2026",
+     "v": "2026-01-14T00:00:00+00:00",
+     "v_rule": "V1-last-update",
+     "text_sha256": "1cc6a816e6e964d29db8a9c05a49361e59a6a76ae90468d9a24b2e05f4689123",
+     "text_len": 13489
+    },
+    "2026-03": {
+     "timestamp": "20260320005706",
+     "cdx_digest": "AXWCW4JPM4LEBYGHNPFGJWF3SF6FICIA",
+     "http_status": 200,
+     "bytes": 79515,
+     "h_raw": "Fri, 20 Mar 2026 00:01:01 GMT",
+     "v_raw": "14 January 2026",
+     "v": "2026-01-14T00:00:00+00:00",
+     "v_rule": "V1-last-update",
+     "text_sha256": "1bbc3ef39ec221367fe0d3ed124e8f164414e3dcc4a2f2a15ef98b43fbc761eb",
+     "text_len": 13412
+    },
+    "2026-04": {
+     "timestamp": "20260417083339",
+     "cdx_digest": "OJVMAGBZ42YUKKNUDA47RFP4Y3KMGULZ",
+     "http_status": 200,
+     "bytes": 76817,
+     "h_raw": "Fri, 17 Apr 2026 08:27:59 GMT",
+     "v_raw": "31 March 2026",
+     "v": "2026-03-31T00:00:00+00:00",
+     "v_rule": "V1-last-update",
+     "text_sha256": "4c40748aeafaeefe113b7ecc33e35e924be77f0f45248fa0cd36db643f8c0dcb",
+     "text_len": 12801
+    },
+    "2026-05": {
+     "timestamp": "20260525142911",
+     "cdx_digest": "UVAWL4OBEDOE2HD57GMSG3746ECJQWS4",
+     "http_status": 200,
+     "bytes": 75984,
+     "h_raw": "Mon, 25 May 2026 14:14:15 GMT",
+     "v_raw": "20 May 2026",
+     "v": "2026-05-20T00:00:00+00:00",
+     "v_rule": "V1-last-update",
+     "text_sha256": "a7b6f27a21572f6c5e2ff911b2dd8db1152b6ba31e0024cf12bf041e716a761e",
+     "text_len": 10633
+    },
+    "2026-06": {
+     "timestamp": "20260616213444",
+     "cdx_digest": "NLJL6VMXEPEHFDUV3HWOBCI5BPYUODKW",
+     "http_status": 200,
+     "bytes": 15032,
+     "h_raw": "Tue, 16 Jun 2026 21:34:44 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "fd49e45211678f1ce7638880e4b50effb5eb948261ade9f0f0877649aa438ec6",
+     "text_len": 8424
+    },
+    "2026-07": {
+     "timestamp": "20260717020011",
+     "cdx_digest": "37BLUP2O7RIADGH52LVG3J3MCO2FFQ7C",
+     "http_status": 200,
+     "bytes": 15111,
+     "h_raw": "Fri, 17 Jul 2026 01:05:23 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "626d47c1d635e79a4a0b4f77bcc4f4a047edc3c287beafe00cf1f418cf8a755d",
+     "text_len": 7774
+    }
+   },
+   "errors": [],
+   "cdx_adjacent_pairs": 324,
+   "cdx_adjacent_digest_differs": 321,
+   "captures_200_in_window": 325,
+   "pairs": [
+    {
+     "from": "2025-08",
+     "to": "2025-09",
+     "status": "SCORED",
+     "ratio": 0.003776,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": "2025-09-12T00:00:00+00:00",
+     "v": "UNSCORABLE",
+     "h_from": "Sat, 16 Aug 2025 09:08:06 GMT",
+     "h_to": "Tue, 16 Sep 2025 08:01:11 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-09",
+     "to": "2025-10",
+     "status": "SCORED",
+     "ratio": 0.707495,
+     "content": "SUBSTANTIVE",
+     "v_from": "2025-09-12T00:00:00+00:00",
+     "v_to": "2025-10-08T00:00:00+00:00",
+     "v": "MOVED",
+     "h_from": "Tue, 16 Sep 2025 08:01:11 GMT",
+     "h_to": "Wed, 15 Oct 2025 17:04:23 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-10",
+     "to": "2025-11",
+     "status": "SCORED",
+     "ratio": 0.876958,
+     "content": "SUBSTANTIVE",
+     "v_from": "2025-10-08T00:00:00+00:00",
+     "v_to": "2025-10-23T00:00:00+00:00",
+     "v": "MOVED",
+     "h_from": "Wed, 15 Oct 2025 17:04:23 GMT",
+     "h_to": "Sat, 15 Nov 2025 03:02:28 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-11",
+     "to": "2025-12",
+     "status": "SCORED",
+     "ratio": 0.850552,
+     "content": "SUBSTANTIVE",
+     "v_from": "2025-10-23T00:00:00+00:00",
+     "v_to": "2025-11-19T00:00:00+00:00",
+     "v": "MOVED",
+     "h_from": "Sat, 15 Nov 2025 03:02:28 GMT",
+     "h_to": "Wed, 17 Dec 2025 06:02:45 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-12",
+     "to": "2026-01",
+     "status": "SCORED",
+     "ratio": 0.867559,
+     "content": "SUBSTANTIVE",
+     "v_from": "2025-11-19T00:00:00+00:00",
+     "v_to": "2026-01-14T00:00:00+00:00",
+     "v": "MOVED",
+     "h_from": "Wed, 17 Dec 2025 06:02:45 GMT",
+     "h_to": "Thu, 15 Jan 2026 06:02:46 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-01",
+     "to": "2026-02",
+     "status": "SCORED",
+     "ratio": 0.958701,
+     "content": "SUBSTANTIVE",
+     "v_from": "2026-01-14T00:00:00+00:00",
+     "v_to": "2026-01-14T00:00:00+00:00",
+     "v": "STILL",
+     "h_from": "Thu, 15 Jan 2026 06:02:46 GMT",
+     "h_to": "Fri, 20 Feb 2026 13:02:37 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-02",
+     "to": "2026-03",
+     "status": "SCORED",
+     "ratio": 0.978551,
+     "content": "SUBSTANTIVE",
+     "v_from": "2026-01-14T00:00:00+00:00",
+     "v_to": "2026-01-14T00:00:00+00:00",
+     "v": "STILL",
+     "h_from": "Fri, 20 Feb 2026 13:02:37 GMT",
+     "h_to": "Fri, 20 Mar 2026 00:01:01 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-03",
+     "to": "2026-04",
+     "status": "SCORED",
+     "ratio": 0.755198,
+     "content": "SUBSTANTIVE",
+     "v_from": "2026-01-14T00:00:00+00:00",
+     "v_to": "2026-03-31T00:00:00+00:00",
+     "v": "MOVED",
+     "h_from": "Fri, 20 Mar 2026 00:01:01 GMT",
+     "h_to": "Fri, 17 Apr 2026 08:27:59 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-04",
+     "to": "2026-05",
+     "status": "SCORED",
+     "ratio": 0.171034,
+     "content": "SUBSTANTIVE",
+     "v_from": "2026-03-31T00:00:00+00:00",
+     "v_to": "2026-05-20T00:00:00+00:00",
+     "v": "MOVED",
+     "h_from": "Fri, 17 Apr 2026 08:27:59 GMT",
+     "h_to": "Mon, 25 May 2026 14:14:15 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-05",
+     "to": "2026-06",
+     "status": "SCORED",
+     "ratio": 0.009445,
+     "content": "SUBSTANTIVE",
+     "v_from": "2026-05-20T00:00:00+00:00",
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Mon, 25 May 2026 14:14:15 GMT",
+     "h_to": "Tue, 16 Jun 2026 21:34:44 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-06",
+     "to": "2026-07",
+     "status": "SCORED",
+     "ratio": 0.043462,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Tue, 16 Jun 2026 21:34:44 GMT",
+     "h_to": "Fri, 17 Jul 2026 01:05:23 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    }
+   ]
+  },
+  {
+   "authority": "NIST",
+   "url": "https://www.nist.gov/",
+   "observations": {},
+   "errors": [
+    {
+     "stage": "cdx",
+     "error": "<HTTPError 504: 'Gateway Time-out'>"
+    }
+   ],
+   "cdx_adjacent_pairs": 0,
+   "cdx_adjacent_digest_differs": 0,
+   "pairs": [
+    {
+     "from": "2025-08",
+     "to": "2025-09",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-09",
+     "to": "2025-10",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-10",
+     "to": "2025-11",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-11",
+     "to": "2025-12",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-12",
+     "to": "2026-01",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-01",
+     "to": "2026-02",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-02",
+     "to": "2026-03",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-03",
+     "to": "2026-04",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-04",
+     "to": "2026-05",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-05",
+     "to": "2026-06",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-06",
+     "to": "2026-07",
+     "status": "DROPPED-MISSING"
+    }
+   ]
+  },
+  {
+   "authority": "NIST",
+   "url": "https://www.nist.gov/publications",
+   "observations": {
+    "2025-08": {
+     "timestamp": "20250825214110",
+     "cdx_digest": "F7E6RJGLSAIJHNHANLWBHKLXWFZVCMVQ",
+     "http_status": 200,
+     "bytes": 28160,
+     "h_raw": "Mon, 25 Aug 2025 21:32:32 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "4c1e81e7065cfff1f0337001c7ca4cc212fc7bf9528176d81197a2057f87e5de",
+     "text_len": 14022
+    },
+    "2025-09": {
+     "timestamp": "20250915034717",
+     "cdx_digest": "GC5CYE7XJIMLV2Q2PPVYWYG3R5E5AB6L",
+     "http_status": 200,
+     "bytes": 28296,
+     "h_raw": "Sun, 14 Sep 2025 22:26:03 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "3203aeb33dd6b013a1477efbd0c140d7b9f63fef563bc23ce91c66facc230b9b",
+     "text_len": 13922
+    },
+    "2025-10": {
+     "timestamp": "20251015062253",
+     "cdx_digest": "HIRFIEXTUDQWXRE52LO6QKHXJJCH6KIX",
+     "http_status": 200,
+     "bytes": 28458,
+     "h_raw": "Tue, 14 Oct 2025 22:51:39 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "f892bc691b9a3cc1c1eef3fc0f728ce13f3d5533b8433dca85b603c19355bcb2",
+     "text_len": 13590
+    },
+    "2025-11": {
+     "timestamp": "20251115005514",
+     "cdx_digest": "5GDXRR2MDW46H3U2CPBAK7W55NHZDS5K",
+     "http_status": 200,
+     "bytes": 28725,
+     "h_raw": "Fri, 14 Nov 2025 23:02:44 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "52f2cb5fa26d4ca8255e082024d33d5fa932d0d01fcf4a5379d0d8bf25274f7d",
+     "text_len": 13777
+    },
+    "2025-12": {
+     "timestamp": "20251215200412",
+     "cdx_digest": "ZHVHSGYX6RD6FERXQXXYP6R53SQZCHBH",
+     "http_status": 200,
+     "bytes": 29105,
+     "h_raw": "Mon, 15 Dec 2025 19:45:50 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "d642a589c387c480ea2cef552c9caa0b39f5d25e3a58f65387ba6f2841d0eb9f",
+     "text_len": 13881
+    },
+    "2026-01": {
+     "timestamp": "20260115063205",
+     "cdx_digest": "XY7TSADNMFFGRNCBMQBJ5TQLQZLNYPJB",
+     "http_status": 200,
+     "bytes": 28717,
+     "h_raw": "Thu, 15 Jan 2026 02:15:36 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "eb0df82bf7e2baeefd0da8b89553710e78341d4763e2a14d70faad570ef7d014",
+     "text_len": 11710
+    },
+    "2026-02": {
+     "timestamp": "20260215082639",
+     "cdx_digest": "BZ4MN2CPFOHLCNM76TVMMR5T3UMJSDTO",
+     "http_status": 200,
+     "bytes": 28610,
+     "h_raw": "Sun, 15 Feb 2026 07:50:27 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "6525ecd3275ddfa94c4d30d310fcf04ee3287ab20d47641776f129def140c11f",
+     "text_len": 12558
+    },
+    "2026-03": {
+     "timestamp": "20260315051331",
+     "cdx_digest": "4KH3XFYPMQ2PCVPHIX37KG57LCXP67QK",
+     "http_status": 200,
+     "bytes": 28554,
+     "h_raw": "Sun, 15 Mar 2026 01:39:16 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "0f7a1546d60c810f1f1442f05b57f3486c2000d4bd78150e9e521535e35ffe0a",
+     "text_len": 16793
+    },
+    "2026-04": {
+     "timestamp": "20260415085859",
+     "cdx_digest": "KAQUV7ESIH5BSDWZYJBHXO7RSVYXVPJR",
+     "http_status": 200,
+     "bytes": 28844,
+     "h_raw": "Wed, 15 Apr 2026 07:50:27 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "b488ff48cacb1d0209dd0fcd82a74ce67c2f983b5d0f47c9ec800995914886e4",
+     "text_len": 13294
+    },
+    "2026-05": {
+     "timestamp": "20260515191431",
+     "cdx_digest": "Q24357L4MC3BXZHNWPPGFP2SAZ2KTLLG",
+     "http_status": 200,
+     "bytes": 28570,
+     "h_raw": "Fri, 15 May 2026 19:11:08 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "8bd8e8a2d29bf72d65824f9cc6c3a74b8115c54715587fe834f332de5bb37107",
+     "text_len": 15986
+    },
+    "2026-06": {
+     "timestamp": "20260615110526",
+     "cdx_digest": "KFKIEXMKTLXIXSD5VKXLVFVZT3MS2BXW",
+     "http_status": 200,
+     "bytes": 28304,
+     "h_raw": "Mon, 15 Jun 2026 10:56:21 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "383d9fbd9c619d3786b496db5f505de85c2827e870f6081724d4bb115bd71680",
+     "text_len": 14222
+    },
+    "2026-07": {
+     "timestamp": "20260715064913",
+     "cdx_digest": "64YCFEYXUA3PGATZA5BPLRRFN2A35DBO",
+     "http_status": 200,
+     "bytes": 28358,
+     "h_raw": "Wed, 15 Jul 2026 04:36:02 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "6b7aec8cf8e17f13b55da75b42a22bb02a8776384251270d72a810d833ac3336",
+     "text_len": 13716
+    }
+   },
+   "errors": [],
+   "cdx_adjacent_pairs": 732,
+   "cdx_adjacent_digest_differs": 731,
+   "captures_200_in_window": 733,
+   "pairs": [
+    {
+     "from": "2025-08",
+     "to": "2025-09",
+     "status": "SCORED",
+     "ratio": 0.053894,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Mon, 25 Aug 2025 21:32:32 GMT",
+     "h_to": "Sun, 14 Sep 2025 22:26:03 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-09",
+     "to": "2025-10",
+     "status": "SCORED",
+     "ratio": 0.020209,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Sun, 14 Sep 2025 22:26:03 GMT",
+     "h_to": "Tue, 14 Oct 2025 22:51:39 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-10",
+     "to": "2025-11",
+     "status": "SCORED",
+     "ratio": 0.012716,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Tue, 14 Oct 2025 22:51:39 GMT",
+     "h_to": "Fri, 14 Nov 2025 23:02:44 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-11",
+     "to": "2025-12",
+     "status": "SCORED",
+     "ratio": 0.010196,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Fri, 14 Nov 2025 23:02:44 GMT",
+     "h_to": "Mon, 15 Dec 2025 19:45:50 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-12",
+     "to": "2026-01",
+     "status": "SCORED",
+     "ratio": 0.015709,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Mon, 15 Dec 2025 19:45:50 GMT",
+     "h_to": "Thu, 15 Jan 2026 02:15:36 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-01",
+     "to": "2026-02",
+     "status": "SCORED",
+     "ratio": 0.03074,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Thu, 15 Jan 2026 02:15:36 GMT",
+     "h_to": "Sun, 15 Feb 2026 07:50:27 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-02",
+     "to": "2026-03",
+     "status": "SCORED",
+     "ratio": 0.067391,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Sun, 15 Feb 2026 07:50:27 GMT",
+     "h_to": "Sun, 15 Mar 2026 01:39:16 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-03",
+     "to": "2026-04",
+     "status": "SCORED",
+     "ratio": 0.067205,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Sun, 15 Mar 2026 01:39:16 GMT",
+     "h_to": "Wed, 15 Apr 2026 07:50:27 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-04",
+     "to": "2026-05",
+     "status": "SCORED",
+     "ratio": 0.071516,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Wed, 15 Apr 2026 07:50:27 GMT",
+     "h_to": "Fri, 15 May 2026 19:11:08 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-05",
+     "to": "2026-06",
+     "status": "SCORED",
+     "ratio": 0.037076,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Fri, 15 May 2026 19:11:08 GMT",
+     "h_to": "Mon, 15 Jun 2026 10:56:21 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-06",
+     "to": "2026-07",
+     "status": "SCORED",
+     "ratio": 0.007875,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Mon, 15 Jun 2026 10:56:21 GMT",
+     "h_to": "Wed, 15 Jul 2026 04:36:02 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    }
+   ]
+  },
+  {
+   "authority": "NIST",
+   "url": "https://www.nist.gov/cybersecurity-and-privacy",
+   "observations": {
+    "2025-08": {
+     "timestamp": "20250829182130",
+     "cdx_digest": "KOPC5RJEJSQJJCX4TUHB5P3P3DTQVNHN",
+     "http_status": 200,
+     "bytes": 121467,
+     "h_raw": "Fri, 29 Aug 2025 18:19:18 GMT",
+     "v_raw": "2025-08-01T12:00:00Z",
+     "v": "2025-08-01T12:00:00+00:00",
+     "v_rule": "V3-time-element",
+     "text_sha256": "7e2b329e9394467ce4cf85b77768d3da78ab6e5c48f04c98b420ba9ae080a083",
+     "text_len": 10440
+    },
+    "2025-09": {
+     "timestamp": "20250915034724",
+     "cdx_digest": "ODYGKJI4BOC4OUTA7AO6YN4LRZ75XDFO",
+     "http_status": 200,
+     "bytes": 28491,
+     "h_raw": "Sun, 14 Sep 2025 22:26:05 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "2a30a35f5e5250ae369a16673d1234be8e00e6eb86c8a48933ce66ed1e840919",
+     "text_len": 11512
+    },
+    "2025-10": {
+     "timestamp": "20251015062402",
+     "cdx_digest": "GOG7M66UA33FKUFIKVJXGHRFPLLXNEPI",
+     "http_status": 200,
+     "bytes": 28530,
+     "h_raw": "Tue, 14 Oct 2025 22:51:43 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "56358ce391c151810f702bead905ab46e0f3e68f1ecb1688f1860a845a97adc8",
+     "text_len": 15801
+    },
+    "2025-11": {
+     "timestamp": "20251115005633",
+     "cdx_digest": "VKFUJVYHR3NNQECPRZOTNEBY6VVZVMBD",
+     "http_status": 200,
+     "bytes": 28820,
+     "h_raw": "Fri, 14 Nov 2025 23:01:11 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "63042896a6c5b8e6125908f32c698c8a661cf24d3dbec35a992bff3cb707beb0",
+     "text_len": 13651
+    },
+    "2025-12": {
+     "timestamp": "20251215200444",
+     "cdx_digest": "ROEE2Y4CCYODG4PWIA6AV74KEEZGGQCG",
+     "http_status": 200,
+     "bytes": 28797,
+     "h_raw": "Mon, 15 Dec 2025 19:46:09 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "a4fb7972b7b0377040a1e995572d2ea2b09f9a236b81c7c51210eaf3658d64de",
+     "text_len": 11718
+    },
+    "2026-01": {
+     "timestamp": "20260115063202",
+     "cdx_digest": "PDDYSJD6UOVYNQY5AAVDRLIHLM3G2IXD",
+     "http_status": 200,
+     "bytes": 28999,
+     "h_raw": "Thu, 15 Jan 2026 05:26:13 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "61af95d602cde950f260e2be49aa542a2d20069d4f20ccb277b3fd40d0369dfa",
+     "text_len": 14574
+    },
+    "2026-02": {
+     "timestamp": "20260215082651",
+     "cdx_digest": "RWCOK54YT6YRHLJLAHLKRDJ7ZEYODICU",
+     "http_status": 200,
+     "bytes": 27436,
+     "h_raw": "Sun, 15 Feb 2026 07:50:52 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "7bdc11472d9b9536720fe4fe7cef2ffd0a717617aad5888836df58d6c813e3a9",
+     "text_len": 13992
+    },
+    "2026-03": {
+     "timestamp": "20260315051443",
+     "cdx_digest": "MEHFWOGKWRMJPIZIOQHEXSDX3R52DPPB",
+     "http_status": 200,
+     "bytes": 27203,
+     "h_raw": "Sun, 15 Mar 2026 01:35:36 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "1072be91c7351a16de42091903040ac2a959d348dd3b659fe3cbba8bbdf40252",
+     "text_len": 13171
+    },
+    "2026-04": {
+     "timestamp": "20260415085909",
+     "cdx_digest": "X5LIWKYKKTPEDDRDX45627D7QU3OH2L4",
+     "http_status": 200,
+     "bytes": 27048,
+     "h_raw": "Wed, 15 Apr 2026 07:48:05 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "65eb55f2a58b16011a2e1d200e65096ccc03b954b3e50e4b18e3eeddc43fe2e5",
+     "text_len": 11038
+    },
+    "2026-05": {
+     "timestamp": "20260515191432",
+     "cdx_digest": "2WBHEEN2KH4I5BEAUFKIX4BGRUC2YOSW",
+     "http_status": 200,
+     "bytes": 26995,
+     "h_raw": "Fri, 15 May 2026 19:10:44 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "9dede2693d4469f8611958df2a70cb226fe3e27a2fb70dae295be6faccc6db77",
+     "text_len": 11621
+    },
+    "2026-06": {
+     "timestamp": "20260615110532",
+     "cdx_digest": "QYEWRQDZS4QBK2G3HDQJKKN7LVJOFM2P",
+     "http_status": 200,
+     "bytes": 27023,
+     "h_raw": "Mon, 15 Jun 2026 10:55:51 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "8f402b972ad2f5947d2df014626902ba05bafbb607e4db0ddeb20eca0621b66d",
+     "text_len": 13195
+    },
+    "2026-07": {
+     "timestamp": "20260715065003",
+     "cdx_digest": "YFV5ABNQFTSY5BMFIRMOV5JLPS4GIFZB",
+     "http_status": 200,
+     "bytes": 26950,
+     "h_raw": "Wed, 15 Jul 2026 04:32:12 GMT",
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "437a791f76112065a0076683aa338c803a1f63a2993b7c3b989b831af0ecd951",
+     "text_len": 12057
+    }
+   },
+   "errors": [],
+   "cdx_adjacent_pairs": 778,
+   "cdx_adjacent_digest_differs": 778,
+   "captures_200_in_window": 779,
+   "pairs": [
+    {
+     "from": "2025-08",
+     "to": "2025-09",
+     "status": "SCORED",
+     "ratio": 0.006013,
+     "content": "SUBSTANTIVE",
+     "v_from": "2025-08-01T12:00:00+00:00",
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Fri, 29 Aug 2025 18:19:18 GMT",
+     "h_to": "Sun, 14 Sep 2025 22:26:05 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-09",
+     "to": "2025-10",
+     "status": "SCORED",
+     "ratio": 0.028118,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Sun, 14 Sep 2025 22:26:05 GMT",
+     "h_to": "Tue, 14 Oct 2025 22:51:43 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-10",
+     "to": "2025-11",
+     "status": "SCORED",
+     "ratio": 0.011952,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Tue, 14 Oct 2025 22:51:43 GMT",
+     "h_to": "Fri, 14 Nov 2025 23:01:11 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-11",
+     "to": "2025-12",
+     "status": "SCORED",
+     "ratio": 0.022941,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Fri, 14 Nov 2025 23:01:11 GMT",
+     "h_to": "Mon, 15 Dec 2025 19:46:09 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-12",
+     "to": "2026-01",
+     "status": "SCORED",
+     "ratio": 0.014681,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Mon, 15 Dec 2025 19:46:09 GMT",
+     "h_to": "Thu, 15 Jan 2026 05:26:13 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-01",
+     "to": "2026-02",
+     "status": "SCORED",
+     "ratio": 0.021004,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Thu, 15 Jan 2026 05:26:13 GMT",
+     "h_to": "Sun, 15 Feb 2026 07:50:52 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-02",
+     "to": "2026-03",
+     "status": "SCORED",
+     "ratio": 0.040423,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Sun, 15 Feb 2026 07:50:52 GMT",
+     "h_to": "Sun, 15 Mar 2026 01:35:36 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-03",
+     "to": "2026-04",
+     "status": "SCORED",
+     "ratio": 0.024206,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Sun, 15 Mar 2026 01:35:36 GMT",
+     "h_to": "Wed, 15 Apr 2026 07:48:05 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-04",
+     "to": "2026-05",
+     "status": "SCORED",
+     "ratio": 0.050929,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Wed, 15 Apr 2026 07:48:05 GMT",
+     "h_to": "Fri, 15 May 2026 19:10:44 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-05",
+     "to": "2026-06",
+     "status": "SCORED",
+     "ratio": 0.015877,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Fri, 15 May 2026 19:10:44 GMT",
+     "h_to": "Mon, 15 Jun 2026 10:55:51 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-06",
+     "to": "2026-07",
+     "status": "SCORED",
+     "ratio": 0.033027,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": "Mon, 15 Jun 2026 10:55:51 GMT",
+     "h_to": "Wed, 15 Jul 2026 04:32:12 GMT",
+     "h": "MOVED",
+     "digest_differs": true
+    }
+   ]
+  },
+  {
+   "authority": "GOVUK",
+   "url": "https://www.gov.uk/government/organisations/department-for-science-innovation-and-technology",
+   "observations": {
+    "2025-08": {
+     "timestamp": "20250815221633",
+     "cdx_digest": "2VQU3Z7ZXTN3EXGZD4CE23N3MJCX43BH",
+     "http_status": 200,
+     "bytes": 142505,
+     "h_raw": null,
+     "v_raw": "2025-08-13",
+     "v": "2025-08-13T00:00:00+00:00",
+     "v_rule": "V3-time-element",
+     "text_sha256": "84daf4cd95b90d251488bda892fcba793e3d965fd02f2a3ee9d098171cc1a740",
+     "text_len": 9806
+    },
+    "2025-09": {
+     "timestamp": "20250915010914",
+     "cdx_digest": "LYXS3AOQ74F6DIXNWG24Q5P6C2N2CXCF",
+     "http_status": 200,
+     "bytes": 21876,
+     "h_raw": null,
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "3672db56ada02fc001165ee434b0bff29cd20012ab807efa17e00bc843e16f6a",
+     "text_len": 8084
+    },
+    "2025-10": {
+     "timestamp": "20251015070454",
+     "cdx_digest": "5Z2OZXLZW6JOXRF2JMNU2S6LN3EAJ6TO",
+     "http_status": 200,
+     "bytes": 21896,
+     "h_raw": null,
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "d4f3b12629f28a5e4492532d153ccca7e6727f75b9f648f23fab48535223151f",
+     "text_len": 8680
+    },
+    "2025-11": {
+     "timestamp": "20251115033144",
+     "cdx_digest": "DQPNCNSV455W5U6LEQER7NHORKYNDTTF",
+     "http_status": 200,
+     "bytes": 21881,
+     "h_raw": null,
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "2a29c5e2733a7a0b84f4c6d5e54beccf4ef93fe06a07ce148b08844023641ba1",
+     "text_len": 9016
+    },
+    "2025-12": {
+     "timestamp": "20251215205348",
+     "cdx_digest": "SGCP5RJ3R7TZATWSHTYAWTOU365GT3YQ",
+     "http_status": 200,
+     "bytes": 21260,
+     "h_raw": null,
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "f166369ad917eaffa224394e121a1ccaeff5a5f5940de7f74281a7e7cb965ce8",
+     "text_len": 10265
+    },
+    "2026-01": {
+     "timestamp": "20260115065846",
+     "cdx_digest": "3OPUE6HTK4CCVVX7MDIVQO77E7OQSZLP",
+     "http_status": 200,
+     "bytes": 21024,
+     "h_raw": null,
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "664cd2e2e558dc0d4213a8f631f0fda39db64e682136f8a78d281a431aae3939",
+     "text_len": 9461
+    },
+    "2026-02": {
+     "timestamp": "20260215090320",
+     "cdx_digest": "75PB2P2XSU6LTJP4RZ5ROMCWGODVZWR7",
+     "http_status": 200,
+     "bytes": 21238,
+     "h_raw": null,
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "860376354fc6f7468fd5d9738622cfba41e8f63ef96fb39ccc6cda2033076483",
+     "text_len": 10510
+    },
+    "2026-03": {
+     "timestamp": "20260315051945",
+     "cdx_digest": "LBUCM7ZDKPFVVWJAOHXQGK3CRVWL2EFX",
+     "http_status": 200,
+     "bytes": 21288,
+     "h_raw": null,
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "f90b0e7736f5c09881055f354cad3bfa3bc73592c7a3028730289018622b7a71",
+     "text_len": 10324
+    },
+    "2026-04": {
+     "timestamp": "20260415094047",
+     "cdx_digest": "R736H3W6AG6JIIE7YJXT2TVAEQIZVTS2",
+     "http_status": 200,
+     "bytes": 21476,
+     "h_raw": null,
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "f3e223a2a396241058eb1c43aa343d5f67b77d772f26ff06805972fdc290f3ba",
+     "text_len": 12065
+    },
+    "2026-05": {
+     "timestamp": "20260515115916",
+     "cdx_digest": "VVZWEIPKH6BPETZNQ3XNCCXQWIDQITO6",
+     "http_status": 200,
+     "bytes": 21391,
+     "h_raw": null,
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "2abc3a4d39503e8d6cca9a5fab5ee2d0bb03b23fc86935e08d89a29035a511b4",
+     "text_len": 10011
+    },
+    "2026-06": {
+     "timestamp": "20260615112146",
+     "cdx_digest": "KEEGX2BHA5ONKCDRGRJANYNZTZN2DUT6",
+     "http_status": 200,
+     "bytes": 21226,
+     "h_raw": null,
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "cac7663dcb66df05c4d35d04cb24fd4eb3752936c9c5564e6c2b542b7610d407",
+     "text_len": 10491
+    },
+    "2026-07": {
+     "timestamp": "20260715074751",
+     "cdx_digest": "DBHG2WJTLF4HCRTNBJPJMGGPGSVEQ2MD",
+     "http_status": 200,
+     "bytes": 21254,
+     "h_raw": null,
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "106dec801373e0dd4636b7e51ea78f65098cb26b941a04abf33090d3680018e6",
+     "text_len": 8619
+    }
+   },
+   "errors": [],
+   "cdx_adjacent_pairs": 1171,
+   "cdx_adjacent_digest_differs": 1164,
+   "captures_200_in_window": 1172,
+   "pairs": [
+    {
+     "from": "2025-08",
+     "to": "2025-09",
+     "status": "SCORED",
+     "ratio": 0.00995,
+     "content": "SUBSTANTIVE",
+     "v_from": "2025-08-13T00:00:00+00:00",
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": null,
+     "h_to": null,
+     "h": "UNSCORABLE",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-09",
+     "to": "2025-10",
+     "status": "SCORED",
+     "ratio": 0.060964,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": null,
+     "h_to": null,
+     "h": "UNSCORABLE",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-10",
+     "to": "2025-11",
+     "status": "SCORED",
+     "ratio": 0.049842,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": null,
+     "h_to": null,
+     "h": "UNSCORABLE",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-11",
+     "to": "2025-12",
+     "status": "SCORED",
+     "ratio": 0.030185,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": null,
+     "h_to": null,
+     "h": "UNSCORABLE",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-12",
+     "to": "2026-01",
+     "status": "SCORED",
+     "ratio": 0.09855,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": null,
+     "h_to": null,
+     "h": "UNSCORABLE",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-01",
+     "to": "2026-02",
+     "status": "SCORED",
+     "ratio": 0.08282,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": null,
+     "h_to": null,
+     "h": "UNSCORABLE",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-02",
+     "to": "2026-03",
+     "status": "SCORED",
+     "ratio": 0.061054,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": null,
+     "h_to": null,
+     "h": "UNSCORABLE",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-03",
+     "to": "2026-04",
+     "status": "SCORED",
+     "ratio": 0.039305,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": null,
+     "h_to": null,
+     "h": "UNSCORABLE",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-04",
+     "to": "2026-05",
+     "status": "SCORED",
+     "ratio": 0.028991,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": null,
+     "h_to": null,
+     "h": "UNSCORABLE",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-05",
+     "to": "2026-06",
+     "status": "SCORED",
+     "ratio": 0.068579,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": null,
+     "h_to": null,
+     "h": "UNSCORABLE",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-06",
+     "to": "2026-07",
+     "status": "SCORED",
+     "ratio": 0.093145,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": null,
+     "h_to": null,
+     "h": "UNSCORABLE",
+     "digest_differs": true
+    }
+   ]
+  },
+  {
+   "authority": "GOVUK",
+   "url": "https://www.gov.uk/government/publications/ai-security-institute-frontier-ai-trends-report-factsheet",
+   "observations": {
+    "2025-08": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2025-09": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2025-10": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2025-11": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2025-12": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-01": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-02": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-03": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-04": {
+     "timestamp": "20260414085008",
+     "cdx_digest": "YVAJPECKZ5LL2DW4TVKOK34WODLIP2TO",
+     "http_status": 200,
+     "bytes": 13994,
+     "h_raw": null,
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "c17774c6223e14a62a8bf13ba9c3e44f9063b9bb9d42d327e37b254a4839705e",
+     "text_len": 4817
+    },
+    "2026-05": {
+     "timestamp": "20260511162835",
+     "cdx_digest": "RB6VK73EZIDAUEQ6ZISO6YXIXXZ52REK",
+     "http_status": 200,
+     "bytes": 69002,
+     "h_raw": null,
+     "v_raw": "18 December 2025",
+     "v": "2025-12-18T00:00:00+00:00",
+     "v_rule": "V2-published",
+     "text_sha256": "50b47024c6514c26513ee26d9859b21da3f7f7e4dc688ccabc96e0b1b2a458c8",
+     "text_len": 4136
+    },
+    "2026-06": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-07": {
+     "status": "MISSING-NO-CAPTURE"
+    }
+   },
+   "errors": [],
+   "cdx_adjacent_pairs": 1,
+   "cdx_adjacent_digest_differs": 1,
+   "captures_200_in_window": 2,
+   "pairs": [
+    {
+     "from": "2025-08",
+     "to": "2025-09",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-09",
+     "to": "2025-10",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-10",
+     "to": "2025-11",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-11",
+     "to": "2025-12",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-12",
+     "to": "2026-01",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-01",
+     "to": "2026-02",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-02",
+     "to": "2026-03",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-03",
+     "to": "2026-04",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-04",
+     "to": "2026-05",
+     "status": "SCORED",
+     "ratio": 0.004021,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": "2025-12-18T00:00:00+00:00",
+     "v": "UNSCORABLE",
+     "h_from": null,
+     "h_to": null,
+     "h": "UNSCORABLE",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-05",
+     "to": "2026-06",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-06",
+     "to": "2026-07",
+     "status": "DROPPED-MISSING"
+    }
+   ]
+  },
+  {
+   "authority": "GOVUK",
+   "url": "https://www.gov.uk/government/publications/secure-ai-infrastructure-call-for-information",
+   "observations": {
+    "2025-08": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2025-09": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2025-10": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2025-11": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2025-12": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-01": {
+     "timestamp": "20260129113820",
+     "cdx_digest": "RABSG5VSIZHEJYMT442RLMLFTCYV6574",
+     "http_status": 200,
+     "bytes": 67572,
+     "h_raw": null,
+     "v_raw": "29 January 2026",
+     "v": "2026-01-29T00:00:00+00:00",
+     "v_rule": "V2-published",
+     "text_sha256": "0618bc1a4ce585ccec924c60e0a686fd1575f82fdabd5409919d553c1ba2feb3",
+     "text_len": 3952
+    },
+    "2026-02": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-03": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-04": {
+     "timestamp": "20260402190022",
+     "cdx_digest": "IB4UMVUYP5WZ4ZFWMG2PJOZGNCBHTS64",
+     "http_status": 200,
+     "bytes": 13654,
+     "h_raw": null,
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "124c785b668132740567fad1c15452f42ea478a474ccd06b222985b0d034de4d",
+     "text_len": 7061
+    },
+    "2026-05": {
+     "timestamp": "20260511101817",
+     "cdx_digest": "YD3VLNKIFU5RRZUYMXYECVMQVGUPIVFB",
+     "http_status": 200,
+     "bytes": 13647,
+     "h_raw": null,
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "3a70f0020c29609eae1aa31165ee32b8fa55c2a513355ed5b127069914997501",
+     "text_len": 6124
+    },
+    "2026-06": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-07": {
+     "status": "MISSING-NO-CAPTURE"
+    }
+   },
+   "errors": [],
+   "cdx_adjacent_pairs": 2,
+   "cdx_adjacent_digest_differs": 2,
+   "captures_200_in_window": 3,
+   "pairs": [
+    {
+     "from": "2025-08",
+     "to": "2025-09",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-09",
+     "to": "2025-10",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-10",
+     "to": "2025-11",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-11",
+     "to": "2025-12",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-12",
+     "to": "2026-01",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-01",
+     "to": "2026-02",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-02",
+     "to": "2026-03",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-03",
+     "to": "2026-04",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-04",
+     "to": "2026-05",
+     "status": "SCORED",
+     "ratio": 0.127266,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": null,
+     "h_to": null,
+     "h": "UNSCORABLE",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-05",
+     "to": "2026-06",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-06",
+     "to": "2026-07",
+     "status": "DROPPED-MISSING"
+    }
+   ]
+  },
+  {
+   "authority": "IE",
+   "url": "https://enterprise.gov.ie/en/publications/ireland-in-the-digital-decade.html",
+   "observations": {
+    "2025-08": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2025-09": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2025-10": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2025-11": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2025-12": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-01": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-02": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-03": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-04": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-05": {
+     "timestamp": "20260519064612",
+     "cdx_digest": "D233E3YNJZP35SUFORNLSXPWSWQDIIFN",
+     "http_status": 200,
+     "bytes": 31322,
+     "h_raw": null,
+     "v_raw": "16 June 2025",
+     "v": "2025-06-16T00:00:00+00:00",
+     "v_rule": "V2-published",
+     "text_sha256": "db454860f63fa91c7cba9d692c0eda2191cc504c652294212fc40fd0ac43db6e",
+     "text_len": 5698
+    },
+    "2026-06": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-07": {
+     "status": "MISSING-NO-CAPTURE"
+    }
+   },
+   "errors": [],
+   "cdx_adjacent_pairs": 1,
+   "cdx_adjacent_digest_differs": 1,
+   "captures_200_in_window": 2,
+   "pairs": [
+    {
+     "from": "2025-08",
+     "to": "2025-09",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-09",
+     "to": "2025-10",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-10",
+     "to": "2025-11",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-11",
+     "to": "2025-12",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-12",
+     "to": "2026-01",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-01",
+     "to": "2026-02",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-02",
+     "to": "2026-03",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-03",
+     "to": "2026-04",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-04",
+     "to": "2026-05",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-05",
+     "to": "2026-06",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-06",
+     "to": "2026-07",
+     "status": "DROPPED-MISSING"
+    }
+   ]
+  },
+  {
+   "authority": "IE",
+   "url": "https://enterprise.gov.ie/en/what-we-do/innovation-research-development/european-space-agency",
+   "observations": {
+    "2025-08": {
+     "timestamp": "20250813001350",
+     "cdx_digest": "DYLLXPBYIMJ52VHQFHHD6ZL3HUNIXYIS",
+     "http_status": 200,
+     "bytes": 28628,
+     "h_raw": null,
+     "v_raw": "19 June 2019",
+     "v": "2019-06-19T00:00:00+00:00",
+     "v_rule": "V2-published",
+     "text_sha256": "9da816af848644fded6f9d7bfa5e9bf824e1f110c2919fc702a0deb4b53ee9a5",
+     "text_len": 5713
+    },
+    "2025-09": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2025-10": {
+     "timestamp": "20251006130807",
+     "cdx_digest": "JQPEL2ZYHGQ4DFA4MAAXHIBBXOWCRUDN",
+     "http_status": 200,
+     "bytes": 10394,
+     "h_raw": null,
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "2a9a195eaf140accb56620c78f5a03612d8732820e66f8561ca8177cc7ebfcb1",
+     "text_len": 6026
+    },
+    "2025-11": {
+     "timestamp": "20251109222013",
+     "cdx_digest": "FWDWSM2SNYR66CLSBFB6DCBQAXZ6LGRZ",
+     "http_status": 200,
+     "bytes": 29451,
+     "h_raw": null,
+     "v_raw": "19 June 2019",
+     "v": "2019-06-19T00:00:00+00:00",
+     "v_rule": "V2-published",
+     "text_sha256": "7a880a4e1545b3828e0cc813a15988bbb0cdad1e0b16d37105d01bf5398391ab",
+     "text_len": 5713
+    },
+    "2025-12": {
+     "timestamp": "20251209022530",
+     "cdx_digest": "F5TVNVOHJOZBNN5AVA4FOW2IVW4DQLVR",
+     "http_status": 200,
+     "bytes": 10391,
+     "h_raw": null,
+     "v_raw": null,
+     "v": null,
+     "v_rule": null,
+     "text_sha256": "a062332df95d6d870efb57eff4baf33602e5f640b51b2fe7618e6ea765fb59c0",
+     "text_len": 4747
+    },
+    "2026-01": {
+     "timestamp": "20260118192740",
+     "cdx_digest": "YCNSGNR2H3RLAURUJV5T3YFIDWDZQHEN",
+     "http_status": 200,
+     "bytes": 29455,
+     "h_raw": null,
+     "v_raw": "19 June 2019",
+     "v": "2019-06-19T00:00:00+00:00",
+     "v_rule": "V2-published",
+     "text_sha256": "7a880a4e1545b3828e0cc813a15988bbb0cdad1e0b16d37105d01bf5398391ab",
+     "text_len": 5713
+    },
+    "2026-02": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-03": {
+     "timestamp": "20260313111148",
+     "cdx_digest": "FORIJAL47MMOR33IVFVBQDDJFSDDR7AN",
+     "http_status": 200,
+     "bytes": 29415,
+     "h_raw": null,
+     "v_raw": "19 June 2019",
+     "v": "2019-06-19T00:00:00+00:00",
+     "v_rule": "V2-published",
+     "text_sha256": "7c7c9a47dc5bfc3448fc303a92633b3ecf722b0d3c0d2ff783eec86db97ff5a6",
+     "text_len": 5674
+    },
+    "2026-04": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-05": {
+     "timestamp": "20260510013254",
+     "cdx_digest": "ZKVTIKDQ7NY4D7B6ALVYCJCCQTL7QVN3",
+     "http_status": 200,
+     "bytes": 29433,
+     "h_raw": null,
+     "v_raw": "19 June 2019",
+     "v": "2019-06-19T00:00:00+00:00",
+     "v_rule": "V2-published",
+     "text_sha256": "f753b65eee27ced6b7637e77185bdbe416b3af34cd6f4aa3166ba0152b76962f",
+     "text_len": 5689
+    },
+    "2026-06": {
+     "status": "MISSING-NO-CAPTURE"
+    },
+    "2026-07": {
+     "status": "MISSING-NO-CAPTURE"
+    }
+   },
+   "errors": [],
+   "cdx_adjacent_pairs": 7,
+   "cdx_adjacent_digest_differs": 7,
+   "captures_200_in_window": 8,
+   "pairs": [
+    {
+     "from": "2025-08",
+     "to": "2025-09",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-09",
+     "to": "2025-10",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2025-10",
+     "to": "2025-11",
+     "status": "SCORED",
+     "ratio": 0.006985,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": "2019-06-19T00:00:00+00:00",
+     "v": "UNSCORABLE",
+     "h_from": null,
+     "h_to": null,
+     "h": "UNSCORABLE",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-11",
+     "to": "2025-12",
+     "status": "SCORED",
+     "ratio": 0.008413,
+     "content": "SUBSTANTIVE",
+     "v_from": "2019-06-19T00:00:00+00:00",
+     "v_to": null,
+     "v": "UNSCORABLE",
+     "h_from": null,
+     "h_to": null,
+     "h": "UNSCORABLE",
+     "digest_differs": true
+    },
+    {
+     "from": "2025-12",
+     "to": "2026-01",
+     "status": "SCORED",
+     "ratio": 0.003633,
+     "content": "SUBSTANTIVE",
+     "v_from": null,
+     "v_to": "2019-06-19T00:00:00+00:00",
+     "v": "UNSCORABLE",
+     "h_from": null,
+     "h_to": null,
+     "h": "UNSCORABLE",
+     "digest_differs": true
+    },
+    {
+     "from": "2026-01",
+     "to": "2026-02",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-02",
+     "to": "2026-03",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-03",
+     "to": "2026-04",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-04",
+     "to": "2026-05",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-05",
+     "to": "2026-06",
+     "status": "DROPPED-MISSING"
+    },
+    {
+     "from": "2026-06",
+     "to": "2026-07",
+     "status": "DROPPED-MISSING"
+    }
+   ]
+  }
+ ],
+ "run_finished_utc": "2026-08-08T01:06:33.093273+00:00"
+}
