@@ -102,3 +102,45 @@ discarded with a one-page finding.
 - Nearest prior art, verified at the primary text: Dividino, Kramer & Gottron, ESWC 2014 — for
   Linked Data resources, `Last-Modified` present on **15 %** and aligning with observed change in
   **8 %** of those. Different corpus, one signal, a decade old.
+
+## Session 102 (2026-08-08) — gate session 3: the object changed, and the archive went dark
+
+**The standing constraint above — "no per-authority claim about the printed date outside EC until its
+referent is established by something other than a pattern match" — is DISCHARGED for NIST, EPA and
+GOV.UK.** The referent is in the markup, read first-hand off a live page each: NIST prints
+`Created <date>, Updated <date>`; EPA prints `Last updated on <date>` in an element classed
+`l-page__footer-last-updated`; GOV.UK prints per-event change dates in a published-dates block. The
+defect-D2 validity test that fired 14 times at increment 1 fires **0 times** in 239 measured pages.
+
+**The archive route died.** Every `web.archive.org` endpoint reset this session's connections while
+`archive.org` answered HTTP 200 in the same minute (probe table: `BLOCKED-3.md`). Increment 3 was
+pre-registered and **never run**; it is kept unrevised for whoever restores a route.
+
+**What was measured instead, needing no archive (`PREREGISTRATION-3B.md`, `RESULT-3.md`):** if a
+printed date reported each document's own last change, unrelated documents published years apart
+would not share it. **NIST: 329 pages, 24 distinct "Updated" values, three covering 74.8 %; 24 of 24
+members of the largest cluster read by hand, unrelated documents from 1982–2015, all printing
+"Updated February 19, 2017". EPA: 61 distinct values on 80 pages — no effect, and we predicted the
+opposite in writing. GOV.UK positive control: 69 distinct on 80 — the method can fail to find the
+effect, and did.**
+
+**The object of the whole investigation changed (`CORRECTIONS.md` C3, `CHARGE-4-AND-6.md`).** Charge
+4 is **conceded**: the movement duty is an implementation tip in every place it appears, and the
+receiver never asked for a measurement. The word *compliance* is withdrawn. What the arc may still
+ask: **does the indicator the binding criterion requires actually inform anyone about timeliness?** —
+a question about the receiver's own stated purpose, offered as evidence to a draft its page says is
+open for iteration, never as a compliance score, and carrying on its face that **the receiver did not
+ask for it**.
+
+**Charge 6 is answered by construction:** the scored population is 160 pages of two US
+executive-branch agency sites; the receiver's own site contributes nothing; GOV.UK is labelled a
+control. **The complication, volunteered:** the effect is on NIST, which is in the standard's
+*scope* but not clearly in its *criterion*; EPA, which is squarely in the criterion, shows no effect.
+
+**Standing constraints, revised.**
+- No claim about the **mechanism** behind the clusters — no documentation of how either flagship
+  site generates its printed date could be retrieved.
+- No claim that clustered pages were **unchanged** on the shared date; the only sentence the data
+  carries is that the indicator cannot distinguish a document's own change from a site-wide operation.
+- **The arc has no working capture route.** Anything that needs pairs over time needs a restored
+  archive or a panel of this house's own.
