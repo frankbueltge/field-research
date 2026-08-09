@@ -1,0 +1,628 @@
+{
+ "series": {
+  "en-gkg": {
+   "state": "COMPLETE",
+   "listed": 394946,
+   "probed": 394946,
+   "absent": 128,
+   "size_mismatch": 1,
+   "unresolved": 0,
+   "other_status": 0,
+   "throttled": 0,
+   "seconds": 1787.6,
+   "rate_per_s": 220.9
+  },
+  "en-export": {
+   "state": "COMPLETE",
+   "listed": 394941,
+   "probed": 394941,
+   "absent": 95,
+   "size_mismatch": 0,
+   "unresolved": 0,
+   "other_status": 0,
+   "throttled": 0,
+   "seconds": 1866.5,
+   "rate_per_s": 211.6
+  },
+  "en-mentions": {
+   "state": "COMPLETE",
+   "listed": 394941,
+   "probed": 394941,
+   "absent": 94,
+   "size_mismatch": 0,
+   "unresolved": 0,
+   "other_status": 0,
+   "throttled": 0,
+   "seconds": 2031.4,
+   "rate_per_s": 194.4
+  },
+  "tr-gkg": {
+   "state": "COMPLETE",
+   "listed": 389686,
+   "probed": 389686,
+   "absent": 117,
+   "size_mismatch": 0,
+   "unresolved": 0,
+   "other_status": 0,
+   "throttled": 0,
+   "seconds": 1884.7,
+   "rate_per_s": 206.8
+  },
+  "tr-export": {
+   "state": "COMPLETE",
+   "listed": 389681,
+   "probed": 389681,
+   "absent": 83,
+   "size_mismatch": 0,
+   "unresolved": 0,
+   "other_status": 0,
+   "throttled": 0,
+   "seconds": 1787.7,
+   "rate_per_s": 218.0
+  },
+  "tr-mentions": {
+   "state": "COMPLETE",
+   "listed": 389681,
+   "probed": 389681,
+   "absent": 85,
+   "size_mismatch": 0,
+   "unresolved": 0,
+   "other_status": 0,
+   "throttled": 4,
+   "seconds": 1724.6,
+   "rate_per_s": 226.0
+  }
+ },
+ "total_requests_to_the_file_host": 2353876,
+ "total_unresolved": 0,
+ "total_absent_files": 602,
+ "cycles_touched_by_any_absence": 138,
+ "cycles_absent_in_every_series": 82,
+ "failure_profiles": {
+  "en/gkg+en/export+en/mentions+tr/gkg+tr/export+tr/mentions": {
+   "cycles": 82,
+   "example": "20221110220000",
+   "first": "20221110220000",
+   "last": "20221111181500"
+  },
+  "en/gkg+tr/gkg": {
+   "cycles": 30,
+   "example": "20150318204500",
+   "first": "20150318204500",
+   "last": "20160525220000"
+  },
+  "en/gkg+en/export+en/mentions": {
+   "cycles": 11,
+   "example": "20150219074500",
+   "first": "20150219074500",
+   "last": "20230323143000"
+  },
+  "en/gkg": {
+   "cycles": 5,
+   "example": "20150318210000",
+   "first": "20150318210000",
+   "last": "20260126030000"
+  },
+  "tr/gkg": {
+   "cycles": 4,
+   "example": "20150318200000",
+   "first": "20150318200000",
+   "last": "20160814004500"
+  },
+  "en/export": {
+   "cycles": 2,
+   "example": "20150404113000",
+   "first": "20150404113000",
+   "last": "20150809034500"
+  },
+  "tr/mentions": {
+   "cycles": 2,
+   "example": "20150429234500",
+   "first": "20150429234500",
+   "last": "20170510040000"
+  },
+  "en/mentions": {
+   "cycles": 1,
+   "example": "20150430000000",
+   "first": "20150430000000",
+   "last": "20150430000000"
+  },
+  "tr/gkg+tr/export+tr/mentions": {
+   "cycles": 1,
+   "example": "20221110214500",
+   "first": "20221110214500",
+   "last": "20221110214500"
+  }
+ },
+ "runs": {
+  "en-gkg": {
+   "runs": 10,
+   "runs_ge_4": 3,
+   "top": [
+    {
+     "length": 83,
+     "first": "2022-11-10T22:00:00Z",
+     "last": "2022-11-11T18:30:00Z"
+    },
+    {
+     "length": 28,
+     "first": "2015-05-29T00:00:00Z",
+     "last": "2015-05-29T06:45:00Z"
+    },
+    {
+     "length": 7,
+     "first": "2023-03-23T13:00:00Z",
+     "last": "2023-03-23T14:30:00Z"
+    },
+    {
+     "length": 2,
+     "first": "2015-02-19T07:45:00Z",
+     "last": "2015-02-19T08:00:00Z"
+    },
+    {
+     "length": 2,
+     "first": "2015-03-18T20:45:00Z",
+     "last": "2015-03-18T21:00:00Z"
+    },
+    {
+     "length": 2,
+     "first": "2016-05-25T22:00:00Z",
+     "last": "2016-05-25T22:15:00Z"
+    }
+   ]
+  },
+  "en-export": {
+   "runs": 6,
+   "runs_ge_4": 2,
+   "top": [
+    {
+     "length": 83,
+     "first": "2022-11-10T22:00:00Z",
+     "last": "2022-11-11T18:30:00Z"
+    },
+    {
+     "length": 7,
+     "first": "2023-03-23T13:00:00Z",
+     "last": "2023-03-23T14:30:00Z"
+    },
+    {
+     "length": 2,
+     "first": "2015-02-19T07:45:00Z",
+     "last": "2015-02-19T08:00:00Z"
+    },
+    {
+     "length": 1,
+     "first": "2015-04-04T11:30:00Z",
+     "last": "2015-04-04T11:30:00Z"
+    },
+    {
+     "length": 1,
+     "first": "2015-08-09T03:45:00Z",
+     "last": "2015-08-09T03:45:00Z"
+    },
+    {
+     "length": 1,
+     "first": "2020-12-14T12:15:00Z",
+     "last": "2020-12-14T12:15:00Z"
+    }
+   ]
+  },
+  "en-mentions": {
+   "runs": 5,
+   "runs_ge_4": 2,
+   "top": [
+    {
+     "length": 83,
+     "first": "2022-11-10T22:00:00Z",
+     "last": "2022-11-11T18:30:00Z"
+    },
+    {
+     "length": 7,
+     "first": "2023-03-23T13:00:00Z",
+     "last": "2023-03-23T14:30:00Z"
+    },
+    {
+     "length": 2,
+     "first": "2015-02-19T07:45:00Z",
+     "last": "2015-02-19T08:00:00Z"
+    },
+    {
+     "length": 1,
+     "first": "2015-04-30T00:00:00Z",
+     "last": "2015-04-30T00:00:00Z"
+    },
+    {
+     "length": 1,
+     "first": "2020-12-14T12:15:00Z",
+     "last": "2020-12-14T12:15:00Z"
+    }
+   ]
+  },
+  "tr-gkg": {
+   "runs": 7,
+   "runs_ge_4": 2,
+   "top": [
+    {
+     "length": 83,
+     "first": "2022-11-10T21:45:00Z",
+     "last": "2022-11-11T18:15:00Z"
+    },
+    {
+     "length": 28,
+     "first": "2015-05-29T00:00:00Z",
+     "last": "2015-05-29T06:45:00Z"
+    },
+    {
+     "length": 2,
+     "first": "2016-05-25T21:45:00Z",
+     "last": "2016-05-25T22:00:00Z"
+    },
+    {
+     "length": 1,
+     "first": "2015-03-18T20:00:00Z",
+     "last": "2015-03-18T20:00:00Z"
+    },
+    {
+     "length": 1,
+     "first": "2015-03-18T20:45:00Z",
+     "last": "2015-03-18T20:45:00Z"
+    },
+    {
+     "length": 1,
+     "first": "2015-05-12T16:30:00Z",
+     "last": "2015-05-12T16:30:00Z"
+    }
+   ]
+  },
+  "tr-export": {
+   "runs": 1,
+   "runs_ge_4": 1,
+   "top": [
+    {
+     "length": 83,
+     "first": "2022-11-10T21:45:00Z",
+     "last": "2022-11-11T18:15:00Z"
+    }
+   ]
+  },
+  "tr-mentions": {
+   "runs": 3,
+   "runs_ge_4": 1,
+   "top": [
+    {
+     "length": 83,
+     "first": "2022-11-10T21:45:00Z",
+     "last": "2022-11-11T18:15:00Z"
+    },
+    {
+     "length": 1,
+     "first": "2015-04-29T23:45:00Z",
+     "last": "2015-04-29T23:45:00Z"
+    },
+    {
+     "length": 1,
+     "first": "2017-05-10T04:00:00Z",
+     "last": "2017-05-10T04:00:00Z"
+    }
+   ]
+  }
+ },
+ "size_mismatches": {
+  "en-gkg": [
+   {
+    "cycle": "20160508140000",
+    "declared": 18095,
+    "served": 10276183
+   }
+  ]
+ },
+ "free_second_copy": [
+  {
+   "file": "api-2015-0529.json",
+   "result": "UNRESOLVED"
+  },
+  {
+   "file": "api-2015.json",
+   "result": "UNRESOLVED"
+  },
+  {
+   "file": "api-2017-0707.json",
+   "start": "20170706180000",
+   "end": "20170707060000",
+   "query": "world",
+   "resolution": "15m",
+   "quarter_hours": 49,
+   "returned": 33,
+   "omitted": 16,
+   "omitted_with_at_least_one_absent_file": 1,
+   "omitted_with_every_file_served": 15
+  },
+  {
+   "file": "api-2017.json",
+   "start": "20170301000000",
+   "end": "20170302000000",
+   "query": "world",
+   "resolution": "15m",
+   "quarter_hours": 97,
+   "returned": 97,
+   "omitted": 0,
+   "omitted_with_at_least_one_absent_file": 0,
+   "omitted_with_every_file_served": 0
+  },
+  {
+   "file": "api-2020-1214.json",
+   "start": "20201214060000",
+   "end": "20201214180000",
+   "query": "world",
+   "resolution": "15m",
+   "quarter_hours": 49,
+   "returned": 46,
+   "omitted": 3,
+   "omitted_with_at_least_one_absent_file": 1,
+   "omitted_with_every_file_served": 2
+  },
+  {
+   "file": "api-2023-0321ctrl.json",
+   "start": "20230321100000",
+   "end": "20230321180000",
+   "query": "world",
+   "resolution": "15m",
+   "quarter_hours": 33,
+   "returned": 31,
+   "omitted": 2,
+   "omitted_with_at_least_one_absent_file": 0,
+   "omitted_with_every_file_served": 2
+  },
+  {
+   "file": "api-2023-0323.json",
+   "start": "20230323060000",
+   "end": "20230323210000",
+   "query": "world",
+   "resolution": null,
+   "quarter_hours": 61,
+   "returned": 0,
+   "omitted": 61,
+   "omitted_with_at_least_one_absent_file": 7,
+   "omitted_with_every_file_served": 54
+  },
+  {
+   "file": "api-2023-0323b.json",
+   "start": "20230323100000",
+   "end": "20230323180000",
+   "query": "world",
+   "resolution": null,
+   "quarter_hours": 33,
+   "returned": 0,
+   "omitted": 33,
+   "omitted_with_at_least_one_absent_file": 7,
+   "omitted_with_every_file_served": 26
+  },
+  {
+   "file": "api-2023-0325ctrl.json",
+   "start": "20230325100000",
+   "end": "20230325180000",
+   "query": "world",
+   "resolution": "15m",
+   "quarter_hours": 33,
+   "returned": 31,
+   "omitted": 2,
+   "omitted_with_at_least_one_absent_file": 0,
+   "omitted_with_every_file_served": 2
+  },
+  {
+   "file": "api-2025gap-mid.json",
+   "start": "20250622000000",
+   "end": "20250623120000",
+   "query": "world",
+   "resolution": null,
+   "quarter_hours": 145,
+   "returned": 0,
+   "omitted": 145,
+   "omitted_with_at_least_one_absent_file": 0,
+   "omitted_with_every_file_served": 145
+  },
+  {
+   "file": "api-2025gap-short.json",
+   "start": "20250613120000",
+   "end": "20250615000000",
+   "query": "world",
+   "resolution": "15m",
+   "quarter_hours": 145,
+   "returned": 100,
+   "omitted": 45,
+   "omitted_with_at_least_one_absent_file": 0,
+   "omitted_with_every_file_served": 45
+  },
+  {
+   "file": "api-2025gap.json",
+   "start": "20250613000000",
+   "end": "20250703000000",
+   "query": "world",
+   "resolution": "day",
+   "quarter_hours": 1921,
+   "returned": 4,
+   "omitted": 1917,
+   "omitted_with_at_least_one_absent_file": 0,
+   "omitted_with_every_file_served": 1917
+  },
+  {
+   "file": "api-2026-0126.json",
+   "start": "20260126000000",
+   "end": "20260126080000",
+   "query": "world",
+   "resolution": "15m",
+   "quarter_hours": 33,
+   "returned": 31,
+   "omitted": 2,
+   "omitted_with_at_least_one_absent_file": 1,
+   "omitted_with_every_file_served": 1
+  },
+  {
+   "file": "api-bg-20180612000000.json",
+   "start": "20180612000000",
+   "end": "20180614000000",
+   "query": "world",
+   "resolution": "15m",
+   "quarter_hours": 193,
+   "returned": 183,
+   "omitted": 10,
+   "omitted_with_at_least_one_absent_file": 0,
+   "omitted_with_every_file_served": 10
+  },
+  {
+   "file": "api-bg-20190917000000.json",
+   "start": "20190917000000",
+   "end": "20190919000000",
+   "query": "world",
+   "resolution": "15m",
+   "quarter_hours": 193,
+   "returned": 193,
+   "omitted": 0,
+   "omitted_with_at_least_one_absent_file": 0,
+   "omitted_with_every_file_served": 0
+  },
+  {
+   "file": "api-bg-20210204000000.json",
+   "start": "20210204000000",
+   "end": "20210206000000",
+   "query": "world",
+   "resolution": "15m",
+   "quarter_hours": 193,
+   "returned": 190,
+   "omitted": 3,
+   "omitted_with_at_least_one_absent_file": 0,
+   "omitted_with_every_file_served": 3
+  },
+  {
+   "file": "api-bg-20240808000000.json",
+   "result": "UNRESOLVED"
+  },
+  {
+   "file": "api-bg-20251103000000.json",
+   "start": "20251103000000",
+   "end": "20251105000000",
+   "query": "world",
+   "resolution": "15m",
+   "quarter_hours": 193,
+   "returned": 160,
+   "omitted": 33,
+   "omitted_with_at_least_one_absent_file": 0,
+   "omitted_with_every_file_served": 33
+  },
+  {
+   "file": "api-bg-20260610000000.json",
+   "start": "20260610000000",
+   "end": "20260612000000",
+   "query": "world",
+   "resolution": "15m",
+   "quarter_hours": 193,
+   "returned": 167,
+   "omitted": 26,
+   "omitted_with_at_least_one_absent_file": 0,
+   "omitted_with_every_file_served": 26
+  },
+  {
+   "file": "api-control.json",
+   "start": "20221101000000",
+   "end": "20221103000000",
+   "query": "world",
+   "resolution": "15m",
+   "quarter_hours": 193,
+   "returned": 193,
+   "omitted": 0,
+   "omitted_with_at_least_one_absent_file": 0,
+   "omitted_with_every_file_served": 0
+  },
+  {
+   "file": "api-ladder-4d.json",
+   "start": "20221108000000",
+   "end": "20221112000000",
+   "query": "world",
+   "resolution": "hour",
+   "quarter_hours": 385,
+   "returned": 75,
+   "omitted": 310,
+   "omitted_with_at_least_one_absent_file": 83,
+   "omitted_with_every_file_served": 227
+  },
+  {
+   "file": "api-ladder-7d.json",
+   "start": "20221105000000",
+   "end": "20221112000000",
+   "query": "world",
+   "resolution": "hour",
+   "quarter_hours": 673,
+   "returned": 147,
+   "omitted": 526,
+   "omitted_with_at_least_one_absent_file": 83,
+   "omitted_with_every_file_served": 443
+  },
+  {
+   "file": "api-window-government.json",
+   "start": "20221110120000",
+   "end": "20221112060000",
+   "query": "government",
+   "resolution": "15m",
+   "quarter_hours": 169,
+   "returned": 73,
+   "omitted": 96,
+   "omitted_with_at_least_one_absent_file": 84,
+   "omitted_with_every_file_served": 12
+  },
+  {
+   "file": "api-window-news.json",
+   "start": "20221110120000",
+   "end": "20221112060000",
+   "query": "news",
+   "resolution": "15m",
+   "quarter_hours": 169,
+   "returned": 73,
+   "omitted": 96,
+   "omitted_with_at_least_one_absent_file": 84,
+   "omitted_with_every_file_served": 12
+  },
+  {
+   "file": "api-window-said.json",
+   "start": "20221110120000",
+   "end": "20221112060000",
+   "query": "said",
+   "resolution": "15m",
+   "quarter_hours": 169,
+   "returned": 73,
+   "omitted": 96,
+   "omitted_with_at_least_one_absent_file": 84,
+   "omitted_with_every_file_served": 12
+  },
+  {
+   "file": "api-window-trump.json",
+   "start": "20221110120000",
+   "end": "20221112060000",
+   "query": "trump",
+   "resolution": "15m",
+   "quarter_hours": 169,
+   "returned": 73,
+   "omitted": 96,
+   "omitted_with_at_least_one_absent_file": 84,
+   "omitted_with_every_file_served": 12
+  },
+  {
+   "file": "api-window-world.json",
+   "start": "20221110120000",
+   "end": "20221112060000",
+   "query": "world",
+   "resolution": "15m",
+   "quarter_hours": 169,
+   "returned": 73,
+   "omitted": 96,
+   "omitted_with_at_least_one_absent_file": 84,
+   "omitted_with_every_file_served": 12
+  }
+ ],
+ "free_second_copy_totals_at_15m": {
+  "probes": 18,
+  "quarter_hours_examined": 2442,
+  "omitted_by_the_api": 622,
+  "of_those_with_every_file_served": 199,
+  "of_those_with_a_genuinely_absent_file": 423
+ }
+}
