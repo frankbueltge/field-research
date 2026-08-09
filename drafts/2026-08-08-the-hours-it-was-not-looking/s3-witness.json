@@ -1,0 +1,446 @@
+{
+ "host": "gdelt-open-data.s3.amazonaws.com",
+ "cutoff": "2019-05-01",
+ "summary": {
+  "checked": 36,
+  "absent_in_snapshot_too": 36,
+  "present_in_snapshot": 0,
+  "unresolved": 0,
+  "controls_present": 5,
+  "out_of_snapshot_range": 9
+ },
+ "rows": [
+  {
+   "cycle": "20150219074500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150219073000",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150219080000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150219074500",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150318204500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150318203000",
+   "control_status": 200,
+   "control_content_length": 42037449,
+   "control_err": null
+  },
+  {
+   "cycle": "20150318210000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150318204500",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150512164500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150512163000",
+   "control_status": 200,
+   "control_content_length": 42262325,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529000000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150528234500",
+   "control_status": 200,
+   "control_content_length": 29693310,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529001500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529000000",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529003000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529001500",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529004500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529003000",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529010000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529004500",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529011500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529010000",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529013000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529011500",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529014500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529013000",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529020000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529014500",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529021500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529020000",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529023000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529021500",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529024500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529023000",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529030000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529024500",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529031500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529030000",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529033000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529031500",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529034500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529033000",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529040000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529034500",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529041500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529040000",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529043000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529041500",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529044500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529043000",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529050000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529044500",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529051500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529050000",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529053000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529051500",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529054500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529053000",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529060000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529054500",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529061500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529060000",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529063000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529061500",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20150529064500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20150529063000",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20160525220000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20160525214500",
+   "control_status": 200,
+   "control_content_length": 54189157,
+   "control_err": null
+  },
+  {
+   "cycle": "20160525221500",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20160525220000",
+   "control_status": 404,
+   "control_content_length": null,
+   "control_err": null
+  },
+  {
+   "cycle": "20170707000000",
+   "in_snapshot_range": true,
+   "status": 404,
+   "content_length": null,
+   "err": null,
+   "control_cycle": "20170706234500",
+   "control_status": 200,
+   "control_content_length": 46546984,
+   "control_err": null
+  },
+  {
+   "cycle": "20201214121500",
+   "in_snapshot_range": false
+  },
+  {
+   "cycle": "20230323130000",
+   "in_snapshot_range": false
+  },
+  {
+   "cycle": "20230323131500",
+   "in_snapshot_range": false
+  },
+  {
+   "cycle": "20230323133000",
+   "in_snapshot_range": false
+  },
+  {
+   "cycle": "20230323134500",
+   "in_snapshot_range": false
+  },
+  {
+   "cycle": "20230323140000",
+   "in_snapshot_range": false
+  },
+  {
+   "cycle": "20230323141500",
+   "in_snapshot_range": false
+  },
+  {
+   "cycle": "20230323143000",
+   "in_snapshot_range": false
+  },
+  {
+   "cycle": "20260126030000",
+   "in_snapshot_range": false
+  }
+ ]
+}

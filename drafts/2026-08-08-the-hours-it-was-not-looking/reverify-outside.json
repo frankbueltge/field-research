@@ -1,0 +1,1407 @@
+{
+ "summary": {
+  "cycles": 45,
+  "rounds": 3,
+  "not_served_in_every_round": 45,
+  "changed": 0,
+  "controls": 18,
+  "controls_served_every_round": 14,
+  "controls_not_served": [
+   "20150219073000",
+   "20150219081500",
+   "20201214120000",
+   "20230323124500"
+  ],
+  "note": "controls that are not served are cycles the index does not list at all (checked against the manifest)"
+ },
+ "rows": {
+  "20150219074500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150219080000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150318204500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150318210000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150512164500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529000000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529001500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529003000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529004500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529010000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529011500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529013000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529014500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529020000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529021500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529023000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529024500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529030000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529031500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529033000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529034500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529040000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529041500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529043000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529044500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529050000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529051500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529053000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529054500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529060000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529061500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529063000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150529064500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20160525220000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20160525221500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20170707000000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20201214121500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20230323130000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20230323131500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20230323133000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20230323134500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20230323140000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20230323141500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20230323143000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20260126030000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  }
+ },
+ "controls": {
+  "20150219073000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150219081500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20150318203000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    },
+    {
+     "method": "HEAD",
+     "status": 200,
+     "len": "13242790",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    }
+   ]
+  },
+  "20150318211500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    },
+    {
+     "method": "HEAD",
+     "status": 200,
+     "len": "10783337",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    }
+   ]
+  },
+  "20150512163000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    },
+    {
+     "method": "HEAD",
+     "status": 200,
+     "len": "13303841",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    }
+   ]
+  },
+  "20150512170000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    },
+    {
+     "method": "HEAD",
+     "status": 200,
+     "len": "12716819",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    }
+   ]
+  },
+  "20150528234500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    },
+    {
+     "method": "HEAD",
+     "status": 200,
+     "len": "9344134",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    }
+   ]
+  },
+  "20150529070000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    },
+    {
+     "method": "HEAD",
+     "status": 200,
+     "len": "8086839",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    }
+   ]
+  },
+  "20160525214500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    },
+    {
+     "method": "HEAD",
+     "status": 200,
+     "len": "17152971",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    }
+   ]
+  },
+  "20160525223000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    },
+    {
+     "method": "HEAD",
+     "status": 200,
+     "len": "17347329",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    }
+   ]
+  },
+  "20170706234500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    },
+    {
+     "method": "HEAD",
+     "status": 200,
+     "len": "14694936",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    }
+   ]
+  },
+  "20170707001500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    },
+    {
+     "method": "HEAD",
+     "status": 200,
+     "len": "13275113",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    }
+   ]
+  },
+  "20201214120000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20201214123000": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    },
+    {
+     "method": "HEAD",
+     "status": 200,
+     "len": "6788485",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    }
+   ]
+  },
+  "20230323124500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    },
+    {
+     "method": "HEAD",
+     "status": 404,
+     "len": "0",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 416,
+     "len": "166",
+     "bytes_read": 166
+    }
+   ]
+  },
+  "20230323144500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    },
+    {
+     "method": "HEAD",
+     "status": 200,
+     "len": "11018491",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    }
+   ]
+  },
+  "20260126024500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    },
+    {
+     "method": "HEAD",
+     "status": 200,
+     "len": "3063723",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    }
+   ]
+  },
+  "20260126031500": {
+   "rounds": [
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    },
+    {
+     "method": "HEAD",
+     "status": 200,
+     "len": "2674892",
+     "bytes_read": 0
+    },
+    {
+     "method": "GET",
+     "status": 206,
+     "len": "64",
+     "bytes_read": 64
+    }
+   ]
+  }
+ }
+}
