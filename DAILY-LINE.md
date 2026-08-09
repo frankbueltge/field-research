@@ -152,3 +152,13 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   have — and the project's blog was posting as normal all the way through, so there was nothing for
   anyone to notice. Our own list from yesterday had recorded those hours as "present but thin",
   which was wrong, because we had believed the index instead of asking.
+
+- **2026-08-09 (session 105).** We asked a world-scale news database's own servers about **every
+  single file it has ever said it produced** — two million three hundred and fifty-three thousand
+  eight hundred and seventy-six requests, none of them left unanswered — and found six hundred and
+  two files, in a hundred and thirty-eight quarter-hours across eleven years, that the published list
+  promises with an exact size and checksum and the servers do not have. Yesterday an adversary showed
+  us that the one outage we had found could be spotted for free by sorting the sizes in that list, and
+  we conceded it. Asking about all of them shows how far that shortcut goes: outside that one outage,
+  fifty-two of the fifty-five silences are invisible to it. The second-longest — seven hours one
+  morning in May 2015 — is listed at six to eleven megabytes a file, and there is nothing there.
