@@ -82,19 +82,42 @@ direction, nothing to compare it against.
 ## The second copy, measured rather than feared
 
 The condition that held the gate open was whether the absence is already free somewhere else. It
-is — from a copy we could reach without the credential we asked the team for. But the two published
-copies **do not agree**, and the disagreement is measurable:
+is — from a copy we could reach without the credential we asked the team for. So we measured what
+that copy is actually worth as an absence detector, over **27 probes** (`api-summary.json`).
 
-- The API omits **2022-11-10T21:45Z**, whose file the host serves at 7,337,477 bytes.
-- The API omits a **second block, 2022-11-11 20:30 → 23:15**, twelve quarter-hours whose files the
-  host serves normally and which our sweep does not find absent.
-- The API returns **2022-11-11 18:45 → 20:15**, seven quarter-hours in the middle of the file
-  outage's trailing edge.
+**In the 2022 window it agrees, and the agreement is robust.** 73 of 169 quarter-hours returned, 96
+omitted, identically for the query terms `news`, `world`, `said`, `government` and `trump`.
 
-So of the 96 quarter-hours the free API calls empty in this window, **13 have files the host serves
-today**. The API measures whether articles were indexed; the sweep measures whether the file the
-index promises exists. They are different questions with different answers, and neither is a
-substitute for the other.
+**Everywhere else it over-reports absence, by one to three orders of magnitude.** Control spans in
+periods where our sweep finds **every file served**:
+
+| span (48 h unless noted) | quarter-hours | omitted by the API | files actually absent |
+|---|---:|---:|---:|
+| 2019-09-17 → 09-19 | 193 | **0** | 0 |
+| 2021-02-04 → 02-06 | 193 | **3** | 0 |
+| 2018-06-12 → 06-14 | 193 | **10** | 0 |
+| 2026-06-10 → 06-12 | 193 | **26** | 0 |
+| 2025-11-03 → 11-05 | 193 | **33** | 0 |
+| 2022-11-01 → 11-03 | 193 | **0** | 0 |
+| 2017-07-06 18:00 → 07-07 06:00 (12 h) | 49 | **16** | **1** |
+| 2020-12-14 06:00 → 18:00 (12 h) | 49 | **3** | **1** |
+| 2026-01-26 00:00 → 08:00 (8 h) | 33 | **2** | **1** |
+
+The free copy's rate of calling a quarter-hour empty when the host serves its file runs **0 % to
+17 %**. The rate this arc measures — listed files the host does not serve — is **128 of 394,946,
+0.032 %**. A signal with a false-positive rate two to five hundred times the size of the phenomenon
+is a suspicion generator, not a register.
+
+Two further limits, both measured: the API answers at 15-minute resolution only for spans of about
+two days (a 4-day span drops to hourly, a 20-day span to daily), and it does not reach back before
+2017 — a 2015 span returns nothing at all, so the 28-cycle silence of 2015-05-29 is outside its
+range entirely. For 2023-03-23 it returns an **empty response** for the whole day at every span we
+tried, while the same span on 03-21 and 03-25 returns 31 of 33 — we record that as the API having
+nothing for that date and cannot distinguish it from an API-side failure.
+
+The API measures whether articles were indexed. The sweep measures whether the file the index
+promises exists. They are different questions with different answers, and the free one is the noisy
+one.
 
 **What we could not check, said plainly.** The copy the adversary named — the object's copy in a
 commercial cloud data warehouse — remains unqueried. No unauthenticated route exists; the
