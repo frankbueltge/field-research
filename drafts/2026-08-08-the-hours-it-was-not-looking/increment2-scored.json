@@ -1,0 +1,2293 @@
+{
+ "run_utc": "2026-08-09T03:43:01Z",
+ "seed": 20260809,
+ "downloads": 294,
+ "opened_ok": 289,
+ "Q1": {
+  "scored_pairs": 75,
+  "below_20pct_of_control": 72,
+  "rate": 0.96
+ },
+ "Q2": {
+  "sample_a_opened": 75,
+  "zero_record_files": 0,
+  "rate": 0.0,
+  "zero_byte_inner_files": 0,
+  "detail": []
+ },
+ "Q3": {
+  "records_per_MB_median_by_year": {
+   "2015": 293.62,
+   "2016": 271.47,
+   "2017": 266.09,
+   "2018": 267.45,
+   "2019": 274.78,
+   "2020": 253.08,
+   "2021": 259.67,
+   "2022": 257.07,
+   "2023": 259.59,
+   "2024": 259.48,
+   "2025": 250.65,
+   "2026": 250.44
+  },
+  "n_by_year": {
+   "2017": 60,
+   "2015": 12,
+   "2025": 17,
+   "2022": 19,
+   "2026": 13,
+   "2024": 10,
+   "2018": 22,
+   "2016": 15,
+   "2020": 12,
+   "2021": 11,
+   "2019": 14,
+   "2023": 9
+  },
+  "earliest_year": "2015",
+  "latest_year": "2026",
+  "factor": 1.172,
+  "min_year_median": 250.44,
+  "max_year_median": 293.62,
+  "max_over_min_factor": 1.172
+ },
+ "Q4": {
+  "scored": 80,
+  "below_20pct_of_predicted": 0,
+  "min_ratio": 0.9117,
+  "max_ratio": 1.1059,
+  "median_ratio": 1.0042,
+  "n_below_half": 0,
+  "n_above_double": 0
+ },
+ "Q5": {
+  "downloaded_ok": 289,
+  "size_and_md5_match": 289,
+  "rate": 1.0,
+  "size_mismatches": [],
+  "md5_mismatches": []
+ },
+ "Q6": {
+  "pairs_scored": 30,
+  "pairs_over_50pct": 0,
+  "max_overlap": 0.00068,
+  "median_overlap": 0.0,
+  "mean_dup_within_file": null
+ },
+ "Q7": {
+  "attempted": 294,
+  "failed": 5,
+  "detail": [
+   {
+    "ts": "2022-11-11T04:30:00Z",
+    "status": 404,
+    "error": "HTTPError 404"
+   },
+   {
+    "ts": "2022-11-11T06:15:00Z",
+    "status": 404,
+    "error": "HTTPError 404"
+   },
+   {
+    "ts": "2022-11-11T10:00:00Z",
+    "status": 404,
+    "error": "HTTPError 404"
+   },
+   {
+    "ts": "2022-11-11T11:15:00Z",
+    "status": 404,
+    "error": "HTTPError 404"
+   },
+   {
+    "ts": "2022-11-11T17:15:00Z",
+    "status": 404,
+    "error": "HTTPError 404"
+   }
+  ]
+ },
+ "Q8": {
+  "checked": 3137,
+  "identical": 3137,
+  "differing": [],
+  "absent_from_new_manifest": []
+ },
+ "verdicts": {
+  "Q1": "HELD",
+  "Q2": "NOT HELD",
+  "Q3": "NOT HELD",
+  "Q4": "NOT HELD",
+  "Q5": "HELD",
+  "Q6": "NOT HELD",
+  "Q7": "HELD",
+  "Q8": "HELD"
+ },
+ "kill_criterion_fires": false,
+ "pairs_detail": [
+  {
+   "collapsed": "2015-04-06T19:45:00Z",
+   "control": "2015-04-06T19:30:00Z",
+   "collapsed_records": 2,
+   "control_records": 2629,
+   "collapsed_bytes": 8455,
+   "control_bytes": 9061383,
+   "ratio": 0.00076,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2015-04-11T16:00:00Z",
+   "control": "2015-04-11T15:45:00Z",
+   "collapsed_records": 6,
+   "control_records": 1676,
+   "collapsed_bytes": 19547,
+   "control_bytes": 6304286,
+   "ratio": 0.00358,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2015-04-14T08:15:00Z",
+   "control": "2015-04-14T08:00:00Z",
+   "collapsed_records": 15,
+   "control_records": 1980,
+   "collapsed_bytes": 49669,
+   "control_bytes": 7069556,
+   "ratio": 0.00758,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2015-05-27T22:00:00Z",
+   "control": "2015-05-27T21:45:00Z",
+   "collapsed_records": 3,
+   "control_records": 3161,
+   "collapsed_bytes": 9496,
+   "control_bytes": 11618020,
+   "ratio": 0.00095,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2015-08-20T04:30:00Z",
+   "control": "2015-08-20T04:15:00Z",
+   "collapsed_records": 1,
+   "control_records": 3350,
+   "collapsed_bytes": 4519,
+   "control_bytes": 14338872,
+   "ratio": 0.0003,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2016-01-09T17:45:00Z",
+   "control": "2016-01-09T17:30:00Z",
+   "collapsed_records": 6,
+   "control_records": 1693,
+   "collapsed_bytes": 14560,
+   "control_bytes": 6360544,
+   "ratio": 0.00354,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2016-02-24T17:45:00Z",
+   "control": "2016-02-24T17:30:00Z",
+   "collapsed_records": 6,
+   "control_records": 4220,
+   "collapsed_bytes": 23016,
+   "control_bytes": 16213419,
+   "ratio": 0.00142,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2016-04-10T10:30:00Z",
+   "control": "2016-04-10T10:15:00Z",
+   "collapsed_records": 15,
+   "control_records": 1524,
+   "collapsed_bytes": 36534,
+   "control_bytes": 5899885,
+   "ratio": 0.00984,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2016-06-13T15:00:00Z",
+   "control": "2016-06-13T14:45:00Z",
+   "collapsed_records": 9,
+   "control_records": 4598,
+   "collapsed_bytes": 32066,
+   "control_bytes": 17565577,
+   "ratio": 0.00196,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2016-09-29T22:15:00Z",
+   "control": "2016-09-29T22:00:00Z",
+   "collapsed_records": 404,
+   "control_records": 4075,
+   "collapsed_bytes": 1511693,
+   "control_bytes": 15774784,
+   "ratio": 0.09914,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2016-10-13T15:00:00Z",
+   "control": "2016-10-13T14:45:00Z",
+   "collapsed_records": 9,
+   "control_records": 4889,
+   "collapsed_bytes": 20311,
+   "control_bytes": 18559860,
+   "ratio": 0.00184,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2016-11-03T09:45:00Z",
+   "control": "2016-11-03T09:30:00Z",
+   "collapsed_records": 26,
+   "control_records": 3514,
+   "collapsed_bytes": 79430,
+   "control_bytes": 13572882,
+   "ratio": 0.0074,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-03-25T08:00:00Z",
+   "control": "2017-03-25T07:45:00Z",
+   "collapsed_records": 7,
+   "control_records": 1650,
+   "collapsed_bytes": 20010,
+   "control_bytes": 6627278,
+   "ratio": 0.00424,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-04-01T10:30:00Z",
+   "control": "2017-04-01T10:00:00Z",
+   "collapsed_records": 4,
+   "control_records": 1798,
+   "collapsed_bytes": 13005,
+   "control_bytes": 7049700,
+   "ratio": 0.00222,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-04-02T21:00:00Z",
+   "control": "2017-04-02T20:45:00Z",
+   "collapsed_records": 6,
+   "control_records": 2048,
+   "collapsed_bytes": 26612,
+   "control_bytes": 7816926,
+   "ratio": 0.00293,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-04-11T22:30:00Z",
+   "control": "2017-04-11T22:15:00Z",
+   "collapsed_records": 1,
+   "control_records": 4073,
+   "collapsed_bytes": 7970,
+   "control_bytes": 15488765,
+   "ratio": 0.00025,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-04-22T05:00:00Z",
+   "control": "2017-04-22T04:45:00Z",
+   "collapsed_records": 3,
+   "control_records": 1700,
+   "collapsed_bytes": 11161,
+   "control_bytes": 7183076,
+   "ratio": 0.00176,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-05-07T15:30:00Z",
+   "control": "2017-05-07T15:00:00Z",
+   "collapsed_records": 4,
+   "control_records": 2149,
+   "collapsed_bytes": 14784,
+   "control_bytes": 8403183,
+   "ratio": 0.00186,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-05-17T03:30:00Z",
+   "control": "2017-05-17T03:15:00Z",
+   "collapsed_records": 1,
+   "control_records": 2723,
+   "collapsed_bytes": 3083,
+   "control_bytes": 10960102,
+   "ratio": 0.00037,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-05-26T07:15:00Z",
+   "control": "2017-05-26T07:00:00Z",
+   "collapsed_records": 12,
+   "control_records": 2326,
+   "collapsed_bytes": 47133,
+   "control_bytes": 9439697,
+   "ratio": 0.00516,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-06-04T10:15:00Z",
+   "control": "2017-06-04T10:00:00Z",
+   "collapsed_records": 7,
+   "control_records": 1347,
+   "collapsed_bytes": 21320,
+   "control_bytes": 5765961,
+   "ratio": 0.0052,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-06-06T11:00:00Z",
+   "control": "2017-06-06T10:45:00Z",
+   "collapsed_records": 12,
+   "control_records": 2872,
+   "collapsed_bytes": 43064,
+   "control_bytes": 11529606,
+   "ratio": 0.00418,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-06-07T15:30:00Z",
+   "control": "2017-06-07T15:15:00Z",
+   "collapsed_records": 6,
+   "control_records": 4566,
+   "collapsed_bytes": 17640,
+   "control_bytes": 18091988,
+   "ratio": 0.00131,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-06-15T11:30:00Z",
+   "control": "2017-06-15T11:15:00Z",
+   "collapsed_records": 4,
+   "control_records": 3202,
+   "collapsed_bytes": 12381,
+   "control_bytes": 12895400,
+   "ratio": 0.00125,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-06-20T09:45:00Z",
+   "control": "2017-06-20T09:30:00Z",
+   "collapsed_records": 14,
+   "control_records": 3221,
+   "collapsed_bytes": 45346,
+   "control_bytes": 12527321,
+   "ratio": 0.00435,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-06-21T07:45:00Z",
+   "control": "2017-06-21T07:30:00Z",
+   "collapsed_records": 5,
+   "control_records": 2928,
+   "collapsed_bytes": 14423,
+   "control_bytes": 11606081,
+   "ratio": 0.00171,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-06-21T17:30:00Z",
+   "control": "2017-06-21T17:15:00Z",
+   "collapsed_records": 3,
+   "control_records": 4802,
+   "collapsed_bytes": 12402,
+   "control_bytes": 18015111,
+   "ratio": 0.00062,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-06-21T17:45:00Z",
+   "control": "2017-06-21T17:15:00Z",
+   "collapsed_records": 4,
+   "control_records": 4802,
+   "collapsed_bytes": 10965,
+   "control_bytes": 18015111,
+   "ratio": 0.00083,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-06-25T10:30:00Z",
+   "control": "2017-06-25T10:15:00Z",
+   "collapsed_records": 7,
+   "control_records": 1196,
+   "collapsed_bytes": 29966,
+   "control_bytes": 4943747,
+   "ratio": 0.00585,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-06-28T15:00:00Z",
+   "control": "2017-06-28T14:45:00Z",
+   "collapsed_records": 15,
+   "control_records": 4206,
+   "collapsed_bytes": 47182,
+   "control_bytes": 15995920,
+   "ratio": 0.00357,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-06-29T04:00:00Z",
+   "control": "2017-06-29T03:15:00Z",
+   "collapsed_records": 1,
+   "control_records": 2467,
+   "collapsed_bytes": 7585,
+   "control_bytes": 9806436,
+   "ratio": 0.00041,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-06-29T09:30:00Z",
+   "control": "2017-06-29T09:15:00Z",
+   "collapsed_records": 17,
+   "control_records": 2650,
+   "collapsed_bytes": 56049,
+   "control_bytes": 10431824,
+   "ratio": 0.00642,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-06-30T09:00:00Z",
+   "control": "2017-06-30T08:45:00Z",
+   "collapsed_records": 8,
+   "control_records": 2739,
+   "collapsed_bytes": 23921,
+   "control_bytes": 11178933,
+   "ratio": 0.00292,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-06-30T13:15:00Z",
+   "control": "2017-06-30T13:00:00Z",
+   "collapsed_records": 4,
+   "control_records": 3662,
+   "collapsed_bytes": 11603,
+   "control_bytes": 14265264,
+   "ratio": 0.00109,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-06-30T16:15:00Z",
+   "control": "2017-06-30T16:00:00Z",
+   "collapsed_records": 5,
+   "control_records": 4149,
+   "collapsed_bytes": 24465,
+   "control_bytes": 16068582,
+   "ratio": 0.00121,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-07-14T18:15:00Z",
+   "control": "2017-07-14T17:30:00Z",
+   "collapsed_records": 1,
+   "control_records": 3999,
+   "collapsed_bytes": 5463,
+   "control_bytes": 15170675,
+   "ratio": 0.00025,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-07-22T08:00:00Z",
+   "control": "2017-07-22T07:45:00Z",
+   "collapsed_records": 6,
+   "control_records": 1713,
+   "collapsed_bytes": 19013,
+   "control_bytes": 7140990,
+   "ratio": 0.0035,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-07-23T14:45:00Z",
+   "control": "2017-07-23T14:30:00Z",
+   "collapsed_records": 7,
+   "control_records": 1608,
+   "collapsed_bytes": 22522,
+   "control_bytes": 6513292,
+   "ratio": 0.00435,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-08-01T15:00:00Z",
+   "control": "2017-08-01T14:45:00Z",
+   "collapsed_records": 12,
+   "control_records": 3936,
+   "collapsed_bytes": 42241,
+   "control_bytes": 14687362,
+   "ratio": 0.00305,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-08-03T18:15:00Z",
+   "control": "2017-08-03T17:45:00Z",
+   "collapsed_records": 2,
+   "control_records": 4652,
+   "collapsed_bytes": 7346,
+   "control_bytes": 17614467,
+   "ratio": 0.00043,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-08-04T19:45:00Z",
+   "control": "2017-08-04T19:30:00Z",
+   "collapsed_records": 2,
+   "control_records": 3646,
+   "collapsed_bytes": 6099,
+   "control_bytes": 13716367,
+   "ratio": 0.00055,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-08-05T11:15:00Z",
+   "control": "2017-08-05T11:00:00Z",
+   "collapsed_records": 5,
+   "control_records": 1550,
+   "collapsed_bytes": 16418,
+   "control_bytes": 6045504,
+   "ratio": 0.00323,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-08-12T14:15:00Z",
+   "control": "2017-08-12T14:00:00Z",
+   "collapsed_records": 3,
+   "control_records": 1719,
+   "collapsed_bytes": 16950,
+   "control_bytes": 7083004,
+   "ratio": 0.00175,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-08-12T18:45:00Z",
+   "control": "2017-08-12T18:30:00Z",
+   "collapsed_records": 1,
+   "control_records": 2123,
+   "collapsed_bytes": 2889,
+   "control_bytes": 8628397,
+   "ratio": 0.00047,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-08-16T06:00:00Z",
+   "control": "2017-08-16T05:45:00Z",
+   "collapsed_records": 4,
+   "control_records": 2424,
+   "collapsed_bytes": 13945,
+   "control_bytes": 9514559,
+   "ratio": 0.00165,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-08-16T17:00:00Z",
+   "control": "2017-08-16T16:45:00Z",
+   "collapsed_records": 6,
+   "control_records": 4617,
+   "collapsed_bytes": 24601,
+   "control_bytes": 17514396,
+   "ratio": 0.0013,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-08-26T16:15:00Z",
+   "control": "2017-08-26T16:00:00Z",
+   "collapsed_records": 6,
+   "control_records": 1849,
+   "collapsed_bytes": 17994,
+   "control_bytes": 7423344,
+   "ratio": 0.00324,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-08-27T14:15:00Z",
+   "control": "2017-08-27T14:00:00Z",
+   "collapsed_records": 4,
+   "control_records": 1560,
+   "collapsed_bytes": 12160,
+   "control_bytes": 6398734,
+   "ratio": 0.00256,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-08-30T11:15:00Z",
+   "control": "2017-08-30T11:00:00Z",
+   "collapsed_records": 10,
+   "control_records": 2926,
+   "collapsed_bytes": 32834,
+   "control_bytes": 11461481,
+   "ratio": 0.00342,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-09-05T12:15:00Z",
+   "control": "2017-09-05T11:45:00Z",
+   "collapsed_records": 6,
+   "control_records": 2852,
+   "collapsed_bytes": 22609,
+   "control_bytes": 10989944,
+   "ratio": 0.0021,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-09-07T06:15:00Z",
+   "control": "2017-09-07T05:45:00Z",
+   "collapsed_records": 6,
+   "control_records": 2327,
+   "collapsed_bytes": 24872,
+   "control_bytes": 9548066,
+   "ratio": 0.00258,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-09-07T20:00:00Z",
+   "control": "2017-09-07T19:45:00Z",
+   "collapsed_records": 1,
+   "control_records": 4205,
+   "collapsed_bytes": 6985,
+   "control_bytes": 16588138,
+   "ratio": 0.00024,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-09-15T19:00:00Z",
+   "control": "2017-09-15T18:45:00Z",
+   "collapsed_records": 375,
+   "control_records": 4096,
+   "collapsed_bytes": 1520069,
+   "control_bytes": 15982549,
+   "ratio": 0.09155,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-10-03T11:30:00Z",
+   "control": "2017-10-03T11:15:00Z",
+   "collapsed_records": 6,
+   "control_records": 2758,
+   "collapsed_bytes": 17723,
+   "control_bytes": 10747068,
+   "ratio": 0.00218,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-10-06T10:30:00Z",
+   "control": "2017-10-06T10:15:00Z",
+   "collapsed_records": 9,
+   "control_records": 2291,
+   "collapsed_bytes": 29582,
+   "control_bytes": 9018215,
+   "ratio": 0.00393,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-10-12T15:30:00Z",
+   "control": "2017-10-12T15:15:00Z",
+   "collapsed_records": 14,
+   "control_records": 3946,
+   "collapsed_bytes": 46782,
+   "control_bytes": 14731316,
+   "ratio": 0.00355,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-10-15T12:30:00Z",
+   "control": "2017-10-15T12:15:00Z",
+   "collapsed_records": 6,
+   "control_records": 1344,
+   "collapsed_bytes": 23084,
+   "control_bytes": 5761207,
+   "ratio": 0.00446,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-10-15T13:00:00Z",
+   "control": "2017-10-15T12:45:00Z",
+   "collapsed_records": 5,
+   "control_records": 1462,
+   "collapsed_bytes": 18359,
+   "control_bytes": 6093883,
+   "ratio": 0.00342,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-10-16T14:30:00Z",
+   "control": "2017-10-16T14:15:00Z",
+   "collapsed_records": 12,
+   "control_records": 4017,
+   "collapsed_bytes": 37412,
+   "control_bytes": 15560573,
+   "ratio": 0.00299,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-10-21T05:45:00Z",
+   "control": "2017-10-21T05:30:00Z",
+   "collapsed_records": 7,
+   "control_records": 1536,
+   "collapsed_bytes": 21437,
+   "control_bytes": 6316346,
+   "ratio": 0.00456,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-10-25T18:00:00Z",
+   "control": "2017-10-25T17:45:00Z",
+   "collapsed_records": 9,
+   "control_records": 4808,
+   "collapsed_bytes": 28786,
+   "control_bytes": 18134010,
+   "ratio": 0.00187,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2017-12-06T08:30:00Z",
+   "control": "2017-12-06T08:15:00Z",
+   "collapsed_records": 278,
+   "control_records": 2739,
+   "collapsed_bytes": 1106747,
+   "control_bytes": 11060368,
+   "ratio": 0.1015,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2018-01-31T08:15:00Z",
+   "control": "2018-01-31T08:00:00Z",
+   "collapsed_records": 272,
+   "control_records": 2305,
+   "collapsed_bytes": 1137196,
+   "control_bytes": 9600192,
+   "ratio": 0.118,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2018-02-13T09:45:00Z",
+   "control": "2018-02-13T09:30:00Z",
+   "collapsed_records": 245,
+   "control_records": 2439,
+   "collapsed_bytes": 940925,
+   "control_bytes": 9765068,
+   "ratio": 0.10045,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2018-02-27T17:00:00Z",
+   "control": "2018-02-27T16:45:00Z",
+   "collapsed_records": 436,
+   "control_records": 4037,
+   "collapsed_bytes": 1712601,
+   "control_bytes": 15081637,
+   "ratio": 0.108,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2018-04-02T18:30:00Z",
+   "control": "2018-04-02T18:15:00Z",
+   "collapsed_records": 346,
+   "control_records": 3825,
+   "collapsed_bytes": 1293532,
+   "control_bytes": 15180666,
+   "ratio": 0.09046,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2018-04-09T11:45:00Z",
+   "control": "2018-04-09T11:30:00Z",
+   "collapsed_records": 231,
+   "control_records": 2834,
+   "collapsed_bytes": 919155,
+   "control_bytes": 11500365,
+   "ratio": 0.08151,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2018-04-23T17:15:00Z",
+   "control": "2018-04-23T17:00:00Z",
+   "collapsed_records": 378,
+   "control_records": 4108,
+   "collapsed_bytes": 1485906,
+   "control_bytes": 15805272,
+   "ratio": 0.09202,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2019-06-23T11:45:00Z",
+   "control": "2019-06-23T11:30:00Z",
+   "collapsed_records": 166,
+   "control_records": 993,
+   "collapsed_bytes": 564354,
+   "control_bytes": 3916755,
+   "ratio": 0.16717,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2019-06-23T13:15:00Z",
+   "control": "2019-06-23T13:00:00Z",
+   "collapsed_records": 148,
+   "control_records": 1068,
+   "collapsed_bytes": 585823,
+   "control_bytes": 4285761,
+   "ratio": 0.13858,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2020-10-11T00:45:00Z",
+   "control": "2020-10-11T00:30:00Z",
+   "collapsed_records": 332,
+   "control_records": 571,
+   "collapsed_bytes": 1330508,
+   "control_bytes": 2453473,
+   "ratio": 0.58144,
+   "below_threshold": false
+  },
+  {
+   "collapsed": "2023-03-21T22:15:00Z",
+   "control": "2023-03-21T21:45:00Z",
+   "collapsed_records": 1,
+   "control_records": 1877,
+   "collapsed_bytes": 5686,
+   "control_bytes": 7582010,
+   "ratio": 0.00053,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2023-03-21T23:00:00Z",
+   "control": "2023-03-21T21:45:00Z",
+   "collapsed_records": 3,
+   "control_records": 1877,
+   "collapsed_bytes": 13704,
+   "control_bytes": 7582010,
+   "ratio": 0.0016,
+   "below_threshold": true
+  },
+  {
+   "collapsed": "2023-03-22T00:30:00Z",
+   "control": "2023-03-22T00:15:00Z",
+   "collapsed_records": 168,
+   "control_records": 349,
+   "collapsed_bytes": 720971,
+   "control_bytes": 1582755,
+   "ratio": 0.48138,
+   "below_threshold": false
+  },
+  {
+   "collapsed": "2025-07-02T02:30:00Z",
+   "control": "2025-07-02T02:15:00Z",
+   "collapsed_records": 155,
+   "control_records": 404,
+   "collapsed_bytes": 640475,
+   "control_bytes": 1354378,
+   "ratio": 0.38366,
+   "below_threshold": false
+  }
+ ],
+ "q4_detail": [
+  {
+   "ts": "2015-06-15T12:15:00Z",
+   "bytes": 9446057,
+   "records": 2709,
+   "year_median_records_per_MB_loo": 293.56,
+   "predicted_records": 2644.6,
+   "ratio_actual_to_predicted": 1.0244,
+   "below_threshold": false
+  },
+  {
+   "ts": "2015-07-05T22:30:00Z",
+   "bytes": 7569692,
+   "records": 2013,
+   "year_median_records_per_MB_loo": 293.68,
+   "predicted_records": 2120.1,
+   "ratio_actual_to_predicted": 0.9495,
+   "below_threshold": false
+  },
+  {
+   "ts": "2015-07-30T13:15:00Z",
+   "bytes": 11926474,
+   "records": 3339,
+   "year_median_records_per_MB_loo": 293.68,
+   "predicted_records": 3340.3,
+   "ratio_actual_to_predicted": 0.9996,
+   "below_threshold": false
+  },
+  {
+   "ts": "2015-08-15T17:15:00Z",
+   "bytes": 6705671,
+   "records": 1810,
+   "year_median_records_per_MB_loo": 293.68,
+   "predicted_records": 1878.1,
+   "ratio_actual_to_predicted": 0.9637,
+   "below_threshold": false
+  },
+  {
+   "ts": "2015-09-30T19:30:00Z",
+   "bytes": 14445957,
+   "records": 4061,
+   "year_median_records_per_MB_loo": 293.56,
+   "predicted_records": 4044.4,
+   "ratio_actual_to_predicted": 1.0041,
+   "below_threshold": false
+  },
+  {
+   "ts": "2016-01-11T10:30:00Z",
+   "bytes": 9229616,
+   "records": 2580,
+   "year_median_records_per_MB_loo": 271.17,
+   "predicted_records": 2386.9,
+   "ratio_actual_to_predicted": 1.0809,
+   "below_threshold": false
+  },
+  {
+   "ts": "2016-04-09T20:15:00Z",
+   "bytes": 7007088,
+   "records": 1886,
+   "year_median_records_per_MB_loo": 271.17,
+   "predicted_records": 1812.1,
+   "ratio_actual_to_predicted": 1.0408,
+   "below_threshold": false
+  },
+  {
+   "ts": "2016-09-29T20:15:00Z",
+   "bytes": 14469443,
+   "records": 3844,
+   "year_median_records_per_MB_loo": 271.17,
+   "predicted_records": 3742.0,
+   "ratio_actual_to_predicted": 1.0273,
+   "below_threshold": false
+  },
+  {
+   "ts": "2016-11-05T10:00:00Z",
+   "bytes": 6102837,
+   "records": 1506,
+   "year_median_records_per_MB_loo": 272.2,
+   "predicted_records": 1584.2,
+   "ratio_actual_to_predicted": 0.9506,
+   "below_threshold": false
+  },
+  {
+   "ts": "2017-01-04T10:45:00Z",
+   "bytes": 10260944,
+   "records": 2631,
+   "year_median_records_per_MB_loo": 265.81,
+   "predicted_records": 2601.1,
+   "ratio_actual_to_predicted": 1.0115,
+   "below_threshold": false
+  },
+  {
+   "ts": "2017-04-06T15:00:00Z",
+   "bytes": 18651121,
+   "records": 5208,
+   "year_median_records_per_MB_loo": 265.81,
+   "predicted_records": 4728.0,
+   "ratio_actual_to_predicted": 1.1015,
+   "below_threshold": false
+  },
+  {
+   "ts": "2017-10-31T12:15:00Z",
+   "bytes": 12757868,
+   "records": 3195,
+   "year_median_records_per_MB_loo": 266.37,
+   "predicted_records": 3240.9,
+   "ratio_actual_to_predicted": 0.9858,
+   "below_threshold": false
+  },
+  {
+   "ts": "2018-01-10T19:00:00Z",
+   "bytes": 17403223,
+   "records": 4336,
+   "year_median_records_per_MB_loo": 268.04,
+   "predicted_records": 4448.7,
+   "ratio_actual_to_predicted": 0.9747,
+   "below_threshold": false
+  },
+  {
+   "ts": "2018-02-14T04:45:00Z",
+   "bytes": 9119704,
+   "records": 2321,
+   "year_median_records_per_MB_loo": 268.04,
+   "predicted_records": 2331.2,
+   "ratio_actual_to_predicted": 0.9956,
+   "below_threshold": false
+  },
+  {
+   "ts": "2018-03-13T07:30:00Z",
+   "bytes": 9471110,
+   "records": 2263,
+   "year_median_records_per_MB_loo": 268.04,
+   "predicted_records": 2421.1,
+   "ratio_actual_to_predicted": 0.9347,
+   "below_threshold": false
+  },
+  {
+   "ts": "2018-04-16T06:45:00Z",
+   "bytes": 7237374,
+   "records": 1765,
+   "year_median_records_per_MB_loo": 268.04,
+   "predicted_records": 1850.1,
+   "ratio_actual_to_predicted": 0.954,
+   "below_threshold": false
+  },
+  {
+   "ts": "2018-04-20T11:45:00Z",
+   "bytes": 10144287,
+   "records": 2600,
+   "year_median_records_per_MB_loo": 266.87,
+   "predicted_records": 2581.8,
+   "ratio_actual_to_predicted": 1.0071,
+   "below_threshold": false
+  },
+  {
+   "ts": "2018-05-13T00:15:00Z",
+   "bytes": 6056184,
+   "records": 1503,
+   "year_median_records_per_MB_loo": 268.04,
+   "predicted_records": 1548.1,
+   "ratio_actual_to_predicted": 0.9709,
+   "below_threshold": false
+  },
+  {
+   "ts": "2018-05-15T10:45:00Z",
+   "bytes": 9909040,
+   "records": 2533,
+   "year_median_records_per_MB_loo": 266.87,
+   "predicted_records": 2521.9,
+   "ratio_actual_to_predicted": 1.0044,
+   "below_threshold": false
+  },
+  {
+   "ts": "2018-05-24T13:45:00Z",
+   "bytes": 15998727,
+   "records": 4002,
+   "year_median_records_per_MB_loo": 268.04,
+   "predicted_records": 4089.7,
+   "ratio_actual_to_predicted": 0.9786,
+   "below_threshold": false
+  },
+  {
+   "ts": "2018-06-22T00:30:00Z",
+   "bytes": 10933300,
+   "records": 2733,
+   "year_median_records_per_MB_loo": 268.04,
+   "predicted_records": 2794.8,
+   "ratio_actual_to_predicted": 0.9779,
+   "below_threshold": false
+  },
+  {
+   "ts": "2018-07-20T22:00:00Z",
+   "bytes": 10307480,
+   "records": 2852,
+   "year_median_records_per_MB_loo": 266.87,
+   "predicted_records": 2623.3,
+   "ratio_actual_to_predicted": 1.0872,
+   "below_threshold": false
+  },
+  {
+   "ts": "2018-08-01T10:15:00Z",
+   "bytes": 9175496,
+   "records": 2411,
+   "year_median_records_per_MB_loo": 266.87,
+   "predicted_records": 2335.2,
+   "ratio_actual_to_predicted": 1.0325,
+   "below_threshold": false
+  },
+  {
+   "ts": "2018-08-25T17:15:00Z",
+   "bytes": 5999627,
+   "records": 1567,
+   "year_median_records_per_MB_loo": 266.87,
+   "predicted_records": 1526.9,
+   "ratio_actual_to_predicted": 1.0262,
+   "below_threshold": false
+  },
+  {
+   "ts": "2018-12-07T23:45:00Z",
+   "bytes": 7993745,
+   "records": 2140,
+   "year_median_records_per_MB_loo": 266.87,
+   "predicted_records": 2034.4,
+   "ratio_actual_to_predicted": 1.0519,
+   "below_threshold": false
+  },
+  {
+   "ts": "2018-12-14T04:45:00Z",
+   "bytes": 6549870,
+   "records": 1701,
+   "year_median_records_per_MB_loo": 266.87,
+   "predicted_records": 1667.0,
+   "ratio_actual_to_predicted": 1.0204,
+   "below_threshold": false
+  },
+  {
+   "ts": "2019-01-20T13:30:00Z",
+   "bytes": 4696640,
+   "records": 1342,
+   "year_median_records_per_MB_loo": 272.06,
+   "predicted_records": 1218.6,
+   "ratio_actual_to_predicted": 1.1013,
+   "below_threshold": false
+  },
+  {
+   "ts": "2019-02-02T16:00:00Z",
+   "bytes": 5565780,
+   "records": 1473,
+   "year_median_records_per_MB_loo": 272.06,
+   "predicted_records": 1444.1,
+   "ratio_actual_to_predicted": 1.02,
+   "below_threshold": false
+  },
+  {
+   "ts": "2019-04-13T23:30:00Z",
+   "bytes": 5408246,
+   "records": 1504,
+   "year_median_records_per_MB_loo": 272.06,
+   "predicted_records": 1403.2,
+   "ratio_actual_to_predicted": 1.0718,
+   "below_threshold": false
+  },
+  {
+   "ts": "2019-04-22T15:00:00Z",
+   "bytes": 9990190,
+   "records": 2592,
+   "year_median_records_per_MB_loo": 277.51,
+   "predicted_records": 2643.9,
+   "ratio_actual_to_predicted": 0.9804,
+   "below_threshold": false
+  },
+  {
+   "ts": "2019-11-16T06:00:00Z",
+   "bytes": 4581412,
+   "records": 1148,
+   "year_median_records_per_MB_loo": 277.51,
+   "predicted_records": 1212.5,
+   "ratio_actual_to_predicted": 0.9468,
+   "below_threshold": false
+  },
+  {
+   "ts": "2019-12-28T03:00:00Z",
+   "bytes": 4323669,
+   "records": 1114,
+   "year_median_records_per_MB_loo": 277.51,
+   "predicted_records": 1144.3,
+   "ratio_actual_to_predicted": 0.9735,
+   "below_threshold": false
+  },
+  {
+   "ts": "2020-02-13T11:45:00Z",
+   "bytes": 6704718,
+   "records": 1641,
+   "year_median_records_per_MB_loo": 252.99,
+   "predicted_records": 1617.6,
+   "ratio_actual_to_predicted": 1.0144,
+   "below_threshold": false
+  },
+  {
+   "ts": "2020-02-23T05:45:00Z",
+   "bytes": 3572782,
+   "records": 862,
+   "year_median_records_per_MB_loo": 253.18,
+   "predicted_records": 862.6,
+   "ratio_actual_to_predicted": 0.9993,
+   "below_threshold": false
+  },
+  {
+   "ts": "2020-03-23T10:45:00Z",
+   "bytes": 5976714,
+   "records": 1525,
+   "year_median_records_per_MB_loo": 252.99,
+   "predicted_records": 1442.0,
+   "ratio_actual_to_predicted": 1.0576,
+   "below_threshold": false
+  },
+  {
+   "ts": "2020-04-26T21:45:00Z",
+   "bytes": 5283849,
+   "records": 1272,
+   "year_median_records_per_MB_loo": 253.18,
+   "predicted_records": 1275.8,
+   "ratio_actual_to_predicted": 0.997,
+   "below_threshold": false
+  },
+  {
+   "ts": "2020-05-23T19:45:00Z",
+   "bytes": 4327562,
+   "records": 1093,
+   "year_median_records_per_MB_loo": 252.99,
+   "predicted_records": 1044.1,
+   "ratio_actual_to_predicted": 1.0468,
+   "below_threshold": false
+  },
+  {
+   "ts": "2021-01-31T22:30:00Z",
+   "bytes": 4361144,
+   "records": 1016,
+   "year_median_records_per_MB_loo": 259.94,
+   "predicted_records": 1081.1,
+   "ratio_actual_to_predicted": 0.9398,
+   "below_threshold": false
+  },
+  {
+   "ts": "2021-02-22T18:45:00Z",
+   "bytes": 8963567,
+   "records": 2258,
+   "year_median_records_per_MB_loo": 258.53,
+   "predicted_records": 2210.0,
+   "ratio_actual_to_predicted": 1.0217,
+   "below_threshold": false
+  },
+  {
+   "ts": "2021-03-12T09:00:00Z",
+   "bytes": 4860266,
+   "records": 1249,
+   "year_median_records_per_MB_loo": 258.53,
+   "predicted_records": 1198.3,
+   "ratio_actual_to_predicted": 1.0423,
+   "below_threshold": false
+  },
+  {
+   "ts": "2021-08-01T10:15:00Z",
+   "bytes": 2901320,
+   "records": 720,
+   "year_median_records_per_MB_loo": 258.53,
+   "predicted_records": 715.3,
+   "ratio_actual_to_predicted": 1.0065,
+   "below_threshold": false
+  },
+  {
+   "ts": "2021-09-09T17:15:00Z",
+   "bytes": 8053852,
+   "records": 2065,
+   "year_median_records_per_MB_loo": 258.53,
+   "predicted_records": 1985.7,
+   "ratio_actual_to_predicted": 1.0399,
+   "below_threshold": false
+  },
+  {
+   "ts": "2022-02-04T10:00:00Z",
+   "bytes": 4487465,
+   "records": 1166,
+   "year_median_records_per_MB_loo": 255.77,
+   "predicted_records": 1094.6,
+   "ratio_actual_to_predicted": 1.0653,
+   "below_threshold": false
+  },
+  {
+   "ts": "2022-02-20T16:30:00Z",
+   "bytes": 3671933,
+   "records": 872,
+   "year_median_records_per_MB_loo": 258.18,
+   "predicted_records": 904.1,
+   "ratio_actual_to_predicted": 0.9645,
+   "below_threshold": false
+  },
+  {
+   "ts": "2022-04-08T14:15:00Z",
+   "bytes": 6421334,
+   "records": 1592,
+   "year_median_records_per_MB_loo": 255.77,
+   "predicted_records": 1566.3,
+   "ratio_actual_to_predicted": 1.0164,
+   "below_threshold": false
+  },
+  {
+   "ts": "2022-04-23T08:00:00Z",
+   "bytes": 2769227,
+   "records": 663,
+   "year_median_records_per_MB_loo": 258.18,
+   "predicted_records": 681.8,
+   "ratio_actual_to_predicted": 0.9724,
+   "below_threshold": false
+  },
+  {
+   "ts": "2022-05-05T00:15:00Z",
+   "bytes": 4674480,
+   "records": 1146,
+   "year_median_records_per_MB_loo": 256.88,
+   "predicted_records": 1145.1,
+   "ratio_actual_to_predicted": 1.0008,
+   "below_threshold": false
+  },
+  {
+   "ts": "2022-07-23T10:30:00Z",
+   "bytes": 2922331,
+   "records": 656,
+   "year_median_records_per_MB_loo": 258.18,
+   "predicted_records": 719.5,
+   "ratio_actual_to_predicted": 0.9117,
+   "below_threshold": false
+  },
+  {
+   "ts": "2022-09-27T01:15:00Z",
+   "bytes": 4808545,
+   "records": 1220,
+   "year_median_records_per_MB_loo": 255.77,
+   "predicted_records": 1172.9,
+   "ratio_actual_to_predicted": 1.0402,
+   "below_threshold": false
+  },
+  {
+   "ts": "2022-10-26T17:30:00Z",
+   "bytes": 7136082,
+   "records": 1828,
+   "year_median_records_per_MB_loo": 255.77,
+   "predicted_records": 1740.6,
+   "ratio_actual_to_predicted": 1.0502,
+   "below_threshold": false
+  },
+  {
+   "ts": "2023-04-04T23:15:00Z",
+   "bytes": 10689580,
+   "records": 2549,
+   "year_median_records_per_MB_loo": 260.26,
+   "predicted_records": 2653.2,
+   "ratio_actual_to_predicted": 0.9607,
+   "below_threshold": false
+  },
+  {
+   "ts": "2023-08-01T02:45:00Z",
+   "bytes": 5128758,
+   "records": 1335,
+   "year_median_records_per_MB_loo": 254.81,
+   "predicted_records": 1246.3,
+   "ratio_actual_to_predicted": 1.0711,
+   "below_threshold": false
+  },
+  {
+   "ts": "2023-08-15T21:45:00Z",
+   "bytes": 10001079,
+   "records": 2352,
+   "year_median_records_per_MB_loo": 260.26,
+   "predicted_records": 2482.3,
+   "ratio_actual_to_predicted": 0.9475,
+   "below_threshold": false
+  },
+  {
+   "ts": "2023-10-22T06:00:00Z",
+   "bytes": 2618510,
+   "records": 682,
+   "year_median_records_per_MB_loo": 254.81,
+   "predicted_records": 636.3,
+   "ratio_actual_to_predicted": 1.0718,
+   "below_threshold": false
+  },
+  {
+   "ts": "2023-12-16T05:15:00Z",
+   "bytes": 3735399,
+   "records": 993,
+   "year_median_records_per_MB_loo": 254.81,
+   "predicted_records": 907.7,
+   "ratio_actual_to_predicted": 1.0939,
+   "below_threshold": false
+  },
+  {
+   "ts": "2024-04-04T01:45:00Z",
+   "bytes": 5048304,
+   "records": 1222,
+   "year_median_records_per_MB_loo": 260.75,
+   "predicted_records": 1255.4,
+   "ratio_actual_to_predicted": 0.9734,
+   "below_threshold": false
+  },
+  {
+   "ts": "2024-04-22T21:45:00Z",
+   "bytes": 9395521,
+   "records": 2413,
+   "year_median_records_per_MB_loo": 258.2,
+   "predicted_records": 2313.5,
+   "ratio_actual_to_predicted": 1.043,
+   "below_threshold": false
+  },
+  {
+   "ts": "2024-05-07T08:00:00Z",
+   "bytes": 4533991,
+   "records": 1174,
+   "year_median_records_per_MB_loo": 258.2,
+   "predicted_records": 1116.4,
+   "ratio_actual_to_predicted": 1.0516,
+   "below_threshold": false
+  },
+  {
+   "ts": "2024-05-21T17:45:00Z",
+   "bytes": 9191038,
+   "records": 2317,
+   "year_median_records_per_MB_loo": 258.2,
+   "predicted_records": 2263.2,
+   "ratio_actual_to_predicted": 1.0238,
+   "below_threshold": false
+  },
+  {
+   "ts": "2024-06-02T02:00:00Z",
+   "bytes": 2509310,
+   "records": 624,
+   "year_median_records_per_MB_loo": 258.2,
+   "predicted_records": 617.9,
+   "ratio_actual_to_predicted": 1.0099,
+   "below_threshold": false
+  },
+  {
+   "ts": "2024-11-20T16:45:00Z",
+   "bytes": 8277133,
+   "records": 2009,
+   "year_median_records_per_MB_loo": 260.75,
+   "predicted_records": 2058.3,
+   "ratio_actual_to_predicted": 0.976,
+   "below_threshold": false
+  },
+  {
+   "ts": "2025-01-02T21:00:00Z",
+   "bytes": 8187038,
+   "records": 1957,
+   "year_median_records_per_MB_loo": 250.91,
+   "predicted_records": 1959.1,
+   "ratio_actual_to_predicted": 0.9989,
+   "below_threshold": false
+  },
+  {
+   "ts": "2025-02-12T18:45:00Z",
+   "bytes": 8798275,
+   "records": 2185,
+   "year_median_records_per_MB_loo": 248.38,
+   "predicted_records": 2084.1,
+   "ratio_actual_to_predicted": 1.0484,
+   "below_threshold": false
+  },
+  {
+   "ts": "2025-03-09T14:30:00Z",
+   "bytes": 3963977,
+   "records": 925,
+   "year_median_records_per_MB_loo": 253.18,
+   "predicted_records": 957.1,
+   "ratio_actual_to_predicted": 0.9664,
+   "below_threshold": false
+  },
+  {
+   "ts": "2025-04-15T03:15:00Z",
+   "bytes": 3879288,
+   "records": 962,
+   "year_median_records_per_MB_loo": 248.38,
+   "predicted_records": 918.9,
+   "ratio_actual_to_predicted": 1.0469,
+   "below_threshold": false
+  },
+  {
+   "ts": "2025-09-03T03:15:00Z",
+   "bytes": 3408797,
+   "records": 760,
+   "year_median_records_per_MB_loo": 253.18,
+   "predicted_records": 823.1,
+   "ratio_actual_to_predicted": 0.9234,
+   "below_threshold": false
+  },
+  {
+   "ts": "2025-09-06T11:30:00Z",
+   "bytes": 4208451,
+   "records": 982,
+   "year_median_records_per_MB_loo": 253.18,
+   "predicted_records": 1016.1,
+   "ratio_actual_to_predicted": 0.9664,
+   "below_threshold": false
+  },
+  {
+   "ts": "2025-10-11T03:30:00Z",
+   "bytes": 4025587,
+   "records": 925,
+   "year_median_records_per_MB_loo": 253.18,
+   "predicted_records": 972.0,
+   "ratio_actual_to_predicted": 0.9517,
+   "below_threshold": false
+  },
+  {
+   "ts": "2025-10-27T01:30:00Z",
+   "bytes": 3038028,
+   "records": 794,
+   "year_median_records_per_MB_loo": 248.38,
+   "predicted_records": 719.6,
+   "ratio_actual_to_predicted": 1.1034,
+   "below_threshold": false
+  },
+  {
+   "ts": "2025-12-25T23:00:00Z",
+   "bytes": 2153058,
+   "records": 564,
+   "year_median_records_per_MB_loo": 248.38,
+   "predicted_records": 510.0,
+   "ratio_actual_to_predicted": 1.1059,
+   "below_threshold": false
+  },
+  {
+   "ts": "2025-12-30T09:00:00Z",
+   "bytes": 3208264,
+   "records": 753,
+   "year_median_records_per_MB_loo": 253.18,
+   "predicted_records": 774.6,
+   "ratio_actual_to_predicted": 0.9721,
+   "below_threshold": false
+  },
+  {
+   "ts": "2026-02-01T19:45:00Z",
+   "bytes": 2821345,
+   "records": 689,
+   "year_median_records_per_MB_loo": 250.09,
+   "predicted_records": 672.9,
+   "ratio_actual_to_predicted": 1.0239,
+   "below_threshold": false
+  },
+  {
+   "ts": "2026-02-05T04:30:00Z",
+   "bytes": 3471498,
+   "records": 855,
+   "year_median_records_per_MB_loo": 250.09,
+   "predicted_records": 828.0,
+   "ratio_actual_to_predicted": 1.0327,
+   "below_threshold": false
+  },
+  {
+   "ts": "2026-02-15T13:00:00Z",
+   "bytes": 2974678,
+   "records": 693,
+   "year_median_records_per_MB_loo": 250.95,
+   "predicted_records": 711.9,
+   "ratio_actual_to_predicted": 0.9734,
+   "below_threshold": false
+  },
+  {
+   "ts": "2026-03-29T14:15:00Z",
+   "bytes": 2909802,
+   "records": 693,
+   "year_median_records_per_MB_loo": 250.95,
+   "predicted_records": 696.4,
+   "ratio_actual_to_predicted": 0.9951,
+   "below_threshold": false
+  },
+  {
+   "ts": "2026-03-30T01:45:00Z",
+   "bytes": 2604101,
+   "records": 615,
+   "year_median_records_per_MB_loo": 250.95,
+   "predicted_records": 623.2,
+   "ratio_actual_to_predicted": 0.9868,
+   "below_threshold": false
+  },
+  {
+   "ts": "2026-05-15T04:00:00Z",
+   "bytes": 3062045,
+   "records": 695,
+   "year_median_records_per_MB_loo": 250.95,
+   "predicted_records": 732.8,
+   "ratio_actual_to_predicted": 0.9484,
+   "below_threshold": false
+  },
+  {
+   "ts": "2026-06-02T14:45:00Z",
+   "bytes": 6322180,
+   "records": 1510,
+   "year_median_records_per_MB_loo": 250.59,
+   "predicted_records": 1510.9,
+   "ratio_actual_to_predicted": 0.9994,
+   "below_threshold": false
+  },
+  {
+   "ts": "2026-06-24T07:15:00Z",
+   "bytes": 3683883,
+   "records": 864,
+   "year_median_records_per_MB_loo": 250.95,
+   "predicted_records": 881.6,
+   "ratio_actual_to_predicted": 0.98,
+   "below_threshold": false
+  },
+  {
+   "ts": "2026-06-26T01:30:00Z",
+   "bytes": 3964388,
+   "records": 908,
+   "year_median_records_per_MB_loo": 250.95,
+   "predicted_records": 948.8,
+   "ratio_actual_to_predicted": 0.957,
+   "below_threshold": false
+  }
+ ],
+ "q6_detail": [
+  {
+   "first": "2015-11-10T23:15:00Z",
+   "second": "2015-11-10T23:30:00Z",
+   "first_records": 3625,
+   "second_records": 3653,
+   "first_docids": 3625,
+   "second_docids": 3653,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2016-07-02T18:30:00Z",
+   "second": "2016-07-02T18:45:00Z",
+   "first_records": 2378,
+   "second_records": 2193,
+   "first_docids": 2378,
+   "second_docids": 2193,
+   "shared": 1,
+   "overlap_of_second": 0.00046,
+   "above_threshold": false
+  },
+  {
+   "first": "2016-11-20T14:00:00Z",
+   "second": "2016-11-20T14:15:00Z",
+   "first_records": 1711,
+   "second_records": 1774,
+   "first_docids": 1711,
+   "second_docids": 1774,
+   "shared": 1,
+   "overlap_of_second": 0.00056,
+   "above_threshold": false
+  },
+  {
+   "first": "2017-01-01T16:45:00Z",
+   "second": "2017-01-01T17:00:00Z",
+   "first_records": 1775,
+   "second_records": 1654,
+   "first_docids": 1775,
+   "second_docids": 1654,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2017-04-02T15:00:00Z",
+   "second": "2017-04-02T15:15:00Z",
+   "first_records": 2364,
+   "second_records": 2024,
+   "first_docids": 2364,
+   "second_docids": 2024,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2017-05-27T10:45:00Z",
+   "second": "2017-05-27T11:00:00Z",
+   "first_records": 1776,
+   "second_records": 1474,
+   "first_docids": 1775,
+   "second_docids": 1473,
+   "shared": 1,
+   "overlap_of_second": 0.00068,
+   "above_threshold": false
+  },
+  {
+   "first": "2017-10-16T01:00:00Z",
+   "second": "2017-10-16T01:15:00Z",
+   "first_records": 1585,
+   "second_records": 1752,
+   "first_docids": 1585,
+   "second_docids": 1752,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2018-06-05T20:30:00Z",
+   "second": "2018-06-05T20:45:00Z",
+   "first_records": 3573,
+   "second_records": 3912,
+   "first_docids": 3573,
+   "second_docids": 3912,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2019-03-11T15:45:00Z",
+   "second": "2019-03-11T16:00:00Z",
+   "first_records": 3238,
+   "second_records": 3175,
+   "first_docids": 3238,
+   "second_docids": 3175,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2019-03-23T20:45:00Z",
+   "second": "2019-03-23T21:00:00Z",
+   "first_records": 1623,
+   "second_records": 1599,
+   "first_docids": 1623,
+   "second_docids": 1599,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2019-10-02T05:45:00Z",
+   "second": "2019-10-02T06:00:00Z",
+   "first_records": 1428,
+   "second_records": 1217,
+   "first_docids": 1428,
+   "second_docids": 1217,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2020-02-01T20:15:00Z",
+   "second": "2020-02-01T20:30:00Z",
+   "first_records": 1064,
+   "second_records": 1183,
+   "first_docids": 1064,
+   "second_docids": 1183,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2020-08-18T21:00:00Z",
+   "second": "2020-08-18T21:15:00Z",
+   "first_records": 2226,
+   "second_records": 2193,
+   "first_docids": 2226,
+   "second_docids": 2193,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2020-09-08T04:45:00Z",
+   "second": "2020-09-08T05:00:00Z",
+   "first_records": 1025,
+   "second_records": 935,
+   "first_docids": 1025,
+   "second_docids": 935,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2021-01-22T14:15:00Z",
+   "second": "2021-01-22T14:30:00Z",
+   "first_records": 1840,
+   "second_records": 2014,
+   "first_docids": 1840,
+   "second_docids": 2014,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2021-05-20T03:15:00Z",
+   "second": "2021-05-20T03:30:00Z",
+   "first_records": 1245,
+   "second_records": 1150,
+   "first_docids": 1245,
+   "second_docids": 1150,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2021-10-31T13:45:00Z",
+   "second": "2021-10-31T14:00:00Z",
+   "first_records": 928,
+   "second_records": 962,
+   "first_docids": 928,
+   "second_docids": 962,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2022-05-22T22:45:00Z",
+   "second": "2022-05-22T23:00:00Z",
+   "first_records": 829,
+   "second_records": 811,
+   "first_docids": 829,
+   "second_docids": 811,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2022-06-09T15:30:00Z",
+   "second": "2022-06-09T15:45:00Z",
+   "first_records": 1736,
+   "second_records": 1727,
+   "first_docids": 1736,
+   "second_docids": 1727,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2022-07-18T20:15:00Z",
+   "second": "2022-07-18T20:30:00Z",
+   "first_records": 1431,
+   "second_records": 1517,
+   "first_docids": 1431,
+   "second_docids": 1517,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2022-08-13T10:30:00Z",
+   "second": "2022-08-13T10:45:00Z",
+   "first_records": 536,
+   "second_records": 625,
+   "first_docids": 536,
+   "second_docids": 625,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2022-11-24T21:30:00Z",
+   "second": "2022-11-24T21:45:00Z",
+   "first_records": 871,
+   "second_records": 870,
+   "first_docids": 871,
+   "second_docids": 870,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2023-03-11T18:00:00Z",
+   "second": "2023-03-11T18:15:00Z",
+   "first_records": 854,
+   "second_records": 728,
+   "first_docids": 854,
+   "second_docids": 728,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2024-04-27T16:15:00Z",
+   "second": "2024-04-27T16:30:00Z",
+   "first_records": 1097,
+   "second_records": 1154,
+   "first_docids": 1097,
+   "second_docids": 1154,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2024-10-07T13:00:00Z",
+   "second": "2024-10-07T13:15:00Z",
+   "first_records": 1244,
+   "second_records": 1790,
+   "first_docids": 1244,
+   "second_docids": 1790,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2025-10-29T08:15:00Z",
+   "second": "2025-10-29T08:30:00Z",
+   "first_records": 1208,
+   "second_records": 1097,
+   "first_docids": 1208,
+   "second_docids": 1097,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2025-11-16T12:30:00Z",
+   "second": "2025-11-16T12:45:00Z",
+   "first_records": 636,
+   "second_records": 539,
+   "first_docids": 636,
+   "second_docids": 539,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2025-12-08T13:00:00Z",
+   "second": "2025-12-08T13:15:00Z",
+   "first_records": 1188,
+   "second_records": 1358,
+   "first_docids": 1188,
+   "second_docids": 1358,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2026-03-03T06:30:00Z",
+   "second": "2026-03-03T06:45:00Z",
+   "first_records": 1046,
+   "second_records": 826,
+   "first_docids": 1046,
+   "second_docids": 826,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  },
+  {
+   "first": "2026-03-23T08:30:00Z",
+   "second": "2026-03-23T08:45:00Z",
+   "first_records": 985,
+   "second_records": 976,
+   "first_docids": 985,
+   "second_docids": 976,
+   "shared": 0,
+   "overlap_of_second": 0.0,
+   "above_threshold": false
+  }
+ ],
+ "within_file_duplicate_docids": [
+  {
+   "ts": "2015-11-10T23:15:00Z",
+   "records": 3625,
+   "distinct_docids": 3625,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2015-11-10T23:30:00Z",
+   "records": 3653,
+   "distinct_docids": 3653,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2016-07-02T18:30:00Z",
+   "records": 2378,
+   "distinct_docids": 2378,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2016-07-02T18:45:00Z",
+   "records": 2193,
+   "distinct_docids": 2193,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2016-11-20T14:00:00Z",
+   "records": 1711,
+   "distinct_docids": 1711,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2016-11-20T14:15:00Z",
+   "records": 1774,
+   "distinct_docids": 1774,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2017-01-01T16:45:00Z",
+   "records": 1775,
+   "distinct_docids": 1775,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2017-01-01T17:00:00Z",
+   "records": 1654,
+   "distinct_docids": 1654,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2017-04-02T15:00:00Z",
+   "records": 2364,
+   "distinct_docids": 2364,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2017-04-02T15:15:00Z",
+   "records": 2024,
+   "distinct_docids": 2024,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2017-05-27T10:45:00Z",
+   "records": 1776,
+   "distinct_docids": 1775,
+   "dup_fraction": 0.00056
+  },
+  {
+   "ts": "2017-05-27T11:00:00Z",
+   "records": 1474,
+   "distinct_docids": 1473,
+   "dup_fraction": 0.00068
+  },
+  {
+   "ts": "2017-10-16T01:00:00Z",
+   "records": 1585,
+   "distinct_docids": 1585,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2017-10-16T01:15:00Z",
+   "records": 1752,
+   "distinct_docids": 1752,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2018-06-05T20:30:00Z",
+   "records": 3573,
+   "distinct_docids": 3573,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2018-06-05T20:45:00Z",
+   "records": 3912,
+   "distinct_docids": 3912,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2019-03-11T15:45:00Z",
+   "records": 3238,
+   "distinct_docids": 3238,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2019-03-11T16:00:00Z",
+   "records": 3175,
+   "distinct_docids": 3175,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2019-03-23T20:45:00Z",
+   "records": 1623,
+   "distinct_docids": 1623,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2019-03-23T21:00:00Z",
+   "records": 1599,
+   "distinct_docids": 1599,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2019-10-02T05:45:00Z",
+   "records": 1428,
+   "distinct_docids": 1428,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2019-10-02T06:00:00Z",
+   "records": 1217,
+   "distinct_docids": 1217,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2020-02-01T20:15:00Z",
+   "records": 1064,
+   "distinct_docids": 1064,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2020-02-01T20:30:00Z",
+   "records": 1183,
+   "distinct_docids": 1183,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2020-08-18T21:00:00Z",
+   "records": 2226,
+   "distinct_docids": 2226,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2020-08-18T21:15:00Z",
+   "records": 2193,
+   "distinct_docids": 2193,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2020-09-08T04:45:00Z",
+   "records": 1025,
+   "distinct_docids": 1025,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2020-09-08T05:00:00Z",
+   "records": 935,
+   "distinct_docids": 935,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2021-01-22T14:15:00Z",
+   "records": 1840,
+   "distinct_docids": 1840,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2021-01-22T14:30:00Z",
+   "records": 2014,
+   "distinct_docids": 2014,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2021-05-20T03:15:00Z",
+   "records": 1245,
+   "distinct_docids": 1245,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2021-05-20T03:30:00Z",
+   "records": 1150,
+   "distinct_docids": 1150,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2021-10-31T13:45:00Z",
+   "records": 928,
+   "distinct_docids": 928,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2021-10-31T14:00:00Z",
+   "records": 962,
+   "distinct_docids": 962,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2022-05-22T22:45:00Z",
+   "records": 829,
+   "distinct_docids": 829,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2022-05-22T23:00:00Z",
+   "records": 811,
+   "distinct_docids": 811,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2022-06-09T15:30:00Z",
+   "records": 1736,
+   "distinct_docids": 1736,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2022-06-09T15:45:00Z",
+   "records": 1727,
+   "distinct_docids": 1727,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2022-07-18T20:15:00Z",
+   "records": 1431,
+   "distinct_docids": 1431,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2022-07-18T20:30:00Z",
+   "records": 1517,
+   "distinct_docids": 1517,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2022-08-13T10:30:00Z",
+   "records": 536,
+   "distinct_docids": 536,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2022-08-13T10:45:00Z",
+   "records": 625,
+   "distinct_docids": 625,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2022-11-24T21:30:00Z",
+   "records": 871,
+   "distinct_docids": 871,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2022-11-24T21:45:00Z",
+   "records": 870,
+   "distinct_docids": 870,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2023-03-11T18:00:00Z",
+   "records": 854,
+   "distinct_docids": 854,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2023-03-11T18:15:00Z",
+   "records": 728,
+   "distinct_docids": 728,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2024-04-27T16:15:00Z",
+   "records": 1097,
+   "distinct_docids": 1097,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2024-04-27T16:30:00Z",
+   "records": 1154,
+   "distinct_docids": 1154,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2024-10-07T13:00:00Z",
+   "records": 1244,
+   "distinct_docids": 1244,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2024-10-07T13:15:00Z",
+   "records": 1790,
+   "distinct_docids": 1790,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2025-10-29T08:15:00Z",
+   "records": 1208,
+   "distinct_docids": 1208,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2025-10-29T08:30:00Z",
+   "records": 1097,
+   "distinct_docids": 1097,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2025-11-16T12:30:00Z",
+   "records": 636,
+   "distinct_docids": 636,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2025-11-16T12:45:00Z",
+   "records": 539,
+   "distinct_docids": 539,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2025-12-08T13:00:00Z",
+   "records": 1188,
+   "distinct_docids": 1188,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2025-12-08T13:15:00Z",
+   "records": 1358,
+   "distinct_docids": 1358,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2026-03-03T06:30:00Z",
+   "records": 1046,
+   "distinct_docids": 1046,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2026-03-03T06:45:00Z",
+   "records": 826,
+   "distinct_docids": 826,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2026-03-23T08:30:00Z",
+   "records": 985,
+   "distinct_docids": 985,
+   "dup_fraction": 0.0
+  },
+  {
+   "ts": "2026-03-23T08:45:00Z",
+   "records": 976,
+   "distinct_docids": 976,
+   "dup_fraction": 0.0
+  }
+ ]
+}

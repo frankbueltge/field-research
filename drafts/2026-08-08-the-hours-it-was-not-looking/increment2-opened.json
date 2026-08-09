@@ -1,0 +1,6974 @@
+{
+ "run_utc": "2026-08-09T03:43:01Z",
+ "seed": 20260809,
+ "manifest": {
+  "path": "/tmp/claude-0/-home-user-field-research/e6f37bca-e106-57b9-b3a8-628fdcb6f7ff/scratchpad/mfl.txt",
+  "gkg_cycles": 394878
+ },
+ "screens": {
+  "pre_registered": 3137,
+  "same_minute": 3136,
+  "intersection": 3125,
+  "either": 3148,
+  "unflagged_present": 391730
+ },
+ "q8_manifest_stability": {
+  "checked": 3137,
+  "identical": 3137,
+  "differing": [],
+  "absent_from_new_manifest": []
+ },
+ "samples": {
+  "A": [
+   "2015-04-06T19:45:00Z",
+   "2015-04-11T16:00:00Z",
+   "2015-04-14T08:15:00Z",
+   "2015-05-27T22:00:00Z",
+   "2015-08-20T04:30:00Z",
+   "2016-01-09T17:45:00Z",
+   "2016-02-24T17:45:00Z",
+   "2016-04-10T10:30:00Z",
+   "2016-06-13T15:00:00Z",
+   "2016-09-29T22:15:00Z",
+   "2016-10-13T15:00:00Z",
+   "2016-11-03T09:45:00Z",
+   "2017-03-25T08:00:00Z",
+   "2017-04-01T10:30:00Z",
+   "2017-04-02T21:00:00Z",
+   "2017-04-11T22:30:00Z",
+   "2017-04-22T05:00:00Z",
+   "2017-05-07T15:30:00Z",
+   "2017-05-17T03:30:00Z",
+   "2017-05-26T07:15:00Z",
+   "2017-06-04T10:15:00Z",
+   "2017-06-06T11:00:00Z",
+   "2017-06-07T15:30:00Z",
+   "2017-06-15T11:30:00Z",
+   "2017-06-20T09:45:00Z",
+   "2017-06-21T07:45:00Z",
+   "2017-06-21T17:30:00Z",
+   "2017-06-21T17:45:00Z",
+   "2017-06-25T10:30:00Z",
+   "2017-06-28T15:00:00Z",
+   "2017-06-29T04:00:00Z",
+   "2017-06-29T09:30:00Z",
+   "2017-06-30T09:00:00Z",
+   "2017-06-30T13:15:00Z",
+   "2017-06-30T16:15:00Z",
+   "2017-07-14T18:15:00Z",
+   "2017-07-22T08:00:00Z",
+   "2017-07-23T14:45:00Z",
+   "2017-08-01T15:00:00Z",
+   "2017-08-03T18:15:00Z",
+   "2017-08-04T19:45:00Z",
+   "2017-08-05T11:15:00Z",
+   "2017-08-12T14:15:00Z",
+   "2017-08-12T18:45:00Z",
+   "2017-08-16T06:00:00Z",
+   "2017-08-16T17:00:00Z",
+   "2017-08-26T16:15:00Z",
+   "2017-08-27T14:15:00Z",
+   "2017-08-30T11:15:00Z",
+   "2017-09-05T12:15:00Z",
+   "2017-09-07T06:15:00Z",
+   "2017-09-07T20:00:00Z",
+   "2017-09-15T19:00:00Z",
+   "2017-10-03T11:30:00Z",
+   "2017-10-06T10:30:00Z",
+   "2017-10-12T15:30:00Z",
+   "2017-10-15T12:30:00Z",
+   "2017-10-15T13:00:00Z",
+   "2017-10-16T14:30:00Z",
+   "2017-10-21T05:45:00Z",
+   "2017-10-25T18:00:00Z",
+   "2017-12-06T08:30:00Z",
+   "2018-01-31T08:15:00Z",
+   "2018-02-13T09:45:00Z",
+   "2018-02-27T17:00:00Z",
+   "2018-04-02T18:30:00Z",
+   "2018-04-09T11:45:00Z",
+   "2018-04-23T17:15:00Z",
+   "2019-06-23T11:45:00Z",
+   "2019-06-23T13:15:00Z",
+   "2020-10-11T00:45:00Z",
+   "2022-11-11T04:30:00Z",
+   "2022-11-11T06:15:00Z",
+   "2022-11-11T10:00:00Z",
+   "2022-11-11T11:15:00Z",
+   "2022-11-11T17:15:00Z",
+   "2023-03-21T22:15:00Z",
+   "2023-03-21T23:00:00Z",
+   "2023-03-22T00:30:00Z",
+   "2025-07-02T02:30:00Z"
+  ],
+  "B": [
+   [
+    "2015-04-06T19:45:00Z",
+    "2015-04-06T19:30:00Z"
+   ],
+   [
+    "2015-04-11T16:00:00Z",
+    "2015-04-11T15:45:00Z"
+   ],
+   [
+    "2015-04-14T08:15:00Z",
+    "2015-04-14T08:00:00Z"
+   ],
+   [
+    "2015-05-27T22:00:00Z",
+    "2015-05-27T21:45:00Z"
+   ],
+   [
+    "2015-08-20T04:30:00Z",
+    "2015-08-20T04:15:00Z"
+   ],
+   [
+    "2016-01-09T17:45:00Z",
+    "2016-01-09T17:30:00Z"
+   ],
+   [
+    "2016-02-24T17:45:00Z",
+    "2016-02-24T17:30:00Z"
+   ],
+   [
+    "2016-04-10T10:30:00Z",
+    "2016-04-10T10:15:00Z"
+   ],
+   [
+    "2016-06-13T15:00:00Z",
+    "2016-06-13T14:45:00Z"
+   ],
+   [
+    "2016-09-29T22:15:00Z",
+    "2016-09-29T22:00:00Z"
+   ],
+   [
+    "2016-10-13T15:00:00Z",
+    "2016-10-13T14:45:00Z"
+   ],
+   [
+    "2016-11-03T09:45:00Z",
+    "2016-11-03T09:30:00Z"
+   ],
+   [
+    "2017-03-25T08:00:00Z",
+    "2017-03-25T07:45:00Z"
+   ],
+   [
+    "2017-04-01T10:30:00Z",
+    "2017-04-01T10:00:00Z"
+   ],
+   [
+    "2017-04-02T21:00:00Z",
+    "2017-04-02T20:45:00Z"
+   ],
+   [
+    "2017-04-11T22:30:00Z",
+    "2017-04-11T22:15:00Z"
+   ],
+   [
+    "2017-04-22T05:00:00Z",
+    "2017-04-22T04:45:00Z"
+   ],
+   [
+    "2017-05-07T15:30:00Z",
+    "2017-05-07T15:00:00Z"
+   ],
+   [
+    "2017-05-17T03:30:00Z",
+    "2017-05-17T03:15:00Z"
+   ],
+   [
+    "2017-05-26T07:15:00Z",
+    "2017-05-26T07:00:00Z"
+   ],
+   [
+    "2017-06-04T10:15:00Z",
+    "2017-06-04T10:00:00Z"
+   ],
+   [
+    "2017-06-06T11:00:00Z",
+    "2017-06-06T10:45:00Z"
+   ],
+   [
+    "2017-06-07T15:30:00Z",
+    "2017-06-07T15:15:00Z"
+   ],
+   [
+    "2017-06-15T11:30:00Z",
+    "2017-06-15T11:15:00Z"
+   ],
+   [
+    "2017-06-20T09:45:00Z",
+    "2017-06-20T09:30:00Z"
+   ],
+   [
+    "2017-06-21T07:45:00Z",
+    "2017-06-21T07:30:00Z"
+   ],
+   [
+    "2017-06-21T17:30:00Z",
+    "2017-06-21T17:15:00Z"
+   ],
+   [
+    "2017-06-21T17:45:00Z",
+    "2017-06-21T17:15:00Z"
+   ],
+   [
+    "2017-06-25T10:30:00Z",
+    "2017-06-25T10:15:00Z"
+   ],
+   [
+    "2017-06-28T15:00:00Z",
+    "2017-06-28T14:45:00Z"
+   ],
+   [
+    "2017-06-29T04:00:00Z",
+    "2017-06-29T03:15:00Z"
+   ],
+   [
+    "2017-06-29T09:30:00Z",
+    "2017-06-29T09:15:00Z"
+   ],
+   [
+    "2017-06-30T09:00:00Z",
+    "2017-06-30T08:45:00Z"
+   ],
+   [
+    "2017-06-30T13:15:00Z",
+    "2017-06-30T13:00:00Z"
+   ],
+   [
+    "2017-06-30T16:15:00Z",
+    "2017-06-30T16:00:00Z"
+   ],
+   [
+    "2017-07-14T18:15:00Z",
+    "2017-07-14T17:30:00Z"
+   ],
+   [
+    "2017-07-22T08:00:00Z",
+    "2017-07-22T07:45:00Z"
+   ],
+   [
+    "2017-07-23T14:45:00Z",
+    "2017-07-23T14:30:00Z"
+   ],
+   [
+    "2017-08-01T15:00:00Z",
+    "2017-08-01T14:45:00Z"
+   ],
+   [
+    "2017-08-03T18:15:00Z",
+    "2017-08-03T17:45:00Z"
+   ],
+   [
+    "2017-08-04T19:45:00Z",
+    "2017-08-04T19:30:00Z"
+   ],
+   [
+    "2017-08-05T11:15:00Z",
+    "2017-08-05T11:00:00Z"
+   ],
+   [
+    "2017-08-12T14:15:00Z",
+    "2017-08-12T14:00:00Z"
+   ],
+   [
+    "2017-08-12T18:45:00Z",
+    "2017-08-12T18:30:00Z"
+   ],
+   [
+    "2017-08-16T06:00:00Z",
+    "2017-08-16T05:45:00Z"
+   ],
+   [
+    "2017-08-16T17:00:00Z",
+    "2017-08-16T16:45:00Z"
+   ],
+   [
+    "2017-08-26T16:15:00Z",
+    "2017-08-26T16:00:00Z"
+   ],
+   [
+    "2017-08-27T14:15:00Z",
+    "2017-08-27T14:00:00Z"
+   ],
+   [
+    "2017-08-30T11:15:00Z",
+    "2017-08-30T11:00:00Z"
+   ],
+   [
+    "2017-09-05T12:15:00Z",
+    "2017-09-05T11:45:00Z"
+   ],
+   [
+    "2017-09-07T06:15:00Z",
+    "2017-09-07T05:45:00Z"
+   ],
+   [
+    "2017-09-07T20:00:00Z",
+    "2017-09-07T19:45:00Z"
+   ],
+   [
+    "2017-09-15T19:00:00Z",
+    "2017-09-15T18:45:00Z"
+   ],
+   [
+    "2017-10-03T11:30:00Z",
+    "2017-10-03T11:15:00Z"
+   ],
+   [
+    "2017-10-06T10:30:00Z",
+    "2017-10-06T10:15:00Z"
+   ],
+   [
+    "2017-10-12T15:30:00Z",
+    "2017-10-12T15:15:00Z"
+   ],
+   [
+    "2017-10-15T12:30:00Z",
+    "2017-10-15T12:15:00Z"
+   ],
+   [
+    "2017-10-15T13:00:00Z",
+    "2017-10-15T12:45:00Z"
+   ],
+   [
+    "2017-10-16T14:30:00Z",
+    "2017-10-16T14:15:00Z"
+   ],
+   [
+    "2017-10-21T05:45:00Z",
+    "2017-10-21T05:30:00Z"
+   ],
+   [
+    "2017-10-25T18:00:00Z",
+    "2017-10-25T17:45:00Z"
+   ],
+   [
+    "2017-12-06T08:30:00Z",
+    "2017-12-06T08:15:00Z"
+   ],
+   [
+    "2018-01-31T08:15:00Z",
+    "2018-01-31T08:00:00Z"
+   ],
+   [
+    "2018-02-13T09:45:00Z",
+    "2018-02-13T09:30:00Z"
+   ],
+   [
+    "2018-02-27T17:00:00Z",
+    "2018-02-27T16:45:00Z"
+   ],
+   [
+    "2018-04-02T18:30:00Z",
+    "2018-04-02T18:15:00Z"
+   ],
+   [
+    "2018-04-09T11:45:00Z",
+    "2018-04-09T11:30:00Z"
+   ],
+   [
+    "2018-04-23T17:15:00Z",
+    "2018-04-23T17:00:00Z"
+   ],
+   [
+    "2019-06-23T11:45:00Z",
+    "2019-06-23T11:30:00Z"
+   ],
+   [
+    "2019-06-23T13:15:00Z",
+    "2019-06-23T13:00:00Z"
+   ],
+   [
+    "2020-10-11T00:45:00Z",
+    "2020-10-11T00:30:00Z"
+   ],
+   [
+    "2022-11-11T04:30:00Z",
+    "2022-11-10T21:45:00Z"
+   ],
+   [
+    "2022-11-11T06:15:00Z",
+    "2022-11-10T21:45:00Z"
+   ],
+   [
+    "2022-11-11T10:00:00Z",
+    "2022-11-10T21:45:00Z"
+   ],
+   [
+    "2022-11-11T11:15:00Z",
+    "2022-11-10T21:45:00Z"
+   ],
+   [
+    "2022-11-11T17:15:00Z",
+    "2022-11-10T21:45:00Z"
+   ],
+   [
+    "2023-03-21T22:15:00Z",
+    "2023-03-21T21:45:00Z"
+   ],
+   [
+    "2023-03-21T23:00:00Z",
+    "2023-03-21T21:45:00Z"
+   ],
+   [
+    "2023-03-22T00:30:00Z",
+    "2023-03-22T00:15:00Z"
+   ],
+   [
+    "2025-07-02T02:30:00Z",
+    "2025-07-02T02:15:00Z"
+   ]
+  ],
+  "B_unmatched": [],
+  "C": [
+   "2015-06-15T12:15:00Z",
+   "2015-07-05T22:30:00Z",
+   "2015-07-30T13:15:00Z",
+   "2015-08-15T17:15:00Z",
+   "2015-09-30T19:30:00Z",
+   "2016-01-11T10:30:00Z",
+   "2016-04-09T20:15:00Z",
+   "2016-09-29T20:15:00Z",
+   "2016-11-05T10:00:00Z",
+   "2017-01-04T10:45:00Z",
+   "2017-04-06T15:00:00Z",
+   "2017-10-31T12:15:00Z",
+   "2018-01-10T19:00:00Z",
+   "2018-02-14T04:45:00Z",
+   "2018-03-13T07:30:00Z",
+   "2018-04-16T06:45:00Z",
+   "2018-04-20T11:45:00Z",
+   "2018-05-13T00:15:00Z",
+   "2018-05-15T10:45:00Z",
+   "2018-05-24T13:45:00Z",
+   "2018-06-22T00:30:00Z",
+   "2018-07-20T22:00:00Z",
+   "2018-08-01T10:15:00Z",
+   "2018-08-25T17:15:00Z",
+   "2018-12-07T23:45:00Z",
+   "2018-12-14T04:45:00Z",
+   "2019-01-20T13:30:00Z",
+   "2019-02-02T16:00:00Z",
+   "2019-04-13T23:30:00Z",
+   "2019-04-22T15:00:00Z",
+   "2019-11-16T06:00:00Z",
+   "2019-12-28T03:00:00Z",
+   "2020-02-13T11:45:00Z",
+   "2020-02-23T05:45:00Z",
+   "2020-03-23T10:45:00Z",
+   "2020-04-26T21:45:00Z",
+   "2020-05-23T19:45:00Z",
+   "2021-01-31T22:30:00Z",
+   "2021-02-22T18:45:00Z",
+   "2021-03-12T09:00:00Z",
+   "2021-08-01T10:15:00Z",
+   "2021-09-09T17:15:00Z",
+   "2022-02-04T10:00:00Z",
+   "2022-02-20T16:30:00Z",
+   "2022-04-08T14:15:00Z",
+   "2022-04-23T08:00:00Z",
+   "2022-05-05T00:15:00Z",
+   "2022-07-23T10:30:00Z",
+   "2022-09-27T01:15:00Z",
+   "2022-10-26T17:30:00Z",
+   "2023-04-04T23:15:00Z",
+   "2023-08-01T02:45:00Z",
+   "2023-08-15T21:45:00Z",
+   "2023-10-22T06:00:00Z",
+   "2023-12-16T05:15:00Z",
+   "2024-04-04T01:45:00Z",
+   "2024-04-22T21:45:00Z",
+   "2024-05-07T08:00:00Z",
+   "2024-05-21T17:45:00Z",
+   "2024-06-02T02:00:00Z",
+   "2024-11-20T16:45:00Z",
+   "2025-01-02T21:00:00Z",
+   "2025-02-12T18:45:00Z",
+   "2025-03-09T14:30:00Z",
+   "2025-04-15T03:15:00Z",
+   "2025-09-03T03:15:00Z",
+   "2025-09-06T11:30:00Z",
+   "2025-10-11T03:30:00Z",
+   "2025-10-27T01:30:00Z",
+   "2025-12-25T23:00:00Z",
+   "2025-12-30T09:00:00Z",
+   "2026-02-01T19:45:00Z",
+   "2026-02-05T04:30:00Z",
+   "2026-02-15T13:00:00Z",
+   "2026-03-29T14:15:00Z",
+   "2026-03-30T01:45:00Z",
+   "2026-05-15T04:00:00Z",
+   "2026-06-02T14:45:00Z",
+   "2026-06-24T07:15:00Z",
+   "2026-06-26T01:30:00Z"
+  ],
+  "D_pair_first": [
+   "2015-11-10T23:15:00Z",
+   "2016-07-02T18:30:00Z",
+   "2016-11-20T14:00:00Z",
+   "2017-01-01T16:45:00Z",
+   "2017-04-02T15:00:00Z",
+   "2017-05-27T10:45:00Z",
+   "2017-10-16T01:00:00Z",
+   "2018-06-05T20:30:00Z",
+   "2019-03-11T15:45:00Z",
+   "2019-03-23T20:45:00Z",
+   "2019-10-02T05:45:00Z",
+   "2020-02-01T20:15:00Z",
+   "2020-08-18T21:00:00Z",
+   "2020-09-08T04:45:00Z",
+   "2021-01-22T14:15:00Z",
+   "2021-05-20T03:15:00Z",
+   "2021-10-31T13:45:00Z",
+   "2022-05-22T22:45:00Z",
+   "2022-06-09T15:30:00Z",
+   "2022-07-18T20:15:00Z",
+   "2022-08-13T10:30:00Z",
+   "2022-11-24T21:30:00Z",
+   "2023-03-11T18:00:00Z",
+   "2024-04-27T16:15:00Z",
+   "2024-10-07T13:00:00Z",
+   "2025-10-29T08:15:00Z",
+   "2025-11-16T12:30:00Z",
+   "2025-12-08T13:00:00Z",
+   "2026-03-03T06:30:00Z",
+   "2026-03-23T08:30:00Z"
+  ]
+ },
+ "downloads": [
+  {
+   "ts": "2015-04-06T19:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20150406194500.gkg.csv.zip",
+   "manifest_size": 8455,
+   "manifest_md5": "1eedab1422901a1fc42cbf1f91bb92fd",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 8455,
+   "md5_received": "1eedab1422901a1fc42cbf1f91bb92fd",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20150406194500.gkg.csv"
+   ],
+   "inner_bytes": 25093,
+   "records": 2,
+   "seconds": 0.59
+  },
+  {
+   "ts": "2015-04-11T16:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20150411160000.gkg.csv.zip",
+   "manifest_size": 19547,
+   "manifest_md5": "aaefbbf89a07ea1b5ba5e11af38f6595",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 19547,
+   "md5_received": "aaefbbf89a07ea1b5ba5e11af38f6595",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20150411160000.gkg.csv"
+   ],
+   "inner_bytes": 63513,
+   "records": 6,
+   "seconds": 0.39
+  },
+  {
+   "ts": "2015-04-14T08:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20150414081500.gkg.csv.zip",
+   "manifest_size": 49669,
+   "manifest_md5": "a1a61778e5bbe952d14b5e88163bc198",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 49669,
+   "md5_received": "a1a61778e5bbe952d14b5e88163bc198",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20150414081500.gkg.csv"
+   ],
+   "inner_bytes": 161532,
+   "records": 15,
+   "seconds": 0.38
+  },
+  {
+   "ts": "2015-05-27T22:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20150527220000.gkg.csv.zip",
+   "manifest_size": 9496,
+   "manifest_md5": "09171945fbc27d3b9ca5554f337720c6",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9496,
+   "md5_received": "09171945fbc27d3b9ca5554f337720c6",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20150527220000.gkg.csv"
+   ],
+   "inner_bytes": 28648,
+   "records": 3,
+   "seconds": 0.36
+  },
+  {
+   "ts": "2015-08-20T04:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20150820043000.gkg.csv.zip",
+   "manifest_size": 4519,
+   "manifest_md5": "ae34b7f737e89186d2b0faced1bdcc1b",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 4519,
+   "md5_received": "ae34b7f737e89186d2b0faced1bdcc1b",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20150820043000.gkg.csv"
+   ],
+   "inner_bytes": 13393,
+   "records": 1,
+   "seconds": 0.44
+  },
+  {
+   "ts": "2016-01-09T17:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20160109174500.gkg.csv.zip",
+   "manifest_size": 14560,
+   "manifest_md5": "3fa3a8ecd3a82354db6181a6324c4b26",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 14560,
+   "md5_received": "3fa3a8ecd3a82354db6181a6324c4b26",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20160109174500.gkg.csv"
+   ],
+   "inner_bytes": 46040,
+   "records": 6,
+   "seconds": 0.28
+  },
+  {
+   "ts": "2016-02-24T17:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20160224174500.gkg.csv.zip",
+   "manifest_size": 23016,
+   "manifest_md5": "95825b51a2040790b13f652ff15faa01",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 23016,
+   "md5_received": "95825b51a2040790b13f652ff15faa01",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20160224174500.gkg.csv"
+   ],
+   "inner_bytes": 72282,
+   "records": 6,
+   "seconds": 0.3
+  },
+  {
+   "ts": "2016-04-10T10:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20160410103000.gkg.csv.zip",
+   "manifest_size": 36534,
+   "manifest_md5": "5a93e82340b1b7cdfa3623782e2c921f",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 36534,
+   "md5_received": "5a93e82340b1b7cdfa3623782e2c921f",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20160410103000.gkg.csv"
+   ],
+   "inner_bytes": 129428,
+   "records": 15,
+   "seconds": 0.34
+  },
+  {
+   "ts": "2016-06-13T15:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20160613150000.gkg.csv.zip",
+   "manifest_size": 32066,
+   "manifest_md5": "3322d6e40e7526eec2bb12360c3e9358",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 32066,
+   "md5_received": "3322d6e40e7526eec2bb12360c3e9358",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20160613150000.gkg.csv"
+   ],
+   "inner_bytes": 109441,
+   "records": 9,
+   "seconds": 0.21
+  },
+  {
+   "ts": "2016-09-29T22:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20160929221500.gkg.csv.zip",
+   "manifest_size": 1511693,
+   "manifest_md5": "5fb8e7b48300418dd94bc166900ac96f",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 1511693,
+   "md5_received": "5fb8e7b48300418dd94bc166900ac96f",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20160929221500.gkg.csv"
+   ],
+   "inner_bytes": 4848957,
+   "records": 404,
+   "seconds": 0.27
+  },
+  {
+   "ts": "2016-10-13T15:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20161013150000.gkg.csv.zip",
+   "manifest_size": 20311,
+   "manifest_md5": "fc9c295ef5ee7a5e3a4285147696885d",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 20311,
+   "md5_received": "fc9c295ef5ee7a5e3a4285147696885d",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20161013150000.gkg.csv"
+   ],
+   "inner_bytes": 67791,
+   "records": 9,
+   "seconds": 0.2
+  },
+  {
+   "ts": "2016-11-03T09:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20161103094500.gkg.csv.zip",
+   "manifest_size": 79430,
+   "manifest_md5": "8dcb40334d9e7ae7ae487fb878377100",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 79430,
+   "md5_received": "8dcb40334d9e7ae7ae487fb878377100",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20161103094500.gkg.csv"
+   ],
+   "inner_bytes": 270628,
+   "records": 26,
+   "seconds": 0.12
+  },
+  {
+   "ts": "2017-03-25T08:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170325080000.gkg.csv.zip",
+   "manifest_size": 20010,
+   "manifest_md5": "9e3881d2241282bc6136ee24f6c91b7c",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 20010,
+   "md5_received": "9e3881d2241282bc6136ee24f6c91b7c",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170325080000.gkg.csv"
+   ],
+   "inner_bytes": 67146,
+   "records": 7,
+   "seconds": 0.15
+  },
+  {
+   "ts": "2017-04-01T10:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170401103000.gkg.csv.zip",
+   "manifest_size": 13005,
+   "manifest_md5": "51fb31397682dbdf9cb4e5b01285c1a5",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 13005,
+   "md5_received": "51fb31397682dbdf9cb4e5b01285c1a5",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170401103000.gkg.csv"
+   ],
+   "inner_bytes": 42432,
+   "records": 4,
+   "seconds": 0.18
+  },
+  {
+   "ts": "2017-04-02T21:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170402210000.gkg.csv.zip",
+   "manifest_size": 26612,
+   "manifest_md5": "a56c610389355046734550f1f0631241",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 26612,
+   "md5_received": "a56c610389355046734550f1f0631241",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170402210000.gkg.csv"
+   ],
+   "inner_bytes": 94144,
+   "records": 6,
+   "seconds": 0.19
+  },
+  {
+   "ts": "2017-04-11T22:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170411223000.gkg.csv.zip",
+   "manifest_size": 7970,
+   "manifest_md5": "c40cfbdfd8d041ed4af26f53414ee24b",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 7970,
+   "md5_received": "c40cfbdfd8d041ed4af26f53414ee24b",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170411223000.gkg.csv"
+   ],
+   "inner_bytes": 24826,
+   "records": 1,
+   "seconds": 0.09
+  },
+  {
+   "ts": "2017-04-22T05:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170422050000.gkg.csv.zip",
+   "manifest_size": 11161,
+   "manifest_md5": "6e330557d12f14bad5eeac2b352ceda5",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 11161,
+   "md5_received": "6e330557d12f14bad5eeac2b352ceda5",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170422050000.gkg.csv"
+   ],
+   "inner_bytes": 34560,
+   "records": 3,
+   "seconds": 0.12
+  },
+  {
+   "ts": "2017-05-07T15:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170507153000.gkg.csv.zip",
+   "manifest_size": 14784,
+   "manifest_md5": "4defaedf54315344b83b9c79732678d8",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 14784,
+   "md5_received": "4defaedf54315344b83b9c79732678d8",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170507153000.gkg.csv"
+   ],
+   "inner_bytes": 47412,
+   "records": 4,
+   "seconds": 0.17
+  },
+  {
+   "ts": "2017-05-17T03:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170517033000.gkg.csv.zip",
+   "manifest_size": 3083,
+   "manifest_md5": "bce915ff4c7c5166d816c79dc8056a90",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 3083,
+   "md5_received": "bce915ff4c7c5166d816c79dc8056a90",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170517033000.gkg.csv"
+   ],
+   "inner_bytes": 8724,
+   "records": 1,
+   "seconds": 0.16
+  },
+  {
+   "ts": "2017-05-26T07:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170526071500.gkg.csv.zip",
+   "manifest_size": 47133,
+   "manifest_md5": "911c8e6de5f2c862956072732222068f",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 47133,
+   "md5_received": "911c8e6de5f2c862956072732222068f",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170526071500.gkg.csv"
+   ],
+   "inner_bytes": 154181,
+   "records": 12,
+   "seconds": 0.15
+  },
+  {
+   "ts": "2017-06-04T10:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170604101500.gkg.csv.zip",
+   "manifest_size": 21320,
+   "manifest_md5": "95945914627d6065309233589081376f",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 21320,
+   "md5_received": "95945914627d6065309233589081376f",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170604101500.gkg.csv"
+   ],
+   "inner_bytes": 67554,
+   "records": 7,
+   "seconds": 0.12
+  },
+  {
+   "ts": "2017-06-06T11:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170606110000.gkg.csv.zip",
+   "manifest_size": 43064,
+   "manifest_md5": "b96953a430a4e70036d24ebfccd41b20",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 43064,
+   "md5_received": "b96953a430a4e70036d24ebfccd41b20",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170606110000.gkg.csv"
+   ],
+   "inner_bytes": 138641,
+   "records": 12,
+   "seconds": 0.16
+  },
+  {
+   "ts": "2017-06-07T15:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170607153000.gkg.csv.zip",
+   "manifest_size": 17640,
+   "manifest_md5": "29aeec128620ded12ac75c9e843ae592",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 17640,
+   "md5_received": "29aeec128620ded12ac75c9e843ae592",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170607153000.gkg.csv"
+   ],
+   "inner_bytes": 58634,
+   "records": 6,
+   "seconds": 0.17
+  },
+  {
+   "ts": "2017-06-15T11:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170615113000.gkg.csv.zip",
+   "manifest_size": 12381,
+   "manifest_md5": "d742f2dc9d1449ecde5b9d78f4c9499b",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 12381,
+   "md5_received": "d742f2dc9d1449ecde5b9d78f4c9499b",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170615113000.gkg.csv"
+   ],
+   "inner_bytes": 37143,
+   "records": 4,
+   "seconds": 0.12
+  },
+  {
+   "ts": "2017-06-20T09:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170620094500.gkg.csv.zip",
+   "manifest_size": 45346,
+   "manifest_md5": "9d681457b32d47cb44a92d785f0376fe",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 45346,
+   "md5_received": "9d681457b32d47cb44a92d785f0376fe",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170620094500.gkg.csv"
+   ],
+   "inner_bytes": 148752,
+   "records": 14,
+   "seconds": 0.14
+  },
+  {
+   "ts": "2017-06-21T07:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170621074500.gkg.csv.zip",
+   "manifest_size": 14423,
+   "manifest_md5": "d381c0706c5d888984b8afd5f87ef817",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 14423,
+   "md5_received": "d381c0706c5d888984b8afd5f87ef817",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170621074500.gkg.csv"
+   ],
+   "inner_bytes": 46778,
+   "records": 5,
+   "seconds": 0.13
+  },
+  {
+   "ts": "2017-06-21T17:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170621173000.gkg.csv.zip",
+   "manifest_size": 12402,
+   "manifest_md5": "1a4c776bc2b3f256701b7285ea30e1ff",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 12402,
+   "md5_received": "1a4c776bc2b3f256701b7285ea30e1ff",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170621173000.gkg.csv"
+   ],
+   "inner_bytes": 38337,
+   "records": 3,
+   "seconds": 0.12
+  },
+  {
+   "ts": "2017-06-21T17:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170621174500.gkg.csv.zip",
+   "manifest_size": 10965,
+   "manifest_md5": "f3ab471b51ce9f38e58d56cbd2e4938a",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 10965,
+   "md5_received": "f3ab471b51ce9f38e58d56cbd2e4938a",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170621174500.gkg.csv"
+   ],
+   "inner_bytes": 33299,
+   "records": 4,
+   "seconds": 0.14
+  },
+  {
+   "ts": "2017-06-25T10:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170625103000.gkg.csv.zip",
+   "manifest_size": 29966,
+   "manifest_md5": "cd326a3c502b6f0ab2aeec9fb357f093",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 29966,
+   "md5_received": "cd326a3c502b6f0ab2aeec9fb357f093",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170625103000.gkg.csv"
+   ],
+   "inner_bytes": 98890,
+   "records": 7,
+   "seconds": 0.08
+  },
+  {
+   "ts": "2017-06-28T15:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170628150000.gkg.csv.zip",
+   "manifest_size": 47182,
+   "manifest_md5": "749626b5455225238ec6ecf2fe0b841b",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 47182,
+   "md5_received": "749626b5455225238ec6ecf2fe0b841b",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170628150000.gkg.csv"
+   ],
+   "inner_bytes": 156280,
+   "records": 15,
+   "seconds": 0.16
+  },
+  {
+   "ts": "2017-06-29T04:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170629040000.gkg.csv.zip",
+   "manifest_size": 7585,
+   "manifest_md5": "0ba70d0ded1930c0ef9fd76364b59c8a",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 7585,
+   "md5_received": "0ba70d0ded1930c0ef9fd76364b59c8a",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170629040000.gkg.csv"
+   ],
+   "inner_bytes": 24314,
+   "records": 1,
+   "seconds": 0.16
+  },
+  {
+   "ts": "2017-06-29T09:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170629093000.gkg.csv.zip",
+   "manifest_size": 56049,
+   "manifest_md5": "c1e8694c9d863ab232f8891f257c35cc",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 56049,
+   "md5_received": "c1e8694c9d863ab232f8891f257c35cc",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170629093000.gkg.csv"
+   ],
+   "inner_bytes": 189436,
+   "records": 17,
+   "seconds": 0.19
+  },
+  {
+   "ts": "2017-06-30T09:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170630090000.gkg.csv.zip",
+   "manifest_size": 23921,
+   "manifest_md5": "cdd197e7e79bfde350453c16d6d5c04d",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 23921,
+   "md5_received": "cdd197e7e79bfde350453c16d6d5c04d",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170630090000.gkg.csv"
+   ],
+   "inner_bytes": 73357,
+   "records": 8,
+   "seconds": 0.2
+  },
+  {
+   "ts": "2017-06-30T13:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170630131500.gkg.csv.zip",
+   "manifest_size": 11603,
+   "manifest_md5": "327ea50f2aa50d1204e0ab5042af2548",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 11603,
+   "md5_received": "327ea50f2aa50d1204e0ab5042af2548",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170630131500.gkg.csv"
+   ],
+   "inner_bytes": 36370,
+   "records": 4,
+   "seconds": 0.07
+  },
+  {
+   "ts": "2017-06-30T16:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170630161500.gkg.csv.zip",
+   "manifest_size": 24465,
+   "manifest_md5": "3d2041b3d7c6decc8754d0c998f7a816",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 24465,
+   "md5_received": "3d2041b3d7c6decc8754d0c998f7a816",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170630161500.gkg.csv"
+   ],
+   "inner_bytes": 79875,
+   "records": 5,
+   "seconds": 0.12
+  },
+  {
+   "ts": "2017-07-14T18:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170714181500.gkg.csv.zip",
+   "manifest_size": 5463,
+   "manifest_md5": "64980026a5c9f7517268ef0444754ec3",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 5463,
+   "md5_received": "64980026a5c9f7517268ef0444754ec3",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170714181500.gkg.csv"
+   ],
+   "inner_bytes": 15707,
+   "records": 1,
+   "seconds": 0.14
+  },
+  {
+   "ts": "2017-07-22T08:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170722080000.gkg.csv.zip",
+   "manifest_size": 19013,
+   "manifest_md5": "6bc182021e2d0418e5bd4b4a101cbbdb",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 19013,
+   "md5_received": "6bc182021e2d0418e5bd4b4a101cbbdb",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170722080000.gkg.csv"
+   ],
+   "inner_bytes": 60710,
+   "records": 6,
+   "seconds": 0.12
+  },
+  {
+   "ts": "2017-07-23T14:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170723144500.gkg.csv.zip",
+   "manifest_size": 22522,
+   "manifest_md5": "bf84f0facbb898d3cc0627fd0451853f",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 22522,
+   "md5_received": "bf84f0facbb898d3cc0627fd0451853f",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170723144500.gkg.csv"
+   ],
+   "inner_bytes": 73637,
+   "records": 7,
+   "seconds": 0.17
+  },
+  {
+   "ts": "2017-08-01T15:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170801150000.gkg.csv.zip",
+   "manifest_size": 42241,
+   "manifest_md5": "88ee90feba6ec8abb3c0054e8432a281",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 42241,
+   "md5_received": "88ee90feba6ec8abb3c0054e8432a281",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170801150000.gkg.csv"
+   ],
+   "inner_bytes": 135178,
+   "records": 12,
+   "seconds": 0.15
+  },
+  {
+   "ts": "2017-08-03T18:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170803181500.gkg.csv.zip",
+   "manifest_size": 7346,
+   "manifest_md5": "4f71419d1a7a1af32e79690ac3027741",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 7346,
+   "md5_received": "4f71419d1a7a1af32e79690ac3027741",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170803181500.gkg.csv"
+   ],
+   "inner_bytes": 22867,
+   "records": 2,
+   "seconds": 0.14
+  },
+  {
+   "ts": "2017-08-04T19:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170804194500.gkg.csv.zip",
+   "manifest_size": 6099,
+   "manifest_md5": "4888c9d4e72538ed4e0b11577285d816",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 6099,
+   "md5_received": "4888c9d4e72538ed4e0b11577285d816",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170804194500.gkg.csv"
+   ],
+   "inner_bytes": 18217,
+   "records": 2,
+   "seconds": 0.08
+  },
+  {
+   "ts": "2017-08-05T11:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170805111500.gkg.csv.zip",
+   "manifest_size": 16418,
+   "manifest_md5": "22fde3748fb4277c9f3a1bd2e58287a3",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 16418,
+   "md5_received": "22fde3748fb4277c9f3a1bd2e58287a3",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170805111500.gkg.csv"
+   ],
+   "inner_bytes": 50702,
+   "records": 5,
+   "seconds": 0.07
+  },
+  {
+   "ts": "2017-08-12T14:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170812141500.gkg.csv.zip",
+   "manifest_size": 16950,
+   "manifest_md5": "529cc0d9bef17fe6a92829e0fc20bb00",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 16950,
+   "md5_received": "529cc0d9bef17fe6a92829e0fc20bb00",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170812141500.gkg.csv"
+   ],
+   "inner_bytes": 52145,
+   "records": 3,
+   "seconds": 0.15
+  },
+  {
+   "ts": "2017-08-12T18:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170812184500.gkg.csv.zip",
+   "manifest_size": 2889,
+   "manifest_md5": "c7c5cbd4d3971a9ddf8083b862784b99",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 2889,
+   "md5_received": "c7c5cbd4d3971a9ddf8083b862784b99",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170812184500.gkg.csv"
+   ],
+   "inner_bytes": 9216,
+   "records": 1,
+   "seconds": 0.1
+  },
+  {
+   "ts": "2017-08-16T06:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170816060000.gkg.csv.zip",
+   "manifest_size": 13945,
+   "manifest_md5": "0ce13d0419397ca3c2d41dfdba98a6e1",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 13945,
+   "md5_received": "0ce13d0419397ca3c2d41dfdba98a6e1",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170816060000.gkg.csv"
+   ],
+   "inner_bytes": 44256,
+   "records": 4,
+   "seconds": 0.15
+  },
+  {
+   "ts": "2017-08-16T17:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170816170000.gkg.csv.zip",
+   "manifest_size": 24601,
+   "manifest_md5": "f6a5674c25b16e0b46257287e28ffff2",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 24601,
+   "md5_received": "f6a5674c25b16e0b46257287e28ffff2",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170816170000.gkg.csv"
+   ],
+   "inner_bytes": 78216,
+   "records": 6,
+   "seconds": 0.15
+  },
+  {
+   "ts": "2017-08-26T16:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170826161500.gkg.csv.zip",
+   "manifest_size": 17994,
+   "manifest_md5": "4251479b20ff3ff20c7e4900f2a20bc4",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 17994,
+   "md5_received": "4251479b20ff3ff20c7e4900f2a20bc4",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170826161500.gkg.csv"
+   ],
+   "inner_bytes": 58515,
+   "records": 6,
+   "seconds": 0.11
+  },
+  {
+   "ts": "2017-08-27T14:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170827141500.gkg.csv.zip",
+   "manifest_size": 12160,
+   "manifest_md5": "4257fc0d2c10bbb6e5daac87490d729b",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 12160,
+   "md5_received": "4257fc0d2c10bbb6e5daac87490d729b",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170827141500.gkg.csv"
+   ],
+   "inner_bytes": 39551,
+   "records": 4,
+   "seconds": 0.26
+  },
+  {
+   "ts": "2017-08-30T11:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170830111500.gkg.csv.zip",
+   "manifest_size": 32834,
+   "manifest_md5": "80f3e48316eeb226d41dd1df7b133303",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 32834,
+   "md5_received": "80f3e48316eeb226d41dd1df7b133303",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170830111500.gkg.csv"
+   ],
+   "inner_bytes": 110571,
+   "records": 10,
+   "seconds": 0.13
+  },
+  {
+   "ts": "2017-09-05T12:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170905121500.gkg.csv.zip",
+   "manifest_size": 22609,
+   "manifest_md5": "afd9be5a495e2f87ca20bb5bd1c15fd5",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 22609,
+   "md5_received": "afd9be5a495e2f87ca20bb5bd1c15fd5",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170905121500.gkg.csv"
+   ],
+   "inner_bytes": 72579,
+   "records": 6,
+   "seconds": 0.2
+  },
+  {
+   "ts": "2017-09-07T06:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170907061500.gkg.csv.zip",
+   "manifest_size": 24872,
+   "manifest_md5": "92cbf2991711fd50c98151046632b916",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 24872,
+   "md5_received": "92cbf2991711fd50c98151046632b916",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170907061500.gkg.csv"
+   ],
+   "inner_bytes": 76570,
+   "records": 6,
+   "seconds": 0.1
+  },
+  {
+   "ts": "2017-09-07T20:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170907200000.gkg.csv.zip",
+   "manifest_size": 6985,
+   "manifest_md5": "97d7db570d2581c60456ea49c9a9c021",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 6985,
+   "md5_received": "97d7db570d2581c60456ea49c9a9c021",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170907200000.gkg.csv"
+   ],
+   "inner_bytes": 22054,
+   "records": 1,
+   "seconds": 0.11
+  },
+  {
+   "ts": "2017-09-15T19:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170915190000.gkg.csv.zip",
+   "manifest_size": 1520069,
+   "manifest_md5": "73aae2f5f37297eb7d087ad39cf8f112",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 1520069,
+   "md5_received": "73aae2f5f37297eb7d087ad39cf8f112",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170915190000.gkg.csv"
+   ],
+   "inner_bytes": 4797398,
+   "records": 375,
+   "seconds": 0.24
+  },
+  {
+   "ts": "2017-10-03T11:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171003113000.gkg.csv.zip",
+   "manifest_size": 17723,
+   "manifest_md5": "a75c1307247ad14222811e4c078713be",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 17723,
+   "md5_received": "a75c1307247ad14222811e4c078713be",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171003113000.gkg.csv"
+   ],
+   "inner_bytes": 59452,
+   "records": 6,
+   "seconds": 0.12
+  },
+  {
+   "ts": "2017-10-06T10:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171006103000.gkg.csv.zip",
+   "manifest_size": 29582,
+   "manifest_md5": "e2e558df2e0a60d6f41adb5ab3d75c60",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 29582,
+   "md5_received": "e2e558df2e0a60d6f41adb5ab3d75c60",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171006103000.gkg.csv"
+   ],
+   "inner_bytes": 93946,
+   "records": 9,
+   "seconds": 0.1
+  },
+  {
+   "ts": "2017-10-12T15:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171012153000.gkg.csv.zip",
+   "manifest_size": 46782,
+   "manifest_md5": "c8526080bf854ea2647f6469346b921d",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 46782,
+   "md5_received": "c8526080bf854ea2647f6469346b921d",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171012153000.gkg.csv"
+   ],
+   "inner_bytes": 158138,
+   "records": 14,
+   "seconds": 0.11
+  },
+  {
+   "ts": "2017-10-15T12:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171015123000.gkg.csv.zip",
+   "manifest_size": 23084,
+   "manifest_md5": "df8addd46b5fa1cc6f2c660f9388e51e",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 23084,
+   "md5_received": "df8addd46b5fa1cc6f2c660f9388e51e",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171015123000.gkg.csv"
+   ],
+   "inner_bytes": 75617,
+   "records": 6,
+   "seconds": 0.1
+  },
+  {
+   "ts": "2017-10-15T13:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171015130000.gkg.csv.zip",
+   "manifest_size": 18359,
+   "manifest_md5": "bfe2735bd2e84ff85a8af48e9122efde",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 18359,
+   "md5_received": "bfe2735bd2e84ff85a8af48e9122efde",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171015130000.gkg.csv"
+   ],
+   "inner_bytes": 58615,
+   "records": 5,
+   "seconds": 0.25
+  },
+  {
+   "ts": "2017-10-16T14:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171016143000.gkg.csv.zip",
+   "manifest_size": 37412,
+   "manifest_md5": "93cfc8e88ead47965c6cb452793582a6",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 37412,
+   "md5_received": "93cfc8e88ead47965c6cb452793582a6",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171016143000.gkg.csv"
+   ],
+   "inner_bytes": 122006,
+   "records": 12,
+   "seconds": 0.13
+  },
+  {
+   "ts": "2017-10-21T05:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171021054500.gkg.csv.zip",
+   "manifest_size": 21437,
+   "manifest_md5": "6496a2344c4bb5a8e6415ca8455b9d04",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 21437,
+   "md5_received": "6496a2344c4bb5a8e6415ca8455b9d04",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171021054500.gkg.csv"
+   ],
+   "inner_bytes": 74766,
+   "records": 7,
+   "seconds": 0.12
+  },
+  {
+   "ts": "2017-10-25T18:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171025180000.gkg.csv.zip",
+   "manifest_size": 28786,
+   "manifest_md5": "93aeacfbd8709345e96d9af72d210888",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 28786,
+   "md5_received": "93aeacfbd8709345e96d9af72d210888",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171025180000.gkg.csv"
+   ],
+   "inner_bytes": 94691,
+   "records": 9,
+   "seconds": 0.13
+  },
+  {
+   "ts": "2017-12-06T08:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171206083000.gkg.csv.zip",
+   "manifest_size": 1106747,
+   "manifest_md5": "7b7cd19f04666b9a1e82fccfca68ee7f",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 1106747,
+   "md5_received": "7b7cd19f04666b9a1e82fccfca68ee7f",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171206083000.gkg.csv"
+   ],
+   "inner_bytes": 3502577,
+   "records": 278,
+   "seconds": 0.27
+  },
+  {
+   "ts": "2018-01-31T08:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180131081500.gkg.csv.zip",
+   "manifest_size": 1137196,
+   "manifest_md5": "a2016523eb84cc15a58219c2a35389fe",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 1137196,
+   "md5_received": "a2016523eb84cc15a58219c2a35389fe",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180131081500.gkg.csv"
+   ],
+   "inner_bytes": 3583885,
+   "records": 272,
+   "seconds": 0.19
+  },
+  {
+   "ts": "2018-02-13T09:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180213094500.gkg.csv.zip",
+   "manifest_size": 940925,
+   "manifest_md5": "9936b7d084b817cb94c8926b9a8e1886",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 940925,
+   "md5_received": "9936b7d084b817cb94c8926b9a8e1886",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180213094500.gkg.csv"
+   ],
+   "inner_bytes": 2970107,
+   "records": 245,
+   "seconds": 0.2
+  },
+  {
+   "ts": "2018-02-27T17:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180227170000.gkg.csv.zip",
+   "manifest_size": 1712601,
+   "manifest_md5": "55422a268a4039b26d3fe5a07c1a1557",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 1712601,
+   "md5_received": "55422a268a4039b26d3fe5a07c1a1557",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180227170000.gkg.csv"
+   ],
+   "inner_bytes": 5394591,
+   "records": 436,
+   "seconds": 0.28
+  },
+  {
+   "ts": "2018-04-02T18:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180402183000.gkg.csv.zip",
+   "manifest_size": 1293532,
+   "manifest_md5": "189faffa951884e512d1d9e3d2b68776",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 1293532,
+   "md5_received": "189faffa951884e512d1d9e3d2b68776",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180402183000.gkg.csv"
+   ],
+   "inner_bytes": 4122612,
+   "records": 346,
+   "seconds": 0.45
+  },
+  {
+   "ts": "2018-04-09T11:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180409114500.gkg.csv.zip",
+   "manifest_size": 919155,
+   "manifest_md5": "e7f86439412a486039b5cb101a6b5a2f",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 919155,
+   "md5_received": "e7f86439412a486039b5cb101a6b5a2f",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180409114500.gkg.csv"
+   ],
+   "inner_bytes": 2894016,
+   "records": 231,
+   "seconds": 0.23
+  },
+  {
+   "ts": "2018-04-23T17:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180423171500.gkg.csv.zip",
+   "manifest_size": 1485906,
+   "manifest_md5": "e1df6565371a2a5d059fe01a04896460",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 1485906,
+   "md5_received": "e1df6565371a2a5d059fe01a04896460",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180423171500.gkg.csv"
+   ],
+   "inner_bytes": 4636877,
+   "records": 378,
+   "seconds": 0.29
+  },
+  {
+   "ts": "2019-06-23T11:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20190623114500.gkg.csv.zip",
+   "manifest_size": 564354,
+   "manifest_md5": "60b0bd13956966d5d1f392b0ff2a08ad",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 564354,
+   "md5_received": "60b0bd13956966d5d1f392b0ff2a08ad",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20190623114500.gkg.csv"
+   ],
+   "inner_bytes": 1851189,
+   "records": 166,
+   "seconds": 0.23
+  },
+  {
+   "ts": "2019-06-23T13:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20190623131500.gkg.csv.zip",
+   "manifest_size": 585823,
+   "manifest_md5": "89159afc73fa5ff6c0a035be4cef541b",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 585823,
+   "md5_received": "89159afc73fa5ff6c0a035be4cef541b",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20190623131500.gkg.csv"
+   ],
+   "inner_bytes": 1862950,
+   "records": 148,
+   "seconds": 0.26
+  },
+  {
+   "ts": "2020-10-11T00:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20201011004500.gkg.csv.zip",
+   "manifest_size": 1330508,
+   "manifest_md5": "9adee9b2032494d63aafe877a226bb48",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 1330508,
+   "md5_received": "9adee9b2032494d63aafe877a226bb48",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20201011004500.gkg.csv"
+   ],
+   "inner_bytes": 4133702,
+   "records": 332,
+   "seconds": 0.24
+  },
+  {
+   "ts": "2022-11-11T04:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20221111043000.gkg.csv.zip",
+   "manifest_size": 117688,
+   "manifest_md5": "efd00b49910ff2bc24080beebb865a1f",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 404,
+   "error": "HTTPError 404",
+   "seconds": 0.12
+  },
+  {
+   "ts": "2022-11-11T06:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20221111061500.gkg.csv.zip",
+   "manifest_size": 47725,
+   "manifest_md5": "41ca962ce73e71ec922550f7f68e7bf3",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 404,
+   "error": "HTTPError 404",
+   "seconds": 0.09
+  },
+  {
+   "ts": "2022-11-11T10:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20221111100000.gkg.csv.zip",
+   "manifest_size": 72143,
+   "manifest_md5": "1b6ea03c19b3637e07a0f1e04c50aa30",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 404,
+   "error": "HTTPError 404",
+   "seconds": 0.08
+  },
+  {
+   "ts": "2022-11-11T11:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20221111111500.gkg.csv.zip",
+   "manifest_size": 101912,
+   "manifest_md5": "9246afd823457c0901fdb927b438ceb4",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 404,
+   "error": "HTTPError 404",
+   "seconds": 0.08
+  },
+  {
+   "ts": "2022-11-11T17:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20221111171500.gkg.csv.zip",
+   "manifest_size": 114852,
+   "manifest_md5": "6f3d100cb684d4c4f686d435c0fd9c74",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 404,
+   "error": "HTTPError 404",
+   "seconds": 0.08
+  },
+  {
+   "ts": "2023-03-21T22:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20230321221500.gkg.csv.zip",
+   "manifest_size": 5686,
+   "manifest_md5": "cbd6b4270b2e6c1326249dca8d96b035",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 5686,
+   "md5_received": "cbd6b4270b2e6c1326249dca8d96b035",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20230321221500.gkg.csv"
+   ],
+   "inner_bytes": 15796,
+   "records": 1,
+   "seconds": 0.2
+  },
+  {
+   "ts": "2023-03-21T23:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20230321230000.gkg.csv.zip",
+   "manifest_size": 13704,
+   "manifest_md5": "396899f3ddc8272897d05c152c6979f8",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 13704,
+   "md5_received": "396899f3ddc8272897d05c152c6979f8",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20230321230000.gkg.csv"
+   ],
+   "inner_bytes": 41185,
+   "records": 3,
+   "seconds": 0.15
+  },
+  {
+   "ts": "2023-03-22T00:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20230322003000.gkg.csv.zip",
+   "manifest_size": 720971,
+   "manifest_md5": "82f32ea0147e9fef5ff4fc3e21d1d809",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 720971,
+   "md5_received": "82f32ea0147e9fef5ff4fc3e21d1d809",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20230322003000.gkg.csv"
+   ],
+   "inner_bytes": 2221209,
+   "records": 168,
+   "seconds": 0.16
+  },
+  {
+   "ts": "2025-07-02T02:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20250702023000.gkg.csv.zip",
+   "manifest_size": 640475,
+   "manifest_md5": "2fc35aa16bb375e0eabb3181c979c98d",
+   "samples": [
+    "A"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 640475,
+   "md5_received": "2fc35aa16bb375e0eabb3181c979c98d",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20250702023000.gkg.csv"
+   ],
+   "inner_bytes": 1995663,
+   "records": 155,
+   "seconds": 0.14
+  },
+  {
+   "ts": "2015-04-06T19:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20150406193000.gkg.csv.zip",
+   "manifest_size": 9061383,
+   "manifest_md5": "1a3c9115d088ab09a8d18ccdc2c6981e",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9061383,
+   "md5_received": "1a3c9115d088ab09a8d18ccdc2c6981e",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20150406193000.gkg.csv"
+   ],
+   "inner_bytes": 28609693,
+   "records": 2629,
+   "seconds": 1.28
+  },
+  {
+   "ts": "2015-04-11T15:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20150411154500.gkg.csv.zip",
+   "manifest_size": 6304286,
+   "manifest_md5": "2ea9da9f8164316efe44988106c66f0d",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 6304286,
+   "md5_received": "2ea9da9f8164316efe44988106c66f0d",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20150411154500.gkg.csv"
+   ],
+   "inner_bytes": 19778982,
+   "records": 1676,
+   "seconds": 1.13
+  },
+  {
+   "ts": "2015-04-14T08:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20150414080000.gkg.csv.zip",
+   "manifest_size": 7069556,
+   "manifest_md5": "179c3ff1dd2f1bb96e4c17acdf7b0a03",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 7069556,
+   "md5_received": "179c3ff1dd2f1bb96e4c17acdf7b0a03",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20150414080000.gkg.csv"
+   ],
+   "inner_bytes": 22364529,
+   "records": 1980,
+   "seconds": 1.11
+  },
+  {
+   "ts": "2015-05-27T21:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20150527214500.gkg.csv.zip",
+   "manifest_size": 11618020,
+   "manifest_md5": "f74438bc68456a946d62d4f4ec86c90b",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 11618020,
+   "md5_received": "f74438bc68456a946d62d4f4ec86c90b",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20150527214500.gkg.csv"
+   ],
+   "inner_bytes": 36886491,
+   "records": 3161,
+   "seconds": 2.81
+  },
+  {
+   "ts": "2015-08-20T04:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20150820041500.gkg.csv.zip",
+   "manifest_size": 14338872,
+   "manifest_md5": "5fa20f5ac5a37481cb28efe9528eaec6",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 14338872,
+   "md5_received": "5fa20f5ac5a37481cb28efe9528eaec6",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20150820041500.gkg.csv"
+   ],
+   "inner_bytes": 45135964,
+   "records": 3350,
+   "seconds": 2.8
+  },
+  {
+   "ts": "2016-01-09T17:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20160109173000.gkg.csv.zip",
+   "manifest_size": 6360544,
+   "manifest_md5": "16bf9e90bc2902a26df0149b0ceb6549",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 6360544,
+   "md5_received": "16bf9e90bc2902a26df0149b0ceb6549",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20160109173000.gkg.csv"
+   ],
+   "inner_bytes": 20216030,
+   "records": 1693,
+   "seconds": 1.59
+  },
+  {
+   "ts": "2016-02-24T17:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20160224173000.gkg.csv.zip",
+   "manifest_size": 16213419,
+   "manifest_md5": "6b24643d50381e343d342ae3133774ff",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 16213419,
+   "md5_received": "6b24643d50381e343d342ae3133774ff",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20160224173000.gkg.csv"
+   ],
+   "inner_bytes": 51023292,
+   "records": 4220,
+   "seconds": 3.0
+  },
+  {
+   "ts": "2016-04-10T10:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20160410101500.gkg.csv.zip",
+   "manifest_size": 5899885,
+   "manifest_md5": "2dcadfa3c18272ae14d4dc133adc1067",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 5899885,
+   "md5_received": "2dcadfa3c18272ae14d4dc133adc1067",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20160410101500.gkg.csv"
+   ],
+   "inner_bytes": 18683400,
+   "records": 1524,
+   "seconds": 1.34
+  },
+  {
+   "ts": "2016-06-13T14:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20160613144500.gkg.csv.zip",
+   "manifest_size": 17565577,
+   "manifest_md5": "2be2be1d6dcfd1b60de4a32d72b1362e",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 17565577,
+   "md5_received": "2be2be1d6dcfd1b60de4a32d72b1362e",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20160613144500.gkg.csv"
+   ],
+   "inner_bytes": 55573630,
+   "records": 4598,
+   "seconds": 4.17
+  },
+  {
+   "ts": "2016-09-29T22:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20160929220000.gkg.csv.zip",
+   "manifest_size": 15774784,
+   "manifest_md5": "000f80622d014c03bcb5009edc15113b",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 15774784,
+   "md5_received": "000f80622d014c03bcb5009edc15113b",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20160929220000.gkg.csv"
+   ],
+   "inner_bytes": 50344635,
+   "records": 4075,
+   "seconds": 4.79
+  },
+  {
+   "ts": "2016-10-13T14:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20161013144500.gkg.csv.zip",
+   "manifest_size": 18559860,
+   "manifest_md5": "579dd03e58ea6a8066b8999dece6c135",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 18559860,
+   "md5_received": "579dd03e58ea6a8066b8999dece6c135",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20161013144500.gkg.csv"
+   ],
+   "inner_bytes": 58491498,
+   "records": 4889,
+   "seconds": 2.76
+  },
+  {
+   "ts": "2016-11-03T09:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20161103093000.gkg.csv.zip",
+   "manifest_size": 13572882,
+   "manifest_md5": "27fd87b62c228c83c82db7594cd49686",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 13572882,
+   "md5_received": "27fd87b62c228c83c82db7594cd49686",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20161103093000.gkg.csv"
+   ],
+   "inner_bytes": 42971496,
+   "records": 3514,
+   "seconds": 3.79
+  },
+  {
+   "ts": "2017-03-25T07:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170325074500.gkg.csv.zip",
+   "manifest_size": 6627278,
+   "manifest_md5": "226c6a7e13f7360fc9340adab2140431",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 6627278,
+   "md5_received": "226c6a7e13f7360fc9340adab2140431",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170325074500.gkg.csv"
+   ],
+   "inner_bytes": 20798040,
+   "records": 1650,
+   "seconds": 3.38
+  },
+  {
+   "ts": "2017-04-01T10:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170401100000.gkg.csv.zip",
+   "manifest_size": 7049700,
+   "manifest_md5": "d49baec1a303d0918416505c13d7620a",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 7049700,
+   "md5_received": "d49baec1a303d0918416505c13d7620a",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170401100000.gkg.csv"
+   ],
+   "inner_bytes": 21968787,
+   "records": 1798,
+   "seconds": 3.26
+  },
+  {
+   "ts": "2017-04-02T20:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170402204500.gkg.csv.zip",
+   "manifest_size": 7816926,
+   "manifest_md5": "0de44cb6f0d9617a8d6b8cf9eecd605b",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 7816926,
+   "md5_received": "0de44cb6f0d9617a8d6b8cf9eecd605b",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170402204500.gkg.csv"
+   ],
+   "inner_bytes": 24817475,
+   "records": 2048,
+   "seconds": 3.32
+  },
+  {
+   "ts": "2017-04-11T22:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170411221500.gkg.csv.zip",
+   "manifest_size": 15488765,
+   "manifest_md5": "c62157e444f9e643c4a7761821364a6a",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 15488765,
+   "md5_received": "c62157e444f9e643c4a7761821364a6a",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170411221500.gkg.csv"
+   ],
+   "inner_bytes": 48990224,
+   "records": 4073,
+   "seconds": 3.43
+  },
+  {
+   "ts": "2017-04-22T04:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170422044500.gkg.csv.zip",
+   "manifest_size": 7183076,
+   "manifest_md5": "44271f513ee42173b81818fc13db5610",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 7183076,
+   "md5_received": "44271f513ee42173b81818fc13db5610",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170422044500.gkg.csv"
+   ],
+   "inner_bytes": 22579768,
+   "records": 1700,
+   "seconds": 1.42
+  },
+  {
+   "ts": "2017-05-07T15:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170507150000.gkg.csv.zip",
+   "manifest_size": 8403183,
+   "manifest_md5": "6497acf1fe7afc297d1d3e12528b93ac",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 8403183,
+   "md5_received": "6497acf1fe7afc297d1d3e12528b93ac",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170507150000.gkg.csv"
+   ],
+   "inner_bytes": 26898951,
+   "records": 2149,
+   "seconds": 1.23
+  },
+  {
+   "ts": "2017-05-17T03:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170517031500.gkg.csv.zip",
+   "manifest_size": 10960102,
+   "manifest_md5": "81cbf1ed7ca2756bc41e7a3ce1f9be6f",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 10960102,
+   "md5_received": "81cbf1ed7ca2756bc41e7a3ce1f9be6f",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170517031500.gkg.csv"
+   ],
+   "inner_bytes": 34738600,
+   "records": 2723,
+   "seconds": 1.18
+  },
+  {
+   "ts": "2017-05-26T07:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170526070000.gkg.csv.zip",
+   "manifest_size": 9439697,
+   "manifest_md5": "de95e71cbf41da6a08f98f4d8e3ff903",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9439697,
+   "md5_received": "de95e71cbf41da6a08f98f4d8e3ff903",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170526070000.gkg.csv"
+   ],
+   "inner_bytes": 29899664,
+   "records": 2326,
+   "seconds": 1.04
+  },
+  {
+   "ts": "2017-06-04T10:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170604100000.gkg.csv.zip",
+   "manifest_size": 5765961,
+   "manifest_md5": "e49123b7938a7be2d36c3622bfecc513",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 5765961,
+   "md5_received": "e49123b7938a7be2d36c3622bfecc513",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170604100000.gkg.csv"
+   ],
+   "inner_bytes": 18743905,
+   "records": 1347,
+   "seconds": 0.73
+  },
+  {
+   "ts": "2017-06-06T10:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170606104500.gkg.csv.zip",
+   "manifest_size": 11529606,
+   "manifest_md5": "1d135838e3f88ff6c21e5dabe061e627",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 11529606,
+   "md5_received": "1d135838e3f88ff6c21e5dabe061e627",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170606104500.gkg.csv"
+   ],
+   "inner_bytes": 36596868,
+   "records": 2872,
+   "seconds": 0.84
+  },
+  {
+   "ts": "2017-06-07T15:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170607151500.gkg.csv.zip",
+   "manifest_size": 18091988,
+   "manifest_md5": "257c8e4af97b1d058607cffe0aa1af1e",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 18091988,
+   "md5_received": "257c8e4af97b1d058607cffe0aa1af1e",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170607151500.gkg.csv"
+   ],
+   "inner_bytes": 57256903,
+   "records": 4566,
+   "seconds": 2.37
+  },
+  {
+   "ts": "2017-06-15T11:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170615111500.gkg.csv.zip",
+   "manifest_size": 12895400,
+   "manifest_md5": "60c189338ba889d7e1a26d1270d7bcca",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 12895400,
+   "md5_received": "60c189338ba889d7e1a26d1270d7bcca",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170615111500.gkg.csv"
+   ],
+   "inner_bytes": 40586149,
+   "records": 3202,
+   "seconds": 0.91
+  },
+  {
+   "ts": "2017-06-20T09:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170620093000.gkg.csv.zip",
+   "manifest_size": 12527321,
+   "manifest_md5": "2b584462180eb2e04f8b561234e1fe77",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 12527321,
+   "md5_received": "2b584462180eb2e04f8b561234e1fe77",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170620093000.gkg.csv"
+   ],
+   "inner_bytes": 39617399,
+   "records": 3221,
+   "seconds": 0.77
+  },
+  {
+   "ts": "2017-06-21T07:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170621073000.gkg.csv.zip",
+   "manifest_size": 11606081,
+   "manifest_md5": "3f3558f1ac9037640b2a1faf4e925634",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 11606081,
+   "md5_received": "3f3558f1ac9037640b2a1faf4e925634",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170621073000.gkg.csv"
+   ],
+   "inner_bytes": 36658268,
+   "records": 2928,
+   "seconds": 1.17
+  },
+  {
+   "ts": "2017-06-21T17:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170621171500.gkg.csv.zip",
+   "manifest_size": 18015111,
+   "manifest_md5": "564fcde06907a90be0c42f0ac5ba2087",
+   "samples": [
+    "B",
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 18015111,
+   "md5_received": "564fcde06907a90be0c42f0ac5ba2087",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170621171500.gkg.csv"
+   ],
+   "inner_bytes": 56725268,
+   "records": 4802,
+   "seconds": 2.12
+  },
+  {
+   "ts": "2017-06-25T10:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170625101500.gkg.csv.zip",
+   "manifest_size": 4943747,
+   "manifest_md5": "70caf39627287c055eadf4a5380dcc10",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 4943747,
+   "md5_received": "70caf39627287c055eadf4a5380dcc10",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170625101500.gkg.csv"
+   ],
+   "inner_bytes": 15537537,
+   "records": 1196,
+   "seconds": 0.71
+  },
+  {
+   "ts": "2017-06-28T14:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170628144500.gkg.csv.zip",
+   "manifest_size": 15995920,
+   "manifest_md5": "506b5b038bcfee903d2073f2f9250b54",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 15995920,
+   "md5_received": "506b5b038bcfee903d2073f2f9250b54",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170628144500.gkg.csv"
+   ],
+   "inner_bytes": 50425651,
+   "records": 4206,
+   "seconds": 1.61
+  },
+  {
+   "ts": "2017-06-29T03:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170629031500.gkg.csv.zip",
+   "manifest_size": 9806436,
+   "manifest_md5": "b68b5b40bec5cbd235de042320b7a54a",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9806436,
+   "md5_received": "b68b5b40bec5cbd235de042320b7a54a",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170629031500.gkg.csv"
+   ],
+   "inner_bytes": 30794543,
+   "records": 2467,
+   "seconds": 1.59
+  },
+  {
+   "ts": "2017-06-29T09:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170629091500.gkg.csv.zip",
+   "manifest_size": 10431824,
+   "manifest_md5": "b2e923db06d3309aec00e2c84ab9fc00",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 10431824,
+   "md5_received": "b2e923db06d3309aec00e2c84ab9fc00",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170629091500.gkg.csv"
+   ],
+   "inner_bytes": 33099897,
+   "records": 2650,
+   "seconds": 1.91
+  },
+  {
+   "ts": "2017-06-30T08:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170630084500.gkg.csv.zip",
+   "manifest_size": 11178933,
+   "manifest_md5": "fb341f806d1b8e8d83a12a3d44f111fb",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 11178933,
+   "md5_received": "fb341f806d1b8e8d83a12a3d44f111fb",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170630084500.gkg.csv"
+   ],
+   "inner_bytes": 35319154,
+   "records": 2739,
+   "seconds": 2.4
+  },
+  {
+   "ts": "2017-06-30T13:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170630130000.gkg.csv.zip",
+   "manifest_size": 14265264,
+   "manifest_md5": "359b0dc9b7addf4f9ab32c9984fb9023",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 14265264,
+   "md5_received": "359b0dc9b7addf4f9ab32c9984fb9023",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170630130000.gkg.csv"
+   ],
+   "inner_bytes": 44930846,
+   "records": 3662,
+   "seconds": 2.27
+  },
+  {
+   "ts": "2017-06-30T16:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170630160000.gkg.csv.zip",
+   "manifest_size": 16068582,
+   "manifest_md5": "e41983bde63178980842839f217f7bdb",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 16068582,
+   "md5_received": "e41983bde63178980842839f217f7bdb",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170630160000.gkg.csv"
+   ],
+   "inner_bytes": 50504441,
+   "records": 4149,
+   "seconds": 2.06
+  },
+  {
+   "ts": "2017-07-14T17:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170714173000.gkg.csv.zip",
+   "manifest_size": 15170675,
+   "manifest_md5": "79c9f40631a3dfb6451935f55d17cf03",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 15170675,
+   "md5_received": "79c9f40631a3dfb6451935f55d17cf03",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170714173000.gkg.csv"
+   ],
+   "inner_bytes": 47809895,
+   "records": 3999,
+   "seconds": 1.87
+  },
+  {
+   "ts": "2017-07-22T07:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170722074500.gkg.csv.zip",
+   "manifest_size": 7140990,
+   "manifest_md5": "382292863c362e4b67bdadda853cae15",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 7140990,
+   "md5_received": "382292863c362e4b67bdadda853cae15",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170722074500.gkg.csv"
+   ],
+   "inner_bytes": 22493439,
+   "records": 1713,
+   "seconds": 1.24
+  },
+  {
+   "ts": "2017-07-23T14:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170723143000.gkg.csv.zip",
+   "manifest_size": 6513292,
+   "manifest_md5": "c43d67a3a881d7e095260f684b0f30d6",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 6513292,
+   "md5_received": "c43d67a3a881d7e095260f684b0f30d6",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170723143000.gkg.csv"
+   ],
+   "inner_bytes": 20940579,
+   "records": 1608,
+   "seconds": 1.23
+  },
+  {
+   "ts": "2017-08-01T14:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170801144500.gkg.csv.zip",
+   "manifest_size": 14687362,
+   "manifest_md5": "72a4de9335fcd5ba2d3de4d5dafab9f0",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 14687362,
+   "md5_received": "72a4de9335fcd5ba2d3de4d5dafab9f0",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170801144500.gkg.csv"
+   ],
+   "inner_bytes": 46361200,
+   "records": 3936,
+   "seconds": 1.6
+  },
+  {
+   "ts": "2017-08-03T17:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170803174500.gkg.csv.zip",
+   "manifest_size": 17614467,
+   "manifest_md5": "6276cf35df83df301cff02f92b0d4e86",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 17614467,
+   "md5_received": "6276cf35df83df301cff02f92b0d4e86",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170803174500.gkg.csv"
+   ],
+   "inner_bytes": 55502871,
+   "records": 4652,
+   "seconds": 2.12
+  },
+  {
+   "ts": "2017-08-04T19:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170804193000.gkg.csv.zip",
+   "manifest_size": 13716367,
+   "manifest_md5": "a3aa3ca0a4c9f6701df6f1fcdad360b3",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 13716367,
+   "md5_received": "a3aa3ca0a4c9f6701df6f1fcdad360b3",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170804193000.gkg.csv"
+   ],
+   "inner_bytes": 43391877,
+   "records": 3646,
+   "seconds": 1.36
+  },
+  {
+   "ts": "2017-08-05T11:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170805110000.gkg.csv.zip",
+   "manifest_size": 6045504,
+   "manifest_md5": "6b87a260b6ac3d573e1b710b813e8f08",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 6045504,
+   "md5_received": "6b87a260b6ac3d573e1b710b813e8f08",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170805110000.gkg.csv"
+   ],
+   "inner_bytes": 19187389,
+   "records": 1550,
+   "seconds": 0.75
+  },
+  {
+   "ts": "2017-08-12T14:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170812140000.gkg.csv.zip",
+   "manifest_size": 7083004,
+   "manifest_md5": "b5611552614111d0739b31b0ca6c778c",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 7083004,
+   "md5_received": "b5611552614111d0739b31b0ca6c778c",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170812140000.gkg.csv"
+   ],
+   "inner_bytes": 22391552,
+   "records": 1719,
+   "seconds": 0.61
+  },
+  {
+   "ts": "2017-08-12T18:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170812183000.gkg.csv.zip",
+   "manifest_size": 8628397,
+   "manifest_md5": "1e932dcd8cd8e87a43ec5337f5a8c6e9",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 8628397,
+   "md5_received": "1e932dcd8cd8e87a43ec5337f5a8c6e9",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170812183000.gkg.csv"
+   ],
+   "inner_bytes": 27384799,
+   "records": 2123,
+   "seconds": 0.8
+  },
+  {
+   "ts": "2017-08-16T05:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170816054500.gkg.csv.zip",
+   "manifest_size": 9514559,
+   "manifest_md5": "7f4309125d272bc23e409485970b642f",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9514559,
+   "md5_received": "7f4309125d272bc23e409485970b642f",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170816054500.gkg.csv"
+   ],
+   "inner_bytes": 30165001,
+   "records": 2424,
+   "seconds": 0.69
+  },
+  {
+   "ts": "2017-08-16T16:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170816164500.gkg.csv.zip",
+   "manifest_size": 17514396,
+   "manifest_md5": "1b0f2f5ae624ea4743ef5666d174c8a5",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 17514396,
+   "md5_received": "1b0f2f5ae624ea4743ef5666d174c8a5",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170816164500.gkg.csv"
+   ],
+   "inner_bytes": 55576462,
+   "records": 4617,
+   "seconds": 1.87
+  },
+  {
+   "ts": "2017-08-26T16:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170826160000.gkg.csv.zip",
+   "manifest_size": 7423344,
+   "manifest_md5": "31eca498a059de5e4d572e12ec7180e5",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 7423344,
+   "md5_received": "31eca498a059de5e4d572e12ec7180e5",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170826160000.gkg.csv"
+   ],
+   "inner_bytes": 23473823,
+   "records": 1849,
+   "seconds": 0.96
+  },
+  {
+   "ts": "2017-08-27T14:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170827140000.gkg.csv.zip",
+   "manifest_size": 6398734,
+   "manifest_md5": "1a5d5ab44d01839c1fccde725ab7d615",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 6398734,
+   "md5_received": "1a5d5ab44d01839c1fccde725ab7d615",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170827140000.gkg.csv"
+   ],
+   "inner_bytes": 20515056,
+   "records": 1560,
+   "seconds": 1.4
+  },
+  {
+   "ts": "2017-08-30T11:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170830110000.gkg.csv.zip",
+   "manifest_size": 11461481,
+   "manifest_md5": "cf35f6b48bd7a5552f3012567e6f051a",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 11461481,
+   "md5_received": "cf35f6b48bd7a5552f3012567e6f051a",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170830110000.gkg.csv"
+   ],
+   "inner_bytes": 36282436,
+   "records": 2926,
+   "seconds": 1.79
+  },
+  {
+   "ts": "2017-09-05T11:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170905114500.gkg.csv.zip",
+   "manifest_size": 10989944,
+   "manifest_md5": "5249d2c44e4c795ce2dbe88de168e7d2",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 10989944,
+   "md5_received": "5249d2c44e4c795ce2dbe88de168e7d2",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170905114500.gkg.csv"
+   ],
+   "inner_bytes": 34799029,
+   "records": 2852,
+   "seconds": 1.38
+  },
+  {
+   "ts": "2017-09-07T05:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170907054500.gkg.csv.zip",
+   "manifest_size": 9548066,
+   "manifest_md5": "d3d135c43091a11b6d241024c1f23ccf",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9548066,
+   "md5_received": "d3d135c43091a11b6d241024c1f23ccf",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170907054500.gkg.csv"
+   ],
+   "inner_bytes": 30140086,
+   "records": 2327,
+   "seconds": 1.65
+  },
+  {
+   "ts": "2017-09-07T19:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170907194500.gkg.csv.zip",
+   "manifest_size": 16588138,
+   "manifest_md5": "5c275d29bd17b77130cc466333d1a62d",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 16588138,
+   "md5_received": "5c275d29bd17b77130cc466333d1a62d",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170907194500.gkg.csv"
+   ],
+   "inner_bytes": 52557225,
+   "records": 4205,
+   "seconds": 2.26
+  },
+  {
+   "ts": "2017-09-15T18:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170915184500.gkg.csv.zip",
+   "manifest_size": 15982549,
+   "manifest_md5": "f5d79c394a4e4131c21aa23ddc59e910",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 15982549,
+   "md5_received": "f5d79c394a4e4131c21aa23ddc59e910",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170915184500.gkg.csv"
+   ],
+   "inner_bytes": 50634940,
+   "records": 4096,
+   "seconds": 1.84
+  },
+  {
+   "ts": "2017-10-03T11:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171003111500.gkg.csv.zip",
+   "manifest_size": 10747068,
+   "manifest_md5": "1ee1cde0376f3852e36d312ea1bf56f8",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 10747068,
+   "md5_received": "1ee1cde0376f3852e36d312ea1bf56f8",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171003111500.gkg.csv"
+   ],
+   "inner_bytes": 34052203,
+   "records": 2758,
+   "seconds": 2.1
+  },
+  {
+   "ts": "2017-10-06T10:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171006101500.gkg.csv.zip",
+   "manifest_size": 9018215,
+   "manifest_md5": "8962c67c9dc10de2c18ae0698e666fc2",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9018215,
+   "md5_received": "8962c67c9dc10de2c18ae0698e666fc2",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171006101500.gkg.csv"
+   ],
+   "inner_bytes": 28300254,
+   "records": 2291,
+   "seconds": 1.39
+  },
+  {
+   "ts": "2017-10-12T15:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171012151500.gkg.csv.zip",
+   "manifest_size": 14731316,
+   "manifest_md5": "971066f470540c889502642c1d953984",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 14731316,
+   "md5_received": "971066f470540c889502642c1d953984",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171012151500.gkg.csv"
+   ],
+   "inner_bytes": 46690814,
+   "records": 3946,
+   "seconds": 1.9
+  },
+  {
+   "ts": "2017-10-15T12:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171015121500.gkg.csv.zip",
+   "manifest_size": 5761207,
+   "manifest_md5": "6693de55a348be98ca8d7cf4a3fd617e",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 5761207,
+   "md5_received": "6693de55a348be98ca8d7cf4a3fd617e",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171015121500.gkg.csv"
+   ],
+   "inner_bytes": 18171891,
+   "records": 1344,
+   "seconds": 1.3
+  },
+  {
+   "ts": "2017-10-15T12:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171015124500.gkg.csv.zip",
+   "manifest_size": 6093883,
+   "manifest_md5": "cad7b4014af042cb281436454cb5933a",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 6093883,
+   "md5_received": "cad7b4014af042cb281436454cb5933a",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171015124500.gkg.csv"
+   ],
+   "inner_bytes": 19206970,
+   "records": 1462,
+   "seconds": 1.16
+  },
+  {
+   "ts": "2017-10-16T14:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171016141500.gkg.csv.zip",
+   "manifest_size": 15560573,
+   "manifest_md5": "1cf6466c82f9097bf62bb4336607e1ef",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 15560573,
+   "md5_received": "1cf6466c82f9097bf62bb4336607e1ef",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171016141500.gkg.csv"
+   ],
+   "inner_bytes": 49249612,
+   "records": 4017,
+   "seconds": 1.39
+  },
+  {
+   "ts": "2017-10-21T05:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171021053000.gkg.csv.zip",
+   "manifest_size": 6316346,
+   "manifest_md5": "a130a9d006488fc7ed363148956d4078",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 6316346,
+   "md5_received": "a130a9d006488fc7ed363148956d4078",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171021053000.gkg.csv"
+   ],
+   "inner_bytes": 19844452,
+   "records": 1536,
+   "seconds": 0.48
+  },
+  {
+   "ts": "2017-10-25T17:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171025174500.gkg.csv.zip",
+   "manifest_size": 18134010,
+   "manifest_md5": "fd433c34517610b25f777ab3ae758272",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 18134010,
+   "md5_received": "fd433c34517610b25f777ab3ae758272",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171025174500.gkg.csv"
+   ],
+   "inner_bytes": 57132082,
+   "records": 4808,
+   "seconds": 1.61
+  },
+  {
+   "ts": "2017-12-06T08:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171206081500.gkg.csv.zip",
+   "manifest_size": 11060368,
+   "manifest_md5": "4f77c07b17e8fc3e89f0617052c3e206",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 11060368,
+   "md5_received": "4f77c07b17e8fc3e89f0617052c3e206",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171206081500.gkg.csv"
+   ],
+   "inner_bytes": 34950079,
+   "records": 2739,
+   "seconds": 1.15
+  },
+  {
+   "ts": "2018-01-31T08:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180131080000.gkg.csv.zip",
+   "manifest_size": 9600192,
+   "manifest_md5": "c05b972df21d2304cec5d49a91970feb",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9600192,
+   "md5_received": "c05b972df21d2304cec5d49a91970feb",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180131080000.gkg.csv"
+   ],
+   "inner_bytes": 30326045,
+   "records": 2305,
+   "seconds": 0.87
+  },
+  {
+   "ts": "2018-02-13T09:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180213093000.gkg.csv.zip",
+   "manifest_size": 9765068,
+   "manifest_md5": "a575b181fcf8e62dd386225a5a69acbd",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9765068,
+   "md5_received": "a575b181fcf8e62dd386225a5a69acbd",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180213093000.gkg.csv"
+   ],
+   "inner_bytes": 30651690,
+   "records": 2439,
+   "seconds": 0.72
+  },
+  {
+   "ts": "2018-02-27T16:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180227164500.gkg.csv.zip",
+   "manifest_size": 15081637,
+   "manifest_md5": "ec43900ffd2a71f7ce97c1942339364c",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 15081637,
+   "md5_received": "ec43900ffd2a71f7ce97c1942339364c",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180227164500.gkg.csv"
+   ],
+   "inner_bytes": 47711104,
+   "records": 4037,
+   "seconds": 1.09
+  },
+  {
+   "ts": "2018-04-02T18:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180402181500.gkg.csv.zip",
+   "manifest_size": 15180666,
+   "manifest_md5": "f63c944640ce18d0bf1b1454cf4cda33",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 15180666,
+   "md5_received": "f63c944640ce18d0bf1b1454cf4cda33",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180402181500.gkg.csv"
+   ],
+   "inner_bytes": 47986505,
+   "records": 3825,
+   "seconds": 1.26
+  },
+  {
+   "ts": "2018-04-09T11:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180409113000.gkg.csv.zip",
+   "manifest_size": 11500365,
+   "manifest_md5": "b197652a6e638e505c279b1404c599f0",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 11500365,
+   "md5_received": "b197652a6e638e505c279b1404c599f0",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180409113000.gkg.csv"
+   ],
+   "inner_bytes": 36302664,
+   "records": 2834,
+   "seconds": 1.22
+  },
+  {
+   "ts": "2018-04-23T17:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180423170000.gkg.csv.zip",
+   "manifest_size": 15805272,
+   "manifest_md5": "e636b3de09862f45ae1e2a7e2776a05d",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 15805272,
+   "md5_received": "e636b3de09862f45ae1e2a7e2776a05d",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180423170000.gkg.csv"
+   ],
+   "inner_bytes": 49867261,
+   "records": 4108,
+   "seconds": 1.42
+  },
+  {
+   "ts": "2019-06-23T11:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20190623113000.gkg.csv.zip",
+   "manifest_size": 3916755,
+   "manifest_md5": "a6fe9112ed9797669f01ead2de488d61",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 3916755,
+   "md5_received": "a6fe9112ed9797669f01ead2de488d61",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20190623113000.gkg.csv"
+   ],
+   "inner_bytes": 12285497,
+   "records": 993,
+   "seconds": 0.89
+  },
+  {
+   "ts": "2019-06-23T13:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20190623130000.gkg.csv.zip",
+   "manifest_size": 4285761,
+   "manifest_md5": "454eb52cf547e895c37737a368983523",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 4285761,
+   "md5_received": "454eb52cf547e895c37737a368983523",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20190623130000.gkg.csv"
+   ],
+   "inner_bytes": 13512728,
+   "records": 1068,
+   "seconds": 0.79
+  },
+  {
+   "ts": "2020-10-11T00:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20201011003000.gkg.csv.zip",
+   "manifest_size": 2453473,
+   "manifest_md5": "d54f9f5d2436af51bcaa1eece40aed0d",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 2453473,
+   "md5_received": "d54f9f5d2436af51bcaa1eece40aed0d",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20201011003000.gkg.csv"
+   ],
+   "inner_bytes": 7668087,
+   "records": 571,
+   "seconds": 0.55
+  },
+  {
+   "ts": "2022-11-10T21:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20221110214500.gkg.csv.zip",
+   "manifest_size": 7337477,
+   "manifest_md5": "9d19bc1bd35cbe001f6afad83f4bab3b",
+   "samples": [
+    "B",
+    "B",
+    "B",
+    "B",
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 7337477,
+   "md5_received": "9d19bc1bd35cbe001f6afad83f4bab3b",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20221110214500.gkg.csv"
+   ],
+   "inner_bytes": 22642487,
+   "records": 1743,
+   "seconds": 0.65
+  },
+  {
+   "ts": "2023-03-21T21:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20230321214500.gkg.csv.zip",
+   "manifest_size": 7582010,
+   "manifest_md5": "fecfdbec2a82fefe2eca282866b89bde",
+   "samples": [
+    "B",
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 7582010,
+   "md5_received": "fecfdbec2a82fefe2eca282866b89bde",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20230321214500.gkg.csv"
+   ],
+   "inner_bytes": 23495143,
+   "records": 1877,
+   "seconds": 0.5
+  },
+  {
+   "ts": "2023-03-22T00:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20230322001500.gkg.csv.zip",
+   "manifest_size": 1582755,
+   "manifest_md5": "498e3855eb48ed5758b13c3971d5b6a9",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 1582755,
+   "md5_received": "498e3855eb48ed5758b13c3971d5b6a9",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20230322001500.gkg.csv"
+   ],
+   "inner_bytes": 4818429,
+   "records": 349,
+   "seconds": 0.23
+  },
+  {
+   "ts": "2025-07-02T02:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20250702021500.gkg.csv.zip",
+   "manifest_size": 1354378,
+   "manifest_md5": "7ba61fbe43d767d8aa231441a29f51ce",
+   "samples": [
+    "B"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 1354378,
+   "md5_received": "7ba61fbe43d767d8aa231441a29f51ce",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20250702021500.gkg.csv"
+   ],
+   "inner_bytes": 4199316,
+   "records": 404,
+   "seconds": 0.31
+  },
+  {
+   "ts": "2015-06-15T12:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20150615121500.gkg.csv.zip",
+   "manifest_size": 9446057,
+   "manifest_md5": "b3392003fa78ef7313da3e13a507a4ea",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9446057,
+   "md5_received": "b3392003fa78ef7313da3e13a507a4ea",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20150615121500.gkg.csv"
+   ],
+   "inner_bytes": 29951709,
+   "records": 2709,
+   "seconds": 0.58
+  },
+  {
+   "ts": "2015-07-05T22:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20150705223000.gkg.csv.zip",
+   "manifest_size": 7569692,
+   "manifest_md5": "d51d0fe15d4c787a7f6cc1955ace6e8b",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 7569692,
+   "md5_received": "d51d0fe15d4c787a7f6cc1955ace6e8b",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20150705223000.gkg.csv"
+   ],
+   "inner_bytes": 23995826,
+   "records": 2013,
+   "seconds": 0.83
+  },
+  {
+   "ts": "2015-07-30T13:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20150730131500.gkg.csv.zip",
+   "manifest_size": 11926474,
+   "manifest_md5": "a28381c98eeb52a8a9ec2d4310914389",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 11926474,
+   "md5_received": "a28381c98eeb52a8a9ec2d4310914389",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20150730131500.gkg.csv"
+   ],
+   "inner_bytes": 37608571,
+   "records": 3339,
+   "seconds": 0.75
+  },
+  {
+   "ts": "2015-08-15T17:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20150815171500.gkg.csv.zip",
+   "manifest_size": 6705671,
+   "manifest_md5": "164ac0d2b65657319774a0435390b248",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 6705671,
+   "md5_received": "164ac0d2b65657319774a0435390b248",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20150815171500.gkg.csv"
+   ],
+   "inner_bytes": 21264214,
+   "records": 1810,
+   "seconds": 0.48
+  },
+  {
+   "ts": "2015-09-30T19:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20150930193000.gkg.csv.zip",
+   "manifest_size": 14445957,
+   "manifest_md5": "eb0b653e4f48995b377b9ec8df553ccd",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 14445957,
+   "md5_received": "eb0b653e4f48995b377b9ec8df553ccd",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20150930193000.gkg.csv"
+   ],
+   "inner_bytes": 45696735,
+   "records": 4061,
+   "seconds": 1.66
+  },
+  {
+   "ts": "2016-01-11T10:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20160111103000.gkg.csv.zip",
+   "manifest_size": 9229616,
+   "manifest_md5": "795213c785cd5e50d333487ae954a522",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9229616,
+   "md5_received": "795213c785cd5e50d333487ae954a522",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20160111103000.gkg.csv"
+   ],
+   "inner_bytes": 29195212,
+   "records": 2580,
+   "seconds": 1.52
+  },
+  {
+   "ts": "2016-04-09T20:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20160409201500.gkg.csv.zip",
+   "manifest_size": 7007088,
+   "manifest_md5": "1701eda46c79325231389d9103c3277a",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 7007088,
+   "md5_received": "1701eda46c79325231389d9103c3277a",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20160409201500.gkg.csv"
+   ],
+   "inner_bytes": 22108592,
+   "records": 1886,
+   "seconds": 0.7
+  },
+  {
+   "ts": "2016-09-29T20:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20160929201500.gkg.csv.zip",
+   "manifest_size": 14469443,
+   "manifest_md5": "8600a138b2f2249014c4af2e0dcd124b",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 14469443,
+   "md5_received": "8600a138b2f2249014c4af2e0dcd124b",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20160929201500.gkg.csv"
+   ],
+   "inner_bytes": 45790192,
+   "records": 3844,
+   "seconds": 1.51
+  },
+  {
+   "ts": "2016-11-05T10:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20161105100000.gkg.csv.zip",
+   "manifest_size": 6102837,
+   "manifest_md5": "4dd2f572fef1b785ef3ee4c77811fe8a",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 6102837,
+   "md5_received": "4dd2f572fef1b785ef3ee4c77811fe8a",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20161105100000.gkg.csv"
+   ],
+   "inner_bytes": 19398167,
+   "records": 1506,
+   "seconds": 0.48
+  },
+  {
+   "ts": "2017-01-04T10:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170104104500.gkg.csv.zip",
+   "manifest_size": 10260944,
+   "manifest_md5": "77b221b02798e1bcddb3c5e138f5f2a9",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 10260944,
+   "md5_received": "77b221b02798e1bcddb3c5e138f5f2a9",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170104104500.gkg.csv"
+   ],
+   "inner_bytes": 32396590,
+   "records": 2631,
+   "seconds": 1.42
+  },
+  {
+   "ts": "2017-04-06T15:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170406150000.gkg.csv.zip",
+   "manifest_size": 18651121,
+   "manifest_md5": "044c87dc99e7460a154e610185a62448",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 18651121,
+   "md5_received": "044c87dc99e7460a154e610185a62448",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170406150000.gkg.csv"
+   ],
+   "inner_bytes": 59121105,
+   "records": 5208,
+   "seconds": 2.47
+  },
+  {
+   "ts": "2017-10-31T12:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171031121500.gkg.csv.zip",
+   "manifest_size": 12757868,
+   "manifest_md5": "5fbd68e3f9da923c1d51ed0b93132428",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 12757868,
+   "md5_received": "5fbd68e3f9da923c1d51ed0b93132428",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171031121500.gkg.csv"
+   ],
+   "inner_bytes": 40263704,
+   "records": 3195,
+   "seconds": 1.93
+  },
+  {
+   "ts": "2018-01-10T19:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180110190000.gkg.csv.zip",
+   "manifest_size": 17403223,
+   "manifest_md5": "6929938a73fbaed8ec4b9ace708357bd",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 17403223,
+   "md5_received": "6929938a73fbaed8ec4b9ace708357bd",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180110190000.gkg.csv"
+   ],
+   "inner_bytes": 54892858,
+   "records": 4336,
+   "seconds": 2.11
+  },
+  {
+   "ts": "2018-02-14T04:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180214044500.gkg.csv.zip",
+   "manifest_size": 9119704,
+   "manifest_md5": "f24af8307c437ab207b14cbd5720d6fe",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9119704,
+   "md5_received": "f24af8307c437ab207b14cbd5720d6fe",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180214044500.gkg.csv"
+   ],
+   "inner_bytes": 28722772,
+   "records": 2321,
+   "seconds": 1.06
+  },
+  {
+   "ts": "2018-03-13T07:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180313073000.gkg.csv.zip",
+   "manifest_size": 9471110,
+   "manifest_md5": "c8f3fd49841ad4f41c82cf113abd4dc2",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9471110,
+   "md5_received": "c8f3fd49841ad4f41c82cf113abd4dc2",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180313073000.gkg.csv"
+   ],
+   "inner_bytes": 29862652,
+   "records": 2263,
+   "seconds": 1.79
+  },
+  {
+   "ts": "2018-04-16T06:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180416064500.gkg.csv.zip",
+   "manifest_size": 7237374,
+   "manifest_md5": "d8b7a7ee55c0f0bd11abb565c1381851",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 7237374,
+   "md5_received": "d8b7a7ee55c0f0bd11abb565c1381851",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180416064500.gkg.csv"
+   ],
+   "inner_bytes": 22717251,
+   "records": 1765,
+   "seconds": 1.0
+  },
+  {
+   "ts": "2018-04-20T11:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180420114500.gkg.csv.zip",
+   "manifest_size": 10144287,
+   "manifest_md5": "e271227768c46c5166280b0ae597c307",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 10144287,
+   "md5_received": "e271227768c46c5166280b0ae597c307",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180420114500.gkg.csv"
+   ],
+   "inner_bytes": 31955764,
+   "records": 2600,
+   "seconds": 1.73
+  },
+  {
+   "ts": "2018-05-13T00:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180513001500.gkg.csv.zip",
+   "manifest_size": 6056184,
+   "manifest_md5": "22b421e2f94ec58a8e607f5bbf8782a2",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 6056184,
+   "md5_received": "22b421e2f94ec58a8e607f5bbf8782a2",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180513001500.gkg.csv"
+   ],
+   "inner_bytes": 19175039,
+   "records": 1503,
+   "seconds": 1.62
+  },
+  {
+   "ts": "2018-05-15T10:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180515104500.gkg.csv.zip",
+   "manifest_size": 9909040,
+   "manifest_md5": "2ef4d8319fc937ff4befa2f6478ba309",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9909040,
+   "md5_received": "2ef4d8319fc937ff4befa2f6478ba309",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180515104500.gkg.csv"
+   ],
+   "inner_bytes": 31485932,
+   "records": 2533,
+   "seconds": 1.56
+  },
+  {
+   "ts": "2018-05-24T13:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180524134500.gkg.csv.zip",
+   "manifest_size": 15998727,
+   "manifest_md5": "a4f9b8b42bf25739dd8546d6e23e31fc",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 15998727,
+   "md5_received": "a4f9b8b42bf25739dd8546d6e23e31fc",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180524134500.gkg.csv"
+   ],
+   "inner_bytes": 50447811,
+   "records": 4002,
+   "seconds": 1.6
+  },
+  {
+   "ts": "2018-06-22T00:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180622003000.gkg.csv.zip",
+   "manifest_size": 10933300,
+   "manifest_md5": "63415800dd8cd14e87805fa6e45f53ec",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 10933300,
+   "md5_received": "63415800dd8cd14e87805fa6e45f53ec",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180622003000.gkg.csv"
+   ],
+   "inner_bytes": 34682302,
+   "records": 2733,
+   "seconds": 1.37
+  },
+  {
+   "ts": "2018-07-20T22:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180720220000.gkg.csv.zip",
+   "manifest_size": 10307480,
+   "manifest_md5": "de23eec46b72a4f0e46a5c743309cd1b",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 10307480,
+   "md5_received": "de23eec46b72a4f0e46a5c743309cd1b",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180720220000.gkg.csv"
+   ],
+   "inner_bytes": 32732541,
+   "records": 2852,
+   "seconds": 0.84
+  },
+  {
+   "ts": "2018-08-01T10:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180801101500.gkg.csv.zip",
+   "manifest_size": 9175496,
+   "manifest_md5": "2bd016720682e9896e4ae931305c02b5",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9175496,
+   "md5_received": "2bd016720682e9896e4ae931305c02b5",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180801101500.gkg.csv"
+   ],
+   "inner_bytes": 28769707,
+   "records": 2411,
+   "seconds": 0.95
+  },
+  {
+   "ts": "2018-08-25T17:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180825171500.gkg.csv.zip",
+   "manifest_size": 5999627,
+   "manifest_md5": "9cadd9cbef90c0a8477fa039eb8e5c65",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 5999627,
+   "md5_received": "9cadd9cbef90c0a8477fa039eb8e5c65",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180825171500.gkg.csv"
+   ],
+   "inner_bytes": 18941823,
+   "records": 1567,
+   "seconds": 0.88
+  },
+  {
+   "ts": "2018-12-07T23:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20181207234500.gkg.csv.zip",
+   "manifest_size": 7993745,
+   "manifest_md5": "1b009cc99e9db2a9944bb6e99d851f90",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 7993745,
+   "md5_received": "1b009cc99e9db2a9944bb6e99d851f90",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20181207234500.gkg.csv"
+   ],
+   "inner_bytes": 25146038,
+   "records": 2140,
+   "seconds": 1.05
+  },
+  {
+   "ts": "2018-12-14T04:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20181214044500.gkg.csv.zip",
+   "manifest_size": 6549870,
+   "manifest_md5": "f294c6efa1f1081abce8206cc50399cd",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 6549870,
+   "md5_received": "f294c6efa1f1081abce8206cc50399cd",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20181214044500.gkg.csv"
+   ],
+   "inner_bytes": 20644075,
+   "records": 1701,
+   "seconds": 0.87
+  },
+  {
+   "ts": "2019-01-20T13:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20190120133000.gkg.csv.zip",
+   "manifest_size": 4696640,
+   "manifest_md5": "cd0c0881312f5b2e732fce47c05141dc",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 4696640,
+   "md5_received": "cd0c0881312f5b2e732fce47c05141dc",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20190120133000.gkg.csv"
+   ],
+   "inner_bytes": 14822498,
+   "records": 1342,
+   "seconds": 0.84
+  },
+  {
+   "ts": "2019-02-02T16:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20190202160000.gkg.csv.zip",
+   "manifest_size": 5565780,
+   "manifest_md5": "d40accfc06ae4cba72ee129efc2c501f",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 5565780,
+   "md5_received": "d40accfc06ae4cba72ee129efc2c501f",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20190202160000.gkg.csv"
+   ],
+   "inner_bytes": 17563216,
+   "records": 1473,
+   "seconds": 0.83
+  },
+  {
+   "ts": "2019-04-13T23:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20190413233000.gkg.csv.zip",
+   "manifest_size": 5408246,
+   "manifest_md5": "b2b15878a771b5a155436be8bd6f543d",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 5408246,
+   "md5_received": "b2b15878a771b5a155436be8bd6f543d",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20190413233000.gkg.csv"
+   ],
+   "inner_bytes": 17081556,
+   "records": 1504,
+   "seconds": 0.62
+  },
+  {
+   "ts": "2019-04-22T15:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20190422150000.gkg.csv.zip",
+   "manifest_size": 9990190,
+   "manifest_md5": "0b5c2e3731f07f8296c0139c565a36b0",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9990190,
+   "md5_received": "0b5c2e3731f07f8296c0139c565a36b0",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20190422150000.gkg.csv"
+   ],
+   "inner_bytes": 31621551,
+   "records": 2592,
+   "seconds": 0.71
+  },
+  {
+   "ts": "2019-11-16T06:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20191116060000.gkg.csv.zip",
+   "manifest_size": 4581412,
+   "manifest_md5": "c23f52782d453ee5e90f3f73c271f7a3",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 4581412,
+   "md5_received": "c23f52782d453ee5e90f3f73c271f7a3",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20191116060000.gkg.csv"
+   ],
+   "inner_bytes": 14398157,
+   "records": 1148,
+   "seconds": 0.6
+  },
+  {
+   "ts": "2019-12-28T03:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20191228030000.gkg.csv.zip",
+   "manifest_size": 4323669,
+   "manifest_md5": "db80595098bf8d412861181281639fa5",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 4323669,
+   "md5_received": "db80595098bf8d412861181281639fa5",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20191228030000.gkg.csv"
+   ],
+   "inner_bytes": 13540798,
+   "records": 1114,
+   "seconds": 0.52
+  },
+  {
+   "ts": "2020-02-13T11:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20200213114500.gkg.csv.zip",
+   "manifest_size": 6704718,
+   "manifest_md5": "5a7b02834331288e1b0733b2de26c311",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 6704718,
+   "md5_received": "5a7b02834331288e1b0733b2de26c311",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20200213114500.gkg.csv"
+   ],
+   "inner_bytes": 21061342,
+   "records": 1641,
+   "seconds": 0.43
+  },
+  {
+   "ts": "2020-02-23T05:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20200223054500.gkg.csv.zip",
+   "manifest_size": 3572782,
+   "manifest_md5": "41cbf2f6fea5ffe55fcd9815358c66b1",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 3572782,
+   "md5_received": "41cbf2f6fea5ffe55fcd9815358c66b1",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20200223054500.gkg.csv"
+   ],
+   "inner_bytes": 11206896,
+   "records": 862,
+   "seconds": 0.23
+  },
+  {
+   "ts": "2020-03-23T10:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20200323104500.gkg.csv.zip",
+   "manifest_size": 5976714,
+   "manifest_md5": "9f1d2c63219ebd5f459c9900cf679dc7",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 5976714,
+   "md5_received": "9f1d2c63219ebd5f459c9900cf679dc7",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20200323104500.gkg.csv"
+   ],
+   "inner_bytes": 19021831,
+   "records": 1525,
+   "seconds": 0.4
+  },
+  {
+   "ts": "2020-04-26T21:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20200426214500.gkg.csv.zip",
+   "manifest_size": 5283849,
+   "manifest_md5": "a8dbecc1d303fdddf56e0d0a2331f396",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 5283849,
+   "md5_received": "a8dbecc1d303fdddf56e0d0a2331f396",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20200426214500.gkg.csv"
+   ],
+   "inner_bytes": 16650056,
+   "records": 1272,
+   "seconds": 0.36
+  },
+  {
+   "ts": "2020-05-23T19:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20200523194500.gkg.csv.zip",
+   "manifest_size": 4327562,
+   "manifest_md5": "1da389096aa8d8ee57823aa2d4284ea5",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 4327562,
+   "md5_received": "1da389096aa8d8ee57823aa2d4284ea5",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20200523194500.gkg.csv"
+   ],
+   "inner_bytes": 13750849,
+   "records": 1093,
+   "seconds": 0.3
+  },
+  {
+   "ts": "2021-01-31T22:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20210131223000.gkg.csv.zip",
+   "manifest_size": 4361144,
+   "manifest_md5": "03a2d4eadf3f5cb015c4e9f4ddad8b6f",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 4361144,
+   "md5_received": "03a2d4eadf3f5cb015c4e9f4ddad8b6f",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20210131223000.gkg.csv"
+   ],
+   "inner_bytes": 14007627,
+   "records": 1016,
+   "seconds": 0.42
+  },
+  {
+   "ts": "2021-02-22T18:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20210222184500.gkg.csv.zip",
+   "manifest_size": 8963567,
+   "manifest_md5": "48ebb646b904feed82ba7657cf7a2424",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 8963567,
+   "md5_received": "48ebb646b904feed82ba7657cf7a2424",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20210222184500.gkg.csv"
+   ],
+   "inner_bytes": 27821894,
+   "records": 2258,
+   "seconds": 0.65
+  },
+  {
+   "ts": "2021-03-12T09:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20210312090000.gkg.csv.zip",
+   "manifest_size": 4860266,
+   "manifest_md5": "78a97c75537bced80182134ee6d1f405",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 4860266,
+   "md5_received": "78a97c75537bced80182134ee6d1f405",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20210312090000.gkg.csv"
+   ],
+   "inner_bytes": 15161703,
+   "records": 1249,
+   "seconds": 0.65
+  },
+  {
+   "ts": "2021-08-01T10:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20210801101500.gkg.csv.zip",
+   "manifest_size": 2901320,
+   "manifest_md5": "80ce52e42f05e2b902a556db3f95bf67",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 2901320,
+   "md5_received": "80ce52e42f05e2b902a556db3f95bf67",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20210801101500.gkg.csv"
+   ],
+   "inner_bytes": 8962981,
+   "records": 720,
+   "seconds": 0.24
+  },
+  {
+   "ts": "2021-09-09T17:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20210909171500.gkg.csv.zip",
+   "manifest_size": 8053852,
+   "manifest_md5": "a305835399d9cce8922e8de3590ec0cd",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 8053852,
+   "md5_received": "a305835399d9cce8922e8de3590ec0cd",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20210909171500.gkg.csv"
+   ],
+   "inner_bytes": 25033404,
+   "records": 2065,
+   "seconds": 0.79
+  },
+  {
+   "ts": "2022-02-04T10:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20220204100000.gkg.csv.zip",
+   "manifest_size": 4487465,
+   "manifest_md5": "18de0c77b8cde7179798ace60964e385",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 4487465,
+   "md5_received": "18de0c77b8cde7179798ace60964e385",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20220204100000.gkg.csv"
+   ],
+   "inner_bytes": 14025110,
+   "records": 1166,
+   "seconds": 0.32
+  },
+  {
+   "ts": "2022-02-20T16:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20220220163000.gkg.csv.zip",
+   "manifest_size": 3671933,
+   "manifest_md5": "b7d011ad04e2796e88e3ac160963e7df",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 3671933,
+   "md5_received": "b7d011ad04e2796e88e3ac160963e7df",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20220220163000.gkg.csv"
+   ],
+   "inner_bytes": 11519238,
+   "records": 872,
+   "seconds": 0.24
+  },
+  {
+   "ts": "2022-04-08T14:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20220408141500.gkg.csv.zip",
+   "manifest_size": 6421334,
+   "manifest_md5": "e1c649774939db71e15095277729f164",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 6421334,
+   "md5_received": "e1c649774939db71e15095277729f164",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20220408141500.gkg.csv"
+   ],
+   "inner_bytes": 19947427,
+   "records": 1592,
+   "seconds": 0.65
+  },
+  {
+   "ts": "2022-04-23T08:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20220423080000.gkg.csv.zip",
+   "manifest_size": 2769227,
+   "manifest_md5": "a5344edf0ad168269616e9d6fe22470e",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 2769227,
+   "md5_received": "a5344edf0ad168269616e9d6fe22470e",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20220423080000.gkg.csv"
+   ],
+   "inner_bytes": 8621056,
+   "records": 663,
+   "seconds": 0.4
+  },
+  {
+   "ts": "2022-05-05T00:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20220505001500.gkg.csv.zip",
+   "manifest_size": 4674480,
+   "manifest_md5": "b1f93c735f66c22a310dfafe22c3459a",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 4674480,
+   "md5_received": "b1f93c735f66c22a310dfafe22c3459a",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20220505001500.gkg.csv"
+   ],
+   "inner_bytes": 14508178,
+   "records": 1146,
+   "seconds": 0.45
+  },
+  {
+   "ts": "2022-07-23T10:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20220723103000.gkg.csv.zip",
+   "manifest_size": 2922331,
+   "manifest_md5": "fc36960cd8ce8243c2f1ebbd123b2ba0",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 2922331,
+   "md5_received": "fc36960cd8ce8243c2f1ebbd123b2ba0",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20220723103000.gkg.csv"
+   ],
+   "inner_bytes": 9061198,
+   "records": 656,
+   "seconds": 0.32
+  },
+  {
+   "ts": "2022-09-27T01:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20220927011500.gkg.csv.zip",
+   "manifest_size": 4808545,
+   "manifest_md5": "03e647412d507c7200d53f6e162c9934",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 4808545,
+   "md5_received": "03e647412d507c7200d53f6e162c9934",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20220927011500.gkg.csv"
+   ],
+   "inner_bytes": 14943971,
+   "records": 1220,
+   "seconds": 0.45
+  },
+  {
+   "ts": "2022-10-26T17:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20221026173000.gkg.csv.zip",
+   "manifest_size": 7136082,
+   "manifest_md5": "00153d1f9ac98ee26c93fde7b7cb2ca1",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 7136082,
+   "md5_received": "00153d1f9ac98ee26c93fde7b7cb2ca1",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20221026173000.gkg.csv"
+   ],
+   "inner_bytes": 22130291,
+   "records": 1828,
+   "seconds": 0.62
+  },
+  {
+   "ts": "2023-04-04T23:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20230404231500.gkg.csv.zip",
+   "manifest_size": 10689580,
+   "manifest_md5": "2ea7ab6d033d5a70e1314581c3126fae",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 10689580,
+   "md5_received": "2ea7ab6d033d5a70e1314581c3126fae",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20230404231500.gkg.csv"
+   ],
+   "inner_bytes": 33123698,
+   "records": 2549,
+   "seconds": 0.64
+  },
+  {
+   "ts": "2023-08-01T02:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20230801024500.gkg.csv.zip",
+   "manifest_size": 5128758,
+   "manifest_md5": "3d78df02924318cc0bcd9170a8c37f06",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 5128758,
+   "md5_received": "3d78df02924318cc0bcd9170a8c37f06",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20230801024500.gkg.csv"
+   ],
+   "inner_bytes": 15859403,
+   "records": 1335,
+   "seconds": 0.63
+  },
+  {
+   "ts": "2023-08-15T21:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20230815214500.gkg.csv.zip",
+   "manifest_size": 10001079,
+   "manifest_md5": "9201a39201703c51cd447c06c9d1af4d",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 10001079,
+   "md5_received": "9201a39201703c51cd447c06c9d1af4d",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20230815214500.gkg.csv"
+   ],
+   "inner_bytes": 30846669,
+   "records": 2352,
+   "seconds": 0.53
+  },
+  {
+   "ts": "2023-10-22T06:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20231022060000.gkg.csv.zip",
+   "manifest_size": 2618510,
+   "manifest_md5": "98ea1df454497a3c2493e2881a30f5cc",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 2618510,
+   "md5_received": "98ea1df454497a3c2493e2881a30f5cc",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20231022060000.gkg.csv"
+   ],
+   "inner_bytes": 8181782,
+   "records": 682,
+   "seconds": 0.21
+  },
+  {
+   "ts": "2023-12-16T05:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20231216051500.gkg.csv.zip",
+   "manifest_size": 3735399,
+   "manifest_md5": "e85530c5429330187c4da6b1d3993053",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 3735399,
+   "md5_received": "e85530c5429330187c4da6b1d3993053",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20231216051500.gkg.csv"
+   ],
+   "inner_bytes": 11637406,
+   "records": 993,
+   "seconds": 0.44
+  },
+  {
+   "ts": "2024-04-04T01:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20240404014500.gkg.csv.zip",
+   "manifest_size": 5048304,
+   "manifest_md5": "e19d80071443769227d742ced39784d6",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 5048304,
+   "md5_received": "e19d80071443769227d742ced39784d6",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20240404014500.gkg.csv"
+   ],
+   "inner_bytes": 15559480,
+   "records": 1222,
+   "seconds": 0.29
+  },
+  {
+   "ts": "2024-04-22T21:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20240422214500.gkg.csv.zip",
+   "manifest_size": 9395521,
+   "manifest_md5": "7c7bf5aa4ec4e83b766b938ecb452d14",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9395521,
+   "md5_received": "7c7bf5aa4ec4e83b766b938ecb452d14",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20240422214500.gkg.csv"
+   ],
+   "inner_bytes": 28957934,
+   "records": 2413,
+   "seconds": 0.75
+  },
+  {
+   "ts": "2024-05-07T08:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20240507080000.gkg.csv.zip",
+   "manifest_size": 4533991,
+   "manifest_md5": "c8d6427a09c2d230ef5a2340712adcb5",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 4533991,
+   "md5_received": "c8d6427a09c2d230ef5a2340712adcb5",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20240507080000.gkg.csv"
+   ],
+   "inner_bytes": 14089224,
+   "records": 1174,
+   "seconds": 0.41
+  },
+  {
+   "ts": "2024-05-21T17:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20240521174500.gkg.csv.zip",
+   "manifest_size": 9191038,
+   "manifest_md5": "8ec8575dc5db7949c0441d47760f7257",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 9191038,
+   "md5_received": "8ec8575dc5db7949c0441d47760f7257",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20240521174500.gkg.csv"
+   ],
+   "inner_bytes": 28413101,
+   "records": 2317,
+   "seconds": 0.71
+  },
+  {
+   "ts": "2024-06-02T02:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20240602020000.gkg.csv.zip",
+   "manifest_size": 2509310,
+   "manifest_md5": "51201c6677f633ca38ad16ffd7303f10",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 2509310,
+   "md5_received": "51201c6677f633ca38ad16ffd7303f10",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20240602020000.gkg.csv"
+   ],
+   "inner_bytes": 7730043,
+   "records": 624,
+   "seconds": 0.22
+  },
+  {
+   "ts": "2024-11-20T16:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20241120164500.gkg.csv.zip",
+   "manifest_size": 8277133,
+   "manifest_md5": "accacd0865ea3670ef2753c1803c329b",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 8277133,
+   "md5_received": "accacd0865ea3670ef2753c1803c329b",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20241120164500.gkg.csv"
+   ],
+   "inner_bytes": 25494455,
+   "records": 2009,
+   "seconds": 0.72
+  },
+  {
+   "ts": "2025-01-02T21:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20250102210000.gkg.csv.zip",
+   "manifest_size": 8187038,
+   "manifest_md5": "58f0b12c1b2e09b565bf05af72553593",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 8187038,
+   "md5_received": "58f0b12c1b2e09b565bf05af72553593",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20250102210000.gkg.csv"
+   ],
+   "inner_bytes": 25204463,
+   "records": 1957,
+   "seconds": 0.64
+  },
+  {
+   "ts": "2025-02-12T18:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20250212184500.gkg.csv.zip",
+   "manifest_size": 8798275,
+   "manifest_md5": "5dfb1df9231559ca4ea65093bd7dc208",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 8798275,
+   "md5_received": "5dfb1df9231559ca4ea65093bd7dc208",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20250212184500.gkg.csv"
+   ],
+   "inner_bytes": 27117319,
+   "records": 2185,
+   "seconds": 0.66
+  },
+  {
+   "ts": "2025-03-09T14:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20250309143000.gkg.csv.zip",
+   "manifest_size": 3963977,
+   "manifest_md5": "3a0107d516ec58694b95f70f2e8ef542",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 3963977,
+   "md5_received": "3a0107d516ec58694b95f70f2e8ef542",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20250309143000.gkg.csv"
+   ],
+   "inner_bytes": 12210832,
+   "records": 925,
+   "seconds": 0.49
+  },
+  {
+   "ts": "2025-04-15T03:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20250415031500.gkg.csv.zip",
+   "manifest_size": 3879288,
+   "manifest_md5": "fd7097941666082aae7f0ee28ea9765f",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 3879288,
+   "md5_received": "fd7097941666082aae7f0ee28ea9765f",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20250415031500.gkg.csv"
+   ],
+   "inner_bytes": 12034800,
+   "records": 962,
+   "seconds": 0.44
+  },
+  {
+   "ts": "2025-09-03T03:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20250903031500.gkg.csv.zip",
+   "manifest_size": 3408797,
+   "manifest_md5": "e73e4136ac1c26dee35a0996a990cf32",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 3408797,
+   "md5_received": "e73e4136ac1c26dee35a0996a990cf32",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20250903031500.gkg.csv"
+   ],
+   "inner_bytes": 10610352,
+   "records": 760,
+   "seconds": 0.51
+  },
+  {
+   "ts": "2025-09-06T11:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20250906113000.gkg.csv.zip",
+   "manifest_size": 4208451,
+   "manifest_md5": "dcbacecbd587429f80278689b4f633ef",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 4208451,
+   "md5_received": "dcbacecbd587429f80278689b4f633ef",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20250906113000.gkg.csv"
+   ],
+   "inner_bytes": 13077179,
+   "records": 982,
+   "seconds": 0.43
+  },
+  {
+   "ts": "2025-10-11T03:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20251011033000.gkg.csv.zip",
+   "manifest_size": 4025587,
+   "manifest_md5": "6f130acce436ffb4976a9b8842ea9add",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 4025587,
+   "md5_received": "6f130acce436ffb4976a9b8842ea9add",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20251011033000.gkg.csv"
+   ],
+   "inner_bytes": 12565988,
+   "records": 925,
+   "seconds": 0.47
+  },
+  {
+   "ts": "2025-10-27T01:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20251027013000.gkg.csv.zip",
+   "manifest_size": 3038028,
+   "manifest_md5": "9a167ebefa4463ee449b4efc82c075f4",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 3038028,
+   "md5_received": "9a167ebefa4463ee449b4efc82c075f4",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20251027013000.gkg.csv"
+   ],
+   "inner_bytes": 9364168,
+   "records": 794,
+   "seconds": 0.38
+  },
+  {
+   "ts": "2025-12-25T23:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20251225230000.gkg.csv.zip",
+   "manifest_size": 2153058,
+   "manifest_md5": "1e4ce334b6562b5cb866e0f5174fac1d",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 2153058,
+   "md5_received": "1e4ce334b6562b5cb866e0f5174fac1d",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20251225230000.gkg.csv"
+   ],
+   "inner_bytes": 6654355,
+   "records": 564,
+   "seconds": 0.48
+  },
+  {
+   "ts": "2025-12-30T09:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20251230090000.gkg.csv.zip",
+   "manifest_size": 3208264,
+   "manifest_md5": "3f7d97e83741473a203cc01140625baa",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 3208264,
+   "md5_received": "3f7d97e83741473a203cc01140625baa",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20251230090000.gkg.csv"
+   ],
+   "inner_bytes": 9910184,
+   "records": 753,
+   "seconds": 0.3
+  },
+  {
+   "ts": "2026-02-01T19:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20260201194500.gkg.csv.zip",
+   "manifest_size": 2821345,
+   "manifest_md5": "b8c07345fccd58eb683d207fe452f1b0",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 2821345,
+   "md5_received": "b8c07345fccd58eb683d207fe452f1b0",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20260201194500.gkg.csv"
+   ],
+   "inner_bytes": 8776336,
+   "records": 689,
+   "seconds": 0.42
+  },
+  {
+   "ts": "2026-02-05T04:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20260205043000.gkg.csv.zip",
+   "manifest_size": 3471498,
+   "manifest_md5": "b534cc9c8b9810288aa1be4ec5cc109b",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 3471498,
+   "md5_received": "b534cc9c8b9810288aa1be4ec5cc109b",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20260205043000.gkg.csv"
+   ],
+   "inner_bytes": 10784562,
+   "records": 855,
+   "seconds": 0.3
+  },
+  {
+   "ts": "2026-02-15T13:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20260215130000.gkg.csv.zip",
+   "manifest_size": 2974678,
+   "manifest_md5": "b0fb37156d45f848ed3a8ded5a1c450c",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 2974678,
+   "md5_received": "b0fb37156d45f848ed3a8ded5a1c450c",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20260215130000.gkg.csv"
+   ],
+   "inner_bytes": 9185873,
+   "records": 693,
+   "seconds": 0.19
+  },
+  {
+   "ts": "2026-03-29T14:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20260329141500.gkg.csv.zip",
+   "manifest_size": 2909802,
+   "manifest_md5": "375587daa0ee12b400d861c632200049",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 2909802,
+   "md5_received": "375587daa0ee12b400d861c632200049",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20260329141500.gkg.csv"
+   ],
+   "inner_bytes": 9039296,
+   "records": 693,
+   "seconds": 0.2
+  },
+  {
+   "ts": "2026-03-30T01:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20260330014500.gkg.csv.zip",
+   "manifest_size": 2604101,
+   "manifest_md5": "3a0c5ce5e54f072c93fd1a6135a57344",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 2604101,
+   "md5_received": "3a0c5ce5e54f072c93fd1a6135a57344",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20260330014500.gkg.csv"
+   ],
+   "inner_bytes": 8041840,
+   "records": 615,
+   "seconds": 0.2
+  },
+  {
+   "ts": "2026-05-15T04:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20260515040000.gkg.csv.zip",
+   "manifest_size": 3062045,
+   "manifest_md5": "da0ef21fa2ef947a9291be744fa6f49a",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 3062045,
+   "md5_received": "da0ef21fa2ef947a9291be744fa6f49a",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20260515040000.gkg.csv"
+   ],
+   "inner_bytes": 9444913,
+   "records": 695,
+   "seconds": 0.3
+  },
+  {
+   "ts": "2026-06-02T14:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20260602144500.gkg.csv.zip",
+   "manifest_size": 6322180,
+   "manifest_md5": "08508f9d26741a226ca0449e92a667b5",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 6322180,
+   "md5_received": "08508f9d26741a226ca0449e92a667b5",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20260602144500.gkg.csv"
+   ],
+   "inner_bytes": 19507322,
+   "records": 1510,
+   "seconds": 0.41
+  },
+  {
+   "ts": "2026-06-24T07:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20260624071500.gkg.csv.zip",
+   "manifest_size": 3683883,
+   "manifest_md5": "d837fd8c75532b901f470c51722c2d56",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 3683883,
+   "md5_received": "d837fd8c75532b901f470c51722c2d56",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20260624071500.gkg.csv"
+   ],
+   "inner_bytes": 11397559,
+   "records": 864,
+   "seconds": 0.21
+  },
+  {
+   "ts": "2026-06-26T01:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20260626013000.gkg.csv.zip",
+   "manifest_size": 3964388,
+   "manifest_md5": "dd817fa05a39831e72fe810615e6a088",
+   "samples": [
+    "C"
+   ],
+   "collect_docids": false,
+   "http_status": 200,
+   "bytes_received": 3964388,
+   "md5_received": "dd817fa05a39831e72fe810615e6a088",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20260626013000.gkg.csv"
+   ],
+   "inner_bytes": 12269481,
+   "records": 908,
+   "seconds": 0.21
+  },
+  {
+   "ts": "2015-11-10T23:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20151110231500.gkg.csv.zip",
+   "manifest_size": 12687303,
+   "manifest_md5": "180104a31758de057ebe9d7ed115067e",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 12687303,
+   "md5_received": "180104a31758de057ebe9d7ed115067e",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20151110231500.gkg.csv"
+   ],
+   "inner_bytes": 40121192,
+   "records": 3625,
+   "seconds": 1.28
+  },
+  {
+   "ts": "2015-11-10T23:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20151110233000.gkg.csv.zip",
+   "manifest_size": 12952120,
+   "manifest_md5": "72e207f84f3dc1ca09c0ad860b0d0603",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 12952120,
+   "md5_received": "72e207f84f3dc1ca09c0ad860b0d0603",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20151110233000.gkg.csv"
+   ],
+   "inner_bytes": 40917498,
+   "records": 3653,
+   "seconds": 1.48
+  },
+  {
+   "ts": "2016-07-02T18:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20160702183000.gkg.csv.zip",
+   "manifest_size": 9445070,
+   "manifest_md5": "62f3477fc5c884f1d3ee8504f3425cab",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 9445070,
+   "md5_received": "62f3477fc5c884f1d3ee8504f3425cab",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20160702183000.gkg.csv"
+   ],
+   "inner_bytes": 30067850,
+   "records": 2378,
+   "seconds": 0.52
+  },
+  {
+   "ts": "2016-07-02T18:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20160702184500.gkg.csv.zip",
+   "manifest_size": 8501098,
+   "manifest_md5": "c9e03a50e2533ec0ab09ec4764f11788",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 8501098,
+   "md5_received": "c9e03a50e2533ec0ab09ec4764f11788",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20160702184500.gkg.csv"
+   ],
+   "inner_bytes": 27160053,
+   "records": 2193,
+   "seconds": 1.74
+  },
+  {
+   "ts": "2016-11-20T14:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20161120140000.gkg.csv.zip",
+   "manifest_size": 6901683,
+   "manifest_md5": "e1993f67fbb0af5a60b8e66a3963f726",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 6901683,
+   "md5_received": "e1993f67fbb0af5a60b8e66a3963f726",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20161120140000.gkg.csv"
+   ],
+   "inner_bytes": 21920664,
+   "records": 1711,
+   "seconds": 1.48
+  },
+  {
+   "ts": "2016-11-20T14:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20161120141500.gkg.csv.zip",
+   "manifest_size": 7322137,
+   "manifest_md5": "0a27525accdabe4759ded1f484037c97",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 7322137,
+   "md5_received": "0a27525accdabe4759ded1f484037c97",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20161120141500.gkg.csv"
+   ],
+   "inner_bytes": 23217790,
+   "records": 1774,
+   "seconds": 1.33
+  },
+  {
+   "ts": "2017-01-01T16:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170101164500.gkg.csv.zip",
+   "manifest_size": 7137398,
+   "manifest_md5": "98049856c809067793dc7ad44887b6ae",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 7137398,
+   "md5_received": "98049856c809067793dc7ad44887b6ae",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170101164500.gkg.csv"
+   ],
+   "inner_bytes": 22563465,
+   "records": 1775,
+   "seconds": 1.15
+  },
+  {
+   "ts": "2017-01-01T17:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170101170000.gkg.csv.zip",
+   "manifest_size": 6808411,
+   "manifest_md5": "887ce0b5f028f9505e30df77cd6b65e7",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 6808411,
+   "md5_received": "887ce0b5f028f9505e30df77cd6b65e7",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170101170000.gkg.csv"
+   ],
+   "inner_bytes": 21365672,
+   "records": 1654,
+   "seconds": 1.28
+  },
+  {
+   "ts": "2017-04-02T15:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170402150000.gkg.csv.zip",
+   "manifest_size": 9170516,
+   "manifest_md5": "6facb988134e2e01ec69b0a70f3edb7c",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 9170516,
+   "md5_received": "6facb988134e2e01ec69b0a70f3edb7c",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170402150000.gkg.csv"
+   ],
+   "inner_bytes": 29000939,
+   "records": 2364,
+   "seconds": 1.24
+  },
+  {
+   "ts": "2017-04-02T15:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170402151500.gkg.csv.zip",
+   "manifest_size": 7658271,
+   "manifest_md5": "620f4902f899bec8cc319d80b93be25a",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 7658271,
+   "md5_received": "620f4902f899bec8cc319d80b93be25a",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170402151500.gkg.csv"
+   ],
+   "inner_bytes": 24188468,
+   "records": 2024,
+   "seconds": 0.83
+  },
+  {
+   "ts": "2017-05-27T10:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170527104500.gkg.csv.zip",
+   "manifest_size": 7164302,
+   "manifest_md5": "8a34a867a4423c689eae5af153f8ece8",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 7164302,
+   "md5_received": "8a34a867a4423c689eae5af153f8ece8",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170527104500.gkg.csv"
+   ],
+   "inner_bytes": 22811925,
+   "records": 1776,
+   "seconds": 0.81
+  },
+  {
+   "ts": "2017-05-27T11:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20170527110000.gkg.csv.zip",
+   "manifest_size": 6013854,
+   "manifest_md5": "888b315495c7ef2e7d394657d0975fd9",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 6013854,
+   "md5_received": "888b315495c7ef2e7d394657d0975fd9",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20170527110000.gkg.csv"
+   ],
+   "inner_bytes": 19178231,
+   "records": 1474,
+   "seconds": 0.53
+  },
+  {
+   "ts": "2017-10-16T01:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171016010000.gkg.csv.zip",
+   "manifest_size": 6086489,
+   "manifest_md5": "eadaf55207d30f298f4f80d5e8ccdf64",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 6086489,
+   "md5_received": "eadaf55207d30f298f4f80d5e8ccdf64",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171016010000.gkg.csv"
+   ],
+   "inner_bytes": 19201940,
+   "records": 1585,
+   "seconds": 0.58
+  },
+  {
+   "ts": "2017-10-16T01:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20171016011500.gkg.csv.zip",
+   "manifest_size": 7352493,
+   "manifest_md5": "8f8e0faa6595a9c9ce4474b3e83774bf",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 7352493,
+   "md5_received": "8f8e0faa6595a9c9ce4474b3e83774bf",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20171016011500.gkg.csv"
+   ],
+   "inner_bytes": 23175829,
+   "records": 1752,
+   "seconds": 0.7
+  },
+  {
+   "ts": "2018-06-05T20:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180605203000.gkg.csv.zip",
+   "manifest_size": 13975326,
+   "manifest_md5": "cc48205098ed12ae2af3641a477633ef",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 13975326,
+   "md5_received": "cc48205098ed12ae2af3641a477633ef",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180605203000.gkg.csv"
+   ],
+   "inner_bytes": 44005284,
+   "records": 3573,
+   "seconds": 1.71
+  },
+  {
+   "ts": "2018-06-05T20:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20180605204500.gkg.csv.zip",
+   "manifest_size": 15142138,
+   "manifest_md5": "f5f9571e6a264737f4f59578d7289808",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 15142138,
+   "md5_received": "f5f9571e6a264737f4f59578d7289808",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20180605204500.gkg.csv"
+   ],
+   "inner_bytes": 47634690,
+   "records": 3912,
+   "seconds": 1.6
+  },
+  {
+   "ts": "2019-03-11T15:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20190311154500.gkg.csv.zip",
+   "manifest_size": 11652013,
+   "manifest_md5": "0929947fe409c38f9588eb692f64b1fe",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 11652013,
+   "md5_received": "0929947fe409c38f9588eb692f64b1fe",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20190311154500.gkg.csv"
+   ],
+   "inner_bytes": 36648254,
+   "records": 3238,
+   "seconds": 0.71
+  },
+  {
+   "ts": "2019-03-11T16:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20190311160000.gkg.csv.zip",
+   "manifest_size": 11341349,
+   "manifest_md5": "4d08706fe28c7b314d93b575a9ad4f3a",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 11341349,
+   "md5_received": "4d08706fe28c7b314d93b575a9ad4f3a",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20190311160000.gkg.csv"
+   ],
+   "inner_bytes": 35714121,
+   "records": 3175,
+   "seconds": 1.64
+  },
+  {
+   "ts": "2019-03-23T20:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20190323204500.gkg.csv.zip",
+   "manifest_size": 6127986,
+   "manifest_md5": "25604cead299db81ed385664d064f379",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 6127986,
+   "md5_received": "25604cead299db81ed385664d064f379",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20190323204500.gkg.csv"
+   ],
+   "inner_bytes": 19397665,
+   "records": 1623,
+   "seconds": 1.39
+  },
+  {
+   "ts": "2019-03-23T21:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20190323210000.gkg.csv.zip",
+   "manifest_size": 5638401,
+   "manifest_md5": "b725e5d4ce0fefd5c98f170bbc1cc2e6",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 5638401,
+   "md5_received": "b725e5d4ce0fefd5c98f170bbc1cc2e6",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20190323210000.gkg.csv"
+   ],
+   "inner_bytes": 17869567,
+   "records": 1599,
+   "seconds": 0.66
+  },
+  {
+   "ts": "2019-10-02T05:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20191002054500.gkg.csv.zip",
+   "manifest_size": 5698671,
+   "manifest_md5": "e7fbbbb0149840ab4979fc49d11d52eb",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 5698671,
+   "md5_received": "e7fbbbb0149840ab4979fc49d11d52eb",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20191002054500.gkg.csv"
+   ],
+   "inner_bytes": 17903833,
+   "records": 1428,
+   "seconds": 1.25
+  },
+  {
+   "ts": "2019-10-02T06:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20191002060000.gkg.csv.zip",
+   "manifest_size": 4882847,
+   "manifest_md5": "74e33929aea1c93f11c1eca3855df202",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 4882847,
+   "md5_received": "74e33929aea1c93f11c1eca3855df202",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20191002060000.gkg.csv"
+   ],
+   "inner_bytes": 15446033,
+   "records": 1217,
+   "seconds": 1.29
+  },
+  {
+   "ts": "2020-02-01T20:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20200201201500.gkg.csv.zip",
+   "manifest_size": 4384264,
+   "manifest_md5": "386c0b1f70e965fcf3d23cfd24ac8e94",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 4384264,
+   "md5_received": "386c0b1f70e965fcf3d23cfd24ac8e94",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20200201201500.gkg.csv"
+   ],
+   "inner_bytes": 13858790,
+   "records": 1064,
+   "seconds": 1.34
+  },
+  {
+   "ts": "2020-02-01T20:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20200201203000.gkg.csv.zip",
+   "manifest_size": 5010470,
+   "manifest_md5": "92a88bbaa5fca5ba45e9cbdffd1607ad",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 5010470,
+   "md5_received": "92a88bbaa5fca5ba45e9cbdffd1607ad",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20200201203000.gkg.csv"
+   ],
+   "inner_bytes": 15672258,
+   "records": 1183,
+   "seconds": 0.97
+  },
+  {
+   "ts": "2020-08-18T21:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20200818210000.gkg.csv.zip",
+   "manifest_size": 9361092,
+   "manifest_md5": "785c5e04566cf500a29c97c9ece060d4",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 9361092,
+   "md5_received": "785c5e04566cf500a29c97c9ece060d4",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20200818210000.gkg.csv"
+   ],
+   "inner_bytes": 29075456,
+   "records": 2226,
+   "seconds": 0.62
+  },
+  {
+   "ts": "2020-08-18T21:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20200818211500.gkg.csv.zip",
+   "manifest_size": 8999202,
+   "manifest_md5": "963010c31bde611b5ede4856ba5a1931",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 8999202,
+   "md5_received": "963010c31bde611b5ede4856ba5a1931",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20200818211500.gkg.csv"
+   ],
+   "inner_bytes": 28159207,
+   "records": 2193,
+   "seconds": 0.62
+  },
+  {
+   "ts": "2020-09-08T04:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20200908044500.gkg.csv.zip",
+   "manifest_size": 4329353,
+   "manifest_md5": "6bff2e03f8ad35cfea42c075f2f9e9d3",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 4329353,
+   "md5_received": "6bff2e03f8ad35cfea42c075f2f9e9d3",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20200908044500.gkg.csv"
+   ],
+   "inner_bytes": 13565869,
+   "records": 1025,
+   "seconds": 0.55
+  },
+  {
+   "ts": "2020-09-08T05:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20200908050000.gkg.csv.zip",
+   "manifest_size": 3872470,
+   "manifest_md5": "0a909009d5db3883c7eb866f7f0eb25e",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 3872470,
+   "md5_received": "0a909009d5db3883c7eb866f7f0eb25e",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20200908050000.gkg.csv"
+   ],
+   "inner_bytes": 12188472,
+   "records": 935,
+   "seconds": 0.43
+  },
+  {
+   "ts": "2021-01-22T14:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20210122141500.gkg.csv.zip",
+   "manifest_size": 7430216,
+   "manifest_md5": "d43561051232ba5af5ab7e2d74db32d5",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 7430216,
+   "md5_received": "d43561051232ba5af5ab7e2d74db32d5",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20210122141500.gkg.csv"
+   ],
+   "inner_bytes": 23188675,
+   "records": 1840,
+   "seconds": 0.66
+  },
+  {
+   "ts": "2021-01-22T14:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20210122143000.gkg.csv.zip",
+   "manifest_size": 8097633,
+   "manifest_md5": "b699f1c872219cabaf78dba9de0dc068",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 8097633,
+   "md5_received": "b699f1c872219cabaf78dba9de0dc068",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20210122143000.gkg.csv"
+   ],
+   "inner_bytes": 25287832,
+   "records": 2014,
+   "seconds": 0.62
+  },
+  {
+   "ts": "2021-05-20T03:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20210520031500.gkg.csv.zip",
+   "manifest_size": 5275183,
+   "manifest_md5": "75a511eca97ad997ec4dfd8ac86a5f52",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 5275183,
+   "md5_received": "75a511eca97ad997ec4dfd8ac86a5f52",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20210520031500.gkg.csv"
+   ],
+   "inner_bytes": 16382131,
+   "records": 1245,
+   "seconds": 0.52
+  },
+  {
+   "ts": "2021-05-20T03:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20210520033000.gkg.csv.zip",
+   "manifest_size": 4684820,
+   "manifest_md5": "f0aa9b7dfe8fdda5a52c3f489db7bd55",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 4684820,
+   "md5_received": "f0aa9b7dfe8fdda5a52c3f489db7bd55",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20210520033000.gkg.csv"
+   ],
+   "inner_bytes": 14520101,
+   "records": 1150,
+   "seconds": 0.57
+  },
+  {
+   "ts": "2021-10-31T13:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20211031134500.gkg.csv.zip",
+   "manifest_size": 3835294,
+   "manifest_md5": "48d19eb249a5d57252a32df928af6212",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 3835294,
+   "md5_received": "48d19eb249a5d57252a32df928af6212",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20211031134500.gkg.csv"
+   ],
+   "inner_bytes": 12004991,
+   "records": 928,
+   "seconds": 0.48
+  },
+  {
+   "ts": "2021-10-31T14:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20211031140000.gkg.csv.zip",
+   "manifest_size": 4091271,
+   "manifest_md5": "886311a07782df4321f485aefb2ba66f",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 4091271,
+   "md5_received": "886311a07782df4321f485aefb2ba66f",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20211031140000.gkg.csv"
+   ],
+   "inner_bytes": 12718020,
+   "records": 962,
+   "seconds": 0.46
+  },
+  {
+   "ts": "2022-05-22T22:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20220522224500.gkg.csv.zip",
+   "manifest_size": 3244426,
+   "manifest_md5": "f9abcb8a5f53c95bac88d5097769af8f",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 3244426,
+   "md5_received": "f9abcb8a5f53c95bac88d5097769af8f",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20220522224500.gkg.csv"
+   ],
+   "inner_bytes": 10116010,
+   "records": 829,
+   "seconds": 0.49
+  },
+  {
+   "ts": "2022-05-22T23:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20220522230000.gkg.csv.zip",
+   "manifest_size": 3247036,
+   "manifest_md5": "a3ce45e26a8b6d4c1d2b93b71778db53",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 3247036,
+   "md5_received": "a3ce45e26a8b6d4c1d2b93b71778db53",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20220522230000.gkg.csv"
+   ],
+   "inner_bytes": 10204531,
+   "records": 811,
+   "seconds": 0.39
+  },
+  {
+   "ts": "2022-06-09T15:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20220609153000.gkg.csv.zip",
+   "manifest_size": 7330133,
+   "manifest_md5": "cacbe63118e97ae515f3824f508747d5",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 7330133,
+   "md5_received": "cacbe63118e97ae515f3824f508747d5",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20220609153000.gkg.csv"
+   ],
+   "inner_bytes": 22716622,
+   "records": 1736,
+   "seconds": 0.68
+  },
+  {
+   "ts": "2022-06-09T15:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20220609154500.gkg.csv.zip",
+   "manifest_size": 7172180,
+   "manifest_md5": "501680dd1ffca52d24b99a25665bd081",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 7172180,
+   "md5_received": "501680dd1ffca52d24b99a25665bd081",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20220609154500.gkg.csv"
+   ],
+   "inner_bytes": 22242028,
+   "records": 1727,
+   "seconds": 0.65
+  },
+  {
+   "ts": "2022-07-18T20:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20220718201500.gkg.csv.zip",
+   "manifest_size": 5896772,
+   "manifest_md5": "1dab50cea3c9035d19b848a72d8f35e3",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 5896772,
+   "md5_received": "1dab50cea3c9035d19b848a72d8f35e3",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20220718201500.gkg.csv"
+   ],
+   "inner_bytes": 18290363,
+   "records": 1431,
+   "seconds": 0.33
+  },
+  {
+   "ts": "2022-07-18T20:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20220718203000.gkg.csv.zip",
+   "manifest_size": 6134833,
+   "manifest_md5": "27401fb00739830b69b58e7066cec6ff",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 6134833,
+   "md5_received": "27401fb00739830b69b58e7066cec6ff",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20220718203000.gkg.csv"
+   ],
+   "inner_bytes": 18925479,
+   "records": 1517,
+   "seconds": 0.64
+  },
+  {
+   "ts": "2022-08-13T10:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20220813103000.gkg.csv.zip",
+   "manifest_size": 2341305,
+   "manifest_md5": "85ac3ed07d43c9f7d69100784e60b3a0",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 2341305,
+   "md5_received": "85ac3ed07d43c9f7d69100784e60b3a0",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20220813103000.gkg.csv"
+   ],
+   "inner_bytes": 7302853,
+   "records": 536,
+   "seconds": 0.56
+  },
+  {
+   "ts": "2022-08-13T10:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20220813104500.gkg.csv.zip",
+   "manifest_size": 2666948,
+   "manifest_md5": "81c95a0acb2327802290f06f08fc218b",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 2666948,
+   "md5_received": "81c95a0acb2327802290f06f08fc218b",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20220813104500.gkg.csv"
+   ],
+   "inner_bytes": 8321431,
+   "records": 625,
+   "seconds": 0.47
+  },
+  {
+   "ts": "2022-11-24T21:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20221124213000.gkg.csv.zip",
+   "manifest_size": 3459756,
+   "manifest_md5": "a74d29c6ea4463f517d350ab0451066f",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 3459756,
+   "md5_received": "a74d29c6ea4463f517d350ab0451066f",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20221124213000.gkg.csv"
+   ],
+   "inner_bytes": 10670805,
+   "records": 871,
+   "seconds": 0.31
+  },
+  {
+   "ts": "2022-11-24T21:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20221124214500.gkg.csv.zip",
+   "manifest_size": 3472278,
+   "manifest_md5": "2cffbfa7af36f0b4863fc6834776ebbb",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 3472278,
+   "md5_received": "2cffbfa7af36f0b4863fc6834776ebbb",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20221124214500.gkg.csv"
+   ],
+   "inner_bytes": 10715715,
+   "records": 870,
+   "seconds": 0.45
+  },
+  {
+   "ts": "2023-03-11T18:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20230311180000.gkg.csv.zip",
+   "manifest_size": 3620703,
+   "manifest_md5": "088fa4c44402c755ee660dd379ed597c",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 3620703,
+   "md5_received": "088fa4c44402c755ee660dd379ed597c",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20230311180000.gkg.csv"
+   ],
+   "inner_bytes": 11299532,
+   "records": 854,
+   "seconds": 0.42
+  },
+  {
+   "ts": "2023-03-11T18:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20230311181500.gkg.csv.zip",
+   "manifest_size": 2925489,
+   "manifest_md5": "c86a5fa4495aa90685736e4b28a860a5",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 2925489,
+   "md5_received": "c86a5fa4495aa90685736e4b28a860a5",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20230311181500.gkg.csv"
+   ],
+   "inner_bytes": 9050526,
+   "records": 728,
+   "seconds": 0.5
+  },
+  {
+   "ts": "2024-04-27T16:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20240427161500.gkg.csv.zip",
+   "manifest_size": 4455035,
+   "manifest_md5": "d6b1ada2602431520b7b4c59b8fd5ab3",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 4455035,
+   "md5_received": "d6b1ada2602431520b7b4c59b8fd5ab3",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20240427161500.gkg.csv"
+   ],
+   "inner_bytes": 13790365,
+   "records": 1097,
+   "seconds": 0.63
+  },
+  {
+   "ts": "2024-04-27T16:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20240427163000.gkg.csv.zip",
+   "manifest_size": 4578663,
+   "manifest_md5": "d06b29137f6113f5cfe0f6f3d0708465",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 4578663,
+   "md5_received": "d06b29137f6113f5cfe0f6f3d0708465",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20240427163000.gkg.csv"
+   ],
+   "inner_bytes": 14267949,
+   "records": 1154,
+   "seconds": 0.54
+  },
+  {
+   "ts": "2024-10-07T13:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20241007130000.gkg.csv.zip",
+   "manifest_size": 5246846,
+   "manifest_md5": "96aa6f0baddfa220fd66b247e9b927ec",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 5246846,
+   "md5_received": "96aa6f0baddfa220fd66b247e9b927ec",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20241007130000.gkg.csv"
+   ],
+   "inner_bytes": 16247121,
+   "records": 1244,
+   "seconds": 0.44
+  },
+  {
+   "ts": "2024-10-07T13:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20241007131500.gkg.csv.zip",
+   "manifest_size": 7442575,
+   "manifest_md5": "a9a68974102d62335b67fd2de7a65f07",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 7442575,
+   "md5_received": "a9a68974102d62335b67fd2de7a65f07",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20241007131500.gkg.csv"
+   ],
+   "inner_bytes": 23268042,
+   "records": 1790,
+   "seconds": 0.49
+  },
+  {
+   "ts": "2025-10-29T08:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20251029081500.gkg.csv.zip",
+   "manifest_size": 4613362,
+   "manifest_md5": "5f9e9eb4aaa3e36109928d1441017bd6",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 4613362,
+   "md5_received": "5f9e9eb4aaa3e36109928d1441017bd6",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20251029081500.gkg.csv"
+   ],
+   "inner_bytes": 14255743,
+   "records": 1208,
+   "seconds": 0.4
+  },
+  {
+   "ts": "2025-10-29T08:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20251029083000.gkg.csv.zip",
+   "manifest_size": 4307348,
+   "manifest_md5": "84ad4c85d822fe3b9756efe1b9b4eef6",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 4307348,
+   "md5_received": "84ad4c85d822fe3b9756efe1b9b4eef6",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20251029083000.gkg.csv"
+   ],
+   "inner_bytes": 13386138,
+   "records": 1097,
+   "seconds": 0.29
+  },
+  {
+   "ts": "2025-11-16T12:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20251116123000.gkg.csv.zip",
+   "manifest_size": 2607928,
+   "manifest_md5": "9203876db7c88dd655f3226187f1ac8b",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 2607928,
+   "md5_received": "9203876db7c88dd655f3226187f1ac8b",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20251116123000.gkg.csv"
+   ],
+   "inner_bytes": 8076672,
+   "records": 636,
+   "seconds": 0.18
+  },
+  {
+   "ts": "2025-11-16T12:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20251116124500.gkg.csv.zip",
+   "manifest_size": 2407823,
+   "manifest_md5": "5667ec88a4904d230360e58ac2d290fd",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 2407823,
+   "md5_received": "5667ec88a4904d230360e58ac2d290fd",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20251116124500.gkg.csv"
+   ],
+   "inner_bytes": 7395967,
+   "records": 539,
+   "seconds": 0.26
+  },
+  {
+   "ts": "2025-12-08T13:00:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20251208130000.gkg.csv.zip",
+   "manifest_size": 5108451,
+   "manifest_md5": "fa88610232071fbdc0f0e1d399f5acbb",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 5108451,
+   "md5_received": "fa88610232071fbdc0f0e1d399f5acbb",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20251208130000.gkg.csv"
+   ],
+   "inner_bytes": 15708793,
+   "records": 1188,
+   "seconds": 0.37
+  },
+  {
+   "ts": "2025-12-08T13:15:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20251208131500.gkg.csv.zip",
+   "manifest_size": 5808901,
+   "manifest_md5": "13405549fc7fd77f2dcfceb17fc602a1",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 5808901,
+   "md5_received": "13405549fc7fd77f2dcfceb17fc602a1",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20251208131500.gkg.csv"
+   ],
+   "inner_bytes": 17886541,
+   "records": 1358,
+   "seconds": 0.43
+  },
+  {
+   "ts": "2026-03-03T06:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20260303063000.gkg.csv.zip",
+   "manifest_size": 4168281,
+   "manifest_md5": "fa7cc6ae764fce3dabf200c41be36d99",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 4168281,
+   "md5_received": "fa7cc6ae764fce3dabf200c41be36d99",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20260303063000.gkg.csv"
+   ],
+   "inner_bytes": 12947753,
+   "records": 1046,
+   "seconds": 0.41
+  },
+  {
+   "ts": "2026-03-03T06:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20260303064500.gkg.csv.zip",
+   "manifest_size": 3444389,
+   "manifest_md5": "12bba9ecccdf8cbf26655b01990742ee",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 3444389,
+   "md5_received": "12bba9ecccdf8cbf26655b01990742ee",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20260303064500.gkg.csv"
+   ],
+   "inner_bytes": 10665555,
+   "records": 826,
+   "seconds": 0.35
+  },
+  {
+   "ts": "2026-03-23T08:30:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20260323083000.gkg.csv.zip",
+   "manifest_size": 3652675,
+   "manifest_md5": "025e79f0b45b330dad032869c896b584",
+   "samples": [
+    "D1"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 3652675,
+   "md5_received": "025e79f0b45b330dad032869c896b584",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20260323083000.gkg.csv"
+   ],
+   "inner_bytes": 11340983,
+   "records": 985,
+   "seconds": 0.22
+  },
+  {
+   "ts": "2026-03-23T08:45:00Z",
+   "url": "http://data.gdeltproject.org/gdeltv2/20260323084500.gkg.csv.zip",
+   "manifest_size": 3974383,
+   "manifest_md5": "50d45a7f09188bb1cb8f9f161fab376c",
+   "samples": [
+    "D2"
+   ],
+   "collect_docids": true,
+   "http_status": 200,
+   "bytes_received": 3974383,
+   "md5_received": "50d45a7f09188bb1cb8f9f161fab376c",
+   "size_matches_manifest": true,
+   "md5_matches_manifest": true,
+   "zip_opens": true,
+   "inner_names": [
+    "20260323084500.gkg.csv"
+   ],
+   "inner_bytes": 12388027,
+   "records": 976,
+   "seconds": 0.38
+  }
+ ],
+ "elapsed_seconds": 29.7
+}
