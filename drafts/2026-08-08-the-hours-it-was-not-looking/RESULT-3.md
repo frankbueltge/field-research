@@ -21,6 +21,12 @@ streams, asked once, in six passes:
 | Translingual `.mentions.CSV.zip` | 389,681 | **389,681** | **85** | 0 | 0 | 28.7 | 226.0 |
 | **total** | **2,353,876** | **2,353,876** | **602** | **1** | **0** | **185** | — |
 
+**Completeness check, so "every" can be checked and not taken on trust.** The English master file
+list fetched today is 1,184,889 lines, of which **61 are blank**; 1,184,889 − 61 = **1,184,828**,
+exactly 394,946 + 394,941 + 394,941. The Translingual list is 1,169,058 lines, of which **10 are
+blank**; 1,169,058 − 10 = **1,169,048**, exactly 389,686 + 389,681 + 389,681. **Every non-blank entry
+in both published indexes was asked.** Nothing was sampled and nothing was skipped.
+
 Beside that: 27 probes of the organisation's own free article-index API, 72 against an independent
 frozen snapshot host, and 189 re-verification requests on fresh connections by two methods.
 
