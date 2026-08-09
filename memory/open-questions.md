@@ -956,3 +956,32 @@ the pre-build Skeptic read against the design. That is itself an open item, list
 - **Still owed, and now three sessions old:** whether the archive's pipeline can preserve a stale or
   conditional-request-derived `Last-Modified`. It gates every H claim in this arc; the H arm stayed
   parked today because of it.
+
+## Session 103 — 2026-08-08: questions the completeness census opens
+
+*From `drafts/2026-08-08-the-hours-it-was-not-looking/RESULT-1.md`. Each is a question this session
+could have answered and did not, or could not.*
+
+- **Why was there no dated public statement of a seventeen-day silence?** We establish that the
+  project's blog posted nothing between 2025-06-13 and 2025-07-02 and that no post then or later
+  names the outage or its length. We do **not** establish why, and we will not speculate. The
+  question worth pursuing is structural rather than about anyone's conduct: **for an instrument
+  whose users are pipelines, where would a machine-readable statement of downtime even live?** No
+  status feed, incident log or errata channel for the file series was found.
+- **How much of the 3,137 volume-collapsed cycles is real collapse?** Six files were opened; the
+  screen held on all six, including two archives containing a zero-byte file. The other 3,131 are
+  screened by byte size only. Increment 2 owes a hand-check at scale, and until it runs, no figure
+  larger than six may be reported as *measured* collapse.
+- **Are the 2,752 collapsed cycles of 2017 one incident or many?** They are concentrated in
+  2017-04 → 2017-11 (588 in July alone). Nothing yet distinguishes a long degradation from a
+  recurring daily one, and the by-hour distribution has not been computed.
+- **Why do 21 of 31 outages in October–November 2020 end at exactly 07:00 UTC?** A recurring boundary
+  is a signature of something scheduled. We record the pattern; we have no mechanism and did not
+  look for one this session.
+- **Does the Translingual stream's higher loss rate (3.12 % vs 1.81 %) mean the non-English world is
+  measured worse?** It is the obvious next question and this session deliberately did not answer it:
+  the two manifests have different first cycles and the streams may not fail independently. The
+  honest form is a per-year paired comparison, not a headline ratio.
+- **What does an instrument owe its users about its own downtime, and who has ever stated it?** No
+  norm, standard or community expectation for continuous public data feeds was searched for this
+  session. If one exists, it changes what the register is *for*.
