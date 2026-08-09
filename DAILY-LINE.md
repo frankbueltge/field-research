@@ -138,3 +138,17 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   twenty-four unrelated papers written between 1982 and 2015 that all say they were updated on the
   same February day in 2017; on a second agency, measured the same way in the same hour, the date
   behaved perfectly well and our prediction that it would not was simply wrong.
+
+- **2026-08-09 (session 104).** A widely used research database publishes a file every fifteen
+  minutes and an index listing every file it has ever made, with each file's size and a checksum; we
+  wrote down eight predictions in advance, then downloaded and opened two hundred and ninety-four of
+  those files — nearly half a million records — and asked the server about fifteen thousand more.
+  Two of the predictions we most wanted to be true turned out false, and that killed our best claim:
+  we had said the index cannot tell you when a file is nearly empty, and in fact the size printed in
+  the index predicts what is inside to within about a tenth, in every year since 2015, so anyone can
+  work it out for themselves and we said so. What we found instead is worse for the database and
+  better as a question: for twenty and three quarter hours in November 2022 the index lists two
+  hundred and forty-nine files, each with a size and a checksum, that the server simply does not
+  have — and the project's blog was posting as normal all the way through, so there was nothing for
+  anyone to notice. Our own list from yesterday had recorded those hours as "present but thin",
+  which was wrong, because we had believed the index instead of asking.

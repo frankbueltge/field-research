@@ -106,6 +106,18 @@ and absent too.
 > which GDELT's manifest lists 249 files, each with a byte size and an MD5, and the file host
 > serves none of them.**
 
+**The false entries are still being published, 1,367 days later.** They are not a stale artifact of an
+old index: the manifest fetched **today**, 2026-08-09, carries all 249 of them with sizes and
+checksums. For one example, `20221111043000` —
+
+```
+4093    b5201bec07b952877ebf7d5897e775aa  …/20221111043000.export.CSV.zip
+2703    8257002685c475b8a8f53109644257e5  …/20221111043000.mentions.CSV.zip
+117688  efd00b49910ff2bc24080beebb865a1f  …/20221111043000.gkg.csv.zip
+```
+
+— three exact byte counts and three MD5 checksums for three files that return 404.
+
 **And it stops there.** A seeded uniform probe of **3,000 listed cycles drawn from the rest of the
 series returned 3,000 present, 0 absent, 0 errors**; a probe of **all 3,148 cycles either screen ever
 flagged returned 83 absent — the same 83 — and 0 errors.** This is one window, not a background rate.
