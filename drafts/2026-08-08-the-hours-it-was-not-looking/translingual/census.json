@@ -1,0 +1,465 @@
+{
+ "manifest": "/tmp/claude-0/-home-user-field-research/b51e2677-88d4-56f1-b839-36e8cae1f81d/scratchpad/mft.txt",
+ "first_cycle": "2015-02-18T22:45:00Z",
+ "last_cycle": "2026-08-09T00:00:00Z",
+ "expected_cycles": 402150,
+ "complete_cycles": 389599,
+ "partial_cycles": 5,
+ "missing_cycles": 12546,
+ "missing_pct": 3.1197,
+ "gap_runs": 4107,
+ "longest_gap": {
+  "start": "2025-06-14T17:45:00Z",
+  "end": "2025-07-02T02:00:00Z",
+  "cycles": 1666,
+  "hours": 416.5
+ },
+ "gap_runs_ge_96": 4,
+ "top_gaps": [
+  {
+   "start": "2025-06-14T17:45:00Z",
+   "end": "2025-07-02T02:00:00Z",
+   "cycles": 1666,
+   "hours": 416.5
+  },
+  {
+   "start": "2015-10-21T04:00:00Z",
+   "end": "2015-10-22T22:30:00Z",
+   "cycles": 171,
+   "hours": 42.75
+  },
+  {
+   "start": "2023-03-22T04:30:00Z",
+   "end": "2023-03-23T14:30:00Z",
+   "cycles": 137,
+   "hours": 34.25
+  },
+  {
+   "start": "2017-08-24T01:45:00Z",
+   "end": "2017-08-25T04:15:00Z",
+   "cycles": 107,
+   "hours": 26.75
+  },
+  {
+   "start": "2020-11-14T08:00:00Z",
+   "end": "2020-11-15T07:00:00Z",
+   "cycles": 93,
+   "hours": 23.25
+  },
+  {
+   "start": "2020-11-13T09:00:00Z",
+   "end": "2020-11-14T07:00:00Z",
+   "cycles": 89,
+   "hours": 22.25
+  },
+  {
+   "start": "2020-11-07T10:00:00Z",
+   "end": "2020-11-08T07:00:00Z",
+   "cycles": 85,
+   "hours": 21.25
+  },
+  {
+   "start": "2020-11-06T10:45:00Z",
+   "end": "2020-11-07T07:00:00Z",
+   "cycles": 82,
+   "hours": 20.5
+  },
+  {
+   "start": "2020-11-15T11:00:00Z",
+   "end": "2020-11-16T07:00:00Z",
+   "cycles": 81,
+   "hours": 20.25
+  },
+  {
+   "start": "2020-10-16T12:30:00Z",
+   "end": "2020-10-17T07:00:00Z",
+   "cycles": 75,
+   "hours": 18.75
+  },
+  {
+   "start": "2020-10-30T12:30:00Z",
+   "end": "2020-10-31T07:00:00Z",
+   "cycles": 75,
+   "hours": 18.75
+  },
+  {
+   "start": "2020-11-08T12:30:00Z",
+   "end": "2020-11-09T07:00:00Z",
+   "cycles": 75,
+   "hours": 18.75
+  },
+  {
+   "start": "2020-11-10T13:00:00Z",
+   "end": "2020-11-11T07:15:00Z",
+   "cycles": 74,
+   "hours": 18.5
+  },
+  {
+   "start": "2020-11-12T12:45:00Z",
+   "end": "2020-11-13T07:00:00Z",
+   "cycles": 74,
+   "hours": 18.5
+  },
+  {
+   "start": "2020-10-24T13:30:00Z",
+   "end": "2020-10-25T07:00:00Z",
+   "cycles": 71,
+   "hours": 17.75
+  },
+  {
+   "start": "2020-11-05T13:45:00Z",
+   "end": "2020-11-06T07:00:00Z",
+   "cycles": 70,
+   "hours": 17.5
+  },
+  {
+   "start": "2020-10-31T14:30:00Z",
+   "end": "2020-11-01T07:00:00Z",
+   "cycles": 67,
+   "hours": 16.75
+  },
+  {
+   "start": "2020-11-03T14:30:00Z",
+   "end": "2020-11-04T07:00:00Z",
+   "cycles": 67,
+   "hours": 16.75
+  },
+  {
+   "start": "2020-11-16T14:45:00Z",
+   "end": "2020-11-17T07:00:00Z",
+   "cycles": 66,
+   "hours": 16.5
+  },
+  {
+   "start": "2020-11-01T15:00:00Z",
+   "end": "2020-11-02T07:00:00Z",
+   "cycles": 65,
+   "hours": 16.25
+  },
+  {
+   "start": "2020-10-23T15:15:00Z",
+   "end": "2020-10-24T07:00:00Z",
+   "cycles": 64,
+   "hours": 16.0
+  },
+  {
+   "start": "2020-10-29T15:15:00Z",
+   "end": "2020-10-30T07:00:00Z",
+   "cycles": 64,
+   "hours": 16.0
+  },
+  {
+   "start": "2020-11-09T15:45:00Z",
+   "end": "2020-11-10T07:00:00Z",
+   "cycles": 62,
+   "hours": 15.5
+  },
+  {
+   "start": "2020-10-27T16:30:00Z",
+   "end": "2020-10-28T07:15:00Z",
+   "cycles": 60,
+   "hours": 15.0
+  },
+  {
+   "start": "2020-11-02T16:15:00Z",
+   "end": "2020-11-03T07:00:00Z",
+   "cycles": 60,
+   "hours": 15.0
+  }
+ ],
+ "gap_length_histogram": {
+  "1": 1974,
+  "2": 1550,
+  "3": 228,
+  "4": 146,
+  "5": 50,
+  "6": 29,
+  "7": 19,
+  "8": 6,
+  "9": 9,
+  "10": 5,
+  "11": 4,
+  "12": 6,
+  "13": 3,
+  "14": 2,
+  "15": 1,
+  "16": 5,
+  "18": 2,
+  "19": 2,
+  "20": 3,
+  "22": 1,
+  "23": 3,
+  "24": 1,
+  "26": 1,
+  "27": 2,
+  "28": 1,
+  "29": 1,
+  "30": 1,
+  "31": 1,
+  "32": 3,
+  "35": 1,
+  "36": 1,
+  "37": 2,
+  "39": 1,
+  "40": 1,
+  "41": 4,
+  "42": 1,
+  "43": 1,
+  "44": 1,
+  "46": 1,
+  "48": 1,
+  "49": 1,
+  "52": 1,
+  "55": 4,
+  "57": 1,
+  "58": 1,
+  "60": 2,
+  "62": 1,
+  "64": 2,
+  "65": 1,
+  "66": 1,
+  "67": 2,
+  "70": 1,
+  "71": 1,
+  "74": 2,
+  "75": 3,
+  "81": 1,
+  "82": 1,
+  "85": 1,
+  "89": 1,
+  "93": 1,
+  "107": 1,
+  "137": 1,
+  "171": 1,
+  "1666": 1
+ },
+ "collapsed_cycles": 360,
+ "collapse_excluded_no_window": 672,
+ "worst_collapses": [
+  {
+   "ts": "2016-05-16T13:45:00Z",
+   "gkg_bytes": 218,
+   "trailing_median": 16100496.0,
+   "ratio": 0.0
+  },
+  {
+   "ts": "2016-05-16T14:00:00Z",
+   "gkg_bytes": 218,
+   "trailing_median": 16083492.0,
+   "ratio": 0.0
+  },
+  {
+   "ts": "2016-05-16T20:15:00Z",
+   "gkg_bytes": 218,
+   "trailing_median": 16079712.5,
+   "ratio": 0.0
+  },
+  {
+   "ts": "2016-05-16T20:30:00Z",
+   "gkg_bytes": 218,
+   "trailing_median": 16077690.0,
+   "ratio": 0.0
+  },
+  {
+   "ts": "2016-05-16T20:45:00Z",
+   "gkg_bytes": 218,
+   "trailing_median": 16077690.0,
+   "ratio": 0.0
+  },
+  {
+   "ts": "2016-05-16T21:00:00Z",
+   "gkg_bytes": 218,
+   "trailing_median": 16077690.0,
+   "ratio": 0.0
+  },
+  {
+   "ts": "2016-05-16T21:15:00Z",
+   "gkg_bytes": 218,
+   "trailing_median": 16077690.0,
+   "ratio": 0.0
+  },
+  {
+   "ts": "2023-03-21T23:00:00Z",
+   "gkg_bytes": 13727,
+   "trailing_median": 7647716.5,
+   "ratio": 0.0018
+  },
+  {
+   "ts": "2022-11-11T00:30:00Z",
+   "gkg_bytes": 61580,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0112
+  },
+  {
+   "ts": "2022-11-10T22:00:00Z",
+   "gkg_bytes": 70578,
+   "trailing_median": 5526216.5,
+   "ratio": 0.0128
+  },
+  {
+   "ts": "2022-11-11T00:15:00Z",
+   "gkg_bytes": 76133,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0139
+  },
+  {
+   "ts": "2022-11-10T23:30:00Z",
+   "gkg_bytes": 82348,
+   "trailing_median": 5486793.5,
+   "ratio": 0.015
+  },
+  {
+   "ts": "2022-11-10T23:00:00Z",
+   "gkg_bytes": 90898,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0166
+  },
+  {
+   "ts": "2022-11-11T02:15:00Z",
+   "gkg_bytes": 94102,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0172
+  },
+  {
+   "ts": "2022-11-10T22:45:00Z",
+   "gkg_bytes": 96381,
+   "trailing_median": 5497856.0,
+   "ratio": 0.0175
+  }
+ ],
+ "offgrid_entries": 0,
+ "offgrid_sample": [],
+ "duplicate_urls": 0,
+ "malformed_lines": 10,
+ "malformed_sample": [
+  {
+   "line": 122917,
+   "text": "http://data.gdeltproject.org/gdeltv2/",
+   "why": "field count"
+  },
+  {
+   "line": 122918,
+   "text": "http://data.gdeltproject.org/gdeltv2/",
+   "why": "field count"
+  },
+  {
+   "line": 151978,
+   "text": "http://data.gdeltproject.org/gdeltv2/",
+   "why": "field count"
+  },
+  {
+   "line": 151979,
+   "text": "http://data.gdeltproject.org/gdeltv2/",
+   "why": "field count"
+  },
+  {
+   "line": 230524,
+   "text": "http://data.gdeltproject.org/gdeltv2/",
+   "why": "field count"
+  },
+  {
+   "line": 230525,
+   "text": "http://data.gdeltproject.org/gdeltv2/",
+   "why": "field count"
+  },
+  {
+   "line": 230545,
+   "text": "http://data.gdeltproject.org/gdeltv2/",
+   "why": "field count"
+  },
+  {
+   "line": 230546,
+   "text": "http://data.gdeltproject.org/gdeltv2/",
+   "why": "field count"
+  },
+  {
+   "line": 232360,
+   "text": "http://data.gdeltproject.org/gdeltv2/",
+   "why": "field count"
+  },
+  {
+   "line": 232361,
+   "text": "http://data.gdeltproject.org/gdeltv2/",
+   "why": "field count"
+  }
+ ],
+ "zero_byte_entries": 0,
+ "first_third_boundary": "2018-12-16T07:10:00Z",
+ "missing_in_first_third": 6874,
+ "missing_in_last_365d": 2,
+ "collapsed_in_last_365d": 0,
+ "by_year": {
+  "2015": {
+   "expected": 30341,
+   "missing": 367,
+   "partial": 0,
+   "collapsed": 2
+  },
+  "2016": {
+   "expected": 35136,
+   "missing": 217,
+   "partial": 2,
+   "collapsed": 9
+  },
+  "2017": {
+   "expected": 35040,
+   "missing": 4471,
+   "partial": 3,
+   "collapsed": 176
+  },
+  "2018": {
+   "expected": 35040,
+   "missing": 1820,
+   "partial": 0,
+   "collapsed": 71
+  },
+  "2019": {
+   "expected": 35040,
+   "missing": 59,
+   "partial": 0,
+   "collapsed": 11
+  },
+  "2020": {
+   "expected": 35136,
+   "missing": 2904,
+   "partial": 0,
+   "collapsed": 6
+  },
+  "2021": {
+   "expected": 35040,
+   "missing": 730,
+   "partial": 0,
+   "collapsed": 0
+  },
+  "2022": {
+   "expected": 35040,
+   "missing": 75,
+   "partial": 0,
+   "collapsed": 83
+  },
+  "2023": {
+   "expected": 35040,
+   "missing": 207,
+   "partial": 0,
+   "collapsed": 2
+  },
+  "2024": {
+   "expected": 35136,
+   "missing": 4,
+   "partial": 0,
+   "collapsed": 0
+  },
+  "2025": {
+   "expected": 35040,
+   "missing": 1690,
+   "partial": 0,
+   "collapsed": 0
+  },
+  "2026": {
+   "expected": 21121,
+   "missing": 2,
+   "partial": 0,
+   "collapsed": 0
+  }
+ }
+}

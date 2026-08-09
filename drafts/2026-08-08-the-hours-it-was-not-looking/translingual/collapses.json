@@ -1,0 +1,2164 @@
+{
+ "collapsed_cycles": [
+  {
+   "ts": "2015-04-13T02:45:00Z",
+   "gkg_bytes": 1678585,
+   "trailing_median": 8549542.5,
+   "ratio": 0.1963
+  },
+  {
+   "ts": "2015-11-28T06:00:00Z",
+   "gkg_bytes": 1002984,
+   "trailing_median": 13202210.0,
+   "ratio": 0.076
+  },
+  {
+   "ts": "2016-04-21T21:15:00Z",
+   "gkg_bytes": 1778219,
+   "trailing_median": 14594041.5,
+   "ratio": 0.1218
+  },
+  {
+   "ts": "2016-05-16T13:45:00Z",
+   "gkg_bytes": 218,
+   "trailing_median": 16100496.0,
+   "ratio": 0.0
+  },
+  {
+   "ts": "2016-05-16T14:00:00Z",
+   "gkg_bytes": 218,
+   "trailing_median": 16083492.0,
+   "ratio": 0.0
+  },
+  {
+   "ts": "2016-05-16T20:15:00Z",
+   "gkg_bytes": 218,
+   "trailing_median": 16079712.5,
+   "ratio": 0.0
+  },
+  {
+   "ts": "2016-05-16T20:30:00Z",
+   "gkg_bytes": 218,
+   "trailing_median": 16077690.0,
+   "ratio": 0.0
+  },
+  {
+   "ts": "2016-05-16T20:45:00Z",
+   "gkg_bytes": 218,
+   "trailing_median": 16077690.0,
+   "ratio": 0.0
+  },
+  {
+   "ts": "2016-05-16T21:00:00Z",
+   "gkg_bytes": 218,
+   "trailing_median": 16077690.0,
+   "ratio": 0.0
+  },
+  {
+   "ts": "2016-05-16T21:15:00Z",
+   "gkg_bytes": 218,
+   "trailing_median": 16077690.0,
+   "ratio": 0.0
+  },
+  {
+   "ts": "2016-09-29T22:15:00Z",
+   "gkg_bytes": 1218185,
+   "trailing_median": 15550508.0,
+   "ratio": 0.0783
+  },
+  {
+   "ts": "2017-03-18T17:45:00Z",
+   "gkg_bytes": 1635758,
+   "trailing_median": 14648651.0,
+   "ratio": 0.1117
+  },
+  {
+   "ts": "2017-03-22T17:00:00Z",
+   "gkg_bytes": 2276405,
+   "trailing_median": 15617075.5,
+   "ratio": 0.1458
+  },
+  {
+   "ts": "2017-03-22T17:15:00Z",
+   "gkg_bytes": 2193815,
+   "trailing_median": 15603799.5,
+   "ratio": 0.1406
+  },
+  {
+   "ts": "2017-03-23T23:45:00Z",
+   "gkg_bytes": 1074787,
+   "trailing_median": 15617075.5,
+   "ratio": 0.0688
+  },
+  {
+   "ts": "2017-03-24T08:45:00Z",
+   "gkg_bytes": 1942650,
+   "trailing_median": 15131421.5,
+   "ratio": 0.1284
+  },
+  {
+   "ts": "2017-03-31T07:30:00Z",
+   "gkg_bytes": 1714948,
+   "trailing_median": 15282716.0,
+   "ratio": 0.1122
+  },
+  {
+   "ts": "2017-04-03T12:00:00Z",
+   "gkg_bytes": 2484549,
+   "trailing_median": 14961243.5,
+   "ratio": 0.1661
+  },
+  {
+   "ts": "2017-04-04T00:00:00Z",
+   "gkg_bytes": 1978704,
+   "trailing_median": 15147657.0,
+   "ratio": 0.1306
+  },
+  {
+   "ts": "2017-04-11T21:15:00Z",
+   "gkg_bytes": 1473234,
+   "trailing_median": 15788328.5,
+   "ratio": 0.0933
+  },
+  {
+   "ts": "2017-04-17T13:45:00Z",
+   "gkg_bytes": 1938489,
+   "trailing_median": 14349867.5,
+   "ratio": 0.1351
+  },
+  {
+   "ts": "2017-04-24T06:45:00Z",
+   "gkg_bytes": 1564729,
+   "trailing_median": 14416460.5,
+   "ratio": 0.1085
+  },
+  {
+   "ts": "2017-05-04T10:00:00Z",
+   "gkg_bytes": 2519918,
+   "trailing_median": 14107067.0,
+   "ratio": 0.1786
+  },
+  {
+   "ts": "2017-05-10T06:15:00Z",
+   "gkg_bytes": 1586612,
+   "trailing_median": 14854365.0,
+   "ratio": 0.1068
+  },
+  {
+   "ts": "2017-05-12T06:30:00Z",
+   "gkg_bytes": 1671590,
+   "trailing_median": 14825865.5,
+   "ratio": 0.1127
+  },
+  {
+   "ts": "2017-05-24T05:45:00Z",
+   "gkg_bytes": 1691456,
+   "trailing_median": 15744868.5,
+   "ratio": 0.1074
+  },
+  {
+   "ts": "2017-05-24T14:30:00Z",
+   "gkg_bytes": 2351779,
+   "trailing_median": 15788620.5,
+   "ratio": 0.149
+  },
+  {
+   "ts": "2017-05-27T13:45:00Z",
+   "gkg_bytes": 1853480,
+   "trailing_median": 15200431.0,
+   "ratio": 0.1219
+  },
+  {
+   "ts": "2017-06-02T13:45:00Z",
+   "gkg_bytes": 2499819,
+   "trailing_median": 15015715.5,
+   "ratio": 0.1665
+  },
+  {
+   "ts": "2017-06-05T15:30:00Z",
+   "gkg_bytes": 2008023,
+   "trailing_median": 14660631.5,
+   "ratio": 0.137
+  },
+  {
+   "ts": "2017-06-06T06:00:00Z",
+   "gkg_bytes": 1430501,
+   "trailing_median": 15032868.0,
+   "ratio": 0.0952
+  },
+  {
+   "ts": "2017-06-10T16:30:00Z",
+   "gkg_bytes": 1302457,
+   "trailing_median": 14665061.5,
+   "ratio": 0.0888
+  },
+  {
+   "ts": "2017-06-14T19:15:00Z",
+   "gkg_bytes": 1767443,
+   "trailing_median": 15537330.5,
+   "ratio": 0.1138
+  },
+  {
+   "ts": "2017-06-16T02:45:00Z",
+   "gkg_bytes": 1482521,
+   "trailing_median": 15538085.0,
+   "ratio": 0.0954
+  },
+  {
+   "ts": "2017-06-18T20:45:00Z",
+   "gkg_bytes": 2276936,
+   "trailing_median": 14420891.0,
+   "ratio": 0.1579
+  },
+  {
+   "ts": "2017-06-19T01:00:00Z",
+   "gkg_bytes": 1011019,
+   "trailing_median": 14420891.0,
+   "ratio": 0.0701
+  },
+  {
+   "ts": "2017-06-19T21:00:00Z",
+   "gkg_bytes": 1443039,
+   "trailing_median": 15347982.5,
+   "ratio": 0.094
+  },
+  {
+   "ts": "2017-06-21T21:15:00Z",
+   "gkg_bytes": 1454371,
+   "trailing_median": 15394172.5,
+   "ratio": 0.0945
+  },
+  {
+   "ts": "2017-07-01T06:15:00Z",
+   "gkg_bytes": 954085,
+   "trailing_median": 14975074.0,
+   "ratio": 0.0637
+  },
+  {
+   "ts": "2017-07-02T05:30:00Z",
+   "gkg_bytes": 813771,
+   "trailing_median": 14356576.5,
+   "ratio": 0.0567
+  },
+  {
+   "ts": "2017-07-02T11:15:00Z",
+   "gkg_bytes": 1301308,
+   "trailing_median": 14397010.0,
+   "ratio": 0.0904
+  },
+  {
+   "ts": "2017-07-05T01:45:00Z",
+   "gkg_bytes": 1698714,
+   "trailing_median": 15173678.5,
+   "ratio": 0.112
+  },
+  {
+   "ts": "2017-07-05T08:15:00Z",
+   "gkg_bytes": 2516513,
+   "trailing_median": 15360427.0,
+   "ratio": 0.1638
+  },
+  {
+   "ts": "2017-07-05T17:45:00Z",
+   "gkg_bytes": 2003827,
+   "trailing_median": 15796627.0,
+   "ratio": 0.1269
+  },
+  {
+   "ts": "2017-07-06T09:15:00Z",
+   "gkg_bytes": 2722220,
+   "trailing_median": 16330407.0,
+   "ratio": 0.1667
+  },
+  {
+   "ts": "2017-07-06T10:15:00Z",
+   "gkg_bytes": 2507294,
+   "trailing_median": 16295042.0,
+   "ratio": 0.1539
+  },
+  {
+   "ts": "2017-07-06T20:00:00Z",
+   "gkg_bytes": 1588019,
+   "trailing_median": 16257340.5,
+   "ratio": 0.0977
+  },
+  {
+   "ts": "2017-07-10T04:00:00Z",
+   "gkg_bytes": 2231744,
+   "trailing_median": 14678782.0,
+   "ratio": 0.152
+  },
+  {
+   "ts": "2017-07-10T13:15:00Z",
+   "gkg_bytes": 2421700,
+   "trailing_median": 14545383.0,
+   "ratio": 0.1665
+  },
+  {
+   "ts": "2017-07-11T15:00:00Z",
+   "gkg_bytes": 2378350,
+   "trailing_median": 14928740.5,
+   "ratio": 0.1593
+  },
+  {
+   "ts": "2017-07-12T14:45:00Z",
+   "gkg_bytes": 2484956,
+   "trailing_median": 15531141.5,
+   "ratio": 0.16
+  },
+  {
+   "ts": "2017-07-13T03:00:00Z",
+   "gkg_bytes": 1143509,
+   "trailing_median": 16009808.5,
+   "ratio": 0.0714
+  },
+  {
+   "ts": "2017-07-13T16:00:00Z",
+   "gkg_bytes": 2271302,
+   "trailing_median": 16143038.5,
+   "ratio": 0.1407
+  },
+  {
+   "ts": "2017-07-14T14:30:00Z",
+   "gkg_bytes": 2197688,
+   "trailing_median": 16055306.0,
+   "ratio": 0.1369
+  },
+  {
+   "ts": "2017-07-15T14:00:00Z",
+   "gkg_bytes": 1193503,
+   "trailing_median": 15571935.5,
+   "ratio": 0.0766
+  },
+  {
+   "ts": "2017-07-15T17:00:00Z",
+   "gkg_bytes": 1488965,
+   "trailing_median": 15531141.5,
+   "ratio": 0.0959
+  },
+  {
+   "ts": "2017-07-18T15:30:00Z",
+   "gkg_bytes": 2360789,
+   "trailing_median": 14887439.5,
+   "ratio": 0.1586
+  },
+  {
+   "ts": "2017-07-19T06:30:00Z",
+   "gkg_bytes": 1675942,
+   "trailing_median": 15138868.5,
+   "ratio": 0.1107
+  },
+  {
+   "ts": "2017-07-22T22:30:00Z",
+   "gkg_bytes": 877722,
+   "trailing_median": 15047329.0,
+   "ratio": 0.0583
+  },
+  {
+   "ts": "2017-07-23T13:00:00Z",
+   "gkg_bytes": 2080350,
+   "trailing_median": 14583572.0,
+   "ratio": 0.1427
+  },
+  {
+   "ts": "2017-07-23T15:45:00Z",
+   "gkg_bytes": 1282173,
+   "trailing_median": 14544982.5,
+   "ratio": 0.0882
+  },
+  {
+   "ts": "2017-07-23T16:15:00Z",
+   "gkg_bytes": 1195450,
+   "trailing_median": 14530618.5,
+   "ratio": 0.0823
+  },
+  {
+   "ts": "2017-07-24T08:15:00Z",
+   "gkg_bytes": 1959582,
+   "trailing_median": 14250488.0,
+   "ratio": 0.1375
+  },
+  {
+   "ts": "2017-07-25T08:30:00Z",
+   "gkg_bytes": 2052850,
+   "trailing_median": 14408323.0,
+   "ratio": 0.1425
+  },
+  {
+   "ts": "2017-08-01T12:15:00Z",
+   "gkg_bytes": 2495164,
+   "trailing_median": 14369713.5,
+   "ratio": 0.1736
+  },
+  {
+   "ts": "2017-08-03T05:00:00Z",
+   "gkg_bytes": 1235290,
+   "trailing_median": 14647395.5,
+   "ratio": 0.0843
+  },
+  {
+   "ts": "2017-08-06T16:00:00Z",
+   "gkg_bytes": 1191304,
+   "trailing_median": 13921139.0,
+   "ratio": 0.0856
+  },
+  {
+   "ts": "2017-08-06T16:30:00Z",
+   "gkg_bytes": 1283788,
+   "trailing_median": 13921139.0,
+   "ratio": 0.0922
+  },
+  {
+   "ts": "2017-08-06T19:45:00Z",
+   "gkg_bytes": 1093064,
+   "trailing_median": 13923896.0,
+   "ratio": 0.0785
+  },
+  {
+   "ts": "2017-08-07T00:00:00Z",
+   "gkg_bytes": 1642014,
+   "trailing_median": 13787060.5,
+   "ratio": 0.1191
+  },
+  {
+   "ts": "2017-08-07T09:30:00Z",
+   "gkg_bytes": 2036286,
+   "trailing_median": 13664623.0,
+   "ratio": 0.149
+  },
+  {
+   "ts": "2017-08-08T14:00:00Z",
+   "gkg_bytes": 2269756,
+   "trailing_median": 14405852.0,
+   "ratio": 0.1576
+  },
+  {
+   "ts": "2017-08-10T20:45:00Z",
+   "gkg_bytes": 1358200,
+   "trailing_median": 14534839.0,
+   "ratio": 0.0934
+  },
+  {
+   "ts": "2017-08-10T21:30:00Z",
+   "gkg_bytes": 1445815,
+   "trailing_median": 14497859.5,
+   "ratio": 0.0997
+  },
+  {
+   "ts": "2017-08-11T21:15:00Z",
+   "gkg_bytes": 1120717,
+   "trailing_median": 14444390.5,
+   "ratio": 0.0776
+  },
+  {
+   "ts": "2017-08-12T08:30:00Z",
+   "gkg_bytes": 1244382,
+   "trailing_median": 13992579.5,
+   "ratio": 0.0889
+  },
+  {
+   "ts": "2017-08-12T13:45:00Z",
+   "gkg_bytes": 1270134,
+   "trailing_median": 13954878.5,
+   "ratio": 0.091
+  },
+  {
+   "ts": "2017-08-13T23:15:00Z",
+   "gkg_bytes": 860100,
+   "trailing_median": 13537844.5,
+   "ratio": 0.0635
+  },
+  {
+   "ts": "2017-08-14T15:30:00Z",
+   "gkg_bytes": 1825262,
+   "trailing_median": 13558179.5,
+   "ratio": 0.1346
+  },
+  {
+   "ts": "2017-08-15T04:45:00Z",
+   "gkg_bytes": 1134189,
+   "trailing_median": 13925370.0,
+   "ratio": 0.0814
+  },
+  {
+   "ts": "2017-08-18T04:15:00Z",
+   "gkg_bytes": 1145571,
+   "trailing_median": 14761314.5,
+   "ratio": 0.0776
+  },
+  {
+   "ts": "2017-08-18T19:45:00Z",
+   "gkg_bytes": 2827423,
+   "trailing_median": 14643382.0,
+   "ratio": 0.1931
+  },
+  {
+   "ts": "2017-08-21T13:45:00Z",
+   "gkg_bytes": 2338410,
+   "trailing_median": 13841485.0,
+   "ratio": 0.1689
+  },
+  {
+   "ts": "2017-08-22T02:45:00Z",
+   "gkg_bytes": 1101491,
+   "trailing_median": 14069472.5,
+   "ratio": 0.0783
+  },
+  {
+   "ts": "2017-08-22T06:30:00Z",
+   "gkg_bytes": 1618921,
+   "trailing_median": 14061722.0,
+   "ratio": 0.1151
+  },
+  {
+   "ts": "2017-08-22T07:00:00Z",
+   "gkg_bytes": 1642959,
+   "trailing_median": 14069472.5,
+   "ratio": 0.1168
+  },
+  {
+   "ts": "2017-08-22T07:15:00Z",
+   "gkg_bytes": 1840286,
+   "trailing_median": 14061722.0,
+   "ratio": 0.1309
+  },
+  {
+   "ts": "2017-08-22T08:45:00Z",
+   "gkg_bytes": 2226782,
+   "trailing_median": 14124913.0,
+   "ratio": 0.1576
+  },
+  {
+   "ts": "2017-08-22T09:45:00Z",
+   "gkg_bytes": 2523904,
+   "trailing_median": 14155443.0,
+   "ratio": 0.1783
+  },
+  {
+   "ts": "2017-08-22T10:45:00Z",
+   "gkg_bytes": 2563834,
+   "trailing_median": 14193107.0,
+   "ratio": 0.1806
+  },
+  {
+   "ts": "2017-08-22T17:30:00Z",
+   "gkg_bytes": 2125870,
+   "trailing_median": 14443280.5,
+   "ratio": 0.1472
+  },
+  {
+   "ts": "2017-08-22T21:15:00Z",
+   "gkg_bytes": 1556559,
+   "trailing_median": 14577872.0,
+   "ratio": 0.1068
+  },
+  {
+   "ts": "2017-08-22T22:30:00Z",
+   "gkg_bytes": 1345680,
+   "trailing_median": 14467894.5,
+   "ratio": 0.093
+  },
+  {
+   "ts": "2017-08-23T11:30:00Z",
+   "gkg_bytes": 2528300,
+   "trailing_median": 14261538.0,
+   "ratio": 0.1773
+  },
+  {
+   "ts": "2017-08-23T17:00:00Z",
+   "gkg_bytes": 2132799,
+   "trailing_median": 14552629.5,
+   "ratio": 0.1466
+  },
+  {
+   "ts": "2017-08-25T12:30:00Z",
+   "gkg_bytes": 2148000,
+   "trailing_median": 14388727.0,
+   "ratio": 0.1493
+  },
+  {
+   "ts": "2017-08-26T09:15:00Z",
+   "gkg_bytes": 1373696,
+   "trailing_median": 14261538.0,
+   "ratio": 0.0963
+  },
+  {
+   "ts": "2017-08-27T16:15:00Z",
+   "gkg_bytes": 1212693,
+   "trailing_median": 13518412.0,
+   "ratio": 0.0897
+  },
+  {
+   "ts": "2017-08-30T15:00:00Z",
+   "gkg_bytes": 2599354,
+   "trailing_median": 13855699.5,
+   "ratio": 0.1876
+  },
+  {
+   "ts": "2017-08-31T10:45:00Z",
+   "gkg_bytes": 2224532,
+   "trailing_median": 13915722.5,
+   "ratio": 0.1599
+  },
+  {
+   "ts": "2017-08-31T18:15:00Z",
+   "gkg_bytes": 1919150,
+   "trailing_median": 13904127.5,
+   "ratio": 0.138
+  },
+  {
+   "ts": "2017-08-31T22:15:00Z",
+   "gkg_bytes": 1268558,
+   "trailing_median": 14085525.5,
+   "ratio": 0.0901
+  },
+  {
+   "ts": "2017-09-01T03:45:00Z",
+   "gkg_bytes": 1967329,
+   "trailing_median": 14085525.5,
+   "ratio": 0.1397
+  },
+  {
+   "ts": "2017-09-01T17:00:00Z",
+   "gkg_bytes": 1755958,
+   "trailing_median": 14149601.5,
+   "ratio": 0.1241
+  },
+  {
+   "ts": "2017-09-01T22:45:00Z",
+   "gkg_bytes": 829094,
+   "trailing_median": 14055845.5,
+   "ratio": 0.059
+  },
+  {
+   "ts": "2017-09-03T22:15:00Z",
+   "gkg_bytes": 999098,
+   "trailing_median": 13011650.5,
+   "ratio": 0.0768
+  },
+  {
+   "ts": "2017-09-05T07:00:00Z",
+   "gkg_bytes": 1526880,
+   "trailing_median": 13384334.5,
+   "ratio": 0.1141
+  },
+  {
+   "ts": "2017-09-05T07:30:00Z",
+   "gkg_bytes": 1717631,
+   "trailing_median": 13385422.5,
+   "ratio": 0.1283
+  },
+  {
+   "ts": "2017-09-06T01:30:00Z",
+   "gkg_bytes": 2114396,
+   "trailing_median": 13792399.5,
+   "ratio": 0.1533
+  },
+  {
+   "ts": "2017-09-06T17:00:00Z",
+   "gkg_bytes": 2170090,
+   "trailing_median": 14191882.5,
+   "ratio": 0.1529
+  },
+  {
+   "ts": "2017-09-09T23:30:00Z",
+   "gkg_bytes": 725984,
+   "trailing_median": 13663162.5,
+   "ratio": 0.0531
+  },
+  {
+   "ts": "2017-09-12T08:00:00Z",
+   "gkg_bytes": 2048081,
+   "trailing_median": 14030311.5,
+   "ratio": 0.146
+  },
+  {
+   "ts": "2017-09-13T08:00:00Z",
+   "gkg_bytes": 2243861,
+   "trailing_median": 14353197.5,
+   "ratio": 0.1563
+  },
+  {
+   "ts": "2017-09-14T19:15:00Z",
+   "gkg_bytes": 1484869,
+   "trailing_median": 15158091.0,
+   "ratio": 0.098
+  },
+  {
+   "ts": "2017-09-15T03:00:00Z",
+   "gkg_bytes": 936337,
+   "trailing_median": 14699592.5,
+   "ratio": 0.0637
+  },
+  {
+   "ts": "2017-09-15T05:45:00Z",
+   "gkg_bytes": 1567913,
+   "trailing_median": 14601369.5,
+   "ratio": 0.1074
+  },
+  {
+   "ts": "2017-09-16T03:00:00Z",
+   "gkg_bytes": 681733,
+   "trailing_median": 15027748.5,
+   "ratio": 0.0454
+  },
+  {
+   "ts": "2017-09-16T09:00:00Z",
+   "gkg_bytes": 1352416,
+   "trailing_median": 14601369.5,
+   "ratio": 0.0926
+  },
+  {
+   "ts": "2017-09-16T22:30:00Z",
+   "gkg_bytes": 896751,
+   "trailing_median": 14723227.5,
+   "ratio": 0.0609
+  },
+  {
+   "ts": "2017-09-20T05:30:00Z",
+   "gkg_bytes": 1430399,
+   "trailing_median": 15134616.5,
+   "ratio": 0.0945
+  },
+  {
+   "ts": "2017-09-20T09:15:00Z",
+   "gkg_bytes": 2307072,
+   "trailing_median": 15126555.0,
+   "ratio": 0.1525
+  },
+  {
+   "ts": "2017-09-20T11:45:00Z",
+   "gkg_bytes": 2564373,
+   "trailing_median": 15119230.5,
+   "ratio": 0.1696
+  },
+  {
+   "ts": "2017-09-21T01:00:00Z",
+   "gkg_bytes": 1302243,
+   "trailing_median": 15526905.5,
+   "ratio": 0.0839
+  },
+  {
+   "ts": "2017-09-21T20:30:00Z",
+   "gkg_bytes": 1531692,
+   "trailing_median": 15727862.0,
+   "ratio": 0.0974
+  },
+  {
+   "ts": "2017-09-22T10:00:00Z",
+   "gkg_bytes": 2818274,
+   "trailing_median": 15083631.5,
+   "ratio": 0.1868
+  },
+  {
+   "ts": "2017-09-24T10:15:00Z",
+   "gkg_bytes": 1287934,
+   "trailing_median": 14075656.5,
+   "ratio": 0.0915
+  },
+  {
+   "ts": "2017-09-24T12:30:00Z",
+   "gkg_bytes": 1345674,
+   "trailing_median": 14199793.0,
+   "ratio": 0.0948
+  },
+  {
+   "ts": "2017-09-24T12:45:00Z",
+   "gkg_bytes": 1380213,
+   "trailing_median": 14199793.0,
+   "ratio": 0.0972
+  },
+  {
+   "ts": "2017-09-27T10:45:00Z",
+   "gkg_bytes": 2564627,
+   "trailing_median": 14706943.0,
+   "ratio": 0.1744
+  },
+  {
+   "ts": "2017-09-27T18:15:00Z",
+   "gkg_bytes": 1857239,
+   "trailing_median": 15600186.5,
+   "ratio": 0.1191
+  },
+  {
+   "ts": "2017-09-28T06:30:00Z",
+   "gkg_bytes": 1689489,
+   "trailing_median": 14610551.0,
+   "ratio": 0.1156
+  },
+  {
+   "ts": "2017-09-28T12:15:00Z",
+   "gkg_bytes": 2321323,
+   "trailing_median": 15108961.0,
+   "ratio": 0.1536
+  },
+  {
+   "ts": "2017-09-28T15:15:00Z",
+   "gkg_bytes": 2383560,
+   "trailing_median": 15284728.5,
+   "ratio": 0.1559
+  },
+  {
+   "ts": "2017-09-29T22:00:00Z",
+   "gkg_bytes": 1205523,
+   "trailing_median": 15544358.5,
+   "ratio": 0.0776
+  },
+  {
+   "ts": "2017-09-30T18:15:00Z",
+   "gkg_bytes": 1196438,
+   "trailing_median": 14625484.5,
+   "ratio": 0.0818
+  },
+  {
+   "ts": "2017-10-01T00:30:00Z",
+   "gkg_bytes": 1854019,
+   "trailing_median": 14625484.5,
+   "ratio": 0.1268
+  },
+  {
+   "ts": "2017-10-01T22:45:00Z",
+   "gkg_bytes": 888618,
+   "trailing_median": 14152707.5,
+   "ratio": 0.0628
+  },
+  {
+   "ts": "2017-10-02T00:45:00Z",
+   "gkg_bytes": 818065,
+   "trailing_median": 14152707.5,
+   "ratio": 0.0578
+  },
+  {
+   "ts": "2017-10-02T10:30:00Z",
+   "gkg_bytes": 2570667,
+   "trailing_median": 14198141.5,
+   "ratio": 0.1811
+  },
+  {
+   "ts": "2017-10-03T07:15:00Z",
+   "gkg_bytes": 1534025,
+   "trailing_median": 14608995.0,
+   "ratio": 0.105
+  },
+  {
+   "ts": "2017-10-03T09:30:00Z",
+   "gkg_bytes": 2226601,
+   "trailing_median": 14742087.5,
+   "ratio": 0.151
+  },
+  {
+   "ts": "2017-10-04T00:00:00Z",
+   "gkg_bytes": 938781,
+   "trailing_median": 15368772.0,
+   "ratio": 0.0611
+  },
+  {
+   "ts": "2017-10-04T11:15:00Z",
+   "gkg_bytes": 2225751,
+   "trailing_median": 15433882.0,
+   "ratio": 0.1442
+  },
+  {
+   "ts": "2017-10-05T04:30:00Z",
+   "gkg_bytes": 977714,
+   "trailing_median": 15158226.5,
+   "ratio": 0.0645
+  },
+  {
+   "ts": "2017-10-06T04:45:00Z",
+   "gkg_bytes": 1182479,
+   "trailing_median": 15140531.5,
+   "ratio": 0.0781
+  },
+  {
+   "ts": "2017-10-07T11:15:00Z",
+   "gkg_bytes": 1494101,
+   "trailing_median": 14869185.5,
+   "ratio": 0.1005
+  },
+  {
+   "ts": "2017-10-09T02:00:00Z",
+   "gkg_bytes": 1195780,
+   "trailing_median": 13667819.0,
+   "ratio": 0.0875
+  },
+  {
+   "ts": "2017-10-11T16:00:00Z",
+   "gkg_bytes": 2422094,
+   "trailing_median": 14794206.0,
+   "ratio": 0.1637
+  },
+  {
+   "ts": "2017-10-13T17:45:00Z",
+   "gkg_bytes": 1722996,
+   "trailing_median": 15024840.0,
+   "ratio": 0.1147
+  },
+  {
+   "ts": "2017-10-14T23:00:00Z",
+   "gkg_bytes": 724906,
+   "trailing_median": 13883825.0,
+   "ratio": 0.0522
+  },
+  {
+   "ts": "2017-10-16T18:00:00Z",
+   "gkg_bytes": 1821094,
+   "trailing_median": 13979472.0,
+   "ratio": 0.1303
+  },
+  {
+   "ts": "2017-10-17T20:45:00Z",
+   "gkg_bytes": 1591806,
+   "trailing_median": 14510663.5,
+   "ratio": 0.1097
+  },
+  {
+   "ts": "2017-10-18T16:15:00Z",
+   "gkg_bytes": 2252841,
+   "trailing_median": 14496950.0,
+   "ratio": 0.1554
+  },
+  {
+   "ts": "2017-10-22T11:15:00Z",
+   "gkg_bytes": 1298988,
+   "trailing_median": 13531880.5,
+   "ratio": 0.096
+  },
+  {
+   "ts": "2017-10-25T16:15:00Z",
+   "gkg_bytes": 1888793,
+   "trailing_median": 14249123.0,
+   "ratio": 0.1326
+  },
+  {
+   "ts": "2017-10-27T13:45:00Z",
+   "gkg_bytes": 2307563,
+   "trailing_median": 14046501.5,
+   "ratio": 0.1643
+  },
+  {
+   "ts": "2017-10-27T19:00:00Z",
+   "gkg_bytes": 1330309,
+   "trailing_median": 14477229.5,
+   "ratio": 0.0919
+  },
+  {
+   "ts": "2017-10-28T15:30:00Z",
+   "gkg_bytes": 1319722,
+   "trailing_median": 13888206.0,
+   "ratio": 0.095
+  },
+  {
+   "ts": "2017-10-28T20:15:00Z",
+   "gkg_bytes": 938052,
+   "trailing_median": 13927777.0,
+   "ratio": 0.0674
+  },
+  {
+   "ts": "2017-10-30T19:45:00Z",
+   "gkg_bytes": 1816601,
+   "trailing_median": 14614951.5,
+   "ratio": 0.1243
+  },
+  {
+   "ts": "2017-11-01T19:45:00Z",
+   "gkg_bytes": 1513595,
+   "trailing_median": 14411921.0,
+   "ratio": 0.105
+  },
+  {
+   "ts": "2017-11-02T15:45:00Z",
+   "gkg_bytes": 2240489,
+   "trailing_median": 14094061.5,
+   "ratio": 0.159
+  },
+  {
+   "ts": "2017-11-02T18:15:00Z",
+   "gkg_bytes": 1618986,
+   "trailing_median": 14172801.0,
+   "ratio": 0.1142
+  },
+  {
+   "ts": "2017-11-04T02:15:00Z",
+   "gkg_bytes": 889593,
+   "trailing_median": 14317433.0,
+   "ratio": 0.0621
+  },
+  {
+   "ts": "2017-11-11T07:00:00Z",
+   "gkg_bytes": 1113961,
+   "trailing_median": 13952566.0,
+   "ratio": 0.0798
+  },
+  {
+   "ts": "2017-11-13T11:30:00Z",
+   "gkg_bytes": 2140867,
+   "trailing_median": 13792751.0,
+   "ratio": 0.1552
+  },
+  {
+   "ts": "2017-11-14T14:00:00Z",
+   "gkg_bytes": 2408954,
+   "trailing_median": 14130539.0,
+   "ratio": 0.1705
+  },
+  {
+   "ts": "2017-11-15T00:45:00Z",
+   "gkg_bytes": 1983473,
+   "trailing_median": 14349991.5,
+   "ratio": 0.1382
+  },
+  {
+   "ts": "2017-11-21T13:45:00Z",
+   "gkg_bytes": 2798946,
+   "trailing_median": 14205001.5,
+   "ratio": 0.197
+  },
+  {
+   "ts": "2017-11-22T13:45:00Z",
+   "gkg_bytes": 2475706,
+   "trailing_median": 14330217.0,
+   "ratio": 0.1728
+  },
+  {
+   "ts": "2017-11-22T16:45:00Z",
+   "gkg_bytes": 1873715,
+   "trailing_median": 14303279.0,
+   "ratio": 0.131
+  },
+  {
+   "ts": "2017-11-22T20:30:00Z",
+   "gkg_bytes": 1435747,
+   "trailing_median": 14303279.0,
+   "ratio": 0.1004
+  },
+  {
+   "ts": "2017-11-24T08:45:00Z",
+   "gkg_bytes": 1849224,
+   "trailing_median": 14154847.0,
+   "ratio": 0.1306
+  },
+  {
+   "ts": "2017-11-25T09:30:00Z",
+   "gkg_bytes": 1012517,
+   "trailing_median": 14147972.5,
+   "ratio": 0.0716
+  },
+  {
+   "ts": "2017-11-27T10:45:00Z",
+   "gkg_bytes": 2581750,
+   "trailing_median": 13523187.5,
+   "ratio": 0.1909
+  },
+  {
+   "ts": "2017-11-27T18:15:00Z",
+   "gkg_bytes": 1934650,
+   "trailing_median": 14020936.0,
+   "ratio": 0.138
+  },
+  {
+   "ts": "2017-12-03T08:15:00Z",
+   "gkg_bytes": 2232889,
+   "trailing_median": 13348363.5,
+   "ratio": 0.1673
+  },
+  {
+   "ts": "2017-12-05T13:00:00Z",
+   "gkg_bytes": 2527379,
+   "trailing_median": 14352254.0,
+   "ratio": 0.1761
+  },
+  {
+   "ts": "2017-12-06T00:00:00Z",
+   "gkg_bytes": 1106882,
+   "trailing_median": 14300698.0,
+   "ratio": 0.0774
+  },
+  {
+   "ts": "2017-12-06T08:30:00Z",
+   "gkg_bytes": 2152299,
+   "trailing_median": 14155123.0,
+   "ratio": 0.1521
+  },
+  {
+   "ts": "2017-12-06T11:00:00Z",
+   "gkg_bytes": 2226711,
+   "trailing_median": 14223554.0,
+   "ratio": 0.1566
+  },
+  {
+   "ts": "2017-12-12T09:45:00Z",
+   "gkg_bytes": 2314475,
+   "trailing_median": 13474635.0,
+   "ratio": 0.1718
+  },
+  {
+   "ts": "2017-12-15T13:45:00Z",
+   "gkg_bytes": 2118696,
+   "trailing_median": 13905851.5,
+   "ratio": 0.1524
+  },
+  {
+   "ts": "2017-12-18T13:45:00Z",
+   "gkg_bytes": 2160642,
+   "trailing_median": 13130114.5,
+   "ratio": 0.1646
+  },
+  {
+   "ts": "2017-12-23T10:00:00Z",
+   "gkg_bytes": 1522833,
+   "trailing_median": 13349971.0,
+   "ratio": 0.1141
+  },
+  {
+   "ts": "2017-12-30T08:30:00Z",
+   "gkg_bytes": 1378774,
+   "trailing_median": 11727460.0,
+   "ratio": 0.1176
+  },
+  {
+   "ts": "2017-12-31T19:15:00Z",
+   "gkg_bytes": 776753,
+   "trailing_median": 11509146.0,
+   "ratio": 0.0675
+  },
+  {
+   "ts": "2018-01-02T13:15:00Z",
+   "gkg_bytes": 1819882,
+   "trailing_median": 11303134.0,
+   "ratio": 0.161
+  },
+  {
+   "ts": "2018-01-07T14:15:00Z",
+   "gkg_bytes": 1185302,
+   "trailing_median": 11090657.5,
+   "ratio": 0.1069
+  },
+  {
+   "ts": "2018-01-07T22:30:00Z",
+   "gkg_bytes": 834704,
+   "trailing_median": 11219826.0,
+   "ratio": 0.0744
+  },
+  {
+   "ts": "2018-01-08T00:30:00Z",
+   "gkg_bytes": 593798,
+   "trailing_median": 11219826.0,
+   "ratio": 0.0529
+  },
+  {
+   "ts": "2018-01-16T18:15:00Z",
+   "gkg_bytes": 1896345,
+   "trailing_median": 13716667.0,
+   "ratio": 0.1383
+  },
+  {
+   "ts": "2018-01-17T23:45:00Z",
+   "gkg_bytes": 1217305,
+   "trailing_median": 13852303.0,
+   "ratio": 0.0879
+  },
+  {
+   "ts": "2018-01-19T21:15:00Z",
+   "gkg_bytes": 1219477,
+   "trailing_median": 13890083.0,
+   "ratio": 0.0878
+  },
+  {
+   "ts": "2018-01-25T21:15:00Z",
+   "gkg_bytes": 1365320,
+   "trailing_median": 14533174.0,
+   "ratio": 0.0939
+  },
+  {
+   "ts": "2018-01-26T01:30:00Z",
+   "gkg_bytes": 926847,
+   "trailing_median": 14164761.5,
+   "ratio": 0.0654
+  },
+  {
+   "ts": "2018-01-26T19:15:00Z",
+   "gkg_bytes": 1403023,
+   "trailing_median": 14419685.0,
+   "ratio": 0.0973
+  },
+  {
+   "ts": "2018-01-29T14:15:00Z",
+   "gkg_bytes": 2245373,
+   "trailing_median": 13327922.0,
+   "ratio": 0.1685
+  },
+  {
+   "ts": "2018-01-30T20:00:00Z",
+   "gkg_bytes": 1668999,
+   "trailing_median": 14322787.0,
+   "ratio": 0.1165
+  },
+  {
+   "ts": "2018-01-31T08:15:00Z",
+   "gkg_bytes": 1864231,
+   "trailing_median": 13868117.5,
+   "ratio": 0.1344
+  },
+  {
+   "ts": "2018-01-31T14:15:00Z",
+   "gkg_bytes": 2166887,
+   "trailing_median": 14259989.5,
+   "ratio": 0.152
+  },
+  {
+   "ts": "2018-02-06T06:15:00Z",
+   "gkg_bytes": 1415901,
+   "trailing_median": 13824774.5,
+   "ratio": 0.1024
+  },
+  {
+   "ts": "2018-02-09T15:15:00Z",
+   "gkg_bytes": 2393233,
+   "trailing_median": 13776767.5,
+   "ratio": 0.1737
+  },
+  {
+   "ts": "2018-02-09T17:00:00Z",
+   "gkg_bytes": 1724592,
+   "trailing_median": 13767138.5,
+   "ratio": 0.1253
+  },
+  {
+   "ts": "2018-02-13T09:00:00Z",
+   "gkg_bytes": 1882313,
+   "trailing_median": 13302919.5,
+   "ratio": 0.1415
+  },
+  {
+   "ts": "2018-02-16T15:15:00Z",
+   "gkg_bytes": 1681886,
+   "trailing_median": 13016202.5,
+   "ratio": 0.1292
+  },
+  {
+   "ts": "2018-02-23T15:15:00Z",
+   "gkg_bytes": 1881076,
+   "trailing_median": 12543788.0,
+   "ratio": 0.15
+  },
+  {
+   "ts": "2018-02-27T10:15:00Z",
+   "gkg_bytes": 1813888,
+   "trailing_median": 13042991.0,
+   "ratio": 0.1391
+  },
+  {
+   "ts": "2018-03-04T13:15:00Z",
+   "gkg_bytes": 1265686,
+   "trailing_median": 12850153.5,
+   "ratio": 0.0985
+  },
+  {
+   "ts": "2018-03-04T13:45:00Z",
+   "gkg_bytes": 1230416,
+   "trailing_median": 12850153.5,
+   "ratio": 0.0958
+  },
+  {
+   "ts": "2018-03-05T15:15:00Z",
+   "gkg_bytes": 2049897,
+   "trailing_median": 13292397.5,
+   "ratio": 0.1542
+  },
+  {
+   "ts": "2018-03-11T11:30:00Z",
+   "gkg_bytes": 1260879,
+   "trailing_median": 12840668.0,
+   "ratio": 0.0982
+  },
+  {
+   "ts": "2018-03-12T18:30:00Z",
+   "gkg_bytes": 1513395,
+   "trailing_median": 13440987.5,
+   "ratio": 0.1126
+  },
+  {
+   "ts": "2018-03-13T08:30:00Z",
+   "gkg_bytes": 1592801,
+   "trailing_median": 13009633.0,
+   "ratio": 0.1224
+  },
+  {
+   "ts": "2018-03-13T21:15:00Z",
+   "gkg_bytes": 1345662,
+   "trailing_median": 13372666.5,
+   "ratio": 0.1006
+  },
+  {
+   "ts": "2018-03-22T07:45:00Z",
+   "gkg_bytes": 1690467,
+   "trailing_median": 13119035.0,
+   "ratio": 0.1289
+  },
+  {
+   "ts": "2018-03-23T12:45:00Z",
+   "gkg_bytes": 2102360,
+   "trailing_median": 13312638.0,
+   "ratio": 0.1579
+  },
+  {
+   "ts": "2018-04-01T09:15:00Z",
+   "gkg_bytes": 1024950,
+   "trailing_median": 12518498.0,
+   "ratio": 0.0819
+  },
+  {
+   "ts": "2018-04-02T18:30:00Z",
+   "gkg_bytes": 1256238,
+   "trailing_median": 13112987.5,
+   "ratio": 0.0958
+  },
+  {
+   "ts": "2018-04-03T22:15:00Z",
+   "gkg_bytes": 997040,
+   "trailing_median": 13238150.0,
+   "ratio": 0.0753
+  },
+  {
+   "ts": "2018-04-04T16:00:00Z",
+   "gkg_bytes": 1950486,
+   "trailing_median": 12907127.0,
+   "ratio": 0.1511
+  },
+  {
+   "ts": "2018-04-05T00:00:00Z",
+   "gkg_bytes": 807906,
+   "trailing_median": 13015072.0,
+   "ratio": 0.0621
+  },
+  {
+   "ts": "2018-04-08T21:00:00Z",
+   "gkg_bytes": 913818,
+   "trailing_median": 12278827.5,
+   "ratio": 0.0744
+  },
+  {
+   "ts": "2018-04-09T00:15:00Z",
+   "gkg_bytes": 1189736,
+   "trailing_median": 12278827.5,
+   "ratio": 0.0969
+  },
+  {
+   "ts": "2018-04-09T11:45:00Z",
+   "gkg_bytes": 2048464,
+   "trailing_median": 12457397.0,
+   "ratio": 0.1644
+  },
+  {
+   "ts": "2018-04-13T17:45:00Z",
+   "gkg_bytes": 1488284,
+   "trailing_median": 13113357.0,
+   "ratio": 0.1135
+  },
+  {
+   "ts": "2018-04-21T00:45:00Z",
+   "gkg_bytes": 775004,
+   "trailing_median": 13664810.0,
+   "ratio": 0.0567
+  },
+  {
+   "ts": "2018-04-23T14:30:00Z",
+   "gkg_bytes": 2104806,
+   "trailing_median": 13329502.0,
+   "ratio": 0.1579
+  },
+  {
+   "ts": "2018-04-27T00:00:00Z",
+   "gkg_bytes": 912411,
+   "trailing_median": 13420474.0,
+   "ratio": 0.068
+  },
+  {
+   "ts": "2018-05-08T07:00:00Z",
+   "gkg_bytes": 1675500,
+   "trailing_median": 11695363.0,
+   "ratio": 0.1433
+  },
+  {
+   "ts": "2018-05-14T19:00:00Z",
+   "gkg_bytes": 1394139,
+   "trailing_median": 12800153.0,
+   "ratio": 0.1089
+  },
+  {
+   "ts": "2018-05-19T17:45:00Z",
+   "gkg_bytes": 1215907,
+   "trailing_median": 12557987.5,
+   "ratio": 0.0968
+  },
+  {
+   "ts": "2018-05-24T21:00:00Z",
+   "gkg_bytes": 2287007,
+   "trailing_median": 13018931.0,
+   "ratio": 0.1757
+  },
+  {
+   "ts": "2018-05-25T01:45:00Z",
+   "gkg_bytes": 1124031,
+   "trailing_median": 12672826.5,
+   "ratio": 0.0887
+  },
+  {
+   "ts": "2018-05-25T13:45:00Z",
+   "gkg_bytes": 2004228,
+   "trailing_median": 12558814.5,
+   "ratio": 0.1596
+  },
+  {
+   "ts": "2018-05-25T14:15:00Z",
+   "gkg_bytes": 2035085,
+   "trailing_median": 12567513.5,
+   "ratio": 0.1619
+  },
+  {
+   "ts": "2018-05-27T02:45:00Z",
+   "gkg_bytes": 696560,
+   "trailing_median": 12176754.0,
+   "ratio": 0.0572
+  },
+  {
+   "ts": "2018-05-30T09:15:00Z",
+   "gkg_bytes": 2025626,
+   "trailing_median": 12444652.0,
+   "ratio": 0.1628
+  },
+  {
+   "ts": "2018-05-31T08:45:00Z",
+   "gkg_bytes": 2035527,
+   "trailing_median": 12279326.5,
+   "ratio": 0.1658
+  },
+  {
+   "ts": "2018-06-04T00:15:00Z",
+   "gkg_bytes": 1004818,
+   "trailing_median": 12036081.5,
+   "ratio": 0.0835
+  },
+  {
+   "ts": "2018-06-04T10:45:00Z",
+   "gkg_bytes": 1946921,
+   "trailing_median": 12123308.0,
+   "ratio": 0.1606
+  },
+  {
+   "ts": "2018-06-05T11:00:00Z",
+   "gkg_bytes": 2162387,
+   "trailing_median": 12211389.5,
+   "ratio": 0.1771
+  },
+  {
+   "ts": "2018-06-09T10:45:00Z",
+   "gkg_bytes": 1253426,
+   "trailing_median": 11911778.0,
+   "ratio": 0.1052
+  },
+  {
+   "ts": "2018-06-15T00:45:00Z",
+   "gkg_bytes": 846393,
+   "trailing_median": 12467823.5,
+   "ratio": 0.0679
+  },
+  {
+   "ts": "2018-06-17T16:45:00Z",
+   "gkg_bytes": 900533,
+   "trailing_median": 11526044.5,
+   "ratio": 0.0781
+  },
+  {
+   "ts": "2018-06-21T07:45:00Z",
+   "gkg_bytes": 1887570,
+   "trailing_median": 11403152.5,
+   "ratio": 0.1655
+  },
+  {
+   "ts": "2018-06-25T15:30:00Z",
+   "gkg_bytes": 1938073,
+   "trailing_median": 12056588.5,
+   "ratio": 0.1607
+  },
+  {
+   "ts": "2018-06-29T14:15:00Z",
+   "gkg_bytes": 1778878,
+   "trailing_median": 12084012.0,
+   "ratio": 0.1472
+  },
+  {
+   "ts": "2018-06-29T15:30:00Z",
+   "gkg_bytes": 2165448,
+   "trailing_median": 12125369.0,
+   "ratio": 0.1786
+  },
+  {
+   "ts": "2018-07-04T02:30:00Z",
+   "gkg_bytes": 1130956,
+   "trailing_median": 11891523.0,
+   "ratio": 0.0951
+  },
+  {
+   "ts": "2018-07-10T05:30:00Z",
+   "gkg_bytes": 1032715,
+   "trailing_median": 11509306.0,
+   "ratio": 0.0897
+  },
+  {
+   "ts": "2018-07-10T14:30:00Z",
+   "gkg_bytes": 2256416,
+   "trailing_median": 11857849.5,
+   "ratio": 0.1903
+  },
+  {
+   "ts": "2018-07-11T14:15:00Z",
+   "gkg_bytes": 1810811,
+   "trailing_median": 11800489.0,
+   "ratio": 0.1535
+  },
+  {
+   "ts": "2018-07-12T11:00:00Z",
+   "gkg_bytes": 1847691,
+   "trailing_median": 11661881.5,
+   "ratio": 0.1584
+  },
+  {
+   "ts": "2018-07-13T19:15:00Z",
+   "gkg_bytes": 1324888,
+   "trailing_median": 11827743.5,
+   "ratio": 0.112
+  },
+  {
+   "ts": "2018-07-15T13:15:00Z",
+   "gkg_bytes": 954185,
+   "trailing_median": 11472396.5,
+   "ratio": 0.0832
+  },
+  {
+   "ts": "2018-07-15T13:30:00Z",
+   "gkg_bytes": 983534,
+   "trailing_median": 11472396.5,
+   "ratio": 0.0857
+  },
+  {
+   "ts": "2018-07-15T13:45:00Z",
+   "gkg_bytes": 1053342,
+   "trailing_median": 11472396.5,
+   "ratio": 0.0918
+  },
+  {
+   "ts": "2019-08-17T12:15:00Z",
+   "gkg_bytes": 1381849,
+   "trailing_median": 8675763.0,
+   "ratio": 0.1593
+  },
+  {
+   "ts": "2019-09-18T11:00:00Z",
+   "gkg_bytes": 1549489,
+   "trailing_median": 9070217.5,
+   "ratio": 0.1708
+  },
+  {
+   "ts": "2019-09-21T08:30:00Z",
+   "gkg_bytes": 1736307,
+   "trailing_median": 9203650.0,
+   "ratio": 0.1887
+  },
+  {
+   "ts": "2019-09-21T09:30:00Z",
+   "gkg_bytes": 801481,
+   "trailing_median": 9181350.0,
+   "ratio": 0.0873
+  },
+  {
+   "ts": "2019-10-05T22:15:00Z",
+   "gkg_bytes": 1235169,
+   "trailing_median": 8604802.0,
+   "ratio": 0.1435
+  },
+  {
+   "ts": "2019-10-05T22:30:00Z",
+   "gkg_bytes": 1581630,
+   "trailing_median": 8604802.0,
+   "ratio": 0.1838
+  },
+  {
+   "ts": "2019-10-21T22:15:00Z",
+   "gkg_bytes": 314142,
+   "trailing_median": 8843827.5,
+   "ratio": 0.0355
+  },
+  {
+   "ts": "2019-10-22T21:45:00Z",
+   "gkg_bytes": 402117,
+   "trailing_median": 8883412.5,
+   "ratio": 0.0453
+  },
+  {
+   "ts": "2019-10-25T00:15:00Z",
+   "gkg_bytes": 1483833,
+   "trailing_median": 8782995.5,
+   "ratio": 0.1689
+  },
+  {
+   "ts": "2019-10-26T22:45:00Z",
+   "gkg_bytes": 1285402,
+   "trailing_median": 8689559.5,
+   "ratio": 0.1479
+  },
+  {
+   "ts": "2019-10-29T22:30:00Z",
+   "gkg_bytes": 1640629,
+   "trailing_median": 8689900.0,
+   "ratio": 0.1888
+  },
+  {
+   "ts": "2020-01-03T14:45:00Z",
+   "gkg_bytes": 1049968,
+   "trailing_median": 7213333.5,
+   "ratio": 0.1456
+  },
+  {
+   "ts": "2020-07-06T15:30:00Z",
+   "gkg_bytes": 873829,
+   "trailing_median": 9060720.5,
+   "ratio": 0.0964
+  },
+  {
+   "ts": "2020-07-11T09:15:00Z",
+   "gkg_bytes": 716881,
+   "trailing_median": 9000159.0,
+   "ratio": 0.0797
+  },
+  {
+   "ts": "2020-08-06T18:15:00Z",
+   "gkg_bytes": 1569894,
+   "trailing_median": 8527074.5,
+   "ratio": 0.1841
+  },
+  {
+   "ts": "2020-08-19T14:30:00Z",
+   "gkg_bytes": 441946,
+   "trailing_median": 8479863.0,
+   "ratio": 0.0521
+  },
+  {
+   "ts": "2020-09-10T14:45:00Z",
+   "gkg_bytes": 1032012,
+   "trailing_median": 8762819.5,
+   "ratio": 0.1178
+  },
+  {
+   "ts": "2022-11-10T22:00:00Z",
+   "gkg_bytes": 70578,
+   "trailing_median": 5526216.5,
+   "ratio": 0.0128
+  },
+  {
+   "ts": "2022-11-10T22:15:00Z",
+   "gkg_bytes": 113030,
+   "trailing_median": 5513473.0,
+   "ratio": 0.0205
+  },
+  {
+   "ts": "2022-11-10T22:30:00Z",
+   "gkg_bytes": 138507,
+   "trailing_median": 5502170.0,
+   "ratio": 0.0252
+  },
+  {
+   "ts": "2022-11-10T22:45:00Z",
+   "gkg_bytes": 96381,
+   "trailing_median": 5497856.0,
+   "ratio": 0.0175
+  },
+  {
+   "ts": "2022-11-10T23:00:00Z",
+   "gkg_bytes": 90898,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0166
+  },
+  {
+   "ts": "2022-11-10T23:15:00Z",
+   "gkg_bytes": 96496,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0176
+  },
+  {
+   "ts": "2022-11-10T23:30:00Z",
+   "gkg_bytes": 82348,
+   "trailing_median": 5486793.5,
+   "ratio": 0.015
+  },
+  {
+   "ts": "2022-11-10T23:45:00Z",
+   "gkg_bytes": 112385,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0205
+  },
+  {
+   "ts": "2022-11-11T00:00:00Z",
+   "gkg_bytes": 100382,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0183
+  },
+  {
+   "ts": "2022-11-11T00:15:00Z",
+   "gkg_bytes": 76133,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0139
+  },
+  {
+   "ts": "2022-11-11T00:30:00Z",
+   "gkg_bytes": 61580,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0112
+  },
+  {
+   "ts": "2022-11-11T00:45:00Z",
+   "gkg_bytes": 123100,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0224
+  },
+  {
+   "ts": "2022-11-11T01:00:00Z",
+   "gkg_bytes": 175258,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0319
+  },
+  {
+   "ts": "2022-11-11T01:15:00Z",
+   "gkg_bytes": 143360,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0261
+  },
+  {
+   "ts": "2022-11-11T01:30:00Z",
+   "gkg_bytes": 130561,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0238
+  },
+  {
+   "ts": "2022-11-11T01:45:00Z",
+   "gkg_bytes": 186875,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0341
+  },
+  {
+   "ts": "2022-11-11T02:00:00Z",
+   "gkg_bytes": 186677,
+   "trailing_median": 5486793.5,
+   "ratio": 0.034
+  },
+  {
+   "ts": "2022-11-11T02:15:00Z",
+   "gkg_bytes": 94102,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0172
+  },
+  {
+   "ts": "2022-11-11T02:30:00Z",
+   "gkg_bytes": 163402,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0298
+  },
+  {
+   "ts": "2022-11-11T02:45:00Z",
+   "gkg_bytes": 134310,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0245
+  },
+  {
+   "ts": "2022-11-11T03:00:00Z",
+   "gkg_bytes": 183217,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0334
+  },
+  {
+   "ts": "2022-11-11T03:15:00Z",
+   "gkg_bytes": 146274,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0267
+  },
+  {
+   "ts": "2022-11-11T03:30:00Z",
+   "gkg_bytes": 222868,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0406
+  },
+  {
+   "ts": "2022-11-11T03:45:00Z",
+   "gkg_bytes": 140795,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0257
+  },
+  {
+   "ts": "2022-11-11T04:00:00Z",
+   "gkg_bytes": 193835,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0353
+  },
+  {
+   "ts": "2022-11-11T04:15:00Z",
+   "gkg_bytes": 196749,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0359
+  },
+  {
+   "ts": "2022-11-11T04:30:00Z",
+   "gkg_bytes": 143376,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0261
+  },
+  {
+   "ts": "2022-11-11T04:45:00Z",
+   "gkg_bytes": 152581,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0278
+  },
+  {
+   "ts": "2022-11-11T05:00:00Z",
+   "gkg_bytes": 138676,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0253
+  },
+  {
+   "ts": "2022-11-11T05:15:00Z",
+   "gkg_bytes": 169619,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0309
+  },
+  {
+   "ts": "2022-11-11T05:30:00Z",
+   "gkg_bytes": 160558,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0293
+  },
+  {
+   "ts": "2022-11-11T05:45:00Z",
+   "gkg_bytes": 147864,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0269
+  },
+  {
+   "ts": "2022-11-11T06:00:00Z",
+   "gkg_bytes": 258497,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0471
+  },
+  {
+   "ts": "2022-11-11T06:15:00Z",
+   "gkg_bytes": 238444,
+   "trailing_median": 5486793.5,
+   "ratio": 0.0435
+  },
+  {
+   "ts": "2022-11-11T06:30:00Z",
+   "gkg_bytes": 197628,
+   "trailing_median": 5486793.5,
+   "ratio": 0.036
+  },
+  {
+   "ts": "2022-11-11T06:45:00Z",
+   "gkg_bytes": 138854,
+   "trailing_median": 5477994.0,
+   "ratio": 0.0253
+  },
+  {
+   "ts": "2022-11-11T07:00:00Z",
+   "gkg_bytes": 164159,
+   "trailing_median": 5477994.0,
+   "ratio": 0.03
+  },
+  {
+   "ts": "2022-11-11T07:15:00Z",
+   "gkg_bytes": 162519,
+   "trailing_median": 5477994.0,
+   "ratio": 0.0297
+  },
+  {
+   "ts": "2022-11-11T07:30:00Z",
+   "gkg_bytes": 177479,
+   "trailing_median": 5477994.0,
+   "ratio": 0.0324
+  },
+  {
+   "ts": "2022-11-11T07:45:00Z",
+   "gkg_bytes": 184178,
+   "trailing_median": 5477994.0,
+   "ratio": 0.0336
+  },
+  {
+   "ts": "2022-11-11T08:00:00Z",
+   "gkg_bytes": 118452,
+   "trailing_median": 5477994.0,
+   "ratio": 0.0216
+  },
+  {
+   "ts": "2022-11-11T08:15:00Z",
+   "gkg_bytes": 191270,
+   "trailing_median": 5477994.0,
+   "ratio": 0.0349
+  },
+  {
+   "ts": "2022-11-11T08:30:00Z",
+   "gkg_bytes": 184578,
+   "trailing_median": 5477994.0,
+   "ratio": 0.0337
+  },
+  {
+   "ts": "2022-11-11T08:45:00Z",
+   "gkg_bytes": 247606,
+   "trailing_median": 5476003.5,
+   "ratio": 0.0452
+  },
+  {
+   "ts": "2022-11-11T09:00:00Z",
+   "gkg_bytes": 205702,
+   "trailing_median": 5470835.0,
+   "ratio": 0.0376
+  },
+  {
+   "ts": "2022-11-11T09:15:00Z",
+   "gkg_bytes": 297195,
+   "trailing_median": 5461692.5,
+   "ratio": 0.0544
+  },
+  {
+   "ts": "2022-11-11T09:30:00Z",
+   "gkg_bytes": 240381,
+   "trailing_median": 5454318.0,
+   "ratio": 0.0441
+  },
+  {
+   "ts": "2022-11-11T09:45:00Z",
+   "gkg_bytes": 230929,
+   "trailing_median": 5444290.5,
+   "ratio": 0.0424
+  },
+  {
+   "ts": "2022-11-11T10:00:00Z",
+   "gkg_bytes": 206666,
+   "trailing_median": 5436527.5,
+   "ratio": 0.038
+  },
+  {
+   "ts": "2022-11-11T10:15:00Z",
+   "gkg_bytes": 216029,
+   "trailing_median": 5435830.0,
+   "ratio": 0.0397
+  },
+  {
+   "ts": "2022-11-11T10:30:00Z",
+   "gkg_bytes": 227658,
+   "trailing_median": 5434473.5,
+   "ratio": 0.0419
+  },
+  {
+   "ts": "2022-11-11T10:45:00Z",
+   "gkg_bytes": 222096,
+   "trailing_median": 5428599.5,
+   "ratio": 0.0409
+  },
+  {
+   "ts": "2022-11-11T11:00:00Z",
+   "gkg_bytes": 211431,
+   "trailing_median": 5409788.5,
+   "ratio": 0.0391
+  },
+  {
+   "ts": "2022-11-11T11:15:00Z",
+   "gkg_bytes": 148677,
+   "trailing_median": 5395113.0,
+   "ratio": 0.0276
+  },
+  {
+   "ts": "2022-11-11T11:30:00Z",
+   "gkg_bytes": 240642,
+   "trailing_median": 5394171.0,
+   "ratio": 0.0446
+  },
+  {
+   "ts": "2022-11-11T11:45:00Z",
+   "gkg_bytes": 186413,
+   "trailing_median": 5393961.0,
+   "ratio": 0.0346
+  },
+  {
+   "ts": "2022-11-11T12:00:00Z",
+   "gkg_bytes": 215658,
+   "trailing_median": 5391281.0,
+   "ratio": 0.04
+  },
+  {
+   "ts": "2022-11-11T12:15:00Z",
+   "gkg_bytes": 143173,
+   "trailing_median": 5380222.0,
+   "ratio": 0.0266
+  },
+  {
+   "ts": "2022-11-11T12:30:00Z",
+   "gkg_bytes": 257061,
+   "trailing_median": 5364291.0,
+   "ratio": 0.0479
+  },
+  {
+   "ts": "2022-11-11T12:45:00Z",
+   "gkg_bytes": 198758,
+   "trailing_median": 5355187.0,
+   "ratio": 0.0371
+  },
+  {
+   "ts": "2022-11-11T13:00:00Z",
+   "gkg_bytes": 173579,
+   "trailing_median": 5349315.5,
+   "ratio": 0.0324
+  },
+  {
+   "ts": "2022-11-11T13:15:00Z",
+   "gkg_bytes": 186576,
+   "trailing_median": 5340362.5,
+   "ratio": 0.0349
+  },
+  {
+   "ts": "2022-11-11T13:30:00Z",
+   "gkg_bytes": 195091,
+   "trailing_median": 5332213.5,
+   "ratio": 0.0366
+  },
+  {
+   "ts": "2022-11-11T13:45:00Z",
+   "gkg_bytes": 214017,
+   "trailing_median": 5322528.5,
+   "ratio": 0.0402
+  },
+  {
+   "ts": "2022-11-11T14:00:00Z",
+   "gkg_bytes": 160696,
+   "trailing_median": 5310801.0,
+   "ratio": 0.0303
+  },
+  {
+   "ts": "2022-11-11T14:15:00Z",
+   "gkg_bytes": 186521,
+   "trailing_median": 5301226.5,
+   "ratio": 0.0352
+  },
+  {
+   "ts": "2022-11-11T14:30:00Z",
+   "gkg_bytes": 169379,
+   "trailing_median": 5296791.5,
+   "ratio": 0.032
+  },
+  {
+   "ts": "2022-11-11T14:45:00Z",
+   "gkg_bytes": 168201,
+   "trailing_median": 5295408.5,
+   "ratio": 0.0318
+  },
+  {
+   "ts": "2022-11-11T15:00:00Z",
+   "gkg_bytes": 189288,
+   "trailing_median": 5287247.0,
+   "ratio": 0.0358
+  },
+  {
+   "ts": "2022-11-11T15:15:00Z",
+   "gkg_bytes": 171094,
+   "trailing_median": 5273688.0,
+   "ratio": 0.0324
+  },
+  {
+   "ts": "2022-11-11T15:30:00Z",
+   "gkg_bytes": 175074,
+   "trailing_median": 5261427.0,
+   "ratio": 0.0333
+  },
+  {
+   "ts": "2022-11-11T15:45:00Z",
+   "gkg_bytes": 127725,
+   "trailing_median": 5247300.0,
+   "ratio": 0.0243
+  },
+  {
+   "ts": "2022-11-11T16:00:00Z",
+   "gkg_bytes": 136630,
+   "trailing_median": 5237265.5,
+   "ratio": 0.0261
+  },
+  {
+   "ts": "2022-11-11T16:15:00Z",
+   "gkg_bytes": 174534,
+   "trailing_median": 5233585.0,
+   "ratio": 0.0333
+  },
+  {
+   "ts": "2022-11-11T16:30:00Z",
+   "gkg_bytes": 122050,
+   "trailing_median": 5231505.5,
+   "ratio": 0.0233
+  },
+  {
+   "ts": "2022-11-11T16:45:00Z",
+   "gkg_bytes": 92971,
+   "trailing_median": 5223333.0,
+   "ratio": 0.0178
+  },
+  {
+   "ts": "2022-11-11T17:00:00Z",
+   "gkg_bytes": 145592,
+   "trailing_median": 5212687.5,
+   "ratio": 0.0279
+  },
+  {
+   "ts": "2022-11-11T17:15:00Z",
+   "gkg_bytes": 125313,
+   "trailing_median": 5199722.0,
+   "ratio": 0.0241
+  },
+  {
+   "ts": "2022-11-11T17:30:00Z",
+   "gkg_bytes": 114092,
+   "trailing_median": 5188403.0,
+   "ratio": 0.022
+  },
+  {
+   "ts": "2022-11-11T17:45:00Z",
+   "gkg_bytes": 139010,
+   "trailing_median": 5178446.5,
+   "ratio": 0.0268
+  },
+  {
+   "ts": "2022-11-11T18:00:00Z",
+   "gkg_bytes": 137826,
+   "trailing_median": 5166043.5,
+   "ratio": 0.0267
+  },
+  {
+   "ts": "2022-11-11T18:15:00Z",
+   "gkg_bytes": 169599,
+   "trailing_median": 5161003.5,
+   "ratio": 0.0329
+  },
+  {
+   "ts": "2022-11-11T18:30:00Z",
+   "gkg_bytes": 125571,
+   "trailing_median": 5158981.0,
+   "ratio": 0.0243
+  },
+  {
+   "ts": "2023-01-05T04:15:00Z",
+   "gkg_bytes": 827252,
+   "trailing_median": 4966590.0,
+   "ratio": 0.1666
+  },
+  {
+   "ts": "2023-03-21T23:00:00Z",
+   "gkg_bytes": 13727,
+   "trailing_median": 7647716.5,
+   "ratio": 0.0018
+  }
+ ]
+}

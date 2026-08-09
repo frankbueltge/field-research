@@ -1,0 +1,486 @@
+{
+ "seed": 20260808,
+ "C_A": {
+  "n": 40,
+  "size_matches": 40,
+  "probe_failures": 0,
+  "detail": [
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20260204103000.gkg.csv.zip",
+    "status": 200,
+    "content_length": 4623789,
+    "last_modified": "Wed, 04 Feb 2026 10:20:46 GMT",
+    "claimed_bytes": 4623789,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20151024230000.gkg.csv.zip",
+    "status": 200,
+    "content_length": 4622858,
+    "last_modified": "Sat, 24 Oct 2015 22:49:35 GMT",
+    "claimed_bytes": 4622858,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20220224111500.export.CSV.zip",
+    "status": 200,
+    "content_length": 94381,
+    "last_modified": "Thu, 24 Feb 2022 11:06:23 GMT",
+    "claimed_bytes": 94381,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20171105181500.mentions.CSV.zip",
+    "status": 200,
+    "content_length": 203873,
+    "last_modified": "Sun, 05 Nov 2017 18:07:51 GMT",
+    "claimed_bytes": 203873,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20150904151500.gkg.csv.zip",
+    "status": 200,
+    "content_length": 12136900,
+    "last_modified": "Fri, 04 Sep 2015 15:11:00 GMT",
+    "claimed_bytes": 12136900,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20200116034500.gkg.csv.zip",
+    "status": 200,
+    "content_length": 6567550,
+    "last_modified": "Thu, 16 Jan 2020 03:35:52 GMT",
+    "claimed_bytes": 6567550,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20250316041500.gkg.csv.zip",
+    "status": 200,
+    "content_length": 2484126,
+    "last_modified": "Sun, 16 Mar 2025 04:03:04 GMT",
+    "claimed_bytes": 2484126,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20190420054500.export.CSV.zip",
+    "status": 200,
+    "content_length": 61183,
+    "last_modified": "Sat, 20 Apr 2019 05:35:03 GMT",
+    "claimed_bytes": 61183,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20151020031500.gkg.csv.zip",
+    "status": 200,
+    "content_length": 7853537,
+    "last_modified": "Tue, 20 Oct 2015 03:05:52 GMT",
+    "claimed_bytes": 7853537,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20240724021500.mentions.CSV.zip",
+    "status": 200,
+    "content_length": 96031,
+    "last_modified": "Wed, 24 Jul 2024 02:04:25 GMT",
+    "claimed_bytes": 96031,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20171107011500.export.CSV.zip",
+    "status": 200,
+    "content_length": 197372,
+    "last_modified": "Tue, 07 Nov 2017 01:12:08 GMT",
+    "claimed_bytes": 197372,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20161102144500.export.CSV.zip",
+    "status": 200,
+    "content_length": 189796,
+    "last_modified": "Wed, 02 Nov 2016 14:41:51 GMT",
+    "claimed_bytes": 189796,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20250308204500.gkg.csv.zip",
+    "status": 200,
+    "content_length": 3851550,
+    "last_modified": "Sat, 08 Mar 2025 20:33:57 GMT",
+    "claimed_bytes": 3851550,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20220613184500.export.CSV.zip",
+    "status": 200,
+    "content_length": 115279,
+    "last_modified": "Mon, 13 Jun 2022 18:35:43 GMT",
+    "claimed_bytes": 115279,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20160405201500.export.CSV.zip",
+    "status": 200,
+    "content_length": 143395,
+    "last_modified": "Tue, 05 Apr 2016 20:08:40 GMT",
+    "claimed_bytes": 143395,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20230713093000.mentions.CSV.zip",
+    "status": 200,
+    "content_length": 144280,
+    "last_modified": "Thu, 13 Jul 2023 09:19:28 GMT",
+    "claimed_bytes": 144280,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20240526134500.gkg.csv.zip",
+    "status": 200,
+    "content_length": 3706651,
+    "last_modified": "Sun, 26 May 2024 13:33:36 GMT",
+    "claimed_bytes": 3706651,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20221105094500.mentions.CSV.zip",
+    "status": 200,
+    "content_length": 67837,
+    "last_modified": "Sat, 05 Nov 2022 09:35:03 GMT",
+    "claimed_bytes": 67837,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20210208090000.export.CSV.zip",
+    "status": 200,
+    "content_length": 71002,
+    "last_modified": "Mon, 08 Feb 2021 08:51:54 GMT",
+    "claimed_bytes": 71002,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20170831204500.gkg.csv.zip",
+    "status": 200,
+    "content_length": 16426308,
+    "last_modified": "Thu, 31 Aug 2017 20:40:56 GMT",
+    "claimed_bytes": 16426308,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20240105174500.gkg.csv.zip",
+    "status": 200,
+    "content_length": 8136492,
+    "last_modified": "Fri, 05 Jan 2024 17:35:02 GMT",
+    "claimed_bytes": 8136492,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20260723221500.export.CSV.zip",
+    "status": 200,
+    "content_length": 45227,
+    "last_modified": "Thu, 23 Jul 2026 22:04:11 GMT",
+    "claimed_bytes": 45227,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20170320001500.export.CSV.zip",
+    "status": 200,
+    "content_length": 150420,
+    "last_modified": "Mon, 20 Mar 2017 00:05:27 GMT",
+    "claimed_bytes": 150420,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20170613001500.gkg.csv.zip",
+    "status": 200,
+    "content_length": 12940624,
+    "last_modified": "Tue, 13 Jun 2017 00:11:18 GMT",
+    "claimed_bytes": 12940624,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20170424091500.export.CSV.zip",
+    "status": 200,
+    "content_length": 153955,
+    "last_modified": "Mon, 24 Apr 2017 09:09:42 GMT",
+    "claimed_bytes": 153955,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20191203160000.mentions.CSV.zip",
+    "status": 200,
+    "content_length": 232432,
+    "last_modified": "Tue, 03 Dec 2019 15:53:44 GMT",
+    "claimed_bytes": 232432,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20260318161500.export.CSV.zip",
+    "status": 200,
+    "content_length": 99919,
+    "last_modified": "Wed, 18 Mar 2026 16:06:03 GMT",
+    "claimed_bytes": 99919,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20240107180000.export.CSV.zip",
+    "status": 200,
+    "content_length": 39646,
+    "last_modified": "Sun, 07 Jan 2024 17:49:13 GMT",
+    "claimed_bytes": 39646,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20150626054500.gkg.csv.zip",
+    "status": 200,
+    "content_length": 7366542,
+    "last_modified": "Fri, 26 Jun 2015 05:34:34 GMT",
+    "claimed_bytes": 7366542,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20191204021500.gkg.csv.zip",
+    "status": 200,
+    "content_length": 7523483,
+    "last_modified": "Wed, 04 Dec 2019 02:06:15 GMT",
+    "claimed_bytes": 7523483,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20200929111500.mentions.CSV.zip",
+    "status": 200,
+    "content_length": 156385,
+    "last_modified": "Tue, 29 Sep 2020 11:10:52 GMT",
+    "claimed_bytes": 156385,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20240224143000.mentions.CSV.zip",
+    "status": 200,
+    "content_length": 139908,
+    "last_modified": "Sat, 24 Feb 2024 14:19:34 GMT",
+    "claimed_bytes": 139908,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20220113161500.gkg.csv.zip",
+    "status": 200,
+    "content_length": 8770861,
+    "last_modified": "Thu, 13 Jan 2022 16:07:41 GMT",
+    "claimed_bytes": 8770861,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20220224184500.mentions.CSV.zip",
+    "status": 200,
+    "content_length": 295765,
+    "last_modified": "Thu, 24 Feb 2022 18:36:21 GMT",
+    "claimed_bytes": 295765,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20181029161500.mentions.CSV.zip",
+    "status": 200,
+    "content_length": 322963,
+    "last_modified": "Mon, 29 Oct 2018 16:08:12 GMT",
+    "claimed_bytes": 322963,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20240408094500.mentions.CSV.zip",
+    "status": 200,
+    "content_length": 122405,
+    "last_modified": "Mon, 08 Apr 2024 09:36:12 GMT",
+    "claimed_bytes": 122405,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20231223031500.mentions.CSV.zip",
+    "status": 200,
+    "content_length": 71367,
+    "last_modified": "Sat, 23 Dec 2023 03:03:22 GMT",
+    "claimed_bytes": 71367,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20220514231500.export.CSV.zip",
+    "status": 200,
+    "content_length": 27097,
+    "last_modified": "Sat, 14 May 2022 23:03:48 GMT",
+    "claimed_bytes": 27097,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20171205031500.export.CSV.zip",
+    "status": 200,
+    "content_length": 128008,
+    "last_modified": "Tue, 05 Dec 2017 03:08:23 GMT",
+    "claimed_bytes": 128008,
+    "match": true
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20160905061500.mentions.CSV.zip",
+    "status": 200,
+    "content_length": 201153,
+    "last_modified": "Mon, 05 Sep 2016 06:07:16 GMT",
+    "claimed_bytes": 201153,
+    "match": true
+   }
+  ]
+ },
+ "C_B": {
+  "n": 20,
+  "absent": 20,
+  "present": 0,
+  "probe_failures": 0,
+  "detail": [
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20250625233000.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20201108134500.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20201030031500.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20201015000000.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20250624210000.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20210814223000.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20250617121500.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20180412193000.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20201025200000.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20210806064500.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20180315113000.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20201109024500.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20201116203000.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20180512073000.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20170531224500.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20201015211500.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20201115234500.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20180114050000.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20201113021500.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   },
+   {
+    "url": "http://data.gdeltproject.org/gdeltv2/20171122064500.export.CSV.zip",
+    "status": 404,
+    "content_length": null,
+    "last_modified": null
+   }
+  ]
+ },
+ "C_C": {
+  "window": {
+   "start": "2025-06-14T18:00:00Z",
+   "end": "2025-07-02T02:00:00Z",
+   "cycles": 1665,
+   "hours": 416.25
+  },
+  "n": 1665,
+  "absent": 1665,
+  "present": 0,
+  "probe_failures": 0,
+  "present_detail": [],
+  "error_detail": []
+ },
+ "gap_edges": {
+  "cycle_before": {
+   "url": "http://data.gdeltproject.org/gdeltv2/20250614174500.export.CSV.zip",
+   "status": 200,
+   "content_length": 56093,
+   "last_modified": "Sat, 14 Jun 2025 17:33:31 GMT"
+  },
+  "cycle_after": {
+   "url": "http://data.gdeltproject.org/gdeltv2/20250702021500.export.CSV.zip",
+   "status": 200,
+   "content_length": 36343,
+   "last_modified": "Wed, 02 Jul 2025 02:02:51 GMT"
+  }
+ }
+}
