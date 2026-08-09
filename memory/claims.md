@@ -641,3 +641,69 @@ Nothing here rests on a third party. Full record: `drafts/2026-08-08-the-hours-i
 - **Its recent record is excellent, and that is part of the finding**: **1** missing cycle in the
   last 365 days (English), 2 (Translingual). A register covering only the recent year would show an
   instrument in perfect health fourteen months after a seventeen-day silence.
+
+## Session 104 — 2026-08-09: what is inside the files, and what the index promises that is not there
+
+*Measured by downloading and opening 294 of the instrument's own archives (1,721,655,169 bytes,
+438,847 GKG records counted) and by 15,290 HEAD probes against its file hosts, all on 2026-08-09,
+scored against `PREREGISTRATION-2.md` which was committed before the manifest was re-fetched. Full
+record: `drafts/2026-08-08-the-hours-it-was-not-looking/RESULT-2.md`.*
+
+- **The byte size GDELT publishes for a file predicts the number of records inside it to within
+  about eleven per cent** (2026-08-09). Of 80 randomly drawn cycles the volume screen did not flag,
+  **none** holds a record count below a fifth of what its own byte size predicts; the ratios of
+  actual to predicted run **0.912 to 1.106, median 1.004**. Across twelve calendar years the median
+  records per megabyte moves only from **293.6 (2015) to 250.4 (2026) — a factor of 1.17**. *This
+  refutes our own claim of 2026-08-08 that the volume-collapse arm is what a manifest-reading
+  consumer cannot get for free (`CORRECTIONS.md` C1); the arm is computable by anyone with the
+  published index.*
+- **The volume collapse itself is real and severe** (2026-08-09): of 75 scoreable collapsed/control
+  pairs, **72 (96 %)** hold under a fifth of their control's record count. Median collapsed file:
+  **6 records**; 8 hold exactly **1**; 50 of 75 hold ten or fewer, against controls whose median is
+  in the thousands. *Correction to 2026-08-08: "contain nothing" overstates it — **0 of 75** hold
+  zero records (`CORRECTIONS.md` C3).*
+- **GDELT's published index lists 249 files, with byte sizes and MD5 checksums, that its host does
+  not have** (2026-08-09). Exhaustive probe of every listed file in November 2022 — 8,634 probes, 0
+  probe errors — returns **249 absent (HTTP 404)**: exactly **83 contiguous quarter-hours × three
+  file types, 2022-11-10T22:00:00Z → 2022-11-11T18:30:00Z, 20 h 45 min**. The cycles either side are
+  present. A second hostname serving the same objects
+  (`https://storage.googleapis.com/data.gdeltproject.org/gdeltv2/`) returns **83 of 83 absent and 5
+  of 5 controls present** — which rules out a local caching artifact, not a per-host deletion, since
+  the two names likely address one bucket.
+- **It is one window, not a background rate — as far as 1.6 % of the series can say** (2026-08-09). A
+  seeded uniform probe of **3,000** listed cycles elsewhere returned **0 absent, 0 errors**; a probe
+  of **all 3,148** cycles either screen ever flagged returned **the same 83 and no others**. Together
+  6,148 of 394,878 cycles (1.6 %) are verified. *A second such window elsewhere would not necessarily
+  have been found.*
+- **Where the index describes a file that exists, it describes it exactly** (2026-08-09): **289 of
+  289** downloaded archives matched **both** the published byte size **and** the published MD5. And
+  the index's account of its own past is stable: **3,137 of 3,137** byte sizes identical to the
+  previous day's fetch.
+- **One listed file is described wrongly in the opposite direction** (2026-08-09): 2016-05-08T14:00Z
+  is listed at **18,095 bytes**, MD5 `09c4cc4fa6bd09367d1828eee3f21a2b`; the host serves **10,276,183
+  bytes**, MD5 `430824a461ebe6e411916009a1b3b24b`, holding **2,626 records** — an ordinary file,
+  downloaded and opened by hand. One case in 3,148, reported as the only one, not as a rate.
+- **The organisation's blog published normally through the November 2022 window** — posts dated
+  November 9, 10, 11 and 12, 2022, and no post on the archive pages read names an outage
+  (<https://blog.gdeltproject.org/2022/11/>, <https://blog.gdeltproject.org/2022/11/page/2/>).
+  *Unlike June 2025, the other channel never went quiet; there was nothing to notice.*
+- **Consecutive 15-minute files do not repeat each other** (2026-08-09): across 30 consecutive
+  unflagged pairs, the largest share of a cycle's `DocumentIdentifier` values already present in its
+  predecessor is **0.068 %**, median **0**. Duplication within a single file is at most 0.068 %. *A
+  failure mode we predicted and did not find.*
+- **Live consumers of this instrument, verified first-hand on 2026-08-09** (latest commit date read
+  from each repository's own commits page): `worldmonitor` (<https://github.com/koala73/worldmonitor>,
+  **2026-08-08**), which validates each download against the index's declared size in
+  `scripts/seed-gdelt-bulk-materializer.mjs`; `SmartETL`
+  (<https://github.com/ictchenbo/SmartETL>), whose GDELT loader commit reads *"NEW datasource GDELT;
+  WIP: gdelt got 404 sometimes, need to fix"*
+  (<https://github.com/ictchenbo/SmartETL/commit/8b4300f>); `gdeltr2`
+  (<https://github.com/abresler/gdeltr2>, **2026-04-10**).
+- **A 2026 paper builds weekly GDELT panels across every window we measured and does not mention
+  missing data** — Huang, Chen & Scott, *"Bayesian Deep Count Regression and Anomaly Detection:
+  Evidence from GDELT Event Panels"*, arXiv:2603.25970, 2026-03-26
+  (<https://arxiv.org/abs/2603.25970>): *"We analyze two weekly panels that both begin on the week of
+  23 February 2015 and extend through December 2025"*, and, in its own discussion, *"The robustness
+  of anomaly scoring to reporting intensity shifts and to changes in media coverage warrants further
+  study."* Both quotations read from the paper's full text. **No error in that paper is asserted; it
+  has not been re-run here.**

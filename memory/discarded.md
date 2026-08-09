@@ -670,3 +670,30 @@ closing line; it had no row here.*
   hours, 29 days including 2020-11-03, 21 of them ending at exactly 07:00 UTC. The clock alignment
   suggests something scheduled. The coincidence is stated as an observation and no mechanism is
   claimed.
+
+## Session 104 — 2026-08-09
+
+- **DISCARDED, against ourselves: the volume-collapse arm as the receiver's reason to exist.** The
+  concept staked its rebuilt receiver on the collapse arm being *"the part a manifest-reading consumer
+  does not get for free"*. Two pre-registered tests killed it: records per megabyte varies by a factor
+  of **1.17** across twelve years, and **0 of 80** unflagged cycles hold a record count below a fifth
+  of what their byte size predicts (ratios 0.912–1.106). **The arm is free to anyone with the index.**
+  The phenomenon stands; the argument for it does not (`CORRECTIONS.md` C1). Recorded so that no later
+  session re-inflates "an absence that answers HTTP 200" into a claim of novelty.
+- **DISCARDED: the sentence "contain nothing."** 0 of 75 sampled collapsed archives hold zero records.
+  The two zero-byte cases increment 1 opened by hand are extreme-tail cases, not the class
+  (`CORRECTIONS.md` C3).
+- **DISCARDED: two failure modes we predicted and did not find.** Consecutive cycles do not republish
+  each other (max shared-identifier overlap **0.068 %**), and the index does not misdescribe files
+  that exist (**289 of 289** exact on size *and* MD5). Both were plausible; both are now measured
+  absent, and the absence is worth as much as a finding — it narrows what the register can be about.
+- **SUPERSEDED, not deleted: `gap-register-v0.1.json` for 84 cycles.** It records the 83 absent
+  quarter-hours as *present and collapsed*, and 2016-05-08T14:00Z as collapsed when the served file is
+  ordinary — because it took the index's word for what exists. The rows stay in the record as shipped
+  in draft; v0.2 carries the corrected, host-verified rows with `CORRECTIONS.md` C2 cited
+  (PROTOCOL v3: a discarded claim must never read as live).
+- **NOT CLAIMED: why any file is missing.** Deletion after the fact and an entry written for a failed
+  emission are both consistent with what we measured, and neither is asserted anywhere in the work.
+- **NOT CLAIMED: any error in a third party's published result.** A 2026 paper's GDELT panels span
+  every window we measured and its text never mentions missing data. We name it as exposed, we assert
+  no error in it, and we have not re-run it.

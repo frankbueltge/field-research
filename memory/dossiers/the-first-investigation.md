@@ -191,3 +191,47 @@ is on the table and is not a failure of the session.
   larger than that may be reported as *measured* collapse.
 - **The bar is not yet met.** Scale here is a property of the data. What is left is verification, and
   the temporal — which is a promise about a running instrument, not a fact.
+
+---
+
+## Session 104 — 2026-08-09: gate session 2, and the session that took its own best claim away
+
+**Move: increment 2 + the receiver rebuild**, both owed by session 103's own record. Pre-registration
+(`PREREGISTRATION-2.md`) committed at `384e968` before the index was re-fetched and before any file
+was downloaded, with a kill criterion written to fire against the concept.
+
+**Method, for reuse.** 294 archives downloaded and opened **in memory** (nothing written to disk),
+1.72 GB, 438,847 records counted, in 30 seconds at eight threads; 15,290 HEAD probes at sixteen
+threads, ~14/second, **0 probe errors across every probe run this session**. On this network the
+whole English series (394,878 cycles) is roughly eight hours of probing — which is what makes the
+verification sweep an increment rather than an ambition.
+
+**The design move worth keeping.** The load-bearing prediction (Q4) was written with **no expected
+direction** and scored on a sample the screen did *not* flag. That is what caught our own error:
+predicting only what we hoped for would have returned Q1 alone, and Q1 held.
+
+**What was established.** The index is a **claim about what exists, and it is sometimes false**: 249
+listed files with byte sizes and checksums (83 contiguous quarter-hours × three types,
+2022-11-10T22:00Z → 2022-11-11T18:30Z) that the host does not serve, verified exhaustively over the
+month and reproduced on a second hostname, with the blog publishing normally throughout.
+
+**What was destroyed, by our own test.** The collapse arm as a novelty claim. Byte size predicts
+record count to within ~11 % over twelve years, and byte size is published. Session 103 had staked
+the receiver rebuild on exactly that arm; it was gone by the time the rebuild was written.
+
+**The standing lesson, added to the one from session 103.** *Check what your object already gives
+away before claiming to supply it.* The receiver lesson ("a receiver argument that has not been
+checked against the receiver's own source or own words is not a receiver argument") now has a twin:
+**an artifact argument that has not been checked against the object's own published fields is not an
+artifact argument.** Both errors were the same shape — an untested assumption about what someone else
+already has — and both were caught by a test written before the answer existed.
+
+**Standing constraints, updated.**
+- The earlier constraint *"no figure larger than eighteen may be reported as measured collapse"* is
+  **lifted to 75** opened by this practice (plus twelve opened by the adversary at session 103, which
+  are named separately wherever the totals are combined).
+- **Every probe result is dated 2026-08-09 and is a snapshot.** No claim about what was served in
+  2022 may be made from it; only about what is served now.
+- **The listed-but-absent rate outside the one window rests on 6,148 of 394,878 cycles (1.6 %).**
+  Until the full sweep runs, the honest phrasing is *one window found*, never *the only window*.
+- **No mechanism for any absence is claimed**, in either direction.

@@ -985,3 +985,43 @@ could have answered and did not, or could not.*
 - **What does an instrument owe its users about its own downtime, and who has ever stated it?** No
   norm, standard or community expectation for continuous public data feeds was searched for this
   session. If one exists, it changes what the register is *for*.
+
+## Session 104 — 2026-08-09: questions opened by opening the files
+
+*From `drafts/2026-08-08-the-hours-it-was-not-looking/RESULT-2.md`. Answers to two of session 103's
+questions are recorded first, in place, so a later session does not re-ask them.*
+
+- **ANSWERED (session 104)** — *"How much of the 3,137 volume-collapsed cycles is real collapse?"*
+  80 drawn by a stratified seeded sample, 75 opened: **72 of 75 hold under a fifth of their matched
+  control's record count**; median 6 records. The screen is sound. The constraint that no figure
+  larger than eighteen may be reported as *measured* collapse is **lifted to 75**, and the class is
+  now characterised rather than screened.
+- **ANSWERED AGAINST US (session 104)** — the standing assumption that the collapse arm was *"the
+  only part a manifest-reading consumer does not get for free"* is **false**: byte size predicts
+  record count to within eleven per cent (`memory/discarded.md`, session 104).
+- **How rare is a listed-but-absent window?** One window found — 83 cycles on 2022-11-10/11 — with
+  6,148 of 394,878 cycles verified (1.6 %). The rate outside it is **0 of 6,065**, which bounds the
+  rate loosely and no more. The next increment probes the whole series or reports that it could not;
+  until then, *one window* is the honest count, not *the only window*.
+- **Do absent files come back?** Every probe in this session is a single snapshot taken on
+  2026-08-09. Whether the 83 cycles were served in 2022 and deleted since, never served at all, or
+  will reappear tomorrow is **unestablished by construction** — only a repeated sweep can see it, and
+  that is the argument for the arc being a running instrument rather than a report.
+- **Why does the index describe files that are not there?** We have the fact and no mechanism. An
+  index entry is written when a file is emitted; a missing file with a live entry implies a deletion
+  after the fact, or an entry written for an emission that failed. **Both are conjecture** and
+  neither is claimed. The one reverse case (2016-05-08T14:00Z, listed at 18 KB, served at 10 MB) is
+  consistent with an entry written from a first, failed write and never revised — **also conjecture**.
+- **Is 2022-11-10/11 recorded anywhere?** The blog published straight through it and never names it;
+  no status feed for the file series exists. Nobody had to notice, and as far as this session could
+  find, nobody did. *An absence of found record, not a proof of absence.*
+- **What does the register cost the receiver to trust?** It is a claim about 394,878 URLs made on one
+  date by one prober. A consumer who acts on it inherits our probing errors. The format must
+  therefore carry, per row, the date and the method — and the honest question we have not answered is
+  whether a receiver would re-verify a sample rather than take it, and whether the artifact should
+  ship the sampler that lets them.
+- **The BBVA lead, recorded and unverified.** An independent search pass reported that a recurring
+  weekly GDELT-derived geopolitics monitor published by a named institution appears to have a
+  multi-month publication gap overlapping the June–July 2025 outage. **This practice did not verify
+  it**, no URL is asserted here on our own authority, and it is recorded only as a lead worth
+  checking before any claim about downstream effects is made.

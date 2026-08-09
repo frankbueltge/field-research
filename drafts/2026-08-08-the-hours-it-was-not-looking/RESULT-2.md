@@ -116,12 +116,24 @@ outage, an interruption or a missing file (<https://blog.gdeltproject.org/2022/1
 <https://blog.gdeltproject.org/2022/11/page/2/>). Unlike June 2025, the organisation's other channel
 never went quiet — there was nothing to notice.
 
+**A second hostname serves the same 404s, and we ran that check against ourselves.** The obvious
+objection to "the host does not have them" is "then try another host". The same objects are
+reachable under a second name, the object-storage URL some consumers use directly
+(`https://storage.googleapis.com/data.gdeltproject.org/gdeltv2/…`). **All 83 absent cycles return 404
+there too; five controls return HTTP 200**, including the cycles immediately before and after the
+window (2022-11-10T21:45Z, 7,337,477 bytes; 2022-11-11T18:45Z, 9,737,225 bytes)
+(`alternate-host-probe.json`). **This is a weaker check than it looks and we say so:** the two names
+almost certainly address the same storage bucket, so this rules out a caching or DNS artifact on our
+side, not a per-host deletion. Whether any third-party mirror holds the 83 is **unestablished** — we
+did not find one and did not look exhaustively.
+
 **One cycle where the manifest is wrong in the other direction, verified by hand.** The probe of the
 flagged class found a single served size disagreeing with the manifest: **2016-05-08T14:00:00Z**. The
 manifest says **18,095 bytes**, MD5 `09c4cc4fa6bd09367d1828eee3f21a2b`. Downloaded by hand today, the
 host serves **10,276,183 bytes**, MD5 `430824a461ebe6e411916009a1b3b24b`, containing **2,626
-records** — an entirely ordinary file. The manifest reports a collapse that did not happen. One case
-in 3,148; reported because it is the only one, not because it is a rate.
+records** — an entirely ordinary file. The second hostname serves the same 10,276,183 bytes. The
+manifest reports a collapse that did not happen. One case in 3,148; reported because it is the only
+one, not because it is a rate.
 
 ## The correction this forces on our own artifact
 
