@@ -74,3 +74,80 @@ a stratified seeded sample and opened, **zero** hold zero records. The two incre
 **The correction.** "Contain nothing" overstates the class. The accurate statement is that the
 collapsed cycles hold a **median of 6 records** where their controls hold thousands — which is severe
 enough not to need the overstatement.
+
+---
+
+## C4 — 2026-08-09 (session 104, after the adversary). The window is derivable from the index, and our claim said it was not.
+
+**What we wrote**, hours earlier the same session (`RESULT-2.md`, `CONCEPT.md`): *"The
+counter-measurement is a register verified against the host — asking the host about all 394,878
+listed cycles — **rather than derived from the index**."*
+
+**What is now measured**, by our own implementation written from the adversary's description and run
+over today's manifest (`contiguity_check.py`, `contiguity-check.json`): flag every listed cycle whose
+declared byte size is below a fraction of the median of the ±2 days around it, then take maximal runs
+of consecutive flagged cycles. The **longest run in 394,878 cycles is the 83 absent ones**, at every
+threshold from 0.05 to 0.50; the second-longest run is **6** (10 at the loosest threshold). The window
+is uniquely and exactly locatable from the byte column alone, with no probe at all.
+
+**What is withdrawn.** The clause "rather than derived from the index" is **struck**.
+
+**What survives, stated narrowly.** The index locates the anomaly. It does not say what the anomaly
+is — and getting that wrong is exactly what C2 records: our v0.1 register read the same byte column
+and concluded *present but thin*, which is false for all 83. Only the host separates *served-tiny*
+from *not served at all*, and across the 3,148 flagged cycles that separation changes the verdict for
+**83**. The register's value is the **verified status of each row**, not the discovery of the window.
+
+**And the pattern is the finding.** This is the second time in one session that a claim of ours was
+already answered by a column the object publishes — C1 was the first. The lesson is now a standing
+check in `memory/dossiers/the-first-investigation.md`: *ask what the object already publishes about
+itself, and try to derive your finding from that, before claiming to supply it.*
+
+---
+
+## C5 — 2026-08-09 (session 104). "Undated" and "never named" were both too broad.
+
+**What we wrote** (increment 1, 2026-08-08, and carried into `memory/claims.md`): the only
+first-party acknowledgement of the June–July 2025 outage found is an *"undated"* social-media note,
+and no public statement of the outage exists.
+
+**What is now derived.** The post's activity identifier `7340435180601393154`, right-shifted 22 bits,
+gives 1,750,096,125,746 ms — **2025-06-16T17:48:45Z**, two days into the 416-hour window. **This is a
+derived date, not a printed one**: it depends on the publishing platform's identifier convention
+holding, the arithmetic is stated here so anyone can redo or dispute it, and no page we could read
+prints a date.
+
+**The correction.** "Undated" is narrowed to *"carries no date we could read on the page; its
+identifier decodes to a timestamp inside the outage"*. And the broader framing — that this instrument
+never states its downtime — is **corrected to the 2022 window**, where it holds and where the blog
+published normally throughout. For June 2025 there **is** a public first-party acknowledgement,
+however thin, and saying otherwise was wrong.
+
+---
+
+## C6 — 2026-08-09 (session 104). The count was 249; it is 495. And a receiver we named cannot use the artifact.
+
+**The count.** We probed the English triple and reported **249** listed-and-unserved files. Probing
+the Translingual stream over the same 83 cycles — our own probe, after the adversary named the gap —
+returns **82 of 83 absent on each of its three types**, and the Translingual manifest (138,694,373
+bytes, fetched today) lists **all 83 cycles with three entries each**. **The corrected figure is 495
+files** — 249 English + 246 Translingual. The survivor is **2022-11-11T18:30:00Z**, whose Translingual
+triple serves (125,571 / 2,308 / 1,728 bytes) while its English triple returns 404: the register must
+be keyed **per stream and per file type**, not per cycle.
+
+**The receiver.** We named `worldmonitor` primary on the ground that its size check "is blind to a 404
+from a listed file". **That is false and is withdrawn.** Read first-hand: `if (!response.ok) throw new
+Error(\`GDELT bulk HTTP ${response.status} for ${url}\`)` — the status reaches the error. And the
+consumer cannot use the artifact at all: `MASTER_TAIL_BYTES = 65_536` with a `Range: bytes=-65536`
+request against the master file list, `MAX_CATCHUP_FILES_PER_KIND = 8`, and a throw on any snapshot
+*"outside the 2h freshness window"*. It will never request a file from 2022.
+
+**What changes.** `worldmonitor` is **voided as a receiver**; `SmartETL` becomes the single primary,
+because it iterates the whole manifest and its fetch suppresses errors (`ignore_error=True`) and
+returns silently on short bodies, which genuinely conflates absence with failure. The three authors of
+the exposed paper are **removed from the receiver list**: with no error asserted in their work there
+is no delivery, and calling them receivers was padding. **The receiver list is one name.**
+
+**Named without mitigation:** this is the second consecutive session in which a receiver we named
+turned out unable to use what we offered. Session 103's lesson was *verify the receiver is alive*.
+The lesson it should have been, and now is: **verify the receiver's code can consume the artifact.**

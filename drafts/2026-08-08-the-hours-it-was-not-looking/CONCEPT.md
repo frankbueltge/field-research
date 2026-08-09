@@ -45,9 +45,21 @@ invisible.
 > MD5 that the file host does not have** — 83 quarter-hours × three file types, 249 of 249 returning
 > HTTP 404, 0 probe errors, while the organisation's blog published as usual. **The manifest is a
 > claim about what exists, and it is sometimes false.** The claim of this concept is now that
-> sentence, and the counter-measurement is a register **verified against the host** rather than
-> derived from the index — which is exactly what our own v0.1 register failed to be
+> sentence, and the counter-measurement is a register **verified against the host** ~~rather than
+> derived from the index~~ — which is exactly what our own v0.1 register failed to be
 > (`CORRECTIONS.md` C2).
+>
+> > **Struck the same evening, after the adversary, and reproduced by us before accepting it
+> > (`CORRECTIONS.md` C4).** "Rather than derived from the index" is false: the window is the unique
+> > longest contiguous run of under-sized declared entries in all 394,878 listed cycles, at every
+> > threshold from 0.05 to 0.50 (second-longest run: 6), and it is locatable from the byte column
+> > with no probe at all. **What survives is narrower and is the register's actual job: the index
+> > locates the anomaly and misdescribes it.** Read from the byte column alone those 83 cycles look
+> > *present and thin* — which is what our v0.1 register concluded, and it is wrong for all 83. Only
+> > the host separates *served-tiny* from *not served at all*.
+> >
+> > **And the count was half the truth: 495 files, not 249** — the Translingual manifest lists the
+> > same 83 cycles with three entries each and serves none of them but one (`CORRECTIONS.md` C6).
 
 **Why this house, and not a competent person with a weekend** (the bar, PROTOCOL v3): the answer
 needs 1,184,640 manifest lines parsed against a 402,149-slot grid, 1,665 individual host probes to
@@ -107,7 +119,20 @@ house").*
 tell "GDELT published nothing here" from "my fetch failed", because the index they fetch from asserts
 files that do not exist. The register answers exactly that, and nothing else.
 
-**Primary: the maintainer of `worldmonitor`** (`koala73`, <https://github.com/koala73/worldmonitor>),
+> **VOIDED THE SAME EVENING, for the primary and for the paper's authors** (`CORRECTIONS.md` C6,
+> `INTERLOCUTOR-2.md` §(a) ATTACK 2). We checked that the maintainers were **alive** and did not check
+> that the **code could consume the artifact**. `worldmonitor` reads only the last 65,536 bytes of the
+> master file list (`Range: bytes=-65536`), takes at most 8 files per kind, and throws on any snapshot
+> *"outside the 2h freshness window"* — it will never request a file from 2022 — and our claim that
+> its size check is "blind to a 404" is contradicted by `if (!response.ok) throw new
+> Error(...HTTP ${response.status}...)`, read first-hand. **Both are withdrawn.** The paper's three
+> authors are removed from the receiver list: with no error asserted in their work there is no
+> delivery, and naming them was padding. **The receiver list is one name — `SmartETL` — and it is
+> promoted to primary**, because it iterates the entire master file list and its fetch suppresses
+> errors and returns silently on short bodies, which is precisely the conflation this register ends.
+> The struck text stays below so the error is legible.
+
+**~~Primary~~ VOIDED: the maintainer of `worldmonitor`** (`koala73`, <https://github.com/koala73/worldmonitor>),
 a live global-monitoring dashboard — most recent commit on its commits page **2026-08-08**, read
 today. It is the strongest candidate precisely because it already does the most a manifest permits:
 `scripts/seed-gdelt-bulk-materializer.mjs` fetches `masterfilelist.txt` and then validates each
@@ -120,7 +145,7 @@ cycles of 2022-11-10/11 there is no download to compare, only a 404, and a 404 f
 indistinguishable in that code path from a network fault or a rate limit. A dated register of
 verified absence lets it record "not published" instead of retrying or erroring.
 
-**Second: the maintainer of `SmartETL`** (`ictchenbo`, <https://github.com/ictchenbo/SmartETL>). Its
+**PRIMARY (promoted 2026-08-09 evening): the maintainer of `SmartETL`** (`ictchenbo`, <https://github.com/ictchenbo/SmartETL>). Its
 GDELT loader was committed with the problem written into the commit message itself, read first-hand
 today at <https://github.com/ictchenbo/SmartETL/commit/8b4300f>:
 
@@ -134,7 +159,9 @@ recent commit **2026-04-10**, read today; it fetches the same manifest and is ac
 for silent-failure bugs of exactly this family. It is retained from the voided section with its role
 corrected: it reads the manifest, and the manifest is what is wrong.
 
-**And a fourth kind of receiver, named because their result is exposed:** Hsin-Hsiung Huang,
+**~~And a fourth kind of receiver, named because their result is exposed~~ — REMOVED from the receiver
+list 2026-08-09 evening; retained only as an example of exposure, which is what it always was:**
+Hsin-Hsiung Huang,
 Yuh-Haur Chen and Mahlon Scott, *"Bayesian Deep Count Regression and Anomaly Detection: Evidence from
 GDELT Event Panels"* (arXiv:2603.25970, 2026-03-26, <https://arxiv.org/abs/2603.25970>). Read
 first-hand: *"We analyze two weekly panels that both begin on the week of 23 February 2015 and extend
@@ -235,3 +262,34 @@ describes a file it does not have. The increments that follow:
   can see and only a running instrument can.
 - **(5) The packet**, for the receivers named above, under the standing conditions
   (`memory/downstream-commitments.md`).
+
+---
+
+## Gate state after session 2 — 2026-08-09
+
+**GATE NOT PASSED. Session 3 of at most 3 decides.** The adversary's verdict on the state committed
+at `4864d3b` is **STANDS WITH CONDITIONS** (`INTERLOCUTOR-2.md`): its refutation attempt failed
+against the factual spine — it reproduced the 83-cycle window independently, to the quarter-hour,
+and could not find a mirror that holds it — and it attached eight conditions. **Six are discharged in
+that file with measurements this practice ran itself. Two are open.**
+
+**Why the gate is not claimed today, in one sentence:** one open condition asks whether the same
+absence is already visible for free in the object's other published copy, and that is exactly the
+question — *what does the object already give away?* — that has now cost this arc two claims in two
+sessions. Passing a gate with it unasked would be the third repetition, and we would rather spend the
+last gate session answering it.
+
+**What session 3 must do, in order.**
+
+1. **Answer the free-visibility question or record that it could not be answered.** The credential is
+   requested in `REQUESTS.md` this session; silence past our next session means we decide ourselves,
+   under the standing rule. If the absence is visible for free there, the artifact is rescoped to
+   file-level availability or discarded with a one-page finding — and that outcome is published
+   either way.
+2. **Run the complete negative, or drop the machine-advantage argument.** All listed cycles × three
+   file types × two streams, probed against the host, so that *"no other window like this exists"* is
+   a measurement rather than a hope. At the throughput measured today this is hours, not weeks.
+3. **Decide the gate**, pass or discard with one page.
+
+**The bar, restated honestly:** not met today. Scale is the data's, not ours; the one machine
+argument that survived contact is the exhaustive verified negative, and it has not been run.

@@ -187,3 +187,69 @@ first measurement we know of that treats it as one.
 `increment2-opened.json` (every download, with the DocumentIdentifier lists stripped for size) ·
 `increment2-scored.json` (every prediction, with per-pair detail) · `listed-but-absent.json` ·
 `flagged-cycle-probe.json`.
+
+
+---
+
+# Addendum, 2026-08-09 — what changed after the adversary's verdict
+
+*Written after `INTERLOCUTOR-2.md` was received. Everything here was measured after the critique, by
+this practice's own code, and none of it is retro-fitted into the scored predictions above. Verdict:
+**STANDS WITH CONDITIONS**, eight of them; six discharged here, two open.*
+
+**The paragraph "in one paragraph" above is corrected.** It ends *"the only way to learn that is to
+ask the host 400,000 times"*, and that is false. The adversary located the whole window from the
+manifest's declared byte column in seconds, and **we reproduced it with our own implementation**
+(`contiguity_check.py`): flag each listed cycle whose declared size is under a fraction of the median
+of the ±2 days around it, take maximal runs of consecutive flagged cycles, and **the longest run in
+394,878 cycles is the 83 absent ones at every threshold from 0.05 to 0.50** — second-longest 6.
+`CORRECTIONS.md` **C4**. What survives is narrower and is the register's actual job: **the index
+locates the anomaly and misdescribes it** — read from the byte column alone, those 83 cycles look
+*present and thin*, which is what our own v0.1 register concluded and is wrong for all 83. Only the
+host separates *served-tiny* from *not served at all*.
+
+**The count was half of the truth: 495, not 249.** We had probed only the English triple. Probing the
+Translingual stream over the same 83 cycles (`translation-window-probe.json`) returns **82 of 83
+absent on each of its three file types**, and the Translingual manifest — 138,694,373 bytes, fetched
+today — **lists all 83 cycles with three entries each**. Corrected total: **495 listed-and-unserved
+files, 249 English + 246 Translingual.** The single survivor is **2022-11-11T18:30:00Z**, whose
+Translingual triple serves (125,571 / 2,308 / 1,728 bytes) while its English triple 404s — so the
+register must be keyed **per stream and per file type**, not per cycle. `CORRECTIONS.md` **C6**.
+
+**A second witness exists for the pre-2019 part of the series, and it confirms the 2016 case.** A
+public snapshot bucket (`gdelt-open-data`) holds unzipped copies: `v2/gkg/20160508140000.gkg.csv`
+returns HTTP 200 at **32,530,432 bytes — identical to the inner CSV size we measured by opening the
+zip by hand**. Its coverage ends between 2019-04 (`KeyCount 1`) and 2019-05 (`KeyCount 0`), and it
+holds nothing for 2022 (`KeyCount 0`). Every register row before 2019-05 will be checked against it.
+
+**The acknowledgement we called "undated" has a derivable date.** The activity identifier
+`7340435180601393154`, right-shifted 22 bits, is 1,750,096,125,746 ms — **2025-06-16T17:48:45Z**,
+two days into the 416-hour window. Derived from an identifier convention, **not printed on any page
+we could read**, and stated so it can be disputed. The claim that this instrument never states its
+downtime is narrowed to the 2022 window. `CORRECTIONS.md` **C5**.
+
+**A receiver we named this morning is voided this evening.** `worldmonitor` reads only the last
+65,536 bytes of the master file list (`Range: bytes=-65536`), takes at most 8 files per kind, and
+throws on any snapshot *"outside the 2h freshness window"* — it cannot request a 2022 file, and our
+claim that its size check is "blind to a 404" is contradicted by `if (!response.ok) throw new
+Error(...HTTP ${response.status}...)`, which we read ourselves. **Withdrawn.** `SmartETL` is the
+single primary receiver; the paper's authors are removed from the receiver list, because with no
+error asserted there is no delivery. `CORRECTIONS.md` **C6**.
+
+**Two conditions remain open, and one of them is why no gate is claimed.**
+
+- **Open (decisive).** Whether the object's copy in a commercial cloud data warehouse already shows
+  the same absence for free — a single grouped query would tell. We have no credential and no
+  unauthenticated route. It is requested from the team this session. **This is the same shape of
+  question that killed the collapse arm at Q4, and a gate passed with it unasked would be the third
+  repetition.**
+- **Open (binding on the arc).** The complete negative — *no other window like this exists anywhere
+  in eleven years* — needs all 394,878 cycles × 3 types × 2 streams probed, not 15,290. It is the
+  next increment and the only machine-advantage argument here that survives contact.
+
+**And the limit the adversary put its finger on, now written into the object.** Whether those 83
+cycles were **never produced** or were **produced and later removed** is **undetermined**. Their
+declared sizes (37,022 to 159,602 bytes, against neighbours at 7.3 and 9.7 MB) are consistent with
+either. `web.archive.org` reset our connections again — the third consecutive session stopped by that
+host — so we could not test it, and the phrase "a claim about what exists" carries this limit
+wherever it travels.
