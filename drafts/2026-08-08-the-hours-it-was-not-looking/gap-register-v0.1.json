@@ -1,7 +1,7 @@
 {
  "register": "gdelt-publication-gaps",
  "version": "0.1",
- "generated_utc": "2026-08-09T00:11:00Z",
+ "generated_utc": "2026-08-09T00:30:19Z",
  "status": "DRAFT \u2014 not shipped, not verified by this practice's gauntlet",
  "what_this_is": "Quarter-hour windows in which GDELT's public 15-minute file series published no file at all, derived from GDELT's own published manifests. A window listed here means the manifest lists none of the cycle's files; where 'host_probed' is true, the absence was additionally confirmed against the file host itself.",
  "what_this_is_not": "Not a claim about GDELT's collection pipeline, and not a claim about content. A cycle absent here was not published; a cycle absent from this register may still have been published empty or degraded (see 'collapsed_cycles').",
@@ -17,6 +17,7 @@
    "missing_pct": 1.8118,
    "gap_runs_total": 2244,
    "windows_ge_1h": 164,
+   "windows_clock_aligned": 58,
    "windows": [
     {
      "start": "2015-02-19T08:15:00Z",
@@ -24,7 +25,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2015-02-19T09:30:00Z",
+     "resume_time_of_day": "09:30",
+     "clock_aligned": false
     },
     {
      "start": "2015-10-21T04:15:00Z",
@@ -32,7 +36,10 @@
      "cycles": 167,
      "hours": 41.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2015-10-22T22:00:00Z",
+     "resume_time_of_day": "22:00",
+     "clock_aligned": false
     },
     {
      "start": "2016-06-29T02:30:00Z",
@@ -40,7 +47,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2016-06-29T03:30:00Z",
+     "resume_time_of_day": "03:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-07-16T23:15:00Z",
@@ -48,7 +58,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-17T00:15:00Z",
+     "resume_time_of_day": "00:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-07-24T00:00:00Z",
@@ -56,7 +69,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-24T01:00:00Z",
+     "resume_time_of_day": "01:00",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-14T08:00:00Z",
@@ -64,7 +80,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-14T09:00:00Z",
+     "resume_time_of_day": "09:00",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-17T12:15:00Z",
@@ -72,7 +91,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-17T13:15:00Z",
+     "resume_time_of_day": "13:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-21T08:00:00Z",
@@ -80,7 +102,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-21T09:00:00Z",
+     "resume_time_of_day": "09:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-24T09:15:00Z",
@@ -88,7 +113,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-24T10:15:00Z",
+     "resume_time_of_day": "10:15",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-29T15:30:00Z",
@@ -96,7 +124,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-29T16:30:00Z",
+     "resume_time_of_day": "16:30",
+     "clock_aligned": false
     },
     {
      "start": "2018-03-15T11:00:00Z",
@@ -104,7 +135,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-03-15T12:00:00Z",
+     "resume_time_of_day": "12:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-05-08T05:45:00Z",
@@ -112,7 +146,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-05-08T06:45:00Z",
+     "resume_time_of_day": "06:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-06-10T04:45:00Z",
@@ -120,7 +157,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-06-10T05:45:00Z",
+     "resume_time_of_day": "05:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-07-15T19:30:00Z",
@@ -128,7 +168,10 @@
      "cycles": 19,
      "hours": 4.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-07-16T00:15:00Z",
+     "resume_time_of_day": "00:15",
+     "clock_aligned": false
     },
     {
      "start": "2018-07-16T01:30:00Z",
@@ -136,7 +179,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-07-16T02:45:00Z",
+     "resume_time_of_day": "02:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-08-21T18:15:00Z",
@@ -144,7 +190,10 @@
      "cycles": 8,
      "hours": 2.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-08-21T20:15:00Z",
+     "resume_time_of_day": "20:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-09-24T06:00:00Z",
@@ -152,7 +201,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-24T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-09-25T03:00:00Z",
@@ -160,7 +212,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-25T04:00:00Z",
+     "resume_time_of_day": "04:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-09-26T02:30:00Z",
@@ -168,7 +223,10 @@
      "cycles": 20,
      "hours": 5.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-26T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-09-27T05:30:00Z",
@@ -176,7 +234,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-27T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-09-28T02:30:00Z",
@@ -184,7 +245,10 @@
      "cycles": 19,
      "hours": 4.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-28T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-09-29T04:15:00Z",
@@ -192,7 +256,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-29T05:30:00Z",
+     "resume_time_of_day": "05:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-09-30T01:30:00Z",
@@ -200,7 +267,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-30T02:30:00Z",
+     "resume_time_of_day": "02:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-09-30T03:00:00Z",
@@ -208,7 +278,10 @@
      "cycles": 18,
      "hours": 4.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-30T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-01T04:00:00Z",
@@ -216,7 +289,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-01T05:30:00Z",
+     "resume_time_of_day": "05:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-01T06:00:00Z",
@@ -224,7 +300,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-01T07:00:00Z",
+     "resume_time_of_day": "07:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-02T03:30:00Z",
@@ -232,7 +311,10 @@
      "cycles": 16,
      "hours": 4.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-02T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-03T02:00:00Z",
@@ -240,7 +322,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-03T03:45:00Z",
+     "resume_time_of_day": "03:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-03T06:15:00Z",
@@ -248,7 +333,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-03T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-03T21:15:00Z",
@@ -256,7 +344,10 @@
      "cycles": 40,
      "hours": 10.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-04T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-04T23:30:00Z",
@@ -264,7 +355,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-05T00:45:00Z",
+     "resume_time_of_day": "00:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-05T01:45:00Z",
@@ -272,7 +366,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-05T03:15:00Z",
+     "resume_time_of_day": "03:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-05T22:45:00Z",
@@ -280,7 +377,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-05T23:45:00Z",
+     "resume_time_of_day": "23:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-06T03:15:00Z",
@@ -288,7 +388,10 @@
      "cycles": 10,
      "hours": 2.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-06T05:45:00Z",
+     "resume_time_of_day": "05:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-06T06:15:00Z",
@@ -296,7 +399,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-06T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-07T00:30:00Z",
@@ -304,7 +410,10 @@
      "cycles": 18,
      "hours": 4.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-07T05:00:00Z",
+     "resume_time_of_day": "05:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-07T05:30:00Z",
@@ -312,7 +421,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-07T07:00:00Z",
+     "resume_time_of_day": "07:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-07T21:30:00Z",
@@ -320,7 +432,10 @@
      "cycles": 39,
      "hours": 9.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-08T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-09T02:45:00Z",
@@ -328,7 +443,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-09T04:00:00Z",
+     "resume_time_of_day": "04:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-09T06:00:00Z",
@@ -336,7 +454,10 @@
      "cycles": 33,
      "hours": 8.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-09T14:15:00Z",
+     "resume_time_of_day": "14:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-11T23:15:00Z",
@@ -344,7 +465,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-12T01:00:00Z",
+     "resume_time_of_day": "01:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-12T01:30:00Z",
@@ -352,7 +476,10 @@
      "cycles": 23,
      "hours": 5.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-12T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-12T22:00:00Z",
@@ -360,7 +487,10 @@
      "cycles": 38,
      "hours": 9.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-13T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-13T22:00:00Z",
@@ -368,7 +498,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-13T23:30:00Z",
+     "resume_time_of_day": "23:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-14T03:00:00Z",
@@ -376,7 +509,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-14T04:15:00Z",
+     "resume_time_of_day": "04:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-14T05:30:00Z",
@@ -384,7 +520,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-14T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-15T01:00:00Z",
@@ -392,7 +531,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-15T02:15:00Z",
+     "resume_time_of_day": "02:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-15T02:30:00Z",
@@ -400,7 +542,10 @@
      "cycles": 15,
      "hours": 3.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-15T06:15:00Z",
+     "resume_time_of_day": "06:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-15T19:45:00Z",
@@ -408,7 +553,10 @@
      "cycles": 46,
      "hours": 11.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-16T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-16T14:15:00Z",
@@ -416,7 +564,10 @@
      "cycles": 68,
      "hours": 17.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-17T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-17T21:30:00Z",
@@ -424,7 +575,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-17T22:45:00Z",
+     "resume_time_of_day": "22:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-18T01:15:00Z",
@@ -432,7 +586,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-18T02:15:00Z",
+     "resume_time_of_day": "02:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-18T04:30:00Z",
@@ -440,7 +597,10 @@
      "cycles": 10,
      "hours": 2.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-18T07:00:00Z",
+     "resume_time_of_day": "07:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-19T00:30:00Z",
@@ -448,7 +608,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-19T01:30:00Z",
+     "resume_time_of_day": "01:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-19T02:00:00Z",
@@ -456,7 +619,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-19T03:00:00Z",
+     "resume_time_of_day": "03:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-19T04:00:00Z",
@@ -464,7 +630,10 @@
      "cycles": 14,
      "hours": 3.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-19T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-19T19:00:00Z",
@@ -472,7 +641,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-19T20:00:00Z",
+     "resume_time_of_day": "20:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-19T21:30:00Z",
@@ -480,7 +652,10 @@
      "cycles": 39,
      "hours": 9.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-20T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-20T23:30:00Z",
@@ -488,7 +663,10 @@
      "cycles": 12,
      "hours": 3.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-21T02:30:00Z",
+     "resume_time_of_day": "02:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-21T04:45:00Z",
@@ -496,7 +674,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-21T06:00:00Z",
+     "resume_time_of_day": "06:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-21T17:15:00Z",
@@ -504,7 +685,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-21T18:15:00Z",
+     "resume_time_of_day": "18:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-21T22:15:00Z",
@@ -512,7 +696,10 @@
      "cycles": 13,
      "hours": 3.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-22T01:30:00Z",
+     "resume_time_of_day": "01:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-22T04:30:00Z",
@@ -520,7 +707,10 @@
      "cycles": 11,
      "hours": 2.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-22T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-22T18:00:00Z",
@@ -528,7 +718,10 @@
      "cycles": 18,
      "hours": 4.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-22T22:30:00Z",
+     "resume_time_of_day": "22:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-22T22:45:00Z",
@@ -536,7 +729,10 @@
      "cycles": 9,
      "hours": 2.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-23T01:00:00Z",
+     "resume_time_of_day": "01:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-23T01:15:00Z",
@@ -544,7 +740,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-23T03:00:00Z",
+     "resume_time_of_day": "03:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-23T03:30:00Z",
@@ -552,7 +751,10 @@
      "cycles": 15,
      "hours": 3.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-23T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-23T12:30:00Z",
@@ -560,7 +762,10 @@
      "cycles": 10,
      "hours": 2.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-23T15:00:00Z",
+     "resume_time_of_day": "15:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-23T16:00:00Z",
@@ -568,7 +773,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-23T17:15:00Z",
+     "resume_time_of_day": "17:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-23T17:30:00Z",
@@ -576,7 +784,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-23T18:30:00Z",
+     "resume_time_of_day": "18:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-23T21:30:00Z",
@@ -584,7 +795,10 @@
      "cycles": 18,
      "hours": 4.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-24T02:00:00Z",
+     "resume_time_of_day": "02:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-24T02:15:00Z",
@@ -592,7 +806,10 @@
      "cycles": 20,
      "hours": 5.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-24T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-24T16:30:00Z",
@@ -600,7 +817,10 @@
      "cycles": 14,
      "hours": 3.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-24T20:00:00Z",
+     "resume_time_of_day": "20:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-24T20:45:00Z",
@@ -608,7 +828,10 @@
      "cycles": 42,
      "hours": 10.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-25T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-25T17:45:00Z",
@@ -616,7 +839,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-25T19:15:00Z",
+     "resume_time_of_day": "19:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-25T20:45:00Z",
@@ -624,7 +850,10 @@
      "cycles": 12,
      "hours": 3.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-25T23:45:00Z",
+     "resume_time_of_day": "23:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-26T00:00:00Z",
@@ -632,7 +861,10 @@
      "cycles": 29,
      "hours": 7.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-26T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-26T17:30:00Z",
@@ -640,7 +872,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-26T19:15:00Z",
+     "resume_time_of_day": "19:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-26T19:30:00Z",
@@ -648,7 +883,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-26T20:30:00Z",
+     "resume_time_of_day": "20:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-26T21:15:00Z",
@@ -656,7 +894,10 @@
      "cycles": 13,
      "hours": 3.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-27T00:30:00Z",
+     "resume_time_of_day": "00:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-27T01:45:00Z",
@@ -664,7 +905,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-27T03:30:00Z",
+     "resume_time_of_day": "03:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-27T05:15:00Z",
@@ -672,7 +916,10 @@
      "cycles": 8,
      "hours": 2.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-27T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-27T16:45:00Z",
@@ -680,7 +927,10 @@
      "cycles": 59,
      "hours": 14.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-28T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-28T18:45:00Z",
@@ -688,7 +938,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-28T19:45:00Z",
+     "resume_time_of_day": "19:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-28T21:00:00Z",
@@ -696,7 +949,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-28T22:30:00Z",
+     "resume_time_of_day": "22:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-28T22:45:00Z",
@@ -704,7 +960,10 @@
      "cycles": 34,
      "hours": 8.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-29T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-29T17:15:00Z",
@@ -712,7 +971,10 @@
      "cycles": 56,
      "hours": 14.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-30T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-30T12:45:00Z",
@@ -720,7 +982,10 @@
      "cycles": 10,
      "hours": 2.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-30T15:15:00Z",
+     "resume_time_of_day": "15:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-30T15:30:00Z",
@@ -728,7 +993,10 @@
      "cycles": 63,
      "hours": 15.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-31T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-31T12:00:00Z",
@@ -736,7 +1004,10 @@
      "cycles": 9,
      "hours": 2.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-31T14:15:00Z",
+     "resume_time_of_day": "14:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-31T14:45:00Z",
@@ -744,7 +1015,10 @@
      "cycles": 54,
      "hours": 13.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-01T04:15:00Z",
+     "resume_time_of_day": "04:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-01T04:30:00Z",
@@ -752,7 +1026,10 @@
      "cycles": 11,
      "hours": 2.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-01T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-01T17:45:00Z",
@@ -760,7 +1037,10 @@
      "cycles": 37,
      "hours": 9.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-02T03:00:00Z",
+     "resume_time_of_day": "03:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-02T03:15:00Z",
@@ -768,7 +1048,10 @@
      "cycles": 16,
      "hours": 4.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-02T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-02T17:45:00Z",
@@ -776,7 +1059,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-02T18:45:00Z",
+     "resume_time_of_day": "18:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-02T20:30:00Z",
@@ -784,7 +1070,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-02T21:30:00Z",
+     "resume_time_of_day": "21:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-02T23:15:00Z",
@@ -792,7 +1081,10 @@
      "cycles": 32,
      "hours": 8.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-03T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-03T14:45:00Z",
@@ -800,7 +1092,10 @@
      "cycles": 66,
      "hours": 16.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-04T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-04T19:15:00Z",
@@ -808,7 +1103,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-04T20:30:00Z",
+     "resume_time_of_day": "20:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-04T20:45:00Z",
@@ -816,7 +1114,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-04T22:00:00Z",
+     "resume_time_of_day": "22:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-04T23:15:00Z",
@@ -824,7 +1125,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-05T00:30:00Z",
+     "resume_time_of_day": "00:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-05T00:45:00Z",
@@ -832,7 +1136,10 @@
      "cycles": 19,
      "hours": 4.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-05T05:30:00Z",
+     "resume_time_of_day": "05:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-05T06:00:00Z",
@@ -840,7 +1147,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-05T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-05T15:30:00Z",
@@ -848,7 +1158,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-05T16:45:00Z",
+     "resume_time_of_day": "16:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-05T18:00:00Z",
@@ -856,7 +1169,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-05T19:45:00Z",
+     "resume_time_of_day": "19:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-05T20:00:00Z",
@@ -864,7 +1180,10 @@
      "cycles": 45,
      "hours": 11.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-06T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-06T11:00:00Z",
@@ -872,7 +1191,10 @@
      "cycles": 81,
      "hours": 20.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-07T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-07T10:15:00Z",
@@ -880,7 +1202,10 @@
      "cycles": 69,
      "hours": 17.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-08T03:30:00Z",
+     "resume_time_of_day": "03:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-08T03:45:00Z",
@@ -888,7 +1213,10 @@
      "cycles": 14,
      "hours": 3.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-08T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-08T12:45:00Z",
@@ -896,7 +1224,10 @@
      "cycles": 74,
      "hours": 18.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-09T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-09T17:00:00Z",
@@ -904,7 +1235,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-09T18:15:00Z",
+     "resume_time_of_day": "18:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-09T21:00:00Z",
@@ -912,7 +1246,10 @@
      "cycles": 41,
      "hours": 10.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-10T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-10T14:00:00Z",
@@ -920,7 +1257,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-10T15:00:00Z",
+     "resume_time_of_day": "15:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-10T16:45:00Z",
@@ -928,7 +1268,10 @@
      "cycles": 8,
      "hours": 2.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-10T18:45:00Z",
+     "resume_time_of_day": "18:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-10T21:45:00Z",
@@ -936,7 +1279,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-10T23:15:00Z",
+     "resume_time_of_day": "23:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-11T00:45:00Z",
@@ -944,7 +1290,10 @@
      "cycles": 27,
      "hours": 6.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-11T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-11T14:15:00Z",
@@ -952,7 +1301,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-11T15:30:00Z",
+     "resume_time_of_day": "15:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-11T15:45:00Z",
@@ -960,7 +1312,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-11T16:45:00Z",
+     "resume_time_of_day": "16:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-11T18:45:00Z",
@@ -968,7 +1323,10 @@
      "cycles": 24,
      "hours": 6.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-12T00:45:00Z",
+     "resume_time_of_day": "00:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-12T01:15:00Z",
@@ -976,7 +1334,10 @@
      "cycles": 11,
      "hours": 2.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-12T04:00:00Z",
+     "resume_time_of_day": "04:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-12T04:15:00Z",
@@ -984,7 +1345,10 @@
      "cycles": 13,
      "hours": 3.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-12T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-12T13:45:00Z",
@@ -992,7 +1356,10 @@
      "cycles": 17,
      "hours": 4.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-12T18:00:00Z",
+     "resume_time_of_day": "18:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-12T19:15:00Z",
@@ -1000,7 +1367,10 @@
      "cycles": 8,
      "hours": 2.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-12T21:15:00Z",
+     "resume_time_of_day": "21:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-12T21:30:00Z",
@@ -1008,7 +1378,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-12T22:30:00Z",
+     "resume_time_of_day": "22:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-12T22:45:00Z",
@@ -1016,7 +1389,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-13T00:15:00Z",
+     "resume_time_of_day": "00:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-13T00:30:00Z",
@@ -1024,7 +1400,10 @@
      "cycles": 27,
      "hours": 6.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-13T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-13T09:15:00Z",
@@ -1032,7 +1411,10 @@
      "cycles": 88,
      "hours": 22.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-14T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-14T08:15:00Z",
@@ -1040,7 +1422,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-14T09:15:00Z",
+     "resume_time_of_day": "09:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-14T10:00:00Z",
@@ -1048,7 +1433,10 @@
      "cycles": 11,
      "hours": 2.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-14T12:45:00Z",
+     "resume_time_of_day": "12:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-14T14:00:00Z",
@@ -1056,7 +1444,10 @@
      "cycles": 40,
      "hours": 10.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-15T00:00:00Z",
+     "resume_time_of_day": "00:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-15T00:15:00Z",
@@ -1064,7 +1455,10 @@
      "cycles": 28,
      "hours": 7.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-15T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-15T11:15:00Z",
@@ -1072,7 +1466,10 @@
      "cycles": 80,
      "hours": 20.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-16T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-16T15:00:00Z",
@@ -1080,7 +1477,10 @@
      "cycles": 65,
      "hours": 16.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-17T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-17T16:15:00Z",
@@ -1088,7 +1488,10 @@
      "cycles": 32,
      "hours": 8.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-18T00:15:00Z",
+     "resume_time_of_day": "00:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-18T00:45:00Z",
@@ -1096,7 +1499,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-18T02:15:00Z",
+     "resume_time_of_day": "02:15",
+     "clock_aligned": false
     },
     {
      "start": "2021-07-30T03:15:00Z",
@@ -1104,7 +1510,10 @@
      "cycles": 13,
      "hours": 3.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-07-30T06:30:00Z",
+     "resume_time_of_day": "06:30",
+     "clock_aligned": false
     },
     {
      "start": "2021-07-31T02:45:00Z",
@@ -1112,7 +1521,10 @@
      "cycles": 14,
      "hours": 3.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-07-31T06:15:00Z",
+     "resume_time_of_day": "06:15",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-02T02:15:00Z",
@@ -1120,7 +1532,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-02T03:15:00Z",
+     "resume_time_of_day": "03:15",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-03T03:45:00Z",
@@ -1128,7 +1543,10 @@
      "cycles": 13,
      "hours": 3.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-03T07:00:00Z",
+     "resume_time_of_day": "07:00",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-04T06:30:00Z",
@@ -1136,7 +1554,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-04T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-05T03:45:00Z",
@@ -1144,7 +1565,10 @@
      "cycles": 15,
      "hours": 3.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-05T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-06T04:00:00Z",
@@ -1152,7 +1576,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-06T05:15:00Z",
+     "resume_time_of_day": "05:15",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-06T06:30:00Z",
@@ -1160,7 +1587,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-06T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-06T23:30:00Z",
@@ -1168,7 +1598,10 @@
      "cycles": 10,
      "hours": 2.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-07T02:00:00Z",
+     "resume_time_of_day": "02:00",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-07T03:00:00Z",
@@ -1176,7 +1609,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-07T04:30:00Z",
+     "resume_time_of_day": "04:30",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-07T06:15:00Z",
@@ -1184,7 +1620,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-07T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-07T22:00:00Z",
@@ -1192,7 +1631,10 @@
      "cycles": 26,
      "hours": 6.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-08T04:30:00Z",
+     "resume_time_of_day": "04:30",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-08T22:15:00Z",
@@ -1200,7 +1642,10 @@
      "cycles": 36,
      "hours": 9.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-09T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-09T23:45:00Z",
@@ -1208,7 +1653,10 @@
      "cycles": 30,
      "hours": 7.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-10T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-11T00:15:00Z",
@@ -1216,7 +1664,10 @@
      "cycles": 29,
      "hours": 7.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-11T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-12T02:30:00Z",
@@ -1224,7 +1675,10 @@
      "cycles": 8,
      "hours": 2.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-12T04:30:00Z",
+     "resume_time_of_day": "04:30",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-12T05:45:00Z",
@@ -1232,7 +1686,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-12T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-13T04:45:00Z",
@@ -1240,7 +1697,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-13T05:45:00Z",
+     "resume_time_of_day": "05:45",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-13T06:00:00Z",
@@ -1248,7 +1708,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-13T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-14T02:00:00Z",
@@ -1256,7 +1719,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-14T03:30:00Z",
+     "resume_time_of_day": "03:30",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-14T05:15:00Z",
@@ -1264,7 +1730,10 @@
      "cycles": 9,
      "hours": 2.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-14T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-14T20:45:00Z",
@@ -1272,7 +1741,10 @@
      "cycles": 43,
      "hours": 10.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-15T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-15T18:45:00Z",
@@ -1280,7 +1752,10 @@
      "cycles": 50,
      "hours": 12.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-16T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-16T19:45:00Z",
@@ -1288,7 +1763,10 @@
      "cycles": 47,
      "hours": 11.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-17T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-17T21:30:00Z",
@@ -1296,7 +1774,10 @@
      "cycles": 39,
      "hours": 9.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-18T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-18T20:15:00Z",
@@ -1304,7 +1785,10 @@
      "cycles": 27,
      "hours": 6.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-19T03:00:00Z",
+     "resume_time_of_day": "03:00",
+     "clock_aligned": false
     },
     {
      "start": "2023-03-22T04:45:00Z",
@@ -1312,7 +1796,10 @@
      "cycles": 129,
      "hours": 32.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2023-03-23T13:00:00Z",
+     "resume_time_of_day": "13:00",
+     "clock_aligned": false
     },
     {
      "start": "2025-06-12T18:15:00Z",
@@ -1320,7 +1807,10 @@
      "cycles": 9,
      "hours": 2.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2025-06-12T20:30:00Z",
+     "resume_time_of_day": "20:30",
+     "clock_aligned": false
     },
     {
      "start": "2025-06-14T18:00:00Z",
@@ -1328,7 +1818,10 @@
      "cycles": 1665,
      "hours": 416.25,
      "host_probed": true,
-     "host_probe_result": "1665/1665 cycles returned not-found; 0 probe failures"
+     "host_probe_result": "1665/1665 cycles returned not-found; 0 probe failures",
+     "resume_utc": "2025-07-02T02:15:00Z",
+     "resume_time_of_day": "02:15",
+     "clock_aligned": false
     }
    ],
    "collapsed_cycles_count": 3137,
@@ -20166,6 +20659,7 @@
    "missing_pct": 3.1197,
    "gap_runs_total": 4107,
    "windows_ge_1h": 355,
+   "windows_clock_aligned": 180,
    "windows": [
     {
      "start": "2015-02-19T06:45:00Z",
@@ -20173,7 +20667,10 @@
      "cycles": 11,
      "hours": 2.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2015-02-19T09:30:00Z",
+     "resume_time_of_day": "09:30",
+     "clock_aligned": false
     },
     {
      "start": "2015-10-21T04:00:00Z",
@@ -20181,7 +20678,10 @@
      "cycles": 171,
      "hours": 42.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2015-10-22T22:45:00Z",
+     "resume_time_of_day": "22:45",
+     "clock_aligned": true
     },
     {
      "start": "2015-11-17T04:00:00Z",
@@ -20189,7 +20689,10 @@
      "cycles": 44,
      "hours": 11.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2015-11-17T15:00:00Z",
+     "resume_time_of_day": "15:00",
+     "clock_aligned": false
     },
     {
      "start": "2016-05-08T01:15:00Z",
@@ -20197,7 +20700,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2016-05-08T02:15:00Z",
+     "resume_time_of_day": "02:15",
+     "clock_aligned": true
     },
     {
      "start": "2016-06-29T02:15:00Z",
@@ -20205,7 +20711,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2016-06-29T04:00:00Z",
+     "resume_time_of_day": "04:00",
+     "clock_aligned": false
     },
     {
      "start": "2016-09-21T23:45:00Z",
@@ -20213,7 +20722,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2016-09-22T00:45:00Z",
+     "resume_time_of_day": "00:45",
+     "clock_aligned": true
     },
     {
      "start": "2017-04-05T01:30:00Z",
@@ -20221,7 +20733,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-04-05T02:30:00Z",
+     "resume_time_of_day": "02:30",
+     "clock_aligned": true
     },
     {
      "start": "2017-04-14T02:00:00Z",
@@ -20229,7 +20744,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-04-14T03:00:00Z",
+     "resume_time_of_day": "03:00",
+     "clock_aligned": false
     },
     {
      "start": "2017-04-21T00:00:00Z",
@@ -20237,7 +20755,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-04-21T01:00:00Z",
+     "resume_time_of_day": "01:00",
+     "clock_aligned": true
     },
     {
      "start": "2017-05-04T19:00:00Z",
@@ -20245,7 +20766,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-05-04T20:30:00Z",
+     "resume_time_of_day": "20:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-05-06T22:30:00Z",
@@ -20253,7 +20777,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-05-06T23:30:00Z",
+     "resume_time_of_day": "23:30",
+     "clock_aligned": true
     },
     {
      "start": "2017-05-29T02:15:00Z",
@@ -20261,7 +20788,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-05-29T03:15:00Z",
+     "resume_time_of_day": "03:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-06-03T22:15:00Z",
@@ -20269,7 +20799,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-06-03T23:15:00Z",
+     "resume_time_of_day": "23:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-06-04T19:00:00Z",
@@ -20277,7 +20810,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-06-04T20:15:00Z",
+     "resume_time_of_day": "20:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-06-06T23:00:00Z",
@@ -20285,7 +20821,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-06-07T00:00:00Z",
+     "resume_time_of_day": "00:00",
+     "clock_aligned": true
     },
     {
      "start": "2017-06-13T16:45:00Z",
@@ -20293,7 +20832,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-06-13T17:45:00Z",
+     "resume_time_of_day": "17:45",
+     "clock_aligned": false
     },
     {
      "start": "2017-06-20T20:45:00Z",
@@ -20301,7 +20843,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-06-20T21:45:00Z",
+     "resume_time_of_day": "21:45",
+     "clock_aligned": false
     },
     {
      "start": "2017-06-25T20:00:00Z",
@@ -20309,7 +20854,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-06-25T21:30:00Z",
+     "resume_time_of_day": "21:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-06-26T16:45:00Z",
@@ -20317,7 +20865,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-06-26T17:45:00Z",
+     "resume_time_of_day": "17:45",
+     "clock_aligned": false
     },
     {
      "start": "2017-06-27T00:00:00Z",
@@ -20325,7 +20876,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-06-27T01:00:00Z",
+     "resume_time_of_day": "01:00",
+     "clock_aligned": true
     },
     {
      "start": "2017-06-27T21:15:00Z",
@@ -20333,7 +20887,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-06-27T22:30:00Z",
+     "resume_time_of_day": "22:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-06-28T20:45:00Z",
@@ -20341,7 +20898,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-06-28T22:00:00Z",
+     "resume_time_of_day": "22:00",
+     "clock_aligned": false
     },
     {
      "start": "2017-06-29T02:45:00Z",
@@ -20349,7 +20909,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-06-29T04:15:00Z",
+     "resume_time_of_day": "04:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-06-29T21:45:00Z",
@@ -20357,7 +20920,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-06-29T23:00:00Z",
+     "resume_time_of_day": "23:00",
+     "clock_aligned": true
     },
     {
      "start": "2017-06-30T18:15:00Z",
@@ -20365,7 +20931,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-06-30T19:15:00Z",
+     "resume_time_of_day": "19:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-07-02T22:00:00Z",
@@ -20373,7 +20942,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-02T23:15:00Z",
+     "resume_time_of_day": "23:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-07-03T22:45:00Z",
@@ -20381,7 +20953,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-04T00:15:00Z",
+     "resume_time_of_day": "00:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-07-04T23:30:00Z",
@@ -20389,7 +20964,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-05T00:30:00Z",
+     "resume_time_of_day": "00:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-07-05T09:00:00Z",
@@ -20397,7 +20975,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-05T10:00:00Z",
+     "resume_time_of_day": "10:00",
+     "clock_aligned": true
     },
     {
      "start": "2017-07-06T22:00:00Z",
@@ -20405,7 +20986,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-06T23:15:00Z",
+     "resume_time_of_day": "23:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-07-07T00:15:00Z",
@@ -20413,7 +20997,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-07T01:30:00Z",
+     "resume_time_of_day": "01:30",
+     "clock_aligned": true
     },
     {
      "start": "2017-07-08T09:30:00Z",
@@ -20421,7 +21008,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-08T10:30:00Z",
+     "resume_time_of_day": "10:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-07-09T19:45:00Z",
@@ -20429,7 +21019,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-09T20:45:00Z",
+     "resume_time_of_day": "20:45",
+     "clock_aligned": false
     },
     {
      "start": "2017-07-10T16:15:00Z",
@@ -20437,7 +21030,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-10T17:15:00Z",
+     "resume_time_of_day": "17:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-07-10T22:15:00Z",
@@ -20445,7 +21041,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-10T23:30:00Z",
+     "resume_time_of_day": "23:30",
+     "clock_aligned": true
     },
     {
      "start": "2017-07-11T22:00:00Z",
@@ -20453,7 +21052,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-11T23:00:00Z",
+     "resume_time_of_day": "23:00",
+     "clock_aligned": true
     },
     {
      "start": "2017-07-12T00:30:00Z",
@@ -20461,7 +21063,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-12T01:30:00Z",
+     "resume_time_of_day": "01:30",
+     "clock_aligned": true
     },
     {
      "start": "2017-07-12T23:45:00Z",
@@ -20469,7 +21074,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-13T00:45:00Z",
+     "resume_time_of_day": "00:45",
+     "clock_aligned": true
     },
     {
      "start": "2017-07-13T22:00:00Z",
@@ -20477,7 +21085,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-13T23:45:00Z",
+     "resume_time_of_day": "23:45",
+     "clock_aligned": false
     },
     {
      "start": "2017-07-14T17:45:00Z",
@@ -20485,7 +21096,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-14T18:45:00Z",
+     "resume_time_of_day": "18:45",
+     "clock_aligned": false
     },
     {
      "start": "2017-07-14T20:15:00Z",
@@ -20493,7 +21107,10 @@
      "cycles": 10,
      "hours": 2.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-14T22:45:00Z",
+     "resume_time_of_day": "22:45",
+     "clock_aligned": true
     },
     {
      "start": "2017-07-15T22:15:00Z",
@@ -20501,7 +21118,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-15T23:15:00Z",
+     "resume_time_of_day": "23:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-07-16T20:00:00Z",
@@ -20509,7 +21129,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-16T21:45:00Z",
+     "resume_time_of_day": "21:45",
+     "clock_aligned": false
     },
     {
      "start": "2017-07-16T23:00:00Z",
@@ -20517,7 +21140,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-17T00:15:00Z",
+     "resume_time_of_day": "00:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-07-17T00:45:00Z",
@@ -20525,7 +21151,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-17T02:00:00Z",
+     "resume_time_of_day": "02:00",
+     "clock_aligned": false
     },
     {
      "start": "2017-07-18T19:00:00Z",
@@ -20533,7 +21162,10 @@
      "cycles": 8,
      "hours": 2.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-18T21:00:00Z",
+     "resume_time_of_day": "21:00",
+     "clock_aligned": false
     },
     {
      "start": "2017-07-20T15:15:00Z",
@@ -20541,7 +21173,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-20T16:30:00Z",
+     "resume_time_of_day": "16:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-07-21T00:15:00Z",
@@ -20549,7 +21184,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-21T01:15:00Z",
+     "resume_time_of_day": "01:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-07-21T22:15:00Z",
@@ -20557,7 +21195,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-21T23:15:00Z",
+     "resume_time_of_day": "23:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-07-23T23:45:00Z",
@@ -20565,7 +21206,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-24T01:00:00Z",
+     "resume_time_of_day": "01:00",
+     "clock_aligned": true
     },
     {
      "start": "2017-07-24T23:45:00Z",
@@ -20573,7 +21217,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-25T00:45:00Z",
+     "resume_time_of_day": "00:45",
+     "clock_aligned": true
     },
     {
      "start": "2017-07-25T23:30:00Z",
@@ -20581,7 +21228,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-26T00:30:00Z",
+     "resume_time_of_day": "00:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-07-26T15:45:00Z",
@@ -20589,7 +21239,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-26T16:45:00Z",
+     "resume_time_of_day": "16:45",
+     "clock_aligned": false
     },
     {
      "start": "2017-07-27T23:00:00Z",
@@ -20597,7 +21250,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-07-28T00:00:00Z",
+     "resume_time_of_day": "00:00",
+     "clock_aligned": true
     },
     {
      "start": "2017-08-02T03:00:00Z",
@@ -20605,7 +21261,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-08-02T04:00:00Z",
+     "resume_time_of_day": "04:00",
+     "clock_aligned": false
     },
     {
      "start": "2017-08-08T23:30:00Z",
@@ -20613,7 +21272,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-08-09T00:30:00Z",
+     "resume_time_of_day": "00:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-08-12T00:45:00Z",
@@ -20621,7 +21283,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-08-12T01:45:00Z",
+     "resume_time_of_day": "01:45",
+     "clock_aligned": false
     },
     {
      "start": "2017-08-12T23:15:00Z",
@@ -20629,7 +21294,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-08-13T00:15:00Z",
+     "resume_time_of_day": "00:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-08-14T00:30:00Z",
@@ -20637,7 +21305,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-08-14T01:30:00Z",
+     "resume_time_of_day": "01:30",
+     "clock_aligned": true
     },
     {
      "start": "2017-08-16T22:15:00Z",
@@ -20645,7 +21316,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-08-16T23:15:00Z",
+     "resume_time_of_day": "23:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-08-18T23:15:00Z",
@@ -20653,7 +21327,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-08-19T00:15:00Z",
+     "resume_time_of_day": "00:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-08-24T01:45:00Z",
@@ -20661,7 +21338,10 @@
      "cycles": 107,
      "hours": 26.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-08-25T04:30:00Z",
+     "resume_time_of_day": "04:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-08-28T10:45:00Z",
@@ -20669,7 +21349,10 @@
      "cycles": 41,
      "hours": 10.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-08-28T21:00:00Z",
+     "resume_time_of_day": "21:00",
+     "clock_aligned": false
     },
     {
      "start": "2017-08-31T21:15:00Z",
@@ -20677,7 +21360,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-08-31T22:15:00Z",
+     "resume_time_of_day": "22:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-09-03T08:45:00Z",
@@ -20685,7 +21371,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-09-03T10:15:00Z",
+     "resume_time_of_day": "10:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-09-09T00:30:00Z",
@@ -20693,7 +21382,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-09-09T01:30:00Z",
+     "resume_time_of_day": "01:30",
+     "clock_aligned": true
     },
     {
      "start": "2017-09-11T16:15:00Z",
@@ -20701,7 +21393,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-09-11T17:15:00Z",
+     "resume_time_of_day": "17:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-09-22T08:45:00Z",
@@ -20709,7 +21404,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-09-22T09:45:00Z",
+     "resume_time_of_day": "09:45",
+     "clock_aligned": false
     },
     {
      "start": "2017-09-27T02:00:00Z",
@@ -20717,7 +21415,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-09-27T03:15:00Z",
+     "resume_time_of_day": "03:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-09-27T07:00:00Z",
@@ -20725,7 +21426,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-09-27T08:00:00Z",
+     "resume_time_of_day": "08:00",
+     "clock_aligned": false
     },
     {
      "start": "2017-09-28T21:45:00Z",
@@ -20733,7 +21437,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-09-28T23:00:00Z",
+     "resume_time_of_day": "23:00",
+     "clock_aligned": true
     },
     {
      "start": "2017-09-30T23:15:00Z",
@@ -20741,7 +21448,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-10-01T00:15:00Z",
+     "resume_time_of_day": "00:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-10-01T21:30:00Z",
@@ -20749,7 +21459,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-10-01T22:45:00Z",
+     "resume_time_of_day": "22:45",
+     "clock_aligned": true
     },
     {
      "start": "2017-10-02T21:15:00Z",
@@ -20757,7 +21470,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-10-02T22:15:00Z",
+     "resume_time_of_day": "22:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-10-16T13:00:00Z",
@@ -20765,7 +21481,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-10-16T14:15:00Z",
+     "resume_time_of_day": "14:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-10-24T19:45:00Z",
@@ -20773,7 +21492,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-10-24T21:15:00Z",
+     "resume_time_of_day": "21:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-10-31T14:15:00Z",
@@ -20781,7 +21503,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-10-31T15:15:00Z",
+     "resume_time_of_day": "15:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-11-09T00:30:00Z",
@@ -20789,7 +21514,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-11-09T01:30:00Z",
+     "resume_time_of_day": "01:30",
+     "clock_aligned": true
     },
     {
      "start": "2017-11-16T07:30:00Z",
@@ -20797,7 +21525,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-11-16T09:00:00Z",
+     "resume_time_of_day": "09:00",
+     "clock_aligned": true
     },
     {
      "start": "2017-11-16T12:15:00Z",
@@ -20805,7 +21536,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-11-16T13:15:00Z",
+     "resume_time_of_day": "13:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-11-17T01:45:00Z",
@@ -20813,7 +21547,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-11-17T02:45:00Z",
+     "resume_time_of_day": "02:45",
+     "clock_aligned": false
     },
     {
      "start": "2017-11-18T17:15:00Z",
@@ -20821,7 +21558,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-11-18T18:15:00Z",
+     "resume_time_of_day": "18:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-11-21T05:15:00Z",
@@ -20829,7 +21569,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-11-21T06:15:00Z",
+     "resume_time_of_day": "06:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-11-23T22:30:00Z",
@@ -20837,7 +21580,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-11-23T23:30:00Z",
+     "resume_time_of_day": "23:30",
+     "clock_aligned": true
     },
     {
      "start": "2017-11-25T00:45:00Z",
@@ -20845,7 +21591,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-11-25T02:15:00Z",
+     "resume_time_of_day": "02:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-11-25T18:00:00Z",
@@ -20853,7 +21602,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-11-25T19:00:00Z",
+     "resume_time_of_day": "19:00",
+     "clock_aligned": false
     },
     {
      "start": "2017-11-26T09:15:00Z",
@@ -20861,7 +21613,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-11-26T10:15:00Z",
+     "resume_time_of_day": "10:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-11-30T13:00:00Z",
@@ -20869,7 +21624,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-11-30T14:00:00Z",
+     "resume_time_of_day": "14:00",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-01T05:45:00Z",
@@ -20877,7 +21635,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-01T06:45:00Z",
+     "resume_time_of_day": "06:45",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-04T04:30:00Z",
@@ -20885,7 +21646,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-04T05:45:00Z",
+     "resume_time_of_day": "05:45",
+     "clock_aligned": true
     },
     {
      "start": "2017-12-04T09:00:00Z",
@@ -20893,7 +21657,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-04T10:00:00Z",
+     "resume_time_of_day": "10:00",
+     "clock_aligned": true
     },
     {
      "start": "2017-12-05T07:30:00Z",
@@ -20901,7 +21668,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-05T08:45:00Z",
+     "resume_time_of_day": "08:45",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-06T06:00:00Z",
@@ -20909,7 +21679,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-06T07:00:00Z",
+     "resume_time_of_day": "07:00",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-06T08:45:00Z",
@@ -20917,7 +21690,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-06T10:00:00Z",
+     "resume_time_of_day": "10:00",
+     "clock_aligned": true
     },
     {
      "start": "2017-12-07T14:30:00Z",
@@ -20925,7 +21701,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-07T15:30:00Z",
+     "resume_time_of_day": "15:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-08T16:15:00Z",
@@ -20933,7 +21712,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-08T17:15:00Z",
+     "resume_time_of_day": "17:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-09T09:30:00Z",
@@ -20941,7 +21723,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-09T10:45:00Z",
+     "resume_time_of_day": "10:45",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-09T12:30:00Z",
@@ -20949,7 +21734,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-09T13:30:00Z",
+     "resume_time_of_day": "13:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-10T11:45:00Z",
@@ -20957,7 +21745,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-10T12:45:00Z",
+     "resume_time_of_day": "12:45",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-11T07:15:00Z",
@@ -20965,7 +21756,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-11T08:15:00Z",
+     "resume_time_of_day": "08:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-11T11:30:00Z",
@@ -20973,7 +21767,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-11T12:30:00Z",
+     "resume_time_of_day": "12:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-11T13:45:00Z",
@@ -20981,7 +21778,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-11T15:15:00Z",
+     "resume_time_of_day": "15:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-12T07:00:00Z",
@@ -20989,7 +21789,10 @@
      "cycles": 9,
      "hours": 2.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-12T09:15:00Z",
+     "resume_time_of_day": "09:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-12-13T08:45:00Z",
@@ -20997,7 +21800,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-13T10:00:00Z",
+     "resume_time_of_day": "10:00",
+     "clock_aligned": true
     },
     {
      "start": "2017-12-14T07:15:00Z",
@@ -21005,7 +21811,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-14T09:00:00Z",
+     "resume_time_of_day": "09:00",
+     "clock_aligned": true
     },
     {
      "start": "2017-12-15T06:30:00Z",
@@ -21013,7 +21822,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-15T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2017-12-15T15:00:00Z",
@@ -21021,7 +21833,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-15T16:00:00Z",
+     "resume_time_of_day": "16:00",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-15T23:30:00Z",
@@ -21029,7 +21844,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-16T00:30:00Z",
+     "resume_time_of_day": "00:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-16T07:30:00Z",
@@ -21037,7 +21855,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-16T08:30:00Z",
+     "resume_time_of_day": "08:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-17T08:15:00Z",
@@ -21045,7 +21866,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-17T09:15:00Z",
+     "resume_time_of_day": "09:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-12-17T12:00:00Z",
@@ -21053,7 +21877,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-17T13:15:00Z",
+     "resume_time_of_day": "13:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-12-19T09:00:00Z",
@@ -21061,7 +21888,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-19T10:15:00Z",
+     "resume_time_of_day": "10:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-12-19T15:30:00Z",
@@ -21069,7 +21899,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-19T16:30:00Z",
+     "resume_time_of_day": "16:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-20T07:00:00Z",
@@ -21077,7 +21910,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-20T08:00:00Z",
+     "resume_time_of_day": "08:00",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-20T12:30:00Z",
@@ -21085,7 +21921,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-20T14:15:00Z",
+     "resume_time_of_day": "14:15",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-21T07:15:00Z",
@@ -21093,7 +21932,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-21T09:00:00Z",
+     "resume_time_of_day": "09:00",
+     "clock_aligned": true
     },
     {
      "start": "2017-12-22T02:30:00Z",
@@ -21101,7 +21943,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-22T03:30:00Z",
+     "resume_time_of_day": "03:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-22T05:30:00Z",
@@ -21109,7 +21954,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-22T06:30:00Z",
+     "resume_time_of_day": "06:30",
+     "clock_aligned": true
     },
     {
      "start": "2017-12-22T07:45:00Z",
@@ -21117,7 +21965,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-22T09:15:00Z",
+     "resume_time_of_day": "09:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-12-25T11:00:00Z",
@@ -21125,7 +21976,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-25T12:00:00Z",
+     "resume_time_of_day": "12:00",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-26T09:30:00Z",
@@ -21133,7 +21987,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-26T10:30:00Z",
+     "resume_time_of_day": "10:30",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-26T23:45:00Z",
@@ -21141,7 +21998,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-27T00:45:00Z",
+     "resume_time_of_day": "00:45",
+     "clock_aligned": true
     },
     {
      "start": "2017-12-27T09:00:00Z",
@@ -21149,7 +22009,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-27T10:45:00Z",
+     "resume_time_of_day": "10:45",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-28T09:15:00Z",
@@ -21157,7 +22020,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-28T10:15:00Z",
+     "resume_time_of_day": "10:15",
+     "clock_aligned": true
     },
     {
      "start": "2017-12-28T10:30:00Z",
@@ -21165,7 +22031,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-28T11:45:00Z",
+     "resume_time_of_day": "11:45",
+     "clock_aligned": false
     },
     {
      "start": "2017-12-30T11:45:00Z",
@@ -21173,7 +22042,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2017-12-30T12:45:00Z",
+     "resume_time_of_day": "12:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-05T06:45:00Z",
@@ -21181,7 +22053,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-05T07:45:00Z",
+     "resume_time_of_day": "07:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-07T21:30:00Z",
@@ -21189,7 +22064,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-07T22:30:00Z",
+     "resume_time_of_day": "22:30",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-09T08:45:00Z",
@@ -21197,7 +22075,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-09T09:45:00Z",
+     "resume_time_of_day": "09:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-10T13:00:00Z",
@@ -21205,7 +22086,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-10T14:00:00Z",
+     "resume_time_of_day": "14:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-15T06:45:00Z",
@@ -21213,7 +22097,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-15T08:15:00Z",
+     "resume_time_of_day": "08:15",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-16T22:15:00Z",
@@ -21221,7 +22108,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-16T23:15:00Z",
+     "resume_time_of_day": "23:15",
+     "clock_aligned": true
     },
     {
      "start": "2018-01-18T12:15:00Z",
@@ -21229,7 +22119,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-18T14:00:00Z",
+     "resume_time_of_day": "14:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-19T08:15:00Z",
@@ -21237,7 +22130,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-19T09:15:00Z",
+     "resume_time_of_day": "09:15",
+     "clock_aligned": true
     },
     {
      "start": "2018-01-20T12:15:00Z",
@@ -21245,7 +22141,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-20T13:15:00Z",
+     "resume_time_of_day": "13:15",
+     "clock_aligned": true
     },
     {
      "start": "2018-01-20T16:15:00Z",
@@ -21253,7 +22152,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-20T17:30:00Z",
+     "resume_time_of_day": "17:30",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-22T18:15:00Z",
@@ -21261,7 +22163,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-22T19:15:00Z",
+     "resume_time_of_day": "19:15",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-23T06:30:00Z",
@@ -21269,7 +22174,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-23T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2018-01-24T02:00:00Z",
@@ -21277,7 +22185,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-24T03:15:00Z",
+     "resume_time_of_day": "03:15",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-24T09:00:00Z",
@@ -21285,7 +22196,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-24T10:15:00Z",
+     "resume_time_of_day": "10:15",
+     "clock_aligned": true
     },
     {
      "start": "2018-01-25T16:30:00Z",
@@ -21293,7 +22207,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-25T17:30:00Z",
+     "resume_time_of_day": "17:30",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-26T07:45:00Z",
@@ -21301,7 +22218,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-26T08:45:00Z",
+     "resume_time_of_day": "08:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-28T21:00:00Z",
@@ -21309,7 +22229,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-28T22:00:00Z",
+     "resume_time_of_day": "22:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-29T05:15:00Z",
@@ -21317,7 +22240,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-29T06:15:00Z",
+     "resume_time_of_day": "06:15",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-29T09:45:00Z",
@@ -21325,7 +22251,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-29T10:45:00Z",
+     "resume_time_of_day": "10:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-29T12:00:00Z",
@@ -21333,7 +22262,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-29T13:00:00Z",
+     "resume_time_of_day": "13:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-29T15:15:00Z",
@@ -21341,7 +22273,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-29T16:30:00Z",
+     "resume_time_of_day": "16:30",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-30T05:15:00Z",
@@ -21349,7 +22284,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-30T06:30:00Z",
+     "resume_time_of_day": "06:30",
+     "clock_aligned": true
     },
     {
      "start": "2018-01-31T05:15:00Z",
@@ -21357,7 +22295,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-31T06:15:00Z",
+     "resume_time_of_day": "06:15",
+     "clock_aligned": false
     },
     {
      "start": "2018-01-31T17:15:00Z",
@@ -21365,7 +22306,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-01-31T18:30:00Z",
+     "resume_time_of_day": "18:30",
+     "clock_aligned": false
     },
     {
      "start": "2018-02-02T09:00:00Z",
@@ -21373,7 +22317,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-02T10:00:00Z",
+     "resume_time_of_day": "10:00",
+     "clock_aligned": true
     },
     {
      "start": "2018-02-03T12:00:00Z",
@@ -21381,7 +22328,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-03T13:45:00Z",
+     "resume_time_of_day": "13:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-02-08T04:45:00Z",
@@ -21389,7 +22339,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-08T06:00:00Z",
+     "resume_time_of_day": "06:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-02-08T13:30:00Z",
@@ -21397,7 +22350,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-08T15:00:00Z",
+     "resume_time_of_day": "15:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-02-12T09:45:00Z",
@@ -21405,7 +22361,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-12T11:00:00Z",
+     "resume_time_of_day": "11:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-02-13T09:45:00Z",
@@ -21413,7 +22372,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-13T10:45:00Z",
+     "resume_time_of_day": "10:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-02-13T14:45:00Z",
@@ -21421,7 +22383,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-13T15:45:00Z",
+     "resume_time_of_day": "15:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-02-14T06:15:00Z",
@@ -21429,7 +22394,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-14T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2018-02-16T01:30:00Z",
@@ -21437,7 +22405,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-16T02:30:00Z",
+     "resume_time_of_day": "02:30",
+     "clock_aligned": true
     },
     {
      "start": "2018-02-16T09:15:00Z",
@@ -21445,7 +22416,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-16T10:15:00Z",
+     "resume_time_of_day": "10:15",
+     "clock_aligned": true
     },
     {
      "start": "2018-02-17T11:45:00Z",
@@ -21453,7 +22427,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-17T12:45:00Z",
+     "resume_time_of_day": "12:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-02-18T21:00:00Z",
@@ -21461,7 +22438,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-18T22:00:00Z",
+     "resume_time_of_day": "22:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-02-21T16:15:00Z",
@@ -21469,7 +22449,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-21T17:30:00Z",
+     "resume_time_of_day": "17:30",
+     "clock_aligned": false
     },
     {
      "start": "2018-02-22T08:45:00Z",
@@ -21477,7 +22460,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-22T10:15:00Z",
+     "resume_time_of_day": "10:15",
+     "clock_aligned": true
     },
     {
      "start": "2018-02-23T12:00:00Z",
@@ -21485,7 +22471,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-23T13:15:00Z",
+     "resume_time_of_day": "13:15",
+     "clock_aligned": true
     },
     {
      "start": "2018-02-26T21:00:00Z",
@@ -21493,7 +22482,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-26T22:00:00Z",
+     "resume_time_of_day": "22:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-02-27T12:30:00Z",
@@ -21501,7 +22493,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-27T13:30:00Z",
+     "resume_time_of_day": "13:30",
+     "clock_aligned": false
     },
     {
      "start": "2018-02-27T23:15:00Z",
@@ -21509,7 +22504,10 @@
      "cycles": 8,
      "hours": 2.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-28T01:15:00Z",
+     "resume_time_of_day": "01:15",
+     "clock_aligned": false
     },
     {
      "start": "2018-02-28T08:30:00Z",
@@ -21517,7 +22515,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-02-28T09:30:00Z",
+     "resume_time_of_day": "09:30",
+     "clock_aligned": false
     },
     {
      "start": "2018-03-03T11:30:00Z",
@@ -21525,7 +22526,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-03-03T12:30:00Z",
+     "resume_time_of_day": "12:30",
+     "clock_aligned": false
     },
     {
      "start": "2018-03-04T05:30:00Z",
@@ -21533,7 +22537,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-03-04T06:30:00Z",
+     "resume_time_of_day": "06:30",
+     "clock_aligned": true
     },
     {
      "start": "2018-03-04T10:00:00Z",
@@ -21541,7 +22548,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-03-04T11:00:00Z",
+     "resume_time_of_day": "11:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-03-04T18:15:00Z",
@@ -21549,7 +22559,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-03-04T19:15:00Z",
+     "resume_time_of_day": "19:15",
+     "clock_aligned": false
     },
     {
      "start": "2018-03-04T20:00:00Z",
@@ -21557,7 +22570,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-03-04T21:00:00Z",
+     "resume_time_of_day": "21:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-03-08T08:15:00Z",
@@ -21565,7 +22581,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-03-08T09:15:00Z",
+     "resume_time_of_day": "09:15",
+     "clock_aligned": true
     },
     {
      "start": "2018-03-12T16:00:00Z",
@@ -21573,7 +22592,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-03-12T17:00:00Z",
+     "resume_time_of_day": "17:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-03-13T10:30:00Z",
@@ -21581,7 +22603,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-03-13T11:45:00Z",
+     "resume_time_of_day": "11:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-03-15T10:45:00Z",
@@ -21589,7 +22614,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-03-15T12:00:00Z",
+     "resume_time_of_day": "12:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-03-22T22:45:00Z",
@@ -21597,7 +22625,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-03-22T23:45:00Z",
+     "resume_time_of_day": "23:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-03-23T13:15:00Z",
@@ -21605,7 +22636,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-03-23T14:15:00Z",
+     "resume_time_of_day": "14:15",
+     "clock_aligned": false
     },
     {
      "start": "2018-03-23T22:15:00Z",
@@ -21613,7 +22647,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-03-23T23:15:00Z",
+     "resume_time_of_day": "23:15",
+     "clock_aligned": true
     },
     {
      "start": "2018-04-01T22:30:00Z",
@@ -21621,7 +22658,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-01T23:30:00Z",
+     "resume_time_of_day": "23:30",
+     "clock_aligned": true
     },
     {
      "start": "2018-04-04T14:45:00Z",
@@ -21629,7 +22669,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-04T15:45:00Z",
+     "resume_time_of_day": "15:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-04-05T12:15:00Z",
@@ -21637,7 +22680,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-05T13:15:00Z",
+     "resume_time_of_day": "13:15",
+     "clock_aligned": true
     },
     {
      "start": "2018-04-08T10:45:00Z",
@@ -21645,7 +22691,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-08T11:45:00Z",
+     "resume_time_of_day": "11:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-04-09T01:15:00Z",
@@ -21653,7 +22702,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-09T02:15:00Z",
+     "resume_time_of_day": "02:15",
+     "clock_aligned": true
     },
     {
      "start": "2018-04-11T11:30:00Z",
@@ -21661,7 +22713,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-11T12:30:00Z",
+     "resume_time_of_day": "12:30",
+     "clock_aligned": false
     },
     {
      "start": "2018-04-13T11:45:00Z",
@@ -21669,7 +22724,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-13T13:15:00Z",
+     "resume_time_of_day": "13:15",
+     "clock_aligned": true
     },
     {
      "start": "2018-04-15T20:15:00Z",
@@ -21677,7 +22735,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-15T21:45:00Z",
+     "resume_time_of_day": "21:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-04-16T00:30:00Z",
@@ -21685,7 +22746,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-16T01:45:00Z",
+     "resume_time_of_day": "01:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-04-20T07:30:00Z",
@@ -21693,7 +22757,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-20T08:30:00Z",
+     "resume_time_of_day": "08:30",
+     "clock_aligned": false
     },
     {
      "start": "2018-04-22T00:30:00Z",
@@ -21701,7 +22768,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-22T01:45:00Z",
+     "resume_time_of_day": "01:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-04-23T12:30:00Z",
@@ -21709,7 +22779,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-23T13:30:00Z",
+     "resume_time_of_day": "13:30",
+     "clock_aligned": false
     },
     {
      "start": "2018-04-25T04:15:00Z",
@@ -21717,7 +22790,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-25T05:15:00Z",
+     "resume_time_of_day": "05:15",
+     "clock_aligned": false
     },
     {
      "start": "2018-04-25T11:30:00Z",
@@ -21725,7 +22801,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-25T13:00:00Z",
+     "resume_time_of_day": "13:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-04-26T07:30:00Z",
@@ -21733,7 +22812,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-26T09:00:00Z",
+     "resume_time_of_day": "09:00",
+     "clock_aligned": true
     },
     {
      "start": "2018-04-26T19:00:00Z",
@@ -21741,7 +22823,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-26T20:00:00Z",
+     "resume_time_of_day": "20:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-04-29T07:45:00Z",
@@ -21749,7 +22834,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-29T08:45:00Z",
+     "resume_time_of_day": "08:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-04-29T11:15:00Z",
@@ -21757,7 +22845,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-04-29T12:30:00Z",
+     "resume_time_of_day": "12:30",
+     "clock_aligned": false
     },
     {
      "start": "2018-05-02T18:15:00Z",
@@ -21765,7 +22856,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-05-02T19:45:00Z",
+     "resume_time_of_day": "19:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-05-08T05:30:00Z",
@@ -21773,7 +22867,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-05-08T06:45:00Z",
+     "resume_time_of_day": "06:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-05-15T08:15:00Z",
@@ -21781,7 +22878,10 @@
      "cycles": 8,
      "hours": 2.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-05-15T10:15:00Z",
+     "resume_time_of_day": "10:15",
+     "clock_aligned": true
     },
     {
      "start": "2018-05-23T20:15:00Z",
@@ -21789,7 +22889,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-05-23T21:15:00Z",
+     "resume_time_of_day": "21:15",
+     "clock_aligned": false
     },
     {
      "start": "2018-05-28T07:00:00Z",
@@ -21797,7 +22900,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-05-28T08:00:00Z",
+     "resume_time_of_day": "08:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-05-31T05:30:00Z",
@@ -21805,7 +22911,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-05-31T06:30:00Z",
+     "resume_time_of_day": "06:30",
+     "clock_aligned": true
     },
     {
      "start": "2018-06-01T09:15:00Z",
@@ -21813,7 +22922,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-06-01T10:15:00Z",
+     "resume_time_of_day": "10:15",
+     "clock_aligned": true
     },
     {
      "start": "2018-06-05T23:00:00Z",
@@ -21821,7 +22933,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-06-06T00:00:00Z",
+     "resume_time_of_day": "00:00",
+     "clock_aligned": true
     },
     {
      "start": "2018-06-07T21:30:00Z",
@@ -21829,7 +22944,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-06-07T22:45:00Z",
+     "resume_time_of_day": "22:45",
+     "clock_aligned": true
     },
     {
      "start": "2018-06-08T15:30:00Z",
@@ -21837,7 +22955,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-06-08T16:30:00Z",
+     "resume_time_of_day": "16:30",
+     "clock_aligned": false
     },
     {
      "start": "2018-06-09T22:00:00Z",
@@ -21845,7 +22966,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-06-09T23:00:00Z",
+     "resume_time_of_day": "23:00",
+     "clock_aligned": true
     },
     {
      "start": "2018-06-10T04:30:00Z",
@@ -21853,7 +22977,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-06-10T06:15:00Z",
+     "resume_time_of_day": "06:15",
+     "clock_aligned": false
     },
     {
      "start": "2018-06-19T08:00:00Z",
@@ -21861,7 +22988,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-06-19T09:00:00Z",
+     "resume_time_of_day": "09:00",
+     "clock_aligned": true
     },
     {
      "start": "2018-06-19T13:00:00Z",
@@ -21869,7 +22999,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-06-19T14:00:00Z",
+     "resume_time_of_day": "14:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-06-27T15:45:00Z",
@@ -21877,7 +23010,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-06-27T16:45:00Z",
+     "resume_time_of_day": "16:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-06-28T11:15:00Z",
@@ -21885,7 +23021,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-06-28T12:15:00Z",
+     "resume_time_of_day": "12:15",
+     "clock_aligned": false
     },
     {
      "start": "2018-06-28T13:45:00Z",
@@ -21893,7 +23032,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-06-28T15:00:00Z",
+     "resume_time_of_day": "15:00",
+     "clock_aligned": false
     },
     {
      "start": "2018-07-03T16:00:00Z",
@@ -21901,7 +23043,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-07-03T17:15:00Z",
+     "resume_time_of_day": "17:15",
+     "clock_aligned": false
     },
     {
      "start": "2018-07-15T19:15:00Z",
@@ -21909,7 +23054,10 @@
      "cycles": 20,
      "hours": 5.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-07-16T00:15:00Z",
+     "resume_time_of_day": "00:15",
+     "clock_aligned": true
     },
     {
      "start": "2018-07-16T00:30:00Z",
@@ -21917,7 +23065,10 @@
      "cycles": 9,
      "hours": 2.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-07-16T02:45:00Z",
+     "resume_time_of_day": "02:45",
+     "clock_aligned": false
     },
     {
      "start": "2018-08-21T18:00:00Z",
@@ -21925,7 +23076,10 @@
      "cycles": 9,
      "hours": 2.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-08-21T20:15:00Z",
+     "resume_time_of_day": "20:15",
+     "clock_aligned": false
     },
     {
      "start": "2018-12-13T11:30:00Z",
@@ -21933,7 +23087,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2018-12-13T12:45:00Z",
+     "resume_time_of_day": "12:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-06-11T05:00:00Z",
@@ -21941,7 +23098,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-06-11T06:00:00Z",
+     "resume_time_of_day": "06:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-09-24T03:45:00Z",
@@ -21949,7 +23109,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-24T05:15:00Z",
+     "resume_time_of_day": "05:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-09-24T05:45:00Z",
@@ -21957,7 +23120,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-24T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-09-25T01:15:00Z",
@@ -21965,7 +23131,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-25T02:30:00Z",
+     "resume_time_of_day": "02:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-09-25T02:45:00Z",
@@ -21973,7 +23142,10 @@
      "cycles": 9,
      "hours": 2.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-25T05:00:00Z",
+     "resume_time_of_day": "05:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-09-25T05:15:00Z",
@@ -21981,7 +23153,10 @@
      "cycles": 9,
      "hours": 2.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-25T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-09-26T00:15:00Z",
@@ -21989,7 +23164,10 @@
      "cycles": 29,
      "hours": 7.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-26T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-09-27T02:45:00Z",
@@ -21997,7 +23175,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-27T03:45:00Z",
+     "resume_time_of_day": "03:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-09-27T05:15:00Z",
@@ -22005,7 +23186,10 @@
      "cycles": 8,
      "hours": 2.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-27T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-09-27T22:30:00Z",
@@ -22013,7 +23197,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-28T00:15:00Z",
+     "resume_time_of_day": "00:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-09-28T00:30:00Z",
@@ -22021,7 +23208,10 @@
      "cycles": 27,
      "hours": 6.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-28T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-09-29T00:45:00Z",
@@ -22029,7 +23219,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-29T01:45:00Z",
+     "resume_time_of_day": "01:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-09-29T02:00:00Z",
@@ -22037,7 +23230,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-29T03:45:00Z",
+     "resume_time_of_day": "03:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-09-29T04:00:00Z",
@@ -22045,7 +23241,10 @@
      "cycles": 13,
      "hours": 3.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-29T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-09-30T01:15:00Z",
@@ -22053,7 +23252,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-30T02:30:00Z",
+     "resume_time_of_day": "02:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-09-30T02:45:00Z",
@@ -22061,7 +23263,10 @@
      "cycles": 19,
      "hours": 4.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-09-30T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-01T03:15:00Z",
@@ -22069,7 +23274,10 @@
      "cycles": 9,
      "hours": 2.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-01T05:30:00Z",
+     "resume_time_of_day": "05:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-01T05:45:00Z",
@@ -22077,7 +23285,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-01T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-02T01:45:00Z",
@@ -22085,7 +23296,10 @@
      "cycles": 23,
      "hours": 5.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-02T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-03T01:45:00Z",
@@ -22093,7 +23307,10 @@
      "cycles": 16,
      "hours": 4.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-03T05:45:00Z",
+     "resume_time_of_day": "05:45",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-03T06:00:00Z",
@@ -22101,7 +23318,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-03T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-03T21:00:00Z",
@@ -22109,7 +23329,10 @@
      "cycles": 41,
      "hours": 10.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-04T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-04T22:30:00Z",
@@ -22117,7 +23340,10 @@
      "cycles": 35,
      "hours": 8.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-05T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-05T21:15:00Z",
@@ -22125,7 +23351,10 @@
      "cycles": 10,
      "hours": 2.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-05T23:45:00Z",
+     "resume_time_of_day": "23:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-06T00:00:00Z",
@@ -22133,7 +23362,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-06T01:00:00Z",
+     "resume_time_of_day": "01:00",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-06T01:15:00Z",
@@ -22141,7 +23373,10 @@
      "cycles": 18,
      "hours": 4.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-06T05:45:00Z",
+     "resume_time_of_day": "05:45",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-06T06:00:00Z",
@@ -22149,7 +23384,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-06T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-06T22:00:00Z",
@@ -22157,7 +23395,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-06T23:00:00Z",
+     "resume_time_of_day": "23:00",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-07T00:15:00Z",
@@ -22165,7 +23406,10 @@
      "cycles": 19,
      "hours": 4.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-07T05:00:00Z",
+     "resume_time_of_day": "05:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-07T05:15:00Z",
@@ -22173,7 +23417,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-07T07:00:00Z",
+     "resume_time_of_day": "07:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-07T21:15:00Z",
@@ -22181,7 +23428,10 @@
      "cycles": 40,
      "hours": 10.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-08T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-09T00:15:00Z",
@@ -22189,7 +23439,10 @@
      "cycles": 8,
      "hours": 2.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-09T02:15:00Z",
+     "resume_time_of_day": "02:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-09T02:30:00Z",
@@ -22197,7 +23450,10 @@
      "cycles": 12,
      "hours": 3.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-09T05:30:00Z",
+     "resume_time_of_day": "05:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-09T05:45:00Z",
@@ -22205,7 +23461,10 @@
      "cycles": 36,
      "hours": 9.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-09T14:45:00Z",
+     "resume_time_of_day": "14:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-11T05:45:00Z",
@@ -22213,7 +23472,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-11T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-11T22:30:00Z",
@@ -22221,7 +23483,10 @@
      "cycles": 10,
      "hours": 2.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-12T01:00:00Z",
+     "resume_time_of_day": "01:00",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-12T01:15:00Z",
@@ -22229,7 +23494,10 @@
      "cycles": 24,
      "hours": 6.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-12T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-12T21:15:00Z",
@@ -22237,7 +23505,10 @@
      "cycles": 41,
      "hours": 10.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-13T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-13T21:45:00Z",
@@ -22245,7 +23516,10 @@
      "cycles": 9,
      "hours": 2.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-14T00:00:00Z",
+     "resume_time_of_day": "00:00",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-14T00:30:00Z",
@@ -22253,7 +23527,10 @@
      "cycles": 15,
      "hours": 3.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-14T04:15:00Z",
+     "resume_time_of_day": "04:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-14T04:30:00Z",
@@ -22261,7 +23538,10 @@
      "cycles": 11,
      "hours": 2.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-14T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-14T19:30:00Z",
@@ -22269,7 +23549,10 @@
      "cycles": 12,
      "hours": 3.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-14T22:30:00Z",
+     "resume_time_of_day": "22:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-14T22:45:00Z",
@@ -22277,7 +23560,10 @@
      "cycles": 32,
      "hours": 8.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-15T06:45:00Z",
+     "resume_time_of_day": "06:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-15T17:30:00Z",
@@ -22285,7 +23571,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-15T18:45:00Z",
+     "resume_time_of_day": "18:45",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-15T19:00:00Z",
@@ -22293,7 +23582,10 @@
      "cycles": 49,
      "hours": 12.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-16T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-16T12:30:00Z",
@@ -22301,7 +23593,10 @@
      "cycles": 75,
      "hours": 18.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-17T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-17T21:15:00Z",
@@ -22309,7 +23604,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-17T22:45:00Z",
+     "resume_time_of_day": "22:45",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-17T23:00:00Z",
@@ -22317,7 +23615,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-18T00:00:00Z",
+     "resume_time_of_day": "00:00",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-18T00:15:00Z",
@@ -22325,7 +23626,10 @@
      "cycles": 27,
      "hours": 6.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-18T07:00:00Z",
+     "resume_time_of_day": "07:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-18T21:30:00Z",
@@ -22333,7 +23637,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-18T22:30:00Z",
+     "resume_time_of_day": "22:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-18T22:45:00Z",
@@ -22341,7 +23648,10 @@
      "cycles": 11,
      "hours": 2.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-19T01:30:00Z",
+     "resume_time_of_day": "01:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-19T01:45:00Z",
@@ -22349,7 +23659,10 @@
      "cycles": 23,
      "hours": 5.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-19T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-19T18:15:00Z",
@@ -22357,7 +23670,10 @@
      "cycles": 52,
      "hours": 13.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-20T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-20T18:00:00Z",
@@ -22365,7 +23681,10 @@
      "cycles": 20,
      "hours": 5.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-20T23:00:00Z",
+     "resume_time_of_day": "23:00",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-20T23:15:00Z",
@@ -22373,7 +23692,10 @@
      "cycles": 13,
      "hours": 3.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-21T02:30:00Z",
+     "resume_time_of_day": "02:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-21T02:45:00Z",
@@ -22381,7 +23703,10 @@
      "cycles": 13,
      "hours": 3.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-21T06:00:00Z",
+     "resume_time_of_day": "06:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-21T17:00:00Z",
@@ -22389,7 +23714,10 @@
      "cycles": 57,
      "hours": 14.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-22T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-22T16:45:00Z",
@@ -22397,7 +23725,10 @@
      "cycles": 41,
      "hours": 10.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-23T03:00:00Z",
+     "resume_time_of_day": "03:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-23T03:15:00Z",
@@ -22405,7 +23736,10 @@
      "cycles": 16,
      "hours": 4.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-23T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-23T11:00:00Z",
@@ -22413,7 +23747,10 @@
      "cycles": 16,
      "hours": 4.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-23T15:00:00Z",
+     "resume_time_of_day": "15:00",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-23T15:15:00Z",
@@ -22421,7 +23758,10 @@
      "cycles": 64,
      "hours": 16.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-24T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-24T13:30:00Z",
@@ -22429,7 +23769,10 @@
      "cycles": 71,
      "hours": 17.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-25T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-25T17:30:00Z",
@@ -22437,7 +23780,10 @@
      "cycles": 55,
      "hours": 13.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-26T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-26T17:15:00Z",
@@ -22445,7 +23791,10 @@
      "cycles": 32,
      "hours": 8.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-27T01:15:00Z",
+     "resume_time_of_day": "01:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-27T01:30:00Z",
@@ -22453,7 +23802,10 @@
      "cycles": 23,
      "hours": 5.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-27T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-27T16:30:00Z",
@@ -22461,7 +23813,10 @@
      "cycles": 60,
      "hours": 15.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-28T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-28T17:30:00Z",
@@ -22469,7 +23824,10 @@
      "cycles": 55,
      "hours": 13.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-29T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-29T15:15:00Z",
@@ -22477,7 +23835,10 @@
      "cycles": 64,
      "hours": 16.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-30T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-30T12:30:00Z",
@@ -22485,7 +23846,10 @@
      "cycles": 75,
      "hours": 18.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-31T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-10-31T11:45:00Z",
@@ -22493,7 +23857,10 @@
      "cycles": 10,
      "hours": 2.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-10-31T14:15:00Z",
+     "resume_time_of_day": "14:15",
+     "clock_aligned": false
     },
     {
      "start": "2020-10-31T14:30:00Z",
@@ -22501,7 +23868,10 @@
      "cycles": 67,
      "hours": 16.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-01T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-01T15:00:00Z",
@@ -22509,7 +23879,10 @@
      "cycles": 65,
      "hours": 16.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-02T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-02T16:15:00Z",
@@ -22517,7 +23890,10 @@
      "cycles": 60,
      "hours": 15.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-03T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-03T14:30:00Z",
@@ -22525,7 +23901,10 @@
      "cycles": 67,
      "hours": 16.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-04T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-04T15:45:00Z",
@@ -22533,7 +23912,10 @@
      "cycles": 55,
      "hours": 13.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-05T05:30:00Z",
+     "resume_time_of_day": "05:30",
+     "clock_aligned": false
     },
     {
      "start": "2020-11-05T05:45:00Z",
@@ -22541,7 +23923,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-05T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-05T13:45:00Z",
@@ -22549,7 +23934,10 @@
      "cycles": 70,
      "hours": 17.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-06T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-06T10:45:00Z",
@@ -22557,7 +23945,10 @@
      "cycles": 82,
      "hours": 20.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-07T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-07T10:00:00Z",
@@ -22565,7 +23956,10 @@
      "cycles": 85,
      "hours": 21.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-08T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-08T12:30:00Z",
@@ -22573,7 +23967,10 @@
      "cycles": 75,
      "hours": 18.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-09T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-09T15:45:00Z",
@@ -22581,7 +23978,10 @@
      "cycles": 62,
      "hours": 15.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-10T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-10T13:00:00Z",
@@ -22589,7 +23989,10 @@
      "cycles": 74,
      "hours": 18.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-11T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-11T14:00:00Z",
@@ -22597,7 +24000,10 @@
      "cycles": 43,
      "hours": 10.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-12T00:45:00Z",
+     "resume_time_of_day": "00:45",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-12T01:00:00Z",
@@ -22605,7 +24011,10 @@
      "cycles": 26,
      "hours": 6.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-12T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-12T12:45:00Z",
@@ -22613,7 +24022,10 @@
      "cycles": 74,
      "hours": 18.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-13T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-13T09:00:00Z",
@@ -22621,7 +24033,10 @@
      "cycles": 89,
      "hours": 22.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-14T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-14T08:00:00Z",
@@ -22629,7 +24044,10 @@
      "cycles": 93,
      "hours": 23.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-15T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-15T11:00:00Z",
@@ -22637,7 +24055,10 @@
      "cycles": 81,
      "hours": 20.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-16T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-16T14:45:00Z",
@@ -22645,7 +24066,10 @@
      "cycles": 66,
      "hours": 16.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-17T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-17T13:45:00Z",
@@ -22653,7 +24077,10 @@
      "cycles": 42,
      "hours": 10.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-18T00:15:00Z",
+     "resume_time_of_day": "00:15",
+     "clock_aligned": true
     },
     {
      "start": "2020-11-18T00:30:00Z",
@@ -22661,7 +24088,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2020-11-18T02:15:00Z",
+     "resume_time_of_day": "02:15",
+     "clock_aligned": true
     },
     {
      "start": "2021-07-29T03:30:00Z",
@@ -22669,7 +24099,10 @@
      "cycles": 9,
      "hours": 2.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-07-29T05:45:00Z",
+     "resume_time_of_day": "05:45",
+     "clock_aligned": true
     },
     {
      "start": "2021-07-29T06:15:00Z",
@@ -22677,7 +24110,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-07-29T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-07-30T01:15:00Z",
@@ -22685,7 +24121,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-07-30T02:45:00Z",
+     "resume_time_of_day": "02:45",
+     "clock_aligned": false
     },
     {
      "start": "2021-07-30T03:00:00Z",
@@ -22693,7 +24132,10 @@
      "cycles": 18,
      "hours": 4.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-07-30T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-07-31T02:30:00Z",
@@ -22701,7 +24143,10 @@
      "cycles": 20,
      "hours": 5.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-07-31T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-01T03:00:00Z",
@@ -22709,7 +24154,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-01T04:15:00Z",
+     "resume_time_of_day": "04:15",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-01T05:30:00Z",
@@ -22717,7 +24165,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-01T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-02T00:45:00Z",
@@ -22725,7 +24176,10 @@
      "cycles": 16,
      "hours": 4.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-02T04:45:00Z",
+     "resume_time_of_day": "04:45",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-02T05:00:00Z",
@@ -22733,7 +24187,10 @@
      "cycles": 9,
      "hours": 2.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-02T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-03T01:15:00Z",
@@ -22741,7 +24198,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-03T03:00:00Z",
+     "resume_time_of_day": "03:00",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-03T03:30:00Z",
@@ -22749,7 +24209,10 @@
      "cycles": 14,
      "hours": 3.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-03T07:00:00Z",
+     "resume_time_of_day": "07:00",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-04T02:45:00Z",
@@ -22757,7 +24220,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-04T04:15:00Z",
+     "resume_time_of_day": "04:15",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-04T04:30:00Z",
@@ -22765,7 +24231,10 @@
      "cycles": 12,
      "hours": 3.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-04T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-05T01:45:00Z",
@@ -22773,7 +24242,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-05T03:15:00Z",
+     "resume_time_of_day": "03:15",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-05T03:30:00Z",
@@ -22781,7 +24253,10 @@
      "cycles": 16,
      "hours": 4.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-05T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-06T02:00:00Z",
@@ -22789,7 +24264,10 @@
      "cycles": 22,
      "hours": 5.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-06T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-06T23:15:00Z",
@@ -22797,7 +24275,10 @@
      "cycles": 11,
      "hours": 2.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-07T02:00:00Z",
+     "resume_time_of_day": "02:00",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-07T02:15:00Z",
@@ -22805,7 +24286,10 @@
      "cycles": 14,
      "hours": 3.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-07T05:45:00Z",
+     "resume_time_of_day": "05:45",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-07T06:00:00Z",
@@ -22813,7 +24297,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-07T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-07T20:45:00Z",
@@ -22821,7 +24308,10 @@
      "cycles": 39,
      "hours": 9.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-08T06:30:00Z",
+     "resume_time_of_day": "06:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-08T22:00:00Z",
@@ -22829,7 +24319,10 @@
      "cycles": 37,
      "hours": 9.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-09T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-09T22:15:00Z",
@@ -22837,7 +24330,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-09T23:15:00Z",
+     "resume_time_of_day": "23:15",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-09T23:30:00Z",
@@ -22845,7 +24341,10 @@
      "cycles": 31,
      "hours": 7.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-10T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-10T21:45:00Z",
@@ -22853,7 +24352,10 @@
      "cycles": 6,
      "hours": 1.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-10T23:15:00Z",
+     "resume_time_of_day": "23:15",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-10T23:30:00Z",
@@ -22861,7 +24363,10 @@
      "cycles": 32,
      "hours": 8.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-11T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-11T22:45:00Z",
@@ -22869,7 +24374,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-11T23:45:00Z",
+     "resume_time_of_day": "23:45",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-12T00:15:00Z",
@@ -22877,7 +24385,10 @@
      "cycles": 7,
      "hours": 1.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-12T02:00:00Z",
+     "resume_time_of_day": "02:00",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-12T02:15:00Z",
@@ -22885,7 +24396,10 @@
      "cycles": 12,
      "hours": 3.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-12T05:15:00Z",
+     "resume_time_of_day": "05:15",
+     "clock_aligned": false
     },
     {
      "start": "2021-08-12T05:30:00Z",
@@ -22893,7 +24407,10 @@
      "cycles": 8,
      "hours": 2.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-12T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-12T22:15:00Z",
@@ -22901,7 +24418,10 @@
      "cycles": 37,
      "hours": 9.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-13T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-13T21:15:00Z",
@@ -22909,7 +24429,10 @@
      "cycles": 12,
      "hours": 3.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-14T00:15:00Z",
+     "resume_time_of_day": "00:15",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-14T00:30:00Z",
@@ -22917,7 +24440,10 @@
      "cycles": 28,
      "hours": 7.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-14T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-14T17:00:00Z",
@@ -22925,7 +24451,10 @@
      "cycles": 58,
      "hours": 14.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-15T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-15T17:30:00Z",
@@ -22933,7 +24462,10 @@
      "cycles": 55,
      "hours": 13.75,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-16T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-16T19:30:00Z",
@@ -22941,7 +24473,10 @@
      "cycles": 48,
      "hours": 12.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-17T07:30:00Z",
+     "resume_time_of_day": "07:30",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-17T19:45:00Z",
@@ -22949,7 +24484,10 @@
      "cycles": 46,
      "hours": 11.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-18T07:15:00Z",
+     "resume_time_of_day": "07:15",
+     "clock_aligned": true
     },
     {
      "start": "2021-08-18T19:30:00Z",
@@ -22957,7 +24495,10 @@
      "cycles": 30,
      "hours": 7.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2021-08-19T03:00:00Z",
+     "resume_time_of_day": "03:00",
+     "clock_aligned": false
     },
     {
      "start": "2022-11-11T20:30:00Z",
@@ -22965,7 +24506,10 @@
      "cycles": 12,
      "hours": 3.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2022-11-11T23:30:00Z",
+     "resume_time_of_day": "23:30",
+     "clock_aligned": true
     },
     {
      "start": "2023-03-21T21:45:00Z",
@@ -22973,7 +24517,10 @@
      "cycles": 5,
      "hours": 1.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2023-03-21T23:00:00Z",
+     "resume_time_of_day": "23:00",
+     "clock_aligned": true
     },
     {
      "start": "2023-03-21T23:15:00Z",
@@ -22981,7 +24528,10 @@
      "cycles": 4,
      "hours": 1.0,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2023-03-22T00:15:00Z",
+     "resume_time_of_day": "00:15",
+     "clock_aligned": true
     },
     {
      "start": "2023-03-22T04:30:00Z",
@@ -22989,7 +24539,10 @@
      "cycles": 137,
      "hours": 34.25,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2023-03-23T14:45:00Z",
+     "resume_time_of_day": "14:45",
+     "clock_aligned": false
     },
     {
      "start": "2025-06-12T18:00:00Z",
@@ -22997,7 +24550,10 @@
      "cycles": 10,
      "hours": 2.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2025-06-12T20:30:00Z",
+     "resume_time_of_day": "20:30",
+     "clock_aligned": false
     },
     {
      "start": "2025-06-14T17:45:00Z",
@@ -23005,7 +24561,10 @@
      "cycles": 1666,
      "hours": 416.5,
      "host_probed": false,
-     "host_probe_result": null
+     "host_probe_result": null,
+     "resume_utc": "2025-07-02T02:15:00Z",
+     "resume_time_of_day": "02:15",
+     "clock_aligned": true
     }
    ],
    "collapsed_cycles_count": 360,

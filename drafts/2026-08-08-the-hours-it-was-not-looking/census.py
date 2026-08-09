@@ -23,7 +23,11 @@ from datetime import datetime, timedelta, timezone
 
 STEP = timedelta(minutes=15)
 TYPES = ("export", "mentions", "gkg")
-TRAILING_WINDOW = 672          # complete cycles = 7 days at 96/day  (pre-registered)
+TRAILING_WINDOW = 672          # complete cycles (pre-registered). NOTE, added 2026-08-08 after the
+                               # adversary's objection 7(i): 672 COMPLETE cycles equals seven days only
+                               # where the series is complete; across gap-heavy stretches the window
+                               # spans more than a week. It is a trailing window of 672 published
+                               # cycles, and calling it "seven days" was wrong.
 COLLAPSE_FRACTION = 0.20       # pre-registered threshold
 
 
@@ -180,7 +184,10 @@ def main():
         "duplicate_urls": len(duplicates),
         "malformed_lines": len(malformed),
         "malformed_sample": malformed[:20],
-        "zero_byte_entries": len(zero_byte),
+        "zero_byte_manifest_entries": len(zero_byte),
+        "_zero_byte_note": ("counts entries whose MANIFEST-DECLARED size is 0. It is not a test of the "
+                            "inner file: nine English entries declare 194 bytes and contain a zero-byte "
+                            "CSV. Renamed 2026-08-08 after the adversary's objection 7(ii)."),
         "first_third_boundary": first_third_end.strftime("%Y-%m-%dT%H:%M:%SZ"),
         "missing_in_first_third": missing_first_third,
         "missing_in_last_365d": missing_last_365,

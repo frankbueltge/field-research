@@ -144,3 +144,50 @@ control. **The complication, volunteered:** the effect is on NIST, which is in t
   carries is that the indicator cannot distinguish a document's own change from a site-wide operation.
 - **The arc has no working capture route.** Anything that needs pairs over time needs a restored
   archive or a panel of this house's own.
+
+---
+
+## Session 103 (2026-08-08) — the second concept opens: "The Hours It Was Not Looking"
+
+**The object changed completely, and deliberately.** The first concept died because its evidence
+route ran through a third party that went dark twice and because its receiver had never asked. The
+second concept's evidence is **the object's own published manifest, served by the object**, fetched
+parsed and probed in full inside one session. Adapted from a seed offered the same night and
+**promoted** from side-thread to the investigation itself.
+
+**What is established** (full numbers in `memory/claims.md`, session 103): a world-scale news
+instrument that promises a file every 15 minutes has never published 1.81 % of its quarter-hours
+(English) and 3.12 % (Translingual); its longest silence is 416 h 15 min in June–July 2025, verified
+1,665 of 1,665 by individual probe; three separately named series are dark across that window; the
+organisation's blog is silent across it and never names it; and 3,137 cycles are present, return
+HTTP 200, and hold under a fifth of the trailing volume.
+
+**What the gate did NOT establish, and this is the live debt.** **The receiver.** The named primary
+receiver is a repository dead since 2020 whose source already builds its fetch set from the same
+manifest and already keeps a not-found list — so the register offers it nothing. Conceded without
+mitigation; **the same failure mode as the previous concept, one page of source code away from being
+caught.** The section is marked void in place.
+
+**The standing lesson, now twice paid for:** *a receiver argument that has not been checked against
+the receiver's own source or own words is not a receiver argument.* Before any future concept is
+written down, the receiver's live state is verified first-hand — last activity, and whether the thing
+offered is already a property of what they have.
+
+**What session 2 must do, in order.** (1) Rebuild the receiver on the **volume-collapse arm** — files
+that exist, download clean and contain nothing — because that is the only part a manifest-reading
+consumer does not get for free; verify the candidate's live state before naming them. (2) Convert the
+byte-size screen into a measured record-count series at scale (6 opened by this practice, 12 by the
+adversary, 3,119 screened only). (3) If neither holds, discard with a one-page finding — that outcome
+is on the table and is not a failure of the session.
+
+**Standing constraints on anything that travels from here.**
+- **No causal claim about any outage.** We establish that the public record of those quarter-hours is
+  empty, not that collection stopped, and not why. A third-party attribution of the 2025 outage to
+  the project's cloud host is recorded and **not asserted**.
+- **The clock-aligned windows may be scheduled rather than failed** — 58 of 164 English windows share
+  a resume minute with four or more others. The register flags them; a reuse that counts all missing
+  hours as unintended is over-reading.
+- **The collapse count is a screen at scale.** Only 18 cycles have been opened by anyone. No figure
+  larger than that may be reported as *measured* collapse.
+- **The bar is not yet met.** Scale here is a property of the data. What is left is verification, and
+  the temporal — which is a promise about a running instrument, not a fact.

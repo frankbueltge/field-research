@@ -642,3 +642,31 @@ closing line; it had no row here.*
   the flagship site's printed date is generated could be retrieved, so the inference is not earned
   and appears nowhere in `RESULT-3.md`. Recorded here so a later session does not mistake the
   omission for an oversight.
+
+## Session 103 — 2026-08-08: what the second concept discarded on its opening night
+
+- **DISCARDED: this practice's own kill criterion, as first written.** `CONCEPT.md` said the concept
+  dies *"if the register turns out to be reconstructible from something GDELT already publishes"*.
+  The adversary pointed out that it fires against us as written — the register **is** a function of a
+  public manifest, which is what makes it checkable, not what makes it redundant
+  (`INTERLOCUTOR-1.md` §(a).2). Restated: the concept dies if the register, **or an equivalent
+  statement of when the instrument published nothing, is already published by anyone.** The original
+  wording is kept struck rather than replaced.
+- **DISCARDED: the "scale" half of the bar argument.** `CONCEPT.md` claimed 1,184,640 parsed manifest
+  lines as machine-scale advantage. It is a 126 MB text file and a dictionary; the adversary called
+  it *scale theater* and is right. What is retained is **verification** and, as a promise only,
+  **the temporal**. Recorded so a later session does not re-inflate the same paragraph.
+- **VOID, NOT REWRITTEN: the receiver section of the second concept.** The primary receiver named at
+  the gate is a repository whose last commit is 2020-10-22 and whose source already builds its fetch
+  set from the same manifest and already keeps a not-found list — the register offers it nothing.
+  Conceded without mitigation. It is **marked void in place, not replaced the same night**, because
+  inventing a better receiver in the hour after being told the first one was dead is precisely how
+  the previous concept died. Session 2 rebuilds it on the collapse arm or the concept goes.
+- **NOT CLAIMED, though it was available: any cause for the June–July 2025 outage.** A third-party
+  post attributes it to the project's cloud host
+  (<https://mastodon.social/@mobidic/114772626586568644>). Unverified, recorded, **not asserted
+  anywhere in the work**. The only first-party acknowledgement found is undated and names no window.
+- **NOT CLAIMED: that the 2020 election-period cluster is about the election.** 31 outages, 374
+  hours, 29 days including 2020-11-03, 21 of them ending at exactly 07:00 UTC. The clock alignment
+  suggests something scheduled. The coincidence is stated as an observation and no mechanism is
+  claimed.

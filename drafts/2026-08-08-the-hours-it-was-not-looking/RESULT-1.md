@@ -104,7 +104,9 @@ their records counted:
 
 The screen holds: a collapsed byte size corresponds to a collapsed record count. **3,137 English
 cycles are present in the manifest, download successfully, and carry under a fifth of the volume of
-the week around them** — 2,752 of them in 2017 alone. A pipeline that checks whether the file exists
+the 672 published cycles before them** *(corrected 2026-08-08 after the adversary's objection 7(i):
+this read "the week around them", which was wrong twice — the window is trailing, not surrounding,
+and it is 672 published cycles, which equals seven days only where the series is complete)* — 2,752 of them in 2017 alone. A pipeline that checks whether the file exists
 sees nothing wrong with any of them. **This is the failure mode that outranks the outage: an
 absence that answers HTTP 200.**
 
@@ -160,3 +162,51 @@ once, and a register that only reported the recent year would show an instrument
 `census.py` · `probe.py` · `build_register.py` · `census.json` · `gaps.json` · `collapses.json` ·
 `probes.json` · `translingual/` · `gap-register-v0.1.json` (the draft artifact: 164 English and 355
 Translingual windows of one hour or more, dated, with the verification status of each).
+
+
+---
+
+# Addendum, 2026-08-08 — what changed after the adversary's verdict
+
+*Written after `INTERLOCUTOR-1.md` was received. Everything here was measured after the critique,
+and none of it is retro-fitted into the scored predictions above.*
+
+**A third independently named series went dark in the same window, and we checked it ourselves.**
+The adversary pointed at the GDELT 1.0 daily events file, a series this session had not considered.
+We did not take its probe on trust: **all 61 days of June and July 2025 were probed**
+(`v1-daily-probe.json`). **18 contiguous days are absent — 2025-06-14 through 2025-07-01 — with 0
+probe failures**, and every other day of both months returns HTTP 200. Together with the two
+15-minute streams, **three separately named series are silent across one window**.
+
+**The mid-gap probe was widened from one file type to six.** `probe.py` only ever probed
+`.export.CSV.zip`, which is a narrower verification than the write-up implied. At `20250620120000`,
+all six names return 404: `.export`, `.mentions`, `.gkg`, `.translation.export`,
+`.translation.mentions`, `.translation.gkg`.
+
+**The collapse arm was re-screened by a second, independent method — one neither party had run.**
+The pre-registered screen compares a cycle to a trailing median over all hours of the day, so it is
+not normalised for the diurnal cycle, and the flags do carry a diurnal shape (26 flags at 00:00 UTC
+against 209 at 14:00). `rescreen.py` compares each cycle instead to the median of the **same minute
+of day** over the preceding 28 occurrences. **It flags 3,136 cycles against the pre-registered
+3,137, and 3,125 of them are the same cycles.** The collapse is not an artifact of the diurnal term.
+**2,769 of the 3,137 sit below 1 % of their trailing median.**
+
+**58 of 164 English windows are clock-aligned, and the register now says so.** A window whose resume
+minute is shared by five or more windows in the same stream is flagged `clock_aligned`: 58 English
+(37 resuming at exactly 07:15, 21 at 07:30) and 180 of 355 Translingual. A dark window that ends at
+the same clock minute dozens of times may be scheduled rather than failed, and the register must let
+a reader tell the two apart rather than leave it to be inferred.
+
+**Two code defects fixed, both re-run.** The trailing window is now documented in the code as 672
+*published cycles*; `zero_byte_entries` is renamed `zero_byte_manifest_entries` and carries a note
+saying it tests the manifest's declared size and not the inner file — the nine 194-byte entries that
+contain a zero-byte CSV were invisible to the field named for them. Both censuses were re-run after
+the edits and returned identical numbers.
+
+**What the adversary confirmed independently, and it belongs in the record even though it is not
+ours:** it drew 12 collapsed cycles blind on a different seed, downloaded and opened them, and found
+**12 of 12 containing between 1 and 13 GKG records** against a norm near 1,700. That is its
+measurement, published with its critique, not re-run by us.
+
+**What this addendum does not repair: the receiver.** See `CONCEPT.md`, where the receiver section is
+marked void, and `INTERLOCUTOR-1.md` §5 and the response to it. **The gate is not passed.**

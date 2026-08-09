@@ -426,7 +426,8 @@
    "why": "field count"
   }
  ],
- "zero_byte_entries": 0,
+ "zero_byte_manifest_entries": 0,
+ "_zero_byte_note": "counts entries whose MANIFEST-DECLARED size is 0. It is not a test of the inner file: nine English entries declare 194 bytes and contain a zero-byte CSV. Renamed 2026-08-08 after the adversary's objection 7(ii).",
  "first_third_boundary": "2018-12-16T07:20:00Z",
  "missing_in_first_third": 2226,
  "missing_in_last_365d": 1,

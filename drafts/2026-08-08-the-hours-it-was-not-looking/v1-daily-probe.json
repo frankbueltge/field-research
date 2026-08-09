@@ -1,0 +1,316 @@
+{
+ "series": "GDELT 1.0 daily events file",
+ "probed": 61,
+ "absent_count": 18,
+ "absent_first": "2025-06-14",
+ "absent_last": "2025-07-01",
+ "contiguous": true,
+ "errors": 0,
+ "detail": [
+  {
+   "date": "2025-06-01",
+   "status": 200,
+   "bytes": 4209504
+  },
+  {
+   "date": "2025-06-02",
+   "status": 200,
+   "bytes": 7887652
+  },
+  {
+   "date": "2025-06-03",
+   "status": 200,
+   "bytes": 8850541
+  },
+  {
+   "date": "2025-06-04",
+   "status": 200,
+   "bytes": 9136884
+  },
+  {
+   "date": "2025-06-05",
+   "status": 200,
+   "bytes": 9179467
+  },
+  {
+   "date": "2025-06-06",
+   "status": 200,
+   "bytes": 8282778
+  },
+  {
+   "date": "2025-06-07",
+   "status": 200,
+   "bytes": 4858747
+  },
+  {
+   "date": "2025-06-08",
+   "status": 200,
+   "bytes": 4063285
+  },
+  {
+   "date": "2025-06-09",
+   "status": 200,
+   "bytes": 7477835
+  },
+  {
+   "date": "2025-06-10",
+   "status": 200,
+   "bytes": 9057700
+  },
+  {
+   "date": "2025-06-11",
+   "status": 200,
+   "bytes": 9568539
+  },
+  {
+   "date": "2025-06-12",
+   "status": 200,
+   "bytes": 8776513
+  },
+  {
+   "date": "2025-06-13",
+   "status": 200,
+   "bytes": 9440582
+  },
+  {
+   "date": "2025-06-14",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-06-15",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-06-16",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-06-17",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-06-18",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-06-19",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-06-20",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-06-21",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-06-22",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-06-23",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-06-24",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-06-25",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-06-26",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-06-27",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-06-28",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-06-29",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-06-30",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-07-01",
+   "status": 404,
+   "bytes": null
+  },
+  {
+   "date": "2025-07-02",
+   "status": 200,
+   "bytes": 8655235
+  },
+  {
+   "date": "2025-07-03",
+   "status": 200,
+   "bytes": 9103616
+  },
+  {
+   "date": "2025-07-04",
+   "status": 200,
+   "bytes": 7486152
+  },
+  {
+   "date": "2025-07-05",
+   "status": 200,
+   "bytes": 4540212
+  },
+  {
+   "date": "2025-07-06",
+   "status": 200,
+   "bytes": 4230501
+  },
+  {
+   "date": "2025-07-07",
+   "status": 200,
+   "bytes": 7773300
+  },
+  {
+   "date": "2025-07-08",
+   "status": 200,
+   "bytes": 8852207
+  },
+  {
+   "date": "2025-07-09",
+   "status": 200,
+   "bytes": 9154496
+  },
+  {
+   "date": "2025-07-10",
+   "status": 200,
+   "bytes": 9098468
+  },
+  {
+   "date": "2025-07-11",
+   "status": 200,
+   "bytes": 8618839
+  },
+  {
+   "date": "2025-07-12",
+   "status": 200,
+   "bytes": 5010583
+  },
+  {
+   "date": "2025-07-13",
+   "status": 200,
+   "bytes": 4224363
+  },
+  {
+   "date": "2025-07-14",
+   "status": 200,
+   "bytes": 7857009
+  },
+  {
+   "date": "2025-07-15",
+   "status": 200,
+   "bytes": 8991758
+  },
+  {
+   "date": "2025-07-16",
+   "status": 200,
+   "bytes": 9113126
+  },
+  {
+   "date": "2025-07-17",
+   "status": 200,
+   "bytes": 8954051
+  },
+  {
+   "date": "2025-07-18",
+   "status": 200,
+   "bytes": 8481985
+  },
+  {
+   "date": "2025-07-19",
+   "status": 200,
+   "bytes": 5018945
+  },
+  {
+   "date": "2025-07-20",
+   "status": 200,
+   "bytes": 4037203
+  },
+  {
+   "date": "2025-07-21",
+   "status": 200,
+   "bytes": 7556451
+  },
+  {
+   "date": "2025-07-22",
+   "status": 200,
+   "bytes": 8669435
+  },
+  {
+   "date": "2025-07-23",
+   "status": 200,
+   "bytes": 8890723
+  },
+  {
+   "date": "2025-07-24",
+   "status": 200,
+   "bytes": 8877203
+  },
+  {
+   "date": "2025-07-25",
+   "status": 200,
+   "bytes": 8421369
+  },
+  {
+   "date": "2025-07-26",
+   "status": 200,
+   "bytes": 5021962
+  },
+  {
+   "date": "2025-07-27",
+   "status": 200,
+   "bytes": 4037251
+  },
+  {
+   "date": "2025-07-28",
+   "status": 200,
+   "bytes": 7528972
+  },
+  {
+   "date": "2025-07-29",
+   "status": 200,
+   "bytes": 8624688
+  },
+  {
+   "date": "2025-07-30",
+   "status": 200,
+   "bytes": 8442236
+  },
+  {
+   "date": "2025-07-31",
+   "status": 200,
+   "bytes": 8816939
+  }
+ ]
+}

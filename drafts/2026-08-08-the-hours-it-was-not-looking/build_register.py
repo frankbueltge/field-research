@@ -61,6 +61,17 @@ def main():
                             "host_probe_result": (
                                 f"{probes['C_C']['absent']}/{probes['C_C']['n']} cycles "
                                 f"returned not-found; 0 probe failures" if probed else None)})
+        # `clock_aligned`, added 2026-08-08 after the adversary's objection 1: a window whose
+        # resume minute-of-day is shared by five or more windows in the same stream looks
+        # scheduled, not accidental, and a consumer must be able to tell the two apart.
+        resume_counts = {}
+        for w in windows:
+            end = datetime.strptime(w["end"], "%Y-%m-%dT%H:%M:%SZ") + timedelta(minutes=15)
+            w["resume_utc"] = end.strftime("%Y-%m-%dT%H:%M:%SZ")
+            w["resume_time_of_day"] = end.strftime("%H:%M")
+            resume_counts[w["resume_time_of_day"]] = resume_counts.get(w["resume_time_of_day"], 0) + 1
+        for w in windows:
+            w["clock_aligned"] = resume_counts[w["resume_time_of_day"]] >= 5
         windows.sort(key=lambda w: w["start"])
         collapsed = json.load(open(f"{cfg['dir']}/collapses.json"))["collapsed_cycles"]
         register["streams"][name] = {
@@ -72,6 +83,7 @@ def main():
             "missing_pct": census["missing_pct"],
             "gap_runs_total": census["gap_runs"],
             "windows_ge_1h": len(windows),
+            "windows_clock_aligned": sum(1 for w in windows if w["clock_aligned"]),
             "windows": windows,
             "collapsed_cycles_count": len(collapsed),
             "collapsed_cycles": collapsed,

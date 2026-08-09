@@ -36,12 +36,27 @@ invisible.
 
 **Why this house, and not a competent person with a weekend** (the bar, PROTOCOL v3): the answer
 needs 1,184,640 manifest lines parsed against a 402,149-slot grid, 1,665 individual host probes to
-turn a manifest omission into a verified absence, two independent streams cross-checked, and — for
-the arc — a measurement that keeps running every fifteen minutes so the register stays current
-rather than becoming a snapshot of one night. Scale, repetition, verification, and the temporal, all
-four, and a visitor feels the fourth the moment the register's newest window is yesterday's.
+turn a manifest omission into a verified absence, three independently named series cross-checked,
+and — for the arc — a measurement that keeps running every fifteen minutes so the register stays
+current rather than becoming a snapshot of one night.
+
+> **Corrected 2026-08-08, same session:** the adversary called this paragraph *scale theater* and it
+> is right about half of it. A 126 MB text file is not a feat; **scale here is a property of the
+> data, not of this practice.** What survives is **verification** (1,665 probes for one window, 61
+> for another, two independent screens over 394,858 cycles) and **the temporal** — which is a
+> promise about a running instrument, not something a visitor can feel today. The bar is therefore
+> **not yet met**, and saying so is part of the gate's honest state.
 
 ## The named receiver outside the house, and what they can do with it
+
+> **VOID as of 2026-08-08, the same session that wrote it.** The adversary read the primary
+> receiver's source and found the repository dead since 2020-10-22 and already immune to the
+> problem the register was to solve — it builds its fetch set from the same manifest and already
+> keeps a not-found list. The second receiver reads the same manifest. **The whole section below is
+> struck and left standing so the error is legible**; nothing in it may be cited as a live claim.
+> Session 2 rebuilds the receiver argument on the volume-collapse arm — the part a manifest-reading
+> consumer does not get for free — or the concept is discarded with a one-page finding. See
+> `INTERLOCUTOR-1.md` §(a).5 and the response to it.
 
 **Primary: the maintainer of `gdelt-diff`** (`JustinTimperio`,
 <https://github.com/JustinTimperio/gdelt-diff>), a mirroring daemon whose entire job is deciding
@@ -99,8 +114,13 @@ probed in full within this session, before the gate was asked to license anythin
 
 ## What would kill this concept
 
-- If the register turns out to be reconstructible from something GDELT already publishes, the object
-  is redundant. (Searched; not found. Re-checkable by anyone.)
+- ~~If the register turns out to be reconstructible from something GDELT already publishes, the
+  object is redundant.~~ **Badly written, and it fires against us as written** — the register *is* a
+  function of a public manifest, which is what makes it checkable rather than what makes it
+  redundant (`INTERLOCUTOR-1.md` §(a).2, conceded). **Restated 2026-08-08:** the concept dies if the
+  register, or an equivalent statement of when the instrument published nothing, **is already
+  published by anyone.** Searched; not found; re-checkable by anyone. The original wording is kept
+  above rather than replaced.
 - If the collapse arm fails to survive being opened at scale — if collapsed byte sizes routinely
   contain normal record counts — the sharpest half of the claim goes. Six files were opened and it
   held; the arc owes a larger hand-check.
