@@ -593,3 +593,51 @@ instrument existed. Numbers: `RESULT-2.md`, `scored-2.json`, `census.json`.*
   of found work, not a proof of absence.* A US federal automated scanning programme covering roughly
   26,000 domains was found with **no timeliness field visible in its documented sample output** —
   **unconfirmed**, because the full field dictionary could not be retrieved; nothing rests on it.
+
+## Session 103 — 2026-08-08: the completeness of a world-scale instrument's own file series
+
+*Measured from the instrument's own published manifests and verified against its own file host.
+Nothing here rests on a third party. Full record: `drafts/2026-08-08-the-hours-it-was-not-looking/RESULT-1.md`.*
+
+- **A world-scale news measurement instrument that publishes every 15 minutes has never published
+  1.81 % of its quarter-hours** (2026-08-08). GDELT 2.0's cadence is its own published claim —
+  *"the GDELT Event and Global Knowledge Graph now update every 15 minutes"*
+  (<https://blog.gdeltproject.org/gdelt-2-0-our-global-world-in-realtime/>). Against that grid:
+  English stream **7,286 missing of 402,149 cycles (1,821.5 h, 75.9 days)**; Translingual stream
+  **12,546 of 402,150 (3.12 %, 130.7 days)**; 2,244 and 4,107 separate gap runs. Manifests fetched
+  in full, MD5 of the English one as downloaded equal to the host's `etag`
+  (`fcfcba9eb0b88699f1fd094f219ba39f`). Three internal identities recomputed independently (grid
+  size, complete+partial+missing = expected, sum of run lengths = missing).
+- **Its longest silence is 416 h 15 min — 17.3 days — and is verified cycle by cycle, not inferred**
+  (2026-08-08). 2025-06-14T18:00Z → 2025-07-02T02:00Z: **1,665 of 1,665 probed cycles returned
+  not-found on the file host, 0 probe failures**; the cycles immediately before and after return
+  HTTP 200 with `last-modified` inside their own quarter-hours. The Translingual stream reproduces
+  the same window independently (1,666 cycles, 416.5 h). *This establishes that the public record of
+  those quarter-hours is empty. It does not establish that collection stopped, and no cause is
+  claimed.*
+- **The same organisation's other public channel is silent over the same window, and never names
+  it** (2026-08-08). Its blog archive lists 14 posts in June 2025, the last dated **June 13**; the
+  July archive's earliest is **July 2** (read from the raw archive HTML,
+  <https://blog.gdeltproject.org/2025/06/>, <https://blog.gdeltproject.org/2025/07/>). No post then
+  or later names the interruption or its length. The only first-party acknowledgement found is an
+  undated social-media note about *"multiple GDELT infrastructure outages"*
+  (<https://www.linkedin.com/posts/kalevleetaru_we-are-aware-of-multiple-gdelt-infrastructure-activity-7340435180601393154-_SDg>).
+  A third-party post attributing the cause to its cloud host
+  (<https://mastodon.social/@mobidic/114772626586568644>) is **recorded and not asserted**.
+- **31 multi-hour outages, 374 hours, cluster in October–November 2020, 21 of them ending at exactly
+  07:00 UTC** (2026-08-08), on 29 distinct days including 2020-11-03. *The coincidence with the US
+  election period is an observation, not a cause.*
+- **Absence that answers HTTP 200: 3,137 English cycles are present, download successfully, and
+  carry under a fifth of the volume of the surrounding week** — 2,752 in 2017 alone. Six files
+  opened by hand: 2017-07-01T07:30Z holds **7** GKG records where its 06:45 and 07:15 neighbours
+  hold **1,721** and **1,751**; two cycles (2016-05-08T14:15Z, 2017-08-04T21:30Z) are valid archives
+  containing a **zero-byte** file. *Byte size is a screen, verified on six files; the other 3,131 are
+  screened, not opened.*
+- **No prior measurement of this instrument's file-series completeness was found** (independent
+  search pass, 2026-08-08). The critique literature is well developed and is about the quality of
+  records that arrived, not about when nothing arrived; the project's own "stability" dashboard
+  measures instability in the news, not in itself; its status page is a tool index, not an incident
+  log. *An absence of found work, not a proof of absence.*
+- **Its recent record is excellent, and that is part of the finding**: **1** missing cycle in the
+  last 365 days (English), 2 (Translingual). A register covering only the recent year would show an
+  instrument in perfect health fourteen months after a seventeen-day silence.
