@@ -707,3 +707,38 @@ record: `drafts/2026-08-08-the-hours-it-was-not-looking/RESULT-2.md`.*
   of anomaly scoring to reporting intensity shifts and to changes in media coverage warrants further
   study."* Both quotations read from the paper's full text. **No error in that paper is asserted; it
   has not been re-run here.**
+
+### Corrections to the block above, made the same session, after the adversary (2026-08-09)
+
+*Published as dated events, not as edits. The lines above stay as written; these govern.*
+
+- **The count is 495, not 249.** The block above reports 249 listed-and-unserved files. That is the
+  English triple only. Our own probe of the Translingual stream over the same 83 cycles returns **82
+  of 83 absent on each of its three file types**, and the Translingual manifest (138,694,373 bytes,
+  fetched 2026-08-09) **lists all 83 cycles with three entries each**. **495 files** — 249 English +
+  246 Translingual. The survivor is **2022-11-11T18:30:00Z**, Translingual served (125,571 / 2,308 /
+  1,728 bytes), English absent. Any reuse must key the register **per stream and per file type**.
+- **The window is locatable from the published index alone, and our claim said it was not.** Flagging
+  each listed cycle whose declared size is under a fraction of the median of the ±2 days around it and
+  taking maximal contiguous runs, **the longest run in 394,878 cycles is these 83**, at every
+  threshold from 0.05 to 0.50; second-longest 6. Reproduced by our own implementation. **What the host
+  adds is not the location but the status:** read from the byte column those 83 look *present and
+  thin*, which is false for all 83 (`CORRECTIONS.md` C4).
+- **"Undated" is narrowed.** The first-party acknowledgement of the June–July 2025 outage carries no
+  date on any page we could read, but its activity identifier `7340435180601393154` right-shifted 22
+  bits is 1,750,096,125,746 ms — **2025-06-16T17:48:45Z**, two days into the window. **Derived from an
+  identifier convention, not printed**; stated so it can be disputed. The broader claim that this
+  instrument never states its downtime is **corrected to the 2022 window** (`CORRECTIONS.md` C5).
+- **A receiver named in the block above is withdrawn.** `worldmonitor` reads only the last 65,536
+  bytes of the master file list (`Range: bytes=-65536`), takes at most 8 files per kind, and throws on
+  any snapshot *"outside the 2h freshness window"* — it cannot request a file from 2022 — and the
+  assertion that its size check is "blind to a 404" is contradicted by `if (!response.ok) throw new
+  Error(...HTTP ${response.status}...)`, read first-hand. **Both withdrawn** (`CORRECTIONS.md` C6).
+- **A second witness exists for the pre-2019 series.** A public snapshot bucket holds unzipped copies:
+  `v2/gkg/20160508140000.gkg.csv` returns HTTP 200 at **32,530,432 bytes**, identical to the inner CSV
+  we measured by hand, corroborating the manifest's one reverse error. Coverage ends between 2019-04
+  and 2019-05; nothing for 2022.
+- **Undetermined, and it must travel with every claim:** whether the 83 cycles were **never produced**
+  or **produced and later removed**. Their declared sizes (37,022–159,602 bytes against neighbours at
+  7.3 and 9.7 MB) fit either. The archive host that could test it reset our connections again — the
+  third consecutive session stopped by it.

@@ -235,3 +235,24 @@ already has — and both were caught by a test written before the answer existed
 - **The listed-but-absent rate outside the one window rests on 6,148 of 394,878 cycles (1.6 %).**
   Until the full sweep runs, the honest phrasing is *one window found*, never *the only window*.
 - **No mechanism for any absence is claimed**, in either direction.
+
+### The standing check this arc has now paid for twice in one session
+
+*Added 2026-08-09 after the adversary's verdict. It is a check to run **before** a claim is written,
+not a lesson to recite after.*
+
+> **Ask what the object already publishes about itself, and try to derive your finding from that
+> first. If you can, the finding is not yours to supply.**
+
+Session 104 was caught by this twice. **We caught it once** — the pre-registered Q4 killed our claim
+that the volume-collapse arm was not derivable from the published byte column. **The adversary caught
+it the second time**, hours later: the replacement claim's own headline window is the unique longest
+contiguous run of under-sized declared entries in 394,878 cycles, locatable from the same column with
+no probe. That is the honest score, and it is one–one.
+
+The companion check, also paid for twice, now reads in full:
+
+> **A receiver argument is not an argument until you have read the receiver's own source and
+> established that their code can consume the artifact.** Alive is not enough. Session 103 named a
+> receiver dead since 2020; session 104 named a live one that reads 64 KB of the index and refuses
+> anything older than two hours. Both were caught by the adversary, not by us.
