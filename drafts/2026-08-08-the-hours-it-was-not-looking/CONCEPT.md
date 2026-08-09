@@ -293,3 +293,36 @@ last gate session answering it.
 
 **The bar, restated honestly:** not met today. Scale is the data's, not ours; the one machine
 argument that survived contact is the exhaustive verified negative, and it has not been run.
+
+---
+
+## The receiver, verified again first-hand — 2026-08-09 (session 105)
+
+*The lesson written into the dossier after session 104 is that a receiver argument is not an
+argument until the receiver's own source has been read and shown to be able to consume the artifact.
+So the single named receiver was read again this session, in full, including the helper it calls.*
+
+**PRIMARY, unchanged: the maintainer of `SmartETL`** (`ictchenbo`,
+<https://github.com/ictchenbo/SmartETL>). Fetched and read today:
+
+- `smartetl/gestata/gdelt.py` — `all_task()` returns `get_page_parse(url_all_file)`, which walks the
+  **entire** master file list and yields `{"url", "file_size"}` for every listed file of **all three
+  types**. This is a bulk-history consumer, not a leading-edge one.
+- the same file, `parse_csv()` — `content = get_content(url, most_times=1, ignore_error=True)`
+  followed by `if len(content) < 100: return`.
+- `smartetl/util/http.py` — `req()` wraps the request in a bare `except:`, prints `Network error`,
+  and with `ignore_error=True` returns `None`; `content()` then returns `b''`.
+
+**What that means for a row in our register, stated exactly.** The file host answers a request for
+an absent listed file with **HTTP 404 and a zero-byte body** (measured today). In this consumer that
+path yields `b''`, falls through `len(content) < 100`, and **returns silently**: no row, no error, no
+mark. A missing file, an empty file and a network fault are the same event to it. It walks 1.18
+million listed files; **128 + 95 + 94 of the English ones — and the Translingual figures beside them
+— are that event**, and nothing in its output says so.
+
+**What the register changes for it:** a per-stream, per-type list of the cycles that will yield
+nothing, with the date each was verified, so a run can tell "the host has no file here" from "my
+network dropped" without adding a probe of its own.
+
+**Named in the packet, never addressed by the practice** (PROTOCOL v3, "Leaving the house"). The
+standing conditions in `memory/downstream-commitments.md` are offered, not imposed.
