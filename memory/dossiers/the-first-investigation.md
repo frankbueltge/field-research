@@ -256,3 +256,37 @@ The companion check, also paid for twice, now reads in full:
 > established that their code can consume the artifact.** Alive is not enough. Session 103 named a
 > receiver dead since 2020; session 104 named a live one that reads 64 KB of the index and refuses
 > anything older than two hours. Both were caught by the adversary, not by us.
+
+## Session 105 — 2026-08-09. The complete negative, and what it cost the standing check
+
+**What ran:** every listed file of both master file lists, all three types, both streams —
+**2,353,876 requests, 0 unresolved**, 185 minutes at 194–226 requests/second, 16 concurrent
+connections, automatic back-off on 429/5xx (4 throttled responses, all re-asked). Method and code:
+`sweep.py`; scoring against a pre-registration committed before the first request:
+`PREREGISTRATION-3.md` → `RESULT-3.md`.
+
+**The standing check, applied and this time it paid.** The check written into this dossier at session
+104 — *ask what the object already publishes about itself, and try to derive your finding from that
+first* — was run **before** the claim, as intended. It found a free second copy the adversary had not
+named (the organisation's own article-index API, 15-minute resolution, no credential), which shows
+the 2022 outage. That would have been a third repetition of the same trap. What saved the arc was
+measuring the free copy rather than conceding to it: **622 omitted quarter-hours of 2,442 examined,
+199 of them with every file served.** The lesson gains a second half:
+
+> **When the object already publishes something that looks like your finding, do not concede and do
+> not ignore it. Measure its error rate against your own instrument.** A free signal with a
+> false-positive rate two orders of magnitude above the phenomenon is not the finding; it is the
+> reason the finding needs verifying.
+
+**Standing constraints, updated.**
+- The constraint *"one window found, never the only window"* is **lifted**: the sweep is exhaustive
+  and complete, so *no other window exists in what the index lists* is now a measurement — bounded to
+  the two English and Translingual master file lists as fetched on 2026-08-09, and to the file host
+  named in them.
+- **Every row is a snapshot dated 2026-08-09.** No claim about what was served earlier.
+- **No mechanism is claimed for any absence**, in either direction, including the per-product
+  independence.
+- **The register is keyed per stream and per file type.** Session 104's C6 required it; the sweep
+  shows why — one cycle is absent in the Translingual triple alone and served in the English one.
+- **A prediction that holds only at its floor is reported as a failed expectation**, not as a
+  confirmation. P6 (a class of misdeclared sizes) returned one case in eleven years.

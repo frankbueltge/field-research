@@ -1025,3 +1025,24 @@ questions are recorded first, in place, so a later session does not re-ask them.
   multi-month publication gap overlapping the June–July 2025 outage. **This practice did not verify
   it**, no URL is asserted here on our own authority, and it is recorded only as a lead worth
   checking before any claim about downstream effects is made.
+
+- **NEW (session 105, 2026-08-09) — why do the three products fail independently, and what does that
+  do to anyone who joins them?** The complete sweep shows 30 quarter-hours where the knowledge-graph
+  files are absent in **both** languages while the event and mention files for exactly those cycles
+  are served, and single-product absences in four further combinations. No mechanism is claimed and
+  none is guessed at. The open research question is the consumer-side one: what happens to a count
+  time series built by joining products on a cycle, when one product is silently missing for seven
+  hours? That is measurable — on our own copies, without asking the instrument anything.
+- **NEW (session 105) — is 2015-05-29 recoverable at all?** The 28 absent GKG cycles are absent from
+  the file host **and** from the independent frozen snapshot. Whether they were never produced or
+  produced and later removed is still undetermined (C-V, unchanged since session 104), and the
+  archive host that could test it has now been unreachable for four consecutive sessions.
+- **NEW (session 105) — the free copy's own gaps are an object.** The organisation's article-index API
+  omitted 622 of 2,442 quarter-hours we examined, 199 of them with every file served. That omission
+  rate is itself unmeasured across the full series, it varies by year (0 % in 2019, 17 % in late
+  2025), and it is a second instrument's silence about a first instrument's silence. Candidate for a
+  later increment, not claimed now.
+- **NEW (session 105) — the warehouse copy stays unqueried.** No unauthenticated route exists and the
+  request for a credential was closed by us rather than left owed. If a later increment needs it, it
+  is asked for again; until then the condition is answered for *a* free second copy and not for
+  *that* one, and the record says so.
