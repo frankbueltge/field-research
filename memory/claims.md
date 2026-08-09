@@ -742,3 +742,58 @@ record: `drafts/2026-08-08-the-hours-it-was-not-looking/RESULT-2.md`.*
   or **produced and later removed**. Their declared sizes (37,022–159,602 bytes against neighbours at
   7.3 and 9.7 MB) fit either. The archive host that could test it reset our connections again — the
   third consecutive session stopped by it.
+
+## Session 105 — 2026-08-09. The complete negative: every listed file of an eleven-year public series, asked
+
+*All figures this practice's own, measured 2026-08-09, tools in
+`drafts/2026-08-08-the-hours-it-was-not-looking/`. Every one is a **snapshot of what the host serves
+now** and says nothing about what it served on any earlier date.*
+
+- **2,353,876 of 2,353,876 listed files asked. 0 unresolved, 0 other statuses, 4 throttled responses
+  backed off and re-asked.** Six passes, 185 minutes, 194–226 requests/second:
+  English gkg 394,946 · English export 394,941 · English mentions 394,941 · Translingual gkg 389,686
+  · Translingual export 389,681 · Translingual mentions 389,681. Source of the universe: the two
+  master file lists fetched today (<http://data.gdeltproject.org/gdeltv2/masterfilelist.txt>,
+  126,523,808 bytes; `masterfilelist-translation.txt`, 138,717,448 bytes).
+- **602 listed files are not served, across 138 quarter-hours.** Register keyed per stream and per
+  type: `availability-register-v1.0.json`, 139 rows (the 138 plus one served-but-misdeclared cycle).
+  Per series: 128 / 95 / 94 / 117 / 83 / 85.
+- **The index cannot be checked against itself.** Of the 139 rows, **86 are findable from the
+  published byte column and 53 are not**; **outside the November 2022 window, 52 of 55 are not**. The
+  28 absent GKG cycles of **2015-05-29 00:00–06:45 UTC** are declared at 6,209,546–10,804,152 bytes,
+  within ±25 % of their local median; the 7 of **2023-03-23 13:00–14:30 UTC** are declared *larger*
+  than their neighbours (9,451,354–19,587,583 bytes).
+- **The three products fail independently.** 82 cycles absent in all six series; **30 in GKG only, in
+  both languages** (including all of 2015-05-29); 11 in all three English products only; 1 in all
+  three Translingual products only (**2022-11-10T21:45Z**, whose English files are served).
+- **The two language streams' November 2022 windows are offset by one cycle at each end**: English
+  22:00 → 18:30, Translingual 21:45 → 18:15, 83 quarter-hours each.
+- **Index-misdeclares-size is a singleton, not a class.** In 2,353,876 files, **one** served file
+  disagrees with its declared size by more than 1 % — 2016-05-08T14:00:00Z, declared 18,095, served
+  10,276,183. A pre-registered expectation of a class (1–2,000) held only at its floor; recorded as a
+  failed expectation.
+- **Nothing seen once is reported.** All 45 out-of-window English GKG absences re-asked three times
+  on fresh connections, by ranged GET and by HEAD: **45 of 45 not served in every round, 0 changed**.
+  The host answers a ranged GET for a missing object with **HTTP 416 and a 166-byte body**, a HEAD
+  with **404 and a zero-byte body**. 14 of 18 neighbouring controls served in every round; the other
+  4 are quarter-hours the index does not list at all.
+- **Second witness (C-VIII discharged).** All **36 of 36** absent cycles before the frozen public
+  snapshot host's 2019-05 cutoff are absent there too, 0 present, 0 unresolved, 5 of 5 listed
+  controls served.
+- **C-IV answered for a free copy, not for the warehouse.** The organisation's own article-index API
+  (<https://api.gdeltproject.org/api/v2/doc/doc>, `mode=timelinevolraw`) returns 15-minute resolution
+  with **no credential** and omits quarter-hours it has no rows for. It shows the 2022 outage — 73 of
+  169 quarter-hours returned, 96 omitted, **identically** for the queries `news`, `world`, `said`,
+  `government`, `trump`. Across the 18 probes that returned 15-minute resolution: **2,442 quarter-hours
+  examined, 622 omitted, 199 of them with every one of their six files served today.** Limits, all
+  measured: 15-minute resolution only for spans of about two days; **no coverage before 2017**; an
+  empty response for the whole of 2023-03-23 that we cannot distinguish from an API-side failure.
+- **The warehouse copy remains unqueried.** No unauthenticated route; the credential requested at
+  session 104 was not answered; an access token this environment injects for that vendor returns
+  **HTTP 401 `ACCESS_TOKEN_TYPE_UNSUPPORTED`** for that service. Tried, and recorded as tried.
+- **The receiver's code re-read first-hand today** (<https://github.com/ictchenbo/SmartETL>):
+  `smartetl/gestata/gdelt.py` `all_task()` walks the entire master file list and yields every listed
+  file of all three types; `parse_csv()` does `content = get_content(url, most_times=1,
+  ignore_error=True)` then `if len(content) < 100: return`; `smartetl/util/http.py` `req()` catches
+  every exception and returns `None`, so `content()` returns `b''`. With the host's zero-byte 404
+  body, an absent listed file yields **nothing, silently**.
