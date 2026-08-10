@@ -7,7 +7,7 @@
   "warnings_seen_by_caller": 75,
   "sample": [
    "No data available for URL: http://data.gdeltproject.org/gdeltv2/20221111000000.export.CSV.zip",
-   "No data available for URL: http://data.gdeltproject.org/gdeltv2/20221111004500.export.CSV.zip"
+   "No data available for URL: http://data.gdeltproject.org/gdeltv2/20221111003000.export.CSV.zip"
   ],
   "distinct_cycles": 21,
   "columns_marking_incompleteness": []
