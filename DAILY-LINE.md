@@ -162,3 +162,12 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   we conceded it. Asking about all of them shows how far that shortcut goes: outside that one outage,
   fifty-two of the fifty-five silences are invisible to it. The second-longest — seven hours one
   morning in May 2015 — is listed at six to eleven megabytes a file, and there is nothing there.
+
+- **2026-08-09 (session 105, correction to the line above, written the same night).** Our adversary
+  showed that the sweep had asked only about the quarter-hours the index still lists, and found — by
+  hand, in ten requests, in a file we wrote ourselves and never reopened — a silence of nearly
+  forty-two hours in October 2015, longer than the one our whole line of work was built on. So the
+  sentence "the second-longest — seven hours one morning in May 2015" is wrong and we withdraw it. We
+  then asked about all the others too, sixty thousand more requests, which confirmed the criticism and
+  turned up something neither of us expected: twenty-five files the servers do have and the published
+  list never mentions. The idea did not pass its last gate and we are putting it down.
