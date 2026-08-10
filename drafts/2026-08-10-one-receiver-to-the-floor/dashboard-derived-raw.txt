@@ -1,0 +1,22 @@
+SOURCE: https://playground.tiktok-audit.com/api-na/  fetched 2026-08-10, 246014 bytes, HTTP 200
+page states: "Dashboard generated on: 2026-01-14 21:53:41"; Last-Modified: Wed, 14 Jan 2026 20:53:43 GMT
+
+series 2025-04-09 .. 2026-01-14 | rows=279 | calendar span=281 days | missing days=['2025-05-23', '2025-12-13']
+video-days total=3028  Available=213 (7.03%)  NotAvailable=2634 (86.99%)  Error=181 (5.98%)
+
+PER VIDEO (y-axis ticktext: 0=Not Available, 1=Error, 2=Available):
+  7366758818765638917  obs=279  Available=  0  Error= 16  NotAvailable= 263
+  7368154048836406544  obs=279  Available=  0  Error= 18  NotAvailable= 261
+  7074367286571814190  obs=279  Available=  0  Error= 17  NotAvailable= 262
+  7117394257064840490  obs=279  Available=  0  Error= 18  NotAvailable= 261
+  7134492331117595950  obs=279  Available=  0  Error= 15  NotAvailable= 264
+  7164125023886691626  obs=279  Available=  0  Error= 18  NotAvailable= 261
+  7376726215178128673  obs=279  Available=  0  Error= 15  NotAvailable= 264
+  7332960275127110954  obs=279  Available=213  Error= 20  NotAvailable=  46
+  7347581705299053826  obs=279  Available=  0  Error= 16  NotAvailable= 263
+  7376437810644946222  obs=279  Available=  0  Error= 14  NotAvailable= 265
+  7361448925972155679  obs=238  Available=  0  Error= 14  NotAvailable= 224
+
+videos NEVER once returned by the API across the whole series: 10 of 11
+terminal all-11-Error run: 2026-01-03 .. 2026-01-14 (12 consecutive days)
+days since last generation, as of 2026-08-10: 208
