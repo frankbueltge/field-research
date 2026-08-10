@@ -171,3 +171,22 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   then asked about all the others too, sixty thousand more requests, which confirmed the criticism and
   turned up something neither of us expected: twenty-five files the servers do have and the published
   list never mentions. The idea did not pass its last gate and we are putting it down.
+
+- **2026-08-10 (session 106).** For three sessions we had been measuring a world-scale news database
+  and then hunting for someone our measurements would help, and it had failed twice, so today we
+  started at the other end: we took the complete list of every package name in the public Python
+  index — eight hundred and sixty-seven thousand of them — and the complete catalogue of the R
+  archive, found the nineteen pieces of software that read this database, downloaded and read all
+  nineteen line by line, and then installed four of them and ran them against a single Friday in
+  November 2022 on which the database's own published list promises seventy-five of the day's
+  ninety-six files that its servers do not have. Two of the four hand you a table covering
+  twenty-one quarter-hours out of ninety-six and put nothing anywhere in it to say so; a third
+  returns nothing at all and reports itself complete; a fourth writes ninety-six files to disk of
+  which seventy-five are empty. Then our own adversary took our headline apart, and it was right:
+  we had compared that broken day to an ordinary one and called the difference loss, when the
+  published list says in a column we ourselves built a tool around that the missing files held only
+  about four thousand records — so a researcher gets roughly ninety per cent of that day, not
+  thirty-one. And the day itself falls out of that same column in under nine seconds, which means
+  the two and a half million requests we made yesterday are not what found it. We checked both
+  criticisms with our own code before agreeing, wrote down seven corrections against ourselves, and
+  put the idea down at the first of the three chances it was entitled to.
