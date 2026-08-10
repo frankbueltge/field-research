@@ -1,0 +1,24 @@
+{"k": "header", "manifest": "/tmp/claude-0/-home-user-field-research/6a5c8fef-5c8e-5a95-b12d-ac32d4bc4ba7/scratchpad/masterfilelist.txt", "suffixes": [".gkg.csv.zip", ".export.CSV.zip", ".mentions.CSV.zip"], "listed_cycles": 394946, "unlisted_cycles": 7286, "grid_first": "20150218230000", "grid_last": "20260809204500", "started": "2026-08-10T00:09:31Z"}
+{"c": "20160423103000", "suffix": ".gkg.csv.zip", "s": 200, "cl": 2737533, "k": "served-but-not-listed"}
+{"c": "20160620051500", "suffix": ".gkg.csv.zip", "s": 200, "cl": 6178411, "k": "served-but-not-listed"}
+{"c": "20160711200000", "suffix": ".gkg.csv.zip", "s": 200, "cl": 6570055, "k": "served-but-not-listed"}
+{"c": "20161106191500", "suffix": ".gkg.csv.zip", "s": 200, "cl": 7978566, "k": "served-but-not-listed"}
+{"c": "20170422124500", "suffix": ".gkg.csv.zip", "s": 200, "cl": 168440, "k": "served-but-not-listed"}
+{"c": "20170513231500", "suffix": ".gkg.csv.zip", "s": 200, "cl": 1722691, "k": "served-but-not-listed"}
+{"c": "20170524221500", "suffix": ".gkg.csv.zip", "s": 200, "cl": 13808938, "k": "served-but-not-listed"}
+{"c": "20170713101500", "suffix": ".gkg.csv.zip", "s": 200, "cl": 11397613, "k": "served-but-not-listed"}
+{"c": "20170713101500", "suffix": ".mentions.CSV.zip", "s": 200, "cl": 313955, "k": "served-but-not-listed"}
+{"c": "20170713101500", "suffix": ".export.CSV.zip", "s": 200, "cl": 196440, "k": "served-but-not-listed"}
+{"c": "20170720234500", "suffix": ".gkg.csv.zip", "s": 200, "cl": 11073639, "k": "served-but-not-listed"}
+{"c": "20170924203000", "suffix": ".gkg.csv.zip", "s": 200, "cl": 3187767, "k": "served-but-not-listed"}
+{"c": "20180503174500", "suffix": ".export.CSV.zip", "s": 200, "cl": 183501, "k": "served-but-not-listed"}
+{"c": "20180503174500", "suffix": ".mentions.CSV.zip", "s": 200, "cl": 399730, "k": "served-but-not-listed"}
+{"c": "20180703151500", "suffix": ".export.CSV.zip", "s": 200, "cl": 161887, "k": "served-but-not-listed"}
+{"c": "20180703151500", "suffix": ".mentions.CSV.zip", "s": 200, "cl": 286402, "k": "served-but-not-listed"}
+{"c": "20200814203000", "suffix": ".export.CSV.zip", "s": 200, "cl": 92130, "k": "served-but-not-listed"}
+{"c": "20200814203000", "suffix": ".mentions.CSV.zip", "s": 200, "cl": 217357, "k": "served-but-not-listed"}
+{"c": "20200814203000", "suffix": ".gkg.csv.zip", "s": 200, "cl": 8980512, "k": "served-but-not-listed"}
+{"c": "20220207190000", "suffix": ".export.CSV.zip", "s": 200, "cl": 104496, "k": "served-but-not-listed"}
+{"c": "20220207190000", "suffix": ".gkg.csv.zip", "s": 200, "cl": 7338445, "k": "served-but-not-listed"}
+{"c": "20220207190000", "suffix": ".mentions.CSV.zip", "s": 200, "cl": 174604, "k": "served-but-not-listed"}
+{"k": "footer", "done": 21858, "absent": 21836, "SERVED_BUT_UNLISTED": 22, "unresolved": 0, "other": 0, "throttled": 0, "total": 21858, "elapsed_s": 102.8, "unlisted_cycles": 7286, "finished": "2026-08-10T00:11:14Z"}

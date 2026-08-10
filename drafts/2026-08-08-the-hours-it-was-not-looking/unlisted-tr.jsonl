@@ -1,0 +1,5 @@
+{"k": "header", "manifest": "/tmp/claude-0/-home-user-field-research/6a5c8fef-5c8e-5a95-b12d-ac32d4bc4ba7/scratchpad/masterfilelist-translation.txt", "suffixes": [".translation.gkg.csv.zip", ".translation.export.CSV.zip", ".translation.mentions.CSV.zip"], "listed_cycles": 389686, "unlisted_cycles": 12546, "grid_first": "20150218224500", "grid_last": "20260809203000", "started": "2026-08-10T00:11:20Z"}
+{"c": "20220207184500", "suffix": ".translation.gkg.csv.zip", "s": 200, "cl": 8977301, "k": "served-but-not-listed"}
+{"c": "20220207184500", "suffix": ".translation.export.CSV.zip", "s": 200, "cl": 55568, "k": "served-but-not-listed"}
+{"c": "20220207184500", "suffix": ".translation.mentions.CSV.zip", "s": 200, "cl": 104537, "k": "served-but-not-listed"}
+{"k": "footer", "done": 37638, "absent": 37635, "SERVED_BUT_UNLISTED": 3, "unresolved": 0, "other": 0, "throttled": 0, "total": 37638, "elapsed_s": 175.0, "unlisted_cycles": 12546, "finished": "2026-08-10T00:14:16Z"}

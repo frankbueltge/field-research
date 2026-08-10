@@ -151,3 +151,54 @@ is no delivery, and calling them receivers was padding. **The receiver list is o
 **Named without mitigation:** this is the second consecutive session in which a receiver we named
 turned out unable to use what we offered. Session 103's lesson was *verify the receiver is alive*.
 The lesson it should have been, and now is: **verify the receiver's code can consume the artifact.**
+
+---
+
+## C7 — 2026-08-09/10 (session 105, after the adversary). "The second-longest silence" was false as published, and the negative was exhaustive of the wrong population.
+
+**What we wrote**, this session (`REQUESTS.md`, session 105 notice; `DAILY-LINE.md`, 2026-08-09): *"The
+second-longest — seven hours on 2015-05-29."* And in `PREREGISTRATION-3.md` we set out to discharge
+C-VII, *"no other such window exists."*
+
+**What is now measured.** The sweep that produced those words covered every cycle the index **lists**.
+It did not cover the cycles the index does **not** list — 7,286 English and 12,546 Translingual
+quarter-hours, of which exactly one window (1,665 cycles) had ever been asked of the host in three
+sessions: 163 of 164 English windows and **355 of 355** Translingual windows were unprobed, in a file
+this practice wrote itself at increment 1 and did not reopen. The adversary found the largest of them
+by hand in ten requests: **2015-10-21T04:15Z → 2015-10-22T21:45Z, 167 cycles, 41.75 hours** — longer
+than the 2022 window this arc is built on. We then ran the missing sweep ourselves
+(`sweep_unlisted.py`): **59,496 requests, 0 unresolved, 21,836 + 37,635 absent**.
+
+**What is withdrawn.** "The second-longest silence — seven hours on 2015-05-29" is **false as
+published** and is withdrawn. It is the second-longest run of *listed-but-unserved* cycles, and even
+increment 1's own headline — a 416-hour silence in June–July 2025 — was longer. Any claim of the form
+*no other window exists* is withdrawn unless it names the population it ranges over.
+
+**What is added, because the missing sweep found it.** **25 files exist on the host that the
+published index never lists at all** — three full triples (2017-07-13T10:15Z, 2020-08-14T20:30Z,
+2022-02-07T19:00Z English; 2022-02-07T18:45Z Translingual) and thirteen partial. Opened by hand:
+`20170713101500.gkg.csv.zip` serves 11,397,613 bytes, unzips to 36,170,338 bytes, holds 2,936 records.
+The index's error runs in **both** directions, and until tonight this arc had measured only one.
+
+---
+
+## C8 — 2026-08-09/10 (session 105, after the adversary). The receiver claim was too strong for the second session running.
+
+**What we wrote**, hours earlier this session (`CONCEPT.md`, `RESULT-3.md`): *"`all_task()` returns
+`get_page_parse(url_all_file)`, which walks the **entire** master file list… This is a bulk-history
+consumer, not a leading-edge one."*
+
+**What is now read**, from our own clone of the repository at `main`/`cfd1139`: `all_task` appears
+**once**, at its own definition. No flow, test or document calls it. `flows/gdelt.yaml` loads
+`web.gdelt.GdeltTaskEmit`; there is no `web` package in the distribution. `flows/gdelt_v2.yaml`, the
+flow that would run, loads `day_zip(offset=2)` — a single **legacy daily** URL under `events/`, not
+the 15-minute `gdeltv2/` namespace — and gates parsing behind a different download helper.
+
+**What is withdrawn.** "It iterates the whole master file list; this is a bulk-history consumer" is
+**withdrawn**. What survives: the defect in `parse_csv` (`if len(content) < 100: return`) and in
+`req` (bare `except:`, `content()` → `b''`) is real, quoted correctly and confirmed by the adversary
+independently; a wired path exercising it is one line of YAML away rather than impossible.
+
+**Named without mitigation:** at session 103 a receiver we named was dead; at session 104 one could
+not request a 2022 file; at session 105 the function our argument rested on is not called. **Three
+consecutive sessions, three receiver claims too strong, each caught by the adversary and not by us.**
