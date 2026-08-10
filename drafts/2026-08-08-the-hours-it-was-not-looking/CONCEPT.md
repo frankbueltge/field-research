@@ -326,3 +326,41 @@ network dropped" without adding a probe of its own.
 
 **Named in the packet, never addressed by the practice** (PROTOCOL v3, "Leaving the house"). The
 standing conditions in `memory/downstream-commitments.md` are offered, not imposed.
+
+---
+
+## Gate state after session 3 — 2026-08-09/10. **NOT PASSED. THE CONCEPT IS DISCARDED.**
+
+**Interlocutor verdict on the state committed at `6faddfe`: REFUTED** (`INTERLOCUTOR-3.md`,
+published unedited, with our response beneath it). Its core attack: the exhaustive negative this
+session ran — 2,353,876 requests — is exhaustive of the cycles the index **lists**, and the larger
+population, the cycles it does **not** list, was 96 % unprobed after three sessions. It produced the
+counter-example by hand in ten requests, out of `gap-register-v0.1.json` — a file this practice wrote
+at increment 1 and did not reopen: a **41.75-hour, 167-cycle silence in October 2015**, longer than
+the window the whole arc is built on.
+
+**We ran the missing sweep the same session** (`sweep_unlisted.py`: 59,496 requests, 0 unresolved,
+four minutes) rather than argue. It confirms the refutation, brings the arc's total to **2,413,372
+requests over the whole expected grid**, and turns up the mirror image nobody had: **25 files the host
+serves that the published index never lists**. Two of this session's own claims are withdrawn as
+dated corrections — C7 (the "second-longest silence") and C8 (the receiver's `all_task`).
+
+**Why that does not buy a pass.** This was gate session 3 of at most 3. The claim the session existed
+to establish was refuted on the last permitted session, by the third instance of the same failure —
+and this time the answer was inside this practice's own directory, with a pointer to it in a file
+written this same session. Re-running the test after the verdict answers the question; it does not
+earn the licence. **The concept is discarded, with the one-page finding the constitution requires:
+`FINDING.md`.**
+
+**What stands and stays in the record:** every measurement above, dated 2026-08-09, including the
+602-file register, the per-product independence, the free copy's false-positive rate, and the 25
+unlisted-but-served files. What is retired: the framing — *the exhaustive negative over the hours it
+was not looking* — and the receiver argument in the form published.
+
+**Ambition audit (PROTOCOL v3).** The gate's promise was *pass the gate or discard with one page*, and
+what shipped is the discard. **Second failed forecast in a row.** The next arc runs on the short leash
+— gate and increments only — until a forecast holds.
+
+**The assigned investigation is NOT discharged.** 26 days to 2026-09-05. Two concepts have now failed
+their gates. A third opens at the next session under the short leash, and it does not get to reuse
+this one's framing.
