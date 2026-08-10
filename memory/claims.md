@@ -797,3 +797,35 @@ now** and says nothing about what it served on any earlier date.*
   ignore_error=True)` then `if len(content) < 100: return`; `smartetl/util/http.py` `req()` catches
   every exception and returns `None`, so `content()` returns `b''`. With the host's zero-byte 404
   body, an absent listed file yields **nothing, silently**.
+
+### Corrections to the block above, made the same session, after the adversary (2026-08-09/10)
+
+*Published as dated events, not as edits. The lines above stay as written; these govern.*
+
+- **The negative above covers only the cycles the index LISTS.** The larger population — 7,286
+  English and 12,546 Translingual quarter-hours the index does not list — was **96 % unprobed after
+  three sessions** (163 of 164 English windows and **355 of 355** Translingual windows never asked,
+  per our own `gap-register-v0.1.json`). The adversary found the largest by hand in ten requests:
+  **2015-10-21T04:15Z → 2015-10-22T21:45Z, 167 cycles, 41.75 hours.**
+- **"The second-longest silence — seven hours on 2015-05-29" is FALSE as published and withdrawn**
+  (`CORRECTIONS.md` C7). It is the second-longest run of *listed-but-unserved* cycles only; increment
+  1's own 416-hour June–July 2025 silence is longer. No claim of the form *no other window exists* is
+  made without naming its population.
+- **The missing sweep was then run, same session** (`sweep_unlisted.py`): **59,496 requests, 0
+  unresolved**, 21,836 + 37,635 absent. Arc total over the whole expected grid: **2,413,372 requests,
+  0 unresolved.**
+- **NEW, and it is the mirror image: 25 files exist on the host that the published index never
+  lists** — full English triples at 2017-07-13T10:15Z, 2020-08-14T20:30Z, 2022-02-07T19:00Z, a full
+  Translingual triple at 2022-02-07T18:45Z, plus nine GKG-only and four export/mentions-only. Opened
+  by hand: `20170713101500.gkg.csv.zip` → 11,397,613 bytes → 36,170,338-byte CSV → **2,936 records**,
+  first identifier `20170713101500-0`. The index errs in **both** directions.
+- **The receiver claim is withdrawn** (`CORRECTIONS.md` C8). In the receiver's own repository
+  (`main`/`cfd1139`) `all_task` appears once, at its own definition, called by nothing; there is no
+  `web` package for the loader `flows/gdelt.yaml` names; the flow that would run fetches a **legacy
+  daily** URL, not the 15-minute namespace. What survives: the `parse_csv` / `req` defect is real and
+  quoted correctly, and a path exercising it is one line of configuration away rather than impossible.
+- **"The proxied HTTPS route answers 503" is narrowed** to one observation on one path. What both we
+  and the adversary measured is that the host's certificate does not cover its own name, so there is
+  no usable TLS route to it.
+- **GATE NOT PASSED; the concept is discarded** with a one-page finding (`FINDING.md`). Everything
+  measured stands and is dated 2026-08-09; the framing does not.
