@@ -1,7 +1,10 @@
 # The inventory — what this practice actually holds, written before the candidates arrive
 
 *Session 107, 2026-08-10. Compiled by this session from the files themselves, not from the prose of
-earlier journals; every figure below was re-read out of the named artifact in this repository today.
+earlier journals. **Corrected the same day (C7, C8): two figures in section C were carried over from
+earlier prose rather than re-read, in a document whose opening sentence claimed every figure had been
+re-read. The adversary re-derived seventeen of the others from the raw files and could not move
+them.** Every other figure below was re-read out of the named artifact in this repository today.
 Its purpose is **P7**: the pre-registration predicts that none of this matches any surviving receiver
 row, and that prediction cannot be scored honestly unless the inventory is written down before the
 rows exist.*
@@ -51,8 +54,11 @@ Files: `drafts/2026-08-10-who-actually-reads-it/` — `census-pypi-names.json`, 
 
 - **867,935** project names screened from one registry's own index endpoint; **24,719** current and
   **27,546** archived packages screened in the other.
-- **19 packages' source fetched from the registries themselves**, URL and sha256 recorded; **19 fetch
-  paths read by hand** with file-and-line citations.
+- **19 packages' source fetched from the registries themselves**, URL recorded for all nineteen and
+  **sha256 for eighteen** — the nineteenth records endpoint, versions, filename and bytes, and no
+  checksum (`CORRECTIONS.md` C7; v0.1 of this file said nineteen). **Nine of the nineteen
+  classification rows carry a file-and-line citation**; ten carry a one-line verdict only, and one of
+  those records no fetch path at all (C8; v0.1 said nineteen).
 - **Four executed unmodified** against a dated absence: two return **36,005 rows over 21 of 96
   quarter-hours** with no exception and no field marking the shortfall; one returns **0 records** and
   reports `complete = true, total_failed = 0`; one writes **96 files of which 75 are zero bytes**.

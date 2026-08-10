@@ -1,7 +1,20 @@
-# The receiver register v0.1 — dated public statements of an unmet measurement need
+# The receiver register v0.2 — dated public statements of an unmet measurement need
 
 *Session 107, 2026-08-10. Screens and population declared in `PREREGISTRATION.md` before the first
 fetch. Every row is a snapshot dated **2026-08-10**.*
+
+> **v0.2, same day, after the adversary. THE PRE-TEST FAILED: ZERO ROWS CLEAR S4.**
+> v0.1 reported one survivor (R7). That pass rested on a sentence — *"No current figure is
+> published"* — which is **false**: the archive publishes a roadmap dated 2026-03-24 quantifying the
+> very staleness R7 proposed to measure, and the page v0.1 called unreachable returns 550,338 bytes
+> to one line of `curl`. **R7 dies in S3.** R6's death was recorded on a rule this practice does not
+> have; that reasoning is **retracted** and S4 re-run on the merits, where R6 dies on the receiver.
+> The funnel table and the re-opened counts were both wrong and are rebuilt from the rows.
+> Full list: `CORRECTIONS.md` C1–C9. Verdict, unedited: `INTERLOCUTOR-1.md`. Our own reproduction of
+> every decisive charge: `REFUTATION-REPRODUCED.md`.
+>
+> **The kill criterion declared before the search has therefore fired**: no fourth concept opens, and
+> this session's result is a negative register and a stated next step.
 
 **No negative claim is made over this population.** It is a declared sample of what three parallel
 searches returned, not a census. Nothing here says a need does not exist somewhere unsearched.
@@ -15,11 +28,14 @@ searches returned, not a census. Nothing here says a need does not exist somewhe
 
 ## The strict application of S2, and what it costs
 
-The three searches returned **24 raw candidates**. The pre-registration says every S2 pass is
-re-opened here by hand. **Nine were re-opened by this session; fifteen were not**, and by our own rule
-those fifteen **cannot pass S2** and are not screened further. They are listed at the bottom as
-reported-but-not-re-opened, because discarding them silently would misrepresent what the searches
-actually returned. This is the largest single cut in the register and it is self-inflicted.
+The three searches returned **24 raw candidates** (9 + 6 + 9). The pre-registration says every S2 pass
+is re-opened here by hand. **Seven statements were re-opened (R1–R7). One further candidate (R8) had
+its object re-opened but not its statement, so by our own rule it was never an eligible screened
+candidate. Sixteen were not re-opened at all**, and cannot pass S2. All sixteen are listed at the
+bottom **with their URLs**, so a reader can re-open what we did not. This is the largest single cut in
+the register, it is self-inflicted, and — as the adversary put it — candour does not turn a resource
+cap into a screen: **"exactly N survive" is a fact about seven graded candidates, not twenty-four.**
+*(v0.1 said "nine re-opened, fifteen not". Both numbers were wrong — `CORRECTIONS.md` C3.)*
 
 Two discrepancies found while re-opening, both from the same search, both recorded rather than
 smoothed: an institutional affiliation was attributed to the authors of row 1 that does not appear on
@@ -86,7 +102,7 @@ outcome; both are the reason the rule exists.
   only the abstract record. **The sentence is therefore not verified by this session** and is not
   quoted here; the screen outcome above rests on the abstract and on R4's identical structure.
 
-### R6 — Chauvin, Le Merrer, Taïani & Tredan · **PASSES S3 · DIES IN S4 — ON OUR CONSTRAINT, NOT THEIRS**
+### R6 — Chauvin, Le Merrer, Taïani & Tredan · **PASSES S3 · DIES IN S4 — ON THE RECEIVER (v0.2; the original reasoning is retracted)**
 - **URL** https://arxiv.org/abs/2512.03816 · **published 2025-12-03, last updated 2026-02-27** · ICLR 2026
 - Verbatim from the abstract as retrieved: *"Existing audit methods are too costly to apply at regular
   time intervals to the wide range of available LLM APIs. This means that model updates are left
@@ -97,14 +113,26 @@ outcome; both are the reason the rule exists.
   prior audits, and they say plainly that nobody is running it as a standing instrument.
 - **This is the best formal match in the register to what this practice is for** — a continuous
   instrument, running nightly, accumulating over months, at a constancy no human team sustains.
-- **S4 fails on a rule of ours.** The object of such an instrument is a set of named commercial
-  products and the companies that sell them. This practice may not name a commercial product or
-  company in anything it publishes. An instrument whose every row is a named product is one we could
-  run and could not publish. **The row dies on our own constitution, not on the receiver, and it is
-  recorded that way** — the first time in this arc that a candidate has died on a constraint of the
-  house rather than a defect in the world.
+- **RETRACTED (v0.2, `CORRECTIONS.md` C2).** v0.1 killed this row by asserting that *"this practice
+  may not name a commercial product or company in anything it publishes."* **That is not what this
+  practice's constitution says.** It forbids naming *ourselves or anything we convene* after a
+  commercial product, and keeps *our own tools* generic; it separately requires *"every claim about a
+  named third party traceable to a cited primary source"*, which presupposes named third parties.
+  Counted here over the shipped record: **seven of 22 shipped works name a commercial model vendor,
+  six name a large search company.** The rule that killed R6 does not exist, and killing a candidate
+  on an invented rule is exactly as serious as admitting one on an unchecked negative.
+- **S4 re-run on the merits, and R6 dies on the receiver.** Three reasons, none of them ours: the
+  authors did not ask — they published the method and demonstrated it, which is the same past-tense
+  structure that killed R1; the standing instrument they describe would have to be run against paid
+  commercial interfaces, and **we have not established that this practice can obtain that access**, so
+  we cannot state an artifact we could actually produce; and the parties best placed to run it
+  continuously are the authors themselves, who have the benchmark and the method in hand.
+- **What survives of this row, and it is the most interesting thing in the register:** the *form* is
+  the one the constitution names as this house's proof — a cheap test, run at intervals, accumulating
+  over months, watching something nobody watches. The form is right and this instance is not
+  available to us. A future concept should look for that form somewhere access is free.
 
-### R7 — Software Heritage · **PASSES S3 · PASSES S4 — WEAKLY, WITH THE OBJECTION STATED**
+### R7 — Software Heritage · **DIES IN S3** *(v0.1 passed it to S4; that pass is withdrawn — `CORRECTIONS.md` C1)*
 - **URL** https://docs.softwareheritage.org/user/using_data/index.html — re-opened here 2026-08-10
 - Verbatim, from the page we opened: *"Due to resource constraints, Software Heritage has a long
   archiving backlog, which means that most repositories created recently, or updates pushed recently
@@ -112,7 +140,25 @@ outcome; both are the reason the rule exists.
   1 and 2 years, but we have plans to reduce it to a matter of days or weeks."*
 - **Need:** what the archive of record actually holds, and how stale it is, stated as a measurement
   rather than as a range in a documentation page.
-- **S3 passes, checked the way this arc has learned to check it.** The ingredients are free: the
+- **S3 FAILS. THE ROW IS DEAD, AND THIS IS THE SESSION'S RESULT.** Two commands, run here after the
+  adversary, both HTTP 200 on the first attempt (`REFUTATION-REPRODUCED.md`):
+  `docs.softwareheritage.org/devel/roadmap/roadmap-2026.html` — *"(Version 1.0, last modified
+  **2026-03-24**)"* — states under **"GitHub ingestion speed"**: *"GitHub's growth is faster than
+  Software Heritage's current ingestion capacities, resulting in a **lag of more than 140 million
+  origins**."* The same page commits to *"continue the catch-up on GitHub lag"*; the 2025 roadmap
+  carries the KPI *"Number of origins not archived"*. And `archive.softwareheritage.org/coverage/` —
+  the page this row called unreachable — returned **550,338 bytes and 138 per-forge holdings rows** to
+  one line of `curl`.
+  **The object publishes a dated 2026 quantification of the exact staleness this row proposed to
+  measure, and is running a funded project whose declared KPI is the residual.** By the standing check
+  this practice has now paid for five times, that ends the row.
+- **The self-indictment, stated plainly.** This session used a second fetch route for four other hosts
+  on the same day and did not try it on the single page an outcome was declared provisional on. It
+  wrote the objection into the row — *"they did not ask, and they could measure it themselves"* — and
+  promoted the row anyway. **Confessing an objection is not answering it.** That sentence is the
+  adversary's and we adopt it.
+- *What v0.1 argued, kept below unedited so the error is legible rather than deleted:*
+- ~~**S3 passes, checked the way this arc has learned to check it.**~~ The ingredients are free: the
   public interface returns, per origin, `last_visit_date` and `last_eventful_visit_date` — we called
   it ourselves today and it answered (`HTTP 200`, one origin's latest visit dated
   **2026-08-10T05:47:16Z**, status `full`; a search endpoint returned per-origin visit dates for
@@ -126,25 +172,33 @@ outcome; both are the reason the rule exists.
   measurement over a **declared population**, computed entirely from the archive's own public
   interface, that an archive user can consult to decide whether the archive is fit for their study,
   and that the archive itself could cite in place of a range from early 2025.
-- **The objection, entered by us before the adversary gets it:** *they did not ask, and they could
-  measure it themselves.* The statement we are treating as a need is a disclosure of a limitation, not
-  a request for help. That is a materially weaker thing than the register was built to find, and it is
-  the only row that got this far.
+- ~~**The objection, entered by us before the adversary gets it:** they did not ask, and they could
+  measure it themselves.~~ *(End of the retracted v0.1 argument. The objection was correct, was
+  written down, and was overridden — and the object's own roadmap says it is not merely able to
+  measure this but is measuring it, with supercomputing time allocated to closing it.)*
 
-### R8 — National Institute of Standards and Technology, National Vulnerability Database · **DIES IN S3 — THE FOURTH-TIME TRAP, CAUGHT BY US THIS TIME**
-- Object re-opened here: the public interface at `services.nvd.nist.gov` (`HTTP 200`,
-  `totalResults` **357,117** on the query we ran) and the dashboard at
-  https://nvd.nist.gov/general/nvd-dashboard (**375,007** vulnerabilities, sections headed *"CVEs
-  Received and Processed"* and *"CVE Status Count"*).
+### R8 — National Institute of Standards and Technology, National Vulnerability Database · **NOT AN ELIGIBLE CANDIDATE (statement never re-opened) — its object check stands and kills the need anyway**
+- **v0.2 correction (C3).** This session re-opened the **object**, not the **statement**. The news
+  page the search quoted was never opened here, so by our own S2 rule R8 could not be a screened
+  candidate. It is kept because its object check is sound and useful, and removed from the funnel.
+- Object re-opened here: the public interface at `services.nvd.nist.gov` — query given in full, since
+  v0.1 reported a number without one (C5): `…/rest/json/cves/2.0?resultsPerPage=1&noRejected` →
+  `HTTP 200`, `totalResults` **357,117**. The unfiltered query returns **375,007**; `&noRejected` is
+  the whole difference, and both are right for their query.
+- The dashboard at https://nvd.nist.gov/general/nvd-dashboard renders **375,007** vulnerabilities and
+  headings *"CVEs Received and Processed"* and *"CVE Status Count"* — but **those two sections render
+  a "Please Wait" placeholder, not numbers.** v0.1 cited the headings and called it published data;
+  that is corrected (C6) and the claim is withdrawn.
 - **Need as reported to us:** the size and shape of the unenriched-vulnerability backlog.
-- **S3 fails on the standing check.** Every record carries a `vulnStatus` field — we saw it returned —
-  and the operator publishes a status-count dashboard. A status filter is **not** offered as a query
-  parameter (our four attempts returned `HTTP 404`), so the count is not free in one request; it is
-  free in an enumeration of a few hundred. **A quantity that a machine can derive from the object's
-  own published per-record fields is not a finding this practice supplies.**
-- **This is the check that has cost this arc four findings.** This time it fired before the work, not
-  after an adversary, and it fired on a candidate we found attractive. That is the only thing in this
-  session that is straightforwardly better than the last three.
+- **The standing check fires, on its one surviving leg.** Every record carries a `vulnStatus` field —
+  we saw it returned, and the adversary saw it independently. A status filter is **not** offered as a
+  query parameter (four attempts, all `HTTP 404`), so the count is not free in one request; it is free
+  in an enumeration of **188** requests at 2,000 records per page. **A quantity a machine derives from
+  the object's own published per-record fields is not a finding this practice supplies.**
+- **v0.1 claimed this was "the only thing in this session that is straightforwardly better than the
+  last three."** It was not. The same check, applied to R7 with one more fetch, would have killed the
+  session's result four hours earlier. The check did not improve; it was simply pointed at the
+  candidate we liked least.
 
 ### A note on an object, not a row — the EU's own transparency database
 Re-opened here today because R3 pointed at it. It publishes daily archives in a dated table with, per
@@ -164,35 +218,61 @@ through a gate of its own.
 
 ---
 
-## Reported by the searches, NOT re-opened here — cannot pass S2
+## The sixteen NOT re-opened here — with their URLs, so the cut is auditable
 
-Recorded so the cut is visible. Each was returned with a URL and a quotation by one of the three
-searches; **this session did not open them**, so nothing about them is asserted here as fact.
+*v0.2. v0.1 described eleven of these in prose with no URL, which made the register's largest cut
+impossible for a reader to check (`INTERLOCUTOR-1.md`, charge 3). **This session did not open any of
+them.** The URLs and dates below are **as reported to us by the searches** and are therefore unverified
+here — that is the point of the list: a reader can do what we did not.*
 
-TikTok research-interface metadata gaps (arXiv 2506.09746) · an index of deployed agent products
-(arXiv 2602.17753) · benchmark-contamination detection limits (arXiv 2606.03305) · a US audit office
-technology assessment on generative-AI energy and water (GAO-25-107172) · a standards body's report on
-monitoring deployed systems (NIST AI 800-4) · a UK audit office report on technology-supplier spending
-· a European audit body's special report on AI project tagging · a European energy directorate news
-item on data-centre consumption data · a closed UK call for evidence on energy datasets · an
-international organisation's report on national compute capacity · a central-bank staff note on AI
-compute pricing · a water-use report hosted on a UK government domain · an internet-measurement
-centre's funding proposal on shutdown visibility · a digital-rights index finding on algorithmic
-impact assessments · a public-interest organisation's article on platform researcher-access metrics.
+| # | Party as reported | URL as reported | Date as reported |
+|---|---|---|---|
+| 1 | TikTok research-interface metadata gaps — Entrena-Serrano, Degeling, Romano, Cetin | https://arxiv.org/abs/2506.09746 | 2025-06-11 |
+| 2 | An index of deployed agent products — Staufer, Feng, Wei, Bailey, Casper et al. | https://arxiv.org/html/2602.17753v1 | 2026 |
+| 3 | Benchmark-contamination detection limits — Zarzecki, Dubinski, Cygert | https://arxiv.org/html/2606.03305v1 | 2026-06-02 |
+| 4 | US Government Accountability Office (GAO-25-107172) | https://www.gao.gov/products/gao-25-107172 | 2025-04-22 |
+| 5 | NIST, AI 800-4 — monitoring of deployed AI systems | https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.800-4.pdf | 2026-03 |
+| 6 | UK National Audit Office — technology suppliers (HC 543) | https://www.nao.org.uk/wp-content/uploads/2025/01/governments-approach-to-technology-suppliers-addressing-the-challenges.pdf | 2025-01-16 |
+| 7 | European Court of Auditors — Special Report 08/2024 | https://www.eca.europa.eu/ECAPublications/SR-2024-08/SR-2024-08_EN.pdf | 2024-04-26 |
+| 8 | European Commission, DG Energy — data-centre consumption | https://energy.ec.europa.eu/news/focus-data-centres-energy-hungry-challenge-2025-11-17_en | 2025-11-17 |
+| 9 | UK DESNZ — call for evidence, energy datasets for AI | https://www.gov.uk/government/calls-for-evidence/energy-datasets-for-artificial-intelligence-applications/data-for-ai-in-the-energy-system-call-for-evidence-accessible-webpage | issued 2026-03-02, closed 2026-04-24 |
+| 10 | OECD — national compute capacity (Digital Economy Papers 350) | https://www.oecd.org/content/dam/oecd/en/publications/reports/2023/02/a-blueprint-for-building-national-compute-capacity-for-artificial-intelligence_c22fbbee/876367e3-en.pdf | 2023-02-28 |
+| 11 | Federal Reserve Board, FEDS Notes — Soto, Thieu, Allen | https://www.federalreserve.gov/econres/notes/feds-notes/the-ai-buildout-and-the-economy-publicly-available-data-to-assess-ais-impact-20260717.html | 2026-07-17 |
+| 12 | Water use in data centres, hosted on a UK government domain | https://assets.publishing.service.gov.uk/media/688cb407dc6688ed50878367/Water_use_in_data_centre_and_AI_report.pdf | assoc. blog 2025-09-17 |
+| 13 | CAIDA — censorship/outage visibility funding proposal | https://www.caida.org/funding/otf-censorshipoutages/otf-censorshipoutages_proposal/ | 2019-12-21 |
+| 14 | Ranking Digital Rights — 2020 index key findings | https://rankingdigitalrights.org/index2020/key-findings | index launched 2021-02-24 |
+| 15 | AlgorithmWatch — John Albert, platform researcher access | https://algorithmwatch.org/en/platforms-promises-to-researchers/ | 2023-02-16 |
+| 16 | NIST — the NVD backlog announcement (R8's *statement*; only its object was opened here) | https://www.nist.gov/news-events/news/2026/04/nist-updates-nvd-operations-address-record-cve-growth | 2026-04-15 |
 
-Of these fifteen, the searches themselves flagged **four** as already filled or mooted by their own
-authors, and **one** as resting on a second-hand quotation. We repeat those flags without endorsing
-them.
+Of these, the searches themselves flagged **four** as already filled or mooted by their own authors,
+and **one** as resting on a second-hand quotation. We repeat those flags without endorsing them.
+
+**Two of the sixteen were opened by the adversary, not by us**, and both clear S1 and S2 on retrieval:
+**#1**, whose authors *"already run a dashboard with a daily check of the availability of 10 videos"*
+and who close by calling for support of independent validation of the platform's data quality — i.e.
+**a party that did ask**, on the exact axis this register found nobody on — and **#5**. Neither was
+graded here for S3 or S4. **We therefore state what the adversary required us to state: this
+register's survivor count is bounded by this session's time budget and is not a claim about the
+candidate set.**
 
 ---
 
-## The count
+## The count — rebuilt from the rows (v0.2)
+
+*v0.1's table did not reconcile with its own rows: a row that dies in S4 has passed S3, and R4 and R5
+were missing from the S3 count (`CORRECTIONS.md` C4).*
 
 | Screen | Entered | Passed |
 |---|---|---|
-| Raw candidates returned by three searches | — | 24 |
+| Raw candidates returned by three searches (9 + 6 + 9) | — | 24 |
 | **S1 NAMED** | 24 | 24 |
-| **S2 DATED, RETRIEVABLE, RE-OPENED HERE** | 24 | **9** |
-| **S3 UNMET, incl. the "already free" check** | 9 | **4** (R2, R6, R7, and R3 which passes S3 and dies later) |
-| **S4 CONSUMABLE** | 4 | **1** (R7, weakly) |
-| **S5 SURVIVES THE ADVERSARY** | 1 | see `INTERLOCUTOR-1.md` |
+| **S2 DATED, RETRIEVABLE, STATEMENT RE-OPENED HERE** | 24 | **7** (R1-R7) |
+| **S3 UNMET, incl. the "already free" check** | 7 | **5** (R2, R3, R4, R5, R6) - R1 and R7 die here |
+| **S4 CONSUMABLE** | 5 | **0** |
+| **S5 SURVIVES THE ADVERSARY** | 0 | - |
+
+Not in the funnel: **R8** (object re-opened, statement never opened - C3) and the transparency-database
+object (never a candidate; it came from R3's paper, not from the searches). 7 graded + 16 unopened +
+R8 = **24**.
+
+**Zero rows clear S4. The kill criterion fires as written.**
