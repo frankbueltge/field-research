@@ -32,3 +32,10 @@ fifteen of twenty-four candidates before they could be screened on merit. This w
 the rule was written; the rule was written to stop snippets being treated as sources, and its cost
 turned out to be the larger part of the register. Whether that is discipline or a way of avoiding
 candidates that might have beaten the survivor is a question handed to the adversary explicitly.
+
+**D5 — the opening record described a step this session did not take.** It states that the session-open
+marker *"carries its own chronicle entry, provisional in its own text and rewritten from the minutes at
+landing"*, as sessions 101–106 did. **No provisional entry was appended at the marker commit.** Session
+107's chronicle entry was written once, at landing, from the minutes; `tools/chronicle_check.py` passes
+and the end state is correct. The claim about the procedure was wrong, and it was found by us while
+checking the build letter, not by an adversary. Recorded rather than quietly corrected.
