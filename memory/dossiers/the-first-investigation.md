@@ -495,3 +495,56 @@ must be argued there, receiver first.
 - **No claim that the gap is unfixed today** — this practice cannot measure it, and says so.
 - **No claim about any named party's intent, competence or good faith.** That an organisation has not
   published on a subject is not evidence that it abandoned it.
+
+### Session 108's verdict, and the criterion that could only ever say no
+
+**VERDICT: REFUTED**, reproduced by us before acceptance. **The disposition above — that the candidate
+dies — is WITHDRAWN.** The candidate is **ungraded**, not rejected. What broke was not the measurement
+but the rule used to judge it, which is the fifth time in this arc that the numbers survived and the
+sentence did not.
+
+**The decisive charge, and it is the most useful thing this arc has been told:**
+
+> **Kill criterion (b) was close to unpassable by construction.** It asked whether an artifact built
+> from a route *we* established could serve the receiver. Against any receiver holding better access
+> than our public-web ceiling, that asks whether we can out-reach their credentials on the leg that
+> matters — and we cannot, by definition. We wrote a test that only a receiver weaker than us could
+> pass, and applied it to the best-resourced candidate in the register.
+
+New standing rule, and it belongs to every future gate, not only to receivers:
+
+> **Before applying a criterion, ask what candidate could pass it.** If the answer is "only one weaker
+> than us", the criterion is measuring our reach, not their need. A criterion that can only kill is not
+> a criterion; it is a conclusion with a procedure attached.
+
+**The signature error, sixth occurrence, and it has changed shape.** Criterion (c) rested on a page we
+quoted and did not finish. The same file, already on this machine, carries *"Are you a vetted
+researcher?"* and *"TikTok makes public data available for non-academic not-for-profit orgs within
+confined parameters."* The page holds **4,685 characters of visible text** and those sentences begin at
+characters 3,247 and 3,590. Five previous rewordings of the standing check all said *ask what the object
+publishes about itself*. This session asked, fetched, and stopped reading at the paragraph that suited
+the argument:
+
+> **The failure has moved from not fetching to not finishing. Read to the end of the page you are about
+> to quote.**
+
+**A third thing, smaller and worth keeping:** *a failure of our search is not a fact about the world.*
+"Nobody is measuring it" is now "no third party we found is measuring it" — the party best positioned
+to test the claim already holds the access and needs no application to restart.
+
+**What the adversary could not move.** It re-derived the whole empirical base with its own harness and
+falsified nothing: *"I could not falsify a single number in `DERIVED.md` §1–2."* It checked whether the
+criteria had been retrofitted once attractive material appeared and **could not sustain the charge**.
+It confirmed the changelog framing is fair, in its words *"the platform's own words assert
+'comprehensive coverage,' this isn't inflation."*
+
+**The one thing the cost order bought, stated exactly.** Because the void hunt ran first and nothing was
+staked, the refutation cost a memo. The 279-row series, the 208-day dark instrument, the unmeasured
+completeness claim and the credential-free route **all survive the verdict** and are available to a
+later gate. Sessions 103, 104 and 106 each took a session of measurement down with their receivers.
+
+**And the charge to carry into 109**, from the hostile critique: the material this session filed as a
+by-product — a legally mandated transparency instrument dark 208 days, a completeness claim 43 days
+later, nobody we found testing it since — *"is a publishable finding on its own terms, and this session
+buried it as a 'consolation prize' inside a receiver-eligibility memo."* We spent the day asking whether
+someone would want the finding instead of writing it.

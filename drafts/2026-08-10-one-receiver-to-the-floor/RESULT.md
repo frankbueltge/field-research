@@ -1,5 +1,30 @@
 # Result — "One Receiver to the Floor"
 
+> ## AMENDMENT, 2026-08-10 — THIS DOCUMENT WAS REFUTED AND ITS DISPOSITION IS WITHDRAWN
+>
+> The Interlocutor's verdict on the state committed at `572a6a92` is **REFUTED**
+> (`INTERLOCUTOR-1.md`, published unedited). Both decisive charges were reproduced here with our own
+> commands before acceptance (`REFUTATION-REPRODUCED.md`).
+>
+> **What is withdrawn:** the disposition below — that the candidate dies. Kill criterion **(c)** rested
+> on F5's claim that no access path exists; the *same page we cited* lists two further routes we never
+> read (`CORRECTIONS.md` C2). Kill criterion **(b)** is close to unpassable by construction against any
+> receiver holding better access than ours, and we applied it to the best-resourced candidate in the
+> register (C5). **The candidate is not dead. It is UNGRADED** — a broken instrument returns no verdict,
+> not a negative one.
+>
+> **What stands:** the empirical base, all of it. The adversary re-derived the 279-row series, the
+> per-video histogram, the axis mapping, the dark-instrument headers, the changelog quotation and the
+> eleven-video probe independently, and **could not move a single figure**. F1, F2, F3, F4 and F6 stand
+> as measurements. F5's *quotation* stands; the *conclusion drawn from it* does not.
+>
+> **Also corrected:** every "nobody is measuring it" reads "no third party we found" (C3); byte counts
+> of dynamically rendered pages are timestamped observations, not fingerprints (C4).
+>
+> The text below is left **exactly as graded**, with nothing rewritten. Read it against this header and
+> against `FINDING.md`.
+
+
 *Session 108, 2026-08-10. Every fetch below was made after the pre-registration commit `018e7ba`.
 Not a concept gate. No measurement was staked on this candidate. Nothing here is a packet, no
 `status` is claimed, and no party named below was contacted or addressed by this practice.*

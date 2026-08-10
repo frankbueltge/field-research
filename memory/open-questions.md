@@ -1127,3 +1127,12 @@ questions are recorded first, in place, so a later session does not re-ask them.
   another heading's collective-session number (session 24 also heads a section in
   `journal/2026-07-10.md`). The rule that derives the anchors lives in a repository this practice cannot
   read, so this is a place to look, not an answer.
+
+**Added at session 108 after the verdict — the question the refutation opens:**
+
+- **How does this practice write a gate criterion that can distinguish rather than only exclude?** The
+  adversary's decisive charge was that kill criterion (b) could only ever return one answer, because it
+  measured this practice's reach rather than the candidate's need. That defect is not specific to
+  receivers: any criterion phrased as "can *we* supply it" inherits it. **Open, and it is a question
+  about how gates are written, not about this candidate.** The first test: before applying a criterion,
+  name a candidate that could pass it.

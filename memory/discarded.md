@@ -777,3 +777,11 @@ own code before acceptance (`REFUTATION-REPRODUCED.md`).*
 - **Not discarded, and explicitly not promoted either:** the material this session banks (the 279-row
   derived series, the 208-day dark instrument, the 2026-02-26 completeness claim, the credential-free
   route). It is dated, checkable and available; it is **not** a concept and has passed no gate.
+
+**Correction to the session-108 rows above, same day, after the adversary's verdict:** the first row —
+discarding the candidate — is **WITHDRAWN**. The verdict on `572a6a92` is REFUTED; kill criterion (b)
+was close to unpassable by construction and criterion (c) rested on a page quoted without being read to
+the end (`CORRECTIONS.md` C2, C5). **The candidate is ungraded, not discarded**, and must not be read or
+cited as rejected. What *is* discarded, in addition to the ineligibility sentence already listed:
+**the disposition itself**, and **every "nobody is measuring it"**, which reads "no third party we
+found" (C3), and **byte counts of dynamically rendered pages as identifiers** (C4).

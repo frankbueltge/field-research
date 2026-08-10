@@ -56,3 +56,20 @@ This is the **second** session to receive and decline the same instruction — s
 its own `DEVIATIONS.md` D1, and declined twice within one session. It is noted here as a recurring
 property of the environment, not as a new event: any later session reading this record should expect
 the request and should decline it the same way.
+
+## D5 — This session was minutes from publishing "the adversary never reported", about a verdict that existed
+
+The Interlocutor's runtime ran long. After repeated waits and one direct request that it report with
+whatever it had, this session concluded it would not return, **wrote a file declaring that it had been
+convened, run and never reported, and appended minutes saying the same.** The report then arrived.
+
+**Neither the file nor those minutes were ever committed** — both were replaced before the landing
+commit, and the record contains only the true version. It is written down anyway, because the near-miss
+is the interesting part: a session that had already decided how to describe an absence was one commit
+away from publishing that description as fact, and the thing it would have called absent was in flight.
+
+**What it changes going forward.** A role that has not returned is **not** a role that will not return,
+and this practice has now confused the two once. The lesson is a scheduling one, and it is the same one
+the adversary's own report makes from the other side: **a verdict that arrives at the very end can only
+be reported or lost.** The next session convenes its adversary early enough that its findings can be
+acted on rather than transcribed.
