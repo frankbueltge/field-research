@@ -1,0 +1,225 @@
+{
+ "checked_utc_date": "2026-08-10",
+ "C_I": {
+  "absent_cycles": 75,
+  "declared_bytes_absent": 178909,
+  "served_cycles": 21,
+  "declared_bytes_served": 2340184,
+  "calibration_band": [
+   816,
+   4404
+  ],
+  "calibration_files": 25,
+  "median_declared_bytes_per_event": 42.0,
+  "bytes_per_event_range": [
+   29.9,
+   94.0
+  ],
+  "estimated_events_in_the_absent_files": 4260,
+  "calibration": [
+   {
+    "cycle": "20150302083000",
+    "declared": 4134,
+    "served": 4134,
+    "events": 101,
+    "bytes_per_event": 40.9
+   },
+   {
+    "cycle": "20160602111500",
+    "declared": 4322,
+    "served": 4322,
+    "events": 115,
+    "bytes_per_event": 37.6
+   },
+   {
+    "cycle": "20170323093000",
+    "declared": 2446,
+    "served": 2446,
+    "events": 58,
+    "bytes_per_event": 42.2
+   },
+   {
+    "cycle": "20170415131500",
+    "declared": 1034,
+    "served": 1034,
+    "events": 11,
+    "bytes_per_event": 94.0
+   },
+   {
+    "cycle": "20170505064500",
+    "declared": 3234,
+    "served": 3234,
+    "events": 106,
+    "bytes_per_event": 30.5
+   },
+   {
+    "cycle": "20170515133000",
+    "declared": 1678,
+    "served": 1678,
+    "events": 31,
+    "bytes_per_event": 54.1
+   },
+   {
+    "cycle": "20170530140000",
+    "declared": 2463,
+    "served": 2463,
+    "events": 47,
+    "bytes_per_event": 52.4
+   },
+   {
+    "cycle": "20170612184500",
+    "declared": 1406,
+    "served": 1406,
+    "events": 35,
+    "bytes_per_event": 40.2
+   },
+   {
+    "cycle": "20170627050000",
+    "declared": 1350,
+    "served": 1350,
+    "events": 33,
+    "bytes_per_event": 40.9
+   },
+   {
+    "cycle": "20170703061500",
+    "declared": 994,
+    "served": 994,
+    "events": 15,
+    "bytes_per_event": 66.3
+   },
+   {
+    "cycle": "20170707090000",
+    "declared": 3023,
+    "served": 3023,
+    "events": 58,
+    "bytes_per_event": 52.1
+   },
+   {
+    "cycle": "20170713141500",
+    "declared": 4175,
+    "served": 4175,
+    "events": 118,
+    "bytes_per_event": 35.4
+   },
+   {
+    "cycle": "20170720104500",
+    "declared": 3174,
+    "served": 3174,
+    "events": 84,
+    "bytes_per_event": 37.8
+   },
+   {
+    "cycle": "20170726190000",
+    "declared": 1713,
+    "served": 1713,
+    "events": 37,
+    "bytes_per_event": 46.3
+   },
+   {
+    "cycle": "20170803094500",
+    "declared": 920,
+    "served": 920,
+    "events": 13,
+    "bytes_per_event": 70.8
+   },
+   {
+    "cycle": "20170811103000",
+    "declared": 3465,
+    "served": 3465,
+    "events": 89,
+    "bytes_per_event": 38.9
+   },
+   {
+    "cycle": "20170820074500",
+    "declared": 2008,
+    "served": 2008,
+    "events": 48,
+    "bytes_per_event": 41.8
+   },
+   {
+    "cycle": "20170828194500",
+    "declared": 933,
+    "served": 933,
+    "events": 15,
+    "bytes_per_event": 62.2
+   },
+   {
+    "cycle": "20170904140000",
+    "declared": 2246,
+    "served": 2246,
+    "events": 75,
+    "bytes_per_event": 29.9
+   },
+   {
+    "cycle": "20170913114500",
+    "declared": 3810,
+    "served": 3810,
+    "events": 99,
+    "bytes_per_event": 38.5
+   },
+   {
+    "cycle": "20170921174500",
+    "declared": 3107,
+    "served": 3107,
+    "events": 74,
+    "bytes_per_event": 42.0
+   },
+   {
+    "cycle": "20170929180000",
+    "declared": 1001,
+    "served": 1001,
+    "events": 12,
+    "bytes_per_event": 83.4
+   },
+   {
+    "cycle": "20171006134500",
+    "declared": 1557,
+    "served": 1557,
+    "events": 34,
+    "bytes_per_event": 45.8
+   },
+   {
+    "cycle": "20171017081500",
+    "declared": 2592,
+    "served": 2592,
+    "events": 59,
+    "bytes_per_event": 43.9
+   },
+   {
+    "cycle": "20171031103000",
+    "declared": 4203,
+    "served": 4203,
+    "events": 121,
+    "bytes_per_event": 34.7
+   }
+  ]
+ },
+ "C_II": {
+  "flagged": 3185,
+  "of": 394972,
+  "longest_runs": [
+   {
+    "length": 83,
+    "from": "20221110220000",
+    "to": "20221111183000"
+   },
+   {
+    "length": 6,
+    "from": "20170903084500",
+    "to": "20170903100000"
+   },
+   {
+    "length": 5,
+    "from": "20160516203000",
+    "to": "20160516213000"
+   },
+   {
+    "length": 5,
+    "from": "20170504190000",
+    "to": "20170504201500"
+   }
+  ],
+  "screen_seconds": 8.94,
+  "note": "rolling median over +/-192 listed export cycles, ratio < 0.20 \u2014 this practice's own screen.py heuristic"
+ }
+}

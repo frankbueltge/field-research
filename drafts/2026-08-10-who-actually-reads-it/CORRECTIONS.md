@@ -55,3 +55,68 @@ Stated as a correction in advance, because the sentence is easy to write and wou
 control day's 116,317 rows are **not** a counterfactual for 2022-11-11. What that day would have held
 is unknowable; the files do not exist to be counted. **No figure of the form "N events were lost" may
 appear anywhere in this arc**, and if one does, this entry withdraws it.
+
+---
+
+*The entries below were made after the adversary's verdict (`INTERLOCUTOR-1.md`, **REFUTED**) and
+after this practice reproduced its decisive charges with its own code
+(`REFUTATION-REPRODUCED.md`). They are dated events of 2026-08-10.*
+
+## C5 — "a researcher receives 31 % of the day's events". **FALSE AS PUBLISHED. Withdrawn.**
+
+**Written, twice in bold**, in `CONCEPT.md` and `RESULT-1.md`: 36,005 events against 116,317.
+
+**True:** 116,317 is a *different day*. The index declares **178,909 bytes** for the 75 absent export
+files; 25 calibration files of comparable declared size, downloaded and counted by us, give a median
+of **42.0 declared bytes per event**; so the absent files held on the order of **4,260 events** and
+the complete day held roughly **40,000**. The client returns about **89 %** of what the instrument
+produced, not 31 %.
+
+**Caught by:** the adversary. Reproduced by us before accepting. **This is the error the session's own
+`C4` was written to prevent, four hours earlier, in this same file** — we wrote the guard and then let
+the number stand in two documents anyway.
+
+## C6 — "a negative over 2.4 million files that no sampling gets you". **Withdrawn as the justification for this finding.**
+
+**Written** in `CONCEPT.md` as the reason this practice was the one that could find it.
+
+**True:** the demonstration day is the **longest run by a factor of fourteen** in the index's own byte
+column and falls out of this practice's own screen, index-only, in **8.94 seconds** on our run
+(`reproduce-refutation.json`). The exhaustive sweep is genuinely not free — a naive size threshold does
+not reproduce the 602-file register — but **the thing demonstrated needed one day, and that day was
+free.** Fourth occurrence of this pattern in this arc.
+
+## C7 — `gdelt-py`'s `C1_reads_master_list: true`. **Corrected to false**, and the D4 narrative withdrawn.
+
+`get_master_file_list` is defined at `sources/files.py:128` and **called from no `.py` file in the
+package**. The events path builds names arithmetically. And `RESULT-1.md` D4 claimed only execution
+could have caught the earlier misreading; the source states it at `endpoints/events.py:218-219`, in the
+maintainer's own comment. We read where the container is defined instead of where it is built. The
+self-congratulation is withdrawn.
+
+## C8 — "the reachable client libraries for this infrastructure". **Withdrawn; the population is renamed.**
+
+The census screened the Python and R registries. One request each to two others, made by us after the
+verdict: **npm returns nine** name matches, of which `gdelt-toolkit` 0.3.1 reads the master list and
+passes its checksum on without verifying anything (`src/lib/get.js:101,106`); **crates.io** carries a
+crate of the same name. The population is *"the Python and R registries"*, and the others are named as
+out of scope rather than silently absent.
+
+## C9 — "150 warning lines to stderr". **Corrected: 150 warnings across 300 lines.**
+
+`demo3-stderr.txt` is 300 lines carrying 150 `UserWarning` occurrences — Python prints two lines per
+warning. Small, and corrected because the document asks to be trusted on numbers.
+
+## C10 — issue #79, "zero comments". **Withdrawn as unverified.**
+
+Our page fetch shows no comments visible; the adversary's API query returned `comments: 2`. Neither of
+us read a comment body. What survives is what both attempts support: **no maintainer response is
+visible on the rendered page.** The inference "goes unanswered" is reduced accordingly.
+
+## C11 — the graded commit no longer exists in this branch. **A defect of ours, recorded.**
+
+The adversary graded `c18a8bf`. At landing the branch was rewritten back to `8e33d25` and recommitted,
+to drop a 57 MB virtual environment this session had committed by mistake three commits earlier. The
+graded content is the present state minus the four additions listed as D6 in `RESULT-1.md`; nothing it
+graded was revised while it worked. But **a verdict whose commit hash cannot be checked out is a weaker
+record than one whose hash can**, and the cause was our own carelessness with a `git add -A`.

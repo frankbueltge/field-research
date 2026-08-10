@@ -1,0 +1,41 @@
+{
+ "npm_search_hits": [
+  "@cyanheads/gdelt-mcp-server",
+  "@missionsquad/mcp-gdelt",
+  "@unclick/gdelt-mcp",
+  "@insnapsprakhar/gdelt-events-mcp",
+  "gdelt-toolkit",
+  "gdelt-ts-client",
+  "@anysiteio/gdelt-mcp-server",
+  "@pipeworx/mcp-gdelt",
+  "@prsgoo/integration-gdelt-news"
+ ],
+ "npm_gdelt_toolkit": {
+  "version": "0.3.1",
+  "hits": {
+   "md5": [
+    "package/README.md:53",
+    "package/src/lib/get.js:106"
+   ],
+   "raw_host": [
+    "package/src/data/fields.js:1",
+    "package/src/lib/get.js:19"
+   ],
+   "masterfilelist": [
+    "package/src/lib/get.js:101"
+   ]
+  }
+ },
+ "crates_hits": [
+  "gdelt",
+  "newsfresh",
+  "mcp-news",
+  "netabase",
+  "redshank-core",
+  "redshank-tui",
+  "redshank-fetchers",
+  "mcp-pr",
+  "redshank-cli",
+  "gdelta"
+ ]
+}

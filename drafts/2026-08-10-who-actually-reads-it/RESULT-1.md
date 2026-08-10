@@ -38,20 +38,24 @@ served that day — `demonstration-crosscheck.json`, `exact_match_with_register:
 third party's code independently confirming last session's register, and it is worth more than the
 register's own self-consistency.
 
-**A researcher asking these libraries for 11 November 2022 receives 31 % of the day's events and is
-told nothing about it in the value they are handed.**
+~~**A researcher asking these libraries for 11 November 2022 receives 31 % of the day's events and
+is told nothing about it in the value they are handed.**~~
+
+**WITHDRAWN — FALSE AS PUBLISHED (`CORRECTIONS.md` C5, `REFUTATION-REPRODUCED.md`).** 116,317 is a
+*different day*. The index declares **178,909 bytes** for the 75 absent export files; calibrated
+against 25 downloaded files of comparable declared size (median **42.0** declared bytes per event),
+they held on the order of **4,260 events**. The complete day held roughly **40,000**, so the client
+returns about **89 %** of what the instrument produced. What survives, and needs no counterfactual:
+**21 of 96 cycles, and nothing in the returned value says so.**
 
 **And the promise is still live today.** The master file list re-fetched 2026-08-10, HTTP 200,
 126,533,378 bytes, 1,184,979 lines (`index-still-promises.json`): **all 75** of the day's absent
 English export cycles are **still listed**, each with a byte size and an MD5 — e.g.
 `20221111000000.export.CSV.zip`, 4,404 bytes, `9fcd7af6…`. **1,368 days** after the fact, the index still tells a reader those files exist.
 
-**What the control day is, and what it is not.** 116,317 is the size of a *neighbouring complete day*,
-not the counterfactual for 11 November 2022. What that day would have held is **unknowable** — the 75
-files do not exist to be counted, and this practice makes no estimate of them. The control establishes
-that a complete day of this series in this week returns ~96 cycles and ~116k rows and that the client
-returns them; it does not license "75,000 events were lost". The load-bearing figure is the one that
-needs no counterfactual: **21 of 96 cycles, and nothing in the returned value says so.**
+**What the control day is, and what it is not — this paragraph was wrong in both directions.** It
+said 116,317 is not a counterfactual (true) *and* that what the day would have held is unknowable
+(false). The index declares the sizes; we simply did not add them up. See `CORRECTIONS.md` C5.
 
 **Re-probed the same day as the executions, so the denominator is not yesterday's.** 192 HEAD probes
 against the file host, 2026-08-10 (`reprobe-2026-08-10.json`): 2022-11-11 → **21 served, 75 absent**;
@@ -106,7 +110,7 @@ call. See `NEIGHBOURS-1.md`, which puts this first among the neighbours because 
 ## Where the signal does go, stated exactly — and a correction to this session's own first run
 
 `gdelt` 0.1.14 is not silent at the process level. Run with no warnings machinery at all it writes
-**150 warning lines to stderr** — two per absent cycle, from its worker processes.
+**150 warnings across 300 stderr lines** — one warning per line-pair, two warnings per absent cycle, from its worker processes. *(An earlier sentence here said "150 warning lines"; corrected, `CORRECTIONS.md` C9.)*
 
 This session's **first** harness reported zero warnings, and that figure was **wrong and is
 withdrawn** (deviation D2). The harness wrapped the call in the standard record-warnings idiom; the
@@ -135,6 +139,10 @@ Of the 19 packages, **six consume the measured 15-minute series**. Of those six:
 - **one** — `gdeltforge`, released five days ago — retries and then returns the failure to its caller
   **as a value**, in a `failed` list beside the success and skipped counts. It is the only package in
   the census that does.
+
+**One correction to the paragraph above, from the adversary and confirmed by us:** `gdelt-py`'s
+master-list constant is **dead code** — `get_master_file_list` is defined and called from nowhere in
+the package (`CORRECTIONS.md` C7) — so its row's `C1_reads_master_list` is now `false`.
 
 **Two of the six verify the MD5 the master list publishes** (`gdelttools`, `gdeltforge`), as does the
 withdrawn R package on the older daily series. **Three of the six never read the master list at all**

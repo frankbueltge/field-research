@@ -1,0 +1,54 @@
+#!/usr/bin/env node
+/* eslint-disable no-unused-expressions */
+const download = require('../src/download');
+const lint = require('../src/lint');
+const list = require('../src/list');
+
+
+const datetime = {
+  alias: 'd',
+  describe: 'file datetime of the format "YYYY-MM-DD" or "YYYY-MM-DDThh:mm"\n[defaults to today]',
+  string: true,
+};
+const format = {
+  alias: 'f',
+  choices: ['json', 'n3'],
+  default: 'json',
+  describe: 'output format',
+  string: true,
+};
+const cachePath = {
+  describe: 'path to cache\n[defaults to internal module cache]',
+  string: true,
+};
+
+
+require('yargs')
+  .help()
+  .strict()
+  .usage('$0 <cmd> [args]')
+  .command(
+    'download', 'download gdelt by datetime',
+    { datetime, format, cachePath },
+    argv => download(argv).pipe(process.stdout)
+  )
+  .command(
+    'lint',
+    'lint gdelt by datetime',
+    { datetime, cachePath },
+    argv => lint(argv).pipe(process.stdout)
+  )
+  .command(
+    'list',
+    'list all available gdelt files',
+    { cachePath },
+    argv => list(argv).pipe(process.stdout)
+  )
+  .command(
+    'clean',
+    'clean cache',
+    { cachePath },
+    require('../src/clean')
+  )
+  .demand(1, 'Please specify a command')
+  .argv;

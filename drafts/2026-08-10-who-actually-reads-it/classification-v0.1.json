@@ -4,14 +4,15 @@
   "built": "2026-08-10",
   "what_a_row_means": "one publicly distributed package whose source was obtained from a package registry itself and read by hand. Every cell that names a behaviour carries a file-and-line citation into the fetched source, at the exact version named in 'version'. Behaviour cells are statements about that version's code as read on 2026-08-10; only the two rows marked executed:true were also run.",
   "populations": {
-    "P-A": "public Python package index, complete project-name list from its own simple endpoint (867935 names, HTTP 200, 2026-08-10), screened case-insensitively for the token in the package NAME. Exhaustive over names; blind to any package that consumes the object without naming it.",
+    "P-A": "public Python package index, complete project-name list from its own simple endpoint (867935 names, HTTP 200, 2026-08-10), screened case-insensitively for the token in the package NAME. Exhaustive over names; blind to any package that consumes the object without naming it. NOTE 2026-08-10: this population is the PYTHON AND R REGISTRIES ONLY. npm returns nine name matches (gdelt-toolkit 0.3.1 reads the master list and never verifies its checksum, src/lib/get.js:101,106) and crates.io carries a crate of the same name. See CORRECTIONS.md C8.",
     "P-B": "R archive network: complete current-package descriptor database (24719 packages) screened over Package+Title+Description -> 0 hits; plus the archive directory of withdrawn packages (27546 directories) screened by name -> 1 hit.",
     "P-C": "none added this session"
   },
   "not_covered": [
     "code distributed only through source hosting and not through a registry",
     "packages consuming the object without the token in their name (P-A) or metadata (P-B)",
-    "notebooks, scripts and pipelines that fetch the files directly with a generic HTTP client"
+    "notebooks, scripts and pipelines that fetch the files directly with a generic HTTP client",
+    "other package registries — npm and crates.io were opened AFTER the census, at the adversary's charge, and both hold a master-list-reading consumer; they are out of scope by name, not by ignorance (CORRECTIONS.md C8)"
   ],
   "rows": [
     {
@@ -66,8 +67,8 @@
       "last_release": "2026-06-27",
       "releases": 4,
       "consumes": "v2 15-minute series; also offers a warehouse route",
-      "C1_reads_master_list": true,
-      "C1_citation": "src/py_gdelt/sources/files.py:37-39 (MASTER_FILE_LIST_URL and its translation counterpart)",
+      "C1_reads_master_list": false,
+      "C1_citation": "CORRECTED 2026-08-10 after the adversary (CORRECTIONS.md C7): the constant MASTER_FILE_LIST_URL exists at src/py_gdelt/sources/files.py:37-39 and get_master_file_list is defined at :128, but NO .py file in the package calls it; the events path builds names arithmetically. The earlier value of this cell was true and cited a URL constant.",
       "C2_verifies_published_checksum": false,
       "C2_note": "the master list publishes an MD5 beside every entry; the only hashing in the package is sha256 over cache keys (src/py_gdelt/cache.py:329,335)",
       "C3_on_a_listed_but_absent_file": "404 raises APIError inside the download layer; the fetcher's error policy decides and the DEFAULT is 'warn'. The package DOES have a partial-failure container (FetchResult: data / failed / complete / partial / total_failed, py_gdelt/models/common.py) — but on execution the container did not fire: see executed_result.",

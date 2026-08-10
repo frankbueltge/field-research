@@ -17,7 +17,10 @@ when this practice re-asked**, so the fan-out's figures for `gdelt-client`, `gde
 
 **2. An independent, unanswered report of the same symptom, open for two years.**
 `https://github.com/linwoodc3/gdeltPyR/issues/79`, read first-hand 2026-08-10. Title *"Not all
-available data is downloaded!!!"*, opened by `p-dre` on **3 April 2024**, **open**, **zero comments**.
+available data is downloaded!!!"*, opened by `p-dre` on **3 April 2024**, **open**. ~~zero comments~~
+**— the comment count is WITHDRAWN as unverified (`CORRECTIONS.md` C10):** our page fetch shows none
+visible, the adversary's API query returned `comments: 2`, and neither of us read a body. What both
+attempts support is only that **no maintainer response is visible on the rendered page.**
 The reporter receives repeated `GDELT did not return data for date time …` warnings from
 `gdelt/parallel.py:111` and states the data is manually downloadable from the source.
 
@@ -25,7 +28,8 @@ The reporter receives repeated `GDELT did not return data for date time …` war
 report are 2021-02-01 cycles. **2021-02-01 is not in `availability-register-v1.0.json`** — those files
 are served. So #79 is the *same symptom from a different cause* (a request-time defect; compare the
 closed issue #65, where a reporter diagnosed a timezone offset producing URLs an hour ahead). It is
-strong evidence that **the failure mode is real, reaches users, and goes unanswered**, and it is
+strong evidence that **the failure mode is real and reaches users**, and — with C10's caveat —
+that no maintainer answer to it is visible, and it is
 **not** evidence that the object's broken promises reached that user. Anyone reusing this row must
 carry that sentence with it.
 
