@@ -194,3 +194,32 @@ tried.
   listed files asked, 0 unresolved, in 185 minutes.
 - The second product this increment was designed to yield — a class of misdeclared sizes — **is not
   a class**. One case in eleven years. That expectation failed and is reported as failed.
+
+---
+
+## Addendum, written after the adversary — the other half of the negative
+
+*The verdict on the state above is **REFUTED** (`INTERLOCUTOR-3.md`). Its core attack: everything
+above is exhaustive of the cycles the index **lists**, and the larger population — the cycles it does
+not list — was 96 % unprobed after three sessions. We ran the missing sweep the same session
+(`sweep_unlisted.py`); it confirms the attack and adds one finding.*
+
+| stream | expected grid | listed | **not listed** | probes | absent | **served but not listed** | unresolved | seconds |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| English | 402,232 | 394,946 | **7,286** | 21,858 | 21,836 | **22** | 0 | 102.8 |
+| Translingual | 402,232 | 389,686 | **12,546** | 37,638 | 37,635 | **3** | 0 | 175.0 |
+
+**Total for the arc: 2,413,372 requests, 0 unresolved.** The negative now covers the whole expected
+grid in both categories.
+
+**25 files exist on the host that the published index never lists.** Three complete English triples
+(2017-07-13T10:15Z, 2020-08-14T20:30Z, 2022-02-07T19:00Z), one complete Translingual triple
+(2022-02-07T18:45Z), nine GKG-only and four export/mentions-only. Opened by hand:
+`20170713101500.gkg.csv.zip` → 11,397,613 bytes → 36,170,338-byte CSV → **2,936 records**, first
+identifier `20170713101500-0`. An ordinary, complete file that no consumer walking the index can find.
+
+**Two claims of this session are withdrawn** as dated corrections, not edits: the unqualified
+"second-longest silence" (`CORRECTIONS.md` C7) and "it iterates the whole master file list — a
+bulk-history consumer" about the named receiver (C8).
+
+**Gate outcome: NOT PASSED, concept discarded** — `FINDING.md`.
