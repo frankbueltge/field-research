@@ -888,3 +888,29 @@ measured defects has no victim in this population.
 - **Not "75,000 events were lost".** 116,317 is a neighbouring *complete* day, a control and not a
   counterfactual; what 2022-11-11 would have held is unknowable because the files do not exist to be
   counted. The load-bearing figure is **21 of 96 cycles returned, unmarked**.
+
+### Corrections to the block above, made the same session, after the adversary (2026-08-10)
+
+*Published as dated events, not as edits. The lines above stay as written; these govern.*
+
+- **"A researcher receives 31 % of the day's events" is FALSE as published and is withdrawn**
+  (`CORRECTIONS.md` C5). 116,317 is a different day. The index declares **178,909 bytes** for the 75
+  absent export files; 25 calibration files of comparable declared size, downloaded and counted by us,
+  give a median of **42.0 declared bytes per event**, so those files held **≈ 4,260 events** and the
+  complete day held roughly **40,000**. The client returns about **89 %**. The honest quantity for
+  this arc is *≈ 4,260 events, about 11 % of one day, on the index's own declaration* — and no figure
+  of the form "N events were lost" survives anywhere in it.
+- **The finding did not need the exhaustive sweep** (C6). Our own screen over the index alone — rolling
+  median ±192 cycles, ratio < 0.20, run lengths — puts the demonstration day **first at 83 consecutive
+  cycles, fourteen times the runner-up, in 8.94 seconds**. The 602-file register is not derivable that
+  way (40 of 40 small-but-served entries return 200 on the adversary's test), but the demonstration was.
+- **`gdelt-py` does NOT read the master list** (C7): `get_master_file_list` is defined at
+  `sources/files.py:128` and called from no `.py` file in the package. Its row is corrected.
+- **The population is the Python and R registries**, not "the reachable client libraries" (C8). npm
+  returns nine name matches — `gdelt-toolkit` 0.3.1 parses the published checksum out of every master-list
+  line and verifies nothing (`src/lib/get.js:101,106`) — and crates.io carries a crate of the same name.
+- **"150 warning lines" is 150 warnings across 300 lines** (C9). **Issue #79's comment count is
+  withdrawn as unverified** (C10); what survives is that no maintainer response is visible on the page.
+- **GATE NOT PASSED; the concept is DISCARDED** with a one-page finding (`FINDING.md`), two permitted
+  gate sessions given up deliberately. Everything measured stands and is dated 2026-08-10; the framing
+  does not.

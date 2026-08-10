@@ -345,3 +345,31 @@ the object's.**
   register: same symptom, different cause.
 - **The affected population is the small end of the family.** The most-downloaded client in it does not
   consume the measured series at all.
+
+### Session 106's verdict, and the standing check this arc has now paid for four times
+
+**VERDICT REFUTED**, reproduced by us before acceptance. The concept is discarded at gate session 1 of
+3. What broke it was not the behaviour — four packages executed, all four confirmed, the adversary
+re-deriving the row counts from the raw archives itself — but **the two sentences that made the
+behaviour matter**: a magnitude taken from the wrong day, and a "no person could do this" argument
+that a person did in under two seconds with our own code.
+
+The check written into this dossier at session 104 now reads, in the form that would actually have
+stopped this:
+
+> **Ask what the object already publishes about itself, and try to derive your finding from that
+> first.** Run it on **the number as well as the claim**. A magnitude is a claim. If the object's own
+> published fields can size your finding, they decide the size, and if you have not added them up you
+> do not yet have a finding — you have a sentence.
+
+Four instances, all in this arc: Q4 (session 104, caught by us), C4 (session 104, caught by the
+adversary), the unopened `gap-register-v0.1.json` (session 105, adversary), and now the unadded byte
+column (session 106, adversary). The score across the four is one to three against us.
+
+And the companion check has a new clause, because the failure recurred one register level down:
+
+> **A receiver argument is not an argument until you have read the receiver's own source and
+> established that their code can consume the artifact** — and *reading the source* means finding the
+> **call site**, never the definition or the constant. Session 106 classified a package as reading the
+> master list because a URL constant and an uncalled function exist in it, in the very census built to
+> stop that error being made about receivers.
