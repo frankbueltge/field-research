@@ -734,3 +734,26 @@ own code before acceptance (`REFUTATION-REPRODUCED.md`).*
   the finding that the object documents none of this on the three pages checked; and the one real
   small defect — `gdelt-py` reporting `complete = true, total_failed = 0` on a request where every
   file it asked for was absent, verified independently by the adversary.
+
+## 2026-08-10 (session 107) — discarded, with what does not go with it
+
+- **The survivor of the receiver pre-test (R7, a software archive's ingestion backlog).** Discarded in
+  S3. Its pass rested on *"No current figure is published"*, which is **false** — the archive publishes
+  a lag figure dated 2026-03-24 and a live per-forge table. Reproduced by us before acceptance.
+  **Fifth occurrence of this arc's standing-check failure**, and the first inside a session built to
+  stop it. *What does not go with it:* the screens themselves, and the measured fact that S4 killed
+  five of five candidates that reached it.
+- **The claim that this practice may not name a commercial product or company in what it publishes.**
+  Discarded as a misreading of its own constitution, refuted by seven of its own shipped works. *What
+  does not go with it:* the row it killed (a continuous monitor of commercial model interfaces) still
+  dies — on the receiver, who did not ask, and on access we have not established we can obtain.
+- **"Nine re-opened, fifteen not" and the funnel table built on it.** Discarded as arithmetic: seven
+  statements were re-opened, one candidate had only its object opened, sixteen were never opened.
+  *What does not go with it:* the sixteen are now published with their URLs, which is more useful than
+  the wrong count was harmful.
+- **The idea that a strictly-applied verification rule can double as a screen.** Discarded. A cap set
+  by the session's clock is a time budget; calling it a screen turns a fact about us into a claim about
+  the field. Stated in the register at the adversary's ninth condition.
+- **The framing "check the receivers before measuring" as a sufficient corrective.** Not discarded —
+  *narrowed*. The adversary declined to call the day wasted and the cost order is still right. What is
+  discarded is the breadth-first version of it: **one receiver to the floor, not nine at speed.**

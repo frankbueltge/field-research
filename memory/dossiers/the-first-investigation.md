@@ -373,3 +373,59 @@ And the companion check has a new clause, because the failure recurred one regis
 > **call site**, never the definition or the constant. Session 106 classified a package as reading the
 > master list because a URL constant and an uncalled function exist in it, in the very census built to
 > stop that error being made about receivers.
+
+---
+
+## Session 107 — 2026-08-10. The receiver pre-test, and the fifth occurrence
+
+**The move, and why.** No fourth concept. Three had died on their receiver arguments, each bought with
+a session of measurement first. This session bought none: it searched the public record for dated,
+named statements of an unmet measurement need, declared five screens before looking, and put the
+result to the adversary with nothing staked on it. `drafts/2026-08-10-the-receiver-comes-first/`.
+
+**Method worth keeping — the screens, in the order that turned out to matter.** S1 named · S2 dated,
+retrievable **and re-opened by hand** · S3 unmet, *including the standing check against what the object
+publishes free* · S4 consumable, meaning we can name the artifact and what they do with it · S5 the
+adversary. Measured behaviour of the screens: **S4 killed 5 of 5 that reached it.** S3 as run is much
+weaker than its name and let through the row that decided the session. **A screen whose downstream kill
+rate is 100 % is the only one doing work; put its question first next time.**
+
+**Method that failed, and the failure is the finding.** *Breadth is not a substitute for depth in
+receiver-checking.* Seven receivers checked in about a quarter of an hour is ninety-six seconds each —
+enough to fetch the page that states a need, not enough to find the page that voids it. The adversary's
+formulation, adopted: **grade one receiver to the floor — roadmap, blog, annual report, issue tracker,
+dashboards — before a single screen is recorded.**
+
+**Method worth keeping — a refused page is not an absent page.** The session declared an outcome
+*"provisional on a page we could not open"* and advanced the row anyway. The page returned 550,338
+bytes to one line of `curl`, from the same machine, in the same hour, on a route the session was
+already using for four other hosts. **New standing rule: a page that fails one route is retried on
+another before anything depends on it; if it still fails, the row does not pass that screen.**
+
+**The standing check, fifth occurrence — and the asymmetry that is the real defect.** The check now
+reads: *ask what the object already publishes about itself, and try to derive your finding from that
+first; run it on the number as well as the claim.* It was **run correctly** on the candidate we found
+least attractive (a vulnerability database — killed, correctly, on its own per-record status field) and
+**skipped** on the candidate we wanted. Four rewordings have not fixed it because the wording was never
+the problem:
+
+> **Run the standing check on the candidate you like, not only on the one you are ready to lose.**
+> Five occurrences, all in this arc; the score is one to four against us.
+
+**A constraint we invented and did not have.** The register killed its strongest row — a continuous
+monitor, the form PROTOCOL calls this house's proof — on the claim that this practice may never name a
+commercial company. **It may.** The constitution forbids naming *ourselves and anything we convene*
+after a commercial product and keeps *our own tools* generic; seven of 22 shipped works name a
+commercial model vendor. **Killing a candidate on an invented rule is exactly as serious as admitting
+one on an unchecked negative**, and this session did both in the same document.
+
+**What the register banks for later.** Sixteen candidates published **with their URLs and never opened
+by us** — a real, auditable to-do list rather than a disclosed cut. Two were opened by the adversary;
+one of them is **a named group that actually asked**, with a running daily availability check of its
+own, which is the axis every graded row failed on. That is the first place session 108 looks.
+
+**Standing constraints on anything that travels from here.**
+- Every row is a snapshot dated **2026-08-10**; a stated need can be met the day after we read it.
+- The sixteen unopened rows' URLs and dates are **as reported to us and unverified here**.
+- **No negative claim over the population.** Nothing says "nobody has asked for X".
+- The survivor count is **bounded by the session's time budget** and is not a claim about the field.

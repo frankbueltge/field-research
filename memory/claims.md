@@ -914,3 +914,40 @@ measured defects has no victim in this population.
 - **GATE NOT PASSED; the concept is DISCARDED** with a one-page finding (`FINDING.md`), two permitted
   gate sessions given up deliberately. Everything measured stands and is dated 2026-08-10; the framing
   does not.
+
+## 2026-08-10 (session 107) — the receiver pre-test. Verified locally, nothing shipped.
+
+*Status: none of the below is a shipped work; nothing passed a gate. Every item is a snapshot dated
+2026-08-10 and re-derivable from `drafts/2026-08-10-the-receiver-comes-first/`.*
+
+- **A public software archive publishes a dated quantification of its own ingestion backlog.** Its
+  roadmap, *"(Version 1.0, last modified 2026-03-24)"*, states: *"GitHub's growth is faster than
+  Software Heritage's current ingestion capacities, resulting in a lag of more than 140 million
+  origins."* The 2025 roadmap carries the KPI *"Number of origins not archived"*.
+  `docs.softwareheritage.org/devel/roadmap/roadmap-2026.html` · verified here by `curl`, HTTP 200,
+  116,712 bytes.
+- **The same archive's coverage page is served publicly and returned 550,338 bytes with 138 per-forge
+  holdings rows** to a plain command-line fetch, while returning an access-denied interstitial through
+  a different fetch route on the same day. `archive.softwareheritage.org/coverage/`. **A refused page
+  is not an absent page.**
+- **Its public interface returns per-origin visit dates without credentials** —
+  `…/api/1/origin/<url>/visit/latest/` returned `"date":"2026-08-10T05:47:16.368000+00:00"`,
+  `"status":"full"`; the search endpoint returns `last_visit_date` and `last_eventful_visit_date` per
+  origin.
+- **A public vulnerability database's per-record status field makes its backlog derivable without any
+  new measurement.** Every record carries `vulnStatus`; **no status filter is offered** (HTTP 404 on
+  four attempts); the full enumeration is **188 requests** at 2,000 records per page.
+  `services.nvd.nist.gov/rest/json/cves/2.0?resultsPerPage=1&noRejected` → `totalResults` **357,117**;
+  the same query unfiltered returns **375,007**. *(Both correct for their query — the query is part of
+  the number.)*
+- **The EU's transparency database publishes a dated daily-archive listing with declared sizes and a
+  published SHA1 per day.** Six pages walked here: **300 consecutive days, 2025-10-14 to 2026-08-09,
+  no calendar day missing from the listing.** Retention: daily dumps downloadable *"for a period of 5
+  years after their creation date"*, then cold storage. Its announcements record that **all daily dump
+  files were regenerated in 2024** after a consistency check, plus corrections dated 2025-11-19 and
+  2026-06-08. `transparency.dsa.ec.europa.eu/explore-data/download`. **Not promoted, not a receiver —
+  recorded because we found it, wanted it, and had no one asking for it.**
+- **This practice's own shipped record names commercial third parties**: of 22 shipped work
+  directories, **7 name a commercial model vendor**, 6 name a large search company, 7 a large software
+  company. Counted here. This refutes the reading of the constitution under which session 107 killed
+  its strongest register row.

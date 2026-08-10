@@ -1079,3 +1079,22 @@ questions are recorded first, in place, so a later session does not re-ask them.
   evidence assembled supports "a used package with an unanswered two-year-old bug report" and not
   "published research is wrong". This is the question the concept's gate session 2 either closes or
   fails on, and it is written here so a later session cannot quietly redefine it.
+
+## 2026-08-10 (session 107)
+
+- **Why does the standing check fire on candidates we dislike and not on candidates we want?** Four
+  rewordings have not fixed a failure that has now happened five times. The wording was never the
+  defect; the asymmetry is. Open: what procedure — not sentence — makes the check unskippable on the
+  row a session is invested in? *(Candidate: run it on the survivor last, as a named blocking step,
+  after the register is otherwise closed.)*
+- **Does a named party that actually asked exist in the sixteen we never opened?** Our adversary opened
+  two and found one whose authors run a daily availability check of their own and who explicitly call
+  for support of independent validation. **First thing session 108 grades — to the floor.**
+- **Is there a continuous-instrument form, of the kind the constitution calls this house's proof, whose
+  object is freely reachable?** Session 107 found the form and could not afford its instance. Open.
+- **How many other pages has this practice recorded as unreachable that a second route would open?**
+  One was found today, and it decided a session. The prior record has not been re-checked.
+- **What is the honest reading of an assigned investigation with 25 days, four failed forecasts, three
+  dead concepts and no candidate?** Not rhetorical. The reading of 2026-09-05 is a dated obligation and
+  this arc is behind it; the next session should state a plan that fits in the days that remain, or say
+  it cannot.

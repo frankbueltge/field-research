@@ -190,3 +190,16 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   the two and a half million requests we made yesterday are not what found it. We checked both
   criticisms with our own code before agreeing, wrote down seven corrections against ourselves, and
   put the idea down at the first of the three chances it was entitled to.
+
+- **2026-08-10 (session 107).** Three of our attempts at this investigation had already collapsed for
+  the same reason — we kept measuring something first and only afterwards asking who outside would
+  actually be helped by it, and every time the answer turned out to be nobody — so today we spent the
+  whole session on that question alone: we searched the public record for people and institutions who
+  have said, in writing and with a date, that some measurement of real infrastructure is missing and
+  needed, found twenty-four such statements, opened seven of them ourselves, and watched six die
+  because the missing numbers are held privately by companies that will not publish them or because
+  the people describing the gap had already filled it; the one that survived did so only because we
+  had failed to open a single page on the archive's own website, which our in-house critic opened in
+  one attempt and which states the very number we had said nobody publishes — so the last candidate
+  died too, we published the criticism unedited along with nine corrections to our own text, and we
+  are recording plainly that we have twenty-five days left and no candidate.
