@@ -1,0 +1,32 @@
+{
+ "endpoint_pattern": "https://pypistats.org/api/packages/<name>/recent",
+ "retrieved_utc": "2026-08-10",
+ "note": "mirror-excluded windows are relative to retrieval date; the service names no absolute boundaries",
+ "results": {
+  "gdelt": {
+   "http": 200,
+   "data": {
+    "last_day": 73,
+    "last_month": 2132,
+    "last_week": 475
+   },
+   "package": "gdelt",
+   "type": "recent_downloads"
+  },
+  "gdelt-client": {
+   "error": "HTTP Error 429: Too Many Requests"
+  },
+  "gdeltdoc": {
+   "error": "HTTP Error 429: Too Many Requests"
+  },
+  "gdelt-py": {
+   "error": "HTTP Error 429: Too Many Requests"
+  },
+  "gdelttools": {
+   "error": "HTTP Error 429: Too Many Requests"
+  },
+  "gdeltforge": {
+   "error": "HTTP Error 429: Too Many Requests"
+  }
+ }
+}

@@ -1,0 +1,553 @@
+[
+ {
+  "package": "GDELT21",
+  "text_files": 15,
+  "raw_file_host": [],
+  "doc_api_host": [],
+  "masterfilelist": [],
+  "md5_token": [],
+  "hashlib": [],
+  "digest_compare": [],
+  "status_404": [],
+  "raise_for_status": [],
+  "try_except": [],
+  "timedelta_grid": [],
+  "zipfile": []
+ },
+ {
+  "package": "GDELT22",
+  "text_files": 12,
+  "raw_file_host": [],
+  "doc_api_host": [],
+  "masterfilelist": [],
+  "md5_token": [],
+  "hashlib": [],
+  "digest_compare": [],
+  "status_404": [],
+  "raise_for_status": [],
+  "try_except": [],
+  "timedelta_grid": [],
+  "zipfile": []
+ },
+ {
+  "package": "GDELT23",
+  "text_files": 12,
+  "raw_file_host": [],
+  "doc_api_host": [],
+  "masterfilelist": [],
+  "md5_token": [],
+  "hashlib": [],
+  "digest_compare": [],
+  "status_404": [],
+  "raise_for_status": [],
+  "try_except": [],
+  "timedelta_grid": [],
+  "zipfile": []
+ },
+ {
+  "package": "GDELTtools",
+  "text_files": 20,
+  "raw_file_host": [
+   "GDELTtools/GDELTtools/R/GetAllOfGDELT.R:24",
+   "GDELTtools/GDELTtools/R/NormEventCounts.R:57",
+   "GDELTtools/GDELTtools/R/ListAllGDELTFiles.R:5",
+   "GDELTtools/GDELTtools/R/IsValidGDELT.R:9",
+   "GDELTtools/GDELTtools/R/GetGDELTStabiity.R:15",
+   "GDELTtools/GDELTtools/R/GetGDELT.R:73",
+   "GDELTtools/GDELTtools/R/DownloadGdelt.R:10",
+   "GDELTtools/GDELTtools/R/GetSizeOfGDELT.R:5",
+   "GDELTtools/GDELTtools/man/GetGDELTStability.Rd:38",
+   "GDELTtools/GDELTtools/man/GetAllOfGDELT.Rd:9",
+   "GDELTtools/GDELTtools/man/GetGDELT.Rd:14"
+  ],
+  "doc_api_host": [
+   "GDELTtools/GDELTtools/R/GetGDELTStabiity.R:70"
+  ],
+  "masterfilelist": [],
+  "md5_token": [
+   "GDELTtools/GDELTtools/R/IsValidGDELT.R:3"
+  ],
+  "hashlib": [],
+  "digest_compare": [
+   "GDELTtools/GDELTtools/R/IsValidGDELT.R:9"
+  ],
+  "status_404": [],
+  "raise_for_status": [],
+  "try_except": [],
+  "timedelta_grid": [
+   "GDELTtools/GDELTtools/R/GetGDELTStabiity.R:6",
+   "GDELTtools/GDELTtools/man/GetGDELTStability.Rd:10"
+  ],
+  "zipfile": [
+   "GDELTtools/GDELTtools/R/GdeltZipToDataframe.R:12"
+  ]
+ },
+ {
+  "package": "gdelt",
+  "text_files": 35,
+  "raw_file_host": [
+   "gdelt/gdelt-0.1.14/tests/test_urlBuilder.py:34",
+   "gdelt/gdelt-0.1.14/tests/test_vectorizing.py:77",
+   "gdelt/gdelt-0.1.14/tests/test_parallel.py:79",
+   "gdelt/gdelt-0.1.14/gdelt/vectorizingFuncs.py:47",
+   "gdelt/gdelt-0.1.14/gdelt/base.py:101"
+  ],
+  "doc_api_host": [],
+  "masterfilelist": [
+   "gdelt/gdelt-0.1.14/tests/test_response.py:47"
+  ],
+  "md5_token": [],
+  "hashlib": [],
+  "digest_compare": [],
+  "status_404": [
+   "gdelt/gdelt-0.1.14/tests/test_parallel.py:87",
+   "gdelt/gdelt-0.1.14/gdelt/parallel.py:72"
+  ],
+  "raise_for_status": [
+   "gdelt/gdelt-0.1.14/gdelt/extractors.py:45"
+  ],
+  "try_except": [
+   "gdelt/gdelt-0.1.14/tests/test_response.py:21",
+   "gdelt/gdelt-0.1.14/gdelt/dateFuncs.py:50",
+   "gdelt/gdelt-0.1.14/gdelt/vectorizingFuncs.py:181",
+   "gdelt/gdelt-0.1.14/gdelt/base.py:405",
+   "gdelt/gdelt-0.1.14/gdelt/inputChecks.py:146"
+  ],
+  "timedelta_grid": [
+   "gdelt/gdelt-0.1.14/tests/test_gdeltRangeString.py:43",
+   "gdelt/gdelt-0.1.14/gdelt/dateFuncs.py:175"
+  ],
+  "zipfile": [
+   "gdelt/gdelt-0.1.14/tests/test_vectorizing.py:57",
+   "gdelt/gdelt-0.1.14/tests/test_parallel.py:23",
+   "gdelt/gdelt-0.1.14/gdelt/extractors.py:12"
+  ]
+ },
+ {
+  "package": "gdelt-client",
+  "text_files": 17,
+  "raw_file_host": [
+   "gdelt-client/gdelt_client-0.2.1/README.md:168",
+   "gdelt-client/gdelt_client-0.2.1/src/gdelt_client/filters.py:167",
+   "gdelt-client/gdelt_client-0.2.1/src/gdelt_client/api_client.py:111",
+   "gdelt-client/gdelt_client-0.2.1/src/gdelt_client/helpers.py:11",
+   "gdelt-client/gdelt_client-0.2.1/tests/test_client.py:368"
+  ],
+  "doc_api_host": [
+   "gdelt-client/gdelt_client-0.2.1/src/gdelt_client/api_client.py:112"
+  ],
+  "masterfilelist": [],
+  "md5_token": [],
+  "hashlib": [],
+  "digest_compare": [],
+  "status_404": [
+   "gdelt-client/gdelt_client-0.2.1/src/gdelt_client/errors.py:21",
+   "gdelt-client/gdelt_client-0.2.1/src/gdelt_client/api_client.py:543",
+   "gdelt-client/gdelt_client-0.2.1/src/gdelt_client/enums.py:23",
+   "gdelt-client/gdelt_client-0.2.1/tests/test_enums.py:46",
+   "gdelt-client/gdelt_client-0.2.1/tests/test_errors.py:35"
+  ],
+  "raise_for_status": [
+   "gdelt-client/gdelt_client-0.2.1/src/gdelt_client/api_client.py:549"
+  ],
+  "try_except": [
+   "gdelt-client/gdelt_client-0.2.1/src/gdelt_client/api_client.py:352",
+   "gdelt-client/gdelt_client-0.2.1/src/gdelt_client/helpers.py:45"
+  ],
+  "timedelta_grid": [
+   "gdelt-client/gdelt_client-0.2.1/src/gdelt_client/helpers.py:184",
+   "gdelt-client/gdelt_client-0.2.1/tests/test_filters.py:173"
+  ],
+  "zipfile": [
+   "gdelt-client/gdelt_client-0.2.1/tests/test_client.py:858"
+  ]
+ },
+ {
+  "package": "gdelt-process-tone",
+  "text_files": 6,
+  "raw_file_host": [],
+  "doc_api_host": [],
+  "masterfilelist": [],
+  "md5_token": [],
+  "hashlib": [],
+  "digest_compare": [],
+  "status_404": [],
+  "raise_for_status": [],
+  "try_except": [],
+  "timedelta_grid": [],
+  "zipfile": []
+ },
+ {
+  "package": "gdelt-py",
+  "text_files": 69,
+  "raw_file_host": [
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/lookups/image_tags.py:34",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/lookups/countries.py:233",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/lookups/gcam.py:14",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/lookups/image_web_tags.py:34",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/lookups/languages.py:12",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/sources/__init__.py:4",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/sources/README.md:7",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/sources/QUICK_REFERENCE.md:35",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/sources/files.py:4",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/tv_gkg.py:36",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/radio_ngrams.py:62",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/vgkg.py:52",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/tv_ngrams.py:66"
+  ],
+  "doc_api_host": [
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/geo.py:80",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/tvv.py:101",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/lowerthird.py:97",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/doc.py:64",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/gkg_geojson.py:109",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/tv.py:158",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/context.py:119"
+  ],
+  "masterfilelist": [
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/sources/files.py:37"
+  ],
+  "md5_token": [],
+  "hashlib": [
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/cache.py:10"
+  ],
+  "digest_compare": [
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/cache.py:329"
+  ],
+  "status_404": [
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/sources/README.md:21",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/sources/QUICK_REFERENCE.md:110",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/sources/files.py:310"
+  ],
+  "raise_for_status": [
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/sources/files.py:160",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/tv_gkg.py:298",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/radio_ngrams.py:183",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/vgkg.py:269"
+  ],
+  "try_except": [
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/client.py:205",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/filters.py:121",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/cache.py:90",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/parsers/vgkg.py:121",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/parsers/mentions.py:54",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/parsers/ngrams.py:75",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/parsers/broadcast_ngrams.py:97",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/parsers/gkg.py:169",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/parsers/events.py:232",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/parsers/graphs.py:96",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/models/gkg.py:254",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/models/graphs.py:230",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/lookups/_utils.py:50",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/sources/__init__.py:35",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/sources/README.md:151",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/sources/QUICK_REFERENCE.md:109",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/sources/files.py:185",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/sources/bigquery.py:34",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/sources/fetcher.py:184",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/utils/streaming.py:96",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/utils/dates.py:56",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/tv_gkg.py:393",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/tvv.py:81",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/radio_ngrams.py:197",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/vgkg.py:440",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/ngrams.py:218",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/gkg.py:224",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/tv_ngrams.py:205",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/graphs.py:173",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/mcp_server/server.py:405"
+  ],
+  "timedelta_grid": [
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/sources/files.py:230",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/tv_gkg.py:267",
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/endpoints/vgkg.py:327"
+  ],
+  "zipfile": [
+   "gdelt-py/gdelt_py-0.1.11/src/py_gdelt/sources/files.py:17"
+  ]
+ },
+ {
+  "package": "gdelt2py",
+  "text_files": 12,
+  "raw_file_host": [
+   "gdelt2py/gdelt2py-0.1.6/README.md:47"
+  ],
+  "doc_api_host": [],
+  "masterfilelist": [],
+  "md5_token": [],
+  "hashlib": [],
+  "digest_compare": [],
+  "status_404": [],
+  "raise_for_status": [],
+  "try_except": [],
+  "timedelta_grid": [],
+  "zipfile": [
+   "gdelt2py/gdelt2py-0.1.6/src/gdelt2py/gdelt2.py:5"
+  ]
+ },
+ {
+  "package": "gdelt_util",
+  "text_files": 7,
+  "raw_file_host": [],
+  "doc_api_host": [],
+  "masterfilelist": [],
+  "md5_token": [],
+  "hashlib": [],
+  "digest_compare": [],
+  "status_404": [],
+  "raise_for_status": [],
+  "try_except": [
+   "gdelt_util/gdelt_util-0.15/gdelt_util/__init__.py:188"
+  ],
+  "timedelta_grid": [],
+  "zipfile": []
+ },
+ {
+  "package": "gdeltdoc",
+  "text_files": 20,
+  "raw_file_host": [
+   "gdeltdoc/gdeltdoc-1.12.0/README.md:85",
+   "gdeltdoc/gdeltdoc-1.12.0/gdeltdoc/filters.py:176"
+  ],
+  "doc_api_host": [
+   "gdeltdoc/gdeltdoc-1.12.0/gdeltdoc/api_client.py:163"
+  ],
+  "masterfilelist": [],
+  "md5_token": [],
+  "hashlib": [],
+  "digest_compare": [],
+  "status_404": [
+   "gdeltdoc/gdeltdoc-1.12.0/tests/test_errors.py:30",
+   "gdeltdoc/gdeltdoc-1.12.0/gdeltdoc/errors.py:9"
+  ],
+  "raise_for_status": [],
+  "try_except": [
+   "gdeltdoc/gdeltdoc-1.12.0/tests/test_filters.py:193",
+   "gdeltdoc/gdeltdoc-1.12.0/gdeltdoc/filters.py:5",
+   "gdeltdoc/gdeltdoc-1.12.0/gdeltdoc/helpers.py:23"
+  ],
+  "timedelta_grid": [
+   "gdeltdoc/gdeltdoc-1.12.0/tests/test_filters.py:212"
+  ],
+  "zipfile": []
+ },
+ {
+  "package": "gdeltforge",
+  "text_files": 48,
+  "raw_file_host": [
+   "gdeltforge/gdeltforge-0.4.0/README.md:75",
+   "gdeltforge/gdeltforge-0.4.0/src/gdeltforge/conversion/converter.py:4",
+   "gdeltforge/gdeltforge-0.4.0/src/gdeltforge/scraping/scraper.py:5",
+   "gdeltforge/gdeltforge-0.4.0/tests/test_scraper.py:306",
+   "gdeltforge/gdeltforge-0.4.0/docs/configuration.md:29",
+   "gdeltforge/gdeltforge-0.4.0/docs/comparison.md:7"
+  ],
+  "doc_api_host": [],
+  "masterfilelist": [
+   "gdeltforge/gdeltforge-0.4.0/src/gdeltforge/scraping/scraper.py:57",
+   "gdeltforge/gdeltforge-0.4.0/tests/test_scraper.py:72"
+  ],
+  "md5_token": [
+   "gdeltforge/gdeltforge-0.4.0/README.md:260",
+   "gdeltforge/gdeltforge-0.4.0/CHANGELOG.md:72",
+   "gdeltforge/gdeltforge-0.4.0/src/gdeltforge/scraping/scraper.py:90",
+   "gdeltforge/gdeltforge-0.4.0/tests/test_scraper.py:281",
+   "gdeltforge/gdeltforge-0.4.0/docs/configuration.md:92",
+   "gdeltforge/gdeltforge-0.4.0/docs/limitations-and-roadmap.md:26",
+   "gdeltforge/gdeltforge-0.4.0/docs/cli-reference.md:62"
+  ],
+  "hashlib": [
+   "gdeltforge/gdeltforge-0.4.0/src/gdeltforge/scraping/scraper.py:31",
+   "gdeltforge/gdeltforge-0.4.0/tests/test_scraper.py:1"
+  ],
+  "digest_compare": [
+   "gdeltforge/gdeltforge-0.4.0/src/gdeltforge/scraping/scraper.py:690",
+   "gdeltforge/gdeltforge-0.4.0/tests/test_scraper.py:39"
+  ],
+  "status_404": [],
+  "raise_for_status": [
+   "gdeltforge/gdeltforge-0.4.0/src/gdeltforge/scraping/scraper.py:135",
+   "gdeltforge/gdeltforge-0.4.0/tests/test_scraper.py:297"
+  ],
+  "try_except": [
+   "gdeltforge/gdeltforge-0.4.0/src/gdeltforge/cli.py:71",
+   "gdeltforge/gdeltforge-0.4.0/src/gdeltforge/__init__.py:3",
+   "gdeltforge/gdeltforge-0.4.0/src/gdeltforge/conversion/converter.py:221",
+   "gdeltforge/gdeltforge-0.4.0/src/gdeltforge/filtering/filter.py:170",
+   "gdeltforge/gdeltforge-0.4.0/src/gdeltforge/scraping/scraper.py:237",
+   "gdeltforge/gdeltforge-0.4.0/src/gdeltforge/utils/config.py:31",
+   "gdeltforge/gdeltforge-0.4.0/src/gdeltforge/utils/io.py:42",
+   "gdeltforge/gdeltforge-0.4.0/src/gdeltforge/sampling/samplers.py:474"
+  ],
+  "timedelta_grid": [],
+  "zipfile": [
+   "gdeltforge/gdeltforge-0.4.0/src/gdeltforge/conversion/converter.py:38",
+   "gdeltforge/gdeltforge-0.4.0/src/gdeltforge/utils/io.py:2",
+   "gdeltforge/gdeltforge-0.4.0/tests/test_converter.py:1",
+   "gdeltforge/gdeltforge-0.4.0/docs/configuration.md:52"
+  ]
+ },
+ {
+  "package": "gdeltnews",
+  "text_files": 14,
+  "raw_file_host": [
+   "gdeltnews/gdeltnews-1.0.22/README.md:14",
+   "gdeltnews/gdeltnews-1.0.22/src/gdeltnews/download.py:29"
+  ],
+  "doc_api_host": [],
+  "masterfilelist": [],
+  "md5_token": [],
+  "hashlib": [],
+  "digest_compare": [],
+  "status_404": [],
+  "raise_for_status": [],
+  "try_except": [
+   "gdeltnews/gdeltnews-1.0.22/src/gdeltnews/__init__.py:21",
+   "gdeltnews/gdeltnews-1.0.22/src/gdeltnews/reconstruct.py:38",
+   "gdeltnews/gdeltnews-1.0.22/src/gdeltnews/wordmatch.py:412",
+   "gdeltnews/gdeltnews-1.0.22/src/gdeltnews/filtermerge.py:30",
+   "gdeltnews/gdeltnews-1.0.22/src/gdeltnews/download.py:70",
+   "gdeltnews/gdeltnews-1.0.22/tests/test_query_match.py:79"
+  ],
+  "timedelta_grid": [],
+  "zipfile": []
+ },
+ {
+  "package": "gdeltnews-rs",
+  "text_files": 12,
+  "raw_file_host": [
+   "gdeltnews-rs/gdeltnews_rs-0.1.3/README.md:57",
+   "gdeltnews-rs/gdeltnews_rs-0.1.3/python/gdeltnews_rs/download.py:23"
+  ],
+  "doc_api_host": [],
+  "masterfilelist": [],
+  "md5_token": [],
+  "hashlib": [],
+  "digest_compare": [],
+  "status_404": [],
+  "raise_for_status": [],
+  "try_except": [
+   "gdeltnews-rs/gdeltnews_rs-0.1.3/python/gdeltnews_rs/filtermerge.py:21",
+   "gdeltnews-rs/gdeltnews_rs-0.1.3/python/gdeltnews_rs/download.py:45"
+  ],
+  "timedelta_grid": [],
+  "zipfile": []
+ },
+ {
+  "package": "gdelttools",
+  "text_files": 23,
+  "raw_file_host": [
+   "gdelttools/gdelttools-0.7b2/README.md:54",
+   "gdelttools/gdelttools-0.7b2/gdelttools/gdeltwebdata.py:8",
+   "gdelttools/gdelttools-0.7b2/gdelttools/gdeltfile.py:42",
+   "gdelttools/gdelttools-0.7b2/gdelttools/gdeltloader.py:6",
+   "gdelttools/gdelttools-0.7b2/test/test_gdeltfile.py:11"
+  ],
+  "doc_api_host": [],
+  "masterfilelist": [
+   "gdelttools/gdelttools-0.7b2/README.md:23",
+   "gdelttools/gdelttools-0.7b2/gdelttools/gdeltwebdata.py:13",
+   "gdelttools/gdelttools-0.7b2/gdelttools/gdeltloader.py:6",
+   "gdelttools/gdelttools-0.7b2/test/test_web.py:10"
+  ],
+  "md5_token": [
+   "gdelttools/gdelttools-0.7b2/gdelttools/gdeltwebdata.py:20",
+   "gdelttools/gdelttools-0.7b2/gdelttools/gdeltfile.py:14",
+   "gdelttools/gdelttools-0.7b2/test/test_gdeltfile.py:10"
+  ],
+  "hashlib": [
+   "gdelttools/gdelttools-0.7b2/gdelttools/gdeltfile.py:1"
+  ],
+  "digest_compare": [
+   "gdelttools/gdelttools-0.7b2/gdelttools/gdeltwebdata.py:8",
+   "gdelttools/gdelttools-0.7b2/gdelttools/gdeltfile.py:19"
+  ],
+  "status_404": [],
+  "raise_for_status": [
+   "gdelttools/gdelttools-0.7b2/gdelttools/web.py:49"
+  ],
+  "try_except": [
+   "gdelttools/gdelttools-0.7b2/gdelttools/gdeltfile.py:177"
+  ],
+  "timedelta_grid": [],
+  "zipfile": [
+   "gdelttools/gdelttools-0.7b2/README.md:34",
+   "gdelttools/gdelttools-0.7b2/gdelttools/gdeltfile.py:4",
+   "gdelttools/gdelttools-0.7b2/gdelttools/web.py:6",
+   "gdelttools/gdelttools-0.7b2/test/test_gdeltfile.py:3"
+  ]
+ },
+ {
+  "package": "getgdelt",
+  "text_files": 7,
+  "raw_file_host": [
+   "getgdelt/getgdelt-1.0.0/getgdelt/__init__.py:4"
+  ],
+  "doc_api_host": [],
+  "masterfilelist": [],
+  "md5_token": [],
+  "hashlib": [],
+  "digest_compare": [],
+  "status_404": [],
+  "raise_for_status": [],
+  "try_except": [],
+  "timedelta_grid": [],
+  "zipfile": []
+ },
+ {
+  "package": "niugdelt",
+  "text_files": 11,
+  "raw_file_host": [],
+  "doc_api_host": [],
+  "masterfilelist": [],
+  "md5_token": [],
+  "hashlib": [],
+  "digest_compare": [],
+  "status_404": [],
+  "raise_for_status": [],
+  "try_except": [
+   "niugdelt/niugdelt-0.0.1/src/niugdelt/niugdelt1.py:183",
+   "niugdelt/niugdelt-0.0.1/src/niugdelt/niugdelt0.py:72"
+  ],
+  "timedelta_grid": [],
+  "zipfile": []
+ },
+ {
+  "package": "niugdelt1",
+  "text_files": 11,
+  "raw_file_host": [],
+  "doc_api_host": [],
+  "masterfilelist": [],
+  "md5_token": [],
+  "hashlib": [],
+  "digest_compare": [],
+  "status_404": [],
+  "raise_for_status": [],
+  "try_except": [
+   "niugdelt1/niugdelt1-0.0.1/src/niugdelt1/niugdelt1.py:182",
+   "niugdelt1/niugdelt1-0.0.1/src/niugdelt1/niugdelt0.py:72"
+  ],
+  "timedelta_grid": [],
+  "zipfile": []
+ },
+ {
+  "package": "pygdelt",
+  "text_files": 10,
+  "raw_file_host": [
+   "pygdelt/pygdelt/gdeltv2.py:47",
+   "pygdelt/pygdelt/gdeltv1.py:33",
+   "pygdelt/pygdelt/tests/test_gdeltv1.py:13",
+   "pygdelt/pygdelt/tests/test_gdeltv2.py:12"
+  ],
+  "doc_api_host": [],
+  "masterfilelist": [],
+  "md5_token": [],
+  "hashlib": [],
+  "digest_compare": [],
+  "status_404": [],
+  "raise_for_status": [],
+  "try_except": [],
+  "timedelta_grid": [],
+  "zipfile": []
+ }
+]

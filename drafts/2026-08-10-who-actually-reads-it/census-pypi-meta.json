@@ -1,0 +1,365 @@
+[
+ {
+  "name": "GDELT21",
+  "version": "0.0.1",
+  "summary": "NIU GDELT",
+  "home_page": {
+   "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
+   "Homepage": "https://github.com/pypa/sampleproject"
+  },
+  "last_upload": "2023-05-19T02:43:31.478885Z",
+  "n_releases": 1,
+  "sdist_url": "https://files.pythonhosted.org/packages/54/8e/dfa79c8751eb48089e6cdb38f05e5462f031b9d8f05335eef0ff475ee0c3/gdelt21-0.0.1.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/35/0f/b37b3d5af5608a1582bba243aeb46387586e41aace0755cfde4af827f197/gdelt21-0.0.1-py3-none-any.whl",
+  "requires_dist": null
+ },
+ {
+  "name": "GDELT22",
+  "version": "0.0.1",
+  "summary": "NIU GDELT",
+  "home_page": {
+   "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
+   "Homepage": "https://github.com/pypa/sampleproject"
+  },
+  "last_upload": "2023-05-19T20:59:34.642434Z",
+  "n_releases": 1,
+  "sdist_url": "https://files.pythonhosted.org/packages/21/2d/b64e54bab1264c6145964bdfaf0944a6d4a93e268924b18ad044584ce6d4/gdelt22-0.0.1.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/e3/f6/0852a0ec61244c3ad596083239e7c9d250b359d407340c9d01df4bf45de6/gdelt22-0.0.1-py3-none-any.whl",
+  "requires_dist": null
+ },
+ {
+  "name": "GDELT23",
+  "version": "0.0.1",
+  "summary": "NIU GDELT",
+  "home_page": {
+   "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
+   "Homepage": "https://github.com/pypa/sampleproject"
+  },
+  "last_upload": "2023-05-19T21:21:01.785349Z",
+  "n_releases": 1,
+  "sdist_url": "https://files.pythonhosted.org/packages/f9/25/5e20972bd9449e0b32b2acb131191100ad65020ab07c2f26e2a7034a386d/gdelt23-0.0.1.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/21/a4/2ea7ef5accbec7ce7a18ce4b1b8424bfad587aed521419adba0bb013cf82/gdelt23-0.0.1-py3-none-any.whl",
+  "requires_dist": null
+ },
+ {
+  "name": "gdelt",
+  "version": "0.1.14",
+  "summary": "Python-based framework to access and analyze Global Database of Events, Language, and Tone (GDELT) 1.0 or 2.0 data in a Python Pandas or R dataframe",
+  "home_page": "https://linwoodc3.github.io/gdeltPyR/",
+  "last_upload": "2023-11-27T05:40:59.665899Z",
+  "n_releases": 11,
+  "sdist_url": "https://files.pythonhosted.org/packages/c8/6d/a177f93e6a1e9d02d18427258c4d6f67f2ea530e884de6eb11c2895d3b26/gdelt-0.1.14.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/cc/ff/5bf938a08cef3ac139bbf2f450de586952af2524a8e12fd9d0e613485bad/gdelt-0.1.14-py2.py3-none-any.whl",
+  "requires_dist": [
+   "numpy >=1.11.1",
+   "pandas >=0.23",
+   "requests >=2.31.0",
+   "python-dateutil >=2.8.2",
+   "mock ; python_version<'3.3'",
+   "futures ; python_version<'3.3'",
+   "fiona >=1.6 ; extra == 'geospatial'",
+   "shapely >=1.5 ; extra == 'geospatial'",
+   "geopandas >1.7 ; extra == 'geospatial'",
+   "pyarrow ; extra == 'r'"
+  ]
+ },
+ {
+  "name": "gdelt-client",
+  "version": "0.2.1",
+  "summary": "A client for the GDELT 2.0 API",
+  "home_page": {},
+  "last_upload": "2026-02-18T23:11:26.401684Z",
+  "n_releases": 3,
+  "sdist_url": "https://files.pythonhosted.org/packages/29/64/dff9cea9c98ba32fedabc048c55c05481212f606525aa8f02d903ddbacb3/gdelt_client-0.2.1.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/b3/ca/8670c8d9f515a022af34f865ff9ab1b7509acb90774b7682370a1901d5ca/gdelt_client-0.2.1-py3-none-any.whl",
+  "requires_dist": [
+   "aiohttp>=3.13.3",
+   "geopandas>=1.1.2",
+   "pandas>=3.0.0",
+   "requests>=2.32.5",
+   "tenacity>=9.1.3"
+  ]
+ },
+ {
+  "name": "gdelt-process-tone",
+  "version": "0.0.13",
+  "summary": "Returns tone and location json files",
+  "home_page": {},
+  "last_upload": "2018-08-13T19:37:56.106582Z",
+  "n_releases": 13,
+  "sdist_url": "https://files.pythonhosted.org/packages/bf/2b/e9a0357a795074bdb2ba557b7d8c63647de8edf0a2b4da41a0693afee102/gdelt_process_tone-0.0.13.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/78/7d/cd1fecb21ada37bf987f6fc8e4784aa895cd6cf757cdf02abb0c8c10392d/gdelt_process_tone-0.0.13-py2.py3-none-any.whl",
+  "requires_dist": null
+ },
+ {
+  "name": "gdelt-py",
+  "version": "0.1.11",
+  "summary": "Python client library for GDELT (Global Database of Events, Language, and Tone)",
+  "home_page": {
+   "Documentation": "https://github.com/RBozydar/py-gdelt#readme",
+   "Homepage": "https://github.com/RBozydar/py-gdelt",
+   "Issues": "https://github.com/RBozydar/py-gdelt/issues",
+   "Repository": "https://github.com/RBozydar/py-gdelt"
+  },
+  "last_upload": "2026-06-27T11:14:09.841222Z",
+  "n_releases": 4,
+  "sdist_url": "https://files.pythonhosted.org/packages/23/29/8a86b70bdcb8011a459cce2d495333a3432d869e60d458f5154b79a99a4f/gdelt_py-0.1.11.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/22/5b/700baba54fb9358b872c1db81bfe752b11fbe5da782ca784ede6f95d4a42/gdelt_py-0.1.11-py3-none-any.whl",
+  "requires_dist": [
+   "httpx>=0.28.1",
+   "pydantic>=2.12.5",
+   "pydantic-settings>=2.12.0",
+   "tenacity>=9.1.2",
+   "tqdm>=4.67.1",
+   "defusedxml>=0.7.1",
+   "anyio>=4.0",
+   "urllib3>=2.6.3",
+   "google-cloud-bigquery>=3.0; extra == \"bigquery\"",
+   "commitizen>=3.0; extra == \"dev\"",
+   "geonamescache>=2.0; extra == \"dev\"",
+   "interrogate>=1.7.0; extra == \"dev\"",
+   "memray>=1.19.1; extra == \"dev\"",
+   "mypy>=1.0; extra == \"dev\"",
+   "pip-audit>=2.0; extra == \"dev\"",
+   "pre-commit>=3.5.0; extra == \"dev\"",
+   "pydoclint>=0.5.0; extra == \"dev\"",
+   "pyright>=1.1.408; extra == \"dev\"",
+   "pytest>=8.0; extra == \"dev\"",
+   "pytest-asyncio>=0.23; extra == \"dev\"",
+   "pytest-cov>=4.0; extra == \"dev\"",
+   "pytest-timeout>=2.0; extra == \"dev\"",
+   "rapidfuzz>=3.0; extra == \"dev\"",
+   "respx>=0.21; extra == \"dev\"",
+   "ruff>=0.8; extra == \"dev\"",
+   "mkdocs>=1.5; extra == \"docs\"",
+   "mkdocs-material>=9.0; extra == \"docs\"",
+   "mkdocstrings[python]>=0.24; extra == \"docs\"",
+   "mkdocs-llmstxt>=0.2.0; extra == \"docs\"",
+   "rapidfuzz>=3.0; extra == \"fuzzy\"",
+   "mcp>=1.0; extra == \"mcp\"",
+   "pandas>=2.0; extra == \"pandas\""
+  ]
+ },
+ {
+  "name": "gdelt2py",
+  "version": "0.1.6",
+  "summary": "A Python package for downloading and processing Gdelt data (current only GKG, will be extened)",
+  "home_page": {
+   "Bug Tracker": "https://github.com/RakerZh/gdelt2py/issues",
+   "Homepage": "https://github.com/RakerZh/gdelt2py"
+  },
+  "last_upload": "2023-02-13T08:57:59.883880Z",
+  "n_releases": 1,
+  "sdist_url": "https://files.pythonhosted.org/packages/0c/07/1f7f2d712a3f16b0e6380c0d4eabf1b354cb939e30e44761816b1c6021a0/gdelt2py-0.1.6.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/f9/a8/dad170dad8482415b693bed460e98ddff4f22517438b36da33254e0aea00/gdelt2py-0.1.6-py3-none-any.whl",
+  "requires_dist": [
+   "aiohttp (>=3.8.3)",
+   "numpy (>=1.24.2)",
+   "pandas (>=1.5.2)"
+  ]
+ },
+ {
+  "name": "gdelt_util",
+  "version": "0.15",
+  "summary": "Utilites exploring GDELT data set",
+  "home_page": "http://github.com/davefol/gdelt_util",
+  "last_upload": "2015-03-20T06:29:54.709878Z",
+  "n_releases": 6,
+  "sdist_url": "https://files.pythonhosted.org/packages/64/bb/9a6689e7e3f2ba23750ac0439a7abdd8fe89384c84638bd44a893ed03bbc/gdelt_util-0.15.tar.gz",
+  "wheel_url": null,
+  "requires_dist": null
+ },
+ {
+  "name": "gdeltdoc",
+  "version": "1.12.0",
+  "summary": "A client for the GDELT 2.0 Doc API",
+  "home_page": "https://github.com/alex9smith/gdelt-doc-api",
+  "last_upload": "2025-04-03T09:01:31.582119Z",
+  "n_releases": 20,
+  "sdist_url": "https://files.pythonhosted.org/packages/1d/d6/33bea6847f8e8fb701464cdef7fadff18b7e38f7e31736e943f96f6c8723/gdeltdoc-1.12.0.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/43/df/acb3cd71a9b8027d94d3b407312c4073423bccb1eed2a2cdcd00230a8c3d/gdeltdoc-1.12.0-py3-none-any.whl",
+  "requires_dist": [
+   "pandas>=2.2.3",
+   "requests>=2.32.3",
+   "typing-extensions>=4.13.0"
+  ]
+ },
+ {
+  "name": "gdeltforge",
+  "version": "0.4.0",
+  "summary": "Forges the raw GDELT 2.0 Events archive into clean, reproducibly-sampled Parquet datasets",
+  "home_page": {
+   "Changelog": "https://github.com/Vinicius-Teixeirac/GdeltForge/blob/main/CHANGELOG.md",
+   "Documentation": "https://vinicius-teixeirac.github.io/GdeltForge/",
+   "Homepage": "https://vinicius-teixeirac.github.io/GdeltForge/",
+   "Issues": "https://github.com/Vinicius-Teixeirac/GdeltForge/issues",
+   "Repository": "https://github.com/Vinicius-Teixeirac/GdeltForge"
+  },
+  "last_upload": "2026-08-05T13:20:38.792270Z",
+  "n_releases": 1,
+  "sdist_url": "https://files.pythonhosted.org/packages/56/94/d63bd9858afbb01893d24c27ee50b2659c13943762c5a63ca27855a5cbcb/gdeltforge-0.4.0.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/a1/b9/67aee3f6713a376ca32620a644f9d68720dd682719610df70caedbfc1ded/gdeltforge-0.4.0-py3-none-any.whl",
+  "requires_dist": [
+   "numpy>=1.26",
+   "pandas>=2.0",
+   "pyarrow>=14.0",
+   "pyyaml>=6.0",
+   "requests>=2.28",
+   "tqdm>=4.60",
+   "selenium>=4.0; extra == \"selenium\"",
+   "webdriver-manager>=4.0; extra == \"selenium\""
+  ]
+ },
+ {
+  "name": "gdeltnews",
+  "version": "1.0.22",
+  "summary": "Reconstruct full-text news articles from GDELT Web News NGrams 3.0",
+  "home_page": {
+   "Homepage": "https://github.com/iandreafc/gdeltnews",
+   "Repository": "https://github.com/iandreafc/gdeltnews"
+  },
+  "last_upload": "2026-07-28T16:36:03.141471Z",
+  "n_releases": 4,
+  "sdist_url": "https://files.pythonhosted.org/packages/c5/8f/33946c38f0ff41edb98b2abfde82349d1a093f33adea493d1d00f563cdf3/gdeltnews-1.0.22.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/07/3e/c886c16c563c619c3b459b993ccef31056c70274715e83697d08a842c5a7/gdeltnews-1.0.22-py3-none-any.whl",
+  "requires_dist": [
+   "requests>=2.0",
+   "tqdm>=4.0",
+   "boolean.py>=5.0"
+  ]
+ },
+ {
+  "name": "gdeltnews-rs",
+  "version": "0.1.3",
+  "summary": "Fast GDELT Web NGrams news reconstruction engine (Rust-powered)",
+  "home_page": {},
+  "last_upload": "2026-03-05T19:14:29.566651Z",
+  "n_releases": 1,
+  "sdist_url": "https://files.pythonhosted.org/packages/c6/29/65c0374c2452d327d47410510409d60604f42b6c7646af40d14e1a8fae92/gdeltnews_rs-0.1.3.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/72/8d/04cb2306509f043666ae3cad5bfbe3536b099dbe56b62a72b564eb30012b/gdeltnews_rs-0.1.3-cp312-cp312-macosx_10_12_x86_64.whl",
+  "requires_dist": [
+   "requests>=2.0",
+   "tqdm>=4.0",
+   "boolean-py>=5.0"
+  ]
+ },
+ {
+  "name": "gdelttools",
+  "version": "0.7b2",
+  "summary": "A set of tools to support downloading GDELT data",
+  "home_page": "https://github.com/jdrumgoole/gdelttools",
+  "last_upload": "2022-05-03T20:42:23.415077Z",
+  "n_releases": 10,
+  "sdist_url": "https://files.pythonhosted.org/packages/5b/aa/ed7cf3bb4d58b7e30d87e7bef8e4958e0b57a47b938c6c19c02fbefef785/gdelttools-0.7b2.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/6e/ed/e0f863799d83d8445cd106ab3bfcf300470f7c5210bbbed64f060da64ebf/gdelttools-0.7b2-py3-none-any.whl",
+  "requires_dist": [
+   "pymongo",
+   "requests"
+  ]
+ },
+ {
+  "name": "getgdelt",
+  "version": "1.0.0",
+  "summary": "Get and use gdelt data more reliably without hardware limitation.",
+  "home_page": "https://github.com/syfyufei/getgdelt",
+  "last_upload": "2020-04-17T06:54:05.311810Z",
+  "n_releases": 2,
+  "sdist_url": "https://files.pythonhosted.org/packages/9b/ff/a5733f078a2e9714142a1dd2caabcab26613c783f317bfd7a76b3be7eddf/getgdelt-1.0.0.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/c4/13/26df86bd6fc7208d928355818dd05e4c317b6f1aaee66b130bfd56e3bfd8/getgdelt-1.0.0-py3-none-any.whl",
+  "requires_dist": null
+ },
+ {
+  "name": "logdelta",
+  "version": "1.0.1",
+  "summary": "LogDelta - Go Beyond Grepping with NLP-based Log File Analysis",
+  "home_page": {},
+  "last_upload": "2026-02-12T07:41:15.938833Z",
+  "n_releases": 3,
+  "sdist_url": "https://files.pythonhosted.org/packages/c2/39/6d2e3e434fa064600b4482b5fbc228defdc05e0174516abea5e27559054e/logdelta-1.0.1.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/16/53/1b8dfbe018af5d11325952d5f792273e8d41e6a288dcb2e1863b693dea84/logdelta-1.0.1-py3-none-any.whl",
+  "requires_dist": [
+   "loglead>=1.2.1",
+   "XlsxWriter"
+  ]
+ },
+ {
+  "name": "niugdelt",
+  "version": "0.0.1",
+  "summary": "NIU GDELT",
+  "home_page": {
+   "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
+   "Homepage": "https://github.com/pypa/sampleproject"
+  },
+  "last_upload": "2023-05-22T00:39:41.705161Z",
+  "n_releases": 1,
+  "sdist_url": "https://files.pythonhosted.org/packages/d0/82/284c8115c9d9b3add77edaf0c2d98a9b0e5b78bc9b21a77251c4b86bce91/niugdelt-0.0.1.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/dd/04/4b9bf847038f4c86aa9fa962fda3c4c9b534786580893d6081f2af13c084/niugdelt-0.0.1-py3-none-any.whl",
+  "requires_dist": null
+ },
+ {
+  "name": "niugdelt1",
+  "version": "0.0.1",
+  "summary": "NIU GDELT",
+  "home_page": {
+   "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
+   "Homepage": "https://github.com/pypa/sampleproject"
+  },
+  "last_upload": "2023-05-22T01:29:23.919350Z",
+  "n_releases": 1,
+  "sdist_url": "https://files.pythonhosted.org/packages/ea/5f/38c3d660d13797c509d0b0d662b769d40a61c93758a189a81e6e95e9f9b0/niugdelt1-0.0.1.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/cc/2e/f3cba19611c34269630335124cbe0f51f3bb8ce5e63a2469c1bc62e065f5/niugdelt1-0.0.1-py3-none-any.whl",
+  "requires_dist": null
+ },
+ {
+  "name": "pgdelta",
+  "version": "0.1.0",
+  "summary": "PostgreSQL schema differ and DDL generator",
+  "home_page": {
+   "Homepage": "https://github.com/olirice/pgdelta",
+   "Issues": "https://github.com/olirice/pgdelta/issues",
+   "Repository": "https://github.com/olirice/pgdelta.git"
+  },
+  "last_upload": "2025-07-18T14:52:17.727555Z",
+  "n_releases": 1,
+  "sdist_url": "https://files.pythonhosted.org/packages/68/92/08e8560440054c1558bf623c0719622aa92ba2fff22cf871a05b98c1e312/pgdelta-0.1.0.tar.gz",
+  "wheel_url": "https://files.pythonhosted.org/packages/03/ed/1e20e8e21ff6b45e179800cae34981aae00e2a4ca52f39c364e7ad4d4d18/pgdelta-0.1.0-py3-none-any.whl",
+  "requires_dist": [
+   "flupy>=1.2.3",
+   "networkx>=3.0",
+   "psutil>=5.9.0",
+   "psycopg2-binary>=2.9",
+   "rich>=13.0",
+   "sqlalchemy>=2.0",
+   "typer>=0.12.0",
+   "docker>=6.0; extra == \"dev\"",
+   "mypy>=1.0; extra == \"dev\"",
+   "pre-commit>=3.0; extra == \"dev\"",
+   "pytest-cov>=4.0; extra == \"dev\"",
+   "pytest-mock>=3.0; extra == \"dev\"",
+   "pytest-postgresql>=4.0; extra == \"dev\"",
+   "pytest-xdist>=3.0; extra == \"dev\"",
+   "pytest>=7.0; extra == \"dev\"",
+   "ruff>=0.1; extra == \"dev\"",
+   "testcontainers>=3.0; extra == \"dev\"",
+   "types-psutil>=5.9.0; extra == \"dev\"",
+   "mkdocs-material>=9.0.0; extra == \"docs\"",
+   "mkdocs>=1.5.0; extra == \"docs\"",
+   "mkdocstrings[python]>=0.24.0; extra == \"docs\"",
+   "pymdown-extensions>=10.0.0; extra == \"docs\""
+  ]
+ },
+ {
+  "name": "pygdelt",
+  "version": "0.0.1a1",
+  "summary": "An easy interface to GDELT datasets",
+  "home_page": "https://github.com/yesemsanthoshkumar/pygdelt",
+  "last_upload": "2018-05-10T17:37:15.300525Z",
+  "n_releases": 1,
+  "sdist_url": null,
+  "wheel_url": "https://files.pythonhosted.org/packages/95/c7/117b58a42cfc1fbe83eda31229c80e584ca8429e2e6149c689ab3f57a3b1/pygdelt-0.0.1a1-py3-none-any.whl",
+  "requires_dist": [
+   "requests (>=2.18.4)",
+   "tqdm (>=4.23.2)"
+  ]
+ }
+]

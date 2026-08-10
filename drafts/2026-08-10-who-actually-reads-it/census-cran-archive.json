@@ -1,0 +1,8 @@
+{
+ "endpoint": "https://cran.r-project.org/src/contrib/Archive/",
+ "http_status": 200,
+ "archived_package_dirs": 27546,
+ "hits": [
+  "GDELTtools"
+ ]
+}

@@ -1,0 +1,136 @@
+[
+ {
+  "name": "GDELT21",
+  "url": "https://files.pythonhosted.org/packages/54/8e/dfa79c8751eb48089e6cdb38f05e5462f031b9d8f05335eef0ff475ee0c3/gdelt21-0.0.1.tar.gz",
+  "sha256": "6943c727582cdfb821c74a4a8567937556ec849b16e962553b97759a076c01d5",
+  "bytes": 3015,
+  "files": 16
+ },
+ {
+  "name": "GDELT22",
+  "url": "https://files.pythonhosted.org/packages/21/2d/b64e54bab1264c6145964bdfaf0944a6d4a93e268924b18ad044584ce6d4/gdelt22-0.0.1.tar.gz",
+  "sha256": "3797f9e8aa6bbec917821a7ae83ccec79e07e37678b8e691b51407bf19c40853",
+  "bytes": 2768,
+  "files": 13
+ },
+ {
+  "name": "GDELT23",
+  "url": "https://files.pythonhosted.org/packages/f9/25/5e20972bd9449e0b32b2acb131191100ad65020ab07c2f26e2a7034a386d/gdelt23-0.0.1.tar.gz",
+  "sha256": "57c5bf377da5f8af498102a1cfb57dc40287a8eb7fec8f1b889b46e5d4a9b9d1",
+  "bytes": 2762,
+  "files": 13
+ },
+ {
+  "name": "gdelt",
+  "url": "https://files.pythonhosted.org/packages/c8/6d/a177f93e6a1e9d02d18427258c4d6f67f2ea530e884de6eb11c2895d3b26/gdelt-0.1.14.tar.gz",
+  "sha256": "474cc92335a7fc956b1190d85a0f91cdb2e4053a4cbd18b853cb4551ccaac39f",
+  "bytes": 1030717,
+  "files": 111
+ },
+ {
+  "name": "gdelt-client",
+  "url": "https://files.pythonhosted.org/packages/29/64/dff9cea9c98ba32fedabc048c55c05481212f606525aa8f02d903ddbacb3/gdelt_client-0.2.1.tar.gz",
+  "sha256": "5d333b272ba69e0999005eacaa7bfdf924e5f3e660d24612e87c9eea28ebf535",
+  "bytes": 159333,
+  "files": 34
+ },
+ {
+  "name": "gdelt-process-tone",
+  "url": "https://files.pythonhosted.org/packages/bf/2b/e9a0357a795074bdb2ba557b7d8c63647de8edf0a2b4da41a0693afee102/gdelt_process_tone-0.0.13.tar.gz",
+  "sha256": "98185c9f2638c29aadd254e5a2a46cd5c4fc1d90bc8ec530c79e2cd724cf5ca9",
+  "bytes": 6957,
+  "files": 9
+ },
+ {
+  "name": "gdelt-py",
+  "url": "https://files.pythonhosted.org/packages/23/29/8a86b70bdcb8011a459cce2d495333a3432d869e60d458f5154b79a99a4f/gdelt_py-0.1.11.tar.gz",
+  "sha256": "5cc1b3345f36bed2b7bb04a5e04cbef2a198adb66b73e4285437b1876f1183a3",
+  "bytes": 1451007,
+  "files": 79
+ },
+ {
+  "name": "gdelt2py",
+  "url": "https://files.pythonhosted.org/packages/0c/07/1f7f2d712a3f16b0e6380c0d4eabf1b354cb939e30e44761816b1c6021a0/gdelt2py-0.1.6.tar.gz",
+  "sha256": "d6ea2fffe2839649847930a5141157d0e6410517f5595f9dbcc971218451ebae",
+  "bytes": 8969,
+  "files": 15
+ },
+ {
+  "name": "gdelt_util",
+  "url": "https://files.pythonhosted.org/packages/64/bb/9a6689e7e3f2ba23750ac0439a7abdd8fe89384c84638bd44a893ed03bbc/gdelt_util-0.15.tar.gz",
+  "sha256": "f833fd284e03d44f7f7a481bf7ed39f7117b11a4711e32af4561def483eb012e",
+  "bytes": 3246,
+  "files": 12
+ },
+ {
+  "name": "gdeltdoc",
+  "url": "https://files.pythonhosted.org/packages/1d/d6/33bea6847f8e8fb701464cdef7fadff18b7e38f7e31736e943f96f6c8723/gdeltdoc-1.12.0.tar.gz",
+  "sha256": "f95f84011df577a3d6db11cea54ccca2aa7dc5ad7d184b5a0bba3908098813d2",
+  "bytes": 15121,
+  "files": 23
+ },
+ {
+  "name": "gdeltforge",
+  "url": "https://files.pythonhosted.org/packages/56/94/d63bd9858afbb01893d24c27ee50b2659c13943762c5a63ca27855a5cbcb/gdeltforge-0.4.0.tar.gz",
+  "sha256": "62c2f5bb145f2bddcb5a256885d32bd268ba19982cb0d0ef1c4956dd7ae5226d",
+  "bytes": 1656362,
+  "files": 66
+ },
+ {
+  "name": "gdeltnews",
+  "url": "https://files.pythonhosted.org/packages/c5/8f/33946c38f0ff41edb98b2abfde82349d1a093f33adea493d1d00f563cdf3/gdeltnews-1.0.22.tar.gz",
+  "sha256": "14c3a056845391af43ec7d440275cea3425fd8724fcce66c6472d9b2a9a2c5e0",
+  "bytes": 57931,
+  "files": 17
+ },
+ {
+  "name": "gdeltnews-rs",
+  "url": "https://files.pythonhosted.org/packages/c6/29/65c0374c2452d327d47410510409d60604f42b6c7646af40d14e1a8fae92/gdeltnews_rs-0.1.3.tar.gz",
+  "sha256": "970efbc900c320942aed851c5a246629c42f42a17bfe4d7d4e949c3bb7a4fe69",
+  "bytes": 36980,
+  "files": 18
+ },
+ {
+  "name": "gdelttools",
+  "url": "https://files.pythonhosted.org/packages/5b/aa/ed7cf3bb4d58b7e30d87e7bef8e4958e0b57a47b938c6c19c02fbefef785/gdelttools-0.7b2.tar.gz",
+  "sha256": "e7d6319cd025cc53fe907b97c01c1048b14be326748b5d167246392743e09521",
+  "bytes": 16983,
+  "files": 26
+ },
+ {
+  "name": "getgdelt",
+  "url": "https://files.pythonhosted.org/packages/9b/ff/a5733f078a2e9714142a1dd2caabcab26613c783f317bfd7a76b3be7eddf/getgdelt-1.0.0.tar.gz",
+  "sha256": "ab3d04e30ef4547f571141cb72225f4e8c3ae539373c1145973fac9a05468f8d",
+  "bytes": 3090,
+  "files": 9
+ },
+ {
+  "name": "logdelta",
+  "skipped": "substring collision, not a consumer"
+ },
+ {
+  "name": "niugdelt",
+  "url": "https://files.pythonhosted.org/packages/d0/82/284c8115c9d9b3add77edaf0c2d98a9b0e5b78bc9b21a77251c4b86bce91/niugdelt-0.0.1.tar.gz",
+  "sha256": "757890b9713cf6c267dd2291b12dd78f79780daedd6a83e4c2049f33a9cd594c",
+  "bytes": 6597,
+  "files": 12
+ },
+ {
+  "name": "niugdelt1",
+  "url": "https://files.pythonhosted.org/packages/ea/5f/38c3d660d13797c509d0b0d662b769d40a61c93758a189a81e6e95e9f9b0/niugdelt1-0.0.1.tar.gz",
+  "sha256": "b9372b60c390fc75c3ae0a789a0886b77ff60e74fd16d9d0184848a9f507eb79",
+  "bytes": 6593,
+  "files": 12
+ },
+ {
+  "name": "pgdelta",
+  "skipped": "substring collision, not a consumer"
+ },
+ {
+  "name": "pygdelt",
+  "url": "https://files.pythonhosted.org/packages/95/c7/117b58a42cfc1fbe83eda31229c80e584ca8429e2e6149c689ab3f57a3b1/pygdelt-0.0.1a1-py3-none-any.whl",
+  "sha256": "a549270e0007cdbb02b31926c1ecaa428a389c13e457bb4e48462ace3d756f5a",
+  "bytes": 11073,
+  "files": 15
+ }
+]

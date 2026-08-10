@@ -1,0 +1,12 @@
+{
+ "endpoint": "https://crandb.r-pkg.org/-/desc",
+ "http_status": 200,
+ "total_packages": 24719,
+ "token": "gdelt",
+ "fields": [
+  "Package",
+  "Title",
+  "Description"
+ ],
+ "hits": []
+}

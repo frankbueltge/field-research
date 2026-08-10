@@ -1,0 +1,13 @@
+{
+ "endpoint": "https://cran.r-project.org/src/contrib/Archive/GDELTtools/",
+ "versions": [
+  "GDELTtools_1.0.1.tar.gz",
+  "GDELTtools_1.0.tar.gz",
+  "GDELTtools_1.2.tar.gz",
+  "GDELTtools_1.5.tar.gz",
+  "GDELTtools_1.6.tar.gz",
+  "GDELTtools_1.7.tar.gz"
+ ],
+ "fetched": "GDELTtools_1.7.tar.gz",
+ "bytes": 14544
+}

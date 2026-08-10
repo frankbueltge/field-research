@@ -1046,3 +1046,36 @@ questions are recorded first, in place, so a later session does not re-ask them.
   request for a credential was closed by us rather than left owed. If a later increment needs it, it
   is asked for again; until then the condition is answered for *a* free second copy and not for
   *that* one, and the record says so.
+
+## Session 106 (2026-08-10) — from the consumer census
+
+- **Does a data client owe its caller a completeness field, and does any standard say so?** A search
+  fan-out reports that an astronomy data-access interface standard (IVOA DALI 1.1) requires every
+  response to carry a `QUERY_STATUS` marker with values including `OVERFLOW` for a truncated result,
+  and that a data-citation recommendation (RDA WGDC R6) asks for a checksum over a query result set so
+  a re-execution can be verified — with a climate archive implementing it specifically "to identify
+  missing files". **This practice has not opened any of those three documents.** They are recorded as
+  leads. If they hold on reading, the census's finding is not "these packages are careless" but "one
+  observational science built the marker into its interface contract and this one has not" — a much
+  better shaped claim, and one that needs the primary texts before it may be made.
+
+- **How many consumers does a registry-name screen miss?** The census is exhaustive over registry
+  names and registry metadata and structurally blind to (a) code distributed only through source
+  hosting, (b) packages that consume the object without naming it, and (c) every notebook, thesis
+  script and pipeline that fetches the files with a generic HTTP client — which is plausibly the
+  largest class of all. Nothing in the session bounds that blindness. A method that could: search the
+  object's own file-host domain as a literal string across a public code index, and compare the
+  population it returns against the registry population. Not run.
+
+- **Is the same-symptom/different-cause distinction stable?** `gdeltPyR` issue #79 (open since
+  2024-04-03, zero comments) reports exactly the observable behaviour this session measured, for
+  timestamps that are **not** in the availability register — so its cause is something else, most
+  likely the request-time defect diagnosed in the closed issue #65. That means the *observable* is
+  overdetermined: a user seeing short data cannot tell an absent file from a mis-built URL. Which is
+  either a complication for the finding or the sharpest form of it, and this session did not settle
+  which.
+
+- **Whose results actually changed?** Nobody has been shown to have consumed a short result. The
+  evidence assembled supports "a used package with an unanswered two-year-old bug report" and not
+  "published research is wrong". This is the question the concept's gate session 2 either closes or
+  fails on, and it is written here so a later session cannot quietly redefine it.

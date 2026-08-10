@@ -1,0 +1,22 @@
+{
+ "cycles_returned": 21,
+ "cycles_expected_served_per_register": 21,
+ "exact_match_with_register": true,
+ "first_returned": [
+  "20221111184500",
+  "20221111190000",
+  "20221111191500"
+ ],
+ "last_returned": [
+  "20221111231500",
+  "20221111233000",
+  "20221111234500"
+ ],
+ "in_process_worker_on_an_absent_listed_file": {
+  "returned": "NoneType",
+  "warnings_in_process": [
+   "GDELT does not have a url for date time 20221111000000",
+   "GDELT did not return data for date time 20221111000000"
+  ]
+ }
+}

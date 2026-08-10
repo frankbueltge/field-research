@@ -290,3 +290,58 @@ measuring the free copy rather than conceding to it: **622 omitted quarter-hours
   shows why — one cycle is absent in the Translingual triple alone and served in the English one.
 - **A prediction that holds only at its floor is reported as a failed expectation**, not as a
   confirmation. P6 (a class of misdeclared sizes) returned one case in eleven years.
+
+---
+
+## Session 106 — 2026-08-10. The third concept opens, and the order is inverted
+
+**The move, and why this one.** Two concepts have failed their gates and both died in the same place:
+a receiver argument that had not been checked against the receiver's own executing code. Session 105's
+`FINDING.md` wrote the rule — *name a receiver only after establishing that a path through their code
+actually executes the defect* — and the session-105 adversary said, correctly, that writing the lesson
+down for a third time is not applying it. So this concept **starts from the consumers**:
+`drafts/2026-08-10-who-actually-reads-it/`, "Who Actually Reads It". The object's measured defects are
+the input; the question is whose executing code turns them into a wrong answer. **The concept may not
+name a receiver at all this session, by its own pre-registration.**
+
+**Method worth keeping — the registry census.** Package registries that distribute source themselves
+are an exhaustively enumerable population and need no code-hosting access: the Python index's own
+simple endpoint returns all 867,935 project names in one request (42.6 MB), and the R network
+publishes a complete descriptor database (24,719 packages) plus an archive directory of withdrawn ones
+(27,546). Source arrives as a tarball per package with a URL and a sha256 to pin it. **Declare the
+screen before running it** — a name screen and a metadata screen are exhaustive over *different*
+things, and both are blind to code that consumes an object without naming it.
+
+**Method worth keeping — reading is not enough; execute.** This session classified `gdelt-py` from its
+source as having no incompleteness marker, and that was **wrong**: the package carries a
+partial-failure container (`FetchResult.failed/.complete/.partial/.total_failed`). Executing it caught
+the error before publication — and produced a sharper finding than the wrong reading would have: the
+container reports `complete = true, total_failed = 0` on a day where **every file it requested was
+absent**. *A reading of source is a hypothesis about behaviour. The behaviour is the measurement.*
+
+**Method worth keeping — the harness can eat your own evidence.** The first demonstration reported
+"0 warnings" from `gdelt` 0.1.14. That figure was an artifact: the package downloads in forked worker
+processes, which inherit the parent's `warnings.catch_warnings(record=True)` recorder, so the children
+recorded into their own copies. Re-run bare: **150 warning lines on stderr**. Any measurement of what a
+library *tells* its caller must be taken with the harness's own capture machinery switched off, and the
+capture idiom itself is part of what is being measured.
+
+**The standing check, run first and this time it neither saved nor sank us.** The object's data page,
+its canonical 2.0 announcement and one consumer's documentation site were fetched **before** the
+write-up: none states that the master list may promise a file the host does not serve, and none advises
+verifying the published MD5. But a fan-out then found — and this practice re-opened and confirmed — that
+the affected package's **own README documents its warning**. The word *silent* was retired the same
+session. **The check now has a third half: run it against the consumer's documentation too, not only
+the object's.**
+
+**Standing constraints on anything that travels from here.**
+- Every behaviour statement is about **the exact version named**, as distributed on 2026-08-10.
+- **Three of seven** fetching packages were executed; the rest are readings of source and are labelled
+  so in every row.
+- **The control day is not a counterfactual.** 116,317 rows is a neighbouring complete day; what
+  2022-11-11 would have held is unknowable. The load-bearing figure is **21 of 96 cycles, unmarked**.
+- **No claim that any published result is wrong.** The one open third-party report of the same symptom
+  (`gdeltPyR` issue #79, open since 2024-04-03, zero comments) cites timestamps that are **not** in the
+  register: same symptom, different cause.
+- **The affected population is the small end of the family.** The most-downloaded client in it does not
+  consume the measured series at all.

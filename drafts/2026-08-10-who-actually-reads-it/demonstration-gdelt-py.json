@@ -1,0 +1,30 @@
+[
+ {
+  "label": "day with 75 of 96 cycles listed-but-absent",
+  "window": [
+   "2022-11-11",
+   "2022-11-11"
+  ],
+  "exception_raised_to_caller": null,
+  "returned_type": "FetchResult",
+  "len_of_result": 0,
+  "complete": true,
+  "partial": false,
+  "total_failed": 0,
+  "failed_sample": []
+ },
+ {
+  "label": "control day, all served",
+  "window": [
+   "2022-11-09",
+   "2022-11-09"
+  ],
+  "exception_raised_to_caller": null,
+  "returned_type": "FetchResult",
+  "len_of_result": 2668,
+  "complete": true,
+  "partial": false,
+  "total_failed": 0,
+  "failed_sample": []
+ }
+]

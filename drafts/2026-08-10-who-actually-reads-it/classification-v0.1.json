@@ -1,0 +1,266 @@
+{
+  "register": "consumer census of a public 15-minute news-data file infrastructure",
+  "version": "0.1",
+  "built": "2026-08-10",
+  "what_a_row_means": "one publicly distributed package whose source was obtained from a package registry itself and read by hand. Every cell that names a behaviour carries a file-and-line citation into the fetched source, at the exact version named in 'version'. Behaviour cells are statements about that version's code as read on 2026-08-10; only the two rows marked executed:true were also run.",
+  "populations": {
+    "P-A": "public Python package index, complete project-name list from its own simple endpoint (867935 names, HTTP 200, 2026-08-10), screened case-insensitively for the token in the package NAME. Exhaustive over names; blind to any package that consumes the object without naming it.",
+    "P-B": "R archive network: complete current-package descriptor database (24719 packages) screened over Package+Title+Description -> 0 hits; plus the archive directory of withdrawn packages (27546 directories) screened by name -> 1 hit.",
+    "P-C": "none added this session"
+  },
+  "not_covered": [
+    "code distributed only through source hosting and not through a registry",
+    "packages consuming the object without the token in their name (P-A) or metadata (P-B)",
+    "notebooks, scripts and pipelines that fetch the files directly with a generic HTTP client"
+  ],
+  "rows": [
+    {
+      "package": "gdelt",
+      "also_known_as": "gdeltPyR",
+      "registry": "python",
+      "version": "0.1.14",
+      "last_release": "2023-11-27",
+      "releases": 11,
+      "consumes": "v2 15-minute series (events, mentions, gkg)",
+      "C1_reads_master_list": false,
+      "C1_note": "constructs file names arithmetically from the 15-minute grid; the master file list never appears in the source",
+      "C2_verifies_published_checksum": false,
+      "C3_on_a_listed_but_absent_file": "worker emits two Python warnings and returns None; the None is dropped by the concatenation of per-cycle frames, so the caller receives a DataFrame with no field marking incompleteness",
+      "C3_citation": [
+        "gdelt/parallel.py:70-75 (status 404 -> warnings.warn)",
+        "gdelt/parallel.py:107-114 (bare except -> warn -> implicit None)",
+        "gdelt/base.py:644-658 (ProcessPoolExecutor map -> pd.concat(downloaded_dfs))"
+      ],
+      "C4_joined_view": false,
+      "C5_entry_point": "gdelt.gdelt(version=2).Search([...], table=..., coverage=True)",
+      "executed": true,
+      "executed_result": "2022-11-11 events, coverage=True: 36005 rows over 21 distinct cycles of 96, no exception; control 2022-11-09: 116317 rows over 96 cycles. 150 warning lines on the worker processes' stderr; nothing in the returned value."
+    },
+    {
+      "package": "gdelt-client",
+      "registry": "python",
+      "version": "0.2.1",
+      "last_release": "2026-02-18",
+      "releases": 3,
+      "consumes": "v2 15-minute series",
+      "C1_reads_master_list": false,
+      "C1_note": "GDELT_BASE_URL + timestamp, built in _build_urls",
+      "C2_verifies_published_checksum": false,
+      "C3_on_a_listed_but_absent_file": "warnings.warn in the calling process and return None; the None is filtered out of valid_dfs and the rest concatenated, so the caller receives a DataFrame with no field marking incompleteness",
+      "C3_citation": [
+        "src/gdelt_client/api_client.py:111 (base URL)",
+        "src/gdelt_client/api_client.py:543-546 (404 -> warnings.warn -> return None)",
+        "src/gdelt_client/api_client.py:576-578 (async path, same)",
+        "src/gdelt_client/api_client.py:461-467 (gather -> filter -> pd.concat)"
+      ],
+      "C4_joined_view": false,
+      "C5_entry_point": "GdeltClient().search(date=..., table=..., coverage=True)",
+      "executed": true,
+      "executed_result": "2022-11-11 events, coverage=True: 36005 rows over 21 distinct cycles of 96, 75 warnings visible to the caller, no exception, no column marking incompleteness; control 2022-11-09: 116317 rows over 96 cycles, 0 warnings."
+    },
+    {
+      "package": "gdelt-py",
+      "module": "py_gdelt",
+      "registry": "python",
+      "version": "0.1.11",
+      "last_release": "2026-06-27",
+      "releases": 4,
+      "consumes": "v2 15-minute series; also offers a warehouse route",
+      "C1_reads_master_list": true,
+      "C1_citation": "src/py_gdelt/sources/files.py:37-39 (MASTER_FILE_LIST_URL and its translation counterpart)",
+      "C2_verifies_published_checksum": false,
+      "C2_note": "the master list publishes an MD5 beside every entry; the only hashing in the package is sha256 over cache keys (src/py_gdelt/cache.py:329,335)",
+      "C3_on_a_listed_but_absent_file": "404 raises APIError inside the download layer; the fetcher's error policy decides and the DEFAULT is 'warn'. The package DOES have a partial-failure container (FetchResult: data / failed / complete / partial / total_failed, py_gdelt/models/common.py) — but on execution the container did not fire: see executed_result.",
+      "C3_citation": [
+        "src/py_gdelt/sources/files.py:309-313 (404 branch)",
+        "src/py_gdelt/sources/fetcher.py:129 (error_policy default 'warn')",
+        "src/py_gdelt/sources/fetcher.py:337-345 (_handle_error)",
+        "src/py_gdelt/models/common.py (FetchResult with .failed/.complete/.partial/.total_failed)"
+      ],
+      "C3_verbatim_comment_in_source": "# Missing files are normal (not all 15-min slots exist)  [src/py_gdelt/sources/files.py:311]",
+      "C4_joined_view": false,
+      "C5_entry_point": "client fetch_events / fetch_gkg via DataFetcher",
+      "executed": true,
+      "executed_result": "Asked for the whole of 2022-11-11 (events, date range start=end=the day) through the package's own async entry point: FetchResult with 0 records, complete=True, total_failed=0, no exception. Control 2022-11-09: 2,668 records, complete=True, total_failed=0. Diagnostic (diagnose-gdelt-py.json): for a whole-day range the package requests exactly ONE cycle per stream (00:00:00), not 96; on the outage day both of those requests returned 404 (2 'File not found (404)' log lines) and NONE of them reached the failed list. So a result object designed to report partial failure reported a complete result with zero failures on a day where every file it asked for was absent.",
+      "executed_caveats": [
+        "The control day's 2,668 records are far fewer than the 116,317 the two other clients return for the same day, because this package requested one cycle rather than 96. That per-day/per-cycle behaviour is a separate matter this session did not diagnose further and makes no claim about.",
+        "The package's documented synchronous entry point (events.query_sync) raised RuntimeError('Event loop is closed') on both windows in this environment; the async entry point was used. Recorded, not diagnosed."
+      ]
+    },
+    {
+      "package": "gdelttools",
+      "registry": "python",
+      "version": "0.7b2",
+      "last_release": "2022-05-03",
+      "releases": 10,
+      "consumes": "v2 15-minute series via the master file list; v1 md5sums file",
+      "C1_reads_master_list": true,
+      "C1_citation": "gdelttools/gdeltwebdata.py:13 and gdelttools/gdeltloader.py:6",
+      "C2_verifies_published_checksum": true,
+      "C2_citation": "gdelttools/gdeltfile.py:84-95 (download_file -> is_valid_checksum -> GDELTChecksumError)",
+      "C3_on_a_listed_but_absent_file": "requests raise_for_status raises; the loop catches HTTPError, prints, and calls sys.exit(1) — the whole run stops",
+      "C3_citation": [
+        "gdelttools/web.py:49 (raise_for_status)",
+        "gdelttools/gdeltfile.py:175-186 (except HTTPError -> print -> sys.exit(1))"
+      ],
+      "C4_joined_view": false,
+      "C5_entry_point": "download_gdelt_files(file_list, ...)",
+      "executed": false,
+      "note": "loud, and arguably too loud: one broken promise in the master list terminates a bulk download of the whole series."
+    },
+    {
+      "package": "gdeltforge",
+      "registry": "python",
+      "version": "0.4.0",
+      "last_release": "2026-08-05",
+      "releases": 1,
+      "consumes": "v2 15-minute series via the master file list; v1 events archive; GKG 1.0",
+      "C1_reads_master_list": true,
+      "C1_citation": "src/gdeltforge/scraping/scraper.py:57 (GDELT_V2_MASTERFILELIST_URL), :150-154 (parses the md5 out of each line)",
+      "C2_verifies_published_checksum": true,
+      "C2_citation": "src/gdeltforge/scraping/scraper.py:681 (raise_for_status), :690-693 (streaming md5 over the download, compared to file.md5, ValueError on mismatch)",
+      "C3_on_a_listed_but_absent_file": "raise_for_status inside a retry loop; after the retries the file is recorded as 'failed' and returned to the caller in a failed list alongside success/skipped counts",
+      "C3_citation": [
+        "src/gdeltforge/scraping/scraper.py:681 (raise_for_status)",
+        "src/gdeltforge/scraping/scraper.py:697-716 (retry, then return \"failed\")",
+        "src/gdeltforge/scraping/scraper.py:772-785 (failed list in the returned DownloadResult)"
+      ],
+      "C4_joined_view": false,
+      "C5_entry_point": "run_scraping_pipeline(config, start_date, end_date, dataset)",
+      "executed": false,
+      "note": "the only package in this census that returns incompleteness to its caller as a value rather than as a log line."
+    },
+    {
+      "package": "pygdelt",
+      "registry": "python",
+      "version": "0.0.1a1",
+      "last_release": "2018-05-10",
+      "releases": 1,
+      "consumes": "v2 15-minute series; v1 daily",
+      "C1_reads_master_list": false,
+      "C1_note": "constructs file names arithmetically over a generated day range",
+      "C2_verifies_published_checksum": false,
+      "C3_on_a_listed_but_absent_file": "no status check of any kind: the response body is streamed straight into a file named <cycle>.zip, so a not-found page is written to disk as a zip archive",
+      "C3_citation": [
+        "pygdelt/gdeltv2.py:84-90 (rq.get then write chunks, no status inspection)"
+      ],
+      "C4_joined_view": false,
+      "C5_entry_point": "Events/Mentions/GKG _download(req_date)",
+      "executed": true,
+      "executed_result": "Asked for 2022-11-11 through Events._download in an empty working directory: 96 files written, no exception. 75 of them are ZERO BYTES and are not zip archives (BadZipFile on open); the 21 that are real archives are exactly the 21 cycles the host serves. The caller is told nothing."
+    },
+    {
+      "package": "GDELTtools",
+      "registry": "r-archive",
+      "version": "1.7",
+      "last_release": "withdrawn from the current index; last archived source 1.7",
+      "consumes": "v1 daily files",
+      "C1_reads_master_list": false,
+      "C2_verifies_published_checksum": true,
+      "C2_citation": "R/IsValidGDELT.R:9-25 (reads the published md5sums file, compares md5sum of the local file)",
+      "C3_on_a_listed_but_absent_file": "stop() with an explicit message on both a failed download and a failed integrity check",
+      "C3_citation": [
+        "R/GetGDELT.R:124 (stop on download failure)",
+        "R/GetGDELT.R:134 (stop: unable to verify integrity)"
+      ],
+      "C4_joined_view": false,
+      "executed": false
+    },
+    {
+      "package": "getgdelt",
+      "registry": "python",
+      "version": "1.0.0",
+      "last_release": "2020-04-17",
+      "consumes": "v1 daily file URLs",
+      "classified": "not a data path — builds URL strings and opens them in a web browser",
+      "citation": "getgdelt/__init__.py:1-5 and the webbrowser import"
+    },
+    {
+      "package": "gdeltdoc",
+      "registry": "python",
+      "version": "1.12.0",
+      "last_release": "2025-04-03",
+      "classified": "consumes the article-index API, not the 15-minute file series — outside the measured defect"
+    },
+    {
+      "package": "gdelt2py",
+      "registry": "python",
+      "version": "0.1.6",
+      "last_release": "2023-02-13",
+      "classified": "consumes the article-index API and static lookup files — outside the measured defect"
+    },
+    {
+      "package": "gdeltnews",
+      "registry": "python",
+      "version": "1.0.22",
+      "last_release": "2026-07-28",
+      "classified": "consumes a different product (v3 web news ngrams, 1-minute cadence); on a non-200 it prints and skips (src/gdeltnews/download.py:135-137). Adjacent, not the measured series."
+    },
+    {
+      "package": "gdeltnews-rs",
+      "registry": "python",
+      "version": "0.1.3",
+      "last_release": "2026-03-05",
+      "classified": "same v3 product, compiled implementation — adjacent, not the measured series"
+    },
+    {
+      "package": "gdelt-process-tone",
+      "registry": "python",
+      "version": "0.0.13",
+      "last_release": "2018-08-13",
+      "classified": "no fetch path found in the distributed source"
+    },
+    {
+      "package": "gdelt_util",
+      "registry": "python",
+      "version": "0.15",
+      "last_release": "2015-03-20",
+      "classified": "no fetch path found in the distributed source"
+    },
+    {
+      "package": "GDELT21",
+      "registry": "python",
+      "version": "0.0.1",
+      "last_release": "2023-05-19",
+      "classified": "no fetch path found in the distributed source"
+    },
+    {
+      "package": "GDELT22",
+      "registry": "python",
+      "version": "0.0.1",
+      "last_release": "2023-05-19",
+      "classified": "no fetch path found in the distributed source"
+    },
+    {
+      "package": "GDELT23",
+      "registry": "python",
+      "version": "0.0.1",
+      "last_release": "2023-05-19",
+      "classified": "no fetch path found in the distributed source"
+    },
+    {
+      "package": "niugdelt",
+      "registry": "python",
+      "version": "0.0.1",
+      "last_release": "2023-05-22",
+      "classified": "no fetch path found in the distributed source"
+    },
+    {
+      "package": "niugdelt1",
+      "registry": "python",
+      "version": "0.0.1",
+      "last_release": "2023-05-22",
+      "classified": "no fetch path found in the distributed source"
+    }
+  ],
+  "excluded_substring_collisions": [
+    "logdelta",
+    "pgdelta"
+  ],
+  "standing_conditions": [
+    "Every behaviour cell describes the exact version named in the row, as distributed by the registry on 2026-08-10. A later release may behave differently.",
+    "Only two rows were executed. The rest are readings of source code, and are labelled as such.",
+    "This is not a defect report about any maintainer's competence. Two of the seven fetching packages verify the published checksum and one returns incompleteness as a value; the census records that as prominently as the rest.",
+    "No claim is made about why any file is absent, in either direction."
+  ]
+}

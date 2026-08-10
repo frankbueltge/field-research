@@ -1,0 +1,21 @@
+{
+ "endpoint": "http://data.gdeltproject.org/gdeltv2/masterfilelist.txt",
+ "http_status": 200,
+ "bytes": 126533378,
+ "total_lines": 1184979,
+ "checked_utc_date": "2026-08-10",
+ "absent_export_cycles_2022_11_11": 75,
+ "still_listed_today": 75,
+ "sample": {
+  "20221111000000": {
+   "declared_bytes": 4404,
+   "md5": "9fcd7af66cf3b49b097078be95107b61",
+   "url": "http://data.gdeltproject.org/gdeltv2/20221111000000.export.CSV.zip"
+  },
+  "20221111001500": {
+   "declared_bytes": 2311,
+   "md5": "7b66ece03e4c124b74086967cc5f7390",
+   "url": "http://data.gdeltproject.org/gdeltv2/20221111001500.export.CSV.zip"
+  }
+ }
+}

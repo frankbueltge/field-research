@@ -1,0 +1,9 @@
+{
+ "harness": "no warnings filter, default interpreter settings",
+ "rows_returned": 36005,
+ "distinct_cycles": 21,
+ "exception_raised": null,
+ "returned_type": "DataFrame",
+ "columns_mentioning_missing_or_coverage": [],
+ "seconds": 2.5
+}

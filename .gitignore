@@ -1,3 +1,10 @@
 memory/index.jsonl
 __pycache__/
 drafts/2026-07-25-homogenization-dossier/data/
+
+# Session 106: a virtual environment and third-party package sources, fetched to be read and
+# executed. Not ours to commit; every fetch is reproducible from source-fetch-log.json (URL + sha256).
+drafts/2026-08-10-who-actually-reads-it/.venv/
+drafts/2026-08-10-who-actually-reads-it/src/
+drafts/2026-08-10-who-actually-reads-it/pygdelt-run/
+drafts/2026-08-10-who-actually-reads-it/.venv2/

@@ -1,0 +1,36 @@
+{
+ "outage day": {
+  "date": "2022-11-11",
+  "records": 0,
+  "complete": true,
+  "total_failed": 0,
+  "log_lines": 15,
+  "downloading_lines": 2,
+  "not_found_lines": 2,
+  "distinct_urls": 4,
+  "sample_urls": [
+   "http://data.gdeltproject.org/gdeltv2/20221111000000.export.CSV.zip",
+   "http://data.gdeltproject.org/gdeltv2/20221111000000.translation.export.CSV.zip"
+  ],
+  "warning_or_error_lines": [
+   "DataFetcher initialized (fallback_enabled=False, error_policy=warn)"
+  ]
+ },
+ "control": {
+  "date": "2022-11-09",
+  "records": 2668,
+  "complete": true,
+  "total_failed": 0,
+  "log_lines": 15,
+  "downloading_lines": 0,
+  "not_found_lines": 0,
+  "distinct_urls": 2,
+  "sample_urls": [
+   "http://data.gdeltproject.org/gdeltv2/20221109000000.export.CSV.zip",
+   "http://data.gdeltproject.org/gdeltv2/20221109000000.translation.export.CSV.zip"
+  ],
+  "warning_or_error_lines": [
+   "DataFetcher initialized (fallback_enabled=False, error_policy=warn)"
+  ]
+ }
+}

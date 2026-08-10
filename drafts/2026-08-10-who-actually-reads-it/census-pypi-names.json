@@ -1,0 +1,29 @@
+{
+ "endpoint": "https://pypi.org/simple/",
+ "http_status": 200,
+ "bytes": 42588269,
+ "total_project_names": 867935,
+ "token": "gdelt",
+ "hits": [
+  "GDELT21",
+  "GDELT22",
+  "GDELT23",
+  "gdelt",
+  "gdelt-client",
+  "gdelt-process-tone",
+  "gdelt-py",
+  "gdelt2py",
+  "gdelt_util",
+  "gdeltdoc",
+  "gdeltforge",
+  "gdeltnews",
+  "gdeltnews-rs",
+  "gdelttools",
+  "getgdelt",
+  "logdelta",
+  "niugdelt",
+  "niugdelt1",
+  "pgdelta",
+  "pygdelt"
+ ]
+}

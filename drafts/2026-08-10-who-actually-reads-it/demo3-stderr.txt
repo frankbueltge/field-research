@@ -1,0 +1,300 @@
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111000000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111000000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111003000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111003000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111004500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111004500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111001500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111001500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111010000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111010000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111013000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111013000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111011500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111011500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111014500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111014500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111020000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111020000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111021500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111021500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111023000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111023000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111024500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111024500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111033000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111033000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111030000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111030000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111031500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111031500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111034500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111034500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111040000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111040000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111043000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111041500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111043000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111041500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111044500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111044500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111050000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111050000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111051500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111051500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111053000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111053000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111054500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111054500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111060000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111060000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111061500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111061500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111063000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111063000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111064500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111064500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111070000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111070000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111071500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111071500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111074500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111074500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111080000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111080000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111073000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111073000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111081500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111081500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111083000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111083000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111084500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111090000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111084500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111090000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111091500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111091500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111093000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111093000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111094500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111094500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111100000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111100000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111101500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111101500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111103000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111103000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111104500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111111500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111104500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111111500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111110000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111110000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111113000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111113000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111120000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111120000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111121500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111121500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111114500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111114500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111123000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111123000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111124500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111124500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111130000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111130000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111131500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111131500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111133000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111133000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111140000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111140000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111134500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111134500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111141500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111141500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111143000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111143000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111151500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111151500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111150000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111150000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111144500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111144500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111153000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111153000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111154500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111154500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111160000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111160000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111161500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111161500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111163000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111163000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111164500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111164500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111170000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111170000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111171500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111171500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111174500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111174500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111173000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111173000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111180000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111180000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111181500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111181500
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:75: UserWarning: GDELT does not have a url for date time 20221111183000
+  warnings.warn(message)
+/home/user/field-research/drafts/2026-08-10-who-actually-reads-it/.venv/lib/python3.11/site-packages/gdelt/parallel.py:111: UserWarning: GDELT did not return data for date time 20221111183000
+  warnings.warn(message)

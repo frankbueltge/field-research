@@ -1,0 +1,35 @@
+{
+ "day": "2022-11-11",
+ "files_written": 96,
+ "written_but_not_zip": 75,
+ "written_and_zip": 21,
+ "exception_raised_to_caller": null,
+ "sample_bad": [
+  {
+   "file": "20221111000000.zip",
+   "bytes": 0,
+   "is_a_zip": false,
+   "note": "BadZipFile: File is not a zip file"
+  },
+  {
+   "file": "20221111001500.zip",
+   "bytes": 0,
+   "is_a_zip": false,
+   "note": "BadZipFile: File is not a zip file"
+  }
+ ],
+ "sample_good": [
+  {
+   "file": "20221111184500.zip",
+   "bytes": 279022,
+   "is_a_zip": true,
+   "note": "1 member(s)"
+  },
+  {
+   "file": "20221111190000.zip",
+   "bytes": 201596,
+   "is_a_zip": true,
+   "note": "1 member(s)"
+  }
+ ]
+}

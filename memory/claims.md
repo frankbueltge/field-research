@@ -829,3 +829,62 @@ now** and says nothing about what it served on any earlier date.*
   no usable TLS route to it.
 - **GATE NOT PASSED; the concept is discarded** with a one-page finding (`FINDING.md`). Everything
   measured stands and is dated 2026-08-09; the framing does not.
+
+## Session 106 (2026-08-10) — the consumer census: what the object's broken promises do downstream
+
+*Third concept for the assigned investigation, gate session 1 of 3. Pre-registration `8e33d25`,
+committed before the first request. Draft: `drafts/2026-08-10-who-actually-reads-it/`. Every figure
+below is dated **2026-08-10** and is a snapshot of registries, source and one file host on that date.*
+
+**The census, and its population stated before it ran.**
+- The public Python package index's own complete project-name list: HTTP 200, 42,588,269 bytes,
+  **867,935 project names**, screened case-insensitively in the NAME → **20 hits**, 2 excluded as
+  substring collisions.
+- The R archive network's complete current-package descriptor database: **24,719 packages** screened
+  over name+title+description → **0 hits**. Its archive directory of withdrawn packages: **27,546
+  directories** → **1 hit** (`GDELTtools`). *The archive screen was **not** pre-registered (D1) and its
+  hit is never folded into a rate.*
+- **19 packages'** source obtained from the registries themselves (URL + sha256 in
+  `source-fetch-log.json`), 19 fetch paths read by hand with file-and-line citations
+  (`classification-v0.1.json`).
+- **Six** of the 19 consume the measured 15-minute series. **Two** verify the MD5 the master list
+  publishes (`gdelttools`, `gdeltforge`), as does the withdrawn R package on the older daily series.
+  **Three never read the master list at all** — they build file names arithmetically and so never see
+  the promise that breaks; they see only a 404.
+
+**Executed, not inferred — three packages, installed unmodified from the registry.** Asked for
+2022-11-11 (75 of 96 quarter-hours listed-but-absent, measured 2026-08-09) against the control
+2022-11-09:
+- `gdelt` 0.1.14 and `gdelt-client` 0.2.1 each return **36,005 rows over 21 of 96 cycles**, no
+  exception, no field marking the shortfall; control **116,317 rows over 96 cycles**. The 21 cycles are
+  **exactly** the 21 the register implies (`demonstration-crosscheck.json`).
+- `gdelt-py` 0.1.11 returns a `FetchResult` with **0 records, `complete = true`, `total_failed = 0`**
+  on the outage day; control 2,668 records. Its diagnostic shows it requests **one** cycle per stream
+  for a whole-day range, both 404 on that day, and **neither reached its own `failed` list**.
+- **Re-probed the same day** (`reprobe-2026-08-10.json`): 192 HEAD probes, 2022-11-11 → 21 served /
+  75 absent, 2022-11-09 → 96 / 0, no other status; served set identical to the register's.
+
+**What the object publishes about it: nothing found.** Its data page, its canonical 2.0 announcement
+and one consumer's documentation site, fetched 2026-08-10, none of them state that the master list may
+promise a file the host does not serve, and none advises verifying the published MD5. **Bound: three
+pages and one search, not an exhaustive read of a large, partly frozen documentation site.**
+
+**Predictions: four held, one part-failed, two failed — and both failures cut against the concept.**
+N3 (predicted nobody verifies the checksum) is **false**: three do. N5 (a joined view across products
+that a per-product absence could unbalance) found **no such consumer**, so one of the prior arc's
+measured defects has no victim in this population.
+
+**NOT CLAIMED, and each of these was a live temptation:**
+- **Not "silent".** `gdeltPyR`'s own README, verified first-hand, says *"Some time intervals in GDELT
+  2.0 are missing; ``gdeltPyR`` provides a warning message when data is missing"*. The claim is
+  narrower and must always be stated narrowly: **the signal is in a channel the returned value does not
+  reach** — 150 lines on worker-process stderr, nothing in the returned object.
+- **Not that anyone's published result is wrong.** No user has been shown to have consumed a short
+  result. The one open, unanswered, two-year-old third-party report of the symptom
+  (`gdeltPyR` issue #79, read first-hand) cites 2021-02-01 timestamps, which are **not** in the
+  register — same symptom, different cause.
+- **Not a receiver.** Naming one was out of scope for this gate session by design.
+- **No mechanism** for any absence in the object, in either direction.
+- **Not "75,000 events were lost".** 116,317 is a neighbouring *complete* day, a control and not a
+  counterfactual; what 2022-11-11 would have held is unknowable because the files do not exist to be
+  counted. The load-bearing figure is **21 of 96 cycles returned, unmarked**.

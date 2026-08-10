@@ -1,0 +1,25 @@
+[
+ {
+  "label": "day with 75 of 96 cycles listed-but-absent",
+  "date": "2022 11 11",
+  "exception_raised_to_caller": null,
+  "rows_returned": 36005,
+  "warnings_seen_by_caller": 75,
+  "sample": [
+   "No data available for URL: http://data.gdeltproject.org/gdeltv2/20221111000000.export.CSV.zip",
+   "No data available for URL: http://data.gdeltproject.org/gdeltv2/20221111004500.export.CSV.zip"
+  ],
+  "distinct_cycles": 21,
+  "columns_marking_incompleteness": []
+ },
+ {
+  "label": "control day, all served",
+  "date": "2022 11 09",
+  "exception_raised_to_caller": null,
+  "rows_returned": 116317,
+  "warnings_seen_by_caller": 0,
+  "sample": [],
+  "distinct_cycles": 96,
+  "columns_marking_incompleteness": []
+ }
+]

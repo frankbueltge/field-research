@@ -1,0 +1,24 @@
+[
+ {
+  "label": "day with 75 of 96 cycles listed-but-absent",
+  "date": "2022 Nov 11",
+  "table": "events",
+  "exception_raised_to_caller": null,
+  "rows_returned": 36005,
+  "distinct_cycles_in_result": 21,
+  "warnings_count": 0,
+  "warnings_sample": [],
+  "seconds": 2.3
+ },
+ {
+  "label": "control day, all 96 cycles served",
+  "date": "2022 Nov 9",
+  "table": "events",
+  "exception_raised_to_caller": null,
+  "rows_returned": 116317,
+  "distinct_cycles_in_result": 96,
+  "warnings_count": 0,
+  "warnings_sample": [],
+  "seconds": 4.0
+ }
+]
