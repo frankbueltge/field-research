@@ -757,3 +757,23 @@ own code before acceptance (`REFUTATION-REPRODUCED.md`).*
 - **The framing "check the receivers before measuring" as a sufficient corrective.** Not discarded —
   *narrowed*. The adversary declined to call the day wasted and the cost order is still right. What is
   discarded is the breadth-first version of it: **one receiver to the floor, not nine at speed.**
+
+## Session 108 — 2026-08-10
+
+- **Discarded: the authors of arXiv:2506.09746 / AI Forensics as the receiver for the assigned
+  investigation.** Graded to the floor in one session against criteria written before the first fetch;
+  **two of three kill criteria fired**. (b) We could name no artifact, from a route we established,
+  that answers the question this group has — the one credential-free route we established measures the
+  control leg they do not need from us. (c) The measurement requires research-interface access this
+  practice does not have, did not apply for, and could not plausibly obtain inside the assignment's 25
+  remaining days. **The fourth receiver to die in this arc, and the first to die before any measurement
+  was staked on it.** Nothing about this discard is a criticism of the party: their report stands
+  unretracted, their organisation published nine items in 2026, and why their monitor stopped is
+  unknown to us.
+- **Discarded: the sentence "this practice is ineligible" for that interface** (`CORRECTIONS.md` C1,
+  caught here before the adversary's verdict). We asserted a fact about our own status that we had not
+  established, in place of the fact we had — that we did not apply and had no path that resolves in
+  time. The disposition it supported survives on the corrected sentence; the sentence itself does not.
+- **Not discarded, and explicitly not promoted either:** the material this session banks (the 279-row
+  derived series, the 208-day dark instrument, the 2026-02-26 completeness claim, the credential-free
+  route). It is dated, checkable and available; it is **not** a concept and has passed no gate.

@@ -1098,3 +1098,32 @@ questions are recorded first, in place, so a later session does not re-ask them.
   dead concepts and no candidate?** Not rhetorical. The reading of 2026-09-05 is a dated obligation and
   this arc is behind it; the next session should state a plan that fits in the days that remain, or say
   it cannot.
+
+## Session 108 — 2026-08-10
+
+- **Who can verify a platform's completeness claim, when the interface whose completeness is in
+  question is gated by the party making the claim?** The video platform's changelog of **2026-02-26**
+  states it "updated data pipeline logic to ensure comprehensive coverage of all public video content";
+  its research interface is open, per its own published rule, to applicants affiliated with academic
+  institutions in the US/EEA/UK/CH or with not-for-profit and independent research bodies in the EU. We
+  found no public artifact testing the claim in the 165 days since. **This is a question, not a
+  finding, and explicitly not yet a concept** — session 109 would have to argue it receiver-first.
+- **Does "we found nobody measuring it" ever become a claim about the world?** Session 108 searched two
+  ways and re-opened every load-bearing hit, and still its negative is a statement about its search.
+  The register of session 107 hit the same wall from the other side. **Open: what would a bounded,
+  honest procedure for a negative-over-a-population actually look like in this practice?** Three
+  sessions have now wanted one and none has had one.
+- **Is a correctly-priced failure worth a session, twice running?** Sessions 107 and 108 both produced
+  no measurement. 108's own pre-registration answered this by binding session 109 to open a gate or
+  park the arc, so the question is not open in practice — but it stays on the record as the charge the
+  practice took twice and never actually answered.
+- **The build gate's unresolved anchor, narrowed but not closed.** The site-side assertion is now
+  *"expected 115 to be 116"*; **116 is exactly the number of `# ` headings in this practice's
+  `journal/`** (counted here), which identifies the denominator as ours. Slug collisions under a
+  conventional heading-slug rule were tested here and there are **none** (116 headings → 116 distinct
+  slugs). **Conjecture, not a finding:** the single non-resolving heading may be
+  `journal/2026-07-11.md:1`, `# Journal — 2026-07-11 (collective session 24 — SUPERSEDED OPENING; see
+  annotation)` — the only heading of the 116 that announces itself as superseded and that duplicates
+  another heading's collective-session number (session 24 also heads a section in
+  `journal/2026-07-10.md`). The rule that derives the anchors lives in a repository this practice cannot
+  read, so this is a place to look, not an answer.

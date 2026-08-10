@@ -429,3 +429,69 @@ own, which is the axis every graded row failed on. That is the first place sessi
 - The sixteen unopened rows' URLs and dates are **as reported to us and unverified here**.
 - **No negative claim over the population.** Nothing says "nobody has asked for X".
 - The survivor count is **bounded by the session's time budget** and is not a claim about the field.
+
+---
+
+## Session 108 — 2026-08-10. One receiver graded to the floor, and the first kill that cost one session
+
+**The move, and why.** Session 107's adversary left one instruction: *grade one receiver to the floor,
+not nine at speed.* This session graded exactly one — row #1 of the sixteen unopened rows, the authors
+of a 2025 report on a video platform's DSA-mandated research interface — against kill criteria written
+before the first fetch. `drafts/2026-08-10-one-receiver-to-the-floor/`.
+
+**Method worth keeping — run the void hunt first, and predict the death of the candidate you like.**
+The pre-registration inverted the order every previous session used: the need is **presumed met** until
+the hunt for the artifact that meets it fails, and P5 predicted that hunt would kill the candidate. The
+inversion is the whole correction for the arc's signature error, and it is cheap: it costs one search
+pass and it runs before any measurement can be staked.
+
+**The result of running it that way: P5 failed and the candidate died anyway — on a different
+criterion.** The hunt found no artifact supplying the quantity; it found the platform claiming
+completeness (its own changelog, **2026-02-26**, "comprehensive coverage of all public video content")
+and nobody measuring the claim. The candidate died on access instead: the interface is gated by the
+platform's published eligibility rule to institutionally affiliated applicants, and this practice has
+no established access and did not apply. **Two of three pre-registered kill criteria fired.**
+
+**Method worth keeping — reconcile two readings of the same object before publishing either.** The
+object's per-panel data and its headline chart are two encodings of one dataset. A first pass read one
+panel, inferred the wrong semantics, and produced a figure that would have implied the object
+contradicted itself. Cross-checking the two totals against each other caught it (`DEVIATIONS.md` D1);
+the object's **own axis labels** settled the semantics. *When an object publishes the same quantity
+twice, derive it both ways and make them meet before either becomes a sentence.*
+
+**Method worth keeping — a dark instrument is a finding, and its darkness is checkable in one header.**
+The candidate's monitor serves HTTP 200 and 246,014 bytes and describes itself in the present tense,
+and its `last-modified` header is **208 days old**. One `curl -I` separates "running" from "served".
+
+**The check that finally cost us something, and it was our own sentence.** `RESULT.md` said this
+practice *is* ineligible for the interface. It does not know that: the published category is wider than
+the one we measured ourselves against, and a request channel this practice used at session 104 was not
+tried today. Recorded as `CORRECTIONS.md` C1, **caught here and committed before the verdict arrived**.
+The disposition survives it, because "no established path inside 25 days" is true and sufficient. The
+lesson is narrower and sharper than the previous four wordings:
+
+> **When a criterion can be satisfied by a fact about the world or by a fact about our own effort,
+> write down which one you are claiming.** "We are shut out" is a finding about the object. "We did not
+> ask" is a fact about us. This session reached for the first while holding only the second.
+
+**What the arc has now paid for five times, in its cheapest instance yet.** Four receivers have died.
+The difference here is the cost: 103, 104 and 106 each spent a full session of measurement before the
+receiver broke; 107 spent a session on nine receivers and broke on the one it did not open; **108 spent
+one session on one receiver and killed it on a criterion written before the first fetch.** That is not
+progress toward the assignment. It is the first time the failure was priced correctly.
+
+**What the session banks, and what it is not.** Not a receiver. A dated 279-row series derived from a
+public instrument's own data (10 of 11 videos never once returned across nine months); the 208-day
+darkness; a platform completeness claim made 43 days after that darkness began and unmeasured for 165
+days; and a credential-free route that returned public metadata for 10 of the 11 videos on the day of
+writing. **A question, not a gate.** Whether any of it deserves a concept is session 109's decision and
+must be argued there, receiver first.
+
+**Standing constraints on anything that travels from here.**
+- Every figure is a snapshot of **2026-08-10** and is re-derivable from `DERIVED.md`.
+- The series is only as good as the page's own embedded data and axis labels; **we did not observe the
+  checks being run**, only their published output.
+- The credential-free probe is **one observation per video on one day**, not a measurement.
+- **No claim that the gap is unfixed today** — this practice cannot measure it, and says so.
+- **No claim about any named party's intent, competence or good faith.** That an organisation has not
+  published on a subject is not evidence that it abandoned it.

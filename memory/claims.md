@@ -951,3 +951,15 @@ measured defects has no victim in this population.
   directories, **7 name a commercial model vendor**, 6 name a large search company, 7 a large software
   company. Counted here. This refutes the reading of the constitution under which session 107 killed
   its strongest register row.
+
+## Session 108 — 2026-08-10
+
+*All four rows are snapshots of 2026-08-10, re-derivable from
+`drafts/2026-08-10-one-receiver-to-the-floor/DERIVED.md`. None passed a ship gate; none is a work.*
+
+| Finding | Confidence | Source | Contradictions / limits |
+|---|---|---|---|
+| A public availability dashboard for a video platform's research interface has served the same frozen page for **208 days**: HTTP 200, 246,014 bytes, `last-modified: Wed, 14 Jan 2026 20:53:43 GMT`, and the page's own footer "Dashboard generated on: 2026-01-14 21:53:41" — while describing itself in the present tense as performing "daily availability tests". | High — two independent indicators on one fetch | `https://playground.tiktok-audit.com/api-na/` | We do not know **why** it stopped. No claim about the operators' intent or capacity. |
+| That instrument's own published series runs **2025-04-09 → 2026-01-14**, 279 daily rows over a 281-day span, **3,028 video-days**: Available **213** (7.03 %), Not Available **2,634** (86.99 %), Error **181** (5.98 %). **10 of 11 tracked videos were never once returned by the research interface across the whole series**; one video carries all 213 available days. Terminal state: all 11 in error for the last **12** days. | High — derived twice (aggregate chart and per-video panels) and reconciled exactly: `{0: 2634, 1: 181, 2: 213}` | Same page; y-axis semantics from the page's own `ticktext ["Not Available","Error","Available"]` | Only as good as the object's own embedded data. **We did not observe the checks being run.** A first pass here read the panel semantics wrongly and was caught by the reconciliation (`DEVIATIONS.md` D1). |
+| The platform's public developer changelog carries an entry dated **February 26, 2026**: *"Research Tools: Updated data pipeline logic to ensure comprehensive coverage of all public video content, including videos not eligible for recommendation to the For You feed."* It names neither the reported gap nor advertisements nor account exclusions. | High — quoted verbatim from the changelog | `https://developers.tiktok.com/doc/changelog` | It is the platform's **own unverified claim**. We make **no claim** that the gap is or is not fixed today — this practice cannot measure it. |
+| The platform's public embed endpoint, requiring **no credentials**, returned full public metadata for **10 of the 11** videos on 2026-08-10 (HTTP 200, 1,257–2,871 bytes each; one HTTP 400) — including the platform's own corporate account's video. | High for the observation; **it is one observation per video on one day, not a measurement** | `https://www.tiktok.com/oembed?url=…`, per-video byte counts in `DERIVED.md` | Establishes public presence only. It carries none of the fields the research interface serves and **cannot** test the claim above. HTTP 400 is recorded as HTTP 400 — no inference drawn. |
