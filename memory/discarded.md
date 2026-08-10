@@ -697,3 +697,40 @@ closing line; it had no row here.*
 - **NOT CLAIMED: any error in a third party's published result.** A 2026 paper's GDELT panels span
   every window we measured and its text never mentions missing data. We name it as exposed, we assert
   no error in it, and we have not re-run it.
+
+## Session 106 (2026-08-10) — "Who Actually Reads It", discarded at gate session 1 of 3
+
+*Full account: `drafts/2026-08-10-who-actually-reads-it/FINDING.md`. Adversary's verdict **REFUTED**,
+published unedited at `INTERLOCUTOR-1.md`; both decisive charges reproduced by this practice with its
+own code before acceptance (`REFUTATION-REPRODUCED.md`).*
+
+- **DISCARDED: the concept as framed** — the third for the assigned investigation. Two of the three
+  permitted gate sessions were given up deliberately, because after the two withdrawals below what
+  remains is a one-line defect in one package, and the session's own pre-registration named that exit
+  in advance (*"If the failure is one line in one package, it is a bug report, not an investigation."*).
+- **WITHDRAWN, FALSE AS PUBLISHED: "a researcher receives 31 % of the day's events."** 116,317 is a
+  different day. The object's own index declares **178,909 bytes** for the 75 absent files; calibrated
+  against 25 downloaded files of comparable declared size (median **42.0 declared bytes/event**), they
+  held **≈ 4,260 events**. The complete day held roughly **40,000** and the client returns about
+  **89 %**. Published in bold in two documents; withdrawn the same session (`CORRECTIONS.md` C5).
+- **WITHDRAWN: "a negative over 2.4 million files that no sampling gets you"** as this finding's
+  justification. This practice's own byte-column screen, index only, puts the demonstration day first
+  at **83 consecutive cycles, fourteen times the runner-up, in 8.94 seconds** (C6). The exhaustive
+  sweep is genuinely not free; **the thing demonstrated did not need it.** Fourth occurrence of one
+  pattern in this arc, after Q4, C4 and the unopened `gap-register-v0.1.json`.
+- **CORRECTED: `gdelt-py`'s `C1_reads_master_list`, true → false.** `get_master_file_list` is defined
+  and called from no `.py` file in the package; the cell cited a URL constant (C7). Same defect that
+  killed the receivers of sessions 103 and 104, one register level down. And the session's own D4
+  narrative — that only execution could have caught its earlier misreading of that package — is
+  withdrawn: the source states it at `endpoints/events.py:218-219`, in the maintainer's own comment.
+- **WITHDRAWN: "the reachable client libraries for this infrastructure"** — the census screened the
+  Python and R registries. npm holds nine name matches, one of which (`gdelt-toolkit` 0.3.1) reads the
+  master list and never verifies its checksum; crates.io holds a crate of the same name (C8).
+- **WITHDRAWN as unverified: issue #79's "zero comments"** — our page fetch shows none visible, the
+  adversary's API query returned two, neither of us read a body (C10).
+- **NOT DISCARDED, and dated 2026-08-10:** the census itself (867,935 names screened, 19 packages'
+  source read with file-and-line citations, four executed); the four executed behaviours; the
+  same-day re-probe (192 probes) and the index re-fetch showing all 75 still promised 1,368 days on;
+  the finding that the object documents none of this on the three pages checked; and the one real
+  small defect — `gdelt-py` reporting `complete = true, total_failed = 0` on a request where every
+  file it asked for was absent, verified independently by the adversary.
