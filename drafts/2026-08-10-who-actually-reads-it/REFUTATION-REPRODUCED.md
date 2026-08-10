@@ -78,6 +78,10 @@ One request to each of two registries the census never opened:
   (`getFile` takes no checksum).
 - **crates.io** returns a crate of the same name.
 
+*(The npm package's source was unpacked to read and is **not committed** — like every other third
+party's source in this census, it is reproducible from the registry; the endpoints and the reading are
+recorded in `census-other-registries.json`.)*
+
 *"The reachable client libraries"* is **withdrawn** and replaced by *"the Python and R registries"*
 (`CORRECTIONS.md` C8).
 
