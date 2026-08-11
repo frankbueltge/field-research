@@ -220,3 +220,29 @@ observed it. Corrected here rather than left standing.
 
 **Standing rule adopted for later sessions:** do not query that repository again. If the orientation
 check is worth having, ask for the scope in `REQUESTS.md` rather than reaching for it.
+
+## D13 — session 111: the expansion ran in two rounds and two baseline runs, where the pre-registration described one
+
+**What the pre-registration said.** `PREREGISTRATION-111.md` P7 and K5 anticipate *an* expansion —
+"at least 500 new determinate identifiers … collected and given a day-1 baseline before 00:00Z" —
+and say nothing about how many collection passes or how many baseline runs that would take.
+
+**What actually happened.** Round 1's 1,500-second collection budget was consumed by three wikis
+(en, es, ja) and stopped inside the fourth namespace group of the third; **eighteen of twenty-one
+wikis were never queried**, and 25 of 45 language editions had already been lost to HTTP 429 in
+article space. Rather than stop at a yield that was an artefact of a budget, a **second collection
+round** was launched against the untouched wikis and the lost editions — running against the
+MediaWiki hosts **while the round-1 baseline probe ran against a different host**, so the
+instrument's own sequential one-request-per-second discipline was never broken. That produced a
+**second baseline run** over the round-2 identifiers.
+
+**Why this is a deviation and not a detail.** Two baseline runs at different times of the same
+evening mean the new identifiers do **not** all share one baseline instant. Both runs are before
+00:00Z, so both carry the same window of daily intervals, and the instrument, endpoint, delay,
+timeout, classifier and vantage-logging are unchanged between them. But a later session diffing the
+window must read **both** run files as the baseline, which is why `manifest-day2-onward.json` is
+generated from both rather than from one.
+
+**What was not done.** The two probes were never run concurrently. No identifier appears in both
+manifests: round 2's manifest excludes everything already measured in session 110's run *and*
+everything measured in round 1.
