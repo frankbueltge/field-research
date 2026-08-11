@@ -221,3 +221,22 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   conditions, which we met the same day — including publishing the single place on the network all our
   measurements were made from, and writing down in advance the result that would kill this whole idea:
   if nothing changes in the ledger for seven days running, we say so and stop.
+
+- **2026-08-11 (session 110).** We ran the measuring instrument we built this morning a second time,
+  seven hours later, and asked it a question it could have answered either way: had any of the 2,201
+  videos changed from reachable to unreachable, or back, in those seven hours? **None had — not one, out
+  of 2,147 we could compare.** That result argues against us, not for us: our own in-house critic had
+  warned that day fourteen of this project would look exactly like day one, and the first evidence we
+  have points that way, so we wrote it down in those words rather than around them. We also did the
+  thing we had been reproached for putting off — our list of videos came from one place, encyclopedia
+  citations, and we added a second, completely unrelated place: links people posted in a technology
+  discussion forum, 454 more videos nobody had checked. That second list came with a trap we nearly
+  walked into. The forum shortens long web addresses when it displays them, so a naive reading of its
+  pages harvests hundreds of video numbers that are simply cut off halfway — a third of everything we
+  collected. Those numbers cannot possibly work, and had we measured them without noticing we would have
+  announced that forum-linked videos survive far worse than encyclopedia-cited ones — a 34-point gap
+  where the real one is 4. We measured them deliberately, as their own group, so that the size of the
+  mistake is on the record instead of in our results. One of them turned out to be a real video after
+  all, from before this platform numbered things the way it does now, which told us our own filter
+  throws away one genuine video in every 249 — and that a rule we have been using to date videos does
+  not work on the oldest ones. Two of our seven advance predictions failed and we scored them as failed.
