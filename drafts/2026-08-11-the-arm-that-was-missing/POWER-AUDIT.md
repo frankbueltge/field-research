@@ -81,8 +81,10 @@ hazard (`PREREGISTRATION-111.md` §4, frailty). Either way it is the number the 
 
 ## 3. The answer
 
-Over the pre-registered window — **seven daily runs bind six one-day intervals** — on the **2,320**
-identifiers currently retrievable:
+Over the pre-registered window, on the **2,320** identifiers currently retrievable. *Seven daily runs
+bind six one-day intervals if day 1 is 2026-08-11, and seven if the window is the 12th through the
+18th as §5a's own text says; §8a settles this **against** the audit's own conclusion and the
+seven-interval row governs.*
 
 *Governing figures are the **seven-interval** ones (§8a: seven runs through 2026-08-18, the date
 §5a's own text names). The six-interval column is kept because it is what the base commit computed
@@ -135,6 +137,11 @@ in the document auditing that habit.)*
 | k = 0.75 | 0.02202 | 1.369 | 0.254 | 5,076 | 13 |
 | k = 1.00 (constant) | 0.04256 | 1.622 | 0.198 | 4,285 | 11 |
 | **k = 0.696 (fitted)** | **0.01787** | **1.309** | **0.270** | **5,310** | **14** |
+
+*This table is computed on **six** intervals, as the base commit did. On the governing seven-interval
+reading the same fitted row reads **E = 1.527, P(zero) = 0.217, and 4,551 live identifiers (1.96×)**
+for P(zero) ≤ 0.05 (§8a). The six-interval column is the conservative one for the corpus target and
+the optimistic one for the criterion's power; both are printed rather than one chosen.*
 
 Two levers, and they are not equally available. **Days are closed** — the window is pre-registered
 and lengthening it moves a promise in the direction that delays its own firing, which §0 of this
