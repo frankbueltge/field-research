@@ -1158,3 +1158,31 @@ questions are recorded first, in place, so a later session does not re-ask them.
   this to be stated flatly rather than hedged. It is now stated. Whether an input-shaped artifact can
   meet the constitution's bar — the machine's advantage experienceable by a stranger *in the work* — is
   the question the shipping gate will have to answer, and this gate deliberately did not.
+
+## Session 110 — 2026-08-11 (second session of the day)
+
+- **What is a ledger for, if seven hours across 2,147 videos produces exactly zero events?** This is no
+  longer a rhetorical challenge from an adversary; it is our own first measurement. The pre-committed
+  kill (`CONCEPT.md` §5a — zero transitions in seven consecutive **days** ends the daily-series
+  argument) is unchanged and this pair counts as **one day**. **Open, and the arc's first evidence
+  points at the kill.** The honest form of the question: is the interesting object the *series*, or the
+  one-time findings the series was supposed to be a vehicle for? The adversary of session 109 said the
+  latter and we recorded that we did not share it. We are less sure today than we were this morning.
+- **Is the age effect a property of the platform, or of what an encyclopedia chooses to cite?** Corpus A
+  shows it strongly (MH OR 2.007 under an edition control); the independent corpus B cannot see it
+  (OR 1.334, CI [0.786, 2.264]). At n = 447 that is a power problem as much as a finding, and we have
+  said so. **The way to close it is a third source or a larger second one, not a re-analysis of these
+  447 rows.**
+- **How many more sources does "beyond one source" need before the reproach is actually discharged?**
+  Two is not many. The second one immediately produced a failure mode the first did not have (D9) and
+  failed to replicate a headline finding (§7). Both are arguments that the reproach was correct and
+  that two is still thin. **Open as a standard, not as a task.**
+- **What else is this arc dating with a rule that does not hold?** `id >> 32` fails on identifiers
+  outside the current scheme, which we found only because a control arm we nearly deleted returned one
+  unexpected HTTP 200. The rule was validated in session 109 against eleven dashboard timestamps — all
+  of them modern. **A validation that only sampled the regime where the rule works is not a validation
+  of the rule.** Where else has this arc done that?
+- **Can a corpus be called independent on argument alone?** Corpus B's independence from corpus A is
+  argued from operator, population, policy and link-maintenance — all true, none measured. The one
+  measurable thing, overlap, is **3 identifiers of 457**. That is evidence of disjointness, not of
+  independence in any statistical sense. **Open, and it bounds what the two-source comparison can carry.**
