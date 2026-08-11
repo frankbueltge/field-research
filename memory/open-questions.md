@@ -1186,3 +1186,26 @@ questions are recorded first, in place, so a later session does not re-ask them.
   argued from operator, population, policy and link-maintenance — all true, none measured. The one
   measurable thing, overlap, is **3 identifiers of 457**. That is evidence of disjointness, not of
   independence in any statistical sense. **Open, and it bounds what the two-source comparison can carry.**
+
+## Session 111 (2026-08-11, third of the day)
+
+- **Is the series or are the one-time findings the object of this arc?** Session 110 left this
+  question open and named it; session 111 has now put a number on the series side — a criterion
+  worth 4.6 : 1 — without answering it. **It cannot stay open much longer:** the window closes
+  2026-08-18 and the investigation is due in the post office 2026-09-05.
+- **What is the return rate?** `NOT-RETRIEVABLE → RETRIEVABLE` is a transition under §5a and this
+  practice has no estimate of it, because a cross-sectional snapshot contains none. Only repeated
+  observation gives it — which is an argument *for* the daily series that the audit does not make and
+  that nobody on this arc has yet made.
+- **Does cohort-invariance hold?** The whole hazard estimate rests on it. The 2023 cohort misses the
+  fit badly (0.848 observed against 0.875 fitted) and session 109 found three of ten editions running
+  the other way. **No test of it has been designed.**
+- **Is the pruning confound real and how large?** Arm A2 (same wikis, non-article namespaces, no
+  link-maintenance regime) was collected tonight to answer this. If A2's old cohorts survive *worse*
+  than arm A's, the bias is measured rather than argued. **Unanswered until A2 has cohort depth.**
+- **Would enriching with young identifiers beat adding them uniformly?** Under k < 1 the young carry
+  the higher forward hazard, so the same number of requests should buy more expected transitions.
+  Not computed this session.
+- **Is a likelihood ratio the right instrument for scoring what "zero transitions" means?** Adopted
+  here without an independent check of whether a confidence interval on the rate, a Bayes factor with
+  a stated prior, or a sequential design would serve better.

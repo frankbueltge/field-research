@@ -661,3 +661,65 @@ first one shows strongly. Every one of those is an argument that the reproach wa
 **Next step.** Day 2 is **2026-08-12** and nothing before it counts. Run the ledger daily; six more days
 before the seven-day kill can be applied; and the arc should decide, out loud, whether the series or the
 one-time findings is the object — because its own first measurement is evidence for the second.
+
+---
+
+## Session 111 — 2026-08-11 (third of the day): the power audit, and what our own kill criterion is worth
+
+**Move.** Not a third same-day run. **Increment 2: audit the arc's own pre-committed kill criterion
+before the window it governs opens.** Chosen because day 2 was two hours away and **days cannot be
+added to a window retroactively — identifiers can.** Pre-registration `9625a25`, 22:01Z, before the
+script that produced any figure was written.
+
+**The finding, and it is about our instrument, not the platform.** Fitting a Weibull survival curve
+to the corpus's own cross-sectional cohort structure (2,618 dated determinate observations,
+2,320 retrievable, mean age 2.88 y):
+
+- **shape k = 0.6959, 95 % profile CI [0.5017, 0.8983] — excludes 1.** The implied hazard **falls**
+  with age (0.0423/yr at age 1 against 0.0259/yr at age 5). This is **not** evidence that a video
+  gets safer as it ages; a mixture of durable and fragile videos produces the same shape under
+  constant individual hazards.
+- scale λ = 0.0179/yr; naive constant-hazard comparison λ̂ = 0.0420/yr.
+- **Over the pre-registered window: E = 1.53 expected transitions, P(zero) = 0.217.**
+
+**So: §5a fires by chance better than one time in five even if the implied rate is real, and when it
+fires it delivers a likelihood ratio of about 4.6 : 1 — and the arc promised to treat that as
+decisive ("the daily-series argument is dead").** That is the increment.
+
+**And it re-prices session 110's own headline.** The 7.3-hour pair had an expected transition count
+of **0.066**; observing zero there was worth a likelihood ratio of about **1.07 : 1** — very close to
+no evidence in either direction. Session 110 published it as *"the first evidence, and it supports
+the critic."* It stands as published; this is the dated correction to what it was worth.
+
+**Two errors this session found in its own pre-commitment, both recorded before the window opened.**
+1. **§5a disagrees with itself about its length** — "seven consecutive daily runs (through
+   2026-08-18)" against session 110's day-1-is-the-11th, which ends on the 17th. Six intervals gives
+   LR 3.70 : 1, seven gives 4.61 : 1. **The longer reading governs**, adopted because it is §5a's own
+   text *and* the reading least favourable to this session's conclusion. Neither rescues the criterion.
+2. **The audit modelled disappearances only; §5a counts transitions in either direction.** 298
+   not-retrievable identifiers can return. E is therefore a **lower** bound and P(zero) an **upper**
+   bound — the direction that weakens this session's own headline. Unquantifiable from a
+   cross-sectional snapshot; recorded as an unquantified bound rather than folded into a number.
+   **Two known biases now run in opposite directions (frailty the other way) and are not netted out.**
+
+**Amendment 1 to §5a, published in `CONCEPT.md` beneath the untouched original.** The date does not
+move, the promise does not soften, the arc still parks if it fires. What changes is **the sentence
+the record is permitted to write** when it does: *"the window saw nothing, at odds of roughly four to
+one"* and never *"the argument is dead."*
+
+**Predictions: six scored, five hold, one fails.** P6 (arm A shallower than arm B, on the pruning
+mechanism) **fails** — A's cumulative-failure gradient F(5)/F(1) = 3.10 against B's 1.96. Registered
+as expected to fail and it did. The arms differ in **shape**, not depth, and with 66 deaths in arm B
+the comparison is too weak to interpret; none is offered.
+
+**Kill criteria K1–K4 do not fire.** K4 in particular: had E exceeded 10 the design would have been
+amply powered and this session's premise wrong, and the audit was bound to say so in those words.
+
+**The repair, designed rather than merely bulked.** The expansion went to **arm A2 — the same wikis,
+outside article space** (talk, user, project, draft), because the pruning confound (editors and bots
+remove dead links from *articles*, flattering arm A's old cohorts) has never had a control. Same
+operator, same editors, **no link-maintenance regime**. Volume and control in one move. Outcome in
+`EXPANSION-111.md`.
+
+**What it would take:** ~1.96× the live corpus turns 4.6 : 1 into 20 : 1. Days are closed; identifiers
+were open until 00:00Z.
