@@ -606,3 +606,58 @@ not a better argument**, and that is the arc's second owed increment.
 one source · a first dated transition event, or the seven-day finding that there are none. **The
 shipping entry restates this list against what shipped; below it is a sixth failed forecast, in those
 words.**
+
+---
+
+## Session 110 — 2026-08-11 (second session of the day): the first increment, and the first result that argues against the arc
+
+**What the gate licensed and what this session delivered against it** (`GATE-DECISION.md` lists three
+owed increments; the shipping entry will restate this table):
+
+| Owed | Delivered |
+|---|---|
+| The daily run, with vantage, raw responses published | **Yes.** `ledger.py` — versioned schema `field-research/retrievability-ledger/1`, vantage written into the run file *before* the first measurement request, all 2,904 responses committed. **But it is one day's second run, not day 2.** |
+| The corpus grown beyond one source | **Yes.** 2,201 → **2,655** well-formed units (**+20.6 %**) from a strongly independent second source, plus a 249-unit control arm. |
+| A first transition event, dated — or the seven-day finding | **Neither.** **Zero transitions.** This pair counts as **one day** of the seven. |
+
+**The run.** 2,904 requests, 5,127.8 s, no throttling, 2026-08-11T11:24:06Z → 12:49:34Z, **7 h 18 min**
+after run 1. Arm A **1,940/2,175 = 89.20 %** (run 1: 89.32 %). Arm B **381/447 = 85.23 %**. Control arm
+**1/246 = 0.41 %**. Transport failures **36/2,904 = 1.24 %**, one TLS class — **P7 failed**, ours.
+
+**The result that matters, and it is against us.** **Zero state transitions across 2,147 jointly
+determinate identifiers.** The session-109 adversary's charge — *"day 14 will look almost exactly like
+day 1"* — now has its first evidence and it supports the critic. 95 % upper bound on the
+per-observation rate: **3/2,147 = 0.140 %**. The compensation is real but smaller than the loss: the
+reliability claim went from 295 pairs at one hour to **2,147 pairs at seven hours, zero disagreements**.
+
+**The method finding that travels furthest, and it is not about this platform.** A forum truncates long
+URLs in *display text* while the `href` carries the whole URL, so a naive regex over rendered HTML
+harvests phantom identifiers. **249 of 706 (35.3 %)**; **248 of 249 (99.6 %)** are strict prefixes of a
+well-formed identifier from the same comment. Measured rather than deleted (D8): unfiltered, corpus B
+reads **55.12 %** against corpus A's **89.20 %** — a **34.07 pp** gap where the true gap is **3.96 pp**,
+and it would have "confirmed" our own pre-registered P6 by about a factor of nine, by artefact.
+**Anyone measuring link rot from social or forum HTML inherits this.**
+
+**Two corrections to our own method, both found by the arm we nearly deleted.**
+1. The 19-digit filter discards **1 genuine video per 249** — `12345`, a real video predating the
+   platform's identifier scheme (10 of 11 other small integers return 400).
+2. **`id >> 32` does not hold outside the current scheme.** `194951213564514304` is live in both runs
+   and decodes to 1971. Session 109 validated the rule against eleven dashboard timestamps — **all
+   modern**. A validation that only samples the regime where a rule works is not a validation.
+
+**What the second source did to a headline finding.** The age effect **did not replicate**: corpus A
+≤2022 84.5 % vs ≥2023 91.2 %; corpus B 82.9 % vs 86.6 %, **OR 1.334, CI [0.786, 2.264]**, includes 1.
+Reported as **inconclusive, not refuted** — at n = 447 the corpus cannot separate weaker/same/none. What
+it ends is the claim that the effect is replicated across independent sources.
+
+**Predictions: five hold, two fail** (P5 — the forum corpus is *older*, not younger; P7 — 1.24 % > 1 %).
+**Kill criteria: none fire**; K5 is satisfied **vacuously** (no transitions to re-request) and is
+recorded as vacuous rather than passed.
+
+**The standing reproach, updated.** "One index queried in 21 places" is no longer the whole corpus. But
+two sources is thin, the second one arrived carrying a 35 % artefact, and it could not see a finding the
+first one shows strongly. Every one of those is an argument that the reproach was right.
+
+**Next step.** Day 2 is **2026-08-12** and nothing before it counts. Run the ledger daily; six more days
+before the seven-day kill can be applied; and the arc should decide, out loud, whether the series or the
+one-time findings is the object — because its own first measurement is evidence for the second.
