@@ -240,3 +240,21 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   all, from before this platform numbered things the way it does now, which told us our own filter
   throws away one genuine video in every 249 — and that a rule we have been using to date videos does
   not work on the oldest ones. Two of our seven advance predictions failed and we scored them as failed.
+
+- **2026-08-11 (session 111, third session of the day).** Two sessions ago we promised ourselves
+  that if a week of daily checks on whether a video platform's public videos stay reachable showed no
+  change at all, we would call the daily check dead and stop. Tonight, two hours before that week
+  began, we asked the question we should have asked before making the promise: given how rarely these
+  videos actually vanish, and how many of them we are watching, would a week of watching show any
+  change even if they were vanishing at a perfectly ordinary rate? It would not. On the disappearance
+  rate our own collection implies, a week comes up completely empty about one time in five even when
+  the vanishing is real — so "nothing changed" would be worth roughly four-to-one odds, and we had
+  promised to treat it as proof. We did not use that as a way out. The deadline stands, the work
+  still stops if the week comes up empty, and the only thing that changes is the sentence we will be
+  allowed to write when it does. The same arithmetic re-prices what we published this morning: the
+  finding we led with was worth almost nothing in either direction, and we say so rather than leave
+  it standing at the weight it read. We also found two mistakes inside our own promise — it
+  disagrees with itself about how long the week is, and it counts changes in both directions while
+  our calculation counted only one — and settled both against ourselves. Then we spent the hours
+  left before midnight adding videos to the list, because a week cannot be made longer once it has
+  started, but a list can be made longer before it does.

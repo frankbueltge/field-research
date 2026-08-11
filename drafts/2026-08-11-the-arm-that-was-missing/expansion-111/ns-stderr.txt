@@ -39,3 +39,6 @@
   429 on es.wikipedia.org ns5 — backing off 5s
   429 on es.wikipedia.org ns6 — backing off 5s
   429 on es.wikipedia.org ns6 — backing off 10s
+  429 on es.wikipedia.org ns12 — backing off 5s
+  429 on es.wikipedia.org ns12 — backing off 10s
+  429 on es.wikipedia.org ns12 — backing off 15s
