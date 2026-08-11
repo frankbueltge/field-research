@@ -1,0 +1,50 @@
+{"wiki": "cs.wikipedia.org", "api_pages": 1, "link_rows": 254, "video_rows": 8, "distinct_ids": 8}
+{"wiki":"da.wikipedia.org","ERROR":true}
+{"wiki": "fi.wikipedia.org", "api_pages": 1, "link_rows": 102, "video_rows": 19, "distinct_ids": 19}
+{"wiki":"el.wikipedia.org","ERROR":true}
+{"wiki":"hu.wikipedia.org","ERROR":true}
+{"wiki":"no.wikipedia.org","ERROR":true}
+{"wiki":"ro.wikipedia.org","ERROR":true}
+{"wiki":"bg.wikipedia.org","ERROR":true}
+{"wiki":"sr.wikipedia.org","ERROR":true}
+{"wiki":"hr.wikipedia.org","ERROR":true}
+{"wiki":"sk.wikipedia.org","ERROR":true}
+{"wiki":"sl.wikipedia.org","ERROR":true}
+{"wiki": "lt.wikipedia.org", "api_pages": 1, "link_rows": 3, "video_rows": 0, "distinct_ids": 0}
+{"wiki":"lv.wikipedia.org","ERROR":true}
+{"wiki":"et.wikipedia.org","ERROR":true}
+{"wiki":"ca.wikipedia.org","ERROR":true}
+{"wiki":"eu.wikipedia.org","ERROR":true}
+{"wiki": "gl.wikipedia.org", "api_pages": 4, "link_rows": 1666, "video_rows": 4, "distinct_ids": 4}
+{"wiki": "hi.wikipedia.org", "api_pages": 1, "link_rows": 6, "video_rows": 1, "distinct_ids": 1}
+{"wiki": "bn.wikipedia.org", "api_pages": 1, "link_rows": 26, "video_rows": 3, "distinct_ids": 3}
+{"wiki": "ta.wikipedia.org", "api_pages": 1, "link_rows": 6, "video_rows": 2, "distinct_ids": 2}
+{"wiki": "te.wikipedia.org", "api_pages": 1, "link_rows": 2, "video_rows": 2, "distinct_ids": 2}
+{"wiki": "ml.wikipedia.org", "api_pages": 1, "link_rows": 11, "video_rows": 0, "distinct_ids": 0}
+{"wiki": "mr.wikipedia.org", "api_pages": 1, "link_rows": 6, "video_rows": 0, "distinct_ids": 0}
+{"wiki": "ur.wikipedia.org", "api_pages": 1, "link_rows": 30, "video_rows": 3, "distinct_ids": 3}
+{"wiki": "ms.wikipedia.org", "api_pages": 5, "link_rows": 1992, "video_rows": 44, "distinct_ids": 43}
+{"wiki": "tl.wikipedia.org", "api_pages": 1, "link_rows": 14, "video_rows": 5, "distinct_ids": 5}
+{"wiki": "my.wikipedia.org", "api_pages": 1, "link_rows": 13, "video_rows": 0, "distinct_ids": 0}
+{"wiki": "ne.wikipedia.org", "api_pages": 1, "link_rows": 111, "video_rows": 1, "distinct_ids": 1}
+{"wiki": "si.wikipedia.org", "api_pages": 1, "link_rows": 4, "video_rows": 0, "distinct_ids": 0}
+{"wiki": "ka.wikipedia.org", "api_pages": 1, "link_rows": 30, "video_rows": 5, "distinct_ids": 5}
+{"wiki": "hy.wikipedia.org", "api_pages": 5, "link_rows": 2199, "video_rows": 15, "distinct_ids": 15}
+{"wiki":"az.wikipedia.org","ERROR":true}
+{"wiki":"kk.wikipedia.org","ERROR":true}
+{"wiki": "uz.wikipedia.org", "api_pages": 1, "link_rows": 94, "video_rows": 6, "distinct_ids": 6}
+{"wiki":"mn.wikipedia.org","ERROR":true}
+{"wiki":"sw.wikipedia.org","ERROR":true}
+{"wiki":"af.wikipedia.org","ERROR":true}
+{"wiki":"is.wikipedia.org","ERROR":true}
+{"wiki": "sq.wikipedia.org", "api_pages": 1, "link_rows": 17, "video_rows": 2, "distinct_ids": 2}
+{"wiki": "mk.wikipedia.org", "api_pages": 1, "link_rows": 14, "video_rows": 3, "distinct_ids": 3}
+{"wiki": "bs.wikipedia.org", "api_pages": 1, "link_rows": 1, "video_rows": 0, "distinct_ids": 0}
+{"wiki":"be.wikipedia.org","ERROR":true}
+{"wiki":"simple.wikipedia.org","ERROR":true}
+{"wiki":"nn.wikipedia.org","ERROR":true}
+{"wiki":"ga.wikipedia.org","ERROR":true}
+{"wiki": "cy.wikipedia.org", "api_pages": 1, "link_rows": 5, "video_rows": 0, "distinct_ids": 0}
+{"wiki":"la.wikipedia.org","ERROR":true}
+SKIP ka.wikipedia.org (session 109 already has it)
+{"wiki": "ky.wikipedia.org", "api_pages": 1, "link_rows": 4, "video_rows": 0, "distinct_ids": 0}

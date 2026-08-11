@@ -1,0 +1,4 @@
+  429 on en.wikipedia.org ns1 — backing off 5s
+  429 on en.wikipedia.org ns3 — backing off 5s
+  429 on en.wikipedia.org ns3 — backing off 10s
+  429 on en.wikipedia.org ns3 — backing off 15s

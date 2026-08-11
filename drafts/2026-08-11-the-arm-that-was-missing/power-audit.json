@@ -1,0 +1,592 @@
+{
+  "session": 111,
+  "date": "2026-08-11",
+  "input": {
+    "file": "ledger/run-2026-08-11T1124Z.json",
+    "run_id": "2026-08-11T11:24:01Z",
+    "run_utc_start": "2026-08-11T11:24:06Z",
+    "run_utc_end": "2026-08-11T12:49:34Z",
+    "observations_in_file": 2904
+  },
+  "age_reference_utc": "2026-08-11T12:00:00Z",
+  "excluded": {
+    "arm_B_truncated": 249,
+    "indeterminate": 33,
+    "not_19_digit": 4,
+    "nonpositive_age": 0
+  },
+  "n_analysed": 2618,
+  "overall": {
+    "n": 2618,
+    "retrievable": 2320,
+    "not_retrievable": 298,
+    "fraction": 0.8861726508785333,
+    "mean_age_years": 2.8796361378641837
+  },
+  "K1": {
+    "threshold": 1500,
+    "value": 2320,
+    "fires": false,
+    "meaning": "fewer than 1,500 determinate, datable, currently-retrievable identifiers would make the power question moot"
+  },
+  "cohorts": {
+    "A": [
+      {
+        "year": 2018,
+        "n": 2,
+        "retrievable": 2,
+        "fraction": 1.0,
+        "wilson95": [
+          0.3423802274009781,
+          1.0
+        ],
+        "mean_age_years": null
+      },
+      {
+        "year": 2019,
+        "n": 26,
+        "retrievable": 19,
+        "fraction": 0.7307692307692307,
+        "wilson95": [
+          0.539169596161875,
+          0.8629555168018839
+        ],
+        "mean_age_years": null
+      },
+      {
+        "year": 2020,
+        "n": 110,
+        "retrievable": 89,
+        "fraction": 0.8090909090909091,
+        "wilson95": [
+          0.7257160081823486,
+          0.8716059227147808
+        ],
+        "mean_age_years": null
+      },
+      {
+        "year": 2021,
+        "n": 197,
+        "retrievable": 166,
+        "fraction": 0.8426395939086294,
+        "wilson95": [
+          0.7853008500743416,
+          0.8868711247334716
+        ],
+        "mean_age_years": null
+      },
+      {
+        "year": 2022,
+        "n": 317,
+        "retrievable": 277,
+        "fraction": 0.8738170347003155,
+        "wilson95": [
+          0.8327326439623006,
+          0.9059499467159766
+        ],
+        "mean_age_years": null
+      },
+      {
+        "year": 2023,
+        "n": 456,
+        "retrievable": 389,
+        "fraction": 0.8530701754385965,
+        "wilson95": [
+          0.8176278007643075,
+          0.882613540728772
+        ],
+        "mean_age_years": null
+      },
+      {
+        "year": 2024,
+        "n": 476,
+        "retrievable": 437,
+        "fraction": 0.9180672268907563,
+        "wilson95": [
+          0.8899536481122393,
+          0.9394869779159257
+        ],
+        "mean_age_years": null
+      },
+      {
+        "year": 2025,
+        "n": 457,
+        "retrievable": 435,
+        "fraction": 0.9518599562363238,
+        "wilson95": [
+          0.9281897787565354,
+          0.9679969511771438
+        ],
+        "mean_age_years": null
+      },
+      {
+        "year": 2026,
+        "n": 130,
+        "retrievable": 125,
+        "fraction": 0.9615384615384616,
+        "wilson95": [
+          0.9131216006270343,
+          0.9834615736429514
+        ],
+        "mean_age_years": null
+      }
+    ],
+    "B": [
+      {
+        "year": 2019,
+        "n": 3,
+        "retrievable": 2,
+        "fraction": 0.6666666666666666,
+        "wilson95": [
+          0.20765960074271794,
+          0.9385080553004134
+        ],
+        "mean_age_years": null
+      },
+      {
+        "year": 2020,
+        "n": 20,
+        "retrievable": 17,
+        "fraction": 0.85,
+        "wilson95": [
+          0.6395811352026538,
+          0.947631254115966
+        ],
+        "mean_age_years": null
+      },
+      {
+        "year": 2021,
+        "n": 52,
+        "retrievable": 46,
+        "fraction": 0.8846153846153846,
+        "wilson95": [
+          0.7702833565184714,
+          0.9460303079785067
+        ],
+        "mean_age_years": null
+      },
+      {
+        "year": 2022,
+        "n": 95,
+        "retrievable": 76,
+        "fraction": 0.8,
+        "wilson95": [
+          0.7086265584290896,
+          0.8680545294367075
+        ],
+        "mean_age_years": null
+      },
+      {
+        "year": 2023,
+        "n": 118,
+        "retrievable": 98,
+        "fraction": 0.8305084745762712,
+        "wilson95": [
+          0.7526592831253134,
+          0.8875168995452598
+        ],
+        "mean_age_years": null
+      },
+      {
+        "year": 2024,
+        "n": 72,
+        "retrievable": 63,
+        "fraction": 0.875,
+        "wilson95": [
+          0.7791894627317686,
+          0.9328221578039615
+        ],
+        "mean_age_years": null
+      },
+      {
+        "year": 2025,
+        "n": 53,
+        "retrievable": 45,
+        "fraction": 0.8490566037735849,
+        "wilson95": [
+          0.7294575072054471,
+          0.9214758215034901
+        ],
+        "mean_age_years": null
+      },
+      {
+        "year": 2026,
+        "n": 34,
+        "retrievable": 34,
+        "fraction": 1.0,
+        "wilson95": [
+          0.8984854458038679,
+          0.9999999999999999
+        ],
+        "mean_age_years": null
+      }
+    ],
+    "pooled": [
+      {
+        "year": 2018,
+        "n": 2,
+        "retrievable": 2,
+        "fraction": 1.0,
+        "wilson95": [
+          0.3423802274009781,
+          1.0
+        ],
+        "mean_age_years": 8.15494947334398
+      },
+      {
+        "year": 2019,
+        "n": 29,
+        "retrievable": 21,
+        "fraction": 0.7241379310344828,
+        "wilson95": [
+          0.5428286757874183,
+          0.8530124490013116
+        ],
+        "mean_age_years": 7.014912130025184
+      },
+      {
+        "year": 2020,
+        "n": 130,
+        "retrievable": 106,
+        "fraction": 0.8153846153846154,
+        "wilson95": [
+          0.7399815611998769,
+          0.8726836078846133
+        ],
+        "mean_age_years": 6.018037666167454
+      },
+      {
+        "year": 2021,
+        "n": 249,
+        "retrievable": 212,
+        "fraction": 0.8514056224899599,
+        "wilson95": [
+          0.8019004735782985,
+          0.8902328530327289
+        ],
+        "mean_age_years": 5.083913840649185
+      },
+      {
+        "year": 2022,
+        "n": 412,
+        "retrievable": 353,
+        "fraction": 0.8567961165048543,
+        "wilson95": [
+          0.8196724657295225,
+          0.8873277473624928
+        ],
+        "mean_age_years": 4.101714354931443
+      },
+      {
+        "year": 2023,
+        "n": 574,
+        "retrievable": 487,
+        "fraction": 0.8484320557491289,
+        "wilson95": [
+          0.8167855292932579,
+          0.875445867213155
+        ],
+        "mean_age_years": 3.1133042478091517
+      },
+      {
+        "year": 2024,
+        "n": 548,
+        "retrievable": 500,
+        "fraction": 0.9124087591240876,
+        "wilson95": [
+          0.8857772089456845,
+          0.9332986193990437
+        ],
+        "mean_age_years": 2.105535700019467
+      },
+      {
+        "year": 2025,
+        "n": 510,
+        "retrievable": 480,
+        "fraction": 0.9411764705882353,
+        "wilson95": [
+          0.9172682477827852,
+          0.9584882570177535
+        ],
+        "mean_age_years": 1.1458585606549765
+      },
+      {
+        "year": 2026,
+        "n": 164,
+        "retrievable": 159,
+        "fraction": 0.9695121951219512,
+        "wilson95": [
+          0.9306239840099684,
+          0.9869085558070543
+        ],
+        "mean_age_years": 0.3398855687115223
+      }
+    ]
+  },
+  "K2": {
+    "threshold": "6 yearly cohorts with n >= 100",
+    "value": 7,
+    "fires": false,
+    "cohorts_over_100": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "naive_constant_hazard": {
+    "lambda_per_year": 0.041964844176153024,
+    "method": "-ln(S_bar)/t_bar \u2014 reported for comparison and labelled naive",
+    "daily": 0.00011489348165955653,
+    "expected_transitions_6_intervals": 1.5993172647010272
+  },
+  "fits": {
+    "pooled": {
+      "n": 2618,
+      "deaths": 298,
+      "fitted": true,
+      "k": 0.695856502117081,
+      "lambda_per_year": 0.017871723398900436,
+      "loglik": -899.2759988840263,
+      "k_ci95_profile": [
+        0.5016979246610139,
+        0.8982750892930009
+      ],
+      "median_life_years": 33.043599807517595,
+      "annual_hazard_at_mean_age": 0.030660115696992063
+    },
+    "A": {
+      "n": 2171,
+      "deaths": 232,
+      "fitted": true,
+      "k": 0.7417236149564107,
+      "lambda_per_year": 0.019933498662726774,
+      "loglik": -712.8322221957899,
+      "k_ci95_profile": [
+        0.5221181793032554,
+        0.9728869476335571
+      ],
+      "median_life_years": 30.606635447316517,
+      "annual_hazard_at_mean_age": 0.031081240044590314
+    },
+    "B": {
+      "n": 447,
+      "deaths": 66,
+      "fitted": true,
+      "k": 0.4504646612861485,
+      "lambda_per_year": 0.006050183646177378,
+      "loglik": -184.0366458383328,
+      "k_ci95_profile": [
+        0.16028914323097265,
+        0.8911361342880973
+      ],
+      "median_life_years": 73.2613831733863,
+      "annual_hazard_at_mean_age": 0.02405065131824566
+    }
+  },
+  "_pooled_curve_sample": [
+    {
+      "k": 0.05000000000000001,
+      "lambda": 1.0000000003772145e-05,
+      "loglik": -1597.6966257483825
+    },
+    {
+      "k": 0.06352271716602778,
+      "lambda": 1.0000000003772145e-05,
+      "loglik": -1446.2789521316292
+    },
+    {
+      "k": 0.08070271192310317,
+      "lambda": 1.0000000003772145e-05,
+      "loglik": -1290.8722817384507
+    },
+    {
+      "k": 0.10252911088045401,
+      "lambda": 1.0000000003772145e-05,
+      "loglik": -1142.9900419749213
+    },
+    {
+      "k": 0.13025855423486762,
+      "lambda": 1.0000000003772145e-05,
+      "loglik": -1018.3242630630383
+    },
+    {
+      "k": 0.16548754598234366,
+      "lambda": 1.0000000003772145e-05,
+      "loglik": -935.6613442287363
+    },
+    {
+      "k": 0.21024437155872866,
+      "lambda": 1.7962173478960508e-05,
+      "loglik": -912.2650196205351
+    },
+    {
+      "k": 0.26710587500548744,
+      "lambda": 0.00015036486862390381,
+      "loglik": -909.2185325142268
+    },
+    {
+      "k": 0.33934581902715877,
+      "lambda": 0.0007956194938724874,
+      "loglik": -905.9970521615137
+    },
+    {
+      "k": 0.43112336967072507,
+      "lambda": 0.0029304717993148357,
+      "loglik": -902.8797864917834
+    },
+    {
+      "k": 0.5477225575051662,
+      "lambda": 0.008105635233437627,
+      "loglik": -900.3646747852372
+    },
+    {
+      "k": 0.695856502117081,
+      "lambda": 0.017871723398900436,
+      "loglik": -899.2759988840263
+    },
+    {
+      "k": 0.884053915442495,
+      "lambda": 0.03292142598530207,
+      "loglik": -900.9092970012333
+    },
+    {
+      "k": 1.1231501366034604,
+      "lambda": 0.052579832093868815,
+      "loglik": -907.2210188205223
+    },
+    {
+      "k": 1.4269109692489415,
+      "lambda": 0.07497654247875296,
+      "loglik": -921.0700937894543
+    },
+    {
+      "k": 1.8128252384140613,
+      "lambda": 0.0977064856259115,
+      "loglik": -946.5179497349778
+    },
+    {
+      "k": 2.3031116978242636,
+      "lambda": 0.11855248621326399,
+      "loglik": -989.1941759875616
+    },
+    {
+      "k": 2.925998259653215,
+      "lambda": 0.13595819414854238,
+      "loglik": -1056.7415445820757
+    },
+    {
+      "k": 3.717347197524813,
+      "lambda": 0.14917008127391096,
+      "loglik": -1159.3703388063086
+    },
+    {
+      "k": 4.722719892725894,
+      "lambda": 0.15812975341191232,
+      "loglik": -1310.5737422103257
+    },
+    {
+      "k": 6.0,
+      "lambda": 0.16324460925582077,
+      "loglik": -1528.0963911446734
+    }
+  ],
+  "K3": {
+    "k_ci95": [
+      0.5016979246610139,
+      0.8982750892930009
+    ],
+    "includes_1": false,
+    "wider_than_0.5_2.0": false,
+    "fires": false
+  },
+  "power": {
+    "intervals_days": 6,
+    "live_identifiers": 2320,
+    "expected_transitions_fitted": 1.3090484375117177,
+    "p_zero_fitted": 0.2700769292248256,
+    "expected_transitions_naive": 1.5993172647010272,
+    "p_zero_naive": 0.20203440693969896,
+    "same_day_pair_hours": 7.3,
+    "expected_transitions_in_the_pair_already_run": 0.06636148329052455
+  },
+  "K4": {
+    "threshold": 10,
+    "value": 1.3090484375117177,
+    "fires": false,
+    "meaning": "above 10 expected transitions the design is amply powered and this session's premise is wrong"
+  },
+  "sensitivity": [
+    {
+      "k": 0.5,
+      "lambda_per_year": 0.005667587408785672,
+      "expected_transitions": 1.0661341618947555,
+      "p_zero": 0.34433709920220484,
+      "corpus_for_p_zero_0.05": {
+        "multiplier": 2.8099017746790085,
+        "live_now": 2320,
+        "live_needed": 6519
+      },
+      "days_for_p_zero_0.05_at_current_corpus": 16.85941064807405
+    },
+    {
+      "k": 0.75,
+      "lambda_per_year": 0.022017893232301536,
+      "expected_transitions": 1.3693265445347163,
+      "p_zero": 0.2542781469105385,
+      "corpus_for_p_zero_0.05": {
+        "multiplier": 2.187741328400167,
+        "live_now": 2320,
+        "live_needed": 5076
+      },
+      "days_for_p_zero_0.05_at_current_corpus": 13.126447970401005
+    },
+    {
+      "k": 1.0,
+      "lambda_per_year": 0.04256296879562973,
+      "expected_transitions": 1.6221123220676006,
+      "p_zero": 0.1974811144862395,
+      "corpus_for_p_zero_0.05": {
+        "multiplier": 1.8468093934059553,
+        "live_now": 2320,
+        "live_needed": 4285
+      },
+      "days_for_p_zero_0.05_at_current_corpus": 11.080856360435732
+    },
+    {
+      "k": 0.695856502117081,
+      "lambda_per_year": 0.017871723398900436,
+      "expected_transitions": 1.3090484375117177,
+      "p_zero": 0.2700769292248256,
+      "corpus_for_p_zero_0.05": {
+        "multiplier": 2.2884808443363465,
+        "live_now": 2320,
+        "live_needed": 5310
+      },
+      "days_for_p_zero_0.05_at_current_corpus": 13.730885066018079
+    }
+  ],
+  "age_gradient_by_arm": {
+    "A": {
+      "k": 0.7417236149564107,
+      "k_ci95": [
+        0.5221181793032554,
+        0.9728869476335571
+      ],
+      "lambda_per_year": 0.019933498662726774,
+      "annual_hazard_at_mean_age": 0.031081240044590314
+    },
+    "B": {
+      "k": 0.4504646612861485,
+      "k_ci95": [
+        0.16028914323097265,
+        0.8911361342880973
+      ],
+      "lambda_per_year": 0.006050183646177378,
+      "annual_hazard_at_mean_age": 0.02405065131824566
+    }
+  }
+}

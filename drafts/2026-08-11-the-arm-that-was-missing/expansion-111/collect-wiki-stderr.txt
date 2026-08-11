@@ -1,0 +1,675 @@
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
+Traceback (most recent call last):
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 60, in <module>
+    main(sys.argv[1])
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 32, in main
+    d = fetch(wiki, cont)
+        ^^^^^^^^^^^^^^^^^
+  File "/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/collect_corpus.py", line 25, in fetch
+    with urllib.request.urlopen(req, timeout=60) as r:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 525, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 634, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 563, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.11/urllib/request.py", line 643, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests

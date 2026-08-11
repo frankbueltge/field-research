@@ -1,0 +1,29 @@
+{
+ "meta": {
+  "wiki": "mk.wikipedia.org",
+  "api_pages": 1,
+  "link_rows": 14,
+  "video_rows": 3,
+  "distinct_ids": 3
+ },
+ "rows": [
+  {
+   "page": "\u0425\u0435\u0458\u043b\u0438 \u0421\u0442\u0430\u0458\u043d\u0444\u0435\u043b\u0434",
+   "handle": "haileesteinfeld",
+   "vid": "7163354748383431979",
+   "url": "https://www.tiktok.com/@haileesteinfeld/video/7163354748383431979?is_from_webapp=v1&item_id=7163354748383431979"
+  },
+  {
+   "page": "\u040f\u043e\u0448\u0443\u0430 \u0410\u043c\u043f\u043e\u043d\u0441\u0435\u043c",
+   "handle": "unclimatechange",
+   "vid": "7029359789217975558",
+   "url": "https://www.tiktok.com/@unclimatechange/video/7029359789217975558"
+  },
+  {
+   "page": "\u0415\u043b\u0438 \u0413\u043e\u043b\u0434\u0438\u043d\u0433",
+   "handle": "starsmithmusic",
+   "vid": "7395619270324948256",
+   "url": "https://www.tiktok.com/@starsmithmusic/video/7395619270324948256"
+  }
+ ]
+}
