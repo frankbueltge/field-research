@@ -403,6 +403,527 @@ a question the arithmetic in this document can answer, because the arithmetic is
 question is what a team does with a correct calculation that happens, every time, to point the same
 direction.
 
+---
+
+## Appendix — the independent script, reproduced in full
+
+Run with `python3 reimpl.py` from
+`/home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/`. No numpy, no scipy (verified
+absent on this machine). Does not import `power_audit.py`.
+
+```python
+#!/usr/bin/env python3
+"""
+INDEPENDENT re-implementation, written from scratch, NOT importing or calling power_audit.py.
+Purpose: check every headline number in POWER-AUDIT.md against a from-scratch pipeline.
+Pure standard library only (verified: no numpy, no scipy on this machine).
+
+Run from: /home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/
+"""
+import json, math, time, calendar, random
+
+RUN = "ledger/run-2026-08-11T1124Z.json"
+
+# ---- 1. Load raw, independently ------------------------------------------------
+d = json.load(open(RUN))
+obs = d["observations"]
+assert len(obs) == 2904, f"unexpected observation count: {len(obs)}"
+
+T_REF = calendar.timegm((2026, 8, 11, 12, 0, 0, 0, 0, 0))
+YEAR_S = 365.25 * 86400.0
+
+def build(exclude_btrunc=True, exclude_indet=True, require19=True):
+    rows = []
+    excl = {"btrunc": 0, "indet": 0, "notdigit": 0, "nonpos": 0}
+    for o in obs:
+        if exclude_btrunc and o["arm"] == "B-truncated":
+            excl["btrunc"] += 1
+            continue
+        if exclude_indet and o["state"] == "INDETERMINATE":
+            excl["indet"] += 1
+            continue
+        vid = str(o["vid"])
+        if require19 and len(vid) != 19:
+            excl["notdigit"] += 1
+            continue
+        if not vid.isdigit():
+            excl["notdigit"] += 1
+            continue
+        created = int(vid) >> 32
+        age_s = T_REF - created
+        if age_s <= 0:
+            excl["nonpos"] += 1
+            continue
+        rows.append({
+            "vid": vid, "arm": o["arm"],
+            "alive": 1 if o["state"] == "RETRIEVABLE" else 0,
+            "created": created, "age_y": age_s / YEAR_S,
+        })
+    return rows, excl
+
+rows, excl = build()
+print("=== BASELINE (matches PREREGISTRATION-111 exclusion rules) ===")
+print("n analysed:", len(rows), "excluded:", excl)
+live = sum(r["alive"] for r in rows)
+print("retrievable:", live, "/", len(rows), "=", live/len(rows))
+mean_age = sum(r["age_y"] for r in rows) / len(rows)
+print("mean age (yr):", mean_age)
+
+# ---- 2. Naive constant-hazard estimate -----------------------------------------
+s_bar = live/len(rows)
+lam_naive = -math.log(s_bar) / mean_age
+print("naive lambda/yr:", lam_naive)
+
+# ---- 3. Weibull MLE, written independently (Nelder-Mead-ish coordinate search) --
+def negloglik(lam, k, rows):
+    if lam <= 0 or k <= 0:
+        return 1e18
+    ll = 0.0
+    for r in rows:
+        x = (lam * r["age_y"]) ** k
+        if x > 700: x = 700.0
+        if r["alive"]:
+            ll -= x
+        else:
+            if x < 1e-12:
+                return 1e18
+            ll += math.log1p(-math.exp(-x)) if x < 30 else 0.0
+    return -ll
+
+def fit_lambda_ternary(rows, k, lo=1e-6, hi=10.0, iters=200):
+    # ternary search in log-lambda space (independent implementation of the same idea,
+    # written without reference to power_audit.py's golden-section code)
+    a, b = math.log(lo), math.log(hi)
+    for _ in range(iters):
+        m1 = a + (b - a) / 3
+        m2 = b - (b - a) / 3
+        f1 = negloglik(math.exp(m1), k, rows)
+        f2 = negloglik(math.exp(m2), k, rows)
+        if f1 < f2:
+            b = m2
+        else:
+            a = m1
+        if b - a < 1e-10:
+            break
+    lam = math.exp((a + b) / 2)
+    return lam, negloglik(lam, k, rows)
+
+def full_fit(rows, k_lo=0.05, k_hi=6.0, steps=2000):
+    best = None
+    curve = []
+    for i in range(steps + 1):
+        k = math.exp(math.log(k_lo) + (math.log(k_hi) - math.log(k_lo)) * i / steps)
+        lam, nll = fit_lambda_ternary(rows, k)
+        curve.append((k, lam, -nll))
+        if best is None or -nll > best[2]:
+            best = (k, lam, -nll)
+    return best, curve
+
+best, curve = full_fit(rows)
+k_hat, lam_hat, ll_hat = best
+print("Weibull MLE (independent fit): k =", k_hat, " lambda =", lam_hat, " loglik =", ll_hat)
+
+def profile_ci(curve, best, crit=3.841458821):
+    thr = best[2] - crit / 2
+    ks = [k for (k, _, ll) in curve if ll >= thr]
+    return (min(ks), max(ks)) if ks else (None, None)
+
+klo, khi = profile_ci(curve, best)
+print("profile-likelihood 95% CI on k:", (klo, khi))
+
+# ---- 4. Power: expected transitions and P(zero), independent formula -----------
+def hazard_per_day(lam, k, t_y):
+    return k * (lam ** k) * (t_y ** (k - 1)) / 365.25
+
+def expected_transitions(rows, lam, k, days=6):
+    return sum(days * hazard_per_day(lam, k, r["age_y"]) for r in rows if r["alive"])
+
+e_fit = expected_transitions(rows, lam_hat, k_hat, days=6)
+p_zero_fit = math.exp(-e_fit)
+print("E[transitions] fitted (D=6):", e_fit, " P(zero) Poisson approx:", p_zero_fit)
+
+e_naive = live * 6 * lam_naive / 365.25
+print("E[transitions] naive (D=6):", e_naive, " P(zero):", math.exp(-e_naive))
+
+lr = p_zero_fit / 1.0  # LR of zero-transitions under implied-rate world vs world of literal zero risk
+print("Likelihood ratio (P(zero|world A=fitted) : P(zero|world B=never disappears)) = %.3f : 1" % (1/p_zero_fit))
+
+# ---- 5. EXACT (non-Poisson-approximated) P(zero), independent check ------------
+def exact_p_zero(rows, lam, k, days=6):
+    """Product over currently-retrievable identifiers of the exact conditional
+    survival probability over the window, using the Weibull cumulative hazard,
+    NOT the small-p Poisson shortcut."""
+    delta_y = days / 365.25
+    logp = 0.0
+    for r in rows:
+        if not r["alive"]:
+            continue
+        t0 = r["age_y"]
+        t1 = t0 + delta_y
+        H0 = (lam * t0) ** k
+        H1 = (lam * t1) ** k
+        # conditional survival prob = exp(-(H1-H0))
+        logp += -(H1 - H0)
+    return math.exp(logp)
+
+p_zero_exact = exact_p_zero(rows, lam_hat, k_hat, days=6)
+print("EXACT P(zero), D=6 (no Poisson approx):", p_zero_exact, " vs Poisson-approx:", p_zero_fit,
+      " diff:", p_zero_exact - p_zero_fit)
+
+# ---- 6. D=7 sensitivity: the calendar-date check --------------------------------
+e_fit_7 = expected_transitions(rows, lam_hat, k_hat, days=7)
+p_zero_7 = math.exp(-e_fit_7)
+print("\n--- If the window is 7 intervals (CONCEPT.md's literal 'through 2026-08-18') ---")
+print("E[transitions] fitted (D=7):", e_fit_7, " P(zero):", p_zero_7,
+      " LR:", 1/p_zero_7)
+
+# ---- 7. Sensitivity to exclusion rules ------------------------------------------
+print("\n=== EXCLUSION SENSITIVITY ===")
+def summarize(rows, label):
+    live = sum(r["alive"] for r in rows)
+    mean_age = sum(r["age_y"] for r in rows) / len(rows)
+    s_bar = live / len(rows)
+    lam_naive = -math.log(s_bar) / mean_age
+    best, curve = full_fit(rows, steps=600)
+    k_hat, lam_hat, ll = best
+    e = expected_transitions(rows, lam_hat, k_hat, days=6)
+    print(f"{label}: n={len(rows)} live={live} frac={s_bar:.4f} k={k_hat:.4f} lam={lam_hat:.5f} "
+          f"E={e:.4f} P0={math.exp(-e):.4f}")
+
+# (a) baseline
+summarize(rows, "baseline (as preregistered)")
+
+# (b) include B-truncated as alive/dead like everything else (do NOT drop it)
+rows_bt, _ = build(exclude_btrunc=False)
+summarize(rows_bt, "include B-truncated")
+
+# (c) treat INDETERMINATE as NOT-RETRIEVABLE (worst case) instead of excluding
+def build_indet_as_dead():
+    rows = []
+    for o in obs:
+        if o["arm"] == "B-truncated":
+            continue
+        vid = str(o["vid"])
+        if len(vid) != 19:
+            continue
+        created = int(vid) >> 32
+        age_s = T_REF - created
+        if age_s <= 0:
+            continue
+        alive = 1 if o["state"] == "RETRIEVABLE" else 0  # INDETERMINATE -> 0
+        rows.append({"vid": vid, "arm": o["arm"], "alive": alive,
+                     "created": created, "age_y": age_s / YEAR_S})
+    return rows
+rows_indet_dead = build_indet_as_dead()
+summarize(rows_indet_dead, "INDETERMINATE counted as dead")
+
+# (d) treat INDETERMINATE as RETRIEVABLE (best case)
+def build_indet_as_alive():
+    rows = []
+    for o in obs:
+        if o["arm"] == "B-truncated":
+            continue
+        vid = str(o["vid"])
+        if len(vid) != 19:
+            continue
+        created = int(vid) >> 32
+        age_s = T_REF - created
+        if age_s <= 0:
+            continue
+        alive = 1 if o["state"] in ("RETRIEVABLE", "INDETERMINATE") else 0
+        rows.append({"vid": vid, "arm": o["arm"], "alive": alive,
+                     "created": created, "age_y": age_s / YEAR_S})
+    return rows
+rows_indet_alive = build_indet_as_alive()
+summarize(rows_indet_alive, "INDETERMINATE counted as alive")
+
+# (e) relax digit-length filter to >=17 digits (include the 4 excluded 18-digit rows
+#     using the SAME >>32 rule, to see whether they behave as outliers)
+def build_relaxed():
+    rows = []
+    for o in obs:
+        if o["arm"] == "B-truncated":
+            continue
+        if o["state"] == "INDETERMINATE":
+            continue
+        vid = str(o["vid"])
+        if len(vid) < 17 or not vid.isdigit():
+            continue
+        created = int(vid) >> 32
+        age_s = T_REF - created
+        if age_s <= 0:
+            continue
+        rows.append({"vid": vid, "arm": o["arm"],
+                     "alive": 1 if o["state"] == "RETRIEVABLE" else 0,
+                     "created": created, "age_y": age_s / YEAR_S})
+    return rows
+rows_relaxed = build_relaxed()
+summarize(rows_relaxed, "17+ digit ids (includes the 4 excluded 18-digit rows)")
+
+# show what those 4 rows decode to under the >>32 rule, and whether the years are sane
+print("\nthe 4 excluded 18-digit rows, decoded anyway:")
+for o in obs:
+    vid = str(o["vid"])
+    if o["arm"] != "B-truncated" and o["state"] != "INDETERMINATE" and len(vid) == 18:
+        created = int(vid) >> 32
+        try:
+            y = time.gmtime(created).tm_year
+        except Exception:
+            y = "ERR"
+        print(f"  vid={vid} state={o['state']} decoded_year={y} created_epoch={created}")
+
+# ---- 8. Non-parametric cohort read-off: independent, no Weibull at all ---------
+print("\n=== NON-PARAMETRIC COHORT MODEL (no distributional assumption) ===")
+def year_of(r):
+    return time.gmtime(r["created"]).tm_year
+
+cohorts = {}
+for r in rows:
+    y = year_of(r)
+    c = cohorts.setdefault(y, [0, 0])
+    c[0] += 1
+    c[1] += r["alive"]
+
+years = sorted(cohorts)
+print("cohort fractions:", {y: round(cohorts[y][1]/cohorts[y][0], 4) for y in years})
+
+# Estimate a "local" annual hazard between adjacent cohorts by comparing survival
+# fractions at consecutive mean ages, converting to a hazard via -ln(S2/S1)/dt.
+# This treats the cross-sectional fractions as a rough survival curve without
+# fitting any parametric form - a genuine alternative model.
+mean_age_by_year = {}
+for r in rows:
+    mean_age_by_year.setdefault(year_of(r), []).append(r["age_y"])
+mean_age_by_year = {y: sum(v)/len(v) for y, v in mean_age_by_year.items()}
+
+# order oldest (largest age) to youngest (smallest age): survival should increase
+# as age decreases (S(older) <= S(younger)) in this cross-sectional reading
+ordered = sorted(years, key=lambda y: -mean_age_by_year[y])
+print("ordered oldest->youngest:", ordered)
+local_hazards = []
+for i in range(len(ordered) - 1):
+    y_old, y_new = ordered[i], ordered[i+1]
+    s_old = cohorts[y_old][1] / cohorts[y_old][0]
+    s_new = cohorts[y_new][1] / cohorts[y_new][0]
+    dt = mean_age_by_year[y_new] - mean_age_by_year[y_old]  # negative age gap -> positive dt going younger->older is reversed
+    dt = mean_age_by_year[y_old] - mean_age_by_year[y_new]
+    if dt <= 0 or s_old <= 0 or s_new <= 0:
+        continue
+    # local hazard rate estimate: -(ln(s_old) - ln(s_new)) / dt   [per year], read off
+    # directly from the cross-sectional curve, no Weibull
+    h_local = -(math.log(s_old) - math.log(s_new)) / dt
+    local_hazards.append((y_old, y_new, dt, h_local))
+    print(f"  between {y_old} (age {mean_age_by_year[y_old]:.2f}) and {y_new} "
+          f"(age {mean_age_by_year[y_new]:.2f}): local hazard = {h_local:.5f}/yr")
+
+# apply the *youngest-interval* local hazard (closest to where the live corpus
+# actually sits) as a constant-hazard estimate for the power calc, as a fully
+# nonparametric alternative to the Weibull fit
+if local_hazards:
+    h_last = local_hazards[-1][3]
+    e_nonparam = live * 6 * h_last / 365.25
+    print(f"\nnonparametric constant-hazard-from-youngest-gap: h={h_last:.5f}/yr  "
+          f"E(D=6)={e_nonparam:.4f}  P(zero)={math.exp(-e_nonparam):.4f}")
+    # average over all local hazards too
+    h_avg = sum(h for (_,_,_,h) in local_hazards) / len(local_hazards)
+    e_nonparam2 = live * 6 * h_avg / 365.25
+    print(f"nonparametric constant-hazard-from-average-of-gaps: h={h_avg:.5f}/yr  "
+          f"E(D=6)={e_nonparam2:.4f}  P(zero)={math.exp(-e_nonparam2):.4f}")
+
+# ---- 9. Discrete-time cloglog / logistic model on cohort data, own IRLS --------
+print("\n=== DISCRETE-TIME CLOGLOG (Weibull-equivalent discrete model), own fit ===")
+# For grouped/binary data with covariate = ln(age), a cloglog link
+#   cloglog(1-S) = ln(-ln(S)) = k*ln(lambda) + k*ln(age)
+# is the exact discrete-time equivalent of a Weibull proportional-hazards model.
+# Fit ln(-ln(fraction_alive)) ~ a + b*ln(age) by ordinary least squares on the
+# COHORT MEANS (not individual rows) - a genuinely different estimation method
+# (group-level OLS instead of individual-level MLE) as a robustness check.
+xs, ys, ns = [], [], []
+for y in years:
+    n, a = cohorts[y]
+    if n < 20:
+        continue
+    frac = a / n
+    if frac <= 0 or frac >= 1:
+        continue
+    age = mean_age_by_year[y]
+    xs.append(math.log(age))
+    ys.append(math.log(-math.log(frac)))
+    ns.append(n)
+
+# weighted least squares (weight = n) fit of ys = A + B*xs
+W = sum(ns)
+xbar = sum(n*x for n,x in zip(ns,xs))/W
+ybar = sum(n*y for n,y in zip(ns,ys))/W
+Sxx = sum(n*(x-xbar)**2 for n,x in zip(ns,xs))
+Sxy = sum(n*(x-xbar)*(y-ybar) for n,x,y in zip(ns,xs,ys))
+B = Sxy/Sxx
+A = ybar - B*xbar
+k_cloglog = B
+lam_cloglog = math.exp(A / k_cloglog) if k_cloglog != 0 else None
+print(f"cloglog-OLS-on-cohorts: k={k_cloglog:.4f}  lambda={lam_cloglog:.5f}/yr  (cf. MLE k={k_hat:.4f} lambda={lam_hat:.5f})")
+e_cloglog = expected_transitions(rows, lam_cloglog, k_cloglog, days=6)
+print(f"E(D=6) under cloglog-OLS fit: {e_cloglog:.4f}  P(zero)={math.exp(-e_cloglog):.4f}")
+
+# ---- 10. Log-logistic alternative model, own MLE --------------------------------
+print("\n=== LOG-LOGISTIC ALTERNATIVE MODEL, own MLE ===")
+# S(t) = 1 / (1 + (t/alpha)^beta)
+def negloglik_loglogistic(alpha, beta, rows):
+    if alpha <= 0 or beta <= 0:
+        return 1e18
+    ll = 0.0
+    for r in rows:
+        t = r["age_y"]
+        x = (t/alpha)**beta
+        S = 1.0/(1.0+x)
+        if r["alive"]:
+            if S <= 0: return 1e18
+            ll += math.log(S)
+        else:
+            F = 1.0 - S
+            if F <= 1e-300: return 1e18
+            ll += math.log(F)
+    return -ll
+
+def fit_loglogistic(rows, beta_lo=0.1, beta_hi=6.0, steps=800):
+    best = None
+    for i in range(steps+1):
+        beta = math.exp(math.log(beta_lo) + (math.log(beta_hi)-math.log(beta_lo))*i/steps)
+        # for fixed beta, find alpha by ternary search
+        a, b = math.log(0.01), math.log(1000.0)
+        for _ in range(150):
+            m1 = a + (b-a)/3
+            m2 = b - (b-a)/3
+            f1 = negloglik_loglogistic(math.exp(m1), beta, rows)
+            f2 = negloglik_loglogistic(math.exp(m2), beta, rows)
+            if f1 < f2: b = m2
+            else: a = m1
+            if b-a < 1e-9: break
+        alpha = math.exp((a+b)/2)
+        nll = negloglik_loglogistic(alpha, beta, rows)
+        if best is None or nll < best[2]:
+            best = (alpha, beta, nll)
+    return best
+
+alpha_hat, beta_hat, nll_ll = fit_loglogistic(rows)
+print(f"log-logistic MLE: alpha(median life)={alpha_hat:.3f}yr  beta={beta_hat:.4f}  loglik={-nll_ll:.3f}")
+print(f"(compare Weibull loglik={ll_hat:.3f} -- higher loglik = better fit, same # of params)")
+
+def hazard_loglogistic_per_day(alpha, beta, t):
+    # h(t) = (beta/alpha)*(t/alpha)^(beta-1) / (1+(t/alpha)^beta), per year -> per day
+    x = (t/alpha)**(beta-1)
+    denom = 1 + (t/alpha)**beta
+    h_year = (beta/alpha) * x / denom
+    return h_year/365.25
+
+def expected_transitions_loglogistic(rows, alpha, beta, days=6):
+    return sum(days*hazard_loglogistic_per_day(alpha, beta, r["age_y"]) for r in rows if r["alive"])
+
+e_ll = expected_transitions_loglogistic(rows, alpha_hat, beta_hat, days=6)
+print(f"E(D=6) under log-logistic fit: {e_ll:.4f}  P(zero)={math.exp(-e_ll):.4f}")
+
+print("\n=== SUMMARY TABLE ===")
+print(f"{'model':35s} {'E(D=6)':>10s} {'P(zero)':>10s}")
+print(f"{'Weibull MLE (as published)':35s} {e_fit:10.4f} {p_zero_fit:10.4f}")
+print(f"{'Weibull MLE, D=7':35s} {e_fit_7:10.4f} {p_zero_7:10.4f}")
+print(f"{'naive constant hazard':35s} {e_naive:10.4f} {math.exp(-e_naive):10.4f}")
+print(f"{'nonparametric (youngest gap)':35s} {e_nonparam:10.4f} {math.exp(-e_nonparam):10.4f}")
+print(f"{'nonparametric (avg of gaps)':35s} {e_nonparam2:10.4f} {math.exp(-e_nonparam2):10.4f}")
+print(f"{'cloglog-OLS on cohorts':35s} {e_cloglog:10.4f} {math.exp(-e_cloglog):10.4f}")
+print(f"{'log-logistic MLE':35s} {e_ll:10.4f} {math.exp(-e_ll):10.4f}")
+```
+
+**Full stdout from the run cited throughout this report:**
+
+```
+=== BASELINE (matches PREREGISTRATION-111 exclusion rules) ===
+n analysed: 2618 excluded: {'btrunc': 249, 'indet': 33, 'notdigit': 4, 'nonpos': 0}
+retrievable: 2320 / 2618 = 0.8861726508785333
+mean age (yr): 2.8796361378641837
+naive lambda/yr: 0.041964844176153024
+Weibull MLE (independent fit): k = 0.695856502117081  lambda = 0.01787172521419502  loglik = -899.2759988840289
+profile-likelihood 95% CI on k: (0.5012977718809741, 0.8989921227497276)
+E[transitions] fitted (D=6): 1.309048530036077  P(zero) Poisson approx: 0.27007690423613195
+E[transitions] naive (D=6): 1.5993172647010272  P(zero): 0.20203440693969896
+Likelihood ratio (P(zero|world A=fitted) : P(zero|world B=never disappears)) = 3.703 : 1
+EXACT P(zero), D=6 (no Poisson approx): 0.271143712681605  vs Poisson-approx: 0.27007690423613195  diff: 0.001066808445473022
+
+--- If the window is 7 intervals (CONCEPT.md's literal 'through 2026-08-18') ---
+E[transitions] fitted (D=7): 1.5272232850420893  P(zero): 0.21713776067633217  LR: 4.605371248580806
+
+=== EXCLUSION SENSITIVITY ===
+baseline (as preregistered): n=2618 live=2320 frac=0.8862 k=0.6959 lam=0.01787 E=1.3090 P0=0.2701
+include B-truncated: n=2618 live=2320 frac=0.8862 k=0.6959 lam=0.01787 E=1.3090 P0=0.2701
+INDETERMINATE counted as dead: n=2651 live=2320 frac=0.8751 k=0.6581 lam=0.01756 E=1.3959 P0=0.2476
+INDETERMINATE counted as alive: n=2651 live=2353 frac=0.8876 k=0.6903 lam=0.01710 E=1.3007 P0=0.2723
+17+ digit ids (includes the 4 excluded 18-digit rows): n=2622 live=2321 frac=0.8852 k=0.7127 lam=0.01920 E=1.3315 P0=0.2641
+
+the 4 excluded 18-digit rows, decoded anyway:
+  vid=194951213564514304 state=RETRIEVABLE decoded_year=1971 created_epoch=45390616
+  vid=677767122007582643 state=NOT-RETRIEVABLE decoded_year=1975 created_epoch=157804955
+  vid=726459750741134635 state=NOT-RETRIEVABLE decoded_year=1975 created_epoch=169142091
+  vid=740580884959830349 state=NOT-RETRIEVABLE decoded_year=1975 created_epoch=172429924
+
+=== NON-PARAMETRIC COHORT MODEL (no distributional assumption) ===
+cohort fractions: {2018: 1.0, 2019: 0.7241, 2020: 0.8154, 2021: 0.8514, 2022: 0.8568, 2023: 0.8484, 2024: 0.9124, 2025: 0.9412, 2026: 0.9695}
+ordered oldest->youngest: [2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026]
+  between 2018 (age 8.15) and 2019 (age 7.01): local hazard = -0.28313/yr
+  between 2019 (age 7.01) and 2020 (age 6.02): local hazard = 0.11905/yr
+  between 2020 (age 6.02) and 2021 (age 5.08): local hazard = 0.04628/yr
+  between 2021 (age 5.08) and 2022 (age 4.10): local hazard = 0.00643/yr
+  between 2022 (age 4.10) and 2023 (age 3.11): local hazard = -0.00993/yr
+  between 2023 (age 3.11) and 2024 (age 2.11): local hazard = 0.07214/yr
+  between 2024 (age 2.11) and 2025 (age 1.15): local hazard = 0.03235/yr
+  between 2025 (age 1.15) and 2026 (age 0.34): local hazard = 0.03680/yr
+
+nonparametric constant-hazard-from-youngest-gap: h=0.03680/yr  E(D=6)=1.4026  P(zero)=0.2460
+nonparametric constant-hazard-from-average-of-gaps: h=0.00250/yr  E(D=6)=0.0952  P(zero)=0.9092
+
+=== DISCRETE-TIME CLOGLOG (Weibull-equivalent discrete model), own fit ===
+cloglog-OLS-on-cohorts: k=0.7066  lambda=0.01842/yr  (cf. MLE k=0.6959 lambda=0.01787)
+E(D=6) under cloglog-OLS fit: 1.3082  P(zero)=0.2703
+
+=== LOG-LOGISTIC ALTERNATIVE MODEL, own MLE ===
+log-logistic MLE: alpha(median life)=43.324yr  beta=0.7360  loglik=-899.253
+(compare Weibull loglik=-899.276 -- higher loglik = better fit, same # of params)
+E(D=6) under log-logistic fit: 1.3076  P(zero)=0.2705
+
+=== SUMMARY TABLE ===
+model                                   E(D=6)    P(zero)
+Weibull MLE (as published)              1.3090     0.2701
+Weibull MLE, D=7                        1.5272     0.2171
+naive constant hazard                   1.5993     0.2020
+nonparametric (youngest gap)            1.4026     0.2460
+nonparametric (avg of gaps)             0.0952     0.9092
+cloglog-OLS on cohorts                  1.3082     0.2703
+log-logistic MLE                        1.3076     0.2705
+```
+
+Additionally, the independent verification of `POWER-AUDIT.md` §4a's age-band hazard table (added in
+commit `38c47af`, the last commit touching `POWER-AUDIT.md` before this report was finished), computed
+from the same rows using the fitted k, λ from the run above and no other code path:
+
+```
+$ python3 -c "... (age-band grouping, shown inline) ..."
+0 1 n= 323 mean_hazard= 0.00014784730656517043
+1 2 n= 503 mean_hazard= 0.0001033926171710801
+2 3 n= 512 mean_hazard= 8.792973320907603e-05
+3 5 n= 733 mean_hazard= 7.69968687587734e-05
+5 99 n= 249 mean_hazard= 6.809174668455889e-05
+corpus mean hazard 9.40408360281409e-05 live 2320
+```
+
+Matches `power-audit-age-enrichment.json` exactly. The document's derived ratios (1.88× at three
+months, 0.68× at seven years, 2.76×≈"2.8×" between them) were independently recomputed from the
+continuous hazard function at those exact ages and also match:
+
+```
+t=0.25: 1.8770864038914046
+t=7:    0.6813034033302724
+ratio:  2.7551402131796747
+```
+
+
 **Is a power calculation a legitimate increment, or a session spent doing arithmetic instead of
 measuring the world?** Both, and the document does not get to have it only one way. It is legitimate
 *as a check on the interpretation of a future measurement* — knowing in advance that zero-in-seven-days

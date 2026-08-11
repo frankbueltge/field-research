@@ -12,8 +12,13 @@ any figure below was written. Every number here comes from `power_audit.py` read
 At session 109 this practice made a promise against itself (`CONCEPT.md` §5a), after an adversary
 said the fourteenth day of a daily ledger would look exactly like the first:
 
-> *if after **seven consecutive daily runs** the ledger has recorded **zero** state transitions across
-> the whole corpus, the daily-series argument is **dead** … and the arc parks.*
+> *if after **seven consecutive daily runs** (through 2026-08-18) the ledger has recorded **zero**
+> state transitions across the whole corpus, the daily-series argument is **dead** … and the arc parks.*
+
+*The parenthetical date was missing from this quotation in the base commit `0be6151`, unmarked. It is
+restored here on the adversary's condition 1 — and it is the exact clause whose absence let the
+interval miscount of §8a stand: quoting a pre-commitment with its own deadline silently trimmed is
+how an arc loses track of what it promised.*
 
 Session 110 then ran the instrument twice in one day and found zero transitions across 2,147 jointly
 determinate identifiers, and published that the result argued against the arc.
@@ -79,20 +84,36 @@ hazard (`PREREGISTRATION-111.md` §4, frailty). Either way it is the number the 
 Over the pre-registered window — **seven daily runs bind six one-day intervals** — on the **2,320**
 identifiers currently retrievable:
 
-| | expected transitions | P(zero) |
-|---|---|---|
-| **Fitted hazard (k = 0.696)** | **1.309** | **0.270** |
-| Naive constant hazard | 1.599 | 0.202 |
+*Governing figures are the **seven-interval** ones (§8a: seven runs through 2026-08-18, the date
+§5a's own text names). The six-interval column is kept because it is what the base commit computed
+and because deleting a superseded number is not how this practice corrects one.*
 
-**§5a fires by chance roughly one time in four, even if the disappearance rate implied by our own
+| | intervals | expected transitions | P(zero) |
+|---|---|---|---|
+| **Fitted hazard (k = 0.696) — GOVERNING** | **7** | **1.527** | **0.217** |
+| Fitted hazard, six-interval reading (base commit) | 6 | 1.309 | 0.270 |
+| Naive constant hazard, seven intervals | 7 | 1.866 | 0.155 |
+| Naive constant hazard, six intervals | 6 | 1.599 | 0.202 |
+
+**§5a fires by chance better than one time in five, even if the disappearance rate implied by our own
 corpus is exactly right.**
 
 And the sharper form. If §5a fires, what is the evidence actually worth? Zero transitions has
-probability **0.270** in the world where our implied rate is real and probability **1.000** in the
-world where nothing ever disappears. That is a likelihood ratio of about **3.7 : 1**.
+probability **0.217** in the world where our implied rate is real and probability **1.000** in the
+world where nothing ever disappears. That is a likelihood ratio of about **4.6 : 1** (3.7 : 1 on the
+six-interval reading).
 
-> **We promised to treat a 4-to-1 result as decisive.** That is the finding of this audit, and it is
-> about our own instrument, not about the platform.
+> **We promised to treat a result worth under 5 : 1 as decisive.** That is the finding of this audit,
+> and it is about our own instrument, not about the platform.
+
+**One thing that sentence is doing must be named, on the adversary's condition 3.** §5a does not use
+probabilistic language. It says *"dead"*, unconditionally. **The likelihood ratio is this audit's own
+interpretive gloss** — our choice of instrument for asking what a null result would be worth — laid
+over a promise that was written without any such instrument in mind. A reader is entitled to reject
+the gloss and keep the promise; what they cannot do, having read §3, is keep the promise *and* believe
+that its firing would settle anything. Whether a likelihood ratio is even the right scoring instrument
+here is an open question this practice has recorded rather than answered
+(`memory/open-questions.md`, session 111).
 
 For scale: the pair of runs session 110 already made — 7.3 hours apart — had an expected transition
 count of **0.066**. Observing zero there carried a likelihood ratio of about **1.07 : 1**. Session 110
@@ -153,11 +174,14 @@ Every one of these was named in `PREREGISTRATION-111.md` §4 before the numbers 
   2024 one. The 2023 anomaly and the three-of-ten editions running the other way (session 109) are
   evidence against that assumption. **This is the largest weakness of the estimate and it does not
   have a stated direction.**
-- **Frailty makes E an overestimate.** If the corpus is a mixture of durable and fragile videos, the
-  survivors are enriched for durable ones, and the *forward* hazard of the 2,320 that are alive today
-  is **lower** than the cross-sectional average this fit recovers. That pushes E below 1.31 and
-  P(zero) above 0.27 — **the direction that makes this audit's conclusion stronger, which is exactly
-  why it is stated here rather than left out.**
+- **Frailty. ~~Makes E an overestimate.~~ WITHDRAWN — see §8c.** This section originally argued that
+  survivors are enriched for durable videos, so the forward hazard is lower than the fitted one, so E
+  is an overestimate — and said explicitly that the direction flattered our own conclusion. **A
+  specialist review fitted two literal frailty models to the same data and the sign does not hold**:
+  a gamma-frailty model gives E = 1.304 (below), a two-point mixture gives E = 1.321 (above), and
+  the two fit **equally well** (AIC 1802.65 against 1802.55). The reasoning was plausible and it was
+  not checked. **The claim is withdrawn; frailty's direction here is undetermined.** The magnitude is
+  small enough that the headline is untouched, which is not a defence of having asserted it.
 - **Arm A is pruned.** Editors and bots remove dead links from articles, deleting dead videos from
   the corpus preferentially in older articles, making arm A's old cohorts look better than the truth.
   That biases λ **downward** and E with it. §6 below is the beginning of a control for this.
@@ -184,9 +208,9 @@ of the expansion** — this document is the audit of the corpus as session 110 l
 |---|---|---|
 | **P1** | fitted `k` below 1 | **HOLDS** — 0.696, CI [0.502, 0.898], excludes 1 |
 | **P2** | naive λ̂ between 0.01 and 0.10 /yr | **HOLDS** — 0.0420 |
-| **P3** | expected transitions below 3 | **HOLDS** — 1.309 |
-| **P4** | P(zero) above 0.20 | **HOLDS** — 0.270 |
-| **P5** | fitted E below naive E | **HOLDS** — 1.309 against 1.599; the naive figure flatters the design by 22 % |
+| **P3** | expected transitions below 3 | **HOLDS** — **1.527** on the governing seven-interval reading (1.309 on six) |
+| **P4** | P(zero) above 0.20 | **HOLDS, and narrowly** — **0.217** on the governing reading (0.270 on six). At eight intervals it would fail. The prediction survives on the reading this practice adopted *against* itself, which is worth stating rather than banking |
+| **P5** | fitted E below naive E | **HOLDS** — 1.527 against 1.866 on seven intervals (1.309 against 1.599 on six); the naive figure flatters the design by 22 % either way |
 | **P6** | arm A shows a *shallower* age gradient than arm B | **FAILS** — A's cumulative-failure gradient F(5)/F(1) = **3.10**, B's = **1.96**. A is the steeper. Registered as expected to fail (session 110's point estimates already ran this way) and it did. What the arms actually differ in is **shape**, not depth: B loses more when young (F(1) = 0.095 against A's 0.053) and then flattens hard (k = 0.451 against A's 0.742). With 66 deaths in arm B and a CI on k of [0.160, 0.891], **this comparison is too weak to carry an interpretation** and none is offered. |
 | **P7** | ≥ 500 new determinate identifiers baselined before 00:00Z | scored in `EXPANSION-111.md` |
 
@@ -199,7 +223,7 @@ of the expansion** — this document is the audit of the corpus as session 110 l
 | **K1** | no | 2,320 retrievable, datable identifiers (threshold 1,500) |
 | **K2** | no | 7 yearly cohorts with n ≥ 100 (threshold 6): 2020–2026 |
 | **K3** | no | CI on k is [0.502, 0.898] — it excludes 1 and is not wider than [0.5, 2.0]; the shape **is** determined and the figures may be published as points |
-| **K4** | no | E = 1.31, threshold 10. **This session's premise is not wrong** — had E exceeded 10 the audit would have said so in those words |
+| **K4** | no | E = **1.53** (seven intervals; 1.31 on six), threshold 10. **K4 was not a live test, and the adversary is right that it was not** (condition 4): the same pre-registration predicted λ ∈ [0.01, 0.10]/yr in P2, and **no λ in that band can produce E > 10 on this corpus** — the top of the band gives roughly 4. K4 was written to pass, which is exactly the defect session 108 taught this practice to look for, committed in the same document that applies that lesson to §5a. **Recorded as a defective criterion, not as a passed one.** |
 | **K5** | scored in `EXPANSION-111.md` | |
 
 ## 8a. Addendum, found after §§1–8 were written and committed
@@ -252,11 +276,60 @@ information about a return rate; only repeated observation does. What we have is
 jointly determinate identifiers — which bounds the combined per-observation rate loosely and
 estimates neither component. **Recorded as an unquantified bound, not folded into a number.**
 
-**Two known biases now run in opposite directions and are not netted out:** frailty makes `E` an
-overestimate (§5), omitted returns make it an underestimate (here). Neither is measured. The headline
+**STANDING INSTRUCTION, adopted on the adversary's condition 5 and binding on later sessions:** this
+bound stays **unquantified** until longitudinal data exists. A cross-sectional snapshot cannot supply
+a return rate, and no later session may round this into a number without new repeated observation.
+
+**Two known biases run in opposite directions and are not netted out:** omitted returns make `E` an
+underestimate (here); frailty was claimed in §5 to make it an overestimate, **and that claimed
+direction did not survive review** (§8c). Neither is measured. The headline
 survives both only because the gap it has to cross is large — a criterion promised as decisive
 delivering odds under 5 : 1 — and not because the arithmetic is tight. That is stated rather than
 left for a reader to work out.
+
+## 8c. The specialist's findings — including the one that breaks a claim of ours
+
+*A domain specialist in survival analysis and study design was convened because this session applied
+methods it does not independently hold, and the resulting numbers govern whether an arc continues.
+The specialist holds no vote on any verdict. Full report and scripts:
+`SPECIALIST-survival-111.md`, `specialist-survival-scripts/`.*
+
+**It reproduced the pipeline from the raw ledger file rather than from our output**, and found no
+coding or arithmetic error anywhere in `power_audit.py`: k = 0.6959, λ = 0.01787, E = 1.309,
+P(zero) = 0.270 and the 5,310-identifier / 14-day target all reproduce.
+
+**Three findings, and the first one is against us.**
+
+**1. Our K3 "the shape *is* determined" does not survive a defensible respecification.** Refitting on
+**recent cohorts only (2023–2026)** — the cohorts *least* exposed to the pruning and
+citation-selection confounds §5 itself names — gives **k = 0.859, CI [0.553, 1.193], which
+includes 1.**
+
+> Under this audit's own K3 — *"the 95 % CI on k includes 1 → shape undetermined, every power figure
+> published as a range, never a point"* — **that specification would have fired K3.**
+
+We ran K3 against one specification and reported the shape as determined. **The claim that the shape
+is determined is hereby narrowed to: determined on the pooled fit, undetermined under a
+recent-cohorts restriction that this session had no principled reason to rule out.** The power
+conclusion itself is robust to it (E moves 1.31 → 1.22, both far inside underpowered territory) — but
+K3's verdict is not, and the difference matters because K3 was one of this session's own guards.
+
+**2. The frailty direction we asserted in §5 is withdrawn** — see §5. Two literal frailty models fit
+equally well and disagree on the sign.
+
+**3. The young-enrichment lever is real and now quantified.** §4a argued from the fitted curve that
+recent identifiers pay more. The specialist put a number on it: closing the gap to P(zero) ≤ 0.05
+needs about **1,748 new identifiers at ~90 days old against ~2,990 at the corpus's current age mix**
+— roughly **40 % fewer requests for the same power.**
+
+**Net direction of every correction the specialist could quantify:** P(zero) moves **up**, from 0.270
+toward **0.277–0.280** — the design is if anything slightly weaker than we reported, never stronger.
+
+**What we do not do with this.** Finding 1 is an argument that this audit's own guard was run too
+narrowly, not an argument that the audit's conclusion is wrong; and it is emphatically not a reason to
+re-open §5a's amendment in our own favour. It is recorded as a defect in our robustness practice:
+**a kill criterion applied against a single specification is a criterion tested against itself.** That
+is the same lesson as §5a, one level up, found by someone else, in the same session.
 
 ## 9. What this document does not claim
 

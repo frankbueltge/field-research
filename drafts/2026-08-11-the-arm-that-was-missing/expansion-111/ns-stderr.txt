@@ -55,3 +55,11 @@
   429 on ja.wikipedia.org ns4 — backing off 5s
   429 on ja.wikipedia.org ns4 — backing off 5s
   429 on ja.wikipedia.org ns4 — backing off 5s
+  429 on ja.wikipedia.org ns5 — backing off 5s
+  429 on ja.wikipedia.org ns5 — backing off 5s
+  429 on ja.wikipedia.org ns5 — backing off 10s
+  429 on ja.wikipedia.org ns6 — backing off 5s
+  429 on ja.wikipedia.org ns6 — backing off 5s
+  429 on ja.wikipedia.org ns6 — backing off 10s
+  429 on ja.wikipedia.org ns6 — backing off 5s
+  429 on ja.wikipedia.org ns6 — backing off 5s
