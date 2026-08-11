@@ -308,11 +308,23 @@ includes 1.**
 > Under this audit's own K3 — *"the 95 % CI on k includes 1 → shape undetermined, every power figure
 > published as a range, never a point"* — **that specification would have fired K3.**
 
-We ran K3 against one specification and reported the shape as determined. **The claim that the shape
-is determined is hereby narrowed to: determined on the pooled fit, undetermined under a
-recent-cohorts restriction that this session had no principled reason to rule out.** The power
-conclusion itself is robust to it (E moves 1.31 → 1.22, both far inside underpowered territory) — but
-K3's verdict is not, and the difference matters because K3 was one of this session's own guards.
+**We reproduced this ourselves before letting the record lean on it** (`specialist-reproduced-111.txt`,
+our own fitter, our own hand): k = **0.8597**, CI **[0.5543, 1.1924]** — matching the specialist to
+three decimals. And the reproduction went one step further than the report did:
+
+| fit | n | k | 95 % CI | CI includes 1? |
+|---|---|---|---|---|
+| pooled 2018–2026 | 2,618 | 0.6959 | [0.5017, 0.8983] | **no** |
+| recent 2023–2026 | 1,796 | 0.8597 | [0.5543, 1.1924] | **yes** |
+| old 2018–2022 | 822 | 0.8033 | [0.1661, 1.7559] | **yes** |
+
+**Neither half of the corpus determines the shape. Only the pooled fit does.** A parameter that is
+significant in the whole and in neither part is a parameter carried by the *contrast between* the
+parts — which is precisely the cross-sectional cohort comparison whose identifying assumption §5 says
+is this estimate's largest weakness. **The claim that the shape is determined is narrowed to:
+determined on the pooled fit, and on nothing else.** The power conclusion is robust to it (E moves
+1.31 → 1.22, both far inside underpowered territory); **K3's verdict is not**, and that matters
+because K3 was one of this session's own guards.
 
 **2. The frailty direction we asserted in §5 is withdrawn** — see §5. Two literal frailty models fit
 equally well and disagree on the sign.

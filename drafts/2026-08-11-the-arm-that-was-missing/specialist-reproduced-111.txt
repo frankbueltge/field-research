@@ -1,0 +1,18 @@
+REPRODUCTION of SPECIALIST-survival-111.md finding 1, by our own hand, our own script's fitter
+(the practice reproduces a convened voice's load-bearing claim before the record leans on it)
+
+POOLED (2018-2026)
+  n=2618 alive=2320 (0.8862)
+  k=0.6959 CI95=[0.5017,0.8983]  lambda=0.01787/yr   CI includes 1: False
+  E on this subset's own live pop = 1.3090  P(zero)=0.2701
+
+RECENT ONLY (2023-2026)
+  n=1796 alive=1626 (0.9053)
+  k=0.8597 CI95=[0.5543,1.1924]  lambda=0.03530/yr   CI includes 1: True
+  E on this subset's own live pop = 1.2198  P(zero)=0.2953
+
+OLD ONLY (2018-2022)
+  n=822 alive=694 (0.8443)
+  k=0.8033 CI95=[0.1661,1.7559]  lambda=0.02288/yr   CI includes 1: True
+  E on this subset's own live pop = 0.3249  P(zero)=0.7226
+
