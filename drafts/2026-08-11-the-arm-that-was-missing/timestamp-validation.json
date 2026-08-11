@@ -1,0 +1,1188 @@
+{
+ "summary": {
+  "pairs_checked": 160,
+  "violations_created_after_cited": 6,
+  "delta_days_min": -329.0,
+  "delta_days_median": 19.3,
+  "delta_days_max": 1748.7,
+  "within_2_years": 70,
+  "delta_days_p10": -0.9,
+  "delta_days_p90": 1151.5,
+  "out_of_lifetime_ids_excluded": 1
+ },
+ "violations": [
+  {
+   "vid": "6833560903879806214",
+   "page": "Phineas and Ferb the Movie: Candace Against the Universe",
+   "created": "2020-06-02T01:46:23+00:00",
+   "cited_min": "2020-06-01T00:00:00+00:00",
+   "delta_days": -1.1
+  },
+  {
+   "vid": "6901552065806372102",
+   "page": "Francesca Scorsese",
+   "created": "2020-12-02T07:06:49+00:00",
+   "cited_min": "2020-02-12T00:00:00+00:00",
+   "delta_days": -294.3
+  },
+  {
+   "vid": "7199149763294645550",
+   "page": "Bailey Zimmerman",
+   "created": "2023-02-12T06:17:53+00:00",
+   "cited_min": "2023-02-11T00:00:00+00:00",
+   "delta_days": -1.3
+  },
+  {
+   "vid": "6917688976925052165",
+   "page": "Rubberband (Tate McRae song)",
+   "created": "2021-01-14T18:46:17+00:00",
+   "cited_min": "2020-12-30T00:00:00+00:00",
+   "delta_days": -15.8
+  },
+  {
+   "vid": "7036139135664524549",
+   "page": "Dead Asleep",
+   "created": "2021-11-29T23:33:23+00:00",
+   "cited_min": "2021-01-05T00:00:00+00:00",
+   "delta_days": -329.0
+  },
+  {
+   "vid": "7228938913941867777",
+   "page": "Dani Buller",
+   "created": "2023-05-03T12:55:00+00:00",
+   "cited_min": "2023-03-05T00:00:00+00:00",
+   "delta_days": -59.5
+  }
+ ],
+ "out_of_lifetime": [
+  {
+   "vid": "677767122007582643",
+   "page": "Dior (singer)",
+   "created": "1975-01-01T10:42:35+00:00",
+   "cited_min": "2020-01-03T00:00:00+00:00",
+   "delta_days": 16437.6
+  }
+ ],
+ "pairs": [
+  {
+   "vid": "6771958244643523845",
+   "page": "Gloria Gaynor",
+   "created": "2019-12-19T01:36:36+00:00",
+   "cited_min": "2023-01-25T00:00:00+00:00",
+   "delta_days": 1132.9
+  },
+  {
+   "vid": "6820959572849626373",
+   "page": "Ana Coto",
+   "created": "2020-04-29T02:46:47+00:00",
+   "cited_min": "2020-05-19T00:00:00+00:00",
+   "delta_days": 19.9
+  },
+  {
+   "vid": "6848071984622963973",
+   "page": "Phineas and Ferb the Movie: Candace Against the Universe",
+   "created": "2020-07-11T04:16:47+00:00",
+   "cited_min": "2020-07-11T00:00:00+00:00",
+   "delta_days": -0.2
+  },
+  {
+   "vid": "6833560903879806214",
+   "page": "Phineas and Ferb the Movie: Candace Against the Universe",
+   "created": "2020-06-02T01:46:23+00:00",
+   "cited_min": "2020-06-01T00:00:00+00:00",
+   "delta_days": -1.1
+  },
+  {
+   "vid": "6786663071457791237",
+   "page": "Tonight (Kesha song)",
+   "created": "2020-01-27T16:38:51+00:00",
+   "cited_min": "2020-02-16T00:00:00+00:00",
+   "delta_days": 19.3
+  },
+  {
+   "vid": "6824222559999986950",
+   "page": "Relaci\u00f3n",
+   "created": "2020-05-07T21:48:51+00:00",
+   "cited_min": "2020-08-29T00:00:00+00:00",
+   "delta_days": 113.1
+  },
+  {
+   "vid": "6861315952923987206",
+   "page": "Relaci\u00f3n",
+   "created": "2020-08-15T20:50:09+00:00",
+   "cited_min": "2020-08-29T00:00:00+00:00",
+   "delta_days": 13.1
+  },
+  {
+   "vid": "6841610395640171781",
+   "page": "Tray Little",
+   "created": "2020-06-23T18:22:32+00:00",
+   "cited_min": "2020-06-23T00:00:00+00:00",
+   "delta_days": -0.8
+  },
+  {
+   "vid": "6828098161051979014",
+   "page": "Peach PRC",
+   "created": "2020-05-18T08:28:09+00:00",
+   "cited_min": "2023-01-02T00:00:00+00:00",
+   "delta_days": 958.6
+  },
+  {
+   "vid": "6821917309037300997",
+   "page": "Peach PRC",
+   "created": "2020-05-01T16:43:18+00:00",
+   "cited_min": "2023-01-02T00:00:00+00:00",
+   "delta_days": 975.3
+  },
+  {
+   "vid": "7145501814182382849",
+   "page": "Peach PRC",
+   "created": "2022-09-20T16:36:26+00:00",
+   "cited_min": "2023-01-02T00:00:00+00:00",
+   "delta_days": 103.3
+  },
+  {
+   "vid": "6842001283667266822",
+   "page": "Lizzy McAlpine",
+   "created": "2020-06-24T19:39:22+00:00",
+   "cited_min": "2020-06-24T00:00:00+00:00",
+   "delta_days": -0.8
+  },
+  {
+   "vid": "6771979180696423686",
+   "page": "Good Without",
+   "created": "2019-12-19T02:57:51+00:00",
+   "cited_min": "2019-12-19T00:00:00+00:00",
+   "delta_days": -0.1
+  },
+  {
+   "vid": "6884621398111816966",
+   "page": "Erynn Chambers",
+   "created": "2020-10-17T16:07:11+00:00",
+   "cited_min": "2020-10-17T00:00:00+00:00",
+   "delta_days": -0.7
+  },
+  {
+   "vid": "6849216781303827717",
+   "page": "Alt TikTok",
+   "created": "2020-07-14T06:19:11+00:00",
+   "cited_min": "2022-02-20T00:00:00+00:00",
+   "delta_days": 585.7
+  },
+  {
+   "vid": "6671059592836812038",
+   "page": "Trevor Lee (musician)",
+   "created": "2019-03-22T03:58:18+00:00",
+   "cited_min": "2022-10-12T00:00:00+00:00",
+   "delta_days": 1299.8
+  },
+  {
+   "vid": "6724743611608534278",
+   "page": "Addison Grace",
+   "created": "2019-08-13T19:59:43+00:00",
+   "cited_min": "2019-08-13T00:00:00+00:00",
+   "delta_days": -0.8
+  },
+  {
+   "vid": "7211676657294314794",
+   "page": "Addison Grace",
+   "created": "2023-03-18T00:28:37+00:00",
+   "cited_min": "2023-03-17T00:00:00+00:00",
+   "delta_days": -1.0
+  },
+  {
+   "vid": "6833805015757507845",
+   "page": "Addison Grace",
+   "created": "2020-06-02T17:33:40+00:00",
+   "cited_min": "2020-06-02T00:00:00+00:00",
+   "delta_days": -0.7
+  },
+  {
+   "vid": "6824511828706577670",
+   "page": "Melissa Ong",
+   "created": "2020-05-08T16:31:21+00:00",
+   "cited_min": "2020-05-08T00:00:00+00:00",
+   "delta_days": -0.7
+  },
+  {
+   "vid": "6828064156717976837",
+   "page": "Daniel Thrasher",
+   "created": "2020-05-18T06:16:12+00:00",
+   "cited_min": "2025-03-02T00:00:00+00:00",
+   "delta_days": 1748.7
+  },
+  {
+   "vid": "6828064156717976837",
+   "page": "Daniel Thrasher",
+   "created": "2020-05-18T06:16:12+00:00",
+   "cited_min": "2025-03-02T00:00:00+00:00",
+   "delta_days": 1748.7
+  },
+  {
+   "vid": "6859457838616464645",
+   "page": "Nutbush City Limits",
+   "created": "2020-08-10T20:39:43+00:00",
+   "cited_min": "2022-08-21T00:00:00+00:00",
+   "delta_days": 740.1
+  },
+  {
+   "vid": "6851266838395981061",
+   "page": "The Hyannis Sound",
+   "created": "2020-07-19T18:54:27+00:00",
+   "cited_min": "2020-10-03T00:00:00+00:00",
+   "delta_days": 75.2
+  },
+  {
+   "vid": "6877321875735776513",
+   "page": "Trinitones",
+   "created": "2020-09-28T00:01:18+00:00",
+   "cited_min": "2024-01-15T00:00:00+00:00",
+   "delta_days": 1204.0
+  },
+  {
+   "vid": "6884551732957842689",
+   "page": "Trinitones",
+   "created": "2020-10-17T11:36:51+00:00",
+   "cited_min": "2024-01-15T00:00:00+00:00",
+   "delta_days": 1184.5
+  },
+  {
+   "vid": "7024283341247515910",
+   "page": "Trinitones",
+   "created": "2021-10-29T00:46:51+00:00",
+   "cited_min": "2024-01-15T00:00:00+00:00",
+   "delta_days": 808.0
+  },
+  {
+   "vid": "7016346132888472838",
+   "page": "Trinitones",
+   "created": "2021-10-07T15:26:26+00:00",
+   "cited_min": "2024-01-15T00:00:00+00:00",
+   "delta_days": 829.4
+  },
+  {
+   "vid": "7089516558401293574",
+   "page": "Trinitones",
+   "created": "2022-04-22T19:45:03+00:00",
+   "cited_min": "2024-01-15T00:00:00+00:00",
+   "delta_days": 632.2
+  },
+  {
+   "vid": "6880936010860039425",
+   "page": "Levitating (song)",
+   "created": "2020-10-07T17:46:00+00:00",
+   "cited_min": "2020-10-08T00:00:00+00:00",
+   "delta_days": 0.3
+  },
+  {
+   "vid": "6880936010860039425",
+   "page": "Levitating (song)",
+   "created": "2020-10-07T17:46:00+00:00",
+   "cited_min": "2020-10-08T00:00:00+00:00",
+   "delta_days": 0.3
+  },
+  {
+   "vid": "6877561752918281474",
+   "page": "Levitating (song)",
+   "created": "2020-09-28T15:32:09+00:00",
+   "cited_min": "2020-09-28T00:00:00+00:00",
+   "delta_days": -0.6
+  },
+  {
+   "vid": "6877561752918281474",
+   "page": "Levitating (song)",
+   "created": "2020-09-28T15:32:09+00:00",
+   "cited_min": "2020-09-28T00:00:00+00:00",
+   "delta_days": -0.6
+  },
+  {
+   "vid": "6878320388896591105",
+   "page": "Levitating (song)",
+   "created": "2020-09-30T16:36:03+00:00",
+   "cited_min": "2020-09-30T00:00:00+00:00",
+   "delta_days": -0.7
+  },
+  {
+   "vid": "6878320388896591105",
+   "page": "Levitating (song)",
+   "created": "2020-09-30T16:36:03+00:00",
+   "cited_min": "2020-09-30T00:00:00+00:00",
+   "delta_days": -0.7
+  },
+  {
+   "vid": "6851962383972207878",
+   "page": "Hallucinate (song)",
+   "created": "2020-07-21T15:53:32+00:00",
+   "cited_min": "2020-07-21T00:00:00+00:00",
+   "delta_days": -0.7
+  },
+  {
+   "vid": "6851962383972207878",
+   "page": "Hallucinate (song)",
+   "created": "2020-07-21T15:53:32+00:00",
+   "cited_min": "2020-07-21T00:00:00+00:00",
+   "delta_days": -0.7
+  },
+  {
+   "vid": "6888013200898542854",
+   "page": "Canceled (song)",
+   "created": "2020-10-26T19:29:07+00:00",
+   "cited_min": "2020-12-30T00:00:00+00:00",
+   "delta_days": 64.2
+  },
+  {
+   "vid": "6888679887591247109",
+   "page": "More (K/DA song)",
+   "created": "2020-10-28T14:36:12+00:00",
+   "cited_min": "2020-10-29T00:00:00+00:00",
+   "delta_days": 0.4
+  },
+  {
+   "vid": "6901552065806372102",
+   "page": "Francesca Scorsese",
+   "created": "2020-12-02T07:06:49+00:00",
+   "cited_min": "2020-02-12T00:00:00+00:00",
+   "delta_days": -294.3
+  },
+  {
+   "vid": "6865754844582464774",
+   "page": "SugarCrash!",
+   "created": "2020-08-27T19:55:19+00:00",
+   "cited_min": "2020-08-27T00:00:00+00:00",
+   "delta_days": -0.8
+  },
+  {
+   "vid": "6901751753641889026",
+   "page": "Paige Layle",
+   "created": "2020-12-02T20:01:43+00:00",
+   "cited_min": "2020-12-02T00:00:00+00:00",
+   "delta_days": -0.8
+  },
+  {
+   "vid": "6877299863030172929",
+   "page": "Shina Novalinga",
+   "created": "2020-09-27T22:35:53+00:00",
+   "cited_min": "2020-09-27T00:00:00+00:00",
+   "delta_days": -0.9
+  },
+  {
+   "vid": "6877299863030172929",
+   "page": "Shina Novalinga",
+   "created": "2020-09-27T22:35:53+00:00",
+   "cited_min": "2020-09-27T00:00:00+00:00",
+   "delta_days": -0.9
+  },
+  {
+   "vid": "6873971831926230273",
+   "page": "Shina Novalinga",
+   "created": "2020-09-18T23:21:26+00:00",
+   "cited_min": "2020-09-18T00:00:00+00:00",
+   "delta_days": -1.0
+  },
+  {
+   "vid": "6863086053599792389",
+   "page": "Shina Novalinga",
+   "created": "2020-08-20T15:19:03+00:00",
+   "cited_min": "2020-08-20T00:00:00+00:00",
+   "delta_days": -0.6
+  },
+  {
+   "vid": "6863086053599792389",
+   "page": "Shina Novalinga",
+   "created": "2020-08-20T15:19:03+00:00",
+   "cited_min": "2020-08-20T00:00:00+00:00",
+   "delta_days": -0.6
+  },
+  {
+   "vid": "6978185246533504261",
+   "page": "Shina Novalinga",
+   "created": "2021-06-26T19:22:42+00:00",
+   "cited_min": "2021-07-04T00:00:00+00:00",
+   "delta_days": 7.2
+  },
+  {
+   "vid": "6878054042921143557",
+   "page": "Ling and Lamb",
+   "created": "2020-09-29T23:22:29+00:00",
+   "cited_min": "2021-12-11T00:00:00+00:00",
+   "delta_days": 437.0
+  },
+  {
+   "vid": "6877684211571117318",
+   "page": "Bailey Zimmerman",
+   "created": "2020-09-28T23:27:21+00:00",
+   "cited_min": "2020-09-28T00:00:00+00:00",
+   "delta_days": -1.0
+  },
+  {
+   "vid": "7199149763294645550",
+   "page": "Bailey Zimmerman",
+   "created": "2023-02-12T06:17:53+00:00",
+   "cited_min": "2023-02-11T00:00:00+00:00",
+   "delta_days": -1.3
+  },
+  {
+   "vid": "6891718546246651138",
+   "page": "Irish rap",
+   "created": "2020-11-05T19:07:45+00:00",
+   "cited_min": "2023-03-07T00:00:00+00:00",
+   "delta_days": 851.2
+  },
+  {
+   "vid": "6853294344246480133",
+   "page": "Matty Healy",
+   "created": "2020-07-25T06:02:13+00:00",
+   "cited_min": "2023-06-13T00:00:00+00:00",
+   "delta_days": 1052.7
+  },
+  {
+   "vid": "6853294344246480133",
+   "page": "Matty Healy",
+   "created": "2020-07-25T06:02:13+00:00",
+   "cited_min": "2023-06-13T00:00:00+00:00",
+   "delta_days": 1052.7
+  },
+  {
+   "vid": "6883987399874022661",
+   "page": "Adrien Nunez",
+   "created": "2020-10-15T23:06:57+00:00",
+   "cited_min": "2020-10-15T00:00:00+00:00",
+   "delta_days": -1.0
+  },
+  {
+   "vid": "6948196985643994373",
+   "page": "Jeff \"Swampy\" Marsh",
+   "created": "2021-04-06T23:52:56+00:00",
+   "cited_min": "2021-04-06T00:00:00+00:00",
+   "delta_days": -1.0
+  },
+  {
+   "vid": "6944786744097164549",
+   "page": "Bear in the Big Blue House",
+   "created": "2021-03-28T19:19:27+00:00",
+   "cited_min": "2024-09-28T00:00:00+00:00",
+   "delta_days": 1279.2
+  },
+  {
+   "vid": "6947088027114016006",
+   "page": "Hank Green",
+   "created": "2021-04-04T00:09:36+00:00",
+   "cited_min": "2021-08-06T00:00:00+00:00",
+   "delta_days": 124.0
+  },
+  {
+   "vid": "6932343681416514817",
+   "page": "Rhap Salazar",
+   "created": "2021-02-23T06:34:01+00:00",
+   "cited_min": "2023-12-30T00:00:00+00:00",
+   "delta_days": 1039.7
+  },
+  {
+   "vid": "7007864429354192133",
+   "page": "List of fandom names",
+   "created": "2021-09-14T18:53:05+00:00",
+   "cited_min": "2021-09-14T00:00:00+00:00",
+   "delta_days": -0.8
+  },
+  {
+   "vid": "6950329609929886982",
+   "page": "List of fandom names",
+   "created": "2021-04-12T17:48:36+00:00",
+   "cited_min": "2021-04-12T00:00:00+00:00",
+   "delta_days": -0.7
+  },
+  {
+   "vid": "6920770041919130886",
+   "page": "Mal\u00fa Trevejo",
+   "created": "2021-01-23T02:02:23+00:00",
+   "cited_min": "2021-01-23T00:00:00+00:00",
+   "delta_days": -0.1
+  },
+  {
+   "vid": "6921063457466895621",
+   "page": "Mal\u00fa Trevejo",
+   "created": "2021-01-23T21:00:59+00:00",
+   "cited_min": "2021-01-23T00:00:00+00:00",
+   "delta_days": -0.9
+  },
+  {
+   "vid": "7104069572558490926",
+   "page": "List of Miraculous: Tales of Ladybug & Cat Noir characters",
+   "created": "2022-06-01T00:58:11+00:00",
+   "cited_min": "2022-06-02T00:00:00+00:00",
+   "delta_days": 1.0
+  },
+  {
+   "vid": "6956939133910568197",
+   "page": "List of Miraculous: Tales of Ladybug & Cat Noir characters",
+   "created": "2021-04-30T13:16:56+00:00",
+   "cited_min": "2021-05-05T00:00:00+00:00",
+   "delta_days": 4.4
+  },
+  {
+   "vid": "6959055810357906694",
+   "page": "List of Miraculous: Tales of Ladybug & Cat Noir characters",
+   "created": "2021-05-06T06:10:43+00:00",
+   "cited_min": "2021-05-15T00:00:00+00:00",
+   "delta_days": 8.7
+  },
+  {
+   "vid": "7104500404011961642",
+   "page": "List of Miraculous: Tales of Ladybug & Cat Noir characters",
+   "created": "2022-06-02T04:50:01+00:00",
+   "cited_min": "2022-06-02T00:00:00+00:00",
+   "delta_days": -0.2
+  },
+  {
+   "vid": "6915491845992762630",
+   "page": "Shadow in the Cloud",
+   "created": "2021-01-08T20:40:17+00:00",
+   "cited_min": "2023-04-12T00:00:00+00:00",
+   "delta_days": 823.1
+  },
+  {
+   "vid": "6915582437653220613",
+   "page": "Shadow in the Cloud",
+   "created": "2021-01-09T02:31:50+00:00",
+   "cited_min": "2023-04-12T00:00:00+00:00",
+   "delta_days": 822.9
+  },
+  {
+   "vid": "6961803258344082694",
+   "page": "Olivia Addams",
+   "created": "2021-05-13T15:52:13+00:00",
+   "cited_min": "2021-05-19T00:00:00+00:00",
+   "delta_days": 5.3
+  },
+  {
+   "vid": "6960627645918825734",
+   "page": "Olivia Addams",
+   "created": "2021-05-10T11:50:15+00:00",
+   "cited_min": "2021-05-19T00:00:00+00:00",
+   "delta_days": 8.5
+  },
+  {
+   "vid": "6904356847864581381",
+   "page": "R U OK (song)",
+   "created": "2020-12-09T20:30:48+00:00",
+   "cited_min": "2020-12-30T00:00:00+00:00",
+   "delta_days": 20.1
+  },
+  {
+   "vid": "6917688976925052165",
+   "page": "Rubberband (Tate McRae song)",
+   "created": "2021-01-14T18:46:17+00:00",
+   "cited_min": "2020-12-30T00:00:00+00:00",
+   "delta_days": -15.8
+  },
+  {
+   "vid": "6949780364537679109",
+   "page": "Roadrunner: New Light, New Machine",
+   "created": "2021-04-11T06:17:15+00:00",
+   "cited_min": "2021-04-14T00:00:00+00:00",
+   "delta_days": 2.7
+  },
+  {
+   "vid": "6940044538081758469",
+   "page": "She Make It Clap",
+   "created": "2021-03-16T00:37:16+00:00",
+   "cited_min": "2021-03-15T00:00:00+00:00",
+   "delta_days": -1.0
+  },
+  {
+   "vid": "6929217971436965126",
+   "page": "Thats What I Want",
+   "created": "2021-02-14T20:24:40+00:00",
+   "cited_min": "2021-02-14T00:00:00+00:00",
+   "delta_days": -0.9
+  },
+  {
+   "vid": "6884621398111816966",
+   "page": "Beer Beer, Truck Truck",
+   "created": "2020-10-17T16:07:11+00:00",
+   "cited_min": "2020-10-17T00:00:00+00:00",
+   "delta_days": -0.7
+  },
+  {
+   "vid": "6965887431094684929",
+   "page": "Syed Saddiq",
+   "created": "2021-05-24T16:00:54+00:00",
+   "cited_min": "2022-12-09T00:00:00+00:00",
+   "delta_days": 563.3
+  },
+  {
+   "vid": "6960440316121844997",
+   "page": "Ruben Sim",
+   "created": "2021-05-09T23:43:18+00:00",
+   "cited_min": "2021-05-09T00:00:00+00:00",
+   "delta_days": -1.0
+  },
+  {
+   "vid": "6960440316121844997",
+   "page": "Ruben Sim",
+   "created": "2021-05-09T23:43:18+00:00",
+   "cited_min": "2021-05-09T00:00:00+00:00",
+   "delta_days": -1.0
+  },
+  {
+   "vid": "6950753353227832582",
+   "page": "Jennifer English",
+   "created": "2021-04-13T21:12:57+00:00",
+   "cited_min": "2021-04-13T00:00:00+00:00",
+   "delta_days": -0.9
+  },
+  {
+   "vid": "6988983656010353926",
+   "page": "List of non-binary people",
+   "created": "2021-07-25T21:46:03+00:00",
+   "cited_min": "2021-07-26T00:00:00+00:00",
+   "delta_days": 0.1
+  },
+  {
+   "vid": "6988983656010353926",
+   "page": "List of non-binary people",
+   "created": "2021-07-25T21:46:03+00:00",
+   "cited_min": "2021-07-26T00:00:00+00:00",
+   "delta_days": 0.1
+  },
+  {
+   "vid": "6982053239130688770",
+   "page": "Symphony (Clean Bandit song)",
+   "created": "2021-07-07T05:32:29+00:00",
+   "cited_min": "2021-11-15T00:00:00+00:00",
+   "delta_days": 130.8
+  },
+  {
+   "vid": "6960812803540225285",
+   "page": "Vattica",
+   "created": "2021-05-10T23:48:45+00:00",
+   "cited_min": "2021-06-07T00:00:00+00:00",
+   "delta_days": 27.0
+  },
+  {
+   "vid": "6960815745165036806",
+   "page": "Vattica",
+   "created": "2021-05-11T00:00:10+00:00",
+   "cited_min": "2021-06-07T00:00:00+00:00",
+   "delta_days": 27.0
+  },
+  {
+   "vid": "7036148854370356527",
+   "page": "Vattica",
+   "created": "2021-11-30T00:11:06+00:00",
+   "cited_min": "2022-05-03T00:00:00+00:00",
+   "delta_days": 154.0
+  },
+  {
+   "vid": "6997901066327067909",
+   "page": "Vattica",
+   "created": "2021-08-18T22:30:09+00:00",
+   "cited_min": "2022-05-03T00:00:00+00:00",
+   "delta_days": 257.1
+  },
+  {
+   "vid": "6990322064628436229",
+   "page": "Roxen (singer)",
+   "created": "2021-07-29T12:19:45+00:00",
+   "cited_min": "2021-07-29T00:00:00+00:00",
+   "delta_days": -0.5
+  },
+  {
+   "vid": "6990322064628436229",
+   "page": "Roxen (singer)",
+   "created": "2021-07-29T12:19:45+00:00",
+   "cited_min": "2021-07-29T00:00:00+00:00",
+   "delta_days": -0.5
+  },
+  {
+   "vid": "6961092098833566982",
+   "page": "Tayc",
+   "created": "2021-05-11T17:52:33+00:00",
+   "cited_min": "2023-05-27T00:00:00+00:00",
+   "delta_days": 745.3
+  },
+  {
+   "vid": "6982279853257133317",
+   "page": "2021\u201322 figure skating season",
+   "created": "2021-07-07T20:11:52+00:00",
+   "cited_min": "2021-07-07T00:00:00+00:00",
+   "delta_days": -0.8
+  },
+  {
+   "vid": "6974700558233980161",
+   "page": "Born to Win (song)",
+   "created": "2021-06-17T10:00:20+00:00",
+   "cited_min": "2021-06-21T00:00:00+00:00",
+   "delta_days": 3.6
+  },
+  {
+   "vid": "6973392083554012422",
+   "page": "Fancy Like",
+   "created": "2021-06-13T21:22:47+00:00",
+   "cited_min": "2021-06-13T00:00:00+00:00",
+   "delta_days": -0.9
+  },
+  {
+   "vid": "6973392083554012422",
+   "page": "Fancy Like",
+   "created": "2021-06-13T21:22:47+00:00",
+   "cited_min": "2021-06-13T00:00:00+00:00",
+   "delta_days": -0.9
+  },
+  {
+   "vid": "6990087426282638598",
+   "page": "Wild Side (Normani song)",
+   "created": "2021-07-28T21:09:14+00:00",
+   "cited_min": "2022-07-27T00:00:00+00:00",
+   "delta_days": 363.1
+  },
+  {
+   "vid": "6991885364583533829",
+   "page": "Good Ones",
+   "created": "2021-08-02T17:26:09+00:00",
+   "cited_min": "2022-03-07T00:00:00+00:00",
+   "delta_days": 216.3
+  },
+  {
+   "vid": "6996738152916405509",
+   "page": "Good Ones",
+   "created": "2021-08-15T19:17:27+00:00",
+   "cited_min": "2022-03-07T00:00:00+00:00",
+   "delta_days": 203.2
+  },
+  {
+   "vid": "7016630703198686465",
+   "page": "List of equipment of the Royal Brunei Police Force",
+   "created": "2021-10-08T09:50:42+00:00",
+   "cited_min": "2021-10-14T00:00:00+00:00",
+   "delta_days": 5.6
+  },
+  {
+   "vid": "6966539425765526785",
+   "page": "List of equipment of the Royal Brunei Police Force",
+   "created": "2021-05-26T10:10:58+00:00",
+   "cited_min": "2021-10-14T00:00:00+00:00",
+   "delta_days": 140.6
+  },
+  {
+   "vid": "6969491182376242438",
+   "page": "Ram\u00f3n (Norwegian singer)",
+   "created": "2021-06-03T09:05:17+00:00",
+   "cited_min": "2022-11-01T00:00:00+00:00",
+   "delta_days": 515.6
+  },
+  {
+   "vid": "6996021504639126790",
+   "page": "Tim Nelson (American musician)",
+   "created": "2021-08-13T20:56:29+00:00",
+   "cited_min": "2022-11-27T00:00:00+00:00",
+   "delta_days": 470.1
+  },
+  {
+   "vid": "6977009971380702469",
+   "page": "Rose Montoya",
+   "created": "2021-06-23T15:22:02+00:00",
+   "cited_min": "2023-01-15T00:00:00+00:00",
+   "delta_days": 570.4
+  },
+  {
+   "vid": "6975931848169966853",
+   "page": "Rose Montoya",
+   "created": "2021-06-20T17:38:22+00:00",
+   "cited_min": "2023-01-15T00:00:00+00:00",
+   "delta_days": 573.3
+  },
+  {
+   "vid": "7185612470415871274",
+   "page": "Rose Montoya",
+   "created": "2023-01-06T18:46:16+00:00",
+   "cited_min": "2023-01-15T00:00:00+00:00",
+   "delta_days": 8.2
+  },
+  {
+   "vid": "6962432239153974529",
+   "page": "Natori (musician)",
+   "created": "2021-05-15T08:32:59+00:00",
+   "cited_min": "2025-04-07T00:00:00+00:00",
+   "delta_days": 1422.6
+  },
+  {
+   "vid": "6962432239153974529",
+   "page": "Natori (musician)",
+   "created": "2021-05-15T08:32:59+00:00",
+   "cited_min": "2025-02-13T00:00:00+00:00",
+   "delta_days": 1369.6
+  },
+  {
+   "vid": "6962432239153974529",
+   "page": "Natori (musician)",
+   "created": "2021-05-15T08:32:59+00:00",
+   "cited_min": "2025-02-13T00:00:00+00:00",
+   "delta_days": 1369.6
+  },
+  {
+   "vid": "7000186758629526789",
+   "page": "The Narrative",
+   "created": "2021-08-25T02:19:48+00:00",
+   "cited_min": "2022-10-25T00:00:00+00:00",
+   "delta_days": 425.9
+  },
+  {
+   "vid": "7016324838872599813",
+   "page": "Tzuyu",
+   "created": "2021-10-07T14:03:48+00:00",
+   "cited_min": "2021-10-07T00:00:00+00:00",
+   "delta_days": -0.6
+  },
+  {
+   "vid": "7016324838872599813",
+   "page": "Tzuyu",
+   "created": "2021-10-07T14:03:48+00:00",
+   "cited_min": "2021-10-07T00:00:00+00:00",
+   "delta_days": -0.6
+  },
+  {
+   "vid": "7041867719377014017",
+   "page": "Ch\u014d Tokimeki Sendenbu",
+   "created": "2021-12-15T10:03:13+00:00",
+   "cited_min": "2021-12-17T00:00:00+00:00",
+   "delta_days": 1.6
+  },
+  {
+   "vid": "7012382672488090886",
+   "page": "Baked by Melissa",
+   "created": "2021-09-26T23:06:11+00:00",
+   "cited_min": "2024-01-12T00:00:00+00:00",
+   "delta_days": 837.0
+  },
+  {
+   "vid": "7026885595972652293",
+   "page": "Catie Turner",
+   "created": "2021-11-05T01:04:56+00:00",
+   "cited_min": "2022-01-23T00:00:00+00:00",
+   "delta_days": 79.0
+  },
+  {
+   "vid": "7001103237357079813",
+   "page": "Disco (Kylie Minogue album)",
+   "created": "2021-08-27T13:36:13+00:00",
+   "cited_min": "2021-09-26T00:00:00+00:00",
+   "delta_days": 29.4
+  },
+  {
+   "vid": "7001103237357079813",
+   "page": "Disco (Kylie Minogue album)",
+   "created": "2021-08-27T13:36:13+00:00",
+   "cited_min": "2021-09-26T00:00:00+00:00",
+   "delta_days": 29.4
+  },
+  {
+   "vid": "7013774783670193413",
+   "page": "Feel Like Shit",
+   "created": "2021-09-30T17:08:17+00:00",
+   "cited_min": "2021-11-18T00:00:00+00:00",
+   "delta_days": 48.3
+  },
+  {
+   "vid": "7021943172959898885",
+   "page": "Feel Like Shit",
+   "created": "2021-10-22T17:25:48+00:00",
+   "cited_min": "2021-11-18T00:00:00+00:00",
+   "delta_days": 26.3
+  },
+  {
+   "vid": "7026393502317727023",
+   "page": "Feel Like Shit",
+   "created": "2021-11-03T17:15:21+00:00",
+   "cited_min": "2021-11-18T00:00:00+00:00",
+   "delta_days": 14.3
+  },
+  {
+   "vid": "7033893615227325742",
+   "page": "Coconuts (song)",
+   "created": "2021-11-23T22:19:37+00:00",
+   "cited_min": "2021-12-08T00:00:00+00:00",
+   "delta_days": 14.1
+  },
+  {
+   "vid": "7033893615227325742",
+   "page": "Coconuts (song)",
+   "created": "2021-11-23T22:19:37+00:00",
+   "cited_min": "2021-12-08T00:00:00+00:00",
+   "delta_days": 14.1
+  },
+  {
+   "vid": "7034668716998610181",
+   "page": "Llorando en un Ferrari",
+   "created": "2021-11-26T00:27:25+00:00",
+   "cited_min": "2021-11-25T00:00:00+00:00",
+   "delta_days": -1.0
+  },
+  {
+   "vid": "7007486587781123333",
+   "page": "Nate Smith (singer)",
+   "created": "2021-09-13T18:26:52+00:00",
+   "cited_min": "2022-01-24T00:00:00+00:00",
+   "delta_days": 132.2
+  },
+  {
+   "vid": "7036139135664524549",
+   "page": "Dead Asleep",
+   "created": "2021-11-29T23:33:23+00:00",
+   "cited_min": "2021-01-05T00:00:00+00:00",
+   "delta_days": -329.0
+  },
+  {
+   "vid": "7040546005691026694",
+   "page": "She's All I Wanna Be",
+   "created": "2021-12-11T20:34:18+00:00",
+   "cited_min": "2022-02-08T00:00:00+00:00",
+   "delta_days": 58.1
+  },
+  {
+   "vid": "7053547419589545263",
+   "page": "She's All I Wanna Be",
+   "created": "2022-01-15T21:26:25+00:00",
+   "cited_min": "2022-02-08T00:00:00+00:00",
+   "delta_days": 23.1
+  },
+  {
+   "vid": "7053547419589545263",
+   "page": "She's All I Wanna Be",
+   "created": "2022-01-15T21:26:25+00:00",
+   "cited_min": "2022-02-08T00:00:00+00:00",
+   "delta_days": 23.1
+  },
+  {
+   "vid": "7053985993350794543",
+   "page": "She's All I Wanna Be",
+   "created": "2022-01-17T01:48:19+00:00",
+   "cited_min": "2022-02-08T00:00:00+00:00",
+   "delta_days": 21.9
+  },
+  {
+   "vid": "7038118711861120302",
+   "page": "Aidan Kohn-Murphy",
+   "created": "2021-12-05T07:35:09+00:00",
+   "cited_min": "2024-01-27T00:00:00+00:00",
+   "delta_days": 782.7
+  },
+  {
+   "vid": "7029359789217975558",
+   "page": "Joshua Amponsem",
+   "created": "2021-11-11T17:06:04+00:00",
+   "cited_min": "2022-12-11T00:00:00+00:00",
+   "delta_days": 394.3
+  },
+  {
+   "vid": "7013488501605813510",
+   "page": "Ella Langley",
+   "created": "2021-09-29T22:37:22+00:00",
+   "cited_min": "2025-02-19T00:00:00+00:00",
+   "delta_days": 1238.1
+  },
+  {
+   "vid": "7013488501605813510",
+   "page": "Ella Langley",
+   "created": "2021-09-29T22:37:22+00:00",
+   "cited_min": "2025-02-19T00:00:00+00:00",
+   "delta_days": 1238.1
+  },
+  {
+   "vid": "7016669364938149122",
+   "page": "Dani Buller",
+   "created": "2021-10-08T12:20:44+00:00",
+   "cited_min": "2026-01-22T00:00:00+00:00",
+   "delta_days": 1566.5
+  },
+  {
+   "vid": "7228938913941867777",
+   "page": "Dani Buller",
+   "created": "2023-05-03T12:55:00+00:00",
+   "cited_min": "2023-03-05T00:00:00+00:00",
+   "delta_days": -59.5
+  },
+  {
+   "vid": "7260079556940336385",
+   "page": "Dani Buller",
+   "created": "2023-07-26T10:56:36+00:00",
+   "cited_min": "2023-07-26T00:00:00+00:00",
+   "delta_days": -0.5
+  },
+  {
+   "vid": "7146563915592273153",
+   "page": "Dani Buller",
+   "created": "2022-09-23T13:17:56+00:00",
+   "cited_min": "2022-11-23T00:00:00+00:00",
+   "delta_days": 60.4
+  },
+  {
+   "vid": "7160971198594108674",
+   "page": "Dani Buller",
+   "created": "2022-11-01T09:05:33+00:00",
+   "cited_min": "2022-11-01T00:00:00+00:00",
+   "delta_days": -0.4
+  },
+  {
+   "vid": "7122071386868239617",
+   "page": "Dani Buller",
+   "created": "2022-07-19T13:14:25+00:00",
+   "cited_min": "2022-09-09T00:00:00+00:00",
+   "delta_days": 51.4
+  },
+  {
+   "vid": "7049145567330454789",
+   "page": "Chris Sanders",
+   "created": "2022-01-04T00:44:59+00:00",
+   "cited_min": "2026-06-28T00:00:00+00:00",
+   "delta_days": 1636.0
+  },
+  {
+   "vid": "7053593109711867182",
+   "page": "MGK",
+   "created": "2022-01-16T00:23:43+00:00",
+   "cited_min": "2022-01-15T00:00:00+00:00",
+   "delta_days": -1.0
+  },
+  {
+   "vid": "7055730280833010990",
+   "page": "Ronnie Radke",
+   "created": "2022-01-21T18:37:02+00:00",
+   "cited_min": "2022-01-21T00:00:00+00:00",
+   "delta_days": -0.8
+  },
+  {
+   "vid": "7062760187106495750",
+   "page": "Hannah Diamond",
+   "created": "2022-02-09T17:16:40+00:00",
+   "cited_min": "2022-02-10T00:00:00+00:00",
+   "delta_days": 0.3
+  },
+  {
+   "vid": "7069771865157389573",
+   "page": "Alice Merton",
+   "created": "2022-02-28T14:45:33+00:00",
+   "cited_min": "2022-02-28T00:00:00+00:00",
+   "delta_days": -0.6
+  },
+  {
+   "vid": "7058348708160834863",
+   "page": "Mason Ramsey",
+   "created": "2022-01-28T19:57:52+00:00",
+   "cited_min": "2022-01-28T00:00:00+00:00",
+   "delta_days": -0.8
+  },
+  {
+   "vid": "7056147884651203845",
+   "page": "Lucia Keskin",
+   "created": "2022-01-22T21:37:33+00:00",
+   "cited_min": "2022-06-15T00:00:00+00:00",
+   "delta_days": 143.1
+  },
+  {
+   "vid": "7064736869992484143",
+   "page": "Familia (Camila Cabello album)",
+   "created": "2022-02-15T01:07:12+00:00",
+   "cited_min": "2022-04-17T00:00:00+00:00",
+   "delta_days": 61.0
+  },
+  {
+   "vid": "7043907981393825071",
+   "page": "List of roles and awards of Tom Holland",
+   "created": "2021-12-20T22:00:29+00:00",
+   "cited_min": "2022-02-27T00:00:00+00:00",
+   "delta_days": 68.1
+  },
+  {
+   "vid": "7064335306157378863",
+   "page": "Chaotic (Tate McRae song)",
+   "created": "2022-02-13T23:08:56+00:00",
+   "cited_min": "2022-03-24T00:00:00+00:00",
+   "delta_days": 38.0
+  },
+  {
+   "vid": "7069856474180128042",
+   "page": "Chaotic (Tate McRae song)",
+   "created": "2022-02-28T20:13:53+00:00",
+   "cited_min": "2022-03-24T00:00:00+00:00",
+   "delta_days": 23.2
+  },
+  {
+   "vid": "7070924148955942145",
+   "page": "Gidon Lev",
+   "created": "2022-03-03T17:17:00+00:00",
+   "cited_min": "2022-03-03T00:00:00+00:00",
+   "delta_days": -0.7
+  },
+  {
+   "vid": "7070924148955942145",
+   "page": "Gidon Lev",
+   "created": "2022-03-03T17:17:00+00:00",
+   "cited_min": "2022-03-03T00:00:00+00:00",
+   "delta_days": -0.7
+  },
+  {
+   "vid": "7052625024640961794",
+   "page": "Da Butcherman",
+   "created": "2022-01-13T09:47:03+00:00",
+   "cited_min": "2022-04-25T00:00:00+00:00",
+   "delta_days": 101.6
+  },
+  {
+   "vid": "7062341726454795525",
+   "page": "Jamie Muscato",
+   "created": "2022-02-08T14:12:49+00:00",
+   "cited_min": "2022-09-13T00:00:00+00:00",
+   "delta_days": 216.4
+  },
+  {
+   "vid": "7177856876611161387",
+   "page": "Jamie Muscato",
+   "created": "2022-12-16T21:10:36+00:00",
+   "cited_min": "2023-07-09T00:00:00+00:00",
+   "delta_days": 204.1
+  },
+  {
+   "vid": "7059711025590947098",
+   "page": "Keb Cuevas",
+   "created": "2022-02-01T12:04:22+00:00",
+   "cited_min": "2025-03-29T00:00:00+00:00",
+   "delta_days": 1151.5
+  },
+  {
+   "vid": "7058304537160994074",
+   "page": "Keb Cuevas",
+   "created": "2022-01-28T17:06:28+00:00",
+   "cited_min": "2025-03-29T00:00:00+00:00",
+   "delta_days": 1155.3
+  },
+  {
+   "vid": "7384778623515102469",
+   "page": "Keb Cuevas",
+   "created": "2024-06-26T11:52:40+00:00",
+   "cited_min": "2025-03-29T00:00:00+00:00",
+   "delta_days": 275.5
+  },
+  {
+   "vid": "7384778623515102469",
+   "page": "Keb Cuevas",
+   "created": "2024-06-26T11:52:40+00:00",
+   "cited_min": "2025-03-29T00:00:00+00:00",
+   "delta_days": 275.5
+  },
+  {
+   "vid": "7055313121761627397",
+   "page": "Shoday",
+   "created": "2022-01-20T15:38:15+00:00",
+   "cited_min": "2026-01-29T00:00:00+00:00",
+   "delta_days": 1469.3
+  },
+  {
+   "vid": "7050339038355639579",
+   "page": "Nattaporn Ice Cream",
+   "created": "2022-01-07T05:56:16+00:00",
+   "cited_min": "2022-01-07T00:00:00+00:00",
+   "delta_days": -0.2
+  }
+ ]
+}

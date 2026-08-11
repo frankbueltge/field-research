@@ -1,0 +1,16 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: nginx/1.18.0 (Ubuntu)
+date: Tue, 11 Aug 2026 03:40:59 GMT
+content-type: text/html
+content-length: 246014
+last-modified: Wed, 14 Jan 2026 20:53:43 GMT
+vary: Accept-Encoding
+etag: "69680257-3c0fe"
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+accept-ranges: bytes
+

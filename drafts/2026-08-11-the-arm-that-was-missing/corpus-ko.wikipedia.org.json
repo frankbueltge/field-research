@@ -1,0 +1,407 @@
+{
+ "meta": {
+  "wiki": "ko.wikipedia.org",
+  "api_pages": 2,
+  "link_rows": 647,
+  "video_rows": 66,
+  "distinct_ids": 30
+ },
+ "rows": [
+  {
+   "page": "Play Game : Holiday",
+   "handle": "weeekly",
+   "vid": "6991821424591654146",
+   "url": "https://www.tiktok.com/@weeekly/video/6991821424591654146"
+  },
+  {
+   "page": "Play Game : Holiday",
+   "handle": "weeekly",
+   "vid": "6991823208093715714",
+   "url": "https://www.tiktok.com/@weeekly/video/6991823208093715714"
+  },
+  {
+   "page": "\uc88b\uc544\uc88b\uc544\uc88b\uc544\uc88b\uc544\uc88b\uc544\uc88b\uc557!",
+   "handle": "tokisen_official",
+   "vid": "6963661921820200193",
+   "url": "https://www.tiktok.com/@tokisen_official/video/6963661921820200193"
+  },
+  {
+   "page": "GOT7\uc758 \uc74c\ubc18 \uc678 \ud65c\ub3d9 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "7050433668841475330",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/7050433668841475330?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\ubc40\ubc40\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "7050433668841475330",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/7050433668841475330?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "GOT7\uc758 \uc74c\ubc18 \uc678 \ud65c\ub3d9 \ubaa9\ub85d",
+   "handle": "marktuan",
+   "vid": "7016520752862088454",
+   "url": "https://www.tiktok.com/@marktuan/video/7016520752862088454?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "GOT7\uc758 \uc74c\ubc18 \uc678 \ud65c\ub3d9 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6975733485306727681",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6975733485306727681?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "GOT7\uc758 \uc74c\ubc18 \uc678 \ud65c\ub3d9 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6977016155269565697",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6977016155269565697?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "GOT7\uc758 \uc74c\ubc18 \uc678 \ud65c\ub3d9 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "7004772856261315841",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/7004772856261315841?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "GOT7\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "7050433668841475330",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/7050433668841475330?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "GOT7\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "marktuan",
+   "vid": "7016520752862088454",
+   "url": "https://www.tiktok.com/@marktuan/video/7016520752862088454?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "GOT7\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6975733485306727681",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6975733485306727681?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "GOT7\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6977016155269565697",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6977016155269565697?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "GOT7\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "7004772856261315841",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/7004772856261315841?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "JAY B\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "marktuan",
+   "vid": "7016520752862088454",
+   "url": "https://www.tiktok.com/@marktuan/video/7016520752862088454?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "JAY B\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6975733485306727681",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6975733485306727681?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "JAY B\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6977016155269565697",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6977016155269565697?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "JAY B\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "7004772856261315841",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/7004772856261315841?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc9c4\uc601\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "marktuan",
+   "vid": "7016520752862088454",
+   "url": "https://www.tiktok.com/@marktuan/video/7016520752862088454?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc9c4\uc601\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6975733485306727681",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6975733485306727681?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc9c4\uc601\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6977016155269565697",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6977016155269565697?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc9c4\uc601\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "7004772856261315841",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/7004772856261315841?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\ub9c8\ud06c \ud22c\uc548\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "marktuan",
+   "vid": "7016520752862088454",
+   "url": "https://www.tiktok.com/@marktuan/video/7016520752862088454?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\ub9c8\ud06c \ud22c\uc548\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6975733485306727681",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6975733485306727681?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\ub9c8\ud06c \ud22c\uc548\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6977016155269565697",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6977016155269565697?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\ub9c8\ud06c \ud22c\uc548\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "7004772856261315841",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/7004772856261315841?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc7ad\uc2a8\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "marktuan",
+   "vid": "7016520752862088454",
+   "url": "https://www.tiktok.com/@marktuan/video/7016520752862088454?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc7ad\uc2a8\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6975733485306727681",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6975733485306727681?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc7ad\uc2a8\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6977016155269565697",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6977016155269565697?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc7ad\uc2a8\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "7004772856261315841",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/7004772856261315841?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc601\uc7ac\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "marktuan",
+   "vid": "7016520752862088454",
+   "url": "https://www.tiktok.com/@marktuan/video/7016520752862088454?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc601\uc7ac\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6975733485306727681",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6975733485306727681?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc601\uc7ac\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6977016155269565697",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6977016155269565697?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc601\uc7ac\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "7004772856261315841",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/7004772856261315841?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\ubc40\ubc40\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "marktuan",
+   "vid": "7016520752862088454",
+   "url": "https://www.tiktok.com/@marktuan/video/7016520752862088454?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\ubc40\ubc40\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6975733485306727681",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6975733485306727681?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\ubc40\ubc40\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6977016155269565697",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6977016155269565697?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\ubc40\ubc40\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "7004772856261315841",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/7004772856261315841?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc720\uacb8\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "marktuan",
+   "vid": "7016520752862088454",
+   "url": "https://www.tiktok.com/@marktuan/video/7016520752862088454?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc720\uacb8\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6975733485306727681",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6975733485306727681?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc720\uacb8\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "6977016155269565697",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/6977016155269565697?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc720\uacb8\uc758 \uc74c\ubc18 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "7004772856261315841",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/7004772856261315841?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc11d\ud1a0\ub9ac",
+   "handle": "seok_tory",
+   "vid": "7103185517042257153",
+   "url": "https://www.tiktok.com/@seok_tory/video/7103185517042257153"
+  },
+  {
+   "page": "CLASS:y",
+   "handle": "classy_japan_official",
+   "vid": "7179528159988124930",
+   "url": "https://www.tiktok.com/@classy_japan_official/video/7179528159988124930?is_from_webapp=v1&item_id=7179528159988124930"
+  },
+  {
+   "page": "TARGET (CLASS:y\uc758 \ub178\ub798)",
+   "handle": "classy_japan_official",
+   "vid": "7179528159988124930",
+   "url": "https://www.tiktok.com/@classy_japan_official/video/7179528159988124930?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "\uc54c\uc720\ub125\uc2a4\ud2b8",
+   "handle": "yougseo",
+   "vid": "7272355016856341792",
+   "url": "https://www.tiktok.com/@yougseo/video/7272355016856341792?q=chanelle%20Lee%20Hyun&t=1693521923504"
+  },
+  {
+   "page": "\uc54c\uc720\ub125\uc2a4\ud2b8",
+   "handle": "soseokjin",
+   "vid": "7271320739402222854",
+   "url": "https://www.tiktok.com/@soseokjin/video/7271320739402222854"
+  },
+  {
+   "page": "\uc544\uba54\uce74 (\ub85c\ubd07)",
+   "handle": "yahoonews",
+   "vid": "7037536331047669038",
+   "url": "https://www.tiktok.com/@yahoonews/video/7037536331047669038?is_from_webapp=v1&item_id=7037536331047669038"
+  },
+  {
+   "page": "\uc568\ub9ac\uc2a4 \uba38\ud2bc",
+   "handle": "alicemerton",
+   "vid": "7069771865157389573",
+   "url": "https://www.tiktok.com/@alicemerton/video/7069771865157389573?_t=8QFvLx8Eabu&_r=1"
+  },
+  {
+   "page": "\uc5d8\ub9ac \uad74\ub529",
+   "handle": "starsmithmusic",
+   "vid": "7395619270324948256",
+   "url": "https://www.tiktok.com/@starsmithmusic/video/7395619270324948256"
+  },
+  {
+   "page": "\uc5d8\ub9ac \uad74\ub529",
+   "handle": "ravingreviews",
+   "vid": "7422357999710227745",
+   "url": "https://www.tiktok.com/@ravingreviews/video/7422357999710227745"
+  },
+  {
+   "page": "\uc5d8\ub9ac \uad74\ub529",
+   "handle": "bunt",
+   "vid": "7267607358912662817",
+   "url": "https://www.tiktok.com/@bunt/video/7267607358912662817"
+  },
+  {
+   "page": "\uc774\ub155 (\ubc29\uc1a1\uc778)",
+   "handle": "1004ddv",
+   "vid": "7307340318872030482",
+   "url": "https://www.tiktok.com/@1004ddv/video/7307340318872030482?is_from_webapp=1&sender_device=pc&web_id=7526949474184005138"
+  },
+  {
+   "page": "\ubc40\ubc40\uc758 \ucd9c\uc5f0 \uc791\ud488\uacfc \uc74c\ubc18 \uc678 \ud65c\ub3d9 \ubaa9\ub85d",
+   "handle": "bambamxabyss",
+   "vid": "7050433668841475330",
+   "url": "https://www.tiktok.com/@bambamxabyss/video/7050433668841475330?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "MXM\uacfc \uc6b8\ud504 \ucee4\uc98c\uc2a4",
+   "handle": "samsmith",
+   "vid": "7133278087155961093",
+   "url": "https://www.tiktok.com/@samsmith/video/7133278087155961093"
+  },
+  {
+   "page": "\ub0a8\uc790\uc758 \uacc4\uc808",
+   "handle": "hcoydk",
+   "vid": "7521481940420136210",
+   "url": "https://www.tiktok.com/@hcoydk/video/7521481940420136210?_d=secCgYIASAHKAESPgo8ixsxfsPD9b1ABFkKNhkdXeQR6B7j1O4lInYwQNbE0wbUov3fhZFz2biQUrADSXEwXAF3KCGo5xUxqhf/GgA%3D&_r=1&share_app_id=1233&share_item_id=7521481940420136210&timestamp=1751671121&u_code=e967357473dllf&utm_campaign=client_share&utm_source=short_fallback%7C%EC%B4%88%EB%B0%98%EB%B6%80(1%ED%9A%8C~56%ED%9A%8C)"
+  },
+  {
+   "page": "\ub77c\uc774\uc624\uc2ac\ub9ac (\uc6d0\uc2e0)",
+   "handle": "paulcastrojr",
+   "vid": "7342650412849270059",
+   "url": "https://www.tiktok.com/@paulcastrojr/video/7342650412849270059"
+  },
+  {
+   "page": "\uc5d4\uc2dc\ub178 (\ub85c\uc2a4\uc564\uc824\ub808\uc2a4)",
+   "handle": "taraswrld",
+   "vid": "7099607031044230443",
+   "url": "https://www.tiktok.com/@taraswrld/video/7099607031044230443?is_copy_url=1&is_from_webapp=v1&lang=en"
+  },
+  {
+   "page": "\ub178\uc544 \uc120\ubc30\ub294 \uce5c\uad6c.",
+   "handle": "noa_saotome",
+   "vid": "7525353465770511623",
+   "url": "https://www.tiktok.com/@noa_saotome/video/7525353465770511623"
+  },
+  {
+   "page": "\ub178\uc544 \uc120\ubc30\ub294 \uce5c\uad6c.",
+   "handle": "noa_saotome",
+   "vid": "7566081318212177159",
+   "url": "https://www.tiktok.com/@noa_saotome/video/7566081318212177159"
+  },
+  {
+   "page": "\ub178\uc544 \uc120\ubc30\ub294 \uce5c\uad6c.",
+   "handle": "noa_saotome",
+   "vid": "7526846931310595346",
+   "url": "https://www.tiktok.com/@noa_saotome/video/7526846931310595346"
+  },
+  {
+   "page": "\ub178\uc544 \uc120\ubc30\ub294 \uce5c\uad6c.",
+   "handle": "noa_saotome",
+   "vid": "7529747430191926535",
+   "url": "https://www.tiktok.com/@noa_saotome/video/7529747430191926535"
+  },
+  {
+   "page": "\ub178\uc544 \uc120\ubc30\ub294 \uce5c\uad6c.",
+   "handle": "noa_saotome",
+   "vid": "7555841588929383687",
+   "url": "https://www.tiktok.com/@noa_saotome/video/7555841588929383687"
+  },
+  {
+   "page": "\ub178\uc544 \uc120\ubc30\ub294 \uce5c\uad6c.",
+   "handle": "noa_saotome",
+   "vid": "7528238059070983431",
+   "url": "https://www.tiktok.com/@noa_saotome/video/7528238059070983431"
+  },
+  {
+   "page": "\ub178\uc544 \uc120\ubc30\ub294 \uce5c\uad6c.",
+   "handle": "noa_saotome",
+   "vid": "7550660207144193288",
+   "url": "https://www.tiktok.com/@noa_saotome/video/7550660207144193288"
+  },
+  {
+   "page": "\uce7c \ubd80\uc2dc\ube44",
+   "handle": "karlcbushby",
+   "vid": "7572927419233996054",
+   "url": "https://www.tiktok.com/@karlcbushby/video/7572927419233996054"
+  }
+ ]
+}

@@ -1,0 +1,755 @@
+{
+ "meta": {
+  "wiki": "id.wikipedia.org",
+  "api_pages": 8,
+  "link_rows": 3475,
+  "video_rows": 124,
+  "distinct_ids": 120
+ },
+ "rows": [
+  {
+   "page": "Ampun Bang Jago",
+   "handle": "westham",
+   "vid": "6880845972407127302",
+   "url": "https://www.tiktok.com/@westham/video/6880845972407127302"
+  },
+  {
+   "page": "Bella Poarch",
+   "handle": "bellapoarch",
+   "vid": "6862153058223197445",
+   "url": "https://www.tiktok.com/@bellapoarch/video/6862153058223197445"
+  },
+  {
+   "page": "Maysha Jhuan",
+   "handle": "k3filmspace",
+   "vid": "7019265324054809882",
+   "url": "https://www.tiktok.com/@k3filmspace/video/7019265324054809882?sender_device=mobile&sender_web_id=6931458411054958082&is_from_webapp=v1&is_copy_url=0"
+  },
+  {
+   "page": "Maysha Jhuan",
+   "handle": "k3filmspace",
+   "vid": "7019264619642440986",
+   "url": "https://www.tiktok.com/@k3filmspace/video/7019264619642440986?sender_device=mobile&sender_web_id=6931458411054958082&is_from_webapp=v1&is_copy_url=0"
+  },
+  {
+   "page": "Phakphum Romsaithong",
+   "handle": "mp15.15",
+   "vid": "7111986952110460187",
+   "url": "https://www.tiktok.com/@mp15.15/video/7111986952110460187?_r=1&_d=secCgYIASAHKAESPgo8E6zoyMclK/jAnueV3ZR0Jvz9vtKx%2BpyVAaP2Vhp2UgZuI1Wu9Qkqq9BVocDcuaUkoTWh2UK5SscesYj8GgA%3D&checksum=acededb84484d37ace317472e83295331b0f336ca690a390cbc4f9e8dfb1bf67&language=id&mid=7111986990833273626&preview_pb=0&region=ID&sec_user_id=MS4wLjABAAAA0R5hp7IsEFgsAsdn7OaEfOhpmZck9siLP_hgICXzO4UaX0jvDm1zcYcZbuiI5mLm&share_app_id=1180&share_item_id=7111986952110460187&share_link_id=75039116-1ba3-4ce3-9df5-c190d7d4c146&source=h5_t&timestamp=1656956915&u_code=dja20afija36gc&ugbiz_name=Main&user_id=6978462356956038145&utm_campaign=client_share&utm_medium=android&utm_source=copy"
+  },
+  {
+   "page": "Vicious (lagu Sabrina Carpenter)",
+   "handle": "sabrinacarpenter",
+   "vid": "7109555794886085931",
+   "url": "https://www.tiktok.com/@sabrinacarpenter/video/7109555794886085931"
+  },
+  {
+   "page": "Cantika Davinca",
+   "handle": "cantikadavincareal",
+   "vid": "6969888363834772738",
+   "url": "https://www.tiktok.com/@cantikadavincareal/video/6969888363834772738?_r=1&_d=secCgYIASAHKAESPgo8I1ROKL4S7yIuEw2R4cMTLNcRbBx%2Bd/BTegLd1aX09W4/EERSsss6RKDbKiIx2D4WHKrLzvNuENF0QWzoGgA%3D&checksum=d7220571230f3f91ca1d41466b8d1506c01feb43a9119d19953400c40755a59e&language=id&mid=6969888335464598273&preview_pb=0&region=ID&sec_user_id=MS4wLjABAAAAUhiGSJp1XciHAuviWuUzpcVPqPcKG2a8G0MwFi8uK5xCOQYjXkdJcTjmWsbDdDFi&share_app_id=1340&share_item_id=6969888363834772738&share_link_id=e1b3d8d4-a14f-40b9-baec-0b6e50202348&source=h5_t&timestamp=1670692635&u_code=df6ffa123d6mgg&ugbiz_name=Main&user_id=6887558131993773057&utm_campaign=client_share&utm_source=copy"
+  },
+  {
+   "page": "Anjlokan kereta api Ohio 2023",
+   "handle": "jakajam11",
+   "vid": "7198218699449322795",
+   "url": "https://www.tiktok.com/@jakajam11/video/7198218699449322795"
+  },
+  {
+   "page": "Nikki Blonsky",
+   "handle": "therealnikkiblonsky",
+   "vid": "6843486113852591365",
+   "url": "https://www.tiktok.com/@therealnikkiblonsky/video/6843486113852591365?request_from=server"
+  },
+  {
+   "page": "Daftar konser dan acara JKT48",
+   "handle": "jkt48.official",
+   "vid": "6961797506338508034",
+   "url": "https://www.tiktok.com/@jkt48.official/video/6961797506338508034"
+  },
+  {
+   "page": "Daftar konser dan acara JKT48",
+   "handle": "jkt48.official",
+   "vid": "6981784374719139098",
+   "url": "https://www.tiktok.com/@jkt48.official/video/6981784374719139098"
+  },
+  {
+   "page": "Daftar konser dan acara JKT48",
+   "handle": "jkt48.official",
+   "vid": "7033386261867924762",
+   "url": "https://www.tiktok.com/@jkt48.official/video/7033386261867924762"
+  },
+  {
+   "page": "Daftar konser dan acara JKT48",
+   "handle": "jkt48.official",
+   "vid": "6982586753047661850",
+   "url": "https://www.tiktok.com/@jkt48.official/video/6982586753047661850"
+  },
+  {
+   "page": "Daftar konser dan acara JKT48",
+   "handle": "jkt48.official",
+   "vid": "7033760946728307995",
+   "url": "https://www.tiktok.com/@jkt48.official/video/7033760946728307995"
+  },
+  {
+   "page": "Daftar konser dan acara JKT48",
+   "handle": "jkt48.official",
+   "vid": "7040019518411803930",
+   "url": "https://www.tiktok.com/@jkt48.official/video/7040019518411803930"
+  },
+  {
+   "page": "Billie Eilish",
+   "handle": "1027kiisfm",
+   "vid": "6853294344246480133",
+   "url": "https://www.tiktok.com/@1027kiisfm/video/6853294344246480133"
+  },
+  {
+   "page": "Sayonara Crawl (singel JKT48)",
+   "handle": "indahjkt48",
+   "vid": "7290132203273571590",
+   "url": "https://www.tiktok.com/@indahjkt48/video/7290132203273571590"
+  },
+  {
+   "page": "Sayonara Crawl (singel JKT48)",
+   "handle": "fionyjkt48",
+   "vid": "7290126963535006981",
+   "url": "https://www.tiktok.com/@fionyjkt48/video/7290126963535006981"
+  },
+  {
+   "page": "Sayonara Crawl (singel JKT48)",
+   "handle": "elijkt48",
+   "vid": "7290180595219631366",
+   "url": "https://www.tiktok.com/@elijkt48/video/7290180595219631366"
+  },
+  {
+   "page": "Sayonara Crawl (singel JKT48)",
+   "handle": "zeejkt48",
+   "vid": "7290130212740713733",
+   "url": "https://www.tiktok.com/@zeejkt48/video/7290130212740713733"
+  },
+  {
+   "page": "Sayonara Crawl (singel JKT48)",
+   "handle": "marsha.jkt48",
+   "vid": "7290510433570573573",
+   "url": "https://www.tiktok.com/@marsha.jkt48/video/7290510433570573573"
+  },
+  {
+   "page": "Sayonara Crawl (singel JKT48)",
+   "handle": "shanijkt48",
+   "vid": "7290511613013101829",
+   "url": "https://www.tiktok.com/@shanijkt48/video/7290511613013101829"
+  },
+  {
+   "page": "Sayonara Crawl (singel JKT48)",
+   "handle": "kathrinjkt48",
+   "vid": "7290503885788122374",
+   "url": "https://www.tiktok.com/@kathrinjkt48/video/7290503885788122374"
+  },
+  {
+   "page": "Sayonara Crawl (singel JKT48)",
+   "handle": "gitajkt48",
+   "vid": "7290513502152723717",
+   "url": "https://www.tiktok.com/@gitajkt48/video/7290513502152723717"
+  },
+  {
+   "page": "Sayonara Crawl (singel JKT48)",
+   "handle": "muthejkt48",
+   "vid": "7290518700459953414",
+   "url": "https://www.tiktok.com/@muthejkt48/video/7290518700459953414"
+  },
+  {
+   "page": "Sayonara Crawl (singel JKT48)",
+   "handle": "christyjkt48",
+   "vid": "7290565104687435013",
+   "url": "https://www.tiktok.com/@christyjkt48/video/7290565104687435013"
+  },
+  {
+   "page": "Sayonara Crawl (singel JKT48)",
+   "handle": "fenijkt48",
+   "vid": "7290868505950506245",
+   "url": "https://www.tiktok.com/@fenijkt48/video/7290868505950506245"
+  },
+  {
+   "page": "Indonesia dalam tahun 2023",
+   "handle": "hizkiaontiktok",
+   "vid": "7269778628316056838",
+   "url": "https://www.tiktok.com/@hizkiaontiktok/video/7269778628316056838?_t=8h0nVkLYVJy&_r=1"
+  },
+  {
+   "page": "Indonesia dalam tahun 2023",
+   "handle": "gaga100extrapedas",
+   "vid": "7271098574128172293",
+   "url": "https://www.tiktok.com/@gaga100extrapedas/video/7271098574128172293"
+  },
+  {
+   "page": "Sayonara Crawl (singel JKT48)",
+   "handle": "graciajkt48",
+   "vid": "7296522347048226053",
+   "url": "https://www.tiktok.com/@graciajkt48/video/7296522347048226053"
+  },
+  {
+   "page": "Daftar penampilan JKT48 melalui media di Indonesia",
+   "handle": "rizqherisk.48",
+   "vid": "7317847883854761222",
+   "url": "https://www.tiktok.com/@rizqherisk.48/video/7317847883854761222"
+  },
+  {
+   "page": "Dukungan dalam pemilihan umum Presiden Indonesia 2024",
+   "handle": "catatan_ifath",
+   "vid": "7300591415602515205",
+   "url": "https://www.tiktok.com/@catatan_ifath/video/7300591415602515205"
+  },
+  {
+   "page": "SMA Negeri 4 Muara Teweh",
+   "handle": "osissmafourbahalap_",
+   "vid": "7277422765559368966",
+   "url": "https://www.tiktok.com/@osissmafourbahalap_/video/7277422765559368966"
+  },
+  {
+   "page": "Pemilihan umum Wali Kota Bekasi 2024",
+   "handle": "pkb_ahmadi.madonk",
+   "vid": "7368392825781734662",
+   "url": "https://www.tiktok.com/@pkb_ahmadi.madonk/video/7368392825781734662"
+  },
+  {
+   "page": "Museum Kabupaten Pidie Jaya",
+   "handle": "acehtourismtravel",
+   "vid": "7195166751586372891",
+   "url": "https://www.tiktok.com/@acehtourismtravel/video/7195166751586372891"
+  },
+  {
+   "page": "Pemilihan umum Wali Kota Bekasi 2024",
+   "handle": "pkb_ahmadi.madonk",
+   "vid": "7374273637345398022",
+   "url": "https://www.tiktok.com/@pkb_ahmadi.madonk/video/7374273637345398022"
+  },
+  {
+   "page": "Sheriff: Narko Integriti",
+   "handle": "thaqibshaker",
+   "vid": "7375890590665362689",
+   "url": "https://www.tiktok.com/@thaqibshaker/video/7375890590665362689?lang=en"
+  },
+  {
+   "page": "Sheriff: Narko Integriti",
+   "handle": "syerleena_rashid",
+   "vid": "7376167786105556241",
+   "url": "https://www.tiktok.com/@syerleena_rashid/video/7376167786105556241?lang=en"
+  },
+  {
+   "page": "Teater JKT48",
+   "handle": "jkt48.official",
+   "vid": "7415520465327836421",
+   "url": "https://www.tiktok.com/@jkt48.official/video/7415520465327836421"
+  },
+  {
+   "page": "Miss Rubiah",
+   "handle": "sekilaskenanganyoutube",
+   "vid": "7426433170192600328",
+   "url": "https://www.tiktok.com/@sekilaskenanganyoutube/video/7426433170192600328"
+  },
+  {
+   "page": "Miss Rubiah",
+   "handle": "sekilaskenanganyoutube",
+   "vid": "7426603119032700168",
+   "url": "https://www.tiktok.com/@sekilaskenanganyoutube/video/7426603119032700168"
+  },
+  {
+   "page": "Miss Rubiah",
+   "handle": "sekilaskenanganyoutube",
+   "vid": "7426632785093332242",
+   "url": "https://www.tiktok.com/@sekilaskenanganyoutube/video/7426632785093332242"
+  },
+  {
+   "page": "Miss Rubiah",
+   "handle": "sekilaskenanganyoutube",
+   "vid": "7426976090251398407",
+   "url": "https://www.tiktok.com/@sekilaskenanganyoutube/video/7426976090251398407"
+  },
+  {
+   "page": "Korea Reomit",
+   "handle": "hansoljang110",
+   "vid": "7440742386101259527",
+   "url": "https://www.tiktok.com/@hansoljang110/video/7440742386101259527"
+  },
+  {
+   "page": "Tik Tok (lagu)",
+   "handle": "kesha",
+   "vid": "7416088714398502187",
+   "url": "https://www.tiktok.com/@kesha/video/7416088714398502187"
+  },
+  {
+   "page": "Devil Is a Lie",
+   "handle": "tommyrichman",
+   "vid": "7373851981900909870",
+   "url": "https://www.tiktok.com/@tommyrichman/video/7373851981900909870"
+  },
+  {
+   "page": "Chaotic (lagu Tate McRae)",
+   "handle": "tatemcrae",
+   "vid": "7064335306157378863",
+   "url": "https://www.tiktok.com/@tatemcrae/video/7064335306157378863?is_copy_url=1&is_from_webapp=v1&lang=en"
+  },
+  {
+   "page": "She's All I Wanna Be",
+   "handle": "tatemcrae1",
+   "vid": "7040546005691026694",
+   "url": "https://www.tiktok.com/@tatemcrae1/video/7040546005691026694"
+  },
+  {
+   "page": "She's All I Wanna Be",
+   "handle": "tatemcrae1",
+   "vid": "7053547419589545263",
+   "url": "https://www.tiktok.com/@tatemcrae1/video/7053547419589545263?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "She's All I Wanna Be",
+   "handle": "tatemcrae1",
+   "vid": "7053985993350794543",
+   "url": "https://www.tiktok.com/@tatemcrae1/video/7053985993350794543?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "Feel Like Shit",
+   "handle": "tatemcrae1",
+   "vid": "7013774783670193413",
+   "url": "https://www.tiktok.com/@tatemcrae1/video/7013774783670193413?lang=en&is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "Feel Like Shit",
+   "handle": "tatemcrae1",
+   "vid": "7021943172959898885",
+   "url": "https://www.tiktok.com/@tatemcrae1/video/7021943172959898885?lang=en&is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "Feel Like Shit",
+   "handle": "tatemcrae1",
+   "vid": "7026393502317727023",
+   "url": "https://www.tiktok.com/@tatemcrae1/video/7026393502317727023?lang=en&is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "page": "Rubberband (lagu Tate McRae)",
+   "handle": "tatemcrae1",
+   "vid": "6917688976925052165",
+   "url": "https://www.tiktok.com/@tatemcrae1/video/6917688976925052165?lang=en&is_copy_url=1&is_from_webapp=v2"
+  },
+  {
+   "page": "Lo\u00efs Openda",
+   "handle": "l.openda",
+   "vid": "7210108356143451397",
+   "url": "https://www.tiktok.com/@l.openda/video/7210108356143451397"
+  },
+  {
+   "page": "Tell Ur Girlfriend",
+   "handle": "thelaybankz",
+   "vid": "7368266704020901162",
+   "url": "https://www.tiktok.com/@thelaybankz/video/7368266704020901162?_t=8mK0RxeuCFJ&_r=1"
+  },
+  {
+   "page": "Hypnotized (lagu Anyma dan Ellie Goulding)",
+   "handle": "johnsummit",
+   "vid": "7458837735835536671",
+   "url": "https://www.tiktok.com/@johnsummit/video/7458837735835536671"
+  },
+  {
+   "page": "Dasha Taran",
+   "handle": "matchatarankaaa",
+   "vid": "7453465239246392583",
+   "url": "https://www.tiktok.com/@matchatarankaaa/video/7453465239246392583?_r=1&u_code=ebak16360j68kl&region=ID&mid=7453466150212766481&preview_pb=0&sharer_language=en&_d=e64h4gia4j94ek&share_item_id=7453465239246392583&source=h5_t&timestamp=1739009946&user_id=7307928845792838661&sec_user_id=MS4wLjABAAAA4-Fyy5LRJxINCZS-gIXXZ7ni4vU_KG7fPhxWO93Sz6Caq89IWiDkQSY2a9UcOhW5&social_share_type=0&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7468345992920909576&share_link_id=3781e234-9436-4702-86b4-45a80b346ae5&share_app_id=1180&ugbiz_name=MAIN&ug_btm=b6880,b2878&link_reflow_popup_iteration_sharer=%7B%22click_empty_to_play%22:1,%22dynamic_cover%22:1,%22follow_to_play_duration%22:-1.0,%22profile_clickable%22:1%7D&enable_checksum=1"
+  },
+  {
+   "page": "R U OK (lagu)",
+   "handle": "tatemcrae1",
+   "vid": "6904356847864581381",
+   "url": "https://www.tiktok.com/@tatemcrae1/video/6904356847864581381?lang=en"
+  },
+  {
+   "page": "Too Young to Be Sad",
+   "handle": "tatemcrae1",
+   "vid": "6904356847864581381",
+   "url": "https://www.tiktok.com/@tatemcrae1/video/6904356847864581381?lang=en"
+  },
+  {
+   "page": "KaburAjaDulu",
+   "handle": "irwanprasetiyo",
+   "vid": "7470838237427141906",
+   "url": "https://www.tiktok.com/@irwanprasetiyo/video/7470838237427141906?_t=ZS-8u80xlfEp5G&_r=1"
+  },
+  {
+   "page": "Like a Saviour",
+   "handle": "elliegoulding",
+   "vid": "7172220613023599877",
+   "url": "https://www.tiktok.com/@elliegoulding/video/7172220613023599877"
+  },
+  {
+   "page": "Like a Saviour",
+   "handle": "elliegoulding",
+   "vid": "7195220875010952454",
+   "url": "https://www.tiktok.com/@elliegoulding/video/7195220875010952454?is_from_webapp=1&sender_device=pc&web_id=7156828062705206790"
+  },
+  {
+   "page": "Adzana Ashel",
+   "handle": "nxsq2",
+   "vid": "7241808506611977477",
+   "url": "https://www.tiktok.com/@nxsq2/video/7241808506611977477"
+  },
+  {
+   "page": "Adzana Ashel",
+   "handle": "l4bigail._",
+   "vid": "7368372359985761541",
+   "url": "https://www.tiktok.com/@l4bigail._/video/7368372359985761541"
+  },
+  {
+   "page": "Adzana Ashel",
+   "handle": "video_online_riki",
+   "vid": "7289367544539008261",
+   "url": "https://www.tiktok.com/@video_online_riki/video/7289367544539008261"
+  },
+  {
+   "page": "Daftar penampilan JKT48 melalui media di Indonesia",
+   "handle": "gen98.7fm",
+   "vid": "7481333417204878647",
+   "url": "https://www.tiktok.com/@gen98.7fm/video/7481333417204878647"
+  },
+  {
+   "page": "Daftar penampilan JKT48 melalui media di Indonesia",
+   "handle": "gen98.7fm",
+   "vid": "7481727687292226822",
+   "url": "https://www.tiktok.com/@gen98.7fm/video/7481727687292226822"
+  },
+  {
+   "page": "Freya Jayawardana",
+   "handle": "tosso_san",
+   "vid": "7235578791072894213",
+   "url": "https://www.tiktok.com/@tosso_san/video/7235578791072894213"
+  },
+  {
+   "page": "Freya Jayawardana",
+   "handle": "freyarchv",
+   "vid": "7228580935606734107",
+   "url": "https://www.tiktok.com/@freyarchv/video/7228580935606734107"
+  },
+  {
+   "page": "Freya Jayawardana",
+   "handle": "freyarchv",
+   "vid": "7228548406883437850",
+   "url": "https://www.tiktok.com/@freyarchv/video/7228548406883437850"
+  },
+  {
+   "page": "Freya Jayawardana",
+   "handle": "freyarchv",
+   "vid": "7408448376909417734",
+   "url": "https://www.tiktok.com/@freyarchv/video/7408448376909417734"
+  },
+  {
+   "page": "Pemilihan umum Singapura 2025",
+   "handle": "fyz.zack",
+   "vid": "7496688726173551873",
+   "url": "https://www.tiktok.com/@fyz.zack/video/7496688726173551873"
+  },
+  {
+   "page": "Martin Scorsese",
+   "handle": "francescascorsese",
+   "vid": "7286611789863980334",
+   "url": "https://www.tiktok.com/@francescascorsese/video/7286611789863980334"
+  },
+  {
+   "page": "Maudy Ayunda",
+   "handle": "maudyayunda",
+   "vid": "6997698230079311130",
+   "url": "https://www.tiktok.com/@maudyayunda/video/6997698230079311130"
+  },
+  {
+   "page": "Akhmad Yani Renuat",
+   "handle": "feedgramindo4",
+   "vid": "7500608915986500870",
+   "url": "https://www.tiktok.com/@feedgramindo4/video/7500608915986500870%60"
+  },
+  {
+   "page": "Chalista Ellysia",
+   "handle": "chalista_ellysia",
+   "vid": "7374767551198301446",
+   "url": "https://www.tiktok.com/@chalista_ellysia/video/7374767551198301446"
+  },
+  {
+   "page": "Natori (musisi)",
+   "handle": "siritoriyowai_",
+   "vid": "6962432239153974529",
+   "url": "https://www.tiktok.com/@siritoriyowai_/video/6962432239153974529"
+  },
+  {
+   "page": "Peristiwa Indonesia di tahun 2024",
+   "handle": "goodstatsid",
+   "vid": "7353997154458946821",
+   "url": "https://www.tiktok.com/@goodstatsid/video/7353997154458946821?lang=id-ID#:~:text=Negara%20Asia%20Selatan%20itu%20berhasil,19%25%20dari%20total%20populasi%20negara."
+  },
+  {
+   "page": "Peristiwa Indonesia di tahun 2024",
+   "handle": "daaitvindonesia",
+   "vid": "7402177556650249478",
+   "url": "https://www.tiktok.com/@daaitvindonesia/video/7402177556650249478"
+  },
+  {
+   "page": "Indonesia dalam tahun 2024",
+   "handle": "hizkiaontiktok",
+   "vid": "7269778628316056838",
+   "url": "https://www.tiktok.com/@hizkiaontiktok/video/7269778628316056838?_t=8h0nVkLYVJy&_r=1"
+  },
+  {
+   "page": "Indonesia dalam tahun 2024",
+   "handle": "gaga100extrapedas",
+   "vid": "7271098574128172293",
+   "url": "https://www.tiktok.com/@gaga100extrapedas/video/7271098574128172293"
+  },
+  {
+   "page": "Promosi (catur)",
+   "handle": "borneoman16",
+   "vid": "7345367140553198854",
+   "url": "https://www.tiktok.com/@borneoman16/video/7345367140553198854?is_from_webapp=1&sender_device=pc&web_id=7514681374667146760"
+  },
+  {
+   "page": "Erika Richardo",
+   "handle": "erikarichardo",
+   "vid": "7375173071260486918",
+   "url": "https://www.tiktok.com/@erikarichardo/video/7375173071260486918?_t=ZS-8xCraaLKUaX&_r=1"
+  },
+  {
+   "page": "Manokwari City Mall",
+   "handle": "sapijajan",
+   "vid": "7475942894554057990",
+   "url": "https://www.tiktok.com/@sapijajan/video/7475942894554057990"
+  },
+  {
+   "page": "Brainrot Italia",
+   "handle": "pendekarnasi",
+   "vid": "7424008460171316485",
+   "url": "https://www.tiktok.com/@pendekarnasi/video/7424008460171316485"
+  },
+  {
+   "page": "Ella Henderson",
+   "handle": "ellahendersonofficial",
+   "vid": "7319942089754610977",
+   "url": "https://www.tiktok.com/@ellahendersonofficial/video/7319942089754610977"
+  },
+  {
+   "page": "Guru Gembul",
+   "handle": "ppgpai",
+   "vid": "7529501367833070853",
+   "url": "https://www.tiktok.com/@ppgpai/video/7529501367833070853"
+  },
+  {
+   "page": "Sasha Calle",
+   "handle": "glamourmx",
+   "vid": "7244977171343609094",
+   "url": "https://www.tiktok.com/@glamourmx/video/7244977171343609094"
+  },
+  {
+   "page": "The Undertaker",
+   "handle": "realdonaldtrump",
+   "vid": "7427237451954965791",
+   "url": "https://www.tiktok.com/@realdonaldtrump/video/7427237451954965791"
+  },
+  {
+   "page": "Gerakan Pasundan Merdeka",
+   "handle": "wiei_nata",
+   "vid": "7535912368245705990",
+   "url": "https://www.tiktok.com/@wiei_nata/video/7535912368245705990"
+  },
+  {
+   "page": "Jessica Rosmaureena",
+   "handle": "jessicarosmaureena",
+   "vid": "7274794307599502598",
+   "url": "https://www.tiktok.com/@jessicarosmaureena/video/7274794307599502598?_t=ZS-8zCeKkjj9DY&_r=1"
+  },
+  {
+   "page": "Stasiun Banjaran (Tegal)",
+   "handle": "jalur5",
+   "vid": "7541763321452563730",
+   "url": "https://www.tiktok.com/@jalur5/video/7541763321452563730?_t=ZS-8zJViHY0kJs&_r=1"
+  },
+  {
+   "page": "6-7 (meme)",
+   "handle": "matvii%20grinblat",
+   "vid": "7443337851552484638",
+   "url": "https://www.tiktok.com/@matvii%20grinblat/video/7443337851552484638"
+  },
+  {
+   "page": "Syed Saddiq Syed Abdul Rahman",
+   "handle": "syedsaddiq",
+   "vid": "6965887431094684929",
+   "url": "https://www.tiktok.com/@syedsaddiq/video/6965887431094684929"
+  },
+  {
+   "page": "Greesella Adhalia",
+   "handle": "jkt_48post",
+   "vid": "7355731107150679302",
+   "url": "https://www.tiktok.com/@jkt_48post/video/7355731107150679302"
+  },
+  {
+   "page": "Kereta api Mak Itam",
+   "handle": "kpkd2sb",
+   "vid": "7543194457282301191",
+   "url": "https://www.tiktok.com/@kpkd2sb/video/7543194457282301191"
+  },
+  {
+   "page": "Cynthia Corla",
+   "handle": "viraldiindonesiaku",
+   "vid": "7242404476873739526",
+   "url": "https://www.tiktok.com/@viraldiindonesiaku/video/7242404476873739526"
+  },
+  {
+   "page": "Indonesia dalam tahun 2024",
+   "handle": "goodstatsid",
+   "vid": "7353997154458946821",
+   "url": "https://www.tiktok.com/@goodstatsid/video/7353997154458946821?lang=id-ID#:~:text=Negara%20Asia%20Selatan%20itu%20berhasil,19%25%20dari%20total%20populasi%20negara."
+  },
+  {
+   "page": "Kenriz (penyanyi)",
+   "handle": "indonesianidol",
+   "vid": "7472020273265380625",
+   "url": "https://www.tiktok.com/@indonesianidol/video/7472020273265380625"
+  },
+  {
+   "page": "Kenriz (penyanyi)",
+   "handle": "indonesianidol",
+   "vid": "7446503710680714514",
+   "url": "https://www.tiktok.com/@indonesianidol/video/7446503710680714514"
+  },
+  {
+   "page": "Kenriz (penyanyi)",
+   "handle": "idolaindonesianidol",
+   "vid": "7506896809982315832",
+   "url": "https://www.tiktok.com/@idolaindonesianidol/video/7506896809982315832?q=kenriz%20crazy%20audisi&t=1760942856155"
+  },
+  {
+   "page": "Kenriz (penyanyi)",
+   "handle": "kenzone.official",
+   "vid": "7455570841284136198",
+   "url": "https://www.tiktok.com/@kenzone.official/video/7455570841284136198"
+  },
+  {
+   "page": "Charli XCX",
+   "handle": "charlixcx",
+   "vid": "7207571535068974341",
+   "url": "https://www.tiktok.com/@charlixcx/video/7207571535068974341"
+  },
+  {
+   "page": "Pasar Nusantara IKN",
+   "handle": "wdshun20",
+   "vid": "7523431021337988358",
+   "url": "https://www.tiktok.com/@wdshun20/video/7523431021337988358"
+  },
+  {
+   "page": "Rei Ami",
+   "handle": "rei.ami",
+   "vid": "7528930294997601567",
+   "url": "https://www.tiktok.com/@rei.ami/video/7528930294997601567?is_from_webapp=1&sender_device=pc&web_id=7516969574152291854"
+  },
+  {
+   "page": "Vatanika Patamasingha Na Ayudhya",
+   "handle": "vatanika",
+   "vid": "7478655118154435847",
+   "url": "https://www.tiktok.com/@vatanika/video/7478655118154435847"
+  },
+  {
+   "page": "Trans Mall Padang",
+   "handle": "soalpadang",
+   "vid": "7558287983669972280",
+   "url": "https://www.tiktok.com/@soalpadang/video/7558287983669972280"
+  },
+  {
+   "page": "Fidly Immanda Azzahra",
+   "handle": "fiachuuu",
+   "vid": "7592151065559190805",
+   "url": "https://www.tiktok.com/@fiachuuu/video/7592151065559190805"
+  },
+  {
+   "page": "Fidly Immanda Azzahra",
+   "handle": "fiachuuu",
+   "vid": "7592459342452985109",
+   "url": "https://www.tiktok.com/@fiachuuu/video/7592459342452985109"
+  },
+  {
+   "page": "Rossa",
+   "handle": "davehendrik",
+   "vid": "7401455727023246597",
+   "url": "https://www.tiktok.com/@davehendrik/video/7401455727023246597"
+  },
+  {
+   "page": "Freya Jayawardana",
+   "handle": "alazharfineshyt",
+   "vid": "7601769018386582805",
+   "url": "https://www.tiktok.com/@alazharfineshyt/video/7601769018386582805"
+  },
+  {
+   "page": "Newsround",
+   "handle": "degraftmensah",
+   "vid": "7328111684747414817",
+   "url": "https://www.tiktok.com/@degraftmensah/video/7328111684747414817"
+  },
+  {
+   "page": "Newsround",
+   "handle": "degraftmensah",
+   "vid": "7328442434898103585",
+   "url": "https://www.tiktok.com/@degraftmensah/video/7328442434898103585"
+  },
+  {
+   "page": "Newsround",
+   "handle": "shanequaparis",
+   "vid": "7315355802271845664",
+   "url": "https://www.tiktok.com/@shanequaparis/video/7315355802271845664"
+  },
+  {
+   "page": "Newsround",
+   "handle": "degraftmensah",
+   "vid": "7313826114273611040",
+   "url": "https://www.tiktok.com/@degraftmensah/video/7313826114273611040?lang=en"
+  },
+  {
+   "page": "Sienna Spiro",
+   "handle": "siennaspiro",
+   "vid": "7555224831633984770",
+   "url": "https://www.tiktok.com/@siennaspiro/video/7555224831633984770"
+  },
+  {
+   "page": "Uya Kuya",
+   "handle": "king.uyakuya",
+   "vid": "7425493883628391685",
+   "url": "https://www.tiktok.com/@king.uyakuya/video/7425493883628391685"
+  },
+  {
+   "page": "Stokes Twins",
+   "handle": "jordanmatter",
+   "vid": "7327061748211805467",
+   "url": "https://www.tiktok.com/@jordanmatter/video/7327061748211805467"
+  },
+  {
+   "page": "Nattapha Kitiyakara",
+   "handle": "honeywaterbee215",
+   "vid": "7532874451931696402",
+   "url": "https://www.tiktok.com/@honeywaterbee215/video/7532874451931696402?_t=ZS-8yTsJH1u5Op&_r=1"
+  },
+  {
+   "page": "Sydney Sweeney",
+   "handle": "anidom",
+   "vid": "7628320488414137614",
+   "url": "https://www.tiktok.com/@anidom/video/7628320488414137614"
+  },
+  {
+   "page": "Addison Rae",
+   "handle": "addisonre",
+   "vid": "7438368047934688558",
+   "url": "https://www.tiktok.com/@addisonre/video/7438368047934688558"
+  },
+  {
+   "page": "Grand Theft Auto VI",
+   "handle": "dylandpros",
+   "vid": "7633432502194982151",
+   "url": "https://www.tiktok.com/@dylandpros/video/7633432502194982151"
+  },
+  {
+   "page": "Lucy Bronze",
+   "handle": "lucybronze",
+   "vid": "7081654931601526021",
+   "url": "https://www.tiktok.com/@lucybronze/video/7081654931601526021"
+  }
+ ]
+}
