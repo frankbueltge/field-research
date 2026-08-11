@@ -23,12 +23,13 @@ hazard estimate everything in the audit rests on.
 
 **Arm A2 is the same wikis outside article space**: talk pages, user pages, project pages, drafts,
 templates, categories, portals. Same operator, same editors, same subject matter — and **no
-link-maintenance regime.** Nobody fixes a dead link in a 2019 talk-page comment. It is the volume the
-power calculation asked for and the control the pruning confound has never had, in one collection.
+link-maintenance regime.** Nobody fixes a dead link in a 2019 talk-page comment.
 
-If A2's old cohorts survive **worse** than arm A's at the same ages, the pruning bias stops being an
-argument and becomes a measured quantity. That test is not run tonight — it needs A2 to have cohort
-depth, and whether it does is section 3's business.
+> **This section originally called A2 "the control the pruning confound has never had." That was too
+> strong and is withdrawn** — see §5, written once the composition of what was actually collected was
+> known: 343 of 886 identifiers come from Draft space and 244 from User space, which differ from
+> article space in **content selection** as well as in link maintenance. A2 is **volume plus a
+> one-directional bound**, not a clean control, and §3a states its result at exactly that strength.
 
 ## 2. What was collected, and the two gaps in it — stated before the yield
 
