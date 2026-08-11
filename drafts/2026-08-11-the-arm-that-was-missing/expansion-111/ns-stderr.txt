@@ -2,3 +2,24 @@
   429 on en.wikipedia.org ns3 — backing off 5s
   429 on en.wikipedia.org ns3 — backing off 10s
   429 on en.wikipedia.org ns3 — backing off 15s
+  429 on en.wikipedia.org ns4 — backing off 5s
+  429 on en.wikipedia.org ns4 — backing off 10s
+  429 on en.wikipedia.org ns4 — backing off 15s
+  429 on en.wikipedia.org ns5 — backing off 5s
+  429 on en.wikipedia.org ns5 — backing off 10s
+  429 on en.wikipedia.org ns5 — backing off 5s
+  429 on en.wikipedia.org ns6 — backing off 5s
+  429 on en.wikipedia.org ns7 — backing off 5s
+  429 on en.wikipedia.org ns7 — backing off 10s
+  429 on en.wikipedia.org ns10 — backing off 5s
+  429 on en.wikipedia.org ns11 — backing off 5s
+  429 on en.wikipedia.org ns11 — backing off 5s
+  429 on en.wikipedia.org ns12 — backing off 5s
+  429 on en.wikipedia.org ns12 — backing off 10s
+  429 on en.wikipedia.org ns13 — backing off 5s
+  429 on en.wikipedia.org ns13 — backing off 10s
+  429 on en.wikipedia.org ns13 — backing off 15s
+  429 on en.wikipedia.org ns14 — backing off 5s
+  429 on en.wikipedia.org ns14 — backing off 5s
+  429 on en.wikipedia.org ns14 — backing off 10s
+  429 on en.wikipedia.org ns14 — backing off 15s

@@ -1,0 +1,21 @@
+{
+  "note": "addendum: the pre-commitment's own two readings of its window length",
+  "readings": {
+    "six intervals \u2014 seven runs 08-11..08-17, session 110's day numbering": {
+      "intervals": 6,
+      "E": 1.3090484375117177,
+      "p_zero": 0.2700769292248256,
+      "likelihood_ratio_vs_no_churn": 3.702648733715236,
+      "live_needed_for_p_zero_0.05": 5310,
+      "multiplier": 2.2884808443363465
+    },
+    "seven intervals \u2014 seven runs 08-12..08-18 after the 08-11 baseline, the text of CONCEPT.md 5a": {
+      "intervals": 7,
+      "E": 1.5272231770970033,
+      "p_zero": 0.2171377841152877,
+      "likelihood_ratio_vs_no_churn": 4.605370751453637,
+      "live_needed_for_p_zero_0.05": 4551,
+      "multiplier": 1.9615550094311551
+    }
+  }
+}

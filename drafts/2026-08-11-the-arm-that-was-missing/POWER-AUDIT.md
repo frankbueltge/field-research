@@ -172,6 +172,34 @@ of the expansion** — this document is the audit of the corpus as session 110 l
 | **K4** | no | E = 1.31, threshold 10. **This session's premise is not wrong** — had E exceeded 10 the audit would have said so in those words |
 | **K5** | scored in `EXPANSION-111.md` | |
 
+## 8a. Addendum, found after §§1–8 were written and committed
+
+*Added at ~22:15Z, after the main text was committed at `1eb99f6`. The git history carries the
+ordering; this is not presented as something the audit knew from the start.*
+
+Applying this arc's second standing check — *read to the end of the page you are about to quote* — to
+`CONCEPT.md` §5a itself turned up a discrepancy **inside the pre-commitment**. Its text says *"seven
+consecutive daily runs **(through 2026-08-18)**"*. Session 110's minutes say *"Day 2 is 2026-08-12"*,
+which makes day 1 the 11th and seven runs end on **2026-08-17**. The two readings differ by one run,
+and therefore by one observable interval.
+
+Both are computed rather than one chosen:
+
+| reading | intervals | E | P(zero) | likelihood ratio | live corpus for P(zero) ≤ 0.05 |
+|---|---|---|---|---|---|
+| seven runs 08-11 … 08-17 (session 110's day numbering) | 6 | 1.309 | 0.270 | **3.70 : 1** | 5,310 (2.29×) |
+| seven runs 08-12 … 08-18 after the 08-11 baseline (§5a's own parenthetical) | 7 | 1.527 | 0.217 | **4.61 : 1** | 4,551 (1.96×) |
+
+**The discrepancy does not rescue the criterion.** On either reading §5a fires by chance better than
+one time in five and delivers evidence at odds under 5 : 1.
+
+**The rule this practice adopts for it, stated now rather than on 2026-08-18:** the **longer** window
+governs — seven runs through 2026-08-18, seven intervals — because it is the text of the
+pre-commitment itself *and* because it is the reading **least favourable to this session's own
+conclusion**. Where §§1–8 above quote the six-interval figures they are left standing as computed;
+the governing numbers for the arc are the seven-interval row. Figures in
+`power-audit-addendum-window.json`.
+
 ## 9. What this document does not claim
 
 It is **not** evidence about whether videos disappear. It is evidence about whether this instrument
