@@ -25,26 +25,38 @@ import sys
 import time
 
 
-def main(baseline_run="expansion-111/baseline-run.json",
-         out="manifest-day2-onward.json"):
+def main(*baseline_runs):
+    out = "manifest-day2-onward.json"
+    runs = [r for r in baseline_runs if not r.startswith("out=")] or \
+           ["expansion-111/baseline-run.json"]
     base = json.load(open("manifest-run2.json"))
     units = {u["vid"]: u for u in base["units"]}
     arms = dict(base["arms"])
 
     added = 0
-    try:
-        run = json.load(open(baseline_run))
-    except FileNotFoundError:
-        print(f"NO BASELINE RUN at {baseline_run} — merged manifest not written", file=sys.stderr)
+    loaded = []
+    for path in runs:
+        try:
+            run = json.load(open(path))
+        except FileNotFoundError:
+            print(f"NO BASELINE RUN at {path} — skipped", file=sys.stderr)
+            continue
+        loaded.append({"run": path, "run_id": run.get("run_id"),
+                       "run_utc_start": run.get("run_utc_start"),
+                       "observations": len(run["observations"])})
+        for o in run["observations"]:
+            v = str(o["vid"])
+            if v not in units:
+                units[v] = {"vid": v, "handle": o["handle"], "arm": o["arm"]}
+                added += 1
+        for k, v in run.get("arms", {}).items():
+            arms.setdefault(k, v)
+    if not loaded:
+        print("NO BASELINE RUN loaded — merged manifest not written", file=sys.stderr)
         return 1
-
-    for o in run["observations"]:
-        v = str(o["vid"])
-        if v not in units:
-            units[v] = {"vid": v, "handle": o["handle"], "arm": o["arm"]}
-            added += 1
-    for k, v in run.get("arms", {}).items():
-        arms.setdefault(k, v)
+    run = {"run_id": "; ".join(str(l["run_id"]) for l in loaded),
+           "run_utc_start": "; ".join(str(l["run_utc_start"]) for l in loaded)}
+    baseline_run = "; ".join(l["run"] for l in loaded)
 
     man = {
         "run_id": "TEMPLATE — the running session sets this",
