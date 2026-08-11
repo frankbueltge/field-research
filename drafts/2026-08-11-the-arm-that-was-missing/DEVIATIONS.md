@@ -90,3 +90,76 @@ fetched verbatim, and it lists 25 crawler agent names, several of them commercia
 evidence — finding F2 rests on the presence of one of those names in it — and evidence is quoted as
 found. The naming rule governs what this practice calls itself and its tools, not what a source it
 fetched happens to say.
+
+---
+
+*The entries below belong to session 110 (the second session of 2026-08-11) and its
+`PREREGISTRATION-110.md`.*
+
+## D8 — A fourth arm was added to the run after the pre-registration was committed
+
+`PREREGISTRATION-110.md` §2.3 fixes the run as covering **corpus A ∪ corpus B**. What actually ran
+covers **three arms**: A, B, and **B-truncated** — the 249 malformed identifiers the Hacker News
+extraction produced (D9). They are not videos and could have simply been dropped, which is what the
+pre-registration implied.
+
+**Why they were measured instead.** The whole point of the arm is that the artefact's effect on a
+retrievability rate becomes an observation rather than an argument. Dropping them silently would have
+left this session asserting *"including them would have depressed corpus B's rate"* on the strength of
+session 109's synthetic-identifier control. Measuring them costs 249 requests and settles it.
+Recorded as an addition to method, decided before the run started and not after seeing any of its
+results.
+
+## D9 — The second source carries a failure mode the first one did not, and a naive harvest doubles down on it
+
+The extraction rule was deliberately identical to corpus A's, so that only the source would differ.
+On Hacker News that rule is wrong in a way it is not wrong on a wiki. HN renders a long URL with its
+**display text cut short and an ellipsis appended**, while the `href` carries the whole URL; a regex
+run over the comment HTML therefore captures **both** — the real identifier from the `href` and a
+truncated prefix of it from the link text.
+
+The size of it: **249 of 706 distinct identifiers harvested (35.3 %) are not 19 digits**, and
+**248 of those 249 (99.6 %) are strict prefixes of a well-formed identifier captured from the same
+comment.** Verified against the raw item rather than inferred from the shape:
+`https://hn.algolia.com/api/v1/items/28456840` carries
+`href="…/video/6995538782204300545"` with display text `…/video/6995538782...`, and the harvest
+contains both `6995538782204300545` and `6995538782`.
+
+**Why this is recorded as a deviation and not just a bug fixed.** The trap was pointed the same way
+as our own prediction. `PREREGISTRATION-110.md` P6 predicts that the second source's retrievability
+would be **lower** than corpus A's. A phantom identifier cannot resolve, so an unfiltered corpus B
+would have returned a depressed rate and **confirmed P6 by artefact** — a pre-registered prediction
+appearing to hold for a reason that has nothing to do with the world. The filter is 19 digits, applied
+in `build_manifest.py`, stated before any measurement, and the discarded identifiers are measured as
+their own arm rather than deleted (D8).
+
+**The same rule applied backwards, to our own first corpus.** Corpus A contains **4 identifiers of
+2,201 that are not 19 digits**, dating on the identifier's own clock to 1971 and 1975
+(`726459750741134635`, `677767122007582643`, `194951213564514304`, `740580884959830349`). They are
+malformed by the same test. They were carried through session 109's census and its statistics
+unnoticed — 0.18 % of the corpus, too small to move any published figure, and recorded here because
+the point of finding an error is to look for it where you have already been.
+
+## D10 — The harvest's own hit counts do not add up, so they were not trusted
+
+The sweep log for corpus B records a parent window reporting **1,804** comment hits, its two children
+reporting **116** and **1,095**, and the second child's children reporting **374** and **336**. Those
+do not reconcile: the backend's hit count is an **estimate** at large N and cannot be used as evidence
+that a window was exhausted.
+
+Rather than argue about the estimator, one already-swept leaf window (`created_at_i` 1710307200 –
+1786000000, reported 336 hits, 4 pages fetched) was **re-harvested through eight narrower
+sub-windows** and the two id sets compared (`check_sweep_completeness.py`,
+`sweep-completeness.json`). **Coarse: 288 distinct identifiers. Fine: 288. Symmetric difference:
+zero, in both directions.** On that window the harvest is complete and the inconsistent counts are a
+reporting artefact rather than a gap in the corpus. This is evidence about **one** window, not a proof
+about all four, and it is stated as the former.
+
+## D11 — The egress IP moved between the two runs; the AS did not
+
+Run 1 measured from `160.79.106.131`, run 2 from `160.79.106.141`, both **AS396982**, same city and
+coordinates. K1 tests the autonomous system and does not fire; the runs are compared. The change is
+recorded in `vantage-2026-08-11-run2.md` because it narrows what this arc may claim: the series is
+measured from **one autonomous system**, not from one machine or one address, and per-address state at
+the platform's edge is therefore not constant across it either. Nothing in the pre-registration turns
+on this and no result changes; the sentence "from one machine" does.
