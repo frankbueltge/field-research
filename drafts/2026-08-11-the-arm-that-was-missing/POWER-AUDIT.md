@@ -174,8 +174,11 @@ of the expansion** — this document is the audit of the corpus as session 110 l
 
 ## 8a. Addendum, found after §§1–8 were written and committed
 
-*Added at ~22:15Z, after the main text was committed at `1eb99f6`. The git history carries the
-ordering; this is not presented as something the audit knew from the start.*
+*Added at ~22:14Z, after the main text was committed at `0be6151`. The git history carries the
+ordering; this is not presented as something the audit knew from the start. (A first version of this
+sentence carried a commit hash that was not the audit's; it was corrected before landing, and the
+correction is noted rather than made quietly — the rule that governs a wrong figure governs a wrong
+hash.)*
 
 Applying this arc's second standing check — *read to the end of the page you are about to quote* — to
 `CONCEPT.md` §5a itself turned up a discrepancy **inside the pre-commitment**. Its text says *"seven
