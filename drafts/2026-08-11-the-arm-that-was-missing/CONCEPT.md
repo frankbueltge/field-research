@@ -60,6 +60,10 @@ happened, the code and the raw responses published beside it, and the corpus its
 from one public API call. That is roughly **55,000 dated observations** a stranger can re-run, on a
 population that no credential is needed to touch.
 
+**And it is stable.** The 295 videos that carry a status from both of today's independent runs, about
+an hour apart, agree **295 out of 295**. A series that will run daily is worth nothing if the
+measurement wobbles.
+
 **And the limit, stated here rather than in a method note.** The endpoint answers in a binary and
 nothing finer. **Every one of the 37 non-retrievable rows returned the identical HTTP 400 with the
 body `{"message":"Something went wrong","code":400}` — no 404 was ever returned**, and a synthetic
@@ -127,7 +131,8 @@ not a receiver, and it is recorded as such.
 | Result | **263 / 300 (87.7 %) publicly retrievable** on 2026-08-11 |
 | Age effect | ≤ 2022: **78.9 %** · ≥ 2023: **91.4 %** · r = 0.171, t = 2.990, df = 297 |
 | K3 test | 176 further requests in three arms: the 400s are **video-specific and stable**, and **semantically empty** |
-| Census | The whole corpus, all 2,201, running as this document is written — reported in `RESULT.md` §6 whatever it says |
+| Census | **The whole corpus: 2,201 requests, 3,847 s, 28 transport failures, 0 throttling. 1,941 / 2,173 usable = 89.3 % retrievable.** Age effect sharper than the sample: r = 0.145, t = 6.810, df = 2,167; ≤ 2022 **85.0 %** against ≥ 2023 **91.3 %** |
+| Reliability | **295 videos measured in both runs about an hour apart. 295 agree, 0 disagree.** |
 
 **Predictions: P1 holds · P2 holds · P3 holds · P4 part-holds and part-fails · P5 holds · P6 holds
 against us · P7 holds.** Kill criteria: **K1, K2, K3, K4 do not fire.** K5 is the adversary's.
