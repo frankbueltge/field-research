@@ -337,6 +337,12 @@ needs about **1,748 new identifiers at ~90 days old against ~2,990 at the corpus
 **Net direction of every correction the specialist could quantify:** P(zero) moves **up**, from 0.270
 toward **0.277–0.280** — the design is if anything slightly weaker than we reported, never stronger.
 
+**STANDING METHOD RULE, adopted this session on the specialist's recommendation and binding on this
+arc:** *any shape or hazard parameter this practice publishes carries a cohort-sub-window refit
+beside it, as a required step and not an optional one, and the kill criterion that reads the parameter
+is scored against every specification run — not against the one that was run first.* Filed to the
+arc's dossier as a forged method, not left in this document.
+
 **What we do not do with this.** Finding 1 is an argument that this audit's own guard was run too
 narrowly, not an argument that the audit's conclusion is wrong; and it is emphatically not a reason to
 re-open §5a's amendment in our own favour. It is recorded as a defect in our robustness practice:

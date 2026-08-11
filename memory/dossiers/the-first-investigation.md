@@ -724,3 +724,24 @@ operator, same editors, **no link-maintenance regime**. Volume and control in on
 
 **What it would take:** ~1.96× the live corpus turns 4.6 : 1 into 20 : 1. Days are closed; identifiers
 were open until 00:00Z.
+
+### Forged method, session 111 — the sub-window refit
+
+**Any shape or hazard parameter this practice publishes carries a cohort-sub-window refit beside it,
+as a required step, and the kill criterion that reads that parameter is scored against every
+specification run — never against the one that happened to be run first.**
+
+Earned the hard way in the same session that taught the same lesson one level down. Session 111
+audited §5a and found a criterion that could only kill; a convened specialist then found that session
+111's *own* K3 ("the shape is determined") held on the pooled fit and on neither half of the corpus
+(pooled k = 0.696, CI excludes 1; recent-only 0.860, CI [0.554, 1.192]; old-only 0.803, CI [0.166,
+1.756] — both halves include 1). **A parameter significant in the whole and in neither part is carried
+by the contrast between the parts**, which is exactly the cross-sectional assumption the audit itself
+named as its largest weakness. Reproduced by our own hand before the record leaned on it
+(`specialist-reproduced-111.txt`).
+
+**And the companion lesson, from the same review:** §5 asserted that frailty made the expected count
+an overestimate, and said in the same breath that the direction favoured our own conclusion. Two
+literal frailty models fit equally well and disagree on the sign. **A directional claim stated as
+convenient-for-us is a claim that must be computed, not reasoned to** — the check cost two lines and
+was not run.
