@@ -1,0 +1,84 @@
+{
+ "window": [
+  1710307200,
+  1786000000
+ ],
+ "coarse": {
+  "nbHits_reported": 336,
+  "distinct_ids": 288,
+  "sub_windows": 1
+ },
+ "fine": {
+  "distinct_ids": 288,
+  "sub_windows": 8,
+  "detail": [
+   {
+    "window": [
+     1710307200,
+     1719768800
+    ],
+    "nbHits_reported": 79,
+    "ids": 52
+   },
+   {
+    "window": [
+     1719768800,
+     1729230400
+    ],
+    "nbHits_reported": 34,
+    "ids": 50
+   },
+   {
+    "window": [
+     1729230400,
+     1738692000
+    ],
+    "nbHits_reported": 60,
+    "ids": 29
+   },
+   {
+    "window": [
+     1738692000,
+     1748153600
+    ],
+    "nbHits_reported": 34,
+    "ids": 34
+   },
+   {
+    "window": [
+     1748153600,
+     1757615200
+    ],
+    "nbHits_reported": 23,
+    "ids": 28
+   },
+   {
+    "window": [
+     1757615200,
+     1767076800
+    ],
+    "nbHits_reported": 35,
+    "ids": 29
+   },
+   {
+    "window": [
+     1767076800,
+     1776538400
+    ],
+    "nbHits_reported": 47,
+    "ids": 42
+   },
+   {
+    "window": [
+     1776538400,
+     1786000000
+    ],
+    "nbHits_reported": 24,
+    "ids": 28
+   }
+  ]
+ },
+ "found_only_by_fine": [],
+ "found_only_by_coarse": [],
+ "verdict": "The finer sweep found nothing the coarser one missed \u2014 on this window the harvest is complete, and the approximate hit count is a reporting artefact rather than a gap in the corpus."
+}
