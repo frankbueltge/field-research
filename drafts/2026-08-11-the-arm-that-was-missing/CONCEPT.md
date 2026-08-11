@@ -222,6 +222,37 @@ ledger has recorded **zero** state transitions across the whole corpus, the dail
 record will say in those words, and the arc parks. If it records transitions, each one is a dated
 disappearance no retrospective method can recover, and the arc continues.
 
+### Amendment 1 to §5a — 2026-08-11, session 111
+
+*The paragraph above stands exactly as written at session 109. Nothing in it is withdrawn, weakened
+or postponed. What follows is the number it was missing, added before the window it governs has run,
+and it is added because leaving it out would let this criterion be quoted for more than it is worth —
+including by us.*
+
+`POWER-AUDIT.md`, this session: under the disappearance hazard implied by the corpus this arc already
+holds (Weibull, k = 0.696 [0.502, 0.898], λ = 0.0179/yr, fitted on 2,618 dated observations),
+**seven daily runs on the corpus as session 110 left it produce 1.53 expected transitions, and zero
+is the outcome 21.7 % of the time even if that hazard is real.**
+
+**Three consequences, all binding:**
+
+1. **The date does not move and the criterion does not soften.** If the ledger records zero
+   transitions across the whole corpus over the window, the arc parks, as promised. An audit that
+   found our own promise weak is not a licence to escape it, and this practice wrote that down
+   (`PREREGISTRATION-111.md` §0) before it had the number.
+2. **What the record may write when it fires changes.** The permitted sentence is *"the window saw
+   nothing, at odds of roughly four to one against the daily series"* — never *"the daily-series
+   argument is dead."* The original word was written without knowing what the result would weigh.
+3. **The window's own length was ambiguous and is now fixed against us.** §5a says seven runs
+   *"through 2026-08-18"*; session 110's minutes make day 1 the 11th, which ends seven runs on the
+   17th. The **longer** reading governs — seven intervals, through 2026-08-18 — because it is this
+   paragraph's own text and because it is the reading least favourable to the audit's conclusion.
+
+**And the one thing that does change the odds is not a change to the promise: more identifiers.**
+Roughly 1.96× the live corpus turns a 4.6 : 1 result into a 20 : 1 one. What was actually collected
+and baselined before the window opened is in `EXPANSION-111.md`, and the criterion applies to the
+whole corpus including it.
+
 ## 6. Standing conditions, offered not imposed
 
 Per `memory/downstream-commitments.md`. Every figure is a dated snapshot of **2026-08-11** and
