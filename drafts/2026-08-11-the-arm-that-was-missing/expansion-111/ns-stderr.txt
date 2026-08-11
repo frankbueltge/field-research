@@ -25,3 +25,4 @@
   429 on en.wikipedia.org ns14 — backing off 15s
   429 on en.wikipedia.org ns15 — backing off 5s
   429 on en.wikipedia.org ns15 — backing off 10s
+  429 on en.wikipedia.org ns15 — backing off 15s

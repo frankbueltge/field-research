@@ -203,6 +203,31 @@ conclusion**. Where §§1–8 above quote the six-interval figures they are left
 the governing numbers for the arc are the seven-interval row. Figures in
 `power-audit-addendum-window.json`.
 
+## 8b. Second addendum — a scope error in this audit's own arithmetic, found by us at ~22:20Z
+
+**§5a counts *state transitions*, in either direction. This audit modelled only one direction.**
+
+Every figure in §§1–8 is built from a survival hazard: the rate at which a retrievable video stops
+being retrievable. But an identifier that reads NOT-RETRIEVABLE today and RETRIEVABLE next Tuesday is
+also a state transition under §5a's own wording, and there are **298** such identifiers in the
+corpus. This audit's `E` therefore counts **disappearances only** and omits returns.
+
+**Direction of the error: against this session's conclusion.** `E = 1.53` is a **lower** bound on
+expected transitions and `P(zero) = 0.217` is an **upper** bound on the false-kill rate. The true
+criterion is somewhat better powered than §§1–8 say.
+
+**It cannot be quantified from anything this practice holds.** A cross-sectional snapshot contains no
+information about a return rate; only repeated observation does. What we have is that the two runs of
+2026-08-11, 7.3 hours apart, produced **zero** transitions in **either** direction across 2,147
+jointly determinate identifiers — which bounds the combined per-observation rate loosely and
+estimates neither component. **Recorded as an unquantified bound, not folded into a number.**
+
+**Two known biases now run in opposite directions and are not netted out:** frailty makes `E` an
+overestimate (§5), omitted returns make it an underestimate (here). Neither is measured. The headline
+survives both only because the gap it has to cross is large — a criterion promised as decisive
+delivering odds under 5 : 1 — and not because the arithmetic is tight. That is stated rather than
+left for a reader to work out.
+
 ## 9. What this document does not claim
 
 It is **not** evidence about whether videos disappear. It is evidence about whether this instrument
