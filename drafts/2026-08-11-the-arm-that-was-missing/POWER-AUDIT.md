@@ -359,7 +359,8 @@ toward **0.277–0.280** — the design is if anything slightly weaker than we r
 
 **Two things it credited us with, recorded because the rule that publishes the criticism publishes
 these too.** The current-status likelihood was checked term by term against the standard construction
-with no deviation found; and our *"under a Poisson approximation"* hedge **undersells the arithmetic**
+with no deviation found; and the *"under a Poisson approximation"* hedge in `PREREGISTRATION-111.md`
+§3 item 5 **undersells the arithmetic**
 — the approximation error is of order one part in a million here, because the largest single-identifier
 six-day failure probability in the whole corpus is 0.0021. **The hedge is withdrawn as
 over-cautious**: the figure is exact to the precision that matters, and the hedging budget belongs in
