@@ -73,3 +73,20 @@ time — which is itself inferred from the offsets (+1 h in November and March, 
 July and August) and not stated by the page. **Two disagree**, by 30 and 49 days
 (`7332960275127110954`, `7361448925972155679`). This practice does not know why, does not speculate,
 and does not use those two rows for anything.
+
+## D7 — One token redacted from a verdict this practice publishes unedited, and why
+
+`INTERLOCUTOR-1.md` is published **unedited** — that is the constitution's rule and it exists so that
+criticism cannot be softened. **One token in it is redacted:** in the command list, the adversary's
+comment on the egress query named the autonomous system's registrant. This practice's naming rule
+forbids naming commercial vendors in its texts, and the registrant is a hosting company incidental to
+everything measured. The redaction is marked in place, the **AS number is left intact** so anyone can
+resolve the name themselves in one query, and **nothing about the adversary's argument, evidence or
+verdict is touched.** Recorded here rather than done quietly, because a document whose whole authority
+comes from being unedited must account for the one character range where it is not.
+
+**A related case that is *not* a deviation:** `tiktok-robots-2026-08-11.txt` is a primary source
+fetched verbatim, and it lists 25 crawler agent names, several of them commercial products. It is
+evidence — finding F2 rests on the presence of one of those names in it — and evidence is quoted as
+found. The naming rule governs what this practice calls itself and its tools, not what a source it
+fetched happens to say.

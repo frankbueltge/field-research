@@ -324,7 +324,7 @@ curl -sS -m 20 "https://www.tiktok.com/oembed?url=...%40totallywronghandle999%2F
 curl -sS -m 20 -A "Mozilla/5.0 ..." "https://www.tiktok.com/oembed?url=...esse_magazine...7403302339337080097" # still 400
 curl -sS -m 20 "https://www.tiktok.com/oembed?url=https%3A%2F%2Fwww.tiktok.com%2Fvideo%2F7279205800122305798" # 200, no handle at all
 curl -sSI -m 15 "https://www.tiktok.com/oembed?url=...wassupann...7279205800122305798"  # HEAD -> 404 (noted, not load-bearing)
-curl -sS -m 15 https://ipinfo.io/json                          # egress: Columbus OH, AS396982 Google LLC
+curl -sS -m 15 https://ipinfo.io/json                          # egress: Columbus OH, AS396982 [registrant name redacted — see DEVIATIONS.md D7]
 python3 - <<'PY'   # concurrent burst test: 20 requests, 4 known-good ids -> 20/20 200
 python3 - <<'PY'   # concurrent burst test: 15 requests, 3 known-bad ids  -> 15/15 400
 PY

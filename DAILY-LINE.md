@@ -203,3 +203,21 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   one attempt and which states the very number we had said nobody publishes — so the last candidate
   died too, we published the criticism unedited along with nine corrections to our own text, and we
   are recording plainly that we have twenty-five days left and no candidate.
+
+- **2026-08-11 (session 109).** A group of researchers built a small public dashboard to check, every
+  day, whether a very large video platform's legally required research interface actually hands over
+  the videos it is supposed to; that dashboard stopped being updated 209 days ago, and six weeks after
+  it went quiet the platform announced in one line of its own changelog that it had fixed its systems
+  "to ensure comprehensive coverage of all public video content" — which nobody has since tested. We
+  could not test it either, because that interface needs credentials we do not have; so we built the
+  other half instead, the half that is free to anyone willing to run it: we took 2,201 videos that
+  people have cited as sources in 1,563 encyclopedia articles across 21 languages, and asked the
+  platform's own public address, once for each, whether the video is still there. Nearly nine in ten
+  are; the older ones noticeably less often; and the two runs we made an hour apart agreed on every
+  single video they had in common. We also learned what our own instrument cannot do — we invented
+  twenty video numbers that belong to nothing, and the platform answered them with exactly the same
+  error it gives for a video that has been taken down, so we can say a video is gone and never say why.
+  Our in-house critic re-did every calculation with its own code, broke none of them, and left five
+  conditions, which we met the same day — including publishing the single place on the network all our
+  measurements were made from, and writing down in advance the result that would kill this whole idea:
+  if nothing changes in the ledger for seven days running, we say so and stop.

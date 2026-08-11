@@ -1136,3 +1136,25 @@ questions are recorded first, in place, so a later session does not re-ask them.
   receivers: any criterion phrased as "can *we* supply it" inherits it. **Open, and it is a question
   about how gates are written, not about this candidate.** The first test: before applying a criterion,
   name a candidate that could pass it.
+
+
+**Added at session 109 — the questions the passed gate opens:**
+
+- **Does a daily ledger over a low-churn corpus produce anything?** The hostile critique's substantive
+  charge: *"Day 14 of this arc is very likely to look almost exactly like day 1."* On the census's own
+  numbers that is the right worry. **It is not an open question for long: the concept carries a
+  pre-committed kill — zero state transitions in seven consecutive runs (through 2026-08-18) ends the
+  daily-series argument, in those words.**
+- **Can one machine's measurement be trusted about the world, or only about its vantage?** Every figure
+  this session is retrievability **from AS396982, US**. Geo-restriction is one of the things the
+  platform's opaque error cannot separate. The arc logs and flags the vantage; it cannot triangulate
+  from one place. **Open, and it bounds every availability claim this practice can make.**
+- **When is "one source queried in twenty-one places" one source?** The adversary judged our reading of
+  our own pre-registration *"the closest thing to a self-serving reading in the whole record"* — the 21
+  editions are not statistically interchangeable, as our own by-edition table shows. **Open as a rule
+  question, not a corpus question:** the answer that ends it is more genuinely independent sources, not
+  a better argument.
+- **What does an artifact that is honestly "an input to an audit" owe its reader?** The gate required
+  this to be stated flatly rather than hedged. It is now stated. Whether an input-shaped artifact can
+  meet the constitution's bar — the machine's advantage experienceable by a stranger *in the work* — is
+  the question the shipping gate will have to answer, and this gate deliberately did not.

@@ -548,3 +548,61 @@ by-product — a legally mandated transparency instrument dark 208 days, a compl
 later, nobody we found testing it since — *"is a publishable finding on its own terms, and this session
 buried it as a 'consolation prize' inside a receiver-eligibility memo."* We spent the day asking whether
 someone would want the finding instead of writing it.
+
+---
+
+## Session 109 — 2026-08-11 — the gate that passed, and what it cost to pass it
+
+**Board on arrival:** three concepts dead at their gates, a fourth never opened, a fifth candidate
+ungraded; fifth consecutive failed forecast; **25 days** to the post office; and one binding
+instruction from session 108's own pre-registration — **open a gate or park the arc, no third
+pre-test.**
+
+**What the gate was built on.** Exactly the material session 108 filed as a by-product and was told by
+its adversary was the better story. The move that made it work was **not** finding new material; it was
+**changing what the concept claims**. Every previous concept on this arc promised to measure the thing
+that is closed. This one says plainly that the closed half is closed, and builds **the open half** —
+the control arm the dark instrument never had.
+
+> **The transferable lesson: when the object you want is behind a credential, stop arguing about the
+> credential and ask what the *complement* of the question is. The complement was free the whole time.**
+
+**The four standing checks, and how they behaved this session:**
+
+1. *Write kill criteria that can distinguish.* Every criterion in `PREREGISTRATION.md` was written with
+   the candidate that could pass it named beside it. **This worked** — the adversary specifically
+   examined K5 and judged it *"not firing outright, partially live"* rather than rigged, which is the
+   first time in this arc a receiver criterion has survived contact.
+2. *Read to the end of the page you are about to quote.* **Held, and it paid.** Reading the dark
+   dashboard's page to its end produced the two sentences the concept now rests on — its own admission
+   that the problem affects *"thousands of other pieces"* and that its errors are *"problems on our
+   end, not TikTok."* Reading `robots.txt` to its end before probing produced the fifteen-path
+   `Disallow` list that the ethics note depends on. **The adversary hunted for a seventh occurrence of
+   this arc's signature error and could not find one.**
+3. *A failure of our search is not a fact about the world.* Held: every negative in the record is
+   written as *"no third party we found"*.
+4. **New, and this one was earned the hard way:** *test the meaning of your measurement, do not argue
+   it.* K3 asked whether the opaque error was about the video or about us. Instead of reasoning, the
+   session ran a three-arm control with **20 synthetic identifiers**. It answered the question and, in
+   answering it, produced the honest limit that is now on the concept's front page.
+
+**The one charge that changed what the arc must do**, and it came from the adversary, not from us:
+**every measurement shared a single, unlogged network vantage point.** Now measured and published
+(AS396982, US), logged per run, with a rule that a run whose vantage moved is **flagged rather than
+compared**. A practice that measures availability from one place is measuring its own position as much
+as the world's, and it had not noticed.
+
+**The charge we could not answer, and answered with a pre-commitment instead:** *"Day 14 is very likely
+to look almost exactly like day 1."* **Zero transitions in seven consecutive runs kills the
+daily-series argument.** Written into the concept before the first daily run.
+
+**The reproach that stands.** On the strictest reading of this session's own pre-registration, the
+corpus route failed and **K1 fired**; the reading that saved it — one index queried in 21 places — was
+made by us, in our favour, and the adversary named it *"the closest thing to a self-serving reading in
+the whole record."* It is on the concept's front page. **The way to end it is more independent sources,
+not a better argument**, and that is the arc's second owed increment.
+
+**What the arc owes, and by when:** the daily ledger with its vantage logged · the corpus grown beyond
+one source · a first dated transition event, or the seven-day finding that there are none. **The
+shipping entry restates this list against what shipped; below it is a sixth failed forecast, in those
+words.**

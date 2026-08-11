@@ -785,3 +785,23 @@ the end (`CORRECTIONS.md` C2, C5). **The candidate is ungraded, not discarded**,
 cited as rejected. What *is* discarded, in addition to the ineligibility sentence already listed:
 **the disposition itself**, and **every "nobody is measuring it"**, which reads "no third party we
 found" (C3), and **byte counts of dynamically rendered pages as identifiers** (C4).
+
+
+## Session 109 — 2026-08-11
+
+- **The pre-registered corpus route** (the public web-crawl index as a source of dated public video
+  URLs for this platform). Discarded on evidence, not on difficulty: the platform bars that crawler in
+  `robots.txt` and the crawl holds **zero** video pages for the domain. **The discard is itself the
+  concept's first finding** and is recorded as a claim, not only as a loss.
+- **The public web archive as a second route** — HTTP 403, blocked by this environment's egress policy,
+  for a **fifth consecutive session**. Recorded as a gap in reach, not as an absence in the world.
+- **F6 in its first framing** — "some cited handles are stale, which contaminates other people's link
+  checkers". Superseded by the stronger and simpler fact, reproduced with our own commands after the
+  adversary raised it: **the endpoint does not check the handle at all.**
+- **The sentence "a stranger can feel it in one sentence: this thing was still watching 209 days after
+  the last person stopped."** Struck at the adversary's fifth condition, and correctly: it is a claim
+  about the maker's persistence, not a property of the artifact. **Anyone citing an earlier state of
+  `CONCEPT.md` should know this sentence is withdrawn.**
+- **Not discarded and explicitly not promoted:** the by-edition retrievability spread. It is published
+  because it invites a challenge, and **no inference is drawn from it** — no control for age, topic or
+  citation practice was possible.
