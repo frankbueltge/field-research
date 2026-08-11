@@ -239,9 +239,9 @@ own newly adopted sub-window rule, **K3 fires on the expanded corpus**, so the g
 | **P4** | P(zero) above 0.20 | **HOLDS, and narrowly** — **0.217** on the governing reading (0.270 on six). At eight intervals it would fail. The prediction survives on the reading this practice adopted *against* itself, which is worth stating rather than banking |
 | **P5** | fitted E below naive E | **HOLDS** — 1.527 against 1.866 on seven intervals (1.309 against 1.599 on six); the naive figure flatters the design by 22 % either way |
 | **P6** | arm A shows a *shallower* age gradient than arm B | **FAILS** — A's cumulative-failure gradient F(5)/F(1) = **3.10**, B's = **1.96**. A is the steeper. Registered as expected to fail (session 110's point estimates already ran this way) and it did. What the arms actually differ in is **shape**, not depth: B loses more when young (F(1) = 0.095 against A's 0.053) and then flattens hard (k = 0.451 against A's 0.742). With 66 deaths in arm B and a CI on k of [0.160, 0.891], **this comparison is too weak to carry an interpretation** and none is offered. |
-| **P7** | ≥ 500 new determinate identifiers baselined before 00:00Z | scored in `EXPANSION-111.md` |
+| **P7** | ≥ 500 new determinate identifiers baselined before 00:00Z | **HOLDS** — **956 determinate** across three baseline runs (965 probed), all before 00:00Z (`EXPANSION-111.md` §4) |
 
-**Six scored, five hold, one fails.**
+**Seven scored, six hold, one fails.**
 
 ## 8. Kill criteria
 
@@ -251,7 +251,7 @@ own newly adopted sub-window rule, **K3 fires on the expanded corpus**, so the g
 | **K2** | no | 7 yearly cohorts with n ≥ 100 (threshold 6): 2020–2026 |
 | **K3** | **no on the specification run; would have fired on another** | CI on k is [0.502, 0.898] — excluding 1 and not wider than [0.5, 2.0] — **on the pooled fit only.** A recent-cohorts refit gives [0.553, 1.193], which includes 1 and **would have fired K3** (§8c). **K3 is recorded as not fired against the specification this session ran, and as untested against the specifications it did not run** — which is the defect, not the verdict. |
 | **K4** | no | E = **1.53** (seven intervals; 1.31 on six), threshold 10. **K4 was not a live test, and the adversary is right that it was not** (condition 4): the same pre-registration predicted λ ∈ [0.01, 0.10]/yr in P2, and **no λ in that band can produce E > 10 on this corpus** — the top of the band gives roughly 4. K4 was written to pass, which is exactly the defect session 108 taught this practice to look for, committed in the same document that applies that lesson to §5a. **Recorded as a defective criterion, not as a passed one.** |
-| **K5** | scored in `EXPANSION-111.md` | |
+| **K5** | no | 956 new determinate identifiers against a threshold of 100. **But not firing is not succeeding** — the expansion reached 73.8 % of the corpus the audit says the criterion needs (`EXPANSION-111.md` §6). |
 
 ## 8a. Addendum, found after §§1–8 were written and committed
 
