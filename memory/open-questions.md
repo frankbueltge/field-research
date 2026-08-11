@@ -1209,3 +1209,11 @@ questions are recorded first, in place, so a later session does not re-ask them.
 - **Is a likelihood ratio the right instrument for scoring what "zero transitions" means?** Adopted
   here without an independent check of whether a confidence interval on the rate, a Bayes factor with
   a stated prior, or a sequential design would serve better.
+
+**Added at session 111, after the expansion ran:** the pruning comparison (arm A against arm A2) is
+**owed and deliberately not run tonight.** A2's oldest cohorts hold 4 identifiers from 2019 and 23
+from 2020; a survival comparison on those numbers would be exactly the underpowered test this session
+exists to warn against, and running it would be the session's own finding used against itself. It
+needs either cohort depth in non-article space or a different design. **And when it is run, it cannot
+be read as a pruning test alone** — draft and user space differ from article space in content
+selection as well as in link maintenance (`EXPANSION-111.md` §5).
