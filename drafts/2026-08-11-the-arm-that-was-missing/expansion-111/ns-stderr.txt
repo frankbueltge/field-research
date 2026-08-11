@@ -47,3 +47,7 @@
   429 on es.wikipedia.org ns118 — backing off 5s
   429 on es.wikipedia.org ns118 — backing off 5s
   429 on es.wikipedia.org ns118 — backing off 10s
+  429 on ja.wikipedia.org ns1 — backing off 5s
+  429 on ja.wikipedia.org ns1 — backing off 5s
+  429 on ja.wikipedia.org ns1 — backing off 10s
+  429 on ja.wikipedia.org ns2 — backing off 5s
