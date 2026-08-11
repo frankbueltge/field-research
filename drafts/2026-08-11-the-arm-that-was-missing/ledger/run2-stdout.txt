@@ -1,0 +1,1 @@
+{"requested": 2904, "planned": 2904, "seconds": 5127.8, "stopped": null, "counts": {"A": {"RETRIEVABLE": 1940, "NOT-RETRIEVABLE": 235, "INDETERMINATE": 26}, "B": {"RETRIEVABLE": 381, "NOT-RETRIEVABLE": 66, "INDETERMINATE": 7}, "B-truncated": {"RETRIEVABLE": 1, "NOT-RETRIEVABLE": 245, "INDETERMINATE": 3}}}

@@ -163,3 +163,25 @@ recorded in `vantage-2026-08-11-run2.md` because it narrows what this arc may cl
 measured from **one autonomous system**, not from one machine or one address, and per-address state at
 the platform's edge is therefore not constant across it either. Nothing in the pre-registration turns
 on this and no result changes; the sentence "from one machine" does.
+
+## D12 — Twelve requests that were not pre-registered, and why they were made anyway
+
+`PREREGISTRATION-110.md` fixes the run at corpus A ∪ corpus B (plus the control arm added in D8).
+**Twelve further requests were made after the run**, all to the same endpoint, all sequential at 1/s:
+eleven small-integer identifiers (`legacy-id-control.json`) and one re-fetch of
+`194951213564514304`.
+
+**Why.** The control arm returned one HTTP 200 among 249 identifiers that were supposed to be
+phantoms. That is either a false positive in the instrument's RETRIEVABLE state — which would bound
+every retrievability figure this arc has published — or a genuine video whose identifier predates the
+platform's current scheme. Those two readings have opposite consequences and the difference is eleven
+requests. Guessing would have been cheaper and worthless.
+
+**What they settled.** Ten of eleven small integers return the platform's 400; only `12345` resolves,
+with a complete oEmbed payload naming a real author. It is a real video, not a false positive. And
+`194951213564514304` — one of corpus A's four non-19-digit identifiers — returns HTTP 200 with a
+76-character title under the citation's own handle, while decoding to **1971** under this arc's
+`id >> 32` rule. **The identifier is fine; the dating rule does not hold outside the current scheme.**
+
+Recorded as a deviation rather than folded in silently, because the pre-registration is only worth
+something if the additions to it are visible.

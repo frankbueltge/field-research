@@ -1,0 +1,301 @@
+{
+ "run1": {
+  "path": "census-results.json",
+  "label": "census (session 109)",
+  "start": "2026-08-11T04:05:44Z",
+  "asn": "AS396982",
+  "n": 2201
+ },
+ "run2": {
+  "path": "ledger/run-2026-08-11T1124Z.json",
+  "label": "2026-08-11T11:24:01Z",
+  "start": "2026-08-11T11:24:06Z",
+  "asn": "AS396982",
+  "n": 2904
+ },
+ "vantage_guard": {
+  "run1_asn": "AS396982",
+  "run2_asn": "AS396982",
+  "same_autonomous_system": true,
+  "verdict": "COMPARABLE"
+ },
+ "observed_in_both": 2201,
+ "determinate_in_both": 2147,
+ "touching_indeterminate": 54,
+ "transitions": [],
+ "n_transitions": 0,
+ "disagreement_rate_pct": 0.0,
+ "indeterminate_edges": [
+  {
+   "vid": "6829310505618918662",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "6852210775415672066",
+   "from": "INDETERMINATE",
+   "to": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "6884621398111816966",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "6917179804592753922",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "6949221304268639494",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "6969628786627284229",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "6971795480774708485",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7010950870196129029",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7012382672488090886",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7019653012461341953",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7021943172959898885",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7048742406308728070",
+   "from": "INDETERMINATE",
+   "to": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "7111509789062090030",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7128075275685891371",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7165764224512265473",
+   "from": "NOT-RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7166648042077064453",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7181280960783093035",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7186094846795451691",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7203265473163627777",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7228580935606734107",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7230128819863178502",
+   "from": "NOT-RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7233289354494430469",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7236402636537351450",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7238532794425920774",
+   "from": "INDETERMINATE",
+   "to": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "7250735738008931586",
+   "from": "NOT-RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7268520321496501546",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7277194041404493089",
+   "from": "INDETERMINATE",
+   "to": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "7279719285650394375",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7304376963983068449",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7314279219075271944",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7317847883854761222",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7335132665852513567",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7375489093238639889",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7405901552088665345",
+   "from": "INDETERMINATE",
+   "to": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "7406269985007455489",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7416088714398502187",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7418135818344140050",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7418592775492472097",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7429523145163296042",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7431575408362917128",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7440413610666478855",
+   "from": "INDETERMINATE",
+   "to": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "7440741414935301384",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7451939003097468161",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7469526539613293866",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7473748661378256136",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7499054647466888470",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7528510843965721861",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7543251121574251783",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7550982617043176712",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7555124183282339079",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7593286320554888469",
+   "from": "INDETERMINATE",
+   "to": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "7601769018386582805",
+   "from": "NOT-RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7630494464707955989",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7668043157841382686",
+   "from": "INDETERMINATE",
+   "to": "RETRIEVABLE"
+  }
+ ],
+ "note": "A transition is a dated change in public retrievability from this vantage. It is not a deletion: session 109's three-arm control established the platform's HTTP 400 is semantically empty \u2014 removal, geo-restriction from this one vantage, a privacy change and an identifier that never existed are indistinguishable through this endpoint."
+}

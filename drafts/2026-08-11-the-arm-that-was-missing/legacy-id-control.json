@@ -1,0 +1,52 @@
+{
+ "purpose": "legacy-identifier control, session 110",
+ "results": [
+  {
+   "vid": "1",
+   "http": 400
+  },
+  {
+   "vid": "2",
+   "http": 400
+  },
+  {
+   "vid": "7",
+   "http": 400
+  },
+  {
+   "vid": "42",
+   "http": 400
+  },
+  {
+   "vid": "12345",
+   "http": 200,
+   "author": "xksnkfkf",
+   "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-p-0068/res/2014/08/31/06/76a75e8a-1ce1-4658",
+   "title_len": 0
+  },
+  {
+   "vid": "12346",
+   "http": 400
+  },
+  {
+   "vid": "54321",
+   "http": 400
+  },
+  {
+   "vid": "99999",
+   "http": 400
+  },
+  {
+   "vid": "123456",
+   "http": 400
+  },
+  {
+   "vid": "1234567",
+   "http": 400
+  },
+  {
+   "vid": "999999999",
+   "http": 400
+  }
+ ]
+}
