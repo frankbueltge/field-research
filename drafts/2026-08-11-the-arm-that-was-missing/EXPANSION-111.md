@@ -1,6 +1,6 @@
 # The expansion — what was added to the corpus before the window opened
 
-**Session 111, 2026-08-11, 22:04–23:5xZ.** The repair the power audit licensed
+**Session 111, 2026-08-11, 22:04–23:06Z.** The repair the power audit licensed
 (`POWER-AUDIT.md` §4, §6). Pre-registered as P7 and K5 in `PREREGISTRATION-111.md` §§5–6.
 
 *Sections 1–2 were written while the collection ran and state the method and the gaps; section 3
@@ -174,6 +174,79 @@ attribute it that way.
 entire session exists to warn against. **Running it here would be the session's own finding used
 against itself.** It is filed as owed work, not performed.
 
-## 6. What this does and does not do to the audit
+## 6. What it did to the criterion, on the corpus that will actually run
 
-*(written after the runs)*
+`recompute_expanded.py` re-runs `power_audit.py`'s own fitter, exclusions, dating rule, hazard and
+exposure accounting over the **union** of session 110's run and all three session-111 baseline runs —
+the population §5a will actually be applied to. Output: `power-audit-expanded.json`.
+
+**All four runs are on AS396982.** The arc's own vantage guard reports **COMPARABLE**; the runs may be
+diffed.
+
+| | before the expansion | after |
+|---|---|---|
+| analysable identifiers | 2,618 | **3,574** |
+| currently retrievable | 2,320 | **3,142** (+35.4 %) |
+| mean age | 2.880 y | 2.793 y |
+| fitted k | 0.6959 | **0.6476** [0.4938, 0.8065] |
+| λ / yr | 0.01787 | 0.01646 |
+| **E over the seven-interval window** | 1.527 | **2.212** |
+| **P(zero)** | 0.217 | **0.110** |
+| **likelihood ratio if §5a fires** | 4.61 : 1 | **9.13 : 1** |
+
+**The expansion roughly doubled what a null result will be worth, and did not reach the target.**
+The audit's threshold for a criterion worth treating as decisive was P(zero) ≤ 0.05, i.e. E ≥ 2.996.
+**73.8 % of that was reached. It is still short by about 1,114 live identifiers.**
+
+**And E rose by more than the corpus did** — live grew 35.4 % while E grew 44.8 % — because the new
+arms are younger than the old corpus, and under a falling hazard the young carry more forward risk
+(`POWER-AUDIT.md` §4a). The enrichment effect that section predicted showed up in the arithmetic
+without having been aimed at.
+
+### The standing method rule fires on its first application, and it fires against us
+
+`POWER-AUDIT.md` §8c adopted, this session, on the specialist's recommendation: *every shape
+parameter carries a cohort-sub-window refit beside it, and the criterion reading it is scored against
+every specification run.* Applied to the expanded corpus:
+
+| specification | n | deaths | k | 95 % CI | includes 1? |
+|---|---|---|---|---|---|
+| pooled | 3,574 | 432 | 0.6476 | [0.4938, 0.8065] | no |
+| recent 2023–2026 | 2,525 | 259 | 0.7938 | [0.5588, 1.0453] | **yes** |
+| old 2018–2022 | 1,049 | 173 | 0.6476 | [0.1603, 1.4673] | **yes** |
+
+> **K3 FIRES.** The shape is not determined across specifications, so under this session's own
+> criterion **every power figure is published as a range, not a point.**
+
+Over every `k` these specifications support (`power-audit-expanded-range.json`):
+
+| | |
+|---|---|
+| E | **1.887 – 2.889** |
+| P(zero) | **0.056 – 0.152** |
+| **likelihood ratio if §5a fires** | **6.6 : 1 – 18.0 : 1** |
+
+**So the honest final statement of what tonight bought.** Before: a null result worth about 4.6 : 1,
+on a shape reported as a point. After: a null result worth **somewhere between about 7 : 1 and
+18 : 1**, on a shape this practice now knows it cannot pin down. The criterion is **materially
+stronger and still not decisive**, and the uncertainty about *how much* stronger is itself a finding
+the session did not have this morning.
+
+### The ceiling this ran into, and it is a finding about the instrument
+
+Round 3 queried fourteen further wikis and produced **26 new identifiers.** Session 110's forum source
+was already swept to exhaustion by its own windowing method. The public web crawl is closed to this
+platform by its `robots.txt` (session 109). **The credential-free corpus reachable from these source
+families is, as of tonight, approximately exhausted at ~3,900 identifiers** — which is **below** what
+the arc's own kill criterion needs to be decisive.
+
+That is not a complaint about the evening's budget. It says that **making §5a decisive would require a
+source family this arc does not currently have**, and that is a statement about the instrument's
+ceiling, dated tonight, which a later session can try to refute by finding one.
+
+## 7. The handover
+
+`manifest-day2-onward.json` — **3,869 units, 965 added over session 110's manifest** (A 2,201;
+A2 768; B 454; A-new 197; B-truncated 249, kept deliberately as session 110's measured artefact).
+**Every run from 2026-08-12 must use it.** The baseline is **three** run files, not one
+(`DEVIATIONS.md` D13). See `NEXT-SESSION.md`.

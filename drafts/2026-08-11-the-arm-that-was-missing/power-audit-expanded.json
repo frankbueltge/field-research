@@ -1,0 +1,149 @@
+{
+  "generated_utc": "2026-08-11T23:06:02Z",
+  "governing_intervals": 7,
+  "sources": [
+    {
+      "file": "ledger/run-2026-08-11T1124Z.json",
+      "run_id": "2026-08-11T11:24:01Z",
+      "run_utc_start": "2026-08-11T11:24:06Z",
+      "vantage_asn": "AS396982",
+      "observations": 2904,
+      "analysable_new": 2618,
+      "excluded": {
+        "B_truncated": 249,
+        "indeterminate": 33,
+        "not_19": 4,
+        "nonpositive": 0
+      }
+    },
+    {
+      "file": "expansion-111/baseline-run.json",
+      "run_id": "2026-08-11T2231Z",
+      "run_utc_start": "2026-08-11T22:31:54Z",
+      "vantage_asn": "AS396982",
+      "observations": 635,
+      "analysable_new": 630,
+      "excluded": {
+        "B_truncated": 0,
+        "indeterminate": 3,
+        "not_19": 2,
+        "nonpositive": 0
+      }
+    },
+    {
+      "file": "expansion-111/baseline-run2.json",
+      "run_id": "2026-08-11T2251Z",
+      "run_utc_start": "2026-08-11T22:51:31Z",
+      "vantage_asn": "AS396982",
+      "observations": 304,
+      "analysable_new": 300,
+      "excluded": {
+        "B_truncated": 0,
+        "indeterminate": 3,
+        "not_19": 1,
+        "nonpositive": 0
+      }
+    },
+    {
+      "file": "expansion-111/baseline-run3.json",
+      "run_id": "2026-08-11T2305Z",
+      "run_utc_start": "2026-08-11T23:05:18Z",
+      "vantage_asn": "AS396982",
+      "observations": 26,
+      "analysable_new": 26,
+      "excluded": {
+        "B_truncated": 0,
+        "indeterminate": 0,
+        "not_19": 0,
+        "nonpositive": 0
+      }
+    }
+  ],
+  "union": {
+    "n": 3574,
+    "retrievable": 3142,
+    "fraction": 0.8791270285394516,
+    "mean_age_years": 2.7931007970836093
+  },
+  "vantage_guard": {
+    "autonomous_systems": [
+      "AS396982"
+    ],
+    "verdict": "COMPARABLE"
+  },
+  "fit_expanded": {
+    "k": 0.6476374751143155,
+    "k_ci95": [
+      0.4937552203691046,
+      0.8065434675927022
+    ],
+    "lambda_per_year": 0.016463806158225913,
+    "ci_excludes_1": true
+  },
+  "power_expanded": {
+    "live": 3142,
+    "E": 2.211635495090248,
+    "p_zero": 0.10952138027958663,
+    "likelihood_ratio": 9.130637300654866
+  },
+  "power_before_expansion": {
+    "live": 2320,
+    "k": 0.695856502117081,
+    "lambda_per_year": 0.017871723398900436,
+    "E": 1.5272231770970033,
+    "p_zero": 0.2171377841152877,
+    "likelihood_ratio": 4.605370751453637
+  },
+  "target": {
+    "p_zero_target": 0.05,
+    "E_needed": 2.995732273553991,
+    "fraction_of_target_reached": 0.73826206521001,
+    "further_live_identifiers_needed": 1114
+  },
+  "sub_window_refits": [
+    {
+      "window": "pooled",
+      "n": 3574,
+      "deaths": 432,
+      "k": 0.6476374751143155,
+      "k_ci95": [
+        0.4937552203691046,
+        0.8065434675927022
+      ],
+      "lambda_per_year": 0.016463806158225913,
+      "ci_includes_1": false
+    },
+    {
+      "window": "recent 2023-2026",
+      "n": 2525,
+      "deaths": 259,
+      "k": 0.7937745563679088,
+      "k_ci95": [
+        0.5587581651588882,
+        1.0453220116951298
+      ],
+      "lambda_per_year": 0.0324439455662064,
+      "ci_includes_1": true
+    },
+    {
+      "window": "old 2018-2022",
+      "n": 1049,
+      "deaths": 173,
+      "k": 0.6476374751143155,
+      "k_ci95": [
+        0.16028914323097265,
+        1.467322016016208
+      ],
+      "lambda_per_year": 0.014874420513864317,
+      "ci_includes_1": true
+    }
+  ],
+  "K3_across_specifications": {
+    "specifications_run": 3,
+    "specifications_whose_CI_includes_1": [
+      "recent 2023-2026",
+      "old 2018-2022"
+    ],
+    "verdict": "K3 FIRES on at least one specification \u2014 shape not determined across specifications; power figures published as a range"
+  }
+}

@@ -1,0 +1,1 @@
+{"requested": 26, "planned": 26, "seconds": 37.4, "stopped": null, "counts": {"A2": {"NOT-RETRIEVABLE": 5, "RETRIEVABLE": 21}}}

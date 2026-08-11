@@ -1,0 +1,15 @@
+expanded corpus: n=3574 live=3142
+
+K3 fired across specifications, so the window's worth is published as a RANGE over k:
+ k        lambda/yr   E(7 intervals)  P(zero)   likelihood ratio
+ 0.4938   0.00636     1.8866          0.1516    6.60:1
+ 0.5588   0.01016     2.0305          0.1313    7.62:1
+ 0.6476   0.01646     2.2116          0.1095    9.13:1
+ 0.7938   0.02859     2.4806          0.0837    11.95:1
+ 0.8065   0.02970     2.5027          0.0819    12.22:1
+ 1.0453   0.05075     2.8886          0.0557    17.97:1
+
+RANGE over every k this session's specifications support:
+  E from 1.887 to 2.889
+  P(zero) from 0.0557 to 0.1516
+  likelihood ratio from 6.60:1 to 17.97:1

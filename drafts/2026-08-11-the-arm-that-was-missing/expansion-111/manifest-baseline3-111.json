@@ -1,0 +1,157 @@
+{
+ "run_id": "2026-08-11T2305Z",
+ "purpose": "session 111 THIRD baseline \u2014 the round-3 identifiers, before day 2 opens",
+ "seed": 202608111113,
+ "cap": {
+  "deadline_utc": "23:50Z",
+  "budget_seconds": 2682,
+  "seconds_per_request_assumed": 1.85,
+  "cap_units": 1449,
+  "collected_new": 26,
+  "kept": 26,
+  "dropped_by_cap": 0,
+  "selection": "seeded shuffle, then first `cap`",
+  "note": "dropped identifiers remain in expansion-111/corpus-round3.json and may open a separately dated arm in a later session; they cannot carry this window's intervals"
+ },
+ "arms": {
+  "round3": {
+   "source": "MediaWiki exturlusage, expansion round 3",
+   "note": "the 14 wikis round 2 did not reach before its deadline, all namespaces",
+   "url_rows": 331,
+   "distinct_ids": 143,
+   "collected_utc": "2026-08-11T23:05:07Z"
+  }
+ },
+ "units": [
+  {
+   "vid": "7318788287966088453",
+   "handle": "novaposhta.15",
+   "arm": "A2"
+  },
+  {
+   "vid": "7135401801657879835",
+   "handle": "a7888102",
+   "arm": "A2"
+  },
+  {
+   "vid": "7021056541738552577",
+   "handle": "fotokadrik",
+   "arm": "A2"
+  },
+  {
+   "vid": "7332887149823479045",
+   "handle": "lucianovalinotti",
+   "arm": "A2"
+  },
+  {
+   "vid": "7420084588606704928",
+   "handle": "olafurw",
+   "arm": "A2"
+  },
+  {
+   "vid": "6933585433276206342",
+   "handle": "thedeinekoartem",
+   "arm": "A2"
+  },
+  {
+   "vid": "6932490256709176582",
+   "handle": "thedeinekoartem",
+   "arm": "A2"
+  },
+  {
+   "vid": "7215279650686258437",
+   "handle": "zosia_rosia",
+   "arm": "A2"
+  },
+  {
+   "vid": "7483000336022555911",
+   "handle": "erik_abdykalykov",
+   "arm": "A2"
+  },
+  {
+   "vid": "6916571997904407813",
+   "handle": "thedeinekoartem",
+   "arm": "A2"
+  },
+  {
+   "vid": "7363329725034433824",
+   "handle": "calatayud_alex",
+   "arm": "A2"
+  },
+  {
+   "vid": "7162049858931543302",
+   "handle": "annuta090",
+   "arm": "A2"
+  },
+  {
+   "vid": "7525752403220516103",
+   "handle": "coolczb",
+   "arm": "A2"
+  },
+  {
+   "vid": "7214956355860401454",
+   "handle": "juli_shc",
+   "arm": "A2"
+  },
+  {
+   "vid": "7342205123004845358",
+   "handle": "laverdaderahistoriade",
+   "arm": "A2"
+  },
+  {
+   "vid": "7137425755373456646",
+   "handle": "penguinthold",
+   "arm": "A2"
+  },
+  {
+   "vid": "7366201510440520976",
+   "handle": "power306787878",
+   "arm": "A2"
+  },
+  {
+   "vid": "7550192173979946246",
+   "handle": "prashhur",
+   "arm": "A2"
+  },
+  {
+   "vid": "7006286103804202245",
+   "handle": "thedeinekoartem",
+   "arm": "A2"
+  },
+  {
+   "vid": "7178411186415766789",
+   "handle": "milanazovskiy",
+   "arm": "A2"
+  },
+  {
+   "vid": "7272287369368292650",
+   "handle": "kirieshka_imba",
+   "arm": "A2"
+  },
+  {
+   "vid": "7173252230336744710",
+   "handle": "milanazovskiy",
+   "arm": "A2"
+  },
+  {
+   "vid": "7192812423693307141",
+   "handle": "b1gdan1",
+   "arm": "A2"
+  },
+  {
+   "vid": "7202893655596715270",
+   "handle": "uagetwar",
+   "arm": "A2"
+  },
+  {
+   "vid": "6814055914505538822",
+   "handle": "ukrainian_folk_singers",
+   "arm": "A2"
+  },
+  {
+   "vid": "7360250462324428065",
+   "handle": "londonmarathon",
+   "arm": "A2"
+  }
+ ]
+}

@@ -1,0 +1,327 @@
+{
+ "schema": "field-research/retrievability-ledger/1",
+ "run_id": "2026-08-11T2305Z",
+ "run_utc_start": "2026-08-11T23:05:18Z",
+ "run_utc_end": "2026-08-11T23:05:56Z",
+ "seconds": 37.4,
+ "vantage": {
+  "ip": "160.79.106.136",
+  "city": "Columbus",
+  "region": "Ohio",
+  "country": "US",
+  "loc": "39.9612,-82.9988",
+  "timezone": "America/New_York",
+  "asn": "AS396982",
+  "registrant": "[redacted under this practice's naming rule]",
+  "source": "https://ipinfo.io/json",
+  "fetched_utc": "2026-08-11T23:05:18Z"
+ },
+ "probe": {
+  "endpoint": "https://www.tiktok.com/oembed?url=",
+  "user_agent": "field-research/1.0 (independent research instrument; sequential, 1 req/s)",
+  "delay_s": 1.0,
+  "timeout_s": 25,
+  "unchanged_since": "session 109 census (census.py), 2026-08-11T04:05:44Z"
+ },
+ "arms": {
+  "round3": {
+   "source": "MediaWiki exturlusage, expansion round 3",
+   "note": "the 14 wikis round 2 did not reach before its deadline, all namespaces",
+   "url_rows": 331,
+   "distinct_ids": 143,
+   "collected_utc": "2026-08-11T23:05:07Z"
+  }
+ },
+ "planned": 26,
+ "requested": 26,
+ "stopped": null,
+ "counts": {
+  "A2": {
+   "NOT-RETRIEVABLE": 5,
+   "RETRIEVABLE": 21
+  }
+ },
+ "observations": [
+  {
+   "vid": "7318788287966088453",
+   "handle": "novaposhta.15",
+   "arm": "A2",
+   "http": 400,
+   "bytes": 45,
+   "body_code": 400,
+   "body_message": "Something went wrong",
+   "state": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "7135401801657879835",
+   "handle": "a7888102",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 1847,
+   "author_unique_id": "a7888102",
+   "title_len": 32,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "7021056541738552577",
+   "handle": "fotokadrik",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 2363,
+   "author_unique_id": "fotokadrik",
+   "title_len": 59,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "7332887149823479045",
+   "handle": "lucianovalinotti",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 3399,
+   "author_unique_id": "luchovalinotti",
+   "title_len": 215,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "7420084588606704928",
+   "handle": "olafurw",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 1972,
+   "author_unique_id": "olafurw",
+   "title_len": 71,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "6933585433276206342",
+   "handle": "thedeinekoartem",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 1908,
+   "author_unique_id": "thedeinekoartem",
+   "title_len": 70,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "6932490256709176582",
+   "handle": "thedeinekoartem",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 1914,
+   "author_unique_id": "thedeinekoartem",
+   "title_len": 72,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "7215279650686258437",
+   "handle": "zosia_rosia",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 3446,
+   "author_unique_id": "rositsofi",
+   "title_len": 142,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "7483000336022555911",
+   "handle": "erik_abdykalykov",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 3470,
+   "author_unique_id": "erik_abdykalykov",
+   "title_len": 406,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "6916571997904407813",
+   "handle": "thedeinekoartem",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 2234,
+   "author_unique_id": "thedeinekoartem",
+   "title_len": 84,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "7363329725034433824",
+   "handle": "calatayud_alex",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 2265,
+   "author_unique_id": "calatayud_alex",
+   "title_len": 136,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "7162049858931543302",
+   "handle": "annuta090",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 2064,
+   "author_unique_id": "annuta090",
+   "title_len": 47,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "7525752403220516103",
+   "handle": "coolczb",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 1312,
+   "author_unique_id": "coolczb",
+   "title_len": 12,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "7214956355860401454",
+   "handle": "juli_shc",
+   "arm": "A2",
+   "http": 400,
+   "bytes": 45,
+   "body_code": 400,
+   "body_message": "Something went wrong",
+   "state": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "7342205123004845358",
+   "handle": "laverdaderahistoriade",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 2539,
+   "author_unique_id": "laverdaderahistoriade",
+   "title_len": 112,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "7137425755373456646",
+   "handle": "penguinthold",
+   "arm": "A2",
+   "http": 400,
+   "bytes": 45,
+   "body_code": 400,
+   "body_message": "Something went wrong",
+   "state": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "7366201510440520976",
+   "handle": "power306787878",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 1986,
+   "author_unique_id": "power306787878",
+   "title_len": 33,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "7550192173979946246",
+   "handle": "prashhur",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 2563,
+   "author_unique_id": "prashhur",
+   "title_len": 103,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "7006286103804202245",
+   "handle": "thedeinekoartem",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 1908,
+   "author_unique_id": "thedeinekoartem",
+   "title_len": 69,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "7178411186415766789",
+   "handle": "milanazovskiy",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 3041,
+   "author_unique_id": "milanazovskiy",
+   "title_len": 109,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "7272287369368292650",
+   "handle": "kirieshka_imba",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 1747,
+   "author_unique_id": "kirieshka_imba",
+   "title_len": 24,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "7173252230336744710",
+   "handle": "milanazovskiy",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 2518,
+   "author_unique_id": "milanazovskiy",
+   "title_len": 65,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "7192812423693307141",
+   "handle": "b1gdan1",
+   "arm": "A2",
+   "http": 400,
+   "bytes": 45,
+   "body_code": 400,
+   "body_message": "Something went wrong",
+   "state": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "7202893655596715270",
+   "handle": "uagetwar",
+   "arm": "A2",
+   "http": 400,
+   "bytes": 45,
+   "body_code": 400,
+   "body_message": "Something went wrong",
+   "state": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "6814055914505538822",
+   "handle": "ukrainian_folk_singers",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 2351,
+   "author_unique_id": "ukrainian_folk_singers",
+   "title_len": 59,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  },
+  {
+   "vid": "7360250462324428065",
+   "handle": "londonmarathon",
+   "arm": "A2",
+   "http": 200,
+   "bytes": 2031,
+   "author_unique_id": "londonmarathon",
+   "title_len": 133,
+   "body_code": null,
+   "state": "RETRIEVABLE"
+  }
+ ]
+}
