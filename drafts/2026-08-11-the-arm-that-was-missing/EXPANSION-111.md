@@ -74,7 +74,7 @@ Three collection rounds and three baseline runs, all before 00:00Z, all on the u
 | 1 — editions | 45 language editions in article space, 25 lost to HTTP 429 | — | **73** (arm A-new) |
 | 1 — namespaces | en, es, ja outside article space; stopped at deadline inside `ja` ns 15 | 886 | **562** (arm A2) |
 | 2 | 29 editions round 1 lost + 18 wikis it never reached; stopped at deadline inside `ru` ns 2 | 654 | **304** |
-| 3 | the 14 wikis round 2 did not reach | *(below)* | *(below)* |
+| 3 | the 14 wikis round 2 did not reach, all namespaces | 143 | **26** (arm A2) |
 
 **Round-1 baseline run** — 635 requested, 635 planned, **1,026.5 s, no throttling, `stopped: null`**;
 transport failures **3 / 635 = 0.47 %**; vantage **AS396982** (as in both session-110 runs, so the

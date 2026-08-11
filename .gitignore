@@ -9,3 +9,6 @@ drafts/2026-08-10-who-actually-reads-it/src/
 drafts/2026-08-10-who-actually-reads-it/pygdelt-run/
 drafts/2026-08-10-who-actually-reads-it/.venv2/
 drafts/2026-08-10-who-actually-reads-it/src-npm/
+__pycache__/
+*.pyc
+memory/index.jsonl
