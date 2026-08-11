@@ -72,9 +72,13 @@ why.** This is on the concept's front page, not in a footnote.
 
 ### F6 — A contaminant that will be in anyone else's link-checker, and is not in this one
 
-**10 of the 262 retrievable videos in the sample (3.8 %) are served under a different creator handle
-than the one written in the citation.** The endpoint resolves by numeric identifier and ignores the
-handle in the URL. A checker that resolves the cited URL as written will therefore **score a handle
+**10 of the 262 retrievable videos in the sample (3.8 %), and 123 of 1,941 in the census (6.34 %),
+are served under a different creator handle than the one written in the citation.**
+
+**Amended after the adversary, and the amendment makes the fact simpler and stronger.** The endpoint
+does not tolerate a stale handle — **it does not check the handle at all.** Reproduced here with our
+own commands on three of our own census rows (`REFUTATION-REPRODUCED.md`): a handle that has never
+existed returns HTTP 200 with the true author, and so does a URL with no handle in the path. A checker that resolves the cited URL as written will therefore **score a handle
 change as a disappearance**. This instrument keys on the identifier and does not.
 
 ### F7 — The identifier dating was validated against an artifact neither we nor the encyclopedia control
@@ -123,7 +127,7 @@ agreed. Zero disagreements.** (§6.)
 | | Prediction | Outcome |
 |---|---|---|
 | **P1** | Instrument still dark, `last-modified` unchanged | **HOLDS** |
-| **P2** | Corpus route yields ≥ 1,000 distinct dated ids in ≤ 10 queries | **HOLDS on our reading (2,201); FAILS on the strictest reading of our own pre-registration** (853 from a single edition) — `DEVIATIONS.md` D1 |
+| **P2** | Corpus route yields ≥ 1,000 distinct dated ids in ≤ 10 queries | **HOLDS on our reading (2,201); FAILS on the strictest reading of our own pre-registration** (853 from a single edition) — `DEVIATIONS.md` D1. The adversary judged our reading *"the closest thing to a self-serving reading in the whole record"*; the qualifier now sits on `CONCEPT.md`'s front page |
 | **P3** | ≥ 300 consecutive requests, < 5 % transport failure | **HOLDS** (300 requests, 0.33 %) |
 | **P4** | Retrievability well below 100 %, declining with age | **PART-HOLDS, PART-FAILS** — 87.7 %, significant trend, **not monotone** |
 | **P5** | No free continuous at-scale series published by anyone else | **HOLDS** (as "none we found") |
@@ -150,6 +154,21 @@ agreed. Zero disagreements.** (§6.)
 - **C2** — The first timestamp-validation run reported 47 ordering violations. That was a bug in the
   script, not a property of the data (`DEVIATIONS.md` D2). It was never published as a result and is
   recorded because it was computed.
+
+---
+
+### F10 — The age effect survives an edition control (added after the adversary, condition 3)
+
+Stratified by language edition (census, n = 2,169, ten editions with ≥ 10 videos in each age
+stratum): **Mantel–Haenszel odds ratio 2.007** for retrievability of ≥ 2023 against ≤ 2022, against a
+**crude odds ratio of 1.857**. The effect is not an artifact of edition composition; it strengthens
+slightly under the control. **Three of the ten editions run the other way** (es −0.003, pt −0.040,
+uk −0.109), all of them small strata. Full table: `edition-stratified-check.txt`.
+
+### F11 — Every figure in this session was measured from one place, and now that place is on the record
+
+`vantage-2026-08-11.md`: AS396982, Columbus, Ohio, US. Until the adversary raised it, this was true
+and unlogged. It is the one charge that changes what the arc must do rather than how it must write.
 
 ---
 

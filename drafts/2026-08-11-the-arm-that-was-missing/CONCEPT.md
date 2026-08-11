@@ -37,6 +37,16 @@ That is a **coverage claim**, published 166 days ago, and no third party we can 
 constancy no one is running — and that without it no coverage claim about this platform can be
 checked from outside at all.**
 
+**Before anything else on this page: the corpus route in this concept is not the one that was
+pre-registered, and on the strictest reading of our own pre-registration the concept should have
+parked here.** The pre-registered route died (see below); the replacement was queried across 21
+language editions of one public index, and this practice read "at most two alternative sources" as
+permitting that. **Read strictly — one edition, one source — the corpus is 853 ids, below the 1,000
+that prediction P2 and kill criterion K1 name, and K1 fires.** Both readings are published; the
+adversary judged this *"the closest thing to a self-serving reading in the whole record"* and
+required it to be stated here rather than in the appendices (`INTERLOCUTOR-1.md`, condition 1).
+Where P2 is scored below, it is scored with this qualifier attached.
+
 It rests on two things established today, both first-hand:
 
 1. **The independent corpus does not exist, by the platform's own instruction.** The largest free
@@ -49,9 +59,13 @@ It rests on two things established today, both first-hand:
    as sources in 1,563 articles across 21 language editions of a public encyclopedia**, dated from
    the videos' own identifiers, probed once each through the platform's **credential-free** oEmbed
    endpoint: **300 pre-registered requests, 0.33 % transport failure, no throttling**, and
-   **263 of 300 (87.7 %) publicly retrievable on 2026-08-11**. Retrievability falls with age —
-   **78.9 % for videos from 2022 and earlier against 91.4 % from 2023 on** (r = 0.171, t = 2.990,
-   df = 297) (`DERIVED.md` §3–4).
+   **263 of 300 (87.7 %) publicly retrievable on 2026-08-11**; over the whole corpus,
+   **1,941 of 2,173 (89.3 %)**. Retrievability falls with age — **85.0 % for videos from 2022 and
+   earlier against 91.3 % from 2023 on** (census; r = 0.145, t = 6.810, df = 2,167) — **and the
+   per-year series is not monotone: 2023 (85.3 %) sits below 2022 (87.4 %)**, which is stated here,
+   beside the statistic, and not below it. Under an edition control the effect holds and slightly
+   strengthens (**Mantel–Haenszel odds ratio 2.007 against a crude 1.857**), while **three of ten
+   editions run the other way**, all of them small strata (`edition-stratified-check.txt`).
 
 **What the arc would produce**, and the reason it is an arc and not a night: the same measurement,
 **every day, over the whole corpus, until the reading of 2026-09-05** — a dated public ledger of
@@ -71,6 +85,14 @@ identifier corresponding to no video gets the same answer (`DERIVED.md` §4, arm
 made private, geo-restricted, age-gated, never-existed: one status, one message. **This instrument
 can say a video is not publicly retrievable through this route today. It can never say why, and it
 will never claim to.**
+
+**And every observation here was made from one network location, which until the adversary said so
+was true and unlogged.** All figures are retrievability **from AS396982, US, on 2026-08-11**
+(`vantage-2026-08-11.md`). A single egress cannot separate a removal from a geo-restriction, and
+geo-restriction is on the list above. The arc logs the vantage before every run and **flags** a run
+whose vantage moved rather than comparing it to the previous one. That does not make the instrument
+multi-vantage; it makes the confound visible instead of silent, which is the most one machine can
+honestly promise.
 
 ---
 
@@ -101,9 +123,12 @@ their own access does not give them for free?**
   measurement they built stopped **209 days ago** and they have published nothing on this subject
   since (their own publication index, checked today, lists eight items dated after 2026-01-14 and
   none of them concerns this platform's research interface).
-- **The honest failure mode**, written here so the adversary can use it: if the series is worthless
-  without the credentialed half that only they hold, then this artifact is an input to their work and
-  not a work of its own — and the gate should say so.
+- **What this artifact is, stated as a limit and not as a hedge.** It is **an input to an audit, not
+  an audit.** It supplies the credential-free half of a two-sided comparison. **It cannot, alone,
+  demonstrate a research-interface coverage gap** — that requires the credentialed side, which this
+  practice cannot obtain and will not claim. Anyone who reads this ledger as evidence that the
+  platform's coverage claim is false is reading it wrongly, and the artifact will say so on its own
+  face.
 
 **Not addressed, and will not be.** The receiver is named in the record. **No party named in this
 document has been or will be contacted by this practice.** Nothing here is a packet; no `status` is
@@ -134,8 +159,11 @@ not a receiver, and it is recorded as such.
 | Census | **The whole corpus: 2,201 requests, 3,847 s, 28 transport failures, 0 throttling. 1,941 / 2,173 usable = 89.3 % retrievable.** Age effect sharper than the sample: r = 0.145, t = 6.810, df = 2,167; ≤ 2022 **85.0 %** against ≥ 2023 **91.3 %** |
 | Reliability | **295 videos measured in both runs about an hour apart. 295 agree, 0 disagree.** |
 
-**Predictions: P1 holds · P2 holds · P3 holds · P4 part-holds and part-fails · P5 holds · P6 holds
-against us · P7 holds.** Kill criteria: **K1, K2, K3, K4 do not fire.** K5 is the adversary's.
+**Predictions: P1 holds · P2 holds on this practice's reading and FAILS on the strict reading of its
+own pre-registration (above) · P3 holds · P4 part-holds and part-fails · P5 holds · P6 holds
+against us · P7 holds.** Kill criteria: **K2, K3, K4 do not fire; K1 does not fire on this practice's reading and DOES fire on
+the strict one.** K5 was judged by the adversary: **not firing outright, partially live** — discharged
+in §2 above by stating what the artifact is.
 
 ---
 
@@ -170,8 +198,29 @@ random sample of the platform. Any claim of the second kind would be false and w
 - **The temporal** — a disappearance dated to the day it happened is a different object from a
   survival rate measured once.
 
-**A stranger can feel it in one sentence: this thing was still watching 209 days after the last
-person stopped.**
+**What a stranger actually encounters** — the adversary struck the previous version of this sentence
+as a claim about the maker's persistence rather than a property of the artifact, and it was right.
+What is in the artifact: **2,201 videos against the eleven of the only comparable instrument**; a
+**seed, a script and a raw response file** for every figure, so any row can be re-run by a stranger
+in one command; **the limit of the measurement printed on its face** rather than in a method note;
+and, for each video that stops resolving, **the date it stopped**, which no retrospective method can
+recover. Whether those add up to something worth a stranger's attention is the open question below,
+not something this page gets to assert.
+
+## 5a. The charge this concept has no answer to yet, and the commitment it makes instead
+
+The hostile critique's sharpest substantive point is not about rigour: *"Day 14 of this arc is very
+likely to look almost exactly like day 1. A critic will ask, correctly, what the fourteenth
+identical-looking data point is actually for."* On the census's own numbers that is the right
+worry — 89.3 % of a citation corpus is a low-churn population, and a ledger that never moves is a
+ledger nobody needs.
+
+This practice does not have the answer, and will not argue its way to one. **Pre-committed here,
+before the first daily run:** if after **seven consecutive daily runs** (through 2026-08-18) the
+ledger has recorded **zero** state transitions across the whole corpus, the daily-series argument is
+**dead**, and this arc's value rests on the one-time findings it has already produced — which the
+record will say in those words, and the arc parks. If it records transitions, each one is a dated
+disappearance no retrospective method can recover, and the arc continues.
 
 ## 6. Standing conditions, offered not imposed
 
