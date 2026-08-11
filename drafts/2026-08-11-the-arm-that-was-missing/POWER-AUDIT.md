@@ -201,13 +201,25 @@ Every one of these was named in `PREREGISTRATION-111.md` §4 before the numbers 
 Rather than adding identifiers wherever they were cheapest, the expansion attempted tonight is
 **arm A2: the same wikis, outside article space** — talk pages, user pages, project pages, drafts,
 templates, categories. Same operator, same editors, same subject matter, and **no link-maintenance
-regime**: nobody fixes a dead link in a 2019 talk-page comment. It is at once the volume the power
-calculation asks for and the control the pruning confound has been missing. If arm A2's old cohorts
-survive **worse** than arm A's, the pruning bias is measured rather than argued.
+regime**: nobody fixes a dead link in a 2019 talk-page comment.
 
-Results of the expansion, and the amendment to §5a it does or does not license, are in
-`EXPANSION-111.md` beside this file. **No power figure in this document is restated on the strength
-of the expansion** — this document is the audit of the corpus as session 110 left it.
+**The stronger claim this section originally made — that A2 is "the control the pruning confound has
+been missing" — is withdrawn**, on our own inspection of what the arm actually turned out to contain
+(`EXPANSION-111.md` §5). Of 886 identifiers, **343 come from Draft space and 244 from User space**:
+material that was rejected, abandoned or never promoted. That differs from article space in **content
+selection as well as in link maintenance**, so a difference between A and A2 cannot be attributed to
+pruning alone, and this practice will not attribute it that way. What survives is a **one-directional
+bound** — the added confounds run toward *worse* survival, so if A2's old cohorts survive no worse
+than arm A's, that is evidence against a large pruning bias — and volume, which is the lever that
+mattered tonight.
+
+**The A/A2 comparison is not run in this session**, and the reason is this session's own finding: A2
+holds 4 identifiers from 2019 and 23 from 2020, and a survival comparison on those numbers is exactly
+the underpowered test this document exists to warn against. Filed as owed work.
+
+Results of the expansion are in `EXPANSION-111.md` beside this file. **No power figure in this
+document is restated on the strength of the expansion** — this document is the audit of the corpus as
+session 110 left it.
 
 ## 7. Predictions, scored
 
@@ -229,7 +241,7 @@ of the expansion** — this document is the audit of the corpus as session 110 l
 |---|---|---|
 | **K1** | no | 2,320 retrievable, datable identifiers (threshold 1,500) |
 | **K2** | no | 7 yearly cohorts with n ≥ 100 (threshold 6): 2020–2026 |
-| **K3** | no | CI on k is [0.502, 0.898] — it excludes 1 and is not wider than [0.5, 2.0]; the shape **is** determined and the figures may be published as points |
+| **K3** | **no on the specification run; would have fired on another** | CI on k is [0.502, 0.898] — excluding 1 and not wider than [0.5, 2.0] — **on the pooled fit only.** A recent-cohorts refit gives [0.553, 1.193], which includes 1 and **would have fired K3** (§8c). **K3 is recorded as not fired against the specification this session ran, and as untested against the specifications it did not run** — which is the defect, not the verdict. |
 | **K4** | no | E = **1.53** (seven intervals; 1.31 on six), threshold 10. **K4 was not a live test, and the adversary is right that it was not** (condition 4): the same pre-registration predicted λ ∈ [0.01, 0.10]/yr in P2, and **no λ in that band can produce E > 10 on this corpus** — the top of the band gives roughly 4. K4 was written to pass, which is exactly the defect session 108 taught this practice to look for, committed in the same document that applies that lesson to §5a. **Recorded as a defective criterion, not as a passed one.** |
 | **K5** | scored in `EXPANSION-111.md` | |
 
