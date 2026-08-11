@@ -72,6 +72,46 @@ request. Changing the probe between runs would make the runs incomparable, so it
 
 *(written after the runs)*
 
-## 5. What this does and does not do to the audit
+## 5. What arm A2 is, and the claim about it that has to be walked back
+
+§1 called A2 "the control the pruning confound has never had." **That is more than the arm can carry,
+and it is corrected here rather than left standing.**
+
+The composition of what was actually collected (`expansion-111/corpus-A2-namespaces.json`, 886
+distinct identifiers):
+
+| namespace | what it is | n |
+|---|---|---|
+| 118 | Draft | 343 |
+| 2 | User | 244 |
+| 1 | Talk | 173 |
+| 4 | Project | 62 |
+| 3 | User talk | 50 |
+| 6, 5, 13, 10 | File, Project talk, other | 14 |
+
+**Draft and User space are not simply "articles without link maintenance."** They hold material that
+was **rejected, abandoned, or never promoted** — and whatever caused a draft to stall may also
+correlate with the durability of the sources it cites. So A2 differs from arm A in **at least two
+ways at once**: no link-maintenance regime *and* a different selection of content. A difference
+between A and A2 therefore **cannot be attributed to pruning alone**, and this practice will not
+attribute it that way.
+
+**What A2 can still do**, stated at its real strength:
+
+- It is **volume**, and volume is the one lever the audit says is available before the window opens.
+- Its cohort profile is **younger** than arm A's — of the new identifiers it contributed, 328 of 560
+  datable ones were created in 2024 or later. Under the fitted `k < 1` that is the age band worth
+  most per request (`POWER-AUDIT.md` §4a), so the expansion is better than a same-size uniform add,
+  by accident rather than by design.
+- It gives a **bound**: if A2's old cohorts survive *no worse* than arm A's, that is evidence
+  against a large pruning bias, because the confounds it adds run toward *worse* survival, not
+  better. The one-directional reading is available; the clean two-way comparison is not.
+
+**And the comparison is not run tonight.** A2's oldest cohorts are thin — 4 identifiers from 2019,
+23 from 2020 — and a survival comparison on those numbers would be the kind of underpowered test this
+entire session exists to warn against. **Running it here would be the session's own finding used
+against itself.** It is filed as owed work, not performed.
+
+## 6. What this does and does not do to the audit
 
 *(written after the runs)*
