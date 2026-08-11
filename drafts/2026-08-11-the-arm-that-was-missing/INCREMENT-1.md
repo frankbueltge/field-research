@@ -2,7 +2,9 @@
 
 *Session 110, 2026-08-11 (the second session of that day). The first increment against the gate
 passed by session 109 (`GATE-DECISION.md`). Pre-registered in `PREREGISTRATION-110.md`, committed
-before the first request of this session left this machine. Deviations D8–D11 in `DEVIATIONS.md`.*
+before the first request of this session left this machine. Deviations D8–D12 in `DEVIATIONS.md`. **Adversary pass: `INTERLOCUTOR-2.md`, published unedited —
+STANDS WITH CONDITIONS ×5, all five discharged in this session (`CONDITIONS-DISCHARGED-110.md`); the
+sections below are the corrected state.** *
 
 **Nothing here is a packet. No `status` is claimed. Nothing was addressed to anyone**, and no party
 named in this record — the platform, the receiver, the authors of any cited work, the operators of any
@@ -89,8 +91,20 @@ key (`collect_corpus_hn.py`). Why it is independent of corpus A in the way that 
 That last row is the one that earns the arm. Corpus A is selected for durability by construction, and
 this arc has said so from the start; corpus B is not selected for durability at all.
 
-**Neither host serves a `/robots.txt`** (HTTP 404 and HTTP 400 respectively, checked before the first
-query). There is no directive to honour and none is assumed. Requests were sequential at 1/s.
+**Robots, stated precisely** — the first version of this sentence was imprecise and an adversary could
+not reproduce it (`INTERLOCUTOR-2.md` condition 4; corrected here, not quietly). **The only host this
+pipeline queries for data is `hn.algolia.com`, and it serves no `/robots.txt` — HTTP 404**, re-checked
+live at the time of writing. There is no directive to honour there and none is assumed. The "HTTP 400"
+in the earlier sentence belonged to `api.stackexchange.com` — **rung B2 of the pre-registered ladder,
+checked and never used**, because rung B1 succeeded. Naming it alongside the host we did query was
+sloppy and is withdrawn.
+
+**And one thing the adversary found that we had not checked.** `news.ycombinator.com` **does** serve a
+real `robots.txt` (HTTP 200) with `Crawl-delay: 30` and a Disallow list. **This pipeline never requests
+it** — that hostname appears only in strings assembled from data already in hand, to give a reader a
+permalink. Zero requests were made to it, so the crawl delay is honoured trivially and none of its
+Disallow paths are touched. Recorded because "we didn't fetch it" is a claim a reader should be able to
+check, not a thing to leave unsaid. Requests to the host we did query were sequential at 1/s.
 
 **The harvest's own hit counts do not add up** — a parent window reporting 1,804 comment hits whose
 children report 116 and 1,095, and whose grandchildren report 374 and 336. Rather than argue about the
@@ -203,11 +217,22 @@ change, and this one holds still.
 
 ## 7. What the second source did to the arc's own findings
 
-**It confirmed one.** **P6 holds**: forum-linked videos are less retrievable than encyclopedia-cited
-ones — **85.23 % against 89.20 %**, a gap of **3.96 percentage points**, measured in the same run,
-from the same vantage, through the same probe. The direction was pre-registered. The mechanism the
+**It confirmed one, and more weakly than "confirmed" suggests.** **P6 holds**: forum-linked videos are
+less retrievable than encyclopedia-cited ones — **85.23 % against 89.20 %**, a gap of **3.96 percentage
+points**, measured in the same run, from the same vantage, through the same probe.
+
+**The uncertainty on that gap, which the first version of this document did not print**
+(`INTERLOCUTOR-2.md` condition 1 — its sharpest, and correct: this document computed a confidence
+interval for the age effect inside corpus B and none for its own headline comparison between the
+corpora). Two-proportion test on 1,940/2,175 against 381/447: **z = 2.392, p = 0.017** with a pooled
+standard error, **z = 2.192, p = 0.028** unpooled; **95 % CI on the gap = [0.42 pp, 7.50 pp]**.
+
+**So: real at conventional thresholds, and barely.** The interval's lower bound is **a tenth of the
+point estimate**. A reader who took the bare word "holds" to mean the two corpora are clearly apart
+would be reading more into it than the data carries, and P6 should be read as *the direction was
+predicted and the data leans that way*, not as a measured 4-point difference. The mechanism the
 prediction named — encyclopedic citation is selected and maintained for durability, forum comment is
-neither — is consistent with it, and is not established by it.
+neither — is consistent with the gap and is not established by it.
 
 **It failed to replicate another, and that is the more interesting half.** Corpus A shows
 retrievability falling with age, strongly: session 109 measured **Mantel–Haenszel OR 2.007** under an
@@ -246,16 +271,27 @@ over-count death, and the error is large.**
 `12345`, from a comment that plainly meant it as a placeholder
 (`https://news.ycombinator.com/item?id=45488515`). It is not a false positive. The endpoint returns a
 complete oEmbed payload for it, naming a real author, with a thumbnail path carrying `res/2014/08/31/`
-— a **genuine video whose identifier predates the platform's current 19-digit scheme**. A control of
-eleven small integers (`legacy-id-control.json`) settles that it is not an artefact of small numbers:
-**1, 2, 7, 42, 12346, 54321, 99999, 123456, 1234567 and 999999999 all return the platform's 400; only
-`12345` resolves.**
+— a **genuine video whose identifier predates the platform's current 19-digit scheme**. (The 2014 date
+is read from a thumbnail path segment: suggestive, not authoritative, and not load-bearing.) A control
+of eleven small integers settles that it is not an artefact of small numbers: **1, 2, 7, 42, 12346,
+54321, 99999, 123456, 1234567 and 999999999 all return the platform's 400; only `12345` resolves.**
 
-**The structural test predicted the measurement, on all 249.** Before anything was measured, 248 of the
-249 were identified as strict prefixes of a well-formed identifier captured from the same comment, and
-**exactly one — `12345` — was not.** After measurement: of the 246 determinate rows, **245 are
-NOT-RETRIEVABLE and the one RETRIEVABLE row is `12345`.** The prediction and the measurement agree on
-every row.
+The control was first run as an uncommitted inline command that kept no response bodies — the one piece
+of evidence on this arc held to a lower standard than the rest, which an adversary noticed
+(`INTERLOCUTOR-2.md` condition 5). It has been **re-run from a committed script
+(`legacy_id_control.py`) that stores every raw body** (`legacy-id-control.json`). The re-run
+**reproduces the result exactly**: 1 of 11, the same one, four hours later.
+
+**The structural test predicted the measurement on every row that returned one.** Before anything was
+measured, 248 of the 249 were identified as strict prefixes of a well-formed identifier captured from
+the same comment, and **exactly one — `12345` — was not.** After measurement: of the **246 determinate
+rows, 245 are NOT-RETRIEVABLE and the one RETRIEVABLE row is `12345`** — agreement on all 246.
+
+**The remaining 3 rows returned no answer** (`702419516832`, `71473953160298`, `75653617056` — TLS
+handshake failures, INDETERMINATE). They are **inconclusive, not confirmatory**, and the first version
+of this document folded them into "all 249", which overclaimed by three rows
+(`INTERLOCUTOR-2.md` condition 2). The correct sentence is the one above: **246 of 246 answered rows
+agree with the prediction; 3 were never answered.**
 
 **So the filter's error rate is measured, not assumed: 1 in 249 (0.4 %).** The 19-digit rule discards
 one genuine legacy video per 249 phantoms. That is the cost of the filter, it is small, and it is now a
@@ -284,8 +320,8 @@ date precedes the platform's existence rather than bucketing them in 1971.
 | **P2** | Corpus A within ±1.0 pp of 89.3 % | **HOLDS** — 89.20 % against 89.32 %, a change of **0.128 pp** |
 | **P3** | Fewer than 5 transitions, most likely 0 | **HOLDS** — **0** |
 | **P4** | ≥ 100 new identifiers from the second source | **HOLDS** — **454** |
-| **P5** | The second source is *younger* than corpus A | **FAILS** — corpus B is **older**: 61.7 % of its identifiers date from 2023 or later against corpus A's **69.7 %**. The reasoning ("forum discussion tracks the present") was wrong about how a forum archive accumulates: it keeps every year it has lived through, while an encyclopedia's citations are continually replaced by newer ones |
-| **P6** | The second source is *less* retrievable | **HOLDS** — 85.23 % against 89.20 %. It would also have "held" spectacularly and falsely without the filter (§8) |
+| **P5** | The second source is *younger* than corpus A | **FAILS** — corpus B is **older**. On **matched denominators** (well-formed identifiers only, both corpora — the first version compared B's well-formed against A's *whole* corpus, `INTERLOCUTOR-2.md` condition 3): **B 282/457 = 61.7 %** dating from 2023 or later against **A 1,535/2,197 = 69.9 %**. The mismatched comparison gave 69.7 % for A; the conclusion is unchanged and the arithmetic now is. The reasoning ("forum discussion tracks the present") was wrong about how a forum archive accumulates: it keeps every year it has lived through, while an encyclopedia's citations are continually replaced by newer ones |
+| **P6** | The second source is *less* retrievable | **HOLDS, and only just** — 85.23 % against 89.20 %; **p = 0.017 pooled / 0.028 unpooled, 95 % CI [0.42 pp, 7.50 pp]** (§7). It would also have "held" spectacularly and falsely without the filter (§8) |
 | **P7** | Transport failures ≤ 1 % | **FAILS** — **1.24 %** (36 / 2,904), all one TLS handshake class. Not fatal to anything — those rows are INDETERMINATE and counted in no rate — but the prediction was wrong and the ceiling was ours |
 
 **Five hold, two fail.** Neither failure was discovered by an adversary; both are recorded because the

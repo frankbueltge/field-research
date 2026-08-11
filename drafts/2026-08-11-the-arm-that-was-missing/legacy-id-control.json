@@ -1,52 +1,98 @@
 {
- "purpose": "legacy-identifier control, session 110",
+ "purpose": "legacy-identifier control, session 110 \u2014 rerun with script and raw bodies committed, discharging condition 5 of INTERLOCUTOR-2.md",
+ "reading_fixed_before_the_requests": "if small integers resolve generally, '12345' shows nothing; if only some resolve, the ones that do are real videos predating the current identifier scheme",
+ "user_agent": "field-research/1.0 (independent research instrument; sequential, 1 req/s)",
+ "delay_s": 1.0,
+ "n_tested": 11,
+ "n_http_200": 1,
  "results": [
   {
    "vid": "1",
-   "http": 400
+   "requested_url": "https://www.tiktok.com/oembed?url=https%3A%2F%2Fwww.tiktok.com%2F%40user%2Fvideo%2F1",
+   "fetched_utc": "2026-08-11T13:09:00Z",
+   "http": 400,
+   "bytes": 45,
+   "body": "{\"message\":\"Something went wrong\",\"code\":400}"
   },
   {
    "vid": "2",
-   "http": 400
+   "requested_url": "https://www.tiktok.com/oembed?url=https%3A%2F%2Fwww.tiktok.com%2F%40user%2Fvideo%2F2",
+   "fetched_utc": "2026-08-11T13:09:01Z",
+   "http": 400,
+   "bytes": 45,
+   "body": "{\"message\":\"Something went wrong\",\"code\":400}"
   },
   {
    "vid": "7",
-   "http": 400
+   "requested_url": "https://www.tiktok.com/oembed?url=https%3A%2F%2Fwww.tiktok.com%2F%40user%2Fvideo%2F7",
+   "fetched_utc": "2026-08-11T13:09:03Z",
+   "http": 400,
+   "bytes": 45,
+   "body": "{\"message\":\"Something went wrong\",\"code\":400}"
   },
   {
    "vid": "42",
-   "http": 400
+   "requested_url": "https://www.tiktok.com/oembed?url=https%3A%2F%2Fwww.tiktok.com%2F%40user%2Fvideo%2F42",
+   "fetched_utc": "2026-08-11T13:09:04Z",
+   "http": 400,
+   "bytes": 45,
+   "body": "{\"message\":\"Something went wrong\",\"code\":400}"
   },
   {
    "vid": "12345",
+   "requested_url": "https://www.tiktok.com/oembed?url=https%3A%2F%2Fwww.tiktok.com%2F%40user%2Fvideo%2F12345",
+   "fetched_utc": "2026-08-11T13:09:06Z",
    "http": 200,
-   "author": "xksnkfkf",
-   "thumb": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-p-0068/res/2014/08/31/06/76a75e8a-1ce1-4658",
-   "title_len": 0
+   "bytes": 1219,
+   "body": "{\"version\":\"1.0\",\"type\":\"video\",\"title\":\"\",\"author_url\":\"https://www.tiktok.com/@xksnkfkf\",\"author_name\":\"xksnkfkf\",\"width\":\"100%\",\"height\":\"100%\",\"html\":\"<blockquote class=\\\"tiktok-embed\\\" cite=\\\"https://www.tiktok.com/@xksnkfkf/video/12345\\\" data-video-id=\\\"12345\\\" data-embed-from=\\\"oembed\\\" style=\\\"max-width:605px; min-width:325px;\\\"> <section> <a target=\\\"_blank\\\" title=\\\"@xksnkfkf\\\" href=\\\"https://www.tiktok.com/@xksnkfkf?refer=embed\\\">@xksnkfkf</a> <p></p> <a target=\\\"_blank\\\" title=\\\"\u266c original sound - xksnkfkf -\\\" href=\\\"https://www.tiktok.com/music/original-sound-xksnkfkf-0?refer=embed\\\">\u266c original sound - xksnkfkf - </a> </section> </blockquote> <script async src=\\\"https://www.tiktok.com/embed.js\\\"></script>\",\"thumbnail_width\":540,\"thumbnail_height\":960,\"thumbnail_url\":\"https://p16-common-sign.tiktokcdn-us.com/tos-maliva-p-0068/res/2014/08/31/06/76a75e8a-1ce1-4658-b114-d820f21e715f.jpg~tplv-tiktokx-origin.image?dr=9636&x-expires=1786626000&x-signature=0cuY%2BlyzzmUDXJMIHVCQJle3tKo%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast5\",\"provider_url\":\"https://www.tiktok.com\",\"provider_name\":\"TikTok\",\"author_unique_id\":\"xksnkfkf\",\"embed_product_id\":\"12345\",\"embed_type\":\"video\"}"
   },
   {
    "vid": "12346",
-   "http": 400
+   "requested_url": "https://www.tiktok.com/oembed?url=https%3A%2F%2Fwww.tiktok.com%2F%40user%2Fvideo%2F12346",
+   "fetched_utc": "2026-08-11T13:09:07Z",
+   "http": 400,
+   "bytes": 45,
+   "body": "{\"message\":\"Something went wrong\",\"code\":400}"
   },
   {
    "vid": "54321",
-   "http": 400
+   "requested_url": "https://www.tiktok.com/oembed?url=https%3A%2F%2Fwww.tiktok.com%2F%40user%2Fvideo%2F54321",
+   "fetched_utc": "2026-08-11T13:09:09Z",
+   "http": 400,
+   "bytes": 45,
+   "body": "{\"message\":\"Something went wrong\",\"code\":400}"
   },
   {
    "vid": "99999",
-   "http": 400
+   "requested_url": "https://www.tiktok.com/oembed?url=https%3A%2F%2Fwww.tiktok.com%2F%40user%2Fvideo%2F99999",
+   "fetched_utc": "2026-08-11T13:09:10Z",
+   "http": 400,
+   "bytes": 45,
+   "body": "{\"message\":\"Something went wrong\",\"code\":400}"
   },
   {
    "vid": "123456",
-   "http": 400
+   "requested_url": "https://www.tiktok.com/oembed?url=https%3A%2F%2Fwww.tiktok.com%2F%40user%2Fvideo%2F123456",
+   "fetched_utc": "2026-08-11T13:09:11Z",
+   "http": 400,
+   "bytes": 45,
+   "body": "{\"message\":\"Something went wrong\",\"code\":400}"
   },
   {
    "vid": "1234567",
-   "http": 400
+   "requested_url": "https://www.tiktok.com/oembed?url=https%3A%2F%2Fwww.tiktok.com%2F%40user%2Fvideo%2F1234567",
+   "fetched_utc": "2026-08-11T13:09:13Z",
+   "http": 400,
+   "bytes": 45,
+   "body": "{\"message\":\"Something went wrong\",\"code\":400}"
   },
   {
    "vid": "999999999",
-   "http": 400
+   "requested_url": "https://www.tiktok.com/oembed?url=https%3A%2F%2Fwww.tiktok.com%2F%40user%2Fvideo%2F999999999",
+   "fetched_utc": "2026-08-11T13:09:14Z",
+   "http": 400,
+   "bytes": 45,
+   "body": "{\"message\":\"Something went wrong\",\"code\":400}"
   }
  ]
 }
