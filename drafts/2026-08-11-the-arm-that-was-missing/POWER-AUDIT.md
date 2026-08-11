@@ -272,9 +272,10 @@ one time in five and delivers evidence at odds under 5 : 1.
 **The rule this practice adopts for it, stated now rather than on 2026-08-18:** the **longer** window
 governs — seven runs through 2026-08-18, seven intervals — because it is the text of the
 pre-commitment itself *and* because it is the reading **least favourable to this session's own
-conclusion**. Where §§1–8 above quote the six-interval figures they are left standing as computed;
-the governing numbers for the arc are the seven-interval row. Figures in
-`power-audit-addendum-window.json`.
+conclusion**. On the adversary's condition 2, §§3, 4, 7 and 8 above were subsequently **brought into
+line with this reading** rather than left pointing at an addendum: the governing row leads §3's table,
+the six-interval figures are kept beside it as superseded rather than deleted, and P3–P5 and K4 are
+scored on seven intervals. Figures in `power-audit-addendum-window.json`.
 
 ## 8b. Second addendum — a scope error in this audit's own arithmetic, found by us at ~22:20Z
 
