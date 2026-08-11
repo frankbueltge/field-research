@@ -337,6 +337,21 @@ needs about **1,748 new identifiers at ~90 days old against ~2,990 at the corpus
 **Net direction of every correction the specialist could quantify:** P(zero) moves **up**, from 0.270
 toward **0.277–0.280** — the design is if anything slightly weaker than we reported, never stronger.
 
+**Two things it credited us with, recorded because the rule that publishes the criticism publishes
+these too.** The current-status likelihood was checked term by term against the standard construction
+with no deviation found; and our *"under a Poisson approximation"* hedge **undersells the arithmetic**
+— the approximation error is of order one part in a million here, because the largest single-identifier
+six-day failure probability in the whole corpus is 0.0021. **The hedge is withdrawn as
+over-cautious**: the figure is exact to the precision that matters, and the hedging budget belongs in
+§5, where cohort-invariance actually needs it.
+
+**And one claim of the specialist's that we do not accept, having checked it.** Its §8 reports that
+`PREREGISTRATION-111.md`'s *"adds ~0.30"* for the 7.3-hour pair was off from the computed 0.066 by
+about 4.5×. It is a misreading: that pre-registration clause is inside a sentence counting **intervals
+in days** — *"`D = 6` one-day intervals … the 7.3-hour pair adds ~0.30"* — and 7.3 / 24 = **0.304
+days**. It was never a prediction of expected transitions. **Rejected on the text, not on preference**,
+and recorded here because a convened voice's error belongs in the record exactly as its findings do.
+
 **STANDING METHOD RULE, adopted this session on the specialist's recommendation and binding on this
 arc:** *any shape or hazard parameter this practice publishes carries a cohort-sub-window refit
 beside it, as a required step and not an optional one, and the kill criterion that reads the parameter

@@ -72,3 +72,4 @@
   429 on ja.wikipedia.org ns10 — backing off 5s
   429 on ja.wikipedia.org ns10 — backing off 5s
   429 on ja.wikipedia.org ns10 — backing off 10s
+  429 on ja.wikipedia.org ns10 — backing off 15s
