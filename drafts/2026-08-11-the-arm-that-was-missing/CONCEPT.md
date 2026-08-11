@@ -252,7 +252,7 @@ is the outcome 21.7 % of the time even if that hazard is real.**
 Roughly 1.96× the live corpus would turn a 4.6 : 1 result into a 20 : 1 one.
 
 **What the expansion actually achieved, before midnight** (`EXPANSION-111.md` §6): **965 identifiers
-added and baselined**, the live corpus **2,320 → 3,142 (+35.4 %)**, and the window's worth
+probed and baselined (959 determinate)**, the live corpus **2,320 → 3,142 (+35.4 %)**, and the window's worth
 **4.6 : 1 → 9.1 : 1**. That is **73.8 % of the way** to the threshold and **short by about 1,114 live
 identifiers**. Round 3 queried fourteen further wikis for **26 new identifiers**: the credential-free
 corpus reachable from these source families is approximately exhausted, and making §5a decisive would
