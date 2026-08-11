@@ -745,3 +745,15 @@ an overestimate, and said in the same breath that the direction favoured our own
 literal frailty models fit equally well and disagree on the sign. **A directional claim stated as
 convenient-for-us is a claim that must be computed, not reasoned to** — the check cost two lines and
 was not run.
+
+**Expansion outcome (session 111, all three rounds complete before 00:00Z).** **965 probed, 959
+determinate**; live corpus **2,320 → 3,142**; window's worth **4.6 : 1 → 9.1 : 1**, i.e. **73.8 %** of
+the audit's own threshold, short by ~1,114 live identifiers. **The sub-window rule forged this session
+fires immediately**: on the expanded corpus the recent-only and old-only refits both include k = 1, so
+**K3 fires and the governing figure is the range 6.6 : 1 – 18.0 : 1.** Two by-products: **article-space
+videos are 1.78× more retrievable at the same age than non-article-space ones** (MH, CI [1.357, 2.345])
+— a ceiling on the pruning bias, not a measurement of it, and it argues the fitted hazard is too low;
+and **round 3 bought 26 identifiers from fourteen wikis**, which with the forum source exhausted and the
+public crawl closed means **the credential-free corpus from these source families is approximately
+exhausted at ~3,900 — below what §5a needs to be decisive.** Handover: `manifest-day2-onward.json`
+(3,869 units), three baseline runs, `NEXT-SESSION.md`.
