@@ -30,10 +30,31 @@ from chunking import chunk_markdown
 from store import build_index, recall
 
 # Repo-relative source globs to index.
+#
+# Two entries added 2026-08-12 (architect), both places this practice already keeps records that
+# recall could not reach:
+#
+#  · `notes/**` — 21 files of feasibility notes, spikes and probes, written since 2026-07-02 and
+#    never indexed.
+#  · `deliveries/**` — 10 delivered packets with their verifier reports.
+#  · `field-feedback/**` — 22 build-feedback letters to the practice (the sibling of
+#    `atelier-feedback/**`, which the atelier has indexed all along).
+#  · `memory/*.md` — the curated memory itself. PROTOCOL.md §"Orient" names "curated `memory/`"
+#    as the FIRST step of orientation, and `claims.md`, `open-questions.md`, `discarded.md` and
+#    `downstream-commitments.md` sit directly in that directory; only `memory/dossiers/**` was
+#    indexed, so the four files the constitution sends a session to first were the ones recall
+#    could not return.
+#
+# The rule this encodes, learned in ulysses on the same night: when the practice starts writing
+# somewhere new, this list follows it in the same commit. test_sources.py enforces it.
 SOURCE_GLOBS = [
     "journal/**/*.md",
     "works/**/*.md",
     "drafts/**/*.md",
+    "notes/**/*.md",
+    "deliveries/**/*.md",
+    "field-feedback/**/*.md",
+    "memory/*.md",
     "memory/dossiers/**/*.md",
 ]
 
