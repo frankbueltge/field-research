@@ -76,3 +76,10 @@
   429 on ja.wikipedia.org ns11 — backing off 5s
   429 on ja.wikipedia.org ns11 — backing off 5s
   429 on ja.wikipedia.org ns11 — backing off 5s
+  429 on ja.wikipedia.org ns13 — backing off 5s
+  429 on ja.wikipedia.org ns13 — backing off 10s
+  429 on ja.wikipedia.org ns13 — backing off 5s
+  429 on ja.wikipedia.org ns13 — backing off 5s
+  429 on ja.wikipedia.org ns13 — backing off 10s
+  429 on ja.wikipedia.org ns14 — backing off 5s
+DEADLINE — stopping, reported not silently truncated

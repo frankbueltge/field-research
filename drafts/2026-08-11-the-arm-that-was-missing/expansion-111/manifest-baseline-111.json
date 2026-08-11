@@ -1,0 +1,3226 @@
+{
+ "run_id": "2026-08-11T2232Z",
+ "purpose": "session 111 baseline of the expanded corpus, before day 2 opens",
+ "seed": 20260811111,
+ "cap": {
+  "deadline_utc": "23:45Z",
+  "budget_seconds": 4368.0,
+  "seconds_per_request_assumed": 1.8,
+  "cap_units": 2426,
+  "collected": 635,
+  "kept": 635,
+  "dropped_by_cap": 0,
+  "selection": "seeded shuffle, then first `cap` \u2014 not the alphabetically or chronologically lucky ones",
+  "note": "dropped identifiers are kept in the collected corpus files and may enter a later run; they simply cannot carry this window's six intervals"
+ },
+ "arms": {
+  "A-new": {
+   "session": 111,
+   "source": "MediaWiki exturlusage, language editions not queried at session 109",
+   "collected_utc": "2026-08-11T22:05Z"
+  },
+  "A2": {
+   "source": "MediaWiki exturlusage, non-article namespaces",
+   "wikis": 21,
+   "namespaces": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    100,
+    118,
+    119
+   ],
+   "url_rows": 1382,
+   "distinct_ids": 886,
+   "collected_utc": "2026-08-11T22:31:47Z",
+   "log_entries": 26
+  }
+ },
+ "units": [
+  {
+   "vid": "7412061097622064427",
+   "handle": ".lubbika",
+   "arm": "A2"
+  },
+  {
+   "vid": "7293663258211896622",
+   "handle": "ihatebriannachickenfry",
+   "arm": "A2"
+  },
+  {
+   "vid": "7264229745036889352",
+   "handle": "radiusone_official",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7214190977009880363",
+   "handle": "cocoabutterofficial",
+   "arm": "A2"
+  },
+  {
+   "vid": "6973394121687911686",
+   "handle": "weratedogs",
+   "arm": "A2"
+  },
+  {
+   "vid": "7501076489392180502",
+   "handle": "drdonutclips16",
+   "arm": "A2"
+  },
+  {
+   "vid": "6841383368211385606",
+   "handle": "renegadescienceteacher",
+   "arm": "A2"
+  },
+  {
+   "vid": "7391268469540474117",
+   "handle": "munroder",
+   "arm": "A2"
+  },
+  {
+   "vid": "7571404528575089921",
+   "handle": "upsi_malaysia",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7297718441924988192",
+   "handle": "armen.patriot",
+   "arm": "A2"
+  },
+  {
+   "vid": "7224156139078831387",
+   "handle": "vicenews",
+   "arm": "A2"
+  },
+  {
+   "vid": "7362020799353654545",
+   "handle": "rahvira%20band",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7290805250410188078",
+   "handle": "depthsofwikipedia",
+   "arm": "A2"
+  },
+  {
+   "vid": "7337024851590253867",
+   "handle": "thechaddarnell",
+   "arm": "A2"
+  },
+  {
+   "vid": "7406458204462255365",
+   "handle": "mtrenchofficial",
+   "arm": "A2"
+  },
+  {
+   "vid": "7213035514784451846",
+   "handle": "rhysmcelhinneyrally14",
+   "arm": "A2"
+  },
+  {
+   "vid": "7551767230300704013",
+   "handle": "mewenetwork",
+   "arm": "A2"
+  },
+  {
+   "vid": "7457077463303130399",
+   "handle": "ourgenerationmusic",
+   "arm": "A2"
+  },
+  {
+   "vid": "7480506636944166151",
+   "handle": "ka10san_0717",
+   "arm": "A2"
+  },
+  {
+   "vid": "7293630170026757422",
+   "handle": "the_fish_with_legs",
+   "arm": "A2"
+  },
+  {
+   "vid": "6825796448425151750",
+   "handle": "womanship",
+   "arm": "A2"
+  },
+  {
+   "vid": "7241842310705696006",
+   "handle": "ifr33x",
+   "arm": "A2"
+  },
+  {
+   "vid": "7656640552875691285",
+   "handle": "neracosu",
+   "arm": "A2"
+  },
+  {
+   "vid": "7187954391536864558",
+   "handle": "dasiebert",
+   "arm": "A2"
+  },
+  {
+   "vid": "7630144056282205462",
+   "handle": "ata_bekir",
+   "arm": "A2"
+  },
+  {
+   "vid": "6851007564289690886",
+   "handle": "billnye",
+   "arm": "A2"
+  },
+  {
+   "vid": "7500348151069412663",
+   "handle": "arquivomisterioso25",
+   "arm": "A2"
+  },
+  {
+   "vid": "7517771783521537335",
+   "handle": "the.unpaid.interns",
+   "arm": "A2"
+  },
+  {
+   "vid": "7189598908782284038",
+   "handle": "_apetizer7",
+   "arm": "A2"
+  },
+  {
+   "vid": "7547767252817300758",
+   "handle": "clipzzoro",
+   "arm": "A2"
+  },
+  {
+   "vid": "7508810661623794950",
+   "handle": "elangeldelapena",
+   "arm": "A2"
+  },
+  {
+   "vid": "7476358010835651862",
+   "handle": "archaeodeath",
+   "arm": "A2"
+  },
+  {
+   "vid": "7272378935516663072",
+   "handle": "aliencut_",
+   "arm": "A2"
+  },
+  {
+   "vid": "7098191098719309057",
+   "handle": "sp594_japan",
+   "arm": "A2"
+  },
+  {
+   "vid": "27191084",
+   "handle": "chasegoehring",
+   "arm": "A2"
+  },
+  {
+   "vid": "7439073875649973550",
+   "handle": "theviewabc",
+   "arm": "A2"
+  },
+  {
+   "vid": "7542878743988079894",
+   "handle": "gbnews",
+   "arm": "A2"
+  },
+  {
+   "vid": "7050707473199631618",
+   "handle": "chestbrahofficial",
+   "arm": "A2"
+  },
+  {
+   "vid": "7552609538977910030",
+   "handle": "sophieraiin",
+   "arm": "A2"
+  },
+  {
+   "vid": "6974391118351879430",
+   "handle": "timjsinclair",
+   "arm": "A2"
+  },
+  {
+   "vid": "7443685494140996871",
+   "handle": "remaja.my",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7560783716046572823",
+   "handle": "mewzetok",
+   "arm": "A2"
+  },
+  {
+   "vid": "7365143319535422727",
+   "handle": "ernienator.my",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7266499914014723370",
+   "handle": "sammytquinn",
+   "arm": "A2"
+  },
+  {
+   "vid": "7436431388510784810",
+   "handle": "netflix",
+   "arm": "A2"
+  },
+  {
+   "vid": "7236425220897230123",
+   "handle": "lonelywombat13",
+   "arm": "A2"
+  },
+  {
+   "vid": "7028235997775236354",
+   "handle": "israel_bidur",
+   "arm": "A2"
+  },
+  {
+   "vid": "7528764721688841494",
+   "handle": "ladynadiaessex",
+   "arm": "A2"
+  },
+  {
+   "vid": "7392352396396989702",
+   "handle": "jaguaresdecordobafc",
+   "arm": "A2"
+  },
+  {
+   "vid": "7549239571309972743",
+   "handle": "ishowjd1",
+   "arm": "A2"
+  },
+  {
+   "vid": "7137952073353547014",
+   "handle": "oasisbible_",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7236802458314575150",
+   "handle": "lizeaharper",
+   "arm": "A2"
+  },
+  {
+   "vid": "6918960216583277829",
+   "handle": "fretlessfeline",
+   "arm": "A2"
+  },
+  {
+   "vid": "7077635697057844485",
+   "handle": "youglowgrrl",
+   "arm": "A2"
+  },
+  {
+   "vid": "7359920775983516961",
+   "handle": "yongstongue",
+   "arm": "A2"
+  },
+  {
+   "vid": "6934113825625017606",
+   "handle": "dontstopmeowing",
+   "arm": "A2"
+  },
+  {
+   "vid": "7004960262373625094",
+   "handle": "funnydenny",
+   "arm": "A2"
+  },
+  {
+   "vid": "7661610931381849365",
+   "handle": "anatolianist",
+   "arm": "A2"
+  },
+  {
+   "vid": "7277383641397857579",
+   "handle": "bmacs001",
+   "arm": "A2"
+  },
+  {
+   "vid": "6875523447372483846",
+   "handle": "nolannorthofficial",
+   "arm": "A2"
+  },
+  {
+   "vid": "7407022124877040913",
+   "handle": "matthew._.room",
+   "arm": "A2"
+  },
+  {
+   "vid": "7539342354449255710",
+   "handle": "whatsophfunny02",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7221955498466250030",
+   "handle": "our_awesome_world",
+   "arm": "A2"
+  },
+  {
+   "vid": "7329740317270347013",
+   "handle": "blackesportsteam",
+   "arm": "A2"
+  },
+  {
+   "vid": "7157617251745582338",
+   "handle": "sugitchannel",
+   "arm": "A2"
+  },
+  {
+   "vid": "7076814837426212139",
+   "handle": "anidom",
+   "arm": "A2"
+  },
+  {
+   "vid": "7383813159888391454",
+   "handle": "cbcmusic.org",
+   "arm": "A2"
+  },
+  {
+   "vid": "7322429525562838305",
+   "handle": "elpis.cup",
+   "arm": "A2"
+  },
+  {
+   "vid": "7361816030265543943",
+   "handle": ".wanita.syurga",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7222377670930124078",
+   "handle": "rosie",
+   "arm": "A2"
+  },
+  {
+   "vid": "7276791621474061575",
+   "handle": "azimazizchannel",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7119440491212524805",
+   "handle": "lightofday0",
+   "arm": "A2"
+  },
+  {
+   "vid": "7092796890332302597",
+   "handle": "bbcradio1",
+   "arm": "A2"
+  },
+  {
+   "vid": "7247619325048130862",
+   "handle": "depthsofwikipedia",
+   "arm": "A2"
+  },
+  {
+   "vid": "7383361465803099435",
+   "handle": "thetiktokthrasher",
+   "arm": "A2"
+  },
+  {
+   "vid": "7271558950770838789",
+   "handle": "itzslavik800",
+   "arm": "A2"
+  },
+  {
+   "vid": "7063483214400163078",
+   "handle": "_goldcigo",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7489260241389948191",
+   "handle": "chargers",
+   "arm": "A2"
+  },
+  {
+   "vid": "6942424321348422913",
+   "handle": "tperrrrrrr",
+   "arm": "A2"
+  },
+  {
+   "vid": "7004969659955023110",
+   "handle": "depthsofwikipedia",
+   "arm": "A2"
+  },
+  {
+   "vid": "7221557512334478638",
+   "handle": "magnuschessgm",
+   "arm": "A2"
+  },
+  {
+   "vid": "7483259784746126614",
+   "handle": "wiki_lucy",
+   "arm": "A2"
+  },
+  {
+   "vid": "6812706871112174853",
+   "handle": "isabelnogueramusic",
+   "arm": "A2"
+  },
+  {
+   "vid": "7643087691499818247",
+   "handle": "war_cat14",
+   "arm": "A2"
+  },
+  {
+   "vid": "7657036218043043093",
+   "handle": "neracosu",
+   "arm": "A2"
+  },
+  {
+   "vid": "7572187286452981022",
+   "handle": "printedraps",
+   "arm": "A2"
+  },
+  {
+   "vid": "7517483564032724238",
+   "handle": "random.account8424",
+   "arm": "A2"
+  },
+  {
+   "vid": "7147307156654673178",
+   "handle": "arp_vtuber",
+   "arm": "A2"
+  },
+  {
+   "vid": "7439021042254908718",
+   "handle": "archdigest",
+   "arm": "A2"
+  },
+  {
+   "vid": "7328464177868295429",
+   "handle": "mintrabgt",
+   "arm": "A2"
+  },
+  {
+   "vid": "7486235683615493407",
+   "handle": "harryjsisson",
+   "arm": "A2"
+  },
+  {
+   "vid": "7119605664485248302",
+   "handle": "jbalvin",
+   "arm": "A2"
+  },
+  {
+   "vid": "6932562814531947781",
+   "handle": "gabbiehanna",
+   "arm": "A2"
+  },
+  {
+   "vid": "7604842397880552722",
+   "handle": "rasthedrummer",
+   "arm": "A2"
+  },
+  {
+   "vid": "7275002623873289477",
+   "handle": "weblearning",
+   "arm": "A2"
+  },
+  {
+   "vid": "7223364525649562906",
+   "handle": "elefutbol",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7296556135975275806",
+   "handle": "ihatebriannachickenfry",
+   "arm": "A2"
+  },
+  {
+   "vid": "7295452514583940394",
+   "handle": "azealia.tiktok",
+   "arm": "A2"
+  },
+  {
+   "vid": "7667801414772460814",
+   "handle": "nagorimusic",
+   "arm": "A2"
+  },
+  {
+   "vid": "7503197878614117639",
+   "handle": "era.je",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7570062262317141278",
+   "handle": "brandonbddavis",
+   "arm": "A2"
+  },
+  {
+   "vid": "7478603298916797718",
+   "handle": "archaeodeath",
+   "arm": "A2"
+  },
+  {
+   "vid": "7334406569888714027",
+   "handle": "florida.florian",
+   "arm": "A2"
+  },
+  {
+   "vid": "7631649553808133398",
+   "handle": "basshunter_official",
+   "arm": "A2"
+  },
+  {
+   "vid": "7404792807023562000",
+   "handle": "nervemp3",
+   "arm": "A2"
+  },
+  {
+   "vid": "7606284225171475730",
+   "handle": "kosi_foottalk",
+   "arm": "A2"
+  },
+  {
+   "vid": "7384107556098034977",
+   "handle": "davidlowemusic",
+   "arm": "A2"
+  },
+  {
+   "vid": "7096414714925714690",
+   "handle": "watanabeent",
+   "arm": "A2"
+  },
+  {
+   "vid": "7270480787395333382",
+   "handle": "tebogomotlhokiog",
+   "arm": "A2"
+  },
+  {
+   "vid": "7347796167788350753",
+   "handle": "stupididi0t",
+   "arm": "A2"
+  },
+  {
+   "vid": "7419381985946291461",
+   "handle": "logikthapro",
+   "arm": "A2"
+  },
+  {
+   "vid": "7562223253637352717",
+   "handle": "salemtechsperts",
+   "arm": "A2"
+  },
+  {
+   "vid": "7468413716514606382",
+   "handle": "8_that",
+   "arm": "A2"
+  },
+  {
+   "vid": "7340073928691305734",
+   "handle": "sin.atakrs3",
+   "arm": "A2"
+  },
+  {
+   "vid": "7216186533907401986",
+   "handle": "ruffwoofyco",
+   "arm": "A2"
+  },
+  {
+   "vid": "7186164859233504554",
+   "handle": "moldyfreckle",
+   "arm": "A2"
+  },
+  {
+   "vid": "7296158918869273887",
+   "handle": "ihatebriannachickenfry",
+   "arm": "A2"
+  },
+  {
+   "vid": "7323427949531729154",
+   "handle": "sahel.tanha",
+   "arm": "A2"
+  },
+  {
+   "vid": "7629688716646239508",
+   "handle": "dm._.dado",
+   "arm": "A2"
+  },
+  {
+   "vid": "7189681811180571909",
+   "handle": "culturemma_",
+   "arm": "A2"
+  },
+  {
+   "vid": "7545817132362255633",
+   "handle": "catpajama_official",
+   "arm": "A2"
+  },
+  {
+   "vid": "7036684261474323738",
+   "handle": "wansaffuan89",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7435060973855116562",
+   "handle": "zeez870",
+   "arm": "A2"
+  },
+  {
+   "vid": "7573701435712490759",
+   "handle": "official.ntv",
+   "arm": "A2"
+  },
+  {
+   "vid": "7407653617613786374",
+   "handle": "mariphysics",
+   "arm": "A2"
+  },
+  {
+   "vid": "7489137387277274390",
+   "handle": "joelle",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7335280806002298154",
+   "handle": "thelilgoatofficial",
+   "arm": "A2"
+  },
+  {
+   "vid": "7656956881302261010",
+   "handle": "sboniso602",
+   "arm": "A2"
+  },
+  {
+   "vid": "6945562242259684613",
+   "handle": "webkinzwhore143",
+   "arm": "A2"
+  },
+  {
+   "vid": "7158794188169940229",
+   "handle": "annaploszajski",
+   "arm": "A2"
+  },
+  {
+   "vid": "7076228701175745834",
+   "handle": "thedailybugleofficial",
+   "arm": "A2"
+  },
+  {
+   "vid": "7097696315118849326",
+   "handle": "twoninefredo",
+   "arm": "A2"
+  },
+  {
+   "vid": "7234657430922136858",
+   "handle": "gracevandien_",
+   "arm": "A2"
+  },
+  {
+   "vid": "7642056129962380558",
+   "handle": "shaynalorenxo",
+   "arm": "A2"
+  },
+  {
+   "vid": "7619721806227819798",
+   "handle": "ata_bekir",
+   "arm": "A2"
+  },
+  {
+   "vid": "7541702946296319254",
+   "handle": "jamesenglishpodcast",
+   "arm": "A2"
+  },
+  {
+   "vid": "7641650571228859670",
+   "handle": "basshunter_official",
+   "arm": "A2"
+  },
+  {
+   "vid": "7476892042510011670",
+   "handle": "archaeodeath",
+   "arm": "A2"
+  },
+  {
+   "vid": "7662740615049874708",
+   "handle": "anatolianist",
+   "arm": "A2"
+  },
+  {
+   "vid": "7488860650874096903",
+   "handle": "heathfranklin22",
+   "arm": "A2"
+  },
+  {
+   "vid": "7290656410088607008",
+   "handle": "atishows",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7399616987351092511",
+   "handle": "alldaychubbyboy2",
+   "arm": "A2"
+  },
+  {
+   "vid": "7637169134198983956",
+   "handle": "nlf.founder",
+   "arm": "A2"
+  },
+  {
+   "vid": "7669215552061115668",
+   "handle": "crashout_fangirl",
+   "arm": "A2"
+  },
+  {
+   "vid": "7641653965230296341",
+   "handle": "dm._.dado",
+   "arm": "A2"
+  },
+  {
+   "vid": "7429837588174818581",
+   "handle": "kitkat_juken_",
+   "arm": "A2"
+  },
+  {
+   "vid": "7203726695071894790",
+   "handle": "said..cruz",
+   "arm": "A2"
+  },
+  {
+   "vid": "7419329003208592646",
+   "handle": "goodkidband",
+   "arm": "A2"
+  },
+  {
+   "vid": "7177139713986333995",
+   "handle": "_briea",
+   "arm": "A2"
+  },
+  {
+   "vid": "7314111910838947115",
+   "handle": "frenchmontana",
+   "arm": "A2"
+  },
+  {
+   "vid": "7013325525036862747",
+   "handle": "jollyntheangel",
+   "arm": "A2"
+  },
+  {
+   "vid": "7530043643894222110",
+   "handle": "anthonyjamessmusic",
+   "arm": "A2"
+  },
+  {
+   "vid": "7623551369546304781",
+   "handle": "grimhoundgaming",
+   "arm": "A2"
+  },
+  {
+   "vid": "7408885668820176144",
+   "handle": "matthew._.room",
+   "arm": "A2"
+  },
+  {
+   "vid": "7235308737047645445",
+   "handle": "lilianaforresterstyle",
+   "arm": "A2"
+  },
+  {
+   "vid": "7461146216865320200",
+   "handle": "russ.eats",
+   "arm": "A2"
+  },
+  {
+   "vid": "7616802766370983201",
+   "handle": "qwentytarino",
+   "arm": "A2"
+  },
+  {
+   "vid": "7303686400099093762",
+   "handle": "mediahiburanofficial",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7441306243211332920",
+   "handle": "delfistal",
+   "arm": "A2"
+  },
+  {
+   "vid": "7490289698523434262",
+   "handle": "wiki_lucy",
+   "arm": "A2"
+  },
+  {
+   "vid": "7572609119840898322",
+   "handle": "mediahiburanofficial",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7251279625832205595",
+   "handle": "jessicadeniz_jessitartas",
+   "arm": "A2"
+  },
+  {
+   "vid": "7249498558024469803",
+   "handle": "abrahameducation",
+   "arm": "A2"
+  },
+  {
+   "vid": "6983426285313756421",
+   "handle": "mr_pr3zz",
+   "arm": "A2"
+  },
+  {
+   "vid": "7572240409036983574",
+   "handle": "tyneandwearmetro",
+   "arm": "A2"
+  },
+  {
+   "vid": "7613871350658256142",
+   "handle": "polygon",
+   "arm": "A2"
+  },
+  {
+   "vid": "7183657367467330822",
+   "handle": "confessions_of_ghost_boy",
+   "arm": "A2"
+  },
+  {
+   "vid": "7478702946855734546",
+   "handle": "aida.c.daud",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7539519775106518290",
+   "handle": "ka10san_0717",
+   "arm": "A2"
+  },
+  {
+   "vid": "7384541854848552225",
+   "handle": "themedical_lounge",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7350074258590010625",
+   "handle": "takuhoabe",
+   "arm": "A2"
+  },
+  {
+   "vid": "7620114724017032469",
+   "handle": "shanigame_official",
+   "arm": "A2"
+  },
+  {
+   "vid": "7174126892969184555",
+   "handle": "leonardkuelper",
+   "arm": "A2"
+  },
+  {
+   "vid": "7632314834906025239",
+   "handle": "maxfosh",
+   "arm": "A2"
+  },
+  {
+   "vid": "7606737422671613207",
+   "handle": "josephmccall81",
+   "arm": "A2"
+  },
+  {
+   "vid": "7524777788298087736",
+   "handle": "emperor_dx17",
+   "arm": "A2"
+  },
+  {
+   "vid": "7078053300687490347",
+   "handle": "meghantrainor",
+   "arm": "A2"
+  },
+  {
+   "vid": "7482819872511053062",
+   "handle": "ezomokakadu",
+   "arm": "A2"
+  },
+  {
+   "vid": "7509895150269762838",
+   "handle": "viktor_a_tiktokon",
+   "arm": "A2"
+  },
+  {
+   "vid": "7463176818347003178",
+   "handle": "jack.schlossberg",
+   "arm": "A2"
+  },
+  {
+   "vid": "7625305758321708295",
+   "handle": "korean_summer",
+   "arm": "A2"
+  },
+  {
+   "vid": "6850033973859536133",
+   "handle": "pepsiphilippines",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7434965423663091000",
+   "handle": "goodkidband",
+   "arm": "A2"
+  },
+  {
+   "vid": "7654758575788625182",
+   "handle": "grimhoundgaming",
+   "arm": "A2"
+  },
+  {
+   "vid": "7248763909920836869",
+   "handle": "iheartradioca",
+   "arm": "A2"
+  },
+  {
+   "vid": "7327332482360069408",
+   "handle": "tashaghouri1",
+   "arm": "A2"
+  },
+  {
+   "vid": "7610735663561837844",
+   "handle": "ka10san_0717",
+   "arm": "A2"
+  },
+  {
+   "vid": "7446917752243113258",
+   "handle": "chaseejamess",
+   "arm": "A2"
+  },
+  {
+   "vid": "7468339405078449415",
+   "handle": "omgitsimranajmain",
+   "arm": "A2"
+  },
+  {
+   "vid": "7261391075846196522",
+   "handle": "tomtsmm._",
+   "arm": "A2"
+  },
+  {
+   "vid": "7242736239365885202",
+   "handle": "komikm",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7406511147869818155",
+   "handle": "rosie",
+   "arm": "A2"
+  },
+  {
+   "vid": "7573277007065353495",
+   "handle": "pyryhockey",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7458919003914784008",
+   "handle": "matthew._.room",
+   "arm": "A2"
+  },
+  {
+   "vid": "7007821632538512646",
+   "handle": "bonniemckee",
+   "arm": "A2"
+  },
+  {
+   "vid": "7610136522179874079",
+   "handle": "marisa.simonetti28",
+   "arm": "A2"
+  },
+  {
+   "vid": "7049515418003770630",
+   "handle": "strangehuman",
+   "arm": "A2"
+  },
+  {
+   "vid": "7380995524595387680",
+   "handle": "euro2024",
+   "arm": "A2"
+  },
+  {
+   "vid": "7468614368683379976",
+   "handle": "pi6ri164",
+   "arm": "A2"
+  },
+  {
+   "vid": "7222503453140995355",
+   "handle": "projektravel",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7431488264118340882",
+   "handle": "ka10san_0717",
+   "arm": "A2"
+  },
+  {
+   "vid": "7643016661544586529",
+   "handle": "studiotalksevents",
+   "arm": "A2"
+  },
+  {
+   "vid": "7034096377147739419",
+   "handle": "buletintv3",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7637733611088678158",
+   "handle": "sambucha",
+   "arm": "A2"
+  },
+  {
+   "vid": "7490554045787049271",
+   "handle": "weblearning",
+   "arm": "A2"
+  },
+  {
+   "vid": "7157313243847986438",
+   "handle": "jepperiz",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7364189618444487937",
+   "handle": "cikgu_teha_ahmad",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7273709368103767297",
+   "handle": "sinarplus",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7118943520664227118",
+   "handle": "kyronf26",
+   "arm": "A2"
+  },
+  {
+   "vid": "7571856454223777046",
+   "handle": "pyryhockey",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7346364271070055681",
+   "handle": "takuhoabe",
+   "arm": "A2"
+  },
+  {
+   "vid": "7236803508211649838",
+   "handle": "damienhaas",
+   "arm": "A2"
+  },
+  {
+   "vid": "7233219714787347738",
+   "handle": "clipsofpicstiktok",
+   "arm": "A2"
+  },
+  {
+   "vid": "7055460579800255791",
+   "handle": "toko_fukawa_tokomaru",
+   "arm": "A2"
+  },
+  {
+   "vid": "7591189764439674134",
+   "handle": "colchesterballet",
+   "arm": "A2"
+  },
+  {
+   "vid": "7535687452472741128",
+   "handle": "inteam_official",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7075477333909523758",
+   "handle": "taylorlorenz",
+   "arm": "A2"
+  },
+  {
+   "vid": "7150851070573481259",
+   "handle": "cburkyy",
+   "arm": "A2"
+  },
+  {
+   "vid": "7530833129825635639",
+   "handle": "talkden69",
+   "arm": "A2"
+  },
+  {
+   "vid": "7625754739317181698",
+   "handle": "skysports",
+   "arm": "A2"
+  },
+  {
+   "vid": "7649118576384691470",
+   "handle": "maddies_mundo",
+   "arm": "A2"
+  },
+  {
+   "vid": "7525097213656091926",
+   "handle": "prince.nathan.ent",
+   "arm": "A2"
+  },
+  {
+   "vid": "7166735600589081861",
+   "handle": "bomberosquito",
+   "arm": "A2"
+  },
+  {
+   "vid": "6689702165109411074",
+   "handle": "erikaembang",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7036779131303988527",
+   "handle": "charlidamelio",
+   "arm": "A2"
+  },
+  {
+   "vid": "7081430932615400709",
+   "handle": "gerardoveramx",
+   "arm": "A2"
+  },
+  {
+   "vid": "6776748403150900485",
+   "handle": "ikerunzu",
+   "arm": "A2"
+  },
+  {
+   "vid": "7032343854875479302",
+   "handle": "vonsimonpoetry",
+   "arm": "A2"
+  },
+  {
+   "vid": "7352572324966567174",
+   "handle": "honestreportingcanada",
+   "arm": "A2"
+  },
+  {
+   "vid": "7603147619807874311",
+   "handle": "rasthedrummer",
+   "arm": "A2"
+  },
+  {
+   "vid": "6894854586293669126",
+   "handle": "siswij",
+   "arm": "A2"
+  },
+  {
+   "vid": "7652484186271501575",
+   "handle": "gabrielblanco_",
+   "arm": "A2"
+  },
+  {
+   "vid": "7297593983260314910",
+   "handle": "ihatebriannachickenfry",
+   "arm": "A2"
+  },
+  {
+   "vid": "7342624883265867041",
+   "handle": "ukhiddengems",
+   "arm": "A2"
+  },
+  {
+   "vid": "7380345446197185808",
+   "handle": "k_bou_9",
+   "arm": "A2"
+  },
+  {
+   "vid": "7427796880773418247",
+   "handle": "user40470242740865",
+   "arm": "A2"
+  },
+  {
+   "vid": "7218256983525248298",
+   "handle": "chrissychlapecka",
+   "arm": "A2"
+  },
+  {
+   "vid": "7323725941430340910",
+   "handle": "monjomedia",
+   "arm": "A2"
+  },
+  {
+   "vid": "7179443337726938411",
+   "handle": "fueleddreamsclub",
+   "arm": "A2"
+  },
+  {
+   "vid": "6943299808929074438",
+   "handle": "russellislovely",
+   "arm": "A2"
+  },
+  {
+   "vid": "7511701803126344982",
+   "handle": "insufferablerunt",
+   "arm": "A2"
+  },
+  {
+   "vid": "7260989966698810651",
+   "handle": "poksupyo",
+   "arm": "A2"
+  },
+  {
+   "vid": "7190499674393038126",
+   "handle": "ravensymone",
+   "arm": "A2"
+  },
+  {
+   "vid": "7494331342272908586",
+   "handle": "axshna",
+   "arm": "A2"
+  },
+  {
+   "vid": "7324740650820209950",
+   "handle": "lostodysseylive",
+   "arm": "A2"
+  },
+  {
+   "vid": "6872243621848960262",
+   "handle": "luvfitijr",
+   "arm": "A2"
+  },
+  {
+   "vid": "7016035993274928389",
+   "handle": "addisonre",
+   "arm": "A2"
+  },
+  {
+   "vid": "7225320858993118491",
+   "handle": "deardreamer_",
+   "arm": "A2"
+  },
+  {
+   "vid": "7529423474025155847",
+   "handle": "ctaruvinga_12",
+   "arm": "A2"
+  },
+  {
+   "vid": "7643379411235917087",
+   "handle": "coptichistorian1",
+   "arm": "A2"
+  },
+  {
+   "vid": "7332200105719729451",
+   "handle": "entrapranure",
+   "arm": "A2"
+  },
+  {
+   "vid": "7498567200211586310",
+   "handle": "telefe",
+   "arm": "A2"
+  },
+  {
+   "vid": "7481301504549244215",
+   "handle": "bahamamara242",
+   "arm": "A2"
+  },
+  {
+   "vid": "7437310218910027054",
+   "handle": "8_that",
+   "arm": "A2"
+  },
+  {
+   "vid": "7527993376495684870",
+   "handle": "pesonakingreal",
+   "arm": "A2"
+  },
+  {
+   "vid": "7487217052722220296",
+   "handle": "catpajama_official",
+   "arm": "A2"
+  },
+  {
+   "vid": "7406965831197838625",
+   "handle": "ewelina_grzesinska",
+   "arm": "A2"
+  },
+  {
+   "vid": "7081369214744857899",
+   "handle": "thedailybugleofficial",
+   "arm": "A2"
+  },
+  {
+   "vid": "7379175278200868128",
+   "handle": "calinpanfili",
+   "arm": "A-new"
+  },
+  {
+   "vid": "6880593898108931333",
+   "handle": "derekhough",
+   "arm": "A2"
+  },
+  {
+   "vid": "7646477941769112863",
+   "handle": "carochng",
+   "arm": "A2"
+  },
+  {
+   "vid": "7455466564331097376",
+   "handle": "vesselofwar",
+   "arm": "A2"
+  },
+  {
+   "vid": "7618314214599331093",
+   "handle": "dm._.dado",
+   "arm": "A2"
+  },
+  {
+   "vid": "7522417251232894216",
+   "handle": "ka10san_0717",
+   "arm": "A2"
+  },
+  {
+   "vid": "7189606571091987718",
+   "handle": "astralis",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7406798511083228459",
+   "handle": "rosie",
+   "arm": "A2"
+  },
+  {
+   "vid": "7409280096680283399",
+   "handle": "kitkat_juken_",
+   "arm": "A2"
+  },
+  {
+   "vid": "7126469579735354629",
+   "handle": "katherinereilly1",
+   "arm": "A2"
+  },
+  {
+   "vid": "7000292813908757761",
+   "handle": "alibulat_22.02.75",
+   "arm": "A2"
+  },
+  {
+   "vid": "6817941796681764102",
+   "handle": "womanship",
+   "arm": "A2"
+  },
+  {
+   "vid": "7060606982264442159",
+   "handle": "alex_falcone",
+   "arm": "A2"
+  },
+  {
+   "vid": "7346752092196834603",
+   "handle": "coffeetalkwithloulou",
+   "arm": "A2"
+  },
+  {
+   "vid": "7520351618072579359",
+   "handle": "memoriespage8",
+   "arm": "A2"
+  },
+  {
+   "vid": "7326160388775513365",
+   "handle": "fasha_ariana_official",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7433854475917331743",
+   "handle": "vonsimonpoetry",
+   "arm": "A2"
+  },
+  {
+   "vid": "6939463644203830529",
+   "handle": "tperrrrrrr",
+   "arm": "A2"
+  },
+  {
+   "vid": "7548586670916963597",
+   "handle": "4clipper4",
+   "arm": "A2"
+  },
+  {
+   "vid": "7538450219306929414",
+   "handle": "sautitvke",
+   "arm": "A2"
+  },
+  {
+   "vid": "7195013187702557998",
+   "handle": "sodareviewdude",
+   "arm": "A2"
+  },
+  {
+   "vid": "7491757970888477995",
+   "handle": "uninterrupted",
+   "arm": "A2"
+  },
+  {
+   "vid": "7636046547469290759",
+   "handle": "mrcnea",
+   "arm": "A2"
+  },
+  {
+   "vid": "7336228521901100294",
+   "handle": "monozabaletaoficial",
+   "arm": "A2"
+  },
+  {
+   "vid": "6997147307363814661",
+   "handle": "noahxboa",
+   "arm": "A2"
+  },
+  {
+   "vid": "7617098849072598303",
+   "handle": "ai.cinema021",
+   "arm": "A2"
+  },
+  {
+   "vid": "7641960463017790727",
+   "handle": "anatolianist",
+   "arm": "A2"
+  },
+  {
+   "vid": "7212691587749448986",
+   "handle": "arp_vtuber",
+   "arm": "A2"
+  },
+  {
+   "vid": "7627471472130379029",
+   "handle": "grey_galxy.international",
+   "arm": "A2"
+  },
+  {
+   "vid": "7133334403316600110",
+   "handle": "grant_wisler",
+   "arm": "A2"
+  },
+  {
+   "vid": "6835653396255526150",
+   "handle": "chunkysdead",
+   "arm": "A2"
+  },
+  {
+   "vid": "6868275452562197762",
+   "handle": "tperrrrrrr",
+   "arm": "A2"
+  },
+  {
+   "vid": "7326127113571011872",
+   "handle": "iinaroosa",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7670996737976208670",
+   "handle": "msrebeccablack",
+   "arm": "A2"
+  },
+  {
+   "vid": "7615318721757760775",
+   "handle": "animeramedia",
+   "arm": "A2"
+  },
+  {
+   "vid": "7643075300267412758",
+   "handle": "ata_bekir",
+   "arm": "A2"
+  },
+  {
+   "vid": "6914979033818172677",
+   "handle": "msk_prime",
+   "arm": "A2"
+  },
+  {
+   "vid": "7645185570326531358",
+   "handle": "xoxo_santi",
+   "arm": "A2"
+  },
+  {
+   "vid": "7575480405533429014",
+   "handle": "thatonedingus",
+   "arm": "A2"
+  },
+  {
+   "vid": "7473469703139233031",
+   "handle": "kyunmi02",
+   "arm": "A2"
+  },
+  {
+   "vid": "7602659262044704022",
+   "handle": "ata_bekir",
+   "arm": "A2"
+  },
+  {
+   "vid": "7535132125033499934",
+   "handle": "grimhoundgaming",
+   "arm": "A2"
+  },
+  {
+   "vid": "6768969772278320390",
+   "handle": "joe.bartolozzi",
+   "arm": "A2"
+  },
+  {
+   "vid": "6992256545157352709",
+   "handle": "bonniemckee",
+   "arm": "A2"
+  },
+  {
+   "vid": "7551417016633117960",
+   "handle": "shanigame_official",
+   "arm": "A2"
+  },
+  {
+   "vid": "7123019100938423557",
+   "handle": "benleavitt",
+   "arm": "A2"
+  },
+  {
+   "vid": "7526176972687428895",
+   "handle": "tayloracorn1",
+   "arm": "A2"
+  },
+  {
+   "vid": "7438542844786167047",
+   "handle": "djmsupporters",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7354253685070843137",
+   "handle": "catpajama_official",
+   "arm": "A2"
+  },
+  {
+   "vid": "7272741989718789419",
+   "handle": "off_jawaggon",
+   "arm": "A2"
+  },
+  {
+   "vid": "6661400584362396934",
+   "handle": "womanship",
+   "arm": "A2"
+  },
+  {
+   "vid": "7606611141778787592",
+   "handle": "rasthedrummer",
+   "arm": "A2"
+  },
+  {
+   "vid": "7510326442257894678",
+   "handle": "crisorube",
+   "arm": "A2"
+  },
+  {
+   "vid": "7229420520591101227",
+   "handle": "ajayrochester",
+   "arm": "A2"
+  },
+  {
+   "vid": "7397201462398405895",
+   "handle": "pary_korean",
+   "arm": "A2"
+  },
+  {
+   "vid": "7212324676926835973",
+   "handle": "natashatosini",
+   "arm": "A2"
+  },
+  {
+   "vid": "7185239799916203306",
+   "handle": "cornbreadasserole",
+   "arm": "A2"
+  },
+  {
+   "vid": "7059448413213035822",
+   "handle": "alex_falcone",
+   "arm": "A2"
+  },
+  {
+   "vid": "7252666178391330075",
+   "handle": "tanzz143",
+   "arm": "A2"
+  },
+  {
+   "vid": "7317751417639406881",
+   "handle": "karpatofficial",
+   "arm": "A-new"
+  },
+  {
+   "vid": "6841356462120324358",
+   "handle": "chunkysdead",
+   "arm": "A2"
+  },
+  {
+   "vid": "7150207643074841862",
+   "handle": "khanyisa_jaceni",
+   "arm": "A2"
+  },
+  {
+   "vid": "7297010283418078496",
+   "handle": "armen.patriot",
+   "arm": "A2"
+  },
+  {
+   "vid": "7280771099019775237",
+   "handle": "prodannz",
+   "arm": "A2"
+  },
+  {
+   "vid": "7524293048067542294",
+   "handle": "yleafterschool",
+   "arm": "A-new"
+  },
+  {
+   "vid": "6809916760217767174",
+   "handle": "mina656875886",
+   "arm": "A2"
+  },
+  {
+   "vid": "7361610957388254507",
+   "handle": "white_woman_whisperer",
+   "arm": "A2"
+  },
+  {
+   "vid": "6895149978650463494",
+   "handle": "michaelgoi",
+   "arm": "A2"
+  },
+  {
+   "vid": "7590206741997047095",
+   "handle": "dailycontentclip",
+   "arm": "A2"
+  },
+  {
+   "vid": "7049610791435144454",
+   "handle": "katherinereilly1",
+   "arm": "A2"
+  },
+  {
+   "vid": "7410302609526902048",
+   "handle": "umilesgroup",
+   "arm": "A2"
+  },
+  {
+   "vid": "7233452151463333146",
+   "handle": "piri.v2",
+   "arm": "A2"
+  },
+  {
+   "vid": "7607857722603719957",
+   "handle": "dm._.dado",
+   "arm": "A2"
+  },
+  {
+   "vid": "7012337636614343942",
+   "handle": "abdallahloukil",
+   "arm": "A2"
+  },
+  {
+   "vid": "7509522628290350358",
+   "handle": "viktor_a_tiktokon",
+   "arm": "A2"
+  },
+  {
+   "vid": "7035091441009331457",
+   "handle": "mystickitoband",
+   "arm": "A2"
+  },
+  {
+   "vid": "7635762702362758422",
+   "handle": "terrymlppfudorderpymalek",
+   "arm": "A2"
+  },
+  {
+   "vid": "7352853795547893038",
+   "handle": "doctoktopus",
+   "arm": "A2"
+  },
+  {
+   "vid": "7426292375275834642",
+   "handle": "itsjoakimgomez",
+   "arm": "A2"
+  },
+  {
+   "vid": "7519745909555612935",
+   "handle": "abcnewsaus",
+   "arm": "A2"
+  },
+  {
+   "vid": "7468630720538266885",
+   "handle": "financially_inc",
+   "arm": "A2"
+  },
+  {
+   "vid": "7492085911631531286",
+   "handle": "hugo.rikkila",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7664761407145069854",
+   "handle": "mrwilliamsprek",
+   "arm": "A2"
+  },
+  {
+   "vid": "7481666863919828246",
+   "handle": "fionnmcl29",
+   "arm": "A2"
+  },
+  {
+   "vid": "7405749520581053701",
+   "handle": "mtrenchofficial",
+   "arm": "A2"
+  },
+  {
+   "vid": "7188519659837132059",
+   "handle": "rimyms",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7603450911876238600",
+   "handle": "rasthedrummer",
+   "arm": "A2"
+  },
+  {
+   "vid": "7388890472925662494",
+   "handle": "maklelan",
+   "arm": "A2"
+  },
+  {
+   "vid": "7598983993266048286",
+   "handle": "grimhoundgaming",
+   "arm": "A2"
+  },
+  {
+   "vid": "7488501444727852319",
+   "handle": "popofcolor",
+   "arm": "A2"
+  },
+  {
+   "vid": "7508432962875084078",
+   "handle": "mjolnirpants",
+   "arm": "A2"
+  },
+  {
+   "vid": "7030910186017672453",
+   "handle": "rarebeauty",
+   "arm": "A2"
+  },
+  {
+   "vid": "7613498644213402910",
+   "handle": "great_circassian",
+   "arm": "A2"
+  },
+  {
+   "vid": "7306574873957109034",
+   "handle": "aljazeeraenglish",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7465847339492576544",
+   "handle": "themazzaroth",
+   "arm": "A2"
+  },
+  {
+   "vid": "7018788397133188354",
+   "handle": "buletintv3",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7412271402687958304",
+   "handle": "dasnuki",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7644673168849898765",
+   "handle": "babybehruz2",
+   "arm": "A2"
+  },
+  {
+   "vid": "7206080230451055878",
+   "handle": "ishwara_delariva",
+   "arm": "A2"
+  },
+  {
+   "vid": "7116683100368768298",
+   "handle": "childprogeny",
+   "arm": "A2"
+  },
+  {
+   "vid": "7339184334852623623",
+   "handle": "userz8m6wm4mnm",
+   "arm": "A2"
+  },
+  {
+   "vid": "7119597782301773062",
+   "handle": "truenolaboca",
+   "arm": "A2"
+  },
+  {
+   "vid": "7026385668318268677",
+   "handle": "_goldcigo",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7629333404001062166",
+   "handle": "goodmorningbritain",
+   "arm": "A2"
+  },
+  {
+   "vid": "7512961958287609118",
+   "handle": "vanmontanamusic",
+   "arm": "A2"
+  },
+  {
+   "vid": "7503573106187832618",
+   "handle": "michael_foote_",
+   "arm": "A2"
+  },
+  {
+   "vid": "7441441750813527304",
+   "handle": "racingdotcom",
+   "arm": "A2"
+  },
+  {
+   "vid": "7419366847931354398",
+   "handle": "etymologynerd",
+   "arm": "A2"
+  },
+  {
+   "vid": "7536786249844051230",
+   "handle": "angelixluz",
+   "arm": "A2"
+  },
+  {
+   "vid": "6820553863209159942",
+   "handle": "womanship",
+   "arm": "A2"
+  },
+  {
+   "vid": "7411287667167497477",
+   "handle": "mtrenchofficial",
+   "arm": "A2"
+  },
+  {
+   "vid": "7654667369670839582",
+   "handle": "grimhoundgaming",
+   "arm": "A2"
+  },
+  {
+   "vid": "7434173268388597047",
+   "handle": "mccraft.ainebyoona",
+   "arm": "A2"
+  },
+  {
+   "vid": "7493479774690626838",
+   "handle": "wiki_lucy",
+   "arm": "A2"
+  },
+  {
+   "vid": "7197427851803626794",
+   "handle": "lord_salvaton",
+   "arm": "A2"
+  },
+  {
+   "vid": "7367749998156516650",
+   "handle": "gabrielleamarando",
+   "arm": "A2"
+  },
+  {
+   "vid": "7191601159038160133",
+   "handle": "tommacdonaldhog4ever",
+   "arm": "A2"
+  },
+  {
+   "vid": "7195429982716398891",
+   "handle": "tayloracorn1",
+   "arm": "A2"
+  },
+  {
+   "vid": "7536011928292822303",
+   "handle": "pigsandplans",
+   "arm": "A2"
+  },
+  {
+   "vid": "7595636217417338143",
+   "handle": "designertom",
+   "arm": "A2"
+  },
+  {
+   "vid": "7034559443136318767",
+   "handle": "willygwilks",
+   "arm": "A2"
+  },
+  {
+   "vid": "7304631551810112800",
+   "handle": "gekookteaardappell",
+   "arm": "A2"
+  },
+  {
+   "vid": "7520038998996208902",
+   "handle": "elvigilanteweb",
+   "arm": "A2"
+  },
+  {
+   "vid": "7141368346146196782",
+   "handle": "otakoyakisoba",
+   "arm": "A2"
+  },
+  {
+   "vid": "7302932913660710186",
+   "handle": "sallycperez",
+   "arm": "A2"
+  },
+  {
+   "vid": "6920312405440384261",
+   "handle": "wetcootershot",
+   "arm": "A2"
+  },
+  {
+   "vid": "7251284996944710917",
+   "handle": "yekarosales",
+   "arm": "A2"
+  },
+  {
+   "vid": "7628836135682215186",
+   "handle": "imjeremyg",
+   "arm": "A2"
+  },
+  {
+   "vid": "7133644411631848750",
+   "handle": "sarahmariamobley",
+   "arm": "A2"
+  },
+  {
+   "vid": "6992630491555826950",
+   "handle": "danpovenmire",
+   "arm": "A2"
+  },
+  {
+   "vid": "6992458197684604165",
+   "handle": "rence",
+   "arm": "A2"
+  },
+  {
+   "vid": "7627186566544346382",
+   "handle": "nbcnewyork",
+   "arm": "A2"
+  },
+  {
+   "vid": "7489822733296078135",
+   "handle": "milydelulu",
+   "arm": "A2"
+  },
+  {
+   "vid": "7193091249279077675",
+   "handle": "motherboardvice",
+   "arm": "A2"
+  },
+  {
+   "vid": "7450063637034634504",
+   "handle": "htv_daihanoi",
+   "arm": "A2"
+  },
+  {
+   "vid": "7633485167176240415",
+   "handle": "theneedletok",
+   "arm": "A2"
+  },
+  {
+   "vid": "7546416661725859077",
+   "handle": "zoro.editis2",
+   "arm": "A2"
+  },
+  {
+   "vid": "7534848690809310495",
+   "handle": "ibesingingsometim",
+   "arm": "A2"
+  },
+  {
+   "vid": "7170403097301257518",
+   "handle": "ghosting.jpeg",
+   "arm": "A2"
+  },
+  {
+   "vid": "7474954772072647944",
+   "handle": "kyunmi02",
+   "arm": "A2"
+  },
+  {
+   "vid": "7608366870659337494",
+   "handle": "zaralarsson",
+   "arm": "A2"
+  },
+  {
+   "vid": "7290558863458225413",
+   "handle": "hamoaronamichael",
+   "arm": "A2"
+  },
+  {
+   "vid": "6954818210763918598",
+   "handle": "maxtcoan",
+   "arm": "A2"
+  },
+  {
+   "vid": "7502064132623961350",
+   "handle": "wikipedia",
+   "arm": "A2"
+  },
+  {
+   "vid": "7231923287201156379",
+   "handle": "jere.ronkko",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7303190138190875950",
+   "handle": "tonesofgold",
+   "arm": "A2"
+  },
+  {
+   "vid": "7112615043493203246",
+   "handle": "jason.nms",
+   "arm": "A2"
+  },
+  {
+   "vid": "7013042927278591234",
+   "handle": "thetrueadventures",
+   "arm": "A2"
+  },
+  {
+   "vid": "7177805161581055278",
+   "handle": "hanszimmer",
+   "arm": "A2"
+  },
+  {
+   "vid": "7359134020980002081",
+   "handle": "bbcasiannetwork",
+   "arm": "A2"
+  },
+  {
+   "vid": "7579803609630510349",
+   "handle": "titanicfan97",
+   "arm": "A2"
+  },
+  {
+   "vid": "7147339001433754886",
+   "handle": "poksupyo",
+   "arm": "A2"
+  },
+  {
+   "vid": "7613263867535215888",
+   "handle": "reaccionencadenatv",
+   "arm": "A2"
+  },
+  {
+   "vid": "6921103787268541701",
+   "handle": "chrissychlapecka",
+   "arm": "A2"
+  },
+  {
+   "vid": "7246881669439835438",
+   "handle": "californiastatelibrary",
+   "arm": "A2"
+  },
+  {
+   "vid": "7285809283025964318",
+   "handle": "cbssportsgolazo",
+   "arm": "A2"
+  },
+  {
+   "vid": "7231566702343998762",
+   "handle": "entrapranure",
+   "arm": "A2"
+  },
+  {
+   "vid": "7513159606722432262",
+   "handle": "fricana_boy",
+   "arm": "A2"
+  },
+  {
+   "vid": "7056187331266563333",
+   "handle": "20vc_tok",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7119869118450240774",
+   "handle": "c5n",
+   "arm": "A2"
+  },
+  {
+   "vid": "7105873120921226542",
+   "handle": "bmacs001",
+   "arm": "A2"
+  },
+  {
+   "vid": "7533804728816389390",
+   "handle": "_ashbyflorence_",
+   "arm": "A2"
+  },
+  {
+   "vid": "7547366143506337054",
+   "handle": "tdokey",
+   "arm": "A2"
+  },
+  {
+   "vid": "7266230300030536992",
+   "handle": "emilyjeffri",
+   "arm": "A2"
+  },
+  {
+   "vid": "7508745736952007943",
+   "handle": "lucyhanzel_",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7009622303369596161",
+   "handle": "lexxedric",
+   "arm": "A2"
+  },
+  {
+   "vid": "7134864852119457067",
+   "handle": "planbriuncut",
+   "arm": "A2"
+  },
+  {
+   "vid": "7384771039567416584",
+   "handle": "syahirnordin",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7009951250301160706",
+   "handle": "lexxedric",
+   "arm": "A2"
+  },
+  {
+   "vid": "7130911870654991617",
+   "handle": "smile._.0921",
+   "arm": "A2"
+  },
+  {
+   "vid": "7119487537294380289",
+   "handle": "sport360arabiya",
+   "arm": "A2"
+  },
+  {
+   "vid": "7229442785680674091",
+   "handle": "michael_s_black",
+   "arm": "A2"
+  },
+  {
+   "vid": "7122130392777248042",
+   "handle": "vonsimonpoetry",
+   "arm": "A2"
+  },
+  {
+   "vid": "7175715839507713285",
+   "handle": "tikenders",
+   "arm": "A2"
+  },
+  {
+   "vid": "7393820795480395038",
+   "handle": "cupquakely",
+   "arm": "A2"
+  },
+  {
+   "vid": "7503949550504119570",
+   "handle": "sushantpradhanpodcast",
+   "arm": "A2"
+  },
+  {
+   "vid": "7606691902246767894",
+   "handle": "bakaflockaflame",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7237151800221044011",
+   "handle": "bananapantsamy",
+   "arm": "A2"
+  },
+  {
+   "vid": "7251218487123758344",
+   "handle": "c4leb400",
+   "arm": "A2"
+  },
+  {
+   "vid": "7077867249138208006",
+   "handle": "helena_paparizou",
+   "arm": "A2"
+  },
+  {
+   "vid": "7497992630693924114",
+   "handle": "somali.air.force",
+   "arm": "A2"
+  },
+  {
+   "vid": "7607662940111555857",
+   "handle": "earthling_official",
+   "arm": "A2"
+  },
+  {
+   "vid": "7637973848767450389",
+   "handle": "nona.my",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7442704104935230776",
+   "handle": "wikipedia",
+   "arm": "A2"
+  },
+  {
+   "vid": "7468010314596945194",
+   "handle": "jamesjohnsonpollster",
+   "arm": "A2"
+  },
+  {
+   "vid": "7504234165198474518",
+   "handle": "noorajaspendaaja",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7222078260459375914",
+   "handle": "mauricebishopchess",
+   "arm": "A2"
+  },
+  {
+   "vid": "7603924434222681364",
+   "handle": "dm._.dado",
+   "arm": "A2"
+  },
+  {
+   "vid": "7571112168255425799",
+   "handle": "wikipedia",
+   "arm": "A2"
+  },
+  {
+   "vid": "6762308272121728262",
+   "handle": "mason.conner",
+   "arm": "A2"
+  },
+  {
+   "vid": "7408648141375049006",
+   "handle": "isabelnogueramusic",
+   "arm": "A2"
+  },
+  {
+   "vid": "7582475345710845239",
+   "handle": "depthsofwikipedia",
+   "arm": "A2"
+  },
+  {
+   "vid": "7470503073669041426",
+   "handle": "kyunmi02",
+   "arm": "A2"
+  },
+  {
+   "vid": "7491451900504624415",
+   "handle": "jakewarden",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7471725656519298310",
+   "handle": "chesskingdom_",
+   "arm": "A2"
+  },
+  {
+   "vid": "7400453929223343391",
+   "handle": "loganlisle",
+   "arm": "A2"
+  },
+  {
+   "vid": "7310104622448790790",
+   "handle": "alejobarrera1",
+   "arm": "A2"
+  },
+  {
+   "vid": "7049393982173973807",
+   "handle": "bonniemckee",
+   "arm": "A2"
+  },
+  {
+   "vid": "6952593075571051782",
+   "handle": "kimrhodes4real",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7346592949666385184",
+   "handle": "getlostwebsite",
+   "arm": "A2"
+  },
+  {
+   "vid": "7211345112553606443",
+   "handle": "chrissychlapecka",
+   "arm": "A2"
+  },
+  {
+   "vid": "7385038083428797702",
+   "handle": "fabridesabatto",
+   "arm": "A2"
+  },
+  {
+   "vid": "7596371989879622935",
+   "handle": "sleepygirl945",
+   "arm": "A2"
+  },
+  {
+   "vid": "7323538019263302945",
+   "handle": "_frvncoise",
+   "arm": "A2"
+  },
+  {
+   "vid": "7137962667368582427",
+   "handle": "jefwid1f",
+   "arm": "A2"
+  },
+  {
+   "vid": "7371070638213156097",
+   "handle": "ruby_eclair",
+   "arm": "A2"
+  },
+  {
+   "vid": "7532850875820297490",
+   "handle": "syahirnordin",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7180358179656568069",
+   "handle": "piri.v2",
+   "arm": "A2"
+  },
+  {
+   "vid": "7506864061913648406",
+   "handle": "ilkkapohjalainen",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7227671947134504238",
+   "handle": "chrissychlapecka",
+   "arm": "A2"
+  },
+  {
+   "vid": "7383802984913800490",
+   "handle": "michaelsblack16",
+   "arm": "A2"
+  },
+  {
+   "vid": "7489600125581544726",
+   "handle": "minireader",
+   "arm": "A2"
+  },
+  {
+   "vid": "6875666358294547713",
+   "handle": "tyla_",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7374963735821126954",
+   "handle": "isabelnogueramusic",
+   "arm": "A2"
+  },
+  {
+   "vid": "7426176839749504274",
+   "handle": "kitkat_juken_",
+   "arm": "A2"
+  },
+  {
+   "vid": "7431195666187160837",
+   "handle": "heynertorrez1",
+   "arm": "A2"
+  },
+  {
+   "vid": "7140730200312106246",
+   "handle": "pianoquetoca",
+   "arm": "A2"
+  },
+  {
+   "vid": "7239692065196576001",
+   "handle": "buletintv3",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7666917017903041812",
+   "handle": "dedysimhi",
+   "arm": "A2"
+  },
+  {
+   "vid": "7521790204659715334",
+   "handle": "redunotv",
+   "arm": "A2"
+  },
+  {
+   "vid": "7076163241314946347",
+   "handle": "ryancharlesmusic",
+   "arm": "A2"
+  },
+  {
+   "vid": "7393182868098338091",
+   "handle": "dailymail",
+   "arm": "A2"
+  },
+  {
+   "vid": "7644642155482451222",
+   "handle": "ata_bekir",
+   "arm": "A2"
+  },
+  {
+   "vid": "7576748620666522910",
+   "handle": "nicolasvans",
+   "arm": "A2"
+  },
+  {
+   "vid": "7507348742190812458",
+   "handle": "sharpefamilysingers",
+   "arm": "A2"
+  },
+  {
+   "vid": "7325202490616548651",
+   "handle": "neildegrassetyson",
+   "arm": "A2"
+  },
+  {
+   "vid": "7392363038503931168",
+   "handle": "jessicadeniz_jessitartas",
+   "arm": "A2"
+  },
+  {
+   "vid": "7592808896088067346",
+   "handle": "johnwar2704",
+   "arm": "A2"
+  },
+  {
+   "vid": "7367893075802492206",
+   "handle": "xanatos1138",
+   "arm": "A2"
+  },
+  {
+   "vid": "7540272114671062280",
+   "handle": "catpajama_official",
+   "arm": "A2"
+  },
+  {
+   "vid": "7335149702461148449",
+   "handle": "ewelina_grzesinska",
+   "arm": "A2"
+  },
+  {
+   "vid": "7423338260761414919",
+   "handle": "ka10san_0717",
+   "arm": "A2"
+  },
+  {
+   "vid": "7254470440620395802",
+   "handle": "lottajakevin",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7345085727480220929",
+   "handle": "gaolcreative",
+   "arm": "A2"
+  },
+  {
+   "vid": "7534849245082373406",
+   "handle": "ibesingingsometim",
+   "arm": "A2"
+  },
+  {
+   "vid": "7476369454117440776",
+   "handle": "pyuacco.official",
+   "arm": "A2"
+  },
+  {
+   "vid": "7487600083257642271",
+   "handle": "tayloracorn1",
+   "arm": "A2"
+  },
+  {
+   "vid": "7020540028744895749",
+   "handle": "kellycaicedo_17",
+   "arm": "A2"
+  },
+  {
+   "vid": "7298408325266378016",
+   "handle": "armen.patriot",
+   "arm": "A2"
+  },
+  {
+   "vid": "7645756257311149343",
+   "handle": "zaydupree",
+   "arm": "A2"
+  },
+  {
+   "vid": "7270220312233495841",
+   "handle": "itvnews",
+   "arm": "A2"
+  },
+  {
+   "vid": "7615348999935102221",
+   "handle": "haithooomi",
+   "arm": "A2"
+  },
+  {
+   "vid": "6841634252140858630",
+   "handle": "chunkysdead",
+   "arm": "A2"
+  },
+  {
+   "vid": "7326317766212914478",
+   "handle": "entrapranure",
+   "arm": "A2"
+  },
+  {
+   "vid": "7127981800198130950",
+   "handle": "el.chapati",
+   "arm": "A2"
+  },
+  {
+   "vid": "7428854531099839749",
+   "handle": "mcdonaldsjapan",
+   "arm": "A2"
+  },
+  {
+   "vid": "7571665370617007391",
+   "handle": "bdub.clip",
+   "arm": "A2"
+  },
+  {
+   "vid": "6822761946790579461",
+   "handle": "womanship",
+   "arm": "A2"
+  },
+  {
+   "vid": "7604431661949914390",
+   "handle": "ata_bekir",
+   "arm": "A2"
+  },
+  {
+   "vid": "7326271994482150689",
+   "handle": "ahkjfan",
+   "arm": "A2"
+  },
+  {
+   "vid": "6819424284864187654",
+   "handle": "womanship",
+   "arm": "A2"
+  },
+  {
+   "vid": "6846638180805004546",
+   "handle": "takeda_komochikonbu",
+   "arm": "A2"
+  },
+  {
+   "vid": "7539218771899075858",
+   "handle": "themuftikifayat",
+   "arm": "A2"
+  },
+  {
+   "vid": "7289559055469743391",
+   "handle": "etymologynerd",
+   "arm": "A2"
+  },
+  {
+   "vid": "7575768461620563213",
+   "handle": "dailycontentclip",
+   "arm": "A2"
+  },
+  {
+   "vid": "7406748667052477701",
+   "handle": "mtrenchofficial",
+   "arm": "A2"
+  },
+  {
+   "vid": "7441175404859215136",
+   "handle": "ferrousmu",
+   "arm": "A2"
+  },
+  {
+   "vid": "7493899265421380886",
+   "handle": "horrorartguy",
+   "arm": "A2"
+  },
+  {
+   "vid": "7602604807240600850",
+   "handle": "mv_noticias26",
+   "arm": "A2"
+  },
+  {
+   "vid": "7588262645514456342",
+   "handle": "zaralarsson",
+   "arm": "A2"
+  },
+  {
+   "vid": "7260541374045506842",
+   "handle": "linettisaep",
+   "arm": "A2"
+  },
+  {
+   "vid": "7464618888290995488",
+   "handle": "themazzaroth",
+   "arm": "A2"
+  },
+  {
+   "vid": "7488001479412927774",
+   "handle": "tayloracorn1",
+   "arm": "A2"
+  },
+  {
+   "vid": "7307719025293937952",
+   "handle": "fortunalygazen",
+   "arm": "A2"
+  },
+  {
+   "vid": "7452996488696827169",
+   "handle": "seznamzpravy_oficialni",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7536692818434100511",
+   "handle": "angelixluz",
+   "arm": "A2"
+  },
+  {
+   "vid": "78647522683981824",
+   "handle": "daniellecohn",
+   "arm": "A2"
+  },
+  {
+   "vid": "7426482929796222250",
+   "handle": "mjolnirpants",
+   "arm": "A2"
+  },
+  {
+   "vid": "7106586007172336942",
+   "handle": "sistercindyforreal",
+   "arm": "A2"
+  },
+  {
+   "vid": "7174764289285213467",
+   "handle": "syahirnordin",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7469408688625716498",
+   "handle": "ceosekmung",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7415744574129294635",
+   "handle": "rosie",
+   "arm": "A2"
+  },
+  {
+   "vid": "7146968503428418821",
+   "handle": "poksupyo",
+   "arm": "A2"
+  },
+  {
+   "vid": "7484689045738622230",
+   "handle": "mirellavirallinen",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7196750999795649797",
+   "handle": "natashatosini",
+   "arm": "A2"
+  },
+  {
+   "vid": "7306695842772028677",
+   "handle": "bpkpenaburjakarta",
+   "arm": "A2"
+  },
+  {
+   "vid": "7605647634145021214",
+   "handle": "grimhoundgaming",
+   "arm": "A2"
+  },
+  {
+   "vid": "7591228850621762827",
+   "handle": "radionacionalco",
+   "arm": "A2"
+  },
+  {
+   "vid": "7258194970736217346",
+   "handle": "vanakkammalaysia",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7142972741954719019",
+   "handle": "therealjencohen",
+   "arm": "A2"
+  },
+  {
+   "vid": "7624588425252982036",
+   "handle": "grey_galxy.international",
+   "arm": "A2"
+  },
+  {
+   "vid": "7280640098494860575",
+   "handle": "emmalynnwhitemusic",
+   "arm": "A2"
+  },
+  {
+   "vid": "7666435890209770773",
+   "handle": "swfx_real_fox",
+   "arm": "A2"
+  },
+  {
+   "vid": "7643425773633817877",
+   "handle": "dm._.dado",
+   "arm": "A2"
+  },
+  {
+   "vid": "7296820290863058208",
+   "handle": "iamwillbest",
+   "arm": "A2"
+  },
+  {
+   "vid": "7424580829155724586",
+   "handle": "thechefyaso",
+   "arm": "A2"
+  },
+  {
+   "vid": "7530270290857692422",
+   "handle": "behindthescreamss",
+   "arm": "A2"
+  },
+  {
+   "vid": "7236805157802036506",
+   "handle": "unx360_backup",
+   "arm": "A2"
+  },
+  {
+   "vid": "7157805207819291950",
+   "handle": "outsidepoetry",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7610545915362921759",
+   "handle": "grimhoundgaming",
+   "arm": "A2"
+  },
+  {
+   "vid": "7428526391114681633",
+   "handle": "stayingrelevant_podcast",
+   "arm": "A2"
+  },
+  {
+   "vid": "7526894782371597590",
+   "handle": "rozgajelenaofficial",
+   "arm": "A2"
+  },
+  {
+   "vid": "6860178891319807238",
+   "handle": "shaunadeancokeland",
+   "arm": "A2"
+  },
+  {
+   "vid": "7532829024050056456",
+   "handle": "ka10san_0717",
+   "arm": "A2"
+  },
+  {
+   "vid": "7470995801058184453",
+   "handle": "prodannz",
+   "arm": "A2"
+  },
+  {
+   "vid": "7374119212433935658",
+   "handle": "funcomfortable",
+   "arm": "A2"
+  },
+  {
+   "vid": "7645021311063985426",
+   "handle": "war_cat14",
+   "arm": "A2"
+  },
+  {
+   "vid": "6861770003654462725",
+   "handle": "montysa8",
+   "arm": "A2"
+  },
+  {
+   "vid": "7117222982958714154",
+   "handle": "wildmodieng",
+   "arm": "A2"
+  },
+  {
+   "vid": "7421829904565669152",
+   "handle": "maritimememories",
+   "arm": "A2"
+  },
+  {
+   "vid": "7437948649818066206",
+   "handle": "davidpakmanshow",
+   "arm": "A2"
+  },
+  {
+   "vid": "7155326312444464426",
+   "handle": "taylorswift",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7145226213429103914",
+   "handle": "therealcarlazuz",
+   "arm": "A2"
+  },
+  {
+   "vid": "7318444547636350251",
+   "handle": "abbylynn0715",
+   "arm": "A2"
+  },
+  {
+   "vid": "7497628424551369991",
+   "handle": "lucyhanzel_",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7236984231627361542",
+   "handle": "thrine_08",
+   "arm": "A2"
+  },
+  {
+   "vid": "7348405220390505735",
+   "handle": "thebellchanel",
+   "arm": "A2"
+  },
+  {
+   "vid": "7124129138906008875",
+   "handle": "mtvnews",
+   "arm": "A2"
+  },
+  {
+   "vid": "7125560544215485739",
+   "handle": "eliseecklundx",
+   "arm": "A2"
+  },
+  {
+   "vid": "7434029477270752558",
+   "handle": "viralmomentsunfiltered",
+   "arm": "A2"
+  },
+  {
+   "vid": "7420887315419041030",
+   "handle": "harleyma",
+   "arm": "A2"
+  },
+  {
+   "vid": "7605072205495471367",
+   "handle": "rasthedrummer",
+   "arm": "A2"
+  },
+  {
+   "vid": "7588591985955523847",
+   "handle": "geonews",
+   "arm": "A2"
+  },
+  {
+   "vid": "7496820780848647431",
+   "handle": "omgitsimranajmain",
+   "arm": "A2"
+  },
+  {
+   "vid": "7176374576924871941",
+   "handle": "bipolarnightmare7",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7215810845975072006",
+   "handle": "tourismterengganu",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7070803819310927106",
+   "handle": "ekaterinekatoshariqadze",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7313007201117883690",
+   "handle": "thegrav3digger",
+   "arm": "A2"
+  },
+  {
+   "vid": "6789918354175036673",
+   "handle": "taki_saito",
+   "arm": "A-new"
+  },
+  {
+   "vid": "6936685528544808194",
+   "handle": "goateees",
+   "arm": "A2"
+  },
+  {
+   "vid": "7331921605737696543",
+   "handle": "thesgtpepper",
+   "arm": "A2"
+  },
+  {
+   "vid": "7167040472098163973",
+   "handle": "alphamaleslifestyle",
+   "arm": "A2"
+  },
+  {
+   "vid": "7128171130971491626",
+   "handle": "sebastianstann13",
+   "arm": "A2"
+  },
+  {
+   "vid": "7562371122755325206",
+   "handle": "itsnicktheplug",
+   "arm": "A2"
+  },
+  {
+   "vid": "7249864524684102954",
+   "handle": "zachtimson",
+   "arm": "A2"
+  },
+  {
+   "vid": "7065772955065945391",
+   "handle": "charlieskingdom20",
+   "arm": "A2"
+  },
+  {
+   "vid": "7340763091077958945",
+   "handle": "jojorobertson7",
+   "arm": "A2"
+  },
+  {
+   "vid": "7294161171442142506",
+   "handle": "cjtrowbridge",
+   "arm": "A2"
+  },
+  {
+   "vid": "7569599945314045192",
+   "handle": "trek.way",
+   "arm": "A2"
+  },
+  {
+   "vid": "7236431631521680646",
+   "handle": "xapkiba3ob",
+   "arm": "A2"
+  },
+  {
+   "vid": "7461159675786956075",
+   "handle": "icycol",
+   "arm": "A2"
+  },
+  {
+   "vid": "7376314878836952325",
+   "handle": "carlo.digital",
+   "arm": "A2"
+  },
+  {
+   "vid": "7644873443975925024",
+   "handle": "studiotalksevents",
+   "arm": "A2"
+  },
+  {
+   "vid": "7278862941300985106",
+   "handle": "miecot90",
+   "arm": "A-new"
+  },
+  {
+   "vid": "6936218553230085378",
+   "handle": "tashmontlake",
+   "arm": "A2"
+  },
+  {
+   "vid": "7509454360166944022",
+   "handle": "viktor_a_tiktokon",
+   "arm": "A2"
+  },
+  {
+   "vid": "7520140183577103636",
+   "handle": "danblooed",
+   "arm": "A2"
+  },
+  {
+   "vid": "7230405497449352474",
+   "handle": "millies_target",
+   "arm": "A2"
+  },
+  {
+   "vid": "6953852760852909314",
+   "handle": "zach_mander",
+   "arm": "A2"
+  },
+  {
+   "vid": "7275331485979233538",
+   "handle": "buletintv3",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7601244355680029982",
+   "handle": "amorenlol",
+   "arm": "A2"
+  },
+  {
+   "vid": "7532270532591439110",
+   "handle": "tepida.studios",
+   "arm": "A2"
+  },
+  {
+   "vid": "7076205946753584426",
+   "handle": "themichaelbolton",
+   "arm": "A2"
+  },
+  {
+   "vid": "7487698508011539734",
+   "handle": "wiki_lucy",
+   "arm": "A2"
+  },
+  {
+   "vid": "7550089890596228382",
+   "handle": "shaythethey",
+   "arm": "A2"
+  },
+  {
+   "vid": "7059539265272761605",
+   "handle": "pentirebandofficial",
+   "arm": "A2"
+  },
+  {
+   "vid": "7279716114899242282",
+   "handle": "my_muslim_cousin",
+   "arm": "A2"
+  },
+  {
+   "vid": "7656788587790290196",
+   "handle": "neracosu",
+   "arm": "A2"
+  },
+  {
+   "vid": "7200906003162877226",
+   "handle": "chrishallbeck",
+   "arm": "A2"
+  },
+  {
+   "vid": "7508535169893158166",
+   "handle": "bonnie_blue_xxo",
+   "arm": "A2"
+  },
+  {
+   "vid": "7292898451996544298",
+   "handle": "hardcore.stanxkyle",
+   "arm": "A2"
+  },
+  {
+   "vid": "7291893140997295393",
+   "handle": "daftydaftydafty",
+   "arm": "A2"
+  },
+  {
+   "vid": "7615799746564787469",
+   "handle": "glass__milo",
+   "arm": "A2"
+  },
+  {
+   "vid": "7451719299720301829",
+   "handle": "zyrcun",
+   "arm": "A2"
+  },
+  {
+   "vid": "7314805304695295264",
+   "handle": "jessicadeniz_jessitartas",
+   "arm": "A2"
+  },
+  {
+   "vid": "7488939944744946987",
+   "handle": "davebetras",
+   "arm": "A2"
+  },
+  {
+   "vid": "7386262919543049477",
+   "handle": "ogulcanonerofficial",
+   "arm": "A2"
+  },
+  {
+   "vid": "7324069428709051690",
+   "handle": "michaelsblack16",
+   "arm": "A2"
+  },
+  {
+   "vid": "7039385906561764614",
+   "handle": "celinedept",
+   "arm": "A2"
+  },
+  {
+   "vid": "7277956951001091334",
+   "handle": "2mmundodemisses",
+   "arm": "A2"
+  },
+  {
+   "vid": "7355554882025180421",
+   "handle": "canerosfc2021",
+   "arm": "A2"
+  },
+  {
+   "vid": "7412346318305234182",
+   "handle": "elmundodeayer",
+   "arm": "A2"
+  },
+  {
+   "vid": "6841239174465490182",
+   "handle": "soupytime",
+   "arm": "A2"
+  },
+  {
+   "vid": "7418671118459981099",
+   "handle": "interviewmag",
+   "arm": "A2"
+  },
+  {
+   "vid": "7518576594953243918",
+   "handle": "itssuzannelambert",
+   "arm": "A2"
+  },
+  {
+   "vid": "6815556391491669254",
+   "handle": "dipperiino",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7411460991571086599",
+   "handle": "matthew._.room",
+   "arm": "A2"
+  },
+  {
+   "vid": "7262014508930059525",
+   "handle": "milorizzcombinns",
+   "arm": "A2"
+  },
+  {
+   "vid": "6892868148647726341",
+   "handle": "bodylikelego",
+   "arm": "A2"
+  },
+  {
+   "vid": "6993060526196821254",
+   "handle": "kevin_sassi",
+   "arm": "A2"
+  },
+  {
+   "vid": "7347396242898537761",
+   "handle": "cbzonzamas",
+   "arm": "A2"
+  },
+  {
+   "vid": "7590793074989649183",
+   "handle": "tiffanystrattonwwe",
+   "arm": "A2"
+  },
+  {
+   "vid": "7508551884429331720",
+   "handle": "arinahmatyusof_",
+   "arm": "A-new"
+  },
+  {
+   "vid": "7627776269953879303",
+   "handle": "beautypageantfan7",
+   "arm": "A2"
+  },
+  {
+   "vid": "7451192767096638726",
+   "handle": "anyifie",
+   "arm": "A2"
+  },
+  {
+   "vid": "7617568257364512032",
+   "handle": "studiotalksevents",
+   "arm": "A2"
+  },
+  {
+   "vid": "7512788463884700946",
+   "handle": "bgyo_ph",
+   "arm": "A2"
+  }
+ ]
+}
