@@ -1,0 +1,1 @@
+{"requested": 635, "planned": 635, "seconds": 1026.5, "stopped": null, "counts": {"A2": {"NOT-RETRIEVABLE": 88, "RETRIEVABLE": 471, "INDETERMINATE": 3}, "A-new": {"RETRIEVABLE": 62, "NOT-RETRIEVABLE": 11}}}

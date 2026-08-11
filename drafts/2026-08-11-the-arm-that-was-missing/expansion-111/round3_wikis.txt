@@ -1,0 +1,14 @@
+ru.wikipedia.org
+uk.wikipedia.org
+zh.wikipedia.org
+ko.wikipedia.org
+it.wikipedia.org
+tr.wikipedia.org
+pl.wikipedia.org
+ar.wikipedia.org
+vi.wikipedia.org
+th.wikipedia.org
+nl.wikipedia.org
+fa.wikipedia.org
+sv.wikipedia.org
+fr.wikipedia.org

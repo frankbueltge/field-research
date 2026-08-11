@@ -1,0 +1,5646 @@
+{
+ "meta": {
+  "source": "MediaWiki exturlusage, expansion round 2",
+  "note": "18 wikis round 1 never reached (all namespaces) + 29 editions round 1 lost to HTTP 429 (article space)",
+  "url_rows": 1521,
+  "distinct_ids": 654,
+  "collected_utc": "2026-08-11T22:51:06Z",
+  "log": [
+   {
+    "wiki": "da.wikipedia.org",
+    "ns": 0,
+    "link_rows": 19,
+    "api_pages": 1
+   },
+   {
+    "wiki": "el.wikipedia.org",
+    "ns": 0,
+    "link_rows": 607,
+    "api_pages": 2
+   },
+   {
+    "wiki": "hu.wikipedia.org",
+    "ns": 0,
+    "link_rows": 185,
+    "api_pages": 1
+   },
+   {
+    "wiki": "no.wikipedia.org",
+    "ns": 0,
+    "link_rows": 1184,
+    "api_pages": 3
+   },
+   {
+    "wiki": "ro.wikipedia.org",
+    "ns": 0,
+    "link_rows": 1986,
+    "api_pages": 5
+   },
+   {
+    "wiki": "bg.wikipedia.org",
+    "ns": 0,
+    "link_rows": 91,
+    "api_pages": 1
+   },
+   {
+    "wiki": "sr.wikipedia.org",
+    "ns": 0,
+    "link_rows": 54,
+    "api_pages": 1
+   },
+   {
+    "wiki": "hr.wikipedia.org",
+    "ns": 0,
+    "link_rows": 117,
+    "api_pages": 1
+   },
+   {
+    "wiki": "sk.wikipedia.org",
+    "ns": 0,
+    "link_rows": 6,
+    "api_pages": 1
+   },
+   {
+    "wiki": "sl.wikipedia.org",
+    "ns": 0,
+    "link_rows": 84,
+    "api_pages": 1
+   },
+   {
+    "wiki": "lv.wikipedia.org",
+    "ns": 0,
+    "link_rows": 19,
+    "api_pages": 1
+   },
+   {
+    "wiki": "et.wikipedia.org",
+    "ns": 0,
+    "link_rows": 21,
+    "api_pages": 1
+   },
+   {
+    "wiki": "ca.wikipedia.org",
+    "ns": 0,
+    "link_rows": 3731,
+    "api_pages": 8
+   },
+   {
+    "wiki": "eu.wikipedia.org",
+    "ns": 0,
+    "link_rows": 1656,
+    "api_pages": 4
+   },
+   {
+    "wiki": "az.wikipedia.org",
+    "ns": 0,
+    "link_rows": 747,
+    "api_pages": 2
+   },
+   {
+    "wiki": "kk.wikipedia.org",
+    "ns": 0,
+    "link_rows": 31,
+    "api_pages": 1
+   },
+   {
+    "wiki": "mn.wikipedia.org",
+    "ns": 0,
+    "link_rows": 1,
+    "api_pages": 1
+   },
+   {
+    "wiki": "sw.wikipedia.org",
+    "ns": 0,
+    "link_rows": 3,
+    "api_pages": 1
+   },
+   {
+    "wiki": "af.wikipedia.org",
+    "ns": 0,
+    "link_rows": 6,
+    "api_pages": 1
+   },
+   {
+    "wiki": "is.wikipedia.org",
+    "ns": 0,
+    "link_rows": 3,
+    "api_pages": 1
+   },
+   {
+    "wiki": "mk.wikipedia.org",
+    "ns": 0,
+    "link_rows": 14,
+    "api_pages": 1
+   },
+   {
+    "wiki": "bs.wikipedia.org",
+    "ns": 0,
+    "link_rows": 1,
+    "api_pages": 1
+   },
+   {
+    "wiki": "be.wikipedia.org",
+    "ns": 0,
+    "link_rows": 1310,
+    "api_pages": 3
+   },
+   {
+    "wiki": "nn.wikipedia.org",
+    "ns": 0,
+    "link_rows": 9,
+    "api_pages": 1
+   },
+   {
+    "wiki": "simple.wikipedia.org",
+    "ns": 0,
+    "link_rows": 42,
+    "api_pages": 1
+   },
+   {
+    "wiki": "ga.wikipedia.org",
+    "ns": 0,
+    "link_rows": 819,
+    "api_pages": 2
+   },
+   {
+    "wiki": "cy.wikipedia.org",
+    "ns": 0,
+    "link_rows": 5,
+    "api_pages": 1
+   },
+   {
+    "wiki": "la.wikipedia.org",
+    "ns": 0,
+    "link_rows": 2,
+    "api_pages": 1
+   },
+   {
+    "wiki": "ky.wikipedia.org",
+    "ns": 0,
+    "link_rows": 4,
+    "api_pages": 1
+   },
+   {
+    "wiki": "de.wikipedia.org",
+    "ns": 1,
+    "link_rows": 32,
+    "api_pages": 2
+   },
+   {
+    "wiki": "de.wikipedia.org",
+    "ns": 2,
+    "link_rows": 163,
+    "api_pages": 2
+   },
+   {
+    "wiki": "de.wikipedia.org",
+    "ns": 3,
+    "link_rows": 19,
+    "api_pages": 2
+   },
+   {
+    "wiki": "de.wikipedia.org",
+    "ns": 4,
+    "link_rows": 63,
+    "api_pages": 2
+   },
+   {
+    "wiki": "de.wikipedia.org",
+    "ns": 5,
+    "link_rows": 3,
+    "api_pages": 2
+   },
+   {
+    "wiki": "de.wikipedia.org",
+    "ns": 118,
+    "link_rows": 636,
+    "api_pages": 2
+   },
+   {
+    "wiki": "de.wikipedia.org",
+    "ns": 119,
+    "link_rows": 636,
+    "api_pages": 2
+   },
+   {
+    "wiki": "id.wikipedia.org",
+    "ns": 1,
+    "link_rows": 162,
+    "api_pages": 8
+   },
+   {
+    "wiki": "id.wikipedia.org",
+    "ns": 2,
+    "link_rows": 129,
+    "api_pages": 8
+   },
+   {
+    "wiki": "id.wikipedia.org",
+    "ns": 3,
+    "link_rows": 47,
+    "api_pages": 8
+   },
+   {
+    "wiki": "id.wikipedia.org",
+    "ns": 4,
+    "link_rows": 6,
+    "api_pages": 8
+   },
+   {
+    "wiki": "id.wikipedia.org",
+    "ns": 6,
+    "link_rows": 1,
+    "api_pages": 8
+   },
+   {
+    "wiki": "id.wikipedia.org",
+    "ns": 10,
+    "link_rows": 10,
+    "api_pages": 8
+   },
+   {
+    "wiki": "id.wikipedia.org",
+    "ns": 11,
+    "link_rows": 2,
+    "api_pages": 8
+   },
+   {
+    "wiki": "id.wikipedia.org",
+    "ns": 15,
+    "link_rows": 2,
+    "api_pages": 8
+   },
+   {
+    "wiki": "id.wikipedia.org",
+    "ns": 100,
+    "ERROR": "429 exhausted: id.wikipedia.org ns100"
+   },
+   {
+    "wiki": "id.wikipedia.org",
+    "ns": 118,
+    "link_rows": 3838,
+    "api_pages": 8
+   },
+   {
+    "wiki": "id.wikipedia.org",
+    "ns": 119,
+    "link_rows": 3838,
+    "api_pages": 8
+   },
+   {
+    "wiki": "he.wikipedia.org",
+    "ns": 1,
+    "link_rows": 57,
+    "api_pages": 10
+   },
+   {
+    "wiki": "he.wikipedia.org",
+    "ns": 2,
+    "link_rows": 66,
+    "api_pages": 10
+   },
+   {
+    "wiki": "he.wikipedia.org",
+    "ns": 3,
+    "link_rows": 9,
+    "api_pages": 10
+   },
+   {
+    "wiki": "he.wikipedia.org",
+    "ns": 4,
+    "link_rows": 11,
+    "api_pages": 10
+   },
+   {
+    "wiki": "he.wikipedia.org",
+    "ns": 5,
+    "link_rows": 1,
+    "api_pages": 10
+   },
+   {
+    "wiki": "he.wikipedia.org",
+    "ns": 10,
+    "link_rows": 8,
+    "api_pages": 10
+   },
+   {
+    "wiki": "he.wikipedia.org",
+    "ns": 11,
+    "link_rows": 14,
+    "api_pages": 10
+   },
+   {
+    "wiki": "he.wikipedia.org",
+    "ns": 15,
+    "link_rows": 1,
+    "api_pages": 10
+   },
+   {
+    "wiki": "he.wikipedia.org",
+    "ns": 118,
+    "link_rows": 80,
+    "api_pages": 10
+   },
+   {
+    "wiki": "pt.wikipedia.org",
+    "ns": 1,
+    "link_rows": 3,
+    "api_pages": 2
+   },
+   {
+    "wiki": "pt.wikipedia.org",
+    "ns": 2,
+    "link_rows": 71,
+    "api_pages": 2
+   },
+   {
+    "wiki": "pt.wikipedia.org",
+    "ns": 3,
+    "link_rows": 9,
+    "api_pages": 2
+   },
+   {
+    "wiki": "pt.wikipedia.org",
+    "ns": 4,
+    "link_rows": 7,
+    "api_pages": 2
+   },
+   {
+    "wiki": "pt.wikipedia.org",
+    "ns": 6,
+    "link_rows": 1,
+    "api_pages": 2
+   },
+   {
+    "wiki": "pt.wikipedia.org",
+    "ns": 10,
+    "link_rows": 4,
+    "api_pages": 2
+   },
+   {
+    "wiki": "pt.wikipedia.org",
+    "ns": 12,
+    "link_rows": 1,
+    "api_pages": 2
+   },
+   {
+    "wiki": "pt.wikipedia.org",
+    "ns": 118,
+    "link_rows": 930,
+    "api_pages": 2
+   },
+   {
+    "wiki": "pt.wikipedia.org",
+    "ns": 119,
+    "link_rows": 930,
+    "api_pages": 2
+   },
+   {
+    "wiki": "ru.wikipedia.org",
+    "ns": 1,
+    "link_rows": 4,
+    "api_pages": 14
+   },
+   {
+    "STOPPED_AT_DEADLINE": {
+     "wiki": "ru.wikipedia.org",
+     "ns": 2
+    }
+   }
+  ]
+ },
+ "rows": [
+  {
+   "wiki": "da.wikipedia.org",
+   "ns": 0,
+   "page": "Daniel Bahl",
+   "handle": "girafpingvin",
+   "vid": "7018980187794574597",
+   "url": "https://www.tiktok.com/@girafpingvin/video/7018980187794574597"
+  },
+  {
+   "wiki": "da.wikipedia.org",
+   "ns": 0,
+   "page": "Oliver Stanescu",
+   "handle": "oliverstanescu",
+   "vid": "7492823249466723607",
+   "url": "https://www.tiktok.com/@oliverstanescu/video/7492823249466723607"
+  },
+  {
+   "wiki": "da.wikipedia.org",
+   "ns": 0,
+   "page": "Oliver Haubro Hvam",
+   "handle": "bruhliver",
+   "vid": "7348383666298555681",
+   "url": "https://www.tiktok.com/@bruhliver/video/7348383666298555681"
+  },
+  {
+   "wiki": "da.wikipedia.org",
+   "ns": 0,
+   "page": "Landsdelsflag",
+   "handle": "the.historian.dk",
+   "vid": "7157674650225429766",
+   "url": "https://www.tiktok.com/@the.historian.dk/video/7157674650225429766"
+  },
+  {
+   "wiki": "da.wikipedia.org",
+   "ns": 0,
+   "page": "F\u00f8niks Computer",
+   "handle": "fonikscomputerdk",
+   "vid": "7499447068776287510",
+   "url": "https://www.tiktok.com/@fonikscomputerdk/video/7499447068776287510"
+  },
+  {
+   "wiki": "da.wikipedia.org",
+   "ns": 0,
+   "page": "F\u00f8niks Computer",
+   "handle": "fonikscomputerdk",
+   "vid": "7197503947572022534",
+   "url": "https://www.tiktok.com/@fonikscomputerdk/video/7197503947572022534"
+  },
+  {
+   "wiki": "da.wikipedia.org",
+   "ns": 0,
+   "page": "F\u00f8niks Computer",
+   "handle": "fonikscomputerdk",
+   "vid": "7201165860357131525",
+   "url": "https://www.tiktok.com/@fonikscomputerdk/video/7201165860357131525"
+  },
+  {
+   "wiki": "da.wikipedia.org",
+   "ns": 0,
+   "page": "F\u00f8niks Computer",
+   "handle": "fonikscomputerdk",
+   "vid": "7205969667171585285",
+   "url": "https://www.tiktok.com/@fonikscomputerdk/video/7205969667171585285"
+  },
+  {
+   "wiki": "el.wikipedia.org",
+   "ns": 0,
+   "page": "\u039a\u03ac\u03b8\u03c1\u03b9\u03bd \u03a1\u03ac\u03b9\u03bb\u03b9",
+   "handle": "katherinereilly1",
+   "vid": "7126469579735354629",
+   "url": "https://www.tiktok.com/@katherinereilly1/video/7126469579735354629"
+  },
+  {
+   "wiki": "el.wikipedia.org",
+   "ns": 0,
+   "page": "\u039a\u03ac\u03b8\u03c1\u03b9\u03bd \u03a1\u03ac\u03b9\u03bb\u03b9",
+   "handle": "katherinereilly1",
+   "vid": "7049610791435144454",
+   "url": "https://www.tiktok.com/@katherinereilly1/video/7049610791435144454?amp;sender_device=pc&is_from_webapp=1"
+  },
+  {
+   "wiki": "el.wikipedia.org",
+   "ns": 0,
+   "page": "\u0391\u03bb\u03b5\u03be\u03ac\u03bd\u03c4\u03b5\u03c1 \u03a1\u03af\u03bc\u03c0\u03b1\u03ba",
+   "handle": "alexrybakofficial",
+   "vid": "6960590893829065985",
+   "url": "https://www.tiktok.com/@alexrybakofficial/video/6960590893829065985?lang=es"
+  },
+  {
+   "wiki": "el.wikipedia.org",
+   "ns": 0,
+   "page": "\u039d\u03ac\u03c3\u03c1\u03b9 \u0391\u03c3\u03c6\u03bf\u03cd\u03c1\u03b1",
+   "handle": "jorgeluismedina083",
+   "vid": "7547895984722939142",
+   "url": "https://www.tiktok.com/@jorgeluismedina083/video/7547895984722939142"
+  },
+  {
+   "wiki": "el.wikipedia.org",
+   "ns": 0,
+   "page": "\u0392\u03b9\u03ba\u03c4\u03cc\u03c1\u03b9\u03b1 \u039b\u03b5\u03bb\u03ad\u03ba\u03b1",
+   "handle": "leleka_music",
+   "vid": "7584109870303939842",
+   "url": "https://www.tiktok.com/@leleka_music/video/7584109870303939842?is_from_webapp=1&sender_device=pc&web_id=7579673265384392199"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Future Nostalgia",
+   "handle": "dualipaofficial",
+   "vid": "6877561752918281474",
+   "url": "https://www.tiktok.com/@dualipaofficial/video/6877561752918281474"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Future Nostalgia",
+   "handle": "dualipaofficial",
+   "vid": "6878320388896591105",
+   "url": "https://www.tiktok.com/@dualipaofficial/video/6878320388896591105"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Brain Drain (egy\u00fcttes)",
+   "handle": "braindrainmusic",
+   "vid": "6949578746105957637",
+   "url": "https://www.tiktok.com/@braindrainmusic/video/6949578746105957637?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Brain Drain (egy\u00fcttes)",
+   "handle": "braindrainmusic",
+   "vid": "6949477334076394757",
+   "url": "https://www.tiktok.com/@braindrainmusic/video/6949477334076394757?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "A Pok\u00e9mon epiz\u00f3djainak list\u00e1ja",
+   "handle": "tamaspal",
+   "vid": "6948716616607665414",
+   "url": "https://www.tiktok.com/@tamaspal/video/6948716616607665414"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Kim Rhodes",
+   "handle": "kimrhodes4real",
+   "vid": "6952593075571051782",
+   "url": "https://www.tiktok.com/@kimrhodes4real/video/6952593075571051782?traffic_type=google&referer_url=amp_kimrhodes&referer_video_id=6938193682776493318&is_copy_url=0&is_from_webapp=v1&sender_device=pc&sender_web_id=6957719055671969286"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Billie Eilish (dal)",
+   "handle": "armaniblanco",
+   "vid": "7065407655405440303",
+   "url": "https://www.tiktok.com/@armaniblanco/video/7065407655405440303?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Billie Eilish (dal)",
+   "handle": "armaniblanco",
+   "vid": "7089559800115219755",
+   "url": "https://www.tiktok.com/@armaniblanco/video/7089559800115219755?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "The Special Tour",
+   "handle": "davidhopping",
+   "vid": "7167997880609885482",
+   "url": "https://www.tiktok.com/@davidhopping/video/7167997880609885482?is_from_webapp=v1&item_id=7167997880609885482"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Ellen\u00e1llhatatlan k\u00eds\u00e9rt\u00e9s (2. \u00e9vad)",
+   "handle": "petervigilante2",
+   "vid": "7074387146114698539",
+   "url": "https://www.tiktok.com/@petervigilante2/video/7074387146114698539?is_from_webapp=1&sender_device=pc&web_id=7075028217124095530"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Bern\u00e1th Odett",
+   "handle": "odettbernath",
+   "vid": "7189653601503988998",
+   "url": "https://www.tiktok.com/@odettbernath/video/7189653601503988998"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Disco (Kylie Minogue-album)",
+   "handle": "kylieminogue",
+   "vid": "7001103237357079813",
+   "url": "https://www.tiktok.com/@kylieminogue/video/7001103237357079813?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "P\u00e9csi Egyetemi Napok",
+   "handle": "pteehok",
+   "vid": "7227457888216698139",
+   "url": "https://www.tiktok.com/@pteehok/video/7227457888216698139"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Szaszk\u00f3 Gabriella",
+   "handle": "gabriellaszaszko",
+   "vid": "7252232291794128155",
+   "url": "https://www.tiktok.com/@gabriellaszaszko/video/7252232291794128155?embed_source=121352282,121351166,121331973,120811592,120810756;null;embed_video_card&refer=creator_embed&referer_url=szaszkogabriella.com/index.php/hu/2023/01/16/a-legszemelyesebb-vallomasom-tulzottan-torekeny-vagyok-ahhoz-hogy-erre-a-vilagra-gyereket-vallaljak/&referer_video_id=7252232291794128155"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Sebesty\u00e9n Katja",
+   "handle": "husiii20",
+   "vid": "7241458071619374363",
+   "url": "https://www.tiktok.com/@husiii20/video/7241458071619374363"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Water (Tyla-dal)",
+   "handle": "tyla_",
+   "vid": "7263922802476977414",
+   "url": "https://www.tiktok.com/@tyla_/video/7263922802476977414?lang=en"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "P\u00e9csi Egyetemi Napok",
+   "handle": "pteehok",
+   "vid": "7367034651682147617",
+   "url": "https://www.tiktok.com/@pteehok/video/7367034651682147617"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Bill Kaulitz",
+   "handle": "tokiohoteltb",
+   "vid": "7239624550521064731",
+   "url": "https://www.tiktok.com/@tokiohoteltb/video/7239624550521064731"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Balogh P\u00e9ter (\u00fczletember)",
+   "handle": "baloghpetyaofficial",
+   "vid": "7233079700875234586",
+   "url": "https://www.tiktok.com/@baloghpetyaofficial/video/7233079700875234586"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Marics Peti",
+   "handle": "v.ideok",
+   "vid": "7212990478701120795",
+   "url": "https://www.tiktok.com/@v.ideok/video/7212990478701120795?lang=hu-HU"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Alma Deutscher",
+   "handle": "almadeutscher",
+   "vid": "7091330299065404678",
+   "url": "https://www.tiktok.com/@almadeutscher/video/7091330299065404678?lang=en"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Hat\u00e1rtalan szerelem (telev\u00edzi\u00f3s m\u0171sor)",
+   "handle": "ticianaoravec",
+   "vid": "7515103618006043926",
+   "url": "https://www.tiktok.com/@ticianaoravec/video/7515103618006043926?_t=ZN-8x9JaQd1DXy&_r=1"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Kit Connor",
+   "handle": "kitsconnor1",
+   "vid": "7112052022148599045",
+   "url": "https://www.tiktok.com/@kitsconnor1/video/7112052022148599045"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Bern\u00e1th Odett",
+   "handle": "odettbernath",
+   "vid": "7497669642509438230",
+   "url": "https://www.tiktok.com/@odettbernath/video/7497669642509438230"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Hat\u00e1rtalan szerelem (telev\u00edzi\u00f3s m\u0171sor)",
+   "handle": "jenei_agnes",
+   "vid": "7524434250633055510",
+   "url": "https://www.tiktok.com/@jenei_agnes/video/7524434250633055510"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Karbantart\u00e1s sz\u00fcks\u00e9ges",
+   "handle": "madelame",
+   "vid": "7414292142794820906",
+   "url": "https://www.tiktok.com/@madelame/video/7414292142794820906"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Tordai Bence",
+   "handle": "tordaibence",
+   "vid": "7443123765485063446",
+   "url": "https://www.tiktok.com/@tordaibence/video/7443123765485063446"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "X-Faktor (tizenkettedik \u00e9vad)",
+   "handle": "_fuchsmate",
+   "vid": "7412000631432498464",
+   "url": "https://www.tiktok.com/@_fuchsmate/video/7412000631432498464"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "X-Faktor (tizenkettedik \u00e9vad)",
+   "handle": "rtlxfaktor",
+   "vid": "7419772084252871968",
+   "url": "https://www.tiktok.com/@rtlxfaktor/video/7419772084252871968"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "X-Faktor (tizenkettedik \u00e9vad)",
+   "handle": "eberkoma_eleterzes",
+   "vid": "7467132782385499394",
+   "url": "https://www.tiktok.com/@eberkoma_eleterzes/video/7467132782385499394"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "X-Faktor (tizenkettedik \u00e9vad)",
+   "handle": "v.ideok",
+   "vid": "7423051382447459616",
+   "url": "https://www.tiktok.com/@v.ideok/video/7423051382447459616"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "X-Faktor (tizenkettedik \u00e9vad)",
+   "handle": "tikitakishow",
+   "vid": "7422391806978968865",
+   "url": "https://www.tiktok.com/@tikitakishow/video/7422391806978968865"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "X-Faktor (tizenkettedik \u00e9vad)",
+   "handle": "rtlxfaktor",
+   "vid": "7424956665587436833",
+   "url": "https://www.tiktok.com/@rtlxfaktor/video/7424956665587436833"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "X-Faktor (tizenkettedik \u00e9vad)",
+   "handle": "rtlxfaktor",
+   "vid": "7424964795587169568",
+   "url": "https://www.tiktok.com/@rtlxfaktor/video/7424964795587169568"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "X-Faktor (tizenkettedik \u00e9vad)",
+   "handle": "rtlxfaktor",
+   "vid": "7424973970266426657",
+   "url": "https://www.tiktok.com/@rtlxfaktor/video/7424973970266426657"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "X-Faktor (tizenkettedik \u00e9vad)",
+   "handle": "robi230502",
+   "vid": "7427566986105785633",
+   "url": "https://www.tiktok.com/@robi230502/video/7427566986105785633"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "X-Faktor (tizenharmadik \u00e9vad)",
+   "handle": "shortokhu",
+   "vid": "7547408571940605206",
+   "url": "https://www.tiktok.com/@shortokhu/video/7547408571940605206"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "X-Faktor (tizenharmadik \u00e9vad)",
+   "handle": "vitalisadamnoel",
+   "vid": "7560655291788889366",
+   "url": "https://www.tiktok.com/@vitalisadamnoel/video/7560655291788889366"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Fej\u00e9rv\u00e1ri Lorina",
+   "handle": "budapesteye",
+   "vid": "7558199236857236768",
+   "url": "https://www.tiktok.com/@budapesteye/video/7558199236857236768"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Alkoholizmus Magyarorsz\u00e1gon",
+   "handle": "vargaattilaofficial",
+   "vid": "7627452784043953430",
+   "url": "https://www.tiktok.com/@vargaattilaofficial/video/7627452784043953430"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Alkoholizmus Magyarorsz\u00e1gon",
+   "handle": "vargaattilaofficial",
+   "vid": "7465019012083207446",
+   "url": "https://www.tiktok.com/@vargaattilaofficial/video/7465019012083207446"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Budapest t\u00f6megk\u00f6zleked\u00e9se",
+   "handle": "traxx__fan",
+   "vid": "7546162657187990806",
+   "url": "https://www.tiktok.com/@traxx__fan/video/7546162657187990806?is_from_webapp=1&sender_device=pc&web_id=7527258550995093014"
+  },
+  {
+   "wiki": "hu.wikipedia.org",
+   "ns": 0,
+   "page": "Duri\u00e1n",
+   "handle": "princesskiaralord",
+   "vid": "7652293753478155542",
+   "url": "https://www.tiktok.com/@princesskiaralord/video/7652293753478155542?_r=1&_t=ZN-986i07DUPVm"
+  },
+  {
+   "wiki": "no.wikipedia.org",
+   "ns": 0,
+   "page": "Andr\u00e9 Nilsen",
+   "handle": "andrenilsen420",
+   "vid": "6927752081675750662",
+   "url": "https://www.tiktok.com/@andrenilsen420/video/6927752081675750662"
+  },
+  {
+   "wiki": "no.wikipedia.org",
+   "ns": 0,
+   "page": "Ppcocaine",
+   "handle": "trapbunniebubbless",
+   "vid": "7076944019904908586",
+   "url": "https://www.tiktok.com/@trapbunniebubbless/video/7076944019904908586?_d=secCgYIASAHKAESPgo8B/bOg5dtGbwOaSE/V9jNqz34NjvZPz0SzajrvUCBBdJYF+PhbZXOOhEfIHBRNZHP59o8ZuudDsulHPBrGgA=&_r=1&checksum=a0b79eba06a73b1b638f2d28b7e0899a378c3c4f3814b6c59884ddd545cf1234&language=en&preview_pb=0&sec_user_id=MS4wLjABAAAAFwG1DY53T6xVmtSlUtJ6n7iGMoUwaRmfrE4UtIpX7DEIvA4CQz_4Yv1AJ7iYKtJq&share_app_id=1233&share_item_id=7076944019904908586&share_link_id=5F64CD6E-B8AC-4AFD-8F1F-5B7098AD5B4E&source=h5_m&timestamp=1647762567&tt_from=copy&u_code=dkk97bj16m8mle&user_id=7010207761947755525"
+  },
+  {
+   "wiki": "no.wikipedia.org",
+   "ns": 0,
+   "page": "Ram\u00f3n",
+   "handle": "ramonandresen",
+   "vid": "6969491182376242438",
+   "url": "https://www.tiktok.com/@ramonandresen/video/6969491182376242438?is_from_webapp=1&sender_device=pc&web_id=7138932041147500038"
+  },
+  {
+   "wiki": "no.wikipedia.org",
+   "ns": 0,
+   "page": "Reiley (artist)",
+   "handle": "pablothedon",
+   "vid": "6952934837741210885",
+   "url": "https://www.tiktok.com/@pablothedon/video/6952934837741210885"
+  },
+  {
+   "wiki": "no.wikipedia.org",
+   "ns": 0,
+   "page": "Reiley (artist)",
+   "handle": "emiltotheworld",
+   "vid": "6954217917806431493",
+   "url": "https://www.tiktok.com/@emiltotheworld/video/6954217917806431493"
+  },
+  {
+   "wiki": "no.wikipedia.org",
+   "ns": 0,
+   "page": "TIX",
+   "handle": "tixern",
+   "vid": "7216367518670261531",
+   "url": "https://www.tiktok.com/@tixern/video/7216367518670261531"
+  },
+  {
+   "wiki": "no.wikipedia.org",
+   "ns": 0,
+   "page": "Ram\u00f3n",
+   "handle": "ramonandresen",
+   "vid": "7166694800018689286",
+   "url": "https://www.tiktok.com/@ramonandresen/video/7166694800018689286"
+  },
+  {
+   "wiki": "no.wikipedia.org",
+   "ns": 0,
+   "page": "Lars Monsen",
+   "handle": "mags725",
+   "vid": "7468721633717423382",
+   "url": "https://www.tiktok.com/@mags725/video/7468721633717423382"
+  },
+  {
+   "wiki": "no.wikipedia.org",
+   "ns": 0,
+   "page": "Amrit Kaur",
+   "handle": "nettavisen.no",
+   "vid": "7587027784069942550",
+   "url": "https://www.tiktok.com/@nettavisen.no/video/7587027784069942550"
+  },
+  {
+   "wiki": "no.wikipedia.org",
+   "ns": 0,
+   "page": "Henriette Sjursen-Eriksen",
+   "handle": "henriettesjursen",
+   "vid": "7526272184101178646",
+   "url": "https://www.tiktok.com/@henriettesjursen/video/7526272184101178646"
+  },
+  {
+   "wiki": "no.wikipedia.org",
+   "ns": 0,
+   "page": "Hudson Williams",
+   "handle": "langaracollege",
+   "vid": "7580806531747220792",
+   "url": "https://www.tiktok.com/@langaracollege/video/7580806531747220792?is_from_webapp=1&web_id=7580826832074458645"
+  },
+  {
+   "wiki": "no.wikipedia.org",
+   "ns": 0,
+   "page": "Paul Fjell Gundersen",
+   "handle": "fvn.no",
+   "vid": "7524363923093507350",
+   "url": "https://www.tiktok.com/@fvn.no/video/7524363923093507350"
+  },
+  {
+   "wiki": "ro.wikipedia.org",
+   "ns": 0,
+   "page": "Olivia Addams",
+   "handle": "oliviaaddamsmusic",
+   "vid": "6961803258344082694",
+   "url": "https://www.tiktok.com/@oliviaaddamsmusic/video/6961803258344082694?lang=pl-PL&is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "ro.wikipedia.org",
+   "ns": 0,
+   "page": "Olivia Addams",
+   "handle": "oliviaaddamsmusic",
+   "vid": "6960627645918825734",
+   "url": "https://www.tiktok.com/@oliviaaddamsmusic/video/6960627645918825734?lang=pl-PL&is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "ro.wikipedia.org",
+   "ns": 0,
+   "page": "Joost Klein",
+   "handle": "joostklein",
+   "vid": "7365079994848054561",
+   "url": "https://www.tiktok.com/@joostklein/video/7365079994848054561"
+  },
+  {
+   "wiki": "ro.wikipedia.org",
+   "ns": 0,
+   "page": "Joost Klein",
+   "handle": "paidatonriehuja",
+   "vid": "7359475350549613856",
+   "url": "https://www.tiktok.com/@paidatonriehuja/video/7359475350549613856"
+  },
+  {
+   "wiki": "ro.wikipedia.org",
+   "ns": 0,
+   "page": "Joost Klein",
+   "handle": "joostklein",
+   "vid": "7359266772006014240",
+   "url": "https://www.tiktok.com/@joostklein/video/7359266772006014240"
+  },
+  {
+   "wiki": "ro.wikipedia.org",
+   "ns": 0,
+   "page": "Gheorghe Dom\u0103\u0219nean",
+   "handle": "mika80mika",
+   "vid": "7481749310330178838",
+   "url": "https://www.tiktok.com/@mika80mika/video/7481749310330178838"
+  },
+  {
+   "wiki": "ro.wikipedia.org",
+   "ns": 0,
+   "page": "Daniel Noboa",
+   "handle": "ecuadorinmediato",
+   "vid": "7449017198749764869",
+   "url": "https://www.tiktok.com/@ecuadorinmediato/video/7449017198749764869"
+  },
+  {
+   "wiki": "ro.wikipedia.org",
+   "ns": 0,
+   "page": "Bbno$",
+   "handle": "bbnotiktok",
+   "vid": "7479138611837897990",
+   "url": "https://www.tiktok.com/@bbnotiktok/video/7479138611837897990"
+  },
+  {
+   "wiki": "ro.wikipedia.org",
+   "ns": 0,
+   "page": "Lalala (melodie de Y2K \u0219i bbno$)",
+   "handle": "bbnotiktok",
+   "vid": "7232782209319472390",
+   "url": "https://www.tiktok.com/@bbnotiktok/video/7232782209319472390?lang=en"
+  },
+  {
+   "wiki": "ro.wikipedia.org",
+   "ns": 0,
+   "page": "Manon Bannerman",
+   "handle": "aramkk5",
+   "vid": "7205065624039591214",
+   "url": "https://www.tiktok.com/@aramkk5/video/7205065624039591214"
+  },
+  {
+   "wiki": "ro.wikipedia.org",
+   "ns": 0,
+   "page": "6-7 (mem\u0103)",
+   "handle": "matvii%20grinblat",
+   "vid": "7443337851552484638",
+   "url": "https://www.tiktok.com/@matvii%20grinblat/video/7443337851552484638"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u041a\u0430\u0440\u0438\u043d\u0430 \u0410\u043d\u0434\u043e\u043d\u043e\u0432\u0430",
+   "handle": "karinaax11",
+   "vid": "7128426696969096453",
+   "url": "https://www.tiktok.com/@karinaax11/video/7128426696969096453"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u041a\u0440\u0438\u0441\u0442\u0438\u044f\u043d \u0412\u044a\u0440\u0431\u0430\u043d\u043e\u0432\u0441\u043a\u0438",
+   "handle": "chris_varbanovski",
+   "vid": "7091198550067006725",
+   "url": "https://www.tiktok.com/@chris_varbanovski/video/7091198550067006725"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u041a\u0440\u0438\u0441\u0442\u0438\u044f\u043d \u0412\u044a\u0440\u0431\u0430\u043d\u043e\u0432\u0441\u043a\u0438",
+   "handle": "chris_varbanovski",
+   "vid": "7187039669282966790",
+   "url": "https://www.tiktok.com/@chris_varbanovski/video/7187039669282966790"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u041c\u0438\u0441\u0442\u0435\u0440\u0438\u0438\u0442\u0435 \u043d\u0430 \u0425\u044a\u043d\u0442\u044a\u0440 \u0421\u0442\u0440\u0438\u0439\u0442",
+   "handle": "acho.pro",
+   "vid": "6971862895227407621",
+   "url": "https://www.tiktok.com/@acho.pro/video/6971862895227407621"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u0411\u0430\u0442\u044c\u043a\u043e \u043d\u0430\u0448 \u0411\u0430\u043d\u0434\u0435\u0440\u0430",
+   "handle": "oleglutsan",
+   "vid": "7048742406308728070",
+   "url": "https://www.tiktok.com/@oleglutsan/video/7048742406308728070?_r=1&_d=secCgYIASAHKAESPgo8o0j76RbISjXFaQhUq65NhtIBwJNkupFWFWWTa0YUJ0n8FjvcSCya/l4M2aITuu0wtNAyQyqhApvIFkchGgA%3D&language=uk&preview_pb=0&sec_user_id=MS4wLjABAAAA8hIbSgbA4WwBGRe82qOzhubtB5A3YmMmuhMaZ0fD6BMGcq-XsKUC8FyL5FUQZ8et&share_app_id=1233&share_item_id=7048742406308728070&share_link_id=16a3f1d7-d9ce-4213-b9f6-d656cd3f43f0&source=h5_m&timestamp=1669557482&u_code=dl7ile70klgamc&ugbiz_name=Main&user_id=7020134108282012678&utm_campaign=client_share&utm_medium=android&utm_source=copy"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u041e\u0441\u0442\u0440\u043e\u0432\u044a\u0442 \u043d\u0430 \u043b\u0435\u0442\u043d\u0438\u044f \u043b\u0430\u0433\u0435\u0440",
+   "handle": "sotirmelevtok",
+   "vid": "7274887117841435936",
+   "url": "https://www.tiktok.com/@sotirmelevtok/video/7274887117841435936"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u0422\u0430\u0444\u0438",
+   "handle": "sotirmelevtok",
+   "vid": "7274102687300422944",
+   "url": "https://www.tiktok.com/@sotirmelevtok/video/7274102687300422944"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u0422\u0430\u0444\u0438",
+   "handle": "sotirmelevtok",
+   "vid": "7274620650688384289",
+   "url": "https://www.tiktok.com/@sotirmelevtok/video/7274620650688384289"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u0411\u0430\u043a\u0443\u0433\u0430\u043d: \u0411\u0430\u0442\u044a\u043b \u041f\u043b\u0430\u043d\u0435\u0442",
+   "handle": "sotirmelevtok",
+   "vid": "7273492776895958305",
+   "url": "https://www.tiktok.com/@sotirmelevtok/video/7273492776895958305"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u0421\u0435\u043c\u0435\u0439\u0441\u0442\u0432\u043e \u041a\u0430\u0441\u0430\u0433\u0440\u0430\u043d\u0434\u0435",
+   "handle": "sotirmelevtok",
+   "vid": "7280527340776590625",
+   "url": "https://www.tiktok.com/@sotirmelevtok/video/7280527340776590625"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u0421\u043e\u0442\u0438\u0440 \u041c\u0435\u043b\u0435\u0432",
+   "handle": "sotirmelevtok",
+   "vid": "7276753641841642785",
+   "url": "https://www.tiktok.com/@sotirmelevtok/video/7276753641841642785"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u041a\u0430\u0440\u0438\u043d\u0430 \u0410\u043d\u0434\u043e\u043d\u043e\u0432\u0430",
+   "handle": "karinaax11",
+   "vid": "7202268546410532101",
+   "url": "https://www.tiktok.com/@karinaax11/video/7202268546410532101"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u041c\u0435\u0447\u0435\u0442\u043e \u041c\u043d\u043e\u0433\u043e\u0437\u043d\u0430\u0439\u043a\u043e",
+   "handle": "acho.pro",
+   "vid": "7259773253978279194",
+   "url": "https://www.tiktok.com/@acho.pro/video/7259773253978279194"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u041c\u044a\u043d\u0438\u0446\u0438 \u0432 \u0428\u0430\u043d\u0442\u0430\u0432\u0435\u0440\u0441\u0438\u0442\u0435\u0442\u0430",
+   "handle": "acho.pro",
+   "vid": "7362512514350976289",
+   "url": "https://www.tiktok.com/@acho.pro/video/7362512514350976289"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u0411\u0430\u043a\u0443\u0433\u0430\u043d",
+   "handle": "acho.pro",
+   "vid": "7305928724162153761",
+   "url": "https://www.tiktok.com/@acho.pro/video/7305928724162153761"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u0423\u0431\u0438\u0439\u0441\u0442\u0432\u0430 \u0432 \u0420\u0430\u044f",
+   "handle": "sotirmelevtok",
+   "vid": "7366644001203621152",
+   "url": "https://www.tiktok.com/@sotirmelevtok/video/7366644001203621152"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u041a\u0430\u0440\u0438\u043d\u0430 \u0410\u043d\u0434\u043e\u043d\u043e\u0432\u0430",
+   "handle": "karinaax11",
+   "vid": "7379499281348185377",
+   "url": "https://www.tiktok.com/@karinaax11/video/7379499281348185377"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "Alfa (\u0442\u0435\u043b\u0435\u0432\u0438\u0437\u0438\u044f)",
+   "handle": "siderovvolen",
+   "vid": "7398095604523486497",
+   "url": "https://www.tiktok.com/@siderovvolen/video/7398095604523486497"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u041f\u0424\u041a \u201e\u041b\u0435\u0432\u0441\u043a\u0438\u201c (\u0421\u043e\u0444\u0438\u044f)",
+   "handle": "ruslan_dragomanov",
+   "vid": "7402195724005313825",
+   "url": "https://www.tiktok.com/@ruslan_dragomanov/video/7402195724005313825?is_from_webapp=1&sender_device=pc&web_id=7341699723310548513"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u0413\u043e\u043b\u044f\u043c\u043e\u0442\u043e \u0448\u043e\u0443 \u043d\u0430 \u0411\u0435\u0431\u0435 \u0410\u043a\u0443\u043b\u0430",
+   "handle": "achomusicofficial",
+   "vid": "7405929924697034017",
+   "url": "https://www.tiktok.com/@achomusicofficial/video/7405929924697034017"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u0413\u043e\u043b\u044f\u043c\u043e\u0442\u043e \u0448\u043e\u0443 \u043d\u0430 \u0411\u0435\u0431\u0435 \u0410\u043a\u0443\u043b\u0430",
+   "handle": "achomusicofficial",
+   "vid": "7405930497928334624",
+   "url": "https://www.tiktok.com/@achomusicofficial/video/7405930497928334624"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u0413\u043e\u043b\u044f\u043c\u043e\u0442\u043e \u0448\u043e\u0443 \u043d\u0430 \u0411\u0435\u0431\u0435 \u0410\u043a\u0443\u043b\u0430",
+   "handle": "achomusicofficial",
+   "vid": "7406033390656425249",
+   "url": "https://www.tiktok.com/@achomusicofficial/video/7406033390656425249"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u0413\u043e\u043b\u0434\u0438 \u0438 \u0441\u0442\u0430\u0440\u0430\u0442\u0430 \u0431\u0430\u043d\u0434\u0430",
+   "handle": "achomusicofficial",
+   "vid": "6969634005608107269",
+   "url": "https://www.tiktok.com/@achomusicofficial/video/6969634005608107269"
+  },
+  {
+   "wiki": "bg.wikipedia.org",
+   "ns": 0,
+   "page": "\u0418\u0431\u0440\u0430\u0445\u0438\u043c-\u043f\u0430\u0448\u0430 \u0421\u0430\u0434\u0438\u043a\u043e\u0432",
+   "handle": "vv.putin.6680",
+   "vid": "7375038528268373264",
+   "url": "https://www.tiktok.com/@vv.putin.6680/video/7375038528268373264"
+  },
+  {
+   "wiki": "sr.wikipedia.org",
+   "ns": 0,
+   "page": "\u0420\u043e\u043a\u0441\u0435\u043d",
+   "handle": "roxen",
+   "vid": "6990322064628436229",
+   "url": "https://www.tiktok.com/@roxen/video/6990322064628436229"
+  },
+  {
+   "wiki": "sr.wikipedia.org",
+   "ns": 0,
+   "page": "\u0424\u041a \u0412\u0412 \u0412\u0438\u0430\u043d\u0435\u043d",
+   "handle": "vv.vianen",
+   "vid": "7238970695764512026",
+   "url": "https://www.tiktok.com/@vv.vianen/video/7238970695764512026"
+  },
+  {
+   "wiki": "sr.wikipedia.org",
+   "ns": 0,
+   "page": "\u0414\u043e\u043a\u0442\u043e\u0440 \u0425\u0443 (\u0441\u043f\u0435\u0446\u0438\u0458\u0430\u043b\u0438 2023)",
+   "handle": "MS4wLjABAAAADf-JNH7kuuaPIp4quqBpGnf-Z3pnfJmnPdiESrU-sdtzkxrYFVlyVGznoh_Y8Jc4",
+   "vid": "7301731432672644353",
+   "url": "https://www.tiktok.com/@MS4wLjABAAAADf-JNH7kuuaPIp4quqBpGnf-Z3pnfJmnPdiESrU-sdtzkxrYFVlyVGznoh_Y8Jc4/video/7301731432672644353?_r=1&_t=8hR5gtwUfdw"
+  },
+  {
+   "wiki": "sr.wikipedia.org",
+   "ns": 0,
+   "page": "\u0414\u043e\u043a\u0442\u043e\u0440 \u0425\u0443 (14. \u0441\u0435\u0440\u0438\u0458\u0430\u043b)",
+   "handle": "jeremybearimysciacca",
+   "vid": "7364058483685117227",
+   "url": "https://www.tiktok.com/@jeremybearimysciacca/video/7364058483685117227"
+  },
+  {
+   "wiki": "sr.wikipedia.org",
+   "ns": 0,
+   "page": "\u0414\u0430\u043d\u0438\u0458\u0435\u043b \u041c\u0430\u043a\u043b\u0435\u043b\u0430\u043d",
+   "handle": "maklelan",
+   "vid": "7321487326218046751",
+   "url": "https://www.tiktok.com/@maklelan/video/7321487326218046751"
+  },
+  {
+   "wiki": "sr.wikipedia.org",
+   "ns": 0,
+   "page": "\u041c\u0438\u043b\u043e\u0448 \u041c\u0438\u045b\u043e\u0432\u0438\u045b",
+   "handle": "theonebadangel",
+   "vid": "7470570149234363654",
+   "url": "https://www.tiktok.com/@theonebadangel/video/7470570149234363654"
+  },
+  {
+   "wiki": "sr.wikipedia.org",
+   "ns": 0,
+   "page": "\u041c\u0438\u043b\u043e\u0448 \u041c\u0438\u045b\u043e\u0432\u0438\u045b",
+   "handle": "theonebadangel",
+   "vid": "7470192221313174789",
+   "url": "https://www.tiktok.com/@theonebadangel/video/7470192221313174789"
+  },
+  {
+   "wiki": "sr.wikipedia.org",
+   "ns": 0,
+   "page": "6-7 (\u043c\u0438\u043c)",
+   "handle": "haasf1official",
+   "vid": "7575425508762995990",
+   "url": "https://www.tiktok.com/@haasf1official/video/7575425508762995990"
+  },
+  {
+   "wiki": "sr.wikipedia.org",
+   "ns": 0,
+   "page": "Jablanica Productions",
+   "handle": "jablanica_productions",
+   "vid": "7652360279791160594",
+   "url": "https://www.tiktok.com/@jablanica_productions/video/7652360279791160594?_r=1&_t=ZS-98nXKx1CB4J"
+  },
+  {
+   "wiki": "sr.wikipedia.org",
+   "ns": 0,
+   "page": "Jablanica Productions",
+   "handle": "jablanica_productions",
+   "vid": "7665445728050810132",
+   "url": "https://www.tiktok.com/@jablanica_productions/video/7665445728050810132?_r=1&_t=ZS-98nXITJxTip"
+  },
+  {
+   "wiki": "hr.wikipedia.org",
+   "ns": 0,
+   "page": "Kre\u0161o Bengalka",
+   "handle": "kresobengalkaofficial",
+   "vid": "7189935255413918981",
+   "url": "https://www.tiktok.com/@kresobengalkaofficial/video/7189935255413918981"
+  },
+  {
+   "wiki": "hr.wikipedia.org",
+   "ns": 0,
+   "page": "Andrej Plenkovi\u0107",
+   "handle": "plenkovic_andrej",
+   "vid": "7353945695553850656",
+   "url": "https://www.tiktok.com/@plenkovic_andrej/video/7353945695553850656?_t=8lFkimg0nyr&_r=1"
+  },
+  {
+   "wiki": "sk.wikipedia.org",
+   "ns": 0,
+   "page": "Calin",
+   "handle": "calinpanfili",
+   "vid": "7379175278200868128",
+   "url": "https://www.tiktok.com/@calinpanfili/video/7379175278200868128"
+  },
+  {
+   "wiki": "sk.wikipedia.org",
+   "ns": 0,
+   "page": "Nik Tendo",
+   "handle": "_goldcigo",
+   "vid": "7026385668318268677",
+   "url": "https://www.tiktok.com/@_goldcigo/video/7026385668318268677"
+  },
+  {
+   "wiki": "sk.wikipedia.org",
+   "ns": 0,
+   "page": "Nik Tendo",
+   "handle": "_goldcigo",
+   "vid": "7063483214400163078",
+   "url": "https://www.tiktok.com/@_goldcigo/video/7063483214400163078"
+  },
+  {
+   "wiki": "sl.wikipedia.org",
+   "ns": 0,
+   "page": "Robert Golob",
+   "handle": "natassamarkovic",
+   "vid": "7558852903226576150",
+   "url": "https://www.tiktok.com/@natassamarkovic/video/7558852903226576150?is_from_webapp=1&sender_device=pc&web_id=7559208221883614742"
+  },
+  {
+   "wiki": "lv.wikipedia.org",
+   "ns": 0,
+   "page": "Rektopuss",
+   "handle": "rektopuss",
+   "vid": "7095427911477513477",
+   "url": "https://www.tiktok.com/@rektopuss/video/7095427911477513477?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "et.wikipedia.org",
+   "ns": 0,
+   "page": "Yami kawaii",
+   "handle": "kaila.yu",
+   "vid": "7137028895626235178",
+   "url": "https://www.tiktok.com/@kaila.yu/video/7137028895626235178"
+  },
+  {
+   "wiki": "et.wikipedia.org",
+   "ns": 0,
+   "page": "Neljap\u00e4evak",
+   "handle": "tristanmp_",
+   "vid": "7645462779939327254",
+   "url": "https://www.tiktok.com/@tristanmp_/video/7645462779939327254"
+  },
+  {
+   "wiki": "ca.wikipedia.org",
+   "ns": 0,
+   "page": "TikTok",
+   "handle": "jasonderulo",
+   "vid": "7171112892656405802",
+   "url": "https://www.tiktok.com/@jasonderulo/video/7171112892656405802?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "ca.wikipedia.org",
+   "ns": 0,
+   "page": "TikTok",
+   "handle": "rosalia",
+   "vid": "7119554588553825541",
+   "url": "https://www.tiktok.com/@rosalia/video/7119554588553825541?embed_source=70846777,120811592,120810756;null;embed_masking&is_copy_url=1&is_from_webapp=v1&refer=embed&referer_url=www.ultimahora.es/noticias/cultura/2022/08/01/1766045/tiktok-rosalia-baila-despecha-mallorca.html&referer_video_id=7126609694428253445"
+  },
+  {
+   "wiki": "ca.wikipedia.org",
+   "ns": 0,
+   "page": "TikTok",
+   "handle": "luvjessicablair",
+   "vid": "7082878816888229166",
+   "url": "https://www.tiktok.com/@luvjessicablair/video/7082878816888229166?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "ca.wikipedia.org",
+   "ns": 0,
+   "page": "TikTok",
+   "handle": "diegusa",
+   "vid": "7161120831748230406",
+   "url": "https://www.tiktok.com/@diegusa/video/7161120831748230406?is_copy_url=1&is_from_webapp=v1&lang=es"
+  },
+  {
+   "wiki": "ca.wikipedia.org",
+   "ns": 0,
+   "page": "TikTok",
+   "handle": "n0gitsxnes",
+   "vid": "7169243549307915526",
+   "url": "https://www.tiktok.com/@n0gitsxnes/video/7169243549307915526?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "ca.wikipedia.org",
+   "ns": 0,
+   "page": "TikTok",
+   "handle": "ladygaga",
+   "vid": "7174951907461467435",
+   "url": "https://www.tiktok.com/@ladygaga/video/7174951907461467435?is_from_webapp=v1&item_id=7174951907461467435"
+  },
+  {
+   "wiki": "ca.wikipedia.org",
+   "ns": 0,
+   "page": "TikTok",
+   "handle": "codyfrymusic",
+   "vid": "6981846059882417414",
+   "url": "https://www.tiktok.com/@codyfrymusic/video/6981846059882417414"
+  },
+  {
+   "wiki": "ca.wikipedia.org",
+   "ns": 0,
+   "page": "TikTok",
+   "handle": "420doggface208",
+   "vid": "6876424179084709126",
+   "url": "https://www.tiktok.com/@420doggface208/video/6876424179084709126?_r=1&is_from_webapp=v1&item_id=6876424179084709126&_d=secCgYIASAHKAESPgo8s9F7VTSyXPk6dmS51zpxQmuFNcY73t2W1ntCl01xVwMUhJcuPvFwtUjl15eh3EhK8KKN8ytrr9nk7jGMGgA%3D&checksum=a0cb62a76c595a2a71006f2fd0e046101a603bd1cf4ad3b9a5958ca3e11438f7&language=en&preview_pb=0&sec_user_id=MS4wLjABAAAAI8Tk3saXf4ZgaHvMCtaCDrC1zAkpLkfHwqYguMoJSl2MT0vgjbc5WbYLDZzUbRbV&share_app_id=1233&share_item_id=6876424179084709126&share_link_id=79BFF18F-FA5C-491F-AFE6-2F9798128B99&source=h5_m&timestamp=1670244111&tt_from=whatsapp&u_code=6g926fd9ij3ge&ug_btm=b2878,b2878&user_id=147109666550947840&utm_campaign=client_share&utm_medium=ios&utm_source=whatsapp"
+  },
+  {
+   "wiki": "ca.wikipedia.org",
+   "ns": 0,
+   "page": "TikTok",
+   "handle": "codyfrymusic",
+   "vid": "7123257217834437934",
+   "url": "https://www.tiktok.com/@codyfrymusic/video/7123257217834437934?_r=1&is_from_webapp=v1&item_id=7123257217834437934&_d=secCgYIASAHKAESPgo8PzOCuMZuTBTCQQFQXo%2BL80eRf4hAzsQ1eAAQnlTYbAm2vzZH0FkIPSfi0N2gcy%2Bkx/KjTadp5xE4izQ5GgA%3D&checksum=87bdafe3590fd90ac21c56590f55a079ba15866a9b5f635ed57e52eeeb3b0fe4&language=en&preview_pb=0&sec_user_id=MS4wLjABAAAAI8Tk3saXf4ZgaHvMCtaCDrC1zAkpLkfHwqYguMoJSl2MT0vgjbc5WbYLDZzUbRbV&share_app_id=1233&share_item_id=7123257217834437934&share_link_id=BB2B9A4D-E129-4535-AD9B-C48A3E8423AE&source=h5_m&timestamp=1670244969&tt_from=whatsapp&u_code=6g926fd9ij3ge&ug_btm=b8727,b2878&user_id=147109666550947840&utm_campaign=client_share&utm_medium=ios&utm_source=whatsapp"
+  },
+  {
+   "wiki": "ca.wikipedia.org",
+   "ns": 0,
+   "page": "Tim\u00f3",
+   "handle": "greaterlongisland",
+   "vid": "7466054194265394462",
+   "url": "https://www.tiktok.com/@greaterlongisland/video/7466054194265394462"
+  },
+  {
+   "wiki": "ca.wikipedia.org",
+   "ns": 0,
+   "page": "TikTok",
+   "handle": "tatemcrae",
+   "vid": "7139276239533067563",
+   "url": "https://www.tiktok.com/@tatemcrae/video/7139276239533067563?is_copy_url=1&is_from_webapp=v1&item_id=7139276239533067563&lang=es"
+  },
+  {
+   "wiki": "eu.wikipedia.org",
+   "ns": 0,
+   "page": "Sara Groenewegen",
+   "handle": "saragroe",
+   "vid": "6959282778273795333",
+   "url": "https://www.tiktok.com/@saragroe/video/6959282778273795333?lang=en&is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "eu.wikipedia.org",
+   "ns": 0,
+   "page": "In\u00e9s Hernand",
+   "handle": "alsanmol",
+   "vid": "7250578457984322843",
+   "url": "https://www.tiktok.com/@alsanmol/video/7250578457984322843"
+  },
+  {
+   "wiki": "eu.wikipedia.org",
+   "ns": 0,
+   "page": "Paige Layle",
+   "handle": "paigelayle",
+   "vid": "6901751753641889026",
+   "url": "https://www.tiktok.com/@paigelayle/video/6901751753641889026?lang=en"
+  },
+  {
+   "wiki": "eu.wikipedia.org",
+   "ns": 0,
+   "page": "Calypso Botez",
+   "handle": "mariuscoman8151",
+   "vid": "7352473309268708641",
+   "url": "https://www.tiktok.com/@mariuscoman8151/video/7352473309268708641"
+  },
+  {
+   "wiki": "eu.wikipedia.org",
+   "ns": 0,
+   "page": "Full of Life",
+   "handle": "tomasmier",
+   "vid": "7273383491226619179",
+   "url": "https://www.tiktok.com/@tomasmier/video/7273383491226619179"
+  },
+  {
+   "wiki": "eu.wikipedia.org",
+   "ns": 0,
+   "page": "Stepan Tsirkin",
+   "handle": "diariovasco",
+   "vid": "7447996521125104928",
+   "url": "https://www.tiktok.com/@diariovasco/video/7447996521125104928"
+  },
+  {
+   "wiki": "eu.wikipedia.org",
+   "ns": 0,
+   "page": "Iratxe Etxeandia",
+   "handle": "euskadi_irratia",
+   "vid": "7399701897935867169",
+   "url": "https://www.tiktok.com/@euskadi_irratia/video/7399701897935867169"
+  },
+  {
+   "wiki": "eu.wikipedia.org",
+   "ns": 0,
+   "page": "Yolanda Mendaza Uriarte",
+   "handle": "elcorreo_com",
+   "vid": "7501649529876253974",
+   "url": "https://www.tiktok.com/@elcorreo_com/video/7501649529876253974"
+  },
+  {
+   "wiki": "eu.wikipedia.org",
+   "ns": 0,
+   "page": "Los Goros",
+   "handle": "gukgreen",
+   "vid": "7506608096547065110",
+   "url": "https://www.tiktok.com/@gukgreen/video/7506608096547065110"
+  },
+  {
+   "wiki": "eu.wikipedia.org",
+   "ns": 0,
+   "page": "Rosa Sevilla de Alvero",
+   "handle": "mightymagulang",
+   "vid": "7232287697103064325",
+   "url": "https://www.tiktok.com/@mightymagulang/video/7232287697103064325"
+  },
+  {
+   "wiki": "az.wikipedia.org",
+   "ns": 0,
+   "page": "Millennial pauza",
+   "handle": "victoriahammett",
+   "vid": "6934809501593865477",
+   "url": "https://www.tiktok.com/@victoriahammett/video/6934809501593865477"
+  },
+  {
+   "wiki": "az.wikipedia.org",
+   "ns": 0,
+   "page": "Millennial pauza",
+   "handle": "nisipisa",
+   "vid": "7034893176569728302",
+   "url": "https://www.tiktok.com/@nisipisa/video/7034893176569728302"
+  },
+  {
+   "wiki": "az.wikipedia.org",
+   "ns": 0,
+   "page": "Q\u0131mq\u0131m\u0131lar",
+   "handle": "cicekmahmudqizi",
+   "vid": "7528883301931650322",
+   "url": "https://www.tiktok.com/@cicekmahmudqizi/video/7528883301931650322"
+  },
+  {
+   "wiki": "az.wikipedia.org",
+   "ns": 0,
+   "page": "Martin Skorseze",
+   "handle": "francescascorsese",
+   "vid": "7286611789863980334",
+   "url": "https://www.tiktok.com/@francescascorsese/video/7286611789863980334"
+  },
+  {
+   "wiki": "kk.wikipedia.org",
+   "ns": 0,
+   "page": "\u049a\u0443\u0430\u043d\u0434\u044b\u049b \u0423\u04d9\u043b\u0438\u0445\u0430\u043d\u04b1\u043b\u044b \u0411\u0438\u0448\u0456\u043c\u0431\u0430\u0435\u0432",
+   "handle": "dosonalbaeb",
+   "vid": "7357057087307812102",
+   "url": "https://www.tiktok.com/@dosonalbaeb/video/7357057087307812102?_t=8lTzfw2WrdV&_r=1"
+  },
+  {
+   "wiki": "mn.wikipedia.org",
+   "ns": 0,
+   "page": "DPR Ian",
+   "handle": "wassupann",
+   "vid": "7279205800122305798",
+   "url": "https://www.tiktok.com/@wassupann/video/7279205800122305798?lang=en"
+  },
+  {
+   "wiki": "sw.wikipedia.org",
+   "ns": 0,
+   "page": "Eitan Bernath",
+   "handle": "eitan",
+   "vid": "7196444871274630442",
+   "url": "https://www.tiktok.com/@eitan/video/7196444871274630442"
+  },
+  {
+   "wiki": "af.wikipedia.org",
+   "ns": 0,
+   "page": "Kurtis Conner",
+   "handle": "kurtisconner",
+   "vid": "7372726039341976838",
+   "url": "https://www.tiktok.com/@kurtisconner/video/7372726039341976838"
+  },
+  {
+   "wiki": "is.wikipedia.org",
+   "ns": 0,
+   "page": "Borgarstj\u00f3rnarkosningar \u00ed Reykjav\u00edk 2026",
+   "handle": "chessafterdark",
+   "vid": "7420887642784435489",
+   "url": "https://www.tiktok.com/@chessafterdark/video/7420887642784435489?lang=en"
+  },
+  {
+   "wiki": "mk.wikipedia.org",
+   "ns": 0,
+   "page": "\u0425\u0435\u0458\u043b\u0438 \u0421\u0442\u0430\u0458\u043d\u0444\u0435\u043b\u0434",
+   "handle": "haileesteinfeld",
+   "vid": "7163354748383431979",
+   "url": "https://www.tiktok.com/@haileesteinfeld/video/7163354748383431979?is_from_webapp=v1&item_id=7163354748383431979"
+  },
+  {
+   "wiki": "mk.wikipedia.org",
+   "ns": 0,
+   "page": "\u040f\u043e\u0448\u0443\u0430 \u0410\u043c\u043f\u043e\u043d\u0441\u0435\u043c",
+   "handle": "unclimatechange",
+   "vid": "7029359789217975558",
+   "url": "https://www.tiktok.com/@unclimatechange/video/7029359789217975558"
+  },
+  {
+   "wiki": "mk.wikipedia.org",
+   "ns": 0,
+   "page": "\u0415\u043b\u0438 \u0413\u043e\u043b\u0434\u0438\u043d\u0433",
+   "handle": "starsmithmusic",
+   "vid": "7395619270324948256",
+   "url": "https://www.tiktok.com/@starsmithmusic/video/7395619270324948256"
+  },
+  {
+   "wiki": "be.wikipedia.org",
+   "ns": 0,
+   "page": "\u0412\u0443\u043b\u0456\u0446\u0430 \u041a\u0430\u0440\u043b\u0430 \u041c\u0430\u0440\u043a\u0441\u0430 (\u041c\u0456\u043d\u0441\u043a)",
+   "handle": "oh_valeriee1",
+   "vid": "7389724029680094470",
+   "url": "https://www.tiktok.com/@oh_valeriee1/video/7389724029680094470"
+  },
+  {
+   "wiki": "be.wikipedia.org",
+   "ns": 0,
+   "page": "Vioria",
+   "handle": "vioria.a",
+   "vid": "7076828019268242693",
+   "url": "https://www.tiktok.com/@vioria.a/video/7076828019268242693"
+  },
+  {
+   "wiki": "be.wikipedia.org",
+   "ns": 0,
+   "page": "\u0417\u0430\u0432\u0456\u0440\u0443\u0445\u0430 (\u043f\u0435\u0441\u043d\u044f)",
+   "handle": "naviband",
+   "vid": "7304719877841915141",
+   "url": "https://www.tiktok.com/@naviband/video/7304719877841915141"
+  },
+  {
+   "wiki": "nn.wikipedia.org",
+   "ns": 0,
+   "page": "Patricia Routledge",
+   "handle": "nostalgiawizard",
+   "vid": "7494214776248225046",
+   "url": "https://www.tiktok.com/@nostalgiawizard/video/7494214776248225046"
+  },
+  {
+   "wiki": "simple.wikipedia.org",
+   "ns": 0,
+   "page": "2022 University of Idaho killings",
+   "handle": "plundertruecrime",
+   "vid": "7166673894605196587",
+   "url": "https://www.tiktok.com/@plundertruecrime/video/7166673894605196587?is_from_webapp=v1&item_id=7166673894605196587"
+  },
+  {
+   "wiki": "simple.wikipedia.org",
+   "ns": 0,
+   "page": "Em Beihold",
+   "handle": "embeihold",
+   "vid": "7053356619131915567",
+   "url": "https://www.tiktok.com/@embeihold/video/7053356619131915567?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "simple.wikipedia.org",
+   "ns": 0,
+   "page": "List of songs recorded by Shakira",
+   "handle": "galeoficial",
+   "vid": "7349334444878105886",
+   "url": "https://www.tiktok.com/@galeoficial/video/7349334444878105886"
+  },
+  {
+   "wiki": "simple.wikipedia.org",
+   "ns": 0,
+   "page": "Keb Cuevas",
+   "handle": "kebcuevas",
+   "vid": "7058304537160994074",
+   "url": "https://www.tiktok.com/@kebcuevas/video/7058304537160994074"
+  },
+  {
+   "wiki": "simple.wikipedia.org",
+   "ns": 0,
+   "page": "Valkyrae",
+   "handle": "wineaboutitpodcast",
+   "vid": "7582993556575358222",
+   "url": "https://www.tiktok.com/@wineaboutitpodcast/video/7582993556575358222"
+  },
+  {
+   "wiki": "ga.wikipedia.org",
+   "ns": 0,
+   "page": "The Wolfe Tones",
+   "handle": "wolfe_tones_official",
+   "vid": "6928280074974252294",
+   "url": "https://www.tiktok.com/@wolfe_tones_official/video/6928280074974252294?is_copy_url=1&is_from_webapp=v2"
+  },
+  {
+   "wiki": "ga.wikipedia.org",
+   "ns": 0,
+   "page": "Joe Molloy",
+   "handle": "culturnaheireann",
+   "vid": "7239367382903426331",
+   "url": "https://www.tiktok.com/@culturnaheireann/video/7239367382903426331"
+  },
+  {
+   "wiki": "ga.wikipedia.org",
+   "ns": 0,
+   "page": "Billie Joe Armstrong",
+   "handle": "bidotorg",
+   "vid": "7380136573494545710",
+   "url": "https://www.tiktok.com/@bidotorg/video/7380136573494545710"
+  },
+  {
+   "wiki": "ga.wikipedia.org",
+   "ns": 0,
+   "page": "Mischa and the bear",
+   "handle": "mischa.and.the.bear",
+   "vid": "7606468807535774998",
+   "url": "https://www.tiktok.com/@mischa.and.the.bear/video/7606468807535774998"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 1,
+   "page": "Diskussion:Annekatrin Klepsch",
+   "handle": "aktu_nakt",
+   "vid": "7217344048917384454",
+   "url": "https://www.tiktok.com/@aktu_nakt/video/7217344048917384454"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 1,
+   "page": "Diskussion:Okertalsperre",
+   "handle": "mirkogrobe",
+   "vid": "7317313950880714017",
+   "url": "https://www.tiktok.com/@mirkogrobe/video/7317313950880714017"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 1,
+   "page": "Diskussion:Markus Krall/Archiv",
+   "handle": "nickthereal_",
+   "vid": "7239035478807153946",
+   "url": "https://www.tiktok.com/@nickthereal_/video/7239035478807153946?is_from_webapp=1"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 1,
+   "page": "Diskussion:Parentifizierung",
+   "handle": "katimorton",
+   "vid": "7338071796152831275",
+   "url": "https://www.tiktok.com/@katimorton/video/7338071796152831275?lang=en"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 1,
+   "page": "Diskussion:U-Bahn/Archiv/1",
+   "handle": "can6091",
+   "vid": "7228587634392681754",
+   "url": "https://www.tiktok.com/@can6091/video/7228587634392681754"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 1,
+   "page": "Diskussion:Chengdu J-20",
+   "handle": "warmtalking",
+   "vid": "7194642887185927467",
+   "url": "https://www.tiktok.com/@warmtalking/video/7194642887185927467"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 1,
+   "page": "Diskussion:Schubi AKpella",
+   "handle": "schubi_akpella",
+   "vid": "7405236686008945952",
+   "url": "https://www.tiktok.com/@schubi_akpella/video/7405236686008945952"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 1,
+   "page": "Diskussion:Ishihara-Farbtafel",
+   "handle": "scienceitch",
+   "vid": "7456809704975568150",
+   "url": "https://www.tiktok.com/@scienceitch/video/7456809704975568150"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 1,
+   "page": "Diskussion:Raegan Revord",
+   "handle": "rae.revord",
+   "vid": "7444991919295483182",
+   "url": "https://www.tiktok.com/@rae.revord/video/7444991919295483182"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 1,
+   "page": "Diskussion:Nam Duy Nguyen",
+   "handle": "namduy.nguyen",
+   "vid": "7395668081156181280",
+   "url": "https://www.tiktok.com/@namduy.nguyen/video/7395668081156181280"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 1,
+   "page": "Diskussion:Katja Krasavice",
+   "handle": "katjakrasavice",
+   "vid": "7511738066076208406",
+   "url": "https://www.tiktok.com/@katjakrasavice/video/7511738066076208406"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 1,
+   "page": "Diskussion:Damensitz",
+   "handle": "thea_maschalani",
+   "vid": "7526631243836853526",
+   "url": "https://www.tiktok.com/@thea_maschalani/video/7526631243836853526?is_from_webapp=1&sender_device=pc"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 1,
+   "page": "Diskussion:Greta Thunberg",
+   "handle": "huch",
+   "vid": "7586646427326041366",
+   "url": "https://www.tiktok.com/@huch/video/7586646427326041366"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 1,
+   "page": "Diskussion:Zara Larsson",
+   "handle": "zaralarsson",
+   "vid": "7608366870659337494",
+   "url": "https://www.tiktok.com/@zaralarsson/video/7608366870659337494"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 1,
+   "page": "Diskussion:Diana zur L\u00f6wen",
+   "handle": "dianazurloewen",
+   "vid": "7640488503754640672",
+   "url": "https://www.tiktok.com/@dianazurloewen/video/7640488503754640672"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 1,
+   "page": "Diskussion:Juliette Schoppmann",
+   "handle": "frauensindschuld",
+   "vid": "7654513768180747551",
+   "url": "https://www.tiktok.com/@frauensindschuld/video/7654513768180747551"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Tobiasi0/Clemens Brock",
+   "handle": "clmnsbrock",
+   "vid": "6751193601423707398",
+   "url": "https://www.tiktok.com/@clmnsbrock/video/6751193601423707398"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Dare777/David Renken",
+   "handle": "herrdavid",
+   "vid": "6573522909984197893",
+   "url": "https://www.tiktok.com/@herrdavid/video/6573522909984197893?_r=1"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Michael2141/Tommyrich",
+   "handle": "_tommyrich_",
+   "vid": "7042652320294817030",
+   "url": "https://www.tiktok.com/@_tommyrich_/video/7042652320294817030?is_from_webapp=1&sender_device=pc&web_id=7033481681194321409"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Michael2141/Tommyrich",
+   "handle": "_tommyrich_",
+   "vid": "7068996210144578821",
+   "url": "https://www.tiktok.com/@_tommyrich_/video/7068996210144578821?is_copy_url=1&is_from_webapp=v1&lang=de-DE"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Michael2141/Tommyrich",
+   "handle": "_tommyrich_",
+   "vid": "7053835634917592326",
+   "url": "https://www.tiktok.com/@_tommyrich_/video/7053835634917592326?is_copy_url=1&is_from_webapp=v1&lang=de-DE"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Buma654/Artikelentwurf",
+   "handle": "itzbrady22",
+   "vid": "7243462986575138091",
+   "url": "https://www.tiktok.com/@itzbrady22/video/7243462986575138091?lang=de-DE"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Insight.gg/Di1araa.s Entwurf",
+   "handle": "di1araa.s",
+   "vid": "7159610228902907141",
+   "url": "https://www.tiktok.com/@di1araa.s/video/7159610228902907141?lang=en"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Verena,mag/Patrick W\u00f6ss",
+   "handle": "bundesheer",
+   "vid": "7298710128411315489",
+   "url": "https://www.tiktok.com/@bundesheer/video/7298710128411315489"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Aka/Tippfehler entfernt",
+   "handle": "00aka",
+   "vid": "6820092529774529794",
+   "url": "https://www.tiktok.com/@00aka/video/6820092529774529794"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:KnightMove",
+   "handle": "eurovision",
+   "vid": "7364759095003385120",
+   "url": "https://www.tiktok.com/@eurovision/video/7364759095003385120"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Felicitas M\u00fcller/Noel Dederichs",
+   "handle": "noel_dederichs",
+   "vid": "7339588233539407136",
+   "url": "https://www.tiktok.com/@noel_dederichs/video/7339588233539407136"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Suit/Recycling Fabrik",
+   "handle": "recyclingrudi",
+   "vid": "7327705165845531936",
+   "url": "https://www.tiktok.com/@recyclingrudi/video/7327705165845531936"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Suit/Recycling Fabrik",
+   "handle": "recyclingrudi",
+   "vid": "7390806542750141729",
+   "url": "https://www.tiktok.com/@recyclingrudi/video/7390806542750141729"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:\u00dcber-Blick/Lisa Poettinger",
+   "handle": "br24",
+   "vid": "7465744041246870817",
+   "url": "https://www.tiktok.com/@br24/video/7465744041246870817"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:\u00dcber-Blick/Lisa Poettinger",
+   "handle": "privatbert",
+   "vid": "7464609335117712662",
+   "url": "https://www.tiktok.com/@privatbert/video/7464609335117712662"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:\u00dcber-Blick/Lisa Poettinger",
+   "handle": "ja_icke",
+   "vid": "7464637444097412374",
+   "url": "https://www.tiktok.com/@ja_icke/video/7464637444097412374"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Luzpalokaj 93/Luz Palokaj",
+   "handle": "luzpalokaj",
+   "vid": "6812316716408851717",
+   "url": "https://www.tiktok.com/@luzpalokaj/video/6812316716408851717"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Mi.be/Hurkle-Durkle",
+   "handle": "kirakosarin",
+   "vid": "7322317036883856671",
+   "url": "https://www.tiktok.com/@kirakosarin/video/7322317036883856671?lang=de-DE"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Hermes Hyperion/Artikelentwurf",
+   "handle": "vitlif",
+   "vid": "7491723982140411158",
+   "url": "https://www.tiktok.com/@vitlif/video/7491723982140411158?lang=de-DE"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Aemijork/Raab",
+   "handle": "diemilitanteveganerin3",
+   "vid": "7147014466557758725",
+   "url": "https://www.tiktok.com/@diemilitanteveganerin3/video/7147014466557758725?lang=de-DE"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Sophie0504/Entwurf",
+   "handle": "kimisinamoodlive",
+   "vid": "7628650970821528865",
+   "url": "https://www.tiktok.com/@kimisinamoodlive/video/7628650970821528865?lang=de-DE"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Sophie0504/Entwurf",
+   "handle": "kimisinamoodlive",
+   "vid": "7563721969691069718",
+   "url": "https://www.tiktok.com/@kimisinamoodlive/video/7563721969691069718"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Sophie0504/Entwurf",
+   "handle": "kimisinamoodlive",
+   "vid": "7624930696368229664",
+   "url": "https://www.tiktok.com/@kimisinamoodlive/video/7624930696368229664"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Sophie0504/Entwurf",
+   "handle": "kimisinamoodlive",
+   "vid": "7480970980987309334",
+   "url": "https://www.tiktok.com/@kimisinamoodlive/video/7480970980987309334"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Sophie0504/Entwurf",
+   "handle": "kimisinamoodlive",
+   "vid": "7463170395257064726",
+   "url": "https://www.tiktok.com/@kimisinamoodlive/video/7463170395257064726"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Sophie0504/Entwurf",
+   "handle": "kimisinamoodlive",
+   "vid": "7548888394030517526",
+   "url": "https://www.tiktok.com/@kimisinamoodlive/video/7548888394030517526"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Sophie0504/Entwurf",
+   "handle": "kimisinamoodlive",
+   "vid": "7413791202786495777",
+   "url": "https://www.tiktok.com/@kimisinamoodlive/video/7413791202786495777"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Sophie0504/Entwurf",
+   "handle": "kimisinamoodlive",
+   "vid": "7331762853034069281",
+   "url": "https://www.tiktok.com/@kimisinamoodlive/video/7331762853034069281"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Sophie0504/Entwurf",
+   "handle": "kimisinamood",
+   "vid": "7218250269069544709",
+   "url": "https://www.tiktok.com/@kimisinamood/video/7218250269069544709"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Sophie0504/Entwurf",
+   "handle": "kimisinamoodlive",
+   "vid": "7619013216307252512",
+   "url": "https://www.tiktok.com/@kimisinamoodlive/video/7619013216307252512"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Sophie0504/Entwurf",
+   "handle": "kimisinamoodlive",
+   "vid": "7424572024141417760",
+   "url": "https://www.tiktok.com/@kimisinamoodlive/video/7424572024141417760"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Sophie0504/Entwurf",
+   "handle": "kimisinamoodlive",
+   "vid": "7436085034135817505",
+   "url": "https://www.tiktok.com/@kimisinamoodlive/video/7436085034135817505"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Sophie0504/Entwurf",
+   "handle": "kimisinamoodlive",
+   "vid": "7447598540039146774",
+   "url": "https://www.tiktok.com/@kimisinamoodlive/video/7447598540039146774"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Sophie0504/Entwurf",
+   "handle": "kimisinamoodlive",
+   "vid": "7446863197186936086",
+   "url": "https://www.tiktok.com/@kimisinamoodlive/video/7446863197186936086"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Sophie0504/Entwurf",
+   "handle": "tahsims_interviewformat",
+   "vid": "7376616646162517281",
+   "url": "https://www.tiktok.com/@tahsims_interviewformat/video/7376616646162517281"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Gregdo/Frau Barbara",
+   "handle": "somuchbaking",
+   "vid": "7329236420592258337",
+   "url": "https://www.tiktok.com/@somuchbaking/video/7329236420592258337"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Heiko/Anni The Duck",
+   "handle": "annitheduck",
+   "vid": "7043513176771529989",
+   "url": "https://www.tiktok.com/@annitheduck/video/7043513176771529989"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:Heiko/Anni The Duck",
+   "handle": "annitheduck",
+   "vid": "7362889330051910945",
+   "url": "https://www.tiktok.com/@annitheduck/video/7362889330051910945"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 2,
+   "page": "Benutzer:SenegalVerstehen/Artikelentwurf",
+   "handle": "rema_sene",
+   "vid": "7647092214769667336",
+   "url": "https://www.tiktok.com/@rema_sene/video/7647092214769667336"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 3,
+   "page": "Benutzer Diskussion:Wiki-Friend12345/Archiv/2021",
+   "handle": "danpovenmire",
+   "vid": "6901346217259764998",
+   "url": "https://www.tiktok.com/@danpovenmire/video/6901346217259764998"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 3,
+   "page": "Benutzer Diskussion:Brettchenweber/Archiv4",
+   "handle": "dailypediade",
+   "vid": "7332846626781908256",
+   "url": "https://www.tiktok.com/@dailypediade/video/7332846626781908256"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 3,
+   "page": "Benutzerin Diskussion:Andrea014/Archiv/2025/I",
+   "handle": "may.eclair",
+   "vid": "7475149329263529247",
+   "url": "https://www.tiktok.com/@may.eclair/video/7475149329263529247"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 3,
+   "page": "Benutzerin Diskussion:Sicherlich/Caf\u00e9/Archiv/2025/Q3",
+   "handle": "heidireichinnek",
+   "vid": "7247532881277422874",
+   "url": "https://www.tiktok.com/@heidireichinnek/video/7247532881277422874"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 3,
+   "page": "Benutzerin Diskussion:Sicherlich/Caf\u00e9/Archiv/2025/Q4",
+   "handle": "adventsdorf.olten",
+   "vid": "7447917333416250646",
+   "url": "https://www.tiktok.com/@adventsdorf.olten/video/7447917333416250646"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 3,
+   "page": "Benutzerin Diskussion:Andrea014/Archiv/2025/IV",
+   "handle": "miketettenborn",
+   "vid": "7398544172094868769",
+   "url": "https://www.tiktok.com/@miketettenborn/video/7398544172094868769"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 3,
+   "page": "Benutzerin Diskussion:Andrea014/Archiv/2025/IV",
+   "handle": "ai.comedy90",
+   "vid": "7581440315559562518",
+   "url": "https://www.tiktok.com/@ai.comedy90/video/7581440315559562518"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 4,
+   "page": "Wikipedia:Auskunft/Archiv/2020/Woche 22",
+   "handle": "00aka",
+   "vid": "6831198465473744134",
+   "url": "https://www.tiktok.com/@00aka/video/6831198465473744134"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 4,
+   "page": "Wikipedia:Relevanzcheck/Archiv/2021/Mai",
+   "handle": "umihito",
+   "vid": "6910860023283420418",
+   "url": "https://www.tiktok.com/@umihito/video/6910860023283420418"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 4,
+   "page": "Wikipedia:Relevanzcheck/Archiv/2021/Mai",
+   "handle": "umihito",
+   "vid": "6903065889940262146",
+   "url": "https://www.tiktok.com/@umihito/video/6903065889940262146"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 4,
+   "page": "Wikipedia:Auskunft/Archiv/2021/Woche 41",
+   "handle": "doanlinh100",
+   "vid": "7009888780639391003",
+   "url": "https://www.tiktok.com/@doanlinh100/video/7009888780639391003"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 4,
+   "page": "Wikipedia:Auskunft/Archiv/2021/Woche 41",
+   "handle": "doanlinh100",
+   "vid": "6991753850571066650",
+   "url": "https://www.tiktok.com/@doanlinh100/video/6991753850571066650"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 4,
+   "page": "Wikipedia:Auskunft/Archiv/2021/Woche 41",
+   "handle": "doanlinh100",
+   "vid": "6992159544663117082",
+   "url": "https://www.tiktok.com/@doanlinh100/video/6992159544663117082"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 4,
+   "page": "Wikipedia:Caf\u00e9/Archiv 2023 02",
+   "handle": "tatsachederwelt",
+   "vid": "7196030779711917318",
+   "url": "https://www.tiktok.com/@tatsachederwelt/video/7196030779711917318"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 4,
+   "page": "Wikipedia:L\u00f6schkandidaten/Urheberrechtsverletzungen/Archiv/November 2023",
+   "handle": "kendamara85",
+   "vid": "7269808849123560710",
+   "url": "https://www.tiktok.com/@kendamara85/video/7269808849123560710"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 4,
+   "page": "Wikipedia:Relevanzcheck/Archiv/2023/Dezember",
+   "handle": "1_fcm",
+   "vid": "7206027254449622277",
+   "url": "https://www.tiktok.com/@1_fcm/video/7206027254449622277"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 4,
+   "page": "Wikipedia:L\u00f6schkandidaten/14. Februar 2024",
+   "handle": "germanonliners",
+   "vid": "7240872983026240794",
+   "url": "https://www.tiktok.com/@germanonliners/video/7240872983026240794"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 4,
+   "page": "Wikipedia:Checkuser/Anfragen/Milbentroll",
+   "handle": "levihallo",
+   "vid": "7351475122802298145",
+   "url": "https://www.tiktok.com/@levihallo/video/7351475122802298145"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 4,
+   "page": "Wikipedia:Relevanzcheck/Archiv/2024/April",
+   "handle": "ledejesus_",
+   "vid": "7335817826449575174",
+   "url": "https://www.tiktok.com/@ledejesus_/video/7335817826449575174"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 4,
+   "page": "Wikipedia:Auskunft/Archiv/2025/Woche 49",
+   "handle": "alex.boeh",
+   "vid": "7120585094254857478",
+   "url": "https://www.tiktok.com/@alex.boeh/video/7120585094254857478?lang=da"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 4,
+   "page": "Wikipedia:Auskunft/Archiv/2026/Woche 32",
+   "handle": "coachfonceur7",
+   "vid": "7627049282016759062",
+   "url": "https://www.tiktok.com/@coachfonceur7/video/7627049282016759062"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 5,
+   "page": "Wikipedia Diskussion:Redaktion Musik/Archiv/2022",
+   "handle": "iamolson",
+   "vid": "7143269114818219270",
+   "url": "https://www.tiktok.com/@iamolson/video/7143269114818219270"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Subsurface (DJ)",
+   "handle": "ranzandniana1314",
+   "vid": "194951213564514304",
+   "url": "https://www.tiktok.com/@ranzandniana1314/video/194951213564514304"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Tones and I",
+   "handle": "ianzogby",
+   "vid": "6814778331347569925",
+   "url": "https://www.tiktok.com/@ianzogby/video/6814778331347569925"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Lityway & Yungfijay",
+   "handle": "lityway44",
+   "vid": "6982680092010974470",
+   "url": "https://www.tiktok.com/@lityway44/video/6982680092010974470"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Tim Hendrik Walter",
+   "handle": "herranwalt",
+   "vid": "6763704856772480262",
+   "url": "https://www.tiktok.com/@herranwalt/video/6763704856772480262"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Khaby Lame",
+   "handle": "khaby.lame",
+   "vid": "6987049782137081093",
+   "url": "https://www.tiktok.com/@khaby.lame/video/6987049782137081093"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Khaby Lame",
+   "handle": "khaby.lame",
+   "vid": "6968446123560209670",
+   "url": "https://www.tiktok.com/@khaby.lame/video/6968446123560209670"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "TikTok",
+   "handle": "tagesschau",
+   "vid": "6763616157892234501",
+   "url": "https://www.tiktok.com/@tagesschau/video/6763616157892234501"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "The Unofficial Bridgerton Musical",
+   "handle": "abigailbarlowww",
+   "vid": "6916241393144892677",
+   "url": "https://www.tiktok.com/@abigailbarlowww/video/6916241393144892677?_r=1&_t=8RH9D59WmAf&social_sharing=v3"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "The Unofficial Bridgerton Musical",
+   "handle": "abigailbarlowww",
+   "vid": "6916649667866529030",
+   "url": "https://www.tiktok.com/@abigailbarlowww/video/6916649667866529030?_r=1&_t=8RH9INE5fpm&social_sharing=v3"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "The Unofficial Bridgerton Musical",
+   "handle": "abigailbarlowww",
+   "vid": "6949221304268639494",
+   "url": "https://www.tiktok.com/@abigailbarlowww/video/6949221304268639494"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "The Unofficial Bridgerton Musical",
+   "handle": "abigailbarlowww",
+   "vid": "7033827957672037637",
+   "url": "https://www.tiktok.com/@abigailbarlowww/video/7033827957672037637?_r=1&_t=8RHDNgirM2P&social_sharing=v3"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Jalousien",
+   "handle": "lordhearmyprayersart",
+   "vid": "7075690042487868678",
+   "url": "https://www.tiktok.com/@lordhearmyprayersart/video/7075690042487868678"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Antytila",
+   "handle": "antytila_official",
+   "vid": "7078172439091399942",
+   "url": "https://www.tiktok.com/@antytila_official/video/7078172439091399942"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Willy William",
+   "handle": "willywilliamofficial",
+   "vid": "7086573370849905925",
+   "url": "https://www.tiktok.com/@willywilliamofficial/video/7086573370849905925"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Blue (Da Ba Dee)",
+   "handle": "gabryponte",
+   "vid": "6908697432708713729",
+   "url": "https://www.tiktok.com/@gabryponte/video/6908697432708713729"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Blue (Da Ba Dee)",
+   "handle": "gabryponte",
+   "vid": "6911332209412656386",
+   "url": "https://www.tiktok.com/@gabryponte/video/6911332209412656386"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Brennan Clost",
+   "handle": "brennanclost",
+   "vid": "6904424725238402305",
+   "url": "https://www.tiktok.com/@brennanclost/video/6904424725238402305"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "It\u2019s Corn",
+   "handle": "schmoyoho",
+   "vid": "7133362838424341803",
+   "url": "https://www.tiktok.com/@schmoyoho/video/7133362838424341803"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "It\u2019s Corn",
+   "handle": "recesstherapy",
+   "vid": "7135854415000423722",
+   "url": "https://www.tiktok.com/@recesstherapy/video/7135854415000423722"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "It\u2019s Corn",
+   "handle": "kevinbacon",
+   "vid": "7139186979517877546",
+   "url": "https://www.tiktok.com/@kevinbacon/video/7139186979517877546"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "It\u2019s Corn",
+   "handle": "recesstherapy",
+   "vid": "7128100532484427054",
+   "url": "https://www.tiktok.com/@recesstherapy/video/7128100532484427054"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Snow on the Beach",
+   "handle": "taylorswift",
+   "vid": "7151677137337208110",
+   "url": "https://www.tiktok.com/@taylorswift/video/7151677137337208110?is_from_webapp=v1&item_id=7151677137337208110"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Pvlace",
+   "handle": "pulsmusikanalyse",
+   "vid": "7165853687749840133",
+   "url": "https://www.tiktok.com/@pulsmusikanalyse/video/7165853687749840133"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Olson (Rapper)",
+   "handle": "iamolson",
+   "vid": "7150234348850089222",
+   "url": "https://www.tiktok.com/@iamolson/video/7150234348850089222"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Sherrie Silver",
+   "handle": "minions",
+   "vid": "7114756278756363562",
+   "url": "https://www.tiktok.com/@minions/video/7114756278756363562?is_from_webapp=v1&item_id=7114756278756363562&lang=de-DE"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Challviri",
+   "handle": "nelsonrodriguez5797",
+   "vid": "7155875639910812933",
+   "url": "https://www.tiktok.com/@nelsonrodriguez5797/video/7155875639910812933?is_from_webapp=v1&item_id=7155875639910812933"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Per Skau",
+   "handle": "treble19",
+   "vid": "6938483023721565445",
+   "url": "https://www.tiktok.com/@treble19/video/6938483023721565445?is_from_webapp=v1&item_id=6938483023721565445"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Dietfurter Chinesenfasching",
+   "handle": "willkommen_zuhause",
+   "vid": "7150611990443003141",
+   "url": "https://www.tiktok.com/@willkommen_zuhause/video/7150611990443003141"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Liam Carpenter",
+   "handle": "liamcarps",
+   "vid": "7205230875842219270",
+   "url": "https://www.tiktok.com/@liamcarps/video/7205230875842219270"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Lunax (DJ)",
+   "handle": "lunax_music",
+   "vid": "7079713562662407429",
+   "url": "https://www.tiktok.com/@lunax_music/video/7079713562662407429?lang=de-DE"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Nicola Cavanis",
+   "handle": "nicolacav_",
+   "vid": "7093755394480295174",
+   "url": "https://www.tiktok.com/@nicolacav_/video/7093755394480295174?lang=de-DE"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Marie Lina Smyrek",
+   "handle": "smypathisch",
+   "vid": "7008197076093930758",
+   "url": "https://www.tiktok.com/@smypathisch/video/7008197076093930758"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Blastoyz",
+   "handle": "kobiblastoyz",
+   "vid": "7133206487798795521",
+   "url": "https://www.tiktok.com/@kobiblastoyz/video/7133206487798795521"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Friesenjung (Ski-Aggu-, Joost- und Otto-Waalkes-Lied)",
+   "handle": "6bucci6",
+   "vid": "7225943949951716634",
+   "url": "https://www.tiktok.com/@6bucci6/video/7225943949951716634?q=ski%20aggu%20unreleased&t=1686406040970"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Friesenjung (Ski-Aggu-, Joost- und Otto-Waalkes-Lied)",
+   "handle": "weristaggu",
+   "vid": "7236402636537351450",
+   "url": "https://www.tiktok.com/@weristaggu/video/7236402636537351450?q=danke%20otto%20danke&t=1686406195277"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Friesenjung (Ski-Aggu-, Joost- und Otto-Waalkes-Lied)",
+   "handle": "poah.toll",
+   "vid": "7243559897135172891",
+   "url": "https://www.tiktok.com/@poah.toll/video/7243559897135172891?_"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Maurice Conrad",
+   "handle": "maurice.conrad",
+   "vid": "7196383415153855749",
+   "url": "https://www.tiktok.com/@maurice.conrad/video/7196383415153855749"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Agota Lavoyer",
+   "handle": "avalino.diversity",
+   "vid": "7132519161174985990",
+   "url": "https://www.tiktok.com/@avalino.diversity/video/7132519161174985990?_r=1&_t=8V4mhVSA5q9&is_from_webapp=v1"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Jasmin Wagner",
+   "handle": "magentamusik",
+   "vid": "7263823572349570337",
+   "url": "https://www.tiktok.com/@magentamusik/video/7263823572349570337"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Gonimbrasia belina",
+   "handle": "cherol_k",
+   "vid": "7206222303422631173",
+   "url": "https://www.tiktok.com/@cherol_k/video/7206222303422631173"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Eurovision Song Contest \u2013 Das deutsche Finale 2024",
+   "handle": "zeitflugoffiziell",
+   "vid": "7290189925746511137",
+   "url": "https://www.tiktok.com/@zeitflugoffiziell/video/7290189925746511137"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Geiles Life",
+   "handle": "vanessa.mai",
+   "vid": "7285273480222772512",
+   "url": "https://www.tiktok.com/@vanessa.mai/video/7285273480222772512"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Geiles Life",
+   "handle": "vanessa.mai",
+   "vid": "7292720914150460705",
+   "url": "https://www.tiktok.com/@vanessa.mai/video/7292720914150460705"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Twenty4tim",
+   "handle": "twenty4tim",
+   "vid": "7074350413293554949",
+   "url": "https://www.tiktok.com/@twenty4tim/video/7074350413293554949?lang=de-DE"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Victor Boniface",
+   "handle": "skysportde",
+   "vid": "7270452491257449760",
+   "url": "https://www.tiktok.com/@skysportde/video/7270452491257449760"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Die beste Depression der Welt",
+   "handle": "helenebockhorst",
+   "vid": "7307288844452236577",
+   "url": "https://www.tiktok.com/@helenebockhorst/video/7307288844452236577"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Nicht ich (Lied)",
+   "handle": "maddiejuno",
+   "vid": "7322893025800178977",
+   "url": "https://www.tiktok.com/@maddiejuno/video/7322893025800178977"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Kemusan",
+   "handle": "jiayu_machinery",
+   "vid": "7318077426712562987",
+   "url": "https://www.tiktok.com/@jiayu_machinery/video/7318077426712562987?lang=de-DE"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Parasoziale Interaktion",
+   "handle": "zeitjung_magazin",
+   "vid": "7187815316133629189",
+   "url": "https://www.tiktok.com/@zeitjung_magazin/video/7187815316133629189"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "21 Gramm (Lied)",
+   "handle": "klanmusik",
+   "vid": "7338857952427674912",
+   "url": "https://www.tiktok.com/@klanmusik/video/7338857952427674912"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Jens Knossalla",
+   "handle": "universalpicturesde",
+   "vid": "7365794258948771104",
+   "url": "https://www.tiktok.com/@universalpicturesde/video/7365794258948771104"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Paula Carolina",
+   "handle": "paulacarolinamusik",
+   "vid": "7261220818208804123",
+   "url": "https://www.tiktok.com/@paulacarolinamusik/video/7261220818208804123"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Barbaras Rhabarberbar",
+   "handle": "bodowartke",
+   "vid": "7313913111382150433",
+   "url": "https://www.tiktok.com/@bodowartke/video/7313913111382150433"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Barbaras Rhabarberbar",
+   "handle": "bodowartke",
+   "vid": "7360660825725619489",
+   "url": "https://www.tiktok.com/@bodowartke/video/7360660825725619489"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Levi Penell",
+   "handle": "levihallo",
+   "vid": "7393357197993970976",
+   "url": "https://www.tiktok.com/@levihallo/video/7393357197993970976"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Barbaras Rhabarberbar",
+   "handle": "bodowartke",
+   "vid": "7313912340146081056",
+   "url": "https://www.tiktok.com/@bodowartke/video/7313912340146081056"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Barbaras Rhabarberbar",
+   "handle": "bodowartke",
+   "vid": "7369913836100472096",
+   "url": "https://www.tiktok.com/@bodowartke/video/7369913836100472096"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Pr\u00e4sidentschaftswahl in Venezuela 2024",
+   "handle": "lasverdadesdemiguel",
+   "vid": "7379467885741231365",
+   "url": "https://www.tiktok.com/@lasverdadesdemiguel/video/7379467885741231365"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Castro Ballota",
+   "handle": "asturdron",
+   "vid": "7223280276716260635",
+   "url": "https://www.tiktok.com/@asturdron/video/7223280276716260635"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Michael Bauer (Kabarettist)",
+   "handle": "heidelbeerhugo_",
+   "vid": "7113251611606011142",
+   "url": "https://www.tiktok.com/@heidelbeerhugo_/video/7113251611606011142"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Rombach (Gernsbach)",
+   "handle": "pforzheimerzeitung",
+   "vid": "7225612658941218075",
+   "url": "https://www.tiktok.com/@pforzheimerzeitung/video/7225612658941218075"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Hyparschale (Templin)",
+   "handle": "immer.gut_architektur",
+   "vid": "7365180313808456992",
+   "url": "https://www.tiktok.com/@immer.gut_architektur/video/7365180313808456992"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Sasheer Zamata",
+   "handle": "kcrwlosangeles",
+   "vid": "7422014957186764062",
+   "url": "https://www.tiktok.com/@kcrwlosangeles/video/7422014957186764062?_r=1&_t=8qYFvbYHN8g/"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Martin Schneider",
+   "handle": "maddinschneider",
+   "vid": "7356635862391655713",
+   "url": "https://www.tiktok.com/@maddinschneider/video/7356635862391655713?lang=de-DE"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Muni Long",
+   "handle": "munilonglyrics",
+   "vid": "7340023979954015530",
+   "url": "https://www.tiktok.com/@munilonglyrics/video/7340023979954015530"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Gerda Rogers",
+   "handle": "strassl.schaider",
+   "vid": "7447153519007698198",
+   "url": "https://www.tiktok.com/@strassl.schaider/video/7447153519007698198"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Tom Ferenc",
+   "handle": "tomferenc_",
+   "vid": "7420351132586822945",
+   "url": "https://www.tiktok.com/@tomferenc_/video/7420351132586822945"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Kauta",
+   "handle": "kautamusic",
+   "vid": "7232679401089928474",
+   "url": "https://www.tiktok.com/@kautamusic/video/7232679401089928474?lang=de-DE"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Xaver Schumacher",
+   "handle": "xaverschumacher",
+   "vid": "7436013510850530592",
+   "url": "https://www.tiktok.com/@xaverschumacher/video/7436013510850530592"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Levi Penell",
+   "handle": "leviwiediejeans",
+   "vid": "7474937911234891030",
+   "url": "https://www.tiktok.com/@leviwiediejeans/video/7474937911234891030"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Rambo Zambo (Was is Bubatz?)",
+   "handle": "merzcdu",
+   "vid": "7474226642781523222",
+   "url": "https://www.tiktok.com/@merzcdu/video/7474226642781523222?lang=de-DE"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Laika Party",
+   "handle": "allthingsadam.ie",
+   "vid": "7470272408809737494",
+   "url": "https://www.tiktok.com/@allthingsadam.ie/video/7470272408809737494"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Kali Uchis",
+   "handle": "universalmusicgroup",
+   "vid": "7488829610692496671",
+   "url": "https://www.tiktok.com/@universalmusicgroup/video/7488829610692496671"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Ende (Lied)",
+   "handle": "ninachuba",
+   "vid": "7474266266413436182",
+   "url": "https://www.tiktok.com/@ninachuba/video/7474266266413436182"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "London Vegetable Orchestra",
+   "handle": "goodmorningbritain",
+   "vid": "7490509434507103511",
+   "url": "https://www.tiktok.com/@goodmorningbritain/video/7490509434507103511"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Nike von Samothrake",
+   "handle": "hockeynbooks",
+   "vid": "7364865432878173483",
+   "url": "https://www.tiktok.com/@hockeynbooks/video/7364865432878173483"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Machhindra FC",
+   "handle": "24ghanta_nepal",
+   "vid": "7477179457078299912",
+   "url": "https://www.tiktok.com/@24ghanta_nepal/video/7477179457078299912"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Markus Majowski",
+   "handle": "mmarkusmajowski",
+   "vid": "7438178785695993110",
+   "url": "https://www.tiktok.com/@mmarkusmajowski/video/7438178785695993110?lang=en"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Yvonne Pferrer",
+   "handle": "yvonnepferrer",
+   "vid": "7201895749464935686",
+   "url": "https://www.tiktok.com/@yvonnepferrer/video/7201895749464935686"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Kean Scicluna",
+   "handle": "malta1900",
+   "vid": "7512446065761897750",
+   "url": "https://www.tiktok.com/@malta1900/video/7512446065761897750"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "LSOD Leipzig School of Design",
+   "handle": "donhoepione",
+   "vid": "7226246895847427354",
+   "url": "https://www.tiktok.com/@donhoepione/video/7226246895847427354"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Wemmse",
+   "handle": "wemmse",
+   "vid": "7487543066635652374",
+   "url": "https://www.tiktok.com/@wemmse/video/7487543066635652374?lang=de-DE&q=wemmse%20reisen&t=1758830733457"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Wemmse",
+   "handle": "wemmse",
+   "vid": "7226765303391259931",
+   "url": "https://www.tiktok.com/@wemmse/video/7226765303391259931?lang=de-DE&q=wemmse%20reiten&t=1758830952374"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Phuwin Tangsakyuen",
+   "handle": "sfcinema",
+   "vid": "7507109330898963720",
+   "url": "https://www.tiktok.com/@sfcinema/video/7507109330898963720"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Nicola Cavanis",
+   "handle": "wilhelminamodels",
+   "vid": "7390348611655044395",
+   "url": "https://www.tiktok.com/@wilhelminamodels/video/7390348611655044395"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Anime Allstars",
+   "handle": "juliascheeser",
+   "vid": "7184027593249721606",
+   "url": "https://www.tiktok.com/@juliascheeser/video/7184027593249721606"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Maika Harper",
+   "handle": "maikaharper",
+   "vid": "7499975791606893829",
+   "url": "https://www.tiktok.com/@maikaharper/video/7499975791606893829"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "In meinem Garten",
+   "handle": "lara.hulo",
+   "vid": "7569257396401655062",
+   "url": "https://www.tiktok.com/@lara.hulo/video/7569257396401655062"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Luciano (Rapper)",
+   "handle": "yenification",
+   "vid": "6958754890973728005",
+   "url": "https://www.tiktok.com/@yenification/video/6958754890973728005"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Ilka Bessin",
+   "handle": "ingmarstadelmann",
+   "vid": "7364073370792627489",
+   "url": "https://www.tiktok.com/@ingmarstadelmann/video/7364073370792627489"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Jackass Forever",
+   "handle": "aaronjawshomoki",
+   "vid": "7104401848349625643",
+   "url": "https://www.tiktok.com/@aaronjawshomoki/video/7104401848349625643?is_from_webapp=v1&item_id=7104401848349625643"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Noa Linn M\u00fcnger",
+   "handle": "berufsbildung_stadtbern",
+   "vid": "7556556198766546198",
+   "url": "https://www.tiktok.com/@berufsbildung_stadtbern/video/7556556198766546198"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Nizi19",
+   "handle": "nizi_1neun",
+   "vid": "7548801231343340822",
+   "url": "https://www.tiktok.com/@nizi_1neun/video/7548801231343340822"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Sienna Spiro",
+   "handle": "siennaspiro",
+   "vid": "7555224831633984770",
+   "url": "https://www.tiktok.com/@siennaspiro/video/7555224831633984770"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Zensur durch TikTok",
+   "handle": "hana.hassan",
+   "vid": "6850916381400059142",
+   "url": "https://www.tiktok.com/@hana.hassan/video/6850916381400059142"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Kaleen (S\u00e4ngerin)",
+   "handle": "escnicholas",
+   "vid": "7639689358026509590",
+   "url": "https://www.tiktok.com/@escnicholas/video/7639689358026509590"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Frankfurt-Riedberg",
+   "handle": "elysianclub_de",
+   "vid": "7464293343774756118",
+   "url": "https://www.tiktok.com/@elysianclub_de/video/7464293343774756118"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "USPEER",
+   "handle": "uspeer.official",
+   "vid": "7645615339425828116",
+   "url": "https://www.tiktok.com/@uspeer.official/video/7645615339425828116"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "USPEER",
+   "handle": "uspeer.official",
+   "vid": "7644917564946124053",
+   "url": "https://www.tiktok.com/@uspeer.official/video/7644917564946124053"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Max Grimm",
+   "handle": "maxgrimm.music",
+   "vid": "7390039582223371553",
+   "url": "https://www.tiktok.com/@maxgrimm.music/video/7390039582223371553"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Helmut A. Binser",
+   "handle": "binserhelmut",
+   "vid": "7304324842591997216",
+   "url": "https://www.tiktok.com/@binserhelmut/video/7304324842591997216"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Wolfgang Ritte",
+   "handle": "sportstudio.de",
+   "vid": "7217393316415966469",
+   "url": "https://www.tiktok.com/@sportstudio.de/video/7217393316415966469"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Grelle Forelle",
+   "handle": "residentadvisor",
+   "vid": "7259088274944232731",
+   "url": "https://www.tiktok.com/@residentadvisor/video/7259088274944232731"
+  },
+  {
+   "wiki": "de.wikipedia.org",
+   "ns": 118,
+   "page": "Mike Posner",
+   "handle": "mikeposner",
+   "vid": "7636173800861633822",
+   "url": "https://www.tiktok.com/@mikeposner/video/7636173800861633822"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Indonesia's Next Top Model (musim 3)",
+   "handle": "shalfaptr_",
+   "vid": "70",
+   "url": "https://www.tiktok.com/@shalfaptr_/video/70...990827724000539"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 10th Anniversary Tour",
+   "handle": "shanijkt48",
+   "vid": "6967319199786241282",
+   "url": "https://www.tiktok.com/@shanijkt48/video/6967319199786241282"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 10th Anniversary Tour",
+   "handle": "siscajkt48",
+   "vid": "7109769397467745563",
+   "url": "https://www.tiktok.com/@siscajkt48/video/7109769397467745563"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 10th Anniversary Tour",
+   "handle": "ntarasyaz",
+   "vid": "7114331445736246555",
+   "url": "https://www.tiktok.com/@ntarasyaz/video/7114331445736246555"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 Summer Festival 2023",
+   "handle": "jeketianisme",
+   "vid": "7251392868714056966",
+   "url": "https://www.tiktok.com/@jeketianisme/video/7251392868714056966"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Maysha Jhuan",
+   "handle": "k3filmspace",
+   "vid": "7019265324054809882",
+   "url": "https://www.tiktok.com/@k3filmspace/video/7019265324054809882?sender_device=mobile&sender_web_id=6931458411054958082&is_from_webapp=v1&is_copy_url=0"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Maysha Jhuan",
+   "handle": "k3filmspace",
+   "vid": "7019264619642440986",
+   "url": "https://www.tiktok.com/@k3filmspace/video/7019264619642440986?sender_device=mobile&sender_web_id=6931458411054958082&is_from_webapp=v1&is_copy_url=0"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Nikki Blonsky",
+   "handle": "therealnikkiblonsky",
+   "vid": "6843486113852591365",
+   "url": "https://www.tiktok.com/@therealnikkiblonsky/video/6843486113852591365?request_from=server"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Phakphum Romsaithong",
+   "handle": "mp15.15",
+   "vid": "7111986952110460187",
+   "url": "https://www.tiktok.com/@mp15.15/video/7111986952110460187?_r=1&_d=secCgYIASAHKAESPgo8E6zoyMclK/jAnueV3ZR0Jvz9vtKx%2BpyVAaP2Vhp2UgZuI1Wu9Qkqq9BVocDcuaUkoTWh2UK5SscesYj8GgA%3D&checksum=acededb84484d37ace317472e83295331b0f336ca690a390cbc4f9e8dfb1bf67&language=id&mid=7111986990833273626&preview_pb=0&region=ID&sec_user_id=MS4wLjABAAAA0R5hp7IsEFgsAsdn7OaEfOhpmZck9siLP_hgICXzO4UaX0jvDm1zcYcZbuiI5mLm&share_app_id=1180&share_item_id=7111986952110460187&share_link_id=75039116-1ba3-4ce3-9df5-c190d7d4c146&source=h5_t&timestamp=1656956915&u_code=dja20afija36gc&ugbiz_name=Main&user_id=6978462356956038145&utm_campaign=client_share&utm_medium=android&utm_source=copy"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Vicious (lagu Sabrina Carpenter)",
+   "handle": "sabrinacarpenter",
+   "vid": "7109555794886085931",
+   "url": "https://www.tiktok.com/@sabrinacarpenter/video/7109555794886085931"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Ampun Bang Jago",
+   "handle": "westham",
+   "vid": "6880845972407127302",
+   "url": "https://www.tiktok.com/@westham/video/6880845972407127302"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Banzai JKT48",
+   "handle": "jkt48.official",
+   "vid": "7073838577867558171",
+   "url": "https://www.tiktok.com/@jkt48.official/video/7073838577867558171"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Bella Poarch",
+   "handle": "bellapoarch",
+   "vid": "6862153058223197445",
+   "url": "https://www.tiktok.com/@bellapoarch/video/6862153058223197445"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Billie Eilish",
+   "handle": "1027kiisfm",
+   "vid": "6853294344246480133",
+   "url": "https://www.tiktok.com/@1027kiisfm/video/6853294344246480133"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Cantika Davinca",
+   "handle": "cantikadavincareal",
+   "vid": "6969888363834772738",
+   "url": "https://www.tiktok.com/@cantikadavincareal/video/6969888363834772738?_r=1&_d=secCgYIASAHKAESPgo8I1ROKL4S7yIuEw2R4cMTLNcRbBx%2Bd/BTegLd1aX09W4/EERSsss6RKDbKiIx2D4WHKrLzvNuENF0QWzoGgA%3D&checksum=d7220571230f3f91ca1d41466b8d1506c01feb43a9119d19953400c40755a59e&language=id&mid=6969888335464598273&preview_pb=0&region=ID&sec_user_id=MS4wLjABAAAAUhiGSJp1XciHAuviWuUzpcVPqPcKG2a8G0MwFi8uK5xCOQYjXkdJcTjmWsbDdDFi&share_app_id=1340&share_item_id=6969888363834772738&share_link_id=e1b3d8d4-a14f-40b9-baec-0b6e50202348&source=h5_t&timestamp=1670692635&u_code=df6ffa123d6mgg&ugbiz_name=Main&user_id=6887558131993773057&utm_campaign=client_share&utm_source=copy"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Daftar konser dan acara JKT48",
+   "handle": "jkt48.official",
+   "vid": "6961797506338508034",
+   "url": "https://www.tiktok.com/@jkt48.official/video/6961797506338508034"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Daftar konser dan acara JKT48",
+   "handle": "jkt48.official",
+   "vid": "6981784374719139098",
+   "url": "https://www.tiktok.com/@jkt48.official/video/6981784374719139098"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Daftar konser dan acara JKT48",
+   "handle": "jkt48.official",
+   "vid": "7033386261867924762",
+   "url": "https://www.tiktok.com/@jkt48.official/video/7033386261867924762"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Daftar konser dan acara JKT48",
+   "handle": "jkt48.official",
+   "vid": "6982586753047661850",
+   "url": "https://www.tiktok.com/@jkt48.official/video/6982586753047661850"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Daftar konser dan acara JKT48",
+   "handle": "jkt48.official",
+   "vid": "7033760946728307995",
+   "url": "https://www.tiktok.com/@jkt48.official/video/7033760946728307995"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Daftar konser dan acara JKT48",
+   "handle": "jkt48.official",
+   "vid": "7040019518411803930",
+   "url": "https://www.tiktok.com/@jkt48.official/video/7040019518411803930"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Indonesia dalam tahun 2023",
+   "handle": "hizkiaontiktok",
+   "vid": "7269778628316056838",
+   "url": "https://www.tiktok.com/@hizkiaontiktok/video/7269778628316056838?_t=8h0nVkLYVJy&_r=1"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Indonesia dalam tahun 2023",
+   "handle": "gaga100extrapedas",
+   "vid": "7271098574128172293",
+   "url": "https://www.tiktok.com/@gaga100extrapedas/video/7271098574128172293"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Sayonara Crawl (singel JKT48)",
+   "handle": "indahjkt48",
+   "vid": "7290132203273571590",
+   "url": "https://www.tiktok.com/@indahjkt48/video/7290132203273571590"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Sayonara Crawl (singel JKT48)",
+   "handle": "fionyjkt48",
+   "vid": "7290126963535006981",
+   "url": "https://www.tiktok.com/@fionyjkt48/video/7290126963535006981"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Sayonara Crawl (singel JKT48)",
+   "handle": "elijkt48",
+   "vid": "7290180595219631366",
+   "url": "https://www.tiktok.com/@elijkt48/video/7290180595219631366"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Sayonara Crawl (singel JKT48)",
+   "handle": "zeejkt48",
+   "vid": "7290130212740713733",
+   "url": "https://www.tiktok.com/@zeejkt48/video/7290130212740713733"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Sayonara Crawl (singel JKT48)",
+   "handle": "marsha.jkt48",
+   "vid": "7290510433570573573",
+   "url": "https://www.tiktok.com/@marsha.jkt48/video/7290510433570573573"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Sayonara Crawl (singel JKT48)",
+   "handle": "shanijkt48",
+   "vid": "7290511613013101829",
+   "url": "https://www.tiktok.com/@shanijkt48/video/7290511613013101829"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Sayonara Crawl (singel JKT48)",
+   "handle": "kathrinjkt48",
+   "vid": "7290503885788122374",
+   "url": "https://www.tiktok.com/@kathrinjkt48/video/7290503885788122374"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Sayonara Crawl (singel JKT48)",
+   "handle": "gitajkt48",
+   "vid": "7290513502152723717",
+   "url": "https://www.tiktok.com/@gitajkt48/video/7290513502152723717"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Sayonara Crawl (singel JKT48)",
+   "handle": "muthejkt48",
+   "vid": "7290518700459953414",
+   "url": "https://www.tiktok.com/@muthejkt48/video/7290518700459953414"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Sayonara Crawl (singel JKT48)",
+   "handle": "christyjkt48",
+   "vid": "7290565104687435013",
+   "url": "https://www.tiktok.com/@christyjkt48/video/7290565104687435013"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Sayonara Crawl (singel JKT48)",
+   "handle": "fenijkt48",
+   "vid": "7290868505950506245",
+   "url": "https://www.tiktok.com/@fenijkt48/video/7290868505950506245"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Sayonara Crawl (singel JKT48)",
+   "handle": "graciajkt48",
+   "vid": "7296522347048226053",
+   "url": "https://www.tiktok.com/@graciajkt48/video/7296522347048226053"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "jkt48.official",
+   "vid": "7308338739204443397",
+   "url": "https://www.tiktok.com/@jkt48.official/video/7308338739204443397"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "jkt48.official",
+   "vid": "7310227355820100870",
+   "url": "https://www.tiktok.com/@jkt48.official/video/7310227355820100870"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "jkt48.official",
+   "vid": "7311588534798781702",
+   "url": "https://www.tiktok.com/@jkt48.official/video/7311588534798781702"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "greeseljkt48",
+   "vid": "7310570433227558150",
+   "url": "https://www.tiktok.com/@greeseljkt48/video/7310570433227558150"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "muthejkt48",
+   "vid": "7310570399639653637",
+   "url": "https://www.tiktok.com/@muthejkt48/video/7310570399639653637"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "freyajkt48",
+   "vid": "7310571236575268102",
+   "url": "https://www.tiktok.com/@freyajkt48/video/7310571236575268102"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "jkt48.raisha.s",
+   "vid": "7310572314939116806",
+   "url": "https://www.tiktok.com/@jkt48.raisha.s/video/7310572314939116806"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "jessijkt48",
+   "vid": "7310570535086279941",
+   "url": "https://www.tiktok.com/@jessijkt48/video/7310570535086279941"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "elinjkt48",
+   "vid": "7310934574756842757",
+   "url": "https://www.tiktok.com/@elinjkt48/video/7310934574756842757"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "cathyjkt48",
+   "vid": "7310934657942555910",
+   "url": "https://www.tiktok.com/@cathyjkt48/video/7310934657942555910"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "_chelseajkt48",
+   "vid": "7310952371629214982",
+   "url": "https://www.tiktok.com/@_chelseajkt48/video/7310952371629214982"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "florajkt48",
+   "vid": "7310975460651945221",
+   "url": "https://www.tiktok.com/@florajkt48/video/7310975460651945221"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "zeejkt48",
+   "vid": "7311009356957469958",
+   "url": "https://www.tiktok.com/@zeejkt48/video/7311009356957469958"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "christyjkt48",
+   "vid": "7311005834576727301",
+   "url": "https://www.tiktok.com/@christyjkt48/video/7311005834576727301"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "danellajkt48",
+   "vid": "7311368719807139077",
+   "url": "https://www.tiktok.com/@danellajkt48/video/7311368719807139077"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "cynthiajkt48",
+   "vid": "7311361672130743557",
+   "url": "https://www.tiktok.com/@cynthiajkt48/video/7311361672130743557"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "asheljkt48",
+   "vid": "7311328399283211525",
+   "url": "https://www.tiktok.com/@asheljkt48/video/7311328399283211525"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "kathrinjkt48",
+   "vid": "7311326953473084678",
+   "url": "https://www.tiktok.com/@kathrinjkt48/video/7311326953473084678"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "fionyjkt48",
+   "vid": "7311329770409692422",
+   "url": "https://www.tiktok.com/@fionyjkt48/video/7311329770409692422"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "onieljkt48",
+   "vid": "7311348304183364869",
+   "url": "https://www.tiktok.com/@onieljkt48/video/7311348304183364869"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "jkt48.callie.a",
+   "vid": "7311329528729701637",
+   "url": "https://www.tiktok.com/@jkt48.callie.a/video/7311329528729701637"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "jkt48.aurellia_",
+   "vid": "7311330215093914885",
+   "url": "https://www.tiktok.com/@jkt48.aurellia_/video/7311330215093914885"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "ollajkt48",
+   "vid": "7311338997970767110",
+   "url": "https://www.tiktok.com/@ollajkt48/video/7311338997970767110"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "daisyjkt48",
+   "vid": "7311681103713242373",
+   "url": "https://www.tiktok.com/@daisyjkt48/video/7311681103713242373"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "anindyajkt48",
+   "vid": "7311687345206480134",
+   "url": "https://www.tiktok.com/@anindyajkt48/video/7311687345206480134"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "adeljkt48",
+   "vid": "7311570871850716422",
+   "url": "https://www.tiktok.com/@adeljkt48/video/7311570871850716422"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "elijkt48",
+   "vid": "7311684483147697414",
+   "url": "https://www.tiktok.com/@elijkt48/video/7311684483147697414"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "jkt48.ella.a",
+   "vid": "7311680775252888838",
+   "url": "https://www.tiktok.com/@jkt48.ella.a/video/7311680775252888838"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "jkt48.amanda.s",
+   "vid": "7311715140812934405",
+   "url": "https://www.tiktok.com/@jkt48.amanda.s/video/7311715140812934405"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "gitajkt48",
+   "vid": "7311673768005438726",
+   "url": "https://www.tiktok.com/@gitajkt48/video/7311673768005438726"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "indahjkt48",
+   "vid": "7311699676456160517",
+   "url": "https://www.tiktok.com/@indahjkt48/video/7311699676456160517"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "alyajkt48",
+   "vid": "7312057263131331846",
+   "url": "https://www.tiktok.com/@alyajkt48/video/7312057263131331846"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "graciejkt48",
+   "vid": "7312061326333840646",
+   "url": "https://www.tiktok.com/@graciejkt48/video/7312061326333840646"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "gendisjkt48",
+   "vid": "7312026710587886853",
+   "url": "https://www.tiktok.com/@gendisjkt48/video/7312026710587886853"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "jkt48.indira.s",
+   "vid": "7312143520704285957",
+   "url": "https://www.tiktok.com/@jkt48.indira.s/video/7312143520704285957"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "marsha.jkt48",
+   "vid": "7312357043225120005",
+   "url": "https://www.tiktok.com/@marsha.jkt48/video/7312357043225120005"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "michiejkt48",
+   "vid": "7312419777190841606",
+   "url": "https://www.tiktok.com/@michiejkt48/video/7312419777190841606"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "jeanejkt48",
+   "vid": "7312427294176398597",
+   "url": "https://www.tiktok.com/@jeanejkt48/video/7312427294176398597"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "lulu_jkt48",
+   "vid": "7312458134763736325",
+   "url": "https://www.tiktok.com/@lulu_jkt48/video/7312458134763736325"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "handle": "jkt48.official",
+   "vid": "7313467779158609157",
+   "url": "https://www.tiktok.com/@jkt48.official/video/7313467779158609157"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Daftar penampilan JKT48 melalui media di Indonesia",
+   "handle": "rizqherisk.48",
+   "vid": "7317847883854761222",
+   "url": "https://www.tiktok.com/@rizqherisk.48/video/7317847883854761222"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Dukungan dalam pemilihan umum Presiden Indonesia 2024",
+   "handle": "catatan_ifath",
+   "vid": "7300591415602515205",
+   "url": "https://www.tiktok.com/@catatan_ifath/video/7300591415602515205"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Pemilihan umum Wali Kota Bekasi 2024",
+   "handle": "pkb_ahmadi.madonk",
+   "vid": "7368392825781734662",
+   "url": "https://www.tiktok.com/@pkb_ahmadi.madonk/video/7368392825781734662"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Pemilihan umum Wali Kota Bekasi 2024",
+   "handle": "pkb_ahmadi.madonk",
+   "vid": "7374273637345398022",
+   "url": "https://www.tiktok.com/@pkb_ahmadi.madonk/video/7374273637345398022"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Indonesia dalam tahun 2024",
+   "handle": "daaitvindonesia",
+   "vid": "7402177556650249478",
+   "url": "https://www.tiktok.com/@daaitvindonesia/video/7402177556650249478"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Teater JKT48",
+   "handle": "jkt48.official",
+   "vid": "7415520465327836421",
+   "url": "https://www.tiktok.com/@jkt48.official/video/7415520465327836421"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Korea Reomit",
+   "handle": "hansoljang110",
+   "vid": "7440742386101259527",
+   "url": "https://www.tiktok.com/@hansoljang110/video/7440742386101259527"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Miss Rubiah",
+   "handle": "sekilaskenanganyoutube",
+   "vid": "7426603119032700168",
+   "url": "https://www.tiktok.com/@sekilaskenanganyoutube/video/7426603119032700168"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Miss Rubiah",
+   "handle": "sekilaskenanganyoutube",
+   "vid": "7426632785093332242",
+   "url": "https://www.tiktok.com/@sekilaskenanganyoutube/video/7426632785093332242"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Miss Rubiah",
+   "handle": "sekilaskenanganyoutube",
+   "vid": "7426976090251398407",
+   "url": "https://www.tiktok.com/@sekilaskenanganyoutube/video/7426976090251398407"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Natori (musisi)",
+   "handle": "siritoriyowai_",
+   "vid": "6962432239153974529",
+   "url": "https://www.tiktok.com/@siritoriyowai_/video/6962432239153974529"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Pemilihan umum Singapura 2025",
+   "handle": "fyz.zack",
+   "vid": "7496688726173551873",
+   "url": "https://www.tiktok.com/@fyz.zack/video/7496688726173551873"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:R U OK (lagu)",
+   "handle": "tatemcrae1",
+   "vid": "6904356847864581381",
+   "url": "https://www.tiktok.com/@tatemcrae1/video/6904356847864581381?lang=en"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Rubberband (lagu Tate McRae)",
+   "handle": "tatemcrae1",
+   "vid": "6917688976925052165",
+   "url": "https://www.tiktok.com/@tatemcrae1/video/6917688976925052165?lang=en&is_copy_url=1&is_from_webapp=v2"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Sasha Calle",
+   "handle": "glamourmx",
+   "vid": "7244977171343609094",
+   "url": "https://www.tiktok.com/@glamourmx/video/7244977171343609094"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:She's All I Wanna Be",
+   "handle": "tatemcrae1",
+   "vid": "7040546005691026694",
+   "url": "https://www.tiktok.com/@tatemcrae1/video/7040546005691026694"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:She's All I Wanna Be",
+   "handle": "tatemcrae1",
+   "vid": "7053547419589545263",
+   "url": "https://www.tiktok.com/@tatemcrae1/video/7053547419589545263?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:She's All I Wanna Be",
+   "handle": "tatemcrae1",
+   "vid": "7053985993350794543",
+   "url": "https://www.tiktok.com/@tatemcrae1/video/7053985993350794543?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Steffy Burase",
+   "handle": "steffyburase",
+   "vid": "7331038215498059014",
+   "url": "https://www.tiktok.com/@steffyburase/video/7331038215498059014"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Teater JKT48",
+   "handle": "gen98.7fm",
+   "vid": "7481333417204878647",
+   "url": "https://www.tiktok.com/@gen98.7fm/video/7481333417204878647"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Teater JKT48",
+   "handle": "rona_ang",
+   "vid": "7509111478251834642",
+   "url": "https://www.tiktok.com/@rona_ang/video/7509111478251834642"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Teater JKT48",
+   "handle": "rona_ang",
+   "vid": "7512807347148999943",
+   "url": "https://www.tiktok.com/@rona_ang/video/7512807347148999943"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Tell Ur Girlfriend",
+   "handle": "thelaybankz",
+   "vid": "7368266704020901162",
+   "url": "https://www.tiktok.com/@thelaybankz/video/7368266704020901162?_t=8mK0RxeuCFJ&_r=1"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:The Undertaker",
+   "handle": "realdonaldtrump",
+   "vid": "7427237451954965791",
+   "url": "https://www.tiktok.com/@realdonaldtrump/video/7427237451954965791"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Tik Tok (lagu)",
+   "handle": "kesha",
+   "vid": "7416088714398502187",
+   "url": "https://www.tiktok.com/@kesha/video/7416088714398502187"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Brainrot Italia",
+   "handle": "pendekarnasi",
+   "vid": "7424008460171316485",
+   "url": "https://www.tiktok.com/@pendekarnasi/video/7424008460171316485"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Chaotic (lagu Tate McRae)",
+   "handle": "tatemcrae",
+   "vid": "7064335306157378863",
+   "url": "https://www.tiktok.com/@tatemcrae/video/7064335306157378863?is_copy_url=1&is_from_webapp=v1&lang=en"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Dasha Taran",
+   "handle": "matchatarankaaa",
+   "vid": "7453465239246392583",
+   "url": "https://www.tiktok.com/@matchatarankaaa/video/7453465239246392583?_r=1&u_code=ebak16360j68kl&region=ID&mid=7453466150212766481&preview_pb=0&sharer_language=en&_d=e64h4gia4j94ek&share_item_id=7453465239246392583&source=h5_t&timestamp=1739009946&user_id=7307928845792838661&sec_user_id=MS4wLjABAAAA4-Fyy5LRJxINCZS-gIXXZ7ni4vU_KG7fPhxWO93Sz6Caq89IWiDkQSY2a9UcOhW5&social_share_type=0&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7468345992920909576&share_link_id=3781e234-9436-4702-86b4-45a80b346ae5&share_app_id=1180&ugbiz_name=MAIN&ug_btm=b6880,b2878&link_reflow_popup_iteration_sharer=%7B%22click_empty_to_play%22:1,%22dynamic_cover%22:1,%22follow_to_play_duration%22:-1.0,%22profile_clickable%22:1%7D&enable_checksum=1"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Devil Is a Lie",
+   "handle": "tommyrichman",
+   "vid": "7373851981900909870",
+   "url": "https://www.tiktok.com/@tommyrichman/video/7373851981900909870"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Ella Henderson",
+   "handle": "ellahendersonofficial",
+   "vid": "7319942089754610977",
+   "url": "https://www.tiktok.com/@ellahendersonofficial/video/7319942089754610977"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Erika Richardo",
+   "handle": "erikarichardo",
+   "vid": "7375173071260486918",
+   "url": "https://www.tiktok.com/@erikarichardo/video/7375173071260486918?_t=ZS-8xCraaLKUaX&_r=1"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Guru Gembul",
+   "handle": "ppgpai",
+   "vid": "7529501367833070853",
+   "url": "https://www.tiktok.com/@ppgpai/video/7529501367833070853"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Feel Like Shit",
+   "handle": "tatemcrae1",
+   "vid": "7013774783670193413",
+   "url": "https://www.tiktok.com/@tatemcrae1/video/7013774783670193413?lang=en&is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Feel Like Shit",
+   "handle": "tatemcrae1",
+   "vid": "7021943172959898885",
+   "url": "https://www.tiktok.com/@tatemcrae1/video/7021943172959898885?lang=en&is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Feel Like Shit",
+   "handle": "tatemcrae1",
+   "vid": "7026393502317727023",
+   "url": "https://www.tiktok.com/@tatemcrae1/video/7026393502317727023?lang=en&is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Freya Jayawardana",
+   "handle": "tosso_san",
+   "vid": "7235578791072894213",
+   "url": "https://www.tiktok.com/@tosso_san/video/7235578791072894213"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Freya Jayawardana",
+   "handle": "freyarchv",
+   "vid": "7228580935606734107",
+   "url": "https://www.tiktok.com/@freyarchv/video/7228580935606734107"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Freya Jayawardana",
+   "handle": "freyarchv",
+   "vid": "7228548406883437850",
+   "url": "https://www.tiktok.com/@freyarchv/video/7228548406883437850"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Freya Jayawardana",
+   "handle": "freyarchv",
+   "vid": "7408448376909417734",
+   "url": "https://www.tiktok.com/@freyarchv/video/7408448376909417734"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Gerakan Pasundan Merdeka",
+   "handle": "wiei_nata",
+   "vid": "7535912368245705990",
+   "url": "https://www.tiktok.com/@wiei_nata/video/7535912368245705990"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Grand Theft Auto VI",
+   "handle": "dylandpros",
+   "vid": "7633432502194982151",
+   "url": "https://www.tiktok.com/@dylandpros/video/7633432502194982151"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 1,
+   "page": "Pembicaraan:Greesella Adhalia",
+   "handle": "jkt_48post",
+   "vid": "7355731107150679302",
+   "url": "https://www.tiktok.com/@jkt_48post/video/7355731107150679302"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 2,
+   "page": "Pengguna:Kompang pekanbaru",
+   "handle": "kompangpekanbaru",
+   "vid": "7254189225652833541",
+   "url": "https://www.tiktok.com/@kompangpekanbaru/video/7254189225652833541"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 2,
+   "page": "Pengguna:Tommydimensions/Bak pasir",
+   "handle": "_shaz",
+   "vid": "7102776154851101978",
+   "url": "https://www.tiktok.com/@_shaz/video/7102776154851101978"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Anjlokan kereta api Ohio 2023",
+   "handle": "jakajam11",
+   "vid": "7198218699449322795",
+   "url": "https://www.tiktok.com/@jakajam11/video/7198218699449322795"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "SMA Negeri 4 Muara Teweh",
+   "handle": "osissmafourbahalap_",
+   "vid": "7277422765559368966",
+   "url": "https://www.tiktok.com/@osissmafourbahalap_/video/7277422765559368966"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Museum Kabupaten Pidie Jaya",
+   "handle": "acehtourismtravel",
+   "vid": "7195166751586372891",
+   "url": "https://www.tiktok.com/@acehtourismtravel/video/7195166751586372891"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Sheriff: Narko Integriti",
+   "handle": "thaqibshaker",
+   "vid": "7375890590665362689",
+   "url": "https://www.tiktok.com/@thaqibshaker/video/7375890590665362689?lang=en"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Sheriff: Narko Integriti",
+   "handle": "syerleena_rashid",
+   "vid": "7376167786105556241",
+   "url": "https://www.tiktok.com/@syerleena_rashid/video/7376167786105556241?lang=en"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Miss Rubiah",
+   "handle": "sekilaskenanganyoutube",
+   "vid": "7426433170192600328",
+   "url": "https://www.tiktok.com/@sekilaskenanganyoutube/video/7426433170192600328"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Lo\u00efs Openda",
+   "handle": "l.openda",
+   "vid": "7210108356143451397",
+   "url": "https://www.tiktok.com/@l.openda/video/7210108356143451397"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Hypnotized (lagu Anyma dan Ellie Goulding)",
+   "handle": "johnsummit",
+   "vid": "7458837735835536671",
+   "url": "https://www.tiktok.com/@johnsummit/video/7458837735835536671"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "KaburAjaDulu",
+   "handle": "irwanprasetiyo",
+   "vid": "7470838237427141906",
+   "url": "https://www.tiktok.com/@irwanprasetiyo/video/7470838237427141906?_t=ZS-8u80xlfEp5G&_r=1"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Like a Saviour",
+   "handle": "elliegoulding",
+   "vid": "7172220613023599877",
+   "url": "https://www.tiktok.com/@elliegoulding/video/7172220613023599877"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Like a Saviour",
+   "handle": "elliegoulding",
+   "vid": "7195220875010952454",
+   "url": "https://www.tiktok.com/@elliegoulding/video/7195220875010952454?is_from_webapp=1&sender_device=pc&web_id=7156828062705206790"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Adzana Ashel",
+   "handle": "nxsq2",
+   "vid": "7241808506611977477",
+   "url": "https://www.tiktok.com/@nxsq2/video/7241808506611977477"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Adzana Ashel",
+   "handle": "l4bigail._",
+   "vid": "7368372359985761541",
+   "url": "https://www.tiktok.com/@l4bigail._/video/7368372359985761541"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Adzana Ashel",
+   "handle": "video_online_riki",
+   "vid": "7289367544539008261",
+   "url": "https://www.tiktok.com/@video_online_riki/video/7289367544539008261"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Daftar penampilan JKT48 melalui media di Indonesia",
+   "handle": "gen98.7fm",
+   "vid": "7481727687292226822",
+   "url": "https://www.tiktok.com/@gen98.7fm/video/7481727687292226822"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Maudy Ayunda",
+   "handle": "maudyayunda",
+   "vid": "6997698230079311130",
+   "url": "https://www.tiktok.com/@maudyayunda/video/6997698230079311130"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Akhmad Yani Renuat",
+   "handle": "feedgramindo4",
+   "vid": "7500608915986500870",
+   "url": "https://www.tiktok.com/@feedgramindo4/video/7500608915986500870%60"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Chalista Ellysia",
+   "handle": "chalista_ellysia",
+   "vid": "7374767551198301446",
+   "url": "https://www.tiktok.com/@chalista_ellysia/video/7374767551198301446"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Peristiwa Indonesia di tahun 2024",
+   "handle": "goodstatsid",
+   "vid": "7353997154458946821",
+   "url": "https://www.tiktok.com/@goodstatsid/video/7353997154458946821?lang=id-ID#:~:text=Negara%20Asia%20Selatan%20itu%20berhasil,19%25%20dari%20total%20populasi%20negara."
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Promosi (catur)",
+   "handle": "borneoman16",
+   "vid": "7345367140553198854",
+   "url": "https://www.tiktok.com/@borneoman16/video/7345367140553198854?is_from_webapp=1&sender_device=pc&web_id=7514681374667146760"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Manokwari City Mall",
+   "handle": "sapijajan",
+   "vid": "7475942894554057990",
+   "url": "https://www.tiktok.com/@sapijajan/video/7475942894554057990"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Jessica Rosmaureena",
+   "handle": "jessicarosmaureena",
+   "vid": "7274794307599502598",
+   "url": "https://www.tiktok.com/@jessicarosmaureena/video/7274794307599502598?_t=ZS-8zCeKkjj9DY&_r=1"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Stasiun Banjaran (Tegal)",
+   "handle": "jalur5",
+   "vid": "7541763321452563730",
+   "url": "https://www.tiktok.com/@jalur5/video/7541763321452563730?_t=ZS-8zJViHY0kJs&_r=1"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Syed Saddiq Syed Abdul Rahman",
+   "handle": "syedsaddiq",
+   "vid": "6965887431094684929",
+   "url": "https://www.tiktok.com/@syedsaddiq/video/6965887431094684929"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Kereta api Mak Itam",
+   "handle": "kpkd2sb",
+   "vid": "7543194457282301191",
+   "url": "https://www.tiktok.com/@kpkd2sb/video/7543194457282301191"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Cynthia Corla",
+   "handle": "viraldiindonesiaku",
+   "vid": "7242404476873739526",
+   "url": "https://www.tiktok.com/@viraldiindonesiaku/video/7242404476873739526"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Kenriz (penyanyi)",
+   "handle": "indonesianidol",
+   "vid": "7472020273265380625",
+   "url": "https://www.tiktok.com/@indonesianidol/video/7472020273265380625"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Kenriz (penyanyi)",
+   "handle": "indonesianidol",
+   "vid": "7446503710680714514",
+   "url": "https://www.tiktok.com/@indonesianidol/video/7446503710680714514"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Kenriz (penyanyi)",
+   "handle": "idolaindonesianidol",
+   "vid": "7506896809982315832",
+   "url": "https://www.tiktok.com/@idolaindonesianidol/video/7506896809982315832?q=kenriz%20crazy%20audisi&t=1760942856155"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Kenriz (penyanyi)",
+   "handle": "kenzone.official",
+   "vid": "7455570841284136198",
+   "url": "https://www.tiktok.com/@kenzone.official/video/7455570841284136198"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Charli XCX",
+   "handle": "charlixcx",
+   "vid": "7207571535068974341",
+   "url": "https://www.tiktok.com/@charlixcx/video/7207571535068974341"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Pasar Nusantara IKN",
+   "handle": "wdshun20",
+   "vid": "7523431021337988358",
+   "url": "https://www.tiktok.com/@wdshun20/video/7523431021337988358"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Rei Ami",
+   "handle": "rei.ami",
+   "vid": "7528930294997601567",
+   "url": "https://www.tiktok.com/@rei.ami/video/7528930294997601567?is_from_webapp=1&sender_device=pc&web_id=7516969574152291854"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Vatanika Patamasingha Na Ayudhya",
+   "handle": "vatanika",
+   "vid": "7478655118154435847",
+   "url": "https://www.tiktok.com/@vatanika/video/7478655118154435847"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Trans Mall Padang",
+   "handle": "soalpadang",
+   "vid": "7558287983669972280",
+   "url": "https://www.tiktok.com/@soalpadang/video/7558287983669972280"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Fidly Immanda Azzahra",
+   "handle": "fiachuuu",
+   "vid": "7592151065559190805",
+   "url": "https://www.tiktok.com/@fiachuuu/video/7592151065559190805"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Fidly Immanda Azzahra",
+   "handle": "fiachuuu",
+   "vid": "7592459342452985109",
+   "url": "https://www.tiktok.com/@fiachuuu/video/7592459342452985109"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Rossa",
+   "handle": "davehendrik",
+   "vid": "7401455727023246597",
+   "url": "https://www.tiktok.com/@davehendrik/video/7401455727023246597"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Freya Jayawardana",
+   "handle": "alazharfineshyt",
+   "vid": "7601769018386582805",
+   "url": "https://www.tiktok.com/@alazharfineshyt/video/7601769018386582805"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Newsround",
+   "handle": "degraftmensah",
+   "vid": "7328111684747414817",
+   "url": "https://www.tiktok.com/@degraftmensah/video/7328111684747414817"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Newsround",
+   "handle": "degraftmensah",
+   "vid": "7328442434898103585",
+   "url": "https://www.tiktok.com/@degraftmensah/video/7328442434898103585"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Newsround",
+   "handle": "shanequaparis",
+   "vid": "7315355802271845664",
+   "url": "https://www.tiktok.com/@shanequaparis/video/7315355802271845664"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Newsround",
+   "handle": "degraftmensah",
+   "vid": "7313826114273611040",
+   "url": "https://www.tiktok.com/@degraftmensah/video/7313826114273611040?lang=en"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Uya Kuya",
+   "handle": "king.uyakuya",
+   "vid": "7425493883628391685",
+   "url": "https://www.tiktok.com/@king.uyakuya/video/7425493883628391685"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Stokes Twins",
+   "handle": "jordanmatter",
+   "vid": "7327061748211805467",
+   "url": "https://www.tiktok.com/@jordanmatter/video/7327061748211805467"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Nattapha Kitiyakara",
+   "handle": "honeywaterbee215",
+   "vid": "7532874451931696402",
+   "url": "https://www.tiktok.com/@honeywaterbee215/video/7532874451931696402?_t=ZS-8yTsJH1u5Op&_r=1"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Sydney Sweeney",
+   "handle": "anidom",
+   "vid": "7628320488414137614",
+   "url": "https://www.tiktok.com/@anidom/video/7628320488414137614"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Addison Rae",
+   "handle": "addisonre",
+   "vid": "7438368047934688558",
+   "url": "https://www.tiktok.com/@addisonre/video/7438368047934688558"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Portal:Animasi/Kutipan pilihan/3",
+   "handle": "kompascom",
+   "vid": "7525302362932612359",
+   "url": "https://www.tiktok.com/@kompascom/video/7525302362932612359"
+  },
+  {
+   "wiki": "id.wikipedia.org",
+   "ns": 118,
+   "page": "Lucy Bronze",
+   "handle": "lucybronze",
+   "vid": "7081654931601526021",
+   "url": "https://www.tiktok.com/@lucybronze/video/7081654931601526021"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05e8\u05d9\u05d9\u05d1\u05df \u05e1\u05d9\u05de\u05d5\u05df",
+   "handle": "ravensymone",
+   "vid": "7109193971573820718",
+   "url": "https://www.tiktok.com/@ravensymone/video/7109193971573820718?is_from_webapp=1&sender_device=pc&web_id=7114925332314441222"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05d3\u05e0\u05d9\u05d0\u05dc \u05d9\u05d5\u05e0\u05d4",
+   "handle": "eretz.nehederet",
+   "vid": "7176236529096953090",
+   "url": "https://www.tiktok.com/@eretz.nehederet/video/7176236529096953090?lang=en"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05d0\u05d4\u05d5\u05d3 \u05d0\u05d5\u05dc\u05de\u05e8\u05d8",
+   "handle": "yaron_avraham",
+   "vid": "7252331826671308040",
+   "url": "https://www.tiktok.com/@yaron_avraham/video/7252331826671308040"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05e4\u05dc\u05e1\u05d8\u05d9\u05d4 \u05d0\u05dc-\u05e2\u05e7\u05d0\u05d3",
+   "handle": "nelli.smelli",
+   "vid": "7302053434834881794",
+   "url": "https://www.tiktok.com/@nelli.smelli/video/7302053434834881794"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05de\u05d5\u05e8\u05d9\u05d4 \u05d0\u05e1\u05e8\u05e3",
+   "handle": "ben_caspit",
+   "vid": "7316460825613552904",
+   "url": "https://www.tiktok.com/@ben_caspit/video/7316460825613552904"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05ea\u05de\u05e8 \u05d2\u05d5\u05d8\u05e8 (\u05e4\u05d5\u05d1\u05dc\u05d9\u05e6\u05d9\u05e1\u05d8\u05d9\u05ea)",
+   "handle": "israel_hayom",
+   "vid": "7184814401961069826",
+   "url": "https://www.tiktok.com/@israel_hayom/video/7184814401961069826"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05e9\u05d9 \u05d0\u05d1\u05d9\u05d8\u05dc (\u05e1\u05d5\u05db\u05df)",
+   "handle": "henassor",
+   "vid": "7408494527205346578",
+   "url": "https://www.tiktok.com/@henassor/video/7408494527205346578"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05d3\u05e0\u05d9\u05d6 \u05d0\u05d5\u05e0\u05d3\u05e3",
+   "handle": "americanexpress",
+   "vid": "7260916543805066501",
+   "url": "https://www.tiktok.com/@americanexpress/video/7260916543805066501"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05d7\u05d3\u05d9\u05e8\u05d4 (\u05d9\u05d7\u05e1\u05d9 \u05de\u05d9\u05df)",
+   "handle": "bengurionuniversity",
+   "vid": "7275685330093690114",
+   "url": "https://www.tiktok.com/@bengurionuniversity/video/7275685330093690114"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05e0\u05d9\u05e7\u05d5 \u05d5\u05d9\u05dc\u05d9\u05d0\u05de\u05e1 (\u05db\u05d3\u05d5\u05e8\u05d2\u05dc\u05df \u05d5\u05dc\u05e9\u05d9)",
+   "handle": "footballnerdedits",
+   "vid": "7428255885354421536",
+   "url": "https://www.tiktok.com/@footballnerdedits/video/7428255885354421536"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05ea\u05d5\u05de\u05d0\u05e1 \u05e4\u05d0\u05e8\u05d8\u05d9",
+   "handle": "dr.promp8",
+   "vid": "7419306302326852896",
+   "url": "https://www.tiktok.com/@dr.promp8/video/7419306302326852896"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05e6'\u05d0\u05e4\u05dc \u05e8\u05d5\u05d0\u05df",
+   "handle": "bettysgardensong",
+   "vid": "7381596008850984235",
+   "url": "https://www.tiktok.com/@bettysgardensong/video/7381596008850984235?lang=he-IL"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05e7\u05d0\u05d9 \u05d8\u05e8\u05d0\u05de\u05e4",
+   "handle": "thekaitrumpgolfer",
+   "vid": "7439426501084204319",
+   "url": "https://www.tiktok.com/@thekaitrumpgolfer/video/7439426501084204319"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05e8\u05d5\u05d3\u05d9 \u05e8\u05d5\u05e9\u05de\u05df",
+   "handle": "hazinor",
+   "vid": "7366969654968962322",
+   "url": "https://www.tiktok.com/@hazinor/video/7366969654968962322"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05d2'\u05e8\u05de\u05d9 \u05e4\u05e8\u05d9\u05de\u05e4\u05d5\u05e0\u05d2",
+   "handle": "goatfrimp0ng",
+   "vid": "7340408520203980037",
+   "url": "https://www.tiktok.com/@goatfrimp0ng/video/7340408520203980037?lang=en"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05e4\u05e8\u05d3\u05e8\u05d9\u05e7 \u05d0\u05d0\u05d5\u05e9\u05e0\u05e1",
+   "handle": "slbenfica",
+   "vid": "7135929831845317893",
+   "url": "https://www.tiktok.com/@slbenfica/video/7135929831845317893?lang=he-IL"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05e8\u05e6\u05d7 \u05ea\u05d9\u05e0\u05d5\u05e7\u05d5\u05ea \u05d1\u05d8\u05d1\u05d7 \u05e9\u05d1\u05e2\u05d4 \u05d1\u05d0\u05d5\u05e7\u05d8\u05d5\u05d1\u05e8",
+   "handle": "n12news",
+   "vid": "7534051129345281287",
+   "url": "https://www.tiktok.com/@n12news/video/7534051129345281287"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05d0\u05e0\u05e1 \u05d0-\u05e9\u05e8\u05d9\u05e3",
+   "handle": "aljazeera",
+   "vid": "7529182179646098704",
+   "url": "https://www.tiktok.com/@aljazeera/video/7529182179646098704?lang=he-IL"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05d8\u05e2\u05e0\u05d5\u05ea \u05dc\u05e8\u05e6\u05d7 \u05e2\u05dd \u05d1\u05e8\u05e6\u05d5\u05e2\u05ea \u05e2\u05d6\u05d4",
+   "handle": "yosephhaddad",
+   "vid": "7293010718939565313",
+   "url": "https://www.tiktok.com/@yosephhaddad/video/7293010718939565313?lang=he-IL"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05ea\u05e7\u05d5\u05d5\u05d4 \u05e2\u05d6\u05d9\u05d6",
+   "handle": "naftalibennett_official",
+   "vid": "7652266834724441365",
+   "url": "https://www.tiktok.com/@naftalibennett_official/video/7652266834724441365"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 1,
+   "page": "\u05e9\u05d9\u05d7\u05d4:\u05e0\u05d1\u05d7\u05e8\u05ea \u05d0\u05e7\u05d5\u05d5\u05d3\u05d5\u05e8 \u05d1\u05db\u05d3\u05d5\u05e8\u05d2\u05dc",
+   "handle": "yosoydecuador",
+   "vid": "7410255552283954438",
+   "url": "https://www.tiktok.com/@yosoydecuador/video/7410255552283954438"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 2,
+   "page": "\u05de\u05e9\u05ea\u05de\u05e9:\u05e4\u05d9\u05d8\u05e8 \u05e4\u05df/\u05e2\u05d5\u05d3 \u05dc\u05d9\u05dc\u05d4 \u05d1\u05e1\u05d3\u05d5\u05dd",
+   "handle": "ooezoo_",
+   "vid": "6863597259334880517",
+   "url": "https://www.tiktok.com/@ooezoo_/video/6863597259334880517?is_from_webapp=v1&item_id=6863597259334880517"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 2,
+   "page": "\u05de\u05e9\u05ea\u05de\u05e9:\u05d0\u05d5\u05e8\u05d99/\u05d9\u05d5\u05d6\u05de\u05d5\u05ea \u05dc\u05d4\u05e9\u05d1\u05ea \u05d9\u05e9\u05e8\u05d0\u05dc\u05d9\u05dd \u05dc\u05d7\u05d1\u05dc \u05e2\u05d6\u05d4 \u05d5\u05dc\u05e6\u05e4\u05d5\u05df \u05d4\u05e9\u05d5\u05de\u05e8\u05d5\u05df",
+   "handle": "daniel__cohen_",
+   "vid": "7303130003309399298",
+   "url": "https://www.tiktok.com/@daniel__cohen_/video/7303130003309399298"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 2,
+   "page": "\u05de\u05e9\u05ea\u05de\u05e9:\u05d7\u05df \u05d2\u05dc/\u05d8\u05d9\u05d5\u05d8\u05d4",
+   "handle": "none819371",
+   "vid": "7371107469663145217",
+   "url": "https://www.tiktok.com/@none819371/video/7371107469663145217"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 2,
+   "page": "\u05de\u05e9\u05ea\u05de\u05e9:Ronbeck2006/\u05e8\u05d5\u05df \u05d1\u05e7",
+   "handle": "matanpeershimonov",
+   "vid": "7402474775349611793",
+   "url": "https://www.tiktok.com/@matanpeershimonov/video/7402474775349611793"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 2,
+   "page": "\u05de\u05e9\u05ea\u05de\u05e9:\u05e0\u05d0\u05d5\u05d3\u05d9\u05de\u05d9\u05d5\u05dd/\u05e8\u05d5\u05d1\u05d9 \u05e4\u05e8\u05e0\u05e7\u05d9",
+   "handle": "utahvloggersyas",
+   "vid": "7135796709996662058",
+   "url": "https://www.tiktok.com/@utahvloggersyas/video/7135796709996662058"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 2,
+   "page": "\u05de\u05e9\u05ea\u05de\u05e9:JhonGame1/\u05d2\u05e8\u05d9\u05d9\u05de\u05e1 \u05e9\u05d9\u05d9\u05e7",
+   "handle": "mcdonalds",
+   "vid": "7249449428342410538",
+   "url": "https://www.tiktok.com/@mcdonalds/video/7249449428342410538"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 2,
+   "page": "\u05de\u05e9\u05ea\u05de\u05e9:\u05e8\u05e2\u05d5\u05ea \u05e9\u05d8\u05d9\u05d9\u05e0\u05d1\u05e8\u05d2/\u05d0\u05d2\u05dd \u05d0\u05d9\u05d6\u05df",
+   "handle": "kan_news",
+   "vid": "7600714509703073044",
+   "url": "https://www.tiktok.com/@kan_news/video/7600714509703073044?is_from_webapp=1&sender_device=pc"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 2,
+   "page": "\u05de\u05e9\u05ea\u05de\u05e9:\u05e2\u05d9\u05d3\u05d5 \u05db.\u05e9./\u05d8\u05d9\u05d5\u05d8\u05d4",
+   "handle": "n12news",
+   "vid": "7540645420993629447",
+   "url": "https://www.tiktok.com/@n12news/video/7540645420993629447?lang=he-IL"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 3,
+   "page": "\u05e9\u05d9\u05d7\u05ea \u05de\u05e9\u05ea\u05de\u05e9:Galaranty/Wordle",
+   "handle": "linguisticdiscovery",
+   "vid": "7056178088236977455",
+   "url": "https://www.tiktok.com/@linguisticdiscovery/video/7056178088236977455"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 3,
+   "page": "\u05e9\u05d9\u05d7\u05ea \u05de\u05e9\u05ea\u05de\u05e9:Rotem2212",
+   "handle": "arutz_7",
+   "vid": "7368171405361351954",
+   "url": "https://www.tiktok.com/@arutz_7/video/7368171405361351954"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 4,
+   "page": "\u05d5\u05d9\u05e7\u05d9\u05e4\u05d3\u05d9\u05d4:\u05d1\u05d5\u05d3\u05e7/\u05d1\u05e7\u05e9\u05d5\u05ea \u05dc\u05d1\u05d3\u05d9\u05e7\u05d4/\u05d0\u05e8\u05db\u05d9\u05d5\u05df 27",
+   "handle": "gevald_official",
+   "vid": "6917572838006246657",
+   "url": "https://www.tiktok.com/@gevald_official/video/6917572838006246657"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 4,
+   "page": "\u05d5\u05d9\u05e7\u05d9\u05e4\u05d3\u05d9\u05d4:\u05db\u05d9\u05db\u05e8 \u05d4\u05e2\u05d9\u05e8/\u05d0\u05e8\u05db\u05d9\u05d5\u05df 166",
+   "handle": "guyhildes",
+   "vid": "7165369000719813889",
+   "url": "https://www.tiktok.com/@guyhildes/video/7165369000719813889?is_from_webapp=v1&item_id=7165369000719813889"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 4,
+   "page": "\u05d5\u05d9\u05e7\u05d9\u05e4\u05d3\u05d9\u05d4:\u05e8\u05e9\u05d9\u05de\u05ea \u05e2\u05e8\u05db\u05d9\u05dd \u05d1\u05de\u05d7\u05dc\u05d5\u05e7\u05ea/:\u05d0\u05d5\u05e0\u05d9\u05d1\u05e8\u05e1\u05d9\u05d8\u05ea \u05d4\u05e8\u05d5\u05d5\u05d0\u05e8\u05d3",
+   "handle": "shavitari",
+   "vid": "7323179333567220999",
+   "url": "https://www.tiktok.com/@shavitari/video/7323179333567220999"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 4,
+   "page": "\u05d5\u05d9\u05e7\u05d9\u05e4\u05d3\u05d9\u05d4:\u05d4\u05e2\u05d1\u05e8\u05ea \u05d3\u05e4\u05d9 \u05d8\u05d9\u05d5\u05d8\u05d4/\u05d0\u05e8\u05db\u05d9\u05d5\u05df \u05d0\u05e4\u05e8\u05d9\u05dc-\u05d9\u05d5\u05e0\u05d9 2026",
+   "handle": "kenyon_kiryat_ono",
+   "vid": "7574773429916945682",
+   "url": "https://www.tiktok.com/@kenyon_kiryat_ono/video/7574773429916945682"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 10,
+   "page": "\u05ea\u05d1\u05e0\u05d9\u05ea:\u05e4\u05d5\u05e1\u05d8 \u05d1\u05d8\u05d9\u05e7\u05d8\u05d5\u05e7",
+   "handle": "ben_caspit",
+   "vid": "7653738569336376584",
+   "url": "https://www.tiktok.com/@ben_caspit/video/7653738569336376584"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 10,
+   "page": "\u05ea\u05d1\u05e0\u05d9\u05ea:\u05e4\u05d5\u05e1\u05d8 \u05d1\u05d8\u05d9\u05e7\u05d8\u05d5\u05e7",
+   "handle": "yuvalbinder",
+   "vid": "7214772426348023048",
+   "url": "https://www.tiktok.com/@yuvalbinder/video/7214772426348023048"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 118,
+   "page": "\u05d8\u05d9\u05d5\u05d8\u05d4:\u05d0\u05d1\u05d9\u05e2\u05d3 \u05e4\u05e0\u05d7\u05d9",
+   "handle": "telavivuniversity",
+   "vid": "7111644884821380353",
+   "url": "https://www.tiktok.com/@telavivuniversity/video/7111644884821380353"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 118,
+   "page": "\u05d8\u05d9\u05d5\u05d8\u05d4:\u05e9\u05e8\u05d5\u05df \u05d1\u05e0\u05d9\u05de\u05d9\u05df",
+   "handle": "tanachbaktana",
+   "vid": "7119381309075557634",
+   "url": "https://www.tiktok.com/@tanachbaktana/video/7119381309075557634?is_from_webapp=1&sender_device=pc&web_id=7093965392401401346"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 118,
+   "page": "\u05d8\u05d9\u05d5\u05d8\u05d4:\u05e9\u05e8\u05d5\u05df \u05d1\u05e0\u05d9\u05de\u05d9\u05df",
+   "handle": "tanachbaktana",
+   "vid": "7154057453829623042",
+   "url": "https://www.tiktok.com/@tanachbaktana/video/7154057453829623042"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 118,
+   "page": "\u05d8\u05d9\u05d5\u05d8\u05d4:\u05e9\u05e8\u05d5\u05df \u05d1\u05e0\u05d9\u05de\u05d9\u05df",
+   "handle": "tanachbaktana",
+   "vid": "7182153015669869825",
+   "url": "https://www.tiktok.com/@tanachbaktana/video/7182153015669869825"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 118,
+   "page": "\u05d8\u05d9\u05d5\u05d8\u05d4:\u05e9\u05e8\u05d5\u05df \u05d1\u05e0\u05d9\u05de\u05d9\u05df",
+   "handle": "tanachbaktana",
+   "vid": "7184695094488878338",
+   "url": "https://www.tiktok.com/@tanachbaktana/video/7184695094488878338?is_from_webapp=1&sender_device=pc&web_id=7093965392401401346"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 118,
+   "page": "\u05d8\u05d9\u05d5\u05d8\u05d4:\u05d9\u05e2\u05e7\u05d1 \u05e7\u05dc\u05d9\u05d9\u05df (\u05e7\u05e6\u05d9\u05df)",
+   "handle": "kan_news",
+   "vid": "7277590408882916610",
+   "url": "https://www.tiktok.com/@kan_news/video/7277590408882916610?_t=8fbUkvQlYWt&_r=1"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 118,
+   "page": "\u05d8\u05d9\u05d5\u05d8\u05d4:\u05e2\u05d9\u05d3\u05df \u05d1\u05dc\u05d5\u05d9",
+   "handle": "tikshuv.idf",
+   "vid": "7366977481645034753",
+   "url": "https://www.tiktok.com/@tikshuv.idf/video/7366977481645034753"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 118,
+   "page": "\u05d8\u05d9\u05d5\u05d8\u05d4:\u05d4\u05d8\u05d1\u05dc\u05d4, \u05de\u05d3\u05d1\u05e8\u05d9\u05dd \u05e2\u05dc \u05d4\u05d3\u05e9\u05d0 - \u05e4\u05d5\u05d3\u05e7\u05d0\u05e1\u05d8 \u05e1\u05e4\u05d5\u05e8\u05d8",
+   "handle": "hatavla1",
+   "vid": "7533604986576473352",
+   "url": "https://www.tiktok.com/@hatavla1/video/7533604986576473352?is_from_webapp=1&sender_device=pc&web_id=7504631520209257990"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 118,
+   "page": "\u05d8\u05d9\u05d5\u05d8\u05d4:\u05d4\u05d8\u05d1\u05dc\u05d4, \u05de\u05d3\u05d1\u05e8\u05d9\u05dd \u05e2\u05dc \u05d4\u05d3\u05e9\u05d0 - \u05e4\u05d5\u05d3\u05e7\u05d0\u05e1\u05d8 \u05e1\u05e4\u05d5\u05e8\u05d8",
+   "handle": "hatavla1",
+   "vid": "7529600767825546514",
+   "url": "https://www.tiktok.com/@hatavla1/video/7529600767825546514?is_from_webapp=1&sender_device=pc&web_id=7504631520209257990"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 118,
+   "page": "\u05d8\u05d9\u05d5\u05d8\u05d4:\u05d4\u05d8\u05d1\u05dc\u05d4, \u05de\u05d3\u05d1\u05e8\u05d9\u05dd \u05e2\u05dc \u05d4\u05d3\u05e9\u05d0 - \u05e4\u05d5\u05d3\u05e7\u05d0\u05e1\u05d8 \u05e1\u05e4\u05d5\u05e8\u05d8",
+   "handle": "hatavla1",
+   "vid": "7510948525623184658",
+   "url": "https://www.tiktok.com/@hatavla1/video/7510948525623184658?is_from_webapp=1&sender_device=pc&web_id=7504631520209257990"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 118,
+   "page": "\u05d8\u05d9\u05d5\u05d8\u05d4:\u05d4\u05d8\u05d1\u05dc\u05d4, \u05de\u05d3\u05d1\u05e8\u05d9\u05dd \u05e2\u05dc \u05d4\u05d3\u05e9\u05d0 - \u05e4\u05d5\u05d3\u05e7\u05d0\u05e1\u05d8 \u05e1\u05e4\u05d5\u05e8\u05d8",
+   "handle": "hatavla1",
+   "vid": "7495765173823753479",
+   "url": "https://www.tiktok.com/@hatavla1/video/7495765173823753479?is_from_webapp=1&sender_device=pc&web_id=7504631520209257990"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 118,
+   "page": "\u05d8\u05d9\u05d5\u05d8\u05d4:\u05d4\u05d8\u05d1\u05dc\u05d4, \u05de\u05d3\u05d1\u05e8\u05d9\u05dd \u05e2\u05dc \u05d4\u05d3\u05e9\u05d0 - \u05e4\u05d5\u05d3\u05e7\u05d0\u05e1\u05d8 \u05e1\u05e4\u05d5\u05e8\u05d8",
+   "handle": "hatavla1",
+   "vid": "7504623441325182215",
+   "url": "https://www.tiktok.com/@hatavla1/video/7504623441325182215?is_from_webapp=1&sender_device=pc&web_id=7504631520209257990"
+  },
+  {
+   "wiki": "he.wikipedia.org",
+   "ns": 118,
+   "page": "\u05d8\u05d9\u05d5\u05d8\u05d4:\u05e1\u05dd \u05d3\u05e0\u05d1\u05d9",
+   "handle": "samfromwendover",
+   "vid": "7166622495867604270",
+   "url": "https://www.tiktok.com/@samfromwendover/video/7166622495867604270?lang=en"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 2,
+   "page": "Usu\u00e1rio:Vazafirst/Testes/Beautiful Things (can\u00e7\u00e3o de Benson Boone)",
+   "handle": "bensonboone",
+   "vid": "7308548080125693226",
+   "url": "https://www.tiktok.com/@bensonboone/video/7308548080125693226"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 2,
+   "page": "Usu\u00e1rio:Dorian Gray Wild/Testes/Queda na Cidade Antiga",
+   "handle": "hacimadlikseyes",
+   "vid": "7616676459440295189",
+   "url": "https://www.tiktok.com/@hacimadlikseyes/video/7616676459440295189"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 2,
+   "page": "Usu\u00e1rio(a):Lr Contents/Testes",
+   "handle": "careca_soso",
+   "vid": "7565530450064690440",
+   "url": "https://www.tiktok.com/@careca_soso/video/7565530450064690440"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 2,
+   "page": "Usu\u00e1rio:Dorian Gray Wild/Testes/Tomer \u00d3culos Branco",
+   "handle": "hmishkafhlavan",
+   "vid": "7617562538338831636",
+   "url": "https://www.tiktok.com/@hmishkafhlavan/video/7617562538338831636"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 2,
+   "page": "Usu\u00e1rio:Dorian Gray Wild/Testes/Tomer \u00d3culos Branco",
+   "handle": "hmishkafhlavan",
+   "vid": "7626860643802647828",
+   "url": "https://www.tiktok.com/@hmishkafhlavan/video/7626860643802647828"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 3,
+   "page": "Usu\u00e1rio(a) Discuss\u00e3o:Patogenerico2341",
+   "handle": "doutorfran",
+   "vid": "7119697417804532997",
+   "url": "https://www.tiktok.com/@doutorfran/video/7119697417804532997"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Sacrifice (can\u00e7\u00e3o de Bebe Rexha)",
+   "handle": "beberexha",
+   "vid": "6933651124801031430",
+   "url": "https://www.tiktok.com/@beberexha/video/6933651124801031430"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "britishpromise.cats",
+   "vid": "6839416095586159878",
+   "url": "https://www.tiktok.com/@britishpromise.cats/video/6839416095586159878?request_from=server"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "justmaiko",
+   "vid": "6803012363424500997",
+   "url": "https://www.tiktok.com/@justmaiko/video/6803012363424500997?request_from=server"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "kisonkee",
+   "vid": "6753718966637677830",
+   "url": "https://www.tiktok.com/@kisonkee/video/6753718966637677830"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "fredziownik_art",
+   "vid": "6911406868699073798",
+   "url": "https://www.tiktok.com/@fredziownik_art/video/6911406868699073798"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "thenickluciano",
+   "vid": "6932635718615338246",
+   "url": "https://www.tiktok.com/@thenickluciano/video/6932635718615338246?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "billieeilish",
+   "vid": "6894081763379924229",
+   "url": "https://www.tiktok.com/@billieeilish/video/6894081763379924229"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "khaby.lame",
+   "vid": "6950627842518568197",
+   "url": "https://www.tiktok.com/@khaby.lame/video/6950627842518568197"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "khaby.lame",
+   "vid": "6950240079583513862",
+   "url": "https://www.tiktok.com/@khaby.lame/video/6950240079583513862"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "daexo",
+   "vid": "6901709683568938245",
+   "url": "https://www.tiktok.com/@daexo/video/6901709683568938245"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "khaby.lame",
+   "vid": "6971795480774708485",
+   "url": "https://www.tiktok.com/@khaby.lame/video/6971795480774708485?lang=en&is_copy_url=0&is_from_webapp=v1&sender_device=pc&sender_web_id=6899550894749992454"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "khaby.lame",
+   "vid": "6948740634060639493",
+   "url": "https://www.tiktok.com/@khaby.lame/video/6948740634060639493?lang=en&is_copy_url=0&is_from_webapp=v1&sender_device=pc&sender_web_id=6953836688669984262"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "ninachristine15",
+   "vid": "6912802272326012162",
+   "url": "https://www.tiktok.com/@ninachristine15/video/6912802272326012162?is_copy_url=0&is_from_webapp=v1&sender_device=pc&sender_web_id=6956377172982810117"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "khaby.lame",
+   "vid": "6979606181463526661",
+   "url": "https://www.tiktok.com/@khaby.lame/video/6979606181463526661?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "fxxkmin17",
+   "vid": "6925773613698256133",
+   "url": "https://www.tiktok.com/@fxxkmin17/video/6925773613698256133"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "khaby.lame",
+   "vid": "6961405079870115077",
+   "url": "https://www.tiktok.com/@khaby.lame/video/6961405079870115077?sender_device=pc&sender_web_id=6899550894749992454&is_from_webapp=v1&is_copy_url=0"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "cikiee",
+   "vid": "6973813778597055749",
+   "url": "https://www.tiktok.com/@cikiee/video/6973813778597055749"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "khaby.lame",
+   "vid": "6958070927817067782",
+   "url": "https://www.tiktok.com/@khaby.lame/video/6958070927817067782?lang=en&is_copy_url=0&is_from_webapp=v1&sender_device=pc&sender_web_id=6899550894749992454"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "khaby.lame",
+   "vid": "6935041553903717638",
+   "url": "https://www.tiktok.com/@khaby.lame/video/6935041553903717638?is_copy_url=0&is_from_webapp=v1&sender_device=pc&sender_web_id=6899550894749992454"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "outdoorkindaguy",
+   "vid": "6829613641491418374",
+   "url": "https://www.tiktok.com/@outdoorkindaguy/video/6829613641491418374?request_from=server"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "its.kels",
+   "vid": "6921472314706054406",
+   "url": "https://www.tiktok.com/@its.kels/video/6921472314706054406?lang=en&is_copy_url=0&is_from_webapp=v1&sender_device=pc&sender_web_id=6949609019079001605"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "itsnastynaz",
+   "vid": "6777417884479114502",
+   "url": "https://www.tiktok.com/@itsnastynaz/video/6777417884479114502?request_from=server"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "chipmunksoftiktok",
+   "vid": "6941010483021466885",
+   "url": "https://www.tiktok.com/@chipmunksoftiktok/video/6941010483021466885"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista dos v\u00eddeos mais curtidos no TikTok",
+   "handle": "_carsongang_",
+   "vid": "6927720974188039429",
+   "url": "https://www.tiktok.com/@_carsongang_/video/6927720974188039429"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "She Make It Clap",
+   "handle": "souljaboytv",
+   "vid": "6940044538081758469",
+   "url": "https://www.tiktok.com/@souljaboytv/video/6940044538081758469?lang=en&is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Coconuts",
+   "handle": "kimpetras",
+   "vid": "7033893615227325742",
+   "url": "https://www.tiktok.com/@kimpetras/video/7033893615227325742?is_copy_url=1&is_from_webapp=v1"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Crash (\u00e1lbum de Charli XCX)",
+   "handle": "charlixcx",
+   "vid": "7055359629903203631",
+   "url": "https://www.tiktok.com/@charlixcx/video/7055359629903203631"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Crash (\u00e1lbum de Charli XCX)",
+   "handle": "rinasawayamaofficial",
+   "vid": "7055361921012256006",
+   "url": "https://www.tiktok.com/@rinasawayamaofficial/video/7055361921012256006"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "How Long (can\u00e7\u00e3o de Tove Lo)",
+   "handle": "tovelo",
+   "vid": "7056195093631372550",
+   "url": "https://www.tiktok.com/@tovelo/video/7056195093631372550"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Hold the Girl (can\u00e7\u00e3o)",
+   "handle": "rinasawayamaofficial",
+   "vid": "7122842145626541317",
+   "url": "https://www.tiktok.com/@rinasawayamaofficial/video/7122842145626541317"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Hold the Girl (can\u00e7\u00e3o)",
+   "handle": "rinasawayamaofficial",
+   "vid": "7123135164011531526",
+   "url": "https://www.tiktok.com/@rinasawayamaofficial/video/7123135164011531526"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Hold the Girl (can\u00e7\u00e3o)",
+   "handle": "rinasawayamaofficial",
+   "vid": "7123876512411028742",
+   "url": "https://www.tiktok.com/@rinasawayamaofficial/video/7123876512411028742"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Hold the Girl (can\u00e7\u00e3o)",
+   "handle": "rinasawayamaofficial",
+   "vid": "7123970011663813893",
+   "url": "https://www.tiktok.com/@rinasawayamaofficial/video/7123970011663813893"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "El Que Espera",
+   "handle": "anitta",
+   "vid": "7127295310367329542",
+   "url": "https://www.tiktok.com/@anitta/video/7127295310367329542?is_from_webapp=1&sender_device=pc&web_id=7146002443662263813"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "2 Die 4",
+   "handle": "tovelo",
+   "vid": "7115137070070254854",
+   "url": "https://www.tiktok.com/@tovelo/video/7115137070070254854"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Weapons",
+   "handle": "avamax",
+   "vid": "7160065627804192043",
+   "url": "https://www.tiktok.com/@avamax/video/7160065627804192043"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Diamonds & Dancefloors",
+   "handle": "avamax",
+   "vid": "7180007868870020395",
+   "url": "https://www.tiktok.com/@avamax/video/7180007868870020395"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Diamonds & Dancefloors",
+   "handle": "avamax",
+   "vid": "7180046031445429547",
+   "url": "https://www.tiktok.com/@avamax/video/7180046031445429547"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Diamonds & Dancefloors",
+   "handle": "avamax",
+   "vid": "7180531791873412398",
+   "url": "https://www.tiktok.com/@avamax/video/7180531791873412398"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Diamonds & Dancefloors",
+   "handle": "avamax",
+   "vid": "7180840852565134635",
+   "url": "https://www.tiktok.com/@avamax/video/7180840852565134635"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Diamonds & Dancefloors",
+   "handle": "avamax",
+   "vid": "7181280960783093035",
+   "url": "https://www.tiktok.com/@avamax/video/7181280960783093035"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Diamonds & Dancefloors",
+   "handle": "avamax",
+   "vid": "7181667679475010862",
+   "url": "https://www.tiktok.com/@avamax/video/7181667679475010862"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Diamonds & Dancefloors",
+   "handle": "avamax",
+   "vid": "7182064544536218922",
+   "url": "https://www.tiktok.com/@avamax/video/7182064544536218922"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Diamonds & Dancefloors",
+   "handle": "avamax",
+   "vid": "7182477029697178922",
+   "url": "https://www.tiktok.com/@avamax/video/7182477029697178922"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Diamonds & Dancefloors",
+   "handle": "avamax",
+   "vid": "7182793875168234794",
+   "url": "https://www.tiktok.com/@avamax/video/7182793875168234794"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Diamonds & Dancefloors",
+   "handle": "avamax",
+   "vid": "7183059759266925866",
+   "url": "https://www.tiktok.com/@avamax/video/7183059759266925866"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Mister Supranational 2023",
+   "handle": "peterrosco",
+   "vid": "7238532794425920774",
+   "url": "https://www.tiktok.com/@peterrosco/video/7238532794425920774"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Rafael Brand\u00e3o",
+   "handle": "infomaromba",
+   "vid": "7178643022685523206",
+   "url": "https://www.tiktok.com/@infomaromba/video/7178643022685523206"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Ana Castela",
+   "handle": "jackiexmusic",
+   "vid": "7233535974863670534",
+   "url": "https://www.tiktok.com/@jackiexmusic/video/7233535974863670534"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Miraculous: Le Film",
+   "handle": "mathildeandbirds",
+   "vid": "7251608610772389147",
+   "url": "https://www.tiktok.com/@mathildeandbirds/video/7251608610772389147"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Camila Cabello",
+   "handle": "camilacabello",
+   "vid": "7097993848168942894",
+   "url": "https://www.tiktok.com/@camilacabello/video/7097993848168942894?_t=8SKucGTCgpu"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Everything I Thought It Was",
+   "handle": "justintimberlake",
+   "vid": "7339580778508078378",
+   "url": "https://www.tiktok.com/@justintimberlake/video/7339580778508078378?lang=en"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Hold the Girl",
+   "handle": "rinasawayamaofficial",
+   "vid": "7215643552930483461",
+   "url": "https://www.tiktok.com/@rinasawayamaofficial/video/7215643552930483461"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Maridu Mayrinck",
+   "handle": "maridutime",
+   "vid": "6986539431389908230",
+   "url": "https://www.tiktok.com/@maridutime/video/6986539431389908230"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Brat (\u00e1lbum)",
+   "handle": "marg.mp3",
+   "vid": "7381523919389396255",
+   "url": "https://www.tiktok.com/@marg.mp3/video/7381523919389396255?lang=en"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Tudo \u00e9 min\u00fasculo tudo \u00e9 presen\u00e7a",
+   "handle": "ilha.do.farol",
+   "vid": "7366687858981162245",
+   "url": "https://www.tiktok.com/@ilha.do.farol/video/7366687858981162245"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Tyla",
+   "handle": "tyla_",
+   "vid": "6869014285880659202",
+   "url": "https://www.tiktok.com/@tyla_/video/6869014285880659202"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Fatal Model",
+   "handle": "iclnoticias",
+   "vid": "7418949371183893765",
+   "url": "https://www.tiktok.com/@iclnoticias/video/7418949371183893765"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Deva Cassel",
+   "handle": "devsvic",
+   "vid": "7435972412711111968",
+   "url": "https://www.tiktok.com/@devsvic/video/7435972412711111968"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Athirson",
+   "handle": "geglobo",
+   "vid": "7448757773413715206",
+   "url": "https://www.tiktok.com/@geglobo/video/7448757773413715206"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Resposta (can\u00e7\u00e3o)",
+   "handle": "nandoreisoficial",
+   "vid": "6958914024494976262",
+   "url": "https://www.tiktok.com/@nandoreisoficial/video/6958914024494976262"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Rose Montoya",
+   "handle": "fxnetworks",
+   "vid": "6977009971380702469",
+   "url": "https://www.tiktok.com/@fxnetworks/video/6977009971380702469?is_copy_url=0&is_from_webapp=v1&lang=en&sender_device=pc&sender_web_id=6964556175514682885"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Rose Montoya",
+   "handle": "rosemontoya",
+   "vid": "6975931848169966853",
+   "url": "https://www.tiktok.com/@rosemontoya/video/6975931848169966853?is_copy_url=0&is_from_webapp=v1&sender_device=pc&sender_web_id=6964556175514682885"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Rose Montoya",
+   "handle": "rosemontoya",
+   "vid": "7185612470415871274",
+   "url": "https://www.tiktok.com/@rosemontoya/video/7185612470415871274"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Badlands (\u00e1lbum)",
+   "handle": "halsey",
+   "vid": "7533714141555543309",
+   "url": "https://www.tiktok.com/@halsey/video/7533714141555543309?lang=en"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Sala do Futuro",
+   "handle": "educacaosp",
+   "vid": "7211261183142284550",
+   "url": "https://www.tiktok.com/@educacaosp/video/7211261183142284550"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Cruz p\u00e1tea",
+   "handle": "jozaofutebol",
+   "vid": "7535586753533496582",
+   "url": "https://www.tiktok.com/@jozaofutebol/video/7535586753533496582"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Royel Otis",
+   "handle": "royelotis",
+   "vid": "7437276460857036050",
+   "url": "https://www.tiktok.com/@royelotis/video/7437276460857036050"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Gravity (can\u00e7\u00e3o de Hazbin Hotel)",
+   "handle": "funcomfortable",
+   "vid": "7560028984218635534",
+   "url": "https://www.tiktok.com/@funcomfortable/video/7560028984218635534"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Col\u00e9gio Santa Maria (S\u00e3o Paulo)",
+   "handle": "pellegrini.bia",
+   "vid": "7421524916370935045",
+   "url": "https://www.tiktok.com/@pellegrini.bia/video/7421524916370935045"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Lista de personagens de Hazbin Hotel e Helluva Boss",
+   "handle": "funcomfortable",
+   "vid": "7573124257190874423",
+   "url": "https://www.tiktok.com/@funcomfortable/video/7573124257190874423"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Adore Delano",
+   "handle": "itsadoredelano",
+   "vid": "7485482172443266335",
+   "url": "https://www.tiktok.com/@itsadoredelano/video/7485482172443266335"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Guilherme Briggs",
+   "handle": "guilhermebriggs",
+   "vid": "7330377312011029765",
+   "url": "https://www.tiktok.com/@guilhermebriggs/video/7330377312011029765#:~:text=Respondendo%20a%20@sale.,fyp%20%23poppyplaytime%20%23game%20%23guilhermebriggs"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Bea Duarte",
+   "handle": "beadarte",
+   "vid": "7559385548335451403",
+   "url": "https://www.tiktok.com/@beadarte/video/7559385548335451403"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "Filipe Ret",
+   "handle": "casarcancun",
+   "vid": "6954156891933101318",
+   "url": "https://www.tiktok.com/@casarcancun/video/6954156891933101318"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "A (banda)",
+   "handle": "therockbandcalled_a",
+   "vid": "7493132275270372630",
+   "url": "https://www.tiktok.com/@therockbandcalled_a/video/7493132275270372630"
+  },
+  {
+   "wiki": "pt.wikipedia.org",
+   "ns": 118,
+   "page": "In\u00e1cio Alexandre",
+   "handle": "pedrobotelhonetooficial",
+   "vid": "7538205303217736965",
+   "url": "https://www.tiktok.com/@pedrobotelhonetooficial/video/7538205303217736965?_r=1&_t=ZS-98mh5MDkv7V"
+  },
+  {
+   "wiki": "ru.wikipedia.org",
+   "ns": 1,
+   "page": "\u041e\u0431\u0441\u0443\u0436\u0434\u0435\u043d\u0438\u0435:\u041a\u0443\u0441\u0438-\u0410\u0441\u0430\u0440\u0435, \u0414\u0436\u043e\u043d\u0430",
+   "handle": "talangkollen.nu",
+   "vid": "7272646876808138016",
+   "url": "https://www.tiktok.com/@talangkollen.nu/video/7272646876808138016"
+  },
+  {
+   "wiki": "ru.wikipedia.org",
+   "ns": 1,
+   "page": "\u041e\u0431\u0441\u0443\u0436\u0434\u0435\u043d\u0438\u0435:\u0410\u0440\u0430\u043b\u044c\u0441\u043a\u043e\u0435 \u043c\u043e\u0440\u0435",
+   "handle": "longiboooc3",
+   "vid": "7592869628007812383",
+   "url": "https://www.tiktok.com/@longiboooc3/video/7592869628007812383?_r=1&_t=ZN-92z4oQMKWRC"
+  },
+  {
+   "wiki": "ru.wikipedia.org",
+   "ns": 2,
+   "page": "\u0423\u0447\u0430\u0441\u0442\u043d\u0438\u043a:Chinetop/\u0427\u0435\u0440\u043d\u043e\u0432\u0438\u043a",
+   "handle": "oboiclashroyal",
+   "vid": "7439771106363395346",
+   "url": "https://www.tiktok.com/@oboiclashroyal/video/7439771106363395346"
+  }
+ ]
+}

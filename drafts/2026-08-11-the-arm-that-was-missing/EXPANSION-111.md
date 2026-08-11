@@ -66,11 +66,72 @@ request. Changing the probe between runs would make the runs incomparable, so it
 
 ## 3. What was actually collected and baselined
 
-*(written after the runs)*
+Three collection rounds and three baseline runs, all before 00:00Z, all on the unchanged instrument.
+
+| round | what it queried | distinct collected | new (not already under observation) |
+|---|---|---|---|
+| 1 — editions | 45 language editions in article space, 25 lost to HTTP 429 | — | **73** (arm A-new) |
+| 1 — namespaces | en, es, ja outside article space; stopped at deadline inside `ja` ns 15 | 886 | **562** (arm A2) |
+| 2 | 29 editions round 1 lost + 18 wikis it never reached; stopped at deadline inside `ru` ns 2 | 654 | **304** |
+| 3 | the 14 wikis round 2 did not reach | *(below)* | *(below)* |
+
+**Round-1 baseline run** — 635 requested, 635 planned, **1,026.5 s, no throttling, `stopped: null`**;
+transport failures **3 / 635 = 0.47 %**; vantage **AS396982** (as in both session-110 runs, so the
+runs are comparable under the arc's own vantage guard).
+
+| arm | retrievable / determinate | rate |
+|---|---|---|
+| **A2** (non-article space) | 471 / 559 | **84.26 %** |
+| **A-new** (further editions, article space) | 62 / 73 | **84.93 %** |
+| **both** | 533 / 632 | **84.34 %** |
+
+Datable determinate: **630**, mean age **2.474 years** — **younger** than arm A's 2.880.
+
+## 3a. The result the expansion produced on its own, and it was not the point of the exercise
+
+Arm A2 reads **84.26 %** against arm A's **89.31 %**, *and A2 is the younger corpus* — so under the
+falling hazard the audit fitted, A2 should have read **better**, not worse. That is worth a test
+rather than a remark.
+
+**Mantel–Haenszel, stratified by creation year** (`expansion-111/A-vs-A2-age-adjusted.txt`):
+
+| | |
+|---|---|
+| crude OR (A retrievable vs A2) | 1.547 |
+| **age-adjusted MH OR** | **1.784** |
+| 95 % CI (Robins–Breslow–Greenland) | **[1.357, 2.345]** — excludes 1 |
+| cohorts running the same direction | **every one from 2020 to 2026** (2019 has 4 A2 observations) |
+
+Adjusting for age **strengthens** the gap, exactly because A2 is younger.
+
+**What this is, stated exactly.** Videos cited in article space are about **1.78× more likely to be
+publicly retrievable at the same age** than videos cited elsewhere on the same wikis. **It is not a
+measurement of link pruning**, because draft and user space differ in what gets linked there as well
+as in whether dead links get fixed (§5). What it does is put a **ceiling** on the pruning bias the
+audit named in `POWER-AUDIT.md` §5: that bias is **at most** an odds ratio of 1.78, and it is zero
+only if the entire gap is content selection.
+
+**And the direction cuts against this session's own headline, again.** If arm A's 89.3 % is inflated
+by its own tidiness, the true hazard is **higher** than the audit fitted, `E` is **higher**, and
+§5a is **better** powered than the audit says. **How much better is computed in §6 on the corpus that
+will actually run**, not asserted here.
+
+**One thing to be precise about, because it looks like a contradiction.** §5 says the A/A2 comparison
+is "not run tonight." What is not run is the **survival-shape** comparison on A2's *old* cohorts — 4
+identifiers from 2019, 23 from 2020 — which would be exactly the underpowered test this session
+exists to warn against. The **overall age-adjusted retrievability** comparison above rests on 557
+observations and 87 deaths against 2,171 and 232, and is well powered. Different test, different
+power; the distinction is the whole point of the session.
 
 ## 4. P7 and K5, scored
 
-*(written after the runs)*
+| | | outcome |
+|---|---|---|
+| **P7** | ≥ 500 new determinate identifiers collected and baselined before 00:00Z | **HOLDS** — round 1 alone gives **632 determinate** (630 datable), before rounds 2 and 3 |
+| **K5** | fires if the expansion adds fewer than 100 new determinate identifiers | **DOES NOT FIRE** — 632 in round 1 alone, against a threshold of 100 |
+
+**But K5 not firing is not the same as the expansion succeeding.** The audit's target is ~1.96× the
+live corpus. What the rounds actually delivered against that target is §6.
 
 ## 5. What arm A2 is, and the claim about it that has to be walked back
 

@@ -1,0 +1,20 @@
+ARM A vs ARM A2 — retrievability, stratified by creation year (Mantel-Haenszel)
+A  n=2171  live=1939  (0.8931)
+A2 n=557  live=470  (0.8438)
+
+ year   A live/n        A2 live/n     
+ 2018  A n=   2  A2 n=   0  -- skipped, one arm empty
+ 2019     19/   26 =0.7308      4/   4 =1.0000
+ 2020     89/  110 =0.8091     16/  23 =0.6957
+ 2021    166/  197 =0.8426     28/  40 =0.7000
+ 2022    277/  317 =0.8738     51/  65 =0.7846
+ 2023    389/  456 =0.8531     80/  99 =0.8081
+ 2024    437/  476 =0.9181     96/ 113 =0.8496
+ 2025    435/  457 =0.9519    112/ 125 =0.8960
+ 2026    125/  130 =0.9615     83/  88 =0.9432
+
+Mantel-Haenszel OR (A retrievable vs A2 retrievable, age-adjusted) = 1.7841
+Crude OR = 1.5471
+95% CI (Robins-Breslow-Greenland) = [1.3574, 2.3449]   includes 1: False
+
+mean age A  = 0.000 y
