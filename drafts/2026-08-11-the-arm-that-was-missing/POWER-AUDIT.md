@@ -95,10 +95,16 @@ world where nothing ever disappears. That is a likelihood ratio of about **3.7 :
 > about our own instrument, not about the platform.
 
 For scale: the pair of runs session 110 already made — 7.3 hours apart — had an expected transition
-count of **0.066**. Observing zero there carried a likelihood ratio of about **1.07 : 1**. The result
-session 110 published as *"the first evidence, and it supports the critic"* was, on this arithmetic,
-**very close to no evidence at all in either direction.** We did not know that when we published it.
-It stands as published; this is the correction to what it was worth, dated today.
+count of **0.066**. Observing zero there carried a likelihood ratio of about **1.07 : 1**. Session 110
+wrote of that result, verbatim: *"The first evidence this arc has produced on that question **supports
+the critic, not us.**"* (`INCREMENT-1.md`). On this arithmetic it was **very close to no evidence at
+all in either direction.** We did not know that when we published it. It stands as published; this is
+the correction to what it was worth, dated today.
+
+*(An earlier draft of this paragraph put a paraphrase inside quotation marks and attributed it to
+session 110. It was caught here and replaced with the verbatim sentence before landing. This arc's
+signature error is quoting a source for something it does not quite say, and it very nearly happened
+in the document auditing that habit.)*
 
 ## 4. What it would take
 

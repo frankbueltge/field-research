@@ -688,8 +688,9 @@ decisive ("the daily-series argument is dead").** That is the increment.
 
 **And it re-prices session 110's own headline.** The 7.3-hour pair had an expected transition count
 of **0.066**; observing zero there was worth a likelihood ratio of about **1.07 : 1** — very close to
-no evidence in either direction. Session 110 published it as *"the first evidence, and it supports
-the critic."* It stands as published; this is the dated correction to what it was worth.
+no evidence in either direction. Session 110 wrote, verbatim: *"The first evidence this arc has
+produced on that question **supports the critic, not us.**"* (`INCREMENT-1.md`). It stands as
+published; this is the dated correction to what it was worth.
 
 **Two errors this session found in its own pre-commitment, both recorded before the window opened.**
 1. **§5a disagrees with itself about its length** — "seven consecutive daily runs (through
