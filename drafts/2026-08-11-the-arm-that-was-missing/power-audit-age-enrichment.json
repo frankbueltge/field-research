@@ -1,0 +1,57 @@
+{
+  "note": "expected transitions per identifier per day, by age band, under the fitted Weibull",
+  "fitted": {
+    "k": 0.695856502117081,
+    "lambda_per_year": 0.017871723398900436
+  },
+  "current_corpus": {
+    "live": 2320,
+    "mean_daily_hazard": 9.40408360281409e-05
+  },
+  "bands": [
+    {
+      "age_lo": 0,
+      "age_hi": 1,
+      "n_live": 323,
+      "mean_daily_hazard": 0.00014784730656517043,
+      "ratio_to_corpus_mean": 1.5721606996446567
+    },
+    {
+      "age_lo": 1,
+      "age_hi": 2,
+      "n_live": 503,
+      "mean_daily_hazard": 0.0001033926171710801,
+      "ratio_to_corpus_mean": 1.0994438324659381
+    },
+    {
+      "age_lo": 2,
+      "age_hi": 3,
+      "n_live": 512,
+      "mean_daily_hazard": 8.792973320907603e-05,
+      "ratio_to_corpus_mean": 0.9350164983939938
+    },
+    {
+      "age_lo": 3,
+      "age_hi": 5,
+      "n_live": 733,
+      "mean_daily_hazard": 7.69968687587734e-05,
+      "ratio_to_corpus_mean": 0.8187599346281094
+    },
+    {
+      "age_lo": 5,
+      "age_hi": 99,
+      "n_live": 249,
+      "mean_daily_hazard": 6.809174668455889e-05,
+      "ratio_to_corpus_mean": 0.7240657310211814
+    }
+  ],
+  "one_added_identifier_7_intervals": {
+    "0.25": 0.0012356594230330297,
+    "0.5": 0.001000788876313534,
+    "1": 0.0008105618395192164,
+    "2": 0.000656492604219297,
+    "3": 0.000580327066266468,
+    "5": 0.0004968198869645802,
+    "7": 0.0004484923914659754
+  }
+}

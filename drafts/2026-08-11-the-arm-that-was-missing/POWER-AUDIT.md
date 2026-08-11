@@ -120,6 +120,30 @@ and lengthening it moves a promise in the direction that delays its own firing, 
 session's pre-registration forbids without a dated amendment. **Identifiers are open until 00:00Z.**
 Roughly **2.3×** the present live corpus is what turns §5a from a 4-to-1 result into a 20-to-1 one.
 
+## 4a. Not all identifiers are worth the same, and it is the young ones that pay
+
+`k < 1` has a design consequence the arc had not drawn. Because the implied hazard falls with age,
+an identifier's contribution to the expected transition count depends on how old it is. Per
+identifier per day, under the fitted curve (`power-audit-age-enrichment.json`):
+
+| age band | live n | mean daily hazard | relative to the corpus mean |
+|---|---|---|---|
+| 0–1 y | 323 | 1.478 × 10⁻⁴ | **1.57×** |
+| 1–2 y | 503 | 1.034 × 10⁻⁴ | 1.10× |
+| 2–3 y | 512 | 8.793 × 10⁻⁵ | 0.94× |
+| 3–5 y | 733 | 7.700 × 10⁻⁵ | 0.82× |
+| 5 y + | 249 | 6.809 × 10⁻⁵ | 0.72× |
+
+One identifier added at age three months is worth **1.88×** an average current one; at seven years,
+**0.68×**. **A request spent on a recent video buys about 2.8 times the expected transition of a
+request spent on a seven-year-old one.** The intuition that a link-rot study should chase old
+material is exactly backwards for a *forward* series: old material has already done its dying.
+
+Two limits on that recommendation, both real. It is derived from the fitted curve, which is the thing
+under question. And it is **not** an argument that the corpus should be *replaced* by young
+identifiers — the old cohorts are what make the age structure estimable at all, and a corpus tuned
+only for transition-yield stops being able to check its own hazard model.
+
 ## 5. The confounds, and which way each of them cuts
 
 Every one of these was named in `PREREGISTRATION-111.md` §4 before the numbers existed.
