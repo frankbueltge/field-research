@@ -51,3 +51,7 @@
   429 on ja.wikipedia.org ns1 — backing off 5s
   429 on ja.wikipedia.org ns1 — backing off 10s
   429 on ja.wikipedia.org ns2 — backing off 5s
+  429 on ja.wikipedia.org ns3 — backing off 5s
+  429 on ja.wikipedia.org ns4 — backing off 5s
+  429 on ja.wikipedia.org ns4 — backing off 5s
+  429 on ja.wikipedia.org ns4 — backing off 5s
