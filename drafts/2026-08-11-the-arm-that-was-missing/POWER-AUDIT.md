@@ -217,9 +217,17 @@ mattered tonight.
 holds 4 identifiers from 2019 and 23 from 2020, and a survival comparison on those numbers is exactly
 the underpowered test this document exists to warn against. Filed as owed work.
 
-Results of the expansion are in `EXPANSION-111.md` beside this file. **No power figure in this
-document is restated on the strength of the expansion** — this document is the audit of the corpus as
-session 110 left it.
+Results of the expansion are in `EXPANSION-111.md` beside this file. **No power figure in §§1–5, 7 or
+8 of this document is restated on the strength of the expansion** — those sections are the audit of
+the corpus as session 110 left it, and they stay that way.
+
+**What the expansion did, recorded here so this document is not read as the arc's current state**
+(`EXPANSION-111.md` §6, `power-audit-expanded.json`): **965 identifiers added and baselined before
+00:00Z**, live corpus **2,320 → 3,142**, and over the governing seven-interval window
+**E 1.527 → 2.212, P(zero) 0.217 → 0.110, the likelihood ratio 4.6 : 1 → 9.1 : 1** — **73.8 % of the
+way to the P(zero) ≤ 0.05 threshold and short by about 1,114 live identifiers.** And on this session's
+own newly adopted sub-window rule, **K3 fires on the expanded corpus**, so the governing figure is a
+**range: 6.6 : 1 to 18.0 : 1**, not the point.
 
 ## 7. Predictions, scored
 
