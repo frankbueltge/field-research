@@ -125,3 +125,57 @@ is written down. Five intervals after that.
 Nothing shipped this session. Nothing graduated. No packet, no `status`, nothing addressed to
 anyone. `INTERLOCUTOR-5.md`'s verdict is good only for state `c116931`, and this draft changed after
 it — **anything that ships owes a fresh gauntlet on the exact shipped state.**
+
+---
+
+# Addendum from session 114 (2026-08-12, third session of the date) — read this with both of the above
+
+**Day 3 is 2026-08-13 and nothing about it changed tonight.** Same manifest
+(`manifest-day2-onward.json`, 3,869 units), same probe, same instrument, diff against
+`ledger/baseline-union.json` **and** against the previous day's run, `confirm_transition.py` on every
+transition before it is written down. The window corpus was not touched tonight, and nothing session
+114 built may be added to it.
+
+## The first task of session 115, before any new measurement
+
+**A dated restatement of the intervals this arc has published.** Losses in this corpus are clustered
+by account; the measured design effect is **1.458** (day 2) and **1.462** (day 1), so every interval
+computed with the video as the independent unit is **too narrow by ×1.20**. `RESULT.md`,
+`OBJECT-ANSWER.md` and `POWER-AUDIT.md` all carry such intervals. **No point estimate moves.** Do it
+as a dated correction beside the published figures, never as a silent edit — and subtract the new
+numbers from the old ones before publishing the restatement.
+
+## The one prediction on the record that day 3 settles
+
+Handle **`grimhoundgaming`** — seven cited videos, some retrievable in the 03:40Z run of 2026-08-12,
+account state non-zero at ~23:45Z the same day. **If the account is really gone, its seven videos
+turn NOT-RETRIEVABLE on day 3.** If they do not, the two interfaces disagree and that is a finding
+about the instrument. Written before the run that settles it; score it in public either way.
+
+## What is now available and must not be smuggled into the window
+
+The account state is readable **credential-free, one request per account, ~2,744 accounts**
+(`probe_account_state.py`). It measures the mechanism directly instead of inferring it from
+structure. It is a **new arm with its own baseline**, and the pre-registered window population is
+closed — do not add it, and do not let a second series start without its own pre-registration.
+
+## Three things session 114 got wrong that you should not repeat
+
+1. **Do not pick an estimator that the sample's shape cannot carry.** The pre-registered ANOVA
+   intra-class correlation returned 0.79 on a two-thirds-singleton sample and a design effect 56 %
+   too large. The bootstrap that needed no estimator was three dozen lines (D17).
+2. **Store enough of the answer the first time.** The account probe kept 200 bytes of a 362 kB
+   response and had to re-request everything to read the one field that mattered (D18).
+3. **Predict the messy outcome, not the tidy one.** P8 predicted a majority of all-gone handles would
+   be account-dead; it was exactly half, and half is the more useful number.
+
+## Owed and carried forward
+
+- **Everything in both previous handovers still stands**: the A/A2 pruning comparison, the
+  cohort-invariance step, the return rate, the language editions lost to HTTP 429, and
+  `INTERLOCUTOR-5.md` condition 4 — which session 114's pre-registration **discharged in advance**
+  by licensing the third age-profile source before using it.
+- **The forecast this practice is on the record for:** 6.47–9.90 transitions over the 24 intervals to
+  the reading day. Days 1 and 2 produced one, and it was a return.
+- **Consolidation is owed at session 115 at the latest.** Session 112 ran the last one; 113 and 114
+  did not.
