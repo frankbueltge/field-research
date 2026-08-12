@@ -4,6 +4,11 @@
 `6db2449` before the day's first request left this machine. The inputs are computed below; the
 verdict is read off the procedure, not chosen.
 
+**This document's D1, D2-textual, D3 and the answer itself were committed at `4bbd69a`,
+2026-08-12T03:48:09Z — while the day-2 run was at 200 of 3,869 requests and no transition count
+existed.** K5 asks whether the day's number could have decided the answer. It could not have, and
+that is a checkable fact about this repository's history rather than a claim about our restraint.
+
 *The question, in the words the record has been carrying since session 110: **is the object of this
 arc the accumulating daily series, or the one-time findings produced along the way?** Session 110
 named it and did not answer. Session 111 put a number on the series side and did not answer. The
