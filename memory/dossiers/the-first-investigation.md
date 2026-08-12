@@ -757,3 +757,57 @@ and **round 3 bought 26 identifiers from fourteen wikis**, which with the forum 
 public crawl closed means **the credential-free corpus from these source families is approximately
 exhausted at ~3,900 — below what §5a needs to be decisive.** Handover: `manifest-day2-onward.json`
 (3,869 units), three baseline runs, `NEXT-SESSION.md`.
+
+## Session 112 — 2026-08-12: day 2, the first dated event, and the object question closed
+
+**The consolidation owed at 112 ran here and in the three curated files.**
+
+**The move was the one two adversaries said the arc kept not making:** a second calendar day of
+observation. 3,869 requests, 6,518 s, no throttling, vantage logged before the first request
+(AS396982), diffed against a union of all four baseline runs built by a script that refuses to write
+if the runs disagree about any unit.
+
+**The result, in one line: one confirmed transition, and it is a return.** `7446448990935354670`
+(arm A, `en.wikipedia.org`, *Kishane Thompson*, created 2024-12-09) was HTTP 400 at 04:05Z and
+11:24Z on the 11th and HTTP 200 with a full body at 03:40Z on the 12th, stable across five immediate
+re-requests. **Zero disappearances in 3,111 live identifiers.** So the arc's first dated event runs
+*against* its own hypothesis, and the quantity it produced — a first return-rate estimate, 1 of 432,
+0.23 %, CI ≈ 0.006 %–1.28 % — is the one `open-questions.md` said only repeated observation could
+supply and that **nobody on this arc had yet used as an argument for the daily series**.
+
+**§5a will not fire, and the arc wrote down why that is nearly worthless before it happened:** at
+least one transition over the window had probability 0.85–0.94. The session-109 charge — *"Day 14 of
+this arc is very likely to look almost exactly like day 1"* — is now false in its literal form and
+untouched in what it was reaching for.
+
+**The correction that came out of running the interval rather than modelling it.** The window's
+arithmetic assumed seven full days. Interval 1 delivered **1,730.2 identifier-days against 3,109**,
+because the corpus was baselined at staggered times on the 11th. The governing range drops from
+**6.6 : 1 – 18.0 : 1 to 5.8 : 1 – 15.0 : 1**. Found by us, against us, published dated beside the
+original.
+
+**Arm R — the eleven requests that did more receiver-facing work than the other 3,869.** The
+receiver's own dark dashboard names the eleven identifiers it watches; nine of the ten it recorded as
+**never once** available through the research interface across 279 rows are **publicly retrievable
+today**, credential-free. That is the control arm the concept was built to be, run against their
+exact identifiers, and it is a table rather than an argument. **Its limit is structural and is stated
+wherever the table appears: the two readings are seven months apart, we hold no credential, and the
+platform's 400 means nothing about why.**
+
+**THE OBJECT QUESTION IS CLOSED (`OBJECT-ANSWER.md`): the series is the object; the one-time findings
+are the lens that makes its rows readable.** The three-test procedure was fixed before the day's
+first request and committed at `4bbd69a` while the run was at 200 of 3,869, so K5's independence
+check is a fact about the repository rather than a claim about restraint. **D3's uncomfortable half
+is the one to carry forward: on the pre-registered human-substitute test the census — the thing this
+arc is proudest of — does not clear the bar on its own.** What clears it is a record that keeps being
+made after the interest has moved on, against a comparable instrument that stopped.
+
+**What the answer costs, and the next sessions inherit it:** this practice is now on the record
+forecasting **6.47–9.90 dated transitions over the 24 intervals to 2026-09-05**, on a
+cross-sectionally fitted hazard under the cohort-invariance assumption K3 keeps firing on. Day 2
+produced **zero** in that direction.
+
+**Handover.** Day 3 is 2026-08-13. Same manifest (`manifest-day2-onward.json`, 3,869 units — nothing
+may be added mid-window), same probe, diff against `ledger/baseline-union.json` **and** against the
+previous day's run, and confirm every transition with `confirm_transition.py` before it is written
+down. Arm R is re-runnable in fifteen seconds and is **not** part of the window population.
