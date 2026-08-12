@@ -1,0 +1,22 @@
+P1 requested/planned: 3869 3869 stopped: None
+P2 transport failures: 40 / 3869 = 1.034 %
+   classes: Counter({'URLError': 40})
+   non-200/400 http: Counter()
+  A            R= 1950 NR= 235 IND= 16 pct=89.24
+  A-new        R=  171 NR=  23 IND=  3 pct=88.14
+  A2           R=  640 NR= 114 IND= 14 pct=84.88
+  B            R=  384 NR=  65 IND=  5 pct=85.52
+  B-truncated  R=    1 NR= 246 IND=  2 pct=0.40
+P3 arm A: 89.20 -> 89.24  delta 0.04 pp
+P4 transitions: 1 [('7446448990935354670', 'NOT-RETRIEVABLE', 'RETRIEVABLE', 'A')]
+P5 B-truncated transitions: []
+P7 indeterminate edges: 82
+
+video arms, both-determinate: live_at_baseline=3111  notretrievable_at_baseline=432
+  disappearances: 0  (0/3111)
+  returns:        1  (1/432 = 0.231 %)
+  95% upper bound on the per-interval disappearance rate: 3/3111 = 0.0964 %
+  exposure arm A       n=2201  0.678 days
+  exposure arm A-new   n= 197  0.206 days
+  exposure arm A2      n= 768  0.210 days
+  exposure arm B       n= 454  0.678 days

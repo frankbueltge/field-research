@@ -1,0 +1,5 @@
+population: 3574 dated analysable, 3142 live
+  pooled             n= 3574 k=0.6476 CI[0.4938,0.8065] includes1=False
+  recent 2023-2026   n= 2525 k=0.7938 CI[0.5588,1.0453] includes1=True
+  old 2018-2022      n= 1049 k=0.6476 CI[0.1603,1.4673] includes1=True
+K3: FIRES on recent 2023-2026, old 2018-2022 -> the governing figure is a RANGE, not a point

@@ -1,0 +1,233 @@
+{
+ "schema": "field-research/retrievability-ledger/1",
+ "run_id": "arm-R-2026-08-12",
+ "arm": "R \u2014 the eleven identifiers the receiver's dashboard watches",
+ "not_part_of_window_population": true,
+ "identifier_source": "drafts/2026-08-10-one-receiver-to-the-floor/dashboard-derived-raw.txt, derived from https://playground.tiktok-audit.com/api-na/ fetched 2026-08-10",
+ "receiver_series_span": "2025-04-09 .. 2026-01-14, 279 rows, last generated 2026-01-14",
+ "run_utc_start": "2026-08-12T05:31:17Z",
+ "run_utc_end": "2026-08-12T05:31:32Z",
+ "seconds": 15.1,
+ "vantage": {
+  "ip": "160.79.106.128",
+  "city": "Columbus",
+  "region": "Ohio",
+  "country": "US",
+  "loc": "39.9612,-82.9988",
+  "timezone": "America/New_York",
+  "asn": "AS396982",
+  "registrant": "[redacted under this practice's naming rule]",
+  "source": "https://ipinfo.io/json",
+  "fetched_utc": "2026-08-12T05:31:17Z"
+ },
+ "probe": {
+  "endpoint": "https://www.tiktok.com/oembed?url=",
+  "user_agent": "field-research/1.0 (independent research instrument; sequential, 1 req/s)",
+  "delay_s": 1.0,
+  "timeout_s": 25,
+  "unchanged_since": "session 109 census (census.py), 2026-08-11T04:05:44Z"
+ },
+ "counts": {
+  "RETRIEVABLE": 10,
+  "NOT-RETRIEVABLE": 1
+ },
+ "observations": [
+  {
+   "vid": "7366758818765638917",
+   "handle": "tiktok",
+   "arm": "R",
+   "http": 200,
+   "bytes": 2219,
+   "author_unique_id": "camilapudim",
+   "title_len": 332,
+   "body_code": null,
+   "state": "RETRIEVABLE",
+   "created_utc": "2024-05-08T22:26:37Z",
+   "receiver_series": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 16,
+    "api_not_available_days": 263
+   }
+  },
+  {
+   "vid": "7368154048836406544",
+   "handle": "tiktok",
+   "arm": "R",
+   "http": 200,
+   "bytes": 1305,
+   "author_unique_id": "yy0403_2",
+   "title_len": 25,
+   "body_code": null,
+   "state": "RETRIEVABLE",
+   "created_utc": "2024-05-12T16:40:49Z",
+   "receiver_series": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 18,
+    "api_not_available_days": 261
+   }
+  },
+  {
+   "vid": "7074367286571814190",
+   "handle": "tiktok",
+   "arm": "R",
+   "http": 200,
+   "bytes": 1332,
+   "author_unique_id": "brynnemarieeee",
+   "title_len": 51,
+   "body_code": null,
+   "state": "RETRIEVABLE",
+   "created_utc": "2022-03-12T23:58:08Z",
+   "receiver_series": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 17,
+    "api_not_available_days": 262
+   }
+  },
+  {
+   "vid": "7117394257064840490",
+   "handle": "tiktok",
+   "arm": "R",
+   "http": 200,
+   "bytes": 1363,
+   "author_unique_id": "brookemonk_",
+   "title_len": 16,
+   "body_code": null,
+   "state": "RETRIEVABLE",
+   "created_utc": "2022-07-06T22:44:46Z",
+   "receiver_series": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 18,
+    "api_not_available_days": 261
+   }
+  },
+  {
+   "vid": "7134492331117595950",
+   "handle": "tiktok",
+   "arm": "R",
+   "http": 400,
+   "bytes": 45,
+   "body_code": 400,
+   "body_message": "Something went wrong",
+   "state": "NOT-RETRIEVABLE",
+   "created_utc": "2022-08-22T00:34:01Z",
+   "receiver_series": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 15,
+    "api_not_available_days": 264
+   }
+  },
+  {
+   "vid": "7164125023886691626",
+   "handle": "tiktok",
+   "arm": "R",
+   "http": 200,
+   "bytes": 1566,
+   "author_unique_id": "taylorswift",
+   "title_len": 122,
+   "body_code": null,
+   "state": "RETRIEVABLE",
+   "created_utc": "2022-11-09T21:04:00Z",
+   "receiver_series": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 18,
+    "api_not_available_days": 261
+   }
+  },
+  {
+   "vid": "7376726215178128673",
+   "handle": "tiktok",
+   "arm": "R",
+   "http": 200,
+   "bytes": 2873,
+   "author_unique_id": "alandelantics",
+   "title_len": 144,
+   "body_code": null,
+   "state": "RETRIEVABLE",
+   "created_utc": "2024-06-04T19:05:12Z",
+   "receiver_series": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 15,
+    "api_not_available_days": 264
+   }
+  },
+  {
+   "vid": "7332960275127110954",
+   "handle": "tiktok",
+   "arm": "R",
+   "http": 200,
+   "bytes": 1618,
+   "author_unique_id": "andyyahurd._",
+   "title_len": 65,
+   "body_code": null,
+   "state": "RETRIEVABLE",
+   "created_utc": "2024-02-07T20:31:00Z",
+   "receiver_series": {
+    "observations": 279,
+    "api_available_days": 213,
+    "api_error_days": 20,
+    "api_not_available_days": 46
+   }
+  },
+  {
+   "vid": "7347581705299053826",
+   "handle": "tiktok",
+   "arm": "R",
+   "http": 200,
+   "bytes": 1255,
+   "author_unique_id": "Evony",
+   "title_len": 16,
+   "body_code": null,
+   "state": "RETRIEVABLE",
+   "created_utc": "2024-03-18T06:09:37Z",
+   "receiver_series": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 16,
+    "api_not_available_days": 263
+   }
+  },
+  {
+   "vid": "7376437810644946222",
+   "handle": "tiktok",
+   "arm": "R",
+   "http": 200,
+   "bytes": 1386,
+   "author_unique_id": "lauren.j734",
+   "title_len": 17,
+   "body_code": null,
+   "state": "RETRIEVABLE",
+   "created_utc": "2024-06-04T00:26:03Z",
+   "receiver_series": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 14,
+    "api_not_available_days": 265
+   }
+  },
+  {
+   "vid": "7361448925972155679",
+   "handle": "tiktok",
+   "arm": "R",
+   "http": 200,
+   "bytes": 1313,
+   "author_unique_id": "tiktok",
+   "title_len": 27,
+   "body_code": null,
+   "state": "RETRIEVABLE",
+   "created_utc": "2024-04-24T15:01:31Z",
+   "receiver_series": {
+    "observations": 238,
+    "api_available_days": 0,
+    "api_error_days": 14,
+    "api_not_available_days": 224
+   }
+  }
+ ]
+}

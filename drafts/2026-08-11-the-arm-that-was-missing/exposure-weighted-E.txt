@@ -1,0 +1,16 @@
+live, dated, determinate at both ends: 3109
+total exposure: 1730.2 identifier-days (a uniform one-day interval would be 3109)
+
+       k  lambda/yr  E(interval 1)       P(0)
+  0.4938    0.00636         0.1448     0.8652
+  0.5588    0.01016         0.1565     0.8551
+  0.6476    0.01646         0.1713     0.8425
+  0.7938    0.02859         0.1936     0.8240
+  0.8065    0.02970         0.1954     0.8225
+  1.0453    0.05075         0.2276     0.7965
+
+E over interval 1, across specifications: 0.1448 to 0.2276
+observed disappearances: 0
+observed returns: 1  (the fitted model contains no return process at all)
+
+P(zero disappearances) under the fit: 0.796 to 0.865 -- zero was the expected outcome

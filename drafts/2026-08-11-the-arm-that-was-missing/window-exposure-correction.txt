@@ -1,0 +1,12 @@
+       k  E published  E corrected     LR pub    LR corr
+  0.4938       1.8866       1.7633       6.60       5.83
+  0.5588       2.0305       1.8985       7.62       6.68
+  0.6476       2.2116       2.0686       9.13       7.91
+  0.7938       2.4806       2.3216      11.95      10.19
+  0.8065       2.5027       2.3423      12.22      10.41
+  1.0453       2.8886       2.7054      17.97      14.96
+
+GOVERNING RANGE, corrected for interval 1's short exposure: 5.83 : 1 to 14.96 : 1
+published at session 111:                                  6.60 : 1 to 17.97 : 1
+
+The correction moves against the arc: the window is worth LESS than published.
