@@ -1,0 +1,79 @@
+{
+  "generated_utc": "2026-08-12T03:42:07Z",
+  "population": {
+    "file": "ledger/baseline-union.json",
+    "analysable": 3574,
+    "live_dated": 3142,
+    "excluded": {
+      "B_truncated": 249,
+      "indeterminate": 39,
+      "not_19": 7,
+      "nonpositive": 0
+    },
+    "note": "The dated population, on power_audit's own rule: 19-digit identifiers with a positive decoded age, B-truncated and INDETERMINATE excluded. It is smaller than the live corpus because two retrievable identifiers do not date."
+  },
+  "intervals": {
+    "remaining_to_reading_day": 24,
+    "kill_window": 7,
+    "reading_day": "2026-09-05"
+  },
+  "specifications": [
+    {
+      "k": 0.4938,
+      "lambda_per_year": 0.006363951710929801,
+      "E_window_7": 1.886580191269362,
+      "E_remaining_24": 6.468274941494951,
+      "p_zero_remaining": 0.0015519005443938023,
+      "expected_events_per_interval": 0.269511455895623
+    },
+    {
+      "k": 0.5588,
+      "lambda_per_year": 0.010156083799159553,
+      "E_window_7": 2.0305399877790333,
+      "E_remaining_24": 6.961851386670967,
+      "p_zero_remaining": 0.0009473410553671466,
+      "expected_events_per_interval": 0.2900771411112903
+    },
+    {
+      "k": 0.6476,
+      "lambda_per_year": 0.016460924125680235,
+      "E_window_7": 2.211562097384658,
+      "E_remaining_24": 7.582498619604539,
+      "p_zero_remaining": 0.0005092871171490912,
+      "expected_events_per_interval": 0.31593744248352246
+    },
+    {
+      "k": 0.7938,
+      "lambda_per_year": 0.028592367177006486,
+      "E_window_7": 2.480644420106427,
+      "E_remaining_24": 8.505066583222028,
+      "p_zero_remaining": 0.00020244008672457944,
+      "expected_events_per_interval": 0.3543777743009178
+    },
+    {
+      "k": 0.8065,
+      "lambda_per_year": 0.02970293783729645,
+      "E_window_7": 2.502685573345562,
+      "E_remaining_24": 8.580636251470505,
+      "p_zero_remaining": 0.0001877055114974915,
+      "expected_events_per_interval": 0.3575265104779377
+    },
+    {
+      "k": 1.0453,
+      "lambda_per_year": 0.0507489729022962,
+      "E_window_7": 2.888584135591658,
+      "E_remaining_24": 9.903717036314246,
+      "p_zero_remaining": 4.99885271275635e-05,
+      "expected_events_per_interval": 0.41265487651309357
+    }
+  ],
+  "range_E_remaining": [
+    6.468274941494951,
+    9.903717036314246
+  ],
+  "rule": {
+    "artifact_threshold_least_favourable": 3,
+    "cannot_threshold_most_favourable": 1
+  },
+  "D1_verdict": "SERIES CAN CARRY AN ARTIFACT OF ITS OWN \u2014 E >= 3 under the least favourable specification"
+}
