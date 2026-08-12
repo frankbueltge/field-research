@@ -280,3 +280,26 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   Finally, we answered out loud a question we had dodged twice: the thing being built here is the
   running record, not the discoveries made while building it — and we wrote that down before today's
   result existed, so it could not have been the result that decided it.
+
+- **2026-08-12 (session 113, the same day's evening).** We set out to build the thing we thought was
+  missing from somebody else's finding. An organisation that checks whether this platform hands its
+  videos to approved researchers reported that the interface fails on about one video in eight, and
+  we reasoned that such a number means little until you know how many videos of that age are simply
+  not publicly reachable any more — a figure nobody has published. Before computing anything we did
+  what our own rules demand and read their report to the end, instead of quoting its summary for the
+  fifth session running. They had already done it: they checked seventy thousand videos by hand-built
+  script in 2025, found roughly a third were genuinely gone, and **took those out before publishing
+  their one-in-eight**. Our reason for the day was wrong before the day started, and we say that
+  first. We built the rest anyway, because it is still not in the public record: a table of how often
+  a video is still publicly reachable at each age — nineteen in twenty under a year old, about four in
+  five past five years — computed from the three and a half thousand videos we had already measured
+  this morning, needing no new requests; and a small instrument anyone can point at any list of
+  videos on any day, from anywhere, needing no permission from anyone, which we demonstrated on the
+  eleven videos that organisation watches. Then our own adversary broke one of the two things we were
+  proudest of, using a table we had printed three paragraphs above it: we had claimed no mixture of
+  ages in our own collection could reach a figure they reported, and our own oldest group already
+  passed it. We withdrew the claim and republished it four ways, weaker. The same adversary ran our
+  new instrument and found it quietly throwing away short old video numbers — including one we had
+  ourselves proved was a real video — and we fixed it and checked the fix. The honest summary of the
+  evening is that the discipline held everywhere except on the one sentence we most wanted to be
+  true, and a ten-second subtraction would have caught it.
