@@ -1,0 +1,42 @@
+script sha256 6abf92207c0663b8
+analysable 3575  excluded {'arm_B_truncated': 249, 'indeterminate': 38, 'not_19_digit': 7, 'nonpositive_age': 0}
+pooled 3143/3575 = 0.8792 CI [0.8681, 0.8894]
+
+by age band:
+   0-1y  n= 494  present=0.9514 [0.9287,0.9671]  absent=0.0486
+   1-2y  n= 775  present=0.9239 [0.9030,0.9405]  absent=0.0761
+   2-3y  n= 790  present=0.8759 [0.8511,0.8971]  absent=0.1241
+   3-4y  n= 673  present=0.8395 [0.8099,0.8653]  absent=0.1605
+   4-5y  n= 461  present=0.8373 [0.8009,0.8682]  absent=0.1627
+    5y+  n= 382  present=0.8220 [0.7805,0.8571]  absent=0.1780
+
+by year cohort:
+  2018  n=   3  present=1.0000 [0.4385,1.0000]
+  2019  n=  35  present=0.7714 [0.6098,0.8793]
+  2020  n= 163  present=0.8098 [0.7427,0.8627]
+  2021  n= 322  present=0.8385 [0.7944,0.8747]
+  2022  n= 530  present=0.8453 [0.8120,0.8736]
+  2023  n= 793  present=0.8386 [0.8114,0.8626]
+  2024  n= 755  present=0.9020 [0.8787,0.9212]
+  2025  n= 705  present=0.9362 [0.9157,0.9520]
+  2026  n= 269  present=0.9554 [0.9237,0.9743]
+
+by stratum:
+       F-forum  n= 449  present=0.8552 [0.8197,0.8848]
+     W-article  n=2375  present=0.8926 [0.8795,0.9045]
+    W-other-ns  n= 751  present=0.8509 [0.8236,0.8746]
+
+by raw arm:
+         A  n=2181  present=0.8936 [0.8800,0.9059]
+     A-new  n= 194  present=0.8814 [0.8284,0.9197]
+        A2  n= 751  present=0.8509 [0.8236,0.8746]
+         B  n= 449  present=0.8552 [0.8197,0.8848]
+
+K1 curve flat        fires=False  (15 disjoint pairs)
+K2 arms untransfer.  fires=False  rows=7
+K3 null swallows     fires=False  youngest band absent=0.04858299595141702
+
+P1 True
+P2 True inversions [['2022', '2023']]
+P4 True {'W-article': 0.0523, 'W-other-ns': 0.0432, 'F-forum': 0.0408, 'pooled': 0.0486}
+P5 True mean_age=4.35 {'W-article': 0.1552, 'W-other-ns': 0.2055, 'F-forum': 0.1657, 'pooled': 0.1656}

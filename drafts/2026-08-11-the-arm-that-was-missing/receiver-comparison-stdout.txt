@@ -1,0 +1,20 @@
+FUNNEL
+  initially unretrievable      70,239 / 260,000 = 0.2702
+  not public (their scrape)    25,286 = 0.0973 of sample
+  public-but-not-in-API (summary 46%) 32,310 = 0.1243
+  public-but-not-in-API (method 62.7%) 44,040 = 0.1694
+  published headline           0.1246
+  headline == summary share ?  True
+  headline == method share  ?  False
+  unexplained by their own body 14,750 = 0.0567 of sample = one in 17.6
+  summary shares sum 1.000; method shares sum 0.987; method-minus-retry 0.447 vs summary 0.460 (residual -0.013)
+
+CEILING
+  worst band 5y+: absence 0.1780 (upper CI 0.2195), n=382
+  receiver's not-public share among API failures 0.3600
+  exceeds every age composition of our reference population: True
+
+CONDITIONAL WORKED EXAMPLE (n=11, not an estimate of their corpus)
+  expected 0.1377 [0.1139, 0.1655]  observed 0.0909
+
+written receiver-comparison.json

@@ -1,0 +1,16 @@
+receiver dashboard, eleven identifiers: 11 identifiers, 14.8 s, vantage AS396982 (US)
+  7366758818765638917  RETRIEVABLE      http=200   2.26y
+  7368154048836406544  RETRIEVABLE      http=200   2.25y
+  7074367286571814190  RETRIEVABLE      http=200   4.42y
+  7117394257064840490  RETRIEVABLE      http=200   4.10y
+  7134492331117595950  NOT-RETRIEVABLE  http=400   3.97y
+  7164125023886691626  RETRIEVABLE      http=200   3.76y
+  7376726215178128673  RETRIEVABLE      http=200   2.19y
+  7332960275127110954  RETRIEVABLE      http=200   2.51y
+  7347581705299053826  RETRIEVABLE      http=200   2.40y
+  7376437810644946222  RETRIEVABLE      http=200   2.19y
+  7361448925972155679  RETRIEVABLE      http=200   2.30y
+counts {'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}
+observed public absence 0.0909 (1/11)
+expected for this age profile 0.1377 [0.1139, 0.1655] — a yardstick from a different population, not a verdict
+written presence-check-receiver-113.json

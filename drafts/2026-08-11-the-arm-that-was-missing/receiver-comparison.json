@@ -1,0 +1,83 @@
+{
+ "schema": "field-research/receiver-comparison/1",
+ "written_by": "session 113, 2026-08-12",
+ "baseline": {
+  "file": "presence-baseline.json",
+  "pooled_n": 3575,
+  "run_id": "2026-08-12T0341Z"
+ },
+ "receiver_numbers_quoted": {
+  "source": "arXiv:2506.09746v2, TikTok's Research API: Problems Without Explanations",
+  "authors": "Entrena-Serrano, Degeling, Romano, Cetin",
+  "url": "https://arxiv.org/abs/2506.09746v2",
+  "read_utc": "2026-08-12",
+  "initial_sample": 260000,
+  "initially_unretrievable": 70239,
+  "share_not_public": 0.36,
+  "share_public_not_in_api_method_section": 0.627,
+  "share_public_not_in_api_summary_section": 0.46,
+  "share_retrieved_on_retry": 0.18,
+  "headline": 0.1246,
+  "share_unexplained_summary_section": 0.21,
+  "method_for_not_public": "scraping TikTok to check if the unavailable posts were publicly available on the platform"
+ },
+ "funnel_arithmetic": {
+  "initially_unretrievable_share_of_sample": 0.27015,
+  "not_public_count": 25286.04,
+  "not_public_share_of_sample": 0.09725400000000001,
+  "public_but_not_in_api_summary_section": {
+   "count": 32309.940000000002,
+   "share_of_sample": 0.124269
+  },
+  "public_but_not_in_api_method_section": {
+   "count": 44039.853,
+   "share_of_sample": 0.16938405
+  },
+  "published_headline": 0.1246,
+  "headline_matches_summary_section": true,
+  "headline_matches_method_section": false,
+  "internal_reconciliation": {
+   "summary_shares_sum": 1.0,
+   "method_shares_sum": 0.987,
+   "method_minus_retry": 0.447,
+   "residual_against_summary": -0.013000000000000012,
+   "note": "Reported as observed, not as an error found. The two sections are reconcilable if the method section's split is taken before the retry recoveries and the summary's after; a small residual remains, and the method section's own two shares sum to 98.7 rather than 100."
+  },
+  "unexplained_by_their_own_body": {
+   "count": 14750.189999999999,
+   "share_of_sample": 0.0567315,
+   "one_in": 17.626891585803303,
+   "note": "The abstract compresses this: it says one in eight fails 'without an apparent reason' while naming advertisements inside that eight. The body's own residual - the share it says it cannot explain at all - is the figure computed here. Both are the authors' own numbers; the point is which question each answers, not that either is wrong."
+  },
+  "reading": "Whichever share the published headline reproduces is the share the one-in-eight actually names. If it is the public-but-unavailable one, then the headline is ALREADY NET of the videos their own scrape found not to be public - it is not the raw gap, and a public-presence null cannot deflate it, because they already applied one."
+ },
+ "ceiling_bound": {
+  "worst_band": "5y+",
+  "worst_band_n": 382,
+  "max_expected_absence_point": 0.17801047120418845,
+  "max_expected_absence_upper_ci": 0.2195186199957757,
+  "receiver_share_not_public": 0.36,
+  "receiver_exceeds_ceiling": true,
+  "reading": "No age composition of this reference population can produce a non-public share as high as the receiver measured among API-failing videos, because a weighted mean cannot exceed its largest component. Under the cross-population assumption stated below, their API-failure set is enriched for non-public content beyond what age alone explains."
+ },
+ "conditional_worked_example": {
+  "assumed_profile": "the eleven identifiers on the receiver's own dashboard",
+  "n_dated": 11,
+  "age_histogram": {
+   "2-3y": 7,
+   "4-5y": 2,
+   "3-4y": 2
+  },
+  "expected_absence": 0.1376986368862619,
+  "expected_lo": 0.11391410612202245,
+  "expected_hi": 0.16551294871751704,
+  "observed_absence_in_those_eleven": 0.09090909090909091,
+  "warning": "n = 11. This is a worked example of the transfer function on the only videos of theirs whose ages are derivable from public identifiers. It is NOT an estimate of their corpus's age profile, and eleven videos selected for being API-failures are not a sample of their 260,000."
+ },
+ "what_is_NOT_claimed": [
+  "No public-absence figure is stated for the receiver's ~260,000 donated videos.",
+  "Their report publishes no upload dates and no age distribution for that corpus.",
+  "Our NOT-RETRIEVABLE cannot distinguish deleted from private from never-existed; their 2025 scrape did distinguish them, and on that axis their method was the more discriminating one.",
+  "Our reference population is citation-selected and forum-selected. Transfer to a donation-selected corpus is an assumption, stated, never established here."
+ ]
+}
