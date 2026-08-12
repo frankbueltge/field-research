@@ -1,0 +1,641 @@
+{
+ "schema": "field-research/account-state-probe/1",
+ "session": 114,
+ "deviation": "D19 \u2014 see probe_account_state.py docstring, committed before the run",
+ "run_source": "ledger/run-2026-08-12T0341Z.json",
+ "collected_utc": "2026-08-12T23:35:53Z",
+ "endpoint": "https://www.tiktok.com/@<handle>",
+ "user_agent": "field-research/1.0 (independent research instrument; sequential, 1 req/s)",
+ "delay_s": 1.0,
+ "timeout_s": 25,
+ "requests": 36,
+ "status_field_by_group": {
+  "all-gone": {
+   "10221": 5,
+   "10202": 1,
+   "0": 6
+  },
+  "all-present": {
+   "0": 12
+  },
+  "mixed": {
+   "0": 11,
+   "10221": 1
+  }
+ },
+ "no_code_table_published": "This practice found no published table mapping the numeric state to a cause; nothing is read into it beyond 'the account object is not served'.",
+ "results": [
+  {
+   "http": 200,
+   "bytes": 362183,
+   "seconds": 0.97,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "mahoko0918",
+   "k": 6,
+   "group": "all-gone"
+  },
+  {
+   "http": 200,
+   "bytes": 362316,
+   "seconds": 0.69,
+   "status_field": 10202,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "gabbiehanna",
+   "k": 4,
+   "group": "all-gone"
+  },
+  {
+   "http": 200,
+   "bytes": 364554,
+   "seconds": 0.65,
+   "status_field": 0,
+   "unique_id_returned": "tperrrrrrr",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "tperrrrrrr",
+   "k": 3,
+   "group": "all-gone"
+  },
+  {
+   "http": 200,
+   "bytes": 364846,
+   "seconds": 0.58,
+   "status_field": 0,
+   "unique_id_returned": "msoojaofficial",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "msoojaofficial",
+   "k": 3,
+   "group": "all-gone"
+  },
+  {
+   "http": 200,
+   "bytes": 364351,
+   "seconds": 0.65,
+   "status_field": 0,
+   "unique_id_returned": "chunkysdead",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "chunkysdead",
+   "k": 3,
+   "group": "all-gone"
+  },
+  {
+   "http": 200,
+   "bytes": 362978,
+   "seconds": 0.6,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "ashleyisinthebookoflife",
+   "k": 3,
+   "group": "all-gone"
+  },
+  {
+   "http": 200,
+   "bytes": 362439,
+   "seconds": 0.5,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "armen.patriot",
+   "k": 3,
+   "group": "all-gone"
+  },
+  {
+   "http": 200,
+   "bytes": 364628,
+   "seconds": 0.72,
+   "status_field": 0,
+   "unique_id_returned": "archaeodeath",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "archaeodeath",
+   "k": 3,
+   "group": "all-gone"
+  },
+  {
+   "http": 200,
+   "bytes": 362125,
+   "seconds": 0.62,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "tizzyent",
+   "k": 2,
+   "group": "all-gone"
+  },
+  {
+   "http": 200,
+   "bytes": 364754,
+   "seconds": 0.64,
+   "status_field": 0,
+   "unique_id_returned": "roxen",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "roxen",
+   "k": 2,
+   "group": "all-gone"
+  },
+  {
+   "http": 200,
+   "bytes": 362280,
+   "seconds": 0.72,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "rgr0730",
+   "k": 2,
+   "group": "all-gone"
+  },
+  {
+   "http": 200,
+   "bytes": 364756,
+   "seconds": 0.56,
+   "status_field": 0,
+   "unique_id_returned": "pteehok",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "pteehok",
+   "k": 2,
+   "group": "all-gone"
+  },
+  {
+   "http": 200,
+   "bytes": 364873,
+   "seconds": 0.57,
+   "status_field": 0,
+   "unique_id_returned": "bullettrain_8",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "bullettrain_8",
+   "k": 36,
+   "group": "all-present"
+  },
+  {
+   "http": 200,
+   "bytes": 364620,
+   "seconds": 0.65,
+   "status_field": 0,
+   "unique_id_returned": "coalamode",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "coalamode",
+   "k": 26,
+   "group": "all-present"
+  },
+  {
+   "http": 200,
+   "bytes": 364936,
+   "seconds": 0.61,
+   "status_field": 0,
+   "unique_id_returned": "showdrama_24",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "showdrama_24",
+   "k": 17,
+   "group": "all-present"
+  },
+  {
+   "http": 200,
+   "bytes": 364746,
+   "seconds": 0.55,
+   "status_field": 0,
+   "unique_id_returned": "kimisinamoodlive",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "kimisinamoodlive",
+   "k": 13,
+   "group": "all-present"
+  },
+  {
+   "http": 200,
+   "bytes": 364912,
+   "seconds": 0.6,
+   "status_field": 0,
+   "unique_id_returned": "info__paragon",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "info__paragon",
+   "k": 13,
+   "group": "all-present"
+  },
+  {
+   "http": 200,
+   "bytes": 365459,
+   "seconds": 0.56,
+   "status_field": 0,
+   "unique_id_returned": "twice_tiktok_official",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "twice_tiktok_official",
+   "k": 11,
+   "group": "all-present"
+  },
+  {
+   "http": 200,
+   "bytes": 364691,
+   "seconds": 0.83,
+   "status_field": 0,
+   "unique_id_returned": "mystery_library",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "mystery_library",
+   "k": 10,
+   "group": "all-present"
+  },
+  {
+   "http": 200,
+   "bytes": 365567,
+   "seconds": 0.79,
+   "status_field": 0,
+   "unique_id_returned": "camiileo",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "camiileo",
+   "k": 10,
+   "group": "all-present"
+  },
+  {
+   "http": 200,
+   "bytes": 364671,
+   "seconds": 0.93,
+   "status_field": 0,
+   "unique_id_returned": "ka10san_0717",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "ka10san_0717",
+   "k": 9,
+   "group": "all-present"
+  },
+  {
+   "http": 200,
+   "bytes": 364778,
+   "seconds": 0.69,
+   "status_field": 0,
+   "unique_id_returned": "yori_dora",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "yori_dora",
+   "k": 8,
+   "group": "all-present"
+  },
+  {
+   "http": 200,
+   "bytes": 365031,
+   "seconds": 0.6,
+   "status_field": 0,
+   "unique_id_returned": "midnight_ticket",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "midnight_ticket",
+   "k": 8,
+   "group": "all-present"
+  },
+  {
+   "http": 200,
+   "bytes": 364859,
+   "seconds": 0.69,
+   "status_field": 0,
+   "unique_id_returned": "rinasawayamaofficial",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "rinasawayamaofficial",
+   "k": 7,
+   "group": "all-present"
+  },
+  {
+   "http": 200,
+   "bytes": 365011,
+   "seconds": 0.66,
+   "status_field": 0,
+   "unique_id_returned": "avamax",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "avamax",
+   "k": 14,
+   "group": "mixed"
+  },
+  {
+   "http": 200,
+   "bytes": 364959,
+   "seconds": 0.63,
+   "status_field": 0,
+   "unique_id_returned": "jkt48.official",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "jkt48.official",
+   "k": 12,
+   "group": "mixed"
+  },
+  {
+   "http": 200,
+   "bytes": 365372,
+   "seconds": 0.65,
+   "status_field": 0,
+   "unique_id_returned": "khaby.lame",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "khaby.lame",
+   "k": 11,
+   "group": "mixed"
+  },
+  {
+   "http": 200,
+   "bytes": 364708,
+   "seconds": 0.58,
+   "status_field": 0,
+   "unique_id_returned": "tatemcrae1",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "tatemcrae1",
+   "k": 9,
+   "group": "mixed"
+  },
+  {
+   "http": 200,
+   "bytes": 362007,
+   "seconds": 0.57,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "grimhoundgaming",
+   "k": 7,
+   "group": "mixed"
+  },
+  {
+   "http": 200,
+   "bytes": 364672,
+   "seconds": 0.74,
+   "status_field": 0,
+   "unique_id_returned": "dualipaofficial",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "dualipaofficial",
+   "k": 5,
+   "group": "mixed"
+  },
+  {
+   "http": 200,
+   "bytes": 365342,
+   "seconds": 0.51,
+   "status_field": 0,
+   "unique_id_returned": "shinanova",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "shinanova",
+   "k": 4,
+   "group": "mixed"
+  },
+  {
+   "http": 200,
+   "bytes": 365676,
+   "seconds": 0.59,
+   "status_field": 0,
+   "unique_id_returned": "depthsofwikipedia",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "depthsofwikipedia",
+   "k": 4,
+   "group": "mixed"
+  },
+  {
+   "http": 200,
+   "bytes": 364064,
+   "seconds": 0.67,
+   "status_field": 0,
+   "unique_id_returned": "acho.pro",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "acho.pro",
+   "k": 4,
+   "group": "mixed"
+  },
+  {
+   "http": 200,
+   "bytes": 364514,
+   "seconds": 0.57,
+   "status_field": 0,
+   "unique_id_returned": "tatemcrae",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "tatemcrae",
+   "k": 3,
+   "group": "mixed"
+  },
+  {
+   "http": 200,
+   "bytes": 364666,
+   "seconds": 0.64,
+   "status_field": 0,
+   "unique_id_returned": "peachprc",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "peachprc",
+   "k": 3,
+   "group": "mixed"
+  },
+  {
+   "http": 200,
+   "bytes": 365022,
+   "seconds": 0.72,
+   "status_field": 0,
+   "unique_id_returned": "graceful.addison",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "graceful.addison",
+   "k": 3,
+   "group": "mixed"
+  }
+ ]
+}
