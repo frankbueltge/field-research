@@ -280,3 +280,41 @@ error was found by re-reading the criterion against the computed output before t
 attacked, and it is recorded because it ran **against** the arc's own habit of claiming a failed
 prediction as evidence of discipline — the correction turns a "we failed our own prediction" into
 the weaker and truer "we passed it on one thin cell."
+
+## D17 — session 114: the pre-registered statistic was kept and reported, and a second one was added beside it because the first could not be trusted to carry the conclusion
+
+`PREREGISTRATION-114.md` §2 named the ANOVA intra-class correlation and the Kish design effect. It
+returned **ρ = 0.7912 → DEFF = 2.270** on a sample where 2,366 of 2,744 handles hold a single unit —
+a regime where the within-cluster mean square is computed on the multi-unit minority alone and the
+estimator is known to be unstable. The **nonparametric cluster bootstrap** (`cluster_bootstrap.py`)
+was added **after** seeing that number, and it measures the design effect at **1.458** — the
+pre-registered route overstates it by 56 %.
+
+Recorded as a deviation and not as a method improvement, because the sequence matters: the second
+statistic was chosen *after* the first had spoken. What protects it is that the bootstrap is the
+more conservative of the two and the one that costs this session its larger headline; had it come
+back *larger* than the ANOVA figure, this entry would have to say so and the number would still
+have been the smaller one. **The pre-registered figure is published beside it, not deleted.**
+
+## D18 — session 114: two requests beyond the pre-registered 24, because the first pass stored 200 bytes of a 362 kB answer
+
+`PREREGISTRATION-114.md` §5 authorised 24 account-page requests and `probe_account_arm.py` stored
+only the first 200 bytes of each body — enough to establish that all 24 returned HTTP 200 with the
+same shell, and **not** enough to answer the question the probe existed for. Two further requests
+(one handle from each group) inspected the body for a discriminating marker. Only marker presence,
+the numeric state field, the returned account name and the byte count were stored; **no third
+party's page text is written to this repository.**
+
+## D19 — session 114: 36 further requests, declared with their predictions before they ran
+
+Having found that the account route *does* discriminate, D19 (a) re-requested the **same 24**
+pre-selected handles to record the state field for each, and (b) added a **third group of twelve
+mixed handles** — some cited videos absent, some retrievable — which §5 had not selected and
+without which the two original groups differ in more than one respect.
+
+The extension, its reasoning and its three predictions (**P8, P9, P10**) were written into
+`probe_account_state.py` and **committed at `52ff5e9` before the first request of it left this
+machine**, so that the two failures among them (P8: six of twelve, not a majority; P10: eleven of
+twelve) are failures of a prediction on the record and not of a story told afterwards. Total
+outbound requests this session: **62**, all to account pages, none to the video endpoint, none to
+the window population.

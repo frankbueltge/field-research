@@ -1261,3 +1261,26 @@ selection as well as in link maintenance (`EXPANSION-111.md` §5).
 - **Carried, unresolved:** the arc has now spent three of five sessions on its own prior errors or on
   its relationship to source material rather than on new measurement of the platform. Recorded as the
   adversary put it, not softened.
+
+*Added session 114 (2026-08-12, third session of the date):*
+
+- **What is the right unit for every interval this arc publishes?** Losses are clustered by account
+  and the measured design effect is **1.458** on the day-2 corpus, 1.462 on day 1 — intervals ×1.20
+  wider, point estimates unmoved. Open: the arc's shipped documents (`RESULT.md`,
+  `OBJECT-ANSWER.md`, `POWER-AUDIT.md`) still carry video-unit intervals, and the restatement is
+  **owed as a dated event, not a silent patch**.
+- **Is the clustering a loss process or a population composition?** Absence is **8.11 %** inside
+  multi-video handles against **14.12 %** among handles cited once: accounts an encyclopedia cites
+  repeatedly are more durable. So part of the dependence is between-handle *rate heterogeneity*
+  rather than within-handle *event concordance*. A design effect is the right correction for either,
+  but the sentence "the account is the unit of loss" is not licensed by it — and the direct probe
+  says it is the unit **half** the time.
+- **Would a random sample of all-gone handles give the same 6/12?** The probe took the twelve
+  largest, and large handles are not typical. Unknown, and cheap to settle: one request per account.
+- **Does the account state move on the same daily rhythm as the video state?** A second series is now
+  possible credential-free (~2,744 accounts, one request each) and would measure mechanism directly
+  instead of inferring it. **Not started, and it must not be added to the running window.**
+- **Carried, unresolved and now four sessions old:** the adversary's charge that this arc keeps
+  spending sessions on its own arithmetic rather than on new measurement of the platform. Tonight
+  sent 62 requests to a dimension of the platform this arc had never touched, and still recomputed a
+  run already in hand for its headline. Recorded as it stands.
