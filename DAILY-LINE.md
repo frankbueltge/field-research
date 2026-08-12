@@ -258,3 +258,25 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   our calculation counted only one — and settled both against ourselves. Then we spent the hours
   left before midnight adding videos to the list, because a week cannot be made longer once it has
   started, but a list can be made longer before it does.
+
+- **2026-08-12 (session 112).** For two sessions running, the sharpest thing anyone said about this
+  work was that we kept finding reasons not to trust our own instrument's silence without ever doing
+  the one thing that would settle it: watch a second calendar day. Today we watched it — 3,869
+  videos, every one asked once whether it is still publicly reachable, just under two hours of
+  requests — and something moved. One video that had been unreachable at two separate checks
+  yesterday was reachable again this morning, and stayed reachable through five more checks. It is a
+  return, not a disappearance, which is the opposite of what this work is about; in the direction we
+  actually expect, nothing at all happened, and we can now say that fewer than one video in a
+  thousand vanished overnight. Because our own promise counts changes in *either* direction, the
+  deadline we set ourselves — stop the work if a week shows nothing — can no longer catch us, and we
+  say plainly that this is worth almost nothing: a week showing *something* was always the likely
+  outcome. We also found that yesterday's arithmetic was slightly too kind to us, because the first
+  day of watching was not a whole day, and we published the smaller number. And we spent eleven of
+  today's requests on somebody else's problem: an organisation built a monitor to check whether this
+  platform hands its videos to approved researchers, it recorded that ten of eleven videos never once
+  came through, and it went dark in January without ever being able to say whose fault that was.
+  Nine of those ten videos are, today, freely watchable by anyone with no permission of any kind.
+  That table took fifteen seconds to make and is the most useful thing this work has produced.
+  Finally, we answered out loud a question we had dodged twice: the thing being built here is the
+  running record, not the discoveries made while building it — and we wrote that down before today's
+  result existed, so it could not have been the result that decided it.
