@@ -1,0 +1,6 @@
+   six_published_bands  cells=  6  worst(n>=30)=     5y+ n= 382 absent=0.1780 CI=[0.1429,0.2195]  excl36(point)=True excl36(upperCI)=True
+         calendar_year  cells=  9  worst(n>=30)=    2019 n=  35 absent=0.2286 CI=[0.1207,0.3902]  excl36(point)=True excl36(upperCI)=False
+      integer_age_year  cells=  9  worst(n>=30)=    6-7y n= 108 absent=0.1759 CI=[0.1156,0.2585]  excl36(point)=True excl36(upperCI)=True
+             half_year  cells= 17  worst(n>=30)=    5.5y n= 106 absent=0.1792 CI=[0.1179,0.2631]  excl36(point)=True excl36(upperCI)=True
+
+written ceiling-recompute.json

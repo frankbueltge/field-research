@@ -1,0 +1,72 @@
+{
+ "schema": "field-research/presence-check/1",
+ "tool": "presence_check.py",
+ "list": {
+  "file": "legacy-check-list.txt",
+  "label": "condition 3: legacy short identifiers",
+  "n_items": 2,
+  "unparsed_lines": [
+   "not-an-identifier-at-all"
+  ]
+ },
+ "started_utc": "2026-08-12T18:57:54Z",
+ "finished_utc": "2026-08-12T18:57:56Z",
+ "seconds": 1.7,
+ "vantage": {
+  "ip": "160.79.106.129",
+  "city": "Columbus",
+  "region": "Ohio",
+  "country": "US",
+  "loc": "39.9612,-82.9988",
+  "timezone": "America/New_York",
+  "asn": "AS396982",
+  "registrant": "[redacted under this practice's naming rule]",
+  "source": "https://ipinfo.io/json",
+  "fetched_utc": "2026-08-12T18:57:54Z"
+ },
+ "probe": {
+  "endpoint": "https://www.tiktok.com/oembed?url=",
+  "user_agent": "field-research/1.0 (independent research instrument; sequential, 1 req/s)",
+  "delay_s": 1.0,
+  "timeout_s": 25,
+  "imported_from": "ledger.py (not re-implemented)"
+ },
+ "counts": {
+  "RETRIEVABLE": 1,
+  "NOT-RETRIEVABLE": 1
+ },
+ "determinate": 2,
+ "public_absence_rate": 0.5,
+ "expectation_for_this_age_profile": null,
+ "baseline_note": null,
+ "what_not_retrievable_means": "not publicly retrievable from this vantage at this time. The endpoint's refusal is a single opaque HTTP 400 that a never-existing identifier also returns (session 109 three-arm control, 20 synthetic identifiers). NOT DELETED.",
+ "observations": [
+  {
+   "http": 200,
+   "bytes": 1217,
+   "author_unique_id": "xksnkfkf",
+   "title_len": 0,
+   "body_code": null,
+   "vid": "12345",
+   "handle_sent": "x",
+   "state": "RETRIEVABLE",
+   "created_utc": null,
+   "age_y": null,
+   "band": null,
+   "dating_note": "not-19-digit: dating rule does not hold outside the modern scheme"
+  },
+  {
+   "http": 400,
+   "bytes": 45,
+   "body_code": 400,
+   "body_message": "Something went wrong",
+   "vid": "42",
+   "handle_sent": "x",
+   "state": "NOT-RETRIEVABLE",
+   "created_utc": null,
+   "age_y": null,
+   "band": null,
+   "dating_note": "not-19-digit: dating rule does not hold outside the modern scheme"
+  }
+ ]
+}

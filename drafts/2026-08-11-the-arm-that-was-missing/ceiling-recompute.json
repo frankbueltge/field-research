@@ -1,0 +1,455 @@
+{
+ "schema": "field-research/ceiling-recompute/1",
+ "written_by": "session 113, discharging condition 1 of INTERLOCUTOR-5.md",
+ "what_was_broken": "INCREMENT-3.md \u00a72a claimed no age composition of the reference population reaches 36 %, warranted by 'a weighted mean cannot exceed its largest component' applied to the six published bands. The warrant is partition-relative and the population is 3,575 individually dated identifiers, so the claim as literally written is false: finer partitions of the same population exceed the stated ceiling.",
+ "receiver_share_not_public_among_api_failures": 0.36,
+ "floor": 30,
+ "by_partition": {
+  "six_published_bands": {
+   "n_cells": 6,
+   "worst_cell_at_floor_30": {
+    "cell": "5y+",
+    "n": 382,
+    "absent": 68,
+    "absent_rate": 0.17801047120418848,
+    "absent_ci": [
+     0.142913813390886,
+     0.21951861999577577
+    ],
+    "n_cells_eligible": 6,
+    "n_cells_dropped_below_floor": 0
+   },
+   "excludes_receiver_36pct_on_point": true,
+   "excludes_receiver_36pct_on_upper_ci": true,
+   "table": {
+    "0-1y": {
+     "n": 494,
+     "absent": 24,
+     "absent_rate": 0.048582995951417005,
+     "absent_ci": [
+      0.03286212407926953,
+      0.07127034199760837
+     ]
+    },
+    "1-2y": {
+     "n": 775,
+     "absent": 59,
+     "absent_rate": 0.07612903225806451,
+     "absent_ci": [
+      0.059477364939856454,
+      0.09696199437045155
+     ]
+    },
+    "2-3y": {
+     "n": 790,
+     "absent": 98,
+     "absent_rate": 0.1240506329113924,
+     "absent_ci": [
+      0.10286697511707588,
+      0.14887278551336708
+     ]
+    },
+    "3-4y": {
+     "n": 673,
+     "absent": 108,
+     "absent_rate": 0.16047548291233285,
+     "absent_ci": [
+      0.13468347164705685,
+      0.19012148224119324
+     ]
+    },
+    "4-5y": {
+     "n": 461,
+     "absent": 75,
+     "absent_rate": 0.16268980477223427,
+     "absent_ci": [
+      0.13180969911430104,
+      0.1991449864083655
+     ]
+    },
+    "5y+": {
+     "n": 382,
+     "absent": 68,
+     "absent_rate": 0.17801047120418848,
+     "absent_ci": [
+      0.142913813390886,
+      0.21951861999577577
+     ]
+    }
+   }
+  },
+  "calendar_year": {
+   "n_cells": 9,
+   "worst_cell_at_floor_30": {
+    "cell": "2019",
+    "n": 35,
+    "absent": 8,
+    "absent_rate": 0.22857142857142856,
+    "absent_ci": [
+     0.12065879832364326,
+     0.3901731689608824
+    ],
+    "n_cells_eligible": 8,
+    "n_cells_dropped_below_floor": 1
+   },
+   "excludes_receiver_36pct_on_point": true,
+   "excludes_receiver_36pct_on_upper_ci": false,
+   "table": {
+    "2018": {
+     "n": 3,
+     "absent": 0,
+     "absent_rate": 0.0,
+     "absent_ci": [
+      0.0,
+      0.5614970318706057
+     ]
+    },
+    "2019": {
+     "n": 35,
+     "absent": 8,
+     "absent_rate": 0.22857142857142856,
+     "absent_ci": [
+      0.12065879832364326,
+      0.3901731689608824
+     ]
+    },
+    "2020": {
+     "n": 163,
+     "absent": 31,
+     "absent_rate": 0.1901840490797546,
+     "absent_ci": [
+      0.13734245562960354,
+      0.2572924228183602
+     ]
+    },
+    "2021": {
+     "n": 322,
+     "absent": 52,
+     "absent_rate": 0.16149068322981366,
+     "absent_ci": [
+      0.12532754239773952,
+      0.20563543331507167
+     ]
+    },
+    "2022": {
+     "n": 530,
+     "absent": 82,
+     "absent_rate": 0.15471698113207547,
+     "absent_ci": [
+      0.12642420471306842,
+      0.18797898756185855
+     ]
+    },
+    "2023": {
+     "n": 793,
+     "absent": 128,
+     "absent_rate": 0.1614123581336696,
+     "absent_ci": [
+      0.13744761173801207,
+      0.1886416698192856
+     ]
+    },
+    "2024": {
+     "n": 755,
+     "absent": 74,
+     "absent_rate": 0.09801324503311258,
+     "absent_ci": [
+      0.0787954633195904,
+      0.12130095610655851
+     ]
+    },
+    "2025": {
+     "n": 705,
+     "absent": 45,
+     "absent_rate": 0.06382978723404255,
+     "absent_ci": [
+      0.04804351876948712,
+      0.08434357238398923
+     ]
+    },
+    "2026": {
+     "n": 269,
+     "absent": 12,
+     "absent_rate": 0.04460966542750929,
+     "absent_ci": [
+      0.02569996732599151,
+      0.07634265824364356
+     ]
+    }
+   }
+  },
+  "integer_age_year": {
+   "n_cells": 9,
+   "worst_cell_at_floor_30": {
+    "cell": "6-7y",
+    "n": 108,
+    "absent": 19,
+    "absent_rate": 0.17592592592592593,
+    "absent_ci": [
+     0.11561862324864598,
+     0.2584954062268048
+    ],
+    "n_cells_eligible": 7,
+    "n_cells_dropped_below_floor": 2
+   },
+   "excludes_receiver_36pct_on_point": true,
+   "excludes_receiver_36pct_on_upper_ci": true,
+   "table": {
+    "0-1y": {
+     "n": 494,
+     "absent": 24,
+     "absent_rate": 0.048582995951417005,
+     "absent_ci": [
+      0.03286212407926953,
+      0.07127034199760837
+     ]
+    },
+    "1-2y": {
+     "n": 775,
+     "absent": 59,
+     "absent_rate": 0.07612903225806451,
+     "absent_ci": [
+      0.059477364939856454,
+      0.09696199437045155
+     ]
+    },
+    "2-3y": {
+     "n": 790,
+     "absent": 98,
+     "absent_rate": 0.1240506329113924,
+     "absent_ci": [
+      0.10286697511707588,
+      0.14887278551336708
+     ]
+    },
+    "3-4y": {
+     "n": 673,
+     "absent": 108,
+     "absent_rate": 0.16047548291233285,
+     "absent_ci": [
+      0.13468347164705685,
+      0.19012148224119324
+     ]
+    },
+    "4-5y": {
+     "n": 461,
+     "absent": 75,
+     "absent_rate": 0.16268980477223427,
+     "absent_ci": [
+      0.13180969911430104,
+      0.1991449864083655
+     ]
+    },
+    "5-6y": {
+     "n": 257,
+     "absent": 44,
+     "absent_rate": 0.17120622568093385,
+     "absent_ci": [
+      0.1300793658408602,
+      0.222017494976788
+     ]
+    },
+    "6-7y": {
+     "n": 108,
+     "absent": 19,
+     "absent_rate": 0.17592592592592593,
+     "absent_ci": [
+      0.11561862324864598,
+      0.2584954062268048
+     ]
+    },
+    "7-8y": {
+     "n": 15,
+     "absent": 5,
+     "absent_rate": 0.3333333333333333,
+     "absent_ci": [
+      0.15176324436857305,
+      0.5828645226687702
+     ]
+    },
+    "8-9y": {
+     "n": 2,
+     "absent": 0,
+     "absent_rate": 0.0,
+     "absent_ci": [
+      0.0,
+      0.6576197725990219
+     ]
+    }
+   }
+  },
+  "half_year": {
+   "n_cells": 17,
+   "worst_cell_at_floor_30": {
+    "cell": "5.5y",
+    "n": 106,
+    "absent": 19,
+    "absent_rate": 0.1792452830188679,
+    "absent_ci": [
+     0.1178619752624231,
+     0.26306394534204136
+    ],
+    "n_cells_eligible": 13,
+    "n_cells_dropped_below_floor": 4
+   },
+   "excludes_receiver_36pct_on_point": true,
+   "excludes_receiver_36pct_on_upper_ci": true,
+   "table": {
+    "0.0y": {
+     "n": 219,
+     "absent": 8,
+     "absent_rate": 0.0365296803652968,
+     "absent_ci": [
+      0.01862429686503033,
+      0.0704141564252152
+     ]
+    },
+    "0.5y": {
+     "n": 275,
+     "absent": 16,
+     "absent_rate": 0.05818181818181818,
+     "absent_ci": [
+      0.0361268383083419,
+      0.09241021272363101
+     ]
+    },
+    "1.0y": {
+     "n": 411,
+     "absent": 27,
+     "absent_rate": 0.06569343065693431,
+     "absent_ci": [
+      0.04553794649891074,
+      0.09389232883248125
+     ]
+    },
+    "1.5y": {
+     "n": 364,
+     "absent": 32,
+     "absent_rate": 0.08791208791208792,
+     "absent_ci": [
+      0.06295990630363271,
+      0.12147134035264531
+     ]
+    },
+    "2.0y": {
+     "n": 388,
+     "absent": 37,
+     "absent_rate": 0.09536082474226804,
+     "absent_ci": [
+      0.06997701641006725,
+      0.1286784782290516
+     ]
+    },
+    "2.5y": {
+     "n": 402,
+     "absent": 61,
+     "absent_rate": 0.1517412935323383,
+     "absent_ci": [
+      0.11997753332026531,
+      0.19009788181255968
+     ]
+    },
+    "3.0y": {
+     "n": 382,
+     "absent": 65,
+     "absent_rate": 0.17015706806282724,
+     "absent_ci": [
+      0.13580305024636358,
+      0.21107895468631438
+     ]
+    },
+    "3.5y": {
+     "n": 291,
+     "absent": 43,
+     "absent_rate": 0.14776632302405499,
+     "absent_ci": [
+      0.1115902530411598,
+      0.1931208251813373
+     ]
+    },
+    "4.0y": {
+     "n": 264,
+     "absent": 42,
+     "absent_rate": 0.1590909090909091,
+     "absent_ci": [
+      0.11990502968009517,
+      0.20805561990967228
+     ]
+    },
+    "4.5y": {
+     "n": 197,
+     "absent": 33,
+     "absent_rate": 0.16751269035532995,
+     "absent_ci": [
+      0.12183636397366546,
+      0.22590786787949338
+     ]
+    },
+    "5.0y": {
+     "n": 151,
+     "absent": 25,
+     "absent_rate": 0.16556291390728478,
+     "absent_ci": [
+      0.11473088487245295,
+      0.23298902962550064
+     ]
+    },
+    "5.5y": {
+     "n": 106,
+     "absent": 19,
+     "absent_rate": 0.1792452830188679,
+     "absent_ci": [
+      0.1178619752624231,
+      0.26306394534204136
+     ]
+    },
+    "6.0y": {
+     "n": 79,
+     "absent": 13,
+     "absent_rate": 0.16455696202531644,
+     "absent_ci": [
+      0.09876707199029594,
+      0.2614566522977787
+     ]
+    },
+    "6.5y": {
+     "n": 29,
+     "absent": 6,
+     "absent_rate": 0.20689655172413793,
+     "absent_ci": [
+      0.09846070196133791,
+      0.3839009040841691
+     ]
+    },
+    "7.0y": {
+     "n": 13,
+     "absent": 4,
+     "absent_rate": 0.3076923076923077,
+     "absent_ci": [
+      0.1268070365307339,
+      0.5763065682526639
+     ]
+    },
+    "7.5y": {
+     "n": 2,
+     "absent": 1,
+     "absent_rate": 0.5,
+     "absent_ci": [
+      0.09453120570165269,
+      0.9054687942983473
+     ]
+    },
+    "8.0y": {
+     "n": 2,
+     "absent": 0,
+     "absent_rate": 0.0,
+     "absent_ci": [
+      0.0,
+      0.6576197725990219
+     ]
+    }
+   }
+  }
+ },
+ "the_honest_form": "There is no finite supremum over arbitrary sub-selections - a one-identifier 'composition' is 100 % absent. Any bound must name its resolution and its minimum cell size. The bound is therefore restated with both, and it survives only at the resolutions where it survives, which is stated rather than chosen."
+}

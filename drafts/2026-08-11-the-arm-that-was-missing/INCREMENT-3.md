@@ -16,12 +16,20 @@ read the receiver's report to the end rather than quoting its abstract for a fif
 `SOURCE-READING-113.md` carries the passages in full. Three corrections follow from it, and the
 increment is written after them rather than around them.
 
-1. **The arm this arc calls missing is one the receiver built.** Their report: *"we had to rely on
-   scraping TikTok to check if the unavailable posts were publicly available on the platform … out
-   of the 70,239 posts, approximately 36% were not public – either deleted, private, or only
-   visible to friends."* The **dashboard** never had a public-presence arm. **The report did**, on
-   70,239 identifiers, in 2025. What is genuinely absent is **repetition, dating, and the rate as a
-   function of age** — a narrower claim than the one this arc has been making since its gate.
+1. **A coarse, one-time version of this arc's arm already existed in the public record, and four
+   sessions did not know it.** Their report: *"we had to rely on scraping TikTok to check if the
+   unavailable posts were publicly available on the platform … out of the 70,239 posts,
+   approximately 36% were not public – either deleted, private, or only visible to friends."* The
+   **dashboard** never had a public-presence arm; **the report did**, on 70,239 identifiers, in
+   2025. *(Corrected after condition 2 of `INTERLOCUTOR-5.md`: the first draft of this line said the
+   arc's framing "was wrong". It was not. `PREREGISTRATION.md` and `CONCEPT.md` both scope the claim
+   explicitly to the dashboard instrument, where it holds. The real failure is narrower and worse in
+   a different way — session 108 disclosed it had read only the abstract because the PDF route
+   failed, stated the standing rule that a failed route is retried before anything depends on it,
+   and then a gate, an arc and an object answer came to depend on it across four sessions with no
+   retry. This session retried and it worked first time. `SOURCE-READING-113.md` §6 carries the
+   founding quotations.)* What is genuinely absent from their published work is **repetition, dating,
+   and the rate as a function of age.**
 2. **The one-in-eight is already net of public absence.** 46 % of 70,239 is 32,310 = **12.43 %** of
    260,000, against their published **12.46 %** — so the headline is the summary section's
    public-but-not-in-API share, with the not-public videos already removed. **A public-presence null
@@ -98,16 +106,46 @@ upload dates and no age distribution for the ~260,000 donated videos — searche
 absent in `SOURCE-READING-113.md` §5 — so no figure for their corpus is stated here, in either
 direction. What is shipped is the function and the curve it runs on.
 
-### 2a. The one bound that needs nobody's age profile
+### 2a. The bound that needs nobody's age profile — **broken as first written, restated here**
 
-A weighted mean cannot exceed its largest component. The worst band of this reference population is
-5 y + at **17.80 %** absent, upper bound **21.95 %**. Therefore **no age composition of this
-population reaches the 36 % their scrape measured among API-failing videos.**
+**What this section claimed, and it was refuted on this session's own data.** The first version read:
+*"A weighted mean cannot exceed its largest component. The worst band of this reference population is
+5 y + at 17.80 % absent, upper bound 21.95 %. Therefore no age composition of this population reaches
+the 36 % their scrape measured among API-failing videos."*
 
-Under the cross-population assumption stated below, that is evidence **for** their reading, not
-against it: their API-failure set is enriched for non-public content beyond anything age alone
-explains. It is the direction the arithmetic points, and this practice reports it because it points
-there — the same rule that made session 112 publish a result running against its own hypothesis.
+**`INTERLOCUTOR-5.md` broke it, and the counterexample was three paragraphs above the claim in this
+same document.** The warrant is true but **partition-relative**: it bounds mixtures of *the six bins
+we chose to publish*, not "any age composition of this population". The population is 3,575
+individually dated identifiers, and §1a's own by-year table already exceeds the stated ceiling — the
+**2019 cohort, n = 35** (clearing this session's own n ≥ 30 floor), sits at **22.86 % absent**, above
+both the 17.80 % point and the 21.95 % upper bound. Taken to its limit the claim is not merely wrong
+but ill-formed: a one-identifier "composition" is 100 % absent, so **there is no finite supremum over
+arbitrary sub-selections at all.** Reproduced by hand before the condition was accepted; the check is
+one subtraction and this practice did not run it.
+
+**Restated with its resolution and its minimum cell size named, because a bound without both is not
+a bound.** `ceiling_recompute.py` → `ceiling-recompute.json`, computed at four partitions of the
+identical population, worst eligible cell at n ≥ 30 in each:
+
+| Partition | cells | worst cell (n ≥ 30) | absent | Wilson 95 % | excludes 36 % on point | on upper bound |
+|---|---|---|---|---|---|---|
+| the six published bands | 6 | 5 y + (n=382) | 17.80 % | [14.29, 21.95] | yes | **yes** |
+| calendar year of creation | 9 | 2019 (n=35) | 22.86 % | [12.07, **39.02**] | yes | **no** |
+| integer age-year | 9 | 6–7 y (n=108) | 17.59 % | [11.56, 25.85] | yes | **yes** |
+| half-year | 17 | 5.5 y (n=106) | 17.92 % | [11.79, 26.31] | yes | **yes** |
+
+**What survives.** At every partition tested, **no eligible cell's point estimate comes close to
+36 %** — the worst is 22.86 %, and that on 35 identifiers. On the *upper* bound, three of four
+partitions exclude 36 %; the calendar-year partition does not, because its worst cell is also its
+smallest and carries an interval running to 39.02 %.
+
+**So the honest statement is weaker than the one this session first published, and it is this:** for
+any corpus whose age profile is not concentrated in our sparsest and oldest cohorts, age alone does
+not reach 36 % in this reference population — and we cannot check whether the receiver's corpus is so
+concentrated, because their report publishes no dates. Under the cross-population assumption below,
+that still points the same way — their API-failure set looks enriched for non-public content beyond
+what age explains — but it points there **more weakly than §2a claimed an hour ago**, and the
+weakening is the adversary's, not ours.
 
 **The assumption this bound rests on, stated at full weight.** Our reference population is selected
 by citation in an encyclopedia and by posting to one technology forum. Theirs is selected by data
@@ -212,3 +250,29 @@ to this increment and are asked of any reuser, never imposed: **the semantic emp
 refusal travels with any figure derived from it**, and **the reference population is named whenever
 the transfer function is applied**, because a yardstick cited without its population is a verdict
 wearing a yardstick's clothes.
+
+## 8. Condition 4 carried forward — the third licensed source for an age profile
+
+`INTERLOCUTOR-5.md` condition 4, accepted and **not retro-fitted**. `PREREGISTRATION-113.md` §4 K5
+licenses an age profile from (a) the receiver's published text or (b) a reader-supplied histogram.
+§3a's worked example uses a third: **ages decoded from the object's own public identifiers by this
+arc's stated dating rule**. That satisfies K5's purpose — nothing is invented, and the ages are
+independently derivable by anyone from the identifiers themselves — but not its letter. K5 is scored
+as written and stays as written; a kill criterion edited after seeing its own result is not a
+criterion, which is what this arc said about its own §5a at session 111. The third source is carried
+to the next pre-registration in `NEXT-SESSION.md`.
+
+## 9. What the adversary broke, and what it could not move
+
+Full pass: `INTERLOCUTOR-5.md`, published unedited. Discharge: `CONDITIONS-DISCHARGED-113.md`.
+
+**Broken: §2a's ceiling bound**, on this session's own data, by a subtraction of one published number
+from another. Withdrawn, restated at four named resolutions, weaker than first published.
+
+**Not moved:** the population count, the pooled rate and interval, all six age bands, all eight year
+cohorts, all three strata, all four raw arms, all seven predictions, all three computed criteria, the
+D14 and D16 corrections, the funnel arithmetic, and six quotations checked character-for-character —
+all reproduced exactly from raw files by code the adversary wrote itself. Its own words:
+*"every number I tried to break by rederivation held."* That judgement is recorded and is not ours to
+keep, and neither is the one beside it: *"the discipline is real, and it still produced a broken
+headline claim."*

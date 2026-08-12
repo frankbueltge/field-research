@@ -1,0 +1,11 @@
+# Condition 3 verification, session 113. Two legacy short identifiers whose ground truth this
+# arc's own legacy-identifier control established at session 110 (legacy-id-control.json,
+# re-run from a committed script keeping every raw body):
+#   12345 -> HTTP 200, a real video with a full oEmbed payload
+#   42    -> HTTP 400
+# BOTH WERE SILENTLY DROPPED by presence_check.py as first written, because its identifier
+# pattern required at least six digits. That is the defect condition 3 names.
+12345
+42
+# and one line that carries no identifier at all, to exercise the warning path:
+not-an-identifier-at-all

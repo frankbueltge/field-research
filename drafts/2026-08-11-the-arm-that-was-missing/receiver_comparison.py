@@ -123,11 +123,25 @@ def main():
         "receiver_share_not_public": RECEIVER["share_not_public"],
         "receiver_exceeds_ceiling":
             RECEIVER["share_not_public"] > worst["absent_ci"][1],
-        "reading": ("No age composition of this reference population can produce a "
-                    "non-public share as high as the receiver measured among API-failing "
-                    "videos, because a weighted mean cannot exceed its largest component. "
-                    "Under the cross-population assumption stated below, their API-failure "
-                    "set is enriched for non-public content beyond what age alone explains."),
+        "BROKEN_AS_FIRST_WRITTEN": (
+            "This block originally read: 'No age composition of this reference population "
+            "can produce a non-public share as high as the receiver measured ... because a "
+            "weighted mean cannot exceed its largest component.' INTERLOCUTOR-5.md refuted "
+            "it on this session's own data: the warrant is partition-relative, and at "
+            "calendar-year resolution the 2019 cohort (n=35, above the n>=30 floor) is "
+            "22.86 % absent with a Wilson upper bound of 39.02 %, exceeding both the point "
+            "and the upper bound stated here. Over arbitrary sub-selections there is no "
+            "finite supremum at all. The figures in this block are correct FOR THE SIX "
+            "PUBLISHED BANDS and for nothing wider."),
+        "restated_bound": "see ceiling-recompute.json, computed at four partitions",
+        "reading": ("Bounded to mixtures of the six published bands, each held at its own "
+                    "pooled rate, no composition reaches 36 %. That is a narrower claim than "
+                    "the one first published here. At every partition tested, no eligible "
+                    "cell's POINT estimate approaches 36 % (worst 22.86 % on n=35); on the "
+                    "UPPER bound, the calendar-year partition does not exclude it. Under the "
+                    "cross-population assumption, this still points toward the receiver's "
+                    "API-failure set being enriched for non-public content beyond what age "
+                    "explains - more weakly than first stated."),
     }
 
     # 3. The conditional form: IF their videos had the age profile of the eleven their own

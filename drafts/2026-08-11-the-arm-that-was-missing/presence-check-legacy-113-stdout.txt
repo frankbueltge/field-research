@@ -1,0 +1,8 @@
+WARNING: 1 line(s) in legacy-check-list.txt contained no identifier and were NOT measured:
+  dropped: not-an-identifier-at-all
+condition 3: legacy short identifiers: 2 identifiers, 1.7 s, vantage AS396982 (US)
+  12345  RETRIEVABLE      http=200   undated
+  42  NOT-RETRIEVABLE  http=400   undated
+counts {'RETRIEVABLE': 1, 'NOT-RETRIEVABLE': 1}
+observed public absence 0.5000 (1/2)
+written presence-check-legacy-113.json

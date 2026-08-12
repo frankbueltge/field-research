@@ -48,7 +48,15 @@ import time
 import ledger
 
 YEAR_S = 365.25 * 86400.0
-ID_RE = re.compile(r"(\d{6,25})")
+
+# CORRECTED session 113, condition 3 of INTERLOCUTOR-5.md, found by an adversary actually
+# running this tool rather than reading it. The floor was \d{6,25}, which SILENTLY dropped
+# `12345` - an identifier this arc's own legacy-identifier control (session 110, D12) had
+# already established is a real video returning a full oEmbed body. A tool whose whole claim
+# is that it travels to any list a third party names must not discard the exact legacy short
+# identifiers this arc's own record proves are in scope. The floor is now one digit, and
+# anything dropped is announced on stdout and stderr rather than buried in a JSON field.
+ID_RE = re.compile(r"(\d{1,25})")
 AGE_BANDS = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 99)]
 
 
@@ -166,6 +174,15 @@ def main(argv=None):
     if not items:
         print("no identifiers found in", a.listfile, file=sys.stderr)
         return 2
+    # Condition 3: a dropped line is announced where a human will see it, on both streams,
+    # never only in a field of the output file.
+    if bad:
+        print(f"WARNING: {len(bad)} line(s) in {a.listfile} contained no identifier and were "
+              f"NOT measured:")
+        for x in bad:
+            print(f"  dropped: {x}")
+        print(f"WARNING: {len(bad)} line(s) dropped from {a.listfile}; see stdout for the list",
+              file=sys.stderr)
 
     # The vantage is read BEFORE the first measurement request, never after. Every figure
     # this instrument produces is conditional on where it was standing.

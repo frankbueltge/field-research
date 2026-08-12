@@ -12,8 +12,14 @@ authors' organisation at `https://aiforensics.org/work/tk-api`.
 **How it was read.** The abstract and the arXiv comment field were fetched from the abstract page.
 The full 18-page PDF was fetched from `https://arxiv.org/pdf/2506.09746v2` and its text extracted
 locally, because the HTML rendering returns HTTP 404 and the full-text conversion tool on this
-machine failed on a missing system library. Every quotation below is from that extracted text, with
-its section named. Sessions 109–112 quoted this work **from its abstract only.**
+machine failed on a missing system library. **Every quotation below is from that extracted PDF text,
+with its section named — with one stated exception: the arXiv comment-field quotation in §4, which
+comes from the abstract page and is not in the PDF at all.** *(Corrected after the fact, condition 5
+of `INTERLOCUTOR-5.md`: the sentence originally read "every quotation below is from that extracted
+text", which was false for that one instance. The adversary checked the quotation itself against the
+live abstract page and found it verbatim accurate; what was wrong was this sentence about sourcing,
+in a document whose reason for existing is this practice's own history of imprecise sourcing.)*
+Sessions 109–112 quoted this work **from its abstract only.**
 
 ---
 
@@ -96,14 +102,37 @@ cannot condition on an age profile the source does not publish, and we will not 
 
 ## 6. What this does to this arc's own claims — three corrections, all against us
 
-**Correction 1 — the arc's framing of what the receiver lacks was wrong.** Session 109's gate, and
-every session since, has rested on the sentence that *"the arm the dark instrument never had is
-credential-free"*. The **dashboard** never had that arm. **The report did.** They scraped 70,239
-identifiers to check public availability, and the arm this arc has been calling missing is one the
-receiver built, ran and published a year before this arc opened. What is genuinely absent from their
-published work is **repetition and dating** — a public-presence record that is made again on a named
-day rather than once — and that is a much narrower claim than the one this arc has been making.
-`CONCEPT.md`'s framing is corrected in the increment document rather than edited quietly here.
+**Correction 1 — the arc did not know the report had already run a coarse, one-time version of its
+own arm. Its framing was narrower than that failure, and the first draft of this section overstated
+it.** *(Rewritten after condition 2 of `INTERLOCUTOR-5.md`, which sent this practice back to its own
+founding documents. What follows is what they actually say, checked here by hand.)*
+
+The founding texts were **already scoped to the dashboard**, and correctly so.
+`PREREGISTRATION.md` line 30: *"The claim is about the **arm the dark instrument never had**. That
+instrument asked, of eleven videos each day: does the research interface return this video?"* —
+*that instrument* is the dashboard. `CONCEPT.md`: *"Their instrument compares one thing against
+nothing: it asks the research interface about eleven videos and records the answer, and when the
+answer is bad it cannot tell whose fault it is."* Also the dashboard. **On the dashboard the claim
+was and remains true.** So the arc's central framing was not in error, and saying it was would be a
+different inaccuracy in the opposite direction.
+
+**What is a real failure, and it is a failure of this practice's own standing rule.** Session 108
+disclosed plainly that it had read only the abstract — `drafts/2026-08-10-one-receiver-to-the-floor/
+DERIVED.md`: *"The paper-index tool and the PDF-to-text conversion both failed on this machine. The
+abstract page was fetched directly instead, and no claim in `RESULT.md` depends on the paper's body
+text — only on its abstract, authors and submission history, all read from the fetched abstract
+page."* That disclosure was honest **on the day it was made**. The standing rule stated in the same
+paragraph is: *"a page that fails one route is retried on another before anything depends on it."*
+Over the four sessions that followed, a concept gate, an arc, and an object answer all came to depend
+on this work — **and no session retried the route.** This session retried it and it succeeded on the
+first attempt.
+
+**What the body then showed.** They scraped 70,239 identifiers in 2025 to check public availability
+and published the split. So a coarse, one-time version of this arc's arm **already existed in the
+public record**, and the arc's account of its own novelty — which turned on the arm being absent
+rather than on its being un-repeated — needed narrowing. What is genuinely absent from their
+published work is **repetition, dating, and the rate as a function of age.** That is a smaller claim
+than this arc has been making in its looser moments, and it is the claim the increment now makes.
 
 **Correction 2 — the one-in-eight is already net of public absence.** Computed in
 `receiver_comparison.py`, not asserted: 46 % of 70,239 is 32,310, which is **12.43 %** of 260,000
