@@ -39,13 +39,20 @@ favourable specification gives 6.47.
 
 **D1 verdict: the series can carry an artifact of its own.**
 
-**What would have failed it, stated so the threshold is checkable rather than decorative.** E scales
-with the live corpus, so D1's floor of 3 corresponds to roughly **1,460 live identifiers** under the
-least favourable shape. This arc crossed that line at session 109's census (2,320 live) and was
-below it at session 109's 300-request probe. The expansion of session 111 did not decide D1; the
-census did. And a threshold of 10 rather than 3 would have failed on every specification — the
+**What would have failed it, stated so the threshold is checkable rather than decorative.** Computed,
+not asserted (`d1-threshold-check.txt`): under the least favourable shape, D1's floor of E ≥ 3 sits
+at **1,458 live identifiers**. Against the arc's own history — session 109's 300-request probe (263
+live) **fails** at E ≈ 0.54; session 109's census (1,941 live) **passes** at E ≈ 4.00; session 110's
+two-corpus state (2,320 live dated) at E ≈ 4.78; today at 6.47. **The expansion of session 111 did
+not decide D1 — the census of session 109 did**, which means D1 was already settled before this
+session's procedure was written, and that is stated rather than left for someone else to notice.
+And a floor of **10** instead of 3 would have **failed on every one of the six specifications**. The
 number chosen was 3 because a handful of dated events is the smallest set from which a rate can be
-reported at all, and it is stated here that a stricter threshold would have gone the other way.
+reported at all; that a stricter floor reverses the verdict is on the record here, not in a footnote.
+
+*The proportional scaling behind the 1,458 has a known direction of error: session 111 measured E
+growing 44.8 % for a 35.4 % corpus growth because the added arms were younger, so enrichment with
+young identifiers reaches the floor with fewer than 1,458.*
 
 **The bound that travels with it, and it is not small.** These are *expected* transitions under a
 hazard fitted **cross-sectionally**, on the cohort-invariance assumption this arc has named as its

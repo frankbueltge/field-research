@@ -1,0 +1,15 @@
+least favourable specification: k=0.4938 lambda=0.00636
+live now = 3142, E(24) = 6.4683
+live needed for E(24) >= 3 (proportional scaling): 1458
+  session 109 probe (263 live of 300)        E(24) ~  0.541  FAILS the D1 floor
+  session 109 census (1,941 live)            E(24) ~  3.996  PASSES the D1 floor
+  session 110 two-corpus (2,320 live dated)  E(24) ~  4.776  PASSES the D1 floor
+  today (3,142 live dated)                   E(24) ~  6.468  PASSES the D1 floor
+
+And the threshold that would have failed today on every specification:
+  k=0.4938  E(24)=6.468  vs a floor of 10 -> FAILS
+  k=0.5588  E(24)=6.962  vs a floor of 10 -> FAILS
+  k=0.6476  E(24)=7.582  vs a floor of 10 -> FAILS
+  k=0.7938  E(24)=8.505  vs a floor of 10 -> FAILS
+  k=0.8065  E(24)=8.581  vs a floor of 10 -> FAILS
+  k=1.0453  E(24)=9.904  vs a floor of 10 -> FAILS
