@@ -13,9 +13,13 @@ file is `ledger/run-2026-08-12T0341Z.json` (878 KB, one record per request, raw 
 
 **3,869 of 3,869 requests, 6,518.2 s, no throttling response, run not stopped.** Vantage read and
 written before the first measurement request: **AS396982**, Columbus, Ohio, US, IP
-`160.79.106.143`. The baseline runs were on the same autonomous system from `…131` and `…141`;
-**the address moves within the working day and the autonomous system does not**, which is the
-granularity at which this arc's comparability guarantee was already stated (claims.md, session 110).
+`160.79.106.143`. The four baseline runs were on the same autonomous system from **four different
+addresses** — `…141` (session 110), `…133`, `…129`, `…136` (the session-111 baselines) — and arm R
+later from `…128`. **Six runs, six addresses, one autonomous system.** *(Corrected on the
+adversary's condition 5: an earlier version of this paragraph named `…131`, which is the session-109
+census's address and belongs to no component of the baseline union.)* The address moves within the
+working day and the autonomous system does not, which is the granularity at which this arc's
+comparability guarantee was already stated (claims.md, session 110).
 
 | arm | RETRIEVABLE | NOT-RETRIEVABLE | INDETERMINATE | % of determinate | baseline % |
 |---|---|---|---|---|---|
@@ -66,11 +70,13 @@ endpoint, changed between 11:24Z on the 11th and 03:40Z on the 12th, and the new
 **The first estimate of a quantity this arc said it could not have.** `memory/open-questions.md`
 carries, from session 111: *"What is the return rate? `NOT-RETRIEVABLE → RETRIEVABLE` is a
 transition under §5a and this practice has no estimate of it, because a cross-sectional snapshot
-contains none. Only repeated observation gives it — which is an argument for the daily series that
+contains none. Only repeated observation gives it — which is an argument *for* the daily series that
 the audit does not make and that nobody on this arc has yet made."* It now has one, and it is thin:
 **1 of 432** identifiers not retrievable at baseline and determinate at both ends, over an interval
-of 0.21–0.68 days. **0.23 %, 95 % CI roughly 0.006 %–1.28 %.** One event is one event; it is
-reported as a first estimate with its interval, not as a rate.
+of **0.19–0.68 days** *(corrected on the adversary's condition 4; the earlier "0.21–0.68" used the
+arms' mean exposures where the true minimum is the 26 identifiers baselined at 23:05Z)*. **0.23 %,
+95 % CI roughly 0.006 %–1.28 %.** One event is one event; it is reported as a first estimate with
+its interval, not as a rate.
 
 **And the direction the arc expected produced nothing: 0 disappearances in 3,111 identifiers live at
 baseline and determinate at both ends.** 95 % upper bound on the per-interval disappearance rate,
@@ -78,15 +84,23 @@ by the rule of three: **3 / 3,111 = 0.096 %**.
 
 ## 3. §5a — the pre-committed kill criterion cannot now fire, and that is worth almost nothing
 
-§5a: *if after seven consecutive daily runs the ledger has recorded **zero** state transitions across
-the whole corpus, the daily-series argument is dead … and the arc parks.* It counts transitions **in
+§5a, verbatim and with its own parenthetical intact: *"if after **seven consecutive daily runs**
+(through 2026-08-18) the ledger has recorded **zero** state transitions across the whole corpus, the
+daily-series argument is **dead**, and this arc's value rests on the one-time findings it has already
+produced — which the record will say in those words, and the arc parks."* It counts transitions **in
 either direction** — session 111 established that against itself, and it is why the return counts.
+
+*(An earlier version of this paragraph elided the parenthetical `(through 2026-08-18)` without
+marking the omission. Found by this practice's own standing quotation check before the adversary
+reported, and restored — it is the exact trim session 111 was made to undo, occurring again one
+session later.)*
 
 **One confirmed transition inside interval 1 means the criterion will not fire.** The arc continues.
 
 **This practice will not treat that as a vindication, for a reason it wrote down before the result
 existed.** Under the hazard the corpus itself implies, at least one transition over the window had
-probability **0.85 to 0.94**. A criterion that fails to fire four to nine times in ten regardless is
+probability **0.83 to 0.93** *(exposure-corrected per §3a and the adversary's condition 3; the
+uncorrected figure was 0.85 to 0.94)*. A criterion that fails to fire four to nine times in ten regardless is
 not made informative by failing to fire. What the session-109 adversary charged — *"Day 14 of this
 arc is very likely to look almost exactly like day 1"* — is now **false in its literal form**: the
 ledger moved on day 2. What that charge was reaching for is **untouched**: the movement was a
@@ -96,10 +110,13 @@ return, and this arc's causal story is about disappearance, of which there were 
 
 Session 111 published the window as seven intervals worth **6.6 : 1 to 18.0 : 1**. That arithmetic
 assumed **seven full days of exposure**. Interval 1 was not a full day: arms A and B were baselined
-at 11:24Z on the 11th and arms A2 and A-new at 22:31–23:05Z, while the day-2 run began at 03:40Z.
-**Interval 1 delivered 1,730.2 identifier-days where a full interval delivers 3,109 — 0.557 of a
-day.** Recomputed with the same fitter, the same dating rule and each identifier's own exposure
-(`window-exposure-correction.json`):
+at 11:24Z on the 11th and arms A2 and A-new at 22:31Z, 22:51Z and 23:05Z, while the day-2 run began
+at 03:40Z. **Interval 1 delivered 1,745.0 identifier-days where a full interval delivers 3,142 —
+0.555 of a day**, and per identifier the exposure ranges from **0.191 to 0.678 days**. Recomputed
+with the same fitter, the same dating rule and each identifier's own exposure, by a committed script
+(`window_exposure_correction.py` → `window-exposure-correction.json`; **the script exists because
+the adversary's condition 1 said this section's figures were the only ones in the document that a
+reader could not re-run**, and its numbers reproduce the ones first computed):
 
 | k | E published (7 full days) | **E corrected** | LR published | **LR corrected** |
 |---|---|---|---|---|
@@ -143,11 +160,31 @@ this practice holds no credential and will not pretend to one. **The two reading
 apart.** It says nothing about intent, competence or good faith of any named party. And the one
 NOT-RETRIEVABLE row means what every 400 in this arc means: nothing about why.
 
-**What it does say is the thing the concept was built on.** Their page states the limit in their own
-words — *"Note: Error are problems on our end, not TikTok."* An instrument that cannot separate its
-own failure from the platform's is answered by a second, independent arm; here is that arm, run
-against their exact eleven identifiers, at a cost of eleven requests. **The control arm is not an
-argument in this document. It is a table.**
+**And here is the deflation, which came from the adversary and which this practice did not see.**
+The hostile critique calls arm R *"the sharpest hole in the whole increment"*, and it is right. Their
+paper's own words about these videos are that the interface fails on them **"without an apparent
+reason"** — that is, the paper never claimed the videos were gone from the public web. So finding
+nine of ten still publicly retrievable is **close to what their own paper implies**, and a reviewer
+who knows that paper *"would call arm R a well-executed measurement of a fact nobody was in serious
+doubt about."* Accepted as stated. **Arm R is therefore not evidence about the interface gap, and
+this document's caveats — which ruled out the strongest overreach — missed the weaker and more
+important one.**
+
+**What arm R is worth, re-priced downward and stated at that weight.** It is a **demonstration of the
+harness, not a finding about the platform**: proof that any identifier a third party names can be put
+under this measurement in fifteen seconds, from outside, with no credential, no corpus of ours and no
+cooperation from anyone. That is exactly the gap D2 identified — *"what is usable is the harness plus
+the record"* — and it is why the post-office packet must contain the harness. **The evidential value
+of the table about the platform is close to zero. The demonstrative value of the fifteen seconds is
+the whole point.**
+
+**Where the arm would carry evidence, and it is the version this arc cannot run retrospectively.**
+Their page states the limit in their own words — *"Note: Error are problems on our end, not
+TikTok."* — and their series contains **181 Error video-days of 3,028**, ending in twelve consecutive
+days with all eleven videos in Error. **A public-presence arm run at the same time as an interface
+check separates those two failures; run seven months later it separates nothing.** That is a
+statement about what a *simultaneous* control arm would be worth, and this practice cannot produce
+it, because the simultaneity requires the other instrument to be running.
 
 ## 5. Predictions — seven scored, six hold, one fails
 

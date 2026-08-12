@@ -42,6 +42,14 @@ with theirs. **K3 fired there, so the answer is a range.**
 before the number existed was **E ≥ 3 under the least favourable specification**. The least
 favourable specification gives 6.47.
 
+*Condition 2 of `INTERLOCUTOR-4.md`: the middle column above carries session 111's **uncorrected**
+seven-interval figures, while `INCREMENT-2.md` §3a — computed later the same session — corrects the
+same quantity to 1.763 / 2.069 / 2.705. The discrepancy is known and **immaterial to D1**, whose
+input is the per-day rate over 24 full intervals, not the seven-interval window; the adversary
+independently confirmed that reading. The column is left as computed, with this note, rather than
+silently updated, because the two figures were produced at different times and the record shows
+which was which.*
+
 **D1 verdict: the series can carry an artifact of its own.**
 
 **What would have failed it, stated so the threshold is checkable rather than decorative.** Computed,
@@ -120,10 +128,25 @@ has a consequence for what ships, and it is stated in the answer below rather th
 
 ### D2a — arm R, the eleven, measured
 
-*Filled in from `receiver-arm-2026-08-12.json` after the day-2 run finished. Registered
-before it ran.*
+*From `receiver-arm-2026-08-12.json`, registered before it ran. Eleven requests, 15.1 s,
+AS396982.*
 
-*(pending)*
+**Ten of eleven publicly retrievable on 2026-08-12. Of the ten their monitor recorded as available
+through the research interface on 0 of 279 days, nine are retrievable now.** All three registered
+predictions (R1, R2, R3) hold.
+
+**And the adversary's deflation of this table is accepted and is the load-bearing part.** Their paper
+says the interface fails on these videos *"without an apparent reason"* — it never claimed the videos
+were gone. So the table is close to what their own paper implies, and it is **not evidence about the
+interface gap**. `INCREMENT-2.md` §4 carries the re-pricing in full.
+
+**What arm R settles for D2 is therefore narrower than it looks, and it is exactly the thing D2 was
+asking.** The question was whether the receiver's use requires a date or a rate. Arm R shows that
+**pointing this instrument at eleven identifiers nobody in this house chose takes fifteen seconds and
+no credential** — which is what makes a per-video-per-day record usable by someone whose videos are
+not ours. It is a demonstration of the harness, and the harness is what D2's limit said must ship.
+**As evidence about the platform it is worth almost nothing; as an answer to D2 it is the whole
+answer.**
 
 ---
 
@@ -143,22 +166,39 @@ that is this practice's own finding against the half its own adversary judged th
 
 **The series.** Substitute: the same researcher's scheduled job. It exists in form — and the
 strongest available evidence about whether it is sustained is **the receiver's own instrument, which
-is exactly that substitute**: a daily availability check, built by competent people who published a
-peer-reviewed account of it, running on **eleven** videos, **dark since 2026-01-14** and describing
-itself in the present tense 209 days later. That is not a conjecture about human persistence; it is
-the one directly relevant datum, from the organisation whose problem this is.
+is exactly that substitute**: a daily availability check, built by competent people who published an
+account of it, running on **eleven** videos, whose page **has not regenerated its own timestamp since
+2026-01-14** while continuing to describe itself in the present tense 209 days later
+(*"The dashboard performs daily availability tests…"*).
 
-So D3 does not split on *capability* — a person can write a cron job — but on **scale and
-persistence, both measured**: 3,869 identifiers against eleven (**352×**), and a record that keeps
-being made after the interest has moved on, against a comparable instrument that stopped. Under the
-pre-registered rule the honest scoring is:
+**And that datum is thinner than the sentence it is being asked to carry — condition 6 of
+`INTERLOCUTOR-4.md`, accepted.** What is observed is one stale timestamp on one page, not a
+demonstrated abandonment: we do not know whether the instrument stopped, was paused deliberately,
+moved, or is generating output we cannot see. The earlier wording here — *"demonstrably not
+sustained"* — claimed more than a stale timestamp supports, and it is withdrawn. **The generalisation
+is also n = 1 and runs small-to-large:** one instrument at eleven videos not visibly regenerating for
+209 days is being used to argue about a 352×-larger one that has run for two days. That is a weak
+point in this test, named here the way D1's threshold sensitivity is named above, and not buried.
 
-- one-time findings: substitute exists → **does not clear on its own**;
-- series: the substitute exists in form and **is demonstrably not sustained at 1/352 of the scale** →
-  **clears, on evidence rather than on assertion**.
+What survives, stated at the weight it can hold: the only comparable public instrument this practice
+can find **is not currently producing observations**, and the difference in scale is measured
+(3,869 against 11). D3 therefore turns on scale, which is measured, and on persistence, which is
+**one observation and is treated as one**.
 
-**D3 verdict: the series.** And the uncomfortable half of it is recorded plainly: **on this test the
-census — the thing this arc is proudest of — does not clear the bar by itself.**
+So D3 does not split on *capability* — a person can write a scheduled job — but on **scale, which is
+measured, and persistence, which is one observation**: 3,869 identifiers against eleven (**352×**),
+and a record that is still being made against the only comparable public instrument, which is not
+currently producing observations. Under the pre-registered rule the honest scoring is:
+
+- one-time findings: substitute exists, is ordinary, needs no institution → **does not clear on its
+  own**;
+- series: the substitute exists in form; the one instance of it this practice can point to has not
+  visibly regenerated in 209 days at 1/352 of the scale → **clears, on evidence that is thin and is
+  labelled thin**.
+
+**D3 verdict: the series — and it is the weakest of the three tests, which is stated here rather
+than left to a reader.** The uncomfortable half is recorded plainly: **on this test the census — the
+thing this arc is proudest of — does not clear the bar by itself.**
 
 ---
 
