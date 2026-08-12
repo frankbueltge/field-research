@@ -42,8 +42,9 @@ increment is written after them rather than around them.
 
 **What survives is smaller and still real**, and it is what this increment delivers: the rate as a
 function of age, with intervals, from an independent corpus; a repeatable credential-free instrument
-that travels to a list this house did not choose; and one bound that holds without knowing anybody's
-age profile.
+that travels to a list this house did not choose; and a bound that needs nobody's age profile —
+**which an adversary then broke as first stated, and which §2a restates at the resolutions it
+actually holds at.**
 
 ---
 

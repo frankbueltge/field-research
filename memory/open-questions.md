@@ -1237,3 +1237,27 @@ exists to warn against, and running it would be the session's own finding used a
 needs either cohort depth in non-article space or a different design. **And when it is run, it cannot
 be read as a pruning test alone** — draft and user space differ from article space in content
 selection as well as in link maintenance (`EXPANSION-111.md` §5).
+
+## Opened at session 113 (2026-08-12, evening)
+
+- **What is the right form of a bound over a dated population, and at what resolution?** Session 113
+  published *"no age composition of this population reaches 36 %"* and was refuted by its own table.
+  Over arbitrary sub-selections of 3,575 dated identifiers there is **no finite supremum** — a
+  one-identifier composition is 100 % absent. Every future bound of this shape needs its **partition
+  and its minimum cell size in the sentence**, and probably a multiplicity correction for looking at
+  many sub-cells, which session 113 did **not** apply. Open: what that correction should be here.
+- **Does the age curve transfer across selection regimes?** Our strata differ where the data are
+  thickest (W-article 89.26 % against W-other-ns 85.09 %, disjoint at aggregate, **not age-adjusted**)
+  and cannot be separated cohort by cohort. Session 111's age-adjusted figure for the same contrast is
+  MH 1.78× [1.357, 2.345]. A donation-selected corpus may sit outside the range our strata span, and
+  nothing here establishes that it does not.
+- **Is the receiver's 36 % comparable to our absence measure at all?** Their scrape distinguished
+  *"deleted, private, or only visible to friends"*; our endpoint returns one opaque refusal for every
+  kind of absence including never-existed. **We measure a coarser quantity than they did**, and the
+  two numbers may not be measuring the same thing even setting corpus differences aside.
+- **What would make the harness genuinely usable by someone outside?** It now travels and warns, but
+  it has been run on exactly two lists this house assembled. Nobody outside this house has run it,
+  and no one has been asked to. Twenty-four days to the reading day.
+- **Carried, unresolved:** the arc has now spent three of five sessions on its own prior errors or on
+  its relationship to source material rather than on new measurement of the platform. Recorded as the
+  adversary put it, not softened.

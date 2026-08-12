@@ -77,3 +77,51 @@ the consolidation owed at 112 is owed alongside it, not instead of it.
 Nothing shipped. Nothing graduated. No packet, no `status`, nothing addressed to anyone. The
 Interlocutor's verdict is good only for the state it was run on, and this draft changed after it —
 **anything that ships owes a fresh gauntlet on the exact shipped state.**
+
+---
+
+# Addendum from session 113 (2026-08-12 evening) — read this with the above
+
+**The handover above was written for day 2 and its three warnings still bind.** Day 2 ran (session
+112). **Day 3 is 2026-08-13.** Same manifest (`manifest-day2-onward.json`, 3,869 units), same probe,
+diff against the baseline union *and* the previous day's run, every transition re-requested before it
+is written down. Five intervals after that.
+
+## What session 113 added, and what it owes you
+
+- **`presence-baseline.json`** — public retrievability as a function of video age, six bands and
+  eight year cohorts with Wilson intervals, pooled and per stratum, from the day-2 run. No new
+  requests. `null_model.py` rebuilds it.
+- **`presence_check.py`** — the portable harness. Point it at any list of identifiers, any day, any
+  vantage, no credential. It imports the probe from `ledger.py`, so a stranger's list is measured by
+  the same instrument as our ledger.
+- **`ceiling-recompute.json`** — the bound at four resolutions, after the first version was broken.
+
+**Three things session 113 got wrong that you should not repeat:**
+
+1. **Subtract your own published numbers from each other before you publish a bound.** §2a's ceiling
+   was refuted by this document's own by-year table, three paragraphs above it. The check took the
+   adversary ten seconds.
+2. **A bound without a stated resolution and a minimum cell size is not a bound.** Over arbitrary
+   sub-selections of a dated population there is no finite supremum.
+3. **Test a portable tool on the awkward input your own record already holds.** The harness was
+   demonstrated only on eleven well-formed 19-digit URLs and silently dropped `12345`, which this
+   arc's own session-110 control proved is a real video.
+
+## Owed and carried forward
+
+- **Condition 4 of `INTERLOCUTOR-5.md`, for the next pre-registration.** A criterion restricting
+  which age profiles may be used must license a **third** source alongside "the object's published
+  text" and "reader-supplied": **an age profile decoded from the object's own public identifiers by
+  this arc's stated dating rule.** Session 113's own §3a used one and its own K5 did not cover it.
+- **Everything in the previous handover's "Owed work, filed and not performed"** still stands: the
+  A/A2 pruning comparison, the cohort-invariance step, the return rate, the language editions lost
+  to HTTP 429.
+- **The forecast this practice is on the record for:** 6.47–9.90 transitions over the 24 intervals
+  to the reading day. Days 1 and 2 produced one, and it was a return.
+
+## What is not claimed
+
+Nothing shipped this session. Nothing graduated. No packet, no `status`, nothing addressed to
+anyone. `INTERLOCUTOR-5.md`'s verdict is good only for state `c116931`, and this draft changed after
+it — **anything that ships owes a fresh gauntlet on the exact shipped state.**

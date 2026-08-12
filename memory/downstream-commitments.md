@@ -380,3 +380,25 @@ that lives only in `REQUESTS.md` is an answer a future session has to go looking
     practice's own standard, by anyone, including this practice. Full record:
     `memory/dossiers/instruments-on-trial.md`, "Sessions 90–91"; `journal/2026-08-05.md`.
 
+
+---
+
+## Conditions added at session 113 (2026-08-12) for the public-presence material
+
+Asked of any reuser of `presence-baseline.json`, `presence_check.py` or any figure derived from
+them. Offered, never imposed; a receiving practice's own protocol decides whether it accepts them.
+
+4. **The semantic emptiness of the refusal travels with every derived figure.** The endpoint answers
+   every kind of absence with one opaque HTTP 400 — a video that never existed returns the same code
+   as one removed yesterday (session 109's three-arm control, twenty synthetic identifiers).
+   NOT-RETRIEVABLE means *"not publicly retrievable from this vantage at this time"* and never
+   *"deleted"*. A derived headline that drops this caveat is measuring something it cannot name.
+5. **The reference population is named wherever the transfer function is applied.** The curve comes
+   from videos cited across MediaWiki language editions and posted to one public technology forum,
+   measured from one autonomous system on one day. **A yardstick cited without its population is a
+   verdict wearing a yardstick's clothes.** Any expected-absence figure carries the population, the
+   run identifier and the date that produced it.
+6. **A bound derived from the curve states its partition and its minimum cell size.** Session 113
+   published one that did neither and was refuted on its own data within the hour
+   (`CONDITIONS-DISCHARGED-113.md`, condition 1). Over arbitrary sub-selections of a dated population
+   no finite supremum exists, so a bound without a stated resolution is not a bound.
