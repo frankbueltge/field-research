@@ -1,0 +1,64 @@
+{
+ "schema": "field-research/account-route-body-inspection/1",
+ "session": 114,
+ "deviation": "D18 \u2014 two requests beyond the pre-registered 24, to inspect the body for a discriminating marker; only marker presence and two extracted fields are stored, never the third party's page text",
+ "collected_utc": "2026-08-12T23:33:57Z",
+ "endpoint": "https://www.tiktok.com/@<handle>",
+ "user_agent": "field-research/1.0 (independent research instrument; sequential, 1 req/s)",
+ "markers_searched": [
+  "__UNIVERSAL_DATA_FOR_REHYDRATION__",
+  "userInfo",
+  "uniqueId",
+  "statusCode",
+  "Couldn't find this account",
+  "This account was banned",
+  "secUid",
+  "followerCount",
+  "user-post-item",
+  "<script id=\"__"
+ ],
+ "results": [
+  {
+   "handle": "mahoko0918",
+   "group": "all-gone",
+   "http": 200,
+   "bytes": 362788,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "statusCode": true,
+    "Couldn't find this account": true,
+    "This account was banned": true,
+    "secUid": false,
+    "followerCount": false,
+    "user-post-item": false,
+    "<script id=\"__": true
+   },
+   "statusCode_field": "10221",
+   "uniqueId_field": null,
+   "script_tags": 69
+  },
+  {
+   "handle": "bullettrain_8",
+   "group": "all-present",
+   "http": 200,
+   "bytes": 365577,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "statusCode": true,
+    "Couldn't find this account": true,
+    "This account was banned": true,
+    "secUid": true,
+    "followerCount": true,
+    "user-post-item": false,
+    "<script id=\"__": true
+   },
+   "statusCode_field": "0",
+   "uniqueId_field": "bullettrain_8",
+   "script_tags": 69
+  }
+ ]
+}

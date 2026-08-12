@@ -1,0 +1,54 @@
+{
+ "run": "ledger/run-2026-08-11T1124Z.json",
+ "run_id": "2026-08-11T11:24:01Z",
+ "n_units": 2618,
+ "absent": 298,
+ "rate": 0.11382734912146678,
+ "interval_wilson_video_unit": {
+  "n": 2618,
+  "absent": 298,
+  "rate": 0.11382734912146678,
+  "ci": [
+   0.1022229737336528,
+   0.1265633462034397
+  ],
+  "width": 0.024340372469786903
+ },
+ "bootstrap_over_units_no_clusters": {
+  "draws": 10000,
+  "ci": [
+   0.10198624904507257,
+   0.12605042016806722
+  ],
+  "width": 0.02406417112299465
+ },
+ "bootstrap_over_handles_key1": {
+  "draws": 10000,
+  "ci": [
+   0.0998109640831758,
+   0.12890922959572845
+  ],
+  "width": 0.02909826551255265,
+  "mean": 0.11392754781810241
+ },
+ "bootstrap_over_handles_key2_sensitivity": {
+  "draws": 10000,
+  "ci": [
+   0.099657664511221,
+   0.1288888888888889
+  ],
+  "width": 0.029231224377667883,
+  "mean": 0.11381060237445673
+ },
+ "n_handles_key1": 2038,
+ "n_handles_key2": 2034,
+ "m_kish_key1": 2.7463712757830403,
+ "m_kish_key2": 2.7608861726508787,
+ "rho_anova_key1": 0.7930228584192184,
+ "rho_anova_key2": 0.8026871167178578,
+ "deff_measured_cluster_vs_unit_bootstrap": 1.4621515542535497,
+ "deff_cluster_bootstrap_vs_wilson": 1.429156422099812,
+ "deff_from_anova_rho_key1": 2.384912340982684,
+ "seed": 20260811,
+ "note": "The design effect that carries any restatement of an interval is deff_measured_cluster_vs_unit_bootstrap: both terms are bootstraps of the same data under the same resampling, differing only in whether the handle is the resampling unit. The ANOVA figure is reported beside it and is not used, for the reason in this file's docstring."
+}

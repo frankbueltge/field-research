@@ -1,0 +1,287 @@
+{
+ "run": "ledger/run-2026-08-11T1124Z.json",
+ "run_id": "2026-08-11T11:24:01Z",
+ "run_utc_start": "2026-08-11T11:24:06Z",
+ "excluded": {
+  "arm_B_truncated": 249,
+  "indeterminate": 33,
+  "not_19_digit": 4,
+  "nonpositive_age": 0
+ },
+ "grouping_key_fidelity_P1": {
+  "n_checked": 2301,
+  "n_agree": 2141,
+  "agreement": 0.930465015210778,
+  "examples_of_disagreement": [
+   {
+    "vid": "6667828076543610113",
+    "cited": "bad__boy0504",
+    "returned": "keijiro_yagami_official"
+   },
+   {
+    "vid": "6737847849150582017",
+    "cited": "taco_sakura",
+    "returned": "ayakisakura_official"
+   },
+   {
+    "vid": "6737848175693974785",
+    "cited": "taco_sakura",
+    "returned": "ayakisakura_official"
+   },
+   {
+    "vid": "6738012436168854790",
+    "cited": "mayurrughoo3",
+    "returned": "mayur.rughoo33"
+   },
+   {
+    "vid": "6771958244643523845",
+    "cited": "lifeminutetv",
+    "returned": "cvlqyirm"
+   },
+   {
+    "vid": "6800110001219276038",
+    "cited": "macdaddyz",
+    "returned": "gregdahll"
+   },
+   {
+    "vid": "6824511828706577670",
+    "cited": "melissaong69420",
+    "returned": "sailormel69420"
+   },
+   {
+    "vid": "6869014285880659202",
+    "cited": "tyla_",
+    "returned": "hernametyla"
+   },
+   {
+    "vid": "6888013200898542854",
+    "cited": "larrayeeee",
+    "returned": "larrayxo"
+   },
+   {
+    "vid": "6891718546246651138",
+    "cited": "joshuaadzz",
+    "returned": "akwafl0w"
+   },
+   {
+    "vid": "6901709683568938245",
+    "cited": "daexo",
+    "returned": "_daexo"
+   },
+   {
+    "vid": "6904356847864581381",
+    "cited": "tatemcrae1",
+    "returned": "tatemcrae"
+   },
+   {
+    "vid": "6911406868699073798",
+    "cited": "fredziownik_art",
+    "returned": "franekbielak_art"
+   },
+   {
+    "vid": "6917688976925052165",
+    "cited": "tatemcrae1",
+    "returned": "tatemcrae"
+   },
+   {
+    "vid": "6921472314706054406",
+    "cited": "its.kels",
+    "returned": "kelsxsea"
+   },
+   {
+    "vid": "6927720974188039429",
+    "cited": "_carsongang_",
+    "returned": "_dailysmiles_"
+   },
+   {
+    "vid": "6960627645918825734",
+    "cited": "oliviaaddamsmusic",
+    "returned": "oliviaaddams"
+   },
+   {
+    "vid": "6961803258344082694",
+    "cited": "oliviaaddamsmusic",
+    "returned": "oliviaaddams"
+   },
+   {
+    "vid": "6969628786627284229",
+    "cited": "tatemcrae1",
+    "returned": "tatemcrae"
+   },
+   {
+    "vid": "6975733485306727681",
+    "cited": "bambamxabyss",
+    "returned": "bambamxbammie"
+   },
+   {
+    "vid": "6977016155269565697",
+    "cited": "bambamxabyss",
+    "returned": "bambamxbammie"
+   },
+   {
+    "vid": "6982680092010974470",
+    "cited": "lityway44",
+    "returned": "lityway"
+   },
+   {
+    "vid": "6999119251332205830",
+    "cited": "andrewkwon_official",
+    "returned": "andrew_kwon"
+   },
+   {
+    "vid": "7004222756648750341",
+    "cited": "adamtheflop",
+    "returned": "adambarrera"
+   },
+   {
+    "vid": "7004772856261315841",
+    "cited": "bambamxabyss",
+    "returned": "bambamxbammie"
+   }
+  ]
+ },
+ "n_units": 2618,
+ "n_handles": 2038,
+ "m_kish": 2.7463712757830403,
+ "handle_size_histogram": {
+  "1": 1784,
+  "2": 152,
+  "3": 42,
+  "4": 24,
+  "5": 12,
+  "6": 7,
+  "7": 5,
+  "8": 3,
+  "10": 3,
+  "11": 1,
+  "13": 1,
+  "14": 1,
+  "17": 1,
+  "26": 1,
+  "36": 1
+ },
+ "absent": 298,
+ "absence_rate": 0.11382734912146678,
+ "rho_anova": 0.7930228584192184,
+ "deff_kish": 2.384912340982684,
+ "null1_constant_rate": {
+  "observed_rho": 0.7930228584192184,
+  "draws": 10000,
+  "null_mean": -0.0003249906666837852,
+  "null_p95": 0.12963481574010982,
+  "null_max": 0.30858692158435447,
+  "n_ge_observed": 0,
+  "p_value": 9.999000099990002e-05
+ },
+ "null2_age_arm_conditional": {
+  "observed_rho": 0.7930228584192184,
+  "draws": 10000,
+  "null_mean": 0.04197517157503159,
+  "null_p95": 0.1670924295754318,
+  "null_max": 0.30106587999707746,
+  "n_ge_observed": 0,
+  "p_value": 9.999000099990002e-05
+ },
+ "concordance": {
+  "pairs": 2286,
+  "both_absent": 47,
+  "exactly_one_absent": 60,
+  "p_both": 0.020559930008748905
+ },
+ "all_gone": {
+  "absent_total": 298,
+  "absent_in_multi_handles": 67,
+  "absent_in_all_gone_handles": 43,
+  "share_of_multi_absent_in_all_gone": 0.6417910447761194,
+  "handles_multi": 254,
+  "handles_all_gone": 18
+ },
+ "interval_naive_video_unit": {
+  "n": 2618,
+  "absent": 298,
+  "rate": 0.11382734912146678,
+  "ci": [
+   0.1022229737336528,
+   0.1265633462034397
+  ],
+  "width": 0.024340372469786903
+ },
+ "interval_corrected_for_clustering": {
+  "n_eff": 1097,
+  "ci": [
+   0.0963650634070886,
+   0.13398478466843064
+  ],
+  "width": 0.03761972126134204
+ },
+ "per_arm": {
+  "A": {
+   "n": 2171,
+   "absent": 232,
+   "handles": 1645,
+   "m_kish": 3.0211883924458776,
+   "rho": 0.7688084576673787,
+   "deff": 2.5539067306515237
+  },
+  "B": {
+   "n": 447,
+   "absent": 66,
+   "handles": 399,
+   "m_kish": 1.3534675615212528,
+   "rho": 0.9174748473191042,
+   "deff": 1.3242975970389674
+  }
+ },
+ "cell_rates_used_for_null2": {
+  "A|0-1y": {
+   "p": 0.041666666666666664,
+   "n": 288
+  },
+  "A|1-2y": {
+   "p": 0.06326530612244897,
+   "n": 490
+  },
+  "A|2-3y": {
+   "p": 0.09473684210526316,
+   "n": 475
+  },
+  "A|3-4y": {
+   "p": 0.14690721649484537,
+   "n": 388
+  },
+  "A|4-5y": {
+   "p": 0.1519434628975265,
+   "n": 283
+  },
+  "A|5y+": {
+   "p": 0.17813765182186234,
+   "n": 247
+  },
+  "B|0-1y": {
+   "p": 0.04081632653061224,
+   "n": 49
+  },
+  "B|1-2y": {
+   "p": 0.15384615384615385,
+   "n": 52
+  },
+  "B|2-3y": {
+   "p": 0.1368421052631579,
+   "n": 95
+  },
+  "B|3-4y": {
+   "p": 0.19491525423728814,
+   "n": 118
+  },
+  "B|4-5y": {
+   "p": 0.1518987341772152,
+   "n": 79
+  },
+  "B|5y+": {
+   "p": 0.14814814814814814,
+   "n": 54
+  }
+ },
+ "seed": 20260811,
+ "draws_requested": 10000
+}
