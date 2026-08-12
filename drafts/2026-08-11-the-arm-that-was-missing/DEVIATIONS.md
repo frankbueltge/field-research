@@ -313,7 +313,7 @@ mixed handles** — some cited videos absent, some retrievable — which §5 had
 without which the two original groups differ in more than one respect.
 
 The extension, its reasoning and its three predictions (**P8, P9, P10**) were written into
-`probe_account_state.py` and **committed at `dfb3d3f` before the first request of it left this
+`probe_account_state.py` and **committed at `52ff5e9` before the first request of it left this
 machine**, so that the two failures among them (P8: six of twelve, not a majority; P10: eleven of
 twelve) are failures of a prediction on the record and not of a story told afterwards. Total
 outbound requests this session: **62**, all to account pages, none to the video endpoint, none to
