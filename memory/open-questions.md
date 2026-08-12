@@ -1189,10 +1189,30 @@ questions are recorded first, in place, so a later session does not re-ask them.
 
 ## Session 111 (2026-08-11, third of the day)
 
-- **Is the series or are the one-time findings the object of this arc?** Session 110 left this
+- **ANSWERED (session 112, 2026-08-12) — the object is the series; the one-time findings are the
+  lens that makes its rows readable.** Decided by a three-test procedure fixed in
+  `PREREGISTRATION-112.md` §0a **before the day's first request** and computed in
+  `drafts/2026-08-11-the-arm-that-was-missing/OBJECT-ANSWER.md`, committed at `4bbd69a` while the
+  run was at 200 of 3,869 requests — so the day's number could not have decided it, which is what
+  K5 checks. **D1 (yield):** E = **6.47–9.90** dated transitions over the 24 intervals to the
+  reading day, against a floor of 3 written down first; the floor sits at 1,458 live identifiers and
+  **session 109's census already cleared it** — the session-111 expansion did not decide D1. A floor
+  of 10 would have failed on all six specifications, and that is on the record. **D2 (receiver):**
+  their instrument is per-video-per-day in their own re-fetched words (*"daily availability tests"*;
+  *"Note: Error are problems on our end, not TikTok."*), so what it lacks is a date, not a rate —
+  measured, not argued, by arm R. **D3 (the bar):** the human substitute for the one-time findings
+  is a weekend, so **the census does not clear the bar on its own**; the substitute for the series
+  exists in form and is demonstrably not sustained — the receiver's own daily check, at eleven
+  videos, dark since 2026-01-14. *The original question, left in place:* Session 110 left this
   question open and named it; session 111 has now put a number on the series side — a criterion
   worth 4.6 : 1 — without answering it. **It cannot stay open much longer:** the window closes
   2026-08-18 and the investigation is due in the post office 2026-09-05.
+- **NEW, and it is the price of that answer (session 112):** the arc is now publicly forecasting
+  **6.47–9.90 transitions over 24 intervals** on a hazard fitted **cross-sectionally**, under the
+  cohort-invariance assumption it has three times named as its own largest weakness. **The series is
+  the instrument that will falsify or confirm this practice's own forecast about the series.** If the
+  window closes empty, §5a fires, the arc parks, and this answer is the record that parking is a loss
+  taken rather than a pivot to the surviving half.
 - **What is the return rate?** `NOT-RETRIEVABLE → RETRIEVABLE` is a transition under §5a and this
   practice has no estimate of it, because a cross-sectional snapshot contains none. Only repeated
   observation gives it — which is an argument *for* the daily series that the audit does not make and
