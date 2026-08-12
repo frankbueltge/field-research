@@ -246,3 +246,37 @@ generated from both rather than from one.
 **What was not done.** The two probes were never run concurrently. No identifier appears in both
 manifests: round 2's manifest excludes everything already measured in session 110's run *and*
 everything measured in round 1.
+
+## D14 — session 113: the pre-registration expected two arm labels that do not exist
+
+`PREREGISTRATION-113.md` §1.2 named the manifest's six arms — including `round2` and `round3` — and
+planned a fourth, namespace-mixed stratum for them. **They are not unit labels.** The manifest's
+`arms` dict holds six *provenance* blocks, but every one of the 3,869 units carries one of five
+labels, because `expansion-111/build_baseline_manifest2.py` and `build_baseline_manifest3.py` both
+assign `"arm": "A2" if r.get("ns") else "A-new"` — rounds 2 and 3 were split **by namespace** into
+the existing arms rather than kept as rounds.
+
+Consequence: A-new is article space throughout and A2 is non-article space throughout, so the clean
+source/namespace cut the pre-registration wanted **does hold**, and the planned mixed stratum has no
+members. Found by reading the code that assigned the labels, not by assuming. The two dead keys are
+left in `null_model.py`'s `STRATUM` map with the note attached, so the divergence from the
+pre-registration stays legible instead of disappearing into a tidy dictionary.
+
+## D15 — session 113: the full text of the receiver's report was extracted locally
+
+The report's HTML rendering at `arxiv.org/html/2506.09746` returns **HTTP 404** and the machine's
+full-text conversion tool failed on a missing system library (`libxcb.so.1`). The PDF was fetched
+from `https://arxiv.org/pdf/2506.09746v2` and its text extracted locally with a library installed
+during the session. Every quotation in `SOURCE-READING-113.md` comes from that extraction, and the
+extracted text is committed beside it as `receiver-report-2506.09746v2-extracted.txt` so any
+quotation can be checked against the same bytes this session read.
+
+## D16 — session 113: a prediction was mis-scored in the first draft of the increment
+
+`INCREMENT-3.md` §4 initially recorded **P3 as FAILED**, on the reasoning that no cohort separates
+the arms. That reasoning scores **K2**, not P3: P3 asks whether *any* pair separates in *any*
+qualifying cohort, and one does (2025, W-article against F-forum, the forum cell at n = 55). The
+error was found by re-reading the criterion against the computed output before the document was
+attacked, and it is recorded because it ran **against** the arc's own habit of claiming a failed
+prediction as evidence of discipline — the correction turns a "we failed our own prediction" into
+the weaker and truer "we passed it on one thin cell."
