@@ -1,0 +1,177 @@
+{
+ "session": 116,
+ "no_new_requests": true,
+ "reproducing": [
+  "INTERLOCUTOR-8 C1, C1b, C2",
+  "SPECIALIST-crossed-116 \u00a73b, \u00a74, \u00a75"
+ ],
+ "C1_page_signal_concentration_day3": {
+  "total_signed": 188.4957722161687,
+  "total_absolute": 231.80072196361624,
+  "components_with_nonzero_contribution": 170,
+  "herfindahl": 0.4916432562731273,
+  "effective_clusters": 2.0339951524616464,
+  "largest_contributor_units": 22,
+  "largest_share_of_absolute": 0.6989985047176025,
+  "largest_share_of_signed_total": 0.8595861654616469
+ },
+ "C1_account_signal_concentration_day3": {
+  "total_signed": 39.85896673677592,
+  "total_absolute": 50.732543655042804,
+  "components_with_nonzero_contribution": 145,
+  "herfindahl": 0.05320223084624936,
+  "effective_clusters": 18.79620429620571,
+  "largest_contributor_units": 8,
+  "largest_share_of_absolute": 0.15208814282246336,
+  "largest_share_of_signed_total": 0.19357798199108858
+ },
+ "S4_jackknife_day3": {
+  "sigma2_P": {
+   "n_deletions": 2394,
+   "jackknife_se": 0.04066761511698729,
+   "pseudo_mean": 0.040193192776172934,
+   "ci95_about_full": [
+    -0.03951606477699829,
+    0.11989805719327501
+   ],
+   "full_sample": 0.04019099620813836,
+   "excludes_zero": false
+  },
+  "deff": {
+   "n_deletions": 2394,
+   "jackknife_se": 0.434294086785736,
+   "pseudo_mean": 1.9160580981937188,
+   "ci95_about_full": [
+    1.0648658803545392,
+    2.767267418351553
+   ],
+   "full_sample": 1.916066649353046,
+   "excludes_zero": true
+  }
+ },
+ "C1_page_signal_concentration_day2": {
+  "total_signed": 213.00924782629934,
+  "total_absolute": 254.43455621301734,
+  "components_with_nonzero_contribution": 168,
+  "herfindahl": 0.5277947805401557,
+  "effective_clusters": 1.8946758036837348,
+  "largest_contributor_units": 23,
+  "largest_share_of_absolute": 0.7246005879177096,
+  "largest_share_of_signed_total": 0.8655184265467902
+ },
+ "C1_account_signal_concentration_day2": {
+  "total_signed": 39.69609780429373,
+  "total_absolute": 50.567092923859455,
+  "components_with_nonzero_contribution": 147,
+  "herfindahl": 0.05355289553872799,
+  "effective_clusters": 18.67312663377515,
+  "largest_contributor_units": 8,
+  "largest_share_of_absolute": 0.1528511402223196,
+  "largest_share_of_signed_total": 0.19471026722187978
+ },
+ "S4_jackknife_day2": {
+  "sigma2_P": {
+   "n_deletions": 2402,
+   "jackknife_se": 0.04595577216741331,
+   "pseudo_mean": 0.04598841764708435,
+   "ci95_about_full": [
+    -0.0440852058841778,
+    0.13605811081781316
+   ],
+   "full_sample": 0.04598645246681768,
+   "excludes_zero": false
+  },
+  "deff": {
+   "n_deletions": 2402,
+   "jackknife_se": 0.4971661222952142,
+   "pseudo_mean": 1.989183933832664,
+   "ci95_about_full": [
+    1.0147664778955852,
+    2.9636218664170357
+   ],
+   "full_sample": 1.9891941721563104,
+   "excludes_zero": true
+  }
+ },
+ "C1b_excess_deff_carried_by_heaviest_article": {
+  "deff_with": 1.916066649353046,
+  "deff_without": 1.4921115165861072,
+  "excess_with": 0.916066649353046,
+  "excess_without": 0.4921115165861072,
+  "share_of_excess": 0.4627994404843237,
+  "article_units": 22,
+  "article_share_of_population": 0.006164191650322219
+ },
+ "C2_sigma2_AP_intervals": {
+  "day3": {
+   "lo95": -0.13510682870399063,
+   "hi95": 0.00721967600024308,
+   "median": -0.0336232840673574,
+   "n_draws_used": 10000,
+   "excludes_zero": false
+  },
+  "day2": {
+   "lo95": -0.14697291956382869,
+   "hi95": 0.00690931558250746,
+   "median": -0.03851351115692468,
+   "n_draws_used": 10000,
+   "excludes_zero": false
+  }
+ },
+ "S3b_pooled_versus_arm_specific": {
+  "pooled_applied_to_every_row": 1.9899863072561084,
+  "arms": {
+   "encyclopedia (article only)": 2.3514504755318844,
+   "encyclopedia (article + other namespaces)": 2.092758032970466,
+   "forum": 1.3333197872078404
+  },
+  "article_interval_too_narrow_by": 1.087033364437542,
+  "forum_interval_too_wide_by": 1.2216811751377783
+ },
+ "S5_gap_component_bootstrap_day2": {
+  "run": "ledger/run-2026-08-12T0341Z.json",
+  "units": 3575,
+  "components": 2402,
+  "components_spanning_both_strata": 9,
+  "encyclopedia": [
+   2759,
+   3126
+  ],
+  "forum": [
+   384,
+   449
+  ],
+  "gap_pp_on_this_run": 2.736371577130947,
+  "ci95_pp_component_bootstrap": [
+   -1.3530504736412818,
+   6.8993342339645825
+  ],
+  "excludes_0": false,
+  "draws": 10000,
+  "seed": 811611,
+  "note": "this is the gap ON THIS RUN, not the published 3.9605 pp of INCREMENT-1 \u00a77, which was measured on session 110's run; the point of the check is the interval's width and sign, not the centre"
+ },
+ "S5_gap_component_bootstrap_day3": {
+  "run": "ledger/run-2026-08-13T0427Z.json",
+  "units": 3569,
+  "components": 2394,
+  "components_spanning_both_strata": 9,
+  "encyclopedia": [
+   2754,
+   3122
+  ],
+  "forum": [
+   381,
+   447
+  ],
+  "gap_pp_on_this_run": 2.977784847950682,
+  "ci95_pp_component_bootstrap": [
+   -1.0405704553223427,
+   7.190973289697067
+  ],
+  "excludes_0": false,
+  "draws": 10000,
+  "seed": 811612,
+  "note": "this is the gap ON THIS RUN, not the published 3.9605 pp of INCREMENT-1 \u00a77, which was measured on session 110's run; the point of the check is the interval's width and sign, not the centre"
+ }
+}

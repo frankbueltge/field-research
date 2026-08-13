@@ -96,9 +96,12 @@ legitimate one-way key and their design effect bounds the crossed one from above
 which is what a correct crossed estimate should do.
 
 That also answers **P6**, which predicted a giant component holding more than half the units and a
-correspondingly weak bootstrap. **P6 fails, in this arc's favour**: the graph is shattered, so
-resampling components is a well-powered scheme, and it is the resampling used for every interval
-below.
+correspondingly weak bootstrap. **P6 fails**: the graph is shattered, and components are the
+resampling unit for every interval below. *The first version of this paragraph concluded from that
+"so resampling components is a well-powered scheme". It does not follow and it is not true here:
+P6 measures how the **units** are spread, and what determines the interval is how the **statistic**
+is spread. §10 measures that instead and finds about two effective clusters. The sentence is
+withdrawn.*
 
 ## 3. The variance components, and the one that is out of range
 
@@ -108,21 +111,27 @@ Day 3, from `crossed-116.json`:
 |---|---|---|
 | `sigma2_A` (account) | 0.02818880 | [0.01320801, 0.05129949] |
 | `sigma2_P` (page) | 0.04019100 | [0.00218773, 0.13390395] |
-| `sigma2_AP` (interaction) | **−0.03991248** | — |
+| `sigma2_AP` (interaction) | **−0.03991248** | **[−0.13511, 0.00722]** — includes zero |
 | `sigma2_total` = p(1−p) | 0.10681548 | — |
 | crossed DEFF | 1.9161 | [1.3482, 2.7839] |
 
 **`sigma2_A` is clearly positive and its interval excludes zero — K1 does not fire.** The account
 effect this arc has built three sessions on survives controlling for the page. **`sigma2_P` is
-positive and its interval excludes zero — P2 holds.**
+positive and its percentile-bootstrap interval excludes zero — P2 holds as pre-registered, and §10
+withdraws it as evidence**: a delete-one-component jackknife on the same partition puts it at
+[−0.0395, 0.1199], and the interval is identified by about **two** effective clusters.
 
-**The interaction estimate is negative, and a variance cannot be.** This is the classic
-out-of-range moment estimate, and it is not cosmetic: it says that pairs sharing *both* an account
-and a page co-vary at 0.0285 — about the same as pairs sharing only an account — rather than at the
-0.0684 an additive model predicts. **The two effects are substitutes at the cell level, not
-additive.** So the strictly additive model is wrong in a way this data can see, and the
-decomposition in the table above is read as **descriptive** rather than as an estimated
-variance structure. The design effect is unaffected, because it is the model-free quantity of §2.
+**The interaction estimate is negative, and a variance cannot be.** It says that pairs sharing
+*both* an account and a page co-vary at 0.0285 — about the same as pairs sharing only an account —
+rather than at the 0.0684 an additive model predicts. **But its own bootstrap interval includes
+zero**, so the honest reading is the standard one for a small negative moment-based variance
+component: sampling noise around a value at or near the boundary, not a demonstrated substitution
+effect (Thompson, *The Problem of Negative Estimates of Variance Components*, Ann. Math. Statist.
+33(1), 1962, https://projecteuclid.org/euclid.aoms/1177704731). *The first version of this section
+printed an em-dash in that row, where this session's own file held the interval; corrected after
+the gauntlet.* Either way the strictly additive model is not supported, the decomposition above is
+read as **descriptive**, and the design effect is unaffected because it is the quantity of §2 that
+never references the component's sign.
 
 ## 4. What it costs — the 36 intervals, again
 
@@ -130,12 +139,25 @@ The pre-registration committed, before the number was known: *if `DEFF_crossed >
 the 36 intervals restated this morning are recomputed at the crossed value tonight, as a dated
 addendum, never a silent edit.* The clause fires. `addendum_116.py` → `addendum-116.json`:
 
+**The design effect applied is 1.9900** — the day-2 population, with the same `K/(K−1)`
+finite-cluster factor the published 1.4289 carries. The exact three-route identity of §2 is proved
+at the *no-factor* value, **1.9892**; the two differ by 0.0008 and the correction uses the one that
+matches the published convention. *The first version of this section gave the multipliers without
+naming which of the two they came from; corrected after the gauntlet.*
+
 - **36 intervals recomputed.** All 36 **reproduce** this morning's account-key restatement from
-  their own k and n before the new value is applied.
+  their own k and n before the new value is applied. **That is a check that the inputs were carried
+  across correctly, not an independent corroboration of the arithmetic** — both scripts call the
+  same Wilson implementation. The independent corroboration is the adversary's, which re-derived the
+  formula itself and confirmed sampled rows including both extremes below.
 - **36 are wider again. No centre moved** — the point estimate is consistent under clustering
   whatever the design effect; only precision is lost.
 - Half-width multiplier on the published naive intervals: **1.1954 → 1.4107**, a **further ×1.1801**
   on top of this morning's correction.
+- **One pooled value over heterogeneous strata, quantified rather than merely disclaimed:** this
+  session's own arm-specific crossed design effects are 2.3515 (article) and 1.3333 (forum), so the
+  article rows are **×1.0870 too narrow** and the forum rows **×1.2217 too wide** at the pooled
+  1.9900 (`discharge-116.json`).
 - Largest further widening ×1.2145 (`POWER-AUDIT §2`, cohort 2026); smallest ×1.0454
   (`RESULT.md`, census by decoded creation year 1971) — small cells widen least because a Wilson
   interval on a handful of units is already dominated by its own boundary.
@@ -190,8 +212,11 @@ Removing it entirely:
 
 **P3 fails.** The prediction was that `sigma2_P` would stay positive but its interval would include
 zero — that the page effect would prove unestablished without that one article. It does not include
-zero. The article accounts for **83.99 %** of the page variance component (`derived-116.json`) and
-the remainder is still distinguishable from zero; the crossed design effect without it (1.4921) is
+zero. The article accounts for **83.99 %** of the page variance component (`derived-116.json`) — and,
+the number this section did not state until the gauntlet derived it from the table itself, **46.3 %
+of the entire excess of the crossed design effect over 1**, on **0.62 %** of the population
+(`discharge-116.json`). The remainder is still distinguishable from zero under the percentile
+bootstrap and not under the jackknife (§10); the crossed design effect without it (1.4921) is
 still above
 the account-only figure (1.4216). **The page effect is dominated by one article and is not created
 by it.**
@@ -227,14 +252,20 @@ Pre-registered at `ef89178`, before any of the above was computed.
 | P3 | without the heaviest page, `sigma2_P` interval includes zero | **fails** — [0.0010, 0.0184] |
 | P4 | crossed DEFF < 1.8854, the page-only figure | **fails** — 1.9161, above both keys |
 | P5 | routes 1 and 2 agree within 0.20 | **vacuous** — they are the same estimator (§2) |
-| P6 | a giant component holding > 50 % of units | **fails** — largest is 1.8 % |
+| P6 | a giant component holding > 50 % of units | **fails** — largest is 1.8 %, and §10 shows the prediction was aimed at the wrong quantity |
 | P7 | day-2 and day-3 crossed DEFFs differ by < 0.15 | **holds** — 0.0731 |
 
-Three hold, three fail, one should never have been written. **No kill criterion fires.** K1 does
-not (`sigma2_A` positive), K2 does not (the two-way variance is positive, DEFF 1.92), K3 does not
-(**100.00 %** of the day-3 analysis population is attributed to a citing page — the crossed subset
-is the population, not a slice of it), K4 does not (the crossed DEFF exceeds the account-only one,
-so the lower-bound framing is confirmed rather than refuted), K5 does not.
+Three hold, three fail, one should never have been written — and **P2's hold is withdrawn as
+evidence in §10**, because the criterion it met is met at about two effective clusters.
+
+**No kill criterion fires.** K1 does not (`sigma2_A` positive), K2 does not (the two-way variance is
+positive, DEFF 1.92), K3 does not (**100.00 %** of the day-3 analysis population is attributed to a
+citing page — the crossed subset is the population, not a slice of it), K4 does not (the crossed
+DEFF exceeds the account-only one, so the lower-bound framing is confirmed rather than refuted).
+**K5 is retracted, not passed:** it asked whether routes 1 and 2 differ by more than 0.50, and they
+are the same estimator, so it could no more fire than P5 could fail. The session caught that defect
+in its prediction and then recorded the identical defect in its kill criterion as though it were
+informative. *Corrected after the gauntlet, which found it.*
 
 **P4's failure is the session's finding**, and it was predicted the wrong way round: the arc
 expected the page key to over-state because it absorbs account structure, and the opposite is true —
@@ -269,6 +300,16 @@ Three for three, on documents the script never saw while it was being written. T
 39, 28 and 37 lines long — short enough to work through, which is the only property that matters
 for a check that has to be run every time.
 
+**And a fourth, live, the same night — which is better evidence than the three above and was left
+out of the first version of this section.** Run on `RESTATEMENT-2026-08-13.md`, the document
+published this morning, pass 1 audits 440 numbers and finds 29 with no machine-written provenance in
+this draft. Four of them belong to one claim: the handle drift's design effect is printed as
+**1.9492 on 2,374 accounts** where this practice's own `discharge-115.json` says **1.9457 on 2,377**.
+The printed figures are the adversary's from `INTERLOCUTOR-7.md`. The reproduction had been run; the
+transcription did not use it. Published as §9 of that document, dated, as a correction rather than
+an edit. The remaining 25 are quoted bounds from the same adversary report and outside sources, and
+are filed for disposition.
+
 This document was run through both passes before it was committed; the dispositions are in the
 session record.
 
@@ -301,3 +342,61 @@ report rather than the one it would prefer.
   1.4289 was applied uniformly, and the same approximation.
 - **Nothing here is a measurement of the platform.** No request left this machine tonight. Days 4
   through 7 of the window are unaffected and unmodified.
+
+## 10. The gauntlet, and what it took off this document
+
+*Added after `INTERLOCUTOR-8.md` (**STANDS WITH CONDITIONS ×5**, run on version 1 at `315d284`) and
+`SPECIALIST-crossed-116.md` (**sound with stated qualifications**). All five conditions and every
+qualification are discharged in `CONDITIONS-DISCHARGED-116.md`, in the same session, with every
+figure recomputed here first (`discharge_116.py` → `discharge-116.json`). The corrections above are
+marked where they were made.*
+
+**The finding that costs this session most, and our own version of it is worse than the
+adversary's.** The component bootstrap was called well-powered because the graph is shattered —
+2,394 components, largest 1.8 % of units. That measures unit share, not where the *statistic* lives.
+Decomposing the same-page signal the bootstrap actually resamples:
+
+| | day 3 | day 2 |
+|---|---|---|
+| components contributing at all | 170 | 168 |
+| **effective clusters (1/Herfindahl)** | **2.03** | **1.89** |
+| largest contributor's share of the signed total | **86.0 %** | 86.6 % |
+| effective clusters, account signal | 18.80 | 18.67 |
+
+The adversary's own measure read ≈3.4 and 53.4 %; **ours reads 2.03 and 86.0 %.** And a
+delete-one-component jackknife — deterministic, no seed, the same partition — puts `sigma2_P` at
+**[−0.0395, 0.1199]** on day 3 and **[−0.0441, 0.1361]** on day 2: **zero is inside both.**
+
+**So P2 is withdrawn as evidence.** It holds exactly as pre-registered and it was met by an
+estimator that cannot be trusted at two effective clusters. What survives is narrower and should
+have been the claim from the start: **the crossed design effect is a description of how this corpus
+clumped on these two days, dominated by one article, and not an established property of the
+population.** The crossed design effect's own jackknife interval reaches **1.0148** on day 2 — it
+does not comfortably exclude the possibility of no clustering at all.
+
+**What that does and does not change.** The 36 intervals stay widened: a design effect estimated
+from the sample is what a design-effect correction always uses, the direction is conservative for
+every row but the forum arm, and a correction that may be too large is a different failure from one
+that is too small. But the session's own uncertainty is not propagated into those 36 intervals, and
+that omission is the textbook cause of undercoverage in exactly this construction (Franco, Little,
+Louis & Slud, https://math.umd.edu/~slud/s770/SurveyConfidenceIntervals/JSSAM-2017-065-FINAL.pdf).
+
+**And the P6 withdrawal survives in a stronger form than the one published above.** The specialist
+proposed, and this session built, the check the `sqrt(DEFF)` route never had: the gap bootstrapped
+**directly over components, with no design effect anywhere in the computation.** On this arc's own
+runs — encyclopedia arm as `W-article` + `W-other-ns`, 9 of 2,402 components spanning both strata —
+the interval is **[−1.3531, 6.8993] pp (day 2)** and **[−1.0406, 7.1910] pp (day 3)**. Zero is inside
+both. The centres (2.7364 and 2.9778 pp) are **not** the published 3.9605 pp, which was measured on
+session 110's run and a differently drawn arm, so this is not offered as a restatement of that
+figure — only as the strongest available form of its withdrawal.
+
+**Owed and not done tonight.** The Mantel–Haenszel odds ratio is the one surviving derived finding
+of this arc and the only correction here that has never been checked against anything: its interval
+is the published standard error inflated by `sqrt(DEFF)`, and it should be bootstrapped directly
+over components instead. That needs the per-stratum 2×2 tables behind session 111's figure, which
+tonight's aggregates do not carry. Filed in `NEXT-SESSION.md`.
+
+**And the limit neither role could close.** This model treats the account and the citing page as
+exhausting all dependence. Nothing here tests for dependence outside those two keys — a platform-side
+sweep on one day, a shared upload week, a regional pattern — and the component bootstrap is blind to
+any of it by construction.
