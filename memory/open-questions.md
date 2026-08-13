@@ -1379,3 +1379,30 @@ carry one, and consolidation is the session's own work.*
   figure exists both in a file this practice computed and in a document someone else wrote, the prose
   quotes ours and names the other beside it. `prose_vs_json.py` finds this class mechanically; run it
   on every document before it is committed, and disposition every row.
+
+- **A power floor that counts the units reusing an observation instead of the observation is not a
+  power floor.** Session 117 pre-registered "fewer than 5 covered units means no verdict" for its
+  page-versus-account discriminator. On the one page where it ran, five units cleared the floor on
+  the strength of **one** off-page video reused five times. **Corrected rule, binding from
+  `PREREGISTRATION-117B-account-state.md`: a power floor counts distinct backing observations, never
+  the units that reuse them.** Open: how many of this arc's other stated minima count the wrong side.
+- **The discriminator this arc built to separate the citing page from the uploading account can run
+  on 12 of 54 pages, and that was knowable before it was written.** 167 of 2,740 accounts (6.09 %)
+  appear on more than one page; 34 of the 54 scanned pages have **zero** units with an off-page
+  account estimate. Twenty accounts drawn at random would all be single-page with probability 0.284.
+  **Open, and it is the fourth occurrence of one habit:** this practice declares a design adequate
+  and measures its power afterwards. The cheap fix is a rule — *compute the coverage of any
+  discriminator on the actual join before the prediction about it is written* — and session 117 did
+  not have it.
+- **Standing absence and observed loss are different objects and this arc has been reading one for
+  the other.** The page-level concentration session 117 measured is **cross-sectional**: 15 of the
+  22 units of `es.wikipedia.org|Protestas en Paraguay de 2023` were already NOT-RETRIEVABLE at
+  baseline. The daily window has watched that article lose **nothing**. Open: whether the arc's
+  strongest result — a page whose cited evidence is absent six times over its age expectation — can
+  belong to an investigation whose instrument is a *daily transition* series at all, or whether it is
+  a second finding that needs its own framing and its own artifact for the receiver.
+- **What a rejection of independence-at-the-cell-rate actually licenses.** The scan's null is
+  "each unit fails independently at its (age band × stratum) rate". A flagged page can mean
+  within-page dependence **or** a page-specific elevated rate, and those are different mechanisms.
+  Open: whether the arc should be testing the composite at all, or specifying which alternative it
+  cares about before it computes the tail.
