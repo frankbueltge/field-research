@@ -345,3 +345,103 @@ Fetched today per the standing condition on the house's catalogues; not mirrored
 - **It is not retroactive verification.** `INTERLOCUTOR-7.md`'s verdict was run on version 1 at
   commit `4dde327`. **This version has changed since, and anything that ships owes a fresh gauntlet
   on the exact shipped state.**
+
+---
+
+## 8. Addendum — 2026-08-13, session 116: the correction above is itself too small
+
+*Written the same date, in a later session, as a dated addendum. **Nothing above is edited.** Every
+figure in §§1–7 stands as published this morning, and every one of them is reproduced from its own
+`k` and `n` by tonight's code before the new number is applied
+(`addendum_116.py` → `addendum-116.json`: **36 of 36 reproduce**).*
+
+§2 of this document called **1.4289 a lower bound**, because the citing-page key gives 1.8854 on the
+same units and the two had never been carried together. They now have been
+(`crossed_model.py` → `crossed-116.json`, `crossed-116-day2.json`; the reasoning is
+`INCREMENT-6.md`). A model carrying the **account and the citing page at once** gives
+
+    DEFF_crossed = DEFF_account + DEFF_page − DEFF_cell = 1.9892   (day-2 population, K/(K−1) applied: 1.9900)
+
+— **above either key alone**, because two accounts' videos on one page and one account's videos on
+many pages are different dependencies and this corpus has both. The lower bound was a lower bound.
+
+**Consequence, committed in `PREREGISTRATION-116.md` before the number was known.** All 36 intervals
+are recomputed at the crossed design effect in `addendum-116.json`, beside — never instead of — the
+account-key figures above:
+
+| | session 115, account key | session 116, crossed key |
+|---|---|---|
+| design effect | 1.4289 | **1.9900** |
+| half-width multiplier on the published naive interval | ×1.1954 | **×1.4107** |
+| further widening on top of this morning's | — | **×1.1801** |
+| intervals recomputed | 36 | **36** |
+| wider than the interval before it | 36 | **36** |
+| point estimates moved | 0 | **0** |
+
+**And the finding this document reported as wounded is now withdrawn.** §4 above printed the
+encyclopedia-vs-forum gap crossing zero under the pooled correction and clearing it under the
+arm-specific one, and declined to choose. Under the crossed model it crosses zero under **both**
+(`gap-116.json`): pooled z = 1.5553, arm-specific z = 1.8085 (article arm) and 1.8305 (article plus
+other namespaces). The arm-specific route was the last specification in which session 110's **P6**
+cleared zero, and the reason is visible in the arm design effects: the encyclopedia arm is
+**2.3515** crossed against 1.4688 on the account key, because articles cite many accounts each and
+forum threads mostly do not (forum crossed **1.3333**). **P6 is unsupported, not "directionally
+supported".** The direction is not refuted — the cluster bootstrap and the permutation test that
+need no design-effect choice still exclude zero — but no interval this arc can defend does.
+
+**What survives unchanged:** the Mantel–Haenszel odds ratio, **[1.2129, 2.6238]** at the crossed
+design effect, still excluding 1; and the Weibull shape, which carries a parameter-specific design
+effect of 1.27 (`INTERLOCUTOR-7.md`) and is not widened again.
+
+**What this addendum does not claim.** The crossed design effect is measured on the day-2 and day-3
+crossed subsets and applied uniformly to 36 intervals computed on several populations — the same
+approximation §2 made this morning, and labelled the same way. `INCREMENT-6.md` §3 records that the
+model's interaction variance component comes out **negative**, so the additive decomposition is
+descriptive only; the design effect itself does not depend on it, being identical to the model-free
+two-way cluster-robust estimator.
+
+---
+
+## 9. Correction — 2026-08-13, session 116: four figures in §§0, 3f and 7 are the adversary's, not ours
+
+*A dated correction, not an edit. The lines above stand as published; what follows is what a check
+built tonight found in them on its first run.*
+
+`prose_vs_json.py`, written this evening, reads every number in a prose file back against the
+machine-written JSON of this draft. Run on this document it audits **440 numbers and finds 29 that
+occur in no file this draft computed.** Four of them belong to one claim — the handle drift — and
+they are the ones that matter:
+
+| printed above | this practice's own machine file (`discharge-115.json`, key `I10_handle_drift`) |
+|---|---|
+| design effect **1.9492** | **1.9457** |
+| on **2,374** accounts | **2,377** |
+| restated at its own design effect **[6.07, 8.62]** | **[6.096, 8.641]** |
+| implied ρ 0.56 | 0.5577 |
+
+**1.9492 on 2,374 accounts is the adversary's figure**, from `INTERLOCUTOR-7.md` (its condition
+I10, and the paragraph above it). This practice recomputed the same quantity with its own code —
+`discharge_115.py` → `discharge-115.json` — and got 1.9457 on 2,377 accounts, on the day-2 run. The
+reproduction happened; the number that reached the prose was the other party's anyway.
+
+**What does not change.** The drift's design effect is still the highest in this arc, its interval
+still widens, and every conclusion drawn from it stands. The largest discrepancy is 0.035 on a
+design effect and 0.03 pp on an interval bound.
+
+**What does change** is a sentence this house has to stop being able to write. The document above
+says every adversary figure was reproduced here first. That is true of the computation and false of
+the transcription, and the difference between those two is the whole distance between a practice
+that checks and a practice that says it checks. This is the **fourth** consecutive session in which
+a number reached this arc's prose that its own files contradict — 113, 114, 115, and now 115 again,
+found the next session by a script rather than by an adversary.
+
+**Also flagged and dispositioned as legitimate:** `226 / 3,121 = 7.24 %` above is the figure as
+**published** at session 114 (`INCREMENT-4.md` §0.1); `discharge-115.json` recomputes the same
+quantity on the day-2 run and gets `227 / 3,124 = 7.2663 %`. Restating a published figure means
+printing the published one, so that pairing is correct — but the document nowhere says the two
+populations differ, and it should have.
+
+The remaining 25 unmatched numbers of the 29 are the adversary's Wald and Rao–Scott bounds quoted
+in §§4–5 and figures quoted from outside sources. They are transcriptions from a document that is
+published in full beside this one, which is a defensible provenance and a worse one than a file this
+practice wrote. **Dispositioning them one by one is owed work, filed for the next session.**
