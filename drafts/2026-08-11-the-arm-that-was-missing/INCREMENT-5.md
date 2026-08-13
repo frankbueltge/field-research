@@ -69,18 +69,38 @@ absences inside each cell **exactly**, so nothing about a cell's own rate can dr
 | **does it survive holding the account?** | ρ over pages | 0.4611 | 0.4509 | 0.4672 | **0.1418** |
 | **does the account effect survive holding the page?** | ρ over accounts | 0.7912 | 0.6962 | 0.7309 | **0.0001** |
 
-**Read the last two rows together, because they are the finding.** The page effect is real against
-age and against era — and once each account's own absence load is held fixed, **the page adds
-nothing this test can detect** (p = 0.14). The account effect, held against page membership,
-**survives** (p = 0.0001). A design effect and a conditional intra-class correlation are different
-quantities: a coarser grouping can carry a larger design effect while adding no independent
-clustering, because it aggregates the finer one.
+**CORRECTED AFTER THE GAUNTLET — the third row is worthless and the first draft of this section
+leaned on it.** `INTERLOCUTOR-7.md` §3.2 pointed out that a permutation *within accounts* can only
+move units in accounts that are both multi-video and mixed. We measured it rather than argue:
 
-**So session 114's choice of the account key was right, and its adversary was right that the reason
-given was not.** The reason is this table, and it did not exist until tonight. The larger page-key
-design effect stands as published and **the ×1.20 correction is still stated as a lower bound** —
-what changes is that the account is now the grouping with evidence behind it rather than the
-grouping the arc happened to reach for.
+- **2,366 of 2,744 accounts are singletons.** 378 hold more than one video.
+- **Of those 378, 351 are entirely present or entirely absent.** Only **27 accounts are mixed.**
+- **113 of 3,575 units — 3.16 % — can move at all.** The permutation is 96.8 % the identity, which
+  is why the null mean (0.4509) sits almost on the observed value (0.4611).
+- And the part that settles it: **zero of the movable units are inside
+  `es.wikipedia.org|Protestas en Paraguay de 2023`** — the article that carries the entire page
+  effect. The test cannot touch the thing it was pointed at.
+
+**So p = 0.1418 measures the emptiness of the test, not the world, and the sentence this section
+first drew from it — "the page adds nothing" — is withdrawn.** What survives is asymmetric and
+smaller:
+
+> **The account effect is not explained by page membership** (ρ = 0.7912 against a null mean of
+> 0.6962, p = 0.0001) — pages are coarse enough to leave that permutation real room. **Whether the
+> page adds anything beyond the account is not testable on this corpus by this design**, because for
+> two-thirds of it the account partition and the unit are the same thing.
+
+The page effect against age and era (rows one and two) stands: both permutations have full freedom
+and both return p = 0.0001. A design effect and a conditional intra-class correlation remain
+different quantities — a coarser grouping can carry a larger design effect while aggregating a finer
+one — but tonight's test does not establish which is happening here.
+
+**What this means for session 114's choice.** It has **one** piece of evidence behind it, not two:
+the account grouping is not a shadow of the page grouping. The converse is untested, so **the ×1.20
+correction stays stated as a lower bound**, and the claim that the account key is now "the grouping
+with evidence behind it rather than the grouping the arc happened to reach for" is **too strong and
+is withdrawn**. A test with power needs a model carrying both random effects, and that is owed, not
+done.
 
 ### 2b. The article, and the honest version of "it is extreme"
 

@@ -318,3 +318,42 @@ machine**, so that the two failures among them (P8: six of twelve, not a majorit
 twelve) are failures of a prediction on the record and not of a story told afterwards. Total
 outbound requests this session: **62**, all to account pages, none to the video endpoint, none to
 the window population.
+
+## D20 — the day-3 run was killed by an infrastructure restart at 1,600 of 3,869, and lost
+
+*Session 115, 2026-08-13.* The day-3 window run started at **03:40:32Z** from AS396982 (egress
+160.79.106.132) and was killed at **1,600 of 3,869 units, 2,646 seconds in**, by a restart of the
+machine this practice runs on. `ledger.py` wrote its output only after the final unit, so **nothing
+was saved: 2,646 seconds of measurement produced no evidence at all.** No partial data exists, so
+there was nothing to splice and no temptation to.
+
+**What was done.** The run was **restarted whole** at **04:27:00Z** against the same manifest
+(`manifest-day2-onward.json`, 3,869 units) and the same unchanged probe, writing
+`ledger/run-2026-08-13T0427Z.json`. **The two are not spliced and the killed attempt is not a run.**
+
+**What this costs, stated rather than buried.** Day 3's measurement is taken **47 minutes later in
+the UTC day** than days 1 and 2 (03:40Z and 03:41Z). Interval 2 is therefore **1.03 days long, not
+1.00**, and any per-interval rate computed from it inherits that. The vantage's **egress IP changed
+from 160.79.106.132 to 160.79.106.131** across the restart; the autonomous system is unchanged at
+AS396982, which is what K2 keys on, so K2 does not fire — but the IP change is recorded because a
+per-run flagging rule that only watches the AS number would not have seen it.
+
+## D21 — checkpointing added to `ledger.py`: bookkeeping only, probe untouched
+
+*Session 115, 2026-08-13, immediately after D20.* `ledger.py` now dumps its observations so far to
+`<out>.partial` every 100 units.
+
+**Nothing about the probe changes** — same endpoint, same user agent, same 1.0 s delay, same 25 s
+timeout, same classification, same order, same HTTP 429 stop rule. The change is confined to writing
+a file, and session 109's own docstring already states the principle it follows: *"Changing the probe
+between runs would make the runs incomparable, so it is not changed — only the surrounding
+bookkeeping is new."*
+
+**A partial file is never a run.** It carries `"partial": true` and a schema string ending
+`/partial`, and `ledger_diff.py` reads complete runs only. It exists so that a killed run leaves
+evidence of what it saw, which D20 did not.
+
+**Why it is recorded as a deviation anyway:** the window is pre-registered and mid-window changes to
+the instrument's file are exactly the kind of thing a reader should be able to find. This one was
+made **during** day 3, between the killed attempt and the restart, and the restarted run is the first
+to use it.
