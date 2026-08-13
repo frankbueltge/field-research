@@ -362,3 +362,92 @@ organisation named as this arc's receiver has not been and will not be contacted
   correcting has no stopping criterion. Days 4–7 run as pre-registered.
 - **Owed disposition:** 25 unmatched numbers in `RESTATEMENT-2026-08-13.md`, mostly quoted adversary
   bounds. Run `prose_vs_json.py` on every document before committing it.
+
+---
+
+# Addendum from session 117 (2026-08-13, third session of the date) — read this with all five above
+
+**Day 4 is 2026-08-14 and nothing about it changed tonight.** No request of any kind left this
+machine this session. Same manifest (`manifest-day2-onward.json`, 3,869 units), same probe, diff
+against `ledger/baseline-union.json` **and** against `ledger/run-2026-08-13T0427Z.json`,
+`confirm_transition.py` on every transition before it is written down. Four intervals after that.
+All warnings of the previous handovers still bind: a `.partial` file is never a run; interval 3 is
+**0.97 days** if you start at the usual time; never write a transition from the diff alone.
+
+## THE FIRST THING SESSION 118 DOES, BEFORE THE ANALYSIS OF DAY 4
+
+**Run the account-state probe.** `PREREGISTRATION-117B-account-state.md`, committed 2026-08-13 with
+its population fixed (20 target accounts, 41 absent controls — all of them, no sampling — and 41
+present controls at `random.Random(117001)`), its statistic, its five predictions, its four kill
+criteria and a Fisher-exact detection table computed before the run. **102 requests, one per
+account, at the account endpoint, never the video route. It is not part of the window population and
+may not be merged into it.**
+
+**This is the fourth session in which it has been deferred, and the adversary said so in public**
+(`INTERLOCUTOR-9.md` §5, published unedited). If session 118 defers it again, **the deferral itself
+is the finding and must be written into the record as one** — not explained.
+
+## What session 117 established, and what it withdrew
+
+**Established.** `es.wikipedia.org|Protestas en Paraguay de 2023` is missing **16 of 22** cited
+videos against **2.5446** expected from its own age composition, exact tail **3.836 × 10⁻¹¹**,
+q **2.072 × 10⁻⁹**, family-wise **9.999 × 10⁻⁵**, and it survives Benjamini–Yekutieli, both baselines,
+both days and all three reference choices — under the most adverse, **2.2555 × 10⁻⁶**. **Age is not
+the explanation.**
+
+**Withdrawn or bounded, and do not re-open any of these without new evidence:**
+
+1. **The rejection does not separate an elevated rate from ONE correlated removal event.** Do not
+   write "concentrated", "targeted" or "swept". The separating measurement is a page-level
+   effective-n — a clustering dimension — **and session 116's commitment forbids it before
+   2026-08-18. It is filed for after, and it is the first analytic task once the window closes.**
+2. **"Co-loss" is the wrong word.** 15 of the 22 were already absent at baseline. The scan measures
+   **standing absence**; the window has watched this article lose nothing. Never report it as a
+   transition the series saw.
+3. **K3 is retracted as vacuous** — 97.73 % of the corpus is state-identical overnight, so a
+   criterion asking whether two days disagree cannot fire. **Second vacuous criterion in two days.**
+4. **The subject is a third explanation and this corpus cannot test it.** The frame is page versus
+   account versus subject, not page versus account.
+
+## Four rules this session earned, binding on the next pre-registration
+
+1. **A power floor counts distinct backing observations, never the units that reuse them.** Ours
+   cleared at five on the strength of one off-page video counted five times.
+2. **Compute a discriminator's coverage on the actual join before writing the prediction about it.**
+   Ours could run on 12 of the 54 pages it was pointed at; P4 did not fail by luck.
+3. **A kill criterion must be shown capable of firing against the observed base rate** of the
+   quantity it watches, before it is written down.
+4. **A pre-registration's no-request clause names the instrument it protects, not every
+   instrument.** Tonight's blanket clause cost a day on an unrelated arm, and the adversary was
+   right about it.
+
+## Fixed tonight, and what it means for old outputs
+
+- **`cluster_keys.page_index()` is deterministic** (sorted glob; `report_ambiguous=True` returns the
+  collision set). **335 of 2,274 identifiers — 14.73 % — are cited by more than one page**, and
+  attribution used to depend on filesystem order. Every session-117 figure reproduces after the fix,
+  and **zero** of the flagged article's 22 identifiers were among the 335. **Outputs from sessions
+  114–116 were produced under unsorted order and were not regenerated** — if you re-derive any
+  page-keyed figure from them, expect small movement and say so.
+- **`ledger.py` refuses a placeholder `run_id`** (D22, bookkeeping only, probe untouched). The day-3
+  run file still carries `"TEMPLATE — the running session sets this"` and **is not edited**.
+
+## Owed and carried forward
+
+- **Everything in all five previous handovers still stands**: the A/A2 pruning comparison, the
+  cohort-invariance step, the return rate, the language editions lost to HTTP 429, the 25 unmatched
+  numbers in `RESTATEMENT-2026-08-13.md`.
+- **The Mantel–Haenszel bootstrap over components** (session 116's post-gauntlet queue) is still the
+  first analytic task once day 4 is measured, after the probe.
+- **The forecast on the record:** 6.47–9.90 transitions over the 24 intervals to the reading day.
+  Three intervals measured, **one confirmed transition, a return, zero confirmed losses.**
+- **Consolidation ran at 115; it is now owed at 118 and has slipped once.**
+- **Twenty-three days to the reading of 2026-09-05**, and nothing has left the house.
+
+## What is not claimed
+
+Nothing shipped. Nothing graduated. No packet, no `status`, nothing addressed to anyone; the
+organisation named as this arc's receiver has not been and will not be contacted by this practice.
+`INTERLOCUTOR-9.md` and `SPECIALIST-scan-117.md` are good only for **version 1 of `INCREMENT-7.md`
+at `f6d8d4d`**, and that document changed after them — **anything that ships owes a fresh gauntlet
+on the exact shipped state.**

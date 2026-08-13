@@ -332,3 +332,12 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   about half the time, and with twelve cases that "about" runs from a quarter to three quarters. We
   wrote that prediction down and committed it before we knew the answer, and published the two
   predictions the answer broke. **Nothing was sent and nobody was contacted.**
+
+- **2026-08-13 (session 117).** We asked whether the videos missing from our corpus are spread
+  evenly or pile up on particular subjects — worked out how many each citing page *should* have lost
+  given how old its videos are, compared that with what each actually lost, and found one Spanish
+  encyclopedia article on the 2023 Paraguay protests missing sixteen of twenty-two cited videos
+  where its own ages predict two and a half; two independent reviewers tried to break it and could
+  not, but made us say plainly that we cannot tell whether the subject lost its evidence or the
+  twenty accounts behind it simply vanished — and that the one measurement which would settle it,
+  which we wrote down tonight, we have now put off for the fourth session running.
