@@ -272,6 +272,24 @@ for a check that has to be run every time.
 This document was run through both passes before it was committed; the dispositions are in the
 session record.
 
+## 8a. The simplification inside the page key, measured
+
+`cluster_keys.page_index` gives each video **one** citing page — whichever the corpus files yield
+first. That is a partition imposed on a hypergraph, and it can only lose page-level dependence.
+`multipage_116.py` → `multipage-116.json` measures the cost:
+
+- **479 of 3,569 units — 13.42 % — are cited by more than one page**, one of them by 15.
+- Their absence rate is **12.73 %** against the pooled **12.16 %**: multiply-cited videos are not
+  materially more or less likely to be gone.
+- The crossed design effect needs a partition and cannot be recomputed without one. The **component
+  envelope can**, because connectivity does not care how many pages a unit belongs to. Rebuilt over
+  **every** (video, page) edge: **2,394 components → 2,378**, largest 63 → 68 units, envelope
+  **1.9414 → 1.9484**.
+
+So the simplification costs about **0.007** on the envelope. It runs in the direction that makes
+1.9161 an under-statement rather than an over-statement, which is the direction this arc must
+report rather than the one it would prefer.
+
 ## 9. What this does not establish
 
 - **The additive crossed model is wrong** in the way §3 describes, and no attempt is made here to

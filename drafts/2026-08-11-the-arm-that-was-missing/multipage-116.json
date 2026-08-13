@@ -1,0 +1,19 @@
+{
+ "session": 116,
+ "run": "ledger/run-2026-08-13T0427Z.json",
+ "units_in_analysis": 3569,
+ "absent": 434,
+ "units_cited_on_more_than_one_page": 479,
+ "share_multiply_cited": 0.13421126365928832,
+ "max_pages_for_one_unit": 15,
+ "absent_among_multiply_cited": 61,
+ "absence_rate_multiply_cited": 0.12734864300626306,
+ "absence_rate_pooled": 0.12160268982908377,
+ "components_single_membership": 2394,
+ "components_full_membership": 2378,
+ "largest_component_full_membership": 68,
+ "largest_share_full_membership": 0.019052956010086858,
+ "envelope_single_membership": 1.9414419490049106,
+ "envelope_full_membership": 1.9483576376310021,
+ "envelope_difference": 0.006915688626091487
+}
