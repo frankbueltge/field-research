@@ -207,3 +207,54 @@ are gone, the account explanation dies; if they are gone, the page explanation l
 kind leaves this machine tonight** (§2). Amending a pre-registration after seeing its results is
 worth less than one day. It is pre-registered separately at
 `PREREGISTRATION-117B-account-state.md`, dated tonight, to be run alongside day 4.
+
+---
+
+## 10. Addendum, same session, written before either convened role reported
+
+*The Interlocutor and the domain specialist were dispatched against **version 1 of this document at
+`f6d8d4d`**. Both items below were found by this session's own hand while they were working, and
+they are added here rather than folded into the sections above, so the state the roles judged
+remains legible. Any verdict they return is good for version 1 only.*
+
+### 10a. The discriminator is structurally powerless on most of the corpus, not just on this article
+
+§2 reports that the mechanism arm covers 0 of 22 units on the Paraguay article and treats that as a
+fact about the article. **It is not.** Across the 54 scanned pages (`coloss-confound-117.json`):
+
+| | |
+|---|---|
+| scanned pages with **zero** units carrying an off-page account estimate | **34 of 54** |
+| scanned pages clearing the pre-registered floor of 5 covered units | **12 of 54** |
+| accounts in the day-3 population appearing on **two or more** pages | **167 of 2,740 — 6.09 %** |
+| accounts contributing exactly one unit | **2,361 of 2,740 — 86.17 %** |
+
+**Twenty accounts drawn at random from this corpus would all be single-page with probability 0.284.**
+The Paraguay article's coverage of zero is therefore **unremarkable**, and §2's framing — page and
+account "perfectly confounded *for this article*" — reads as a property of the article when it is
+the ordinary condition of the corpus. **The correct statement: the pre-registered discriminator can
+run on 12 of the 54 pages it was pointed at, and prediction P4 did not fail by bad luck. It failed
+because the design was under-powered before it was written, and nobody computed that first.** This
+is the same failure this arc has now named three times — declaring power without measuring where the
+statistic lives — committed here inside the instrument built after that lesson.
+
+### 10b. This arc had already tested this article at the page level, and §1 does not say so
+
+**Session 115 ran a family-wise permutation test over every citing page of ≥ 10 videos**
+(`INCREMENT-5.md` §2b): 14 pages, 282 units, expected **3.46**, observed excess **+13.54**, null
+95th percentile 5.20, largest of 20,000 simulated maxima 12.29, **p = 1/20,001**, seed 20260813 —
+with expectations already built from age-band × arm cells. Session 115 also already published the
+14.9-day posting span, decoded the same way.
+
+**Tonight's scan is a replication and an extension, and §1 above does not say so.** What is actually
+new is narrower than that section implies, and it is this: the family widened from 14 pages to 54;
+the tail is **exact** instead of simulated; the expectation is **leave-one-page-out**, which lowers
+this article's expectation from 3.46 to **2.5446** because session 115's baseline included the
+article in the cells it was measured against; every page gets its own q instead of only the maximum
+being tested; the **detection floor** of §4 is new; the **mechanism arm** of §2 is new and is
+under-powered per §10a; and the **correction of §6.2** — that this is standing absence and not
+something the window watched happen — is new and was owed.
+
+**The claim "no instrument this arc has built can see it", quoted from session 114's gauntlet in the
+opening record of this session's journal, was already out of date when this session quoted it.**
+Session 115 built one the next day. This document was written as though it had not.

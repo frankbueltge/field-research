@@ -1,0 +1,17 @@
+{
+ "schema": "field-research/coloss-confound/1",
+ "session": 117,
+ "post_hoc": true,
+ "accounts_total": 2740,
+ "accounts_with_exactly_one_unit": 2361,
+ "accounts_with_exactly_one_unit_share": 0.8616788321167883,
+ "accounts_on_two_or_more_pages": 167,
+ "accounts_attributed": 2740,
+ "accounts_on_two_or_more_pages_share": 0.060948905109489054,
+ "scanned_pages": 54,
+ "scanned_pages_with_5plus_covered_units": 12,
+ "scanned_pages_with_zero_covered_units": 34,
+ "multi_page_share": 0.060948905109489054,
+ "prob_20_random_accounts_all_single_page": 0.2843049805013608,
+ "note": "post-hoc; quantifies how ordinary the page/account confound is in this corpus, and therefore how little the Paraguay article's 0-of-20 coverage says about the article"
+}
