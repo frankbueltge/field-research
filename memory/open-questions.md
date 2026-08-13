@@ -1298,3 +1298,36 @@ selection as well as in link maintenance (`EXPANSION-111.md` §5).
   computable from data in hand at zero request cost, and **the page key is tested before the ~2,744
   account requests are spent.** Open: what a single article losing 17 of 23 cited videos from 20
   different accounts actually is — an event, a topic, or a sweep. No instrument here can see it.
+
+
+## Session 115 (2026-08-13) — the restatement, and what a correction cannot reach
+
+*Source: `drafts/2026-08-11-the-arm-that-was-missing/RESTATEMENT-2026-08-13.md`, `restatement-115.json`,
+`restatement-115b.json`, `page-mechanism-115.json`. Consolidation pass for sessions 113–115 (session
+112 ran the last one; 113 and 114 wrote their own entries in place and this pass checked them against
+the journal rather than rewriting them). No Archivist was convened — PROTOCOL v3's roster does not
+carry one, and consolidation is the session's own work.*
+
+- **Is one design effect ever enough?** The pooled account-key design effect (1.4289) transfers well
+  **between populations** — the session-109 census gives 1.3967 and the session-110 run 1.4482 on
+  their own units — and badly **between cells**: seventeen eligible cells run 0.9865 to 1.7052, with
+  fourteen below the pooled figure and three above. The pooled correction is therefore conservative
+  for most cells and **not** conservative for the two oldest, which are exactly the cells any ceiling
+  claim rests on. Open: whether an arc that publishes stratified tables should correct each cell with
+  its own noisy design effect, the pooled stable one, or publish both and refuse to choose. Session
+  115 published both and refused to choose; that is a decision recorded, not a question answered.
+- **What is the right variance for a difference between strata?** The encyclopedia-vs-forum gap
+  (3.96 pp) crosses zero under the pooled design effect (z = 1.836) and clears the conventional
+  threshold under the arm-specific one (z = 1.983). The arm-specific treatment is better argued *and*
+  flatters this practice, which is why both are printed. **Open and uncomfortable:** this arc has no
+  rule, written in advance, for which variance a between-stratum contrast takes. It should have had
+  one before it computed either.
+- **A correction cannot reach a mechanism.** Widening intervals changes what the arc may claim about
+  precision and nothing about what is happening on the platform. The mechanism questions the arc has
+  opened — why one article co-loses most of its cited videos, whether account death propagates to the
+  video endpoint, what the semantically empty refusal actually covers — are untouched by every number
+  in the restatement. Naming that plainly is the point of the entry.
+- **How should an arc restate figures a reuser may already hold?** Session 115 answered by making it
+  a dated condition on the material itself (`memory/downstream-commitments.md`, condition 7) rather
+  than only a document in the draft. Open: whether a condition added *after* material travelled can
+  reach anyone who took it, and whether this practice should be recording who took what.
