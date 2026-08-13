@@ -1,0 +1,714 @@
+{
+ "session": 115,
+ "deff": 1.428865343926577,
+ "sqrt_deff": 1.1954,
+ "restated": [
+  {
+   "label": "POWER-AUDIT §2 — cohort 2018, retrievable fraction",
+   "k": 2,
+   "n": 2,
+   "point_estimate": 1.0,
+   "published_ci": [
+    0.342,
+    1.0
+   ],
+   "reproduced_naive_ci": [
+    0.3424,
+    1.0
+   ],
+   "restated_ci": [
+    0.2671,
+    1.0
+   ],
+   "n_eff": 1.4,
+   "published_width": 0.658,
+   "naive_width": 0.6576,
+   "restated_width": 0.7329,
+   "widening_ratio": 1.1138,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 2,
+   "published_k": 2,
+   "population_matches_published": true
+  },
+  {
+   "label": "POWER-AUDIT §2 — cohort 2019, retrievable fraction",
+   "k": 21,
+   "n": 29,
+   "point_estimate": 0.7241,
+   "published_ci": [
+    0.543,
+    0.853
+   ],
+   "reproduced_naive_ci": [
+    0.5428,
+    0.853
+   ],
+   "restated_ci": [
+    0.5066,
+    0.8703
+   ],
+   "n_eff": 20.3,
+   "published_width": 0.31,
+   "naive_width": 0.3102,
+   "restated_width": 0.3637,
+   "widening_ratio": 1.1732,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 29,
+   "published_k": 21,
+   "population_matches_published": true
+  },
+  {
+   "label": "POWER-AUDIT §2 — cohort 2020, retrievable fraction",
+   "k": 106,
+   "n": 130,
+   "point_estimate": 0.8154,
+   "published_ci": [
+    0.74,
+    0.873
+   ],
+   "reproduced_naive_ci": [
+    0.74,
+    0.8727
+   ],
+   "restated_ci": [
+    0.7235,
+    0.8817
+   ],
+   "n_eff": 90.98,
+   "published_width": 0.133,
+   "naive_width": 0.1327,
+   "restated_width": 0.1583,
+   "widening_ratio": 1.1902,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 130,
+   "published_k": 106,
+   "population_matches_published": true
+  },
+  {
+   "label": "POWER-AUDIT §2 — cohort 2021, retrievable fraction",
+   "k": 212,
+   "n": 249,
+   "point_estimate": 0.8514,
+   "published_ci": [
+    0.802,
+    0.89
+   ],
+   "reproduced_naive_ci": [
+    0.8019,
+    0.8902
+   ],
+   "restated_ci": [
+    0.791,
+    0.8966
+   ],
+   "n_eff": 174.26,
+   "published_width": 0.088,
+   "naive_width": 0.0883,
+   "restated_width": 0.1056,
+   "widening_ratio": 1.2,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 249,
+   "published_k": 212,
+   "population_matches_published": true
+  },
+  {
+   "label": "POWER-AUDIT §2 — cohort 2022, retrievable fraction",
+   "k": 353,
+   "n": 412,
+   "point_estimate": 0.8568,
+   "published_ci": [
+    0.82,
+    0.887
+   ],
+   "reproduced_naive_ci": [
+    0.8197,
+    0.8873
+   ],
+   "restated_ci": [
+    0.8117,
+    0.8925
+   ],
+   "n_eff": 288.34,
+   "published_width": 0.067,
+   "naive_width": 0.0677,
+   "restated_width": 0.0809,
+   "widening_ratio": 1.2075,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 412,
+   "published_k": 353,
+   "population_matches_published": true
+  },
+  {
+   "label": "POWER-AUDIT §2 — cohort 2023, retrievable fraction",
+   "k": 487,
+   "n": 574,
+   "point_estimate": 0.8484,
+   "published_ci": [
+    0.817,
+    0.875
+   ],
+   "reproduced_naive_ci": [
+    0.8168,
+    0.8754
+   ],
+   "restated_ci": [
+    0.8101,
+    0.8802
+   ],
+   "n_eff": 401.72,
+   "published_width": 0.058,
+   "naive_width": 0.0587,
+   "restated_width": 0.0701,
+   "widening_ratio": 1.2086,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 574,
+   "published_k": 487,
+   "population_matches_published": true
+  },
+  {
+   "label": "POWER-AUDIT §2 — cohort 2024, retrievable fraction",
+   "k": 500,
+   "n": 548,
+   "point_estimate": 0.9124,
+   "published_ci": [
+    0.886,
+    0.933
+   ],
+   "reproduced_naive_ci": [
+    0.8858,
+    0.9333
+   ],
+   "restated_ci": [
+    0.8799,
+    0.9368
+   ],
+   "n_eff": 383.52,
+   "published_width": 0.047,
+   "naive_width": 0.0475,
+   "restated_width": 0.0569,
+   "widening_ratio": 1.2106,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 548,
+   "published_k": 500,
+   "population_matches_published": true
+  },
+  {
+   "label": "POWER-AUDIT §2 — cohort 2025, retrievable fraction",
+   "k": 480,
+   "n": 510,
+   "point_estimate": 0.9412,
+   "published_ci": [
+    0.917,
+    0.959
+   ],
+   "reproduced_naive_ci": [
+    0.9173,
+    0.9585
+   ],
+   "restated_ci": [
+    0.9117,
+    0.9612
+   ],
+   "n_eff": 356.93,
+   "published_width": 0.042,
+   "naive_width": 0.0412,
+   "restated_width": 0.0495,
+   "widening_ratio": 1.1786,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 510,
+   "published_k": 480,
+   "population_matches_published": true
+  },
+  {
+   "label": "POWER-AUDIT §2 — cohort 2026, retrievable fraction",
+   "k": 159,
+   "n": 164,
+   "point_estimate": 0.9695,
+   "published_ci": [
+    0.931,
+    0.987
+   ],
+   "reproduced_naive_ci": [
+    0.9306,
+    0.9869
+   ],
+   "restated_ci": [
+    0.9198,
+    0.9888
+   ],
+   "n_eff": 114.78,
+   "published_width": 0.056,
+   "naive_width": 0.0563,
+   "restated_width": 0.0689,
+   "widening_ratio": 1.2304,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 164,
+   "published_k": 159,
+   "population_matches_published": true
+  },
+  {
+   "label": "RESULT.md — census by decoded creation year 1971",
+   "k": 1,
+   "n": 1,
+   "point_estimate": 1.0,
+   "published_ci": [
+    0.207,
+    1.0
+   ],
+   "reproduced_naive_ci": [
+    0.2065,
+    1.0
+   ],
+   "restated_ci": [
+    0.1541,
+    1.0
+   ],
+   "n_eff": 0.7,
+   "published_width": 0.793,
+   "naive_width": 0.7935,
+   "restated_width": 0.8459,
+   "widening_ratio": 1.0667,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 1,
+   "published_k": 1,
+   "population_matches_published": true
+  },
+  {
+   "label": "RESULT.md — census by decoded creation year 1975",
+   "k": 0,
+   "n": 3,
+   "point_estimate": 0.0,
+   "published_ci": [
+    0.0,
+    0.562
+   ],
+   "reproduced_naive_ci": [
+    0.0,
+    0.5615
+   ],
+   "restated_ci": [
+    0.0,
+    0.6466
+   ],
+   "n_eff": 2.1,
+   "published_width": 0.562,
+   "naive_width": 0.5615,
+   "restated_width": 0.6466,
+   "widening_ratio": 1.1505,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 3,
+   "published_k": 0,
+   "population_matches_published": true
+  },
+  {
+   "label": "RESULT.md — census by decoded creation year 2018",
+   "k": 2,
+   "n": 2,
+   "point_estimate": 1.0,
+   "published_ci": [
+    0.342,
+    1.0
+   ],
+   "reproduced_naive_ci": [
+    0.3424,
+    1.0
+   ],
+   "restated_ci": [
+    0.2671,
+    1.0
+   ],
+   "n_eff": 1.4,
+   "published_width": 0.658,
+   "naive_width": 0.6576,
+   "restated_width": 0.7329,
+   "widening_ratio": 1.1138,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 2,
+   "published_k": 2,
+   "population_matches_published": true
+  },
+  {
+   "label": "RESULT.md — census by decoded creation year 2019",
+   "k": 19,
+   "n": 26,
+   "point_estimate": 0.7308,
+   "published_ci": [
+    0.539,
+    0.863
+   ],
+   "reproduced_naive_ci": [
+    0.5392,
+    0.863
+   ],
+   "restated_ci": [
+    0.501,
+    0.8801
+   ],
+   "n_eff": 18.2,
+   "published_width": 0.324,
+   "naive_width": 0.3238,
+   "restated_width": 0.379,
+   "widening_ratio": 1.1698,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 26,
+   "published_k": 19,
+   "population_matches_published": true
+  },
+  {
+   "label": "RESULT.md — census by decoded creation year 2020",
+   "k": 89,
+   "n": 109,
+   "point_estimate": 0.8165,
+   "published_ci": [
+    0.734,
+    0.878
+   ],
+   "reproduced_naive_ci": [
+    0.7335,
+    0.878
+   ],
+   "restated_ci": [
+    0.7152,
+    0.8874
+   ],
+   "n_eff": 76.28,
+   "published_width": 0.144,
+   "naive_width": 0.1444,
+   "restated_width": 0.1722,
+   "widening_ratio": 1.1958,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 109,
+   "published_k": 89,
+   "population_matches_published": true
+  },
+  {
+   "label": "RESULT.md — census by decoded creation year 2021",
+   "k": 170,
+   "n": 201,
+   "point_estimate": 0.8458,
+   "published_ci": [
+    0.789,
+    0.889
+   ],
+   "reproduced_naive_ci": [
+    0.7894,
+    0.8892
+   ],
+   "restated_ci": [
+    0.777,
+    0.8962
+   ],
+   "n_eff": 140.67,
+   "published_width": 0.1,
+   "naive_width": 0.0998,
+   "restated_width": 0.1192,
+   "widening_ratio": 1.192,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 201,
+   "published_k": 170,
+   "population_matches_published": true
+  },
+  {
+   "label": "RESULT.md — census by decoded creation year 2022",
+   "k": 277,
+   "n": 317,
+   "point_estimate": 0.8738,
+   "published_ci": [
+    0.833,
+    0.906
+   ],
+   "reproduced_naive_ci": [
+    0.8327,
+    0.9059
+   ],
+   "restated_ci": [
+    0.8237,
+    0.9112
+   ],
+   "n_eff": 221.85,
+   "published_width": 0.073,
+   "naive_width": 0.0732,
+   "restated_width": 0.0876,
+   "widening_ratio": 1.2,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 317,
+   "published_k": 277,
+   "population_matches_published": true
+  },
+  {
+   "label": "RESULT.md — census by decoded creation year 2023",
+   "k": 389,
+   "n": 456,
+   "point_estimate": 0.8531,
+   "published_ci": [
+    0.818,
+    0.883
+   ],
+   "reproduced_naive_ci": [
+    0.8176,
+    0.8826
+   ],
+   "restated_ci": [
+    0.81,
+    0.8877
+   ],
+   "n_eff": 319.13,
+   "published_width": 0.065,
+   "naive_width": 0.065,
+   "restated_width": 0.0777,
+   "widening_ratio": 1.1954,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 456,
+   "published_k": 389,
+   "population_matches_published": true
+  },
+  {
+   "label": "RESULT.md — census by decoded creation year 2024",
+   "k": 437,
+   "n": 474,
+   "point_estimate": 0.9219,
+   "published_ci": [
+    0.894,
+    0.943
+   ],
+   "reproduced_naive_ci": [
+    0.8943,
+    0.9428
+   ],
+   "restated_ci": [
+    0.888,
+    0.9462
+   ],
+   "n_eff": 331.73,
+   "published_width": 0.049,
+   "naive_width": 0.0486,
+   "restated_width": 0.0582,
+   "widening_ratio": 1.1878,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 474,
+   "published_k": 437,
+   "population_matches_published": true
+  },
+  {
+   "label": "RESULT.md — census by decoded creation year 2025",
+   "k": 434,
+   "n": 456,
+   "point_estimate": 0.9518,
+   "published_ci": [
+    0.928,
+    0.968
+   ],
+   "reproduced_naive_ci": [
+    0.928,
+    0.9679
+   ],
+   "restated_ci": [
+    0.9224,
+    0.9704
+   ],
+   "n_eff": 319.13,
+   "published_width": 0.04,
+   "naive_width": 0.0399,
+   "restated_width": 0.048,
+   "widening_ratio": 1.2,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 456,
+   "published_k": 434,
+   "population_matches_published": true
+  },
+  {
+   "label": "RESULT.md — census by decoded creation year 2026",
+   "k": 123,
+   "n": 128,
+   "point_estimate": 0.9609,
+   "published_ci": [
+    0.912,
+    0.983
+   ],
+   "reproduced_naive_ci": [
+    0.9118,
+    0.9832
+   ],
+   "restated_ci": [
+    0.8984,
+    0.9856
+   ],
+   "n_eff": 89.58,
+   "published_width": 0.071,
+   "naive_width": 0.0714,
+   "restated_width": 0.0872,
+   "widening_ratio": 1.2282,
+   "reproduces_published": true,
+   "wider": true,
+   "published_n": 128,
+   "published_k": 123,
+   "population_matches_published": true
+  },
+  {
+   "label": "RESULT.md — census pooled, publicly retrievable",
+   "k": 1941,
+   "n": 2173,
+   "point_estimate": 0.8932,
+   "published_ci": [
+    0.879,
+    0.906
+   ],
+   "reproduced_naive_ci": [
+    0.8795,
+    0.9055
+   ],
+   "restated_ci": [
+    0.8767,
+    0.9078
+   ],
+   "n_eff": 1520.79,
+   "published_width": 0.027,
+   "naive_width": 0.026,
+   "restated_width": 0.0311,
+   "widening_ratio": 1.1519,
+   "reproduces_published": true,
+   "wider": true
+  }
+ ],
+ "notes": {},
+ "power_audit_population": {
+  "file": "ledger/run-2026-08-11T1124Z.json",
+  "analysable": 2618,
+  "excluded": {
+   "arm_B_truncated": 249,
+   "indeterminate": 33,
+   "not_19_digit": 4,
+   "nonpositive_age": 0
+  }
+ },
+ "weibull_shape": {
+  "published": {
+   "k": 0.6959,
+   "ci95_profile": [
+    0.5017,
+    0.8983
+   ],
+   "source": "POWER-AUDIT.md §2"
+  },
+  "reproduced_naive": [
+   0.5017,
+   0.8983
+  ],
+  "restated_rao_scott": [
+   0.4651,
+   0.9386
+  ],
+  "criterion": {
+   "naive_chi2": 3.841458821,
+   "restated_chi2": 5.4889
+  },
+  "point_estimate_moves": false,
+  "still_excludes_1": true,
+  "what_this_is": "A first-order Rao-Scott scaling of the profile deviance, NOT the same operation as the Wilson correction. It assumes one design effect governs the whole fit; the per-cell table shows the account-key design effect is not constant across age. Treat this interval as indicative of direction and magnitude, not as exact.",
+  "why_it_matters": "K3 of this arc's own pre-registration reads this interval: if the 95 % CI on k includes 1, the shape is undetermined and every power figure resting on it is withdrawn. The restated interval is the one that criterion should have been read against."
+ },
+ "census_population": {
+  "file": "census-results.json",
+  "usable": 2173,
+  "excluded": {
+   "transport_or_indeterminate": 28
+  }
+ },
+ "ratio_intervals": [
+  {
+   "label": "INCREMENT-3 §2a / session 111 — Mantel-Haenszel OR, article vs non-article",
+   "published_ci": [
+    1.357,
+    2.345
+   ],
+   "implied_point": 1.7839,
+   "restated_ci": [
+    1.2864,
+    2.4737
+   ],
+   "method": "log-scale SE inflated by sqrt(DEFF); the point estimate does not move",
+   "still_excludes_1": true
+  },
+  {
+   "label": "INCREMENT-1 §7 — two-proportion gap, encyclopedia-cited vs forum-linked (pp)",
+   "published_ci": [
+    0.42,
+    7.5
+   ],
+   "counts": {
+    "encyclopedia": [
+     1940,
+     2175
+    ],
+    "forum": [
+     381,
+     447
+    ]
+   },
+   "variants": [
+    {
+     "variant": "published (no clustering)",
+     "gap_pp": 3.9605,
+     "se_pp": 1.8051,
+     "z": 2.194,
+     "ci95_pp": [
+      0.4225,
+      7.4985
+     ],
+     "excludes_0": true
+    },
+    {
+     "variant": "pooled DEFF 1.4289 on both arms",
+     "gap_pp": 3.9605,
+     "se_pp": 2.1578,
+     "z": 1.8355,
+     "ci95_pp": [
+      -0.2687,
+      8.1897
+     ],
+     "excludes_0": false
+    },
+    {
+     "variant": "each arm's own DEFF (1.4688 article / 1.1859 forum)",
+     "gap_pp": 3.9605,
+     "se_pp": 1.9974,
+     "z": 1.9828,
+     "ci95_pp": [
+      0.0457,
+      7.8754
+     ],
+     "excludes_0": true
+    }
+   ],
+   "method": "recomputed from the arm counts; each arm's binomial variance multiplied by a design effect. The per-stratum design effects come from the day-2 run and are applied to a gap measured on session 110's run — an approximation, stated as one.",
+   "note": "The published interval was computed with the video as the independent unit. Under the pooled correction the interval crosses zero; under the arm-specific one it does not. Both are printed because choosing between them after seeing the answer is exactly the move this arc has twice caught itself making."
+  }
+ ],
+ "subtract_first_check": {
+  "n_intervals": 21,
+  "reproduce_published": 21,
+  "fail_to_reproduce": [],
+  "population_mismatches": [],
+  "all_wider": true,
+  "not_wider": []
+ }
+}

@@ -1,0 +1,855 @@
+{
+ "generated_utc": null,
+ "session": 115,
+ "what_this_is": "A dated restatement, not an edit. Every interval below stands as published; the restated column is the same estimate with the clustering of losses priced in. No point estimate moves.",
+ "design_effects": {
+  "account_key": 1.428865343926577,
+  "page_key": 1.885389216967676,
+  "source": "cluster-keys-114.json (session 114), closed-form clustered variance, no seed",
+  "which_one_governs": "the account key. The page key is larger and is carried by a single article (es.wikipedia.org|Protestas en Paraguay de 2023, 23 units, 17 absent, 20 distinct handles); removing that one article collapses the page key to 1.3949 while the account key barely moves. Every restated bound below is therefore a LOWER bound on the correction, not the correction.",
+  "sqrt_account": 1.1954,
+  "sqrt_page": 1.3731
+ },
+ "population_day2": {
+  "analysable": 3575,
+  "excluded": {
+   "arm_B_truncated": 249,
+   "indeterminate": 38,
+   "not_19_digit": 7,
+   "nonpositive_age": 0
+  }
+ },
+ "restated": [
+  {
+   "label": "INCREMENT-3 §1 — pooled public retrievability, day-2 window run",
+   "k": 3143,
+   "n": 3575,
+   "point_estimate": 87.9161,
+   "published_ci": [
+    86.81,
+    88.94
+   ],
+   "reproduced_naive_ci": [
+    86.8067,
+    88.944
+   ],
+   "restated_ci": [
+    86.5805,
+    89.1355
+   ],
+   "n_eff": 2501.99,
+   "published_width": 2.13,
+   "naive_width": 2.1373,
+   "restated_width": 2.555,
+   "widening_pp": 0.425,
+   "widening_ratio": 1.1995,
+   "reproduces_published": true,
+   "centre_moved": false,
+   "wider": true,
+   "cell_own_deff": 1.4289,
+   "cell_clusters": 2744,
+   "restated_ci_own_deff": [
+    86.5805,
+    89.1355
+   ]
+  },
+  {
+   "label": "INCREMENT-3 §1a — age band 0-1y, publicly retrievable",
+   "k": 470,
+   "n": 494,
+   "point_estimate": 95.1417,
+   "published_ci": [
+    92.87,
+    96.71
+   ],
+   "reproduced_naive_ci": [
+    92.873,
+    96.7138
+   ],
+   "restated_ci": [
+    92.3379,
+    96.9533
+   ],
+   "n_eff": 345.73,
+   "published_width": 3.84,
+   "naive_width": 3.8408,
+   "restated_width": 4.6154,
+   "widening_pp": 0.7754,
+   "widening_ratio": 1.2019,
+   "reproduces_published": true,
+   "centre_moved": false,
+   "wider": true,
+   "cell_own_deff": 1.2113,
+   "cell_clusters": 391,
+   "restated_ci_own_deff": [
+    92.6014,
+    96.8396
+   ]
+  },
+  {
+   "label": "INCREMENT-3 §1a — age band 1-2y, publicly retrievable",
+   "k": 716,
+   "n": 775,
+   "point_estimate": 92.3871,
+   "published_ci": [
+    90.3,
+    94.05
+   ],
+   "reproduced_naive_ci": [
+    90.3038,
+    94.0523
+   ],
+   "restated_ci": [
+    89.8451,
+    94.3329
+   ],
+   "n_eff": 542.39,
+   "published_width": 3.75,
+   "naive_width": 3.7485,
+   "restated_width": 4.4878,
+   "widening_pp": 0.7378,
+   "widening_ratio": 1.1967,
+   "reproduces_published": true,
+   "centre_moved": false,
+   "wider": true,
+   "cell_own_deff": 1.2671,
+   "cell_clusters": 611,
+   "restated_ci_own_deff": [
+    90.0107,
+    94.2344
+   ]
+  },
+  {
+   "label": "INCREMENT-3 §1a — age band 2-3y, publicly retrievable",
+   "k": 692,
+   "n": 790,
+   "point_estimate": 87.5949,
+   "published_ci": [
+    85.11,
+    89.71
+   ],
+   "reproduced_naive_ci": [
+    85.1127,
+    89.7133
+   ],
+   "restated_ci": [
+    84.5851,
+    90.086
+   ],
+   "n_eff": 552.89,
+   "published_width": 4.6,
+   "naive_width": 4.6006,
+   "restated_width": 5.5009,
+   "widening_pp": 0.9009,
+   "widening_ratio": 1.1958,
+   "reproduces_published": true,
+   "centre_moved": false,
+   "wider": true,
+   "cell_own_deff": 1.2331,
+   "cell_clusters": 675,
+   "restated_ci_own_deff": [
+    84.8161,
+    89.9256
+   ]
+  },
+  {
+   "label": "INCREMENT-3 §1a — age band 3-4y, publicly retrievable",
+   "k": 565,
+   "n": 673,
+   "point_estimate": 83.9525,
+   "published_ci": [
+    80.99,
+    86.53
+   ],
+   "reproduced_naive_ci": [
+    80.9879,
+    86.5317
+   ],
+   "restated_ci": [
+    80.365,
+    86.9905
+   ],
+   "n_eff": 471.0,
+   "published_width": 5.54,
+   "naive_width": 5.5438,
+   "restated_width": 6.6255,
+   "widening_pp": 1.0855,
+   "widening_ratio": 1.1959,
+   "reproduces_published": true,
+   "centre_moved": false,
+   "wider": true,
+   "cell_own_deff": 1.1844,
+   "cell_clusters": 593,
+   "restated_ci_own_deff": [
+    80.7081,
+    86.7409
+   ]
+  },
+  {
+   "label": "INCREMENT-3 §1a — age band 4-5y, publicly retrievable",
+   "k": 386,
+   "n": 461,
+   "point_estimate": 83.731,
+   "published_ci": [
+    80.09,
+    86.82
+   ],
+   "reproduced_naive_ci": [
+    80.0855,
+    86.819
+   ],
+   "restated_ci": [
+    79.3109,
+    87.3573
+   ],
+   "n_eff": 322.63,
+   "published_width": 6.73,
+   "naive_width": 6.7335,
+   "restated_width": 8.0464,
+   "widening_pp": 1.3164,
+   "widening_ratio": 1.1956,
+   "reproduces_published": true,
+   "centre_moved": false,
+   "wider": true,
+   "cell_own_deff": 1.2009,
+   "cell_clusters": 373,
+   "restated_ci_own_deff": [
+    79.7079,
+    87.0857
+   ]
+  },
+  {
+   "label": "INCREMENT-3 §1a — age band 5y+, publicly retrievable",
+   "k": 314,
+   "n": 382,
+   "point_estimate": 82.199,
+   "published_ci": [
+    78.05,
+    85.71
+   ],
+   "reproduced_naive_ci": [
+    78.0481,
+    85.7086
+   ],
+   "restated_ci": [
+    77.1673,
+    86.3183
+   ],
+   "n_eff": 267.34,
+   "published_width": 7.66,
+   "naive_width": 7.6605,
+   "restated_width": 9.151,
+   "widening_pp": 1.491,
+   "widening_ratio": 1.1946,
+   "reproduces_published": true,
+   "centre_moved": false,
+   "wider": true,
+   "cell_own_deff": 1.506,
+   "cell_clusters": 303,
+   "restated_ci_own_deff": [
+    77.0218,
+    86.4154
+   ]
+  },
+  {
+   "label": "INCREMENT-3 §1b — stratum W-article, publicly retrievable",
+   "k": 2120,
+   "n": 2375,
+   "point_estimate": 89.2632,
+   "published_ci": [
+    87.95,
+    90.45
+   ],
+   "reproduced_naive_ci": [
+    87.9541,
+    90.4454
+   ],
+   "restated_ci": [
+    87.6833,
+    90.6619
+   ],
+   "n_eff": 1662.16,
+   "published_width": 2.5,
+   "naive_width": 2.4913,
+   "restated_width": 2.9786,
+   "widening_pp": 0.4786,
+   "widening_ratio": 1.1914,
+   "reproduces_published": true,
+   "centre_moved": false,
+   "wider": true,
+   "cell_own_deff": 1.4688,
+   "cell_clusters": 1799,
+   "restated_ci_own_deff": [
+    87.6601,
+    90.6801
+   ]
+  },
+  {
+   "label": "INCREMENT-3 §1b — stratum W-other-ns, publicly retrievable",
+   "k": 639,
+   "n": 751,
+   "point_estimate": 85.0866,
+   "published_ci": [
+    82.36,
+    87.46
+   ],
+   "reproduced_naive_ci": [
+    82.3605,
+    87.4555
+   ],
+   "restated_ci": [
+    81.787,
+    87.877
+   ],
+   "n_eff": 525.59,
+   "published_width": 5.1,
+   "naive_width": 5.0949,
+   "restated_width": 6.09,
+   "widening_pp": 0.99,
+   "widening_ratio": 1.1941,
+   "reproduces_published": true,
+   "centre_moved": false,
+   "wider": true,
+   "cell_own_deff": 1.3292,
+   "cell_clusters": 595,
+   "restated_ci_own_deff": [
+    81.9127,
+    87.7865
+   ]
+  },
+  {
+   "label": "INCREMENT-3 §1b — stratum F-forum, publicly retrievable",
+   "k": 384,
+   "n": 449,
+   "point_estimate": 85.5234,
+   "published_ci": [
+    81.97,
+    88.48
+   ],
+   "reproduced_naive_ci": [
+    81.9673,
+    88.4768
+   ],
+   "restated_ci": [
+    81.2038,
+    88.9849
+   ],
+   "n_eff": 314.24,
+   "published_width": 6.51,
+   "naive_width": 6.5095,
+   "restated_width": 7.7812,
+   "widening_pp": 1.2712,
+   "widening_ratio": 1.1953,
+   "reproduces_published": true,
+   "centre_moved": false,
+   "wider": true,
+   "cell_own_deff": 1.1859,
+   "cell_clusters": 400,
+   "restated_ci_own_deff": [
+    81.6222,
+    88.711
+   ]
+  },
+  {
+   "label": "INCREMENT-3 §2a — ceiling, the six published bands, worst eligible cell 5y+ (ABSENCE)",
+   "k": 68,
+   "n": 382,
+   "point_estimate": 17.801,
+   "published_ci": [
+    14.29,
+    21.95
+   ],
+   "reproduced_naive_ci": [
+    14.2914,
+    21.9519
+   ],
+   "restated_ci": [
+    13.6817,
+    22.8327
+   ],
+   "n_eff": 267.34,
+   "published_width": 7.66,
+   "naive_width": 7.6605,
+   "restated_width": 9.151,
+   "widening_pp": 1.491,
+   "widening_ratio": 1.1946,
+   "reproduces_published": true,
+   "centre_moved": false,
+   "wider": true,
+   "cell_own_deff": 1.506,
+   "cell_clusters": 303,
+   "restated_ci_own_deff": [
+    13.5846,
+    22.9782
+   ]
+  },
+  {
+   "label": "INCREMENT-3 §2a — ceiling, calendar year of creation, worst eligible cell 2019 (ABSENCE)",
+   "k": 8,
+   "n": 35,
+   "point_estimate": 22.8571,
+   "published_ci": [
+    12.07,
+    39.02
+   ],
+   "reproduced_naive_ci": [
+    12.0659,
+    39.0173
+   ],
+   "restated_ci": [
+    10.6441,
+    42.4295
+   ],
+   "n_eff": 24.49,
+   "published_width": 26.95,
+   "naive_width": 26.9514,
+   "restated_width": 31.7855,
+   "widening_pp": 4.8355,
+   "widening_ratio": 1.1794,
+   "reproduces_published": true,
+   "centre_moved": false,
+   "wider": true,
+   "cell_own_deff": 1.2663,
+   "cell_clusters": 32,
+   "restated_ci_own_deff": [
+    11.1316,
+    41.2068
+   ]
+  },
+  {
+   "label": "INCREMENT-3 §2a — ceiling, integer age-year, worst eligible cell 6-7y (ABSENCE)",
+   "k": 19,
+   "n": 108,
+   "point_estimate": 17.5926,
+   "published_ci": [
+    11.56,
+    25.85
+   ],
+   "reproduced_naive_ci": [
+    11.5619,
+    25.8495
+   ],
+   "restated_ci": [
+    10.6409,
+    27.6791
+   ],
+   "n_eff": 75.58,
+   "published_width": 14.29,
+   "naive_width": 14.2877,
+   "restated_width": 17.0382,
+   "widening_pp": 2.7482,
+   "widening_ratio": 1.1923,
+   "reproduces_published": true,
+   "centre_moved": false,
+   "wider": true,
+   "cell_own_deff": 1.7052,
+   "cell_clusters": 90,
+   "restated_ci_own_deff": [
+    10.1539,
+    28.7377
+   ]
+  },
+  {
+   "label": "INCREMENT-3 §2a — ceiling, half-year, worst eligible cell 5.5y (ABSENCE)",
+   "k": 19,
+   "n": 106,
+   "point_estimate": 17.9245,
+   "published_ci": [
+    11.79,
+    26.31
+   ],
+   "reproduced_naive_ci": [
+    11.7862,
+    26.3064
+   ],
+   "restated_ci": [
+    10.8479,
+    28.1595
+   ],
+   "n_eff": 74.18,
+   "published_width": 14.52,
+   "naive_width": 14.5202,
+   "restated_width": 17.3117,
+   "widening_pp": 2.7917,
+   "widening_ratio": 1.1923,
+   "reproduces_published": true,
+   "centre_moved": false,
+   "wider": true,
+   "cell_own_deff": 1.247,
+   "cell_clusters": 90,
+   "restated_ci_own_deff": [
+    11.2161,
+    27.4067
+   ]
+  },
+  {
+   "label": "INCREMENT-4 §3 — absence rate, attributed units (already restated at session 114)",
+   "k": 432,
+   "n": 3575,
+   "point_estimate": 12.0839,
+   "published_ci": [
+    11.06,
+    13.19
+   ],
+   "reproduced_naive_ci": [
+    11.056,
+    13.1933
+   ],
+   "restated_ci": [
+    10.8645,
+    13.4195
+   ],
+   "n_eff": 2501.99,
+   "published_width": 2.13,
+   "naive_width": 2.1373,
+   "restated_width": 2.555,
+   "widening_pp": 0.425,
+   "widening_ratio": 1.1995,
+   "reproduces_published": true,
+   "centre_moved": false,
+   "wider": true,
+   "cell_own_deff": 1.4289,
+   "cell_clusters": 2744,
+   "restated_ci_own_deff": [
+    10.8645,
+    13.4195
+   ]
+  }
+ ],
+ "page_key_variants": [
+  {
+   "label": "INCREMENT-3 §1 — pooled public retrievability, day-2 window run",
+   "restated_ci_account_key": [
+    86.5805,
+    89.1355
+   ],
+   "restated_ci_page_key": [
+    86.3718,
+    89.307
+   ],
+   "extra_widening_pp": 0.3802
+  },
+  {
+   "label": "INCREMENT-3 §1a — age band 0-1y, publicly retrievable",
+   "restated_ci_account_key": [
+    92.3379,
+    96.9533
+   ],
+   "restated_ci_page_key": [
+    91.824,
+    97.1548
+   ],
+   "extra_widening_pp": 0.7154
+  },
+  {
+   "label": "INCREMENT-3 §1a — age band 1-2y, publicly retrievable",
+   "restated_ci_account_key": [
+    89.8451,
+    94.3329
+   ],
+   "restated_ci_page_key": [
+    89.4128,
+    94.5765
+   ],
+   "extra_widening_pp": 0.6759
+  },
+  {
+   "label": "INCREMENT-3 §1a — age band 2-3y, publicly retrievable",
+   "restated_ci_account_key": [
+    84.5851,
+    90.086
+   ],
+   "restated_ci_page_key": [
+    84.093,
+    90.4138
+   ],
+   "extra_widening_pp": 0.8199
+  },
+  {
+   "label": "INCREMENT-3 §1a — age band 3-4y, publicly retrievable",
+   "restated_ci_account_key": [
+    80.365,
+    86.9905
+   ],
+   "restated_ci_page_key": [
+    79.7864,
+    87.3955
+   ],
+   "extra_widening_pp": 0.9837
+  },
+  {
+   "label": "INCREMENT-3 §1a — age band 4-5y, publicly retrievable",
+   "restated_ci_account_key": [
+    79.3109,
+    87.3573
+   ],
+   "restated_ci_page_key": [
+    78.5895,
+    87.8291
+   ],
+   "extra_widening_pp": 1.1932
+  },
+  {
+   "label": "INCREMENT-3 §1a — age band 5y+, publicly retrievable",
+   "restated_ci_account_key": [
+    77.1673,
+    86.3183
+   ],
+   "restated_ci_page_key": [
+    76.3477,
+    86.852
+   ],
+   "extra_widening_pp": 1.3533
+  },
+  {
+   "label": "INCREMENT-3 §1b — stratum W-article, publicly retrievable",
+   "restated_ci_account_key": [
+    87.6833,
+    90.6619
+   ],
+   "restated_ci_page_key": [
+    87.4326,
+    90.8549
+   ],
+   "extra_widening_pp": 0.4437
+  },
+  {
+   "label": "INCREMENT-3 §1b — stratum W-other-ns, publicly retrievable",
+   "restated_ci_account_key": [
+    81.787,
+    87.877
+   ],
+   "restated_ci_page_key": [
+    81.2538,
+    88.249
+   ],
+   "extra_widening_pp": 0.9051
+  },
+  {
+   "label": "INCREMENT-3 §1b — stratum F-forum, publicly retrievable",
+   "restated_ci_account_key": [
+    81.2038,
+    88.9849
+   ],
+   "restated_ci_page_key": [
+    80.4905,
+    89.4285
+   ],
+   "extra_widening_pp": 1.1568
+  },
+  {
+   "label": "INCREMENT-3 §2a — ceiling, the six published bands, worst eligible cell 5y+ (ABSENCE)",
+   "restated_ci_account_key": [
+    13.6817,
+    22.8327
+   ],
+   "restated_ci_page_key": [
+    13.148,
+    23.6523
+   ],
+   "extra_widening_pp": 1.3533
+  },
+  {
+   "label": "INCREMENT-3 §2a — ceiling, calendar year of creation, worst eligible cell 2019 (ABSENCE)",
+   "restated_ci_account_key": [
+    10.6441,
+    42.4295
+   ],
+   "restated_ci_page_key": [
+    9.5116,
+    45.5102
+   ],
+   "extra_widening_pp": 4.2131
+  },
+  {
+   "label": "INCREMENT-3 §2a — ceiling, integer age-year, worst eligible cell 6-7y (ABSENCE)",
+   "restated_ci_account_key": [
+    10.6409,
+    27.6791
+   ],
+   "restated_ci_page_key": [
+    9.8691,
+    29.3895
+   ],
+   "extra_widening_pp": 2.4822
+  },
+  {
+   "label": "INCREMENT-3 §2a — ceiling, half-year, worst eligible cell 5.5y (ABSENCE)",
+   "restated_ci_account_key": [
+    10.8479,
+    28.1595
+   ],
+   "restated_ci_page_key": [
+    10.0614,
+    29.8906
+   ],
+   "extra_widening_pp": 2.5175
+  },
+  {
+   "label": "INCREMENT-4 §3 — absence rate, attributed units (already restated at session 114)",
+   "restated_ci_account_key": [
+    10.8645,
+    13.4195
+   ],
+   "restated_ci_page_key": [
+    10.693,
+    13.6282
+   ],
+   "extra_widening_pp": 0.3802
+  }
+ ],
+ "per_cell_deff": {
+  "age band": {
+   "0-1y": {
+    "n": 494,
+    "clusters": 391,
+    "absence_rate": 0.048583,
+    "deff": 1.2113,
+    "eligible": true
+   },
+   "1-2y": {
+    "n": 775,
+    "clusters": 611,
+    "absence_rate": 0.076129,
+    "deff": 1.2671,
+    "eligible": true
+   },
+   "2-3y": {
+    "n": 790,
+    "clusters": 675,
+    "absence_rate": 0.124051,
+    "deff": 1.2331,
+    "eligible": true
+   },
+   "3-4y": {
+    "n": 673,
+    "clusters": 593,
+    "absence_rate": 0.160475,
+    "deff": 1.1844,
+    "eligible": true
+   },
+   "4-5y": {
+    "n": 461,
+    "clusters": 373,
+    "absence_rate": 0.16269,
+    "deff": 1.2009,
+    "eligible": true
+   },
+   "5y+": {
+    "n": 382,
+    "clusters": 303,
+    "absence_rate": 0.17801,
+    "deff": 1.506,
+    "eligible": true
+   }
+  },
+  "stratum": {
+   "F-forum": {
+    "n": 449,
+    "clusters": 400,
+    "absence_rate": 0.144766,
+    "deff": 1.1859,
+    "eligible": true
+   },
+   "W-article": {
+    "n": 2375,
+    "clusters": 1799,
+    "absence_rate": 0.107368,
+    "deff": 1.4688,
+    "eligible": true
+   },
+   "W-other-ns": {
+    "n": 751,
+    "clusters": 595,
+    "absence_rate": 0.149134,
+    "deff": 1.3292,
+    "eligible": true
+   }
+  },
+  "calendar year": {
+   "2018": {
+    "n": 3,
+    "clusters": 3,
+    "absence_rate": 0.0,
+    "deff": null,
+    "eligible": false
+   },
+   "2019": {
+    "n": 35,
+    "clusters": 32,
+    "absence_rate": 0.228571,
+    "deff": 1.2663,
+    "eligible": true
+   },
+   "2020": {
+    "n": 163,
+    "clusters": 134,
+    "absence_rate": 0.190184,
+    "deff": 1.6739,
+    "eligible": true
+   },
+   "2021": {
+    "n": 322,
+    "clusters": 252,
+    "absence_rate": 0.161491,
+    "deff": 1.2019,
+    "eligible": true
+   },
+   "2022": {
+    "n": 530,
+    "clusters": 440,
+    "absence_rate": 0.154717,
+    "deff": 1.2487,
+    "eligible": true
+   },
+   "2023": {
+    "n": 793,
+    "clusters": 711,
+    "absence_rate": 0.161412,
+    "deff": 1.1287,
+    "eligible": true
+   },
+   "2024": {
+    "n": 755,
+    "clusters": 623,
+    "absence_rate": 0.098013,
+    "deff": 1.2244,
+    "eligible": true
+   },
+   "2025": {
+    "n": 705,
+    "clusters": 553,
+    "absence_rate": 0.06383,
+    "deff": 1.35,
+    "eligible": true
+   },
+   "2026": {
+    "n": 269,
+    "clusters": 227,
+    "absence_rate": 0.04461,
+    "deff": 0.9865,
+    "eligible": true
+   }
+  }
+ },
+ "per_cell_deff_summary": {
+  "eligible_cells": 17,
+  "below_pooled": 14,
+  "above_pooled": 3,
+  "min": 0.9865,
+  "max": 1.6739,
+  "median": 1.2331,
+  "pooled": 1.4289,
+  "note": "P7 asked whether the per-cell design effects straddle the pooled value. A cell's own DEFF is noisier than the pooled one and cells overlap across the three partitions; this is a proxy check, not an independent test."
+ },
+ "subtract_first_check": {
+  "n_intervals": 15,
+  "reproduce_published_within_0.02pp": 15,
+  "fail_to_reproduce": [],
+  "all_wider": true,
+  "not_wider": [],
+  "min_widening_ratio": 1.1794,
+  "max_widening_ratio": 1.2019,
+  "K4": "DOES NOT FIRE — every centre unchanged, every bound wider"
+ }
+}
