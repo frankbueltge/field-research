@@ -1,0 +1,21 @@
+{"units": 3575, "accounts": 2744, "singletons": 2366, "largest": 36}
+full corpus (3,575 units / 2,744 accounts)  p=0.1208  target DEFF 1.2 (realised 1.2201)
+    naive Wilson        coverage 0.9350  mean width 0.02138
+    corrected, true     coverage 0.9590  mean width 0.02362
+    corrected, estimated coverage 0.9550  (mean estimated DEFF 1.2054)
+full corpus (3,575 units / 2,744 accounts)  p=0.1208  target DEFF 1.43 (realised 1.4175)
+    naive Wilson        coverage 0.9060  mean width 0.02134
+    corrected, true     coverage 0.9490  mean width 0.02541
+    corrected, estimated coverage 0.9500  (mean estimated DEFF 1.4168)
+full corpus (3,575 units / 2,744 accounts)  p=0.1208  target DEFF 1.75 (realised 1.7612)
+    naive Wilson        coverage 0.8490  mean width 0.02136
+    corrected, true     coverage 0.9420  mean width 0.02836
+    corrected, estimated coverage 0.9400  (mean estimated DEFF 1.7815)
+small cell (34 units / 33 accounts), p = 0.23  p=0.23  target DEFF 1.43 (realised 1.0819)
+    naive Wilson        coverage 0.9220  mean width 0.26857
+    corrected, true     coverage 0.9470  mean width 0.27869
+    corrected, estimated coverage 0.9470  (mean estimated DEFF 1.0838)
+extreme p (1288 units), p = 0.95  p=0.95  target DEFF 1.43 (realised 1.3938)
+    naive Wilson        coverage 0.9010  mean width 0.02387
+    corrected, true     coverage 0.9560  mean width 0.02823
+    corrected, estimated coverage 0.9560  (mean estimated DEFF 1.4196)

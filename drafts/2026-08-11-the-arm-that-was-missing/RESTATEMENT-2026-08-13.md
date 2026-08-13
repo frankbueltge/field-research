@@ -169,6 +169,41 @@ the one that flatters us, which is why it is not stated alone. The honest readin
 are applied to a gap measured on **session 110's** run. The populations overlap heavily but are not
 identical. This is an approximation and the third row inherits it.
 
+## 2a. Does the correction actually work? Simulated, not asserted
+
+§2 calls `n_eff = n / DEFF` "the standard first-order design-effect correction". That is true and it
+is not evidence, and several restated cells sit exactly where Wilson's own coverage is known to be
+ragged — n = 35, or p near 1. So it was tested before anyone had to ask
+(`coverage_115.py` → `coverage-115.json`; **simulation only, no platform contact**).
+
+The clustering is generated the way this corpus actually looks: the **real account-size distribution
+of the day-2 run** — 3,575 units in 2,744 accounts, 2,366 of them singletons, largest 36 — with each
+account drawing a latent propensity from a Beta and its units Bernoulli within it. The Beta is
+bisected to hit a target design effect, swept across the range this session uses. 1,000 replicates
+per case; Monte-Carlo standard error on a coverage near 0.95 is about 0.7 pp.
+
+| case | true DEFF | **naive Wilson** | **corrected, true DEFF** | **corrected, DEFF estimated from the sample** |
+|---|---|---|---|---|
+| full corpus, p = 0.121 | 1.220 | 0.9350 | **0.9590** | 0.9550 |
+| full corpus, p = 0.121 | 1.418 | **0.9060** | **0.9490** | 0.9500 |
+| full corpus, p = 0.121 | 1.761 | **0.8490** | **0.9420** | 0.9400 |
+| small cell, 34 units / 33 accounts, p = 0.23 | 1.082 | 0.9220 | 0.9470 | 0.9470 |
+| extreme p = 0.95, 1,288 units | 1.394 | 0.9010 | **0.9560** | 0.9560 |
+
+**The naive interval degrades exactly as claimed** — 93.5 % at a design effect of 1.22, **84.9 % at
+1.76** — and the correction restores nominal coverage to **94.0–95.9 % in every case**, including at
+p = 0.95 and on a 34-unit cell. Estimating the design effect from the sample rather than knowing it
+costs essentially nothing at these sizes. At the top of the range the corrected interval is a little
+**under** nominal (0.9420, about one standard error below 0.95), which is the direction that argues
+against us and is stated for that reason.
+
+**One thing the simulation found that the document did not go looking for.** The small-cell case
+**could not be made to cluster**: the bisection was asked for a design effect of 1.43 and the most
+the cell would carry was **1.0819**, because 33 of its 34 units sit in accounts of size one. A cell
+of near-singletons cannot have much clustering — there is nothing for the losses to clump within.
+This is independent support for §5: applying the pooled 1.4289 to sparse, singleton-heavy cells
+**over**-widens them, and the per-cell design effects below say the same thing from the data.
+
 ## 4a. Does a design effect measured on one population transfer to another?
 
 The governing 1.4289 was measured on the **day-2 window run**. §3c restates figures from the
