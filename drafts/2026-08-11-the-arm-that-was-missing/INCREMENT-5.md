@@ -21,10 +21,10 @@ one behind the increment numbering; this file is `INCREMENT-5.md` and is increme
 
 ## 1. The correction — in one page; the register is `RESTATEMENT-2026-08-13.md`
 
-Losses in this corpus clump by cited account (design effect **1.4289**, closed form, no seed), so
-every Wilson interval this arc published with the video as the independent unit is too narrow by at
-least **×1.1954** on its half-width. The correction is `n_eff = n / DEFF`; **the point estimate never
-moves.**
+Losses in this corpus clump by cited account (design effect **1.4289**, closed form, no seed;
+bootstrap 95 % **[1.265, 1.616]**), so every Wilson interval this arc published with the video as the
+independent unit is too narrow by about **×1.195** on its half-width — the factor's own 95 % interval
+is **[1.125, 1.271]**. The correction is `n_eff = n / DEFF`; **the point estimate never moves.**
 
 **What the correction costs, and it is one thing.** `INCREMENT-1.md` §7 published a gap of
 **3.96 pp** between encyclopedia-cited (89.20 %) and forum-linked (85.23 %) videos, with
@@ -37,15 +37,25 @@ data leans that way"*.
 
 **What it does not cost.** The Weibull shape interval still excludes 1 after a Rao–Scott correction
 ([0.4651, 0.9386]); the Mantel–Haenszel odds ratio still excludes 1 ([1.286, 2.474]); the ceiling
-survives at three partitions of four, as before. Nothing about the mechanism findings is a
-proportion this correction reaches.
+survives at three partitions of four, as before.
 
-**Two checks the session ran on itself.** The design effect **transfers between populations** — the
-session-109 census gives 1.3967 and the session-110 run 1.4482 on their own units, against the
-governing 1.4289 — and **does not transfer between cells**: 17 eligible cells run 0.9865–1.7052,
-**fourteen below the pooled figure and three above**, so **P7 fails**. The pooled correction is
-conservative for most cells and *not* conservative for the two oldest — which are the cells any
-ceiling claim rests on.
+**But it reaches one more thing than the first version of the correction admitted.** That version
+listed the **7.24 % handle drift** among the findings the correction does not touch. It is a
+proportion, published with a Wilson interval, and it carries **the highest design effect in this
+arc — 1.9492 on 2,374 accounts** — because a renamed account renames all of its videos at once. It
+is restated at `[6.07, 8.62]`. **The correction costs one finding and touches a second.**
+
+**Two checks the session ran on itself, both corrected after the gauntlet.** The design effect is
+**stable under corpus growth** — 1.3967 on the session-109 census and 1.4482 on the session-110 run
+against the governing 1.4289 — but those are **not different corpora**: every identifier of both is
+inside the day-2 manifest, so this establishes stability, **not transfer to anyone else's corpus**.
+And it **does not fit every cell**: 17 eligible cells run **0.9865–1.6739**, 14 below the pooled
+figure by point estimate and 3 above, but bootstrapped over accounts **seven are significantly below
+and none is significantly above**, so **P7 fails**. Two of the seventeen are not admissible design
+effects at all (implied correlations of 1.22 and 1.55). The mechanism is **cluster splitting**, not
+the shared era the first version guessed: conditioning on the cell moves 1.4289 only to 1.3791, while
+the pooled Kish factor of 2.605 falls to a cell median of 1.887. Full account and every correction:
+`RESTATEMENT-2026-08-13.md` §0, `CONDITIONS-DISCHARGED-115.md`.
 
 ---
 
