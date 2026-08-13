@@ -97,6 +97,19 @@ def probe_one(vid, handle):
     return rec
 
 
+# Session 117, deviation D22 — BOOKKEEPING ONLY, no request of the probe changes. The day-3 run
+# file `ledger/run-2026-08-13T0427Z.json` carries `run_id` = "TEMPLATE — the running session sets
+# this", copied verbatim from the manifest, which never had it overwritten. The adversary of
+# session 117 found it sitting in the one file every figure of this arc depends on. Nothing was
+# load-bearing on it (`run_utc_start` is correct and is what every script keys off), and the
+# archived run files are NOT edited — a measurement record is not corrected by rewriting it.
+# From here the writer refuses a placeholder and stamps the run's own start instead.
+def _run_id(manifest, t0):
+    rid = str(manifest.get("run_id", ""))
+    if not rid or "TEMPLATE" in rid:
+        return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(t0)) + " (manifest carried a placeholder)"
+    return rid
+
 def main(manifest_path, out_path):
     manifest = json.load(open(manifest_path))
     units = manifest["units"]
@@ -125,7 +138,7 @@ def main(manifest_path, out_path):
             # same 25 s timeout, same classification, same order. A partial file is NEVER a run
             # and is never diffed as one — `ledger_diff.py` reads complete runs only.
             json.dump({"schema": SCHEMA + "/partial", "partial": True,
-                       "run_id": manifest["run_id"], "vantage": van,
+                       "run_id": _run_id(manifest, t0), "vantage": van,
                        "requested": len(obs), "planned": len(units),
                        "observations": obs}, open(out_path + ".partial", "w"))
         time.sleep(DELAY)
@@ -136,7 +149,7 @@ def main(manifest_path, out_path):
         counts[r["arm"]][r["state"]] += 1
 
     run = {"schema": SCHEMA,
-           "run_id": manifest["run_id"],
+           "run_id": _run_id(manifest, t0),
            "run_utc_start": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(t0)),
            "run_utc_end": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
            "seconds": round(time.time() - t0, 1),

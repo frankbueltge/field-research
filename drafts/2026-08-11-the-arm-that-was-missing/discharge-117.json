@@ -1,0 +1,161 @@
+{
+ "schema": "field-research/discharge-117/1",
+ "session": 117,
+ "run": "ledger/run-2026-08-13T0427Z.json",
+ "note": "recomputed with this practice's own code before any specialist figure is quoted",
+ "item4_multiplicity": {
+  "m": 54,
+  "c_m_harmonic": 4.575430393744267,
+  "bh_flagged": [
+   "es.wikipedia.org|Protestas en Paraguay de 2023",
+   "ja.wikipedia.org|\u702c\u4e43\u771f\u5e06\u5b50"
+  ],
+  "by_flagged": [
+   "es.wikipedia.org|Protestas en Paraguay de 2023",
+   "ja.wikipedia.org|\u702c\u4e43\u771f\u5e06\u5b50"
+  ],
+  "same_set": true,
+  "paraguay": {
+   "p_upper": 3.836421794409408e-11,
+   "q_bh": 2.0716677689810805e-09,
+   "q_by": 9.478771675936413e-09
+  },
+  "ja": {
+   "p_upper": 1.1846322417681635e-05,
+   "q_bh": 0.00031985070527740413,
+   "q_by": 0.0014634546383867747
+  }
+ },
+ "item2_detectability_pooled_vs_loo": {
+  "leave_one_page_out": {
+   "loo": true,
+   "alpha": 0.000925925925925926,
+   "pages": 54,
+   "median_share": 0.6666666666666666,
+   "min_share": 0.22857142857142856,
+   "max_share": 1.0,
+   "median_excess": 4.212976945535085,
+   "paraguay": {
+    "page": "es.wikipedia.org|Protestas en Paraguay de 2023",
+    "n": 22,
+    "expected": 2.544578313253012,
+    "min_detectable_absent": 9,
+    "min_detectable_excess": 6.455421686746988,
+    "min_detectable_share": 0.4090909090909091
+   },
+   "undetectable_at_any_count": 0
+  },
+  "pooled": {
+   "loo": false,
+   "alpha": 0.000925925925925926,
+   "pages": 54,
+   "median_share": 0.6666666666666666,
+   "min_share": 0.22857142857142856,
+   "max_share": 1.0,
+   "median_excess": 4.259868421052632,
+   "paraguay": {
+    "page": "es.wikipedia.org|Protestas en Paraguay de 2023",
+    "n": 22,
+    "expected": 3.2219679633867275,
+    "min_detectable_absent": 10,
+    "min_detectable_excess": 6.778032036613272,
+    "min_detectable_share": 0.45454545454545453
+   },
+   "undetectable_at_any_count": 0
+  },
+  "paraguay_expected_loo": 2.544578313253012,
+  "paraguay_expected_pooled": 3.2219679633867275,
+  "paraguay_expected_relative_gap": 0.2662090007627764
+ },
+ "item3_reference_contamination": {
+  "paraguay": [
+   {
+    "cell": [
+     "3-4y",
+     "W-article"
+    ],
+    "units_of_tested_page_in_cell": 22,
+    "reference_units_total": 415,
+    "reference_units_from_pages_under_5": 382,
+    "share_of_reference_from_pages_under_5": 0.9204819277108434,
+    "absence_rate_in_small_pages": 0.10471204188481675,
+    "absence_rate_in_scanned_pages": 0.24242424242424243,
+    "leave_one_out_rate_used": 0.11566265060240964
+   }
+  ],
+  "ja": [
+   {
+    "cell": [
+     "5y+",
+     "W-article"
+    ],
+    "units_of_tested_page_in_cell": 1,
+    "reference_units_total": 265,
+    "reference_units_from_pages_under_5": 216,
+    "share_of_reference_from_pages_under_5": 0.8150943396226416,
+    "absence_rate_in_small_pages": 0.17592592592592593,
+    "absence_rate_in_scanned_pages": 0.14285714285714285,
+    "leave_one_out_rate_used": 0.16981132075471697
+   },
+   {
+    "cell": [
+     "3-4y",
+     "W-article"
+    ],
+    "units_of_tested_page_in_cell": 2,
+    "reference_units_total": 435,
+    "reference_units_from_pages_under_5": 382,
+    "share_of_reference_from_pages_under_5": 0.8781609195402299,
+    "absence_rate_in_small_pages": 0.10471204188481675,
+    "absence_rate_in_scanned_pages": 0.41509433962264153,
+    "leave_one_out_rate_used": 0.1425287356321839
+   },
+   {
+    "cell": [
+     "1-2y",
+     "W-article"
+    ],
+    "units_of_tested_page_in_cell": 2,
+    "reference_units_total": 529,
+    "reference_units_from_pages_under_5": 430,
+    "share_of_reference_from_pages_under_5": 0.8128544423440454,
+    "absence_rate_in_small_pages": 0.06744186046511629,
+    "absence_rate_in_scanned_pages": 0.020202020202020204,
+    "leave_one_out_rate_used": 0.05860113421550094
+   }
+  ]
+ },
+ "item1_page_level_effective_n": {
+  "computed": false,
+  "reason": "session 116 committed that no further clustering dimension enters this arc's variance treatment before the window closes 2026-08-18; the specialist's first recommendation is filed for after that date"
+ },
+ "derived_quoted_in_conditions_discharged_117": {
+  "note": "arithmetic quoted in CONDITIONS-DISCHARGED-117.md, computed here so every figure is checkable",
+  "zero_coverage_pages_share_pct": 62.96296296296296,
+  "ambiguous_video_ids": 335,
+  "distinct_video_ids_in_wikipedia_corpus": 2274,
+  "ambiguous_share_pct": 14.731750219876869,
+  "day2_day3_common_units": 3869,
+  "day2_day3_identical_state": 3781,
+  "day2_day3_identical_share_pct": 97.72551046782114,
+  "expected_under_scanned_pages_only_reference": 5.333333333333334,
+  "expected_under_small_pages_only_reference": 2.303664921465969
+ },
+ "item3_robustness_of_the_tail": {
+  "scanned_pages_only": {
+   "rate": 0.24242424242424243,
+   "expected_of_22": 5.333333333333334,
+   "p_upper_16_of_22": 2.255455467004964e-06
+  },
+  "leave_one_out_blend_used": {
+   "rate": 0.11566265060240964,
+   "expected_of_22": 2.544578313253012,
+   "p_upper_16_of_22": 3.836421794409408e-11
+  },
+  "small_pages_only": {
+   "rate": 0.10471204188481675,
+   "expected_of_22": 2.303664921465969,
+   "p_upper_16_of_22": 8.369073753082483e-12
+  }
+ }
+}

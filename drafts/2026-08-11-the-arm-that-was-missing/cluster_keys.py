@@ -60,14 +60,30 @@ def boot_widths(g, draws, seeds):
             "min_width": min(out), "max_width": max(out)}
 
 
-def page_index():
-    """vid -> the page or thread that cites it, from the corpus files as collected."""
+def page_index(report_ambiguous=False):
+    """vid -> the page or thread that cites it, from the corpus files as collected.
+
+    Session 117, condition C1 of INTERLOCUTOR-9: this used unsorted `glob.glob()` with
+    `setdefault`, so for a video cited by more than one page the winner was whichever file the
+    filesystem happened to return first — 335 of 2,274 distinct identifiers in the encyclopedia
+    corpus files (14.7 %) are cited by more than one (wiki, page) pair, so the attribution was
+    not reproducible across machines. The glob is now SORTED, which makes first-file-wins a
+    stated rule instead of an accident. It does not make the attribution correct: a video cited
+    by several pages has several citing pages, and forcing one is a partition imposed on a
+    hypergraph (session 116 measured the same thing from the other side). Pass
+    report_ambiguous=True to get the collision set alongside the index.
+    """
     idx = {}
-    for f in glob.glob("corpus-*.wikipedia.org.json"):
+    ambiguous = {}
+    for f in sorted(glob.glob("corpus-*.wikipedia.org.json")):
         d = json.load(open(f))
         wiki = d["meta"]["wiki"]
         for r in d["rows"]:
-            idx.setdefault(str(r["vid"]), f"{wiki}|{r['page']}")
+            k = f"{wiki}|{r['page']}"
+            v = str(r["vid"])
+            if v in idx and idx[v] != k:
+                ambiguous.setdefault(v, {idx[v]}).add(k)
+            idx.setdefault(v, k)
     for f in ("expansion-111/corpus-round2.json", "expansion-111/corpus-round3.json",
               "expansion-111/corpus-A2-namespaces.json"):
         try:
@@ -89,6 +105,8 @@ def page_index():
             idx.setdefault(str(r["vid"]), f"{r.get('src','?')}|{r.get('page','?')}")
     except FileNotFoundError:
         pass
+    if report_ambiguous:
+        return idx, {v: sorted(s) for v, s in ambiguous.items()}
     return idx
 
 

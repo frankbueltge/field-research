@@ -68,7 +68,7 @@
    ],
    "flag_lower": [],
    "sensitivity_n_min_3": {
-    "pages_scanned": 171,
+    "pages_scanned": 172,
     "n_flag_upper": 4,
     "n_flag_lower": 0,
     "flag_upper": [
@@ -86,7 +86,7 @@
       "strata": [
        "W-other-ns"
       ],
-      "q_upper": 0.03800459433318162,
+      "q_upper": 0.03822684342284934,
       "flag_upper": true,
       "q_lower": 1.0,
       "flag_lower": false
@@ -105,7 +105,7 @@
       "strata": [
        "W-article"
       ],
-      "q_upper": 6.5602812684400884e-09,
+      "q_upper": 6.598645486384182e-09,
       "flag_upper": true,
       "q_lower": 1.0,
       "flag_lower": false
@@ -124,7 +124,7 @@
       "strata": [
        "F-forum"
       ],
-      "q_upper": 0.03800459433318162,
+      "q_upper": 0.03822684342284934,
       "flag_upper": true,
       "q_lower": 1.0,
       "flag_lower": false
@@ -143,7 +143,7 @@
       "strata": [
        "W-article"
       ],
-      "q_upper": 0.00101286056671178,
+      "q_upper": 0.0010187837279206206,
       "flag_upper": true,
       "q_lower": 1.0,
       "flag_lower": false
@@ -163,14 +163,14 @@
     "seed": 117000,
     "observed_min_tail": 3.836421794409408e-11,
     "fwer_p": 9.999000099990002e-05,
-    "null_min_tail_p05": 0.002349580067439066,
-    "null_min_tail_median": 0.028622759359243355
+    "null_min_tail_p05": 0.002510674264492156,
+    "null_min_tail_median": 0.028684826264714997
    },
    "herfindahl_of_positive_excess": {
-    "total": 26.706513805035257,
-    "effective_pages": 3.3156173203200376,
-    "top_share": 0.5038254631426321,
-    "top3_share": 0.7637123438641145
+    "total": 27.402331295529557,
+    "effective_pages": 3.482800912908713,
+    "top_share": 0.4910320053294925,
+    "top3_share": 0.7443196724583154
    },
    "paraguay": {
     "page": "es.wikipedia.org|Protestas en Paraguay de 2023",
@@ -277,7 +277,7 @@
    ],
    "flag_lower": [],
    "sensitivity_n_min_3": {
-    "pages_scanned": 171,
+    "pages_scanned": 172,
     "n_flag_upper": 4,
     "n_flag_lower": 0,
     "flag_upper": [
@@ -295,7 +295,7 @@
       "strata": [
        "W-other-ns"
       ],
-      "q_upper": 0.040284279801886154,
+      "q_upper": 0.04051986038552291,
       "flag_upper": true,
       "q_lower": 1.0,
       "flag_lower": false
@@ -314,7 +314,7 @@
       "strata": [
        "W-article"
       ],
-      "q_upper": 9.845809934401114e-10,
+      "q_upper": 9.903387770274806e-10,
       "flag_upper": true,
       "q_lower": 1.0,
       "flag_lower": false
@@ -333,7 +333,7 @@
       "strata": [
        "F-forum"
       ],
-      "q_upper": 0.040284279801886154,
+      "q_upper": 0.04051986038552291,
       "flag_upper": true,
       "q_lower": 1.0,
       "flag_lower": false
@@ -352,7 +352,7 @@
       "strata": [
        "W-article"
       ],
-      "q_upper": 0.0009383349779736707,
+      "q_upper": 0.0009438223170261483,
       "flag_upper": true,
       "q_lower": 1.0,
       "flag_lower": false
@@ -373,13 +373,13 @@
     "observed_min_tail": 5.757783587369073e-12,
     "fwer_p": 9.999000099990002e-05,
     "null_min_tail_p05": 0.002393876086369154,
-    "null_min_tail_median": 0.02801046966109091
+    "null_min_tail_median": 0.029277112382961216
    },
    "herfindahl_of_positive_excess": {
-    "total": 27.8934550053234,
-    "effective_pages": 3.241473280608551,
-    "top_share": 0.5143197156256161,
-    "top3_share": 0.763611676575342
+    "total": 28.60427590084579,
+    "effective_pages": 3.401625499942851,
+    "top_share": 0.5015387872737465,
+    "top3_share": 0.7446358025606956
    },
    "paraguay": {
     "page": "es.wikipedia.org|Protestas en Paraguay de 2023",

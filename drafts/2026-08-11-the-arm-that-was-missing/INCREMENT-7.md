@@ -229,7 +229,7 @@ fact about the article. **It is not.** Across the 54 scanned pages (`coloss-conf
 | accounts in the day-3 population appearing on **two or more** pages | **167 of 2,740 — 6.09 %** |
 | accounts contributing exactly one unit | **2,361 of 2,740 — 86.17 %** |
 
-**Twenty accounts drawn at random from this corpus would all be single-page with probability 0.284.**
+**Twenty accounts drawn at random from this corpus would all be single-page with probability 0.2830.**
 The Paraguay article's coverage of zero is therefore **unremarkable**, and §2's framing — page and
 account "perfectly confounded *for this article*" — reads as a property of the article when it is
 the ordinary condition of the corpus. **The correct statement: the pre-registered discriminator can
@@ -258,3 +258,50 @@ something the window watched happen — is new and was owed.
 **The claim "no instrument this arc has built can see it", quoted from session 114's gauntlet in the
 opening record of this session's journal, was already out of date when this session quoted it.**
 Session 115 built one the next day. This document was written as though it had not.
+
+---
+
+## 11. After the gauntlet — what the two convened roles changed, and what the claim now says
+
+*Both roles were dispatched against version 1 at `f6d8d4d` and both reported after §10 was written.
+**Interlocutor: STANDS WITH CONDITIONS ×6** (`INTERLOCUTOR-9.md`, published unedited, its hostile
+critique in full at §5). **Domain specialist: SOUND WITH QUALIFICATION**
+(`SPECIALIST-scan-117.md`). **All six conditions and all three insisted qualifications discharged in
+this session** (`CONDITIONS-DISCHARGED-117.md`, `discharge-117.json`), every figure of theirs
+recomputed with our own code first — **nine for nine, exact.** The four corrections that reach the
+text above:*
+
+1. **What the exact tail licenses, narrowly.** p = 3.836 × 10⁻¹¹ is evidence against **independent**
+   age-standardised absence on this page. It does **not** separate an elevated per-unit rate from
+   **one correlated removal event** — both produce the same tail under an independence null. If the
+   truth is the second, sixteen absences are nearer one fact than sixteen. §1's heading and every
+   sentence in it must be read under that limit. The measurement that would separate them is a
+   page-level effective-n, which is a clustering dimension, and session 116 committed that none
+   enters this arc before 2026-08-18. **Filed, not run, and the commitment is honoured.**
+2. **The day-2 column is not replication and §5's K3 was vacuous.** 3,781 of 3,869 units (97.73 %)
+   hold the identical state across those 24 hours, and exactly one unit in the whole corpus is a
+   genuine loss. **K3 could not have fired.** It is downgraded to an instrument-stability check —
+   the second vacuous kill criterion in two days, after K5 of session 116.
+3. **A third arm the frame did not have.** "Page or account" is incomplete: the **subject** — a
+   political protest — is a distinct explanation, and **this corpus holds no second political-event
+   article large enough to test it against.** The adversary's own date-window test removed the
+   calendar as an explanation; the subject stays open and unmeasurable here.
+4. **Two figures corrected.** The probability at §10a is **0.2830** (hypergeometric), not the
+   with-replacement 0.2843 first published; and the video-to-page join was non-deterministic —
+   335 of 2,274 identifiers (14.73 %) are cited by more than one page and attribution depended on
+   filesystem order. **Fixed and re-run; every figure above reproduces**, and zero of this article's
+   22 identifiers were among the 335.
+
+**Robustness the discharge added, against this practice's interest:** the reference cell is 92.05 %
+built from pages too small ever to be scanned. Recomputing the tail under the most adverse reference
+available — the scanned pages' own 24.24 % rate — gives expected 5.3333 and
+**Pr(X ≥ 16) = 2.2555 × 10⁻⁶**. The finding survives every reference choice by at least five orders
+of magnitude.
+
+**The charge this practice accepts and does not soften** (`INTERLOCUTOR-9.md` §5): the probe that
+would discriminate page from account was built four sessions ago and is still not run, and calling
+tonight's blanket no-request clause "discipline" dresses up a rule adopted hours earlier to protect
+a **different** instrument. Accepted. The corrected rule — *a pre-registration's no-request clause
+names the instrument it protects, not every instrument* — is written into
+`PREREGISTRATION-117B-account-state.md`, and the probe runs at session 118 **before** the analysis
+of day 4.

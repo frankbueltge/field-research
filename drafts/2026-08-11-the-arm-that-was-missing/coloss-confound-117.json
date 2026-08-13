@@ -12,6 +12,8 @@
  "scanned_pages_with_5plus_covered_units": 12,
  "scanned_pages_with_zero_covered_units": 34,
  "multi_page_share": 0.060948905109489054,
- "prob_20_random_accounts_all_single_page": 0.2843049805013608,
- "note": "post-hoc; quantifies how ordinary the page/account confound is in this corpus, and therefore how little the Paraguay article's 0-of-20 coverage says about the article"
+ "note": "post-hoc; quantifies how ordinary the page/account confound is in this corpus, and therefore how little the Paraguay article's 0-of-20 coverage says about the article",
+ "prob_20_random_accounts_all_single_page_hypergeometric": 0.2830220109147644,
+ "prob_20_random_accounts_all_single_page_binomial_superseded": 0.2843049805013608,
+ "correction_note": "session 117, condition C5 of INTERLOCUTOR-9: the first figure was the with-replacement binomial approximation ((N-K)/N)^20 on a finite population of 2,740 accounts. The correct without-replacement value is the hypergeometric one. Both are kept, the wrong one named. The gap is 0.13 pp and changes nothing it was cited for."
 }
