@@ -1,0 +1,432 @@
+{
+ "session": 115,
+ "reproducing": "INTERLOCUTOR-7.md",
+ "no_new_requests": true,
+ "note": "Every figure the adversary used against this session, recomputed here with this file's own code. AGREES / DISAGREES is stated per item.",
+ "I6_I7_cells": {
+  "eligible_cells": 17,
+  "min": 0.9865,
+  "max": 1.6739,
+  "median": 1.2331,
+  "below_pooled_point": 14,
+  "above_pooled_point": 3,
+  "significantly_below": 7,
+  "significantly_above": 0,
+  "inadmissible_rho_gt_1": [
+   "2019",
+   "2020"
+  ],
+  "cells": [
+   {
+    "partition": "age band",
+    "cell": "0-1y",
+    "n": 494,
+    "accounts": 391,
+    "deff": 1.2113,
+    "kish": 4.0283,
+    "implied_rho": 0.0698,
+    "admissible_rho_le_1": true,
+    "bootstrap_ci95": [
+     0.9854,
+     1.4903
+    ],
+    "vs_pooled": "not distinguishable from pooled"
+   },
+   {
+    "partition": "age band",
+    "cell": "1-2y",
+    "n": 775,
+    "accounts": 611,
+    "deff": 1.2671,
+    "kish": 2.0529,
+    "implied_rho": 0.2537,
+    "admissible_rho_le_1": true,
+    "bootstrap_ci95": [
+     1.0888,
+     1.4761
+    ],
+    "vs_pooled": "not distinguishable from pooled"
+   },
+   {
+    "partition": "age band",
+    "cell": "2-3y",
+    "n": 790,
+    "accounts": 675,
+    "deff": 1.2331,
+    "kish": 2.2608,
+    "implied_rho": 0.1849,
+    "admissible_rho_le_1": true,
+    "bootstrap_ci95": [
+     1.0402,
+     1.4879
+    ],
+    "vs_pooled": "not distinguishable from pooled"
+   },
+   {
+    "partition": "age band",
+    "cell": "3-4y",
+    "n": 673,
+    "accounts": 593,
+    "deff": 1.1844,
+    "kish": 1.5082,
+    "implied_rho": 0.3628,
+    "admissible_rho_le_1": true,
+    "bootstrap_ci95": [
+     1.0594,
+     1.3225
+    ],
+    "vs_pooled": "below, interval excludes pooled"
+   },
+   {
+    "partition": "age band",
+    "cell": "4-5y",
+    "n": 461,
+    "accounts": 373,
+    "deff": 1.2009,
+    "kish": 1.8416,
+    "implied_rho": 0.2387,
+    "admissible_rho_le_1": true,
+    "bootstrap_ci95": [
+     1.0935,
+     1.3142
+    ],
+    "vs_pooled": "below, interval excludes pooled"
+   },
+   {
+    "partition": "age band",
+    "cell": "5y+",
+    "n": 382,
+    "accounts": 303,
+    "deff": 1.506,
+    "kish": 1.8325,
+    "implied_rho": 0.6078,
+    "admissible_rho_le_1": true,
+    "bootstrap_ci95": [
+     1.1808,
+     1.8403
+    ],
+    "vs_pooled": "not distinguishable from pooled"
+   },
+   {
+    "partition": "stratum",
+    "cell": "F-forum",
+    "n": 449,
+    "accounts": 400,
+    "deff": 1.1859,
+    "kish": 1.3563,
+    "implied_rho": 0.5216,
+    "admissible_rho_le_1": true,
+    "bootstrap_ci95": [
+     1.0477,
+     1.3666
+    ],
+    "vs_pooled": "below, interval excludes pooled"
+   },
+   {
+    "partition": "stratum",
+    "cell": "W-article",
+    "n": 2375,
+    "accounts": 1799,
+    "deff": 1.4688,
+    "kish": 2.9343,
+    "implied_rho": 0.2424,
+    "admissible_rho_le_1": true,
+    "bootstrap_ci95": [
+     1.2355,
+     1.7454
+    ],
+    "vs_pooled": "not distinguishable from pooled"
+   },
+   {
+    "partition": "stratum",
+    "cell": "W-other-ns",
+    "n": 751,
+    "accounts": 595,
+    "deff": 1.3292,
+    "kish": 1.9268,
+    "implied_rho": 0.3553,
+    "admissible_rho_le_1": true,
+    "bootstrap_ci95": [
+     1.1489,
+     1.5206
+    ],
+    "vs_pooled": "not distinguishable from pooled"
+   },
+   {
+    "partition": "calendar year",
+    "cell": "2019",
+    "n": 35,
+    "accounts": 32,
+    "deff": 1.2663,
+    "kish": 1.1714,
+    "implied_rho": 1.5534,
+    "admissible_rho_le_1": false,
+    "bootstrap_ci95": [
+     1.0323,
+     1.5834
+    ],
+    "vs_pooled": "not distinguishable from pooled"
+   },
+   {
+    "partition": "calendar year",
+    "cell": "2020",
+    "n": 163,
+    "accounts": 134,
+    "deff": 1.6739,
+    "kish": 1.5521,
+    "implied_rho": 1.2206,
+    "admissible_rho_le_1": false,
+    "bootstrap_ci95": [
+     1.0163,
+     2.1907
+    ],
+    "vs_pooled": "not distinguishable from pooled"
+   },
+   {
+    "partition": "calendar year",
+    "cell": "2021",
+    "n": 322,
+    "accounts": 252,
+    "deff": 1.2019,
+    "kish": 1.9938,
+    "implied_rho": 0.2031,
+    "admissible_rho_le_1": true,
+    "bootstrap_ci95": [
+     1.0571,
+     1.3459
+    ],
+    "vs_pooled": "below, interval excludes pooled"
+   },
+   {
+    "partition": "calendar year",
+    "cell": "2022",
+    "n": 530,
+    "accounts": 440,
+    "deff": 1.2487,
+    "kish": 1.8868,
+    "implied_rho": 0.2804,
+    "admissible_rho_le_1": true,
+    "bootstrap_ci95": [
+     1.079,
+     1.4336
+    ],
+    "vs_pooled": "not distinguishable from pooled"
+   },
+   {
+    "partition": "calendar year",
+    "cell": "2023",
+    "n": 793,
+    "accounts": 711,
+    "deff": 1.1287,
+    "kish": 1.2951,
+    "implied_rho": 0.436,
+    "admissible_rho_le_1": true,
+    "bootstrap_ci95": [
+     1.0469,
+     1.2299
+    ],
+    "vs_pooled": "below, interval excludes pooled"
+   },
+   {
+    "partition": "calendar year",
+    "cell": "2024",
+    "n": 755,
+    "accounts": 623,
+    "deff": 1.2244,
+    "kish": 2.4358,
+    "implied_rho": 0.1563,
+    "admissible_rho_le_1": true,
+    "bootstrap_ci95": [
+     1.0726,
+     1.4223
+    ],
+    "vs_pooled": "below, interval excludes pooled"
+   },
+   {
+    "partition": "calendar year",
+    "cell": "2025",
+    "n": 705,
+    "accounts": 553,
+    "deff": 1.35,
+    "kish": 3.7574,
+    "implied_rho": 0.1269,
+    "admissible_rho_le_1": true,
+    "bootstrap_ci95": [
+     1.0597,
+     1.6881
+    ],
+    "vs_pooled": "not distinguishable from pooled"
+   },
+   {
+    "partition": "calendar year",
+    "cell": "2026",
+    "n": 269,
+    "accounts": 227,
+    "deff": 0.9865,
+    "kish": 1.6171,
+    "implied_rho": -0.0219,
+    "admissible_rho_le_1": true,
+    "bootstrap_ci95": [
+     0.9079,
+     1.0353
+    ],
+    "vs_pooled": "below, interval excludes pooled"
+   }
+  ]
+ },
+ "I6_the_cell_that_is_not_one_of_the_17": {
+  "cell": "6-7y (integer-age partition, NOT among the 17)",
+  "n": 108,
+  "accounts": 90,
+  "deff": 1.7052,
+  "kish": 1.5,
+  "implied_rho": 1.4105,
+  "admissible_rho_le_1": false,
+  "bootstrap_ci95": [
+   1.0575,
+   2.1588
+  ]
+ },
+ "I3_pooled_deff_bootstrap": {
+  "reps": 4000,
+  "mean": 1.4237,
+  "sd": 0.0894,
+  "ci95": [
+   1.2648,
+   1.6156
+  ]
+ },
+ "I3_half_width_factor": {
+  "point": 1.1954,
+  "ci95": [
+   1.1246,
+   1.2711
+  ]
+ },
+ "I8_conditional_deff": {
+  "pooled_against_grand_rate": 1.4289,
+  "conditional_on_age_band": 1.3791,
+  "conditional_on_stratum": 1.4136,
+  "conditional_on_calendar_year": 1.3721,
+  "conditional_on_band_x_stratum": 1.3618,
+  "cell_median": 1.2331
+ },
+ "I8_cluster_splitting": {
+  "accounts": 2744,
+  "singletons": 2366,
+  "multi_video_accounts": 378,
+  "pooled_kish": 2.605,
+  "cell_kish_min": 1.1714,
+  "cell_kish_max": 4.0283,
+  "cell_kish_median": 1.8868,
+  "multi_accounts_wholly_in_one_age_band": 54.2,
+  "multi_accounts_wholly_in_one_calendar_year": 50.3,
+  "pooled_implied_rho": 0.2672,
+  "cells_with_rho_above_pooled": 8
+ },
+ "I10_handle_drift": {
+  "k": 227,
+  "n": 3124,
+  "rate_pct": 7.2663,
+  "accounts": 2377,
+  "own_deff": 1.9457,
+  "kish": 2.6959,
+  "implied_rho": 0.5577,
+  "admissible_rho_le_1": true,
+  "published_ci": [
+   6.38,
+   8.2
+  ],
+  "reproduced_naive_ci": [
+   6.4076,
+   8.23
+  ],
+  "restated_at_pooled": [
+   6.2516,
+   8.431
+  ],
+  "restated_at_own_deff": [
+   6.096,
+   8.6406
+  ],
+  "bootstrap_ci95_on_deff": [
+   1.5002,
+   2.4347
+  ]
+ },
+ "I1_omitted": [
+  {
+   "what": "INCREMENT-3 §3a — expected absence for the receiver's eleven, 13.77 %",
+   "published_ci": [
+    11.39,
+    16.55
+   ],
+   "note": "built from the per-band Wilson bounds of §1a, every one of which is restated in §3a of the restatement; the expected-absence interval inherits their widening and is restated by construction",
+   "restated_ci_from_widened_bands": [
+    12.4678,
+    15.1678
+   ]
+  },
+  {
+   "what": "INCREMENT-2 — rule-of-three upper bound, 0 events in 3,111",
+   "published_pct": 0.0964,
+   "restated_pct": 0.1378,
+   "ratio": 1.4289
+  },
+  {
+   "what": "INCREMENT-2 — the return rate, 1 of 432",
+   "published_ci": [
+    0.0409,
+    1.2994
+   ],
+   "reproduced_naive_ci": [
+    0.0409,
+    1.2994
+   ],
+   "restated_ci": [
+    0.0315,
+    1.6803
+   ]
+  }
+ ],
+ "I5_overlap": {
+  "census_n": 2201,
+  "run110_n": 2904,
+  "day2_n": 3869,
+  "census_inside_day2": 2201,
+  "census_inside_day2_pct": 100.0,
+  "run110_inside_day2": 2904,
+  "run110_inside_day2_pct": 100.0,
+  "in_all_three": 2201,
+  "in_day2_only": 965
+ },
+ "I_power_of_the_within_account_permutation": {
+  "units": 3575,
+  "units_that_can_move": 113,
+  "pct_that_can_move": 3.16,
+  "singleton_accounts": 2366,
+  "multi_accounts": 378,
+  "multi_accounts_all_present_or_all_absent": 351,
+  "verdict": "the permutation is mostly the identity — the test has little power and its p-value cannot support a claim that the page adds nothing"
+ },
+ "I2_pair_decomposition": {
+  "all_pages": {
+   "pairs": 2316,
+   "both_absent": 187,
+   "expected": 33.82,
+   "ratio": 5.5295
+  },
+  "the_one_article": {
+   "pairs": 250,
+   "both_absent": 133,
+   "expected": 136.58,
+   "ratio": 0.9738
+  },
+  "everything_else": {
+   "pairs": 2066,
+   "both_absent": 54,
+   "expected": 28.2,
+   "ratio": 1.9148
+  }
+ }
+}

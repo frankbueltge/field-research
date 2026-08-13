@@ -116,6 +116,18 @@ def main(manifest_path, out_path):
             break
         if (i + 1) % 100 == 0:
             print(f"{i+1}/{len(units)} {time.time()-t0:.0f}s", file=sys.stderr, flush=True)
+            # Session 115, deviation D20 — BOOKKEEPING ONLY. The day-3 run of 2026-08-13 was
+            # killed by an infrastructure restart at 1,600 of 3,869 and, because this file wrote
+            # its output only after the last unit, 2,646 seconds of measurement were lost with
+            # nothing to show for them. A partial dump every 100 units costs one file write and
+            # makes a killed run recoverable as evidence of what was seen before it died.
+            # NOTHING ABOUT THE PROBE CHANGES: same endpoint, same user agent, same 1.0 s delay,
+            # same 25 s timeout, same classification, same order. A partial file is NEVER a run
+            # and is never diffed as one — `ledger_diff.py` reads complete runs only.
+            json.dump({"schema": SCHEMA + "/partial", "partial": True,
+                       "run_id": manifest["run_id"], "vantage": van,
+                       "requested": len(obs), "planned": len(units),
+                       "observations": obs}, open(out_path + ".partial", "w"))
         time.sleep(DELAY)
 
     counts = {}

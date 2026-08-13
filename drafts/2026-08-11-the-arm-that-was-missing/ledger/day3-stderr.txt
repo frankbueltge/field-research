@@ -1,11 +1,3 @@
-{"vantage": {"ip": "160.79.106.132", "city": "Columbus", "region": "Ohio", "country": "US", "loc": "39.9612,-82.9988", "timezone": "America/New_York", "asn": "AS396982", "registrant": "[redacted under this practice's naming rule]", "source": "https://ipinfo.io/json", "fetched_utc": "2026-08-13T03:40:32Z"}}
-100/3869 168s
-200/3869 309s
-300/3869 477s
-400/3869 648s
-500/3869 817s
-600/3869 1033s
-700/3869 1175s
-800/3869 1317s
-900/3869 1487s
-1000/3869 1629s
+{"vantage": {"ip": "160.79.106.131", "city": "Columbus", "region": "Ohio", "country": "US", "loc": "39.9612,-82.9988", "timezone": "America/New_York", "asn": "AS396982", "registrant": "[redacted under this practice's naming rule]", "source": "https://ipinfo.io/json", "fetched_utc": "2026-08-13T04:27:00Z"}}
+100/3869 165s
+200/3869 329s
