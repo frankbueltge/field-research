@@ -1,0 +1,195 @@
+{
+ "session": 115,
+ "run": "ledger/run-2026-08-12T0341Z.json",
+ "no_new_requests": true,
+ "min_units": 10,
+ "pages_scored": 14,
+ "units_in_scored_pages": 282,
+ "family_monte_carlo": {
+  "draws": 20000,
+  "seed": 20260813,
+  "statistic": "the largest absent-minus-expected excess over ALL scored pages",
+  "observed_top_excess": 13.538,
+  "null_mean_max": 2.7009,
+  "null_p95_max": 5.2008,
+  "null_max_max": 12.2881,
+  "n_ge_observed": 0,
+  "p_value_family_wise": 4.999750012499375e-05
+ },
+ "top_20_by_excess": [
+  {
+   "page": "es.wikipedia.org|Protestas en Paraguay de 2023",
+   "units": 23,
+   "absent": 17,
+   "expected_from_age_and_arm": 3.462,
+   "excess": 13.538,
+   "absence_rate": 0.7391,
+   "distinct_handles": 20
+  },
+  {
+   "page": "forum|41487903",
+   "units": 10,
+   "absent": 4,
+   "expected_from_age_and_arm": 1.543,
+   "excess": 2.457,
+   "absence_rate": 0.4,
+   "distinct_handles": 9
+  },
+  {
+   "page": "en.wikipedia.org|User:اتا بكر/sandbox",
+   "units": 16,
+   "absent": 1,
+   "expected_from_age_and_arm": 0.691,
+   "excess": 0.309,
+   "absence_rate": 0.0625,
+   "distinct_handles": 5
+  },
+  {
+   "page": "id.wikipedia.org|Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "units": 39,
+   "absent": 8,
+   "expected_from_age_and_arm": 7.712,
+   "excess": 0.288,
+   "absence_rate": 0.2051,
+   "distinct_handles": 36
+  },
+  {
+   "page": "es.wikipedia.org|Johanne Sacreblu",
+   "units": 11,
+   "absent": 0,
+   "expected_from_age_and_arm": 0.65,
+   "excess": -0.65,
+   "absence_rate": 0.0,
+   "distinct_handles": 2
+  },
+  {
+   "page": "ja.wikipedia.org|WAVE (俳優ユニット)",
+   "units": 13,
+   "absent": 0,
+   "expected_from_age_and_arm": 0.768,
+   "excess": -0.768,
+   "absence_rate": 0.0,
+   "distinct_handles": 1
+  },
+  {
+   "page": "pt.wikipedia.org|Lista dos vídeos mais curtidos no TikTok",
+   "units": 22,
+   "absent": 3,
+   "expected_from_age_and_arm": 3.799,
+   "excess": -0.799,
+   "absence_rate": 0.1364,
+   "distinct_handles": 15
+  },
+  {
+   "page": "tr.wikipedia.org|En çok beğenilen TikTok videoları listesi",
+   "units": 17,
+   "absent": 2,
+   "expected_from_age_and_arm": 2.936,
+   "excess": -0.936,
+   "absence_rate": 0.1176,
+   "distinct_handles": 14
+  },
+  {
+   "page": "id.wikipedia.org|Sayonara Crawl (singel JKT48)",
+   "units": 12,
+   "absent": 0,
+   "expected_from_age_and_arm": 1.134,
+   "excess": -1.134,
+   "absence_rate": 0.0,
+   "distinct_handles": 12
+  },
+  {
+   "page": "de.wikipedia.org|Benutzer:Sophie0504/Entwurf",
+   "units": 15,
+   "absent": 0,
+   "expected_from_age_and_arm": 1.519,
+   "excess": -1.519,
+   "absence_rate": 0.0,
+   "distinct_handles": 3
+  },
+  {
+   "page": "ja.wikipedia.org|NINE LIVES",
+   "units": 36,
+   "absent": 0,
+   "expected_from_age_and_arm": 1.636,
+   "excess": -1.636,
+   "absence_rate": 0.0,
+   "distinct_handles": 1
+  },
+  {
+   "page": "ja.wikipedia.org|大島璃乃",
+   "units": 24,
+   "absent": 0,
+   "expected_from_age_and_arm": 1.985,
+   "excess": -1.985,
+   "absence_rate": 0.0,
+   "distinct_handles": 4
+  },
+  {
+   "page": "ja.wikipedia.org|パンダドラゴン",
+   "units": 18,
+   "absent": 0,
+   "expected_from_age_and_arm": 2.177,
+   "excess": -2.177,
+   "absence_rate": 0.0,
+   "distinct_handles": 6
+  },
+  {
+   "page": "ja.wikipedia.org|コアラモード.",
+   "units": 26,
+   "absent": 0,
+   "expected_from_age_and_arm": 2.458,
+   "excess": -2.458,
+   "absence_rate": 0.0,
+   "distinct_handles": 1
+  }
+ ],
+ "bottom_5_by_excess": [
+  {
+   "page": "de.wikipedia.org|Benutzer:Sophie0504/Entwurf",
+   "units": 15,
+   "absent": 0,
+   "expected_from_age_and_arm": 1.519,
+   "excess": -1.519,
+   "absence_rate": 0.0,
+   "distinct_handles": 3
+  },
+  {
+   "page": "ja.wikipedia.org|NINE LIVES",
+   "units": 36,
+   "absent": 0,
+   "expected_from_age_and_arm": 1.636,
+   "excess": -1.636,
+   "absence_rate": 0.0,
+   "distinct_handles": 1
+  },
+  {
+   "page": "ja.wikipedia.org|大島璃乃",
+   "units": 24,
+   "absent": 0,
+   "expected_from_age_and_arm": 1.985,
+   "excess": -1.985,
+   "absence_rate": 0.0,
+   "distinct_handles": 4
+  },
+  {
+   "page": "ja.wikipedia.org|パンダドラゴン",
+   "units": 18,
+   "absent": 0,
+   "expected_from_age_and_arm": 2.177,
+   "excess": -2.177,
+   "absence_rate": 0.0,
+   "distinct_handles": 6
+  },
+  {
+   "page": "ja.wikipedia.org|コアラモード.",
+   "units": 26,
+   "absent": 0,
+   "expected_from_age_and_arm": 2.458,
+   "excess": -2.458,
+   "absence_rate": 0.0,
+   "distinct_handles": 1
+  }
+ ],
+ "note": "Expected counts come from each unit's own age-band x arm absence rate in the same run, so a page of old forum videos is not scored against a corpus-wide rate. The family-wise test asks how often the MAXIMUM excess over all scored pages reaches the observed maximum — the only question that can be asked of a cell that was selected for being extreme."
+}

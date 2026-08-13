@@ -1,0 +1,324 @@
+{
+ "session": 115,
+ "run": "ledger/run-2026-08-12T0341Z.json",
+ "no_new_requests": true,
+ "population": {
+  "analysable": 3575,
+  "with_a_citing_page": 3575,
+  "excluded_from_load": {
+   "arm_B_truncated": 249,
+   "indeterminate": 38,
+   "not_19_digit": 7,
+   "nonpositive_age": 0
+  }
+ },
+ "heaviest_page": {
+  "key": "es.wikipedia.org|Protestas en Paraguay de 2023",
+  "units": 23,
+  "absent": 17,
+  "distinct_handles": 20,
+  "creation_span_days": 14.9,
+  "videos": [
+   {
+    "vid": "7228616977554607365",
+    "handle": "deidara_ff28",
+    "created_utc": "2023-05-02T16:05:43Z",
+    "absent": 1,
+    "arm": "A"
+   },
+   {
+    "vid": "7228637080052714758",
+    "handle": "jennifergomezpy",
+    "created_utc": "2023-05-02T17:23:44Z",
+    "absent": 1,
+    "arm": "A"
+   },
+   {
+    "vid": "7228640196877651205",
+    "handle": "nicolstefanygaleano",
+    "created_utc": "2023-05-02T17:35:49Z",
+    "absent": 1,
+    "arm": "A"
+   },
+   {
+    "vid": "7228680058662030598",
+    "handle": "kattyagonzalezoficial",
+    "created_utc": "2023-05-02T20:10:30Z",
+    "absent": 0,
+    "arm": "A"
+   },
+   {
+    "vid": "7228718965843840262",
+    "handle": "natanahelcaceres1",
+    "created_utc": "2023-05-02T22:41:29Z",
+    "absent": 1,
+    "arm": "A"
+   },
+   {
+    "vid": "7228741383975095558",
+    "handle": "payo_junior_oficial",
+    "created_utc": "2023-05-03T00:08:29Z",
+    "absent": 0,
+    "arm": "A"
+   },
+   {
+    "vid": "7228743556028976390",
+    "handle": "julianpy20",
+    "created_utc": "2023-05-03T00:16:54Z",
+    "absent": 1,
+    "arm": "A"
+   },
+   {
+    "vid": "7228775822222724357",
+    "handle": "franciscogaleano994",
+    "created_utc": "2023-05-03T02:22:07Z",
+    "absent": 0,
+    "arm": "A"
+   },
+   {
+    "vid": "7228799085623414021",
+    "handle": "ruth.quinonez",
+    "created_utc": "2023-05-03T03:52:23Z",
+    "absent": 1,
+    "arm": "A"
+   },
+   {
+    "vid": "7228830727180242182",
+    "handle": "steven_colman",
+    "created_utc": "2023-05-03T05:55:11Z",
+    "absent": 1,
+    "arm": "A"
+   },
+   {
+    "vid": "7228956569176689925",
+    "handle": "julianpy20",
+    "created_utc": "2023-05-03T14:03:30Z",
+    "absent": 1,
+    "arm": "A"
+   },
+   {
+    "vid": "7228972825103600902",
+    "handle": "paraguayovalema",
+    "created_utc": "2023-05-03T15:06:35Z",
+    "absent": 1,
+    "arm": "A"
+   },
+   {
+    "vid": "7228982733396135174",
+    "handle": "nicolstefanygaleano",
+    "created_utc": "2023-05-03T15:45:02Z",
+    "absent": 1,
+    "arm": "A"
+   },
+   {
+    "vid": "7228998595347844358",
+    "handle": "asael_matias",
+    "created_utc": "2023-05-03T16:46:35Z",
+    "absent": 1,
+    "arm": "A"
+   },
+   {
+    "vid": "7229825405388164358",
+    "handle": "efrainalegreoficial",
+    "created_utc": "2023-05-05T22:15:02Z",
+    "absent": 0,
+    "arm": "A"
+   },
+   {
+    "vid": "7230128819863178502",
+    "handle": "eliasalcaraz_10",
+    "created_utc": "2023-05-06T17:52:26Z",
+    "absent": 1,
+    "arm": "A"
+   },
+   {
+    "vid": "7230168662945189126",
+    "handle": "monicaaquino191",
+    "created_utc": "2023-05-06T20:27:03Z",
+    "absent": 0,
+    "arm": "A"
+   },
+   {
+    "vid": "7230206878653877509",
+    "handle": "ndopaveixx",
+    "created_utc": "2023-05-06T22:55:21Z",
+    "absent": 1,
+    "arm": "A"
+   },
+   {
+    "vid": "7230294910551772422",
+    "handle": "jhonyhermosilla76",
+    "created_utc": "2023-05-07T04:36:57Z",
+    "absent": 1,
+    "arm": "A"
+   },
+   {
+    "vid": "7234091079065357573",
+    "handle": "danielacua2",
+    "created_utc": "2023-05-17T10:08:02Z",
+    "absent": 1,
+    "arm": "A"
+   },
+   {
+    "vid": "7234121532635761926",
+    "handle": "bruno_martiinez",
+    "created_utc": "2023-05-17T12:06:12Z",
+    "absent": 0,
+    "arm": "A"
+   },
+   {
+    "vid": "7234134054667390214",
+    "handle": "mauricio_espinola4",
+    "created_utc": "2023-05-17T12:54:48Z",
+    "absent": 1,
+    "arm": "A"
+   },
+   {
+    "vid": "7234147908206071045",
+    "handle": "ndopaveixx",
+    "created_utc": "2023-05-17T13:48:33Z",
+    "absent": 1,
+    "arm": "A"
+   }
+  ],
+  "creation_sd_days_absent": 5.515,
+  "creation_sd_days_present": 5.634,
+  "note": "Creation dates are decoded from the identifiers by this arc's stated dating rule (created = int(vid) >> 32), validated at session 109 against the dark dashboard's own displayed dates, 9 of 11 to within 60 seconds. Absence is public retrievability from one vantage on 2026-08-12 and never means deletion."
+ },
+ "design_effects": {
+  "page_key_all": {
+   "n": 3575,
+   "groups": 2640,
+   "rate": 0.12083916083916084,
+   "deff": 1.885389216967676
+  },
+  "account_key_all": {
+   "n": 3575,
+   "groups": 2744,
+   "rate": 0.12083916083916084,
+   "deff": 1.428865343926577
+  }
+ },
+ "largest_pages": [
+  {
+   "key": "id.wikipedia.org|Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "units": 39,
+   "absent": 8,
+   "distinct_handles": 36
+  },
+  {
+   "key": "ja.wikipedia.org|NINE LIVES",
+   "units": 36,
+   "absent": 0,
+   "distinct_handles": 1
+  },
+  {
+   "key": "ja.wikipedia.org|コアラモード.",
+   "units": 26,
+   "absent": 0,
+   "distinct_handles": 1
+  },
+  {
+   "key": "ja.wikipedia.org|大島璃乃",
+   "units": 24,
+   "absent": 0,
+   "distinct_handles": 4
+  },
+  {
+   "key": "es.wikipedia.org|Protestas en Paraguay de 2023",
+   "units": 23,
+   "absent": 17,
+   "distinct_handles": 20
+  },
+  {
+   "key": "pt.wikipedia.org|Lista dos vídeos mais curtidos no TikTok",
+   "units": 22,
+   "absent": 3,
+   "distinct_handles": 15
+  },
+  {
+   "key": "ja.wikipedia.org|パンダドラゴン",
+   "units": 18,
+   "absent": 0,
+   "distinct_handles": 6
+  },
+  {
+   "key": "tr.wikipedia.org|En çok beğenilen TikTok videoları listesi",
+   "units": 17,
+   "absent": 2,
+   "distinct_handles": 14
+  },
+  {
+   "key": "en.wikipedia.org|User:اتا بكر/sandbox",
+   "units": 16,
+   "absent": 1,
+   "distinct_handles": 5
+  },
+  {
+   "key": "de.wikipedia.org|Benutzer:Sophie0504/Entwurf",
+   "units": 15,
+   "absent": 0,
+   "distinct_handles": 3
+  }
+ ],
+ "null_page_within_ageband_arm": {
+  "observed_rho": 0.4611145056611273,
+  "draws": 10000,
+  "null_mean": 0.03962331232040244,
+  "null_p95": 0.1306163710551051,
+  "null_max": 0.24289481141573147,
+  "n_ge_observed": 0,
+  "p_value": 9.999000099990002e-05
+ },
+ "null_page_within_creation_week": {
+  "observed_rho": 0.4611145056611273,
+  "draws": 10000,
+  "null_mean": 0.08152815321966725,
+  "null_p95": 0.16521346513055865,
+  "null_max": 0.2748419193889473,
+  "n_ge_observed": 0,
+  "p_value": 9.999000099990002e-05
+ },
+ "null_page_within_account": {
+  "observed_rho": 0.4611145056611273,
+  "draws": 10000,
+  "null_mean": 0.4509238142718442,
+  "null_p95": 0.46715583766245783,
+  "null_max": 0.49511642876277223,
+  "n_ge_observed": 1417,
+  "p_value": 0.14178582141785823
+ },
+ "null_account_within_page": {
+  "observed_rho": 0.7912101982752706,
+  "draws": 10000,
+  "null_mean": 0.6961842962353441,
+  "null_p95": 0.7309495485214168,
+  "null_max": 0.7738853812223878,
+  "n_ge_observed": 0,
+  "p_value": 9.999000099990002e-05
+ },
+ "without_the_heaviest_page": {
+  "n": 3552,
+  "page_key_deff": {
+   "n": 3552,
+   "groups": 2639,
+   "rate": 0.11683558558558559,
+   "deff": 1.39487442731042
+  },
+  "account_key_deff": {
+   "n": 3552,
+   "groups": 2724,
+   "rate": 0.11683558558558559,
+   "deff": 1.4217071924761135
+  },
+  "null_page_within_ageband_arm": {
+   "observed_rho": 0.4788516869605448,
+   "draws": 10000,
+   "null_mean": 0.040649845497874156,
+   "null_p95": 0.13411883685479228,
+   "null_max": 0.21735870640955157,
+   "n_ge_observed": 0,
+   "p_value": 9.999000099990002e-05
+  }
+ }
+}
