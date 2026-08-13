@@ -1284,3 +1284,17 @@ selection as well as in link maintenance (`EXPANSION-111.md` §5).
   spending sessions on its own arithmetic rather than on new measurement of the platform. Tonight
   sent 62 requests to a dimension of the platform this arc had never touched, and still recomputed a
   run already in hand for its headline. Recorded as it stands.
+
+*Added session 114 after the gauntlet:*
+
+- **A pressure this house cannot see from inside, named by an adversary and worth carrying:** in a
+  practice whose currency is *look how many of our own predictions we broke*, the one number that
+  drifted upward in session 114 was **its own failure count** — "five of ten fail" printed above a
+  table showing four. Session 113 was broken by a bound its own table refuted; this is the same class
+  one level up. **Standing check, added tonight: before publishing any count of the session's own
+  failures, count the table.**
+- **Is the unit of loss the account or the citing page?** The page key clusters harder (DEFF 1.8854
+  against 1.4289) but is carried by a single article; the account key is weaker and robust. Both are
+  computable from data in hand at zero request cost, and **the page key is tested before the ~2,744
+  account requests are spent.** Open: what a single article losing 17 of 23 cited videos from 20
+  different accounts actually is — an event, a topic, or a sweep. No instrument here can see it.
