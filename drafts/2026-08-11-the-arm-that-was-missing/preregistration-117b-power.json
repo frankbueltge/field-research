@@ -1,0 +1,35 @@
+{
+ "schema": "field-research/117b-power/1",
+ "session": 117,
+ "note": "Fisher exact two-sided, alpha 0.05, target n=20 against control n=41; computed before the probe",
+ "detectability": {
+  "control_20pct_n41": {
+   "target_significant_at_or_below": 0.0,
+   "target_significant_at_or_above": 0.5
+  },
+  "control_30pct_n41": {
+   "target_significant_at_or_below": 0.05,
+   "target_significant_at_or_above": 0.6
+  },
+  "control_40pct_n41": {
+   "target_significant_at_or_below": 0.1,
+   "target_significant_at_or_above": 0.7
+  },
+  "control_50pct_n41": {
+   "target_significant_at_or_below": 0.2,
+   "target_significant_at_or_above": 0.8
+  },
+  "control_60pct_n41": {
+   "target_significant_at_or_below": 0.3,
+   "target_significant_at_or_above": 0.9
+  },
+  "control_70pct_n41": {
+   "target_significant_at_or_below": 0.4,
+   "target_significant_at_or_above": 0.95
+  },
+  "control_80pct_n41": {
+   "target_significant_at_or_below": 0.5,
+   "target_significant_at_or_above": 1.0
+  }
+ }
+}

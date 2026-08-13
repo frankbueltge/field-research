@@ -1,0 +1,613 @@
+{
+ "schema": "field-research/coloss-power/1",
+ "session": 117,
+ "post_hoc": true,
+ "note": "NOT pre-registered; written after the scan was run",
+ "run": "ledger/run-2026-08-13T0427Z.json",
+ "bonferroni_alpha": 0.000925925925925926,
+ "pages_scanned": 54,
+ "pages_undetectable_at_any_count": 0,
+ "min_detectable_share_median": 0.6666666666666666,
+ "min_detectable_share_min": 0.22857142857142856,
+ "min_detectable_share_max": 1.0,
+ "min_detectable_excess_median": 4.259868421052632,
+ "detectability_by_page": [
+  {
+   "page": "id.wikipedia.org|Pembicaraan:JKT48 12th Anniversary Concert \"FLOWERFUL\"",
+   "n": 40,
+   "absent": 8,
+   "expected": 7.909604519774013,
+   "min_detectable_absent": 17,
+   "min_detectable_excess": 9.090395480225986,
+   "min_detectable_share": 0.425,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|NINE LIVES",
+   "n": 35,
+   "absent": 0,
+   "expected": 1.830065359477125,
+   "min_detectable_absent": 8,
+   "min_detectable_excess": 6.169934640522875,
+   "min_detectable_share": 0.22857142857142856,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|\u30b3\u30a2\u30e9\u30e2\u30fc\u30c9.",
+   "n": 26,
+   "absent": 0,
+   "expected": 2.50965250965251,
+   "min_detectable_absent": 9,
+   "min_detectable_excess": 6.4903474903474905,
+   "min_detectable_share": 0.34615384615384615,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|\u5927\u5cf6\u7483\u4e43",
+   "n": 23,
+   "absent": 0,
+   "expected": 1.9794297929891151,
+   "min_detectable_absent": 8,
+   "min_detectable_excess": 6.020570207010885,
+   "min_detectable_share": 0.34782608695652173,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "es.wikipedia.org|Protestas en Paraguay de 2023",
+   "n": 22,
+   "absent": 16,
+   "expected": 3.2219679633867275,
+   "min_detectable_absent": 10,
+   "min_detectable_excess": 6.778032036613272,
+   "min_detectable_share": 0.45454545454545453,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "pt.wikipedia.org|Lista dos v\u00eddeos mais curtidos no TikTok",
+   "n": 22,
+   "absent": 3,
+   "expected": 3.80451127819549,
+   "min_detectable_absent": 11,
+   "min_detectable_excess": 7.1954887218045105,
+   "min_detectable_share": 0.5,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|\u30d1\u30f3\u30c0\u30c9\u30e9\u30b4\u30f3",
+   "n": 18,
+   "absent": 0,
+   "expected": 2.179538689294034,
+   "min_detectable_absent": 8,
+   "min_detectable_excess": 5.820461310705966,
+   "min_detectable_share": 0.4444444444444444,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "tr.wikipedia.org|En \u00e7ok be\u011fenilen TikTok videolar\u0131 listesi",
+   "n": 18,
+   "absent": 3,
+   "expected": 3.1127819548872186,
+   "min_detectable_absent": 10,
+   "min_detectable_excess": 6.887218045112782,
+   "min_detectable_share": 0.5555555555555556,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "en.wikipedia.org|User:\u0627\u062a\u0627 \u0628\u0643\u0631/sandbox",
+   "n": 16,
+   "absent": 1,
+   "expected": 0.680851063829787,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.319148936170213,
+   "min_detectable_share": 0.3125,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "de.wikipedia.org|Benutzer:Sophie0504/Entwurf",
+   "n": 15,
+   "absent": 0,
+   "expected": 1.5214628176857639,
+   "min_detectable_absent": 7,
+   "min_detectable_excess": 5.478537182314236,
+   "min_detectable_share": 0.4666666666666667,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|WAVE (\u4ff3\u512a\u30e6\u30cb\u30c3\u30c8)",
+   "n": 13,
+   "absent": 0,
+   "expected": 0.8079096045197739,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.192090395480226,
+   "min_detectable_share": 0.38461538461538464,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "id.wikipedia.org|Sayonara Crawl (singel JKT48)",
+   "n": 12,
+   "absent": 0,
+   "expected": 1.1583011583011584,
+   "min_detectable_absent": 6,
+   "min_detectable_excess": 4.841698841698841,
+   "min_detectable_share": 0.5,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "es.wikipedia.org|Johanne Sacreblu",
+   "n": 11,
+   "absent": 0,
+   "expected": 0.6836158192090395,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.31638418079096,
+   "min_detectable_share": 0.45454545454545453,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "forum|41487903",
+   "n": 10,
+   "absent": 4,
+   "expected": 1.5528308690948434,
+   "min_detectable_absent": 7,
+   "min_detectable_excess": 5.447169130905157,
+   "min_detectable_share": 0.7,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ca.wikipedia.org|TikTok",
+   "n": 9,
+   "absent": 1,
+   "expected": 1.3492767244197448,
+   "min_detectable_absent": 6,
+   "min_detectable_excess": 4.650723275580255,
+   "min_detectable_share": 0.6666666666666666,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "hu.wikipedia.org|X-Faktor (tizenkettedik \u00e9vad)",
+   "n": 9,
+   "absent": 1,
+   "expected": 0.559322033898305,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.440677966101695,
+   "min_detectable_share": 0.5555555555555556,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|Mel (\u30e1\u30c7\u30a3\u30a2)",
+   "n": 9,
+   "absent": 1,
+   "expected": 1.269690207464128,
+   "min_detectable_absent": 6,
+   "min_detectable_excess": 4.730309792535872,
+   "min_detectable_share": 0.6666666666666666,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|\u6afb\u4e95\u4e9c\u84ee",
+   "n": 8,
+   "absent": 0,
+   "expected": 0.47745651933089617,
+   "min_detectable_absent": 4,
+   "min_detectable_excess": 3.522543480669104,
+   "min_detectable_share": 0.5,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "en.wikipedia.org|User:EliasThorne/sandbox",
+   "n": 7,
+   "absent": 1,
+   "expected": 0.3591442855481921,
+   "min_detectable_absent": 4,
+   "min_detectable_excess": 3.640855714451808,
+   "min_detectable_share": 0.5714285714285714,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|\u306e\u3042\u5148\u8f29\u306f\u3068\u3082\u3060\u3061\u3002",
+   "n": 7,
+   "absent": 0,
+   "expected": 0.4054503157195081,
+   "min_detectable_absent": 4,
+   "min_detectable_excess": 3.594549684280492,
+   "min_detectable_share": 0.5714285714285714,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|\u5229\u7528\u8005:\u3042\u3089\uff5e\u305a\u306e\u3072\u3068\u308a/sandbox",
+   "n": 7,
+   "absent": 0,
+   "expected": 0.6042320660388326,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.395767933961167,
+   "min_detectable_share": 0.7142857142857143,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|\u690d\u91ce\u82b1\u9053",
+   "n": 7,
+   "absent": 0,
+   "expected": 0.4054503157195081,
+   "min_detectable_absent": 4,
+   "min_detectable_excess": 3.594549684280492,
+   "min_detectable_share": 0.5714285714285714,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|\u795e\u7dba\u674f\u83dc",
+   "n": 7,
+   "absent": 0,
+   "expected": 0.5193344451770546,
+   "min_detectable_absent": 4,
+   "min_detectable_excess": 3.4806655548229455,
+   "min_detectable_share": 0.5714285714285714,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|\u8c37\u5cb8\u73b2\u90a3",
+   "n": 7,
+   "absent": 0,
+   "expected": 0.4350282485875706,
+   "min_detectable_absent": 4,
+   "min_detectable_excess": 3.5649717514124295,
+   "min_detectable_share": 0.5714285714285714,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "en.wikipedia.org|Imam pesmu da vam pevam Tour",
+   "n": 6,
+   "absent": 0,
+   "expected": 0.3433034230641409,
+   "min_detectable_absent": 4,
+   "min_detectable_excess": 3.6566965769358593,
+   "min_detectable_share": 0.6666666666666666,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "en.wikipedia.org|User:Thedanelvey/Sample page",
+   "n": 6,
+   "absent": 1,
+   "expected": 0.9760118551449477,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.0239881448550525,
+   "min_detectable_share": 0.8333333333333334,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "en.wikipedia.org|User:Womanship/sandbox",
+   "n": 6,
+   "absent": 0,
+   "expected": 1.3125,
+   "min_detectable_absent": 6,
+   "min_detectable_excess": 4.6875,
+   "min_detectable_share": 1.0,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "es.wikipedia.org|Roberto Musso",
+   "n": 6,
+   "absent": 1,
+   "expected": 0.5603221641308753,
+   "min_detectable_absent": 4,
+   "min_detectable_excess": 3.4396778358691247,
+   "min_detectable_share": 0.6666666666666666,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "he.wikipedia.org|Diamonds & Dancefloors",
+   "n": 6,
+   "absent": 0,
+   "expected": 0.8787185354691075,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.121281464530893,
+   "min_detectable_share": 0.8333333333333334,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "id.wikipedia.org|Daftar konser dan acara JKT48",
+   "n": 6,
+   "absent": 0,
+   "expected": 0.962875939849624,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.037124060150376,
+   "min_detectable_share": 0.8333333333333334,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|\u30b7\u30e3\u30cb\u30e0\u30cb\uff1d\u30d1\u30ec\u30fc\u30c9",
+   "n": 6,
+   "absent": 0,
+   "expected": 0.888157894736842,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.1118421052631575,
+   "min_detectable_share": 0.8333333333333334,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|\u5fa1\u5802\u8015\u5e73",
+   "n": 6,
+   "absent": 0,
+   "expected": 0.3728813559322034,
+   "min_detectable_absent": 4,
+   "min_detectable_excess": 3.6271186440677967,
+   "min_detectable_share": 0.6666666666666666,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|\u6625\u4e43\u77e5\u6b69",
+   "n": 6,
+   "absent": 0,
+   "expected": 0.387540937889891,
+   "min_detectable_absent": 4,
+   "min_detectable_excess": 3.612459062110109,
+   "min_detectable_share": 0.6666666666666666,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|\u7acb\u5742\u65e5\u7b11",
+   "n": 6,
+   "absent": 0,
+   "expected": 0.5791505791505792,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.420849420849421,
+   "min_detectable_share": 0.8333333333333334,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "pl.wikipedia.org|Saverio Fabbri",
+   "n": 6,
+   "absent": 0,
+   "expected": 0.3433034230641409,
+   "min_detectable_absent": 4,
+   "min_detectable_excess": 3.6566965769358593,
+   "min_detectable_share": 0.6666666666666666,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "en.wikipedia.org|Awantura o kas\u0119",
+   "n": 5,
+   "absent": 0,
+   "expected": 0.3107344632768362,
+   "min_detectable_absent": 4,
+   "min_detectable_excess": 3.689265536723164,
+   "min_detectable_share": 0.8,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "en.wikipedia.org|Draft:Ernesto Edem Kojo De-Souza",
+   "n": 5,
+   "absent": 0,
+   "expected": 0.2127659574468085,
+   "min_detectable_absent": 3,
+   "min_detectable_excess": 2.7872340425531914,
+   "min_detectable_share": 0.6,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "en.wikipedia.org|PS5 (song)",
+   "n": 5,
+   "absent": 0,
+   "expected": 0.7401315789473684,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.259868421052632,
+   "min_detectable_share": 1.0,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "en.wikipedia.org|Talk:Rosie O'Donnell/Archive 6",
+   "n": 5,
+   "absent": 0,
+   "expected": 0.684356765768269,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.315643234231731,
+   "min_detectable_share": 1.0,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "en.wikipedia.org|Trinitones",
+   "n": 5,
+   "absent": 0,
+   "expected": 0.7899436090225563,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.210056390977444,
+   "min_detectable_share": 1.0,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "en.wikipedia.org|User:Auroraarena/sandbox",
+   "n": 5,
+   "absent": 1,
+   "expected": 0.977401129943503,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.0225988700564965,
+   "min_detectable_share": 1.0,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "forum|26973377",
+   "n": 5,
+   "absent": 0,
+   "expected": 0.7272727272727273,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.2727272727272725,
+   "min_detectable_share": 1.0,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "he.wikipedia.org|\u05d3\u05e0\u05d9 \u05d1\u05d5\u05dc\u05e8",
+   "n": 5,
+   "absent": 0,
+   "expected": 0.7338386727688786,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.266161327231122,
+   "min_detectable_share": 1.0,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "he.wikipedia.org|\u05d8\u05d9\u05d5\u05d8\u05d4:\u05d4\u05d8\u05d1\u05dc\u05d4, \u05de\u05d3\u05d1\u05e8\u05d9\u05dd \u05e2\u05dc \u05d4\u05d3\u05e9\u05d0 - \u05e4\u05d5\u05d3\u05e7\u05d0\u05e1\u05d8 \u05e1\u05e4\u05d5\u05e8\u05d8",
+   "n": 5,
+   "absent": 0,
+   "expected": 0.5191256830601093,
+   "min_detectable_absent": 4,
+   "min_detectable_excess": 3.480874316939891,
+   "min_detectable_share": 0.8,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "he.wikipedia.org|\u05e1\u05d9\u05e4\u05d5\u05e8\u05d5 \u05e9\u05dc \u05d5\u05d9\u05dc \u05d4\u05d0\u05e0\u05d8\u05d9\u05e0\u05d2",
+   "n": 5,
+   "absent": 0,
+   "expected": 0.48262548262548266,
+   "min_detectable_absent": 4,
+   "min_detectable_excess": 3.5173745173745172,
+   "min_detectable_share": 0.8,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "id.wikipedia.org|Freya Jayawardana",
+   "n": 5,
+   "absent": 1,
+   "expected": 0.5537937420892675,
+   "min_detectable_absent": 4,
+   "min_detectable_excess": 3.4462062579107324,
+   "min_detectable_share": 0.8,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|\u30cb\u30e5\u30fc\u30e8\u30fc\u30af\u3068\u86d9\u4ead\u306e\u30ad\u30c3\u30c8\u3001\u304f\u308b!!",
+   "n": 5,
+   "absent": 0,
+   "expected": 0.7401315789473684,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.259868421052632,
+   "min_detectable_share": 1.0,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|\u702c\u4e43\u771f\u5e06\u5b50",
+   "n": 5,
+   "absent": 5,
+   "expected": 0.5901322946275046,
+   "min_detectable_absent": 4,
+   "min_detectable_excess": 3.4098677053724953,
+   "min_detectable_share": 0.8,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ja.wikipedia.org|\u8679\u8272\u4f8d",
+   "n": 5,
+   "absent": 0,
+   "expected": 0.413869074886024,
+   "min_detectable_absent": 4,
+   "min_detectable_excess": 3.586130925113976,
+   "min_detectable_share": 0.8,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "ko.wikipedia.org|GOT7\uc758 \uc74c\ubc18 \uc678 \ud65c\ub3d9 \ubaa9\ub85d",
+   "n": 5,
+   "absent": 1,
+   "expected": 0.7899436090225563,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.210056390977444,
+   "min_detectable_share": 1.0,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "pt.wikipedia.org|Diamonds & Dancefloors",
+   "n": 5,
+   "absent": 0,
+   "expected": 0.7322654462242563,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.267734553775743,
+   "min_detectable_share": 1.0,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "uk.wikipedia.org|Tery",
+   "n": 5,
+   "absent": 0,
+   "expected": 0.7401315789473684,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.259868421052632,
+   "min_detectable_share": 1.0,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "uk.wikipedia.org|\u0414\u0456\u0432\u0447\u0438\u043d\u0430 Hello Kitty",
+   "n": 5,
+   "absent": 2,
+   "expected": 0.7322654462242563,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.267734553775743,
+   "min_detectable_share": 1.0,
+   "undetectable_at_any_count": false
+  },
+  {
+   "page": "uk.wikipedia.org|\u041c\u0430\u0439\u043a \u041e'\u0413\u0435\u0440\u043d \u00abBaby Don't Hurt Me\u00bb (\u043c\u0435\u043c)",
+   "n": 5,
+   "absent": 3,
+   "expected": 0.7322654462242563,
+   "min_detectable_absent": 5,
+   "min_detectable_excess": 4.267734553775743,
+   "min_detectable_share": 1.0,
+   "undetectable_at_any_count": false
+  }
+ ],
+ "flagged_page_detail": [
+  {
+   "page": "es.wikipedia.org|Protestas en Paraguay de 2023",
+   "units": 22,
+   "absent": 16,
+   "present": 6,
+   "distinct_accounts": 20,
+   "accounts_appearing_on_any_other_page": 0,
+   "other_page_units_by_those_accounts": 0,
+   "median_age_absent_y": 3.2789164809072817,
+   "median_age_present_y": 3.280250038089864,
+   "age_range_y": [
+    3.240614207607883,
+    3.2814220143947996
+   ],
+   "year_cohorts": {
+    "2023": 22
+   },
+   "strata": {
+    "W-article": 22
+   },
+   "state_at_baseline": {
+    "NOT-RETRIEVABLE": 15,
+    "RETRIEVABLE": 6,
+    "INDETERMINATE": 1
+   },
+   "accounts_one_video_each": 18
+  },
+  {
+   "page": "ja.wikipedia.org|\u702c\u4e43\u771f\u5e06\u5b50",
+   "units": 5,
+   "absent": 5,
+   "present": 0,
+   "distinct_accounts": 1,
+   "accounts_appearing_on_any_other_page": 1,
+   "other_page_units_by_those_accounts": 1,
+   "median_age_absent_y": 3.602451592916832,
+   "median_age_present_y": null,
+   "age_range_y": [
+    1.7187632696592496,
+    5.08367934266909
+   ],
+   "year_cohorts": {
+    "2021": 1,
+    "2022": 1,
+    "2023": 1,
+    "2024": 2
+   },
+   "strata": {
+    "W-article": 5
+   },
+   "state_at_baseline": {
+    "NOT-RETRIEVABLE": 5
+   },
+   "accounts_one_video_each": 0
+  }
+ ]
+}

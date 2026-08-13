@@ -1,0 +1,429 @@
+{
+ "schema": "field-research/coloss-scan/1",
+ "session": 117,
+ "preregistration": "PREREGISTRATION-117.md",
+ "note": "no new requests; window ledger, manifest and probe untouched",
+ "min_cell": 30,
+ "n_min": 5,
+ "q": 0.05,
+ "runs": {
+  "ledger/run-2026-08-13T0427Z.json": {
+   "run_id": "TEMPLATE \u2014 the running session sets this",
+   "run_utc_start": "2026-08-13T04:27:00Z",
+   "excluded": {
+    "arm_B_truncated": 249,
+    "indeterminate": 44,
+    "not_19_digit": 7,
+    "nonpositive_age": 0
+   },
+   "meta": {
+    "pages_scanned": 54,
+    "units_scanned": 519,
+    "fallback_units": 0,
+    "fallback_share": 0.0,
+    "units_attributed": 3569,
+    "units_total": 3569
+   },
+   "n_flag_upper": 2,
+   "n_flag_lower": 0,
+   "flag_upper": [
+    {
+     "page": "es.wikipedia.org|Protestas en Paraguay de 2023",
+     "n": 22,
+     "absent": 16,
+     "expected": 2.544578313253012,
+     "excess": 13.455421686746988,
+     "p_upper": 3.836421794409408e-11,
+     "p_lower": 0.9999999999982466,
+     "handles": 20,
+     "fallback_units": 0,
+     "median_age_y": 3.2789164809072817,
+     "strata": [
+      "W-article"
+     ],
+     "q_upper": 2.0716677689810805e-09,
+     "flag_upper": true,
+     "q_lower": 0.9999999999999998,
+     "flag_lower": false
+    },
+    {
+     "page": "ja.wikipedia.org|\u702c\u4e43\u771f\u5e06\u5b50",
+     "n": 5,
+     "absent": 5,
+     "expected": 0.5720710604500867,
+     "excess": 4.427928939549913,
+     "p_upper": 1.1846322417681635e-05,
+     "p_lower": 0.9999999999999998,
+     "handles": 1,
+     "fallback_units": 0,
+     "median_age_y": 3.602451592916832,
+     "strata": [
+      "W-article"
+     ],
+     "q_upper": 0.00031985070527740413,
+     "flag_upper": true,
+     "q_lower": 0.9999999999999998,
+     "flag_lower": false
+    }
+   ],
+   "flag_lower": [],
+   "sensitivity_n_min_3": {
+    "pages_scanned": 171,
+    "n_flag_upper": 4,
+    "n_flag_lower": 0,
+    "flag_upper": [
+     {
+      "page": "en.wikipedia.org|Talk:Howard Williams (archaeologist)",
+      "n": 3,
+      "absent": 3,
+      "expected": 0.26666666666666666,
+      "excess": 2.7333333333333334,
+      "p_upper": 0.0007023319615912209,
+      "p_lower": 1.0,
+      "handles": 1,
+      "fallback_units": 0,
+      "median_age_y": 1.4496214336543023,
+      "strata": [
+       "W-other-ns"
+      ],
+      "q_upper": 0.03800459433318162,
+      "flag_upper": true,
+      "q_lower": 1.0,
+      "flag_lower": false
+     },
+     {
+      "page": "es.wikipedia.org|Protestas en Paraguay de 2023",
+      "n": 22,
+      "absent": 16,
+      "expected": 2.544578313253012,
+      "excess": 13.455421686746988,
+      "p_upper": 3.836421794409408e-11,
+      "p_lower": 0.9999999999982466,
+      "handles": 20,
+      "fallback_units": 0,
+      "median_age_y": 3.2789164809072817,
+      "strata": [
+       "W-article"
+      ],
+      "q_upper": 6.5602812684400884e-09,
+      "flag_upper": true,
+      "q_lower": 1.0,
+      "flag_lower": false
+     },
+     {
+      "page": "forum|27553177",
+      "n": 3,
+      "absent": 3,
+      "expected": 0.2884615384615385,
+      "excess": 2.7115384615384617,
+      "p_upper": 0.000888996358670915,
+      "p_lower": 1.0,
+      "handles": 3,
+      "fallback_units": 0,
+      "median_age_y": 5.399315592963478,
+      "strata": [
+       "F-forum"
+      ],
+      "q_upper": 0.03800459433318162,
+      "flag_upper": true,
+      "q_lower": 1.0,
+      "flag_lower": false
+     },
+     {
+      "page": "ja.wikipedia.org|\u702c\u4e43\u771f\u5e06\u5b50",
+      "n": 5,
+      "absent": 5,
+      "expected": 0.5720710604500867,
+      "excess": 4.427928939549913,
+      "p_upper": 1.1846322417681635e-05,
+      "p_lower": 0.9999999999999998,
+      "handles": 1,
+      "fallback_units": 0,
+      "median_age_y": 3.602451592916832,
+      "strata": [
+       "W-article"
+      ],
+      "q_upper": 0.00101286056671178,
+      "flag_upper": true,
+      "q_lower": 1.0,
+      "flag_lower": false
+     }
+    ]
+   },
+   "K2_pooled_baseline": {
+    "pages_scanned": 54,
+    "n_flag_upper": 2,
+    "flag_upper": [
+     "es.wikipedia.org|Protestas en Paraguay de 2023",
+     "ja.wikipedia.org|\u702c\u4e43\u771f\u5e06\u5b50"
+    ]
+   },
+   "fwer_monte_carlo": {
+    "draws": 10000,
+    "seed": 117000,
+    "observed_min_tail": 3.836421794409408e-11,
+    "fwer_p": 9.999000099990002e-05,
+    "null_min_tail_p05": 0.002349580067439066,
+    "null_min_tail_median": 0.028622759359243355
+   },
+   "herfindahl_of_positive_excess": {
+    "total": 26.706513805035257,
+    "effective_pages": 3.3156173203200376,
+    "top_share": 0.5038254631426321,
+    "top3_share": 0.7637123438641145
+   },
+   "paraguay": {
+    "page": "es.wikipedia.org|Protestas en Paraguay de 2023",
+    "n": 22,
+    "absent": 16,
+    "expected": 2.544578313253012,
+    "excess": 13.455421686746988,
+    "p_upper": 3.836421794409408e-11,
+    "p_lower": 0.9999999999982466,
+    "handles": 20,
+    "fallback_units": 0,
+    "median_age_y": 3.2789164809072817,
+    "strata": [
+     "W-article"
+    ],
+    "q_upper": 2.0716677689810805e-09,
+    "flag_upper": true,
+    "q_lower": 0.9999999999999998,
+    "flag_lower": false
+   },
+   "mechanism_arm": [
+    {
+     "page": "es.wikipedia.org|Protestas en Paraguay de 2023",
+     "units": 22,
+     "units_with_off_page_account_estimate": 0,
+     "power_floor": 5,
+     "has_power": false
+    },
+    {
+     "page": "ja.wikipedia.org|\u702c\u4e43\u771f\u5e06\u5b50",
+     "units": 5,
+     "units_with_off_page_account_estimate": 5,
+     "power_floor": 5,
+     "has_power": true,
+     "observed_absent_on_covered": 5,
+     "expected_from_accounts": 5.0,
+     "excess": 0.0,
+     "p_upper": 1.0,
+     "p_lower": 1.0,
+     "distinct_off_page_units_backing_the_estimates": 1,
+     "superseded_double_counted_figure": 5,
+     "distinct_accounts_backing": 1
+    }
+   ]
+  },
+  "ledger/run-2026-08-12T0341Z.json": {
+   "run_id": "2026-08-12T0341Z",
+   "run_utc_start": "2026-08-12T03:40:28Z",
+   "excluded": {
+    "arm_B_truncated": 249,
+    "indeterminate": 38,
+    "not_19_digit": 7,
+    "nonpositive_age": 0
+   },
+   "meta": {
+    "pages_scanned": 54,
+    "units_scanned": 519,
+    "fallback_units": 0,
+    "fallback_share": 0.0,
+    "units_attributed": 3575,
+    "units_total": 3575
+   },
+   "n_flag_upper": 2,
+   "n_flag_lower": 0,
+   "flag_upper": [
+    {
+     "page": "es.wikipedia.org|Protestas en Paraguay de 2023",
+     "n": 23,
+     "absent": 17,
+     "expected": 2.653846153846154,
+     "excess": 14.346153846153847,
+     "p_upper": 5.757783587369073e-12,
+     "p_lower": 0.9999999999997513,
+     "handles": 20,
+     "fallback_units": 0,
+     "median_age_y": 3.2759701570671336,
+     "strata": [
+      "W-article"
+     ],
+     "q_upper": 3.109203137179299e-10,
+     "flag_upper": true,
+     "q_lower": 1.0,
+     "flag_lower": false
+    },
+    {
+     "page": "ja.wikipedia.org|\u702c\u4e43\u771f\u5e06\u5b50",
+     "n": 5,
+     "absent": 5,
+     "expected": 0.5701013190797434,
+     "excess": 4.429898680920257,
+     "p_upper": 1.0974678104955212e-05,
+     "p_lower": 1.0,
+     "handles": 1,
+     "fallback_units": 0,
+     "median_age_y": 3.5996252109519324,
+     "strata": [
+      "W-article"
+     ],
+     "q_upper": 0.0002963163088337907,
+     "flag_upper": true,
+     "q_lower": 1.0,
+     "flag_lower": false
+    }
+   ],
+   "flag_lower": [],
+   "sensitivity_n_min_3": {
+    "pages_scanned": 171,
+    "n_flag_upper": 4,
+    "n_flag_lower": 0,
+    "flag_upper": [
+     {
+      "page": "en.wikipedia.org|Talk:Howard Williams (archaeologist)",
+      "n": 3,
+      "absent": 3,
+      "expected": 0.2696629213483146,
+      "excess": 2.7303370786516856,
+      "p_upper": 0.0007262730701633689,
+      "p_lower": 1.0,
+      "handles": 1,
+      "fallback_units": 0,
+      "median_age_y": 1.4467950516894028,
+      "strata": [
+       "W-other-ns"
+      ],
+      "q_upper": 0.040284279801886154,
+      "flag_upper": true,
+      "q_lower": 1.0,
+      "flag_lower": false
+     },
+     {
+      "page": "es.wikipedia.org|Protestas en Paraguay de 2023",
+      "n": 23,
+      "absent": 17,
+      "expected": 2.653846153846154,
+      "excess": 14.346153846153847,
+      "p_upper": 5.757783587369073e-12,
+      "p_lower": 0.9999999999997513,
+      "handles": 20,
+      "fallback_units": 0,
+      "median_age_y": 3.2759701570671336,
+      "strata": [
+       "W-article"
+      ],
+      "q_upper": 9.845809934401114e-10,
+      "flag_upper": true,
+      "q_lower": 1.0,
+      "flag_lower": false
+     },
+     {
+      "page": "forum|27553177",
+      "n": 3,
+      "absent": 3,
+      "expected": 0.29411764705882354,
+      "excess": 2.7058823529411766,
+      "p_upper": 0.0009423223345470445,
+      "p_lower": 1.0,
+      "handles": 3,
+      "fallback_units": 0,
+      "median_age_y": 5.3964892109985785,
+      "strata": [
+       "F-forum"
+      ],
+      "q_upper": 0.040284279801886154,
+      "flag_upper": true,
+      "q_lower": 1.0,
+      "flag_lower": false
+     },
+     {
+      "page": "ja.wikipedia.org|\u702c\u4e43\u771f\u5e06\u5b50",
+      "n": 5,
+      "absent": 5,
+      "expected": 0.5701013190797434,
+      "excess": 4.429898680920257,
+      "p_upper": 1.0974678104955212e-05,
+      "p_lower": 1.0,
+      "handles": 1,
+      "fallback_units": 0,
+      "median_age_y": 3.5996252109519324,
+      "strata": [
+       "W-article"
+      ],
+      "q_upper": 0.0009383349779736707,
+      "flag_upper": true,
+      "q_lower": 1.0,
+      "flag_lower": false
+     }
+    ]
+   },
+   "K2_pooled_baseline": {
+    "pages_scanned": 54,
+    "n_flag_upper": 2,
+    "flag_upper": [
+     "es.wikipedia.org|Protestas en Paraguay de 2023",
+     "ja.wikipedia.org|\u702c\u4e43\u771f\u5e06\u5b50"
+    ]
+   },
+   "fwer_monte_carlo": {
+    "draws": 10000,
+    "seed": 117000,
+    "observed_min_tail": 5.757783587369073e-12,
+    "fwer_p": 9.999000099990002e-05,
+    "null_min_tail_p05": 0.002393876086369154,
+    "null_min_tail_median": 0.02801046966109091
+   },
+   "herfindahl_of_positive_excess": {
+    "total": 27.8934550053234,
+    "effective_pages": 3.241473280608551,
+    "top_share": 0.5143197156256161,
+    "top3_share": 0.763611676575342
+   },
+   "paraguay": {
+    "page": "es.wikipedia.org|Protestas en Paraguay de 2023",
+    "n": 23,
+    "absent": 17,
+    "expected": 2.653846153846154,
+    "excess": 14.346153846153847,
+    "p_upper": 5.757783587369073e-12,
+    "p_lower": 0.9999999999997513,
+    "handles": 20,
+    "fallback_units": 0,
+    "median_age_y": 3.2759701570671336,
+    "strata": [
+     "W-article"
+    ],
+    "q_upper": 3.109203137179299e-10,
+    "flag_upper": true,
+    "q_lower": 1.0,
+    "flag_lower": false
+   },
+   "mechanism_arm": [
+    {
+     "page": "es.wikipedia.org|Protestas en Paraguay de 2023",
+     "units": 23,
+     "units_with_off_page_account_estimate": 0,
+     "power_floor": 5,
+     "has_power": false
+    },
+    {
+     "page": "ja.wikipedia.org|\u702c\u4e43\u771f\u5e06\u5b50",
+     "units": 5,
+     "units_with_off_page_account_estimate": 5,
+     "power_floor": 5,
+     "has_power": true,
+     "observed_absent_on_covered": 5,
+     "expected_from_accounts": 5.0,
+     "excess": 0.0,
+     "p_upper": 1.0,
+     "p_lower": 1.0,
+     "distinct_off_page_units_backing_the_estimates": 1,
+     "superseded_double_counted_figure": 5,
+     "distinct_accounts_backing": 1
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "schema": "field-research/coloss-derived/1",
+ "session": 117,
+ "post_hoc": true,
+ "note": "quantities quoted in INCREMENT-7.md that are arithmetic on coloss-117.json / coloss-power-117.json",
+ "paraguay_day3_expected": 2.544578313253012,
+ "paraguay_day3_absent": 16,
+ "paraguay_day3_n": 22,
+ "paraguay_day3_observed_over_expected": 6.287878787878788,
+ "paraguay_day3_absent_share": 0.7272727272727273,
+ "paraguay_day3_expected_share": 0.11566265060240964,
+ "paraguay_day2_observed_over_expected": 6.4057971014492745,
+ "paraguay_age_span_years": 0.04080780678691642,
+ "paraguay_age_span_days": 14.904745370370321,
+ "paraguay_accounts": 20,
+ "paraguay_accounts_with_exactly_one_video": 18,
+ "paraguay_baseline_not_retrievable": 15,
+ "corpus_absent_rate_day3": 0.12160268982908377,
+ "corpus_absent_count_day3": 434,
+ "corpus_units_day3": 3569
+}
