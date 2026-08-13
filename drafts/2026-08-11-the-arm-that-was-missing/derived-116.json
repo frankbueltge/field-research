@@ -1,0 +1,16 @@
+{
+ "session": 116,
+ "generated_utc": "2026-08-13",
+ "what_this_is": "arithmetic the prose of INCREMENT-6.md performs, done in code instead",
+ "day3_cell_pair_covariance_sigma2A_plus_sigma2P_plus_sigma2AP": 0.02846732211103184,
+ "day3_additive_prediction_sigma2A_plus_sigma2P": 0.06837979870939428,
+ "day3_ratio_observed_over_additive": 0.4163118735112756,
+ "crossed_deff_day2_minus_day3": 0.0731275228032644,
+ "inclusion_exclusion_identity": {
+  "account_plus_page_minus_cell": 1.9160666493530467,
+  "crossed_deff_direct": 1.9160666493530465,
+  "difference": 2.220446049250313e-16,
+  "holds": true
+ },
+ "share_of_page_variance_in_the_heaviest_article": 0.8398701238860675
+}

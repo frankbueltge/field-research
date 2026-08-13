@@ -1,0 +1,169 @@
+{
+ "session": 116,
+ "generated_utc": "2026-08-13",
+ "deff_crossed_pooled": 1.9899863072561084,
+ "arm_crossed_deffs": [
+  {
+   "arm": "encyclopedia (article only)",
+   "units": 2375,
+   "absent": 255,
+   "deff_account_only": 1.4688499334512932,
+   "deff_page_only": 2.2416380029441934,
+   "deff_crossed": 2.3514504755318844,
+   "sigma2_A": 0.02650618769518505,
+   "sigma2_P": 0.07604472425081844,
+   "clusters_A": 1799,
+   "clusters_P": 1704
+  },
+  {
+   "arm": "encyclopedia (article + other namespaces)",
+   "units": 3126,
+   "absent": 367,
+   "deff_account_only": 1.4571507095656335,
+   "deff_page_only": 1.9866856349453372,
+   "deff_crossed": 2.092758032970466,
+   "sigma2_A": 0.027288198488385613,
+   "sigma2_P": 0.04580685002705312,
+   "clusters_A": 2353,
+   "clusters_P": 2233
+  },
+  {
+   "arm": "forum",
+   "units": 449,
+   "absent": 65,
+   "deff_account_only": 1.1858800819649487,
+   "deff_page_only": 1.2696348291137478,
+   "deff_crossed": 1.3333197872078404,
+   "sigma2_A": 0.030881826070028706,
+   "sigma2_P": 0.0583419016487305,
+   "clusters_A": 400,
+   "clusters_P": 407
+  }
+ ],
+ "reproduction_checks_of_session_115": {
+  "reproduces_published_z_2.194": true,
+  "reproduces_115_pooled_z_1.8355": true,
+  "reproduces_115_armspecific_z_1.9828": true,
+  "reproduces_115_article_arm_account_deff_1.4688": true,
+  "reproduces_115_forum_arm_account_deff_1.1859": true,
+  "reproduces_115_mh_ci": true
+ },
+ "gap_variants": [
+  {
+   "variant": "published (no clustering)",
+   "deff_encyclopedia": 1.0,
+   "deff_forum": 1.0,
+   "gap_pp": 3.9605,
+   "se_pp": 1.8051,
+   "z": 2.194,
+   "ci95_pp": [
+    0.4225,
+    7.4985
+   ],
+   "excludes_0": true
+  },
+  {
+   "variant": "pooled account DEFF 1.4289 (session 115)",
+   "deff_encyclopedia": 1.428865343926577,
+   "deff_forum": 1.428865343926577,
+   "gap_pp": 3.9605,
+   "se_pp": 2.1578,
+   "z": 1.8355,
+   "ci95_pp": [
+    -0.2687,
+    8.1897
+   ],
+   "excludes_0": false
+  },
+  {
+   "variant": "arm-specific account DEFFs (session 115)",
+   "deff_encyclopedia": 1.4688,
+   "deff_forum": 1.1859,
+   "gap_pp": 3.9605,
+   "se_pp": 1.9974,
+   "z": 1.9828,
+   "ci95_pp": [
+    0.0457,
+    7.8754
+   ],
+   "excludes_0": true
+  },
+  {
+   "variant": "pooled crossed DEFF (session 116)",
+   "deff_encyclopedia": 1.9899863072561084,
+   "deff_forum": 1.9899863072561084,
+   "gap_pp": 3.9605,
+   "se_pp": 2.5465,
+   "z": 1.5553,
+   "ci95_pp": [
+    -1.0305,
+    8.9515
+   ],
+   "excludes_0": false
+  },
+  {
+   "variant": "arm-specific crossed DEFFs, article arm (session 116)",
+   "deff_encyclopedia": 2.3514504755318844,
+   "deff_forum": 1.3333197872078404,
+   "gap_pp": 3.9605,
+   "se_pp": 2.1899,
+   "z": 1.8085,
+   "ci95_pp": [
+    -0.3317,
+    8.2527
+   ],
+   "excludes_0": false
+  },
+  {
+   "variant": "arm-specific crossed DEFFs, article + other ns (session 116)",
+   "deff_encyclopedia": 2.092758032970466,
+   "deff_forum": 1.3333197872078404,
+   "gap_pp": 3.9605,
+   "se_pp": 2.1636,
+   "z": 1.8305,
+   "ci95_pp": [
+    -0.2801,
+    8.2011
+   ],
+   "excludes_0": false
+  }
+ ],
+ "mantel_haenszel_variants": [
+  {
+   "variant": "published",
+   "deff": 1.0,
+   "point": 1.7839,
+   "se_log_published": 0.139546,
+   "se_log_corrected": 0.139546,
+   "ci95": [
+    1.357,
+    2.345
+   ],
+   "excludes_1": true
+  },
+  {
+   "variant": "account DEFF (session 115)",
+   "deff": 1.428865343926577,
+   "point": 1.7839,
+   "se_log_published": 0.139546,
+   "se_log_corrected": 0.166806,
+   "ci95": [
+    1.2864,
+    2.4738
+   ],
+   "excludes_1": true
+  },
+  {
+   "variant": "crossed DEFF (session 116)",
+   "deff": 1.9899863072561084,
+   "point": 1.7839,
+   "se_log_published": 0.139546,
+   "se_log_corrected": 0.196853,
+   "ci95": [
+    1.2129,
+    2.6238
+   ],
+   "excludes_1": true
+  }
+ ]
+}

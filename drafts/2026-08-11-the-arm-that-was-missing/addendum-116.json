@@ -1,0 +1,810 @@
+{
+ "generated_utc": "2026-08-13",
+ "session": 116,
+ "what_this_is": "A dated addendum to RESTATEMENT-2026-08-13.md, not an edit of it. This morning's restatement widened 36 published intervals at the account-key design effect 1.4289. Tonight's crossed model, carrying the account AND the citing page at once, puts the design effect on the same population at 1.9900. The 36 intervals are recomputed at the crossed value here. The morning's figures stand as published and are reproduced in every row; nothing is overwritten.",
+ "deff_account_key_115": 1.428865343926577,
+ "deff_crossed_key_116": 1.9899863072561084,
+ "deff_crossed_key_116_no_finite_cluster_factor": 1.9891941721563104,
+ "half_width_multiplier_115": 1.1953515566253206,
+ "half_width_multiplier_116": 1.410668744693845,
+ "further_multiplier_116_over_115": 1.180128755323163,
+ "caveat": "The crossed DEFF is measured on the day-2/day-3 crossed subset and is applied uniformly to every row, exactly as 1.4289 was applied uniformly this morning. For rows whose population is not that subset this is an approximation, and it is labelled one. Parameter-specific design effects differ: INTERLOCUTOR-7 established 1.27 for the Weibull shape, so the shape interval remains the widest of the routes tested and is not widened again here.",
+ "intervals": [
+  {
+   "label": "INCREMENT-3 \u00a71 \u2014 pooled public retrievability, day-2 window run",
+   "k": 3143,
+   "n": 3575,
+   "point_estimate": 87.9161,
+   "point_estimate_recomputed": 87.9161,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    86.5805,
+    89.1355
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    86.3274,
+    89.343
+   ],
+   "n_eff_crossed": 1796.49,
+   "width_account_key_115": 2.555,
+   "width_crossed_key_116": 3.0155,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1802
+  },
+  {
+   "label": "INCREMENT-3 \u00a71a \u2014 age band 0-1y, publicly retrievable",
+   "k": 470,
+   "n": 494,
+   "point_estimate": 95.1417,
+   "point_estimate_recomputed": 95.1417,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    92.3379,
+    96.9533
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    91.7121,
+    97.1955
+   ],
+   "n_eff_crossed": 248.24,
+   "width_account_key_115": 4.6154,
+   "width_crossed_key_116": 5.4834,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1881
+  },
+  {
+   "label": "INCREMENT-3 \u00a71a \u2014 age band 1-2y, publicly retrievable",
+   "k": 716,
+   "n": 775,
+   "point_estimate": 92.3871,
+   "point_estimate_recomputed": 92.3871,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    89.8451,
+    94.3329
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    89.3196,
+    94.6266
+   ],
+   "n_eff_crossed": 389.45,
+   "width_account_key_115": 4.4878,
+   "width_crossed_key_116": 5.3071,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1826
+  },
+  {
+   "label": "INCREMENT-3 \u00a71a \u2014 age band 2-3y, publicly retrievable",
+   "k": 692,
+   "n": 790,
+   "point_estimate": 87.5949,
+   "point_estimate_recomputed": 87.5949,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    84.5851,
+    90.086
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    83.9875,
+    90.4817
+   ],
+   "n_eff_crossed": 396.99,
+   "width_account_key_115": 5.5009,
+   "width_crossed_key_116": 6.4942,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1806
+  },
+  {
+   "label": "INCREMENT-3 \u00a71a \u2014 age band 3-4y, publicly retrievable",
+   "k": 565,
+   "n": 673,
+   "point_estimate": 83.9525,
+   "point_estimate_recomputed": 83.9525,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    80.365,
+    86.9905
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    79.6626,
+    87.4796
+   ],
+   "n_eff_crossed": 338.19,
+   "width_account_key_115": 6.6255,
+   "width_crossed_key_116": 7.817,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1798
+  },
+  {
+   "label": "INCREMENT-3 \u00a71a \u2014 age band 4-5y, publicly retrievable",
+   "k": 386,
+   "n": 461,
+   "point_estimate": 83.731,
+   "point_estimate_recomputed": 83.731,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    79.3109,
+    87.3573
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    78.435,
+    87.9266
+   ],
+   "n_eff_crossed": 231.66,
+   "width_account_key_115": 8.0464,
+   "width_crossed_key_116": 9.4917,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1796
+  },
+  {
+   "label": "INCREMENT-3 \u00a71a \u2014 age band 5y+, publicly retrievable",
+   "k": 314,
+   "n": 382,
+   "point_estimate": 82.199,
+   "point_estimate_recomputed": 82.199,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    77.1673,
+    86.3183
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    76.1722,
+    86.9623
+   ],
+   "n_eff_crossed": 191.96,
+   "width_account_key_115": 9.151,
+   "width_crossed_key_116": 10.79,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1791
+  },
+  {
+   "label": "INCREMENT-3 \u00a71b \u2014 stratum W-article, publicly retrievable",
+   "k": 2120,
+   "n": 2375,
+   "point_estimate": 89.2632,
+   "point_estimate_recomputed": 89.2632,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    87.6833,
+    90.6619
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    87.3791,
+    90.8953
+   ],
+   "n_eff_crossed": 1193.48,
+   "width_account_key_115": 2.9786,
+   "width_crossed_key_116": 3.5161,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1805
+  },
+  {
+   "label": "INCREMENT-3 \u00a71b \u2014 stratum W-other-ns, publicly retrievable",
+   "k": 639,
+   "n": 751,
+   "point_estimate": 85.0866,
+   "point_estimate_recomputed": 85.0866,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    81.787,
+    87.877
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    81.1398,
+    88.3262
+   ],
+   "n_eff_crossed": 377.39,
+   "width_account_key_115": 6.09,
+   "width_crossed_key_116": 7.1865,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.18
+  },
+  {
+   "label": "INCREMENT-3 \u00a71b \u2014 stratum F-forum, publicly retrievable",
+   "k": 384,
+   "n": 449,
+   "point_estimate": 85.5234,
+   "point_estimate_recomputed": 85.5234,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    81.2038,
+    88.9849
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    80.3374,
+    89.52
+   ],
+   "n_eff_crossed": 225.63,
+   "width_account_key_115": 7.7811,
+   "width_crossed_key_116": 9.1826,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1801
+  },
+  {
+   "label": "INCREMENT-3 \u00a72a \u2014 ceiling, the six published bands, worst eligible cell 5y+ (ABSENCE)",
+   "k": 68,
+   "n": 382,
+   "point_estimate": 17.801,
+   "point_estimate_recomputed": 17.801,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    13.6817,
+    22.8327
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    13.0377,
+    23.8278
+   ],
+   "n_eff_crossed": 191.96,
+   "width_account_key_115": 9.151,
+   "width_crossed_key_116": 10.79,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1791
+  },
+  {
+   "label": "INCREMENT-3 \u00a72a \u2014 ceiling, calendar year of creation, worst eligible cell 2019 (ABSENCE)",
+   "k": 8,
+   "n": 35,
+   "point_estimate": 22.8571,
+   "point_estimate_recomputed": 22.8571,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    10.6441,
+    42.4295
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    9.2903,
+    46.1553
+   ],
+   "n_eff_crossed": 17.59,
+   "width_account_key_115": 31.7854,
+   "width_crossed_key_116": 36.865,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1598
+  },
+  {
+   "label": "INCREMENT-3 \u00a72a \u2014 ceiling, integer age-year, worst eligible cell 6-7y (ABSENCE)",
+   "k": 19,
+   "n": 108,
+   "point_estimate": 17.5926,
+   "point_estimate_recomputed": 17.5926,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    10.6409,
+    27.6791
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    9.7137,
+    29.7559
+   ],
+   "n_eff_crossed": 54.27,
+   "width_account_key_115": 17.0382,
+   "width_crossed_key_116": 20.0422,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1763
+  },
+  {
+   "label": "INCREMENT-3 \u00a72a \u2014 ceiling, half-year, worst eligible cell 5.5y (ABSENCE)",
+   "k": 19,
+   "n": 106,
+   "point_estimate": 17.9245,
+   "point_estimate_recomputed": 17.9245,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    10.8479,
+    28.1595
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    9.903,
+    30.2613
+   ],
+   "n_eff_crossed": 53.27,
+   "width_account_key_115": 17.3116,
+   "width_crossed_key_116": 20.3583,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.176
+  },
+  {
+   "label": "INCREMENT-4 \u00a73 \u2014 absence rate, attributed units (already restated at session 114)",
+   "k": 432,
+   "n": 3575,
+   "point_estimate": 12.0839,
+   "point_estimate_recomputed": 12.0839,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    10.8645,
+    13.4195
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    10.657,
+    13.6726
+   ],
+   "n_eff_crossed": 1796.49,
+   "width_account_key_115": 2.555,
+   "width_crossed_key_116": 3.0155,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1802
+  },
+  {
+   "label": "POWER-AUDIT \u00a72 \u2014 cohort 2018, retrievable fraction",
+   "k": 2,
+   "n": 2,
+   "point_estimate": 1.0,
+   "point_estimate_recomputed": 1.0,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.2671,
+    1.0
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.2074,
+    1.0
+   ],
+   "n_eff_crossed": 1.01,
+   "width_account_key_115": 0.7329,
+   "width_crossed_key_116": 0.7926,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.0815
+  },
+  {
+   "label": "POWER-AUDIT \u00a72 \u2014 cohort 2019, retrievable fraction",
+   "k": 21,
+   "n": 29,
+   "point_estimate": 0.7241,
+   "point_estimate_recomputed": 0.7241,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.5066,
+    0.8703
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.468,
+    0.8868
+   ],
+   "n_eff_crossed": 14.57,
+   "width_account_key_115": 0.3637,
+   "width_crossed_key_116": 0.4189,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1518
+  },
+  {
+   "label": "POWER-AUDIT \u00a72 \u2014 cohort 2020, retrievable fraction",
+   "k": 106,
+   "n": 130,
+   "point_estimate": 0.8154,
+   "point_estimate_recomputed": 0.8154,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.7235,
+    0.8817
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.7048,
+    0.891
+   ],
+   "n_eff_crossed": 65.33,
+   "width_account_key_115": 0.1582,
+   "width_crossed_key_116": 0.1862,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.177
+  },
+  {
+   "label": "POWER-AUDIT \u00a72 \u2014 cohort 2021, retrievable fraction",
+   "k": 212,
+   "n": 249,
+   "point_estimate": 0.8514,
+   "point_estimate_recomputed": 0.8514,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.791,
+    0.8966
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.7787,
+    0.9032
+   ],
+   "n_eff_crossed": 125.13,
+   "width_account_key_115": 0.1056,
+   "width_crossed_key_116": 0.1245,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.179
+  },
+  {
+   "label": "POWER-AUDIT \u00a72 \u2014 cohort 2022, retrievable fraction",
+   "k": 353,
+   "n": 412,
+   "point_estimate": 0.8568,
+   "point_estimate_recomputed": 0.8568,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.8117,
+    0.8925
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.8026,
+    0.898
+   ],
+   "n_eff_crossed": 207.04,
+   "width_account_key_115": 0.0808,
+   "width_crossed_key_116": 0.0954,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1807
+  },
+  {
+   "label": "POWER-AUDIT \u00a72 \u2014 cohort 2023, retrievable fraction",
+   "k": 487,
+   "n": 574,
+   "point_estimate": 0.8484,
+   "point_estimate_recomputed": 0.8484,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.8101,
+    0.8802
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.8025,
+    0.8852
+   ],
+   "n_eff_crossed": 288.44,
+   "width_account_key_115": 0.0701,
+   "width_crossed_key_116": 0.0827,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1797
+  },
+  {
+   "label": "POWER-AUDIT \u00a72 \u2014 cohort 2024, retrievable fraction",
+   "k": 500,
+   "n": 548,
+   "point_estimate": 0.9124,
+   "point_estimate_recomputed": 0.9124,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.8799,
+    0.9368
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.8731,
+    0.9404
+   ],
+   "n_eff_crossed": 275.38,
+   "width_account_key_115": 0.0569,
+   "width_crossed_key_116": 0.0673,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1828
+  },
+  {
+   "label": "POWER-AUDIT \u00a72 \u2014 cohort 2025, retrievable fraction",
+   "k": 480,
+   "n": 510,
+   "point_estimate": 0.9412,
+   "point_estimate_recomputed": 0.9412,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.9117,
+    0.9612
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.9053,
+    0.964
+   ],
+   "n_eff_crossed": 256.28,
+   "width_account_key_115": 0.0495,
+   "width_crossed_key_116": 0.0587,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1859
+  },
+  {
+   "label": "POWER-AUDIT \u00a72 \u2014 cohort 2026, retrievable fraction",
+   "k": 159,
+   "n": 164,
+   "point_estimate": 0.9695,
+   "point_estimate_recomputed": 0.9695,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.9198,
+    0.9888
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.9067,
+    0.9905
+   ],
+   "n_eff_crossed": 82.41,
+   "width_account_key_115": 0.069,
+   "width_crossed_key_116": 0.0838,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.2145
+  },
+  {
+   "label": "RESULT.md \u2014 census by decoded creation year 1971",
+   "k": 1,
+   "n": 1,
+   "point_estimate": 1.0,
+   "point_estimate_recomputed": 1.0,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.1541,
+    1.0
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.1157,
+    1.0
+   ],
+   "n_eff_crossed": 0.5,
+   "width_account_key_115": 0.8459,
+   "width_crossed_key_116": 0.8843,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.0454
+  },
+  {
+   "label": "RESULT.md \u2014 census by decoded creation year 1975",
+   "k": 0,
+   "n": 3,
+   "point_estimate": 0.0,
+   "point_estimate_recomputed": 0.0,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.0,
+    0.6466
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.0,
+    0.7182
+   ],
+   "n_eff_crossed": 1.51,
+   "width_account_key_115": 0.6466,
+   "width_crossed_key_116": 0.7182,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1107
+  },
+  {
+   "label": "RESULT.md \u2014 census by decoded creation year 2018",
+   "k": 2,
+   "n": 2,
+   "point_estimate": 1.0,
+   "point_estimate_recomputed": 1.0,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.2671,
+    1.0
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.2074,
+    1.0
+   ],
+   "n_eff_crossed": 1.01,
+   "width_account_key_115": 0.7329,
+   "width_crossed_key_116": 0.7926,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.0815
+  },
+  {
+   "label": "RESULT.md \u2014 census by decoded creation year 2019",
+   "k": 19,
+   "n": 26,
+   "point_estimate": 0.7308,
+   "point_estimate_recomputed": 0.7308,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.501,
+    0.8801
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.4605,
+    0.8962
+   ],
+   "n_eff_crossed": 13.07,
+   "width_account_key_115": 0.3791,
+   "width_crossed_key_116": 0.4357,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1493
+  },
+  {
+   "label": "RESULT.md \u2014 census by decoded creation year 2020",
+   "k": 89,
+   "n": 109,
+   "point_estimate": 0.8165,
+   "point_estimate_recomputed": 0.8165,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.7152,
+    0.8874
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.6945,
+    0.897
+   ],
+   "n_eff_crossed": 54.77,
+   "width_account_key_115": 0.1722,
+   "width_crossed_key_116": 0.2025,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.176
+  },
+  {
+   "label": "RESULT.md \u2014 census by decoded creation year 2021",
+   "k": 170,
+   "n": 201,
+   "point_estimate": 0.8458,
+   "point_estimate_recomputed": 0.8458,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.777,
+    0.8962
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.7628,
+    0.9034
+   ],
+   "n_eff_crossed": 101.01,
+   "width_account_key_115": 0.1192,
+   "width_crossed_key_116": 0.1406,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1795
+  },
+  {
+   "label": "RESULT.md \u2014 census by decoded creation year 2022",
+   "k": 277,
+   "n": 317,
+   "point_estimate": 0.8738,
+   "point_estimate_recomputed": 0.8738,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.8237,
+    0.9112
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.8133,
+    0.9167
+   ],
+   "n_eff_crossed": 159.3,
+   "width_account_key_115": 0.0875,
+   "width_crossed_key_116": 0.1034,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1817
+  },
+  {
+   "label": "RESULT.md \u2014 census by decoded creation year 2023",
+   "k": 389,
+   "n": 456,
+   "point_estimate": 0.8531,
+   "point_estimate_recomputed": 0.8531,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.81,
+    0.8877
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.8014,
+    0.8931
+   ],
+   "n_eff_crossed": 229.15,
+   "width_account_key_115": 0.0777,
+   "width_crossed_key_116": 0.0917,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1802
+  },
+  {
+   "label": "RESULT.md \u2014 census by decoded creation year 2024",
+   "k": 437,
+   "n": 474,
+   "point_estimate": 0.9219,
+   "point_estimate_recomputed": 0.9219,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.888,
+    0.9462
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.8808,
+    0.9497
+   ],
+   "n_eff_crossed": 238.19,
+   "width_account_key_115": 0.0582,
+   "width_crossed_key_116": 0.0689,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1838
+  },
+  {
+   "label": "RESULT.md \u2014 census by decoded creation year 2025",
+   "k": 434,
+   "n": 456,
+   "point_estimate": 0.9518,
+   "point_estimate_recomputed": 0.9518,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.9224,
+    0.9704
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.9158,
+    0.9728
+   ],
+   "n_eff_crossed": 229.15,
+   "width_account_key_115": 0.048,
+   "width_crossed_key_116": 0.057,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1875
+  },
+  {
+   "label": "RESULT.md \u2014 census by decoded creation year 2026",
+   "k": 123,
+   "n": 128,
+   "point_estimate": 0.9609,
+   "point_estimate_recomputed": 0.9609,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.8984,
+    0.9856
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.8821,
+    0.9878
+   ],
+   "n_eff_crossed": 64.32,
+   "width_account_key_115": 0.0872,
+   "width_crossed_key_116": 0.1056,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.211
+  },
+  {
+   "label": "RESULT.md \u2014 census pooled, publicly retrievable",
+   "k": 1941,
+   "n": 2173,
+   "point_estimate": 0.8932,
+   "point_estimate_recomputed": 0.8932,
+   "centre_moved": false,
+   "restated_ci_account_key_115": [
+    0.8767,
+    0.9078
+   ],
+   "reproduces_session_115_restatement": true,
+   "restated_ci_crossed_key_116": [
+    0.8735,
+    0.9102
+   ],
+   "n_eff_crossed": 1091.97,
+   "width_account_key_115": 0.0311,
+   "width_crossed_key_116": 0.0367,
+   "wider_than_115": true,
+   "further_widening_ratio": 1.1801
+  }
+ ],
+ "n_intervals": 36,
+ "n_reproducing_session_115": 36,
+ "n_wider_than_115": 36,
+ "n_centres_moved": 0
+}

@@ -1,0 +1,245 @@
+{
+ "script": "crossed_model.py",
+ "run": "ledger/run-2026-08-13T0427Z.json",
+ "run_id": "TEMPLATE \u2014 the running session sets this",
+ "run_utc_start": "2026-08-13T04:27:00Z",
+ "analysis_population_before_page_attribution": 3569,
+ "attributed_units": 3569,
+ "attributed_share": 1.0,
+ "exclusions_from_load": {
+  "arm_B_truncated": 249,
+  "indeterminate": 44,
+  "not_19_digit": 7,
+  "nonpositive_age": 0
+ },
+ "primary": {
+  "label": "day-3 crossed subset",
+  "units": 3569,
+  "absent": 434,
+  "rate": 0.12160268982908377,
+  "no_finite_cluster_factor": {
+   "N": 3569,
+   "absent": 434,
+   "rate": 0.12160268982908377,
+   "sigma2_A": 0.028188802501255918,
+   "sigma2_P": 0.04019099620813836,
+   "sigma2_AP": -0.039912476598362445,
+   "sigma2_total": 0.10681547565541542,
+   "clusters_A": 2740,
+   "clusters_P": 2630,
+   "clusters_AP": 2985,
+   "pairs_same_account_diff_page": 1414,
+   "pairs_same_page_diff_account": 4690,
+   "pairs_same_cell": 4246,
+   "deff_account_only": 1.4216183504242679,
+   "deff_page_only": 1.8115115282044616,
+   "deff_cell_only": 1.317063229275683,
+   "deff_crossed_model_route1": 1.9160666493530465,
+   "deff_crossed_cgm_route2": 1.916066649353046,
+   "deff_crossed_direct_doublesum": 1.9160666493530465,
+   "var_2way": 5.734535459179706e-05,
+   "var_binomial": 2.992868468910491e-05,
+   "fpc_applied": false
+  },
+  "with_finite_cluster_factor": {
+   "N": 3569,
+   "absent": 434,
+   "rate": 0.12160268982908377,
+   "sigma2_A": 0.028188802501255918,
+   "sigma2_P": 0.04019099620813836,
+   "sigma2_AP": -0.039912476598362445,
+   "sigma2_total": 0.10681547565541542,
+   "clusters_A": 2740,
+   "clusters_P": 2630,
+   "clusters_AP": 2985,
+   "pairs_same_account_diff_page": 1414,
+   "pairs_same_page_diff_account": 4690,
+   "pairs_same_cell": 4246,
+   "deff_account_only": 1.4221373786646565,
+   "deff_page_only": 1.8122005778538355,
+   "deff_cell_only": 1.317504604352518,
+   "deff_crossed_model_route1": 1.9160666493530465,
+   "deff_crossed_cgm_route2": 1.916833352165974,
+   "deff_crossed_direct_doublesum": 1.9160666493530465,
+   "var_2way": 5.7368300998535426e-05,
+   "var_binomial": 2.992868468910491e-05,
+   "fpc_applied": true
+  },
+  "components": {
+   "count": 2394,
+   "largest_units": 63,
+   "largest_share": 0.017652003362286353,
+   "singleton_components": 1950,
+   "deff_component_key": 1.9414422394767668,
+   "kish_components": 5.393387503502382
+  },
+  "component_bootstrap": {
+   "draws": 10000,
+   "seed": 116116,
+   "components_resampled": 2394,
+   "degenerate_draws": 0,
+   "sigma2_A": {
+    "lo95": 0.013208006754064677,
+    "hi95": 0.05129949393318265,
+    "median": 0.02782746087604365,
+    "n_draws_used": 10000,
+    "excludes_zero": true
+   },
+   "sigma2_P": {
+    "lo95": 0.00218773139833379,
+    "hi95": 0.1339039498209831,
+    "median": 0.035947686029201786,
+    "n_draws_used": 10000,
+    "excludes_zero": true
+   },
+   "sigma2_AP": {
+    "lo95": -0.13510682870399063,
+    "hi95": 0.00721967600024308,
+    "median": -0.0336232840673574,
+    "n_draws_used": 10000,
+    "excludes_zero": false
+   },
+   "deff_crossed_model_route1": {
+    "lo95": 1.3482281370835274,
+    "hi95": 2.7838795285058895,
+    "median": 1.8738471237160204,
+    "n_draws_used": 10000,
+    "excludes_zero": true
+   },
+   "deff_account_only": {
+    "lo95": 1.2573511156472683,
+    "hi95": 1.6143488496045892,
+    "median": 1.412094792466608,
+    "n_draws_used": 10000,
+    "excludes_zero": true
+   },
+   "deff_page_only": {
+    "lo95": 1.264926918966725,
+    "hi95": 2.6727936915731543,
+    "median": 1.7780931188769493,
+    "n_draws_used": 10000,
+    "excludes_zero": true
+   }
+  },
+  "identity_check_route2_minus_direct": -4.440892098500626e-16,
+  "identity_check_route1_minus_route2": 4.440892098500626e-16
+ },
+ "heaviest_page": {
+  "key": "es.wikipedia.org|Protestas en Paraguay de 2023",
+  "units": 22,
+  "absent": 16,
+  "distinct_handles": 20
+ },
+ "without_heaviest_page": {
+  "label": "day-3 crossed subset, heaviest page removed",
+  "units": 3547,
+  "absent": 418,
+  "rate": 0.11784606709895687,
+  "no_finite_cluster_factor": {
+   "N": 3547,
+   "absent": 418,
+   "rate": 0.11784606709895687,
+   "sigma2_A": 0.027836571186713687,
+   "sigma2_P": 0.006435779243704725,
+   "sigma2_AP": -0.0071945002485129346,
+   "sigma2_total": 0.10395837156826503,
+   "clusters_A": 2720,
+   "clusters_P": 2629,
+   "clusters_AP": 2965,
+   "pairs_same_account_diff_page": 1414,
+   "pairs_same_page_diff_account": 4232,
+   "pairs_same_cell": 4242,
+   "deff_account_only": 1.4182486529042944,
+   "deff_page_only": 1.3853672660490166,
+   "deff_cell_only": 1.3115044023672036,
+   "deff_crossed_model_route1": 1.4921115165861074,
+   "deff_crossed_cgm_route2": 1.4921115165861072,
+   "deff_crossed_direct_doublesum": 1.4921115165861076,
+   "var_2way": 4.373202240274767e-05,
+   "var_binomial": 2.9308816342899642e-05,
+   "fpc_applied": false
+  },
+  "with_finite_cluster_factor": {
+   "N": 3547,
+   "absent": 418,
+   "rate": 0.11784606709895687,
+   "sigma2_A": 0.027836571186713687,
+   "sigma2_P": 0.006435779243704725,
+   "sigma2_AP": -0.0071945002485129346,
+   "sigma2_total": 0.10395837156826503,
+   "clusters_A": 2720,
+   "clusters_P": 2629,
+   "clusters_AP": 2965,
+   "pairs_same_account_diff_page": 1414,
+   "pairs_same_page_diff_account": 4232,
+   "pairs_same_cell": 4242,
+   "deff_account_only": 1.418770259617389,
+   "deff_page_only": 1.385894422542947,
+   "deff_cell_only": 1.3119468802357486,
+   "deff_crossed_model_route1": 1.4921115165861074,
+   "deff_crossed_cgm_route2": 1.4927178019245877,
+   "deff_crossed_direct_doublesum": 1.4921115165861076,
+   "var_2way": 4.374979190838459e-05,
+   "var_binomial": 2.9308816342899642e-05,
+   "fpc_applied": true
+  },
+  "components": {
+   "count": 2393,
+   "largest_units": 63,
+   "largest_share": 0.017761488581900197,
+   "singleton_components": 1950,
+   "deff_component_key": 1.5161633841534774,
+   "kish_components": 5.290386241894558
+  },
+  "component_bootstrap": {
+   "draws": 10000,
+   "seed": 116117,
+   "components_resampled": 2393,
+   "degenerate_draws": 0,
+   "sigma2_A": {
+    "lo95": 0.012672241617701056,
+    "hi95": 0.052083791860797556,
+    "median": 0.027556794314679518,
+    "n_draws_used": 10000,
+    "excludes_zero": true
+   },
+   "sigma2_P": {
+    "lo95": 0.0010049537680451583,
+    "hi95": 0.018374826301274814,
+    "median": 0.006614819623778075,
+    "n_draws_used": 10000,
+    "excludes_zero": true
+   },
+   "sigma2_AP": {
+    "lo95": -0.03138882068083415,
+    "hi95": 0.011647888736616895,
+    "median": -0.006938917280282401,
+    "n_draws_used": 10000,
+    "excludes_zero": false
+   },
+   "deff_crossed_model_route1": {
+    "lo95": 1.3149624130100261,
+    "hi95": 1.688023157967563,
+    "median": 1.4854067131075877,
+    "n_draws_used": 10000,
+    "excludes_zero": true
+   },
+   "deff_account_only": {
+    "lo95": 1.2530833495592695,
+    "hi95": 1.6101356260625992,
+    "median": 1.409414255512368,
+    "n_draws_used": 10000,
+    "excludes_zero": true
+   },
+   "deff_page_only": {
+    "lo95": 1.2389506875659577,
+    "hi95": 1.5464911834633193,
+    "median": 1.3805596636214135,
+    "n_draws_used": 10000,
+    "excludes_zero": true
+   }
+  },
+  "identity_check_route2_minus_direct": -4.440892098500626e-16,
+  "identity_check_route1_minus_route2": 2.220446049250313e-16
+ }
+}
