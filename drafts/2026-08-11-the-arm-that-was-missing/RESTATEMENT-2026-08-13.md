@@ -48,8 +48,16 @@ therefore **still possibly too narrow**, and the page-key variant is printed bes
 **The subtract-first check, pre-registered as binding.** Every restated bound was subtracted from
 its published counterpart before anything here was written. **36 intervals recomputed; 36 reproduce
 their published values** to within 0.02 pp (day-2 population) and 0.002 (the two others); **36 of 36
-are wider; no point estimate moved.** K4 does not fire. Sessions 113 and 114 each published a number
-their own tables refuted, which is why this check exists.
+are wider.** K4 does not fire. Sessions 113 and 114 each published a number their own tables
+refuted, which is why this check exists.
+
+**And "no point estimate moved" is checked, not asserted.** The first version of `restatement_115.py`
+recorded `centre_moved: False` as a constant — true by construction, and therefore worth nothing.
+It now carries the **published point estimate** of every day-2 interval into the comparison
+(87.92, 95.14, 92.39, 87.59, 83.95, 83.73, 82.20, 89.26, 85.09, 85.52, 17.80, 22.86, 17.59, 17.92,
+12.08) and reports **15 centres checked, 0 moved**; the other 21 are checked by matching the
+published `n` and `k` themselves, which fixes the centre exactly (**21 of 21 match**). A house that
+certifies its own arithmetic by declaring it correct has certified nothing.
 
 ## 3. The corrected register — every published interval, dated 2026-08-13
 

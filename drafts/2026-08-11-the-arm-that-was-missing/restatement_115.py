@@ -78,7 +78,8 @@ def deff_of(rows, keyfn):
             "se_cluster": v_cluster ** 0.5, "se_binomial": v_binom ** 0.5}
 
 
-def restate(label, k, n, published, deff=DEFF_ACCOUNT, rows=None, scale=100.0):
+def restate(label, k, n, published, deff=DEFF_ACCOUNT, rows=None, scale=100.0,
+            published_point=None):
     """One published interval, its recomputation, and the subtraction between them.
 
     `published` is the interval as it stands in the published text, in the units it was
@@ -105,7 +106,20 @@ def restate(label, k, n, published, deff=DEFF_ACCOUNT, rows=None, scale=100.0):
     out["reproduces_published"] = (
         abs(out["reproduced_naive_ci"][0] - published[0]) <= 0.02
         and abs(out["reproduced_naive_ci"][1] - published[1]) <= 0.02)
-    out["centre_moved"] = False   # by construction; asserted below against the published text
+    # NOT by construction: the published point estimate is carried in the call and compared.
+    # Asserting "no centre moved" without checking it against the published text would be the
+    # kind of self-certification this practice exists to refuse.
+    if published_point is None:
+        out["published_point"] = None
+        out["centre_moved"] = None
+        out["centre_check"] = "NOT CHECKED — no published point estimate was supplied"
+    else:
+        out["published_point"] = published_point
+        moved = abs(out["point_estimate"] - published_point) > 0.011
+        out["centre_moved"] = moved
+        out["centre_check"] = ("MOVED — K4 fires" if moved else
+                               f"unchanged ({published_point} recomputed as "
+                               f"{out['point_estimate']})")
     out["wider"] = out["restated_width"] > out["published_width"]
     if rows is not None:
         own = deff_of(rows, lambda r: r["handle"])
@@ -163,39 +177,44 @@ def main():
     ret = sum(1 for r in rows2 if not r["absent"])
     result["restated"].append(restate(
         "INCREMENT-3 §1 — pooled public retrievability, day-2 window run",
-        ret, n, [86.81, 88.94], rows=rows2))
+        ret, n, [86.81, 88.94], rows=rows2, published_point=87.92))
 
     # ---- INCREMENT-3 §1a: the six published age bands ------------------------------------
     published_bands = {
         "0-1y": [92.87, 96.71], "1-2y": [90.30, 94.05], "2-3y": [85.11, 89.71],
         "3-4y": [80.99, 86.53], "4-5y": [80.09, 86.82], "5y+": [78.05, 85.71],
     }
+    published_band_points = {"0-1y": 95.14, "1-2y": 92.39, "2-3y": 87.59,
+                             "3-4y": 83.95, "4-5y": 83.73, "5y+": 82.20}
     band_cells = cells(rows2, lambda r: r["band"])
     for band, pub in published_bands.items():
         rs = band_cells[band]
         k = sum(1 for r in rs if not r["absent"])
         result["restated"].append(restate(
-            f"INCREMENT-3 §1a — age band {band}, publicly retrievable", k, len(rs), pub, rows=rs))
+            f"INCREMENT-3 §1a — age band {band}, publicly retrievable", k, len(rs), pub,
+            rows=rs, published_point=published_band_points[band]))
 
     # ---- INCREMENT-3 §1b: the three source strata ----------------------------------------
     published_strata = {
         "W-article": [87.95, 90.45], "W-other-ns": [82.36, 87.46], "F-forum": [81.97, 88.48],
     }
+    published_stratum_points = {"W-article": 89.26, "W-other-ns": 85.09, "F-forum": 85.52}
     stratum_cells = cells(rows2, lambda r: r["stratum"])
     for st, pub in published_strata.items():
         rs = stratum_cells[st]
         k = sum(1 for r in rs if not r["absent"])
         result["restated"].append(restate(
-            f"INCREMENT-3 §1b — stratum {st}, publicly retrievable", k, len(rs), pub, rows=rs))
+            f"INCREMENT-3 §1b — stratum {st}, publicly retrievable", k, len(rs), pub,
+            rows=rs, published_point=published_stratum_points[st]))
 
     # ---- INCREMENT-3 §2a: the ceiling, four partitions, worst eligible cell --------------
     # These are ABSENCE rates, not retrievability. Published in ceiling-recompute.json.
     ceiling = json.load(open("ceiling-recompute.json"))
     pub_ceiling = {
-        "the six published bands": ("5y+", [14.29, 21.95]),
-        "calendar year of creation": ("2019", [12.07, 39.02]),
-        "integer age-year": ("6-7y", [11.56, 25.85]),
-        "half-year": ("5.5y", [11.79, 26.31]),
+        "the six published bands": ("5y+", [14.29, 21.95], 17.80),
+        "calendar year of creation": ("2019", [12.07, 39.02], 22.86),
+        "integer age-year": ("6-7y", [11.56, 25.85], 17.59),
+        "half-year": ("5.5y", [11.79, 26.31], 17.92),
     }
     keyfns = {
         "the six published bands": lambda r: r["band"],
@@ -203,7 +222,7 @@ def main():
         "integer age-year": lambda r: f"{int(r['age_y'])}-{int(r['age_y'])+1}y",
         "half-year": lambda r: f"{math.floor(r['age_y'] * 2) / 2}y",
     }
-    for part, (cellname, pub) in pub_ceiling.items():
+    for part, (cellname, pub, pub_pt) in pub_ceiling.items():
         cs = cells(rows2, keyfns[part])
         rs = cs.get(cellname)
         if rs is None:
@@ -214,7 +233,7 @@ def main():
         k = sum(r["absent"] for r in rs)
         result["restated"].append(restate(
             f"INCREMENT-3 §2a — ceiling, {part}, worst eligible cell {cellname} (ABSENCE)",
-            k, len(rs), pub, rows=rs))
+            k, len(rs), pub, rows=rs, published_point=pub_pt))
 
     # ---- INCREMENT-4 §3: the absence rate the correction was found on --------------------
     # Already restated in INCREMENT-4 itself; carried here so the register is complete.
@@ -222,7 +241,7 @@ def main():
     k = sum(r["absent"] for r in att)
     result["restated"].append(restate(
         "INCREMENT-4 §3 — absence rate, attributed units (already restated at session 114)",
-        k, len(att), [11.06, 13.19], rows=att))
+        k, len(att), [11.06, 13.19], rows=att, published_point=12.08))
 
     # ---- the page-key variant of every one of the above ----------------------------------
     for row in list(result["restated"]):
@@ -274,14 +293,20 @@ def main():
         "fail_to_reproduce": [r["label"] for r in checks if not r["reproduces_published"]],
         "all_wider": all(r["wider"] for r in checks),
         "not_wider": [r["label"] for r in checks if not r["wider"]],
+        "centres_checked": sum(1 for r in checks if r["centre_moved"] is not None),
+        "centres_moved": [r["label"] for r in checks if r["centre_moved"]],
         "min_widening_ratio": round(min(r["widening_ratio"] for r in checks), 4),
         "max_widening_ratio": round(max(r["widening_ratio"] for r in checks), 4),
         "K4": None,
     }
     result["subtract_first_check"]["K4"] = (
-        "DOES NOT FIRE — every centre unchanged, every bound wider"
-        if result["subtract_first_check"]["all_wider"] else
-        "FIRES — a bound did not widen; the restatement is withdrawn")
+        "DOES NOT FIRE — every centre checked against its published value and unchanged, "
+        "every bound wider"
+        if (result["subtract_first_check"]["all_wider"]
+            and not result["subtract_first_check"]["centres_moved"]
+            and result["subtract_first_check"]["centres_checked"] == len(checks)) else
+        "FIRES — a centre moved, a centre went unchecked, or a bound did not widen; "
+        "the restatement is withdrawn")
 
     json.dump(result, open("restatement-115.json", "w"), indent=1, ensure_ascii=False)
 
