@@ -62,6 +62,25 @@ def line(label, k, n, published, scale=1.0, digits=4):
     return out
 
 
+def own_deff(rows, handle_of, absent_of):
+    """A population's OWN account-key design effect, so the transfer is checked, not assumed.
+
+    The governing figure 1.4289 was measured on the day-2 window run. The two populations in
+    this file are different corpora, and an adversary is right to ask whether a design effect
+    measured on one transfers to another. It is cheap to check: both files carry the cited
+    handle for every unit, absent or present.
+    """
+    g = {}
+    for r in rows:
+        g.setdefault(handle_of(r), []).append(r)
+    N, K = sum(len(v) for v in g.values()), len(g)
+    a = sum(absent_of(r) for r in rows)
+    p = a / N
+    ss = sum((sum(absent_of(x) for x in v) - p * len(v)) ** 2 for v in g.values())
+    return {"n": N, "accounts": K, "absence_rate": round(p, 6),
+            "deff": (K / (K - 1) * ss / N ** 2) / (p * (1 - p) / N)}
+
+
 def main():
     out = {"session": 115, "deff": DEFF, "sqrt_deff": round(math.sqrt(DEFF), 4),
            "restated": [], "notes": {}}
@@ -69,6 +88,10 @@ def main():
     # ---------------- POWER-AUDIT §2, on session 110's run --------------------------------
     d, rows, excl = pa.load()
     out["power_audit_population"] = {"file": pa.RUN, "analysable": len(rows), "excluded": excl}
+    pa_raw = json.load(open(pa.RUN))
+    pa_handle = {str(o["vid"]): str(o["handle"]).lower() for o in pa_raw["observations"]}
+    out["power_audit_population"]["own_account_key_deff"] = own_deff(
+        rows, lambda r: pa_handle[r["vid"]], lambda r: 1 - r["alive"])
 
     published_cohorts = {
         2018: (2, 2, [0.342, 1.000]), 2019: (29, 21, [0.543, 0.853]),
@@ -124,6 +147,8 @@ def main():
         crows.append({"vid": str(r["vid"]), "handle": (r.get("handle") or "").lower(),
                       "year": r["year"], "alive": 1 if r["http"] == 200 else 0})
     out["census_population"] = {"file": CENSUS, "usable": len(crows), "excluded": cexcl}
+    out["census_population"]["own_account_key_deff"] = own_deff(
+        crows, lambda r: r["handle"], lambda r: 1 - r["alive"])
 
     published_census = {
         1975: (3, 0, [0.000, 0.562]), 1971: (1, 1, [0.207, 1.000]),
@@ -226,6 +251,11 @@ def main():
         print(f"{r['label']}: p={r['point_estimate']} n={r['n']} "
               f"pub {r['published_ci']} -> {r['restated_ci']} "
               f"(x{r['widening_ratio']}){flag}{pm}")
+    print()
+    for k in ("power_audit_population", "census_population"):
+        o = out[k]["own_account_key_deff"]
+        print(f"{k}: own account-key DEFF {o['deff']:.4f} on {o['n']} units in "
+              f"{o['accounts']} accounts (governing figure {DEFF:.4f})")
     print()
     w = out["weibull_shape"]
     print(f"Weibull k = {w['published']['k']}  published CI {w['published']['ci95_profile']} "

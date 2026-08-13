@@ -161,6 +161,24 @@ the one that flatters us, which is why it is not stated alone. The honest readin
 are applied to a gap measured on **session 110's** run. The populations overlap heavily but are not
 identical. This is an approximation and the third row inherits it.
 
+## 4a. Does a design effect measured on one population transfer to another?
+
+The governing 1.4289 was measured on the **day-2 window run**. §3c restates figures from the
+**session-110 run** and §3d from the **session-109 census** — different corpora. An adversary is
+right to ask whether the number transfers, and the check is cheap, because all three files carry the
+cited handle for every unit, absent or present. So it was run rather than argued:
+
+| population | units | accounts | absence rate | **its own account-key DEFF** |
+|---|---|---|---|---|
+| session-109 census | 2,173 | 1,653 | 10.68 % | **1.3967** |
+| session-110 run (`POWER-AUDIT`) | 2,618 | 2,038 | 11.38 % | **1.4482** |
+| day-2 window run (the governing figure) | 3,575 | 2,744 | 12.08 % | **1.4289** |
+
+**The three agree to within 0.05.** Using 1.4289 throughout slightly over-corrects the census and
+slightly under-corrects the session-110 run; the difference is smaller than the rounding in the
+published tables. The transfer is checked, not assumed — and it is the *populations* that agree, not
+the *cells* (§5, where they do not).
+
 ## 5. What we tested rather than assumed: is one design effect enough?
 
 **P7 predicted the per-cell design effects would straddle 1.4289. They do not, and the prediction

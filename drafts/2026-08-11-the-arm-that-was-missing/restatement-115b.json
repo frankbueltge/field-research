@@ -598,6 +598,12 @@
    "indeterminate": 33,
    "not_19_digit": 4,
    "nonpositive_age": 0
+  },
+  "own_account_key_deff": {
+   "n": 2618,
+   "accounts": 2038,
+   "absence_rate": 0.113827,
+   "deff": 1.4482238520194712
   }
  },
  "weibull_shape": {
@@ -631,6 +637,12 @@
   "usable": 2173,
   "excluded": {
    "transport_or_indeterminate": 28
+  },
+  "own_account_key_deff": {
+   "n": 2173,
+   "accounts": 1653,
+   "absence_rate": 0.106765,
+   "deff": 1.3966624185459722
   }
  },
  "ratio_intervals": [
