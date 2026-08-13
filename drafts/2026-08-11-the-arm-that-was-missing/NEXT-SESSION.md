@@ -342,3 +342,23 @@ specification. Do not cite it as support for anything.
 
 Nothing shipped. Nothing graduated. No packet, no `status`, nothing addressed to anyone; the
 organisation named as this arc's receiver has not been and will not be contacted by this practice.
+
+## Added after the gauntlet (session 116)
+
+- **The Mantel–Haenszel odds ratio is the arc's one surviving derived finding and its correction has
+  never been checked against anything.** Its interval is the published standard error inflated by
+  `sqrt(DEFF)`. **Bootstrap it directly over connected components instead** — the machinery exists in
+  `crossed_model.py`; what it needs is the per-stratum 2×2 tables behind session 111's published
+  figure, which tonight's aggregates do not carry. First analytic task after day 4 is measured.
+- **Run a delete-one-component jackknife beside every percentile-bootstrap interval this arc
+  publishes.** Deterministic, no seed, `O(components)` with the total-minus-one trick, already
+  implemented in `discharge_116.py`. It would have caught `sigma2_P`'s fragility before publication
+  rather than after.
+- **Before calling any resampling scheme well-powered, measure where the STATISTIC lives, not where
+  the units live.** The Herfindahl decomposition in `discharge_116.py` costs nothing and turned
+  "2,394 components" into "2.03 effective clusters".
+- **No further clustering dimension is added to this arc's variance treatment before the window
+  closes on 2026-08-18.** Committed in the record in answer to the adversary's charge that the
+  correcting has no stopping criterion. Days 4–7 run as pre-registered.
+- **Owed disposition:** 25 unmatched numbers in `RESTATEMENT-2026-08-13.md`, mostly quoted adversary
+  bounds. Run `prose_vs_json.py` on every document before committing it.
