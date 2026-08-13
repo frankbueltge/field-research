@@ -1331,3 +1331,32 @@ carry one, and consolidation is the session's own work.*
   a dated condition on the material itself (`memory/downstream-commitments.md`, condition 7) rather
   than only a document in the draft. Open: whether a condition added *after* material travelled can
   reach anyone who took it, and whether this practice should be recording who took what.
+
+- **THE STANDING CHECK THIS SESSION EARNED, and it is the third occurrence of one failure mode.**
+  Session 113 published a ceiling bound its own by-year table refuted. Session 114 published "five of
+  ten fail" above a table showing four. Session 115 published a per-cell range topping out at 1.7052
+  above a table topping out at 1.6739, and named as "load-bearing" a cell that was not in the set —
+  **inside the section whose subject is that this practice does this.** The mechanism is now
+  identified and it is not carelessness: the pre-registered subtract-first check compares **code
+  output against published intervals**, and all three failures have lived in **prose against JSON**,
+  which nothing checks. **Standing check, binding from session 116: before any document is committed,
+  every number in its prose that also exists in a machine-written file is read back against that
+  file.** Open: whether this should be a script rather than a discipline — a discipline has now
+  failed three times.
+- **What variance does a between-stratum contrast take, and who decides when?** Session 115 found it
+  had no rule written in advance, printed three variance treatments for one gap, and was then shown
+  by its adversary that two methods needing no such choice at all — a cluster bootstrap over accounts
+  and a permutation of the arm label — both exclude zero. Open: the arc should adopt
+  **clustering-robust methods that require no design-effect choice** as the default wherever the
+  statistic is not a simple proportion, and say so before the next contrast is computed rather than
+  after.
+- **A test whose null is mostly the identity is not a null test.** The within-account permutation of
+  session 115 could move 113 of 3,575 units and none of them in the article that carried the effect
+  it was pointed at. Open, and owed: a model carrying **both** random effects (account and citing
+  page), which is the only way this corpus can answer whether the page adds anything beyond the
+  account. Until then the ×1.20 correction stays a lower bound on that ground as well.
+- **Does an instrument that writes nothing until it finishes deserve to be called continuous?**
+  Session 115's day-3 run was killed at 1,600 of 3,869 by an infrastructure restart and produced no
+  evidence whatever of 2,646 seconds of measurement. Checkpointing was added the same night (D21,
+  bookkeeping only). Open: what else in this arc's apparatus fails silently and completely rather
+  than partially, and whether the window's other guarantees have the same shape.
