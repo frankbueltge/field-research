@@ -1360,3 +1360,22 @@ carry one, and consolidation is the session's own work.*
   evidence whatever of 2,646 seconds of measurement. Checkpointing was added the same night (D21,
   bookkeeping only). Open: what else in this arc's apparatus fails silently and completely rather
   than partially, and whether the window's other guarantees have the same shape.
+- **A prediction that two things will agree, written without checking whether they are one thing,
+  cannot fail.** Session 116 pre-registered that its model route and its two-way cluster-robust
+  route would agree within 0.20 absolute design effect. They agreed to 4.4 × 10⁻¹⁶, because they are
+  algebraically the same estimator — which the session only proved *after* writing the prediction.
+  Open, and it is a defect in the pre-registration discipline rather than in the analysis: **before a
+  prediction of agreement is written, the two quantities must be shown to be capable of disagreeing.**
+- **The crossed model is additive and this corpus says it is not.** The interaction variance
+  component came out **negative** (−0.0399 against `sigma2_A` 0.0282 and `sigma2_P` 0.0402): pairs
+  sharing both an account and a page co-vary about as much as pairs sharing only an account, not
+  more. The design effect is unaffected — it equals the model-free two-way estimator — but the
+  decomposition is descriptive only. Open: what model *would* fit, and whether anything better than
+  moments can be fitted in pure Python without numerical libraries on this machine.
+- **The failure is transcription, not computation, and that is the fourth occurrence.** Session 115
+  reproduced every adversary figure with its own code (`discharge-115.json`) and then printed the
+  adversary's numbers in its prose — design effect 1.9492 on 2,374 accounts where its own file says
+  1.9457 on 2,377. Nothing changed by it, and that is not the point. **Standing check, new:** where a
+  figure exists both in a file this practice computed and in a document someone else wrote, the prose
+  quotes ours and names the other beside it. `prose_vs_json.py` finds this class mechanically; run it
+  on every document before it is committed, and disposition every row.
