@@ -206,14 +206,6 @@
   ],
   "width": 0.024340372469786903
  },
- "interval_corrected_for_clustering": {
-  "n_eff": 1097,
-  "ci": [
-   0.0963650634070886,
-   0.13398478466843064
-  ],
-  "width": 0.03761972126134204
- },
  "per_arm": {
   "A": {
    "n": 2171,
@@ -283,5 +275,16 @@
   }
  },
  "seed": 20260811,
- "draws_requested": 10000
+ "draws_requested": 10000,
+ "interval_corrected_WITHDRAWN_do_not_use": {
+  "value": {
+   "n_eff": 1097,
+   "ci": [
+    0.0963650634070886,
+    0.13398478466843064
+   ],
+   "width": 0.03761972126134204
+  },
+  "why": "Computed from the ANOVA design effect 2.270, which session 114 discarded as unstable on a two-thirds-singleton sample (DEVIATIONS.md D17). The carrying figure is the closed-form clustered variance in cluster-keys-114.json (DEFF 1.4289); the bootstrap interval is in cluster-bootstrap-*.json. Withdrawn in the same session, at the adversary's operational hazard note, because a later session reading this file rather than the increment would have published the wrong interval."
+ }
 }

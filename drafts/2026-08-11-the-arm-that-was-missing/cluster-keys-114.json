@@ -1,0 +1,86 @@
+{
+ "run": "ledger/run-2026-08-12T0341Z.json",
+ "run_id": "2026-08-12T0341Z",
+ "C4_analytic_handle_key_full_population": {
+  "n": 3575,
+  "handles": 2744,
+  "rate": 0.12083916083916084,
+  "var_cluster": 4.246110503044967e-05,
+  "var_binomial": 2.9716659593523986e-05,
+  "deff": 1.428865343926577,
+  "se_cluster": 0.006516218614384394,
+  "se_binomial": 0.005451298890496098
+ },
+ "C4_bootstrap_seed_spread": {
+  "seeds": 10,
+  "draws": 10000,
+  "mean_width": 0.025575149390213648,
+  "sd_width": 0.00028131766376464964,
+  "min_width": 0.025122292979435842,
+  "max_width": 0.02601102611442191
+ },
+ "C5_attributed_units": 3575,
+ "C5_units_total": 3575,
+ "C5_handle_key_on_attributed_subset": {
+  "n": 3575,
+  "handles": 2744,
+  "rate": 0.12083916083916084,
+  "var_cluster": 4.246110503044967e-05,
+  "var_binomial": 2.9716659593523986e-05,
+  "deff": 1.428865343926577,
+  "se_cluster": 0.006516218614384394,
+  "se_binomial": 0.005451298890496098
+ },
+ "C5_page_key_on_attributed_subset": {
+  "n": 3575,
+  "handles": 2640,
+  "rate": 0.12083916083916084,
+  "var_cluster": 5.6027469561929166e-05,
+  "var_binomial": 2.9716659593523986e-05,
+  "deff": 1.885389216967676,
+  "se_cluster": 0.007485149935834897,
+  "se_binomial": 0.005451298890496098
+ },
+ "C5_heaviest_page": {
+  "key": "es.wikipedia.org|Protestas en Paraguay de 2023",
+  "units": 23,
+  "absent": 17,
+  "distinct_handles": 20
+ },
+ "C5_handle_key_without_that_page": {
+  "n": 3552,
+  "handles": 2724,
+  "rate": 0.11683558558558559,
+  "var_cluster": 4.130036640682464e-05,
+  "var_binomial": 2.9049839956773334e-05,
+  "deff": 1.4217071924761135,
+  "se_cluster": 0.006426536112621218,
+  "se_binomial": 0.005389790344417242
+ },
+ "C5_page_key_without_that_page": {
+  "n": 3552,
+  "handles": 2639,
+  "rate": 0.11683558558558559,
+  "var_cluster": 4.052087887316356e-05,
+  "var_binomial": 2.9049839956773334e-05,
+  "deff": 1.39487442731042,
+  "se_cluster": 0.006365601218515307,
+  "se_binomial": 0.005389790344417242
+ },
+ "C5_pairs_same_handle_different_page": {
+  "label": "same handle, different page",
+  "pairs": 705,
+  "both_absent": 22,
+  "expected": 10.294482468580371,
+  "ratio": 2.137067119900962
+ },
+ "C5_pairs_same_page_different_handle": {
+  "label": "same page, different handle",
+  "pairs": 2316,
+  "both_absent": 187,
+  "expected": 33.81847006699594,
+  "ratio": 5.529522761660844
+ },
+ "rho_anova_handle_key": 0.7912101982752706,
+ "m_kish_handle_key": 2.605034965034965
+}
