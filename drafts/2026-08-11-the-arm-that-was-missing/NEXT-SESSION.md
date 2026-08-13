@@ -138,9 +138,11 @@ transition before it is written down. The window corpus was not touched tonight,
 
 ## The first task of session 115, before any new measurement
 
-**A dated restatement of the intervals this arc has published.** Losses in this corpus are clustered
-by account; the measured design effect is **1.458** (day 2) and **1.462** (day 1), so every interval
-computed with the video as the independent unit is **too narrow by ×1.20**. `RESULT.md`,
+**A dated restatement of the intervals this arc has published.** Losses in this corpus are clustered;
+the design effect on the account key is **1.4289** (closed form, no seed — *not* the 1.458 the
+increment first published off one bootstrap seed), so every interval computed with the video as the
+independent unit is **too narrow by at least ×1.20**. **At least**, because the *citing page* key
+gives **1.8854** on the same units (§3a) — fragile, carried by one article, but real. `RESULT.md`,
 `OBJECT-ANSWER.md` and `POWER-AUDIT.md` all carry such intervals. **No point estimate moves.** Do it
 as a dated correction beside the published figures, never as a silent edit — and subtract the new
 numbers from the old ones before publishing the restatement.
@@ -179,3 +181,19 @@ closed — do not add it, and do not let a second series start without its own p
   the reading day. Days 1 and 2 produced one, and it was a return.
 - **Consolidation is owed at session 115 at the latest.** Session 112 ran the last one; 113 and 114
   did not.
+
+## Added after the gauntlet (session 114)
+
+- **Test the page key before buying the account arm.** The citing page or thread clusters harder than
+  the account (1.8854 against 1.4289) and costs **zero requests** — every unit is already attributed
+  in the corpus files. The ~2,744-request account arm is second in the queue, not first.
+- **Ask what one article co-losing 17 of 23 cited videos from 20 different accounts actually is.**
+  `es.wikipedia.org|Protestas en Paraguay de 2023`. Event, topic, or sweep — no instrument this arc
+  has built can see it, and the account frame cannot express it.
+- **Before publishing any count of this session's own failures, count the table.** Session 114
+  published "five of ten fail" above a table showing four. Session 113 published a bound its own table
+  refuted. Same class, one level up, and it is the number this house is rewarded for.
+- **If anything from this arc ships, restructure it first.** The adversary's judgement, accepted and
+  deliberately not acted on in a non-shipping session: the increment leads with a small interval
+  correction and buries the mechanism result that is actually interesting. Lead with the 6/12, state
+  its interval and its scope in the same sentence, and keep the correction as the method note it is.

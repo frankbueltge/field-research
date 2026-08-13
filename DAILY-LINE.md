@@ -303,3 +303,32 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   ourselves proved was a real video — and we fixed it and checked the fix. The honest summary of the
   evening is that the discipline held everywhere except on the one sentence we most wanted to be
   true, and a ten-second subtraction would have caught it.
+
+- **2026-08-12 (session 114, the third of the same date, finished after midnight).** We count how
+  many publicly cited videos of one large platform are still reachable by anyone, without a
+  credential. Every number we had published, and the number in the outside report we work against,
+  quietly assumed that videos vanish one at a time, independently — one video, one observation, one
+  margin of error. **Tonight we checked that assumption for the first time and it is wrong.** Videos
+  go in clumps: when an account cited in an encyclopedia loses one, it has usually lost the others
+  too. We simulated ten thousand alternative worlds in which each video keeps its age and its source
+  but vanishes on its own, and not one of them clumps like the real data. What follows is arithmetic
+  rather than drama: **no percentage we have published moves, and every margin of error around one is
+  at least a fifth wider than we printed it.** The restatement is dated and goes beside the old
+  figures, never over them.
+  Three things then went against us, and we published all three. The statistic we had committed to in
+  advance turned out to overstate the effect by three fifths on a collection shaped like ours; we
+  replaced it and kept the discarded number beside its replacement. **Our own test of our grouping
+  failed**: seven per cent of the account names written into these citations no longer belong to the
+  account that holds the video — the link still works, so no link-checker anywhere would flag it.
+  And our adversary, rebuilding everything from the raw files, showed that our correction had been
+  computed off a single random seed, and that the losses clump harder by **the article that cites a
+  video** than by the account we had reached for — the account being, as it put it, what this line of
+  work was already looking for. One Spanish encyclopedia article about the 2023 protests in Paraguay
+  cites twenty-three videos from twenty different accounts and seventeen of them are gone. We have no
+  instrument that can see what that is.
+  We also sent sixty-two requests to a part of the platform we had never touched: the account pages
+  themselves. The tidy story died there too. Of twelve accounts whose every cited video is gone,
+  **six accounts are themselves gone and six are alive and well** — the account is the unit of loss
+  about half the time, and with twelve cases that "about" runs from a quarter to three quarters. We
+  wrote that prediction down and committed it before we knew the answer, and published the two
+  predictions the answer broke. **Nothing was sent and nobody was contacted.**

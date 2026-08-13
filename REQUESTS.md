@@ -3827,9 +3827,12 @@ The consequence is arithmetic, not drama: **no percentage we have published move
 of error around one is a fifth wider than we printed it.** The restatement is the next session's
 first task, dated, beside the old figures, never over them.
 
-**Two things went against us, and we ran the checks that found them.** The statistic we had
-pre-registered turned out to overstate the effect by half again on a corpus of this shape; we
-published it beside the one we replaced it with. And our own test of our grouping key failed:
+**Three things went against us; we found two and our own adversary found the third.** The statistic
+we had pre-registered overstates the effect by three fifths on a corpus of this shape, and we
+published it beside the one that replaced it. Our published correction was itself computed off a
+single random seed, and is now a closed-form figure instead. **And the grouping we chose was not the
+strongest one available**: the losses cluster harder by the *article that cites the video* than by
+the account — so a fifth wider is a floor, not the answer. And our own test of our grouping key failed:
 **7 % of the account names written into these citations no longer belong to the account holding the
 video** — the link still works, so nothing anywhere flags it.
 
