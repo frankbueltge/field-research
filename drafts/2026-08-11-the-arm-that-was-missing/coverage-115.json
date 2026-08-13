@@ -1,0 +1,85 @@
+{
+ "session": 115,
+ "simulation_only": true,
+ "replicates": 200,
+ "seed": 20260813,
+ "cluster_sizes_from": "ledger/run-2026-08-12T0341Z.json",
+ "full_corpus": {
+  "units": 3575,
+  "accounts": 2744,
+  "singletons": 2366,
+  "largest": 36
+ },
+ "cases": [
+  {
+   "population": "full corpus (3,575 units / 2,744 accounts)",
+   "p": 0.1208,
+   "target_deff": 1.2,
+   "rho_used": 0.13168,
+   "realised_deff": 1.2201,
+   "replicates": 200,
+   "coverage_naive_wilson": 0.93,
+   "coverage_corrected_true_deff": 0.955,
+   "coverage_corrected_estimated_deff": 0.945,
+   "mean_width_naive": 0.0214,
+   "mean_width_corrected": 0.02363,
+   "mean_estimated_deff": 1.2106
+  },
+  {
+   "population": "full corpus (3,575 units / 2,744 accounts)",
+   "p": 0.1208,
+   "target_deff": 1.43,
+   "rho_used": 0.26487,
+   "realised_deff": 1.4175,
+   "replicates": 200,
+   "coverage_naive_wilson": 0.895,
+   "coverage_corrected_true_deff": 0.94,
+   "coverage_corrected_estimated_deff": 0.95,
+   "mean_width_naive": 0.02134,
+   "mean_width_corrected": 0.02541,
+   "mean_estimated_deff": 1.4371
+  },
+  {
+   "population": "full corpus (3,575 units / 2,744 accounts)",
+   "p": 0.1208,
+   "target_deff": 1.75,
+   "rho_used": 0.49753,
+   "realised_deff": 1.7612,
+   "replicates": 200,
+   "coverage_naive_wilson": 0.835,
+   "coverage_corrected_true_deff": 0.93,
+   "coverage_corrected_estimated_deff": 0.915,
+   "mean_width_naive": 0.02133,
+   "mean_width_corrected": 0.02832,
+   "mean_estimated_deff": 1.7602
+  },
+  {
+   "population": "small cell (34 units / 33 accounts), p = 0.23",
+   "p": 0.23,
+   "target_deff": 1.43,
+   "rho_used": 0.99,
+   "realised_deff": 1.0819,
+   "replicates": 200,
+   "coverage_naive_wilson": 0.925,
+   "coverage_corrected_true_deff": 0.95,
+   "coverage_corrected_estimated_deff": 0.95,
+   "mean_width_naive": 0.26976,
+   "mean_width_corrected": 0.27991,
+   "mean_estimated_deff": 1.0863
+  },
+  {
+   "population": "extreme p (1288 units), p = 0.95",
+   "p": 0.95,
+   "target_deff": 1.43,
+   "rho_used": 0.10083,
+   "realised_deff": 1.3938,
+   "replicates": 200,
+   "coverage_naive_wilson": 0.915,
+   "coverage_corrected_true_deff": 0.965,
+   "coverage_corrected_estimated_deff": 0.965,
+   "mean_width_naive": 0.02384,
+   "mean_width_corrected": 0.0282,
+   "mean_estimated_deff": 1.4104
+  }
+ ]
+}
