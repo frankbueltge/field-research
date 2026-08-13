@@ -1,0 +1,157 @@
+{
+ "session": 116,
+ "date_utc": "2026-08-13T17:29:02Z",
+ "register_source": "https://frankbueltge.de/datasets/register.json",
+ "register_entries": 59,
+ "register_entries_marked_blocked": 11,
+ "vantage": "this session's machine; egress address not recorded here",
+ "what_this_is_not": "not a claim that the register is wrong. A probe at another time, from another address, with another client is a different measurement; the disagreements below are evidence that reachability is a property of the request, not of the source.",
+ "probes": [
+  {
+   "id": "api-eia-gov",
+   "host": "api.eia.gov",
+   "url": "https://api.eia.gov/v2/petroleum/pri/spt/data/",
+   "register_status": 403,
+   "register_note": "Zugang erfordert Anmeldung oder Schl\u00fcssel (HTTP 403)",
+   "observed_with_user_agent": "403",
+   "observed_bare_client": "403"
+  },
+  {
+   "id": "api-tavily-com",
+   "host": "api.tavily.com",
+   "url": "https://api.tavily.com/extract",
+   "register_status": 401,
+   "register_note": "Zugang erfordert Anmeldung oder Schl\u00fcssel (HTTP 401)",
+   "observed_with_user_agent": "401",
+   "observed_bare_client": "401"
+  },
+  {
+   "id": "datacenters-microsoft-com",
+   "host": "datacenters.microsoft.com",
+   "url": "https://datacenters.microsoft.com/sustainability/efficiency/",
+   "register_status": 403,
+   "register_note": "Zugang erfordert Anmeldung oder Schl\u00fcssel (HTTP 403)",
+   "observed_with_user_agent": "200",
+   "observed_bare_client": "200"
+  },
+  {
+   "id": "en-wikipedia-org",
+   "host": "en.wikipedia.org",
+   "url": "https://en.wikipedia.org/w/api.php",
+   "register_status": 403,
+   "register_note": "Zugang erfordert Anmeldung oder Schl\u00fcssel (HTTP 403)",
+   "observed_with_user_agent": "429",
+   "observed_bare_client": "429"
+  },
+  {
+   "id": "gateway-api-globalfishingwatch-org",
+   "host": "gateway.api.globalfishingwatch.org",
+   "url": "https://gateway.api.globalfishingwatch.org/v3/events",
+   "register_status": 401,
+   "register_note": "Zugang erfordert Anmeldung oder Schl\u00fcssel (HTTP 401)",
+   "observed_with_user_agent": "401",
+   "observed_bare_client": "401"
+  },
+  {
+   "id": "query-wikidata-org",
+   "host": "query.wikidata.org",
+   "url": "https://query.wikidata.org/sparql",
+   "register_status": 403,
+   "register_note": "Zugang erfordert Anmeldung oder Schl\u00fcssel (HTTP 403)",
+   "observed_with_user_agent": "000",
+   "observed_bare_client": "000"
+  },
+  {
+   "id": "wikimedia-org",
+   "host": "wikimedia.org",
+   "url": "https://wikimedia.org/api/rest_v1/",
+   "register_status": 403,
+   "register_note": "Zugang erfordert Anmeldung oder Schl\u00fcssel (HTTP 403)",
+   "observed_with_user_agent": "301",
+   "observed_bare_client": "301"
+  },
+  {
+   "id": "www-fema-gov",
+   "host": "www.fema.gov",
+   "url": "https://www.fema.gov/about/openfema/api",
+   "register_status": 403,
+   "register_note": "Zugang erfordert Anmeldung oder Schl\u00fcssel (HTTP 403)",
+   "observed_with_user_agent": "403",
+   "observed_bare_client": "403"
+  },
+  {
+   "id": "www-iea-org",
+   "host": "www.iea.org",
+   "url": "https://www.iea.org/reports/net-zero-by-2050",
+   "register_status": 403,
+   "register_note": "Zugang erfordert Anmeldung oder Schl\u00fcssel (HTTP 403)",
+   "observed_with_user_agent": "403",
+   "observed_bare_client": "403"
+  },
+  {
+   "id": "www-unhcr-org",
+   "host": "www.unhcr.org",
+   "url": "https://www.unhcr.org/global-trends",
+   "register_status": 403,
+   "register_note": "Zugang erfordert Anmeldung oder Schl\u00fcssel (HTTP 403)",
+   "observed_with_user_agent": "403",
+   "observed_bare_client": "403"
+  },
+  {
+   "id": "www-wikidata-org",
+   "host": "www.wikidata.org",
+   "url": "https://www.wikidata.org/",
+   "register_status": 403,
+   "register_note": "Zugang erfordert Anmeldung oder Schl\u00fcssel (HTTP 403)",
+   "observed_with_user_agent": "301",
+   "observed_bare_client": "301"
+  }
+ ],
+ "disagreements": [
+  {
+   "id": "datacenters-microsoft-com",
+   "host": "datacenters.microsoft.com",
+   "url": "https://datacenters.microsoft.com/sustainability/efficiency/",
+   "register_status": 403,
+   "register_note": "Zugang erfordert Anmeldung oder Schl\u00fcssel (HTTP 403)",
+   "observed_with_user_agent": "200",
+   "observed_bare_client": "200"
+  },
+  {
+   "id": "en-wikipedia-org",
+   "host": "en.wikipedia.org",
+   "url": "https://en.wikipedia.org/w/api.php",
+   "register_status": 403,
+   "register_note": "Zugang erfordert Anmeldung oder Schl\u00fcssel (HTTP 403)",
+   "observed_with_user_agent": "429",
+   "observed_bare_client": "429"
+  },
+  {
+   "id": "query-wikidata-org",
+   "host": "query.wikidata.org",
+   "url": "https://query.wikidata.org/sparql",
+   "register_status": 403,
+   "register_note": "Zugang erfordert Anmeldung oder Schl\u00fcssel (HTTP 403)",
+   "observed_with_user_agent": "000",
+   "observed_bare_client": "000"
+  },
+  {
+   "id": "wikimedia-org",
+   "host": "wikimedia.org",
+   "url": "https://wikimedia.org/api/rest_v1/",
+   "register_status": 403,
+   "register_note": "Zugang erfordert Anmeldung oder Schl\u00fcssel (HTTP 403)",
+   "observed_with_user_agent": "301",
+   "observed_bare_client": "301"
+  },
+  {
+   "id": "www-wikidata-org",
+   "host": "www.wikidata.org",
+   "url": "https://www.wikidata.org/",
+   "register_status": 403,
+   "register_note": "Zugang erfordert Anmeldung oder Schl\u00fcssel (HTTP 403)",
+   "observed_with_user_agent": "301",
+   "observed_bare_client": "301"
+  }
+ ]
+}
