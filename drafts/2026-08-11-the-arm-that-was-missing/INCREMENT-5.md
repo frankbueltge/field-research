@@ -164,6 +164,91 @@ produced.
 
 ---
 
-## 3. Day 3 of the window
+## 3. Day 3 of the window — and the first time the confirmation step caught something
 
-*(Filled in below from the run itself.)*
+**The day was measured twice, because the first attempt was killed.** The run started 03:40:32Z and
+an infrastructure restart killed it at **1,600 of 3,869, 2,646 seconds in**, with nothing written:
+`ledger.py` saved its output only at the end. **No partial data existed, so there was nothing to
+splice.** The run was restarted whole at **04:27:00Z** and completed at **06:19:35Z** — 3,869 of
+3,869 units, 6,754.7 s, **no HTTP 429, no early stop**. Deviations **D20** and **D21** record the
+loss, the 47-minute shift in the time of day (interval 2 is **1.03 days**, not 1.00), the egress IP
+change within the same autonomous system, and the checkpointing added to the bookkeeping afterwards.
+
+**K1 does not fire** — the run is complete. **K2 does not fire** — AS396982, as on days 1 and 2,
+though the egress address moved 160.79.106.132 → .131 and a guard watching only the AS number would
+not have seen it.
+
+### 3a. One apparent transition, and it was the instrument
+
+The day-2 → day-3 diff finds **one** state change in 3,782 units determinate in both runs
+(0.026 %): `7368171405361351954`, handle `arutz_7`, RETRIEVABLE → NOT-RETRIEVABLE. **It did not
+survive confirmation.** Five immediate re-requests, per the pre-registered rule, all returned
+**RETRIEVABLE**:
+
+```
+reconfirmation_states: [RETRIEVABLE, RETRIEVABLE, RETRIEVABLE, RETRIEVABLE, RETRIEVABLE]
+verdict: NOT CONFIRMED — K4 fires; recorded as an instrument artefact, not counted in the window
+```
+
+**So interval 2 has zero confirmed transitions, and this is the first time in three days that the
+confirmation step has caught anything.** Until tonight it had only ever confirmed — the interval-1
+return agreed 5/5. The step exists because a single opaque refusal cannot be distinguished from a
+transient, and tonight it earned its cost: **the raw diff over-counts losses, and the whole of this
+interval's apparent loss was artefact.** Any practice running this measurement without a
+confirmation pass would have written a disappearance into its record tonight.
+
+*(The confirmation ran from 160.79.106.129 — a third address inside AS396982. The transition
+therefore failed to reproduce from a different egress address than the one that saw it, which is
+weaker evidence than a same-address retest and is stated as such.)*
+
+### 3b. The predictions, scored
+
+| | prediction | outcome |
+|---|---|---|
+| **P1** | 0, 1 or 2 confirmed transitions in interval 2 | **HOLDS** — one raw, **zero confirmed** |
+| **P2** | all 7 `grimhoundgaming` videos NOT-RETRIEVABLE on day 3 | **FAILS — 0 of 7 turned** |
+| **P3** | the interval-1 return is still RETRIEVABLE | **HOLDS** — it held |
+| **P4** | pooled determinate rate within ±0.40 pp of 82.1624 % | **HOLDS** — 82.1036 %, **−0.0588 pp** |
+| **P5** | 15–70 indeterminate, fewer than half of day 2's repeating | **HOLDS** — 47, and **none** of day 2's 40 |
+| **P6** | the restatement widens every bound and moves no centre | **HOLDS** — 36 / 36 / 0 |
+| **P7** | per-cell design effects straddle the pooled figure | **FAILS** — 14 below, 3 above, none significantly above |
+
+**P5 is total churn: not one of day 2's forty indeterminate identifiers was indeterminate again.**
+Indeterminacy is a property of the request, not of the video, and now has two days of evidence.
+
+### 3c. P2 failed, and its failure is the night's most useful result
+
+`grimhoundgaming` was chosen because the two interfaces disagreed: at 03:41Z on 2026-08-12 six of its
+seven cited videos were publicly retrievable, and at ~23:45Z the same day its account page returned
+**status field 10221 with no `userInfo`** — no account object served under that name. The prediction
+written before the run was that the video endpoint would follow within a day.
+
+**It did not. All six still-retrievable videos were still retrievable on day 3, and the seventh was
+still absent — nothing moved at all.**
+
+Under the pre-registered **K5**, 0 of 7 is not "not established": it is a refutation.
+**Propagation from account-unavailability to video-unavailability within one day is refuted on this
+case**, and what stands in its place is the disagreement itself:
+
+> **An account that will not serve an account object still serves its videos.** Whatever
+> `10221` means — and the platform publishes no code table, so this practice reads nothing into the
+> number beyond *"the account object is not served under this name"* — it does not imply that the
+> account's public videos have stopped being publicly retrievable.
+
+**This constrains what session 114's six-of-twelve result can be read to mean.** That session found
+six of twelve all-gone handles serving no account object, and its own text stopped short of a causal
+claim. Tonight's case shows the two signals can point in **opposite** directions on the same handle,
+so the account state is **not** a proxy for the retrievability of the account's videos, in either
+direction. **It is n = 1 on the refutation side**, on a handle chosen for being informative rather
+than at random, and it is one day — a longer window could still show propagation with a lag. Both
+limits are the reason this is written as a constraint on interpretation rather than as a finding
+about the platform.
+
+### 3d. The forecast, tracked in public
+
+This practice is on the record forecasting **6.47–9.90 transitions across the 24 intervals** to
+2026-09-05 — **0.54 to 0.83 expected after two intervals**. Observed: **one confirmed transition,
+and it was a return, not a loss.** Losses confirmed so far: **zero in two intervals.** The forecast
+is not yet in trouble at these numbers, and the direction of the only movement the window has seen
+remains the one nobody on this arc predicted.
+

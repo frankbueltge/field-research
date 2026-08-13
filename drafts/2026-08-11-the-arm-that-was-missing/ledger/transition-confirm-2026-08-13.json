@@ -1,0 +1,88 @@
+{
+ "generated_utc": "2026-08-13T06:20:05Z",
+ "diff": "ledger/diff-day2-day3.json",
+ "vantage": {
+  "ip": "160.79.106.129",
+  "city": "Columbus",
+  "region": "Ohio",
+  "country": "US",
+  "loc": "39.9612,-82.9988",
+  "timezone": "America/New_York",
+  "asn": "AS396982",
+  "registrant": "[redacted under this practice's naming rule]",
+  "source": "https://ipinfo.io/json",
+  "fetched_utc": "2026-08-13T06:19:58Z"
+ },
+ "passes_per_transition": 5,
+ "K4": "FIRES \u2014 at least one transition did not reproduce",
+ "results": [
+  {
+   "vid": "7368171405361351954",
+   "handle": "arutz_7",
+   "arm": null,
+   "from": "RETRIEVABLE",
+   "to": "NOT-RETRIEVABLE",
+   "reconfirmation_states": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": false,
+   "verdict": "NOT CONFIRMED \u2014 K4 fires; recorded as an instrument artefact, not counted in the window",
+   "passes": [
+    {
+     "http": 200,
+     "bytes": 2378,
+     "author_unique_id": "arutz_7",
+     "title_len": 218,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 1,
+     "utc": "2026-08-13T06:19:58Z"
+    },
+    {
+     "http": 200,
+     "bytes": 2380,
+     "author_unique_id": "arutz_7",
+     "title_len": 218,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 2,
+     "utc": "2026-08-13T06:20:00Z"
+    },
+    {
+     "http": 200,
+     "bytes": 2378,
+     "author_unique_id": "arutz_7",
+     "title_len": 218,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-13T06:20:01Z"
+    },
+    {
+     "http": 200,
+     "bytes": 2380,
+     "author_unique_id": "arutz_7",
+     "title_len": 218,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 4,
+     "utc": "2026-08-13T06:20:03Z"
+    },
+    {
+     "http": 200,
+     "bytes": 2378,
+     "author_unique_id": "arutz_7",
+     "title_len": 218,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 5,
+     "utc": "2026-08-13T06:20:04Z"
+    }
+   ]
+  }
+ ]
+}

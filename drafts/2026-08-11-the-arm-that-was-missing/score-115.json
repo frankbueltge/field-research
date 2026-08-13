@@ -1,0 +1,130 @@
+{
+ "session": 115,
+ "day3_run": "ledger/run-2026-08-13T0427Z.json",
+ "diff": "ledger/diff-day2-day3.json",
+ "day3_vantage_asn": "AS396982",
+ "day3_requested": 3869,
+ "day3_planned": 3869,
+ "day3_stopped": null,
+ "day3_counts": {
+  "A": {
+   "RETRIEVABLE": 1938,
+   "NOT-RETRIEVABLE": 234,
+   "INDETERMINATE": 29
+  },
+  "A-new": {
+   "RETRIEVABLE": 171,
+   "NOT-RETRIEVABLE": 23,
+   "INDETERMINATE": 3
+  },
+  "A2": {
+   "NOT-RETRIEVABLE": 116,
+   "RETRIEVABLE": 647,
+   "INDETERMINATE": 5
+  },
+  "B": {
+   "RETRIEVABLE": 381,
+   "NOT-RETRIEVABLE": 66,
+   "INDETERMINATE": 7
+  },
+  "B-truncated": {
+   "RETRIEVABLE": 1,
+   "NOT-RETRIEVABLE": 245,
+   "INDETERMINATE": 3
+  }
+ },
+ "K1": "DOES NOT FIRE — complete run",
+ "K2": "DOES NOT FIRE — same autonomous system as days 1 and 2",
+ "P1": {
+  "prediction": "0, 1 or 2 confirmed transitions, grimhoundgaming excluded",
+  "transitions_total": 1,
+  "transitions_excluding_grimhoundgaming": 1,
+  "transitions_in_grimhoundgaming": 0,
+  "detail": [
+   {
+    "vid": "7368171405361351954",
+    "from": "RETRIEVABLE",
+    "to": "NOT-RETRIEVABLE",
+    "handle": "arutz_7",
+    "run1_http": 200,
+    "run2_http": 400
+   }
+  ],
+  "verdict": "HOLDS"
+ },
+ "P2": {
+  "prediction": "all 7 grimhoundgaming videos NOT-RETRIEVABLE on day 3",
+  "account_state_at_2026-08-12T~23:45Z": "status field 10221, no userInfo served",
+  "videos": [
+   {
+    "vid": "7535132125033499934",
+    "day2": "RETRIEVABLE",
+    "day3": "RETRIEVABLE",
+    "day3_http": 200
+   },
+   {
+    "vid": "7598983993266048286",
+    "day2": "RETRIEVABLE",
+    "day3": "RETRIEVABLE",
+    "day3_http": 200
+   },
+   {
+    "vid": "7605647634145021214",
+    "day2": "RETRIEVABLE",
+    "day3": "RETRIEVABLE",
+    "day3_http": 200
+   },
+   {
+    "vid": "7610545915362921759",
+    "day2": "RETRIEVABLE",
+    "day3": "RETRIEVABLE",
+    "day3_http": 200
+   },
+   {
+    "vid": "7623551369546304781",
+    "day2": "NOT-RETRIEVABLE",
+    "day3": "NOT-RETRIEVABLE",
+    "day3_http": 400
+   },
+   {
+    "vid": "7654667369670839582",
+    "day2": "RETRIEVABLE",
+    "day3": "RETRIEVABLE",
+    "day3_http": 200
+   },
+   {
+    "vid": "7654758575788625182",
+    "day2": "RETRIEVABLE",
+    "day3": "RETRIEVABLE",
+    "day3_http": 200
+   }
+  ],
+  "turned_this_interval": 0,
+  "not_retrievable_on_day3": 1,
+  "n": 7,
+  "verdict": "FAILS — nothing turned; the two interfaces disagree",
+  "K5": "K5: 0 of 7 turned — propagation within one day is REFUTED, and the disagreement between the account route and the video route is the finding"
+ },
+ "P3": {
+  "prediction": "7446448990935354670 still RETRIEVABLE on day 3",
+  "day2": "RETRIEVABLE",
+  "day3": "RETRIEVABLE",
+  "verdict": "HOLDS"
+ },
+ "P4": {
+  "prediction": "day-3 pooled determinate retrievability within +-0.40 pp of 82.1624",
+  "day2_pct": 82.1624,
+  "day2_determinate": 3829,
+  "day3_pct": 82.1036,
+  "day3_determinate": 3822,
+  "delta_pp": -0.0588,
+  "verdict": "HOLDS"
+ },
+ "P5": {
+  "prediction": "day-3 INDETERMINATE in 15-70, and fewer than half of day 2's 40 identifiers indeterminate again",
+  "day2_indeterminate": 40,
+  "day3_indeterminate": 47,
+  "same_identifiers": 0,
+  "verdict": "HOLDS"
+ }
+}
