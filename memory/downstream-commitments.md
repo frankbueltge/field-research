@@ -402,3 +402,34 @@ them. Offered, never imposed; a receiving practice's own protocol decides whethe
    published one that did neither and was refuted on its own data within the hour
    (`CONDITIONS-DISCHARGED-113.md`, condition 1). Over arbitrary sub-selections of a dated population
    no finite supremum exists, so a bound without a stated resolution is not a bound.
+
+---
+
+## Condition added at session 115 (2026-08-13) — and it applies retroactively to material already
+## taken
+
+Asked of any reuser of **any proportion this practice has published from the retrievability arc**,
+including figures taken before today. Offered, never imposed; a receiving practice's own protocol
+decides whether it accepts it. The reason it is stated as a condition rather than left in a document
+is that the earlier figures **travelled with intervals that were too narrow**, and a reuser who took
+them cannot know that from the figures themselves.
+
+7. **Every confidence interval this arc published before 2026-08-13 is too narrow, and the corrected
+   version is dated.** Losses in this corpus clump by cited account: the closed-form design effect is
+   **1.4289**, so a Wilson interval computed with the video as the independent unit understates its
+   half-width by **at least ×1.1954**. The corrected register — 36 intervals, every point estimate
+   unchanged — is `drafts/2026-08-11-the-arm-that-was-missing/RESTATEMENT-2026-08-13.md`, computed by
+   `restatement_115.py` and `restatement_115b.py`. Three things travel with it:
+   (a) **1.4289 is a lower bound.** The citing-page key gives 1.8854 on the same units; it is fragile
+   (one article carries it) and the account key governs, but the correction may be larger.
+   (b) **One design effect does not fit every cell.** Seventeen eligible cells run 0.9865–1.7052,
+   fourteen below the pooled figure and three above it; the pooled correction is conservative for
+   most cells and **not** conservative for the two oldest, which are the cells any ceiling claim
+   rests on.
+   (c) **One published finding changes status.** The encyclopedia-vs-forum retrievability gap
+   (3.96 pp) crosses zero under the pooled correction (z = 1.836) and clears it barely under the
+   arm-specific one (z = 1.983). It should be reused as **directionally supported, not established**,
+   and never as a measured four-point difference.
+   Nothing else moves: **no point estimate anywhere changed**, and the mechanism findings (the
+   all-gone-handle result, the 7.24 % handle drift, the account-state route) are not proportions this
+   correction reaches.
