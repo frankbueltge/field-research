@@ -1,0 +1,283 @@
+{
+ "schema": "field-research/account-state-117b-derived/1",
+ "session": 118,
+ "date": "2026-08-14",
+ "source_probe": "account-state-117b.json",
+ "source_run": "ledger/run-2026-08-13T0427Z.json (day 3) \u2014 no new request of any instrument",
+ "preregistered_scoring": {
+  "predictions": {
+   "Q1": {
+    "claim": "fewer than half of T's 20 accounts return a non-zero state",
+    "observed": "11 of 20 non-zero",
+    "holds": false
+   },
+   "Q2": {
+    "claim": "T's non-zero share is lower than C1's",
+    "observed": "T 0.5500 vs C1 0.4878",
+    "holds": false
+   },
+   "Q3": {
+    "claim": "the T-against-C1 Fisher test reaches p < 0.05",
+    "observed": "p = 0.7863",
+    "holds": false
+   },
+   "Q4": {
+    "claim": "C2's non-zero share is lower than C1's",
+    "observed": "C2 0.0488 vs C1 0.4878, Fisher p = 9.128e-06",
+    "holds": true
+   },
+   "Q5": {
+    "claim": "at least 95 of the 102 requests return a readable state field",
+    "observed": "102 of 102",
+    "holds": true
+   }
+  },
+  "kill_criteria": {
+   "K1": {
+    "claim": "fewer than 80 of 102 return a readable state field -> no verdict",
+    "fired": false
+   },
+   "K2": {
+    "claim": "C1 or C2 below 30 accounts -> underpowered, not a null",
+    "fired": false
+   },
+   "K3": {
+    "claim": "rate-limit or challenge -> stop and publish partial counts",
+    "fired": false
+   },
+   "K4": {
+    "claim": "if Q4 fails the instrument is uninformative and NO conclusion about T is drawn",
+    "fired": false
+   }
+  }
+ },
+ "posthoc_declared": {
+  "why": "the pre-registration compares T against C1 without matching on T's own corpus behaviour; this section was written after the run and is descriptive",
+  "T_composition_in_corpus": {
+   "all-gone": [
+    {
+     "handle": "asael_matias",
+     "n_units": 1,
+     "n_absent": 1,
+     "state": 10221,
+     "dead": true
+    },
+    {
+     "handle": "danielacua2",
+     "n_units": 1,
+     "n_absent": 1,
+     "state": 0,
+     "dead": false
+    },
+    {
+     "handle": "deidara_ff28",
+     "n_units": 1,
+     "n_absent": 1,
+     "state": 0,
+     "dead": false
+    },
+    {
+     "handle": "eliasalcaraz_10",
+     "n_units": 1,
+     "n_absent": 1,
+     "state": 10221,
+     "dead": true
+    },
+    {
+     "handle": "jennifergomezpy",
+     "n_units": 1,
+     "n_absent": 1,
+     "state": 0,
+     "dead": false
+    },
+    {
+     "handle": "jhonyhermosilla76",
+     "n_units": 1,
+     "n_absent": 1,
+     "state": 10221,
+     "dead": true
+    },
+    {
+     "handle": "julianpy20",
+     "n_units": 2,
+     "n_absent": 2,
+     "state": 10221,
+     "dead": true
+    },
+    {
+     "handle": "mauricio_espinola4",
+     "n_units": 1,
+     "n_absent": 1,
+     "state": 10221,
+     "dead": true
+    },
+    {
+     "handle": "natanahelcaceres1",
+     "n_units": 1,
+     "n_absent": 1,
+     "state": 10221,
+     "dead": true
+    },
+    {
+     "handle": "ndopaveixx",
+     "n_units": 1,
+     "n_absent": 1,
+     "state": 10221,
+     "dead": true
+    },
+    {
+     "handle": "nicolstefanygaleano",
+     "n_units": 2,
+     "n_absent": 2,
+     "state": 0,
+     "dead": false
+    },
+    {
+     "handle": "paraguayovalema",
+     "n_units": 1,
+     "n_absent": 1,
+     "state": 10221,
+     "dead": true
+    },
+    {
+     "handle": "ruth.quinonez",
+     "n_units": 1,
+     "n_absent": 1,
+     "state": 0,
+     "dead": false
+    },
+    {
+     "handle": "steven_colman",
+     "n_units": 1,
+     "n_absent": 1,
+     "state": 0,
+     "dead": false
+    }
+   ],
+   "mixed": [],
+   "all-present": [
+    {
+     "handle": "bruno_martiinez",
+     "n_units": 1,
+     "n_absent": 0,
+     "state": 10221,
+     "dead": true
+    },
+    {
+     "handle": "efrainalegreoficial",
+     "n_units": 1,
+     "n_absent": 0,
+     "state": 0,
+     "dead": false
+    },
+    {
+     "handle": "franciscogaleano994",
+     "n_units": 1,
+     "n_absent": 0,
+     "state": 0,
+     "dead": false
+    },
+    {
+     "handle": "kattyagonzalezoficial",
+     "n_units": 1,
+     "n_absent": 0,
+     "state": 0,
+     "dead": false
+    },
+    {
+     "handle": "monicaaquino191",
+     "n_units": 1,
+     "n_absent": 0,
+     "state": 10221,
+     "dead": true
+    },
+    {
+     "handle": "payo_junior_oficial",
+     "n_units": 1,
+     "n_absent": 0,
+     "state": 10221,
+     "dead": true
+    }
+   ]
+  },
+  "T_shares": {
+   "all-gone": {
+    "n": 14,
+    "dead": 8,
+    "share": 0.5714285714285714
+   },
+   "mixed": {
+    "n": 0,
+    "dead": 0,
+    "share": null
+   },
+   "all-present": {
+    "n": 6,
+    "dead": 3,
+    "share": 0.5
+   }
+  },
+  "like_for_like": {
+   "T_allgone_vs_C1": {
+    "table": [
+     [
+      8,
+      6
+     ],
+     [
+      20,
+      21
+     ]
+    ],
+    "fisher_two_sided_p": 0.7584814026999053
+   },
+   "T_allpresent_vs_C2": {
+    "table": [
+     [
+      3,
+      3
+     ],
+     [
+      2,
+      39
+     ]
+    ],
+    "fisher_two_sided_p": 0.011096269147599742
+   }
+  },
+  "page_units_by_absence_and_account_state": {
+   "absent_dead": 9,
+   "absent_alive": 7,
+   "present_dead": 3,
+   "present_alive": 3
+  },
+  "page_units_total": 22,
+  "residual_excess": {
+   "page_total": {
+    "n": 22,
+    "absent": 16,
+    "expected": 2.544578313253012,
+    "p_upper": 3.836421794409408e-11
+   },
+   "account_still_served": {
+    "n": 10,
+    "absent": 7,
+    "expected": 1.1566265060240963,
+    "ratio": 6.052083333333334,
+    "p_upper_exact": 2.41423338352973e-05,
+    "p_lower_exact": 0.99999883962981
+   },
+   "account_not_served": {
+    "n": 12,
+    "absent": 9,
+    "expected": 1.3879518072289156
+   },
+   "caveat": "the expectation is unconditional on account state; no corpus-wide account census exists, so this compares live-account units against the ordinary cell rate, not against a live-account cell rate. Post-hoc, and the split was chosen after the probe was read."
+  }
+ },
+ "cell": [
+  "3-4y",
+  "W-article"
+ ],
+ "page": "es.wikipedia.org|Protestas en Paraguay de 2023"
+}

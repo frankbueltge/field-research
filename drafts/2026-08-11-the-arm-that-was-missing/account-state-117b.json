@@ -1,0 +1,1843 @@
+{
+ "schema": "field-research/account-state-probe/2",
+ "session": 118,
+ "preregistration": "PREREGISTRATION-117B-account-state.md, committed 2026-08-13",
+ "run_source": "ledger/run-2026-08-13T0427Z.json",
+ "page": "es.wikipedia.org|Protestas en Paraguay de 2023",
+ "cell": [
+  "3-4y",
+  "W-article"
+ ],
+ "collected_utc": "2026-08-14T03:43:09Z",
+ "endpoint": "https://www.tiktok.com/@<handle>",
+ "user_agent": "field-research/1.0 (independent research instrument; sequential, 1 req/s)",
+ "delay_s": 1.0,
+ "timeout_s": 25,
+ "requests": 102,
+ "population": {
+  "T": [
+   "asael_matias",
+   "bruno_martiinez",
+   "danielacua2",
+   "deidara_ff28",
+   "efrainalegreoficial",
+   "eliasalcaraz_10",
+   "franciscogaleano994",
+   "jennifergomezpy",
+   "jhonyhermosilla76",
+   "julianpy20",
+   "kattyagonzalezoficial",
+   "mauricio_espinola4",
+   "monicaaquino191",
+   "natanahelcaceres1",
+   "ndopaveixx",
+   "nicolstefanygaleano",
+   "paraguayovalema",
+   "payo_junior_oficial",
+   "ruth.quinonez",
+   "steven_colman"
+  ],
+  "C1": [
+   ".snaxxy",
+   "akinapope",
+   "alenunez_ok",
+   "bansheebby",
+   "buzz_award",
+   "certified%20hood%20classic%20",
+   "coterieband",
+   "cpineda_72",
+   "dodoafshast",
+   "douglascisneros",
+   "educacaosp",
+   "empressof",
+   "gabbiehanna",
+   "gotouchgrassboz0",
+   "haaretz",
+   "husiii20",
+   "jasonderulo",
+   "jere.ronkko",
+   "kidcudi",
+   "la_jefa_sandy",
+   "magentamusik",
+   "mahoko0918",
+   "mikeoxpi4ra",
+   "not_nefdachef",
+   "oasisbible_",
+   "paulosoldeck",
+   "peterrosco",
+   "pteehok",
+   "queenofthebabies",
+   "remember.mine",
+   "samfromwendover",
+   "skatunenetwork",
+   "sourcomedy",
+   "sweets_suki3",
+   "thefragrancegod",
+   "tizzyent",
+   "tokiohoteltb",
+   "volyapravda",
+   "waghipridemedia",
+   "worldpadeltour",
+   "zeinaboucoulibaly"
+  ],
+  "C2": [
+   "offthe__grid",
+   "nanamimi__0707",
+   "taiko.star",
+   "ecosdelpasado25",
+   "radwimps_official",
+   "oliviagobrien",
+   "claux.7",
+   "yuvalbinder",
+   "warnermusicpoland",
+   "diegomolanoa",
+   "exafm",
+   "avalino.diversity",
+   "sbsaustralia",
+   "ryugujoofficial",
+   "karinaax11",
+   "sela.ido",
+   "voguefrance",
+   "nosstories",
+   "blackeyedpeas",
+   "lazpiyanist",
+   "godwillguidegwg",
+   "recesstherapy",
+   "classy_japan_official",
+   "shezhanaleonovavl",
+   "gokko5club",
+   "mrshibolet",
+   "avfcofficial",
+   "morgxnofficial",
+   "asturdron",
+   "sunday_soundtrack",
+   "bauzilla",
+   "pythontok81",
+   "nujumsports",
+   "mergui",
+   "misrecuerdosmusicales",
+   "mysouthernbrand",
+   "ka10san_0717",
+   "thetime_tbs",
+   "vanakkammalaysia",
+   "iamactuallyjakehill",
+   "nibuichidiary"
+  ]
+ },
+ "pool_sizes": {
+  "T": 20,
+  "C1_pool": 41,
+  "C2_pool": 312
+ },
+ "k3_stopped": null,
+ "by_group": {
+  "T": {
+   "n": 20,
+   "readable": 20,
+   "nonzero": 11,
+   "nonzero_share": 0.55
+  },
+  "C1": {
+   "n": 41,
+   "readable": 41,
+   "nonzero": 20,
+   "nonzero_share": 0.4878048780487805
+  },
+  "C2": {
+   "n": 41,
+   "readable": 41,
+   "nonzero": 2,
+   "nonzero_share": 0.04878048780487805
+  }
+ },
+ "codes_by_group": {
+  "T": {
+   "10221": 11,
+   "0": 9
+  },
+  "C1": {
+   "10221": 15,
+   "0": 21,
+   "10222": 3,
+   "10202": 2
+  },
+  "C2": {
+   "0": 39,
+   "10221": 2
+  }
+ },
+ "primary_T_vs_C1": {
+  "table_T_vs_C1": [
+   [
+    11,
+    9
+   ],
+   [
+    20,
+    21
+   ]
+  ],
+  "fisher_two_sided_p": 0.7863336619814909
+ },
+ "secondary_T_vs_C2": {
+  "table_T_vs_C2": [
+   [
+    11,
+    9
+   ],
+   [
+    2,
+    39
+   ]
+  ],
+  "fisher_two_sided_p": 2.1773477056531824e-05
+ },
+ "descriptive_C1_vs_C2": {
+  "table_C1_vs_C2": [
+   [
+    20,
+    21
+   ],
+   [
+    2,
+    39
+   ]
+  ],
+  "fisher_two_sided_p": 9.127812313744e-06
+ },
+ "no_code_table_published": "This practice found no published table mapping the numeric state to a cause; nothing is read into it beyond 'the account object is not served'.",
+ "results": [
+  {
+   "http": 200,
+   "bytes": 363584,
+   "seconds": 0.82,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "asael_matias",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 362940,
+   "seconds": 0.78,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "bruno_martiinez",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 365280,
+   "seconds": 0.83,
+   "status_field": 0,
+   "unique_id_returned": "danielacua2",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "danielacua2",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 365233,
+   "seconds": 0.84,
+   "status_field": 0,
+   "unique_id_returned": "deidara_ff28",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "deidara_ff28",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 365937,
+   "seconds": 0.66,
+   "status_field": 0,
+   "unique_id_returned": "efrainalegreoficial",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "efrainalegreoficial",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 362970,
+   "seconds": 0.62,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "eliasalcaraz_10",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 366071,
+   "seconds": 0.84,
+   "status_field": 0,
+   "unique_id_returned": "franciscogaleano994",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "franciscogaleano994",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 365503,
+   "seconds": 0.89,
+   "status_field": 0,
+   "unique_id_returned": "jennifergomezpy",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "jennifergomezpy",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 363166,
+   "seconds": 0.58,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "jhonyhermosilla76",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 363128,
+   "seconds": 0.53,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "julianpy20",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 365357,
+   "seconds": 0.78,
+   "status_field": 0,
+   "unique_id_returned": "kattyagonzalezoficial",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "kattyagonzalezoficial",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 362826,
+   "seconds": 0.6,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "mauricio_espinola4",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 362436,
+   "seconds": 0.6,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "monicaaquino191",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 363071,
+   "seconds": 0.75,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "natanahelcaceres1",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 362816,
+   "seconds": 0.59,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "ndopaveixx",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 365392,
+   "seconds": 0.83,
+   "status_field": 0,
+   "unique_id_returned": "nicolstefanygaleano",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "nicolstefanygaleano",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 363662,
+   "seconds": 0.57,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "paraguayovalema",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 363146,
+   "seconds": 0.57,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "payo_junior_oficial",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 365493,
+   "seconds": 0.79,
+   "status_field": 0,
+   "unique_id_returned": "ruth.quinonez",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "ruth.quinonez",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 365565,
+   "seconds": 0.61,
+   "status_field": 0,
+   "unique_id_returned": "steven_colman",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "steven_colman",
+   "group": "T"
+  },
+  {
+   "http": 200,
+   "bytes": 363496,
+   "seconds": 0.6,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": ".snaxxy",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 362842,
+   "seconds": 0.61,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "akinapope",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365537,
+   "seconds": 0.7,
+   "status_field": 0,
+   "unique_id_returned": "alenunez_ok",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "alenunez_ok",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365514,
+   "seconds": 0.68,
+   "status_field": 0,
+   "unique_id_returned": "bansheebby",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "bansheebby",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 366046,
+   "seconds": 0.62,
+   "status_field": 10222,
+   "unique_id_returned": "buzz_award",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "buzz_award",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 363590,
+   "seconds": 0.56,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "certified%20hood%20classic%20",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 366010,
+   "seconds": 0.78,
+   "status_field": 0,
+   "unique_id_returned": "coterieband",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "coterieband",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 362930,
+   "seconds": 0.55,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "cpineda_72",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 362907,
+   "seconds": 0.54,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "dodoafshast",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 363522,
+   "seconds": 0.6,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "douglascisneros",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 363194,
+   "seconds": 0.56,
+   "status_field": 10202,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "educacaosp",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365402,
+   "seconds": 0.57,
+   "status_field": 0,
+   "unique_id_returned": "empressof",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "empressof",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 362830,
+   "seconds": 0.65,
+   "status_field": 10202,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "gabbiehanna",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 363526,
+   "seconds": 0.57,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "gotouchgrassboz0",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365346,
+   "seconds": 0.71,
+   "status_field": 0,
+   "unique_id_returned": "haaretz",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "haaretz",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365173,
+   "seconds": 0.62,
+   "status_field": 0,
+   "unique_id_returned": "husiii20",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "husiii20",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365347,
+   "seconds": 0.72,
+   "status_field": 0,
+   "unique_id_returned": "jasonderulo",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "jasonderulo",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365401,
+   "seconds": 0.75,
+   "status_field": 10222,
+   "unique_id_returned": "jere.ronkko",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "jere.ronkko",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 366077,
+   "seconds": 0.64,
+   "status_field": 0,
+   "unique_id_returned": "kidcudi",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "kidcudi",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365347,
+   "seconds": 0.68,
+   "status_field": 0,
+   "unique_id_returned": "la_jefa_sandy",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "la_jefa_sandy",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365729,
+   "seconds": 0.74,
+   "status_field": 0,
+   "unique_id_returned": "magentamusik",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "magentamusik",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 363079,
+   "seconds": 0.62,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "mahoko0918",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 363012,
+   "seconds": 0.56,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "mikeoxpi4ra",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 362860,
+   "seconds": 0.58,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "not_nefdachef",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 363339,
+   "seconds": 0.56,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "oasisbible_",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365256,
+   "seconds": 0.86,
+   "status_field": 0,
+   "unique_id_returned": "paulosoldeck",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "paulosoldeck",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 362828,
+   "seconds": 0.55,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "peterrosco",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 366207,
+   "seconds": 0.87,
+   "status_field": 0,
+   "unique_id_returned": "pteehok",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "pteehok",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365494,
+   "seconds": 0.61,
+   "status_field": 0,
+   "unique_id_returned": "queenofthebabies",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "queenofthebabies",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365415,
+   "seconds": 0.61,
+   "status_field": 0,
+   "unique_id_returned": "remember.mine",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "remember.mine",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365367,
+   "seconds": 0.61,
+   "status_field": 0,
+   "unique_id_returned": "samfromwendover",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "samfromwendover",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365704,
+   "seconds": 0.62,
+   "status_field": 0,
+   "unique_id_returned": "skatunenetwork",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "skatunenetwork",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365186,
+   "seconds": 15.85,
+   "status_field": 0,
+   "unique_id_returned": "sourcomedy",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "sourcomedy",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365026,
+   "seconds": 0.69,
+   "status_field": 0,
+   "unique_id_returned": "sweets_suki3",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "sweets_suki3",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365444,
+   "seconds": 0.59,
+   "status_field": 0,
+   "unique_id_returned": "thefragrancegod",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "thefragrancegod",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 362991,
+   "seconds": 0.55,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "tizzyent",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365547,
+   "seconds": 0.7,
+   "status_field": 0,
+   "unique_id_returned": "tokiohoteltb",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "tokiohoteltb",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 362971,
+   "seconds": 0.55,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "volyapravda",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 363708,
+   "seconds": 0.56,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "waghipridemedia",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365335,
+   "seconds": 0.72,
+   "status_field": 10222,
+   "unique_id_returned": "worldpadeltour",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "worldpadeltour",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 366076,
+   "seconds": 0.7,
+   "status_field": 0,
+   "unique_id_returned": "zeinaboucoulibaly",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "zeinaboucoulibaly",
+   "group": "C1"
+  },
+  {
+   "http": 200,
+   "bytes": 365552,
+   "seconds": 0.67,
+   "status_field": 0,
+   "unique_id_returned": "offthe__grid",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "offthe__grid",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365494,
+   "seconds": 0.57,
+   "status_field": 0,
+   "unique_id_returned": "nanamimi__0707",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "nanamimi__0707",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 366182,
+   "seconds": 0.59,
+   "status_field": 0,
+   "unique_id_returned": "taiko.star",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "taiko.star",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365311,
+   "seconds": 0.65,
+   "status_field": 0,
+   "unique_id_returned": "ecosdelpasado25",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "ecosdelpasado25",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365443,
+   "seconds": 0.64,
+   "status_field": 0,
+   "unique_id_returned": "radwimps_official",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "radwimps_official",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365490,
+   "seconds": 0.77,
+   "status_field": 0,
+   "unique_id_returned": "oliviagobrien",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "oliviagobrien",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365595,
+   "seconds": 0.77,
+   "status_field": 0,
+   "unique_id_returned": "claux.7",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "claux.7",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365460,
+   "seconds": 0.6,
+   "status_field": 0,
+   "unique_id_returned": "yuvalbinder",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "yuvalbinder",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365069,
+   "seconds": 0.79,
+   "status_field": 0,
+   "unique_id_returned": "warnermusicpoland",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "warnermusicpoland",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365485,
+   "seconds": 0.62,
+   "status_field": 0,
+   "unique_id_returned": "diegomolanoa",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "diegomolanoa",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365386,
+   "seconds": 0.6,
+   "status_field": 0,
+   "unique_id_returned": "exafm",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "exafm",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365536,
+   "seconds": 0.81,
+   "status_field": 0,
+   "unique_id_returned": "avalino.diversity",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "avalino.diversity",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 362882,
+   "seconds": 0.55,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "sbsaustralia",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365760,
+   "seconds": 0.61,
+   "status_field": 0,
+   "unique_id_returned": "ryugujoofficial",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "ryugujoofficial",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365517,
+   "seconds": 0.69,
+   "status_field": 0,
+   "unique_id_returned": "karinaax11",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "karinaax11",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365573,
+   "seconds": 0.66,
+   "status_field": 0,
+   "unique_id_returned": "sela.ido",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "sela.ido",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365596,
+   "seconds": 0.8,
+   "status_field": 0,
+   "unique_id_returned": "voguefrance",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "voguefrance",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365322,
+   "seconds": 0.75,
+   "status_field": 0,
+   "unique_id_returned": "nosstories",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "nosstories",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365277,
+   "seconds": 0.85,
+   "status_field": 0,
+   "unique_id_returned": "blackeyedpeas",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "blackeyedpeas",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 362841,
+   "seconds": 0.59,
+   "status_field": 10221,
+   "unique_id_returned": null,
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": false,
+    "uniqueId": false,
+    "secUid": false,
+    "followerCount": false
+   },
+   "handle": "lazpiyanist",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365422,
+   "seconds": 0.63,
+   "status_field": 0,
+   "unique_id_returned": "godwillguidegwg",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "godwillguidegwg",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365720,
+   "seconds": 0.84,
+   "status_field": 0,
+   "unique_id_returned": "recesstherapy",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "recesstherapy",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 366238,
+   "seconds": 0.63,
+   "status_field": 0,
+   "unique_id_returned": "classy_japan_official",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "classy_japan_official",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365759,
+   "seconds": 0.83,
+   "status_field": 0,
+   "unique_id_returned": "shezhanaleonovavl",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "shezhanaleonovavl",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365781,
+   "seconds": 0.64,
+   "status_field": 0,
+   "unique_id_returned": "gokko5club",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "gokko5club",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365583,
+   "seconds": 0.66,
+   "status_field": 0,
+   "unique_id_returned": "mrshibolet",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "mrshibolet",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365835,
+   "seconds": 0.6,
+   "status_field": 0,
+   "unique_id_returned": "avfcofficial",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "avfcofficial",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365791,
+   "seconds": 0.87,
+   "status_field": 0,
+   "unique_id_returned": "morgxnofficial",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "morgxnofficial",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365376,
+   "seconds": 0.89,
+   "status_field": 0,
+   "unique_id_returned": "asturdron",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "asturdron",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365467,
+   "seconds": 0.72,
+   "status_field": 0,
+   "unique_id_returned": "sunday_soundtrack",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "sunday_soundtrack",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365958,
+   "seconds": 0.86,
+   "status_field": 0,
+   "unique_id_returned": "bauzilla",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "bauzilla",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365319,
+   "seconds": 0.69,
+   "status_field": 0,
+   "unique_id_returned": "pythontok81",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "pythontok81",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365537,
+   "seconds": 0.89,
+   "status_field": 0,
+   "unique_id_returned": "nujumsports",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "nujumsports",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365196,
+   "seconds": 0.57,
+   "status_field": 0,
+   "unique_id_returned": "mergui",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "mergui",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 366264,
+   "seconds": 0.61,
+   "status_field": 0,
+   "unique_id_returned": "misrecuerdosmusicales",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "misrecuerdosmusicales",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365597,
+   "seconds": 0.67,
+   "status_field": 0,
+   "unique_id_returned": "mysouthernbrand",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "mysouthernbrand",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365623,
+   "seconds": 0.79,
+   "status_field": 0,
+   "unique_id_returned": "ka10san_0717",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "ka10san_0717",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365797,
+   "seconds": 0.65,
+   "status_field": 0,
+   "unique_id_returned": "thetime_tbs",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "thetime_tbs",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 366285,
+   "seconds": 0.73,
+   "status_field": 0,
+   "unique_id_returned": "vanakkammalaysia",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "vanakkammalaysia",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 366002,
+   "seconds": 0.6,
+   "status_field": 0,
+   "unique_id_returned": "iamactuallyjakehill",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "iamactuallyjakehill",
+   "group": "C2"
+  },
+  {
+   "http": 200,
+   "bytes": 365279,
+   "seconds": 1.04,
+   "status_field": 0,
+   "unique_id_returned": "nibuichidiary",
+   "markers": {
+    "__UNIVERSAL_DATA_FOR_REHYDRATION__": true,
+    "userInfo": true,
+    "uniqueId": true,
+    "secUid": true,
+    "followerCount": true
+   },
+   "handle": "nibuichidiary",
+   "group": "C2"
+  }
+ ]
+}
