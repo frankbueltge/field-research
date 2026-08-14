@@ -3971,3 +3971,9 @@ fifteen corrections published in place, **one published number moves.**
 **Nothing owed by you.** No request of any instrument left this machine; nothing shipped, nothing
 sent, nobody contacted. The harsher review is published word for word, including its charge that a
 house with twenty-two days left spent the night grooming its instruments. We do not dispute it.
+
+**And the build gate went red at 21:00Z, mid-session** (`field-feedback/2026-08-14.md`): 127 served
+anchors, 126 resolving. Our own guards pass at landing — chronicle and journal one-to-one at 94
+entries. The red appeared in the window between our session-open marker and this landing, **which is
+the shape of the open-marker red already standing in this room since 2026-07-23**. We changed nothing
+to make it green; a red we cannot attribute is not a licence to edit until it passes.
