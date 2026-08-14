@@ -1,0 +1,204 @@
+{
+ "schema": "field-research/catalogue-check/1",
+ "session": 119,
+ "fetched_utc": "2026-08-14T20:58:19Z",
+ "not_mirrored": "Only counts and titles are stored. The catalogues themselves are feeds and are never copied into this repository.",
+ "feeds": {
+  "atlas": {
+   "url": "https://frankbueltge.de/atlas/werke.json",
+   "http": 200,
+   "reachable": true,
+   "n_entries": 505,
+   "terms": {
+    "self-audit": {
+     "n": 0,
+     "titles": []
+    },
+    "audit": {
+     "n": 7,
+     "titles": [
+      "Forensic Methodology Report: How to Catch NSO Group's Pegasus (Pegasus Project)",
+      "Botto",
+      "Choral Data 'Trust' Experiment (white paper + UK Choral AI Dataset)",
+      "Algorithmic Justice League",
+      "Coded Bias",
+      "Gender Shades",
+      "Pacific Pulse, electroacoustic composition for 8-channels"
+     ]
+    },
+    "integrity": {
+     "n": 0,
+     "titles": []
+    },
+    "reproducib": {
+     "n": 0,
+     "titles": []
+    },
+    "verification": {
+     "n": 2,
+     "titles": [
+      "A Cartography of Genocide: Israel's Conduct in Gaza Since October 2023",
+      "Bellingcat Online Investigation Toolkit / Global Authentication Project"
+     ]
+    },
+    "instrument error": {
+     "n": 0,
+     "titles": []
+    },
+    "measurement error": {
+     "n": 0,
+     "titles": []
+    },
+    "calibrat": {
+     "n": 1,
+     "titles": [
+      "How Not to Be Seen: A Fucking Didactic Educational .MOV File"
+     ]
+    },
+    "error correction": {
+     "n": 0,
+     "titles": []
+    },
+    "data quality": {
+     "n": 0,
+     "titles": []
+    },
+    "quality control": {
+     "n": 0,
+     "titles": []
+    },
+    "artefact": {
+     "n": 2,
+     "titles": [
+      "Newly Forgotten Technologies",
+      "Narrative Futures: Panchatantra Fables meet Personal Primer"
+     ]
+    },
+    "provenance": {
+     "n": 5,
+     "titles": [
+      "Big Dada",
+      "Choral Data 'Trust' Experiment (white paper + UK Choral AI Dataset)",
+      "Data Bugs",
+      "Source.Plus / PD12M",
+      "Balot NFT / White Cube Lusanga"
+     ]
+    },
+    "own data": {
+     "n": 1,
+     "titles": [
+      "Sobrevivientes"
+     ]
+    },
+    "internal consistency": {
+     "n": 0,
+     "titles": []
+    }
+   }
+  },
+  "papers": {
+   "url": "https://frankbueltge.de/papers/index.json",
+   "http": 200,
+   "reachable": true,
+   "n_entries": 1116,
+   "terms": {
+    "self-audit": {
+     "n": 0,
+     "titles": []
+    },
+    "audit": {
+     "n": 11,
+     "titles": [
+      "Beyond the margin of error: a systematic and replicable audit of the TikTok research API",
+      "Auditing Meta and TikTok Research API Data Access under Article 40(12) of the Digital Services Act",
+      "Beyond the Checkbox: Strengthening DSA Compliance Through Social Media Algorithmic Auditing",
+      "Revisiting Algorithmic Audits of TikTok: Poor Reproducibility and Short-term Validity of Findings",
+      "Auditing Google's Search Algorithm: Measuring News Diversity Across Brazil, the UK, and the US",
+      "Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents",
+      "MedSkillAudit: A Domain-Specific Audit Framework for Medical Research Agent Skills",
+      "Auditing for Discrimination in Algorithms Delivering Job Ads"
+     ]
+    },
+    "integrity": {
+     "n": 6,
+     "titles": [
+      "Testing of detection tools for AI-generated text",
+      "The analysis of 168 randomised controlled trials to test data integrity",
+      "SciIntegrity-Bench: A Benchmark for Evaluating Academic Integrity in AI Scientist Systems",
+      "SciIntBench: Measuring LLM Compliance with Research Integrity Norms Under Adversarial Framing",
+      "Research integrity within systematic reviews: investigating the prevalence of studies by authors with multiple retractio",
+      "SciIntegrity-Bench (arXiv 2605.10246, 2026; 7 Frontier-LLMs, 231 L\u00e4ufe)"
+     ]
+    },
+    "reproducib": {
+     "n": 2,
+     "titles": [
+      "Revisiting Algorithmic Audits of TikTok: Poor Reproducibility and Short-term Validity of Findings",
+      "To Err Is Human; To Annotate, SILICON? Toward Robust Reproducibility in LLM Annotation"
+     ]
+    },
+    "verification": {
+     "n": 4,
+     "titles": [
+      "Verification of Gaia Data Release 3 Single-lined Spectroscopic Binary Solutions With Three Transiting Low-mass Secondari",
+      "Improving Arithmetic Reasoning Ability of Large Language Models through Relation Tuples, Verification and Dynamic Feedba",
+      "ReVeal: Self-Evolving Code Agents via Reliable Self-Verification",
+      "Robust Claim Verification Through Fact Detection"
+     ]
+    },
+    "instrument error": {
+     "n": 0,
+     "titles": []
+    },
+    "measurement error": {
+     "n": 0,
+     "titles": []
+    },
+    "calibrat": {
+     "n": 20,
+     "titles": [
+      "Converging on the Cepheid Metallicity Dependence: Implications of Nonstandard Gaia Parallax Recalibration on Distance Me",
+      "Gaia DR3 Open Cluster Cepheids: A Unified Catalog with Calibrated Period\u2013Age and Period\u2013Wesenheit Relations",
+      "A network of cooler white dwarfs as infrared standards for flux calibration",
+      "Calibration of the JAGB method for the Magellanic Clouds and Milky Way from Gaia DR3, considering the role of oxygen-ric",
+      "Modeling and Calibration of Gaia, Hipparcos, and Tycho-2 Astrometric Data for the Detection of Dark Companions",
+      "Serendipitous observation of a white dwarf companion to a JWST/MIRI coronagraphic calibrator",
+      "A 0.9% calibration of the Galactic Cepheid luminosity scale based on Gaia DR3 data of open clusters and Cepheids",
+      "Internal Calibration of LAMOST and Gaia DR3 GSP-Spec Stellar Abundances"
+     ]
+    },
+    "error correction": {
+     "n": 0,
+     "titles": []
+    },
+    "data quality": {
+     "n": 0,
+     "titles": []
+    },
+    "quality control": {
+     "n": 0,
+     "titles": []
+    },
+    "artefact": {
+     "n": 0,
+     "titles": []
+    },
+    "provenance": {
+     "n": 2,
+     "titles": [
+      "Authenticated Contradictions from Desynchronized Provenance and Watermarking",
+      "Verifying Provenance of Digital Media: Why the C2PA Specifications Fall Short"
+     ]
+    },
+    "own data": {
+     "n": 0,
+     "titles": []
+    },
+    "internal consistency": {
+     "n": 0,
+     "titles": []
+    }
+   }
+  }
+ }
+}
