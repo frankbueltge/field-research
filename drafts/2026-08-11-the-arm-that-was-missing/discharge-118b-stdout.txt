@@ -1,0 +1,283 @@
+{
+ "I1_classification": {
+  "by_code": {
+   "10221": {
+    "n": 28,
+    "user_object": 0,
+    "id_match": 0
+   },
+   "0": {
+    "n": 69,
+    "user_object": 69,
+    "id_match": 69
+   },
+   "10222": {
+    "n": 3,
+    "user_object": 3,
+    "id_match": 3
+   },
+   "10202": {
+    "n": 2,
+    "user_object": 0,
+    "id_match": 0
+   }
+  },
+  "preregistered_zero_vs_nonzero": {
+   "T": {
+    "n": 20,
+    "not_served": 11,
+    "share_not_served": 0.55
+   },
+   "C1": {
+    "n": 41,
+    "not_served": 20,
+    "share_not_served": 0.4878048780487805
+   },
+   "C2": {
+    "n": 41,
+    "not_served": 2,
+    "share_not_served": 0.04878048780487805
+   }
+  },
+  "object_based_user_object_and_matching_id": {
+   "T": {
+    "n": 20,
+    "not_served": 11,
+    "share_not_served": 0.55
+   },
+   "C1": {
+    "n": 41,
+    "not_served": 17,
+    "share_not_served": 0.4146341463414634
+   },
+   "C2": {
+    "n": 41,
+    "not_served": 2,
+    "share_not_served": 0.04878048780487805
+   }
+  },
+  "reclassified_accounts": [
+   "buzz_award",
+   "jere.ronkko",
+   "worldpadeltour"
+  ],
+  "preregistered": {
+   "Q4_C1_vs_C2": {
+    "table": [
+     [
+      20,
+      21
+     ],
+     [
+      2,
+      39
+     ]
+    ],
+    "p": 9.127812313744e-06
+   },
+   "Q3_T_vs_C1": {
+    "table": [
+     [
+      11,
+      9
+     ],
+     [
+      20,
+      21
+     ]
+    ],
+    "p": 0.7863336619814909
+   }
+  },
+  "object_based": {
+   "Q4_C1_vs_C2": {
+    "table": [
+     [
+      17,
+      24
+     ],
+     [
+      2,
+      39
+     ]
+    ],
+    "p": 0.00013478232180359165
+   },
+   "Q3_T_vs_C1": {
+    "table": [
+     [
+      11,
+      9
+     ],
+     [
+      17,
+      24
+     ]
+    ],
+    "p": 0.4140702302122937
+   }
+  },
+  "verdict": "the pre-registration fixed zero-against-non-zero and that statistic stands as pre-registered; the PROSE claim that non-zero means 'the account object is not served' is refuted for code 10222, where the object is served"
+ },
+ "I15_Q1_equals_Q2": {
+  "checked_k": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20
+  ],
+  "identical_for_every_k": true,
+  "verdict": "Q1 and Q2 score identically for every possible T count given the observed C1; the pre-registration contained ONE substantive bet, scored twice"
+ },
+ "I5_what_the_tail_adds": {
+  "live": {
+   "n": 10,
+   "absent": 7,
+   "expected": 1.1566265060240963,
+   "upper_tail": 2.41423338352973e-05
+  },
+  "dead": {
+   "n": 12,
+   "absent": 9,
+   "expected": 1.3879518072289156,
+   "upper_tail": 5.863048243012059e-07
+  },
+  "conditional_on_the_page_total": {
+   "expected_live_absent_given_16_of_22": 7.2727272727272725,
+   "P_at_least_observed": 0.7708978328173375
+  },
+  "fisher_on_the_page_2x2": 1.0,
+  "verdict": "account state and unit absence are orthogonal ON THIS PAGE; the subset tail carries no evidence beyond the page tail published at session 117, and the dead-account side is the more extreme of the two"
+ },
+ "I12_most_influential_component": {
+  "delta_or": 0.11987056520393691,
+  "n_units": 22,
+  "pages": [
+   "es.wikipedia.org|Protestas en Paraguay de 2023"
+  ],
+  "n_pages": 1,
+  "accounts": 19
+ }
+}
+{
+ "sweep_ranges": {
+  "preregistered": [
+   8.711616906282478,
+   11.726103675262726
+  ],
+  "object_based": [
+   7.876128966985436,
+   10.347840715854884
+  ]
+ },
+ "flip": 0.9482180640195603,
+ "power": {
+  "0.10": 0.07975,
+  "0.20": 0.24625,
+  "0.30": 0.571875,
+  "0.40": 0.891375
+ },
+ "newcombe": {
+  "newcombe_T_minus_C1_preregistered": [
+   -0.19263921206601464,
+   0.3027958252547501
+  ],
+  "newcombe_T_minus_C1_object_based": [
+   -0.12200513143930497,
+   0.37111121820525184
+  ],
+  "simulated_power_vs_C1_base": {
+   "0.10": 0.07975,
+   "0.20": 0.24625,
+   "0.30": 0.571875,
+   "0.40": 0.891375
+  },
+  "C1_base_used": 0.4878048780487805
+ },
+ "keytable": {
+  "account": {
+   "logor": [
+    1.2883,
+    1.3476,
+    1.3521
+   ],
+   "prop": [
+    1.5094,
+    1.5701,
+    1.5063
+   ],
+   "prop_jack": 1.4996
+  },
+  "page": {
+   "logor": [
+    1.5815,
+    1.5449,
+    1.6056
+   ],
+   "prop": [
+    1.9746,
+    1.9252,
+    1.9547
+   ],
+   "prop_jack": 2.0131
+  },
+  "component": {
+   "logor": [
+    1.5532,
+    1.6397,
+    1.6576
+   ],
+   "prop": [
+    2.2719,
+    2.2078,
+    2.2201
+   ],
+   "prop_jack": 2.2084
+  }
+ },
+ "uncertainty": {
+  "outer": 30,
+  "inner": 300,
+  "usable": 30,
+  "deff_log_or": {
+   "median": 1.5031934527005468,
+   "p05": 1.1752511283228253,
+   "p95": 1.854400416250396
+  },
+  "deff_proportion": {
+   "median": 2.1018959801274857,
+   "p05": 1.501849804438769,
+   "p95": 2.945317457167869
+  },
+  "gap": {
+   "median": 0.5948144188954556,
+   "p05": 0.03346126746982292,
+   "p95": 1.2701058198161015,
+   "positive_in": 29,
+   "of": 30
+  },
+  "ratio": {
+   "median": 1.387862873732554,
+   "p05": 1.022769643658942,
+   "p95": 1.7581763351548396
+  }
+ }
+}
+wrote discharge-118b.json

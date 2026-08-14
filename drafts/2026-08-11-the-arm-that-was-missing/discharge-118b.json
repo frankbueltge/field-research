@@ -1,0 +1,412 @@
+{
+ "schema": "field-research/discharge-118b/1",
+ "session": 118,
+ "date": "2026-08-14",
+ "note": "the Interlocutor's twelve conditions, recomputed with this practice's code",
+ "I1_classification": {
+  "by_code": {
+   "10221": {
+    "n": 28,
+    "user_object": 0,
+    "id_match": 0
+   },
+   "0": {
+    "n": 69,
+    "user_object": 69,
+    "id_match": 69
+   },
+   "10222": {
+    "n": 3,
+    "user_object": 3,
+    "id_match": 3
+   },
+   "10202": {
+    "n": 2,
+    "user_object": 0,
+    "id_match": 0
+   }
+  },
+  "preregistered_zero_vs_nonzero": {
+   "T": {
+    "n": 20,
+    "not_served": 11,
+    "share_not_served": 0.55
+   },
+   "C1": {
+    "n": 41,
+    "not_served": 20,
+    "share_not_served": 0.4878048780487805
+   },
+   "C2": {
+    "n": 41,
+    "not_served": 2,
+    "share_not_served": 0.04878048780487805
+   }
+  },
+  "object_based_user_object_and_matching_id": {
+   "T": {
+    "n": 20,
+    "not_served": 11,
+    "share_not_served": 0.55
+   },
+   "C1": {
+    "n": 41,
+    "not_served": 17,
+    "share_not_served": 0.4146341463414634
+   },
+   "C2": {
+    "n": 41,
+    "not_served": 2,
+    "share_not_served": 0.04878048780487805
+   }
+  },
+  "reclassified_accounts": [
+   "buzz_award",
+   "jere.ronkko",
+   "worldpadeltour"
+  ],
+  "preregistered": {
+   "Q4_C1_vs_C2": {
+    "table": [
+     [
+      20,
+      21
+     ],
+     [
+      2,
+      39
+     ]
+    ],
+    "p": 9.127812313744e-06
+   },
+   "Q3_T_vs_C1": {
+    "table": [
+     [
+      11,
+      9
+     ],
+     [
+      20,
+      21
+     ]
+    ],
+    "p": 0.7863336619814909
+   }
+  },
+  "object_based": {
+   "Q4_C1_vs_C2": {
+    "table": [
+     [
+      17,
+      24
+     ],
+     [
+      2,
+      39
+     ]
+    ],
+    "p": 0.00013478232180359165
+   },
+   "Q3_T_vs_C1": {
+    "table": [
+     [
+      11,
+      9
+     ],
+     [
+      17,
+      24
+     ]
+    ],
+    "p": 0.4140702302122937
+   }
+  },
+  "verdict": "the pre-registration fixed zero-against-non-zero and that statistic stands as pre-registered; the PROSE claim that non-zero means 'the account object is not served' is refuted for code 10222, where the object is served"
+ },
+ "I6_power": {
+  "newcombe_T_minus_C1_preregistered": [
+   -0.19263921206601464,
+   0.3027958252547501
+  ],
+  "newcombe_T_minus_C1_object_based": [
+   -0.12200513143930497,
+   0.37111121820525184
+  ],
+  "simulated_power_vs_C1_base": {
+   "0.10": 0.07975,
+   "0.20": 0.24625,
+   "0.30": 0.571875,
+   "0.40": 0.891375
+  },
+  "C1_base_used": 0.4878048780487805
+ },
+ "I15_Q1_equals_Q2": {
+  "checked_k": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14,
+   15,
+   16,
+   17,
+   18,
+   19,
+   20
+  ],
+  "identical_for_every_k": true,
+  "verdict": "Q1 and Q2 score identically for every possible T count given the observed C1; the pre-registration contained ONE substantive bet, scored twice"
+ },
+ "I5_what_the_tail_adds": {
+  "live": {
+   "n": 10,
+   "absent": 7,
+   "expected": 1.1566265060240963,
+   "upper_tail": 2.41423338352973e-05
+  },
+  "dead": {
+   "n": 12,
+   "absent": 9,
+   "expected": 1.3879518072289156,
+   "upper_tail": 5.863048243012059e-07
+  },
+  "conditional_on_the_page_total": {
+   "expected_live_absent_given_16_of_22": 7.2727272727272725,
+   "P_at_least_observed": 0.7708978328173375
+  },
+  "fisher_on_the_page_2x2": 1.0,
+  "verdict": "account state and unit absence are orthogonal ON THIS PAGE; the subset tail carries no evidence beyond the page tail published at session 117, and the dead-account side is the more extreme of the two"
+ },
+ "I3_I4_sweep": {
+  "unconditional_cell_rate": 0.11566265060240964,
+  "variants": {
+   "preregistered": {
+    "p_live_all_gone": 0.5121951219512195,
+    "p_live_all_present": 0.9512195121951219,
+    "p_live_all_present_exact_95": [
+     0.8346666465821697,
+     0.9940368817589571
+    ],
+    "cells": {
+     "mixed=0 | C2 point": {
+      "rate": 0.06221579164944192,
+      "expected_10": 0.6221579164944192,
+      "ratio_at_7": 11.251162790697673
+     },
+     "mixed=0 | C2 exact lower": {
+      "rate": 0.0702929141372007,
+      "expected_10": 0.7029291413720069,
+      "ratio_at_7": 9.95832949298005
+     },
+     "mixed=0 | C2 exact upper": {
+      "rate": 0.05969587335959797,
+      "expected_10": 0.5969587335959797,
+      "ratio_at_7": 11.726103675262726
+     },
+     "mixed=1 | C2 point": {
+      "rate": 0.0716827327424468,
+      "expected_10": 0.716827327424468,
+      "ratio_at_7": 9.765252707581226
+     },
+     "mixed=1 | C2 exact lower": {
+      "rate": 0.08035247733347725,
+      "expected_10": 0.8035247733347726,
+      "ratio_at_7": 8.711616906282478
+     },
+     "mixed=1 | C2 exact upper": {
+      "rate": 0.0689497508071324,
+      "expected_10": 0.689497508071324,
+      "ratio_at_7": 10.15232095556159
+     },
+     "mixed=11/12 measured at session 114 | C2 point": {
+      "rate": 0.07093816550251707,
+      "expected_10": 0.7093816550251707,
+      "ratio_at_7": 9.867748835077533
+     },
+     "mixed=11/12 measured at session 114 | C2 exact lower": {
+      "rate": 0.07956703254251049,
+      "expected_10": 0.795670325425105,
+      "ratio_at_7": 8.797613504387122
+     },
+     "mixed=11/12 measured at session 114 | C2 exact upper": {
+      "rate": 0.06822028009657044,
+      "expected_10": 0.6822028009657044,
+      "ratio_at_7": 10.260878422209679
+     }
+    },
+    "ratio_range": [
+     8.711616906282478,
+     11.726103675262726
+    ]
+   },
+   "object_based": {
+    "p_live_all_gone": 0.5853658536585367,
+    "p_live_all_present": 0.9512195121951219,
+    "p_live_all_present_exact_95": [
+     0.8346666465821697,
+     0.9940368817589571
+    ],
+    "cells": {
+     "mixed=0 | C2 point": {
+      "rate": 0.07047736119647614,
+      "expected_10": 0.7047736119647614,
+      "ratio_at_7": 9.932267441860464
+     },
+     "mixed=0 | C2 exact lower": {
+      "rate": 0.07953607013553685,
+      "expected_10": 0.7953607013553685,
+      "ratio_at_7": 8.801038306357542
+     },
+     "mixed=0 | C2 exact upper": {
+      "rate": 0.06764696318986291,
+      "expected_10": 0.6764696318986291,
+      "ratio_at_7": 10.347840715854884
+     },
+     "mixed=1 | C2 point": {
+      "rate": 0.07936609778005904,
+      "expected_10": 0.7936609778005904,
+      "ratio_at_7": 8.81988682295877
+     },
+     "mixed=1 | C2 exact lower": {
+      "rate": 0.08887614752554297,
+      "expected_10": 0.8887614752554297,
+      "ratio_at_7": 7.876128966985436
+     },
+     "mixed=1 | C2 exact upper": {
+      "rate": 0.07636427646926888,
+      "expected_10": 0.7636427646926889,
+      "ratio_at_7": 9.166589829233823
+     },
+     "mixed=11/12 measured at session 114 | C2 point": {
+      "rate": 0.07866665950163633,
+      "expected_10": 0.7866665950163633,
+      "ratio_at_7": 8.89830589521142
+     },
+     "mixed=11/12 measured at session 114 | C2 exact lower": {
+      "rate": 0.08814642236197567,
+      "expected_10": 0.8814642236197567,
+      "ratio_at_7": 7.941331947942606
+     },
+     "mixed=11/12 measured at session 114 | C2 exact upper": {
+      "rate": 0.07567678814504347,
+      "expected_10": 0.7567678814504347,
+      "ratio_at_7": 9.249864022484248
+     }
+    },
+    "ratio_range": [
+     7.876128966985436,
+     10.347840715854884
+    ]
+   }
+  },
+  "sign_flip_threshold_on_P_live_all_gone": 0.9482180640195603,
+  "mixed_measured_session_114": {
+   "handles": 12,
+   "state_zero": 11,
+   "source": "account-state-probe-114.json"
+  }
+ },
+ "I2_exchangeability": {
+  "on_page_all_present_live": 3,
+  "on_page_all_present_n": 6,
+  "off_page_all_present_live_share": 0.9512195121951219,
+  "on_page_all_gone_live": 6,
+  "on_page_all_gone_n": 14,
+  "off_page_all_gone_live_share": 0.5121951219512195,
+  "verdict": "the sweep weights 349 of 415 units by a rate this document's own section 3 rejects for the target page at p = 0.0111; the floor survives only through the sign-flip threshold above"
+ },
+ "I10_key_by_statistic": {
+  "units": 2728,
+  "table": {
+   "account": {
+    "clusters": 2060,
+    "deff_log_or_boot": [
+     1.2883326985287513,
+     1.3476301628542862,
+     1.3521376019258398
+    ],
+    "deff_proportion_boot": [
+     1.5093887377349615,
+     1.5700835617308566,
+     1.50634007304767
+    ],
+    "deff_proportion_jack": 1.4996328126493432
+   },
+   "page": {
+    "clusters": 1958,
+    "deff_log_or_boot": [
+     1.5814874810312434,
+     1.5448525335094447,
+     1.6055540067827512
+    ],
+    "deff_proportion_boot": [
+     1.9745680221145452,
+     1.9252194394842146,
+     1.9546888221782954
+    ],
+    "deff_proportion_jack": 2.0130630183053695
+   },
+   "component": {
+    "clusters": 1806,
+    "deff_log_or_boot": [
+     1.5531724856527414,
+     1.6396742157349276,
+     1.6576466723788088
+    ],
+    "deff_proportion_boot": [
+     2.2719150658011222,
+     2.2078022999060885,
+     2.220141787330337
+    ],
+    "deff_proportion_jack": 2.208437386645905
+   }
+  },
+  "verdict": "the gap between the two statistics is small on the account key and large on the component key: it is an interaction of statistic WITH key, not a property of the statistic alone"
+ },
+ "I11_uncertainty": {
+  "outer": 30,
+  "inner": 300,
+  "usable": 30,
+  "deff_log_or": {
+   "median": 1.5031934527005468,
+   "p05": 1.1752511283228253,
+   "p95": 1.854400416250396
+  },
+  "deff_proportion": {
+   "median": 2.1018959801274857,
+   "p05": 1.501849804438769,
+   "p95": 2.945317457167869
+  },
+  "gap": {
+   "median": 0.5948144188954556,
+   "p05": 0.03346126746982292,
+   "p95": 1.2701058198161015,
+   "positive_in": 29,
+   "of": 30
+  },
+  "ratio": {
+   "median": 1.387862873732554,
+   "p05": 1.022769643658942,
+   "p95": 1.7581763351548396
+  }
+ },
+ "I12_most_influential_component": {
+  "delta_or": 0.11987056520393691,
+  "n_units": 22,
+  "pages": [
+   "es.wikipedia.org|Protestas en Paraguay de 2023"
+  ],
+  "n_pages": 1,
+  "accounts": 19
+ }
+}

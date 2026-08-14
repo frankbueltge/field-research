@@ -34,9 +34,44 @@ pool = 312, from which 41 were drawn at `random.Random(117001)`. The pre-registr
 as well — and `10202` is in `account-state-probe-114.json`, *and* the governing pre-registration
 names it in §4 as a session-114 value. **A claim of novelty contradicted by the practice's own
 file and by the pre-registration meant to prevent exactly that. Corrected here, dated, not
-silently.** **No published table maps these numbers to a cause**, this practice has never found one, and
-nothing is read into them beyond *the account object is not served*. Zero against non-zero is
-the entire analysis, exactly as §4 said it would be.
+silently.** **No published table maps these numbers to a cause** and this practice has never found
+one.
+
+### And the binary does not mean what version 1 said it means
+
+The adversary opened the stored responses instead of the summary and found what a Verifier's
+nine conditions and this practice's own reading had both walked past. Every response, by code
+(`discharge-118b.json`, `I1_classification`):
+
+| code | n | returns a user object | `uniqueId` matches the handle |
+|---|---|---|---|
+| `0` | 69 | **69** | **69** |
+| `10221` | 28 | 0 | 0 |
+| `10202` | 2 | 0 | 0 |
+| **`10222`** | **3** | **3** | **3** |
+
+**The three `10222` accounts — `buzz_award`, `jere.ronkko`, `worldpadeltour`, all in C1 — return
+the full user object and their own handle.** By the operational definition this arc wrote at
+session 114 (*served* = a user object with a matching `uniqueId`), **the account object is
+served, and this document counted them as not served.** Version 1's sentence *"nothing is read
+into them beyond the account object is not served"* is therefore **false for `10222`**, and it is
+struck.
+
+**What stands and what moves.** The pre-registration fixed *zero against non-zero* and said in §4
+that no meaning would be assigned to which non-zero code appears; **that statistic stands exactly
+as pre-registered, and Q1–Q5 are scored on it below.** Beside it, the object-based reading:
+
+| | pre-registered (zero vs non-zero) | object-based (user object served) |
+|---|---|---|
+| T not served | 11 of 20 = **0.5500** | 11 of 20 = **0.5500** |
+| C1 not served | 20 of 41 = **0.4878** | **17 of 41 = 0.4146** |
+| C2 not served | 2 of 41 = **0.0488** | 2 of 41 = **0.0488** |
+| Q4, C1 against C2 | p = **9.128 × 10⁻⁶** | p = **1.348 × 10⁻⁴** |
+| Q3, T against C1 | p = **0.7863** | p = **0.4141** |
+
+**No verdict changes and no §2 figure moves** — T carries only `0` and `10221`. What changes is
+the size of the separation: a factor of ten becomes a factor of eight and a half. **Both
+classifications are published; neither is hidden.**
 
 ### The scoring, as written on 2026-08-13
 
@@ -48,17 +83,33 @@ the entire analysis, exactly as §4 said it would be.
 | **Q4** | C2's non-zero share is lower than C1's | 0.0488 vs 0.4878, **p = 9.128 × 10⁻⁶** | holds |
 | **Q5** | at least 95 of 102 return a readable state | 102 of 102 | holds |
 
-**Q2 was the bet, and it lost.** The pre-registration said in as many words that *"absent videos
-whose accounts are unusually alive is the topic-removal signature"* and predicted T would look
-*more* alive than C1. T looks marginally *deader*, and the difference is nothing — the two groups
-are indistinguishable at these sample sizes, exactly as §5's detection table warned they would be
-below about 30 percentage points.
+**Q1 and Q2 are the same event, and version 1 counted them as two.** Q1 holds iff T's non-zero
+count is ≤ 9; Q2 holds iff T's share is below C1's 20/41 = 0.4878, which is also ≤ 9. **Checked at
+every one of the 21 possible counts: they never disagree** (`discharge-118b.json`,
+`I15_Q1_equals_Q2`). Add that Q3 was declared in advance unable to fire below a ~30-point
+difference and that Q5 is the probe checking it made its own requests, and **the pre-registration
+contained one substantive bet, one control (Q4) and one instrument self-check.** "Three of five
+predictions failed" is one failure counted three times, and this document printed it as a
+scorecard. **Withdrawn as a count; the loss itself stands and is the first thing §1 says.**
+
+**The bet lost.** The pre-registration said in as many words that *"absent videos whose accounts
+are unusually alive is the topic-removal signature"* and predicted T would look *more* alive than
+C1. T looks marginally *deader*, and the difference is nothing.
 
 **Q4 holding is what makes the night worth anything.** K4 said an instrument that cannot separate
-C1 from C2 adjudicates nothing and retires the arm. It separates them by a factor of ten:
-**48.78 % against 4.88 %**, exact p = 9.128 × 10⁻⁶. The account state carries real information
-about whether an account's cited videos are retrievable. So the null result on T is a null
-result, not an instrument failure.
+C1 from C2 adjudicates nothing and retires the arm. It separates them by a factor of ten on the
+pre-registered binary (**48.78 % against 4.88 %**, p = 9.128 × 10⁻⁶) and by a factor of eight and
+a half on the object-based one (**41.46 % against 4.88 %**, p = 1.348 × 10⁻⁴). The account state
+carries real information about whether an account's cited videos are retrievable.
+
+**But version 1's next sentence went too far and is withdrawn.** It read: *"So the null result on
+T is a null result, not an instrument failure."* Two different things were running together —
+*the field is noise* (refuted by Q4) and *this comparison has power* (never established, and the
+pre-registration says so in advance). The Newcombe 95 % interval on T − C1 is **[−0.1926,
++0.3028]** pre-registered and **[−0.1220, +0.3711]** object-based, and simulated power against
+C1's observed base is **0.0798 at a 10-point difference, 0.2463 at 20, 0.5719 at 30, 0.8914 at
+40** (`discharge-118b.json`, `I6_power`). **What this run licenses is: T and C1 do not differ by
+roughly 35 points or more.** That is not the same sentence, and it is the true one.
 
 ## 2. What the probe settles: account death is not the explanation
 
@@ -79,8 +130,18 @@ every unit whose account is gone and re-run session 117's own expectation on wha
 > upper tail **2.414 × 10⁻⁵**.
 
 The whole page is 16 of 22 against 2.5446 — a factor of **6.29**. **Restricting to live accounts
-does not shrink the excess; it reproduces it.** Whatever removed this article's cited evidence,
-it did not do so by removing the accounts.
+does not shrink the excess; it reproduces it.**
+
+**And that tail is not a second piece of evidence — the adversary was right to say so, and this
+is the honest form of the sentence.** Conditional on the page's own 16-of-22, the expected number
+of absences among the 10 live-account units is **7.2727** and P(≥ 7) is **0.7709**; Fisher's exact
+on the page's own 2×2 is **exactly 1.0000**. **Account state and unit absence are orthogonal on
+this page** — which is the cleanest possible statement of "account death is not the explanation",
+and it is a statement of *independence*, not an additional small tail to be added to session
+117's 3.836 × 10⁻¹¹. The other side of the same split is more extreme and this document does not
+lead with it: the 12 dead-account units run **9 absent against 1.3880, tail 5.863 × 10⁻⁷**.
+Whatever removed this article's cited evidence, it did not do so *by* removing the accounts —
+both halves lost their evidence at about the same enormous rate.
 
 **Two things version 1 of this section got wrong, and the second one mattered.**
 
@@ -100,17 +161,33 @@ all absent (a census of all 41) and **0.9512** for accounts whose units are all 
 sweeping the one unmeasured category — the 23 units under mixed accounts — across its entire
 range 0 → 1:
 
-| P(live) assumed for mixed accounts | live-account cell rate | expected for 10 units | ratio at 7 observed |
-|---|---|---|---|
-| 0.00 | 0.06222 | 0.6222 | **11.25** |
-| 0.50 | 0.06710 | 0.6710 | **10.43** |
-| 1.00 | 0.07168 | 0.7168 | **9.77** |
+**Version 1 swept only the mixed weight, and the adversary took two further error sources off
+it.** (i) The 0.9512 is **39 of 41 accounts drawn from 312** — a sample, whose exact 95 % interval
+is **[0.8347, 0.9940]**, and version 1 propagated none of it. (ii) The "unmeasured" mixed category
+**was measured by this arc**: session 114 probed 12 mixed handles and **11 answered state 0**
+(`account-state-probe-114.json`). Different accounts, different cell, chosen by size — but it is a
+measurement in our own file, and calling the quantity unmeasured was the same failure class as
+`10202`. Sweeping the mixed weight over 0, 11/12 and 1, **and** the sampled probability over its
+exact interval, under both classifications:
 
-**The sign does not depend on the unmeasured quantity.** Against an unconditional 0.11566, the
-live-account rate is roughly half, so **6.05 is a conservative floor and the conditioned ratio is
-9.77–11.25.** The honest statement is not agnosticism; it is that conditioning biases the
-comparison *toward* the null. Recomputed here with this practice's own code before being printed
-(`discharge_118.py` → `discharge-118.json`).
+| | live-account cell rate | ratio at 7 observed |
+|---|---|---|
+| pre-registered binary, across the whole sweep | 0.0597–0.0804 | **8.71–11.73** |
+| object-based binary, across the whole sweep | 0.0676–0.0889 | **7.88–10.35** |
+
+**Honest range across both classifications and every swept quantity: 7.88–11.73**, against version
+1's published 9.77–11.25. **And the strongest thing in this section is the one version 1 did not
+print:** the live-account rate stays below the unconditional 0.11566 for **every**
+P(live | all-gone) below **0.9482**. The floor breaks only if Q4 is essentially false.
+
+**The sign is therefore forced by Q4 rather than discovered**, and one further caveat now belongs
+here, because **§3 of this same document contradicts the weighting §2 depends on.** The sweep
+weights 349 of the cell's 415 units by P(live | all-present) = 0.9512 measured off-page; §3 finds
+the target page's *own* all-present accounts at **3 of 6 live, p = 0.0111** against that very
+number. The exchangeability the floor assumes is rejected for one of its two categories by the
+next section. **The floor survives only through the 0.9482 threshold above, and that is why the
+threshold, not the range, is the load-bearing number.** Recomputed with this practice's own code
+before being printed (`discharge_118.py`, `discharge_118b.py`).
 
 ## 3. The like-for-like comparison the pre-registration did not make
 
@@ -126,7 +203,8 @@ all-gone. **They are not, and this is post-hoc:**
 - T's 6 all-present accounts against C2: **3 of 6 non-zero (50.00 %) against 2 of 41 (4.88 %),
   p = 0.0111.**
 
-**The second row is the interesting one and it is also the one to distrust.** *n* = 6, the
+**The second row is the interesting one, it is the one §2's floor argument runs against, and it
+is also the one to distrust.** *n* = 6, the
 comparison was chosen after the data were read, and it is one of several that could have been
 chosen — **`derived-117b.json` carries two like-for-like comparisons**, version 1 of this
 document said three, and no multiplicity correction is applied to either. **It is reported as a lead, not as a finding.** What it would mean if it
@@ -156,9 +234,19 @@ Robins–Breslow–Greenland variance:
 > **MH odds ratio 1.7841, SE(log) 0.13946, interval [1.3574, 2.3449]** — session 111's published
 > numbers, recovered from the run files rather than taken from the document.
 
-Then the correction. The arc has never measured this statistic's own clustered variance; it
-inflated the binomial standard error by the square root of a design effect estimated for a
-*simple proportion*. The bipartite account × page graph over these 2,728 units has **1,806
+Then the correction. **Version 1 of this section opened by saying the arc had never measured this
+statistic's own clustered variance. That is false, and the file that refutes it is in this
+directory.** At session 117 the adversary bootstrapped this exact log odds ratio over cited
+handles — `INTERLOCUTOR-7.md`: *"seed 7: SE(log OR) = 0.16574 → DEFF_logOR = 1.4124; seed 8:
+0.16796 → 1.4506"* — and `RESTATEMENT-2026-08-13.md` line 181 adopted it: *"the log odds ratio's
+own cluster design effect, bootstrapped, is 1.41–1.45 against the 1.4289 assumed."* **A claim of
+novelty contradicted by the practice's own file — the second in this document, after `10202`, and
+this one sat in the premise of the section that makes a new rule binding.** What is new here is
+the *key*: session 117 clustered on the account, this measures the account × page component. The
+sentence is withdrawn.
+
+The correction itself: the arc inflated the binomial standard error by the square root of a
+design effect estimated for a *simple proportion*. The bipartite account × page graph over these 2,728 units has **1,806
 connected components** (largest 48 units, 1,458 singletons), every unit attributed. Resampling
 components with replacement, 4,000 draws, and — as session 116's standing rule requires beside
 every percentile bootstrap — a delete-one-component jackknife:
@@ -182,15 +270,17 @@ routes. The bootstrap percentile intervals themselves are [1.2638, 2.4972] at se
 [1.2489, 2.4910] at seed 8; all five seeds and the jackknife exclude 1.*
 
 **Two routes — one bootstrap estimator run at five seeds, and one delete-one-component
-jackknife — put this statistic's design effect at 1.5373–1.6046, and it sits between the two
-numbers this arc substituted for it.** Version 1 of this document said *"three independent
+jackknife — put this statistic's design effect at 1.5373–1.6046 on the component key, above the
+1.4289 substituted at session 115 and below the 1.9900 made a standing rule at session 116.** Version 1 of this document said *"three independent
 routes … 1.57–1.61"*: seeds are not routes, and two seeds do not establish a spread. Three
 further seeds were run for this correction (11, 12, 13 → **1.5727, 1.5659, 1.5373**), and the
 lowest falls **below** the floor version 1 published. The 1.4289 used at session 115 was too small; the
-crossed 1.9900 that session 116 made the standing rule is **too large for this statistic** — 24 %
-to 27 % too large in variance, depending on which of the three measured routes it is set against.
-Every route excludes 1, so the finding itself is unmoved — what moves is
-the arc's confidence in its own correction machinery.
+crossed 1.9900 that session 116 made the standing rule is **too large for this statistic** —
+**24.0 % to 29.4 %** too large in variance across the six measured values, not the "24 % to 27 %
+depending on which of the three measured routes" version 1 printed. That phrasing was wrong twice
+in one clause: it dropped seed 13, the very seed added to widen the range, and it said *three
+routes* four sentences after establishing there are two. Every route excludes 1, so the finding
+itself is unmoved — what moves is the arc's confidence in its own correction machinery.
 
 **Two disclosures the first version of this section owed.** (1) **Between 1.60 % and 1.90 % of
 each seed's 4,000 draws compute a seven-stratum statistic rather than an eight-stratum one**
@@ -208,21 +298,65 @@ scheme: only **22 of the 1,806 components — 166 units — contain both arms**,
 contrast is almost entirely *between* components, which is exactly the case in which inflating a
 binomial standard error understates the variance.
 
-**The rule this changes.** Session 116 wrote: *"Any new interval this arc publishes takes the
-crossed design effect."* That rule is now measured to over-widen a compound statistic, and this
-is the second time in three sessions that a design effect borrowed from a proportion has been
-shown to travel badly (the first was the adversary's check of the gap at session 116).
-**Corrected rule, proposed here and binding on this arc from tonight: a design effect is
-measured for the statistic it corrects, or the statistic is bootstrapped over components
-directly. A borrowed design effect is a placeholder, and it is named as one in the prose that
-carries it.** This does not re-open the crossed dimension — 1.9900 remains the measured design
-effect *of the absence proportion*, which is what it was measured on.
+**And the comparison against 1.4289 is withdrawn.** 1.4289 is an *account-key* number. On the
+account key, measured here on these units, this statistic's design effect is **1.2883–1.3521** —
+*below* 1.4289 — and session 117's own measurement on its population was 1.4124–1.4506, i.e.
+level with it. **1.4289 was right, or slightly conservative, for the log odds ratio on the key it
+was defined on.** The "wrong in both directions" of this section's title is half wrong: only the
+1.9900 direction survives, and it survives on every key. What produced "too small" was switching
+the key, which is the confound disclosure (2) above names and then commits — and the enumeration
+there is short by one: **1.4289 and 1.9900 were measured on 3,575 day-2 units with 2,744 accounts
+and 2,402 components; these figures are on 2,728 units of a different run plus an expansion arm,
+with 1,806 components. Statistic, key and sample — three things, not two.**
+
+### The table version 1 should have printed, and the interval it should have carried
+
+Same 2,728 units, three keys, both statistics, component bootstrap at three seeds each
+(`discharge-118b.json`, `I10_key_by_statistic`):
+
+| key | clusters | design effect, log odds ratio | design effect, absence proportion | ratio |
+|---|---|---|---|---|
+| account | 2,060 | 1.2883 · 1.3476 · 1.3521 | 1.5094 · 1.5701 · 1.5063 | **≈ 1.15** |
+| citing page | 1,958 | 1.5815 · 1.5449 · 1.6056 | 1.9746 · 1.9252 · 1.9547 | **≈ 1.25** |
+| **component** | 1,806 | 1.5532 · 1.6397 · 1.6576 | 2.2719 · 2.2078 · 2.2201 | **≈ 1.38** |
+
+**The gap between the two statistics is not a constant of the statistic.** It is about 15 % on the
+account key and about 38 % on the component key: an *interaction* of statistic with key, growing
+as the key coarsens. **So the general form of this section's claim — "a design effect belongs to
+a statistic, not to a sample" — is withdrawn. It belongs to a (statistic, key, sample) triple**,
+and the arc's own files say so from the other side: the absence proportion's component-key design
+effect is 1.9414 on day 3 and 2.0060 on day 2 (`crossed-116.json`), against 2.1908 on this
+2,728-unit set.
+
+**And neither design effect has ever carried an interval, which is what sessions 115 and 116 both
+told this arc not to do.** Paired bootstrap, 30 outer component resamples × 300 inner, both design
+effects recomputed inside every outer replicate against that replicate's own baseline:
+
+> deff(log OR) median **1.5032**, 90 % **[1.1753, 1.8544]** · deff(proportion) median **2.1019**,
+> 90 % **[1.5018, 2.9453]** · the **gap** median **0.5948**, 90 % **[0.0335, 1.2701]**, positive
+> in **29 of 30** replicates · the **ratio** median **1.3879**, 90 % **[1.0228, 1.7582]**.
+
+**The direction is well supported; the magnitude is barely determined.** A comparison printed to
+four decimals rests on an interval that nearly touches 1.
+
+**The rule this changes, and it survives all of the above.** Session 116 wrote: *"Any new interval
+this arc publishes takes the crossed design effect."* That rule over-widens a compound statistic,
+on every measurement made tonight. **Corrected rule, binding on this arc from tonight: a design
+effect is measured for the statistic it corrects, on the key it will be applied with, or the
+statistic is bootstrapped over components directly. A borrowed design effect is a placeholder,
+and it is named as one in the prose that carries it.** This does not re-open the crossed
+dimension — 1.9900 remains the measured design effect *of the absence proportion*, which is what
+it was measured on.
 
 **What this does not do.** It does not restate the published intervals of §8 of
 `RESTATEMENT-2026-08-13.md`: those are proportions, and 1.9900 is theirs. It touches exactly one
 published figure, the Mantel–Haenszel odds ratio, and it widens it less than the standing rule
 would have. **The single most influential component moves the odds ratio by 0.1199** when
-deleted, on a point estimate of 1.7841 — no one component carries the result.
+deleted, on a point estimate of 1.7841 — no one component carries the result. **That component is
+`es.wikipedia.org|Protestas en Paraguay de 2023`**: 22 units, 19 accounts, the object of §§1–3 of
+this same document, and the largest single deletion effect by a factor of 1.85 over the next.
+Version 1 printed the number without naming it, and it is material to both halves of the
+document.
 
 ## 6. The catalogues, consulted before anything here is called new — and one real lead
 
