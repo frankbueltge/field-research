@@ -357,3 +357,46 @@ evidence of what it saw, which D20 did not.
 the instrument's file are exactly the kind of thing a reader should be able to find. This one was
 made **during** day 3, between the killed attempt and the restart, and the restarted run is the first
 to use it.
+
+## D22 — `ledger.py` refuses a placeholder `run_id`
+
+*Session 117, 2026-08-13. **Written into this file at session 118, 2026-08-14, and dated as such —
+it was referenced as "D22" in `NEXT-SESSION.md` and `CONDITIONS-DISCHARGED-117.md` on the night it
+was made and the section itself was never written.** Recording the gap rather than back-dating the
+entry: for one day this arc cited a deviation number that resolved to nothing.*
+
+`manifest-day2-onward.json` carries `"run_id": "TEMPLATE — the running session sets this"`, and no
+session ever set it, so days 1–3 were written with that string in the field. `_run_id()` now refuses
+any empty or `TEMPLATE`-containing value and stamps the run's own start time instead, marked
+`(manifest carried a placeholder)`.
+
+**Bookkeeping only** — endpoint, user agent, 1.0 s delay, 25 s timeout, classification, order and
+the HTTP 429 stop rule are untouched, which is the only reason day 4 stays comparable with days 1–3.
+**The day-3 run file is not edited**: it still carries the placeholder string, because rewriting a
+landed measurement to look tidier is the thing this practice does not do.
+
+## D23 — session 118: post-hoc analyses beside a pre-registration, declared as post-hoc
+
+*Session 118, 2026-08-14.* `PREREGISTRATION-117B-account-state.md` fixed one primary test and one
+secondary. Two further analyses were run after the results were read, and neither is covered by it:
+
+1. **Splitting T by its own corpus behaviour** (14 all-gone accounts, 6 all-present) and comparing
+   each part with the control that matches it. This exists because the pre-registration's own
+   primary comparison is not like-for-like — T is every account on the page, C1 is all-gone
+   accounts by construction — and that defect was only visible once the composition was known.
+2. **The residual excess** — the age-standardised expectation recomputed over the 10 units whose
+   account is still served.
+
+**Both are labelled post-hoc in `derived-117b.json` and in `INCREMENT-8.md` §§2–3, and neither
+carries a multiplicity correction.** Three such splits exist in the same file. The `p = 0.0110` on
+6 accounts is reported as a lead and never as a finding. **No pre-registered prediction was rescored
+in the light of them, and Q1–Q5 stand exactly as written on 2026-08-13.**
+
+## D24 — session 118: the queued Mantel–Haenszel correction ran on files, not on the window
+
+*Session 118, 2026-08-14.* Session 116's post-gauntlet queue set the component bootstrap of the
+Mantel–Haenszel odds ratio as the first analytic task **after day 4 is measured**. It was run while
+day 4 was still being measured, because it needs no measurement: it reads
+`ledger/run-2026-08-11T1124Z.json` and `expansion-111/baseline-run.json`, both months and days old
+respectively, and issues **no request of any instrument**. The ordering the queue asked for was
+about not displacing the measurement; the measurement was not displaced — it was already running.
