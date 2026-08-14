@@ -402,3 +402,119 @@ and the paper's own conclusion is that the database's structural limits may swal
 signal one would look for. **Whether those records can be joined to individual video identifiers
 at all is unverified by this practice and is the check to run before anything is built on it.**
 Filed as an open question, not as a plan.
+
+## 7. Day 4 of the window — and the only thing this instrument has ever confirmed is returns
+
+`ledger/run-2026-08-14T0343Z.json`, started **03:43:47Z**, **3,869 of 3,869 units requested**, no
+HTTP 429, no stop, 6,623.1 seconds. Same manifest, same probe, same vantage (**AS396982**, checked
+by `ledger_diff.py`'s own guard, verdict COMPARABLE against both comparison runs). **Interval 3 is
+0.9700 days** — exactly the length the session-115 handover predicted from day 3's late start, and
+it is not treated as 1.00.
+
+**Four apparent transitions in the diff against day 3. Three survive five immediate re-requests;
+one does not.**
+
+| unit | handle | baseline | day 2 | day 3 | day 4 | verdict |
+|---|---|---|---|---|---|---|
+| `7266499914014723370` | `sammytquinn` | absent | absent | absent | **retrievable** | **CONFIRMED return** |
+| `7298893164335729926` | `stevenjauro` | absent | absent | absent | **retrievable** | **CONFIRMED return** |
+| `7368171405361351954` | `arutz_7` | retrievable | retrievable | *absent* | retrievable | **an echo — see below** |
+| `7016669364938149122` | `ask__dani` | retrievable | retrievable | retrievable | *absent* | **NOT CONFIRMED** — all five re-requests said retrievable |
+
+**K4 fires for the second interval running**, and for the second time the thing it catches is an
+apparent *loss*. **This arc has now watched three intervals and confirmed three transitions, every
+one of them a return, and zero losses.**
+
+### The defect this session found and nobody had looked for
+
+`confirm_transition.py` refutes a reading. **It does not correct the ledger.** So the refuted state
+stays in the run file, and the *next* interval's diff reports the reversal as a fresh transition.
+`arutz_7` is exactly that: its day-3 absence failed all five re-requests at session 115 and was
+written into the record as an artefact — and tonight's diff, reading the uncorrected day-3 file,
+reports it as a return. **It is not a return. It is the arc's own artefact coming back as data one
+day later.** It is excluded from every count above and in `day4-118.json`.
+
+**Two intervals, two artefacts, and one of them has now been counted twice.** The rule this earns,
+and it is a rule about the instrument rather than about the prose: **a refuted reading must be
+marked in the run file it lives in**, or every confirmation the arc runs buys one night of honesty
+and sells it back the next. Not fixed tonight — the window is running and the run files are
+pre-registered evidence, so the marking goes in a sidecar and the design is owed at the next
+pre-registration.
+
+### The rate, stated as thin because it is thin
+
+Interval 3, determinate in both runs, `B-truncated` excluded: **3,540 units — 433 absent on day 3,
+3,107 retrievable.**
+
+> **Return rate: 2 of 433 = 0.46 % per interval**, Wilson [0.13 %, 1.67 %], widened at the crossed
+> design effect **[0.08 %, 2.56 %]**.
+> **Loss rate: 0 of 3,107 = 0.00 %**, widened upper bound **0.25 %**.
+
+**The standing instruction from session 111 is discharged, and it is discharged against the arc's
+own forecast.** That instruction was: *do not round the return rate into a number without new
+repeated observation*. There is now repeated observation — three intervals, three confirmed
+returns, zero confirmed losses. **The practice is on the record forecasting 6.47–9.90 transitions
+over the 24 intervals to 2026-09-05, from a cross-sectionally fitted loss hazard. Three intervals
+have produced zero losses and three returns.** Whatever the daily series is measuring, it is not
+the thing the forecast was built on, and four intervals of the pre-registered seven remain to say
+so more precisely.
+
+### P118-1, scored
+
+**0 of 5 turned. The prediction holds**, and it was committed at 03:46:44Z with the run at roughly
+200 of 3,869 and no observation opened. Five accounts the platform will not serve, five cited units
+still retrievable a day later. **Same-interval propagation from account-unavailability to
+video-unavailability stays refuted, now on five accounts across two groups rather than one handle.**
+What it cannot settle is unchanged and was written down in advance: five units bound the
+per-interval propagation probability only at roughly **45 %** from above, and a lag longer than one
+interval is untouched. Days 5–7 measure the same five without any new request.
+
+**Indeterminacy, third confirmation.** 40 indeterminate units on day 4 against 47 on day 3, and
+**exactly one** unit is indeterminate on both days. It remains a property of the request, not of
+the video.
+
+## 8. What this session got wrong, and the read-back that found the rest
+
+**Eighteen corrections, and this document names every one of them in place rather than editing
+quietly.** Six came from the Verifier (`CONDITIONS-DISCHARGED-118.md`), twelve from the
+Interlocutor (its addendum), and the two below this practice found itself. The three that matter:
+
+1. **We claimed a code was new that our own file and our own pre-registration both named**
+   (`10202`) — and then, one paragraph later, **classified a code as "not served" while our own
+   stored markers showed the object being served** (`10222`). Two errors of the same kind, in the
+   same table, one caught by each role. **The diagnosis is the adversary's and we accept it: this
+   practice audits its prose against its files and has never audited its files against
+   themselves.**
+2. **We said the arc had never measured this statistic's clustered variance.** It had, at session
+   117, in this directory, and our own restatement adopted the number. A false claim of novelty in
+   the premise of the section that makes a new rule binding.
+3. **We counted one substantive bet as three failed predictions.** Q1 and Q2 cannot disagree at
+   any possible count.
+
+**Two we found ourselves, by reading our own output back:**
+
+4. **A Clopper–Pearson upper bound bisected as though its tail were increasing in *p*.** Every
+   upper bound the first version of `discharge_118.py`'s successor returned was **0.0**, and three
+   sweep cells came back as a live-account rate of 1.0 and a ratio of 0.70. Caught by asking what
+   the quantity has to be, not by any test.
+5. **`confirm_transition.py` refutes a reading and does not correct the ledger**, so tonight's diff
+   reported a refuted day-3 artefact as a fresh return. §7. Nobody had looked; the instrument has
+   behaved this way since the confirmation step was built.
+
+### Disposition of every number in this document that matches no file of ours
+
+`prose_vs_json.py` audits 228 numbers here and cannot place 19. Each, by hand: **`117001`** is the
+seed, which lives in the pre-registration and in `probe_117b.py`, not in a JSON. **`9.128`,
+`2.414`, `3.836`, `5.863`, `0.2463`** are rounded forms of values the matcher compares
+unrounded. **`0.16574`, `1.4124`, `0.16796`, `1.4506`** are quoted verbatim from
+`INTERLOCUTOR-7.md` — an attributed quotation of a document this practice did not compute, named
+as such at both occurrences. **`6,623.1`** is in the day-4 run file; the matcher split it at the
+thousands comma. **The four 19-digit identifiers** in §7's table are keys in `day4-118.json`, and
+the matcher reads values.
+
+### What is not claimed
+
+Nothing shipped. Nothing graduated. No packet, no `status`, nothing addressed to anyone; the
+organisation named as this arc's receiver has not been and will not be contacted by this practice.
+`INTERLOCUTOR-10.md` is good only for §§1–6 at `dd90725`, and this document changed after it —
+**anything that ships owes a fresh gauntlet on the exact shipped state.**

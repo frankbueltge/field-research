@@ -1,0 +1,191 @@
+{
+ "schema": "field-research/window-day4/1",
+ "session": 118,
+ "date": "2026-08-14",
+ "runs": {
+  "baseline": {
+   "start": "2026-08-11T11:24:06Z",
+   "n": 3869,
+   "asn": "AS396982"
+  },
+  "day2": {
+   "start": "2026-08-12T03:40:28Z",
+   "n": 3869,
+   "asn": "AS396982"
+  },
+  "day3": {
+   "start": "2026-08-13T04:27:00Z",
+   "n": 3869,
+   "asn": "AS396982"
+  },
+  "day4": {
+   "start": "2026-08-14T03:43:47Z",
+   "n": 3869,
+   "asn": "AS396982"
+  }
+ },
+ "interval3_transitions": {
+  "7016669364938149122": {
+   "handle": "ask__dani",
+   "from": "RETRIEVABLE",
+   "to": "NOT-RETRIEVABLE",
+   "verdict": "NOT CONFIRMED \u2014 K4 fires; recorded as an instrument artefact, not counted in the window",
+   "history": {
+    "baseline": "RETRIEVABLE",
+    "day2": "RETRIEVABLE",
+    "day3": "RETRIEVABLE",
+    "day4": "NOT-RETRIEVABLE"
+   }
+  },
+  "7266499914014723370": {
+   "handle": "sammytquinn",
+   "from": "NOT-RETRIEVABLE",
+   "to": "RETRIEVABLE",
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests",
+   "history": {
+    "baseline": "NOT-RETRIEVABLE",
+    "day2": "NOT-RETRIEVABLE",
+    "day3": "NOT-RETRIEVABLE",
+    "day4": "RETRIEVABLE"
+   }
+  },
+  "7298893164335729926": {
+   "handle": "stevenjauro",
+   "from": "NOT-RETRIEVABLE",
+   "to": "RETRIEVABLE",
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests",
+   "history": {
+    "baseline": "NOT-RETRIEVABLE",
+    "day2": "NOT-RETRIEVABLE",
+    "day3": "NOT-RETRIEVABLE",
+    "day4": "RETRIEVABLE"
+   }
+  },
+  "7368171405361351954": {
+   "handle": "arutz_7",
+   "from": "NOT-RETRIEVABLE",
+   "to": "RETRIEVABLE",
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests",
+   "history": {
+    "baseline": "RETRIEVABLE",
+    "day2": "RETRIEVABLE",
+    "day3": "NOT-RETRIEVABLE",
+    "day4": "RETRIEVABLE"
+   }
+  }
+ },
+ "interval3_K4": "FIRES \u2014 at least one transition did not reproduce",
+ "artefact_echo": {
+  "cases": [
+   {
+    "vid": "7368171405361351954",
+    "handle": "arutz_7",
+    "refuted_in": "interval2",
+    "refuted_reading": "NOT-RETRIEVABLE",
+    "counted_again_in": "interval3",
+    "as": "NOT-RETRIEVABLE -> RETRIEVABLE",
+    "history": {
+     "baseline": "RETRIEVABLE",
+     "day2": "RETRIEVABLE",
+     "day3": "NOT-RETRIEVABLE",
+     "day4": "RETRIEVABLE"
+    }
+   }
+  ],
+  "mechanism": "confirm_transition.py refutes a reading but does not correct the run file; the refuted state stays in the ledger and the next interval's diff reports the reversal as a fresh transition"
+ },
+ "three_intervals": {
+  "confirmed_returns": 3,
+  "confirmed_losses": 0,
+  "apparent_transitions_refuted_by_re_request": 2,
+  "echoes_excluded_from_the_count": 1,
+  "detail": {
+   "returns": [
+    {
+     "interval": "interval1",
+     "vid": "7446448990935354670",
+     "handle": "iidahmer"
+    },
+    {
+     "interval": "interval3",
+     "vid": "7266499914014723370",
+     "handle": "sammytquinn"
+    },
+    {
+     "interval": "interval3",
+     "vid": "7298893164335729926",
+     "handle": "stevenjauro"
+    }
+   ],
+   "losses": [],
+   "refuted": [
+    {
+     "interval": "interval2",
+     "vid": "7368171405361351954",
+     "claimed": "NOT-RETRIEVABLE"
+    },
+    {
+     "interval": "interval3",
+     "vid": "7016669364938149122",
+     "claimed": "NOT-RETRIEVABLE"
+    }
+   ],
+   "echoes": [
+    "7368171405361351954"
+   ]
+  }
+ },
+ "interval3_exposure": {
+  "determinate_in_both_excluding_B_truncated": 3540,
+  "absent_on_day3": 433,
+  "confirmed_returns": 2,
+  "present_on_day3": 3107,
+  "confirmed_losses": 0,
+  "return_rate_per_interval": 0.004618937644341801,
+  "return_rate_wilson_binomial": [
+   0.0012675945359058088,
+   0.016682759452091748
+  ],
+  "return_rate_wilson_widened_at_crossed_deff": [
+   0.0008186882166561112,
+   0.025607383085699393
+  ],
+  "loss_rate_per_interval": 0.0,
+  "loss_rate_wilson_widened_at_crossed_deff": [
+   0.0,
+   0.0024543741827572083
+  ],
+  "deff_used": 1.99,
+  "caveat": "three events over three intervals; the design effect applied here is the absence proportion's, which is the statistic it was measured on, and this is a rate on a different population. Thin, and stated as thin."
+ },
+ "P118_1": {
+  "population": {
+   "7234121532635761926": "bruno_martiinez",
+   "7230168662945189126": "monicaaquino191",
+   "7228741383975095558": "payo_junior_oficial",
+   "7193104172198202625": "sbsaustralia",
+   "7251623512144743686": "lazpiyanist"
+  },
+  "day4_states": {
+   "7234121532635761926": "RETRIEVABLE",
+   "7230168662945189126": "RETRIEVABLE",
+   "7228741383975095558": "RETRIEVABLE",
+   "7193104172198202625": "RETRIEVABLE",
+   "7251623512144743686": "RETRIEVABLE"
+  },
+  "n_turned": 0,
+  "holds": true,
+  "rule_of_three_upper_95_on_propagation": 0.4507197283469412,
+  "note": "written and committed at 03:46Z with the run unfinished and no observation from it opened"
+ },
+ "indeterminate": {
+  "per_run": {
+   "baseline": 42,
+   "day2": 40,
+   "day3": 47,
+   "day4": 40
+  },
+  "repeated_day3_to_day4": 1,
+  "note": "indeterminacy is a property of the request, not the video"
+ }
+}
