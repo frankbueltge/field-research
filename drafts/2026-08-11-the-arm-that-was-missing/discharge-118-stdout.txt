@@ -1,0 +1,155 @@
+{
+ "schema": "field-research/discharge-118/1",
+ "session": 118,
+ "date": "2026-08-14",
+ "note": "every figure here is recomputed with this practice's own code before it is printed in this arc's prose",
+ "M1_new_codes": {
+  "session_114_codes": [
+   "0",
+   "10202",
+   "10221"
+  ],
+  "session_118_codes": [
+   "0",
+   "10202",
+   "10221",
+   "10222"
+  ],
+  "genuinely_new": [
+   "10222"
+  ],
+  "claimed_new_in_prose_v1": [
+   "10222",
+   "10202"
+  ],
+  "verdict": "REFUTED \u2014 10202 appears in account-state-probe-114.json and in PREREGISTRATION-117B \u00a74; only 10222 is new"
+ },
+ "M2_census_cost": {
+  "distinct_accounts_day3": 2740,
+  "distinct_accounts_day2": 2744,
+  "verdict": "the analysis is on day 3; the census costs the day-3 number"
+ },
+ "M3_M6": {
+  "p_T_allpresent_vs_C2_full": 0.011096269147599742,
+  "rounded_4dp": 0.0111,
+  "like_for_like_comparisons_in_file": [
+   "T_allgone_vs_C1",
+   "T_allpresent_vs_C2"
+  ],
+  "count": 2
+ },
+ "C6_conditioning_bias": {
+  "off_page_cell_units": {
+   "all_gone": {
+    "n": 43,
+    "absent": 43
+   },
+   "all_present": {
+    "n": 349,
+    "absent": 0
+   },
+   "mixed": {
+    "n": 23,
+    "absent": 5
+   }
+  },
+  "p_account_live_measured": {
+   "all_gone": 0.5121951219512195,
+   "all_present": 0.9512195121951219
+  },
+  "sweep_over_unmeasured_mixed_category": [
+   {
+    "p_live_mixed": 0.0,
+    "live_account_cell_rate": 0.06221579164944192,
+    "expected_for_10_units": 0.6221579164944192,
+    "ratio_observed_7": 11.251162790697673
+   },
+   {
+    "p_live_mixed": 0.25,
+    "live_account_cell_rate": 0.06469601179681013,
+    "expected_for_10_units": 0.6469601179681013,
+    "ratio_observed_7": 10.819832329054229
+   },
+   {
+    "p_live_mixed": 0.5,
+    "live_account_cell_rate": 0.06709819492175771,
+    "expected_for_10_units": 0.6709819492175771,
+    "ratio_observed_7": 10.432471407260067
+   },
+   {
+    "p_live_mixed": 0.75,
+    "live_account_cell_rate": 0.0694259669869426,
+    "expected_for_10_units": 0.694259669869426,
+    "ratio_observed_7": 10.082682753726047
+   },
+   {
+    "p_live_mixed": 1.0,
+    "live_account_cell_rate": 0.0716827327424468,
+    "expected_for_10_units": 0.716827327424468,
+    "ratio_observed_7": 9.765252707581226
+   }
+  ],
+  "unconditional_cell_rate": 0.11566265060240964,
+  "verdict": "the sign is invariant across the whole range of the one unmeasured quantity: conditioning on account state biases the comparison TOWARD the null, so 6.05 is a conservative floor"
+ },
+ "C6_single_cell": {
+  "cells_on_the_page": [
+   "3-4y|W-article"
+  ],
+  "verdict": "all 22 units sit in one cell, so the Poisson-binomial is exactly Binomial(n, 0.11566265) and NOTHING IS STANDARDISED on this page; the word 'age-standardised' describes the scan, not this page"
+ },
+ "C8_statistic_vs_key": {
+  "units": 2728,
+  "deff_absence_proportion_component_key": 2.1908227705552448,
+  "deff_absence_proportion_account_key": 1.4961198898095538,
+  "deff_absence_proportion_page_key": 1.999512560620942,
+  "deff_log_or_component_key_range": [
+   1.5372851232374891,
+   1.6045997654838131
+  ],
+  "verdict": "on the SAME key and the SAME units the proportion's design effect is far above the log odds ratio's, so the gap is a property of the statistic and not only of the key",
+  "mixed_arm_components": 22,
+  "units_in_mixed_arm_components": 166
+ },
+ "C9_atlas_terms": {
+  "works": 505,
+  "hits_by_term": {
+   "account suspension": [],
+   "deplatforming": [],
+   "banning": [
+    "Coded Bias"
+   ],
+   "moderation": [
+    "Data Workers' Inquiry"
+   ],
+   "takedown": [],
+   "deletion": [],
+   "censorship (not in the original sentence)": [
+    "Biblioteca de la No-Historia (Library of Non-History)",
+    "THE DELUSION"
+   ]
+  },
+  "fetched": "first-hand, not mirrored"
+ }
+}
+{
+ "deff_range": [
+  1.5372851232374891,
+  1.6045997654838131
+ ],
+ "per_seed_deff": {
+  "7": 1.5713,
+  "8": 1.5854,
+  "11": 1.5727,
+  "12": 1.5659,
+  "13": 1.5373
+ },
+ "short_draws": {
+  "7": 64,
+  "8": 76,
+  "11": 69,
+  "12": 69,
+  "13": 70
+ }
+}
+wrote discharge-118.json

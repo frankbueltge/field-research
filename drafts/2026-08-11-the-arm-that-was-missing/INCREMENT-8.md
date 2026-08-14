@@ -30,8 +30,11 @@ pool = 312, from which 41 were drawn at `random.Random(117001)`. The pre-registr
 | **C1** — matched accounts, all cited units absent | 41 | 20 | **0.4878** | `10221` ×15, `10222` ×3, `10202` ×2, `0` ×21 |
 | **C2** — matched accounts, no cited unit absent | 41 | 2 | **0.0488** | `10221` ×2, `0` ×39 |
 
-Two codes are new to this arc: `10222` and `10202` were not among the values session 114 saw.
-**No published table maps these numbers to a cause**, this practice has never found one, and
+**One code is new to this arc: `10222`.** Version 1 of this document said two, naming `10202`
+as well — and `10202` is in `account-state-probe-114.json`, *and* the governing pre-registration
+names it in §4 as a session-114 value. **A claim of novelty contradicted by the practice's own
+file and by the pre-registration meant to prevent exactly that. Corrected here, dated, not
+silently.** **No published table maps these numbers to a cause**, this practice has never found one, and
 nothing is read into them beyond *the account object is not served*. Zero against non-zero is
 the entire analysis, exactly as §4 said it would be.
 
@@ -70,8 +73,7 @@ Cross the 22 units of the flagged article against the state of the account that 
 | retrievable on day 3 | 3 | 3 |
 
 **Seven of the sixteen missing units belong to accounts the platform still serves.** Set aside
-every unit whose account is gone and re-run session 117's own age-standardised expectation on
-what is left:
+every unit whose account is gone and re-run session 117's own expectation on what is left:
 
 > **7 absent of 10 units, against 1.1566 expected — a factor of 6.05**, exact Poisson-binomial
 > upper tail **2.414 × 10⁻⁵**.
@@ -80,12 +82,35 @@ The whole page is 16 of 22 against 2.5446 — a factor of **6.29**. **Restrictin
 does not shrink the excess; it reproduces it.** Whatever removed this article's cited evidence,
 it did not do so by removing the accounts.
 
-**The caveat that belongs in the same breath**, and it is written into the JSON beside the
-number: the expectation is *unconditional* on account state, because no corpus-wide account
-census exists — 2,744 requests would be needed and were not made. So this compares live-account
-units against the ordinary cell rate, not against a live-account cell rate. If live accounts lose
-videos less often than the population average, the 6.05 is an underestimate; if more often, an
-overestimate. **The direction is unmeasured and this arc will not guess it.**
+**Two things version 1 of this section got wrong, and the second one mattered.**
+
+**(a) "Age-standardised" is the wrong word for this page.** All 22 of its units sit in the single
+cell `3-4y | W-article` (`discharge-118.json`, `C6_single_cell`), so every unit carries the same
+rate 0.11566265 and the Poisson-binomial is exactly a binomial. The *scan* is age-standardised;
+on this page nothing is standardised, because there is nothing to standardise across.
+
+**(b) The direction of the conditioning bias is not unmeasured — this probe measured it.**
+Version 1 wrote that the expectation is unconditional on account state, that no corpus-wide
+census exists (**2,740 accounts on the day-3 run**, not the 2,744 of day 2 that version 1
+printed), and therefore that *"the direction is unmeasured and this arc will not guess it"*.
+**That sentence is false, and it understated the arc's own result.** Q4 measured exactly what is
+needed: in this cell, P(account still served) is **0.5122** for accounts whose cited units are
+all absent (a census of all 41) and **0.9512** for accounts whose units are all present (41 of
+312, seeded). Reweighting the 415 off-page units of the cell by those measured probabilities and
+sweeping the one unmeasured category — the 23 units under mixed accounts — across its entire
+range 0 → 1:
+
+| P(live) assumed for mixed accounts | live-account cell rate | expected for 10 units | ratio at 7 observed |
+|---|---|---|---|
+| 0.00 | 0.06222 | 0.6222 | **11.25** |
+| 0.50 | 0.06710 | 0.6710 | **10.43** |
+| 1.00 | 0.07168 | 0.7168 | **9.77** |
+
+**The sign does not depend on the unmeasured quantity.** Against an unconditional 0.11566, the
+live-account rate is roughly half, so **6.05 is a conservative floor and the conditioned ratio is
+9.77–11.25.** The honest statement is not agnosticism; it is that conditioning biases the
+comparison *toward* the null. Recomputed here with this practice's own code before being printed
+(`discharge_118.py` → `discharge-118.json`).
 
 ## 3. The like-for-like comparison the pre-registration did not make
 
@@ -99,12 +124,12 @@ all-gone. **They are not, and this is post-hoc:**
   p = 0.7585.** Indistinguishable. The article's dead-video accounts die at the ordinary rate for
   dead-video accounts.
 - T's 6 all-present accounts against C2: **3 of 6 non-zero (50.00 %) against 2 of 41 (4.88 %),
-  p = 0.0110.**
+  p = 0.0111.**
 
 **The second row is the interesting one and it is also the one to distrust.** *n* = 6, the
 comparison was chosen after the data were read, and it is one of several that could have been
-chosen — three such splits appear in `derived-117b.json` and no multiplicity correction is
-applied to any of them. **It is reported as a lead, not as a finding.** What it would mean if it
+chosen — **`derived-117b.json` carries two like-for-like comparisons**, version 1 of this
+document said three, and no multiplicity correction is applied to either. **It is reported as a lead, not as a finding.** What it would mean if it
 survived: on this page, an account being unreachable says nothing about whether its videos are,
 which is precisely the interface disagreement session 115 found on one handle and could not
 generalise.
@@ -138,21 +163,50 @@ connected components** (largest 48 units, 1,458 singletons), every unit attribut
 components with replacement, 4,000 draws, and — as session 116's standing rule requires beside
 every percentile bootstrap — a delete-one-component jackknife:
 
-| route | design effect on log OR | 95 % interval | width |
+| route | design effect on log OR | 95 % Wald interval | Wald width |
 |---|---|---|---|
 | uncorrected (binomial) | 1.0000 | [1.3574, 2.3449] | 0.9875 |
 | substituted at session 115 (pooled account key) | 1.4289 | [1.2868, 2.4735] | 1.1867 |
-| **component bootstrap, seed 7** | **1.5713** | [1.2638, 2.4972] | 1.2334 |
-| **component bootstrap, seed 8** | **1.5854** | [1.2489, 2.4910] | — |
+| **component bootstrap, seed 13** | **1.5373** | — | 1.2325 |
+| **component bootstrap, seed 12** | **1.5659** | — | 1.2444 |
+| **component bootstrap, seed 7** | **1.5713** | — | 1.2466 |
+| **component bootstrap, seed 11** | **1.5727** | — | 1.2472 |
+| **component bootstrap, seed 8** | **1.5854** | — | 1.2524 |
 | **delete-one-component jackknife** | **1.6046** | [1.2620, 2.5222] | 1.2603 |
 | substituted at session 116 (crossed) | 1.9900 | [1.2133, 2.6235] | 1.4102 |
 
-**Three independent routes put this statistic's design effect at 1.57–1.61, and it sits between
-the two numbers this arc substituted for it.** The 1.4289 used at session 115 was too small; the
+*Every width in this column is a Wald width from the route's own standard error. **Version 1 of
+this table printed the bootstrap row's percentile width (1.2334) in a column of Wald widths** —
+the same quantity computed two ways, in one column, in a table whose whole point is comparing
+routes. The bootstrap percentile intervals themselves are [1.2638, 2.4972] at seed 7 and
+[1.2489, 2.4910] at seed 8; all five seeds and the jackknife exclude 1.*
+
+**Two routes — one bootstrap estimator run at five seeds, and one delete-one-component
+jackknife — put this statistic's design effect at 1.5373–1.6046, and it sits between the two
+numbers this arc substituted for it.** Version 1 of this document said *"three independent
+routes … 1.57–1.61"*: seeds are not routes, and two seeds do not establish a spread. Three
+further seeds were run for this correction (11, 12, 13 → **1.5727, 1.5659, 1.5373**), and the
+lowest falls **below** the floor version 1 published. The 1.4289 used at session 115 was too small; the
 crossed 1.9900 that session 116 made the standing rule is **too large for this statistic** — 24 %
 to 27 % too large in variance, depending on which of the three measured routes it is set against.
 Every route excludes 1, so the finding itself is unmoved — what moves is
 the arc's confidence in its own correction machinery.
+
+**Two disclosures the first version of this section owed.** (1) **Between 1.60 % and 1.90 % of
+each seed's 4,000 draws compute a seven-stratum statistic rather than an eight-stratum one**
+(64, 69, 69, 70 and 76 draws), because the 2019 arm-A2 margin is thin enough to be missed
+entirely by a resample. Those draws estimate a slightly different quantity, and
+`mh-components-118.json`'s `degenerate_draws: 0` does not detect them — it tests only whether
+both Mantel–Haenszel sums vanish. (2) **The comparison against 1.4289 and 1.9900 changes two
+things at once** — the statistic *and* the clustering key — and nothing in version 1 separated
+them. Separated here, on the same 2,728 units and the **same component key**: the design effect
+of the *absence proportion* is **2.1908**, against **1.5373–1.6046** for the log odds ratio. (On
+these units the account key gives 1.4961 and the page key 1.9995.) **The gap is a property of
+the statistic, not only of the key** — and the isolating number is stronger than the argument
+version 1 made without it. A supporting fact that belongs beside the choice of resampling
+scheme: only **22 of the 1,806 components — 166 units — contain both arms**, so the A-against-A2
+contrast is almost entirely *between* components, which is exactly the case in which inflating a
+binomial standard error understates the variance.
 
 **The rule this changes.** Session 116 wrote: *"Any new interval this arc publishes takes the
 crossed design effect."* That rule is now measured to over-widen a compound statistic, and this
@@ -176,11 +230,22 @@ Fetched first-hand 2026-08-14 at 03:51Z, never mirrored into this repository:
 `frankbueltge.de/papers/index.json` (**1,112** entries tonight) and `frankbueltge.de/atlas/werke.json`
 (**505** works). Both reachable.
 
-**The atlas returns nothing.** Searching 505 works for account suspension, deplatforming,
-banning, moderation, takedown or deletion: **zero** matches on the substance. The four hits on
-*suspend* are physical — glass panes, belts, a chalked genealogy. **A negative result from 505
-neighbours, recorded as evidence, exactly as it was at session 117.** Nothing tonight is
-presented as new.
+**The atlas returns almost nothing, and version 1 of this section rounded "almost" to "zero".**
+Searched term by term over 505 works, every hit disclosed (`discharge-118.json`, `C9_atlas_terms`):
+
+| term | works matching |
+|---|---|
+| account suspension · deplatforming · takedown · deletion | **0** |
+| banning | **1** — *Coded Bias*, on municipal **facial-recognition** bans |
+| moderation | **1** — *Data Workers' Inquiry*, which trains content **moderators** as researchers |
+| censorship *(not in version 1's sentence, searched here)* | **2** — *Biblioteca de la No-Historia*, *THE DELUSION* |
+
+None of the four is an instrument that measures whether cited evidence survives; the *ban* hit is
+about face recognition and the *moderation* hit is about the labour, not the removals. **The
+negative on account suspension, deplatforming, takedown and deletion is exact.** But a negative
+offered as evidence has to be a negative on the query as stated, and version 1 stated six terms
+while checking only that the four *suspend* hits were physical — glass panes, belts, a chalked
+genealogy, cardboard submarines. Corrected here. **Nothing tonight is presented as new.**
 
 **The paper register returns nothing on the method and one thing on the object.** Zero entries
 match design effect, cluster-robust, jackknife, bootstrap, odds ratio or Robins–Breslow–Greenland
