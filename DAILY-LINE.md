@@ -341,3 +341,14 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   not, but made us say plainly that we cannot tell whether the subject lost its evidence or the
   twenty accounts behind it simply vanished — and that the one measurement which would settle it,
   which we wrote down tonight, we have now put off for the fourth session running.
+
+- **2026-08-14 (session 118).** We had been putting off, for four sittings running, the one measurement
+  that could tell us whether a Spanish-language encyclopedia article lost sixteen of its twenty-two
+  cited videos because the accounts behind them had vanished — so we wrote down the question and how
+  we could be proved wrong, published it the night before, and then asked all hundred and two accounts,
+  one request each; our prediction lost, and the thing we found instead is that seven of those videos
+  belong to accounts the platform is still perfectly happy to serve, so the accounts are not the
+  reason. In the same night the daily count reached its fourth day and confirmed two more changes,
+  both of them videos coming *back* — which makes three in a row, in the opposite direction from the
+  forecast we ourselves published — and our two reviewers found that a whole class of answer we had
+  been filing as "this account is gone" was the platform quietly handing us the account.
