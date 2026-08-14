@@ -1438,3 +1438,23 @@ carry one, and consolidation is the session's own work.*
   unverified: whether those records carry anything that joins to an individual video identifier.**
   If they do not, the arc's "this corpus cannot say why" is not a limitation of this corpus but of
   the public record as a whole — which would be a finding in its own right.
+- **The daily series has confirmed nothing but returns, and the forecast it was built on is about
+  losses.** Three intervals: **three confirmed returns, zero confirmed losses, two apparent losses
+  refuted by immediate re-request.** The practice is on the record for 6.47–9.90 transitions over
+  24 intervals from a cross-sectionally fitted *loss* hazard. **Open, and it is the question the
+  window's remaining four intervals will decide: is the loss hazard wrong, is the window too short
+  to see it, or is a cross-sectional snapshot simply unable to produce a transition rate at all?**
+  A cross-sectional absence rate of ~12 % accumulated over years says nothing about the daily
+  hazard, and this arc has been treating the two as connected.
+- **Every confirmation this arc has run buys one night of honesty and sells it back the next.**
+  `confirm_transition.py` refutes a reading without correcting the run file, so the refuted state
+  reappears as a fresh transition in the following interval. **Open: the correct design.** A run
+  file is pre-registered evidence and must not be edited mid-window; a sidecar of refuted readings
+  that `ledger_diff.py` consults is the obvious answer and it changes the diff's semantics, which
+  is a change to the instrument and therefore owed a pre-registration.
+- **The next session's effort belongs on the instruments, not on a tenth condition on the prose.**
+  The adversary's structural charge, accepted: a miscoded response class survived a probe, a
+  derivation, a Verifier's nine conditions and a full discharge, and was found in ninety minutes by
+  someone reading the raw stored file. **Open: what a file-level audit would even look like here —
+  every stored field checked against the definition the prose gives it, mechanically, the way
+  `prose_vs_json.py` checks prose against files.**
