@@ -1,0 +1,56 @@
+
+INCREMENT-9.md: pass 1 — 57 numbers audited, 17 not found in any JSON of this draft
+  line   74           1.115   | **3 classes; 1 of them (205 records, 1.115 %) was decided by the absence of a bran
+  line  130  7368171405361351954   (`7368171405361351954`) failed all five re-requests at sessio
+  line  156  7368171405361351954   | `diff-baseline-day3` | 2 | **1** | `7368171405361351954` |
+  line  157  7016669364938149122   | `diff-baseline-day4` | 4 | **3** | `7016669364938149122` |
+  line  158  7368171405361351954   | `diff-day2-day3` | 1 | **0** | `7368171405361351954` |
+  line  268  7368171405361351954   sitions_total: 1`, its `detail` naming `7368171405361351954` — **the reading the same
+  line  288      2504.18140   of Findings* (`arXiv:2504.18140`), filed at this arc's own fan-out as a
+  line  315  7368171405361351954   two video identifiers `7368171405361351954` and `7016669364938149122`, which the t
+  line  315  7016669364938149122   identifiers `7368171405361351954` and `7016669364938149122`, which the tool reads as
+  line  317      2504.18140   lay-downstream-119.json`. One is `arXiv:2504.18140`, an
+  line  319           1.115   **1.115 %** is A3's 205 of 18,380 (1.11534 %) a
+  line  319         1.11534   **1.115 %** is A3's 205 of 18,380 (1.11534 %) and **0.69284 %** is the raw arm's 3
+  line  320    0.0069284066   (0.0069284066), both recomputed against the JSON toni
+  line  320         0.69282   tonight — and the second was printed as 0.69282
+  line  323         0.69282   must NOT match a live file.** `0.69282 %` appears twice and matches nothing, w
+  line  341           1.115   llthrough 163 records, 1.123 % | **205, 1.115 %** | consequence of the above |
+  line  349         0.69282   | the raw-arm rate 0.69282 % | **0.69284 %** | this session, re-ru
+INCREMENT-9.md: pass 2 — 34 claims whose FORM is the form all three published failures took; disposition each against its own table
+  line    4  [extremal claim: 'Every']  Zero requests of any instrument left this machine. Every byte read was already on disk.*
+  line   62  [count-out-of-total: 'one of the four']  > is built on), that A5 was blind to one of the four files it counted, and that A8 could
+  line   63  [extremal claim: 'every']  > contamination in one direction. All three are repaired below; every superseded figure 
+  line   72  [extremal claim: 'every'; count-out-of-total: '380 of 18']  | **A1** | every stored `state` recomputed from the raw fields beside it | **CLEAN** — 1
+  line   76  [count-out-of-total: '140 of 164']  | **A5** | a derived account reading against the raw evidence in the same record | **3 f
+  line   77  [extremal claim: 'every']  | **A6** | every summary block recomputed from its own file's rows | **CLEAN** — 6 files
+  line   86  [extremal claim: 'every']  corpus contains exactly **three** distinct raw signatures, and the third — 205 records, 
+  line   97  [extremal claim: 'every']  the control group of accounts whose every cited unit is absent. The pre-registered binar
+  line  104  [extremal claim: 'every']  Raised by A5 rather than by anyone's hypothesis: every account record stores a byte coun
+  line  108  [extremal claim: 'range']  in that gap**, and all three `10222` records land inside the served range.
+  line  120  [count-out-of-total: '135 of the 140']  135 of the 140 records the split coincides with `status_field == 0` by construction; the
+  line  144  [extremal claim: 'every']  **`ledger_diff.py --corrections`** applies the overlay and reports every row it used und
+  line  146  [extremal claim: 'every']  every transition, count and guard is identical to days 1–4 — **but the output is not
+  line  161  [extremal claim: 'every']  The diff list above is **derived, not typed** — every diff referencing a run file the ov
+  line  187  [extremal claim: 'upper']  **−0.0261 pp** on day 4 (17.7592 % → 17.7331 %); the loss-rate upper bound stays 0.25 %.
+  line  188  [extremal claim: 'every']  handle is in the account probe's population, so `20 / 41 / 312` and every figure of
+  line  192  [extremal claim: 'upper']  interval as **[0.08 %, 2.56 %]**. Under the overlay the upper bound is 2.56656 %, which 
+  line  212  [extremal claim: 'floor']  already gone wrong here. The list is a floor.
+  line  216  [extremal claim: 'every']  present-tense facts, every one found by a reviewer running this session's own code and n
+  line  219  [count-out-of-total: 'one of the four']  6. **A5 was blind on one of the four files it counted.** `account-route-body-inspection-
+  line  232  [extremal claim: 'every']  diff's *first* run and was structurally blind to every diff using it as the *second*. It
+  line  245  [count-out-of-total: '380 of 18']  otherwise notice — but "18,380 of 18,380 re-derive" is evidence that nothing was hand-ed
+  line  259  [count-out-of-total: 'Nine of nine']  **Nine of nine were caught by the check that should catch them** (`mutation-test-119.jso
+  line  260  [count-out-of-total: 'two of the nine']  two of the nine are the "different error of the same class" the adversary asked for. **W
+  line  294  [extremal claim: 'every']  **Before any document of this arc is committed, the instrument audit runs, and every fin
+  line  308  [extremal claim: 'every']  **And there is a recursion here that is worth naming rather than hiding:** every sentenc
+  line  319  [count-out-of-total: '205 of 18']  **1.115 %** is A3's 205 of 18,380 (1.11534 %) and **0.69284 %** is the raw arm's 3 of 43
+  line  326  [extremal claim: 'every']  **Pass 2: extremal claims, each checked against its own file.** The load-bearing ones: "
+  line  327  [count-out-of-total: '380 of 18']  stored state re-derives" is A1's 18,380 of 18,380; "exactly three distinct raw signature
+  line  328  [extremal claim: 'range']  class list; "all three `10222` records land inside the served range" is A9's `where_1022
+  line  329  [extremal claim: 'every'; count-out-of-total: 'nine of nine']  "nine of nine caught" is `mutation-test-119.json`; "every byte read was already on disk"
+  line  330  [extremal claim: 'none of']  `requests_made: 0` — none of tonight's scripts opens a socket except `neighbours_119.py`
+  line  335  [extremal claim: 'every']  ## Corrections after the gauntlet — every superseded figure
+  line  342  [count-out-of-total: '140 of 164']  | A5 "164 account records across four files" | **140 of 164 tested; 24 store no state fi
+
+7076 distinct numeric values across 111 JSON files. Unmatched is a WORKLIST, not a verdict — disposition each one in the record.

@@ -62,6 +62,11 @@ ledger = _load("ledger", "ledger.py")
 ledger_diff = _load("ledger_diff", "ledger_diff.py")
 
 RUN_GLOB = "ledger/run-*.json"
+# Session 119, after the gauntlet. `ledger/baseline-union.json` is a run-shaped file with 3,869
+# observations and is `run1` for two of the diffs this session is built on — and the glob above
+# never matched it, so four checks silently excluded the file the night's own story rests on.
+# Both reviewers found this independently.
+EXTRA_RUNS = ["ledger/baseline-union.json"]
 CONFIRM_GLOB = "ledger/transition-confirm-*.json"
 DIFF_GLOB = "ledger/diff-*.json"
 MANIFEST = "manifest-day2-onward.json"
@@ -72,7 +77,9 @@ CLASSIFIER_INPUTS = ("http", "parse_error")
 
 
 def runs():
-    return sorted(p for p in glob.glob(RUN_GLOB) if not p.endswith(".partial"))
+    found = [p for p in glob.glob(RUN_GLOB) if not p.endswith(".partial")]
+    found += [p for p in EXTRA_RUNS if os.path.exists(p) and p not in found]
+    return sorted(found)
 
 
 def signature(rec):
@@ -240,29 +247,72 @@ ACCOUNT_FILES = ["account-state-117b.json", "account-state-probe-114.json",
 # files: "nothing is read into it beyond 'the account object is not served'."
 NOT_SERVED_READING = "the account object is not served"
 
+# Session 119, after the gauntlet. The first version of A5 read exactly two field names and
+# therefore skipped `account-route-body-inspection-114.json` in silence, while still counting its
+# two records in the headline — that file stores the same quantities as `statusCode_field` (a
+# STRING) and `uniqueId_field`. The adversary demonstrated the miss by feeding the function a
+# record in that schema carrying the very contradiction A5 exists to find, and getting CLEAN.
+# The repair is not "add the two names": it is that an account-shaped record whose state field
+# this check cannot locate is REPORTED as unaudited instead of passing through as clean.
+STATE_KEYS = ("status_field", "statusCode_field", "statusCode", "status_code")
+HANDLE_KEYS = ("unique_id_returned", "uniqueId_field", "uniqueId", "unique_id")
+SERVED_MARKERS = ("userInfo", "uniqueId")
+
+
+def _state_field(rec):
+    """(value_as_int_or_None, key_used, raw_value). A string code is a code."""
+    for k in STATE_KEYS:
+        if k in rec:
+            v = rec[k]
+            if v is None:
+                return None, k, None
+            try:
+                return int(str(v).strip()), k, v
+            except ValueError:
+                return None, k, v
+    return None, None, None
+
+
+def _returned_handle(rec):
+    for k in HANDLE_KEYS:
+        if k in rec:
+            return rec[k], k
+    return None, None
+
 
 def a5_within_record_account():
     out = {"check": "A5 WITHIN-RECORD CONTRADICTION (account state)",
            "question": ("where a non-zero state field is read as %r, does the same record carry "
                         "evidence that it WAS served?" % NOT_SERVED_READING),
-           "files": [], "findings": [], "by_state_field": {}}
+           "files": [], "findings": [], "by_state_field": {}, "unaudited_records": []}
     for p in ACCOUNT_FILES:
         if not os.path.exists(p):
             out["files"].append({"path": p, "present": False})
             continue
         d = json.load(open(p))
         rows = d.get("results") or []
+        keys_used = sorted({_state_field(r)[1] for r in rows} | {_returned_handle(r)[1]
+                                                                 for r in rows} - {None})
+        unlocatable = [r for r in rows if _state_field(r)[1] is None]
+        for r in unlocatable:
+            out["unaudited_records"].append(
+                {"file": p, "handle": r.get("handle"),
+                 "reason": ("no state field found under any known name — this record was NOT "
+                            "tested for contradiction and is reported, not passed"),
+                 "keys_present": sorted(r.keys())})
         out["files"].append({"path": p, "present": True, "records": len(rows),
-                             "schema": d.get("schema")})
+                             "schema": d.get("schema"), "state_and_handle_keys_used": keys_used,
+                             "records_actually_tested": len(rows) - len(unlocatable)})
         for r in rows:
-            s = r.get("status_field")
+            s, s_key, s_raw = _state_field(r)
+            handle_returned, h_key = _returned_handle(r)
             m = r.get("markers") or {}
             key = f"{p} | status_field={s}"
             b = out["by_state_field"].setdefault(key, {
                 "n": 0, "with_returned_handle": 0, "with_userInfo_marker": 0,
                 "with_uniqueId_marker": 0, "bytes_min": None, "bytes_max": None})
             b["n"] += 1
-            if r.get("unique_id_returned") is not None:
+            if handle_returned is not None:
                 b["with_returned_handle"] += 1
             if m.get("userInfo"):
                 b["with_userInfo_marker"] += 1
@@ -275,8 +325,9 @@ def a5_within_record_account():
             # the contradiction: derived "not served", raw evidence of being served
             if s not in (None, 0):
                 evidence = []
-                if r.get("unique_id_returned") is not None:
-                    evidence.append(f'the page returned the handle {r["unique_id_returned"]!r}')
+                if handle_returned is not None:
+                    evidence.append(f"the page returned the handle {handle_returned!r} "
+                                    f"(field {h_key!r})")
                 if m.get("userInfo"):
                     evidence.append("the userInfo marker is present")
                 if m.get("uniqueId"):
@@ -284,14 +335,21 @@ def a5_within_record_account():
                 if evidence:
                     out["findings"].append({
                         "file": p, "handle": r.get("handle"), "group": r.get("group"),
-                        "status_field": s, "http": r.get("http"), "bytes": r.get("bytes"),
+                        "status_field": s, "state_field_key": s_key, "state_field_raw": s_raw,
+                        "http": r.get("http"), "bytes": r.get("bytes"),
                         "counted_as": NOT_SERVED_READING,
                         "contradicted_by": evidence,
                         "returned_handle_matches_requested":
-                            r.get("unique_id_returned") == r.get("handle")})
-    out["verdict"] = ("CLEAN" if not out["findings"] else
-                      f'{len(out["findings"])} records are read as "not served" while the same '
-                      f'record shows the account WAS served')
+                            handle_returned == r.get("handle")})
+    tested = sum(f.get("records_actually_tested", 0) for f in out["files"] if f.get("present"))
+    held = sum(f.get("records", 0) for f in out["files"] if f.get("present"))
+    out["records_held"], out["records_actually_tested"] = held, tested
+    out["verdict"] = (
+        (f'CLEAN over {tested} of {held} records' if not out["findings"] else
+         f'{len(out["findings"])} records are read as "not served" while the same record shows '
+         f'the account WAS served — over {tested} of {held} records')
+        + (f'; {len(out["unaudited_records"])} records could not be tested and are listed'
+           if out["unaudited_records"] else ""))
     return out
 
 
@@ -304,20 +362,40 @@ def a6_aggregate_vs_rows():
     for p in runs():
         d = json.load(open(p))
         obs = d["observations"]
-        rec = {}
-        for r in obs:
-            rec.setdefault(r["arm"], {}).setdefault(r["state"], 0)
-            rec[r["arm"]][r["state"]] += 1
-        if rec != d.get("counts"):
-            out["findings"].append({"file": p, "block": "counts",
-                                    "stored": d.get("counts"), "recomputed": rec})
-        if d.get("requested") != len(obs):
-            out["findings"].append({"file": p, "block": "requested",
-                                    "stored": d.get("requested"), "recomputed": len(obs)})
-        if d.get("stopped") is None and d.get("planned") != len(obs):
-            out["findings"].append({"file": p, "block": "planned vs observations",
-                                    "stored": d.get("planned"), "recomputed": len(obs)})
-        out["checked"].append({"file": p, "blocks": ["counts", "requested", "planned"]})
+        blocks = []
+        # a merged baseline carries no counts/requested/planned block; what it carries instead
+        # is a `components` manifest of the runs it was built from, and that is checkable
+        if "counts" in d:
+            rec = {}
+            for r in obs:
+                rec.setdefault(r["arm"], {}).setdefault(r["state"], 0)
+                rec[r["arm"]][r["state"]] += 1
+            blocks.append("counts")
+            if rec != d["counts"]:
+                out["findings"].append({"file": p, "block": "counts",
+                                        "stored": d["counts"], "recomputed": rec})
+        if "requested" in d:
+            blocks.append("requested")
+            if d["requested"] != len(obs):
+                out["findings"].append({"file": p, "block": "requested",
+                                        "stored": d["requested"], "recomputed": len(obs)})
+        if "planned" in d and d.get("stopped") is None:
+            blocks.append("planned")
+            if d["planned"] != len(obs):
+                out["findings"].append({"file": p, "block": "planned vs observations",
+                                        "stored": d["planned"], "recomputed": len(obs)})
+        if "components" in d:
+            blocks.append("components")
+            declared = sum(c.get("observations", 0) for c in d["components"])
+            by_src = {}
+            for r in obs:
+                by_src[r.get("baseline_from")] = by_src.get(r.get("baseline_from"), 0) + 1
+            if sum(by_src.values()) != len(obs):
+                out["findings"].append({"file": p, "block": "components",
+                                        "stored": declared, "recomputed": len(obs)})
+            out["component_provenance"] = {"file": p, "declared_total": declared,
+                                           "observations": len(obs), "by_source": by_src}
+        out["checked"].append({"file": p, "blocks": blocks})
 
     for p in ["account-state-117b.json"]:
         if not os.path.exists(p):
@@ -449,23 +527,44 @@ def a8_refuted_readings():
         entry = {"vid": r["vid"], "handle": r["handle"], "refuted_in": r["sidecar"],
                  "run_file": run2, "state_in_run_file": rec.get("state") if rec else None,
                  "state_five_re_requests_support": r["state_the_ledger_should_carry"],
-                 "uncorrected": still, "later_diffs_reporting_it_as_a_transition": []}
+                 "uncorrected": still, "diff_rows_touching_this_reading": []}
+        # Session 119, after the gauntlet. The first version matched `run1 == run_file` only, so
+        # it could see a refuted reading propagate FORWARD and was structurally blind to every
+        # diff that used the contaminated file as its SECOND run. Both reviewers found it
+        # independently, and the published table was right only because a second script carried
+        # a hand-written list of four diff names. The scan is now over every diff, in both
+        # roles, and every row is classified rather than counted.
         if still:
             for dp in sorted(glob.glob(DIFF_GLOB)):
                 dj = json.load(open(dp))
-                if dj.get("run1", {}).get("path") != run2:
+                r1 = dj.get("run1", {}).get("path")
+                r2 = dj.get("run2", {}).get("path")
+                if run2 not in (r1, r2):
                     continue
                 for t in dj.get("transitions") or []:
-                    if t["vid"] == r["vid"]:
-                        entry["later_diffs_reporting_it_as_a_transition"].append(
-                            {"diff": dp, "reported": f'{t["from"]} -> {t["to"]}'})
+                    if t["vid"] != r["vid"]:
+                        continue
+                    reporting = (dp == diff_path)
+                    entry["diff_rows_touching_this_reading"].append({
+                        "diff": dp,
+                        "contaminated_file_role": "run1" if run2 == r1 else "run2",
+                        "reported": f'{t["from"]} -> {t["to"]}',
+                        "kind": ("THE DIFF THAT REPORTED IT — the sidecar is its verdict; the "
+                                 "row is legitimate as a raw reading"
+                                 if reporting else
+                                 "CONTAMINATION — this diff counts a reading the arc had "
+                                 "already refuted, or its reversal, as a transition")})
         out["contaminated_diffs"].append(entry)
     n = sum(1 for e in out["contaminated_diffs"] if e["uncorrected"])
-    m = sum(len(e["later_diffs_reporting_it_as_a_transition"])
-            for e in out["contaminated_diffs"])
-    out["verdict"] = (f'{n} refuted readings still stand in run files; {m} later diff rows are '
-                      f'reversals of this arc\'s own refuted readings, not observations of the '
-                      f'platform' if n else "CLEAN")
+    rows = [row for e in out["contaminated_diffs"] for row in e["diff_rows_touching_this_reading"]]
+    bad = [row for row in rows if row["kind"].startswith("CONTAMINATION")]
+    out["n_diff_rows_touching_a_refuted_reading"] = len(rows)
+    out["n_contaminated_rows"] = len(bad)
+    out["contaminated_rows"] = bad
+    out["verdict"] = (f'{n} refuted readings still stand in run files; {len(rows)} diff rows '
+                      f'touch them, of which {len(bad)} are contamination — this arc\'s own '
+                      f'refuted readings, or their reversals, counted as transitions'
+                      if n else "CLEAN")
     return out
 
 
@@ -486,15 +585,16 @@ def a9_size_discriminator():
                         "marker-based reading of 10222 or with the pre-registered binary?"),
            "records": [], "per_file": {}}
     served, not_served = [], []
-    for p in ("account-state-117b.json", "account-state-probe-114.json"):
+    for p in ACCOUNT_FILES:
         if not os.path.exists(p):
             continue
         for r in json.load(open(p))["results"]:
-            s, by = r.get("status_field"), r.get("bytes")
+            s, _k, _raw = _state_field(r)
+            by = r.get("bytes")
             if s is None or by is None:
                 continue
             m = r.get("markers") or {}
-            evidence_of_service = (r.get("unique_id_returned") is not None
+            evidence_of_service = (_returned_handle(r)[0] is not None
                                    or bool(m.get("userInfo")) or bool(m.get("uniqueId")))
             (served if evidence_of_service else not_served).append((by, p, s, r.get("handle")))
             out["per_file"].setdefault(p, {"served": 0, "not_served": 0})

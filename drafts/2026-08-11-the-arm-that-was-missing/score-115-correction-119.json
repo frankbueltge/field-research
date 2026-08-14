@@ -1,0 +1,45 @@
+{
+ "schema": "field-research/dated-correction/1",
+ "session": 119,
+ "corrects": "score-115.json",
+ "corrects_field": "P1",
+ "generated_utc": "2026-08-14T21:16:37Z",
+ "requests_made": 0,
+ "found_by": "the adversary of session 119, reading the arc's own derived files rather than its prose",
+ "what_was_wrong": "P1 was scored with transitions_total = 1, and its detail block names 7368171405361351954 \u2014 a reading this arc's confirmation step refuted with five immediate re-requests and now records as an instrument artefact (ledger/corrections.json). The file has read as live since 2026-08-13.",
+ "as_published": {
+  "transitions_total": 1,
+  "verdict": "HOLDS",
+  "detail": [
+   {
+    "vid": "7368171405361351954",
+    "from": "RETRIEVABLE",
+    "to": "NOT-RETRIEVABLE",
+    "handle": "arutz_7",
+    "run1_http": 200,
+    "run2_http": 400
+   }
+  ]
+ },
+ "corrected": {
+  "transitions_total": 0,
+  "detail": [],
+  "dropped_as_refuted": [
+   {
+    "vid": "7368171405361351954",
+    "from": "RETRIEVABLE",
+    "to": "NOT-RETRIEVABLE",
+    "handle": "arutz_7",
+    "run1_http": 200,
+    "run2_http": 400
+   }
+  ],
+  "verdict": "HOLDS"
+ },
+ "does_the_verdict_move": {
+  "before": true,
+  "after": true,
+  "answer": "No. P1 predicted 0, 1 or 2 confirmed transitions, and 0 is inside that band exactly as 1 was. The verdict does not move; what was wrong is the evidence under it \u2014 the arc reported a confirmed transition it had itself refuted, and the interval it counted was empty."
+ },
+ "not_edited": "score-115.json is left exactly as session 115 wrote it. This correction is a new dated event beside it, per the practice's rule that a correction is never a silent patch."
+}

@@ -102,12 +102,28 @@ def build():
 
 
 def load(path=OUT):
-    """(run_file, vid) -> row, for the rows that actually carry a correction."""
+    """(run_file, vid) -> row, for the rows that actually carry a correction.
+
+    Session 119, after the gauntlet: the first version was a dict comprehension, so two sidecars
+    correcting the same (run file, identifier) would have silently kept the last one. Unexercised
+    today — the two rows are distinct — and it is exactly the class of silent-last-wins bug this
+    arc fixed in `cluster_keys.page_index()` at session 117. A collision now raises.
+    """
     try:
         d = json.load(open(path))
     except FileNotFoundError:
         return {}
-    return {(r["run_file"], r["vid"]): r for r in d["corrections"] if r.get("corrected_state")}
+    out = {}
+    for r in d["corrections"]:
+        if not r.get("corrected_state"):
+            continue
+        k = (r["run_file"], r["vid"])
+        if k in out and out[k]["corrected_state"] != r["corrected_state"]:
+            raise ValueError(f"two sidecars disagree about {k}: "
+                             f'{out[k]["corrected_state"]} vs {r["corrected_state"]} — '
+                             f"resolve it in the record, not by taking the last one")
+        out[k] = r
+    return out
 
 
 if __name__ == "__main__":

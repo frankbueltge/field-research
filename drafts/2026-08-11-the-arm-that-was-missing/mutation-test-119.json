@@ -1,7 +1,7 @@
 {
  "schema": "field-research/auditor-mutation-test/1",
  "session": 119,
- "generated_utc": "2026-08-14T20:59:58Z",
+ "generated_utc": "2026-08-14T21:17:04Z",
  "requests_made": 0,
  "method": "Each mutation is injected into a symlinked scratch copy of this draft and the auditor runs there unchanged. Nothing in the repository is modified.",
  "n_mutations": 9,

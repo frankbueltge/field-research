@@ -1,7 +1,7 @@
 {
  "schema": "field-research/overlay-downstream/1",
  "session": 119,
- "generated_utc": "2026-08-14T20:53:37Z",
+ "generated_utc": "2026-08-14T21:15:58Z",
  "requests_made": 0,
  "deff_used": 1.99,
  "absence_share": {
@@ -55,7 +55,24 @@
   }
  },
  "interval3_exposure": {
-  "raw": {
+  "raw_nothing_excluded": {
+   "determinate_in_both_excluding_B_truncated": 3540,
+   "absent_on_day3": 433,
+   "present_on_day3": 3107,
+   "confirmed_returns": 3,
+   "confirmed_losses": 0,
+   "return_rate_per_interval": 0.006928406466512702,
+   "return_rate_wilson_binomial": [
+    0.00235902426234485,
+    0.020169649753680692
+   ],
+   "return_rate_wilson_widened_at_crossed_deff": [
+    0.0016067092786877773,
+    0.029358168218062336
+   ],
+   "loss_rate_upper_widened": 0.0024543741827572083
+  },
+  "session_118_hand_exclusion": {
    "determinate_in_both_excluding_B_truncated": 3540,
    "absent_on_day3": 433,
    "present_on_day3": 3107,
@@ -72,7 +89,7 @@
    ],
    "loss_rate_upper_widened": 0.0024543741827572083
   },
-  "corrected": {
+  "overlay_by_rule": {
    "determinate_in_both_excluding_B_truncated": 3540,
    "absent_on_day3": 432,
    "present_on_day3": 3108,
@@ -88,7 +105,8 @@
     0.025665594702669717
    ],
    "loss_rate_upper_widened": 0.0024535864246608185
-  }
+  },
+  "validation": "the overlay reaches session 118's hand figure by rule (2 = 2 confirmed returns) while the untouched ledger says 3"
  },
  "diffs": [
   {
@@ -133,5 +151,11 @@
    "added": []
   }
  ],
- "what_moves": "Nothing this practice has published in prose. The two exposure denominators move by one unit each, the absence share by less than three hundredths of a percentage point, and no interval endpoint moves in the digits this arc prints. The finding is not the size of the movement; it is that two derived files carried a reading the arc had already refuted, and only the interval diffs were ever corrected by hand \u2014 the two baseline diffs never were."
+ "diff_list_derived_not_typed": [
+  "diff-baseline-day3",
+  "diff-baseline-day4",
+  "diff-day2-day3",
+  "diff-day3-day4"
+ ],
+ "what_moves": "Nothing this practice has published in prose. The two exposure denominators move by one unit each, the absence share by less than three hundredths of a percentage point, and only one printed interval endpoint moves at all (the widened upper bound, 2.56 % -> 2.57 %). The finding is not the size of the movement; it is that derived files carried a reading the arc had already refuted, and only the interval diffs were ever corrected by hand \u2014 the baseline diffs never were."
 }

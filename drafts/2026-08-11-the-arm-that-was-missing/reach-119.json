@@ -1,0 +1,450 @@
+{
+ "schema": "field-research/contamination-reach/1",
+ "session": 119,
+ "generated_utc": "2026-08-14T21:22:57Z",
+ "requests_made": 0,
+ "question": "condition 5 of INTERLOCUTOR-11.md \u2014 the completeness bound on how far the two refuted readings reached",
+ "contaminated_runs": [
+  "ledger/run-2026-08-13T0427Z.json",
+  "ledger/run-2026-08-14T0343Z.json"
+ ],
+ "refuted_identifiers": [
+  "7016669364938149122",
+  "7368171405361351954"
+ ],
+ "n_files_touching_either": 44,
+ "n_checked": 6,
+ "n_not_individually_checked": 38,
+ "files": [
+  {
+   "file": "CONDITIONS-DISCHARGED-117.md",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "DEVIATIONS.md",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "INCREMENT-5.md",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7368171405361351954"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "INCREMENT-8.md",
+   "names_a_contaminated_run": [
+    "run-2026-08-14T0343Z.json"
+   ],
+   "names_a_refuted_identifier": [
+    "7016669364938149122",
+    "7368171405361351954"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "INCREMENT-9.md",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7016669364938149122",
+    "7368171405361351954"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "INTERLOCUTOR-11.md",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7368171405361351954"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "INTERLOCUTOR-9.md",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "NEXT-SESSION.md",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json",
+    "run-2026-08-14T0343Z.json"
+   ],
+   "names_a_refuted_identifier": [
+    "7016669364938149122",
+    "7368171405361351954"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "PREREGISTRATION-116.md",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "PREREGISTRATION-117.md",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "PREREGISTRATION-117B-account-state.md",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "SPECIALIST-crossed-116.md",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "VERIFIER-119.md",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7016669364938149122",
+    "7368171405361351954"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "account-state-117b.json",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "census-results.json",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7016669364938149122"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "coloss-117.json",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "coloss-power-117.json",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "corpus-en.wikipedia.org.json",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7016669364938149122"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "corpus-he.wikipedia.org.json",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7016669364938149122"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "corpus-merged.json",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7016669364938149122"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "crossed-116.json",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "day4-118.json",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7016669364938149122",
+    "7368171405361351954"
+   ],
+   "checked": "session 118 excluded the echo by hand; reproduced as an arm tonight",
+   "status": "session 118 excluded the echo by hand; reproduced as an arm tonight"
+  },
+  {
+   "file": "derived-117b.json",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "discharge-116.json",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "discharge-117.json",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "ledger/baseline-union.json",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7016669364938149122",
+    "7368171405361351954"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "ledger/corrections.json",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json",
+    "run-2026-08-14T0343Z.json"
+   ],
+   "names_a_refuted_identifier": [
+    "7016669364938149122",
+    "7368171405361351954"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "ledger/diff-baseline-day3.json",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [
+    "7368171405361351954"
+   ],
+   "checked": "recomputed under the overlay (ledger/corrected/)",
+   "status": "recomputed under the overlay (ledger/corrected/)"
+  },
+  {
+   "file": "ledger/diff-baseline-day4.json",
+   "names_a_contaminated_run": [
+    "run-2026-08-14T0343Z.json"
+   ],
+   "names_a_refuted_identifier": [
+    "7016669364938149122"
+   ],
+   "checked": "recomputed under the overlay (ledger/corrected/)",
+   "status": "recomputed under the overlay (ledger/corrected/)"
+  },
+  {
+   "file": "ledger/diff-day2-day3.json",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [
+    "7368171405361351954"
+   ],
+   "checked": "recomputed under the overlay (ledger/corrected/)",
+   "status": "recomputed under the overlay (ledger/corrected/)"
+  },
+  {
+   "file": "ledger/diff-day3-day4.json",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json",
+    "run-2026-08-14T0343Z.json"
+   ],
+   "names_a_refuted_identifier": [
+    "7016669364938149122",
+    "7368171405361351954"
+   ],
+   "checked": "recomputed under the overlay (ledger/corrected/)",
+   "status": "recomputed under the overlay (ledger/corrected/)"
+  },
+  {
+   "file": "ledger/manifest-2026-08-12.json",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7016669364938149122",
+    "7368171405361351954"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "ledger/run-2026-08-11T1124Z.json",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7016669364938149122"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "ledger/run-2026-08-12T0341Z.json",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7016669364938149122",
+    "7368171405361351954"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "ledger/run-2026-08-13T0427Z.json",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7016669364938149122",
+    "7368171405361351954"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "ledger/run-2026-08-14T0343Z.json",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7016669364938149122",
+    "7368171405361351954"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "ledger/transition-confirm-2026-08-13.json",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7368171405361351954"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "ledger/transition-confirm-2026-08-14.json",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7016669364938149122",
+    "7368171405361351954"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "manifest-day2-onward.json",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7016669364938149122",
+    "7368171405361351954"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "manifest-run2.json",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7016669364938149122"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "multipage-116.json",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "score-115-correction-119.json",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7368171405361351954"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  },
+  {
+   "file": "score-115.json",
+   "names_a_contaminated_run": [
+    "run-2026-08-13T0427Z.json"
+   ],
+   "names_a_refuted_identifier": [
+    "7368171405361351954"
+   ],
+   "checked": "dated correction written tonight (score-115-correction-119.json)",
+   "status": "dated correction written tonight (score-115-correction-119.json)"
+  },
+  {
+   "file": "timestamp-validation.json",
+   "names_a_contaminated_run": [],
+   "names_a_refuted_identifier": [
+    "7016669364938149122"
+   ],
+   "checked": null,
+   "status": "NOT INDIVIDUALLY CHECKED"
+  }
+ ],
+ "what_this_bound_is": "An UPPER bound and a coarse one. Naming a contaminated run file does not mean a file's numbers include the refuted unit \u2014 most of these are aggregate statistics over thousands of units where one unit moves nothing visible, and two are this session's own records of the problem. What the bound rules out is the claim that the reach was surveyed: before tonight it was not."
+}

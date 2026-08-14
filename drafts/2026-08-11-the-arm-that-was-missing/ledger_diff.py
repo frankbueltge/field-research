@@ -20,8 +20,12 @@ Session 119, DEVIATION D23 — BOOKKEEPING ONLY, no probe and no archived run fi
 `--corrections [path]` applies the overlay of `corrections.py`: a state that this arc's own
 confirmation step refuted with five immediate re-requests is read as the state those
 re-requests support, and **every application is reported in the output** under
-`corrections_applied`, so a corrected diff can never be mistaken for a raw one. Without the
-flag this file behaves exactly as it did through days 1–4. Why it exists: `confirm_transition.py`
+`corrections_applied`, so a corrected diff can never be mistaken for a raw one. **Without the
+flag every transition, count and guard is identical to days 1–4 — but the output is not
+byte-identical: it gains a `corrections_applied: {overlay: null, n: 0}` block, which is the point
+(a diff file now always says on its face whether an overlay was read).** The session-119 draft
+claimed "behaves exactly as it did" and a reviewer diffed the two outputs and found the added
+block; the claim is corrected here rather than in a footnote. Why it exists: `confirm_transition.py`
 never touched the ledger, so a refuted reading stayed in the run file and the next interval
 reported its reversal as a fresh transition (session 118, `arutz_7`; `audit_instrument.py` A8).
 """

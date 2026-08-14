@@ -11,8 +11,12 @@ one, because a correction computed with new code is a second chance to be wrong.
 
 No requests. Reads files already on disk.
 """
+import glob
 import importlib.util
 import json
+import os
+import subprocess
+import sys
 import time
 
 import corrections as corrections_mod
@@ -30,7 +34,17 @@ wilson, DEFF = d4.wilson, d4.DEFF
 
 DAY3 = "ledger/run-2026-08-13T0427Z.json"
 DAY4 = "ledger/run-2026-08-14T0343Z.json"
-ECHOES = {"7368171405361351954"}   # session 118 excluded this by hand; the overlay does it by rule
+
+# Session 119, after the gauntlet. THE FIRST VERSION OF THIS FILE APPLIED THE HAND-EXCLUSION TO
+# THE RAW ARM AS WELL, and so compared a laundered baseline against the overlay and called the
+# match a validation. The adversary caught it and recomputed the honest raw figure. Three arms
+# are now computed and all three are published:
+#   raw          — the ledger exactly as it stands, no exclusion of any kind: 3 returns
+#   hand         — session 118's manual exclusion of the echo, reproduced: 2 returns
+#   overlay      — the same exclusion reached by rule from the sidecars: 2 returns
+# The validation is that `overlay` equals `hand` while `raw` differs from both. Stated that way
+# it is a real check; stated the old way it was a tautology.
+HAND_EXCLUSION = {"7368171405361351954"}   # what session 118 did by hand, reproduced as itself
 
 
 def states(path, overlay):
@@ -53,8 +67,12 @@ def absence(path, overlay):
             "share": nr / len(det), "overlay_rows_applied": applied}
 
 
-def exposure(overlay):
-    """Interval 3 exposure, rebuilt exactly as `day4_118.py` builds it."""
+def exposure(overlay, hand_exclusion=frozenset()):
+    """Interval 3 exposure, rebuilt exactly as `day4_118.py` builds it.
+
+    `hand_exclusion` is session 118's manual echo list and is passed EXPLICITLY, so the raw arm
+    can be computed with nothing excluded at all.
+    """
     s3, a3, _ = states(DAY3, overlay)
     s4, _, _ = states(DAY4, overlay)
     det = [v for v in s3
@@ -63,7 +81,7 @@ def exposure(overlay):
            and a3.get(v) != "B-truncated"]
     absent3 = [v for v in det if s3[v] == "NOT-RETRIEVABLE"]
     present3 = [v for v in det if s3[v] == "RETRIEVABLE"]
-    ret = sum(1 for v in absent3 if s4[v] == "RETRIEVABLE" and v not in ECHOES)
+    ret = sum(1 for v in absent3 if s4[v] == "RETRIEVABLE" and v not in hand_exclusion)
     return {"determinate_in_both_excluding_B_truncated": len(det),
             "absent_on_day3": len(absent3), "present_on_day3": len(present3),
             "confirmed_returns": ret, "confirmed_losses": 0,
@@ -79,12 +97,29 @@ def main():
     for p in (DAY3, DAY4):
         raw[p] = absence(p, {})
         cor[p] = absence(p, overlay)
-    ex_raw, ex_cor = exposure({}), exposure(overlay)
+    ex_raw = exposure({})                                  # nothing excluded at all
+    ex_hand = exposure({}, HAND_EXCLUSION)                  # session 118's manual exclusion
+    ex_cor = exposure(overlay)                              # the same thing reached by rule
+
+    # The diff list is DERIVED, not typed: every diff that references a run file the overlay
+    # touches. The first version carried a hand-written tuple of four names, which both reviewers
+    # named as the reason a check with a directional blind spot still produced a correct table.
+    touched = {rf for rf, _vid in overlay}
+    names = []
+    for p in sorted(glob.glob("ledger/diff-*.json")):
+        dj = json.load(open(p))
+        if dj.get("run1", {}).get("path") in touched or dj.get("run2", {}).get("path") in touched:
+            names.append(os.path.splitext(os.path.basename(p))[0])
 
     diffs = []
-    for name in ("diff-baseline-day3", "diff-baseline-day4", "diff-day2-day3", "diff-day3-day4"):
+    for name in names:
         a = json.load(open(f"ledger/{name}.json"))
-        b = json.load(open(f"ledger/corrected/{name}.json"))
+        cpath = f"ledger/corrected/{name}.json"
+        if not os.path.exists(cpath):
+            subprocess.run([sys.executable, "ledger_diff.py", a["run1"]["path"],
+                            a["run2"]["path"], cpath, "--corrections"],
+                           check=True, capture_output=True)
+        b = json.load(open(cpath))
         diffs.append({"diff": name, "transitions_raw": a["n_transitions"],
                       "transitions_corrected": b["n_transitions"],
                       "overlay_rows_used": b["corrections_applied"]["n"],
@@ -101,15 +136,24 @@ def main():
         "absence_share": {"raw": raw, "corrected": cor,
                           "delta_pp": {p: 100 * (cor[p]["share"] - raw[p]["share"])
                                        for p in raw}},
-        "interval3_exposure": {"raw": ex_raw, "corrected": ex_cor},
+        "interval3_exposure": {"raw_nothing_excluded": ex_raw,
+                               "session_118_hand_exclusion": ex_hand,
+                               "overlay_by_rule": ex_cor,
+                               "validation": ("the overlay reaches session 118's hand figure by "
+                                              "rule (%d = %d confirmed returns) while the "
+                                              "untouched ledger says %d"
+                                              % (ex_cor["confirmed_returns"],
+                                                 ex_hand["confirmed_returns"],
+                                                 ex_raw["confirmed_returns"]))},
         "diffs": diffs,
+        "diff_list_derived_not_typed": names,
         "what_moves": ("Nothing this practice has published in prose. The two exposure "
                        "denominators move by one unit each, the absence share by less than "
-                       "three hundredths of a percentage point, and no interval endpoint moves "
-                       "in the digits this arc prints. The finding is not the size of the "
-                       "movement; it is that two derived files carried a reading the arc had "
-                       "already refuted, and only the interval diffs were ever corrected by "
-                       "hand — the two baseline diffs never were."),
+                       "three hundredths of a percentage point, and only one printed interval "
+                       "endpoint moves at all (the widened upper bound, 2.56 % -> 2.57 %). The "
+                       "finding is not the size of the movement; it is that derived files "
+                       "carried a reading the arc had already refuted, and only the interval "
+                       "diffs were ever corrected by hand — the baseline diffs never were."),
     }
     json.dump(out, open("overlay-downstream-119.json", "w"), indent=1)
     print(json.dumps(out, indent=1))
