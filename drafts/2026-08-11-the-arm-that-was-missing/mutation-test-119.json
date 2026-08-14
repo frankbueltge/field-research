@@ -1,0 +1,176 @@
+{
+ "schema": "field-research/auditor-mutation-test/1",
+ "session": 119,
+ "generated_utc": "2026-08-14T20:59:58Z",
+ "requests_made": 0,
+ "method": "Each mutation is injected into a symlinked scratch copy of this draft and the auditor runs there unchanged. Nothing in the repository is modified.",
+ "n_mutations": 9,
+ "caught_by_the_expected_check": 9,
+ "missed": [],
+ "results": [
+  {
+   "mutation": "m_state_flip",
+   "description": "a stored state flipped, with the file's own aggregate kept consistent",
+   "expected_check": "A1",
+   "checks_that_moved": [
+    "A1",
+    "A4"
+   ],
+   "caught": true,
+   "caught_by_something_else": false,
+   "counts": {
+    "A1": {
+     "clean": 0,
+     "mutated": 1
+    },
+    "A4": {
+     "clean": 0,
+     "mutated": 1
+    }
+   }
+  },
+  {
+   "mutation": "m_new_http_class",
+   "description": "a response class the classifier has no branch for (HTTP 403)",
+   "expected_check": "A3",
+   "checks_that_moved": [
+    "A3"
+   ],
+   "caught": true,
+   "caught_by_something_else": false,
+   "counts": {
+    "A3": {
+     "clean": 3,
+     "mutated": 4
+    }
+   }
+  },
+  {
+   "mutation": "m_retrievable_without_evidence",
+   "description": "a RETRIEVABLE record with no returned handle in it",
+   "expected_check": "A4",
+   "checks_that_moved": [
+    "A3",
+    "A4"
+   ],
+   "caught": true,
+   "caught_by_something_else": false,
+   "counts": {
+    "A3": {
+     "clean": 3,
+     "mutated": 4
+    },
+    "A4": {
+     "clean": 0,
+     "mutated": 1
+    }
+   }
+  },
+  {
+   "mutation": "m_account_unknown_code",
+   "description": "an unseen non-zero account code that still returns the user object",
+   "expected_check": "A5",
+   "checks_that_moved": [
+    "A5"
+   ],
+   "caught": true,
+   "caught_by_something_else": false,
+   "counts": {
+    "A5": {
+     "clean": 3,
+     "mutated": 4
+    }
+   }
+  },
+  {
+   "mutation": "m_account_marker_only",
+   "description": "an account read as 'not served' whose page carries the user-object markers",
+   "expected_check": "A5",
+   "checks_that_moved": [
+    "A5"
+   ],
+   "caught": true,
+   "caught_by_something_else": false,
+   "counts": {
+    "A5": {
+     "clean": 3,
+     "mutated": 4
+    }
+   }
+  },
+  {
+   "mutation": "m_duplicate_unit",
+   "description": "the same identifier probed twice in one run",
+   "expected_check": "A7",
+   "checks_that_moved": [
+    "A6",
+    "A7"
+   ],
+   "caught": true,
+   "caught_by_something_else": false,
+   "counts": {
+    "A6": {
+     "clean": 0,
+     "mutated": 1
+    },
+    "A7": {
+     "clean": 0,
+     "mutated": 1
+    }
+   }
+  },
+  {
+   "mutation": "m_aggregate_drift",
+   "description": "a summary block that no longer follows from the rows",
+   "expected_check": "A6",
+   "checks_that_moved": [
+    "A6"
+   ],
+   "caught": true,
+   "caught_by_something_else": false,
+   "counts": {
+    "A6": {
+     "clean": 0,
+     "mutated": 1
+    }
+   }
+  },
+  {
+   "mutation": "m_alien_unit",
+   "description": "an observation of a unit that is not in the manifest",
+   "expected_check": "A7",
+   "checks_that_moved": [
+    "A6",
+    "A7"
+   ],
+   "caught": true,
+   "caught_by_something_else": false,
+   "counts": {
+    "A6": {
+     "clean": 0,
+     "mutated": 1
+    },
+    "A7": {
+     "clean": 0,
+     "mutated": 1
+    }
+   }
+  },
+  {
+   "mutation": "m_handle_drift",
+   "description": "the same identifier probed under a different handle than on other days",
+   "expected_check": "A7",
+   "checks_that_moved": [
+    "A7"
+   ],
+   "caught": true,
+   "caught_by_something_else": false,
+   "counts": {
+    "A7": {
+     "clean": 0,
+     "mutated": 1
+    }
+   }
+  }
+ ]
+}
