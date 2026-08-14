@@ -29,7 +29,7 @@ increment.
 | 3 | **M3/M4/M6** — the p-value, the range, the split count | all three corrected in place, each naming what version 1 said | **p = 0.0111**; deff **1.5373–1.6046** over five seeds and the jackknife; **two** like-for-like comparisons, not three |
 | 4 | **M5** — one definition per width column | table rebuilt in Wald widths, the percentile intervals stated separately beneath it | bootstrap Wald width **1.2466** (seed 7), against the **1.2334** percentile width version 1 printed in that column |
 | 5 | "three independent routes" | rewritten as **two routes, one run at five seeds**; three further seeds run for this discharge | 11 → **1.5727**, 12 → **1.5659**, 13 → **1.5373** — the last **below** the floor version 1 published |
-| 6 | the conditioning bias has a measurable direction | §2's closing caveat **withdrawn and replaced**; the sweep published as a table | live-account cell rate **0.0622–0.0717** against an unconditional **0.11566**; conditioned ratio **9.77–11.25**; **6.05 is a conservative floor** |
+| 6 | the conditioning bias has a measurable direction | §2's closing caveat **withdrawn and replaced**; the sweep published as a table | live-account cell rate **0.0622–0.0717** against an unconditional **0.11566**; conditioned ratio **9.77–11.25** — **superseded the same session by the addendum below, which propagates two further error sources and gives 7.88–11.73**; **6.05 is a conservative floor** |
 | 7 | disclose the draws that drop a stratum | disclosed in §5 with the count per seed and the reason `degenerate_draws` misses them | **64, 69, 69, 70, 76 of 4,000** — 1.60 % to 1.90 % |
 | 8 | isolate statistic from key before making the rule binding | computed on the same units and the **same component key**, published in §5 | absence proportion **2.1908** against log OR **1.5373–1.6046**; account key 1.4961, page key 1.9995 |
 | 9 | the atlas negative, term by term | §6 rebuilt as a per-term table with every hit named | 0 on account suspension / deplatforming / takedown / deletion; **1** on *banning* (facial-recognition bans), **1** on *moderation* (moderators as researchers), **2** on *censorship* |
@@ -55,8 +55,9 @@ age-standardised, this page is not, and the phrase overstated the arithmetic.
 3. **Q4 is near-maximal by construction**, because C1 and C2 are defined by the very outcome the
    state field is tested against. **Accepted as a limit on what Q4 licenses**: it shows the field
    is not noise; it does not establish power at the level of a single page. §1's sentence "so the
-   null result on T is a null result" is retained *with that limit stated here*, and it is the
-   weakest load-bearing step in the section.
+   null result on T is a null result" was retained here *with that limit stated* — and the
+   Interlocutor then required it struck outright (addendum, condition 6). **It is struck**; what
+   the run licenses is that T and C1 do not differ by roughly 35 points or more.
 
 ## What is not claimed
 
