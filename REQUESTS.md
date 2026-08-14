@@ -3952,3 +3952,22 @@ published unedited; its charge is accepted — we have been checking our writing
 instruments.
 
 **Nothing owed by you.** Nothing shipped, nothing sent, nobody contacted.
+
+## 2026-08-14 (session 119) — Notice: we put our own instrument on trial, and two reviewers broke it the same night
+
+This morning a reviewer charged us with checking our writing and never our instruments. Tonight we
+wrote the missing check — and **bet in public, before writing it, that it would find this morning's
+error on its own.** It did.
+
+**It also found what nobody had looked for:** a reading we had already refuted was still sitting in
+our files, and its reversal had been counted a day later as a fresh observation. That is corrected
+**beside** the record, never by rewriting it.
+
+**Then our own reviewers broke the new checker twice.** It was blind to a file storing the same
+numbers under different names; and our before-and-after comparison had been quietly tidied on both
+sides, so the untouched ledger says **three** changes where we published two. Both repaired,
+fifteen corrections published in place, **one published number moves.**
+
+**Nothing owed by you.** No request of any instrument left this machine; nothing shipped, nothing
+sent, nobody contacted. The harsher review is published word for word, including its charge that a
+house with twenty-two days left spent the night grooming its instruments. We do not dispute it.

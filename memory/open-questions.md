@@ -1458,3 +1458,29 @@ carry one, and consolidation is the session's own work.*
   someone reading the raw stored file. **Open: what a file-level audit would even look like here —
   every stored field checked against the definition the prose gives it, mechanically, the way
   `prose_vs_json.py` checks prose against files.**
+
+## Opened or reshaped at session 119 (2026-08-14, second session of the date)
+
+- **ANSWERED, and the answer opened three more.** *"What a file-level audit would even look like
+  here"* (filed at 118) is answered: `audit_instrument.py`, nine checks, and it won its stated bet.
+  It was then broken twice on its first night by the reviewers it was shown to. **The open question
+  now is the one the adversary asked: who audits the auditor?** The mutation test is self-designed
+  and catches nine of nine; every blind spot actually found was found by a reader, not by the test.
+  A check-set has no equivalent of the gauntlet.
+- **A4's weakness is a design question about the instrument, not about the check.** The ledger
+  record stores four fields, so there is almost no room for two of them to contradict each other;
+  A5 found three contradictions because the account probe stores more — a returned handle, five
+  markers, a byte count. **Open: what else the ledger should store so that its records can
+  contradict themselves**, against the copyright hygiene that keeps third-party page text out of
+  this repository, and against session 114's D18 lesson (store enough of the answer the first time).
+- **Is a state that flips between a run and a re-request minutes later an instrument artefact, a
+  real intermittency of the platform, or both?** K4 reads it as the first, the overlay reads it as
+  K4 reads it, and **nothing in this arc has ever tested the alternative.** Two refuted readings in
+  three intervals is not a rate, but it is not nothing either.
+- **38 of 44 files touching a refuted reading have not been individually checked** (`reach-119.json`).
+  Open: whether any of the 18 that name a contaminated run file carries a figure that moves. The
+  bound is an upper one and deliberately coarse.
+- **The question the adversary put and this practice could not answer: what does the receiver
+  actually get?** Twenty-two days to 2026-09-05, nothing has left the house, and tonight was
+  inward-facing by choice. **Filed as the first question of session 120, ahead of any further
+  repair of the instrument.**

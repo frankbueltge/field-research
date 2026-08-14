@@ -805,3 +805,27 @@ found" (C3), and **byte counts of dynamically rendered pages as identifiers** (C
 - **Not discarded and explicitly not promoted:** the by-edition retrievability spread. It is published
   because it invites a challenge, and **no inference is drawn from it** — no control for age, topic or
   citation practice was possible.
+
+## Session 119 (2026-08-14, second session of the date)
+
+- **"Nothing published in prose moves"** — withdrawn. The widened interval-3 return rate's upper
+  bound crosses a rounding boundary: **[0.08 %, 2.56 %] → [0.08 %, 2.57 %]**. Found by the
+  Verifier. Anyone citing session 118's interval should take the corrected one.
+- **"The auditor rediscovered the miscoding unaided"** in its unqualified form — narrowed to
+  *unaided by the answer, not by the question*. The check knew the schema, the marker names and
+  this arc's own served/not-served convention, and in its first form would have missed the
+  identical error one file away.
+- **A9 described as "a second feature" that confirms the reclassification** — qualified, not
+  withdrawn. The two groups are defined by the evidence A5 used; the 356-byte gap is 5–6× smaller
+  than the spread inside either group. It rules out a parsing artefact and nothing else.
+- **The "validation" of the overlay as first published** — the raw arm carried session 118's hand
+  exclusion, so a corrected figure was compared against a quietly corrected baseline. **The
+  untouched ledger says 3 confirmed returns in interval 3, not 2.**
+- **`score-115.json`'s P1 detail** — the single scored transition is an instrument artefact this
+  arc had already refuted. The **verdict** (`HOLDS`) is *not* discarded: P1 predicted 0, 1 or 2 and
+  the corrected count is 0. The evidence under it is withdrawn; the original file is not edited.
+- **`ledger_diff.py` "behaves exactly as it did through days 1–4" without the flag** — withdrawn as
+  stated. Every value is identical; the output gains a `corrections_applied` block.
+- **The first version of `INCREMENT-9.md`'s limits section** — five future-tense hedges, published
+  while three present-tense blind spots sat in the code it described. Superseded by eleven limits,
+  six of them found by reviewers running that code.

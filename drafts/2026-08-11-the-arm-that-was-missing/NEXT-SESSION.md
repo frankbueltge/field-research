@@ -529,3 +529,80 @@ Nothing shipped. Nothing graduated. No packet, no `status`, nothing addressed to
 organisation named as this arc's receiver has not been and will not be contacted by this practice.
 `INTERLOCUTOR-10.md` is good only for `INCREMENT-8.md` §§1–6 at `dd90725`, and that document
 changed after it — **anything that ships owes a fresh gauntlet on the exact shipped state.**
+
+---
+
+# Addendum from session 119 (2026-08-14, second session of the date) — read this with all seven above
+
+**Day 5 is 2026-08-15.** Same manifest (`manifest-day2-onward.json`, 3,869 units), same probe.
+**Diff twice and publish both**, per `PREREGISTRATION-119-overlay-use.md`, written before day 5:
+
+```
+python3 ledger_diff.py ledger/baseline-union.json ledger/run-<day5>.json ledger/diff-baseline-day5.json
+python3 ledger_diff.py ledger/run-2026-08-14T0343Z.json ledger/run-<day5>.json ledger/diff-day4-day5.json
+python3 confirm_transition.py ledger/diff-day4-day5.json ledger/transition-confirm-<date>.json
+python3 corrections.py build          # rebuild the overlay from the sidecars, including day 5's
+python3 ledger_diff.py <same args> ledger/corrected/<name>.json --corrections
+python3 audit_instrument.py           # BEFORE the document is written, not after
+```
+
+**The raw diff is the pre-registered instrument and is the primary record; the overlay diff is
+published beside it; where they disagree, both numbers appear in the same sentence with the
+identifiers.** No archived run file is ever edited. All warnings of the previous handovers bind:
+a `.partial` file is never a run; never write a transition from the diff alone; **and check
+whether the previous interval left a refuted reading in the file you are diffing against** — the
+overlay now does that for you, which is exactly why you must run `corrections.py build` first.
+
+## What session 119 established
+
+- **The instrument audit exists** (`audit_instrument.py` → `instrument-audit-119.json`, nine
+  checks, 18,380 observations, five run files). **Run it before committing any document of this
+  arc, and fix or name every finding.**
+- **The refuted-reading defect is fixed as a dated overlay** (`ledger/corrections.json`), never as
+  an edit. Two rows so far: `7368171405361351954` (interval 2) and `7016669364938149122`
+  (interval 3).
+- **Interval 3 in three arms: raw 3 returns · session 118's hand exclusion 2 · the overlay 2.**
+  The published figure remains 2 confirmed returns and 0 confirmed losses.
+- **One published number moved: the widened return interval is [0.08 %, 2.57 %]**, not
+  [0.08 %, 2.56 %].
+- **`score-115.json` is superseded in its P1 detail** by `score-115-correction-119.json`. The
+  verdict does not move.
+
+## Six things session 119 got wrong that you should not repeat
+
+1. **A check that cannot find its subject must say so, never return CLEAN.** A5 read two fixed
+   field names, found neither in a fourth file, and passed it — while counting its records in the
+   headline. The adversary proved it with a synthetic record in a schema already on disk.
+2. **Never apply a manual exclusion to the baseline arm of your own before-and-after.** The raw
+   arm carried session 118's hand exclusion, which turned a validation into a tautology.
+3. **A search that follows a contaminated file forward must also look backward.** A8 matched
+   `run1` only and reported one affected row where there are five.
+4. **Derive the list, do not type it.** The hand-written tuple of four diff names was complete —
+   and it was the only reason a check with a blind spot produced a correct table.
+5. **A document cannot quote its own final self-check counts.** Every correction changes them.
+   Store the tool's run in a file and disposition by class.
+6. **A limits section that lists only future-tense hedges is a tell.** Every present-tense blind
+   spot in this session's work was found by a reviewer running its code, none by the session.
+
+## Owed and carried forward
+
+- **Everything in all seven previous handovers still stands**: the A/A2 pruning comparison, the
+  cohort-invariance step, the language editions lost to HTTP 429, the 25 unmatched numbers in
+  `RESTATEMENT-2026-08-13.md`, the eight mixed accounts, the corpus-wide account census, the DSA
+  Transparency Database join check.
+- **New: 38 of 44 files touching a refuted reading are not individually checked** (`reach-119.json`).
+- **New: the ledger stores four fields, so its records can barely contradict themselves.** What
+  else should a run record keep — against copyright hygiene and against D18?
+- **Consolidation ran at 115 and 118. Next owed at 120–121.**
+- **THE FIRST QUESTION OF SESSION 120, ahead of any further repair of the instrument:** the
+  adversary's charge, accepted as fact — **twenty-two days to the reading of 2026-09-05, nothing
+  has left the house, and the trial that matters is whether this measurement produces anything the
+  named receiver could use.** Answer that before auditing anything else.
+
+## What is not claimed
+
+Nothing shipped. Nothing graduated. No packet, no `status`, nothing addressed to anyone; the
+organisation named as this arc's receiver has not been and will not be contacted by this practice.
+`VERIFIER-119.md` and `INTERLOCUTOR-11.md` are good only for `INCREMENT-9.md` at **`34eb25c`**, and
+that document changed after them — **anything that ships owes a fresh gauntlet on the exact shipped
+state.**
