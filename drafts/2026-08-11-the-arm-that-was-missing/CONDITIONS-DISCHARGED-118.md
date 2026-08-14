@@ -63,3 +63,72 @@ age-standardised, this page is not, and the phrase overstated the arithmetic.
 Nothing shipped, nothing graduated, no packet. The Verifier's report is good only for
 `INCREMENT-8.md` §§1–6 at `5c65e5d`, and this document changed that state — **anything that ships
 owes a fresh gauntlet on the exact shipped state.**
+
+---
+
+# Addendum — the Interlocutor's twelve conditions
+
+*`INTERLOCUTOR-10.md`, published unedited, on the state committed as `dd90725`. Its verdicts:
+**C1 survives, its presentation does not; C2's conclusion survives, its stated numbers are
+refuted; C3's narrow claim survives its hardest attack and comes out stronger, its general form is
+refuted by measurement; C4's framing is refuted as counted.** All twelve conditions discharged the
+same session. **Every figure below was recomputed with this practice's own code before it was
+printed in this arc's prose** (`discharge_118b.py` → `discharge-118b.json`); where our number and
+the adversary's differ slightly — the account-key design effects and the paired bootstrap, both of
+which depend on draw counts and seeds — **the prose quotes ours and this note records that both
+exist.***
+
+## The one that matters, and it went through a Verifier and a nine-point discharge untouched
+
+**Three `10222` responses return the full user object and a `uniqueId` matching the requested
+handle** — `buzz_award`, `jere.ronkko`, `worldpadeltour`, all in C1 — and this document counted
+them as *the account object is not served*. Confirmed by reading our own stored markers: of 102
+responses, `0` → 69 with a user object, `10221` → 28 without, `10202` → 2 without, **`10222` → 3
+with**. The pre-registration's binary (zero against non-zero) **stands as pre-registered and Q1–Q5
+are scored on it**; the object-based reading is published beside it, and every affected figure with
+it: **C1 41.46 % instead of 48.78 %, Q4 p = 1.348 × 10⁻⁴ instead of 9.128 × 10⁻⁶, Q3 p = 0.4141.**
+No verdict changes. **The claim in our prose that non-zero means "the account object is not
+served" is false for `10222` and is struck.**
+
+The class of the error is what to keep: **we audited our prose against our files and never audited
+our files against themselves.** A miscoded response sat in a column of stored booleans through a
+probe, a derivation, a Verifier's gauntlet and nine discharged conditions.
+
+## The twelve
+
+| # | Condition | Discharged how | Our figure |
+|---|---|---|---|
+| 1 | `10222` misclassified | both classifications published in §1, the false sentence struck | C1 **17/41 = 0.4146** object-based; Q4 **p = 1.348 × 10⁻⁴**; Q3 **p = 0.4141** |
+| 2 | §2 must reconcile with §3 | cross-referenced both ways; the contradiction stated in §2 | §3 rejects §2's weighting for one of its two categories at **p = 0.0111** |
+| 3 | propagate the sampling error | sweep now runs over the exact interval **and** the mixed weight, under both classifications | P(live \| all-present) exact 95 % **[0.8347, 0.9940]**; honest ratio range **7.88–11.73**, against the 9.77–11.25 published; **sign-flip threshold 0.9482** now printed as the load-bearing number |
+| 4 | the "unmeasured" category was measured | cited in §2 | **11 of 12** mixed handles at state 0 at session 114 |
+| 5 | say what the §2 tail is | §2 rewritten | conditional expectation **7.2727**, P(≥ 7) = **0.7709**, Fisher on the page's 2×2 **exactly 1.0000**; dead side **9 of 12, tail 5.863 × 10⁻⁷** |
+| 6 | strike the "null is a null" sentence | struck, replaced with what the run licenses | Newcombe **[−0.1926, +0.3028]** (pre-registered) / **[−0.1220, +0.3711]** (object-based); power **0.0798 / 0.2463 / 0.5719 / 0.8914** at 10/20/30/40 points |
+| 7 | "never measured this statistic's variance" is false | withdrawn in §5, with the two files that refute it named | `INTERLOCUTOR-7.md`: **1.4124 / 1.4506** over cited handles, adopted at `RESTATEMENT-2026-08-13.md` L181 |
+| 8 | withdraw "1.4289 was too small" | withdrawn; the sample named as the third confound | account-key log-OR design effect measured here **1.2883–1.3521**, *below* 1.4289 |
+| 9 | fix "24 % to 27 %" and "three routes" | both corrected | **24.0 %–29.4 %**; **two** routes |
+| 10 | matched estimators and the full key × statistic table | printed in §5; the general claim withdrawn | account **≈1.15**, page **≈1.25**, component **≈1.38** — an interaction, so a design effect belongs to a **(statistic, key, sample)** triple |
+| 11 | an interval on both design effects | printed in §5 | gap median **0.5948**, 90 % **[0.0335, 1.2701]**, positive in **29 of 30**; ratio **1.3879**, 90 % **[1.0228, 1.7582]** |
+| 12 | name the most influential component | named in §5 | it is the flagged article itself — 22 units, 19 accounts, Δ OR **0.1199** |
+
+## The three we accept without a fix
+
+1. **A6 — the account state is read backwards in time.** It was measured once, tonight, against
+   absences observed yesterday and losses that predate this arc's first observation. C1 survives
+   as a statement about the accounts' *present* state; the unqualified sentence *"whatever removed
+   this article's cited evidence, it did not do so by removing the accounts"* asserts more than one
+   snapshot can carry. **Accepted. Days 5–7 measure the five interface-disagreement units every
+   day; a second account probe would give the arc its first two-point series and is not run
+   tonight.**
+2. **A4/A5 — the floor's sign is forced by Q4, not discovered.** Accepted, and it is why the
+   0.9482 threshold rather than the ratio range is now the number §2 leads its robustness claim
+   with.
+3. **A7 — eight mixed accounts in the cell, eight requests, never probed.** They are the only
+   category that would have tested the state field without selecting on an extreme. **The
+   pre-registration excluded them by construction and nobody noticed the cost.** Filed for the
+   next pre-registration, not smuggled into this one.
+
+## What we do not accept
+
+Nothing. Every attack that landed is discharged or accepted above. The hostile critique is
+published unedited in `INTERLOCUTOR-10.md` §(c) and is answered in the journal, not here.
