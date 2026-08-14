@@ -15,9 +15,20 @@ Enforces two rules the arc committed to before it had any results to protect:
 
 Run 1 (session 109's census) predates this schema, so it is read through an adapter that
 applies the *same* classification function rather than a second one written for it.
+
+Session 119, DEVIATION D23 — BOOKKEEPING ONLY, no probe and no archived run file changes.
+`--corrections [path]` applies the overlay of `corrections.py`: a state that this arc's own
+confirmation step refuted with five immediate re-requests is read as the state those
+re-requests support, and **every application is reported in the output** under
+`corrections_applied`, so a corrected diff can never be mistaken for a raw one. Without the
+flag this file behaves exactly as it did through days 1–4. Why it exists: `confirm_transition.py`
+never touched the ledger, so a refuted reading stayed in the run file and the next interval
+reported its reversal as a fresh transition (session 118, `arutz_7`; `audit_instrument.py` A8).
 """
 import json
 import sys
+
+import corrections as corrections_mod
 
 
 def classify(rec):
@@ -44,8 +55,29 @@ def load(path):
     return {"path": path, "label": label, "start": start, "vantage": van, "obs": obs}
 
 
-def main(p1, p2, out_path):
+def apply_corrections(run, overlay):
+    """Read the overlay over one loaded run. Returns the rows it used; never edits a file."""
+    used = []
+    for (run_file, vid), row in overlay.items():
+        if run_file != run["path"] or vid not in run["obs"]:
+            continue
+        stored = run["obs"][vid]["state"]
+        if stored == row["corrected_state"]:
+            continue
+        run["obs"][vid] = dict(run["obs"][vid], state=row["corrected_state"],
+                               state_source="corrections.json overlay (session 119)")
+        used.append({"vid": vid, "handle": row.get("handle"), "run_file": run_file,
+                     "state_in_run_file": stored, "read_as": row["corrected_state"],
+                     "authority": row["authority"],
+                     "evidence_five_re_requests": row["evidence_five_re_requests"]})
+    return used
+
+
+def main(p1, p2, out_path, corrections_path=None):
     r1, r2 = load(p1), load(p2)
+
+    overlay = corrections_mod.load(corrections_path) if corrections_path else {}
+    used = apply_corrections(r1, overlay) + apply_corrections(r2, overlay) if overlay else []
 
     same_vantage = r1["vantage"].get("asn") == r2["vantage"].get("asn")
     guard = {"run1_asn": r1["vantage"].get("asn"), "run2_asn": r2["vantage"].get("asn"),
@@ -73,6 +105,15 @@ def main(p1, p2, out_path):
         "run2": {"path": p2, "label": r2["label"], "start": r2["start"],
                  "asn": r2["vantage"].get("asn"), "n": len(r2["obs"])},
         "vantage_guard": guard,
+        "corrections_applied": {
+            "overlay": corrections_path,
+            "n": len(used),
+            "rows": used,
+            "note": ("A corrected state is a reading this arc's own confirmation step refuted "
+                     "with five immediate re-requests. The run files are unchanged; this diff "
+                     "reads them through the overlay and says so here."),
+        } if corrections_path else {"overlay": None, "n": 0, "rows": [],
+                                    "note": "raw run files, no overlay applied"},
         "observed_in_both": len(common),
         "determinate_in_both": len(both_determinate),
         "touching_indeterminate": len(indeterminate_edges),
@@ -97,4 +138,13 @@ def main(p1, p2, out_path):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2], sys.argv[3])
+    # usage: ledger_diff.py RUN1 RUN2 OUT [--corrections[=PATH]]
+    cpath, pos = None, []
+    for a in sys.argv[1:]:
+        if a == "--corrections":
+            cpath = "ledger/corrections.json"
+        elif a.startswith("--corrections="):
+            cpath = a.split("=", 1)[1]
+        else:
+            pos.append(a)
+    main(pos[0], pos[1], pos[2], cpath)

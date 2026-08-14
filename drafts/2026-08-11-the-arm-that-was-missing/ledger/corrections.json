@@ -1,0 +1,48 @@
+{
+ "schema": "field-research/ledger-corrections/1",
+ "recorded_by_session": 119,
+ "generated_utc": "2026-08-14T20:50:52Z",
+ "deviation": "D23 \u2014 bookkeeping only; no probe and no archived run file changes",
+ "policy": "An overlay, never an edit. Each row says: this run file carries this state for this identifier, the confirmation step of this arc refuted it with five immediate re-requests that all said otherwise, and the state those re-requests support is the one a consumer should read. The run file is unchanged and stays the record of what the instrument actually returned. Any consumer applying this overlay must report that it did, and which rows it used \u2014 see ledger_diff.py --corrections.",
+ "n_corrections": 2,
+ "corrections": [
+  {
+   "vid": "7368171405361351954",
+   "handle": "arutz_7",
+   "run_file": "ledger/run-2026-08-13T0427Z.json",
+   "state_in_run_file": "NOT-RETRIEVABLE",
+   "corrected_state": "RETRIEVABLE",
+   "status": "CORRECTED",
+   "reason": "K4 fired: the transition reported by the diff did not survive five immediate re-requests, so the run file's state is an instrument artefact and the arc has already ruled it out of the window",
+   "evidence_five_re_requests": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "authority": "ledger/transition-confirm-2026-08-13.json",
+   "authority_generated_utc": "2026-08-13T06:20:05Z",
+   "diff_that_reported_it": "ledger/diff-day2-day3.json"
+  },
+  {
+   "vid": "7016669364938149122",
+   "handle": "ask__dani",
+   "run_file": "ledger/run-2026-08-14T0343Z.json",
+   "state_in_run_file": "NOT-RETRIEVABLE",
+   "corrected_state": "RETRIEVABLE",
+   "status": "CORRECTED",
+   "reason": "K4 fired: the transition reported by the diff did not survive five immediate re-requests, so the run file's state is an instrument artefact and the arc has already ruled it out of the window",
+   "evidence_five_re_requests": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "authority": "ledger/transition-confirm-2026-08-14.json",
+   "authority_generated_utc": "2026-08-14T05:34:50Z",
+   "diff_that_reported_it": "ledger/diff-day3-day4.json"
+  }
+ ]
+}
