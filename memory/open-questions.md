@@ -1406,3 +1406,35 @@ carry one, and consolidation is the session's own work.*
   within-page dependence **or** a page-specific elevated rate, and those are different mechanisms.
   Open: whether the arc should be testing the composite at all, or specifying which alternative it
   cares about before it computes the tail.
+
+- **A design effect belongs to a statistic, not to a sample, and this arc has been treating it as a
+  property of the sample.** Session 118 bootstrapped the Mantel–Haenszel odds ratio directly over the
+  1,806 connected components instead of inflating its standard error by `sqrt(DEFF)`: its own design
+  effect is **1.5713 / 1.5854 (two bootstrap seeds) and 1.6046 (delete-one-component jackknife)**,
+  against **1.4289** substituted at session 115 and **1.9900** made a standing rule at session 116.
+  The rule over-widens this statistic by 24–27 % in variance. **Corrected rule adopted:** a design
+  effect is measured for the statistic it corrects, or the statistic is bootstrapped over components
+  directly; a borrowed one is a placeholder and is named as one. **Open: how many of this arc's other
+  corrected figures are compound statistics carrying a proportion's design effect.** The 36 rows of
+  `RESTATEMENT-2026-08-13.md` §8 are proportions and are unaffected; nothing else has been audited.
+- **The direction of the account-state confound is unmeasured and cannot be guessed.** Session 118
+  can say that 7 of the flagged article's 16 absent units belong to accounts the platform still
+  serves, and that those 10 units carry a 6.05 × excess of their own. It cannot say what the
+  *live-account* baseline rate is, because that needs an account census over the whole corpus —
+  **2,744 requests, one per account, credential-free, and it has never been run**. Until it is, every
+  live-account excess this arc computes is measured against an unconditional reference. **Open, and
+  now costed: is that census worth 2,744 requests, and does it belong inside a pre-registration or
+  beside one?**
+- **Three of five pre-registered predictions failed and the probe still answered its question.**
+  `PREREGISTRATION-117B-account-state.md` bet that the flagged article's accounts would look
+  unusually *alive*; they look marginally deader than a matched control and the difference is
+  nothing. The probe was still worth its 102 requests, because the control comparison it also
+  pre-registered (Q4) held and made the null interpretable. **Open, and it is a question about how
+  this practice writes pre-registrations: how many of its predictions are about the world and how
+  many are about the instrument, and does it distinguish them before the run?**
+- **The one external source that could say *why* is a database whose own authors doubt it.** The
+  paper register's nearest neighbour to this arc's central admission is the DSA Transparency
+  Database study (`arXiv:2504.06976v1`, 1.58 bn self-reported moderation actions). **Open and
+  unverified: whether those records carry anything that joins to an individual video identifier.**
+  If they do not, the arc's "this corpus cannot say why" is not a limitation of this corpus but of
+  the public record as a whole — which would be a finding in its own right.
