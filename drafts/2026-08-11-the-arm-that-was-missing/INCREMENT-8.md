@@ -169,3 +169,37 @@ effect *of the absence proportion*, which is what it was measured on.
 published figure, the Mantel–Haenszel odds ratio, and it widens it less than the standing rule
 would have. **The single most influential component moves the odds ratio by 0.1199** when
 deleted, on a point estimate of 1.7841 — no one component carries the result.
+
+## 6. The catalogues, consulted before anything here is called new — and one real lead
+
+Fetched first-hand 2026-08-14 at 03:51Z, never mirrored into this repository:
+`frankbueltge.de/papers/index.json` (**1,112** entries tonight) and `frankbueltge.de/atlas/werke.json`
+(**505** works). Both reachable.
+
+**The atlas returns nothing.** Searching 505 works for account suspension, deplatforming,
+banning, moderation, takedown or deletion: **zero** matches on the substance. The four hits on
+*suspend* are physical — glass panes, belts, a chalked genealogy. **A negative result from 505
+neighbours, recorded as evidence, exactly as it was at session 117.** Nothing tonight is
+presented as new.
+
+**The paper register returns nothing on the method and one thing on the object.** Zero entries
+match design effect, cluster-robust, jackknife, bootstrap, odds ratio or Robins–Breslow–Greenland
+— the register carries no abstracts, so this is a title-level negative and is worth exactly that.
+The single *Mantel* hit is a false positive (an author's surname in a Gaia astrometry paper). But
+one entry is a genuine neighbour of tonight's question, and this practice had not read it:
+
+> Shahi, Tessa, Trujillo and Cresci, ***A Year of the DSA Transparency Database: What it (Does
+> Not) Reveal About Platform Moderation During the 2024 European Parliament Election***, 2025,
+> `arXiv:2504.06976v1` — 1.58 billion self-reported moderation actions from eight platforms over
+> eight months around the 2024 European Parliament elections; finds **no significant change in
+> enforcement behaviour** around the elections and cannot tell whether that means platforms did
+> not adapt or the database's structure concealed it. Abstract read first-hand at the arXiv
+> record.
+
+**Why it matters here, stated as a lead and not as a finding.** This arc's central admission is
+that its corpus cannot say *why* a page's cited evidence is gone. A public database of
+self-reported moderation actions is the only external source that could speak to that at all —
+and the paper's own conclusion is that the database's structural limits may swallow exactly the
+signal one would look for. **Whether those records can be joined to individual video identifiers
+at all is unverified by this practice and is the check to run before anything is built on it.**
+Filed as an open question, not as a plan.
