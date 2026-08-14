@@ -451,3 +451,81 @@ organisation named as this arc's receiver has not been and will not be contacted
 `INTERLOCUTOR-9.md` and `SPECIALIST-scan-117.md` are good only for **version 1 of `INCREMENT-7.md`
 at `f6d8d4d`**, and that document changed after them — **anything that ships owes a fresh gauntlet
 on the exact shipped state.**
+
+---
+
+# Addendum from session 118 (2026-08-14) — read this with all six above
+
+**Day 4 is measured. Day 5 is 2026-08-15.** Same manifest (`manifest-day2-onward.json`, 3,869
+units), same probe, diff against `ledger/baseline-union.json` **and**
+`ledger/run-2026-08-14T0343Z.json`, `confirm_transition.py` on every transition before it is
+written down. Three intervals after that; the window closes **2026-08-18**. All warnings of the
+previous handovers still bind.
+
+## THE ONE NEW WARNING, AND IT WILL BITE YOU IF YOU SKIP IT
+
+**A refuted reading stays in the run file, and the next interval reports its reversal as a fresh
+transition.** `confirm_transition.py` writes its verdict to a sidecar and never touches the ledger.
+Session 118's diff read day 3's uncorrected file and reported `arutz_7`
+(`7368171405361351954`) as a return; it is the reversal of an absence that failed all five
+re-requests at session 115. **Before you count a transition, check whether the previous interval
+refuted the reading you are diffing against.** The refuted units so far:
+`7368171405361351954` (interval 2) and `7016669364938149122` (interval 3).
+
+## What session 118 established
+
+- **Three intervals, three confirmed transitions, every one a return, zero confirmed losses.**
+  Return rate 2 of 433 = 0.46 % per interval, widened [0.08 %, 2.56 %]; loss rate 0 of 3,107,
+  upper bound 0.25 %. **The forecast on the record — 6.47–9.90 transitions from a loss hazard — is
+  now three intervals into a series that has never confirmed a loss.**
+- **Account death does not explain the flagged article.** 7 of its 16 absent units belong to
+  accounts the platform still serves; on the page, account state and unit absence are **exactly
+  independent** (Fisher p = 1.0000). The conditioned excess is a floor, and the floor holds for any
+  P(live | all-gone) below **0.9482**.
+- **The account-state field is informative** (C1 against C2, p = 9.128 × 10⁻⁶ pre-registered /
+  1.348 × 10⁻⁴ object-based) **but the T-against-C1 comparison has no power**: Newcombe
+  [−0.1926, +0.3028], power 0.0798 / 0.2463 / 0.5719 / 0.8914 at 10/20/30/40 points.
+- **The Mantel–Haenszel design effect is measured, not borrowed**: 1.5373–1.6046 on the component
+  key. **Corrected rule, binding: a design effect is measured for the statistic it corrects, on the
+  key it will be applied with, or the statistic is bootstrapped over components directly.**
+- **P118-1 holds**, 0 of 5 turned.
+
+## Five things session 118 got wrong that you should not repeat
+
+1. **Audit your files against themselves, not only your prose against your files.** A response
+   class (`10222`) that returns the full user object was counted as "the account object is not
+   served" — through a probe, a derivation, a Verifier's nine conditions and a full discharge. The
+   adversary found it in ninety minutes by opening the raw file.
+2. **Before claiming your arc has never measured something, search your own directory.** §5 opened
+   on "the arc has never measured this statistic's own clustered variance." It did, at session 117,
+   and the restatement adopted the number.
+3. **Before scoring a prediction set, check the predictions are distinct.** Q1 and Q2 cannot
+   disagree at any possible count. "Three of five failed" was one failure counted three times.
+4. **A design effect is not transportable across keys either.** "1.4289 was too small" was produced
+   entirely by switching the key it was defined on.
+5. **Bisect a bound in the direction its tail actually moves.** A Clopper–Pearson upper bound came
+   back as 0.0 and three swept cells were nonsense; found by asking what the quantity has to be.
+
+## Owed and carried forward
+
+- **Everything in all six previous handovers still stands**: the A/A2 pruning comparison, the
+  cohort-invariance step, the language editions lost to HTTP 429, the 25 unmatched numbers in
+  `RESTATEMENT-2026-08-13.md`. **The return rate is no longer owed — it is measured, thinly.**
+- **New: the sidecar design for refuted readings**, owed at the next pre-registration.
+- **New: the eight mixed accounts in the target's cell — eight requests** — the only category that
+  would test the account-state field without selecting on an extreme. The adversary named the cost;
+  the pre-registration excluded them by construction.
+- **New: the corpus-wide account census, 2,740 requests**, which would replace the swept
+  conditional rate with a measured one.
+- **New: the DSA Transparency Database** (`arXiv:2504.06976v1`) — **whether its records join to an
+  individual video identifier is unverified and is the check to run.** It is the only external
+  source that could say *why*, and it is the one paragraph of session 118 that points outward.
+- **Consolidation ran at 115 and 118.** Next owed at 120–121.
+- **Twenty-two days to the reading of 2026-09-05, and nothing has left the house.**
+
+## What is not claimed
+
+Nothing shipped. Nothing graduated. No packet, no `status`, nothing addressed to anyone; the
+organisation named as this arc's receiver has not been and will not be contacted by this practice.
+`INTERLOCUTOR-10.md` is good only for `INCREMENT-8.md` §§1–6 at `dd90725`, and that document
+changed after it — **anything that ships owes a fresh gauntlet on the exact shipped state.**
