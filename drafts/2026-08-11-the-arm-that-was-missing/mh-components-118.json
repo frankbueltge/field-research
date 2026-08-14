@@ -1,0 +1,91 @@
+{
+ "schema": "field-research/mh-component-bootstrap/1",
+ "session": 118,
+ "date": "2026-08-14",
+ "queued_by": "session 116 gauntlet, NEXT-SESSION.md",
+ "sources": {
+  "arm_A": "ledger/run-2026-08-11T1124Z.json",
+  "arm_A2": "expansion-111/baseline-run.json"
+ },
+ "units": {
+  "A": 2171,
+  "A2": 557
+ },
+ "point_estimate": {
+  "or": 1.7840954726754668,
+  "se_log": 0.13945557639317144,
+  "strata_used": 8,
+  "ci": [
+   1.3574101992452423,
+   2.3449040366655054
+  ]
+ },
+ "point_estimate_attributed_only": {
+  "or": 1.7840954726754668,
+  "se_log": 0.13945557639317144,
+  "strata_used": 8,
+  "ci": [
+   1.3574101992452423,
+   2.3449040366655054
+  ]
+ },
+ "unattributed_units_excluded_from_graph": 0,
+ "published_at_session_111": {
+  "or": 1.7841,
+  "se_log": 0.13946,
+  "ci": [
+   1.3574,
+   2.3449
+  ]
+ },
+ "reproduces_published": true,
+ "components": {
+  "count": 1806,
+  "largest_units": 48,
+  "singletons": 1458,
+  "units_covered": 2728,
+  "units_total": 2728
+ },
+ "component_bootstrap": {
+  "7": {
+   "draws": 4000,
+   "usable": 4000,
+   "degenerate_draws": 0,
+   "se_log_or": 0.17481161308961732,
+   "deff_log_or": 1.571335023396926,
+   "percentile_ci_or": [
+    1.2637709988865813,
+    2.497171851104339
+   ],
+   "excludes_1": true
+  },
+  "8": {
+   "draws": 4000,
+   "usable": 4000,
+   "degenerate_draws": 0,
+   "se_log_or": 0.17559362935018383,
+   "deff_log_or": 1.5854251406928632,
+   "percentile_ci_or": [
+    1.2489128727781267,
+    2.490992894034674
+   ],
+   "excludes_1": true
+  }
+ },
+ "delete_one_component_jackknife": {
+  "components_deleted_one_at_a_time": 1806,
+  "se_log_or": 0.17665228004310085,
+  "deff_log_or": 1.6045997654838131,
+  "ci_or": [
+   1.2619688489191203,
+   2.522246613573182
+  ],
+  "largest_single_component_move_in_or": 0.11987056520393691,
+  "excludes_1": true
+ },
+ "the_substitution_it_replaces": {
+  "method": "published SE(log OR) inflated by sqrt(DEFF)",
+  "deff_used_at_session_115": 1.4289,
+  "deff_used_at_session_116_crossed": 1.99
+ }
+}

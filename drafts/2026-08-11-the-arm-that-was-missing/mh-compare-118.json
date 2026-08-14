@@ -1,0 +1,55 @@
+{
+ "schema": "field-research/mh-deff-comparison/1",
+ "session": 118,
+ "date": "2026-08-14",
+ "statistic": "Mantel-Haenszel odds ratio, retrievability of arm A against arm A2, stratified by decoded creation year",
+ "point_or": 1.7840954726754668,
+ "routes": {
+  "session_115_pooled_account_deff": {
+   "deff": 1.4289,
+   "se_log": 0.16670046188316645,
+   "ci_or": [
+    1.2868258998461688,
+    2.4735254831299267
+   ],
+   "width": 1.186699583283758
+  },
+  "session_116_crossed_deff": {
+   "deff": 1.99,
+   "se_log": 0.1967262997070596,
+   "ci_or": [
+    1.2132806859926497,
+    2.62346272578873
+   ],
+   "width": 1.4101820397960803
+  },
+  "measured_component_bootstrap_seed7": {
+   "deff": 1.571335023396926,
+   "se_log": 0.17481161308961732,
+   "ci_or": [
+    1.2637709988865813,
+    2.497171851104339
+   ],
+   "width": 1.2334008522177575
+  },
+  "measured_delete_one_component_jackknife": {
+   "deff": 1.6045997654838131,
+   "se_log": 0.17665228004310085,
+   "ci_or": [
+    1.2619688489191203,
+    2.522246613573182
+   ],
+   "width": 1.2602777646540617
+  },
+  "uncorrected_binomial": {
+   "deff": 1.0,
+   "se_log": 0.13945557639317144,
+   "ci_or": [
+    1.3574101992452423,
+    2.3449040366655054
+   ],
+   "width": 0.9874938374202631
+  }
+ },
+ "note": "the substituted design effects come from a simple proportion; the measured ones are of this statistic itself"
+}
