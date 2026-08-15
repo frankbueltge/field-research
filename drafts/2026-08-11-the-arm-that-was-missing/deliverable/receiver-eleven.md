@@ -24,4 +24,30 @@
 | `7376437810644946222` | 2024-06-04T00:26:03Z | 2-3y | RETRIEVABLE |
 | `7361448925972155679` | 2024-04-24T15:01:31Z | 2-3y | RETRIEVABLE |
 
+## Beside the interface-side record the dashboard itself published
+
+*These three columns are **the receiver's own numbers**, transcribed from their public dashboard (2025-04-09 .. 2026-01-14, 279 rows, last generated 2026-01-14). This practice measured none of them and holds no credential for that interface. The last column is ours.*
+
+| video id | days their dashboard recorded at all | days available via the research interface | days their monitor recorded its own error | days recorded not available | publicly retrievable, latest reading here |
+|---|---|---|---|---|---|
+| `7366758818765638917` | 279 | 0 | 16 | 263 | RETRIEVABLE |
+| `7368154048836406544` | 279 | 0 | 18 | 261 | RETRIEVABLE |
+| `7074367286571814190` | 279 | 0 | 17 | 262 | RETRIEVABLE |
+| `7117394257064840490` | 279 | 0 | 18 | 261 | RETRIEVABLE |
+| `7134492331117595950` | 279 | 0 | 15 | 264 | NOT-RETRIEVABLE |
+| `7164125023886691626` | 279 | 0 | 18 | 261 | RETRIEVABLE |
+| `7376726215178128673` | 279 | 0 | 15 | 264 | RETRIEVABLE |
+| `7332960275127110954` | 279 | 213 | 20 | 46 | RETRIEVABLE |
+| `7347581705299053826` | 279 | 0 | 16 | 263 | RETRIEVABLE |
+| `7376437810644946222` | 279 | 0 | 14 | 265 | RETRIEVABLE |
+| `7361448925972155679` | 238 | 0 | 14 | 224 | RETRIEVABLE |
+
+*Not every identifier appears on the dashboard for the same number of days: the per-identifier totals here are 238, 279. The three day-columns sum to the first column, identifier by identifier — which is the check that the transcription is complete.*
+
+**What this table is worth, priced honestly.** Of the 11 identifiers, 10 were never once recorded as available through the research interface across the dashboard's whole span. That most of them are publicly retrievable is **close to what the receiver's own report already implies** — their words for the interface's behaviour on these videos are *"without an apparent reason"*, which presumes the videos exist publicly. **So this is a demonstration of the harness, not a discovery about the platform**, and this practice's own adversary priced it down in exactly those terms before it was ever offered to anyone.
+
+**The column that is worth more than the headline is the middle one.** The receiver's own monitor recorded between 14 and 20 days of **its own error** on each of these identifiers, and their page states the consequence plainly: *"Note: Error are problems on our end, not TikTok."* An instrument that cannot separate its own failure from the platform's is the precise case a second, independent measurement is for. That is what this bundle offers — not a correction of their finding, an instrument beside it.
+
+**Two limits govern this whole page.** The interface-side and public-side readings are **months apart** — their series ends 2026-01-14 and ours begins in August 2026 — so no row here is a same-day comparison. And this practice holds **no credential** for the research interface and makes no claim about what it returns today.
+
 **How to read this table.** `RETRIEVABLE` means the platform's credential-free public endpoint returned a usable public record for that identifier, from this vantage, at that moment. `NOT-RETRIEVABLE` means the endpoint refused with a single opaque HTTP 400 — a code a synthetic identifier that never existed also returns. **It does not mean deleted.** The expectation column is a yardstick computed from a different, much larger population measured the same way; on eleven identifiers it cannot separate hypotheses, and `LIMITS.md` §8 says why.

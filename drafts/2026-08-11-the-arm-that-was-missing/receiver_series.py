@@ -21,6 +21,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("readings", nargs="+")
     ap.add_argument("--out", default="deliverable")
+    ap.add_argument("--interface-side", default="receiver-arm-2026-08-12.json",
+                    help=("a run file carrying the receiver's OWN published dashboard counts per "
+                          "identifier. Those counts are theirs, transcribed from their public "
+                          "page; this practice measured none of them."))
     a = ap.parse_args()
 
     reads = []
@@ -37,10 +41,20 @@ def main():
             if o["vid"] not in vids:
                 vids.append(o["vid"])
 
+    # The receiver's own published dashboard counts, transcribed - NOT measured here.
+    iface = {}
+    iface_span = None
+    if a.interface_side and os.path.exists(a.interface_side):
+        d = json.load(open(a.interface_side))
+        iface_span = d.get("receiver_series_span")
+        for o in d["observations"]:
+            if o.get("receiver_series"):
+                iface[str(o["vid"])] = o["receiver_series"]
+
     rows = []
     for vid in vids:
         row = {"vid": vid, "states": {}, "handle_returned": {}, "created_utc": None,
-               "band": None}
+               "band": None, "receiver_own_dashboard": iface.get(vid)}
         for p, d in reads:
             day = d["started_utc"][:10]
             for o in d["observations"]:
@@ -105,6 +119,56 @@ def main():
         lines.append(f"| `{row['vid']}` | {row['created_utc'] or '—'} | {row['band'] or '—'} | "
                      + " | ".join(row["states"].get(d, "—") for d in days) + " |")
     lines.append("")
+    if iface:
+        avail = sum(1 for v in iface.values() if v["api_available_days"] > 0)
+        errs = sorted(v["api_error_days"] for v in iface.values())
+        lines.append("## Beside the interface-side record the dashboard itself published\n")
+        lines.append(f"*These three columns are **the receiver's own numbers**, transcribed from "
+                     f"their public dashboard ({iface_span}). This practice measured none of them "
+                     f"and holds no credential for that interface. The last column is ours.*\n")
+        lines.append("| video id | days their dashboard recorded at all | days available via the "
+                     "research interface | days their monitor recorded its own error | days "
+                     "recorded not available | publicly retrievable, latest reading here |")
+        lines.append("|---|---|---|---|---|---|")
+        last = days[-1]
+        for row in rows:
+            r = row["receiver_own_dashboard"]
+            if not r:
+                continue
+            lines.append(f"| `{row['vid']}` | {r['observations']} | {r['api_available_days']} | "
+                         f"{r['api_error_days']} | {r['api_not_available_days']} | "
+                         f"{row['states'].get(last, '—')} |")
+        obs_counts = sorted(set(v["observations"] for v in iface.values()))
+        if len(obs_counts) > 1:
+            lines.append("")
+            lines.append(f"*Not every identifier appears on the dashboard for the same number of "
+                         f"days: the per-identifier totals here are "
+                         f"{', '.join(str(o) for o in obs_counts)}. The three day-columns sum to "
+                         f"the first column, identifier by identifier — which is the check that "
+                         f"the transcription is complete.*")
+        lines.append("")
+        lines.append(f"**What this table is worth, priced honestly.** Of the {len(iface)} "
+                     f"identifiers, {len(iface) - avail} were never once recorded as available "
+                     f"through the research interface across the dashboard's whole span. That most "
+                     f"of them are publicly retrievable is **close to what the receiver's own "
+                     f"report already implies** — their words for the interface's behaviour on "
+                     f"these videos are *\"without an apparent reason\"*, which presumes the videos "
+                     f"exist publicly. **So this is a demonstration of the harness, not a discovery "
+                     f"about the platform**, and this practice's own adversary priced it down in "
+                     f"exactly those terms before it was ever offered to anyone.\n")
+        lines.append(f"**The column that is worth more than the headline is the middle one.** The "
+                     f"receiver's own monitor recorded between {errs[0]} and {errs[-1]} days of "
+                     f"**its own error** on each of these identifiers, and their page states the "
+                     f"consequence plainly: *\"Note: Error are problems on our end, not TikTok.\"* "
+                     f"An instrument that cannot separate its own failure from the platform's is "
+                     f"the precise case a second, independent measurement is for. That is what "
+                     f"this bundle offers — not a correction of their finding, an instrument "
+                     f"beside it.\n")
+        lines.append("**Two limits govern this whole page.** The interface-side and public-side "
+                     "readings are **months apart** — their series ends 2026-01-14 and ours begins "
+                     "in August 2026 — so no row here is a same-day comparison. And this practice "
+                     "holds **no credential** for the research interface and makes no claim about "
+                     "what it returns today.\n")
     lines.append("**How to read this table.** `RETRIEVABLE` means the platform's credential-free "
                  "public endpoint returned a usable public record for that identifier, from this "
                  "vantage, at that moment. `NOT-RETRIEVABLE` means the endpoint refused with a "

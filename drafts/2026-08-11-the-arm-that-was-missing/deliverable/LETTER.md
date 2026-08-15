@@ -40,10 +40,32 @@ Three parts, all in this bundle:
    eleven, your donated dataset, or a list we have never seen — and get an answer measured the
    same way as every row of our own ledger.
 
-## What we found on your own eleven
+## What we found on your own eleven, and what it is worth
 
-*See `receiver-eleven.md` in this bundle for the dated readings, the exact identifiers, and the
-caveats that govern them.*
+`receiver-eleven.md` carries the table: your eleven identifiers, measured from the public side
+with no credential, beside the three day-counts your own dashboard published for each of them.
+
+**We are going to price our own result down before you do.** Ten of the eleven were never once
+recorded as available through the research interface across your dashboard's whole span, and
+most of them are publicly retrievable when we ask. That is **close to what your own report
+already implies** — your words for the interface's behaviour on these videos are *"without an
+apparent reason"*, which presumes the videos are there. Our own adversary called this, in an
+internal review published with the work, *"a well-executed measurement of a fact nobody was in
+serious doubt about"*, and we accepted that. **It is a demonstration that the harness works on
+identifiers we did not choose. It is not a discovery about the platform, and we will not dress
+it as one.**
+
+**The column we think is worth more than that headline is your own error column.** Your monitor
+recorded between fourteen and twenty days of *its own* error on each of these identifiers, and
+your page says what that costs: *"Note: Error are problems on our end, not TikTok."* An
+instrument that cannot separate its own failure from the platform's is exactly the case for a
+second, independent measurement standing beside it. Ours runs daily, from outside, on a public
+route, and its own transport noise is measured and published rather than assumed.
+
+Two limits govern that whole page and we would rather state them than have you find them: your
+series ends 2026-01-14 and ours begins in August 2026, so **no row is a same-day comparison**;
+and we hold **no credential** for the research interface and make no claim about what it returns
+today.
 
 ## What you could do with it
 

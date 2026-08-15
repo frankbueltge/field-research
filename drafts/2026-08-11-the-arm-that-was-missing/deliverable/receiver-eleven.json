@@ -46,7 +46,13 @@
     "2026-08-12": "camilapudim"
    },
    "created_utc": "2024-05-08T22:26:37Z",
-   "band": "2-3y"
+   "band": "2-3y",
+   "receiver_own_dashboard": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 16,
+    "api_not_available_days": 263
+   }
   },
   {
    "vid": "7368154048836406544",
@@ -57,7 +63,13 @@
     "2026-08-12": "yy0403_2"
    },
    "created_utc": "2024-05-12T16:40:49Z",
-   "band": "2-3y"
+   "band": "2-3y",
+   "receiver_own_dashboard": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 18,
+    "api_not_available_days": 261
+   }
   },
   {
    "vid": "7074367286571814190",
@@ -68,7 +80,13 @@
     "2026-08-12": "brynnemarieeee"
    },
    "created_utc": "2022-03-12T23:58:08Z",
-   "band": "4-5y"
+   "band": "4-5y",
+   "receiver_own_dashboard": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 17,
+    "api_not_available_days": 262
+   }
   },
   {
    "vid": "7117394257064840490",
@@ -79,7 +97,13 @@
     "2026-08-12": "brookemonk_"
    },
    "created_utc": "2022-07-06T22:44:46Z",
-   "band": "4-5y"
+   "band": "4-5y",
+   "receiver_own_dashboard": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 18,
+    "api_not_available_days": 261
+   }
   },
   {
    "vid": "7134492331117595950",
@@ -90,7 +114,13 @@
     "2026-08-12": null
    },
    "created_utc": "2022-08-22T00:34:01Z",
-   "band": "3-4y"
+   "band": "3-4y",
+   "receiver_own_dashboard": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 15,
+    "api_not_available_days": 264
+   }
   },
   {
    "vid": "7164125023886691626",
@@ -101,7 +131,13 @@
     "2026-08-12": "taylorswift"
    },
    "created_utc": "2022-11-09T21:04:00Z",
-   "band": "3-4y"
+   "band": "3-4y",
+   "receiver_own_dashboard": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 18,
+    "api_not_available_days": 261
+   }
   },
   {
    "vid": "7376726215178128673",
@@ -112,7 +148,13 @@
     "2026-08-12": "alandelantics"
    },
    "created_utc": "2024-06-04T19:05:12Z",
-   "band": "2-3y"
+   "band": "2-3y",
+   "receiver_own_dashboard": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 15,
+    "api_not_available_days": 264
+   }
   },
   {
    "vid": "7332960275127110954",
@@ -123,7 +165,13 @@
     "2026-08-12": "andyyahurd._"
    },
    "created_utc": "2024-02-07T20:31:00Z",
-   "band": "2-3y"
+   "band": "2-3y",
+   "receiver_own_dashboard": {
+    "observations": 279,
+    "api_available_days": 213,
+    "api_error_days": 20,
+    "api_not_available_days": 46
+   }
   },
   {
    "vid": "7347581705299053826",
@@ -134,7 +182,13 @@
     "2026-08-12": "Evony"
    },
    "created_utc": "2024-03-18T06:09:37Z",
-   "band": "2-3y"
+   "band": "2-3y",
+   "receiver_own_dashboard": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 16,
+    "api_not_available_days": 263
+   }
   },
   {
    "vid": "7376437810644946222",
@@ -145,7 +199,13 @@
     "2026-08-12": "lauren.j734"
    },
    "created_utc": "2024-06-04T00:26:03Z",
-   "band": "2-3y"
+   "band": "2-3y",
+   "receiver_own_dashboard": {
+    "observations": 279,
+    "api_available_days": 0,
+    "api_error_days": 14,
+    "api_not_available_days": 265
+   }
   },
   {
    "vid": "7361448925972155679",
@@ -156,7 +216,13 @@
     "2026-08-12": "tiktok"
    },
    "created_utc": "2024-04-24T15:01:31Z",
-   "band": "2-3y"
+   "band": "2-3y",
+   "receiver_own_dashboard": {
+    "observations": 238,
+    "api_available_days": 0,
+    "api_error_days": 14,
+    "api_not_available_days": 224
+   }
   }
  ]
 }
