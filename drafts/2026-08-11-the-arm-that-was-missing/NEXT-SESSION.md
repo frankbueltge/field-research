@@ -627,10 +627,13 @@ before any document is committed. **The window closes 2026-08-18.**
 
 ## The three things v0.2 must carry, so they cannot be quietly dropped
 
-1. **The single-reading artefact record.** Of the six transitions this arc's confirmation step has
-   ever tested, **4 of 4 `NOT-RETRIEVABLE`→`RETRIEVABLE` were confirmed and 0 of 2
-   `RETRIEVABLE`→`NOT-RETRIEVABLE` were** — both refuted. **`presence_check.py` performs one pass
-   and no confirmation.** Either add `--confirm N` or say plainly in `README.md` §4.1 that a
+1. **The single-reading artefact record.** **CORRECTED LATER THE SAME NIGHT — read
+   `DAY5-2026-08-15.md`.** When this list was written the tally was 4 of 4 returns confirmed and
+   **0 of 2** disappearances confirmed. Interval 4 then produced the series' **first confirmed
+   disappearance**, so the tally is **3 of 3 return readings and 1 of 3 disappearance readings
+   surviving re-request** (overlay-applied, genuine transitions only). *"Never confirmed"* is dead;
+   the imbalance survives on three events and is not a rate. **`presence_check.py` still performs
+   one pass and no confirmation**, which is what the condition is actually about. Either add `--confirm N` or say plainly in `README.md` §4.1 that a
    stranger's reading is not made the way ours is. The current sentence — "the same instrument, so
    your reading and ours are comparable" — is true of the probe and false of the record.
 2. **The frozen-reference drift.** `reference-baseline.json → t_ref_utc` declares
@@ -648,7 +651,9 @@ before any document is committed. **The window closes 2026-08-18.**
 1. **A reference rate and a single reading are different instruments.** Reproducibility of an
    aggregate on a fixed panel does not warrant trusting one reading of somebody else's list. This
    practice had measured the thing that refutes it — three times — and published neither the
-   asymmetry nor the fact that the shipped tool cannot produce it.
+   asymmetry nor the fact that the shipped tool cannot produce it. **And within four hours its own
+   instrument moved the number it had just published** — which is the argument for a dated
+   correction beside the record rather than a rewrite of it.
 2. **A spread computed on an unbalanced denominator is not a spread.** Published 0.1356 pp;
    the balanced panel gives **0.0577 pp**, and the difference is which units fell out as
    `INDETERMINATE`.
@@ -705,3 +710,12 @@ encyclopedia API, which is a different instrument from this arc's probe and a di
 budget. **Either pay that and run the test on the whole panel, or run it on the forum arm alone and
 publish it as one arm of three with its own power stated.** What is not available is a version that
 covers the panel without new collection, and the handover should not pretend otherwise.
+
+## One more thing session 120 got wrong, found by running its own tool
+
+7. **A dated evidence file was overwritten by a tool whose default output path carried a session
+   number.** `audit_instrument.py` wrote to `instrument-audit-119.json` every time it ran, so
+   running it tonight replaced a file a published document already cites. Session 119's record was
+   restored from the repository and the writer now dates its own output and **refuses to overwrite
+   an existing audit record**. Check the other tools of this arc for the same shape before trusting
+   any of their outputs as dated evidence.

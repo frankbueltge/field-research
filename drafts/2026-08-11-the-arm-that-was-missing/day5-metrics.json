@@ -1,0 +1,26 @@
+{
+ "schema": "field-research/interval-metrics/1",
+ "interval": 4,
+ "arm": "overlay-corrected; the raw diff is the primary record and is published beside it",
+ "run_from": "2026-08-14T03:43:47Z",
+ "run_to": "2026-08-15T03:37:40Z",
+ "interval_days": 0.9958,
+ "run_seconds": 6827.3,
+ "requested": 3869,
+ "planned": 3869,
+ "stopped": null,
+ "retrievable_at_day4_determinate_at_day5": 3108,
+ "confirmed_losses": 1,
+ "loss_ids": [
+  "7234106298021727515"
+ ],
+ "loss_rate": 0.00032175032175032174,
+ "loss_rate_wilson": [
+  5.6799090375546086e-05,
+  0.00182037199940981
+ ],
+ "absent_at_day4_determinate_at_day5": 431,
+ "returns": 0,
+ "return_ids": [],
+ "note": "a loss here is a reading that survived five immediate re-requests. NOT-RETRIEVABLE does not mean deleted - the endpoint's refusal is semantically empty."
+}
