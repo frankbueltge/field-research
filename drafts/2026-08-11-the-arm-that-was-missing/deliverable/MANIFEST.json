@@ -1,7 +1,13 @@
 {
  "schema": "field-research/deliverable-manifest/1",
- "built_utc": "2026-08-15T03:53:01Z",
+ "built_utc": "2026-08-15T03:56:21Z",
  "built_by": "build_deliverable.py, session 120",
+ "coverage": {
+  "first_measurement_utc": "2026-08-11T11:24:06Z",
+  "last_measurement_utc": "2026-08-14T03:43:47Z",
+  "n_measurement_days": 4,
+  "note": "this bundle is a dated snapshot with a stated cut-off. The instrument that produced it keeps running; a later version covers later days. A run that was still in flight when the bundle was assembled is NOT in it, and the absence of a day here is never evidence that the instrument was dark."
+ },
  "source_runs": [
   {
    "label": "baseline",

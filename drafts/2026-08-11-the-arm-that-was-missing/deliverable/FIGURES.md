@@ -1,6 +1,6 @@
 # Figures — generated, do not hand-edit
 
-*Written by `build_deliverable.py` at 2026-08-15T03:53:01Z. Every number on this page comes from `expectation.json` and `series/presence-series.json`, which come from the run files named in `MANIFEST.json`. Rebuild the bundle and this page rebuilds with it.*
+*Written by `build_deliverable.py` at 2026-08-15T03:56:21Z. Every number on this page comes from `expectation.json` and `series/presence-series.json`, which come from the run files named in `MANIFEST.json`. Rebuild the bundle and this page rebuilds with it.*
 
 ## 1. The panel, and what was measured each day
 

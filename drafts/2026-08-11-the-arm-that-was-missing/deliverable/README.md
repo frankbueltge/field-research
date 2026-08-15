@@ -9,6 +9,12 @@ to give a single reading an expectation.
 **Read `LIMITS.md` before you use a number from this bundle.** It is short, it is present-tense,
 and every serious misuse of this data is a misuse it names.
 
+**Coverage and cut-off.** This version covers the measurement days listed in `MANIFEST.json →
+coverage` — the pre-window baseline and every complete daily run through **2026-08-14**. The
+instrument that produced it is still running: a run started on 2026-08-15 was in flight while
+this bundle was assembled and is **not** in it. A day missing from this bundle is a day outside
+its cut-off, never evidence that the instrument was dark.
+
 ---
 
 ## 1. What this is, in one paragraph

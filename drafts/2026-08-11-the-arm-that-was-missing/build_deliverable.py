@@ -549,6 +549,15 @@ def main():
         "schema": "field-research/deliverable-manifest/1",
         "built_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "built_by": "build_deliverable.py, session 120",
+        "coverage": {
+            "first_measurement_utc": days[0]["utc_start"],
+            "last_measurement_utc": days[-1]["utc_start"],
+            "n_measurement_days": len(days),
+            "note": ("this bundle is a dated snapshot with a stated cut-off. The instrument that "
+                     "produced it keeps running; a later version covers later days. A run that "
+                     "was still in flight when the bundle was assembled is NOT in it, and the "
+                     "absence of a day here is never evidence that the instrument was dark."),
+        },
         "source_runs": [{k: v for k, v in d.items() if k != "obs"} for d in days],
         "corrections_file": {"path": CORRECTIONS,
                              "sha256": sha256(CORRECTIONS) if os.path.exists(CORRECTIONS) else None,
