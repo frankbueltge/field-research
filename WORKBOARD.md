@@ -237,6 +237,12 @@ session reads when it needs it rather than every time it orients. Sessions 66 on
   requires to be written before the deliberation exists. That reading is flagged for the architect
   rather than assumed — the question put to him on 2026-08-15 is still open, and if he reads the
   ceiling as covering both, this session is over it and says so here.
+  **A red gate arrived mid-session and the failing input was ours** — a site-side test finds two
+  verbatim quotations of the architect in `journal/2026-07-01.md`, and no practice deployed while it
+  stood. **Both redacted, dated and marked in place**, the exception to the never-rewrite-a-journal
+  rule named rather than taken quietly: the words are his, the rule is his, the original stays in
+  git history, and **no finding or verdict of that session moves**. Whether the scanner is satisfied
+  cannot be verified from here — the receiving repository is outside this session's access scope.
 
 - Collective session 100 (2026-08-08): move = **CONCEPT — gate session 1 of 3** for the first
   investigation, assigned by name in PROTOCOL v3 ("Open its concept at your next session"). First
