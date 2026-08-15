@@ -1,0 +1,199 @@
+{
+ "schema": "field-research/public-presence-null/1",
+ "written_by": "build_deliverable.py, session 120, for the receiver bundle",
+ "what_this_measures": "public retrievability of a video identifier from one network vantage, through one credential-free endpoint, on one day. The refusal code is semantically empty: a synthetic identifier that never existed returns the same code. NOT-RETRIEVABLE DOES NOT MEAN DELETED. See LIMITS.md.",
+ "source_run": {
+  "file": "ledger/run-2026-08-14T0343Z.json",
+  "run_id": "2026-08-14T03:43:47Z (manifest carried a placeholder)",
+  "vantage_asn": "AS396982",
+  "sha256": "8e876569ac6abad693d8b43c5b6a44e027dd6d89ffd14712b4469278d1857f75"
+ },
+ "t_ref_utc": "2026-08-14T03:43:47Z",
+ "population": {
+  "n_units_in_run": 3869,
+  "excluded_from_rates": {
+   "arm_B_truncated": 249,
+   "indeterminate": 37,
+   "undatable": 7
+  },
+  "what_it_is": "videos cited in public across 21 language editions of one encyclopedia (article and non-article namespaces) and in the public comments and stories of one technology forum"
+ },
+ "pooled": {
+  "n": 3583,
+  "absent": 435,
+  "absent_rate": 0.12140664247837007,
+  "absent_ci": [
+   0.11111615847150093,
+   0.1325080632439928
+  ]
+ },
+ "by_age_band": {
+  "0-1y": {
+   "n": 500,
+   "absent": 24,
+   "absent_rate": 0.048,
+   "absent_ci": [
+    0.03246520693839224,
+    0.0704271968420612
+   ]
+  },
+  "1-2y": {
+   "n": 771,
+   "absent": 59,
+   "absent_rate": 0.07652399481193256,
+   "absent_ci": [
+    0.059788365324094844,
+    0.09745858814643296
+   ]
+  },
+  "2-3y": {
+   "n": 795,
+   "absent": 96,
+   "absent_rate": 0.12075471698113208,
+   "absent_ci": [
+    0.09990929845594719,
+    0.1452475554599349
+   ]
+  },
+  "3-4y": {
+   "n": 670,
+   "absent": 109,
+   "absent_rate": 0.1626865671641791,
+   "absent_ci": [
+    0.13667633797942755,
+    0.1925427326461073
+   ]
+  },
+  "4-5y": {
+   "n": 456,
+   "absent": 74,
+   "absent_rate": 0.16228070175438597,
+   "absent_ci": [
+    0.13128432464075374,
+    0.19891960958325722
+   ]
+  },
+  "5y+": {
+   "n": 384,
+   "absent": 68,
+   "absent_rate": 0.17708333333333334,
+   "absent_ci": [
+    0.14215572233647705,
+    0.2184077389475786
+   ]
+  }
+ },
+ "by_stratum": {
+  "F-forum": {
+   "n": 446,
+   "absent": 64,
+   "absent_rate": 0.14349775784753363,
+   "absent_ci": [
+    0.11400238400266795,
+    0.17908189321714346
+   ]
+  },
+  "W-article": {
+   "n": 2375,
+   "absent": 259,
+   "absent_rate": 0.10905263157894737,
+   "absent_ci": [
+    0.09714213681077746,
+    0.12222576468897337
+   ]
+  },
+  "W-other-ns": {
+   "n": 762,
+   "absent": 112,
+   "absent_rate": 0.14698162729658792,
+   "absent_ci": [
+    0.12361213203866836,
+    0.1738926010856127
+   ]
+  }
+ },
+ "by_year": {
+  "2018": {
+   "n": 3,
+   "absent": 0,
+   "absent_rate": 0.0,
+   "absent_ci": [
+    0.0,
+    0.5614970318706057
+   ]
+  },
+  "2019": {
+   "n": 35,
+   "absent": 8,
+   "absent_rate": 0.22857142857142856,
+   "absent_ci": [
+    0.12065879832364326,
+    0.3901731689608824
+   ]
+  },
+  "2020": {
+   "n": 165,
+   "absent": 32,
+   "absent_rate": 0.19393939393939394,
+   "absent_ci": [
+    0.1408593690761405,
+    0.260946320685275
+   ]
+  },
+  "2021": {
+   "n": 321,
+   "absent": 51,
+   "absent_rate": 0.1588785046728972,
+   "absent_ci": [
+    0.12295493305697457,
+    0.20287003770309076
+   ]
+  },
+  "2022": {
+   "n": 529,
+   "absent": 81,
+   "absent_rate": 0.15311909262759923,
+   "absent_ci": [
+    0.12494219392839678,
+    0.18629758682924702
+   ]
+  },
+  "2023": {
+   "n": 793,
+   "absent": 127,
+   "absent_rate": 0.1601513240857503,
+   "absent_ci": [
+    0.13627295844925327,
+    0.1873064135421498
+   ]
+  },
+  "2024": {
+   "n": 752,
+   "absent": 74,
+   "absent_rate": 0.09840425531914894,
+   "absent_ci": [
+    0.07911276900948014,
+    0.12177785037920275
+   ]
+  },
+  "2025": {
+   "n": 706,
+   "absent": 45,
+   "absent_rate": 0.06373937677053824,
+   "absent_ci": [
+    0.04797498107201861,
+    0.08422560774419913
+   ]
+  },
+  "2026": {
+   "n": 272,
+   "absent": 12,
+   "absent_rate": 0.04411764705882353,
+   "absent_ci": [
+    0.025414509250587053,
+    0.07551831985112153
+   ]
+  }
+ },
+ "arm": "raw run file, primary record; the corrected arm is in expectation.json"
+}

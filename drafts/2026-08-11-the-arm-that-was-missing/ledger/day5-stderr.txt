@@ -1,0 +1,4 @@
+{"vantage": {"ip": "160.79.106.141", "city": "Columbus", "region": "Ohio", "country": "US", "loc": "39.9612,-82.9988", "timezone": "America/New_York", "asn": "AS396982", "registrant": "[redacted under this practice's naming rule]", "source": "https://ipinfo.io/json", "fetched_utc": "2026-08-15T03:37:40Z"}}
+100/3869 185s
+200/3869 352s
+300/3869 495s

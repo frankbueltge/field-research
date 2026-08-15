@@ -1,0 +1,64 @@
+{
+ "schema": "field-research/deliverable-manifest/1",
+ "built_utc": "2026-08-15T03:45:30Z",
+ "built_by": "build_deliverable.py, session 120",
+ "source_runs": [
+  {
+   "label": "baseline",
+   "file": "ledger/baseline-union.json",
+   "run_id": "baseline-union (session 110 run + session 111 baselines 1-3)",
+   "utc_start": "2026-08-11T11:24:06Z",
+   "utc_end": "2026-08-11T23:05:18Z",
+   "sha256": "7cc55fc4f94768a30dcb651ab04fed58abb9b47f136d35fc9db078646af0d7d2"
+  },
+  {
+   "label": "2026-08-12",
+   "file": "ledger/run-2026-08-12T0341Z.json",
+   "run_id": "2026-08-12T0341Z",
+   "utc_start": "2026-08-12T03:40:28Z",
+   "utc_end": "2026-08-12T05:29:06Z",
+   "seconds": 6518.1,
+   "planned": 3869,
+   "requested": 3869,
+   "stopped": null,
+   "vantage_asn": "AS396982",
+   "vantage_country": "US",
+   "sha256": "e9d66881a80e14bc4544c9261f382c778dd36c4b42052e1e0808a572e3c59b12"
+  },
+  {
+   "label": "2026-08-13",
+   "file": "ledger/run-2026-08-13T0427Z.json",
+   "run_id": "TEMPLATE \u2014 the running session sets this",
+   "utc_start": "2026-08-13T04:27:00Z",
+   "utc_end": "2026-08-13T06:19:35Z",
+   "seconds": 6754.7,
+   "planned": 3869,
+   "requested": 3869,
+   "stopped": null,
+   "vantage_asn": "AS396982",
+   "vantage_country": "US",
+   "sha256": "128bd4382e61809096071060e67f0683e5a14251f5afd8908dac41910f5b4a1b"
+  },
+  {
+   "label": "2026-08-14",
+   "file": "ledger/run-2026-08-14T0343Z.json",
+   "run_id": "2026-08-14T03:43:47Z (manifest carried a placeholder)",
+   "utc_start": "2026-08-14T03:43:47Z",
+   "utc_end": "2026-08-14T05:34:11Z",
+   "seconds": 6623.0,
+   "planned": 3869,
+   "requested": 3869,
+   "stopped": null,
+   "vantage_asn": "AS396982",
+   "vantage_country": "US",
+   "sha256": "8e876569ac6abad693d8b43c5b6a44e027dd6d89ffd14712b4469278d1857f75"
+  }
+ ],
+ "corrections_file": {
+  "path": "ledger/corrections.json",
+  "sha256": "c05b395e6bbb54dbd7da0119189713c5d6d3bc4458ec9e194bc7123af97a7565",
+  "rows_applied": 2
+ },
+ "n_units": 3869,
+ "n_days": 4
+}
