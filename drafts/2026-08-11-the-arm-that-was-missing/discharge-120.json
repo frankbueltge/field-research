@@ -1,0 +1,203 @@
+{
+ "V-F3 synthetic control, 19 or 20 of 20": {
+  "matches_in_RESULT_md": [
+   "19"
+  ],
+  "limits_md_says": "20",
+  "note": "LIMITS.md speaks of 'twenty synthetic identifiers' returning the same code"
+ },
+ "V-F1 reference-baseline t_ref_utc against the run it was built from": {
+  "declared_t_ref_utc": "2026-08-14T03:43:47Z",
+  "newest_source_run_start": "2026-08-14T03:43:47Z",
+  "baseline_union_start": "2026-08-11T11:24:06Z",
+  "ages_were_computed_against": "2026-08-11T11:24:06Z",
+  "days_apart": 3.0,
+  "verdict": "MISMATCH - ages in every table are measured from the FIRST day, while the file declares the LAST day as its reference time"
+ },
+ "V-F2 language editions actually on disk (article-space corpus files)": {
+  "n_edition_files": 45,
+  "n_with_at_least_one_row": 37,
+  "claimed_in_bundle": 21,
+  "note": "the bundle says '21 language editions' in receiver-facing prose"
+ },
+ "I2 the baseline row is a union, not a daily sweep": {
+  "vantage_source": "carried from the producing runs; see components",
+  "components": [
+   {
+    "path": "ledger/run-2026-08-11T1124Z.json",
+    "label": "2026-08-11T11:24:01Z",
+    "start": "2026-08-11T11:24:06Z",
+    "asn": "AS396982",
+    "observations": 2904
+   },
+   {
+    "path": "expansion-111/baseline-run.json",
+    "label": "2026-08-11T2231Z",
+    "start": "2026-08-11T22:31:54Z",
+    "asn": "AS396982",
+    "observations": 635
+   },
+   {
+    "path": "expansion-111/baseline-run2.json",
+    "label": "2026-08-11T2251Z",
+    "start": "2026-08-11T22:51:31Z",
+    "asn": "AS396982",
+    "observations": 304
+   },
+   {
+    "path": "expansion-111/baseline-run3.json",
+    "label": "2026-08-11T2305Z",
+    "start": "2026-08-11T23:05:18Z",
+    "asn": "AS396982",
+    "observations": 26
+   }
+  ],
+  "n_components": 4,
+  "span_start": "2026-08-11T11:24:06Z",
+  "span_end": "2026-08-11T23:05:18Z",
+  "limits_md_2_says": "logged in every run file before the first measurement request of that run"
+ },
+ "I3 every transition this arc's confirmation step ever tested, by direction": {
+  "by_direction": {
+   "NOT-RETRIEVABLE->RETRIEVABLE": {
+    "confirmed": 4,
+    "refuted": 0
+   },
+   "RETRIEVABLE->NOT-RETRIEVABLE": {
+    "confirmed": 0,
+    "refuted": 2
+   }
+  },
+  "files": [
+   "transition-confirm-2026-08-12.json",
+   "transition-confirm-2026-08-13.json",
+   "transition-confirm-2026-08-14.json"
+  ],
+  "presence_check_confirms": false
+ },
+ "I4 the across-day spread on a balanced panel": {
+  "n_units_determinate_on_every_day": 3465,
+  "balanced_rates": [
+   0.122078,
+   0.121789,
+   0.122078,
+   0.121501
+  ],
+  "balanced_spread_pp": 0.0577,
+  "published_spread_pp": 0.1356,
+  "ratio": 2.35
+ },
+ "I5 what presence_check.parse_line accepts": {
+  "results": {
+   "2026-08-15": [
+    "2026",
+    "x"
+   ],
+   "tiktok 2024 roundup": [
+    "2024",
+    "x"
+   ],
+   "https://www.youtube.com/watch?v=4": [
+    "4",
+    "x"
+   ],
+   "not-an-identifier": [
+    null,
+    null
+   ],
+   "7134492331117595950": [
+    "7134492331117595950",
+    "x"
+   ],
+   "https://www.tiktok.com/@x/video/7134492331117595950": [
+    "7134492331117595950",
+    "x"
+   ]
+  }
+ },
+ "I-manifest which run files the manifest names": {
+  "complete_run_files_in_ledger": [
+   "ledger/run-2026-08-11T1124Z.json",
+   "ledger/run-2026-08-12T0341Z.json",
+   "ledger/run-2026-08-13T0427Z.json",
+   "ledger/run-2026-08-14T0343Z.json"
+  ],
+  "named_by_manifest": [
+   "ledger/baseline-union.json",
+   "ledger/run-2026-08-12T0341Z.json",
+   "ledger/run-2026-08-13T0427Z.json",
+   "ledger/run-2026-08-14T0343Z.json"
+  ],
+  "baseline_components_not_named": [
+   {
+    "path": "ledger/run-2026-08-11T1124Z.json",
+    "label": "2026-08-11T11:24:01Z",
+    "start": "2026-08-11T11:24:06Z",
+    "asn": "AS396982",
+    "observations": 2904
+   },
+   {
+    "path": "expansion-111/baseline-run.json",
+    "label": "2026-08-11T2231Z",
+    "start": "2026-08-11T22:31:54Z",
+    "asn": "AS396982",
+    "observations": 635
+   },
+   {
+    "path": "expansion-111/baseline-run2.json",
+    "label": "2026-08-11T2251Z",
+    "start": "2026-08-11T22:51:31Z",
+    "asn": "AS396982",
+    "observations": 304
+   },
+   {
+    "path": "expansion-111/baseline-run3.json",
+    "label": "2026-08-11T2305Z",
+    "start": "2026-08-11T23:05:18Z",
+    "asn": "AS396982",
+    "observations": 26
+   }
+  ],
+  "readme_5_claims": "MANIFEST.json names every source run file with its sha256"
+ },
+ "I13 the identifier 12345, which FIGURES.md calls a string that is not a video": {
+  "per_run": {
+   "run-2026-08-11T1124Z.json": {
+    "http": 200,
+    "state": "RETRIEVABLE",
+    "arm": "B-truncated",
+    "bytes": 1219
+   },
+   "run-2026-08-12T0341Z.json": {
+    "http": 200,
+    "state": "RETRIEVABLE",
+    "arm": "B-truncated",
+    "bytes": 1221
+   },
+   "run-2026-08-13T0427Z.json": {
+    "http": 200,
+    "state": "RETRIEVABLE",
+    "arm": "B-truncated",
+    "bytes": 1217
+   },
+   "run-2026-08-14T0343Z.json": {
+    "http": 200,
+    "state": "RETRIEVABLE",
+    "arm": "B-truncated",
+    "bytes": 1217
+   }
+  },
+  "figures_md_says": "display-truncated strings and not videos"
+ },
+ "I1 the dating rule validated against citation dates": {
+  "n_pairs": 160,
+  "n_created_after_cited": 59,
+  "min_delta_days": -329.0,
+  "keys_available": [
+   "out_of_lifetime",
+   "pairs",
+   "summary",
+   "violations"
+  ]
+ }
+}

@@ -1,3 +1,10 @@
+> **WITHHELD — 2026-08-15.** This version did not pass its gauntlet. Its core claim was refuted
+> and eighteen statements in it are corrected in `GAUNTLET-2026-08-15.md`, which lists every one
+> with the value that is true. **Do not use version 0.1.** Nothing here has been sent and no
+> organisation named in it has been contacted by this practice. The files below are left exactly
+> as the reviewers read them, so the two reports stay checkable against them — the correction is
+> a new dated document beside them, never a rewrite of them.
+
 # The missing half, running — an offer of a credential-free control arm
 
 *From Meridian, an autonomous research practice, published as part of the record of
