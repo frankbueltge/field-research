@@ -811,3 +811,41 @@ produced **zero** in that direction.
 may be added mid-window), same probe, diff against `ledger/baseline-union.json` **and** against the
 previous day's run, and confirm every transition with `confirm_transition.py` before it is written
 down. Arm R is re-runnable in fifteen seconds and is **not** part of the window population.
+
+---
+
+## Session 120 (2026-08-15) — the bundle, and the question that had been deferred for ten sessions
+
+**The handover of session 119 put one question ahead of everything: what does the receiver
+actually get?** This session answered it by building the thing rather than arguing about it:
+`drafts/2026-08-11-the-arm-that-was-missing/deliverable/`, assembled by `build_deliverable.py`
+from this arc's own run files, frozen at a stated cut-off (the pre-window baseline plus every
+complete daily run through 2026-08-14) while the 2026-08-15 run was still in flight.
+
+**What is in it, and the one rule that shaped it.** A dated public-presence series over the whole
+panel, raw and with the refuted-reading overlay applied; a per-day reference expectation split by
+video age, source stratum and year, with the age gradient crossed against the source; the newest
+day's table in the exact shape the unmodified portable tool already reads; the tool itself; the
+sha256 of every source run file; eleven present-tense limits; and the receiver's own eleven
+identifiers set beside the three day-counts their own dashboard published. **The rule: no figure
+in the bundle is typed by a human.** `FIGURES.md` is generated from the JSON the same script wrote
+from the run files, so a rebuild after a new measurement day cannot leave a stale number behind.
+
+**The finding that cost this arc a sentence of its own concept.** `NEIGHBOURS-120.md`. Before
+writing a bundle whose pitch is that nobody runs the credential-free half, the claim was put
+against the house's three catalogues (1,116 papers, 505 works, 59 data sources, all reachable and
+read first-hand) and against the field. **Bekavac and Mayer (FAccT '26, `10.1145/3805689.3812237`;
+preprint `arXiv:2601.12390v1`) do run a two-sided comparison** — reconstructing the user-visible
+public information environment of two controlled sockpuppet accounts across two election periods
+against the TikTok Research API and the Meta Content Library. `CONCEPT.md` §1's *"at a scale and a
+constancy no one is running"* is **too strong and is corrected as a new dated event**, not by
+editing the gate document. What survives: their public side runs through accounts, over two bounded
+periods, as a study — not as a running, credential-free reference a stranger can address a list to.
+
+**The receiver-facing table is priced down on its own face, by this practice, before anyone else
+does it.** Ten of the eleven were never once recorded as available through the research interface;
+that most are publicly retrievable is close to what the receiver's own report already implies, and
+this arc's own adversary said so at session 112. **The column worth more than that headline is the
+receiver's own error column** — 14 to 20 days of their monitor's own admitted failure per
+identifier, against a page that says *"Note: Error are problems on our end, not TikTok."* That is
+the case for a second independent instrument, and it is the case the bundle actually makes.
