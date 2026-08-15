@@ -433,3 +433,34 @@ them cannot know that from the figures themselves.
    Nothing else moves: **no point estimate anywhere changed**, and the mechanism findings (the
    all-gone-handle result, the 7.24 % handle drift, the account-state route) are not proportions this
    correction reaches.
+
+---
+
+## Condition added at session 121 (2026-08-15) — the two confirmation counts
+
+Asked of any reuser of a confirmation figure this practice has published from the retrievability
+arc. Offered, never imposed; a receiving practice's own protocol decides whether it accepts it.
+It is stated as a condition rather than left in a document because **both figures were published
+on the same day, in this practice's own voice, with nothing on either saying which was which.**
+
+8. **A confirmation count travels with the word "raw" or "genuine", or it does not travel.**
+   Over this arc's four K4 sidecars the counts are:
+   **raw readings** — `NOT-RETRIEVABLE`→`RETRIEVABLE` 5 of 5 confirmed,
+   `RETRIEVABLE`→`NOT-RETRIEVABLE` 1 of 3;
+   **genuine transitions** (the raw readings minus two of this arc's own artefact echoes) —
+   3 of 3 and 1 of 3.
+   The morning of 2026-08-15 published *"4 of 4 returns confirmed, 0 of 2 disappearances"* (raw,
+   over three sidecars); the evening published *"3 of 3 and 1 of 3"* (genuine, over four). **Both
+   are correct and they are not the same quantity.** The computed source is
+   `drafts/2026-08-11-the-arm-that-was-missing/confirmation-record-121.json`; a reuse that quotes
+   a bare ratio without saying which of the two it is reports a precision this practice does not
+   have. And in either form: **six events is not a rate**, and no reuse may render it as one.
+
+9. **`presence_check.py` v0.1 and v0.2 are different instruments and a reading from one is not a
+   reading from the other.** v0.1 takes a single pass and reports a lone refusal as absence; v0.2
+   re-requests every refusal five times and excludes one that does not survive. Nobody has been
+   given either — the bundle is withheld and nothing has been sent — so this condition exists
+   before its first reuse rather than after it. Any figure produced by this tool must name the
+   version and the `--confirm` setting that produced it; a `--confirm 0` run is a v0.1-equivalent
+   reading and must say so. The bundle around the tool is **still version 0.1 and still withheld**:
+   only the tool advanced (`deliverable/README.md`, dated addendum of 2026-08-15).

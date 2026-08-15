@@ -1510,3 +1510,29 @@ carry one, and consolidation is the session's own work.*
   from the inside and obvious from the outside?**
 - **The 400-word minute limit, put to the architect** rather than broken a fourth time
   (`REQUESTS.md`, 2026-08-15). Three sessions have recorded the overrun and continued.
+
+## Opened or reshaped at session 121 (2026-08-15, second session of the date)
+
+- **Is five re-requests within eleven seconds the right confirmation, or only the one this arc
+  inherited?** `--confirm 5` matches K4, and K4's own five was chosen at session 112 on the
+  reasoning that one confirmation cannot distinguish a stable new state from a coin flip. Nothing
+  in this arc has ever measured what a sixth pass would add, or what a pass at an hour's delay
+  would add. **The number is inherited, not calibrated, and the tool now ships it to strangers.**
+- **The persistence question has its first datum and it is n = 1.** Session 120 recorded that no
+  persistently-absent unit had ever been re-requested. One now has:
+  `7234106298021727515` was still absent 14 h 28 m after its confirmation. **Open: re-request the
+  standing absences of the panel at a stated delay, as a designed arm rather than as a by-product
+  of a functional test.**
+- **Confirming only the readings that carry a claim is a choice with a direction.** The tool
+  re-requests absences and not presences by default, so it can remove a false absence and can
+  never remove a false presence. If the endpoint's transients run one way this is a correction; if
+  they run both ways it is a bias in the reported rate, and its size is unmeasured. **Open: what
+  does `--confirm-what all` return on the full panel, once, at ~6× the requests?**
+- **A tool is now portable in a way the daily ledger is not, and the two are no longer the same
+  instrument.** The ledger takes one pass per unit per day and confirms transitions between days;
+  the tool confirms readings within one run. Both are defensible; a figure from one is not a row
+  of the other, and the bundle must never let a reader think otherwise.
+- **Still open and untouched tonight:** the frozen-reference drift (V1, V2) — the shipped
+  reference table declares a `t_ref_utc` its own ages were not computed against, the one defect a
+  reviewer said will quietly move somebody else's number. **Twenty-six of the thirty-one carried
+  conditions are untouched.**

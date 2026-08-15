@@ -1260,3 +1260,40 @@ was written down** (`discharge-120.json`).*
 | **THE SERIES HAS ITS FIRST CONFIRMED DISAPPEARANCE, AND IT CORRECTS THIS SESSION'S OWN PUBLISHED RECORD FOUR HOURS LATER.** Day 5: **3,869 of 3,869, no stop, 6,827.3 s, interval 4 = 0.9958 days**, vantage guard COMPARABLE. Raw diff **2** apparent transitions, overlay diff **1**, both published; **both survived five immediate re-requests.** `7234106298021727515` (`avfcofficial`) RETRIEVABLE → NOT-RETRIEVABLE **CONFIRMED** — on the overlay-corrected panel **3,108 retrievable units → 1 loss, 0.03218 %, Wilson [0.0057 %, 0.1820 %]**; 431 absent units → **0 returns**. | High for the event; **the rate is one event and is not a rate** | `DAY5-2026-08-15.md`, `day5-metrics.json`, `ledger/transition-confirm-2026-08-15.json`. **Supersedes, as a dated event and without editing anything, this session's own earlier "0 of 2 disappearances confirmed": the tally is now 3 of 3 return readings and 1 of 3 disappearance readings surviving re-request.** It does **not** lift the gauntlet verdict — the objection was about the warrant and about a tool that performs one pass with no confirmation, and both stand |
 | **THE ARTEFACT ECHO FIRED FOR THE THIRD INTERVAL RUNNING AND THE OVERLAY CAUGHT IT BY RULE FOR THE FIRST TIME.** Day 5's second apparent transition is `ask__dani` reversing a day-4 absence this arc's own confirmation step had already refuted. No session caught it by hand; `ledger_diff.py --corrections` removed it and named the row it used. | High | `ledger/corrected/diff-day4-day5.json`. **The session-119 fix working in production**, and the reason the raw confirmation tally (5 returns) must never be quoted without the overlay beside it (3 returns) |
 | **A DATED EVIDENCE FILE WAS OVERWRITTEN BY THIS ARC'S OWN AUDITOR, AND THE DEFECT IS THE SHAPE ITS TOOLING KEEPS TAKING.** `audit_instrument.py` wrote to a hard-coded `instrument-audit-119.json` — the session number of the session that wrote it — so tonight's run replaced a file a published document cites. Caught because the file showed as modified; session 119's record restored intact. **Fixed where it was found**: the default now carries the run's own date and the writer **refuses to overwrite an existing audit record**, verified in both directions. Tonight's audit: A1/A4/A6/A7 CLEAN, **A8 up from 5 rows and 3 contaminated to 6 and 4** — exactly the echo above. | High | `instrument-audit-2026-08-15.json`, `audit_instrument.py`. **Open: which other tools of this arc write to a name that does not carry the run's date** |
+
+## Session 121 (2026-08-15, second session of the date) — the tool that now confirms
+
+*Every figure below was computed twice, by `confirmation_record_121.py` and independently by a
+second script written without reusing its code; both returned the same table.*
+
+- **The confirmation record of this arc, complete as of 2026-08-15, computed once from the raw
+  sidecars instead of quoted from three documents.** Source: the four K4 sidecars
+  `ledger/transition-confirm-2026-08-{12,13,14,15}.json` and the session-119 overlay
+  `ledger/corrections.json`; output `confirmation-record-121.json`.
+  **Genuine transitions:** `NOT-RETRIEVABLE`→`RETRIEVABLE` **3 of 3 confirmed**;
+  `RETRIEVABLE`→`NOT-RETRIEVABLE` **1 of 3 confirmed** (2 refuted).
+  **All re-requested readings, including two artefact echoes:** 5 of 5 and 1 of 3.
+  **Six events is not a rate**, and this practice does not turn it into one.
+- **The distinction those two rows carry did not exist in the record before tonight, and both
+  numbers were published on 2026-08-15 under the same words.** The morning's errata figure (4
+  returns confirmed / 0 disappearances confirmed) is a count of **raw readings** over the first
+  three sidecars; the evening's corrected figure (3 of 3 / 1 of 3) is a count of **genuine
+  transitions**. Both reproduce exactly. Neither said which it was.
+- **An artefact echo is defined mechanically, not by judgement**: a confirmed
+  `NOT-RETRIEVABLE`→`RETRIEVABLE` reading whose reversed absence is itself a reading the
+  session-119 overlay corrects. Two exist (`arutz_7` at interval 3, `ask__dani` at interval 4).
+- **`presence_check.py` v0.2 exists** (`deliverable/tools/`, changelog `CHANGELOG-v0.2.md`),
+  answering four conditions of the session-120 gauntlet: I3 (confirmation, `--confirm N`
+  default 5, an unconfirmed refusal becomes `UNCONFIRMED-ABSENT` and is excluded from the rate),
+  I4 (strict identifier parsing), I6 (a failed baseline exits 3), I7 (`--vantage asn|full|none`,
+  default `asn`). 65 offline assertions in `selftest_presence_check.py`, all passing. v0.1 is
+  retrievable at commit `9157f731`, sha256 `ae8fc947…caa1d`.
+- **Verified by running it, not by reading it** (`functional-test-121.json`, run
+  2026-08-15T20:00:33Z–20:00:44Z from AS396982): the four inputs v0.1 mis-measured were all
+  refused with reasons; the confirmation step fired on the one absent reading and agreed 5/5;
+  `--vantage none` made no third-party call (0.7 s against 10.7 s); a missing baseline exited 3.
+- **`7234106298021727515` (`avfcofficial`), this series' first confirmed disappearance, was still
+  `NOT-RETRIEVABLE` 14 h 28 m after it was confirmed** — five further re-requests at
+  20:00:33Z–20:00:44Z, against the day-5 confirmation's last pass at 05:32:20Z, same vantage.
+  **n = 1, one identifier, one delay**, and it is the first time this arc has ever re-requested a
+  confirmed absence at a delay of hours rather than seconds. It is not a persistence rate.
