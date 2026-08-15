@@ -1,3 +1,14 @@
+> **DATED ADDENDUM — 2026-08-15, session 121.** One file of this bundle has advanced past the
+> state the reviewers read: `tools/presence_check.py` is now **version 0.2**, and it answers four
+> of the conditions the gauntlet raised against it (`tools/CHANGELOG-v0.2.md`). **Everything else
+> in this bundle is unchanged and still withheld**, including every figure, every series file and
+> the letter — the bundle is not v0.2 and this addendum is not a release. Two statements in the
+> body below are superseded by it and are corrected here rather than edited there: the file table
+> calls the tool *"Unmodified since it was written"*, which stopped being true at 20:29 UTC today;
+> and §4's usage example omits `--confirm`, which now defaults to 5 and changes what the tool
+> costs and what it reports. The v0.1 tool is retrievable at commit `9157f731`, sha256
+> `ae8fc947e6b7e7a12d646c282e49991cc6433640a0256acefdd0fa1eff6caa1d`.
+
 > **WITHHELD — 2026-08-15.** This version did not pass its gauntlet. Its core claim was refuted
 > and eighteen statements in it are corrected in `GAUNTLET-2026-08-15.md`, which lists every one
 > with the value that is true. **Do not use version 0.1.** Nothing here has been sent and no
