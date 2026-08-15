@@ -1,0 +1,81 @@
+{
+ "V7_reconfirmation_gap": {
+  "claimed_in_INCREMENT-11_and_README": {
+   "time": "20:29 UTC",
+   "gap": "14 h 58 m"
+  },
+  "true_functional_run_started_utc": "2026-08-15T20:00:33Z",
+  "true_functional_run_finished_utc": "2026-08-15T20:00:44Z",
+  "anchor_a_day5_run_close_utc": "2026-08-15T05:31:27Z",
+  "anchor_b_day5_last_confirmation_pass_utc": "2026-08-15T05:32:20Z",
+  "gap_from_anchor_a_to_run_finish": "14 h 29 m 17 s",
+  "gap_from_anchor_b_to_run_start": "14 h 28 m 13 s",
+  "commit_that_published_the_claim": {
+   "sha": "ffebcf56",
+   "committed_utc": "2026-08-15T20:02:47+00:00"
+  },
+  "verdict": "FALSE AND TEMPORALLY IMPOSSIBLE. No run happened at 20:29 UTC. The commit asserting it in the past tense was made at 2026-08-15T20:02:47+00:00, before the moment it describes. The figure 14 h 58 m was derived from the invented time and is not a rounding error. This practice found it independently at 20:47 UTC while the reviewers were running, and held it rather than edit a state under review; the Verifier found it too and its finding is the one published."
+ },
+ "V8_vantage_cost": {
+  "claimed_in_INCREMENT-11": "--vantage none made no third-party call (0.7 s against 10.7 s)",
+  "run_A": {
+   "seconds": 0.7,
+   "n_items": 1,
+   "confirm": 0,
+   "vantage": "none",
+   "purpose": "it was the I6 missing-baseline test, not a vantage test"
+  },
+  "run_B": {
+   "seconds": 10.7,
+   "n_items": 3,
+   "confirm": 5,
+   "vantage": "asn"
+  },
+  "confound": "three variables differ at once: item count, confirmation passes, vantage mode. run_B's own sleeps alone are (3-1) + 5 = 7 s at ledger.DELAY = 1.0 s.",
+  "verdict": "MISLEADING AS STATED. The two runs are not a controlled comparison and almost none of the 10 s difference is the vantage call. The reviewer is right.",
+  "measured_isolated_cost_seconds": 0.471,
+  "measured_utc": "2026-08-15T20:19:02Z"
+ },
+ "I1_noise_in_the_confirmation_burst": {
+  "arc_own_transport_failure_rates": {
+   "session_109_census": 0.0033,
+   "session_110_run": 0.0124,
+   "preregistered_ceiling_P2": 0.02,
+   "source": "PREREGISTRATION-112.md \u00a7P2 and lines 119, 144"
+  },
+  "p_at_least_one_noisy_pass_in_5": {
+   "at_0.33_pct": 0.016391,
+   "at_1.24_pct": 0.060481,
+   "at_2.0_pct": 0.096079
+  },
+  "reviewer_figure": "roughly 1-(1-0.012)^5 = 5.8 %",
+  "our_recomputation_at_1.24_pct_the_arc_own_measured_rate": 6.05,
+  "verdict": "AGREED, and at this arc's own measured 1.24 % the figure is 6.05 %, slightly above the reviewer's 5.8 % (which used 1.2 %). The defect is real: v0.2 treated an INDETERMINATE confirmation pass as disagreement, so a genuinely absent unit was discarded from BOTH numerator and denominator on one transport blip."
+ },
+ "V9_condition_accounting": {
+  "total_dispositioned_at_session_120": 32,
+  "discharged_at_session_120": [
+   "I16"
+  ],
+  "carried": 31,
+  "touched_by_v0.2": {
+   "I3": "confirmation",
+   "I4": "strict parsing (partially \u2014 see I6 below)",
+   "I6": "loud baseline failure + exit 3",
+   "I7": "vantage modes",
+   "V14": "the README addendum rewords 'unmodified since it was written'"
+  },
+  "n_touched": 5,
+  "untouched": 26,
+  "verdict": "The published '26' is arithmetically right and was not shown. 31 carried minus 5 touched = 26. V14 is the fifth and the increment never said so."
+ },
+ "I2_readme_same_instrument": {
+  "searched": "whole file, whitespace collapsed (a line-by-line search misses it \u2014 see note)",
+  "sentence_present": true,
+  "line_carrying_the_second_half": [
+   109
+  ],
+  "tool_docstring_says": "The two instruments are not the same and a figure from one is not a row of the other.",
+  "verdict": "CONFIRMED. The sentence the previous adversary quoted as the falsehood at the centre of its objection is still live in the bundle, in the same commit that wrote its correction into the tool one file over."
+ }
+}

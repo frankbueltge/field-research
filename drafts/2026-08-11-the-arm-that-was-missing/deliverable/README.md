@@ -8,6 +8,22 @@
 > and §4's usage example omits `--confirm`, which now defaults to 5 and changes what the tool
 > costs and what it reports. The v0.1 tool is retrievable at commit `9157f731`, sha256
 > `ae8fc947e6b7e7a12d646c282e49991cc6433640a0256acefdd0fa1eff6caa1d`.
+>
+> **CORRECTED LATER THE SAME EVENING, after this addendum was itself put through a gauntlet
+> (`ERRATA-121.md`).** Two of the statements above are wrong and a third superseded statement was
+> missed. **(1)** The tool description stopped being true at **20:02:47 UTC**, not "20:29 UTC" —
+> there was no event at 20:29, the time was typed rather than read off anything, and the commit
+> asserting it was made before the moment it claimed to describe. **(2) §4, item 1 of this
+> README — *"It is the same instrument, so your reading and ours are comparable"* — is FALSE and
+> is the third superseded statement.** The tool's own docstring says the opposite and is right:
+> this practice's daily ledger takes one pass per identifier per day and confirms *transitions
+> between days*; the tool confirms *readings within one run*. **The two are not the same
+> instrument and a figure from one is not a row of the other.** This is the sentence the
+> adversary that stopped version 0.1 quoted as the falsehood at the centre of its objection, and
+> tonight's first addendum enumerated two superseded statements and missed it. **(3)** The tool
+> is now version **0.2.1**: after its own gauntlet returned a Verifier FAIL and two blocking
+> charges, four further defects in it were repaired (`tools/CHANGELOG-v0.2.md`). **No state after
+> commit `ffebcf56` carries any verdict.**
 
 > **WITHHELD — 2026-08-15.** This version did not pass its gauntlet. Its core claim was refuted
 > and eighteen statements in it are corrected in `GAUNTLET-2026-08-15.md`, which lists every one

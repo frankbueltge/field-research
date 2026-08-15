@@ -175,6 +175,71 @@ rows_t, stub_t = run([(GONE, "b")], 5, "absent", {GONE: [503]})
 check("an unexpected status is INDETERMINATE", rows_t[0]["state"], "INDETERMINATE")
 check("an INDETERMINATE reading is not re-requested", len(stub_t.calls), 1)
 
+# ------------------------------- 4b. v0.2.1: noise in the confirmation burst is not disagreement
+# The adversary of v0.2 wrote this assertion's absence as its blocking charge: the 65-assertion
+# suite tested INDETERMINATE only as a FIRST-pass outcome, which is never a confirmation target,
+# so nothing exercised an INDETERMINATE pass DURING a confirmation. v0.2 treated it as
+# disagreement and discarded a genuinely absent unit from both numerator and denominator. At this
+# arc's own measured transport-failure rate (1.24 %, PREREGISTRATION-112.md §P2) that is 6.05 %
+# of absent units.
+NOISY = "7123456789012345681"
+
+rows_n, _ = run([(NOISY, "d")], 5, "absent", {NOISY: [400, 400, 503, 400, 400, 400]})
+c = rows_n[0]["confirmation"]
+check("v0.2.1 one noisy pass does not refute an absence", rows_n[0]["state"], "NOT-RETRIEVABLE")
+check("v0.2.1 the noisy pass is counted as noise, not disagreement", c["n_noise"], 1)
+check("v0.2.1 no pass reversed the reading", c["n_reversing"], 0)
+check("v0.2.1 four passes agreed", c["n_agreeing"], 4)
+check("v0.2.1 the confirmation is marked partial", c["partial"], True)
+check_true("v0.2.1 the partial confirmation says so in words", "4 of 5" in (c.get("note") or ""),
+           c.get("note"))
+counts_n, det_n, rate_n = pc.tally(rows_n)
+check("v0.2.1 a partially confirmed absence stays in the denominator", det_n, 1)
+check("v0.2.1 and in the numerator", rate_n, 1.0)
+
+# A determinate pass that disagrees still refutes, exactly as before — the repair must not have
+# turned the confirmation step off.
+rows_r, _ = run([(NOISY, "d")], 5, "absent", {NOISY: [400, 503, 200, 400, 400, 400]})
+check("v0.2.1 a real reversal still refutes even with noise present",
+      rows_r[0]["state"], "UNCONFIRMED-ABSENT")
+check("v0.2.1 the reversal is counted", rows_r[0]["confirmation"]["n_reversing"], 1)
+
+# Every pass noise: the confirmation did not run, and the tool says so rather than confirming.
+rows_z, _ = run([(NOISY, "d")], 3, "absent", {NOISY: [400, 503]})
+check("v0.2.1 an all-noise confirmation reports INDETERMINATE", rows_z[0]["state"],
+      "INDETERMINATE")
+check_true("v0.2.1 an all-noise confirmation says the confirmation did not run",
+           "did not run" in (rows_z[0]["confirmation"].get("note") or ""),
+           rows_z[0]["confirmation"].get("note"))
+
+# ------------------------------- 4c. v0.2.1: the URL rule checks the host, not only the path
+# v0.2 accepted /video/<digits> on ANY domain and measured it against this platform's endpoint.
+for other in ["https://www.youtube.com/video/7123456789012345678",
+              "https://example.com/video/7123456789012345678/watch",
+              "https://vimeo.com/video/7123456789012345678",
+              "https://www.instagram.com/reel/video/9999999999",
+              "https://tiktok.com.evil.example/video/7123456789012345678"]:
+    vid_o, _h, reason_o = pc.parse_line(other)
+    check(f"v0.2.1 refuses another host: {other[:44]}", vid_o, None)
+    check_true(f"v0.2.1 names the host it refused: {other[:44]}",
+               "not this platform" in (reason_o or ""), reason_o)
+
+check("v0.2.1 accepts the platform's own /v/<id> share path",
+      pc.parse_line("https://m.tiktok.com/v/7123456789012345678.html")[0],
+      "7123456789012345678")
+_v, _h, _r = pc.parse_line("https://vm.tiktok.com/ZMabcdef/")
+check("v0.2.1 still refuses an unresolved share link", _v, None)
+check_true("v0.2.1 gives the share link the RIGHT reason, not 'another platform'",
+           "does not follow redirects" in (_r or "") and "not this platform" not in (_r or ""), _r)
+
+# ------------------------------- 4d. v0.2.1: ordinary spreadsheet separators are accepted
+for sep_line, label in [("7123456789012345678\tsomeuser", "tab"),
+                        ("7123456789012345678;someuser", "semicolon"),
+                        ("7123456789012345678 someuser", "space"),
+                        ("7123456789012345678,someuser", "comma")]:
+    check(f"v0.2.1 accepts a {label}-separated id and handle",
+          pc.parse_line(sep_line)[:2], ("7123456789012345678", "someuser"))
+
 # ------------------------------------------------------------------ 5. vantage modes (I7)
 FAKE_VANTAGE = {"ip": "203.0.113.7", "city": "Somewhere", "region": "R", "country": "US",
                 "loc": "1.0,2.0", "timezone": "UTC", "asn": "AS396982",

@@ -1,0 +1,150 @@
+{
+ "schema": "field-research/presence-check/2",
+ "tool": "presence_check.py",
+ "tool_version": "0.2.1",
+ "list": {
+  "file": "/tmp/claude-0/-home-user-field-research/d87c4b67-5fba-53c7-b5eb-5e82a8c07b86/scratchpad/livelist2.txt",
+  "label": "session-121 functional test, v0.2.1 after gauntlet",
+  "n_items": 3,
+  "refused_lines": [
+   {
+    "line": "2026-08-15",
+    "reason": "not an identifier \u2014 the field must be a /video/<digits> URL on this platform or digits only; a date, a year inside a sentence or a title is refused"
+   },
+   {
+    "line": "https://www.youtube.com/video/7123456789012345678",
+    "reason": "a URL on 'www.youtube.com', which is not this platform \u2014 this tool measures one platform's endpoint and will not treat another host's path as an identifier of it"
+   },
+   {
+    "line": "https://example.com/video/7123456789012345678/watch",
+    "reason": "a URL on 'example.com', which is not this platform \u2014 this tool measures one platform's endpoint and will not treat another host's path as an identifier of it"
+   },
+   {
+    "line": "https://vm.tiktok.com/ZMabcdef/",
+    "reason": "a URL on this platform with no /video/<digits> or /v/<digits> path \u2014 a share link of the vm./vt. kind names no identifier until it is resolved, and this tool does not follow redirects"
+   }
+  ]
+ },
+ "started_utc": "2026-08-15T20:21:26Z",
+ "finished_utc": "2026-08-15T20:21:37Z",
+ "seconds": 10.6,
+ "vantage": {
+  "mode": "asn",
+  "asn": "AS396982",
+  "country": "US",
+  "source": "https://ipinfo.io/json",
+  "fetched_utc": "2026-08-15T20:21:26Z",
+  "note": "only the autonomous system and country are kept. The lookup itself disclosed this machine's IP address to the service named in `source`; that cannot be undone by discarding the answer, and --vantage none avoids the call entirely."
+ },
+ "probe": {
+  "endpoint": "https://www.tiktok.com/oembed?url=",
+  "user_agent": "field-research/1.0 (independent research instrument; sequential, 1 req/s)",
+  "delay_s": 1.0,
+  "timeout_s": 25,
+  "imported_from": "ledger.py (not re-implemented)"
+ },
+ "confirmation": {
+  "passes": 5,
+  "applied_to": "absent",
+  "enabled": true,
+  "rule": "a reading is kept only if every confirmation pass agrees with it. A first-pass refusal that does not survive is reported as UNCONFIRMED-ABSENT and excluded from the absence rate \u2014 this arc's K4 criterion, PREREGISTRATION-112.md \u00a74.",
+  "record_behind_the_default": "of this arc's three genuine disappearance readings, one survived five re-requests and two did not; of its three genuine return readings, three survived. Six events, computed in confirmation-record-121.json. Not a rate.",
+  "warning_if_disabled": null,
+  "asymmetry": "with --confirm-what absent (the default) a RETRIEVABLE reading is taken on one pass; this tool cannot detect a false reading of presence and has never looked for one.",
+  "direction_of_the_bias_this_creates": "stated because the code forces it, not because it was measured. A refuted absence is DISCARDED (UNCONFIRMED-ABSENT, out of numerator and denominator) rather than reclassified to RETRIEVABLE, while a false presence is never tested at all and stays in the denominator on the retrievable side. Both effects push the reported absence rate DOWN relative to a symmetric regime. The size is unknown. --confirm-what all removes the second effect and not the first.",
+  "what_five_passes_is_and_is_not": "five is the number this arc pre-registered at session 112, and this practice's own record declines to certify it: PREREGISTRATION-119-overlay-use.md says in as many words that K4's five re-requests are 'not claimed' to be the right test, only the pre-registered one. Nothing here has measured what a sixth pass or a pass at an hour's delay would add. Treat --confirm 5 as a precedent this tool follows, never as a threshold anyone validated."
+ },
+ "counts": {
+  "NOT-RETRIEVABLE": 1,
+  "RETRIEVABLE": 2
+ },
+ "determinate": 3,
+ "public_absence_rate": 0.3333333333333333,
+ "absence_rate_denominator": "RETRIEVABLE + NOT-RETRIEVABLE; UNCONFIRMED-ABSENT and INDETERMINATE are excluded from both parts",
+ "n_unconfirmed_absent": 0,
+ "expectation_for_this_age_profile": {
+  "age_histogram": {
+   "3-4y": 1,
+   "4-5y": 1
+  },
+  "n_dated": 2,
+  "expected_absent_rate": 0.16248363445928254,
+  "expected_lo": 0.13398033131009063,
+  "expected_hi": 0.19573117111468225,
+  "reference_population": {
+   "source": "ledger/run-2026-08-14T0343Z.json",
+   "run_id": "2026-08-14T03:43:47Z (manifest carried a placeholder)",
+   "n": 3583,
+   "what_it_is": "videos cited across MediaWiki language editions and posted to one public technology forum, measured from AS396982 on one day"
+  }
+ },
+ "baseline_currency": {
+  "declared_t_ref_utc": "2026-08-14T03:43:47Z",
+  "status": "declared by the baseline file; NOT verified by this tool",
+  "age_days_at_measurement": 1.693
+ },
+ "baseline_note": null,
+ "what_not_retrievable_means": "not publicly retrievable from this vantage at this time, on a first pass and every confirmation pass. The endpoint's refusal is a single opaque HTTP 400 that a never-existing identifier also returns (session 109 three-arm control, 20 synthetic identifiers). NOT DELETED.",
+ "observations": [
+  {
+   "http": 400,
+   "bytes": 45,
+   "body_code": 400,
+   "body_message": "Something went wrong",
+   "vid": "7234106298021727515",
+   "handle_sent": "avfcofficial",
+   "first_pass_state": "NOT-RETRIEVABLE",
+   "state": "NOT-RETRIEVABLE",
+   "created_utc": "2023-05-17T11:07:05Z",
+   "age_y": 3.2481450110274546,
+   "band": "3-4y",
+   "confirmation": {
+    "passes": 5,
+    "states": [
+     "NOT-RETRIEVABLE",
+     "NOT-RETRIEVABLE",
+     "NOT-RETRIEVABLE",
+     "NOT-RETRIEVABLE",
+     "NOT-RETRIEVABLE"
+    ],
+    "n_agreeing": 5,
+    "n_reversing": 0,
+    "n_noise": 0,
+    "partial": false,
+    "agreed": true,
+    "rule": "a reading is refuted only by a determinate pass that disagrees with it. An INDETERMINATE pass is noise and is counted as nothing \u2014 never as disagreement."
+   }
+  },
+  {
+   "http": 200,
+   "bytes": 1562,
+   "author_unique_id": "ask__dani",
+   "title_len": 35,
+   "body_code": null,
+   "vid": "7016669364938149122",
+   "handle_sent": "ask__dani",
+   "first_pass_state": "RETRIEVABLE",
+   "state": "RETRIEVABLE",
+   "created_utc": "2021-10-08T12:20:44Z",
+   "age_y": 4.852385542626815,
+   "band": "4-5y",
+   "confirmation": null
+  },
+  {
+   "http": 200,
+   "bytes": 1219,
+   "author_unique_id": "xksnkfkf",
+   "title_len": 0,
+   "body_code": null,
+   "vid": "12345",
+   "handle_sent": "x",
+   "first_pass_state": "RETRIEVABLE",
+   "state": "RETRIEVABLE",
+   "created_utc": null,
+   "age_y": null,
+   "band": null,
+   "dating_note": "not-19-digit: dating rule does not hold outside the modern scheme",
+   "confirmation": null
+  }
+ ]
+}

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """presence_check - measure whether named videos are publicly retrievable, on a named day.
 
-VERSION 0.2, session 121, 2026-08-15.
+VERSION 0.2.1, session 121, 2026-08-15.
 
     python3 presence_check.py LISTFILE [-o OUT.json] [--baseline presence-baseline.json]
                               [--confirm N] [--confirm-what absent|all]
@@ -14,6 +14,17 @@ in place: it is retrievable at commit `9157f731` of this repository, sha256
 `ae8fc947e6b7e7a12d646c282e49991cc6433640a0256acefdd0fa1eff6caa1d`, so the two reviewers'
 reports stay checkable against the state they were run on.
 
+WHAT 0.2.1 REPAIRED, AFTER ITS OWN GAUNTLET
+-------------------------------------------
+**VERSION 0.2.1 (same session, after its own gauntlet).** The two reviewers of v0.2 returned a
+Verifier FAIL and an Interlocutor verdict of *survives, narrowed*, with four defects in this file.
+All four are repaired here and none of the repairs carries a verdict — the reviewers read v0.2,
+retrievable at commit `ffebcf56`. What changed: an INDETERMINATE confirmation pass is no longer
+treated as disagreement (it discarded roughly one genuinely absent unit in seventeen); the URL
+rule now checks the host, because v0.2 accepted `/video/<digits>` on ANY domain; tab-, semicolon-
+and space-separated lists are accepted; and the direction of the bias the design creates is
+stated in the output. Full account: `CHANGELOG-v0.2.md`, section "What v0.2.1 repaired".
+
 WHAT CHANGED IN 0.2, AND WHICH OBJECTION EACH ANSWERS
 -----------------------------------------------------
 1. **Readings are confirmed (I3, the objection that stopped the ship).** v0.1 took one pass and
@@ -23,8 +34,9 @@ WHAT CHANGED IN 0.2, AND WHICH OBJECTION EACH ANSWERS
    claim, and a reading that does not survive is reported as UNCONFIRMED, not as absence.
 2. **A line that is not an identifier is refused (I4).** v0.1 read `2026-08-15` as the video
    `2026`, `tiktok 2024 roundup` as `2024`, and a different platform's URL as `4`. It now
-   refuses anything that is not a `/video/<digits>` path or an all-digit identifier, and prints
-   what it refused.
+   requires a `/video/<digits>` or `/v/<digits>` path **on this platform's host** or a field
+   that is entirely digits, and prints what it refused and why. (v0.2 checked the path and not
+   the host, so another site's `/video/<digits>` was accepted; 0.2.1 checks the host.)
 3. **A failed baseline fails where a human sees it (I6).** v0.1 recorded the failure in one JSON
    field and printed a full run as if nothing had happened. It now prints on both streams and
    exits 3.
@@ -88,7 +100,7 @@ import time
 
 import ledger
 
-VERSION = "0.2"
+VERSION = "0.2.1"
 YEAR_S = 365.25 * 86400.0
 DEFAULT_CONFIRM = 5
 
@@ -99,9 +111,21 @@ DEFAULT_CONFIRM = 5
 # (session 110, D12) established that `12345` is a real video returning a full body, so a rule
 # that discards short identifiers discards real data. What is added is that the identifier must
 # be the WHOLE field, or the digits of a `/video/` path. Everything else is refused out loud.
-VIDEO_PATH_RE = re.compile(r"/video/(\d{1,25})(?:[/?#]|$)")
+#
+# v0.2.1, session 121: the adversary found that v0.2's repair was domain-blind — it matched
+# `/video/<digits>` anywhere in any URL, so `https://www.youtube.com/video/7123…` and
+# `https://example.com/video/7123…/watch` were ACCEPTED and measured against this platform's
+# endpoint. That is I4's own failure through the accepted path instead of the refused one. The
+# host is now checked, and the platform's `/v/<digits>` share path is accepted because it is the
+# same platform and names the identifier plainly.
+VIDEO_PATH_RE = re.compile(r"/(?:video|v)/(\d{1,25})(?:[./?#]|$)")
 ALL_DIGITS_RE = re.compile(r"^(\d{1,25})$")
 HANDLE_RE = re.compile(r"@([A-Za-z0-9._-]+)")
+URL_HOST_RE = re.compile(r"^[a-z][a-z0-9+.-]*://([^/?#]+)", re.I)
+PLATFORM_HOST_RE = re.compile(r"(?:^|\.)tiktok\.com$", re.I)
+# Tab, semicolon, comma or run of spaces — the separators an ordinary spreadsheet export uses.
+# v0.2 accepted only the comma and refused the rest, which is a tool refusing real lists.
+FIELD_SPLIT_RE = re.compile(r"[,;\t]|\s{1,}")
 AGE_BANDS = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 99)]
 
 STATE_RETRIEVABLE = "RETRIEVABLE"
@@ -141,23 +165,36 @@ def parse_line(line):
     if m:
         handle = m.group(1)
     field = line
-    if "," in line and not line.lower().startswith("http"):
-        parts = [p.strip() for p in line.split(",")]
+    if not URL_HOST_RE.match(line):
+        parts = [p.strip() for p in FIELD_SPLIT_RE.split(line) if p.strip()]
         if len(parts) >= 2 and parts[1]:
             handle = parts[1].lstrip("@")
-        field = parts[0]
+        if parts:
+            field = parts[0]
+
+    host_m = URL_HOST_RE.match(field)
+    if host_m:
+        host = host_m.group(1).split("@")[-1].split(":")[0]
+        if not PLATFORM_HOST_RE.search(host):
+            return None, None, (f"a URL on {host!r}, which is not this platform — this tool "
+                                "measures one platform's endpoint and will not treat another "
+                                "host's path as an identifier of it")
+        m = VIDEO_PATH_RE.search(field)
+        if m:
+            return m.group(1), (handle or "x"), None
+        return None, None, ("a URL on this platform with no /video/<digits> or /v/<digits> path "
+                            "— a share link of the vm./vt. kind names no identifier until it is "
+                            "resolved, and this tool does not follow redirects")
+
     m = VIDEO_PATH_RE.search(field)
     if m:
         return m.group(1), (handle or "x"), None
     m = ALL_DIGITS_RE.match(field)
     if m:
         return m.group(1), (handle or "x"), None
-    if field.lower().startswith("http"):
-        return None, None, ("a URL with no /video/<digits> path — a short link or a link from "
-                            "another platform names no identifier this tool can measure, and "
-                            "this tool does not resolve redirects")
-    return None, None, ("not an identifier — the field must be a /video/<digits> URL or digits "
-                        "only; a date, a year inside a sentence or a title is refused")
+    return None, None, ("not an identifier — the field must be a /video/<digits> URL on this "
+                        "platform or digits only; a date, a year inside a sentence or a title "
+                        "is refused")
 
 
 def dated(vid, t_ref):
@@ -336,15 +373,50 @@ def measure(items, t_ref, confirm, confirm_what, probe=None, sleep=None, log=Non
             sleep(ledger.DELAY)
             rec = probe(r["vid"], r["handle_sent"])
             states.append(ledger.classify(rec))
-        agreed = all(s == r["first_pass_state"] for s in states)
-        r["confirmation"] = {"passes": confirm, "states": states, "agreed": agreed}
-        if not agreed:
+        # v0.2.1, session 121, the adversary's blocking charge 1. v0.2 asked `all(s == first)`,
+        # which treated a pass that TIMED OUT exactly like a pass that came back with the
+        # opposite state. At this arc's own measured transport-failure rate of 1.24 %
+        # (PREREGISTRATION-112.md §P2) the chance that at least one of five passes is noise is
+        # 6.05 %, so roughly one genuinely absent unit in seventeen was being thrown out of both
+        # numerator and denominator — pushing the reported absence rate DOWN, and worst exactly
+        # when the endpoint is under the load the confirmation step itself adds.
+        #
+        # A pass is now one of three things and they are not merged:
+        #   agreeing     — determinate and equal to the first-pass reading
+        #   reversing    — determinate and opposite: this is what refutes a reading
+        #   noise        — INDETERMINATE: it says nothing, and is counted as nothing
+        reversing = [s for s in states
+                     if s in (STATE_RETRIEVABLE, STATE_ABSENT) and s != r["first_pass_state"]]
+        agreeing = [s for s in states if s == r["first_pass_state"]]
+        noise = [s for s in states if s == STATE_INDETERMINATE]
+        conf = {"passes": confirm, "states": states,
+                "n_agreeing": len(agreeing), "n_reversing": len(reversing),
+                "n_noise": len(noise),
+                "partial": bool(noise) and not reversing,
+                "agreed": not reversing and bool(agreeing),
+                "rule": ("a reading is refuted only by a determinate pass that disagrees with "
+                         "it. An INDETERMINATE pass is noise and is counted as nothing — never "
+                         "as disagreement.")}
+        r["confirmation"] = conf
+        if reversing:
             if r["first_pass_state"] == STATE_ABSENT:
                 r["state"] = STATE_UNCONFIRMED
             else:
                 r["state"] = STATE_INDETERMINATE
-                r["confirmation"]["note"] = ("a first-pass RETRIEVABLE reading that did not "
-                                             "reproduce is not evidence either way")
+                conf["note"] = ("a first-pass RETRIEVABLE reading that a determinate pass "
+                                "contradicted is not evidence either way")
+        elif not agreeing:
+            # Every pass was noise. The confirmation did not run, and pretending it confirmed
+            # anything would be worse than reporting that nothing was learned.
+            r["state"] = STATE_INDETERMINATE
+            conf["note"] = (f"all {confirm} confirmation passes were INDETERMINATE: the "
+                            "confirmation did not run, so this reading is reported as "
+                            "INDETERMINATE rather than as a confirmed or a refuted absence")
+        elif noise:
+            conf["note"] = (f"confirmed on {len(agreeing)} of {confirm} passes; "
+                            f"{len(noise)} pass(es) were transport noise and counted as nothing. "
+                            "A consumer wanting full-strength confirmations only should filter "
+                            "on confirmation.partial == false.")
     return rows
 
 
@@ -477,6 +549,21 @@ def main(argv=None):
             "asymmetry": ("with --confirm-what absent (the default) a RETRIEVABLE reading is "
                           "taken on one pass; this tool cannot detect a false reading of "
                           "presence and has never looked for one."),
+            "direction_of_the_bias_this_creates": (
+                "stated because the code forces it, not because it was measured. A refuted "
+                "absence is DISCARDED (UNCONFIRMED-ABSENT, out of numerator and denominator) "
+                "rather than reclassified to RETRIEVABLE, while a false presence is never "
+                "tested at all and stays in the denominator on the retrievable side. Both "
+                "effects push the reported absence rate DOWN relative to a symmetric regime. "
+                "The size is unknown. --confirm-what all removes the second effect and not the "
+                "first."),
+            "what_five_passes_is_and_is_not": (
+                "five is the number this arc pre-registered at session 112, and this practice's "
+                "own record declines to certify it: PREREGISTRATION-119-overlay-use.md says in "
+                "as many words that K4's five re-requests are 'not claimed' to be the right "
+                "test, only the pre-registered one. Nothing here has measured what a sixth pass "
+                "or a pass at an hour's delay would add. Treat --confirm 5 as a precedent this "
+                "tool follows, never as a threshold anyone validated."),
         },
         "counts": counts,
         "determinate": det,

@@ -1,3 +1,13 @@
+> **CORRECTED THE SAME EVENING — this file failed its own gauntlet.** The Verifier returned
+> **FAIL** and the adversary two blocking charges. Two statements below are **false**: the
+> re-confirmation happened at **20:00:33Z**, not "20:29 UTC", and the gap is **14 h 29 m**, not
+> "14 h 58 m" — there was no run at 20:29 and the time was typed rather than read off anything;
+> and the *"0.7 s against 10.7 s"* vantage comparison differs in three variables at once, with the
+> geolocation call actually costing **0.451 s**. The claim that I4 is closed is also too strong:
+> the URL rule was domain-blind. **This file is not rewritten**, so both reports stay checkable
+> against it. Every correction with its true value: `ERRATA-121.md`. Reports: `VERIFIER-121.md`,
+> `INTERLOCUTOR-13.md`. Repairs: `presence_check.py` v0.2.1, which carries no verdict.
+
 # Increment 12 — the one file that is the measurement
 
 *Session 121, 2026-08-15 (second session of the date). The file numbering of this arc runs one

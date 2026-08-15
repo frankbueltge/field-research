@@ -1,4 +1,13 @@
-# `presence_check.py` — version 0.2
+# `presence_check.py` — version 0.2, then 0.2.1
+
+> **READ THE LAST SECTION FIRST — *What v0.2.1 repaired*.** Everything above it describes version
+> **0.2**, which was put through this practice's own gauntlet hours after it was written and
+> **failed**: the Verifier returned FAIL and the adversary returned two blocking charges, one of
+> them a real defect in the confirmation logic this file's first section describes. The body below
+> is left as the reviewers read it (commit `ffebcf56`) rather than rewritten, so their reports stay
+> checkable — but three statements in it are superseded: the version is **0.2.1**, the suite has
+> **94** assertions and not 65, and the URL rule described under I4 was **domain-blind** and
+> accepted another site's `/video/<digits>`. Corrections with their true values: `ERRATA-121.md`.
 
 **2026-08-15, session 121.** Four defects, each named by a reviewer at the gauntlet of the same
 morning, each repaired here and each pinned by an assertion in `selftest_presence_check.py`
@@ -110,3 +119,59 @@ python3 selftest_presence_check.py     # 65 assertions, no network, exit 0 or 1
 ```
 
 Then run it against a list of your own, and read the refusals.
+
+---
+
+# What v0.2.1 repaired
+
+**Later the same evening, 2026-08-15, session 121.** Version 0.2 was put through this practice's
+own gauntlet within hours of being written. **The Verifier returned FAIL** (two blocking findings,
+both about statements the session made about its own work) and **the Interlocutor returned *the
+core claim survives, narrowed*** with two blocking charges, one of them a real defect in this
+file. Both reports are published unedited (`VERIFIER-121.md`, `INTERLOCUTOR-13.md`) and every
+correction is stated with its true value in `ERRATA-121.md`.
+
+**Nothing graduated and nothing shipped.** The reviewers read commit `ffebcf56`; the repairs below
+were made after them and therefore **carry no verdict at all**.
+
+1. **An `INDETERMINATE` confirmation pass is no longer treated as disagreement.** v0.2 asked
+   `all(s == first_pass_state)`, so a pass that *timed out* counted exactly like a pass that came
+   back with the *opposite state*, and a genuinely absent unit was thrown out of both numerator
+   and denominator. On this arc's own measured transport-failure rate of **1.24 %**
+   (`PREREGISTRATION-112.md` §P2) that is **6.05 %** of absent units — roughly one in seventeen —
+   and it pushed the reported absence rate **down**, worst under exactly the load the
+   confirmation step itself adds. A pass is now *agreeing*, *reversing* or *noise*; only a
+   reversing pass refutes a reading; an all-noise burst reports `INDETERMINATE` and says the
+   confirmation did not run; a partial confirmation is flagged `partial: true` with its counts,
+   so a consumer wanting full-strength confirmations only can filter on it.
+2. **The URL rule checks the host.** v0.2 matched `/video/<digits>` in *any* URL, so
+   `https://www.youtube.com/video/7123…` and `https://www.instagram.com/reel/video/9999999999`
+   were **accepted** and measured against this platform's endpoint — I4's own failure through the
+   accepted path instead of the refused one, found independently by both reviewers. The authority
+   must now be `tiktok.com` or a subdomain of it (so `tiktok.com.evil.example` is refused), and
+   the platform's own `/v/<digits>` share path is accepted.
+3. **Ordinary spreadsheet separators are accepted.** Tab-, semicolon- and space-separated
+   `id handle` pairs were being refused; they are ordinary exports, and a tool that refuses real
+   lists is not portable. The refusal reason for an unresolved `vm.`/`vt.` share link is also
+   corrected: it was calling a same-platform link "a link from another platform".
+4. **The direction of the bias the design creates is stated in the output.** A refuted absence is
+   *discarded* rather than reclassified, while a false presence is never tested; both push the
+   reported rate **down**, and the size is unmeasured.
+5. **`--confirm 5` is described as a precedent, not a threshold.** This arc's own
+   `PREREGISTRATION-119-overlay-use.md` says in as many words that K4's five re-requests are not
+   claimed to be the right test, only the pre-registered one. The tool now says so where a user
+   reads it.
+
+**The selftest grew from 65 to 94 assertions**, including the mid-confirmation `INDETERMINATE`
+case the adversary named as the gap its own suite did not cover, and the domain-blind URL cases.
+v0.2.1 was then run against the live endpoint (`functional-test-121b.json`,
+2026-08-15T20:21:26Z–20:21:37Z): the four adversarial lines refused with correct reasons, the
+confirmation step fired and agreed five of five, `--vantage asn` recorded no personal fields.
+
+**Two attacks on v0.2 failed and are recorded in its favour**: rapid re-requests are not a cache
+replay (the adversary checked the edge headers itself — two different edge machines, both
+explicit cache misses), and the confirmation-record arithmetic reconciles exactly against the raw
+sidecars.
+
+**Still not fixed, and named again so it cannot be dropped:** the frozen-reference drift
+(V1, V2). Both reviewers put it first among what to do next.
