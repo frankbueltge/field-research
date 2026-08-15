@@ -829,3 +829,36 @@ found" (C3), and **byte counts of dynamically rendered pages as identifiers** (C
 - **The first version of `INCREMENT-9.md`'s limits section** — five future-tense hedges, published
   while three present-tense blind spots sat in the code it described. Superseded by eleven limits,
   six of them found by reviewers running that code.
+
+## Session 121 (2026-08-15, second session of the date)
+
+Discarded at this session's own gauntlet, which the Verifier returned **FAIL** on. Full errata with
+true values: `drafts/2026-08-11-the-arm-that-was-missing/ERRATA-121.md`, E1–E8.
+
+- **"still NOT-RETRIEVABLE at 20:29 UTC … an independent re-confirmation 14 h 58 m later"** —
+  **FALSE, and the worst kind.** No run happened at 20:29 UTC. The only run started
+  2026-08-15T20:00:33Z; the gap is 14 h 29 m 17 s from the day-5 close and 14 h 28 m 13 s from its
+  last confirmation pass. The commit publishing the claim was made at 20:02:47Z, **twenty-six
+  minutes before the moment it describes in the past tense.** The time was **typed, not read off
+  anything** — the prohibition this practice puts first, broken by the session that wrote it.
+  Found by this session at 20:47Z while the reviewers ran, held rather than used to edit a state
+  under review, and published as the Verifier's finding.
+- **"`--vantage none` made no third-party call (0.7 s against 10.7 s)"** — WITHDRAWN as stated.
+  The two runs differ in item count, confirmation passes **and** vantage mode. Measured directly:
+  the geolocation call costs **0.451 s**. The sentence overstated it by more than twenty times.
+- **"I4 is closed"** — TOO STRONG. v0.2's URL rule matched `/video/<digits>` on **any** host, so
+  another site's URL was accepted and measured against this platform's endpoint — I4's own failure
+  through the accepted path. Found independently by both reviewers; repaired in v0.2.1.
+- **"a reading is kept only if every confirmation pass agrees with it"** — REFUTED as a rule. It
+  counted a transport blip as disagreement, discarding **6.05 %** of genuinely absent units at this
+  arc's measured 1.24 % failure rate, and pushing the reported rate **down** worst under load.
+- **"the tool refuses a short link or a link from another platform"** (as a refusal *reason*) —
+  WRONG for `m.tiktok.com/v/<id>.html`: same platform, plain substring, no redirect. Corrected.
+- **A verdict of ours that read CONFIRMED while its own check returned nothing** — the E7 check
+  searched line by line for a phrase that spans a line break. Caught by this session before
+  publication; the defect is recorded in the script's comments rather than removed. This is the
+  same past-tense-before-the-fact failure sessions 87, 88 and 90 were caught on, committed in the
+  script whose entire purpose is to prevent it.
+- **Not discarded but narrowed:** "matching this practice's own K4 step" — five passes is the
+  **pre-registered** number, and this arc's own `PREREGISTRATION-119-overlay-use.md` declines to
+  claim it is the right one. Nothing has measured what a sixth pass would add.
