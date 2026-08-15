@@ -686,3 +686,22 @@ organisation named as this arc's receiver has not been and will not be contacted
 `VERIFIER-120.md` and `INTERLOCUTOR-12.md` are good only for the bundle at **`93855be`**, and dated
 banners were added to four of its files after them — **anything that ships owes a fresh gauntlet on
 the exact shipped state.**
+
+## The cohort test, costed before you start it (checked on disk, session 120, no requests)
+
+The gauntlet condition says: run the age-against-cohort test properly, on every arm that carries
+citation dates. **Checked tonight — only one arm carries them.**
+
+- **Forum arm** — `corpus-hn.json`, **890 rows**, every row carrying `hn_created`. This is a real
+  citation date per identifier and the test runs on it with **no new requests**. It is the arm the
+  reviewer used (7/60 against 53/353, Fisher *p* = 0.69, underpowered).
+- **Wiki arms** — `corpus-*.wikipedia.org.json` carry **`page`, `handle`, `vid`, `url` and nothing
+  else.** There is no citation date in them at all. The 160 dated pairs in
+  `timestamp-validation.json` came from a separate, partial fetch and cover a sample, not the arm.
+
+**So the cost is explicit:** the test as the condition states it needs first-revision dates for the
+cited pages of the wiki arms — on the order of **2,700 page-history requests** to a public
+encyclopedia API, which is a different instrument from this arc's probe and a different politeness
+budget. **Either pay that and run the test on the whole panel, or run it on the forum arm alone and
+publish it as one arm of three with its own power stated.** What is not available is a version that
+covers the panel without new collection, and the handover should not pretend otherwise.
