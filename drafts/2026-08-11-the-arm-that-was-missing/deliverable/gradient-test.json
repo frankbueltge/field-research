@@ -1,0 +1,69 @@
+{
+ "schema": "field-research/age-gradient-test/1",
+ "day": "2026-08-14",
+ "test": "two-sided Fisher exact, youngest age band against oldest",
+ "arm": "raw run file (primary record)",
+ "caveat": "the pooled progression across the six bands is not strictly monotone; the endpoints are what this table tests",
+ "results": [
+  {
+   "group": "pooled",
+   "young_band": "0-1y",
+   "young": [
+    24,
+    500
+   ],
+   "old_band": "5y+",
+   "old": [
+    68,
+    384
+   ],
+   "ratio_old_over_young": 3.689236111111111,
+   "fisher_two_sided_p": 6.446636838056336e-10
+  },
+  {
+   "group": "F-forum",
+   "young_band": "0-1y",
+   "young": [
+    2,
+    50
+   ],
+   "old_band": "5y+",
+   "old": [
+    8,
+    54
+   ],
+   "ratio_old_over_young": 3.7037037037037033,
+   "fisher_two_sided_p": 0.0949480273148097
+  },
+  {
+   "group": "W-article",
+   "young_band": "0-1y",
+   "young": [
+    16,
+    308
+   ],
+   "old_band": "5y+",
+   "old": [
+    47,
+    266
+   ],
+   "ratio_old_over_young": 3.4013157894736836,
+   "fisher_two_sided_p": 1.8035510480786782e-06
+  },
+  {
+   "group": "W-other-ns",
+   "young_band": "0-1y",
+   "young": [
+    6,
+    142
+   ],
+   "old_band": "5y+",
+   "old": [
+    13,
+    64
+   ],
+   "ratio_old_over_young": 4.807291666666667,
+   "fisher_two_sided_p": 0.0004942478835822774
+  }
+ ]
+}

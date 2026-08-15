@@ -1,0 +1,162 @@
+{
+ "schema": "field-research/receiver-list-series/1",
+ "what_this_is": "every dated reading this practice has taken of the eleven identifiers the receiver's own public dashboard tracks. Measured with the unmodified instrument, from the same vantage as this practice's own ledger, credential-free. NOT part of the pre-registered window population and never mixed into it.",
+ "list_source": "https://playground.tiktok-audit.com/api-na/ - transcribed 2026-08-12 (session 112) into receiver-list.txt, unchanged since",
+ "days": [
+  "2026-08-12"
+ ],
+ "readings": [
+  {
+   "file": "presence-check-receiver-113.json",
+   "started_utc": "2026-08-12T18:35:26Z",
+   "vantage_asn": "AS396982",
+   "vantage_country": "US",
+   "counts": {
+    "RETRIEVABLE": 10,
+    "NOT-RETRIEVABLE": 1
+   },
+   "determinate": 11,
+   "public_absence_rate": 0.09090909090909091,
+   "expectation": {
+    "age_histogram": {
+     "2-3y": 7,
+     "4-5y": 2,
+     "3-4y": 2
+    },
+    "n_dated": 11,
+    "expected_absent_rate": 0.1376986368862619,
+    "expected_lo": 0.11391410612202245,
+    "expected_hi": 0.16551294871751704,
+    "reference_population": {
+     "source": "ledger/run-2026-08-12T0341Z.json",
+     "run_id": "2026-08-12T0341Z",
+     "n": 3575,
+     "what_it_is": "videos cited across 21+ MediaWiki language editions and posted to one public technology forum, measured from AS396982 on one day"
+    }
+   }
+  }
+ ],
+ "units": [
+  {
+   "vid": "7366758818765638917",
+   "states": {
+    "2026-08-12": "RETRIEVABLE"
+   },
+   "handle_returned": {
+    "2026-08-12": "camilapudim"
+   },
+   "created_utc": "2024-05-08T22:26:37Z",
+   "band": "2-3y"
+  },
+  {
+   "vid": "7368154048836406544",
+   "states": {
+    "2026-08-12": "RETRIEVABLE"
+   },
+   "handle_returned": {
+    "2026-08-12": "yy0403_2"
+   },
+   "created_utc": "2024-05-12T16:40:49Z",
+   "band": "2-3y"
+  },
+  {
+   "vid": "7074367286571814190",
+   "states": {
+    "2026-08-12": "RETRIEVABLE"
+   },
+   "handle_returned": {
+    "2026-08-12": "brynnemarieeee"
+   },
+   "created_utc": "2022-03-12T23:58:08Z",
+   "band": "4-5y"
+  },
+  {
+   "vid": "7117394257064840490",
+   "states": {
+    "2026-08-12": "RETRIEVABLE"
+   },
+   "handle_returned": {
+    "2026-08-12": "brookemonk_"
+   },
+   "created_utc": "2022-07-06T22:44:46Z",
+   "band": "4-5y"
+  },
+  {
+   "vid": "7134492331117595950",
+   "states": {
+    "2026-08-12": "NOT-RETRIEVABLE"
+   },
+   "handle_returned": {
+    "2026-08-12": null
+   },
+   "created_utc": "2022-08-22T00:34:01Z",
+   "band": "3-4y"
+  },
+  {
+   "vid": "7164125023886691626",
+   "states": {
+    "2026-08-12": "RETRIEVABLE"
+   },
+   "handle_returned": {
+    "2026-08-12": "taylorswift"
+   },
+   "created_utc": "2022-11-09T21:04:00Z",
+   "band": "3-4y"
+  },
+  {
+   "vid": "7376726215178128673",
+   "states": {
+    "2026-08-12": "RETRIEVABLE"
+   },
+   "handle_returned": {
+    "2026-08-12": "alandelantics"
+   },
+   "created_utc": "2024-06-04T19:05:12Z",
+   "band": "2-3y"
+  },
+  {
+   "vid": "7332960275127110954",
+   "states": {
+    "2026-08-12": "RETRIEVABLE"
+   },
+   "handle_returned": {
+    "2026-08-12": "andyyahurd._"
+   },
+   "created_utc": "2024-02-07T20:31:00Z",
+   "band": "2-3y"
+  },
+  {
+   "vid": "7347581705299053826",
+   "states": {
+    "2026-08-12": "RETRIEVABLE"
+   },
+   "handle_returned": {
+    "2026-08-12": "Evony"
+   },
+   "created_utc": "2024-03-18T06:09:37Z",
+   "band": "2-3y"
+  },
+  {
+   "vid": "7376437810644946222",
+   "states": {
+    "2026-08-12": "RETRIEVABLE"
+   },
+   "handle_returned": {
+    "2026-08-12": "lauren.j734"
+   },
+   "created_utc": "2024-06-04T00:26:03Z",
+   "band": "2-3y"
+  },
+  {
+   "vid": "7361448925972155679",
+   "states": {
+    "2026-08-12": "RETRIEVABLE"
+   },
+   "handle_returned": {
+    "2026-08-12": "tiktok"
+   },
+   "created_utc": "2024-04-24T15:01:31Z",
+   "band": "2-3y"
+  }
+ ]
+}
