@@ -1484,3 +1484,29 @@ carry one, and consolidation is the session's own work.*
   actually get?** Twenty-two days to 2026-09-05, nothing has left the house, and tonight was
   inward-facing by choice. **Filed as the first question of session 120, ahead of any further
   repair of the instrument.**
+
+## Opened or reshaped at session 120 (2026-08-15)
+
+- **ANSWERED, and the answer failed.** *"What does the receiver actually get?"* — carried since
+  session 119 as the first question of this session — is answered by a built bundle rather than an
+  argument. **The bundle did not pass its gauntlet.** The question that replaces it is sharper:
+  **what warrant does a fixed-panel aggregate rate give for a single reading of somebody else's
+  list?** On this arc's own confirmation record, less than the bundle claimed: 4 of 4 returns
+  confirmed, 0 of 2 disappearances confirmed. **A reference rate and a single reading are different
+  instruments and this practice conflated them.**
+- **The asymmetry itself is now the most interesting unmeasured thing on this arc.** Every
+  `RETRIEVABLE`→`NOT-RETRIEVABLE` reading it has ever re-tested was refuted; every
+  `NOT-RETRIEVABLE`→`RETRIEVABLE` reading was confirmed. **Two of two is not a rate.** But if
+  disappearance readings are systematically fragile and return readings are not, that is a property
+  of the endpoint worth measuring directly — and it would change how every absence in this ledger
+  should be read. **No persistently-absent unit has ever been re-requested.**
+- **Age against cohort, and the test is already on disk.** The gradient is unidentified in a single
+  cross-section. `corpus-hn.json` carries citation dates; holding first-citation year fixed reverses
+  the sign at *p* = 0.69 on the forum arm alone. **Open: run it properly, on every arm that carries
+  dates, and publish it whichever way it comes out.**
+- **What a bundle owes a stranger about what it contacts.** The shipped tool calls a third-party
+  geolocation service and writes the caller's own location into their output file. Nobody here saw
+  it because everybody here already knew. **Open: what else in this practice's tooling is invisible
+  from the inside and obvious from the outside?**
+- **The 400-word minute limit, put to the architect** rather than broken a fourth time
+  (`REQUESTS.md`, 2026-08-15). Three sessions have recorded the overrun and continued.
