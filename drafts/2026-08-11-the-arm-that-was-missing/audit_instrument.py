@@ -633,12 +633,26 @@ def a9_size_discriminator():
     return out
 
 
-def main(out_path="instrument-audit-119.json"):
+def main(out_path=None):
+    # Session 120, 2026-08-15 — DEFECT FOUND BY RUNNING THE TOOL, and it is the class this arc
+    # exists to catch. The default output path was the SESSION NUMBER OF THE SESSION THAT WROTE
+    # THE AUDITOR, so running the auditor on a later night silently overwrote a dated evidence
+    # file that a published document already cited. It happened tonight; `instrument-audit-119.json`
+    # was restored from the record and this run was written beside it instead.
+    # The fix is the same rule this arc applies to its run files: a dated record is never
+    # overwritten. The default now carries the run's own date, and an existing file is refused
+    # rather than replaced.
+    if out_path is None:
+        out_path = "instrument-audit-" + time.strftime("%Y-%m-%d", time.gmtime()) + ".json"
+    if os.path.exists(out_path):
+        raise SystemExit(
+            f"refusing to overwrite an existing audit record: {out_path}\n"
+            "A dated record is evidence. Pass a different path, or move the existing file.")
     checks = [a1_rederivation(), a2_classifier_duplication(), a3_response_census(),
               a4_within_record_ledger(), a5_within_record_account(), a6_aggregate_vs_rows(),
               a7_population_integrity(), a8_refuted_readings(), a9_size_discriminator()]
     report = {
-        "schema": "field-research/instrument-audit/1", "session": 119,
+        "schema": "field-research/instrument-audit/1",
         "generated_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "requests_made": 0,
         "what_this_is": ("An audit of this arc's stored measurement files against themselves. "

@@ -1,0 +1,1078 @@
+{
+ "schema": "field-research/instrument-audit/1",
+ "generated_utc": "2026-08-15T05:33:31Z",
+ "requests_made": 0,
+ "what_this_is": "An audit of this arc's stored measurement files against themselves. Every byte read was already on disk; no instrument was called; no archived record was edited.",
+ "the_bet": "Committed in journal/2026-08-14.md before this file was written: the auditor must rediscover the 10222 miscoding unaided, without being told what to look for. See check A5.",
+ "checks": [
+  {
+   "check": "A1 RE-DERIVATION",
+   "question": "does every stored state follow from the raw fields stored beside it?",
+   "files": [
+    {
+     "path": "ledger/baseline-union.json",
+     "observations": 3869
+    },
+    {
+     "path": "ledger/run-2026-08-11T1124Z.json",
+     "observations": 2904
+    },
+    {
+     "path": "ledger/run-2026-08-12T0341Z.json",
+     "observations": 3869
+    },
+    {
+     "path": "ledger/run-2026-08-13T0427Z.json",
+     "observations": 3869
+    },
+    {
+     "path": "ledger/run-2026-08-14T0343Z.json",
+     "observations": 3869
+    },
+    {
+     "path": "ledger/run-2026-08-15T0337Z.json",
+     "observations": 3869
+    }
+   ],
+   "mismatches": [],
+   "n_observations": 22249,
+   "verdict": "CLEAN \u2014 every stored state re-derives"
+  },
+  {
+   "check": "A2 CLASSIFIER DUPLICATION",
+   "question": "the two copies of the three-state classifier \u2014 do they ever disagree?",
+   "copies": [
+    "ledger.classify",
+    "ledger_diff.classify"
+   ],
+   "docstring_claim": "ledger_diff.py: 'read through an adapter that applies the same classification function rather than a second one written for it'",
+   "how_compared": "behaviourally, not textually: every stored record, plus an exhaustive grid over the whole input space the classifier reads",
+   "disagreements": [],
+   "n_records": 24450,
+   "grid": {
+    "n": 21,
+    "disagreements": []
+   },
+   "verdict": "AGREE on every record this arc holds and on all 21 points of the complete input grid \u2014 but they are two definitions, and agreement today is not a guarantee for the next edit"
+  },
+  {
+   "check": "A3 RESPONSE-CLASS CENSUS",
+   "question": "which distinct raw responses exist in the record, which branch decided each, and which reached the fallthrough unrecognised?",
+   "classes": [
+    {
+     "signature": {
+      "body_code": null,
+      "has_author_unique_id": true,
+      "has_body_snippet": false,
+      "http": 200,
+      "parse_error": false,
+      "transport_error": null
+     },
+     "count": 18039,
+     "states": {
+      "RETRIEVABLE": 18039
+     },
+     "branch": "1: http==200 and not parse_error -> RETRIEVABLE",
+     "files": [
+      "ledger/baseline-union.json",
+      "ledger/run-2026-08-11T1124Z.json",
+      "ledger/run-2026-08-12T0341Z.json",
+      "ledger/run-2026-08-13T0427Z.json",
+      "ledger/run-2026-08-14T0343Z.json",
+      "ledger/run-2026-08-15T0337Z.json"
+     ],
+     "example_vid": "194951213564514304",
+     "reached_fallthrough": false
+    },
+    {
+     "signature": {
+      "body_code": 400,
+      "has_author_unique_id": false,
+      "has_body_snippet": false,
+      "http": 400,
+      "parse_error": false,
+      "transport_error": null
+     },
+     "count": 3956,
+     "states": {
+      "NOT-RETRIEVABLE": 3956
+     },
+     "branch": "2: http==400 -> NOT-RETRIEVABLE",
+     "files": [
+      "ledger/baseline-union.json",
+      "ledger/run-2026-08-11T1124Z.json",
+      "ledger/run-2026-08-12T0341Z.json",
+      "ledger/run-2026-08-13T0427Z.json",
+      "ledger/run-2026-08-14T0343Z.json",
+      "ledger/run-2026-08-15T0337Z.json"
+     ],
+     "example_vid": "6641440663898426626",
+     "reached_fallthrough": false
+    },
+    {
+     "signature": {
+      "body_code": null,
+      "has_author_unique_id": false,
+      "has_body_snippet": false,
+      "http": null,
+      "parse_error": false,
+      "transport_error": "URLError"
+     },
+     "count": 254,
+     "states": {
+      "INDETERMINATE": 254
+     },
+     "branch": "3: FALLTHROUGH -> INDETERMINATE",
+     "files": [
+      "ledger/baseline-union.json",
+      "ledger/run-2026-08-11T1124Z.json",
+      "ledger/run-2026-08-12T0341Z.json",
+      "ledger/run-2026-08-13T0427Z.json",
+      "ledger/run-2026-08-14T0343Z.json",
+      "ledger/run-2026-08-15T0337Z.json"
+     ],
+     "example_vid": "6884621398111816966",
+     "reached_fallthrough": true
+    }
+   ],
+   "fallthrough_classes": 1,
+   "fallthrough_records": 254,
+   "n_distinct_classes": 3,
+   "verdict": "3 distinct response classes; 1 of them (254 records) were decided by the absence of a branch",
+   "note": "The fallthrough is where a response the classifier does not recognise lands silently, labelled INDETERMINATE. Every class listed with reached_fallthrough=true is a response this arc has never explicitly decided about \u2014 it was decided by the absence of a branch."
+  },
+  {
+   "check": "A4 WITHIN-RECORD CONTRADICTION (ledger)",
+   "question": "does any record's stored state contradict evidence stored in the same record?",
+   "findings": [],
+   "cross_tab": {
+    "RETRIEVABLE | http=200 | body_code=None": 18039,
+    "NOT-RETRIEVABLE | http=400 | body_code=400": 3956,
+    "INDETERMINATE | http=None | body_code=None": 254
+   },
+   "verdict": "CLEAN"
+  },
+  {
+   "check": "A5 WITHIN-RECORD CONTRADICTION (account state)",
+   "question": "where a non-zero state field is read as 'the account object is not served', does the same record carry evidence that it WAS served?",
+   "files": [
+    {
+     "path": "account-state-117b.json",
+     "present": true,
+     "records": 102,
+     "schema": "field-research/account-state-probe/2",
+     "state_and_handle_keys_used": [
+      "status_field",
+      "unique_id_returned"
+     ],
+     "records_actually_tested": 102
+    },
+    {
+     "path": "account-state-probe-114.json",
+     "present": true,
+     "records": 36,
+     "schema": "field-research/account-state-probe/1",
+     "state_and_handle_keys_used": [
+      "status_field",
+      "unique_id_returned"
+     ],
+     "records_actually_tested": 36
+    },
+    {
+     "path": "account-route-probe-114.json",
+     "present": true,
+     "records": 24,
+     "schema": "field-research/account-route-probe/1",
+     "state_and_handle_keys_used": [
+      null
+     ],
+     "records_actually_tested": 0
+    },
+    {
+     "path": "account-route-body-inspection-114.json",
+     "present": true,
+     "records": 2,
+     "schema": "field-research/account-route-body-inspection/1",
+     "state_and_handle_keys_used": [
+      "statusCode_field",
+      "uniqueId_field"
+     ],
+     "records_actually_tested": 2
+    }
+   ],
+   "findings": [
+    {
+     "file": "account-state-117b.json",
+     "handle": "buzz_award",
+     "group": "C1",
+     "status_field": 10222,
+     "state_field_key": "status_field",
+     "state_field_raw": 10222,
+     "http": 200,
+     "bytes": 366046,
+     "counted_as": "the account object is not served",
+     "contradicted_by": [
+      "the page returned the handle 'buzz_award' (field 'unique_id_returned')",
+      "the userInfo marker is present",
+      "the uniqueId marker is present"
+     ],
+     "returned_handle_matches_requested": true
+    },
+    {
+     "file": "account-state-117b.json",
+     "handle": "jere.ronkko",
+     "group": "C1",
+     "status_field": 10222,
+     "state_field_key": "status_field",
+     "state_field_raw": 10222,
+     "http": 200,
+     "bytes": 365401,
+     "counted_as": "the account object is not served",
+     "contradicted_by": [
+      "the page returned the handle 'jere.ronkko' (field 'unique_id_returned')",
+      "the userInfo marker is present",
+      "the uniqueId marker is present"
+     ],
+     "returned_handle_matches_requested": true
+    },
+    {
+     "file": "account-state-117b.json",
+     "handle": "worldpadeltour",
+     "group": "C1",
+     "status_field": 10222,
+     "state_field_key": "status_field",
+     "state_field_raw": 10222,
+     "http": 200,
+     "bytes": 365335,
+     "counted_as": "the account object is not served",
+     "contradicted_by": [
+      "the page returned the handle 'worldpadeltour' (field 'unique_id_returned')",
+      "the userInfo marker is present",
+      "the uniqueId marker is present"
+     ],
+     "returned_handle_matches_requested": true
+    }
+   ],
+   "by_state_field": {
+    "account-state-117b.json | status_field=10221": {
+     "n": 28,
+     "with_returned_handle": 0,
+     "with_userInfo_marker": 0,
+     "with_uniqueId_marker": 0,
+     "bytes_min": 362436,
+     "bytes_max": 363708
+    },
+    "account-state-117b.json | status_field=0": {
+     "n": 69,
+     "with_returned_handle": 69,
+     "with_userInfo_marker": 69,
+     "with_uniqueId_marker": 69,
+     "bytes_min": 365026,
+     "bytes_max": 366285
+    },
+    "account-state-117b.json | status_field=10222": {
+     "n": 3,
+     "with_returned_handle": 3,
+     "with_userInfo_marker": 3,
+     "with_uniqueId_marker": 3,
+     "bytes_min": 365335,
+     "bytes_max": 366046
+    },
+    "account-state-117b.json | status_field=10202": {
+     "n": 2,
+     "with_returned_handle": 0,
+     "with_userInfo_marker": 0,
+     "with_uniqueId_marker": 0,
+     "bytes_min": 362830,
+     "bytes_max": 363194
+    },
+    "account-state-probe-114.json | status_field=10221": {
+     "n": 6,
+     "with_returned_handle": 0,
+     "with_userInfo_marker": 0,
+     "with_uniqueId_marker": 0,
+     "bytes_min": 362007,
+     "bytes_max": 362978
+    },
+    "account-state-probe-114.json | status_field=10202": {
+     "n": 1,
+     "with_returned_handle": 0,
+     "with_userInfo_marker": 0,
+     "with_uniqueId_marker": 0,
+     "bytes_min": 362316,
+     "bytes_max": 362316
+    },
+    "account-state-probe-114.json | status_field=0": {
+     "n": 29,
+     "with_returned_handle": 29,
+     "with_userInfo_marker": 29,
+     "with_uniqueId_marker": 29,
+     "bytes_min": 364064,
+     "bytes_max": 365676
+    },
+    "account-route-probe-114.json | status_field=None": {
+     "n": 24,
+     "with_returned_handle": 0,
+     "with_userInfo_marker": 0,
+     "with_uniqueId_marker": 0,
+     "bytes_min": 362145,
+     "bytes_max": 365724
+    },
+    "account-route-body-inspection-114.json | status_field=10221": {
+     "n": 1,
+     "with_returned_handle": 0,
+     "with_userInfo_marker": 0,
+     "with_uniqueId_marker": 0,
+     "bytes_min": 362788,
+     "bytes_max": 362788
+    },
+    "account-route-body-inspection-114.json | status_field=0": {
+     "n": 1,
+     "with_returned_handle": 1,
+     "with_userInfo_marker": 1,
+     "with_uniqueId_marker": 1,
+     "bytes_min": 365577,
+     "bytes_max": 365577
+    }
+   },
+   "unaudited_records": [
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "mahoko0918",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "gabbiehanna",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "tperrrrrrr",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "msoojaofficial",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "chunkysdead",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "ashleyisinthebookoflife",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "armen.patriot",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "archaeodeath",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "tizzyent",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "roxen",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "rgr0730",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "pteehok",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "bullettrain_8",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "coalamode",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "showdrama_24",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "kimisinamoodlive",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "info__paragon",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "twice_tiktok_official",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "mystery_library",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "camiileo",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "ka10san_0717",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "yori_dora",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "midnight_ticket",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    },
+    {
+     "file": "account-route-probe-114.json",
+     "handle": "rinasawayamaofficial",
+     "reason": "no state field found under any known name \u2014 this record was NOT tested for contradiction and is reported, not passed",
+     "keys_present": [
+      "body_head",
+      "bytes",
+      "final_url",
+      "group",
+      "handle",
+      "http",
+      "k",
+      "seconds",
+      "url"
+     ]
+    }
+   ],
+   "records_held": 164,
+   "records_actually_tested": 140,
+   "verdict": "3 records are read as \"not served\" while the same record shows the account WAS served \u2014 over 140 of 164 records; 24 records could not be tested and are listed"
+  },
+  {
+   "check": "A6 AGGREGATE VS ROWS",
+   "question": "does every summary block in a file follow from that file's own rows?",
+   "findings": [],
+   "checked": [
+    {
+     "file": "ledger/baseline-union.json",
+     "blocks": [
+      "components"
+     ]
+    },
+    {
+     "file": "ledger/run-2026-08-11T1124Z.json",
+     "blocks": [
+      "counts",
+      "requested",
+      "planned"
+     ]
+    },
+    {
+     "file": "ledger/run-2026-08-12T0341Z.json",
+     "blocks": [
+      "counts",
+      "requested",
+      "planned"
+     ]
+    },
+    {
+     "file": "ledger/run-2026-08-13T0427Z.json",
+     "blocks": [
+      "counts",
+      "requested",
+      "planned"
+     ]
+    },
+    {
+     "file": "ledger/run-2026-08-14T0343Z.json",
+     "blocks": [
+      "counts",
+      "requested",
+      "planned"
+     ]
+    },
+    {
+     "file": "ledger/run-2026-08-15T0337Z.json",
+     "blocks": [
+      "counts",
+      "requested",
+      "planned"
+     ]
+    },
+    {
+     "file": "account-state-117b.json",
+     "blocks": [
+      "by_group",
+      "codes_by_group",
+      "requests",
+      "population"
+     ]
+    }
+   ],
+   "component_provenance": {
+    "file": "ledger/baseline-union.json",
+    "declared_total": 3869,
+    "observations": 3869,
+    "by_source": {
+     "ledger/run-2026-08-11T1124Z.json": 2904,
+     "expansion-111/baseline-run.json": 635,
+     "expansion-111/baseline-run2.json": 304,
+     "expansion-111/baseline-run3.json": 26
+    }
+   },
+   "verdict": "CLEAN \u2014 every aggregate follows from its own rows"
+  },
+  {
+   "check": "A7 POPULATION INTEGRITY",
+   "question": "is every observation a unit of the manifest, exactly once, with a stable handle across runs?",
+   "per_run": [
+    {
+     "file": "ledger/baseline-union.json",
+     "observations": 3869,
+     "distinct_vids": 3869,
+     "duplicate_vids": [],
+     "not_in_manifest": 0,
+     "manifest_units_missing": 0,
+     "arm_disagreements": 0,
+     "predates_window_manifest": false
+    },
+    {
+     "file": "ledger/run-2026-08-11T1124Z.json",
+     "observations": 2904,
+     "distinct_vids": 2904,
+     "duplicate_vids": [],
+     "not_in_manifest": 0,
+     "manifest_units_missing": 965,
+     "arm_disagreements": 0,
+     "predates_window_manifest": true
+    },
+    {
+     "file": "ledger/run-2026-08-12T0341Z.json",
+     "observations": 3869,
+     "distinct_vids": 3869,
+     "duplicate_vids": [],
+     "not_in_manifest": 0,
+     "manifest_units_missing": 0,
+     "arm_disagreements": 0,
+     "predates_window_manifest": false
+    },
+    {
+     "file": "ledger/run-2026-08-13T0427Z.json",
+     "observations": 3869,
+     "distinct_vids": 3869,
+     "duplicate_vids": [],
+     "not_in_manifest": 0,
+     "manifest_units_missing": 0,
+     "arm_disagreements": 0,
+     "predates_window_manifest": false
+    },
+    {
+     "file": "ledger/run-2026-08-14T0343Z.json",
+     "observations": 3869,
+     "distinct_vids": 3869,
+     "duplicate_vids": [],
+     "not_in_manifest": 0,
+     "manifest_units_missing": 0,
+     "arm_disagreements": 0,
+     "predates_window_manifest": false
+    },
+    {
+     "file": "ledger/run-2026-08-15T0337Z.json",
+     "observations": 3869,
+     "distinct_vids": 3869,
+     "duplicate_vids": [],
+     "not_in_manifest": 0,
+     "manifest_units_missing": 0,
+     "arm_disagreements": 0,
+     "predates_window_manifest": false
+    }
+   ],
+   "findings": [],
+   "identifiers_with_more_than_one_handle_across_runs": 0,
+   "verdict": "CLEAN"
+  },
+  {
+   "check": "A8 REFUTED READINGS STILL STANDING IN THE LEDGER",
+   "question": "is any state that the confirmation step refuted still standing in a run file that a later interval was diffed against?",
+   "refuted": [
+    {
+     "sidecar": "ledger/transition-confirm-2026-08-13.json",
+     "vid": "7368171405361351954",
+     "handle": "arutz_7",
+     "diff_reported": "RETRIEVABLE -> NOT-RETRIEVABLE",
+     "five_re_requests_said": [
+      "RETRIEVABLE",
+      "RETRIEVABLE",
+      "RETRIEVABLE",
+      "RETRIEVABLE",
+      "RETRIEVABLE"
+     ],
+     "state_the_ledger_should_carry": "RETRIEVABLE"
+    },
+    {
+     "sidecar": "ledger/transition-confirm-2026-08-14.json",
+     "vid": "7016669364938149122",
+     "handle": "ask__dani",
+     "diff_reported": "RETRIEVABLE -> NOT-RETRIEVABLE",
+     "five_re_requests_said": [
+      "RETRIEVABLE",
+      "RETRIEVABLE",
+      "RETRIEVABLE",
+      "RETRIEVABLE",
+      "RETRIEVABLE"
+     ],
+     "state_the_ledger_should_carry": "RETRIEVABLE"
+    }
+   ],
+   "contaminated_diffs": [
+    {
+     "vid": "7368171405361351954",
+     "handle": "arutz_7",
+     "refuted_in": "ledger/transition-confirm-2026-08-13.json",
+     "run_file": "ledger/run-2026-08-13T0427Z.json",
+     "state_in_run_file": "NOT-RETRIEVABLE",
+     "state_five_re_requests_support": "RETRIEVABLE",
+     "uncorrected": true,
+     "diff_rows_touching_this_reading": [
+      {
+       "diff": "ledger/diff-baseline-day3.json",
+       "contaminated_file_role": "run2",
+       "reported": "RETRIEVABLE -> NOT-RETRIEVABLE",
+       "kind": "CONTAMINATION \u2014 this diff counts a reading the arc had already refuted, or its reversal, as a transition"
+      },
+      {
+       "diff": "ledger/diff-day2-day3.json",
+       "contaminated_file_role": "run2",
+       "reported": "RETRIEVABLE -> NOT-RETRIEVABLE",
+       "kind": "THE DIFF THAT REPORTED IT \u2014 the sidecar is its verdict; the row is legitimate as a raw reading"
+      },
+      {
+       "diff": "ledger/diff-day3-day4.json",
+       "contaminated_file_role": "run1",
+       "reported": "NOT-RETRIEVABLE -> RETRIEVABLE",
+       "kind": "CONTAMINATION \u2014 this diff counts a reading the arc had already refuted, or its reversal, as a transition"
+      }
+     ]
+    },
+    {
+     "vid": "7016669364938149122",
+     "handle": "ask__dani",
+     "refuted_in": "ledger/transition-confirm-2026-08-14.json",
+     "run_file": "ledger/run-2026-08-14T0343Z.json",
+     "state_in_run_file": "NOT-RETRIEVABLE",
+     "state_five_re_requests_support": "RETRIEVABLE",
+     "uncorrected": true,
+     "diff_rows_touching_this_reading": [
+      {
+       "diff": "ledger/diff-baseline-day4.json",
+       "contaminated_file_role": "run2",
+       "reported": "RETRIEVABLE -> NOT-RETRIEVABLE",
+       "kind": "CONTAMINATION \u2014 this diff counts a reading the arc had already refuted, or its reversal, as a transition"
+      },
+      {
+       "diff": "ledger/diff-day3-day4.json",
+       "contaminated_file_role": "run2",
+       "reported": "RETRIEVABLE -> NOT-RETRIEVABLE",
+       "kind": "THE DIFF THAT REPORTED IT \u2014 the sidecar is its verdict; the row is legitimate as a raw reading"
+      },
+      {
+       "diff": "ledger/diff-day4-day5.json",
+       "contaminated_file_role": "run1",
+       "reported": "NOT-RETRIEVABLE -> RETRIEVABLE",
+       "kind": "CONTAMINATION \u2014 this diff counts a reading the arc had already refuted, or its reversal, as a transition"
+      }
+     ]
+    }
+   ],
+   "sidecars": [
+    {
+     "path": "ledger/transition-confirm-2026-08-12.json",
+     "diff": "ledger/diff-baseline-day2.json",
+     "K4": "PASSES \u2014 every transition confirmed",
+     "n": 1
+    },
+    {
+     "path": "ledger/transition-confirm-2026-08-13.json",
+     "diff": "ledger/diff-day2-day3.json",
+     "K4": "FIRES \u2014 at least one transition did not reproduce",
+     "n": 1
+    },
+    {
+     "path": "ledger/transition-confirm-2026-08-14.json",
+     "diff": "ledger/diff-day3-day4.json",
+     "K4": "FIRES \u2014 at least one transition did not reproduce",
+     "n": 4
+    },
+    {
+     "path": "ledger/transition-confirm-2026-08-15.json",
+     "diff": "ledger/diff-day4-day5.json",
+     "K4": "PASSES \u2014 every transition confirmed",
+     "n": 2
+    }
+   ],
+   "n_diff_rows_touching_a_refuted_reading": 6,
+   "n_contaminated_rows": 4,
+   "contaminated_rows": [
+    {
+     "diff": "ledger/diff-baseline-day3.json",
+     "contaminated_file_role": "run2",
+     "reported": "RETRIEVABLE -> NOT-RETRIEVABLE",
+     "kind": "CONTAMINATION \u2014 this diff counts a reading the arc had already refuted, or its reversal, as a transition"
+    },
+    {
+     "diff": "ledger/diff-day3-day4.json",
+     "contaminated_file_role": "run1",
+     "reported": "NOT-RETRIEVABLE -> RETRIEVABLE",
+     "kind": "CONTAMINATION \u2014 this diff counts a reading the arc had already refuted, or its reversal, as a transition"
+    },
+    {
+     "diff": "ledger/diff-baseline-day4.json",
+     "contaminated_file_role": "run2",
+     "reported": "RETRIEVABLE -> NOT-RETRIEVABLE",
+     "kind": "CONTAMINATION \u2014 this diff counts a reading the arc had already refuted, or its reversal, as a transition"
+    },
+    {
+     "diff": "ledger/diff-day4-day5.json",
+     "contaminated_file_role": "run1",
+     "reported": "NOT-RETRIEVABLE -> RETRIEVABLE",
+     "kind": "CONTAMINATION \u2014 this diff counts a reading the arc had already refuted, or its reversal, as a transition"
+    }
+   ],
+   "verdict": "2 refuted readings still stand in run files; 6 diff rows touch them, of which 4 are contamination \u2014 this arc's own refuted readings, or their reversals, counted as transitions"
+  },
+  {
+   "check": "A9 SIZE AGAINST THE TWO READINGS",
+   "question": "does the stored response size, never used by anything, agree with the marker-based reading of 10222 or with the pre-registered binary?",
+   "records": [],
+   "per_file": {
+    "account-state-117b.json": {
+     "served": 72,
+     "not_served": 30
+    },
+    "account-state-probe-114.json": {
+     "served": 29,
+     "not_served": 7
+    },
+    "account-route-body-inspection-114.json": {
+     "served": 1,
+     "not_served": 1
+    }
+   },
+   "n_served_by_marker_evidence": 102,
+   "n_not_served": 38,
+   "served_bytes_range": [
+    364064,
+    366285
+   ],
+   "not_served_bytes_range": [
+    362007,
+    363708
+   ],
+   "ranges_overlap": false,
+   "gap_bytes": 356,
+   "misclassified_by_a_size_threshold": 0,
+   "where_10222_sits": [
+    {
+     "handle": "buzz_award",
+     "bytes": 366046,
+     "file": "account-state-117b.json",
+     "inside_served_range": true,
+     "inside_not_served_range": false
+    },
+    {
+     "handle": "jere.ronkko",
+     "bytes": 365401,
+     "file": "account-state-117b.json",
+     "inside_served_range": true,
+     "inside_not_served_range": false
+    },
+    {
+     "handle": "worldpadeltour",
+     "bytes": 365335,
+     "file": "account-state-117b.json",
+     "inside_served_range": true,
+     "inside_not_served_range": false
+    }
+   ],
+   "verdict": "the two readings separate perfectly on a feature neither used: 102 served in [364064, 366285], 38 not served in [362007, 363708], gap 356 bytes",
+   "what_it_does_not_show": "Nothing about the platform, and nothing about causes. It shows the marker-based reclassification is not a regex artefact: a second stored feature of the same response puts 10222 with the accounts that are served, and it was never consulted when the code was assigned."
+  }
+ ]
+}

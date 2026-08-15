@@ -1,0 +1,151 @@
+{
+ "generated_utc": "2026-08-15T05:32:21Z",
+ "diff": "ledger/diff-day4-day5.json",
+ "vantage": {
+  "ip": "160.79.106.133",
+  "city": "Columbus",
+  "region": "Ohio",
+  "country": "US",
+  "loc": "39.9612,-82.9988",
+  "timezone": "America/New_York",
+  "asn": "AS396982",
+  "registrant": "[redacted under this practice's naming rule]",
+  "source": "https://ipinfo.io/json",
+  "fetched_utc": "2026-08-15T05:32:06Z"
+ },
+ "passes_per_transition": 5,
+ "K4": "PASSES \u2014 every transition confirmed",
+ "results": [
+  {
+   "vid": "7016669364938149122",
+   "handle": "ask__dani",
+   "arm": null,
+   "from": "NOT-RETRIEVABLE",
+   "to": "RETRIEVABLE",
+   "reconfirmation_states": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": true,
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests",
+   "passes": [
+    {
+     "http": 200,
+     "bytes": 1562,
+     "author_unique_id": "ask__dani",
+     "title_len": 35,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 1,
+     "utc": "2026-08-15T05:32:07Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1564,
+     "author_unique_id": "ask__dani",
+     "title_len": 35,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 2,
+     "utc": "2026-08-15T05:32:09Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1564,
+     "author_unique_id": "ask__dani",
+     "title_len": 35,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-15T05:32:11Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1562,
+     "author_unique_id": "ask__dani",
+     "title_len": 35,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 4,
+     "utc": "2026-08-15T05:32:12Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1564,
+     "author_unique_id": "ask__dani",
+     "title_len": 35,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 5,
+     "utc": "2026-08-15T05:32:13Z"
+    }
+   ]
+  },
+  {
+   "vid": "7234106298021727515",
+   "handle": "avfcofficial",
+   "arm": null,
+   "from": "RETRIEVABLE",
+   "to": "NOT-RETRIEVABLE",
+   "reconfirmation_states": [
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": true,
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests",
+   "passes": [
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 1,
+     "utc": "2026-08-15T05:32:15Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 2,
+     "utc": "2026-08-15T05:32:16Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-15T05:32:17Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 4,
+     "utc": "2026-08-15T05:32:19Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 5,
+     "utc": "2026-08-15T05:32:20Z"
+    }
+   ]
+  }
+ ]
+}
