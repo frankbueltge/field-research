@@ -48,6 +48,24 @@ confirmation — a v0.1-equivalent reading of eleven identifiers.
 standing condition.** It is the disease-one-level-up shape the previous session's adversary named,
 and it recurs here.
 
+## E3 — **found by us**, and it is a defect in this session's own central contribution.
+
+`deliverable-v0.3/LIMITS.md` §4 is headed **"Six events is not a rate"**. The number is **typed**,
+spelled out as a word, and it survived the prose audit this session built and is claiming as its
+answer to three failed gauntlets — because `audit_prose()` extracts **digits** and is blind to
+number words.
+
+**The figure is correct today**: computed from `confirmation-record.json`, the genuine transitions
+tested are **6** and the confirmed are **4**. It is correct by luck of timing. The confirmation
+record covers 4 interval sidecars; the moment a fifth exists the heading is wrong, and nothing in
+the build will say so — which is the precise shape of the frozen-reference defect this arc spent
+session 122 measuring, reproduced inside the repair for it.
+
+**The limit is general and is now stated:** the prose auditor sees `6` and cannot see *six*,
+*twelve*, *a dozen*, *twenty*. Any figure written as a word passes it untouched. Session 123's
+increment claims the audit makes an unprovenanced number fail the build; **that claim is true only
+of numbers written in digits**, and the increment did not say so until this erratum.
+
 ---
 
 *Entries below this line are from the gauntlet and are added after the verdicts.*
