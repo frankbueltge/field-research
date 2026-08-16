@@ -237,7 +237,7 @@ def main():
                                          or tt["absent_rate"] is None
                                          else tt["absent_rate"] - f["absent_rate"])})
 
-    # How many individual units change band over those 3.01 days, and in which direction.
+    # How many individual units change band over those 2.6803 days, and in which direction.
     crossers = []
     for o in newest["obs"]:
         u = units[str(o["vid"])]

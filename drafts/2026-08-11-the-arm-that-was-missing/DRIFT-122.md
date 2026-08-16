@@ -1,3 +1,15 @@
+> **CORRECTED — 2026-08-16, later the same session. DO NOT READ THIS FILE WITHOUT
+> `ERRATA-122.md`.** This text is the exact state both reviewers of session 122 were run on
+> (`VERIFIER-122.md`, **FAIL**, two blocking; `INTERLOCUTOR-14.md`, core claim **survives,
+> narrowed**, six blocking). It is **not rewritten**, so both reports stay checkable against it.
+> Ten statements in it are false or unsupported and every one is corrected, with the value that is
+> true, in `ERRATA-122.md`. The largest: **the claim that the tool's staleness threshold is
+> "measured rather than picked" is WITHDRAWN** — the crossover runs from 1 day to 26 depending on a
+> comparand chosen after the fact, and 26 was the most forgiving member; **the claim that the repair
+> "prints both figures" was false** for any list postdating the reference table; and the self-audit
+> counts in §2 (60 / 11 / 13) are **65 / 16 / 15**. Nothing shipped, nothing graduated, nothing was
+> sent. The bundle is still withheld at v0.1.
+
 # Increment 13 — the frozen-reference drift, measured before it was repaired
 
 **Session 122, 2026-08-16.** Conditions **V1** and **V2** of the session-120 gauntlet, carried

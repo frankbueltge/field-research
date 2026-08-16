@@ -24,7 +24,7 @@ import time
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import presence_check as pc  # noqa: E402
 
-PASS, FAIL = [], []
+PASS, FAIL, SKIPPED = [], [], []
 
 
 def check(name, got, want):
@@ -344,12 +344,105 @@ check("drift is None when the declared reference time is unreadable",
       pc.drift(rows_same, dict(DRIFTY, t_ref_utc="whenever"), t_at_ref), None)
 check("an undatable identifier contributes no band at either clock",
       pc.rebanded([{"vid": "12345"}], t_at_ref), [{"band": None}])
-check_true("the staleness threshold is the measured one, not a round number",
-           pc.STALE_AFTER_DAYS == 26, pc.STALE_AFTER_DAYS)
+# --- v0.3.1: the comparand, asserted against the measurement rather than against a literal ---
+# Verifier 122 finding 6 and Interlocutor 14 finding 5 both caught the v0.3.0 version of this
+# assertion: it read `pc.STALE_AFTER_DAYS == 26`, which passes identically whether 26 was
+# computed or typed, inside a repair whose whole subject is numbers that quietly stop matching
+# their source. It now recomputes the comparand from the measurement file. AND — session 119's
+# lesson, which the old version also broke — a check that cannot find its subject must SAY SO,
+# never pass quietly: if the measurement file is not beside the bundle, that is reported as a
+# skipped assertion with a reason, not as a pass.
+_MEAS = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "drift-122.json")
+if os.path.exists(_MEAS):
+    _m = json.load(open(_MEAS))
+    _fam = _m["half_two_caller_side_drift"]["when_the_design_half_overtakes_the_bookkeeping_half"]
+    _moved = _m["half_one_bookkeeping"]["bands_that_move"]
+    _worst = max(abs(100 * r["delta_rate"]) for r in _moved if r.get("delta_rate") is not None)
+    check("the measurement's worst band-rate delta is the 0.1826 pp v0.3.0 warned off",
+          round(_worst, 4), 0.1826)
+    check("and that comparand yields the 26 days v0.3.0 hard-coded", _fam["days"], 26)
+    check_true("the comparand v0.3.1 actually uses is SMALLER than the withdrawn one — the "
+               "strictest member of the family, not the most forgiving",
+               pc.BOOKKEEPING_COMPARAND_PP < _worst,
+               (pc.BOOKKEEPING_COMPARAND_PP, _worst))
+    check_true("the withdrawn constant is gone from the module",
+               not hasattr(pc, "STALE_AFTER_DAYS"), "STALE_AFTER_DAYS still present")
+else:
+    SKIPPED.append("drift-122.json not beside the bundle: the comparand could NOT be checked "
+                   "against its measurement, and this line is here so that absence is visible")
+
+# --- v0.3.1: the two cases v0.3.0 got wrong, both reproduced from the adversary's report -----
+_DR = {"schema": "field-research/public-presence-null/1",
+       "t_ref_utc": "2026-08-14T03:43:47Z",
+       "by_age_band": {"0-1y": {"n": 100, "absent_rate": 0.05, "absent_ci": [0.02, 0.10]},
+                       "4-5y": {"n": 100, "absent_rate": 0.10, "absent_ci": [0.05, 0.15]},
+                       "5y+": {"n": 100, "absent_rate": 0.30, "absent_ci": [0.20, 0.40]}},
+       "pooled": {"n": 300},
+       "source_run": {"file": "f.json", "run_id": "r", "vantage_asn": "AS1"}}
+_td = calendar.timegm(time.strptime("2026-08-14T03:43:47Z", "%Y-%m-%dT%H:%M:%SZ"))
+_mk = lambda d: str((int(_td - d * 86400) << 32) | 1)     # created d days BEFORE t_ref
+_now = _td + 400 * 86400
+
+
+def _rows(vids, at):
+    return [{"vid": v, "band": pc.band_of((at - (int(v) >> 32)) / pc.YEAR_S)} for v in vids]
+
+
+# Case A — every identifier postdates the table. v0.3.0 returned None here and the printer
+# silently fell through to the today-aged figure, unlabelled.
+_a = pc.drift(_rows([_mk(-50 - i * 10) for i in range(5)], _now), _DR, _now)
+check_true("a list that entirely postdates the table still returns a drift record", _a is not None)
+check("...with no reference-time reading, because those videos did not exist then",
+      _a["expected_with_the_list_aged_at_the_reference_time"], None)
+check("...with the drift refused rather than invented", _a["drift_pp"], None)
+check("...and marked not comparable", _a["comparable"], False)
+check_true("...and the refusal states its reason",
+           "created AFTER" in _a["why_the_drift_is_not_reported"],
+           _a["why_the_drift_is_not_reported"])
+check("...while the today-aged reading is still computed and counted",
+      _a["n_dated_at_now"], 5)
+
+# Case B — a mixed list. v0.3.0 printed the difference between two DIFFERENT denominators as
+# drift; on the adversary's five-old/five-new list that was -4.8752 pp of which none was drift.
+_b = pc.drift(_rows([_mk(2000 + i * 100) for i in range(5)]
+                    + [_mk(-50 - i * 10) for i in range(5)], _now), _DR, _now)
+check("a mixed list is datable at the reference time for the old half only",
+      _b["n_dated_at_the_reference_time"], 5)
+check("...and for the whole list at today", _b["n_dated_at_now"], 10)
+check("...so the drift is refused", _b["drift_pp"], None)
+check_true("...and the refusal names the two denominators",
+           "5 identifier(s) are datable" in _b["why_the_drift_is_not_reported"]
+           and "10 at today" in _b["why_the_drift_is_not_reported"],
+           _b["why_the_drift_is_not_reported"])
+
+# Case C — a comparable list still reports a drift, with both intervals and both denominators.
+_c = pc.drift(_rows([_mk(1700)], _now), _DR, _now)
+check("a comparable list is marked comparable", _c["comparable"], True)
+check("...its two denominators agree",
+      (_c["n_dated_at_the_reference_time"], _c["n_dated_at_now"]), (1, 1))
+check_true("...and both readings carry their interval, not just the disowned one",
+           None not in (_c["expected_at_the_reference_time_lo"],
+                        _c["expected_at_the_reference_time_hi"],
+                        _c["expected_at_now_lo"], _c["expected_at_now_hi"]))
+
+# --- v0.3.1: the tool can now tell a table that lies about its own clock -------------------
+_ok = pc.baseline_currency(dict(_DR, ages_computed_at_utc="2026-08-14T03:43:47Z"), _td)
+check_true("a table whose two clocks agree is reported as AGREE",
+           _ok["clock_check"].startswith("AGREE"), _ok["clock_check"])
+_bad = pc.baseline_currency(dict(_DR, ages_computed_at_utc="2026-08-11T11:24:06Z"), _td)
+check_true("a table with V1's own defect is reported as DISAGREE",
+           _bad["clock_check"].startswith("DISAGREE"), _bad["clock_check"])
+check("...and the disagreement is measured, at V1's own 2.6803 days",
+      round(_bad["declared_minus_computed_days"], 4), 2.6803)
+check_true("a table that states only one clock is UNCHECKABLE, never AGREE",
+           pc.baseline_currency(_DR, _td)["clock_check"].startswith("UNCHECKABLE"),
+           pc.baseline_currency(_DR, _td)["clock_check"])
 
 # --------------------------------------------------------------------------------- report
 print(f"selftest_presence_check — presence_check {pc.VERSION}")
 print(f"  {len(PASS)} assertion(s) passed")
+for sk in SKIPPED:
+    print(f"  SKIPPED (said out loud, never counted as a pass): {sk}")
 if FAIL:
     print(f"  {len(FAIL)} FAILED:")
     for f in FAIL:

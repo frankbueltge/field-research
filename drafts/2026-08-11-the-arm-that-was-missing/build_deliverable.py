@@ -56,6 +56,24 @@ STRATUM = {
 AGE_BANDS = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 99)]
 
 
+def _drift_figures():
+    """The measured caller-side drift, READ from the measurement that produced it (session 122).
+
+    Interlocutor 14 finding 5. A block of drift figures typed beside a table that can be rebuilt
+    on a longer panel is the V1 shape one level up: a declaration nobody checks, beside cells
+    that moved. If the measurement is not on disk this returns a statement of that fact — never
+    a number.
+    """
+    try:
+        d = json.load(open("drift-122.json"))
+        rows = d["half_two_caller_side_drift"]["lists"]["reference_population_itself"]["horizons"]
+        return {str(r["days_after_t_ref"]): round(r["drift_pp_from_day0"], 4)
+                for r in rows if r["days_after_t_ref"] > 0}
+    except Exception as e:
+        return {"unavailable": f"drift-122.json was not readable when this table was built "
+                               f"({type(e).__name__}); no drift figures are asserted here"}
+
+
 def band_label(lo, hi):
     return f"{lo}-{hi}y" if hi < 99 else f"{lo}y+"
 
@@ -245,8 +263,12 @@ def main():
             f.write("video_id,arm,stratum,created_utc,age_y_at_baseline,"
                     + ",".join(f"band_at_{l}" for l in labels) + ","
                     + ",".join(labels) + "\n")
+            # (v0.3.0 asserted `u["band"] == u["band_by_day"]["baseline"]` here. Interlocutor 14
+            #  finding 12: both sides derive from t_first, so it could not fail. Removed rather
+            #  than left standing as a check that certifies nothing. The assertion that carries
+            #  the V1 claim is the one below the reference table, which was mutation-tested from
+            #  both directions by the session-122 Verifier and fired both times.)
             for u in ordered:
-                assert u["band"] == u["band_by_day"].get("baseline"), u["vid"]
                 f.write(",".join([
                     u["vid"], u["arm"], u["stratum"], u["created_utc"] or "",
                     "" if u["age_y_at_baseline"] is None else f"{u['age_y_at_baseline']:.4f}",
@@ -422,9 +444,12 @@ def main():
                                  "that ages a caller's list at TODAY and looks it up here is doing "
                                  "arithmetic against a clock that stopped. The size of that error "
                                  "was measured before it was disclosed: `drift-122.json`."),
-            "measured_drift_pp_by_days_after_t_ref": {"1": 0.0035, "7": 0.0342, "30": 0.2264,
-                                                      "90": 0.6105, "180": 1.1877, "365": 2.4225,
-                                                      "730": 4.1649},
+            # Interlocutor 14 finding 5, repaired the same night: these seven figures were
+            # TYPED here from the measurement rather than read from it, inside a repair whose
+            # whole subject is numbers that quietly stop matching their source. They are now
+            # read from `drift-122.json`, and if that file is absent the block says so instead
+            # of shipping a stale literal beside a fresh table.
+            "measured_drift_pp_by_days_after_t_ref": _drift_figures(),
             "drift_is_on": ("the reference population itself, re-aged against this fixed table; it "
                             "is what the printed expectation does, NOT a forecast of what "
                             "retrievability does"),
