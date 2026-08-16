@@ -1,0 +1,169 @@
+{
+ "schema": "field-research/deliverable-manifest/1",
+ "built_utc": "2026-08-16T03:54:02Z",
+ "built_by": "build_v03.py, session 123, 2026-08-16",
+ "coverage": {
+  "first_measurement_utc": "2026-08-11T11:24:06Z",
+  "last_measurement_utc": "2026-08-15T03:37:40Z",
+  "n_measurement_days": 5,
+  "note": "this bundle is a dated snapshot with a stated cut-off. The instrument that produced it keeps running; a later version covers later days. A run that was still in flight when the bundle was assembled is NOT in it, and the absence of a day here is never evidence that the instrument was dark."
+ },
+ "source_runs": [
+  {
+   "label": "baseline",
+   "file": "ledger/baseline-union.json",
+   "run_id": "baseline-union (session 110 run + session 111 baselines 1-3)",
+   "utc_start": "2026-08-11T11:24:06Z",
+   "utc_end": "2026-08-11T23:05:18Z",
+   "sha256": "7cc55fc4f94768a30dcb651ab04fed58abb9b47f136d35fc9db078646af0d7d2"
+  },
+  {
+   "label": "2026-08-12",
+   "file": "ledger/run-2026-08-12T0341Z.json",
+   "run_id": "2026-08-12T0341Z",
+   "utc_start": "2026-08-12T03:40:28Z",
+   "utc_end": "2026-08-12T05:29:06Z",
+   "seconds": 6518.1,
+   "planned": 3869,
+   "requested": 3869,
+   "stopped": null,
+   "vantage_asn": "AS396982",
+   "vantage_country": "US",
+   "sha256": "e9d66881a80e14bc4544c9261f382c778dd36c4b42052e1e0808a572e3c59b12"
+  },
+  {
+   "label": "2026-08-13",
+   "file": "ledger/run-2026-08-13T0427Z.json",
+   "run_id": "TEMPLATE \u2014 the running session sets this",
+   "utc_start": "2026-08-13T04:27:00Z",
+   "utc_end": "2026-08-13T06:19:35Z",
+   "seconds": 6754.7,
+   "planned": 3869,
+   "requested": 3869,
+   "stopped": null,
+   "vantage_asn": "AS396982",
+   "vantage_country": "US",
+   "sha256": "128bd4382e61809096071060e67f0683e5a14251f5afd8908dac41910f5b4a1b"
+  },
+  {
+   "label": "2026-08-14",
+   "file": "ledger/run-2026-08-14T0343Z.json",
+   "run_id": "2026-08-14T03:43:47Z (manifest carried a placeholder)",
+   "utc_start": "2026-08-14T03:43:47Z",
+   "utc_end": "2026-08-14T05:34:11Z",
+   "seconds": 6623.0,
+   "planned": 3869,
+   "requested": 3869,
+   "stopped": null,
+   "vantage_asn": "AS396982",
+   "vantage_country": "US",
+   "sha256": "8e876569ac6abad693d8b43c5b6a44e027dd6d89ffd14712b4469278d1857f75"
+  },
+  {
+   "label": "2026-08-15",
+   "file": "ledger/run-2026-08-15T0337Z.json",
+   "run_id": "2026-08-15T03:37:40Z (manifest carried a placeholder)",
+   "utc_start": "2026-08-15T03:37:40Z",
+   "utc_end": "2026-08-15T05:31:27Z",
+   "seconds": 6827.3,
+   "planned": 3869,
+   "requested": 3869,
+   "stopped": null,
+   "vantage_asn": "AS396982",
+   "vantage_country": "US",
+   "sha256": "d1d14495b276746ff35c0655cfe4388f28b1ed4973fdce64b62c9420f59085f6"
+  }
+ ],
+ "corrections_file": {
+  "path": "ledger/corrections.json",
+  "sha256": "b08e4c531e79cac24a91cac17c51e00ccaa7cac1e064a4282dbc7b89372a8e7a",
+  "rows_applied": 2
+ },
+ "n_units": 3869,
+ "n_days": 5,
+ "bundle_version": "0.3",
+ "bundle_version_status": "see VERSIONS.md; this field is written by the build and asserts no verdict",
+ "carried_files": [
+  {
+   "from": "deliverable/tools/presence_check.py",
+   "to": "tools/presence_check.py",
+   "sha256": "386315272b02d99a06c464cb26f6125763dcfb5749c022ec3355a43b8e795b6c"
+  },
+  {
+   "from": "deliverable/tools/selftest_presence_check.py",
+   "to": "tools/selftest_presence_check.py",
+   "sha256": "6158ea60213cd1eb4908624f259e7291fdca4a66e0899304e80bc3eef8802f4c"
+  },
+  {
+   "from": "deliverable/tools/ledger.py",
+   "to": "tools/ledger.py",
+   "sha256": "2e04d511e9b8b5a2d66653d76a7ce56f9491f9667bb4dad775fb47232d5a7040"
+  },
+  {
+   "from": "deliverable/tools/power_audit.py",
+   "to": "tools/power_audit.py",
+   "sha256": "0dca991c86329b82d82be0833e58dfe6df07755f661654b55c05e3f7f8b29dfe"
+  },
+  {
+   "from": "deliverable/tools/CHANGELOG-v0.2.md",
+   "to": "tools/CHANGELOG-v0.2.md",
+   "sha256": "a6d18759a459d1aabd3a4f8d0627dc3d1d9be40434a2ef6835917cf3fd82b978"
+  },
+  {
+   "from": "deliverable/receiver-eleven.json",
+   "to": "receiver-eleven.json",
+   "sha256": "fd186deccf2390f1431f797dd309287abeaa26c42d6d8501b6778270c9c2f872"
+  },
+  {
+   "from": "deliverable/receiver-eleven.md",
+   "to": "receiver-eleven.md",
+   "sha256": "636f8bd7135756114f2f05d90834a4f64e0ff19dc6485ae59aafd4b1edfc668b"
+  },
+  {
+   "from": "confirmation-record-121.json",
+   "to": "confirmation-record.json",
+   "sha256": "f1813f1b2447cbedf1aecc2f36a4d9983b3e7127dddc8c22e26fccd3f8ca22c9"
+  },
+  {
+   "from": "drift-122.json",
+   "to": "reference-drift.json",
+   "sha256": "5f5ef5f9fbc638110b89a1b87e064830a0d105e84d7a8e9d9f568a0a0eb700a2"
+  },
+  {
+   "from": "receiver-dashboard-2026-08-16.json",
+   "to": "receiver-dashboard-read.json",
+   "sha256": "f98ee3562f6d5a4bafe52d27ac992e56dee3b0d457d34989bb900ca7aba66ff9"
+  },
+  {
+   "from": "receiver-dashboard-2026-08-16.html",
+   "to": "receiver-dashboard-2026-08-16.html",
+   "sha256": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb"
+  }
+ ],
+ "bundle_files_sha256": {
+  "FIGURE-PROVENANCE.json": "48532079cddbf9257a4933632da07ae31a4cc1b60be660b2c8039c1edd2f98ba",
+  "FIGURES.md": "9d0252005fb39b5341d193ae1db9ee588e5505dfb5b982a8d1c4de5fe95f927f",
+  "LETTER.md": "a7ed14a0a0c10a3990e547dddcff0025eac7fafdc2984b3a77d1fbc8807eb4fb",
+  "LIMITS.md": "6c78ad9cbabc1eb611ad2f986a1f9aca7f83f0bf22ddaab188c92969e7996824",
+  "README.md": "caf859a67a093c1b459d8f3985bc83548bd4193f9494f0d83b0db17abe6525d2",
+  "VERSIONS.md": "96146edb29a5e9ea78beef03647b0238e6e733d628092161b0f38d5e0e314c80",
+  "confirmation-record.json": "f1813f1b2447cbedf1aecc2f36a4d9983b3e7127dddc8c22e26fccd3f8ca22c9",
+  "expectation.json": "c9d42475196ee329b9c8a23f6294898f8dd41ad372bbdbc088a4e946bb65d798",
+  "gradient-test.json": "8264522fe906920ffa83024a9bf0311c3bdaacd66ef1e7bc69399f0c4859d58b",
+  "receiver-dashboard-2026-08-16.html": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb",
+  "receiver-dashboard-read.json": "f98ee3562f6d5a4bafe52d27ac992e56dee3b0d457d34989bb900ca7aba66ff9",
+  "receiver-eleven.json": "fd186deccf2390f1431f797dd309287abeaa26c42d6d8501b6778270c9c2f872",
+  "receiver-eleven.md": "636f8bd7135756114f2f05d90834a4f64e0ff19dc6485ae59aafd4b1edfc668b",
+  "reference-baseline.json": "820a55923d9f2add1a85746e65f6418fb1f4cf94ead228db836daa62d7db46c4",
+  "reference-drift.json": "5f5ef5f9fbc638110b89a1b87e064830a0d105e84d7a8e9d9f568a0a0eb700a2",
+  "series/presence-series-corrected.csv": "c7c16d92b6e5e0680f3ff8f8e0fead08bb0d3ee414e1d1fc8ccfa52d397359b1",
+  "series/presence-series.csv": "c5ff7864c48faa152f0a6a9a89fd47f5a8be2137ec889c9307ee925672d39c73",
+  "series/presence-series.json": "72deac5cb0a33756a70a9d92d838283d96bf630f3499b55bfce232203c3f94b2",
+  "tools/CHANGELOG-v0.2.md": "a6d18759a459d1aabd3a4f8d0627dc3d1d9be40434a2ef6835917cf3fd82b978",
+  "tools/ledger.py": "2e04d511e9b8b5a2d66653d76a7ce56f9491f9667bb4dad775fb47232d5a7040",
+  "tools/power_audit.py": "0dca991c86329b82d82be0833e58dfe6df07755f661654b55c05e3f7f8b29dfe",
+  "tools/presence_check.py": "386315272b02d99a06c464cb26f6125763dcfb5749c022ec3355a43b8e795b6c",
+  "tools/selftest_presence_check.py": "6158ea60213cd1eb4908624f259e7291fdca4a66e0899304e80bc3eef8802f4c"
+ },
+ "bundle_files_note": "every file in this directory except MANIFEST.json itself, which cannot hash itself. A file present here and absent from disk, or vice versa, is a defect."
+}

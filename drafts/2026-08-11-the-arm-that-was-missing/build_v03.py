@@ -417,8 +417,10 @@ the same two counts are **{cr_raw_ret_c} of {cr_raw_ret_n}** and **{cr_raw_los_c
 count travels with the word *raw* or *genuine*, or it does not travel.
 
 **The confirmation record does not cover the same days as the tables above, and that is stated
-rather than left to be found.** It is built from {cr_sidecars} interval sidecars, `{cr_first}`
-through `{cr_last}`. Every interval between consecutive measurement days has one, except that an
+rather than left to be found.** It is built from {cr_sidecars} interval sidecars — one per
+interval between consecutive measurement days — held in the repository this bundle comes from and
+listed by path and sha256 inside `confirmation-record.json`, running from `{cr_first}` to
+`{cr_last}`. Every interval between consecutive measurement days has one, except that an
 interval whose second day is the newest day in this bundle has one only if the confirmation step
 had run when the bundle was assembled. Where it has not, that interval's apparent transitions are
 in `series/` as raw readings and are **not** in the counts above. A count of confirmed events is

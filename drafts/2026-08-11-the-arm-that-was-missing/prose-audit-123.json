@@ -1,7 +1,7 @@
 {
  "schema": "field-research/prose-figure-audit/2",
- "provenance": "/tmp/claude-0/-home-user-field-research/0a0639fd-4c0b-53ba-86e7-24ecffe3d83f/scratchpad/rb/v03-trial/FIGURE-PROVENANCE.json",
- "n_rendered_tokens": 124,
+ "provenance": "deliverable-v0.3/FIGURE-PROVENANCE.json",
+ "n_rendered_tokens": 129,
  "not_scanned": [
   "heading number",
   "ordered-list marker",
@@ -14,22 +14,22 @@
  ],
  "files": [
   {
-   "file": "/tmp/claude-0/-home-user-field-research/0a0639fd-4c0b-53ba-86e7-24ecffe3d83f/scratchpad/rb/v03-trial/README.md",
+   "file": "deliverable-v0.3/README.md",
    "n_unmatched": 0,
    "unmatched": []
   },
   {
-   "file": "/tmp/claude-0/-home-user-field-research/0a0639fd-4c0b-53ba-86e7-24ecffe3d83f/scratchpad/rb/v03-trial/LETTER.md",
+   "file": "deliverable-v0.3/LETTER.md",
    "n_unmatched": 0,
    "unmatched": []
   },
   {
-   "file": "/tmp/claude-0/-home-user-field-research/0a0639fd-4c0b-53ba-86e7-24ecffe3d83f/scratchpad/rb/v03-trial/LIMITS.md",
+   "file": "deliverable-v0.3/LIMITS.md",
    "n_unmatched": 0,
    "unmatched": []
   },
   {
-   "file": "/tmp/claude-0/-home-user-field-research/0a0639fd-4c0b-53ba-86e7-24ecffe3d83f/scratchpad/rb/v03-trial/VERSIONS.md",
+   "file": "deliverable-v0.3/VERSIONS.md",
    "n_unmatched": 0,
    "unmatched": []
   }
