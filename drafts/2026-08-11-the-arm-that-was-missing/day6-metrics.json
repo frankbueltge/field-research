@@ -1,0 +1,46 @@
+{
+ "schema": "field-research/window-interval/1",
+ "written_by": "day6_metrics.py, session 122, 2026-08-16",
+ "interval": 5,
+ "run": {
+  "file": "ledger/run-2026-08-16T0337Z.json",
+  "run_utc_start": "2026-08-16T03:37:40Z",
+  "run_utc_end": "2026-08-16T05:26:39Z",
+  "seconds": 6538.9,
+  "requested": 3869,
+  "planned": 3869,
+  "stopped": null,
+  "vantage_asn": "AS396982",
+  "vantage_country": "US",
+  "probe_identical_to_day5": true
+ },
+ "interval_days": 1.0,
+ "previous_run": {
+  "file": "ledger/run-2026-08-15T0337Z.json",
+  "run_utc_start": "2026-08-15T03:37:40Z"
+ },
+ "arm": "overlay-corrected; the raw diff is the primary record and is published beside it",
+ "retrievable_at_day5_and_determinate_at_day6": 3106,
+ "confirmed_losses": 0,
+ "absent_at_day5_and_determinate_at_day6": 432,
+ "confirmed_returns": 1,
+ "return_rate": 0.0023148148148148147,
+ "return_rate_wilson": [
+  0.0004087385899213536,
+  0.012993976329120117
+ ],
+ "loss_rate": 0.0,
+ "loss_rate_wilson": [
+  0.0,
+  0.0012352587337206575
+ ],
+ "movers": [
+  {
+   "vid": "7118519163416497450",
+   "from": "NOT-RETRIEVABLE",
+   "to": "RETRIEVABLE",
+   "arm": "B"
+  }
+ ],
+ "the_intervals_travel_unwidened": "these Wilson brackets take the video as the independent unit. Losses in this corpus clump by cited account and every proportion this arc publishes takes the crossed design effect (1.9900, session 116); condition 7 of memory/downstream-commitments.md governs any reuse. Six confirmed events across five intervals is not a rate and this practice does not turn it into one."
+}

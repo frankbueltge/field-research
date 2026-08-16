@@ -1,7 +1,7 @@
 {
  "schema": "field-research/ledger-corrections/1",
  "recorded_by_session": 119,
- "generated_utc": "2026-08-15T05:31:52Z",
+ "generated_utc": "2026-08-16T05:27:19Z",
  "deviation": "D23 \u2014 bookkeeping only; no probe and no archived run file changes",
  "policy": "An overlay, never an edit. Each row says: this run file carries this state for this identifier, the confirmation step of this arc refuted it with five immediate re-requests that all said otherwise, and the state those re-requests support is the one a consumer should read. The run file is unchanged and stays the record of what the instrument actually returned. Any consumer applying this overlay must report that it did, and which rows it used \u2014 see ledger_diff.py --corrections.",
  "n_corrections": 2,

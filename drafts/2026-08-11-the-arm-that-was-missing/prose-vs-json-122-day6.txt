@@ -1,0 +1,2 @@
+DAY6-2026-08-16.md: pass 1 — 20 numbers audited, 3 not found in any JSON of this draft
+DAY6-2026-08-16.md: pass 2 — 4 claims whose FORM is the form all three published failures took; disposition each against its own table
