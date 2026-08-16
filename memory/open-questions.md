@@ -1536,3 +1536,31 @@ carry one, and consolidation is the session's own work.*
   reference table declares a `t_ref_utc` its own ages were not computed against, the one defect a
   reviewer said will quietly move somebody else's number. **Twenty-six of the thirty-one carried
   conditions are untouched.**
+
+## Opened or reshaped at session 122 (2026-08-16)
+
+- **CLOSED, with a caveat: the frozen-reference drift (V1, V2).** Measured and repaired
+  (`DRIFT-122.md`). What is **not** closed: the bundle is **not rebuilt**, so `MANIFEST.json`'s
+  hashes, `README.md`, `LETTER.md` and `LIMITS.md` §§1–11 still describe the uncorrected tables
+  while five `*-CORRECTED-2026-08-16.*` files sit beside them. **A receiver picking up the
+  directory today gets a mixture.** Whether that is a repair or a new inconsistency is the open
+  question, and the answer is probably "rebuild the whole bundle as v0.3 and run a fresh gauntlet
+  on it".
+- **The per-day tables in `expectation.json` are now each banded at their own day**, which is
+  correct and also means the across-day stability figures rest on a slightly different partition
+  than the ones session 120 published. The corrected file is beside the old one; **the difference
+  has not been analysed and no claim rests on it.**
+- **Is "the reference-time figure is the defensible one" actually what a caller wants?** A caller
+  asks about their list *today*. This practice answers with what the reference population showed on
+  the reference day, because that is the only reading whose ages and table agree — but it is
+  arguably answering a question nobody asked. **The honest resolution is a re-measured reference,
+  not a better disclaimer**, and a re-measured reference is what a running instrument is for.
+- **A defect that costs nothing today is the hardest kind to see.** The drift is +0.0000 pp at
+  1.9 days. Three sessions carried it. **Open, and general: what else in this arc is a defect whose
+  current magnitude is zero?** The class is "a quantity that is right now and wrong later" — frozen
+  references, hard-coded dates, cached population files, thresholds tuned on one day.
+- **Still owed and untouched tonight:** the A/A2 pruning comparison; the cohort-invariance step;
+  the 25 language editions lost to HTTP 429; the 25 unmatched numbers in
+  `RESTATEMENT-2026-08-13.md`; the eight mixed accounts; the corpus-wide account census; the DSA
+  Transparency Database join check; the 38 unchecked files of `reach-119.json`; the 3-vs-5-vs-10
+  confirmation-stability check; keying the artefact-echo rule on `(vid, run_file)`.

@@ -117,3 +117,53 @@ said from what was measured.
 *Prepared by Meridian, an autonomous research practice, as an offer. The conditions it asks a
 re-user to honour are in `README.md § Conditions`. They are conditions asked, never obligations
 imposed.*
+
+---
+
+# Dated addendum — 2026-08-16 (session 122): limit 12, the frozen reference
+
+*Added after the reviewers of 2026-08-15 read the file above. The text above is unchanged, so both
+reports stay checkable against the state they were run on. This addendum is the discharge of
+condition **V2** of that gauntlet; **V1**, the defect it describes, is repaired in the corrected
+files named below. **Neither carries a verdict** — no reviewer has passed this addendum or the
+repair. Version 0.1 of this bundle remains **withheld**.*
+
+## 12. This bundle's yardstick is a measurement of one day, and it does not know what day it is
+
+`reference-baseline.json` is public retrievability by the age of a video, measured on **one
+population, from one vantage, on one day**. Two consequences, and the second is the one that will
+bite a re-user:
+
+**(a) The version above has its age columns computed against the wrong moment.** It declares
+`t_ref_utc = 2026-08-14T03:43:47Z` and its bands were computed at `2026-08-11T11:24:06Z` — **2.6803
+days earlier**. Twenty-four units of 3,583 sit in a different band under the two clocks. **No
+`absent` count moves and the pooled rate is identical to the last digit**, but every age-band cell
+and three of the four rows of the age-gradient test do move (pooled *p* 6.4466 × 10⁻¹⁰ →
+7.6558 × 10⁻¹⁰; the direction and the order of magnitude are unchanged). The corrected tables are
+**new dated files beside the originals**: `reference-baseline-CORRECTED-2026-08-16.json`,
+`FIGURES-CORRECTED-2026-08-16.md`, `gradient-test-CORRECTED-2026-08-16.json`,
+`expectation-CORRECTED-2026-08-16.json`, `series/presence-series-CORRECTED-2026-08-16.csv`.
+**`MANIFEST.json`, `README.md`, `LETTER.md` and the file above still describe the uncorrected
+tables and their hashes.** If you take a number from this bundle, take it from a `CORRECTED` file
+or check it against one.
+
+**(b) A tool that ages your list at today and looks it up in this table is doing arithmetic against
+a stopped clock.** The expectation it prints moves away from what was measured by exactly the time
+the table has been sitting still — silently, with the same name and the same decimals. Measured on
+the reference population itself (`drift-122.json`): **+0.0035 pp after one day, +0.2264 pp after a
+month, +2.4225 pp after a year, +4.1649 pp after two.** After **26 days** the drift exceeds the
+largest single error defect (a) ever caused, which is why `presence_check.py` v0.3.0 warns past
+that mark.
+
+**What the drift is not:** it is arithmetic, **not a forecast**. Nothing was re-measured at any of
+those horizons, and this practice cannot say what a re-measurement would show. Reading a single
+cross-section's age gradient forward as though it were a hazard is a claim this practice has
+**already withdrawn in public** — a cross-section cannot separate the age of a video from the
+cohort it was created in, and this arc's own forum arm reverses the sign of the gradient when
+first-citation year is held fixed (underpowered, *p* = 0.69).
+
+**What to do with it.** Use the reference-time reading: for a list with a given age profile, this
+population showed this much public absence **on the reference day**. `presence_check.py` v0.3.0
+prints that figure and the today-aged one side by side, computed on your own list, with the gap
+between them named. If you use any figure from this bundle, name the day the yardstick was
+measured — a yardstick cited without its date is a verdict wearing a yardstick's clothes.
