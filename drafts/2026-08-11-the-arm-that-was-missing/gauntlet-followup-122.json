@@ -1,0 +1,214 @@
+{
+ "schema": "field-research/gauntlet-followup/1",
+ "written_by": "gauntlet_followup_122.py, session 122, 2026-08-16",
+ "why_this_exists": "erratum E1 of this session: three counts were published from a run that was never captured. Every figure ERRATA-122.md and CONDITIONS-122.md state in answer to the gauntlet is computed here so it has a machine source and can be re-checked.",
+ "reviewed_state": "95ab278 (both reports); the repairs measured here are v0.3.1 and carry no verdict",
+ "crossover_family": {
+  "worst_single_band_rate_cell": {
+   "comparand_pp": 0.1825601374570468,
+   "crossover_days": 26,
+   "drift_at_crossover_pp": 0.1925055937959913
+  },
+  "mean_band_rate_cell": {
+   "comparand_pp": 0.06343582359482659,
+   "crossover_days": 10,
+   "drift_at_crossover_pp": 0.06645157027309889
+  },
+  "effect_on_the_printed_expectation": {
+   "comparand_pp": 0.00017874972041420634,
+   "crossover_days": 1,
+   "drift_at_crossover_pp": 0.0035330266282704303
+  },
+  "effect_on_the_pooled_rate": {
+   "comparand_pp": 0.0,
+   "crossover_days": 1,
+   "drift_at_crossover_pp": 0.0035330266282704303
+  },
+  "_which_one_is_like_for_like": "effect_on_the_printed_expectation. The drift is measured ON the printed expectation, so the bookkeeping half's effect on that same quantity is what it must be weighed against. It is the strictest member and v0.3.1 uses it, having withdrawn the claim that the 26-day figure was 'measured rather than picked'."
+ },
+ "across_day_stability": {
+  "by_band": {
+   "0-1y": {
+    "range_pp_as_shipped": 0.2490811582679532,
+    "range_pp_corrected": 0.2490811582679532,
+    "change_pct": 0.0
+   },
+   "1-2y": {
+    "range_pp_as_shipped": 0.2580645161290321,
+    "range_pp_corrected": 0.2580645161290321,
+    "change_pct": 0.0
+   },
+   "2-3y": {
+    "range_pp_as_shipped": 0.42452830188679236,
+    "range_pp_corrected": 0.3148589447910022,
+    "change_pct": -25.83322633811947
+   },
+   "3-4y": {
+    "range_pp_as_shipped": 0.32230798318393095,
+    "range_pp_corrected": 0.24978796810331827,
+    "change_pct": -22.500223036432764
+   },
+   "4-5y": {
+    "range_pp_as_shipped": 0.29175361310765924,
+    "range_pp_corrected": 0.32726361349155186,
+    "change_pct": 12.171229005753279
+   },
+   "5y+": {
+    "range_pp_as_shipped": 0.3544938917975554,
+    "range_pp_corrected": 0.5370540292546022,
+    "change_pct": 51.49881046788343
+   },
+   "__pooled__": {
+    "range_pp_as_shipped": 0.13562210563055344,
+    "range_pp_corrected": 0.13562210563055344,
+    "change_pct": 0.0
+   }
+  },
+  "the_5y_plus_cell_day_by_day": {
+   "as_shipped": {
+    "2026-08-12": {
+     "n": 382,
+     "absent": 68,
+     "absent_rate": 0.17801047120418848,
+     "absent_ci": [
+      0.142913813390886,
+      0.21951861999577577
+     ]
+    },
+    "2026-08-13": {
+     "n": 384,
+     "absent": 68,
+     "absent_rate": 0.17708333333333334,
+     "absent_ci": [
+      0.14215572233647705,
+      0.2184077389475786
+     ]
+    },
+    "2026-08-14": {
+     "n": 384,
+     "absent": 68,
+     "absent_rate": 0.17708333333333334,
+     "absent_ci": [
+      0.14215572233647705,
+      0.2184077389475786
+     ]
+    },
+    "baseline": {
+     "n": 382,
+     "absent": 69,
+     "absent_rate": 0.1806282722513089,
+     "absent_ci": [
+      0.1452901218128452,
+      0.22232578772514452
+     ]
+    }
+   },
+   "corrected": {
+    "2026-08-12": {
+     "n": 382,
+     "absent": 68,
+     "absent_rate": 0.17801047120418848,
+     "absent_ci": [
+      0.142913813390886,
+      0.21951861999577577
+     ]
+    },
+    "2026-08-13": {
+     "n": 385,
+     "absent": 68,
+     "absent_rate": 0.17662337662337663,
+     "absent_ci": [
+      0.14177968763833726,
+      0.21785649736613666
+     ]
+    },
+    "2026-08-14": {
+     "n": 388,
+     "absent": 68,
+     "absent_rate": 0.17525773195876287,
+     "absent_ci": [
+      0.14066343685399524,
+      0.21621931680542494
+     ]
+    },
+    "baseline": {
+     "n": 382,
+     "absent": 69,
+     "absent_rate": 0.1806282722513089,
+     "absent_ci": [
+      0.1452901218128452,
+      0.22232578772514452
+     ]
+    }
+   }
+  },
+  "mechanism": "cohort migration, not instability. Under per-day banding the 5y+ cell GROWS across the panel while its absent count stays at 68, so its rate falls monotonically by construction and the range widens. The consequence is a real methodological cost of the V1 repair: the by-band across-day spread is no longer a test-retest measure of the same units. Neither banding is simply better, and any across-day stability claim from this arc must now say which one it used."
+ },
+ "receiver_eleven_drift": {
+  "0": {
+   "drift_pp": 0.0,
+   "comparable": true,
+   "fired_under_the_withdrawn_26_day_rule": false
+  },
+  "25": {
+   "drift_pp": -0.00032513875296291683,
+   "comparable": true,
+   "fired_under_the_withdrawn_26_day_rule": false
+  },
+  "26": {
+   "drift_pp": -0.00032513875296291683,
+   "comparable": true,
+   "fired_under_the_withdrawn_26_day_rule": false
+  },
+  "27": {
+   "drift_pp": -0.00032513875296291683,
+   "comparable": true,
+   "fired_under_the_withdrawn_26_day_rule": true
+  },
+  "30": {
+   "drift_pp": -0.00032513875296291683,
+   "comparable": true,
+   "fired_under_the_withdrawn_26_day_rule": true
+  },
+  "60": {
+   "drift_pp": -0.00032513875296291683,
+   "comparable": true,
+   "fired_under_the_withdrawn_26_day_rule": true
+  },
+  "90": {
+   "drift_pp": -0.0006502775059258337,
+   "comparable": true,
+   "fired_under_the_withdrawn_26_day_rule": true
+  },
+  "365": {
+   "drift_pp": 2.8446128980238656,
+   "comparable": true,
+   "fired_under_the_withdrawn_26_day_rule": true
+  },
+  "_disagreement_with_the_reviewer": {
+   "reviewer_reported_pp_at_day_26_and_27": -0.0037,
+   "our_recomputation_pp": -0.00032513875296291683,
+   "note": "we cannot reconstruct the reviewer's figure and publish both. The charge is unaffected and is stronger with ours: the drift at the withdrawn threshold is negative and roughly 560 times smaller than the 0.1826 pp the warning named."
+  }
+ },
+ "adversary_cases_reproduced_against_v0_3_1": {
+  "finding_1_list_entirely_postdates_the_table": {
+   "v0_3_0_behaviour": "drift() returned None; the printer silently fell through to the today-aged figure, unlabelled",
+   "v0_3_1_drift_pp": null,
+   "v0_3_1_comparable": false,
+   "v0_3_1_reason": "every one of the 5 datable identifier(s) in this list was created AFTER the reference table's own reference time (2026-08-14T03:43:47Z). The defensible reading \u2014 the list aged at the table's clock \u2014 DOES NOT EXIST for this list: these videos did not exist on the day the yardstick was measured. The figure printed beside this is the today-aged one, and it is an extrapolation of a single cross-section that this practice has withdrawn as a claim about hazard. Treat it as arithmetic.",
+   "n_at_the_reference_time": 0,
+   "n_at_now": 5
+  },
+  "finding_2_mixed_list": {
+   "v0_3_0_printed_drift_pp": -4.875216763167758,
+   "v0_3_0_printed_drift_pp_source": "recomputed here, not copied: the today-aged expectation over all 10 units minus the reference-time expectation over the 5 datable then. The adversary reported -4.8752",
+   "v0_3_1_drift_pp": null,
+   "v0_3_1_comparable": false,
+   "v0_3_1_reason": "the two readings do not cover the same list: 5 identifier(s) are datable at the reference time and 10 at today, because 5 of them were created after the table was measured. A difference between two different denominators is not drift, and this tool will not print it as one. The two histograms above are the whole of what can be said.",
+   "n_at_the_reference_time": 5,
+   "n_at_now": 10
+  }
+ },
+ "comparand_used_by_v0_3_1": 0.00017874972041420634
+}

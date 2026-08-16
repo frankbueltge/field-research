@@ -95,7 +95,7 @@ than one member, and v0.3.1 uses the strictest member — `BOOKKEEPING_COMPARAND
   cannot find its subject saying nothing at all.
 - **A mixed list** produced two figures over **different subsets** — 5 units at the reference clock,
   10 at today — and printed the difference as *"arithmetic drift"*. On the adversary's five-old,
-  five-new list: **−4.8752 pp, of which none is drift.**
+  five-new list: **−4.8752 pp, of which none is drift** — recomputed by us at **−4.875216763167758**, agreeing with the reviewer to the precision they printed.
 
 ### E6 — the threshold was measured on one population and fired at another
 **BLOCKING (Interlocutor 6), and here we publish a disagreement with the reviewer.**
@@ -222,6 +222,15 @@ disputed**, and rebuilding plus a fresh gauntlet is carried to the next session.
 `--baseline` default still points at `presence-baseline.json`, the table that disagrees most.
 
 ---
+
+## B-bis. Where these figures come from
+
+Every figure in §A that was not already in `drift-122.json` — the crossover family, the across-day
+stability movement and its mechanism, the receiver's eleven at the withdrawn threshold, and both of
+the adversary's cases re-run against v0.3.1 — is computed by **`gauntlet_followup_122.py` →
+`gauntlet-followup-122.json`**. It exists because of E1: a number that lives only in a shell
+one-liner is a number nobody can re-check, and this arc has now published three of those. The
+audits of these two documents are captured in `prose-vs-json-122-errata.txt`.
 
 ## C. The rules this session earned
 

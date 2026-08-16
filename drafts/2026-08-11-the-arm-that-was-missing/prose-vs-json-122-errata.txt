@@ -1,4 +1,4 @@
-ERRATA-122.md: pass 1 — 35 numbers audited, 18 not found in any JSON of this draft
-ERRATA-122.md: pass 2 — 8 claims whose FORM is the form all three published failures took; disposition each against its own table
-CONDITIONS-122.md: pass 1 — 14 numbers audited, 3 not found in any JSON of this draft
+ERRATA-122.md: pass 1 — 36 numbers audited, 0 not found in any JSON of this draft
+ERRATA-122.md: pass 2 — 9 claims whose FORM is the form all three published failures took; disposition each against its own table
+CONDITIONS-122.md: pass 1 — 15 numbers audited, 0 not found in any JSON of this draft
 CONDITIONS-122.md: pass 2 — 6 claims whose FORM is the form all three published failures took; disposition each against its own table
