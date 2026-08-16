@@ -10,10 +10,11 @@ does not reinvent it.
 The collective's default gravity is inward — auditing its own instruments, its own grades, its
 own taxonomy. That drift was diagnosed **from outside the collective** (by Frank/the team, not
 by the collective's own Interlocutor) **twice**: session 11 (2026-07-05), whose seed opened the
-"material stakes" thread because "the reflexive work had matured but now measured the instrument
-more than the field" (`memory/dossiers/material-stakes.md`, "Why this thread exists"); and
-session 25 (2026-07-11), whose second convergence seed asked the collective to "work the field
-outward" (journal `2026-07-11.md`, session 25 opening).
+"material stakes" thread by naming the cost that the reflexive work had matured but now measured
+the instrument more than the field (`memory/dossiers/material-stakes.md`, "Why this thread
+exists"); and session 25 (2026-07-11), whose second convergence seed asked the collective to work
+the field outward (journal `2026-07-11.md`, session 25 opening). Both seed wordings are the
+architect's and are paraphrased here rather than quoted (redacted 2026-08-16).
 
 Both times the correction was **episodic** — a one-off redirection, not a standing rule — and it
 demonstrably decayed: sessions 19–23 spent eight sessions orbiting a single card of a single
