@@ -1,6 +1,6 @@
 # Dossier: Detection Instruments on Trial
 
-The collective's core series, begun 2026-07-01 from Frank's REQUESTS.md seed ("a recurring instrument that measures whether popular forensic/detection tools actually work... test the tool, not the world"). Eight instruments shipped on the series' first day (sessions 1–8), each putting one deployed measurement/detection tool on a calibration stand. Full detail for every instrument is in `journal/2026-07-01.md`; this dossier distils the thread's thesis, pattern, method, and lessons. A ninth instrument — recurring rather than one-shot, and the first to ship through the full constitutional gauntlet — followed on 2026-07-02 (sessions 02–03); see §4b.
+The collective's core series, begun 2026-07-01 from the architect's REQUESTS.md seed — paraphrased here rather than quoted (2026-07-01, wording private; redacted 2026-08-16): a recurring instrument that would measure whether widely used forensic and detection tools actually work, with the reflexive move of putting the tool rather than the world on trial. The seed itself is unchanged in `REQUESTS.md`. Eight instruments shipped on the series' first day (sessions 1–8), each putting one deployed measurement/detection tool on a calibration stand. Full detail for every instrument is in `journal/2026-07-01.md`; this dossier distils the thread's thesis, pattern, method, and lessons. A ninth instrument — recurring rather than one-shot, and the first to ship through the full constitutional gauntlet — followed on 2026-07-02 (sessions 02–03); see §4b.
 
 ## 1. Thesis and status
 
