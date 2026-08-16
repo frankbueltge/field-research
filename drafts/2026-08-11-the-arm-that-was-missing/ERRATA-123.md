@@ -69,3 +69,119 @@ of numbers written in digits**, and the increment did not say so until this erra
 ---
 
 *Entries below this line are from the gauntlet and are added after the verdicts.*
+
+## From the gauntlet — every one recomputed with our own code before it was accepted
+
+*`discharge-123.json` and `discharge-123b.json`. **All eleven reviewer findings below were
+confirmed by our own recomputation; on none of them do we disagree with the reviewer.** Where the
+reviewer reached a figure by one route, we reached it by another.*
+
+### E4 — **Verifier, BLOCKING.** "Twenty synthetic identifiers … returned exactly the same code" — FALSE.
+
+**True value: nineteen of twenty.** The twentieth returned **no code at all** — a transport
+failure, `http: null` — which is not "the same code", it is the absence of one. Our recomputation
+of `reverify-results.json`: **1** of the arm's identifiers has no HTTP code.
+**This is verbatim erratum E1 of the first gauntlet (2026-08-15), published with its true value,
+and reproduced into version 0.3 unchanged.**
+
+### E5 — **Verifier, BLOCKING.** "Logged into every run file before the first measurement request" — FALSE.
+
+**True value:** false for `ledger/baseline-union.json`, which this bundle's own `MANIFEST.json`
+lists as one of its five source runs. Its `vantage.source` reads *"carried from the producing
+runs"* — it is a union of component runs, not a sweep with a vantage logged before its first
+request. Our recomputation: **1** of 5 source runs has a carried rather than logged vantage.
+**Verbatim erratum E2 of the first gauntlet, reproduced unchanged.**
+
+### E6 — **Verifier, BLOCKING.** "Checked against the endpoint's own returned metadata" — FALSE.
+
+**True value: no such check exists in this arc.** The probe stores no creation-time field returned
+by the endpoint, so there is nothing to check the decoded age against. Our recomputation searched
+every probe and tool file: **no file stores an endpoint creation time.**
+**Verbatim erratum E3 of the first gauntlet, reproduced unchanged.**
+
+### E7 — **Verifier, BLOCKING.** "Display-truncated identifiers that are **not** videos" — FALSE, and it ships twice.
+
+**True value: 248 of 249.** One (`12345`) is a real video predating the platform's current
+identifier scheme — established by this arc's own legacy-identifier control. Our recomputation
+confirms the claim is present in **both** `LIMITS.md` §7 and `FIGURES.md` §4.
+**Verbatim erratum E7 of the first gauntlet, reproduced unchanged, in two files.**
+
+### E8 — **Verifier, BLOCKING.** An unfilled placeholder shipped inside the manifest.
+
+`MANIFEST.json → source_runs`, the 2026-08-13 entry, carries the literal string
+**`"TEMPLATE — the running session sets this"`** as its `run_id`. Our recomputation: **1** such
+entry. The manifest's one job is to tell a receiver what each source file *is*; one of its five
+identity fields is a bug report about itself, and this session hashed it into
+`bundle_files_sha256` as though it were a value.
+**Verbatim erratum E11 of the first gauntlet, reproduced unchanged.**
+
+### E9 — **Interlocutor, BLOCKING.** "21 encyclopedia language editions" — FALSE. The true value is **37**.
+
+Shipped in `FIGURES.md` §4 and in `reference-baseline.json`'s own `population.what_it_is`.
+**We re-derived the count a third way** — from the corpus files on disk, counting editions that
+actually contribute an article-arm unit to this panel — and got **37**, agreeing exactly with the
+reviewer and with the two-session-old erratum. **Accepted at the very first gauntlet as V3/E4,
+marked "ACCEPTED, CARRIED", and then dropped out of the tracking entirely**: it appears in no
+conditions document of sessions 121, 122 or 123.
+
+### E10 — **Interlocutor, BLOCKING.** The 0.14 pp across-day spread ships with no qualification.
+
+`FIGURES.md` §1 states the pooled rate's spread across measured days as **0.14 percentage points**
+and reads it as the instrument's test–retest reproducibility. The first gauntlet's erratum E17
+found that figure **2.35× inflated**: on the balanced panel of units determinate on every day the
+spread is **0.0577 pp**, and the excess is which units fell out as `INDETERMINATE`, not anything
+about the platform. Our recomputation confirms **neither `0.0577` nor the phrase "balanced panel"
+appears anywhere in `deliverable-v0.3/`.**
+
+### E11 — **Interlocutor, BLOCKING.** A cross-reference that survived the renumbering and now lands on the wrong topic.
+
+`receiver-eleven.md` cites *"`LIMITS.md` §8 says why"* for a statistical-power caveat. Under
+version 0.1's twelve-section `LIMITS.md`, §8 was *"Small lists cannot separate hypotheses"* and the
+citation was correct. Version 0.3 rewrote that file to nine sections; §8 is now *"The raw record is
+primary and is never edited"*. Our recomputation confirms the reference still **resolves to an
+existing section** — which is why nothing flagged it — and that **no statistical-power caveat
+survives anywhere in version 0.3's `LIMITS.md` under any number**. A reader following the citation
+exactly as written lands on archival practice and gets no answer at all.
+**Not self-caught. This is the one we did not see.**
+
+### E12 — **Verifier, NON-BLOCKING.** The rebuild audit's classifier is file-wide for one file.
+
+`rebuild_audit_123.py`'s `classify()` marks *any* differing leaf of `gradient-test*.json` as
+band-derived unconditionally, rather than testing the leaf name as it does for the other two files.
+Accepted: the conclusion "zero unexpected" is correct for that file because every leaf of it *is*
+band-derived, but the check is weaker than it reads, and a future field added to that file would be
+excused without anybody deciding to excuse it.
+
+### E13 — **Verifier, NON-BLOCKING.** A scratch path recorded in a committed file.
+
+`prose-audit-123.json` records its provenance path as a scratch directory from a trial build rather
+than the bundle's own. Accepted.
+
+### E14 — **Verifier, NON-BLOCKING**, and **Interlocutor, NON-BLOCKING**, the same shape twice.
+The neighbouring paper is still unnamed on the receiver-facing page (persisting, two versions
+now); and the population-mismatch caveat that makes the receiver-eleven comparison interpretable
+sits in `LIMITS.md` rather than in `LETTER.md`, the one document written to be forwarded and most
+likely to be a receiver's only read. Both accepted.
+
+### E15 — **Interlocutor, NON-BLOCKING.** The status pointer is circular.
+
+`README.md` says the verdict is in `VERSIONS.md`; `VERSIONS.md`'s row for 0.3 says see the banner
+in `README.md`. Neither states a status. Accepted — nothing false is asserted, but a pointer with
+no destination is not the checkable mechanism the same bundle's `MANIFEST.json` gets right.
+
+---
+
+## What the two reviewers between them establish, which is larger than any single erratum
+
+The first gauntlet, on 2026-08-15, published a table of **18 errata with their true values**.
+**Six of those phrases were machine-checked against version 0.3 tonight and all six are still
+live** (`discharge-123b.json`). The remaining twelve have **not** been re-checked and their status
+is therefore **unknown**, which is the finding rather than an excuse: *the errata table was never
+re-run as a checklist against the rebuild.*
+
+And the mechanism is exactly the one this session claimed to have closed. `figures.py` audits
+**digits**. Every one of E4–E7 is a false claim containing **no digit** — "twenty" spelled as a
+word, "every run file", "checked against", "not videos". They were rewritten into version 0.3 by
+hand, from version 0.1's prose, by a session that had the corrected values in its own repository
+and did not look at them. **The discipline was built against the failure of the last three
+sessions and the failure of the first one walked straight through it.**

@@ -1,0 +1,198 @@
+{
+ "schema": "field-research/gauntlet-discharge/2",
+ "session": 123,
+ "part": "b",
+ "findings": {
+  "F1_twenty_synthetic": {
+   "claim_in_bundle": true,
+   "source": "reverify-results.json",
+   "arm_c_n": 20,
+   "http_codes": {
+    "400": 19,
+    "None": 1
+   },
+   "n_with_no_code": 1,
+   "reviewer_value": "19 of 20 returned the code; the 20th had no code at all (transport failure)"
+  },
+  "F2_vantage_logged_in_every_run": {
+   "claim_in_bundle": true,
+   "source_runs": [
+    {
+     "label": "baseline",
+     "file": "ledger/baseline-union.json",
+     "run_id": "baseline-union (session 110 run + session 111 baselines 1-3)",
+     "vantage_source": "carried from the producing runs; see components",
+     "vantage_fetched_utc": null,
+     "is_a_union_of_components": true,
+     "n_components": 4
+    },
+    {
+     "label": "2026-08-12",
+     "file": "ledger/run-2026-08-12T0341Z.json",
+     "run_id": "2026-08-12T0341Z",
+     "vantage_source": "https://ipinfo.io/json",
+     "vantage_fetched_utc": "2026-08-12T03:40:28Z",
+     "is_a_union_of_components": false,
+     "n_components": null
+    },
+    {
+     "label": "2026-08-13",
+     "file": "ledger/run-2026-08-13T0427Z.json",
+     "run_id": "TEMPLATE \u2014 the running session sets this",
+     "vantage_source": "https://ipinfo.io/json",
+     "vantage_fetched_utc": "2026-08-13T04:27:00Z",
+     "is_a_union_of_components": false,
+     "n_components": null
+    },
+    {
+     "label": "2026-08-14",
+     "file": "ledger/run-2026-08-14T0343Z.json",
+     "run_id": "2026-08-14T03:43:47Z (manifest carried a placeholder)",
+     "vantage_source": "https://ipinfo.io/json",
+     "vantage_fetched_utc": "2026-08-14T03:43:47Z",
+     "is_a_union_of_components": false,
+     "n_components": null
+    },
+    {
+     "label": "2026-08-15",
+     "file": "ledger/run-2026-08-15T0337Z.json",
+     "run_id": "2026-08-15T03:37:40Z (manifest carried a placeholder)",
+     "vantage_source": "https://ipinfo.io/json",
+     "vantage_fetched_utc": "2026-08-15T03:37:40Z",
+     "is_a_union_of_components": false,
+     "n_components": null
+    }
+   ],
+   "n_runs_whose_vantage_is_carried_not_logged": 1
+  },
+  "F3_metadata_check": {
+   "claim_in_bundle": true,
+   "files_searched": [
+    {
+     "file": "probe.py",
+     "mentions_create_time_field": false,
+     "stores_endpoint_creation_time": false
+    },
+    {
+     "file": "ledger.py",
+     "mentions_create_time_field": false,
+     "stores_endpoint_creation_time": false
+    },
+    {
+     "file": "presence_check.py",
+     "mentions_create_time_field": false,
+     "stores_endpoint_creation_time": false
+    },
+    {
+     "file": "census.py",
+     "mentions_create_time_field": false,
+     "stores_endpoint_creation_time": false
+    },
+    {
+     "file": "deliverable-v0.3/tools/presence_check.py",
+     "mentions_create_time_field": false,
+     "stores_endpoint_creation_time": false
+    }
+   ],
+   "any_file_stores_an_endpoint_creation_time": false
+  },
+  "F4_not_videos": {
+   "claim_in_limits": true,
+   "claim_in_figures": true,
+   "legacy_id_control": {
+    "purpose": "legacy-identifier control, session 110 \u2014 rerun with script and raw bodies committed, discharging condition 5 of INTERLOCUTOR-2.md",
+    "reading_fixed_before_the_requests": "if small integers resolve generally, '12345' shows nothing; if only some resolve, the ones that do are real videos predating the current identifier scheme",
+    "user_agent": "field-research/1.0 (independent research instrument; sequential, 1 req/s)",
+    "delay_s": 1.0,
+    "n_tested": 11,
+    "n_http_200": 1
+   },
+   "mentions_12345": true,
+   "resolves_field_present": false,
+   "reviewer_value": "248 of 249 do not resolve; `12345` is a real video predating the current scheme"
+  },
+  "F5_template_placeholder": {
+   "entries_with_template_placeholder": [
+    {
+     "label": "2026-08-13",
+     "file": "ledger/run-2026-08-13T0427Z.json",
+     "run_id": "TEMPLATE \u2014 the running session sets this"
+    }
+   ],
+   "n": 1
+  }
+ },
+ "first_gauntlet_errata_recheck": {
+  "errata_ids_in_the_published_table": [
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E5",
+   "E6",
+   "E7",
+   "E8",
+   "E9",
+   "E10",
+   "E11",
+   "E12",
+   "E13",
+   "E14",
+   "E15",
+   "E16",
+   "E17",
+   "E18"
+  ],
+  "n_errata_in_table": 18,
+  "phrases_checked": 6,
+  "results": {
+   "E1": {
+    "phrase": "twenty synthetic identifiers",
+    "still_present_in": [
+     "LIMITS.md"
+    ],
+    "n_files": 1
+   },
+   "E2": {
+    "phrase": "logged into every run file|logged in every run file",
+    "still_present_in": [
+     "LIMITS.md"
+    ],
+    "n_files": 1
+   },
+   "E3": {
+    "phrase": "checked against the endpoint's own returned metadata",
+    "still_present_in": [
+     "LIMITS.md"
+    ],
+    "n_files": 1
+   },
+   "E7": {
+    "phrase": "not\\s*\\*?\\*?\\s*videos|and not\\s+videos",
+    "still_present_in": [
+     "FIGURES.md",
+     "LIMITS.md",
+     "expectation.json"
+    ],
+    "n_files": 3
+   },
+   "E11": {
+    "phrase": "TEMPLATE",
+    "still_present_in": [
+     "MANIFEST.json",
+     "series/presence-series.json"
+    ],
+    "n_files": 2
+   },
+   "E17": {
+    "phrase": "0\\.14 percentage points|0\\.14 pp",
+    "still_present_in": [
+     "FIGURES.md"
+    ],
+    "n_files": 1
+   }
+  },
+  "n_still_live_of_those_checked": 6,
+  "note": "only the phrases the two reviewers turned on were machine-checked here. The remaining errata of that table have NOT been re-checked against version 0.3 by this script, and their status is therefore UNKNOWN rather than clear - which is itself the finding: the table was never re-run as a checklist."
+ }
+}
