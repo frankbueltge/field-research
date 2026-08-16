@@ -106,7 +106,9 @@ def main(argv):
                      ("deliverable/receiver-eleven.json", "receiver-eleven.json"),
                      ("deliverable/receiver-eleven.md", "receiver-eleven.md"),
                      ("confirmation-record-121.json", "confirmation-record.json"),
-                     ("drift-122.json", "reference-drift.json")]:
+                     ("drift-122.json", "reference-drift.json"),
+                     ("receiver-dashboard-2026-08-16.json", "receiver-dashboard-read.json"),
+                     ("receiver-dashboard-2026-08-16.html", "receiver-dashboard-2026-08-16.html")]:
         if os.path.exists(src):
             shutil.copy2(src, os.path.join(a.out, dst))
             carried.append({"from": src, "to": dst, "sha256": sha256(src)})
@@ -115,6 +117,7 @@ def main(argv):
     P = lambda n: os.path.join(a.out, n)
     REF, EXP, GRAD = P("reference-baseline.json"), P("expectation.json"), P("gradient-test.json")
     MAN, CONF = P("MANIFEST.json"), P("confirmation-record.json")
+    DASH = P("receiver-dashboard-read.json")
 
     exp = json.load(open(EXP))
     man = json.load(open(MAN))
@@ -188,6 +191,16 @@ def main(argv):
         ))
 
     day_label = fx.key(EXP, "per_day", day, "the newest measurement day, named in prose")
+
+    # the receiver's own dashboard, extracted from saved bytes by dashboard_read_123.py
+    dash_gen = fx.raw(DASH, "fields.generated_declared.value", "the dashboard's declared "
+                                                              "generation time, its own words")
+    dash_total = fx.raw(DASH, "fields.Total Videos Tracked.value", "videos the dashboard tracks")
+    dash_avail = fx.raw(DASH, "fields.Available.value", "videos the dashboard reports available")
+    dash_unavail = fx.raw(DASH, "fields.Unavailable.value",
+                          "videos the dashboard reports unavailable")
+    dash_err = fx.raw(DASH, "fields.Errors.value", "videos the dashboard reports as errors")
+    dash_note = fx.raw(DASH, "fields.error_note.value", "the dashboard's own note about Error")
 
     v01 = fx.lit("0.1", "a version number, not a measurement")
     v031 = fx.lit(tool_version(), "the tool's own VERSION constant, read from "
@@ -411,6 +424,13 @@ had run when the bundle was assembled. Where it has not, that interval's apparen
 in `series/` as raw readings and are **not** in the counts above. A count of confirmed events is
 never a count over the whole panel unless the sidecar list says so.
 
+**These counts are not readings of the tool, and the distinction is one this practice got wrong
+in public and was corrected on.** The daily ledger takes one pass per identifier per day and
+confirms *transitions between days*. The tool in this bundle confirms *readings within one run*.
+**They are not the same instrument and a figure from one is not a row of the other.** What the
+counts above establish is narrower than a rate and still decisive: on this instrument, at this
+endpoint, a state change that is believed on one request is frequently not there on the next.
+
 What follows for anyone using this bundle: **a single reading is not a finding.** A refusal that
 has not been re-requested is a reading of the network as much as of the platform. The tool shipped
 here (version {v031}) re-requests by default; a `--confirm 0` run is a version-{v01}-equivalent
@@ -482,14 +502,21 @@ contacted by this practice**, and nothing in it asks for anything back.*
 ## Why this reaches you
 
 You published a report on a large video platform's research interface and, with it, a public
-dashboard doing a daily availability check on eleven videos that, in your own words, *"should be
+dashboard doing an availability check on eleven videos that, in your own words, *"should be
 available through the Research API but were not"*. Your report states the limit of that
-instrument plainly, and so does the dashboard page itself: errors on that page are described as
-problems on your end, not the platform's.
+instrument plainly, and so does the dashboard page itself:
+
+> *"{dash_note}"*
 
 That sentence is the reason for this letter. An instrument that cannot separate its own failures
 from the platform's needs a second, independent measurement beside it — a control arm. **The
 control arm is free, and as far as we could find, nobody was running it.**
+
+Read again on {d2026} and extracted from the saved page rather than by eye
+(`receiver-dashboard-read.json`, beside the bytes it was read from), the dashboard declares itself
+generated **{dash_gen}** and reports **{dash_total}** total videos tracked, **{dash_avail}**
+available, **{dash_unavail}** unavailable and **{dash_err}** with errors. We record that as what
+your page says about itself on the day we read it, and claim nothing about why.
 
 ## What this is
 
@@ -508,7 +535,8 @@ through the platform's public oEmbed endpoint — no account, no research creden
 We ran the obvious check against ourselves and it did not go our way. Every apparent state change
 in this series was re-requested **{cr_passes} times immediately**. Of the genuine transitions,
 **{cr_ret_c} of {cr_ret_n}** returns survived re-checking and **{cr_los_c} of {cr_los_n}**
-disappearances did. An earlier version of this bundle argued that a stable aggregate rate
+disappearances did. Those are counts of transitions between days, not of readings within a run —
+a distinction we published wrongly once and correct here. An earlier version of this bundle argued that a stable aggregate rate
 warranted trusting a single reading; that argument was refuted at our own review and the version
 carrying it was withheld. **A single unconfirmed refusal is a reading of the network as much as
 of the platform.**

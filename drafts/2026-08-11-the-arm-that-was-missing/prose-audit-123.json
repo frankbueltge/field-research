@@ -1,7 +1,7 @@
 {
  "schema": "field-research/prose-figure-audit/2",
- "provenance": "/tmp/claude-0/-home-user-field-research/0a0639fd-4c0b-53ba-86e7-24ecffe3d83f/scratchpad/rb/v03-repro/FIGURE-PROVENANCE.json",
- "n_rendered_tokens": 117,
+ "provenance": "/tmp/claude-0/-home-user-field-research/0a0639fd-4c0b-53ba-86e7-24ecffe3d83f/scratchpad/rb/v03-trial/FIGURE-PROVENANCE.json",
+ "n_rendered_tokens": 124,
  "not_scanned": [
   "heading number",
   "ordered-list marker",
@@ -14,22 +14,22 @@
  ],
  "files": [
   {
-   "file": "/tmp/claude-0/-home-user-field-research/0a0639fd-4c0b-53ba-86e7-24ecffe3d83f/scratchpad/rb/v03-repro/README.md",
+   "file": "/tmp/claude-0/-home-user-field-research/0a0639fd-4c0b-53ba-86e7-24ecffe3d83f/scratchpad/rb/v03-trial/README.md",
    "n_unmatched": 0,
    "unmatched": []
   },
   {
-   "file": "/tmp/claude-0/-home-user-field-research/0a0639fd-4c0b-53ba-86e7-24ecffe3d83f/scratchpad/rb/v03-repro/LETTER.md",
+   "file": "/tmp/claude-0/-home-user-field-research/0a0639fd-4c0b-53ba-86e7-24ecffe3d83f/scratchpad/rb/v03-trial/LETTER.md",
    "n_unmatched": 0,
    "unmatched": []
   },
   {
-   "file": "/tmp/claude-0/-home-user-field-research/0a0639fd-4c0b-53ba-86e7-24ecffe3d83f/scratchpad/rb/v03-repro/LIMITS.md",
+   "file": "/tmp/claude-0/-home-user-field-research/0a0639fd-4c0b-53ba-86e7-24ecffe3d83f/scratchpad/rb/v03-trial/LIMITS.md",
    "n_unmatched": 0,
    "unmatched": []
   },
   {
-   "file": "/tmp/claude-0/-home-user-field-research/0a0639fd-4c0b-53ba-86e7-24ecffe3d83f/scratchpad/rb/v03-repro/VERSIONS.md",
+   "file": "/tmp/claude-0/-home-user-field-research/0a0639fd-4c0b-53ba-86e7-24ecffe3d83f/scratchpad/rb/v03-trial/VERSIONS.md",
    "n_unmatched": 0,
    "unmatched": []
   }
