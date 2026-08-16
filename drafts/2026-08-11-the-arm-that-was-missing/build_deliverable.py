@@ -116,6 +116,13 @@ def cell(n, absent):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="deliverable")
+    # Session 122. The bundle's coverage cut-off used to be whatever happened to be on disk when
+    # the script ran, and `MANIFEST.json -> coverage` then described it after the fact. A freeze
+    # that cannot be restated is a freeze nobody can check: with `--cutoff` the shipped bundle is
+    # reproducible from a later working tree, which is the only reason the V1 repair below can be
+    # shown as a difference in one file rather than asserted.
+    ap.add_argument("--cutoff", default=None,
+                    help="ignore run files starting after this UTC stamp (e.g. 2026-08-14T23:59:59Z)")
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
     os.makedirs(os.path.join(a.out, "series"), exist_ok=True)
@@ -134,6 +141,8 @@ def main():
     for p, d in runs:
         if d["run_utc_start"] <= base["run_utc_start"]:
             continue          # the baseline's own component runs
+        if a.cutoff and d["run_utc_start"] > a.cutoff:
+            continue          # session 122: the freeze, stated rather than incidental
         days.append({"label": d["run_utc_start"][:10],
                      "file": p,
                      "run_id": d["run_id"],
@@ -176,17 +185,43 @@ def main():
             else:
                 u["states_corrected"][day["label"]] = o["state"]
 
-    t_ref = calendar.timegm(time.strptime(days[0]["utc_start"], "%Y-%m-%dT%H:%M:%SZ"))
+    # V1 of the session-120 gauntlet, repaired 2026-08-16 (session 122) and measured before it
+    # was repaired (`drift_122.py` -> `drift-122.json`, `DRIFT-122.md`).
+    #
+    # What was wrong: this line took the age of every unit at `days[0]` — the first day of the
+    # panel — and line ~364 then declared the reference table's `t_ref_utc` to be the NEWEST day.
+    # The two are 2.6803 days apart, 24 units sit in a different band under the two clocks, and
+    # every published age-band cell of the shipped table is therefore a cell of a date the table
+    # does not name. NOTHING about the observations changes: the 24 crossers are all retrievable,
+    # so no `absent` count moves and the pooled rate is identical to the last digit.
+    #
+    # What it is now: each unit carries its age at EACH day's own measurement, so a day's table is
+    # a table of that day. `age_y_at_baseline` is kept, with its old meaning and its honest name,
+    # because the series CSV has shipped that column and a reader who has it must be able to
+    # reproduce it; `age_y_at_<label>` is the one the per-day tables use.
+    t_first = calendar.timegm(time.strptime(days[0]["utc_start"], "%Y-%m-%dT%H:%M:%SZ"))
+    t_of_day = {d["label"]: calendar.timegm(time.strptime(d["utc_start"], "%Y-%m-%dT%H:%M:%SZ"))
+                for d in days}
     for u in units.values():
         vid = u["vid"]
         if len(vid) == 19:
             created = int(vid) >> 32
-            age = (t_ref - created) / YEAR_S
+            u["created"] = created
             u["created_utc"] = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(created))
+            age = (t_first - created) / YEAR_S
             u["age_y_at_baseline"] = round(age, 4) if age > 0 else None
+            u["age_y_by_day"] = {}
+            u["band_by_day"] = {}
+            for lab, tr in t_of_day.items():
+                age_lab = (tr - created) / YEAR_S
+                u["age_y_by_day"][lab] = round(age_lab, 4) if age_lab > 0 else None
+                u["band_by_day"][lab] = band_of(u["age_y_by_day"][lab])
         else:
+            u["created"] = None
             u["created_utc"] = None
             u["age_y_at_baseline"] = None
+            u["age_y_by_day"] = {d["label"]: None for d in days}
+            u["band_by_day"] = {d["label"]: None for d in days}
         u["band"] = band_of(u["age_y_at_baseline"])
         u["stratum"] = STRATUM.get(u["arm"], u["arm"])
 
@@ -195,14 +230,27 @@ def main():
 
     for key, fname in (("states", "presence-series.csv"),
                        ("states_corrected", "presence-series-corrected.csv")):
+        # Session 122, and it is a consequence of the V1 repair rather than a separate decision.
+        # The column used to be called `band`, and it was the unit's band on the FIRST day of the
+        # panel. Once the age tables are banded per day, a receiver joining that column to the
+        # reference table would be joining two different bandings and would never see it — the
+        # repair would have created the trap the repair exists to close. So the column says which
+        # day it is the band of, and one column per day is written beside it. Nothing has been
+        # sent to anyone and the bundle is withheld, so there is no compatibility debt to weigh
+        # against saying it plainly.
         with open(os.path.join(a.out, "series", fname), "w") as f:
-            f.write("video_id,arm,stratum,created_utc,age_y_at_baseline,band,"
+            # labels[0] is "baseline", so the per-day loop already emits the old `band` column
+            # under its true name; writing it twice was this session's own first draft and is
+            # not written here.
+            f.write("video_id,arm,stratum,created_utc,age_y_at_baseline,"
+                    + ",".join(f"band_at_{l}" for l in labels) + ","
                     + ",".join(labels) + "\n")
             for u in ordered:
+                assert u["band"] == u["band_by_day"].get("baseline"), u["vid"]
                 f.write(",".join([
                     u["vid"], u["arm"], u["stratum"], u["created_utc"] or "",
                     "" if u["age_y_at_baseline"] is None else f"{u['age_y_at_baseline']:.4f}",
-                    u["band"] or "",
+                    *[(u["band_by_day"].get(l) or "") for l in labels],
                     *[u[key].get(l, "") for l in labels]]) + "\n")
 
     json_path = os.path.join(a.out, "series", "presence-series.json")
@@ -250,8 +298,11 @@ def main():
                 if state == "INDETERMINATE":
                     excluded["indeterminate"] += 1
                     continue
+                # V1 repair (session 122): the band is the unit's band on THIS day, not on the
+                # first day of the panel. `by_year` is unaffected — a creation year does not move.
                 rows.append({"absent": 1 if state == "NOT-RETRIEVABLE" else 0,
-                             "band": u["band"], "stratum": u["stratum"],
+                             "band": u["band_by_day"].get(day["label"]),
+                             "stratum": u["stratum"],
                              "year": (u["created_utc"] or "")[:4] or None})
             n = len(rows)
             k = sum(r["absent"] for r in rows)
@@ -362,6 +413,23 @@ def main():
                        "vantage_asn": newest.get("vantage_asn", "AS396982"),
                        "sha256": newest["sha256"]},
         "t_ref_utc": newest["utc_start"],
+        # V1 repair, session 122. The declaration above used to be a claim nobody checked and
+        # was false for three sessions. It is now stated twice, from two different places in
+        # this function, and asserted below — a single field cannot go quietly wrong again.
+        "ages_computed_at_utc": newest["utc_start"],
+        "shelf_life": {
+            "why_this_is_here": ("this table is a measurement of one population on one day. A tool "
+                                 "that ages a caller's list at TODAY and looks it up here is doing "
+                                 "arithmetic against a clock that stopped. The size of that error "
+                                 "was measured before it was disclosed: `drift-122.json`."),
+            "measured_drift_pp_by_days_after_t_ref": {"1": 0.0035, "7": 0.0342, "30": 0.2264,
+                                                      "90": 0.6105, "180": 1.1877, "365": 2.4225,
+                                                      "730": 4.1649},
+            "drift_is_on": ("the reference population itself, re-aged against this fixed table; it "
+                            "is what the printed expectation does, NOT a forecast of what "
+                            "retrievability does"),
+            "source": "drift_122.py, session 122, 2026-08-16",
+        },
         "population": {"n_units_in_run": len(newest["obs"]),
                        "excluded_from_rates": per_day[newest["label"]]["excluded"],
                        "what_it_is": ("videos cited in public across 21 language editions of one "
@@ -373,6 +441,16 @@ def main():
         "by_year": per_day[newest["label"]]["by_year"],
         "arm": "raw run file, primary record; the corrected arm is in expectation.json",
     }
+    # The assertion that makes V1 unrepeatable rather than merely repaired: every unit counted
+    # into the shipped age table must have been banded at the time the table declares. Checked
+    # against the units themselves, not against the two strings agreeing with each other.
+    _t_declared = calendar.timegm(time.strptime(ref["t_ref_utc"], "%Y-%m-%dT%H:%M:%SZ"))
+    for u in units.values():
+        if u["created"] is None:
+            continue
+        _a = (_t_declared - u["created"]) / YEAR_S
+        assert u["band_by_day"][newest["label"]] == band_of(_a if _a > 0 else None), (
+            f"V1 regression: {u['vid']} is banded at a time the reference table does not declare")
     json.dump(ref, open(os.path.join(a.out, "reference-baseline.json"), "w"), indent=1)
 
     # ---- the generated tables page -----------------------------------------------------

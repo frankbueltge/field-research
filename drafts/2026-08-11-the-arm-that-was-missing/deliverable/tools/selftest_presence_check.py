@@ -286,6 +286,67 @@ check("a baseline with no reference time is named as such",
 check("an unreadable reference time is named as such",
       pc.baseline_currency(dict(BASE, t_ref_utc="whenever"), 0)["age_days_at_measurement"], None)
 
+# ---------------------------------------------- 8. the frozen-reference drift (V1, V2; s122)
+# The whole point of these assertions is that the drift is computed on the CALLER'S list, offline,
+# with no network and no reference to this arc's own panel. Identifiers are constructed so their
+# decoded creation time is exact: the platform's modern scheme is unix-seconds << 32.
+def _vid_created_at(stamp):
+    """A 19-digit identifier whose dating rule decodes to exactly `stamp`."""
+    t = calendar.timegm(time.strptime(stamp, "%Y-%m-%dT%H:%M:%SZ"))
+    v = str(t << 32)
+    assert len(v) == 19, (stamp, v)
+    return v
+
+
+# A video created 4 years and 11 months before the reference time: in 4-5y at the reference
+# time, and in 5y+ once the clock has moved two months on.
+V_NEAR_EDGE = _vid_created_at("2021-09-14T03:43:47Z")
+DRIFTY = {"schema": "field-research/public-presence-null/1",
+          "t_ref_utc": "2026-08-14T03:43:47Z",
+          "by_age_band": {"4-5y": {"n": 100, "absent_rate": 0.10, "absent_ci": [0.05, 0.15]},
+                          "5y+": {"n": 100, "absent_rate": 0.30, "absent_ci": [0.20, 0.40]}},
+          "pooled": {"n": 200},
+          "source_run": {"file": "f.json", "run_id": "r", "vantage_asn": "AS1"}}
+
+t_at_ref = calendar.timegm(time.strptime("2026-08-14T03:43:47Z", "%Y-%m-%dT%H:%M:%SZ"))
+rows_now = [{"vid": V_NEAR_EDGE, "band": pc.band_of(
+    (t_at_ref + 120 * 86400 - (int(V_NEAR_EDGE) >> 32)) / pc.YEAR_S)}]
+d = pc.drift(rows_now, DRIFTY, t_at_ref + 120 * 86400)
+check("drift reports the gap between the two clocks", d["days_between_the_two_clocks"], 120.0)
+check("drift ages the list at the reference time into the band it was in then",
+      d["age_histogram_at_the_reference_time"], {"4-5y": 1})
+check("drift ages the list at now into the band it has moved to",
+      d["age_histogram_at_now"], {"5y+": 1})
+check("the reference-time expectation is the table's reference-time cell",
+      round(d["expected_with_the_list_aged_at_the_reference_time"], 10), 0.10)
+check("the now-aged expectation is the table's later cell",
+      round(d["expected_with_the_list_aged_at_now"], 10), 0.30)
+check("the drift is reported in percentage points, signed",
+      round(d["drift_pp"], 10), 20.0)
+check_true("the drift says in as many words that it is not a forecast",
+           "not a forecast" in d["the_drift_is_not_a_forecast"]
+           or "no part of this figure says retrievability itself changed"
+           in d["the_drift_is_not_a_forecast"], d["the_drift_is_not_a_forecast"])
+check_true("the drift names the reference-time figure as the defensible one",
+           d["which_one_is_defensible"].lower().startswith("the reference-time one"),
+           d["which_one_is_defensible"][:60])
+
+# A tool run on the reference day itself must report exactly zero drift — the defect and its
+# measurement have to agree that there is nothing to see when the two clocks coincide.
+rows_same = [{"vid": V_NEAR_EDGE, "band": pc.band_of(
+    (t_at_ref - (int(V_NEAR_EDGE) >> 32)) / pc.YEAR_S)}]
+d0 = pc.drift(rows_same, DRIFTY, t_at_ref)
+check("drift is exactly zero on the reference day", d0["drift_pp"], 0.0)
+check("drift is None without a baseline", pc.drift(rows_same, None, t_at_ref), None)
+check("drift is None when the baseline declares no reference time",
+      pc.drift(rows_same, BASE, t_at_ref), None)
+check("drift is None when the declared reference time is unreadable",
+      pc.drift(rows_same, dict(DRIFTY, t_ref_utc="whenever"), t_at_ref), None)
+check("an undatable identifier contributes no band at either clock",
+      pc.rebanded([{"vid": "12345"}], t_at_ref), [{"band": None}])
+check_true("the staleness threshold is the measured one, not a round number",
+           pc.STALE_AFTER_DAYS == 26, pc.STALE_AFTER_DAYS)
+
 # --------------------------------------------------------------------------------- report
 print(f"selftest_presence_check — presence_check {pc.VERSION}")
 print(f"  {len(PASS)} assertion(s) passed")

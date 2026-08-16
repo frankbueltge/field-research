@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """presence_check - measure whether named videos are publicly retrievable, on a named day.
 
-VERSION 0.2.1, session 121, 2026-08-15.
+VERSION 0.3.0, session 122, 2026-08-16.
 
     python3 presence_check.py LISTFILE [-o OUT.json] [--baseline presence-baseline.json]
                               [--confirm N] [--confirm-what absent|all]
@@ -13,6 +13,35 @@ this file, and this version exists to answer them. The v0.1 text is not deleted 
 in place: it is retrievable at commit `9157f731` of this repository, sha256
 `ae8fc947e6b7e7a12d646c282e49991cc6433640a0256acefdd0fa1eff6caa1d`, so the two reviewers'
 reports stay checkable against the state they were run on.
+
+WHAT 0.3.0 CHANGED, AND IT IS ONE DEFECT AND NOTHING ELSE
+---------------------------------------------------------
+**The frozen-reference drift — V1 and V2 of the session-120 gauntlet**, carried unrepaired across
+two sessions and made binding on session 122 by `CONDITIONS-121.md`. A reviewer's words for it:
+the defect that would *"quietly move somebody else's number"*. It has two halves.
+
+*The bookkeeping half* was in the table, not in this file: `reference-baseline.json` declared one
+reference time and had its age columns computed against another, **2.6803 days** earlier. Twenty-
+four units sit in a different band under the two clocks; **no absent count moves and the pooled
+rate is identical to the last digit**, but every published age-band cell does move, and so does
+the age gradient's own test (3.69× → 3.64×, p 6.447e-10 → 7.656e-10; the conclusion is unchanged).
+Repaired in `build_deliverable.py` and published as dated corrected files beside the originals.
+
+*The design half is in this file.* It ages the caller's identifiers at the moment the caller runs
+it and looks them up in a table fixed on a past day, so the printed expectation walks away from
+what was measured by exactly the shelf-life of the tool — silently, keeping the same decimals.
+0.2.1 disclosed the table's age. Disclosure is not a size. **0.3.0 prints the size, computed on
+the caller's own list**: the same list aged at the table's reference time and aged at today, both
+figures, the gap between them named as arithmetic drift and not as a change in the world. The
+reference-time figure leads, because it is the only one whose ages and table agree.
+
+The staleness threshold is measured rather than picked: **26 days**, the day on which this drift
+first exceeds the largest band-rate error the bookkeeping half ever caused. Full measurement:
+`drift-122.json`, `DRIFT-122.md`.
+
+**Nothing else in this file changed at 0.3.0**, deliberately: session 121 spent itself on this
+tool and was told by its own adversary that the tool had got harder to fool rather than more
+correct. This version answers one carried defect and stops.
 
 WHAT 0.2.1 REPAIRED, AFTER ITS OWN GAUNTLET
 -------------------------------------------
@@ -100,9 +129,14 @@ import time
 
 import ledger
 
-VERSION = "0.2.1"
+VERSION = "0.3.0"
 YEAR_S = 365.25 * 86400.0
 DEFAULT_CONFIRM = 5
+# Session 122, 2026-08-16. Measured, not chosen: the day on which the drift caused by a frozen
+# reference first exceeds 0.1826 pp — the largest single band-rate error the reference table's
+# own bookkeeping defect (V1) ever produced. `drift-122.json`, key
+# half_two_caller_side_drift.when_the_design_half_overtakes_the_bookkeeping_half.
+STALE_AFTER_DAYS = 26
 
 # CORRECTED session 121, condition I4 of INTERLOCUTOR-12.md. The v0.1 rule was a bare
 # `(\d{1,25})` search anywhere in the line, which turned any line containing a digit into an
@@ -254,6 +288,85 @@ def baseline_currency(baseline, t_ref):
         return out
     out["age_days_at_measurement"] = round((t_ref - parsed) / 86400.0, 3)
     return out
+
+
+def band_hist(rows, key="band"):
+    h = {}
+    for r in rows:
+        if r.get(key):
+            h[r[key]] = h.get(r[key], 0) + 1
+    return h
+
+
+def rebanded(rows, t_target):
+    """The caller's own rows, re-aged at another clock. Used for one thing only: to show the
+    caller what the reference table's own reference time would have said about their list."""
+    out = []
+    for r in rows:
+        vid = str(r["vid"])
+        b = None
+        if len(vid) == 19:
+            age = (t_target - (int(vid) >> 32)) / YEAR_S
+            b = band_of(age) if age > 0 else None
+        out.append({"band": b})
+    return out
+
+
+def drift(rows, baseline, t_now):
+    """THE FROZEN-REFERENCE DRIFT, measured on the caller's own list rather than described.
+
+    V1 and V2 of the session-120 gauntlet; repaired and measured at session 122, 2026-08-16.
+    The full measurement on this arc's own panel is `drift-122.json` / `DRIFT-122.md`.
+
+    The problem this exists to make visible: the reference table is a measurement of one
+    population on ONE DAY. This tool ages the caller's identifiers at the moment the caller
+    runs it and then looks those ages up in that fixed table. So the two clocks diverge by
+    exactly the time the tool has sat unused, and the printed expectation walks away from
+    anything that was ever observed while keeping the same name and the same decimals.
+
+    On this arc's own panel the walk is +0.0035 pp after a day, +0.2264 pp after a month,
+    +2.4225 pp after a year, +4.1649 pp after two — and after 26 days it exceeds the largest
+    error the reference table's own bookkeeping defect ever caused. It is not a forecast of
+    retrievability: nothing was re-measured at any of those horizons. It is how far the
+    ARITHMETIC moves.
+
+    So: both numbers, always, with the reference-time one named as the defensible one. The
+    caller does not have to trust this docstring — the gap is computed on their list.
+    """
+    if not baseline:
+        return None
+    declared = baseline.get("t_ref_utc")
+    if not declared:
+        return None
+    try:
+        t_decl = calendar.timegm(time.strptime(declared, "%Y-%m-%dT%H:%M:%SZ"))
+    except Exception:
+        return None
+    at_now = expectation(rows, baseline)
+    at_ref = expectation(rebanded(rows, t_decl), baseline)
+    if not at_now or not at_ref:
+        return None
+    gap_d = (t_now - t_decl) / 86400.0
+    return {
+        "days_between_the_two_clocks": round(gap_d, 3),
+        "expected_with_the_list_aged_at_the_reference_time": at_ref["expected_absent_rate"],
+        "expected_with_the_list_aged_at_now": at_now["expected_absent_rate"],
+        "drift_pp": 100 * (at_now["expected_absent_rate"] - at_ref["expected_absent_rate"]),
+        "age_histogram_at_the_reference_time": band_hist(rebanded(rows, t_decl)),
+        "age_histogram_at_now": band_hist(rows),
+        "which_one_is_defensible": (
+            "the reference-time one. It is the only reading in which the ages and the table's "
+            "clock agree, and it says what it can honestly say: for a list with this age "
+            "profile, the reference population showed this much public absence ON THE "
+            "REFERENCE DAY. The now-aged one extrapolates a single cross-section forward as "
+            "though it were a hazard, which this arc has explicitly withdrawn as a claim — a "
+            "single cross-section cannot separate the age of a video from the cohort it was "
+            "created in, and this arc's own forum arm reverses the sign of the age gradient "
+            "when first-citation year is held fixed (underpowered, p = 0.69)."),
+        "the_drift_is_not_a_forecast": (
+            "no part of this figure says retrievability itself changed. It says how far this "
+            "tool's own arithmetic has moved from the day the table was measured."),
+    }
 
 
 def expectation(rows, baseline):
@@ -572,6 +685,7 @@ def main(argv=None):
                                      "INDETERMINATE are excluded from both parts"),
         "n_unconfirmed_absent": n_unconfirmed,
         "expectation_for_this_age_profile": expectation(rows, baseline),
+        "frozen_reference_drift": drift(rows, baseline, t_ref),
         "baseline_currency": baseline_currency(baseline, t_ref),
         "baseline_note": bwhy,
         "what_not_retrievable_means": (
@@ -606,15 +720,35 @@ def main(argv=None):
         age_d = cur["age_days_at_measurement"]
         print(f"reference table declares {cur['declared_t_ref_utc']} — {age_d:.1f} day(s) "
               f"before this measurement (declared, not verified by this tool)")
-        if age_d > 30:
-            print(f"WARNING: the reference table is {age_d:.0f} days old. An expectation from a "
-                  f"stale yardstick is arithmetic, not a comparison.")
-            print(f"WARNING: reference table {age_d:.0f} days old", file=sys.stderr)
+        # Session 122: the threshold is measured, not chosen. STALE_AFTER_DAYS is the day on
+        # which the drift this staleness causes first exceeds the largest single error the
+        # reference table's own bookkeeping defect ever produced (0.1826 pp). Before that day
+        # the staleness is smaller than a defect this practice published a public erratum for;
+        # after it, it is larger. `drift-122.json` -> when_the_design_half_overtakes...
+        if age_d > STALE_AFTER_DAYS:
+            print(f"WARNING: the reference table is {age_d:.0f} days old, past the {STALE_AFTER_DAYS}-day "
+                  f"mark at which staleness outweighs the worst bookkeeping error this table "
+                  f"has ever carried. An expectation from a stale yardstick is arithmetic, not "
+                  f"a comparison.")
+            print(f"WARNING: reference table {age_d:.0f} days old (stale after {STALE_AFTER_DAYS})",
+                  file=sys.stderr)
     exp = out["expectation_for_this_age_profile"]
+    dr = out["frozen_reference_drift"]
     if exp:
-        print(f"expected for this age profile {exp['expected_absent_rate']:.4f} "
-              f"[{exp['expected_lo']:.4f}, {exp['expected_hi']:.4f}] "
-              f"— a yardstick from a different population, not a verdict")
+        # The reference-time figure leads, because it is the one whose ages and table agree.
+        if dr:
+            print(f"expected for this age profile, AT THE REFERENCE TIME "
+                  f"{dr['expected_with_the_list_aged_at_the_reference_time']:.4f} "
+                  f"— a yardstick from a different population, not a verdict")
+            print(f"  the same list aged at today instead: "
+                  f"{dr['expected_with_the_list_aged_at_now']:.4f} "
+                  f"({dr['drift_pp']:+.4f} pp over {dr['days_between_the_two_clocks']:.1f} day(s) "
+                  f"of frozen reference). This gap is arithmetic drift, NOT a measurement that "
+                  f"retrievability changed.")
+        else:
+            print(f"expected for this age profile {exp['expected_absent_rate']:.4f} "
+                  f"[{exp['expected_lo']:.4f}, {exp['expected_hi']:.4f}] "
+                  f"— a yardstick from a different population, not a verdict")
     print("written", dest)
     return 3 if bwhy else 0
 
