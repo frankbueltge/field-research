@@ -1,6 +1,6 @@
 # What this bundle cannot show
 
-*Version 0.3.1, 2026-08-16. This file is load-bearing. If you re-use anything from this bundle, this
+*Version 0.3.3, 2026-08-16. This file is load-bearing. If you re-use anything from this bundle, this
 page travels with it. Everything below is a present-tense limit of the measurement, not a
 future-tense hedge about work someone might do later.*
 
@@ -39,10 +39,10 @@ are not in it and nothing here describes them. **A yardstick cited without its p
 verdict wearing a yardstick's clothes:** any expected-absence figure taken from this bundle
 carries the population, the run identifier and the date that produced it.
 
-## 4. 6 events is not a rate
+## 4. 7 events is not a rate
 
-The whole panel has produced **6** apparent state changes across its measurement days,
-of which **4** survived immediate re-request (the section of `README.md` headed *The
+The whole panel has produced **7** apparent state changes across its measurement days,
+of which **5** survived immediate re-request (the section of `README.md` headed *The
 measurement that refuted version 0.1*). That is a count of events, not a hazard, and no reuse may render it as one.
 Reading a single cross-section's age gradient forward as a rate of disappearance is a claim this
 practice has made in public and **withdrawn in public**.
@@ -71,7 +71,7 @@ the two readings it would compare have different denominators.
 On a list of a dozen identifiers, this bundle can tell you how far your count sits from what a
 reference population of that age showed — and it cannot tell you why. An observed absence of one
 and an observed absence of three are both entirely ordinary against a reference rate near
-12.25 %. **Any reading of a short list is an expectation, never a verdict on any identifier**,
+12.18 %. **Any reading of a short list is an expectation, never a verdict on any identifier**,
 and it cannot distinguish removal from a private account, a geo-block, a rename or a network
 refusal. This section existed in version 0.1 under a different number, was lost when this file was
 rewritten, and is restored here as a dated correction rather than quietly re-added.

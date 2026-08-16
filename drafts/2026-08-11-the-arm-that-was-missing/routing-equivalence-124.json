@@ -1,0 +1,235 @@
+{
+ "schema": "field-research/routing-equivalence/1",
+ "question": "does the provenance-routed FIGURES.md state the same figures as the page version 0.3.1 shipped, on the same panel?",
+ "shipped_page": "FIGURES-v0.3.1-preroute-reference.md",
+ "routed_page": "rebuilt from the run files at the 5-day cutoff into a temporary directory by routing_equivalence_124.py; rerun that script to reproduce",
+ "cutoff": "2026-08-15T23:59:59Z",
+ "n_table_figures_shipped": 238,
+ "n_table_figures_routed": 243,
+ "table_figures_identical_sections_1_to_5": true,
+ "per_section": {
+  "section_1": {
+   "n_shipped": 68,
+   "n_routed": 68,
+   "identical": true
+  },
+  "section_2": {
+   "n_shipped": 48,
+   "n_routed": 48,
+   "identical": true
+  },
+  "section_3": {
+   "n_shipped": 78,
+   "n_routed": 78,
+   "identical": true
+  },
+  "section_4": {
+   "n_shipped": 10,
+   "n_routed": 10,
+   "identical": true
+  },
+  "section_5": {
+   "n_shipped": 12,
+   "n_routed": 12,
+   "identical": true
+  },
+  "section_6": {
+   "n_shipped": 22,
+   "n_routed": 27,
+   "identical": false,
+   "expected_to_differ": "yes - this section gained a column. The old page printed one INDETERMINATE count per day, over ALL units including the control arm, beside an exclusion count in section 4 that excludes the control arm, with nothing saying they were different questions (first gauntlet, finding 14). Both scopes are now printed side by side."
+  }
+ },
+ "n_scientific_notation_values": [
+  4,
+  4
+ ],
+ "scientific_notation_identical": true,
+ "scientific_notation_shipped": [
+  3.083e-10,
+  0.09832,
+  1.358e-06,
+  0.0002141
+ ],
+ "scientific_notation_routed": [
+  3.083e-10,
+  0.09832,
+  1.358e-06,
+  0.0002141
+ ],
+ "table_differences": [
+  {
+   "section": 6,
+   "index": 2,
+   "shipped": "2026",
+   "routed": "39"
+  },
+  {
+   "section": 6,
+   "index": 3,
+   "shipped": "08",
+   "routed": "2026"
+  },
+  {
+   "section": 6,
+   "index": 4,
+   "shipped": "12",
+   "routed": "08"
+  },
+  {
+   "section": 6,
+   "index": 5,
+   "shipped": "40",
+   "routed": "12"
+  },
+  {
+   "section": 6,
+   "index": 6,
+   "shipped": "1.03",
+   "routed": "40"
+  },
+  {
+   "section": 6,
+   "index": 7,
+   "shipped": "2026",
+   "routed": "1.03"
+  },
+  {
+   "section": 6,
+   "index": 8,
+   "shipped": "08",
+   "routed": "38"
+  },
+  {
+   "section": 6,
+   "index": 9,
+   "shipped": "13",
+   "routed": "2026"
+  },
+  {
+   "section": 6,
+   "index": 10,
+   "shipped": "47",
+   "routed": "08"
+  },
+  {
+   "section": 6,
+   "index": 11,
+   "shipped": "1.21",
+   "routed": "13"
+  },
+  {
+   "section": 6,
+   "index": 12,
+   "shipped": "2026",
+   "routed": "47"
+  },
+  {
+   "section": 6,
+   "index": 13,
+   "shipped": "08",
+   "routed": "1.21"
+  },
+  {
+   "section": 6,
+   "index": 14,
+   "shipped": "14",
+   "routed": "44"
+  },
+  {
+   "section": 6,
+   "index": 15,
+   "shipped": "40",
+   "routed": "2026"
+  },
+  {
+   "section": 6,
+   "index": 16,
+   "shipped": "1.03",
+   "routed": "08"
+  },
+  {
+   "section": 6,
+   "index": 17,
+   "shipped": "2026",
+   "routed": "14"
+  },
+  {
+   "section": 6,
+   "index": 18,
+   "shipped": "08",
+   "routed": "40"
+  },
+  {
+   "section": 6,
+   "index": 19,
+   "shipped": "15",
+   "routed": "1.03"
+  },
+  {
+   "section": 6,
+   "index": 20,
+   "shipped": "49",
+   "routed": "37"
+  },
+  {
+   "section": 6,
+   "index": 21,
+   "shipped": "1.27",
+   "routed": "2026"
+  },
+  {
+   "section": 6,
+   "index": 22,
+   "shipped": null,
+   "routed": "08"
+  },
+  {
+   "section": 6,
+   "index": 23,
+   "shipped": null,
+   "routed": "15"
+  },
+  {
+   "section": 6,
+   "index": 24,
+   "shipped": null,
+   "routed": "49"
+  },
+  {
+   "section": 6,
+   "index": 25,
+   "shipped": null,
+   "routed": "1.27"
+  },
+  {
+   "section": 6,
+   "index": 26,
+   "shipped": null,
+   "routed": "44"
+  }
+ ],
+ "n_prose_figures_shipped": 30,
+ "n_prose_figures_routed": 36,
+ "prose_note": "the prose around the tables was rewritten - it now states the balanced panel's size and the raw/balanced ratio, which the old page did not - so prose token counts are EXPECTED to differ and are reported, not asserted equal.",
+ "formerly_typed_literals": {
+  "balanced_panel_spread_pp": {
+   "typed_into_the_old_generator": 0.0577,
+   "fetched_now": 0.0584,
+   "field": "figures-derived.json:balanced_panel.range",
+   "agrees_on_this_panel": false
+  },
+  "control_identifiers_that_do_not_resolve": {
+   "typed_into_the_old_generator": 248,
+   "fetched_now": 248,
+   "field": "figures-derived.json:control_arm.n_not_resolving_on_newest_day",
+   "agrees_on_this_panel": true
+  },
+  "encyclopedia_language_editions": {
+   "typed_into_the_old_generator": 37,
+   "fetched_now": 37,
+   "field": "figures-derived.json:population.n_encyclopedia_language_editions",
+   "agrees_on_this_panel": true
+  }
+ }
+}

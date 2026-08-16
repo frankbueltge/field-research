@@ -1461,3 +1461,51 @@ Machine source for every figure: `gauntlet-followup-122.json`.*
   the true count is **seven**. **The class — a figure that is right now and wrong later — is the
   same one session 122 measured as the frozen-reference drift**, and it recurred inside the repair
   built for it, in the file that names the repair.
+
+## Session 124 (2026-08-16, third session of the date) — the three bound conditions, the lock, and a fifth failed gauntlet on the practice's own accounting
+
+- **`FIGURES.md` is now inside the guards, and routing it changed no figure a reader sees.** The
+  densest table in the bundle was generated from the builder's in-memory variables with three
+  literals typed in (`0.0577 pp`, `248 of 249`, `37 editions`); it is now built by `figures_page.py`
+  from the bundle's own JSON, every number fetched from a named field and recorded in
+  `FIGURE-PROVENANCE.json`. Proven figure-for-figure equivalent to the shipped page on the same
+  five-day panel (`routing-equivalence-124.json`: §1–5 identical, §6 differs only by a deliberately
+  added column). This **reverses** downstream condition 12(d), which warned `FIGURES.md` sat outside
+  every guard and returned 103 unmatched numbers.
+- **The errata registry became an accounting: 53 of 53, none unaccounted.** `errata_check.py` now
+  names every published erratum as registered-as-wording (36) or reasoned-as-unregistrable (17),
+  and the build fails on any unaccounted or mis-mapped one. This discharges `CONDITIONS-123.md`
+  item 2 ("register the remaining 43 or state a reason for each"). E13/2026-08-15 is registered then
+  withdrawn to a reason, because as wording it fired on the correctly-scoped attributed quotation —
+  the false-positive half of the check's own documented hole.
+- **The population caveat is in the letter now, not only in `LIMITS.md`.** `LETTER.md` states the
+  yardstick's population (37 cited encyclopedia editions and one forum) is not the receiver's, whose
+  videos were selected by a different process — "a comparison, not a benchmark." Discharges item 3.
+- **The bet was LOST honestly:** completing the registry was to find at least one live regression in
+  the shipped bundle; it found zero. The bundle was already clean of every registered correction.
+- **The double-probe accident was corrupting the artifact, not only doubling requests** (`ERRATA-124.md`
+  E20). The builder discovered the two 2026-08-16 runs as one measurement day with one label, so a
+  seven-day manifest covered six days and one day's cells were non-deterministic. The builder now
+  records a `-second-probe` run as a replicate and refuses any surviving duplicate label as a hard
+  error.
+- **The run lock owed since session 122 is built and shown working** (`run_lock.py`). It refuses a
+  second run over the same manifest+day (live lock, fresh `.partial`, or complete run), creates the
+  lock atomically with `O_CREAT|O_EXCL` (six real processes race a barrier in the selftest; exactly
+  one wins), names lock files per manifest+day so different manifests never contend, and reserves the
+  day BEFORE a scheduled hold (`run_window_day.py`, wired into `run_day7.sh`) so a session opening
+  during the hold refuses. Its stated limit: one filesystem; two separate checkouts cannot see each
+  other's lock.
+- **THE GAUNTLET FAILED, THE FIFTH IN A ROW, AND AGAIN ON THE PRACTICE'S OWN PROSE.** Verifier FAIL,
+  one blocking: `ERRATA-124.md` published E20 and the accounting did not include it — the session
+  whose entire move was to account for every published erratum published one it did not account for,
+  and the audit gate exited clean because it did not read its own coverage report. Interlocutor: core
+  claim survives narrowed — the lock overstated what it delivered (the reservation runner was wired
+  nowhere; the write was not atomic), and `DAY6-2026-08-16.md` was **committed with raw
+  merge-conflict markers**. All accepted, none refused, repaired into **0.3.3** (which carries no
+  verdict). **Five gauntlets, not one failing on a measurement.**
+- **The Interlocutor's hostile critique, accepted as accurate:** the session's work is *"careful,
+  honest, well-instrumented motion — and still motion in place."* A lock for an accident already
+  documented, a figures-page rewrite that changed no reader-visible number, and the 53rd erratum in a
+  private ledger about a document no receiver has read. The bundle is withheld, sent to no one; the
+  window closes 2026-08-18; nothing has left the house in twenty days. The next session is bound to
+  **build nothing** and gauntlet the frozen 0.3.3, and if it passes, prepare the packet.

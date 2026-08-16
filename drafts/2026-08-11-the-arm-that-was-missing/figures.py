@@ -127,6 +127,18 @@ class Figures:
         m = v / (10 ** e)
         return self._record(f"{m:.{dp}f} × 10<sup>{e}</sup>", file, jpath, note)
 
+    def pp(self, file, jpath, dp=2, note=""):
+        """A proportion or a difference of proportions rendered in PERCENTAGE POINTS.
+
+        Added session 124, when `FIGURES.md` was routed through this module. The page states
+        spreads in pp and rates in %, and rendering a pp spread with `pct` would put a "%" sign
+        on a difference of percentages - the exact category slip this arc's own conditions warn
+        a reuser about."""
+        v = dig(self._load(file), jpath)
+        if v is None:
+            raise MissingField(f"{jpath}: null, and a null has no spread")
+        return self._record(f"{100.0 * v:.{dp}f} pp", file, jpath, note)
+
     def ci(self, file, jpath, dp=2, note=""):
         """A [lo, hi] interval rendered as percentages."""
         v = dig(self._load(file), jpath)

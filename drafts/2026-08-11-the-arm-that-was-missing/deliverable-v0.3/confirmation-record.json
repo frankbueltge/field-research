@@ -6,7 +6,8 @@
    "ledger/transition-confirm-2026-08-12.json",
    "ledger/transition-confirm-2026-08-13.json",
    "ledger/transition-confirm-2026-08-14.json",
-   "ledger/transition-confirm-2026-08-15.json"
+   "ledger/transition-confirm-2026-08-15.json",
+   "ledger/transition-confirm-2026-08-16.json"
   ],
   "corrections": "ledger/corrections.json",
   "corrections_sha256": "b08e4c531e79cac24a91cac17c51e00ccaa7cac1e064a4282dbc7b89372a8e7a"
@@ -15,8 +16,8 @@
  "what_a_pass_is": "one further request to the same endpoint for the same identifier, at the instrument's own 1.0 s spacing, immediately after the reading being tested. A reading is CONFIRMED only if all five agree with it.",
  "all_readings": {
   "NOT-RETRIEVABLE->RETRIEVABLE": {
-   "n": 5,
-   "confirmed": 5,
+   "n": 6,
+   "confirmed": 6,
    "refuted": 0
   },
   "RETRIEVABLE->NOT-RETRIEVABLE": {
@@ -27,8 +28,8 @@
  },
  "genuine_transitions_only": {
   "NOT-RETRIEVABLE->RETRIEVABLE": {
-   "n": 3,
-   "confirmed": 3,
+   "n": 4,
+   "confirmed": 4,
    "refuted": 0
   },
   "RETRIEVABLE->NOT-RETRIEVABLE": {
@@ -185,6 +186,25 @@
     "NOT-RETRIEVABLE",
     "NOT-RETRIEVABLE",
     "NOT-RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-16.json",
+   "sidecar_sha256": "331c58ad9cd7fc9d3a7e76368ddfba945568a21cc643b3dbe4851dbe63c70090",
+   "generated_utc": "2026-08-16T05:29:41Z",
+   "vid": "7118519163416497450",
+   "handle": "hotmessexpress3155",
+   "direction": "NOT-RETRIEVABLE->RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
    ],
    "n_passes": 5,
    "confirmed": true,

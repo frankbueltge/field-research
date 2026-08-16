@@ -9,15 +9,16 @@ reports against them stay checkable.*
 | 0.1 | 2026-08-15 | **WITHHELD — refuted at its gauntlet.** Its core claim was that reproducing an aggregate rate on a fixed panel warrants trusting a single reading of somebody else's list. This practice's own confirmation record refutes that, and the tool shipped in it took one pass and no confirmation. | `deliverable/` — unedited, plus `GAUNTLET-2026-08-15.md` listing every corrected statement with its true value |
 | 0.1 + dated corrections | 2026-08-16 | **STILL WITHHELD.** Session 122 measured a reference-clock defect and published the corrected tables **beside** the originals rather than editing them. | `deliverable/*-CORRECTED-2026-08-16.*` |
 | **0.3** | 2026-08-16 | **WITHHELD — the gauntlet FAILED.** Verifier **FAIL**, five blocking; Interlocutor: core claim **survives, narrowed**, two blocking. Every blocking finding was a *sentence*, not a measurement — and six of them were corrections this practice had already published on 2026-08-15 and reproduced unchanged. Reports published unedited (`VERIFIER-123.md`, `INTERLOCUTOR-15.md`); errata with true values in `ERRATA-123.md`. | `deliverable-v0.3/` as built at that commit |
-| **0.3.1** | **2026-08-16** | **WITHHELD, and these repairs carry NO VERDICT.** This directory is version 0.3 with every blocking finding repaired and a regression check added that fails the build if a published correction comes back. **No reviewer has read this state.** A verdict is good only for the state it was run on, and nothing has run on this one. | this directory |
+| **0.3.2** | 2026-08-16 | **WITHHELD — the gauntlet FAILED, the fifth in a row on this bundle.** Session 124 routed `FIGURES.md` through the provenance guard, completed the errata accounting, moved the population caveat into the letter, and built the run lock. Verifier **FAIL**, one blocking: erratum **E20**, published by this session in `ERRATA-124.md`, was never brought into the errata accounting — *the session whose move was to account for every published erratum published one it did not account for*, and the build gate did not catch it because it did not read its own coverage report. | `deliverable-v0.3/` as the reviewer read it |
+| **0.3.3** | **2026-08-16** | **WITHHELD, and these repairs carry NO VERDICT.** This directory is version 0.3.2 with E20 brought into the accounting and the build gate hardened to fail on any unaccounted or mis-mapped erratum (Verifier finding N1). **No reviewer has read this state.** A verdict is good only for the state it was run on, and nothing has run on this one. | this directory |
 
 ## What changed between 0.1 and 0.3
 
-1. **The panel is longer.** 5 measurement days, 2026-08-11T11:24:06Z to 2026-08-15T03:37:40Z, built from
-   5 run files whose sha256 are in `MANIFEST.json`.
+1. **The panel is longer.** 6 measurement days, 2026-08-11T11:24:06Z to 2026-08-16T03:37:40Z, built from
+   6 run files whose sha256 are in `MANIFEST.json`.
 2. **The reference-clock defect is fixed in the build, not patched beside it.** Version 0.1
    declared a reference time of one date and computed its age bands at another. In this version
-   `t_ref_utc` is 2026-08-15T03:37:40Z and `ages_computed_at_utc` is 2026-08-15T03:37:40Z; where those two agree, the
+   `t_ref_utc` is 2026-08-16T03:37:40Z and `ages_computed_at_utc` is 2026-08-16T03:37:40Z; where those two agree, the
    bands are the bands of the moment the table names.
 3. **One live set of tables.** There are no `-CORRECTED-` twins in this directory. The
    superseded state is not deleted — it is at its own published address in `deliverable/`.
@@ -37,7 +38,7 @@ reports against them stay checkable.*
 7. **A published correction cannot come back silently.** `errata_check.py` holds this arc's
    published corrections as a machine checklist and fails the build if one is live again in the
    bundle. It was written because version 0.3 shipped six of them back. Its own coverage is
-   printed rather than implied: **8 of 51** published errata are registered in it, and
+   printed rather than implied: **36 of 53** published errata are registered in it, and
    the rest are unchecked.
 
 ## What did NOT change, and must not be read as changed

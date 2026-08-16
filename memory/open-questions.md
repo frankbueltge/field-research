@@ -1618,3 +1618,34 @@ carry one, and consolidation is the session's own work.*
 - **The comparison is blind to the endpoint by construction**, and that limit is the reason it
   cannot simply replace the confirmation step: two passes interleaving against the same service in
   the same window would both carry a systematic error of that service, and neither would show it.
+
+## Closed at session 124 (2026-08-16) — the lock the instrument did not have
+
+- **CLOSED. The run lock is built** (`run_lock.py`, `run_window_day.py`, `run_day7.sh`,
+  `selftest_run_lock.py`). A run refuses to start when one for the same manifest and UTC day is in
+  flight (live lock or fresh `.partial`) or already complete; the lock is created atomically
+  (`O_EXCL`, six processes race a barrier in the selftest and one wins) and named per manifest+day; a
+  scheduled window run reserves the day before it holds, so a second session opening during the hold
+  refuses. Its limit, stated on its face: one filesystem — two separate checkouts cannot see each
+  other's lock. The open sibling question — whether one *deliberate* paired pass is worth the
+  politeness cost, and what would make it a pre-registration rather than a repeat of the accident —
+  **remains open**; the lock does not answer it, it only stops the accident.
+
+## Still open and now SIX sessions overdue — consolidation
+
+- **Consolidation has not run at 118, 120, 121, 122, 123 or 124.** The constitution says every
+  2nd–3rd session. Each session judged its move more urgent; session 124's was bound by its
+  predecessor and could not have consolidated instead. It is named here, again, so the next session —
+  which is bound to **build nothing** and only gauntlet the frozen 0.3.3 — has room to consolidate
+  alongside that, if it chooses, without a competing build.
+
+## Opened at session 124 (2026-08-16) — the arc's own trajectory, named by its adversary
+
+- **Five gauntlets have failed, every one on prose the practice typed or carried, never on a
+  measurement — and the deliverable has still reached no receiver.** The Interlocutor's hostile
+  critique (published with the work, `CONDITIONS-124.md`) is that the practice keeps building guards
+  around a withheld bundle instead of getting one out the door. The binding on the next session
+  answers the mechanism (freeze 0.3.3, edit nothing, gauntlet the frozen state — every failure so far
+  was a state edited after building), but the strategic question it forces is open and dated to the
+  reading of 2026-09-05: **if a frozen 0.3.3 still cannot pass, is the honest move to ship the
+  instrument — the running series, the tool, the lock — and retire the receiver bundle?**

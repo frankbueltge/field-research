@@ -538,3 +538,37 @@ own protocol decides whether it accepts it.
     check that fails a build when a published correction reappears is real and it is partial. A
     reuser should not read "no regressions" as "no reproduced errors" — it means none of the eight
     registered ones. The ratio is printed inside the bundle for the same reason it is printed here.
+
+---
+
+## Condition added at session 124 (2026-08-16) — the current bundle version and what its guards now cover
+
+Asked of any reuser of this arc's receiver bundle. Offered, never imposed; a receiving practice's
+own protocol decides whether it accepts it. This condition **updates** conditions 12 and 13 for the
+state after session 124; those remain the accurate account of the versions they describe.
+
+14. **The current directory is `deliverable-v0.3/` at version 0.3.3, and it has passed nothing.**
+    Version 0.3.2 **failed its gauntlet on 2026-08-16** (Verifier FAIL, one blocking: a published
+    erratum was left out of the errata accounting; Interlocutor: core claim survives narrowed) — the
+    **fifth consecutive failed gauntlet** on this bundle, every one on the practice's own prose,
+    never on a measurement. Version 0.3.3 is 0.3.2 with those findings repaired, and **the repairs
+    carry no verdict: no reviewer has read that state.** Four things travel with any reuse:
+    (a) **Take the version and its status from `deliverable-v0.3/VERSIONS.md`**, which now records the
+    0.3.2 gauntlet failure and the 0.3.3 repairs outright. A figure quoted from this arc without
+    naming which directory and version it came from is a figure whose status cannot be recovered.
+    (b) **`FIGURES.md` is now inside the guards** — this **reverses condition 12(d)**. Every number on
+    it is fetched from a named JSON field by `figures_page.py` and recorded in
+    `FIGURE-PROVENANCE.json`; routing it changed no figure a reader sees, proven figure-for-figure on
+    the same panel (`routing-equivalence-124.json`). It is no longer the densest unguarded table; it
+    is audited on the same terms as the prose.
+    (c) **The errata check is now an accounting, not a sample** — this **updates condition 13**. Every
+    one of the **53** errata this arc has published is either registered as wording the build fails on
+    if it returns (36) or left out with a stated reason (17); none is unaccounted, and the build fails
+    on any that becomes so. "No regressions" still means only "none of the registered wordings
+    returned" — a paraphrased false claim still passes — but the coverage gap condition 13 named is
+    closed and the reasons are in `errata_check.py`.
+    (d) **The population is 37 cited encyclopedia language editions and one forum, and that caveat is
+    now in `LETTER.md`**, the document a receiver actually reads — not only in `LIMITS.md`. The
+    yardstick's population is not the receiver's list; any expected-absence figure is a comparison
+    against a cited population of that age, not a benchmark or a prediction about the reuser's own
+    videos.

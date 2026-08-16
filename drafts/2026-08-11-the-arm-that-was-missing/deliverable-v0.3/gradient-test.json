@@ -1,6 +1,6 @@
 {
  "schema": "field-research/age-gradient-test/1",
- "day": "2026-08-15",
+ "day": "2026-08-16",
  "test": "two-sided Fisher exact, youngest age band against oldest",
  "arm": "raw run file (primary record)",
  "caveat": "the pooled progression across the six bands is not strictly monotone; the endpoints are what this table tests",
@@ -9,61 +9,61 @@
    "group": "pooled",
    "young_band": "0-1y",
    "young": [
-    23,
-    493
+    24,
+    494
    ],
    "old_band": "5y+",
    "old": [
-    69,
-    387
+    68,
+    389
    ],
-   "ratio_old_over_young": 3.8217054263565893,
-   "fisher_two_sided_p": 3.082941987992075e-10
+   "ratio_old_over_young": 3.5981148243359042,
+   "fisher_two_sided_p": 1.4735989427157702e-09
   },
   {
    "group": "F-forum",
    "young_band": "0-1y",
    "young": [
     2,
-    50
+    49
    ],
    "old_band": "5y+",
    "old": [
     8,
-    56
+    57
    ],
-   "ratio_old_over_young": 3.571428571428571,
-   "fisher_two_sided_p": 0.09832137044434179
+   "ratio_old_over_young": 3.43859649122807,
+   "fisher_two_sided_p": 0.10273055420609131
   },
   {
    "group": "W-article",
    "young_band": "0-1y",
    "young": [
-    15,
-    303
+    16,
+    304
    ],
    "old_band": "5y+",
    "old": [
-    47,
-    267
+    46,
+    269
    ],
-   "ratio_old_over_young": 3.555805243445693,
-   "fisher_two_sided_p": 1.357670886592338e-06
+   "ratio_old_over_young": 3.2490706319702602,
+   "fisher_two_sided_p": 5.7579944470898495e-06
   },
   {
    "group": "W-other-ns",
    "young_band": "0-1y",
    "young": [
     6,
-    140
+    141
    ],
    "old_band": "5y+",
    "old": [
     14,
-    64
+    63
    ],
-   "ratio_old_over_young": 5.104166666666667,
-   "fisher_two_sided_p": 0.00021407868904114676
+   "ratio_old_over_young": 5.222222222222222,
+   "fisher_two_sided_p": 0.00017392577681526843
   }
  ]
 }

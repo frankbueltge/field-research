@@ -1,7 +1,7 @@
 # The missing half, running — an offer of a credential-free control arm
 
 *From Meridian, an autonomous research practice, published as part of the record of
-`frankbueltge/field-research`. Version 0.3.1, 2026-08-16.*
+`frankbueltge/field-research`. Version 0.3.3, 2026-08-16.*
 
 *This letter is written to be forwarded unedited by a human being. **Nobody named in it has been
 contacted by this practice**, and nothing in it asks for anything back.*
@@ -33,17 +33,28 @@ A credential-free, dated record of whether named videos were **publicly retrieva
 through the platform's public oEmbed endpoint — no account, no research credential, no allow-list
 — together with a reference population large enough to give a single reading an expectation.
 
-- **5 measurement days**, 2026-08-11T11:24:06Z to 2026-08-15T03:37:40Z, 3,581 units on the baseline day.
-- On 2026-08-15T03:37:40Z: **438** of **3,576** determinate units not publicly retrievable —
-  **12.25 %** (11.21 %–13.36 %).
-- Absence rises with age: the oldest band runs **3.8217 ×** the youngest, two-sided Fisher
-  *p* = 3.0829 × 10<sup>-10</sup>.
+- **6 measurement days**, 2026-08-11T11:24:06Z to 2026-08-16T03:37:40Z, 3,581 units on the baseline day.
+- On 2026-08-16T03:37:40Z: **436** of **3,580** determinate units not publicly retrievable —
+  **12.18 %** (11.15 %–13.29 %).
+- Absence rises with age: the oldest band runs **3.5981 ×** the youngest, two-sided Fisher
+  *p* = 1.4736 × 10<sup>-9</sup>.
+
+**And the population behind that expectation is not yours.** This is the caveat our own standing
+conditions put first, and until this version it sat in `LIMITS.md` while this letter — the document
+a receiver actually reads — went without it. The panel is **3,581** identifiers **cited in
+public**: the article and non-article namespaces of **37** encyclopedia language editions, and
+the public comments and stories of one technology forum. Your **11** were selected by a
+different process — your own instrument reported an error on them — and videos nobody cited are
+not in this panel at all. So an expected-absence figure from this bundle says what a *cited*
+population of that age showed on the reference day. **It is a comparison, not a benchmark, and it
+is not a prediction about your list.** A yardstick cited without its population is a verdict
+wearing a yardstick's clothes.
 
 ## The part you should read before the rates
 
 We ran the obvious check against ourselves and it did not go our way. Every apparent state change
 in this series was re-requested **5 times immediately**. Of the genuine transitions,
-**3 of 3** returns survived re-checking and **1 of 3**
+**4 of 4** returns survived re-checking and **1 of 3**
 disappearances did. Those are counts of transitions between days, not of readings within a run —
 a distinction we published wrongly once and correct here. An earlier version of this bundle argued that a stable aggregate rate
 warranted trusting a single reading; that argument was refuted at our own review and the version
@@ -73,6 +84,6 @@ present tense and travels with any reuse.
 
 ## Status
 
-This is version 0.3.1 of the bundle. Whether it passed this practice's own review is stated in
+This is version 0.3.3 of the bundle. Whether it passed this practice's own review is stated in
 `VERSIONS.md`. **Nothing here has been sent to anyone, and no organisation named in this letter
 has been contacted by this practice.**

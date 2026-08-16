@@ -1,0 +1,1424 @@
+{
+ "schema": "field-research/figure-provenance/1",
+ "written_by": "figures.py, session 123",
+ "what_this_is": "every figure that appears in the generated prose of this bundle, with the file and JSON field it was read from. A figure not in this table was typed by a human and is a defect.",
+ "n_figures": 236,
+ "figures": [
+  {
+   "rendered": "2026-08-16T17:30:13Z",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "the build clock, read from the system at build time"
+  },
+  {
+   "rendered": "0.3.2",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "the version in which this page was routed through the provenance guard"
+  },
+  {
+   "rendered": "95",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "the confidence level of the Wilson interval \u2014 a stated method parameter of this arc, not a measured quantity"
+  },
+  {
+   "rendered": "baseline",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "2026-08-11T11:24:06Z",
+   "file": "series/presence-series.json",
+   "json_path": "days[0].utc_start",
+   "note": "baseline: when the measurement started"
+  },
+  {
+   "rendered": "3,869",
+   "file": "series/presence-series.json",
+   "json_path": "n_units",
+   "note": "baseline: units in the panel"
+  },
+  {
+   "rendered": "3,581",
+   "file": "expectation.json",
+   "json_path": "per_day.baseline.pooled.n",
+   "note": "baseline: units in the rate"
+  },
+  {
+   "rendered": "437",
+   "file": "expectation.json",
+   "json_path": "per_day.baseline.pooled.absent",
+   "note": "baseline: units not retrievable"
+  },
+  {
+   "rendered": "12.20 %",
+   "file": "expectation.json",
+   "json_path": "per_day.baseline.pooled.absent_rate",
+   "note": "baseline: pooled absence rate"
+  },
+  {
+   "rendered": "11.17 %\u201313.32 %",
+   "file": "expectation.json",
+   "json_path": "per_day.baseline.pooled.absent_ci",
+   "note": "baseline: Wilson interval"
+  },
+  {
+   "rendered": "2026-08-12",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "2026-08-12T03:40:28Z",
+   "file": "series/presence-series.json",
+   "json_path": "days[1].utc_start",
+   "note": "2026-08-12: when the measurement started"
+  },
+  {
+   "rendered": "3,869",
+   "file": "series/presence-series.json",
+   "json_path": "days[1].requested",
+   "note": "2026-08-12: identifiers requested"
+  },
+  {
+   "rendered": "3,582",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-12.pooled.n",
+   "note": "2026-08-12: units in the rate"
+  },
+  {
+   "rendered": "437",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-12.pooled.absent",
+   "note": "2026-08-12: units not retrievable"
+  },
+  {
+   "rendered": "12.20 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-12.pooled.absent_rate",
+   "note": "2026-08-12: pooled absence rate"
+  },
+  {
+   "rendered": "11.17 %\u201313.31 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-12.pooled.absent_ci",
+   "note": "2026-08-12: Wilson interval"
+  },
+  {
+   "rendered": "2026-08-13",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "2026-08-13T04:27:00Z",
+   "file": "series/presence-series.json",
+   "json_path": "days[2].utc_start",
+   "note": "2026-08-13: when the measurement started"
+  },
+  {
+   "rendered": "3,869",
+   "file": "series/presence-series.json",
+   "json_path": "days[2].requested",
+   "note": "2026-08-13: identifiers requested"
+  },
+  {
+   "rendered": "3,576",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-13.pooled.n",
+   "note": "2026-08-13: units in the rate"
+  },
+  {
+   "rendered": "439",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-13.pooled.absent",
+   "note": "2026-08-13: units not retrievable"
+  },
+  {
+   "rendered": "12.28 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-13.pooled.absent_rate",
+   "note": "2026-08-13: pooled absence rate"
+  },
+  {
+   "rendered": "11.24 %\u201313.39 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-13.pooled.absent_ci",
+   "note": "2026-08-13: Wilson interval"
+  },
+  {
+   "rendered": "2026-08-14",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "2026-08-14T03:43:47Z",
+   "file": "series/presence-series.json",
+   "json_path": "days[3].utc_start",
+   "note": "2026-08-14: when the measurement started"
+  },
+  {
+   "rendered": "3,869",
+   "file": "series/presence-series.json",
+   "json_path": "days[3].requested",
+   "note": "2026-08-14: identifiers requested"
+  },
+  {
+   "rendered": "3,583",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-14.pooled.n",
+   "note": "2026-08-14: units in the rate"
+  },
+  {
+   "rendered": "435",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-14.pooled.absent",
+   "note": "2026-08-14: units not retrievable"
+  },
+  {
+   "rendered": "12.14 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-14.pooled.absent_rate",
+   "note": "2026-08-14: pooled absence rate"
+  },
+  {
+   "rendered": "11.11 %\u201313.25 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-14.pooled.absent_ci",
+   "note": "2026-08-14: Wilson interval"
+  },
+  {
+   "rendered": "2026-08-15",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "2026-08-15T03:37:40Z",
+   "file": "series/presence-series.json",
+   "json_path": "days[4].utc_start",
+   "note": "2026-08-15: when the measurement started"
+  },
+  {
+   "rendered": "3,869",
+   "file": "series/presence-series.json",
+   "json_path": "days[4].requested",
+   "note": "2026-08-15: identifiers requested"
+  },
+  {
+   "rendered": "3,576",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.pooled.n",
+   "note": "2026-08-15: units in the rate"
+  },
+  {
+   "rendered": "438",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.pooled.absent",
+   "note": "2026-08-15: units not retrievable"
+  },
+  {
+   "rendered": "12.25 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.pooled.absent_rate",
+   "note": "2026-08-15: pooled absence rate"
+  },
+  {
+   "rendered": "11.21 %\u201313.36 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.pooled.absent_ci",
+   "note": "2026-08-15: Wilson interval"
+  },
+  {
+   "rendered": "2026-08-16",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "2026-08-16T03:37:40Z",
+   "file": "series/presence-series.json",
+   "json_path": "days[5].utc_start",
+   "note": "2026-08-16: when the measurement started"
+  },
+  {
+   "rendered": "3,869",
+   "file": "series/presence-series.json",
+   "json_path": "days[5].requested",
+   "note": "2026-08-16: identifiers requested"
+  },
+  {
+   "rendered": "3,580",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.pooled.n",
+   "note": "2026-08-16: units in the rate"
+  },
+  {
+   "rendered": "436",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.pooled.absent",
+   "note": "2026-08-16: units not retrievable"
+  },
+  {
+   "rendered": "12.18 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.pooled.absent_rate",
+   "note": "2026-08-16: pooled absence rate"
+  },
+  {
+   "rendered": "11.15 %\u201313.29 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.pooled.absent_ci",
+   "note": "2026-08-16: Wilson interval"
+  },
+  {
+   "rendered": "6",
+   "file": "expectation.json",
+   "json_path": "across_day_stability.__pooled__.days",
+   "note": "measured days"
+  },
+  {
+   "rendered": "12.14 %",
+   "file": "expectation.json",
+   "json_path": "across_day_stability.__pooled__.min",
+   "note": "lowest pooled rate"
+  },
+  {
+   "rendered": "12.28 %",
+   "file": "expectation.json",
+   "json_path": "across_day_stability.__pooled__.max",
+   "note": "highest pooled rate"
+  },
+  {
+   "rendered": "0.14 pp",
+   "file": "expectation.json",
+   "json_path": "across_day_stability.__pooled__.range",
+   "note": "raw across-day spread"
+  },
+  {
+   "rendered": "3,386",
+   "file": "figures-derived.json",
+   "json_path": "balanced_panel.n_units",
+   "note": "units determinate on every measured day"
+  },
+  {
+   "rendered": "0.0886 pp",
+   "file": "figures-derived.json",
+   "json_path": "balanced_panel.range",
+   "note": "balanced-panel across-day spread"
+  },
+  {
+   "rendered": "1.53",
+   "file": "figures-derived.json",
+   "json_path": "balanced_panel.raw_over_balanced",
+   "note": "raw spread over balanced"
+  },
+  {
+   "rendered": "2026-08-16",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the newest measured day"
+  },
+  {
+   "rendered": "0-1y",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.<key>",
+   "note": "an age-band label"
+  },
+  {
+   "rendered": "494",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.0-1y.n",
+   "note": "0-1y: units in the rate"
+  },
+  {
+   "rendered": "24",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.0-1y.absent",
+   "note": "0-1y: units not retrievable"
+  },
+  {
+   "rendered": "4.86 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.0-1y.absent_rate",
+   "note": "0-1y: absence rate"
+  },
+  {
+   "rendered": "3.29 %\u20137.13 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.0-1y.absent_ci",
+   "note": "0-1y: Wilson interval"
+  },
+  {
+   "rendered": "0.25 pp",
+   "file": "expectation.json",
+   "json_path": "across_day_stability.0-1y.range",
+   "note": "0-1y: across-day spread"
+  },
+  {
+   "rendered": "1-2y",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.<key>",
+   "note": "an age-band label"
+  },
+  {
+   "rendered": "768",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.1-2y.n",
+   "note": "1-2y: units in the rate"
+  },
+  {
+   "rendered": "58",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.1-2y.absent",
+   "note": "1-2y: units not retrievable"
+  },
+  {
+   "rendered": "7.55 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.1-2y.absent_rate",
+   "note": "1-2y: absence rate"
+  },
+  {
+   "rendered": "5.89 %\u20139.64 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.1-2y.absent_ci",
+   "note": "1-2y: Wilson interval"
+  },
+  {
+   "rendered": "0.32 pp",
+   "file": "expectation.json",
+   "json_path": "across_day_stability.1-2y.range",
+   "note": "1-2y: across-day spread"
+  },
+  {
+   "rendered": "2-3y",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.<key>",
+   "note": "an age-band label"
+  },
+  {
+   "rendered": "791",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.2-3y.n",
+   "note": "2-3y: units in the rate"
+  },
+  {
+   "rendered": "97",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.2-3y.absent",
+   "note": "2-3y: units not retrievable"
+  },
+  {
+   "rendered": "12.26 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.2-3y.absent_rate",
+   "note": "2-3y: absence rate"
+  },
+  {
+   "rendered": "10.16 %\u201314.73 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.2-3y.absent_ci",
+   "note": "2-3y: Wilson interval"
+  },
+  {
+   "rendered": "0.48 pp",
+   "file": "expectation.json",
+   "json_path": "across_day_stability.2-3y.range",
+   "note": "2-3y: across-day spread"
+  },
+  {
+   "rendered": "3-4y",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.<key>",
+   "note": "an age-band label"
+  },
+  {
+   "rendered": "674",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.3-4y.n",
+   "note": "3-4y: units in the rate"
+  },
+  {
+   "rendered": "109",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.3-4y.absent",
+   "note": "3-4y: units not retrievable"
+  },
+  {
+   "rendered": "16.17 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.3-4y.absent_rate",
+   "note": "3-4y: absence rate"
+  },
+  {
+   "rendered": "13.59 %\u201319.14 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.3-4y.absent_ci",
+   "note": "3-4y: Wilson interval"
+  },
+  {
+   "rendered": "0.57 pp",
+   "file": "expectation.json",
+   "json_path": "across_day_stability.3-4y.range",
+   "note": "3-4y: across-day spread"
+  },
+  {
+   "rendered": "4-5y",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.<key>",
+   "note": "an age-band label"
+  },
+  {
+   "rendered": "457",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.4-5y.n",
+   "note": "4-5y: units in the rate"
+  },
+  {
+   "rendered": "75",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.4-5y.absent",
+   "note": "4-5y: units not retrievable"
+  },
+  {
+   "rendered": "16.41 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.4-5y.absent_rate",
+   "note": "4-5y: absence rate"
+  },
+  {
+   "rendered": "13.30 %\u201320.08 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.4-5y.absent_ci",
+   "note": "4-5y: Wilson interval"
+  },
+  {
+   "rendered": "0.44 pp",
+   "file": "expectation.json",
+   "json_path": "across_day_stability.4-5y.range",
+   "note": "4-5y: across-day spread"
+  },
+  {
+   "rendered": "5y+",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.<key>",
+   "note": "an age-band label"
+  },
+  {
+   "rendered": "389",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.5y+.n",
+   "note": "5y+: units in the rate"
+  },
+  {
+   "rendered": "68",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.5y+.absent",
+   "note": "5y+: units not retrievable"
+  },
+  {
+   "rendered": "17.48 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.5y+.absent_rate",
+   "note": "5y+: absence rate"
+  },
+  {
+   "rendered": "14.03 %\u201321.57 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.5y+.absent_ci",
+   "note": "5y+: Wilson interval"
+  },
+  {
+   "rendered": "0.58 pp",
+   "file": "expectation.json",
+   "json_path": "across_day_stability.5y+.range",
+   "note": "5y+: across-day spread"
+  },
+  {
+   "rendered": "0-1y",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.<key>",
+   "note": "an age-band label"
+  },
+  {
+   "rendered": "4.08 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.F-forum.0-1y.absent_rate",
+   "note": "F-forum / 0-1y: absence rate"
+  },
+  {
+   "rendered": "49",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.F-forum.0-1y.n",
+   "note": "F-forum / 0-1y: units in the rate"
+  },
+  {
+   "rendered": "5.26 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-article.0-1y.absent_rate",
+   "note": "W-article / 0-1y: absence rate"
+  },
+  {
+   "rendered": "304",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-article.0-1y.n",
+   "note": "W-article / 0-1y: units in the rate"
+  },
+  {
+   "rendered": "4.26 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-other-ns.0-1y.absent_rate",
+   "note": "W-other-ns / 0-1y: absence rate"
+  },
+  {
+   "rendered": "141",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-other-ns.0-1y.n",
+   "note": "W-other-ns / 0-1y: units in the rate"
+  },
+  {
+   "rendered": "1-2y",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.<key>",
+   "note": "an age-band label"
+  },
+  {
+   "rendered": "15.69 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.F-forum.1-2y.absent_rate",
+   "note": "F-forum / 1-2y: absence rate"
+  },
+  {
+   "rendered": "51",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.F-forum.1-2y.n",
+   "note": "F-forum / 1-2y: units in the rate"
+  },
+  {
+   "rendered": "5.79 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-article.1-2y.absent_rate",
+   "note": "W-article / 1-2y: absence rate"
+  },
+  {
+   "rendered": "535",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-article.1-2y.n",
+   "note": "W-article / 1-2y: units in the rate"
+  },
+  {
+   "rendered": "10.44 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-other-ns.1-2y.absent_rate",
+   "note": "W-other-ns / 1-2y: absence rate"
+  },
+  {
+   "rendered": "182",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-other-ns.1-2y.n",
+   "note": "W-other-ns / 1-2y: units in the rate"
+  },
+  {
+   "rendered": "2-3y",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.<key>",
+   "note": "an age-band label"
+  },
+  {
+   "rendered": "13.98 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.F-forum.2-3y.absent_rate",
+   "note": "F-forum / 2-3y: absence rate"
+  },
+  {
+   "rendered": "93",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.F-forum.2-3y.n",
+   "note": "F-forum / 2-3y: units in the rate"
+  },
+  {
+   "rendered": "9.63 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-article.2-3y.absent_rate",
+   "note": "W-article / 2-3y: absence rate"
+  },
+  {
+   "rendered": "519",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-article.2-3y.n",
+   "note": "W-article / 2-3y: units in the rate"
+  },
+  {
+   "rendered": "18.99 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-other-ns.2-3y.absent_rate",
+   "note": "W-other-ns / 2-3y: absence rate"
+  },
+  {
+   "rendered": "179",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-other-ns.2-3y.n",
+   "note": "W-other-ns / 2-3y: units in the rate"
+  },
+  {
+   "rendered": "3-4y",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.<key>",
+   "note": "an age-band label"
+  },
+  {
+   "rendered": "18.80 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.F-forum.3-4y.absent_rate",
+   "note": "F-forum / 3-4y: absence rate"
+  },
+  {
+   "rendered": "117",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.F-forum.3-4y.n",
+   "note": "F-forum / 3-4y: units in the rate"
+  },
+  {
+   "rendered": "15.03 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-article.3-4y.absent_rate",
+   "note": "W-article / 3-4y: absence rate"
+  },
+  {
+   "rendered": "439",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-article.3-4y.n",
+   "note": "W-article / 3-4y: units in the rate"
+  },
+  {
+   "rendered": "17.80 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-other-ns.3-4y.absent_rate",
+   "note": "W-other-ns / 3-4y: absence rate"
+  },
+  {
+   "rendered": "118",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-other-ns.3-4y.n",
+   "note": "W-other-ns / 3-4y: units in the rate"
+  },
+  {
+   "rendered": "4-5y",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.<key>",
+   "note": "an age-band label"
+  },
+  {
+   "rendered": "14.29 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.F-forum.4-5y.absent_rate",
+   "note": "F-forum / 4-5y: absence rate"
+  },
+  {
+   "rendered": "77",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.F-forum.4-5y.n",
+   "note": "F-forum / 4-5y: units in the rate"
+  },
+  {
+   "rendered": "15.18 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-article.4-5y.absent_rate",
+   "note": "W-article / 4-5y: absence rate"
+  },
+  {
+   "rendered": "303",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-article.4-5y.n",
+   "note": "W-article / 4-5y: units in the rate"
+  },
+  {
+   "rendered": "23.38 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-other-ns.4-5y.absent_rate",
+   "note": "W-other-ns / 4-5y: absence rate"
+  },
+  {
+   "rendered": "77",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-other-ns.4-5y.n",
+   "note": "W-other-ns / 4-5y: units in the rate"
+  },
+  {
+   "rendered": "5y+",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.<key>",
+   "note": "an age-band label"
+  },
+  {
+   "rendered": "14.04 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.F-forum.5y+.absent_rate",
+   "note": "F-forum / 5y+: absence rate"
+  },
+  {
+   "rendered": "57",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.F-forum.5y+.n",
+   "note": "F-forum / 5y+: units in the rate"
+  },
+  {
+   "rendered": "17.10 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-article.5y+.absent_rate",
+   "note": "W-article / 5y+: absence rate"
+  },
+  {
+   "rendered": "269",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-article.5y+.n",
+   "note": "W-article / 5y+: units in the rate"
+  },
+  {
+   "rendered": "22.22 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-other-ns.5y+.absent_rate",
+   "note": "W-other-ns / 5y+: absence rate"
+  },
+  {
+   "rendered": "63",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-other-ns.5y+.n",
+   "note": "W-other-ns / 5y+: units in the rate"
+  },
+  {
+   "rendered": "0-1y",
+   "file": "gradient-test.json",
+   "json_path": "results[0].young_band",
+   "note": "youngest band, the gradient's low end"
+  },
+  {
+   "rendered": "5y+",
+   "file": "gradient-test.json",
+   "json_path": "results[0].old_band",
+   "note": "oldest band, the gradient's high end"
+  },
+  {
+   "rendered": "2026-08-16",
+   "file": "gradient-test.json",
+   "json_path": "day",
+   "note": "the day the gradient test was run on"
+  },
+  {
+   "rendered": "pooled",
+   "file": "gradient-test.json",
+   "json_path": "results[0].group",
+   "note": "which population this row tests"
+  },
+  {
+   "rendered": "24",
+   "file": "gradient-test.json",
+   "json_path": "results[0].young[0]",
+   "note": "pooled: young band, absent"
+  },
+  {
+   "rendered": "494",
+   "file": "gradient-test.json",
+   "json_path": "results[0].young[1]",
+   "note": "pooled: young band, in the rate"
+  },
+  {
+   "rendered": "68",
+   "file": "gradient-test.json",
+   "json_path": "results[0].old[0]",
+   "note": "pooled: old band, absent"
+  },
+  {
+   "rendered": "389",
+   "file": "gradient-test.json",
+   "json_path": "results[0].old[1]",
+   "note": "pooled: old band, in the rate"
+  },
+  {
+   "rendered": "4.86 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.0-1y.absent_rate",
+   "note": "pooled: young-band rate"
+  },
+  {
+   "rendered": "17.48 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_age_band.5y+.absent_rate",
+   "note": "pooled: old-band rate"
+  },
+  {
+   "rendered": "3.60",
+   "file": "gradient-test.json",
+   "json_path": "results[0].ratio_old_over_young",
+   "note": "pooled: ratio"
+  },
+  {
+   "rendered": "1.474 \u00d7 10<sup>-9</sup>",
+   "file": "gradient-test.json",
+   "json_path": "results[0].fisher_two_sided_p",
+   "note": "pooled: Fisher p"
+  },
+  {
+   "rendered": "F-forum",
+   "file": "gradient-test.json",
+   "json_path": "results[1].group",
+   "note": "which population this row tests"
+  },
+  {
+   "rendered": "2",
+   "file": "gradient-test.json",
+   "json_path": "results[1].young[0]",
+   "note": "F-forum: young band, absent"
+  },
+  {
+   "rendered": "49",
+   "file": "gradient-test.json",
+   "json_path": "results[1].young[1]",
+   "note": "F-forum: young band, in the rate"
+  },
+  {
+   "rendered": "8",
+   "file": "gradient-test.json",
+   "json_path": "results[1].old[0]",
+   "note": "F-forum: old band, absent"
+  },
+  {
+   "rendered": "57",
+   "file": "gradient-test.json",
+   "json_path": "results[1].old[1]",
+   "note": "F-forum: old band, in the rate"
+  },
+  {
+   "rendered": "4.08 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.F-forum.0-1y.absent_rate",
+   "note": "F-forum: young-band rate"
+  },
+  {
+   "rendered": "14.04 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.F-forum.5y+.absent_rate",
+   "note": "F-forum: old-band rate"
+  },
+  {
+   "rendered": "3.44",
+   "file": "gradient-test.json",
+   "json_path": "results[1].ratio_old_over_young",
+   "note": "F-forum: ratio"
+  },
+  {
+   "rendered": "1.027 \u00d7 10<sup>-1</sup>",
+   "file": "gradient-test.json",
+   "json_path": "results[1].fisher_two_sided_p",
+   "note": "F-forum: Fisher p"
+  },
+  {
+   "rendered": "W-article",
+   "file": "gradient-test.json",
+   "json_path": "results[2].group",
+   "note": "which population this row tests"
+  },
+  {
+   "rendered": "16",
+   "file": "gradient-test.json",
+   "json_path": "results[2].young[0]",
+   "note": "W-article: young band, absent"
+  },
+  {
+   "rendered": "304",
+   "file": "gradient-test.json",
+   "json_path": "results[2].young[1]",
+   "note": "W-article: young band, in the rate"
+  },
+  {
+   "rendered": "46",
+   "file": "gradient-test.json",
+   "json_path": "results[2].old[0]",
+   "note": "W-article: old band, absent"
+  },
+  {
+   "rendered": "269",
+   "file": "gradient-test.json",
+   "json_path": "results[2].old[1]",
+   "note": "W-article: old band, in the rate"
+  },
+  {
+   "rendered": "5.26 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-article.0-1y.absent_rate",
+   "note": "W-article: young-band rate"
+  },
+  {
+   "rendered": "17.10 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-article.5y+.absent_rate",
+   "note": "W-article: old-band rate"
+  },
+  {
+   "rendered": "3.25",
+   "file": "gradient-test.json",
+   "json_path": "results[2].ratio_old_over_young",
+   "note": "W-article: ratio"
+  },
+  {
+   "rendered": "5.758 \u00d7 10<sup>-6</sup>",
+   "file": "gradient-test.json",
+   "json_path": "results[2].fisher_two_sided_p",
+   "note": "W-article: Fisher p"
+  },
+  {
+   "rendered": "W-other-ns",
+   "file": "gradient-test.json",
+   "json_path": "results[3].group",
+   "note": "which population this row tests"
+  },
+  {
+   "rendered": "6",
+   "file": "gradient-test.json",
+   "json_path": "results[3].young[0]",
+   "note": "W-other-ns: young band, absent"
+  },
+  {
+   "rendered": "141",
+   "file": "gradient-test.json",
+   "json_path": "results[3].young[1]",
+   "note": "W-other-ns: young band, in the rate"
+  },
+  {
+   "rendered": "14",
+   "file": "gradient-test.json",
+   "json_path": "results[3].old[0]",
+   "note": "W-other-ns: old band, absent"
+  },
+  {
+   "rendered": "63",
+   "file": "gradient-test.json",
+   "json_path": "results[3].old[1]",
+   "note": "W-other-ns: old band, in the rate"
+  },
+  {
+   "rendered": "4.26 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-other-ns.0-1y.absent_rate",
+   "note": "W-other-ns: young-band rate"
+  },
+  {
+   "rendered": "22.22 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum_band.W-other-ns.5y+.absent_rate",
+   "note": "W-other-ns: old-band rate"
+  },
+  {
+   "rendered": "5.22",
+   "file": "gradient-test.json",
+   "json_path": "results[3].ratio_old_over_young",
+   "note": "W-other-ns: ratio"
+  },
+  {
+   "rendered": "1.739 \u00d7 10<sup>-4</sup>",
+   "file": "gradient-test.json",
+   "json_path": "results[3].fisher_two_sided_p",
+   "note": "W-other-ns: Fisher p"
+  },
+  {
+   "rendered": "37",
+   "file": "figures-derived.json",
+   "json_path": "population.n_encyclopedia_language_editions",
+   "note": "encyclopedia language editions contributing a W-article unit"
+  },
+  {
+   "rendered": "444",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum.F-forum.n",
+   "note": "F-forum: units in the rate"
+  },
+  {
+   "rendered": "64",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum.F-forum.absent",
+   "note": "F-forum: units not retrievable"
+  },
+  {
+   "rendered": "14.41 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum.F-forum.absent_rate",
+   "note": "F-forum: absence rate"
+  },
+  {
+   "rendered": "2,373",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum.W-article.n",
+   "note": "W-article: units in the rate"
+  },
+  {
+   "rendered": "258",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum.W-article.absent",
+   "note": "W-article: units not retrievable"
+  },
+  {
+   "rendered": "10.87 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum.W-article.absent_rate",
+   "note": "W-article: absence rate"
+  },
+  {
+   "rendered": "763",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum.W-other-ns.n",
+   "note": "W-other-ns: units in the rate"
+  },
+  {
+   "rendered": "114",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum.W-other-ns.absent",
+   "note": "W-other-ns: units not retrievable"
+  },
+  {
+   "rendered": "14.94 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.by_stratum.W-other-ns.absent_rate",
+   "note": "W-other-ns: absence rate"
+  },
+  {
+   "rendered": "249",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.excluded.arm_B_truncated",
+   "note": "control-arm identifiers excluded"
+  },
+  {
+   "rendered": "248",
+   "file": "figures-derived.json",
+   "json_path": "control_arm.n_not_resolving_on_newest_day",
+   "note": "control identifiers that do not resolve"
+  },
+  {
+   "rendered": "249",
+   "file": "figures-derived.json",
+   "json_path": "control_arm.n",
+   "note": "control identifiers in total"
+  },
+  {
+   "rendered": "40",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.excluded.indeterminate",
+   "note": "observations excluded as INDETERMINATE, control arm not counted"
+  },
+  {
+   "rendered": "7",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-16.excluded.undatable",
+   "note": "identifiers with no decodable creation time"
+  },
+  {
+   "rendered": "6",
+   "file": "figures-derived.json",
+   "json_path": "n_days",
+   "note": "measured days in this bundle"
+  },
+  {
+   "rendered": "7",
+   "file": "figures-derived.json",
+   "json_path": "movement.n_changed_raw",
+   "note": "non-control identifiers with more than one determinate state, raw"
+  },
+  {
+   "rendered": "3,620",
+   "file": "figures-derived.json",
+   "json_path": "movement.n_noncontrol",
+   "note": "non-control identifiers in the panel"
+  },
+  {
+   "rendered": "5",
+   "file": "figures-derived.json",
+   "json_path": "movement.n_changed_corrected",
+   "note": "the same count after the refuted-reading overlay"
+  },
+  {
+   "rendered": "baseline",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "2026-08-12",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "2026-08-13",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "2026-08-14",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "2026-08-15",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "2026-08-16",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "baseline",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "42",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.all_units.baseline.n",
+   "note": "baseline: indeterminate, all units"
+  },
+  {
+   "rendered": "1.09 %",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.all_units.baseline.share_of_run",
+   "note": "baseline: indeterminate share of the run"
+  },
+  {
+   "rendered": "39",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.noncontrol.baseline.n",
+   "note": "baseline: indeterminate, non-control"
+  },
+  {
+   "rendered": "2026-08-12",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "40",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.all_units.2026-08-12.n",
+   "note": "2026-08-12: indeterminate, all units"
+  },
+  {
+   "rendered": "1.03 %",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.all_units.2026-08-12.share_of_run",
+   "note": "2026-08-12: indeterminate share of the run"
+  },
+  {
+   "rendered": "38",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.noncontrol.2026-08-12.n",
+   "note": "2026-08-12: indeterminate, non-control"
+  },
+  {
+   "rendered": "2026-08-13",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "47",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.all_units.2026-08-13.n",
+   "note": "2026-08-13: indeterminate, all units"
+  },
+  {
+   "rendered": "1.21 %",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.all_units.2026-08-13.share_of_run",
+   "note": "2026-08-13: indeterminate share of the run"
+  },
+  {
+   "rendered": "44",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.noncontrol.2026-08-13.n",
+   "note": "2026-08-13: indeterminate, non-control"
+  },
+  {
+   "rendered": "2026-08-14",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "40",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.all_units.2026-08-14.n",
+   "note": "2026-08-14: indeterminate, all units"
+  },
+  {
+   "rendered": "1.03 %",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.all_units.2026-08-14.share_of_run",
+   "note": "2026-08-14: indeterminate share of the run"
+  },
+  {
+   "rendered": "37",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.noncontrol.2026-08-14.n",
+   "note": "2026-08-14: indeterminate, non-control"
+  },
+  {
+   "rendered": "2026-08-15",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "49",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.all_units.2026-08-15.n",
+   "note": "2026-08-15: indeterminate, all units"
+  },
+  {
+   "rendered": "1.27 %",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.all_units.2026-08-15.share_of_run",
+   "note": "2026-08-15: indeterminate share of the run"
+  },
+  {
+   "rendered": "44",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.noncontrol.2026-08-15.n",
+   "note": "2026-08-15: indeterminate, non-control"
+  },
+  {
+   "rendered": "2026-08-16",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the label of a measured day"
+  },
+  {
+   "rendered": "44",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.all_units.2026-08-16.n",
+   "note": "2026-08-16: indeterminate, all units"
+  },
+  {
+   "rendered": "1.14 %",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.all_units.2026-08-16.share_of_run",
+   "note": "2026-08-16: indeterminate share of the run"
+  },
+  {
+   "rendered": "40",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.noncontrol.2026-08-16.n",
+   "note": "2026-08-16: indeterminate, non-control"
+  },
+  {
+   "rendered": "0",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.pair_overlaps[0].n_shared_indeterminate",
+   "note": "baseline \u2229 2026-08-12: identifiers indeterminate on both"
+  },
+  {
+   "rendered": "1",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.pair_overlaps[1].n_shared_indeterminate",
+   "note": "baseline \u2229 2026-08-13: identifiers indeterminate on both"
+  },
+  {
+   "rendered": "0",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.pair_overlaps[2].n_shared_indeterminate",
+   "note": "baseline \u2229 2026-08-14: identifiers indeterminate on both"
+  },
+  {
+   "rendered": "1",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.pair_overlaps[3].n_shared_indeterminate",
+   "note": "baseline \u2229 2026-08-15: identifiers indeterminate on both"
+  },
+  {
+   "rendered": "0",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.pair_overlaps[4].n_shared_indeterminate",
+   "note": "baseline \u2229 2026-08-16: identifiers indeterminate on both"
+  },
+  {
+   "rendered": "0",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.pair_overlaps[5].n_shared_indeterminate",
+   "note": "2026-08-12 \u2229 2026-08-13: identifiers indeterminate on both"
+  },
+  {
+   "rendered": "1",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.pair_overlaps[6].n_shared_indeterminate",
+   "note": "2026-08-12 \u2229 2026-08-14: identifiers indeterminate on both"
+  },
+  {
+   "rendered": "1",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.pair_overlaps[7].n_shared_indeterminate",
+   "note": "2026-08-12 \u2229 2026-08-15: identifiers indeterminate on both"
+  },
+  {
+   "rendered": "1",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.pair_overlaps[8].n_shared_indeterminate",
+   "note": "2026-08-12 \u2229 2026-08-16: identifiers indeterminate on both"
+  },
+  {
+   "rendered": "1",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.pair_overlaps[9].n_shared_indeterminate",
+   "note": "2026-08-13 \u2229 2026-08-14: identifiers indeterminate on both"
+  },
+  {
+   "rendered": "0",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.pair_overlaps[10].n_shared_indeterminate",
+   "note": "2026-08-13 \u2229 2026-08-15: identifiers indeterminate on both"
+  },
+  {
+   "rendered": "2",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.pair_overlaps[11].n_shared_indeterminate",
+   "note": "2026-08-13 \u2229 2026-08-16: identifiers indeterminate on both"
+  },
+  {
+   "rendered": "0",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.pair_overlaps[12].n_shared_indeterminate",
+   "note": "2026-08-14 \u2229 2026-08-15: identifiers indeterminate on both"
+  },
+  {
+   "rendered": "1",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.pair_overlaps[13].n_shared_indeterminate",
+   "note": "2026-08-14 \u2229 2026-08-16: identifiers indeterminate on both"
+  },
+  {
+   "rendered": "0",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.pair_overlaps[14].n_shared_indeterminate",
+   "note": "2026-08-15 \u2229 2026-08-16: identifiers indeterminate on both"
+  },
+  {
+   "rendered": "15",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.n_day_pairs",
+   "note": "day-pairs"
+  },
+  {
+   "rendered": "2",
+   "file": "figures-derived.json",
+   "json_path": "indeterminate.max_pair_overlap",
+   "note": "the largest overlap of any day-pair"
+  }
+ ]
+}

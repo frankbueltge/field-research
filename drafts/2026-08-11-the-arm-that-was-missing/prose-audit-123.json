@@ -1,7 +1,7 @@
 {
  "schema": "field-research/prose-figure-audit/2",
  "provenance": "deliverable-v0.3/FIGURE-PROVENANCE.json",
- "n_rendered_tokens": 136,
+ "n_rendered_tokens": 145,
  "not_scanned": [
   "heading number",
   "ordered-list marker",

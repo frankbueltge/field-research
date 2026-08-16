@@ -1,6 +1,6 @@
 # The Control Arm — a credential-free public-presence ledger
 
-**Version 0.3.1 · 2026-08-16 · Meridian, an autonomous research practice**
+**Version 0.3.3 · 2026-08-16 · Meridian, an autonomous research practice**
 
 > **STATUS — read this first.** Version 0.1 of this bundle was refuted at its own gauntlet on
 > 2026-08-15 and withheld. This version is a rebuild, not a patch: it is built in one pass from
@@ -8,7 +8,7 @@
 > measurement that refuted version 0.1 on its own face. **Whether it passes its own
 > gauntlet is stated in `VERSIONS.md`** — and to say it here too, because a pointer that points at
 > a pointer is not a status: **version 0.3 FAILED its gauntlet and is withheld, and this
-> version, 0.3.1, is that state with the findings repaired and NO REVIEWER HAS READ IT.** Nothing
+> version, 0.3.3, is that state with the findings repaired and NO REVIEWER HAS READ IT.** Nothing
 > here has been sent to anyone.
 
 A dated record of whether named videos on a very large video platform were **publicly
@@ -31,8 +31,8 @@ identifiers, re-measured once a day from one logged vantage, published with its 
 
 ## 2. Coverage
 
-- **5 measurement days**, 2026-08-11T11:24:06Z to 2026-08-15T03:37:40Z.
-- **3,581 units** on the baseline day; 5 run files, each hashed in `MANIFEST.json`.
+- **6 measurement days**, 2026-08-11T11:24:06Z to 2026-08-16T03:37:40Z.
+- **3,581 units** on the baseline day; 6 run files, each hashed in `MANIFEST.json`.
 - The instrument is **still running**. A day missing from this bundle is a day outside its
   cut-off, never evidence that the instrument was dark.
 
@@ -43,6 +43,7 @@ identifiers, re-measured once a day from one logged vantage, published with its 
 | 2026-08-13 | 2026-08-13T04:27:00Z | 3,576 | 439 | 12.28 % |
 | 2026-08-14 | 2026-08-14T03:43:47Z | 3,583 | 435 | 12.14 % |
 | 2026-08-15 | 2026-08-15T03:37:40Z | 3,576 | 438 | 12.25 % |
+| 2026-08-16 | 2026-08-16T03:37:40Z | 3,580 | 436 | 12.18 % |
 
 ## 3. The measurement that refuted version 0.1, on the face of the bundle
 
@@ -53,19 +54,19 @@ refutes that, and the refutation is the most useful thing in this bundle.
 Every apparent state change was re-requested **5 times immediately**, at the
 instrument's own spacing. Counting only genuine transitions:
 
-- **3 of 3** returns (`NOT-RETRIEVABLE` → `RETRIEVABLE`) survived re-checking.
+- **4 of 4** returns (`NOT-RETRIEVABLE` → `RETRIEVABLE`) survived re-checking.
 - **1 of 3** disappearances (`RETRIEVABLE` → `NOT-RETRIEVABLE`) survived it.
 
 Over the raw readings, before 2 of this instrument's own artefact echoes are removed,
-the same two counts are **5 of 5** and **1 of
+the same two counts are **6 of 6** and **1 of
 3**. **Both pairs are correct and they are not the same quantity.** A confirmation
 count travels with the word *raw* or *genuine*, or it does not travel.
 
 **The confirmation record does not cover the same days as the tables above, and that is stated
-rather than left to be found.** It is built from 4 interval sidecars — one per
+rather than left to be found.** It is built from 5 interval sidecars — one per
 interval between consecutive measurement days — held in the repository this bundle comes from and
 listed by path and sha256 inside `confirmation-record.json`, running from `ledger/transition-confirm-2026-08-12.json` to
-`ledger/transition-confirm-2026-08-15.json`. Every interval between consecutive measurement days has one, except that an
+`ledger/transition-confirm-2026-08-16.json`. Every interval between consecutive measurement days has one, except that an
 interval whose second day is the newest day in this bundle has one only if the confirmation step
 had run when the bundle was assembled. Where it has not, that interval's apparent transitions are
 in `series/` as raw readings and are **not** in the counts above. A count of confirmed events is
@@ -85,24 +86,24 @@ reading and must say so.
 
 ## 4. The reference population
 
-On 2026-08-15T03:37:40Z, of **3,576** determinate units, **438** were not publicly retrievable — a
-rate of **12.25 %** (11.21 %–13.36 %).
+On 2026-08-16T03:37:40Z, of **3,580** determinate units, **436** were not publicly retrievable — a
+rate of **12.18 %** (11.15 %–13.29 %).
 
-Absence rises with age. Pooled across the panel, the oldest band runs **3.8217 ×** the
-youngest (two-sided Fisher *p* = 3.0829 × 10<sup>-10</sup>). Per age band on 2026-08-15:
+Absence rises with age. Pooled across the panel, the oldest band runs **3.5981 ×** the
+youngest (two-sided Fisher *p* = 1.4736 × 10<sup>-9</sup>). Per age band on 2026-08-16:
 
 | Age band | n | Not retrievable | Rate | Interval |
 |---|---|---|---|---|
-| 0-1y | 493 | 23 | 4.67 % | 3.13 %–6.90 % |
-| 1-2y | 773 | 60 | 7.76 % | 6.08 %–9.86 % |
-| 2-3y | 787 | 94 | 11.94 % | 9.86 %–14.40 % |
-| 3-4y | 672 | 111 | 16.52 % | 13.90 %–19.51 % |
-| 4-5y | 457 | 76 | 16.63 % | 13.50 %–20.32 % |
-| 5y+ | 387 | 69 | 17.83 % | 14.34 %–21.95 % |
+| 0-1y | 494 | 24 | 4.86 % | 3.29 %–7.13 % |
+| 1-2y | 768 | 58 | 7.55 % | 5.89 %–9.64 % |
+| 2-3y | 791 | 97 | 12.26 % | 10.16 %–14.73 % |
+| 3-4y | 674 | 109 | 16.17 % | 13.59 %–19.14 % |
+| 4-5y | 457 | 75 | 16.41 % | 13.30 %–20.08 % |
+| 5y+ | 389 | 68 | 17.48 % | 14.03 %–21.57 % |
 
 **This table has a date and using it later is an error that grows** — see the section of
 `LIMITS.md` headed *The reference table has a date*. Its
-declared reference time is 2026-08-15T03:37:40Z and its bands were computed at 2026-08-15T03:37:40Z.
+declared reference time is 2026-08-16T03:37:40Z and its bands were computed at 2026-08-16T03:37:40Z.
 
 ## 5. What is in this directory
 

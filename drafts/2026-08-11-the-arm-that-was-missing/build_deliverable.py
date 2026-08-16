@@ -95,6 +95,9 @@ def sha256(path):
     return h.hexdigest()
 
 
+REPLICATE_MARK = "-second-probe"
+
+
 def discover_runs():
     """Every complete run file of the window, oldest first. A .partial is never a run."""
     out = []
@@ -156,11 +159,34 @@ def main():
              "utc_end": base["run_utc_end"],
              "sha256": sha256(BASELINE),
              "obs": base["observations"]}]
+    # Session 124: TWO PROBES RAN ON 2026-08-16 (`DOUBLE-PROBE-122.md`). Both are complete,
+    # both are in the ledger, and both were being discovered here as separate "measurement days"
+    # with the SAME label - which produced a manifest claiming seven measurement days over six
+    # days of measurement, a series carrying the label twice, and an `expectation.json` whose
+    # cells for that day silently came from whichever run happened to be processed last. The
+    # accident that cost the endpoint a doubled request load was also corrupting the artifact,
+    # and nothing said so.
+    #
+    # The rule, stated rather than inferred: a run file whose name marks it a replicate is NOT a
+    # measurement day. It is recorded in the manifest as a replicate, so it stays visible and
+    # checkable, and the canonical run for that day is the one the record designates. Any
+    # duplicate label that survives this is a hard error - the build refuses rather than
+    # quietly picking one.
+    replicates = []
     for p, d in runs:
         if d["run_utc_start"] <= base["run_utc_start"]:
             continue          # the baseline's own component runs
         if a.cutoff and d["run_utc_start"] > a.cutoff:
             continue          # session 122: the freeze, stated rather than incidental
+        if REPLICATE_MARK in os.path.basename(p):
+            replicates.append({"file": p, "label": d["run_utc_start"][:10],
+                               "run_utc_start": d["run_utc_start"],
+                               "sha256": sha256(p),
+                               "why_not_a_day": ("a second complete pass over the same manifest on "
+                                                 "the same UTC day; see DOUBLE-PROBE-122.md. It is "
+                                                 "evidence about the instrument, not an additional "
+                                                 "day of the series.")})
+            continue
         days.append({"label": d["run_utc_start"][:10],
                      "file": p,
                      "run_id": d["run_id"],
@@ -174,6 +200,18 @@ def main():
                      "vantage_country": d["vantage"]["country"],
                      "sha256": sha256(p),
                      "obs": d["observations"]})
+
+    _seen = {}
+    for _d in days:
+        _seen.setdefault(_d["label"], []).append(_d["file"])
+    _dupes = {k: v for k, v in _seen.items() if len(v) > 1}
+    if _dupes:
+        raise SystemExit(
+            "refusing to build: two runs claim the same measurement day, and a bundle that "
+            "silently keeps one of them is a bundle whose cells nobody can trace.\n"
+            + json.dumps(_dupes, indent=1)
+            + "\nDesignate the replicate by renaming it to carry '%s', the way "
+              "DOUBLE-PROBE-122.md designated the second probe of 2026-08-16." % REPLICATE_MARK)
         # First gauntlet, E11: one archived run file carries an unfilled placeholder in its own
         # `run_id`, inherited from a manifest at session 113. The archived file is primary and is
         # never edited; the bundle must not repeat the placeholder as though it were a value.
@@ -493,73 +531,11 @@ def main():
             f"V1 regression: {u['vid']} is banded at a time the reference table does not declare")
     json.dump(ref, open(os.path.join(a.out, "reference-baseline.json"), "w"), indent=1)
 
-    # ---- the generated tables page -----------------------------------------------------
-    # Session 119's lesson 5, applied: a document must not quote figures a human typed from
-    # a JSON file. Every table below is written by this script from the JSON it just wrote,
-    # so a rebuild after a new measurement day cannot leave a stale number behind.
-    manifest_time = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+    # ---- the gradient's own test, computed here so no one types it ---------------------
+    # Youngest band against oldest band, pooled and inside each stratum. Written to its own file
+    # BEFORE the tables page is rendered, because as of session 124 the page is built by reading
+    # the bundle's files rather than from the variables in this function.
     newest_label = days[-1]["label"]
-
-    def pct(x):
-        return "—" if x is None else f"{100 * x:.2f} %"
-
-    L = []
-    L.append("# Figures — generated, do not hand-edit\n")
-    L.append(f"*Written by `build_deliverable.py` at {manifest_time}. "
-             f"Every number on this page comes from `expectation.json` and "
-             f"`series/presence-series.json`, which come from the run files named in "
-             f"`MANIFEST.json`. Rebuild the bundle and this page rebuilds with it.*\n")
-
-    L.append("## 1. The panel, and what was measured each day\n")
-    L.append("| day | measurement started (UTC) | units requested | in the rate | "
-             "publicly absent | absent rate | 95 % Wilson |")
-    L.append("|---|---|---|---|---|---|---|")
-    for d in days:
-        lbl = d["label"]
-        c = per_day[lbl]["pooled"]
-        L.append(f"| {lbl} | {d['utc_start']} | {d.get('requested', len(d['obs']))} | "
-                 f"{c['n']} | {c['absent']} | {pct(c['absent_rate'])} | "
-                 f"[{pct(c['absent_ci'][0])}, {pct(c['absent_ci'][1])}] |")
-    L.append("")
-    ps = stability["__pooled__"]
-    L.append(f"**Across {ps['days']} measured days the pooled public-absence rate of this panel "
-             f"moves between {pct(ps['min'])} and {pct(ps['max'])} — a spread of "
-             f"{100 * ps['range']:.2f} percentage points on the RAW panel.** On the balanced "
-             f"panel of units determinate on every day the spread is 0.0577 pp; the raw figure is "
-             f"larger and the excess is which units fell out as INDETERMINATE, not anything about "
-             f"the platform (first gauntlet, E17). This is the same panel measured "
-             f"again, so it is the instrument's test-retest reproducibility and not sampling "
-             f"error (`LIMITS.md` §5).\n")
-
-    L.append("## 2. Public absence by the age of the video — newest day\n")
-    L.append(f"*Day: {newest_label}. Ages are decoded from the identifier (`LIMITS.md` §6).*\n")
-    L.append("| age band | in the rate | publicly absent | absent rate | 95 % Wilson | "
-             "spread across all measured days |")
-    L.append("|---|---|---|---|---|---|")
-    for b in [band_label(*x) for x in AGE_BANDS]:
-        c = per_day[newest_label]["by_age_band"].get(b)
-        if not c:
-            continue
-        sp = stability.get(b)
-        spread = "—" if not sp else f"{100 * sp['range']:.2f} pp"
-        L.append(f"| {b} | {c['n']} | {c['absent']} | {pct(c['absent_rate'])} | "
-                 f"[{pct(c['absent_ci'][0])}, {pct(c['absent_ci'][1])}] | {spread} |")
-    L.append("")
-
-    L.append("## 3. The same gradient inside each source stratum\n")
-    L.append("*If the gradient were an artefact of which source the older identifiers come "
-             "from, it would not survive this split.*\n")
-    strata = sorted(per_day[newest_label]["by_stratum_band"].keys())
-    L.append("| age band | " + " | ".join(strata) + " |")
-    L.append("|---|" + "---|" * len(strata))
-    for b in [band_label(*x) for x in AGE_BANDS]:
-        cells_ = []
-        for s in strata:
-            c = per_day[newest_label]["by_stratum_band"].get(s, {}).get(b)
-            cells_.append("—" if not c else f"{pct(c['absent_rate'])} (n={c['n']})")
-        L.append(f"| {b} | " + " | ".join(cells_) + " |")
-    L.append("")
-
     # The gradient's own test, computed here so no one types it. Youngest band against
     # oldest band, pooled and inside each stratum.
     young, old = band_label(*AGE_BANDS[0]), band_label(*AGE_BANDS[-1])
@@ -587,85 +563,20 @@ def main():
                           "monotone; the endpoints are what this table tests"),
                "results": grad},
               open(os.path.join(a.out, "gradient-test.json"), "w"), indent=1)
-    L.append(f"**The gradient's own test — {young} against {old} on {newest_label}, two-sided "
-             f"Fisher exact.** The pooled progression is not strictly monotone: it rises across "
-             f"the bands with one flat step near four years, and the endpoints are what is "
-             f"tested here.\n")
-    L.append(f"| group | {young} | {old} | ratio | Fisher two-sided p |")
-    L.append("|---|---|---|---|---|")
-    for g in grad:
-        r = g["ratio_old_over_young"]
-        ratio = "—" if r is None else f"{r:.2f} ×"
-        yn, yd = g["young"]
-        on, od = g["old"]
-        L.append(f"| {g['group']} | {yn}/{yd} ({pct(yn / yd)}) | {on}/{od} ({pct(on / od)}) "
-                 f"| {ratio} | {g['fisher_two_sided_p']:.3e} |")
-    L.append("")
 
-    L.append("## 4. Where the identifiers come from — newest day\n")
-    L.append("| stratum | what it is | in the rate | publicly absent | absent rate |")
-    L.append("|---|---|---|---|---|")
-    what = {"W-article": "article space of 37 encyclopedia language editions",
-            "W-other-ns": "non-article namespaces of the same editions",
-            "F-forum": "public comments and stories of one technology forum"}
-    for s in strata:
-        c = per_day[newest_label]["by_stratum"][s]
-        L.append(f"| `{s}` | {what.get(s, '—')} | {c['n']} | {c['absent']} | "
-                 f"{pct(c['absent_rate'])} |")
-    L.append("")
-    exc = per_day[newest_label]["excluded"]
-    L.append(f"**Excluded from every rate on the newest day:** "
-             f"{exc['arm_B_truncated']} identifiers of the `B-truncated` control arm, which are "
-             f"display-truncated strings, 248 of 249 of which do not resolve (one is a real "
-             f"video predating the current identifier scheme — first gauntlet, E7); "
-             f"{exc['indeterminate']} observations that "
-             f"ended in a transport failure or an unexpected status (`INDETERMINATE`); and "
-             f"{exc['undatable']} identifiers that carry no decodable creation time and are "
-             f"therefore absent from the age-banded tables only.\n")
-
-    L.append("## 5. How much this panel moves at all\n")
-    changed = []
-    for u in ordered:
-        if u["arm"] == "B-truncated":
-            continue
-        det = [u["states"].get(l) for l in labels]
-        det = [x for x in det if x in ("RETRIEVABLE", "NOT-RETRIEVABLE")]
-        detc = [u["states_corrected"].get(l) for l in labels]
-        detc = [x for x in detc if x in ("RETRIEVABLE", "NOT-RETRIEVABLE")]
-        if len(set(det)) > 1 or len(set(detc)) > 1:
-            changed.append((u, len(set(det)) > 1, len(set(detc)) > 1))
-    L.append(f"Over {len(labels)} measured days, **{sum(1 for c in changed if c[1])} of "
-             f"{sum(1 for u in ordered if u['arm'] != 'B-truncated')}** non-control identifiers "
-             f"show more than one determinate state in the raw record, and "
-             f"**{sum(1 for c in changed if c[2])}** do so after the refuted-reading overlay is "
-             f"applied. The identifiers are listed so the claim can be checked:\n")
-    L.append("| video id | arm | " + " | ".join(labels) + " | changes after overlay |")
-    L.append("|---|---|" + "---|" * len(labels) + "---|")
-    for u, raw_ch, cor_ch in changed:
-        L.append(f"| `{u['vid']}` | {u['arm']} | "
-                 + " | ".join(u["states"].get(l, "—") for l in labels)
-                 + f" | {'yes' if cor_ch else 'no — refuted reading, see overlay'} |")
-    L.append("")
-
-    L.append("## 6. Transport noise\n")
-    ind = {}
-    for l in labels:
-        ind[l] = set(u["vid"] for u in ordered if u["states"].get(l) == "INDETERMINATE")
-    L.append("| day | INDETERMINATE | share of the run |")
-    L.append("|---|---|---|")
-    for l in labels:
-        tot = sum(1 for u in ordered if u["states"].get(l))
-        L.append(f"| {l} | {len(ind[l])} | {pct(len(ind[l]) / tot if tot else None)} |")
-    L.append("")
-    pairs = [(a, b) for i, a in enumerate(labels) for b in labels[i + 1:]]
-    ov = [(a, b, len(ind[a] & ind[b])) for a, b in pairs]
-    L.append(f"**The same identifier is almost never indeterminate twice.** Across the "
-             f"{len(pairs)} day-pairs the overlap is "
-             f"{', '.join(str(o[2]) for o in ov)} identifiers respectively. Transport noise is "
-             f"therefore a property of the request, not of the video — which is why "
-             f"`INDETERMINATE` is excluded from rates rather than read as weak absence.\n")
-
-    open(os.path.join(a.out, "FIGURES.md"), "w").write("\n".join(L) + "\n")
+    # ---- the generated tables page -----------------------------------------------------
+    # Session 124, CONDITIONS-123.md binding item 1. This page used to be assembled here, from
+    # the same in-memory dicts that had just been written to `expectation.json`. That made the
+    # page and the data file incapable of disagreeing - which sounds like a guarantee and is the
+    # opposite of one: nothing checked that a cell came from the field its sentence names, and
+    # three numbers on the page (0.0577 pp, 248 of 249, 37 language editions) were literals typed
+    # into the f-strings, vouched for by the machine generation around them. `figures_page.py`
+    # rebuilds the page from the files this bundle ships, through `figures.py`, so every figure
+    # records the file and JSON path it was read from.
+    import figures_page
+    page_fx = figures_page.build(a.out, os.path.dirname(os.path.abspath(__file__)),
+                                 built_at=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+    page_fx.write(os.path.join(a.out, "FIGURES-PROVENANCE.json"))
 
     # ---- provenance --------------------------------------------------------------------
     manifest = {
@@ -687,6 +598,11 @@ def main():
                              "rows_applied": len(overlay_used)},
         "n_units": len(ordered),
         "n_days": len(days),
+        # Session 124: complete second passes over the same manifest on a day already in
+        # the series. Named here rather than dropped silently, because a run that exists
+        # and is not in the bundle is exactly the kind of absence this practice refuses to
+        # leave unstated.
+        "replicate_runs": replicates,
     }
     json.dump(manifest, open(os.path.join(a.out, "MANIFEST.json"), "w"), indent=1)
 

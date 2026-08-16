@@ -1,86 +1,92 @@
 # Figures — generated, do not hand-edit
 
-*Written by `build_deliverable.py` at 2026-08-16T04:14:56Z. Every number on this page comes from `expectation.json` and `series/presence-series.json`, which come from the run files named in `MANIFEST.json`. Rebuild the bundle and this page rebuilds with it.*
+*Written by `figures_page.py` at 2026-08-16T17:30:13Z. **Every number on this page is fetched from a named field of a file in this bundle** — `expectation.json`, `gradient-test.json`, `series/presence-series.json`, or `figures-derived.json`, which is built from the series — and the field is recorded in `FIGURE-PROVENANCE.json`. Before version 0.3.2 this page was generated from variables rather than from files, and three of its numbers were literals typed into the generator; see `VERSIONS.md`.*
 
 ## 1. The panel, and what was measured each day
 
 | day | measurement started (UTC) | units requested | in the rate | publicly absent | absent rate | 95 % Wilson |
 |---|---|---|---|---|---|---|
-| baseline | 2026-08-11T11:24:06Z | 3869 | 3581 | 437 | 12.20 % | [11.17 %, 13.32 %] |
-| 2026-08-12 | 2026-08-12T03:40:28Z | 3869 | 3582 | 437 | 12.20 % | [11.17 %, 13.31 %] |
-| 2026-08-13 | 2026-08-13T04:27:00Z | 3869 | 3576 | 439 | 12.28 % | [11.24 %, 13.39 %] |
-| 2026-08-14 | 2026-08-14T03:43:47Z | 3869 | 3583 | 435 | 12.14 % | [11.11 %, 13.25 %] |
-| 2026-08-15 | 2026-08-15T03:37:40Z | 3869 | 3576 | 438 | 12.25 % | [11.21 %, 13.36 %] |
+| baseline | 2026-08-11T11:24:06Z | 3,869 | 3,581 | 437 | 12.20 % | [11.17 %–13.32 %] |
+| 2026-08-12 | 2026-08-12T03:40:28Z | 3,869 | 3,582 | 437 | 12.20 % | [11.17 %–13.31 %] |
+| 2026-08-13 | 2026-08-13T04:27:00Z | 3,869 | 3,576 | 439 | 12.28 % | [11.24 %–13.39 %] |
+| 2026-08-14 | 2026-08-14T03:43:47Z | 3,869 | 3,583 | 435 | 12.14 % | [11.11 %–13.25 %] |
+| 2026-08-15 | 2026-08-15T03:37:40Z | 3,869 | 3,576 | 438 | 12.25 % | [11.21 %–13.36 %] |
+| 2026-08-16 | 2026-08-16T03:37:40Z | 3,869 | 3,580 | 436 | 12.18 % | [11.15 %–13.29 %] |
 
-**Across 5 measured days the pooled public-absence rate of this panel moves between 12.14 % and 12.28 % — a spread of 0.14 percentage points on the RAW panel.** On the balanced panel of units determinate on every day the spread is 0.0577 pp; the raw figure is larger and the excess is which units fell out as INDETERMINATE, not anything about the platform (first gauntlet, E17). This is the same panel measured again, so it is the instrument's test-retest reproducibility and not sampling error (`LIMITS.md` §5).
+**Across 6 measured days the pooled public-absence rate of this panel moves between 12.14 % and 12.28 % — a spread of 0.14 pp on the RAW panel.**
+On the balanced panel — the 3,386 non-control identifiers that are determinate on every measured day — the spread is 0.0886 pp. The raw figure is 1.53× larger, and the excess is which units fell out as `INDETERMINATE`, not anything about the platform (first gauntlet, E17). This is the same panel measured again, so it is the instrument's test-retest reproducibility and not sampling error (`LIMITS.md`).
 
 ## 2. Public absence by the age of the video — newest day
 
-*Day: 2026-08-15. Ages are decoded from the identifier (`LIMITS.md` §6).*
+*Day: 2026-08-16. Ages are decoded from the identifier (`LIMITS.md`).*
 
 | age band | in the rate | publicly absent | absent rate | 95 % Wilson | spread across all measured days |
 |---|---|---|---|---|---|
-| 0-1y | 493 | 23 | 4.67 % | [3.13 %, 6.90 %] | 0.25 pp |
-| 1-2y | 773 | 60 | 7.76 % | [6.08 %, 9.86 %] | 0.26 pp |
-| 2-3y | 787 | 94 | 11.94 % | [9.86 %, 14.40 %] | 0.48 pp |
-| 3-4y | 672 | 111 | 16.52 % | [13.90 %, 19.51 %] | 0.57 pp |
-| 4-5y | 457 | 76 | 16.63 % | [13.50 %, 20.32 %] | 0.44 pp |
-| 5y+ | 387 | 69 | 17.83 % | [14.34 %, 21.95 %] | 0.54 pp |
+| 0-1y | 494 | 24 | 4.86 % | [3.29 %–7.13 %] | 0.25 pp |
+| 1-2y | 768 | 58 | 7.55 % | [5.89 %–9.64 %] | 0.32 pp |
+| 2-3y | 791 | 97 | 12.26 % | [10.16 %–14.73 %] | 0.48 pp |
+| 3-4y | 674 | 109 | 16.17 % | [13.59 %–19.14 %] | 0.57 pp |
+| 4-5y | 457 | 75 | 16.41 % | [13.30 %–20.08 %] | 0.44 pp |
+| 5y+ | 389 | 68 | 17.48 % | [14.03 %–21.57 %] | 0.58 pp |
 
 ## 3. The same gradient inside each source stratum
 
 *If the gradient were an artefact of which source the older identifiers come from, it would not survive this split.*
 
-| age band | F-forum | W-article | W-other-ns |
+| age band | `F-forum` | `W-article` | `W-other-ns` |
 |---|---|---|---|
-| 0-1y | 4.00 % (n=50) | 4.95 % (n=303) | 4.29 % (n=140) |
-| 1-2y | 15.38 % (n=52) | 6.12 % (n=539) | 10.44 % (n=182) |
-| 2-3y | 13.68 % (n=95) | 9.34 % (n=514) | 18.54 % (n=178) |
-| 3-4y | 19.49 % (n=118) | 15.23 % (n=440) | 18.42 % (n=114) |
-| 4-5y | 15.58 % (n=77) | 15.13 % (n=304) | 23.68 % (n=76) |
-| 5y+ | 14.29 % (n=56) | 17.60 % (n=267) | 21.88 % (n=64) |
+| 0-1y | 4.08 % (n=49) | 5.26 % (n=304) | 4.26 % (n=141) |
+| 1-2y | 15.69 % (n=51) | 5.79 % (n=535) | 10.44 % (n=182) |
+| 2-3y | 13.98 % (n=93) | 9.63 % (n=519) | 18.99 % (n=179) |
+| 3-4y | 18.80 % (n=117) | 15.03 % (n=439) | 17.80 % (n=118) |
+| 4-5y | 14.29 % (n=77) | 15.18 % (n=303) | 23.38 % (n=77) |
+| 5y+ | 14.04 % (n=57) | 17.10 % (n=269) | 22.22 % (n=63) |
 
-**The gradient's own test — 0-1y against 5y+ on 2026-08-15, two-sided Fisher exact.** The pooled progression is not strictly monotone: it rises across the bands with one flat step near four years, and the endpoints are what is tested here.
+**The gradient's own test — 0-1y against 5y+ on 2026-08-16, two-sided Fisher exact.** The pooled progression is not strictly monotone: it rises across the bands with one flat step near four years, and the endpoints are what is tested here.
 
 | group | 0-1y | 5y+ | ratio | Fisher two-sided p |
 |---|---|---|---|---|
-| pooled | 23/493 (4.67 %) | 69/387 (17.83 %) | 3.82 × | 3.083e-10 |
-| F-forum | 2/50 (4.00 %) | 8/56 (14.29 %) | 3.57 × | 9.832e-02 |
-| W-article | 15/303 (4.95 %) | 47/267 (17.60 %) | 3.56 × | 1.358e-06 |
-| W-other-ns | 6/140 (4.29 %) | 14/64 (21.88 %) | 5.10 × | 2.141e-04 |
+| pooled | 24/494 (4.86 %) | 68/389 (17.48 %) | 3.60 × | 1.474 × 10<sup>-9</sup> |
+| F-forum | 2/49 (4.08 %) | 8/57 (14.04 %) | 3.44 × | 1.027 × 10<sup>-1</sup> |
+| W-article | 16/304 (5.26 %) | 46/269 (17.10 %) | 3.25 × | 5.758 × 10<sup>-6</sup> |
+| W-other-ns | 6/141 (4.26 %) | 14/63 (22.22 %) | 5.22 × | 1.739 × 10<sup>-4</sup> |
 
 ## 4. Where the identifiers come from — newest day
 
 | stratum | what it is | in the rate | publicly absent | absent rate |
 |---|---|---|---|---|
-| `F-forum` | public comments and stories of one technology forum | 448 | 66 | 14.73 % |
-| `W-article` | article space of 37 encyclopedia language editions | 2371 | 259 | 10.92 % |
-| `W-other-ns` | non-article namespaces of the same editions | 757 | 113 | 14.93 % |
+| `F-forum` | public comments and stories of one technology forum | 444 | 64 | 14.41 % |
+| `W-article` | article space of 37 encyclopedia language editions | 2,373 | 258 | 10.87 % |
+| `W-other-ns` | non-article namespaces of the same editions | 763 | 114 | 14.94 % |
 
-**Excluded from every rate on the newest day:** 249 identifiers of the `B-truncated` control arm, which are display-truncated strings, 248 of 249 of which do not resolve (one is a real video predating the current identifier scheme — first gauntlet, E7); 44 observations that ended in a transport failure or an unexpected status (`INDETERMINATE`); and 7 identifiers that carry no decodable creation time and are therefore absent from the age-banded tables only.
+**Excluded from every rate on the newest day:** 249 identifiers of the `B-truncated` control arm, which are display-truncated strings, 248 of 249 of which do not resolve — the remainder is a real video predating the platform's current identifier scheme (first gauntlet, E7); 40 observations that ended in a transport failure or an unexpected status (`INDETERMINATE`, control arm not counted — see section 6); and 7 identifiers that carry no decodable creation time and are therefore absent from the age-banded tables only.
 
 ## 5. How much this panel moves at all
 
-Over 5 measured days, **6 of 3620** non-control identifiers show more than one determinate state in the raw record, and **4** do so after the refuted-reading overlay is applied. The identifiers are listed so the claim can be checked:
+Over 6 measured days, **7 of 3,620** non-control identifiers show more than one determinate state in the raw record, and **5** do so after the refuted-reading overlay is applied. The identifiers are listed so the claim can be checked:
 
-| video id | arm | baseline | 2026-08-12 | 2026-08-13 | 2026-08-14 | 2026-08-15 | changes after overlay |
-|---|---|---|---|---|---|---|---|
-| `7016669364938149122` | A | RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | NOT-RETRIEVABLE | RETRIEVABLE | no — refuted reading, see overlay |
-| `7234106298021727515` | A | RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | NOT-RETRIEVABLE | yes |
-| `7298893164335729926` | A | NOT-RETRIEVABLE | NOT-RETRIEVABLE | NOT-RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | yes |
-| `7446448990935354670` | A | NOT-RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | yes |
-| `7266499914014723370` | A2 | NOT-RETRIEVABLE | NOT-RETRIEVABLE | NOT-RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | yes |
-| `7368171405361351954` | A2 | RETRIEVABLE | RETRIEVABLE | NOT-RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | no — refuted reading, see overlay |
+| video id | arm | baseline | 2026-08-12 | 2026-08-13 | 2026-08-14 | 2026-08-15 | 2026-08-16 | changes after overlay |
+|---|---|---|---|---|---|---|---|---|
+| `7016669364938149122` | A | RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | NOT-RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | no — refuted reading, see overlay |
+| `7234106298021727515` | A | RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | NOT-RETRIEVABLE | NOT-RETRIEVABLE | yes |
+| `7298893164335729926` | A | NOT-RETRIEVABLE | NOT-RETRIEVABLE | NOT-RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | yes |
+| `7446448990935354670` | A | NOT-RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | yes |
+| `7266499914014723370` | A2 | NOT-RETRIEVABLE | NOT-RETRIEVABLE | NOT-RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | yes |
+| `7368171405361351954` | A2 | RETRIEVABLE | RETRIEVABLE | NOT-RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | RETRIEVABLE | no — refuted reading, see overlay |
+| `7118519163416497450` | B | NOT-RETRIEVABLE | NOT-RETRIEVABLE | NOT-RETRIEVABLE | NOT-RETRIEVABLE | NOT-RETRIEVABLE | RETRIEVABLE | yes |
 
 ## 6. Transport noise
 
-| day | INDETERMINATE | share of the run |
-|---|---|---|
-| baseline | 42 | 1.09 % |
-| 2026-08-12 | 40 | 1.03 % |
-| 2026-08-13 | 47 | 1.21 % |
-| 2026-08-14 | 40 | 1.03 % |
-| 2026-08-15 | 49 | 1.27 % |
+*Two counts, and they are not the same question. The first gauntlet found them printed together with nothing saying so (finding 14). `all units` includes the `B-truncated` control arm; `non-control` excludes it and is the scope of the exclusion counts in section 4.*
 
-**The same identifier is almost never indeterminate twice.** Across the 10 day-pairs the overlap is 0, 1, 0, 1, 0, 1, 1, 1, 0, 0 identifiers respectively. Transport noise is therefore a property of the request, not of the video — which is why `INDETERMINATE` is excluded from rates rather than read as weak absence.
+| day | INDETERMINATE, all units | share of the run | INDETERMINATE, non-control |
+|---|---|---|---|
+| baseline | 42 | 1.09 % | 39 |
+| 2026-08-12 | 40 | 1.03 % | 38 |
+| 2026-08-13 | 47 | 1.21 % | 44 |
+| 2026-08-14 | 40 | 1.03 % | 37 |
+| 2026-08-15 | 49 | 1.27 % | 44 |
+| 2026-08-16 | 44 | 1.14 % | 40 |
+
+**The same identifier is almost never indeterminate twice.** Across the 15 day-pairs the overlap is 0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 0, 2, 0, 1, 0 identifiers respectively — at most 2. Transport noise is therefore a property of the request, not of the video — which is why `INDETERMINATE` is excluded from rates rather than read as weak absence.
 

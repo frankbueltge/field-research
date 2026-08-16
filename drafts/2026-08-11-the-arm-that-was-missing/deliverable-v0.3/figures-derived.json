@@ -1,0 +1,280 @@
+{
+ "schema": "field-research/figures-page-derived/1",
+ "written_by": "figures_page.derive(), session 124, 2026-08-16",
+ "what_this_is": "every quantity FIGURES.md states that is not already a field of expectation.json, gradient-test.json or reference-baseline.json. It exists so that no number on that page is a literal typed into a generator: the page fetches from here, and this file is built from the series the bundle ships.",
+ "newest_day": "2026-08-16",
+ "n_days": 6,
+ "balanced_panel": {
+  "what": "the across-day spread with panel membership held fixed: only units determinate on every measured day, control arm excluded. The raw spread is larger and the excess is which units fell out as INDETERMINATE, not anything about the platform (first gauntlet, E17).",
+  "n_units": 3386,
+  "per_day": {
+   "baseline": {
+    "n": 3386,
+    "absent": 416,
+    "absent_rate": 0.12285883047844064
+   },
+   "2026-08-12": {
+    "n": 3386,
+    "absent": 415,
+    "absent_rate": 0.122563496751329
+   },
+   "2026-08-13": {
+    "n": 3386,
+    "absent": 416,
+    "absent_rate": 0.12285883047844064
+   },
+   "2026-08-14": {
+    "n": 3386,
+    "absent": 414,
+    "absent_rate": 0.12226816302421736
+   },
+   "2026-08-15": {
+    "n": 3386,
+    "absent": 414,
+    "absent_rate": 0.12226816302421736
+   },
+   "2026-08-16": {
+    "n": 3386,
+    "absent": 413,
+    "absent_rate": 0.12197282929710573
+   }
+  },
+  "min": 0.12197282929710573,
+  "max": 0.12285883047844064,
+  "range": 0.0008860011813349028,
+  "raw_range": 0.0013562210563055344,
+  "raw_over_balanced": 1.530721498883523
+ },
+ "control_arm": {
+  "what": "the B-truncated control: display-truncated identifier strings, excluded from every rate. The count that resolves is the arc's erratum E7 - one of them is a real video predating the platform's current identifier scheme.",
+  "n": 249,
+  "n_resolving_on_newest_day": 1,
+  "n_not_resolving_on_newest_day": 248,
+  "resolving_ids": [
+   "12345"
+  ]
+ },
+ "movement": {
+  "what": "non-control identifiers showing more than one determinate state across the measured days, before and after the refuted-reading overlay.",
+  "n_noncontrol": 3620,
+  "n_changed_raw": 7,
+  "n_changed_corrected": 5,
+  "changed_ids": [
+   "7016669364938149122",
+   "7234106298021727515",
+   "7298893164335729926",
+   "7446448990935354670",
+   "7266499914014723370",
+   "7368171405361351954",
+   "7118519163416497450"
+  ]
+ },
+ "indeterminate": {
+  "what": "two counts that are NOT the same question, printed apart because the first gauntlet found them printed together (finding 14). `all_units` includes the B-truncated control arm; `noncontrol` excludes it and is the scope of `expectation.json`'s per-day `excluded.indeterminate`.",
+  "all_units": {
+   "baseline": {
+    "n": 42,
+    "share_of_run": 0.01085551822176273
+   },
+   "2026-08-12": {
+    "n": 40,
+    "share_of_run": 0.010338588782631171
+   },
+   "2026-08-13": {
+    "n": 47,
+    "share_of_run": 0.012147841819591625
+   },
+   "2026-08-14": {
+    "n": 40,
+    "share_of_run": 0.010338588782631171
+   },
+   "2026-08-15": {
+    "n": 49,
+    "share_of_run": 0.012664771258723184
+   },
+   "2026-08-16": {
+    "n": 44,
+    "share_of_run": 0.011372447660894288
+   }
+  },
+  "noncontrol": {
+   "baseline": {
+    "n": 39,
+    "share_of_noncontrol": 0.010773480662983425
+   },
+   "2026-08-12": {
+    "n": 38,
+    "share_of_noncontrol": 0.010497237569060774
+   },
+   "2026-08-13": {
+    "n": 44,
+    "share_of_noncontrol": 0.012154696132596685
+   },
+   "2026-08-14": {
+    "n": 37,
+    "share_of_noncontrol": 0.010220994475138122
+   },
+   "2026-08-15": {
+    "n": 44,
+    "share_of_noncontrol": 0.012154696132596685
+   },
+   "2026-08-16": {
+    "n": 40,
+    "share_of_noncontrol": 0.011049723756906077
+   }
+  },
+  "n_day_pairs": 15,
+  "pair_overlaps": [
+   {
+    "days": [
+     "baseline",
+     "2026-08-12"
+    ],
+    "n_shared_indeterminate": 0
+   },
+   {
+    "days": [
+     "baseline",
+     "2026-08-13"
+    ],
+    "n_shared_indeterminate": 1
+   },
+   {
+    "days": [
+     "baseline",
+     "2026-08-14"
+    ],
+    "n_shared_indeterminate": 0
+   },
+   {
+    "days": [
+     "baseline",
+     "2026-08-15"
+    ],
+    "n_shared_indeterminate": 1
+   },
+   {
+    "days": [
+     "baseline",
+     "2026-08-16"
+    ],
+    "n_shared_indeterminate": 0
+   },
+   {
+    "days": [
+     "2026-08-12",
+     "2026-08-13"
+    ],
+    "n_shared_indeterminate": 0
+   },
+   {
+    "days": [
+     "2026-08-12",
+     "2026-08-14"
+    ],
+    "n_shared_indeterminate": 1
+   },
+   {
+    "days": [
+     "2026-08-12",
+     "2026-08-15"
+    ],
+    "n_shared_indeterminate": 1
+   },
+   {
+    "days": [
+     "2026-08-12",
+     "2026-08-16"
+    ],
+    "n_shared_indeterminate": 1
+   },
+   {
+    "days": [
+     "2026-08-13",
+     "2026-08-14"
+    ],
+    "n_shared_indeterminate": 1
+   },
+   {
+    "days": [
+     "2026-08-13",
+     "2026-08-15"
+    ],
+    "n_shared_indeterminate": 0
+   },
+   {
+    "days": [
+     "2026-08-13",
+     "2026-08-16"
+    ],
+    "n_shared_indeterminate": 2
+   },
+   {
+    "days": [
+     "2026-08-14",
+     "2026-08-15"
+    ],
+    "n_shared_indeterminate": 0
+   },
+   {
+    "days": [
+     "2026-08-14",
+     "2026-08-16"
+    ],
+    "n_shared_indeterminate": 1
+   },
+   {
+    "days": [
+     "2026-08-15",
+     "2026-08-16"
+    ],
+    "n_shared_indeterminate": 0
+   }
+  ],
+  "max_pair_overlap": 2
+ },
+ "population": {
+  "what": "how many encyclopedia language editions actually contribute a W-article unit to this panel. Published as 21 in versions 0.1-0.3, corrected at the first gauntlet (E9 / V3-E4).",
+  "n_encyclopedia_language_editions": 37,
+  "editions": [
+   "ar.wikipedia.org",
+   "bn.wikipedia.org",
+   "cs.wikipedia.org",
+   "de.wikipedia.org",
+   "en.wikipedia.org",
+   "es.wikipedia.org",
+   "fa.wikipedia.org",
+   "fi.wikipedia.org",
+   "fr.wikipedia.org",
+   "gl.wikipedia.org",
+   "he.wikipedia.org",
+   "hi.wikipedia.org",
+   "hy.wikipedia.org",
+   "id.wikipedia.org",
+   "it.wikipedia.org",
+   "ja.wikipedia.org",
+   "ka.wikipedia.org",
+   "ko.wikipedia.org",
+   "mk.wikipedia.org",
+   "ms.wikipedia.org",
+   "ne.wikipedia.org",
+   "nl.wikipedia.org",
+   "pl.wikipedia.org",
+   "pt.wikipedia.org",
+   "ru.wikipedia.org",
+   "sq.wikipedia.org",
+   "sv.wikipedia.org",
+   "ta.wikipedia.org",
+   "te.wikipedia.org",
+   "th.wikipedia.org",
+   "tl.wikipedia.org",
+   "tr.wikipedia.org",
+   "uk.wikipedia.org",
+   "ur.wikipedia.org",
+   "uz.wikipedia.org",
+   "vi.wikipedia.org",
+   "zh.wikipedia.org"
+  ],
+  "derivation": "distinct encyclopedia hosts whose corpus file cites at least one of this panel's 2398 W-article identifiers; 2274 of those identifiers were matched to at least one edition. Re-derived at build time from the corpus files beside the builder, not typed."
+ }
+}

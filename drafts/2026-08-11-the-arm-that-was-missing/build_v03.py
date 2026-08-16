@@ -44,7 +44,7 @@ import sys
 
 import figures as F
 
-V = "0.3.1"
+V = "0.3.3"
 BASE_V = "0.3"
 DATE = "2026-08-16"
 
@@ -101,9 +101,18 @@ def main(argv):
     for src, dst in [("deliverable/tools/presence_check.py", "tools/presence_check.py"),
                      ("deliverable/tools/selftest_presence_check.py",
                       "tools/selftest_presence_check.py"),
-                     ("deliverable/tools/ledger.py", "tools/ledger.py"),
+                     # Session 124: carry the lock-integrated root `ledger.py`, not the v0.1 copy
+                     # in `deliverable/tools/`. The two are identical apart from the run-lock wiring
+                     # this session added, and the bundle also ships `run_window_day.py`, which
+                     # imports `ledger` and would otherwise import a copy that neither takes nor
+                     # releases the lock — a runner and a probe that disagree about the lock.
+                     ("ledger.py", "tools/ledger.py"),
                      ("deliverable/tools/power_audit.py", "tools/power_audit.py"),
                      ("deliverable/tools/CHANGELOG-v0.2.md", "tools/CHANGELOG-v0.2.md"),
+                     ("run_lock.py", "tools/run_lock.py"),
+                     ("run_window_day.py", "tools/run_window_day.py"),
+                     ("run_day7.sh", "tools/run_day7.sh"),
+                     ("selftest_run_lock.py", "tools/selftest_run_lock.py"),
                      ("deliverable/receiver-eleven.json", "receiver-eleven.json"),
                      ("deliverable/receiver-eleven.md", "receiver-eleven.md"),
                      ("confirmation-record-121.json", "confirmation-record.json"),
@@ -168,6 +177,12 @@ def main(argv):
     g_ratio = fx.num(GRAD, "results[0].ratio_old_over_young", 4, "pooled age gradient")
     g_p = fx.sci(GRAD, "results[0].fisher_two_sided_p", 4, "pooled age gradient, Fisher p")
     n_runs = fx.count(MAN, "source_runs", "run files this bundle was built from")
+    # Session 124, CONDITIONS-123.md binding item 3: the population-mismatch caveat moves out of
+    # LIMITS.md and into the letter. The edition count is FETCHED - it was a literal typed into
+    # the page generator until tonight, and it is this arc's own erratum E9.
+    DER = P("figures-derived.json")
+    n_ed = fx.n(DER, "population.n_encyclopedia_language_editions",
+                "encyclopedia language editions contributing a unit to this panel")
 
     # the confirmation record - the measurement that refuted version 0.1
     cr_ret_n = fx.raw(CONF, "genuine_transitions_only.NOT-RETRIEVABLE->RETRIEVABLE.n", "returns")
@@ -234,12 +249,18 @@ def main(argv):
 
     import errata_check as _ec
     _cov = _ec.coverage()
-    n_reg = fx.lit(str(len(_ec.REGISTRY)), "errata registered in the regression check, counted "
-                                           "from its own registry")
-    n_pub = fx.lit(str(_cov["total_published"]), "errata published across this arc's own errata "
-                                                 "tables, counted from those tables")
+    n_reg = fx.lit(str(_cov["n_registered_as_wording"]),
+                   "errata registered as wording the regression check will catch coming back, "
+                   "counted from its own accounting")
+    n_reasoned = fx.lit(str(_cov["n_reasoned_as_unregistrable"]),
+                        "errata left out of the wording check with a stated reason, counted from "
+                        "its own accounting")
+    n_pub = fx.lit(str(_cov["n_published_accounted"]),
+                   "errata published across this arc's own errata tables, every one accounted for "
+                   "as registered-or-reasoned")
 
     v01 = fx.lit("0.1", "a version number, not a measurement")
+    L_s124 = fx.lit("124", "a session number in this practice's own record, not a measurement")
     v031 = fx.lit(tool_version(), "the tool's own VERSION constant, read from "
                                   "tools/presence_check.py by this script")
     d2026 = fx.lit(DATE, "the date this bundle was built, as a date")
@@ -285,7 +306,8 @@ reports against them stay checkable.*
 | {v01} | {L_015} | **WITHHELD — refuted at its gauntlet.** Its core claim was that reproducing an aggregate rate on a fixed panel warrants trusting a single reading of somebody else's list. This practice's own confirmation record refutes that, and the tool shipped in it took one pass and no confirmation. | `deliverable/` — unedited, plus `GAUNTLET-2026-08-15.md` listing every corrected statement with its true value |
 | {v01} + dated corrections | 2026-08-16 | **STILL WITHHELD.** Session {L_s122} measured a reference-clock defect and published the corrected tables **beside** the originals rather than editing them. | `deliverable/*-CORRECTED-2026-08-16.*` |
 | **{BASE_V}** | {d2026} | **WITHHELD — the gauntlet FAILED.** Verifier **FAIL**, five blocking; Interlocutor: core claim **survives, narrowed**, two blocking. Every blocking finding was a *sentence*, not a measurement — and six of them were corrections this practice had already published on 2026-08-15 and reproduced unchanged. Reports published unedited (`VERIFIER-123.md`, `INTERLOCUTOR-15.md`); errata with true values in `ERRATA-123.md`. | `deliverable-v0.3/` as built at that commit |
-| **{V}** | **{d2026}** | **WITHHELD, and these repairs carry NO VERDICT.** This directory is version {BASE_V} with every blocking finding repaired and a regression check added that fails the build if a published correction comes back. **No reviewer has read this state.** A verdict is good only for the state it was run on, and nothing has run on this one. | this directory |
+| **0.3.2** | {d2026} | **WITHHELD — the gauntlet FAILED, the fifth in a row on this bundle.** Session {L_s124} routed `FIGURES.md` through the provenance guard, completed the errata accounting, moved the population caveat into the letter, and built the run lock. Verifier **FAIL**, one blocking: erratum **E20**, published by this session in `ERRATA-124.md`, was never brought into the errata accounting — *the session whose move was to account for every published erratum published one it did not account for*, and the build gate did not catch it because it did not read its own coverage report. | `deliverable-v0.3/` as the reviewer read it |
+| **{V}** | **{d2026}** | **WITHHELD, and these repairs carry NO VERDICT.** This directory is version 0.3.2 with E20 brought into the accounting and the build gate hardened to fail on any unaccounted or mis-mapped erratum (Verifier finding N1). **No reviewer has read this state.** A verdict is good only for the state it was run on, and nothing has run on this one. | this directory |
 
 ## What changed between {v01} and {BASE_V}
 
@@ -615,6 +637,17 @@ through the platform's public oEmbed endpoint — no account, no research creden
 - Absence rises with age: the oldest band runs **{g_ratio} ×** the youngest, two-sided Fisher
   *p* = {g_p}.
 
+**And the population behind that expectation is not yours.** This is the caveat our own standing
+conditions put first, and until this version it sat in `LIMITS.md` while this letter — the document
+a receiver actually reads — went without it. The panel is **{n_units}** identifiers **cited in
+public**: the article and non-article namespaces of **{n_ed}** encyclopedia language editions, and
+the public comments and stories of one technology forum. Your **{dash_total}** were selected by a
+different process — your own instrument reported an error on them — and videos nobody cited are
+not in this panel at all. So an expected-absence figure from this bundle says what a *cited*
+population of that age showed on the reference day. **It is a comparison, not a benchmark, and it
+is not a prediction about your list.** A yardstick cited without its population is a verdict
+wearing a yardstick's clothes.
+
 ## The part you should read before the rates
 
 We ran the obvious check against ourselves and it did not go our way. Every apparent state change
@@ -697,17 +730,43 @@ has been contacted by this practice.**
                   open("errata-check.json", "w"), indent=1)
         report["errata_regressions"] = len(regressions)
         report["errata_registry_size"] = len(errata_check.REGISTRY)
-        report["errata_published_total"] = errata_check.coverage()["total_published"]
+        report["errata_published_total"] = errata_check.coverage()["n_published_accounted"]
         if regressions:
             for h in regressions:
                 print(f'REGRESSION {h["erratum"]} {h["file"]}: "{h["matched"]}"')
             print(json.dumps(report, indent=1))
             raise SystemExit("errata regression: a published correction is live again in the bundle")
 
+        # Session 124, finding N1 of its own Verifier: the coverage check REPORTED an unaccounted
+        # erratum (E20, published this session and not brought into the accounting) while the build
+        # still exited clean, because the gate did not read the report it wrote. That is the exact
+        # failure class this arc keeps hitting — a guard runs, its output goes unread — so the gate
+        # now reads it. An erratum this practice published that is neither registered as wording nor
+        # given a stated reason, or a mapping that points at a non-existent entry, fails the build.
+        _cov = errata_check.coverage()
+        report["errata_unaccounted"] = _cov["unaccounted_published_ids"]
+        report["errata_broken_mappings"] = _cov["broken_mappings"]
+        if _cov["unaccounted_published_ids"] or _cov["broken_mappings"]:
+            print(json.dumps({"unaccounted": _cov["unaccounted_published_ids"],
+                              "broken": _cov["broken_mappings"]}, indent=1))
+            raise SystemExit("errata accounting incomplete: a published erratum is neither "
+                             "registered nor reasoned (CONDITIONS-123.md item 2)")
+
         au = F.audit_prose([P("README.md"), P("LETTER.md"), P("LIMITS.md"), P("VERSIONS.md")],
                            P("FIGURE-PROVENANCE.json"))
         json.dump(au, open("prose-audit-123.json", "w"), indent=1)
         report["prose_audit_unmatched"] = au["n_unmatched_total"]
+
+        # Session 124, CONDITIONS-123.md binding item 1. `FIGURES.md` is the densest table of
+        # numbers a receiver reads and it sat outside this audit for two versions. It is now
+        # built by `figures_page.py` from the bundle's own files, with its own provenance table,
+        # and it is audited on the same terms as the prose - a number on it with no field fails
+        # the build.
+        fau = F.audit_prose([P("FIGURES.md")], P("FIGURES-PROVENANCE.json"))
+        json.dump(fau, open("figures-audit-124.json", "w"), indent=1)
+        report["figures_page_unmatched"] = fau["n_unmatched_total"]
+        au = {"files": au["files"] + fau["files"],
+              "n_unmatched_total": au["n_unmatched_total"] + fau["n_unmatched_total"]}
         if au["n_unmatched_total"]:
             for f in au["files"]:
                 for u in f["unmatched"]:

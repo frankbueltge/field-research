@@ -1,18 +1,160 @@
 {
  "schema": "field-research/errata-regression-check/1",
  "root": "deliverable-v0.3",
- "files_scanned": 19,
- "registry_size": 8,
+ "files_scanned": 21,
+ "registry_size": 29,
  "coverage": {
-  "errata_published_per_table": {
-   "deliverable/GAUNTLET-2026-08-15.md": 18,
-   "ERRATA-121.md": 8,
-   "ERRATA-122.md": 10,
-   "ERRATA-123.md": 15
+  "published_tables": {
+   "deliverable/GAUNTLET-2026-08-15.md": {
+    "ids_declared_here": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6",
+     "E7",
+     "E8",
+     "E9",
+     "E10",
+     "E11",
+     "E12",
+     "E13",
+     "E14",
+     "E15",
+     "E16",
+     "E17",
+     "E18"
+    ],
+    "ids_found_in_the_file": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6",
+     "E7",
+     "E8",
+     "E9",
+     "E10",
+     "E11",
+     "E12",
+     "E13",
+     "E14",
+     "E15",
+     "E16",
+     "E17",
+     "E18"
+    ],
+    "file_present": true
+   },
+   "ERRATA-121.md": {
+    "ids_declared_here": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6",
+     "E7",
+     "E8"
+    ],
+    "ids_found_in_the_file": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6",
+     "E7",
+     "E8"
+    ],
+    "file_present": true
+   },
+   "ERRATA-122.md": {
+    "ids_declared_here": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6",
+     "E7",
+     "E8",
+     "E9",
+     "E10"
+    ],
+    "ids_found_in_the_file": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6",
+     "E7",
+     "E8",
+     "E9",
+     "E10"
+    ],
+    "file_present": true
+   },
+   "ERRATA-123.md": {
+    "ids_declared_here": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6",
+     "E7",
+     "E8",
+     "E9",
+     "E10",
+     "E11",
+     "E12",
+     "E13",
+     "E14",
+     "E15"
+    ],
+    "ids_found_in_the_file": [
+     "E1",
+     "E2",
+     "E3",
+     "E4",
+     "E5",
+     "E6",
+     "E7",
+     "E8",
+     "E9",
+     "E10",
+     "E11",
+     "E12",
+     "E13",
+     "E14",
+     "E15"
+    ],
+    "file_present": true
+   },
+   "ERRATA-124.md": {
+    "ids_declared_here": [
+     "E19",
+     "E20"
+    ],
+    "ids_found_in_the_file": [
+     "E19",
+     "E20"
+    ],
+    "file_present": true
+   }
   },
-  "total_published": 51,
-  "registered_here": 8,
-  "note": "the registry is entered by hand, one line per correction. Anything published and not entered is unchecked, and this number is how much."
+  "n_published_accounted": 53,
+  "n_registered_as_wording": 36,
+  "n_reasoned_as_unregistrable": 17,
+  "unaccounted_published_ids": [],
+  "broken_mappings": [],
+  "registry_entries": 29,
+  "reason_entries": 17,
+  "note": "every published erratum is either a phrase this check will catch coming back, or a stated reason why a phrase check is the wrong instrument for it. `unaccounted_published_ids` must be empty; if it is not, an erratum was published and never brought into this file."
  },
  "n_regressions": 0,
  "regressions": []

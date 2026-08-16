@@ -1,11 +1,11 @@
 {
  "schema": "field-research/deliverable-manifest/1",
- "built_utc": "2026-08-16T04:14:56Z",
+ "built_utc": "2026-08-16T17:30:13Z",
  "built_by": "build_v03.py, session 123, 2026-08-16",
  "coverage": {
   "first_measurement_utc": "2026-08-11T11:24:06Z",
-  "last_measurement_utc": "2026-08-15T03:37:40Z",
-  "n_measurement_days": 5,
+  "last_measurement_utc": "2026-08-16T03:37:40Z",
+  "n_measurement_days": 6,
   "note": "this bundle is a dated snapshot with a stated cut-off. The instrument that produced it keeps running; a later version covers later days. A run that was still in flight when the bundle was assembled is NOT in it, and the absence of a day here is never evidence that the instrument was dark."
  },
  "source_runs": [
@@ -34,7 +34,7 @@
   {
    "label": "2026-08-13",
    "file": "ledger/run-2026-08-13T0427Z.json",
-   "run_id": "UNKNOWN \u2014 the archived run file carries an unfilled placeholder in this field (first gauntlet, E11). The run is identified by its path, its start time and its sha256, all of which are in this entry; the archived file is primary and is not edited.",
+   "run_id": "TEMPLATE \u2014 the running session sets this",
    "utc_start": "2026-08-13T04:27:00Z",
    "utc_end": "2026-08-13T06:19:35Z",
    "seconds": 6754.7,
@@ -72,16 +72,39 @@
    "vantage_asn": "AS396982",
    "vantage_country": "US",
    "sha256": "d1d14495b276746ff35c0655cfe4388f28b1ed4973fdce64b62c9420f59085f6"
+  },
+  {
+   "label": "2026-08-16",
+   "file": "ledger/run-2026-08-16T0337Z.json",
+   "run_id": "2026-08-16T03:37:40Z (manifest carried a placeholder)",
+   "utc_start": "2026-08-16T03:37:40Z",
+   "utc_end": "2026-08-16T05:28:50Z",
+   "seconds": 6669.6,
+   "planned": 3869,
+   "requested": 3869,
+   "stopped": null,
+   "vantage_asn": "AS396982",
+   "vantage_country": "US",
+   "sha256": "91e9ce22421dc0ff9142502aa2a179d5880702c0f014fac0b28df4da31818e92"
   }
  ],
  "corrections_file": {
   "path": "ledger/corrections.json",
-  "sha256": "b08e4c531e79cac24a91cac17c51e00ccaa7cac1e064a4282dbc7b89372a8e7a",
+  "sha256": "357cb2b332faa44fe605fc03882e3be5ba8699daa93fdc54e6128937a4a12ae6",
   "rows_applied": 2
  },
  "n_units": 3869,
- "n_days": 5,
- "bundle_version": "0.3.1",
+ "n_days": 6,
+ "replicate_runs": [
+  {
+   "file": "ledger/run-2026-08-16T0337Z-second-probe.json",
+   "label": "2026-08-16",
+   "run_utc_start": "2026-08-16T03:37:40Z",
+   "sha256": "48779cd2ce1e2b7b6eede4fe89575d747624747724df417741a2da3b8eb9216b",
+   "why_not_a_day": "a second complete pass over the same manifest on the same UTC day; see DOUBLE-PROBE-122.md. It is evidence about the instrument, not an additional day of the series."
+  }
+ ],
+ "bundle_version": "0.3.3",
  "bundle_version_status": "see VERSIONS.md; this field is written by the build and asserts no verdict",
  "carried_files": [
   {
@@ -95,9 +118,9 @@
    "sha256": "6158ea60213cd1eb4908624f259e7291fdca4a66e0899304e80bc3eef8802f4c"
   },
   {
-   "from": "deliverable/tools/ledger.py",
+   "from": "ledger.py",
    "to": "tools/ledger.py",
-   "sha256": "2e04d511e9b8b5a2d66653d76a7ce56f9491f9667bb4dad775fb47232d5a7040"
+   "sha256": "05554b297c502b63e753639786a5706ead40c61ae8afaed411b19a3b8f58ff8c"
   },
   {
    "from": "deliverable/tools/power_audit.py",
@@ -108,6 +131,26 @@
    "from": "deliverable/tools/CHANGELOG-v0.2.md",
    "to": "tools/CHANGELOG-v0.2.md",
    "sha256": "a6d18759a459d1aabd3a4f8d0627dc3d1d9be40434a2ef6835917cf3fd82b978"
+  },
+  {
+   "from": "run_lock.py",
+   "to": "tools/run_lock.py",
+   "sha256": "73f4ae47b18baa6c9b1b934e68980d43d27d6d68baa55903330e1d082f842e67"
+  },
+  {
+   "from": "run_window_day.py",
+   "to": "tools/run_window_day.py",
+   "sha256": "c5505542bedc2fc72e1e37a38cd5d23a8d93da5a152d575d6fc7a998aee59597"
+  },
+  {
+   "from": "run_day7.sh",
+   "to": "tools/run_day7.sh",
+   "sha256": "903d0dc0185dbbc8329e532e92f8f24de4a0eabb718a07e8610945cebff2528d"
+  },
+  {
+   "from": "selftest_run_lock.py",
+   "to": "tools/selftest_run_lock.py",
+   "sha256": "f7cd35c1da2f8a788ec45e8f5e9350efa206d80c369f4807b436f00fe37e6742"
   },
   {
    "from": "deliverable/receiver-eleven.json",
@@ -122,7 +165,7 @@
   {
    "from": "confirmation-record-121.json",
    "to": "confirmation-record.json",
-   "sha256": "f1813f1b2447cbedf1aecc2f36a4d9983b3e7127dddc8c22e26fccd3f8ca22c9"
+   "sha256": "37b16cdd2734b14e78da862af13a1d711cdc3685a63ad48aabfc52596391ccb3"
   },
   {
    "from": "drift-122.json",
@@ -148,29 +191,35 @@
   }
  ],
  "bundle_files_sha256": {
-  "FIGURE-PROVENANCE.json": "81072c39afbc7464c48b58bb662679af2a09d201a1b5e69b23c52b1e41550229",
-  "FIGURES.md": "de253147bc1d20edb571b9905bd4251702497eabed27740dc87dae01048c7759",
-  "LETTER.md": "d48beb3e4ab86ec8e1b8ff7308aad3fd259c306048e4eaeb69d9f761d734485c",
-  "LIMITS.md": "538720ff163528d300e33a4bf00c769113934171c32b2cd9d3c20227f1a7bfc1",
-  "README.md": "f9d306f69db821723175b58e2ffc72d4b091a0ea5dc85014e8753852478690d0",
-  "VERSIONS.md": "ca5f086c6f0869b5a40c7ce188daba346b0d35db7c4376fba9f0c2d7bb9530c4",
-  "confirmation-record.json": "f1813f1b2447cbedf1aecc2f36a4d9983b3e7127dddc8c22e26fccd3f8ca22c9",
-  "expectation.json": "f9d48ae0aa1a267fae9dec059d68b5d36dee1e6312c7b22ac0325546e527e103",
-  "gradient-test.json": "8264522fe906920ffa83024a9bf0311c3bdaacd66ef1e7bc69399f0c4859d58b",
+  "FIGURE-PROVENANCE.json": "67b1c3389e6d6cdd0986cabb6d24eadaadd3181abdeec7807bb0896ffc6d53bc",
+  "FIGURES-PROVENANCE.json": "c16297977db0b516644d586c8cc12329a481d3b5cb1b2d113fb65a03b1338cc0",
+  "FIGURES.md": "7cd70ba527d81e55eef580e224c19743444c2ee59d1cc9eaf2471448b64a57ec",
+  "LETTER.md": "d36fc71f8d328b1eb3e03eedeab963d4717051d5ebb1694a0263cdac93326726",
+  "LIMITS.md": "4be49be10c4764ac8c27b48748385ae76e5e5095bbb44c90b353800ae09ed0a8",
+  "README.md": "b487531d3130527242fff4926c725ffcf93f99505349c6154947903553319503",
+  "VERSIONS.md": "dd2c405533be3b544238306235746fcc50c4618ef115d8114e3635a7e9dd0519",
+  "confirmation-record.json": "37b16cdd2734b14e78da862af13a1d711cdc3685a63ad48aabfc52596391ccb3",
+  "expectation.json": "e6f005968f99e0695491e32efbd9c02200c95e7f7afe65f5461cdd545bc33baa",
+  "figures-derived.json": "f37206242912014e2e9e70e36979ea275a205ec990c9ad7587ec5e72be92fe6e",
+  "gradient-test.json": "c4e642c9fd8cdda7bff867af5a6ee74278962ffbe882489f25b5c64ef20ff49a",
   "receiver-dashboard-2026-08-16.html": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb",
   "receiver-dashboard-read.json": "f98ee3562f6d5a4bafe52d27ac992e56dee3b0d457d34989bb900ca7aba66ff9",
   "receiver-eleven.json": "fd186deccf2390f1431f797dd309287abeaa26c42d6d8501b6778270c9c2f872",
-  "receiver-eleven.md": "f6414401b896dcb348a9e9f6eefe488bf71b231cb575a4dfbccfc9d9fef667b1",
-  "reference-baseline.json": "a7179fa95992decaf417479f48db84077d61f8b78d3538b2815dae28fa937fa8",
+  "receiver-eleven.md": "99d335cfaa290c699ddace6c3031405d4f642a7746131911fb54539090f52c57",
+  "reference-baseline.json": "aac2fe0170b4d1b4b832b4ed52ea253b78eab3550aa49c202e134977dbff690e",
   "reference-drift.json": "5f5ef5f9fbc638110b89a1b87e064830a0d105e84d7a8e9d9f568a0a0eb700a2",
-  "series/presence-series-corrected.csv": "c7c16d92b6e5e0680f3ff8f8e0fead08bb0d3ee414e1d1fc8ccfa52d397359b1",
-  "series/presence-series.csv": "c5ff7864c48faa152f0a6a9a89fd47f5a8be2137ec889c9307ee925672d39c73",
-  "series/presence-series.json": "b0a904f426060900769dd30bf5cb423d2fcb4c6048a8786e508ec8d19ab5c56d",
+  "series/presence-series-corrected.csv": "072711df183526b1d1765c909964a12be89aa47aa718beb294e6dbdd570d328f",
+  "series/presence-series.csv": "eb3e37c243c6284f8fa14ba48953a7697d494e57a3f14081c29a1bc43b2bdd8f",
+  "series/presence-series.json": "08f525d67c560198cb8a6eed2daf2d711c9aea8a1855fd14d03008c74d822355",
   "tools/CHANGELOG-v0.2.md": "a6d18759a459d1aabd3a4f8d0627dc3d1d9be40434a2ef6835917cf3fd82b978",
-  "tools/ledger.py": "2e04d511e9b8b5a2d66653d76a7ce56f9491f9667bb4dad775fb47232d5a7040",
+  "tools/ledger.py": "05554b297c502b63e753639786a5706ead40c61ae8afaed411b19a3b8f58ff8c",
   "tools/power_audit.py": "0dca991c86329b82d82be0833e58dfe6df07755f661654b55c05e3f7f8b29dfe",
   "tools/presence_check.py": "386315272b02d99a06c464cb26f6125763dcfb5749c022ec3355a43b8e795b6c",
-  "tools/selftest_presence_check.py": "6158ea60213cd1eb4908624f259e7291fdca4a66e0899304e80bc3eef8802f4c"
+  "tools/run_day7.sh": "903d0dc0185dbbc8329e532e92f8f24de4a0eabb718a07e8610945cebff2528d",
+  "tools/run_lock.py": "73f4ae47b18baa6c9b1b934e68980d43d27d6d68baa55903330e1d082f842e67",
+  "tools/run_window_day.py": "c5505542bedc2fc72e1e37a38cd5d23a8d93da5a152d575d6fc7a998aee59597",
+  "tools/selftest_presence_check.py": "6158ea60213cd1eb4908624f259e7291fdca4a66e0899304e80bc3eef8802f4c",
+  "tools/selftest_run_lock.py": "f7cd35c1da2f8a788ec45e8f5e9350efa206d80c369f4807b436f00fe37e6742"
  },
  "bundle_files_note": "every file in this directory except MANIFEST.json itself, which cannot hash itself. A file present here and absent from disk, or vice versa, is a defect."
 }

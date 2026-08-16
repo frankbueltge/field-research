@@ -23,11 +23,14 @@ robots.txt was read to the end before session 109's first run
 this client is none of the 25 named crawlers. The consideration is recorded rather than assumed.
 """
 import json
+import os
 import sys
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
+
+import run_lock
 
 SCHEMA = "field-research/retrievability-ledger/1"
 UA = "field-research/1.0 (independent research instrument; sequential, 1 req/s)"
@@ -110,9 +113,20 @@ def _run_id(manifest, t0):
         return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(t0)) + " (manifest carried a placeholder)"
     return rid
 
-def main(manifest_path, out_path):
+def main(manifest_path, out_path, replicate=False):
     manifest = json.load(open(manifest_path))
     units = manifest["units"]
+
+    # Session 124, deviation D23 — BOOKKEEPING ONLY, and it happens before any request. On
+    # 2026-08-16 two complete probes ran over this manifest at the same hour because a run
+    # scheduled by one session is invisible to the next (`DOUBLE-PROBE-122.md`). The remedy that
+    # session wrote down — "what is owed is a lock, not a note" — is here. If a run for this
+    # manifest and this UTC day is in flight or already complete, this refuses to start and says
+    # what it saw; a deliberate replicate declares itself twice.
+    lock_state = run_lock.acquire(manifest_path, out_path,
+                                  ledger_dir=os.path.dirname(out_path) or "ledger",
+                                  replicate=replicate)
+    print(json.dumps({"run_lock": lock_state}), file=sys.stderr)
 
     van = vantage()                      # BEFORE the first measurement request
     print(json.dumps({"vantage": van}), file=sys.stderr)
@@ -158,14 +172,25 @@ def main(manifest_path, out_path):
                      "timeout_s": TIMEOUT,
                      "unchanged_since": "session 109 census (census.py), 2026-08-11T04:05:44Z"},
            "arms": manifest["arms"],
+           # What the lock saw when this run started. A run always carries the state of the day
+           # it started into, including a stale lock it took over.
+           "run_lock": lock_state,
            "planned": len(units), "requested": len(obs), "stopped": stopped,
            "counts": counts,
            "observations": obs}
     json.dump(run, open(out_path, "w"), indent=1)
+    run_lock.release(os.path.dirname(out_path) or "ledger")
     print(json.dumps({"requested": len(obs), "planned": len(units),
                       "seconds": round(time.time() - t0, 1),
                       "stopped": stopped, "counts": counts}))
 
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2])
+    args = [a for a in sys.argv[1:] if a != "--replicate"]
+    try:
+        main(args[0], args[1], replicate="--replicate" in sys.argv[1:])
+    except run_lock.RunRefused as e:
+        # A refusal is a fact about the day, not a crash. It exits non-zero so no caller mistakes
+        # it for a run, and it prints what it saw so the refusal is checkable.
+        print(json.dumps({"refused": True, "reason": str(e)}, indent=1), file=sys.stderr)
+        sys.exit(3)
