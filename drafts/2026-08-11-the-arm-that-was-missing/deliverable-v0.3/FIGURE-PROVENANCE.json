@@ -2,7 +2,7 @@
  "schema": "field-research/figure-provenance/1",
  "written_by": "figures.py, session 123",
  "what_this_is": "every figure that appears in the generated prose of this bundle, with the file and JSON field it was read from. A figure not in this table was typed by a human and is a defect.",
- "n_figures": 102,
+ "n_figures": 110,
  "figures": [
   {
    "rendered": "5",
@@ -545,6 +545,18 @@
    "note": "the dashboard's own note about Error"
   },
   {
+   "rendered": "8",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "errata registered in the regression check, counted from its own registry"
+  },
+  {
+   "rendered": "51",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "errata published across this arc's own errata tables, counted from those tables"
+  },
+  {
    "rendered": "0.1",
    "file": "(literal)",
    "json_path": "-",
@@ -615,6 +627,42 @@
    "file": "(literal)",
    "json_path": "-",
    "note": "the date of the three-arm synthetic control run, as a date"
+  },
+  {
+   "rendered": "twenty",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "the size of the three-arm synthetic control, from its own run record"
+  },
+  {
+   "rendered": "nineteen",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "how many of the twenty returned the refusal code \u2014 first gauntlet, E1; the twentieth returned no code at all"
+  },
+  {
+   "rendered": "248",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "how many of the display-truncated control arm do not resolve \u2014 first gauntlet, E7"
+  },
+  {
+   "rendered": "249",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "the size of the display-truncated control arm"
+  },
+  {
+   "rendered": "6",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "genuine transitions tested, summed from confirmation-record.json by the build rather than typed into the heading"
+  },
+  {
+   "rendered": "4",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "genuine transitions confirmed, summed from confirmation-record.json"
   }
  ]
 }

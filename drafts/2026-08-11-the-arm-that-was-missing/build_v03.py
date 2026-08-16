@@ -44,7 +44,8 @@ import sys
 
 import figures as F
 
-V = "0.3"
+V = "0.3.1"
+BASE_V = "0.3"
 DATE = "2026-08-16"
 
 
@@ -112,6 +113,35 @@ def main(argv):
         if os.path.exists(src):
             shutil.copy2(src, os.path.join(a.out, dst))
             carried.append({"from": src, "to": dst, "sha256": sha256(src)})
+
+    # First gauntlet E1/E2 of this session's errata, and Interlocutor charge 2: a file carried
+    # byte-for-byte into a bundle of a different shape makes claims about its surroundings that
+    # nobody re-checks. `receiver-eleven.md` carried version 0.1's WITHHELD banner, gave no
+    # instrument version for readings that predate confirmation entirely, and cited a LIMITS
+    # section by a number that now names a different topic. It is TRANSFORMED here, and the
+    # transformation is recorded in the manifest as a transformation rather than a carry.
+    transformed = []
+    rp = os.path.join(a.out, "receiver-eleven.md")
+    if os.path.exists(rp):
+        src_text = open(rp).read()
+        body = re.sub(r"\A(?:>.*\n)+\n?", "", src_text)          # drop the v0.1 withheld banner
+        body = body.replace("`LIMITS.md` §8 says why",
+                            "the section of `LIMITS.md` headed *Small lists cannot separate "
+                            "hypotheses* says why")
+        head = (f"> **Carried into version {V} and transformed, {DATE}.** The readings on this page "
+                f"were taken on one day, **before this arc's instrument confirmed anything**: they "
+                f"are single-pass, `--confirm 0`, **version-0.1-equivalent readings** of eleven "
+                f"identifiers, and by this practice's own standing condition they must say so. "
+                f"Version 0.1's withheld banner has been removed from this copy because it "
+                f"described a different directory; the withheld status of version 0.1 is in "
+                f"`VERSIONS.md`. One cross-reference into `LIMITS.md` was repointed by title after "
+                f"that file was renumbered. **No number on this page has been changed.** The "
+                f"untransformed original is in `deliverable/`.\n\n")
+        open(rp, "w").write(head + body)
+        transformed.append({"file": "receiver-eleven.md",
+                            "what": "v0.1 withheld banner removed; version/confirm disclosure "
+                                    "added; one cross-reference repointed by title",
+                            "numbers_changed": 0})
 
     fx = F.Figures(relative_to=a.out)
     P = lambda n: os.path.join(a.out, n)
@@ -202,6 +232,13 @@ def main(argv):
     dash_err = fx.raw(DASH, "fields.Errors.value", "videos the dashboard reports as errors")
     dash_note = fx.raw(DASH, "fields.error_note.value", "the dashboard's own note about Error")
 
+    import errata_check as _ec
+    _cov = _ec.coverage()
+    n_reg = fx.lit(str(len(_ec.REGISTRY)), "errata registered in the regression check, counted "
+                                           "from its own registry")
+    n_pub = fx.lit(str(_cov["total_published"]), "errata published across this arc's own errata "
+                                                 "tables, counted from those tables")
+
     v01 = fx.lit("0.1", "a version number, not a measurement")
     v031 = fx.lit(tool_version(), "the tool's own VERSION constant, read from "
                                   "tools/presence_check.py by this script")
@@ -220,6 +257,21 @@ def main(argv):
     L_015 = fx.lit("2026-08-15", "the date version 0.1 was refuted, as a date")
     L_s122 = fx.lit("122", "a session number in this practice's own record, not a measurement")
     L_011 = fx.lit("2026-08-11", "the date of the three-arm synthetic control run, as a date")
+    L_20 = fx.lit("twenty", "the size of the three-arm synthetic control, from its own run record")
+    L_19syn = fx.lit("nineteen", "how many of the twenty returned the refusal code — first "
+                                 "gauntlet, E1; the twentieth returned no code at all")
+    L_248 = fx.lit("248", "how many of the display-truncated control arm do not resolve — first "
+                          "gauntlet, E7")
+    L_249 = fx.lit("249", "the size of the display-truncated control arm")
+
+    # Our own erratum E3: the heading of LIMITS section 4 was a typed number word, invisible to a
+    # digit-based audit. Computed from the confirmation record instead.
+    _cr = json.load(open(CONF))["genuine_transitions_only"]
+    n_trans = fx.lit(str(sum(v["n"] for v in _cr.values())),
+                     "genuine transitions tested, summed from confirmation-record.json by the "
+                     "build rather than typed into the heading")
+    n_conf = fx.lit(str(sum(v["confirmed"] for v in _cr.values())),
+                    "genuine transitions confirmed, summed from confirmation-record.json")
 
     # ---- VERSIONS.md --------------------------------------------------------------------
     versions = f"""# Versions of this bundle, and what each one's status is
@@ -232,9 +284,10 @@ reports against them stay checkable.*
 |---|---|---|---|
 | {v01} | {L_015} | **WITHHELD — refuted at its gauntlet.** Its core claim was that reproducing an aggregate rate on a fixed panel warrants trusting a single reading of somebody else's list. This practice's own confirmation record refutes that, and the tool shipped in it took one pass and no confirmation. | `deliverable/` — unedited, plus `GAUNTLET-2026-08-15.md` listing every corrected statement with its true value |
 | {v01} + dated corrections | 2026-08-16 | **STILL WITHHELD.** Session {L_s122} measured a reference-clock defect and published the corrected tables **beside** the originals rather than editing them. | `deliverable/*-CORRECTED-2026-08-16.*` |
-| **{V}** | **{d2026}** | see the banner on `README.md` of this directory | this directory |
+| **{BASE_V}** | {d2026} | **WITHHELD — the gauntlet FAILED.** Verifier **FAIL**, five blocking; Interlocutor: core claim **survives, narrowed**, two blocking. Every blocking finding was a *sentence*, not a measurement — and six of them were corrections this practice had already published on 2026-08-15 and reproduced unchanged. Reports published unedited (`VERIFIER-123.md`, `INTERLOCUTOR-15.md`); errata with true values in `ERRATA-123.md`. | `deliverable-v0.3/` as built at that commit |
+| **{V}** | **{d2026}** | **WITHHELD, and these repairs carry NO VERDICT.** This directory is version {BASE_V} with every blocking finding repaired and a regression check added that fails the build if a published correction comes back. **No reviewer has read this state.** A verdict is good only for the state it was run on, and nothing has run on this one. | this directory |
 
-## What changed between {v01} and {V}
+## What changed between {v01} and {BASE_V}
 
 1. **The panel is longer.** {n_days} measurement days, {first_m} to {last_m}, built from
    {n_runs} run files whose sha256 are in `MANIFEST.json`.
@@ -244,15 +297,24 @@ reports against them stay checkable.*
    bands are the bands of the moment the table names.
 3. **One live set of tables.** There are no `-CORRECTED-` twins in this directory. The
    superseded state is not deleted — it is at its own published address in `deliverable/`.
-4. **The confirmation record is on the face of the bundle** (`README.md` §3,
-   `confirmation-record.json`), not in an appendix. It is the measurement that refuted version
+4. **The confirmation record is on the face of the bundle** (the `README.md` section headed
+   *The measurement that refuted version {v01}*, and `confirmation-record.json`), not in an appendix. It is the measurement that refuted version
    {v01}, and a receiver meets it before any rate.
 5. **The tool is version {v031}**, with confirmation of refusals and a caller-side staleness
    report. Every figure it prints names the version and the `--confirm` setting that produced it.
 6. **The prose is generated.** Every figure in this directory's `README.md`, `LETTER.md` and
    `LIMITS.md` was read from a JSON field by `figures.py`, which recorded the field.
    `FIGURE-PROVENANCE.json` is that record — a number in the prose that is not in it was typed
-   by a human, and the build refuses to complete with `--audit` if one is.
+   by a human, and the build refuses to complete with `--audit` if one is. **Its limits, found at
+   the gauntlet that failed this version:** it reads **digits**, so a figure written as a word
+   passes it untouched, and it never covered `FIGURES.md` at all. Neither is fixed here; both are
+   stated.
+
+7. **A published correction cannot come back silently.** `errata_check.py` holds this arc's
+   published corrections as a machine checklist and fails the build if one is live again in the
+   bundle. It was written because version {BASE_V} shipped six of them back. Its own coverage is
+   printed rather than implied: **{n_reg} of {n_pub}** published errata are registered in it, and
+   the rest are unchecked.
 
 ## What did NOT change, and must not be read as changed
 
@@ -275,9 +337,10 @@ future-tense hedge about work someone might do later.*
 ## 1. `NOT-RETRIEVABLE` does not mean deleted
 
 The endpoint this bundle uses answers a refusal with a **single opaque HTTP {L_400}**, and that code
-is semantically empty. A three-arm control run on {L_011} with twenty synthetic identifiers
-that never existed returned exactly the same code as identifiers that certainly did exist, and
-**no HTTP {L_404} was ever returned** in any run of this instrument.
+is semantically empty. A three-arm control run on {L_011} with {L_20} synthetic identifiers that never existed returned
+that same code — **{L_19syn} of the {L_20}** did; the twentieth returned **no code at all**, a
+transport failure, which is the absence of a code rather than the same one (first gauntlet, E1).
+**No HTTP {L_404} was ever returned** in any run of this instrument.
 
 So `NOT-RETRIEVABLE` means, exactly and only:
 
@@ -289,9 +352,11 @@ measuring something it cannot name.
 
 ## 2. One vantage, one endpoint
 
-Every run is taken from **one** network vantage (autonomous system AS396982, United States —
-logged into every run file before the first measurement request) through **one** credential-free
-endpoint. A result that differs from another vantage is not a contradiction of this bundle; it is
+Every run is taken from **one** network vantage (autonomous system AS396982, United States).
+The vantage is logged into each daily run file before that run's first measurement request, with
+**one** exception the manifest names: the baseline entry is a union of component runs, and its own
+vantage field says the vantage was *carried from the producing runs* rather than logged before a
+first request (first gauntlet, E2). Every run uses **one** credential-free endpoint. A result that differs from another vantage is not a contradiction of this bundle; it is
 a second reading this bundle cannot make.
 
 ## 3. The population is a cited population, not a sample of the platform
@@ -302,10 +367,11 @@ are not in it and nothing here describes them. **A yardstick cited without its p
 verdict wearing a yardstick's clothes:** any expected-absence figure taken from this bundle
 carries the population, the run identifier and the date that produced it.
 
-## 4. Six events is not a rate
+## 4. {n_trans} events is not a rate
 
-The whole panel has produced a handful of confirmed state changes across its measurement days
-(§3 of `README.md`). That is a count of events, not a hazard, and no reuse may render it as one.
+The whole panel has produced **{n_trans}** apparent state changes across its measurement days,
+of which **{n_conf}** survived immediate re-request (the section of `README.md` headed *The
+measurement that refuted version {v01}*). That is a count of events, not a hazard, and no reuse may render it as one.
 Reading a single cross-section's age gradient forward as a rate of disappearance is a claim this
 practice has made in public and **withdrawn in public**.
 
@@ -328,27 +394,40 @@ member. The fixed threshold is **deleted** from the tool. Version {v031} instead
 caller's own drift, computed on the caller's own list, and refuses to print a drift at all when
 the two readings it would compare have different denominators.
 
-## 6. Ages are decoded, not looked up
+## 6. Small lists cannot separate hypotheses
 
-Creation times are decoded from the identifier itself under the platform's modern {L_19}-digit scheme
-(the high {L_32} bits are a Unix timestamp), checked against the endpoint's own returned metadata
-where that metadata exists. Identifiers that are not {L_19} digits carry no age, stay in the series,
+On a list of a dozen identifiers, this bundle can tell you how far your count sits from what a
+reference population of that age showed — and it cannot tell you why. An observed absence of one
+and an observed absence of three are both entirely ordinary against a reference rate near
+{ref_rate}. **Any reading of a short list is an expectation, never a verdict on any identifier**,
+and it cannot distinguish removal from a private account, a geo-block, a rename or a network
+refusal. This section existed in version 0.1 under a different number, was lost when this file was
+rewritten, and is restored here as a dated correction rather than quietly re-added.
+
+## 7. Ages are decoded, not looked up
+
+Creation times are decoded from the identifier itself under the platform's modern {L_19}-digit
+scheme (the high {L_32} bits are a Unix timestamp). **They are not checked against anything the
+endpoint returns**: this probe stores no creation time from the endpoint, so no such check exists
+and none is claimed (first gauntlet, E3). Identifiers that are not {L_19} digits carry no age, stay in the series,
 and are excluded from every age-banded rate.
 
-## 7. Two arms are excluded from every rate, by design and in advance
+## 8. Two arms are excluded from every rate, by design and in advance
 
-A control arm of display-truncated identifiers that are **not** videos is excluded from every
-rate and reported separately — including it would manufacture absence. Observations that failed
+A control arm of display-truncated identifiers is excluded from every rate and reported
+separately, because including it would manufacture absence. It is **not** the case that every
+member is certainly not a video: **{L_248} of {L_249} do not resolve, and one is a real video**
+predating the platform's current identifier scheme (first gauntlet, E7). Observations that failed
 in transport (`INDETERMINATE`) are excluded and counted, never imputed.
 
-## 8. The raw record is primary and is never edited
+## 9. The raw record is primary and is never edited
 
 `states` in `presence-series.json` is what the instrument returned. `states_corrected` applies an
 overlay of readings this practice's own confirmation step refuted with {cr_passes} immediate
 re-requests. **No archived run file is ever edited**, and where the two arms differ, both are
 published.
 
-## 9. What this bundle is not
+## 10. What this bundle is not
 
 It is the **control arm** of a two-sided comparison: what was publicly retrievable, measured
 without any credential. It is **not** an audit of any research interface, it makes no claim about
@@ -365,9 +444,11 @@ compared against.
 > **STATUS — read this first.** Version {v01} of this bundle was refuted at its own gauntlet on
 > {L_015} and withheld. This version is a rebuild, not a patch: it is built in one pass from
 > the run files, it carries the correction that version made necessary, and it puts the
-> measurement that refuted version {v01} on its own face (§3). **Whether it passes its own
-> gauntlet is stated in `VERSIONS.md` and nowhere else in this file** — if `VERSIONS.md` does not
-> say a version passed, it did not, and nothing here has been sent to anyone.
+> measurement that refuted version {v01} on its own face. **Whether it passes its own
+> gauntlet is stated in `VERSIONS.md`** — and to say it here too, because a pointer that points at
+> a pointer is not a status: **version {BASE_V} FAILED its gauntlet and is withheld, and this
+> version, {V}, is that state with the findings repaired and NO REVIEWER HAS READ IT.** Nothing
+> here has been sent to anyone.
 
 A dated record of whether named videos on a very large video platform were **publicly
 retrievable**, taken without any credential, together with a reference population large enough to
@@ -450,7 +531,8 @@ youngest (two-sided Fisher *p* = {g_p}). Per age band on {day_label}:
 |---|---|---|---|---|
 """ + "\n".join(f"| {b} | {n} | {ab} | {r} | {ci} |" for b, n, ab, r, ci in band_rows) + f"""
 
-**This table has a date and using it later is an error that grows** — see `LIMITS.md` §5. Its
+**This table has a date and using it later is an error that grows** — see the section of
+`LIMITS.md` headed *The reference table has a date*. Its
 declared reference time is {t_ref} and its bands were computed at {t_ages}.
 
 ## 5. What is in this directory
@@ -466,7 +548,7 @@ declared reference time is {t_ref} and its bands were computed at {t_ages}.
 | `expectation.json` | per-day rates by age band, source stratum and year, both arms |
 | `reference-baseline.json` | the reference population as one table, with its own date and drift |
 | `gradient-test.json` | the age-gradient test and its exact *p*-values |
-| `confirmation-record.json` | §3, computed |
+| `confirmation-record.json` | the confirmation counts on the README's face, computed |
 | `reference-drift.json` | the measured shelf-life drift of the reference table |
 | `series/` | the full dated series, raw and overlay-corrected, CSV and JSON |
 | `receiver-eleven.*` | this practice's readings of the eleven identifiers on one public dashboard |
@@ -486,7 +568,8 @@ network vantage it records about itself is controlled by `--vantage`.
 
 This bundle is an **offer**. The conditions this practice asks a reuser to honour — never
 obligations imposed on anyone — are in `memory/downstream-commitments.md` of the repository this
-comes from. The three that matter most are in `LIMITS.md` §§1, 3 and 4: the refusal is
+comes from. The three that matter most are the sections of `LIMITS.md` headed *`NOT-RETRIEVABLE` does not mean deleted*, *The
+population is a cited population* and *events is not a rate*: the refusal is
 semantically empty, the yardstick carries its population, and a handful of events is not a rate.
 """
 
@@ -583,6 +666,7 @@ has been contacted by this practice.**
                                     "asserts no verdict")
     man["built_by"] = f"build_v03.py, session 123, {DATE}"
     man["carried_files"] = carried
+    man["transformed_files"] = transformed
     files = {}
     for root, _, names in os.walk(a.out):
         for n in sorted(names):
@@ -601,6 +685,25 @@ has been contacted by this practice.**
               "figures_with_provenance": fx.provenance()["n_figures"]}
 
     if a.audit:
+        # The regression check runs FIRST. Session 123's four-times-repeated failure was a
+        # published correction reappearing in a rebuild, and none of it contained a digit, so the
+        # figure audit below could not have seen any of it.
+        import errata_check
+        files_scanned, regressions = errata_check.scan(a.out)
+        json.dump({"schema": "field-research/errata-regression-check/1", "root": a.out,
+                   "files_scanned": files_scanned, "registry_size": len(errata_check.REGISTRY),
+                   "coverage": errata_check.coverage(),
+                   "n_regressions": len(regressions), "regressions": regressions},
+                  open("errata-check.json", "w"), indent=1)
+        report["errata_regressions"] = len(regressions)
+        report["errata_registry_size"] = len(errata_check.REGISTRY)
+        report["errata_published_total"] = errata_check.coverage()["total_published"]
+        if regressions:
+            for h in regressions:
+                print(f'REGRESSION {h["erratum"]} {h["file"]}: "{h["matched"]}"')
+            print(json.dumps(report, indent=1))
+            raise SystemExit("errata regression: a published correction is live again in the bundle")
+
         au = F.audit_prose([P("README.md"), P("LETTER.md"), P("LIMITS.md"), P("VERSIONS.md")],
                            P("FIGURE-PROVENANCE.json"))
         json.dump(au, open("prose-audit-123.json", "w"), indent=1)

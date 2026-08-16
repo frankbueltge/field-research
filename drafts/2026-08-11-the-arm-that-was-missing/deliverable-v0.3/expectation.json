@@ -3,7 +3,7 @@
  "what_this_is": "the reference absence rate of a large measured population, per day, pooled and split by the age of the video, by the source the identifier came from, and by year of creation. It is a yardstick: it says what share of comparable identifiers this instrument could not retrieve publicly on that day.",
  "how_to_use_it": "for a list of identifiers of your own, compute the age profile, take the matching per-band rates below, and weight them by your list's profile. presence_check.py does this for you. The result is an expectation, NOT a verdict on any individual identifier.",
  "excluded_from_all_rates": {
-  "arm_B-truncated": "display-truncated identifiers that are not videos - a control arm",
+  "arm_B-truncated": "display-truncated identifiers, a control arm. 248 of the 249 do not resolve; ONE (`12345`) is a real video predating the platform's current identifier scheme. The arm is excluded from every rate because including it would manufacture absence, not because every member is certainly not a video (first gauntlet, E7).",
   "INDETERMINATE": "transport failures - not evidence either way"
  },
  "how_to_read_the_across_day_spread": "the spread below is the SAME fixed panel of identifiers measured again on each day. It is the instrument's test-retest reproducibility - evidence that a reading is not an artefact of one day's network conditions. It is NOT the sampling variability of an independently drawn population, and it must not be used as a confidence interval for a new sample. The per-day Wilson intervals in `per_day` are the sampling uncertainty.",

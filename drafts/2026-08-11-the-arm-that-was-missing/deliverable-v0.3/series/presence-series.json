@@ -33,7 +33,7 @@
   {
    "label": "2026-08-13",
    "file": "ledger/run-2026-08-13T0427Z.json",
-   "run_id": "TEMPLATE \u2014 the running session sets this",
+   "run_id": "UNKNOWN \u2014 the archived run file carries an unfilled placeholder in this field (first gauntlet, E11). The run is identified by its path, its start time and its sha256, all of which are in this entry; the archived file is primary and is not edited.",
    "utc_start": "2026-08-13T04:27:00Z",
    "utc_end": "2026-08-13T06:19:35Z",
    "seconds": 6754.7,

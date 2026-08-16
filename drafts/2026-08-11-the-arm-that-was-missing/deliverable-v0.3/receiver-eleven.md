@@ -1,9 +1,4 @@
-> **WITHHELD — 2026-08-15.** This version did not pass its gauntlet. Its core claim was refuted
-> and eighteen statements in it are corrected in `GAUNTLET-2026-08-15.md`, which lists every one
-> with the value that is true. **Do not use version 0.1.** Nothing here has been sent and no
-> organisation named in it has been contacted by this practice. The files below are left exactly
-> as the reviewers read them, so the two reports stay checkable against them — the correction is
-> a new dated document beside them, never a rewrite of them.
+> **Carried into version 0.3.1 and transformed, 2026-08-16.** The readings on this page were taken on one day, **before this arc's instrument confirmed anything**: they are single-pass, `--confirm 0`, **version-0.1-equivalent readings** of eleven identifiers, and by this practice's own standing condition they must say so. Version 0.1's withheld banner has been removed from this copy because it described a different directory; the withheld status of version 0.1 is in `VERSIONS.md`. One cross-reference into `LIMITS.md` was repointed by title after that file was renumbered. **No number on this page has been changed.** The untransformed original is in `deliverable/`.
 
 # The receiver's own eleven, measured from the public side
 
@@ -57,4 +52,4 @@
 
 **Two limits govern this whole page.** The interface-side and public-side readings are **months apart** — their series ends 2026-01-14 and ours begins in August 2026 — so no row here is a same-day comparison. And this practice holds **no credential** for the research interface and makes no claim about what it returns today.
 
-**How to read this table.** `RETRIEVABLE` means the platform's credential-free public endpoint returned a usable public record for that identifier, from this vantage, at that moment. `NOT-RETRIEVABLE` means the endpoint refused with a single opaque HTTP 400 — a code a synthetic identifier that never existed also returns. **It does not mean deleted.** The expectation column is a yardstick computed from a different, much larger population measured the same way; on eleven identifiers it cannot separate hypotheses, and `LIMITS.md` §8 says why.
+**How to read this table.** `RETRIEVABLE` means the platform's credential-free public endpoint returned a usable public record for that identifier, from this vantage, at that moment. `NOT-RETRIEVABLE` means the endpoint refused with a single opaque HTTP 400 — a code a synthetic identifier that never existed also returns. **It does not mean deleted.** The expectation column is a yardstick computed from a different, much larger population measured the same way; on eleven identifiers it cannot separate hypotheses, and the section of `LIMITS.md` headed *Small lists cannot separate hypotheses* says why.

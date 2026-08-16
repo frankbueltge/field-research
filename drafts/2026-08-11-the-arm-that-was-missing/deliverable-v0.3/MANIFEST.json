@@ -1,6 +1,6 @@
 {
  "schema": "field-research/deliverable-manifest/1",
- "built_utc": "2026-08-16T03:54:02Z",
+ "built_utc": "2026-08-16T04:14:56Z",
  "built_by": "build_v03.py, session 123, 2026-08-16",
  "coverage": {
   "first_measurement_utc": "2026-08-11T11:24:06Z",
@@ -34,7 +34,7 @@
   {
    "label": "2026-08-13",
    "file": "ledger/run-2026-08-13T0427Z.json",
-   "run_id": "TEMPLATE \u2014 the running session sets this",
+   "run_id": "UNKNOWN \u2014 the archived run file carries an unfilled placeholder in this field (first gauntlet, E11). The run is identified by its path, its start time and its sha256, all of which are in this entry; the archived file is primary and is not edited.",
    "utc_start": "2026-08-13T04:27:00Z",
    "utc_end": "2026-08-13T06:19:35Z",
    "seconds": 6754.7,
@@ -81,7 +81,7 @@
  },
  "n_units": 3869,
  "n_days": 5,
- "bundle_version": "0.3",
+ "bundle_version": "0.3.1",
  "bundle_version_status": "see VERSIONS.md; this field is written by the build and asserts no verdict",
  "carried_files": [
   {
@@ -140,25 +140,32 @@
    "sha256": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb"
   }
  ],
+ "transformed_files": [
+  {
+   "file": "receiver-eleven.md",
+   "what": "v0.1 withheld banner removed; version/confirm disclosure added; one cross-reference repointed by title",
+   "numbers_changed": 0
+  }
+ ],
  "bundle_files_sha256": {
-  "FIGURE-PROVENANCE.json": "48532079cddbf9257a4933632da07ae31a4cc1b60be660b2c8039c1edd2f98ba",
-  "FIGURES.md": "9d0252005fb39b5341d193ae1db9ee588e5505dfb5b982a8d1c4de5fe95f927f",
-  "LETTER.md": "a7ed14a0a0c10a3990e547dddcff0025eac7fafdc2984b3a77d1fbc8807eb4fb",
-  "LIMITS.md": "6c78ad9cbabc1eb611ad2f986a1f9aca7f83f0bf22ddaab188c92969e7996824",
-  "README.md": "caf859a67a093c1b459d8f3985bc83548bd4193f9494f0d83b0db17abe6525d2",
-  "VERSIONS.md": "96146edb29a5e9ea78beef03647b0238e6e733d628092161b0f38d5e0e314c80",
+  "FIGURE-PROVENANCE.json": "81072c39afbc7464c48b58bb662679af2a09d201a1b5e69b23c52b1e41550229",
+  "FIGURES.md": "de253147bc1d20edb571b9905bd4251702497eabed27740dc87dae01048c7759",
+  "LETTER.md": "d48beb3e4ab86ec8e1b8ff7308aad3fd259c306048e4eaeb69d9f761d734485c",
+  "LIMITS.md": "538720ff163528d300e33a4bf00c769113934171c32b2cd9d3c20227f1a7bfc1",
+  "README.md": "f9d306f69db821723175b58e2ffc72d4b091a0ea5dc85014e8753852478690d0",
+  "VERSIONS.md": "ca5f086c6f0869b5a40c7ce188daba346b0d35db7c4376fba9f0c2d7bb9530c4",
   "confirmation-record.json": "f1813f1b2447cbedf1aecc2f36a4d9983b3e7127dddc8c22e26fccd3f8ca22c9",
-  "expectation.json": "c9d42475196ee329b9c8a23f6294898f8dd41ad372bbdbc088a4e946bb65d798",
+  "expectation.json": "f9d48ae0aa1a267fae9dec059d68b5d36dee1e6312c7b22ac0325546e527e103",
   "gradient-test.json": "8264522fe906920ffa83024a9bf0311c3bdaacd66ef1e7bc69399f0c4859d58b",
   "receiver-dashboard-2026-08-16.html": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb",
   "receiver-dashboard-read.json": "f98ee3562f6d5a4bafe52d27ac992e56dee3b0d457d34989bb900ca7aba66ff9",
   "receiver-eleven.json": "fd186deccf2390f1431f797dd309287abeaa26c42d6d8501b6778270c9c2f872",
-  "receiver-eleven.md": "636f8bd7135756114f2f05d90834a4f64e0ff19dc6485ae59aafd4b1edfc668b",
-  "reference-baseline.json": "820a55923d9f2add1a85746e65f6418fb1f4cf94ead228db836daa62d7db46c4",
+  "receiver-eleven.md": "f6414401b896dcb348a9e9f6eefe488bf71b231cb575a4dfbccfc9d9fef667b1",
+  "reference-baseline.json": "a7179fa95992decaf417479f48db84077d61f8b78d3538b2815dae28fa937fa8",
   "reference-drift.json": "5f5ef5f9fbc638110b89a1b87e064830a0d105e84d7a8e9d9f568a0a0eb700a2",
   "series/presence-series-corrected.csv": "c7c16d92b6e5e0680f3ff8f8e0fead08bb0d3ee414e1d1fc8ccfa52d397359b1",
   "series/presence-series.csv": "c5ff7864c48faa152f0a6a9a89fd47f5a8be2137ec889c9307ee925672d39c73",
-  "series/presence-series.json": "72deac5cb0a33756a70a9d92d838283d96bf630f3499b55bfce232203c3f94b2",
+  "series/presence-series.json": "b0a904f426060900769dd30bf5cb423d2fcb4c6048a8786e508ec8d19ab5c56d",
   "tools/CHANGELOG-v0.2.md": "a6d18759a459d1aabd3a4f8d0627dc3d1d9be40434a2ef6835917cf3fd82b978",
   "tools/ledger.py": "2e04d511e9b8b5a2d66653d76a7ce56f9491f9667bb4dad775fb47232d5a7040",
   "tools/power_audit.py": "0dca991c86329b82d82be0833e58dfe6df07755f661654b55c05e3f7f8b29dfe",

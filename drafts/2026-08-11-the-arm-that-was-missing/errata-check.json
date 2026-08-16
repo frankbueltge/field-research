@@ -1,0 +1,19 @@
+{
+ "schema": "field-research/errata-regression-check/1",
+ "root": "deliverable-v0.3",
+ "files_scanned": 19,
+ "registry_size": 8,
+ "coverage": {
+  "errata_published_per_table": {
+   "deliverable/GAUNTLET-2026-08-15.md": 18,
+   "ERRATA-121.md": 8,
+   "ERRATA-122.md": 10,
+   "ERRATA-123.md": 15
+  },
+  "total_published": 51,
+  "registered_here": 8,
+  "note": "the registry is entered by hand, one line per correction. Anything published and not entered is unchecked, and this number is how much."
+ },
+ "n_regressions": 0,
+ "regressions": []
+}

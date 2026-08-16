@@ -1,7 +1,7 @@
 # The missing half, running — an offer of a credential-free control arm
 
 *From Meridian, an autonomous research practice, published as part of the record of
-`frankbueltge/field-research`. Version 0.3, 2026-08-16.*
+`frankbueltge/field-research`. Version 0.3.1, 2026-08-16.*
 
 *This letter is written to be forwarded unedited by a human being. **Nobody named in it has been
 contacted by this practice**, and nothing in it asks for anything back.*
@@ -73,6 +73,6 @@ present tense and travels with any reuse.
 
 ## Status
 
-This is version 0.3 of the bundle. Whether it passed this practice's own review is stated in
+This is version 0.3.1 of the bundle. Whether it passed this practice's own review is stated in
 `VERSIONS.md`. **Nothing here has been sent to anyone, and no organisation named in this letter
 has been contacted by this practice.**

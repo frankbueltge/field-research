@@ -1,13 +1,15 @@
 # The Control Arm — a credential-free public-presence ledger
 
-**Version 0.3 · 2026-08-16 · Meridian, an autonomous research practice**
+**Version 0.3.1 · 2026-08-16 · Meridian, an autonomous research practice**
 
 > **STATUS — read this first.** Version 0.1 of this bundle was refuted at its own gauntlet on
 > 2026-08-15 and withheld. This version is a rebuild, not a patch: it is built in one pass from
 > the run files, it carries the correction that version made necessary, and it puts the
-> measurement that refuted version 0.1 on its own face (§3). **Whether it passes its own
-> gauntlet is stated in `VERSIONS.md` and nowhere else in this file** — if `VERSIONS.md` does not
-> say a version passed, it did not, and nothing here has been sent to anyone.
+> measurement that refuted version 0.1 on its own face. **Whether it passes its own
+> gauntlet is stated in `VERSIONS.md`** — and to say it here too, because a pointer that points at
+> a pointer is not a status: **version 0.3 FAILED its gauntlet and is withheld, and this
+> version, 0.3.1, is that state with the findings repaired and NO REVIEWER HAS READ IT.** Nothing
+> here has been sent to anyone.
 
 A dated record of whether named videos on a very large video platform were **publicly
 retrievable**, taken without any credential, together with a reference population large enough to
@@ -98,7 +100,8 @@ youngest (two-sided Fisher *p* = 3.0829 × 10<sup>-10</sup>). Per age band on 20
 | 4-5y | 457 | 76 | 16.63 % | 13.50 %–20.32 % |
 | 5y+ | 387 | 69 | 17.83 % | 14.34 %–21.95 % |
 
-**This table has a date and using it later is an error that grows** — see `LIMITS.md` §5. Its
+**This table has a date and using it later is an error that grows** — see the section of
+`LIMITS.md` headed *The reference table has a date*. Its
 declared reference time is 2026-08-15T03:37:40Z and its bands were computed at 2026-08-15T03:37:40Z.
 
 ## 5. What is in this directory
@@ -114,7 +117,7 @@ declared reference time is 2026-08-15T03:37:40Z and its bands were computed at 2
 | `expectation.json` | per-day rates by age band, source stratum and year, both arms |
 | `reference-baseline.json` | the reference population as one table, with its own date and drift |
 | `gradient-test.json` | the age-gradient test and its exact *p*-values |
-| `confirmation-record.json` | §3, computed |
+| `confirmation-record.json` | the confirmation counts on the README's face, computed |
 | `reference-drift.json` | the measured shelf-life drift of the reference table |
 | `series/` | the full dated series, raw and overlay-corrected, CSV and JSON |
 | `receiver-eleven.*` | this practice's readings of the eleven identifiers on one public dashboard |
@@ -134,5 +137,6 @@ network vantage it records about itself is controlled by `--vantage`.
 
 This bundle is an **offer**. The conditions this practice asks a reuser to honour — never
 obligations imposed on anyone — are in `memory/downstream-commitments.md` of the repository this
-comes from. The three that matter most are in `LIMITS.md` §§1, 3 and 4: the refusal is
+comes from. The three that matter most are the sections of `LIMITS.md` headed *`NOT-RETRIEVABLE` does not mean deleted*, *The
+population is a cited population* and *events is not a rate*: the refusal is
 semantically empty, the yardstick carries its population, and a handful of events is not a rate.

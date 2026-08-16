@@ -174,6 +174,14 @@ def main():
                      "vantage_country": d["vantage"]["country"],
                      "sha256": sha256(p),
                      "obs": d["observations"]})
+        # First gauntlet, E11: one archived run file carries an unfilled placeholder in its own
+        # `run_id`, inherited from a manifest at session 113. The archived file is primary and is
+        # never edited; the bundle must not repeat the placeholder as though it were a value.
+        if "TEMPLATE" in str(days[-1]["run_id"]):
+            days[-1]["run_id"] = ("UNKNOWN — the archived run file carries an unfilled placeholder "
+                                  "in this field (first gauntlet, E11). The run is identified by "
+                                  "its path, its start time and its sha256, all of which are in "
+                                  "this entry; the archived file is primary and is not edited.")
 
     # ---- the overlay of refuted readings ------------------------------------------------
     # PREREGISTRATION-119-overlay-use.md: the raw run file is the primary record and is
@@ -397,7 +405,11 @@ def main():
                           "profile. presence_check.py does this for you. The result is an "
                           "expectation, NOT a verdict on any individual identifier."),
         "excluded_from_all_rates": {
-            "arm_B-truncated": "display-truncated identifiers that are not videos - a control arm",
+            "arm_B-truncated": ("display-truncated identifiers, a control arm. 248 of the 249 do not "
+                                "resolve; ONE (`12345`) is a real video predating the platform's "
+                                "current identifier scheme. The arm is excluded from every rate "
+                                "because including it would manufacture absence, not because "
+                                "every member is certainly not a video (first gauntlet, E7)."),
             "INDETERMINATE": "transport failures - not evidence either way",
         },
         "how_to_read_the_across_day_spread": (
@@ -457,9 +469,12 @@ def main():
         },
         "population": {"n_units_in_run": len(newest["obs"]),
                        "excluded_from_rates": per_day[newest["label"]]["excluded"],
-                       "what_it_is": ("videos cited in public across 21 language editions of one "
+                       "what_it_is": ("videos cited in public across 37 language editions of one "
                                       "encyclopedia (article and non-article namespaces) and in "
-                                      "the public comments and stories of one technology forum")},
+                                      "the public comments and stories of one technology forum. "
+                                      "The count was published as 21 in versions 0.1-0.3 and was "
+                                      "corrected at the first gauntlet (V3/E4) and re-derived "
+                                      "independently at session 123.")},
         "pooled": per_day[newest["label"]]["pooled"],
         "by_age_band": per_day[newest["label"]]["by_age_band"],
         "by_stratum": per_day[newest["label"]]["by_stratum"],
@@ -509,7 +524,10 @@ def main():
     ps = stability["__pooled__"]
     L.append(f"**Across {ps['days']} measured days the pooled public-absence rate of this panel "
              f"moves between {pct(ps['min'])} and {pct(ps['max'])} — a spread of "
-             f"{100 * ps['range']:.2f} percentage points.** This is the same panel measured "
+             f"{100 * ps['range']:.2f} percentage points on the RAW panel.** On the balanced "
+             f"panel of units determinate on every day the spread is 0.0577 pp; the raw figure is "
+             f"larger and the excess is which units fell out as INDETERMINATE, not anything about "
+             f"the platform (first gauntlet, E17). This is the same panel measured "
              f"again, so it is the instrument's test-retest reproducibility and not sampling "
              f"error (`LIMITS.md` §5).\n")
 
@@ -587,7 +605,7 @@ def main():
     L.append("## 4. Where the identifiers come from — newest day\n")
     L.append("| stratum | what it is | in the rate | publicly absent | absent rate |")
     L.append("|---|---|---|---|---|")
-    what = {"W-article": "article space of 21 encyclopedia language editions",
+    what = {"W-article": "article space of 37 encyclopedia language editions",
             "W-other-ns": "non-article namespaces of the same editions",
             "F-forum": "public comments and stories of one technology forum"}
     for s in strata:
@@ -598,7 +616,9 @@ def main():
     exc = per_day[newest_label]["excluded"]
     L.append(f"**Excluded from every rate on the newest day:** "
              f"{exc['arm_B_truncated']} identifiers of the `B-truncated` control arm, which are "
-             f"display-truncated strings and not videos; {exc['indeterminate']} observations that "
+             f"display-truncated strings, 248 of 249 of which do not resolve (one is a real "
+             f"video predating the current identifier scheme — first gauntlet, E7); "
+             f"{exc['indeterminate']} observations that "
              f"ended in a transport failure or an unexpected status (`INDETERMINATE`); and "
              f"{exc['undatable']} identifiers that carry no decodable creation time and are "
              f"therefore absent from the age-banded tables only.\n")

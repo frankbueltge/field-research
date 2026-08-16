@@ -1,6 +1,6 @@
 # Figures — generated, do not hand-edit
 
-*Written by `build_deliverable.py` at 2026-08-16T03:54:02Z. Every number on this page comes from `expectation.json` and `series/presence-series.json`, which come from the run files named in `MANIFEST.json`. Rebuild the bundle and this page rebuilds with it.*
+*Written by `build_deliverable.py` at 2026-08-16T04:14:56Z. Every number on this page comes from `expectation.json` and `series/presence-series.json`, which come from the run files named in `MANIFEST.json`. Rebuild the bundle and this page rebuilds with it.*
 
 ## 1. The panel, and what was measured each day
 
@@ -12,7 +12,7 @@
 | 2026-08-14 | 2026-08-14T03:43:47Z | 3869 | 3583 | 435 | 12.14 % | [11.11 %, 13.25 %] |
 | 2026-08-15 | 2026-08-15T03:37:40Z | 3869 | 3576 | 438 | 12.25 % | [11.21 %, 13.36 %] |
 
-**Across 5 measured days the pooled public-absence rate of this panel moves between 12.14 % and 12.28 % — a spread of 0.14 percentage points.** This is the same panel measured again, so it is the instrument's test-retest reproducibility and not sampling error (`LIMITS.md` §5).
+**Across 5 measured days the pooled public-absence rate of this panel moves between 12.14 % and 12.28 % — a spread of 0.14 percentage points on the RAW panel.** On the balanced panel of units determinate on every day the spread is 0.0577 pp; the raw figure is larger and the excess is which units fell out as INDETERMINATE, not anything about the platform (first gauntlet, E17). This is the same panel measured again, so it is the instrument's test-retest reproducibility and not sampling error (`LIMITS.md` §5).
 
 ## 2. Public absence by the age of the video — newest day
 
@@ -54,10 +54,10 @@
 | stratum | what it is | in the rate | publicly absent | absent rate |
 |---|---|---|---|---|
 | `F-forum` | public comments and stories of one technology forum | 448 | 66 | 14.73 % |
-| `W-article` | article space of 21 encyclopedia language editions | 2371 | 259 | 10.92 % |
+| `W-article` | article space of 37 encyclopedia language editions | 2371 | 259 | 10.92 % |
 | `W-other-ns` | non-article namespaces of the same editions | 757 | 113 | 14.93 % |
 
-**Excluded from every rate on the newest day:** 249 identifiers of the `B-truncated` control arm, which are display-truncated strings and not videos; 44 observations that ended in a transport failure or an unexpected status (`INDETERMINATE`); and 7 identifiers that carry no decodable creation time and are therefore absent from the age-banded tables only.
+**Excluded from every rate on the newest day:** 249 identifiers of the `B-truncated` control arm, which are display-truncated strings, 248 of 249 of which do not resolve (one is a real video predating the current identifier scheme — first gauntlet, E7); 44 observations that ended in a transport failure or an unexpected status (`INDETERMINATE`); and 7 identifiers that carry no decodable creation time and are therefore absent from the age-banded tables only.
 
 ## 5. How much this panel moves at all
 
