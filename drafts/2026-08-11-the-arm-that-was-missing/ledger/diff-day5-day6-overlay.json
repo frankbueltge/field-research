@@ -20,10 +20,10 @@
   "verdict": "COMPARABLE"
  },
  "corrections_applied": {
-  "overlay": null,
+  "overlay": "ledger/corrections.json",
   "n": 0,
   "rows": [],
-  "note": "raw run files, no overlay applied"
+  "note": "A corrected state is a reading this arc's own confirmation step refuted with five immediate re-requests. The run files are unchanged; this diff reads them through the overlay and says so here."
  },
  "observed_in_both": 3869,
  "determinate_in_both": 3776,

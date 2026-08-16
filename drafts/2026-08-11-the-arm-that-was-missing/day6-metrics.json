@@ -1,46 +1,100 @@
 {
  "schema": "field-research/window-interval/1",
- "written_by": "day6_metrics.py, session 122, 2026-08-16",
+ "computed_by": "day6_metrics.py, session 123",
  "interval": 5,
  "run": {
   "file": "ledger/run-2026-08-16T0337Z.json",
-  "run_utc_start": "2026-08-16T03:37:40Z",
-  "run_utc_end": "2026-08-16T05:26:39Z",
-  "seconds": 6538.9,
-  "requested": 3869,
+  "utc_start": "2026-08-16T03:37:40Z",
+  "utc_end": "2026-08-16T05:28:50Z",
+  "seconds": 6669.6,
   "planned": 3869,
+  "requested": 3869,
   "stopped": null,
   "vantage_asn": "AS396982",
-  "vantage_country": "US",
-  "probe_identical_to_day5": true
+  "complete": true
  },
  "interval_days": 1.0,
- "previous_run": {
-  "file": "ledger/run-2026-08-15T0337Z.json",
-  "run_utc_start": "2026-08-15T03:37:40Z"
+ "vantage_guard": {
+  "run1_asn": "AS396982",
+  "run2_asn": "AS396982",
+  "same_autonomous_system": true,
+  "verdict": "COMPARABLE"
  },
- "arm": "overlay-corrected; the raw diff is the primary record and is published beside it",
- "retrievable_at_day5_and_determinate_at_day6": 3106,
- "confirmed_losses": 0,
- "absent_at_day5_and_determinate_at_day6": 432,
- "confirmed_returns": 1,
- "return_rate": 0.0023148148148148147,
- "return_rate_wilson": [
-  0.0004087385899213536,
-  0.012993976329120117
- ],
- "loss_rate": 0.0,
- "loss_rate_wilson": [
-  0.0,
-  0.0012352587337206575
- ],
- "movers": [
-  {
-   "vid": "7118519163416497450",
-   "from": "NOT-RETRIEVABLE",
-   "to": "RETRIEVABLE",
-   "arm": "B"
+ "observed_in_both": 3869,
+ "determinate_in_both": 3776,
+ "touching_indeterminate": 93,
+ "apparent_transitions_raw": 1,
+ "apparent_transitions_overlay": 1,
+ "overlay_rows_applied": 0,
+ "k4": "PASSES \u2014 every transition confirmed",
+ "confirmed_this_interval": {
+  "returns": 1,
+  "losses": 0,
+  "vids": [
+   {
+    "vid": "7118519163416497450",
+    "from": "NOT-RETRIEVABLE",
+    "to": "RETRIEVABLE"
+   }
+  ]
+ },
+ "denominators_this_interval": {
+  "retrievable_at_day5_and_determinate_at_day6": 3103,
+  "absent_at_day5_and_determinate_at_day6": 673
+ },
+ "series_after_this_interval": {
+  "all_readings": {
+   "NOT-RETRIEVABLE->RETRIEVABLE": {
+    "n": 6,
+    "confirmed": 6,
+    "refuted": 0
+   },
+   "RETRIEVABLE->NOT-RETRIEVABLE": {
+    "n": 3,
+    "confirmed": 1,
+    "refuted": 2
+   }
+  },
+  "genuine_transitions_only": {
+   "NOT-RETRIEVABLE->RETRIEVABLE": {
+    "n": 4,
+    "confirmed": 4,
+    "refuted": 0
+   },
+   "RETRIEVABLE->NOT-RETRIEVABLE": {
+    "n": 3,
+    "confirmed": 1,
+    "refuted": 2
+   }
+  },
+  "n_artefact_echoes": 2,
+  "n_sidecars": 5
+ },
+ "per_arm_counts_day6": {
+  "A": {
+   "RETRIEVABLE": 1944,
+   "NOT-RETRIEVABLE": 235,
+   "INDETERMINATE": 22
+  },
+  "A-new": {
+   "RETRIEVABLE": 171,
+   "NOT-RETRIEVABLE": 23,
+   "INDETERMINATE": 3
+  },
+  "A2": {
+   "NOT-RETRIEVABLE": 114,
+   "RETRIEVABLE": 649,
+   "INDETERMINATE": 5
+  },
+  "B": {
+   "RETRIEVABLE": 380,
+   "NOT-RETRIEVABLE": 64,
+   "INDETERMINATE": 10
+  },
+  "B-truncated": {
+   "RETRIEVABLE": 1,
+   "NOT-RETRIEVABLE": 244,
+   "INDETERMINATE": 4
   }
- ],
- "the_intervals_travel_unwidened": "these Wilson brackets take the video as the independent unit. Losses in this corpus clump by cited account and every proportion this arc publishes takes the crossed design effect (1.9900, session 116); condition 7 of memory/downstream-commitments.md governs any reuse. Six confirmed events across five intervals is not a rate and this practice does not turn it into one."
+ }
 }

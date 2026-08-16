@@ -1,112 +1,87 @@
 #!/usr/bin/env python3
-"""Interval 5 of the pre-registered window, computed to a file (session 122, 2026-08-16).
+"""day6_metrics - the day-6 interval, computed to a file rather than typed into prose.
 
-The same shape as `day5_metrics.py`, and written for the same reason this session's own erratum E1
-gave: a figure quoted in prose that lives only in a shell one-liner cannot be re-checked. Every
-number in `DAY6-2026-08-16.md` comes from here.
-
-The panel is the OVERLAY-CORRECTED one (`ledger/corrections.json`, per
-`PREREGISTRATION-119-overlay-use.md`); the raw diff stays primary and is published beside it.
-Exclusions, unchanged: arm `B-truncated` is not videos; either day INDETERMINATE drops the pair.
-
-    python3 day6_metrics.py [--out day6-metrics.json]
-
-No request leaves the machine: this is arithmetic over run files already on disk.
+Session 123, 2026-08-16. Same shape as `day5_metrics.py`. Every figure the journal entry and the
+day-6 record quote comes from here.
 """
-import argparse
 import calendar
 import json
 import time
 
-import power_audit as pa
+D5 = "ledger/run-2026-08-15T0337Z.json"
+D6 = "ledger/run-2026-08-16T0337Z.json"
+DIFF = "ledger/diff-day5-day6.json"
+CONFIRM = "ledger/transition-confirm-2026-08-16.json"
+RECORD = "confirmation-record-121.json"
 
-DAY5 = "ledger/run-2026-08-15T0337Z.json"
-DAY6 = "ledger/run-2026-08-16T0337Z.json"
-CORRECTIONS = "ledger/corrections.json"
 
-
-def t(s):
+def ts(s):
     return calendar.timegm(time.strptime(s, "%Y-%m-%dT%H:%M:%SZ"))
 
 
-def states(path, overlay):
-    run = json.load(open(path))
-    out = {}
-    for o in run["observations"]:
-        vid, st = str(o["vid"]), o["state"]
-        c = overlay.get((path, vid))
-        if c and st == c["state_in_run_file"]:
-            st = c["corrected_state"]
-        out[vid] = (st, o["arm"])
-    return run, out
+d5, d6 = json.load(open(D5)), json.load(open(D6))
+diff = json.load(open(DIFF))
+conf = json.load(open(CONFIRM))
+rec = json.load(open(RECORD))
 
+interval_days = (ts(d6["run_utc_start"]) - ts(d5["run_utc_start"])) / 86400.0
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default="day6-metrics.json")
-    a = ap.parse_args()
+# The denominators the interval's own rates are taken over, computed from the two run files.
+s5 = {str(o["vid"]): o["state"] for o in d5["observations"]}
+s6 = {str(o["vid"]): o["state"] for o in d6["observations"]}
+both = [v for v in s5 if v in s6]
+ret_at_5_det_at_6 = [v for v in both if s5[v] == "RETRIEVABLE" and s6[v] != "INDETERMINATE"]
+abs_at_5_det_at_6 = [v for v in both if s5[v] == "NOT-RETRIEVABLE" and s6[v] != "INDETERMINATE"]
 
-    corr = json.load(open(CORRECTIONS))
-    overlay = {(c["run_file"], str(c["vid"])): c for c in corr["corrections"]}
-    r5, s5 = states(DAY5, overlay)
-    r6, s6 = states(DAY6, overlay)
+confirmed = [r for r in conf["results"] if r["all_passes_agree_with_new_state"]]
+losses = [r for r in confirmed if r["to"] == "NOT-RETRIEVABLE"]
+returns = [r for r in confirmed if r["to"] == "RETRIEVABLE"]
 
-    ret_base = loss = abs_base = ret = 0
-    movers = []
-    for vid in set(s5) & set(s6):
-        a5, arm = s5[vid]
-        a6, _ = s6[vid]
-        if arm == "B-truncated" or "INDETERMINATE" in (a5, a6):
-            continue
-        if a5 == "RETRIEVABLE":
-            ret_base += 1
-            if a6 == "NOT-RETRIEVABLE":
-                loss += 1
-                movers.append({"vid": vid, "from": a5, "to": a6, "arm": arm})
-        elif a5 == "NOT-RETRIEVABLE":
-            abs_base += 1
-            if a6 == "RETRIEVABLE":
-                ret += 1
-                movers.append({"vid": vid, "from": a5, "to": a6, "arm": arm})
-
-    rlo, rhi = pa.wilson(ret, abs_base)
-    llo, lhi = pa.wilson(loss, ret_base)
-    interval = (t(r6["run_utc_start"]) - t(r5["run_utc_start"])) / 86400.0
-
-    out = {
-        "schema": "field-research/window-interval/1",
-        "written_by": "day6_metrics.py, session 122, 2026-08-16",
-        "interval": 5,
-        "run": {"file": DAY6, "run_utc_start": r6["run_utc_start"],
-                "run_utc_end": r6["run_utc_end"], "seconds": r6["seconds"],
-                "requested": r6["requested"], "planned": r6["planned"],
-                "stopped": r6["stopped"], "vantage_asn": r6["vantage"]["asn"],
-                "vantage_country": r6["vantage"]["country"],
-                "probe_identical_to_day5": r6["probe"] == r5["probe"]},
-        "interval_days": interval,
-        "previous_run": {"file": DAY5, "run_utc_start": r5["run_utc_start"]},
-        "arm": "overlay-corrected; the raw diff is the primary record and is published beside it",
-        "retrievable_at_day5_and_determinate_at_day6": ret_base,
-        "confirmed_losses": loss,
-        "absent_at_day5_and_determinate_at_day6": abs_base,
-        "confirmed_returns": ret,
-        "return_rate": None if not abs_base else ret / abs_base,
-        "return_rate_wilson": [rlo, rhi],
-        "loss_rate": None if not ret_base else loss / ret_base,
-        "loss_rate_wilson": [llo, lhi],
-        "movers": movers,
-        "the_intervals_travel_unwidened": (
-            "these Wilson brackets take the video as the independent unit. Losses in this corpus "
-            "clump by cited account and every proportion this arc publishes takes the crossed "
-            "design effect (1.9900, session 116); condition 7 of memory/downstream-commitments.md "
-            "governs any reuse. Six confirmed events across five intervals is not a rate and this "
-            "practice does not turn it into one."),
-    }
-    json.dump(out, open(a.out, "w"), indent=1)
-    print(json.dumps({k: out[k] for k in (
-        "interval_days", "retrievable_at_day5_and_determinate_at_day6", "confirmed_losses",
-        "absent_at_day5_and_determinate_at_day6", "confirmed_returns")}, indent=1))
-
-
-if __name__ == "__main__":
-    main()
+out = {
+    "schema": "field-research/window-interval/1",
+    "computed_by": "day6_metrics.py, session 123",
+    "interval": 5,
+    "run": {
+        "file": D6,
+        "utc_start": d6["run_utc_start"],
+        "utc_end": d6["run_utc_end"],
+        "seconds": d6.get("seconds"),
+        "planned": d6.get("planned"),
+        "requested": d6.get("requested"),
+        "stopped": d6.get("stopped"),
+        "vantage_asn": d6["vantage"]["asn"],
+        "complete": d6.get("requested") == d6.get("planned") and not d6.get("stopped"),
+    },
+    "interval_days": round(interval_days, 4),
+    "vantage_guard": diff["vantage_guard"],
+    "observed_in_both": diff["observed_in_both"],
+    "determinate_in_both": diff["determinate_in_both"],
+    "touching_indeterminate": diff["touching_indeterminate"],
+    "apparent_transitions_raw": diff["n_transitions"],
+    "apparent_transitions_overlay": json.load(
+        open("ledger/diff-day5-day6-overlay.json"))["n_transitions"],
+    "overlay_rows_applied": json.load(
+        open("ledger/diff-day5-day6-overlay.json"))["corrections_applied"]["n"],
+    "k4": conf["K4"],
+    "confirmed_this_interval": {
+        "returns": len(returns),
+        "losses": len(losses),
+        "vids": [{"vid": r["vid"], "from": r["from"], "to": r["to"]} for r in confirmed],
+    },
+    "denominators_this_interval": {
+        "retrievable_at_day5_and_determinate_at_day6": len(ret_at_5_det_at_6),
+        "absent_at_day5_and_determinate_at_day6": len(abs_at_5_det_at_6),
+    },
+    "series_after_this_interval": {
+        "all_readings": rec["all_readings"],
+        "genuine_transitions_only": rec["genuine_transitions_only"],
+        "n_artefact_echoes": rec["n_artefact_echoes"],
+        "n_sidecars": len(rec["sources"]["sidecars"]),
+    },
+    "per_arm_counts_day6": d6.get("counts"),
+}
+json.dump(out, open("day6-metrics.json", "w"), indent=1)
+print(json.dumps({k: out[k] for k in
+                  ["interval_days", "apparent_transitions_raw", "k4",
+                   "confirmed_this_interval", "denominators_this_interval",
+                   "series_after_this_interval"]}, indent=1))

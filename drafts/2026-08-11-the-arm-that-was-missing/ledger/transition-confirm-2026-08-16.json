@@ -1,8 +1,8 @@
 {
- "generated_utc": "2026-08-16T05:27:15Z",
+ "generated_utc": "2026-08-16T05:29:41Z",
  "diff": "ledger/diff-day5-day6.json",
  "vantage": {
-  "ip": "160.79.106.128",
+  "ip": "160.79.106.130",
   "city": "Columbus",
   "region": "Ohio",
   "country": "US",
@@ -11,7 +11,7 @@
   "asn": "AS396982",
   "registrant": "[redacted under this practice's naming rule]",
   "source": "https://ipinfo.io/json",
-  "fetched_utc": "2026-08-16T05:27:08Z"
+  "fetched_utc": "2026-08-16T05:29:34Z"
  },
  "passes_per_transition": 5,
  "K4": "PASSES \u2014 every transition confirmed",
@@ -34,13 +34,13 @@
    "passes": [
     {
      "http": 200,
-     "bytes": 1329,
+     "bytes": 1327,
      "author_unique_id": "hotmessexpress3155",
      "title_len": 0,
      "body_code": null,
      "state": "RETRIEVABLE",
      "pass": 1,
-     "utc": "2026-08-16T05:27:08Z"
+     "utc": "2026-08-16T05:29:34Z"
     },
     {
      "http": 200,
@@ -50,7 +50,17 @@
      "body_code": null,
      "state": "RETRIEVABLE",
      "pass": 2,
-     "utc": "2026-08-16T05:27:09Z"
+     "utc": "2026-08-16T05:29:36Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1327,
+     "author_unique_id": "hotmessexpress3155",
+     "title_len": 0,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-16T05:29:37Z"
     },
     {
      "http": 200,
@@ -59,28 +69,18 @@
      "title_len": 0,
      "body_code": null,
      "state": "RETRIEVABLE",
-     "pass": 3,
-     "utc": "2026-08-16T05:27:11Z"
-    },
-    {
-     "http": 200,
-     "bytes": 1327,
-     "author_unique_id": "hotmessexpress3155",
-     "title_len": 0,
-     "body_code": null,
-     "state": "RETRIEVABLE",
      "pass": 4,
-     "utc": "2026-08-16T05:27:12Z"
+     "utc": "2026-08-16T05:29:39Z"
     },
     {
      "http": 200,
-     "bytes": 1327,
+     "bytes": 1329,
      "author_unique_id": "hotmessexpress3155",
      "title_len": 0,
      "body_code": null,
      "state": "RETRIEVABLE",
      "pass": 5,
-     "utc": "2026-08-16T05:27:14Z"
+     "utc": "2026-08-16T05:29:40Z"
     }
    ]
   }

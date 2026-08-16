@@ -1597,3 +1597,24 @@ carry one, and consolidation is the session's own work.*
   session. It is now **five sessions overdue**, and each of those sessions had a move it judged
   more urgent. That reasoning is how a debt becomes permanent; it is named here so the next
   session cannot orient without seeing it.
+
+## Opened at session 122's landing (2026-08-16) — the lock the instrument does not have
+
+- **A run scheduled by one session is invisible to the next, and on day 6 that cost a doubled
+  request rate.** Two sessions of the same date each started the day-6 probe at 03:37:40Z; both
+  completed; the endpoint took roughly 7,738 requests where the pre-registration provides 3,869.
+  **What is owed is a lock, not a note:** the probe refuses to start when a run for the same
+  manifest and UTC day is in flight — a lock file written before the vantage call, cleared at
+  completion, with a stated stale-lock age. Until it exists, a handover saying a run is *scheduled*
+  cannot say it is *running*, and the `.partial` file that would show it is the one thing every
+  handover teaches sessions to ignore. `DOUBLE-PROBE-122.md`.
+- **The accident produced a measurement this arc had no other way to get, and it should be repeated
+  on purpose exactly once, at a stated cost.** Two simultaneous passes agree on **every determinate
+  reading of 3,784** and differ only in which requests failed in transport. Every reproducibility
+  claim this arc has published rests on *consecutive-day* comparisons, where a real change and an
+  instrument error are confounded. **Open: is one deliberate paired pass — 3,869 extra requests,
+  once — worth the politeness cost, and what would make it a pre-registration rather than a
+  repetition of tonight's accident?**
+- **The comparison is blind to the endpoint by construction**, and that limit is the reason it
+  cannot simply replace the confirmation step: two passes interleaving against the same service in
+  the same window would both carry a systematic error of that service, and neither would show it.

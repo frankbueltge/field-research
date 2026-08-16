@@ -1,0 +1,523 @@
+{
+ "schema": "field-research/simultaneous-probe-comparison/1",
+ "written_by": "double_probe_122.py, session 122, 2026-08-16, at landing",
+ "what_this_is": "two complete, independent passes of the same instrument over the same panel, from the same vantage, started at the same second by two sessions of the same date that did not know about each other. It is a test-retest measurement with the time gap removed, which no run of this window can otherwise provide.",
+ "the_cost_first": "for 109 minutes the endpoint received twice this instrument's one-request-per-second discipline from this house. That was nobody's decision and must not recur. It is stated before the result because a finding produced by a rule being broken does not retire the rule.",
+ "runs": {
+  "a_scheduled_by_session_122": {
+   "file": "ledger/run-2026-08-16T0337Z-second-probe.json",
+   "start": "2026-08-16T03:37:40Z",
+   "end": "2026-08-16T05:26:39Z",
+   "seconds": 6538.9,
+   "requested": 3869,
+   "vantage_asn": "AS396982",
+   "counts": {
+    "A": {
+     "RETRIEVABLE": 1942,
+     "NOT-RETRIEVABLE": 235,
+     "INDETERMINATE": 24
+    },
+    "A-new": {
+     "RETRIEVABLE": 173,
+     "NOT-RETRIEVABLE": 23,
+     "INDETERMINATE": 1
+    },
+    "A2": {
+     "NOT-RETRIEVABLE": 112,
+     "RETRIEVABLE": 647,
+     "INDETERMINATE": 9
+    },
+    "B": {
+     "RETRIEVABLE": 385,
+     "NOT-RETRIEVABLE": 64,
+     "INDETERMINATE": 5
+    },
+    "B-truncated": {
+     "RETRIEVABLE": 1,
+     "NOT-RETRIEVABLE": 245,
+     "INDETERMINATE": 3
+    }
+   }
+  },
+  "b_landed_as_the_series_record": {
+   "file": "ledger/run-2026-08-16T0337Z.json",
+   "start": "2026-08-16T03:37:40Z",
+   "end": "2026-08-16T05:28:50Z",
+   "seconds": 6669.6,
+   "requested": 3869,
+   "vantage_asn": "AS396982",
+   "counts": {
+    "A": {
+     "RETRIEVABLE": 1944,
+     "NOT-RETRIEVABLE": 235,
+     "INDETERMINATE": 22
+    },
+    "A-new": {
+     "RETRIEVABLE": 171,
+     "NOT-RETRIEVABLE": 23,
+     "INDETERMINATE": 3
+    },
+    "A2": {
+     "NOT-RETRIEVABLE": 114,
+     "RETRIEVABLE": 649,
+     "INDETERMINATE": 5
+    },
+    "B": {
+     "RETRIEVABLE": 380,
+     "NOT-RETRIEVABLE": 64,
+     "INDETERMINATE": 10
+    },
+    "B-truncated": {
+     "RETRIEVABLE": 1,
+     "NOT-RETRIEVABLE": 244,
+     "INDETERMINATE": 4
+    }
+   }
+  }
+ },
+ "probe_blocks_identical": true,
+ "same_identifier_set": true,
+ "n_shared_units": 3869,
+ "n_disagreements": 84,
+ "n_determinate_in_both": 3784,
+ "n_disagreements_on_determinate_readings": 0,
+ "disagreement_kinds": {
+  "RETRIEVABLE vs INDETERMINATE": 35,
+  "INDETERMINATE vs RETRIEVABLE": 32,
+  "INDETERMINATE vs NOT-RETRIEVABLE": 9,
+  "NOT-RETRIEVABLE vs INDETERMINATE": 8
+ },
+ "indeterminate_counts": {
+  "run_a": 42,
+  "run_b": 44
+ },
+ "the_result": "every disagreement between the two passes involves INDETERMINATE on one side. On the readings that carry a claim -- RETRIEVABLE and NOT-RETRIEVABLE -- the two passes agree on every shared unit. This is the strongest reproducibility evidence this arc holds, and it was produced by a coordination failure rather than by a design.",
+ "what_it_does_not_establish": [
+  "it is one pair of passes on one day, not a rate. Nothing here says what a third pass, or a pass from a second vantage, or a pass on a different day would return.",
+  "the two passes are NOT independent of the endpoint's own state: they interleave against the same service in the same window, at twice the intended rate, so a systematic error of the endpoint at that moment would appear in both and this comparison could not see it.",
+  "agreement on determinate readings says nothing about whether either reading is TRUE. The refusal code remains semantically empty (session 109's three-arm control): NOT-RETRIEVABLE still means only 'not publicly retrievable from this vantage now'.",
+  "INDETERMINATE was already established as a property of the request rather than of the video (session 115). This confirms that on a within-moment comparison and does not extend it."
+ ],
+ "disagreeing_units": [
+  {
+   "vid": "6822761946790579461",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "6841239174465490182",
+   "run_a": "INDETERMINATE",
+   "run_b": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "6848862214808489217",
+   "run_a": "NOT-RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "6862108775214",
+   "run_a": "NOT-RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "6874134298862275841",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "6901502419847499010",
+   "run_a": "INDETERMINATE",
+   "run_b": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "69224330661409",
+   "run_a": "INDETERMINATE",
+   "run_b": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "6927846632235093250",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "6959055810357906694",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "6983923555671035141",
+   "run_a": "INDETERMINATE",
+   "run_b": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "6992159544663117082",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "70",
+   "run_a": "INDETERMINATE",
+   "run_b": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "7009622303369596161",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7018265731355643142",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7033760946728307995",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7051163700660538630",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7065724911901347118",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7091198550067006725",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7104742170426641710",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "710602314370956011",
+   "run_a": "INDETERMINATE",
+   "run_b": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "7114756278756363562",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7115358275905801473",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7122391438750469381",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7137962667368582427",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7149652714165718278",
+   "run_a": "NOT-RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7164791770516032810",
+   "run_a": "NOT-RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7169586172967",
+   "run_a": "NOT-RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "717841",
+   "run_a": "INDETERMINATE",
+   "run_b": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "7181491277194611973",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7182064544536218922",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7200580894640311554",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7225134983709478186",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7229174779125763371",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7248763909920836869",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7258394490145099050",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7259858657855294721",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7262013087568645422",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7274102687300422944",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7274134733829770501",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7280012345678901234",
+   "run_a": "INDETERMINATE",
+   "run_b": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "7284233199947926786",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7286873548621139230",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7290339503376485675",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7303595967733976353",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7311681103713242373",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7318444547636350251",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7329236420592258337",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7334529963066019114",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7342650412849270059",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7348100501977828640",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7358144823108373",
+   "run_a": "NOT-RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7365180313808456992",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7373645420318248224",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7385697947494649095",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7395663982247398702",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7415070728749387038",
+   "run_a": "NOT-RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7419054223586757918",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7420887315419041030",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7428875076570828050",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7438366744776903992",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7439424791976627512",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7446083806882221358",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7447633104921021728",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7447917333416250646",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7452514071393488149",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7454560007216958738",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7462497969900768518",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7475364253319302405",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7481727687292226822",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7486385264588279095",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7487511803417742600",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7489245893070294315",
+   "run_a": "INDETERMINATE",
+   "run_b": "NOT-RETRIEVABLE"
+  },
+  {
+   "vid": "7496492789715324215",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7505837083274120478",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7512807347148999943",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "751772710192",
+   "run_a": "NOT-RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7523244140281302294",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7529628259315666190",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7558807969350126856",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7562213496113466646",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7584876341267270943",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7605072205495471367",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  },
+  {
+   "vid": "7628320488414137614",
+   "run_a": "RETRIEVABLE",
+   "run_b": "INDETERMINATE"
+  },
+  {
+   "vid": "7636173800861633822",
+   "run_a": "INDETERMINATE",
+   "run_b": "RETRIEVABLE"
+  }
+ ]
+}

@@ -1443,3 +1443,21 @@ Machine source for every figure: `gauntlet-followup-122.json`.*
   and Fisher *p*-value agreed, the confirmation-record arithmetic reconciled exactly, and
   `deliverable/` is byte-untouched by this session. **Four gauntlets have now failed on this bundle
   and not one has failed on a measurement.**
+
+### Day 6 (interval 5), appended after the run closed
+
+- **The series has five intervals and has still never confirmed more than one loss.** Interval 5:
+  **3,103** units retrievable at day 5 and determinate at day 6 → **0** confirmed losses; **673**
+  absent → **1** confirmed return, five of five re-requests agreeing. Genuine transitions across
+  the whole series: **returns 4 of 4 confirmed, losses 1 of 3.** Raw readings: returns **6 of 6**.
+  Both correct, not the same quantity (standing condition 8).
+- **Interval 5 is exactly 1.0000 days** because the probe was held to the previous run's own start
+  second — arithmetic, not luck, and worth naming only because the alternative was a hole in the
+  series.
+- **A defect this practice published in the evening was falsified by its own instrument before
+  morning.** `ERRATA-123.md` E3 named a section heading — *"Six events is not a rate"* — as a count
+  spelled as a word and therefore invisible to this session's own digit-based prose audit, and said
+  it would be wrong the moment a fifth sidecar existed. The fifth sidecar arrived the same night and
+  the true count is **seven**. **The class — a figure that is right now and wrong later — is the
+  same one session 122 measured as the frozen-reference drift**, and it recurred inside the repair
+  built for it, in the file that names the repair.
