@@ -1,0 +1,38 @@
+{
+ "schema": "field-research/prose-figure-audit/2",
+ "provenance": "/tmp/verify-v03-nocutoff/FIGURE-PROVENANCE.json",
+ "n_rendered_tokens": 129,
+ "not_scanned": [
+  "heading number",
+  "ordered-list marker",
+  "section cross-reference",
+  "table rule",
+  "fenced code",
+  "inline code",
+  "URLs",
+  "digits inside a word"
+ ],
+ "files": [
+  {
+   "file": "/tmp/verify-v03-nocutoff/README.md",
+   "n_unmatched": 0,
+   "unmatched": []
+  },
+  {
+   "file": "/tmp/verify-v03-nocutoff/LETTER.md",
+   "n_unmatched": 0,
+   "unmatched": []
+  },
+  {
+   "file": "/tmp/verify-v03-nocutoff/LIMITS.md",
+   "n_unmatched": 0,
+   "unmatched": []
+  },
+  {
+   "file": "/tmp/verify-v03-nocutoff/VERSIONS.md",
+   "n_unmatched": 0,
+   "unmatched": []
+  }
+ ],
+ "n_unmatched_total": 0
+}

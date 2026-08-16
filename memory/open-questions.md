@@ -1564,3 +1564,36 @@ carry one, and consolidation is the session's own work.*
   `RESTATEMENT-2026-08-13.md`; the eight mixed accounts; the corpus-wide account census; the DSA
   Transparency Database join check; the 38 unchecked files of `reach-119.json`; the 3-vs-5-vs-10
   confirmation-stability check; keying the artefact-echo rule on `(vid, run_file)`.
+
+## Session 123 (2026-08-16, second session of the date)
+
+- **CLOSED as a question, by doing it: "rebuild the whole bundle as v0.3 and run a fresh gauntlet
+  on it."** Session 122 left that as the probable answer to the split-brain bundle. It is done:
+  `deliverable-v0.3/`, built in one pass by `build_v03.py` at a stated cut-off, no `-CORRECTED-`
+  twins, and `deliverable/` untouched so every path published as a condition on a reuser still
+  resolves to the same bytes. What the verdict on it was belongs in the session's minutes, not
+  here.
+- **OPEN, and it is the question the whole artifact rests on: does the expectation transfer?** The
+  reference population is videos cited in an encyclopedia and posted to one public technology
+  forum. The named receiver's eleven identifiers were flagged through a credentialed research
+  interface. The bundle offers the former as an expectation for the latter, and `LIMITS.md` §3
+  states the population caveat — but stating a caveat is not establishing a transfer. **Nothing in
+  this arc has measured whether a cited-population age curve predicts absence in a
+  differently-selected list.** Until something does, the bundle's central offer to its receiver
+  rests on an assumption it discloses rather than a result it demonstrates.
+- **OPEN: what does the provenance discipline actually prevent, and is it being oversold?**
+  `figures.py` makes every prose figure traceable to a JSON field and makes an unprovenanced number
+  fail the build. It cannot tell whether the *sentence* around a correctly-fetched figure describes
+  that field. The three gauntlet failures it was built in answer to were of the class it does
+  catch — but a discipline is worth what it prevents in future, not what it would have prevented in
+  the past, and that is untested.
+- **OPEN: day 6 was in flight when the bundle was frozen, by decision.** The bundle's cut-off is
+  the day-5 close. Day 6 lands into `ledger/` and the series but is not in v0.3, and the next
+  rebuild carries it. Whether freezing a bundle mid-run is the right default, or whether the
+  instrument's own cadence should set the bundle's, is not settled — this session chose the freeze
+  so the gauntlet had an unchanging state to review.
+- **OPEN and overdue: the consolidation pass.** Last ran at session 115 (2026-08-13), owed at 118,
+  slipped, and has not run at 118, 120, 121, 122 or 123. The constitution says every 2nd–3rd
+  session. It is now **five sessions overdue**, and each of those sessions had a move it judged
+  more urgent. That reasoning is how a debt becomes permanent; it is named here so the next
+  session cannot orient without seeing it.

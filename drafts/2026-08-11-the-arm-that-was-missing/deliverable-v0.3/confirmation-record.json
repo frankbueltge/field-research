@@ -1,0 +1,195 @@
+{
+ "schema": "field-research/confirmation-record/1",
+ "built_by": "confirmation_record_121.py, session 121",
+ "sources": {
+  "sidecars": [
+   "ledger/transition-confirm-2026-08-12.json",
+   "ledger/transition-confirm-2026-08-13.json",
+   "ledger/transition-confirm-2026-08-14.json",
+   "ledger/transition-confirm-2026-08-15.json"
+  ],
+  "corrections": "ledger/corrections.json",
+  "corrections_sha256": "b08e4c531e79cac24a91cac17c51e00ccaa7cac1e064a4282dbc7b89372a8e7a"
+ },
+ "passes_per_reading": 5,
+ "what_a_pass_is": "one further request to the same endpoint for the same identifier, at the instrument's own 1.0 s spacing, immediately after the reading being tested. A reading is CONFIRMED only if all five agree with it.",
+ "all_readings": {
+  "NOT-RETRIEVABLE->RETRIEVABLE": {
+   "n": 5,
+   "confirmed": 5,
+   "refuted": 0
+  },
+  "RETRIEVABLE->NOT-RETRIEVABLE": {
+   "n": 3,
+   "confirmed": 1,
+   "refuted": 2
+  }
+ },
+ "genuine_transitions_only": {
+  "NOT-RETRIEVABLE->RETRIEVABLE": {
+   "n": 3,
+   "confirmed": 3,
+   "refuted": 0
+  },
+  "RETRIEVABLE->NOT-RETRIEVABLE": {
+   "n": 3,
+   "confirmed": 1,
+   "refuted": 2
+  }
+ },
+ "n_artefact_echoes": 2,
+ "readings": [
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-12.json",
+   "sidecar_sha256": "9466ca930f512a88e2ae0415dcf1a4754576ad43554663c1efdfd71f74230b40",
+   "generated_utc": "2026-08-12T05:30:38Z",
+   "vid": "7446448990935354670",
+   "handle": "iidahmer",
+   "direction": "NOT-RETRIEVABLE->RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-13.json",
+   "sidecar_sha256": "8f3eaa732615149af877df1406c014f043680da87def8d17886943df3b80d71f",
+   "generated_utc": "2026-08-13T06:20:05Z",
+   "vid": "7368171405361351954",
+   "handle": "arutz_7",
+   "direction": "RETRIEVABLE->NOT-RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": false,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-14.json",
+   "sidecar_sha256": "4ca49daa786550aa8c8cc73f15f1b106c87e2c229539a934abfb18e0d4d22967",
+   "generated_utc": "2026-08-14T05:34:50Z",
+   "vid": "7016669364938149122",
+   "handle": "ask__dani",
+   "direction": "RETRIEVABLE->NOT-RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": false,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-14.json",
+   "sidecar_sha256": "4ca49daa786550aa8c8cc73f15f1b106c87e2c229539a934abfb18e0d4d22967",
+   "generated_utc": "2026-08-14T05:34:50Z",
+   "vid": "7266499914014723370",
+   "handle": "sammytquinn",
+   "direction": "NOT-RETRIEVABLE->RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-14.json",
+   "sidecar_sha256": "4ca49daa786550aa8c8cc73f15f1b106c87e2c229539a934abfb18e0d4d22967",
+   "generated_utc": "2026-08-14T05:34:50Z",
+   "vid": "7298893164335729926",
+   "handle": "stevenjauro",
+   "direction": "NOT-RETRIEVABLE->RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-14.json",
+   "sidecar_sha256": "4ca49daa786550aa8c8cc73f15f1b106c87e2c229539a934abfb18e0d4d22967",
+   "generated_utc": "2026-08-14T05:34:50Z",
+   "vid": "7368171405361351954",
+   "handle": "arutz_7",
+   "direction": "NOT-RETRIEVABLE->RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": true,
+   "echo_note": "this return reverses an absence the session-119 overlay corrects: the absence itself failed five re-requests, so the return is the arc's own refuted reading coming back, not a platform event"
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-15.json",
+   "sidecar_sha256": "f81cdd2e07d13887e5b0c11cd58786c9e6ddf293e09bad258ce58459ee8ef2ca",
+   "generated_utc": "2026-08-15T05:32:21Z",
+   "vid": "7016669364938149122",
+   "handle": "ask__dani",
+   "direction": "NOT-RETRIEVABLE->RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": true,
+   "echo_note": "this return reverses an absence the session-119 overlay corrects: the absence itself failed five re-requests, so the return is the arc's own refuted reading coming back, not a platform event"
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-15.json",
+   "sidecar_sha256": "f81cdd2e07d13887e5b0c11cd58786c9e6ddf293e09bad258ce58459ee8ef2ca",
+   "generated_utc": "2026-08-15T05:32:21Z",
+   "vid": "7234106298021727515",
+   "handle": "avfcofficial",
+   "direction": "RETRIEVABLE->NOT-RETRIEVABLE",
+   "passes": [
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  }
+ ]
+}
