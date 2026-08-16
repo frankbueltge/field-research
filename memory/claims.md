@@ -1297,3 +1297,52 @@ second script written without reusing its code; both returned the same table.*
   20:00:33Z–20:00:44Z, against the day-5 confirmation's last pass at 05:32:20Z, same vantage.
   **n = 1, one identifier, one delay**, and it is the first time this arc has ever re-requested a
   confirmed absence at a delay of hours rather than seconds. It is not a persistence rate.
+
+## Session 122 (2026-08-16) — the frozen-reference drift, measured before it was repaired
+
+*Source for everything here: `drafts/2026-08-11-the-arm-that-was-missing/DRIFT-122.md`, computed by
+`drift_122.py` → `drift-122.json` and by `build_deliverable.py --cutoff 2026-08-14T23:59:59Z`.
+**None of it carries a verdict at the time of writing** — see the same session's `VERIFIER-122.md`
+and `INTERLOCUTOR-14.md` for what a reviewer made of it.*
+
+- **The defect is two defects and they behave differently in time.** The bookkeeping half is a
+  one-off displacement, as large as it will ever be the moment the file is written; the design half
+  starts at zero and grows every day the tool sits unused. Treating them as one thing is what let
+  the second one hide behind the first for three sessions.
+- **The gap between the shipped table's declared and actual reference time is 2.6803 days**, not
+  the "three days apart" of the session-120 errata (E6). Both are in the record; the measured one
+  has a script behind it. `2026-08-11T11:24:06Z` (actual) against `2026-08-14T03:43:47Z` (declared).
+- **`drift_122.py` reproduces the shipped `by_age_band` table from the run files before claiming
+  anything about it** (`reproduces_shipped_table: true`), and the corrected table is produced a
+  second, independent way by `build_deliverable.py`; the two agree cell for cell.
+- **Twenty-four units of 3,583 sit in a different band under the two clocks** (1 crossing
+  0-1y→1-2y, 6 1-2y→2-3y, 8 2-3y→3-4y, 5 3-4y→4-5y, 4 4-5y→5y+). **All twenty-four were
+  RETRIEVABLE**, verified against the day's run file with the overlay applied — so **no `absent`
+  count moves anywhere** and the pooled rate is identical to the last digit (435/3583). That is a
+  fact about this panel on this day, not a property of the defect.
+- **Every published age-band cell moves and three of the four gradient-test rows move**: pooled
+  3.6892× → 3.6439×, *p* 6.4466 × 10⁻¹⁰ → 7.6558 × 10⁻¹⁰; W-article 3.4013× → 3.3650×,
+  1.8036 × 10⁻⁶ → 3.2159 × 10⁻⁶; F-forum 3.7037× → 3.5714×, 9.4948 × 10⁻² → 9.8321 × 10⁻²;
+  **W-other-ns does not move at all** (4.8073×, 4.9425 × 10⁻⁴). **No conclusion changes.**
+- **The caller-side drift, on the reference population itself, with the table held fixed:**
+  +0.0035 pp at 1 day · +0.0342 pp at 7 · +0.2264 pp at 30 · +0.6105 pp at 90 · +1.1877 pp at 180 ·
+  +2.4225 pp at 365 · +4.1649 pp at 730. **It is arithmetic, not a forecast**: nothing was
+  re-measured at any horizon and every horizon past 7 days is counterfactual.
+- **The number worth having is the crossover: 26 days** — the day the growing design error first
+  exceeds the largest single cell error the bookkeeping half ever caused (0.1925 pp against
+  0.1826 pp). It is now `STALE_AFTER_DAYS` in the tool, so the threshold is measured rather than
+  picked.
+- **The drift is not monotone and the table says why.** The corrected 3-4y rate (16.1961 %) sits
+  fractionally above the corrected 4-5y rate (16.1926 %), so a list crossing four years old moves
+  the expectation slightly **down**. On the receiver's own eleven identifiers the drift is
+  **−0.0007 pp at 90 days** before turning to **+2.8446 pp at a year**.
+- **`presence_check.py` v0.3.0 prints both figures, computed on the caller's own list** — aged at
+  the table's reference time and aged at today — and names the reference-time one as the defensible
+  one. Tests 94 → 108. **Run against the live endpoint** (`functional-test-122.json`, 11
+  identifiers, vantage AS396982): table **1.9 days old**, drift **+0.0000 pp**. The defect is real
+  and today costs nothing, which is why nobody here saw it for eight sessions.
+- **The repair created a trap and closed it in the same commit.** Banding per day would have left
+  the series CSV's `band` column banded at the first day, so a receiver joining it to the corrected
+  table would have joined two bandings silently. The column is now `band_at_baseline` with one
+  `band_at_<day>` column per measured day, and an assertion in `build_deliverable.py` re-derives
+  every band at the declared time and fails the build on disagreement.

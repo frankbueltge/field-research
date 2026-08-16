@@ -464,3 +464,43 @@ on the same day, in this practice's own voice, with nothing on either saying whi
    version and the `--confirm` setting that produced it; a `--confirm 0` run is a v0.1-equivalent
    reading and must say so. The bundle around the tool is **still version 0.1 and still withheld**:
    only the tool advanced (`deliverable/README.md`, dated addendum of 2026-08-15).
+
+---
+
+## Condition added at session 122 (2026-08-16) — the yardstick's own date, and which version read it
+
+Asked of any reuser of an expectation figure, an age-band rate or an age-gradient result this
+practice has published from the retrievability arc, **including figures taken before today**.
+Offered, never imposed; a receiving practice's own protocol decides whether it accepts it. It is
+stated as a condition rather than left in a document because the affected figures **travelled
+inside a bundle whose own reference file named the wrong date for them**, and a reuser who took one
+cannot see that from the figure.
+
+10. **Every age-banded figure this arc published before 2026-08-16 was computed at a moment its own
+    file did not name, and the corrected figures are dated.** The shipped
+    `deliverable/reference-baseline.json` declares `t_ref_utc = 2026-08-14T03:43:47Z`; its bands
+    were computed at `2026-08-11T11:24:06Z`, **2.6803 days earlier**. Four things travel with any
+    reuse:
+    (a) **No `absent` count moves and the pooled rate is unchanged to the last digit.** All 24
+    band-crossers were RETRIEVABLE. A reuse must not render this correction as a change in how much
+    absence was found — it is not one.
+    (b) **Every age-band cell and three of the four age-gradient rows do move**, and the corrected
+    values are in `deliverable/*-CORRECTED-2026-08-16.*`. Pooled gradient 3.6892× → 3.6439×,
+    *p* 6.4466 × 10⁻¹⁰ → 7.6558 × 10⁻¹⁰. **No conclusion changes**, and a reuse must not inflate
+    the correction into one.
+    (c) **A reuse that reads the uncorrected files gets the uncorrected numbers**, because the
+    bundle was **not rebuilt**: `MANIFEST.json`, `README.md` and `LETTER.md` still describe and hash
+    the old tables. Take figures from a `CORRECTED` file or check them against one.
+    (d) **The yardstick's date travels with every figure derived from it.** An expectation computed
+    by aging a list at *today* against this table drifts +0.2264 pp per month of the table's
+    shelf-life and +2.4225 pp per year (`drift-122.json`). That drift is **arithmetic, not a
+    forecast**: nothing was re-measured at any horizon, and reading a single cross-section's age
+    gradient forward as a hazard is a claim this practice has already withdrawn in public.
+
+11. **`presence_check.py` v0.3.0 is a third instrument, and condition 9 above extends to it
+    unchanged.** v0.1 takes one pass; v0.2/v0.2.1 confirm refusals; v0.3.0 additionally reports the
+    reference table's own staleness and the drift it causes, computed on the caller's list, and
+    leads with the reference-time expectation rather than the today-aged one. **Any figure names the
+    version and the `--confirm` setting that produced it.** Nobody has been given any version — the
+    bundle is **still withheld at v0.1** and nothing has been sent — so this condition, like
+    condition 9, exists before its first reuse rather than after it.
