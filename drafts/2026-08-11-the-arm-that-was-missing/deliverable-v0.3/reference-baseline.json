@@ -1,0 +1,214 @@
+{
+ "schema": "field-research/public-presence-null/1",
+ "written_by": "build_deliverable.py, session 120, for the receiver bundle",
+ "what_this_measures": "public retrievability of a video identifier from one network vantage, through one credential-free endpoint, on one day. The refusal code is semantically empty: a synthetic identifier that never existed returns the same code. NOT-RETRIEVABLE DOES NOT MEAN DELETED. See LIMITS.md.",
+ "source_run": {
+  "file": "ledger/run-2026-08-15T0337Z.json",
+  "run_id": "2026-08-15T03:37:40Z (manifest carried a placeholder)",
+  "vantage_asn": "AS396982",
+  "sha256": "d1d14495b276746ff35c0655cfe4388f28b1ed4973fdce64b62c9420f59085f6"
+ },
+ "t_ref_utc": "2026-08-15T03:37:40Z",
+ "ages_computed_at_utc": "2026-08-15T03:37:40Z",
+ "shelf_life": {
+  "why_this_is_here": "this table is a measurement of one population on one day. A tool that ages a caller's list at TODAY and looks it up here is doing arithmetic against a clock that stopped. The size of that error was measured before it was disclosed: `drift-122.json`.",
+  "measured_drift_pp_by_days_after_t_ref": {
+   "1": 0.0035,
+   "7": 0.0342,
+   "30": 0.2264,
+   "90": 0.6105,
+   "180": 1.1877,
+   "365": 2.4225,
+   "730": 4.1649
+  },
+  "drift_is_on": "the reference population itself, re-aged against this fixed table; it is what the printed expectation does, NOT a forecast of what retrievability does",
+  "source": "drift_122.py, session 122, 2026-08-16"
+ },
+ "population": {
+  "n_units_in_run": 3869,
+  "excluded_from_rates": {
+   "arm_B_truncated": 249,
+   "indeterminate": 44,
+   "undatable": 7
+  },
+  "what_it_is": "videos cited in public across 37 language editions of one encyclopedia (article and non-article namespaces) and in the public comments and stories of one technology forum. The count was published as 21 in versions 0.1-0.3 and was corrected at the first gauntlet (V3/E4) and re-derived independently at session 123."
+ },
+ "pooled": {
+  "n": 3576,
+  "absent": 438,
+  "absent_rate": 0.12248322147651007,
+  "absent_ci": [
+   0.11214123543376028,
+   0.13363541946645416
+  ]
+ },
+ "by_age_band": {
+  "0-1y": {
+   "n": 493,
+   "absent": 23,
+   "absent_rate": 0.04665314401622718,
+   "absent_ci": [
+    0.03128587767247219,
+    0.06903074836075017
+   ]
+  },
+  "1-2y": {
+   "n": 773,
+   "absent": 60,
+   "absent_rate": 0.07761966364812418,
+   "absent_ci": [
+    0.06077694652527837,
+    0.0986396981659185
+   ]
+  },
+  "2-3y": {
+   "n": 787,
+   "absent": 94,
+   "absent_rate": 0.11944091486658195,
+   "absent_ci": [
+    0.09861134902605362,
+    0.14396756066860816
+   ]
+  },
+  "3-4y": {
+   "n": 672,
+   "absent": 111,
+   "absent_rate": 0.16517857142857142,
+   "absent_ci": [
+    0.1390208594224833,
+    0.1951425096256
+   ]
+  },
+  "4-5y": {
+   "n": 457,
+   "absent": 76,
+   "absent_rate": 0.16630196936542668,
+   "absent_ci": [
+    0.13497417177196142,
+    0.20319301314384436
+   ]
+  },
+  "5y+": {
+   "n": 387,
+   "absent": 69,
+   "absent_rate": 0.17829457364341086,
+   "absent_ci": [
+    0.1433782292347362,
+    0.21953480268830555
+   ]
+  }
+ },
+ "by_stratum": {
+  "F-forum": {
+   "n": 448,
+   "absent": 66,
+   "absent_rate": 0.14732142857142858,
+   "absent_ci": [
+    0.11750266424703781,
+    0.1831369874938652
+   ]
+  },
+  "W-article": {
+   "n": 2371,
+   "absent": 259,
+   "absent_rate": 0.10923660902572754,
+   "absent_ci": [
+    0.09730704733378787,
+    0.12243034055956586
+   ]
+  },
+  "W-other-ns": {
+   "n": 757,
+   "absent": 113,
+   "absent_rate": 0.14927344782034346,
+   "absent_ci": [
+    0.1256610341587034,
+    0.17642747082130544
+   ]
+  }
+ },
+ "by_year": {
+  "2018": {
+   "n": 3,
+   "absent": 0,
+   "absent_rate": 0.0,
+   "absent_ci": [
+    0.0,
+    0.5614970318706057
+   ]
+  },
+  "2019": {
+   "n": 34,
+   "absent": 8,
+   "absent_rate": 0.23529411764705882,
+   "absent_ci": [
+    0.12436985530756856,
+    0.3999613792668543
+   ]
+  },
+  "2020": {
+   "n": 164,
+   "absent": 32,
+   "absent_rate": 0.1951219512195122,
+   "absent_ci": [
+    0.14174134116102272,
+    0.26245830830844297
+   ]
+  },
+  "2021": {
+   "n": 322,
+   "absent": 52,
+   "absent_rate": 0.16149068322981366,
+   "absent_ci": [
+    0.12532754239773952,
+    0.20563543331507167
+   ]
+  },
+  "2022": {
+   "n": 526,
+   "absent": 83,
+   "absent_rate": 0.15779467680608364,
+   "absent_ci": [
+    0.12913612551368095,
+    0.191415345109149
+   ]
+  },
+  "2023": {
+   "n": 792,
+   "absent": 128,
+   "absent_rate": 0.16161616161616163,
+   "absent_ci": [
+    0.1376234059391092,
+    0.18887561712881518
+   ]
+  },
+  "2024": {
+   "n": 751,
+   "absent": 73,
+   "absent_rate": 0.09720372836218376,
+   "absent_ci": [
+    0.07802163457365627,
+    0.12048555799130944
+   ]
+  },
+  "2025": {
+   "n": 705,
+   "absent": 46,
+   "absent_rate": 0.06524822695035461,
+   "absent_ci": [
+    0.04927175929177431,
+    0.08593683725632491
+   ]
+  },
+  "2026": {
+   "n": 272,
+   "absent": 11,
+   "absent_rate": 0.04044117647058824,
+   "absent_ci": [
+    0.022729313765614427,
+    0.07095297363530148
+   ]
+  }
+ },
+ "arm": "raw run file, primary record; the corrected arm is in expectation.json"
+}

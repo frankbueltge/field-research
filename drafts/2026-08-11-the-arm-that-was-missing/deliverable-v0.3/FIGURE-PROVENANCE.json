@@ -1,0 +1,668 @@
+{
+ "schema": "field-research/figure-provenance/1",
+ "written_by": "figures.py, session 123",
+ "what_this_is": "every figure that appears in the generated prose of this bundle, with the file and JSON field it was read from. A figure not in this table was typed by a human and is a defect.",
+ "n_figures": 110,
+ "figures": [
+  {
+   "rendered": "5",
+   "file": "MANIFEST.json",
+   "json_path": "coverage.n_measurement_days",
+   "note": "measurement days in this bundle"
+  },
+  {
+   "rendered": "2026-08-11T11:24:06Z",
+   "file": "MANIFEST.json",
+   "json_path": "coverage.first_measurement_utc",
+   "note": "first measurement"
+  },
+  {
+   "rendered": "2026-08-15T03:37:40Z",
+   "file": "MANIFEST.json",
+   "json_path": "coverage.last_measurement_utc",
+   "note": "cut-off of this bundle"
+  },
+  {
+   "rendered": "3,581",
+   "file": "expectation.json",
+   "json_path": "per_day.baseline.pooled.n",
+   "note": "units measured on the baseline day"
+  },
+  {
+   "rendered": "2026-08-15T03:37:40Z",
+   "file": "reference-baseline.json",
+   "json_path": "t_ref_utc",
+   "note": "the reference table's declared time"
+  },
+  {
+   "rendered": "2026-08-15T03:37:40Z",
+   "file": "reference-baseline.json",
+   "json_path": "ages_computed_at_utc",
+   "note": "when the bands were actually computed"
+  },
+  {
+   "rendered": "3,576",
+   "file": "reference-baseline.json",
+   "json_path": "pooled.n",
+   "note": "reference population, determinate units"
+  },
+  {
+   "rendered": "438",
+   "file": "reference-baseline.json",
+   "json_path": "pooled.absent",
+   "note": "reference population, units not retrievable"
+  },
+  {
+   "rendered": "12.25 %",
+   "file": "reference-baseline.json",
+   "json_path": "pooled.absent_rate",
+   "note": "the reference rate"
+  },
+  {
+   "rendered": "11.21 %\u201313.36 %",
+   "file": "reference-baseline.json",
+   "json_path": "pooled.absent_ci",
+   "note": "Wilson interval on the reference rate"
+  },
+  {
+   "rendered": "3.8217",
+   "file": "gradient-test.json",
+   "json_path": "results[0].ratio_old_over_young",
+   "note": "pooled age gradient"
+  },
+  {
+   "rendered": "3.0829 \u00d7 10<sup>-10</sup>",
+   "file": "gradient-test.json",
+   "json_path": "results[0].fisher_two_sided_p",
+   "note": "pooled age gradient, Fisher p"
+  },
+  {
+   "rendered": "5",
+   "file": "MANIFEST.json",
+   "json_path": "source_runs",
+   "note": "run files this bundle was built from (len)"
+  },
+  {
+   "rendered": "3",
+   "file": "confirmation-record.json",
+   "json_path": "genuine_transitions_only.NOT-RETRIEVABLE->RETRIEVABLE.n",
+   "note": "returns"
+  },
+  {
+   "rendered": "3",
+   "file": "confirmation-record.json",
+   "json_path": "genuine_transitions_only.NOT-RETRIEVABLE->RETRIEVABLE.confirmed",
+   "note": "returns confirmed"
+  },
+  {
+   "rendered": "3",
+   "file": "confirmation-record.json",
+   "json_path": "genuine_transitions_only.RETRIEVABLE->NOT-RETRIEVABLE.n",
+   "note": "disappearances"
+  },
+  {
+   "rendered": "1",
+   "file": "confirmation-record.json",
+   "json_path": "genuine_transitions_only.RETRIEVABLE->NOT-RETRIEVABLE.confirmed",
+   "note": "disappearances confirmed"
+  },
+  {
+   "rendered": "5",
+   "file": "confirmation-record.json",
+   "json_path": "all_readings.NOT-RETRIEVABLE->RETRIEVABLE.n",
+   "note": "raw returns"
+  },
+  {
+   "rendered": "5",
+   "file": "confirmation-record.json",
+   "json_path": "all_readings.NOT-RETRIEVABLE->RETRIEVABLE.confirmed",
+   "note": "raw returns confirmed"
+  },
+  {
+   "rendered": "3",
+   "file": "confirmation-record.json",
+   "json_path": "all_readings.RETRIEVABLE->NOT-RETRIEVABLE.n",
+   "note": "raw disappearances"
+  },
+  {
+   "rendered": "1",
+   "file": "confirmation-record.json",
+   "json_path": "all_readings.RETRIEVABLE->NOT-RETRIEVABLE.confirmed",
+   "note": "raw disappearances confirmed"
+  },
+  {
+   "rendered": "5",
+   "file": "confirmation-record.json",
+   "json_path": "passes_per_reading",
+   "note": "re-requests per reading"
+  },
+  {
+   "rendered": "2",
+   "file": "confirmation-record.json",
+   "json_path": "n_artefact_echoes",
+   "note": "artefact echoes excluded from the genuine count"
+  },
+  {
+   "rendered": "4",
+   "file": "confirmation-record.json",
+   "json_path": "sources.sidecars",
+   "note": "confirmation sidecars, one per interval (len)"
+  },
+  {
+   "rendered": "ledger/transition-confirm-2026-08-12.json",
+   "file": "confirmation-record.json",
+   "json_path": "sources.sidecars[0]",
+   "note": "the first interval the confirmation covers"
+  },
+  {
+   "rendered": "ledger/transition-confirm-2026-08-15.json",
+   "file": "confirmation-record.json",
+   "json_path": "sources.sidecars[3]",
+   "note": "the last interval the confirmation covers"
+  },
+  {
+   "rendered": "0.2264",
+   "file": "reference-baseline.json",
+   "json_path": "shelf_life.measured_drift_pp_by_days_after_t_ref.30",
+   "note": "drift, 30 days"
+  },
+  {
+   "rendered": "2.4225",
+   "file": "reference-baseline.json",
+   "json_path": "shelf_life.measured_drift_pp_by_days_after_t_ref.365",
+   "note": "drift, 365 days"
+  },
+  {
+   "rendered": "2026-08-11T11:24:06Z",
+   "file": "expectation.json",
+   "json_path": "per_day.baseline.measured_utc_start",
+   "note": "start of the baseline"
+  },
+  {
+   "rendered": "baseline",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "measurement-day label"
+  },
+  {
+   "rendered": "3,581",
+   "file": "expectation.json",
+   "json_path": "per_day.baseline.pooled.n",
+   "note": "determinate units on baseline"
+  },
+  {
+   "rendered": "437",
+   "file": "expectation.json",
+   "json_path": "per_day.baseline.pooled.absent",
+   "note": "units not retrievable on baseline"
+  },
+  {
+   "rendered": "12.20 %",
+   "file": "expectation.json",
+   "json_path": "per_day.baseline.pooled.absent_rate",
+   "note": "pooled rate on baseline"
+  },
+  {
+   "rendered": "2026-08-12T03:40:28Z",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-12.measured_utc_start",
+   "note": "start of day 2026-08-12"
+  },
+  {
+   "rendered": "2026-08-12",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "measurement-day label"
+  },
+  {
+   "rendered": "3,582",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-12.pooled.n",
+   "note": "determinate units on 2026-08-12"
+  },
+  {
+   "rendered": "437",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-12.pooled.absent",
+   "note": "units not retrievable on 2026-08-12"
+  },
+  {
+   "rendered": "12.20 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-12.pooled.absent_rate",
+   "note": "pooled rate on 2026-08-12"
+  },
+  {
+   "rendered": "2026-08-13T04:27:00Z",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-13.measured_utc_start",
+   "note": "start of day 2026-08-13"
+  },
+  {
+   "rendered": "2026-08-13",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "measurement-day label"
+  },
+  {
+   "rendered": "3,576",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-13.pooled.n",
+   "note": "determinate units on 2026-08-13"
+  },
+  {
+   "rendered": "439",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-13.pooled.absent",
+   "note": "units not retrievable on 2026-08-13"
+  },
+  {
+   "rendered": "12.28 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-13.pooled.absent_rate",
+   "note": "pooled rate on 2026-08-13"
+  },
+  {
+   "rendered": "2026-08-14T03:43:47Z",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-14.measured_utc_start",
+   "note": "start of day 2026-08-14"
+  },
+  {
+   "rendered": "2026-08-14",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "measurement-day label"
+  },
+  {
+   "rendered": "3,583",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-14.pooled.n",
+   "note": "determinate units on 2026-08-14"
+  },
+  {
+   "rendered": "435",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-14.pooled.absent",
+   "note": "units not retrievable on 2026-08-14"
+  },
+  {
+   "rendered": "12.14 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-14.pooled.absent_rate",
+   "note": "pooled rate on 2026-08-14"
+  },
+  {
+   "rendered": "2026-08-15T03:37:40Z",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.measured_utc_start",
+   "note": "start of day 2026-08-15"
+  },
+  {
+   "rendered": "2026-08-15",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "measurement-day label"
+  },
+  {
+   "rendered": "3,576",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.pooled.n",
+   "note": "determinate units on 2026-08-15"
+  },
+  {
+   "rendered": "438",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.pooled.absent",
+   "note": "units not retrievable on 2026-08-15"
+  },
+  {
+   "rendered": "12.25 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.pooled.absent_rate",
+   "note": "pooled rate on 2026-08-15"
+  },
+  {
+   "rendered": "0-1y",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.<key>",
+   "note": "age-band label"
+  },
+  {
+   "rendered": "493",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.0-1y.n",
+   "note": "0-1y units on 2026-08-15"
+  },
+  {
+   "rendered": "23",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.0-1y.absent",
+   "note": "0-1y absent on 2026-08-15"
+  },
+  {
+   "rendered": "4.67 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.0-1y.absent_rate",
+   "note": "0-1y rate on 2026-08-15"
+  },
+  {
+   "rendered": "3.13 %\u20136.90 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.0-1y.absent_ci",
+   "note": "0-1y interval on 2026-08-15"
+  },
+  {
+   "rendered": "1-2y",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.<key>",
+   "note": "age-band label"
+  },
+  {
+   "rendered": "773",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.1-2y.n",
+   "note": "1-2y units on 2026-08-15"
+  },
+  {
+   "rendered": "60",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.1-2y.absent",
+   "note": "1-2y absent on 2026-08-15"
+  },
+  {
+   "rendered": "7.76 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.1-2y.absent_rate",
+   "note": "1-2y rate on 2026-08-15"
+  },
+  {
+   "rendered": "6.08 %\u20139.86 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.1-2y.absent_ci",
+   "note": "1-2y interval on 2026-08-15"
+  },
+  {
+   "rendered": "2-3y",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.<key>",
+   "note": "age-band label"
+  },
+  {
+   "rendered": "787",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.2-3y.n",
+   "note": "2-3y units on 2026-08-15"
+  },
+  {
+   "rendered": "94",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.2-3y.absent",
+   "note": "2-3y absent on 2026-08-15"
+  },
+  {
+   "rendered": "11.94 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.2-3y.absent_rate",
+   "note": "2-3y rate on 2026-08-15"
+  },
+  {
+   "rendered": "9.86 %\u201314.40 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.2-3y.absent_ci",
+   "note": "2-3y interval on 2026-08-15"
+  },
+  {
+   "rendered": "3-4y",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.<key>",
+   "note": "age-band label"
+  },
+  {
+   "rendered": "672",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.3-4y.n",
+   "note": "3-4y units on 2026-08-15"
+  },
+  {
+   "rendered": "111",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.3-4y.absent",
+   "note": "3-4y absent on 2026-08-15"
+  },
+  {
+   "rendered": "16.52 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.3-4y.absent_rate",
+   "note": "3-4y rate on 2026-08-15"
+  },
+  {
+   "rendered": "13.90 %\u201319.51 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.3-4y.absent_ci",
+   "note": "3-4y interval on 2026-08-15"
+  },
+  {
+   "rendered": "4-5y",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.<key>",
+   "note": "age-band label"
+  },
+  {
+   "rendered": "457",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.4-5y.n",
+   "note": "4-5y units on 2026-08-15"
+  },
+  {
+   "rendered": "76",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.4-5y.absent",
+   "note": "4-5y absent on 2026-08-15"
+  },
+  {
+   "rendered": "16.63 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.4-5y.absent_rate",
+   "note": "4-5y rate on 2026-08-15"
+  },
+  {
+   "rendered": "13.50 %\u201320.32 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.4-5y.absent_ci",
+   "note": "4-5y interval on 2026-08-15"
+  },
+  {
+   "rendered": "5y+",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.<key>",
+   "note": "age-band label"
+  },
+  {
+   "rendered": "387",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.5y+.n",
+   "note": "5y+ units on 2026-08-15"
+  },
+  {
+   "rendered": "69",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.5y+.absent",
+   "note": "5y+ absent on 2026-08-15"
+  },
+  {
+   "rendered": "17.83 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.5y+.absent_rate",
+   "note": "5y+ rate on 2026-08-15"
+  },
+  {
+   "rendered": "14.34 %\u201321.95 %",
+   "file": "expectation.json",
+   "json_path": "per_day.2026-08-15.by_age_band.5y+.absent_ci",
+   "note": "5y+ interval on 2026-08-15"
+  },
+  {
+   "rendered": "2026-08-15",
+   "file": "expectation.json",
+   "json_path": "per_day.<key>",
+   "note": "the newest measurement day, named in prose"
+  },
+  {
+   "rendered": "2026-01-14 21:53:41",
+   "file": "receiver-dashboard-read.json",
+   "json_path": "fields.generated_declared.value",
+   "note": "the dashboard's declared generation time, its own words"
+  },
+  {
+   "rendered": "11",
+   "file": "receiver-dashboard-read.json",
+   "json_path": "fields.Total Videos Tracked.value",
+   "note": "videos the dashboard tracks"
+  },
+  {
+   "rendered": "0",
+   "file": "receiver-dashboard-read.json",
+   "json_path": "fields.Available.value",
+   "note": "videos the dashboard reports available"
+  },
+  {
+   "rendered": "0",
+   "file": "receiver-dashboard-read.json",
+   "json_path": "fields.Unavailable.value",
+   "note": "videos the dashboard reports unavailable"
+  },
+  {
+   "rendered": "11",
+   "file": "receiver-dashboard-read.json",
+   "json_path": "fields.Errors.value",
+   "note": "videos the dashboard reports as errors"
+  },
+  {
+   "rendered": "Note: Error are problems on our end, not TikTok.",
+   "file": "receiver-dashboard-read.json",
+   "json_path": "fields.error_note.value",
+   "note": "the dashboard's own note about Error"
+  },
+  {
+   "rendered": "8",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "errata registered in the regression check, counted from its own registry"
+  },
+  {
+   "rendered": "51",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "errata published across this arc's own errata tables, counted from those tables"
+  },
+  {
+   "rendered": "0.1",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "a version number, not a measurement"
+  },
+  {
+   "rendered": "0.3.1",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "the tool's own VERSION constant, read from tools/presence_check.py by this script"
+  },
+  {
+   "rendered": "2026-08-16",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "the date this bundle was built, as a date"
+  },
+  {
+   "rendered": "400",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "an HTTP status code returned by the endpoint, not a quantity"
+  },
+  {
+   "rendered": "404",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "an HTTP status code never returned, not a quantity"
+  },
+  {
+   "rendered": "19",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "the digit-length of the platform's modern identifier scheme"
+  },
+  {
+   "rendered": "32",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "the bit-width of the timestamp field in that scheme"
+  },
+  {
+   "rendered": "26",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "a threshold this practice published and WITHDREW; it appears in the prose only inside the sentence retracting it"
+  },
+  {
+   "rendered": "1",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "the lower end of the withdrawn threshold family, in the same retraction"
+  },
+  {
+   "rendered": "2026-08-15",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "the date version 0.1 was refuted, as a date"
+  },
+  {
+   "rendered": "122",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "a session number in this practice's own record, not a measurement"
+  },
+  {
+   "rendered": "2026-08-11",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "the date of the three-arm synthetic control run, as a date"
+  },
+  {
+   "rendered": "twenty",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "the size of the three-arm synthetic control, from its own run record"
+  },
+  {
+   "rendered": "nineteen",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "how many of the twenty returned the refusal code \u2014 first gauntlet, E1; the twentieth returned no code at all"
+  },
+  {
+   "rendered": "248",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "how many of the display-truncated control arm do not resolve \u2014 first gauntlet, E7"
+  },
+  {
+   "rendered": "249",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "the size of the display-truncated control arm"
+  },
+  {
+   "rendered": "6",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "genuine transitions tested, summed from confirmation-record.json by the build rather than typed into the heading"
+  },
+  {
+   "rendered": "4",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "genuine transitions confirmed, summed from confirmation-record.json"
+  }
+ ]
+}

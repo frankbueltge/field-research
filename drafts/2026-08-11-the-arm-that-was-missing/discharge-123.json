@@ -1,0 +1,220 @@
+{
+ "schema": "field-research/gauntlet-discharge/1",
+ "session": 123,
+ "checks": {
+  "C1_language_editions": {
+   "charge": "FIGURES.md and reference-baseline.json say 21 encyclopedia language editions",
+   "reviewer_value": 37,
+   "our_value_distinct_editions_contributing_a_W_article_unit": 37,
+   "our_value_all_hosts": 39,
+   "article_units_in_panel": 2398,
+   "article_units_matched_to_an_edition": 2270,
+   "article_units_unmatched": 128,
+   "editions": [
+    "ar.wikipedia.org",
+    "bn.wikipedia.org",
+    "cs.wikipedia.org",
+    "de.wikipedia.org",
+    "en.wikipedia.org",
+    "es.wikipedia.org",
+    "fa.wikipedia.org",
+    "fi.wikipedia.org",
+    "fr.wikipedia.org",
+    "gl.wikipedia.org",
+    "he.wikipedia.org",
+    "hi.wikipedia.org",
+    "hy.wikipedia.org",
+    "id.wikipedia.org",
+    "it.wikipedia.org",
+    "ja.wikipedia.org",
+    "ka.wikipedia.org",
+    "ko.wikipedia.org",
+    "mk.wikipedia.org",
+    "ms.wikipedia.org",
+    "ne.wikipedia.org",
+    "nl.wikipedia.org",
+    "pl.wikipedia.org",
+    "pt.wikipedia.org",
+    "ru.wikipedia.org",
+    "sq.wikipedia.org",
+    "sv.wikipedia.org",
+    "ta.wikipedia.org",
+    "te.wikipedia.org",
+    "th.wikipedia.org",
+    "tl.wikipedia.org",
+    "tr.wikipedia.org",
+    "uk.wikipedia.org",
+    "ur.wikipedia.org",
+    "uz.wikipedia.org",
+    "vi.wikipedia.org",
+    "zh.wikipedia.org"
+   ],
+   "corpus_files_on_disk": 47,
+   "method": "every 19-digit identifier appearing anywhere in a corpus file is taken as a candidate and intersected with the panel's A/A-new units; an edition counts if at least one panel article unit appears in its file. Unmatched units are reported rather than assumed to belong anywhere."
+  },
+  "C1b_shipped_strings": {
+   "figures_md_contains_21_language_editions": true,
+   "reference_baseline_population_what_it_is": "videos cited in public across 21 language editions of one encyclopedia (article and non-article namespaces) and in the public comments and stories of one technology forum",
+   "reference_baseline_says_21": true,
+   "figures_md_contains_0_14_pp_spread": true,
+   "bundle_contains_balanced_panel_qualification": false,
+   "note": "the qualification the first gauntlet's erratum E17 published is the balanced-panel spread of 0.0577 pp on 3,465 units determinate on every day; if the bundle carries neither that number nor the phrase, the corrected reading is absent from it"
+  },
+  "C2c_cross_references": {
+   "charge": "receiver-eleven.md cites LIMITS.md section 8 for a statistical-power caveat; v0.3's LIMITS was rewritten from twelve sections to nine and section 8 is now a different topic",
+   "limits_sections_in_v03": {
+    "1": "`NOT-RETRIEVABLE` does not mean deleted",
+    "2": "One vantage, one endpoint",
+    "3": "The population is a cited population, not a sample of the platform",
+    "4": "Six events is not a rate",
+    "5": "The reference table has a date, and using it later is an error that grows",
+    "6": "Ages are decoded, not looked up",
+    "7": "Two arms are excluded from every rate, by design and in advance",
+    "8": "The raw record is primary and is never edited",
+    "9": "What this bundle is not"
+   },
+   "n_sections_v03": 9,
+   "references_found": [
+    {
+     "file": "FIGURES.md",
+     "section": 5,
+     "resolves": true,
+     "heading_it_lands_on": "The reference table has a date, and using it later is an error that grows"
+    },
+    {
+     "file": "FIGURES.md",
+     "section": 6,
+     "resolves": true,
+     "heading_it_lands_on": "Ages are decoded, not looked up"
+    },
+    {
+     "file": "README.md",
+     "section": 5,
+     "resolves": true,
+     "heading_it_lands_on": "The reference table has a date, and using it later is an error that grows"
+    },
+    {
+     "file": "README.md",
+     "section": 1,
+     "resolves": true,
+     "heading_it_lands_on": "`NOT-RETRIEVABLE` does not mean deleted"
+    },
+    {
+     "file": "receiver-eleven.md",
+     "section": 8,
+     "resolves": true,
+     "heading_it_lands_on": "The raw record is primary and is never edited"
+    }
+   ],
+   "n_unresolvable": 0,
+   "power_caveat_present_anywhere_in_v03_limits": false
+  },
+  "A_figures_md_against_the_audit": {
+   "charge": "FIGURES.md is generated prose and was never passed to audit_prose()",
+   "n_unmatched_if_it_had_been": 103,
+   "first_20_unmatched": [
+    {
+     "token": "2026-08-16T03:54:02Z",
+     "kind": "date",
+     "context": "# Figures \u2014 generated, do not hand-edit  *Written by   at 2026-08-16T03:54:02Z. Every number on this page comes from   and  , which come f"
+    },
+    {
+     "token": "95",
+     "kind": "number",
+     "context": "s requested | in the rate | publicly absent | absent rate | 95 % Wilson |   | baseline |   | 3869 | 3581 | 437 | 12.20 % |"
+    },
+    {
+     "token": "3869",
+     "kind": "number",
+     "context": "cly absent | absent rate | 95 % Wilson |   | baseline |   | 3869 | 3581 | 437 | 12.20 % | [11.17 %, 13.32 %] | |   |   | 386"
+    },
+    {
+     "token": "11.17",
+     "kind": "number",
+     "context": " Wilson |   | baseline |   | 3869 | 3581 | 437 | 12.20 % | [11.17 %, 13.32 %] | |   |   | 3869 | 3582 | 437 | 12.20 % | [11.1"
+    },
+    {
+     "token": "13.32",
+     "kind": "number",
+     "context": "   | baseline |   | 3869 | 3581 | 437 | 12.20 % | [11.17 %, 13.32 %] | |   |   | 3869 | 3582 | 437 | 12.20 % | [11.17 %, 13.3"
+    },
+    {
+     "token": "3869",
+     "kind": "number",
+     "context": "869 | 3581 | 437 | 12.20 % | [11.17 %, 13.32 %] | |   |   | 3869 | 3582 | 437 | 12.20 % | [11.17 %, 13.31 %] | |   |   | 386"
+    },
+    {
+     "token": "11.17",
+     "kind": "number",
+     "context": "1.17 %, 13.32 %] | |   |   | 3869 | 3582 | 437 | 12.20 % | [11.17 %, 13.31 %] | |   |   | 3869 | 3576 | 439 | 12.28 % | [11.2"
+    },
+    {
+     "token": "13.31",
+     "kind": "number",
+     "context": "3.32 %] | |   |   | 3869 | 3582 | 437 | 12.20 % | [11.17 %, 13.31 %] | |   |   | 3869 | 3576 | 439 | 12.28 % | [11.24 %, 13.3"
+    },
+    {
+     "token": "3869",
+     "kind": "number",
+     "context": "869 | 3582 | 437 | 12.20 % | [11.17 %, 13.31 %] | |   |   | 3869 | 3576 | 439 | 12.28 % | [11.24 %, 13.39 %] | |   |   | 386"
+    },
+    {
+     "token": "11.24",
+     "kind": "number",
+     "context": "1.17 %, 13.31 %] | |   |   | 3869 | 3576 | 439 | 12.28 % | [11.24 %, 13.39 %] | |   |   | 3869 | 3583 | 435 | 12.14 % | [11.1"
+    },
+    {
+     "token": "13.39",
+     "kind": "number",
+     "context": "3.31 %] | |   |   | 3869 | 3576 | 439 | 12.28 % | [11.24 %, 13.39 %] | |   |   | 3869 | 3583 | 435 | 12.14 % | [11.11 %, 13.2"
+    },
+    {
+     "token": "3869",
+     "kind": "number",
+     "context": "869 | 3576 | 439 | 12.28 % | [11.24 %, 13.39 %] | |   |   | 3869 | 3583 | 435 | 12.14 % | [11.11 %, 13.25 %] | |   |   | 386"
+    },
+    {
+     "token": "11.11",
+     "kind": "number",
+     "context": "1.24 %, 13.39 %] | |   |   | 3869 | 3583 | 435 | 12.14 % | [11.11 %, 13.25 %] | |   |   | 3869 | 3576 | 438 | 12.25 % | [11.2"
+    },
+    {
+     "token": "13.25",
+     "kind": "number",
+     "context": "3.39 %] | |   |   | 3869 | 3583 | 435 | 12.14 % | [11.11 %, 13.25 %] | |   |   | 3869 | 3576 | 438 | 12.25 % | [11.21 %, 13.3"
+    },
+    {
+     "token": "3869",
+     "kind": "number",
+     "context": "869 | 3583 | 435 | 12.14 % | [11.11 %, 13.25 %] | |   |   | 3869 | 3576 | 438 | 12.25 % | [11.21 %, 13.36 %] |  **Across 5 m"
+    },
+    {
+     "token": "0.14",
+     "kind": "number",
+     "context": " this panel moves between 12.14 % and 12.28 % \u2014 a spread of 0.14 percentage points.** This is the same panel measured again,"
+    },
+    {
+     "token": "95",
+     "kind": "number",
+     "context": " | age band | in the rate | publicly absent | absent rate | 95 % Wilson | spread across all measured days |   | 0-1y | 493"
+    },
+    {
+     "token": "0.25",
+     "kind": "number",
+     "context": "ed days |   | 0-1y | 493 | 23 | 4.67 % | [3.13 %, 6.90 %] | 0.25 pp | | 1-2y | 773 | 60 | 7.76 % | [6.08 %, 9.86 %] | 0.26 p"
+    },
+    {
+     "token": "0.26",
+     "kind": "number",
+     "context": "| 0.25 pp | | 1-2y | 773 | 60 | 7.76 % | [6.08 %, 9.86 %] | 0.26 pp | | 2-3y | 787 | 94 | 11.94 % | [9.86 %, 14.40 %] | 0.48"
+    },
+    {
+     "token": "0.48",
+     "kind": "number",
+     "context": "0.26 pp | | 2-3y | 787 | 94 | 11.94 % | [9.86 %, 14.40 %] | 0.48 pp | | 3-4y | 672 | 111 | 16.52 % | [13.90 %, 19.51 %] | 0."
+    }
+   ],
+   "note": "a large count here does NOT mean FIGURES.md is wrong - it is generated by a different script from a different source and its numbers were never registered in this provenance table. It means the audit, as built, could not have covered it without the figures being routed through `figures.py` first. The charge is about scope, and this is the size of the scope that was left out."
+  }
+ }
+}

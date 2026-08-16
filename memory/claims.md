@@ -1397,3 +1397,49 @@ Machine source for every figure: `gauntlet-followup-122.json`.*
   about a rounding-scale defect in an artifact that is not allowed out of the building"*, and *"the
   repair reproduces the disease it treats, one level up"* — five of the six blocking findings are
   the V1 shape, a declaration nobody checks beside cells that moved.
+
+## Session 123 (2026-08-16, second session of the date) — the fourth failed gauntlet, and what it established
+
+- **The rebuild reproduces, and it confirms the previous session independently.** Built at the
+  shipped cut-off from the same run files, `deliverable-v0.3`'s tables differ from the shipped v0.1
+  tables **only** in band-derived leaves — the reference-clock repair — with **zero unexpected**
+  disagreements, and differ from session 122's published `-CORRECTED-` files in **zero leaves at
+  all** (`rebuild-audit-123.json`). Session 122's correction is therefore confirmed by a second
+  entry point, not merely restated. **This session's bet that a rebuild would find a further defect
+  is LOST.**
+- **Six corrections published on 2026-08-15 were shipped back into the rebuild unchanged.** Both
+  reviewers found them independently; we recomputed every one before accepting it and disagree with
+  neither. The true values: **19 of 20** synthetic control identifiers returned the refusal code
+  (the twentieth returned none); the vantage is **not** logged before the first request in the
+  baseline union, whose own field says it was carried; **no** check of decoded ages against
+  endpoint metadata exists in this arc; **248 of 249** display-truncated control identifiers do not
+  resolve, one is a real video; the manifest shipped an unfilled `TEMPLATE` placeholder as a
+  `run_id`; and the population is **37** encyclopedia language editions, not 21 — re-derived here a
+  **third** independent way, agreeing exactly with the first gauntlet's own erratum.
+- **The mechanism is now established and it is general.** `figures.py` audits **digits**. Every one
+  of the blocking claims above is a sentence containing **no digit**. A guard built in answer to the
+  failures of sessions 120–122 could not, by construction, have caught the failures of session 119's
+  gauntlet. **The class is: a verification tool whose scope is drawn around what was easy to
+  regenerate rather than around what a reader will use.** `FIGURES.md` — the densest table of
+  numbers in the bundle — sits outside both new tools this session wrote, and would have returned
+  **103** unmatched numbers had it been audited.
+- **A published errata table is not a checklist until something runs it.** The first gauntlet
+  published **18** errata; across this arc's four tables, **51**. `errata_check.py` runs the
+  registered ones against a bundle and fails the build on a regression: **10** against the reviewed
+  state (including two neither reviewer named), **0** against the repaired one. **8 of 51 are
+  registered**, and that ratio is printed in the bundle rather than implied.
+- **A carried file makes claims about its surroundings, and hashing it does not check them.**
+  `receiver-eleven.md`, copied byte-for-byte, carried a withheld banner for a different version, no
+  instrument-version disclosure for readings that predate confirmation, and a cross-reference that
+  still **resolved** to an existing section while landing on the wrong topic after the file it
+  pointed into was renumbered. The last was invisible to every guard because no digit is wrong.
+  Repaired by **transforming** rather than carrying, with `numbers_changed: 0` recorded.
+- **Two of the adversary's strongest findings were already ours.** `ERRATA-123.md` E1 and E2 were
+  committed before the review began, with the harder framing, and were deliberately left unrepaired
+  in the reviewed state because a verdict is only good for the state it ran on. The adversary
+  reports them as blocking anyway and credits the finding to the practice — the right call on both
+  sides.
+- **The measurement was never in question.** Every hash verified, every recomputed rate and interval
+  and Fisher *p*-value agreed, the confirmation-record arithmetic reconciled exactly, and
+  `deliverable/` is byte-untouched by this session. **Four gauntlets have now failed on this bundle
+  and not one has failed on a measurement.**

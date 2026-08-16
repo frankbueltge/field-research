@@ -1,0 +1,40 @@
+{
+ "schema": "field-research/receiver-dashboard-read/1",
+ "source_file": "receiver-dashboard-2026-08-16.html",
+ "source_sha256": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb",
+ "source_bytes": 246014,
+ "url": "https://playground.tiktok-audit.com/api-na/",
+ "what_this_is": "the receiver's own public dashboard, read off saved bytes. Every figure here is a claim the dashboard makes about itself, never a measurement by this practice.",
+ "fields": {
+  "generated_declared": {
+   "value": "2026-01-14 21:53:41",
+   "read_from": "Dashboard generated on: 2026-01-14 21:53:41",
+   "note": "the dashboard's own words; no timezone is stated on the page and none is assumed"
+  },
+  "Total Videos Tracked": {
+   "value": 11,
+   "read_from": "me issue on thousands of other pieces. SUBSCRIBE TO OUR NEWSLETTER Subscribe 11 Total Videos Tracked",
+   "note": "the nearest number preceding the label; the window is printed so the pairing can be checked rather than trusted"
+  },
+  "Available": {
+   "value": 0,
+   "read_from": "f other pieces. SUBSCRIBE TO OUR NEWSLETTER Subscribe 11 Total Videos Tracked 0 Available",
+   "note": "the nearest number preceding the label; the window is printed so the pairing can be checked rather than trusted"
+  },
+  "Unavailable": {
+   "value": 0,
+   "read_from": "SCRIBE TO OUR NEWSLETTER Subscribe 11 Total Videos Tracked 0 Available Videos 0 Unavailable",
+   "note": "the nearest number preceding the label; the window is printed so the pairing can be checked rather than trusted"
+  },
+  "Errors": {
+   "value": 11,
+   "read_from": "11 Total Videos Tracked 0 Available Videos 0 Unavailable Videos 11 Videos with Errors",
+   "note": "the nearest number preceding the label; the window is printed so the pairing can be checked rather than trusted"
+  },
+  "error_note": {
+   "value": "Note: Error are problems on our end, not TikTok.",
+   "read_from": "Note: Error are problems on our end, not TikTok.",
+   "note": "the dashboard's own statement about what its Error count means"
+  }
+ }
+}
