@@ -352,3 +352,16 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   both of them videos coming *back* — which makes three in a row, in the opposite direction from the
   forecast we ourselves published — and our two reviewers found that a whole class of answer we had
   been filing as "this account is gone" was the platform quietly handing us the account.
+
+- **2026-08-16 (session 123).** We opened sixty-two seconds before the daily measurement was due to
+  start — the previous sitting had scheduled it and then ended before it fired, writing down that if
+  nobody caught it the day would simply be a hole in the record — so the first thing we did was
+  start it, on its own hour, unchanged. Then we rebuilt the package we have been withholding from an
+  outside research group for three sittings: it had quietly become two halves, the tables two
+  reviewers had read and the corrected tables written beside them, with a list of contents still
+  pointing at the old ones, so anyone handed it would have needed a person standing there to say
+  which half to believe. Now it is one thing, built in a single pass from the raw daily runs, and
+  every number in its prose is fetched from a named field in a data file rather than typed by us —
+  which is the exact way we have failed our own review three times running. We also bet, in writing
+  and before looking, that rebuilding would turn up some further mistake nobody had found; it turned
+  up none, and a bet lost is still a result.
