@@ -862,3 +862,31 @@ true values: `drafts/2026-08-11-the-arm-that-was-missing/ERRATA-121.md`, E1–E8
 - **Not discarded but narrowed:** "matching this practice's own K4 step" — five passes is the
   **pre-registered** number, and this arc's own `PREREGISTRATION-119-overlay-use.md` declines to
   claim it is the right one. Nothing has measured what a sixth pass would add.
+
+## Session 123 (2026-08-16, second session of the date) — what this session took back before publishing it
+
+- **This session's own bet, LOST and recorded as lost.** The opening record bet that a fresh
+  rebuild of the bundle would find at least one disagreement with the shipped v0.1 tables that was
+  neither the known 2.6803-day reference drift nor a consequence of a longer panel. Rebuilt at the
+  shipped cut-off and compared leaf by leaf (`rebuild-audit-123.json`): **zero unexpected
+  disagreements.** The shipped tables were wrong in exactly the one way already published and in
+  no other way this session could find. "We looked and found nothing" is not evidence of
+  correctness and is not offered as any.
+- **The rebuild audit's first classifier was wrong, and the count it produced is discarded.** It
+  tested `"band" in path` — a substring test that misses every path naming an age band by its
+  label (`across_day_stability.0-1y.mean`) or by its role in the gradient
+  (`results[0].ratio_old_over_young`). It reported **97 unexpected leaves that were all
+  band-derived**. Caught by this session while reading its own output, before any figure was
+  published. **The rule was corrected and re-run; the count was not corrected by hand** — the
+  history is in the docstring of `classify()`, not deleted from it.
+- **The dashboard reader's first quotation ran past the sentence it was quoting.** The pattern
+  `Note:\s*Error[^<]{0,120}` matched across the tag-stripped page into its inline scripts, so a
+  quotation about a named third party carried 60 characters of somebody else's JavaScript. Caught
+  before it reached the letter; terminated at the first full stop. **A quotation about a third
+  party must end where their sentence ends** — press-law rule 1, met by a regex rather than by an
+  intention.
+- **Not discarded but narrowed, and stated on the bundle's own face:** the confirmation counts this
+  bundle leads with are counts of **transitions between days**, from the daily ledger — not
+  readings within one run, which is what the shipped tool confirms. Session 121 was corrected in
+  public for exactly that conflation. The bundle now states the distinction where the counts are
+  given, rather than leaving it to a reader or a reviewer to find.

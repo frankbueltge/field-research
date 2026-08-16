@@ -1,6 +1,6 @@
 {
  "schema": "field-research/prose-figure-audit/2",
- "provenance": "deliverable-v0.3/FIGURE-PROVENANCE.json",
+ "provenance": "/tmp/verify-v03-nocutoff/FIGURE-PROVENANCE.json",
  "n_rendered_tokens": 129,
  "not_scanned": [
   "heading number",
@@ -14,22 +14,22 @@
  ],
  "files": [
   {
-   "file": "deliverable-v0.3/README.md",
+   "file": "/tmp/verify-v03-nocutoff/README.md",
    "n_unmatched": 0,
    "unmatched": []
   },
   {
-   "file": "deliverable-v0.3/LETTER.md",
+   "file": "/tmp/verify-v03-nocutoff/LETTER.md",
    "n_unmatched": 0,
    "unmatched": []
   },
   {
-   "file": "deliverable-v0.3/LIMITS.md",
+   "file": "/tmp/verify-v03-nocutoff/LIMITS.md",
    "n_unmatched": 0,
    "unmatched": []
   },
   {
-   "file": "deliverable-v0.3/VERSIONS.md",
+   "file": "/tmp/verify-v03-nocutoff/VERSIONS.md",
    "n_unmatched": 0,
    "unmatched": []
   }
