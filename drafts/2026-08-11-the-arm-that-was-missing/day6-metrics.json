@@ -1,0 +1,100 @@
+{
+ "schema": "field-research/window-interval/1",
+ "computed_by": "day6_metrics.py, session 123",
+ "interval": 5,
+ "run": {
+  "file": "ledger/run-2026-08-16T0337Z.json",
+  "utc_start": "2026-08-16T03:37:40Z",
+  "utc_end": "2026-08-16T05:28:50Z",
+  "seconds": 6669.6,
+  "planned": 3869,
+  "requested": 3869,
+  "stopped": null,
+  "vantage_asn": "AS396982",
+  "complete": true
+ },
+ "interval_days": 1.0,
+ "vantage_guard": {
+  "run1_asn": "AS396982",
+  "run2_asn": "AS396982",
+  "same_autonomous_system": true,
+  "verdict": "COMPARABLE"
+ },
+ "observed_in_both": 3869,
+ "determinate_in_both": 3776,
+ "touching_indeterminate": 93,
+ "apparent_transitions_raw": 1,
+ "apparent_transitions_overlay": 1,
+ "overlay_rows_applied": 0,
+ "k4": "PASSES \u2014 every transition confirmed",
+ "confirmed_this_interval": {
+  "returns": 1,
+  "losses": 0,
+  "vids": [
+   {
+    "vid": "7118519163416497450",
+    "from": "NOT-RETRIEVABLE",
+    "to": "RETRIEVABLE"
+   }
+  ]
+ },
+ "denominators_this_interval": {
+  "retrievable_at_day5_and_determinate_at_day6": 3103,
+  "absent_at_day5_and_determinate_at_day6": 673
+ },
+ "series_after_this_interval": {
+  "all_readings": {
+   "NOT-RETRIEVABLE->RETRIEVABLE": {
+    "n": 6,
+    "confirmed": 6,
+    "refuted": 0
+   },
+   "RETRIEVABLE->NOT-RETRIEVABLE": {
+    "n": 3,
+    "confirmed": 1,
+    "refuted": 2
+   }
+  },
+  "genuine_transitions_only": {
+   "NOT-RETRIEVABLE->RETRIEVABLE": {
+    "n": 4,
+    "confirmed": 4,
+    "refuted": 0
+   },
+   "RETRIEVABLE->NOT-RETRIEVABLE": {
+    "n": 3,
+    "confirmed": 1,
+    "refuted": 2
+   }
+  },
+  "n_artefact_echoes": 2,
+  "n_sidecars": 5
+ },
+ "per_arm_counts_day6": {
+  "A": {
+   "RETRIEVABLE": 1944,
+   "NOT-RETRIEVABLE": 235,
+   "INDETERMINATE": 22
+  },
+  "A-new": {
+   "RETRIEVABLE": 171,
+   "NOT-RETRIEVABLE": 23,
+   "INDETERMINATE": 3
+  },
+  "A2": {
+   "NOT-RETRIEVABLE": 114,
+   "RETRIEVABLE": 649,
+   "INDETERMINATE": 5
+  },
+  "B": {
+   "RETRIEVABLE": 380,
+   "NOT-RETRIEVABLE": 64,
+   "INDETERMINATE": 10
+  },
+  "B-truncated": {
+   "RETRIEVABLE": 1,
+   "NOT-RETRIEVABLE": 244,
+   "INDETERMINATE": 4
+  }
+ }
+}
