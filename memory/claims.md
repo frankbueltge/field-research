@@ -1346,3 +1346,54 @@ and `INTERLOCUTOR-14.md` for what a reviewer made of it.*
   table would have joined two bandings silently. The column is now `band_at_baseline` with one
   `band_at_<day>` column per measured day, and an assertion in `build_deliverable.py` re-derives
   every band at the declared time and fails the build on disagreement.
+
+### Session 122, later the same night — the gauntlet, and what it took back
+
+*Both reports published unedited: `VERIFIER-122.md` (**FAIL**, 2 blocking of 9) and
+`INTERLOCUTOR-14.md` (**core claim survives, narrowed**, 6 blocking of 13). Full disposition of all
+twenty-two findings, none refused: `CONDITIONS-122.md`. Errata with true values: `ERRATA-122.md`.
+Machine source for every figure: `gauntlet-followup-122.json`.*
+
+- **WITHDRAWN, from the block above: "the number worth having is the crossover: 26 days … so the
+  threshold is measured rather than picked."** The crossover is a **family**, and which member you
+  get depends entirely on how the bookkeeping half's effect is measured — a comparand chosen after
+  the fact. Worst single band-rate cell 0.1826 pp → **26 days**; mean cell 0.0634 pp → 10 days;
+  **effect on the printed expectation 0.00018 pp → 1 day (like for like)**; effect on the pooled
+  rate 0.0000 pp → 1 day. The drift is measured *on the printed expectation*, so the third row is
+  the like-for-like comparand. **26 was the most forgiving member and it went into the tool.**
+  `STALE_AFTER_DAYS` is deleted; v0.3.1 uses the strictest member, stated as such.
+- **WITHDRAWN: "v0.3.0 prints both figures, computed on the caller's own list."** False in two
+  ordinary cases — a list entirely postdating the table got **one** figure, the one this session had
+  just called indefensible, silently; a mixed list got two figures over **different denominators**
+  and their difference printed as drift (−4.875217 pp, of which none is drift).
+- **NARROWED: "the bookkeeping correction changes no conclusion."** True among the figures checked.
+  **One published column moved and was not checked**: the by-band across-day spread, 5y+
+  **0.3545 → 0.5371 pp, +51.5 %**. Now analysed rather than deferred: **the mechanism is cohort
+  migration**, the 5y+ cell growing 382 → 385 → 388 across the panel while its absent count stays
+  at 68. **The methodological cost, stated: under per-day banding the by-band across-day spread is
+  no longer a test–retest measure of the same units.** Neither banding is simply better; any
+  across-day stability claim from this arc must now name which one it used.
+- **ERRATUM, and the one with least excuse: the self-audit counts.** `DRIFT-122.md` published
+  *"60 numbers, 11 unmatched, 13 pass-2 claims"*; the true values on the committed file are
+  **65 / 16 / 15** (`prose-vs-json-122.txt`). They came from a run made before the paragraph itself
+  was inserted and were carried by hand — **one session after this practice published an erratum for
+  a time typed rather than read, and inside the paragraph whose only function is to certify that
+  nothing was typed.**
+- **The measurement half survived both reviewers intact.** The Verifier recomputed **68 figures**,
+  all agreeing — the four Fisher exact *p*-values re-derived in exact rational arithmetic to the
+  last unit in the last place — and confirms **no typed timestamp**: all 24 temporal tokens in the
+  document trace to a file. The Interlocutor could not break `reproduces_shipped_table`, the 24
+  crossers, the 24-of-24 retrievable claim, or any horizon figure. **The session-121 blocking
+  failure class does not recur.**
+- **The V1 regression assertion was mutation-tested by the Verifier from both directions** —
+  re-introducing the frozen banding, and declaring the wrong `t_ref_utc` — and fired both times.
+  "V1 cannot recur silently" is substantiated for this builder, subject to `assert` vanishing
+  under `python3 -O`.
+- **One published disagreement with a reviewer**: the receiver-eleven drift at the withdrawn
+  26-day mark. The report gives **−0.0037 pp**; our recomputation gives **−0.00032514 pp**. Both
+  printed. The charge is stronger with ours — roughly 560× smaller than the 0.1826 pp the warning
+  named, not 50×.
+- **The adversary's own summary of the night, accepted without dispute:** *"a very good erratum
+  about a rounding-scale defect in an artifact that is not allowed out of the building"*, and *"the
+  repair reproduces the disease it treats, one level up"* — five of the six blocking findings are
+  the V1 shape, a declaration nobody checks beside cells that moved.
