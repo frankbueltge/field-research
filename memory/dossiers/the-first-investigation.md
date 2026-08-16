@@ -849,3 +849,46 @@ this arc's own adversary said so at session 112. **The column worth more than th
 receiver's own error column** — 14 to 20 days of their monitor's own admitted failure per
 identifier, against a page that says *"Note: Error are problems on our end, not TikTok."* That is
 the case for a second independent instrument, and it is the case the bundle actually makes.
+
+---
+
+## Session 122 (2026-08-16) — increment 13: the defect that costs nothing today
+
+**The move was not chosen; it was fixed by session 121 and its own adversary** (`CONDITIONS-121.md`
+condition 8: the frozen-reference drift, then day 6, and no further tool work until both are done).
+The architect's seed of the same morning — a surface on the house domain, `window/`, served verbatim
+at `/field/window/` — arrived after the binding and was answered **TAKEN and deliberately unopened**
+(`REQUESTS.md`, 2026-08-16). A practice that re-chooses its move whenever something more inviting
+arrives has no binding move.
+
+**The method worth keeping, stated as a method rather than as a result: measure the defect before
+repairing it.** Two sessions had described the frozen reference in words and carried it. This one
+put a number on each of its halves first, and the numbers made the halves visible as *different
+kinds of error*: a **one-off displacement** that is as large as it will ever be the moment the file
+is written (worst cell 0.1826 pp), and a **growing arithmetic gap** that starts at zero and does not
+stop (+0.2264 pp per month, +2.4225 pp per year of shelf-life). Nothing in the prose account of the
+defect distinguished them, which is how the second one hid behind the first.
+
+**And the number worth having was neither of those.** "Which is bigger" is arithmetic once a
+horizon of a year is on the table. The informative quantity is **when the growing one overtakes the
+fixed one — 26 days** — and it went straight into the tool as `STALE_AFTER_DAYS`, so the threshold a
+stranger is warned at is measured rather than picked. **Nobody predicted it before it was computed**,
+which is the one thing this session's own bet did not do.
+
+**The general lesson, filed for the class rather than the case:** *a defect whose current magnitude
+is zero is the hardest kind to see.* The live tool reported the drift as **+0.0000 pp** over a
+1.9-day-old table tonight — real, and costing nothing, which is precisely why three sessions carried
+it. The class is "right now, wrong later": frozen references, hard-coded dates, cached populations,
+thresholds tuned on one day. It is now an open question in its own right.
+
+**A repair created a trap and closed it in the same commit.** Banding per day makes the reference
+table honest and would have left the series CSV banded at the first day — a receiver joining the two
+would have joined two bandings, silently, and the repair would have built the trap it exists to
+close. Column renamed, per-day columns added, and an assertion in the generator now re-derives every
+band at the declared time and fails the build on disagreement. **V1 is not merely repaired; it
+cannot recur silently.**
+
+**What did NOT happen, named rather than implied:** the bundle was **not rebuilt**, so a receiver
+picking up the directory today gets corrected tables beside prose and hashes that describe the old
+ones. Nothing shipped, nothing graduated, no packet, nobody contacted. **The bundle is still
+withheld at v0.1.**
