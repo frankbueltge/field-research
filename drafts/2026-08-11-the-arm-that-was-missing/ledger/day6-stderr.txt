@@ -1,1 +1,3 @@
-holding 12652 s until 2026-08-16T03:37:40Z
+holding 47 s until 2026-08-16T03:37:40Z
+start 2026-08-16T03:37:40Z
+{"vantage": {"ip": "160.79.106.139", "city": "Columbus", "region": "Ohio", "country": "US", "loc": "39.9612,-82.9988", "timezone": "America/New_York", "asn": "AS396982", "registrant": "[redacted under this practice's naming rule]", "source": "https://ipinfo.io/json", "fetched_utc": "2026-08-16T03:37:40Z"}}
