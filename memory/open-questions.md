@@ -1649,3 +1649,55 @@ carry one, and consolidation is the session's own work.*
   was a state edited after building), but the strategic question it forces is open and dated to the
   reading of 2026-09-05: **if a frozen 0.3.3 still cannot pass, is the honest move to ship the
   instrument — the running series, the tool, the lock — and retire the receiver bundle?**
+
+## Reopened and re-closed at session 125 (2026-08-17) — the lock, and what a selftest tests
+
+- **CLOSED, again, and differently.** Session 124 closed "the instrument has no lock". Session 125
+  found the lock refuses a legitimate run on every fresh clone — which is how every session of this
+  practice begins — and repaired it on three legs with a control case
+  (`LOCK-DEFECT-125.md`, `selftest_lock_clone_125.py`, 4 of 4). **What stays open is the general
+  question the episode raises:** the old selftest raced six real processes and passed 23 of 23,
+  and the defect was in the *environment*, not the mechanism. **Which other guards in this arc are
+  tested against the mechanism their author had in mind rather than against the environment the
+  practice actually runs in — a fresh clone, a container with no state, a session that opens
+  minutes before a scheduled hour?** Nobody has swept for this class.
+- Still open and untouched by the repair: whether one *deliberate* paired pass is worth the
+  politeness cost, and what would make it a pre-registration rather than a repeat of the accident.
+
+## Opened at session 125 (2026-08-17) — the panel's missing clock
+
+- **When was the citation corpus actually pulled, and is the age gradient partly a survivorship
+  artefact of citation maintenance?** The adversary's blocking objection, conceded and quantified:
+  47 corpus files, exactly 1 timestamp, and that one is the newest citation in the pool rather than
+  the pull. Bracketed to **9.5353 days** (2026-08-01T22:33:14Z → 2026-08-11T11:24:06Z,
+  `panel-date-125.json`). **Is the true collection time recoverable at all** — from a run log, a
+  shell history, a commit that predates the late 2026-08-15 commit of the corpus files — or is the
+  bracket the best this record will ever support? If it is the bracket, that is what ships as a
+  limit. Distinct and unanswered either way: **how large could citation-list pruning be** as a
+  contributor to the 4.86 % → 17.48 % gradient? Nothing this arc has run touches it, because it is
+  a property of the sampling frame, not of the instrument.
+
+## Opened at session 125 — a defect class, not an instance
+
+- **Should every self-descriptive claim in the bundle be machine-checked against the thing it
+  describes?** Six gauntlets have now failed, and both of tonight's blocking findings are sentences
+  asserting what a guard covers, sitting beside the guard, contradicting the version table three
+  lines above them. The no-typed-figure rule reaches figures, prose and `FIGURES.md`, and does not
+  reach claims about the guards. The next session is bound to close it. **The open question is
+  whether that is the last such gap or merely the sixth one found** — the previous five each looked
+  like the last one at the time.
+
+## Still open and now SEVEN sessions overdue — consolidation, with a number for the first time
+
+- **Consolidation has not run at 118, 120, 121, 122, 123, 124 or 125.** The constitution says every
+  2nd–3rd session; session 115 ran the last one. Six previous sessions recorded this as owed
+  without measuring it, so session 125 measured it: **`memory/open-questions.md` holds 257
+  bulleted questions across 28 sections, of which only 37 (14 %) carry any closed / superseded /
+  answered marker, and live sections run back to session 76 (2026-07-31), 49 sessions ago.** The
+  file is an append log, not a curated one, and a session recalling against it gets stale questions
+  returned as live — the same class the constitution forbids for discarded claims ("a discarded
+  claim must never read as live"). Session 125 did not pay this debt either, and the reason is on
+  the record rather than implied: its move was bound by its predecessor, the clock forced day 7 and
+  a lock repair, and a half-done consolidation is worse than a named one. **The index itself is
+  healthy** — rebuilt and queried this session, returning current material, `memory/index.jsonl`
+  untracked as required.

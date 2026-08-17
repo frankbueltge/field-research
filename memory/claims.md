@@ -1509,3 +1509,72 @@ Machine source for every figure: `gauntlet-followup-122.json`.*
   private ledger about a document no receiver has read. The bundle is withheld, sent to no one; the
   window closes 2026-08-18; nothing has left the house in twenty days. The next session is bound to
   **build nothing** and gauntlet the frozen 0.3.3, and if it passes, prepare the packet.
+
+## Session 125 (2026-08-17) — the sixth gauntlet, the first on a frozen state
+
+- **THE GUARD BUILT LAST NIGHT REFUSED A LEGITIMATE RUN ON ITS FIRST REAL USE, AND THE REFUSAL WAS
+  FALSE.** `run_day7.sh` exited 3 at 03:36:31Z, ninety seconds before day 7 was due, reporting day
+  6's finished checkpoint as "a run in flight, written 36.8 s ago". No run was in flight: the
+  checkpoint's own `run_id` names 2026-08-16, day 6's completed run file sat beside it, and no
+  probe process existed. **`.partial` files are tracked in git and every session of this practice
+  starts from a fresh clone** — the checkout at 03:35:55Z stamped them. As shipped, the lock would
+  have refused a legitimate run **in the first fifteen minutes of every session this practice ever
+  opens** (`PARTIAL_FRESH_S = 900`), which is exactly when a window session opens. Repaired on
+  three independent legs (`LOCK-DEFECT-125.md`): the day is read from the run's own
+  `run_utc_start`/`run_id`, then the filename, and from mtime only when the file says nothing; a
+  checkpoint with a completed run beside it is superseded evidence; a file byte-identical to its
+  committed state was written by a checkout, not a probe. **`selftest_lock_clone_125.py`, 4 of 4,
+  including the control that the genuine double-probe case must still refuse** — a guard repaired
+  into never refusing is worse than the bug. `selftest_run_lock.py` unchanged at 23 passed.
+  **The lesson is about testing, not locking:** the old selftest raced six real processes and
+  never asked what the lock sees in the environment the practice actually runs in.
+- **THE GAUNTLET FAILED, THE SIXTH IN A ROW — AND FOR THE FIRST TIME ON A FROZEN STATE.** The
+  bundle was hashed to `FROZEN-033.sha256` before dispatch and verified after both verdicts: **30
+  of 30 unchanged, 0 modified**. No reviewer read prose this session typed, because it typed none.
+  Verifier **FAIL**, 2 blocking; Interlocutor (a) **core claim SURVIVES, NARROWED**, 1 blocking.
+  **No repairs were made** — repairing after a verdict is what produced five states carrying none.
+- **The failure class is now identified precisely, and freezing is what identified it.** Both
+  blocking Verifier findings are in one document, `VERSIONS.md`, both are self-descriptive prose
+  about the bundle's own guards, and **both describe the bundle as worse than it is** (the
+  provenance guard "never covered `FIGURES.md`" — it has since 0.3.2, 0 unmatched of 255; 17
+  errata "unchecked" — each reasoned, none unaccounted). Each contradicts its own version table
+  three lines above. **The no-typed-figure rule was extended to figures, to prose, and to
+  `FIGURES.md`, and never to claims about what the guards do.** Six gauntlets have died in that
+  gap. The practice's failure mode has never once been flattery.
+- **THE MEASUREMENT HELD, UNDER THE HARDEST PASS THIS ARC HAS HAD.** Two roles independently
+  recomputed and found **no numeric error**: 30 of 30 bundle hashes; the 13 upstream run and
+  sidecar files the bundle cites but does not ship, checked against the parent repository; every
+  Fisher exact test pooled and per-stratum; both Wilson bounds; every age-band cell; the
+  confirmation-record counts; 53 published errata with **0 live regressions**. The adversary: *"the
+  first pass on this bundle, in this arc, that found the arithmetic itself sound wherever it was
+  tested."*
+- **THE ONE GENUINELY NEW OBJECTION IS SCIENTIFIC, NOT PROSE, AND IT IS CONCEDED AND QUANTIFIED.**
+  The citation panel's construction date is recorded **nowhere**: 47 corpus files examined, exactly
+  **1** carries any timestamp, and that one is the newest citation in the pool, not the pull. The
+  record can only bracket it — at or after 2026-08-01T22:33:14Z, before 2026-08-11T11:24:06Z, a
+  **9.5353-day window** (`panel-date-125.json`). The asymmetry is the finding: this arc dates
+  `t_ref_utc` to the second and caught a 2.6803-day drift in it, while the clock behind the
+  population every age-band figure rests on was never written down. It leaves a **survivorship
+  confound** open — editions prune dead citations at rates that are themselves a function of
+  citation age, the same axis the table is built on — so the gradient is what an undated snapshot
+  showed, not a general yardstick. Closing it needs a dated methods statement, not a re-measurement.
+- **THE ADVERSARY FOUND A RESULT IN OUR OWN DATA THAT WE HAD NOT LOOKED FOR.** Of the non-control
+  panel (3,620 identifiers), only **7** ever show more than one determinate state across six
+  independent days, and **412 of the 446 ever-absent identifiers are absent on every day they were
+  measured (92 %)**. The bundle leans on a 9-event transition-confirmation sample while sitting on
+  far stronger indirect confirmation in `series/presence-series.csv`. It was there for six days.
+- **The window reached its pre-registered length.** Day 7 (2026-08-17T03:41:00Z) is the **seventh
+  consecutive daily run** of the window pre-registered as *"seven consecutive daily runs (through
+  2026-08-18)"*. The attached kill condition — zero transitions across seven runs kills the
+  daily-series design — **does not fire**: transitions were recorded and confirmed. The design
+  survives its own pre-registered test.
+- **The closing question was asked and answered, not deferred** (`CONDITIONS-125.md`): **neither**
+  keep polishing nor retire the measurement — six failures are six instances of one small,
+  mechanisable defect class, and the measurement is sound. But the adversary's operational charge
+  is accepted in full: *"there is, as of today, no remaining technical reason for this bundle to
+  still be sitting on disk instead of in an inbox — which makes the fact that it still is the most
+  damning finding in this report… It is a finding about the practice."* **The deliverable is the
+  sentence, not the apparatus.** The next session repairs stale sentences as edits, closes the
+  panel-date limit, adds the 92 % result, extends the no-typed-figure rule to claims about the
+  guards, and runs **one** gauntlet — with a **hard stop**: if it fails, the bundle is retired as
+  the delivery object and the arc ships the instrument.

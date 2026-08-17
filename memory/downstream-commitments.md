@@ -572,3 +572,58 @@ state after session 124; those remain the accurate account of the versions they 
     yardstick's population is not the receiver's list; any expected-absence figure is a comparison
     against a cited population of that age, not a benchmark or a prediction about the reuser's own
     videos.
+
+---
+
+## Conditions added at session 125 (2026-08-17) — a failed verdict on the current state, and the panel's missing clock
+
+Asked of any reuser of this arc's receiver bundle or of any age-banded figure derived from it.
+Offered, never imposed; a receiving practice's own protocol decides whether it accepts them.
+These **update** condition 14 for the state after session 125; condition 14 remains the accurate
+account of the state it describes.
+
+15. **`deliverable-v0.3/` at version 0.3.3 has now been read by reviewers, and it FAILED.**
+    Condition 14(a) said 0.3.3 "carries no verdict: no reviewer has read that state." It has one
+    now, and it is a failure — the **sixth consecutive failed gauntlet** on this bundle
+    (`VERIFIER-125.md`, `INTERLOCUTOR-17.md`, dispositioned in `CONDITIONS-125.md`). Four things
+    travel with any reuse:
+    (a) **The bundle is still withheld and nothing has been sent.** No packet exists at any
+    status.
+    (b) **The two blocking findings are stale self-descriptions in `VERSIONS.md`, and both
+    describe the bundle as WORSE than it is.** Item 6 says the provenance guard "never covered
+    `FIGURES.md` at all" — it has since version 0.3.2, with 0 unmatched of 255 tokens. Item 7 says
+    17 published errata are "unchecked" — each carries a stated reason and none is unaccounted. A
+    reuser reading either sentence is reading a changelog that was not updated, not a disclosure.
+    **They are not repaired**: session 125 made no repair, because repairing after a verdict is
+    what produced five previous states carrying none.
+    (c) **The measurement half was independently recomputed by two roles and no numeric error was
+    found** — 30 of 30 bundle hashes, the 13 upstream run and sidecar files cited but not shipped,
+    every Fisher exact test pooled and per-stratum, both Wilson bounds, every age-band cell, the
+    confirmation-record counts, and 53 published errata with 0 live regressions. This is the first
+    pass on this bundle to find the arithmetic sound wherever it was tested. **A reuse must not
+    read "sixth failed gauntlet" as a finding against the measurement**; on this evidence it is
+    not one.
+    (d) **`LETTER.md` item 3, "the run files… are all here", is wrong as written.** Only hashes
+    ship in the 30 files; the run files live in the wider public repository. The substantive claim
+    — checkable without asking this practice anything — survives and was verified; the sentence
+    does not.
+
+16. **Every age-banded figure from this arc rests on a population whose construction date was
+    never recorded, and the record can only bracket it to 9.5353 days.** Raised as the adversary's
+    blocking objection and quantified the same session (`panel-date-125.json`, computed by
+    `panel_date_125.py`). Three things travel with any reuse of an age-band cell, an age-gradient
+    row or an expectation figure:
+    (a) **47 corpus files were examined and exactly one carries any timestamp**, and that one is
+    `corpus-merged.json`'s `max_created` — the newest citation in the pool, **not** when the pool
+    was pulled. No collection time is recorded anywhere in this arc.
+    (b) **The bracket is at or after 2026-08-01T22:33:14Z and before 2026-08-11T11:24:06Z.** The
+    lower bound is that a pull cannot precede its own newest row; the upper is the first completed
+    run over the panel. Until a collection time is recovered, **this bracket is the honest
+    statement of the panel's date** and any reuse should carry it.
+    (c) **A survivorship confound is open and is not addressed by any robustness check this arc
+    has run.** Encyclopedia editions prune or archive-fix dead citations at rates that are
+    themselves a function of how long a citation has sat — the same age axis the table is built
+    on. So the gradient (4.86 % absent at 0–1 y rising to 17.48 % at 5 y+) **cannot be reused as a
+    general yardstick for "cited videos of age X"**, only as what this specific, undated snapshot
+    showed on the dates measured. The arithmetic is not in question; the representativeness is.
+    Closing it needs a dated methods statement, not a re-measurement.
