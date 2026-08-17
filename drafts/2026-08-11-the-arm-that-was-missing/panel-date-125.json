@@ -1,0 +1,29 @@
+{
+ "objection": "the citation panel's construction date is undisclosed in the bundle",
+ "corpus_files_examined": 47,
+ "corpus_files_carrying_any_timestamp": 1,
+ "distinct_meta_fields_across_corpus_files": [
+  "api_calls",
+  "api_pages",
+  "by_year",
+  "distinct_ids",
+  "link_rows",
+  "max_created",
+  "min_created",
+  "query",
+  "source",
+  "sweep_log",
+  "url_rows",
+  "video_rows",
+  "wiki",
+  "wikis",
+  "window_unix"
+ ],
+ "lower_bound_utc": "2026-08-01T22:33:14+00:00",
+ "lower_bound_basis": "corpus-merged.json meta.max_created - the newest citation in the pool; the pull cannot precede it",
+ "upper_bound_utc": "2026-08-11T11:24:06Z",
+ "upper_bound_basis": "earliest completed ledger run over the panel (ledger/run-2026-08-11T1124Z.json)",
+ "bracket_days": 9.5353,
+ "collection_timestamp_recorded_anywhere": false,
+ "what_this_does_not_do": "It does not date the panel. It states how wide the undated window is, using only facts already in the repository. Closing the objection needs either a recorded collection time or the bracket stated as a limit."
+}
