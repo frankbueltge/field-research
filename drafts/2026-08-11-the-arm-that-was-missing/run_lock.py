@@ -72,6 +72,7 @@ import argparse
 import hashlib
 import json
 import os
+import subprocess
 import sys
 import time
 
@@ -117,6 +118,51 @@ def _utc_day(t=None):
     return time.strftime("%Y-%m-%d", time.gmtime(t))
 
 
+def _partial_own_day(path, d):
+    """The day a checkpoint says IT belongs to, read from the run, not from the filesystem.
+
+    Session 125, 2026-08-17, defect L1. The first real use of this lock refused a legitimate
+    run because it read the day off `os.path.getmtime`. Every session of this practice starts
+    from a fresh clone, the checkpoints are tracked files, and a checkout stamps them with the
+    checkout time — so day 6's finished checkpoint presented as a run in flight for day 7,
+    thirty-seven seconds old, minutes before day 7 was due. A run's day is a property of the
+    run. `run_id` and `run_utc_start` are written by the probe; the filename is the next best
+    witness; mtime is the last resort and is now only reached when the file says nothing.
+    """
+    for key in ("run_utc_start", "run_id"):
+        v = d.get(key)
+        if isinstance(v, str) and len(v) >= 10 and v[4] == "-" and v[7] == "-":
+            return v[:10], key
+    base = os.path.basename(path)
+    if base.startswith("run-") and len(base) > 14 and base[8] == "-" and base[11] == "-":
+        return base[4:14], "filename"
+    return _utc_day(os.path.getmtime(path)), "mtime"
+
+
+def _is_committed_state(path):
+    """True when this file is byte-identical to the state the repository has committed.
+
+    Session 125, defect L2, the other half of the same refusal. A tracked `.partial` restored
+    by a checkout is fresh by mtime and was written by nobody. A checkout is not a probe. If
+    git cannot answer — no repository, no git — this returns False, so the file keeps counting
+    as a sign of life and the lock stays on its safe side.
+    """
+    try:
+        r = subprocess.run(["git", "status", "--porcelain", "--", os.path.abspath(path)],
+                           cwd=os.path.dirname(os.path.abspath(path)) or ".",
+                           capture_output=True, text=True, timeout=15)
+    except (OSError, subprocess.SubprocessError):
+        return False
+    if r.returncode != 0:
+        return False
+    if r.stdout.strip():
+        return False                      # modified or untracked: a process has touched it
+    r2 = subprocess.run(["git", "ls-files", "--error-unmatch", "--", os.path.abspath(path)],
+                        cwd=os.path.dirname(os.path.abspath(path)) or ".",
+                        capture_output=True, text=True, timeout=15)
+    return r2.returncode == 0             # clean AND tracked == exactly the committed bytes
+
+
 def _scan_day(ledger_dir, day, fingerprint):
     """Complete runs and fresh partials for this day, over this manifest."""
     complete, fresh_partial = [], []
@@ -130,9 +176,23 @@ def _scan_day(ledger_dir, day, fingerprint):
                 d = json.load(open(p))
             except (OSError, ValueError):
                 continue
-            if _utc_day(os.path.getmtime(p)) == day and now - os.path.getmtime(p) < PARTIAL_FRESH_S:
-                fresh_partial.append({"file": p, "age_s": round(now - os.path.getmtime(p), 1),
-                                      "requested": d.get("requested")})
+            own_day, day_source = _partial_own_day(p, d)
+            # Three reasons a checkpoint is not a run in flight, each sufficient on its own and
+            # each of which alone would have prevented session 125's false refusal:
+            #   L1 the checkpoint says it belongs to another day;
+            #   L3 the run it checkpoints has a completed file beside it — it finished;
+            #   L2 the bytes are the committed ones, so a checkout wrote them, not a probe.
+            if own_day != day:
+                continue
+            if os.path.exists(p[:-len(".partial")]):
+                continue
+            if now - os.path.getmtime(p) >= PARTIAL_FRESH_S:
+                continue
+            if _is_committed_state(p):
+                continue
+            fresh_partial.append({"file": p, "age_s": round(now - os.path.getmtime(p), 1),
+                                  "requested": d.get("requested"),
+                                  "day_read_from": day_source})
             continue
         if not n.endswith(".json"):
             continue

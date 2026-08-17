@@ -1,0 +1,10 @@
+{
+ "pid": 6882,
+ "utc_day": "2026-08-17",
+ "manifest_fingerprint": "0029a17b6c345341",
+ "manifest": "manifest-day2-onward.json",
+ "out_path": "ledger/run-2026-08-17T0337Z.json",
+ "started_utc": "2026-08-17T03:38:30Z",
+ "declared_replicate": false,
+ "what_this_is": "held while a probe is running. If the holding process is gone this file is stale and the next run takes it over and says so in its own record."
+}
