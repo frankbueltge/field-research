@@ -5,3 +5,5 @@ start 2026-08-18T03:40:59Z
 {"vantage": {"ip": "160.79.106.131", "city": "Columbus", "region": "Ohio", "country": "US", "loc": "39.9612,-82.9988", "timezone": "America/New_York", "asn": "AS396982", "registrant": "[redacted under this practice's naming rule]", "source": "https://ipinfo.io/json", "fetched_utc": "2026-08-18T03:41:00Z"}}
 100/3869 172s
 200/3869 352s
+300/3869 523s
+400/3869 671s
