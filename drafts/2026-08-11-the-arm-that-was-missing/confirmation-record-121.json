@@ -7,10 +7,11 @@
    "ledger/transition-confirm-2026-08-13.json",
    "ledger/transition-confirm-2026-08-14.json",
    "ledger/transition-confirm-2026-08-15.json",
-   "ledger/transition-confirm-2026-08-16.json"
+   "ledger/transition-confirm-2026-08-16.json",
+   "ledger/transition-confirm-2026-08-18.json"
   ],
   "corrections": "ledger/corrections.json",
-  "corrections_sha256": "b08e4c531e79cac24a91cac17c51e00ccaa7cac1e064a4282dbc7b89372a8e7a"
+  "corrections_sha256": "357cb2b332faa44fe605fc03882e3be5ba8699daa93fdc54e6128937a4a12ae6"
  },
  "passes_per_reading": 5,
  "what_a_pass_is": "one further request to the same endpoint for the same identifier, at the instrument's own 1.0 s spacing, immediately after the reading being tested. A reading is CONFIRMED only if all five agree with it.",
@@ -21,8 +22,8 @@
    "refuted": 0
   },
   "RETRIEVABLE->NOT-RETRIEVABLE": {
-   "n": 3,
-   "confirmed": 1,
+   "n": 7,
+   "confirmed": 5,
    "refuted": 2
   }
  },
@@ -33,8 +34,8 @@
    "refuted": 0
   },
   "RETRIEVABLE->NOT-RETRIEVABLE": {
-   "n": 3,
-   "confirmed": 1,
+   "n": 7,
+   "confirmed": 5,
    "refuted": 2
   }
  },
@@ -205,6 +206,82 @@
     "RETRIEVABLE",
     "RETRIEVABLE",
     "RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-18.json",
+   "sidecar_sha256": "9cb931b4a9387c977fbafac1632afc740239237bdaef89da5a7857ba273594cb",
+   "generated_utc": "2026-08-18T05:30:23Z",
+   "vid": "7442748015774813458",
+   "handle": "shuzo__3120",
+   "direction": "RETRIEVABLE->NOT-RETRIEVABLE",
+   "passes": [
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-18.json",
+   "sidecar_sha256": "9cb931b4a9387c977fbafac1632afc740239237bdaef89da5a7857ba273594cb",
+   "generated_utc": "2026-08-18T05:30:23Z",
+   "vid": "7463176818347003178",
+   "handle": "jack.schlossberg",
+   "direction": "RETRIEVABLE->NOT-RETRIEVABLE",
+   "passes": [
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-18.json",
+   "sidecar_sha256": "9cb931b4a9387c977fbafac1632afc740239237bdaef89da5a7857ba273594cb",
+   "generated_utc": "2026-08-18T05:30:23Z",
+   "vid": "7477574938761727250",
+   "handle": "shuzo__3120",
+   "direction": "RETRIEVABLE->NOT-RETRIEVABLE",
+   "passes": [
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-18.json",
+   "sidecar_sha256": "9cb931b4a9387c977fbafac1632afc740239237bdaef89da5a7857ba273594cb",
+   "generated_utc": "2026-08-18T05:30:23Z",
+   "vid": "7479116692124142869",
+   "handle": "shuzo__3120",
+   "direction": "RETRIEVABLE->NOT-RETRIEVABLE",
+   "passes": [
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE"
    ],
    "n_passes": 5,
    "confirmed": true,

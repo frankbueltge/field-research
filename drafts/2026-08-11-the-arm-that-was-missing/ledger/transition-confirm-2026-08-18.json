@@ -1,0 +1,272 @@
+{
+ "generated_utc": "2026-08-18T05:30:23Z",
+ "diff": "ledger/diff-day6-retry.json",
+ "vantage": {
+  "ip": "160.79.106.141",
+  "city": "Columbus",
+  "region": "Ohio",
+  "country": "US",
+  "loc": "39.9612,-82.9988",
+  "timezone": "America/New_York",
+  "asn": "AS396982",
+  "registrant": "[redacted under this practice's naming rule]",
+  "source": "https://ipinfo.io/json",
+  "fetched_utc": "2026-08-18T05:29:57Z"
+ },
+ "passes_per_transition": 5,
+ "K4": "PASSES \u2014 every transition confirmed",
+ "results": [
+  {
+   "vid": "7442748015774813458",
+   "handle": "shuzo__3120",
+   "arm": null,
+   "from": "RETRIEVABLE",
+   "to": "NOT-RETRIEVABLE",
+   "reconfirmation_states": [
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": true,
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests",
+   "passes": [
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 1,
+     "utc": "2026-08-18T05:29:57Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 2,
+     "utc": "2026-08-18T05:29:58Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-18T05:30:00Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 4,
+     "utc": "2026-08-18T05:30:01Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 5,
+     "utc": "2026-08-18T05:30:02Z"
+    }
+   ]
+  },
+  {
+   "vid": "7463176818347003178",
+   "handle": "jack.schlossberg",
+   "arm": null,
+   "from": "RETRIEVABLE",
+   "to": "NOT-RETRIEVABLE",
+   "reconfirmation_states": [
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": true,
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests",
+   "passes": [
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 1,
+     "utc": "2026-08-18T05:30:04Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 2,
+     "utc": "2026-08-18T05:30:05Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-18T05:30:06Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 4,
+     "utc": "2026-08-18T05:30:08Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 5,
+     "utc": "2026-08-18T05:30:09Z"
+    }
+   ]
+  },
+  {
+   "vid": "7477574938761727250",
+   "handle": "shuzo__3120",
+   "arm": null,
+   "from": "RETRIEVABLE",
+   "to": "NOT-RETRIEVABLE",
+   "reconfirmation_states": [
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": true,
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests",
+   "passes": [
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 1,
+     "utc": "2026-08-18T05:30:10Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 2,
+     "utc": "2026-08-18T05:30:12Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-18T05:30:13Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 4,
+     "utc": "2026-08-18T05:30:14Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 5,
+     "utc": "2026-08-18T05:30:16Z"
+    }
+   ]
+  },
+  {
+   "vid": "7479116692124142869",
+   "handle": "shuzo__3120",
+   "arm": null,
+   "from": "RETRIEVABLE",
+   "to": "NOT-RETRIEVABLE",
+   "reconfirmation_states": [
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": true,
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests",
+   "passes": [
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 1,
+     "utc": "2026-08-18T05:30:17Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 2,
+     "utc": "2026-08-18T05:30:18Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-18T05:30:20Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 4,
+     "utc": "2026-08-18T05:30:21Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 5,
+     "utc": "2026-08-18T05:30:22Z"
+    }
+   ]
+  }
+ ]
+}

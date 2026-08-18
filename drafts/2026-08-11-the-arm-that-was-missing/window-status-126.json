@@ -2,7 +2,7 @@
  "schema": "field-research/window-status/1",
  "computed_by": "window_status.py",
  "rule": "a .partial is never a run; a day counts only if a non-partial run file exists",
- "n_measurement_days": 6,
+ "n_measurement_days": 7,
  "measurement_days": [
   {
    "file": "ledger/run-2026-08-11T1124Z.json",
@@ -39,9 +39,15 @@
    "start_utc": "2026-08-16T03:37:40Z",
    "n_observations": 3869,
    "n_planned": 3869
+  },
+  {
+   "file": "ledger/run-2026-08-18T0341Z.json",
+   "start_utc": "2026-08-18T03:41:00Z",
+   "n_observations": 3869,
+   "n_planned": 3869
   }
  ],
- "n_completed_run_files": 7,
+ "n_completed_run_files": 8,
  "n_extra_passes_same_day": 1,
  "extra_passes_same_day": [
   {
@@ -51,19 +57,12 @@
    "n_planned": 3869
   }
  ],
- "n_holes": 2,
+ "n_holes": 1,
  "holes": [
   {
    "file": "ledger/run-2026-08-17T0337Z.json.partial",
    "why": "a partial with no completed run beside it - the day was started and not taken",
    "run_id_it_claims": "2026-08-17T03:41:00Z (manifest carried a placeholder)",
-   "n_observations": 600,
-   "n_planned": 3869
-  },
-  {
-   "file": "ledger/run-2026-08-18T0341Z.json.partial",
-   "why": "a partial with no completed run beside it - the day was started and not taken",
-   "run_id_it_claims": "2026-08-18T03:41:00Z (manifest carried a placeholder)",
    "n_observations": 600,
    "n_planned": 3869
   }
@@ -98,19 +97,31 @@
    "to": "2026-08-16T03:37:40Z",
    "days": 1.0,
    "is_daily": true
+  },
+  {
+   "from": "2026-08-16T03:37:40Z",
+   "to": "2026-08-18T03:41:00Z",
+   "days": 2.0023,
+   "is_daily": false
   }
  ],
- "n_intervals_not_daily": 1,
+ "n_intervals_not_daily": 2,
  "intervals_not_daily": [
   {
    "from": "2026-08-11T11:24:06Z",
    "to": "2026-08-12T03:40:28Z",
    "days": 0.678,
    "is_daily": false
+  },
+  {
+   "from": "2026-08-16T03:37:40Z",
+   "to": "2026-08-18T03:41:00Z",
+   "days": 2.0023,
+   "is_daily": false
   }
  ],
  "required_runs": 7,
- "count_requirement_met": false,
+ "count_requirement_met": true,
  "consecutive_daily": false,
  "preregistered_window_met": false,
  "why_two_conditions": "'seven consecutive daily runs' is a conjunction: the COUNT and the CONSECUTIVENESS. Erratum E21 reported the window closed while neither held. They are reported separately here so a later session cannot collapse them into one word again."

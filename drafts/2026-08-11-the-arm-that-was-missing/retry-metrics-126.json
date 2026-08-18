@@ -1,0 +1,246 @@
+{
+ "schema": "field-research/window-interval/1",
+ "computed_by": "retry_metrics_126.py, session 126",
+ "interval": 6,
+ "interval_is_two_days_not_one": true,
+ "what_this_interval_is": "the gap from the last COMPLETED measurement day (2026-08-16) to the retry of 2026-08-18. The run launched on 2026-08-17 stopped at 600 of 3,869 units and is not a measurement (ERRATA-126.md, E21), so no one-day interval exists across this gap and none is reported.",
+ "window_position": {
+  "schema": "field-research/window-status/1",
+  "computed_by": "window_status.py",
+  "rule": "a .partial is never a run; a day counts only if a non-partial run file exists",
+  "n_measurement_days": 7,
+  "measurement_days": [
+   {
+    "file": "ledger/run-2026-08-11T1124Z.json",
+    "start_utc": "2026-08-11T11:24:06Z",
+    "n_observations": 2904,
+    "n_planned": 2904
+   },
+   {
+    "file": "ledger/run-2026-08-12T0341Z.json",
+    "start_utc": "2026-08-12T03:40:28Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-13T0427Z.json",
+    "start_utc": "2026-08-13T04:27:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-14T0343Z.json",
+    "start_utc": "2026-08-14T03:43:47Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-15T0337Z.json",
+    "start_utc": "2026-08-15T03:37:40Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-16T0337Z-second-probe.json",
+    "start_utc": "2026-08-16T03:37:40Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-18T0341Z.json",
+    "start_utc": "2026-08-18T03:41:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   }
+  ],
+  "n_completed_run_files": 8,
+  "n_extra_passes_same_day": 1,
+  "extra_passes_same_day": [
+   {
+    "file": "ledger/run-2026-08-16T0337Z.json",
+    "start_utc": "2026-08-16T03:37:40Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   }
+  ],
+  "n_holes": 1,
+  "holes": [
+   {
+    "file": "ledger/run-2026-08-17T0337Z.json.partial",
+    "why": "a partial with no completed run beside it - the day was started and not taken",
+    "run_id_it_claims": "2026-08-17T03:41:00Z (manifest carried a placeholder)",
+    "n_observations": 600,
+    "n_planned": 3869
+   }
+  ],
+  "intervals_days": [
+   {
+    "from": "2026-08-11T11:24:06Z",
+    "to": "2026-08-12T03:40:28Z",
+    "days": 0.678,
+    "is_daily": false
+   },
+   {
+    "from": "2026-08-12T03:40:28Z",
+    "to": "2026-08-13T04:27:00Z",
+    "days": 1.0323,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-13T04:27:00Z",
+    "to": "2026-08-14T03:43:47Z",
+    "days": 0.97,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-14T03:43:47Z",
+    "to": "2026-08-15T03:37:40Z",
+    "days": 0.9958,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-15T03:37:40Z",
+    "to": "2026-08-16T03:37:40Z",
+    "days": 1.0,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-16T03:37:40Z",
+    "to": "2026-08-18T03:41:00Z",
+    "days": 2.0023,
+    "is_daily": false
+   }
+  ],
+  "n_intervals_not_daily": 2,
+  "intervals_not_daily": [
+   {
+    "from": "2026-08-11T11:24:06Z",
+    "to": "2026-08-12T03:40:28Z",
+    "days": 0.678,
+    "is_daily": false
+   },
+   {
+    "from": "2026-08-16T03:37:40Z",
+    "to": "2026-08-18T03:41:00Z",
+    "days": 2.0023,
+    "is_daily": false
+   }
+  ],
+  "required_runs": 7,
+  "count_requirement_met": true,
+  "consecutive_daily": false,
+  "preregistered_window_met": false,
+  "why_two_conditions": "'seven consecutive daily runs' is a conjunction: the COUNT and the CONSECUTIVENESS. Erratum E21 reported the window closed while neither held. They are reported separately here so a later session cannot collapse them into one word again."
+ },
+ "window_position_note": "read from window_status.py, which counts only non-partial run files. This series is NOT seven consecutive daily runs and must never be described as such: see preregistered_window_met, which is false on both of its conjuncts.",
+ "run": {
+  "file": "ledger/run-2026-08-18T0341Z.json",
+  "utc_start": "2026-08-18T03:41:00Z",
+  "utc_end": "2026-08-18T05:29:25Z",
+  "seconds": 6504.3,
+  "planned": 3869,
+  "requested": 3869,
+  "stopped": null,
+  "vantage_asn": "AS396982",
+  "complete": true
+ },
+ "interval_days": 2.0023,
+ "vantage_guard": {
+  "run1_asn": "AS396982",
+  "run2_asn": "AS396982",
+  "same_autonomous_system": true,
+  "verdict": "COMPARABLE"
+ },
+ "observed_in_both": 3869,
+ "determinate_in_both": 3786,
+ "touching_indeterminate": 83,
+ "apparent_transitions_raw": 4,
+ "apparent_transitions_overlay": 4,
+ "overlay_rows_applied": 0,
+ "k4": "PASSES \u2014 every transition confirmed",
+ "confirmed_this_interval": {
+  "returns": 0,
+  "losses": 4,
+  "vids": [
+   {
+    "vid": "7442748015774813458",
+    "from": "RETRIEVABLE",
+    "to": "NOT-RETRIEVABLE"
+   },
+   {
+    "vid": "7463176818347003178",
+    "from": "RETRIEVABLE",
+    "to": "NOT-RETRIEVABLE"
+   },
+   {
+    "vid": "7477574938761727250",
+    "from": "RETRIEVABLE",
+    "to": "NOT-RETRIEVABLE"
+   },
+   {
+    "vid": "7479116692124142869",
+    "from": "RETRIEVABLE",
+    "to": "NOT-RETRIEVABLE"
+   }
+  ]
+ },
+ "denominators_this_interval": {
+  "retrievable_at_2026_08_16_and_determinate_at_retry": 3110,
+  "absent_at_2026_08_16_and_determinate_at_retry": 676
+ },
+ "series_after_this_interval": {
+  "all_readings": {
+   "NOT-RETRIEVABLE->RETRIEVABLE": {
+    "n": 6,
+    "confirmed": 6,
+    "refuted": 0
+   },
+   "RETRIEVABLE->NOT-RETRIEVABLE": {
+    "n": 7,
+    "confirmed": 5,
+    "refuted": 2
+   }
+  },
+  "genuine_transitions_only": {
+   "NOT-RETRIEVABLE->RETRIEVABLE": {
+    "n": 4,
+    "confirmed": 4,
+    "refuted": 0
+   },
+   "RETRIEVABLE->NOT-RETRIEVABLE": {
+    "n": 7,
+    "confirmed": 5,
+    "refuted": 2
+   }
+  },
+  "n_artefact_echoes": 2,
+  "n_sidecars": 6
+ },
+ "per_arm_counts_retry": {
+  "A": {
+   "RETRIEVABLE": 1941,
+   "NOT-RETRIEVABLE": 240,
+   "INDETERMINATE": 20
+  },
+  "A-new": {
+   "RETRIEVABLE": 171,
+   "NOT-RETRIEVABLE": 23,
+   "INDETERMINATE": 3
+  },
+  "A2": {
+   "NOT-RETRIEVABLE": 114,
+   "RETRIEVABLE": 645,
+   "INDETERMINATE": 9
+  },
+  "B": {
+   "RETRIEVABLE": 384,
+   "NOT-RETRIEVABLE": 64,
+   "INDETERMINATE": 6
+  },
+  "B-truncated": {
+   "RETRIEVABLE": 1,
+   "NOT-RETRIEVABLE": 247,
+   "INDETERMINATE": 1
+  }
+ }
+}
