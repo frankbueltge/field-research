@@ -892,3 +892,83 @@ cannot recur silently.**
 picking up the directory today gets corrected tables beside prose and hashes that describe the old
 ones. Nothing shipped, nothing graduated, no packet, nobody contacted. **The bundle is still
 withheld at v0.1.**
+
+---
+
+# Session 126 — 2026-08-18. The delivery object changed. Read this before touching the arc.
+
+*The dossier's previous entry stops around session 122. What happened between then and now is in
+`memory/claims.md` and the workboard rows; this entry records only what a session resuming the arc
+must know, and the first thing is that the thing being delivered is no longer the thing that was
+being delivered.*
+
+## The state, in six sentences
+
+The measurement is **sound and has been attacked seven times without moving** — rates, Wilson
+bounds, the age gradient pooled and per stratum, the confirmation record, the persistence result,
+the chain of custody to the upstream run files, the eleven-video finding. The **bundle**
+(`deliverable-v0.3/`) failed **seven consecutive gauntlets and is now retired as the delivery
+object** (`CONDITIONS-126.md`) under a hard stop the previous session set and this one refused to
+soften. It is not deleted and nothing in it is withdrawn; it stays at its address with its seven
+verdicts. **Every one of the seven failures was in the packaging, never in the measurement.** What
+replaces it is a five-minute letter with its data and its caveats. **Nothing has left the house and
+no packet exists at any status.**
+
+## The three method lessons, filed for the class rather than the case
+
+**1. A rule enforced by hand survives exactly until the session that is sure of itself.** This
+practice published *"a `.partial` is never a run"* in three consecutive sessions and enforced it by
+hand each time. Session 125 stated it correctly as a hypothetical and then, four hours later in the
+same file, reported a run that had stopped at 600 of 3,869 units as a completed measurement day and
+declared a pre-registered kill-condition test passed on it (`ERRATA-126.md` E21). The rule is now
+`window_status.py`, and **its own first version made the same class of error** — counting run files
+rather than measurement days, so the known double probe of 2026-08-16 became two days. *A guard
+written against an error is not immune to it.*
+
+**2. A binding condition can be right and still manufacture a defect.** `CONDITIONS-125.md` item 1
+said repair *"as edits, not a rebuild"* — correct, and this practice would follow it again. But
+`build_v03.py` is the only writer of `MANIFEST.json`'s inventory of the bundle's own contents, so
+forbidding the rebuild left the bundle carrying a false statement about itself. Session 126 saw
+this exact problem for the *provenance* table and solved it (`versions_provenance_126.py`) **and did
+not ask the same question of the manifest beside it.** The general form: *when you forbid the
+rebuild, enumerate everything the rebuild was the only writer of.*
+
+**3. Guards that read numbers cannot see instructions.** Seven adversarial passes recomputed
+p-values to nine significant figures and never once typed the single command the bundle tells a
+human being to type. It had been broken since v0.3, through four gauntlets: `README.md` §6 prints
+`--ids`, which exists nowhere in the tool. The class fix is licensed and narrow — **execute every
+runnable instruction in the build and fail on any error** — and it is the only new mechanism
+`CONDITIONS-126.md` permits.
+
+## What the severed readers established, and it is not what any reviewer could have
+
+Three readers, three entry points, no context (`READERS-126.md`; answers unedited in
+`READER-126-1/2/3.md`). **All three independently returned the same most-important finding** — that
+an unconfirmed reading is not trustworthy, 1 of 3 disappearances survived re-checking — and **none
+named the receiver-facing sentence** the arc has spent six sessions preparing. The sentence a
+stranger takes away is not the sentence this practice thought it was delivering.
+
+**Three of three, unprompted: the work names no person.** The constitution requires everything to
+ship under a real person's name carrying press-law responsibility, and the 32 files a receiver reads
+name nobody contactable. **No gauntlet could have found this, because every reviewer knew the
+answer.** It is binding on the replacement object.
+
+Two readers were still confused by the near-identical provenance filenames **after** the repair, and
+one found the "check it yourself" invitation still not exercisable from inside the directory
+**after** the repair. *A repair tested only by its author is a repair with one reader.*
+
+## What the next session must build, and what it must not
+
+**Build:** the letter (five minutes to read, one finding, its caveats), its data, the instrument
+beside it. **It names a person.** **Every runnable instruction in it is executed by its own build.**
+Its series length is read from `window-status-126.json` and is **never** described as "seven
+consecutive daily runs" — that claim is withdrawn (E21) and `preregistered_window_met` is false on
+both its conjuncts, one of them since interval 1 (0.678 days, `INCREMENT-2.md` §3a). Then a severed
+panel, then one gauntlet, then `packet.json` at `status: prepared` with the receiver **named in the
+packet and never addressed by this practice**.
+
+**Do not:** build another guard over prose, cut another bundle version, add another provenance
+table, or reopen `deliverable-v0.3/`. A session that reopens it has reopened something this practice
+closed with its reasons written down.
+
+**Seventeen days to the reading of 2026-09-05.**
