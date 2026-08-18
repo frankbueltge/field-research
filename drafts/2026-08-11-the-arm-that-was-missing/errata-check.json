@@ -1,7 +1,7 @@
 {
  "schema": "field-research/errata-regression-check/1",
  "root": "deliverable-v0.3",
- "files_scanned": 21,
+ "files_scanned": 23,
  "registry_size": 29,
  "coverage": {
   "published_tables": {

@@ -10,7 +10,8 @@ reports against them stay checkable.*
 | 0.1 + dated corrections | 2026-08-16 | **STILL WITHHELD.** Session 122 measured a reference-clock defect and published the corrected tables **beside** the originals rather than editing them. | `deliverable/*-CORRECTED-2026-08-16.*` |
 | **0.3** | 2026-08-16 | **WITHHELD — the gauntlet FAILED.** Verifier **FAIL**, five blocking; Interlocutor: core claim **survives, narrowed**, two blocking. Every blocking finding was a *sentence*, not a measurement — and six of them were corrections this practice had already published on 2026-08-15 and reproduced unchanged. Reports published unedited (`VERIFIER-123.md`, `INTERLOCUTOR-15.md`); errata with true values in `ERRATA-123.md`. | `deliverable-v0.3/` as built at that commit |
 | **0.3.2** | 2026-08-16 | **WITHHELD — the gauntlet FAILED, the fifth in a row on this bundle.** Session 124 routed `FIGURES.md` through the provenance guard, completed the errata accounting, moved the population caveat into the letter, and built the run lock. Verifier **FAIL**, one blocking: erratum **E20**, published by this session in `ERRATA-124.md`, was never brought into the errata accounting — *the session whose move was to account for every published erratum published one it did not account for*, and the build gate did not catch it because it did not read its own coverage report. | `deliverable-v0.3/` as the reviewer read it |
-| **0.3.3** | **2026-08-16** | **WITHHELD, and these repairs carry NO VERDICT.** This directory is version 0.3.2 with E20 brought into the accounting and the build gate hardened to fail on any unaccounted or mis-mapped erratum (Verifier finding N1). **No reviewer has read this state.** A verdict is good only for the state it was run on, and nothing has run on this one. | this directory |
+| **0.3.3** | **2026-08-16** | **WITHHELD — the gauntlet FAILED, the sixth in a row on this bundle.** This state was frozen, hashed before either reviewer was dispatched and re-hashed after both verdicts — 30 of 30 files unchanged, nothing edited under the reviewers — and read on 2026-08-17. Verifier **FAIL**, two blocking; Interlocutor: core claim **survives, narrowed**, one blocking. **All three blocking findings were in this file**, and the two Verifier findings were the two paragraphs that used to sit below this table describing what the guards cover: both were stale, and both described the bundle as *worse* than it is. The third is not a wording defect — the citation panel's own construction date is recorded nowhere in this arc. Reports published unedited (`VERIFIER-125.md`, `INTERLOCUTOR-17.md`), dispositioned in `CONDITIONS-125.md`. **The measurement half was recomputed independently by both roles and no numeric error was found** — the first pass on this bundle to find the arithmetic sound wherever it was tested. | `deliverable-v0.3/` as the reviewers read it, hashes in `FROZEN-033.sha256` |
+| **0.3.3 + repairs of 2026-08-18** | **2026-08-18** | **WITHHELD, and these repairs carry NO VERDICT until the gauntlet of this date reports.** Per `CONDITIONS-125.md` binding item 1 the findings above are repaired **as edits and no new version number is claimed**: fixing prose that was already wrong does not earn one. What changed: the two stale guard descriptions are gone, replaced by a block this practice cannot type (below); the panel's undisclosed construction date is stated as a bracket in `LIMITS.md`; `LETTER.md` no longer says the run files are in this directory; the two provenance tables are named apart in `FIGURES.md`; one stale hash in `confirmation-record.json` is recomputed; and the persistence result the previous reviewer found in our own series is added. **A verdict is good only for the state it ran on, and the state above is not this one.** | this directory, hashes in `FROZEN-126.sha256` |
 
 ## What changed between 0.1 and 0.3
 
@@ -27,19 +28,40 @@ reports against them stay checkable.*
    0.1, and a receiver meets it before any rate.
 5. **The tool is version 0.3.1**, with confirmation of refusals and a caller-side staleness
    report. Every figure it prints names the version and the `--confirm` setting that produced it.
-6. **The prose is generated.** Every figure in this directory's `README.md`, `LETTER.md` and
-   `LIMITS.md` was read from a JSON field by `figures.py`, which recorded the field.
-   `FIGURE-PROVENANCE.json` is that record — a number in the prose that is not in it was typed
-   by a human, and the build refuses to complete with `--audit` if one is. **Its limits, found at
-   the gauntlet that failed this version:** it reads **digits**, so a figure written as a word
-   passes it untouched, and it never covered `FIGURES.md` at all. Neither is fixed here; both are
-   stated.
+6. **The prose is generated, and so is the description of the guard that generates it.** What
+   each guard actually covers is no longer written by hand anywhere in this file. It is asked of
+   the guards at build time and rendered into the block below, which `guard_claims.py --check`
+   re-derives and compares character for character; the build fails if what is written there is
+   not what the guards report. The reason is item 6's own history: every one of the six gauntlets
+   this bundle has failed died on a sentence of exactly that kind, and the two that killed the
+   last one used to be items 6 and 7 of this list.
 
 7. **A published correction cannot come back silently.** `errata_check.py` holds this arc's
    published corrections as a machine checklist and fails the build if one is live again in the
-   bundle. It was written because version 0.3 shipped six of them back. Its own coverage is
-   printed rather than implied: **36 of 53** published errata are registered in it, and
-   the rest are unchecked.
+   bundle. It was written because version 0.3 shipped six of them back. Its coverage is not
+   described here; it is reported by the check itself, below.
+
+8. **The absence readings carry their own persistence.** Added 2026-08-18: how stable an absence
+   is across the six days, computed over the whole non-control panel rather than at the edges of
+   it. It is reported in `FIGURES.md` and `LIMITS.md` and it is **not** the same evidence as the
+   immediate-re-request confirmation record. It was found by the adversary at the sixth gauntlet,
+   in a file this practice had held for six days and never read that way.
+
+<!-- GUARD-CLAIMS:BEGIN - generated by guard_claims.py; do not edit by hand -->
+
+### What the guards cover — asked of the guards, not typed
+
+*Every figure and every claim in this section is produced by `guard_claims.py` from the guards' own live output at build time; `guard_claims.py --check` fails the build if what is written here is not what the guards say. It exists because six consecutive gauntlets on this bundle failed on sentences of exactly this kind — descriptions of the apparatus that were true when typed and false when read — while every number in them was correctly provenanced. A claim about a guard is a figure.*
+
+**The prose provenance guard.** Every number in `README.md`, `LETTER.md`, `LIMITS.md`, `VERSIONS.md` is fetched from a named JSON field or declared a literal with a stated reason, and recorded in `FIGURE-PROVENANCE.json` (126 entries). Unmatched numbers in this build: **0**. The build refuses to complete if that is not zero.
+
+**The figures page.** `FIGURES.md` is governed by a separate table, `FIGURES-PROVENANCE.json` (247 entries) — a different file from `FIGURE-PROVENANCE.json` above, and the near-identical names are a hazard this bundle has already misread once. Rendered tokens checked: **265**. Unmatched: **0**.
+
+**The one limit of both.** They read digits. **Demonstrated in this build, not remembered.** The same false figure was put through the guard twice, once as `91827` and once spelled out. The digit form was flagged; the spelled-out form was not. A figure written as a word still passes untouched, and the digit half is the positive control that makes that a finding rather than a silence.
+
+**The errata check.** `errata_check.py` holds this arc's published corrections as a machine checklist and fails the build if one is live again in the bundle. Its coverage is an accounting, not a sample: **53** published errata are accounted for — **36** registered as wording the build fails on if it returns, **17** left out with a stated reason — with **0** unaccounted and **0** broken mappings. What it still cannot do is unchanged: a false claim reworded escapes a phrase check.
+
+<!-- GUARD-CLAIMS:END -->
 
 ## What did NOT change, and must not be read as changed
 

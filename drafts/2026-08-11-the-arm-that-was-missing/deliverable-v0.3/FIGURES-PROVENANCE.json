@@ -2,7 +2,7 @@
  "schema": "field-research/figure-provenance/1",
  "written_by": "figures.py, session 123",
  "what_this_is": "every figure that appears in the generated prose of this bundle, with the file and JSON field it was read from. A figure not in this table was typed by a human and is a defect.",
- "n_figures": 236,
+ "n_figures": 247,
  "figures": [
   {
    "rendered": "2026-08-16T17:30:13Z",
@@ -1419,6 +1419,72 @@
    "file": "figures-derived.json",
    "json_path": "indeterminate.max_pair_overlap",
    "note": "the largest overlap of any day-pair"
+  },
+  {
+   "rendered": "3,620",
+   "file": "persistence-126.json",
+   "json_path": "n_panel_non_control",
+   "note": "session 126: the panel-date limit and the persistence result"
+  },
+  {
+   "rendered": "446",
+   "file": "persistence-126.json",
+   "json_path": "n_ever_absent",
+   "note": "session 126: the panel-date limit and the persistence result"
+  },
+  {
+   "rendered": "412",
+   "file": "persistence-126.json",
+   "json_path": "n_absent_on_all_six_days",
+   "note": "session 126: the panel-date limit and the persistence result"
+  },
+  {
+   "rendered": "92.38 %",
+   "file": "persistence-126.json",
+   "json_path": "frac_absent_on_all_six_days",
+   "note": "session 126: the panel-date limit and the persistence result"
+  },
+  {
+   "rendered": "439",
+   "file": "persistence-126.json",
+   "json_path": "n_absent_on_every_day_measured",
+   "note": "session 126: the panel-date limit and the persistence result"
+  },
+  {
+   "rendered": "98.43 %",
+   "file": "persistence-126.json",
+   "json_path": "frac_absent_on_every_day_measured",
+   "note": "session 126: the panel-date limit and the persistence result"
+  },
+  {
+   "rendered": "27",
+   "file": "persistence-126.json",
+   "json_path": "n_never_retrievable_but_broken_only_by_indeterminate",
+   "note": "session 126: the panel-date limit and the persistence result"
+  },
+  {
+   "rendered": "7",
+   "file": "persistence-126.json",
+   "json_path": "n_units_with_more_than_one_determinate_state",
+   "note": "session 126: the panel-date limit and the persistence result"
+  },
+  {
+   "rendered": "2026-08-18",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "session 126: the panel-date limit and the persistence result; the date this section was added"
+  },
+  {
+   "rendered": "2026-08-17",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "session 126: the panel-date limit and the persistence result; the date of the sixth gauntlet, at which this result was raised"
+  },
+  {
+   "rendered": "9",
+   "file": "confirmation-record.json",
+   "json_path": "readings",
+   "note": "session 126: the panel-date limit and the persistence result; the size of the immediate-re-request record: one entry per apparent state change put through five re-requests (len)"
   }
  ]
 }

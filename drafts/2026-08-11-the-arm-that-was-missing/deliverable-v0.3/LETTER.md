@@ -71,8 +71,14 @@ bundle that buries it is worth less than one that leads with it.
    what a reference population of that age showed on the reference day.
 2. **Put your dashboard's numbers beside a control.** Where your instrument reports an error, this
    one reports whether the object was publicly reachable at all, from an independent vantage.
-3. **Dispute it.** The run files, the hashes, the scripts and the limits are all here. Everything
-   we would need to be wrong about is checkable without asking us anything.
+3. **Dispute it.** Everything we would need to be wrong about is checkable without asking us
+   anything — but be exact about where it is, because an earlier version of this sentence was
+   not. **This directory carries the hashes, the scripts, the derived tables and the limits.**
+   The raw daily run files themselves are **not** in it; they live in the public repository this
+   bundle is part of, at the paths `MANIFEST.json` names, and the sha256 in `MANIFEST.json` is
+   what ties one to the other. So: check any figure against the tables here, and check the tables
+   against the run files there. Nothing in that chain requires our cooperation, and no step of it
+   is inside this directory alone.
 
 ## What it cannot do, so nobody has to discover it later
 

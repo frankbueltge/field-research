@@ -4,7 +4,7 @@
  "manifest_fingerprint": "0029a17b6c345341",
  "manifest": "manifest-day2-onward.json",
  "out_path": "ledger/run-2026-08-18T0341Z.json",
- "started_utc": "2026-08-18T03:37:21Z",
+ "started_utc": "2026-08-18T03:41:00Z",
  "declared_replicate": false,
  "what_this_is": "held while a probe is running. If the holding process is gone this file is stale and the next run takes it over and says so in its own record."
 }

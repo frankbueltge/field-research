@@ -2,7 +2,7 @@
  "schema": "field-research/figure-provenance/1",
  "written_by": "figures.py, session 123",
  "what_this_is": "every figure that appears in the generated prose of this bundle, with the file and JSON field it was read from. A figure not in this table was typed by a human and is a defect.",
- "n_figures": 118,
+ "n_figures": 126,
  "figures": [
   {
    "rendered": "6",
@@ -711,6 +711,63 @@
    "file": "(literal)",
    "json_path": "-",
    "note": "genuine transitions confirmed, summed from confirmation-record.json"
+  },
+  {
+   "rendered": "30",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "session 126: version-table rows edited under CONDITIONS-125.md item 1: entries in FROZEN-033.sha256, counted by versions_provenance_126.py - the freeze session 125 verified before and after both verdicts"
+  },
+  {
+   "rendered": "2026-08-17",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "session 126: version-table rows edited under CONDITIONS-125.md item 1: the date the sixth gauntlet was run. A session date in a changelog sentence, declared rather than fetched."
+  },
+  {
+   "rendered": "2026-08-18",
+   "file": "(literal)",
+   "json_path": "-",
+   "note": "session 126: version-table rows edited under CONDITIONS-125.md item 1: the date of this session's repairs and of the gauntlet they are submitted to. Declared rather than fetched."
+  },
+  {
+   "rendered": "47",
+   "file": "panel-date-125.json",
+   "json_path": "corpus_files_examined",
+   "note": "session 126: the panel-date limit and the persistence result"
+  },
+  {
+   "rendered": "1",
+   "file": "panel-date-125.json",
+   "json_path": "corpus_files_carrying_any_timestamp",
+   "note": "session 126: the panel-date limit and the persistence result"
+  },
+  {
+   "rendered": "2026-08-01T22:33:14+00:00",
+   "file": "panel-date-125.json",
+   "json_path": "lower_bound_utc",
+   "note": "session 126: the panel-date limit and the persistence result"
+  },
+  {
+   "rendered": "2026-08-11T11:24:06Z",
+   "file": "panel-date-125.json",
+   "json_path": "upper_bound_utc",
+   "note": "session 126: the panel-date limit and the persistence result"
+  },
+  {
+   "rendered": "9.5353",
+   "file": "panel-date-125.json",
+   "json_path": "bracket_days",
+   "note": "session 126: the panel-date limit and the persistence result"
+  }
+ ],
+ "appended_without_a_rebuild": [
+  {
+   "session": 126,
+   "date": "2026-08-18",
+   "by": "versions_provenance_126.py",
+   "why": "CONDITIONS-125.md item 1 requires the repairs be made as edits, not a rebuild, so build_v03.py did not run and did not rewrite this table. These entries cover the numbers in the version rows those edits added, and nothing else.",
+   "n_added": 3
   }
  ]
 }

@@ -1,0 +1,48 @@
+{
+ "schema": "field-research/absence-persistence/1",
+ "source": "deliverable-v0.3/series/presence-series.csv",
+ "computed_by": "persistence_126.py",
+ "days": [
+  "baseline",
+  "2026-08-12",
+  "2026-08-13",
+  "2026-08-14",
+  "2026-08-15",
+  "2026-08-16"
+ ],
+ "n_rows_total": 3869,
+ "control_arm": "B-truncated",
+ "n_panel_non_control": 3620,
+ "arms_in_panel": [
+  "A",
+  "A-new",
+  "A2",
+  "B"
+ ],
+ "n_control_rows_excluded": 249,
+ "n_units_with_no_determinate_reading": 0,
+ "n_ever_absent": 446,
+ "n_absent_on_every_day_measured": 439,
+ "pct_absent_on_every_day_measured": 98.4305,
+ "frac_absent_on_every_day_measured": 0.984304932735426,
+ "n_ever_absent_with_2plus_determinate_days": 446,
+ "n_absent_on_every_day_with_2plus_determinate_days": 439,
+ "pct_of_2plus_absent_on_every_day": 98.4305,
+ "n_absent_on_all_six_days": 412,
+ "pct_absent_on_all_six_days": 92.3767,
+ "frac_absent_on_all_six_days": 0.9237668161434978,
+ "n_never_retrievable_but_broken_only_by_indeterminate": 27,
+ "reconciliation_of_the_two_readings": "n_ever_absent = n_absent_on_all_six_days + n_never_retrievable_but_broken_only_by_indeterminate + n_units_with_more_than_one_determinate_state",
+ "reconciliation_holds": true,
+ "n_units_with_more_than_one_determinate_state": 7,
+ "units_with_more_than_one_determinate_state": [
+  "7016669364938149122",
+  "7118519163416497450",
+  "7234106298021727515",
+  "7266499914014723370",
+  "7298893164335729926",
+  "7368171405361351954",
+  "7446448990935354670"
+ ],
+ "what_this_is_not": "Not an immediate re-request. Repeated absence at 24-hour spacing from one vantage cannot separate a persistent network or endpoint condition from a persistent platform state, and it says nothing about units that were never absent. It is independent of the 9-event transition-confirmation record and much larger."
+}

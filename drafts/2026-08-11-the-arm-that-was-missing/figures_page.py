@@ -262,7 +262,7 @@ def render(out, fx=None, built_at=None):
              f". **Every number on this page is fetched from a named field of a file in this "
              f"bundle** — `expectation.json`, `gradient-test.json`, "
              f"`series/presence-series.json`, or `figures-derived.json`, which is built from the "
-             f"series — and the field is recorded in `FIGURE-PROVENANCE.json`. Before version "
+             f"series — and the field is recorded in `FIGURES-PROVENANCE.json` — the table that governs this page, a different file from the `FIGURE-PROVENANCE.json` that governs the prose. Before version "
              f"{fx.lit('0.3.2', 'the version in which this page was routed through the provenance guard')} "
              f"this page was generated from variables rather than from files, and three of its "
              f"numbers were literals typed into the generator; see `VERSIONS.md`.*\n")

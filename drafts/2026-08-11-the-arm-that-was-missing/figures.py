@@ -230,11 +230,22 @@ def audit_prose(prose_paths, provenance_path, allow_substrings=()):
     report = {"schema": "field-research/prose-figure-audit/2",
               "provenance": provenance_path,
               "n_rendered_tokens": len(rendered),
-              "not_scanned": [why for _, why in STRUCTURE] + ["fenced code", "inline code",
-                                                              "URLs", "digits inside a word"],
+              "not_scanned": [why for _, why in STRUCTURE] + [
+                  "fenced code", "inline code", "URLs", "digits inside a word",
+                  "the GUARD-CLAIMS block (under the stricter guard_claims.py --check)",
+                  "HTML comments"],
               "files": [], "n_unmatched_total": 0}
     for p in prose_paths:
         text = open(p).read()
+        # Session 126. A region between the GUARD-CLAIMS delimiters is not skipped for being
+        # unimportant - it is skipped because it is under a STRICTER guard than this one.
+        # `guard_claims.py --check` regenerates that block from the guards' own live output and
+        # fails the build if a single character differs, which checks the whole claim rather than
+        # each number's pedigree. Auditing it here would ask a weaker question and would also be
+        # circular: this audit's own unmatched count is one of the figures rendered into it.
+        text = re.sub(r"<!-- GUARD-CLAIMS:BEGIN.*?<!-- GUARD-CLAIMS:END -->", " ", text,
+                      flags=re.S)
+        text = re.sub(r"<!--.*?-->", " ", text, flags=re.S)     # HTML comments are not prose
         text = re.sub(r"```.*?```", " ", text, flags=re.S)     # code blocks are not claims
         text = re.sub(r"`[^`]*`", " ", text)                    # inline code: paths, fields
         text = re.sub(r"https?://\S+", " ", text)               # URLs are addresses

@@ -10,7 +10,18 @@
    "ledger/transition-confirm-2026-08-16.json"
   ],
   "corrections": "ledger/corrections.json",
-  "corrections_sha256": "b08e4c531e79cac24a91cac17c51e00ccaa7cac1e064a4282dbc7b89372a8e7a"
+  "corrections_sha256": "357cb2b332faa44fe605fc03882e3be5ba8699daa93fdc54e6128937a4a12ae6",
+  "corrections_sha256_superseded": {
+   "value": "b08e4c531e79cac24a91cac17c51e00ccaa7cac1e064a4282dbc7b89372a8e7a",
+   "was_the_hash_of": "the state committed at 49f6d6b",
+   "found_by": "Verifier finding N2 at the gauntlet of 2026-08-17",
+   "repaired": "2026-08-18, session 126",
+   "fields_that_differ_between_the_two_states": [
+    "generated_utc"
+   ],
+   "correction_rows_byte_identical": true,
+   "why_it_drifted": "`corrections.json` is regenerated when a measurement day closes and restamps its own `generated_utc`, so its hash moves even when no correction changes. Verified here rather than assumed."
+  }
  },
  "passes_per_reading": 5,
  "what_a_pass_is": "one further request to the same endpoint for the same identifier, at the instrument's own 1.0 s spacing, immediately after the reading being tested. A reading is CONFIRMED only if all five agree with it.",

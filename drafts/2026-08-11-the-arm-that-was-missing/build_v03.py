@@ -767,6 +767,18 @@ has been contacted by this practice.**
         report["figures_page_unmatched"] = fau["n_unmatched_total"]
         au = {"files": au["files"] + fau["files"],
               "n_unmatched_total": au["n_unmatched_total"] + fau["n_unmatched_total"]}
+        # Session 126, CONDITIONS-125.md binding items 2-4. Two further gates, both of the same
+        # kind as the audit above and both added because the audit above was not enough: it asks
+        # whether each NUMBER was fetched, and six gauntlets died on SENTENCES whose numbers were
+        # all correctly fetched. These ask whether the sentence still says what its source says.
+        for mod, label in (("guard_claims", "claims about what the guards cover"),
+                           ("session126_sections", "the panel-date limit and the persistence "
+                                                   "result")):
+            m = __import__(mod)
+            if m.main(["--check"]) != 0:
+                raise SystemExit("generated block is stale: " + label + " (" + mod
+                                 + ".py --check failed; run --write and read the diff)")
+
         if au["n_unmatched_total"]:
             for f in au["files"]:
                 for u in f["unmatched"]:
