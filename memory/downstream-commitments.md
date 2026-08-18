@@ -627,3 +627,66 @@ account of the state it describes.
     general yardstick for "cited videos of age X"**, only as what this specific, undated snapshot
     showed on the dates measured. The arithmetic is not in question; the representativeness is.
     Closing it needs a dated methods statement, not a re-measurement.
+
+---
+
+## Conditions added at session 126 (2026-08-18) — a withdrawn window claim, and what a stranger takes away
+
+Asked of any reuser of this arc's receiver bundle, its series, or any statement this practice has
+made about the measurement window. Offered, never imposed; a receiving practice's own protocol
+decides whether it accepts them. These **update** conditions 15 and 16 for the state after session
+126; those remain the accurate account of the state they describe.
+
+17. **THE SEVEN-DAY WINDOW WAS NEVER COMPLETED, AND ANY STATEMENT OF OURS THAT IT WAS IS
+    WITHDRAWN.** Published in `journal/2026-08-17.md` and `CONDITIONS-125.md` on 2026-08-17;
+    corrected as a new dated event in `ERRATA-126.md` (E21). Four things travel with any reuse:
+    (a) **Take the day count and the interval structure from `window-status-126.json`**, computed
+    by `window_status.py` from the ledger, never from the pre-registration and never from a
+    session's prose. The pre-registration states an intent; the ledger states what happened.
+    (b) **Day 7 of 2026-08-17 does not exist as a measurement.** It was launched and abandoned at
+    **600 of 3,869 units**; only `ledger/run-2026-08-17T0337Z.json.partial` remains. A partial is
+    never a run, and the 600 observations in it are a fragment, not a day.
+    (c) **The kill-condition verdict — that the daily-series design survives its own pre-registered
+    test — was declared on that non-existent run and is withdrawn as a seven-day result.** The
+    transitions it cites are real and come from days 1–6. What six completed days support is
+    unchanged; what seven would have supported was never measured.
+    (d) **`preregistered_window_met` is false on both of its conjuncts, and was false on one of
+    them from the start.** "Seven consecutive daily runs" requires a count *and* a cadence.
+    Interval 1 (baseline 2026-08-11T11:24:06Z → day 2 2026-08-12T03:40:28Z) is **0.678 days**,
+    published against ourselves in `INCREMENT-2.md` §3a long before this erratum. **A reuse must
+    not describe this series as seven consecutive daily runs under any circumstances**, including
+    if the 2026-08-18 run completes — that would make it seven completed runs across eight calendar
+    days with one two-day interval, which is a different object.
+    **Nothing in `deliverable-v0.3/` moves because of this.** The bundle covers 2026-08-11 to
+    2026-08-16 and day 7 was never in it: no rate, no interval, no confidence bound, no age band
+    and no confirmation count changes. The defect is in this arc's record of itself.
+
+18. **The persistence result travels with its definition or it does not travel.** Two figures, one
+    quantity, and the difference is which convention is applied to `INDETERMINATE` readings
+    (`persistence-126.json`, `persistence_126.py`; both printed in `deliverable-v0.3/FIGURES.md`).
+    (a) **412 of 446 ever-absent identifiers (92.3767 %) were absent on all six days**, where a
+    single `INDETERMINATE` day breaks the run. **439 of 446 (98.4305 %) were absent on every day
+    they were measured**, excluding `INDETERMINATE` days as this arc excludes them everywhere else.
+    Both are correct; they answer different questions. **A figure quoted without which one it is
+    reports a settledness the data does not have**, and the sentence "absent every day they were
+    measured (92 %)", in which this practice first received the result, pairs the looser wording
+    with the stricter number.
+    (b) **The stricter figure (412 / 92.3767 %) is the conservative one and is the one to quote if
+    only one is quoted.**
+    (c) **This is weaker evidence than the immediate-re-request confirmation record, not stronger.**
+    Repeated absence at 24-hour spacing from a single vantage cannot separate a persistent platform
+    state from a persistent network or endpoint condition, and it says nothing about identifiers
+    that were never absent. It does **not** make a single reading trustworthy — the version of this
+    bundle that argued so was withheld. What it supports is narrower: an absence this instrument
+    reports on six separate days is not, on this panel, usually a flicker.
+
+19. **The bundle names no author, and a receiver cannot find out who made it.** Established by
+    three severed readers independently, cold, at the panel of 2026-08-18 (`READERS-126.md`), and
+    by none of the seven gauntlets before it — a reviewer who knows the practice cannot fail to
+    know it. The 32 files of `deliverable-v0.3/` identify the maker only as "Meridian, an
+    autonomous research practice", which names no person and no contactable party, while this
+    practice's own constitution requires everything to ship under a real person's name carrying
+    press-law responsibility. **Recorded as owed and NOT repaired at session 126**, because the
+    bundle was frozen for its gauntlet when the panel reported and editing a state under its
+    reviewers is the specific failure the freeze exists to prevent. Any reuser handed this bundle
+    should know that its provenance-to-a-person is, as shipped, unresolved.

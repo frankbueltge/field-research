@@ -1578,3 +1578,76 @@ Machine source for every figure: `gauntlet-followup-122.json`.*
   panel-date limit, adds the 92 % result, extends the no-typed-figure rule to claims about the
   guards, and runs **one** gauntlet — with a **hard stop**: if it fails, the bundle is retired as
   the delivery object and the arc ships the instrument.
+
+---
+
+## Session 126 — 2026-08-18. The window did not close; the panel of strangers did.
+
+**RETRACTION, and it is the most serious this arc has published.** The claim two entries above —
+*"The window reached its pre-registered length"* — is **FALSE and is withdrawn**
+(`drafts/2026-08-11-the-arm-that-was-missing/ERRATA-126.md`, E21). There is no
+`ledger/run-2026-08-17T0337Z.json`. Session 125 launched day 7 and ended before it closed at
+**600 of 3,869 units**; only the `.partial` exists. The completed series was **six measurement
+days, five intervals**, 2026-08-11 to 2026-08-16. The kill-condition verdict that the entry above
+declares was **declared on a run that does not exist** and is withdrawn as a seven-day result;
+what the six completed days support is unchanged and unaffected. **No figure in
+`deliverable-v0.3/` moves** — the bundle covers days 1–6 and day 7 was never in it.
+
+- **The rule broken was this practice's own, published three sessions running:** *a `.partial` is
+  never a run.* Session 125 stated it correctly in its own opening record as a hypothetical and
+  then reported the day complete four hours later in the same file. **The session that named the
+  failure mode walked into it.** A rule enforced by hand survives only until the session that is
+  sure of itself.
+- **`window_status.py` → `window-status-126.json`** now computes window state from the ledger and
+  refuses to call a day measured without a non-partial run file. **Its first version was wrong in
+  the same direction as the erratum**: it counted run *files* and reported seven, because the
+  2026-08-16 double probe is two files and one day. Fixed before use — grouped by UTC day, extra
+  same-day passes reported separately: **6 measurement days from 7 completed run files.**
+- **`preregistered_window_met` is false on BOTH conjuncts**, and was already false on one before
+  day 7 was launched: interval 1 (baseline → day 2) is **0.678 days**. That is not new — it is
+  published against ourselves in `INCREMENT-2.md` §3a — but its consequence was never stated:
+  *"seven consecutive daily runs"* is a conjunction of a count and a cadence, and collapsing the
+  two into one word is part of how E21 happened.
+- **A run for 2026-08-18 was launched at 03:41:00Z.** If it completes, the window becomes **seven
+  completed runs across eight calendar days with one two-day interval** — not seven consecutive
+  daily runs. The pre-registered design's cadence property is broken and no arithmetic restores it.
+
+**CORRECTION to the adversary's gift** (E22). The 446 ever-absent, the 3,620 panel and the 7
+multi-state units all reproduce exactly. **412 is correct and its label is not:** 412 is *absent on
+all six days* (92.3767 %); *absent on every day it was measured* — the wording the finding used,
+and the reading this arc's own INDETERMINATE convention requires — is **439 of 446 (98.4305 %)**.
+Reconciles exactly: 412 + 27 (only-INDETERMINATE breaks) + 7 (genuinely two-state) = 446. Both are
+published in the bundle with their definitions; the stricter is the one to quote alone.
+
+**THE DEFECT CLASS THAT KILLED SIX GAUNTLETS IS NOW MECHANISED.** `guard_claims.py` asks each guard
+what it currently covers and owns a delimited block in `VERSIONS.md`; `--check` fails the build if
+a character differs. A claim about a guard is a figure. Its scope is disclosed and narrow: that one
+block, and only guards wired into it. The digit-only limitation of the provenance guard is now
+**demonstrated in every build with a positive control**, not remembered. `session126_sections.py`
+applies the same discipline to the two new content sections. Both are wired into `build_v03.py`.
+**The guard caught this session's own hand-typed version rows within a minute of writing them** —
+six unmatched tokens, all ours — which is the class arriving in real time in the session closing it.
+
+**THE FIRST SEVERED-READER PANEL** (`READERS-126.md`, answers unedited in `READER-126-1/2/3.md`),
+run because the architect added the *"What a stranger gets from it"* floor to PROTOCOL v3 this
+morning. Three readers, three entry points, no context, no knowledge of the practice.
+
+- **All three returned the SAME most-important finding, independently:** that an unconfirmed
+  reading is not trustworthy — 1 of 3 apparent disappearances survived immediate re-checking. The
+  bundle's lead finding reaches a stranger cold.
+- **None named the receiver-facing sentence** (ten of eleven videos fetchable) as what the document
+  is for. The session's filed bet was won; **its predicted mechanism was wrong** — they returned a
+  real finding, not the apparatus. What this establishes is narrower and more useful than the bet:
+  **the sentence strangers take away is not the sentence this practice has spent six sessions
+  preparing to deliver.**
+- **Three of three, unprompted:** the self-review apparatus crowds out the work; nobody can tell
+  who wrote it — **the 32 files a receiver reads name no person**, while the constitution requires
+  everything to ship under a real person's name; this practice's vocabulary is undefined inside the
+  bundle. Two of three were confused by the near-identical provenance filenames *after* this
+  session's repair, and one hit the "check it yourself" invitation still not being exercisable from
+  inside the directory *after* the repair to `LETTER.md`.
+- **Legibility passes; "worth it" is not this panel's to answer and is not claimed.** A panel read
+  as approval has been misread, and this entry is not reading it as approval.
+
+**Consolidation is overdue by seven sessions** — session 118 (2026-08-13) ran the last one, against
+a standing requirement of every 2nd–3rd. Recorded as owed, not performed tonight.
