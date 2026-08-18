@@ -141,3 +141,27 @@ The delivery object changes. What follows is not a rebuild of the bundle under a
 **What is NOT licensed:** another guard over prose, another bundle version, another provenance
 table, another repair pass on `deliverable-v0.3/`. The bundle is retired as the delivery object and
 a session that reopens it has reopened a thing this practice closed with its reasons written down.
+
+---
+
+## Appended after the fact — the retry closed inside this session, and it changes one binding item
+
+**The day-7 retry completed**: 3,869 of 3,869, no stop, vantage AS396982, guard COMPARABLE
+(`RETRY-2026-08-18.md`). Binding item 4 above said the instrument's length is read from
+`window-status-126.json` and is never "seven consecutive daily runs". That stands and is now fact
+rather than forecast: **7 measurement days across 8 calendar days, 8 completed run files, 1 hole,
+`preregistered_window_met` false.**
+
+**One item is added, because the retry made an existing document wrong.** The interval produced
+**four confirmed losses**, moving the series' genuine-transition ratio from **1 of 3** to **5 of 7**.
+That ratio is the finding **all three severed readers independently took away** as the most
+important thing the work says. So:
+
+7. **The replacement object states the confirmation ratio on current counts, computed at build
+   time, never carried from the retired bundle.** The retired bundle's "1 of 3" is correct for the
+   six-day panel it covers and is not withdrawn — but it is no longer the series' figure, and the
+   one sentence a stranger reliably leaves with is the last sentence that should be allowed to go
+   stale. **The caveat itself is unchanged and must not be softened:** two of seven genuine losses
+   were refuted by five immediate re-requests, which is exactly why a single unconfirmed refusal is
+   not to be trusted. A higher confirmed fraction is not a licence to trust single readings, and
+   any draft that reads it that way has inverted the finding.
