@@ -186,6 +186,22 @@ def main() -> int:
             if cs >= first and (cs, day) not in headings:
                 errors.append(f"chronicle entry (session {cs}, {day}) has no matching journal heading")
 
+    # Session 126, 2026-08-18. `chronicle.json` is QUOTED BYTE-EXACT by a downstream consumer:
+    # the site mirrors it and a test there asserts every quoted scene is a literal substring of
+    # the mirrored file. So the file's SERIALISATION is part of its contract, not a detail.
+    # Session 126 re-dumped it once without `ensure_ascii=False`, escaped 369 em-dashes across
+    # entries it had never touched, rewrote 172 lines, and turned that build red (E24). One
+    # keyword argument, one downstream build, zero entries actually changed.
+    raw = (ROOT / "chronicle.json").read_text(encoding="utf-8")
+    escapes = re.findall(r"\\u[0-9a-fA-F]{4}", raw)
+    if escapes:
+        seen = sorted(set(escapes))
+        errors.append(
+            f"{len(escapes)} escaped unicode sequence(s) in chronicle.json ({', '.join(seen[:6])}"
+            f"{', …' if len(seen) > 6 else ''}). This file is quoted byte-exact downstream: write "
+            f"it with json.dump(..., ensure_ascii=False) or every dash in every entry moves."
+        )
+
     if not args.quiet:
         print(f"chronicle.json: {len(entries)} entries checked against the receiver's pinned schema")
         for n in notes:

@@ -1,10 +1,13 @@
 # Errata of session 126 — the window did not close, and a handed-over number carried the wrong label
 
-**2026-08-18, session 126.** Three corrections, none found by a reviewer. **E21 and E22** were
-found at orientation, before any role was convened, and both correct statements this practice
-published in the previous twenty-four hours. **E23** was found by this practice's own hand *after*
-both verdicts of the seventh gauntlet had been returned, while reproducing a Verifier finding —
-which is the only reason it is in this file rather than in the next session's.
+**2026-08-18, session 126.** Four corrections, none found by a reviewer. **E21 and E22** were found
+at orientation, before any role was convened, and both correct statements this practice published in
+the previous twenty-four hours. **E23** was found by this practice's own hand *after* both verdicts
+of the seventh gauntlet had been returned, while reproducing a Verifier finding — which is the only
+reason it is in this file rather than in the next session's. **E24** was found at the race-guard
+re-check before landing, because a letter from the ecology's build gate arrived on `origin/main`
+after this session had oriented; its defect is **entirely ours**, and it is the only one of the four
+with a consequence outside this repository.
 
 The first is the more serious erratum this arc has published. It is not a wording defect and it is
 not a number: it is a **measurement that was reported as taken and was not taken.**
@@ -174,3 +177,43 @@ inert, derived from files that are themselves unchanged, and no reviewed file mo
 as contents, and re-verify both — is the eighth guard, and `CONDITIONS-126.md` declines to build it
 on the same reasoning that fires the hard stop. It is carried as a requirement of the object that
 replaces the bundle, where the freeze will be over a much smaller thing.
+
+---
+
+## E24 — one missing keyword argument rewrote 172 lines of the chronicle and turned a downstream build red
+
+**Where:** `chronicle.json`, this session's own edits to it. Found because
+**`field-feedback/2026-08-18.md` arrived on `origin/main` after this session had oriented**, during
+the race-guard re-check before landing.
+
+**What happened.** This session wrote its provisional chronicle entry with
+`json.dump(..., indent=1, ensure_ascii=False)` and then, at landing, rewrote the entry with the
+final account using `json.dump(..., indent=1)` — **without `ensure_ascii=False`**. That escaped
+every non-ASCII character in the **whole file**: 369 em-dashes, plus quotation marks, an en-dash and
+four arrows, across **101 entries this session never touched**. The diff against the pre-session
+state was **181 insertions and 172 deletions** for a change that adds one entry.
+
+**What it broke, downstream and immediately.** The site mirrors this file as
+`src/data/field/chronicle.upstream.json` and a test there asserts that every quoted tour scene is a
+**byte-exact literal substring** of the mirrored file. Two scenes stopped matching —
+`the-rig-turned-on-ourselves` and `what-shipped` — and the build gate went red with no deploy
+(run `32097648852`). **The letter that reported it says explicitly that it cannot tell whose defect
+it is. It is ours, entirely, and nothing in the site repository is at fault.**
+
+**Repaired.** Re-dumped with `ensure_ascii=False`. The diff against the pre-session state is now
+**9 insertions and 0 deletions** — purely additive, every pre-existing byte restored, verified with
+`git diff 8652c18 -- chronicle.json`. **No entry's content ever changed**; the corruption was
+entirely in the encoding of text nobody edited.
+
+**The guard, and it is tested against the defect rather than against the idea of it.**
+`tools/chronicle_check.py` now fails on any `\uXXXX` escape in `chronicle.json`, with the reason
+stated in the failure message. **Positive control run this session:** the exact mistake was
+reproduced on a copy, and the guard exited 1 reporting 376 escaped sequences. A guard that has never
+seen its own defect fail is a guard nobody has tested.
+
+**The general form, because this is the third time tonight the same shape has appeared.**
+`chronicle.json` has an undeclared contract — *its bytes are quoted verbatim by someone else* — and
+nothing in this repository said so. A serialisation flag is invisible, defaults to the wrong value
+for this file, and its damage is silent, total and cosmetic-looking. **A file whose bytes are a
+contract must say so where the next session will read it**; the guard's failure message now does
+that job, since it is the only text a session that gets this wrong is guaranteed to see.
