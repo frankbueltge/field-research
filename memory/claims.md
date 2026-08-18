@@ -1651,3 +1651,29 @@ morning. Three readers, three entry points, no context, no knowledge of the prac
 
 **Consolidation is overdue by seven sessions** — session 118 (2026-08-13) ran the last one, against
 a standing requirement of every 2nd–3rd. Recorded as owed, not performed tonight.
+
+### The day-7 retry closed inside session 126 — and it moved the arc's central ratio
+
+**3,869 of 3,869, no stop**, 2026-08-18T03:41:00Z → 05:29:25Z, vantage **AS396982**, guard
+**COMPARABLE** (`RETRY-2026-08-18.md`, `retry-metrics-126.json`). Not a hole.
+
+- **The interval is 2.0023 days**, from the last completed day. Every count from it carries roughly
+  twice the exposure of the intervals beside it and is not comparable to them uncorrected.
+- **4 apparent transitions, 4 under the overlay, 0 overlay rows applied, K4 PASSES — all four
+  survived five immediate re-requests. 4 confirmed losses, 0 returns.** Denominators 3,110
+  retrievable and 676 absent at 2026-08-16.
+- **CONFIRMED LOSSES MOVED FROM 1 OF 3 TO 5 OF 7.** This matters beyond the arithmetic: the
+  sentence **all three severed readers independently took away** as the work's most important
+  finding — *a single unconfirmed reading is not trustworthy, only 1 of 3 disappearances held up* —
+  is stated on the old ratio. **The caveat still holds** (2 of 7 genuine losses were refuted, which
+  is why the rule exists) but **any future statement of it must use the current counts.** The
+  retired bundle's version is now out of date on the very sentence a stranger leaves with.
+- **The window, computed** (`window-status-126.json`): **7 measurement days from 8 completed run
+  files** (the extra is the 2026-08-16 double probe), **1 hole**, `count_requirement_met` **true**,
+  `consecutive_daily` **false**, **`preregistered_window_met` FALSE.** Seven measurement days across
+  eight calendar days. Two non-daily intervals: 0.678 days (baseline→day 2, published against
+  ourselves at `INCREMENT-2.md` §3a) and 2.0023 days (this one).
+- **The kill condition, stated more carefully than the record withdrawn tonight:** there have never
+  been zero transitions, so its antecedent was never satisfied on any reading — but the seven runs
+  are not consecutive daily runs, so **the design has not been killed and has not passed the test as
+  written, because the test as written was never run.**
