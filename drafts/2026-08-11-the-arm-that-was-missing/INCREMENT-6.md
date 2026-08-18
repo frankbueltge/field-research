@@ -379,7 +379,7 @@ from the sample is what a design-effect correction always uses, the direction is
 every row but the forum arm, and a correction that may be too large is a different failure from one
 that is too small. But the session's own uncertainty is not propagated into those 36 intervals, and
 that omission is the textbook cause of undercoverage in exactly this construction (Franco, Little,
-Louis & Slud, https://math.umd.edu/~slud/s770/SurveyConfidenceIntervals/JSSAM-2017-065-FINAL.pdf).
+Louis & Slud, [link removed 2026-08-19 — a course page hosting another author's text; rights unsettled]).
 
 **And the P6 withdrawal survives in a stronger form than the one published above.** The specialist
 proposed, and this session built, the check the `sqrt(DEFF)` route never had: the gap bootstrapped

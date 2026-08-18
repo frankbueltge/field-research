@@ -120,7 +120,7 @@ of variance estimator**, and the crossed design effect's own jackknife interval 
 on day 2** (lower bound 1.0148). The design effect applied to the 36 intervals is a **point estimate
 whose uncertainty is not propagated into them** — the Census Bureau study the specialist cited names
 that as the principal cause of undercoverage in exactly this construction (Franco, Little, Louis &
-Slud, https://math.umd.edu/~slud/s770/SurveyConfidenceIntervals/JSSAM-2017-065-FINAL.pdf).
+Slud, [link removed 2026-08-19 — a course page hosting another author's text; rights unsettled]).
 
 **S5 — the gap, with no design effect anywhere in the computation.** The specialist's proposed check,
 built here independently: resample components, recompute both arms' rates, take the percentile

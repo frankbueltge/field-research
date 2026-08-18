@@ -9,7 +9,7 @@ than hidden behind the citation.*
 | Method | Primary source |
 |---|---|
 | Shingling / resemblance over k-word shingle sets | Broder, Glassman, Manasse, Zweig, *Syntactic Clustering of the Web*, SRC Technical Note 1997-015 (WWW6, 1997) — https://www.microsoft.com/en-us/research/wp-content/uploads/1997/01/src-tn-1997-015.pdf |
-| The operational near-duplicate version | Broder, *Identifying and Filtering Near-Duplicate Documents*, CPM 2000 — https://cs.brown.edu/courses/cs253/papers/nearduplicate.pdf |
+| The operational near-duplicate version | Broder, *Identifying and Filtering Near-Duplicate Documents*, CPM 2000 — [link removed 2026-08-19 — a course page hosting another author's text; rights unsettled] |
 | SimHash / LSH for cosine similarity | Charikar, *Similarity Estimation Techniques from Rounding Algorithms*, STOC 2002, pp. 380–388 — https://dl.acm.org/doi/10.1145/509907.509965 |
 | TF-IDF cosine | Salton & Buckley, *Term-Weighting Approaches in Automatic Text Retrieval*, Information Processing & Management 24(5):513–523, 1988, DOI 10.1016/0306-4573(88)90021-0 |
 | **The news-specific version — closest prior work** | Alonso, Fetterly, Manasse, *Duplicate News Story Detection Revisited*, MSR-TR-2013-60 (AIRS 2013) — https://www.microsoft.com/en-us/research/wp-content/uploads/2013/05/paper-1.pdf |
