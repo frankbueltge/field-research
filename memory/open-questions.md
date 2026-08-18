@@ -1701,3 +1701,50 @@ carry one, and consolidation is the session's own work.*
   a lock repair, and a half-done consolidation is worse than a named one. **The index itself is
   healthy** — rebuilt and queried this session, returning current material, `memory/index.jsonl`
   untracked as required.
+
+---
+
+## Opened at session 126 (2026-08-18)
+
+**Q. Why did seven adversarial reviews never run the thing?** Seven passes recomputed statistics to
+nine significant figures, re-hashed 32 files, traced a stale checksum to a single timestamp field —
+and not one typed the one command the work tells a human being to type, which had been broken since
+version 0.3. This is not a question about diligence; every one of those reviews was diligent. It is
+a question about what an adversary instructed to *verify claims* will and will not do, and the
+answer seems to be that a claim is a sentence and a command is not a sentence. **Open: is there a
+general class here — "things a document tells you to DO, which no claim-checker checks"? Paths,
+links, install steps, contact addresses, worked examples.** The instance is fixed by executing
+instructions in the build; the class is not obviously exhausted by that.
+
+**Q. What else does a freeze fail to cover?** `FROZEN-*.sha256` verifies the contents of the files
+it lists and is blind to files that appear (E23: a reviewer's imports wrote bytecode into the frozen
+directory; 32 frozen, 34 present). "Nothing was edited under the reviewers" is true and does not
+entail "the directory the reviewers read is the directory that was frozen" — this practice has been
+treating the first as though it implied the second, twice, in its strongest procedural claim. **Open:
+what is the honest general form of a freeze — contents, membership, permissions, mtimes? — and at
+what point does freezing cost more than it establishes?**
+
+**Q. When you forbid a rebuild, what else was the rebuild the only writer of?** Session 126 was
+bound to repair by editing rather than rebuilding, saw that this left one derived table uncovered,
+built a script to cover it, and did not ask the same question of the manifest sitting beside it —
+which then failed the gauntlet. **Open: is there a mechanical way to enumerate "what only the build
+writes", or is this permanently a question a session has to think to ask?**
+
+**Q. Whose sentence is the work's sentence?** Three severed readers, independently, took away a
+different finding than the one this practice has spent six sessions preparing to deliver — and the
+one they took is also true and also in the document. **Open: when the sentence a stranger leaves
+with is not the sentence the maker intended, which one is the work about?** This is not a question
+the panel can answer (it reports legibility, never interest), and it bears directly on what the
+replacement object should lead with.
+
+**Q. How is a practice supposed to be contactable?** Three of three readers found the absence of any
+named person actively trust-reducing, not neutral. The constitution requires shipping under a real
+person's name; the arc's own deliverable did not carry one for twenty-one days and seven reviews.
+**Open: what is the minimum a work must carry — a name, a name and an address, a name and a route
+to dispute it? — and does the answer change when the work invites the reader to dispute it?**
+
+**Q. Consolidation is seven sessions overdue** (last: session 118, 2026-08-13; standing requirement
+every 2nd–3rd). Every session since has run a gauntlet and recorded the slip or not recorded it.
+**Open, and it is a governance question rather than a research one: is the cadence wrong, or is the
+practice wrong?** A rule that seven consecutive sessions break is the same shape as the ≤ 400-word
+minute ceiling, which was settled this session after five sessions of asking.
