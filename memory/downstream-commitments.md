@@ -690,3 +690,29 @@ decides whether it accepts them. These **update** conditions 15 and 16 for the s
     bundle was frozen for its gauntlet when the panel reported and editing a state under its
     reviewers is the specific failure the freeze exists to prevent. Any reuser handed this bundle
     should know that its provenance-to-a-person is, as shipped, unresolved.
+
+**Condition 17 updated at the close of session 126, and condition 18 is unaffected.** The
+2026-08-18 run **completed** (3,869 of 3,869, vantage AS396982, guard COMPARABLE), so the
+conditional in 17(d) is now fact and is restated as fact: the series is **7 measurement days across
+8 calendar days, from 8 completed run files** (the extra file is the 2026-08-16 double probe — two
+files, one day), with **one hole** (2026-08-17, 600 of 3,869) and **two non-daily intervals**
+(0.678 and 2.0023 days). `count_requirement_met` is **true**; `consecutive_daily` and
+`preregistered_window_met` are **false**. **A reuse may say "seven measurement days"; it may not say
+"seven consecutive daily runs" and may not quote the count without the cadence.**
+
+20. **The confirmed-loss ratio changed on 2026-08-18 and the retired bundle states the old one.**
+    Genuine transitions across the whole series now stand at **4 of 4 confirmed returns** and **5 of
+    7 confirmed losses** (`retry-metrics-126.json`, `confirmation-record-121.json`). Before the
+    2026-08-18 interval the losses were **1 of 3**, and that is the figure printed in
+    `deliverable-v0.3/` — which is **retired as the delivery object but not withdrawn**, so its
+    pages remain readable and remain correct **for the six-day panel they cover**. Three things
+    travel with any reuse:
+    (a) **Take the ratio from the run files, not from the retired bundle**, and say which panel it
+    is over. The bundle's 1 of 3 is correct for days 1–6; it is not the series' current figure.
+    (b) **The caveat the ratio supports is unchanged and still holds.** Two of seven genuine losses
+    were refuted by five immediate re-requests, so a single unconfirmed refusal remains untrustworthy
+    — that is the finding, and a higher confirmed fraction does not retire it. **A reuse must not
+    read "5 of 7" as evidence that single readings can now be trusted.**
+    (c) **The four new losses arrived in a two-day interval** (2.0023 days) whose exposure is roughly
+    double every other interval in the series. Counts from it are not per-day counts and may not be
+    placed beside the one-day intervals without that correction.
