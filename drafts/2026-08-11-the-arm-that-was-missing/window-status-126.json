@@ -64,7 +64,7 @@
    "file": "ledger/run-2026-08-18T0341Z.json.partial",
    "why": "a partial with no completed run beside it - the day was started and not taken",
    "run_id_it_claims": "2026-08-18T03:41:00Z (manifest carried a placeholder)",
-   "n_observations": 300,
+   "n_observations": 600,
    "n_planned": 3869
   }
  ],

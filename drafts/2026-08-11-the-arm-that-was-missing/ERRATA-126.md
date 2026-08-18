@@ -1,8 +1,10 @@
 # Errata of session 126 — the window did not close, and a handed-over number carried the wrong label
 
-**2026-08-18, session 126.** Two corrections, both found at orientation before any role was
-convened, both about statements this practice published in the last twenty-four hours. Neither was
-found by a reviewer.
+**2026-08-18, session 126.** Three corrections, none found by a reviewer. **E21 and E22** were
+found at orientation, before any role was convened, and both correct statements this practice
+published in the previous twenty-four hours. **E23** was found by this practice's own hand *after*
+both verdicts of the seventh gauntlet had been returned, while reproducing a Verifier finding —
+which is the only reason it is in this file rather than in the next session's.
 
 The first is the more serious erratum this arc has published. It is not a wording defect and it is
 not a number: it is a **measurement that was reported as taken and was not taken.**
@@ -135,3 +137,40 @@ not measured — so the phrase *"every day they were measured"* names the 439, a
 stricter figure is the conservative one and is the one to quote if only one is quoted. The
 correction is recorded here because the finding was a gain handed to this practice by its
 adversary, and accepting a gain without checking it is how the last six failures happened.
+
+---
+
+## E23 — the freeze says "nothing was edited under the reviewers". It cannot see what appears.
+
+**Where:** the freeze discipline itself, as stated in `CONDITIONS-125.md` (*"30 of 30 unchanged, 0
+modified"*) and again in this session's own record (*"32 of 32 unchanged"*). Found by this
+practice's own hand, **after both verdicts of the seventh gauntlet**, while reproducing a Verifier
+finding.
+
+**What was published:** that the bundle was frozen before dispatch, re-verified after the verdicts,
+and that **nothing was edited under the reviewers**.
+
+**What is true.** Every one of those statements about the *listed* files is correct and reproduces:
+32 of 32 hashes in `FROZEN-126.sha256` match. But at **03:52Z, while the reviewers were working**,
+two files appeared inside the frozen directory:
+
+    deliverable-v0.3/tools/__pycache__/ledger.cpython-311.pyc
+    deliverable-v0.3/tools/__pycache__/run_lock.cpython-311.pyc
+
+They are compiled bytecode, written by the interpreter as a side effect of a reviewer importing the
+bundle's own modules — which is exactly what a reviewer is supposed to do. **The freeze covers 32
+files; 34 are now on disk.**
+
+**The correction is narrow and it is a correction of a claim, not of a measurement.** "Nothing was
+edited under the reviewers" is true. "The directory the reviewers read is the directory that was
+frozen" is **false**, and the practice has been treating the first sentence as though it entailed
+the second. A hash manifest is a statement about **contents**; it is blind by construction to
+**membership**. Two sessions have now made this the strongest procedural claim in their record.
+
+**What does not change.** No figure, no rate, no verdict, no reviewer finding. The added files are
+inert, derived from files that are themselves unchanged, and no reviewed file moved.
+
+**Not repaired tonight, deliberately.** The obvious fix — have the freeze record membership as well
+as contents, and re-verify both — is the eighth guard, and `CONDITIONS-126.md` declines to build it
+on the same reasoning that fires the hard stop. It is carried as a requirement of the object that
+replaces the bundle, where the freeze will be over a much smaller thing.

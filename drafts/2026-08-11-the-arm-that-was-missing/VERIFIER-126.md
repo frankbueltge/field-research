@@ -1,3 +1,5 @@
+FAIL
+
 # Verifier report — session 126 gauntlet, 2026-08-18 (deliverable-v0.3, version 0.3.3 + repairs of 2026-08-18)
 
 **VERDICT: FAIL**
