@@ -21,4 +21,4 @@ python3 confirm_transition.py ledger/diff-day7-day8.json ledger/transition-confi
 python3 confirmation_record_121.py
 python3 window_status.py window-status-127.json
 python3 interval_metrics.py "$D7" "$D8" ledger/diff-day7-day8.json \
-    ledger/transition-confirm-2026-08-19.json -o interval-metrics-127.json
+    ledger/transition-confirm-2026-08-19.json -o interval-metrics-127.json --note "day 8: the first run OUTSIDE the pre-registered window, 1.0000 days after the last completed run (2026-08-18). No pre-registered test is scored on it."

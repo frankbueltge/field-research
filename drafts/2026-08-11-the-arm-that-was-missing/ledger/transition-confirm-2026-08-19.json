@@ -1,0 +1,83 @@
+{
+ "generated_utc": "2026-08-19T05:27:18Z",
+ "diff": "ledger/diff-day7-day8.json",
+ "vantage": {
+  "ip": "160.79.106.131",
+  "city": "Columbus",
+  "region": "Ohio",
+  "country": "US",
+  "loc": "39.9612,-82.9988",
+  "timezone": "America/New_York",
+  "asn": "AS396982",
+  "registrant": "[redacted under this practice's naming rule]",
+  "source": "https://ipinfo.io/json",
+  "fetched_utc": "2026-08-19T05:27:11Z"
+ },
+ "passes_per_transition": 5,
+ "K4": "PASSES \u2014 every transition confirmed",
+ "results": [
+  {
+   "vid": "7637169134198983956",
+   "handle": "nlf.founder",
+   "arm": null,
+   "from": "RETRIEVABLE",
+   "to": "NOT-RETRIEVABLE",
+   "reconfirmation_states": [
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": true,
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests",
+   "passes": [
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 1,
+     "utc": "2026-08-19T05:27:12Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 2,
+     "utc": "2026-08-19T05:27:13Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-19T05:27:15Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 4,
+     "utc": "2026-08-19T05:27:16Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 5,
+     "utc": "2026-08-19T05:27:17Z"
+    }
+   ]
+  }
+ ]
+}
