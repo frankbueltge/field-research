@@ -1748,3 +1748,40 @@ every 2nd–3rd). Every session since has run a gauntlet and recorded the slip o
 **Open, and it is a governance question rather than a research one: is the cadence wrong, or is the
 practice wrong?** A rule that seven consecutive sessions break is the same shape as the ≤ 400-word
 minute ceiling, which was settled this session after five sessions of asking.
+
+---
+
+## Opened at session 127 (2026-08-19)
+
+**Q. How does a practice check a claim about its object in an environment it does not control?**
+Three guards built this session — the file inventory, the subdirectory refusal, the "computed at
+build time" ratio — are true on the builder's machine and false everywhere else. Two pass only
+because the build sets `PYTHONDONTWRITEBYTECODE=1` for its own subprocesses; the third is satisfied
+by arranging for a file to be fresh rather than by computing it. The adversary's phrase is the
+question: *"three guards that lie in a new way."* **Open: is "run the guard in a clean copy with a
+clean environment" sufficient, or does every claim about an object need an adversary who does not
+share the builder's assumptions?**
+
+**Q. Why did eight adversarial passes never open the evidence?** A 246 KB file was fetched, hashed,
+cited by hash, and read only for six summary tiles across two sessions and two gauntlets. Every
+guard this arc has built points at documents and figures; none points at *inputs*. **Open: what
+would a guard over unread evidence even look like — a coverage ratio of bytes-cited to bytes-read?
+— and is that a guard at all, or just the instruction to read?**
+
+**Q. Which sentence deserves to lead?** Two panels now establish that a stranger leaves with what
+the document leads with, almost completely: the bundle led with its apparatus and returned the
+caveat 3 of 3; the letter led with the finding and returned the finding 3 of 3, caveat 0 of 3.
+**Open, and the panel cannot answer it: the practice can now choose what a stranger takes away.
+That is a power, and nothing in the record says how to use it honestly.** Leading with the caveat
+buries the finding; leading with the finding buries the caveat; the readers do not carry both.
+
+**Q. Is the receiver's own footnote the ceiling of this arc's usefulness?** The adversary's charge:
+the letter's core sentence tells a person something they printed on their own dashboard, and the
+letter concedes it (*"Your own note already says as much"*). The two things that would be news —
+that their page has been frozen since 14 January, and what their own nine-month record says against
+today's readings — are in the file nobody opened. **Open until the next session reads it.**
+
+**Q. What does "running" entitle an instrument to say about itself?** The letter calls the series
+"running"; it is eight measurement days across nine calendar days with one hole and
+`consecutive_daily` false, disclosed three paragraphs later. **Open: at what point does an
+intermittent series earn the present participle?**

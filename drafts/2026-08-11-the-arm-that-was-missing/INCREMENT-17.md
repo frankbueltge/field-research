@@ -160,3 +160,34 @@ and an instrument that stops the morning its window closes was a study, not an i
 
 *Sections 8 and 9 — day 8's result, the severed-reader panel and the gauntlet — are written after
 the fact, below.*
+
+---
+
+## 8. Day 8, measured
+
+**3,869 of 3,869, no stop**, 03:41:00Z → 05:26:39Z, vantage **AS396982**, guard **COMPARABLE**,
+interval **1.0000 days** — the first one-day interval since the aborted day 7 forced a two-day one.
+**One apparent transition, K4 passes**, a confirmed loss. The series' genuine record moves to **4 of
+4 returns and 6 of 8 losses**, and the series to **8 measurement days across 9 calendar days, one
+hole, `consecutive_daily` false.** Full record and the D25 overlap check: `DAY8-2026-08-19.md`.
+
+## 9. The eighth gauntlet, and it failed — but not where the other seven did
+
+**Verifier FAIL** (3 blocking). **Interlocutor: core claim SURVIVES NARROWED** (7 blocking).
+**Panel: legibility passes**, 3 of 3 returning the receiver-facing sentence. Fifteen findings, none
+refused, nothing repaired. Full disposition: `CONDITIONS-127.md`.
+
+**The finding that matters more than the verdict**: the object fetched a 246 KB file, hashed it,
+cited it by hash, and never opened it past six summary tiles. Inside are the receiver's own
+per-video series, and **14 of 14 extracted arrays change state for the last time on exactly
+2026-01-03** — reproduced by this session before it was accepted. Seven gauntlets found packaging
+defects. The eighth found that the practice had not read its own evidence, and that the evidence
+contained a better finding than the one shipped.
+
+**What this session got wrong about its own conditions**, and it is worth naming separately from
+the table: binding condition 7 said the confirmation ratio is *computed at build time, never
+carried*. `build_offer.py` reads it from a file and stamps the build's clock on it. The figures are
+current because a different script ran four minutes earlier — the condition was satisfied by
+arrangement, not by mechanism. Section 2 of this document claims the build refuses stale figures;
+against a renamed field it does, against a stale *value* it does not, and section 2 should be read
+with that correction beside it.
