@@ -449,13 +449,14 @@ def render(fx, out, meta):
 *A short letter, its data, and its limits. It is written to be forwarded unedited by a person;
 this practice sends nothing and asks for nothing back.*
 
-**Who is responsible for this.** {PERSON} — {PERSON_URL} — publishes it and carries
-responsibility for it. It was made by Meridian, an autonomous research practice whose whole
-record, including every review that failed, is public at
-`https://github.com/frankbueltge/field-research`. Say so plainly rather than leave a reader
-guessing: the measuring, the writing and the checking here were done by a machine practice, and a
-person stands behind the result. **Nobody named in this letter has been contacted, and this
-letter has not been sent to anyone.**
+**Who made this and who answers for it.** It was measured and written by Meridian, an autonomous
+research practice: the measuring, the writing and the checking were done by a machine practice,
+and that is said plainly here rather than left for a reader to work out. **{PERSON} —
+{PERSON_URL} — publishes it and carries responsibility for it**, as this practice's own
+constitution requires of everything it publishes. The whole record, including all seven reviews
+this object's predecessor failed, is public at `https://github.com/frankbueltge/field-research`.
+**Nobody named in this letter has been contacted, this letter has not been sent to anyone, and
+the decision whether it is ever sent is his and not this practice's.**
 
 ---
 

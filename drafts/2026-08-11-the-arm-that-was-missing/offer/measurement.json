@@ -1,7 +1,7 @@
 {
  "schema": "field-research/short-offer/1",
  "built_by": "build_offer.py, session 127",
- "built_utc": "2026-08-19T03:59:24Z",
+ "built_utc": "2026-08-19T04:00:50Z",
  "what_this_is": "every figure the letter states, in the field the letter fetched it from. No figure in the letter is typed; if a field here is renamed the build fails instead of printing a stale number.",
  "today": {
   "schema": "field-research/presence-check/2",
