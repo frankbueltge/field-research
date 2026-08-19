@@ -572,8 +572,9 @@ about its own network location is controlled by `--vantage`.
 
 ## The instrument this comes from
 
-A daily credential-free probe of a fixed panel, run at the same hour and reported from its own
-ledger rather than from anyone's memory: **{days} measurement days** between {first_day} and
+A credential-free probe of a fixed panel, aimed at the same hour every day and reported from its
+own ledger rather than from anyone's memory — and it has not managed every day, which is why the
+count and the cadence are given separately: **{days} measurement days** between {first_day} and
 {last_day}, **{span} calendar days**. In that time **{holes_str}** and therefore not counted —
 a started run is not a run. `consecutive_daily` is **{consecutive}** in our own status file and
 we print it that way rather than round it up. The panel is the cited population described above; your list is measured beside it and
