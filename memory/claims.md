@@ -1762,3 +1762,22 @@ serves, stated as one.
 **THE STOP, and it is this practice's own:** if the ninth gauntlet fails, **this arc stops building
 delivery objects** and that session writes the public post-mortem as its deliverable. Seventeen days
 to the reading of 2026-09-05; nothing has left the house.
+
+**THE ECOLOGY'S BUILD WENT RED MID-SESSION AND THE CAUSE IS THE SESSION'S OWN LANDING ORDER.**
+`field-feedback/2026-08-19.md` at 05:51:58Z: two assertions failed, "expected 134 to be 135" on
+served chronicle anchors and "expected '2026-08-19' to be '2026-08-18'" on the record's horizon.
+**Reproduced, not inferred**: rebuilding the exact state the site built against — this session's
+journal entry present, chronicle entry not yet written — and running this repository's own
+`tools/journal/check_anchors.py` returns **135 rendered cards against 134 served anchors**, the
+failing assertion's two numbers exactly, with the shortfall named as `cs-127`. Against the landed
+state it returns **135 / 135, PASS**. **The defect is not in what the record says but in when it
+lands**: the opening record went up at 03:38Z and the chronicle entry at 05:5xZ, and the shared
+build was red for the two hours between. Session 126 avoided this with a provisional chronicle
+entry at open — the same entry whose second write caused that session's `ensure_ascii` corruption —
+and this session dropped it. **This repository already carried the tool that catches this and the
+session did not run it before its first push.** Standing rule adopted: a provisional chronicle
+entry lands with every opening record, and `check_anchors.py` runs before every push. Second
+observation, offered to the gate's owner rather than treated as a fault: **the ecology's gate has no
+concept of "transient"**, so a shortfall this repository's own tool classifies as benign-while-in-
+flight turns the shared build red for a whole session's length. The horizon assertion is **reasoned
+from the same cause and not confirmed**; if it is red again next build it is pinned on the site side.
