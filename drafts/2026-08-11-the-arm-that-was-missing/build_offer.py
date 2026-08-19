@@ -36,6 +36,7 @@ Usage:  python3 build_offer.py [--out offer] [--skip-live]
         --skip-live is for a dry run of the rendering only; it refuses to write the letter.
 """
 import argparse
+import calendar
 import hashlib
 import json
 import os
@@ -388,6 +389,7 @@ def render(fx, out, meta):
     dash_prior = fx(M, "receiver_dashboard", "prior_reading", "read_date")
     dash_same = fx(M, "receiver_dashboard", "unchanged_since_prior_reading")
     dash_sha = fx(M, "receiver_dashboard", "saved_bytes_sha256")
+    dash_age = fx(M, "receiver_dashboard", "declared_generation_age_days")
     dash_unchanged = (
         f"We fetched it again this morning and the bytes are identical to the copy we saved on "
         f"{dash_prior} (sha256 `{dash_sha[:16]}…`), so nothing here turns on a stale capture."
@@ -470,9 +472,10 @@ available and **{dash_err}** with errors. It also says, on its own face:
 
 > *"{dash_note}"*
 
-{dash_unchanged}
+{dash_unchanged} That declared generation date is **{dash_age:,.0f} days** before this letter —
+which is a fact about what the page says about itself, and about nothing else.
 
-That sentence is why this letter exists. An instrument that cannot separate its own failures from
+**That note is why this letter exists.** An instrument that cannot separate its own failures from
 the platform's needs a second, independent measurement beside it, and **that second measurement
 needs no credential and no account.**
 
@@ -719,6 +722,16 @@ def _write_measurement(out, built, selftest_out):
                 "error": dash["fields"]["Errors"]["value"],
             },
             "note": dash["fields"]["error_note"]["value"],
+            "declared_generation_age_days": round(
+                (time.time()
+                 - calendar.timegm(time.strptime(
+                     dash["fields"]["generated_declared"]["value"].replace("T", " "),
+                     "%Y-%m-%d %H:%M:%S"))) / 86400.0, 1),
+            "declared_generation_age_caveat": (
+                "the page states no timezone for its own generated date, so this span is "
+                "computed by reading it as UTC and is accurate to within a day. It is a fact "
+                "about what the page says about itself and about nothing else - not about "
+                "whether anything behind it is running."),
             "what_these_are": dash["what_this_is"],
             "prior_reading": {
                 "source": os.path.relpath(DASHBOARD_PRIOR, HERE),
