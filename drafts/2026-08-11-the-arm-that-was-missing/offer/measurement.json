@@ -1,7 +1,7 @@
 {
  "schema": "field-research/short-offer/1",
  "built_by": "build_offer.py, session 127",
- "built_utc": "2026-08-19T04:00:50Z",
+ "built_utc": "2026-08-19T04:01:53Z",
  "what_this_is": "every figure the letter states, in the field the letter fetched it from. No figure in the letter is typed; if a field here is renamed the build fails instead of printing a stale number.",
  "today": {
   "schema": "field-research/presence-check/2",
@@ -380,6 +380,8 @@
    "error": 11
   },
   "note": "Note: Error are problems on our end, not TikTok.",
+  "declared_generation_age_days": 216.3,
+  "declared_generation_age_caveat": "the page states no timezone for its own generated date, so this span is computed by reading it as UTC and is accurate to within a day. It is a fact about what the page says about itself and about nothing else - not about whether anything behind it is running.",
   "what_these_are": "the receiver's own public dashboard, read off saved bytes. Every figure here is a claim the dashboard makes about itself, never a measurement by this practice.",
   "prior_reading": {
    "source": "deliverable-v0.3/receiver-dashboard-read.json",
