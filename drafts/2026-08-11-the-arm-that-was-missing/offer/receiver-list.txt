@@ -1,0 +1,15 @@
+# The eleven identifiers tracked by the receiver's own public dashboard.
+# Source: https://playground.tiktok-audit.com/api-na/ (read 2026-08-12, session 112).
+# Not chosen by this house; not part of this arc's window population.
+# One item per line — this file is exactly what a third party would hand the tool.
+https://www.tiktok.com/@tiktok/video/7366758818765638917
+https://www.tiktok.com/@tiktok/video/7368154048836406544
+https://www.tiktok.com/@tiktok/video/7074367286571814190
+https://www.tiktok.com/@tiktok/video/7117394257064840490
+https://www.tiktok.com/@tiktok/video/7134492331117595950
+https://www.tiktok.com/@tiktok/video/7164125023886691626
+https://www.tiktok.com/@tiktok/video/7376726215178128673
+https://www.tiktok.com/@tiktok/video/7332960275127110954
+https://www.tiktok.com/@tiktok/video/7347581705299053826
+https://www.tiktok.com/@tiktok/video/7376437810644946222
+https://www.tiktok.com/@tiktok/video/7361448925972155679
