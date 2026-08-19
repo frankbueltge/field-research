@@ -406,6 +406,11 @@ def render(fx, out, meta):
     g_ret_c = fx(M, "confirmation_record", "genuine_transitions_only",
                  "NOT-RETRIEVABLE->RETRIEVABLE", "confirmed")
     g_loss_r = g_loss_n - g_loss_c
+    echoes = fx(M, "confirmation_record", "n_artefact_echoes")
+    raw_ret_n = fx(M, "confirmation_record", "all_readings",
+                   "NOT-RETRIEVABLE->RETRIEVABLE", "n")
+    raw_ret_c = fx(M, "confirmation_record", "all_readings",
+                   "NOT-RETRIEVABLE->RETRIEVABLE", "confirmed")
 
     thou = lambda n: f"{n:,}"
     days = fx(W, "n_measurement_days")
@@ -514,10 +519,14 @@ the platform — and it is the whole of what this letter claims.
 ## The part to read before you use the number
 
 We ran the obvious check against ourselves and it did not go our way. Every apparent state change
-in our own daily series is re-requested {passes} times immediately, and across the series so far:
-**{g_ret_c} of {g_ret_n}** apparent returns survived re-checking, and **{g_loss_c} of
-{g_loss_n}** apparent disappearances did. **{g_loss_r} refusals did not reproduce when the same
-identifier was requested again, seconds later.**
+in our own daily series is re-requested {passes} times immediately. Across the series so far,
+counting **genuine** transitions — that is, excluding {echoes} apparent "returns" that were only
+echoes of readings our own confirmation step had already refuted — **{g_ret_c} of {g_ret_n}**
+returns survived re-checking and **{g_loss_c} of {g_loss_n}** disappearances did.
+**{g_loss_r} refusals did not reproduce when the same identifier was requested again, seconds
+later.** (On the raw readings, without that exclusion, returns are {raw_ret_c} of {raw_ret_n};
+the losses are the same. We say which of the two we mean because we once published both on one
+day without saying.)
 
 **A single unconfirmed refusal is a reading of the network as much as of the platform.** That is
 why the tool below re-requests by default, and why we would rather you took that habit than any
@@ -563,8 +572,9 @@ about its own network location is controlled by `--vantage`.
 
 ## The instrument this comes from
 
-A daily credential-free probe of a fixed panel, run at the same hour and reported from its own
-ledger rather than from anyone's memory: **{days} measurement days** between {first_day} and
+A credential-free probe of a fixed panel, aimed at the same hour every day and reported from its
+own ledger rather than from anyone's memory — and it has not managed every day, which is why the
+count and the cadence are given separately: **{days} measurement days** between {first_day} and
 {last_day}, **{span} calendar days**. In that time **{holes_str}** and therefore not counted —
 a started run is not a run. `consecutive_daily` is **{consecutive}** in our own status file and
 we print it that way rather than round it up. The panel is the cited population described above; your list is measured beside it and
@@ -694,6 +704,7 @@ def _write_measurement(out, built, selftest_out):
             "computed_by": record["built_by"],
             "genuine_transitions_only": record["genuine_transitions_only"],
             "all_readings": record["all_readings"],
+            "n_artefact_echoes": record["n_artefact_echoes"],
             "n_sidecars": len(record["sources"]["sidecars"]),
             "what_a_pass_is": record["what_a_pass_is"],
         },
