@@ -61,6 +61,7 @@ DASHBOARD_PRIOR = os.path.join(HERE, "deliverable-v0.3", "receiver-dashboard-rea
 PANELDATE = os.path.join(HERE, "panel-date-125.json")
 RECORD = os.path.join(HERE, "confirmation-record-121.json")
 PRIOR_ELEVEN = os.path.join(HERE, "deliverable-v0.3", "receiver-eleven.json")
+NEIGHBOURS = os.path.join(HERE, "neighbours-127.json")
 DRIFT_SRC = os.path.join(HERE, "drift-122.json")
 
 # The one list of commands. The letter renders from it; the build runs it; phase C proves the
@@ -71,6 +72,29 @@ CMDS = [
      "--baseline", "reference-baseline.json", "--label", "the-eleven",
      "-o", "your-eleven-today.json"],
 ]
+
+# What each file in the object is, for the letter's own table. The table is GENERATED from the
+# directory listing and this map: a file on disk with no entry here fails the build, and an entry
+# here with no file fails it too. The retired bundle's seventh gauntlet died on an inventory that
+# claimed to list a directory's contents and did not.
+DESCRIPTIONS = {
+    "LETTER.md": "this letter",
+    "measurement.json": "every figure above, in the field this letter fetched it from",
+    "series-status.json": "the series' length, holes and intervals, computed from the ledger",
+    "your-eleven-today.json": "the live run this letter quotes, as the tool wrote it",
+    "rerun-verification.json": ("the same command run a second time, as printed above, to prove "
+                                "it runs"),
+    "presence_check.py": "the instrument",
+    "selftest_presence_check.py": "the instrument's own test suite, offline",
+    "ledger.py": ("the request layer the instrument imports, unchanged and not "
+                  "re-implemented"),
+    "run_lock.py": "the reservation the daily probe takes; imported by ledger.py",
+    "drift-122.json": ("the measurement four of the suite's assertions check the "
+                       "instrument against"),
+    "receiver-list.txt": "the identifiers, as transcribed from your dashboard",
+    "reference-baseline.json": "the reference population table the comparison uses",
+    "BUILD.json": "what this build ran, with exit statuses, both runs' counts and a hash per file",
+}
 
 PERSON = "Frank Bültge"
 PERSON_URL = "https://frankbueltge.de"
@@ -177,6 +201,34 @@ def patch_tool(dst):
     open(dst, "w", encoding="utf-8").write(src)
 
 
+def _neighbours():
+    """What the letter's one claim about the world rests on, dated and re-checked.
+
+    The claim was established on 2026-08-15 against a register that has since grown. Rather than
+    carry it on a stale search, the register was fetched again this session and the same keyword
+    check re-run; what that returned is here, and the letter fetches its figures from it.
+    """
+    n = json.load(open(NEIGHBOURS, encoding="utf-8"))
+    return {
+        "source": os.path.relpath(NEIGHBOURS, HERE),
+        "register_url": n["register"]["url"],
+        "register_fetched_utc": n["register"]["fetched_utc"],
+        "register_count": n["register"]["count_entries"],
+        "prior_search_date": n["prior_search"]["date"],
+        "prior_search_register_count": n["prior_search"]["register_count"],
+        "register_growth_since": n["register_growth_since_prior_search"],
+        "nearest_neighbour": ("Bekavac & Mayer, Platforms' Research API Data Access: What Users "
+                              "See vs. What Researchers can Retrieve, FAccT '26; preprint "
+                              "arXiv:2601.12390"),
+        "what_the_recheck_returned": ("every entry the keyword check surfaced was already "
+                                      "assessed by this arc (NEIGHBOURS-120.md, "
+                                      "FANOUT-1-neighbours.md); none is new"),
+        "what_this_check_is_not": ("a keyword check over one register, not a field search. It "
+                                   "can only find what that register holds and what those words "
+                                   "reach."),
+    }
+
+
 def _prior_comparison(today):
     """This practice's earlier dated reading of the same eleven, and what moved between them.
 
@@ -232,6 +284,59 @@ def patch_selftest(dst):
     open(dst, "w", encoding="utf-8").write(src.replace(old, new))
 
 
+def _rewrap(text, width=94):
+    """Re-wrap prose paragraphs so the raw file reads evenly.
+
+    Fenced blocks, table rows, headings and blockquotes are passed through untouched — a wrapped
+    command would be a command a reader cannot paste, which is the defect that retired the last
+    object.
+    """
+    out_lines, para, in_fence = [], [], False
+    indent = [""]
+
+    def flush():
+        if not para:
+            return
+        words = " ".join(para).split()
+        pad = indent[0]
+        line = ""
+        first = True
+        for w in words:
+            head = "" if first else pad
+            if line and len(head) + len(line) + 1 + len(w) > width:
+                out_lines.append(("" if first else pad) + line)
+                first = False
+                line = w
+            else:
+                line = w if not line else line + " " + w
+        if line:
+            out_lines.append(("" if first else pad) + line)
+        para.clear()
+        indent[0] = ""
+
+    for raw in text.split("\n"):
+        if raw.startswith("```"):
+            flush()
+            in_fence = not in_fence
+            out_lines.append(raw)
+            continue
+        if in_fence or raw.startswith(("|", "#", ">")) or not raw.strip():
+            flush()
+            out_lines.append(raw)
+            continue
+        if raw.startswith(("- ", "* ")):
+            flush()
+            indent[0] = "  "
+            para.append(raw)
+            continue
+        if raw.startswith("  ") and not para:
+            out_lines.append(raw)
+            continue
+        para.append(raw.strip())
+    flush()
+    return "\n".join(out_lines)
+
+
 def render(fx, out, meta):
     P = lambda *p: os.path.join(out, *p)
     M = P("measurement.json")
@@ -250,13 +355,18 @@ def render(fx, out, meta):
     n_assert = fx(M, "selftest", "assertions_passed")
     n_unconf = fx(M, "today", "n_unconfirmed_absent")
     absent_now = counts.get("NOT-RETRIEVABLE", 0)
+    unconf_clause = (
+        "and no first-pass refusal failed to reproduce" if n_unconf == 0 else
+        f"and {n_unconf} further first-pass refusal did not reproduce, so it was excluded rather "
+        f"than counted" if n_unconf == 1 else
+        f"and {n_unconf} further first-pass refusals did not reproduce, so they were excluded "
+        f"rather than counted")
     refusal_line = (
-        f"The {absent_now} refusal{'s' if absent_now != 1 else ''} above "
-        f"{'were' if absent_now != 1 else 'was'} re-requested {passes} times and did not go away; "
-        f"{n_unconf} first-pass refusal(s) failed to reproduce and "
-        f"{'were' if n_unconf != 1 else 'was'} therefore excluded rather than counted."
+        f"The {'one refusal' if absent_now == 1 else str(absent_now) + ' refusals'} above "
+        f"{'was' if absent_now == 1 else 'were'} re-requested {passes} times and did not go "
+        f"away, {unconf_clause}."
         if absent_now else
-        f"Nothing refused on the first pass; {n_unconf} reading(s) were excluded as unconfirmed.")
+        f"Nothing refused on the first pass, {unconf_clause}.")
     prior_when = fx(M, "prior_reading_of_the_same_list", "read_utc")
     prior_retr = fx(M, "prior_reading_of_the_same_list", "counts_then", "RETRIEVABLE")
     prior_n = fx(M, "prior_reading_of_the_same_list", "n_shared_identifiers")
@@ -306,11 +416,29 @@ def render(fx, out, meta):
     last_day = fx(W, "measurement_days", -1, "start_utc")
     span = fx(M, "series", "calendar_days_spanned")
 
+    reg_n = fx(M, "neighbour_check", "register_count")
+    reg_growth = fx(M, "neighbour_check", "register_growth_since")
+    prior_search = fx(M, "neighbour_check", "prior_search_date")
     pop_what = fx(M, "population_caveat", "reference_population_what_it_is",
                   fmt=lambda t: t.split(". ")[0].rstrip(".").strip())
     bracket = fx(M, "population_caveat", "panel_construction_bracket_days")
     pop_n = fx(M, "population_caveat", "reference_population_n")
     t_ref = fx(M, "population_caveat", "reference_day_utc")
+
+    on_disk = {f for f in os.listdir(out) if os.path.isfile(os.path.join(out, f))}
+    # the three files that do not exist yet at render time and are written by the phases after it
+    expected = on_disk | {"LETTER.md", "rerun-verification.json", "BUILD.json"}
+    if expected != set(DESCRIPTIONS):
+        raise SystemExit(
+            "the letter's file table and the directory disagree.\n"
+            f"  on disk, undescribed: {sorted(expected - set(DESCRIPTIONS))}\n"
+            f"  described, absent:    {sorted(set(DESCRIPTIONS) - expected)}")
+    file_rows = "\n".join(
+        f"| `{f}` | {DESCRIPTIONS[f]}"
+        + (f", version {tool_v}" if f == "presence_check.py" else "")
+        + (f": {n_assert} assertions" if f == "selftest_presence_check.py" else "")
+        + " |"
+        for f in sorted(DESCRIPTIONS))
 
     cmd_self = " ".join(CMDS[0])
     cmd_live = " ".join(CMDS[1])
@@ -344,8 +472,20 @@ available and **{dash_err}** with errors. It also says, on its own face:
 {dash_unchanged}
 
 That sentence is why this letter exists. An instrument that cannot separate its own failures from
-the platform's needs a second, independent measurement beside it. **That second measurement costs
-nothing, needs no credential, and as far as we could find, nobody was running it.**
+the platform's needs a second, independent measurement beside it, and **that second measurement
+needs no credential and no account.**
+
+We checked whether it was already being done and narrowed our own claim when it turned out to be
+partly done: Bekavac and Mayer compare the user-visible feeds of controlled accounts against what
+the TikTok Research API and the Meta Content Library return, over two election periods (FAccT '26;
+preprint `arXiv:2601.12390`) — a stronger study than anything here, but run *through accounts*,
+over bounded periods, and published as a study rather than as something you can point at your own
+list. **What we could not find — in our own field searches, or in the {thou(reg_n)} papers our
+register held when we re-checked it this morning — is a running, credential-free, dated reference
+a stranger can address their own identifiers against on a day of their choosing.** That is what
+this is, and not more. (Re-checked against a register {reg_growth} entries larger than when the
+search was first run on {prior_search}; nothing new surfaced. It is a keyword check over one
+register, not a survey of the field.)
 
 ## What we measured, this morning
 
@@ -444,17 +584,7 @@ That is a request, not a condition on you.
 
 | file | what it is |
 |---|---|
-| `LETTER.md` | this letter |
-| `measurement.json` | every figure above, in the field this letter fetched it from |
-| `series-status.json` | the series' length, holes and intervals, computed from the ledger |
-| `your-eleven-today.json` | the live run this letter quotes, as the tool wrote it |
-| `rerun-verification.json` | the same command run a second time, as printed above, to prove it runs |
-| `presence_check.py` | the instrument, version {tool_v} |
-| `selftest_presence_check.py` | its test suite: {n_assert} assertions, offline |
-| `ledger.py`, `run_lock.py` | its request layer, imported unchanged and not re-implemented |
-| `receiver-list.txt` | the {n_items} identifiers, as transcribed from your dashboard |
-| `reference-baseline.json` | the reference population table the comparison uses |
-| `BUILD.json` | what this build ran, with exit statuses and hashes |
+{file_rows}
 """
 
 
@@ -462,11 +592,27 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=os.path.join(HERE, "offer"))
     ap.add_argument("--skip-live", action="store_true")
+    ap.add_argument("--render-only", metavar="PATH", default=None,
+                    help="re-render the letter from the files already in --out and write it to "
+                         "PATH, running nothing. A validation mode: it never writes LETTER.md "
+                         "and never writes BUILD.json, so no shipped state can come out of it.")
     a = ap.parse_args(argv)
     out = os.path.abspath(a.out)
     os.makedirs(out, exist_ok=True)
     built = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
     build_log = []
+
+    if a.render_only:
+        prior = json.load(open(os.path.join(out, "BUILD.json"), encoding="utf-8"))
+        selftest_out = next(r["stdout_tail"] for r in prior["runs"]
+                            if "selftest" in r["cmd"])
+        _write_measurement(out, built, selftest_out)
+        fx = Fx()
+        text = _rewrap(render(fx, out, {"built_utc": built}))
+        open(a.render_only, "w", encoding="utf-8").write(text)
+        print(f"render-only: {len(text.split())} words, {len(fx.log)} figures fetched -> "
+              f"{a.render_only}")
+        return 0
 
     # --- the object's own files -------------------------------------------------------------
     patch_tool(os.path.join(out, "presence_check.py"))
@@ -498,7 +644,20 @@ def main(argv=None):
             print(p.stderr[-2000:], file=sys.stderr)
             raise SystemExit("phase A command failed; no letter is written")
 
+    today = _write_measurement(out, built, selftest_out)
+    return _finish(a, out, built, build_log, today)
+
+
+def _write_measurement(out, built, selftest_out):
+    """Assemble measurement.json and series-status.json from the run that just happened.
+
+    Split out of main() so `--render-only` can rebuild both from the files already in the
+    directory and re-render the letter without issuing a single live request — which is how a
+    template change is validated while a panel probe is in flight (DEVIATIONS.md D25).
+    """
     today = json.load(open(os.path.join(out, "your-eleven-today.json"), encoding="utf-8"))
+    status = window_status.scan()
+    json.dump(status, open(os.path.join(out, "series-status.json"), "w"), indent=1)
     record = json.load(open(RECORD, encoding="utf-8"))
     dash = json.load(open(DASHBOARD, encoding="utf-8"))
     panel = json.load(open(PANELDATE, encoding="utf-8"))
@@ -525,6 +684,7 @@ def main(argv=None):
             "stdout": selftest_out.strip(),
         },
         "prior_reading_of_the_same_list": _prior_comparison(today),
+        "neighbour_check": _neighbours(),
         "confirmation_record": {
             "source": os.path.relpath(RECORD, HERE),
             "computed_by": record["built_by"],
@@ -586,10 +746,13 @@ def main(argv=None):
     }
     json.dump(measurement, open(os.path.join(out, "measurement.json"), "w"),
               indent=1, ensure_ascii=False)
+    return today
 
+
+def _finish(a, out, built, build_log, today):
     # --- phase B: render, every figure fetched -----------------------------------------------
     fx = Fx()
-    letter = render(fx, out, {"built_utc": built})
+    letter = _rewrap(render(fx, out, {"built_utc": built}))
     open(os.path.join(out, "LETTER.md"), "w", encoding="utf-8").write(letter)
     print(f"  [B] LETTER.md rendered, {len(letter.split())} words, "
           f"{len(fx.log)} figures fetched")
