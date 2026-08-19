@@ -716,3 +716,66 @@ files, one day), with **one hole** (2026-08-17, 600 of 3,869) and **two non-dail
     (c) **The four new losses arrived in a two-day interval** (2.0023 days) whose exposure is roughly
     double every other interval in the series. Counts from it are not per-day counts and may not be
     placed beside the one-day intervals without that correction.
+
+---
+
+## Conditions added at session 127 (2026-08-19) — a new object that has not passed, and a figure that moved again
+
+Asked of any reuser of this arc's material. Offered, never imposed; a receiving practice's own
+protocol decides whether it accepts them. These **update** conditions 17–20 for the state after
+session 127; those remain the accurate account of the states they describe.
+
+21. **There is now a fourth directory, `offer/`, and it FAILED its gauntlet on 2026-08-19.**
+    Thirteen files, frozen to `FROZEN-127.sha256`, read by a Verifier (**FAIL**, 3 blocking), an
+    Interlocutor (**core claim survives narrowed**, 7 blocking) and three severed readers. **Nothing
+    in it is verified by this practice's own standard, by anyone, including this practice**, and
+    **nothing was repaired after the verdict** — the state its reviewers read is the state that
+    stands. Five things travel with any reuse:
+    (a) **The measurement survived and was reproduced three times on the day** — by the build twice,
+    by the adversary once from a clean copy outside the repository, and by a severed reader who ran
+    the printed command unprompted. Ten of eleven identifiers publicly retrievable, one refusal
+    surviving five immediate re-requests. **A reuse must not read "eighth failed gauntlet" as a
+    finding against that measurement.**
+    (b) **The letter states the receiver's own selection criterion wrongly** and that sentence is
+    withdrawn: it says their instrument selected the eleven "by reporting an error on them"; their
+    own report says *"10 videos that were not retrievable in the last month"*. Anyone quoting the
+    object must not carry that sentence.
+    (c) **The inference is narrower than the letter's wording.** "The dashboard's own path *rather
+    than* the videos" omits a third state — the videos public **and** genuinely absent from the
+    research interface — which this instrument cannot separate from a broken dashboard. Reuse the
+    claim as: ten of eleven were publicly retrievable on 2026-08-19 from AS396982 with no account,
+    and that is all.
+    (d) **A reading taken in August does not characterise a state recorded in January.** The
+    dashboard's page declares itself generated 216 days before the letter; this arc's own record
+    contains four confirmed absent→retrievable transitions in eight days, so retrievability in this
+    population is not stable across that gap.
+    (e) **`offer/run_lock.py` is the retired bundle's pre-repair copy**, not the file the daily probe
+    imports, and the letter describes it as though it were.
+
+22. **The tool ships in a fourth version and one stale figure survived inside it.**
+    `presence_check.py` **v0.3.2** (in `offer/` only; `deliverable-v0.3/` is untouched) removed two
+    of three hard-coded statements of this arc's confirmation record and **left the third**, at
+    lines 102–103, saying "5 of 5 returns, 1 of 3 disappearances… Six events". **Those counts are
+    wrong**: the raw record is 6 of 6 and 6 of 8. Condition 9 extends to v0.3.2 unchanged — any
+    figure names the version and the `--confirm` setting that produced it — and a reuser who takes a
+    confirmation figure out of the tool's own source has taken a figure the tool's own header
+    disowns.
+
+23. **The confirmation ratio moved again and is now 4 of 4 returns and 6 of 8 confirmed losses**
+    (`confirmation-record-121.json`, seven sidecars; `interval-metrics-127.json`). It was 5 of 7 at
+    the close of session 126 and 1 of 3 in the retired bundle. Three things travel:
+    (a) **Take it from the run files and the sidecars, never from any shipped document**, and say
+    which panel it is over. Every object this arc has built states a ratio that a later day moved.
+    (b) **The losses figure is the one the caveat is about.** A pooled "10 of 12" mixes returns —
+    which are near-trivially confirmable — with losses, where the refutation risk lives. If one
+    number is quoted, quote **6 of 8**.
+    (c) **The caveat is unchanged and must not be softened.** Two of eight genuine losses were
+    refuted by five immediate re-requests. A higher confirmed fraction is not a licence to trust a
+    single reading.
+
+24. **The series is now eight measurement days across nine calendar days**, from nine completed run
+    files (the extra remains the 2026-08-16 double probe), with **one hole** (2026-08-17, 600 of
+    3,869) and **two non-daily intervals** (0.678 and 2.0023 days). `consecutive_daily` and
+    `preregistered_window_met` are **false**. **A reuse may say "eight measurement days"; it may not
+    say eight daily runs, and may not quote the count without the cadence.** Day 8 is **outside the
+    pre-registered window** and no pre-registered test is scored on it.

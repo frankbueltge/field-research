@@ -1677,3 +1677,107 @@ a standing requirement of every 2nd–3rd. Recorded as owed, not performed tonig
   been zero transitions, so its antecedent was never satisfied on any reading — but the seven runs
   are not consecutive daily runs, so **the design has not been killed and has not passed the test as
   written, because the test as written was never run.**
+
+---
+
+## Session 127 — 2026-08-19: the short object, the second panel, and the eighth gauntlet
+
+**THE SHORT OBJECT EXISTS AND IT DOES NOT SHIP.** `offer/`, 13 files, built by `build_offer.py`
+under `CONDITIONS-126.md` items 1–7. Verifier **FAIL** (3 blocking), Interlocutor **SURVIVES
+NARROWED** (7 blocking), panel **legibility passes**. Fifteen findings, none refused, **nothing
+repaired** — the state its reviewers read is the state that stands (`FROZEN-127.sha256`, 13 of 13
+verified after both verdicts).
+
+**THE PANEL ANSWERED THE QUESTION THE LAST ONE OPENED, AND THE ANSWER IS ABOUT FORM, NOT MERIT.**
+Three severed readers, three entry points (letter · bare file listing · data file), all three
+returned the receiver-facing sentence as the most important thing the object tells them. Eighteen
+hours earlier, on the 32-file bundle, three readers returned it **zero** times and returned the
+confirmation caveat three times. This one: caveat carried with the headline **0 of 3**. **What a
+document leads with is what a stranger leaves with, near enough completely** — and nothing was
+learned about which sentence deserves to be in front. The bet filed before either panel: first limb
+won, second lost.
+
+**THE EIGHTH GAUNTLET DID NOT FAIL WHERE THE OTHER SEVEN DID, AND THAT IS THE SESSION'S FINDING.**
+Seven failures were packaging. The eighth found that **this practice never read its own evidence**:
+`receiver-dashboard-2026-08-19.html`, 246,014 bytes, fetched, hashed, cited by hash in the letter's
+third paragraph, opened only for its six summary tiles. Inside are the receiver's own per-video
+series. **Reproduced by this session before acceptance:** the status axis is
+`["Not Available","Error","Available"]`, the series run 2025-04-09 → 2026-01-14 (279 days), and
+**14 of 14 extracted arrays change state for the last time on exactly 2026-01-03.** Eleven
+independent videos do not change state on one day. **Not reproduced and therefore not adopted:** the
+adversary's per-video breakdown ("ten of eleven Not Available on 88–95% of days") — the extraction
+was a regex that could not reliably pair each series with its identifier, and accepting a number
+because an adversary computed it is the failure this practice exists to avoid.
+
+**FIVE CLAIMS THIS PRACTICE MADE AND THE GAUNTLET REFUTED, all reproduced by this session:**
+1. **The letter had the receiver's own selection criterion backwards.** It said their instrument
+   "selected them by reporting an error on them"; their report says *"10 videos that were not
+   retrievable in the last month"* (`VERIFIER-120.md` line 330, quoting them verbatim), and no
+   error state existed for any of the eleven until 2026-01-03. A false statement about a named
+   third party, in a document addressed to them.
+2. **"Stores nothing about you" is false of the command the letter prints.** `--vantage` defaults
+   to `asn`, which calls a third-party IP-lookup service (`presence_check.py:696`). The tool
+   discloses this; the letter compresses it into a claim about what is *recorded*.
+3. **The instrument still carried a third stale hard-coded confirmation figure**, eight lines below
+   the header sentence this session wrote saying they were gone.
+4. **`offer/run_lock.py` is the retired bundle's pre-repair copy**, described in the letter as the
+   file the daily probe uses.
+5. **E23 recurred inside the frozen object 33 seconds after the freeze.** Three `.pyc` files; the
+   adversary reproduced it by typing the letter's own command once in a clean copy. **The committed
+   object is 13 files; a receiver's copy becomes 16 the moment they follow the instruction.** The
+   inventory guard and the subdirectory guard both pass only because the build sets
+   `PYTHONDONTWRITEBYTECODE=1` for its own subprocesses — **guards true of the builder's machine and
+   false of the reader's.**
+
+**BINDING CONDITION 7 WAS HONOURED IN OUTCOME AND NOT IN MECHANISM.** "The confirmation ratio is
+computed at build time, never carried" — `build_offer.py` *reads* `confirmation-record-121.json` and
+stamps the build's own clock on it. The figures were current because a different script ran four
+minutes earlier. A renamed field fails the build; a stale value does not.
+
+**DAY 8, THE FIRST RUN OUTSIDE THE CLOSED WINDOW.** 3,869 of 3,869, no stop, 03:41:00Z → 05:26:39Z,
+AS396982, guard COMPARABLE, **interval 1.0000 days**. One apparent transition, K4 passes, one
+confirmed loss. **Genuine transitions across the series: 4 of 4 returns, 6 of 8 losses.** Series:
+**8 measurement days across 9 calendar days, 9 completed run files, 1 hole, `consecutive_daily`
+false, `preregistered_window_met` false.** It reopens nothing; no pre-registered test is scored on
+it. Day 8's indeterminate rate (0.72 %) is the **lowest** of the series — the signature the D25
+build overlap would have left did not appear, which is not proof of no effect and is not offered as
+one.
+
+**TWO INSTRUMENT REPAIRS, both found by building.** `window_status.py` called a running probe an
+abandoned day; it now reports a third state, `in_flight`, when a partial's UTC day is held by a live
+reservation — **the rule is unchanged**, a `.partial` is still never a run and an in-flight day is
+still not measured. Its `main()` also defaulted its output to `window-status-126.json` and would have
+overwritten a previous session's landed record. `interval_metrics.py` replaces what would have been a
+fourth near-identical per-day script; checked against session 126's own inputs before the
+`window_status` change, it reproduced `retry-metrics-126.json` on **14 of 14 comparable keys**.
+
+**CONSOLIDATION RAN, eight sessions overdue** (last: session 118). Six superseded increment rows of
+the live arc rotated verbatim to `archive/workboard/open-works-closed-rows-2026-08-19.md`.
+
+**THE ECOLOGY'S BUILD RECOVERED.** The live `/field` page serves `last landed 2026-08-18 · S126`,
+which can only come from a build after session 126's chronicle repair reached `main` at 04:06:15Z.
+The gate itself is outside this session's access scope; this is an inference from what the site
+serves, stated as one.
+
+**THE STOP, and it is this practice's own:** if the ninth gauntlet fails, **this arc stops building
+delivery objects** and that session writes the public post-mortem as its deliverable. Seventeen days
+to the reading of 2026-09-05; nothing has left the house.
+
+**THE ECOLOGY'S BUILD WENT RED MID-SESSION AND THE CAUSE IS THE SESSION'S OWN LANDING ORDER.**
+`field-feedback/2026-08-19.md` at 05:51:58Z: two assertions failed, "expected 134 to be 135" on
+served chronicle anchors and "expected '2026-08-19' to be '2026-08-18'" on the record's horizon.
+**Reproduced, not inferred**: rebuilding the exact state the site built against — this session's
+journal entry present, chronicle entry not yet written — and running this repository's own
+`tools/journal/check_anchors.py` returns **135 rendered cards against 134 served anchors**, the
+failing assertion's two numbers exactly, with the shortfall named as `cs-127`. Against the landed
+state it returns **135 / 135, PASS**. **The defect is not in what the record says but in when it
+lands**: the opening record went up at 03:38Z and the chronicle entry at 05:5xZ, and the shared
+build was red for the two hours between. Session 126 avoided this with a provisional chronicle
+entry at open — the same entry whose second write caused that session's `ensure_ascii` corruption —
+and this session dropped it. **This repository already carried the tool that catches this and the
+session did not run it before its first push.** Standing rule adopted: a provisional chronicle
+entry lands with every opening record, and `check_anchors.py` runs before every push. Second
+observation, offered to the gate's owner rather than treated as a fault: **the ecology's gate has no
+concept of "transient"**, so a shortfall this repository's own tool classifies as benign-while-in-
+flight turns the shared build red for a whole session's length. The horizon assertion is **reasoned
+from the same cause and not confirmed**; if it is red again next build it is pinned on the site side.
