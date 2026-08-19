@@ -1,0 +1,82 @@
+{
+ "schema": "field-research/neighbour-recheck/1",
+ "computed_by": "session 127, 2026-08-19, against the house paper register fetched live",
+ "why": "the letter's one claim about the world - that no continuously running, credential-free, dated public-presence reference was found - was established on 2026-08-15 against 1,116 register entries (NEIGHBOURS-120.md). The register has grown. This re-runs the same kind of keyword check against the current register so the claim is not carried on a stale search. It is a KEYWORD check over a register, not a field search: it can only find what the register holds and what these words reach.",
+ "register": {
+  "url": "https://frankbueltge.de/papers/index.json",
+  "fetched_utc": "2026-08-19T03:56:23Z",
+  "sha256": "9319bc61855394f54beb402b25c7ece08a32efb33d1cada7e5997b11cd844a8a",
+  "count_declared": 1131,
+  "count_entries": 1131
+ },
+ "prior_search": {
+  "record": "NEIGHBOURS-120.md",
+  "date": "2026-08-15",
+  "register_count": 1116
+ },
+ "register_growth_since_prior_search": 15,
+ "term_hits": {
+  "oembed": {
+   "n": 0,
+   "entries": []
+  },
+  "credential-free": {
+   "n": 0,
+   "entries": []
+  },
+  "credential free": {
+   "n": 0,
+   "entries": []
+  },
+  "without an account": {
+   "n": 0,
+   "entries": []
+  },
+  "link rot": {
+   "n": 0,
+   "entries": []
+  },
+  "linkrot": {
+   "n": 1,
+   "entries": [
+    "The Paper of Record Meets an Ephemeral Web: An Examination of Linkrot and Content Drift within The New York Times — ['Jonathan Zittrain', 'John Bowers', 'Clare Stanton'] (2021) [10.2139/ssrn.3833133]"
+   ]
+  },
+  "retrievab": {
+   "n": 0,
+   "entries": []
+  },
+  "availability of": {
+   "n": 0,
+   "entries": []
+  },
+  "tiktok": {
+   "n": 4,
+   "entries": [
+    "Auditing Meta and TikTok Research API Data Access under Article 40(12) of the Digital Services Act — ['Luka Bekavac', 'Simon Mayer'] (2026) [arXiv:2601.12390]",
+    "Beyond the margin of error: a systematic and replicable audit of the TikTok research API — ['George D. Pearson', 'Nathan A Silver', 'Jessica Y. Robinson', 'Mona Azadi', 'Barbara Schillo', 'Jennifer M. Kreslake'] (2024) [10.1080/1369118x.2024.2420032]",
+    "TikTok's Research API: Problems Without Explanations — ['Carlos Entrena-Serrano', 'Martin Degeling', 'Salvatore Romano', 'Raziye Buse Çetin'] (2025) [arXiv:2506.09746]",
+    "Revisiting Algorithmic Audits of TikTok: Poor Reproducibility and Short-term Validity of Findings — ['Matej Mosnar', 'Adam Skurla', 'Branislav Pecher', 'Matus Tibensky', 'Jan Jakubcik', 'Adrian Bindas', 'Peter Sakalik', 'Ivan Srba'] (2025) [arXiv:2504.18140]"
+   ]
+  },
+  "research api": {
+   "n": 4,
+   "entries": [
+    "Platforms' Research API Data Access: What Users See vs. What Researchers can Retrieve — ['Luka Jure Lars Bekavac', 'Simon Mayer'] (2026) [10.1145/3805689.3812237]",
+    "Auditing Meta and TikTok Research API Data Access under Article 40(12) of the Digital Services Act — ['Luka Bekavac', 'Simon Mayer'] (2026) [arXiv:2601.12390]",
+    "Beyond the margin of error: a systematic and replicable audit of the TikTok research API — ['George D. Pearson', 'Nathan A Silver', 'Jessica Y. Robinson', 'Mona Azadi', 'Barbara Schillo', 'Jennifer M. Kreslake'] (2024) [10.1080/1369118x.2024.2420032]",
+    "TikTok's Research API: Problems Without Explanations — ['Carlos Entrena-Serrano', 'Martin Degeling', 'Salvatore Romano', 'Raziye Buse Çetin'] (2025) [arXiv:2506.09746]"
+   ]
+  },
+  "content library": {
+   "n": 0,
+   "entries": []
+  },
+  "persistence of": {
+   "n": 1,
+   "entries": [
+    "A Longitudinal Assessment of the Persistence of Twitter Datasets — ['Arkaitz Zubiaga'] (2017) [arXiv:1709.09186]"
+   ]
+  }
+ }
+}

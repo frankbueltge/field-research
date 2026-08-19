@@ -1,7 +1,7 @@
 {
  "schema": "field-research/short-offer/1",
  "built_by": "build_offer.py, session 127",
- "built_utc": "2026-08-19T03:47:58Z",
+ "built_utc": "2026-08-19T03:59:24Z",
  "what_this_is": "every figure the letter states, in the field the letter fetched it from. No figure in the letter is typed; if a field here is renamed the build fails instead of printing a stale number.",
  "today": {
   "schema": "field-research/presence-check/2",
@@ -298,6 +298,34 @@
   "failed": 0,
   "stdout": "selftest_presence_check — presence_check 0.3.2\n  128 assertion(s) passed\n  0 failed"
  },
+ "prior_reading_of_the_same_list": {
+  "source": "deliverable-v0.3/receiver-eleven.json",
+  "read_utc": "2026-08-12T18:35:26Z",
+  "vantage_asn": "AS396982",
+  "counts_then": {
+   "RETRIEVABLE": 10,
+   "NOT-RETRIEVABLE": 1
+  },
+  "n_shared_identifiers": 11,
+  "n_changed_state": 0,
+  "changed": [],
+  "absent_on_both_readings": [
+   "7134492331117595950"
+  ],
+  "what_this_is_not": "two readings a week apart are two readings. They do not establish a rate, a trend, or that anything is permanently absent."
+ },
+ "neighbour_check": {
+  "source": "neighbours-127.json",
+  "register_url": "https://frankbueltge.de/papers/index.json",
+  "register_fetched_utc": "2026-08-19T03:56:23Z",
+  "register_count": 1131,
+  "prior_search_date": "2026-08-15",
+  "prior_search_register_count": 1116,
+  "register_growth_since": 15,
+  "nearest_neighbour": "Bekavac & Mayer, Platforms' Research API Data Access: What Users See vs. What Researchers can Retrieve, FAccT '26; preprint arXiv:2601.12390",
+  "what_the_recheck_returned": "every entry the keyword check surfaced was already assessed by this arc (NEIGHBOURS-120.md, FANOUT-1-neighbours.md); none is new",
+  "what_this_check_is_not": "a keyword check over one register, not a field search. It can only find what that register holds and what those words reach."
+ },
  "confirmation_record": {
   "source": "confirmation-record-121.json",
   "computed_by": "confirmation_record_121.py, session 121",
@@ -331,7 +359,7 @@
  "series": {
   "source": "series-status.json, computed by window_status.py from the ledger",
   "n_measurement_days": 7,
-  "n_holes": 2,
+  "n_holes": 1,
   "consecutive_daily": false,
   "preregistered_window_met": false,
   "first_day_utc": "2026-08-11T11:24:06Z",
@@ -339,10 +367,10 @@
   "calendar_days_spanned": 8
  },
  "receiver_dashboard": {
-  "source": "deliverable-v0.3/receiver-dashboard-read.json",
-  "read_from_saved_bytes": "receiver-dashboard-2026-08-16.html",
+  "source": "receiver-dashboard-2026-08-19.json",
+  "read_from_saved_bytes": "receiver-dashboard-2026-08-19.html",
   "saved_bytes_sha256": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb",
-  "read_date": "2026-08-16",
+  "read_date": "2026-08-19",
   "url": "https://playground.tiktok-audit.com/api-na/",
   "generated": "2026-01-14 21:53:41",
   "totals": {
@@ -352,7 +380,13 @@
    "error": 11
   },
   "note": "Note: Error are problems on our end, not TikTok.",
-  "what_these_are": "the receiver's own public dashboard, read off saved bytes. Every figure here is a claim the dashboard makes about itself, never a measurement by this practice."
+  "what_these_are": "the receiver's own public dashboard, read off saved bytes. Every figure here is a claim the dashboard makes about itself, never a measurement by this practice.",
+  "prior_reading": {
+   "source": "deliverable-v0.3/receiver-dashboard-read.json",
+   "read_date": "2026-08-16",
+   "saved_bytes_sha256": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb"
+  },
+  "unchanged_since_prior_reading": true
  },
  "population_caveat": {
   "reference_population_n": 3580,
