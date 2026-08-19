@@ -49,6 +49,12 @@ what the letter says". The live command therefore runs twice, deliberately, and 
 kept — `your-eleven-today.json` is the letter's, `rerun-verification.json` is phase C's. Whether
 they agree is recorded in `BUILD.json` as `two_runs_agree_on_counts`.
 
+**Phase D checks the letter's own claim of self-containment.** The finished object is copied
+outside this repository and the offline command is run there; if it fails, the build fails, because
+*"everything needed is in this directory"* is a sentence a receiver tests by copying the folder.
+The live command is deliberately not re-run in phase D — it already runs twice, and a third pass
+would put a third client of this practice on the same endpoint for one build.
+
 **Two further failures this build refuses**, both taken from this arc's own errata rather than
 invented:
 
