@@ -44,6 +44,7 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
 import time
 
 import window_status
@@ -96,6 +97,13 @@ DESCRIPTIONS = {
     "reference-baseline.json": "the reference population table the comparison uses",
     "BUILD.json": "what this build ran, with exit statuses, both runs' counts and a hash per file",
 }
+
+# The commands that issue no network request. Phase D copies the finished object somewhere else
+# and runs these there, because the letter claims "everything needed is in this directory" and an
+# unchecked claim of self-containment is how a receiver discovers a missing file instead of us.
+# The live command is deliberately NOT re-run in phase D: it already runs twice (A and C), and a
+# third pass would put a third client of this practice on the same endpoint for one build.
+OFFLINE_CMDS = [CMDS[0]]
 
 PERSON = "Frank Bültge"
 PERSON_URL = "https://frankbueltge.de"
@@ -806,6 +814,22 @@ def _finish(a, out, built, build_log, today):
     json.dump(c_run, open(os.path.join(out, "rerun-verification.json"), "w"), indent=1)
     json.dump(today, open(os.path.join(out, "your-eleven-today.json"), "w"), indent=1)
 
+    # --- phase D: the same object, run from somewhere else -----------------------------------
+    portable = tempfile.mkdtemp(prefix="offer-portability-")
+    shutil.rmtree(portable)
+    shutil.copytree(out, portable)
+    for cmd in OFFLINE_CMDS:
+        p, rec = run(cmd, portable, "phase D — the object copied elsewhere, to check that it "
+                                    "carries what it says it carries")
+        rec["cwd"] = "a temporary copy of the object, outside this repository"
+        build_log.append(rec)
+        print(f"  [D] {' '.join(cmd)} (portable copy) -> {p.returncode}")
+        if p.returncode != 0:
+            print(p.stdout[-2000:], file=sys.stderr)
+            raise SystemExit("phase D: the object does not run from a copy of itself. The letter "
+                             "claims everything needed is in the directory; it is not.")
+    shutil.rmtree(portable, ignore_errors=True)
+
     agree = c_run["counts"] == today["counts"]
     files = sorted(f for f in os.listdir(out) if os.path.isfile(os.path.join(out, f)))
     # The seventh gauntlet failed the retired bundle on an inventory that claimed to list the
@@ -822,6 +846,10 @@ def _finish(a, out, built, build_log, today):
         "commands_found_in_letter": in_letter,
         "commands_match": True,
         "runs": build_log,
+        "phase_d_note": ("the offline command was also run from a copy of the object made "
+                         "outside this repository, to check the letter's claim that everything "
+                         "needed is in the directory. The live command is not re-run there: it "
+                         "already runs twice."),
         "phase_c_note": ("phase C executes the letter's own instructions as printed. The live "
                          "command therefore ran twice; both results are kept. rerun-"
                          "verification.json is phase C's, your-eleven-today.json is the one the "
