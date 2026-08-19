@@ -1,0 +1,289 @@
+{
+ "schema": "field-research/presence-check/2",
+ "tool": "presence_check.py",
+ "tool_version": "0.3.2",
+ "list": {
+  "file": "receiver-list.txt",
+  "label": "the-eleven",
+  "n_items": 11,
+  "refused_lines": []
+ },
+ "started_utc": "2026-08-19T03:48:20Z",
+ "finished_utc": "2026-08-19T03:48:42Z",
+ "seconds": 21.4,
+ "vantage": {
+  "mode": "asn",
+  "asn": "AS396982",
+  "country": "US",
+  "source": "https://ipinfo.io/json",
+  "fetched_utc": "2026-08-19T03:48:20Z",
+  "note": "only the autonomous system and country are kept. The lookup itself disclosed this machine's IP address to the service named in `source`; that cannot be undone by discarding the answer, and --vantage none avoids the call entirely."
+ },
+ "probe": {
+  "endpoint": "https://www.tiktok.com/oembed?url=",
+  "user_agent": "field-research/1.0 (independent research instrument; sequential, 1 req/s)",
+  "delay_s": 1.0,
+  "timeout_s": 25,
+  "imported_from": "ledger.py (not re-implemented)"
+ },
+ "confirmation": {
+  "passes": 5,
+  "applied_to": "absent",
+  "enabled": true,
+  "rule": "a reading is kept only if every confirmation pass agrees with it. A first-pass refusal that does not survive is reported as UNCONFIRMED-ABSENT and excluded from the absence rate \u2014 this arc's K4 criterion, PREREGISTRATION-112.md \u00a74.",
+  "record_behind_the_default": "some of this arc's refusal readings did not survive five immediate re-requests, and that is the whole reason this default is on. The counts move as the series grows, so they are NOT frozen into this tool: they are computed in confirmation-record-121.json and stated, with the date they were computed, in the letter this tool ships with. Never a rate.",
+  "warning_if_disabled": null,
+  "asymmetry": "with --confirm-what absent (the default) a RETRIEVABLE reading is taken on one pass; this tool cannot detect a false reading of presence and has never looked for one.",
+  "direction_of_the_bias_this_creates": "stated because the code forces it, not because it was measured. A refuted absence is DISCARDED (UNCONFIRMED-ABSENT, out of numerator and denominator) rather than reclassified to RETRIEVABLE, while a false presence is never tested at all and stays in the denominator on the retrievable side. Both effects push the reported absence rate DOWN relative to a symmetric regime. The size is unknown. --confirm-what all removes the second effect and not the first.",
+  "what_five_passes_is_and_is_not": "five is the number this arc pre-registered at session 112, and this practice's own record declines to certify it: PREREGISTRATION-119-overlay-use.md says in as many words that K4's five re-requests are 'not claimed' to be the right test, only the pre-registered one. Nothing here has measured what a sixth pass or a pass at an hour's delay would add. Treat --confirm 5 as a precedent this tool follows, never as a threshold anyone validated."
+ },
+ "counts": {
+  "RETRIEVABLE": 10,
+  "NOT-RETRIEVABLE": 1
+ },
+ "determinate": 11,
+ "public_absence_rate": 0.09090909090909091,
+ "absence_rate_denominator": "RETRIEVABLE + NOT-RETRIEVABLE; UNCONFIRMED-ABSENT and INDETERMINATE are excluded from both parts",
+ "n_unconfirmed_absent": 0,
+ "baseline": {
+  "path": "reference-baseline.json",
+  "sha256": "aac2fe0170b4d1b4b832b4ed52ea253b78eab3550aa49c202e134977dbff690e",
+  "loaded": true
+ },
+ "expectation_for_this_age_profile": {
+  "age_histogram": {
+   "2-3y": 7,
+   "4-5y": 2,
+   "3-4y": 2
+  },
+  "n_dated": 11,
+  "n_weighted_into_a_populated_cell": 11,
+  "coverage_note": null,
+  "expected_absent_rate": 0.13727970793277344,
+  "expected_lo": 0.11351942623997299,
+  "expected_hi": 0.16507647988916138,
+  "reference_population": {
+   "source": "ledger/run-2026-08-16T0337Z.json",
+   "run_id": "2026-08-16T03:37:40Z (manifest carried a placeholder)",
+   "n": 3580,
+   "what_it_is": "videos cited across MediaWiki language editions and posted to one public technology forum, measured from AS396982 on one day"
+  }
+ },
+ "frozen_reference_drift": {
+  "days_between_the_two_clocks": 3.007,
+  "expected_with_the_list_aged_at_the_reference_time": 0.13727970793277344,
+  "expected_at_the_reference_time_lo": 0.11351942623997299,
+  "expected_at_the_reference_time_hi": 0.16507647988916138,
+  "expected_with_the_list_aged_at_now": 0.13727970793277344,
+  "expected_at_now_lo": 0.11351942623997299,
+  "expected_at_now_hi": 0.16507647988916138,
+  "n_dated_at_the_reference_time": 11,
+  "n_dated_at_now": 11,
+  "age_histogram_at_the_reference_time": {
+   "2-3y": 7,
+   "4-5y": 2,
+   "3-4y": 2
+  },
+  "age_histogram_at_now": {
+   "2-3y": 7,
+   "4-5y": 2,
+   "3-4y": 2
+  },
+  "drift_pp": 0.0,
+  "comparable": true,
+  "why_the_drift_is_not_reported": null,
+  "which_one_is_defensible": "the reference-time one, WHEN IT EXISTS \u2014 it is the reading in which the ages and the table's own computed clock agree, and it says only what it can: for a list with this age profile, the reference population showed this much public absence ON THE REFERENCE DAY. The now-aged one extrapolates a single cross-section forward as though it were a hazard, which this arc has explicitly withdrawn as a claim \u2014 a single cross-section cannot separate the age of a video from the cohort it was created in, and this arc's own forum arm reverses the sign of the age gradient when first-citation year is held fixed (underpowered, p = 0.69). Two honest caveats on the preference itself: it is a judgement of this practice, defended in prose and never tested against a second observation; and it is only true of a table whose declared and computed clocks agree -- see baseline_currency.clock_check, which this tool now reports.",
+  "the_drift_is_not_a_forecast": "no part of this figure says retrievability itself changed. It says how far this tool's own arithmetic has moved from the day the table was measured."
+ },
+ "baseline_currency": {
+  "declared_t_ref_utc": "2026-08-16T03:37:40Z",
+  "status": "declared by the baseline file; NOT verified by this tool",
+  "age_days_at_measurement": 3.007,
+  "ages_computed_at_utc": "2026-08-16T03:37:40Z",
+  "declared_minus_computed_days": 0.0,
+  "clock_check": "AGREE \u2014 the table's declared reference time and the time its ages were computed at are the same"
+ },
+ "baseline_note": null,
+ "what_not_retrievable_means": "not publicly retrievable from this vantage at this time, on a first pass and every confirmation pass. The endpoint's refusal is a single opaque HTTP 400 that a never-existing identifier also returns (session 109 three-arm control, 20 synthetic identifiers). NOT DELETED.",
+ "observations": [
+  {
+   "http": 200,
+   "bytes": 2219,
+   "author_unique_id": "camilapudim",
+   "title_len": 332,
+   "body_code": null,
+   "vid": "7366758818765638917",
+   "handle_sent": "tiktok",
+   "first_pass_state": "RETRIEVABLE",
+   "state": "RETRIEVABLE",
+   "created_utc": "2024-05-08T22:26:37Z",
+   "age_y": 2.2785035300529826,
+   "band": "2-3y",
+   "confirmation": null
+  },
+  {
+   "http": 200,
+   "bytes": 1307,
+   "author_unique_id": "yy0403_2",
+   "title_len": 25,
+   "body_code": null,
+   "vid": "7368154048836406544",
+   "handle_sent": "tiktok",
+   "first_pass_state": "RETRIEVABLE",
+   "state": "RETRIEVABLE",
+   "created_utc": "2024-05-12T16:40:49Z",
+   "age_y": 2.2682095913504194,
+   "band": "2-3y",
+   "confirmation": null
+  },
+  {
+   "http": 200,
+   "bytes": 1332,
+   "author_unique_id": "brynnemarieeee",
+   "title_len": 51,
+   "body_code": null,
+   "vid": "7074367286571814190",
+   "handle_sent": "tiktok",
+   "first_pass_state": "RETRIEVABLE",
+   "state": "RETRIEVABLE",
+   "created_utc": "2022-03-12T23:58:08Z",
+   "age_y": 4.435755951022892,
+   "band": "4-5y",
+   "confirmation": null
+  },
+  {
+   "http": 200,
+   "bytes": 1361,
+   "author_unique_id": "brookemonk_",
+   "title_len": 16,
+   "body_code": null,
+   "vid": "7117394257064840490",
+   "handle_sent": "tiktok",
+   "first_pass_state": "RETRIEVABLE",
+   "state": "RETRIEVABLE",
+   "created_utc": "2022-07-06T22:44:46Z",
+   "age_y": 4.118304750678125,
+   "band": "4-5y",
+   "confirmation": null
+  },
+  {
+   "http": 400,
+   "bytes": 45,
+   "body_code": 400,
+   "body_message": "Something went wrong",
+   "vid": "7134492331117595950",
+   "handle_sent": "tiktok",
+   "first_pass_state": "NOT-RETRIEVABLE",
+   "state": "NOT-RETRIEVABLE",
+   "created_utc": "2022-08-22T00:34:01Z",
+   "age_y": 3.9921558990544272,
+   "band": "3-4y",
+   "confirmation": {
+    "passes": 5,
+    "states": [
+     "NOT-RETRIEVABLE",
+     "NOT-RETRIEVABLE",
+     "NOT-RETRIEVABLE",
+     "NOT-RETRIEVABLE",
+     "NOT-RETRIEVABLE"
+    ],
+    "n_agreeing": 5,
+    "n_reversing": 0,
+    "n_noise": 0,
+    "partial": false,
+    "agreed": true,
+    "rule": "a reading is refuted only by a determinate pass that disagrees with it. An INDETERMINATE pass is noise and is counted as nothing \u2014 never as disagreement."
+   }
+  },
+  {
+   "http": 200,
+   "bytes": 1564,
+   "author_unique_id": "taylorswift",
+   "title_len": 122,
+   "body_code": null,
+   "vid": "7164125023886691626",
+   "handle_sent": "tiktok",
+   "first_pass_state": "RETRIEVABLE",
+   "state": "RETRIEVABLE",
+   "created_utc": "2022-11-09T21:04:00Z",
+   "age_y": 3.773527137678404,
+   "band": "3-4y",
+   "confirmation": null
+  },
+  {
+   "http": 200,
+   "bytes": 2869,
+   "author_unique_id": "alandelantics",
+   "title_len": 144,
+   "body_code": null,
+   "vid": "7376726215178128673",
+   "handle_sent": "tiktok",
+   "first_pass_state": "RETRIEVABLE",
+   "state": "RETRIEVABLE",
+   "created_utc": "2024-06-04T19:05:12Z",
+   "age_y": 2.2049645093416483,
+   "band": "2-3y",
+   "confirmation": null
+  },
+  {
+   "http": 200,
+   "bytes": 1618,
+   "author_unique_id": "andyyahurd._",
+   "title_len": 65,
+   "body_code": null,
+   "vid": "7332960275127110954",
+   "handle_sent": "tiktok",
+   "first_pass_state": "RETRIEVABLE",
+   "state": "RETRIEVABLE",
+   "created_utc": "2024-02-07T20:31:00Z",
+   "age_y": 2.52786777194717,
+   "band": "2-3y",
+   "confirmation": null
+  },
+  {
+   "http": 200,
+   "bytes": 1255,
+   "author_unique_id": "Evony",
+   "title_len": 16,
+   "body_code": null,
+   "vid": "7347581705299053826",
+   "handle_sent": "tiktok",
+   "first_pass_state": "RETRIEVABLE",
+   "state": "RETRIEVABLE",
+   "created_utc": "2024-03-18T06:09:37Z",
+   "age_y": 2.419991475904378,
+   "band": "2-3y",
+   "confirmation": null
+  },
+  {
+   "http": 200,
+   "bytes": 1384,
+   "author_unique_id": "lauren.j734",
+   "title_len": 17,
+   "body_code": null,
+   "vid": "7376437810644946222",
+   "handle_sent": "tiktok",
+   "first_pass_state": "RETRIEVABLE",
+   "state": "RETRIEVABLE",
+   "created_utc": "2024-06-04T00:26:03Z",
+   "age_y": 2.2070923327502725,
+   "band": "2-3y",
+   "confirmation": null
+  },
+  {
+   "http": 200,
+   "bytes": 1309,
+   "author_unique_id": "tiktok",
+   "title_len": 27,
+   "body_code": null,
+   "vid": "7361448925972155679",
+   "handle_sent": "tiktok",
+   "first_pass_state": "RETRIEVABLE",
+   "state": "RETRIEVABLE",
+   "created_utc": "2024-04-24T15:01:31Z",
+   "age_y": 2.3176797031459935,
+   "band": "2-3y",
+   "confirmation": null
+  }
+ ]
+}

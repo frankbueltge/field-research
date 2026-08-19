@@ -34,6 +34,8 @@ import os
 import sys
 import time
 
+import run_lock
+
 REQUIRED_RUNS = 7
 DAILY_TOLERANCE = 0.10          # a "daily" interval is 1.00 +/- this, in days
 LEDGER = "ledger"
@@ -51,8 +53,35 @@ def _epoch(ts):
     return time.mktime(time.strptime(ts[:19], "%Y-%m-%dT%H:%M:%S")) - time.timezone
 
 
+def _live_reservation(ledger, partial_path):
+    """The reservation holding this partial, if a live process holds one for its UTC day.
+
+    Liveness is `run_lock`'s own test and inherits its stated limit: it asks whether a process
+    with that pid exists, not whether it is this probe. A recycled pid reads as live.
+    """
+    base = os.path.basename(partial_path)
+    try:
+        day = base.split("run-")[1][:10]
+    except (IndexError, ValueError):
+        return None
+    for lock_path in sorted(glob.glob(os.path.join(ledger, ".run-lock-*.json"))):
+        try:
+            held = json.load(open(lock_path))
+        except Exception:
+            continue
+        if held.get("utc_day") != day:
+            continue
+        if not run_lock._alive(held.get("pid")):
+            continue
+        return {"lock_file": lock_path, "pid": held.get("pid"),
+                "started_utc": held.get("started_utc"),
+                "out_path": held.get("out_path"),
+                "liveness_test": "run_lock._alive: a process with this pid exists"}
+    return None
+
+
 def scan(ledger=LEDGER):
-    completed, holes = [], []
+    completed, holes, in_flight = [], [], []
 
     for path in sorted(glob.glob(os.path.join(ledger, "run-*.json"))):
         if path.endswith(".partial"):
@@ -82,13 +111,29 @@ def scan(ledger=LEDGER):
         except Exception:
             p = {}
         obs = p.get("observations")
-        holes.append({
+        entry = {
             "file": path,
-            "why": "a partial with no completed run beside it - the day was started and not taken",
             "run_id_it_claims": p.get("run_id"),
             "n_observations": len(obs) if isinstance(obs, list) else p.get("requested"),
             "n_planned": p.get("planned"),
-        })
+        }
+        holder = _live_reservation(ledger, path)
+        if holder:
+            # SESSION 127. A partial being written RIGHT NOW by a live process is not an
+            # abandoned day, and calling it one puts a false sentence about this practice's own
+            # instrument into anything built while a run is in flight - which is exactly what
+            # happened when the short object was first built at 03:46Z on 2026-08-19. It is
+            # still NOT a measurement day: the rule is unchanged and a .partial is still never a
+            # run. It is reported apart from the holes because "started and abandoned" and
+            # "measuring at this moment" are different facts about the instrument.
+            entry["why"] = ("a partial being written by a live reservation - the day is IN "
+                            "FLIGHT, not abandoned, and is not counted as measured either way")
+            entry["reservation"] = holder
+            in_flight.append(entry)
+        else:
+            entry["why"] = ("a partial with no completed run beside it - the day was started "
+                            "and not taken")
+            holes.append(entry)
 
     completed.sort(key=lambda r: r["start_utc"] or "")
 
@@ -130,6 +175,13 @@ def scan(ledger=LEDGER):
         "extra_passes_same_day": extra_passes,
         "n_holes": len(holes),
         "holes": holes,
+        "n_in_flight": len(in_flight),
+        "in_flight": in_flight,
+        "in_flight_note": (
+            "a run being written by a live reservation at the moment of this scan. Never counted "
+            "as a measurement day - the rule is unchanged - and never reported as an abandoned "
+            "day either. A status file written during a run says so; one written after it does "
+            "not, and the two are not in conflict."),
         "intervals_days": intervals,
         "n_intervals_not_daily": len(non_daily),
         "intervals_not_daily": non_daily,
@@ -146,12 +198,17 @@ def scan(ledger=LEDGER):
 
 
 def main(argv):
-    out = argv[0] if argv else "window-status-126.json"
+    # NOT window-status-126.json: that file is session 126's landed record and this script must
+    # not overwrite a previous session's committed artifact when it is re-run.
+    out = argv[0] if argv else "window-status.json"
     st = scan()
     json.dump(st, open(out, "w"), indent=1)
     print(json.dumps({k: v for k, v in st.items()
                       if k not in ("measurement_days", "extra_passes_same_day", "holes",
                                    "intervals_days")}, indent=1))
+    for f in st["in_flight"]:
+        print("IN FLIGHT: " + f["file"] + " - pid " + str(f["reservation"]["pid"])
+              + " (" + str(f.get("n_observations")) + " of " + str(f.get("n_planned")) + ")")
     for h in st["holes"]:
         print("HOLE: " + h["file"] + " - " + h["why"]
               + (" (" + str(h.get("n_observations")) + " of " + str(h.get("n_planned")) + ")"

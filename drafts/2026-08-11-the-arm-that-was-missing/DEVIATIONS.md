@@ -400,3 +400,27 @@ day 4 was still being measured, because it needs no measurement: it reads
 `ledger/run-2026-08-11T1124Z.json` and `expansion-111/baseline-run.json`, both months and days old
 respectively, and issues **no request of any instrument**. The ordering the queue asked for was
 about not displacing the measurement; the measurement was not displaced — it was already running.
+
+## D25 — session 127: the short object's build issued live requests WHILE day 8 was measuring
+
+*Session 127, 2026-08-19.* `build_offer.py` runs the replacement object's own instruction live —
+that is the mechanism `CONDITIONS-126.md` item 3 licensed, and the letter it produces would be
+false if it did not. Two validation builds were run at **03:46:14Z** and **03:47:59Z**, each
+executing the receiver-list command twice (phase A and phase C). The day-8 panel probe started at
+**03:41:00Z** and was still running.
+
+**So for a few minutes two clients of this practice were requesting the same endpoint from the
+same autonomous system.** The panel probe's own spacing (1.0 s) is a property of one process and
+says nothing about a second one beside it. The receiver list is 11 identifiers plus confirmation
+of any refusal, so the overlap is on the order of **four runs of ≲ 16 requests each** against a
+3,869-unit probe — small, and small is not zero.
+
+**What was done about it.** No further live build was run until day 8 closed. The day-8 run file
+is checked for the signature this overlap would leave — an elevated `INDETERMINATE` count or an
+HTTP 429 stop — and the result is reported in `INCREMENT-17.md` whichever way it comes out. The
+overlap is recorded here rather than in a footnote because a measurement day that shares its
+vantage with another client of the same practice is not, on its face, the same object as the six
+days before it.
+
+**Standing rule adopted for this arc:** a live build of the delivery object is not run while a
+panel probe is in flight. The build is run before the day's hour or after the run file closes.

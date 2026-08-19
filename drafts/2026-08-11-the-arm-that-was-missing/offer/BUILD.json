@@ -1,0 +1,297 @@
+{
+ "covers": "every file in this directory except BUILD.json, which is written last and cannot hash itself. Nothing else may be absent from the table below; the build fails if anything is.",
+ "schema": "field-research/offer-build/1",
+ "built_utc": "2026-08-19T03:47:58Z",
+ "built_by": "build_offer.py, session 127",
+ "commands_declared": [
+  "python3 selftest_presence_check.py",
+  "python3 presence_check.py receiver-list.txt --baseline reference-baseline.json --label the-eleven -o your-eleven-today.json"
+ ],
+ "commands_found_in_letter": [
+  "python3 selftest_presence_check.py",
+  "python3 presence_check.py receiver-list.txt --baseline reference-baseline.json --label the-eleven -o your-eleven-today.json"
+ ],
+ "commands_match": true,
+ "runs": [
+  {
+   "cmd": "python3 selftest_presence_check.py",
+   "why": "phase A — produces the figures the letter quotes",
+   "returncode": 0,
+   "seconds": 0.1,
+   "stdout_tail": "selftest_presence_check — presence_check 0.3.2\n  128 assertion(s) passed\n  0 failed\n",
+   "stderr_tail": ""
+  },
+  {
+   "cmd": "python3 presence_check.py receiver-list.txt --baseline reference-baseline.json --label the-eleven -o your-eleven-today.json",
+   "why": "phase A — produces the figures the letter quotes",
+   "returncode": 0,
+   "seconds": 21.7,
+   "stdout_tail": "te\n  vantage mode: asn — autonomous system and country only; the lookup still discloses this machine's IP to the service\n  confirmation: 1 reading(s) x 5 pass(es) = 5 further request(s)\nthe-eleven: 11 identifiers, 21.5 s, vantage AS396982 (US)\n  7366758818765638917  RETRIEVABLE        http=200   2.28y\n  7368154048836406544  RETRIEVABLE        http=200   2.27y\n  7074367286571814190  RETRIEVABLE        http=200   4.44y\n  7117394257064840490  RETRIEVABLE        http=200   4.12y\n  7134492331117595950  NOT-RETRIEVABLE    http=400   3.99y conf=+\n  7164125023886691626  RETRIEVABLE        http=200   3.77y\n  7376726215178128673  RETRIEVABLE        http=200   2.20y\n  7332960275127110954  RETRIEVABLE        http=200   2.53y\n  7347581705299053826  RETRIEVABLE        http=200   2.42y\n  7376437810644946222  RETRIEVABLE        http=200   2.21y\n  7361448925972155679  RETRIEVABLE        http=200   2.32y\ncounts {'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}\nobserved public absence 0.0909 (1/11)\nreference table reference-baseline.json declares 2026-08-16T03:37:40Z — 3.0 day(s) before this measurement (declared, not verified by this tool)\nexpected for this age profile, AT THE REFERENCE TIME 0.1373 [0.1135, 0.1651] on n=11 — a yardstick from a different population, not a verdict\n  the same list aged at today instead: 0.1373 [0.1135, 0.1651] on n=11\n  frozen-reference drift +0.0000 pp over 3.0 day(s). This gap is arithmetic, NOT a measurement that retrievability changed.\nwritten your-eleven-today.json\n",
+   "stderr_tail": ""
+  },
+  {
+   "cmd": "python3 selftest_presence_check.py",
+   "why": "phase C — the letter's own instruction, as printed",
+   "returncode": 0,
+   "seconds": 0.1,
+   "stdout_tail": "selftest_presence_check — presence_check 0.3.2\n  128 assertion(s) passed\n  0 failed\n",
+   "stderr_tail": ""
+  },
+  {
+   "cmd": "python3 presence_check.py receiver-list.txt --baseline reference-baseline.json --label the-eleven -o your-eleven-today.json",
+   "why": "phase C — the letter's own instruction, as printed",
+   "returncode": 0,
+   "seconds": 21.7,
+   "stdout_tail": "te\n  vantage mode: asn — autonomous system and country only; the lookup still discloses this machine's IP to the service\n  confirmation: 1 reading(s) x 5 pass(es) = 5 further request(s)\nthe-eleven: 11 identifiers, 21.4 s, vantage AS396982 (US)\n  7366758818765638917  RETRIEVABLE        http=200   2.28y\n  7368154048836406544  RETRIEVABLE        http=200   2.27y\n  7074367286571814190  RETRIEVABLE        http=200   4.44y\n  7117394257064840490  RETRIEVABLE        http=200   4.12y\n  7134492331117595950  NOT-RETRIEVABLE    http=400   3.99y conf=+\n  7164125023886691626  RETRIEVABLE        http=200   3.77y\n  7376726215178128673  RETRIEVABLE        http=200   2.20y\n  7332960275127110954  RETRIEVABLE        http=200   2.53y\n  7347581705299053826  RETRIEVABLE        http=200   2.42y\n  7376437810644946222  RETRIEVABLE        http=200   2.21y\n  7361448925972155679  RETRIEVABLE        http=200   2.32y\ncounts {'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}\nobserved public absence 0.0909 (1/11)\nreference table reference-baseline.json declares 2026-08-16T03:37:40Z — 3.0 day(s) before this measurement (declared, not verified by this tool)\nexpected for this age profile, AT THE REFERENCE TIME 0.1373 [0.1135, 0.1651] on n=11 — a yardstick from a different population, not a verdict\n  the same list aged at today instead: 0.1373 [0.1135, 0.1651] on n=11\n  frozen-reference drift +0.0000 pp over 3.0 day(s). This gap is arithmetic, NOT a measurement that retrievability changed.\nwritten your-eleven-today.json\n",
+   "stderr_tail": ""
+  }
+ ],
+ "phase_c_note": "phase C executes the letter's own instructions as printed. The live command therefore ran twice; both results are kept. rerun-verification.json is phase C's, your-eleven-today.json is the one the letter quotes.",
+ "two_runs_agree_on_counts": true,
+ "two_runs_counts": {
+  "letter": {
+   "RETRIEVABLE": 10,
+   "NOT-RETRIEVABLE": 1
+  },
+  "verification": {
+   "RETRIEVABLE": 10,
+   "NOT-RETRIEVABLE": 1
+  }
+ },
+ "letter_words": 1158,
+ "figures_fetched": [
+  {
+   "file": "offer/measurement.json",
+   "field": "today.list.n_items",
+   "raw": 11,
+   "rendered": "11"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "today.counts.RETRIEVABLE",
+   "raw": 10,
+   "rendered": "10"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "today.counts",
+   "raw": {
+    "RETRIEVABLE": 10,
+    "NOT-RETRIEVABLE": 1
+   },
+   "rendered": "{'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "today.started_utc",
+   "raw": "2026-08-19T03:47:58Z",
+   "rendered": "2026-08-19T03:47:58Z"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "today.vantage.asn",
+   "raw": "AS396982",
+   "rendered": "AS396982"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "today.probe.endpoint",
+   "raw": "https://www.tiktok.com/oembed?url=",
+   "rendered": "https://www.tiktok.com/oembed?url="
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "today.confirmation.passes",
+   "raw": 5,
+   "rendered": "5"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "today.tool_version",
+   "raw": "0.3.2",
+   "rendered": "0.3.2"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "selftest.assertions_passed",
+   "raw": 128,
+   "rendered": "128"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "receiver_dashboard.totals.videos",
+   "raw": 11,
+   "rendered": "11"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "receiver_dashboard.totals.error",
+   "raw": 11,
+   "rendered": "11"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "receiver_dashboard.totals.available",
+   "raw": 0,
+   "rendered": "0"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "receiver_dashboard.generated",
+   "raw": "2026-01-14 21:53:41",
+   "rendered": "2026-01-14 21:53:41"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "receiver_dashboard.note",
+   "raw": "Note: Error are problems on our end, not TikTok.",
+   "rendered": "Note: Error are problems on our end, not TikTok."
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "receiver_dashboard.read_date",
+   "raw": "2026-08-16",
+   "rendered": "2026-08-16"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "confirmation_record.genuine_transitions_only.RETRIEVABLE->NOT-RETRIEVABLE.n",
+   "raw": 7,
+   "rendered": "7"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "confirmation_record.genuine_transitions_only.RETRIEVABLE->NOT-RETRIEVABLE.confirmed",
+   "raw": 5,
+   "rendered": "5"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "confirmation_record.genuine_transitions_only.NOT-RETRIEVABLE->RETRIEVABLE.n",
+   "raw": 4,
+   "rendered": "4"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "confirmation_record.genuine_transitions_only.NOT-RETRIEVABLE->RETRIEVABLE.confirmed",
+   "raw": 4,
+   "rendered": "4"
+  },
+  {
+   "file": "offer/series-status.json",
+   "field": "n_measurement_days",
+   "raw": 7,
+   "rendered": "7"
+  },
+  {
+   "file": "offer/series-status.json",
+   "field": "n_holes",
+   "raw": 2,
+   "rendered": "2"
+  },
+  {
+   "file": "offer/series-status.json",
+   "field": "consecutive_daily",
+   "raw": false,
+   "rendered": "False"
+  },
+  {
+   "file": "offer/series-status.json",
+   "field": "measurement_days.0.start_utc",
+   "raw": "2026-08-11T11:24:06Z",
+   "rendered": "2026-08-11T11:24:06Z"
+  },
+  {
+   "file": "offer/series-status.json",
+   "field": "measurement_days.-1.start_utc",
+   "raw": "2026-08-18T03:41:00Z",
+   "rendered": "2026-08-18T03:41:00Z"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "series.calendar_days_spanned",
+   "raw": 8,
+   "rendered": "8"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "population_caveat.panel_construction_bracket_days",
+   "raw": 9.5353,
+   "rendered": "9.5353"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "population_caveat.reference_population_n",
+   "raw": 3580,
+   "rendered": "3580"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "population_caveat.reference_day_utc",
+   "raw": "2026-08-16T03:37:40Z",
+   "rendered": "2026-08-16T03:37:40Z"
+  }
+ ],
+ "files": [
+  {
+   "file": "LETTER.md",
+   "sha256": "0c778b3a565457c61e48598dbf33643520b277420bd454f8b6b6d92d420db8ee",
+   "bytes": 7195
+  },
+  {
+   "file": "drift-122.json",
+   "sha256": "5f5ef5f9fbc638110b89a1b87e064830a0d105e84d7a8e9d9f568a0a0eb700a2",
+   "bytes": 15424
+  },
+  {
+   "file": "ledger.py",
+   "sha256": "05554b297c502b63e753639786a5706ead40c61ae8afaed411b19a3b8f58ff8c",
+   "bytes": 9849
+  },
+  {
+   "file": "measurement.json",
+   "sha256": "d9518aedae6d467d8382efb782b714af01f1d76b60e989aaf4c572d2cd05bb4a",
+   "bytes": 14495
+  },
+  {
+   "file": "presence_check.py",
+   "sha256": "8a50344051f2921ffe6e5e2815d1efd08cadd72b327f7f226d13ce09517a7db6",
+   "bytes": 53104
+  },
+  {
+   "file": "receiver-list.txt",
+   "sha256": "c70537718a76b37f199b882505417fdcd338594619dbb9a101bcb7b78f364f1c",
+   "bytes": 941
+  },
+  {
+   "file": "reference-baseline.json",
+   "sha256": "aac2fe0170b4d1b4b832b4ed52ea253b78eab3550aa49c202e134977dbff690e",
+   "bytes": 5040
+  },
+  {
+   "file": "rerun-verification.json",
+   "sha256": "c935abda1f84c588f7f47868ebfbd534094fcbba4e6a420b56c319f4404528fc",
+   "bytes": 10994
+  },
+  {
+   "file": "run_lock.py",
+   "sha256": "73f4ae47b18baa6c9b1b934e68980d43d27d6d68baa55903330e1d082f842e67",
+   "bytes": 15867
+  },
+  {
+   "file": "selftest_presence_check.py",
+   "sha256": "0452b9f4f8179d0b1250fffe45e73d117e6988ea77fbc25f048969003c0dd23c",
+   "bytes": 26176
+  },
+  {
+   "file": "series-status.json",
+   "sha256": "dd2c62fa3aa4fa98061c2a26a5382620bf417a39fc1578ef6d0231aa1bced4d9",
+   "bytes": 3464
+  },
+  {
+   "file": "your-eleven-today.json",
+   "sha256": "b874ecc1ae024a7337ae0d891356ff9339a77913a5f0843f9a978eeab457672e",
+   "bytes": 10996
+  }
+ ]
+}
