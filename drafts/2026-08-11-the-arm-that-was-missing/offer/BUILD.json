@@ -1,7 +1,7 @@
 {
  "covers": "every file in this directory except BUILD.json, which is written last and cannot hash itself. Nothing else may be absent from the table below; the build fails if anything is.",
  "schema": "field-research/offer-build/1",
- "built_utc": "2026-08-19T03:47:58Z",
+ "built_utc": "2026-08-19T05:27:33Z",
  "built_by": "build_offer.py, session 127",
  "commands_declared": [
   "python3 selftest_presence_check.py",
@@ -25,8 +25,8 @@
    "cmd": "python3 presence_check.py receiver-list.txt --baseline reference-baseline.json --label the-eleven -o your-eleven-today.json",
    "why": "phase A — produces the figures the letter quotes",
    "returncode": 0,
-   "seconds": 21.7,
-   "stdout_tail": "te\n  vantage mode: asn — autonomous system and country only; the lookup still discloses this machine's IP to the service\n  confirmation: 1 reading(s) x 5 pass(es) = 5 further request(s)\nthe-eleven: 11 identifiers, 21.5 s, vantage AS396982 (US)\n  7366758818765638917  RETRIEVABLE        http=200   2.28y\n  7368154048836406544  RETRIEVABLE        http=200   2.27y\n  7074367286571814190  RETRIEVABLE        http=200   4.44y\n  7117394257064840490  RETRIEVABLE        http=200   4.12y\n  7134492331117595950  NOT-RETRIEVABLE    http=400   3.99y conf=+\n  7164125023886691626  RETRIEVABLE        http=200   3.77y\n  7376726215178128673  RETRIEVABLE        http=200   2.20y\n  7332960275127110954  RETRIEVABLE        http=200   2.53y\n  7347581705299053826  RETRIEVABLE        http=200   2.42y\n  7376437810644946222  RETRIEVABLE        http=200   2.21y\n  7361448925972155679  RETRIEVABLE        http=200   2.32y\ncounts {'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}\nobserved public absence 0.0909 (1/11)\nreference table reference-baseline.json declares 2026-08-16T03:37:40Z — 3.0 day(s) before this measurement (declared, not verified by this tool)\nexpected for this age profile, AT THE REFERENCE TIME 0.1373 [0.1135, 0.1651] on n=11 — a yardstick from a different population, not a verdict\n  the same list aged at today instead: 0.1373 [0.1135, 0.1651] on n=11\n  frozen-reference drift +0.0000 pp over 3.0 day(s). This gap is arithmetic, NOT a measurement that retrievability changed.\nwritten your-eleven-today.json\n",
+   "seconds": 22.2,
+   "stdout_tail": "te\n  vantage mode: asn — autonomous system and country only; the lookup still discloses this machine's IP to the service\n  confirmation: 1 reading(s) x 5 pass(es) = 5 further request(s)\nthe-eleven: 11 identifiers, 21.5 s, vantage AS396982 (US)\n  7366758818765638917  RETRIEVABLE        http=200   2.28y\n  7368154048836406544  RETRIEVABLE        http=200   2.27y\n  7074367286571814190  RETRIEVABLE        http=200   4.44y\n  7117394257064840490  RETRIEVABLE        http=200   4.12y\n  7134492331117595950  NOT-RETRIEVABLE    http=400   3.99y conf=+\n  7164125023886691626  RETRIEVABLE        http=200   3.77y\n  7376726215178128673  RETRIEVABLE        http=200   2.21y\n  7332960275127110954  RETRIEVABLE        http=200   2.53y\n  7347581705299053826  RETRIEVABLE        http=200   2.42y\n  7376437810644946222  RETRIEVABLE        http=200   2.21y\n  7361448925972155679  RETRIEVABLE        http=200   2.32y\ncounts {'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}\nobserved public absence 0.0909 (1/11)\nreference table reference-baseline.json declares 2026-08-16T03:37:40Z — 3.1 day(s) before this measurement (declared, not verified by this tool)\nexpected for this age profile, AT THE REFERENCE TIME 0.1373 [0.1135, 0.1651] on n=11 — a yardstick from a different population, not a verdict\n  the same list aged at today instead: 0.1373 [0.1135, 0.1651] on n=11\n  frozen-reference drift +0.0000 pp over 3.1 day(s). This gap is arithmetic, NOT a measurement that retrievability changed.\nwritten your-eleven-today.json\n",
    "stderr_tail": ""
   },
   {
@@ -41,11 +41,21 @@
    "cmd": "python3 presence_check.py receiver-list.txt --baseline reference-baseline.json --label the-eleven -o your-eleven-today.json",
    "why": "phase C — the letter's own instruction, as printed",
    "returncode": 0,
-   "seconds": 21.7,
-   "stdout_tail": "te\n  vantage mode: asn — autonomous system and country only; the lookup still discloses this machine's IP to the service\n  confirmation: 1 reading(s) x 5 pass(es) = 5 further request(s)\nthe-eleven: 11 identifiers, 21.4 s, vantage AS396982 (US)\n  7366758818765638917  RETRIEVABLE        http=200   2.28y\n  7368154048836406544  RETRIEVABLE        http=200   2.27y\n  7074367286571814190  RETRIEVABLE        http=200   4.44y\n  7117394257064840490  RETRIEVABLE        http=200   4.12y\n  7134492331117595950  NOT-RETRIEVABLE    http=400   3.99y conf=+\n  7164125023886691626  RETRIEVABLE        http=200   3.77y\n  7376726215178128673  RETRIEVABLE        http=200   2.20y\n  7332960275127110954  RETRIEVABLE        http=200   2.53y\n  7347581705299053826  RETRIEVABLE        http=200   2.42y\n  7376437810644946222  RETRIEVABLE        http=200   2.21y\n  7361448925972155679  RETRIEVABLE        http=200   2.32y\ncounts {'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}\nobserved public absence 0.0909 (1/11)\nreference table reference-baseline.json declares 2026-08-16T03:37:40Z — 3.0 day(s) before this measurement (declared, not verified by this tool)\nexpected for this age profile, AT THE REFERENCE TIME 0.1373 [0.1135, 0.1651] on n=11 — a yardstick from a different population, not a verdict\n  the same list aged at today instead: 0.1373 [0.1135, 0.1651] on n=11\n  frozen-reference drift +0.0000 pp over 3.0 day(s). This gap is arithmetic, NOT a measurement that retrievability changed.\nwritten your-eleven-today.json\n",
+   "seconds": 21.6,
+   "stdout_tail": "te\n  vantage mode: asn — autonomous system and country only; the lookup still discloses this machine's IP to the service\n  confirmation: 1 reading(s) x 5 pass(es) = 5 further request(s)\nthe-eleven: 11 identifiers, 21.4 s, vantage AS396982 (US)\n  7366758818765638917  RETRIEVABLE        http=200   2.28y\n  7368154048836406544  RETRIEVABLE        http=200   2.27y\n  7074367286571814190  RETRIEVABLE        http=200   4.44y\n  7117394257064840490  RETRIEVABLE        http=200   4.12y\n  7134492331117595950  NOT-RETRIEVABLE    http=400   3.99y conf=+\n  7164125023886691626  RETRIEVABLE        http=200   3.77y\n  7376726215178128673  RETRIEVABLE        http=200   2.21y\n  7332960275127110954  RETRIEVABLE        http=200   2.53y\n  7347581705299053826  RETRIEVABLE        http=200   2.42y\n  7376437810644946222  RETRIEVABLE        http=200   2.21y\n  7361448925972155679  RETRIEVABLE        http=200   2.32y\ncounts {'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}\nobserved public absence 0.0909 (1/11)\nreference table reference-baseline.json declares 2026-08-16T03:37:40Z — 3.1 day(s) before this measurement (declared, not verified by this tool)\nexpected for this age profile, AT THE REFERENCE TIME 0.1373 [0.1135, 0.1651] on n=11 — a yardstick from a different population, not a verdict\n  the same list aged at today instead: 0.1373 [0.1135, 0.1651] on n=11\n  frozen-reference drift +0.0000 pp over 3.1 day(s). This gap is arithmetic, NOT a measurement that retrievability changed.\nwritten your-eleven-today.json\n",
    "stderr_tail": ""
+  },
+  {
+   "cmd": "python3 selftest_presence_check.py",
+   "why": "phase D — the object copied elsewhere, to check that it carries what it says it carries",
+   "returncode": 0,
+   "seconds": 0.1,
+   "stdout_tail": "selftest_presence_check — presence_check 0.3.2\n  128 assertion(s) passed\n  0 failed\n",
+   "stderr_tail": "",
+   "cwd": "a temporary copy of the object, outside this repository"
   }
  ],
+ "phase_d_note": "the offline command was also run from a copy of the object made outside this repository, to check the letter's claim that everything needed is in the directory. The live command is not re-run there: it already runs twice.",
  "phase_c_note": "phase C executes the letter's own instructions as printed. The live command therefore ran twice; both results are kept. rerun-verification.json is phase C's, your-eleven-today.json is the one the letter quotes.",
  "two_runs_agree_on_counts": true,
  "two_runs_counts": {
@@ -58,7 +68,7 @@
    "NOT-RETRIEVABLE": 1
   }
  },
- "letter_words": 1158,
+ "letter_words": 1710,
  "figures_fetched": [
   {
    "file": "offer/measurement.json",
@@ -84,8 +94,8 @@
   {
    "file": "offer/measurement.json",
    "field": "today.started_utc",
-   "raw": "2026-08-19T03:47:58Z",
-   "rendered": "2026-08-19T03:47:58Z"
+   "raw": "2026-08-19T05:27:34Z",
+   "rendered": "2026-08-19T05:27:34Z"
   },
   {
    "file": "offer/measurement.json",
@@ -116,6 +126,44 @@
    "field": "selftest.assertions_passed",
    "raw": 128,
    "rendered": "128"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "today.n_unconfirmed_absent",
+   "raw": 0,
+   "rendered": "0"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "prior_reading_of_the_same_list.read_utc",
+   "raw": "2026-08-12T18:35:26Z",
+   "rendered": "2026-08-12T18:35:26Z"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "prior_reading_of_the_same_list.counts_then.RETRIEVABLE",
+   "raw": 10,
+   "rendered": "10"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "prior_reading_of_the_same_list.n_shared_identifiers",
+   "raw": 11,
+   "rendered": "11"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "prior_reading_of_the_same_list.n_changed_state",
+   "raw": 0,
+   "rendered": "0"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "prior_reading_of_the_same_list.absent_on_both_readings",
+   "raw": [
+    "7134492331117595950"
+   ],
+   "rendered": "['7134492331117595950']"
   },
   {
    "file": "offer/measurement.json",
@@ -150,20 +198,44 @@
   {
    "file": "offer/measurement.json",
    "field": "receiver_dashboard.read_date",
+   "raw": "2026-08-19",
+   "rendered": "2026-08-19"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "receiver_dashboard.prior_reading.read_date",
    "raw": "2026-08-16",
    "rendered": "2026-08-16"
   },
   {
    "file": "offer/measurement.json",
+   "field": "receiver_dashboard.unchanged_since_prior_reading",
+   "raw": true,
+   "rendered": "True"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "receiver_dashboard.saved_bytes_sha256",
+   "raw": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb",
+   "rendered": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "receiver_dashboard.declared_generation_age_days",
+   "raw": 216.3,
+   "rendered": "216.3"
+  },
+  {
+   "file": "offer/measurement.json",
    "field": "confirmation_record.genuine_transitions_only.RETRIEVABLE->NOT-RETRIEVABLE.n",
-   "raw": 7,
-   "rendered": "7"
+   "raw": 8,
+   "rendered": "8"
   },
   {
    "file": "offer/measurement.json",
    "field": "confirmation_record.genuine_transitions_only.RETRIEVABLE->NOT-RETRIEVABLE.confirmed",
-   "raw": 5,
-   "rendered": "5"
+   "raw": 6,
+   "rendered": "6"
   },
   {
    "file": "offer/measurement.json",
@@ -178,16 +250,34 @@
    "rendered": "4"
   },
   {
+   "file": "offer/measurement.json",
+   "field": "confirmation_record.n_artefact_echoes",
+   "raw": 2,
+   "rendered": "2"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "confirmation_record.all_readings.NOT-RETRIEVABLE->RETRIEVABLE.n",
+   "raw": 6,
+   "rendered": "6"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "confirmation_record.all_readings.NOT-RETRIEVABLE->RETRIEVABLE.confirmed",
+   "raw": 6,
+   "rendered": "6"
+  },
+  {
    "file": "offer/series-status.json",
    "field": "n_measurement_days",
-   "raw": 7,
-   "rendered": "7"
+   "raw": 8,
+   "rendered": "8"
   },
   {
    "file": "offer/series-status.json",
    "field": "n_holes",
-   "raw": 2,
-   "rendered": "2"
+   "raw": 1,
+   "rendered": "1"
   },
   {
    "file": "offer/series-status.json",
@@ -204,14 +294,38 @@
   {
    "file": "offer/series-status.json",
    "field": "measurement_days.-1.start_utc",
-   "raw": "2026-08-18T03:41:00Z",
-   "rendered": "2026-08-18T03:41:00Z"
+   "raw": "2026-08-19T03:41:00Z",
+   "rendered": "2026-08-19T03:41:00Z"
   },
   {
    "file": "offer/measurement.json",
    "field": "series.calendar_days_spanned",
-   "raw": 8,
-   "rendered": "8"
+   "raw": 9,
+   "rendered": "9"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "neighbour_check.register_count",
+   "raw": 1131,
+   "rendered": "1131"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "neighbour_check.register_growth_since",
+   "raw": 15,
+   "rendered": "15"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "neighbour_check.prior_search_date",
+   "raw": "2026-08-15",
+   "rendered": "2026-08-15"
+  },
+  {
+   "file": "offer/measurement.json",
+   "field": "population_caveat.reference_population_what_it_is",
+   "raw": "videos cited in public across 37 language editions of one encyclopedia (article and non-article namespaces) and in the public comments and stories of one technology forum. The count was published as 21 in versions 0.1-0.3 and was corrected at the first gauntlet (V3/E4) and re-derived independently at session 123.",
+   "rendered": "videos cited in public across 37 language editions of one encyclopedia (article and non-article namespaces) and in the public comments and stories of one technology forum"
   },
   {
    "file": "offer/measurement.json",
@@ -235,8 +349,8 @@
  "files": [
   {
    "file": "LETTER.md",
-   "sha256": "0c778b3a565457c61e48598dbf33643520b277420bd454f8b6b6d92d420db8ee",
-   "bytes": 7195
+   "sha256": "882b072847bc4d9af480c8b0e85d54d78d5d58178e73d8a03b02b6f95c6bffe7",
+   "bytes": 10428
   },
   {
    "file": "drift-122.json",
@@ -250,8 +364,8 @@
   },
   {
    "file": "measurement.json",
-   "sha256": "d9518aedae6d467d8382efb782b714af01f1d76b60e989aaf4c572d2cd05bb4a",
-   "bytes": 14495
+   "sha256": "3d472838d9c34df28096b143b6a2324946494f5e2f1c109d7eb6d83638613998",
+   "bytes": 16400
   },
   {
    "file": "presence_check.py",
@@ -270,8 +384,8 @@
   },
   {
    "file": "rerun-verification.json",
-   "sha256": "c935abda1f84c588f7f47868ebfbd534094fcbba4e6a420b56c319f4404528fc",
-   "bytes": 10994
+   "sha256": "12db44bbf8b869d62bc24dcbb1db42d4c9ad102e45c7c9ae94893d15659f7909",
+   "bytes": 10991
   },
   {
    "file": "run_lock.py",
@@ -285,13 +399,13 @@
   },
   {
    "file": "series-status.json",
-   "sha256": "dd2c62fa3aa4fa98061c2a26a5382620bf417a39fc1578ef6d0231aa1bced4d9",
-   "bytes": 3464
+   "sha256": "9f0355a7d3b64afc461342c82cf6ada55ec649305a0ada76a52070812153f88d",
+   "bytes": 3784
   },
   {
    "file": "your-eleven-today.json",
-   "sha256": "b874ecc1ae024a7337ae0d891356ff9339a77913a5f0843f9a978eeab457672e",
-   "bytes": 10996
+   "sha256": "8fc8e35a401a39535321946b18524fa58f77e0d761db3c0e9117b4d88713222e",
+   "bytes": 10993
   }
  ]
 }

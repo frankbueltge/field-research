@@ -8,7 +8,8 @@
    "ledger/transition-confirm-2026-08-14.json",
    "ledger/transition-confirm-2026-08-15.json",
    "ledger/transition-confirm-2026-08-16.json",
-   "ledger/transition-confirm-2026-08-18.json"
+   "ledger/transition-confirm-2026-08-18.json",
+   "ledger/transition-confirm-2026-08-19.json"
   ],
   "corrections": "ledger/corrections.json",
   "corrections_sha256": "357cb2b332faa44fe605fc03882e3be5ba8699daa93fdc54e6128937a4a12ae6"
@@ -22,8 +23,8 @@
    "refuted": 0
   },
   "RETRIEVABLE->NOT-RETRIEVABLE": {
-   "n": 7,
-   "confirmed": 5,
+   "n": 8,
+   "confirmed": 6,
    "refuted": 2
   }
  },
@@ -34,8 +35,8 @@
    "refuted": 0
   },
   "RETRIEVABLE->NOT-RETRIEVABLE": {
-   "n": 7,
-   "confirmed": 5,
+   "n": 8,
+   "confirmed": 6,
    "refuted": 2
   }
  },
@@ -275,6 +276,25 @@
    "generated_utc": "2026-08-18T05:30:23Z",
    "vid": "7479116692124142869",
    "handle": "shuzo__3120",
+   "direction": "RETRIEVABLE->NOT-RETRIEVABLE",
+   "passes": [
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-19.json",
+   "sidecar_sha256": "bfbba411a084caaf15d9db4e2f265bf43f2fb6b354b1ba9684c33ac3e46a82ad",
+   "generated_utc": "2026-08-19T05:27:18Z",
+   "vid": "7637169134198983956",
+   "handle": "nlf.founder",
    "direction": "RETRIEVABLE->NOT-RETRIEVABLE",
    "passes": [
     "NOT-RETRIEVABLE",

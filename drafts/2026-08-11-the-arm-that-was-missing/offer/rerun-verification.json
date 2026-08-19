@@ -8,15 +8,15 @@
   "n_items": 11,
   "refused_lines": []
  },
- "started_utc": "2026-08-19T03:48:20Z",
- "finished_utc": "2026-08-19T03:48:42Z",
+ "started_utc": "2026-08-19T05:27:56Z",
+ "finished_utc": "2026-08-19T05:28:17Z",
  "seconds": 21.4,
  "vantage": {
   "mode": "asn",
   "asn": "AS396982",
   "country": "US",
   "source": "https://ipinfo.io/json",
-  "fetched_utc": "2026-08-19T03:48:20Z",
+  "fetched_utc": "2026-08-19T05:27:56Z",
   "note": "only the autonomous system and country are kept. The lookup itself disclosed this machine's IP address to the service named in `source`; that cannot be undone by discarding the answer, and --vantage none avoids the call entirely."
  },
  "probe": {
@@ -70,7 +70,7 @@
   }
  },
  "frozen_reference_drift": {
-  "days_between_the_two_clocks": 3.007,
+  "days_between_the_two_clocks": 3.077,
   "expected_with_the_list_aged_at_the_reference_time": 0.13727970793277344,
   "expected_at_the_reference_time_lo": 0.11351942623997299,
   "expected_at_the_reference_time_hi": 0.16507647988916138,
@@ -98,7 +98,7 @@
  "baseline_currency": {
   "declared_t_ref_utc": "2026-08-16T03:37:40Z",
   "status": "declared by the baseline file; NOT verified by this tool",
-  "age_days_at_measurement": 3.007,
+  "age_days_at_measurement": 3.077,
   "ages_computed_at_utc": "2026-08-16T03:37:40Z",
   "declared_minus_computed_days": 0.0,
   "clock_check": "AGREE \u2014 the table's declared reference time and the time its ages were computed at are the same"
@@ -108,7 +108,7 @@
  "observations": [
   {
    "http": 200,
-   "bytes": 2219,
+   "bytes": 2221,
    "author_unique_id": "camilapudim",
    "title_len": 332,
    "body_code": null,
@@ -117,7 +117,7 @@
    "first_pass_state": "RETRIEVABLE",
    "state": "RETRIEVABLE",
    "created_utc": "2024-05-08T22:26:37Z",
-   "age_y": 2.2785035300529826,
+   "age_y": 2.278692898065759,
    "band": "2-3y",
    "confirmation": null
   },
@@ -132,7 +132,7 @@
    "first_pass_state": "RETRIEVABLE",
    "state": "RETRIEVABLE",
    "created_utc": "2024-05-12T16:40:49Z",
-   "age_y": 2.2682095913504194,
+   "age_y": 2.2683989593631964,
    "band": "2-3y",
    "confirmation": null
   },
@@ -147,7 +147,7 @@
    "first_pass_state": "RETRIEVABLE",
    "state": "RETRIEVABLE",
    "created_utc": "2022-03-12T23:58:08Z",
-   "age_y": 4.435755951022892,
+   "age_y": 4.435945319035668,
    "band": "4-5y",
    "confirmation": null
   },
@@ -162,7 +162,7 @@
    "first_pass_state": "RETRIEVABLE",
    "state": "RETRIEVABLE",
    "created_utc": "2022-07-06T22:44:46Z",
-   "age_y": 4.118304750678125,
+   "age_y": 4.118494118690902,
    "band": "4-5y",
    "confirmation": null
   },
@@ -176,7 +176,7 @@
    "first_pass_state": "NOT-RETRIEVABLE",
    "state": "NOT-RETRIEVABLE",
    "created_utc": "2022-08-22T00:34:01Z",
-   "age_y": 3.9921558990544272,
+   "age_y": 3.992345267067204,
    "band": "3-4y",
    "confirmation": {
     "passes": 5,
@@ -197,7 +197,7 @@
   },
   {
    "http": 200,
-   "bytes": 1564,
+   "bytes": 1566,
    "author_unique_id": "taylorswift",
    "title_len": 122,
    "body_code": null,
@@ -206,7 +206,7 @@
    "first_pass_state": "RETRIEVABLE",
    "state": "RETRIEVABLE",
    "created_utc": "2022-11-09T21:04:00Z",
-   "age_y": 3.773527137678404,
+   "age_y": 3.773716505691181,
    "band": "3-4y",
    "confirmation": null
   },
@@ -221,13 +221,13 @@
    "first_pass_state": "RETRIEVABLE",
    "state": "RETRIEVABLE",
    "created_utc": "2024-06-04T19:05:12Z",
-   "age_y": 2.2049645093416483,
+   "age_y": 2.205153877354425,
    "band": "2-3y",
    "confirmation": null
   },
   {
    "http": 200,
-   "bytes": 1618,
+   "bytes": 1620,
    "author_unique_id": "andyyahurd._",
    "title_len": 65,
    "body_code": null,
@@ -236,13 +236,13 @@
    "first_pass_state": "RETRIEVABLE",
    "state": "RETRIEVABLE",
    "created_utc": "2024-02-07T20:31:00Z",
-   "age_y": 2.52786777194717,
+   "age_y": 2.5280571399599463,
    "band": "2-3y",
    "confirmation": null
   },
   {
    "http": 200,
-   "bytes": 1255,
+   "bytes": 1257,
    "author_unique_id": "Evony",
    "title_len": 16,
    "body_code": null,
@@ -251,13 +251,13 @@
    "first_pass_state": "RETRIEVABLE",
    "state": "RETRIEVABLE",
    "created_utc": "2024-03-18T06:09:37Z",
-   "age_y": 2.419991475904378,
+   "age_y": 2.4201808439171546,
    "band": "2-3y",
    "confirmation": null
   },
   {
    "http": 200,
-   "bytes": 1384,
+   "bytes": 1388,
    "author_unique_id": "lauren.j734",
    "title_len": 17,
    "body_code": null,
@@ -266,7 +266,7 @@
    "first_pass_state": "RETRIEVABLE",
    "state": "RETRIEVABLE",
    "created_utc": "2024-06-04T00:26:03Z",
-   "age_y": 2.2070923327502725,
+   "age_y": 2.207281700763049,
    "band": "2-3y",
    "confirmation": null
   },
@@ -281,7 +281,7 @@
    "first_pass_state": "RETRIEVABLE",
    "state": "RETRIEVABLE",
    "created_utc": "2024-04-24T15:01:31Z",
-   "age_y": 2.3176797031459935,
+   "age_y": 2.31786907115877,
    "band": "2-3y",
    "confirmation": null
   }
