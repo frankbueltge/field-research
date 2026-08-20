@@ -581,15 +581,31 @@ def render(fx, out, F, F2, C, S, R, hist, dash_hashes):
     A("")
     A("| file | what it is |")
     A("|---|---|")
-    for name in sorted(os.listdir(out)):
+    # The table is rendered BEFORE LETTER.md and BUILD.json exist on disk, so listing the
+    # directory here would print an inventory missing two of its own entries - the class of
+    # defect the seventh gauntlet died on. The two files the build is about to write are named
+    # explicitly, and phase F re-reads this table out of the FINISHED letter and checks it
+    # against the finished directory.
+    expected = sorted(set(os.listdir(out)) | {"LETTER.md", "BUILD.json"})
+    for name in expected:
         if name not in DESCRIPTIONS:
             raise FigureMissing("%s is in the object and has no entry in DESCRIPTIONS; the "
                                 "inventory would be false as printed." % name)
         A("| `%s` | %s |" % (name, DESCRIPTIONS[name]))
-    missing = sorted(set(DESCRIPTIONS) - set(os.listdir(out)) - {"LETTER.md", "BUILD.json"})
+    missing = sorted(set(DESCRIPTIONS) - set(expected))
     if missing:
         raise FigureMissing("DESCRIPTIONS names files that are not in the object: %s" % missing)
     return _rewrap("\n".join(t))
+
+
+def inventory_rows(text):
+    """The file names the finished letter's inventory table actually claims."""
+    names = []
+    for line in text.split("\n"):
+        m = re.match(r"^\|\s*`([^`]+)`\s*\|", line)
+        if m:
+            names.append(m.group(1))
+    return sorted(names)
 
 
 def main(argv=None):
@@ -745,6 +761,24 @@ def main(argv=None):
     with open(os.path.join(out, "BUILD.json"), "w", encoding="utf-8") as f:
         json.dump(build, f, ensure_ascii=False, indent=1)
         f.write("\n")
+    # --- phase F: the inventory, checked against the FINISHED object --------------------------
+    # BUILD.json was written above so that the directory is complete; this check reads the real
+    # membership, and BUILD.json is then rewritten in place to carry the check's own result. The
+    # second write changes contents, never membership, so what is checked is what ships.
+    letter_text = open(os.path.join(out, "LETTER.md"), encoding="utf-8").read()
+    claimed = inventory_rows(letter_text)
+    present = sorted(os.listdir(out))
+    if claimed != present:
+        raise SystemExit(
+            "BUILD FAILED: the letter's inventory table does not describe this directory.\n"
+            "  in the table and not on disk: %s\n  on disk and not in the table: %s"
+            % (sorted(set(claimed) - set(present)), sorted(set(present) - set(claimed))))
+    build["log"].append({"check": "the letter's inventory table equals the finished directory",
+                         "n_files": len(present), "ok": True})
+    with open(os.path.join(out, "BUILD.json"), "w", encoding="utf-8") as f:
+        json.dump(build, f, ensure_ascii=False, indent=1)
+        f.write("\n")
+
     print("built %s: %d files, %d prose words (ceiling %d), %d commands run %d times"
           % (a.out, len(os.listdir(out)), n_words, WORD_CEILING, len(CMDS),
              len([r for r in log if "cmd" in r])))
