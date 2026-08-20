@@ -33,6 +33,12 @@ USAGE
     python3 extract_dashboard.py receiver-dashboard-2026-08-19.html -o receiver-series-2026-08-19.json
     python3 extract_dashboard.py --selftest receiver-dashboard-2026-08-19.html
 """
+import sys
+
+# Same reason as presence_check.py: this script is run from inside an object whose file list is
+# part of what that object claims. Importing anything must not add __pycache__ to it.
+sys.dont_write_bytecode = True
+
 import argparse
 import copy
 import datetime
@@ -41,7 +47,8 @@ import html.parser
 import json
 import os
 import re
-import sys
+import shutil
+import tempfile
 
 PLOT_CALL = "Plotly.newPlot("
 
@@ -352,9 +359,13 @@ def selftest(path):
     raw = open(path, encoding="utf-8").read()
     first = raw.find('<h3>Video ID:')
     mutated = raw[:first] + raw[first:].replace("Video ID:", "Vidayo ID:", 1)
-    tmp = path + ".selftest-mutated.html"
-    open(tmp, "w", encoding="utf-8").write(mutated)
+    # In a TEMPORARY DIRECTORY, never beside the file being read. This script ships inside an
+    # object whose file list is part of what it claims; a selftest that writes into that directory
+    # - even for a moment, even with a `finally` - is erratum E23 with a different name.
+    tmpdir = tempfile.mkdtemp(prefix="extract-selftest-")
+    tmp = os.path.join(tmpdir, "mutated.html")
     try:
+        open(tmp, "w", encoding="utf-8").write(mutated)
         m = extract(tmp)
         check("control: a renamed identifier heading is reported, not absorbed",
               m["counts"]["problems"] == 1
@@ -362,7 +373,7 @@ def selftest(path):
               "problems=%d videos=%d" % (m["counts"]["problems"],
                                          m["counts"]["videos_extracted"]))
     finally:
-        os.unlink(tmp)
+        shutil.rmtree(tmpdir, ignore_errors=True)
 
     # Control 2: an unmapped y value must be reported, never mapped to a nearby label.
     v0 = copy.deepcopy(res["videos"][0]["charts"][0])

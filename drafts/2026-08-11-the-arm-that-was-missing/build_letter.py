@@ -68,6 +68,7 @@ TOOLDIR = os.path.join(HERE, "tool")
 # The dashboard, as read TODAY. Its bytes are also compared against the two earlier reads, so the
 # letter's claim that the page has not changed is a comparison and not an impression.
 DASH = os.path.join(HERE, "receiver-dashboard-2026-08-20.html")
+DASH_FETCH = os.path.join(HERE, "receiver-dashboard-2026-08-20-fetch.json")
 DASH_PRIOR = [os.path.join(HERE, "receiver-dashboard-2026-08-19.html"),
               os.path.join(HERE, "receiver-dashboard-2026-08-16.html")]
 DASH_URL = "https://playground.tiktok-audit.com/api-na/"
@@ -129,6 +130,8 @@ DESCRIPTIONS = {
     "drift-122.json": ("the measurement four of the suite's assertions check the instrument "
                        "against"),
     "receiver-list.txt": "the eleven identifiers, transcribed from your dashboard",
+    "receiver-dashboard-2026-08-20-fetch.json": ("when that page was read, with the HTTP status "
+                                                 "and the response headers kept"),
     "your-eleven-today.json": "this morning's live run, as the tool wrote it",
     "confirmation-record.json": "the re-request record, computed by this build from the sidecars",
     "series-status.json": "the daily series' length and holes, computed from its ledger",
@@ -379,7 +382,7 @@ def fenced_commands(text):
     return out
 
 
-def render(fx, out, F, C, S, R, hist, dash_hashes):
+def render(fx, out, F, F2, C, S, R, hist, dash_hashes):
     """The letter. Every number comes through fx(); none is typed."""
     n = fx(F, "record", "n_videos")
     flip = fx(F, "simultaneous_flip", "date")
@@ -397,6 +400,7 @@ def render(fx, out, F, C, S, R, hist, dash_hashes):
     outlier_av = fx(F, "the_one_that_is_not_like_the_others", "available_days")
     outlier_n = fx(F, "the_one_that_is_not_like_the_others", "n_recorded_days")
     err_final = fx(F, "record", "final_status_counts", "Error")
+    last_mod = fx(F2, "response_headers_kept", "last-modified")
 
     n_retr = fx(F, "against_our_own_reading", "n_retrievable_in_our_reading")
     read_utc = fx(C, "started_utc")
@@ -467,8 +471,9 @@ def render(fx, out, F, C, S, R, hist, dash_hashes):
     A("- **Every one of the %d series changes state for the last time on %s** - %d from *Not "
       "Available* and %d from *Available*, all to *%s*, and none of them changes again."
       % (n_flip, flip, from_na, from_av, went_to))
-    A("- **The record stops %d days later, on %s**, and has not moved in the %d days since."
-      % (gap_days, last_date, since))
+    A("- **The record stops %d days later, on %s**, and has not moved in the %d days since - "
+      "and your own server agrees: the page's `Last-Modified` header, read this morning, is "
+      "`%s`." % (gap_days, last_date, since, last_mod))
     A("- The tiles a visitor sees - %d with errors, none available - therefore describe **%s**, "
       "not today. Your page does print `Dashboard generated on: %s`, in its footer; the tiles "
       "themselves carry no date." % (err_final, last_date, last_date))
@@ -483,8 +488,7 @@ def render(fx, out, F, C, S, R, hist, dash_hashes):
       "of the thing doing the checking, and your own page already says so in its own words: "
       "*\"%s\"* **What is new here is the date.**" % DASH_NOTE)
     A("")
-    A("We have not seen the code behind it and are not saying what broke - only that whatever "
-      "it was, it happened on %s." % flip)
+    A("We are not saying what broke - only that whatever it was, it happened on %s." % flip)
     A("")
     A("## What we measured ourselves, this morning")
     A("")
@@ -609,6 +613,7 @@ def main(argv=None):
                         "run_lock.py", "drift-122.json")]
                       + [(DASH, os.path.basename(DASH)),
                          (LIST_SRC, "receiver-list.txt"),
+                         (DASH_FETCH, os.path.basename(DASH_FETCH)),
                          (os.path.join(HERE, "extract_dashboard.py"), "extract_dashboard.py"),
                          (os.path.join(HERE, "dashboard_findings.py"),
                           "dashboard_findings.py")]):
@@ -642,12 +647,23 @@ def main(argv=None):
         raise FigureMissing("the three saved reads of the dashboard are not byte-identical; the "
                             "letter's sentence about that is false and must be rewritten: %s"
                             % dash_hashes)
+    fetched = json.load(open(DASH_FETCH, encoding="utf-8"))
+    if fetched["sha256"] != sha256(DASH) or fetched["bytes"] != os.path.getsize(DASH):
+        raise FigureMissing("the fetch record does not describe the dashboard bytes this object "
+                            "ships; the letter's 'read this morning' would be unevidenced.")
+    if not fetched["response_headers_kept"].get("last-modified"):
+        raise FigureMissing("the fetch record has no Last-Modified header and the letter quotes "
+                            "one.")
+    log.append({"check": "the fetch record describes the shipped bytes",
+                "requested_utc": fetched["requested_utc"], "http": fetched["http_status"],
+                "last_modified": fetched["response_headers_kept"]["last-modified"], "ok": True})
     log.append({"check": "three dated reads of the dashboard are byte-identical",
                 "sha256": sorted(set(dash_hashes.values()))[0], "reads": sorted(dash_hashes),
                 "ok": True})
 
     fx = Fx()
-    text = render(fx, out, F, C, S, rec_path, hist, dash_hashes)
+    F2 = os.path.join(out, os.path.basename(DASH_FETCH))
+    text = render(fx, out, F, F2, C, S, rec_path, hist, dash_hashes)
 
     # --- phase E: the length condition, enforced ----------------------------------------------
     n_words = words(text)

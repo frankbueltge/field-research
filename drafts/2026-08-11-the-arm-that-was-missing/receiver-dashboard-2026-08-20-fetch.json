@@ -1,0 +1,21 @@
+{
+ "schema": "field-research/dashboard-fetch/1",
+ "url": "https://playground.tiktok-audit.com/api-na/",
+ "requested_utc": "2026-08-20T04:09:18Z",
+ "finished_utc": "2026-08-20T04:09:20Z",
+ "http_status": 200,
+ "bytes": 246014,
+ "sha256": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb",
+ "saved_to": "receiver-dashboard-2026-08-20.html",
+ "user_agent": "field-research/1.0 (independent research instrument; one request)",
+ "response_headers_kept": {
+  "last-modified": "Wed, 14 Jan 2026 20:53:43 GMT",
+  "etag": "\"69680257-3c0fe\"",
+  "date": "Thu, 20 Aug 2026 04:09:20 GMT",
+  "content-type": "text/html",
+  "content-length": "246014",
+  "server": "nginx/1.18.0 (Ubuntu)",
+  "cache-control": null
+ },
+ "what_this_is_not": "one read of one public page from one machine. It says nothing about what the page serves anyone else, or at any other moment."
+}
