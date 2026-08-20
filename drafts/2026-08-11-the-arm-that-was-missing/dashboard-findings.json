@@ -158,6 +158,15 @@
    }
   ]
  },
+ "extraction_checked_against_the_pages_own_aggregate_chart": {
+  "what_this_is": "the page draws its own aggregate trend chart from a separate payload. The eleven per-video series are summed here per day and compared with it, value by value. A disagreement would be a finding about the extraction or about the page; there are none.",
+  "n_dates_compared": 279,
+  "n_status_series_compared": 3,
+  "n_comparisons": 837,
+  "n_disagreements": 0,
+  "disagreements": [],
+  "verdict": "AGREES EXACTLY"
+ },
  "scoring_the_handed_over_breakdown": {
   "claim": {
    "quoted": "Nine of the eleven you have been recording as Not Available for most of nine months are publicly fetchable right now",

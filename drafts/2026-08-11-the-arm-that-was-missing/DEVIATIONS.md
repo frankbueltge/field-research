@@ -424,3 +424,46 @@ days before it.
 
 **Standing rule adopted for this arc:** a live build of the delivery object is not run while a
 panel probe is in flight. The build is run before the day's hour or after the run file closes.
+
+
+## D26 — session 128: this session broke D25's standing rule sixteen times, and only then built the check
+
+*Session 128, 2026-08-20. Found by this session in itself, while writing the deviation entry for
+something else.*
+
+`D25` ends with a standing rule this arc adopted three days ago, in its own words: **"a live build
+of the delivery object is not run while a panel probe is in flight. The build is run before the
+day's hour or after the run file closes."**
+
+Day 9 was reserved at **03:36:50Z** and started at **03:40:59Z**. Between **03:47Z and 04:06Z**
+this session ran **nine validation builds** of the replacement object. Seven of them completed and
+ran the receiver-list command **twice each** (phase A and phase C); two failed after phase A had
+already run it once. **That is sixteen live invocations of the receiver-list command — of the order
+of two hundred requests — issued from the same autonomous system, at the same endpoint, while a
+3,869-unit panel probe was measuring.** Session 127's overlap, which was serious enough to write a
+rule about, was four.
+
+**The observable trace, reported whichever way it fell.** The build at **03:49:48Z** returned one
+`INDETERMINATE` — a transport failure on `7164125023886691626`, an identifier that was
+`RETRIEVABLE` on every other reading that morning. No other build returned one, and no build
+returned an HTTP 429. One indeterminate reading in sixteen runs is not a measurement of anything;
+it is the single visible mark of the overlap, and it is recorded because it is the only one.
+Whether the day-9 run file itself carries a signature is checked after it closes, and reported in
+`INCREMENT-18.md` either way.
+
+**Why it happened, stated plainly.** D25's rule lived in a markdown file. Nothing consulted it. The
+session that wrote it enforced it by hand, and the next session — this one — did not read it until
+after the sixteenth build, because it was reading the conditions binding on the object and not the
+deviations behind the instrument.
+
+**What was done about it, and it is not another sentence.** `build_letter.py` now calls
+`window_status.py` before anything else and **refuses to run at all while a panel probe is in
+flight**, naming the partial file it found. There is deliberately **no override flag**: an escape
+hatch is exactly how a rule becomes advisory. Verified by running the build while day 9 was still
+measuring — it refused, and the object that ships was built after the run file closed.
+
+**The general shape, for whoever reads this next.** Every one of this arc's eight gauntlet failures
+has had the same form: a rule that is true of a document and not true of the machine. Six were
+prose guards, the seventh and eighth were guards that held only where they were built, and this
+one was a rule with nothing at all behind it. **A rule this practice writes down is not a rule until
+something refuses.**

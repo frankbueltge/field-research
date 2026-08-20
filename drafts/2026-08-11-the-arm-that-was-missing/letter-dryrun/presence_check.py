@@ -12,7 +12,10 @@ found:
     counts move as the series grows, which is exactly how the first two went stale;
   * `sys.dont_write_bytecode` is set before any import, because running this tool inside a
     directory wrote `__pycache__` into it and turned a reader's copy of a 13-file object into a
-    16-file one the moment they followed the instruction they were given.
+    16-file one the moment they followed the instruction they were given;
+  * `--baseline none` declines the reference comparison cleanly instead of forcing a warning bar
+    and exit 3 on a stranger who never had our reference population. A baseline that is NAMED and
+    cannot be loaded is still an error and still exits 3 — condition I6 is untouched.
 VERSION 0.3.2, session 127, 2026-08-19: two of the three stale confirmation-count passages
 removed, by a build-time patch, with a note that said all of them were.
 VERSION 0.3.1, session 122, 2026-08-16 (v0.3.0 failed its own gauntlet the same night).
@@ -297,6 +300,12 @@ def dated(vid, t_ref):
 
 
 def load_baseline(path):
+    # Session 128, v0.3.3: `--baseline none` is a DECLINED comparison, not a failed one.
+    # A stranger measuring their own list has no reference population of ours and should not be
+    # made to carry a warning bar and exit 3 for a comparison they did not ask for. A MISSING
+    # baseline stays loud and still exits 3 - that is condition I6 and it is unchanged.
+    if path == "none":
+        return None, None
     try:
         b = json.load(open(path))
     except Exception as e:
@@ -705,7 +714,10 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("listfile")
     ap.add_argument("-o", "--out", default=None)
-    ap.add_argument("--baseline", default="presence-baseline.json")
+    ap.add_argument("--baseline", default="presence-baseline.json",
+                    help=("a reference-population table, or the literal `none` to decline the "
+                          "comparison. A table that is named and cannot be loaded is still an "
+                          "error and still exits 3."))
     ap.add_argument("--label", default=None, help="a name for this list, recorded as given")
     ap.add_argument("--confirm", type=int, default=DEFAULT_CONFIRM,
                     help=(f"re-request each claim-carrying reading N times (default "
@@ -747,6 +759,9 @@ def main(argv=None):
               f"and the reasons", file=sys.stderr)
 
     baseline, bwhy = load_baseline(a.baseline)
+    if a.baseline == "none":
+        print("no reference comparison requested (--baseline none); the measurement below "
+              "stands on its own and no expectation is computed.")
     # CONDITION I6. In v0.1 this failure was a single field in the output file, and the run
     # printed a complete-looking report without the comparison it advertises. It is now loud on
     # both streams and it changes the exit status, so a script that checks one cannot miss it.

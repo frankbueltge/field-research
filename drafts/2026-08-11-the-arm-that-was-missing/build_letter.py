@@ -100,9 +100,8 @@ CMDS = [
     ["python3", "dashboard_findings.py", "receiver-series.json",
      "--reading", "your-eleven-today.json", "-o", "dashboard-findings.json"],
     ["python3", "selftest_presence_check.py"],
-    ["python3", "presence_check.py", "receiver-list.txt",
-     "--baseline", "reference-baseline.json", "--label", "the-eleven",
-     "-o", "your-eleven-today.json"],
+    ["python3", "presence_check.py", "receiver-list.txt", "--baseline", "none",
+     "--label", "the-eleven", "-o", "your-eleven-today.json"],
 ]
 # Everything except the live probe. Phase D runs these from a copy outside this repository, in a
 # clean environment, and asserts the directory's file set is unchanged afterwards.
@@ -130,8 +129,6 @@ DESCRIPTIONS = {
     "drift-122.json": ("the measurement four of the suite's assertions check the instrument "
                        "against"),
     "receiver-list.txt": "the eleven identifiers, transcribed from your dashboard",
-    "reference-baseline.json": ("the reference population the tool prints a comparison against; "
-                                "this letter quotes no figure from it"),
     "your-eleven-today.json": "this morning's live run, as the tool wrote it",
     "confirmation-record.json": "the re-request record, computed by this build from the sidecars",
     "series-status.json": "the daily series' length and holes, computed from its ledger",
@@ -198,6 +195,43 @@ def run(cmd, cwd, why, log, env=None):
         raise SystemExit("BUILD FAILED: %s exited %d\n%s\n%s"
                          % (" ".join(cmd), p.returncode, p.stdout[-2000:], p.stderr[-2000:]))
     return p
+
+
+def _refuse_if_a_probe_is_in_flight(log):
+    """Deviation D25's standing rule, made a mechanism instead of a sentence.
+
+    Session 127 wrote it down after its validation builds put a second client of this practice on
+    the same endpoint while the day's panel probe was running: *a live build of the delivery
+    object is not run while a panel probe is in flight.* Session 128 then broke that rule sixteen
+    times in ninety minutes (D26), because a rule in a markdown file does not stop a build.
+
+    So the build asks the ledger, not the builder, and there is deliberately NO override flag —
+    an escape hatch is how the rule became advisory in the first place. `window_status.py` already
+    distinguishes a partial being written by a live reservation from one that was abandoned, and
+    it is the file both the letter and this check read.
+    """
+    d = tempfile.mkdtemp(prefix="inflight-")
+    tmp = os.path.join(d, "scan.json")
+    try:
+        p = subprocess.run(["python3", "window_status.py", tmp], cwd=HERE,
+                           capture_output=True, text=True)
+        if p.returncode != 0 or not os.path.exists(tmp):
+            raise SystemExit("BUILD REFUSED: could not read the ledger's in-flight state, and a "
+                             "build that cannot tell whether a probe is running does not run "
+                             "the live command.\n" + p.stderr[-800:])
+        scan = json.load(open(tmp, encoding="utf-8"))
+    finally:
+        shutil.rmtree(d, ignore_errors=True)
+    if scan.get("n_in_flight"):
+        raise SystemExit(
+            "BUILD REFUSED: a panel probe is in flight (%s). This build runs the receiver-list "
+            "command live, twice, and would put a second client of this practice on the same "
+            "endpoint from the same vantage while the day is being measured. Deviation D25 set "
+            "that rule and D26 records this build breaking it sixteen times before it became a "
+            "check. There is no override; wait for the run file to close."
+            % ", ".join(f["file"] for f in scan.get("in_flight", [])))
+    log.append({"check": "no panel probe in flight (D25's rule, enforced by the ledger)",
+                "n_in_flight": 0, "ok": True})
 
 
 def _check_quote(log):
@@ -391,6 +425,8 @@ def render(fx, out, F, C, S, R, hist, dash_hashes):
     n_group = fx(F, "scoring_the_handed_over_breakdown", "n_videos_found")
     n_group_retr = fx(F, "scoring_the_handed_over_breakdown",
                       "n_retrievable_now_in_that_group")
+    n_cmp = fx(F, "extraction_checked_against_the_pages_own_aggregate_chart", "n_comparisons")
+    n_dis = fx(F, "extraction_checked_against_the_pages_own_aggregate_chart", "n_disagreements")
 
     ret_conf = fx(R, "genuine_transitions_only", "NOT-RETRIEVABLE->RETRIEVABLE", "confirmed")
     ret_n = fx(R, "genuine_transitions_only", "NOT-RETRIEVABLE->RETRIEVABLE", "n")
@@ -438,6 +474,10 @@ def render(fx, out, F, C, S, R, hist, dash_hashes):
       "themselves carry no date." % (err_final, last_date, last_date))
     A("- One of the %d, `%s`, had been recorded *Available* on %d of its %d days. The %s flip "
       "took that one too." % (n, outlier, outlier_av, outlier_n, flip))
+    A("")
+    A("**This is your record, not our reading of it**: the page draws its own summary chart "
+      "from a separate payload, and summing the %d timelines reproduces that chart "
+      "exactly - %d comparisons, %d disagreements." % (n, n_cmp, n_dis))
     A("")
     A("Independently checked videos do not all change state on one day. That is the signature "
       "of the thing doing the checking, and your own page already says so in its own words: "
@@ -503,10 +543,6 @@ def render(fx, out, F, C, S, R, hist, dash_hashes):
     A(cmd_block(3))
     A(cmd_block(4))
     A("")
-    A("The probe also prints a comparison against a reference population described in "
-      "`reference-baseline.json`. **This letter quotes no figure from it**, and neither should "
-      "you without reading what that population is.")
-    A("")
     A("Point the probe at your own list by replacing `receiver-list.txt` with one identifier "
       "per line. It sends no credential and keeps no identifier of yours - but **as printed it "
       "does disclose this machine's IP address** to a third-party lookup service, because "
@@ -563,6 +599,7 @@ def main(argv=None):
     log = []
     started = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
 
+    _refuse_if_a_probe_is_in_flight(log)
     _check_quote(log)
 
     # --- the object's files, copied, and the copies asserted byte-identical -------------------
@@ -572,7 +609,6 @@ def main(argv=None):
                         "run_lock.py", "drift-122.json")]
                       + [(DASH, os.path.basename(DASH)),
                          (LIST_SRC, "receiver-list.txt"),
-                         (BASELINE_SRC, "reference-baseline.json"),
                          (os.path.join(HERE, "extract_dashboard.py"), "extract_dashboard.py"),
                          (os.path.join(HERE, "dashboard_findings.py"),
                           "dashboard_findings.py")]):

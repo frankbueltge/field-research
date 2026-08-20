@@ -87,6 +87,47 @@ def main():
     read_date = datetime.date.fromisoformat(read_utc[:10])
     end = datetime.date.fromisoformat(last_dates[-1])
 
+    # --- the extraction, checked against the page's OWN aggregate chart --------------------
+    # The dashboard draws a second, independent chart summing the eleven per day. If the per-video
+    # extraction is right, it must reproduce that chart exactly - and if it does not, the
+    # disagreement is the finding, not the sum. 279 dates x 3 statuses, compared one at a time.
+    agg = {}
+    for chart in S["aggregate_charts"]:
+        for t in chart["traces"]:
+            if t.get("name"):
+                agg[t["name"]] = dict(zip(t["x"], t["y"]))
+    tally = {}
+    for v in S["videos"]:
+        c = v["charts"][0]
+        for x, st in zip([str(i)[:10] for i in c["x"]], c["states"]):
+            tally.setdefault(x, {})
+            tally[x][st] = tally[x].get(st, 0) + 1
+    dates_seen = set(tally)
+    for series in agg.values():
+        dates_seen |= set(series)
+    all_dates = sorted(dates_seen)
+    names = sorted(agg)
+    disagreements = []
+    for dt in all_dates:
+        for nm in names:
+            drawn = agg[nm].get(dt)
+            summed = tally.get(dt, {}).get(nm, 0)
+            if drawn != summed:
+                disagreements.append({"date": dt, "status": nm, "aggregate_chart": drawn,
+                                      "sum_of_per_video_series": summed})
+    cross_check = {
+        "what_this_is": ("the page draws its own aggregate trend chart from a separate payload. "
+                         "The eleven per-video series are summed here per day and compared with "
+                         "it, value by value. A disagreement would be a finding about the "
+                         "extraction or about the page; there are none."),
+        "n_dates_compared": len(all_dates),
+        "n_status_series_compared": len(names),
+        "n_comparisons": len(all_dates) * len(names),
+        "n_disagreements": len(disagreements),
+        "disagreements": disagreements[:20],
+        "verdict": "AGREES EXACTLY" if not disagreements else "DISAGREES",
+    }
+
     # --- the receiver's final states against this practice's reading of the same identifiers ---
     ours = {o["vid"]: o["state"] for o in R["observations"]}
     missing = sorted(set(p["video_id"] for p in per) - set(ours))
@@ -193,15 +234,19 @@ def main():
             "n_in_their_record": len(per),
             "cross": cross,
         },
+        "extraction_checked_against_the_pages_own_aggregate_chart": cross_check,
         "scoring_the_handed_over_breakdown": scoring,
         "per_video": per,
     }
     with open(a.out, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
         f.write("\n")
-    print("wrote %s: %d videos, flip=%s, record ends %s, %d days before our reading"
+    print("wrote %s: %d videos, flip=%s, record ends %s, %d days before our reading; "
+          "aggregate cross-check %s (%d comparisons, %d disagreements)"
           % (a.out, len(per), flip, last_dates[-1],
-             out["record"]["days_from_record_end_to_our_reading"]))
+             out["record"]["days_from_record_end_to_our_reading"],
+             cross_check["verdict"], cross_check["n_comparisons"],
+             cross_check["n_disagreements"]))
     return 0
 
 

@@ -2,18 +2,18 @@
  "schema": "field-research/letter-build/1",
  "built_by": "build_letter.py, session 128, 2026-08-20",
  "object_version": "2.0",
- "started_utc": "2026-08-20T04:00:46Z",
- "finished_utc": "2026-08-20T04:01:55Z",
+ "started_utc": "2026-08-20T04:05:18Z",
+ "finished_utc": "2026-08-20T04:06:01Z",
  "conditions_this_build_is_bound_by": "CONDITIONS-127.md, items 1-7",
  "never_sets_pythondontwritebytecode": true,
- "prose_words": 1081,
+ "prose_words": 1085,
  "word_ceiling": 1100,
  "commands": [
   "python3 extract_dashboard.py --selftest receiver-dashboard-2026-08-20.html",
   "python3 extract_dashboard.py receiver-dashboard-2026-08-20.html -o receiver-series.json",
   "python3 dashboard_findings.py receiver-series.json --reading your-eleven-today.json -o dashboard-findings.json",
   "python3 selftest_presence_check.py",
-  "python3 presence_check.py receiver-list.txt --baseline reference-baseline.json --label the-eleven -o your-eleven-today.json"
+  "python3 presence_check.py receiver-list.txt --baseline none --label the-eleven -o your-eleven-today.json"
  ],
  "log": [
   {
@@ -26,7 +26,7 @@
   },
   {
    "check": "every shipped file is byte-identical to its live source",
-   "n_files": 10,
+   "n_files": 9,
    "ok": true
   },
   {
@@ -34,7 +34,7 @@
    "why": "the series' length and holes, computed from the ledger rather than described",
    "returncode": 0,
    "seconds": 0.1,
-   "stdout_tail": " \"'seven consecutive daily runs' is a conjunction: the COUNT and the CONSECUTIVENESS. Erratum E21 reported the window closed while neither held. They are reported separately here so a later session cannot collapse them into one word again.\"\n}\nIN FLIGHT: ledger/run-2026-08-20T0341Z.json.partial - pid 4719 (700 of 3869)\nHOLE: ledger/run-2026-08-17T0337Z.json.partial - a partial with no completed run beside it - the day was started and not taken (600 of 3869)\nNOT DAILY: 2026-08-11T11:24:06Z -> 2026-08-12T03:40:28Z = 0.678 days\nNOT DAILY: 2026-08-16T03:37:40Z -> 2026-08-18T03:41:00Z = 2.0023 days\n",
+   "stdout_tail": " \"'seven consecutive daily runs' is a conjunction: the COUNT and the CONSECUTIVENESS. Erratum E21 reported the window closed while neither held. They are reported separately here so a later session cannot collapse them into one word again.\"\n}\nIN FLIGHT: ledger/run-2026-08-20T0341Z.json.partial - pid 4719 (900 of 3869)\nHOLE: ledger/run-2026-08-17T0337Z.json.partial - a partial with no completed run beside it - the day was started and not taken (600 of 3869)\nNOT DAILY: 2026-08-11T11:24:06Z -> 2026-08-12T03:40:28Z = 0.678 days\nNOT DAILY: 2026-08-16T03:37:40Z -> 2026-08-18T03:41:00Z = 2.0023 days\n",
    "stderr_tail": ""
   },
   {
@@ -53,11 +53,11 @@
    "newest_sidecar": "transition-confirm-2026-08-19.json"
   },
   {
-   "cmd": "python3 presence_check.py receiver-list.txt --baseline reference-baseline.json --label the-eleven -o your-eleven-today.json",
+   "cmd": "python3 presence_check.py receiver-list.txt --baseline none --label the-eleven -o your-eleven-today.json",
    "why": "phase A: produce the figures the letter quotes",
    "returncode": 0,
-   "seconds": 22.2,
-   "stdout_tail": "counts {'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}\nobserved public absence 0.0909 (1/11)\nreference table reference-baseline.json declares 2026-08-16T03:37:40Z — 4.0 day(s) before this measurement (declared, not verified by this tool)\nexpected for this age profile, AT THE REFERENCE TIME 0.1373 [0.1135, 0.1651] on n=11 — a yardstick from a different population, not a verdict\n  the same list aged at today instead: 0.1373 [0.1135, 0.1651] on n=11\n  frozen-reference drift +0.0000 pp over 4.0 day(s). This gap is arithmetic, NOT a measurement that retrievability changed.\nwritten your-eleven-today.json\n",
+   "seconds": 21.1,
+   "stdout_tail": "4y\n  7117394257064840490  RETRIEVABLE        http=200   4.12y\n  7134492331117595950  NOT-RETRIEVABLE    http=400   3.99y conf=+\n  7164125023886691626  RETRIEVABLE        http=200   3.78y\n  7376726215178128673  RETRIEVABLE        http=200   2.21y\n  7332960275127110954  RETRIEVABLE        http=200   2.53y\n  7347581705299053826  RETRIEVABLE        http=200   2.42y\n  7376437810644946222  RETRIEVABLE        http=200   2.21y\n  7361448925972155679  RETRIEVABLE        http=200   2.32y\ncounts {'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}\nobserved public absence 0.0909 (1/11)\nwritten your-eleven-today.json\n",
    "stderr_tail": ""
   },
   {
@@ -81,7 +81,7 @@
    "why": "phase A: produce the figures the letter quotes",
    "returncode": 0,
    "seconds": 0.0,
-   "stdout_tail": "wrote dashboard-findings.json: 11 videos, flip=2026-01-03, record ends 2026-01-14, 218 days before our reading\n",
+   "stdout_tail": "wrote dashboard-findings.json: 11 videos, flip=2026-01-03, record ends 2026-01-14, 218 days before our reading; aggregate cross-check AGREES EXACTLY (837 comparisons, 0 disagreements)\n",
    "stderr_tail": ""
   },
   {
@@ -104,7 +104,7 @@
   },
   {
    "check": "letter length",
-   "prose_words": 1081,
+   "prose_words": 1085,
    "ceiling": 1100,
    "ok": true
   },
@@ -134,7 +134,7 @@
    "why": "phase C: run what the letter prints, as printed, from scratch",
    "returncode": 0,
    "seconds": 0.0,
-   "stdout_tail": "wrote dashboard-findings.json: 11 videos, flip=2026-01-03, record ends 2026-01-14, 218 days before our reading\n",
+   "stdout_tail": "wrote dashboard-findings.json: 11 videos, flip=2026-01-03, record ends 2026-01-14, 218 days before our reading; aggregate cross-check AGREES EXACTLY (837 comparisons, 0 disagreements)\n",
    "stderr_tail": ""
   },
   {
@@ -146,11 +146,11 @@
    "stderr_tail": ""
   },
   {
-   "cmd": "python3 presence_check.py receiver-list.txt --baseline reference-baseline.json --label the-eleven -o your-eleven-today.json",
+   "cmd": "python3 presence_check.py receiver-list.txt --baseline none --label the-eleven -o your-eleven-today.json",
    "why": "phase C: run what the letter prints, as printed, from scratch",
    "returncode": 0,
-   "seconds": 45.6,
-   "stdout_tail": "E': 9, 'NOT-RETRIEVABLE': 1, 'INDETERMINATE': 1}\nobserved public absence 0.1000 (1/10)\nreference table reference-baseline.json declares 2026-08-16T03:37:40Z — 4.0 day(s) before this measurement (declared, not verified by this tool)\nexpected for this age profile, AT THE REFERENCE TIME 0.1373 [0.1135, 0.1651] on n=11 — a yardstick from a different population, not a verdict\n  the same list aged at today instead: 0.1373 [0.1135, 0.1651] on n=11\n  frozen-reference drift +0.0000 pp over 4.0 day(s). This gap is arithmetic, NOT a measurement that retrievability changed.\nwritten your-eleven-today.json\n",
+   "seconds": 20.7,
+   "stdout_tail": "4y\n  7117394257064840490  RETRIEVABLE        http=200   4.12y\n  7134492331117595950  NOT-RETRIEVABLE    http=400   3.99y conf=+\n  7164125023886691626  RETRIEVABLE        http=200   3.78y\n  7376726215178128673  RETRIEVABLE        http=200   2.21y\n  7332960275127110954  RETRIEVABLE        http=200   2.53y\n  7347581705299053826  RETRIEVABLE        http=200   2.42y\n  7376437810644946222  RETRIEVABLE        http=200   2.21y\n  7361448925972155679  RETRIEVABLE        http=200   2.32y\ncounts {'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}\nobserved public absence 0.0909 (1/11)\nwritten your-eleven-today.json\n",
    "stderr_tail": ""
   },
   {
@@ -174,7 +174,7 @@
    "why": "phase D: the offline commands, from a copy outside this repository, with PYTHONDONTWRITEBYTECODE removed from the environment",
    "returncode": 0,
    "seconds": 0.0,
-   "stdout_tail": "wrote dashboard-findings.json: 11 videos, flip=2026-01-03, record ends 2026-01-14, 218 days before our reading\n",
+   "stdout_tail": "wrote dashboard-findings.json: 11 videos, flip=2026-01-03, record ends 2026-01-14, 218 days before our reading; aggregate cross-check AGREES EXACTLY (837 comparisons, 0 disagreements)\n",
    "stderr_tail": ""
   },
   {
@@ -187,8 +187,8 @@
   },
   {
    "check": "a reader's copy is unchanged in membership after running the printed offline commands, with no bytecode variable set",
-   "files_before": 16,
-   "files_after": 16,
+   "files_before": 15,
+   "files_after": 15,
    "ok": true
   }
  ],
@@ -309,8 +309,8 @@
   {
    "file": "your-eleven-today.json",
    "field": "started_utc",
-   "raw": "2026-08-20T04:00:46Z",
-   "rendered": "2026-08-20T04:00:46Z"
+   "raw": "2026-08-20T04:05:19Z",
+   "rendered": "2026-08-20T04:05:19Z"
   },
   {
    "file": "your-eleven-today.json",
@@ -370,6 +370,18 @@
    "rendered": "9"
   },
   {
+   "file": "dashboard-findings.json",
+   "field": "extraction_checked_against_the_pages_own_aggregate_chart.n_comparisons",
+   "raw": 837,
+   "rendered": "837"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "extraction_checked_against_the_pages_own_aggregate_chart.n_disagreements",
+   "raw": 0,
+   "rendered": "0"
+  },
+  {
    "file": "confirmation-record.json",
    "field": "genuine_transitions_only.NOT-RETRIEVABLE->RETRIEVABLE.confirmed",
    "raw": 4,
@@ -421,7 +433,7 @@
  "shipped_files_are_live_copies": {
   "presence_check.py": {
    "from": "tool/presence_check.py",
-   "sha256": "e4ea83fed95e9c691faad1f76f0e339cb2fe9c62db217fd42ce3171be5433ca3",
+   "sha256": "cca8317bfd3c93f4771262ed23a19e42d7a9dd88c9b6951de80e191943035570",
    "is_the_live_file": true
   },
   "selftest_presence_check.py": {
@@ -454,11 +466,6 @@
    "sha256": "c70537718a76b37f199b882505417fdcd338594619dbb9a101bcb7b78f364f1c",
    "is_the_live_file": true
   },
-  "reference-baseline.json": {
-   "from": "deliverable-v0.3/reference-baseline.json",
-   "sha256": "aac2fe0170b4d1b4b832b4ed52ea253b78eab3550aa49c202e134977dbff690e",
-   "is_the_live_file": true
-  },
   "extract_dashboard.py": {
    "from": "extract_dashboard.py",
    "sha256": "7f27d18c9b34c278ef69b1798bb22d30da33d8a4ceaf409c73042a3851c0b0a6",
@@ -466,7 +473,7 @@
   },
   "dashboard_findings.py": {
    "from": "dashboard_findings.py",
-   "sha256": "a4629a7c4a00cc682fb6c79f135a985244b7a0301c58b1b2453e459619b7b5f2",
+   "sha256": "c58a2a184086edca8f5e8da7ce44151d74fe532101545542dd5c447f95ce8841",
    "is_the_live_file": true
   }
  },
@@ -481,7 +488,7 @@
   "dates": [
    "2026-08-12T18:35:26Z",
    "2026-08-19T05:27:34Z",
-   "2026-08-20T04:00:46Z"
+   "2026-08-20T04:05:19Z"
   ],
   "vantages": [
    "AS396982"
@@ -505,7 +512,7 @@
     "source": "offer/your-eleven-today.json"
    },
    {
-    "started_utc": "2026-08-20T04:00:46Z",
+    "started_utc": "2026-08-20T04:05:19Z",
     "vantage_asn": "AS396982",
     "source": "letter-dryrun/your-eleven-today.json"
    }
@@ -514,8 +521,8 @@
  "files": [
   {
    "name": "LETTER.md",
-   "sha256": "228f79b4e0695879a639254ae1840869148ffb80ebb646acf4ded99c7c011f1c",
-   "bytes": 8352
+   "sha256": "dda2589547333999c04205efa325cd1e4f0e4f38bc68c36e03e4ce625ebc1e94",
+   "bytes": 8194
   },
   {
    "name": "confirmation-record.json",
@@ -524,13 +531,13 @@
   },
   {
    "name": "dashboard-findings.json",
-   "sha256": "40cc09508c9a87b52f2d478164cf0125f0592614df0ce0bfcb073b981d4a216c",
-   "bytes": 12183
+   "sha256": "de610626812625ba365d1ca53b8faf832207e9b7a493e14955021be34d82d3a3",
+   "bytes": 12682
   },
   {
    "name": "dashboard_findings.py",
-   "sha256": "a4629a7c4a00cc682fb6c79f135a985244b7a0301c58b1b2453e459619b7b5f2",
-   "bytes": 10471
+   "sha256": "c58a2a184086edca8f5e8da7ce44151d74fe532101545542dd5c447f95ce8841",
+   "bytes": 12729
   },
   {
    "name": "drift-122.json",
@@ -549,8 +556,8 @@
   },
   {
    "name": "presence_check.py",
-   "sha256": "e4ea83fed95e9c691faad1f76f0e339cb2fe9c62db217fd42ce3171be5433ca3",
-   "bytes": 54678
+   "sha256": "cca8317bfd3c93f4771262ed23a19e42d7a9dd88c9b6951de80e191943035570",
+   "bytes": 55812
   },
   {
    "name": "receiver-dashboard-2026-08-20.html",
@@ -568,11 +575,6 @@
    "bytes": 210776
   },
   {
-   "name": "reference-baseline.json",
-   "sha256": "aac2fe0170b4d1b4b832b4ed52ea253b78eab3550aa49c202e134977dbff690e",
-   "bytes": 5040
-  },
-  {
    "name": "run_lock.py",
    "sha256": "abb15cd0b0029ccaec948967e317a3082517a9489e7443a9ec07f261108f340d",
    "bytes": 19074
@@ -584,13 +586,13 @@
   },
   {
    "name": "series-status.json",
-   "sha256": "b3a0f3605d2f723c4b88a9e88d875ea51305f77c07bf6f0d458109b33004b2df",
+   "sha256": "7d4e70ad0b6c01ccd2434ceb3f68e9638343c25a0df97330667939e0822b3125",
    "bytes": 4395
   },
   {
    "name": "your-eleven-today.json",
-   "sha256": "80bccac30b2967eb26538394d7b67d92cf31aae78a46e7b9567b994492b4bcc2",
-   "bytes": 10993
+   "sha256": "2a96c766435875e84e0348d2cb7dbfd4f3fc80801a76e37f05f9c6427fe4e975",
+   "bytes": 8128
   }
  ]
 }

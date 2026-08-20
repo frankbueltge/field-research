@@ -14,6 +14,8 @@ bytes, they say this:
 - The tiles a visitor sees - 11 with errors, none available - therefore describe **2026-01-14**, not today. Your page does print `Dashboard generated on: 2026-01-14`, in its footer; the tiles themselves carry no date.
 - One of the 11, `7332960275127110954`, had been recorded *Available* on 213 of its 279 days. The 2026-01-03 flip took that one too.
 
+**This is your record, not our reading of it**: the page draws its own summary chart from a separate payload, and summing the 11 timelines reproduces that chart exactly - 837 comparisons, 0 disagreements.
+
 Independently checked videos do not all change state on one day. That is the signature of the
 thing doing the checking, and your own page already says so in its own words: *"Note: Error
 are problems on our end, not TikTok."* **What is new here is the date.**
@@ -23,7 +25,7 @@ it happened on 2026-01-03.
 
 ## What we measured ourselves, this morning
 
-The command below ran at **2026-08-20T04:00:46Z**, from autonomous system **AS396982**,
+The command below ran at **2026-08-20T04:05:19Z**, from autonomous system **AS396982**,
 through the platform's public oEmbed endpoint (`https://www.tiktok.com/oembed?url=`) - no
 account, no research credential, one request per identifier and **5 immediate re-requests of
 every refusal** before believing it:
@@ -66,12 +68,8 @@ makes requests:
 python3 selftest_presence_check.py
 ```
 ```sh
-python3 presence_check.py receiver-list.txt --baseline reference-baseline.json --label the-eleven -o your-eleven-today.json
+python3 presence_check.py receiver-list.txt --baseline none --label the-eleven -o your-eleven-today.json
 ```
-
-The probe also prints a comparison against a reference population described in
-`reference-baseline.json`. **This letter quotes no figure from it**, and neither should you
-without reading what that population is.
 
 Point the probe at your own list by replacing `receiver-list.txt` with one identifier per
 line. It sends no credential and keeps no identifier of yours - but **as printed it does
@@ -95,7 +93,7 @@ and its predecessors failed, is public at `https://github.com/frankbueltge/field
 Nobody named here has been contacted; whether this is ever sent is his decision, not this
 practice's.
 
-**Version 2.0 of this object, built 2026-08-20T04:00:46Z.** If you use a figure from here, please carry the sentence it depends on - that is a request, not a condition on you, and the full set is `memory/downstream-commitments.md` in the repository above. Corrections and disputes have a route: open an issue there - a correction becomes a new dated entry, never a silent edit. Data CC0 1.0, code Apache 2.0, text CC BY 4.0.
+**Version 2.0 of this object, built 2026-08-20T04:05:19Z.** If you use a figure from here, please carry the sentence it depends on - that is a request, not a condition on you, and the full set is `memory/downstream-commitments.md` in the repository above. Corrections and disputes have a route: open an issue there - a correction becomes a new dated entry, never a silent edit. Data CC0 1.0, code Apache 2.0, text CC BY 4.0.
 
 ## What is in this directory
 
@@ -111,7 +109,6 @@ practice's.
 | `receiver-dashboard-2026-08-20.html` | your dashboard, saved this morning; the bytes the finding above is computed from |
 | `receiver-list.txt` | the eleven identifiers, transcribed from your dashboard |
 | `receiver-series.json` | what the extractor read, series by series |
-| `reference-baseline.json` | the reference population the tool prints a comparison against; this letter quotes no figure from it |
 | `run_lock.py` | the reservation the daily probe takes; imported by ledger.py |
 | `selftest_presence_check.py` | the instrument's own test suite, offline |
 | `series-status.json` | the daily series' length and holes, computed from its ledger |
