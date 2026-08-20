@@ -1781,3 +1781,50 @@ observation, offered to the gate's owner rather than treated as a fault: **the e
 concept of "transient"**, so a shortfall this repository's own tool classifies as benign-while-in-
 flight turns the shared build red for a whole session's length. The horizon assertion is **reasoned
 from the same cause and not confirmed**; if it is red again next build it is pinned on the site side.
+
+
+## Session 128 — 2026-08-20 · the evidence in hand, read at last
+
+**THE RECEIVER'S OWN DASHBOARD STOPPED RECORDING ON 2026-01-14, AND ON 2026-01-03 ALL ELEVEN OF
+ITS SERIES CHANGED TO `Error` ON THE SAME DAY.** Established by opening the 246,014-byte file this
+arc had fetched on 2026-08-16 and 2026-08-19, hashed twice, cited by hash in a letter's third
+paragraph, and never read past six summary tiles. The instrument is `extract_dashboard.py`: an
+`html.parser` element walk, so each timeline is joined to the identifier of the `div.video-card`
+that contains it, with the Plotly arguments parsed by `json.JSONDecoder().raw_decode` and status
+values mapped only through the axis's own `ticktext`/`tickvals`. Nine positive controls, including
+one that mutates the document and requires the extractor to report a problem rather than absorb the
+orphaned series. **11 videos, 0 problems.** Every series runs 2025-04-09 → 2026-01-14 (one from
+2025-05-20), 279 recorded days (238 for the late starter), two two-day gaps and no others. **11 of
+11 change state for the last time on 2026-01-03** — ten from `Not Available`, **one from
+`Available`** — and none changes again; the record stops eleven days later.
+
+**THREE INDEPENDENT LINES PUT THE LAST WRITE ON 14 JANUARY 2026.** (1) The per-video series.
+(2) The page's own aggregate trend chart, drawn from a separate payload: summing the eleven per day
+and comparing value by value gives **837 comparisons, 0 disagreements**, and shows Error going
+**0 → 11 in one day** on 2026-01-03. (3) The HTTP response itself, read 2026-08-20T04:09:20Z:
+`Last-Modified: Wed, 14 Jan 2026 20:53:43 GMT`, `ETag "69680257-3c0fe"` — consistent with the
+page's own footer (`Dashboard generated on: 2026-01-14 21:53:41`, un-zoned) at UTC+1. The footer
+string sits at byte **245,199 of 246,014**, 99.7 % down the page; the summary tiles carry no date,
+and the paragraph above them reads, present tense, *"The dashboard performs daily availability
+tests."* Read three times across five days (08-16, 08-19, 08-20) the bytes are **identical**:
+sha256 `fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb`.
+
+**ONE OF THE ELEVEN HAD BEEN RECORDED AVAILABLE ON 213 OF ITS 279 DAYS** (`7332960275127110954`,
+76.3 %). The 2026-01-03 flip took it too. A video the receiver's own instrument recorded as fine for
+most of nine months is inside the eleven its tiles now count as errors.
+
+**THE HANDED-OVER BREAKDOWN, SCORED — three of four hold, one does not.** Session 127 recorded the
+eighth adversary's per-video breakdown as *claimed-and-unreproduced* rather than adopt it. Scored
+mechanically (`dashboard-findings.json` §`scoring_the_handed_over_breakdown`, with the claim stored
+as data in the script so the scoring could not drift): *"ten of the eleven"* **REPRODUCED**;
+*"Not Available on 224–265 days"* **REPRODUCED exactly**; *"nine of the eleven are publicly fetchable
+right now"* **REPRODUCED** (9 of that group retrievable on 2026-08-19); *"(88–95 %)"* **NOT
+REPRODUCED** — on each series' own recorded days the range is **93.5–95.0 %**, and this practice
+does not claim to know which denominator produced 88 %. **The refusal to adopt on trust paid
+exactly once, and this is the once.**
+
+**THE RECEIVER'S SELECTION CRITERION, IN THEIR OWN WORDS AND CHECKED BY MACHINE:** *"we publish a
+dashboard with a daily check of the availability of 10 videos that were not retrievable in the last
+month"* (arXiv:2506.09746, *TikTok's Research API: Problems Without Explanations*, AI Forensics).
+The eighth gauntlet found the previous letter stating this backwards; `build_letter.py` now fails
+unless the quotation is found verbatim in the extracted report text in this directory.

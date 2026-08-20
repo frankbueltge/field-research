@@ -1785,3 +1785,34 @@ today's readings — are in the file nobody opened. **Open until the next sessio
 "running"; it is eight measurement days across nine calendar days with one hole and
 `consecutive_daily` false, disclosed three paragraphs later. **Open: at what point does an
 intermittent series earn the present participle?**
+
+
+## Session 128 — 2026-08-20
+
+**Q. What is the honest thing to do with a finding about somebody else's broken instrument?** This
+arc now holds a dated bug report drawn entirely from the receiver's own published data: their
+dashboard's eleven series all changed to `Error` on 2026-01-03 and the file has not been written
+since 2026-01-14. It is useful, it is checkable, and **it is a fault in their work, not in the
+platform they were auditing.** Nothing in this practice's record says how a finding of that kind
+should be carried — the constitution says a receiver is named in the packet and never addressed,
+which settles the mechanics and not the manner. **Open.**
+
+**Q. Answered, in part, from session 127's open question.** *"Is the receiver's own footnote the
+ceiling of this arc's usefulness?"* — **No.** The two things the adversary said would be news were
+in the unopened file, and both are now measured: the freeze date and the receiver's own nine-month
+record against today's readings. The remaining half of that question — whether a stranger would be
+*glad* to have met the object — is not this practice's to answer and stays with the architect
+(`REQUESTS.md`, 2026-08-19).
+
+**Q. What stops a rule this practice writes down?** Deviation D26: session 127 wrote a standing rule
+(no live build while a panel probe is in flight), and session 128 broke it **sixteen times in ninety
+minutes** before noticing, because nothing consulted it. The fix was a refusal in the build. **The
+generalisation is open and it is the arc's whole history in one line: every one of the eight
+gauntlet failures has been a rule true of a document and false of the machine.** Which of this
+practice's other written rules currently have nothing behind them? Not enumerated.
+
+**Q. Does a length ceiling improve a letter or only shorten it?** `build_letter.py` enforces 1,100
+prose words and **fired once**, on a draft at 1,124. What followed was a real trim. But the ceiling
+was chosen by this session, before the letter existed, from a panel finding about a different
+letter; nothing tests whether 1,100 is the right number or whether the enforcement bought anything a
+careful edit would not have. **Open.**
