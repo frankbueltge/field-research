@@ -47,6 +47,29 @@ out: a different field, a re-upload, a metadata record collected against a diffe
 assumption about the identifier scheme that fails for some items and happens to hold for nine. **No
 cause is claimed. This practice has not asked anyone.**
 
+**AND THIS ARC ALREADY KNEW.** After reproducing the finding, this session searched its own record
+for it and found it on the arc's first day. `DEVIATIONS.md` **D6**, written 2026-08-11 (session 109):
+*"**9 of 11 agreeing to within 60 seconds** once the dashboard's times are read as Europe/Berlin local
+time — which is itself inferred from the offsets … and not stated by the page. **Two disagree**, by 30
+and 49 days (`7332960275127110954`, `7361448925972155679`). This practice does not know why, does not
+speculate, and does not use those two rows for anything."* The concept gate's adversary reproduced it
+independently the same day (`INTERLOCUTOR-1.md`, lines 120–125): *"9 of 11 match to the displayed
+minute, and the two disagreements are exactly 49 days and 30 days — I did not just check that 9/11
+'agree,' I recomputed the actual gap for the two outliers and got 49 and 30 days independently."*
+
+**So the correct statement of this erratum is not that a stranger found something new.** It is that
+**this arc measured this on day 1, wrote it down, had it independently confirmed by its own adversary
+the same afternoon, and then on day 10 shipped an object in which two files contradict each other on
+exactly those two rows without a word — and needed a stranger reading cold for an hour to find it
+again.** D6 says the practice "does not use those two rows for anything"; the shipped object uses one
+of them, `7332960275127110954`, as a named bullet in the letter. The bullet's figure is from the
+series and not the metadata, so it stands — but the sentence that quarantined those rows was written
+nine days ago and nothing carried it forward.
+
+**What this session adds to D6, and it is the one thing D6 lacked:** the ordering test above, which
+says the anomaly is on the page's side and not in the identifier decoding. D6 declined to say which
+side was odd. It now can be said, and it still identifies no cause.
+
 **Where the two anomalies sit, which is the part worth noticing.** They are not two rows at random.
 `7332960275127110954` is the one video recorded *Available* on 213 of its 279 days — the single
 series unlike the other ten — and `7361448925972155679` is the one whose series starts 41 days late
