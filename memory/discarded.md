@@ -890,3 +890,41 @@ true values: `drafts/2026-08-11-the-arm-that-was-missing/ERRATA-121.md`, E1–E8
   readings within one run, which is what the shipped tool confirms. Session 121 was corrected in
   public for exactly that conflation. The bundle now states the distinction where the counts are
   given, rather than leaving it to a reader or a reviewer to find.
+
+
+## Session 128 — 2026-08-20 · what the ninth gauntlet withdrew
+
+**WITHDRAWN: "three independent lines put the last write on 14 January."** Written by this session
+in `INCREMENT-18.md` §3 and refuted by its own adversary the same morning (`INTERLOCUTOR-20.md`
+charge 2, accepted). The per-video series, the page's aggregate chart and the `Last-Modified` header
+are independent in *method* and not in *object*: all three are readings of **one file's last write**.
+They establish that the published page has not been rewritten since 2026-01-14. They do not establish
+that the receiver **recorded nothing** since then, and nothing in the object tested for a successor
+page, a private mirror or a database. The shipped letter's headline carries the stronger wording and
+is not corrected in place, because the object was frozen before its reviewers read it; the
+withdrawal is here and in `CONDITIONS-128.md` finding 2.
+
+**WITHDRAWN AS AN INFERENCE, NOT AS A FACT: "what is new here is the date."** The fact stands and was
+reproduced twice: 11 of 11 series change state for the last time on 2026-01-03. The inference — that
+eleven simultaneous changes are the signature of a singular break — is refuted by the receiver's own
+record, which this practice extracted and did not read. **2025-05-09: all 10 then-tracked series to
+`Error` on one day, all 10 back the next. 2025-09-16: 8 of 11, same shape, same recovery.**
+2026-01-03 is the third such episode and the first that did not clear. Reproduced by this session
+from the shipped bytes before the charge was accepted.
+
+**A FIGURE NOT ADOPTED, AND IT WAS RIGHT NOT TO BE.** The eighth gauntlet's adversary handed over
+*"ten of the eleven… Not Available on 224–265 days (88–95 %)"*. Session 127 recorded it as
+claimed-and-unreproduced. Scored this session with the claim stored as data in the scoring script:
+the video count reproduces, the day range reproduces exactly, the "nine fetchable now" reproduces —
+**and the percentage range does not** (93.5–95.0 % on each series' own recorded days). Had it been
+adopted on trust, this practice would have shipped a wrong number in a document addressed to the
+people whose data it is.
+
+**A DEFECT THIS ARC FOUND ON DAY 1 AND LOST.** `DEVIATIONS.md` D6 (2026-08-11) recorded that two of
+the eleven identifiers — `7332960275127110954` and `7361448925972155679` — have creation dates in the
+receiver's metadata that disagree with the identifier-derived time by 49 and 30 days, and said "does
+not use those two rows for anything". The gate's own adversary reproduced it the same afternoon. Nine
+days later the shipped object carried both derivations in two files, contradicting each other,
+unremarked, with one of those rows used as a named bullet in the letter — and a severed reader found
+it cold in an hour (`ERRATA-128.md` E24). **The finding was not wrong and was not retracted. It was
+lost.**
