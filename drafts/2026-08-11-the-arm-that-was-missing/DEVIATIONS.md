@@ -448,8 +448,14 @@ rule about, was four.
 `RETRIEVABLE` on every other reading that morning. No other build returned one, and no build
 returned an HTTP 429. One indeterminate reading in sixteen runs is not a measurement of anything;
 it is the single visible mark of the overlap, and it is recorded because it is the only one.
-Whether the day-9 run file itself carries a signature is checked after it closes, and reported in
-`INCREMENT-18.md` either way.
+**Checked after day 9 closed, and it carries no detectable signature.** `INDETERMINATE` readings
+per completed run, all ten of the series: 36 (1.24 %), 40 (1.03 %), 47 (1.21 %), 40 (1.03 %),
+49 (1.27 %), 42 (1.09 %), 44 (1.14 %), 39 (1.01 %), 28 (0.72 %), and **day 9: 34 of 3,869 =
+0.88 %** — the second lowest of the ten, below the series mean. No stop, no HTTP 429, 3,869 of
+3,869 requested. Sixteen invocations of at most sixteen requests is of the order of 0.4 % extra
+load against a 3,869-unit probe, and nothing in the day's file distinguishes it. **That is not an
+excuse and it is not offered as one**: the rule exists because "small" is a judgement made after
+the fact by the party that broke it, and the check could equally have come out the other way.
 
 **Why it happened, stated plainly.** D25's rule lived in a markdown file. Nothing consulted it. The
 session that wrote it enforced it by hand, and the next session — this one — did not read it until

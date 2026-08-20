@@ -1,0 +1,615 @@
+{
+ "schema": "field-research/frozen-reference-drift/1",
+ "written_by": "drift_122.py, session 122, 2026-08-16",
+ "what_this_is": "a measurement of the two halves of the frozen-reference defect (V1, V2 of the session-120 gauntlet). Nothing here is a repair; a repair is a separate dated act. No archived run file is read for anything but its recorded observations, and none is written.",
+ "panel_cutoff": "2026-08-14T23:59:59Z",
+ "days_in_panel": [
+  "baseline",
+  "2026-08-12",
+  "2026-08-13",
+  "2026-08-14"
+ ],
+ "reference_times": {
+  "ages_were_actually_computed_against": "2026-08-11T11:24:06Z",
+  "table_declares": "2026-08-14T03:43:47Z",
+  "gap_days": 2.6803,
+  "source_of_the_error": "build_deliverable.py line 179 uses days[0] for the ages and line 364 uses the newest day for t_ref_utc"
+ },
+ "shipped_table_reproduced_from_the_run_files": true,
+ "half_one_bookkeeping": {
+  "pooled_as_shipped": {
+   "n": 3583,
+   "absent": 435,
+   "absent_rate": 0.12140664247837007,
+   "absent_ci": [
+    0.11111615847150093,
+    0.1325080632439928
+   ]
+  },
+  "pooled_at_the_declared_reference_time": {
+   "n": 3583,
+   "absent": 435,
+   "absent_rate": 0.12140664247837007,
+   "absent_ci": [
+    0.11111615847150093,
+    0.1325080632439928
+   ]
+  },
+  "bands_that_move": [
+   {
+    "band": "0-1y",
+    "as_shipped": {
+     "n": 500,
+     "absent": 24,
+     "absent_rate": 0.048,
+     "absent_ci": [
+      0.03246520693839224,
+      0.0704271968420612
+     ]
+    },
+    "at_the_declared_reference_time": {
+     "n": 499,
+     "absent": 24,
+     "absent_rate": 0.04809619238476954,
+     "absent_ci": [
+      0.032530692557359527,
+      0.07056633318092015
+     ]
+    },
+    "delta_n": -1,
+    "delta_absent": 0,
+    "delta_rate": 9.619238476953756e-05
+   },
+   {
+    "band": "1-2y",
+    "as_shipped": {
+     "n": 771,
+     "absent": 59,
+     "absent_rate": 0.07652399481193256,
+     "absent_ci": [
+      0.059788365324094844,
+      0.09745858814643296
+     ]
+    },
+    "at_the_declared_reference_time": {
+     "n": 766,
+     "absent": 59,
+     "absent_rate": 0.07702349869451697,
+     "absent_ci": [
+      0.06018172027774203,
+      0.09808652758832952
+     ]
+    },
+    "delta_n": -5,
+    "delta_absent": 0,
+    "delta_rate": 0.0004995038825844067
+   },
+   {
+    "band": "2-3y",
+    "as_shipped": {
+     "n": 795,
+     "absent": 96,
+     "absent_rate": 0.12075471698113208,
+     "absent_ci": [
+      0.09990929845594719,
+      0.1452475554599349
+     ]
+    },
+    "at_the_declared_reference_time": {
+     "n": 793,
+     "absent": 96,
+     "absent_rate": 0.1210592686002522,
+     "absent_ci": [
+      0.10016395371817163,
+      0.14560822173049856
+     ]
+    },
+    "delta_n": -2,
+    "delta_absent": 0,
+    "delta_rate": 0.0003045516191201303
+   },
+   {
+    "band": "3-4y",
+    "as_shipped": {
+     "n": 670,
+     "absent": 109,
+     "absent_rate": 0.1626865671641791,
+     "absent_ci": [
+      0.13667633797942755,
+      0.1925427326461073
+     ]
+    },
+    "at_the_declared_reference_time": {
+     "n": 673,
+     "absent": 109,
+     "absent_rate": 0.16196136701337296,
+     "absent_ci": [
+      0.13605862530768872,
+      0.19170123031409195
+     ]
+    },
+    "delta_n": 3,
+    "delta_absent": 0,
+    "delta_rate": -0.0007252001508061268
+   },
+   {
+    "band": "4-5y",
+    "as_shipped": {
+     "n": 456,
+     "absent": 74,
+     "absent_rate": 0.16228070175438597,
+     "absent_ci": [
+      0.13128432464075374,
+      0.19891960958325722
+     ]
+    },
+    "at_the_declared_reference_time": {
+     "n": 457,
+     "absent": 74,
+     "absent_rate": 0.16192560175054704,
+     "absent_ci": [
+      0.13099240298439896,
+      0.19849500730735187
+     ]
+    },
+    "delta_n": 1,
+    "delta_absent": 0,
+    "delta_rate": -0.00035510000383892626
+   },
+   {
+    "band": "5y+",
+    "as_shipped": {
+     "n": 384,
+     "absent": 68,
+     "absent_rate": 0.17708333333333334,
+     "absent_ci": [
+      0.14215572233647705,
+      0.2184077389475786
+     ]
+    },
+    "at_the_declared_reference_time": {
+     "n": 388,
+     "absent": 68,
+     "absent_rate": 0.17525773195876287,
+     "absent_ci": [
+      0.14066343685399524,
+      0.21621931680542494
+     ]
+    },
+    "delta_n": 4,
+    "delta_absent": 0,
+    "delta_rate": -0.001825601374570468
+   }
+  ],
+  "n_units_changing_band": 24,
+  "units_changing_band": [
+   {
+    "vid": "6995836797225913606",
+    "from": "4-5y",
+    "to": "5y+",
+    "age_y_as_shipped": 4.99411,
+    "age_y_at_declared": 5.00145
+   },
+   {
+    "vid": "6996021504639126790",
+    "from": "4-5y",
+    "to": "5y+",
+    "age_y_as_shipped": 4.99275,
+    "age_y_at_declared": 5.00009
+   },
+   {
+    "vid": "7130659288850189614",
+    "from": "3-4y",
+    "to": "4-5y",
+    "age_y_as_shipped": 3.9994,
+    "age_y_at_declared": 4.00674
+   },
+   {
+    "vid": "7131434117614292229",
+    "from": "3-4y",
+    "to": "4-5y",
+    "age_y_as_shipped": 3.99368,
+    "age_y_at_declared": 4.00102
+   },
+   {
+    "vid": "7131515608729931009",
+    "from": "3-4y",
+    "to": "4-5y",
+    "age_y_as_shipped": 3.99308,
+    "age_y_at_declared": 4.00042
+   },
+   {
+    "vid": "7266216756283215109",
+    "from": "2-3y",
+    "to": "3-4y",
+    "age_y_as_shipped": 2.99926,
+    "age_y_at_declared": 3.0066
+   },
+   {
+    "vid": "7266367987555339525",
+    "from": "2-3y",
+    "to": "3-4y",
+    "age_y_as_shipped": 2.99815,
+    "age_y_at_declared": 3.00548
+   },
+   {
+    "vid": "7266462570666560810",
+    "from": "2-3y",
+    "to": "3-4y",
+    "age_y_as_shipped": 2.99745,
+    "age_y_at_declared": 3.00479
+   },
+   {
+    "vid": "7266708898239745281",
+    "from": "2-3y",
+    "to": "3-4y",
+    "age_y_as_shipped": 2.99563,
+    "age_y_at_declared": 3.00297
+   },
+   {
+    "vid": "7402153526123580690",
+    "from": "1-2y",
+    "to": "2-3y",
+    "age_y_as_shipped": 1.99633,
+    "age_y_at_declared": 2.00366
+   },
+   {
+    "vid": "7402177556650249478",
+    "from": "1-2y",
+    "to": "2-3y",
+    "age_y_as_shipped": 1.99615,
+    "age_y_at_declared": 2.00349
+   },
+   {
+    "vid": "7402198423610445073",
+    "from": "1-2y",
+    "to": "2-3y",
+    "age_y_as_shipped": 1.996,
+    "age_y_at_declared": 2.00333
+   },
+   {
+    "vid": "7402295860320537886",
+    "from": "1-2y",
+    "to": "2-3y",
+    "age_y_as_shipped": 1.99528,
+    "age_y_at_declared": 2.00261
+   },
+   {
+    "vid": "7537876001884228877",
+    "from": "0-1y",
+    "to": "1-2y",
+    "age_y_as_shipped": 0.99497,
+    "age_y_at_declared": 1.00231
+   },
+   {
+    "vid": "7402195724005313825",
+    "from": "1-2y",
+    "to": "2-3y",
+    "age_y_as_shipped": 1.99602,
+    "age_y_at_declared": 2.00335
+   },
+   {
+    "vid": "7130911870654991617",
+    "from": "3-4y",
+    "to": "4-5y",
+    "age_y_as_shipped": 3.99754,
+    "age_y_at_declared": 4.00487
+   },
+   {
+    "vid": "7266230300030536992",
+    "from": "2-3y",
+    "to": "3-4y",
+    "age_y_as_shipped": 2.99916,
+    "age_y_at_declared": 3.0065
+   },
+   {
+    "vid": "7266499914014723370",
+    "from": "2-3y",
+    "to": "3-4y",
+    "age_y_as_shipped": 2.99717,
+    "age_y_at_declared": 3.00451
+   },
+   {
+    "vid": "7402474775349611793",
+    "from": "1-2y",
+    "to": "2-3y",
+    "age_y_as_shipped": 1.99396,
+    "age_y_at_declared": 2.00129
+   },
+   {
+    "vid": "6995538782204300545",
+    "from": "4-5y",
+    "to": "5y+",
+    "age_y_as_shipped": 4.99631,
+    "age_y_at_declared": 5.00365
+   },
+   {
+    "vid": "6995908367256521990",
+    "from": "4-5y",
+    "to": "5y+",
+    "age_y_as_shipped": 4.99359,
+    "age_y_at_declared": 5.00092
+   },
+   {
+    "vid": "7130719838778953003",
+    "from": "3-4y",
+    "to": "4-5y",
+    "age_y_as_shipped": 3.99895,
+    "age_y_at_declared": 4.00629
+   },
+   {
+    "vid": "7266185876487638314",
+    "from": "2-3y",
+    "to": "3-4y",
+    "age_y_as_shipped": 2.99949,
+    "age_y_at_declared": 3.00683
+   },
+   {
+    "vid": "7266311787237362990",
+    "from": "2-3y",
+    "to": "3-4y",
+    "age_y_as_shipped": 2.99856,
+    "age_y_at_declared": 3.0059
+   }
+  ]
+ },
+ "half_two_caller_side_drift": {
+  "how_it_was_measured": "the reference table is held fixed at the corrected ages; only the clock at which a caller's list is aged advances, which is exactly what presence_check.py does when it is run later",
+  "horizons_days": [
+   0,
+   1,
+   7,
+   30,
+   90,
+   180,
+   365,
+   730
+  ],
+  "lists": {
+   "receiver_eleven": {
+    "source_file": "receiver-list.txt",
+    "n_lines_with_an_identifier": 11,
+    "n_datable_19_digit": 11,
+    "horizons": [
+     {
+      "days_after_t_ref": 0,
+      "age_histogram": {
+       "2-3y": 7,
+       "4-5y": 2,
+       "3-4y": 2
+      },
+      "expected_absent_rate": 0.13592625615723686,
+      "expected_lo": 0.11229543023739788,
+      "expected_hi": 0.16360454794148888,
+      "drift_pp_from_day0": 0.0
+     },
+     {
+      "days_after_t_ref": 1,
+      "age_histogram": {
+       "2-3y": 7,
+       "4-5y": 2,
+       "3-4y": 2
+      },
+      "expected_absent_rate": 0.13592625615723686,
+      "expected_lo": 0.11229543023739788,
+      "expected_hi": 0.16360454794148888,
+      "drift_pp_from_day0": 0.0
+     },
+     {
+      "days_after_t_ref": 7,
+      "age_histogram": {
+       "2-3y": 7,
+       "4-5y": 2,
+       "3-4y": 2
+      },
+      "expected_absent_rate": 0.13592625615723686,
+      "expected_lo": 0.11229543023739788,
+      "expected_hi": 0.16360454794148888,
+      "drift_pp_from_day0": 0.0
+     },
+     {
+      "days_after_t_ref": 30,
+      "age_histogram": {
+       "2-3y": 7,
+       "4-5y": 3,
+       "3-4y": 1
+      },
+      "expected_absent_rate": 0.13592300476970723,
+      "expected_lo": 0.11183486457164428,
+      "expected_hi": 0.16422216403178522,
+      "drift_pp_from_day0": -0.00032513875296291683
+     },
+     {
+      "days_after_t_ref": 90,
+      "age_histogram": {
+       "2-3y": 7,
+       "4-5y": 4
+      },
+      "expected_absent_rate": 0.1359197533821776,
+      "expected_lo": 0.11137429890589065,
+      "expected_hi": 0.1648397801220816,
+      "drift_pp_from_day0": -0.0006502775059258337
+     },
+     {
+      "days_after_t_ref": 180,
+      "age_histogram": {
+       "2-3y": 6,
+       "4-5y": 4,
+       "3-4y": 1
+      },
+      "expected_absent_rate": 0.13963812596518857,
+      "expected_lo": 0.11463745086857403,
+      "expected_hi": 0.169030053629681,
+      "drift_pp_from_day0": 0.3711869807951712
+     },
+     {
+      "days_after_t_ref": 365,
+      "age_histogram": {
+       "3-4y": 7,
+       "5y+": 2,
+       "4-5y": 2
+      },
+      "expected_absent_rate": 0.1643723851374755,
+      "expected_lo": 0.13597473243914632,
+      "expected_hi": 0.19739429640219974,
+      "drift_pp_from_day0": 2.8446128980238656
+     },
+     {
+      "days_after_t_ref": 730,
+      "age_histogram": {
+       "4-5y": 7,
+       "5y+": 4
+      },
+      "expected_absent_rate": 0.16677364909898917,
+      "expected_lo": 0.13450914257334307,
+      "expected_hi": 0.20494021076119662,
+      "drift_pp_from_day0": 3.0847392941752316
+     }
+    ]
+   },
+   "reference_population_itself": {
+    "source_file": "the panel of this arc's own window, from the run files",
+    "n_lines_with_an_identifier": 3613,
+    "n_datable_19_digit": 3613,
+    "horizons": [
+     {
+      "days_after_t_ref": 0,
+      "age_histogram": {
+       "5y+": 391,
+       "4-5y": 464,
+       "3-4y": 681,
+       "2-3y": 798,
+       "1-2y": 777,
+       "0-1y": 502
+      },
+      "expected_absent_rate": 0.12027450505121297,
+      "expected_lo": 0.09727601495043184,
+      "expected_hi": 0.14808327324642148,
+      "drift_pp_from_day0": 0.0
+     },
+     {
+      "days_after_t_ref": 1,
+      "age_histogram": {
+       "5y+": 391,
+       "4-5y": 465,
+       "3-4y": 681,
+       "2-3y": 797,
+       "1-2y": 780,
+       "0-1y": 499
+      },
+      "expected_absent_rate": 0.12030983531749567,
+      "expected_lo": 0.09730750720961463,
+      "expected_hi": 0.1481207621389759,
+      "drift_pp_from_day0": 0.0035330266282704303
+     },
+     {
+      "days_after_t_ref": 7,
+      "age_histogram": {
+       "5y+": 396,
+       "4-5y": 474,
+       "3-4y": 674,
+       "2-3y": 796,
+       "1-2y": 791,
+       "0-1y": 482
+      },
+      "expected_absent_rate": 0.12061663118047755,
+      "expected_lo": 0.09756730561255889,
+      "expected_hi": 0.14846932537043456,
+      "drift_pp_from_day0": 0.03421261292645833
+     },
+     {
+      "days_after_t_ref": 30,
+      "age_histogram": {
+       "5y+": 416,
+       "4-5y": 487,
+       "3-4y": 708,
+       "2-3y": 779,
+       "1-2y": 801,
+       "0-1y": 422
+      },
+      "expected_absent_rate": 0.12253839420789016,
+      "expected_lo": 0.09925270602010537,
+      "expected_hi": 0.15059891540015857,
+      "drift_pp_from_day0": 0.22638891566771902
+     },
+     {
+      "days_after_t_ref": 90,
+      "age_histogram": {
+       "5y+": 482,
+       "4-5y": 509,
+       "3-4y": 741,
+       "2-3y": 785,
+       "1-2y": 759,
+       "0-1y": 337
+      },
+      "expected_absent_rate": 0.1263793272200568,
+      "expected_lo": 0.10256402540467291,
+      "expected_hi": 0.15494969938066774,
+      "drift_pp_from_day0": 0.6104822168843824
+     },
+     {
+      "days_after_t_ref": 180,
+      "age_histogram": {
+       "5y+": 585,
+       "4-5y": 561,
+       "3-4y": 792,
+       "2-3y": 756,
+       "1-2y": 695,
+       "0-1y": 224
+      },
+      "expected_absent_rate": 0.1321519856632142,
+      "expected_lo": 0.10749249920131235,
+      "expected_hi": 0.16156329498312505,
+      "drift_pp_from_day0": 1.1877480612001237
+     },
+     {
+      "days_after_t_ref": 365,
+      "age_histogram": {
+       "5y+": 854,
+       "4-5y": 682,
+       "3-4y": 798,
+       "2-3y": 777,
+       "1-2y": 502
+      },
+      "expected_absent_rate": 0.14449969067544194,
+      "expected_lo": 0.11792881055152324,
+      "expected_hi": 0.17585925780792447,
+      "drift_pp_from_day0": 2.422518562422897
+     },
+     {
+      "days_after_t_ref": 730,
+      "age_histogram": {
+       "5y+": 1536,
+       "4-5y": 797,
+       "3-4y": 778,
+       "2-3y": 502
+      },
+      "expected_absent_rate": 0.16192313237131928,
+      "expected_lo": 0.13191140311159885,
+      "expected_hi": 0.19721900800724218,
+      "drift_pp_from_day0": 4.164862732010631
+     }
+    ]
+   }
+  },
+  "band_rate_inversions_in_the_table": [
+   {
+    "from": "3-4y",
+    "to": "4-5y",
+    "rate_from": 0.16196136701337296,
+    "rate_to": 0.16192560175054704
+   }
+  ],
+  "when_the_design_half_overtakes_the_bookkeeping_half": {
+   "days": 26,
+   "drift_pp": 0.1925055937959913,
+   "worst_bookkeeping_pp": 0.1825601374570468
+  }
+ },
+ "what_this_measurement_does_not_reach": [
+  "the baseline union is itself 11 h 41 m wide (2026-08-11T11:24:06Z to 23:05:18Z, four component runs), so 'the ages were computed at days[0]' is already an approximation of a moving reference, and this script inherits that approximation rather than removing it",
+  "within any one run the units are probed over roughly 1.9 hours, so a unit's true age at ITS OWN measurement differs from its age at the run's start by up to that much; the effect is confined to units within 1.9 h of a band boundary and is not corrected here",
+  "the caller-side drift is arithmetic on a fixed table, NOT a forecast of retrievability. It says how far the printed expectation moves from what was measured, and says nothing about whether the world moved the same way \u2014 the reference population has not been re-measured at any of these horizons and this arc cannot say what it would show",
+  "the horizons beyond 7 days are counterfactual by construction: this arc is 5 days into its window, and every figure past that is what the tool WOULD print, not what anything was observed to be"
+ ]
+}

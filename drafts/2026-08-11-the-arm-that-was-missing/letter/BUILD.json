@@ -1,0 +1,631 @@
+{
+ "schema": "field-research/letter-build/1",
+ "built_by": "build_letter.py, session 128, 2026-08-20",
+ "object_version": "2.0",
+ "started_utc": "2026-08-20T05:26:24Z",
+ "finished_utc": "2026-08-20T05:27:08Z",
+ "conditions_this_build_is_bound_by": "CONDITIONS-127.md, items 1-7",
+ "never_sets_pythondontwritebytecode": true,
+ "prose_words": 1097,
+ "word_ceiling": 1100,
+ "commands": [
+  "python3 extract_dashboard.py --selftest receiver-dashboard-2026-08-20.html",
+  "python3 extract_dashboard.py receiver-dashboard-2026-08-20.html -o receiver-series.json",
+  "python3 dashboard_findings.py receiver-series.json --reading your-eleven-today.json -o dashboard-findings.json",
+  "python3 selftest_presence_check.py",
+  "python3 presence_check.py receiver-list.txt --baseline none --label the-eleven -o your-eleven-today.json"
+ ],
+ "log": [
+  {
+   "check": "no panel probe in flight (D25's rule, enforced by the ledger)",
+   "n_in_flight": 0,
+   "ok": true
+  },
+  {
+   "check": "receiver quotation found verbatim in receiver-report-2506.09746v2-extracted.txt",
+   "ok": true
+  },
+  {
+   "check": "dashboard note found verbatim in receiver-dashboard-2026-08-20.html",
+   "ok": true
+  },
+  {
+   "check": "every shipped file is byte-identical to its live source",
+   "n_files": 10,
+   "ok": true
+  },
+  {
+   "cmd": "python3 window_status.py /home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/letter/series-status.json",
+   "why": "the series' length and holes, computed from the ledger rather than described",
+   "returncode": 0,
+   "seconds": 0.1,
+   "stdout_tail": "ive_daily\": false,\n \"preregistered_window_met\": false,\n \"why_two_conditions\": \"'seven consecutive daily runs' is a conjunction: the COUNT and the CONSECUTIVENESS. Erratum E21 reported the window closed while neither held. They are reported separately here so a later session cannot collapse them into one word again.\"\n}\nHOLE: ledger/run-2026-08-17T0337Z.json.partial - a partial with no completed run beside it - the day was started and not taken (600 of 3869)\nNOT DAILY: 2026-08-11T11:24:06Z -> 2026-08-12T03:40:28Z = 0.678 days\nNOT DAILY: 2026-08-16T03:37:40Z -> 2026-08-18T03:41:00Z = 2.0023 days\n",
+   "stderr_tail": ""
+  },
+  {
+   "cmd": "python3 confirmation_record_121.py -o /home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/letter/confirmation-record.json",
+   "why": "item 4: the confirmation record is computed by this build, not read from a file whose date the build never checks",
+   "returncode": 0,
+   "seconds": 0.0,
+   "stdout_tail": "19 confirmation readings across 8 sidecars; 2 artefact echo(es)\n  all_readings:\n    NOT-RETRIEVABLE->RETRIEVABLE       n=7  confirmed=7  refuted=0\n    RETRIEVABLE->NOT-RETRIEVABLE       n=12  confirmed=9  refuted=3\n  genuine_transitions_only:\n    NOT-RETRIEVABLE->RETRIEVABLE       n=5  confirmed=5  refuted=0\n    RETRIEVABLE->NOT-RETRIEVABLE       n=12  confirmed=9  refuted=3\nwritten /home/user/field-research/drafts/2026-08-11-the-arm-that-was-missing/letter/confirmation-record.json\n",
+   "stderr_tail": ""
+  },
+  {
+   "check": "confirmation record coverage",
+   "sidecars_read": 8,
+   "sidecars_on_disk": 8,
+   "ok": true,
+   "newest_sidecar": "transition-confirm-2026-08-20.json"
+  },
+  {
+   "cmd": "python3 presence_check.py receiver-list.txt --baseline none --label the-eleven -o your-eleven-today.json",
+   "why": "phase A: produce the figures the letter quotes",
+   "returncode": 0,
+   "seconds": 21.4,
+   "stdout_tail": "4y\n  7117394257064840490  RETRIEVABLE        http=200   4.12y\n  7134492331117595950  NOT-RETRIEVABLE    http=400   4.00y conf=+\n  7164125023886691626  RETRIEVABLE        http=200   3.78y\n  7376726215178128673  RETRIEVABLE        http=200   2.21y\n  7332960275127110954  RETRIEVABLE        http=200   2.53y\n  7347581705299053826  RETRIEVABLE        http=200   2.42y\n  7376437810644946222  RETRIEVABLE        http=200   2.21y\n  7361448925972155679  RETRIEVABLE        http=200   2.32y\ncounts {'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}\nobserved public absence 0.0909 (1/11)\nwritten your-eleven-today.json\n",
+   "stderr_tail": ""
+  },
+  {
+   "cmd": "python3 extract_dashboard.py --selftest receiver-dashboard-2026-08-20.html",
+   "why": "phase A: produce the figures the letter quotes",
+   "returncode": 0,
+   "seconds": 0.1,
+   "stdout_tail": "   \"check\": \"identifiers are distinct\",\n   \"ok\": true,\n   \"detail\": \"\"\n  },\n  {\n   \"check\": \"x and y are the same length\",\n   \"ok\": true,\n   \"detail\": \"\"\n  },\n  {\n   \"check\": \"control: a renamed identifier heading is reported, not absorbed\",\n   \"ok\": true,\n   \"detail\": \"problems=1 videos=10\"\n  },\n  {\n   \"check\": \"control: the axis publishes its own label set\",\n   \"ok\": true,\n   \"detail\": \"{\\\"ticktext\\\": [\\\"Not Available\\\", \\\"Error\\\", \\\"Available\\\"], \\\"tickvals\\\": [0, 1, 2]}\"\n  },\n  {\n   \"check\": \"control: every x parses as an ISO date\",\n   \"ok\": true,\n   \"detail\": \"[]\"\n  }\n ],\n \"pass\": true\n}\n",
+   "stderr_tail": ""
+  },
+  {
+   "cmd": "python3 extract_dashboard.py receiver-dashboard-2026-08-20.html -o receiver-series.json",
+   "why": "phase A: produce the figures the letter quotes",
+   "returncode": 0,
+   "seconds": 0.1,
+   "stdout_tail": "wrote receiver-series.json (210728 bytes): 11 videos, 0 problems\n",
+   "stderr_tail": ""
+  },
+  {
+   "cmd": "python3 dashboard_findings.py receiver-series.json --reading your-eleven-today.json -o dashboard-findings.json",
+   "why": "phase A: produce the figures the letter quotes",
+   "returncode": 0,
+   "seconds": 0.1,
+   "stdout_tail": "wrote dashboard-findings.json: 11 videos, flip=2026-01-03, record ends 2026-01-14, 218 days before our reading; aggregate cross-check AGREES EXACTLY (837 comparisons, 0 disagreements)\n",
+   "stderr_tail": ""
+  },
+  {
+   "cmd": "python3 selftest_presence_check.py",
+   "why": "phase A: produce the figures the letter quotes",
+   "returncode": 0,
+   "seconds": 0.1,
+   "stdout_tail": "selftest_presence_check — presence_check 0.3.3\n  128 assertion(s) passed\n  0 failed\n",
+   "stderr_tail": ""
+  },
+  {
+   "check": "the fetch record describes the shipped bytes",
+   "requested_utc": "2026-08-20T04:09:18Z",
+   "http": 200,
+   "last_modified": "Wed, 14 Jan 2026 20:53:43 GMT",
+   "ok": true
+  },
+  {
+   "check": "three dated reads of the dashboard are byte-identical",
+   "sha256": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb",
+   "reads": [
+    "receiver-dashboard-2026-08-16.html",
+    "receiver-dashboard-2026-08-19.html",
+    "receiver-dashboard-2026-08-20.html"
+   ],
+   "ok": true
+  },
+  {
+   "check": "letter length",
+   "prose_words": 1097,
+   "ceiling": 1100,
+   "ok": true
+  },
+  {
+   "check": "the set of commands the letter prints equals the set the build ran",
+   "n": 5,
+   "ok": true
+  },
+  {
+   "cmd": "python3 extract_dashboard.py --selftest receiver-dashboard-2026-08-20.html",
+   "why": "phase C: run what the letter prints, as printed, from scratch",
+   "returncode": 0,
+   "seconds": 0.1,
+   "stdout_tail": "   \"check\": \"identifiers are distinct\",\n   \"ok\": true,\n   \"detail\": \"\"\n  },\n  {\n   \"check\": \"x and y are the same length\",\n   \"ok\": true,\n   \"detail\": \"\"\n  },\n  {\n   \"check\": \"control: a renamed identifier heading is reported, not absorbed\",\n   \"ok\": true,\n   \"detail\": \"problems=1 videos=10\"\n  },\n  {\n   \"check\": \"control: the axis publishes its own label set\",\n   \"ok\": true,\n   \"detail\": \"{\\\"ticktext\\\": [\\\"Not Available\\\", \\\"Error\\\", \\\"Available\\\"], \\\"tickvals\\\": [0, 1, 2]}\"\n  },\n  {\n   \"check\": \"control: every x parses as an ISO date\",\n   \"ok\": true,\n   \"detail\": \"[]\"\n  }\n ],\n \"pass\": true\n}\n",
+   "stderr_tail": ""
+  },
+  {
+   "cmd": "python3 extract_dashboard.py receiver-dashboard-2026-08-20.html -o receiver-series.json",
+   "why": "phase C: run what the letter prints, as printed, from scratch",
+   "returncode": 0,
+   "seconds": 0.1,
+   "stdout_tail": "wrote receiver-series.json (210728 bytes): 11 videos, 0 problems\n",
+   "stderr_tail": ""
+  },
+  {
+   "cmd": "python3 dashboard_findings.py receiver-series.json --reading your-eleven-today.json -o dashboard-findings.json",
+   "why": "phase C: run what the letter prints, as printed, from scratch",
+   "returncode": 0,
+   "seconds": 0.0,
+   "stdout_tail": "wrote dashboard-findings.json: 11 videos, flip=2026-01-03, record ends 2026-01-14, 218 days before our reading; aggregate cross-check AGREES EXACTLY (837 comparisons, 0 disagreements)\n",
+   "stderr_tail": ""
+  },
+  {
+   "cmd": "python3 selftest_presence_check.py",
+   "why": "phase C: run what the letter prints, as printed, from scratch",
+   "returncode": 0,
+   "seconds": 0.1,
+   "stdout_tail": "selftest_presence_check — presence_check 0.3.3\n  128 assertion(s) passed\n  0 failed\n",
+   "stderr_tail": ""
+  },
+  {
+   "cmd": "python3 presence_check.py receiver-list.txt --baseline none --label the-eleven -o your-eleven-today.json",
+   "why": "phase C: run what the letter prints, as printed, from scratch",
+   "returncode": 0,
+   "seconds": 20.6,
+   "stdout_tail": "4y\n  7117394257064840490  RETRIEVABLE        http=200   4.12y\n  7134492331117595950  NOT-RETRIEVABLE    http=400   4.00y conf=+\n  7164125023886691626  RETRIEVABLE        http=200   3.78y\n  7376726215178128673  RETRIEVABLE        http=200   2.21y\n  7332960275127110954  RETRIEVABLE        http=200   2.53y\n  7347581705299053826  RETRIEVABLE        http=200   2.42y\n  7376437810644946222  RETRIEVABLE        http=200   2.21y\n  7361448925972155679  RETRIEVABLE        http=200   2.32y\ncounts {'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}\nobserved public absence 0.0909 (1/11)\nwritten your-eleven-today.json\n",
+   "stderr_tail": ""
+  },
+  {
+   "cmd": "python3 extract_dashboard.py --selftest receiver-dashboard-2026-08-20.html",
+   "why": "phase D: the offline commands, from a copy outside this repository, with PYTHONDONTWRITEBYTECODE removed from the environment",
+   "returncode": 0,
+   "seconds": 0.1,
+   "stdout_tail": "   \"check\": \"identifiers are distinct\",\n   \"ok\": true,\n   \"detail\": \"\"\n  },\n  {\n   \"check\": \"x and y are the same length\",\n   \"ok\": true,\n   \"detail\": \"\"\n  },\n  {\n   \"check\": \"control: a renamed identifier heading is reported, not absorbed\",\n   \"ok\": true,\n   \"detail\": \"problems=1 videos=10\"\n  },\n  {\n   \"check\": \"control: the axis publishes its own label set\",\n   \"ok\": true,\n   \"detail\": \"{\\\"ticktext\\\": [\\\"Not Available\\\", \\\"Error\\\", \\\"Available\\\"], \\\"tickvals\\\": [0, 1, 2]}\"\n  },\n  {\n   \"check\": \"control: every x parses as an ISO date\",\n   \"ok\": true,\n   \"detail\": \"[]\"\n  }\n ],\n \"pass\": true\n}\n",
+   "stderr_tail": ""
+  },
+  {
+   "cmd": "python3 extract_dashboard.py receiver-dashboard-2026-08-20.html -o receiver-series.json",
+   "why": "phase D: the offline commands, from a copy outside this repository, with PYTHONDONTWRITEBYTECODE removed from the environment",
+   "returncode": 0,
+   "seconds": 0.1,
+   "stdout_tail": "wrote receiver-series.json (210728 bytes): 11 videos, 0 problems\n",
+   "stderr_tail": ""
+  },
+  {
+   "cmd": "python3 dashboard_findings.py receiver-series.json --reading your-eleven-today.json -o dashboard-findings.json",
+   "why": "phase D: the offline commands, from a copy outside this repository, with PYTHONDONTWRITEBYTECODE removed from the environment",
+   "returncode": 0,
+   "seconds": 0.0,
+   "stdout_tail": "wrote dashboard-findings.json: 11 videos, flip=2026-01-03, record ends 2026-01-14, 218 days before our reading; aggregate cross-check AGREES EXACTLY (837 comparisons, 0 disagreements)\n",
+   "stderr_tail": ""
+  },
+  {
+   "cmd": "python3 selftest_presence_check.py",
+   "why": "phase D: the offline commands, from a copy outside this repository, with PYTHONDONTWRITEBYTECODE removed from the environment",
+   "returncode": 0,
+   "seconds": 0.1,
+   "stdout_tail": "selftest_presence_check — presence_check 0.3.3\n  128 assertion(s) passed\n  0 failed\n",
+   "stderr_tail": ""
+  },
+  {
+   "check": "a reader's copy is unchanged in membership after running the printed offline commands, with no bytecode variable set",
+   "files_before": 16,
+   "files_after": 16,
+   "ok": true
+  },
+  {
+   "check": "the letter's inventory table equals the finished directory",
+   "n_files": 17,
+   "ok": true
+  }
+ ],
+ "figures_fetched": [
+  {
+   "file": "dashboard-findings.json",
+   "field": "record.n_videos",
+   "raw": 11,
+   "rendered": "11"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "simultaneous_flip.date",
+   "raw": "2026-01-03",
+   "rendered": "2026-01-03"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "simultaneous_flip.n_series_whose_last_change_is_that_date",
+   "raw": 11,
+   "rendered": "11"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "simultaneous_flip.states_they_came_from.Not Available",
+   "raw": 10,
+   "rendered": "10"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "simultaneous_flip.states_they_came_from.Available",
+   "raw": 1,
+   "rendered": "1"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "simultaneous_flip.state_they_went_to.0",
+   "raw": "Error",
+   "rendered": "Error"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "record.last_date",
+   "raw": "2026-01-14",
+   "rendered": "2026-01-14"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "record.first_date",
+   "raw": "2025-04-09",
+   "rendered": "2025-04-09"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "simultaneous_flip.days_from_flip_to_record_end",
+   "raw": 11,
+   "rendered": "11"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "record.days_from_record_end_to_our_reading",
+   "raw": 218,
+   "rendered": "218"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "simultaneous_flip.days_from_flip_to_our_reading",
+   "raw": 229,
+   "rendered": "229"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "record.gaps_in_the_record",
+   "raw": [
+    {
+     "after": "2025-05-22",
+     "before": "2025-05-24",
+     "days": 2
+    },
+    {
+     "after": "2025-12-12",
+     "before": "2025-12-14",
+     "days": 2
+    }
+   ],
+   "rendered": "2"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "the_one_that_is_not_like_the_others.video_id",
+   "raw": "7332960275127110954",
+   "rendered": "7332960275127110954"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "the_one_that_is_not_like_the_others.available_days",
+   "raw": 213,
+   "rendered": "213"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "the_one_that_is_not_like_the_others.n_recorded_days",
+   "raw": 279,
+   "rendered": "279"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "record.final_status_counts.Error",
+   "raw": 11,
+   "rendered": "11"
+  },
+  {
+   "file": "receiver-dashboard-2026-08-20-fetch.json",
+   "field": "response_headers_kept.last-modified",
+   "raw": "Wed, 14 Jan 2026 20:53:43 GMT",
+   "rendered": "Wed, 14 Jan 2026 20:53:43 GMT"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "against_our_own_reading.n_retrievable_in_our_reading",
+   "raw": 10,
+   "rendered": "10"
+  },
+  {
+   "file": "your-eleven-today.json",
+   "field": "started_utc",
+   "raw": "2026-08-20T05:26:25Z",
+   "rendered": "2026-08-20T05:26:25Z"
+  },
+  {
+   "file": "your-eleven-today.json",
+   "field": "vantage.asn",
+   "raw": "AS396982",
+   "rendered": "AS396982"
+  },
+  {
+   "file": "your-eleven-today.json",
+   "field": "probe.endpoint",
+   "raw": "https://www.tiktok.com/oembed?url=",
+   "rendered": "https://www.tiktok.com/oembed?url="
+  },
+  {
+   "file": "your-eleven-today.json",
+   "field": "confirmation.passes",
+   "raw": 5,
+   "rendered": "5"
+  },
+  {
+   "file": "your-eleven-today.json",
+   "field": "n_unconfirmed_absent",
+   "raw": 0,
+   "rendered": "0"
+  },
+  {
+   "file": "your-eleven-today.json",
+   "field": "counts",
+   "raw": {
+    "RETRIEVABLE": 10,
+    "NOT-RETRIEVABLE": 1
+   },
+   "rendered": "{'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "scoring_the_handed_over_breakdown.day_range_found.0",
+   "raw": 224,
+   "rendered": "224"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "scoring_the_handed_over_breakdown.day_range_found.1",
+   "raw": 265,
+   "rendered": "265"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "scoring_the_handed_over_breakdown.n_videos_found",
+   "raw": 10,
+   "rendered": "10"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "scoring_the_handed_over_breakdown.n_retrievable_now_in_that_group",
+   "raw": 9,
+   "rendered": "9"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "extraction_checked_against_the_pages_own_aggregate_chart.n_comparisons",
+   "raw": 837,
+   "rendered": "837"
+  },
+  {
+   "file": "dashboard-findings.json",
+   "field": "extraction_checked_against_the_pages_own_aggregate_chart.n_disagreements",
+   "raw": 0,
+   "rendered": "0"
+  },
+  {
+   "file": "confirmation-record.json",
+   "field": "genuine_transitions_only.NOT-RETRIEVABLE->RETRIEVABLE.confirmed",
+   "raw": 5,
+   "rendered": "5"
+  },
+  {
+   "file": "confirmation-record.json",
+   "field": "genuine_transitions_only.NOT-RETRIEVABLE->RETRIEVABLE.n",
+   "raw": 5,
+   "rendered": "5"
+  },
+  {
+   "file": "confirmation-record.json",
+   "field": "genuine_transitions_only.RETRIEVABLE->NOT-RETRIEVABLE.confirmed",
+   "raw": 9,
+   "rendered": "9"
+  },
+  {
+   "file": "confirmation-record.json",
+   "field": "genuine_transitions_only.RETRIEVABLE->NOT-RETRIEVABLE.n",
+   "raw": 12,
+   "rendered": "12"
+  },
+  {
+   "file": "series-status.json",
+   "field": "n_measurement_days",
+   "raw": 9,
+   "rendered": "9"
+  },
+  {
+   "file": "series-status.json",
+   "field": "n_holes",
+   "raw": 1,
+   "rendered": "1"
+  },
+  {
+   "file": "series-status.json",
+   "field": "measurement_days.0.start_utc",
+   "raw": "2026-08-11T11:24:06Z",
+   "rendered": "2026-08-11T11:24:06Z"
+  },
+  {
+   "file": "series-status.json",
+   "field": "measurement_days.8.start_utc",
+   "raw": "2026-08-20T03:41:00Z",
+   "rendered": "2026-08-20T03:41:00Z"
+  }
+ ],
+ "shipped_files_are_live_copies": {
+  "presence_check.py": {
+   "from": "tool/presence_check.py",
+   "sha256": "cca8317bfd3c93f4771262ed23a19e42d7a9dd88c9b6951de80e191943035570",
+   "is_the_live_file": true
+  },
+  "selftest_presence_check.py": {
+   "from": "tool/selftest_presence_check.py",
+   "sha256": "611070725a3cf8c13fda43471d81bceb9cc9a28ca20f7d513365d0ee22c9c25c",
+   "is_the_live_file": true
+  },
+  "ledger.py": {
+   "from": "tool/ledger.py",
+   "sha256": "05554b297c502b63e753639786a5706ead40c61ae8afaed411b19a3b8f58ff8c",
+   "is_the_live_file": true
+  },
+  "run_lock.py": {
+   "from": "tool/run_lock.py",
+   "sha256": "abb15cd0b0029ccaec948967e317a3082517a9489e7443a9ec07f261108f340d",
+   "is_the_live_file": true
+  },
+  "drift-122.json": {
+   "from": "tool/drift-122.json",
+   "sha256": "5f5ef5f9fbc638110b89a1b87e064830a0d105e84d7a8e9d9f568a0a0eb700a2",
+   "is_the_live_file": true
+  },
+  "receiver-dashboard-2026-08-20.html": {
+   "from": "receiver-dashboard-2026-08-20.html",
+   "sha256": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb",
+   "is_the_live_file": true
+  },
+  "receiver-list.txt": {
+   "from": "receiver-list.txt",
+   "sha256": "c70537718a76b37f199b882505417fdcd338594619dbb9a101bcb7b78f364f1c",
+   "is_the_live_file": true
+  },
+  "receiver-dashboard-2026-08-20-fetch.json": {
+   "from": "receiver-dashboard-2026-08-20-fetch.json",
+   "sha256": "495bb099362dd85353f696be8c3ff20723e374438293fe9a6109fd010844f49a",
+   "is_the_live_file": true
+  },
+  "extract_dashboard.py": {
+   "from": "extract_dashboard.py",
+   "sha256": "324d2a25cffd567d04596010ab2bb7c6188b219957fe2d5d8cd551d335afc0fd",
+   "is_the_live_file": true
+  },
+  "dashboard_findings.py": {
+   "from": "dashboard_findings.py",
+   "sha256": "c58a2a184086edca8f5e8da7ce44151d74fe532101545542dd5c447f95ce8841",
+   "is_the_live_file": true
+  }
+ },
+ "dashboard_reads": {
+  "receiver-dashboard-2026-08-20.html": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb",
+  "receiver-dashboard-2026-08-19.html": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb",
+  "receiver-dashboard-2026-08-16.html": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb"
+ },
+ "dashboard_url": "https://playground.tiktok-audit.com/api-na/",
+ "readings_history": {
+  "n_readings": 3,
+  "dates": [
+   "2026-08-12T18:35:26Z",
+   "2026-08-19T05:27:34Z",
+   "2026-08-20T05:26:25Z"
+  ],
+  "vantages": [
+   "AS396982"
+  ],
+  "n_identifiers": 11,
+  "n_changed_state_across_readings": 0,
+  "changed": [],
+  "not_retrievable_on_every_reading": [
+   "7134492331117595950"
+  ],
+  "what_this_is_not": "three readings are three readings. They do not establish a rate, a trend, or that anything is permanently gone.",
+  "readings": [
+   {
+    "started_utc": "2026-08-12T18:35:26Z",
+    "vantage_asn": "AS396982",
+    "source": "deliverable-v0.3/receiver-eleven.json"
+   },
+   {
+    "started_utc": "2026-08-19T05:27:34Z",
+    "vantage_asn": "AS396982",
+    "source": "offer/your-eleven-today.json"
+   },
+   {
+    "started_utc": "2026-08-20T05:26:25Z",
+    "vantage_asn": "AS396982",
+    "source": "letter/your-eleven-today.json"
+   }
+  ]
+ },
+ "files": [
+  {
+   "name": "LETTER.md",
+   "sha256": "3648563896449a0fc77cc2ddbb7ad403dbbb2cfc875a0ecb37786bc70c53f2a4",
+   "bytes": 8529
+  },
+  {
+   "name": "confirmation-record.json",
+   "sha256": "ac89a6204f0e5d6fe6cf7c0217e0a24680749caed89e1f81d7116732a6c92eae",
+   "bytes": 11672
+  },
+  {
+   "name": "dashboard-findings.json",
+   "sha256": "2750bfc7910310e7356b026db2e43cd5f4605dd20e7cfb87a7297c5d76d3f9c5",
+   "bytes": 12682
+  },
+  {
+   "name": "dashboard_findings.py",
+   "sha256": "c58a2a184086edca8f5e8da7ce44151d74fe532101545542dd5c447f95ce8841",
+   "bytes": 12729
+  },
+  {
+   "name": "drift-122.json",
+   "sha256": "5f5ef5f9fbc638110b89a1b87e064830a0d105e84d7a8e9d9f568a0a0eb700a2",
+   "bytes": 15424
+  },
+  {
+   "name": "extract_dashboard.py",
+   "sha256": "324d2a25cffd567d04596010ab2bb7c6188b219957fe2d5d8cd551d335afc0fd",
+   "bytes": 17552
+  },
+  {
+   "name": "ledger.py",
+   "sha256": "05554b297c502b63e753639786a5706ead40c61ae8afaed411b19a3b8f58ff8c",
+   "bytes": 9849
+  },
+  {
+   "name": "presence_check.py",
+   "sha256": "cca8317bfd3c93f4771262ed23a19e42d7a9dd88c9b6951de80e191943035570",
+   "bytes": 55812
+  },
+  {
+   "name": "receiver-dashboard-2026-08-20-fetch.json",
+   "sha256": "495bb099362dd85353f696be8c3ff20723e374438293fe9a6109fd010844f49a",
+   "bytes": 872
+  },
+  {
+   "name": "receiver-dashboard-2026-08-20.html",
+   "sha256": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb",
+   "bytes": 246014
+  },
+  {
+   "name": "receiver-list.txt",
+   "sha256": "c70537718a76b37f199b882505417fdcd338594619dbb9a101bcb7b78f364f1c",
+   "bytes": 941
+  },
+  {
+   "name": "receiver-series.json",
+   "sha256": "221e20a6a096f05ba9516115f67253f75e0e181d9ee5359d13e1a87af3399c10",
+   "bytes": 210776
+  },
+  {
+   "name": "run_lock.py",
+   "sha256": "abb15cd0b0029ccaec948967e317a3082517a9489e7443a9ec07f261108f340d",
+   "bytes": 19074
+  },
+  {
+   "name": "selftest_presence_check.py",
+   "sha256": "611070725a3cf8c13fda43471d81bceb9cc9a28ca20f7d513365d0ee22c9c25c",
+   "bytes": 26394
+  },
+  {
+   "name": "series-status.json",
+   "sha256": "d116dfe00b0820e92d30a4f0eaf9c3465e20db3d2e6f8921913632ed2a3ff9e5",
+   "bytes": 4042
+  },
+  {
+   "name": "your-eleven-today.json",
+   "sha256": "eed0d510b335b26aa5cd20890d60d3255c5054d948e8216f3bde5bc642bfb6df",
+   "bytes": 8125
+  }
+ ]
+}

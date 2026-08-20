@@ -1,0 +1,470 @@
+{
+ "schema": "field-research/dashboard-findings/1",
+ "generated_from": {
+  "series_file": "receiver-series.json",
+  "series_source_file": "receiver-dashboard-2026-08-20.html",
+  "series_source_sha256": "fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb",
+  "series_source_bytes": 246014,
+  "extractor": "extract_dashboard.py",
+  "reading_file": "your-eleven-today.json",
+  "reading_started_utc": "2026-08-20T05:26:25Z",
+  "reading_vantage_asn": "AS396982"
+ },
+ "record": {
+  "n_videos": 11,
+  "first_date": "2025-04-09",
+  "last_date": "2026-01-14",
+  "all_series_end_on_the_same_date": true,
+  "n_recorded_days_max": 279,
+  "n_recorded_days_min": 238,
+  "days_from_record_end_to_our_reading": 218,
+  "our_reading_date": "2026-08-20",
+  "gaps_in_the_record": [
+   {
+    "after": "2025-05-22",
+    "before": "2025-05-24",
+    "days": 2
+   },
+   {
+    "after": "2025-12-12",
+    "before": "2025-12-14",
+    "days": 2
+   }
+  ],
+  "final_status_counts": {
+   "Error": 11
+  }
+ },
+ "simultaneous_flip": {
+  "date": "2026-01-03",
+  "n_series_whose_last_change_is_that_date": 11,
+  "n_series": 11,
+  "states_they_came_from": {
+   "Not Available": 10,
+   "Available": 1
+  },
+  "state_they_went_to": [
+   "Error"
+  ],
+  "days_from_flip_to_record_end": 11,
+  "days_from_flip_to_our_reading": 229,
+  "what_it_is_not": "this is a statement about eleven series in one file. It does not identify a cause, and this practice has not seen the code that writes them."
+ },
+ "the_one_that_is_not_like_the_others": {
+  "video_id": "7332960275127110954",
+  "available_days": 213,
+  "not_available_days": 46,
+  "error_days": 20,
+  "n_recorded_days": 279,
+  "available_pct": 76.3,
+  "last_change": {
+   "date": "2026-01-03",
+   "from": "Available",
+   "to": "Error"
+  }
+ },
+ "against_our_own_reading": {
+  "identifiers_in_their_record_not_in_our_reading": [],
+  "n_retrievable_in_our_reading": 10,
+  "n_in_their_record": 11,
+  "cross": [
+   {
+    "video_id": "7366758818765638917",
+    "their_final_status": "Error",
+    "their_final_status_as_of": "2026-01-14",
+    "their_not_available_days": 263,
+    "their_available_days": 0,
+    "ours": "RETRIEVABLE"
+   },
+   {
+    "video_id": "7368154048836406544",
+    "their_final_status": "Error",
+    "their_final_status_as_of": "2026-01-14",
+    "their_not_available_days": 261,
+    "their_available_days": 0,
+    "ours": "RETRIEVABLE"
+   },
+   {
+    "video_id": "7074367286571814190",
+    "their_final_status": "Error",
+    "their_final_status_as_of": "2026-01-14",
+    "their_not_available_days": 262,
+    "their_available_days": 0,
+    "ours": "RETRIEVABLE"
+   },
+   {
+    "video_id": "7117394257064840490",
+    "their_final_status": "Error",
+    "their_final_status_as_of": "2026-01-14",
+    "their_not_available_days": 261,
+    "their_available_days": 0,
+    "ours": "RETRIEVABLE"
+   },
+   {
+    "video_id": "7134492331117595950",
+    "their_final_status": "Error",
+    "their_final_status_as_of": "2026-01-14",
+    "their_not_available_days": 264,
+    "their_available_days": 0,
+    "ours": "NOT-RETRIEVABLE"
+   },
+   {
+    "video_id": "7164125023886691626",
+    "their_final_status": "Error",
+    "their_final_status_as_of": "2026-01-14",
+    "their_not_available_days": 261,
+    "their_available_days": 0,
+    "ours": "RETRIEVABLE"
+   },
+   {
+    "video_id": "7376726215178128673",
+    "their_final_status": "Error",
+    "their_final_status_as_of": "2026-01-14",
+    "their_not_available_days": 264,
+    "their_available_days": 0,
+    "ours": "RETRIEVABLE"
+   },
+   {
+    "video_id": "7332960275127110954",
+    "their_final_status": "Error",
+    "their_final_status_as_of": "2026-01-14",
+    "their_not_available_days": 46,
+    "their_available_days": 213,
+    "ours": "RETRIEVABLE"
+   },
+   {
+    "video_id": "7347581705299053826",
+    "their_final_status": "Error",
+    "their_final_status_as_of": "2026-01-14",
+    "their_not_available_days": 263,
+    "their_available_days": 0,
+    "ours": "RETRIEVABLE"
+   },
+   {
+    "video_id": "7376437810644946222",
+    "their_final_status": "Error",
+    "their_final_status_as_of": "2026-01-14",
+    "their_not_available_days": 265,
+    "their_available_days": 0,
+    "ours": "RETRIEVABLE"
+   },
+   {
+    "video_id": "7361448925972155679",
+    "their_final_status": "Error",
+    "their_final_status_as_of": "2026-01-14",
+    "their_not_available_days": 224,
+    "their_available_days": 0,
+    "ours": "RETRIEVABLE"
+   }
+  ]
+ },
+ "extraction_checked_against_the_pages_own_aggregate_chart": {
+  "what_this_is": "the page draws its own aggregate trend chart from a separate payload. The eleven per-video series are summed here per day and compared with it, value by value. A disagreement would be a finding about the extraction or about the page; there are none.",
+  "n_dates_compared": 279,
+  "n_status_series_compared": 3,
+  "n_comparisons": 837,
+  "n_disagreements": 0,
+  "disagreements": [],
+  "verdict": "AGREES EXACTLY"
+ },
+ "scoring_the_handed_over_breakdown": {
+  "claim": {
+   "quoted": "Nine of the eleven you have been recording as Not Available for most of nine months are publicly fetchable right now",
+   "quoted_breakdown": "ten of the eleven... Not Available on 224-265 days (88-95%)",
+   "source": "INTERLOCUTOR-19.md, session 127's adversary; recorded unreproduced in CONDITIONS-127.md",
+   "n_videos_claimed": 10,
+   "day_range_claimed": [
+    224,
+    265
+   ],
+   "pct_range_claimed": [
+    88.0,
+    95.0
+   ]
+  },
+  "n_videos_found": 10,
+  "n_videos_verdict": "REPRODUCED",
+  "day_range_found": [
+   224,
+   265
+  ],
+  "day_range_verdict": "REPRODUCED",
+  "pct_range_found": [
+   93.5,
+   95.0
+  ],
+  "pct_denominator": "each series' own number of recorded days (279 for ten of the eleven, 238 for the one that starts later)",
+  "pct_range_verdict": "NOT REPRODUCED",
+  "n_retrievable_now_in_that_group": 9,
+  "n_retrievable_now_claimed": 9,
+  "n_retrievable_now_verdict": "REPRODUCED",
+  "what_is_not_settled_by_this": "the percentage range is the one figure that does not reproduce, and this file does not claim to know which denominator produced 88 %. It reports what the series say on the only denominator the series themselves supply."
+ },
+ "per_video": [
+  {
+   "video_id": "7366758818765638917",
+   "creator": "camilapudim",
+   "created": "May 09, 2024 at 12:26 AM",
+   "n_recorded_days": 279,
+   "first_date": "2025-04-09",
+   "last_date": "2026-01-14",
+   "status_day_counts": {
+    "Not Available": 263,
+    "Error": 16
+   },
+   "not_available_days": 263,
+   "available_days": 0,
+   "error_days": 16,
+   "not_available_pct_of_recorded_days": 94.3,
+   "n_transitions": 9,
+   "last_change_date": "2026-01-03",
+   "last_change": {
+    "date": "2026-01-03",
+    "from": "Not Available",
+    "to": "Error"
+   },
+   "final_status": "Error"
+  },
+  {
+   "video_id": "7368154048836406544",
+   "creator": "yy0403_2",
+   "created": "May 12, 2024 at 06:40 PM",
+   "n_recorded_days": 279,
+   "first_date": "2025-04-09",
+   "last_date": "2026-01-14",
+   "status_day_counts": {
+    "Not Available": 261,
+    "Error": 18
+   },
+   "not_available_days": 261,
+   "available_days": 0,
+   "error_days": 18,
+   "not_available_pct_of_recorded_days": 93.5,
+   "n_transitions": 13,
+   "last_change_date": "2026-01-03",
+   "last_change": {
+    "date": "2026-01-03",
+    "from": "Not Available",
+    "to": "Error"
+   },
+   "final_status": "Error"
+  },
+  {
+   "video_id": "7074367286571814190",
+   "creator": "brynnemarieeee",
+   "created": "March 13, 2022 at 12:58 AM",
+   "n_recorded_days": 279,
+   "first_date": "2025-04-09",
+   "last_date": "2026-01-14",
+   "status_day_counts": {
+    "Error": 17,
+    "Not Available": 262
+   },
+   "not_available_days": 262,
+   "available_days": 0,
+   "error_days": 17,
+   "not_available_pct_of_recorded_days": 93.9,
+   "n_transitions": 10,
+   "last_change_date": "2026-01-03",
+   "last_change": {
+    "date": "2026-01-03",
+    "from": "Not Available",
+    "to": "Error"
+   },
+   "final_status": "Error"
+  },
+  {
+   "video_id": "7117394257064840490",
+   "creator": "brookemonk_",
+   "created": "July 07, 2022 at 12:44 AM",
+   "n_recorded_days": 279,
+   "first_date": "2025-04-09",
+   "last_date": "2026-01-14",
+   "status_day_counts": {
+    "Not Available": 261,
+    "Error": 18
+   },
+   "not_available_days": 261,
+   "available_days": 0,
+   "error_days": 18,
+   "not_available_pct_of_recorded_days": 93.5,
+   "n_transitions": 11,
+   "last_change_date": "2026-01-03",
+   "last_change": {
+    "date": "2026-01-03",
+    "from": "Not Available",
+    "to": "Error"
+   },
+   "final_status": "Error"
+  },
+  {
+   "video_id": "7134492331117595950",
+   "creator": "realnikocadoavocado",
+   "created": "August 22, 2022 at 02:34 AM",
+   "n_recorded_days": 279,
+   "first_date": "2025-04-09",
+   "last_date": "2026-01-14",
+   "status_day_counts": {
+    "Not Available": 264,
+    "Error": 15
+   },
+   "not_available_days": 264,
+   "available_days": 0,
+   "error_days": 15,
+   "not_available_pct_of_recorded_days": 94.6,
+   "n_transitions": 7,
+   "last_change_date": "2026-01-03",
+   "last_change": {
+    "date": "2026-01-03",
+    "from": "Not Available",
+    "to": "Error"
+   },
+   "final_status": "Error"
+  },
+  {
+   "video_id": "7164125023886691626",
+   "creator": "taylorswift",
+   "created": "November 09, 2022 at 10:04 PM",
+   "n_recorded_days": 279,
+   "first_date": "2025-04-09",
+   "last_date": "2026-01-14",
+   "status_day_counts": {
+    "Error": 18,
+    "Not Available": 261
+   },
+   "not_available_days": 261,
+   "available_days": 0,
+   "error_days": 18,
+   "not_available_pct_of_recorded_days": 93.5,
+   "n_transitions": 12,
+   "last_change_date": "2026-01-03",
+   "last_change": {
+    "date": "2026-01-03",
+    "from": "Not Available",
+    "to": "Error"
+   },
+   "final_status": "Error"
+  },
+  {
+   "video_id": "7376726215178128673",
+   "creator": "alandelantics",
+   "created": "June 04, 2024 at 09:05 PM",
+   "n_recorded_days": 279,
+   "first_date": "2025-04-09",
+   "last_date": "2026-01-14",
+   "status_day_counts": {
+    "Not Available": 264,
+    "Error": 15
+   },
+   "not_available_days": 264,
+   "available_days": 0,
+   "error_days": 15,
+   "not_available_pct_of_recorded_days": 94.6,
+   "n_transitions": 7,
+   "last_change_date": "2026-01-03",
+   "last_change": {
+    "date": "2026-01-03",
+    "from": "Not Available",
+    "to": "Error"
+   },
+   "final_status": "Error"
+  },
+  {
+   "video_id": "7332960275127110954",
+   "creator": "andyyahurd._",
+   "created": "March 27, 2024 at 10:33 PM",
+   "n_recorded_days": 279,
+   "first_date": "2025-04-09",
+   "last_date": "2026-01-14",
+   "status_day_counts": {
+    "Error": 20,
+    "Available": 213,
+    "Not Available": 46
+   },
+   "not_available_days": 46,
+   "available_days": 213,
+   "error_days": 20,
+   "not_available_pct_of_recorded_days": 16.5,
+   "n_transitions": 32,
+   "last_change_date": "2026-01-03",
+   "last_change": {
+    "date": "2026-01-03",
+    "from": "Available",
+    "to": "Error"
+   },
+   "final_status": "Error"
+  },
+  {
+   "video_id": "7347581705299053826",
+   "creator": "Evony",
+   "created": "March 18, 2024 at 07:09 AM",
+   "n_recorded_days": 279,
+   "first_date": "2025-04-09",
+   "last_date": "2026-01-14",
+   "status_day_counts": {
+    "Not Available": 263,
+    "Error": 16
+   },
+   "not_available_days": 263,
+   "available_days": 0,
+   "error_days": 16,
+   "not_available_pct_of_recorded_days": 94.3,
+   "n_transitions": 9,
+   "last_change_date": "2026-01-03",
+   "last_change": {
+    "date": "2026-01-03",
+    "from": "Not Available",
+    "to": "Error"
+   },
+   "final_status": "Error"
+  },
+  {
+   "video_id": "7376437810644946222",
+   "creator": "lauren.j734",
+   "created": "June 04, 2024 at 02:26 AM",
+   "n_recorded_days": 279,
+   "first_date": "2025-04-09",
+   "last_date": "2026-01-14",
+   "status_day_counts": {
+    "Not Available": 265,
+    "Error": 14
+   },
+   "not_available_days": 265,
+   "available_days": 0,
+   "error_days": 14,
+   "not_available_pct_of_recorded_days": 95.0,
+   "n_transitions": 5,
+   "last_change_date": "2026-01-03",
+   "last_change": {
+    "date": "2026-01-03",
+    "from": "Not Available",
+    "to": "Error"
+   },
+   "final_status": "Error"
+  },
+  {
+   "video_id": "7361448925972155679",
+   "creator": "tiktok",
+   "created": "March 25, 2024 at 08:08 PM",
+   "n_recorded_days": 238,
+   "first_date": "2025-05-20",
+   "last_date": "2026-01-14",
+   "status_day_counts": {
+    "Not Available": 224,
+    "Error": 14
+   },
+   "not_available_days": 224,
+   "available_days": 0,
+   "error_days": 14,
+   "not_available_pct_of_recorded_days": 94.1,
+   "n_transitions": 5,
+   "last_change_date": "2026-01-03",
+   "last_change": {
+    "date": "2026-01-03",
+    "from": "Not Available",
+    "to": "Error"
+   },
+   "final_status": "Error"
+  }
+ ]
+}
