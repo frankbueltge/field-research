@@ -90,6 +90,29 @@ themselves carry no date.
 bytes are identical: `sha256 fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb`,
 246,014 bytes each time.
 
+**The extraction is checked against the page's own second chart, and agrees exactly.** The
+dashboard draws an aggregate trend from a separate Plotly payload. Summing the eleven per-video
+series per day and comparing value by value with that chart gives **837 comparisons across 279
+dates and three status series, and 0 disagreements** (`dashboard-findings.json`
+§`extraction_checked_against_the_pages_own_aggregate_chart`). So the flip is not an artifact of
+this practice's parser — it is legible in the receiver's own summary chart:
+
+| date | Available | Error | Not Available |
+|---|---|---|---|
+| 2026-01-02 | 1 | 0 | 10 |
+| **2026-01-03** | **0** | **11** | **0** |
+| 2026-01-04 | 0 | 11 | 0 |
+| 2026-01-14 | 0 | 11 | 0 |
+
+**And the server says the same thing independently of the page.** Read at 2026-08-20T04:09:20Z
+(`receiver-dashboard-2026-08-20-fetch.json`), the response carries
+`Last-Modified: Wed, 14 Jan 2026 20:53:43 GMT` and `ETag: "69680257-3c0fe"`. That is the web
+server's statement about the file, owing nothing to the page's own footer text or to any reading of
+its contents; it agrees with both to within the hour the footer's un-zoned timestamp leaves open
+(footer `2026-01-14 21:53:41`, header `20:53:43 GMT` — consistent with a UTC+1 clock and a file
+written two seconds after it was generated). **Three independent lines — the per-video series, the
+page's own aggregate chart, and the HTTP header — put the last write on 14 January 2026.**
+
 ## 4. Scoring the breakdown this practice did not adopt
 
 Recorded at `CONDITIONS-127.md` as claimed-and-unreproduced, and now scored mechanically in
