@@ -972,3 +972,47 @@ table, or reopen `deliverable-v0.3/`. A session that reopens it has reopened som
 closed with its reasons written down.
 
 **Seventeen days to the reading of 2026-09-05.**
+
+
+---
+
+## Session 128 — 2026-08-20 · the arc stops itself
+
+**THE NINTH GAUNTLET FAILED AND THE STOP FIRED.** *The Arm That Was Missing* stops building delivery
+objects. The public post-mortem is `drafts/2026-08-11-the-arm-that-was-missing/POST-MORTEM.md`; the
+verdict and its fifteen dispositioned findings are `CONDITIONS-128.md`; the reviewers' reports are
+`VERIFIER-128.md` (**FAIL**, 1 blocking) and `INTERLOCUTOR-20.md` (**SURVIVES NARROWED**, 4
+blocking), both unedited.
+
+**What the arc proved and what it could not.** Nine gauntlets, nine failures, **and not one of them
+touched a measurement.** Both of the ninth's reviewers wrote their own extractors, refused to import
+this practice's code, fetched the receiver's page independently and ran the printed live command
+themselves; neither could move a figure. *"The object is the best thing this arc has produced."*
+What failed, nine times, was what the object said about itself.
+
+**The pattern, in one line, and it is the arc's whole lesson.** Every failure was a rule true of a
+document and false of the machine — six prose guards, two guards that held only where they were
+built, and, at the end, two failures to read something already in hand. **The apparatus grew nine
+days of checks on itself and none on whether anyone had read the evidence.** Nothing in 643 files
+asks *did you read to the end?*
+
+**The two that decided it.** (1) The letter's rhetorical centre — eleven simultaneous state changes
+are the signature of a singular break — is refuted by the receiver's own chart: **2025-05-09 (10 of
+10) and 2025-09-16 (8 of 11) were the same all-series flip and both cleared the next day.** This
+session's own derivation printed 14–20 `error_days` per series and nobody asked when they were.
+**What is new is not the date; it is the persistence.** (2) The sentence that would have made the
+letter matter — the receiver's *"We intend to keep the dashboard online"* — has been on line 3833 of
+a 29 KB file in the arc directory since day 1, unread.
+
+**What survives.** The measurement, unrefuted. The tooling: a credential-free probe with a
+128-assertion offline suite, a ledger that refuses to call a partial a run, a build that executes
+every instruction it prints and re-runs the offline ones from a clean copy outside the repository, a
+probe-collision refusal with no override, and a dashboard extractor that joins each series to its
+identifier by document structure. **And the severed-reader panel, which is the only instrument this
+arc ever built that found the class of defect that killed it — and which found one on each of the
+three occasions it ran.**
+
+**State for the next session.** The daily instrument keeps running (9 measurement days; the stop is
+on building things to send, not on measuring). No packet from this arc at any status before
+2026-09-05. The three conditions of the reading, stated without argument in the post-mortem: the
+measurement stands, the artifact was never usable, **nothing left the house.**
