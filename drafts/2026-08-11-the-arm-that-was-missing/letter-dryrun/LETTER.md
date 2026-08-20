@@ -1,43 +1,39 @@
 # All 11 series on your dashboard changed to Error on 2026-01-03, and it has recorded nothing since 2026-01-14
 
-*Measured and written by a machine research practice; Frank Bültge (https://frankbueltge.de) publishes it and answers for it. Nobody here has contacted you, and this letter has not been sent. The full note is at the end.*
+*A machine research practice measured and wrote this; Frank Bültge publishes it and answers for it. Nobody has been contacted and it has not been sent. Full note at the end.*
 
 ## What your own dashboard's data says
 
-Your report says: *"we publish a dashboard with a daily check of the availability of 10 videos
-that were not retrievable in the last month"* (arXiv:2506.09746). The dashboard now tracks 11,
-and we read it this morning at `https://playground.tiktok-audit.com/api-na/`. Its bytes are
-identical to the copies we saved on two earlier days, so nothing below turns on a stale
-capture.
+*TikTok's Research API: Problems Without Explanations*, published by AI Forensics (arXiv:2506.09746), says: *"we publish a dashboard with a daily check of the availability of 10 videos that were not retrievable in the last month."* The dashboard it points to now tracks 11, and we read it this morning at `https://playground.tiktok-audit.com/api-na/`. Its bytes are identical to the copies we saved on two earlier days, so nothing below turns on a stale capture.
 
 The page carries 11 per-video timelines that its summary tiles do not show. Read out of those
 bytes, they say this:
 
 - **Every one of the 11 series changes state for the last time on 2026-01-03** - 10 from *Not Available* and 1 from *Available*, all to *Error*, and none of them changes again.
 - **The record stops 11 days later, on 2026-01-14**, and has not moved in the 218 days since.
-- The tiles a visitor sees - 11 with errors, none available - therefore describe **2026-01-14**, not today, and the page does not say so beside them.
+- The tiles a visitor sees - 11 with errors, none available - therefore describe **2026-01-14**, not today. Your page does print `Dashboard generated on: 2026-01-14`, in its footer; the tiles themselves carry no date.
 - One of the 11, `7332960275127110954`, had been recorded *Available* on 213 of its 279 days. The 2026-01-03 flip took that one too.
 
-11 independently checked videos do not all change state on one day. That is the signature of
-the thing doing the checking, and your own page already says so in its own words: *"Note:
-Error are problems on our end, not TikTok."* **What is new here is the date.**
+Independently checked videos do not all change state on one day. That is the signature of the
+thing doing the checking, and your own page already says so in its own words: *"Note: Error
+are problems on our end, not TikTok."* **What is new here is the date.**
 
-We have not seen the code behind the dashboard and are not saying what broke. We are saying
-that whatever it was, it happened on 2026-01-03, and that the page has been serving a
-218-day-old count without a date on it ever since.
+We have not seen the code behind it and are not saying what broke - only that whatever it was,
+it happened on 2026-01-03.
 
 ## What we measured ourselves, this morning
 
-The command below ran at **2026-08-20T03:52:18Z**, from autonomous system **AS396982**,
+The command below ran at **2026-08-20T04:00:46Z**, from autonomous system **AS396982**,
 through the platform's public oEmbed endpoint (`https://www.tiktok.com/oembed?url=`) - no
 account, no research credential, one request per identifier and **5 immediate re-requests of
 every refusal** before believing it:
 
 > **10 of your 11 were publicly retrievable.** The rest: 1 not retrievable, and still not after 5 re-requests.
 
-Your record has 10 of the 11 as *Not Available* on between 224 and 265 of their recorded days.
-This is the third dated reading we have taken of these identifiers (2026-08-12, 2026-08-19,
-2026-08-20); 0 of the 11 changed state across the three.
+Your record has 10 of the 11 as *Not Available* on between 224 and 265 of their recorded days
+- **and 9 of those 10 answered a public request this morning.** This is the third dated
+reading we have taken of these identifiers (2026-08-12, 2026-08-19, 2026-08-20); 0 of the 11
+changed state across the three.
 
 ## What this cannot tell you
 
@@ -48,7 +44,7 @@ This is the third dated reading we have taken of these identifiers (2026-08-12, 
 
 ## Check all of it yourself
 
-**Everything the headline rests on is in this directory** - your dashboard's own bytes, the extractor, the derivation - and no step needs our cooperation. Every command below was executed by this letter's own build, here, and again from a copy made outside our repository; if any had failed, this letter would not exist. **Two figures are not reproducible here and we would rather say so than have you find out**: the re-request counts and the length of our daily series are computed from that series' ledger, which is not in this directory. Both files name their sources, and the ledger is in the public repository at the end of this letter.
+**Everything the headline rests on is in this directory** - your dashboard's bytes, the extractor, the derivation - and no step needs our cooperation. Every command below was run by this letter's own build, here; the 4 that need no network were run again from a copy made outside our repository, in a clean environment. If any had failed, this letter would not exist. **Two figures are not reproducible here**: the re-request counts and our series' length come from a daily ledger that is not in this directory. Both files name their sources, and that ledger is public in the repository named below.
 
 The first three read your dashboard's own bytes and need no network:
 
@@ -62,10 +58,9 @@ python3 extract_dashboard.py receiver-dashboard-2026-08-20.html -o receiver-seri
 python3 dashboard_findings.py receiver-series.json --reading your-eleven-today.json -o dashboard-findings.json
 ```
 
-The third reads the measurement shipped here; the last command below replaces that file with
-your own run, and then the third can be run again against it.
-
-The last two are the instrument and its measurement. The second one makes requests:
+The third of them reads the measurement shipped here; run the last command below and it writes
+your own in its place. Those last two are the instrument and its measurement, and the second
+makes requests:
 
 ```sh
 python3 selftest_presence_check.py
@@ -74,9 +69,9 @@ python3 selftest_presence_check.py
 python3 presence_check.py receiver-list.txt --baseline reference-baseline.json --label the-eleven -o your-eleven-today.json
 ```
 
-The probe also prints a comparison against a reference population of videos cited elsewhere on
-the public web. **This letter quotes no figure from it**; it is background,
-`reference-baseline.json` says what the population is, and we would not put weight on it.
+The probe also prints a comparison against a reference population described in
+`reference-baseline.json`. **This letter quotes no figure from it**, and neither should you
+without reading what that population is.
 
 Point the probe at your own list by replacing `receiver-list.txt` with one identifier per
 line. It sends no credential and keeps no identifier of yours - but **as printed it does
@@ -93,15 +88,14 @@ abandoned and therefore not counted. A started run is not a run, and `consecutiv
 
 ## Terms, and who answers for this
 
-Written and measured by **Meridian**, an autonomous research practice: the measuring, the
-writing and the checking were done by a machine practice, said plainly rather than left to be
-worked out. **Frank Bültge - https://frankbueltge.de - publishes it and carries responsibility
-for it.** The whole record, including every review this object and its predecessors failed, is
-public at `https://github.com/frankbueltge/field-research`. Nobody named here has been
-contacted; whether this is ever sent is his decision and not this practice's.
+Written and measured by **Meridian**, an autonomous research practice: a machine did the
+measuring, the writing and the checking. **Frank Bültge - https://frankbueltge.de - publishes
+it and carries responsibility for it.** The whole record, including every review this object
+and its predecessors failed, is public at `https://github.com/frankbueltge/field-research`.
+Nobody named here has been contacted; whether this is ever sent is his decision, not this
+practice's.
 
-If you use a figure from here, please carry the sentence it depends on. That is a request, not
-a condition on you. Data CC0 1.0, code Apache 2.0, text CC BY 4.0.
+**Version 2.0 of this object, built 2026-08-20T04:00:46Z.** If you use a figure from here, please carry the sentence it depends on - that is a request, not a condition on you, and the full set is `memory/downstream-commitments.md` in the repository above. Corrections and disputes have a route: open an issue there - a correction becomes a new dated entry, never a silent edit. Data CC0 1.0, code Apache 2.0, text CC BY 4.0.
 
 ## What is in this directory
 

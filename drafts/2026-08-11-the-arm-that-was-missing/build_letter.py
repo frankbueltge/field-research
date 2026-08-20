@@ -87,6 +87,9 @@ RECEIVER_QUOTE = ("we publish a dashboard with a daily check of the availability
                   "that were not retrievable in the last month")
 RECEIVER_REPORT = os.path.join(HERE, "receiver-report-2506.09746v2-extracted.txt")
 RECEIVER_REPORT_ID = "arXiv:2506.09746"
+RECEIVER_REPORT_TITLE = "TikTok's Research API: Problems Without Explanations"
+RECEIVER_ORG = "AI Forensics"
+OBJECT_VERSION = "2.0"
 DASH_NOTE = "Note: Error are problems on our end, not TikTok."
 
 # The one list of commands. Order is the order the letter prints them in.
@@ -386,6 +389,8 @@ def render(fx, out, F, C, S, R, hist, dash_hashes):
     day_lo = fx(F, "scoring_the_handed_over_breakdown", "day_range_found", 0)
     day_hi = fx(F, "scoring_the_handed_over_breakdown", "day_range_found", 1)
     n_group = fx(F, "scoring_the_handed_over_breakdown", "n_videos_found")
+    n_group_retr = fx(F, "scoring_the_handed_over_breakdown",
+                      "n_retrievable_now_in_that_group")
 
     ret_conf = fx(R, "genuine_transitions_only", "NOT-RETRIEVABLE->RETRIEVABLE", "confirmed")
     ret_n = fx(R, "genuine_transitions_only", "NOT-RETRIEVABLE->RETRIEVABLE", "n")
@@ -409,16 +414,16 @@ def render(fx, out, F, C, S, R, hist, dash_hashes):
     A("# All %d series on your dashboard changed to %s on %s, and it has recorded nothing "
       "since %s" % (n_flip, went_to, flip, last_date))
     A("")
-    A("*Measured and written by a machine research practice; %s (%s) publishes it and answers "
-      "for it. Nobody here has contacted you, and this letter has not been sent. The full note "
-      "is at the end.*" % (PERSON, PERSON_URL))
+    A("*A machine research practice measured and wrote this; %s publishes it and answers for "
+      "it. Nobody has been contacted and it has not been sent. Full note at the end.*"
+      % PERSON)
     A("")
     A("## What your own dashboard's data says")
     A("")
-    A("Your report says: *\"%s\"* (%s). The dashboard now tracks %d, and we read it this "
-      "morning at `%s`. Its bytes are identical to the copies we saved on two earlier days, so "
-      "nothing below turns on a stale capture."
-      % (RECEIVER_QUOTE, RECEIVER_REPORT_ID, n, DASH_URL))
+    A("*%s*, published by %s (%s), says: *\"%s.\"* The dashboard it points to now tracks %d, "
+      "and we read it this morning at `%s`. Its bytes are identical to the copies we saved on "
+      "two earlier days, so nothing below turns on a stale capture."
+      % (RECEIVER_REPORT_TITLE, RECEIVER_ORG, RECEIVER_REPORT_ID, RECEIVER_QUOTE, n, DASH_URL))
     A("")
     A("The page carries %d per-video timelines that its summary tiles do not show. Read out of "
       "those bytes, they say this:" % n)
@@ -434,13 +439,12 @@ def render(fx, out, F, C, S, R, hist, dash_hashes):
     A("- One of the %d, `%s`, had been recorded *Available* on %d of its %d days. The %s flip "
       "took that one too." % (n, outlier, outlier_av, outlier_n, flip))
     A("")
-    A("%d independently checked videos do not all change state on one day. That is the "
-      "signature of the thing doing the checking, and your own page already says so in its own "
-      "words: *\"%s\"* **What is new here is the date.**" % (n, DASH_NOTE))
+    A("Independently checked videos do not all change state on one day. That is the signature "
+      "of the thing doing the checking, and your own page already says so in its own words: "
+      "*\"%s\"* **What is new here is the date.**" % DASH_NOTE)
     A("")
-    A("We have not seen the code behind the dashboard and are not saying what broke. We are "
-      "saying that whatever it was, it happened on %s, and that the page has been serving a "
-      "%s-day-old count without a date on it ever since." % (flip, since))
+    A("We have not seen the code behind it and are not saying what broke - only that whatever "
+      "it was, it happened on %s." % flip)
     A("")
     A("## What we measured ourselves, this morning")
     A("")
@@ -453,9 +457,11 @@ def render(fx, out, F, C, S, R, hist, dash_hashes):
       % (buckets.get("RETRIEVABLE", 0), n, rest if rest else "nothing else"))
     A("")
     A("Your record has %d of the %d as *Not Available* on between %d and %d of their recorded "
-      "days. This is the third dated reading we have taken of these identifiers (%s); %d of "
-      "the %d changed state across the three."
-      % (n_group, n, day_lo, day_hi, ", ".join(d[:10] for d in hist["dates"]), n_changed, n))
+      "days - **and %d of those %d answered a public request this morning.** This is the third "
+      "dated reading we "
+      "have taken of these identifiers (%s); %d of the %d changed state across the three."
+      % (n_group, n, day_lo, day_hi, n_group_retr, n_group,
+         ", ".join(d[:10] for d in hist["dates"]), n_changed, n))
     A("")
     A("## What this cannot tell you")
     A("")
@@ -475,14 +481,14 @@ def render(fx, out, F, C, S, R, hist, dash_hashes):
     A("")
     A("## Check all of it yourself")
     A("")
-    A("**Everything the headline rests on is in this directory** - your dashboard's own bytes, "
-      "the extractor, the derivation - and no step needs our cooperation. Every command below "
-      "was executed by this letter's own build, here, and again from a copy made outside our "
-      "repository; if any had failed, this letter would not exist. **Two figures are not "
-      "reproducible here and we would rather say so than have you find out**: the re-request "
-      "counts and the length of our daily series are computed from that series' ledger, which "
-      "is not in this directory. Both files name their sources, and the ledger is in the public "
-      "repository at the end of this letter.")
+    A("**Everything the headline rests on is in this directory** - your dashboard's bytes, the "
+      "extractor, the derivation - and no step needs our cooperation. Every command below was "
+      "run by this letter's own build, here; the %d that need no network were run again from a "
+      "copy made outside our repository, in a clean environment. If any had failed, this "
+      "letter would not exist. **Two figures are not reproducible "
+      "here**: the re-request counts and our series' length come from a daily ledger that is "
+      "not in this directory. Both files name their sources, and that ledger is public in the "
+      "repository named below." % len(OFFLINE))
     A("")
     A("The first three read your dashboard's own bytes and need no network:")
     A("")
@@ -490,17 +496,16 @@ def render(fx, out, F, C, S, R, hist, dash_hashes):
     A(cmd_block(1))
     A(cmd_block(2))
     A("")
-    A("The third reads the measurement shipped here; the last command below replaces that file "
-      "with your own run, and then the third can be run again against it.")
-    A("")
-    A("The last two are the instrument and its measurement. The second one makes requests:")
+    A("The third of them reads the measurement shipped here; run the last command below and it "
+      "writes your own in its place. Those last two are the instrument and its measurement, "
+      "and the second makes requests:")
     A("")
     A(cmd_block(3))
     A(cmd_block(4))
     A("")
-    A("The probe also prints a comparison against a reference population of videos cited "
-      "elsewhere on the public web. **This letter quotes no figure from it**; it is background, "
-      "`reference-baseline.json` says what the population is, and we would not put weight on it.")
+    A("The probe also prints a comparison against a reference population described in "
+      "`reference-baseline.json`. **This letter quotes no figure from it**, and neither should "
+      "you without reading what that population is.")
     A("")
     A("Point the probe at your own list by replacing `receiver-list.txt` with one identifier "
       "per line. It sends no credential and keeps no identifier of yours - but **as printed it "
@@ -518,15 +523,19 @@ def render(fx, out, F, C, S, R, hist, dash_hashes):
     A("")
     A("## Terms, and who answers for this")
     A("")
-    A("Written and measured by **Meridian**, an autonomous research practice - a machine "
-      "practice did the measuring, the writing and the checking, said plainly rather than left "
-      "to be worked out. **%s - %s - publishes it and carries responsibility for it.** The "
+    A("Written and measured by **Meridian**, an autonomous research practice: a machine did "
+      "the measuring, the writing and the checking. **%s - %s - publishes it and carries "
+      "responsibility for it.** The "
       "whole record, including every review this object and its predecessors failed, is public "
       "at `%s`. Nobody named here has been contacted; whether this is ever sent is his "
       "decision, not this practice's." % (PERSON, PERSON_URL, REPO_URL))
     A("")
-    A("If you use a figure from here, please carry the sentence it depends on. That is a "
-      "request, not a condition on you. Data CC0 1.0, code Apache 2.0, text CC BY 4.0.")
+    A("**Version %s of this object, built %s.** If you use a figure from here, please carry "
+      "the sentence it depends on - that is a request, not a condition on you, and the full "
+      "set is `memory/downstream-commitments.md` in the repository above. Corrections and "
+      "disputes have a route: open an issue there - a correction becomes a new dated entry, "
+      "never a silent edit. Data CC0 1.0, code Apache 2.0, text CC BY 4.0."
+      % (OBJECT_VERSION, read_utc))
     A("")
     A("## What is in this directory")
     A("")
@@ -663,6 +672,7 @@ def main(argv=None):
     build = {
         "schema": "field-research/letter-build/1",
         "built_by": "build_letter.py, session 128, 2026-08-20",
+        "object_version": OBJECT_VERSION,
         "started_utc": started,
         "finished_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "conditions_this_build_is_bound_by": "CONDITIONS-127.md, items 1-7",

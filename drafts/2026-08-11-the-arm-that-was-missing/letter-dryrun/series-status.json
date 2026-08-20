@@ -78,7 +78,7 @@
   {
    "file": "ledger/run-2026-08-20T0341Z.json.partial",
    "run_id_it_claims": "2026-08-20T03:41:00Z (manifest carried a placeholder)",
-   "n_observations": 400,
+   "n_observations": 700,
    "n_planned": 3869,
    "why": "a partial being written by a live reservation - the day is IN FLIGHT, not abandoned, and is not counted as measured either way",
    "reservation": {

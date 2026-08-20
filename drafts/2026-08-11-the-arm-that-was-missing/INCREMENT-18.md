@@ -67,6 +67,16 @@ what was in the file nobody opened.**
 its 279 days** (76.3 %). The 2026-01-03 flip took it too. A video their own instrument had recorded
 as fine for most of nine months is inside the eleven that the page's tiles now count as errors.
 
+**And the rest of the file was read too, with nothing further to report.** Each card also carries a
+metadata table — creator, creation date, location, content type, hashtags, views, duration. Reading
+all eleven yields one thing worth recording and no finding: the panel includes the platform's own
+account (`7361448925972155679`, creator `tiktok`, and the one series that starts later, on
+2025-05-20) and an advertiser (`7347581705299053826`, creator `Evony`, location `XX`), which is
+consistent with the receiver's report having a section on advertisements and one on well-known
+accounts. **Nothing in the metadata changes any figure above.** It is recorded because the failure
+this increment exists to correct was not opening a file, and "we opened the rest of it and found
+nothing" is the only honest way to close that.
+
 **The tiles.** *11 tracked · 0 available · 0 unavailable · 11 with errors* are the record's state on
 **2026-01-14**. The page **does** print `Dashboard generated on: 2026-01-14 21:53:41` — stated here
 rather than left out, because it is the receiver's one defence against the charge that the page

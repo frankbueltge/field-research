@@ -7,7 +7,7 @@
   "series_source_bytes": 246014,
   "extractor": "extract_dashboard.py",
   "reading_file": "your-eleven-today.json",
-  "reading_started_utc": "2026-08-20T03:52:18Z",
+  "reading_started_utc": "2026-08-20T04:00:46Z",
   "reading_vantage_asn": "AS396982"
  },
  "record": {
