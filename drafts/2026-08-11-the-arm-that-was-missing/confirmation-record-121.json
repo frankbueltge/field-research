@@ -10,7 +10,8 @@
    "ledger/transition-confirm-2026-08-16.json",
    "ledger/transition-confirm-2026-08-18.json",
    "ledger/transition-confirm-2026-08-19.json",
-   "ledger/transition-confirm-2026-08-20.json"
+   "ledger/transition-confirm-2026-08-20.json",
+   "ledger/transition-confirm-2026-08-21.json"
   ],
   "corrections": "ledger/corrections.json",
   "corrections_sha256": "357cb2b332faa44fe605fc03882e3be5ba8699daa93fdc54e6128937a4a12ae6"
@@ -19,8 +20,8 @@
  "what_a_pass_is": "one further request to the same endpoint for the same identifier, at the instrument's own 1.0 s spacing, immediately after the reading being tested. A reading is CONFIRMED only if all five agree with it.",
  "all_readings": {
   "NOT-RETRIEVABLE->RETRIEVABLE": {
-   "n": 7,
-   "confirmed": 7,
+   "n": 9,
+   "confirmed": 9,
    "refuted": 0
   },
   "RETRIEVABLE->NOT-RETRIEVABLE": {
@@ -31,8 +32,8 @@
  },
  "genuine_transitions_only": {
   "NOT-RETRIEVABLE->RETRIEVABLE": {
-   "n": 5,
-   "confirmed": 5,
+   "n": 7,
+   "confirmed": 7,
    "refuted": 0
   },
   "RETRIEVABLE->NOT-RETRIEVABLE": {
@@ -398,6 +399,44 @@
     "NOT-RETRIEVABLE",
     "NOT-RETRIEVABLE",
     "NOT-RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-21.json",
+   "sidecar_sha256": "0a1c46a8c586d782bd6c35a2375f0dc3627b1b9cdf0369530f1802a0dd6e76c0",
+   "generated_utc": "2026-08-21T05:26:54Z",
+   "vid": "7263428144718302466",
+   "handle": "rinoa_kanzaki",
+   "direction": "NOT-RETRIEVABLE->RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-21.json",
+   "sidecar_sha256": "0a1c46a8c586d782bd6c35a2375f0dc3627b1b9cdf0369530f1802a0dd6e76c0",
+   "generated_utc": "2026-08-21T05:26:54Z",
+   "vid": "7637169134198983956",
+   "handle": "nlf.founder",
+   "direction": "NOT-RETRIEVABLE->RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
    ],
    "n_passes": 5,
    "confirmed": true,

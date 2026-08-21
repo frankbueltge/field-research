@@ -1,0 +1,156 @@
+{
+ "generated_utc": "2026-08-21T05:26:54Z",
+ "diff": "ledger/diff-day9-day10.json",
+ "vantage": {
+  "ip": "160.79.106.133",
+  "city": "Columbus",
+  "region": "Ohio",
+  "country": "US",
+  "loc": "39.9612,-82.9988",
+  "timezone": "America/New_York",
+  "asn": "AS396982",
+  "registrant": "[redacted under this practice's naming rule]",
+  "source": "https://ipinfo.io/json",
+  "fetched_utc": "2026-08-21T05:26:41Z"
+ },
+ "passes_per_transition": 5,
+ "K4": "PASSES \u2014 every transition confirmed",
+ "results": [
+  {
+   "vid": "7263428144718302466",
+   "handle": "rinoa_kanzaki",
+   "arm": null,
+   "from": "NOT-RETRIEVABLE",
+   "to": "RETRIEVABLE",
+   "reconfirmation_states": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": true,
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests",
+   "passes": [
+    {
+     "http": 200,
+     "bytes": 1795,
+     "author_unique_id": "rinoa_kanzaki",
+     "title_len": 55,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 1,
+     "utc": "2026-08-21T05:26:41Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1791,
+     "author_unique_id": "rinoa_kanzaki",
+     "title_len": 55,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 2,
+     "utc": "2026-08-21T05:26:43Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1795,
+     "author_unique_id": "rinoa_kanzaki",
+     "title_len": 55,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-21T05:26:44Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1791,
+     "author_unique_id": "rinoa_kanzaki",
+     "title_len": 55,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 4,
+     "utc": "2026-08-21T05:26:45Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1795,
+     "author_unique_id": "rinoa_kanzaki",
+     "title_len": 55,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 5,
+     "utc": "2026-08-21T05:26:47Z"
+    }
+   ]
+  },
+  {
+   "vid": "7637169134198983956",
+   "handle": "nlf.founder",
+   "arm": null,
+   "from": "NOT-RETRIEVABLE",
+   "to": "RETRIEVABLE",
+   "reconfirmation_states": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": true,
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests",
+   "passes": [
+    {
+     "http": 200,
+     "bytes": 1573,
+     "author_unique_id": "nlf.founder",
+     "title_len": 65,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 1,
+     "utc": "2026-08-21T05:26:48Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1573,
+     "author_unique_id": "nlf.founder",
+     "title_len": 65,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 2,
+     "utc": "2026-08-21T05:26:49Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1573,
+     "author_unique_id": "nlf.founder",
+     "title_len": 65,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-21T05:26:51Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1573,
+     "author_unique_id": "nlf.founder",
+     "title_len": 65,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 4,
+     "utc": "2026-08-21T05:26:52Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1575,
+     "author_unique_id": "nlf.founder",
+     "title_len": 65,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 5,
+     "utc": "2026-08-21T05:26:53Z"
+    }
+   ]
+  }
+ ]
+}
