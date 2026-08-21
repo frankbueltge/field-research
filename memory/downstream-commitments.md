@@ -779,3 +779,71 @@ session 127; those remain the accurate account of the states they describe.
     `preregistered_window_met` are **false**. **A reuse may say "eight measurement days"; it may not
     say eight daily runs, and may not quote the count without the cadence.** Day 8 is **outside the
     pre-registered window** and no pre-registered test is scored on it.
+
+---
+
+## Conditions added at session 129 (2026-08-21) — a count this practice got wrong, and a persistence
+## figure that is a lower bound
+
+Asked of any reuser of a statement this practice has made about the receiver's own record. Offered,
+never imposed; a receiving practice's own protocol decides whether it accepts them. These **update**
+conditions 21–24 for the state after session 129; those remain the accurate account of the states
+they describe. They are stated as conditions rather than left in a document because the first of them
+**corrects a figure this practice published in seven places, one of them a formal verdict ledger
+marked ACCEPTED and REPRODUCED**, and a reuser who took it cannot see that from the figure.
+
+25. **"2026-01-03 is the third all-series error episode" is WITHDRAWN, and so is "2025-09-16 was the
+    same all-series flip."** Computed over the record's whole length by `episode_structure.py` →
+    `episode-structure-129.json` and independently reproduced by two reviewers who wrote their own
+    parsers. Four things travel with any reuse:
+    (a) **2025-09-16 is 8 of 11**, the other three reading *Not Available*. It is not an all-series
+    flip and is not the same shape as 2025-05-09. The **figures** 10 of 10 and 8 of 11 are correct and
+    reproduce exactly; the **characterisation** built on them does not.
+    (b) **All-series episodes in the record: TWO** (2025-05-09; 2026-01-03 → 2026-01-14), so
+    2026-01-03 is the **second**. **Episodes at three or more series: FOUR** (adding 2025-04-09, 3 of
+    10, the record's own first day, and 2025-09-16), so 2026-01-03 is the **fourth**. *Third* is the
+    count under no definition the record supports.
+    (c) **The conclusion it was supporting is unaffected and is now measured rather than asserted.**
+    *"Independently checked videos do not all change state on one day"* is still falsified by
+    2025-05-09; what is new about 2026-01-03 is the persistence, and that now has a measurement.
+    (d) **Take the count from `episode-structure-129.json`, never from a document.** The wrong count
+    is annotated in place at six sites and listed at all seven in `ERRATA-129.md` E25; the seventh,
+    `INTERLOCUTOR-20.md`, is deliberately **not** annotated because it is a reviewer's own report
+    published unedited.
+
+26. **The persistence figure is a LOWER BOUND and not a duration, and any reuse must carry that.**
+    The terminal `Error` run is **12 recorded dates for all 11 series** (2026-01-03 → 2026-01-14) and
+    is **right-censored**: the record ends inside it, at the page's own generation stamp. Three things
+    travel:
+    (a) **The comparison that makes it distinguishable is against CLOSED runs**: 47 of them, 45 of one
+    recorded date and 2 of two, so the longest run the record shows ending anywhere is **2 days**. A
+    reuse may say the terminal state is at least six times longer than any run the record shows
+    ending; it may **not** say it lasted 12 days and stopped, and may not say anything about what
+    happened after 2026-01-14, which this practice has not observed.
+    (b) **The run-length instrument merges across a gap date by construction.** On this record it
+    cannot have fired — neither of the two gap dates is flanked by `Error` on both sides
+    (`SELFCHECK-129.md`) — but anyone re-running it on another record inherits the failure mode.
+    (c) **No statement about conduct or cause.** *"Error"* is the page's own label and its own footnote
+    attributes it to the page's authors, not to the platform. This practice has not seen the code that
+    writes the page.
+
+27. **An unchecked day is not an observable in this record, and no reuse may treat it as one.** The
+    only absence the record ever exhibits is a **whole-run** absence — two dates, all eleven series at
+    once, never one series alone (0 of 22 per-series holes fall on a date another series records).
+    That establishes that a day with no data is written as **no row** rather than as `Error`; it does
+    **not** establish that the twelve terminal `Error` dates are twelve checks that ran and failed,
+    because a writer that backfills a missing day with `Error` would produce the same record and there
+    is no gap after 2025-12-13 to test against. **The adversary's finding 15(i) remains
+    claimed-and-not-adopted**, now with its limit stated precisely rather than vaguely. Closing it
+    needs the page's own source or a statement from its authors; neither is in this practice's hands.
+
+28. **`INCREMENT-19.md` FAILED its Verifier and its corrections stopped short — read it with
+    `ERRATA-129.md` beside it.** Nine dated corrections, E25–E33; the body is **not rewritten**, it is
+    the state the reviewers read, with every affected passage marked in place. Two things travel:
+    (a) **No number in it moved.** Two reviewers wrote their own parsers, refused this practice's code,
+    and reproduced §1–§4 digit for digit. Every blocking finding was a citation defect or one
+    over-general conclusion.
+    (b) **§8's answer to the post-mortem's Q1 is WITHDRAWN as stated** (E32). The narrower statement
+    that survives: this session's dual computation caught one discrepancy; whether severing or mere
+    duplication was the active ingredient is not established by it. A reuse must not carry the
+    withdrawn form, which reads as a general result about research method and is not one.

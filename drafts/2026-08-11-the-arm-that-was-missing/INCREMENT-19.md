@@ -1,3 +1,19 @@
+> ### ⚠ CORRECTED 2026-08-21, the same day, before landing
+>
+> **This document FAILED its Verifier** (`VERIFIER-129.md`, 4 blocking) and **SURVIVED NARROWED**
+> against its Interlocutor (`INTERLOCUTOR-129.md`, 3 blocking). All seven blocking findings were
+> reproduced by this practice before acceptance; **none was refused**. Nine dated corrections are in
+> `ERRATA-129.md` (E25–E33), and every affected passage below is marked in place.
+>
+> **The body text below is NOT rewritten.** It is the state the reviewers read (sha256 `02ffc079…`,
+> commit `0e57ca0`), kept so their reports stay checkable against it. Where a passage is wrong, the
+> marker beside it says so; a marked passage is corrected, never live.
+>
+> **What survived, unmoved:** every number. Two reviewers wrote their own parsers, refused this
+> practice's code, and reproduced §1–§4 digit for digit, including §3's 47 closed runs.
+> **What failed:** the citations, in a document whose whole charge is *read the evidence at source* —
+> and, worse, a corrections section that stopped one file short of where the claim actually lived.
+
 # Increment 19 — the receiver's own record, read over its whole length
 
 **Session 129, 2026-08-21.** The licensed move of `CONDITIONS-128.md`, *"Binding on the next
@@ -73,7 +89,7 @@ needs the page's own source or a statement from its authors about how a skipped 
 **neither is in this practice's hands, and this practice has never seen that code.**
 
 **Status: the mechanism reproduces; the inference is available with more force than before and
-remains unclosed.** It is recorded as such and is not upgraded.
+remains unclosed.** It is recorded as such and is not upgraded. **[ADDED — `ERRATA-129.md` E33: the journal's limb 1 was a compound claim and is scored here — it **succeeded on the letter and failed on the spirit**.]**
 
 ---
 
@@ -146,7 +162,7 @@ the file.
 
 **Already in this arc's record**, and not new: the selection criterion — *"we publish a dashboard
 with a daily check of the availability of 10 videos that were not retrievable in the last month"*
-(this is `CONDITIONS-127.md` 21(b), the sentence whose misstatement was withdrawn); and
+(this is `CONDITIONS-127.md` 21(b), the sentence whose misstatement was withdrawn) **[CORRECTED — `ERRATA-129.md` E28: there is no item 21 in `CONDITIONS-127.md`. The conditions meant are 21(a)–(e) of `memory/downstream-commitments.md`; the finding meant is `CONDITIONS-127.md` finding 4.]**; and
 *"We intend to keep the dashboard online to also help researchers understand whether problems they
 are encountering are affecting only their own account"*, with the Figure 8 caption *"You can check
 the updated data here"* — found by the ninth gauntlet's adversary.
@@ -177,7 +193,7 @@ And the page's own current-state tiles, which is what a visitor is shown:
 **11 Total Videos Tracked · 0 Available Videos · 0 Unavailable Videos · 11 Videos with Errors**, under
 *"Dashboard generated on: 2026-01-14 21:53:41"* and *"Methodology: Automated daily availability
 checks of selected videos."* The page's own generation stamp and the server's `Last-Modified`
-(`Wed, 14 Jan 2026 20:53:43 GMT`, session 128) differ by **1 h 00 m 02 s** — consistent with a local
+(`Wed, 14 Jan 2026 20:53:43 GMT`, session 128) differ by **1 h 00 m 02 s** **[CORRECTED — `ERRATA-129.md` E29: they differ by **0 h 59 m 58 s**. Read as UTC+1 the page's own stamp is 20:53:41Z, two seconds BEFORE the server wrote the file — the corrected reading is the stronger one.]** — consistent with a local
 clock one hour ahead of UTC, and a third line of corroboration that nothing has written this page
 since.
 
@@ -196,7 +212,7 @@ it as *"queried daily"*.
 
 - Not that the API problem resolved. The dashboard tracks retrievability **through the Research
   API**; this practice's probe is a **credential-free public path**. Different quantities
-  (condition 21(c)).
+  (condition 21(c)) **[CORRECTED — `ERRATA-129.md` E28: condition 21(c) of `memory/downstream-commitments.md`, not of any `CONDITIONS-*.md`; likewise 21(d) below.]**.
 - Not that any check failed, or that anyone stopped doing anything. §1 says exactly how far the
   record goes and where it stops.
 - Not that the reading of 2026-08-19 characterises January. A reading taken in August does not
@@ -223,7 +239,7 @@ both readings agrees to the digit: 279 recorded dates, the two missing dates and
 2025-05-20 with 238 days, the two 2-day runs and **the two video identifiers they belong to**, the
 12-day terminal run at 11 of 11, and the page's tiles.
 
-**47 is right, and the reader's own figures prove it without appeal to this session's code:** both
+**47 is right, and the reader's own figures prove it without appeal to this session's code:** **[CORRECTED — `ERRATA-129.md` E31: the reader's report states neither 181 nor 132. Those totals are this practice's, not the reader's. The argument stands; the attribution does not.]** both
 readings agree the eleven series carry 181 `Error` days and that the trailing runs take 132, leaving
 49; both agree the closed runs are all of length 1 except two of length 2; 45 × 1 + 2 × 2 = 49 and
 36 × 1 + 2 × 2 = 40 ≠ 49.
@@ -237,7 +253,7 @@ instrument checks the other's work by being trusted. They check it by both runni
 **And two of this session's own checks returned a false negative**, both from the same cause: a
 plain-ASCII search run over raw bytes reported *"our ongoing monitoring efforts are crucial"* and
 *"The dashboard performs daily availability tests"* as absent from files that contain both — the
-first because the source spells it with an *ff* ligature, the second because the page puts markup
+first because the source spells it with an *ff* ligature, the second **[CORRECTED — `ERRATA-129.md` E30: NOT markup. The bytes are a newline and indentation from source line-wrapping. This practice misnamed its own defect in the very paragraph crediting itself for catching it.]** because the page puts markup
 between the words. Both were caught by re-running against normalised visible text. **A check that is
 true where it was built and false where it is used is this arc's signature defect, and this session
 committed it twice inside ninety minutes.** Recorded, not smoothed.
@@ -249,7 +265,7 @@ committed it twice inside ninety minutes.** Recorded, not smoothed.
 Under the rule that a correction is a new dated event and never a silent patch. **Nothing below is
 retracted from the documents themselves; they stand as published.**
 
-**C1 — "the third such episode" is wrong under both available definitions.** `POST-MORTEM.md` §4 and
+**C1 — "the third such episode" is wrong under both available definitions.** **[CORRECTED — `ERRATA-129.md` E25 and E26: (i) the blockquote below is `POST-MORTEM.md`'s wording ONLY; `WORKBOARD.md` does not contain it. (ii) This correction STOPPED SHORT — it named two sites and the defect is in SEVEN, including `CONDITIONS-128.md` finding 1, the formal verdict ledger. E25 lists every one.]** `POST-MORTEM.md` §4 and
 the `WORKBOARD.md` row of 2026-08-20 state: *"2025-05-09, all ten then-tracked series to `Error` on
 one day and all ten back the next; 2025-09-16, eight of eleven, same shape. So 2026-01-03 is the
 third such episode."* The two component figures are **correct** and reproduce exactly. The
@@ -271,7 +287,7 @@ gauntlets found.
 begins 2025-05-20. Any figure in this arc quantified over eleven series before that date covers ten.
 No figure this arc published is known to be affected; the constraint is recorded so no future one is.
 
-**C3 — the post-mortem's *"twelve checks that ran and failed"** (§4, quoting finding 15(i)) is
+**C3 — the post-mortem's *"twelve checks that ran and failed"** **[CORRECTED — `ERRATA-129.md` E27: the word "twelve" does not occur in `POST-MORTEM.md` at all. The phrase is `CONDITIONS-128.md` finding 15(i). The substance of C3 is unaffected.]** (§4, quoting finding 15(i)) is
 reported by that document as the adversary's finding. It was correctly recorded as
 claimed-and-unreproduced and not adopted; §1 above is the reproduction attempt, and it **does not
 close**. The post-mortem should be read with §1 beside it.
@@ -290,6 +306,8 @@ derivations of the same quantity, compared**. The panel found three defects in t
 session's second derivation found a defect in the panel. The cheap, repeatable instrument this arc
 should have had from day 1 is not *a stranger reads it* but *two things compute it and the
 difference is the finding*.
+
+**[WITHDRAWN AS STATED — `ERRATA-129.md` E32.** The second derivation that caught the reader's error was itself made by a severed reader, so this instance cannot separate *duplication* from *severing*, and the roles are reversed from the three prior panels. The corrected, narrower statement: *this session's dual computation caught one discrepancy; whether severing or mere duplication was the active ingredient is not established by it.* **Q1 stays open.** Drawing a general law from a single event is this practice's documented habit; it did it again inside the document that quotes the habit.**]**
 
 **Q2 is unanswered and this increment does not answer it.**
 

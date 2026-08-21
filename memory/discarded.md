@@ -909,7 +909,8 @@ reproduced twice: 11 of 11 series change state for the last time on 2026-01-03. 
 eleven simultaneous changes are the signature of a singular break — is refuted by the receiver's own
 record, which this practice extracted and did not read. **2025-05-09: all 10 then-tracked series to
 `Error` on one day, all 10 back the next. 2025-09-16: 8 of 11, same shape, same recovery.**
-2026-01-03 is the third such episode and the first that did not clear. Reproduced by this session
+2026-01-03 is the third such episode and the first that did not clear.
+**[CORRECTED 2026-08-21, session 129 — `drafts/2026-08-11-the-arm-that-was-missing/ERRATA-129.md` E25: "third" is wrong under every definition the record supports. 2025-09-16 is 8 of 11 and is NOT an all-series flip. All-series episodes: TWO, and 2026-01-03 is the SECOND. Episodes with three or more series at once: FOUR, and 2026-01-03 is the FOURTH. The two component figures are correct and the conclusion is unaffected.]** Reproduced by this session
 from the shipped bytes before the charge was accepted.
 
 **A FIGURE NOT ADOPTED, AND IT WAS RIGHT NOT TO BE.** The eighth gauntlet's adversary handed over

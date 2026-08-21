@@ -1828,3 +1828,71 @@ dashboard with a daily check of the availability of 10 videos that were not retr
 month"* (arXiv:2506.09746, *TikTok's Research API: Problems Without Explanations*, AI Forensics).
 The eighth gauntlet found the previous letter stating this backwards; `build_letter.py` now fails
 unless the quotation is found verbatim in the extracted report text in this directory.
+
+---
+
+## Session 129 — 2026-08-21 — the receiver's record read over its whole length
+
+*Every figure below was recomputed by two reviewers who wrote their own parsers and refused this
+practice's code (`VERIFIER-129.md`, `INTERLOCUTOR-129.md`). **Not one moved.** Both reviews
+nevertheless found defects — all of them in citations and in one over-general conclusion, none in a
+number: `CONDITIONS-129.md`, `ERRATA-129.md` E25–E33. Source: `episode_structure.py` →
+`episode-structure-129.json`, over `receiver-series-2026-08-19.json` / the saved page
+`receiver-dashboard-2026-08-19.html` (sha256 `fff0a66f…`).*
+
+**THE RECORD, WHOLE.** 2025-04-09 → 2026-01-14: **279 recorded dates across a 281-day span**, eleven
+series, ten beginning 2025-04-09 (279 days each) and one — `7361448925972155679` — beginning
+**2025-05-20** (238 days). **Any statement about "all eleven" before 2025-05-20 is false**, and this
+practice has made one.
+
+**THE ABSENT-ROW CONTROL: THE MECHANISM REPRODUCES, THE INFERENCE DOES NOT CLOSE.** Exactly **two
+dates carry no row for any series** — 2025-05-23 and 2025-12-13; an independent reader confirmed on
+the raw bytes that neither date string occurs anywhere in the 246,014-byte file. **And the sharper
+form, which nobody had computed: every series has exactly 2 holes inside its own span, and 0 of
+those 22 falls on a date any other series records** — the record contains **no instance** of one
+video missing a day while the others have one. So the only absence it ever exhibits is a whole-run
+absence, and the twelve terminal dates carry **132 written rows**. **What is NOT established:** that
+the writer never backfills. There is no gap after 2025-12-13 to test it against. The adversary's
+*"twelve checks that ran and failed"* (`CONDITIONS-128.md` finding 15(i)) is **available with more
+force than before and still not adopted.**
+
+**THE ERROR STRUCTURE, AND IT CORRECTS THIS PRACTICE'S OWN PUBLISHED COUNT.** Over the 267 dates
+before 2026-01-03 the breadth histogram is **241 / 18 / 5 / 1 / 1 / 1** dates at 0 / 1 / 2 / 3 / 8 /
+10 simultaneous errors. **All-series episodes in the whole record: TWO** — 2025-05-09 (10 of 10) and
+2026-01-03 → 2026-01-14 (11 of 11). **Episodes at three or more: FOUR** — adding 2025-04-09 (3 of 10,
+the record's first day) and 2025-09-16 (8 of 11, three series reading *Not Available*). **2025-09-16
+is NOT an all-series flip and is not "the same shape" as 2025-05-09**, and **"the third such episode"
+— which this practice accepted at the ninth gauntlet and printed in seven places — is the count
+under no definition the record supports** (E25).
+
+**THE PERSISTENCE CLAIM, MEASURED FOR THE FIRST TIME.** Per-series maximal `Error` runs: **47 closed
+runs — 45 of one recorded date, 2 of two** (`7332960275127110954` 2025-05-20/21;
+`7117394257064840490` 2025-06-24/25) — plus **11 right-censored runs of 12** (2026-01-03 →
+2026-01-14). Arithmetic the file's own totals force: 181 Error days = 132 trailing + 49 closed, and
+45×1 + 2×2 = 49. **The terminal state is distinguishable from every earlier one three ways** — six
+times longer than the longest run the record shows ending, the only sustained full-breadth episode,
+and the only one the record does not show ending. **The third is a limit, not a strength: the run is
+right-censored and its length is a lower bound, never a duration.** A gap inside a run would have
+merged two runs into one; checked, and **neither gap is flanked by `Error` on both sides**, so no run
+in this record spans a gap (`SELFCHECK-129.md`).
+
+**THE REPORT, READ TO ITS LAST LINE** (4,634 lines, `receiver-report-2506.09746v2-extracted.txt`).
+New to this repository, verified verbatim and found nowhere else in it: the Conclusion's own resource
+line — *"We plan to release timely updates regarding any improvements or fixes that have been
+implemented. **A dashboard of the videos queried daily is available at:
+https://playground.tiktok-audit.com/api-na/**"*. It is the **fourth** present-tense published
+statement by the authors that the dashboard is running, and the first this arc has held. Also
+reproduced from the page's own visible prose, closing `CONDITIONS-128.md` finding 15(v) which was
+handed over and never checked: *"we designed this dashboard **to track if and when the platform
+resolves it**. The dashboard performs daily availability tests on selected number of videos that are
+missing from the API."* And the tiles a visitor is shown today: **11 Total Videos Tracked, 0
+Available, 0 Unavailable, 11 Videos with Errors**, under *"Dashboard generated on: 2026-01-14
+21:53:41"*. That stamp read as UTC+1 is `20:53:41Z` — **two seconds before** the server's
+`Last-Modified: Wed, 14 Jan 2026 20:53:43 GMT`, the order a generate-then-write produces (E29
+corrects this practice's own arithmetic, which had it as 1 h 00 m 02 s the wrong way).
+
+**THE SEVERED READER WAS WRONG ABOUT ONE NUMBER, AND ONLY A SECOND DERIVATION CAUGHT IT.** The reader
+reported the closed runs as *"36 of the 38"*; the count is **47**. Everything else in both readings
+agreed to the digit. **What this does NOT establish** (E32, and it is withdrawn as first stated):
+whether the active ingredient is duplication or severing. The second derivation was itself made by a
+severed reader. **One event, two hypotheses, no separation.**

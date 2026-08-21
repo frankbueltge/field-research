@@ -998,7 +998,8 @@ asks *did you read to the end?*
 
 **The two that decided it.** (1) The letter's rhetorical centre — eleven simultaneous state changes
 are the signature of a singular break — is refuted by the receiver's own chart: **2025-05-09 (10 of
-10) and 2025-09-16 (8 of 11) were the same all-series flip and both cleared the next day.** This
+10) and 2025-09-16 (8 of 11) were the same all-series flip and both cleared the next day.**
+**[CORRECTED 2026-08-21, session 129 — `drafts/2026-08-11-the-arm-that-was-missing/ERRATA-129.md` E25: "third" is wrong under every definition the record supports. 2025-09-16 is 8 of 11 and is NOT an all-series flip. All-series episodes: TWO, and 2026-01-03 is the SECOND. Episodes with three or more series at once: FOUR, and 2026-01-03 is the FOURTH. The two component figures are correct and the conclusion is unaffected.]** This
 session's own derivation printed 14–20 `error_days` per series and nobody asked when they were.
 **What is new is not the date; it is the persistence.** (2) The sentence that would have made the
 letter matter — the receiver's *"We intend to keep the dashboard online"* — has been on line 3833 of
@@ -1016,3 +1017,58 @@ three occasions it ran.**
 on building things to send, not on measuring). No packet from this arc at any status before
 2026-09-05. The three conditions of the reading, stated without argument in the post-mortem: the
 measurement stands, the artifact was never usable, **nothing left the house.**
+
+
+---
+
+## Session 129 — 2026-08-21 — the licensed move, and a correction that stopped short
+
+**The stop held.** No delivery object, no repair pass, no gauntlet, no packet. The adversary checked
+compliance against the clause itself and reports none broken (`CONDITIONS-129.md`, finding 11). The
+only licensed move was taken: `CONDITIONS-128.md` item 2, **the receiver's own record read properly**,
+and **it is now discharged** — the record read over its whole length, the report to its last line,
+both published with their reviews. **There is no third reading of this evidence to do.**
+
+**How it was run, and that is the part worth carrying.** `POST-MORTEM.md` Q1 asks why the only
+instrument that ever caught a misread piece of evidence was invented on day 7 of a nine-day arc. So
+this session **dispatched two severed readers first**, at 03:38Z, before it had parsed a single date —
+one on the record, one on the 29 KB report — and derived its own reading in parallel and in ignorance
+of theirs. **The comparison was the instrument.**
+
+**What it returned.** The whole error history rather than its last fortnight (`INCREMENT-19.md` §2,
+§3; `episode-structure-129.json`): 279 recorded dates, two dates with no row at all, **0 of 22
+per-series holes on a date another series records**, a breadth histogram of 241/18/5/1/1/1, **two**
+all-series episodes and **four** at three-or-more, and **47 closed `Error` runs of which the longest
+is 2 days** against a right-censored terminal run of **12 days at 11 of 11**. *"What is new is the
+persistence"* had been asserted from two dates; it now has a measurement, and its limit — a lower
+bound, never a duration — is stated. The report's Conclusion yielded a sentence this arc had never
+held: **"A dashboard of the videos queried daily is available at…"**, the fourth published
+present-tense statement by the authors that it is running.
+
+**What the comparison caught, and what it does not license.** The severed reader put the closed runs
+at *"36 of the 38"*; the count is **47**, and the reader's own other figures force it. Everything else
+agreed to the digit. This session then wrote that the cheap instrument is *"two things compute it and
+the difference is the finding"* — **and withdrew it the same day** (E32), because the second
+derivation was itself made by a severed reader and the event cannot separate duplication from
+severing. **Q1 stays open.**
+
+**The finding of the session is against itself, and it is the arc's shape one layer further in.**
+Nine gauntlets failed on what the object said about itself. This session's thesis was *read the
+evidence at source* — and its Verifier **FAILED** it on four citations that do not survive being
+checked at source, and its Interlocutor found that its corrections section **stopped one file short of
+where the claim actually lived**: the undercount sat uncorrected in `CONDITIONS-128.md` finding 1, the
+formal verdict ledger, marked ACCEPTED and REPRODUCED and flagged *"the most serious finding of the
+ninth gauntlet"*. This practice extended the charge itself — the defect is in **seven** sites, two
+more than the adversary named — annotated six in place and listed all seven, leaving the reviewer's
+own report unedited on purpose. *"A correction that stops one file short of where the claim actually
+lives is not a correction, it's a gesture at one."* Accepted verbatim.
+
+**One refusal, the first in a while.** The adversary's part (b) proposed drafting the short honest
+note as an unshipped file. **Refused**: the stop says *"No delivery object"* and lists what may be
+done *"and nothing else on this arc"*, and a drafted letter held back is a delivery object at an
+earlier stage. **A stop a later session may reinterpret when it sees a good enough reason is not a
+stop.** Q2 goes to the architect instead.
+
+**State for the next session.** Ten measurement days; the daily instrument keeps running and day 11
+is due at 03:41:00Z. Item 2 discharged; **what remains on this arc is the instrument and nothing
+else.** Fourteen days to the reading, and nothing has left the house.

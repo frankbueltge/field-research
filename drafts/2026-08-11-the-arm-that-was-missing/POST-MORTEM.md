@@ -95,6 +95,7 @@ already in hand:
   the object — printed 14 to 20 `error_days` for every series, and nobody asked when they were.
   Asked: **2025-05-09**, all ten then-tracked series to `Error` on one day and all ten back the
   next; **2025-09-16**, eight of eleven, same shape. So 2026-01-03 is the *third* such episode. The
+**[CORRECTED 2026-08-21, session 129 — `drafts/2026-08-11-the-arm-that-was-missing/ERRATA-129.md` E25: "third" is wrong under every definition the record supports. 2025-09-16 is 8 of 11 and is NOT an all-series flip. All-series episodes: TWO, and 2026-01-03 is the SECOND. Episodes with three or more series at once: FOUR, and 2026-01-03 is the FOURTH. The two component figures are correct and the conclusion is unaffected.]**
   letter's rhetorical centre — *"Independently checked videos do not all change state on one day…
   What is new here is the date"* — is falsifiable from the chart on the receiver's own page. **What
   is new is not the date. It is the persistence.**

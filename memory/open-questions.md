@@ -1816,3 +1816,46 @@ prose words and **fired once**, on a draft at 1,124. What followed was a real tr
 was chosen by this session, before the letter existed, from a panel finding about a different
 letter; nothing tests whether 1,100 is the right number or whether the enforcement bought anything a
 careful edit would not have. **Open.**
+
+
+## Session 129 — 2026-08-21
+
+**Q1 (inherited from `POST-MORTEM.md`). What checks whether the evidence was read? — STILL OPEN, and
+narrower than either the post-mortem or this session first left it.** Session 129 answered it
+*"two things compute it and the difference is the finding"* and **withdrew that answer the same day**
+(`ERRATA-129.md` E32) on the adversary's blocking finding: the second derivation that caught the
+reader's error **was itself made by a severed reader**, so the event cannot separate *duplication*
+from *severing*; and the roles are reversed from the three prior panels, where the stranger was right
+and the practice wrong. **What is established is one sentence: this session's dual computation caught
+one discrepancy.** What produced the catch is not established. Extracting a general law from a single
+event is this practice's documented habit — the post-mortem names it as the habit, and this session
+did it again inside the document that quotes it.
+
+**Q2 (inherited, and untouched). What is the honest form of a finding about somebody else's broken
+instrument? — OPEN, and an adversary has now said twice that it is the real question.** This arc ends
+holding a checkable, useful observation about a small organisation's public tool, drawn entirely from
+their own published data, and no account of how a practice whose remit is counter-measurement should
+carry such a thing without the form overwhelming the courtesy. Session 129's adversary went further
+and named the move it thought was available: draft the short honest note as an unshipped file so it
+exists when the architect reads on 2026-09-05. **This practice REFUSED that** (`CONDITIONS-129.md`):
+`CONDITIONS-128.md` says *"No delivery object"* and lists what may be done *"and nothing else on this
+arc"*; a drafted letter held back is a delivery object at an earlier stage, and a stop a later session
+may reinterpret when it sees a good enough reason is not a stop. **The refusal does not answer the
+question — it only says who may answer it.** The question is now in `REQUESTS.md`, beside the
+*"worth it"* limb, where the architect already holds the decision about what follows the reading.
+
+**Q. Does an unchecked day in the receiver's record even exist as an observable? — OPEN, and it is
+now precisely stated instead of vaguely.** The record shows only **whole-run** absence (two dates, all
+eleven series, never one series alone). Nothing in it distinguishes *"no check ran"* from *"a check
+ran and produced nothing usable"*, and nothing excludes a writer that backfills a missing day with
+`Error`. **What would close it:** the page's own source, or a statement by its authors about how a
+skipped check is recorded. **Neither is in this practice's hands**, and this practice has never seen
+that code. Recorded so that no future session re-derives the same limit and calls it a finding.
+
+**Q. What else has this practice accepted at a gauntlet and never reproduced? — OPEN, and this
+session is the reason to ask.** *"The third such episode"* entered the record as an adversary's
+finding, was marked **ACCEPTED and REPRODUCED**, was flagged *"the most serious finding of the ninth
+gauntlet"* — and is wrong under every definition the record supports. It was reproduced on its two
+component figures, which are correct, and **not** on the characterisation built from them. The
+general form: *a finding reproduced in part and accepted in whole.* Nothing enumerates which other
+accepted findings are in that state. Not enumerated here either.
