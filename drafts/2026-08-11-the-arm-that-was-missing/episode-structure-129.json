@@ -1,0 +1,3164 @@
+{
+ "schema": "field-research/episode-structure/1",
+ "generated_by": "episode_structure.py, session 129, 2026-08-21",
+ "input": {
+  "series_file": "receiver-series-2026-08-19.json",
+  "series_source_file": "receiver-dashboard-2026-08-19.html",
+  "extractor": {
+   "script": "extract_dashboard.py",
+   "method": "html.parser element walk; each series is joined to the identifier of the `div.video-card` element that contains it; Plotly arguments parsed with json.JSONDecoder().raw_decode",
+   "refuses": "no imputation: a card without an identifier, a chart without x, or a y value outside the axis's own tickvals is reported, never repaired"
+  }
+ },
+ "status_mapping_read_from_the_charts_own_axis": {
+  "0": "Not Available",
+  "1": "Error",
+  "2": "Available"
+ },
+ "series_coverage": {
+  "7366758818765638917": {
+   "first_recorded_date": "2025-04-09",
+   "last_recorded_date": "2026-01-14",
+   "n_recorded_days": 279,
+   "state_counts": {
+    "Not Available": 263,
+    "Error": 16
+   }
+  },
+  "7368154048836406544": {
+   "first_recorded_date": "2025-04-09",
+   "last_recorded_date": "2026-01-14",
+   "n_recorded_days": 279,
+   "state_counts": {
+    "Not Available": 261,
+    "Error": 18
+   }
+  },
+  "7074367286571814190": {
+   "first_recorded_date": "2025-04-09",
+   "last_recorded_date": "2026-01-14",
+   "n_recorded_days": 279,
+   "state_counts": {
+    "Error": 17,
+    "Not Available": 262
+   }
+  },
+  "7117394257064840490": {
+   "first_recorded_date": "2025-04-09",
+   "last_recorded_date": "2026-01-14",
+   "n_recorded_days": 279,
+   "state_counts": {
+    "Not Available": 261,
+    "Error": 18
+   }
+  },
+  "7134492331117595950": {
+   "first_recorded_date": "2025-04-09",
+   "last_recorded_date": "2026-01-14",
+   "n_recorded_days": 279,
+   "state_counts": {
+    "Not Available": 264,
+    "Error": 15
+   }
+  },
+  "7164125023886691626": {
+   "first_recorded_date": "2025-04-09",
+   "last_recorded_date": "2026-01-14",
+   "n_recorded_days": 279,
+   "state_counts": {
+    "Error": 18,
+    "Not Available": 261
+   }
+  },
+  "7376726215178128673": {
+   "first_recorded_date": "2025-04-09",
+   "last_recorded_date": "2026-01-14",
+   "n_recorded_days": 279,
+   "state_counts": {
+    "Not Available": 264,
+    "Error": 15
+   }
+  },
+  "7332960275127110954": {
+   "first_recorded_date": "2025-04-09",
+   "last_recorded_date": "2026-01-14",
+   "n_recorded_days": 279,
+   "state_counts": {
+    "Error": 20,
+    "Available": 213,
+    "Not Available": 46
+   }
+  },
+  "7347581705299053826": {
+   "first_recorded_date": "2025-04-09",
+   "last_recorded_date": "2026-01-14",
+   "n_recorded_days": 279,
+   "state_counts": {
+    "Not Available": 263,
+    "Error": 16
+   }
+  },
+  "7376437810644946222": {
+   "first_recorded_date": "2025-04-09",
+   "last_recorded_date": "2026-01-14",
+   "n_recorded_days": 279,
+   "state_counts": {
+    "Not Available": 265,
+    "Error": 14
+   }
+  },
+  "7361448925972155679": {
+   "first_recorded_date": "2025-05-20",
+   "last_recorded_date": "2026-01-14",
+   "n_recorded_days": 238,
+   "state_counts": {
+    "Not Available": 224,
+    "Error": 14
+   }
+  }
+ },
+ "absent_row_control": {
+  "record_first_date": "2025-04-09",
+  "record_last_date": "2026-01-14",
+  "calendar_days_in_span": 281,
+  "recorded_dates": 279,
+  "dates_missing_from_the_whole_record": [
+   "2025-05-23",
+   "2025-12-13"
+  ],
+  "n_dates_missing_from_the_whole_record": 2,
+  "per_series_holes": {
+   "7366758818765638917": {
+    "n_holes_inside_own_span": 2,
+    "n_of_those_on_dates_other_series_do_record": 0,
+    "examples": []
+   },
+   "7368154048836406544": {
+    "n_holes_inside_own_span": 2,
+    "n_of_those_on_dates_other_series_do_record": 0,
+    "examples": []
+   },
+   "7074367286571814190": {
+    "n_holes_inside_own_span": 2,
+    "n_of_those_on_dates_other_series_do_record": 0,
+    "examples": []
+   },
+   "7117394257064840490": {
+    "n_holes_inside_own_span": 2,
+    "n_of_those_on_dates_other_series_do_record": 0,
+    "examples": []
+   },
+   "7134492331117595950": {
+    "n_holes_inside_own_span": 2,
+    "n_of_those_on_dates_other_series_do_record": 0,
+    "examples": []
+   },
+   "7164125023886691626": {
+    "n_holes_inside_own_span": 2,
+    "n_of_those_on_dates_other_series_do_record": 0,
+    "examples": []
+   },
+   "7376726215178128673": {
+    "n_holes_inside_own_span": 2,
+    "n_of_those_on_dates_other_series_do_record": 0,
+    "examples": []
+   },
+   "7332960275127110954": {
+    "n_holes_inside_own_span": 2,
+    "n_of_those_on_dates_other_series_do_record": 0,
+    "examples": []
+   },
+   "7347581705299053826": {
+    "n_holes_inside_own_span": 2,
+    "n_of_those_on_dates_other_series_do_record": 0,
+    "examples": []
+   },
+   "7376437810644946222": {
+    "n_holes_inside_own_span": 2,
+    "n_of_those_on_dates_other_series_do_record": 0,
+    "examples": []
+   },
+   "7361448925972155679": {
+    "n_holes_inside_own_span": 2,
+    "n_of_those_on_dates_other_series_do_record": 0,
+    "examples": []
+   }
+  },
+  "established": "(A) The record can and does represent a date with no row: 2 calendar dates inside the record's own span carry no row for any series.",
+  "not_established": "(B) That an unchecked day is written as a missing row RATHER THAN as `Error`. That is a statement about the code that writes this page. This practice has not seen that code and cannot see it from the page. The adversary's inference - that the terminal `Error` days are checks that ran and failed - is AVAILABLE on this evidence and is NOT ESTABLISHED by it.",
+  "what_would_close_it": "The page's own source, or a statement by its authors about how a skipped check is recorded. Neither is in this practice's hands."
+ },
+ "all_rows_error_episodes": [
+  {
+   "first_recorded_date": "2025-05-09",
+   "last_recorded_date": "2025-05-09",
+   "n_recorded_dates_in_episode": 1,
+   "calendar_span_days": 1,
+   "n_series_with_a_row_on_first_date": 10,
+   "n_series_with_a_row_on_last_date": 10,
+   "state_of_the_record_before": null,
+   "recorded_date_before": "2025-05-08",
+   "counts_before": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "recorded_date_after": "2025-05-10",
+   "counts_after": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "cleared": true,
+   "days_to_next_recorded_date": 1
+  },
+  {
+   "first_recorded_date": "2026-01-03",
+   "last_recorded_date": "2026-01-14",
+   "n_recorded_dates_in_episode": 12,
+   "calendar_span_days": 12,
+   "n_series_with_a_row_on_first_date": 11,
+   "n_series_with_a_row_on_last_date": 11,
+   "state_of_the_record_before": null,
+   "recorded_date_before": "2026-01-02",
+   "counts_before": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "recorded_date_after": null,
+   "counts_after": null,
+   "cleared": false,
+   "days_to_next_recorded_date": null
+  }
+ ],
+ "n_episodes": 2,
+ "error_runs": {
+  "closed_runs": {
+   "n": 47,
+   "length_histogram_recorded_dates": {
+    "1": 45,
+    "2": 2
+   },
+   "longest": 2,
+   "runs": [
+    {
+     "video_id": "7332960275127110954",
+     "first": "2025-05-20",
+     "last": "2025-05-21",
+     "n_recorded_dates": 2,
+     "calendar_span_days": 2
+    },
+    {
+     "video_id": "7117394257064840490",
+     "first": "2025-06-24",
+     "last": "2025-06-25",
+     "n_recorded_dates": 2,
+     "calendar_span_days": 2
+    },
+    {
+     "video_id": "7074367286571814190",
+     "first": "2025-04-09",
+     "last": "2025-04-09",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7164125023886691626",
+     "first": "2025-04-09",
+     "last": "2025-04-09",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7332960275127110954",
+     "first": "2025-04-09",
+     "last": "2025-04-09",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7332960275127110954",
+     "first": "2025-04-12",
+     "last": "2025-04-12",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7347581705299053826",
+     "first": "2025-04-29",
+     "last": "2025-04-29",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7366758818765638917",
+     "first": "2025-05-09",
+     "last": "2025-05-09",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7368154048836406544",
+     "first": "2025-05-09",
+     "last": "2025-05-09",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7074367286571814190",
+     "first": "2025-05-09",
+     "last": "2025-05-09",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7117394257064840490",
+     "first": "2025-05-09",
+     "last": "2025-05-09",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7134492331117595950",
+     "first": "2025-05-09",
+     "last": "2025-05-09",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7164125023886691626",
+     "first": "2025-05-09",
+     "last": "2025-05-09",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7376726215178128673",
+     "first": "2025-05-09",
+     "last": "2025-05-09",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7332960275127110954",
+     "first": "2025-05-09",
+     "last": "2025-05-09",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7347581705299053826",
+     "first": "2025-05-09",
+     "last": "2025-05-09",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7376437810644946222",
+     "first": "2025-05-09",
+     "last": "2025-05-09",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7164125023886691626",
+     "first": "2025-05-20",
+     "last": "2025-05-20",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7117394257064840490",
+     "first": "2025-05-31",
+     "last": "2025-05-31",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7117394257064840490",
+     "first": "2025-06-10",
+     "last": "2025-06-10",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7074367286571814190",
+     "first": "2025-06-13",
+     "last": "2025-06-13",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7164125023886691626",
+     "first": "2025-06-13",
+     "last": "2025-06-13",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7332960275127110954",
+     "first": "2025-06-16",
+     "last": "2025-06-16",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7134492331117595950",
+     "first": "2025-06-20",
+     "last": "2025-06-20",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7361448925972155679",
+     "first": "2025-06-25",
+     "last": "2025-06-25",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7368154048836406544",
+     "first": "2025-07-02",
+     "last": "2025-07-02",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7361448925972155679",
+     "first": "2025-07-10",
+     "last": "2025-07-10",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7164125023886691626",
+     "first": "2025-08-10",
+     "last": "2025-08-10",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7368154048836406544",
+     "first": "2025-08-25",
+     "last": "2025-08-25",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7366758818765638917",
+     "first": "2025-09-16",
+     "last": "2025-09-16",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7368154048836406544",
+     "first": "2025-09-16",
+     "last": "2025-09-16",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7074367286571814190",
+     "first": "2025-09-16",
+     "last": "2025-09-16",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7134492331117595950",
+     "first": "2025-09-16",
+     "last": "2025-09-16",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7164125023886691626",
+     "first": "2025-09-16",
+     "last": "2025-09-16",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7332960275127110954",
+     "first": "2025-09-16",
+     "last": "2025-09-16",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7347581705299053826",
+     "first": "2025-09-16",
+     "last": "2025-09-16",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7376437810644946222",
+     "first": "2025-09-16",
+     "last": "2025-09-16",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7347581705299053826",
+     "first": "2025-10-13",
+     "last": "2025-10-13",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7376726215178128673",
+     "first": "2025-10-18",
+     "last": "2025-10-18",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7366758818765638917",
+     "first": "2025-11-18",
+     "last": "2025-11-18",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7368154048836406544",
+     "first": "2025-11-24",
+     "last": "2025-11-24",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7074367286571814190",
+     "first": "2025-11-24",
+     "last": "2025-11-24",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7332960275127110954",
+     "first": "2025-11-27",
+     "last": "2025-11-27",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7366758818765638917",
+     "first": "2025-12-05",
+     "last": "2025-12-05",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7376726215178128673",
+     "first": "2025-12-14",
+     "last": "2025-12-14",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7368154048836406544",
+     "first": "2025-12-18",
+     "last": "2025-12-18",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    },
+    {
+     "video_id": "7117394257064840490",
+     "first": "2025-12-18",
+     "last": "2025-12-18",
+     "n_recorded_dates": 1,
+     "calendar_span_days": 1
+    }
+   ]
+  },
+  "trailing_runs_right_censored": {
+   "n": 11,
+   "lengths_recorded_dates": [
+    12
+   ],
+   "runs": [
+    {
+     "video_id": "7366758818765638917",
+     "first": "2026-01-03",
+     "last": "2026-01-14",
+     "n_recorded_dates": 12,
+     "calendar_span_days": 12,
+     "right_censored": true
+    },
+    {
+     "video_id": "7368154048836406544",
+     "first": "2026-01-03",
+     "last": "2026-01-14",
+     "n_recorded_dates": 12,
+     "calendar_span_days": 12,
+     "right_censored": true
+    },
+    {
+     "video_id": "7074367286571814190",
+     "first": "2026-01-03",
+     "last": "2026-01-14",
+     "n_recorded_dates": 12,
+     "calendar_span_days": 12,
+     "right_censored": true
+    },
+    {
+     "video_id": "7117394257064840490",
+     "first": "2026-01-03",
+     "last": "2026-01-14",
+     "n_recorded_dates": 12,
+     "calendar_span_days": 12,
+     "right_censored": true
+    },
+    {
+     "video_id": "7134492331117595950",
+     "first": "2026-01-03",
+     "last": "2026-01-14",
+     "n_recorded_dates": 12,
+     "calendar_span_days": 12,
+     "right_censored": true
+    },
+    {
+     "video_id": "7164125023886691626",
+     "first": "2026-01-03",
+     "last": "2026-01-14",
+     "n_recorded_dates": 12,
+     "calendar_span_days": 12,
+     "right_censored": true
+    },
+    {
+     "video_id": "7376726215178128673",
+     "first": "2026-01-03",
+     "last": "2026-01-14",
+     "n_recorded_dates": 12,
+     "calendar_span_days": 12,
+     "right_censored": true
+    },
+    {
+     "video_id": "7332960275127110954",
+     "first": "2026-01-03",
+     "last": "2026-01-14",
+     "n_recorded_dates": 12,
+     "calendar_span_days": 12,
+     "right_censored": true
+    },
+    {
+     "video_id": "7347581705299053826",
+     "first": "2026-01-03",
+     "last": "2026-01-14",
+     "n_recorded_dates": 12,
+     "calendar_span_days": 12,
+     "right_censored": true
+    },
+    {
+     "video_id": "7376437810644946222",
+     "first": "2026-01-03",
+     "last": "2026-01-14",
+     "n_recorded_dates": 12,
+     "calendar_span_days": 12,
+     "right_censored": true
+    },
+    {
+     "video_id": "7361448925972155679",
+     "first": "2026-01-03",
+     "last": "2026-01-14",
+     "n_recorded_dates": 12,
+     "calendar_span_days": 12,
+     "right_censored": true
+    }
+   ],
+   "why_separate": "The record ends inside these runs. Their length is a LOWER BOUND on how long the state lasted, never a duration, and this practice has not observed what happened after the last recorded date."
+  }
+ },
+ "error_breadth_before_the_final_episode": {
+  "cutoff_exclusive": "2026-01-03",
+  "n_dates_considered": 267,
+  "n_simultaneous_errors_to_n_dates": {
+   "0": 241,
+   "1": 18,
+   "2": 5,
+   "3": 1,
+   "8": 1,
+   "10": 1
+  },
+  "dates_with_four_or_more": {
+   "8": [
+    "2025-09-16"
+   ],
+   "10": [
+    "2025-05-09"
+   ]
+  }
+ },
+ "date_index": [
+  {
+   "date": "2025-04-09",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 7,
+    "Error": 3
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-10",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-11",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-12",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Error": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-13",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-14",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-15",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-16",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-17",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-18",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-19",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-20",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-21",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-22",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-23",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-24",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-25",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-26",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-27",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-28",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-29",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 8,
+    "Available": 1,
+    "Error": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-04-30",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-01",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-02",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-03",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-04",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-05",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-06",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-07",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-08",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-09",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Error": 10
+   },
+   "all_rows_error": true
+  },
+  {
+   "date": "2025-05-10",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-11",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-12",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-13",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-14",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-15",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-16",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-17",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-18",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-19",
+   "n_series_with_a_row": 10,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-20",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 9,
+    "Error": 2
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-21",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Error": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-22",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-24",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-25",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-26",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-27",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-28",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-29",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-30",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-05-31",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 9,
+    "Error": 1,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-01",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-02",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-03",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-04",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-05",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-06",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-07",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-08",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-09",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-10",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 9,
+    "Error": 1,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-11",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-12",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-13",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 8,
+    "Error": 2,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-14",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-15",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-16",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Error": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-17",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-18",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-19",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-20",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 9,
+    "Error": 1,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-21",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-22",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-23",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-24",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 9,
+    "Error": 1,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-25",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 8,
+    "Error": 2,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-26",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-27",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-28",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-29",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-06-30",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-01",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-02",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 9,
+    "Error": 1,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-03",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-04",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-05",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-06",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-07",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-08",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-09",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-10",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1,
+    "Error": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-11",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-12",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-13",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-14",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-15",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-16",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-17",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-18",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-19",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-20",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-21",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-22",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-23",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-24",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-25",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-26",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-27",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-28",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-29",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-30",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-07-31",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-01",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-02",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-03",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-04",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-05",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-06",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-07",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-08",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-09",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-10",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Error": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-11",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-12",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-13",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-14",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-15",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-16",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-17",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-18",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-19",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-20",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-21",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-22",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-23",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-24",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-25",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Error": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-26",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-27",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-28",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-29",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-30",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-08-31",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-01",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-02",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-03",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-04",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-05",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-06",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-07",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-08",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-09",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-10",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-11",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-12",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-13",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-14",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-15",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-16",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Error": 8,
+    "Not Available": 3
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-17",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-18",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-19",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-20",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-21",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-22",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-23",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-24",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-25",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-26",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-27",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-28",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-29",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-09-30",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-01",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-02",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-03",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-04",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-05",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-06",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-07",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-08",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-09",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-10",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-11",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-12",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-13",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 9,
+    "Available": 1,
+    "Error": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-14",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-15",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-16",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-17",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-18",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 9,
+    "Error": 1,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-19",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-20",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-21",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-22",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-23",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-24",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-25",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-26",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-27",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-28",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-29",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-30",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-10-31",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-01",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-02",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-03",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-04",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-05",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-06",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-07",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-08",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-09",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-10",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-11",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-12",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-13",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-14",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-15",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-16",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-17",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-18",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Error": 1,
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-19",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-20",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-21",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-22",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-23",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-24",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 8,
+    "Error": 2,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-25",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-26",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-27",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Error": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-28",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-29",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-11-30",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-01",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-02",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-03",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-04",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-05",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Error": 1,
+    "Not Available": 9,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-06",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-07",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-08",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-09",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-10",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-11",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-12",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-14",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 9,
+    "Error": 1,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-15",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-16",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-17",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-18",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 8,
+    "Error": 2,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-19",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-20",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-21",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-22",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-23",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-24",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-25",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-26",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-27",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 11
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-28",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-29",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-30",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2025-12-31",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2026-01-01",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2026-01-02",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Not Available": 10,
+    "Available": 1
+   },
+   "all_rows_error": false
+  },
+  {
+   "date": "2026-01-03",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Error": 11
+   },
+   "all_rows_error": true
+  },
+  {
+   "date": "2026-01-04",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Error": 11
+   },
+   "all_rows_error": true
+  },
+  {
+   "date": "2026-01-05",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Error": 11
+   },
+   "all_rows_error": true
+  },
+  {
+   "date": "2026-01-06",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Error": 11
+   },
+   "all_rows_error": true
+  },
+  {
+   "date": "2026-01-07",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Error": 11
+   },
+   "all_rows_error": true
+  },
+  {
+   "date": "2026-01-08",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Error": 11
+   },
+   "all_rows_error": true
+  },
+  {
+   "date": "2026-01-09",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Error": 11
+   },
+   "all_rows_error": true
+  },
+  {
+   "date": "2026-01-10",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Error": 11
+   },
+   "all_rows_error": true
+  },
+  {
+   "date": "2026-01-11",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Error": 11
+   },
+   "all_rows_error": true
+  },
+  {
+   "date": "2026-01-12",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Error": 11
+   },
+   "all_rows_error": true
+  },
+  {
+   "date": "2026-01-13",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Error": 11
+   },
+   "all_rows_error": true
+  },
+  {
+   "date": "2026-01-14",
+   "n_series_with_a_row": 11,
+   "counts": {
+    "Error": 11
+   },
+   "all_rows_error": true
+  }
+ ],
+ "what_this_is_not": "A statement about anyone's conduct, or about why any state was written. It is a description of one saved copy of one public page. This practice has not seen the code that writes it and does not claim to know what any state means to its authors."
+}
