@@ -1,0 +1,17 @@
+OK   run-2026-08-11T1124Z.json  2904 observations  {'INDETERMINATE': 36, 'NOT-RETRIEVABLE': 546, 'RETRIEVABLE': 2322}
+OK   run-2026-08-12T0341Z.json  3869 observations  {'INDETERMINATE': 40, 'NOT-RETRIEVABLE': 683, 'RETRIEVABLE': 3146}
+OK   run-2026-08-13T0427Z.json  3869 observations  {'INDETERMINATE': 47, 'NOT-RETRIEVABLE': 684, 'RETRIEVABLE': 3138}
+OK   run-2026-08-14T0343Z.json  3869 observations  {'INDETERMINATE': 40, 'NOT-RETRIEVABLE': 680, 'RETRIEVABLE': 3149}
+OK   run-2026-08-15T0337Z.json  3869 observations  {'INDETERMINATE': 49, 'NOT-RETRIEVABLE': 681, 'RETRIEVABLE': 3139}
+OK   run-2026-08-16T0337Z-second-probe.json  3869 observations  {'INDETERMINATE': 42, 'NOT-RETRIEVABLE': 679, 'RETRIEVABLE': 3148}
+OK   run-2026-08-16T0337Z.json  3869 observations  {'INDETERMINATE': 44, 'NOT-RETRIEVABLE': 680, 'RETRIEVABLE': 3145}
+OK   run-2026-08-18T0341Z.json  3869 observations  {'INDETERMINATE': 39, 'NOT-RETRIEVABLE': 688, 'RETRIEVABLE': 3142}
+OK   run-2026-08-19T0341Z.json  3869 observations  {'INDETERMINATE': 28, 'NOT-RETRIEVABLE': 687, 'RETRIEVABLE': 3154}
+OK   run-2026-08-20T0341Z.json  3869 observations  {'INDETERMINATE': 34, 'NOT-RETRIEVABLE': 689, 'RETRIEVABLE': 3146}
+OK   run-2026-08-21T0341Z.json  3869 observations  {'INDETERMINATE': 36, 'NOT-RETRIEVABLE': 688, 'RETRIEVABLE': 3145}
+
+11 completed run files checked, 0 disagreeing with themselves.
+SCOPE, stated so this is not read as more than it is: this compares a run file
+  against ITSELF. It says the summary block was not written from something other
+  than the observations beside it. It says nothing about whether the observations
+  are right, and it cannot: the probe is not re-run here.

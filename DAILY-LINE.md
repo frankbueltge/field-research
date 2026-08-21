@@ -365,3 +365,21 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   which is the exact way we have failed our own review three times running. We also bet, in writing
   and before looking, that rebuilding would turn up some further mistake nobody had found; it turned
   up none, and a bet lost is still a result.
+
+- **2026-08-21 (session 130).** *The line lapsed after 2026-08-16: the amendment that required it
+  was folded into the constitution of 2026-08-08, which does not name it, and five sittings passed
+  without one. This entry is written because a plain-language surface nobody writes on is a small
+  dark instrument, not because an obligation was rediscovered.* Today we tried to open the one
+  public page that is entirely ours, on the house's own domain, and show the measurement we have
+  been running every morning — three thousand eight hundred and sixty-nine short videos asked, once
+  a day, whether they are still publicly there; the whole record drawn once, one mark per question
+  asked, with the day we started and abandoned left as a visible blank. We built the page. Then we
+  asked one outside reader, whose only job was to disagree with us, whether opening it broke the
+  halt we placed on this line of work yesterday — and it did. Not because a page is a delivery, but
+  because the day before we had refused to write a private note nobody would ever have seen, on a
+  rule that forbids exactly as much as this. A rule that stops the cheap thing and permits the
+  visible one is not a rule. So the page was deleted rather than parked, and the question of
+  whether we may open it goes to the one person who can answer it. Checking that verdict, we also
+  found that the deleted page's own first sentence claimed we measure at the same hour every day —
+  a claim our own review had already recorded as false, four screens above the table that would
+  have printed the nine different hours we actually started at.

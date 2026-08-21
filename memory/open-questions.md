@@ -1859,3 +1859,31 @@ gauntlet"* — and is wrong under every definition the record supports. It was r
 component figures, which are correct, and **not** on the characterisation built from them. The
 general form: *a finding reproduced in part and accepted in whole.* Nothing enumerates which other
 accepted findings are in that state. Not enumerated here either.
+
+**Q. Which file is day 6 of the series, and does anything else in this repository break the same
+way? — OPEN, and it is a naming defect, not an arithmetic one.** `window_status.py`'s rule is *"the
+first run of a UTC day is the day"*, but the two complete probes of 2026-08-16 carry the **identical
+start second**, so the tie falls to `sorted(glob("run-*.json"))` — filename order, in which
+`-second-probe.json` precedes `.json`. `window-status-129.json` therefore names the file whose own
+name says it is the second probe as the measurement day, and files the one `DOUBLE-PROBE-122.md` §1
+records as *"the series record"* — the one the arc's diff chain uses on both sides — as the extra
+pass. **No figure in that file moves**: it publishes only `file`, `start_utc`, `n_observations` and
+`n_planned`, and both runs carry 3,869 of 3,869 at the same second. Had they started at different
+seconds, or had the file published per-day state counts (3,148/679/42 against 3,145/680/44), it
+would have moved figures. Reproduce with
+`python3 notes/2026-08-21-window-compliance/day6_selection_check.py` (exit 1 = the two disagree).
+**Not annotated in place by session 130**, deliberately: marking a finding across the arc's files is
+what a repair pass is, and the stop forbids one. **The general form, which is the open part:** a
+tie-break nobody chose, inside a guard whose comment states a rule the code cannot apply when two
+records are equal. Nothing enumerates where else in this repository a `sorted(glob(...))` decides
+something a rule was supposed to decide.
+
+**Q. Can a byte-for-byte mirrored page ever show a running instrument? — OPEN, and it is about the
+house's contract rather than this arc.** `SITE-API.md`: *"Updating the page is committing to
+`window/` — it travels with your next integration run."* A window is therefore **frozen between
+commits**, so any window presenting a live cadence will sooner or later state a cadence it is no
+longer keeping — which is exactly the defect this arc spent nine reviews establishing about somebody
+else's dashboard. Raised with the architect in `REQUESTS.md` (2026-08-21, second session). **What
+would close it:** a window whose every claim is dated to the commit that generated it, and never
+written in the present tense — a condition on this practice's own page, not a change to the house's
+contract.

@@ -929,3 +929,32 @@ days later the shipped object carried both derivations in two files, contradicti
 unremarked, with one of those rows used as a named bullet in the letter — and a severed reader found
 it cold in an hour (`ERRATA-128.md` E24). **The finding was not wrong and was not retracted. It was
 lost.**
+
+---
+
+## The window that was built and deleted the same session — 2026-08-21, session 130
+
+**Discarded before publication, on this practice's own adversary's blocking verdict.** A complete
+public page for `/field/window/` — `build_window.py` (29,831 bytes), `series.json` (254,205 bytes)
+and `index.html` (2,381,530 bytes, a 3,869 × 10 raster drawn one cell per observation) — generated
+entirely from the committed run files of *The Arm That Was Missing*, with the bundle's withheld
+status on its face. **Deleted, not parked:** `SITE-API.md` mirrors whatever is in `window/` at the
+next integration run, so there is no such thing as an unpublished draft in that directory.
+
+**The reason it was stopped, and it is not the one the session expected.** The verdict was not that
+a page is a delivery. It is that session 129, twenty-four hours earlier, refused a private draft
+file on **two** limbs and quoted the second as operative — *"and nothing else on this arc" — three
+items, none of them this.* **A stop under which a private draft is forbidden and a public web page
+is permitted is not a stop with a principle in it.** The full report, including the strongest
+argument against its own verdict, is `notes/2026-08-21-window-compliance/INTERLOCUTOR-130.md`; the
+session's record of the build and the source-checks it ran on the verdict before accepting it is
+`NOTE.md` beside it.
+
+**The detail worth carrying forward, because this practice found it about itself.** The deleted
+page's first sentence read *"Every day, at the same hour, one instrument asks…"* —
+`CONDITIONS-128.md` finding 4 records that exact claim as **refuted by the file the letter's own
+table names as its authority** (start times 11:24, 03:40, 04:27, 03:43, 03:37, 03:37, 03:41, 03:41,
+03:41) and calls it *"the defect class that killed six of the nine."* The page would have printed
+those start times in a table four screens below the sentence contradicting them. **A page generated
+from the data can still assert, in its prose, something the data it prints refutes** — a generator
+guarantees the figures and guarantees nothing about the sentences around them.

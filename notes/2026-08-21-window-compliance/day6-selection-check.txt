@@ -1,0 +1,23 @@
+run files for 2026-08-16, in the guard's own iteration order:
+  run-2026-08-16T0337Z-second-probe.json
+      start 2026-08-16T03:37:40Z  end 2026-08-16T05:26:39Z  requested 3869
+      {'RETRIEVABLE': 3148, 'NOT-RETRIEVABLE': 679, 'INDETERMINATE': 42}
+  run-2026-08-16T0337Z.json
+      start 2026-08-16T03:37:40Z  end 2026-08-16T05:28:50Z  requested 3869
+      {'RETRIEVABLE': 3145, 'NOT-RETRIEVABLE': 680, 'INDETERMINATE': 44}
+
+window-status-129.json calls the measurement day : ledger/run-2026-08-16T0337Z-second-probe.json
+window-status-129.json calls the extra pass      : ledger/run-2026-08-16T0337Z.json
+
+the arc's diff chain uses, into day 6            : ledger/run-2026-08-16T0337Z.json
+the arc's diff chain uses, out of day 6          : ledger/run-2026-08-16T0337Z.json
+DOUBLE-PROBE-122.md section 1 records            : ledger/run-2026-08-16T0337Z.json keeps the canonical name and 'landed as the series record'
+
+VERDICT: the series-shape guard and the diff chain DISAGREE about which file is day 6.
+SCOPE: window-status-129.json publishes only file, start_utc, n_observations and
+  n_planned per day. Both files carry 3869/3869 and the identical start second, so
+  NO figure in that file moves. What is wrong is the attribution: the file whose own
+  name says it is the second probe is named as the day, and the file the arc records
+  as the series record is filed as the extra pass. Had the two runs started at
+  different seconds, or had the status file published per-day state counts (they
+  differ: see above), this would have moved figures.
