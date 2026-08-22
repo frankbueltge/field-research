@@ -1073,14 +1073,18 @@ stop.** Q2 goes to the architect instead.
 is due at 03:41:00Z. Item 2 discharged; **what remains on this arc is the instrument and nothing
 else.** Fourteen days to the reading, and nothing has left the house.
 
-## Session 131 (2026-08-22) — the hour the instrument cannot reach
+## Session 131 (2026-08-22) — the hour the instrument could not reach, and then did
 
 **The move was forced by arithmetic, and it was not the run.** This session opened at **00:23:16Z**,
 three hours and eighteen minutes before the hour `CONDITIONS-129.md` names. The probe's median
 full-panel duration is **6,528.5 s**, so day 11 at the licensed second needs a session of **5 h 06 m
 32 s** against a longest documented span of **1 h 53 m 30 s** — **2.7×**. The move became: measure
-why the hour is out of reach, from committed evidence only (`INCREMENT-20.md`,
-`schedule-reach-131.json`, `schedule_reach.py`).
+why the hour was so far off, from committed evidence only (`INCREMENT-20.md`,
+`schedule-reach-131.json`, `schedule_reach.py`) — **and hold to the licensed hour anyway rather than
+assert unreachability untested. The run closed** (`DAY11-2026-08-22.md`): 03:41:00Z → 05:30:09Z,
+3,869 of 3,869, interval 1.0000 days, **0 apparent transitions — the first empty interval in the
+series**, K4 VACUOUS. The session ran **5 h 06 m 53 s**, twenty-one seconds past its own forecast of
+what was required, and **the claim of unreachability is REFUTED by it** (`ERRATA-131.md` E36).
 
 **The finding, in the form that survived the same morning's critique** (`ERRATA-131.md` E34
 withdrew the first form, which asserted that the hour merely followed the sessions): on all five
@@ -1090,7 +1094,8 @@ earlier session**, so which set which is not establishable here. What does not d
 run happens only if a session is alive across it**, and the probe's median is 6,528.5 s. **Three occurrences in seven days** of a
 run outrunning its session — 2026-08-16 (scheduled by a session that ended first, caught by a later
 session of the same date with 62 s to spare), 2026-08-17 (stopped at 600 of 3,869; the series' one
-hole), 2026-08-22 (unreachable, and for the first time visible in advance).
+hole), and 2026-08-22 — where the risk was **visible in advance for the first time and the day was
+taken anyway, by waiting**. Two failures, not three; the first draft of this entry said three.
 
 **The parallel to the receiver's dashboard was drawn and then CUT** (`ERRATA-131.md` E35), on the
 critic's charge that it kept the rhetoric of self-indictment while dropping the only thing that made
@@ -1105,8 +1110,10 @@ was 2–1 to this practice, and the one it lost was a real defect in its own ext
 machine-written, produced zero disagreements; the prose, hand-written about itself, produced three in
 one morning.**
 
-**State for the next session.** The hour stands at 03:41:00Z; the choice between re-anchoring,
-accepting dark days, and holding the schedule is with the architect (`REQUESTS.md`, 2026-08-22).
-Downstream condition **29** added. The compliant run was launched at the licensed second and its
-outcome is in `journal/2026-08-22.md`. **Thirteen days to the reading, and nothing has left the
-house.**
+**State for the next session.** **Eleven measurement days, one hole, `consecutive_daily` false.**
+The hour stands at 03:41:00Z, and a session that opens early **holds** rather than assuming it
+cannot reach — demonstrated once. The choice between re-anchoring, waiting, accepting dark days and
+holding the schedule is with the architect (`REQUESTS.md`, 2026-08-22, corrected in place before he
+read it). Downstream condition **29** added. **D27**: the close pipeline had never met an empty
+interval and crashed on one; fixed minimally, and it now refuses if a confirm file lacks results
+while claiming transitions. **Fourteen days to the reading, and nothing has left the house.**

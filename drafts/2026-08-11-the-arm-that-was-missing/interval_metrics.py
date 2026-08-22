@@ -73,6 +73,21 @@ def main(argv=None):
     abs_then_det_now = [v for v in both
                         if sp[v] == "NOT-RETRIEVABLE" and sc[v] != "INDETERMINATE"]
 
+    # An interval with NO apparent transitions is a state this pipeline had never met before day 11
+    # (2026-08-22), and it crashed on it: `confirm_transition.py` writes only {"K4", "n_transitions"}
+    # when there is nothing to confirm, and this line read `conf["results"]` unconditionally.
+    # Deviation D27. Fixed here rather than worked around, because a close pipeline that cannot
+    # record a day on which nothing changed cannot record the instrument's own null result - and the
+    # stop licenses the instrument to keep running, which includes closing its days.
+    #
+    # The empty case is carried through as ZERO CONFIRMED, never as "K4 passed": `conf["K4"]` already
+    # says VACUOUS in that case and is copied verbatim below, so the distinction between "nothing
+    # changed" and "changes were confirmed" survives into the record.
+    if "results" not in conf:
+        if conf.get("n_transitions", 0) != 0:
+            raise SystemExit("confirm file has no results but claims %d transitions - refusing"
+                             % conf["n_transitions"])
+        conf = dict(conf, results=[])
     confirmed = [r for r in conf["results"] if r["all_passes_agree_with_new_state"]]
     losses = [r for r in confirmed if r["to"] == "NOT-RETRIEVABLE"]
     returns = [r for r in confirmed if r["to"] == "RETRIEVABLE"]

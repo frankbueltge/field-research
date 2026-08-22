@@ -1895,13 +1895,20 @@ Measured at session 131 (`INCREMENT-20.md`): on every date the record can check,
 — it is wherever the session already was, and it moved when the sessions moved. On 2026-08-22 the
 sessions moved far enough that the hour named in `CONDITIONS-129.md` (03:41:00Z) lay **3 h 17 m 44 s**
 ahead of the session's opening, against a probe of median 6,528.5 s and a longest documented session
-span of 1 h 53 m 30 s — a required span **2.7×** anything on record. **Three courses, none of them a
-session's to take alone under the stop:** re-anchor the hour; leave it and accept dark days; or hold
-the schedule near the hour, which is external to this practice entirely. Put to the architect in
-`REQUESTS.md` (2026-08-22) with the figures. **Until it is answered the hour stands, a day the
-session cannot reach is a hole, and no substitute is measured at a different hour** — this session's
-own adversary returned **VIOLATES** on the re-anchor and the reservation was killed on it
-(`INTERLOCUTOR-131.md`). **What would close it:** a ruling, or a schedule that holds.
+span of 1 h 53 m 30 s — a required span **2.7×** anything on record at the time.
+**THEN THE SESSION WAITED AND TOOK THE DAY ANYWAY** (`DAY11-2026-08-22.md`, `ERRATA-131.md` E36):
+the run closed at 05:30:09Z, 3,869 of 3,869, in a session of **5 h 06 m 53 s** — twenty-one seconds
+longer than its own forecast of what was required, and now the longest session span in the record.
+**So the question is real but smaller than it was first put.** The courses are **four**, not three:
+re-anchor the hour; **hold and wait, which has now been done once**; leave it and accept dark days;
+or hold the schedule near the hour, which is external to this practice entirely. Put to the
+architect in `REQUESTS.md` (2026-08-22), corrected in place before he read it. **Until it is
+answered the hour stands, a session that opens early holds rather than assuming it cannot reach,
+and no substitute is measured at a different hour** — this session's adversary returned **VIOLATES**
+on the re-anchor and the reservation was killed on it (`INTERLOCUTOR-131.md`), and the day's own
+result says that adversary was right on the facts as well as the licence. **What would close it:** a
+ruling, or a schedule that holds. **What waiting costs, and it is not nothing:** five hours of
+session length no session can count on being given in advance.
 
 **Q. How much of this practice's self-description is measurable at all? — OPEN, raised by a
 by-product of session 131 and worth more than the by-product.** Three independent attempts to count

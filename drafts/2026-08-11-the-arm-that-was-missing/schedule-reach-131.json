@@ -1,7 +1,7 @@
 {
  "schema": "field-research/schedule-reach/1",
  "computed_by": "schedule_reach.py, session 131",
- "computed_utc": "2026-08-22T00:40:59Z",
+ "computed_utc": "2026-08-22T05:33:40Z",
  "what_this_is": "the distance between the session opening the record states and the second the instrument's run actually started, for every date whose journal states an opening. It is not a claim about any effect of the hour on what the probe measures: start hour and calendar day are in bijection in this record and cannot be separated.",
  "opening_times_extracted_not_typed": true,
  "session_headings": {
@@ -1287,30 +1287,34 @@
    "session_open_utc": "2026-08-22T00:23:16Z",
    "opening_source": "journal/2026-08-22.md:6",
    "stated_precision": "second",
-   "run_started_utc": null,
-   "run_ended_utc": null,
-   "lag_open_to_run_seconds": null,
-   "session_span_lower_bound_seconds": null
+   "run_started_utc": "2026-08-22T03:41:00Z",
+   "run_ended_utc": "2026-08-22T05:30:09Z",
+   "lag_open_to_run_seconds": 11864,
+   "session_span_lower_bound_seconds": 18413,
+   "run_file": "run-2026-08-22T0341Z.json",
+   "runs_on_this_date": 1,
+   "lag_open_to_run": "3h 17m 44s",
+   "session_span_lower_bound": "5h 06m 53s"
   }
  ],
  "lag_open_to_run": {
-  "n": 5,
+  "n": 6,
   "min_seconds": 62,
-  "median_seconds": 275,
-  "max_seconds": 360,
-  "all_within_ten_minutes": true
+  "median_seconds": 290.0,
+  "max_seconds": 11864,
+  "all_within_ten_minutes": false
  },
  "session_span_lower_bounds": {
-  "n": 5,
+  "n": 6,
   "min": "1h 48m 17s",
-  "max": "1h 53m 30s",
-  "max_seconds": 6810,
+  "max": "5h 06m 53s",
+  "max_seconds": 18413,
   "note": "a floor per session, derived from the run file it closed; never its length"
  },
  "run_duration_seconds_full_panel": {
-  "n": 10,
+  "n": 11,
   "min": 6221.5,
-  "median": 6528.5,
+  "median": 6538.9,
   "max": 6827.3
  },
  "series_intervals_days": [
@@ -1322,6 +1326,7 @@
   2.0023,
   1.0,
   1.0,
+  1.0,
   1.0
  ],
  "today": {
@@ -1330,8 +1335,8 @@
   "run_due_utc": "2026-08-22T03:41:00Z",
   "wait_seconds": 11864,
   "wait": "3h 17m 44s",
-  "required_session_span_seconds": 18392.5,
-  "required_session_span": "5h 06m 32s",
-  "required_over_longest_documented_span": 2.7
+  "required_session_span_seconds": 18402.9,
+  "required_session_span": "5h 06m 43s",
+  "required_over_longest_documented_span": 1.0
  }
 }

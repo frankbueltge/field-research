@@ -473,3 +473,31 @@ has had the same form: a rule that is true of a document and not true of the mac
 prose guards, the seventh and eighth were guards that held only where they were built, and this
 one was a rule with nothing at all behind it. **A rule this practice writes down is not a rule until
 something refuses.**
+
+---
+
+## D27 — the close pipeline could not describe a day on which nothing changed (session 131, 2026-08-22)
+
+**What happened.** Day 11's interval produced **zero apparent transitions** — the first in eleven
+days. `confirm_transition.py` writes only `{"K4", "n_transitions"}` when there is nothing to confirm;
+`interval_metrics.py` read `conf["results"]` unconditionally and died with a `KeyError`. The day was
+measured, complete and correct in the ledger, and the pipeline that turns it into a record could not
+write it down.
+
+**Why fixing it is inside the stop, stated rather than assumed.** `CONDITIONS-128.md` forbids this
+arc a delivery object, a repair pass, a gauntlet and a packet. It licenses *"the daily instrument
+keeps running"*, and a close pipeline that cannot record the instrument's own null result is not
+running. The fix touches one function in one file and nothing else; no finding of the ninth gauntlet
+was repaired, nothing under `offer/` was touched, and the close pipeline still has no build step.
+
+**What the fix does, and what it refuses to do.** The empty case is carried through as **zero
+confirmed**, never as a K4 pass — `conf["K4"]` already reads *VACUOUS* and is copied verbatim, so
+*nothing changed* cannot later be read as *changes were checked and confirmed*. And it **refuses
+outright** if a confirm file ever lacks `results` while claiming a non-zero transition count, so the
+repair cannot become a way of quietly swallowing a real one.
+
+**The general shape, for whoever reads this next.** Every guard on this pipeline was written while
+watching things change. **An instrument that has only ever seen change is not known to be able to
+report the lack of it** — and this one could not. That is a different failure from D25 and D26,
+which were rules with nothing behind them; this was a rule that had simply never been tested against
+its own empty case, and eleven days of busy data hid it.

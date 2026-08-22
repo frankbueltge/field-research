@@ -868,13 +868,22 @@ that caveat, which the earlier conditions left as if it were an accident.
     chosen parameter… a reuse may not describe the hour as a design choice." **WITHDRAWN the same
     morning it was written — `ERRATA-131.md` E34**, before any reuse could exist. What travels is the
     lag and its limit, not a mechanism.)*
-    (b) **Three occurrences in seven days of a run outliving or outrunning its session**, of which the
-    published record previously carried only the middle one: 2026-08-16 (the run was scheduled by a
+    (b) **Two occurrences in seven days of a run outliving or outrunning its session**, of which the
+    published record previously carried only the second: 2026-08-16 (the run was scheduled by a
     session that ended before it fired, and was caught by a later session of the same date, 62 seconds
-    before the hour); 2026-08-17 (the run stopped at 600 of 3,869 and is the series' one hole);
-    2026-08-22 (the hour was **3 h 17 m 44 s** beyond the session's opening, against a probe of median
-    6,528.5 s and a longest documented session span of 1 h 53 m 30 s).
+    before the hour); 2026-08-17 (the run stopped at 600 of 3,869 and is the series' one hole).
+    *(This clause first read "three occurrences", counting 2026-08-22 among them. **Corrected the
+    same day — `ERRATA-131.md` E36:** on 2026-08-22 the hour was 3 h 17 m 44 s beyond the session's
+    opening and the session **held and took the day** — 3,869 of 3,869 at 03:41:00Z, in a span of
+    5 h 06 m 53 s. It is not a failure and is not counted as one.)*
     (c) **Therefore expect further holes, and do not read one as evidence about the thing measured.**
     A gap in this series is, on the evidence to date, at least as likely to be a fact about when a
     session opened as a fact about the platform being probed. This practice states that rather than
     letting a reuser infer availability from a missing day.
+    (d) **And a further caveat on 2026-08-22 specifically, in the other direction.** That day's
+    interval carries **zero apparent transitions** — the first in the series. It is reported as a day
+    on which nothing in the panel changed state from this vantage, with K4 recorded as **VACUOUS**;
+    a reuse may **not** render it as a confirmed or checked result, because there was nothing to
+    confirm. The pipeline that writes these records had never met an empty interval before that day
+    and crashed on it (D27, `DAY11-2026-08-22.md`); the fix carries the empty case through as zero
+    confirmed and refuses outright if a confirm file lacks results while claiming transitions.

@@ -404,3 +404,13 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   sentence everywhere we had already written it, including in the question we had just sent to the
   person who has to decide what happens next. The measurement itself was launched at the proper
   time, and whether it finished is written in today's record either way.
+  **Later the same morning:** it finished. We waited the three hours and eighteen minutes, the
+  measurement ran from 03:41 to 05:30, and all 3,869 items were checked. So the thing we spent the
+  morning explaining — that the fixed time was out of our reach — was wrong, and our own written
+  prediction that we would not manage it was wrong too, which is the way round we said we would
+  prefer. We have marked that everywhere we wrote it, including in the question we had already sent.
+  One more thing came out of the day: for the first time in eleven days, **nothing at all changed** —
+  not one item moved between reachable and unreachable overnight. Our software had never seen a day
+  like that and crashed when asked to write it down, because it had only ever been asked to describe
+  things changing. We fixed that, and it now refuses to run rather than quietly reporting "nothing
+  changed" as "we checked and confirmed the changes".

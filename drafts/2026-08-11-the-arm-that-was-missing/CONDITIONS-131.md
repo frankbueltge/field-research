@@ -13,8 +13,10 @@ was live when the first role was dispatched.
 | **Interlocutor, compliance** | `INTERLOCUTOR-131.md`, published unedited | **VIOLATES** — the reservation was killed on it |
 | **Verifier, independent recomputation** | `VERIFIER-131.md`, published unedited | **agrees on every ledger figure; three disagreements, all in the journal figures** |
 | **Interlocutor (b), hostile critique** | `CRITIQUE-131.md`, published unedited | **two withdrawals forced within the hour**; two further charges accepted, one of them not acted on |
+| **the instrument itself** | `DAY11-2026-08-22.md`, five hours later | **a third withdrawal** — the session's own claim of unreachability, refuted by the run closing |
 
-**Four accepted findings. Two claims withdrawn. Nothing refused.**
+**Four accepted findings. Three claims withdrawn — two by the critic, one by the measurement.
+Nothing refused.**
 
 ---
 
@@ -29,7 +31,7 @@ was live when the first role was dispatched.
 | 5 | **Two errors in the compliance report itself**: "ten dates, ten distinct hours" (the ten dates carry six distinct clock times, refuted by its own table four lines above), and a precedent from session 130 that is not the same fact pattern. | this practice, checking the verdict's citations before accepting it | ✔ | **RECORDED, NOT EDITED INTO THE REPORT.** Published unedited is worth more than tidy. Neither touches Q1. |
 | 6 | **Two disagreements where the independent recomputation was wrong and this practice right** — 97 vs 105 session headings; 2026-08-21 "not attributable" against a sentence broken across a line. | this practice | ✔ resolved to the cause in both cases | **NOT ACCEPTED**, and the heading count does not stand on assertion: a differently-computed control now sits inside `schedule_reach.py` and it **refuses to report** if the two disagree. |
 | 7 | **Roughly half of `INCREMENT-20.md` is this practice's own extraction defects and a scoreboard against its own checker — the same charge session 129 drew.** | Interlocutor (b) | ✔ | **ACCEPTED AS FAIR AND DELIBERATELY NOT ACTED ON.** Removing the account of how the figures were reached would make the file shorter and less honest. Recorded as a standing charge against this arc's habits, in `ERRATA-131.md` and in the minutes. |
-| 8 | **The better use of the session was to do less.** | Interlocutor (b) | — | **ACCEPTED IN SUBSTANCE, one correction of fact.** The re-anchor question had to be answered this morning, with a reservation already holding, and answering it honestly required knowing how far out of reach the hour was. **That justifies the arithmetic; it does not justify its length, and the length is not defended.** |
+| 8 | **The better use of the session was to do less.** | Interlocutor (b) | — | **ACCEPTED IN SUBSTANCE, one correction of fact.** The re-anchor question had to be answered this morning, with a reservation already holding, and answering it honestly required knowing how far the hour was. **That justifies the arithmetic; it does not justify its length, and the length is not defended.** **[Amended 05:40Z: the arithmetic was right to within twenty-one seconds and the conclusion drawn from it was wrong — the run closed, `ERRATA-131.md` E36. The critic's charge that the session should have done less is *strengthened* by that, not weakened, and is recorded as strengthened.]** |
 
 ---
 
@@ -40,10 +42,13 @@ was live when the first role was dispatched.
    nothing from it.
 2. **The instrument's hour stands at 03:41:00Z** until the architect rules otherwise. **No session
    moves it, and no substitute measurement is taken at a different hour.** A day the session cannot
-   reach is recorded as a hole.
+   reach is recorded as a hole — **but a session that opens early should hold to the hour rather
+   than assume it cannot reach it.** Session 131 opened three hours and eighteen minutes early,
+   held, and took the day (`DAY11-2026-08-22.md`). The hold is one background process and costs the
+   session nothing but its own length.
 3. **If a session opens near 03:41:00Z, the run is its first act** — the reservation is cheap,
    reversible and holds the day against nothing else.
-4. **Do not re-derive the schedule figures.** `INCREMENT-20.md` is complete, its two withdrawn
-   claims are marked in place, and a third pass over it would be exactly the habit finding 7 names.
+4. **Do not re-derive the schedule figures.** `INCREMENT-20.md` is complete, its **three** withdrawn
+   claims are marked in place, and a fourth pass over it would be exactly the habit finding 7 names.
 5. **The open question is with the architect** (`REQUESTS.md`, 2026-08-22): re-anchor, accept dark
    days, or hold the schedule. **Silence means the stop and the hour both stand.**

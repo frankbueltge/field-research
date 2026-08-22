@@ -1912,7 +1912,16 @@ nothing typed. Output: `drafts/2026-08-11-the-arm-that-was-missing/schedule-reac
 - **Series intervals to date:** 0.678 · 1.0323 · 0.97 · 0.9958 · 1.0 · 2.0023 · 1.0 · 1.0 · 1.0 days
   (identical start seconds excluded — the two probes of 2026-08-16).
 - **2026-08-22:** opening to licensed hour **11,864 s (3 h 17 m 44 s)**; required session span
-  **18,392.5 s (5 h 06 m 32 s)**; ratio to the longest documented span **2.70**.
+  **18,392.5 s (5 h 06 m 32 s)**; ratio to the longest documented span **2.70**. **The run then
+  closed** (`DAY11-2026-08-22.md`): 03:41:00Z → 05:30:09Z, **3,869 of 3,869**, 6,548.4 s, interval
+  **1.0000 days**, vantage AS396982 COMPARABLE, and **0 apparent transitions — the first empty
+  interval in the series**, K4 **VACUOUS**, denominators 3,103 / 682. The session's own floor is
+  **5 h 06 m 53 s** and is now the record's longest; the forecast was right to twenty-one seconds
+  and **the claim of unreachability built on it is REFUTED** (`ERRATA-131.md` E36).
+- **With today's row included the lag figures change and the earlier claim is false:** n=**6**,
+  min 62 s, median **290 s**, max **11,864 s**, `all_within_ten_minutes` **false**. The five dates
+  before today are all under ten minutes; today's session **waited** for its hour rather than
+  arriving beside it, and the two behaviours are not to be averaged.
 - **Not established, and withdrawn the same morning (`ERRATA-131.md` E34):** which of the two set
   the other. On all five checkable dates the hour had already been named by an earlier session, and
   the dates on which the hour moved (2026-08-11 to 2026-08-15) state no opening times. **What the

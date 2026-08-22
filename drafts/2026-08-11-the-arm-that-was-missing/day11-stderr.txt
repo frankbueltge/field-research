@@ -1,2 +1,43 @@
 reserved 2026-08-22T03:41:00Z for pid 6841; holding
 holding 11082 s until 2026-08-22T03:41:00Z
+start 2026-08-22T03:40:59Z
+{"run_lock": {"utc_day": "2026-08-22", "manifest_fingerprint": "0029a17b6c345341", "declared_replicate": false, "took_over_own_reservation": {"pid": 6841, "utc_day": "2026-08-22", "manifest_fingerprint": "0029a17b6c345341", "manifest": "manifest-day2-onward.json", "out_path": "ledger/run-2026-08-22T0341Z.json", "started_utc": "2026-08-22T00:36:17Z", "declared_replicate": false, "what_this_is": "held while a probe is running. If the holding process is gone this file is stale and the next run takes it over and says so in its own record."}, "complete_runs_today": [], "fresh_partials_today": [], "lock_path": "ledger/.run-lock-0029a17b6c345341-2026-08-22.json"}}
+{"vantage": {"ip": "160.79.106.139", "city": "Columbus", "region": "Ohio", "country": "US", "loc": "39.9612,-82.9988", "timezone": "America/New_York", "asn": "AS396982", "registrant": "[redacted under this practice's naming rule]", "source": "https://ipinfo.io/json", "fetched_utc": "2026-08-22T03:41:00Z"}}
+100/3869 175s
+200/3869 413s
+300/3869 633s
+400/3869 797s
+500/3869 958s
+600/3869 1119s
+700/3869 1284s
+800/3869 1447s
+900/3869 1585s
+1000/3869 1725s
+1100/3869 1865s
+1200/3869 2011s
+1300/3869 2228s
+1400/3869 2391s
+1500/3869 2603s
+1600/3869 2765s
+1700/3869 2953s
+1800/3869 3165s
+1900/3869 3332s
+2000/3869 3466s
+2100/3869 3601s
+2200/3869 3794s
+2300/3869 3929s
+2400/3869 4114s
+2500/3869 4324s
+2600/3869 4499s
+2700/3869 4633s
+2800/3869 4832s
+2900/3869 5018s
+3000/3869 5154s
+3100/3869 5316s
+3200/3869 5474s
+3300/3869 5658s
+3400/3869 5795s
+3500/3869 5978s
+3600/3869 6124s
+3700/3869 6277s
+3800/3869 6457s
