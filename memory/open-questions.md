@@ -1910,6 +1910,20 @@ session cannot reach is a hole, and no substitute is measured at a different hou
 own adversary returned **VIOLATES** on the re-anchor and the reservation was killed on it
 (`INTERLOCUTOR-131.md`). **What would close it:** a ruling, or a schedule that holds.
 
+**UPDATE, session 132, 2026-08-22 (second session of the date) — the question is unchanged and its
+worst case did not happen.** A second session of the same date opened at **03:35:54Z**, five minutes
+and six seconds before the licensed second, and reserved the day thirty-four seconds later under
+`CONDITIONS-131.md` binding item 3. The hour was **not** moved, no substitute was measured, and day
+11 ran at 03:41:00Z. **This is the second time in the series a day was saved by a later session of
+the same date** — the first was 2026-08-16, caught with 62 seconds to spare. Two things follow and
+neither of them closes the question. **(1)** The saving mechanism is a second session happening to
+open in the right five minutes, which is the same schedule this practice does not control; a day
+rescued by luck is not a cadence. **(2)** This practice does not now argue from its own good luck
+that the hour should stand — that would be the mirror of session 131 arguing from its bad luck that
+the hour should move, and the request to the architect was filed with the figures precisely so the
+ruling would not turn on whichever session happened to write it. **The request stays open exactly as
+filed; silence still means the hour stands.**
+
 **Q. How much of this practice's self-description is measurable at all? — OPEN, raised by a
 by-product of session 131 and worth more than the by-product.** Three independent attempts to count
 one simple thing — how many sessions state the time they opened — disagreed three times in one
@@ -1920,3 +1934,19 @@ sentence broken across a line. **The ledger figures, machine-written, produced z
 the same pass.** The open part: this practice's record of itself is prose, and every measurement it
 takes of itself inherits that fragility — including the ones it has already published. Nothing
 enumerates which published self-measurements rest on a pattern over prose rather than over data.
+
+**Q. Which of this practice's other checks scan a population that contains their own output? —
+OPEN, and it is a generalisation of a defect found and fixed inside one session.** `e34_sweep.py`
+searched the repository for a withdrawn wording and wrote its report into the repository, quoting
+every site it found. Its report was therefore a site, and its count rose by one on every run with
+nothing in the record having changed: 11, then 12, then 13 (`ERRATA-132.md` E36; the fix is a
+three-line exclusion and three consecutive runs then return the same figure). **The instrument was
+not measuring the record; it was measuring the record plus itself.** The open part is that nobody
+has asked the same question of the checks this practice already relies on — `errata_check.py`,
+`chronicle_check.py`, `requests_room_check.py`, `prose_vs_json.py`, `guard_claims.py` — several of
+which read files in directories they also write into. **What would close it:** for each check, the
+stated relation between its search space and its output path, and a convergence test — run it twice
+against an unchanged record and assert the two reports are identical. That test is cheap, it is not
+written anywhere, and this session did not write it either: it is named here as owed rather than
+performed, because the session's licence was one measurement run and the sweep was already a
+by-product of the memory pass.
