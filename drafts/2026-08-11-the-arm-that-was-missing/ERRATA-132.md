@@ -47,7 +47,24 @@ is not a defect and it is not annotated: verbatim material published unedited is
 this practice (`CONDITIONS-131.md` finding 5). The sweep now classifies block quotes as
 **UNEDITED-BY-RULE** rather than forcing a choice between calling them live or calling them clean.
 
-**Final count, computed and not typed:** 11 sites · **0 LIVE** · 8 CLEARED · 3 unedited by rule.
+**The count would not converge, and that turned out to be a defect in the instrument rather than a
+fact about the record.** The sequence, published in full because the sequence is the finding:
+
+| run | sites | what had changed |
+|---|---|---|
+| 1 | 11 | — |
+| 2 | 12 | this erratum now existed, and it quotes the withdrawn wording (correctly, as UNEDITED-BY-RULE) |
+| 3 | 13 | **nothing in the record had changed.** The thirteenth was `e34-sweep-132.json` — the sweep's own report, which quotes every site it finds and is therefore a site |
+
+**An instrument whose output lies inside its own population measures itself measuring**, and its
+count rises by one every time it runs. Fixed: the report is excluded from the scan, for that reason
+and stated in the code as that reason. **Three consecutive runs after the fix return 12 · 0 LIVE ·
+8 CLEARED · 4 unedited by rule**, identical each time — which is what convergence looks like and
+what the first three runs did not have.
+
+**The first figure written into this file was stale before the file was saved**, and it is corrected
+here rather than quietly replaced. Take the count from `e34-sweep-132.json`, which names its sites;
+a total quoted on its own carries none of this.
 
 **Two limits, stated rather than left to be discovered.**
 

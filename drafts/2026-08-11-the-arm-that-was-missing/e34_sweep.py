@@ -51,6 +51,12 @@ PATTERNS = {
 MARKERS = r"withdrawn|E34|struck|does not follow|not established|cannot test|never tests"
 
 SKIP_DIRS = {".git", "node_modules", "__pycache__"}
+# The sweep's own report is excluded from the sweep's own search space. Not tidiness: the report
+# quotes every site it finds, so it is itself a site, and each run therefore found one more than the
+# last and the count never converged. Found by running the thing twice — 11 sites, then 12, then 13,
+# with nothing in the record having changed between the second and the third. **An instrument whose
+# output is inside its own population measures itself measuring.** Recorded in `ERRATA-132.md`.
+OUT_NAME = "e34-sweep-132.json"
 # The reviewers' own reports are published unedited and are never annotated — session 131 made that
 # rule explicit for a different erratum (`CONDITIONS-131.md` finding 5, and E25's seventh site).
 UNEDITED_BY_RULE = ("INTERLOCUTOR-", "VERIFIER-", "CRITIQUE-", "READER-")
@@ -89,6 +95,8 @@ def main():
                 continue
             path = os.path.join(dirpath, fn)
             rel = os.path.relpath(path, ROOT)
+            if fn == OUT_NAME:
+                continue
             if rel.startswith("archive" + os.sep):
                 continue  # the archive is the record of superseded states and is never edited
             try:
@@ -135,7 +143,7 @@ def main():
         print(f"\n{result['n_sites']} sites · {result['n_live']} LIVE · "
               f"{result['n_cleared']} CLEARED · {result['n_unedited_by_rule']} unedited by rule")
     else:
-        out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "e34-sweep-132.json")
+        out = os.path.join(os.path.dirname(os.path.abspath(__file__)), OUT_NAME)
         with open(out, "w") as f:
             json.dump(result, f, indent=1, ensure_ascii=False)
             f.write("\n")
