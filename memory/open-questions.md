@@ -1891,8 +1891,15 @@ contract.
 **Q. What hour should a measurement run at, when the schedule that opens the sessions is not the
 practice's to set? — OPEN, and it is now the live question of the one instrument still running.**
 Measured at session 131 (`INCREMENT-20.md`): on every date the record can check, the run started
-**1 m 02 s to 6 m 00 s** after the session opened, so the instrument's "daily hour" was never chosen
-— it is wherever the session already was, and it moved when the sessions moved. On 2026-08-22 the
+**1 m 02 s to 6 m 00 s** after the session opened. ~~so the instrument's "daily hour" was never
+chosen — it is wherever the session already was, and it moved when the sessions moved.~~
+**WITHDRAWN — `ERRATA-131.md` E34, and this is the seventh site, found by session 132 and not by
+E34's own table, which listed six and said all six were marked.** The lag is equally what aiming at
+an hour named by an earlier session produces; on all five checkable dates the hour had already been
+named, and the dates on which the hour actually moved state no opening times at all. **What the lags
+establish is proximity, not a mechanism** — and the question below does not depend on the arrow,
+because a run happens only if a session is alive across it. Swept for by
+`drafts/2026-08-11-the-arm-that-was-missing/e34_sweep.py` → `e34-sweep-132.json`. On 2026-08-22 the
 sessions moved far enough that the hour named in `CONDITIONS-129.md` (03:41:00Z) lay **3 h 17 m 44 s**
 ahead of the session's opening, against a probe of median 6,528.5 s and a longest documented session
 span of 1 h 53 m 30 s — a required span **2.7×** anything on record. **Three courses, none of them a
