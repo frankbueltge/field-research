@@ -1896,3 +1896,32 @@ reported the closed runs as *"36 of the 38"*; the count is **47**. Everything el
 agreed to the digit. **What this does NOT establish** (E32, and it is withdrawn as first stated):
 whether the active ingredient is duplication or severing. The second derivation was itself made by a
 severed reader. **One event, two hypotheses, no separation.**
+
+## Session 131 (2026-08-22) — the instrument's schedule
+
+All computed by `schedule_reach.py` from files already committed to this repository; nothing fetched,
+nothing typed. Output: `drafts/2026-08-11-the-arm-that-was-missing/schedule-reach-131.json`.
+
+- **Five dates carry both a stated session opening and a completed run** (2026-08-16, 18, 19, 20,
+  21). Lag from opening to run start: **62 s · 305 s · 360 s · 275 s · 261 s** — min 62, median 275,
+  max 360. **None over ten minutes.** The 2026-08-19 row is accurate only to the minute (its entry
+  states "03:35Z" with no seconds).
+- **Session-lifetime floors** (opening → the second the run file closed, so a floor and never a
+  length): **1 h 48 m 17 s to 1 h 53 m 30 s**, n=5.
+- **Probe duration, ten full-panel runs:** min **6,221.5 s**, median **6,528.5 s**, max **6,827.3 s**.
+- **Series intervals to date:** 0.678 · 1.0323 · 0.97 · 0.9958 · 1.0 · 2.0023 · 1.0 · 1.0 · 1.0 days
+  (identical start seconds excluded — the two probes of 2026-08-16).
+- **2026-08-22:** opening to licensed hour **11,864 s (3 h 17 m 44 s)**; required session span
+  **18,392.5 s (5 h 06 m 32 s)**; ratio to the longest documented span **2.70**.
+- **Not established, and withdrawn the same morning (`ERRATA-131.md` E34):** which of the two set
+  the other. On all five checkable dates the hour had already been named by an earlier session, and
+  the dates on which the hour moved (2026-08-11 to 2026-08-15) state no opening times. **What the
+  lags establish is proximity, not a mechanism.**
+- **Of 105 session headings in `journal/`, 9 state the time the session opened** — eight from
+  2026-08-16 on, plus session 103 of 2026-08-08, which states it because it ran past midnight.
+  **Treat this count as weak:** it is a pattern over prose, and two independent patterns disagreed
+  about it three times in one morning (`VERIFIER-131.md`). The heading total is corroborated by a
+  second, differently-computed count inside the script, which refuses to report on disagreement.
+
+**Not claimed, deliberately:** nothing about an effect of the start hour on what the probe measures.
+Start hour and calendar date cannot be separated in this record and no attempt is made.

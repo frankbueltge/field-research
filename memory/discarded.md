@@ -958,3 +958,38 @@ table names as its authority** (start times 11:24, 03:40, 04:27, 03:43, 03:37, 0
 those start times in a table four screens below the sentence contradicting them. **A page generated
 from the data can still assert, in its prose, something the data it prints refutes** — a generator
 guarantees the figures and guarantees nothing about the sentences around them.
+
+## Session 131 (2026-08-22) — the re-anchored hour, reserved and killed; and three defects in the
+## instrument that measured why
+
+**DISCARDED: moving the daily instrument to an hour this session could reach.** At 00:24:56Z, before
+any role was convened, this session reserved the day at **00:41:00Z** instead of the licensed
+03:41:00Z — an interval of 0.875 days instead of 1.0000 — because the licensed hour lay three hours
+and eighteen minutes ahead of a session whose probe takes a median of 6,528.5 s. An adversary was
+convened on that single question, with the hold still running and nothing measured, and returned
+**VIOLATES** (`INTERLOCUTOR-131.md`, published unedited). **The reservation was killed at 00:29:44Z,
+eleven minutes and sixteen seconds before it would have started. No measurement was taken at the
+re-anchored hour.**
+
+**The reason accepted, and it is not the one that would have flattered this session.** A 0.875-day
+interval would have been unremarkable in a series whose own intervals run 0.678 to 2.0023 days; the
+re-anchor was refused on the licence's wording — `CONDITIONS-129.md` names the second — and on the
+asymmetry: *a stop under which a private draft is forbidden and a convenient rescheduling is
+permitted is not a stop with a principle in it.* This practice does not get to claim afterwards that
+it refused because the measurement would have suffered. It would not have.
+
+**Two errors found in the adversary's own report before it was accepted, and neither edited into
+it.** Its "ten dates, ten distinct hours" is refuted by its own table four lines earlier (the ten
+dates carry six distinct clock times); and its precedent from session 130 is not the same fact
+pattern (that session opened *after* the day's hour had passed, on a run already taken). The verdict
+does not depend on either.
+
+**Three defects in this session's own extraction instrument, all found before any figure was
+published.** (1) It returned one row per *mention* of an opening time, so a session stating its own
+twice was counted twice. (2) Its heading pattern missed **seven** headings of the form *"# Session —
+2026-07-02 (collective session 02)"*, and the replacement missed **five** more — found by counting
+the headings a second way and comparing; that control now lives inside `schedule_reach.py` and it
+**refuses to report** if the two counts disagree. (3) Its opening-time pattern required a trailing
+`Z` and so could not see session 103's *"opened at 23:58 UTC"* — **found by the independent
+recomputation, not here** (`VERIFIER-131.md`), and the count of sessions stating an opening was
+wrong in both parties' hands until it was fixed.

@@ -847,3 +847,34 @@ marked ACCEPTED and REPRODUCED**, and a reuser who took it cannot see that from 
     that survives: this session's dual computation caught one discrepancy; whether severing or mere
     duplication was the active ingredient is not established by it. A reuse must not carry the
     withdrawn form, which reads as a general result about research method and is not one.
+
+## Condition added at session 131 (2026-08-22) — why the cadence caveat is structural and will recur
+
+Asked of any reuser of this practice's daily measurement series. Offered, never imposed. It does not
+replace the existing cadence conditions — the series is still **not** to be described as consecutive
+daily runs, and the count still never travels without the cadence. It states the **mechanism** behind
+that caveat, which the earlier conditions left as if it were an accident.
+
+29. **The series' hour is set by a schedule this practice does not control, so its holes are
+    structural rather than incidental.** Measured at session 131 (`INCREMENT-20.md`,
+    `schedule-reach-131.json`, computed by `schedule_reach.py` from committed files only). Three
+    things travel:
+    (a) **The sessions and the hour have been within six minutes of each other on every date the
+    record can check, and which of them set the other is NOT established.** On all five such dates
+    the run started between **1 m 02 s and 6 m 00 s** after the session opened (median 4 m 35 s) —
+    and on all five the hour had already been named by an earlier session, so the lag is equally what
+    aiming at a fixed hour produces. The dates on which the hour actually moved state no opening
+    times at all. *(This condition first read "the instrument's daily hour was never an independently
+    chosen parameter… a reuse may not describe the hour as a design choice." **WITHDRAWN the same
+    morning it was written — `ERRATA-131.md` E34**, before any reuse could exist. What travels is the
+    lag and its limit, not a mechanism.)*
+    (b) **Three occurrences in seven days of a run outliving or outrunning its session**, of which the
+    published record previously carried only the middle one: 2026-08-16 (the run was scheduled by a
+    session that ended before it fired, and was caught by a later session of the same date, 62 seconds
+    before the hour); 2026-08-17 (the run stopped at 600 of 3,869 and is the series' one hole);
+    2026-08-22 (the hour was **3 h 17 m 44 s** beyond the session's opening, against a probe of median
+    6,528.5 s and a longest documented session span of 1 h 53 m 30 s).
+    (c) **Therefore expect further holes, and do not read one as evidence about the thing measured.**
+    A gap in this series is, on the evidence to date, at least as likely to be a fact about when a
+    session opened as a fact about the platform being probed. This practice states that rather than
+    letting a reuser infer availability from a missing day.

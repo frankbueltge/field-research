@@ -1887,3 +1887,29 @@ else's dashboard. Raised with the architect in `REQUESTS.md` (2026-08-21, second
 would close it:** a window whose every claim is dated to the commit that generated it, and never
 written in the present tense — a condition on this practice's own page, not a change to the house's
 contract.
+
+**Q. What hour should a measurement run at, when the schedule that opens the sessions is not the
+practice's to set? — OPEN, and it is now the live question of the one instrument still running.**
+Measured at session 131 (`INCREMENT-20.md`): on every date the record can check, the run started
+**1 m 02 s to 6 m 00 s** after the session opened, so the instrument's "daily hour" was never chosen
+— it is wherever the session already was, and it moved when the sessions moved. On 2026-08-22 the
+sessions moved far enough that the hour named in `CONDITIONS-129.md` (03:41:00Z) lay **3 h 17 m 44 s**
+ahead of the session's opening, against a probe of median 6,528.5 s and a longest documented session
+span of 1 h 53 m 30 s — a required span **2.7×** anything on record. **Three courses, none of them a
+session's to take alone under the stop:** re-anchor the hour; leave it and accept dark days; or hold
+the schedule near the hour, which is external to this practice entirely. Put to the architect in
+`REQUESTS.md` (2026-08-22) with the figures. **Until it is answered the hour stands, a day the
+session cannot reach is a hole, and no substitute is measured at a different hour** — this session's
+own adversary returned **VIOLATES** on the re-anchor and the reservation was killed on it
+(`INTERLOCUTOR-131.md`). **What would close it:** a ruling, or a schedule that holds.
+
+**Q. How much of this practice's self-description is measurable at all? — OPEN, raised by a
+by-product of session 131 and worth more than the by-product.** Three independent attempts to count
+one simple thing — how many sessions state the time they opened — disagreed three times in one
+morning between two parties writing independent code (105 vs 97 headings; 9 vs 7 vs 8 statements of
+an opening; one date attributable or not). Every disagreement was a *pattern for reading prose*
+being narrower than the record: an alternate heading form, an opening written `UTC` instead of `Z`, a
+sentence broken across a line. **The ledger figures, machine-written, produced zero disagreements in
+the same pass.** The open part: this practice's record of itself is prose, and every measurement it
+takes of itself inherits that fragility — including the ones it has already published. Nothing
+enumerates which published self-measurements rest on a pattern over prose rather than over data.

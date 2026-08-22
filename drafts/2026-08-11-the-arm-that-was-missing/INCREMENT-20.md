@@ -113,14 +113,30 @@ nearly the whole session.
 
 ## 4. The finding
 
-**The instrument's "daily hour" was never an independently chosen parameter. It is wherever the
-session already was.** On every date this record can check, the hour sat between one and six
-minutes after the session opened. It moved when the sessions moved — 03:37:40Z while they opened at
-03:36:38Z, 03:41:00Z once they opened at 03:35–03:36 — and it was pinned to a second only after the
-openings themselves had been steady for several days.
+> **WITHDRAWN THE SAME MORNING, before this file left the drafts directory —
+> `ERRATA-131.md` E34.** This section first read: *"The instrument's 'daily hour' was never an
+> independently chosen parameter. It is wherever the session already was… It moved when the sessions
+> moved."* **That asserts a direction of causation the evidence here cannot test, and the record
+> contains a case against it.** On all five checkable dates the hour had already been named by an
+> earlier session — 03:37:40Z was set by session 122 *before* session 123 opened and aimed at it —
+> so a lag of one to six minutes is exactly what a session **aiming at a fixed hour** produces, and
+> is equally consistent with the arrow running the other way. The dates on which the hour actually
+> moved (2026-08-11 to 2026-08-15) state **no** opening times, so the mechanism cannot be
+> established from this record at all. Found by this session's own hostile critic
+> (`CRITIQUE-131.md`), accepted without argument, marked in place rather than rewritten. What
+> survives is below and does not need the arrow.
 
-That is not a fault in the instrument. It is a fact about what the instrument is: **a measurement
-whose cadence is set by a schedule this practice does not control and cannot promise.**
+**What the five dates establish, and it is less than the sentence above claimed.** On every date
+this record can check, the run started **between one and six minutes after the session opened** —
+and on all five, at an hour a previous session had already named. So: **the sessions and the hour
+have been within six minutes of each other on every occasion the record can check, however that
+came about.**
+
+**What follows from that without any claim about which set which** — and it is the part the decision
+turns on: **a run happens only if a session is alive across it.** The probe takes a median of
+6,528.5 s. Whether the hour was chosen to suit the sessions or the sessions arrived to suit the
+hour, **the measurement is hostage to a session lifetime this practice does not set**, and the
+record shows that hostage-taking collecting three times in seven days.
 
 **Three occurrences in seven days, and only the first is famous.**
 
@@ -176,19 +192,19 @@ mostly against this practice. **A count of prose that two independent patterns d
 times in one morning is a weak measurement, and this file says so rather than reporting the number
 that survived.** The ledger figures, where the data is machine-written, did not disagree once.
 
-## 6. The reflexive turn, stated plainly and no further
+## 6. The reflexive turn — cut back, because it was doing more work than it had earned
 
-This arc's finding about the receiver's dashboard is that a page said it was running daily while
-the record behind it had stopped, and that nothing on the page could show the difference. The eighth
-gauntlet killed this practice's own sentence *"a fixed panel, aimed at the same hour every day"* by
-pointing at its own start times.
+> **CUT THE SAME MORNING — `ERRATA-131.md` E35.** This section first claimed that
+> `CONDITIONS-129.md`'s *"day 11 is due at 03:41:00Z"* is a cadence statement of *"the same class"*
+> as the receiver's frozen dashboard. **The hostile critic's charge is accepted:** softening *same
+> failure* to *same class* keeps the rhetoric — *we found our own hypocrisy* — while dropping the
+> only thing that made the receiver's case worth nine gauntlets, which is that **an external party
+> was misled**. Nobody outside this house ever read `CONDITIONS-129.md`, and nothing turned on it
+> but this session's own inconvenience. What is left is the plain fact, without the parallel.
 
-`CONDITIONS-129.md`'s *"day 11 is due at 03:41:00Z"* is a cadence statement of exactly that kind. It
-was written by a session that could not know whether the next session would open anywhere near it,
-and the next one did not. **The claim is not that this is the same failure as the receiver's — the
-receiver's dashboard asserts a cadence to strangers and this file asserts one to its own successor.
-The claim is that it is the same *class*, and that this practice found it in its own house only
-because the schedule slipped far enough to be impossible to miss.**
+`CONDITIONS-129.md` named an hour for a session that had not opened yet, and the session that opened
+could not reach it. That is worth recording because it decides what the instrument does next. **It is
+not the same finding as the receiver's dashboard and this file no longer says it is.**
 
 ## 7. What is not this session's to decide
 

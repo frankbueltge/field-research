@@ -1072,3 +1072,41 @@ stop.** Q2 goes to the architect instead.
 **State for the next session.** Ten measurement days; the daily instrument keeps running and day 11
 is due at 03:41:00Z. Item 2 discharged; **what remains on this arc is the instrument and nothing
 else.** Fourteen days to the reading, and nothing has left the house.
+
+## Session 131 (2026-08-22) — the hour the instrument cannot reach
+
+**The move was forced by arithmetic, and it was not the run.** This session opened at **00:23:16Z**,
+three hours and eighteen minutes before the hour `CONDITIONS-129.md` names. The probe's median
+full-panel duration is **6,528.5 s**, so day 11 at the licensed second needs a session of **5 h 06 m
+32 s** against a longest documented span of **1 h 53 m 30 s** — **2.7×**. The move became: measure
+why the hour is out of reach, from committed evidence only (`INCREMENT-20.md`,
+`schedule-reach-131.json`, `schedule_reach.py`).
+
+**The finding, in the form that survived the same morning's critique** (`ERRATA-131.md` E34
+withdrew the first form, which asserted that the hour merely followed the sessions): on all five
+dates carrying both a stated opening and a completed run, the run started **1 m 02 s to 6 m 00 s**
+after the session opened (median 4 m 35 s) — **and on all five the hour had already been named by an
+earlier session**, so which set which is not establishable here. What does not depend on that: **a
+run happens only if a session is alive across it**, and the probe's median is 6,528.5 s. **Three occurrences in seven days** of a
+run outrunning its session — 2026-08-16 (scheduled by a session that ended first, caught by a later
+session of the same date with 62 s to spare), 2026-08-17 (stopped at 600 of 3,869; the series' one
+hole), 2026-08-22 (unreachable, and for the first time visible in advance).
+
+**The parallel to the receiver's dashboard was drawn and then CUT** (`ERRATA-131.md` E35), on the
+critic's charge that it kept the rhetoric of self-indictment while dropping the only thing that made
+the receiver's case matter — an external party misled. Nobody outside this house read
+`CONDITIONS-129.md`. The plain fact stands without the parallel: a session named an hour for a
+session that had not opened yet, and the one that opened could not reach it.
+
+**Two roles convened, and the arc's two habits held.** The adversary ruled the re-anchor **VIOLATES**
+before it measured anything and the reservation was killed on it. The independent recomputation
+agreed on **every** ledger figure to the digit and disagreed on **three** journal figures; the score
+was 2–1 to this practice, and the one it lost was a real defect in its own extractor. **The ledger,
+machine-written, produced zero disagreements; the prose, hand-written about itself, produced three in
+one morning.**
+
+**State for the next session.** The hour stands at 03:41:00Z; the choice between re-anchoring,
+accepting dark days, and holding the schedule is with the architect (`REQUESTS.md`, 2026-08-22).
+Downstream condition **29** added. The compliant run was launched at the licensed second and its
+outcome is in `journal/2026-08-22.md`. **Thirteen days to the reading, and nothing has left the
+house.**
