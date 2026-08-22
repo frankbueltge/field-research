@@ -39,9 +39,36 @@ import time
 # "opened at 03:36:38Z", "this session opened at 03:35Z", "this one opened at 14:30Z",
 # "opened at **03:36:39Z**" - and the same sentence broken across a line, hence the whitespace
 # class rather than a literal space.
-OPEN_RE = re.compile(r"opened\s+at\s+\*{0,2}(\d{2}:\d{2}(?::\d{2})?)\*{0,2}Z")
+# The trailing marker is not always "Z": session 103 writes "The session opened at 23:58 UTC on
+# 2026-08-08" (`journal/2026-08-08.md:434`). This pattern missed it, and the miss was found by an
+# independent recomputation that used a different pattern and returned a session this one did not.
+# Both forms are accepted now. The same recomputation MISSED session 129, whose sentence is broken
+# across a line - "The session opened\nat 03:36:39Z" - which is why the whitespace here is `\s+`
+# and not a literal space.
+OPEN_RE = re.compile(r"opened\s+at\s+\*{0,2}(\d{2}:\d{2}(?::\d{2})?)\*{0,2}\s*(?:Z|UTC)\b")
 # "# Session 129 — 2026-08-21", including the "(second session of the same date)" variants.
-SESSION_RE = re.compile(r"^#\s+Session\s+(\d+)\s+", re.MULTILINE)
+#
+# The first version of this pattern was `^#\s+Session\s+(\d+)\s+` and it MISSED SEVEN HEADINGS:
+# the entries of 2026-07-02 and 2026-07-03 are headed "# Session — 2026-07-02 (collective session
+# 02)", with the number in the parenthetical and not after the word. Caught by counting the
+# headings with an independent command (`grep -c "^# Session"` over the same files, 105) against
+# this parser's own total (97) before any figure was written down. Both forms are matched now, and
+# the number is taken from wherever the heading puts it.
+# Second correction, same morning: the parenthetical is not always "(collective session NN)" -
+# there is also "(second invocation; collective session 03)" and "(collective session 07, second
+# invocation of this date)". Guessing at the shapes of a heading was the mistake; the heading is
+# now matched as a whole line and the number pulled out of it afterwards, so the parsed heading
+# count can be checked against `grep -c "^# Session"` and MUST equal it. `selftest_schedule_reach.py`
+# fails if it does not.
+SESSION_RE = re.compile(r"^#\s+Session\b.*$", re.MULTILINE)
+NUM_RE = re.compile(r"collective session\s+(\d+)|Session\s+(\d+)")
+
+
+def session_number(heading):
+    m = NUM_RE.search(heading)
+    if not m:
+        return None
+    return int(m.group(1) or m.group(2))
 
 
 def ts(s):
@@ -82,7 +109,7 @@ def journal_openings(journal_dir):
             end = heads[i + 1].start() if i + 1 < len(heads) else len(text)
             block = text[start:end]
             m = OPEN_RE.search(block)
-            row = {"session": int(h.group(1)), "utc": None, "source": None,
+            row = {"session": session_number(h.group(0)), "utc": None, "source": None,
                    "stated_precision": None, "quoted": None}
             if m:
                 clock = m.group(1)
@@ -127,6 +154,25 @@ def main():
 
     openings = journal_openings(a.journal_dir)
     rr = runs(a.ledger_dir)
+
+    # A control on this file's own parser, computed a different way: count the heading lines by
+    # plain string prefix rather than by the pattern the parser uses. The first two versions of
+    # that pattern were each wrong - one missed seven headings, the next missed five - and the
+    # error was found by a count like this one, not by reading the code. The run refuses rather
+    # than reporting a total it cannot corroborate.
+    control = 0
+    for path in sorted(glob.glob(os.path.join(a.journal_dir, "2026-*.md"))):
+        for line in open(path, encoding="utf-8"):
+            if line.startswith("# Session"):
+                control += 1
+    parsed = sum(len(v) for v in openings.values())
+    if parsed != control:
+        raise SystemExit(
+            "parser found %d session headings, prefix control found %d - refusing to report"
+            % (parsed, control))
+    unnumbered = [r for v in openings.values() for r in v if r["session"] is None]
+    if unnumbered:
+        raise SystemExit("%d session headings carry no readable number" % len(unnumbered))
 
     # One row per date that states an opening. The first stated opening of a date is the session
     # that could have taken that date's run; a second session of the same date opens after the
@@ -212,6 +258,14 @@ def main():
             "hour and calendar day are in bijection in this record and cannot be separated."
         ),
         "opening_times_extracted_not_typed": True,
+        "session_headings": {
+            "parsed": parsed,
+            "prefix_control": control,
+            "state_an_opening_time": sum(
+                1 for v in openings.values() for r in v if r["utc"]),
+            "note": ("the journal directory does not hold a heading for every session the "
+                     "chronicle records; this counts headings present, not sessions held"),
+        },
         "dates_before_2026_08_16_state_no_opening_time": True,
         "rows": rows,
         "lag_open_to_run": {
