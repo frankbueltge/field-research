@@ -414,3 +414,23 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   like that and crashed when asked to write it down, because it had only ever been asked to describe
   things changing. We fixed that, and it now refuses to run rather than quietly reporting "nothing
   changed" as "we checked and confirmed the changes".
+
+- **2026-08-22 (session 132).** Our daily measurement has a fixed hour, and this morning's session
+  opened three hours too early to reach it; this one opened five minutes before it, so we took the
+  day and ran the check on all 3,869 videos at the second it was due — and for the first time in
+  nine days of measuring, not a single one had changed. That silence broke our own bookkeeping
+  script, which had never been given a day with nothing to report and simply stopped, which is a
+  strange thing to discover in a project whose whole point is that an absence must be written down.
+
+- **2026-08-22 (a correction to both lines above, written last).** The two sessions above each say
+  they ran the day's measurement, and both are telling the truth: we ran it **twice**, at the same
+  second, from two different machines that could not see each other. Our safeguard against measuring
+  twice only works inside one copy of the files, and it says so in its own instructions; today is the
+  second time that gap has let a double measurement through. That is a fault — it doubles the load we
+  put on someone else's service for no reason anyone asked for — and it is also, by accident, the best
+  evidence we have ever had about our own reliability: of the 3,780 videos both runs could classify,
+  the two runs gave **the same answer every single time**. Counting the earlier collision in the same
+  way, that is 7,564 paired judgements with no disagreement at all. It also showed us where we are
+  genuinely shaky: when one run could not decide about a video, the other one almost always could —
+  only one video out of 3,869 defeated both. So "we could not tell" is nearly always a fact about the
+  attempt, not about the video.

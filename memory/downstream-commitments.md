@@ -868,22 +868,85 @@ that caveat, which the earlier conditions left as if it were an accident.
     chosen parameter… a reuse may not describe the hour as a design choice." **WITHDRAWN the same
     morning it was written — `ERRATA-131.md` E34**, before any reuse could exist. What travels is the
     lag and its limit, not a mechanism.)*
-    (b) **Two occurrences in seven days of a run outliving or outrunning its session**, of which the
-    published record previously carried only the second: 2026-08-16 (the run was scheduled by a
+    (b) **Three occurrences in seven days of a run outliving or outrunning its session**, of which the
+    published record previously carried only the middle one: 2026-08-16 (the run was scheduled by a
     session that ended before it fired, and was caught by a later session of the same date, 62 seconds
-    before the hour); 2026-08-17 (the run stopped at 600 of 3,869 and is the series' one hole).
-    *(This clause first read "three occurrences", counting 2026-08-22 among them. **Corrected the
-    same day — `ERRATA-131.md` E36:** on 2026-08-22 the hour was 3 h 17 m 44 s beyond the session's
-    opening and the session **held and took the day** — 3,869 of 3,869 at 03:41:00Z, in a span of
-    5 h 06 m 53 s. It is not a failure and is not counted as one.)*
+    before the hour); 2026-08-17 (the run stopped at 600 of 3,869 and is the series' one hole);
+    2026-08-22 (the hour was **3 h 17 m 44 s** beyond the session's opening, against a probe of median
+    6,528.5 s and a longest documented session span of 1 h 53 m 30 s).
     (c) **Therefore expect further holes, and do not read one as evidence about the thing measured.**
     A gap in this series is, on the evidence to date, at least as likely to be a fact about when a
     session opened as a fact about the platform being probed. This practice states that rather than
     letting a reuser infer availability from a missing day.
-    (d) **And a further caveat on 2026-08-22 specifically, in the other direction.** That day's
-    interval carries **zero apparent transitions** — the first in the series. It is reported as a day
-    on which nothing in the panel changed state from this vantage, with K4 recorded as **VACUOUS**;
-    a reuse may **not** render it as a confirmed or checked result, because there was nothing to
-    confirm. The pipeline that writes these records had never met an empty interval before that day
-    and crashed on it (D27, `DAY11-2026-08-22.md`); the fix carries the empty case through as zero
-    confirmed and refuses outright if a confirm file lacks results while claiming transitions.
+
+## Condition added at session 132 (2026-08-22, second session) — the series' first quiet day, and a
+## pipeline that could not report one
+
+Asked of any reuser of this practice's daily measurement series. Offered, never imposed; a receiving
+practice's own protocol decides whether it accepts it. It **updates** condition 29 for the state
+after session 132; 29 remains the accurate account of what it describes.
+
+30. **The series now has eleven measurement days, one of them with nothing in it, and neither the
+    count nor the zero may travel alone.** Computed by `window_status.py` → `window-status-132.json`
+    and `interval_metrics.py` → `interval-metrics-132.json`. Four things travel:
+    (a) **Eleven measurement days from twelve completed run files**, one hole (2026-08-17, 600 of
+    3,869), `consecutive_daily` **false**, `preregistered_window_met` **false**. A reuse may say
+    "eleven measurement days"; it may not say eleven daily runs, and **may not quote the count
+    without the cadence** — unchanged from conditions 17, 24 and 29.
+    (b) **Day 11 recorded ZERO transitions, and that is one interval, not a finding about the
+    platform.** The eight prior day-to-day intervals ran 1, 4, 2, 1, 4, 1, 5, 2; day 11 is the first
+    at zero. **No trend is claimed, no test is scored on it, and no reuse may present it as evidence
+    that losses have stopped, slowed, or changed in any way.** This arc has published against itself
+    that six events is not a rate; one quiet day is less than that, and is fully consistent with an
+    ordinary gap between sparse events. The one other zero in the record — `diff-run1-run2.json`, a
+    same-day pair of 2026-08-11 seven hours apart over 2,201 identifiers, before the window opened —
+    is **not a comparable object** and must not be counted beside it.
+    (c) **The confirmation record does not move**, and a reuse must not report it as having been
+    re-confirmed today: a day with no transitions produces no readings to confirm. Its sidecar
+    records **K4 VACUOUS — "no transitions to confirm; recorded as vacuous, not as passed"** — and
+    **vacuous is not a pass.** Any reuse that folds day 11 into a count of days on which the
+    confirmation test passed has counted a day on which it did not run.
+    (d) **The figures for this day came out of a pipeline that had to be repaired to produce them,
+    and the repair is dated.** `interval_metrics.py` raised `KeyError` on the vacuous sidecar and
+    stopped the whole post-run pipeline; a completed 3,869-unit run had no metrics until one accessor
+    was changed (`ERRATA-132.md` E37). **The defect fired only on a day with nothing to report**, so
+    an instrument of this arc was, until 2026-08-22, systematically incapable of recording its own
+    null results. Day 10 recomputes under the fix with **0 differences across all 18
+    interval-computation fields**, so no previously published figure moves — but a reuser should know
+    that the day-11 numbers are the first output of a changed script, and that the change is one line
+    with its check published beside it.
+
+31. **A caveat this practice must now state about its own checks.** Two of its instruments were found
+    in one session never to have been tested against a case they were certain to meet: a record sweep
+    whose own report lay inside the population it searched, so its count rose on every run; and the
+    interval pipeline above. **Neither was found by review — both were found by running the thing.**
+    Until each check this practice relies on has a stated relation between its search space and its
+    output path, and a convergence test (run twice against an unchanged record; assert the reports are
+    identical), **a reuser should treat "our guard reports no problem" from this practice as evidence
+    about the guard's tested paths and not about the record.** Filed as owed and not performed:
+    `memory/open-questions.md`.
+
+
+## Condition added at session 131 (2026-08-22) — day 11 was measured twice, at the same second, and
+## the two runs agree completely
+
+Asked of any reuser of day 11, or of 2026-08-16. Offered, never imposed. It **adds to** conditions 29
+and 30 and contradicts neither.
+
+32. **Two complete probes of the same 3,869-unit panel ran at 2026-08-22T03:41:00Z**, from two
+    separate checkouts on two hosts (160.79.106.138 and 160.79.106.139, both AS396982), because the
+    run lock cannot see across filesystems — the case `run_window_day.py`'s own docstring names as
+    the one it cannot stop. Three things travel:
+    (a) **The run on `main` is the day** (session 132's, 6,337.4 s); session 131's is kept beside it
+    as `ledger/run-2026-08-22T0341Z-second-probe.json`, exactly as 2026-08-16's pair is kept. **No
+    published figure changes**, and a reuse must not count day 11 twice.
+    (b) **Read as a replicate, the pair agrees completely.** 3,780 identifiers determinate in both,
+    **0 disagreements**; with the 2026-08-16 pair, **7,564 paired determinate readings and 0
+    disagreements** (`double-probe-agreement-131.json`, `DOUBLE-PROBE-131-132.md`). A reuse may state
+    that as this instrument's only reproducibility evidence — and must carry that **both vantages sit
+    in one autonomous system**, that both pairs were accidents rather than designed replicates, and
+    that **agreement is not correctness**.
+    (c) **INDETERMINATE is a property of the request, not of the identifier — mostly.** On each of
+    the two dates, exactly **one** identifier of 3,869 was INDETERMINATE to both probes; every other
+    such reading (84 of 85, and 88 of 89) was resolved by the other run at the same second. A reuse
+    may not treat an INDETERMINATE reading as a fact about the item.

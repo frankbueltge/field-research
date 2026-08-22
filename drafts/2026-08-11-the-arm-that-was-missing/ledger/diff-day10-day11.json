@@ -26,59 +26,29 @@
   "note": "raw run files, no overlay applied"
  },
  "observed_in_both": 3869,
- "determinate_in_both": 3785,
- "touching_indeterminate": 84,
+ "determinate_in_both": 3793,
+ "touching_indeterminate": 76,
  "transitions": [],
  "n_transitions": 0,
  "disagreement_rate_pct": 0.0,
  "indeterminate_edges": [
-  {
-   "vid": "6659279642911837441",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
-  },
   {
    "vid": "676265754",
    "from": "INDETERMINATE",
    "to": "NOT-RETRIEVABLE"
   },
   {
-   "vid": "6828098161051979014",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
-  },
-  {
-   "vid": "6877561752918281474",
+   "vid": "6868275452562197762",
    "from": "NOT-RETRIEVABLE",
    "to": "INDETERMINATE"
   },
   {
-   "vid": "6910860023283420418",
+   "vid": "6921063457466895621",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
   {
-   "vid": "6916241393144892677",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
-  },
-  {
-   "vid": "6949780364537679109",
-   "from": "NOT-RETRIEVABLE",
-   "to": "INDETERMINATE"
-  },
-  {
-   "vid": "6950753353227832582",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
-  },
-  {
-   "vid": "6969361339525434629",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
-  },
-  {
-   "vid": "6988983656010353926",
+   "vid": "6941565989570071813",
    "from": "NOT-RETRIEVABLE",
    "to": "INDETERMINATE"
   },
@@ -93,22 +63,12 @@
    "to": "RETRIEVABLE"
   },
   {
-   "vid": "7013859486892887323",
-   "from": "NOT-RETRIEVABLE",
-   "to": "INDETERMINATE"
-  },
-  {
-   "vid": "7034559443136318767",
+   "vid": "7002195458495876358",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
   {
    "vid": "7039301877812563201",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
-  },
-  {
-   "vid": "7039924535231122689",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
@@ -123,23 +83,23 @@
    "to": "NOT-RETRIEVABLE"
   },
   {
-   "vid": "7059448413213035822",
+   "vid": "7056195093631372550",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
   {
-   "vid": "7072503925773028610",
+   "vid": "7058304537160994074",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
   {
-   "vid": "7083476855000403201",
+   "vid": "7059711025590947098",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
   {
-   "vid": "7105873120921226542",
-   "from": "RETRIEVABLE",
+   "vid": "70920553756",
+   "from": "NOT-RETRIEVABLE",
    "to": "INDETERMINATE"
   },
   {
@@ -148,14 +108,14 @@
    "to": "RETRIEVABLE"
   },
   {
+   "vid": "71185191634",
+   "from": "NOT-RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
    "vid": "7130403845598891306",
    "from": "INDETERMINATE",
    "to": "RETRIEVABLE"
-  },
-  {
-   "vid": "7144366824652590342",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
   },
   {
    "vid": "7150207643074841862",
@@ -163,17 +123,17 @@
    "to": "RETRIEVABLE"
   },
   {
-   "vid": "7175392822395194626",
+   "vid": "7178411186415766789",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
   {
-   "vid": "717838",
-   "from": "NOT-RETRIEVABLE",
+   "vid": "7183059759266925866",
+   "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
   {
-   "vid": "7202305606957468933",
+   "vid": "7202099617528319234",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
@@ -181,6 +141,16 @@
    "vid": "7205230875842219270",
    "from": "INDETERMINATE",
    "to": "RETRIEVABLE"
+  },
+  {
+   "vid": "7205453030572051713",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7223364525649562906",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
   },
   {
    "vid": "7228863177524628738",
@@ -193,6 +163,16 @@
    "to": "RETRIEVABLE"
   },
   {
+   "vid": "7234121532635761926",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7239086835421465899",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
    "vid": "7239779006340681006",
    "from": "INDETERMINATE",
    "to": "NOT-RETRIEVABLE"
@@ -203,12 +183,17 @@
    "to": "RETRIEVABLE"
   },
   {
+   "vid": "7245085873711189249",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
    "vid": "7272468687066647850",
    "from": "INDETERMINATE",
    "to": "RETRIEVABLE"
   },
   {
-   "vid": "7283577382026464554",
+   "vid": "7281635827434671362",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
@@ -218,17 +203,17 @@
    "to": "RETRIEVABLE"
   },
   {
-   "vid": "7310570399639653637",
+   "vid": "7306516686365052165",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
   {
-   "vid": "7311588534798781702",
+   "vid": "7311643257383963937",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
   {
-   "vid": "73147673976243",
+   "vid": "7327061748211805467",
    "from": "NOT-RETRIEVABLE",
    "to": "INDETERMINATE"
   },
@@ -238,7 +223,7 @@
    "to": "RETRIEVABLE"
   },
   {
-   "vid": "7348395513126964498",
+   "vid": "7342620494098599210",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
@@ -248,32 +233,17 @@
    "to": "RETRIEVABLE"
   },
   {
-   "vid": "7357758176504089898",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
-  },
-  {
-   "vid": "7360387187826855210",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
-  },
-  {
    "vid": "7363313215113006353",
    "from": "INDETERMINATE",
    "to": "RETRIEVABLE"
   },
   {
-   "vid": "7366201510440520976",
+   "vid": "7367325342027058440",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
   {
-   "vid": "7370113119844142382",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
-  },
-  {
-   "vid": "7378086154614115590",
+   "vid": "7376060921732730118",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
@@ -283,12 +253,17 @@
    "to": "RETRIEVABLE"
   },
   {
-   "vid": "7418966332957379847",
+   "vid": "7383969307220266248",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
   {
-   "vid": "7419181025546325268",
+   "vid": "7411631325427322143",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7419054223586757918",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
@@ -303,24 +278,9 @@
    "to": "RETRIEVABLE"
   },
   {
-   "vid": "7424964795587169568",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
-  },
-  {
-   "vid": "7426358726002527506",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
-  },
-  {
-   "vid": "7428526391114681633",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
-  },
-  {
    "vid": "7432665857462947079",
    "from": "INDETERMINATE",
-   "to": "RETRIEVABLE"
+   "to": "INDETERMINATE"
   },
   {
    "vid": "7437948649818066206",
@@ -328,12 +288,7 @@
    "to": "RETRIEVABLE"
   },
   {
-   "vid": "7449507817930919191",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
-  },
-  {
-   "vid": "7457316317436087557",
+   "vid": "7448757773413715206",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
@@ -343,14 +298,14 @@
    "to": "RETRIEVABLE"
   },
   {
+   "vid": "7469526539613293866",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
    "vid": "7476558168059809067",
    "from": "INDETERMINATE",
    "to": "RETRIEVABLE"
-  },
-  {
-   "vid": "7477275444601965829",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
   },
   {
    "vid": "7481765196294278405",
@@ -358,22 +313,17 @@
    "to": "RETRIEVABLE"
   },
   {
-   "vid": "7486031499796483336",
+   "vid": "7493709385793867009",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
   {
-   "vid": "7493187426660142352",
+   "vid": "7503197878614117639",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
   {
-   "vid": "7497628424551369991",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
-  },
-  {
-   "vid": "7502904653785369878",
+   "vid": "7505667811717500166",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
@@ -383,7 +333,12 @@
    "to": "RETRIEVABLE"
   },
   {
-   "vid": "7529747430191926535",
+   "vid": "7516822751202626824",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7525302362932612359",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
@@ -393,14 +348,14 @@
    "to": "NOT-RETRIEVABLE"
   },
   {
+   "vid": "7534658867897109776",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
    "vid": "7536011928292822303",
    "from": "INDETERMINATE",
    "to": "RETRIEVABLE"
-  },
-  {
-   "vid": "7540645420993629447",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
   },
   {
    "vid": "7544191052387814674",
@@ -413,22 +368,27 @@
    "to": "RETRIEVABLE"
   },
   {
+   "vid": "7569257396401655062",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
+   "vid": "7571112168255425799",
+   "from": "RETRIEVABLE",
+   "to": "INDETERMINATE"
+  },
+  {
    "vid": "7573277007065353495",
    "from": "INDETERMINATE",
    "to": "RETRIEVABLE"
   },
   {
-   "vid": "7620435295665753358",
+   "vid": "7603450911876238600",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
   {
-   "vid": "7640434460546157845",
-   "from": "RETRIEVABLE",
-   "to": "INDETERMINATE"
-  },
-  {
-   "vid": "7640487835438435606",
+   "vid": "7636410791293390094",
    "from": "RETRIEVABLE",
    "to": "INDETERMINATE"
   },
@@ -440,7 +400,7 @@
   {
    "vid": "7654667369670839582",
    "from": "INDETERMINATE",
-   "to": "INDETERMINATE"
+   "to": "RETRIEVABLE"
   },
   {
    "vid": "7657036218043043093",

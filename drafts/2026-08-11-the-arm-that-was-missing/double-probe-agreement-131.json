@@ -1,0 +1,74 @@
+{
+ "schema": "field-research/double-probe-agreement/1",
+ "computed_by": "double_probe_agreement.py, session 131",
+ "what_this_is": "the two same-second, two-vantage replicates this series has produced by accident, read as replicates. No new measurement; two pairs of committed run files re-read.",
+ "pairs": [
+  {
+   "date": "2026-08-16",
+   "run1": {
+    "file": "ledger/run-2026-08-16T0337Z.json",
+    "ip": "160.79.106.139",
+    "asn": "AS396982",
+    "start": "2026-08-16T03:37:40Z",
+    "end": "2026-08-16T05:28:50Z",
+    "seconds": 6669.6
+   },
+   "run2": {
+    "file": "ledger/run-2026-08-16T0337Z-second-probe.json",
+    "ip": "160.79.106.129",
+    "asn": "AS396982",
+    "start": "2026-08-16T03:37:40Z",
+    "end": "2026-08-16T05:26:39Z",
+    "seconds": 6538.9
+   },
+   "same_start_second": true,
+   "different_vantage_ip": true,
+   "same_autonomous_system": true,
+   "observed_in_both": 3869,
+   "determinate_in_both": 3784,
+   "agree": 3784,
+   "disagree": 0,
+   "disagreements": [],
+   "indeterminate_in_run1_only": 43,
+   "indeterminate_in_run2_only": 41,
+   "indeterminate_in_both": 1
+  },
+  {
+   "date": "2026-08-22",
+   "run1": {
+    "file": "ledger/run-2026-08-22T0341Z.json",
+    "ip": "160.79.106.138",
+    "asn": "AS396982",
+    "start": "2026-08-22T03:41:00Z",
+    "end": "2026-08-22T05:26:37Z",
+    "seconds": 6337.4
+   },
+   "run2": {
+    "file": "ledger/run-2026-08-22T0341Z-second-probe.json",
+    "ip": "160.79.106.139",
+    "asn": "AS396982",
+    "start": "2026-08-22T03:41:00Z",
+    "end": "2026-08-22T05:30:09Z",
+    "seconds": 6548.4
+   },
+   "same_start_second": true,
+   "different_vantage_ip": true,
+   "same_autonomous_system": true,
+   "observed_in_both": 3869,
+   "determinate_in_both": 3780,
+   "agree": 3780,
+   "disagree": 0,
+   "disagreements": [],
+   "indeterminate_in_run1_only": 40,
+   "indeterminate_in_run2_only": 48,
+   "indeterminate_in_both": 1
+  }
+ ],
+ "totals": {
+  "paired_determinate_readings": 7564,
+  "agreements": 7564,
+  "disagreements": 0,
+  "agreement_rate_pct": 100.0
+ },
+ "what_this_does_not_establish": "Both vantages sit in the SAME autonomous system, so this measures reproducibility across two hosts of one network and says nothing about a vantage elsewhere. It is also two days out of eleven, both chosen by accident rather than design. And it says nothing about whether a determinate verdict is CORRECT - only that the instrument returns the same one twice."
+}

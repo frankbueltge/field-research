@@ -3,7 +3,7 @@
  "computed_by": "interval_metrics.py, session 127",
  "from_run": "ledger/run-2026-08-21T0341Z.json",
  "to_run": "ledger/run-2026-08-22T0341Z.json",
- "what_this_interval_is": "day 11: the fourth run outside the pre-registered window, 1.0000 days after the last completed run (2026-08-21). No pre-registered test is scored on it. Run under the stop of CONDITIONS-128.md: the instrument keeps measuring, and nothing is built to send. It ran at the licensed hour after this session's proposal to move that hour was refused by its own adversary.",
+ "what_this_interval_is": "day 11: the fourth run outside the pre-registered window, 1.0000 days after the last completed run (2026-08-21). No pre-registered test is scored on it. Run under the stop of CONDITIONS-128.md, unchanged by CONDITIONS-131.md: the instrument keeps measuring, and nothing is built to send. It is the first day of the series delivered by a session that opened inside the licensed hour rather than one that had named the hour hours earlier.",
  "window_position": {
   "schema": "field-research/window-status/1",
   "computed_by": "window_status.py",
@@ -187,8 +187,8 @@
  "run": {
   "file": "ledger/run-2026-08-22T0341Z.json",
   "utc_start": "2026-08-22T03:41:00Z",
-  "utc_end": "2026-08-22T05:30:09Z",
-  "seconds": 6548.4,
+  "utc_end": "2026-08-22T05:26:37Z",
+  "seconds": 6337.4,
   "planned": 3869,
   "requested": 3869,
   "stopped": null,
@@ -203,8 +203,8 @@
   "verdict": "COMPARABLE"
  },
  "observed_in_both": 3869,
- "determinate_in_both": 3785,
- "touching_indeterminate": 84,
+ "determinate_in_both": 3793,
+ "touching_indeterminate": 76,
  "apparent_transitions_raw": 0,
  "apparent_transitions_overlay": 0,
  "overlay_rows_applied": 0,
@@ -215,8 +215,8 @@
   "vids": []
  },
  "denominators_this_interval": {
-  "retrievable_at_previous_day_and_determinate_now": 3103,
-  "absent_at_previous_day_and_determinate_now": 682
+  "retrievable_at_previous_day_and_determinate_now": 3110,
+  "absent_at_previous_day_and_determinate_now": 683
  },
  "series_after_this_interval": {
   "all_readings": {
@@ -248,9 +248,9 @@
  },
  "per_arm_counts": {
   "A": {
-   "RETRIEVABLE": 1933,
-   "NOT-RETRIEVABLE": 238,
-   "INDETERMINATE": 30
+   "RETRIEVABLE": 1931,
+   "NOT-RETRIEVABLE": 241,
+   "INDETERMINATE": 29
   },
   "A-new": {
    "RETRIEVABLE": 171,
@@ -258,14 +258,14 @@
    "INDETERMINATE": 2
   },
   "A2": {
-   "NOT-RETRIEVABLE": 116,
-   "RETRIEVABLE": 642,
-   "INDETERMINATE": 10
+   "NOT-RETRIEVABLE": 115,
+   "RETRIEVABLE": 648,
+   "INDETERMINATE": 5
   },
   "B": {
-   "RETRIEVABLE": 385,
-   "NOT-RETRIEVABLE": 64,
-   "INDETERMINATE": 5
+   "RETRIEVABLE": 388,
+   "NOT-RETRIEVABLE": 63,
+   "INDETERMINATE": 3
   },
   "B-truncated": {
    "RETRIEVABLE": 1,

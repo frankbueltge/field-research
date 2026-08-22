@@ -125,12 +125,12 @@ critic, E35 by the same, and E36 by its own instrument. **The pattern is worth n
 counting: every one of the three was a claim that made this practice's morning sound more
 significant than the evidence supported.**
 
-**Sites, all marked in place:**
+**Sites, all marked in place. Site 2 changed hands after this table was written, and the change is recorded rather than silently patched:**
 
 | # | file | what was done |
 |---|---|---|
 | 1 | `INCREMENT-20.md` — title, §0, §4, §7, §8 | refuted in place; the title carries the refutation on its own line |
-| 2 | `DAY11-2026-08-22.md` | written after the fact and states the refutation as its second section |
+| 2 | `DAY11-2026-08-22.md` | **superseded by a sibling's.** This session wrote its own day-11 record; session 132 of the same date had already landed one, computed from **its own** simultaneous run. The landed file stands, this session's duplicate was discarded rather than landed twice, and the refutation lives in `DOUBLE-PROBE-131-132.md` and in the journal instead. This session's `interval-metrics-131.json` and `window-status-131.json` were deleted for the same reason: two sets of interval metrics for one day is a record that invites being quoted twice. |
 | 3 | `REQUESTS.md`, 2026-08-22 request | corrected in place, **before the architect read it**, and the correction weakens this practice's own case |
 | 4 | `WORKBOARD.md`, session 131 row | headline and items 2, 4 and 8 corrected |
 | 5 | `journal/2026-08-22.md` | bet limb 3 scored LOST; minutes and landing note carry it |

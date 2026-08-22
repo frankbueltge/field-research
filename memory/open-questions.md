@@ -1891,8 +1891,15 @@ contract.
 **Q. What hour should a measurement run at, when the schedule that opens the sessions is not the
 practice's to set? — OPEN, and it is now the live question of the one instrument still running.**
 Measured at session 131 (`INCREMENT-20.md`): on every date the record can check, the run started
-**1 m 02 s to 6 m 00 s** after the session opened, so the instrument's "daily hour" was never chosen
-— it is wherever the session already was, and it moved when the sessions moved. On 2026-08-22 the
+**1 m 02 s to 6 m 00 s** after the session opened. ~~so the instrument's "daily hour" was never
+chosen — it is wherever the session already was, and it moved when the sessions moved.~~
+**WITHDRAWN — `ERRATA-131.md` E34, and this is the seventh site, found by session 132 and not by
+E34's own table, which listed six and said all six were marked.** The lag is equally what aiming at
+an hour named by an earlier session produces; on all five checkable dates the hour had already been
+named, and the dates on which the hour actually moved state no opening times at all. **What the lags
+establish is proximity, not a mechanism** — and the question below does not depend on the arrow,
+because a run happens only if a session is alive across it. Swept for by
+`drafts/2026-08-11-the-arm-that-was-missing/e34_sweep.py` → `e34-sweep-132.json`. On 2026-08-22 the
 sessions moved far enough that the hour named in `CONDITIONS-129.md` (03:41:00Z) lay **3 h 17 m 44 s**
 ahead of the session's opening, against a probe of median 6,528.5 s and a longest documented session
 span of 1 h 53 m 30 s — a required span **2.7×** anything on record at the time.
@@ -1910,6 +1917,20 @@ result says that adversary was right on the facts as well as the licence. **What
 ruling, or a schedule that holds. **What waiting costs, and it is not nothing:** five hours of
 session length no session can count on being given in advance.
 
+**UPDATE, session 132, 2026-08-22 (second session of the date) — the question is unchanged and its
+worst case did not happen.** A second session of the same date opened at **03:35:54Z**, five minutes
+and six seconds before the licensed second, and reserved the day thirty-four seconds later under
+`CONDITIONS-131.md` binding item 3. The hour was **not** moved, no substitute was measured, and day
+11 ran at 03:41:00Z. **This is the second time in the series a day was saved by a later session of
+the same date** — the first was 2026-08-16, caught with 62 seconds to spare. Two things follow and
+neither of them closes the question. **(1)** The saving mechanism is a second session happening to
+open in the right five minutes, which is the same schedule this practice does not control; a day
+rescued by luck is not a cadence. **(2)** This practice does not now argue from its own good luck
+that the hour should stand — that would be the mirror of session 131 arguing from its bad luck that
+the hour should move, and the request to the architect was filed with the figures precisely so the
+ruling would not turn on whichever session happened to write it. **The request stays open exactly as
+filed; silence still means the hour stands.**
+
 **Q. How much of this practice's self-description is measurable at all? — OPEN, raised by a
 by-product of session 131 and worth more than the by-product.** Three independent attempts to count
 one simple thing — how many sessions state the time they opened — disagreed three times in one
@@ -1920,3 +1941,43 @@ sentence broken across a line. **The ledger figures, machine-written, produced z
 the same pass.** The open part: this practice's record of itself is prose, and every measurement it
 takes of itself inherits that fragility — including the ones it has already published. Nothing
 enumerates which published self-measurements rest on a pattern over prose rather than over data.
+
+**Q. Which of this practice's other checks scan a population that contains their own output? —
+OPEN, and it is a generalisation of a defect found and fixed inside one session.** `e34_sweep.py`
+searched the repository for a withdrawn wording and wrote its report into the repository, quoting
+every site it found. Its report was therefore a site, and its count rose by one on every run with
+nothing in the record having changed: 11, then 12, then 13 (`ERRATA-132.md` E36; the fix is a
+three-line exclusion and three consecutive runs then return the same figure). **The instrument was
+not measuring the record; it was measuring the record plus itself.** The open part is that nobody
+has asked the same question of the checks this practice already relies on — `errata_check.py`,
+`chronicle_check.py`, `requests_room_check.py`, `prose_vs_json.py`, `guard_claims.py` — several of
+which read files in directories they also write into. **What would close it:** for each check, the
+stated relation between its search space and its output path, and a convergence test — run it twice
+against an unchanged record and assert the two reports are identical. That test is cheap, it is not
+written anywhere, and this session did not write it either: it is named here as owed rather than
+performed, because the session's licence was one measurement run and the sweep was already a
+by-product of the memory pass.
+
+**Q. How is a daily run reserved across two checkouts, when the lock can only see one filesystem? —
+OPEN, and it has now failed twice.** `run_window_day.py` states the gap in its own docstring, under
+*WHAT IT STILL CANNOT DO*: *"Two probes launched from two separate checkouts of this repository
+cannot see each other's reservation and this would not stop them."* On **2026-08-22** two sessions of
+this practice did exactly that — sessions 131 and 132, reserving at 00:36:20Z and 03:36:28Z, both
+running 03:41:00Z, from 160.79.106.139 and 160.79.106.138 — and `git ls-remote` showed no sibling
+branch at any check on either side, because auto-land consumes each branch as it lands. **The
+session-open marker cannot detect a sibling whose branch has already been consumed.** The cost is
+real and external: two full 3,869-unit probes of somebody else's service for one measurement.
+**What would close it:** a reservation that lives where both sessions can see it — the shared remote
+— rather than on one filesystem; or a marker convention that survives auto-land. **What must not
+close it:** treating the replicate it produced (`DOUBLE-PROBE-131-132.md`, 7,564 paired readings, 0
+disagreements) as a reason to tolerate the collision. Reading the wreckage is not a reason to keep
+crashing.
+
+**Q. What would a DESIGNED replicate of this instrument be worth? — OPEN, and deliberately not
+started.** Two accidental same-second double probes (2026-08-16, 2026-08-22) give this instrument its
+only reproducibility evidence: **7,564 paired determinate readings, zero disagreements**, and the
+sharp secondary finding that on each date exactly **one** identifier of 3,869 was INDETERMINATE to
+both probes — so "cannot tell" is a property of the request, not of the item. Both vantages sit in one
+autonomous system, both pairs were accidents, and agreement is not correctness. A replicate chosen
+rather than collided into would answer all three. **Not opened here: it is new measurement design,
+which the stop does not license.** Candidate for after 2026-09-05.

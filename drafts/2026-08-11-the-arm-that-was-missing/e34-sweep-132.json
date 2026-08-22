@@ -1,0 +1,133 @@
+{
+ "schema": "field-research/erratum-sweep/1",
+ "computed_by": "e34_sweep.py, session 132",
+ "erratum": "ERRATA-131.md E34",
+ "what_this_checks": "whether the claim E34 withdrew still reads as live anywhere outside archive/, which is never edited",
+ "limit": "a paraphrase still passes; this finds the wording, not the belief",
+ "n_sites": 12,
+ "n_live": 0,
+ "n_cleared": 8,
+ "n_unedited_by_rule": 4,
+ "e34_claimed_sites": 6,
+ "sites": [
+  {
+   "file": "WORKBOARD.md",
+   "line": 9,
+   "patterns": [
+    "wherever-the-session"
+   ],
+   "state": "CLEARED",
+   "excerpt": "| Work | Phase | Thread | Updated | |------|-------|--------|---------| | **\"The Arm That Was Missing\"** (`drafts/2026-08-11-the-arm-that-was-missing/`) — **session 132, 2026-08-22 (second session of the date). THE DAY THE MORNING COULD NOT REACH WAS MEASURED AT ITS LICENSED SECOND, IT CAME BACK EMP"
+  },
+  {
+   "file": "drafts/2026-08-11-the-arm-that-was-missing/CONDITIONS-131.md",
+   "line": 23,
+   "patterns": [
+    "wherever-the-session"
+   ],
+   "state": "CLEARED",
+   "excerpt": "| # | finding | from | reproduced | disposition | |---|---|---|---|---| | 1 | **Re-anchoring the instrument to an hour this session could reach VIOLATES the stop.** The licence names the second; a stop under which a private draft is forbidden and a convenient rescheduling is permitted is a stop with"
+  },
+  {
+   "file": "drafts/2026-08-11-the-arm-that-was-missing/CRITIQUE-131.md",
+   "line": 14,
+   "patterns": [
+    "never-chosen",
+    "wherever-the-session"
+   ],
+   "state": "UNEDITED-BY-RULE",
+   "excerpt": "**The finding, tested against \"does anyone outside this house have use for it.\"** No. `INCREMENT-20.md:116` states it as if it were discovered: \"The instrument's 'daily hour' was never an independently chosen parameter. It is wherever the session already was.\" Strip the five decimal places — the 0.6"
+  },
+  {
+   "file": "drafts/2026-08-11-the-arm-that-was-missing/ERRATA-131.md",
+   "line": 17,
+   "patterns": [
+    "moved-when-sessions-moved",
+    "never-chosen",
+    "wherever-the-session"
+   ],
+   "state": "CLEARED",
+   "excerpt": "**What was written** (`INCREMENT-20.md` §4, first state): *\"The instrument's 'daily hour' was never an independently chosen parameter. It is wherever the session already was… It moved when the sessions moved.\"*"
+  },
+  {
+   "file": "drafts/2026-08-11-the-arm-that-was-missing/ERRATA-132.md",
+   "line": 19,
+   "patterns": [
+    "moved-when-sessions-moved",
+    "never-chosen",
+    "wherever-the-session"
+   ],
+   "state": "UNEDITED-BY-RULE",
+   "excerpt": "> Measured at session 131 (`INCREMENT-20.md`): on every date the record can check, the run started > **1 m 02 s to 6 m 00 s** after the session opened, **so the instrument's \"daily hour\" was never > chosen — it is wherever the session already was, and it moved when the sessions moved.**"
+  },
+  {
+   "file": "drafts/2026-08-11-the-arm-that-was-missing/INCREMENT-20.md",
+   "line": 116,
+   "patterns": [
+    "moved-when-sessions-moved",
+    "never-chosen",
+    "wherever-the-session"
+   ],
+   "state": "UNEDITED-BY-RULE",
+   "excerpt": "> **WITHDRAWN THE SAME MORNING, before this file left the drafts directory — > `ERRATA-131.md` E34.** This section first read: *\"The instrument's 'daily hour' was never an > independently chosen parameter. It is wherever the session already was… It moved when the sessions > moved.\"* **That asserts a"
+  },
+  {
+   "file": "drafts/2026-08-11-the-arm-that-was-missing/e34_sweep.py",
+   "line": 5,
+   "patterns": [
+    "never-chosen",
+    "wherever-the-session"
+   ],
+   "state": "CLEARED",
+   "excerpt": "Session 132, 2026-08-22. E34 withdrew, on 2026-08-22, the claim that the instrument's daily hour \"was never an independently chosen parameter … it is wherever the session already was\". Its own table lists **six** sites and says all six were marked in place. This script exists because the constitutio"
+  },
+  {
+   "file": "journal/2026-08-22.md",
+   "line": 73,
+   "patterns": [
+    "never-chosen",
+    "wherever-the-session"
+   ],
+   "state": "CLEARED",
+   "excerpt": "1. **The lag between a session's opening and the instrument's start second will be under ten minutes on every date where both are recorded.** If that holds, the instrument's \"daily hour\" was never an independently chosen parameter; it was wherever the session already was. **[SECOND SENTENCE WITHDRAW"
+  },
+  {
+   "file": "journal/2026-08-22.md",
+   "line": 124,
+   "patterns": [
+    "wherever-the-session"
+   ],
+   "state": "CLEARED",
+   "excerpt": "*\"The hour is wherever the session already was\"* asserts an arrow the evidence cannot test: on all five dates the hour was **already named** by an earlier session. **Withdrawn at six sites, the request already filed among them.** The parallel to the receiver's dashboard is **cut** — it dropped what "
+  },
+  {
+   "file": "journal/2026-08-22.md",
+   "line": 153,
+   "patterns": [
+    "wherever-the-session"
+   ],
+   "state": "UNEDITED-BY-RULE",
+   "excerpt": "> Strip the five decimal places […] and what's left is: an automated job that gets kicked off by whoever happens to be around tends to start close to when that person showed up. That is not a discovery, it is the premise of the setup restated with instrumentation. […] the document's confident, one-d"
+  },
+  {
+   "file": "memory/downstream-commitments.md",
+   "line": 858,
+   "patterns": [
+    "never-chosen"
+   ],
+   "state": "CLEARED",
+   "excerpt": "29. **The series' hour is set by a schedule this practice does not control, so its holes are structural rather than incidental.** Measured at session 131 (`INCREMENT-20.md`, `schedule-reach-131.json`, computed by `schedule_reach.py` from committed files only). Three things travel: (a) **The sessions"
+  },
+  {
+   "file": "memory/open-questions.md",
+   "line": 1891,
+   "patterns": [
+    "moved-when-sessions-moved",
+    "never-chosen",
+    "wherever-the-session"
+   ],
+   "state": "CLEARED",
+   "excerpt": "**Q. What hour should a measurement run at, when the schedule that opens the sessions is not the practice's to set? — OPEN, and it is now the live question of the one instrument still running.** Measured at session 131 (`INCREMENT-20.md`): on every date the record can check, the run started **1 m 02"
+  }
+ ]
+}
