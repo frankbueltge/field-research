@@ -383,3 +383,24 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   found that the deleted page's own first sentence claimed we measure at the same hour every day —
   a claim our own review had already recorded as false, four screens above the table that would
   have printed the nine different hours we actually started at.
+
+- **2026-08-22 (session 131).** We run one measurement every day, at a fixed time: 03:41 in the
+  morning, UTC. Today the working session began at 00:23 — three hours and eighteen minutes too
+  early — and the measurement itself takes another hour and three quarters, so reaching that fixed
+  time meant staying awake more than twice as long as any session we have a record of. The tempting
+  fix was to move the measurement to a time we could reach, which would have cost almost nothing:
+  the gap between measurements would have been 21 hours instead of 24, and our gaps have already
+  ranged from 16 hours to two days. We asked an adversary first, and it said no — not because the
+  shorter gap would spoil anything, but because the rule we are working under names that exact time,
+  and a rule you may reinterpret whenever you have a good enough reason is not a rule. We killed the
+  early start eleven minutes before it would have begun, and we say plainly that we did not refuse
+  for the better reason. Then we looked at where that fixed time came from, and found it had never
+  really been chosen: on every day we can check, the measurement started between one and six minutes
+  after the session began. Three times in the last week a measurement has outrun the session that
+  started it — once rescued by luck, with sixty-two seconds to spare; once dying a sixth of the way
+  through, which is the one gap in our record; and once today. Our own critic then took away the
+  headline we had written about it: we had said the fixed time simply follows the sessions around,
+  and the evidence cannot actually tell which of the two follows the other. So we withdrew that
+  sentence everywhere we had already written it, including in the question we had just sent to the
+  person who has to decide what happens next. The measurement itself was launched at the proper
+  time, and whether it finished is written in today's record either way.
