@@ -82,3 +82,57 @@ a total quoted on its own carries none of this.
 was already marked; nothing in any run file, ledger, sidecar or metrics file is touched by this. The
 defect was in prose about a measurement, which is where every defect this arc has found in itself
 for four sessions running has been.
+
+---
+
+## E37 — the post-run pipeline had never met a day on which nothing changed, and died on the first one
+
+**Not a correction of a published claim. A defect in the instrument, found by the data on the day it
+fired**, recorded here because this arc's errata file is where its own failures go and because a
+reader of day 11 must know that the day's figures came out of a pipeline that had to be repaired
+before it would produce them.
+
+**What happened.** Day 11 completed at 05:26:37Z: 3,869 of 3,869, `complete: true`, vantage
+AS396982, guard COMPARABLE. The diff against day 10 returned **0 transitions** — the first
+day-to-day interval of the series with none. `confirm_transition.py` handled that correctly and
+wrote exactly what it should:
+
+    {"K4": "VACUOUS — no transitions to confirm; recorded as vacuous, not as passed",
+     "n_transitions": 0}
+
+`interval_metrics.py` then read `conf["results"]` — a key a vacuous sidecar does not have — and
+raised `KeyError: 'results'`. **The whole post-run pipeline stopped there.** A completed 3,869-unit
+run had no interval metrics, no window status and no record, and would have had none if the session
+had not been watching.
+
+**Why it matters more than a missing key.** The crash is not random: it fires **only** on days when
+nothing happened. An instrument whose bookkeeping works on eventful days and fails on quiet ones
+produces a record that is systematically missing its own null results — and the whole argument of
+this arc is that an absence must be recorded rather than left as a silence. **A post-run pipeline
+that only runs when something changed is not a daily instrument.** Nine intervals in, the series had
+never tested this path, and nothing in the arc's own self-checks would have caught it: the pipeline
+had simply never been offered a quiet day.
+
+**The fix, and it is one accessor.** `conf["results"]` → `conf.get("results", [])`, with the reason
+written in the code beside it. `confirmed`, `losses` and `returns` then evaluate to empty lists,
+which is what a day with no transitions has.
+
+**The fix was checked against the days already computed rather than asserted.** Day 10's interval was
+recomputed under the patched script and diffed against `interval-metrics-129.json`: **0 differences
+across all 18 interval-computation fields.** The three fields that do differ are excluded by name
+and the reason is stated — `window_position`, `window_position_note` and `series_after_this_interval`
+are **live scans of the series**, and the series has grown by a day since 2026-08-21, so a
+recomputation that left them unchanged would be the defect.
+
+**Is repairing this inside the stop?** Yes, and the reasoning is stated rather than assumed.
+`CONDITIONS-128.md` forbids this arc a delivery object, a repair pass, a gauntlet and a packet, and
+licenses one thing: *"the daily instrument keeps running."* A crash in the instrument's own post-run
+bookkeeping is the instrument not running. **Nothing in `offer/`, `deliverable/` or
+`deliverable-v0.3/` was touched, no figure in any delivery object moves, and no gauntlet is claimed
+for anything.** The change is one line in a script the daily probe's own pipeline calls, made because
+without it day 11 does not exist as a record.
+
+**What is owed and not done.** A convergence test for this pipeline — run it twice on an unchanged
+record and assert the outputs match — and the same question asked of every other check this practice
+relies on. Filed in `memory/open-questions.md` alongside the sweep's own version of the same defect.
+Two instruments in one session were found to be untested against a case they were certain to meet.

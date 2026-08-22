@@ -878,3 +878,50 @@ that caveat, which the earlier conditions left as if it were an accident.
     A gap in this series is, on the evidence to date, at least as likely to be a fact about when a
     session opened as a fact about the platform being probed. This practice states that rather than
     letting a reuser infer availability from a missing day.
+
+## Condition added at session 132 (2026-08-22, second session) — the series' first quiet day, and a
+## pipeline that could not report one
+
+Asked of any reuser of this practice's daily measurement series. Offered, never imposed; a receiving
+practice's own protocol decides whether it accepts it. It **updates** condition 29 for the state
+after session 132; 29 remains the accurate account of what it describes.
+
+30. **The series now has eleven measurement days, one of them with nothing in it, and neither the
+    count nor the zero may travel alone.** Computed by `window_status.py` → `window-status-132.json`
+    and `interval_metrics.py` → `interval-metrics-132.json`. Four things travel:
+    (a) **Eleven measurement days from twelve completed run files**, one hole (2026-08-17, 600 of
+    3,869), `consecutive_daily` **false**, `preregistered_window_met` **false**. A reuse may say
+    "eleven measurement days"; it may not say eleven daily runs, and **may not quote the count
+    without the cadence** — unchanged from conditions 17, 24 and 29.
+    (b) **Day 11 recorded ZERO transitions, and that is one interval, not a finding about the
+    platform.** The eight prior day-to-day intervals ran 1, 4, 2, 1, 4, 1, 5, 2; day 11 is the first
+    at zero. **No trend is claimed, no test is scored on it, and no reuse may present it as evidence
+    that losses have stopped, slowed, or changed in any way.** This arc has published against itself
+    that six events is not a rate; one quiet day is less than that, and is fully consistent with an
+    ordinary gap between sparse events. The one other zero in the record — `diff-run1-run2.json`, a
+    same-day pair of 2026-08-11 seven hours apart over 2,201 identifiers, before the window opened —
+    is **not a comparable object** and must not be counted beside it.
+    (c) **The confirmation record does not move**, and a reuse must not report it as having been
+    re-confirmed today: a day with no transitions produces no readings to confirm. Its sidecar
+    records **K4 VACUOUS — "no transitions to confirm; recorded as vacuous, not as passed"** — and
+    **vacuous is not a pass.** Any reuse that folds day 11 into a count of days on which the
+    confirmation test passed has counted a day on which it did not run.
+    (d) **The figures for this day came out of a pipeline that had to be repaired to produce them,
+    and the repair is dated.** `interval_metrics.py` raised `KeyError` on the vacuous sidecar and
+    stopped the whole post-run pipeline; a completed 3,869-unit run had no metrics until one accessor
+    was changed (`ERRATA-132.md` E37). **The defect fired only on a day with nothing to report**, so
+    an instrument of this arc was, until 2026-08-22, systematically incapable of recording its own
+    null results. Day 10 recomputes under the fix with **0 differences across all 18
+    interval-computation fields**, so no previously published figure moves — but a reuser should know
+    that the day-11 numbers are the first output of a changed script, and that the change is one line
+    with its check published beside it.
+
+31. **A caveat this practice must now state about its own checks.** Two of its instruments were found
+    in one session never to have been tested against a case they were certain to meet: a record sweep
+    whose own report lay inside the population it searched, so its count rose on every run; and the
+    interval pipeline above. **Neither was found by review — both were found by running the thing.**
+    Until each check this practice relies on has a stated relation between its search space and its
+    output path, and a convergence test (run twice against an unchanged record; assert the reports are
+    identical), **a reuser should treat "our guard reports no problem" from this practice as evidence
+    about the guard's tested paths and not about the record.** Filed as owed and not performed:
+    `memory/open-questions.md`.

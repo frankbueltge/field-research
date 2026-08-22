@@ -73,7 +73,16 @@ def main(argv=None):
     abs_then_det_now = [v for v in both
                         if sp[v] == "NOT-RETRIEVABLE" and sc[v] != "INDETERMINATE"]
 
-    confirmed = [r for r in conf["results"] if r["all_passes_agree_with_new_state"]]
+    # `.get`, not `[...]`. Session 132, 2026-08-22, found by the data rather than by reading: day 11
+    # is the first interval in this series with ZERO transitions, and `confirm_transition.py`
+    # correctly writes a sidecar with no `results` key at all for that case — {"K4": "VACUOUS — no
+    # transitions to confirm; recorded as vacuous, not as passed", "n_transitions": 0}. This line
+    # then raised KeyError and the whole post-run pipeline died, so a completed 3,869-unit run had
+    # no interval metrics and no record. **A pipeline that only runs when something changed is not a
+    # daily instrument**, and the failure mode is the quiet one: it fires exactly on the days with
+    # nothing to report. No computation changes for a non-vacuous sidecar — `.get` returns the same
+    # list when the key is there, proven by recomputing day 10 and diffing (`ERRATA-132.md` E37).
+    confirmed = [r for r in conf.get("results", []) if r["all_passes_agree_with_new_state"]]
     losses = [r for r in confirmed if r["to"] == "NOT-RETRIEVABLE"]
     returns = [r for r in confirmed if r["to"] == "RETRIEVABLE"]
 

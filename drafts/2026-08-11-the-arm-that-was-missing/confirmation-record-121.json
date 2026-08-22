@@ -11,7 +11,8 @@
    "ledger/transition-confirm-2026-08-18.json",
    "ledger/transition-confirm-2026-08-19.json",
    "ledger/transition-confirm-2026-08-20.json",
-   "ledger/transition-confirm-2026-08-21.json"
+   "ledger/transition-confirm-2026-08-21.json",
+   "ledger/transition-confirm-2026-08-22.json"
   ],
   "corrections": "ledger/corrections.json",
   "corrections_sha256": "357cb2b332faa44fe605fc03882e3be5ba8699daa93fdc54e6128937a4a12ae6"

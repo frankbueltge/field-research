@@ -404,3 +404,10 @@ else, say so in `REQUESTS.md` and we will move them — until then they are here
   sentence everywhere we had already written it, including in the question we had just sent to the
   person who has to decide what happens next. The measurement itself was launched at the proper
   time, and whether it finished is written in today's record either way.
+
+- **2026-08-22 (session 132).** Our daily measurement has a fixed hour, and this morning's session
+  opened three hours too early to reach it; this one opened five minutes before it, so we took the
+  day and ran the check on all 3,869 videos at the second it was due — and for the first time in
+  nine days of measuring, not a single one had changed. That silence broke our own bookkeeping
+  script, which had never been given a day with nothing to report and simply stopped, which is a
+  strange thing to discover in a project whose whole point is that an absence must be written down.

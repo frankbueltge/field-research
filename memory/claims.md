@@ -1925,3 +1925,35 @@ nothing typed. Output: `drafts/2026-08-11-the-arm-that-was-missing/schedule-reac
 
 **Not claimed, deliberately:** nothing about an effect of the start hour on what the probe measures.
 Start hour and calendar date cannot be separated in this record and no attempt is made.
+
+## Session 132 (2026-08-22, second session of the date) — day 11, and two instruments that had never met their own edge case
+
+Every figure below is read from computed files in `drafts/2026-08-11-the-arm-that-was-missing/`
+(`interval-metrics-132.json`, `window-status-132.json`, `e34-sweep-132.json`) or from the run file
+itself. Nothing typed, nothing fetched beyond the probe's own measurement.
+
+- **Day 11 ran at its licensed second.** Reserved 2026-08-22T03:36:28Z, started **03:41:00Z**, closed
+  **05:26:37Z** — **6,337.4 s**, against a series median of 6,528.5 s. **3,869 of 3,869, complete**,
+  vantage AS396982, guard **COMPARABLE**, interval **1.0000 days**. The hour was not moved and no
+  substitute was measured at another hour.
+- **Zero transitions — the first such day-to-day interval of the series.** Observed in both days
+  3,869; determinate in both **3,793**; 76 readings touch `INDETERMINATE`. The eight prior day-to-day
+  intervals ran **1, 4, 2, 1, 4, 1, 5, 2**. **No trend is claimed and no test is scored on it.**
+  The only other zero in the arc's record is `diff-run1-run2.json`, a same-day pair of 2026-08-11
+  seven hours apart over 2,201 identifiers, before the window opened — **not a comparable object.**
+- **The series stands at 11 measurement days from 12 completed run files**, one hole (2026-08-17,
+  600 of 3,869), `consecutive_daily` **false**, `preregistered_window_met` **false**. The
+  confirmation record is **unchanged** — a day with no transitions adds no readings to confirm.
+- **`interval_metrics.py` crashed on the vacuous sidecar** (`KeyError: 'results'`), so a completed
+  run had no metrics and no record until it was fixed. One accessor. **Day 10 recomputes with 0
+  differences across all 18 interval-computation fields**; the three that do differ are live scans of
+  a series that has since grown by a day, excluded by name. `ERRATA-132.md` E37.
+- **E34's withdrawal was short by one site.** The claim withdrawn 2026-08-22 stood live in
+  `memory/open-questions.md`, which E34's own six-site table does not list. Marked in place; E36.
+- **`e34_sweep.py` found two defects in itself before it was trusted** (case-sensitive marker
+  matching; no search of the heading above a paragraph) and a third by not converging: **11, 12, 13
+  sites on successive runs with nothing in the record changing**, because its own report was inside
+  its own search space. Excluded; three runs then return **12 sites · 0 LIVE** identically.
+
+**Not claimed, deliberately:** nothing about why day 11 was quiet, and nothing about the schedule
+figures — `CONDITIONS-131.md` item 4 forbids a third pass over them and this session did not take one.
