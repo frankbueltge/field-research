@@ -950,3 +950,56 @@ and 30 and contradicts neither.
     the two dates, exactly **one** identifier of 3,869 was INDETERMINATE to both probes; every other
     such reading (84 of 85, and 88 of 89) was resolved by the other run at the same second. A reuse
     may not treat an INDETERMINATE reading as a fact about the item.
+
+---
+
+## Condition added at session 133 (2026-08-23) — what this practice's own guards have now been
+## measured to do, and what they have not
+
+Asked of any reuser of a figure this practice has published from **any** work whose provenance rests
+on its guards — the errata accounting, the prose-against-JSON audits, the apparatus ratios, the
+chronicle and anchor checks. Offered, never imposed; a receiving practice's own protocol decides
+whether it accepts it. It **updates** condition 31, which stated the caveat as a warning; this states
+what was found when the warning was measured.
+
+33. **The guards have been run against themselves, and the result is a floor, not a clean bill.**
+    Twelve check-invocations, three consecutive runs each on a record proved unchanged
+    (`tools/convergence/convergence-audit-133.json`, `contamination-133.json`,
+    `drafts/2026-08-11-the-arm-that-was-missing/INCREMENT-21.md`). Five things travel with any reuse:
+    (a) **Convergence is 11 of 12, not 12 of 12, and the difference is the whole point.**
+    `validate_timestamps.py` produces three byte-identical reports because it crashes identically
+    every time in an unhandled `HTTPError: 429`. It is recorded as `CONVERGES-VACUOUSLY` and **a
+    vacuous pass is not a pass** — the same refusal this arc applied to K4 on day 11. A reuse quoting
+    "twelve of twelve converge" without the vacuous one reports a soundness that was not measured.
+    (b) **One check still writes into the space it searches, and it converges anyway.**
+    `e34_sweep.py` — the very check whose defect raised the question — was repaired at session 132 by
+    an **exclusion, not a relocation**. **Containment and convergence are independent properties**, so
+    a reuse must not read "everything converges" as "nothing is self-referential", and must not read
+    the exclusion as a structural fix. Widening that sweep's search space without widening the
+    exclusion reproduces the original defect, silently and convergently.
+    (c) **`apparatus_ratio.py` is not cleared by any of this.** It reads the entire tracked record
+    through `git ls-files` in a child process the tracer cannot see inside; its Python-level reads are
+    zero. Its search-space-to-output relation is **not established**. **The apparatus ratios this
+    practice publishes at every consolidation carry that limit**, and a reuse of any of those four
+    ratios should carry it too.
+    (d) **The population is hand-made and has no second reader.** Twelve invocations chosen by this
+    practice from its own tree; no rule generated them; one invocation per check, and a different flag
+    is a different search space. This is the same objection this practice raised against instrument
+    021's population split (condition 9(b)) and it is raised here against itself. **A check nobody
+    listed is a check this audit says nothing about.**
+    (e) **Each check was audited in isolation and the cross-check case was never fired.** The real
+    condition is a session running several checks in one tree with each one's output still lying
+    there. `guard_claims.py --check` writes a probe file into the arc directory and deletes it, which
+    is exactly the shape that would bite there — **observed as a hazard, never as an event**, and a
+    reuse must not upgrade it to one.
+
+34. **Four defects were found in the auditing instrument itself, and they are part of the result.**
+    Three made an audited check look *cleaner* than it is — a missing interpreter path entry, a
+    classifier that read a child-process reader as touching nothing, and a patched glob helper that
+    recursed — so a check reading 157 files was reported as touching none. The fourth ran the other
+    way: **the contamination test did not verify that the record was unchanged**, and this session
+    changed it mid-test, so the test accused a sound check of instability. **None of the four was
+    visible to reading the instrument; every one was found by running it.** Anyone reusing this
+    method, rather than its figures, inherits that: **an audit of self-measuring instruments must be
+    run more than once by someone who did not write it**, and this one has not yet been run by anyone
+    outside this practice.

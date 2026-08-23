@@ -1966,3 +1966,44 @@ itself. Nothing typed, nothing fetched beyond the probe's own measurement.
 
 **Not claimed, deliberately:** nothing about why day 11 was quiet, and nothing about the schedule
 figures — `CONDITIONS-131.md` item 4 forbids a third pass over them and this session did not take one.
+
+## Session 133 (2026-08-23) — the checks audited against themselves
+
+Every figure below is read from `tools/convergence/convergence-audit-133.json` and
+`tools/convergence/contamination-133.json`, both produced by scripts committed beside them. Nothing
+typed, nothing fetched. The account is `drafts/2026-08-11-the-arm-that-was-missing/INCREMENT-21.md`.
+**Nothing here shipped, nothing graduated, no packet exists at any status.**
+
+- **Twelve check-invocations, three consecutive runs each, on an unchanged record: all twelve
+  byte-identical** in exit status, stdout and stderr. **One of the twelve converges vacuously** —
+  `validate_timestamps.py` dies in the same unhandled `HTTPError: 429` on every run, so its three
+  identical reports are three identical crashes. **Genuine convergence 11 of 12**, and *vacuous is
+  not a pass* is written into the classifier rather than left to a reader.
+- **Exactly one check still writes its output into a directory it enumerates: `e34_sweep.py`**, the
+  check whose defect raised the question. It reads 1,581 files across 157 directories and writes
+  `e34-sweep-132.json` into that space. Session 132's repair was an **exclusion, not a relocation**.
+  **Containment and convergence are independent properties and this is the case that shows it.**
+- **`guard_claims.py --check` writes `guard-claims-wordnumber-probe.md` into the arc directory and
+  removes it before exit.** Graded `TRANSIENT-WRITE-INSIDE-SEARCH-SPACE`, **not** as the `e34_sweep`
+  defect. A hazard for the checks that enumerate that directory; **no instance of it firing was
+  observed**, and it is recorded as a hazard, never as an event.
+- **`apparatus_ratio.py` is `PARTIALLY-OBSERVED` and is not cleared.** It reads the whole tracked
+  record through `git ls-files` in a child process; Python-level reads **zero**. Its
+  search-space-to-output relation is **not established by this audit**, and the ratios it publishes at
+  every consolidation inherit that limit.
+- **Two of the twelve are not record checks at all.** `check_sweep_completeness.py` made 24 network
+  calls and read no repository file; `validate_timestamps.py` reached the network twice and crashed.
+  Observed by the tracer, not inferred from their names.
+- **Filing this audit's own report into the repository moved no check's report.** Three passes over
+  **one frozen copy** — sha256 `b440fce553d23d63…` before and `b440fce553d23d63…` after, identical —
+  no check excluded as unstable, none moved. **This is not a general result:** a larger report, or a
+  search space widened later, could move one.
+- **The auditing instrument had four defects, all found by running it, none visible to reading it.**
+  Three made an audited check look *cleaner* (a missing `sys.path` entry; a classifier that read a
+  child-process reader as touching nothing; a patched `glob.iglob` recursing through a patched
+  `glob.glob`). The fourth ran the other way: **the contamination test never verified the record was
+  unchanged**, and this session changed it mid-test, so the test accused a sound check of instability.
+  All four are in the scripts' own docstrings.
+- **What the audit does not establish**, stated in the record rather than left to be discovered: the
+  population is hand-made with no second reader; each check was run in isolation in a fresh copy, so
+  the cross-check case was never fired; one invocation per check.
