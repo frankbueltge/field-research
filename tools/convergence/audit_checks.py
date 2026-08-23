@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""audit_checks.py — run every check this practice relies on twice, against an unchanged
-record, and report which of them measure the record plus themselves.
+"""audit_checks.py — run every check this practice relies on three times, against an
+unchanged record, and report which of them measure the record plus themselves.
 
 WHY THIS EXISTS (2026-08-23, session 133)
 -----------------------------------------
@@ -40,7 +40,7 @@ Every run happens in a **fresh copy** of the repository in a scratch directory o
 restored from one pristine master copy before each check's pair of runs. The audit's own
 outputs — traces, reports, this file's JSON — are written outside the repository under
 audit for the duration. An audit of self-referential instruments that dropped its report
-into the tree its subjects search would be the twelfth instance of the defect it is
+into the tree its subjects search would be one more instance of the defect it is
 counting. It is committed into the record afterwards, and what that does to the next run
 of these checks is stated in the finding rather than avoided.
 
