@@ -98,3 +98,14 @@ it), `ERRATA-133.md`, this file, and the two published reviews. **The two review
 constitutionally mandated critique and the gate's own required deliverable, not process record**;
 this session reads them out of the ceiling as sessions 89 and 90 did, and flags the reading rather
 than assuming it.
+
+
+**One figure from running that check, recorded because it was run and should not be quoted
+selectively.** `python3 tools/record_ceiling_check.py drafts/2026-08-11-the-arm-that-was-missing`
+returns **OVER**: a counted record of **366,455 words** against the 3,000-word ceiling, **363,455
+over**. That is the whole arc directory — twenty-one increments, eleven gauntlet rounds, every
+published review and every errata file — **not this session's process record**, and this session did
+**not** investigate when the arc crossed the line or whether the ceiling was ever meant to cover an
+accumulating instrument's whole working directory. **Naming it is not doing it**, and this session did
+not do it. It is put here so the next session meets the number rather than rediscovering it, and so
+that this session's own 414-word overrun above is not reported as if it were the only one.
