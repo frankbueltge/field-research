@@ -1,0 +1,472 @@
+{
+ "checks_whose_report_moved": [],
+ "count_moved": 0,
+ "excluded_as_unstable_on_their_own": [],
+ "frozen_record_sha256_after": "b440fce553d23d63be28159300140f524c8d4b02a906a7536fc8dbeafec93932",
+ "frozen_record_sha256_before": "b440fce553d23d63be28159300140f524c8d4b02a906a7536fc8dbeafec93932",
+ "generated_by": "tools/convergence/contamination_133.py",
+ "population": 12,
+ "question": "does filing this audit's own report in the repository change the report of any check the audit measures?",
+ "record_provably_unchanged_across_all_three_passes": true,
+ "rows": [
+  {
+   "baseline1_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline1_stdout_shas": [
+    "df40dcf6b5fcebed",
+    "df40dcf6b5fcebed",
+    "df40dcf6b5fcebed"
+   ],
+   "baseline2_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline2_stdout_shas": [
+    "df40dcf6b5fcebed",
+    "df40dcf6b5fcebed",
+    "df40dcf6b5fcebed"
+   ],
+   "containment_verdict": "PARTIALLY-OBSERVED",
+   "contaminated_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "contaminated_stdout_shas": [
+    "df40dcf6b5fcebed",
+    "df40dcf6b5fcebed",
+    "df40dcf6b5fcebed"
+   ],
+   "differs_from_baseline1": false,
+   "id": "apparatus_ratio",
+   "reads_the_whole_tree": false,
+   "report_moved_because_of_this_audit": false,
+   "unstable_between_two_identical_baselines": false
+  },
+  {
+   "baseline1_exit_codes": [
+    2,
+    2,
+    2
+   ],
+   "baseline1_stdout_shas": [
+    "e23e1e05288de388",
+    "e23e1e05288de388",
+    "e23e1e05288de388"
+   ],
+   "baseline2_exit_codes": [
+    2,
+    2,
+    2
+   ],
+   "baseline2_stdout_shas": [
+    "e23e1e05288de388",
+    "e23e1e05288de388",
+    "e23e1e05288de388"
+   ],
+   "containment_verdict": "READ-ONLY",
+   "contaminated_exit_codes": [
+    2,
+    2,
+    2
+   ],
+   "contaminated_stdout_shas": [
+    "e23e1e05288de388",
+    "e23e1e05288de388",
+    "e23e1e05288de388"
+   ],
+   "differs_from_baseline1": false,
+   "id": "check_anchors",
+   "reads_the_whole_tree": false,
+   "report_moved_because_of_this_audit": false,
+   "unstable_between_two_identical_baselines": false
+  },
+  {
+   "baseline1_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline1_stdout_shas": [
+    "86439c60810cea52",
+    "86439c60810cea52",
+    "86439c60810cea52"
+   ],
+   "baseline2_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline2_stdout_shas": [
+    "86439c60810cea52",
+    "86439c60810cea52",
+    "86439c60810cea52"
+   ],
+   "containment_verdict": "MEASURES-A-LIVE-SERVICE-NOT-THE-RECORD",
+   "contaminated_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "contaminated_stdout_shas": [
+    "86439c60810cea52",
+    "86439c60810cea52",
+    "86439c60810cea52"
+   ],
+   "differs_from_baseline1": false,
+   "id": "check_sweep_completeness",
+   "reads_the_whole_tree": false,
+   "report_moved_because_of_this_audit": false,
+   "unstable_between_two_identical_baselines": false
+  },
+  {
+   "baseline1_exit_codes": [
+    1,
+    1,
+    1
+   ],
+   "baseline1_stdout_shas": [
+    "8e11f34680aca603",
+    "8e11f34680aca603",
+    "8e11f34680aca603"
+   ],
+   "baseline2_exit_codes": [
+    1,
+    1,
+    1
+   ],
+   "baseline2_stdout_shas": [
+    "8e11f34680aca603",
+    "8e11f34680aca603",
+    "8e11f34680aca603"
+   ],
+   "containment_verdict": "READ-ONLY",
+   "contaminated_exit_codes": [
+    1,
+    1,
+    1
+   ],
+   "contaminated_stdout_shas": [
+    "8e11f34680aca603",
+    "8e11f34680aca603",
+    "8e11f34680aca603"
+   ],
+   "differs_from_baseline1": false,
+   "id": "chronicle_check",
+   "reads_the_whole_tree": false,
+   "report_moved_because_of_this_audit": false,
+   "unstable_between_two_identical_baselines": false
+  },
+  {
+   "baseline1_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline1_stdout_shas": [
+    "3c95fd50722fed45",
+    "3c95fd50722fed45",
+    "3c95fd50722fed45"
+   ],
+   "baseline2_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline2_stdout_shas": [
+    "3c95fd50722fed45",
+    "3c95fd50722fed45",
+    "3c95fd50722fed45"
+   ],
+   "containment_verdict": "OUTPUT-INSIDE-SEARCH-SPACE",
+   "contaminated_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "contaminated_stdout_shas": [
+    "3c95fd50722fed45",
+    "3c95fd50722fed45",
+    "3c95fd50722fed45"
+   ],
+   "differs_from_baseline1": false,
+   "id": "e34_sweep",
+   "reads_the_whole_tree": true,
+   "report_moved_because_of_this_audit": false,
+   "unstable_between_two_identical_baselines": false
+  },
+  {
+   "baseline1_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline1_stdout_shas": [
+    "bb3a34b9bb7b0836",
+    "bb3a34b9bb7b0836",
+    "bb3a34b9bb7b0836"
+   ],
+   "baseline2_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline2_stdout_shas": [
+    "bb3a34b9bb7b0836",
+    "bb3a34b9bb7b0836",
+    "bb3a34b9bb7b0836"
+   ],
+   "containment_verdict": "WRITES-OUTSIDE-SEARCH-SPACE",
+   "contaminated_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "contaminated_stdout_shas": [
+    "bb3a34b9bb7b0836",
+    "bb3a34b9bb7b0836",
+    "bb3a34b9bb7b0836"
+   ],
+   "differs_from_baseline1": false,
+   "id": "errata_check_bundle",
+   "reads_the_whole_tree": false,
+   "report_moved_because_of_this_audit": false,
+   "unstable_between_two_identical_baselines": false
+  },
+  {
+   "baseline1_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline1_stdout_shas": [
+    "5f12efa43366bb07",
+    "5f12efa43366bb07",
+    "5f12efa43366bb07"
+   ],
+   "baseline2_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline2_stdout_shas": [
+    "5f12efa43366bb07",
+    "5f12efa43366bb07",
+    "5f12efa43366bb07"
+   ],
+   "containment_verdict": "READ-ONLY",
+   "contaminated_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "contaminated_stdout_shas": [
+    "5f12efa43366bb07",
+    "5f12efa43366bb07",
+    "5f12efa43366bb07"
+   ],
+   "differs_from_baseline1": false,
+   "id": "errata_check_coverage",
+   "reads_the_whole_tree": false,
+   "report_moved_because_of_this_audit": false,
+   "unstable_between_two_identical_baselines": false
+  },
+  {
+   "baseline1_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline1_stdout_shas": [
+    "1f8990d18bd964ba",
+    "1f8990d18bd964ba",
+    "1f8990d18bd964ba"
+   ],
+   "baseline2_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline2_stdout_shas": [
+    "1f8990d18bd964ba",
+    "1f8990d18bd964ba",
+    "1f8990d18bd964ba"
+   ],
+   "containment_verdict": "TRANSIENT-WRITE-INSIDE-SEARCH-SPACE",
+   "contaminated_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "contaminated_stdout_shas": [
+    "1f8990d18bd964ba",
+    "1f8990d18bd964ba",
+    "1f8990d18bd964ba"
+   ],
+   "differs_from_baseline1": false,
+   "id": "guard_claims_check",
+   "reads_the_whole_tree": false,
+   "report_moved_because_of_this_audit": false,
+   "unstable_between_two_identical_baselines": false
+  },
+  {
+   "baseline1_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline1_stdout_shas": [
+    "21a694bbcda14f0a",
+    "21a694bbcda14f0a",
+    "21a694bbcda14f0a"
+   ],
+   "baseline2_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline2_stdout_shas": [
+    "21a694bbcda14f0a",
+    "21a694bbcda14f0a",
+    "21a694bbcda14f0a"
+   ],
+   "containment_verdict": "READ-ONLY",
+   "contaminated_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "contaminated_stdout_shas": [
+    "21a694bbcda14f0a",
+    "21a694bbcda14f0a",
+    "21a694bbcda14f0a"
+   ],
+   "differs_from_baseline1": false,
+   "id": "prose_vs_json",
+   "reads_the_whole_tree": false,
+   "report_moved_because_of_this_audit": false,
+   "unstable_between_two_identical_baselines": false
+  },
+  {
+   "baseline1_exit_codes": [
+    1,
+    1,
+    1
+   ],
+   "baseline1_stdout_shas": [
+    "1051eac6032e035a",
+    "1051eac6032e035a",
+    "1051eac6032e035a"
+   ],
+   "baseline2_exit_codes": [
+    1,
+    1,
+    1
+   ],
+   "baseline2_stdout_shas": [
+    "1051eac6032e035a",
+    "1051eac6032e035a",
+    "1051eac6032e035a"
+   ],
+   "containment_verdict": "READ-ONLY",
+   "contaminated_exit_codes": [
+    1,
+    1,
+    1
+   ],
+   "contaminated_stdout_shas": [
+    "1051eac6032e035a",
+    "1051eac6032e035a",
+    "1051eac6032e035a"
+   ],
+   "differs_from_baseline1": false,
+   "id": "record_ceiling_check",
+   "reads_the_whole_tree": true,
+   "report_moved_because_of_this_audit": false,
+   "unstable_between_two_identical_baselines": false
+  },
+  {
+   "baseline1_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline1_stdout_shas": [
+    "4583fde3bc43c74e",
+    "4583fde3bc43c74e",
+    "4583fde3bc43c74e"
+   ],
+   "baseline2_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline2_stdout_shas": [
+    "4583fde3bc43c74e",
+    "4583fde3bc43c74e",
+    "4583fde3bc43c74e"
+   ],
+   "containment_verdict": "READ-ONLY",
+   "contaminated_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "contaminated_stdout_shas": [
+    "4583fde3bc43c74e",
+    "4583fde3bc43c74e",
+    "4583fde3bc43c74e"
+   ],
+   "differs_from_baseline1": false,
+   "id": "requests_room_check",
+   "reads_the_whole_tree": false,
+   "report_moved_because_of_this_audit": false,
+   "unstable_between_two_identical_baselines": false
+  },
+  {
+   "baseline1_exit_codes": [
+    1,
+    1,
+    1
+   ],
+   "baseline1_stdout_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "baseline2_exit_codes": [
+    1,
+    1,
+    1
+   ],
+   "baseline2_stdout_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "containment_verdict": "READ-ONLY",
+   "contaminated_exit_codes": [
+    1,
+    1,
+    1
+   ],
+   "contaminated_stdout_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "differs_from_baseline1": false,
+   "id": "validate_timestamps",
+   "reads_the_whole_tree": false,
+   "report_moved_because_of_this_audit": false,
+   "unstable_between_two_identical_baselines": false
+  }
+ ],
+ "session": 133,
+ "verdict": "NO CHECK IN THIS POPULATION MOVED WHEN THE AUDIT'S REPORT WAS FILED",
+ "verdict_scope": "The verdict covers only the checks not excluded above. An excluded check is not cleared: it is a check this test cannot attribute anything to, because it moves on its own."
+}
