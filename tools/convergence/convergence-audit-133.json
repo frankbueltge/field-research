@@ -2,13 +2,22 @@
  "checks": [
   {
    "child_processes": [],
+   "declined_to_repeat_evidence": {
+    "later_run_exits": [
+     0,
+     0
+    ],
+    "run1_exit": 0,
+    "written_output_unchanged_after_run1": false,
+    "written_paths": []
+   },
    "exit_codes": [
-    1,
-    1,
-    1
+    0,
+    0,
+    0
    ],
    "first_run_stderr_head": "",
-   "first_run_stdout_head": "chronicle.json: 107 entries checked against the receiver's pinned schema\n  FAIL    journal/2026-08-23.md session 133 has no chronicle entry ('Session 133 \u2014 2026-08-23')\n",
+   "first_run_stdout_head": "chronicle.json: 108 entries checked against the receiver's pinned schema\n  PASS    every entry would parse; journal and chronicle stand one-to-one\n",
    "id": "chronicle_check",
    "invocation": "(cd . && python3 tools/chronicle_check.py)",
    "network_calls": 0,
@@ -29,9 +38,9 @@
     "e3b0c44298fc1c14"
    ],
    "stdout_shas": [
-    "8e11f34680aca603",
-    "8e11f34680aca603",
-    "8e11f34680aca603"
+    "65a4d9e6d4166411",
+    "65a4d9e6d4166411",
+    "65a4d9e6d4166411"
    ],
    "tracer_error": null,
    "verdict_containment": "READ-ONLY",
@@ -44,13 +53,22 @@
   },
   {
    "child_processes": [],
+   "declined_to_repeat_evidence": {
+    "later_run_exits": [
+     0,
+     0
+    ],
+    "run1_exit": 0,
+    "written_output_unchanged_after_run1": false,
+    "written_paths": []
+   },
    "exit_codes": [
-    2,
-    2,
-    2
+    0,
+    0,
+    0
    ],
    "first_run_stderr_head": "",
-   "first_run_stdout_head": "rendered session cards: 141\nserved chronicle anchors: 140\nSHORTFALL  session card cs-133 (journal/2026-08-23.md) has no chronicle.json\n           entry. Benign only while that session is in flight \u2014 its landing commit\n           must append the entry. Otherwise: append it now.\nstatus: TRANSIENT\n",
+   "first_run_stdout_head": "rendered session cards: 141\nserved chronicle anchors: 141\nstatus: PASS\n",
    "id": "check_anchors",
    "invocation": "(cd . && python3 tools/journal/check_anchors.py)",
    "network_calls": 0,
@@ -71,9 +89,9 @@
     "e3b0c44298fc1c14"
    ],
    "stdout_shas": [
-    "e23e1e05288de388",
-    "e23e1e05288de388",
-    "e23e1e05288de388"
+    "b7d0703fe6c76462",
+    "b7d0703fe6c76462",
+    "b7d0703fe6c76462"
    ],
    "tracer_error": null,
    "verdict_containment": "READ-ONLY",
@@ -86,6 +104,15 @@
   },
   {
    "child_processes": [],
+   "declined_to_repeat_evidence": {
+    "later_run_exits": [
+     0,
+     0
+    ],
+    "run1_exit": 0,
+    "written_output_unchanged_after_run1": false,
+    "written_paths": []
+   },
    "exit_codes": [
     0,
     0,
@@ -126,6 +153,15 @@
   },
   {
    "child_processes": [],
+   "declined_to_repeat_evidence": {
+    "later_run_exits": [
+     1,
+     1
+    ],
+    "run1_exit": 1,
+    "written_output_unchanged_after_run1": false,
+    "written_paths": []
+   },
    "exit_codes": [
     1,
     1,
@@ -158,7 +194,7 @@
     "drafts/2026-08-11-the-arm-that-was-missing/specialist-survival-scripts",
     "drafts/2026-08-11-the-arm-that-was-missing/tool"
    ],
-   "repo_files_read": 720,
+   "repo_files_read": 721,
    "repo_files_written": [],
    "role": "rule 6 ceiling on a work's process record",
    "runs": 3,
@@ -168,9 +204,9 @@
     "e3b0c44298fc1c14"
    ],
    "stdout_shas": [
-    "f99fdde941d7e261",
-    "f99fdde941d7e261",
-    "f99fdde941d7e261"
+    "f6e5e6d25cc91532",
+    "f6e5e6d25cc91532",
+    "f6e5e6d25cc91532"
    ],
    "tracer_error": null,
    "verdict_containment": "READ-ONLY",
@@ -186,13 +222,22 @@
     "git ls-files -z",
     "git ls-files -z"
    ],
+   "declined_to_repeat_evidence": {
+    "later_run_exits": [
+     0,
+     0
+    ],
+    "run1_exit": 0,
+    "written_output_unchanged_after_run1": false,
+    "written_paths": []
+   },
    "exit_codes": [
     0,
     0,
     0
    ],
    "first_run_stderr_head": "",
-   "first_run_stdout_head": "{\n  \"totals_kb\": {\n    \"all_text\": 69806.6,\n    \"works\": 7492.4,\n    \"face\": 1123.7,\n    \"prose_in_works\": 1219.4,\n    \"prose_outside\": 8408.8,\n    \"record_layer\": 4518.2,\n    \"unshipped\": 57377.6\n  },\n  \"ratios\": {\n    \"everything outside works/ : works/ text\": 8.32,\n    \"everything outside the face : the face\": 61.12,\n    \"markdown prose outside works/ : prose inside\": 6.9,\n    \"record and gover",
+   "first_run_stdout_head": "{\n  \"totals_kb\": {\n    \"all_text\": 70235.0,\n    \"works\": 7492.4,\n    \"face\": 1123.7,\n    \"prose_in_works\": 1219.4,\n    \"prose_outside\": 8435.0,\n    \"record_layer\": 4532.0,\n    \"unshipped\": 57737.6\n  },\n  \"ratios\": {\n    \"everything outside works/ : works/ text\": 8.37,\n    \"everything outside the face : the face\": 61.5,\n    \"markdown prose outside works/ : prose inside\": 6.92,\n    \"record and gover",
    "id": "apparatus_ratio",
    "invocation": "(cd . && python3 tools/apparatus_ratio.py --json)",
    "network_calls": 0,
@@ -211,9 +256,9 @@
     "e3b0c44298fc1c14"
    ],
    "stdout_shas": [
-    "df40dcf6b5fcebed",
-    "df40dcf6b5fcebed",
-    "df40dcf6b5fcebed"
+    "bf307681574d2d4c",
+    "bf307681574d2d4c",
+    "bf307681574d2d4c"
    ],
    "tracer_error": null,
    "verdict_containment": "PARTIALLY-OBSERVED",
@@ -226,6 +271,15 @@
   },
   {
    "child_processes": [],
+   "declined_to_repeat_evidence": {
+    "later_run_exits": [
+     0,
+     0
+    ],
+    "run1_exit": 0,
+    "written_output_unchanged_after_run1": false,
+    "written_paths": []
+   },
    "exit_codes": [
     0,
     0,
@@ -266,6 +320,17 @@
   },
   {
    "child_processes": [],
+   "declined_to_repeat_evidence": {
+    "later_run_exits": [
+     0,
+     0
+    ],
+    "run1_exit": 0,
+    "written_output_unchanged_after_run1": true,
+    "written_paths": [
+     "drafts/2026-08-11-the-arm-that-was-missing/errata-check.json"
+    ]
+   },
    "exit_codes": [
     0,
     0,
@@ -319,6 +384,15 @@
   },
   {
    "child_processes": [],
+   "declined_to_repeat_evidence": {
+    "later_run_exits": [
+     0,
+     0
+    ],
+    "run1_exit": 0,
+    "written_output_unchanged_after_run1": false,
+    "written_paths": []
+   },
    "exit_codes": [
     0,
     0,
@@ -370,6 +444,17 @@
   },
   {
    "child_processes": [],
+   "declined_to_repeat_evidence": {
+    "later_run_exits": [
+     0,
+     0
+    ],
+    "run1_exit": 0,
+    "written_output_unchanged_after_run1": true,
+    "written_paths": [
+     "drafts/2026-08-11-the-arm-that-was-missing/e34-sweep-132.json"
+    ]
+   },
    "exit_codes": [
     0,
     0,
@@ -545,7 +630,7 @@
     "works/2026-08-05-the-second-reader/prompts",
     "works/2026-08-05-the-second-reader/scripts"
    ],
-   "repo_files_read": 1585,
+   "repo_files_read": 1586,
    "repo_files_written": [
     "drafts/2026-08-11-the-arm-that-was-missing/e34-sweep-132.json"
    ],
@@ -581,6 +666,15 @@
   },
   {
    "child_processes": [],
+   "declined_to_repeat_evidence": {
+    "later_run_exits": [
+     0,
+     0
+    ],
+    "run1_exit": 0,
+    "written_output_unchanged_after_run1": false,
+    "written_paths": []
+   },
    "exit_codes": [
     0,
     0,
@@ -623,6 +717,15 @@
   },
   {
    "child_processes": [],
+   "declined_to_repeat_evidence": {
+    "later_run_exits": [
+     1,
+     1
+    ],
+    "run1_exit": 1,
+    "written_output_unchanged_after_run1": false,
+    "written_paths": []
+   },
    "exit_codes": [
     1,
     1,
@@ -632,11 +735,13 @@
    "first_run_stdout_head": "",
    "id": "validate_timestamps",
    "invocation": "(cd drafts/2026-08-11-the-arm-that-was-missing && python3 validate_timestamps.py)",
-   "network_calls": 4,
+   "network_calls": 12,
    "network_head": [
     "urlopen https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&rvslots=main&titles=Trevor+Lee+%28musician%29%7CAddison+Grace%7CTikTok+Awards+Night%7CKota+Banks%7CBim+bam+toi%7CGloria+Ga",
     "connect 127.0.0.1:43053",
     "urlopen https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&rvslots=main&titles=The+Hyannis+Sound%7CHallucinate+%28song%29%7CMatty+Healy%7CJ.+Mack+Slaughter+Jr.%7CNutbush+City+Limits",
+    "connect 127.0.0.1:43053",
+    "urlopen https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&rvslots=main&titles=C%C3%A9line+Dept%7CR+U+OK+%28song%29%7CBeer+Beer%2C+Truck+Truck%7CShadow+in+the+Cloud%7CRubberband+%28",
     "connect 127.0.0.1:43053"
    ],
    "os_open_used": false,
@@ -668,6 +773,17 @@
   },
   {
    "child_processes": [],
+   "declined_to_repeat_evidence": {
+    "later_run_exits": [
+     0,
+     0
+    ],
+    "run1_exit": 0,
+    "written_output_unchanged_after_run1": true,
+    "written_paths": [
+     "drafts/2026-08-11-the-arm-that-was-missing/sweep-completeness.json"
+    ]
+   },
    "exit_codes": [
     0,
     0,
@@ -721,22 +837,221 @@
      "sha_after": "e678ed00d2453c4921fc6108712cac0ca42f3a30290797ebbce23a8b46850f85"
     }
    ]
+  },
+  {
+   "child_processes": [],
+   "declined_to_repeat_evidence": {
+    "later_run_exits": [
+     1,
+     1
+    ],
+    "run1_exit": 0,
+    "written_output_unchanged_after_run1": true,
+    "written_paths": [
+     "drafts/2026-08-11-the-arm-that-was-missing/instrument-audit-133.json"
+    ]
+   },
+   "exit_codes": [
+    0,
+    1,
+    1
+   ],
+   "first_run_stderr_head": "",
+   "first_run_stdout_head": "A1 RE-DERIVATION: CLEAN \u2014 every stored state re-derives\nA2 CLASSIFIER DUPLICATION: AGREE on every record this arc holds and on all 21 points of the complete input grid \u2014 but they are two definitions, and agreement today is not a guarantee for the next edit\nA3 RESPONSE-CLASS CENSUS: 4 distinct response classes; 2 of them (567 records) were decided by the absence of a branch\nA4 WITHIN-RECORD CONTRAD",
+   "id": "audit_instrument",
+   "invocation": "(cd drafts/2026-08-11-the-arm-that-was-missing && python3 audit_instrument.py instrument-audit-133.json)",
+   "network_calls": 0,
+   "network_head": [],
+   "os_open_used": false,
+   "partially_observed": false,
+   "record_changed_by_the_check": [
+    "drafts/2026-08-11-the-arm-that-was-missing/instrument-audit-133.json"
+   ],
+   "repo_dirs_listed": [
+    "drafts/2026-08-11-the-arm-that-was-missing/ledger"
+   ],
+   "repo_files_read": 52,
+   "repo_files_written": [
+    "drafts/2026-08-11-the-arm-that-was-missing/instrument-audit-133.json"
+   ],
+   "role": "the arc's audit of its own stored files \u2014 omitted from the first population, added on the adversary's charge 1",
+   "runs": 3,
+   "stderr_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "stdout_shas": [
+    "4276e47160a02cdc",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "tracer_error": null,
+   "verdict_containment": "WRITES-OUTSIDE-SEARCH-SPACE",
+   "verdict_convergence": "DECLINED-TO-REPEAT",
+   "writes_removed_before_exit": [],
+   "writes_still_present_at_exit": [
+    "drafts/2026-08-11-the-arm-that-was-missing/instrument-audit-133.json"
+   ],
+   "written_and_also_read": [],
+   "written_into_an_enumerated_directory": [],
+   "written_state_after": [
+    {
+     "path": "drafts/2026-08-11-the-arm-that-was-missing/instrument-audit-133.json",
+     "sha_after": "260ba9db6875b73d450ccf5579c8c785d6b2df2542a16ead0598d4eb6f3f8b82"
+    }
+   ]
+  },
+  {
+   "child_processes": [],
+   "declined_to_repeat_evidence": {
+    "later_run_exits": [
+     0,
+     0
+    ],
+    "run1_exit": 0,
+    "written_output_unchanged_after_run1": true,
+    "written_paths": [
+     "drafts/2026-08-11-the-arm-that-was-missing/power-audit.json"
+    ]
+   },
+   "exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "first_run_stderr_head": "",
+   "first_run_stdout_head": "n analysed        : 2618  (excluded: {'arm_B_truncated': 249, 'indeterminate': 33, 'not_19_digit': 4, 'nonpositive_age': 0})\nretrievable       : 2320 / 2618 = 0.8862\nmean age (years)  : 2.880\nnaive lambda/yr   : 0.04196\nWeibull pooled    : k = 0.6959  CI95 [0.5017, 0.8983]   lambda = 0.01787/yr\nmedian life (yr)  : 33.04\nE[transitions] fit: 1.3090   P(zero) = 0.2701\nE[transitions] nai: 1.5993\nK1 fi",
+   "id": "power_audit",
+   "invocation": "(cd drafts/2026-08-11-the-arm-that-was-missing && python3 power_audit.py)",
+   "network_calls": 0,
+   "network_head": [],
+   "os_open_used": false,
+   "partially_observed": false,
+   "record_changed_by_the_check": [],
+   "repo_dirs_listed": [],
+   "repo_files_read": 1,
+   "repo_files_written": [
+    "drafts/2026-08-11-the-arm-that-was-missing/power-audit.json"
+   ],
+   "role": "the arc's own power audit \u2014 omitted from the first population, added on the adversary's charge 1",
+   "runs": 3,
+   "stderr_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "stdout_shas": [
+    "59f7ed877948cc16",
+    "59f7ed877948cc16",
+    "59f7ed877948cc16"
+   ],
+   "tracer_error": null,
+   "verdict_containment": "WRITES-OUTSIDE-SEARCH-SPACE",
+   "verdict_convergence": "CONVERGES",
+   "writes_removed_before_exit": [],
+   "writes_still_present_at_exit": [
+    "drafts/2026-08-11-the-arm-that-was-missing/power-audit.json"
+   ],
+   "written_and_also_read": [],
+   "written_into_an_enumerated_directory": [],
+   "written_state_after": [
+    {
+     "path": "drafts/2026-08-11-the-arm-that-was-missing/power-audit.json",
+     "sha_after": "1d963d4a5c319c3b5db392c9e5890eeab155dcf393df96fcf3bb0430a0e48079"
+    }
+   ]
+  },
+  {
+   "child_processes": [
+    "diff -u - ./guard-claims-expected.txt"
+   ],
+   "declined_to_repeat_evidence": {
+    "later_run_exits": [
+     1,
+     1
+    ],
+    "run1_exit": 1,
+    "written_output_unchanged_after_run1": true,
+    "written_paths": [
+     "drafts/2026-08-11-the-arm-that-was-missing/guard-claims-expected.txt"
+    ]
+   },
+   "exit_codes": [
+    1,
+    1,
+    1
+   ],
+   "first_run_stderr_head": "FAIL: the guard-claims block in deliverable-v0.3/VERSIONS.md is not what the guards say now.\nThis is the defect class that killed six gauntlets. Run --write and read the diff.\n",
+   "first_run_stdout_head": "",
+   "id": "guard_claims_check_FAIL_branch",
+   "invocation": "(cd drafts/2026-08-11-the-arm-that-was-missing && python3 guard_claims.py --check)",
+   "network_calls": 0,
+   "network_head": [],
+   "os_open_used": false,
+   "partially_observed": true,
+   "record_changed_by_the_check": [
+    "drafts/2026-08-11-the-arm-that-was-missing/guard-claims-expected.txt"
+   ],
+   "repo_dirs_listed": [],
+   "repo_files_read": 13,
+   "repo_files_written": [
+    "drafts/2026-08-11-the-arm-that-was-missing/guard-claims-expected.txt",
+    "drafts/2026-08-11-the-arm-that-was-missing/guard-claims-wordnumber-probe.md"
+   ],
+   "role": "the same invocation as `guard_claims_check`, on a record state where the guard FAILS \u2014 forced by corrupting the claims block in the working copy only",
+   "runs": 3,
+   "stderr_shas": [
+    "e7edf335c8d9ea9f",
+    "e7edf335c8d9ea9f",
+    "e7edf335c8d9ea9f"
+   ],
+   "stdout_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "tracer_error": "TypeError: Popen.__init__() got an unexpected keyword argument 'input'",
+   "verdict_containment": "TRANSIENT-WRITE-INSIDE-SEARCH-SPACE",
+   "verdict_convergence": "CONVERGES-VACUOUSLY",
+   "writes_removed_before_exit": [
+    "drafts/2026-08-11-the-arm-that-was-missing/guard-claims-wordnumber-probe.md"
+   ],
+   "writes_still_present_at_exit": [
+    "drafts/2026-08-11-the-arm-that-was-missing/guard-claims-expected.txt"
+   ],
+   "written_and_also_read": [
+    "drafts/2026-08-11-the-arm-that-was-missing/guard-claims-wordnumber-probe.md"
+   ],
+   "written_into_an_enumerated_directory": [],
+   "written_state_after": [
+    {
+     "path": "drafts/2026-08-11-the-arm-that-was-missing/guard-claims-expected.txt",
+     "sha_after": "42ba2695e6c28c4708018c2d08aa5048bf176c829ec9d4d1567115eb82c97c18"
+    },
+    {
+     "path": "drafts/2026-08-11-the-arm-that-was-missing/guard-claims-wordnumber-probe.md",
+     "sha_after": null
+    }
+   ]
   }
  ],
  "convergence_counts": {
-  "CONVERGES": 11,
-  "CONVERGES-VACUOUSLY": 1
+  "CONVERGES": 12,
+  "CONVERGES-VACUOUSLY": 2,
+  "DECLINED-TO-REPEAT": 1
  },
  "counts": {
   "MEASURES-A-LIVE-SERVICE-NOT-THE-RECORD": 1,
   "OUTPUT-INSIDE-SEARCH-SPACE": 1,
   "PARTIALLY-OBSERVED": 1,
   "READ-ONLY": 7,
-  "TRANSIENT-WRITE-INSIDE-SEARCH-SPACE": 1,
-  "WRITES-OUTSIDE-SEARCH-SPACE": 1
+  "TRANSIENT-WRITE-INSIDE-SEARCH-SPACE": 2,
+  "WRITES-OUTSIDE-SEARCH-SPACE": 3
  },
  "generated_by": "tools/convergence/audit_checks.py",
- "population": 12,
+ "population": 15,
  "runs_per_check": 3,
- "session": 133
+ "session": 133,
+ "tree_sha256_this_report_is_good_for": "58363aec08c73c9a40615a9485ab6794cd182ef8f78dc33760dd700570889b51"
 }
