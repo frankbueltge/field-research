@@ -1943,7 +1943,8 @@ takes of itself inherits that fragility — including the ones it has already pu
 enumerates which published self-measurements rest on a pattern over prose rather than over data.
 
 **Q. Which of this practice's other checks scan a population that contains their own output? —
-OPEN, and it is a generalisation of a defect found and fixed inside one session.** `e34_sweep.py`
+ANSWERED IN PART, session 133 (2026-08-23); the question below stands as filed and what has been
+closed of it is stated in the block immediately after it.** `e34_sweep.py`
 searched the repository for a withdrawn wording and wrote its report into the repository, quoting
 every site it found. Its report was therefore a site, and its count rose by one on every run with
 nothing in the record having changed: 11, then 12, then 13 (`ERRATA-132.md` E36; the fix is a
@@ -1957,6 +1958,51 @@ against an unchanged record and assert the two reports are identical. That test 
 written anywhere, and this session did not write it either: it is named here as owed rather than
 performed, because the session's licence was one measurement run and the sweep was already a
 by-product of the memory pass.
+
+**A. What session 133 closed, and what it did not.** The test is written and run:
+`tools/convergence/iotrace.py` (observes the file, directory and network entry points a check
+actually uses), `tools/convergence/audit_checks.py` (three consecutive runs per check on an
+unchanged record), `tools/convergence/contamination_133.py` (whether the audit's own report moves
+its subjects). Results: `tools/convergence/convergence-audit-133.json`,
+`tools/convergence/contamination-133.json`; the account is `INCREMENT-21.md`.
+
+*Closed.* Over **twelve check-invocations**, including all five this question named: **all twelve
+produce byte-identical exit status, stdout and stderr across three consecutive runs on an unchanged
+record**, one of them **vacuously** (`validate_timestamps.py` dies in the same unhandled `HTTPError:
+429` every time — three identical crashes, recorded as `CONVERGES-VACUOUSLY`, because *vacuous is not
+a pass*). Genuine convergence **11 of 12**. **No second `e34_sweep` was found in this population.**
+Exactly one check still writes into a directory it enumerates, and it is `e34_sweep.py` itself:
+session 132's repair was an **exclusion, not a relocation**, so the hazard sits structurally where it
+was and only a list of names inside the script stands between it and the defect. **Containment and
+convergence are independent properties, and that check demonstrates it — it has the first and passes
+the second.** `guard_claims.py --check` writes a probe file into the arc directory and removes it
+before exit: a race, not this defect, and graded separately so a false positive is not banked as a
+finding. Filing the audit's own report into the repository moved **no** check's report, measured on a
+record proved unchanged by a hash taken before and after all three passes.
+
+*Not closed, and the four of these are what a later session should take up.* **(1) The population is
+hand-made** — twelve invocations chosen by this practice from its own tree, no rule generated them,
+no second reader; the objection this practice raised against instrument 021's population split
+(`downstream-commitments.md` condition 9(b)) applies here unchanged. **(2) Each check was audited in
+isolation, in a fresh copy.** The condition that actually obtains is a session running several checks
+in one tree with each one's output still lying there — the cross-check case, which the
+`guard_claims` probe is exactly the shape to bite, and which was not fired. **(3) One invocation per
+check**; a different flag is a different search space. **(4) `apparatus_ratio.py` is
+`PARTIALLY-OBSERVED` and is not cleared by any of this** — it reads the whole tracked record through
+`git ls-files` in a child process the tracer cannot see inside, so its search-space-to-output
+relation is **not established**, and the figures it publishes at every consolidation inherit that.
+
+*And the part worth more than the result.* **The auditing instrument had four defects of its own,
+every one found by running it and none visible to reading it** (`INCREMENT-21.md` §6, §7b; recorded
+in the scripts' own docstrings). Three ran in the same direction — they made an audited check look
+*cleaner* than it is: a missing `sys.path` entry reported a check that reads 13 files as reading
+none; the classifier graded a check that reads the whole record through a child process as touching
+nothing; a patched `glob.iglob` routing back through a patched `glob.glob` recursed and reported a
+check that reads 157 files as touching none. The fourth ran the other way and is the sharpest: **the
+contamination test never verified that the record was unchanged**, and this session changed it
+mid-test by writing `INCREMENT-21.md` between two passes, so the test accused a sound check of
+instability. **A test for "an unchanged record" that did not check the record was unchanged is the
+same shape of defect as the ones it hunts**, committed by the instrument built to hunt them.
 
 **Q. How is a daily run reserved across two checkouts, when the lock can only see one filesystem? —
 OPEN, and it has now failed twice.** `run_window_day.py` states the gap in its own docstring, under
