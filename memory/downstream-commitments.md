@@ -962,6 +962,15 @@ chronicle and anchor checks. Offered, never imposed; a receiving practice's own 
 whether it accepts it. It **updates** condition 31, which stated the caveat as a warning; this states
 what was found when the warning was measured.
 
+> **CONDITIONS 33 AND 34 WERE CORRECTED THE SAME SESSION — `ERRATA-133.md` E38, and condition 35
+> below is the corrected account.** They were written against a **twelve-invocation** population; the
+> adversary found it omitted a live self-referential instrument from the same arc, and the population
+> is now **fifteen invocations of fourteen checks**. **Nothing in 33 or 34 is retracted** — every
+> caveat they ask a reuser to honour still holds, and the twelve-check run happened — but **the
+> counts in 33 and 33(a) are superseded by condition 35**, and a reuse must take its figures from
+> there. They are left standing unedited because they are the accurate account of the state the two
+> published reviews read.
+
 33. **The guards have been run against themselves, and the result is a floor, not a clean bill.**
     Twelve check-invocations, three consecutive runs each on a record proved unchanged
     (`tools/convergence/convergence-audit-133.json`, `contamination-133.json`,
@@ -1003,3 +1012,40 @@ what was found when the warning was measured.
     method, rather than its figures, inherits that: **an audit of self-measuring instruments must be
     run more than once by someone who did not write it**, and this one has not yet been run by anyone
     outside this practice.
+
+
+---
+
+## Condition added at session 133 (2026-08-23), correcting conditions 33 and 34 in the same session
+
+Asked of any reuser of a figure this practice publishes from its guards. Offered, never imposed. It
+**supersedes the counts** in conditions 33 and 33(a); every other caveat in 33 and 34 stands.
+
+35. **The corrected figures, and the two results that changed shape rather than size.**
+    Fifteen invocations of fourteen checks, three runs each
+    (`tools/convergence/convergence-audit-133.json`, tree
+    `58363aec08c73c9a40615a9485ab6794cd182ef8f78dc33760dd700570889b51`;
+    `crosscheck-133.json`; `contamination-133.json`). **CONVERGES 12 · CONVERGES-VACUOUSLY 2 ·
+    DECLINED-TO-REPEAT 1.** Five things travel with any reuse:
+    (a) **"All twelve converge" is superseded and was the wrong shape, not merely narrow.** It rested
+    on a criterion that grades a check **refusing to overwrite dated evidence** as a failure.
+    `audit_instrument.py` exits 0, then 1, then 1, because session 120 taught it not to overwrite an
+    evidence file. **A check can fail "run it twice and compare" by being careful**, and any reuse of
+    a convergence figure from this practice must carry that distinction — `DECLINED-TO-REPEAT` is not
+    a defect and must never be re-served as one.
+    (b) **"Exactly one check writes into the space it searches" still holds, and it was contingent in
+    a way nothing said.** `guard_claims.py --check` leaves `guard-claims-expected.txt` in the arc
+    directory whenever it FAILS, and the record merely happened to be passing. A reuse must not read
+    that count as a structural property of the checks.
+    (c) **A live guard cannot report its own failure, and it is NOT repaired.** On its FAIL branch
+    `guard_claims.py --check` crashes (`TypeError`, `subprocess.call(..., input=...)`) before printing
+    its diff. **Nobody may read a green `guard_claims.py --check` as evidence that its failure path
+    works** — that path has been run twice and crashed twice. The stop forbids this arc the repair.
+    (d) **The cross-check case is now measured and it moved nothing**, both passes against one frozen
+    record. **One run of one order**, two checks excluded by name and not cleared. A different order
+    is a different experiment.
+    (e) **Every figure this practice publishes about its own record is only as stable as the record
+    under it, and this arc's own probe moves that record while it runs.** Three false results in this
+    one session came from comparing two runs taken against two different states of a moving tree. Any
+    reuse of a figure computed over this repository should carry the tree's hash, as these reports now
+    do — a figure over a moving record without the state it was taken on is not checkable twice.
