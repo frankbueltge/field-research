@@ -11,14 +11,18 @@ question in `memory/open-questions.md` and named it explicitly as *"owed rather 
 > are identical. That test is cheap, it is not written anywhere, and this session did not write it
 > either.*
 
-It is written now: `tools/convergence/iotrace.py`, `tools/convergence/audit_checks.py`,
-`tools/convergence/contamination_133.py`. Results:
-`tools/convergence/convergence-audit-133.json`, `tools/convergence/contamination-133.json`.
+Instruments: `tools/convergence/iotrace.py`, `audit_checks.py`, `contamination_133.py`,
+`crosscheck_133.py`, `table_133.py`. Results: `convergence-audit-133.json`,
+`contamination-133.json`, `crosscheck-133.json`.
 
 **Nothing here ships, nothing graduates, no packet exists at any status, and no file under `offer/`,
 `deliverable/` or `deliverable-v0.3/` was touched.** The stop of `CONDITIONS-128.md`, left unchanged
-by `CONDITIONS-131.md` item 1 and `CONDITIONS-132.md` item 1, is unchanged by this session too. The
-subject of this increment is this practice's own guards, not a delivery object.
+by `CONDITIONS-131.md` item 1 and `CONDITIONS-132.md` item 1, is unchanged by this session.
+
+**This document was rewritten after its reviewers reported.** The state they read — a
+twelve-invocation population — is published unedited at `INTERLOCUTOR-133.md` and `VERIFIER-133.md`,
+and three of the figures they checked have since moved because acting on their charges grew the
+population. What changed, and why, is §9. Nothing they found is softened here.
 
 ---
 
@@ -30,209 +34,247 @@ counted its own report as a site: **11, then 12, then 13, with nothing in the re
 survived being written, being read, and being run once. It died on being run three times.
 
 So this instrument does not read source code and does not classify by naming convention. It patches
-the file, directory and network entry points a Python script actually uses, runs each check, and
-writes down what crossed them. Every verdict below is an observation of an execution.
+the file, directory and network entry points a script actually uses, runs each check, and writes down
+what crossed them. Every verdict below is an observation of an execution.
 
-**Two measurements per check.** *Self-containment*: the set of paths written, intersected with the
-paths read and the directories enumerated — a write into an enumerated directory counts even when
-run 1 never read the file, because on run 1 the file did not exist yet, which is exactly how the
-defect hides. *Convergence*: three consecutive runs with nothing in the record edited between them,
-comparing exit status, stdout and stderr. **The record is deliberately not restored between runs**;
-restoring it would test something nobody needs to know. The question is what happens when a session
-runs a check twice in a row on a repository nobody has edited.
+**Two measurements per check.** *Self-containment*: paths written, intersected with paths read and
+directories enumerated — a write into an enumerated directory counts even when run 1 never read the
+file, because on run 1 the file did not exist yet, which is exactly how the defect hides.
+*Convergence*: three consecutive runs with nothing in the record edited between them. **The record is
+deliberately not restored between runs.** The question is what happens when a session runs a check
+twice in a row on a repository nobody has edited.
 
-Three runs, not two. The question as filed asks for two. `e34_sweep.py` needed three before its own
-count stopped moving, so two would have been a floor this arc has already watched a defect walk
-under.
+Three runs, not the two the question asks for: `e34_sweep.py` needed three before its own count
+stopped moving.
 
 ---
 
-## 2. The population, and its one honest weakness
+## 2. The population, and the hole the adversary found in it
 
-Twelve invocations, each taken from the check's own documented usage:
+**Fifteen invocations of fourteen checks.** The first version had twelve, hand-picked, and the
+increment conceded in writing that the population was hand-made. **The adversary went and found what
+that concession was covering**, which is the difference between disclosing a gap and closing one:
+`audit_instrument.py`, whose own docstring calls it *"an audit of this arc's own stored files against
+themselves"*, which globs the ledger, writes its report into the directory it runs in, and whose own
+`main()` records that **session 120 caught it silently overwriting a dated evidence file**. It is
+referenced live in `memory/claims.md`, `memory/open-questions.md` and `NEXT-SESSION.md`. It was the
+single most on-point omission available and its omission is not defended. It and `power_audit.py`
+were added, and the result is in §3 — **acting on the charge produced the session's sharpest
+finding, which conceding it would not have.**
 
-| # | check | invocation | reads |
-|---|---|---|---|
-| 1 | `chronicle_check.py` | `python3 tools/chronicle_check.py` | 51 files, 1 dir |
-| 2 | `check_anchors.py` | `python3 tools/journal/check_anchors.py` | 52 files, 1 dir |
-| 3 | `requests_room_check.py` | `python3 tools/requests_room_check.py` | 1 file |
-| 4 | `record_ceiling_check.py` | `… drafts/2026-08-11-the-arm-that-was-missing` | 719 files, 16 dirs |
-| 5 | `apparatus_ratio.py` | `python3 tools/apparatus_ratio.py --json` | **not observable — see §5** |
-| 6 | `errata_check.py --coverage` | in the arc directory | 5 files |
-| 7 | `errata_check.py deliverable-v0.3` | in the arc directory | 28 files, 3 dirs |
-| 8 | `guard_claims.py --check` | in the arc directory | 13 files |
-| 9 | `e34_sweep.py` | in the arc directory | 1,581 files, 157 dirs |
-| 10 | `prose_vs_json.py INCREMENT-20.md` | in the arc directory | 157 files, 1 dir |
-| 11 | `validate_timestamps.py` | in the arc directory | 1 file |
-| 12 | `check_sweep_completeness.py` | in the arc directory | 0 files |
+*Generated by `tools/convergence/table_133.py` from `tools/convergence/convergence-audit-133.json`; never typed by hand.*
 
-**The weakness, stated before the results.** The five checks the open question named are all here,
-and so are seven this session added. The population is nonetheless **chosen by this practice, from
-this practice's own tree**, and no rule generated it. A check nobody thought to list is a check this
-audit says nothing about. Each check is also run in **one** invocation; a different flag may have a
-different search space, so the invocation is printed with every verdict.
+Tree this report is good for: `58363aec08c73c9a40615a9485ab6794cd182ef8f78dc33760dd700570889b51`
 
----
+| # | check | invocation | reads | dirs listed | writes kept | containment | convergence |
+|---|---|---|---|---|---|---|---|
+| 1 | `chronicle_check` | `(cd . && python3 tools/chronicle_check.py)` | 52 | 1 | 0 | `READ-ONLY` | `CONVERGES` |
+| 2 | `check_anchors` | `(cd . && python3 tools/journal/check_anchors.py)` | 53 | 1 | 0 | `READ-ONLY` | `CONVERGES` |
+| 3 | `requests_room_check` | `(cd . && python3 tools/requests_room_check.py)` | 1 | 0 | 0 | `READ-ONLY` | `CONVERGES` |
+| 4 | `record_ceiling_check` | `(cd . && python3 tools/record_ceiling_check.py drafts/2026-08-11-the-arm-that-was-missing)` | 721 | 16 | 0 | `READ-ONLY` | `CONVERGES` |
+| 5 | `apparatus_ratio` | `(cd . && python3 tools/apparatus_ratio.py --json)` | 0 | 0 | 0 | `PARTIALLY-OBSERVED` | `CONVERGES` |
+| 6 | `errata_check_coverage` | `(cd drafts/2026-08-11-the-arm-that-was-missing && python3 errata_check.py --coverage)` | 5 | 0 | 0 | `READ-ONLY` | `CONVERGES` |
+| 7 | `errata_check_bundle` | `(cd drafts/2026-08-11-the-arm-that-was-missing && python3 errata_check.py deliverable-v0.3)` | 28 | 3 | 1 | `WRITES-OUTSIDE-SEARCH-SPACE` | `CONVERGES` |
+| 8 | `guard_claims_check` | `(cd drafts/2026-08-11-the-arm-that-was-missing && python3 guard_claims.py --check)` | 13 | 0 | 0 (+1 removed) | `TRANSIENT-WRITE-INSIDE-SEARCH-SPACE` | `CONVERGES` |
+| 9 | `e34_sweep` | `(cd drafts/2026-08-11-the-arm-that-was-missing && python3 e34_sweep.py)` | 1586 | 157 | 1 | `OUTPUT-INSIDE-SEARCH-SPACE` | `CONVERGES` |
+| 10 | `prose_vs_json` | `(cd drafts/2026-08-11-the-arm-that-was-missing && python3 prose_vs_json.py INCREMENT-20.md)` | 157 | 1 | 0 | `READ-ONLY` | `CONVERGES` |
+| 11 | `validate_timestamps` | `(cd drafts/2026-08-11-the-arm-that-was-missing && python3 validate_timestamps.py)` | 1 | 0 | 0 | `READ-ONLY` | `CONVERGES-VACUOUSLY` |
+| 12 | `check_sweep_completeness` | `(cd drafts/2026-08-11-the-arm-that-was-missing && python3 check_sweep_completeness.py)` | 0 | 0 | 1 | `MEASURES-A-LIVE-SERVICE-NOT-THE-RECORD` | `CONVERGES` |
+| 13 | `audit_instrument` | `(cd drafts/2026-08-11-the-arm-that-was-missing && python3 audit_instrument.py instrument-audit-133.json)` | 52 | 1 | 1 | `WRITES-OUTSIDE-SEARCH-SPACE` | `DECLINED-TO-REPEAT` |
+| 14 | `power_audit` | `(cd drafts/2026-08-11-the-arm-that-was-missing && python3 power_audit.py)` | 1 | 0 | 1 | `WRITES-OUTSIDE-SEARCH-SPACE` | `CONVERGES` |
+| 15 | `guard_claims_check_FAIL_branch` | `(cd drafts/2026-08-11-the-arm-that-was-missing && python3 guard_claims.py --check)` | 13 | 0 | 1 (+1 removed) | `TRANSIENT-WRITE-INSIDE-SEARCH-SPACE` | `CONVERGES-VACUOUSLY` |
 
-## 3. The answer to the second half: everything converges, and one of the passes is vacuous
+Containment counts: `{"MEASURES-A-LIVE-SERVICE-NOT-THE-RECORD": 1, "OUTPUT-INSIDE-SEARCH-SPACE": 1, "PARTIALLY-OBSERVED": 1, "READ-ONLY": 7, "TRANSIENT-WRITE-INSIDE-SEARCH-SPACE": 2, "WRITES-OUTSIDE-SEARCH-SPACE": 3}`
 
-**Twelve of twelve produced byte-identical exit status, stdout and stderr across three consecutive
-runs on an unchanged record.** No second `e34_sweep` exists in this population.
+Convergence counts: `{"CONVERGES": 12, "CONVERGES-VACUOUSLY": 2, "DECLINED-TO-REPEAT": 1}`
 
-That is a negative result and it is reported at full weight, which is this practice's own standing
-habit (instrument 018, `No Signal to Extend`). It is also the less interesting half of the answer,
-and it should not be quoted as *"the guards are sound"*: convergence is a floor. A check can converge
-on three identical wrong answers, and one here does.
-
-**`validate_timestamps.py` converges vacuously and it is not counted with the rest.** It dies in an
-unhandled `HTTPError: 429` on every run, so its three identical reports are three identical crashes.
-The arc already refuses to score a test whose condition never fired — K4 was recorded VACUOUS on day
-11 and *vacuous is not a pass* — and the same refusal is written into the classifier here rather than
-left to a reader. **Genuine convergence: 11 of 12.**
 
 ---
 
-## 4. The answer to the first half: one check still writes into the space it searches
+## 3. Convergence: twelve pass, two pass vacuously, and one refuses — which is not a failure
 
-| verdict | count | which |
+**Twelve of fifteen produce byte-identical exit status, stdout and stderr across three consecutive
+runs.** No second `e34_sweep` was found. That is a negative result, reported at full weight as this
+practice reports negative results (instrument 018), and it is the least interesting part of the
+answer. **Convergence is a floor.** Three of the fifteen show why.
+
+**(a) Two converge vacuously and are not counted with the rest.** `validate_timestamps.py` dies in an
+unhandled `HTTPError: 429` on every run; its three identical reports are three identical crashes.
+This arc already refuses to score a test whose condition never fired — K4 was VACUOUS on day 11 and
+*vacuous is not a pass* — and the refusal is written into the classifier rather than left to a
+reader.
+
+**(b) The second vacuous pass is a new defect in a live guard, and it exists only because the
+adversary forced the branch.** The adversary's charge 2 was that `guard_claims.py --check` has a
+second, data-dependent write path that the record's current passing state suppresses. **Reproduced
+before acceptance, and then measured rather than argued about**: `audit_checks.py` now forces the
+FAIL branch by corrupting the claims block in a working copy. On that branch the same invocation
+writes `guard-claims-expected.txt` into the arc directory **and never removes it** — and then
+**crashes**, `TypeError: Popen.__init__() got an unexpected keyword argument 'input'`, at
+`guard_claims.py:213`: `subprocess.call(..., input=...)`. `subprocess.call` does not take `input`;
+`subprocess.run` does. Confirmed in a plain interpreter with no tracer attached.
+
+**So the guard that exists to catch *"the defect class that killed six gauntlets"* cannot print its
+diff when it fires.** It writes the expected text to a file and dies. **This is the second time in
+two sessions that this arc has found a code path which runs only when something is wrong and which
+had never been run** — `ERRATA-132.md` E37 was the first (`interval_metrics.py` crashed only on days
+when nothing happened). Twice is not a rate and is not offered as one; it is the same shape, named.
+
+**(c) One check does not converge, and it is right not to.** `audit_instrument.py` exits 0 on run 1
+and 1 on runs 2 and 3: *"refusing to overwrite an existing audit record… A dated record is
+evidence."* That refusal is the repair session 120 made to that very instrument after catching it
+overwriting one. Graded `DOES-NOT-CONVERGE` it reads as a defect. **It is the opposite of a defect,
+and the audit's criterion was wrong, not the check.**
+
+**Convergence is the wrong test on its own, and this is the case that shows it.** A check can fail
+*"run it twice and compare"* by being careful. The question that matters is whether it gives a
+**different answer** the second time; one that gives no answer at all, leaving what it wrote
+untouched, has not. A verdict `DECLINED-TO-REPEAT` was added, detected mechanically — run 1 succeeded,
+every later run exited non-zero, the written files are byte-identical from run 1 onward — **never by
+reading the refusal message.** It is guarded against checks that reach a live service, because on the
+run that introduced it a network refusal wore the same shape as a deliberate one.
+
+---
+
+## 4. Containment: one check still writes into the space it searches
+
+**(a) `e34_sweep.py`** enumerates 157 directories, reads 1,586 files, and writes
+`e34-sweep-132.json` into a directory it enumerates. Session 132's repair was an **exclusion, not a
+relocation**, and the independent recomputation sharpened this against us: the guard is **two lines**
+testing **one hardcoded filename**, not "a list of names" as the first draft of this document said.
+The hazard sits structurally where it was, and a single string constant stands between it and the
+defect. **Containment and convergence are independent properties, and this check has the first while
+passing the second.**
+
+**(b) `guard_claims.py --check`, on both branches, writes into the arc directory** — a probe it
+removes, and on the FAIL branch a file it does not. **Neither write is inside its own search space**:
+that check enumerates no directory at all and opens its 13 files by name. The hazard is to *other*
+checks — `record_ceiling_check`, `e34_sweep` and `prose_vs_json` all enumerate the arc directory —
+which is a cross-check hazard, not self-containment, and is graded as such. The adversary called the
+persistent write *"the e34_sweep shape exactly"*; on the measurement it is a neighbour's hazard
+rather than a self-reference, and that correction is made here in the adversary's favour on the fact
+that matters — **the file is left behind**, and nothing before this session said so.
+
+**(c) Three checks write outside their own search space** (`errata_check.py deliverable-v0.3`,
+`audit_instrument.py`, `power_audit.py`). That is the shape the others ought to have.
+
+---
+
+## 5. What this instrument cannot see
+
+The tracer observes Python-level entry points and the network. It does not see inside a child
+process. **`apparatus_ratio.py` reads the entire tracked record through `git ls-files` in a child
+process; its Python-level reads are zero.** Its search-space-to-output relation is **not established
+by this audit** — `PARTIALLY-OBSERVED`, never clean. The four apparatus ratios this practice publishes
+at every consolidation inherit that limit.
+
+**The first version of the classifier graded it `NOT-APPLICABLE` — "touches nothing".** A check that
+reads the whole record was reported as reading none of it.
+
+---
+
+## 6. Five defects in this session's own instrument, all found by running it
+
+None was visible to reading it.
+
+| # | defect | what it produced |
 |---|---|---|
-| `READ-ONLY` | 7 | 1, 2, 3, 4, 6, 10, 11 |
-| `OUTPUT-INSIDE-SEARCH-SPACE` | **1** | **9 — `e34_sweep.py`** |
-| `TRANSIENT-WRITE-INSIDE-SEARCH-SPACE` | 1 | 8 — `guard_claims.py --check` |
-| `WRITES-OUTSIDE-SEARCH-SPACE` | 1 | 7 — `errata_check.py deliverable-v0.3` |
-| `PARTIALLY-OBSERVED` | 1 | 5 — `apparatus_ratio.py` |
-| `MEASURES-A-LIVE-SERVICE-NOT-THE-RECORD` | 1 | 12 — `check_sweep_completeness.py` |
+| 1 | `runpy.run_path` does not put the script's directory on `sys.path` | `guard_claims.py --check` reported as reading **nothing**, with an import error for a module beside it |
+| 2 | the classifier read a child-process reader as touching nothing | `apparatus_ratio.py` reported `NOT-APPLICABLE` |
+| 3 | a patched `glob.iglob` routed back through a patched `glob.glob`, which is `list(iglob(...))` against the module global | `prose_vs_json.py` reported as touching **no files**, with a `RecursionError`; untraced it reads 157 |
+| 4 | the contamination test never verified the record was unchanged | it accused a sound check of instability — see §7 |
+| 5 | `DECLINED-TO-REPEAT` fired on a check refused by a live service | a third party's outage filed as a careful design decision |
 
-**(a) `e34_sweep.py` still has its output inside its own search space, and converges anyway.** It
-enumerates 157 directories, reads 1,581 files, and writes `e34-sweep-132.json` into a directory it
-enumerates. Session 132's repair was a **three-line exclusion, not a relocation**: the hazard is
-structurally exactly where it was, and the only thing between it and the defect is a list of names
-inside the script. **Containment and convergence are independent properties, and this is the case
-that proves it** — an exclusion that a later edit widens the sweep past will fail silently and
-convergently until somebody runs it three times again.
+Defects 1–3 all made an audited check look **cleaner**. Defects 4 and 5 ran the other way and
+**invented a fault in something sound** — which is the more dangerous direction for an instrument
+whose whole output is verdicts about other instruments.
 
-**(b) `guard_claims.py --check` writes a probe file into the arc directory and deletes it before it
-exits** (`guard-claims-wordnumber-probe.md`, absent from the tree at exit, absent from git). That is
-**not** the `e34_sweep` defect and this audit does not grade it as one — the first version of the
-classifier did, and a false positive here would have been the right thing to be refuted on. What it
-is, is a race: while it exists, that file sits inside the search space of checks 4, 9 and 10, all of
-which enumerate the arc directory. **Nothing in this audit observed that race firing**, and it is
-reported as a hazard, not an event.
-
-**(c) `errata_check.py deliverable-v0.3` writes into the arc directory but reads only
-`deliverable-v0.3/`.** Its output is genuinely outside its own search space. This is the shape the
-other two ought to have.
+**This is the third session running in which a substantial part of an increment is this practice
+checking its own checker**, and the adversary is right that the previous two named the habit and this
+one did not. It is named now. The defence offered is narrow and is not a defence of the length: the
+object under audit *is* this practice's checks, so an audit of the auditor is the same subject rather
+than a digression — and every one of the five defects above would otherwise have been published as a
+finding about somebody else's script.
 
 ---
 
-## 5. What this instrument cannot see, and the one check that falls in the blind spot
+## 7. Does the audit contaminate its own population?
 
-The tracer observes Python-level entry points. It does not see inside a child process, and it says
-so before it says anything else.
+`audit_checks.py` writes its report into the repository; three checks enumerate the repository. So
+the audit is a candidate instance of the defect it counts, and a caveat would have been the cheap way
+out. `contamination_133.py` runs the population against a tree with no audit report, again to find
+what moves on its own, then against a tree where the report has been filed.
 
-**`apparatus_ratio.py` reads the entire tracked record through `git ls-files` in a child process.**
-Python-level reads: **zero**. Its search-space-to-output relation is therefore **not established by
-this audit**, and it is graded `PARTIALLY-OBSERVED` — never clean.
+**Its first version returned `THIS AUDIT CONTAMINATES ITS OWN POPULATION` and the verdict was
+false.** The single mover was `validate_timestamps.py`, the one check that fetches a live service.
+**A contamination test that cannot tell contamination from a flaky third party will report
+contamination sooner or later whatever is true.** The replicate baseline is the fix.
 
-**The first version of this classifier graded it `NOT-APPLICABLE` — "touches nothing".** A check that
-reads the whole record was reported as reading none of it, because the instrument could not see where
-it was looking. That verdict was wrong in the direction that flatters, and it is the second of three
-defects this session's own instrument had.
+**Its second version was invalid too, and this session invalidated it.** Each pass re-copied the
+*live* repository, and this session wrote `INCREMENT-21.md` into the arc directory between two
+passes. `record_ceiling_check.py` counts words in that directory. Its report moved because **the
+record changed underneath the test** — the one precondition the whole exercise rests on. **A test for
+"an unchanged record" that never verified the record was unchanged is the same shape of defect as the
+ones it hunts.** Fixed: the record is frozen once, hashed, used by all three passes, hashed again.
 
----
+**Result, on a record proved unchanged:** `frozen_record_sha256` identical before and after
+(`b440fce553d23d63…`); **no check excluded as unstable; no check's report moved.** Not a general
+result: a larger report, or a search space widened later, could move one.
 
-## 6. Four defects in this session's instrument, all found by running it
-
-None was visible to reading the tracer. Each made a check look cleaner or emptier than it is.
-
-| # | defect | what it produced | how it was caught |
-|---|---|---|---|
-| 1 | `runpy.run_path` does not put the script's directory on `sys.path`, as `python3 script.py` does | `guard_claims.py --check` reported as reading **nothing**, with a `ModuleNotFoundError` for a module sitting beside it. It reads 13 files and writes one. | run 1 of the audit |
-| 2 | the classifier graded a check whose reading happens in a child process as touching nothing | `apparatus_ratio.py` reported `NOT-APPLICABLE` | run 1 of the audit |
-| 3 | a patched `glob.iglob` routed back through a patched `glob.glob`, which is `list(iglob(...))` against the module global — infinite recursion | `prose_vs_json.py` reported as touching **no files**, with a `RecursionError`. Run untraced it reads 157 files and exits 0. | run 2, checked against running the same check by hand |
-
-A fourth is in §7b: **the contamination test never verified that the record was unchanged**, and this
-session changed it mid-test.
-
-**The pattern is the finding, not the bugs.** The first three all ran in the same direction: they
-made the audited check look *cleaner*. An instrument built to catch instruments that flatter
-themselves had a first draft that flattered its subjects, and it took running the same check by hand
-to see it. The fourth ran the other way — it accused a sound check of instability — and that one was
-caught only because the accused check was the wrong shape for the accusation. **None of the four was
-visible to reading.** All are recorded in the scripts' own docstrings, where the next session meets
-them before the results.
+One practical consequence: **the audit's report could not be filed until the contamination test had
+taken its baselines**, or the baseline would have been the contaminated state.
 
 ---
 
-## 7. The question this audit could not dodge: does it contaminate its own population?
+## 8. The cross-check case, which the first version named as owed
 
-`audit_checks.py` writes its report into the repository. Checks 4, 9 and 10 enumerate the repository.
-**So this audit is itself a candidate instance of the defect it counts**, and putting that in a
-caveat would have been the cheap way out — the whole force of `ERRATA-132.md` E36 is that this class
-of defect is invisible to review and obvious to a second run.
+Each check above is audited alone in a fresh copy. What a session actually does is run several in one
+tree with each one's output still lying there. `crosscheck_133.py` runs all fourteen in sequence in
+one copy of a frozen record and compares each report against its isolated report from the same
+frozen record.
 
-`contamination_133.py` takes the second run. It runs the population against a tree with **no** audit
-report in it, runs it again to find what moves on its own, then runs it against a tree in which the
-audit's report has been filed at the path it will be committed to.
+**Its first run reported two movers — `record_ceiling_check` and `apparatus_ratio` — and both were
+false.** It took its isolated side from the committed artifact, produced from a copy of the live tree
+minutes earlier. **The arc's own daily probe writes its progress log into the very directory
+`record_ceiling_check` counts words in.** The instrument that is the subject of this whole arc
+contaminates any measurement of the arc's directory, every two and a half minutes, for the hour and
+three quarters it runs.
 
-**Its first version returned `THIS AUDIT CONTAMINATES ITS OWN POPULATION` and that verdict was
-false.** The single mover was `validate_timestamps.py` — the one check in the population that fetches
-a live service instead of reading the record. Its stdout was empty on all three baseline runs and
-non-empty on one contaminated run, because the service answered differently, not because a file had
-appeared in a tree it never reads. **A contamination test that cannot tell contamination from a flaky
-third party will report contamination sooner or later whatever is true.** The replicate baseline is
-the fix, and a check that already moves between two identical baselines is now excluded from the
-attribution **by name, with its hashes printed** — excluded, not cleared.
+**That is the third false attribution this session produced, and all three had one cause: comparing
+two runs taken against two different states of a record that was moving underneath them.**
 
-### 7b. The replicated run was invalid, and what invalidated it was this session
-
-**The first replicated run excluded `record_ceiling_check.py` as "unstable on its own" — and it was
-not.** Each pass re-copied the **live** repository, and this session wrote `INCREMENT-21.md` into the
-arc directory between baseline 1 and baseline 2. `record_ceiling_check.py` counts words in that
-directory. Its report moved because **the record changed underneath the test**, which is the one
-precondition the whole exercise rests on — *run it twice against an unchanged record* — and the one
-thing the harness was not checking.
-
-**A test for "an unchanged record" that never verified the record was unchanged is the same shape of
-defect as the ones it hunts**, committed by the instrument built to hunt them, in the same session.
-That is the fourth defect of this session's own instrument and the sharpest of them, and it was found
-by a verdict that named the wrong culprit rather than by anything anyone read.
-
-Fixed: `audit_checks.py --master DIR` runs against an already-frozen copy, and
-`contamination_133.py` now freezes the record **once**, hashes it, runs all three passes against that
-one copy, and hashes it again.
-
-### 7c. The result, on a record proved unchanged
-
-    frozen record sha256, before all three passes : b440fce553d23d63…
-    frozen record sha256, after  all three passes : b440fce553d23d63…
-    record_provably_unchanged_across_all_three_passes : true
-
-    excluded as unstable between two identical baselines : none
-    checks whose report moved when the audit's report was filed : none
-    verdict : NO CHECK IN THIS POPULATION MOVED WHEN THE AUDIT'S REPORT WAS FILED
-
-**This audit does not contaminate its own population** — on this population, at this size of report,
-in this tree. It is not a general result and must not be read as one: a larger report, or a check
-whose search space is widened later, could move one. The claim is exactly what the run shows.
-
-One practical consequence, recorded because it is the shape of the whole problem: **the audit's
-report could not be written into the repository until the contamination test had taken its
-baselines**, because filing it first would have made the baseline the contaminated state. An
-instrument whose output is in its own population cannot be run and filed in either order without
-thinking about which.
+**Result, both passes against one frozen record (hash identical before and after): no check's report
+moved.** Two are excluded by name and are **not cleared** — `validate_timestamps` (vacuous) and
+`audit_instrument` (declined to repeat). One run of one order; a different order is a different
+experiment. The branch-forced invocation is not in the sequence, so the file it leaves behind is not
+either.
 
 ---
 
-## 8. What is owed and not done
+## 9. What the reviewers found, and what moved because of it
 
-- **The cross-check test.** Each check here is audited in isolation, in a fresh copy. The real
-  condition is a session running several checks in one tree, in sequence, with each one's output
-  still lying there. The `guard_claims` probe is exactly the shape that would bite there and this
-  audit did not fire it.
-- **The population is hand-made.** No rule generated the twelve. The same objection this practice
-  raised against instrument 021's population split (`memory/downstream-commitments.md` condition 9(b))
-  applies here, to this, with no second reader.
-- **One invocation per check.** A different flag is a different search space.
-- **`validate_timestamps.py` has not actually been audited.** It never reached the record. Whether it
-  is a record check at all is unanswered.
+Full reports unedited: `INTERLOCUTOR-133.md` (core claim survives narrowed, two blocking),
+`VERIFIER-133.md` (pass with findings, two blocking). Dispositions: `CONDITIONS-133.md`.
+
+The recomputation found this document's population table **wrong in 4 of 12 rows against the JSON it
+cites as its source**, because the table was typed from an earlier run and never re-typed — and the
+same two stale figures had been copied into a second file's docstring. **That is precisely the defect
+`tools/record_ceiling_check.py` was built about**, committed inside a document about hand-carried
+numbers. The table in §2 is now **generated** by `tools/convergence/table_133.py` and every figure
+carries the sha256 of the tree it is good for. It also found §7 saying three checks "enumerate the
+repository" when one of the three enumerates only the arc directory. Corrected.
+
+---
+
+## 10. What is owed and not done
+
+- **The population is still hand-made.** Fourteen checks, now including the two the adversary named,
+  but no rule generated the list and there is no second reader. The objection this practice raised
+  against instrument 021's population split applies here unchanged.
+- **One invocation per check, with one exception.** Only `guard_claims.py --check` has had a second
+  branch forced. Every other check's other branches are unmeasured, and §3(b) is the evidence that
+  this is where the defects are.
+- **`apparatus_ratio.py` is not cleared** and cannot be by this tracer.
+- **The `guard_claims.py` FAIL-branch crash is recorded and NOT repaired.** It is a live guard on a
+  stopped arc; repairing it is a repair pass, and `CONDITIONS-128.md`'s stop forbids one. Filed for
+  the architect's reading and for the session that has the licence.

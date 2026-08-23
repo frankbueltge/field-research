@@ -1969,24 +1969,50 @@ figures — `CONDITIONS-131.md` item 4 forbids a third pass over them and this s
 
 ## Session 133 (2026-08-23) — the checks audited against themselves
 
+> **CORRECTED THE SAME SESSION, `ERRATA-133.md` E38.** The figures in the first version of this
+> block were taken from a **twelve-invocation** population. The adversary found that population
+> omitted `audit_instrument.py`, a live self-referential instrument in the same arc; it and
+> `power_audit.py` were added, and a forced-FAIL invocation of `guard_claims.py --check` was added on
+> a second charge. **The population is fifteen invocations of fourteen checks**, and the corrected
+> figures are below. The superseded statement was *"all twelve converge, genuine 11 of 12"*; two of
+> its parts were not merely narrow but the wrong shape, and both are named in E38. Nothing is
+> retracted — the twelve-check run happened and its artifact is quoted in `INTERLOCUTOR-133.md` and
+> `VERIFIER-133.md`, which read that state.
+
 Every figure below is read from `tools/convergence/convergence-audit-133.json` and
 `tools/convergence/contamination-133.json`, both produced by scripts committed beside them. Nothing
 typed, nothing fetched. The account is `drafts/2026-08-11-the-arm-that-was-missing/INCREMENT-21.md`.
 **Nothing here shipped, nothing graduated, no packet exists at any status.**
 
-- **Twelve check-invocations, three consecutive runs each, on an unchanged record: all twelve
-  byte-identical** in exit status, stdout and stderr. **One of the twelve converges vacuously** —
-  `validate_timestamps.py` dies in the same unhandled `HTTPError: 429` on every run, so its three
-  identical reports are three identical crashes. **Genuine convergence 11 of 12**, and *vacuous is
-  not a pass* is written into the classifier rather than left to a reader.
+- **Fifteen check-invocations of fourteen checks, three consecutive runs each, on a record whose
+  sha256 is recorded with the report** (`58363aec08c73c9a…`): **CONVERGES 12 · CONVERGES-VACUOUSLY 2
+  · DECLINED-TO-REPEAT 1**. *Vacuous is not a pass* is written into the classifier rather than left
+  to a reader: `validate_timestamps.py` dies in the same unhandled `HTTPError: 429` every run, and
+  the forced-FAIL branch of `guard_claims.py --check` crashes identically every run.
+- **One check does not converge and is right not to, and the audit's criterion was wrong, not the
+  check.** `audit_instrument.py` exits 0, then 1, then 1 — *"refusing to overwrite an existing audit
+  record… A dated record is evidence"*, the repair session 120 made to that very instrument after
+  catching it overwriting one. **A check can fail "run it twice and compare" by being careful.** The
+  verdict `DECLINED-TO-REPEAT` was added, detected mechanically (run 1 succeeded, later runs exited
+  non-zero, the written files byte-identical from run 1 onward) and guarded against checks refused
+  by a live service, because a network refusal wears the same shape as a deliberate one.
 - **Exactly one check still writes its output into a directory it enumerates: `e34_sweep.py`**, the
   check whose defect raised the question. It reads 1,581 files across 157 directories and writes
   `e34-sweep-132.json` into that space. Session 132's repair was an **exclusion, not a relocation**.
   **Containment and convergence are independent properties and this is the case that shows it.**
-- **`guard_claims.py --check` writes `guard-claims-wordnumber-probe.md` into the arc directory and
-  removes it before exit.** Graded `TRANSIENT-WRITE-INSIDE-SEARCH-SPACE`, **not** as the `e34_sweep`
-  defect. A hazard for the checks that enumerate that directory; **no instance of it firing was
-  observed**, and it is recorded as a hazard, never as an event.
+- **`guard_claims.py --check` writes into the arc directory on both its branches** — a probe it
+  removes, and **on the FAIL branch a file it does not** (`guard-claims-expected.txt`). Neither write
+  is inside its **own** search space: that check enumerates no directory. The hazard is to its
+  neighbours, which is a cross-check hazard rather than self-containment.
+- **A live guard cannot report its own failure** (`ERRATA-133.md` E42). Forcing the FAIL branch —
+  on the adversary's charge, and the whole point of forcing it rather than arguing about it — showed
+  `guard_claims.py --check` crashing at line 213 with `TypeError: Popen.__init__() got an unexpected
+  keyword argument 'input'`: `subprocess.call` does not take `input`. **The guard that exists to
+  catch "the defect class that killed six gauntlets" writes the expected text to a file and dies
+  before printing the diff.** Confirmed in a plain interpreter with no tracer attached. **Recorded
+  and deliberately NOT repaired** — the stop forbids this arc a repair pass. **Second time in two
+  sessions this arc has found a code path that runs only when something is wrong and had never been
+  run** (`ERRATA-132.md` E37 was the first); twice is not a rate and is not offered as one.
 - **`apparatus_ratio.py` is `PARTIALLY-OBSERVED` and is not cleared.** It reads the whole tracked
   record through `git ls-files` in a child process; Python-level reads **zero**. Its
   search-space-to-output relation is **not established by this audit**, and the ratios it publishes at
@@ -1998,12 +2024,23 @@ typed, nothing fetched. The account is `drafts/2026-08-11-the-arm-that-was-missi
   **one frozen copy** — sha256 `b440fce553d23d63…` before and `b440fce553d23d63…` after, identical —
   no check excluded as unstable, none moved. **This is not a general result:** a larger report, or a
   search space widened later, could move one.
-- **The auditing instrument had four defects, all found by running it, none visible to reading it.**
+- **The checks run in sequence in one tree, the way a session runs them, moved nothing** — both
+  passes against one frozen record, hash identical before and after (`crosscheck-133.json`). Two are
+  excluded by name and **not cleared**. Its first run reported two movers and both were false: it
+  compared against an artifact from a copy taken minutes earlier, and **the arc's own daily probe
+  writes its progress log into the very directory `record_ceiling_check` counts words in**. **Three
+  false attributions this session, one cause: comparing two runs against two different states of a
+  moving record.**
+- **The auditing instrument had five defects, all found by running it, none visible to reading it.**
   Three made an audited check look *cleaner* (a missing `sys.path` entry; a classifier that read a
   child-process reader as touching nothing; a patched `glob.iglob` recursing through a patched
   `glob.glob`). The fourth ran the other way: **the contamination test never verified the record was
   unchanged**, and this session changed it mid-test, so the test accused a sound check of instability.
-  All four are in the scripts' own docstrings.
+  A fifth fired `DECLINED-TO-REPEAT` on a check refused by a live service, filing a third party's
+  outage as a careful design decision. **Defects 1-3 made an audited check look cleaner; 4 and 5
+  invented a fault in something sound**, which is the more dangerous direction for an instrument
+  whose whole output is verdicts about other instruments. All five are in the scripts' own
+  docstrings.
 - **What the audit does not establish**, stated in the record rather than left to be discovered: the
   population is hand-made with no second reader; each check was run in isolation in a fresh copy, so
   the cross-check case was never fired; one invocation per check.
