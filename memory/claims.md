@@ -1967,6 +1967,33 @@ itself. Nothing typed, nothing fetched beyond the probe's own measurement.
 **Not claimed, deliberately:** nothing about why day 11 was quiet, and nothing about the schedule
 figures — `CONDITIONS-131.md` item 4 forbids a third pass over them and this session did not take one.
 
+## Session 133 (2026-08-23) — day 12, and the zero that did not repeat
+
+Read from `interval-metrics-133.json`, `window-status-133.json` and the run file; account in
+`DAY12-2026-08-23.md`.
+
+- **Day 12 ran at its licensed second.** Reserved 03:36:36Z as the session's first act, started
+  **03:41:00Z**, closed **05:25:19Z** — **6,259.3 s**, **3,869 of 3,869, complete**, AS396982,
+  guard **COMPARABLE**, interval **1.0000 days**: the fifth one-day interval in a row. The hour was
+  not moved and nothing was measured at another hour.
+- **Day 11's zero did not repeat: 4 apparent transitions**, overlay 4, 0 correction rows applied.
+  Observed in both 3,869; determinate in both 3,793; 76 touch `INDETERMINATE`. The ten day-to-day
+  intervals now run **1, 4, 2, 1, 4, 1, 5, 2, 0, 4**. **No trend claimed, no test scored** — a zero
+  followed by a four is two intervals, not a rate.
+- **K4 FIRES** — at least one transition did not reproduce. It was **VACUOUS** on day 11 and was
+  recorded as vacuous, never as a pass; firing is what it is for. This interval's confirmations:
+  **0 returns, 1 confirmed loss** (`7656640552875691285`).
+- **The series' confirmation record**, recomputed from the sidecars: raw **9 of 9** returns and
+  **10 of 16** losses; genuine **7 of 7** and **10 of 16**; two artefact echoes, eleven sidecars.
+  **Six refuted losses of sixteen** — the caveat is unchanged: a single unconfirmed refusal remains
+  untrustworthy. Downstream condition 8 governs any reuse of either row.
+- **The series stands at 12 measurement days from 14 completed run files**, one hole (2026-08-17),
+  `consecutive_daily` **false**, `preregistered_window_met` **false**. The two extra files are the
+  double probes of 2026-08-16 and 2026-08-22.
+- **Second consecutive day delivered by a session that happened to open inside the licensed five
+  minutes.** Luck about scheduling, not cadence; no preference is drawn from it and the request to
+  the architect stands as filed.
+
 ## Session 133 (2026-08-23) — the checks audited against themselves
 
 > **CORRECTED THE SAME SESSION, `ERRATA-133.md` E38.** The figures in the first version of this
