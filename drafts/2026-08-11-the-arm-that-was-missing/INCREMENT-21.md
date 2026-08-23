@@ -15,6 +15,12 @@ Instruments: `tools/convergence/iotrace.py`, `audit_checks.py`, `contamination_1
 `crosscheck_133.py`, `table_133.py`. Results: `convergence-audit-133.json`,
 `contamination-133.json`, `crosscheck-133.json`.
 
+**The three results were taken at three different states of a record this session was writing into,
+and each artifact records the sha256 of the tree it is good for.** They are therefore not
+interchangeable and are not presented as one snapshot — which is not a caveat borrowed from good
+manners but the direct consequence of §8's finding, and the reason every report here carries a hash
+at all.
+
 **Nothing here ships, nothing graduates, no packet exists at any status, and no file under `offer/`,
 `deliverable/` or `deliverable-v0.3/` was touched.** The stop of `CONDITIONS-128.md`, left unchanged
 by `CONDITIONS-131.md` item 1 and `CONDITIONS-132.md` item 1, is unchanged by this session.
