@@ -1,0 +1,300 @@
+{
+ "schema": "field-research/window-interval/1",
+ "computed_by": "interval_metrics.py, session 127",
+ "from_run": "ledger/run-2026-08-22T0341Z.json",
+ "to_run": "ledger/run-2026-08-23T0341Z.json",
+ "what_this_interval_is": "day 12: the fifth run outside the pre-registered window, 1.0000 days after the last completed run (2026-08-22, the session-132 file that landed on main; the second probe of that date is not a day). No pre-registered test is scored on it. Run under the stop of CONDITIONS-128.md, unchanged by CONDITIONS-131.md and CONDITIONS-132.md: the instrument keeps measuring, and nothing is built to send. It is the second consecutive day delivered by a session that opened inside the licensed hour, and that is luck about when sessions open, not a cadence this practice controls.",
+ "window_position": {
+  "schema": "field-research/window-status/1",
+  "computed_by": "window_status.py",
+  "rule": "a .partial is never a run; a day counts only if a non-partial run file exists",
+  "n_measurement_days": 12,
+  "measurement_days": [
+   {
+    "file": "ledger/run-2026-08-11T1124Z.json",
+    "start_utc": "2026-08-11T11:24:06Z",
+    "n_observations": 2904,
+    "n_planned": 2904
+   },
+   {
+    "file": "ledger/run-2026-08-12T0341Z.json",
+    "start_utc": "2026-08-12T03:40:28Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-13T0427Z.json",
+    "start_utc": "2026-08-13T04:27:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-14T0343Z.json",
+    "start_utc": "2026-08-14T03:43:47Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-15T0337Z.json",
+    "start_utc": "2026-08-15T03:37:40Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-16T0337Z-second-probe.json",
+    "start_utc": "2026-08-16T03:37:40Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-18T0341Z.json",
+    "start_utc": "2026-08-18T03:41:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-19T0341Z.json",
+    "start_utc": "2026-08-19T03:41:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-20T0341Z.json",
+    "start_utc": "2026-08-20T03:41:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-21T0341Z.json",
+    "start_utc": "2026-08-21T03:41:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-22T0341Z-second-probe.json",
+    "start_utc": "2026-08-22T03:41:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-23T0341Z.json",
+    "start_utc": "2026-08-23T03:41:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   }
+  ],
+  "n_completed_run_files": 14,
+  "n_extra_passes_same_day": 2,
+  "extra_passes_same_day": [
+   {
+    "file": "ledger/run-2026-08-16T0337Z.json",
+    "start_utc": "2026-08-16T03:37:40Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-22T0341Z.json",
+    "start_utc": "2026-08-22T03:41:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   }
+  ],
+  "n_holes": 1,
+  "holes": [
+   {
+    "file": "ledger/run-2026-08-17T0337Z.json.partial",
+    "run_id_it_claims": "2026-08-17T03:41:00Z (manifest carried a placeholder)",
+    "n_observations": 600,
+    "n_planned": 3869,
+    "why": "a partial with no completed run beside it - the day was started and not taken"
+   }
+  ],
+  "n_in_flight": 0,
+  "in_flight": [],
+  "in_flight_note": "a run being written by a live reservation at the moment of this scan. Never counted as a measurement day - the rule is unchanged - and never reported as an abandoned day either. A status file written during a run says so; one written after it does not, and the two are not in conflict.",
+  "intervals_days": [
+   {
+    "from": "2026-08-11T11:24:06Z",
+    "to": "2026-08-12T03:40:28Z",
+    "days": 0.678,
+    "is_daily": false
+   },
+   {
+    "from": "2026-08-12T03:40:28Z",
+    "to": "2026-08-13T04:27:00Z",
+    "days": 1.0323,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-13T04:27:00Z",
+    "to": "2026-08-14T03:43:47Z",
+    "days": 0.97,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-14T03:43:47Z",
+    "to": "2026-08-15T03:37:40Z",
+    "days": 0.9958,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-15T03:37:40Z",
+    "to": "2026-08-16T03:37:40Z",
+    "days": 1.0,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-16T03:37:40Z",
+    "to": "2026-08-18T03:41:00Z",
+    "days": 2.0023,
+    "is_daily": false
+   },
+   {
+    "from": "2026-08-18T03:41:00Z",
+    "to": "2026-08-19T03:41:00Z",
+    "days": 1.0,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-19T03:41:00Z",
+    "to": "2026-08-20T03:41:00Z",
+    "days": 1.0,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-20T03:41:00Z",
+    "to": "2026-08-21T03:41:00Z",
+    "days": 1.0,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-21T03:41:00Z",
+    "to": "2026-08-22T03:41:00Z",
+    "days": 1.0,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-22T03:41:00Z",
+    "to": "2026-08-23T03:41:00Z",
+    "days": 1.0,
+    "is_daily": true
+   }
+  ],
+  "n_intervals_not_daily": 2,
+  "intervals_not_daily": [
+   {
+    "from": "2026-08-11T11:24:06Z",
+    "to": "2026-08-12T03:40:28Z",
+    "days": 0.678,
+    "is_daily": false
+   },
+   {
+    "from": "2026-08-16T03:37:40Z",
+    "to": "2026-08-18T03:41:00Z",
+    "days": 2.0023,
+    "is_daily": false
+   }
+  ],
+  "required_runs": 7,
+  "count_requirement_met": true,
+  "consecutive_daily": false,
+  "preregistered_window_met": false,
+  "why_two_conditions": "'seven consecutive daily runs' is a conjunction: the COUNT and the CONSECUTIVENESS. Erratum E21 reported the window closed while neither held. They are reported separately here so a later session cannot collapse them into one word again."
+ },
+ "window_position_note": "read from window_status.py, which counts only non-partial run files. Whether this series is daily or consecutive is whatever that scan says and is never asserted here: see consecutive_daily and preregistered_window_met.",
+ "run": {
+  "file": "ledger/run-2026-08-23T0341Z.json",
+  "utc_start": "2026-08-23T03:41:00Z",
+  "utc_end": "2026-08-23T05:25:19Z",
+  "seconds": 6259.3,
+  "planned": 3869,
+  "requested": 3869,
+  "stopped": null,
+  "vantage_asn": "AS396982",
+  "complete": true
+ },
+ "interval_days": 1.0,
+ "vantage_guard": {
+  "run1_asn": "AS396982",
+  "run2_asn": "AS396982",
+  "same_autonomous_system": true,
+  "verdict": "COMPARABLE"
+ },
+ "observed_in_both": 3869,
+ "determinate_in_both": 3793,
+ "touching_indeterminate": 76,
+ "apparent_transitions_raw": 4,
+ "apparent_transitions_overlay": 4,
+ "overlay_rows_applied": 0,
+ "k4": "FIRES \u2014 at least one transition did not reproduce",
+ "confirmed_this_interval": {
+  "returns": 0,
+  "losses": 1,
+  "vids": [
+   {
+    "vid": "7656640552875691285",
+    "from": "RETRIEVABLE",
+    "to": "NOT-RETRIEVABLE"
+   }
+  ]
+ },
+ "denominators_this_interval": {
+  "retrievable_at_previous_day_and_determinate_now": 3111,
+  "absent_at_previous_day_and_determinate_now": 682
+ },
+ "series_after_this_interval": {
+  "all_readings": {
+   "NOT-RETRIEVABLE->RETRIEVABLE": {
+    "n": 9,
+    "confirmed": 9,
+    "refuted": 0
+   },
+   "RETRIEVABLE->NOT-RETRIEVABLE": {
+    "n": 16,
+    "confirmed": 10,
+    "refuted": 6
+   }
+  },
+  "genuine_transitions_only": {
+   "NOT-RETRIEVABLE->RETRIEVABLE": {
+    "n": 7,
+    "confirmed": 7,
+    "refuted": 0
+   },
+   "RETRIEVABLE->NOT-RETRIEVABLE": {
+    "n": 16,
+    "confirmed": 10,
+    "refuted": 6
+   }
+  },
+  "n_artefact_echoes": 2,
+  "n_sidecars": 11
+ },
+ "per_arm_counts": {
+  "A": {
+   "RETRIEVABLE": 1940,
+   "NOT-RETRIEVABLE": 240,
+   "INDETERMINATE": 21
+  },
+  "A-new": {
+   "RETRIEVABLE": 171,
+   "INDETERMINATE": 3,
+   "NOT-RETRIEVABLE": 23
+  },
+  "A2": {
+   "NOT-RETRIEVABLE": 117,
+   "RETRIEVABLE": 646,
+   "INDETERMINATE": 5
+  },
+  "B": {
+   "RETRIEVABLE": 385,
+   "NOT-RETRIEVABLE": 65,
+   "INDETERMINATE": 4
+  },
+  "B-truncated": {
+   "RETRIEVABLE": 1,
+   "NOT-RETRIEVABLE": 245,
+   "INDETERMINATE": 3
+  }
+ }
+}
