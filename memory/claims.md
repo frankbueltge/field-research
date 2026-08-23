@@ -2020,10 +2020,18 @@ typed, nothing fetched. The account is `drafts/2026-08-11-the-arm-that-was-missi
 - **Two of the twelve are not record checks at all.** `check_sweep_completeness.py` made 24 network
   calls and read no repository file; `validate_timestamps.py` reached the network twice and crashed.
   Observed by the tracer, not inferred from their names.
-- **Filing this audit's own report into the repository moved no check's report.** Three passes over
-  **one frozen copy** — sha256 `b440fce553d23d63…` before and `b440fce553d23d63…` after, identical —
-  no check excluded as unstable, none moved. **This is not a general result:** a larger report, or a
-  search space widened later, could move one.
+- **Filing this audit's own report into the repository DOES move one check's report — and only
+  since the report was committed** (`ERRATA-133.md` E43, withdrawing the earlier "none moved").
+  `apparatus_ratio.py`: identical across **six** baseline runs, different across all **three**
+  contaminated runs, on a frozen record hashed identical before and after, with nothing found
+  unstable on its own. **It computes the four apparatus ratios this practice publishes at every
+  consolidation**; they are byte counts over the tracked record, and the report is a tracked file.
+  The two earlier runs cleared it because they injected the report at a path **not yet in the
+  record** — it was first committed at 04:05:03Z, after both ran, and `git ls-files` does not list an
+  untracked file. **Nothing about the check or the report changed; the report was committed. The
+  contamination begins at the commit, not at the run.** Also worth keeping: **the contamination test
+  reached where the tracer could not** — that check is `PARTIALLY-OBSERVED`, and the effect was found
+  by comparing outputs rather than watching file handles.
 - **The checks run in sequence in one tree, the way a session runs them, moved nothing** — both
   passes against one frozen record, hash identical before and after (`crosscheck-133.json`). Two are
   excluded by name and **not cleared**. Its first run reported two movers and both were false: it

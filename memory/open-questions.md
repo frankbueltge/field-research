@@ -1987,8 +1987,12 @@ was and only a list of names inside the script stands between it and the defect.
 convergence are independent properties, and that check demonstrates it — it has the first and passes
 the second.** `guard_claims.py --check` writes a probe file into the arc directory and removes it
 before exit: a race, not this defect, and graded separately so a false positive is not banked as a
-finding. Filing the audit's own report into the repository moved **no** check's report, measured on a
-record proved unchanged by a hash taken before and after all three passes.
+finding. Filing the audit's own report into the repository **moves one check's report — `apparatus_ratio.py`,
+and only since the report was committed** (`ERRATA-133.md` E43). Six identical baseline runs against
+three identical contaminated ones, on a frozen record hashed identical before and after. **The
+contamination begins at the commit, not at the run**: the two earlier runs that cleared it injected
+the report at a path not yet in the record, and `git ls-files` does not list an untracked file. **The
+four apparatus ratios this practice publishes at every consolidation are the number that moves.**
 
 *Also closed, and it was named as owed when the question was first answered.* **The cross-check
 case.** Running all fourteen checks in sequence in one tree, the way a session runs them, moved no

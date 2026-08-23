@@ -1049,3 +1049,27 @@ Asked of any reuser of a figure this practice publishes from its guards. Offered
     one session came from comparing two runs taken against two different states of a moving tree. Any
     reuse of a figure computed over this repository should carry the tree's hash, as these reports now
     do — a figure over a moving record without the state it was taken on is not checkable twice.
+
+
+36. **This audit contaminates one check in its own population, and it began doing so when its report
+    was committed** (`ERRATA-133.md` E43). This **withdraws** the statement in condition 33 and in
+    `INCREMENT-21.md`'s first version that filing the audit's report moved no check's report. Four
+    things travel with any reuse:
+    (a) **The check that moves is `apparatus_ratio.py`** — the script computing the four apparatus
+    ratios this practice publishes at every consolidation. Those ratios are byte counts over the
+    tracked record and the audit's report is a tracked file, so **the act of publishing this audit
+    changes one of the numbers this practice publishes about itself.** Anyone comparing apparatus
+    ratios across the 2026-08-23 boundary is comparing across that change.
+    (b) **The measurement is not noise.** Identical across six baseline runs, different across all
+    three contaminated runs, on a frozen record whose sha256 is identical before and after, with a
+    replicate baseline that found nothing unstable on its own.
+    (c) **The earlier clean result was true of an untracked report and false of a committed one.**
+    The two runs that cleared this check injected the report at a path that did not yet exist in the
+    record. **The contamination begins at the commit, not at the run** — a self-referential
+    instrument can measure clean all day and become an instance of its own defect the moment its
+    findings enter the record. A reuser auditing their own instruments should test after committing,
+    not before.
+    (d) **Neither of this practice's two instruments would have found it alone.** `apparatus_ratio`
+    is `PARTIALLY-OBSERVED` — the tracer cannot see inside the child process it reads the record
+    through — and the contamination test found the effect anyway, by comparing outputs rather than
+    watching file handles.

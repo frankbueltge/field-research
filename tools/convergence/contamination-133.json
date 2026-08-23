@@ -1,11 +1,13 @@
 {
- "checks_whose_report_moved": [],
- "count_moved": 0,
+ "checks_whose_report_moved": [
+  "apparatus_ratio"
+ ],
+ "count_moved": 1,
  "excluded_as_unstable_on_their_own": [],
- "frozen_record_sha256_after": "b440fce553d23d63be28159300140f524c8d4b02a906a7536fc8dbeafec93932",
- "frozen_record_sha256_before": "b440fce553d23d63be28159300140f524c8d4b02a906a7536fc8dbeafec93932",
+ "frozen_record_sha256_after": "18075e008dd0dbab3885cc6fe3ebd99098fa6bf976c8245167c706018dd8ffeb",
+ "frozen_record_sha256_before": "18075e008dd0dbab3885cc6fe3ebd99098fa6bf976c8245167c706018dd8ffeb",
  "generated_by": "tools/convergence/contamination_133.py",
- "population": 12,
+ "population": 15,
  "question": "does filing this audit's own report in the repository change the report of any check the audit measures?",
  "record_provably_unchanged_across_all_three_passes": true,
  "rows": [
@@ -16,9 +18,9 @@
     0
    ],
    "baseline1_stdout_shas": [
-    "df40dcf6b5fcebed",
-    "df40dcf6b5fcebed",
-    "df40dcf6b5fcebed"
+    "e7d34cc7d5d29725",
+    "e7d34cc7d5d29725",
+    "e7d34cc7d5d29725"
    ],
    "baseline2_exit_codes": [
     0,
@@ -26,9 +28,9 @@
     0
    ],
    "baseline2_stdout_shas": [
-    "df40dcf6b5fcebed",
-    "df40dcf6b5fcebed",
-    "df40dcf6b5fcebed"
+    "e7d34cc7d5d29725",
+    "e7d34cc7d5d29725",
+    "e7d34cc7d5d29725"
    ],
    "containment_verdict": "PARTIALLY-OBSERVED",
    "contaminated_exit_codes": [
@@ -37,47 +39,85 @@
     0
    ],
    "contaminated_stdout_shas": [
-    "df40dcf6b5fcebed",
-    "df40dcf6b5fcebed",
-    "df40dcf6b5fcebed"
+    "f500a68248840c55",
+    "f500a68248840c55",
+    "f500a68248840c55"
+   ],
+   "differs_from_baseline1": true,
+   "id": "apparatus_ratio",
+   "reads_the_whole_tree": false,
+   "report_moved_because_of_this_audit": true,
+   "unstable_between_two_identical_baselines": false
+  },
+  {
+   "baseline1_exit_codes": [
+    0,
+    1,
+    1
+   ],
+   "baseline1_stdout_shas": [
+    "4276e47160a02cdc",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "baseline2_exit_codes": [
+    0,
+    1,
+    1
+   ],
+   "baseline2_stdout_shas": [
+    "4276e47160a02cdc",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "containment_verdict": "WRITES-OUTSIDE-SEARCH-SPACE",
+   "contaminated_exit_codes": [
+    0,
+    1,
+    1
+   ],
+   "contaminated_stdout_shas": [
+    "4276e47160a02cdc",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
    ],
    "differs_from_baseline1": false,
-   "id": "apparatus_ratio",
+   "id": "audit_instrument",
    "reads_the_whole_tree": false,
    "report_moved_because_of_this_audit": false,
    "unstable_between_two_identical_baselines": false
   },
   {
    "baseline1_exit_codes": [
-    2,
-    2,
-    2
+    0,
+    0,
+    0
    ],
    "baseline1_stdout_shas": [
-    "e23e1e05288de388",
-    "e23e1e05288de388",
-    "e23e1e05288de388"
+    "b7d0703fe6c76462",
+    "b7d0703fe6c76462",
+    "b7d0703fe6c76462"
    ],
    "baseline2_exit_codes": [
-    2,
-    2,
-    2
+    0,
+    0,
+    0
    ],
    "baseline2_stdout_shas": [
-    "e23e1e05288de388",
-    "e23e1e05288de388",
-    "e23e1e05288de388"
+    "b7d0703fe6c76462",
+    "b7d0703fe6c76462",
+    "b7d0703fe6c76462"
    ],
    "containment_verdict": "READ-ONLY",
    "contaminated_exit_codes": [
-    2,
-    2,
-    2
+    0,
+    0,
+    0
    ],
    "contaminated_stdout_shas": [
-    "e23e1e05288de388",
-    "e23e1e05288de388",
-    "e23e1e05288de388"
+    "b7d0703fe6c76462",
+    "b7d0703fe6c76462",
+    "b7d0703fe6c76462"
    ],
    "differs_from_baseline1": false,
    "id": "check_anchors",
@@ -125,35 +165,35 @@
   },
   {
    "baseline1_exit_codes": [
-    1,
-    1,
-    1
+    0,
+    0,
+    0
    ],
    "baseline1_stdout_shas": [
-    "8e11f34680aca603",
-    "8e11f34680aca603",
-    "8e11f34680aca603"
+    "65a4d9e6d4166411",
+    "65a4d9e6d4166411",
+    "65a4d9e6d4166411"
    ],
    "baseline2_exit_codes": [
-    1,
-    1,
-    1
+    0,
+    0,
+    0
    ],
    "baseline2_stdout_shas": [
-    "8e11f34680aca603",
-    "8e11f34680aca603",
-    "8e11f34680aca603"
+    "65a4d9e6d4166411",
+    "65a4d9e6d4166411",
+    "65a4d9e6d4166411"
    ],
    "containment_verdict": "READ-ONLY",
    "contaminated_exit_codes": [
-    1,
-    1,
-    1
+    0,
+    0,
+    0
    ],
    "contaminated_stdout_shas": [
-    "8e11f34680aca603",
-    "8e11f34680aca603",
-    "8e11f34680aca603"
+    "65a4d9e6d4166411",
+    "65a4d9e6d4166411",
+    "65a4d9e6d4166411"
    ],
    "differs_from_baseline1": false,
    "id": "chronicle_check",
@@ -315,6 +355,82 @@
   },
   {
    "baseline1_exit_codes": [
+    1,
+    1,
+    1
+   ],
+   "baseline1_stdout_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "baseline2_exit_codes": [
+    1,
+    1,
+    1
+   ],
+   "baseline2_stdout_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "containment_verdict": "TRANSIENT-WRITE-INSIDE-SEARCH-SPACE",
+   "contaminated_exit_codes": [
+    1,
+    1,
+    1
+   ],
+   "contaminated_stdout_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "differs_from_baseline1": false,
+   "id": "guard_claims_check_FAIL_branch",
+   "reads_the_whole_tree": false,
+   "report_moved_because_of_this_audit": false,
+   "unstable_between_two_identical_baselines": false
+  },
+  {
+   "baseline1_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline1_stdout_shas": [
+    "59f7ed877948cc16",
+    "59f7ed877948cc16",
+    "59f7ed877948cc16"
+   ],
+   "baseline2_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "baseline2_stdout_shas": [
+    "59f7ed877948cc16",
+    "59f7ed877948cc16",
+    "59f7ed877948cc16"
+   ],
+   "containment_verdict": "WRITES-OUTSIDE-SEARCH-SPACE",
+   "contaminated_exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "contaminated_stdout_shas": [
+    "59f7ed877948cc16",
+    "59f7ed877948cc16",
+    "59f7ed877948cc16"
+   ],
+   "differs_from_baseline1": false,
+   "id": "power_audit",
+   "reads_the_whole_tree": false,
+   "report_moved_because_of_this_audit": false,
+   "unstable_between_two_identical_baselines": false
+  },
+  {
+   "baseline1_exit_codes": [
     0,
     0,
     0
@@ -358,9 +474,9 @@
     1
    ],
    "baseline1_stdout_shas": [
-    "1051eac6032e035a",
-    "1051eac6032e035a",
-    "1051eac6032e035a"
+    "ba2c02ef2d706132",
+    "ba2c02ef2d706132",
+    "ba2c02ef2d706132"
    ],
    "baseline2_exit_codes": [
     1,
@@ -368,9 +484,9 @@
     1
    ],
    "baseline2_stdout_shas": [
-    "1051eac6032e035a",
-    "1051eac6032e035a",
-    "1051eac6032e035a"
+    "ba2c02ef2d706132",
+    "ba2c02ef2d706132",
+    "ba2c02ef2d706132"
    ],
    "containment_verdict": "READ-ONLY",
    "contaminated_exit_codes": [
@@ -379,9 +495,9 @@
     1
    ],
    "contaminated_stdout_shas": [
-    "1051eac6032e035a",
-    "1051eac6032e035a",
-    "1051eac6032e035a"
+    "ba2c02ef2d706132",
+    "ba2c02ef2d706132",
+    "ba2c02ef2d706132"
    ],
    "differs_from_baseline1": false,
    "id": "record_ceiling_check",
@@ -467,6 +583,6 @@
   }
  ],
  "session": 133,
- "verdict": "NO CHECK IN THIS POPULATION MOVED WHEN THE AUDIT'S REPORT WAS FILED",
+ "verdict": "THIS AUDIT CONTAMINATES ITS OWN POPULATION",
  "verdict_scope": "The verdict covers only the checks not excluded above. An excluded check is not cleared: it is a check this test cannot attribute anything to, because it moves on its own."
 }

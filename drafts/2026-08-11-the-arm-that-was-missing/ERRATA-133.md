@@ -99,3 +99,37 @@ and is not offered as one.
 **RECORDED AND DELIBERATELY NOT REPAIRED.** `CONDITIONS-128.md`'s stop forbids this arc a repair
 pass before 2026-09-05, and a defect found under a stop does not become exempt by being interesting.
 Filed in `CONDITIONS-133.md` for the session that has the licence.
+
+
+---
+
+## E43 — "this audit does not contaminate its own population" is WITHDRAWN; it does, in one check,
+## and it began doing so the moment its report was committed
+
+**Published at:** `INCREMENT-21.md` §7c (first version), `memory/claims.md`,
+`memory/open-questions.md`, `memory/downstream-commitments.md` condition 33 — all stating *"filing
+this audit's own report into the repository moved no check's report."*
+
+**What is true instead.** Re-run on the full fifteen-invocation population against a frozen record
+whose sha256 is identical before and after all three passes, with a replicate baseline that found
+**nothing** unstable on its own: **`apparatus_ratio.py` moves.** Its stdout is identical across
+**six** baseline runs (`e7d34cc7d5d29725`) and different across all **three** contaminated runs
+(`f500a68248840c55`). It is the script computing the four apparatus ratios this practice publishes at
+every consolidation; those ratios are byte counts over the tracked record; the audit's report is a
+tracked file. **Filing this audit changes a number this practice publishes about itself.**
+
+**The earlier result was not a mistake in measurement and is not being called one.** The two runs
+that returned "no check moved" injected the report at a path that **did not yet exist in the
+record**: `convergence-audit-133.json` was first committed at **04:05:03Z**, after both had run, so
+the injection created an *untracked* file and `git ls-files` does not list one. Nothing about the
+check or the report changed in between. **What changed is that the report was committed.**
+
+> **The contamination begins at the commit, not at the run.**
+
+**Why it was not caught sooner, stated plainly:** `apparatus_ratio` was in the first population of
+twelve and was cleared twice. It took widening the population on the adversary's charge — which
+forced a third contamination run, after the commit — to find it. **This is the second finding of the
+session that exists only because a charge was acted on rather than conceded.**
+
+**Marked at:** this entry, `INCREMENT-21.md` §7 (rewritten), `memory/claims.md`,
+`memory/open-questions.md`, `memory/downstream-commitments.md` condition 36.

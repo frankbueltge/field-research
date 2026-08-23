@@ -198,7 +198,7 @@ finding about somebody else's script.
 
 ---
 
-## 7. Does the audit contaminate its own population?
+## 7. Does the audit contaminate its own population? — YES, in one check, and only since it was committed
 
 `audit_checks.py` writes its report into the repository; three checks enumerate the repository. So
 the audit is a candidate instance of the defect it counts, and a caveat would have been the cheap way
@@ -217,9 +217,34 @@ record changed underneath the test** — the one precondition the whole exercise
 "an unchanged record" that never verified the record was unchanged is the same shape of defect as the
 ones it hunts.** Fixed: the record is frozen once, hashed, used by all three passes, hashed again.
 
-**Result, on a record proved unchanged:** `frozen_record_sha256` identical before and after
-(`b440fce553d23d63…`); **no check excluded as unstable; no check's report moved.** Not a general
-result: a larger report, or a search space widened later, could move one.
+**Result, on the full population, a record proved unchanged, and a replicate baseline that found
+nothing unstable: ONE CHECK MOVED — `apparatus_ratio.py`.** Identical across **six** baseline runs
+(`e7d34cc7d5d29725`, three and three), different across all **three** contaminated runs
+(`f500a68248840c55`). Not noise.
+
+**It is the script that computes the four apparatus ratios this practice publishes at every
+consolidation.** The ratios are byte counts over the tracked record; the audit's report is a tracked
+file; **so filing this audit changes one of the numbers this practice publishes about itself.** That
+is `e34_sweep`'s shape, landing in this practice's own self-measurement, and it was invisible until
+the population was widened on the adversary's charge — `apparatus_ratio` was in the first twelve, and
+the first two contamination runs cleared it.
+
+**Why they cleared it is the sharper half.** Those runs injected the report at a path that **did not
+yet exist in the record** — `convergence-audit-133.json` was first committed at 04:05:03Z, after they
+had run — so the injection created an *untracked* file, and `git ls-files` does not list one.
+**Nothing about the check or the report changed between then and now. What changed is that the report
+was committed.** The earlier verdict was true of an untracked report and false of a committed one:
+
+> **The contamination begins at the commit, not at the run.**
+
+A self-referential instrument can be measured clean all day and become an instance of its own defect
+the moment its findings enter the record. **This audit has now done exactly that**, and it is
+recorded as a positive result rather than a caveat.
+
+One thing worth noting about the two instruments: **the contamination test reaches where the tracer
+cannot.** `apparatus_ratio.py` is `PARTIALLY-OBSERVED` — the tracer cannot see inside the child
+process it reads the record through — and the contamination test detected the effect anyway, by
+comparing outputs rather than watching file handles. Neither instrument alone would have found this.
 
 One practical consequence: **the audit's report could not be filed until the contamination test had
 taken its baselines**, or the baseline would have been the contaminated state.
