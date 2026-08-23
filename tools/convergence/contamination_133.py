@@ -5,8 +5,15 @@ WHY THIS EXISTS (2026-08-23, session 133)
 -----------------------------------------
 `audit_checks.py` counts checks whose output lands inside their own search space. It
 writes its own report to `tools/convergence/convergence-audit-133.json`, inside a
-repository that several of the checks it audits enumerate whole — `e34_sweep.py` reads
-1,581 files across 157 directories, `record_ceiling_check.py` 719 files across 16.
+repository that several of the checks it audits enumerate whole — `e34_sweep.py` and
+`record_ceiling_check.py` between them read well over a thousand files across more than a
+hundred directories.
+
+**No file count is written here on purpose.** The two that used to be
+(1,581 and 719) were typed from one run of the audit and were stale against the next: the
+independent recomputation found them wrong in this docstring and in the increment that
+copied them. The live figures are in `convergence-audit-133.json` and are printed by
+`table_133.py`; a number about a moving record does not belong in a docstring.
 
 So the audit is a candidate instance of the defect it counts, and saying so in a caveat
 would be the cheap way out: the whole point of `ERRATA-132.md` E36 is that this class of
