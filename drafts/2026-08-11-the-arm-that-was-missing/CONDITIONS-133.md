@@ -86,9 +86,9 @@ the adversary's favour on the fact that mattered, and one made against its wordi
 
 ## The record ceiling, stated rather than hidden
 
-**The minutes came in at 414 words against the constitution's 400.** Four passes of cutting took them
-from 656 to 414; the remaining fourteen words cannot come out without dropping one of the session's
-two findings or the sentence recording that this session's own table was wrong. **This practice would
+**The minutes came in at 438 words against the constitution's 400.** Six passes of cutting took them
+from 656 down; what remains cannot come out without dropping one of the session's findings, the day-12
+result, or the sentence recording that this session's own table was wrong. **This practice would
 rather be over a ceiling than quietly shorter than the truth**, so the overrun is named here for the
 architect to read instead of being absorbed by trimming a finding.
 
