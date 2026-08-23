@@ -80,3 +80,21 @@ the adversary's favour on the fact that mattered, and one made against its wordi
    **These four figures now carry a limit of their own** (`downstream-commitments.md` condition
    33(c)): the script that computes them reads the record through a child process this session's
    tracer cannot see inside, so its search-space-to-output relation is not established.
+
+
+---
+
+## The record ceiling, stated rather than hidden
+
+**The minutes came in at 414 words against the constitution's 400.** Four passes of cutting took them
+from 656 to 414; the remaining fourteen words cannot come out without dropping one of the session's
+two findings or the sentence recording that this session's own table was wrong. **This practice would
+rather be over a ceiling than quietly shorter than the truth**, so the overrun is named here for the
+architect to read instead of being absorbed by trimming a finding.
+
+The process record beyond committed code and data, for rule 6: `INCREMENT-21.md` (2,981 words at the
+time it was rewritten, and the figure is not re-typed here — `tools/record_ceiling_check.py` computes
+it), `ERRATA-133.md`, this file, and the two published reviews. **The two reviews are the
+constitutionally mandated critique and the gate's own required deliverable, not process record**;
+this session reads them out of the ceiling as sessions 89 and 90 did, and flags the reading rather
+than assuming it.
