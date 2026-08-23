@@ -1,0 +1,742 @@
+{
+ "checks": [
+  {
+   "child_processes": [],
+   "exit_codes": [
+    1,
+    1,
+    1
+   ],
+   "first_run_stderr_head": "",
+   "first_run_stdout_head": "chronicle.json: 107 entries checked against the receiver's pinned schema\n  FAIL    journal/2026-08-23.md session 133 has no chronicle entry ('Session 133 \u2014 2026-08-23')\n",
+   "id": "chronicle_check",
+   "invocation": "(cd . && python3 tools/chronicle_check.py)",
+   "network_calls": 0,
+   "network_head": [],
+   "os_open_used": false,
+   "partially_observed": false,
+   "record_changed_by_the_check": [],
+   "repo_dirs_listed": [
+    "journal"
+   ],
+   "repo_files_read": 52,
+   "repo_files_written": [],
+   "role": "orientation guard \u2014 refuses a chronicle entry the receiving site cannot read",
+   "runs": 3,
+   "stderr_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "stdout_shas": [
+    "8e11f34680aca603",
+    "8e11f34680aca603",
+    "8e11f34680aca603"
+   ],
+   "tracer_error": null,
+   "verdict_containment": "READ-ONLY",
+   "verdict_convergence": "CONVERGES",
+   "writes_removed_before_exit": [],
+   "writes_still_present_at_exit": [],
+   "written_and_also_read": [],
+   "written_into_an_enumerated_directory": [],
+   "written_state_after": []
+  },
+  {
+   "child_processes": [],
+   "exit_codes": [
+    2,
+    2,
+    2
+   ],
+   "first_run_stderr_head": "",
+   "first_run_stdout_head": "rendered session cards: 141\nserved chronicle anchors: 140\nSHORTFALL  session card cs-133 (journal/2026-08-23.md) has no chronicle.json\n           entry. Benign only while that session is in flight \u2014 its landing commit\n           must append the entry. Otherwise: append it now.\nstatus: TRANSIENT\n",
+   "id": "check_anchors",
+   "invocation": "(cd . && python3 tools/journal/check_anchors.py)",
+   "network_calls": 0,
+   "network_head": [],
+   "os_open_used": false,
+   "partially_observed": false,
+   "record_changed_by_the_check": [],
+   "repo_dirs_listed": [
+    "journal"
+   ],
+   "repo_files_read": 53,
+   "repo_files_written": [],
+   "role": "orientation guard \u2014 journal/chronicle anchor agreement",
+   "runs": 3,
+   "stderr_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "stdout_shas": [
+    "e23e1e05288de388",
+    "e23e1e05288de388",
+    "e23e1e05288de388"
+   ],
+   "tracer_error": null,
+   "verdict_containment": "READ-ONLY",
+   "verdict_convergence": "CONVERGES",
+   "writes_removed_before_exit": [],
+   "writes_still_present_at_exit": [],
+   "written_and_also_read": [],
+   "written_into_an_enumerated_directory": [],
+   "written_state_after": []
+  },
+  {
+   "child_processes": [],
+   "exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "first_run_stderr_head": "",
+   "first_run_stdout_head": "/field/requests would render ~1384 words (1164 composed + 220 chrome); budget 1500.\nheadroom 115 words \u00b7 14 open of 18 sections \u00b7 19 words of lead per open item \u00b7 document 20063 words\n\nOPEN \u2014 this is what the room publicly says a human still owes this practice:\n   54w  2026-07-22 \u2014 The history purge is incomplete for its own goal (and it cost six sessions \u2014 recovered)\n   50w  2026-07-23 \u2014 Offer: d",
+   "id": "requests_room_check",
+   "invocation": "(cd . && python3 tools/requests_room_check.py)",
+   "network_calls": 0,
+   "network_head": [],
+   "os_open_used": false,
+   "partially_observed": false,
+   "record_changed_by_the_check": [],
+   "repo_dirs_listed": [],
+   "repo_files_read": 1,
+   "repo_files_written": [],
+   "role": "orientation guard \u2014 REQUESTS.md word budget in the receiving build",
+   "runs": 3,
+   "stderr_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "stdout_shas": [
+    "4583fde3bc43c74e",
+    "4583fde3bc43c74e",
+    "4583fde3bc43c74e"
+   ],
+   "tracer_error": null,
+   "verdict_containment": "READ-ONLY",
+   "verdict_convergence": "CONVERGES",
+   "writes_removed_before_exit": [],
+   "writes_still_present_at_exit": [],
+   "written_and_also_read": [],
+   "written_into_an_enumerated_directory": [],
+   "written_state_after": []
+  },
+  {
+   "child_processes": [],
+   "exit_codes": [
+    1,
+    1,
+    1
+   ],
+   "first_run_stderr_head": "",
+   "first_run_stdout_head": "drafts/2026-08-11-the-arm-that-was-missing  \u2014  process record against rule 6's 3000-word ceiling\n  file                                   raw  stripped\n  CONCEPT.md                            3497      3546\n  CONDITIONS-120.md                     1336      1202\n  CONDITIONS-121.md                     1220      1159\n  CONDITIONS-122.md                     1506      1402\n  CONDITIONS-123.md         ",
+   "id": "record_ceiling_check",
+   "invocation": "(cd . && python3 tools/record_ceiling_check.py drafts/2026-08-11-the-arm-that-was-missing)",
+   "network_calls": 0,
+   "network_head": [],
+   "os_open_used": false,
+   "partially_observed": false,
+   "record_changed_by_the_check": [],
+   "repo_dirs_listed": [
+    "drafts/2026-08-11-the-arm-that-was-missing",
+    "drafts/2026-08-11-the-arm-that-was-missing/__pycache__",
+    "drafts/2026-08-11-the-arm-that-was-missing/deliverable",
+    "drafts/2026-08-11-the-arm-that-was-missing/deliverable-v0.3",
+    "drafts/2026-08-11-the-arm-that-was-missing/deliverable-v0.3/series",
+    "drafts/2026-08-11-the-arm-that-was-missing/deliverable-v0.3/tools",
+    "drafts/2026-08-11-the-arm-that-was-missing/deliverable/series",
+    "drafts/2026-08-11-the-arm-that-was-missing/deliverable/tools",
+    "drafts/2026-08-11-the-arm-that-was-missing/expansion-111",
+    "drafts/2026-08-11-the-arm-that-was-missing/ledger",
+    "drafts/2026-08-11-the-arm-that-was-missing/ledger/corrected",
+    "drafts/2026-08-11-the-arm-that-was-missing/letter",
+    "drafts/2026-08-11-the-arm-that-was-missing/letter-dryrun",
+    "drafts/2026-08-11-the-arm-that-was-missing/offer",
+    "drafts/2026-08-11-the-arm-that-was-missing/specialist-survival-scripts",
+    "drafts/2026-08-11-the-arm-that-was-missing/tool"
+   ],
+   "repo_files_read": 720,
+   "repo_files_written": [],
+   "role": "rule 6 ceiling on a work's process record",
+   "runs": 3,
+   "stderr_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "stdout_shas": [
+    "f99fdde941d7e261",
+    "f99fdde941d7e261",
+    "f99fdde941d7e261"
+   ],
+   "tracer_error": null,
+   "verdict_containment": "READ-ONLY",
+   "verdict_convergence": "CONVERGES",
+   "writes_removed_before_exit": [],
+   "writes_still_present_at_exit": [],
+   "written_and_also_read": [],
+   "written_into_an_enumerated_directory": [],
+   "written_state_after": []
+  },
+  {
+   "child_processes": [
+    "git ls-files -z",
+    "git ls-files -z"
+   ],
+   "exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "first_run_stderr_head": "",
+   "first_run_stdout_head": "{\n  \"totals_kb\": {\n    \"all_text\": 69806.6,\n    \"works\": 7492.4,\n    \"face\": 1123.7,\n    \"prose_in_works\": 1219.4,\n    \"prose_outside\": 8408.8,\n    \"record_layer\": 4518.2,\n    \"unshipped\": 57377.6\n  },\n  \"ratios\": {\n    \"everything outside works/ : works/ text\": 8.32,\n    \"everything outside the face : the face\": 61.12,\n    \"markdown prose outside works/ : prose inside\": 6.9,\n    \"record and gover",
+   "id": "apparatus_ratio",
+   "invocation": "(cd . && python3 tools/apparatus_ratio.py --json)",
+   "network_calls": 0,
+   "network_head": [],
+   "os_open_used": false,
+   "partially_observed": true,
+   "record_changed_by_the_check": [],
+   "repo_dirs_listed": [],
+   "repo_files_read": 0,
+   "repo_files_written": [],
+   "role": "the apparatus ratios, published at every consolidation",
+   "runs": 3,
+   "stderr_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "stdout_shas": [
+    "df40dcf6b5fcebed",
+    "df40dcf6b5fcebed",
+    "df40dcf6b5fcebed"
+   ],
+   "tracer_error": null,
+   "verdict_containment": "PARTIALLY-OBSERVED",
+   "verdict_convergence": "CONVERGES",
+   "writes_removed_before_exit": [],
+   "writes_still_present_at_exit": [],
+   "written_and_also_read": [],
+   "written_into_an_enumerated_directory": [],
+   "written_state_after": []
+  },
+  {
+   "child_processes": [],
+   "exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "first_run_stderr_head": "",
+   "first_run_stdout_head": "{\n \"published_tables\": {\n  \"deliverable/GAUNTLET-2026-08-15.md\": {\n   \"ids_declared_here\": [\n    \"E1\",\n    \"E2\",\n    \"E3\",\n    \"E4\",\n    \"E5\",\n    \"E6\",\n    \"E7\",\n    \"E8\",\n    \"E9\",\n    \"E10\",\n    \"E11\",\n    \"E12\",\n    \"E13\",\n    \"E14\",\n    \"E15\",\n    \"E16\",\n    \"E17\",\n    \"E18\"\n   ],\n   \"ids_found_in_the_file\": [\n    \"E1\",\n    \"E2\",\n    \"E3\",\n    \"E4\",\n    \"E5\",\n    \"E6\",\n    \"E7\",\n    \"E8\",\n   ",
+   "id": "errata_check_coverage",
+   "invocation": "(cd drafts/2026-08-11-the-arm-that-was-missing && python3 errata_check.py --coverage)",
+   "network_calls": 0,
+   "network_head": [],
+   "os_open_used": false,
+   "partially_observed": false,
+   "record_changed_by_the_check": [],
+   "repo_dirs_listed": [],
+   "repo_files_read": 5,
+   "repo_files_written": [],
+   "role": "accounting of every published erratum against the bundle",
+   "runs": 3,
+   "stderr_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "stdout_shas": [
+    "5f12efa43366bb07",
+    "5f12efa43366bb07",
+    "5f12efa43366bb07"
+   ],
+   "tracer_error": null,
+   "verdict_containment": "READ-ONLY",
+   "verdict_convergence": "CONVERGES",
+   "writes_removed_before_exit": [],
+   "writes_still_present_at_exit": [],
+   "written_and_also_read": [],
+   "written_into_an_enumerated_directory": [],
+   "written_state_after": []
+  },
+  {
+   "child_processes": [],
+   "exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "first_run_stderr_head": "",
+   "first_run_stdout_head": "{\n \"files_scanned\": 23,\n \"registry_size\": 29,\n \"n_regressions\": 0\n}\n",
+   "id": "errata_check_bundle",
+   "invocation": "(cd drafts/2026-08-11-the-arm-that-was-missing && python3 errata_check.py deliverable-v0.3)",
+   "network_calls": 0,
+   "network_head": [],
+   "os_open_used": false,
+   "partially_observed": false,
+   "record_changed_by_the_check": [],
+   "repo_dirs_listed": [
+    "drafts/2026-08-11-the-arm-that-was-missing/deliverable-v0.3",
+    "drafts/2026-08-11-the-arm-that-was-missing/deliverable-v0.3/series",
+    "drafts/2026-08-11-the-arm-that-was-missing/deliverable-v0.3/tools"
+   ],
+   "repo_files_read": 28,
+   "repo_files_written": [
+    "drafts/2026-08-11-the-arm-that-was-missing/errata-check.json"
+   ],
+   "role": "fails if a published correction reappears in the bundle",
+   "runs": 3,
+   "stderr_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "stdout_shas": [
+    "bb3a34b9bb7b0836",
+    "bb3a34b9bb7b0836",
+    "bb3a34b9bb7b0836"
+   ],
+   "tracer_error": null,
+   "verdict_containment": "WRITES-OUTSIDE-SEARCH-SPACE",
+   "verdict_convergence": "CONVERGES",
+   "writes_removed_before_exit": [],
+   "writes_still_present_at_exit": [
+    "drafts/2026-08-11-the-arm-that-was-missing/errata-check.json"
+   ],
+   "written_and_also_read": [],
+   "written_into_an_enumerated_directory": [],
+   "written_state_after": [
+    {
+     "path": "drafts/2026-08-11-the-arm-that-was-missing/errata-check.json",
+     "sha_after": "c34b3631a08671c0a065f2f6585732152c4c98f6addb0c10dc4ad4ab4d685983"
+    }
+   ]
+  },
+  {
+   "child_processes": [],
+   "exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "first_run_stderr_head": "",
+   "first_run_stdout_head": "guard claims: OK - every claim in the block matches what the guard reports now\n",
+   "id": "guard_claims_check",
+   "invocation": "(cd drafts/2026-08-11-the-arm-that-was-missing && python3 guard_claims.py --check)",
+   "network_calls": 0,
+   "network_head": [],
+   "os_open_used": false,
+   "partially_observed": false,
+   "record_changed_by_the_check": [],
+   "repo_dirs_listed": [],
+   "repo_files_read": 13,
+   "repo_files_written": [
+    "drafts/2026-08-11-the-arm-that-was-missing/guard-claims-wordnumber-probe.md"
+   ],
+   "role": "fails if the claims block on disk is not what the guards say now",
+   "runs": 3,
+   "stderr_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "stdout_shas": [
+    "1f8990d18bd964ba",
+    "1f8990d18bd964ba",
+    "1f8990d18bd964ba"
+   ],
+   "tracer_error": null,
+   "verdict_containment": "TRANSIENT-WRITE-INSIDE-SEARCH-SPACE",
+   "verdict_convergence": "CONVERGES",
+   "writes_removed_before_exit": [
+    "drafts/2026-08-11-the-arm-that-was-missing/guard-claims-wordnumber-probe.md"
+   ],
+   "writes_still_present_at_exit": [],
+   "written_and_also_read": [
+    "drafts/2026-08-11-the-arm-that-was-missing/guard-claims-wordnumber-probe.md"
+   ],
+   "written_into_an_enumerated_directory": [],
+   "written_state_after": [
+    {
+     "path": "drafts/2026-08-11-the-arm-that-was-missing/guard-claims-wordnumber-probe.md",
+     "sha_after": null
+    }
+   ]
+  },
+  {
+   "child_processes": [],
+   "exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "first_run_stderr_head": "",
+   "first_run_stdout_head": "wrote e34-sweep-132.json: 12 sites, 0 LIVE\n",
+   "id": "e34_sweep",
+   "invocation": "(cd drafts/2026-08-11-the-arm-that-was-missing && python3 e34_sweep.py)",
+   "network_calls": 0,
+   "network_head": [],
+   "os_open_used": false,
+   "partially_observed": false,
+   "record_changed_by_the_check": [
+    "drafts/2026-08-11-the-arm-that-was-missing/e34-sweep-132.json"
+   ],
+   "repo_dirs_listed": [
+    ".github",
+    ".github/workflows",
+    "archive",
+    "archive/protocols",
+    "archive/recovered",
+    "archive/recovered/2026-07-20-hollow-copy",
+    "archive/workboard",
+    "deliveries",
+    "deliveries/2026-07-31-enai",
+    "drafts",
+    "drafts/2026-07-12-split-seal-adversarial",
+    "drafts/2026-07-12-split-seal-adversarial/data",
+    "drafts/2026-07-12-split-seal-adversarial/specimens",
+    "drafts/2026-07-12-split-seal-adversarial/test-ca",
+    "drafts/2026-07-12-split-seal-adversarial/tools",
+    "drafts/2026-07-12-split-seal-adversarial/trust",
+    "drafts/2026-07-23-grandfather-clause",
+    "drafts/2026-07-23-grandfather-clause/a1",
+    "drafts/2026-07-23-grandfather-clause/a1/sources",
+    "drafts/2026-07-23-grandfather-clause/a1/specimens",
+    "drafts/2026-07-23-grandfather-clause/a1/tools",
+    "drafts/2026-07-28-follow-the-line",
+    "drafts/2026-07-28-follow-the-line/sources",
+    "drafts/2026-07-30-follow-the-line",
+    "drafts/2026-07-30-follow-the-line/results",
+    "drafts/2026-07-30-follow-the-line/scripts",
+    "drafts/2026-07-30-follow-the-line/sources",
+    "drafts/2026-07-30-follow-the-line/sources/history",
+    "drafts/2026-07-31-fit-to-send",
+    "drafts/2026-07-31-fit-to-send/results",
+    "drafts/2026-07-31-fit-to-send/scripts",
+    "drafts/2026-07-31-served-not-shown",
+    "drafts/2026-07-31-served-not-shown/evidence",
+    "drafts/2026-07-31-served-not-shown/probe",
+    "drafts/2026-08-01-what-the-record-rests-on",
+    "drafts/2026-08-03-the-correction-that-arrives-too-late",
+    "drafts/2026-08-04-echo-below-the-line",
+    "drafts/2026-08-04-echo-below-the-line/archive-audit",
+    "drafts/2026-08-04-echo-below-the-line/archive-audit/evidence",
+    "drafts/2026-08-04-echo-below-the-line/archive-audit/provenance",
+    "drafts/2026-08-04-echo-below-the-line/archive-audit/provenance/consensus",
+    "drafts/2026-08-04-echo-below-the-line/archive-audit/provenance/pages",
+    "drafts/2026-08-04-echo-below-the-line/archive-audit/results",
+    "drafts/2026-08-04-echo-below-the-line/archive-audit/scripts",
+    "drafts/2026-08-04-echo-below-the-line/day1-rerun",
+    "drafts/2026-08-04-echo-below-the-line/day1-rerun/provenance",
+    "drafts/2026-08-04-echo-below-the-line/day1-rerun/results",
+    "drafts/2026-08-04-echo-below-the-line/day1-rerun/scripts",
+    "drafts/2026-08-04-echo-below-the-line/day2",
+    "drafts/2026-08-04-echo-below-the-line/day2/provenance",
+    "drafts/2026-08-04-echo-below-the-line/day2/scripts",
+    "drafts/2026-08-04-echo-below-the-line/provenance",
+    "drafts/2026-08-04-echo-below-the-line/results",
+    "drafts/2026-08-04-echo-below-the-line/results-extended",
+    "drafts/2026-08-04-echo-below-the-line/scripts",
+    "drafts/2026-08-04-echo-below-the-line/tests",
+    "drafts/2026-08-04-echo-below-the-line/verification",
+    "drafts/2026-08-04-second-reader-021",
+    "drafts/2026-08-04-second-reader-021/prompts",
+    "drafts/2026-08-04-second-reader-021/scripts",
+    "drafts/2026-08-06-as-of-today",
+    "drafts/2026-08-08-does-the-date-move",
+    "drafts/2026-08-08-the-hours-it-was-not-looking",
+    "drafts/2026-08-08-the-hours-it-was-not-looking/translingual",
+    "drafts/2026-08-10-one-receiver-to-the-floor",
+    "drafts/2026-08-10-the-receiver-comes-first",
+    "drafts/2026-08-10-who-actually-reads-it",
+    "drafts/2026-08-11-the-arm-that-was-missing",
+    "drafts/2026-08-11-the-arm-that-was-missing/deliverable",
+    "drafts/2026-08-11-the-arm-that-was-missing/deliverable-v0.3",
+    "drafts/2026-08-11-the-arm-that-was-missing/deliverable-v0.3/series",
+    "drafts/2026-08-11-the-arm-that-was-missing/deliverable-v0.3/tools",
+    "drafts/2026-08-11-the-arm-that-was-missing/deliverable/series",
+    "drafts/2026-08-11-the-arm-that-was-missing/deliverable/tools",
+    "drafts/2026-08-11-the-arm-that-was-missing/expansion-111",
+    "drafts/2026-08-11-the-arm-that-was-missing/ledger",
+    "drafts/2026-08-11-the-arm-that-was-missing/ledger/corrected",
+    "drafts/2026-08-11-the-arm-that-was-missing/letter",
+    "drafts/2026-08-11-the-arm-that-was-missing/letter-dryrun",
+    "drafts/2026-08-11-the-arm-that-was-missing/offer",
+    "drafts/2026-08-11-the-arm-that-was-missing/specialist-survival-scripts",
+    "drafts/2026-08-11-the-arm-that-was-missing/tool",
+    "field-feedback",
+    "journal",
+    "memory",
+    "memory/dossiers",
+    "notes",
+    "notes/2026-07-16-half-life-archival-probe",
+    "notes/2026-07-17-automated-reviewer-spike",
+    "notes/2026-07-19-half-life-content-quality-spike",
+    "notes/2026-07-21-half-life-content-quality-strata2",
+    "notes/2026-07-25-expedition",
+    "notes/2026-07-25-gauntlet-homogenization",
+    "notes/2026-07-25-ji-2026-002-build",
+    "notes/2026-07-25-repair-chronicle-anchor",
+    "notes/2026-07-26-envelope-turned-inward",
+    "notes/2026-07-26-gauntlet-battery",
+    "notes/2026-07-26-register-probe",
+    "notes/2026-07-27-rework-020",
+    "notes/2026-07-28-catalogue-backreference",
+    "notes/2026-07-30-catalogue-longitudinal",
+    "notes/2026-07-30-session-72",
+    "notes/2026-07-30-session-73",
+    "notes/2026-08-13-register-reachability",
+    "notes/2026-08-21-window-compliance",
+    "tools",
+    "tools/convergence",
+    "tools/journal",
+    "tools/memory",
+    "works",
+    "works/2026-07-01-calibration-gap",
+    "works/2026-07-01-calibration-gap/evidence",
+    "works/2026-07-01-digit-mirror",
+    "works/2026-07-01-fairness-trap",
+    "works/2026-07-01-naive-detector",
+    "works/2026-07-01-plausibility-engine",
+    "works/2026-07-01-provenance-horizon",
+    "works/2026-07-01-score-horizon",
+    "works/2026-07-01-the-edition",
+    "works/2026-07-02-standing-docket",
+    "works/2026-07-02-standing-docket/data",
+    "works/2026-07-02-standing-docket/data/raw",
+    "works/2026-07-02-taxonomy-on-trial",
+    "works/2026-07-05-backward-regime-test",
+    "works/2026-07-06-two-meters",
+    "works/2026-07-09-the-floor",
+    "works/2026-07-11-split-seal",
+    "works/2026-07-11-split-seal/data",
+    "works/2026-07-11-split-seal/specimens",
+    "works/2026-07-11-split-seal/tools",
+    "works/2026-07-11-split-seal/trust",
+    "works/2026-07-17-comparable-with-humans",
+    "works/2026-07-20-coverage-not-custody",
+    "works/2026-07-24-where-the-chain-breaks",
+    "works/2026-07-25-no-signal-to-extend",
+    "works/2026-07-25-no-signal-to-extend/provenance",
+    "works/2026-07-25-no-signal-to-extend/results",
+    "works/2026-07-25-no-signal-to-extend/scripts",
+    "works/2026-07-25-no-signal-to-extend/tests",
+    "works/2026-07-26-one-line-for-ten-thousand",
+    "works/2026-07-26-one-line-for-ten-thousand/provenance",
+    "works/2026-07-26-one-line-for-ten-thousand/provenance/register-records",
+    "works/2026-07-26-one-line-for-ten-thousand/provenance/register-records/manifeste",
+    "works/2026-07-26-one-line-for-ten-thousand/results",
+    "works/2026-07-26-one-line-for-ten-thousand/scripts",
+    "works/2026-07-26-one-line-for-ten-thousand/tests",
+    "works/2026-07-26-unable-to-ring-its-own-bell",
+    "works/2026-07-26-unable-to-ring-its-own-bell/provenance",
+    "works/2026-07-26-unable-to-ring-its-own-bell/results",
+    "works/2026-07-26-unable-to-ring-its-own-bell/scripts",
+    "works/2026-07-26-unable-to-ring-its-own-bell/tests",
+    "works/2026-08-03-where-the-reader-declines",
+    "works/2026-08-03-where-the-reader-declines/tests",
+    "works/2026-08-05-the-second-reader",
+    "works/2026-08-05-the-second-reader/evidence",
+    "works/2026-08-05-the-second-reader/prompts",
+    "works/2026-08-05-the-second-reader/scripts"
+   ],
+   "repo_files_read": 1585,
+   "repo_files_written": [
+    "drafts/2026-08-11-the-arm-that-was-missing/e34-sweep-132.json"
+   ],
+   "role": "the check whose defect raised this question (fixed at session 132)",
+   "runs": 3,
+   "stderr_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "stdout_shas": [
+    "3c95fd50722fed45",
+    "3c95fd50722fed45",
+    "3c95fd50722fed45"
+   ],
+   "tracer_error": null,
+   "verdict_containment": "OUTPUT-INSIDE-SEARCH-SPACE",
+   "verdict_convergence": "CONVERGES",
+   "writes_removed_before_exit": [],
+   "writes_still_present_at_exit": [
+    "drafts/2026-08-11-the-arm-that-was-missing/e34-sweep-132.json"
+   ],
+   "written_and_also_read": [],
+   "written_into_an_enumerated_directory": [
+    "drafts/2026-08-11-the-arm-that-was-missing/e34-sweep-132.json"
+   ],
+   "written_state_after": [
+    {
+     "path": "drafts/2026-08-11-the-arm-that-was-missing/e34-sweep-132.json",
+     "sha_after": "ce31144d892de4bd24384ddaa15fc779095bb1fadfe3e9309d3138232dd4126f"
+    }
+   ]
+  },
+  {
+   "child_processes": [],
+   "exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "first_run_stderr_head": "",
+   "first_run_stdout_head": "\nINCREMENT-20.md: pass 1 \u2014 23 numbers audited, 11 not found in any JSON of this draft\n  line  134           548.4   probe duration and today's probe ran 6,548.4 s against that median of\n  line  135           528.5   6,528.5 s.\n  line  137           221.5   over ten full-panel runs:** minimum **6,221.5 s**, median **6,528.5 s**, maximum\n  line  137           528.5   ns:** minimum **6,221.5 s**, med",
+   "id": "prose_vs_json",
+   "invocation": "(cd drafts/2026-08-11-the-arm-that-was-missing && python3 prose_vs_json.py INCREMENT-20.md)",
+   "network_calls": 0,
+   "network_head": [],
+   "os_open_used": false,
+   "partially_observed": false,
+   "record_changed_by_the_check": [],
+   "repo_dirs_listed": [
+    "drafts/2026-08-11-the-arm-that-was-missing"
+   ],
+   "repo_files_read": 157,
+   "repo_files_written": [],
+   "role": "numbers in prose against the computed files behind them",
+   "runs": 3,
+   "stderr_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "stdout_shas": [
+    "21a694bbcda14f0a",
+    "21a694bbcda14f0a",
+    "21a694bbcda14f0a"
+   ],
+   "tracer_error": null,
+   "verdict_containment": "READ-ONLY",
+   "verdict_convergence": "CONVERGES",
+   "writes_removed_before_exit": [],
+   "writes_still_present_at_exit": [],
+   "written_and_also_read": [],
+   "written_into_an_enumerated_directory": [],
+   "written_state_after": []
+  },
+  {
+   "child_processes": [],
+   "exit_codes": [
+    1,
+    1,
+    1
+   ],
+   "first_run_stderr_head": "",
+   "first_run_stdout_head": "",
+   "id": "validate_timestamps",
+   "invocation": "(cd drafts/2026-08-11-the-arm-that-was-missing && python3 validate_timestamps.py)",
+   "network_calls": 4,
+   "network_head": [
+    "urlopen https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&rvslots=main&titles=Trevor+Lee+%28musician%29%7CAddison+Grace%7CTikTok+Awards+Night%7CKota+Banks%7CBim+bam+toi%7CGloria+Ga",
+    "connect 127.0.0.1:43053",
+    "urlopen https://en.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&rvslots=main&titles=The+Hyannis+Sound%7CHallucinate+%28song%29%7CMatty+Healy%7CJ.+Mack+Slaughter+Jr.%7CNutbush+City+Limits",
+    "connect 127.0.0.1:43053"
+   ],
+   "os_open_used": false,
+   "partially_observed": false,
+   "record_changed_by_the_check": [],
+   "repo_dirs_listed": [],
+   "repo_files_read": 1,
+   "repo_files_written": [],
+   "role": "timestamp validation over the arc's run files",
+   "runs": 3,
+   "stderr_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "stdout_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "tracer_error": "HTTPError: HTTP Error 429: Too Many Requests",
+   "verdict_containment": "READ-ONLY",
+   "verdict_convergence": "CONVERGES-VACUOUSLY",
+   "writes_removed_before_exit": [],
+   "writes_still_present_at_exit": [],
+   "written_and_also_read": [],
+   "written_into_an_enumerated_directory": [],
+   "written_state_after": []
+  },
+  {
+   "child_processes": [],
+   "exit_codes": [
+    0,
+    0,
+    0
+   ],
+   "first_run_stderr_head": "",
+   "first_run_stdout_head": "{\n \"window\": [\n  1710307200,\n  1786000000\n ],\n \"coarse\": {\n  \"nbHits_reported\": 336,\n  \"distinct_ids\": 288,\n  \"sub_windows\": 1\n },\n \"found_only_by_fine\": [],\n \"found_only_by_coarse\": [],\n \"verdict\": \"The finer sweep found nothing the coarser one missed \\u2014 on this window the harvest is complete, and the approximate hit count is a reporting artefact rather than a gap in the corpus.\"\n}\nfine disti",
+   "id": "check_sweep_completeness",
+   "invocation": "(cd drafts/2026-08-11-the-arm-that-was-missing && python3 check_sweep_completeness.py)",
+   "network_calls": 24,
+   "network_head": [
+    "urlopen https://hn.algolia.com/api/v1/search_by_date?query=tiktok.com&tags=comment&hitsPerPage=100&page=0&numericFilters=created_at_i%3E%3D1710307200%2Ccreated_at_i%3C1786000000",
+    "connect 127.0.0.1:43053",
+    "urlopen https://hn.algolia.com/api/v1/search_by_date?query=tiktok.com&tags=comment&hitsPerPage=100&page=1&numericFilters=created_at_i%3E%3D1710307200%2Ccreated_at_i%3C1786000000",
+    "connect 127.0.0.1:43053",
+    "urlopen https://hn.algolia.com/api/v1/search_by_date?query=tiktok.com&tags=comment&hitsPerPage=100&page=2&numericFilters=created_at_i%3E%3D1710307200%2Ccreated_at_i%3C1786000000",
+    "connect 127.0.0.1:43053"
+   ],
+   "os_open_used": false,
+   "partially_observed": false,
+   "record_changed_by_the_check": [],
+   "repo_dirs_listed": [],
+   "repo_files_read": 0,
+   "repo_files_written": [
+    "drafts/2026-08-11-the-arm-that-was-missing/sweep-completeness.json"
+   ],
+   "role": "completeness of a probe sweep against its manifest",
+   "runs": 3,
+   "stderr_shas": [
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14",
+    "e3b0c44298fc1c14"
+   ],
+   "stdout_shas": [
+    "86439c60810cea52",
+    "86439c60810cea52",
+    "86439c60810cea52"
+   ],
+   "tracer_error": null,
+   "verdict_containment": "MEASURES-A-LIVE-SERVICE-NOT-THE-RECORD",
+   "verdict_convergence": "CONVERGES",
+   "writes_removed_before_exit": [],
+   "writes_still_present_at_exit": [
+    "drafts/2026-08-11-the-arm-that-was-missing/sweep-completeness.json"
+   ],
+   "written_and_also_read": [],
+   "written_into_an_enumerated_directory": [],
+   "written_state_after": [
+    {
+     "path": "drafts/2026-08-11-the-arm-that-was-missing/sweep-completeness.json",
+     "sha_after": "e678ed00d2453c4921fc6108712cac0ca42f3a30290797ebbce23a8b46850f85"
+    }
+   ]
+  }
+ ],
+ "convergence_counts": {
+  "CONVERGES": 11,
+  "CONVERGES-VACUOUSLY": 1
+ },
+ "counts": {
+  "MEASURES-A-LIVE-SERVICE-NOT-THE-RECORD": 1,
+  "OUTPUT-INSIDE-SEARCH-SPACE": 1,
+  "PARTIALLY-OBSERVED": 1,
+  "READ-ONLY": 7,
+  "TRANSIENT-WRITE-INSIDE-SEARCH-SPACE": 1,
+  "WRITES-OUTSIDE-SEARCH-SPACE": 1
+ },
+ "generated_by": "tools/convergence/audit_checks.py",
+ "population": 12,
+ "runs_per_check": 3,
+ "session": 133
+}

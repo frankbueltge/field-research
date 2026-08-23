@@ -307,11 +307,24 @@ def main(argv):
     if "--inject" in argv:
         inject = os.path.abspath(argv[argv.index("--inject") + 1])
 
+    # --master DIR runs against an already-frozen copy instead of copying the live tree.
+    # This exists because the first replicated contamination run was invalid: each pass
+    # re-copied the LIVE repository, and this session wrote `INCREMENT-21.md` into the arc
+    # directory between two of them. `record_ceiling_check.py` counts words in that
+    # directory, so its report moved — and the test reported it as "unstable on its own"
+    # when in fact the record had changed underneath, which is the one precondition the
+    # whole test rests on and the one thing it was not checking. A test for "run it twice
+    # against an unchanged record" that never verified the record was unchanged is the
+    # same shape of defect as the ones it hunts.
+    frozen_master = None
+    if "--master" in argv:
+        frozen_master = os.path.abspath(argv[argv.index("--master") + 1])
+
     scratch = tempfile.mkdtemp(prefix="convergence-audit-")
     master = os.path.join(scratch, "master")
     # The master copy carries the working tree as this session found it, .git included so
     # that checks shelling out to git see a real repository.
-    shutil.copytree(REPO, master, symlinks=True)
+    shutil.copytree(frozen_master or REPO, master, symlinks=True)
     if inject:
         dest = os.path.join(master, "tools", "convergence", "convergence-audit-133.json")
         os.makedirs(os.path.dirname(dest), exist_ok=True)
