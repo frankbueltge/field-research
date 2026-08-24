@@ -1,0 +1,27 @@
+{
+  "classifier": "C",
+  "labels": {
+    "F011": {"label": "B", "why": "Claimed audit result recomputed by rerunning the named script; it differed."},
+    "F012": {"label": "B", "why": "Checked 'no file rewritten' claim against version history of named files."},
+    "F013": {"label": "B", "why": "Citation checked: quote attributed to E6 traced to CONDITIONS-120.md instead."},
+    "F014": {"label": "A", "why": "Read existing run records, previously unexamined, finding baseline path absent."},
+    "F015": {"label": "D", "why": "Objection that a number lacks citation; no material consulted, pure observation."},
+    "F016": {"label": "D", "why": "Conceptual argument about test type (change-detector vs test), no new material."},
+    "F017": {"label": "B", "why": "Comment's stated duration checked against current actual value; found stale."},
+    "F018": {"label": "C", "why": "Rebuild executed/observed; non-determinism traced to clock, only visible by running."},
+    "F019": {"label": "B", "why": "Claim's source traced/checked and found to exist in a different location."},
+    "F020": {"label": "B", "why": "Claimed figure count checked against table/list, given a dated mismatch."},
+    "F021": {"label": "A", "why": "Held list read closely, revealing it mixes two different denominators internally."},
+    "F022": {"label": "B", "why": "'Defensible' justification checked against the actually shipped table; found false."},
+    "F023": {"label": "A", "why": "Held sensitivity data read, showing '26 days' is the most favorable pick."},
+    "F024": {"label": "B", "why": "Assertion's certifying claim checked against code; tests a literal, not the type."},
+    "F025": {"label": "B", "why": "Threshold's stated applicability checked against where it is actually applied; false."},
+    "F026": {"label": "A", "why": "Column data the report omitted/declined to analyse was read, correction computed."},
+    "F027": {"label": "B", "why": "Self-audit's stated counts checked against what the named tool actually returns."},
+    "F028": {"label": "D", "why": "Argument that a figure lacking an interval is the one called defensible."},
+    "F029": {"label": "A", "why": "Run status/records read, revealing day 6 has not run yet."},
+    "F030": {"label": "B", "why": "§6's list checked against actual LIMITS.md file; found out of date."},
+    "F031": {"label": "C", "why": "Code run under -O flag, observing both asserts vanish; behavior only seen executing."},
+    "F032": {"label": "C", "why": "Tool run on an uncovered baseline, observed to return 0.0000 as agreement."}
+  }
+}

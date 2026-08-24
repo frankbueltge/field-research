@@ -1,0 +1,414 @@
+{
+ "classifier": "A",
+ "provenance": "round 1 labels of 2026-08-24, re-keyed from F-ids to file#row after the population was repaired; not one label was changed",
+ "labels": {
+  "CONDITIONS-121.md#1": {
+   "label": "E",
+   "why": "Bundles selftest run, recount, and gaps; no single determinable action."
+  },
+  "CONDITIONS-121.md#2": {
+   "label": "C",
+   "why": "Checksums and mis-parses verified by actually running v0.1."
+  },
+  "CONDITIONS-121.md#3": {
+   "label": "C",
+   "why": "Re-ran to observe byte-identical output on repeat execution."
+  },
+  "CONDITIONS-121.md#4": {
+   "label": "A",
+   "why": "Reading held regex code reveals VIDEO_PATH_RE is domain-blind."
+  },
+  "CONDITIONS-121.md#5": {
+   "label": "B",
+   "why": "Checked stated default baseline path against actual bundle layout."
+  },
+  "CONDITIONS-121.md#6": {
+   "label": "B",
+   "why": "Recomputed figures in named JSON file to verify correctness."
+  },
+  "CONDITIONS-121.md#7": {
+   "label": "B",
+   "why": "Checked stated timestamps against each other; found impossible arithmetic."
+  },
+  "CONDITIONS-121.md#8": {
+   "label": "B",
+   "why": "Checked stated timing comparison against what it actually represents."
+  },
+  "CONDITIONS-121.md#9": {
+   "label": "B",
+   "why": "Checked stated ratio against underlying reconcilable data, unshown."
+  },
+  "CONDITIONS-121.md#10": {
+   "label": "B",
+   "why": "Verified named citation, times, file identity, mapping claims."
+  },
+  "CONDITIONS-123.md#1": {
+   "label": "B",
+   "why": "Checked stated 20-identifier claim against actual returned codes."
+  },
+  "CONDITIONS-123.md#2": {
+   "label": "B",
+   "why": "Checked stated logging claim against actual baseline run files."
+  },
+  "CONDITIONS-123.md#3": {
+   "label": "B",
+   "why": "Checked stated check claim; no such check exists in code."
+  },
+  "CONDITIONS-123.md#4": {
+   "label": "B",
+   "why": "Checked stated identifier claim against actual file contents."
+  },
+  "CONDITIONS-123.md#5": {
+   "label": "A",
+   "why": "Reading held manifest reveals unfilled TEMPLATE placeholder as run_id."
+  },
+  "CONDITIONS-123.md#6": {
+   "label": "B",
+   "why": "Checked stated count (21) against true value (37)."
+  },
+  "CONDITIONS-123.md#7": {
+   "label": "A",
+   "why": "Reading held records shows no trace of a correction event."
+  },
+  "CONDITIONS-123.md#8": {
+   "label": "A",
+   "why": "Reading a carried page against surrounding bundle reveals contradictions."
+  },
+  "CONDITIONS-123.md#9": {
+   "label": "A",
+   "why": "Reading held audit records shows FIGURES.md was never audited."
+  },
+  "CONDITIONS-123.md#10": {
+   "label": "A",
+   "why": "Reading auditor's logic reveals it is blind to number words."
+  },
+  "CONDITIONS-123.md#11": {
+   "label": "A",
+   "why": "Reading both documents shows caveat misplaced away from letter."
+  },
+  "CONDITIONS-123.md#12": {
+   "label": "A",
+   "why": "Reading README and VERSIONS shows circular pointer between them."
+  },
+  "CONDITIONS-123.md#13": {
+   "label": "A",
+   "why": "Reading classifier code shows it is file-wide, not field-wide."
+  },
+  "CONDITIONS-123.md#14": {
+   "label": "A",
+   "why": "Reading FIGURES.md shows two differing unexplained INDETERMINATE counts."
+  },
+  "CONDITIONS-123.md#15": {
+   "label": "A",
+   "why": "Reading held JSON reveals a leftover scratch path from a trial."
+  },
+  "CONDITIONS-123.md#16": {
+   "label": "A",
+   "why": "Reading receiver-facing page shows neighbouring paper still unnamed."
+  },
+  "CONDITIONS-124.md#1": {
+   "label": "A",
+   "why": "Cross-reading erratum file against registry/reason table shows omission."
+  },
+  "CONDITIONS-124.md#2": {
+   "label": "A",
+   "why": "Reading gate code shows it lacks required failure conditions."
+  },
+  "CONDITIONS-124.md#3": {
+   "label": "B",
+   "why": "Checked core claim's guarantee against the code that delivers it."
+  },
+  "CONDITIONS-124.md#4": {
+   "label": "A",
+   "why": "Reading held file shows unresolved merge-conflict markers committed."
+  },
+  "CONDITIONS-125.md#1": {
+   "label": "B",
+   "why": "Checked VERSIONS.md's claim against actual coverage/enforcement evidence."
+  },
+  "CONDITIONS-125.md#2": {
+   "label": "B",
+   "why": "Checked VERSIONS.md's coverage claim by running errata_check.coverage()."
+  },
+  "CONDITIONS-125.md#3": {
+   "label": "D",
+   "why": "Argues a sampling-frame confound from citation age, no new artifact."
+  },
+  "CONDITIONS-125.md#4": {
+   "label": "B",
+   "why": "Checked LETTER.md's locality claim against actual shipped files."
+  },
+  "CONDITIONS-125.md#5": {
+   "label": "B",
+   "why": "Checked FIGURES.md's cross-reference against real provenance filenames."
+  },
+  "CONDITIONS-125.md#6": {
+   "label": "B",
+   "why": "Checked stale sha256 claim against actual corrections.json content."
+  },
+  "CONDITIONS-125.md#7": {
+   "label": "A",
+   "why": "Analyzing held series data reveals stronger unused indirect evidence."
+  },
+  "CONDITIONS-126.md#1": {
+   "label": "C",
+   "why": "Executed the printed command exactly; it errored as run."
+  },
+  "CONDITIONS-126.md#2": {
+   "label": "B",
+   "why": "Checked manifest's self-hash claim against actual file hashes."
+  },
+  "CONDITIONS-126.md#3": {
+   "label": "C",
+   "why": "Observed bytecode files written into bundle after freeze, timestamped."
+  },
+  "CONDITIONS-126.md#4": {
+   "label": "A",
+   "why": "Reading bundle and constitution shows no contactable named person."
+  },
+  "CONDITIONS-126.md#5": {
+   "label": "D",
+   "why": "Argues apparatus and undefined vocabulary crowd out the finding."
+  },
+  "CONDITIONS-126.md#6": {
+   "label": "C",
+   "why": "Tried the 'check it yourself' invitation; still not exercisable."
+  },
+  "CONDITIONS-127.md#1": {
+   "label": "B",
+   "why": "Checked hard-coded tool passage against the actual raw record."
+  },
+  "CONDITIONS-127.md#2": {
+   "label": "B",
+   "why": "Checked version note's claim against lines later in same file."
+  },
+  "CONDITIONS-127.md#3": {
+   "label": "B",
+   "why": "Checked letter's file description against the actual code file."
+  },
+  "CONDITIONS-127.md#4": {
+   "label": "B",
+   "why": "Checked letter's criterion claim against receiver's own report wording."
+  },
+  "CONDITIONS-127.md#5": {
+   "label": "A",
+   "why": "States the object never read its own already-held best evidence."
+  },
+  "CONDITIONS-127.md#6": {
+   "label": "B",
+   "why": "Checked letter's either/or framing against its own earlier text."
+  },
+  "CONDITIONS-127.md#7": {
+   "label": "A",
+   "why": "Reading own arc record refutes assumed retrievability stability."
+  },
+  "CONDITIONS-127.md#8": {
+   "label": "C",
+   "why": "Ran printed command; observed IP disclosure via vantage lookup."
+  },
+  "CONDITIONS-127.md#9": {
+   "label": "A",
+   "why": "Reading build code shows it stamps rather than regenerates."
+  },
+  "CONDITIONS-127.md#10": {
+   "label": "C",
+   "why": "Reproduced by running letter's command in a clean copy."
+  },
+  "CONDITIONS-127.md#11": {
+   "label": "B",
+   "why": "Checked self-containment claim against actual directory contents."
+  },
+  "CONDITIONS-127.md#12": {
+   "label": "A",
+   "why": "Reading the object shows no contact channel beyond a URL."
+  },
+  "CONDITIONS-127.md#13": {
+   "label": "C",
+   "why": "Reader study observed none of three readers could identify 'you'."
+  },
+  "CONDITIONS-127.md#14": {
+   "label": "B",
+   "why": "Checked five-minute condition and word count against actual length."
+  },
+  "CONDITIONS-127.md#15": {
+   "label": "E",
+   "why": "Bundles nine unrelated non-blocking checks of differing kinds."
+  },
+  "CONDITIONS-128.md#1": {
+   "label": "B",
+   "why": "Checked letter's novelty claim against receiver's own chart data."
+  },
+  "CONDITIONS-128.md#2": {
+   "label": "B",
+   "why": "Checked 'recorded nothing' claim against the sources it conflates."
+  },
+  "CONDITIONS-128.md#3": {
+   "label": "C",
+   "why": "Ran printed command; output file revealed undisclosed creator handles."
+  },
+  "CONDITIONS-128.md#4": {
+   "label": "B",
+   "why": "Checked cadence claim against the file the letter itself cites."
+  },
+  "CONDITIONS-128.md#5": {
+   "label": "B",
+   "why": "Checked reproducibility claim against directory; found third missing file."
+  },
+  "CONDITIONS-128.md#6": {
+   "label": "B",
+   "why": "Checked letter's day-count prose against JSON's own passes field."
+  },
+  "CONDITIONS-128.md#7": {
+   "label": "B",
+   "why": "Checked printed byte count against actual file size on disk."
+  },
+  "CONDITIONS-128.md#8": {
+   "label": "A",
+   "why": "Reading window/reservation code shows a blind spot in timing."
+  },
+  "CONDITIONS-128.md#9": {
+   "label": "B",
+   "why": "Recomputed word count against stated five-minute/word claim."
+  },
+  "CONDITIONS-128.md#10": {
+   "label": "C",
+   "why": "Fetched receiver's robots.txt; found it disallowed and never checked."
+  },
+  "CONDITIONS-128.md#11": {
+   "label": "B",
+   "why": "Checked letter's dashboard claim against the domain it addresses."
+  },
+  "CONDITIONS-128.md#12": {
+   "label": "A",
+   "why": "Reading held deviations log shows contradictory dates already recorded."
+  },
+  "CONDITIONS-128.md#13": {
+   "label": "A",
+   "why": "Reading reader-study data against letter text shows caveat present."
+  },
+  "CONDITIONS-128.md#14": {
+   "label": "E",
+   "why": "Bundles eight unrelated non-blocking findings of differing kinds."
+  },
+  "CONDITIONS-128.md#15": {
+   "label": "E",
+   "why": "Bundles five heterogeneous handed-over items for reproduction."
+  },
+  "CONDITIONS-129.md#1": {
+   "label": "A",
+   "why": "Reading held condition/verdict files shows uncorrected undercount remains."
+  },
+  "CONDITIONS-129.md#2": {
+   "label": "B",
+   "why": "Checked attribution claim against the named file; absent there."
+  },
+  "CONDITIONS-129.md#3": {
+   "label": "B",
+   "why": "Checked attribution claim against named file; word absent there."
+  },
+  "CONDITIONS-129.md#4": {
+   "label": "B",
+   "why": "Checked citations against named file; cited items don't exist."
+  },
+  "CONDITIONS-129.md#5": {
+   "label": "B",
+   "why": "Recomputed stated timestamp arithmetic; found it wrong."
+  },
+  "CONDITIONS-129.md#6": {
+   "label": "A",
+   "why": "Reading records shows true cause differs from stated markup cause."
+  },
+  "CONDITIONS-129.md#7": {
+   "label": "B",
+   "why": "Checked attributed totals against the reader's actual statement."
+  },
+  "CONDITIONS-129.md#8": {
+   "label": "D",
+   "why": "Argues a single confounded instance can't answer the question."
+  },
+  "CONDITIONS-129.md#9": {
+   "label": "D",
+   "why": "Argues the bet's limb was never scored against its wording."
+  },
+  "CONDITIONS-129.md#10": {
+   "label": "A",
+   "why": "Reading increment file and listing shows Day 10 silently omitted."
+  },
+  "CONDITIONS-129.md#11": {
+   "label": "A",
+   "why": "Reading offer/ directory and licence confirms nothing forbidden occurred."
+  },
+  "CONDITIONS-129.md#12": {
+   "label": "C",
+   "why": "Rendering the page shows dot separators display as spaces."
+  },
+  "CONDITIONS-129.md#13": {
+   "label": "C",
+   "why": "Ran a self-check; confirmed no run spans a gap date."
+  },
+  "CONDITIONS-131.md#1": {
+   "label": "D",
+   "why": "Argues rescheduling permission makes the stop inconsistently applied."
+  },
+  "CONDITIONS-131.md#2": {
+   "label": "A",
+   "why": "Reading extractor code shows it can't parse 'UTC' format."
+  },
+  "CONDITIONS-131.md#3": {
+   "label": "D",
+   "why": "Argues a causal claim was asserted without being tested."
+  },
+  "CONDITIONS-131.md#4": {
+   "label": "D",
+   "why": "Argues the parallel drops the element that made receiver's case matter."
+  },
+  "CONDITIONS-131.md#5": {
+   "label": "B",
+   "why": "Checked compliance report's claim against its own table above."
+  },
+  "CONDITIONS-131.md#6": {
+   "label": "B",
+   "why": "Recomputed disputed counts; found independent recomputation was wrong."
+  },
+  "CONDITIONS-131.md#7": {
+   "label": "A",
+   "why": "Reading increment file shows about half is extraction defects."
+  },
+  "CONDITIONS-131.md#8": {
+   "label": "D",
+   "why": "Argues the better use of session time was doing less."
+  },
+  "CONDITIONS-133.md#1": {
+   "label": "A",
+   "why": "Reading held session record shows an on-point instrument omitted."
+  },
+  "CONDITIONS-133.md#2": {
+   "label": "A",
+   "why": "Reading guard code reveals a second, uncleaned write path."
+  },
+  "CONDITIONS-133.md#3": {
+   "label": "B",
+   "why": "Checked population table against the JSON it cites as source."
+  },
+  "CONDITIONS-133.md#4": {
+   "label": "B",
+   "why": "Checked claim about checks against actual code's narrower scope."
+  },
+  "CONDITIONS-133.md#5": {
+   "label": "B",
+   "why": "Checked claim about guard against the actual two-line code."
+  },
+  "CONDITIONS-133.md#6": {
+   "label": "C",
+   "why": "Ran tracer; observed it double-counting one subprocess as two."
+  },
+  "CONDITIONS-133.md#7": {
+   "label": "A",
+   "why": "Reading session history shows this is the third such session."
+  },
+  "CONDITIONS-133.md#8": {
+   "label": "B",
+   "why": "Checked 'byte-identical' claim against what instrument actually compares."
+  }
+ }
+}

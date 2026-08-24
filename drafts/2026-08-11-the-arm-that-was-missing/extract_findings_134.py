@@ -42,6 +42,29 @@ ROLE_TOKENS = [
 MASK = "[ROLE]"
 
 
+def role_from_heading(heading):
+    """Some finding tables carry no source column; the section heading above them names the role.
+
+    ADDED AT SESSION 134 AFTER THE VERIFIER FOUND THE POPULATION SHORT (`ERRATA-134.md` E45).
+    `CONDITIONS-122.md` files its twenty-two findings under `## Verifier findings` and
+    `## Interlocutor findings`, with row ids `V1..V9` and `I1..I13` and no source column. The
+    first version of this script required digit-only row ids and dropped the whole file in
+    silence. Both halves of that defect are fixed here: alphanumeric ids are accepted, and where
+    no source column exists the role is read from the nearest preceding `## … findings` heading.
+    The row id is NOT used to infer the role — a prefix letter is a coincidence of one file's
+    convention, and reading roles out of it would be this practice guessing.
+    """
+    if not heading:
+        return None
+    h = heading.lower()
+    if "finding" not in h:
+        return None
+    for name in ("verifier", "interlocutor", "skeptic", "reader", "panel"):
+        if name in h:
+            return h
+    return None
+
+
 def normalise_role(raw):
     """Map a table's source/from cell onto the pre-registration's role vocabulary."""
     if raw is None:
@@ -50,16 +73,27 @@ def normalise_role(raw):
     t = re.sub(r"[*`]", "", t)
     if not t.strip() or t.strip() in {"-", "--", "—"}:
         return "UNATTRIBUTED"
+    # FIXED AT SESSION 134, CHARGE 2 OF `INTERLOCUTOR-134.md` (`ERRATA-134.md` E46). The first
+    # version was a first-match-wins chain with `interlocutor` tested before `verifier`, and
+    # nothing disclosed it. Seven source cells in this population name more than one role; one of
+    # them, `CONDITIONS-123.md:49` ("Verifier 9, Interlocutor"), was silently recoded to a single
+    # role and sat inside a headline count. A cell naming two roles is now JOINT and is counted as
+    # neither. Order-dependence is gone: every name is tested, none wins by position.
+    hits = []
     if "panel" in t or "reader" in t:
-        return "READER_PANEL"
+        hits.append("READER_PANEL")
     if "interlocutor" in t:
-        return "INTERLOCUTOR"
+        hits.append("INTERLOCUTOR")
     if "verifier" in t:
-        return "VERIFIER"
+        hits.append("VERIFIER")
     if "skeptic" in t:
-        return "SKEPTIC"
+        hits.append("SKEPTIC")
     if "this practice" in t or "this session" in t or "conductor" in t or "ourselves" in t:
-        return "PRACTICE_SELF"
+        hits.append("PRACTICE_SELF")
+    if len(hits) > 1:
+        return "JOINT:" + "+".join(sorted(hits))
+    if hits:
+        return hits[0]
     return "OTHER"
 
 
@@ -89,8 +123,11 @@ def extract_file(path):
     with open(path, encoding="utf-8") as fh:
         lines = fh.readlines()
     i = 0
+    heading = None
     while i < len(lines):
         line = lines[i]
+        if line.lstrip().startswith("#"):
+            heading = line.lstrip("# ").strip()
         if line.lstrip().startswith("|") and not is_sep(line):
             header = [c.lower() for c in split_row(line)]
             if any(h in ("finding", "findings") for h in header) and i + 1 < len(lines) \
@@ -101,14 +138,19 @@ def extract_file(path):
                 j = i + 2
                 while j < len(lines) and lines[j].lstrip().startswith("|"):
                     cells = split_row(lines[j])
-                    if len(cells) > fi and re.match(r"^\**\d+\**$", cells[0]):
+                    # Row ids are alphanumeric: `1`, `12`, `V3`, `I11`. Fixed at session 134
+                    # after the Verifier found the digit-only form dropped a whole file.
+                    if len(cells) > fi and re.match(r"^\**[A-Za-z]{0,2}\d+\**$", cells[0]):
                         raw_role = cells[si] if (si is not None and len(cells) > si) else None
+                        if raw_role is None:
+                            raw_role = role_from_heading(heading)
                         text = cells[fi]
                         blinded, subs = blind(text)
                         records.append({
                             "file": os.path.basename(path),
                             "line": j + 1,
                             "row": cells[0].strip("*"),
+                            "key": f"{os.path.basename(path)}#{cells[0].strip('*')}",
                             "role_raw": raw_role,
                             "role": normalise_role(raw_role),
                             "finding": text,
@@ -144,7 +186,7 @@ def main():
         "mask_tokens": ROLE_TOKENS,
         "records": records,
     }
-    out = os.path.join(HERE, "findings-134.json")
+    out = os.path.join(HERE, sys.argv[1] if len(sys.argv) > 1 else "findings-134.json")
     with open(out, "w", encoding="utf-8") as fh:
         json.dump(payload, fh, indent=1, ensure_ascii=False)
     digest = hashlib.sha256(json.dumps(payload, sort_keys=True,

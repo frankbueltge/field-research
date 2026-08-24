@@ -1,0 +1,404 @@
+{
+ "generated_by": "score_findings_134b.py",
+ "supersedes": "score_findings_134.py and score-134.json",
+ "preregistration": "PREREGISTRATION-134.md",
+ "acted_on": [
+  "VERIFIER-134.md blocking 1 and 2",
+  "INTERLOCUTOR-134.md charges 1, 2, 3, 4, 8"
+ ],
+ "population": {
+  "file": "findings-134c.json",
+  "n": 124,
+  "files": [
+   "CONDITIONS-121.md",
+   "CONDITIONS-122.md",
+   "CONDITIONS-123.md",
+   "CONDITIONS-124.md",
+   "CONDITIONS-125.md",
+   "CONDITIONS-126.md",
+   "CONDITIONS-127.md",
+   "CONDITIONS-128.md",
+   "CONDITIONS-129.md",
+   "CONDITIONS-131.md",
+   "CONDITIONS-133.md"
+  ],
+  "by_role": {
+   "INTERLOCUTOR": 57,
+   "JOINT:INTERLOCUTOR+READER_PANEL": 1,
+   "JOINT:INTERLOCUTOR+VERIFIER": 4,
+   "JOINT:PRACTICE_SELF+READER_PANEL": 1,
+   "OTHER": 1,
+   "PRACTICE_SELF": 4,
+   "READER_PANEL": 7,
+   "VERIFIER": 49
+  },
+  "sha256_of_payload": "ce7c8c394eb2f8caf8d31f89bc7fffb9c4fd0d1d6fc4bac7b835c6104772cb7d"
+ },
+ "rounds": {
+  "round1": {
+   "classifiers": [
+    "A",
+    "B"
+   ],
+   "n": 102,
+   "raw_agreement": 0.803921568627451,
+   "a_agreed": [
+    "CONDITIONS-121.md#4",
+    "CONDITIONS-123.md#10",
+    "CONDITIONS-123.md#12",
+    "CONDITIONS-123.md#13",
+    "CONDITIONS-123.md#14",
+    "CONDITIONS-123.md#15",
+    "CONDITIONS-123.md#16",
+    "CONDITIONS-123.md#5",
+    "CONDITIONS-123.md#7",
+    "CONDITIONS-123.md#8",
+    "CONDITIONS-123.md#9",
+    "CONDITIONS-124.md#1",
+    "CONDITIONS-124.md#2",
+    "CONDITIONS-124.md#4",
+    "CONDITIONS-125.md#7",
+    "CONDITIONS-126.md#4",
+    "CONDITIONS-128.md#12",
+    "CONDITIONS-128.md#8",
+    "CONDITIONS-129.md#1",
+    "CONDITIONS-129.md#10",
+    "CONDITIONS-131.md#7",
+    "CONDITIONS-133.md#1",
+    "CONDITIONS-133.md#2"
+   ],
+   "e_either": [
+    "CONDITIONS-121.md#1",
+    "CONDITIONS-127.md#15",
+    "CONDITIONS-127.md#5",
+    "CONDITIONS-128.md#14",
+    "CONDITIONS-128.md#15"
+   ]
+  },
+  "round2": {
+   "classifiers": [
+    "C",
+    "D"
+   ],
+   "n": 22,
+   "raw_agreement": 0.7272727272727273,
+   "a_agreed": [
+    "CONDITIONS-122.md#I10",
+    "CONDITIONS-122.md#V4"
+   ],
+   "e_either": []
+  }
+ },
+ "kill_conditions": {
+  "K1": {
+   "round1": {
+    "value": 0.803921568627451,
+    "failed": false
+   },
+   "round2": {
+    "value": 0.7272727272727273,
+    "failed": false
+   },
+   "pooled": {
+    "value": 0.7903225806451613,
+    "failed": false
+   }
+  },
+  "K2": {
+   "attributed": 117,
+   "failed": false
+  },
+  "K3": {
+   "e_either": 5,
+   "of": 124,
+   "failed": false,
+   "keys": [
+    "CONDITIONS-121.md#1",
+    "CONDITIONS-127.md#15",
+    "CONDITIONS-127.md#5",
+    "CONDITIONS-128.md#14",
+    "CONDITIONS-128.md#15"
+   ]
+  },
+  "K4": "no significance test is computed anywhere in this script",
+  "K5": "the disposition column was never shown to any classifier"
+ },
+ "P1_exclusivity": {
+  "refuted": true,
+  "n_non_panel_A": 22,
+  "non_panel_A": [
+   {
+    "key": "CONDITIONS-121.md#4",
+    "role": "VERIFIER",
+    "finding": "`tally`, `--confirm 0`, `read_vantage`, `baseline_currency` all correct — **but `VIDEO_PATH_RE` is domain-blind**"
+   },
+   {
+    "key": "CONDITIONS-122.md#I10",
+    "role": "INTERLOCUTOR",
+    "finding": "day 6 has not run and the ordering condition is not discharged"
+   },
+   {
+    "key": "CONDITIONS-122.md#V4",
+    "role": "VERIFIER",
+    "finding": "the live run records no baseline path"
+   },
+   {
+    "key": "CONDITIONS-123.md#10",
+    "role": "OTHER",
+    "finding": "The prose auditor reads digits and is blind to number words"
+   },
+   {
+    "key": "CONDITIONS-123.md#12",
+    "role": "INTERLOCUTOR",
+    "finding": "The status pointer is circular: README points at VERSIONS, VERSIONS points at README"
+   },
+   {
+    "key": "CONDITIONS-123.md#13",
+    "role": "VERIFIER",
+    "finding": "The rebuild audit's classifier is file-wide for `gradient-test.json`, not field-wide"
+   },
+   {
+    "key": "CONDITIONS-123.md#14",
+    "role": "VERIFIER",
+    "finding": "`FIGURES.md`'s two INDETERMINATE counts differ by scope, unexplained"
+   },
+   {
+    "key": "CONDITIONS-123.md#15",
+    "role": "VERIFIER",
+    "finding": "`prose-audit-123.json` records a scratch path from a trial build"
+   },
+   {
+    "key": "CONDITIONS-123.md#5",
+    "role": "VERIFIER",
+    "finding": "An unfilled `TEMPLATE` placeholder shipped as a `run_id` in the manifest"
+   },
+   {
+    "key": "CONDITIONS-123.md#7",
+    "role": "INTERLOCUTOR",
+    "finding": "The 0.14 pp across-day spread ships with no trace of the correction that found it 2.35× inflated"
+   },
+   {
+    "key": "CONDITIONS-123.md#8",
+    "role": "INTERLOCUTOR",
+    "finding": "A carried page contradicts the bundle around it: stale withheld banner; no version/`--confirm` disclosure; a cross-reference that now lands on the wrong topic"
+   },
+   {
+    "key": "CONDITIONS-123.md#9",
+    "role": "INTERLOCUTOR",
+    "finding": "`FIGURES.md` is generated prose and was never passed to the prose audit"
+   },
+   {
+    "key": "CONDITIONS-124.md#1",
+    "role": "VERIFIER",
+    "finding": "`ERRATA-124.md:E20` is a published erratum, in neither the registry nor the reason table"
+   },
+   {
+    "key": "CONDITIONS-124.md#2",
+    "role": "VERIFIER",
+    "finding": "The build `--audit` gate does not fail on `unaccounted_published_ids` or `broken_mappings`"
+   },
+   {
+    "key": "CONDITIONS-124.md#4",
+    "role": "INTERLOCUTOR",
+    "finding": "`DAY6-2026-08-16.md` is **committed with unresolved merge-conflict markers** (`<<<<<<< / ======= / >>>>>>>`), carrying sessions 122's and 123's accounts of the same run unreconciled"
+   },
+   {
+    "key": "CONDITIONS-125.md#7",
+    "role": "INTERLOCUTOR",
+    "finding": "**A finding of ours the bundle does not make.** Of the non-control panel (3,620 identifiers), only 7 ever show more than one determinate state across six independent days, and **412 of the 446 ever-ab"
+   },
+   {
+    "key": "CONDITIONS-128.md#8",
+    "role": "INTERLOCUTOR",
+    "finding": "**D26's refusal is blind during the reservation hold.** `window_status` detects an in-flight probe only through a `.partial`, and `run_window_day.py` reserves ~4 minutes before it writes one; the chec"
+   },
+   {
+    "key": "CONDITIONS-129.md#1",
+    "role": "INTERLOCUTOR",
+    "finding": "**§7's corrections stopped at the least consequential copies of the error.** The undercount sits uncorrected in `CONDITIONS-128.md` finding 1 — the formal verdict ledger, marked ACCEPTED and REPRODUCE"
+   },
+   {
+    "key": "CONDITIONS-129.md#10",
+    "role": "INTERLOCUTOR",
+    "finding": "**Day 10 was running throughout and `INCREMENT-19.md` never mentions it**; no `DAY10-*.md` exists, unlike days 5, 6, 8, 9. Not a stop violation — a silence."
+   },
+   {
+    "key": "CONDITIONS-131.md#7",
+    "role": "INTERLOCUTOR",
+    "finding": "**Roughly half of `INCREMENT-20.md` is this practice's own extraction defects and a scoreboard against its own checker — the same charge session 129 drew.**"
+   },
+   {
+    "key": "CONDITIONS-133.md#1",
+    "role": "INTERLOCUTOR",
+    "finding": "**The population omits `audit_instrument.py`** — a live, self-referential instrument in this same arc, whose own record says session 120 caught it silently overwriting a dated evidence file. The incre"
+   },
+   {
+    "key": "CONDITIONS-133.md#2",
+    "role": "INTERLOCUTOR",
+    "finding": "**`guard_claims.py --check` has a second, data-dependent write path** — on the FAIL branch the same invocation writes `guard-claims-expected.txt` into the arc directory with no cleanup. \"Exactly one\" "
+   }
+  ],
+  "certified_by_the_adversary": {
+   "n": 6,
+   "keys": [
+    "CONDITIONS-123.md#12",
+    "CONDITIONS-123.md#15",
+    "CONDITIONS-124.md#4",
+    "CONDITIONS-129.md#1",
+    "CONDITIONS-129.md#10",
+    "CONDITIONS-133.md#1"
+   ],
+   "note": "the subset INTERLOCUTOR-134.md charge 4 names as surviving a hostile reading with no real argument against A"
+  }
+ },
+ "P2_minority": {
+  "a_share": 0.21008403361344538,
+  "held": true,
+  "denominator": 119
+ },
+ "P4_rate_comparison": {
+  "STATUS": "WITHDRAWN BY THIS SESSION -- see INCREMENT-22.md. The table below is published as the evidence for the withdrawal, not as a result.",
+  "base": {
+   "INTERLOCUTOR": {
+    "n": 55,
+    "a": 13,
+    "rate": 0.23636363636363636
+   },
+   "JOINT:INTERLOCUTOR+READER_PANEL": {
+    "n": 1,
+    "a": 0,
+    "rate": 0.0
+   },
+   "JOINT:INTERLOCUTOR+VERIFIER": {
+    "n": 3,
+    "a": 1,
+    "rate": 0.3333333333333333
+   },
+   "JOINT:PRACTICE_SELF+READER_PANEL": {
+    "n": 1,
+    "a": 1,
+    "rate": 1.0
+   },
+   "OTHER": {
+    "n": 1,
+    "a": 1,
+    "rate": 1.0
+   },
+   "PRACTICE_SELF": {
+    "n": 4,
+    "a": 0,
+    "rate": 0.0
+   },
+   "READER_PANEL": {
+    "n": 7,
+    "a": 1,
+    "rate": 0.14285714285714285
+   },
+   "VERIFIER": {
+    "n": 47,
+    "a": 8,
+    "rate": 0.1702127659574468
+   }
+  },
+  "base_ranking": [
+   "INTERLOCUTOR",
+   "VERIFIER",
+   "READER_PANEL"
+  ],
+  "all_contested_pruned": {
+   "INTERLOCUTOR": {
+    "n": 55,
+    "a": 8,
+    "rate": 0.14545454545454545
+   },
+   "JOINT:INTERLOCUTOR+READER_PANEL": {
+    "n": 1,
+    "a": 0,
+    "rate": 0.0
+   },
+   "JOINT:INTERLOCUTOR+VERIFIER": {
+    "n": 3,
+    "a": 1,
+    "rate": 0.3333333333333333
+   },
+   "JOINT:PRACTICE_SELF+READER_PANEL": {
+    "n": 1,
+    "a": 1,
+    "rate": 1.0
+   },
+   "OTHER": {
+    "n": 1,
+    "a": 0,
+    "rate": 0.0
+   },
+   "PRACTICE_SELF": {
+    "n": 4,
+    "a": 0,
+    "rate": 0.0
+   },
+   "READER_PANEL": {
+    "n": 7,
+    "a": 1,
+    "rate": 0.14285714285714285
+   },
+   "VERIFIER": {
+    "n": 47,
+    "a": 5,
+    "rate": 0.10638297872340426
+   }
+  },
+  "pruned_ranking": [
+   "INTERLOCUTOR",
+   "READER_PANEL",
+   "VERIFIER"
+  ],
+  "half_contested_pruned": {
+   "INTERLOCUTOR": {
+    "n": 55,
+    "a": 11,
+    "rate": 0.2
+   },
+   "JOINT:INTERLOCUTOR+READER_PANEL": {
+    "n": 1,
+    "a": 0,
+    "rate": 0.0
+   },
+   "JOINT:INTERLOCUTOR+VERIFIER": {
+    "n": 3,
+    "a": 1,
+    "rate": 0.3333333333333333
+   },
+   "JOINT:PRACTICE_SELF+READER_PANEL": {
+    "n": 1,
+    "a": 1,
+    "rate": 1.0
+   },
+   "OTHER": {
+    "n": 1,
+    "a": 0,
+    "rate": 0.0
+   },
+   "PRACTICE_SELF": {
+    "n": 4,
+    "a": 0,
+    "rate": 0.0
+   },
+   "READER_PANEL": {
+    "n": 7,
+    "a": 1,
+    "rate": 0.14285714285714285
+   },
+   "VERIFIER": {
+    "n": 47,
+    "a": 7,
+    "rate": 0.14893617021276595
+   }
+  },
+  "half_ranking": [
+   "INTERLOCUTOR",
+   "VERIFIER",
+   "READER_PANEL"
+  ],
+  "contested_list_source": "INTERLOCUTOR-134.md charge 4"
+ }
+}

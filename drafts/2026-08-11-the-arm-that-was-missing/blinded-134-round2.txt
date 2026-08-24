@@ -1,0 +1,43 @@
+F011: **BLOCKING** — the `prose_vs_json.py` audit result does not reproduce
+
+F012: **BLOCKING** — "no file either reviewer read has been rewritten" is false
+
+F013: quotation attributed to E6; the string is in `CONDITIONS-120.md`
+
+F014: the live run records no baseline path
+
+F015: "eight sessions" is uncited
+
+F016: the threshold assertion is a change-detector, not a test
+
+F017: stale comment, "3.01 days"
+
+F018: the rebuild is deterministic except for its own clock
+
+F019: the one outside-world claim carries its source elsewhere
+
+F020: **BLOCKING** — one figure, not two, when the caller's list postdates the table
+
+F021: **BLOCKING** — a mixed list compares two different denominators
+
+F022: **BLOCKING** — the "defensible" justification is false for the table the bundle ships, and the tool cannot tell the two apart
+
+F023: **BLOCKING** — "26 days" is the most forgiving member of a family running down to 1 day
+
+F024: **BLOCKING** — the assertion certifying the threshold tests a literal; the builder's drift block is typed
+
+F025: **BLOCKING** — the threshold is measured on one population and fired at another, where its sentence is false
+
+F026: the correction moves a column §2 omitted and §6 declined to analyse, by up to +51.5 %
+
+F027: the self-audit paragraph publishes three counts the tool does not return
+
+F028: the defensible figure is the one without an interval
+
+F029: day 6 has not run and the ordering condition is not discharged
+
+F030: §6's list is out of date about `LIMITS.md`
+
+F031: the CSV-writer assertion is tautological; both asserts vanish under `-O`
+
+F032: an uncovered baseline returns 0.0000 and calls it agreement
