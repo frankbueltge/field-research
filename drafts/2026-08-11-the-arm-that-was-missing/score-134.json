@@ -1,0 +1,484 @@
+{
+ "generated_by": "score_findings_134.py",
+ "preregistration": "PREREGISTRATION-134.md",
+ "population": {
+  "file": "findings-134.json",
+  "n": 102,
+  "sha256_of_payload": "10e7fe3c005be5d7bf27e6c268680b12de25dc529a161cac1a2189083ded89d5",
+  "by_role": {
+   "INTERLOCUTOR": 48,
+   "OTHER": 1,
+   "PRACTICE_SELF": 4,
+   "READER_PANEL": 9,
+   "UNATTRIBUTED": 10,
+   "VERIFIER": 30
+  }
+ },
+ "classifiers": {
+  "A": {
+   "n_labelled": 102,
+   "missing": []
+  },
+  "B": {
+   "n_labelled": 102,
+   "missing": []
+  }
+ },
+ "kill_conditions": {
+  "K1_raw_agreement": {
+   "value": 0.803921568627451,
+   "threshold": 0.6,
+   "failed": false,
+   "n_compared": 102
+  },
+  "K2_attributed": {
+   "value": 92,
+   "threshold": 20,
+   "failed": false
+  },
+  "K3_e_rate": {
+   "n_e_either": 5,
+   "of": 102,
+   "threshold": "1/3",
+   "failed": false,
+   "ids": [
+    "F001",
+    "F048",
+    "F058",
+    "F072",
+    "F073"
+   ]
+  },
+  "K4": "no significance test computed anywhere in this script",
+  "K5": "the disposition column was never read into the classifier input"
+ },
+ "proportions_reported": true,
+ "A_set": {
+  "agreed_by_both": {
+   "n": 23,
+   "ids": [
+    "F004",
+    "F015",
+    "F017",
+    "F018",
+    "F019",
+    "F020",
+    "F022",
+    "F023",
+    "F024",
+    "F025",
+    "F026",
+    "F027",
+    "F028",
+    "F030",
+    "F037",
+    "F041",
+    "F066",
+    "F070",
+    "F074",
+    "F083",
+    "F093",
+    "F095",
+    "F096"
+   ],
+   "by_role": {
+    "INTERLOCUTOR": [
+     "F017",
+     "F018",
+     "F019",
+     "F022",
+     "F026",
+     "F030",
+     "F037",
+     "F066",
+     "F074",
+     "F083",
+     "F093",
+     "F095",
+     "F096"
+    ],
+    "OTHER": [
+     "F020"
+    ],
+    "READER_PANEL": [
+     "F041",
+     "F070"
+    ],
+    "UNATTRIBUTED": [
+     "F004"
+    ],
+    "VERIFIER": [
+     "F015",
+     "F023",
+     "F024",
+     "F025",
+     "F027",
+     "F028"
+    ]
+   }
+  },
+  "either_classifier": {
+   "n": 37,
+   "ids": [
+    "F004",
+    "F009",
+    "F015",
+    "F017",
+    "F018",
+    "F019",
+    "F020",
+    "F021",
+    "F022",
+    "F023",
+    "F024",
+    "F025",
+    "F026",
+    "F027",
+    "F028",
+    "F030",
+    "F037",
+    "F041",
+    "F044",
+    "F048",
+    "F050",
+    "F052",
+    "F055",
+    "F064",
+    "F066",
+    "F070",
+    "F071",
+    "F073",
+    "F074",
+    "F079",
+    "F083",
+    "F084",
+    "F088",
+    "F093",
+    "F095",
+    "F096",
+    "F101"
+   ],
+   "by_role": {
+    "INTERLOCUTOR": [
+     "F017",
+     "F018",
+     "F019",
+     "F021",
+     "F022",
+     "F026",
+     "F030",
+     "F037",
+     "F048",
+     "F050",
+     "F052",
+     "F064",
+     "F066",
+     "F073",
+     "F074",
+     "F079",
+     "F083",
+     "F084",
+     "F093",
+     "F095",
+     "F096",
+     "F101"
+    ],
+    "OTHER": [
+     "F020"
+    ],
+    "READER_PANEL": [
+     "F041",
+     "F055",
+     "F070",
+     "F071"
+    ],
+    "UNATTRIBUTED": [
+     "F004",
+     "F009"
+    ],
+    "VERIFIER": [
+     "F015",
+     "F023",
+     "F024",
+     "F025",
+     "F027",
+     "F028",
+     "F044",
+     "F088"
+    ]
+   }
+  }
+ },
+ "P1_exclusivity": {
+  "claim": "POST-MORTEM.md S8: the severed-reader panel is the only instrument here that has ever found that class of defect",
+  "refuted": true,
+  "counterexamples_agreed_by_both": [
+   {
+    "id": "F015",
+    "role": "VERIFIER",
+    "file": "CONDITIONS-123.md",
+    "line": 38,
+    "row": "5",
+    "finding": "An unfilled `TEMPLATE` placeholder shipped as a `run_id` in the manifest"
+   },
+   {
+    "id": "F017",
+    "role": "INTERLOCUTOR",
+    "file": "CONDITIONS-123.md",
+    "line": 40,
+    "row": "7",
+    "finding": "The 0.14 pp across-day spread ships with no trace of the correction that found it 2.35× inflated"
+   },
+   {
+    "id": "F018",
+    "role": "INTERLOCUTOR",
+    "file": "CONDITIONS-123.md",
+    "line": 41,
+    "row": "8",
+    "finding": "A carried page contradicts the bundle around it: stale withheld banner; no version/`--confirm` disclosure; a cross-reference that now lands on the wrong topic"
+   },
+   {
+    "id": "F019",
+    "role": "INTERLOCUTOR",
+    "file": "CONDITIONS-123.md",
+    "line": 42,
+    "row": "9",
+    "finding": "`FIGURES.md` is generated prose and was never passed to the prose audit"
+   },
+   {
+    "id": "F020",
+    "role": "OTHER",
+    "file": "CONDITIONS-123.md",
+    "line": 43,
+    "row": "10",
+    "finding": "The prose auditor reads digits and is blind to number words"
+   },
+   {
+    "id": "F022",
+    "role": "INTERLOCUTOR",
+    "file": "CONDITIONS-123.md",
+    "line": 45,
+    "row": "12",
+    "finding": "The status pointer is circular: README points at VERSIONS, VERSIONS points at README"
+   },
+   {
+    "id": "F023",
+    "role": "VERIFIER",
+    "file": "CONDITIONS-123.md",
+    "line": 46,
+    "row": "13",
+    "finding": "The rebuild audit's classifier is file-wide for `gradient-test.json`, not field-wide"
+   },
+   {
+    "id": "F024",
+    "role": "VERIFIER",
+    "file": "CONDITIONS-123.md",
+    "line": 47,
+    "row": "14",
+    "finding": "`FIGURES.md`'s two INDETERMINATE counts differ by scope, unexplained"
+   },
+   {
+    "id": "F025",
+    "role": "VERIFIER",
+    "file": "CONDITIONS-123.md",
+    "line": 48,
+    "row": "15",
+    "finding": "`prose-audit-123.json` records a scratch path from a trial build"
+   },
+   {
+    "id": "F026",
+    "role": "INTERLOCUTOR",
+    "file": "CONDITIONS-123.md",
+    "line": 49,
+    "row": "16",
+    "finding": "The neighbouring paper is still unnamed on the receiver-facing page, two versions running"
+   },
+   {
+    "id": "F027",
+    "role": "VERIFIER",
+    "file": "CONDITIONS-124.md",
+    "line": 35,
+    "row": "1",
+    "finding": "`ERRATA-124.md:E20` is a published erratum, in neither the registry nor the reason table"
+   },
+   {
+    "id": "F028",
+    "role": "VERIFIER",
+    "file": "CONDITIONS-124.md",
+    "line": 36,
+    "row": "2",
+    "finding": "The build `--audit` gate does not fail on `unaccounted_published_ids` or `broken_mappings`"
+   },
+   {
+    "id": "F030",
+    "role": "INTERLOCUTOR",
+    "file": "CONDITIONS-124.md",
+    "line": 38,
+    "row": "4",
+    "finding": "`DAY6-2026-08-16.md` is **committed with unresolved merge-conflict markers** (`<<<<<<< / ======= / >>>>>>>`), carrying sessions 122's and 123's accounts of the same run unreconciled"
+   },
+   {
+    "id": "F037",
+    "role": "INTERLOCUTOR",
+    "file": "CONDITIONS-125.md",
+    "line": 63,
+    "row": "7",
+    "finding": "**A finding of ours the bundle does not make.** Of the non-control panel (3,620 identifiers), only 7 ever show more than one determinate state across six independent days, and **412 of the 446 ever-absent identifiers are absent on every day they were measured (92 %)**. The bundle leans on a 9-event transition-confirmation sample while sitting on far stronger indirect confirmation in its own series"
+   },
+   {
+    "id": "F066",
+    "role": "INTERLOCUTOR",
+    "file": "CONDITIONS-128.md",
+    "line": 56,
+    "row": "8",
+    "finding": "**D26's refusal is blind during the reservation hold.** `window_status` detects an in-flight probe only through a `.partial`, and `run_window_day.py` reserves ~4 minutes before it writes one; the check also fires once, ~20 s before the build's live phase."
+   },
+   {
+    "id": "F074",
+    "role": "INTERLOCUTOR",
+    "file": "CONDITIONS-129.md",
+    "line": 28,
+    "row": "1",
+    "finding": "**§7's corrections stopped at the least consequential copies of the error.** The undercount sits uncorrected in `CONDITIONS-128.md` finding 1 — the formal verdict ledger, marked ACCEPTED and REPRODUCED and flagged *\"the most serious finding of the ninth gauntlet\"* — and in `INTERLOCUTOR-20.md` at three lines."
+   },
+   {
+    "id": "F083",
+    "role": "INTERLOCUTOR",
+    "file": "CONDITIONS-129.md",
+    "line": 37,
+    "row": "10",
+    "finding": "**Day 10 was running throughout and `INCREMENT-19.md` never mentions it**; no `DAY10-*.md` exists, unlike days 5, 6, 8, 9. Not a stop violation — a silence."
+   },
+   {
+    "id": "F093",
+    "role": "INTERLOCUTOR",
+    "file": "CONDITIONS-131.md",
+    "line": 33,
+    "row": "7",
+    "finding": "**Roughly half of `INCREMENT-20.md` is this practice's own extraction defects and a scoreboard against its own checker — the same charge session 129 drew.**"
+   },
+   {
+    "id": "F095",
+    "role": "INTERLOCUTOR",
+    "file": "CONDITIONS-133.md",
+    "line": 35,
+    "row": "1",
+    "finding": "**The population omits `audit_instrument.py`** — a live, self-referential instrument in this same arc, whose own record says session 120 caught it silently overwriting a dated evidence file. The increment's generic concession that the population is hand-made does not cover the single most on-point omission available."
+   },
+   {
+    "id": "F096",
+    "role": "INTERLOCUTOR",
+    "file": "CONDITIONS-133.md",
+    "line": 36,
+    "row": "2",
+    "finding": "**`guard_claims.py --check` has a second, data-dependent write path** — on the FAIL branch the same invocation writes `guard-claims-expected.txt` into the arc directory with no cleanup. \"Exactly one\" is contingent on tonight's record passing, and nothing said so."
+   }
+  ]
+ },
+ "P3_both_roles": {
+  "held": true,
+  "interlocutor": [
+   "F017",
+   "F018",
+   "F019",
+   "F022",
+   "F026",
+   "F030",
+   "F037",
+   "F066",
+   "F074",
+   "F083",
+   "F093",
+   "F095",
+   "F096"
+  ],
+  "verifier": [
+   "F015",
+   "F023",
+   "F024",
+   "F025",
+   "F027",
+   "F028"
+  ]
+ },
+ "P2_minority": {
+  "a_share_agreed": 0.23711340206185566,
+  "held": true,
+  "denominator": 97,
+  "note": "numerator counts findings BOTH classifiers labelled A"
+ },
+ "P4_rate_residue": {
+  "top_role_by_rate": "OTHER",
+  "held": false,
+  "per_role": {
+   "INTERLOCUTOR": {
+    "n": 45,
+    "a": 13,
+    "rate": 0.28888888888888886
+   },
+   "OTHER": {
+    "n": 1,
+    "a": 1,
+    "rate": 1.0
+   },
+   "PRACTICE_SELF": {
+    "n": 4,
+    "a": 0,
+    "rate": 0.0
+   },
+   "READER_PANEL": {
+    "n": 9,
+    "a": 2,
+    "rate": 0.2222222222222222
+   },
+   "UNATTRIBUTED": {
+    "n": 9,
+    "a": 1,
+    "rate": 0.1111111111111111
+   },
+   "VERIFIER": {
+    "n": 29,
+    "a": 6,
+    "rate": 0.20689655172413793
+   }
+  },
+  "fence": "K4: no significance test is run and none may be quoted; the panel denominator is single digits."
+ },
+ "label_matrix": {
+  "A": {
+   "A": 23,
+   "B": 5,
+   "C": 2,
+   "D": 2,
+   "E": 1
+  },
+  "B": {
+   "A": 3,
+   "B": 37,
+   "C": 2,
+   "D": 2,
+   "E": 0
+  },
+  "C": {
+   "A": 0,
+   "B": 1,
+   "C": 11,
+   "D": 1,
+   "E": 0
+  },
+  "D": {
+   "A": 0,
+   "B": 0,
+   "C": 0,
+   "D": 8,
+   "E": 0
+  },
+  "E": {
+   "A": 1,
+   "B": 0,
+   "C": 0,
+   "D": 0,
+   "E": 3
+  }
+ }
+}
