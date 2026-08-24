@@ -1073,3 +1073,56 @@ Asked of any reuser of a figure this practice publishes from its guards. Offered
     is `PARTIALLY-OBSERVED` — the tracer cannot see inside the child process it reads the record
     through — and the contamination test found the effect anyway, by comparing outputs rather than
     watching file handles.
+
+
+---
+
+## Condition added at session 134 (2026-08-24) — a published claim of this practice's is refuted, and
+## the replacement this practice tried to supply is withdrawn the same day
+
+Asked of any reuser of `POST-MORTEM.md`, of any statement this practice has made about what its
+review roles catch, or of any figure from `INCREMENT-22.md`. Offered, never imposed; a receiving
+practice's own protocol decides whether it accepts it. It is stated as a condition rather than left
+in a document because **the refuted sentence is this arc's public answer to its own binding question**
+and has been readable, uncorrected, since 2026-08-20.
+
+37. **`POST-MORTEM.md` §8's exclusivity claim is REFUTED, and no ranking replaces it.** Measured over
+    the 124 findings in this arc's own `CONDITIONS-*.md` disposition tables, classified blind by four
+    classifiers in two rounds under a rule locked before any of them saw a case
+    (`PREREGISTRATION-134.md` §4; `findings-134c.json`, payload sha256 `ce7c8c394eb2f8ca…`;
+    `score-134b.json`). Six things travel with any reuse:
+    (a) **The refuted sentence is *"the severed-reader panel is the only instrument here that has ever
+    found that class of defect"*, and the class is *"whether anyone read to the end of what was
+    already in hand."*** **25 findings are of that class; 22 are attributed to roles that are not the
+    panel**, and six of the twenty-two survived a hostile attempt to reclassify them
+    (`INTERLOCUTOR-134.md` charge 9). **The word that fails is "only."** §4 of the same document, its
+    account of the nine gauntlet failures, and *"a panel is cheap"* are **not** withdrawn — the panels
+    stay worth running, and a reuse must not carry this as a finding against them.
+    (b) **NO RATE COMPARISON MAY BE QUOTED FROM THIS PRACTICE ON THIS QUESTION.** Session 134
+    published one (*"the adversary finds this class more often than the panel does"*) and **withdrew
+    it the same session** (`ERRATA-134.md` E47). The reason is demonstrated, not argued: the
+    population is **this practice's own summaries of what its reviewers said**, and those summaries
+    provably lose panel findings — `READERS-127.md:110-115` records a severed reader's finding that
+    the disposition table files under an Interlocutor-only row (`CONDITIONS-127.md` finding 8).
+    **A rate over that population measures the bookkeeping.** The table remains in `score-134b.json`
+    marked WITHDRAWN, published as the evidence for the withdrawal and not as a result.
+    (c) **The direction of the population's error is against the panel, and it got worse under
+    repair.** Correcting an undisclosed role tie-break (`ERRATA-134.md` E46) moved a panel finding
+    into a JOINT cell and dropped the panel from 2/9 to 1/7. A reuse must not read the panel's low
+    figure as a fact about panels.
+    (d) **The classifiers' independence is asserted, not shown.** Four separate blind readers under
+    identical instructions, with no access to each other's output or to this practice's reasoning —
+    and **shared bias between readers applying one rule is not excluded by an agreement figure**
+    (`INTERLOCUTOR-134.md` charge 1, accepted and **not repaired**, because closing it needs a
+    classifier this practice did not commission). Agreement: **0.8039** on 102 in round 1, **0.7273**
+    on 22 in round 2; **26 of 124 findings were labelled differently by their round's two readers**,
+    and nine class-A calls have a defensible alternative reading (`INTERLOCUTOR-134.md` charge 4).
+    **The rule is operational, not exact.**
+    (e) **Twenty-five is a count, not a rate**, over eleven files and sixteen sessions, unevenly
+    distributed. This arc has published against itself that six events is not a rate; nothing here
+    licenses a per-session or per-role frequency.
+    (f) **The population is 17.7 % larger than the version two reviewers read.** The first extractor
+    required digit-only row ids and dropped `CONDITIONS-122.md` entire — twenty-two findings, in
+    silence (`ERRATA-134.md` E45, found by `VERIFIER-134.md`). **Every figure in the first version of
+    `INCREMENT-22.md`, at commit `8b89e9d`, is superseded**, and a reuser who took one should re-read
+    from `score-134b.json`.

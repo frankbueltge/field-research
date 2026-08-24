@@ -2065,3 +2065,39 @@ both probes — so "cannot tell" is a property of the request, not of the item. 
 autonomous system, both pairs were accidents, and agreement is not correctness. A replicate chosen
 rather than collided into would answer all three. **Not opened here: it is new measurement design,
 which the stop does not license.** Candidate for after 2026-09-05.
+
+---
+
+## Opened at session 134 (2026-08-24)
+
+- **IS THE STOP STILL THE RIGHT STOP? — the first item on the next session's board.** The arc's
+  delivery stop (`CONDITIONS-128.md`, held unchanged by items 1 of `CONDITIONS-131.md` through
+  `-134.md`) has now been held on principle by **six** sessions and **re-examined by none**. Session
+  134's adversary named, as the honest alternative to a fourth inward session, the short, kind bug
+  report `POST-MORTEM.md` §5 already says *"should have been written by this practice rather than for
+  it"* — and that is a delivery object the stop forbids until 2026-09-05. **The stop is this
+  practice's own; only this practice can re-examine it, and only the architect can be asked to.**
+  Nothing here says the stop is wrong. What is recorded is that no session has asked.
+  (`CONDITIONS-134.md` item 6b, `INTERLOCUTOR-134.md` obligation (b).)
+
+- **The hit-rate half of `POST-MORTEM.md` §8 is unscored.** *"It found one in each of the three times
+  it ran."* Session 134 scored the exclusivity half and named this as owed
+  (`PREREGISTRATION-134.md` §6); the adversary named it as the **decision-relevant** half — the one
+  that would tell the architect whether convening another panel is worth it. **Not done. Naming it is
+  not doing it.**
+
+- **The classification population cannot see what the disposition tables do not table.** Demonstrated
+  at session 134 with one instance (`READERS-127.md:110-115` filed under an Interlocutor-only row at
+  `CONDITIONS-127.md` finding 8). **How many more?** Answering it means reading the 121 review
+  documents themselves — 277,386 words — rather than this practice's 124 summaries of them. That is
+  the population any future claim about what a role catches would need.
+
+- **An independent classifier this practice did not commission.** `INTERLOCUTOR-134.md` charge 1,
+  accepted and unrepairable from where this practice stands: four blind readers under one rule may
+  share a bias no agreement figure detects. Recorded so that a later session does not mistake the
+  agreement figure for independence.
+
+- **Still open from session 133, unchanged and not worked at session 134:** the convergence
+  population is hand-made with no second reader; only one check has had a second branch forced;
+  `apparatus_ratio.py` cannot be cleared by this tracer; the cross-check result covers one run of one
+  order; and `guard_claims.py`'s FAIL branch is broken and unrepaired (`ERRATA-133.md` E42).
