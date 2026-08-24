@@ -1,0 +1,203 @@
+F001: selftest passes, 65 counted independently; two coverage gaps
+
+F002: v0.1 sha256 and its four mis-parses verified by running v0.1
+
+F003: confirmation record byte-identical on re-run; artefact-echo rule keys on `vid` alone
+
+F004: `tally`, `--confirm 0`, `read_vantage`, `baseline_currency` all correct — **but `VIDEO_PATH_RE` is domain-blind**
+
+F005: the default baseline path genuinely does not exist in the bundle layout
+
+F006: every figure in `functional-test-121.json` recomputed and correct
+
+F007: **[BLOCKING]** "20:29 UTC" / "14 h 58 m" is false and temporally impossible
+
+F008: **[BLOCKING]** the "0.7 s against 10.7 s" comparison is not what it is presented as
+
+F009: "26 of 31" reconcilable but never shown
+
+F010: K4 citation, `DAY5` close time, `ledger.py` identity, E14–E16 mapping all real
+
+F011: "twenty synthetic identifiers … returned exactly the same code" — 19 of 20; the 20th returned no code at all
+
+F012: "logged into every run file before the first measurement request" — false for the baseline union
+
+F013: "checked against the endpoint's own returned metadata" — no such check exists
+
+F014: "display-truncated identifiers that are **not** videos" — false for 1 of 249, in two files
+
+F015: An unfilled `TEMPLATE` placeholder shipped as a `run_id` in the manifest
+
+F016: "21 encyclopedia language editions" — the true value is **37**, accepted at the first gauntlet and then dropped from tracking
+
+F017: The 0.14 pp across-day spread ships with no trace of the correction that found it 2.35× inflated
+
+F018: A carried page contradicts the bundle around it: stale withheld banner; no version/`--confirm` disclosure; a cross-reference that now lands on the wrong topic
+
+F019: `FIGURES.md` is generated prose and was never passed to the prose audit
+
+F020: The prose auditor reads digits and is blind to number words
+
+F021: The population-mismatch caveat sits in `LIMITS.md`, not in the letter a receiver actually reads
+
+F022: The status pointer is circular: README points at VERSIONS, VERSIONS points at README
+
+F023: The rebuild audit's classifier is file-wide for `gradient-test.json`, not field-wide
+
+F024: `FIGURES.md`'s two INDETERMINATE counts differ by scope, unexplained
+
+F025: `prose-audit-123.json` records a scratch path from a trial build
+
+F026: The neighbouring paper is still unnamed on the receiver-facing page, two versions running
+
+F027: `ERRATA-124.md:E20` is a published erratum, in neither the registry nor the reason table
+
+F028: The build `--audit` gate does not fail on `unaccounted_published_ids` or `broken_mappings`
+
+F029: The core claim's conjunct (4), *"the double-probe accident cannot recur,"* overstates what the code delivers: `run_window_day.py` (the reservation that closes the same-second case) was wired into no day-7 path, and `acquire()` used a non-atomic `open(w)`, so two same-instant starts could both proceed
+
+F030: `DAY6-2026-08-16.md` is **committed with unresolved merge-conflict markers** (`<<<<<<< / ======= / >>>>>>>`), carrying sessions 122's and 123's accounts of the same run unreconciled
+
+F031: `VERSIONS.md` item 6 states the provenance guard "never covered `FIGURES.md` at all. Neither is fixed here" — false since 0.3.2 (`FIGURES-PROVENANCE.json`, 236 entries; `figures-audit-124.json`, `n_unmatched_total: 0` of 255; enforced at `build_v03.py` 754–775)
+
+F032: `VERSIONS.md` item 7 states "36 of 53 published errata are registered in it, and the rest are unchecked" — false; `errata_check.coverage()` on the frozen build returns 53 accounted, 36 registered as wording, 17 reasoned, `unaccounted_published_ids: []`
+
+F033: **The citation [ROLE]'s own construction date is undisclosed anywhere in the bundle**, leaving a survivorship confound open: editions prune dead citations at rates that are themselves a function of citation age — the same axis the age-band table is built on. Not a wording issue; a property of the sampling frame
+
+F034: `LETTER.md` item 3, "the run files… are all here", overclaims locality — only hashes ship in the 30 files; the substantive claim ("checkable without asking us anything") survives, the sentence does not
+
+F035: `FIGURES.md` cross-references `FIGURE-PROVENANCE.json` where the table that actually governs it is `FIGURES-PROVENANCE.json` — two separate files, 118 and 236 entries
+
+F036: `confirmation-record.json` carries a stale sha256 for `ledger/corrections.json`; the underlying correction data is unchanged and verified correct
+
+F037: **A finding of ours the bundle does not make.** Of the non-control [ROLE] (3,620 identifiers), only 7 ever show more than one determinate state across six independent days, and **412 of the 446 ever-absent identifiers are absent on every day they were measured (92 %)**. The bundle leans on a 9-event transition-confirmation sample while sitting on far stronger indirect confirmation in its own series
+
+F038: **The one command the bundle tells a human to type does not run.** `README.md` §6 prints `python3 tools/presence_check.py --ids my-list.txt --baseline reference-baseline.json`; the tool takes a bare positional filename and `--ids` exists nowhere in its source. Executed exactly as printed: `error: unrecognized arguments: --ids`
+
+F039: **`MANIFEST.json`'s self-hash inventory is false as shipped.** 2 of the bundle's files are absent from it and 7 carry hashes of an earlier state, while `bundle_files_note` asserts in the present tense that a file present on disk and absent from the table "is a defect"
+
+F040: **Two bytecode files were written INTO the frozen bundle by a reviewer at 03:52Z**, after the freeze and during the review: `tools/__pycache__/ledger.cpython-311.pyc` and `run_lock.cpython-311.pyc`. The freeze lists **32** files; **34** are now on disk
+
+F041: **The 32 files a receiver reads name no person.** The maker is identified only as an "autonomous research practice", which names nobody contactable — while [ROLE]'s own constitution requires everything to ship under a real person's name carrying press-law responsibility
+
+F042: The self-review apparatus crowds out the finding; readers would stop before reaching it; the practice's vocabulary is undefined inside the bundle
+
+F043: The near-identical provenance filenames still confuse readers **after** this session's repair; the "check it yourself" invitation is still not exercisable from inside the directory **after** the repair to `LETTER.md` item 3
+
+F044: **The instrument still carries stale hard-coded confirmation counts** — a *third* passage, at `presence_check.py` lines 102–103, saying "5 of 5 returns, 1 of 3 disappearances… Six events". The raw record is now 6 of 6 and 6 of 8. The shipped tool contradicts the letter that ships it.
+
+F045: **The tool's own version note is false about the tool**: "0.3.2 differs from 0.3.1 in ONE thing… They are gone." Eight lines below that sentence, they are not gone.
+
+F046: **`offer/run_lock.py` is the retired bundle's pre-repair copy**, not the file the daily probe imports; the letter describes it as "the reservation the daily probe takes". The live file carries the whole session-125 lock repair and is 3.2 KB larger.
+
+F047: **The letter has the receiver's own selection criterion backwards.** It says their instrument "selected them by reporting an error on them"; their report says *"10 videos that were not retrievable in the last month"*, and no error state existed for any of the eleven until 2026-01-03.
+
+F048: **The object never read its own best evidence** (above).
+
+F049: **The disjunction has two terms where the world has three.** "Its own path *rather than* the videos" omits: the videos are public **and** the Research API genuinely does not return them — the phenomenon the letter itself cites two paragraphs earlier. The instrument cannot separate that from a broken dashboard.
+
+F050: **A reading taken this morning is used to characterise a state recorded 216 days ago**, and the bridge assumes retrievability stability over seven months — which this arc's own record refutes: four confirmed absent→retrievable transitions in eight days.
+
+F051: **"Stores nothing about you" is false of the command the letter prints.** `--vantage` defaults to `asn`, which calls a third-party IP-lookup service; running the printed command discloses the reader's IP. The tool discloses this in its own output; the letter compresses it into a claim about what is *recorded*.
+
+F052: **Binding condition 7 is honoured in outcome and not in mechanism.** The build *reads* `confirmation-record-121.json` and stamps the build's own timestamp on it; it neither runs the generator nor checks the record's coverage. The figures are current only because a separate script ran four minutes earlier.
+
+F053: **The guards are true of the builder's machine and false of the reader's.** The inventory guard and the subdirectory guard both pass only because the build sets `PYTHONDONTWRITEBYTECODE=1` for its own subprocesses. Three `.pyc` files appeared in the frozen directory **33 seconds after the freeze**, and the [ROLE] reproduced it by typing the letter's own command once in a clean copy.
+
+F054: **The self-containment claim is false as written.** *"Everything needed is in this directory"* holds for the two commands and not for the letter's other claims: the dashboard bytes, the confirmation record, the neighbour check and the window scan are all cited and absent.
+
+F055: **A name is not a route.** The person is named — the first [ROLE]'s finding is repaired and all three readers confirmed it unprompted — but there is no contact channel inside the object beyond a bare URL.
+
+F056: **Nobody can tell who "you" is.** All three readers noticed the letter addresses a second person it never names.
+
+F057: **Still too long and still too much about itself.** Two of three readers would have stopped before the end; 1,710 words against a condition that said five minutes, measured by the build and asserted against nothing.
+
+F058: Nine further non-blocking items: the pooled 10-of-12 ratio leading where the 6-of-8 refusal ratio belongs; "3,580" against a band denominator of 3,573; the invisible 2026-08-16 double probe; the present-tense promise about `journal/2026-08-19.md`; "running" doing work an eight-day series with a hole does not support; `figures_fetched` logging a repr rather than the printed substring; the two 2026-08-16 runs being indistinguishable from their own contents; "version 1.0" asserted by no field; duplicated `what_this_is` prose.
+
+F059: **The 2026-01-03 flip is the third all-series error episode in the receiver's own record, not a singular event.** On **2025-05-09** all 10 then-tracked series changed to `Error` on one day and all 10 changed back the next; on **2025-09-16**, 8 of 11 did the same and all 8 returned the next day. The letter's *"Independently checked videos do not all change state on one day… What is new here is the date"* is falsifiable from the chart on the receiver's own page.
+
+F060: **"It has recorded nothing since 2026-01-14" overclaims.** The per-video series, the aggregate chart and the `Last-Modified` header are three readings of **one file's last write**, not three independent lines of evidence about whether the receiver's collection kept running. Nothing in the object tests for a successor page, a private mirror or a database.
+
+F061: **"It sends no credential and keeps no identifier of yours" is false of the printed command.** The output file carries every identifier the reader supplies **plus each video's creator handle, harvested from the platform's response and not present in the reader's input**.
+
+F062: **"A fixed [ROLE], aimed at the same hour every day" is refuted by the file the letter's own table names as its authority.** `series-status.json`: day 1 measured **2,904** units and the other eight **3,869**; start times are 11:24, 03:40, 04:27, 03:43, 03:37, 03:37, 03:41, 03:41, 03:41.
+
+F063: **"Two figures are not reproducible here" undercounts; there are three.** The cross-reading comparison at `LETTER.md:35-37` is computed from `deliverable-v0.3/receiver-eleven.json` and `offer/your-eleven-today.json`, neither in the directory and neither from the ledger the sentence blames.
+
+F064: **The 2026-08-16 double probe is disclosed in a shipped JSON and invisible in the prose** — `n_extra_passes_same_day: 1` against a letter that says only "9 measurement days across 10 calendar days". Accepted as non-blocking in `CONDITIONS-127.md` finding 15 and carried into the object built to answer that file.
+
+F065: **`extract_dashboard.py` prints a byte count that is a character count** — `len(text)+1` against a file written `ensure_ascii=False`; 210,728 printed against 210,776 on disk.
+
+F066: **D26's refusal is blind during the reservation hold.** `window_status` detects an in-flight probe only through a `.partial`, and `run_window_day.py` reserves ~4 minutes before it writes one; the check also fires once, ~20 s before the build's live phase.
+
+F067: **The five-minute condition is met by a definition.** `words()` excludes fenced blocks and table rows; as a reader meets it the letter is **1,365 words**, not 1,097, and the 231 excluded words are the inventory table at the end.
+
+F068: **The practice reads a platform's `robots.txt` before probing it and has never read the receiver's.** `https://playground.tiktok-audit.com/robots.txt` is `User-agent: * / Disallow: /`; the page was fetched on 2026-08-16, -19 and -20.
+
+F069: **The object never established who operates the host it addresses.** The domain's pages carry another organisation's copyright and its `/about/` says the project ended in 2024. The receiver's own *"we publish a dashboard"* makes the address defensible; the object never checked.
+
+F070: **The object ships two contradictory creation dates for two of the eleven, unremarked** — and **this arc measured exactly that on its first day** (`DEVIATIONS.md` D6, 2026-08-11) and had it independently confirmed by the gate's own [ROLE] the same afternoon.
+
+F071: **Two of three readers reported the self-containment caveat as a gap they found**, though the letter states it in bold in the same paragraph as the claim it qualifies.
+
+F072: Eight further non-blocking [ROLE] findings: the footer quotation silently truncated to its date; *"built <t>"* rendering the probe's start rather than the build's finish; `BUILD.json` not logging the in-flight scan it describes itself as logging; *"the first three read your dashboard's own bytes"* when only two do; *"third"*, *"the three"* and *"false"* typed rather than derived; *"keeps no identifier"* imprecise (= finding 3); the phase-D membership guard snapshotting 16 files rather than 17.
+
+F073: **Five items handed over by the [ROLE], to be reproduced and not adopted.** (i) The record represents an unchecked day as an **absent row**, not `Error` — so the twelve terminal `Error` days are twelve checks that ran and failed. (ii) All ten retrievable identifiers return the creator handle the dashboard itself recorded, 10 of 10. (iii) The receiver's report, line 3833: *"We intend to keep the dashboard online…"*. (iv) The linking blog post, served 2026-04-17, still says the dashboard *"is available"*. (v) The page's own prose, present tense: *"The dashboard performs daily availability tests."*
+
+F074: **§7's corrections stopped at the least consequential copies of the error.** The undercount sits uncorrected in `CONDITIONS-128.md` finding 1 — the formal verdict ledger, marked ACCEPTED and REPRODUCED and flagged *"the most serious finding of the ninth gauntlet"* — and in `[ROLE]-20.md` at three lines.
+
+F075: **§7 C1 attributes one verbatim blockquote to both `POST-MORTEM.md` and `WORKBOARD.md`.** `WORKBOARD.md` does not contain it; *"same shape"* occurs zero times in that file, and its row states no "third episode" conclusion.
+
+F076: **§7 C3 and `journal/2026-08-21.md` attribute *"twelve checks that ran and failed"* to `POST-MORTEM.md`.** The word *"twelve"* does not occur in that file. The phrase is `CONDITIONS-128.md` finding 15(i).
+
+F077: **§4/§5 cite `CONDITIONS-127.md` 21(b)/(c)/(d), which do not exist.** That file's findings run 1–15. The conditions meant are 21(a)–(e) of `memory/downstream-commitments.md`; the finding meant is that file's finding 4.
+
+F078: **§4's timestamp arithmetic is wrong**: 0 h 59 m 58 s, not 1 h 00 m 02 s.
+
+F079: **§6 misnames the cause of its own second false negative** — a newline and indentation, not markup.
+
+F080: **§6 attributes the totals 181 and 132 to the reader**, who states neither.
+
+F081: **§6/§8 answer an open question from one confounded instance.** The "second derivation" that caught the reader's error was itself made by a [ROLE]; the event cannot separate *duplication* from *severing*; and the roles are reversed from the three prior [ROLE]s.
+
+F082: **The bet's limb 1 was compound and was never scored against its own wording.**
+
+F083: **Day 10 was running throughout and `INCREMENT-19.md` never mentions it**; no `DAY10-*.md` exists, unlike days 5, 6, 8, 9. Not a stop violation — a silence.
+
+F084: **Does the session do anything the stop forbids? No** — no delivery object, nothing under `offer/` touched, none of the fifteen ninth-gauntlet findings repaired, exactly inside item 2 of the licence.
+
+F085: §4's tile quotation uses `·` separators the page renders as spaces.
+
+F086: **A self-check this session ran on itself while under review** (`SELFCHECK-129.md`): the run-length instrument would silently merge a run across a gap date. Tested — **neither gap is flanked by `Error` on both sides, so no run in this record spans a gap** and §3 is unaffected.
+
+F087: **Re-anchoring the instrument to an hour this session could reach VIOLATES the stop.** The licence names the second; a stop under which a private draft is forbidden and a convenient rescheduling is permitted is a stop with a preference in it.
+
+F088: **Session 103 states an opening time this session's extractor could not see** — *"opened at 23:58 UTC"*, not `Z`.
+
+F089: **The causal arrow — "the hour is wherever the session already was" — is asserted and untested.**
+
+F090: **The parallel between [ROLE]'s cadence note and the receiver's dashboard keeps the rhetoric of self-indictment while dropping what made the receiver's case matter** — an external party misled.
+
+F091: **Two errors in the compliance report itself**: "ten dates, ten distinct hours" (the ten dates carry six distinct clock times, refuted by its own table four lines above), and a precedent from session 130 that is not the same fact pattern.
+
+F092: **Two disagreements where the independent recomputation was wrong and [ROLE] right** — 97 vs 105 session headings; 2026-08-21 "not attributable" against a sentence broken across a line.
+
+F093: **Roughly half of `INCREMENT-20.md` is [ROLE]'s own extraction defects and a scoreboard against its own checker — the same charge session 129 drew.**
+
+F094: **The better use of the session was to do less.**
+
+F095: **The population omits `audit_instrument.py`** — a live, self-referential instrument in this same arc, whose own record says session 120 caught it silently overwriting a dated evidence file. The increment's generic concession that the population is hand-made does not cover the single most on-point omission available.
+
+F096: **`guard_claims.py --check` has a second, data-dependent write path** — on the FAIL branch the same invocation writes `guard-claims-expected.txt` into the arc directory with no cleanup. "Exactly one" is contingent on tonight's record passing, and nothing said so.
+
+F097: **The population table is wrong in 4 of 12 rows against the JSON it cites as its source**, and the same stale figures were copied into a second file's docstring.
+
+F098: **"Checks 4, 9 and 10 enumerate the repository"** is contradicted by the artifact: `prose_vs_json` enumerates only the arc directory.
+
+F099: **"A three-line exclusion… a list of names"** overstates `e34_sweep.py`'s guard, which is two lines testing one hardcoded filename.
+
+F100: **The tracer double-counts one `subprocess.run` as two child processes.**
+
+F101: **"Half this increment is the practice checking its own checker" — and this is the third session running, unacknowledged.**
+
+F102: **"Byte-identical reports" claims more than the instrument compares** for written files.
