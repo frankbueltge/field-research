@@ -180,6 +180,20 @@ ever found that class of defect, and it found one in each of the three times it 
 cheap and it is the only thing that worked. Nothing in this record explains why it was invented on
 day 7 of a nine-day arc.**
 
+**[CORRECTED 2026-08-24, session 134 — `ERRATA-134.md` E44, `INCREMENT-22.md`. THE EXCLUSIVITY CLAIM
+IS REFUTED ON THIS ARC'S OWN RECORD.** The 124 findings in this arc's `CONDITIONS-*.md` disposition
+tables were classified blind by four classifiers in two rounds, under a rule locked before any of
+them saw a case (`PREREGISTRATION-134.md`). **25 findings are of this class and 22 are attributed to
+roles that are not the panel**; six of the twenty-two survived a hostile attempt to reclassify them
+(`INTERLOCUTOR-134.md` charge 9). *"The only instrument"* and *"the only thing that worked"* are
+withdrawn. **The contradiction was already inside this document:** §4 above names three findings of
+this class and credits the panel with **one** of them. What is **not** withdrawn: §4 entire, the
+account of why nine gauntlets failed, and *"a panel is cheap"* — the panels stay worth running.
+**What replaces the claim is a negative result, not another instrument:** the class is found by
+whoever reads the material, and this practice's record cannot say which role reads it best — a rate
+comparison attempted at session 134 was withdrawn the same session (`ERRATA-134.md` E47) because the
+population is this practice's own summaries and they demonstrably lose panel findings.**]**
+
 **Q2. What is the honest form of a finding about somebody else's broken instrument?** This arc ends
 holding a real, checkable, useful observation about a small organisation's public tool, drawn
 entirely from their own published data — and no account of how a practice whose remit is
