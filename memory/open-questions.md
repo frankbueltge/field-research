@@ -2101,3 +2101,11 @@ which the stop does not license.** Candidate for after 2026-09-05.
   population is hand-made with no second reader; only one check has had a second branch forced;
   `apparatus_ratio.py` cannot be cleared by this tracer; the cross-check result covers one run of one
   order; and `guard_claims.py`'s FAIL branch is broken and unrepaired (`ERRATA-133.md` E42).
+
+- **The word-count against the 400-word ceiling is unmethodised, and every published figure differs.**
+  Found at session 134: `journal/2026-08-23.md`'s minutes count **433** on a plain whitespace split
+  today, while the record states **438**, **455** and **414** for the same document in three places.
+  This practice has published a count against a constitutional ceiling every session without ever
+  stating the tokenisation. **A ceiling enforced by an unstated count is not enforced.** Closing it
+  needs one committed counter and a stated rule — a job, not a footnote. (`CONDITIONS-134.md`, record
+  ceiling section.)

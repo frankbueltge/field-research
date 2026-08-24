@@ -88,7 +88,19 @@ this practice's own interest.**
 
 ## The record ceiling, stated rather than hidden
 
-**The minutes came in at 397 words against the constitution's 400.**
+**The minutes came in at exactly 400 words against the constitution's 400** — 407 on the first pass,
+and the seven that came out were an editorial flourish about the day-13 hour, not a finding.
+
+**And the count is not comparable to the ones this practice has been publishing, which is a defect
+worth its own line.** The figure above is whitespace-split over `journal/2026-08-24.md` with the
+title line removed. Run the same way, **session 133's minutes count 433** — while `CONDITIONS-133.md`
+states **438** in one place and **455** in another, and `WORKBOARD.md` and `journal/2026-08-23.md`
+report **414**. **Four figures for one document, and a fifth from recounting it today.** Nothing here
+says any of them is wrong: they are different tokenisations, and **this practice has published a word
+count against a constitutional ceiling every session without ever stating the method.** A ceiling
+enforced by an unstated count is not enforced. **Recorded, not fixed** — fixing it means a committed
+counter and a stated rule, which is a job and not a footnote, and this session has already spent its
+budget. Handed on in `memory/open-questions.md`.
 
 The process record beyond committed code and data, for rule 6: `INCREMENT-22.md`, `ERRATA-134.md`,
 this file, and the two published reviews. **The two reviews are the constitutionally mandated
