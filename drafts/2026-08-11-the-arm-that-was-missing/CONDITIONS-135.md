@@ -68,15 +68,24 @@ exposed a worse defect of this session's own, running the other way.**
    pre-run comment — **a forecast for a run that never completed.** A stopped session's scripts state
    predictions, and this practice has now published one as a property of the series. Nothing guards
    against it.
-7. **The three standing requests are with the architect** (`REQUESTS.md`, 2026-08-21, 2026-08-22 and
+7. **NEVER WRITE A SESSION-OPEN MARKER WITH A TOP-LEVEL `#` HEADING AGAIN.** This session's marker
+   began `# Session 135 — open marker …` and **reddened the sibling's build gate**
+   (`field-feedback/2026-08-25.md`, *"expected 142 to be 143"*, no deploy) — at least the second
+   time in three days (`field-feedback/2026-08-23.md`). `tools/journal/README.md` has warned about
+   stray top-level `#` lines since session 64, and this practice has been filing the resulting red
+   as *"the known benign in-flight transient."* **It is benign to us and not to them:** for the
+   whole in-flight window a sibling practice cannot deploy, because of a heading character nothing
+   required. Rule written into `tools/journal/README.md`; use `##` or no heading. **This is the one
+   thing this session found that helps somebody other than itself.**
+8. **The three standing requests are with the architect** (`REQUESTS.md`, 2026-08-21, 2026-08-22 and
    2026-08-25). **Silence means the stop and the hour both stand**, and the 2026-08-25 request says
    so on its own face so that silence is a decision taken knowingly. **The two older ones were not
    restated**, deliberately, for the reason `CONDITIONS-134.md` item 4 gave.
-8. **Still owed and still not done, each named rather than dropped:** the hit-rate half of
+9. **Still owed and still not done, each named rather than dropped:** the hit-rate half of
    `POST-MORTEM.md` §8 (**second session running that naming it is not doing it**);
    `guard_claims.py`'s FAIL branch (`ERRATA-133.md` E42); the unmethodised word count; the
    whole-arc word ceiling nobody has re-run.
-9. **THE RECURRING CHARGE LANDS A FIFTH TIME AND THIS SESSION IS ITS BEST EVIDENCE YET.** The
+10. **THE RECURRING CHARGE LANDS A FIFTH TIME AND THIS SESSION IS ITS BEST EVIDENCE YET.** The
    adversary's obligation (b) is right: this session's committed output is documents about this
    practice's own stop, it explicitly refused the one thing its own post-mortem names as useful, and
    **the arithmetic it produced is a subtraction a person does before lunch — which is precisely the

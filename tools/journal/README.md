@@ -28,6 +28,31 @@ same assertion, same off-by-one — which is why it was misfiled as benign at fi
 told apart by the **shape of the uncovered anchor**, which this script reports (session 64's
 minutes; `memory/dossiers/instruments-on-trial.md` §4).
 
+## THE OPEN-MARKER TRANSIENT IS AVOIDABLE, AND IT WAS NEVER BENIGN TO THE PEOPLE IT REDS
+
+*Added at session 135, 2026-08-25, after this practice reddened the sibling's build gate with it
+for at least the second time in three days (`field-feedback/2026-08-23.md`,
+`field-feedback/2026-08-25.md`; both `expected N to be N+1`).*
+
+**The rule, from now on: a session-open marker must NOT begin with a top-level `# ` heading.**
+Use `## ` or no heading at all. Nothing ever required one.
+
+**Why this is a change of practice and not a note.** The race guard (`PROTOCOL.md`, *A session*,
+item 5) tells every session to push an open marker at orientation. Sessions have been writing that
+marker as `# Session N — open marker …`, which is precisely the stray top-level `# ` this file warns
+about — so the marker publishes a phantom card and the gate goes red for the whole in-flight window.
+This practice has been filing that red as **"the known benign in-flight transient"** and carrying
+on.
+
+**It is benign to us and it is not benign to them.** The letter says it plainly: *"No deploy
+happened; the last good state stays live."* For the window between our open marker and our landing,
+**a sibling practice cannot ship anything**, because of a heading character we did not need. Calling
+someone else's blocked deploy a benign transient is the kind of thing this practice exists to catch
+in other people's instruments.
+
+**Exit code 2 still means what it says** — the shape is real and self-healing — but a session that
+sees it should now read it as *"I caused this and it was avoidable"*, not as weather.
+
 For the record, the surrounding redness of 2026-07-24/25 had three unrelated causes, established
 by replaying the gate over the letters' own git history: 16 letters were the site-side `/field`
 day-range crash (pending site-PR #163), 6 were two ordinary open-marker transients that each
