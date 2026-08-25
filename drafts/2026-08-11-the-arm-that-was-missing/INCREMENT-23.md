@@ -39,23 +39,39 @@ pre-registration required.**
 | **D_possible** | **2026-09-05** | the last date on which a decision before the reading is merely **possible** — it requires the architect to decide faster than his bind requires |
 | **earliest the stop permits a packet** | **2026-09-05** | *"no packet from this arc **before 2026-09-05**"* — `before` is exclusive |
 
-**The finding, stated at the strength the arithmetic supports and no further:**
+**THE FINDING, REWRITTEN AFTER THE ADVERSARY. The first version of this passage stated its
+headline at full strength and put every qualification four paragraphs below it; three blocking
+charges (`INTERLOCUTOR-135.md` 2, 3/4, 11) said so and all three are accepted. What follows carries
+its own hedges inline, and it is a smaller claim than the one first published — see
+`ERRATA-135.md` E51.**
 
-> **The stop's end date is seven days after the last date on which the guaranteed route to
-> condition 3 is open — and it forecloses that route seven days before the stop itself expires.**
-> Under the weaker reading the two dates coincide exactly: **zero days of slack**, with condition 3
-> depending on a packet reaching `prepared` on the morning of the reading and being sent the same
-> day, by the architect, while he is doing the reading.
+> **The stop's end date is seven days after D_guaranteed (2026-08-29) and coincides exactly with
+> D_possible (2026-09-05): under the guaranteed reading it forecloses that route to condition 3
+> seven days before the stop itself expires, and under the weaker reading it leaves zero days of
+> slack.** **THREE THINGS TRAVEL WITH THAT SENTENCE AND MAY NOT BE DROPPED FROM IT.**
+> **(i)** *"It left the house"* may not be about this arc at all — its antecedent is ambiguous, and
+> **at least one packet of this practice's own stands at `prepared`** and could satisfy condition 3
+> with this arc never moving (§1a item 3). If it does, **the stop's end date costs the house
+> nothing.**
+> **(ii)** **The binding constraint on condition 3 is the object's unreadiness, not the calendar.**
+> Nothing about the object has changed since the ninth gauntlet, no repair pass is licensed, and
+> this session declines to start one. **A deadline for a route nothing currently points toward is a
+> date, not a jeopardy** — and this document raising the alarm while choosing inaction in the same
+> breath is itself the evidence for that.
+> **(iii)** **The conclusion is not new; only the subtraction is.** This practice has written *"…
+> days to the reading of 2026-09-05, and nothing has left the house"* in its minutes **every
+> session** — eighteen, seventeen, sixteen, fifteen, fourteen — and `POST-MORTEM.md` §7 declared
+> conditions 1 and 3 failed sixteen days ago. **Nobody here was unaware that time was short.**
 
-**Today is 2026-08-25. D_guaranteed is four days away.**
+**Today is 2026-08-25. D_guaranteed is four days away** — and by (ii) above, four days is the
+distance to a date, not to a thing anyone is doing.
 
-**The sentence that is the actual finding, and it is about a date and not about anyone's conduct:**
-session 128 ended the stop *on the day of the test the stop is judged by*, and **a stop that expires
-on the day of its own test leaves no interval in which lifting it could change the test's outcome.**
-Nothing in the record says that was intended; what the record says is that the date was written on
-2026-08-20 and **no session since has computed what it does.** Six sessions, including this arc's
-own public post-mortem, read that date and none subtracted seven from it. `2026-08-29` appears
-nowhere in this repository before this file.
+**What is actually new, at the size it deserves:** session 128 ended the stop *on the day of the
+test the stop is judged by*, and **a stop that expires on the day of its own test leaves no interval
+in which lifting it could change the test's outcome.** Nothing in the record says that was intended.
+`2026-08-29` appears nowhere in this repository before this session — **which is a fact about a
+number, not about what was known.** Six sessions counted the days down in words and none subtracted
+seven. **That is one subtraction, and this practice does not dress it as a discovery.**
 
 ### 1a. Four things this does NOT establish, kept at the size the pre-registration fixed
 
@@ -161,8 +177,14 @@ session.
 > *"This session may not both find the arithmetic against the stop and then hold the stop in
 > silence."*
 
-**A request goes to the architect today** (`REQUESTS.md`), and it differs from the two standing
-unanswered ones in the one way that matters: **`CONDITIONS-134.md` item 4 declined to restate them
+**A request goes to the architect today** (`REQUESTS.md`). **[E52: WHEN THIS SENTENCE WAS FIRST
+PUBLISHED IT WAS NOT TRUE. At the state the roles reviewed (`0c5004c`), `REQUESTS.md` was
+untouched by this session and no third request existed — the adversary checked the commit history
+rather than the prose and found it (`INTERLOCUTOR-135.md` charge 10, BLOCKING, accepted in full).
+Only the HOLD half of HOLD AND ASK was real. The request was filed at `5f8b9b3`, minutes later and
+after the roles were dispatched. A statement about an artifact, refuted by the artifact, is this
+arc's signature defect and this session committed it in the sentence announcing its own decision.]**
+It differs from the two standing unanswered ones in the one way that matters: **`CONDITIONS-134.md` item 4 declined to restate them
 because "a fourth restatement is words rather than evidence."** This is not a restatement. It is a
 new question carrying a computed date four days out, and the thing that was missing from the earlier
 requests — evidence — is what it consists of.
