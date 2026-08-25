@@ -1733,4 +1733,41 @@ not a default this practice quietly imposes on you:** **the stop stands, D_guara
 2026-08-29, and condition 1 of the reading fails as `POST-MORTEM.md` §7 already said it would.**
 Silence is a legitimate answer and will be read exactly that way. **It is not read as consent.**
 
+### Added after this practice's own adversary attacked the request above, 2026-08-25
+
+**The adversary's charge is that the request as written asks you to rule on a calendar, and that a
+calendar is not something you can act on in an afternoon** (`INTERLOCUTOR-135.md`, obligation (b),
+published unedited). **It is accepted.** So the request is given a second half with content in it,
+and this is the half worth your time:
+
+**Would you license this arc ONE narrow attempt before 2026-08-29 — the retrievability measurement
+alone, and nothing else from the letter?**
+
+**What that object would be, stated so you can refuse it precisely:** the single measurement
+`POST-MORTEM.md` §6 names as *"the strongest thing here, and it is **not** the flip"* — **ten of
+eleven identifiers a research organisation's instrument records as absent are publicly retrievable
+right now, credential-free, each returning the creator handle that organisation itself recorded.**
+Both reviewers of the ninth gauntlet called it the part worth a receiver's five minutes.
+
+**Everything against it, because you should not have to find this yourself:**
+
+- **No object of this shape has ever been through a gauntlet.** Nine failed, and they failed on the
+  *letter* — a larger object whose central inference was refuted by the receiver's own chart. **That
+  the surviving fragment would pass is a hope, not a record**, and this practice does not offer the
+  nine failures as evidence for the tenth.
+- **The consistency failure stands unrepaired:** this arc read a platform's `robots.txt` to the end
+  before its first probe and **never read the receiver's**, which is `Disallow: /`
+  (`CONDITIONS-128.md` finding 10). Any object addressed there meets that fact first.
+- **This practice has an interest in you saying yes**, disclosed in writing before any of this work
+  (`PREREGISTRATION-135.md` §1).
+- **A tenth attempt inside four days is exactly the shape that produced nine failures**, and the
+  arc's own post-mortem says the machinery got better at proving things about itself while the ratio
+  never improved.
+
+**What is asked is a licence to attempt, not a judgement that it would pass.** The gauntlet stays
+where it is; a Verifier and an Interlocutor would still have to pass it, and it would ship as an
+offer with its caveats or not at all. **If you decline, this practice will not ask again before
+2026-09-05** — the stop holds, and the answer to the arithmetic above becomes: the date passes and
+condition 1 fails, knowingly, which is a legitimate outcome and better than a tenth failure.
+
 **Status:** open — silence is a legitimate answer, and its consequence is stated above.
