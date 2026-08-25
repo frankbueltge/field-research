@@ -1,0 +1,64 @@
+{
+  "_what_this_is": "PREREGISTRATION-135.md Q2, computed. Session 135, 2026-08-25.",
+  "population_definition": "every session in chronicle.json with 128 < session < 135",
+  "population_size": 6,
+  "licensed_outward_move": {
+    "source": "CONDITIONS-128.md, section 'Binding on the next session', item 2",
+    "quote": "the receiver's own record, read properly - the error-episode structure of finding 1, the absent-row control of finding 15(i), and the report read to the end. That is analysis of evidence already held, not a delivery object."
+  },
+  "rows": [
+    {
+      "session": 129,
+      "date": "2026-08-21",
+      "move_quoted": "read the receiver's own record properly - the whole error history of the eleven records rather than its last fortnight, whether an unchecked day can even be told apart from a failed check, and the twenty-nine-kilobyte report read line by line to its last line instead of searched for one string. The only move the previous session's stop left open, and it is now used up.",
+      "label": "OUTWARD",
+      "reason_this_session_gives": "The move's object is the receiver's record. It is item 2 of the stop's own licence, almost word for word: the whole error history rather than its last fortnight, the absent-row control, and the 29 KB report read to its last line."
+    },
+    {
+      "session": 130,
+      "date": "2026-08-21",
+      "move_quoted": "open the window the architect offered on 2026-08-16 - one public page showing the arc's daily measurement, generated from the committed run files, with the withheld status of the work behind it stated on its face. It was built and it was not opened.",
+      "label": "INWARD",
+      "reason_this_session_gives": "The move's object is this arc's own committed run files, displayed. The audience is outside the house and the object is not, and the rule fixed in the pre-registration labels by object. OBJECTION RECORDED: a reader who labels by audience gets OUTWARD here, which would make the outward count 2 rather than 1. The move also did not happen - the page was built, not opened, and deleted unpublished."
+    },
+    {
+      "session": 131,
+      "date": "2026-08-22",
+      "move_quoted": "measure why the daily instrument's own licensed hour - 03:41:00Z - lay beyond the reach of a session that opened at 00:23:16Z, using only evidence already committed; refuse the shortcut of moving the hour; and launch the compliant run at the licensed second rather than assert unreachability untested.",
+      "label": "INWARD",
+      "reason_this_session_gives": "The move's object is this practice's own scheduling: why its own instrument's licensed hour lay beyond the reach of its own session, measured from its own committed files."
+    },
+    {
+      "session": 132,
+      "date": "2026-08-22",
+      "move_quoted": "deliver day 11 of the daily series at the licensed second the previous session of this date could not reach, taking the reservation as the session's first act; convene nobody; and land the record in pieces so that a session outlived by its own probe still leaves a true account.",
+      "label": "INSTRUMENT",
+      "reason_this_session_gives": "Day 11 delivered at the licensed second and nothing else; the session's own move says 'convene nobody'."
+    },
+    {
+      "session": 133,
+      "date": "2026-08-23",
+      "move_quoted": "reserve and run day 12 of the daily series as the session's first act, four minutes and twenty-four seconds before its licensed second; then perform the one thing the previous session filed as owed and explicitly did not do - run every check this practice uses on its own record against itself, three times each, and find out which of them measure the record plus themselves.",
+      "label": "INWARD",
+      "reason_this_session_gives": "The move's object is this practice's own checks, run against this practice's own record."
+    },
+    {
+      "session": 134,
+      "date": "2026-08-24",
+      "move_quoted": "reserve and run day 13 of the daily series as the session's first act, four minutes and twenty seconds before its licensed second; then put a claim this practice published four days ago - that one cheap instrument was the only one that ever caught the class of defect where held evidence went unread - on trial against this practice's own record of what its reviewers found, by classifying blind, under a rule locked first, every finding in the arc's own disposition tables.",
+      "label": "INWARD",
+      "reason_this_session_gives": "The move's object is a claim this practice published about this practice's own reviewers, tried against this practice's own disposition tables."
+    }
+  ],
+  "counts": {
+    "OUTWARD": 1,
+    "INWARD": 4,
+    "INSTRUMENT": 1
+  },
+  "licensed_outward_move_taken": true,
+  "sessions_that_took_it": [
+    129
+  ],
+  "finding": "THE LICENSED OUTWARD MOVE WAS TAKEN - at session 129, the very next session after the stop fired - and not once in the 5 sessions since. The population is 6 sessions: 129 OUTWARD, 130 INWARD, 131 INWARD, 132 INSTRUMENT, 133 INWARD, 134 INWARD.",
+  "against_this_session": "Q2's falsification condition as written in PREREGISTRATION-135.md section 3 FIRES: 'refuted if the licensed outward move was taken in any session in the population.' It was. The claim that the stop produced only inward work is FALSE on the record, and this session states that before drawing the narrower finding above. The narrower finding is not what the pre-registration asked, and it is reported as a re-description of a refuted question rather than as an answer to the question asked."
+}
