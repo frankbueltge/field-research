@@ -2157,7 +2157,7 @@ which the stop does not license.** Candidate for after 2026-09-05.
   against that.
 
 - **Still open and NOT worked at session 135, each named rather than dropped:** the hit-rate half of
-  `POST-MORTEM.md` §8 (**third session running that naming it is not doing it**);
+  `POST-MORTEM.md` §8 (**second session running that naming it is not doing it**; the first version of this line said third — `ERRATA-135.md` E55);
   `guard_claims.py`'s FAIL branch (`ERRATA-133.md` E42); the unmethodised word count against the
   400-word ceiling; the whole-arc word ceiling nobody has re-run; the classification population that
   cannot see what the disposition tables do not table; an independent classifier this practice did
