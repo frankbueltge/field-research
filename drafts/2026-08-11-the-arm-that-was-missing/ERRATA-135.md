@@ -79,3 +79,65 @@ had already been pushed to origin.
 
 **Neither was caught by a review role**, because both were found before the roles reported. That is
 luck about ordering, not a property of the roles, and this session does not claim it as one.
+
+---
+
+## E51 — the finding was published with its headline at full strength and its hedges four paragraphs below
+
+**Where it was published:** `INCREMENT-23.md` §1, at commit `0c5004c`, and in the first version of
+the request at `REQUESTS.md` (2026-08-25).
+
+**Caught by:** `INTERLOCUTOR-135.md`, charges 2, 3/4 and 11 — **three blocking charges, all
+accepted, all of which narrow this session's own result.**
+
+**What was wrong.** The bolded finding said the stop *"forecloses"* the route to condition 3, full
+stop. Three qualifications that can deflate it entirely sat below it in a section headed *"Four
+things this does NOT establish"* — which is where a reader who stops at the bold text never gets to.
+
+**The three, now carried inline in the finding itself:**
+
+1. **Condition 3 may not be about this arc at all.** Its antecedent is ambiguous and packets of
+   other threads stand at `prepared`. **The adversary tested the strong form of this charge against
+   `PROTOCOL.md` and lost it** — it argued *"the house"* means this practice's house, which would
+   cut the candidate packets from three to one — **and reported the loss, noting that one is still
+   enough to deflate the finding.** Recorded as the adversary's, including its failure.
+2. **The binding constraint is the object's unreadiness, not the calendar** (charge 11). No repair
+   pass is licensed, nothing points toward `prepared`, and this session declines to start anything.
+   **A deadline for a route nobody is taking is a date, not a jeopardy.**
+3. **The conclusion is not new; only the subtraction is** (charges 3 and 4). **This practice has
+   written *"… days to the reading of 2026-09-05, and nothing has left the house"* in its minutes
+   every session** — eighteen, seventeen, sixteen, fifteen, fourteen (`journal/2026-08-18.md:97`,
+   `2026-08-20.md:311`, `2026-08-21.md:265`, `2026-08-22.md:53`) — and `POST-MORTEM.md` §7 declared
+   conditions 1 and 3 failed sixteen days ago. **The absence of the string `2026-08-29` from this
+   repository is a fact about a number, not about what was known**, and the increment's *"no session
+   has computed what it does"* traded on the difference.
+
+**What is NOT withdrawn:** the arithmetic. D_guaranteed 2026-08-29, D_possible 2026-09-05, the
+seven-day gap, and the four days from today are unchanged, and the adversary reproduced them.
+
+---
+
+## E52 — the increment announced a request that did not exist
+
+**Where it was published:** `INCREMENT-23.md` §3, at commit `0c5004c`: *"A request goes to the
+architect today (`REQUESTS.md`)."*
+
+**Caught by:** `INTERLOCUTOR-135.md` charge 10, **BLOCKING**, and it was caught **by checking the
+commit history rather than by reading the prose** — `git show --stat 0c5004c` lists one file, and
+`REQUESTS.md` is not it.
+
+**What was wrong.** At the state the two roles were dispatched against, **only the HOLD half of
+HOLD AND ASK was real.** The document narrated its own decision as taken while half of it was
+still an intention.
+
+**The timeline, stated exactly:** roles dispatched against `0c5004c`; the request filed at
+`5f8b9b3`, minutes later; the adversary's report written from the earlier state. **So the charge is
+correct about the state it reviewed and moot in the state that lands** — and it is recorded at full
+weight anyway, because *"it was true a few minutes later"* is the excuse this arc has refused from
+itself nine times.
+
+**The class it belongs to:** a statement about an artifact, refuted by the artifact. **That is this
+arc's signature defect** — the thing nine gauntlets were lost to — **and this session committed it
+in the sentence announcing its own decision.**
+
+**Accepted in full. Marked in place in `INCREMENT-23.md` §3, not deleted.**

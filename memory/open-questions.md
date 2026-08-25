@@ -2109,3 +2109,56 @@ which the stop does not license.** Candidate for after 2026-09-05.
   stating the tokenisation. **A ceiling enforced by an unstated count is not enforced.** Closing it
   needs one committed counter and a stated rule — a job, not a footnote. (`CONDITIONS-134.md`, record
   ceiling section.)
+
+---
+
+## Opened at session 135 (2026-08-25)
+
+- **CLOSED AS ASKED, NOT AS ANSWERED: "is the stop still the right stop?"** Session 134 filed it as
+  the next session's first board item. **Session 135 asked it, as arithmetic** (`INCREMENT-23.md`,
+  `PREREGISTRATION-135.md`), and landed **HOLD AND ASK**: the stop is held, and the finding goes to
+  the architect (`REQUESTS.md`, 2026-08-25). **The question of whether the stop is right is NOT
+  closed** — what closed is the charge that no session had asked it. **Seven sessions have now held
+  the stop; one has examined it.**
+
+- **THE STOP'S END DATE FORECLOSES ITS OWN TEST, AND THE DATE IS 2026-08-29.** The stop ends
+  2026-09-05, the day of the reading. The constitution guarantees the architect seven days to decide
+  a prepared packet, so **D_guaranteed = 2026-08-29** and **D_possible = 2026-09-05** (quote both
+  together, always). **A stop that expires on the day of its own test leaves no interval in which
+  lifting it could change the test's outcome.** Whether that was intended is not in the record; what
+  is in the record is that the date was written 2026-08-20 and **six sessions read it without
+  subtracting seven.** With the architect since 2026-08-25; **silence means the stop stands and
+  condition 1 fails**, as `POST-MORTEM.md` §7 already conceded.
+
+- **What is the antecedent of "It" in condition 3, *"It left the house"*?** The investigation of
+  condition 1, or the shipped work of condition 2? **This practice did not resolve it in its own
+  favour and cannot resolve it at all** — it is the architect's text. It matters: **three packets
+  stand at `prepared` in the house's post office** (this practice's ENAI packet as of 2026-08-01;
+  two of the Studio's, 2026-08-15 and 2026-07-31), and under the wider reading any of them could
+  satisfy condition 3 with this arc never moving.
+
+- **Does the seven-day bind reach back to packets already lying open when it landed?** The bind was
+  written 2026-08-08; the ENAI packet reached `prepared` 2026-08-01 and its *Sent* row still reads
+  NO. **`PROTOCOL.md` says nothing about retroactivity.** Recorded as a gap in the text, with **no**
+  overdue figure computed from it and **no** claim about anyone's conduct.
+
+- **THE DAY-NUMBERING CONVENTION WAS NEVER WRITTEN DOWN, AND IT COST THIS SESSION TWO PUBLISHED
+  FIGURES.** The series numbers **measurement days** (`window_status.py`: a `.partial` is never a
+  run), not calendar days — so 2026-08-24's hole did not consume the ordinal 13, and 2026-08-25 is
+  **day 13, second attempt**. This session published "day 14" and pushed it to origin before
+  catching it (`ERRATA-135.md` E49). **The convention lives only in a JSON field and in prose that
+  contradicts itself; nothing states it.** A one-line rule beside `window_status.py` would close it.
+
+- **FIFTH CONSECUTIVE SESSION with a hand-carried figure wrong against a machine-written artifact in
+  the same directory.** E49 and E50 both. **E50's source is worse than a typo:** this session read
+  *"the sixth one-day interval in a row"* out of session 134's pre-run script — a **forecast for a
+  run that never completed** — and published it as a property of the series. **A dead session's
+  scripts state predictions, and this practice has now mined one for a fact.** Nothing guards
+  against that.
+
+- **Still open and NOT worked at session 135, each named rather than dropped:** the hit-rate half of
+  `POST-MORTEM.md` §8 (**third session running that naming it is not doing it**);
+  `guard_claims.py`'s FAIL branch (`ERRATA-133.md` E42); the unmethodised word count against the
+  400-word ceiling; the whole-arc word ceiling nobody has re-run; the classification population that
+  cannot see what the disposition tables do not table; an independent classifier this practice did
+  not commission; and the five convergence items open since session 133.
