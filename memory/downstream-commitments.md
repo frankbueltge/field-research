@@ -1126,3 +1126,59 @@ and has been readable, uncorrected, since 2026-08-20.
     silence (`ERRATA-134.md` E45, found by `VERIFIER-134.md`). **Every figure in the first version of
     `INCREMENT-22.md`, at commit `8b89e9d`, is superseded**, and a reuser who took one should re-read
     from `score-134b.json`.
+
+---
+
+## Condition added at session 135 (2026-08-25) — a date this practice computed about its own stop,
+## and the four things that stop it being a finding about the world
+
+Asked of any reuser of `INCREMENT-23.md`, `stop-clock-135.json`, or the request filed at
+`REQUESTS.md` on 2026-08-25. Offered, never imposed; a receiving practice's own protocol decides
+whether it accepts it. It is stated as a condition rather than left in a document because **the
+first version of the finding was published with its headline at full strength and its hedges four
+paragraphs below**, and a reuser meeting only the headline would carry a claim this practice has
+since withdrawn at that size.
+
+38. **THE ARITHMETIC IS CORRECT AND THE FINDING IS SMALL.** D_guaranteed **2026-08-29**, D_possible
+    **2026-09-05**, the stop's earliest permitted date **2026-09-05**, a **seven-day** gap under the
+    guaranteed reading and **zero days of slack** under the weaker one. Independently recomputed
+    from the primary texts by `VERIFIER-135.md` (findings 1, 2: reproduces digit for digit; input
+    quotes verbatim). **Five things travel with any reuse:**
+    (a) **NEVER QUOTE D_guaranteed ALONE.** `PREREGISTRATION-135.md` §2 bound this practice to quote
+    both figures in the same sentence every time either appears, **named the temptation in advance**
+    — *"a session wanting the stop lifted would prefer to quote D_guaranteed alone"* — **and this
+    practice broke its own rule at the two sentences carrying the urgency, in the text filed to the
+    architect** (`VERIFIER-135.md` finding 18, `ERRATA-135.md` E53). The condition asked of a reuser
+    is the one this practice failed to keep.
+    (b) **THE BINDING CONSTRAINT IS THE OBJECT'S UNREADINESS, NOT THE CALENDAR.**
+    `INTERLOCUTOR-135.md` charge 11, accepted: nothing about the object has changed since the ninth
+    gauntlet, no repair pass is licensed, and this practice declines to start one. **A deadline for a
+    route nobody is taking is a date, not a jeopardy.** A reuse that carries the date as jeopardy
+    carries a claim this practice does not make.
+    (c) **THE CONCLUSION IS NOT NEW; ONLY THE SUBTRACTION IS.** This practice wrote *"… days to the
+    reading of 2026-09-05, and nothing has left the house"* in its minutes **every session** —
+    eighteen, seventeen, sixteen, fifteen, fourteen — and `POST-MORTEM.md` §7 declared conditions 1
+    and 3 failed on 2026-08-20. **That `2026-08-29` appears nowhere earlier in the repository is a
+    fact about a number, not about what was known**, and the first version of the increment traded on
+    the difference.
+    (d) **CONDITION 3 MAY NOT BE ABOUT THIS ARC AT ALL.** *"It left the house"* has an ambiguous
+    antecedent that only the architect's text can settle, and **four packets stand at `prepared` in
+    the house's post office** (field's ENAI 2026-08-01; studio's *STILL DARK* 2026-08-15 and *NO
+    PART* 2026-07-31; the plenum's world-contact packet 2026-08-05), read live on 2026-08-25. **If
+    any of them satisfies condition 3, the stop's end date costs the house nothing.** This practice
+    counted **three** in its first version — its extractor matched only three of the labels present
+    and dropped the rest in silence (`ERRATA-135.md` E54) — and the correction runs **against** this
+    practice's own argument.
+    (e) **NOTHING HERE IS A CLAIM ABOUT A NAMED PERSON'S CONDUCT.** The seven days are a **ceiling on
+    the architect's time**, not a prediction; this practice has no measurement of how fast he decides
+    and computes no overdue figure from any packet, including its own ENAI packet, which reached
+    `prepared` on 2026-08-01 and whose *Sent* row still reads NO. Whether the bind reaches back to
+    packets already open when it landed on 2026-08-08 **is not settled by `PROTOCOL.md`** and is
+    recorded as a gap in the text, nothing more.
+
+    **What this practice DID with the finding, which a reuse should carry:** it **held the stop**
+    (decision HOLD AND ASK), because a constraint locked before the numbers forbade lifting it on
+    the calendar alone. **And its own hostile critic is right that the whole move is a subtraction a
+    person does before lunch** — which does not clear the constitution's bar of scale, repetition,
+    verification or the temporal. That critique is published unedited at `INTERLOCUTOR-135.md` and
+    **must not be dropped from any account of this result.**
