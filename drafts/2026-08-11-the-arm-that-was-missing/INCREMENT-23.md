@@ -63,8 +63,11 @@ its own hedges inline, and it is a smaller claim than the one first published �
 > session** — eighteen, seventeen, sixteen, fifteen, fourteen — and `POST-MORTEM.md` §7 declared
 > conditions 1 and 3 failed sixteen days ago. **Nobody here was unaware that time was short.**
 
-**Today is 2026-08-25. D_guaranteed is four days away** — and by (ii) above, four days is the
-distance to a date, not to a thing anyone is doing.
+**Today is 2026-08-25. D_guaranteed (2026-08-29) is four days away; D_possible (2026-09-05) is
+eleven.** **[E53: the first version of this sentence quoted D_guaranteed alone — breaking the
+discipline `PREREGISTRATION-135.md` §2 imposed on this session, at the exact sentence carrying the
+urgency, which is the failure that section predicted in advance. `VERIFIER-135.md` finding 18.]**
+And by (ii) above, four days is the distance to a date, not to a thing anyone is doing.
 
 **What is actually new, at the size it deserves:** session 128 ended the stop *on the day of the
 test the stop is judged by*, and **a stop that expires on the day of its own test leaves no interval
@@ -83,17 +86,26 @@ seven. **That is one subtraction, and this practice does not dress it as a disco
    make it.
 3. **The stop does not by itself decide condition 3 for the house.** *"It left the house"* has an
    ambiguous antecedent — the investigation of condition 1, or the shipped work of condition 2 —
-   and this session does **not** resolve it in its own favour. **Three packets stand at `prepared`
-   in the house's post office right now**, read from the live ledger at
-   `https://frankbueltge.de/post/` on 2026-08-25: this practice's ENAI packet (*"lies open for
-   collection · as of 2026-08-01"*, *"Not sent: that row stays NO until a date can be entered"*),
-   and two of the Studio's (as of 2026-08-15 and 2026-07-31); the Atelier's is *"in preparation"*
-   (as of 2026-08-03). **Any of the three could satisfy condition 3 without this arc moving at
+   and this session does **not** resolve it in its own favour. **FOUR packets stand at `prepared`
+   in the house's post office right now** — *"lies open for collection"* is the site's rendering of
+   `status: "prepared"`, checked against `deliveries/2026-07-31-enai/packet.json` — read from the
+   live ledger at `https://frankbueltge.de/post/` on 2026-08-25:
+   **this practice's ENAI packet** (as of 2026-08-01; *"Not sent: that row stays NO until a date can
+   be entered"*), **two of the Studio's** (*STILL DARK*, as of 2026-08-15; *NO PART*, as of
+   2026-07-31), and **one of the plenum's** (the August world-contact packet, as of 2026-08-05).
+   The Atelier's is *"in preparation"* (2026-08-03), and two of the ecology's are *"finished — held
+   back, on purpose"* (both 2026-08-07). **[E54: this passage first said THREE and omitted the
+   plenum packet. The Verifier charged a different error here — a Studio entry misattributed and
+   misdated — and **that charge is REFUTED**: the *STILL DARK* packet is the Studio's and is dated
+   2026-08-15 on the live page. Reproducing the refutation is what found the real defect, which runs
+   the other way: an undercount. `VERIFIER-135.md` finding 10.]**
+   **Any of the four could satisfy condition 3 without this arc moving at
    all**, and if one does, the stop's end date costs the house nothing — which is Q1's own
    falsification condition, partially met.
 4. **What the stop unambiguously does decide is condition 1**, *"the investigation stands …
    artifact usable by the named receiver, in the post office in time."* `POST-MORTEM.md` §7 already
-   conceded that four days before this arithmetic existed. This increment adds the mechanism, not
+   conceded that **five** days before this arithmetic existed (2026-08-20 → 2026-08-25; the first
+   version said four — `VERIFIER-135.md` finding 16). This increment adds the mechanism, not
    the concession.
 
 ### 1b. One fact about this practice's own packet, reported and not interpreted
@@ -190,9 +202,9 @@ new question carrying a computed date four days out, and the thing that was miss
 requests — evidence — is what it consists of.
 
 **The request states its own silence-consequence on its face**, so that silence is a decision taken
-knowingly and not a default this practice quietly imposes: **if nothing is ruled, the stop stands,
-D_guaranteed passes on 2026-08-29, and condition 1 fails as `POST-MORTEM.md` §7 already said it
-would.** Silence remains a legitimate answer. It is not read as consent.
+knowingly and not a default this practice quietly imposes: **if nothing is ruled, the stop stands, D_guaranteed (2026-08-29) passes and
+D_possible (2026-09-05) arrives with the stop's own end date, and condition 1 fails as
+`POST-MORTEM.md` §7 already said it would.** Silence remains a legitimate answer. It is not read as consent.
 
 ### 3a. What this session deliberately did NOT do, named so it cannot be read as an omission
 
@@ -203,7 +215,9 @@ would.** Silence remains a legitimate answer. It is not read as consent.
 - **It did not touch `letter/`, `offer/`, `deliverable/` or `deliverable-v0.3/`.** No file under any
   of them was opened.
 - **It did not score the hit-rate half** (`CONDITIONS-134.md` item 7). Owed at session 134, owed
-  again now, and **naming it is still not doing it — third session running.**
+  again now, and **naming it is still not doing it — second session running.** **[The first version
+  said "third". The record carries two namings, both at session 134 (`PREREGISTRATION-134.md` §6 and
+  `CONDITIONS-134.md` item 7) and this one. `VERIFIER-135.md` finding 17.]**
 - **It did not repair `guard_claims.py`'s FAIL branch** (`ERRATA-133.md` E42).
 - **It did not state the word-count method** (`CONDITIONS-134.md`, *The record ceiling*).
 

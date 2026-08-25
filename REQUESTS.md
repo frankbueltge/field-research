@@ -1694,7 +1694,17 @@ lifting it could change the test's outcome.** This practice has held that stop, 
 D_guaranteed alone would be the flattering half. Under the weaker reading the stop's earliest
 permitted date and D_possible coincide exactly: **zero days of slack**, with condition 3 depending on
 a packet reaching `prepared` on the morning of the reading and being sent the same day, by you, while
-you are doing the reading. **Today is 2026-08-25. D_guaranteed is four days away.**
+you are doing the reading. **Today is 2026-08-25. D_guaranteed (2026-08-29) is four days away;
+D_possible (2026-09-05) is eleven.**
+
+> **CORRECTED BEFORE YOU READ IT — `ERRATA-135.md` E53, found by this practice's own Verifier
+> (finding 18).** The sentence above ended *"D_guaranteed is four days away"* and named D_possible
+> nowhere — **two lines after the paragraph claiming both are always quoted together.** The same
+> break occurred in the consequence-of-silence line below. **`PREREGISTRATION-135.md` §2 predicted
+> exactly this failure in advance** — *"a session wanting the stop lifted would prefer to quote
+> D_guaranteed alone"* — wrote the rule against it, and then this practice broke the rule at the two
+> sentences where the urgency lives. Repaired at both. The self-congratulating sentence is left
+> standing above rather than deleted, because it is the evidence.
 
 **What is NOT being claimed, and these are load-bearing.**
 
@@ -1704,10 +1714,12 @@ you are doing the reading. **Today is 2026-08-25. D_guaranteed is four days away
    deadline is not evidence that the ninth verdict was wrong**, and this practice does not offer it
    as one.
 3. **Not that this decides condition 3 for the house.** *"It left the house"* has an ambiguous
-   antecedent, and **three packets stand at `prepared` in your post office today** — this practice's
-   ENAI packet (as of 2026-08-01) and two of the Studio's (2026-08-15, 2026-07-31), read from
-   `https://frankbueltge.de/post/` on 2026-08-25. **Any of them could satisfy condition 3 without
-   this arc moving at all.** What the stop unambiguously decides is **condition 1**, which
+   antecedent, and **four packets stand at `prepared` in your post office today** — this practice's
+   ENAI packet (as of 2026-08-01), two of the Studio's (*STILL DARK*, 2026-08-15; *NO PART*,
+   2026-07-31) and one of the plenum's (the August world-contact packet, 2026-08-05) — read from
+   `https://frankbueltge.de/post/` on 2026-08-25. **[Corrected before you read it: this said THREE
+   and omitted the plenum packet — `ERRATA-135.md` E54.]** **Any of them could satisfy condition 3
+   without this arc moving at all.** What the stop unambiguously decides is **condition 1**, which
    `POST-MORTEM.md` §7 already conceded.
 
 **What this practice did with the finding, before asking you.** It **held the stop**
@@ -1729,8 +1741,9 @@ lifting of the stop, and no answer to the two questions of 2026-08-21 and 2026-0
 where they were.
 
 **The consequence of silence, stated on its face so that silence is a decision taken knowingly and
-not a default this practice quietly imposes on you:** **the stop stands, D_guaranteed passes on
-2026-08-29, and condition 1 of the reading fails as `POST-MORTEM.md` §7 already said it would.**
+not a default this practice quietly imposes on you:** **the stop stands, D_guaranteed (2026-08-29) passes and
+D_possible (2026-09-05) arrives with the stop's own end date, and condition 1 of the reading fails as
+`POST-MORTEM.md` §7 already said it would.**
 Silence is a legitimate answer and will be read exactly that way. **It is not read as consent.**
 
 ### Added after this practice's own adversary attacked the request above, 2026-08-25
