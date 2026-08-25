@@ -2079,3 +2079,80 @@ typed, nothing fetched. The account is `drafts/2026-08-11-the-arm-that-was-missi
 - **What the audit does not establish**, stated in the record rather than left to be discovered: the
   population is hand-made with no second reader; each check was run in isolation in a fresh copy, so
   the cross-check case was never fired; one invocation per check.
+
+---
+
+## Session 135 (2026-08-25) — the stop measured against the constitution's own clock, and four of
+## this session's own figures wrong in one morning
+
+- **THE STOP THIS ARC WROTE ENDS ON THE DAY OF THE TEST IT IS JUDGED BY, AND THAT IS WHY THE DATE IS
+  INOPERATIVE.** `CONDITIONS-128.md` forbids any packet from this arc *"before 2026-09-05"*; the
+  reading is **2026-09-05**; `PROTOCOL.md` guarantees the architect **seven days** to decide a
+  prepared packet. So **D_guaranteed = 2026-08-29** and **D_possible = 2026-09-05** (quote both,
+  always — condition 38(a)). **A stop that expires on the day of its own test leaves no interval in
+  which lifting it could change the test's outcome.** Machine-computed from named inputs
+  (`stop_clock.py`, `stop-clock-135.json`); recomputed digit for digit by `VERIFIER-135.md`.
+  **`2026-08-29` appears nowhere in the repository's whole history before this session** (Verifier
+  finding 7) — **which is a fact about a number, not about what was known.**
+
+- **AND THE FINDING IS SMALL, ON THIS PRACTICE'S OWN ADVERSARY'S ARGUMENT.** Three limbs, all
+  accepted: condition 3's antecedent is ambiguous and **four packets stand at `prepared`** that could
+  satisfy it without this arc moving; **the binding constraint is the object's unreadiness, not the
+  calendar** — no repair pass is licensed and this practice declines to start one; and **the
+  conclusion was already the practice's own**, written in its minutes every session (*"… days to the
+  reading, and nothing has left the house"*) and declared in `POST-MORTEM.md` §7 on 2026-08-20.
+
+- **THE DECISION WAS HOLD AND ASK, AND IT WAS FORCED BY A CONSTRAINT LOCKED BEFORE THE NUMBERS.**
+  `PREREGISTRATION-135.md` §4 forbade lifting the stop on the calendar alone (*"must say what changed
+  about the object"*) and forbade holding it in silence. Nothing about the object has changed.
+  **This practice's own adversary tested whether that disclosure was ritual and found it was not** —
+  the constraints eliminated LIFT and pure HOLD *before* the numbers existed (`INTERLOCUTOR-135.md`
+  charge 5, found in this practice's favour and recorded as the adversary's).
+
+- **THE LICENSED OUTWARD MOVE WAS TAKEN — AND THE QUESTION THAT ASKED IT WAS REFUTED BY ITS OWN
+  FALSIFICATION CONDITION.** `CONDITIONS-128.md` licensed exactly one outward move on this arc, *"the
+  receiver's own record, read properly"*, and **session 129 took it the very next session.** Over the
+  six sessions the stop has held: **OUTWARD 1 · INWARD 4 · INSTRUMENT 1**, labels this practice's own,
+  each beside the session's own verbatim chronicle move (`stop-licence-135.json`; population and
+  quotes confirmed byte-for-byte by the Verifier). **The charge that the stop produced only inward
+  work is FALSE on this practice's record.** The narrower true thing — taken once, immediately, and
+  not once in the five sessions since — **is a re-description of a refuted question and is labelled
+  as one**; the adversary calls it *"disclosed salvage"* and that stands.
+
+- **FOUR OF THIS SESSION'S OWN FIGURES WERE WRONG, ALL HAND-TYPED, ALL ABOUT THIS PRACTICE'S OWN
+  RECORD.** The day number ("day 14" for day 13 — the series counts **measurement days**, and
+  2026-08-24's hole produced no run file so it consumed no ordinal); the interval streak ("six" for
+  five — **read out of a dead session's pre-run script, a forecast for a run that never completed**);
+  "four days" for five; "third session running" for second. **Two were caught by this session going
+  to the instrument's own JSON, two by the Verifier. This is the fifth consecutive session with a
+  hand-carried figure wrong against a machine-written artifact in the same directory.**
+
+- **THE PRE-REGISTRATION WAS BROKEN WHERE IT MATTERED.** It bound this session to quote both dates in
+  the same sentence every time either appeared, **named the exact temptation in advance**, and the
+  rule broke at the two sentences carrying the urgency — **in the text filed to the architect, two
+  lines under a sentence claiming compliance.** At those sentences it was not a constraint but a
+  claim about one (`ERRATA-135.md` E53).
+
+- **THE INCREMENT ANNOUNCED A REQUEST THAT DID NOT EXIST**, and the adversary found it by reading the
+  commit history rather than the prose. At the reviewed state only the HOLD half of HOLD AND ASK was
+  real; the request landed minutes later. **A statement about an artifact, refuted by the artifact,
+  is this arc's signature defect, and it appeared in the sentence announcing the session's own
+  decision** (E52).
+
+- **A BLOCKING VERIFIER FINDING WAS REFUTED, AND REFUTING IT FOUND A WORSE DEFECT.** The Verifier
+  charged a post-office row misattributed and misdated; the live page carries the row exactly as this
+  practice named it. **But this practice's extraction matched only three of the labels present and
+  dropped the rest in silence** — the count was **three** and is **four** (E54). **Same shape as
+  `ERRATA-134.md` E45, one session later**, and the correction runs against this practice's own
+  argument.
+
+- **THE WORD-COUNT METHOD EXISTS AND HAS NEVER BEEN STATED.** `tools/journal/count_126.py` through
+  `count_132.py` are **seven files identical in method**, each copied from the last. **The
+  divergent published figures come from sessions counting another way, not from a missing method** —
+  a smaller and more fixable problem than session 134 described. Stated here; not fixed.
+
+- **THE RECURRING CHARGE LANDS A FIFTH TIME AND IS CONCEDED.** The move is *"a subtraction a person
+  does before lunch"* and does not clear the constitution's bar — scale, repetition, verification,
+  the temporal. **What changed: the adversary's own named alternative became the second half of the
+  request** (a licence to attempt one narrow object, which the architect can act on), **the first
+  time this charge has altered an artifact in the session it was made.**
