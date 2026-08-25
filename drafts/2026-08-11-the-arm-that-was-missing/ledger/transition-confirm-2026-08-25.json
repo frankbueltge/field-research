@@ -1,0 +1,224 @@
+{
+ "generated_utc": "2026-08-25T05:25:18Z",
+ "diff": "ledger/diff-day12-day13.json",
+ "vantage": {
+  "ip": "160.79.106.128",
+  "city": "Columbus",
+  "region": "Ohio",
+  "country": "US",
+  "loc": "39.9612,-82.9988",
+  "timezone": "America/New_York",
+  "asn": "AS396982",
+  "registrant": "[redacted under this practice's naming rule]",
+  "source": "https://ipinfo.io/json",
+  "fetched_utc": "2026-08-25T05:24:59Z"
+ },
+ "passes_per_transition": 5,
+ "K4": "PASSES \u2014 every transition confirmed",
+ "results": [
+  {
+   "vid": "7188619321193549099",
+   "handle": "josh_exists",
+   "arm": null,
+   "from": "NOT-RETRIEVABLE",
+   "to": "RETRIEVABLE",
+   "reconfirmation_states": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": true,
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests",
+   "passes": [
+    {
+     "http": 200,
+     "bytes": 1315,
+     "author_unique_id": "josh_exists",
+     "title_len": 28,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 1,
+     "utc": "2026-08-25T05:24:59Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1315,
+     "author_unique_id": "josh_exists",
+     "title_len": 28,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 2,
+     "utc": "2026-08-25T05:25:01Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1315,
+     "author_unique_id": "josh_exists",
+     "title_len": 28,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-25T05:25:02Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1315,
+     "author_unique_id": "josh_exists",
+     "title_len": 28,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 4,
+     "utc": "2026-08-25T05:25:03Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1315,
+     "author_unique_id": "josh_exists",
+     "title_len": 28,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 5,
+     "utc": "2026-08-25T05:25:04Z"
+    }
+   ]
+  },
+  {
+   "vid": "7298342318195641601",
+   "handle": "13newsil",
+   "arm": null,
+   "from": "NOT-RETRIEVABLE",
+   "to": "RETRIEVABLE",
+   "reconfirmation_states": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": true,
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests",
+   "passes": [
+    {
+     "http": 200,
+     "bytes": 2857,
+     "author_unique_id": "13newsil",
+     "title_len": 334,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 1,
+     "utc": "2026-08-25T05:25:06Z"
+    },
+    {
+     "http": 200,
+     "bytes": 2859,
+     "author_unique_id": "13newsil",
+     "title_len": 334,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 2,
+     "utc": "2026-08-25T05:25:07Z"
+    },
+    {
+     "http": 200,
+     "bytes": 2859,
+     "author_unique_id": "13newsil",
+     "title_len": 334,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-25T05:25:08Z"
+    },
+    {
+     "http": 200,
+     "bytes": 2857,
+     "author_unique_id": "13newsil",
+     "title_len": 334,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 4,
+     "utc": "2026-08-25T05:25:10Z"
+    },
+    {
+     "http": 200,
+     "bytes": 2857,
+     "author_unique_id": "13newsil",
+     "title_len": 334,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 5,
+     "utc": "2026-08-25T05:25:11Z"
+    }
+   ]
+  },
+  {
+   "vid": "7312458134763736325",
+   "handle": "lulu_jkt48",
+   "arm": null,
+   "from": "NOT-RETRIEVABLE",
+   "to": "RETRIEVABLE",
+   "reconfirmation_states": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": true,
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests",
+   "passes": [
+    {
+     "http": 200,
+     "bytes": 1494,
+     "author_unique_id": "lulu_jkt48",
+     "title_len": 24,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 1,
+     "utc": "2026-08-25T05:25:12Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1494,
+     "author_unique_id": "lulu_jkt48",
+     "title_len": 24,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 2,
+     "utc": "2026-08-25T05:25:13Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1494,
+     "author_unique_id": "lulu_jkt48",
+     "title_len": 24,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-25T05:25:15Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1498,
+     "author_unique_id": "lulu_jkt48",
+     "title_len": 24,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 4,
+     "utc": "2026-08-25T05:25:16Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1494,
+     "author_unique_id": "lulu_jkt48",
+     "title_len": 24,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 5,
+     "utc": "2026-08-25T05:25:17Z"
+    }
+   ]
+  }
+ ]
+}

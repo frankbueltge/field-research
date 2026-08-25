@@ -13,7 +13,8 @@
    "ledger/transition-confirm-2026-08-20.json",
    "ledger/transition-confirm-2026-08-21.json",
    "ledger/transition-confirm-2026-08-22.json",
-   "ledger/transition-confirm-2026-08-23.json"
+   "ledger/transition-confirm-2026-08-23.json",
+   "ledger/transition-confirm-2026-08-25.json"
   ],
   "corrections": "ledger/corrections.json",
   "corrections_sha256": "357cb2b332faa44fe605fc03882e3be5ba8699daa93fdc54e6128937a4a12ae6"
@@ -22,8 +23,8 @@
  "what_a_pass_is": "one further request to the same endpoint for the same identifier, at the instrument's own 1.0 s spacing, immediately after the reading being tested. A reading is CONFIRMED only if all five agree with it.",
  "all_readings": {
   "NOT-RETRIEVABLE->RETRIEVABLE": {
-   "n": 9,
-   "confirmed": 9,
+   "n": 12,
+   "confirmed": 12,
    "refuted": 0
   },
   "RETRIEVABLE->NOT-RETRIEVABLE": {
@@ -34,8 +35,8 @@
  },
  "genuine_transitions_only": {
   "NOT-RETRIEVABLE->RETRIEVABLE": {
-   "n": 7,
-   "confirmed": 7,
+   "n": 10,
+   "confirmed": 10,
    "refuted": 0
   },
   "RETRIEVABLE->NOT-RETRIEVABLE": {
@@ -515,6 +516,63 @@
     "NOT-RETRIEVABLE",
     "NOT-RETRIEVABLE",
     "NOT-RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-25.json",
+   "sidecar_sha256": "893145a4dc84da8bc818a53b959545d4996d0fc2b354b8a3fd2491eae61d223b",
+   "generated_utc": "2026-08-25T05:25:18Z",
+   "vid": "7188619321193549099",
+   "handle": "josh_exists",
+   "direction": "NOT-RETRIEVABLE->RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-25.json",
+   "sidecar_sha256": "893145a4dc84da8bc818a53b959545d4996d0fc2b354b8a3fd2491eae61d223b",
+   "generated_utc": "2026-08-25T05:25:18Z",
+   "vid": "7298342318195641601",
+   "handle": "13newsil",
+   "direction": "NOT-RETRIEVABLE->RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-25.json",
+   "sidecar_sha256": "893145a4dc84da8bc818a53b959545d4996d0fc2b354b8a3fd2491eae61d223b",
+   "generated_utc": "2026-08-25T05:25:18Z",
+   "vid": "7312458134763736325",
+   "handle": "lulu_jkt48",
+   "direction": "NOT-RETRIEVABLE->RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
    ],
    "n_passes": 5,
    "confirmed": true,
