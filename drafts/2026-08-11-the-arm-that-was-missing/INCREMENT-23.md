@@ -1,13 +1,16 @@
 # Increment 23 — the stop, measured against the clock, and the decision that follows
 
 *Session 135, 2026-08-25. Answers `PREREGISTRATION-135.md`, locked at `761292b`, **03:40:22Z —
-thirty-eight seconds before the day-14 probe fired** and before any figure below existed. The two
+thirty-eight seconds before the day-13 probe fired** and before any figure below existed. The two
 computations are machine-written (`stop_clock.py` → `stop-clock-135.json`, `stop_licence.py` →
 `stop-licence-135.json`); the labels in Q2 are this session's judgement and are marked as such in
 the artifact itself.*
 
-**Reviewed state:** this file and the two JSON artifacts at commit `df54cc0`. Any revision re-runs
-the roles.
+**Reviewed state:** the two roles were dispatched against this file and the two JSON artifacts at
+commit **`0c5004c`**. **That state no longer exists.** This session found two of its own figures
+wrong before the roles reported — the day number and the interval streak — and corrected §3b in
+place (`ERRATA-135.md` E49, E50). **Their verdicts are good only for `0c5004c`**, they were not run
+on those corrections, and neither correction touches Q1 or Q2. Both reports are published unedited.
 
 ---
 
