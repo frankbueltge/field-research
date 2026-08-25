@@ -104,7 +104,25 @@ rather than fixing it: closing it means one generalised counter replacing seven 
 session has spent its budget. Handed on in `memory/open-questions.md`.
 
 **This session's minutes are counted by that method and the command is printed in the journal**, so
-the figure is checkable rather than asserted.
+the figure is checkable rather than asserted: **399 against 400.**
+
+**AND APPLYING THE STATED METHOD BACKWARDS GIVES A RESULT NOBODY HAS PUBLISHED.** Run over the two
+previous journals, `tools/journal/count_135.py` returns **391 for session 134** — which published
+*"exactly 400 words against the constitution's 400"* — and **412 for session 133**, which is **over
+the ceiling**, and which the record variously states as 414, 433, 438 and 455. **Neither figure
+matches what its session published.** This is stated as a fact about three documents, not as a
+charge against either session: they used other tokenisations, which is exactly the defect
+`CONDITIONS-134.md` identified. **A ceiling enforced by an unstated count was not enforced, and the
+first uniform count says one session exceeded it.** Handed on rather than acted on — no
+retroactive correction is proposed here, because the right fix is one counter replacing eight, and
+that is still not written.
+
+**And the counter had a defect of its own, found by running it twice.** Its first version omitted
+the `*Minutes proper:` terminator that all seven of its predecessors carry, and **counted its own
+footnote about its own count** — 502 against a 400 ceiling. **A counter that counts the sentence
+reporting its count is the same shape as a guard that is true somewhere and false where it lives**,
+which this arc named as its signature defect at gauntlet 9. Fixed, and recorded in the script's own
+comment.
 
 **The whole-arc figure — 366,455 words against a 3,000-word ceiling at `CONDITIONS-133.md` — is
 larger again today and was not re-run.** Two sessions have now named that question and neither has
