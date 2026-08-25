@@ -1,0 +1,78 @@
+probe pid 7216 exited at 2026-08-25T05:24:58Z
+run file present; running close pipeline
+{
+ "run1": {
+  "path": "ledger/run-2026-08-23T0341Z.json",
+  "label": "2026-08-23T03:41:00Z (manifest carried a placeholder)",
+  "start": "2026-08-23T03:41:00Z",
+  "asn": "AS396982",
+  "n": 3869
+ },
+ "run2": {
+  "path": "ledger/run-2026-08-25T0341Z.json",
+  "label": "2026-08-25T03:41:00Z (manifest carried a placeholder)",
+  "start": "2026-08-25T03:41:00Z",
+  "asn": "AS396982",
+  "n": 3869
+ },
+ "vantage_guard": {
+  "run1_asn": "AS396982",
+  "run2_asn": "AS396982",
+  "same_autonomous_system": true,
+  "verdict": "COMPARABLE"
+ },
+ "corrections_applied": {
+  "overlay": null,
+  "n": 0,
+  "rows": [],
+  "note": "raw run files, no overlay applied"
+ },
+ "observed_in_both": 3869,
+ "determinate_in_both": 3794,
+ "touching_indeterminate": 75,
+ "n_transitions": 3,
+ "disagreement_rate_pct": 0.079
+}
+
+TRANSITIONS (each must survive an immediate re-request — K5):
+  7188619321193549099 NOT-RETRIEVABLE -> RETRIEVABLE
+  7298342318195641601 NOT-RETRIEVABLE -> RETRIEVABLE
+  7312458134763736325 NOT-RETRIEVABLE -> RETRIEVABLE
+{
+ "run1": {
+  "path": "ledger/run-2026-08-23T0341Z.json",
+  "label": "2026-08-23T03:41:00Z (manifest carried a placeholder)",
+  "start": "2026-08-23T03:41:00Z",
+  "asn": "AS396982",
+  "n": 3869
+ },
+ "run2": {
+  "path": "ledger/run-2026-08-25T0341Z.json",
+  "label": "2026-08-25T03:41:00Z (manifest carried a placeholder)",
+  "start": "2026-08-25T03:41:00Z",
+  "asn": "AS396982",
+  "n": 3869
+ },
+ "vantage_guard": {
+  "run1_asn": "AS396982",
+  "run2_asn": "AS396982",
+  "same_autonomous_system": true,
+  "verdict": "COMPARABLE"
+ },
+ "corrections_applied": {
+  "overlay": "ledger/corrections.json",
+  "n": 0,
+  "rows": [],
+  "note": "A corrected state is a reading this arc's own confirmation step refuted with five immediate re-requests. The run files are unchanged; this diff reads them through the overlay and says so here."
+ },
+ "observed_in_both": 3869,
+ "determinate_in_both": 3794,
+ "touching_indeterminate": 75,
+ "n_transitions": 3,
+ "disagreement_rate_pct": 0.079
+}
+
+TRANSITIONS (each must survive an immediate re-request — K5):
+  7188619321193549099 NOT-RETRIEVABLE -> RETRIEVABLE
+  7298342318195641601 NOT-RETRIEVABLE -> RETRIEVABLE
+  7312458134763736325 NOT-RETRIEVABLE -> RETRIEVABLE
