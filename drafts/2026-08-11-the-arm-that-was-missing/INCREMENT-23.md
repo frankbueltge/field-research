@@ -182,20 +182,34 @@ would.** Silence remains a legitimate answer. It is not read as consent.
 - **It did not repair `guard_claims.py`'s FAIL branch** (`ERRATA-133.md` E42).
 - **It did not state the word-count method** (`CONDITIONS-134.md`, *The record ceiling*).
 
-### 3b. Day 13 is a hole, and this session found it rather than inheriting a claim about it
+### 3b. 2026-08-24 is a hole, and this session found it rather than inheriting a claim about it
+
+**[CORRECTED IN PLACE, `ERRATA-135.md` E49 and E50. This section was published calling today's run
+"day 14" and the streak "six". BOTH WERE WRONG, both were this session's own, and both were caught
+by going to the instrument's files instead of the previous session's prose. The corrected text
+follows; what was withdrawn is named in the errata, not deleted from the record.]**
 
 The checkout carries `ledger/run-2026-08-24T0341Z.json.partial` (212,692 bytes) and a stale
 reservation, and **no completed run file for 2026-08-24**. Session 134 died mid-run; its own
 checkpoint commit named the outcome in advance — *"so a death leaves a true account of a hole."*
-**A partial file is never a run.** Day 13 is not measured, not reconstructed from the partial, and
-not filled in later at another hour.
+**A partial file is never a run.** 2026-08-24 is not measured, not reconstructed from the partial,
+and not filled in later at another hour.
+
+**The day NUMBER is not lost with the calendar day, and this session had that wrong.** The series
+numbers by **measurement day**, not calendar position — `interval-metrics-133.json` carries
+`n_measurement_days: 12` for day 12 (2026-08-23), under `window_status.py`'s rule that a `.partial`
+is never a run. Twelve measurement days stand in the ledger today. **Session 134's lost attempt was
+day 13, and today's run is day 13** — the same ordinal, attempted a second time (E49).
 
 **The consequence for the series, stated because it is against the arc's own line:** the comparison
-day for day 14 is **2026-08-23**, an interval of **2.0000 days**, and **the six-in-a-row streak of
-one-day intervals ends here.** It ends because a session died, not because the field moved. **No
-trend is claimed and no test is scored** (`CONDITIONS-132.md` item 5, downstream condition 30(b)).
+day is **2026-08-23**, an interval of **2.0000 days**, and the streak of consecutive one-day
+intervals **ends at five, not six** — `DAY12-2026-08-23.md` says *"the fifth one-day interval in a
+row"*, and the six this session first published was a **forecast read out of the dead session's
+script**, for a run that never completed (E50). It ends because a session died, not because the
+field moved. **No trend is claimed and no test is scored** (`CONDITIONS-132.md` item 5, downstream
+condition 30(b)).
 
-**Day 14 fired at 03:40:59Z**, vantage **AS396982**, hour unmoved, as this session's first act —
+**Day 13 fired at 03:40:59Z**, vantage **AS396982**, hour unmoved, as this session's first act —
 `CONDITIONS-134.md` item 3 firing as written.
 
 ---
