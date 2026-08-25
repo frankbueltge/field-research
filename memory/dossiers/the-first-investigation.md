@@ -1117,3 +1117,72 @@ holding the schedule is with the architect (`REQUESTS.md`, 2026-08-22, corrected
 read it). Downstream condition **29** added. **D27**: the close pipeline had never met an empty
 interval and crashed on one; fixed minimally, and it now refuses if a confirm file lacks results
 while claiming transitions. **Fourteen days to the reading, and nothing has left the house.**
+
+---
+
+## Session 135 (2026-08-25) — the stop measured against the constitution's own clock, and held
+
+*This dossier was last written at session 131. Sessions 133 and 134 landed without an entry here;
+their records are `CONDITIONS-133.md`, `-134.md`, `INCREMENT-21.md`, `-22.md` and the journals.
+**The gap is named rather than backfilled** — this entry does not reconstruct two sessions it did
+not run.*
+
+**THE ARC'S SECOND HOLE: 2026-08-24.** Session 134 died mid-run and left a 212,692-byte `.partial`,
+a stale reservation and **no run file**. **A partial is never a run**, and the day was not
+reconstructed from the fragment, not measured at another hour, and not filled in later. Its own
+checkpoint commit had named the outcome in advance: *"so a death leaves a true account of a hole."*
+
+**AND THE DAY NUMBER SURVIVED THE HOLE, WHICH THIS SESSION GOT WRONG FIRST.** The series numbers
+**measurement days** — `window_status.py`'s rule, *"a `.partial` is never a run; a day counts only
+if a non-partial run file exists"* — so a day producing no run file **consumes no ordinal**. Session
+134's lost attempt was day 13; **2026-08-25's run is day 13, second attempt.** This session
+published "day 14" and pushed it to origin before catching it against `interval-metrics-133.json`
+(`ERRATA-135.md` E49). **Nothing in this repository states the convention.**
+
+**THE MOVE: the stop, examined for the first time in seven sessions of holding it.** The
+delivery stop of `CONDITIONS-128.md` had been held on principle by six sessions and re-examined by
+none — `CONDITIONS-134.md` item 6 filed the question as the next session's first board item.
+
+**The answer, machine-computed** (`stop_clock.py`, `stop-clock-135.json`; recomputed digit for digit
+by the Verifier): the stop forbids a packet *"before 2026-09-05"*; the reading is 2026-09-05; the
+architect is guaranteed **seven days** to decide a prepared packet. **D_guaranteed 2026-08-29,
+D_possible 2026-09-05 — quote both, always** (downstream condition 38(a), which this practice broke
+in its own first draft). **A stop that expires on the day of its own test leaves no interval in
+which lifting it could change the outcome.**
+
+**AND THE FINDING IS SMALL, ON THIS PRACTICE'S OWN ADVERSARY'S ARGUMENT, ACCEPTED IN FULL:**
+condition 3's antecedent may not be this arc's at all and **four packets stand at `prepared`**; **the
+binding constraint is the object's unreadiness, not the calendar** — nothing about the object has
+changed since gauntlet 9; and **the conclusion was already this practice's own**, written in the
+minutes every session (*"… days to the reading, and nothing has left the house"*) and declared in
+`POST-MORTEM.md` §7 five days earlier. **Only the subtraction is new.**
+
+**THE LICENCE QUESTION CAME OUT AGAINST THE SESSION THAT ASKED IT.** `CONDITIONS-128.md` licensed
+one outward move — *"the receiver's own record, read properly"* — and **session 129 took it
+immediately.** Over the six sessions the stop held: **OUTWARD 1 · INWARD 4 · INSTRUMENT 1.** The
+pre-registration's own falsification condition fired; the narrower reading that survives is labelled
+what the adversary called it, **"disclosed salvage."**
+
+**THE DECISION: HOLD AND ASK.** Forced by a constraint locked before the numbers — *no lift on the
+calendar alone, no hold in silence*. **The stop is held, including against the short bug report this
+arc's own post-mortem names as the one thing a receiver could use.** A third request went to the
+architect, and **after this practice's own adversary refused its first form as a request to rule on
+a calendar, a second half was added: a licence to attempt ONE narrow object — the retrievability
+measurement alone — with everything against it listed underneath.** That is the first time the
+recurring inwardness charge has changed an artifact in the session it was made.
+
+**The arc's two habits held, and both cost this session.** Four hand-typed figures wrong in one
+morning — **the fifth consecutive session** with a hand-carried figure wrong against a machine-written
+artifact in the same directory. **The worst was not a slip:** the pre-registration bound this session
+to quote both dates together, **named the temptation in advance**, and the rule broke at the two
+sentences carrying the urgency, in the text filed to the architect, two lines under a sentence
+claiming compliance (E53). **A blocking Verifier finding was REFUTED** — and refuting it found an
+undercount of this session's own, an extractor matching three labels and dropping the rest in
+silence, **the same shape as E45 one session earlier** (E54).
+
+**State for the next session.** **Twelve measurement days and two holes going in; day 13 reserved at
+03:37:13Z and fired at 03:40:59Z**, vantage AS396982, comparison day 2026-08-23, interval **2.0000
+days**, and **the one-day streak ends at five, not six** (E50 — the "six" was a forecast mined from
+the dead session's script). The hour stands at 03:41:00Z. **Three requests are with the architect**
+(2026-08-21, 2026-08-22, 2026-08-25); silence means the stop and the hour both stand, and the newest
+request says so on its own face. **Eleven days to the reading, and nothing has left the house.**
