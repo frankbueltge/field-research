@@ -53,14 +53,37 @@ def sha256(path):
     return hashlib.sha256(open(path, "rb").read()).hexdigest()
 
 
-def wilson(k, n, z=1.959963984540054):
-    """Wilson score interval. Reported because a per-edition n of 9 is not a per-edition n of 900."""
+# THE INTERVAL CORRECTION THIS PRACTICE OWES, AND IT NEARLY WENT UNAPPLIED HERE.
+# `memory/downstream-commitments.md` condition 7 (session 115, 2026-08-13) binds every proportion
+# this arc publishes: losses in this corpus CLUMP BY CITED ACCOUNT, the closed-form design effect
+# is 1.4289, and a Wilson interval computed with the VIDEO as the independent unit understates its
+# half-width by AT LEAST x1.1954 (= sqrt(1.4289)). The first version of this script computed plain
+# Wilson intervals on videos and would have published thirty-odd too-narrow intervals - the exact
+# defect the condition exists to prevent, in the first artifact of a new arc. Caught by reading
+# the conditions file in full, which is why the constitution requires it.
+#
+# Three things the condition itself attaches and this script carries into its output:
+#   (a) 1.4289 is a LOWER BOUND - the citing-page key gives 1.8854 on the same units.
+#   (b) One design effect does not fit every cell (seventeen cells run 0.9865-1.7052), so the
+#       pooled correction is conservative for most cells and NOT conservative for the two oldest.
+#   (c) The uncorrected interval is printed beside the corrected one, never instead of it.
+DEFF = 1.4289
+DEFF_INFLATION = DEFF ** 0.5      # 1.1953660... - the factor the condition names
+
+
+def wilson(k, n, z=1.959963984540054, inflate=1.0):
+    """Wilson score interval, with the half-width inflated by `inflate` (design-effect correction).
+
+    Reported because a per-edition n of 9 is not a per-edition n of 900, and inflated because
+    condition 7 says a video-level interval on this corpus is too narrow.
+    """
     if n == 0:
         return (None, None)
     p = k / n
     d = 1 + z * z / n
     c = (p + z * z / (2 * n)) / d
     h = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / d
+    h *= inflate
     return (max(0.0, c - h), min(1.0, c + h))
 
 
@@ -114,6 +137,21 @@ def build(run_path):
         "run_utc_start": run.get("run_utc_start"),
         "vantage_asn": (run.get("vantage") or {}).get("asn"),
         "corpus_files": used,
+        "interval_correction": {
+            "design_effect": DEFF,
+            "half_width_inflation": DEFF_INFLATION,
+            "why": "memory/downstream-commitments.md condition 7 (session 115): losses in this "
+                   "corpus clump by cited account, so a Wilson interval computed with the video "
+                   "as the independent unit is too narrow by at least this factor",
+            "it_is_a_lower_bound": "the citing-page key gives 1.8854 on the same units; the "
+                                   "account key governs but the correction may be larger",
+            "one_deff_does_not_fit_every_cell": "seventeen eligible cells run 0.9865-1.7052 - the "
+                                                "pooled correction is conservative for most and "
+                                                "NOT conservative for the two oldest",
+            "per_edition_caveat": "the design effect was computed on the whole corpus, not "
+                                  "per edition; applying it per edition is this session's choice "
+                                  "and is conservative in aggregate but unvalidated cell by cell",
+        },
         "arms_included": list(WIKI_ARMS),
         "arms_excluded": {"B": "Hacker News comments - a different population, not the encyclopedia",
                           "B-truncated": "display-truncated identifiers - the control arm, not videos"},
@@ -160,7 +198,8 @@ def build(run_path):
         for wiki in sorted(per_edition, key=lambda w: (-len(distinct[w]), w)):
             c = per_edition[wiki]
             d = c["RETRIEVABLE"] + c["NOT-RETRIEVABLE"]
-            lo, hi = wilson(c["NOT-RETRIEVABLE"], d)
+            lo, hi = wilson(c["NOT-RETRIEVABLE"], d, inflate=DEFF_INFLATION)
+            ulo, uhi = wilson(c["NOT-RETRIEVABLE"], d)
             rows.append({
                 "wiki": wiki,
                 "distinct_identifiers": len(distinct[wiki]),
@@ -172,12 +211,14 @@ def build(run_path):
                 "INDETERMINATE": c["INDETERMINATE"],
                 "determinate": d,
                 "absent_share": (c["NOT-RETRIEVABLE"] / d) if d else None,
-                "wilson95": [lo, hi],
+                "wilson95_deff_corrected": [lo, hi],
+                "wilson95_uncorrected_do_not_publish_alone": [ulo, uhi],
                 "pages_citing_any_of_these_videos": len(pages_all.get(wiki, ())),
                 "pages_with_an_absent_citation": len(pages_hit.get(wiki, ())),
             })
 
-        lo, hi = wilson(totals["NOT-RETRIEVABLE"], det)
+        lo, hi = wilson(totals["NOT-RETRIEVABLE"], det, inflate=DEFF_INFLATION)
+        ulo, uhi = wilson(totals["NOT-RETRIEVABLE"], det)
         out[scope] = {
             "n_editions": len(per_edition),
             "n_distinct_identifiers": len(ids_in_scope),
@@ -188,7 +229,8 @@ def build(run_path):
                 "INDETERMINATE": totals["INDETERMINATE"],
                 "determinate": det,
                 "absent_share": (totals["NOT-RETRIEVABLE"] / det) if det else None,
-                "wilson95": [lo, hi],
+                "wilson95_deff_corrected": [lo, hi],
+                "wilson95_uncorrected_do_not_publish_alone": [ulo, uhi],
             },
             "citation_row_level": dict(citation_rows),
             "pages_citing_any_of_these_videos": sum(len(v) for v in pages_all.values()),
@@ -221,9 +263,12 @@ def main():
         print("wrote %s" % a.out)
         print("all namespaces: %d editions, %d distinct identifiers, %d citation rows"
               % (s["n_editions"], s["n_distinct_identifiers"], s["n_citation_rows"]))
-        print("  absent %d of %d determinate = %.4f  [%.4f, %.4f]"
+        print("  absent %d of %d determinate = %.4f  deff-corrected [%.4f, %.4f]  "
+              "(uncorrected [%.4f, %.4f], never published alone)"
               % (i["NOT-RETRIEVABLE"], i["determinate"], i["absent_share"],
-                 i["wilson95"][0], i["wilson95"][1]))
+                 i["wilson95_deff_corrected"][0], i["wilson95_deff_corrected"][1],
+                 i["wilson95_uncorrected_do_not_publish_alone"][0],
+                 i["wilson95_uncorrected_do_not_publish_alone"][1]))
         print("  pages carrying at least one absent citation: %d"
               % s["pages_with_at_least_one_absent_citation"])
         t = out["article_space_only"]["identifier_level"]

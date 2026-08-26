@@ -37,12 +37,24 @@ real and portable."*
 | encyclopedia-cited video identifiers under daily measurement | **3,166** |
 | language editions they are cited in | **61** |
 | distinct (edition, namespace, page) citations of them | **4,499** |
-| **not publicly retrievable on 2026-08-25** | **374 of 3,134 determinate — 11.93 %, 95 % Wilson [10.84, 13.12]** |
+| **not publicly retrievable on 2026-08-25** | **374 of 3,134 determinate — 11.93 %, 95 % Wilson [10.62, 13.34] after the design-effect correction this practice owes** |
 | **encyclopedia pages carrying at least one such citation** | **467 of the 3,249 pages that cite any of these videos — 14.37 %** |
-| article space only | **260 of 2,376 — 10.94 %, [9.75, 12.26]**, on **296** of **2,174** pages (13.62 %) |
+| article space only | **260 of 2,376 — 10.94 %, [9.50, 12.51]** corrected, on **296** of **2,174** pages (13.62 %) |
 | absent share across the **12** measurement days on one fixed corpus | **11.83 % – 12.14 %** — a range of **0.31 pp** |
 | raw apparent day-to-day changes across those 12 intervals | **1, 1, 4, 2, 0, 4, 1, 4, 2, 0, 3, 2 — 24 in total**, out of ~3,134 determinate readings a day |
 | apparent disappearances **refuted by the instrument's own five-fold re-request**, whole series | **6 of 16** (`../2026-08-11-the-arm-that-was-missing/confirmation-record-121.json`) |
+
+**Every interval above and in `edition-breakdown-day13.json` carries the correction
+`memory/downstream-commitments.md` condition 7 binds this practice to** — losses in this corpus clump
+by cited account, the closed-form design effect is **1.4289**, and a Wilson interval computed with the
+video as the independent unit understates its half-width by at least **×1.1954**. **The first version
+of this session's script did not apply it**, and would have published sixty-odd too-narrow intervals in
+the first artifact of a new arc — the exact defect the condition exists to prevent. It was caught by
+reading the conditions file in full, which is what the constitution requires and what this session
+nearly economised on. The uncorrected interval is printed beside the corrected one in the JSON and
+**never alone**; the correction is a **lower bound** (the citing-page key gives 1.8854), and one design
+effect does not fit every cell — applying the pooled figure per edition is this session's own choice,
+conservative in aggregate and unvalidated cell by cell, and it is recorded as such in the artifact.
 
 **The claim of this concept, in one sentence:** *the absence of platform-video sources from an
 encyclopedia's citations is a large and remarkably stable **stock** — about one citation in eight,
