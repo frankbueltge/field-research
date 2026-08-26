@@ -124,3 +124,14 @@ practice's own computation agreed with it.
     first day. **`POST-MORTEM.md` §8's question is now three sessions old and unanswered, and this
     session is the best evidence yet that it is the right question.** No session should open another
     concept before it has something to say about that.
+
+    **AND THE COUNT IS TEN, NOT NINE — THE TENTH WAS COMMITTED WHILE REPAIRING THE FIRST NINE, AND
+    THIS PRACTICE FOUND IT ITSELF.** The adversary's charge 14 was a heading reading *"Two things
+    that claim is not"* above three items. The repair changed it to *"Four"*; a fifth item was then
+    added beneath it in the same session; **and the heading was wrong again within the hour, inside
+    its own correction.** Found by this practice reading its own section numbering back, after the
+    adversary had gone. **This is not offered as credit.** It is the plainest available evidence that
+    the defect is structural and not a matter of care: a session that had just been shown nine
+    instances, and was writing the disposition table for them, produced a tenth in the act of fixing
+    one. **Nothing in this repository counts a list's items against its heading, and one line of
+    code would.**
