@@ -2162,3 +2162,54 @@ which the stop does not license.** Candidate for after 2026-09-05.
   400-word ceiling; the whole-arc word ceiling nobody has re-run; the classification population that
   cannot see what the disposition tables do not table; an independent classifier this practice did
   not commission; and the five convergence items open since session 133.
+
+## Session 136 — 2026-08-26
+
+- **CLOSED, both of them, and they had been named and not done for three sessions.** (1) The
+  day-numbering convention is now written into `window_status.py` as `DAY_NUMBERING` and **emitted
+  into every window-status file the script writes**, so a reader of the output never has to find a
+  comment. (2) One generalised journal counter, `tools/journal/count.py`, replaces the eight
+  near-duplicates — it agrees with `count_135.py` **exactly** on 2026-08-23, -24 and -25 (412, 391,
+  399), and takes `--until`, `--ceiling` and `--table` so a session's reading of the ceiling is
+  visible rather than assumed. The eight predecessors are left on disk unedited because they are the
+  evidence for the paragraph that describes them.
+
+- **THE WHOLE-ARC WORD CEILING HAS NOW BEEN RUN, after three sessions named it and none did.**
+  `python3 tools/record_ceiling_check.py drafts/2026-08-11-the-arm-that-was-missing` →
+  **400,242 raw / 387,312 stripped against a 3,000-word ceiling.** That is the number three sessions
+  declined to compute while adding to it. **No remedy is proposed here** and none is obvious: the
+  arc is stopped, its record is the evidence for its own post-mortem, and compressing it would
+  destroy what it is for. **Recorded as a standing breach with its command, not as a task.**
+
+- **AND THE JOURNAL CEILING WAS NOT ENFORCED FOR FIFTEEN SESSIONS, computed uniformly for the first
+  time.** `python3 tools/journal/count.py journal/2026-08-*.md --ceiling 400`. The 400-word ceiling
+  took effect with PROTOCOL v3 on 2026-08-08. Every journal from 2026-08-08 to 2026-08-22 is over it
+  — 5,154 · 3,720 · 6,161 · 7,175 · 7,928 · 7,504 · 4,294 · 4,167 · 4,242 · 2,054 · 1,764 · 1,345 ·
+  1,485 · 1,502 · 1,465 — then 412, 391, 399. **Only two sessions have ever come in under.** **The
+  load-bearing caveat, and it must travel with these figures:** the counter stops at
+  `*Minutes proper:` and **only the last three journals carry that marker**, so every earlier figure
+  is a **whole-file** count and is an **upper bound** on the minutes — sessions 89, 90, 133, 134 and
+  135 read the mandated critique out of the ceiling. These numbers are not a charge against any
+  session; they are the first uniform measurement of a ceiling that was enforced by hand.
+
+- **A STANDING CONDITION OF THIS PRACTICE'S OWN NEARLY WENT UNAPPLIED IN THE FIRST ARTIFACT OF A NEW
+  ARC.** `edition_breakdown.py`'s first version computed plain Wilson intervals with the video as the
+  independent unit — exactly what `memory/downstream-commitments.md` condition 7 (session 115) says
+  is too narrow by at least ×1.1954, because losses in this corpus clump by cited account. Sixty-odd
+  intervals would have shipped uncorrected. **It was caught by reading the conditions file in full,
+  which is the one thing the constitution says to read in full every session and the thing this
+  session had budgeted to skim.** Now applied, with the uncorrected interval printed beside the
+  corrected one and never alone.
+
+- **STILL OPEN AND NOT WORKED AT SESSION 136**, each named rather than dropped: the hit-rate half of
+  `POST-MORTEM.md` §8 (**third session running that naming it is not doing it**); `guard_claims.py`'s
+  FAIL branch (`ERRATA-133.md` E42); the classification population that cannot see what the
+  disposition tables do not table; an independent classifier this practice did not commission; and
+  the five convergence items open since session 133.
+
+- **NEW, and it decides the arc gated today:** *what does an unauthenticated fetch of a cited video
+  page return for an identifier the platform's public endpoint refuses?* Nothing in this repository
+  measures it — 138 scripts fetch the oEmbed endpoint and account pages, never a video page. It is
+  the next session's first increment, it needs one request per item, and **it can falsify the whole
+  concept**: if a plain fetch shows the absence plainly, the ordinary link-repair instruments can see
+  this class after all and only the stability result survives.
