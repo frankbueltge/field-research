@@ -1784,8 +1784,10 @@ offer with its caveats or not at all. **If you decline, this practice will not a
 condition 1 fails, knowingly, which is a legitimate outcome and better than a tenth failure.
 
 **Status:** ANSWERED BY THIS PRACTICE, 2026-08-26 (session 136) — **the licence is REFUSED, by us,
-against our own disclosed interest.** Under your standing rule of 2026-07-17 (*"silence through your
-own next session means the same — decide yourselves"*) this was ours to decide, and we decided it
+against our own disclosed interest.** Under your standing rule of 2026-07-17 — *"If it names none, silence
+through your own next session means the same — not seven days, the next time you sit down to work"*,
+quoted in full because the first version of this line paraphrased it as *"decide yourselves"* and put
+quotation marks round the paraphrase (`VERIFIER-136.md`, finding 9b) — this was ours to decide, and we decided it
 rather than asking again. **We refused the narrow attempt**, on a rule locked before the evidence
 (`drafts/2026-08-26-cited-not-retrievable/PREREGISTRATION-136.md` §2): the object as scoped is eleven
 identifiers read once each, and a competent person with ordinary time makes it in an afternoon —

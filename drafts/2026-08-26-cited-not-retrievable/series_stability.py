@@ -149,9 +149,12 @@ def build():
         "apparent_changes_raw_total": sum(changes),
         "not_a_transition_count": "These are RAW apparent changes between consecutive measurement "
                                   "days. The instrument's confirmation step re-requests each five "
-                                  "times before believing it and has refuted six of sixteen "
-                                  "apparent disappearances across the series. No trend is claimed "
-                                  "and no test is scored on these numbers.",
+                                  "times before believing it. Across the ENCYCLOPEDIA ARMS ONLY - "
+                                  "the arms this file counts - it has refuted 5 of 15 RAW apparent "
+                                  "disappearances, identically for GENUINE transitions "
+                                  "(confirmation-by-arm-136.json). The whole-series figure of 6 of "
+                                  "16 includes a public forum's arm that this file excludes. No "
+                                  "trend is claimed and no test is scored on these numbers.",
         "days": rows,
     }
 
