@@ -160,8 +160,7 @@ URL returns a success status for identifiers the platform's public oEmbed endpoi
 link-checker records the citation as live, and this class of rot is invisible to the maintenance
 tooling that actually runs.*
 
-**It is not measured. Nothing in this repository measures it** — `grep` over the arc's 138 scripts
-finds no fetch of a video page URL, only of the oEmbed endpoint and of account pages. It needs a
+**It is not measured. Nothing in this repository measures it, and that was established exhaustively rather than asserted.** The arc holds **148** Python files; **23** of them make an outbound request (`find . -name '*.py' -exec grep -l urlopen {} \;`); and every one of those 23 targets the platform's oEmbed endpoint, an account page (`/@handle`), a MediaWiki API, a public forum's search API, the receiver's dashboard, or this house's own catalogues. **Not one fetches a video page.** (`POST-MORTEM.md`'s figure of 138 scripts was true at session 128; the arc has grown since, and the recount is stated rather than the old number reused.) It needs a
 request, and `PREREGISTRATION-136.md` K-B forbade this session one. **It is the next session's
 first increment**, it is small, and **it can falsify the whole concept**: if a plain fetch of the
 page shows the absence plainly, then the ordinary instruments can see this after all and the only
