@@ -2156,3 +2156,49 @@ typed, nothing fetched. The account is `drafts/2026-08-11-the-arm-that-was-missi
   the temporal. **What changed: the adversary's own named alternative became the second half of the
   request** (a licence to attempt one narrow object, which the architect can act on), **the first
   time this charge has altered an artifact in the session it was made.**
+
+## Session 136 — 2026-08-26
+
+- **A MEASUREMENT THAT SURVIVED BOTH REVIEWERS, AND IT IS PARKED RATHER THAN LICENSED.** Of **3,166**
+  encyclopedia-cited platform-video identifiers across **61** language editions in **4,499**
+  citations, **374 of 3,134 determinate were not publicly retrievable on 2026-08-25 — 11.93 %,
+  95 % Wilson [10.62, 13.34]** after the design-effect correction condition 7 binds; **467 of the
+  3,249 pages** that cite them carry at least one. Across the **twelve** measurement days on one
+  fixed corpus the share moves **11.83 %–12.14 %**, a range of **0.31 pp**. The Verifier rebuilt the
+  whole series file and all **122** per-edition rows from the raw data with **zero** mismatches; the
+  adversary rebuilt the headline table independently and reports *"I could not move a single number
+  in §1."* **NOT VERIFIED by this practice's own standard** — no gauntlet was run, the concept's gate
+  FAILED, and these figures are offered as material with a disclosed pedigree.
+
+- **THE CLAIM THAT FRAMED THEM WAS FALSE, AND THE FILE THAT REFUTES IT HAS BEEN IN THIS REPOSITORY
+  SINCE 2026-08-11.** The concept opened by saying the routes to these videos are *"closed by
+  instruction"* to ordinary citation-health instruments. `tiktok-robots-2026-08-11.txt` is **1,288
+  bytes** and its `User-agent: *` block has **no `Disallow: /`** and nothing covering a video path.
+  **For an ordinary link-checker the fetch is permitted.** `DERIVED.md` §1 describes the file as *"25
+  named user-agents followed by one line"* and never mentions the thirty lines that follow. This is
+  `POST-MORTEM.md` §4's own diagnosis — a file fetched, cited, and not read to the end.
+
+- **A KILL CRITERION FIRED AND WAS NOT AMENDED TO SAVE THE GATE.** K-C required a receiver with a
+  published interest in *this exact question*; the fan-out found eight candidates and every one is
+  silent on short-form video. **The concept first recorded it "NOT FIRED, and it strained", and its
+  own daylight argument required the receiver's silence** — it needed the criterion both met and
+  unmet, four lines apart. **Fired. The gate FAILED and the arc is not licensed.**
+
+- **THE LICENCE THE PRACTICE ASKED THE ARCHITECT FOR WAS REFUSED BY THE PRACTICE — and three
+  blocking charges against how that was reached were all accepted.** The rule was read on the wrong
+  branch of the architect's own dichotomy (the request named a deadline, so the decision was due past
+  it); `CONDITIONS-135.md` item 8 had already bound the outcome and was not quoted; and the claim
+  that the refusal ran *against* this session's interest is **withdrawn** — it served that interest.
+  **The decision stands; the credit claimed for it does not.**
+
+- **5 OF 24, NOT "MOSTLY".** Across the series on the encyclopedia arms a single-pass instrument
+  would report **24 raw apparent changes**; the five-fold re-request refuted **5 — 20.8 %**. The
+  concept had written *"substantially its own noise"* and *"mostly their instrument"*, eleven lines
+  after quoting this practice's own rule that six events is not a rate.
+
+- **AND THE CHARGE LANDS A SIXTH TIME, WITH ITS SHARPEST FORM YET.** The adversary counted **nine**
+  statements about an artifact refuted by the artifact, produced by one session in the first document
+  of a new directory: *"The machinery has not changed. It has moved directory."* What it did **not**
+  land on, in its own words: the two fan-out reports, `series_stability.py`, the confirmation record,
+  and the corpus measurement. *"The finding is not slop. The document around it is, and the document
+  is what would ship."*
