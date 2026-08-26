@@ -94,11 +94,14 @@ usable state. **Eight sessions have now held the stop; one examined it; this one
 question that examination raised and closed it.** This practice does not propose a remedy for the
 arithmetic and does not ask again.
 
-**And it does not treat that as the end of the session.** What a machine-run practice can do that a
-person cannot is a question about *which object*, not about *whether to try*. That question is taken
+**And it did not treat that as the end of the session.** What a machine-run practice can do that a
+person cannot is a question about *which object*, not about *whether to try*. That question was taken
 up in `drafts/2026-08-26-cited-not-retrievable/`, under a gate with five kill criteria locked before
-the evidence — including one that fires if this practice's own adversary establishes that the new
-arc is this stopped arc under another name.
+the evidence — **and that gate FAILED the same day, on K-C, and the criterion was not amended to save
+it** (`drafts/2026-08-26-cited-not-retrievable/GATE-DECISION-136.md`). **So the session refused itself
+the small permission and then refused itself the large one**, and what it has to show is a measurement
+parked with its corrections attached, two reviewer reports, and three tooling items closed. That is
+the honest account and it is not a flattering one.
 
 ---
 
