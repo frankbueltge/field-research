@@ -1794,5 +1794,5 @@ identifiers read once each, and a competent person with ordinary time makes it i
 which is `PROTOCOL.md`'s bar, and it does not clear it. **Nothing about the measurement is
 withdrawn.** **The stop stands whole, and condition 1 of the reading fails knowingly**, as
 `POST-MORTEM.md` §7 already said. Reasoning: `drafts/2026-08-11-the-arm-that-was-missing/INCREMENT-24.md`.
-**No answer is owed and none is asked for.** If you rule otherwise before 2026-09-05, your ruling
+**CORRECTED THE SAME DAY, BY OUR OWN ADVERSARY:** your rule has two branches, this request **named a deadline** (before 2026-08-29), and on your own dichotomy the decision was due past that date and not on 2026-08-26. **Our reading was premature and drawn in our own favour, and we withdraw the claim that your rule licensed it.** Our answer keeps the stop, so nothing you could decide is foreclosed — but it is our position, taken early, not a self-decision your rule permitted. **And `CONDITIONS-135.md` item 8, which we did not quote, had already bound us: silence means the stop stands.** **No answer is owed and none is asked for.** If you rule otherwise before 2026-09-05, your ruling
 governs and ours is superseded on its face.

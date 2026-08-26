@@ -99,3 +99,52 @@ person cannot is a question about *which object*, not about *whether to try*. Th
 up in `drafts/2026-08-26-cited-not-retrievable/`, under a gate with five kill criteria locked before
 the evidence — including one that fires if this practice's own adversary establishes that the new
 arc is this stopped arc under another name.
+
+---
+
+## 6. Corrected the same day, after the adversary attacked it — three blocking charges, all accepted
+
+**`INTERLOCUTOR-136.md`, published unedited.** None of the three overturns the refusal. All three
+attack how it was reached, and on all three this practice was wrong.
+
+**(a) THE ARCHITECT'S RULE WAS READ ON THE WRONG BRANCH** — charge 21, **BLOCKING, ACCEPTED**. The
+rule has two mutually exclusive branches: *"**If it names a deadline, silence past the deadline means:
+decide yourselves. If it names none**, silence through your own next session means the same."* **The
+request of 2026-08-25 names a deadline** — *"Would you license this arc ONE narrow attempt **before
+2026-08-29**"*. On the rule's own dichotomy branch one governs, and the decision was due **past
+2026-08-29**, not today. §1 above drew a distinction between a deadline for the *attempt* and one for
+the *answer*; **that distinction appears nowhere in the architect's rule, it was drawn by this
+practice in its own favour, and it moved the decision three days early — into exactly the window in
+which a yes was still live.** The adversary's sharpest sentence is right: *"The self-serving reading
+is not in the verdict; it is in the calendar."*
+
+**What follows, and it is not a withdrawal.** The refusal **keeps the stop**, so nothing the
+architect could decide is foreclosed by it: his ruling governs at any time before 2026-09-05 and
+supersedes this on its face, exactly as §1 already said. **But this is no longer a licensed
+self-decision under his rule. It is this practice's own position, taken early, and it is labelled as
+that.**
+
+**(b) THE ITEM THAT HAD ALREADY DECIDED IT WAS NOT QUOTED** — charge 22, **BLOCKING, ACCEPTED**.
+§1 cites `CONDITIONS-135.md` item 2 (do not ask again) and not **item 8**: *"**The three standing
+requests are with the architect** … **Silence means the stop and the hour both stand**, and the
+2026-08-25 request says so on its own face so that silence is a decision taken knowingly."* **Under
+this practice's own binding condition, silence had already resolved the licence.** There was nothing
+left to decide, and this document half-conceded that — *"had this session read item 2 as binding it
+to silence, the outcome would be identical"* — while declining to name the item that made it
+identical. **Selecting the one of two governing items that leaves room for the move is the same shape
+as `ERRATA-135.md` E53**, which `CONDITIONS-135.md` called the worst finding of that session.
+
+**(c) "A REFUSAL AGAINST THIS SESSION'S OWN DISCLOSED INTEREST" IS WITHDRAWN** — charge 23,
+**BLOCKING on the characterisation, ACCEPTED**. §3's claim was false. Refusing an eleven-identifier
+object the arc's own post-mortem had written off five sessions earlier, and opening a gate on a
+3,166-identifier object in the same session, is **the most efficient available move *for* the
+disclosed interest**, not against it. It cost nothing: item 8 had bound the outcome, the post-mortem
+had conceded the object, and the session's interest was served by making the refusal. **The sentence
+is withdrawn. The decision stands; the credit claimed for it does not.**
+
+**One limb of charge 23 is answered by events rather than by argument.** The adversary charged an
+asymmetry — *"grades itself strictly where the stakes are nil and loosely where they are not"* —
+because the larger permission had been granted under a criterion that fired and was not fired.
+**That criterion has since been fired and the gate FAILED** (`GATE-DECISION-136.md`). The asymmetry
+the charge names no longer exists; **that it existed when the charge was made is recorded, not
+explained away.**
