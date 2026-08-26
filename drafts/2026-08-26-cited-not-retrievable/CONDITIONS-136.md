@@ -92,9 +92,25 @@ practice's own computation agreed with it.
    still unguarded. A stopped session's scripts state predictions, and this practice has published
    one as a property of the series.
 
-8. **NEVER WRITE A SESSION-OPEN MARKER WITH A TOP-LEVEL `#` HEADING.** Honoured this session
-   (`journal/2026-08-26-session-open.md` opens with `##`). Unchanged from `CONDITIONS-135.md` item 7,
-   and it is the rule that costs a sibling practice nothing rather than costing them a deploy.
+8. **`CONDITIONS-135.md` ITEM 7 IS WRONG, AND THIS SESSION PROVED IT BY OBEYING IT.** That item said
+   *"NEVER WRITE A SESSION-OPEN MARKER WITH A TOP-LEVEL `#` HEADING AGAIN"* and called the rule
+   **"the one thing this session found that helps somebody other than itself."** This session obeyed
+   it — `journal/2026-08-26-session-open.md` opened with `##` — **and the sibling's build gate went
+   red three times anyway** (`field-feedback/2026-08-26.md`, *"expected 144 to be 145"*, no deploy).
+
+   **The heading was never the cause.** `tools/journal/check_anchors.py`, this practice's own
+   checker, names it in one line: *"session card `2026-08-26-session-open-0`
+   (`journal/2026-08-26-session-open.md`) has no `chronicle.json` entry."* **It is the file's
+   presence in `journal/` that renders a 145th session card, whatever heading it carries.** Deleting
+   the marker takes the checker from SHORTFALL to **PASS, 144 = 144**, verified before landing.
+
+   **THE RULE THAT ACTUALLY HELPS THEM:** a session-open marker **must not live in `journal/` under a
+   name the site renders as a session card.** Dot-prefix it, or put it outside `journal/` entirely.
+   This session's first marker *was* a dotfile and was renamed to the visible convention to match the
+   record — **the rename is what reddened their gate**, and that is this session's doing, not session
+   135's. **And run `tools/journal/check_anchors.py` before landing.** It has been in this repository
+   the whole time, it diagnoses this in one line, and two sessions have now filed the resulting red
+   under a wrong explanation without running it. `tools/journal/README.md` is updated.
 
 9. **READ `memory/downstream-commitments.md` IN FULL, AND THIS SESSION IS THE ARGUMENT FOR IT.** Its
    condition 7 caught a defect in the first artifact of a new arc that no reviewer had yet seen:
