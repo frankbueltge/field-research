@@ -1,0 +1,338 @@
+{
+ "schema": "field-research/window-interval/1",
+ "computed_by": "interval_metrics.py, session 127",
+ "from_run": "ledger/run-2026-08-25T0341Z.json",
+ "to_run": "ledger/run-2026-08-26T0341Z.json",
+ "what_this_interval_is": "day 14: the eighth run outside the pre-registered window, 1.0000 day after day 13 (2026-08-25). The interval BEFORE this one was 2.0000 days because 2026-08-24 is a hole, and the two are NOT comparable - a transition count over one day may not be read against a count over two, in either direction. No pre-registered test is scored, no trend is claimed. Run under the stop of CONDITIONS-128.md, which stands whole: session 135 measured it and held it, and session 136 answered the licence question it had put to the architect - under his standing rule of 2026-07-17 - by REFUSING the narrow attempt against its own disclosed interest (INCREMENT-24.md). The instrument keeps measuring and nothing is built to send.",
+ "window_position": {
+  "schema": "field-research/window-status/1",
+  "computed_by": "window_status.py",
+  "rule": "a .partial is never a run; a day counts only if a non-partial run file exists",
+  "day_numbering_convention": "Day N is the Nth MEASUREMENT DAY, not the Nth calendar day since the series began. A measurement day is a date with a non-partial run file that parses. A hole - a date with a .partial and no run file - consumes NO ordinal: the next completed run takes the number the lost attempt was reaching for. A same-day second probe is not a measurement day either. n_measurement_days below is therefore the number of the most recent completed day, and the count of dates in measurement_days is the only thing that determines it.",
+  "n_measurement_days": 14,
+  "measurement_days": [
+   {
+    "file": "ledger/run-2026-08-11T1124Z.json",
+    "start_utc": "2026-08-11T11:24:06Z",
+    "n_observations": 2904,
+    "n_planned": 2904
+   },
+   {
+    "file": "ledger/run-2026-08-12T0341Z.json",
+    "start_utc": "2026-08-12T03:40:28Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-13T0427Z.json",
+    "start_utc": "2026-08-13T04:27:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-14T0343Z.json",
+    "start_utc": "2026-08-14T03:43:47Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-15T0337Z.json",
+    "start_utc": "2026-08-15T03:37:40Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-16T0337Z-second-probe.json",
+    "start_utc": "2026-08-16T03:37:40Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-18T0341Z.json",
+    "start_utc": "2026-08-18T03:41:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-19T0341Z.json",
+    "start_utc": "2026-08-19T03:41:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-20T0341Z.json",
+    "start_utc": "2026-08-20T03:41:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-21T0341Z.json",
+    "start_utc": "2026-08-21T03:41:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-22T0341Z-second-probe.json",
+    "start_utc": "2026-08-22T03:41:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-23T0341Z.json",
+    "start_utc": "2026-08-23T03:41:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-25T0341Z.json",
+    "start_utc": "2026-08-25T03:41:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-26T0341Z.json",
+    "start_utc": "2026-08-26T03:41:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   }
+  ],
+  "n_completed_run_files": 16,
+  "n_extra_passes_same_day": 2,
+  "extra_passes_same_day": [
+   {
+    "file": "ledger/run-2026-08-16T0337Z.json",
+    "start_utc": "2026-08-16T03:37:40Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   },
+   {
+    "file": "ledger/run-2026-08-22T0341Z.json",
+    "start_utc": "2026-08-22T03:41:00Z",
+    "n_observations": 3869,
+    "n_planned": 3869
+   }
+  ],
+  "n_holes": 2,
+  "holes": [
+   {
+    "file": "ledger/run-2026-08-17T0337Z.json.partial",
+    "run_id_it_claims": "2026-08-17T03:41:00Z (manifest carried a placeholder)",
+    "n_observations": 600,
+    "n_planned": 3869,
+    "why": "a partial with no completed run beside it - the day was started and not taken"
+   },
+   {
+    "file": "ledger/run-2026-08-24T0341Z.json.partial",
+    "run_id_it_claims": "2026-08-24T03:41:00Z (manifest carried a placeholder)",
+    "n_observations": 1100,
+    "n_planned": 3869,
+    "why": "a partial with no completed run beside it - the day was started and not taken"
+   }
+  ],
+  "n_in_flight": 0,
+  "in_flight": [],
+  "in_flight_note": "a run being written by a live reservation at the moment of this scan. Never counted as a measurement day - the rule is unchanged - and never reported as an abandoned day either. A status file written during a run says so; one written after it does not, and the two are not in conflict.",
+  "intervals_days": [
+   {
+    "from": "2026-08-11T11:24:06Z",
+    "to": "2026-08-12T03:40:28Z",
+    "days": 0.678,
+    "is_daily": false
+   },
+   {
+    "from": "2026-08-12T03:40:28Z",
+    "to": "2026-08-13T04:27:00Z",
+    "days": 1.0323,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-13T04:27:00Z",
+    "to": "2026-08-14T03:43:47Z",
+    "days": 0.97,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-14T03:43:47Z",
+    "to": "2026-08-15T03:37:40Z",
+    "days": 0.9958,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-15T03:37:40Z",
+    "to": "2026-08-16T03:37:40Z",
+    "days": 1.0,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-16T03:37:40Z",
+    "to": "2026-08-18T03:41:00Z",
+    "days": 2.0023,
+    "is_daily": false
+   },
+   {
+    "from": "2026-08-18T03:41:00Z",
+    "to": "2026-08-19T03:41:00Z",
+    "days": 1.0,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-19T03:41:00Z",
+    "to": "2026-08-20T03:41:00Z",
+    "days": 1.0,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-20T03:41:00Z",
+    "to": "2026-08-21T03:41:00Z",
+    "days": 1.0,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-21T03:41:00Z",
+    "to": "2026-08-22T03:41:00Z",
+    "days": 1.0,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-22T03:41:00Z",
+    "to": "2026-08-23T03:41:00Z",
+    "days": 1.0,
+    "is_daily": true
+   },
+   {
+    "from": "2026-08-23T03:41:00Z",
+    "to": "2026-08-25T03:41:00Z",
+    "days": 2.0,
+    "is_daily": false
+   },
+   {
+    "from": "2026-08-25T03:41:00Z",
+    "to": "2026-08-26T03:41:00Z",
+    "days": 1.0,
+    "is_daily": true
+   }
+  ],
+  "n_intervals_not_daily": 3,
+  "intervals_not_daily": [
+   {
+    "from": "2026-08-11T11:24:06Z",
+    "to": "2026-08-12T03:40:28Z",
+    "days": 0.678,
+    "is_daily": false
+   },
+   {
+    "from": "2026-08-16T03:37:40Z",
+    "to": "2026-08-18T03:41:00Z",
+    "days": 2.0023,
+    "is_daily": false
+   },
+   {
+    "from": "2026-08-23T03:41:00Z",
+    "to": "2026-08-25T03:41:00Z",
+    "days": 2.0,
+    "is_daily": false
+   }
+  ],
+  "required_runs": 7,
+  "count_requirement_met": true,
+  "consecutive_daily": false,
+  "preregistered_window_met": false,
+  "why_two_conditions": "'seven consecutive daily runs' is a conjunction: the COUNT and the CONSECUTIVENESS. Erratum E21 reported the window closed while neither held. They are reported separately here so a later session cannot collapse them into one word again."
+ },
+ "window_position_note": "read from window_status.py, which counts only non-partial run files. Whether this series is daily or consecutive is whatever that scan says and is never asserted here: see consecutive_daily and preregistered_window_met.",
+ "run": {
+  "file": "ledger/run-2026-08-26T0341Z.json",
+  "utc_start": "2026-08-26T03:41:00Z",
+  "utc_end": "2026-08-26T05:21:05Z",
+  "seconds": 6004.5,
+  "planned": 3869,
+  "requested": 3869,
+  "stopped": null,
+  "vantage_asn": "AS396982",
+  "complete": true
+ },
+ "interval_days": 1.0,
+ "vantage_guard": {
+  "run1_asn": "AS396982",
+  "run2_asn": "AS396982",
+  "same_autonomous_system": true,
+  "verdict": "COMPARABLE"
+ },
+ "observed_in_both": 3869,
+ "determinate_in_both": 3800,
+ "touching_indeterminate": 69,
+ "apparent_transitions_raw": 3,
+ "apparent_transitions_overlay": 3,
+ "overlay_rows_applied": 0,
+ "k4": "FIRES \u2014 at least one transition did not reproduce",
+ "confirmed_this_interval": {
+  "returns": 0,
+  "losses": 1,
+  "vids": [
+   {
+    "vid": "7666435890209770773",
+    "from": "RETRIEVABLE",
+    "to": "NOT-RETRIEVABLE"
+   }
+  ]
+ },
+ "denominators_this_interval": {
+  "retrievable_at_previous_day_and_determinate_now": 3126,
+  "absent_at_previous_day_and_determinate_now": 674
+ },
+ "series_after_this_interval": {
+  "all_readings": {
+   "NOT-RETRIEVABLE->RETRIEVABLE": {
+    "n": 12,
+    "confirmed": 12,
+    "refuted": 0
+   },
+   "RETRIEVABLE->NOT-RETRIEVABLE": {
+    "n": 19,
+    "confirmed": 11,
+    "refuted": 8
+   }
+  },
+  "genuine_transitions_only": {
+   "NOT-RETRIEVABLE->RETRIEVABLE": {
+    "n": 10,
+    "confirmed": 10,
+    "refuted": 0
+   },
+   "RETRIEVABLE->NOT-RETRIEVABLE": {
+    "n": 19,
+    "confirmed": 11,
+    "refuted": 8
+   }
+  },
+  "n_artefact_echoes": 2,
+  "n_sidecars": 13
+ },
+ "per_arm_counts": {
+  "A": {
+   "RETRIEVABLE": 1946,
+   "NOT-RETRIEVABLE": 243,
+   "INDETERMINATE": 12
+  },
+  "A-new": {
+   "RETRIEVABLE": 172,
+   "NOT-RETRIEVABLE": 24,
+   "INDETERMINATE": 1
+  },
+  "A2": {
+   "NOT-RETRIEVABLE": 117,
+   "RETRIEVABLE": 645,
+   "INDETERMINATE": 6
+  },
+  "B": {
+   "RETRIEVABLE": 385,
+   "NOT-RETRIEVABLE": 61,
+   "INDETERMINATE": 8
+  },
+  "B-truncated": {
+   "RETRIEVABLE": 1,
+   "NOT-RETRIEVABLE": 246,
+   "INDETERMINATE": 2
+  }
+ }
+}

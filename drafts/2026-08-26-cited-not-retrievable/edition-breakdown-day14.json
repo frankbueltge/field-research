@@ -1,0 +1,2955 @@
+{
+ "schema": "field-research/edition-breakdown/1",
+ "built_by": "edition_breakdown.py, session 136, 2026-08-26",
+ "offline": true,
+ "run_file": "../2026-08-11-the-arm-that-was-missing/ledger/run-2026-08-26T0341Z.json",
+ "run_file_sha256": "2f21a22d5eca69bfd486539da278ba8816b11e619a255a7604a84805736a058e",
+ "run_utc_start": "2026-08-26T03:41:00Z",
+ "vantage_asn": "AS396982",
+ "corpus_files": [
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ar.wikipedia.org.json",
+   "sha256": "8af1f09f4ebea9df52a9986cdaf46b311d4bcaf234228163993e70fde239e59a",
+   "rows": 32,
+   "new_identifiers": 30
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-bn.wikipedia.org.json",
+   "sha256": "c2d5fd1c118b85bf7a7c179ba9eb229846cf83a121b50a1bd6dc3d264eb2aea2",
+   "rows": 3,
+   "new_identifiers": 3
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-bs.wikipedia.org.json",
+   "sha256": "a76a7906a5e6e3f3d3291ec0ad73a9c6f0e457b5f8b1e8d7c906442837995c64",
+   "rows": 0,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-cs.wikipedia.org.json",
+   "sha256": "703e807e6f0842a503a6339250659442823328238daebb232502fbd1c7f0f353",
+   "rows": 8,
+   "new_identifiers": 7
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-cy.wikipedia.org.json",
+   "sha256": "0474455aecbd909df26c69f1193650347c08372f14b5bcdb18bb47b9356ae07b",
+   "rows": 0,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-de.wikipedia.org.json",
+   "sha256": "3ad934a1fed452d44ead06830c9acd167c92caf936b50aa4623ac37a4dc2f25a",
+   "rows": 111,
+   "new_identifiers": 106
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-en.wikipedia.org.json",
+   "sha256": "3558caf41969a9703b290e866e81fdc9b1e40e048462a7d6d9ad11087a12b6f5",
+   "rows": 906,
+   "new_identifiers": 826
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-es.wikipedia.org.json",
+   "sha256": "87d60db540d6b7f42aae4ee71c9198de9b486401e593953fb68a97be8adfd65d",
+   "rows": 274,
+   "new_identifiers": 226
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-fa.wikipedia.org.json",
+   "sha256": "fa31355c4e672484fbe8009ea0d34ee8e71d222e63878d7fa588a4d97b78935e",
+   "rows": 14,
+   "new_identifiers": 3
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-fi.wikipedia.org.json",
+   "sha256": "e1693673004dc6b06c696c9cd63d190a4bdf84b4e287a90e9d5635b84ce5e3e3",
+   "rows": 19,
+   "new_identifiers": 17
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-fr.wikipedia.org.json",
+   "sha256": "6dcdf8b900fec7cde87a3d6efa433c118af164b6f8ca7d99d074516a103ce338",
+   "rows": 1,
+   "new_identifiers": 1
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-gl.wikipedia.org.json",
+   "sha256": "f21572c05c232838b38f3768af8a4e002804831b1f4872334106e92039291e5e",
+   "rows": 4,
+   "new_identifiers": 1
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-he.wikipedia.org.json",
+   "sha256": "f98773b241afdeb980c8ea3d574a92c6292dabf1bba85b78da53fdb86d71b4f2",
+   "rows": 151,
+   "new_identifiers": 116
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-hi.wikipedia.org.json",
+   "sha256": "23728592057cb9931c0148542950482bd5eee27e7c85c4f9e4465085ff51fd87",
+   "rows": 1,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-hn.json",
+   "sha256": "a963d4d346bf949bee819627951a62b1744fbfc527826d387c58b0cb571d5dc0",
+   "rows": 890,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-hy.wikipedia.org.json",
+   "sha256": "741c3022b06865b8c58a3612a3a7ccab3a1d9bb79f532df6ea76bbf03d943004",
+   "rows": 15,
+   "new_identifiers": 8
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-id.wikipedia.org.json",
+   "sha256": "f282fba59772deb5e3f7f6311dd1f7f153cf26dded0de6e2977b4aff11a3b0a9",
+   "rows": 124,
+   "new_identifiers": 81
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-it.wikipedia.org.json",
+   "sha256": "93a2e4400f8df5686d9d815a9f98ee0b90290d2eaf5ee8e19aafe0f6d431f27f",
+   "rows": 32,
+   "new_identifiers": 20
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ja.wikipedia.org.json",
+   "sha256": "448105583e9a81dbd2f59f6360080918f8f2bc213a8d483f6d9f552c0a9ecb39",
+   "rows": 568,
+   "new_identifiers": 514
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ka.wikipedia.org.json",
+   "sha256": "23b36f36c6d353f5a327c3bbf7c6d06a2ea543ee70899621caa7e7786a7dd705",
+   "rows": 5,
+   "new_identifiers": 1
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ko.wikipedia.org.json",
+   "sha256": "bc5c9c261641fdbb85abecdf7d32a77bfb48c32a4bae0b542d2c148bdf6e7743",
+   "rows": 66,
+   "new_identifiers": 14
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ky.wikipedia.org.json",
+   "sha256": "cc79ba0179179aeba0850d0ad9cf0878498e0cd4f2a932ccbde23c95d2ef38ee",
+   "rows": 0,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-lt.wikipedia.org.json",
+   "sha256": "2ff0577a18bc4df167bbafab18597da89017ae3b4d9c96f887cd2d6f0c04b1da",
+   "rows": 0,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-merged.json",
+   "sha256": "71f2508428b0f3f0b7c17066a6988d6836aca58ba81a504091c023d9d44b8362",
+   "rows": 2201,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-mk.wikipedia.org.json",
+   "sha256": "e65ae55bfdcb857ac4d20535c53824f804e404ee96b77d7a4e9b31567617d189",
+   "rows": 3,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ml.wikipedia.org.json",
+   "sha256": "6cf370f04859dd20d76d36edd82623b7d19e69c2ac5bd2423d8cc43c603790ca",
+   "rows": 0,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-mr.wikipedia.org.json",
+   "sha256": "fcd65e58294441b9e69cbc103f7bb0fcc5a330018d3bbe68625e651224d0e56e",
+   "rows": 0,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ms.wikipedia.org.json",
+   "sha256": "4dcf95f65682c57af721f89f90d48b5085f497218f588ae6812b5d1705837473",
+   "rows": 44,
+   "new_identifiers": 35
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-my.wikipedia.org.json",
+   "sha256": "f831729698e105c49633067cf294f32ac9d3fffc37fd1652464ada4e738597b3",
+   "rows": 0,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ne.wikipedia.org.json",
+   "sha256": "381efa7f6c429e74b6ae21d3cc02a827f90d3f2342e1054e948519af1828cffa",
+   "rows": 1,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-nl.wikipedia.org.json",
+   "sha256": "02bb0cb7eba022c90b279787dfbbdc0416bf4896b9aaaee7a921e536d23cf01a",
+   "rows": 28,
+   "new_identifiers": 23
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-pl.wikipedia.org.json",
+   "sha256": "f643086e7cc8832f21bc69c6af59da811af057fd0e201811c70f7893c8a87e25",
+   "rows": 43,
+   "new_identifiers": 30
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-pt.wikipedia.org.json",
+   "sha256": "a9007ef4f5039095d41c375c4e8e8b3b0d401e14c497827858a61f88e558485c",
+   "rows": 91,
+   "new_identifiers": 50
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ru.wikipedia.org.json",
+   "sha256": "05c4afd8fa08f85dcf37f5a8f645482f93f9e526694781d6965ba2fd5286ffe4",
+   "rows": 50,
+   "new_identifiers": 14
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-si.wikipedia.org.json",
+   "sha256": "6d0b87c8bce142f2b6ec3d1291840492f10c497c7bff1dce045948fdafe82a9b",
+   "rows": 0,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-sq.wikipedia.org.json",
+   "sha256": "adc61a17b3f53f9954942cc067ef5d5331090f3c4d469724a43d869923284765",
+   "rows": 2,
+   "new_identifiers": 2
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-sv.wikipedia.org.json",
+   "sha256": "1009a63be270a80029fcb5dca55283bb07777c57f3bba2aaf5a8559f5dca42fc",
+   "rows": 11,
+   "new_identifiers": 8
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ta.wikipedia.org.json",
+   "sha256": "4ee9580e638529aa5a12753fec6aaff1def1a44ed78523e5c839e4ed98c81670",
+   "rows": 2,
+   "new_identifiers": 1
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-te.wikipedia.org.json",
+   "sha256": "b4145dfe6c1200379732ea0cf67fb1c971740425a8c8c4c1a8b36f6fd7e715a2",
+   "rows": 2,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-th.wikipedia.org.json",
+   "sha256": "38db23c152969351492c04e7649b5ce000ad406a8209014c39248a2cfe45201e",
+   "rows": 15,
+   "new_identifiers": 10
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-tl.wikipedia.org.json",
+   "sha256": "2c21ad5233ebe390523b1679d0921e5637943c004f2f92ebcc7adece4ff05e9b",
+   "rows": 5,
+   "new_identifiers": 3
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-tr.wikipedia.org.json",
+   "sha256": "b93b9e55d63e76053f5936eb0ccbbd713690a2530ea6897e5b3cfdf112acd6f1",
+   "rows": 47,
+   "new_identifiers": 34
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-uk.wikipedia.org.json",
+   "sha256": "6e2114d522a4ee6468a22caa8f93ad11389f3db8b098e3235a462ae0da1ad84d",
+   "rows": 67,
+   "new_identifiers": 49
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ur.wikipedia.org.json",
+   "sha256": "11f2c8dfe36cb0ab8cee02d76ce128aeb191bc40e98e9518ee34943cfe8080f9",
+   "rows": 3,
+   "new_identifiers": 3
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-uz.wikipedia.org.json",
+   "sha256": "4fe3b72187a75e2e550102112433262f28be0bcef5030636102e671a94f92698",
+   "rows": 6,
+   "new_identifiers": 1
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-vi.wikipedia.org.json",
+   "sha256": "1cc15435d285cd03c1e3c296c2715a76b485fc834c7e4f5f405592e5ef5242dd",
+   "rows": 23,
+   "new_identifiers": 10
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-zh.wikipedia.org.json",
+   "sha256": "aa54ac0df60280f3c279475d00d850e50f6aabebd92513973f1a1725ee53994d",
+   "rows": 54,
+   "new_identifiers": 27
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/expansion-111/corpus-A2-namespaces.json",
+   "sha256": "46379f661efb10a6a7aa4ff63af96b2403d68a604880cd86421c4cde327df638",
+   "rows": 886,
+   "new_identifiers": 563
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/expansion-111/corpus-round2.json",
+   "sha256": "66e308e2c40d428fe6f3d3cc1e1dd14d371087aa75143a2ba776c5c0ce61b2d0",
+   "rows": 654,
+   "new_identifiers": 304
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/expansion-111/corpus-round3.json",
+   "sha256": "09695c68532a6fcef597c24983ab07e28dea64ff809f132a6cf5cbda9d209f05",
+   "rows": 143,
+   "new_identifiers": 26
+  }
+ ],
+ "interval_correction": {
+  "design_effect": 1.4289,
+  "half_width_inflation": 1.1953660527219268,
+  "why": "memory/downstream-commitments.md condition 7 (session 115): losses in this corpus clump by cited account, so a Wilson interval computed with the video as the independent unit is too narrow by at least this factor",
+  "it_is_a_lower_bound": "the citing-page key gives 1.8854 on the same units; the account key governs but the correction may be larger",
+  "one_deff_does_not_fit_every_cell": "seventeen eligible cells run 0.9865-1.7052 - the pooled correction is conservative for most and NOT conservative for the two oldest",
+  "per_edition_caveat": "the design effect was computed on the whole corpus, not per edition; applying it per edition is this session's choice and is conservative in aggregate but unvalidated cell by cell"
+ },
+ "arms_included": [
+  "A",
+  "A-new",
+  "A2"
+ ],
+ "arms_excluded": {
+  "B": "Hacker News comments - a different population, not the encyclopedia",
+  "B-truncated": "display-truncated identifiers - the control arm, not videos"
+ },
+ "n_identifiers_measured": 3166,
+ "n_identifiers_unattributed_to_any_edition": 0,
+ "unattributed_identifiers": [],
+ "all_namespaces": {
+  "n_editions": 61,
+  "n_distinct_identifiers": 3166,
+  "n_citation_rows": 4499,
+  "identifier_level": {
+   "RETRIEVABLE": 2763,
+   "NOT-RETRIEVABLE": 384,
+   "INDETERMINATE": 19,
+   "determinate": 3147,
+   "absent_share": 0.12202097235462345,
+   "wilson95_deff_corrected": [
+    0.10880930250996301,
+    0.1361542949633231
+   ],
+   "wilson95_uncorrected_do_not_publish_alone": [
+    0.11104388296553104,
+    0.13391971450775506
+   ]
+  },
+  "citation_row_level": {
+   "RETRIEVABLE": 3890,
+   "NOT-RETRIEVABLE": 581,
+   "INDETERMINATE": 28
+  },
+  "pages_citing_any_of_these_videos": 3249,
+  "pages_with_at_least_one_absent_citation": 476,
+  "share_of_those_pages_with_an_absent_citation": 0.14650661742074483,
+  "what_that_share_is_not": "NOT comparable to a whole-encyclopedia figure. The denominator is only those pages that cite one of these video identifiers, not all pages of the edition, and the numerator counts only this one platform's citations, not all broken references on the page.",
+  "editions": [
+   {
+    "wiki": "en.wikipedia.org",
+    "distinct_identifiers": 1343,
+    "citation_rows": 1428,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1162,
+    "NOT-RETRIEVABLE": 173,
+    "INDETERMINATE": 8,
+    "determinate": 1335,
+    "absent_share": 0.1295880149812734,
+    "wilson95_deff_corrected": [
+     0.10910882496968724,
+     0.15219280750952255
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.11262956557679317,
+     0.14867206690241663
+    ],
+    "pages_citing_any_of_these_videos": 1158,
+    "pages_with_an_absent_citation": 156
+   },
+   {
+    "wiki": "ja.wikipedia.org",
+    "distinct_identifiers": 577,
+    "citation_rows": 610,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 513,
+    "NOT-RETRIEVABLE": 61,
+    "INDETERMINATE": 3,
+    "determinate": 574,
+    "absent_share": 0.10627177700348432,
+    "wilson95_deff_corrected": [
+     0.07868975263064619,
+     0.13908876931466663
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.08362544469374841,
+     0.13415307725156442
+    ],
+    "pages_citing_any_of_these_videos": 307,
+    "pages_with_an_absent_citation": 56
+   },
+   {
+    "wiki": "es.wikipedia.org",
+    "distinct_identifiers": 318,
+    "citation_rows": 589,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 261,
+    "NOT-RETRIEVABLE": 55,
+    "INDETERMINATE": 2,
+    "determinate": 316,
+    "absent_share": 0.17405063291139242,
+    "wilson95_deff_corrected": [
+     0.12807526641646927,
+     0.22785563522600555
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.13622912721461922,
+     0.2197017744278556
+    ],
+    "pages_citing_any_of_these_videos": 444,
+    "pages_with_an_absent_citation": 67
+   },
+   {
+    "wiki": "he.wikipedia.org",
+    "distinct_identifiers": 195,
+    "citation_rows": 201,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 181,
+    "NOT-RETRIEVABLE": 14,
+    "INDETERMINATE": 0,
+    "determinate": 195,
+    "absent_share": 0.07179487179487179,
+    "wilson95_deff_corrected": [
+     0.036051444555419324,
+     0.12408346397694693
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.04324525272336997,
+     0.11688965580899628
+    ],
+    "pages_citing_any_of_these_videos": 159,
+    "pages_with_an_absent_citation": 15
+   },
+   {
+    "wiki": "de.wikipedia.org",
+    "distinct_identifiers": 183,
+    "citation_rows": 292,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 169,
+    "NOT-RETRIEVABLE": 13,
+    "INDETERMINATE": 1,
+    "determinate": 182,
+    "absent_share": 0.07142857142857142,
+    "wilson95_deff_corrected": [
+     0.03477723623605252,
+     0.12579758388245577
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.042215244868037634,
+     0.11835957525047067
+    ],
+    "pages_citing_any_of_these_videos": 231,
+    "pages_with_an_absent_citation": 17
+   },
+   {
+    "wiki": "id.wikipedia.org",
+    "distinct_identifiers": 172,
+    "citation_rows": 293,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 146,
+    "NOT-RETRIEVABLE": 24,
+    "INDETERMINATE": 2,
+    "determinate": 170,
+    "absent_share": 0.1411764705882353,
+    "wilson95_deff_corrected": [
+     0.08651020507620492,
+     0.21170093035935955
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0967405515798021,
+     0.2014705838557624
+    ],
+    "pages_citing_any_of_these_videos": 164,
+    "pages_with_an_absent_citation": 28
+   },
+   {
+    "wiki": "pt.wikipedia.org",
+    "distinct_identifiers": 92,
+    "citation_rows": 174,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 81,
+    "NOT-RETRIEVABLE": 11,
+    "INDETERMINATE": 0,
+    "determinate": 92,
+    "absent_share": 0.11956521739130435,
+    "wilson95_deff_corrected": [
+     0.05505609057156147,
+     0.21457105345010719
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.06809134808816239,
+     0.20153579593350626
+    ],
+    "pages_citing_any_of_these_videos": 96,
+    "pages_with_an_absent_citation": 17
+   },
+   {
+    "wiki": "uk.wikipedia.org",
+    "distinct_identifiers": 78,
+    "citation_rows": 142,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 63,
+    "NOT-RETRIEVABLE": 15,
+    "INDETERMINATE": 0,
+    "determinate": 78,
+    "absent_share": 0.19230769230769232,
+    "wilson95_deff_corrected": [
+     0.10323374773675363,
+     0.310266442855366
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.12015206340148435,
+     0.2933481271906353
+    ],
+    "pages_citing_any_of_these_videos": 102,
+    "pages_with_an_absent_citation": 22
+   },
+   {
+    "wiki": "ru.wikipedia.org",
+    "distinct_identifiers": 62,
+    "citation_rows": 112,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 48,
+    "NOT-RETRIEVABLE": 13,
+    "INDETERMINATE": 1,
+    "determinate": 61,
+    "absent_share": 0.21311475409836064,
+    "wilson95_deff_corrected": [
+     0.10924364901540994,
+     0.35097824240154
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.1289977374005744,
+     0.33122415401637556
+    ],
+    "pages_citing_any_of_these_videos": 87,
+    "pages_with_an_absent_citation": 16
+   },
+   {
+    "wiki": "zh.wikipedia.org",
+    "distinct_identifiers": 54,
+    "citation_rows": 60,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 45,
+    "NOT-RETRIEVABLE": 9,
+    "INDETERMINATE": 0,
+    "determinate": 54,
+    "absent_share": 0.16666666666666666,
+    "wilson95_deff_corrected": [
+     0.07098851852726995,
+     0.3066205401999943
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.09024391642997268,
+     0.2873651422972916
+    ],
+    "pages_citing_any_of_these_videos": 50,
+    "pages_with_an_absent_citation": 10
+   },
+   {
+    "wiki": "tr.wikipedia.org",
+    "distinct_identifiers": 47,
+    "citation_rows": 47,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 40,
+    "NOT-RETRIEVABLE": 7,
+    "INDETERMINATE": 0,
+    "determinate": 47,
+    "absent_share": 0.14893617021276595,
+    "wilson95_deff_corrected": [
+     0.054258154360678684,
+     0.296665269839574
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.07406719996431721,
+     0.2768562242359355
+    ],
+    "pages_citing_any_of_these_videos": 22,
+    "pages_with_an_absent_citation": 4
+   },
+   {
+    "wiki": "hu.wikipedia.org",
+    "distinct_identifiers": 43,
+    "citation_rows": 43,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 33,
+    "NOT-RETRIEVABLE": 10,
+    "INDETERMINATE": 0,
+    "determinate": 43,
+    "absent_share": 0.23255813953488372,
+    "wilson95_deff_corrected": [
+     0.10751570629797039,
+     0.40146628147396446
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.1315367847938448,
+     0.37744520297809003
+    ],
+    "pages_citing_any_of_these_videos": 27,
+    "pages_with_an_absent_citation": 7
+   },
+   {
+    "wiki": "ms.wikipedia.org",
+    "distinct_identifiers": 43,
+    "citation_rows": 43,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 40,
+    "NOT-RETRIEVABLE": 3,
+    "INDETERMINATE": 0,
+    "determinate": 43,
+    "absent_share": 0.06976744186046512,
+    "wilson95_deff_corrected": [
+     0.008179292734605742,
+     0.2019221658550285
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.024011589577214484,
+     0.18608986901241975
+    ],
+    "pages_citing_any_of_these_videos": 34,
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "pl.wikipedia.org",
+    "distinct_identifiers": 42,
+    "citation_rows": 43,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 36,
+    "NOT-RETRIEVABLE": 5,
+    "INDETERMINATE": 1,
+    "determinate": 41,
+    "absent_share": 0.12195121951219512,
+    "wilson95_deff_corrected": [
+     0.033481001977924627,
+     0.27519447791762136
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.053233364685777176,
+     0.25544211520976884
+    ],
+    "pages_citing_any_of_these_videos": 32,
+    "pages_with_an_absent_citation": 4
+   },
+   {
+    "wiki": "it.wikipedia.org",
+    "distinct_identifiers": 32,
+    "citation_rows": 32,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 27,
+    "NOT-RETRIEVABLE": 5,
+    "INDETERMINATE": 0,
+    "determinate": 32,
+    "absent_share": 0.15625,
+    "wilson95_deff_corrected": [
+     0.04433116197708911,
+     0.34185453682327194
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0686442028250571,
+     0.3175414959753039
+    ],
+    "pages_citing_any_of_these_videos": 28,
+    "pages_with_an_absent_citation": 5
+   },
+   {
+    "wiki": "ar.wikipedia.org",
+    "distinct_identifiers": 30,
+    "citation_rows": 31,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 28,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 30,
+    "absent_share": 0.06666666666666667,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.2322590914775185
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.018477023791270378,
+     0.2132345836261692
+    ],
+    "pages_citing_any_of_these_videos": 29,
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "ko.wikipedia.org",
+    "distinct_identifiers": 30,
+    "citation_rows": 66,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 26,
+    "NOT-RETRIEVABLE": 4,
+    "INDETERMINATE": 0,
+    "determinate": 30,
+    "absent_share": 0.13333333333333333,
+    "wilson95_deff_corrected": [
+     0.02928956883961581,
+     0.32062025282129464
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.053096554840547455,
+     0.296813266820363
+    ],
+    "pages_citing_any_of_these_videos": 26,
+    "pages_with_an_absent_citation": 12
+   },
+   {
+    "wiki": "nl.wikipedia.org",
+    "distinct_identifiers": 28,
+    "citation_rows": 28,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 27,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 28,
+    "absent_share": 0.03571428571428571,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.19380520852093408
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0063325198490377516,
+     0.1771219774335332
+    ],
+    "pages_citing_any_of_these_videos": 25,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "bg.wikipedia.org",
+    "distinct_identifiers": 24,
+    "citation_rows": 24,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 21,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 1,
+    "determinate": 23,
+    "absent_share": 0.08695652173913043,
+    "wilson95_deff_corrected": [
+     0.0003668552417632198,
+     0.2917729599998938
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.024180004484220363,
+     0.26795981075743663
+    ],
+    "pages_citing_any_of_these_videos": 18,
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "vi.wikipedia.org",
+    "distinct_identifiers": 23,
+    "citation_rows": 23,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 18,
+    "NOT-RETRIEVABLE": 5,
+    "INDETERMINATE": 0,
+    "determinate": 23,
+    "absent_share": 0.21739130434782608,
+    "wilson95_deff_corrected": [
+     0.06514725610815095,
+     0.4505273543203512
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.09663978026586204,
+     0.4190348301626401
+    ],
+    "pages_citing_any_of_these_videos": 19,
+    "pages_with_an_absent_citation": 5
+   },
+   {
+    "wiki": "fi.wikipedia.org",
+    "distinct_identifiers": 19,
+    "citation_rows": 19,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 15,
+    "NOT-RETRIEVABLE": 4,
+    "INDETERMINATE": 0,
+    "determinate": 19,
+    "absent_share": 0.21052631578947367,
+    "wilson95_deff_corrected": [
+     0.051057087701595366,
+     0.46736246306570883
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.08507676632916253,
+     0.43334278443814167
+    ],
+    "pages_citing_any_of_these_videos": 19,
+    "pages_with_an_absent_citation": 4
+   },
+   {
+    "wiki": "hy.wikipedia.org",
+    "distinct_identifiers": 15,
+    "citation_rows": 15,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 14,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 1,
+    "determinate": 14,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.2363430135572565
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     1.3877787807814457e-17,
+     0.2153108027376358
+    ],
+    "pages_citing_any_of_these_videos": 12,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "th.wikipedia.org",
+    "distinct_identifiers": 15,
+    "citation_rows": 15,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 13,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 15,
+    "absent_share": 0.13333333333333333,
+    "wilson95_deff_corrected": [
+     0.004006552684755804,
+     0.4121745347415332
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.03736125910306537,
+     0.37881982832322364
+    ],
+    "pages_citing_any_of_these_videos": 15,
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "fa.wikipedia.org",
+    "distinct_identifiers": 13,
+    "citation_rows": 14,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 12,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 13,
+    "absent_share": 0.07692307692307693,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.36434230923147537
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.013710421242556586,
+     0.3331395092109959
+    ],
+    "pages_citing_any_of_these_videos": 14,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "no.wikipedia.org",
+    "distinct_identifiers": 12,
+    "citation_rows": 12,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 11,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 1,
+    "determinate": 11,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.2841165545034563
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.2588329669680317
+    ],
+    "pages_citing_any_of_these_videos": 10,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ca.wikipedia.org",
+    "distinct_identifiers": 11,
+    "citation_rows": 11,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 10,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 11,
+    "absent_share": 0.09090909090909091,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.41263434277512123
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.016232172885884855,
+     0.37735843645159567
+    ],
+    "pages_citing_any_of_these_videos": 2,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "ro.wikipedia.org",
+    "distinct_identifiers": 11,
+    "citation_rows": 11,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 11,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 11,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.2841165545034563
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.2588329669680317
+    ],
+    "pages_citing_any_of_these_videos": 8,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "eu.wikipedia.org",
+    "distinct_identifiers": 10,
+    "citation_rows": 10,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 8,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 10,
+    "absent_share": 0.2,
+    "wilson95_deff_corrected": [
+     0.012416562816394416,
+     0.5541031171013391
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.05668215145437519,
+     0.5098375284633583
+    ],
+    "pages_citing_any_of_these_videos": 10,
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "sr.wikipedia.org",
+    "distinct_identifiers": 10,
+    "citation_rows": 10,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 9,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 10,
+    "absent_share": 0.1,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.44188242192146154
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.017876213095072896,
+     0.4041500267952385
+    ],
+    "pages_citing_any_of_these_videos": 8,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "sv.wikipedia.org",
+    "distinct_identifiers": 10,
+    "citation_rows": 11,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 9,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 1,
+    "determinate": 9,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.32836644207006205
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.2991450484195441
+    ],
+    "pages_citing_any_of_these_videos": 11,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "cs.wikipedia.org",
+    "distinct_identifiers": 8,
+    "citation_rows": 8,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 6,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 8,
+    "absent_share": 0.25,
+    "wilson95_deff_corrected": [
+     0.020757754862553657,
+     0.6414460275793865
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.071479212752109,
+     0.5907245696898311
+    ],
+    "pages_citing_any_of_these_videos": 7,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "da.wikipedia.org",
+    "distinct_identifiers": 8,
+    "citation_rows": 8,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 8,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 8,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.35609667759612823
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.32440756488388023
+    ],
+    "pages_citing_any_of_these_videos": 5,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "uz.wikipedia.org",
+    "distinct_identifiers": 6,
+    "citation_rows": 6,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 5,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 6,
+    "absent_share": 0.16666666666666666,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.6156117791112288
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.030053369748306635,
+     0.5635028221864702
+    ],
+    "pages_citing_any_of_these_videos": 6,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "el.wikipedia.org",
+    "distinct_identifiers": 5,
+    "citation_rows": 5,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 5,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 5,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.47692402684396595
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.43448246478317476
+    ],
+    "pages_citing_any_of_these_videos": 4,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ka.wikipedia.org",
+    "distinct_identifiers": 5,
+    "citation_rows": 5,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 4,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 5,
+    "absent_share": 0.2,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.6819265569014465
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.03622410863243014,
+     0.6244653702374747
+    ],
+    "pages_citing_any_of_these_videos": 5,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "simple.wikipedia.org",
+    "distinct_identifiers": 5,
+    "citation_rows": 5,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 5,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 5,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.47692402684396595
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.43448246478317476
+    ],
+    "pages_citing_any_of_these_videos": 5,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "tl.wikipedia.org",
+    "distinct_identifiers": 5,
+    "citation_rows": 5,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 4,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 5,
+    "absent_share": 0.2,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.6819265569014465
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.03622410863243014,
+     0.6244653702374747
+    ],
+    "pages_citing_any_of_these_videos": 5,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "az.wikipedia.org",
+    "distinct_identifiers": 4,
+    "citation_rows": 4,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 4,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 4,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.5377448559459861
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.4898908364545973
+    ],
+    "pages_citing_any_of_these_videos": 3,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ga.wikipedia.org",
+    "distinct_identifiers": 4,
+    "citation_rows": 4,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 3,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 4,
+    "absent_share": 0.25,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.763220477144978
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.04558726080970055,
+     0.6993581574175981
+    ],
+    "pages_citing_any_of_these_videos": 4,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "gl.wikipedia.org",
+    "distinct_identifiers": 4,
+    "citation_rows": 4,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 4,
+    "absent_share": 0.5,
+    "wilson95_deff_corrected": [
+     0.08166848785622954,
+     0.9183315121437705
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.15003898915214947,
+     0.8499610108478506
+    ],
+    "pages_citing_any_of_these_videos": 3,
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "be.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.3333333333333333,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8637318880425526
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.06149194472039621,
+     0.7923403991979522
+    ],
+    "pages_citing_any_of_these_videos": 3,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "bn.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.3333333333333333,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8637318880425526
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.06149194472039621,
+     0.7923403991979522
+    ],
+    "pages_citing_any_of_these_videos": 3,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "mk.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.3333333333333333,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8637318880425526
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.06149194472039621,
+     0.7923403991979522
+    ],
+    "pages_citing_any_of_these_videos": 3,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "sk.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.6666666666666666,
+    "wilson95_deff_corrected": [
+     0.13626811195744726,
+     1.0
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.2076596008020477,
+     0.9385080552796037
+    ],
+    "pages_citing_any_of_these_videos": 2,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "ur.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.3333333333333333,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8637318880425526
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.06149194472039621,
+     0.7923403991979522
+    ],
+    "pages_citing_any_of_these_videos": 3,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "et.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.7218580620653052
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.6576197724933469
+    ],
+    "pages_citing_any_of_these_videos": 2,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "hr.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.7218580620653052
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.6576197724933469
+    ],
+    "pages_citing_any_of_these_videos": 2,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "sq.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.7218580620653052
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.6576197724933469
+    ],
+    "pages_citing_any_of_these_videos": 2,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ta.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.5,
+    "wilson95_deff_corrected": [
+     0.015316367896608396,
+     0.9846836321033916
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.09453120573423074,
+     0.9054687942657693
+    ],
+    "pages_citing_any_of_these_videos": 2,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "te.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.5,
+    "wilson95_deff_corrected": [
+     0.015316367896608396,
+     0.9846836321033916
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.09453120573423074,
+     0.9054687942657693
+    ],
+    "pages_citing_any_of_these_videos": 2,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "af.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "fr.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "hi.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "is.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "kk.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "lv.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 0,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 1.0,
+    "wilson95_deff_corrected": [
+     0.12904265013742466,
+     1.0
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.20654931437723745,
+     1.0
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "mn.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ne.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "nn.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "sl.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 0,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 1.0,
+    "wilson95_deff_corrected": [
+     0.12904265013742466,
+     1.0
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.20654931437723745,
+     1.0
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "sw.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 0,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 1.0,
+    "wilson95_deff_corrected": [
+     0.12904265013742466,
+     1.0
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.20654931437723745,
+     1.0
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 1
+   }
+  ]
+ },
+ "article_space_only": {
+  "n_editions": 61,
+  "n_distinct_identifiers": 2400,
+  "n_citation_rows": 2988,
+  "identifier_level": {
+   "RETRIEVABLE": 2120,
+   "NOT-RETRIEVABLE": 267,
+   "INDETERMINATE": 13,
+   "determinate": 2387,
+   "absent_share": 0.11185588604943443,
+   "wilson95_deff_corrected": [
+    0.0973587861755806,
+    0.1276002786910583
+   ],
+   "wilson95_uncorrected_do_not_publish_alone": [
+    0.09983006307344602,
+    0.12512900179319286
+   ]
+  },
+  "citation_row_level": {
+   "RETRIEVABLE": 2614,
+   "NOT-RETRIEVABLE": 358,
+   "INDETERMINATE": 16
+  },
+  "pages_citing_any_of_these_videos": 2174,
+  "pages_with_at_least_one_absent_citation": 303,
+  "share_of_those_pages_with_an_absent_citation": 0.13937442502299907,
+  "what_that_share_is_not": "NOT comparable to a whole-encyclopedia figure. The denominator is only those pages that cite one of these video identifiers, not all pages of the edition, and the numerator counts only this one platform's citations, not all broken references on the page.",
+  "editions": [
+   {
+    "wiki": "en.wikipedia.org",
+    "distinct_identifiers": 853,
+    "citation_rows": 906,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 759,
+    "NOT-RETRIEVABLE": 92,
+    "INDETERMINATE": 2,
+    "determinate": 851,
+    "absent_share": 0.10810810810810811,
+    "wilson95_deff_corrected": [
+     0.08489793404161292,
+     0.13484042431998652
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.08897913877658575,
+     0.1307592195850137
+    ],
+    "pages_citing_any_of_these_videos": 764,
+    "pages_with_an_absent_citation": 85
+   },
+   {
+    "wiki": "ja.wikipedia.org",
+    "distinct_identifiers": 538,
+    "citation_rows": 562,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 481,
+    "NOT-RETRIEVABLE": 54,
+    "INDETERMINATE": 3,
+    "determinate": 535,
+    "absent_share": 0.10093457943925234,
+    "wilson95_deff_corrected": [
+     0.07318571784615056,
+     0.13437340179818755
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0781858582891915,
+     0.1293732613551466
+    ],
+    "pages_citing_any_of_these_videos": 285,
+    "pages_with_an_absent_citation": 51
+   },
+   {
+    "wiki": "es.wikipedia.org",
+    "distinct_identifiers": 268,
+    "citation_rows": 274,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 216,
+    "NOT-RETRIEVABLE": 50,
+    "INDETERMINATE": 2,
+    "determinate": 266,
+    "absent_share": 0.18796992481203006,
+    "wilson95_deff_corrected": [
+     0.1364377840372664,
+     0.24838617620412598
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.1455859924192947,
+     0.23923796782209766
+    ],
+    "pages_citing_any_of_these_videos": 204,
+    "pages_with_an_absent_citation": 31
+   },
+   {
+    "wiki": "he.wikipedia.org",
+    "distinct_identifiers": 147,
+    "citation_rows": 151,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 136,
+    "NOT-RETRIEVABLE": 11,
+    "INDETERMINATE": 0,
+    "determinate": 147,
+    "absent_share": 0.07482993197278912,
+    "wilson95_deff_corrected": [
+     0.033823410090136334,
+     0.13749194990921224
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.04229500478273306,
+     0.1290203552166155
+    ],
+    "pages_citing_any_of_these_videos": 117,
+    "pages_with_an_absent_citation": 12
+   },
+   {
+    "wiki": "id.wikipedia.org",
+    "distinct_identifiers": 120,
+    "citation_rows": 124,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 106,
+    "NOT-RETRIEVABLE": 13,
+    "INDETERMINATE": 1,
+    "determinate": 119,
+    "absent_share": 0.1092436974789916,
+    "wilson95_deff_corrected": [
+     0.053924056197828904,
+     0.1890025510500734
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.06496241230925223,
+     0.17796419493865007
+    ],
+    "pages_citing_any_of_these_videos": 78,
+    "pages_with_an_absent_citation": 12
+   },
+   {
+    "wiki": "de.wikipedia.org",
+    "distinct_identifiers": 107,
+    "citation_rows": 111,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 101,
+    "NOT-RETRIEVABLE": 5,
+    "INDETERMINATE": 1,
+    "determinate": 106,
+    "absent_share": 0.04716981132075472,
+    "wilson95_deff_corrected": [
+     0.011973415723127524,
+     0.11403964864530014
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.020314072962303892,
+     0.10569899140612377
+    ],
+    "pages_citing_any_of_these_videos": 92,
+    "pages_with_an_absent_citation": 5
+   },
+   {
+    "wiki": "pt.wikipedia.org",
+    "distinct_identifiers": 88,
+    "citation_rows": 91,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 77,
+    "NOT-RETRIEVABLE": 11,
+    "INDETERMINATE": 0,
+    "determinate": 88,
+    "absent_share": 0.125,
+    "wilson95_deff_corrected": [
+     0.05768800594671403,
+     0.22368229405195517
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.07125274152192247,
+     0.21011755847674674
+    ],
+    "pages_citing_any_of_these_videos": 51,
+    "pages_with_an_absent_citation": 9
+   },
+   {
+    "wiki": "uk.wikipedia.org",
+    "distinct_identifiers": 65,
+    "citation_rows": 67,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 52,
+    "NOT-RETRIEVABLE": 13,
+    "INDETERMINATE": 0,
+    "determinate": 65,
+    "absent_share": 0.2,
+    "wilson95_deff_corrected": [
+     0.10203209661346006,
+     0.33144882218025407
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.12077959241205476,
+     0.3127013263816594
+    ],
+    "pages_citing_any_of_these_videos": 49,
+    "pages_with_an_absent_citation": 10
+   },
+   {
+    "wiki": "ru.wikipedia.org",
+    "distinct_identifiers": 50,
+    "citation_rows": 50,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 39,
+    "NOT-RETRIEVABLE": 10,
+    "INDETERMINATE": 1,
+    "determinate": 49,
+    "absent_share": 0.20408163265306123,
+    "wilson95_deff_corrected": [
+     0.09317667375971872,
+     0.35801183149322807
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.11481849605782132,
+     0.3363700091951255
+    ],
+    "pages_citing_any_of_these_videos": 39,
+    "pages_with_an_absent_citation": 7
+   },
+   {
+    "wiki": "zh.wikipedia.org",
+    "distinct_identifiers": 49,
+    "citation_rows": 54,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 41,
+    "NOT-RETRIEVABLE": 8,
+    "INDETERMINATE": 0,
+    "determinate": 49,
+    "absent_share": 0.16326530612244897,
+    "wilson95_deff_corrected": [
+     0.0650788709741352,
+     0.3104114970723215
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.08512698370728837,
+     0.2903633843391683
+    ],
+    "pages_citing_any_of_these_videos": 44,
+    "pages_with_an_absent_citation": 9
+   },
+   {
+    "wiki": "tr.wikipedia.org",
+    "distinct_identifiers": 47,
+    "citation_rows": 47,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 40,
+    "NOT-RETRIEVABLE": 7,
+    "INDETERMINATE": 0,
+    "determinate": 47,
+    "absent_share": 0.14893617021276595,
+    "wilson95_deff_corrected": [
+     0.054258154360678684,
+     0.296665269839574
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.07406719996431721,
+     0.2768562242359355
+    ],
+    "pages_citing_any_of_these_videos": 22,
+    "pages_with_an_absent_citation": 4
+   },
+   {
+    "wiki": "hu.wikipedia.org",
+    "distinct_identifiers": 43,
+    "citation_rows": 43,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 33,
+    "NOT-RETRIEVABLE": 10,
+    "INDETERMINATE": 0,
+    "determinate": 43,
+    "absent_share": 0.23255813953488372,
+    "wilson95_deff_corrected": [
+     0.10751570629797039,
+     0.40146628147396446
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.1315367847938448,
+     0.37744520297809003
+    ],
+    "pages_citing_any_of_these_videos": 27,
+    "pages_with_an_absent_citation": 7
+   },
+   {
+    "wiki": "ms.wikipedia.org",
+    "distinct_identifiers": 43,
+    "citation_rows": 43,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 40,
+    "NOT-RETRIEVABLE": 3,
+    "INDETERMINATE": 0,
+    "determinate": 43,
+    "absent_share": 0.06976744186046512,
+    "wilson95_deff_corrected": [
+     0.008179292734605742,
+     0.2019221658550285
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.024011589577214484,
+     0.18608986901241975
+    ],
+    "pages_citing_any_of_these_videos": 34,
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "pl.wikipedia.org",
+    "distinct_identifiers": 42,
+    "citation_rows": 43,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 36,
+    "NOT-RETRIEVABLE": 5,
+    "INDETERMINATE": 1,
+    "determinate": 41,
+    "absent_share": 0.12195121951219512,
+    "wilson95_deff_corrected": [
+     0.033481001977924627,
+     0.27519447791762136
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.053233364685777176,
+     0.25544211520976884
+    ],
+    "pages_citing_any_of_these_videos": 32,
+    "pages_with_an_absent_citation": 4
+   },
+   {
+    "wiki": "it.wikipedia.org",
+    "distinct_identifiers": 32,
+    "citation_rows": 32,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 27,
+    "NOT-RETRIEVABLE": 5,
+    "INDETERMINATE": 0,
+    "determinate": 32,
+    "absent_share": 0.15625,
+    "wilson95_deff_corrected": [
+     0.04433116197708911,
+     0.34185453682327194
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0686442028250571,
+     0.3175414959753039
+    ],
+    "pages_citing_any_of_these_videos": 28,
+    "pages_with_an_absent_citation": 5
+   },
+   {
+    "wiki": "ar.wikipedia.org",
+    "distinct_identifiers": 30,
+    "citation_rows": 31,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 28,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 30,
+    "absent_share": 0.06666666666666667,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.2322590914775185
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.018477023791270378,
+     0.2132345836261692
+    ],
+    "pages_citing_any_of_these_videos": 29,
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "ko.wikipedia.org",
+    "distinct_identifiers": 30,
+    "citation_rows": 66,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 26,
+    "NOT-RETRIEVABLE": 4,
+    "INDETERMINATE": 0,
+    "determinate": 30,
+    "absent_share": 0.13333333333333333,
+    "wilson95_deff_corrected": [
+     0.02928956883961581,
+     0.32062025282129464
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.053096554840547455,
+     0.296813266820363
+    ],
+    "pages_citing_any_of_these_videos": 26,
+    "pages_with_an_absent_citation": 12
+   },
+   {
+    "wiki": "nl.wikipedia.org",
+    "distinct_identifiers": 28,
+    "citation_rows": 28,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 27,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 28,
+    "absent_share": 0.03571428571428571,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.19380520852093408
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0063325198490377516,
+     0.1771219774335332
+    ],
+    "pages_citing_any_of_these_videos": 25,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "bg.wikipedia.org",
+    "distinct_identifiers": 24,
+    "citation_rows": 24,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 21,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 1,
+    "determinate": 23,
+    "absent_share": 0.08695652173913043,
+    "wilson95_deff_corrected": [
+     0.0003668552417632198,
+     0.2917729599998938
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.024180004484220363,
+     0.26795981075743663
+    ],
+    "pages_citing_any_of_these_videos": 18,
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "vi.wikipedia.org",
+    "distinct_identifiers": 23,
+    "citation_rows": 23,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 18,
+    "NOT-RETRIEVABLE": 5,
+    "INDETERMINATE": 0,
+    "determinate": 23,
+    "absent_share": 0.21739130434782608,
+    "wilson95_deff_corrected": [
+     0.06514725610815095,
+     0.4505273543203512
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.09663978026586204,
+     0.4190348301626401
+    ],
+    "pages_citing_any_of_these_videos": 19,
+    "pages_with_an_absent_citation": 5
+   },
+   {
+    "wiki": "fi.wikipedia.org",
+    "distinct_identifiers": 19,
+    "citation_rows": 19,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 15,
+    "NOT-RETRIEVABLE": 4,
+    "INDETERMINATE": 0,
+    "determinate": 19,
+    "absent_share": 0.21052631578947367,
+    "wilson95_deff_corrected": [
+     0.051057087701595366,
+     0.46736246306570883
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.08507676632916253,
+     0.43334278443814167
+    ],
+    "pages_citing_any_of_these_videos": 19,
+    "pages_with_an_absent_citation": 4
+   },
+   {
+    "wiki": "hy.wikipedia.org",
+    "distinct_identifiers": 15,
+    "citation_rows": 15,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 14,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 1,
+    "determinate": 14,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.2363430135572565
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     1.3877787807814457e-17,
+     0.2153108027376358
+    ],
+    "pages_citing_any_of_these_videos": 12,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "th.wikipedia.org",
+    "distinct_identifiers": 15,
+    "citation_rows": 15,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 13,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 15,
+    "absent_share": 0.13333333333333333,
+    "wilson95_deff_corrected": [
+     0.004006552684755804,
+     0.4121745347415332
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.03736125910306537,
+     0.37881982832322364
+    ],
+    "pages_citing_any_of_these_videos": 15,
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "fa.wikipedia.org",
+    "distinct_identifiers": 13,
+    "citation_rows": 14,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 12,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 13,
+    "absent_share": 0.07692307692307693,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.36434230923147537
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.013710421242556586,
+     0.3331395092109959
+    ],
+    "pages_citing_any_of_these_videos": 14,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "no.wikipedia.org",
+    "distinct_identifiers": 12,
+    "citation_rows": 12,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 11,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 1,
+    "determinate": 11,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.2841165545034563
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.2588329669680317
+    ],
+    "pages_citing_any_of_these_videos": 10,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ca.wikipedia.org",
+    "distinct_identifiers": 11,
+    "citation_rows": 11,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 10,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 11,
+    "absent_share": 0.09090909090909091,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.41263434277512123
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.016232172885884855,
+     0.37735843645159567
+    ],
+    "pages_citing_any_of_these_videos": 2,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "ro.wikipedia.org",
+    "distinct_identifiers": 11,
+    "citation_rows": 11,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 11,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 11,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.2841165545034563
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.2588329669680317
+    ],
+    "pages_citing_any_of_these_videos": 8,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "eu.wikipedia.org",
+    "distinct_identifiers": 10,
+    "citation_rows": 10,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 8,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 10,
+    "absent_share": 0.2,
+    "wilson95_deff_corrected": [
+     0.012416562816394416,
+     0.5541031171013391
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.05668215145437519,
+     0.5098375284633583
+    ],
+    "pages_citing_any_of_these_videos": 10,
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "sr.wikipedia.org",
+    "distinct_identifiers": 10,
+    "citation_rows": 10,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 9,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 10,
+    "absent_share": 0.1,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.44188242192146154
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.017876213095072896,
+     0.4041500267952385
+    ],
+    "pages_citing_any_of_these_videos": 8,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "sv.wikipedia.org",
+    "distinct_identifiers": 10,
+    "citation_rows": 11,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 9,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 1,
+    "determinate": 9,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.32836644207006205
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.2991450484195441
+    ],
+    "pages_citing_any_of_these_videos": 11,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "cs.wikipedia.org",
+    "distinct_identifiers": 8,
+    "citation_rows": 8,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 6,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 8,
+    "absent_share": 0.25,
+    "wilson95_deff_corrected": [
+     0.020757754862553657,
+     0.6414460275793865
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.071479212752109,
+     0.5907245696898311
+    ],
+    "pages_citing_any_of_these_videos": 7,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "da.wikipedia.org",
+    "distinct_identifiers": 8,
+    "citation_rows": 8,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 8,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 8,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.35609667759612823
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.32440756488388023
+    ],
+    "pages_citing_any_of_these_videos": 5,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "uz.wikipedia.org",
+    "distinct_identifiers": 6,
+    "citation_rows": 6,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 5,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 6,
+    "absent_share": 0.16666666666666666,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.6156117791112288
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.030053369748306635,
+     0.5635028221864702
+    ],
+    "pages_citing_any_of_these_videos": 6,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "el.wikipedia.org",
+    "distinct_identifiers": 5,
+    "citation_rows": 5,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 5,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 5,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.47692402684396595
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.43448246478317476
+    ],
+    "pages_citing_any_of_these_videos": 4,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ka.wikipedia.org",
+    "distinct_identifiers": 5,
+    "citation_rows": 5,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 4,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 5,
+    "absent_share": 0.2,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.6819265569014465
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.03622410863243014,
+     0.6244653702374747
+    ],
+    "pages_citing_any_of_these_videos": 5,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "simple.wikipedia.org",
+    "distinct_identifiers": 5,
+    "citation_rows": 5,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 5,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 5,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.47692402684396595
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.43448246478317476
+    ],
+    "pages_citing_any_of_these_videos": 5,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "tl.wikipedia.org",
+    "distinct_identifiers": 5,
+    "citation_rows": 5,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 4,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 5,
+    "absent_share": 0.2,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.6819265569014465
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.03622410863243014,
+     0.6244653702374747
+    ],
+    "pages_citing_any_of_these_videos": 5,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "az.wikipedia.org",
+    "distinct_identifiers": 4,
+    "citation_rows": 4,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 4,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 4,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.5377448559459861
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.4898908364545973
+    ],
+    "pages_citing_any_of_these_videos": 3,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ga.wikipedia.org",
+    "distinct_identifiers": 4,
+    "citation_rows": 4,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 3,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 4,
+    "absent_share": 0.25,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.763220477144978
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.04558726080970055,
+     0.6993581574175981
+    ],
+    "pages_citing_any_of_these_videos": 4,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "gl.wikipedia.org",
+    "distinct_identifiers": 4,
+    "citation_rows": 4,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 4,
+    "absent_share": 0.5,
+    "wilson95_deff_corrected": [
+     0.08166848785622954,
+     0.9183315121437705
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.15003898915214947,
+     0.8499610108478506
+    ],
+    "pages_citing_any_of_these_videos": 3,
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "be.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.3333333333333333,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8637318880425526
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.06149194472039621,
+     0.7923403991979522
+    ],
+    "pages_citing_any_of_these_videos": 3,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "bn.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.3333333333333333,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8637318880425526
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.06149194472039621,
+     0.7923403991979522
+    ],
+    "pages_citing_any_of_these_videos": 3,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "mk.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.3333333333333333,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8637318880425526
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.06149194472039621,
+     0.7923403991979522
+    ],
+    "pages_citing_any_of_these_videos": 3,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "sk.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.6666666666666666,
+    "wilson95_deff_corrected": [
+     0.13626811195744726,
+     1.0
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.2076596008020477,
+     0.9385080552796037
+    ],
+    "pages_citing_any_of_these_videos": 2,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "ur.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.3333333333333333,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8637318880425526
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.06149194472039621,
+     0.7923403991979522
+    ],
+    "pages_citing_any_of_these_videos": 3,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "et.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.7218580620653052
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.6576197724933469
+    ],
+    "pages_citing_any_of_these_videos": 2,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "hr.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.7218580620653052
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.6576197724933469
+    ],
+    "pages_citing_any_of_these_videos": 2,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "sq.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.7218580620653052
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.6576197724933469
+    ],
+    "pages_citing_any_of_these_videos": 2,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ta.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.5,
+    "wilson95_deff_corrected": [
+     0.015316367896608396,
+     0.9846836321033916
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.09453120573423074,
+     0.9054687942657693
+    ],
+    "pages_citing_any_of_these_videos": 2,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "te.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.5,
+    "wilson95_deff_corrected": [
+     0.015316367896608396,
+     0.9846836321033916
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.09453120573423074,
+     0.9054687942657693
+    ],
+    "pages_citing_any_of_these_videos": 2,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "af.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "fr.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "hi.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "is.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "kk.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "lv.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 0,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 1.0,
+    "wilson95_deff_corrected": [
+     0.12904265013742466,
+     1.0
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.20654931437723745,
+     1.0
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "mn.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ne.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "nn.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "sl.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 0,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 1.0,
+    "wilson95_deff_corrected": [
+     0.12904265013742466,
+     1.0
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.20654931437723745,
+     1.0
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "sw.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 0,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 1.0,
+    "wilson95_deff_corrected": [
+     0.12904265013742466,
+     1.0
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
+     0.20654931437723745,
+     1.0
+    ],
+    "pages_citing_any_of_these_videos": 1,
+    "pages_with_an_absent_citation": 1
+   }
+  ]
+ }
+}

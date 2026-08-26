@@ -14,7 +14,8 @@
    "ledger/transition-confirm-2026-08-21.json",
    "ledger/transition-confirm-2026-08-22.json",
    "ledger/transition-confirm-2026-08-23.json",
-   "ledger/transition-confirm-2026-08-25.json"
+   "ledger/transition-confirm-2026-08-25.json",
+   "ledger/transition-confirm-2026-08-26.json"
   ],
   "corrections": "ledger/corrections.json",
   "corrections_sha256": "357cb2b332faa44fe605fc03882e3be5ba8699daa93fdc54e6128937a4a12ae6"
@@ -28,9 +29,9 @@
    "refuted": 0
   },
   "RETRIEVABLE->NOT-RETRIEVABLE": {
-   "n": 16,
-   "confirmed": 10,
-   "refuted": 6
+   "n": 19,
+   "confirmed": 11,
+   "refuted": 8
   }
  },
  "genuine_transitions_only": {
@@ -40,9 +41,9 @@
    "refuted": 0
   },
   "RETRIEVABLE->NOT-RETRIEVABLE": {
-   "n": 16,
-   "confirmed": 10,
-   "refuted": 6
+   "n": 19,
+   "confirmed": 11,
+   "refuted": 8
   }
  },
  "n_artefact_echoes": 2,
@@ -573,6 +574,63 @@
     "RETRIEVABLE",
     "RETRIEVABLE",
     "RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-26.json",
+   "sidecar_sha256": "c877f927fa9192b7098d7f3ca7b962fa3f84c4bf904b2b3d37bb5eaaed41a0df",
+   "generated_utc": "2026-08-26T05:21:55Z",
+   "vid": "7016669364938149122",
+   "handle": "ask__dani",
+   "direction": "RETRIEVABLE->NOT-RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": false,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-26.json",
+   "sidecar_sha256": "c877f927fa9192b7098d7f3ca7b962fa3f84c4bf904b2b3d37bb5eaaed41a0df",
+   "generated_utc": "2026-08-26T05:21:55Z",
+   "vid": "7228775822222724357",
+   "handle": "franciscogaleano994",
+   "direction": "RETRIEVABLE->NOT-RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": false,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-26.json",
+   "sidecar_sha256": "c877f927fa9192b7098d7f3ca7b962fa3f84c4bf904b2b3d37bb5eaaed41a0df",
+   "generated_utc": "2026-08-26T05:21:55Z",
+   "vid": "7666435890209770773",
+   "handle": "swfx_real_fox",
+   "direction": "RETRIEVABLE->NOT-RETRIEVABLE",
+   "passes": [
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE"
    ],
    "n_passes": 5,
    "confirmed": true,
