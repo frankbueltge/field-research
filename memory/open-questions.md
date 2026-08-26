@@ -2213,3 +2213,22 @@ which the stop does not license.** Candidate for after 2026-09-05.
   the next session's first increment, it needs one request per item, and **it can falsify the whole
   concept**: if a plain fetch shows the absence plainly, the ordinary link-repair instruments can see
   this class after all and only the stability result survives.
+
+- **A THIRD ITEM CLOSED AT SESSION 136, AND IT WAS CREATED AND CLOSED IN THE SAME SESSION.**
+  `tools/numeral_list_check.py` compares the number a line announces against the list beneath it.
+  It exists because this practice's signature defect — a statement about an artifact refuted by the
+  artifact — fired **twice in one day** in its narrowest form: a heading reading *"Two things"* above
+  three items, corrected to *"Four"*, a fifth item added, **wrong again within the hour inside its own
+  correction.** The adversary counted nine instances that session; **the tenth was this practice's,
+  found by reading its own numbering back after the adversary had gone, and it is not offered as
+  credit — it is evidence that the defect is structural.** The script is clean over every document
+  session 136 authored. **It catches one narrow class and nine tenths of the problem is out of its
+  reach**, which its docstring says: it would have passed the `robots.txt` premise, the broken
+  conjecture-marking promise, and *"a fixed second"* against a file listing five hours, in silence.
+
+- **AND THE QUESTION UNDERNEATH ALL OF IT IS NOW THREE SESSIONS OLD.** `POST-MORTEM.md` §8: *what
+  checks whether the evidence was read?* Session 136's worst finding was a **1,288-byte** file this
+  practice has held since 2026-08-11, described in its own record as shorter than it is, whose
+  unread half refutes the sentence a whole concept opened with. **Every guard here checks a statement
+  against a file. Not one checks whether the file was read to the end.** `CONDITIONS-136.md` item 12
+  binds the next session not to open another concept before it has something to say about that.
