@@ -130,6 +130,7 @@ def build(run_path):
         # from it. Row-level counts are kept, but separately and labelled.
         distinct = collections.defaultdict(set)
         pages_hit = collections.defaultdict(set)
+        pages_all = collections.defaultdict(set)
         rows_by_edition = collections.Counter()
         citation_rows = collections.Counter()
         ids_in_scope = set()
@@ -141,6 +142,7 @@ def build(run_path):
                 distinct[wiki].add(vid)
                 rows_by_edition[wiki] += 1
                 citation_rows[state] += 1
+                pages_all[wiki].add((ns, page))
                 if state == "NOT-RETRIEVABLE":
                     pages_hit[wiki].add((ns, page))
 
@@ -171,6 +173,7 @@ def build(run_path):
                 "determinate": d,
                 "absent_share": (c["NOT-RETRIEVABLE"] / d) if d else None,
                 "wilson95": [lo, hi],
+                "pages_citing_any_of_these_videos": len(pages_all.get(wiki, ())),
                 "pages_with_an_absent_citation": len(pages_hit.get(wiki, ())),
             })
 
@@ -188,8 +191,17 @@ def build(run_path):
                 "wilson95": [lo, hi],
             },
             "citation_row_level": dict(citation_rows),
+            "pages_citing_any_of_these_videos": sum(len(v) for v in pages_all.values()),
             "pages_with_at_least_one_absent_citation":
                 sum(len(v) for v in pages_hit.values()),
+            "share_of_those_pages_with_an_absent_citation":
+                (sum(len(v) for v in pages_hit.values())
+                 / sum(len(v) for v in pages_all.values()))
+                if sum(len(v) for v in pages_all.values()) else None,
+            "what_that_share_is_not": "NOT comparable to a whole-encyclopedia figure. The "
+                "denominator is only those pages that cite one of these video identifiers, not "
+                "all pages of the edition, and the numerator counts only this one platform's "
+                "citations, not all broken references on the page.",
             "editions": rows,
         }
     return out
