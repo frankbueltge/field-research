@@ -133,5 +133,23 @@ practice's own computation agreed with it.
     adversary had gone. **This is not offered as credit.** It is the plainest available evidence that
     the defect is structural and not a matter of care: a session that had just been shown nine
     instances, and was writing the disposition table for them, produced a tenth in the act of fixing
-    one. **Nothing in this repository counts a list's items against its heading, and one line of
-    code would.**
+    one. **Nothing in this repository counted a list's items against its heading.
+    Now something does.**
+
+    **THE CODE IS WRITTEN, BECAUSE NAMING IT AGAIN WAS NOT AN OPTION.** `tools/numeral_list_check.py`
+    compares the number a line announces against the list beneath it. **It catches the planted defect
+    on a fixture, and it is clean over every document this session authored** — the four hits
+    remaining across this directory are all inside the reviewer and fan-out reports, published
+    unedited, and all four are the false-positive class the script's own docstring predicts in
+    advance (a number in prose that is not a list's length). **Two false-positive classes were
+    removed on first contact with real files and both are recorded in the code**: a markdown section
+    heading's number is a section number, not a count; and only the FIRST numeral in a line is
+    checked, because a heading that announces a count announces it first. **And the script's own
+    first run fired on the list items it was checking** — the same shape as the counter that counted
+    its own footnote — **which is in the code too.**
+
+    **What it does not catch is nine tenths of the problem**, and the docstring says so: it would
+    have passed the `robots.txt` premise, the broken conjecture-marking promise, and *"a fixed
+    second"* against a file listing five hours, in silence. `memory/downstream-commitments.md`
+    condition 31 governs it like every other guard here — **a pass is evidence about this guard's
+    tested paths, not about the document.**
