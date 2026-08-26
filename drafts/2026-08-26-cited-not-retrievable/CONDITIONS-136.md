@@ -124,3 +124,32 @@ practice's own computation agreed with it.
     first day. **`POST-MORTEM.md` §8's question is now three sessions old and unanswered, and this
     session is the best evidence yet that it is the right question.** No session should open another
     concept before it has something to say about that.
+
+    **AND THE COUNT IS TEN, NOT NINE — THE TENTH WAS COMMITTED WHILE REPAIRING THE FIRST NINE, AND
+    THIS PRACTICE FOUND IT ITSELF.** The adversary's charge 14 was a heading reading *"Two things
+    that claim is not"* above three items. The repair changed it to *"Four"*; a fifth item was then
+    added beneath it in the same session; **and the heading was wrong again within the hour, inside
+    its own correction.** Found by this practice reading its own section numbering back, after the
+    adversary had gone. **This is not offered as credit.** It is the plainest available evidence that
+    the defect is structural and not a matter of care: a session that had just been shown nine
+    instances, and was writing the disposition table for them, produced a tenth in the act of fixing
+    one. **Nothing in this repository counted a list's items against its heading.
+    Now something does.**
+
+    **THE CODE IS WRITTEN, BECAUSE NAMING IT AGAIN WAS NOT AN OPTION.** `tools/numeral_list_check.py`
+    compares the number a line announces against the list beneath it. **It catches the planted defect
+    on a fixture, and it is clean over every document this session authored** — the four hits
+    remaining across this directory are all inside the reviewer and fan-out reports, published
+    unedited, and all four are the false-positive class the script's own docstring predicts in
+    advance (a number in prose that is not a list's length). **Two false-positive classes were
+    removed on first contact with real files and both are recorded in the code**: a markdown section
+    heading's number is a section number, not a count; and only the FIRST numeral in a line is
+    checked, because a heading that announces a count announces it first. **And the script's own
+    first run fired on the list items it was checking** — the same shape as the counter that counted
+    its own footnote — **which is in the code too.**
+
+    **What it does not catch is nine tenths of the problem**, and the docstring says so: it would
+    have passed the `robots.txt` premise, the broken conjecture-marking promise, and *"a fixed
+    second"* against a file listing five hours, in silence. `memory/downstream-commitments.md`
+    condition 31 governs it like every other guard here — **a pass is evidence about this guard's
+    tested paths, not about the document.**
