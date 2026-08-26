@@ -340,7 +340,10 @@
    "NOT-RETRIEVABLE": 568,
    "INDETERMINATE": 42
   },
+  "pages_citing_any_of_these_videos": 3249,
   "pages_with_at_least_one_absent_citation": 467,
+  "share_of_those_pages_with_an_absent_citation": 0.14373653431825176,
+  "what_that_share_is_not": "NOT comparable to a whole-encyclopedia figure. The denominator is only those pages that cite one of these video identifiers, not all pages of the edition, and the numerator counts only this one platform's citations, not all broken references on the page.",
   "editions": [
    {
     "wiki": "en.wikipedia.org",
@@ -356,6 +359,7 @@
      0.11164610192695557,
      0.14763618123619277
     ],
+    "pages_citing_any_of_these_videos": 1158,
     "pages_with_an_absent_citation": 153
    },
    {
@@ -372,6 +376,7 @@
      0.07798650358587433,
      0.1273689251816305
     ],
+    "pages_citing_any_of_these_videos": 307,
     "pages_with_an_absent_citation": 53
    },
    {
@@ -388,6 +393,7 @@
      0.13254322371539656,
      0.21496159816339
     ],
+    "pages_citing_any_of_these_videos": 444,
     "pages_with_an_absent_citation": 67
    },
    {
@@ -404,6 +410,7 @@
      0.03957596934877014,
      0.11125924486050115
     ],
+    "pages_citing_any_of_these_videos": 159,
     "pages_with_an_absent_citation": 14
    },
    {
@@ -420,6 +427,7 @@
      0.041981931689040165,
      0.11773347092581546
     ],
+    "pages_citing_any_of_these_videos": 231,
     "pages_with_an_absent_citation": 17
    },
    {
@@ -436,6 +444,7 @@
      0.09242825369290503,
      0.19593692883196423
     ],
+    "pages_citing_any_of_these_videos": 164,
     "pages_with_an_absent_citation": 28
    },
    {
@@ -452,6 +461,7 @@
      0.06885508485107264,
      0.20361498406203435
     ],
+    "pages_citing_any_of_these_videos": 96,
     "pages_with_an_absent_citation": 17
    },
    {
@@ -468,6 +478,7 @@
      0.12015206340148435,
      0.2933481271906353
     ],
+    "pages_citing_any_of_these_videos": 102,
     "pages_with_an_absent_citation": 22
    },
    {
@@ -484,6 +495,7 @@
      0.11828505322897494,
      0.317818058056279
     ],
+    "pages_citing_any_of_these_videos": 87,
     "pages_with_an_absent_citation": 15
    },
    {
@@ -500,6 +512,7 @@
      0.09024391642997268,
      0.2873651422972916
     ],
+    "pages_citing_any_of_these_videos": 50,
     "pages_with_an_absent_citation": 10
    },
    {
@@ -516,6 +529,7 @@
      0.07572282227805464,
      0.28224139552060995
     ],
+    "pages_citing_any_of_these_videos": 22,
     "pages_with_an_absent_citation": 4
    },
    {
@@ -532,6 +546,7 @@
      0.11705799876003031,
      0.35939845316322905
     ],
+    "pages_citing_any_of_these_videos": 27,
     "pages_with_an_absent_citation": 7
    },
    {
@@ -548,6 +563,7 @@
      0.024011589577214484,
      0.18608986901241975
     ],
+    "pages_citing_any_of_these_videos": 34,
     "pages_with_an_absent_citation": 2
    },
    {
@@ -564,6 +580,7 @@
      0.07061187717320358,
      0.2907232436648971
     ],
+    "pages_citing_any_of_these_videos": 32,
     "pages_with_an_absent_citation": 5
    },
    {
@@ -580,6 +597,7 @@
      0.070926244433653,
      0.3263435395879326
     ],
+    "pages_citing_any_of_these_videos": 28,
     "pages_with_an_absent_citation": 5
    },
    {
@@ -596,6 +614,7 @@
      0.018477023791270378,
      0.2132345836261692
     ],
+    "pages_citing_any_of_these_videos": 29,
     "pages_with_an_absent_citation": 2
    },
    {
@@ -612,6 +631,7 @@
      0.053096554840547455,
      0.296813266820363
     ],
+    "pages_citing_any_of_these_videos": 26,
     "pages_with_an_absent_citation": 12
    },
    {
@@ -628,6 +648,7 @@
      0.0,
      0.1287289218592153
     ],
+    "pages_citing_any_of_these_videos": 25,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -644,6 +665,7 @@
      0.023158815297043306,
      0.25848802193210685
     ],
+    "pages_citing_any_of_these_videos": 18,
     "pages_with_an_absent_citation": 2
    },
    {
@@ -660,6 +682,7 @@
      0.07306884583422052,
      0.38516607437126543
     ],
+    "pages_citing_any_of_these_videos": 19,
     "pages_with_an_absent_citation": 4
    },
    {
@@ -676,6 +699,7 @@
      0.08507676632916253,
      0.43334278443814167
     ],
+    "pages_citing_any_of_these_videos": 19,
     "pages_with_an_absent_citation": 4
    },
    {
@@ -692,6 +716,7 @@
      0.0,
      0.20388330103584862
     ],
+    "pages_citing_any_of_these_videos": 12,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -708,6 +733,7 @@
      0.03736125910306537,
      0.37881982832322364
     ],
+    "pages_citing_any_of_these_videos": 15,
     "pages_with_an_absent_citation": 2
    },
    {
@@ -724,6 +750,7 @@
      0.013710421242556586,
      0.3331395092109959
     ],
+    "pages_citing_any_of_these_videos": 14,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -740,6 +767,7 @@
      2.7755575615628914e-17,
      0.24249400665524085
     ],
+    "pages_citing_any_of_these_videos": 10,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -756,6 +784,7 @@
      0.016232172885884855,
      0.37735843645159567
     ],
+    "pages_citing_any_of_these_videos": 2,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -772,6 +801,7 @@
      0.0,
      0.2588329669680317
     ],
+    "pages_citing_any_of_these_videos": 8,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -788,6 +818,7 @@
      0.05668215145437519,
      0.5098375284633583
     ],
+    "pages_citing_any_of_these_videos": 10,
     "pages_with_an_absent_citation": 2
    },
    {
@@ -804,6 +835,7 @@
      0.019890887638544907,
      0.434999705576656
     ],
+    "pages_citing_any_of_these_videos": 8,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -820,6 +852,7 @@
      0.0,
      0.2775327998628892
     ],
+    "pages_citing_any_of_these_videos": 11,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -836,6 +869,7 @@
      0.071479212752109,
      0.5907245696898311
     ],
+    "pages_citing_any_of_these_videos": 7,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -852,6 +886,7 @@
      0.0,
      0.32440756488388023
     ],
+    "pages_citing_any_of_these_videos": 5,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -868,6 +903,7 @@
      0.030053369748306635,
      0.5635028221864702
     ],
+    "pages_citing_any_of_these_videos": 6,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -884,6 +920,7 @@
      0.0,
      0.43448246478317476
     ],
+    "pages_citing_any_of_these_videos": 4,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -900,6 +937,7 @@
      0.03622410863243014,
      0.6244653702374747
     ],
+    "pages_citing_any_of_these_videos": 5,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -916,6 +954,7 @@
      0.0,
      0.43448246478317476
     ],
+    "pages_citing_any_of_these_videos": 5,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -932,6 +971,7 @@
      0.03622410863243014,
      0.6244653702374747
     ],
+    "pages_citing_any_of_these_videos": 5,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -948,6 +988,7 @@
      0.0,
      0.4898908364545973
     ],
+    "pages_citing_any_of_these_videos": 3,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -964,6 +1005,7 @@
      0.04558726080970055,
      0.6993581574175981
     ],
+    "pages_citing_any_of_these_videos": 4,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -980,6 +1022,7 @@
      0.15003898915214947,
      0.8499610108478506
     ],
+    "pages_citing_any_of_these_videos": 3,
     "pages_with_an_absent_citation": 2
    },
    {
@@ -996,6 +1039,7 @@
      0.06149194472039621,
      0.7923403991979522
     ],
+    "pages_citing_any_of_these_videos": 3,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -1012,6 +1056,7 @@
      0.06149194472039621,
      0.7923403991979522
     ],
+    "pages_citing_any_of_these_videos": 3,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -1028,6 +1073,7 @@
      0.06149194472039621,
      0.7923403991979522
     ],
+    "pages_citing_any_of_these_videos": 3,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -1044,6 +1090,7 @@
      0.2076596008020477,
      0.9385080552796037
     ],
+    "pages_citing_any_of_these_videos": 2,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -1060,6 +1107,7 @@
      0.06149194472039621,
      0.7923403991979522
     ],
+    "pages_citing_any_of_these_videos": 3,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -1076,6 +1124,7 @@
      0.0,
      0.6576197724933469
     ],
+    "pages_citing_any_of_these_videos": 2,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1092,6 +1141,7 @@
      0.0,
      0.6576197724933469
     ],
+    "pages_citing_any_of_these_videos": 2,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1108,6 +1158,7 @@
      0.0,
      0.6576197724933469
     ],
+    "pages_citing_any_of_these_videos": 2,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1124,6 +1175,7 @@
      0.09453120573423074,
      0.9054687942657693
     ],
+    "pages_citing_any_of_these_videos": 2,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -1140,6 +1192,7 @@
      0.09453120573423074,
      0.9054687942657693
     ],
+    "pages_citing_any_of_these_videos": 2,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -1156,6 +1209,7 @@
      0.0,
      0.7934506856227626
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1172,6 +1226,7 @@
      0.0,
      0.7934506856227626
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1188,6 +1243,7 @@
      0.0,
      0.7934506856227626
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1204,6 +1260,7 @@
      0.0,
      0.7934506856227626
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1220,6 +1277,7 @@
      0.0,
      0.7934506856227626
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1236,6 +1294,7 @@
      0.20654931437723745,
      1.0
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -1252,6 +1311,7 @@
      0.0,
      0.7934506856227626
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1268,6 +1328,7 @@
      0.0,
      0.7934506856227626
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1284,6 +1345,7 @@
      0.0,
      0.7934506856227626
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1300,6 +1362,7 @@
      0.20654931437723745,
      1.0
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -1316,6 +1379,7 @@
      0.20654931437723745,
      1.0
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 1
    }
   ]
@@ -1340,7 +1404,10 @@
    "NOT-RETRIEVABLE": 349,
    "INDETERMINATE": 30
   },
+  "pages_citing_any_of_these_videos": 2174,
   "pages_with_at_least_one_absent_citation": 296,
+  "share_of_those_pages_with_an_absent_citation": 0.13615455381784727,
+  "what_that_share_is_not": "NOT comparable to a whole-encyclopedia figure. The denominator is only those pages that cite one of these video identifiers, not all pages of the edition, and the numerator counts only this one platform's citations, not all broken references on the page.",
   "editions": [
    {
     "wiki": "en.wikipedia.org",
@@ -1356,6 +1423,7 @@
      0.08756536778220224,
      0.1292693445429164
     ],
+    "pages_citing_any_of_these_videos": 764,
     "pages_with_an_absent_citation": 83
    },
    {
@@ -1372,6 +1440,7 @@
      0.07366677074316721,
      0.12385706224585744
     ],
+    "pages_citing_any_of_these_videos": 285,
     "pages_with_an_absent_citation": 48
    },
    {
@@ -1388,6 +1457,7 @@
      0.1411507316330814,
      0.23348476091652443
     ],
+    "pages_citing_any_of_these_videos": 204,
     "pages_with_an_absent_citation": 31
    },
    {
@@ -1404,6 +1474,7 @@
      0.037367568349765325,
      0.12068883740957284
     ],
+    "pages_citing_any_of_these_videos": 117,
     "pages_with_an_absent_citation": 11
    },
    {
@@ -1420,6 +1491,7 @@
      0.06552292612396562,
      0.1793974737918774
     ],
+    "pages_citing_any_of_these_videos": 78,
     "pages_with_an_absent_citation": 12
    },
    {
@@ -1436,6 +1508,7 @@
      0.02012265720535792,
      0.10475353053126471
     ],
+    "pages_citing_any_of_these_videos": 92,
     "pages_with_an_absent_citation": 5
    },
    {
@@ -1452,6 +1525,7 @@
      0.07208952879445547,
      0.21237814880747352
     ],
+    "pages_citing_any_of_these_videos": 51,
     "pages_with_an_absent_citation": 9
    },
    {
@@ -1468,6 +1542,7 @@
      0.12077959241205476,
      0.3127013263816594
     ],
+    "pages_citing_any_of_these_videos": 49,
     "pages_with_an_absent_citation": 10
    },
    {
@@ -1484,6 +1559,7 @@
      0.11481849605782132,
      0.3363700091951255
     ],
+    "pages_citing_any_of_these_videos": 39,
     "pages_with_an_absent_citation": 7
    },
    {
@@ -1500,6 +1576,7 @@
      0.08512698370728837,
      0.2903633843391683
     ],
+    "pages_citing_any_of_these_videos": 44,
     "pages_with_an_absent_citation": 9
    },
    {
@@ -1516,6 +1593,7 @@
      0.07572282227805464,
      0.28224139552060995
     ],
+    "pages_citing_any_of_these_videos": 22,
     "pages_with_an_absent_citation": 4
    },
    {
@@ -1532,6 +1610,7 @@
      0.11705799876003031,
      0.35939845316322905
     ],
+    "pages_citing_any_of_these_videos": 27,
     "pages_with_an_absent_citation": 7
    },
    {
@@ -1548,6 +1627,7 @@
      0.024011589577214484,
      0.18608986901241975
     ],
+    "pages_citing_any_of_these_videos": 34,
     "pages_with_an_absent_citation": 2
    },
    {
@@ -1564,6 +1644,7 @@
      0.07061187717320358,
      0.2907232436648971
     ],
+    "pages_citing_any_of_these_videos": 32,
     "pages_with_an_absent_citation": 5
    },
    {
@@ -1580,6 +1661,7 @@
      0.070926244433653,
      0.3263435395879326
     ],
+    "pages_citing_any_of_these_videos": 28,
     "pages_with_an_absent_citation": 5
    },
    {
@@ -1596,6 +1678,7 @@
      0.018477023791270378,
      0.2132345836261692
     ],
+    "pages_citing_any_of_these_videos": 29,
     "pages_with_an_absent_citation": 2
    },
    {
@@ -1612,6 +1695,7 @@
      0.053096554840547455,
      0.296813266820363
     ],
+    "pages_citing_any_of_these_videos": 26,
     "pages_with_an_absent_citation": 12
    },
    {
@@ -1628,6 +1712,7 @@
      0.0,
      0.1287289218592153
     ],
+    "pages_citing_any_of_these_videos": 25,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1644,6 +1729,7 @@
      0.023158815297043306,
      0.25848802193210685
     ],
+    "pages_citing_any_of_these_videos": 18,
     "pages_with_an_absent_citation": 2
    },
    {
@@ -1660,6 +1746,7 @@
      0.07306884583422052,
      0.38516607437126543
     ],
+    "pages_citing_any_of_these_videos": 19,
     "pages_with_an_absent_citation": 4
    },
    {
@@ -1676,6 +1763,7 @@
      0.08507676632916253,
      0.43334278443814167
     ],
+    "pages_citing_any_of_these_videos": 19,
     "pages_with_an_absent_citation": 4
    },
    {
@@ -1692,6 +1780,7 @@
      0.0,
      0.20388330103584862
     ],
+    "pages_citing_any_of_these_videos": 12,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1708,6 +1797,7 @@
      0.03736125910306537,
      0.37881982832322364
     ],
+    "pages_citing_any_of_these_videos": 15,
     "pages_with_an_absent_citation": 2
    },
    {
@@ -1724,6 +1814,7 @@
      0.013710421242556586,
      0.3331395092109959
     ],
+    "pages_citing_any_of_these_videos": 14,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -1740,6 +1831,7 @@
      2.7755575615628914e-17,
      0.24249400665524085
     ],
+    "pages_citing_any_of_these_videos": 10,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1756,6 +1848,7 @@
      0.016232172885884855,
      0.37735843645159567
     ],
+    "pages_citing_any_of_these_videos": 2,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -1772,6 +1865,7 @@
      0.0,
      0.2588329669680317
     ],
+    "pages_citing_any_of_these_videos": 8,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1788,6 +1882,7 @@
      0.05668215145437519,
      0.5098375284633583
     ],
+    "pages_citing_any_of_these_videos": 10,
     "pages_with_an_absent_citation": 2
    },
    {
@@ -1804,6 +1899,7 @@
      0.019890887638544907,
      0.434999705576656
     ],
+    "pages_citing_any_of_these_videos": 8,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -1820,6 +1916,7 @@
      0.0,
      0.2775327998628892
     ],
+    "pages_citing_any_of_these_videos": 11,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1836,6 +1933,7 @@
      0.071479212752109,
      0.5907245696898311
     ],
+    "pages_citing_any_of_these_videos": 7,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -1852,6 +1950,7 @@
      0.0,
      0.32440756488388023
     ],
+    "pages_citing_any_of_these_videos": 5,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1868,6 +1967,7 @@
      0.030053369748306635,
      0.5635028221864702
     ],
+    "pages_citing_any_of_these_videos": 6,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -1884,6 +1984,7 @@
      0.0,
      0.43448246478317476
     ],
+    "pages_citing_any_of_these_videos": 4,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1900,6 +2001,7 @@
      0.03622410863243014,
      0.6244653702374747
     ],
+    "pages_citing_any_of_these_videos": 5,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -1916,6 +2018,7 @@
      0.0,
      0.43448246478317476
     ],
+    "pages_citing_any_of_these_videos": 5,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1932,6 +2035,7 @@
      0.03622410863243014,
      0.6244653702374747
     ],
+    "pages_citing_any_of_these_videos": 5,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -1948,6 +2052,7 @@
      0.0,
      0.4898908364545973
     ],
+    "pages_citing_any_of_these_videos": 3,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -1964,6 +2069,7 @@
      0.04558726080970055,
      0.6993581574175981
     ],
+    "pages_citing_any_of_these_videos": 4,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -1980,6 +2086,7 @@
      0.15003898915214947,
      0.8499610108478506
     ],
+    "pages_citing_any_of_these_videos": 3,
     "pages_with_an_absent_citation": 2
    },
    {
@@ -1996,6 +2103,7 @@
      0.06149194472039621,
      0.7923403991979522
     ],
+    "pages_citing_any_of_these_videos": 3,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -2012,6 +2120,7 @@
      0.06149194472039621,
      0.7923403991979522
     ],
+    "pages_citing_any_of_these_videos": 3,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -2028,6 +2137,7 @@
      0.06149194472039621,
      0.7923403991979522
     ],
+    "pages_citing_any_of_these_videos": 3,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -2044,6 +2154,7 @@
      0.2076596008020477,
      0.9385080552796037
     ],
+    "pages_citing_any_of_these_videos": 2,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -2060,6 +2171,7 @@
      0.06149194472039621,
      0.7923403991979522
     ],
+    "pages_citing_any_of_these_videos": 3,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -2076,6 +2188,7 @@
      0.0,
      0.6576197724933469
     ],
+    "pages_citing_any_of_these_videos": 2,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -2092,6 +2205,7 @@
      0.0,
      0.6576197724933469
     ],
+    "pages_citing_any_of_these_videos": 2,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -2108,6 +2222,7 @@
      0.0,
      0.6576197724933469
     ],
+    "pages_citing_any_of_these_videos": 2,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -2124,6 +2239,7 @@
      0.09453120573423074,
      0.9054687942657693
     ],
+    "pages_citing_any_of_these_videos": 2,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -2140,6 +2256,7 @@
      0.09453120573423074,
      0.9054687942657693
     ],
+    "pages_citing_any_of_these_videos": 2,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -2156,6 +2273,7 @@
      0.0,
      0.7934506856227626
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -2172,6 +2290,7 @@
      0.0,
      0.7934506856227626
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -2188,6 +2307,7 @@
      0.0,
      0.7934506856227626
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -2204,6 +2324,7 @@
      0.0,
      0.7934506856227626
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -2220,6 +2341,7 @@
      0.0,
      0.7934506856227626
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -2236,6 +2358,7 @@
      0.20654931437723745,
      1.0
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -2252,6 +2375,7 @@
      0.0,
      0.7934506856227626
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -2268,6 +2392,7 @@
      0.0,
      0.7934506856227626
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -2284,6 +2409,7 @@
      0.0,
      0.7934506856227626
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 0
    },
    {
@@ -2300,6 +2426,7 @@
      0.20654931437723745,
      1.0
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 1
    },
    {
@@ -2316,6 +2443,7 @@
      0.20654931437723745,
      1.0
     ],
+    "pages_citing_any_of_these_videos": 1,
     "pages_with_an_absent_citation": 1
    }
   ]

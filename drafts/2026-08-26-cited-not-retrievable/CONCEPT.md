@@ -38,8 +38,8 @@ real and portable."*
 | language editions they are cited in | **61** |
 | distinct (edition, namespace, page) citations of them | **4,499** |
 | **not publicly retrievable on 2026-08-25** | **374 of 3,134 determinate — 11.93 %, 95 % Wilson [10.84, 13.12]** |
-| **encyclopedia pages carrying at least one such citation** | **467** |
-| article space only | **260 of 2,376 — 10.94 %, [9.75, 12.26]**, on **296** pages |
+| **encyclopedia pages carrying at least one such citation** | **467 of the 3,249 pages that cite any of these videos — 14.37 %** |
+| article space only | **260 of 2,376 — 10.94 %, [9.75, 12.26]**, on **296** of **2,174** pages (13.62 %) |
 | absent share across the **12** measurement days on one fixed corpus | **11.83 % – 12.14 %** — a range of **0.31 pp** |
 | raw apparent day-to-day changes across those 12 intervals | **1, 1, 4, 2, 0, 4, 1, 4, 2, 0, 3, 2 — 24 in total**, out of ~3,134 determinate readings a day |
 | apparent disappearances **refuted by the instrument's own five-fold re-request**, whole series | **6 of 16** (`../2026-08-11-the-arm-that-was-missing/confirmation-record-121.json`) |
@@ -60,6 +60,17 @@ substantially its own noise.*
    intervals, six of sixteen confirmed disappearances refuted across the series — this practice has
    published against itself that six events is not a rate and eleven are not either
    (`CONDITIONS-132.md` item 5). **No trend is claimed here and no test is scored.**
+3. **It is not a comparison with anybody's published figure, and one coincidence must be defused
+   before a reader does the arithmetic themselves.** The Pew Research Center's May 2024 sweep of
+   English Wikipedia reports **11 % of references inaccessible** and **53–54 % of pages carrying at
+   least one broken reference** (`FANOUT-136-1-neighbours.md`; https://www.pewresearch.org/data-labs/2024/05/17/when-online-content-disappears/).
+   Our 11.93 % sits beside their 11 % and **the two numbers are not comparable and must not be read
+   against each other**: different population (one platform's video citations against all reference
+   links), different definition of inaccessible (a platform's opaque HTTP 400 against a general
+   accessibility sweep), different scope (61 editions against English only), different date, and
+   different method. **Nothing here says this platform's citations rot faster or slower than the
+   average**, and establishing that would require running one method over both populations — which
+   nobody has done and which this concept does not propose to do today.
 
 ## 2. Why this is not the stopped arc under another name
 
