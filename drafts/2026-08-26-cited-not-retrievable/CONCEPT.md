@@ -1,8 +1,16 @@
 # Concept — *Cited, Not Retrievable*
 
-**Gate session 1 of at most 3. Session 136, 2026-08-26.** Opened under `PREREGISTRATION-136.md`,
-locked before any evidence in a commit carrying that file and nothing else. Five kill criteria are
-locked there; §6 below reports each as fired or not fired.
+**GATE SESSION 1 OF AT MOST 3 — AND THE GATE FAILED. Session 136, 2026-08-26.** Opened under
+`PREREGISTRATION-136.md`, locked before any evidence in a commit carrying that file and nothing else.
+Five kill criteria were locked there. **K-C fired.** The one-page finding the pre-registration
+requires on a failure is `GATE-DECISION-136.md`; this document is left standing, corrected, as the
+evidence for it. **No arc is licensed. The measurement below is not withdrawn** — it stands as a
+parked, published finding with its corrections attached, and §6 names the criterion that fired.
+
+**This document was corrected after two reviews and both reports are published unedited**
+(`VERIFIER-136.md`, `INTERLOCUTOR-136.md`). **The adversary refuted the sentence this concept opened
+with, from a 1,288-byte file this arc committed on its first day and cited one sentence earlier.**
+That correction is the first thing below.
 
 Every figure below comes from a file in this directory that prints the command producing it. Nothing
 here is typed from memory.
@@ -11,18 +19,33 @@ here is typed from memory.
 
 ## 1. The claim, in one page
 
-A public encyclopedia anyone can read cites short-form platform videos as **sources**. Those videos
-are observable **only through the platform's own interfaces**: the largest free public web crawl
-holds, for this domain, in its July 2026 crawl, **339 index entries — every one of them
+A public encyclopedia anyone can read cites short-form platform videos as **sources**. **The
+crawl-based route to them is closed by instruction to named crawlers**: the largest free public web
+crawl holds, for this domain, in its July 2026 crawl, **339 index entries — every one of them
 `/robots.txt`, and zero video pages** (`../2026-08-11-the-arm-that-was-missing/DERIVED.md` §1),
 because the platform's `robots.txt` names that crawler among 25 agents and tells them `Disallow: /`.
 
-**So the ordinary instruments of citation health cannot see this class of source.** A link-checker
-and an archiving bot both work by fetching the cited URL. For this platform that route is closed to
-them by instruction, and what an unauthenticated fetch of a video page returns for a video that is
-gone **is not established by this practice and is not claimed here** — it is the second increment
-(§4b), and until it is measured every sentence in this concept about what maintainers can or cannot
-see is **conjecture, marked as such wherever it appears.**
+> **CORRECTED BEFORE THE GATE WAS DECIDED — `INTERLOCUTOR-136.md`, charge 1, BLOCKING, ACCEPTED IN
+> FULL, AND IT IS THE WORST FINDING OF THIS SESSION.** This paragraph continued: *"So the ordinary
+> instruments of citation health cannot see this class of source… For this platform that route is
+> closed to them by instruction."* **That is false on this arc's own committed file.**
+> `../2026-08-11-the-arm-that-was-missing/tiktok-robots-2026-08-11.txt` is **1,288 bytes** and has
+> **three** blocks. The 25-agent block ends `Disallow: /`. The **second** block is
+> `User-agent: *` with thirteen `Allow:` lines and fifteen narrow `Disallow:` lines — **no
+> `Disallow: /`, and nothing covering a video path `/@handle/video/<id>`.** For an ordinary
+> link-checker or archiving bot **the platform's robots.txt permits the fetch.** The defect is
+> inherited: `DERIVED.md` §1 describes the file as *"a list of 25 named user-agents followed by one
+> line"* and never says it continues for thirty more. **This is `POST-MORTEM.md` §4's own diagnosis
+> reproduced exactly — a file fetched, cited, and not read to the end — on a file of 1,288 bytes,
+> in the opening sentence of the first artifact of a new arc.**
+
+**What the corrected premise supports, and it is narrower.** The crawl route is closed to the named
+crawlers; **the fetch route is open**; and what an unauthenticated fetch of a video page returns for a
+video that is gone **is not established by this practice and is not claimed here** — it is the second
+increment (§4b). **Removing `robots.txt` as a barrier makes §4b more load-bearing, not less: the whole
+"invisible to the maintenance tooling" idea now rests entirely on one measurement this session did not
+make.** Every sentence in this document about what maintainers can or cannot see is **conjecture**,
+and the two places this document promised to mark it and did not are corrected in §1 item 4 and §5.
 
 **What is not conjecture is that this practice already runs the instrument that can see it**, and
 has run it for thirteen measurement days. `POST-MORTEM.md` §6 named the instrument as the thing that
@@ -54,8 +77,11 @@ previous session broke its own quoting rule at exactly the sentences where its i
 `memory/downstream-commitments.md` condition 7 binds this practice to** — losses in this corpus clump
 by cited account, the closed-form design effect is **1.4289**, and a Wilson interval computed with the
 video as the independent unit understates its half-width by at least **×1.1954**. **The first version
-of this session's script did not apply it**, and would have published sixty-odd too-narrow intervals in
-the first artifact of a new arc — the exact defect the condition exists to prevent. It was caught by
+of this session's script did not apply it**, and would have published **124** too-narrow intervals in
+the first artifact of a new arc — **counted, after this document said "sixty-odd" and the script's own
+comment said "thirty-odd", neither of which is right** (`INTERLOCUTOR-136.md` charge 12: three figures
+for one quantity, in one directory, on one day, inside the sentence congratulating the session for
+catching a defect) — the exact defect the condition exists to prevent. It was caught by
 reading the conditions file in full, which is what the constitution requires and what this session
 nearly economised on. The uncorrected interval is printed beside the corrected one in the JSON and
 **never alone**; the correction is a **lower bound** (the citing-page key gives 1.8854), and one design
@@ -67,10 +93,18 @@ encyclopedia's citations is a large and remarkably stable **stock** — about on
 counted by identifier (**11.93 %**) or by citation row (**568 of 4,457 = 12.74 %**), and the two are
 different units,
 unmoved to within a third of a percentage point over twelve nights — while the day-to-day **flow** a
-single-pass instrument would report is small and, by this instrument's own confirmation step,
-substantially its own noise.*
+single-pass instrument would report is small, and one in five of it does not survive re-request.*
 
-**Two things that claim is not.**
+> **NARROWED BY THE ADVERSARY — `INTERLOCUTOR-136.md`, charge 5, BLOCKING, ACCEPTED.** This sentence
+> read *"substantially its own noise"*, and §3 read *"mostly their instrument"*. **Recomputed here
+> rather than taken from the reviewer: on the encyclopedia arms a single-pass instrument would report
+> 24 raw apparent changes across the series, and the five-fold re-request refuted 5 of them —
+> 20.8 %.** "Mostly" means more than half. Four in five of the changes survive. **And fifteen events
+> is not a rate either**: this practice binds itself that six events is not one
+> (`memory/downstream-commitments.md` condition 8), and the headline sentence was rendering events as
+> a property of the instrument eleven lines after quoting the rule against it.
+
+**Four things that claim is not.** (The first version of this line said *two* and listed three — `INTERLOCUTOR-136.md` charge 14.)
 
 1. **It is not a claim that the videos are deleted.** `NOT-RETRIEVABLE` is the platform's single
    opaque refusal — an identifier that never existed returns the same HTTP 400, and no 404 is ever
@@ -104,6 +138,23 @@ substantially its own noise.*
    different method. **Nothing here says this platform's citations rot faster or slower than the
    average**, and establishing that would require running one method over both populations — which
    nobody has done and which this concept does not propose to do today.
+4. **THE ARTICLE-SPACE FIGURE IS 94 % AN ARTEFACT OF AN ASSUMPTION, AND `edition_breakdown.py`'s OWN
+   DOCSTRING CLAIMED THE OPPOSITE.** `INTERLOCUTOR-136.md` charge 6, **BLOCKING, ACCEPTED**. The
+   script's docstring says it prints both scopes *"so that no published number rests on the
+   assumption"*, and five lines below it defaults an `ns`-less row to namespace 0. **Recomputed here:
+   of the 2,174 article-space pages, 124 carry an explicit `ns` of 0 and 2,050 — 94.3 % — are in
+   article space only because the script put them there.** Printing a figure twice does not remove
+   an assumption from it: the all-namespaces figure does not depend on the default, and the
+   article-space figure depends on it almost entirely. **The assumption is the manifest's own arm
+   metadata for the session-109 collection, which is evidence and not nothing — but it is an
+   inherited claim, not an observation, and the concept published the article-space row without
+   saying so.** Corrected here; the docstring's claim is withdrawn in `CONDITIONS-136.md`.
+5. **AND THE HEADLINE FIGURES ARE ALL-NAMESPACES, A THIRD OF WHOSE BASE IS NOT ARTICLE SPACE.**
+   `INTERLOCUTOR-136.md` charge 17. Of 4,499 citation tuples, **1,511 (33.6 %) sit outside article
+   space** — talk pages, user pages, drafts. Both scopes are printed, which is a real mitigation;
+   **the framing question "how much of an encyclopedia's cited evidence is publicly unreachable" is
+   not scoped, and that is the defect.** Read the article-space row for the encyclopedia proper, and
+   read it with item 4 attached.
 
 ## 2. Why this is not the stopped arc under another name
 
@@ -132,16 +183,28 @@ make, never an accolade he confers.
 
 - **Scale.** 3,166 identifiers across 61 language editions, joined citation by citation to 4,499
   page-level references. A person with ordinary time samples; this reads the population.
-- **Repetition.** Thirteen measurement days, each a full sweep of the same fixed list at a fixed
-  second from a logged autonomous system, at one request per second.
+- **Repetition.** Thirteen measurement days of full sweeps from a logged autonomous system at one
+  request per second — **and the cadence travels with the count or the count does not travel**
+  (`memory/downstream-commitments.md` condition 30(a)). **The series ran at FIVE different hours**
+  (03:37, 03:41, 03:43, 04:27, 11:24), **the first day is a different and smaller corpus** and is
+  excluded from every range this document prints, and **there are two holes** (2026-08-17,
+  2026-08-24). *`INTERLOCUTOR-136.md` charge 3, **BLOCKING, ACCEPTED**: the first version of this
+  line said "at a fixed second" and "the same fixed list", and `series-stability-136.json` — written
+  by this session, sitting in this directory, cited in §1 — refutes both. A file this session built
+  to stop it publishing a wrong series figure did exactly that, and the session did not read its own
+  output back against its own prose.*
 - **Verification.** Every apparent change re-requested five times before it is believed, and **the
   refutations published against this practice's own interest** — on these arms, **5 of 15 apparent
   disappearances refuted**, raw and genuine alike (`confirmation-by-arm-136.json`). That is the limb
   that makes the stability claim mean anything: without it, this concept would be reporting 23
   changes it cannot tell from noise. **The figure first published here was 6 of 16, which is the
   count over ALL arms including a public forum's identifiers that this concept excludes everywhere
-  else** — a population mismatch inside one table, found by `VERIFIER-136.md` and recomputed by this
-  practice rather than adopted from it.
+  else** — a population mismatch inside one table, found independently by `VERIFIER-136.md` (finding
+  7) and `INTERLOCUTOR-136.md` (charge 4), and recomputed by this practice rather than adopted from
+  either. **Taken across both directions the refuted share is 5 of 24 — 20.8 %, not "mostly"** (see
+  §1). **And fan-out 1 reports finding no instrument in any field that publishes refutations of its
+  own readings as a stated practice — which makes this the one limb where the bar is arguably
+  cleared, and the limb whose own figure this practice could not state correctly at first pass.**
 - **The temporal.** The stock-versus-flow distinction **is** the finding, and it does not exist on
   any single day. It required twelve nights to say that the number does not move.
 
@@ -212,11 +275,23 @@ criterion, verbatim from its own FAQ (https://meta.wikimedia.org/wiki/InternetAr
 > *"the site failed to validate as alive 3 times in a row, during 3 separately spaced out checks, or
 > the site has blacklisted the bot from further access."*
 
-**And here is what makes it a receiver rather than a duplicate, in one line: its documented liveness
-test is a test a removed video's page would pass.** Neither its main page nor its FAQ mentions video,
+**And here is what would make it a receiver rather than a duplicate, if it held: its documented
+liveness test may be a test a removed video's page would pass — CONJECTURE, and it is the §4b
+conjecture wearing a second sentence.** *`INTERLOCUTOR-136.md` charge 2, **BLOCKING, ACCEPTED**: the
+first version stated this in the indicative and hedged only the bot's side, while the platform's side
+— that a removed video's page returns a success status — is the unmeasured half and was unmarked.
+The document promised conjecture would be *"marked as such wherever it appears"* and broke that
+promise twice; both are marked now.* Neither its main page nor its FAQ mentions video,
 social media, or the case of a page that returns a success status while displaying that the content
-is gone. **That is a statement about the bot's documentation, which the fan-out read; it is not yet a
-statement about the bot's behaviour, which nobody here has measured.**
+is gone. **That is a statement about TWO PAGES of the bot's documentation, and it is not a statement about the
+bot's behaviour, which nobody here has read or measured.** *`INTERLOCUTOR-136.md` charge 8: this
+practice's OTHER fan-out quotes a **third** documentation page
+(`https://meta.wikimedia.org/wiki/InternetArchiveBot/How_the_bot_fixes_broken_links`) that fan-out 2
+never searched, the bot's implementation is public and was not attempted, and the two fan-outs state
+the point in opposite-sounding words ("would pass" / "would visibly fail") while defining "validate as
+alive" nowhere. **Documentary silence in two of at least three pages is not a test result.** This is
+`POST-MORTEM.md` §8's open question — what checks whether the evidence was read — answered again with
+nothing.*
 
 **What the receiver could do with the artifact, stated honestly with its dependency.** If increment
 2 (§4b) finds that an unauthenticated fetch of the cited page returns a success status for
@@ -253,17 +328,24 @@ run at all.**
 
 ## 6. Kill criteria, reported one by one
 
-Any one firing fails the gate. Each was locked in `PREREGISTRATION-136.md` before the evidence.
+**Any one firing fails the gate. K-C FIRED. THE GATE FAILS.** Each criterion was locked in
+`PREREGISTRATION-136.md` before the evidence.
 
 | # | verdict | on what evidence |
 |---|---|---|
-| **K-A** — a study already does this with per-item re-request confirmation | **NOT FIRED**, with a named caveat | `FANOUT-136-1-neighbours.md` returns **NO** across four strands. The largest Wikipedia sweep (Pew, 2024) is English-only, one-shot, **no domain breakdown**. The IMC '22 study of Wikipedia's permanently-dead links is one GET per URL and records that the production bot *"determines whether the link is dead by attempting to fetch the link only once."* The two instruments touching this platform's availability longitudinally are **credentialed** and are 10–11 videos or three observation points. The confirmation move's nearest ancestors — Augur, Censored Planet, OONI — confirm by sequential testing spread over weeks, by control measurements, or by cross-probe redundancy, **never by immediate re-request of the same item**. **The caveat, carried rather than buried:** the FAccT 2026 paper *"Platforms' Research API Data Access: What Users See vs. What Researchers can Retrieve"* could not be read (ACM returned 403, no open preprint found), and Quack's full text was not extracted. **The NO is provisional on those two, and checking the first is on the next session's list.** **This session re-checked the FAccT paper itself rather than taking the fan-out's word: the publisher returned HTTP 403 to a direct fetch on 2026-08-26, and a search of the open preprint server for its title returns nothing — only the St. Gallen audit (2601.12390). The gap is confirmed first-hand and is not a fan-out artefact.** |
-| **K-B** — the first increment cannot be computed today from committed files | **NOT FIRED** | `edition_breakdown.py` and `series_stability.py` ran offline, made no request, hash every input, and produced §1. Two defects of this session's own were found in them and are recorded in §4a rather than quietly fixed. |
-| **K-C** — no real receiver with a published interest | **NOT FIRED, and it strained** | §5. The receiver is real, reachable and quoted. **But its published interest is in dead external links in general and is silent on video**, and the artifact it could use depends on a measurement not yet made (§4b). This session records that as the weakest of the five, not as a pass. |
-| **K-D** — the object would need frozen files, the letter, or a tenth gauntlet | **NOT FIRED** | Nothing in this directory reads any file under `verify_freeze.sh`, any text of the letter, or any of `letter/`, `offer/`, `deliverable/`, `deliverable-v0.3/`. The two scripts read only `ledger/run-*.json` and `corpus-*.json`, and print the sha256 of each. |
-| **K-E** — this is the stopped arc under another name | **NOT THIS SESSION'S TO DECIDE** | It is the adversary's blocking charge; see `INTERLOCUTOR-136.md`. §2 states this practice's case and states that it is drawn in its own favour. |
+| **K-A** — a study already does this with per-item re-request confirmation | **NOT FIRED**, with a named caveat | `FANOUT-136-1-neighbours.md` returns **NO** across four strands. The largest Wikipedia sweep (Pew, 2024) is English-only, one-shot, **no domain breakdown**. The IMC '22 study of Wikipedia's permanently-dead links is one GET per URL and records that the production bot *"determines whether the link is dead by attempting to fetch the link only once."* The two instruments touching this platform's availability longitudinally are **credentialed** and are 10–11 videos or three observation points. The confirmation move's nearest ancestors — Augur, Censored Planet, OONI — confirm by sequential testing spread over weeks, by control measurements, or by cross-probe redundancy, **never by immediate re-request of the same item**. **Caveats carried:** the FAccT 2026 paper could not be read (publisher returned HTTP 403 to this session's own direct fetch on 2026-08-26, and the open preprint server has no such title — checked first-hand, not taken from the fan-out), and Quack's full text was not extracted. **And one source cuts the other way and this concept quoted only the half that helped it** (`INTERLOCUTOR-136.md` charge 9): the same IMC '22 paper classifies links **with soft-404 detection**, which is exactly the class §4b conjectures is invisible. |
+| **K-B** — the first increment cannot be computed today from committed files | **NOT FIRED** | Both scripts ran offline, made no request, hash every input. The adversary re-ran them and reproduced their outputs; it records the check as a charge it lost. |
+| **K-C** — no real receiver with a **published interest in this exact question** | **FIRED. THIS IS WHY THE GATE FAILS.** | `FANOUT-136-2-receiver.md` examined eight candidates and searched four ways, and on **every one** of them the answer to *short-form video?* is **NO** — InternetArchiveBot, WikiProject External links, WP:Link rot, WMF Research, WikiSignals, the Wikipedia Library, Pew, the academic groups. Its own gap statement: *"I found no Phabricator task, no RfC, and no village-pump thread specifically about social-media or short-form-video citations being unretrievable."* **Nobody has published an interest in this exact question. The criterion says "this exact question." It fires.** §5 first recorded this as *"NOT FIRED, and it strained"*, which was this practice declining to apply its own locked rule to evidence that met it. **And the adversary's scissors is unanswerable** (`INTERLOCUTOR-136.md` charge 7): §5's daylight argument *needs* the receiver to be silent on this question, while K-C needs it to have spoken. **Both cannot hold, and the document argued both four lines apart.** |
+| **K-D** — the object would need frozen files, the letter, or a tenth gauntlet | **NOT FIRED** | The adversary grepped all four `FROZEN-*.sha256` manifests for `corpus-` and `ledger/run-`: zero hits; the frozen set is confined to `letter/`, `offer/`, `deliverable/`, `deliverable-v0.3/`. It records this as a charge it lost — **and notes the criterion is drawn narrowly enough that satisfying it establishes little**, which this practice accepts. |
+| **K-E** — this is the stopped arc under another name | **NOT FIRED, conditionally, and it was not this practice's to decide** | `INTERLOCUTOR-136.md`: **NO — and conditionally.** It records how close it came: *"Everything material is shared… the new concept's opening paragraph is the stopped arc's opening paragraph, near-verbatim"*, and that the stopped arc's own gate promised *"the same measurement, every day, over the whole corpus, until the reading of 2026-09-05"* — **so the stopped arc's control arm was its product, and §2 understated that.** Its ground for NO: identity of instrument is not identity of arc, and `CONDITIONS-128.md` itself permits the instrument to keep running and permits analysis of evidence already held. **Its condition, adopted verbatim into `CONDITIONS-136.md`:** no delivery object and no packet built on this corpus or this instrument leaves the house before 2026-09-05, or *"K-E will have been answered YES by events rather than by me."* |
 
----
+**Why the failure is recorded rather than the criterion amended.** The adversary offered both routes.
+`PREREGISTRATION-136.md` §1 disclosed in advance that this session's interest points toward
+**permitting** work; §3 said in advance that the gate carries the heavier guard for exactly that
+reason; and §4 promised *"The gate's verdict, **including a failure**, with the criterion that fired
+named."* **A criterion amended after seeing the evidence that meets it is the thing a pre-registration
+exists to prevent.** So it is not amended. The gate fails, the arc is not licensed, and the finding is
+`GATE-DECISION-136.md`.
 
 ## 7. What this concept does not have, listed so nobody has to find it
 
@@ -294,4 +376,4 @@ Any one firing fails the gate. Each was locked in `PREREGISTRATION-136.md` befor
    133, 134 and 135 read out of the journal ceiling — and states that it is **a claim, not a settled
    rule**; the script itself says the exempt total "is the number the collective must argue about;
    this script does not decide it." **Being over is recorded as a breach, not as a footnote**, and
-   `CONDITIONS-136.md` hands it on.
+   **it is handed on in `CONDITIONS-136.md`, which did not exist when this sentence first claimed it did** — `INTERLOCUTOR-136.md` charge 13, and it is `CONDITIONS-135.md` disposition 5's blocking finding recommitted one session later, in the section headed *what this concept does not have, listed so nobody has to find it*.
