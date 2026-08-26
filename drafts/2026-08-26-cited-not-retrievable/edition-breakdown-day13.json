@@ -1,0 +1,2323 @@
+{
+ "schema": "field-research/edition-breakdown/1",
+ "built_by": "edition_breakdown.py, session 136, 2026-08-26",
+ "offline": true,
+ "run_file": "../2026-08-11-the-arm-that-was-missing/ledger/run-2026-08-25T0341Z.json",
+ "run_file_sha256": "c0885d6c6623f0524a595c4a344856ec0bf4e4da476bee7d38bb46a4b54ab4aa",
+ "run_utc_start": "2026-08-25T03:41:00Z",
+ "vantage_asn": "AS396982",
+ "corpus_files": [
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ar.wikipedia.org.json",
+   "sha256": "8af1f09f4ebea9df52a9986cdaf46b311d4bcaf234228163993e70fde239e59a",
+   "rows": 32,
+   "new_identifiers": 30
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-bn.wikipedia.org.json",
+   "sha256": "c2d5fd1c118b85bf7a7c179ba9eb229846cf83a121b50a1bd6dc3d264eb2aea2",
+   "rows": 3,
+   "new_identifiers": 3
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-bs.wikipedia.org.json",
+   "sha256": "a76a7906a5e6e3f3d3291ec0ad73a9c6f0e457b5f8b1e8d7c906442837995c64",
+   "rows": 0,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-cs.wikipedia.org.json",
+   "sha256": "703e807e6f0842a503a6339250659442823328238daebb232502fbd1c7f0f353",
+   "rows": 8,
+   "new_identifiers": 7
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-cy.wikipedia.org.json",
+   "sha256": "0474455aecbd909df26c69f1193650347c08372f14b5bcdb18bb47b9356ae07b",
+   "rows": 0,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-de.wikipedia.org.json",
+   "sha256": "3ad934a1fed452d44ead06830c9acd167c92caf936b50aa4623ac37a4dc2f25a",
+   "rows": 111,
+   "new_identifiers": 106
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-en.wikipedia.org.json",
+   "sha256": "3558caf41969a9703b290e866e81fdc9b1e40e048462a7d6d9ad11087a12b6f5",
+   "rows": 906,
+   "new_identifiers": 826
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-es.wikipedia.org.json",
+   "sha256": "87d60db540d6b7f42aae4ee71c9198de9b486401e593953fb68a97be8adfd65d",
+   "rows": 274,
+   "new_identifiers": 226
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-fa.wikipedia.org.json",
+   "sha256": "fa31355c4e672484fbe8009ea0d34ee8e71d222e63878d7fa588a4d97b78935e",
+   "rows": 14,
+   "new_identifiers": 3
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-fi.wikipedia.org.json",
+   "sha256": "e1693673004dc6b06c696c9cd63d190a4bdf84b4e287a90e9d5635b84ce5e3e3",
+   "rows": 19,
+   "new_identifiers": 17
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-fr.wikipedia.org.json",
+   "sha256": "6dcdf8b900fec7cde87a3d6efa433c118af164b6f8ca7d99d074516a103ce338",
+   "rows": 1,
+   "new_identifiers": 1
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-gl.wikipedia.org.json",
+   "sha256": "f21572c05c232838b38f3768af8a4e002804831b1f4872334106e92039291e5e",
+   "rows": 4,
+   "new_identifiers": 1
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-he.wikipedia.org.json",
+   "sha256": "f98773b241afdeb980c8ea3d574a92c6292dabf1bba85b78da53fdb86d71b4f2",
+   "rows": 151,
+   "new_identifiers": 116
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-hi.wikipedia.org.json",
+   "sha256": "23728592057cb9931c0148542950482bd5eee27e7c85c4f9e4465085ff51fd87",
+   "rows": 1,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-hn.json",
+   "sha256": "a963d4d346bf949bee819627951a62b1744fbfc527826d387c58b0cb571d5dc0",
+   "rows": 890,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-hy.wikipedia.org.json",
+   "sha256": "741c3022b06865b8c58a3612a3a7ccab3a1d9bb79f532df6ea76bbf03d943004",
+   "rows": 15,
+   "new_identifiers": 8
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-id.wikipedia.org.json",
+   "sha256": "f282fba59772deb5e3f7f6311dd1f7f153cf26dded0de6e2977b4aff11a3b0a9",
+   "rows": 124,
+   "new_identifiers": 81
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-it.wikipedia.org.json",
+   "sha256": "93a2e4400f8df5686d9d815a9f98ee0b90290d2eaf5ee8e19aafe0f6d431f27f",
+   "rows": 32,
+   "new_identifiers": 20
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ja.wikipedia.org.json",
+   "sha256": "448105583e9a81dbd2f59f6360080918f8f2bc213a8d483f6d9f552c0a9ecb39",
+   "rows": 568,
+   "new_identifiers": 514
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ka.wikipedia.org.json",
+   "sha256": "23b36f36c6d353f5a327c3bbf7c6d06a2ea543ee70899621caa7e7786a7dd705",
+   "rows": 5,
+   "new_identifiers": 1
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ko.wikipedia.org.json",
+   "sha256": "bc5c9c261641fdbb85abecdf7d32a77bfb48c32a4bae0b542d2c148bdf6e7743",
+   "rows": 66,
+   "new_identifiers": 14
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ky.wikipedia.org.json",
+   "sha256": "cc79ba0179179aeba0850d0ad9cf0878498e0cd4f2a932ccbde23c95d2ef38ee",
+   "rows": 0,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-lt.wikipedia.org.json",
+   "sha256": "2ff0577a18bc4df167bbafab18597da89017ae3b4d9c96f887cd2d6f0c04b1da",
+   "rows": 0,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-merged.json",
+   "sha256": "71f2508428b0f3f0b7c17066a6988d6836aca58ba81a504091c023d9d44b8362",
+   "rows": 2201,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-mk.wikipedia.org.json",
+   "sha256": "e65ae55bfdcb857ac4d20535c53824f804e404ee96b77d7a4e9b31567617d189",
+   "rows": 3,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ml.wikipedia.org.json",
+   "sha256": "6cf370f04859dd20d76d36edd82623b7d19e69c2ac5bd2423d8cc43c603790ca",
+   "rows": 0,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-mr.wikipedia.org.json",
+   "sha256": "fcd65e58294441b9e69cbc103f7bb0fcc5a330018d3bbe68625e651224d0e56e",
+   "rows": 0,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ms.wikipedia.org.json",
+   "sha256": "4dcf95f65682c57af721f89f90d48b5085f497218f588ae6812b5d1705837473",
+   "rows": 44,
+   "new_identifiers": 35
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-my.wikipedia.org.json",
+   "sha256": "f831729698e105c49633067cf294f32ac9d3fffc37fd1652464ada4e738597b3",
+   "rows": 0,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ne.wikipedia.org.json",
+   "sha256": "381efa7f6c429e74b6ae21d3cc02a827f90d3f2342e1054e948519af1828cffa",
+   "rows": 1,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-nl.wikipedia.org.json",
+   "sha256": "02bb0cb7eba022c90b279787dfbbdc0416bf4896b9aaaee7a921e536d23cf01a",
+   "rows": 28,
+   "new_identifiers": 23
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-pl.wikipedia.org.json",
+   "sha256": "f643086e7cc8832f21bc69c6af59da811af057fd0e201811c70f7893c8a87e25",
+   "rows": 43,
+   "new_identifiers": 30
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-pt.wikipedia.org.json",
+   "sha256": "a9007ef4f5039095d41c375c4e8e8b3b0d401e14c497827858a61f88e558485c",
+   "rows": 91,
+   "new_identifiers": 50
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ru.wikipedia.org.json",
+   "sha256": "05c4afd8fa08f85dcf37f5a8f645482f93f9e526694781d6965ba2fd5286ffe4",
+   "rows": 50,
+   "new_identifiers": 14
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-si.wikipedia.org.json",
+   "sha256": "6d0b87c8bce142f2b6ec3d1291840492f10c497c7bff1dce045948fdafe82a9b",
+   "rows": 0,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-sq.wikipedia.org.json",
+   "sha256": "adc61a17b3f53f9954942cc067ef5d5331090f3c4d469724a43d869923284765",
+   "rows": 2,
+   "new_identifiers": 2
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-sv.wikipedia.org.json",
+   "sha256": "1009a63be270a80029fcb5dca55283bb07777c57f3bba2aaf5a8559f5dca42fc",
+   "rows": 11,
+   "new_identifiers": 8
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ta.wikipedia.org.json",
+   "sha256": "4ee9580e638529aa5a12753fec6aaff1def1a44ed78523e5c839e4ed98c81670",
+   "rows": 2,
+   "new_identifiers": 1
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-te.wikipedia.org.json",
+   "sha256": "b4145dfe6c1200379732ea0cf67fb1c971740425a8c8c4c1a8b36f6fd7e715a2",
+   "rows": 2,
+   "new_identifiers": 0
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-th.wikipedia.org.json",
+   "sha256": "38db23c152969351492c04e7649b5ce000ad406a8209014c39248a2cfe45201e",
+   "rows": 15,
+   "new_identifiers": 10
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-tl.wikipedia.org.json",
+   "sha256": "2c21ad5233ebe390523b1679d0921e5637943c004f2f92ebcc7adece4ff05e9b",
+   "rows": 5,
+   "new_identifiers": 3
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-tr.wikipedia.org.json",
+   "sha256": "b93b9e55d63e76053f5936eb0ccbbd713690a2530ea6897e5b3cfdf112acd6f1",
+   "rows": 47,
+   "new_identifiers": 34
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-uk.wikipedia.org.json",
+   "sha256": "6e2114d522a4ee6468a22caa8f93ad11389f3db8b098e3235a462ae0da1ad84d",
+   "rows": 67,
+   "new_identifiers": 49
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-ur.wikipedia.org.json",
+   "sha256": "11f2c8dfe36cb0ab8cee02d76ce128aeb191bc40e98e9518ee34943cfe8080f9",
+   "rows": 3,
+   "new_identifiers": 3
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-uz.wikipedia.org.json",
+   "sha256": "4fe3b72187a75e2e550102112433262f28be0bcef5030636102e671a94f92698",
+   "rows": 6,
+   "new_identifiers": 1
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-vi.wikipedia.org.json",
+   "sha256": "1cc15435d285cd03c1e3c296c2715a76b485fc834c7e4f5f405592e5ef5242dd",
+   "rows": 23,
+   "new_identifiers": 10
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/corpus-zh.wikipedia.org.json",
+   "sha256": "aa54ac0df60280f3c279475d00d850e50f6aabebd92513973f1a1725ee53994d",
+   "rows": 54,
+   "new_identifiers": 27
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/expansion-111/corpus-A2-namespaces.json",
+   "sha256": "46379f661efb10a6a7aa4ff63af96b2403d68a604880cd86421c4cde327df638",
+   "rows": 886,
+   "new_identifiers": 563
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/expansion-111/corpus-round2.json",
+   "sha256": "66e308e2c40d428fe6f3d3cc1e1dd14d371087aa75143a2ba776c5c0ce61b2d0",
+   "rows": 654,
+   "new_identifiers": 304
+  },
+  {
+   "path": "../2026-08-11-the-arm-that-was-missing/expansion-111/corpus-round3.json",
+   "sha256": "09695c68532a6fcef597c24983ab07e28dea64ff809f132a6cf5cbda9d209f05",
+   "rows": 143,
+   "new_identifiers": 26
+  }
+ ],
+ "arms_included": [
+  "A",
+  "A-new",
+  "A2"
+ ],
+ "arms_excluded": {
+  "B": "Hacker News comments - a different population, not the encyclopedia",
+  "B-truncated": "display-truncated identifiers - the control arm, not videos"
+ },
+ "n_identifiers_measured": 3166,
+ "n_identifiers_unattributed_to_any_edition": 0,
+ "unattributed_identifiers": [],
+ "all_namespaces": {
+  "n_editions": 61,
+  "n_distinct_identifiers": 3166,
+  "n_citation_rows": 4499,
+  "identifier_level": {
+   "RETRIEVABLE": 2760,
+   "NOT-RETRIEVABLE": 374,
+   "INDETERMINATE": 32,
+   "determinate": 3134,
+   "absent_share": 0.11933631142310147,
+   "wilson95": [
+    0.10844986864186074,
+    0.13115479867082797
+   ]
+  },
+  "citation_row_level": {
+   "RETRIEVABLE": 3889,
+   "NOT-RETRIEVABLE": 568,
+   "INDETERMINATE": 42
+  },
+  "pages_with_at_least_one_absent_citation": 467,
+  "editions": [
+   {
+    "wiki": "en.wikipedia.org",
+    "distinct_identifiers": 1343,
+    "citation_rows": 1428,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1159,
+    "NOT-RETRIEVABLE": 171,
+    "INDETERMINATE": 13,
+    "determinate": 1330,
+    "absent_share": 0.12857142857142856,
+    "wilson95": [
+     0.11164610192695557,
+     0.14763618123619277
+    ],
+    "pages_with_an_absent_citation": 153
+   },
+   {
+    "wiki": "ja.wikipedia.org",
+    "distinct_identifiers": 577,
+    "citation_rows": 610,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 513,
+    "NOT-RETRIEVABLE": 57,
+    "INDETERMINATE": 7,
+    "determinate": 570,
+    "absent_share": 0.1,
+    "wilson95": [
+     0.07798650358587433,
+     0.1273689251816305
+    ],
+    "pages_with_an_absent_citation": 53
+   },
+   {
+    "wiki": "es.wikipedia.org",
+    "distinct_identifiers": 318,
+    "citation_rows": 589,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 264,
+    "NOT-RETRIEVABLE": 54,
+    "INDETERMINATE": 0,
+    "determinate": 318,
+    "absent_share": 0.16981132075471697,
+    "wilson95": [
+     0.13254322371539656,
+     0.21496159816339
+    ],
+    "pages_with_an_absent_citation": 67
+   },
+   {
+    "wiki": "he.wikipedia.org",
+    "distinct_identifiers": 195,
+    "citation_rows": 201,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 181,
+    "NOT-RETRIEVABLE": 13,
+    "INDETERMINATE": 1,
+    "determinate": 194,
+    "absent_share": 0.06701030927835051,
+    "wilson95": [
+     0.03957596934877014,
+     0.11125924486050115
+    ],
+    "pages_with_an_absent_citation": 14
+   },
+   {
+    "wiki": "de.wikipedia.org",
+    "distinct_identifiers": 183,
+    "citation_rows": 292,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 170,
+    "NOT-RETRIEVABLE": 13,
+    "INDETERMINATE": 0,
+    "determinate": 183,
+    "absent_share": 0.07103825136612021,
+    "wilson95": [
+     0.041981931689040165,
+     0.11773347092581546
+    ],
+    "pages_with_an_absent_citation": 17
+   },
+   {
+    "wiki": "id.wikipedia.org",
+    "distinct_identifiers": 172,
+    "citation_rows": 293,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 146,
+    "NOT-RETRIEVABLE": 23,
+    "INDETERMINATE": 3,
+    "determinate": 169,
+    "absent_share": 0.13609467455621302,
+    "wilson95": [
+     0.09242825369290503,
+     0.19593692883196423
+    ],
+    "pages_with_an_absent_citation": 28
+   },
+   {
+    "wiki": "pt.wikipedia.org",
+    "distinct_identifiers": 92,
+    "citation_rows": 174,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 80,
+    "NOT-RETRIEVABLE": 11,
+    "INDETERMINATE": 1,
+    "determinate": 91,
+    "absent_share": 0.12087912087912088,
+    "wilson95": [
+     0.06885508485107264,
+     0.20361498406203435
+    ],
+    "pages_with_an_absent_citation": 17
+   },
+   {
+    "wiki": "uk.wikipedia.org",
+    "distinct_identifiers": 78,
+    "citation_rows": 142,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 63,
+    "NOT-RETRIEVABLE": 15,
+    "INDETERMINATE": 0,
+    "determinate": 78,
+    "absent_share": 0.19230769230769232,
+    "wilson95": [
+     0.12015206340148435,
+     0.2933481271906353
+    ],
+    "pages_with_an_absent_citation": 22
+   },
+   {
+    "wiki": "ru.wikipedia.org",
+    "distinct_identifiers": 62,
+    "citation_rows": 112,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 48,
+    "NOT-RETRIEVABLE": 12,
+    "INDETERMINATE": 2,
+    "determinate": 60,
+    "absent_share": 0.2,
+    "wilson95": [
+     0.11828505322897494,
+     0.317818058056279
+    ],
+    "pages_with_an_absent_citation": 15
+   },
+   {
+    "wiki": "zh.wikipedia.org",
+    "distinct_identifiers": 54,
+    "citation_rows": 60,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 45,
+    "NOT-RETRIEVABLE": 9,
+    "INDETERMINATE": 0,
+    "determinate": 54,
+    "absent_share": 0.16666666666666666,
+    "wilson95": [
+     0.09024391642997268,
+     0.2873651422972916
+    ],
+    "pages_with_an_absent_citation": 10
+   },
+   {
+    "wiki": "tr.wikipedia.org",
+    "distinct_identifiers": 47,
+    "citation_rows": 47,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 39,
+    "NOT-RETRIEVABLE": 7,
+    "INDETERMINATE": 1,
+    "determinate": 46,
+    "absent_share": 0.15217391304347827,
+    "wilson95": [
+     0.07572282227805464,
+     0.28224139552060995
+    ],
+    "pages_with_an_absent_citation": 4
+   },
+   {
+    "wiki": "hu.wikipedia.org",
+    "distinct_identifiers": 43,
+    "citation_rows": 43,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 33,
+    "NOT-RETRIEVABLE": 9,
+    "INDETERMINATE": 1,
+    "determinate": 42,
+    "absent_share": 0.21428571428571427,
+    "wilson95": [
+     0.11705799876003031,
+     0.35939845316322905
+    ],
+    "pages_with_an_absent_citation": 7
+   },
+   {
+    "wiki": "ms.wikipedia.org",
+    "distinct_identifiers": 43,
+    "citation_rows": 43,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 40,
+    "NOT-RETRIEVABLE": 3,
+    "INDETERMINATE": 0,
+    "determinate": 43,
+    "absent_share": 0.06976744186046512,
+    "wilson95": [
+     0.024011589577214484,
+     0.18608986901241975
+    ],
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "pl.wikipedia.org",
+    "distinct_identifiers": 42,
+    "citation_rows": 43,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 34,
+    "NOT-RETRIEVABLE": 6,
+    "INDETERMINATE": 2,
+    "determinate": 40,
+    "absent_share": 0.15,
+    "wilson95": [
+     0.07061187717320358,
+     0.2907232436648971
+    ],
+    "pages_with_an_absent_citation": 5
+   },
+   {
+    "wiki": "it.wikipedia.org",
+    "distinct_identifiers": 32,
+    "citation_rows": 32,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 26,
+    "NOT-RETRIEVABLE": 5,
+    "INDETERMINATE": 1,
+    "determinate": 31,
+    "absent_share": 0.16129032258064516,
+    "wilson95": [
+     0.070926244433653,
+     0.3263435395879326
+    ],
+    "pages_with_an_absent_citation": 5
+   },
+   {
+    "wiki": "ar.wikipedia.org",
+    "distinct_identifiers": 30,
+    "citation_rows": 31,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 28,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 30,
+    "absent_share": 0.06666666666666667,
+    "wilson95": [
+     0.018477023791270378,
+     0.2132345836261692
+    ],
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "ko.wikipedia.org",
+    "distinct_identifiers": 30,
+    "citation_rows": 66,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 26,
+    "NOT-RETRIEVABLE": 4,
+    "INDETERMINATE": 0,
+    "determinate": 30,
+    "absent_share": 0.13333333333333333,
+    "wilson95": [
+     0.053096554840547455,
+     0.296813266820363
+    ],
+    "pages_with_an_absent_citation": 12
+   },
+   {
+    "wiki": "nl.wikipedia.org",
+    "distinct_identifiers": 28,
+    "citation_rows": 28,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 26,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 2,
+    "determinate": 26,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.1287289218592153
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "bg.wikipedia.org",
+    "distinct_identifiers": 24,
+    "citation_rows": 24,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 22,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 24,
+    "absent_share": 0.08333333333333333,
+    "wilson95": [
+     0.023158815297043306,
+     0.25848802193210685
+    ],
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "vi.wikipedia.org",
+    "distinct_identifiers": 23,
+    "citation_rows": 23,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 18,
+    "NOT-RETRIEVABLE": 4,
+    "INDETERMINATE": 1,
+    "determinate": 22,
+    "absent_share": 0.18181818181818182,
+    "wilson95": [
+     0.07306884583422052,
+     0.38516607437126543
+    ],
+    "pages_with_an_absent_citation": 4
+   },
+   {
+    "wiki": "fi.wikipedia.org",
+    "distinct_identifiers": 19,
+    "citation_rows": 19,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 15,
+    "NOT-RETRIEVABLE": 4,
+    "INDETERMINATE": 0,
+    "determinate": 19,
+    "absent_share": 0.21052631578947367,
+    "wilson95": [
+     0.08507676632916253,
+     0.43334278443814167
+    ],
+    "pages_with_an_absent_citation": 4
+   },
+   {
+    "wiki": "hy.wikipedia.org",
+    "distinct_identifiers": 15,
+    "citation_rows": 15,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 15,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 15,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.20388330103584862
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "th.wikipedia.org",
+    "distinct_identifiers": 15,
+    "citation_rows": 15,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 13,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 15,
+    "absent_share": 0.13333333333333333,
+    "wilson95": [
+     0.03736125910306537,
+     0.37881982832322364
+    ],
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "fa.wikipedia.org",
+    "distinct_identifiers": 13,
+    "citation_rows": 14,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 12,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 13,
+    "absent_share": 0.07692307692307693,
+    "wilson95": [
+     0.013710421242556586,
+     0.3331395092109959
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "no.wikipedia.org",
+    "distinct_identifiers": 12,
+    "citation_rows": 12,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 12,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 12,
+    "absent_share": 0.0,
+    "wilson95": [
+     2.7755575615628914e-17,
+     0.24249400665524085
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ca.wikipedia.org",
+    "distinct_identifiers": 11,
+    "citation_rows": 11,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 10,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 11,
+    "absent_share": 0.09090909090909091,
+    "wilson95": [
+     0.016232172885884855,
+     0.37735843645159567
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "ro.wikipedia.org",
+    "distinct_identifiers": 11,
+    "citation_rows": 11,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 11,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 11,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.2588329669680317
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "eu.wikipedia.org",
+    "distinct_identifiers": 10,
+    "citation_rows": 10,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 8,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 10,
+    "absent_share": 0.2,
+    "wilson95": [
+     0.05668215145437519,
+     0.5098375284633583
+    ],
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "sr.wikipedia.org",
+    "distinct_identifiers": 10,
+    "citation_rows": 10,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 8,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 1,
+    "determinate": 9,
+    "absent_share": 0.1111111111111111,
+    "wilson95": [
+     0.019890887638544907,
+     0.434999705576656
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "sv.wikipedia.org",
+    "distinct_identifiers": 10,
+    "citation_rows": 11,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 10,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 10,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.2775327998628892
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "cs.wikipedia.org",
+    "distinct_identifiers": 8,
+    "citation_rows": 8,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 6,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 8,
+    "absent_share": 0.25,
+    "wilson95": [
+     0.071479212752109,
+     0.5907245696898311
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "da.wikipedia.org",
+    "distinct_identifiers": 8,
+    "citation_rows": 8,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 8,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 8,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.32440756488388023
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "uz.wikipedia.org",
+    "distinct_identifiers": 6,
+    "citation_rows": 6,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 5,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 6,
+    "absent_share": 0.16666666666666666,
+    "wilson95": [
+     0.030053369748306635,
+     0.5635028221864702
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "el.wikipedia.org",
+    "distinct_identifiers": 5,
+    "citation_rows": 5,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 5,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 5,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.43448246478317476
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ka.wikipedia.org",
+    "distinct_identifiers": 5,
+    "citation_rows": 5,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 4,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 5,
+    "absent_share": 0.2,
+    "wilson95": [
+     0.03622410863243014,
+     0.6244653702374747
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "simple.wikipedia.org",
+    "distinct_identifiers": 5,
+    "citation_rows": 5,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 5,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 5,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.43448246478317476
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "tl.wikipedia.org",
+    "distinct_identifiers": 5,
+    "citation_rows": 5,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 4,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 5,
+    "absent_share": 0.2,
+    "wilson95": [
+     0.03622410863243014,
+     0.6244653702374747
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "az.wikipedia.org",
+    "distinct_identifiers": 4,
+    "citation_rows": 4,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 4,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 4,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.4898908364545973
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ga.wikipedia.org",
+    "distinct_identifiers": 4,
+    "citation_rows": 4,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 3,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 4,
+    "absent_share": 0.25,
+    "wilson95": [
+     0.04558726080970055,
+     0.6993581574175981
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "gl.wikipedia.org",
+    "distinct_identifiers": 4,
+    "citation_rows": 4,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 4,
+    "absent_share": 0.5,
+    "wilson95": [
+     0.15003898915214947,
+     0.8499610108478506
+    ],
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "be.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.3333333333333333,
+    "wilson95": [
+     0.06149194472039621,
+     0.7923403991979522
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "bn.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.3333333333333333,
+    "wilson95": [
+     0.06149194472039621,
+     0.7923403991979522
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "mk.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.3333333333333333,
+    "wilson95": [
+     0.06149194472039621,
+     0.7923403991979522
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "sk.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.6666666666666666,
+    "wilson95": [
+     0.2076596008020477,
+     0.9385080552796037
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "ur.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.3333333333333333,
+    "wilson95": [
+     0.06149194472039621,
+     0.7923403991979522
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "et.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.6576197724933469
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "hr.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.6576197724933469
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "sq.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.6576197724933469
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ta.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.5,
+    "wilson95": [
+     0.09453120573423074,
+     0.9054687942657693
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "te.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.5,
+    "wilson95": [
+     0.09453120573423074,
+     0.9054687942657693
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "af.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "fr.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "hi.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "is.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "kk.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "lv.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 0,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 1.0,
+    "wilson95": [
+     0.20654931437723745,
+     1.0
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "mn.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ne.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "nn.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "sl.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 0,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 1.0,
+    "wilson95": [
+     0.20654931437723745,
+     1.0
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "sw.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 0,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 1.0,
+    "wilson95": [
+     0.20654931437723745,
+     1.0
+    ],
+    "pages_with_an_absent_citation": 1
+   }
+  ]
+ },
+ "article_space_only": {
+  "n_editions": 61,
+  "n_distinct_identifiers": 2400,
+  "n_citation_rows": 2988,
+  "identifier_level": {
+   "RETRIEVABLE": 2116,
+   "NOT-RETRIEVABLE": 260,
+   "INDETERMINATE": 24,
+   "determinate": 2376,
+   "absent_share": 0.10942760942760943,
+   "wilson95": [
+    0.0975000683273193,
+    0.12261604776063151
+   ]
+  },
+  "citation_row_level": {
+   "RETRIEVABLE": 2609,
+   "NOT-RETRIEVABLE": 349,
+   "INDETERMINATE": 30
+  },
+  "pages_with_at_least_one_absent_citation": 296,
+  "editions": [
+   {
+    "wiki": "en.wikipedia.org",
+    "distinct_identifiers": 853,
+    "citation_rows": 906,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 754,
+    "NOT-RETRIEVABLE": 90,
+    "INDETERMINATE": 9,
+    "determinate": 844,
+    "absent_share": 0.1066350710900474,
+    "wilson95": [
+     0.08756536778220224,
+     0.1292693445429164
+    ],
+    "pages_with_an_absent_citation": 83
+   },
+   {
+    "wiki": "ja.wikipedia.org",
+    "distinct_identifiers": 538,
+    "citation_rows": 562,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 481,
+    "NOT-RETRIEVABLE": 51,
+    "INDETERMINATE": 6,
+    "determinate": 532,
+    "absent_share": 0.09586466165413533,
+    "wilson95": [
+     0.07366677074316721,
+     0.12385706224585744
+    ],
+    "pages_with_an_absent_citation": 48
+   },
+   {
+    "wiki": "es.wikipedia.org",
+    "distinct_identifiers": 268,
+    "citation_rows": 274,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 219,
+    "NOT-RETRIEVABLE": 49,
+    "INDETERMINATE": 0,
+    "determinate": 268,
+    "absent_share": 0.1828358208955224,
+    "wilson95": [
+     0.1411507316330814,
+     0.23348476091652443
+    ],
+    "pages_with_an_absent_citation": 31
+   },
+   {
+    "wiki": "he.wikipedia.org",
+    "distinct_identifiers": 147,
+    "citation_rows": 151,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 137,
+    "NOT-RETRIEVABLE": 10,
+    "INDETERMINATE": 0,
+    "determinate": 147,
+    "absent_share": 0.06802721088435375,
+    "wilson95": [
+     0.037367568349765325,
+     0.12068883740957284
+    ],
+    "pages_with_an_absent_citation": 11
+   },
+   {
+    "wiki": "id.wikipedia.org",
+    "distinct_identifiers": 120,
+    "citation_rows": 124,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 105,
+    "NOT-RETRIEVABLE": 13,
+    "INDETERMINATE": 2,
+    "determinate": 118,
+    "absent_share": 0.11016949152542373,
+    "wilson95": [
+     0.06552292612396562,
+     0.1793974737918774
+    ],
+    "pages_with_an_absent_citation": 12
+   },
+   {
+    "wiki": "de.wikipedia.org",
+    "distinct_identifiers": 107,
+    "citation_rows": 111,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 102,
+    "NOT-RETRIEVABLE": 5,
+    "INDETERMINATE": 0,
+    "determinate": 107,
+    "absent_share": 0.04672897196261682,
+    "wilson95": [
+     0.02012265720535792,
+     0.10475353053126471
+    ],
+    "pages_with_an_absent_citation": 5
+   },
+   {
+    "wiki": "pt.wikipedia.org",
+    "distinct_identifiers": 88,
+    "citation_rows": 91,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 76,
+    "NOT-RETRIEVABLE": 11,
+    "INDETERMINATE": 1,
+    "determinate": 87,
+    "absent_share": 0.12643678160919541,
+    "wilson95": [
+     0.07208952879445547,
+     0.21237814880747352
+    ],
+    "pages_with_an_absent_citation": 9
+   },
+   {
+    "wiki": "uk.wikipedia.org",
+    "distinct_identifiers": 65,
+    "citation_rows": 67,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 52,
+    "NOT-RETRIEVABLE": 13,
+    "INDETERMINATE": 0,
+    "determinate": 65,
+    "absent_share": 0.2,
+    "wilson95": [
+     0.12077959241205476,
+     0.3127013263816594
+    ],
+    "pages_with_an_absent_citation": 10
+   },
+   {
+    "wiki": "ru.wikipedia.org",
+    "distinct_identifiers": 50,
+    "citation_rows": 50,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 39,
+    "NOT-RETRIEVABLE": 10,
+    "INDETERMINATE": 1,
+    "determinate": 49,
+    "absent_share": 0.20408163265306123,
+    "wilson95": [
+     0.11481849605782132,
+     0.3363700091951255
+    ],
+    "pages_with_an_absent_citation": 7
+   },
+   {
+    "wiki": "zh.wikipedia.org",
+    "distinct_identifiers": 49,
+    "citation_rows": 54,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 41,
+    "NOT-RETRIEVABLE": 8,
+    "INDETERMINATE": 0,
+    "determinate": 49,
+    "absent_share": 0.16326530612244897,
+    "wilson95": [
+     0.08512698370728837,
+     0.2903633843391683
+    ],
+    "pages_with_an_absent_citation": 9
+   },
+   {
+    "wiki": "tr.wikipedia.org",
+    "distinct_identifiers": 47,
+    "citation_rows": 47,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 39,
+    "NOT-RETRIEVABLE": 7,
+    "INDETERMINATE": 1,
+    "determinate": 46,
+    "absent_share": 0.15217391304347827,
+    "wilson95": [
+     0.07572282227805464,
+     0.28224139552060995
+    ],
+    "pages_with_an_absent_citation": 4
+   },
+   {
+    "wiki": "hu.wikipedia.org",
+    "distinct_identifiers": 43,
+    "citation_rows": 43,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 33,
+    "NOT-RETRIEVABLE": 9,
+    "INDETERMINATE": 1,
+    "determinate": 42,
+    "absent_share": 0.21428571428571427,
+    "wilson95": [
+     0.11705799876003031,
+     0.35939845316322905
+    ],
+    "pages_with_an_absent_citation": 7
+   },
+   {
+    "wiki": "ms.wikipedia.org",
+    "distinct_identifiers": 43,
+    "citation_rows": 43,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 40,
+    "NOT-RETRIEVABLE": 3,
+    "INDETERMINATE": 0,
+    "determinate": 43,
+    "absent_share": 0.06976744186046512,
+    "wilson95": [
+     0.024011589577214484,
+     0.18608986901241975
+    ],
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "pl.wikipedia.org",
+    "distinct_identifiers": 42,
+    "citation_rows": 43,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 34,
+    "NOT-RETRIEVABLE": 6,
+    "INDETERMINATE": 2,
+    "determinate": 40,
+    "absent_share": 0.15,
+    "wilson95": [
+     0.07061187717320358,
+     0.2907232436648971
+    ],
+    "pages_with_an_absent_citation": 5
+   },
+   {
+    "wiki": "it.wikipedia.org",
+    "distinct_identifiers": 32,
+    "citation_rows": 32,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 26,
+    "NOT-RETRIEVABLE": 5,
+    "INDETERMINATE": 1,
+    "determinate": 31,
+    "absent_share": 0.16129032258064516,
+    "wilson95": [
+     0.070926244433653,
+     0.3263435395879326
+    ],
+    "pages_with_an_absent_citation": 5
+   },
+   {
+    "wiki": "ar.wikipedia.org",
+    "distinct_identifiers": 30,
+    "citation_rows": 31,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 28,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 30,
+    "absent_share": 0.06666666666666667,
+    "wilson95": [
+     0.018477023791270378,
+     0.2132345836261692
+    ],
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "ko.wikipedia.org",
+    "distinct_identifiers": 30,
+    "citation_rows": 66,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 26,
+    "NOT-RETRIEVABLE": 4,
+    "INDETERMINATE": 0,
+    "determinate": 30,
+    "absent_share": 0.13333333333333333,
+    "wilson95": [
+     0.053096554840547455,
+     0.296813266820363
+    ],
+    "pages_with_an_absent_citation": 12
+   },
+   {
+    "wiki": "nl.wikipedia.org",
+    "distinct_identifiers": 28,
+    "citation_rows": 28,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 26,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 2,
+    "determinate": 26,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.1287289218592153
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "bg.wikipedia.org",
+    "distinct_identifiers": 24,
+    "citation_rows": 24,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 22,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 24,
+    "absent_share": 0.08333333333333333,
+    "wilson95": [
+     0.023158815297043306,
+     0.25848802193210685
+    ],
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "vi.wikipedia.org",
+    "distinct_identifiers": 23,
+    "citation_rows": 23,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 18,
+    "NOT-RETRIEVABLE": 4,
+    "INDETERMINATE": 1,
+    "determinate": 22,
+    "absent_share": 0.18181818181818182,
+    "wilson95": [
+     0.07306884583422052,
+     0.38516607437126543
+    ],
+    "pages_with_an_absent_citation": 4
+   },
+   {
+    "wiki": "fi.wikipedia.org",
+    "distinct_identifiers": 19,
+    "citation_rows": 19,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 15,
+    "NOT-RETRIEVABLE": 4,
+    "INDETERMINATE": 0,
+    "determinate": 19,
+    "absent_share": 0.21052631578947367,
+    "wilson95": [
+     0.08507676632916253,
+     0.43334278443814167
+    ],
+    "pages_with_an_absent_citation": 4
+   },
+   {
+    "wiki": "hy.wikipedia.org",
+    "distinct_identifiers": 15,
+    "citation_rows": 15,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 15,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 15,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.20388330103584862
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "th.wikipedia.org",
+    "distinct_identifiers": 15,
+    "citation_rows": 15,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 13,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 15,
+    "absent_share": 0.13333333333333333,
+    "wilson95": [
+     0.03736125910306537,
+     0.37881982832322364
+    ],
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "fa.wikipedia.org",
+    "distinct_identifiers": 13,
+    "citation_rows": 14,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 12,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 13,
+    "absent_share": 0.07692307692307693,
+    "wilson95": [
+     0.013710421242556586,
+     0.3331395092109959
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "no.wikipedia.org",
+    "distinct_identifiers": 12,
+    "citation_rows": 12,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 12,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 12,
+    "absent_share": 0.0,
+    "wilson95": [
+     2.7755575615628914e-17,
+     0.24249400665524085
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ca.wikipedia.org",
+    "distinct_identifiers": 11,
+    "citation_rows": 11,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 10,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 11,
+    "absent_share": 0.09090909090909091,
+    "wilson95": [
+     0.016232172885884855,
+     0.37735843645159567
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "ro.wikipedia.org",
+    "distinct_identifiers": 11,
+    "citation_rows": 11,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 11,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 11,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.2588329669680317
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "eu.wikipedia.org",
+    "distinct_identifiers": 10,
+    "citation_rows": 10,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 8,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 10,
+    "absent_share": 0.2,
+    "wilson95": [
+     0.05668215145437519,
+     0.5098375284633583
+    ],
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "sr.wikipedia.org",
+    "distinct_identifiers": 10,
+    "citation_rows": 10,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 8,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 1,
+    "determinate": 9,
+    "absent_share": 0.1111111111111111,
+    "wilson95": [
+     0.019890887638544907,
+     0.434999705576656
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "sv.wikipedia.org",
+    "distinct_identifiers": 10,
+    "citation_rows": 11,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 10,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 10,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.2775327998628892
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "cs.wikipedia.org",
+    "distinct_identifiers": 8,
+    "citation_rows": 8,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 6,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 8,
+    "absent_share": 0.25,
+    "wilson95": [
+     0.071479212752109,
+     0.5907245696898311
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "da.wikipedia.org",
+    "distinct_identifiers": 8,
+    "citation_rows": 8,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 8,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 8,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.32440756488388023
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "uz.wikipedia.org",
+    "distinct_identifiers": 6,
+    "citation_rows": 6,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 5,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 6,
+    "absent_share": 0.16666666666666666,
+    "wilson95": [
+     0.030053369748306635,
+     0.5635028221864702
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "el.wikipedia.org",
+    "distinct_identifiers": 5,
+    "citation_rows": 5,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 5,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 5,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.43448246478317476
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ka.wikipedia.org",
+    "distinct_identifiers": 5,
+    "citation_rows": 5,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 4,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 5,
+    "absent_share": 0.2,
+    "wilson95": [
+     0.03622410863243014,
+     0.6244653702374747
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "simple.wikipedia.org",
+    "distinct_identifiers": 5,
+    "citation_rows": 5,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 5,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 5,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.43448246478317476
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "tl.wikipedia.org",
+    "distinct_identifiers": 5,
+    "citation_rows": 5,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 4,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 5,
+    "absent_share": 0.2,
+    "wilson95": [
+     0.03622410863243014,
+     0.6244653702374747
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "az.wikipedia.org",
+    "distinct_identifiers": 4,
+    "citation_rows": 4,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 4,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 4,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.4898908364545973
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ga.wikipedia.org",
+    "distinct_identifiers": 4,
+    "citation_rows": 4,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 3,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 4,
+    "absent_share": 0.25,
+    "wilson95": [
+     0.04558726080970055,
+     0.6993581574175981
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "gl.wikipedia.org",
+    "distinct_identifiers": 4,
+    "citation_rows": 4,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 4,
+    "absent_share": 0.5,
+    "wilson95": [
+     0.15003898915214947,
+     0.8499610108478506
+    ],
+    "pages_with_an_absent_citation": 2
+   },
+   {
+    "wiki": "be.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.3333333333333333,
+    "wilson95": [
+     0.06149194472039621,
+     0.7923403991979522
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "bn.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.3333333333333333,
+    "wilson95": [
+     0.06149194472039621,
+     0.7923403991979522
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "mk.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.3333333333333333,
+    "wilson95": [
+     0.06149194472039621,
+     0.7923403991979522
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "sk.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 2,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.6666666666666666,
+    "wilson95": [
+     0.2076596008020477,
+     0.9385080552796037
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "ur.wikipedia.org",
+    "distinct_identifiers": 3,
+    "citation_rows": 3,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 3,
+    "absent_share": 0.3333333333333333,
+    "wilson95": [
+     0.06149194472039621,
+     0.7923403991979522
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "et.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.6576197724933469
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "hr.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.6576197724933469
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "sq.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 2,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.6576197724933469
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ta.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.5,
+    "wilson95": [
+     0.09453120573423074,
+     0.9054687942657693
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "te.wikipedia.org",
+    "distinct_identifiers": 2,
+    "citation_rows": 2,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 2,
+    "absent_share": 0.5,
+    "wilson95": [
+     0.09453120573423074,
+     0.9054687942657693
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "af.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "fr.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "hi.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "is.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "kk.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "lv.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 0,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 1.0,
+    "wilson95": [
+     0.20654931437723745,
+     1.0
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "mn.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "ne.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "nn.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 1,
+    "NOT-RETRIEVABLE": 0,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 0.0,
+    "wilson95": [
+     0.0,
+     0.7934506856227626
+    ],
+    "pages_with_an_absent_citation": 0
+   },
+   {
+    "wiki": "sl.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 0,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 1.0,
+    "wilson95": [
+     0.20654931437723745,
+     1.0
+    ],
+    "pages_with_an_absent_citation": 1
+   },
+   {
+    "wiki": "sw.wikipedia.org",
+    "distinct_identifiers": 1,
+    "citation_rows": 1,
+    "unit": "distinct identifiers cited in this edition; one identifier counts once here however many pages of this edition cite it",
+    "RETRIEVABLE": 0,
+    "NOT-RETRIEVABLE": 1,
+    "INDETERMINATE": 0,
+    "determinate": 1,
+    "absent_share": 1.0,
+    "wilson95": [
+     0.20654931437723745,
+     1.0
+    ],
+    "pages_with_an_absent_citation": 1
+   }
+  ]
+ }
+}
