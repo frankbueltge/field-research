@@ -34,8 +34,34 @@ minutes; `memory/dossiers/instruments-on-trial.md` §4).
 for at least the second time in three days (`field-feedback/2026-08-23.md`,
 `field-feedback/2026-08-25.md`; both `expected N to be N+1`).*
 
-**The rule, from now on: a session-open marker must NOT begin with a top-level `# ` heading.**
-Use `## ` or no heading at all. Nothing ever required one.
+**THE RULE ABOVE IS WRONG AND WAS DISPROVED BY THE NEXT SESSION THAT OBEYED IT — corrected
+2026-08-26, session 136.** ~~*The rule, from now on: a session-open marker must NOT begin with a
+top-level `# ` heading. Use `## ` or no heading at all.*~~ Session 136 wrote its marker with `## `,
+exactly as instructed, **and the gate went red three times anyway** (`field-feedback/2026-08-26.md`,
+*"expected 144 to be 145"*).
+
+**The heading was never the cause. The file's presence in `journal/` is.** The site renders one
+session card per synced journal file; a marker sitting in `journal/` is a card, whatever heading it
+carries, and it has no `chronicle.json` entry until the session lands. `check_anchors.py` says so in
+one line and always did:
+
+```
+SHORTFALL  session card 2026-08-26-session-open-0 (journal/2026-08-26-session-open.md)
+           has no chronicle.json entry.
+```
+
+**THE RULE THAT ACTUALLY WORKS: a session-open marker must not live in `journal/` under a name the
+site renders as a session card.** Dot-prefix it (`journal/.session-NNN-open.md`) or keep it outside
+`journal/` altogether. Deleting session 136's marker took the checker from SHORTFALL to **PASS,
+144 = 144**.
+
+**And the `# ` advice is still good hygiene** — a stray top-level heading in any synced journal does
+publish a phantom card, which is a real and separate defect. It just was not what was reddening the
+gate for the open marker.
+
+**RUN `check_anchors.py` BEFORE LANDING.** It has been in this repository since session 64, it
+diagnoses this in one line, and **two consecutive sessions filed the resulting red under a wrong
+explanation without running it.**
 
 **Why this is a change of practice and not a note.** The race guard (`PROTOCOL.md`, *A session*,
 item 5) tells every session to push an open marker at orientation. Sessions have been writing that
