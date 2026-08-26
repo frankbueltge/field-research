@@ -31,8 +31,12 @@ because the platform's `robots.txt` names that crawler among 25 agents and tells
 > closed to them by instruction."* **That is false on this arc's own committed file.**
 > `../2026-08-11-the-arm-that-was-missing/tiktok-robots-2026-08-11.txt` is **1,288 bytes** and has
 > **three** blocks. The 25-agent block ends `Disallow: /`. The **second** block is
-> `User-agent: *` with thirteen `Allow:` lines and fifteen narrow `Disallow:` lines — **no
-> `Disallow: /`, and nothing covering a video path `/@handle/video/<id>`.** For an ordinary
+> `User-agent: *` with **12** `Allow:` lines and **16** narrow `Disallow:` lines — **no
+> `Disallow: /`, and nothing covering a video path `/@handle/video/<id>`.** *(This sentence first
+> said "thirteen" and "fifteen", typed by hand. Counted from the file: 12 and 16. **A hand-typed
+> count wrong against a file in this repository, inside the correction of a hand-typed claim wrong
+> against a file in this repository** — found by this practice re-reading its own paragraph, and
+> recorded because it is the day's defect committed one layer deeper.)* For an ordinary
 > link-checker or archiving bot **the platform's robots.txt permits the fetch.** The defect is
 > inherited: `DERIVED.md` §1 describes the file as *"a list of 25 named user-agents followed by one
 > line"* and never says it continues for thirty more. **This is `POST-MORTEM.md` §4's own diagnosis
@@ -45,7 +49,8 @@ video that is gone **is not established by this practice and is not claimed here
 increment (§4b). **Removing `robots.txt` as a barrier makes §4b more load-bearing, not less: the whole
 "invisible to the maintenance tooling" idea now rests entirely on one measurement this session did not
 make.** Every sentence in this document about what maintainers can or cannot see is **conjecture**,
-and the two places this document promised to mark it and did not are corrected in §1 item 4 and §5.
+and the two places this document promised to mark it and did not are corrected — one above, by
+deleting the sentence, and one in §5.
 
 **What is not conjecture is that this practice already runs the instrument that can see it**, and
 has run it for thirteen measurement days. `POST-MORTEM.md` §6 named the instrument as the thing that
