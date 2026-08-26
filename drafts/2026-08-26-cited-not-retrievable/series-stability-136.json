@@ -1,0 +1,332 @@
+{
+ "schema": "field-research/series-stability/1",
+ "built_by": "series_stability.py, session 136, 2026-08-26",
+ "offline": true,
+ "arms_included": [
+  "A",
+  "A-new",
+  "A2"
+ ],
+ "n_measurement_days": 13,
+ "hours_used": [
+  "03:37",
+  "03:41",
+  "03:43",
+  "04:27",
+  "11:24"
+ ],
+ "holes_note": "2026-08-17 and 2026-08-24 have a .partial and no run file. A partial is never a run; they are holes and consume no ordinal.",
+ "all_days": {
+  "absent_share_min": 0.10804597701149425,
+  "absent_share_max": 0.12140575079872204,
+  "absent_share_range_pp": 1.3359773787227789
+ },
+ "fixed_manifest_days_only": {
+  "modal_n_identifiers": 3166,
+  "n_days": 12,
+  "days_excluded": [
+   {
+    "date": "2026-08-11",
+    "n_identifiers": 2201
+   }
+  ],
+  "why_excluded": "a different corpus, not a different field: the founding census ran before the expansion of 2026-08-11 and manifest-day2-onward.json superseded it the same night",
+  "absent_share_min": 0.11826585910105196,
+  "absent_share_max": 0.12140575079872204,
+  "absent_share_range_pp": 0.313989169767008
+ },
+ "apparent_changes_raw_per_interval": [
+  1,
+  1,
+  4,
+  2,
+  0,
+  4,
+  1,
+  4,
+  2,
+  0,
+  3,
+  2
+ ],
+ "apparent_changes_raw_total": 24,
+ "not_a_transition_count": "These are RAW apparent changes between consecutive measurement days. The instrument's confirmation step re-requests each five times before believing it and has refuted six of sixteen apparent disappearances across the series. No trend is claimed and no test is scored on these numbers.",
+ "days": [
+  {
+   "date": "2026-08-11",
+   "hour_utc": "11:24",
+   "run_file": "run-2026-08-11T1124Z.json",
+   "run_file_sha256": "f4109cf2da10a14d7f5f0137f5f6cecd5c8f535a8713ca56b3db2d305dbd2d03",
+   "n_identifiers": 2201,
+   "RETRIEVABLE": 1940,
+   "NOT-RETRIEVABLE": 235,
+   "INDETERMINATE": 26,
+   "determinate": 2175,
+   "absent_share": 0.10804597701149425
+  },
+  {
+   "date": "2026-08-12",
+   "hour_utc": "03:41",
+   "run_file": "run-2026-08-12T0341Z.json",
+   "run_file_sha256": "e9d66881a80e14bc4544c9261f382c778dd36c4b42052e1e0808a572e3c59b12",
+   "n_identifiers": 3166,
+   "RETRIEVABLE": 2761,
+   "NOT-RETRIEVABLE": 372,
+   "INDETERMINATE": 33,
+   "determinate": 3133,
+   "absent_share": 0.11873603574848388,
+   "vs_previous_measurement_day": {
+    "previous": "2026-08-11",
+    "calendar_days_between": 1.0,
+    "identifiers_determinate_in_both": 2159,
+    "apparent_changes_raw": 1,
+    "apparent_change_share": 0.0004631773969430292,
+    "to_NOT-RETRIEVABLE": 0,
+    "to_RETRIEVABLE": 1,
+    "identifiers_touching_INDETERMINATE": 42
+   }
+  },
+  {
+   "date": "2026-08-13",
+   "hour_utc": "04:27",
+   "run_file": "run-2026-08-13T0427Z.json",
+   "run_file_sha256": "128bd4382e61809096071060e67f0683e5a14251f5afd8908dac41910f5b4a1b",
+   "n_identifiers": 3166,
+   "RETRIEVABLE": 2756,
+   "NOT-RETRIEVABLE": 373,
+   "INDETERMINATE": 37,
+   "determinate": 3129,
+   "absent_share": 0.11920741450942793,
+   "vs_previous_measurement_day": {
+    "previous": "2026-08-12",
+    "calendar_days_between": 1.0,
+    "identifiers_determinate_in_both": 3096,
+    "apparent_changes_raw": 1,
+    "apparent_change_share": 0.00032299741602067185,
+    "to_NOT-RETRIEVABLE": 1,
+    "to_RETRIEVABLE": 0,
+    "identifiers_touching_INDETERMINATE": 70
+   }
+  },
+  {
+   "date": "2026-08-14",
+   "hour_utc": "03:43",
+   "run_file": "run-2026-08-14T0343Z.json",
+   "run_file_sha256": "8e876569ac6abad693d8b43c5b6a44e027dd6d89ffd14712b4469278d1857f75",
+   "n_identifiers": 3166,
+   "RETRIEVABLE": 2766,
+   "NOT-RETRIEVABLE": 371,
+   "INDETERMINATE": 29,
+   "determinate": 3137,
+   "absent_share": 0.11826585910105196,
+   "vs_previous_measurement_day": {
+    "previous": "2026-08-13",
+    "calendar_days_between": 1.0,
+    "identifiers_determinate_in_both": 3101,
+    "apparent_changes_raw": 4,
+    "apparent_change_share": 0.0012899064817800709,
+    "to_NOT-RETRIEVABLE": 1,
+    "to_RETRIEVABLE": 3,
+    "identifiers_touching_INDETERMINATE": 65
+   }
+  },
+  {
+   "date": "2026-08-15",
+   "hour_utc": "03:37",
+   "run_file": "run-2026-08-15T0337Z.json",
+   "run_file_sha256": "d1d14495b276746ff35c0655cfe4388f28b1ed4973fdce64b62c9420f59085f6",
+   "n_identifiers": 3166,
+   "RETRIEVABLE": 2756,
+   "NOT-RETRIEVABLE": 372,
+   "INDETERMINATE": 38,
+   "determinate": 3128,
+   "absent_share": 0.11892583120204604,
+   "vs_previous_measurement_day": {
+    "previous": "2026-08-14",
+    "calendar_days_between": 1.0,
+    "identifiers_determinate_in_both": 3099,
+    "apparent_changes_raw": 2,
+    "apparent_change_share": 0.0006453694740238787,
+    "to_NOT-RETRIEVABLE": 1,
+    "to_RETRIEVABLE": 1,
+    "identifiers_touching_INDETERMINATE": 67
+   }
+  },
+  {
+   "date": "2026-08-16",
+   "hour_utc": "03:37",
+   "run_file": "run-2026-08-16T0337Z.json",
+   "run_file_sha256": "91e9ce22421dc0ff9142502aa2a179d5880702c0f014fac0b28df4da31818e92",
+   "n_identifiers": 3166,
+   "RETRIEVABLE": 2764,
+   "NOT-RETRIEVABLE": 372,
+   "INDETERMINATE": 30,
+   "determinate": 3136,
+   "absent_share": 0.11862244897959184,
+   "vs_previous_measurement_day": {
+    "previous": "2026-08-15",
+    "calendar_days_between": 1.0,
+    "identifiers_determinate_in_both": 3098,
+    "apparent_changes_raw": 0,
+    "apparent_change_share": 0.0,
+    "to_NOT-RETRIEVABLE": 0,
+    "to_RETRIEVABLE": 0,
+    "identifiers_touching_INDETERMINATE": 68
+   }
+  },
+  {
+   "date": "2026-08-18",
+   "hour_utc": "03:41",
+   "run_file": "run-2026-08-18T0341Z.json",
+   "run_file_sha256": "f9c0d912a2e1a17256a8ecad9aae92a411f506fe242b9559b2f78d50476ef957",
+   "n_identifiers": 3166,
+   "RETRIEVABLE": 2757,
+   "NOT-RETRIEVABLE": 377,
+   "INDETERMINATE": 32,
+   "determinate": 3134,
+   "absent_share": 0.12029355456285896,
+   "vs_previous_measurement_day": {
+    "previous": "2026-08-16",
+    "calendar_days_between": 2.0,
+    "identifiers_determinate_in_both": 3104,
+    "apparent_changes_raw": 4,
+    "apparent_change_share": 0.001288659793814433,
+    "to_NOT-RETRIEVABLE": 4,
+    "to_RETRIEVABLE": 0,
+    "identifiers_touching_INDETERMINATE": 62
+   }
+  },
+  {
+   "date": "2026-08-19",
+   "hour_utc": "03:41",
+   "run_file": "run-2026-08-19T0341Z.json",
+   "run_file_sha256": "9c2409f38c26af14361e483f7439864db7699eb3917217b191b4830e5818f6a7",
+   "n_identifiers": 3166,
+   "RETRIEVABLE": 2768,
+   "NOT-RETRIEVABLE": 377,
+   "INDETERMINATE": 21,
+   "determinate": 3145,
+   "absent_share": 0.11987281399046106,
+   "vs_previous_measurement_day": {
+    "previous": "2026-08-18",
+    "calendar_days_between": 1.0,
+    "identifiers_determinate_in_both": 3113,
+    "apparent_changes_raw": 1,
+    "apparent_change_share": 0.00032123353678124,
+    "to_NOT-RETRIEVABLE": 1,
+    "to_RETRIEVABLE": 0,
+    "identifiers_touching_INDETERMINATE": 53
+   }
+  },
+  {
+   "date": "2026-08-20",
+   "hour_utc": "03:41",
+   "run_file": "run-2026-08-20T0341Z.json",
+   "run_file_sha256": "3b78b1c4997487112e9ceec179f2e19f19ca0cece1be10288f266b8cc8d3a8c6",
+   "n_identifiers": 3166,
+   "RETRIEVABLE": 2760,
+   "NOT-RETRIEVABLE": 380,
+   "INDETERMINATE": 26,
+   "determinate": 3140,
+   "absent_share": 0.12101910828025478,
+   "vs_previous_measurement_day": {
+    "previous": "2026-08-19",
+    "calendar_days_between": 1.0,
+    "identifiers_determinate_in_both": 3120,
+    "apparent_changes_raw": 4,
+    "apparent_change_share": 0.001282051282051282,
+    "to_NOT-RETRIEVABLE": 4,
+    "to_RETRIEVABLE": 0,
+    "identifiers_touching_INDETERMINATE": 46
+   }
+  },
+  {
+   "date": "2026-08-21",
+   "hour_utc": "03:41",
+   "run_file": "run-2026-08-21T0341Z.json",
+   "run_file_sha256": "b5f4397f4afd057b051e51a600080d0e6f8c0278b0faacaca12a48884ba32071",
+   "n_identifiers": 3166,
+   "RETRIEVABLE": 2756,
+   "NOT-RETRIEVABLE": 378,
+   "INDETERMINATE": 32,
+   "determinate": 3134,
+   "absent_share": 0.1206126356094448,
+   "vs_previous_measurement_day": {
+    "previous": "2026-08-20",
+    "calendar_days_between": 1.0,
+    "identifiers_determinate_in_both": 3108,
+    "apparent_changes_raw": 2,
+    "apparent_change_share": 0.0006435006435006435,
+    "to_NOT-RETRIEVABLE": 0,
+    "to_RETRIEVABLE": 2,
+    "identifiers_touching_INDETERMINATE": 58
+   }
+  },
+  {
+   "date": "2026-08-22",
+   "hour_utc": "03:41",
+   "run_file": "run-2026-08-22T0341Z.json",
+   "run_file_sha256": "5c76cf11f1447918d43348d619be60c3972379a62a81918227a99fa85812915f",
+   "n_identifiers": 3166,
+   "RETRIEVABLE": 2750,
+   "NOT-RETRIEVABLE": 380,
+   "INDETERMINATE": 36,
+   "determinate": 3130,
+   "absent_share": 0.12140575079872204,
+   "vs_previous_measurement_day": {
+    "previous": "2026-08-21",
+    "calendar_days_between": 1.0,
+    "identifiers_determinate_in_both": 3099,
+    "apparent_changes_raw": 0,
+    "apparent_change_share": 0.0,
+    "to_NOT-RETRIEVABLE": 0,
+    "to_RETRIEVABLE": 0,
+    "identifiers_touching_INDETERMINATE": 67
+   }
+  },
+  {
+   "date": "2026-08-23",
+   "hour_utc": "03:41",
+   "run_file": "run-2026-08-23T0341Z.json",
+   "run_file_sha256": "f40af3cb5b8203dfd3895dd45bf313358ab3886f815d27987fd414c47d6a5d00",
+   "n_identifiers": 3166,
+   "RETRIEVABLE": 2757,
+   "NOT-RETRIEVABLE": 380,
+   "INDETERMINATE": 29,
+   "determinate": 3137,
+   "absent_share": 0.12113484220592924,
+   "vs_previous_measurement_day": {
+    "previous": "2026-08-22",
+    "calendar_days_between": 1.0,
+    "identifiers_determinate_in_both": 3102,
+    "apparent_changes_raw": 3,
+    "apparent_change_share": 0.0009671179883945841,
+    "to_NOT-RETRIEVABLE": 3,
+    "to_RETRIEVABLE": 0,
+    "identifiers_touching_INDETERMINATE": 64
+   }
+  },
+  {
+   "date": "2026-08-25",
+   "hour_utc": "03:41",
+   "run_file": "run-2026-08-25T0341Z.json",
+   "run_file_sha256": "c0885d6c6623f0524a595c4a344856ec0bf4e4da476bee7d38bb46a4b54ab4aa",
+   "n_identifiers": 3166,
+   "RETRIEVABLE": 2760,
+   "NOT-RETRIEVABLE": 374,
+   "INDETERMINATE": 32,
+   "determinate": 3134,
+   "absent_share": 0.11933631142310147,
+   "vs_previous_measurement_day": {
+    "previous": "2026-08-23",
+    "calendar_days_between": 2.0,
+    "identifiers_determinate_in_both": 3106,
+    "apparent_changes_raw": 2,
+    "apparent_change_share": 0.000643915003219575,
+    "to_NOT-RETRIEVABLE": 0,
+    "to_RETRIEVABLE": 2,
+    "identifiers_touching_INDETERMINATE": 60
+   }
+  }
+ ]
+}

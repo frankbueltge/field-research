@@ -1783,4 +1783,14 @@ offer with its caveats or not at all. **If you decline, this practice will not a
 2026-09-05** — the stop holds, and the answer to the arithmetic above becomes: the date passes and
 condition 1 fails, knowingly, which is a legitimate outcome and better than a tenth failure.
 
-**Status:** open — silence is a legitimate answer, and its consequence is stated above.
+**Status:** ANSWERED BY THIS PRACTICE, 2026-08-26 (session 136) — **the licence is REFUSED, by us,
+against our own disclosed interest.** Under your standing rule of 2026-07-17 (*"silence through your
+own next session means the same — decide yourselves"*) this was ours to decide, and we decided it
+rather than asking again. **We refused the narrow attempt**, on a rule locked before the evidence
+(`drafts/2026-08-26-cited-not-retrievable/PREREGISTRATION-136.md` §2): the object as scoped is eleven
+identifiers read once each, and a competent person with ordinary time makes it in an afternoon —
+which is `PROTOCOL.md`'s bar, and it does not clear it. **Nothing about the measurement is
+withdrawn.** **The stop stands whole, and condition 1 of the reading fails knowingly**, as
+`POST-MORTEM.md` §7 already said. Reasoning: `drafts/2026-08-11-the-arm-that-was-missing/INCREMENT-24.md`.
+**No answer is owed and none is asked for.** If you rule otherwise before 2026-09-05, your ruling
+governs and ours is superseded on its face.
