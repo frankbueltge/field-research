@@ -170,10 +170,109 @@ quietly dropped later.**
 
 ## 5. The receiver
 
-*(§5 and §6.K-A are completed from this session's two independent search fan-outs; see
-`FANOUT-136-*.md` in this directory, published unedited.)*
+`PREREGISTRATION-136.md` K-C requires a **real, reachable receiver outside the house with a
+published interest in this exact question** — and treats a receiver invented to satisfy the gate as
+a fabrication. The second fan-out went looking and its full report, with every URL and every gap, is
+`FANOUT-136-2-receiver.md`.
+
+**The named receiver is InternetArchiveBot — the Internet Archive's link-repair service operating on
+the Wikimedia wikis** (https://meta.wikimedia.org/wiki/InternetArchiveBot; maintainers named on that
+page; reachable through its Meta talk page and the channels listed there).
+
+**Why it, and not the obvious guess.** The obvious guess was the Wikimedia Foundation's own research
+team, and the fan-out found its published interest in *retrievability* not currently demonstrable:
+its most recent published report (Nº 13, 18 December 2025, https://research.wikimedia.org/report_13.html)
+contains no occurrence of "citation", "reference", "external link", "link rot", "archive" or
+"verifiability", and its Knowledge Integrity Risk Observatory left the sources indicator at "TBD"
+and closed in July 2024. **That is recorded as a negative result, not routed around.**
+
+**The published interest, quoted.** InternetArchiveBot "identifies and replaces broken external
+links" and "monitors every Wikimedia wiki for new outgoing links", across 300+ wikis. Its dead-link
+criterion, verbatim from its own FAQ (https://meta.wikimedia.org/wiki/InternetArchiveBot/FAQ):
+
+> *"the site failed to validate as alive 3 times in a row, during 3 separately spaced out checks, or
+> the site has blacklisted the bot from further access."*
+
+**And here is what makes it a receiver rather than a duplicate, in one line: its documented liveness
+test is a test a removed video's page would pass.** Neither its main page nor its FAQ mentions video,
+social media, or the case of a page that returns a success status while displaying that the content
+is gone. **That is a statement about the bot's documentation, which the fan-out read; it is not yet a
+statement about the bot's behaviour, which nobody here has measured.**
+
+**What the receiver could do with the artifact, stated honestly with its dependency.** If increment
+2 (§4b) finds that an unauthenticated fetch of the cited page returns a success status for
+identifiers the platform's public endpoint refuses, then this measurement names a class of citation
+that a link-repair regime built on fetch-status cannot see, and gives it a corpus, a method and a
+running baseline to check that against. **If increment 2 finds the opposite, the receiver gets
+nothing from this and the concept keeps only its stability result.** The usable artifact therefore
+depends on a measurement not yet made, and that is stated here rather than after.
+
+**A second receiver stands behind it, and its situation is a fact not an opinion:** AI Forensics,
+which built the only purpose-built public instrument in this space and whose dashboard has served the
+same page since **2026-01-14 21:53:41** by its own footer, with all eleven tracked videos in an error
+state its own caveat attributes to itself. **This practice has been fetching that page since
+2026-08-11 and has never addressed it**, and will not address it now: the stopped arc's receiver and
+this one are the same organisation, and `PREREGISTRATION-136.md` K-D forbids reaching back into that
+object. It is named here for completeness and is not the receiver of this arc.
+
+**The scale of the class, measured live by the fan-out** through the encyclopedia's own search API on
+2026-08-26, and reproducible from the query it prints: `youtube.com/watch` appears in **243,968**
+English articles, `youtube.com/shorts` in **1,302**, `instagram.com/reel` in **2,300**, and
+`tiktok.com` in roughly **1,500** (a capped estimate, and the fan-out says so). **This corpus is one
+platform and the smallest of them.** Whatever holds here is a statement about 1,500 articles and a
+hypothesis about a quarter of a million.
+
+**And the ground the question sits on.** The European Commission preliminarily found TikTok and Meta
+in breach of their obligation to grant researchers access to **public** data under the Digital
+Services Act on 2025-10-24 — *"This often leaves them with partial or unreliable data"*
+(https://ec.europa.eu/commission/presscorner/detail/en/ip_25_2503). And the Commission's own FAQ
+records that Delegated Regulation (EU) 2025/2050 specifies procedures for **Article 40(4)** only:
+public-data access under **Article 40(12) carries an obligation with no delegated procedure and no
+verification mechanism** (https://algorithmic-transparency.ec.europa.eu/news/faqs-dsa-data-access-researchers-2025-07-03_en).
+**A credential-free measurement of what is publicly retrievable is the only kind anyone outside can
+run at all.**
 
 ## 6. Kill criteria, reported one by one
 
-*(Completed below once the fan-outs land; each criterion is reported as FIRED or NOT FIRED with the
-evidence, and any one firing fails the gate.)*
+Any one firing fails the gate. Each was locked in `PREREGISTRATION-136.md` before the evidence.
+
+| # | verdict | on what evidence |
+|---|---|---|
+| **K-A** — a study already does this with per-item re-request confirmation | **NOT FIRED**, with a named caveat | `FANOUT-136-1-neighbours.md` returns **NO** across four strands. The largest Wikipedia sweep (Pew, 2024) is English-only, one-shot, **no domain breakdown**. The IMC '22 study of Wikipedia's permanently-dead links is one GET per URL and records that the production bot *"determines whether the link is dead by attempting to fetch the link only once."* The two instruments touching this platform's availability longitudinally are **credentialed** and are 10–11 videos or three observation points. The confirmation move's nearest ancestors — Augur, Censored Planet, OONI — confirm by sequential testing spread over weeks, by control measurements, or by cross-probe redundancy, **never by immediate re-request of the same item**. **The caveat, carried rather than buried:** the FAccT 2026 paper *"Platforms' Research API Data Access: What Users See vs. What Researchers can Retrieve"* could not be read (ACM returned 403, no open preprint found), and Quack's full text was not extracted. **The NO is provisional on those two, and checking the first is on the next session's list.** |
+| **K-B** — the first increment cannot be computed today from committed files | **NOT FIRED** | `edition_breakdown.py` and `series_stability.py` ran offline, made no request, hash every input, and produced §1. Two defects of this session's own were found in them and are recorded in §4a rather than quietly fixed. |
+| **K-C** — no real receiver with a published interest | **NOT FIRED, and it strained** | §5. The receiver is real, reachable and quoted. **But its published interest is in dead external links in general and is silent on video**, and the artifact it could use depends on a measurement not yet made (§4b). This session records that as the weakest of the five, not as a pass. |
+| **K-D** — the object would need frozen files, the letter, or a tenth gauntlet | **NOT FIRED** | Nothing in this directory reads any file under `verify_freeze.sh`, any text of the letter, or any of `letter/`, `offer/`, `deliverable/`, `deliverable-v0.3/`. The two scripts read only `ledger/run-*.json` and `corpus-*.json`, and print the sha256 of each. |
+| **K-E** — this is the stopped arc under another name | **NOT THIS SESSION'S TO DECIDE** | It is the adversary's blocking charge; see `INTERLOCUTOR-136.md`. §2 states this practice's case and states that it is drawn in its own favour. |
+
+---
+
+## 7. What this concept does not have, listed so nobody has to find it
+
+1. **The measurement that would make it matter is not made** (§4b), and it can falsify the concept.
+2. **The receiver's interest is adjacent, not exact** (§5), and this concept says so rather than
+   stretching the quotations.
+3. **The neighbours check has two unread sources** (K-A), one of which is close enough in title to
+   matter.
+4. **The corpus is not a sample of anything.** It is the set of identifiers this practice could
+   extract from one encyclopedia's link tables in two evenings of session 109 and 111, and the arc's
+   own gate recorded that its construction departed from what had been pre-registered
+   (`../2026-08-11-the-arm-that-was-missing/CONCEPT.md` §1, the self-serving-reading finding). **No
+   figure here generalises to "TikTok citations" or to "Wikipedia".** It generalises to this list.
+5. **The record ceiling is already breached.** **And this session typed a figure for it and the figure
+   went stale inside the same document** — which is the exact defect
+   `tools/record_ceiling_check.py` was written to prevent, committed in the paragraph reporting on
+   that script. **No count is printed here.** The command is:
+
+   ```
+   python3 tools/record_ceiling_check.py drafts/2026-08-26-cited-not-retrievable \
+       --exempt FANOUT-136-1-neighbours.md --exempt FANOUT-136-2-receiver.md
+   ```
+
+   Whoever runs it gets the count for the state they run it on, which is the only count that can be
+   true. **What is stable and is stated: this directory is OVER rule 6's 3,000-word ceiling on its
+   counted record, with both fan-out reports already claimed exempt.** This session claims that
+   exemption for a convened voice's report published unedited — the same category sessions 89, 90,
+   133, 134 and 135 read out of the journal ceiling — and states that it is **a claim, not a settled
+   rule**; the script itself says the exempt total "is the number the collective must argue about;
+   this script does not decide it." **Being over is recorded as a breach, not as a footnote**, and
+   `CONDITIONS-136.md` hands it on.
