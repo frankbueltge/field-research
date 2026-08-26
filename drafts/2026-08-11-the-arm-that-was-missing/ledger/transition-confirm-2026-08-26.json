@@ -1,0 +1,219 @@
+{
+ "generated_utc": "2026-08-26T05:21:55Z",
+ "diff": "ledger/diff-day13-day14.json",
+ "vantage": {
+  "ip": "160.79.106.129",
+  "city": "Columbus",
+  "region": "Ohio",
+  "country": "US",
+  "loc": "39.9612,-82.9988",
+  "timezone": "America/New_York",
+  "asn": "AS396982",
+  "registrant": "[redacted under this practice's naming rule]",
+  "source": "https://ipinfo.io/json",
+  "fetched_utc": "2026-08-26T05:21:34Z"
+ },
+ "passes_per_transition": 5,
+ "K4": "FIRES \u2014 at least one transition did not reproduce",
+ "results": [
+  {
+   "vid": "7016669364938149122",
+   "handle": "ask__dani",
+   "arm": null,
+   "from": "RETRIEVABLE",
+   "to": "NOT-RETRIEVABLE",
+   "reconfirmation_states": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": false,
+   "verdict": "NOT CONFIRMED \u2014 K4 fires; recorded as an instrument artefact, not counted in the window",
+   "passes": [
+    {
+     "http": 200,
+     "bytes": 1562,
+     "author_unique_id": "ask__dani",
+     "title_len": 35,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 1,
+     "utc": "2026-08-26T05:21:35Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1564,
+     "author_unique_id": "ask__dani",
+     "title_len": 35,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 2,
+     "utc": "2026-08-26T05:21:37Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1564,
+     "author_unique_id": "ask__dani",
+     "title_len": 35,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-26T05:21:38Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1564,
+     "author_unique_id": "ask__dani",
+     "title_len": 35,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 4,
+     "utc": "2026-08-26T05:21:40Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1562,
+     "author_unique_id": "ask__dani",
+     "title_len": 35,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 5,
+     "utc": "2026-08-26T05:21:41Z"
+    }
+   ]
+  },
+  {
+   "vid": "7228775822222724357",
+   "handle": "franciscogaleano994",
+   "arm": null,
+   "from": "RETRIEVABLE",
+   "to": "NOT-RETRIEVABLE",
+   "reconfirmation_states": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": false,
+   "verdict": "NOT CONFIRMED \u2014 K4 fires; recorded as an instrument artefact, not counted in the window",
+   "passes": [
+    {
+     "http": 200,
+     "bytes": 1348,
+     "author_unique_id": "franciscogaleano994",
+     "title_len": 0,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 1,
+     "utc": "2026-08-26T05:21:42Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1348,
+     "author_unique_id": "franciscogaleano994",
+     "title_len": 0,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 2,
+     "utc": "2026-08-26T05:21:44Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1346,
+     "author_unique_id": "franciscogaleano994",
+     "title_len": 0,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-26T05:21:45Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1346,
+     "author_unique_id": "franciscogaleano994",
+     "title_len": 0,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 4,
+     "utc": "2026-08-26T05:21:47Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1346,
+     "author_unique_id": "franciscogaleano994",
+     "title_len": 0,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 5,
+     "utc": "2026-08-26T05:21:48Z"
+    }
+   ]
+  },
+  {
+   "vid": "7666435890209770773",
+   "handle": "swfx_real_fox",
+   "arm": null,
+   "from": "RETRIEVABLE",
+   "to": "NOT-RETRIEVABLE",
+   "reconfirmation_states": [
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE",
+    "NOT-RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": true,
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests",
+   "passes": [
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 1,
+     "utc": "2026-08-26T05:21:49Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 2,
+     "utc": "2026-08-26T05:21:50Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-26T05:21:52Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 4,
+     "utc": "2026-08-26T05:21:53Z"
+    },
+    {
+     "http": 400,
+     "bytes": 45,
+     "body_code": 400,
+     "body_message": "Something went wrong",
+     "state": "NOT-RETRIEVABLE",
+     "pass": 5,
+     "utc": "2026-08-26T05:21:54Z"
+    }
+   ]
+  }
+ ]
+}

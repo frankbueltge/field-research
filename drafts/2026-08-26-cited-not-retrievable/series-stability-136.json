@@ -7,7 +7,7 @@
   "A-new",
   "A2"
  ],
- "n_measurement_days": 13,
+ "n_measurement_days": 14,
  "hours_used": [
   "03:37",
   "03:41",
@@ -18,12 +18,12 @@
  "holes_note": "2026-08-17 and 2026-08-24 have a .partial and no run file. A partial is never a run; they are holes and consume no ordinal.",
  "all_days": {
   "absent_share_min": 0.10804597701149425,
-  "absent_share_max": 0.12140575079872204,
-  "absent_share_range_pp": 1.3359773787227789
+  "absent_share_max": 0.12202097235462345,
+  "absent_share_range_pp": 1.3974995343129195
  },
  "fixed_manifest_days_only": {
   "modal_n_identifiers": 3166,
-  "n_days": 12,
+  "n_days": 13,
   "days_excluded": [
    {
     "date": "2026-08-11",
@@ -32,8 +32,8 @@
   ],
   "why_excluded": "a different corpus, not a different field: the founding census ran before the expansion of 2026-08-11 and manifest-day2-onward.json superseded it the same night",
   "absent_share_min": 0.11826585910105196,
-  "absent_share_max": 0.12140575079872204,
-  "absent_share_range_pp": 0.313989169767008
+  "absent_share_max": 0.12202097235462345,
+  "absent_share_range_pp": 0.37551132535714876
  },
  "apparent_changes_raw_per_interval": [
   1,
@@ -47,9 +47,10 @@
   2,
   0,
   3,
-  2
+  2,
+  3
  ],
- "apparent_changes_raw_total": 24,
+ "apparent_changes_raw_total": 27,
  "not_a_transition_count": "These are RAW apparent changes between consecutive measurement days. The instrument's confirmation step re-requests each five times before believing it. Across the ENCYCLOPEDIA ARMS ONLY - the arms this file counts - it has refuted 5 of 15 RAW apparent disappearances, identically for GENUINE transitions (confirmation-by-arm-136.json). The whole-series figure of 6 of 16 includes a public forum's arm that this file excludes. No trend is claimed and no test is scored on these numbers.",
  "days": [
   {
@@ -326,6 +327,28 @@
     "to_NOT-RETRIEVABLE": 0,
     "to_RETRIEVABLE": 2,
     "identifiers_touching_INDETERMINATE": 60
+   }
+  },
+  {
+   "date": "2026-08-26",
+   "hour_utc": "03:41",
+   "run_file": "run-2026-08-26T0341Z.json",
+   "run_file_sha256": "2f21a22d5eca69bfd486539da278ba8816b11e619a255a7604a84805736a058e",
+   "n_identifiers": 3166,
+   "RETRIEVABLE": 2763,
+   "NOT-RETRIEVABLE": 384,
+   "INDETERMINATE": 19,
+   "determinate": 3147,
+   "absent_share": 0.12202097235462345,
+   "vs_previous_measurement_day": {
+    "previous": "2026-08-25",
+    "calendar_days_between": 1.0,
+    "identifiers_determinate_in_both": 3115,
+    "apparent_changes_raw": 3,
+    "apparent_change_share": 0.0009630818619582664,
+    "to_NOT-RETRIEVABLE": 3,
+    "to_RETRIEVABLE": 0,
+    "identifiers_touching_INDETERMINATE": 51
    }
   }
  ]
