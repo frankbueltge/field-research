@@ -1,0 +1,77 @@
+{
+ "schema": "field-research/confirmation-by-arm/1",
+ "built_by": "confirmation_by_arm.py, session 136, 2026-08-26",
+ "offline": true,
+ "sources": {
+  "confirmation_record": "confirmation-record-121.json",
+  "confirmation_record_sha256": "109f4c0b3b47a3ffbc5b405920c3945b6a902b98de761f336dc11fffce32a695",
+  "run_file_for_arms": "run-2026-08-25T0341Z.json",
+  "run_file_sha256": "c0885d6c6623f0524a595c4a344856ec0bf4e4da476bee7d38bb46a4b54ab4aa"
+ },
+ "encyclopedia_arms": [
+  "A",
+  "A-new",
+  "A2"
+ ],
+ "n_readings_total": 28,
+ "identifiers_not_in_the_run_file": [],
+ "what_this_is_not": "These are RAW readings unless the row says echoes are excluded. A confirmation count travels with the word raw or genuine or it does not travel (memory/downstream-commitments.md condition 8). And in either form six events is not a rate, and neither are fifteen.",
+ "counts": {
+  "encyclopedia": {
+   "NOT-RETRIEVABLE->RETRIEVABLE": {
+    "raw": {
+     "n": 9,
+     "confirmed": 9,
+     "refuted": 0
+    },
+    "genuine": {
+     "n": 7,
+     "confirmed": 7,
+     "refuted": 0
+    },
+    "artefact_echoes_excluded_from_genuine": 2
+   },
+   "RETRIEVABLE->NOT-RETRIEVABLE": {
+    "raw": {
+     "n": 15,
+     "confirmed": 10,
+     "refuted": 5
+    },
+    "genuine": {
+     "n": 15,
+     "confirmed": 10,
+     "refuted": 5
+    },
+    "artefact_echoes_excluded_from_genuine": 0
+   }
+  },
+  "other_arms": {
+   "NOT-RETRIEVABLE->RETRIEVABLE": {
+    "raw": {
+     "n": 3,
+     "confirmed": 3,
+     "refuted": 0
+    },
+    "genuine": {
+     "n": 3,
+     "confirmed": 3,
+     "refuted": 0
+    },
+    "artefact_echoes_excluded_from_genuine": 0
+   },
+   "RETRIEVABLE->NOT-RETRIEVABLE": {
+    "raw": {
+     "n": 1,
+     "confirmed": 0,
+     "refuted": 1
+    },
+    "genuine": {
+     "n": 1,
+     "confirmed": 0,
+     "refuted": 1
+    },
+    "artefact_echoes_excluded_from_genuine": 0
+   }
+  }
+ }
+}

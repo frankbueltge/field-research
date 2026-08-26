@@ -26,8 +26,14 @@ see is **conjecture, marked as such wherever it appears.**
 
 **What is not conjecture is that this practice already runs the instrument that can see it**, and
 has run it for thirteen measurement days. `POST-MORTEM.md` §6 named the instrument as the thing that
-survives the stopped arc: *"The stop is on building things to send, not on measuring… the tooling is
-real and portable."*
+survives the stopped arc, in two separate bullets, quoted here separately rather than spliced: *"The
+stop is on building things to send, not on measuring."* And: *"The tooling is real and portable: a
+credential-free probe with a 128-assertion offline suite, a confirmation step whose refutations are
+published against the practice's own interest, a ledger that refuses to call a partial a run…"*
+**The first version of this paragraph joined the two across a bullet boundary with one ellipsis and
+silently lowercased a capital** — signalled compression rather than misquotation, but this practice's
+previous session broke its own quoting rule at exactly the sentences where its interest lived
+(`ERRATA-135.md` E53), so it is split rather than defended.
 
 **Computed today, offline, from run files already committed** (`edition-breakdown-day13.json`,
 `series-stability-136.json`):
@@ -41,8 +47,8 @@ real and portable."*
 | **encyclopedia pages carrying at least one such citation** | **467 of the 3,249 pages that cite any of these videos — 14.37 %** |
 | article space only | **260 of 2,376 — 10.94 %, [9.50, 12.51]** corrected, on **296** of **2,174** pages (13.62 %) |
 | absent share across the **12** measurement days on one fixed corpus | **11.83 % – 12.14 %** — a range of **0.31 pp** |
-| raw apparent day-to-day changes across those 12 intervals | **1, 1, 4, 2, 0, 4, 1, 4, 2, 0, 3, 2 — 24 in total**, out of ~3,134 determinate readings a day |
-| apparent disappearances **refuted by the instrument's own five-fold re-request**, whole series | **6 of 16 RAW readings, and 6 of 16 GENUINE transitions — the two counts coincide in this direction** (`../2026-08-11-the-arm-that-was-missing/confirmation-record-121.json`; they do NOT coincide in the other direction, where raw is 12 of 12 confirmed and genuine is 10 of 10) |
+| raw apparent day-to-day changes, **the 11 intervals inside the fixed corpus** | **1, 4, 2, 0, 4, 1, 4, 2, 0, 3, 2 — 23 in total**, against **3,096–3,120** identifiers determinate in both days of an interval |
+| apparent disappearances **refuted by the instrument's own five-fold re-request**, whole series, **encyclopedia arms only** | **5 refuted of 15 RAW readings — 10 confirmed; identical for GENUINE transitions, there being no artefact echo in this direction** (`confirmation-by-arm-136.json`). Returns: **raw 9 of 9 confirmed, genuine 7 of 7.** |
 
 **Every interval above and in `edition-breakdown-day13.json` carries the correction
 `memory/downstream-commitments.md` condition 7 binds this practice to** — losses in this corpus clump
@@ -57,7 +63,9 @@ effect does not fit every cell — applying the pooled figure per edition is thi
 conservative in aggregate and unvalidated cell by cell, and it is recorded as such in the artifact.
 
 **The claim of this concept, in one sentence:** *the absence of platform-video sources from an
-encyclopedia's citations is a large and remarkably stable **stock** — about one citation in eight,
+encyclopedia's citations is a large and remarkably stable **stock** — about one in eight, whether
+counted by identifier (**11.93 %**) or by citation row (**568 of 4,457 = 12.74 %**), and the two are
+different units,
 unmoved to within a third of a percentage point over twelve nights — while the day-to-day **flow** a
 single-pass instrument would report is small and, by this instrument's own confirmation step,
 substantially its own noise.*
@@ -68,10 +76,18 @@ substantially its own noise.*
    opaque refusal — an identifier that never existed returns the same HTTP 400, and no 404 is ever
    returned (session 109's three-arm control). It means *not publicly retrievable from this vantage
    right now* and nothing else, and the whole arc has held that line.
-2. **It is not a rate, a trend, or a test.** Twenty-four raw apparent changes over twelve unequal
-   intervals, six of sixteen confirmed disappearances refuted across the series — this practice has
-   published against itself that six events is not a rate and eleven are not either
-   (`CONDITIONS-132.md` item 5). **No trend is claimed here and no test is scored.** And
+2. **It is not a rate, a trend, or a test.** Twenty-three raw apparent changes over eleven unequal
+   intervals; and of the fifteen apparent disappearances the instrument has ever read on these arms,
+   **ten were confirmed and five refuted** on five immediate re-requests each. This practice has
+   published against itself that **six events is not a rate**
+   (`memory/downstream-commitments.md` condition 8) and that eleven are not either
+   (`DAY13-2026-08-25.md`). **No trend is claimed here and no test is scored.**
+   **Two corrections of this session's own, both from `VERIFIER-136.md`:** the first version of this
+   sentence said *"six of sixteen **confirmed** disappearances refuted"*, which describes no set that
+   exists — sixteen were apparent readings, ten of them confirmed — **and it contradicted the table
+   three lines above it**; and it cited `CONDITIONS-132.md` item 5 for the six-and-eleven sentence,
+   **which that item does not contain**. Both repaired above, with the pointers now at paragraphs
+   that carry the words. And
    `memory/downstream-commitments.md` condition 8 binds every confirmation count this practice
    publishes to travel with the word **raw** or **genuine** or not to travel at all: the table above
    was written without either word and is corrected in place. The two counts coincide for
@@ -119,9 +135,13 @@ make, never an accolade he confers.
 - **Repetition.** Thirteen measurement days, each a full sweep of the same fixed list at a fixed
   second from a logged autonomous system, at one request per second.
 - **Verification.** Every apparent change re-requested five times before it is believed, and **the
-  refutations published against this practice's own interest** — 6 of 16 apparent disappearances
-  refuted. That is the limb that makes the stability claim mean anything: without it, this concept
-  would be reporting 24 changes it cannot tell from noise.
+  refutations published against this practice's own interest** — on these arms, **5 of 15 apparent
+  disappearances refuted**, raw and genuine alike (`confirmation-by-arm-136.json`). That is the limb
+  that makes the stability claim mean anything: without it, this concept would be reporting 23
+  changes it cannot tell from noise. **The figure first published here was 6 of 16, which is the
+  count over ALL arms including a public forum's identifiers that this concept excludes everywhere
+  else** — a population mismatch inside one table, found by `VERIFIER-136.md` and recomputed by this
+  practice rather than adopted from it.
 - **The temporal.** The stock-versus-flow distinction **is** the finding, and it does not exist on
   any single day. It required twelve nights to say that the number does not move.
 
