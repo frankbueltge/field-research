@@ -307,14 +307,17 @@ same page since **2026-01-14 21:53:41** by its own footer, with all eleven track
 state its own caveat attributes to itself. **This practice has been fetching that page since
 2026-08-11 and has never addressed it**, and will not address it now: the stopped arc's receiver and
 this one are the same organisation, and `PREREGISTRATION-136.md` K-D forbids reaching back into that
-object. It is named here for completeness and is not the receiver of this arc.
+object. **It is not a receiver of this arc and it is not "standing behind" one either — that phrase is withdrawn** (`INTERLOCUTOR-136.md` charge 16: *"It is either a receiver of this arc or it is not… the kind of both-ways sentence nine gauntlets failed on"*). **It is named because its dashboard's state is a fact about the field this concept sits in, and for no other reason.**
 
 **The scale of the class, measured live by the fan-out** through the encyclopedia's own search API on
 2026-08-26, and reproducible from the query it prints: `youtube.com/watch` appears in **243,968**
 English articles, `youtube.com/shorts` in **1,302**, `instagram.com/reel` in **2,300**, and
 `tiktok.com` in roughly **1,500** (a capped estimate, and the fan-out says so). **This corpus is one
-platform and the smallest of them.** Whatever holds here is a statement about 1,500 articles and a
-hypothesis about a quarter of a million.
+platform and the smallest of them.** **And it does not cover even that.** This corpus reaches **764**
+English article-space pages against the fan-out's live estimate of roughly 1,500 English articles
+carrying such a citation — **about half** (`INTERLOCUTOR-136.md` charge 15; the first version of this
+paragraph claimed the corpus spoke for the 1,500). **Whatever holds here is a statement about roughly
+half the English articles in the smallest class, and a hypothesis about a quarter of a million.**
 
 **And the ground the question sits on.** The European Commission preliminarily found TikTok and Meta
 in breach of their obligation to grant researchers access to **public** data under the Digital
@@ -359,7 +362,31 @@ exists to prevent.** So it is not amended. The gate fails, the arc is not licens
    own gate recorded that its construction departed from what had been pre-registered
    (`../2026-08-11-the-arm-that-was-missing/CONCEPT.md` §1, the self-serving-reading finding). **No
    figure here generalises to "TikTok citations" or to "Wikipedia".** It generalises to this list.
-5. **The record ceiling is already breached.** **And this session typed a figure for it and the figure
+5. **A PUBLISHED NEIGHBOUR ALREADY HANDLES THE CLASS §4b CONJECTURES IS INVISIBLE, AND THIS
+   DOCUMENT QUOTED ONLY THE HALF OF IT THAT HELPED.** `INTERLOCUTOR-136.md` charge 9. The IMC '22
+   study of Wikipedia's permanently-dead links classifies links **with soft-404 detection** — a page
+   returning a success status while the content is gone is exactly §4b's conjectured blind spot, and
+   an academic instrument on this very corpus already handles it. K-A cites that paper **twice**, for
+   the sentence that helps this concept (*"determines whether the link is dead by attempting to fetch
+   the link only once"*), and never for this one. **It does not settle §4b** — a research prototype
+   is not the production repair regime — **but it cuts against it and was omitted.**
+6. **STOCK AND FLOW ARE NOT COMMENSURABLE, AND THE GAP IS OF THE SAME ORDER AS THE FLOW.**
+   `INTERLOCUTOR-136.md` charge 10. The stock is computed over all determinate identifiers on each
+   day; the flow only over identifiers determinate on **both** days. They do not reconcile: across
+   2026-08-23 → 2026-08-25 the absent count fell by **6** while the flow reported **2** changes, both
+   the other way. The residual is identifiers crossing into and out of INDETERMINATE — **46 to 70 per
+   interval** — and `memory/downstream-commitments.md` condition 32(c) says INDETERMINATE is a
+   property of the request, not of the identifier. **So the stock's own night-to-night wobble is
+   partly instrument too, the flow does not capture it, and this concept's headline contrast is drawn
+   between two quantities that never had to agree.** It said none of this until its adversary did.
+7. **A FAR CLOSER NUMERICAL COINCIDENCE THAN THE ONE DEFUSED AT LENGTH.** `INTERLOCUTOR-136.md`
+   charge 18. This concept spends nine lines defusing *"our 11.93 % beside Pew's 11 %"*, and its own
+   headline phrase is **"about one in eight"** — while the stopped arc's receiver's published headline
+   finding, quoted in `FANOUT-136-2-receiver.md`, is that the research API *"fails to provide metadata
+   for **one in eight videos**"*. **Different platforms of measurement, different populations, no
+   relation whatever — and a hostile reader finds the pair in thirty seconds.** Stated here because
+   the weaker coincidence was defused and the stronger one was not.
+8. **The record ceiling is already breached.** **And this session typed a figure for it and the figure
    went stale inside the same document** — which is the exact defect
    `tools/record_ceiling_check.py` was written to prevent, committed in the paragraph reporting on
    that script. **No count is printed here.** The command is:
@@ -372,8 +399,10 @@ exists to prevent.** So it is not amended. The gate fails, the arc is not licens
    Whoever runs it gets the count for the state they run it on, which is the only count that can be
    true. **What is stable and is stated: this directory is OVER rule 6's 3,000-word ceiling on its
    counted record, with both fan-out reports already claimed exempt.** This session claims that
-   exemption for a convened voice's report published unedited — the same category sessions 89, 90,
-   133, 134 and 135 read out of the journal ceiling — and states that it is **a claim, not a settled
+   exemption for a convened voice's report published unedited — an ANALOGOUS category to the one sessions 89,
+   90, 133, 134 and 135 read out of the **journal** ceiling — **a different rule with a different
+   ceiling, and the word "same" (used in the first version of this paragraph) did work the precedent
+   does not support** (`INTERLOCUTOR-136.md` charge 20) — and states that it is **a claim, not a settled
    rule**; the script itself says the exempt total "is the number the collective must argue about;
    this script does not decide it." **Being over is recorded as a breach, not as a footnote**, and
    **it is handed on in `CONDITIONS-136.md`, which did not exist when this sentence first claimed it did** — `INTERLOCUTOR-136.md` charge 13, and it is `CONDITIONS-135.md` disposition 5's blocking finding recommitted one session later, in the section headed *what this concept does not have, listed so nobody has to find it*.
