@@ -308,6 +308,14 @@
    "new_identifiers": 26
   }
  ],
+ "interval_correction": {
+  "design_effect": 1.4289,
+  "half_width_inflation": 1.1953660527219268,
+  "why": "memory/downstream-commitments.md condition 7 (session 115): losses in this corpus clump by cited account, so a Wilson interval computed with the video as the independent unit is too narrow by at least this factor",
+  "it_is_a_lower_bound": "the citing-page key gives 1.8854 on the same units; the account key governs but the correction may be larger",
+  "one_deff_does_not_fit_every_cell": "seventeen eligible cells run 0.9865-1.7052 - the pooled correction is conservative for most and NOT conservative for the two oldest",
+  "per_edition_caveat": "the design effect was computed on the whole corpus, not per edition; applying it per edition is this session's choice and is conservative in aggregate but unvalidated cell by cell"
+ },
  "arms_included": [
   "A",
   "A-new",
@@ -330,7 +338,11 @@
    "INDETERMINATE": 32,
    "determinate": 3134,
    "absent_share": 0.11933631142310147,
-   "wilson95": [
+   "wilson95_deff_corrected": [
+    0.1062319823633173,
+    0.1333726849493714
+   ],
+   "wilson95_uncorrected_do_not_publish_alone": [
     0.10844986864186074,
     0.13115479867082797
    ]
@@ -355,7 +367,11 @@
     "INDETERMINATE": 13,
     "determinate": 1330,
     "absent_share": 0.12857142857142856,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.10813048206105819,
+     0.15115180110209014
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.11164610192695557,
      0.14763618123619277
     ],
@@ -372,7 +388,11 @@
     "INDETERMINATE": 7,
     "determinate": 570,
     "absent_share": 0.1,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.07316267919536788,
+     0.13219274957213697
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.07798650358587433,
      0.1273689251816305
     ],
@@ -389,7 +409,11 @@
     "INDETERMINATE": 0,
     "determinate": 318,
     "absent_share": 0.16981132075471697,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.12449234747156546,
+     0.2230124744072211
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.13254322371539656,
      0.21496159816339
     ],
@@ -406,7 +430,11 @@
     "INDETERMINATE": 1,
     "determinate": 194,
     "absent_share": 0.06701030927835051,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.03257373005731752,
+     0.11826148415195377
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.03957596934877014,
      0.11125924486050115
     ],
@@ -423,7 +451,11 @@
     "INDETERMINATE": 0,
     "determinate": 183,
     "absent_share": 0.07103825136612021,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.03458229208489069,
+     0.12513311052996492
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.041981931689040165,
      0.11773347092581546
     ],
@@ -440,7 +472,11 @@
     "INDETERMINATE": 3,
     "determinate": 169,
     "absent_share": 0.13609467455621302,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.08231721305070791,
+     0.20604796947416135
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.09242825369290503,
      0.19593692883196423
     ],
@@ -457,7 +493,11 @@
     "INDETERMINATE": 1,
     "determinate": 91,
     "absent_share": 0.12087912087912088,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0556913300640475,
+     0.2167787388490595
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.06885508485107264,
      0.20361498406203435
     ],
@@ -474,7 +514,11 @@
     "INDETERMINATE": 0,
     "determinate": 78,
     "absent_share": 0.19230769230769232,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.10323374773675363,
+     0.310266442855366
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.12015206340148435,
      0.2933481271906353
     ],
@@ -491,7 +535,11 @@
     "INDETERMINATE": 2,
     "determinate": 60,
     "absent_share": 0.2,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.09879406545854716,
+     0.33730904582670673
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.11828505322897494,
      0.317818058056279
     ],
@@ -508,7 +556,11 @@
     "INDETERMINATE": 0,
     "determinate": 54,
     "absent_share": 0.16666666666666666,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.07098851852726995,
+     0.3066205401999943
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.09024391642997268,
      0.2873651422972916
     ],
@@ -525,7 +577,11 @@
     "INDETERMINATE": 1,
     "determinate": 46,
     "absent_share": 0.15217391304347827,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.05554946304397357,
+     0.30241475475469104
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.07572282227805464,
      0.28224139552060995
     ],
@@ -542,7 +598,11 @@
     "INDETERMINATE": 1,
     "determinate": 42,
     "absent_share": 0.21428571428571427,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0933854497642348,
+     0.38307100215902457
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.11705799876003031,
      0.35939845316322905
     ],
@@ -559,7 +619,11 @@
     "INDETERMINATE": 0,
     "determinate": 43,
     "absent_share": 0.06976744186046512,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.008179292734605742,
+     0.2019221658550285
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.024011589577214484,
      0.18608986901241975
     ],
@@ -576,7 +640,11 @@
     "INDETERMINATE": 2,
     "determinate": 40,
     "absent_share": 0.15,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0491107327578478,
+     0.3122243880802529
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.07061187717320358,
      0.2907232436648971
     ],
@@ -593,7 +661,11 @@
     "INDETERMINATE": 1,
     "determinate": 31,
     "absent_share": 0.16129032258064516,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.045976310058051556,
+     0.35129347396353405
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.070926244433653,
      0.3263435395879326
     ],
@@ -610,7 +682,11 @@
     "INDETERMINATE": 0,
     "determinate": 30,
     "absent_share": 0.06666666666666667,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.2322590914775185
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.018477023791270378,
      0.2132345836261692
     ],
@@ -627,7 +703,11 @@
     "INDETERMINATE": 0,
     "determinate": 30,
     "absent_share": 0.13333333333333333,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.02928956883961581,
+     0.32062025282129464
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.053096554840547455,
      0.296813266820363
     ],
@@ -644,7 +724,11 @@
     "INDETERMINATE": 2,
     "determinate": 26,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.14130355252660742
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.1287289218592153
     ],
@@ -661,7 +745,11 @@
     "INDETERMINATE": 0,
     "determinate": 24,
     "absent_share": 0.08333333333333333,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0001711462018058052,
+     0.2814756910273443
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.023158815297043306,
      0.25848802193210685
     ],
@@ -678,7 +766,11 @@
     "INDETERMINATE": 1,
     "determinate": 22,
     "absent_share": 0.18181818181818182,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.04258224403185276,
+     0.4156526761736332
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.07306884583422052,
      0.38516607437126543
     ],
@@ -695,7 +787,11 @@
     "INDETERMINATE": 0,
     "determinate": 19,
     "absent_share": 0.21052631578947367,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.051057087701595366,
+     0.46736246306570883
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.08507676632916253,
      0.43334278443814167
     ],
@@ -712,7 +808,11 @@
     "INDETERMINATE": 0,
     "determinate": 15,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.22379923890549364
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.20388330103584862
     ],
@@ -729,7 +829,11 @@
     "INDETERMINATE": 0,
     "determinate": 15,
     "absent_share": 0.13333333333333333,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.004006552684755804,
+     0.4121745347415332
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.03736125910306537,
      0.37881982832322364
     ],
@@ -746,7 +850,11 @@
     "INDETERMINATE": 0,
     "determinate": 13,
     "absent_share": 0.07692307692307693,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.36434230923147537
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.013710421242556586,
      0.3331395092109959
     ],
@@ -763,7 +871,11 @@
     "INDETERMINATE": 0,
     "determinate": 12,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.26618155509972036
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      2.7755575615628914e-17,
      0.24249400665524085
     ],
@@ -780,7 +892,11 @@
     "INDETERMINATE": 0,
     "determinate": 11,
     "absent_share": 0.09090909090909091,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.41263434277512123
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.016232172885884855,
      0.37735843645159567
     ],
@@ -797,7 +913,11 @@
     "INDETERMINATE": 0,
     "determinate": 11,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.2841165545034563
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.2588329669680317
     ],
@@ -814,7 +934,11 @@
     "INDETERMINATE": 0,
     "determinate": 10,
     "absent_share": 0.2,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.012416562816394416,
+     0.5541031171013391
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.05668215145437519,
      0.5098375284633583
     ],
@@ -831,7 +955,11 @@
     "INDETERMINATE": 1,
     "determinate": 9,
     "absent_share": 0.1111111111111111,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.4755487911819729
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.019890887638544907,
      0.434999705576656
     ],
@@ -848,7 +976,11 @@
     "INDETERMINATE": 0,
     "determinate": 10,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.30464304366792777
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.2775327998628892
     ],
@@ -865,7 +997,11 @@
     "INDETERMINATE": 0,
     "determinate": 8,
     "absent_share": 0.25,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.020757754862553657,
+     0.6414460275793865
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.071479212752109,
      0.5907245696898311
     ],
@@ -882,7 +1018,11 @@
     "INDETERMINATE": 0,
     "determinate": 8,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.35609667759612823
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.32440756488388023
     ],
@@ -899,7 +1039,11 @@
     "INDETERMINATE": 0,
     "determinate": 6,
     "absent_share": 0.16666666666666666,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.6156117791112288
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.030053369748306635,
      0.5635028221864702
     ],
@@ -916,7 +1060,11 @@
     "INDETERMINATE": 0,
     "determinate": 5,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.47692402684396595
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.43448246478317476
     ],
@@ -933,7 +1081,11 @@
     "INDETERMINATE": 0,
     "determinate": 5,
     "absent_share": 0.2,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.6819265569014465
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.03622410863243014,
      0.6244653702374747
     ],
@@ -950,7 +1102,11 @@
     "INDETERMINATE": 0,
     "determinate": 5,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.47692402684396595
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.43448246478317476
     ],
@@ -967,7 +1123,11 @@
     "INDETERMINATE": 0,
     "determinate": 5,
     "absent_share": 0.2,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.6819265569014465
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.03622410863243014,
      0.6244653702374747
     ],
@@ -984,7 +1144,11 @@
     "INDETERMINATE": 0,
     "determinate": 4,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.5377448559459861
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.4898908364545973
     ],
@@ -1001,7 +1165,11 @@
     "INDETERMINATE": 0,
     "determinate": 4,
     "absent_share": 0.25,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.763220477144978
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.04558726080970055,
      0.6993581574175981
     ],
@@ -1018,7 +1186,11 @@
     "INDETERMINATE": 0,
     "determinate": 4,
     "absent_share": 0.5,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.08166848785622954,
+     0.9183315121437705
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.15003898915214947,
      0.8499610108478506
     ],
@@ -1035,7 +1207,11 @@
     "INDETERMINATE": 0,
     "determinate": 3,
     "absent_share": 0.3333333333333333,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8637318880425526
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.06149194472039621,
      0.7923403991979522
     ],
@@ -1052,7 +1228,11 @@
     "INDETERMINATE": 0,
     "determinate": 3,
     "absent_share": 0.3333333333333333,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8637318880425526
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.06149194472039621,
      0.7923403991979522
     ],
@@ -1069,7 +1249,11 @@
     "INDETERMINATE": 0,
     "determinate": 3,
     "absent_share": 0.3333333333333333,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8637318880425526
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.06149194472039621,
      0.7923403991979522
     ],
@@ -1086,7 +1270,11 @@
     "INDETERMINATE": 0,
     "determinate": 3,
     "absent_share": 0.6666666666666666,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.13626811195744726,
+     1.0
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.2076596008020477,
      0.9385080552796037
     ],
@@ -1103,7 +1291,11 @@
     "INDETERMINATE": 0,
     "determinate": 3,
     "absent_share": 0.3333333333333333,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8637318880425526
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.06149194472039621,
      0.7923403991979522
     ],
@@ -1120,7 +1312,11 @@
     "INDETERMINATE": 0,
     "determinate": 2,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.7218580620653052
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.6576197724933469
     ],
@@ -1137,7 +1333,11 @@
     "INDETERMINATE": 0,
     "determinate": 2,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.7218580620653052
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.6576197724933469
     ],
@@ -1154,7 +1354,11 @@
     "INDETERMINATE": 0,
     "determinate": 2,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.7218580620653052
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.6576197724933469
     ],
@@ -1171,7 +1375,11 @@
     "INDETERMINATE": 0,
     "determinate": 2,
     "absent_share": 0.5,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.015316367896608396,
+     0.9846836321033916
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.09453120573423074,
      0.9054687942657693
     ],
@@ -1188,7 +1396,11 @@
     "INDETERMINATE": 0,
     "determinate": 2,
     "absent_share": 0.5,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.015316367896608396,
+     0.9846836321033916
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.09453120573423074,
      0.9054687942657693
     ],
@@ -1205,7 +1417,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.7934506856227626
     ],
@@ -1222,7 +1438,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.7934506856227626
     ],
@@ -1239,7 +1459,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.7934506856227626
     ],
@@ -1256,7 +1480,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.7934506856227626
     ],
@@ -1273,7 +1501,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.7934506856227626
     ],
@@ -1290,7 +1522,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 1.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.12904265013742466,
+     1.0
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.20654931437723745,
      1.0
     ],
@@ -1307,7 +1543,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.7934506856227626
     ],
@@ -1324,7 +1564,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.7934506856227626
     ],
@@ -1341,7 +1585,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.7934506856227626
     ],
@@ -1358,7 +1606,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 1.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.12904265013742466,
+     1.0
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.20654931437723745,
      1.0
     ],
@@ -1375,7 +1627,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 1.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.12904265013742466,
+     1.0
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.20654931437723745,
      1.0
     ],
@@ -1394,7 +1650,11 @@
    "INDETERMINATE": 24,
    "determinate": 2376,
    "absent_share": 0.10942760942760943,
-   "wilson95": [
+   "wilson95_deff_corrected": [
+    0.09504666344625366,
+    0.12506945264169717
+   ],
+   "wilson95_uncorrected_do_not_publish_alone": [
     0.0975000683273193,
     0.12261604776063151
    ]
@@ -1419,7 +1679,11 @@
     "INDETERMINATE": 9,
     "determinate": 844,
     "absent_share": 0.1066350710900474,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.08349159712092839,
+     0.13334311520419023
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.08756536778220224,
      0.1292693445429164
     ],
@@ -1436,7 +1700,11 @@
     "INDETERMINATE": 6,
     "determinate": 532,
     "absent_share": 0.09586466165413533,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.06876403117524549,
+     0.12875980181377916
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.07366677074316721,
      0.12385706224585744
     ],
@@ -1453,7 +1721,11 @@
     "INDETERMINATE": 0,
     "determinate": 268,
     "absent_share": 0.1828358208955224,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.13213126421657284,
+     0.24250422833303298
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.1411507316330814,
      0.23348476091652443
     ],
@@ -1470,7 +1742,11 @@
     "INDETERMINATE": 0,
     "determinate": 147,
     "absent_share": 0.06802721088435375,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.029228494627767228,
+     0.12882791113157094
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.037367568349765325,
      0.12068883740957284
     ],
@@ -1487,7 +1763,11 @@
     "INDETERMINATE": 2,
     "determinate": 118,
     "absent_share": 0.11016949152542373,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.05439931568227821,
+     0.1905210842335648
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.06552292612396562,
      0.1793974737918774
     ],
@@ -1504,7 +1784,11 @@
     "INDETERMINATE": 0,
     "determinate": 107,
     "absent_share": 0.04672897196261682,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.011855657375312016,
+     0.11302053036131063
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.02012265720535792,
      0.10475353053126471
     ],
@@ -1521,7 +1805,11 @@
     "INDETERMINATE": 1,
     "determinate": 87,
     "absent_share": 0.12643678160919541,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.058385711827580664,
+     0.2260819657743483
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.07208952879445547,
      0.21237814880747352
     ],
@@ -1538,7 +1826,11 @@
     "INDETERMINATE": 0,
     "determinate": 65,
     "absent_share": 0.2,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.10203209661346006,
+     0.33144882218025407
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.12077959241205476,
      0.3127013263816594
     ],
@@ -1555,7 +1847,11 @@
     "INDETERMINATE": 1,
     "determinate": 49,
     "absent_share": 0.20408163265306123,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.09317667375971872,
+     0.35801183149322807
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.11481849605782132,
      0.3363700091951255
     ],
@@ -1572,7 +1868,11 @@
     "INDETERMINATE": 0,
     "determinate": 49,
     "absent_share": 0.16326530612244897,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0650788709741352,
+     0.3104114970723215
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.08512698370728837,
      0.2903633843391683
     ],
@@ -1589,7 +1889,11 @@
     "INDETERMINATE": 1,
     "determinate": 46,
     "absent_share": 0.15217391304347827,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.05554946304397357,
+     0.30241475475469104
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.07572282227805464,
      0.28224139552060995
     ],
@@ -1606,7 +1910,11 @@
     "INDETERMINATE": 1,
     "determinate": 42,
     "absent_share": 0.21428571428571427,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0933854497642348,
+     0.38307100215902457
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.11705799876003031,
      0.35939845316322905
     ],
@@ -1623,7 +1931,11 @@
     "INDETERMINATE": 0,
     "determinate": 43,
     "absent_share": 0.06976744186046512,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.008179292734605742,
+     0.2019221658550285
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.024011589577214484,
      0.18608986901241975
     ],
@@ -1640,7 +1952,11 @@
     "INDETERMINATE": 2,
     "determinate": 40,
     "absent_share": 0.15,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0491107327578478,
+     0.3122243880802529
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.07061187717320358,
      0.2907232436648971
     ],
@@ -1657,7 +1973,11 @@
     "INDETERMINATE": 1,
     "determinate": 31,
     "absent_share": 0.16129032258064516,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.045976310058051556,
+     0.35129347396353405
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.070926244433653,
      0.3263435395879326
     ],
@@ -1674,7 +1994,11 @@
     "INDETERMINATE": 0,
     "determinate": 30,
     "absent_share": 0.06666666666666667,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.2322590914775185
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.018477023791270378,
      0.2132345836261692
     ],
@@ -1691,7 +2015,11 @@
     "INDETERMINATE": 0,
     "determinate": 30,
     "absent_share": 0.13333333333333333,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.02928956883961581,
+     0.32062025282129464
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.053096554840547455,
      0.296813266820363
     ],
@@ -1708,7 +2036,11 @@
     "INDETERMINATE": 2,
     "determinate": 26,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.14130355252660742
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.1287289218592153
     ],
@@ -1725,7 +2057,11 @@
     "INDETERMINATE": 0,
     "determinate": 24,
     "absent_share": 0.08333333333333333,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0001711462018058052,
+     0.2814756910273443
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.023158815297043306,
      0.25848802193210685
     ],
@@ -1742,7 +2078,11 @@
     "INDETERMINATE": 1,
     "determinate": 22,
     "absent_share": 0.18181818181818182,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.04258224403185276,
+     0.4156526761736332
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.07306884583422052,
      0.38516607437126543
     ],
@@ -1759,7 +2099,11 @@
     "INDETERMINATE": 0,
     "determinate": 19,
     "absent_share": 0.21052631578947367,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.051057087701595366,
+     0.46736246306570883
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.08507676632916253,
      0.43334278443814167
     ],
@@ -1776,7 +2120,11 @@
     "INDETERMINATE": 0,
     "determinate": 15,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.22379923890549364
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.20388330103584862
     ],
@@ -1793,7 +2141,11 @@
     "INDETERMINATE": 0,
     "determinate": 15,
     "absent_share": 0.13333333333333333,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.004006552684755804,
+     0.4121745347415332
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.03736125910306537,
      0.37881982832322364
     ],
@@ -1810,7 +2162,11 @@
     "INDETERMINATE": 0,
     "determinate": 13,
     "absent_share": 0.07692307692307693,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.36434230923147537
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.013710421242556586,
      0.3331395092109959
     ],
@@ -1827,7 +2183,11 @@
     "INDETERMINATE": 0,
     "determinate": 12,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.26618155509972036
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      2.7755575615628914e-17,
      0.24249400665524085
     ],
@@ -1844,7 +2204,11 @@
     "INDETERMINATE": 0,
     "determinate": 11,
     "absent_share": 0.09090909090909091,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.41263434277512123
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.016232172885884855,
      0.37735843645159567
     ],
@@ -1861,7 +2225,11 @@
     "INDETERMINATE": 0,
     "determinate": 11,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.2841165545034563
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.2588329669680317
     ],
@@ -1878,7 +2246,11 @@
     "INDETERMINATE": 0,
     "determinate": 10,
     "absent_share": 0.2,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.012416562816394416,
+     0.5541031171013391
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.05668215145437519,
      0.5098375284633583
     ],
@@ -1895,7 +2267,11 @@
     "INDETERMINATE": 1,
     "determinate": 9,
     "absent_share": 0.1111111111111111,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.4755487911819729
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.019890887638544907,
      0.434999705576656
     ],
@@ -1912,7 +2288,11 @@
     "INDETERMINATE": 0,
     "determinate": 10,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.30464304366792777
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.2775327998628892
     ],
@@ -1929,7 +2309,11 @@
     "INDETERMINATE": 0,
     "determinate": 8,
     "absent_share": 0.25,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.020757754862553657,
+     0.6414460275793865
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.071479212752109,
      0.5907245696898311
     ],
@@ -1946,7 +2330,11 @@
     "INDETERMINATE": 0,
     "determinate": 8,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.35609667759612823
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.32440756488388023
     ],
@@ -1963,7 +2351,11 @@
     "INDETERMINATE": 0,
     "determinate": 6,
     "absent_share": 0.16666666666666666,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.6156117791112288
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.030053369748306635,
      0.5635028221864702
     ],
@@ -1980,7 +2372,11 @@
     "INDETERMINATE": 0,
     "determinate": 5,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.47692402684396595
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.43448246478317476
     ],
@@ -1997,7 +2393,11 @@
     "INDETERMINATE": 0,
     "determinate": 5,
     "absent_share": 0.2,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.6819265569014465
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.03622410863243014,
      0.6244653702374747
     ],
@@ -2014,7 +2414,11 @@
     "INDETERMINATE": 0,
     "determinate": 5,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.47692402684396595
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.43448246478317476
     ],
@@ -2031,7 +2435,11 @@
     "INDETERMINATE": 0,
     "determinate": 5,
     "absent_share": 0.2,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.6819265569014465
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.03622410863243014,
      0.6244653702374747
     ],
@@ -2048,7 +2456,11 @@
     "INDETERMINATE": 0,
     "determinate": 4,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.5377448559459861
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.4898908364545973
     ],
@@ -2065,7 +2477,11 @@
     "INDETERMINATE": 0,
     "determinate": 4,
     "absent_share": 0.25,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.763220477144978
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.04558726080970055,
      0.6993581574175981
     ],
@@ -2082,7 +2498,11 @@
     "INDETERMINATE": 0,
     "determinate": 4,
     "absent_share": 0.5,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.08166848785622954,
+     0.9183315121437705
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.15003898915214947,
      0.8499610108478506
     ],
@@ -2099,7 +2519,11 @@
     "INDETERMINATE": 0,
     "determinate": 3,
     "absent_share": 0.3333333333333333,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8637318880425526
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.06149194472039621,
      0.7923403991979522
     ],
@@ -2116,7 +2540,11 @@
     "INDETERMINATE": 0,
     "determinate": 3,
     "absent_share": 0.3333333333333333,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8637318880425526
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.06149194472039621,
      0.7923403991979522
     ],
@@ -2133,7 +2561,11 @@
     "INDETERMINATE": 0,
     "determinate": 3,
     "absent_share": 0.3333333333333333,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8637318880425526
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.06149194472039621,
      0.7923403991979522
     ],
@@ -2150,7 +2582,11 @@
     "INDETERMINATE": 0,
     "determinate": 3,
     "absent_share": 0.6666666666666666,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.13626811195744726,
+     1.0
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.2076596008020477,
      0.9385080552796037
     ],
@@ -2167,7 +2603,11 @@
     "INDETERMINATE": 0,
     "determinate": 3,
     "absent_share": 0.3333333333333333,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8637318880425526
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.06149194472039621,
      0.7923403991979522
     ],
@@ -2184,7 +2624,11 @@
     "INDETERMINATE": 0,
     "determinate": 2,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.7218580620653052
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.6576197724933469
     ],
@@ -2201,7 +2645,11 @@
     "INDETERMINATE": 0,
     "determinate": 2,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.7218580620653052
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.6576197724933469
     ],
@@ -2218,7 +2666,11 @@
     "INDETERMINATE": 0,
     "determinate": 2,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.7218580620653052
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.6576197724933469
     ],
@@ -2235,7 +2687,11 @@
     "INDETERMINATE": 0,
     "determinate": 2,
     "absent_share": 0.5,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.015316367896608396,
+     0.9846836321033916
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.09453120573423074,
      0.9054687942657693
     ],
@@ -2252,7 +2708,11 @@
     "INDETERMINATE": 0,
     "determinate": 2,
     "absent_share": 0.5,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.015316367896608396,
+     0.9846836321033916
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.09453120573423074,
      0.9054687942657693
     ],
@@ -2269,7 +2729,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.7934506856227626
     ],
@@ -2286,7 +2750,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.7934506856227626
     ],
@@ -2303,7 +2771,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.7934506856227626
     ],
@@ -2320,7 +2792,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.7934506856227626
     ],
@@ -2337,7 +2813,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.7934506856227626
     ],
@@ -2354,7 +2834,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 1.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.12904265013742466,
+     1.0
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.20654931437723745,
      1.0
     ],
@@ -2371,7 +2855,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.7934506856227626
     ],
@@ -2388,7 +2876,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.7934506856227626
     ],
@@ -2405,7 +2897,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 0.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.0,
+     0.8709573498625753
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.0,
      0.7934506856227626
     ],
@@ -2422,7 +2918,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 1.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.12904265013742466,
+     1.0
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.20654931437723745,
      1.0
     ],
@@ -2439,7 +2939,11 @@
     "INDETERMINATE": 0,
     "determinate": 1,
     "absent_share": 1.0,
-    "wilson95": [
+    "wilson95_deff_corrected": [
+     0.12904265013742466,
+     1.0
+    ],
+    "wilson95_uncorrected_do_not_publish_alone": [
      0.20654931437723745,
      1.0
     ],
