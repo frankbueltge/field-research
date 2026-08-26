@@ -38,6 +38,23 @@ import run_lock
 
 REQUIRED_RUNS = 7
 DAILY_TOLERANCE = 0.10          # a "daily" interval is 1.00 +/- this, in days
+
+# THE DAY-NUMBERING CONVENTION, WRITTEN DOWN AT LAST. Session 136, 2026-08-26, closing item 5 of
+# `CONDITIONS-135.md`: "THE SERIES NUMBERS MEASUREMENT DAYS, NOT CALENDAR DAYS, AND NOTHING STATES
+# THAT... The rule lives in a JSON field and in prose that contradicts itself. A one-line statement
+# beside window_status.py closes it." The rule was being applied and never stated, and its absence
+# cost session 135 two published figures - one of them pushed to origin (`ERRATA-135.md` E49) - when
+# a session took the calendar position for the day number after a session died mid-run. It is now
+# emitted into every window-status file this script writes, so a reader of the output never has to
+# find this comment.
+DAY_NUMBERING = (
+    "Day N is the Nth MEASUREMENT DAY, not the Nth calendar day since the series began. A "
+    "measurement day is a date with a non-partial run file that parses. A hole - a date with a "
+    ".partial and no run file - consumes NO ordinal: the next completed run takes the number the "
+    "lost attempt was reaching for. A same-day second probe is not a measurement day either. "
+    "n_measurement_days below is therefore the number of the most recent completed day, and the "
+    "count of dates in measurement_days is the only thing that determines it."
+)
 LEDGER = "ledger"
 
 
@@ -168,6 +185,7 @@ def scan(ledger=LEDGER):
         "schema": "field-research/window-status/1",
         "computed_by": "window_status.py",
         "rule": "a .partial is never a run; a day counts only if a non-partial run file exists",
+        "day_numbering_convention": DAY_NUMBERING,
         "n_measurement_days": n,
         "measurement_days": days,
         "n_completed_run_files": len(completed),
