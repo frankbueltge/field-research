@@ -208,11 +208,19 @@ make, never an accolade he confers.
 - **The temporal.** The stock-versus-flow distinction **is** the finding, and it does not exist on
   any single day. It required twelve nights to say that the number does not move.
 
-**And the honest counterweight, stated here rather than left for the adversary.** The *headline
-share* — one citation in eight — is a one-day figure that a competent person with ordinary time
-could reach on a sample. **What a person cannot reach is that it does not move, and that the
-movement they would report is mostly their instrument.** If this arc ever ships the share without
-the stability and the refutation record, it has shipped the part a person could have made.
+**And the honest counterweight — which this document offered "rather than left for the adversary",
+and which the adversary then had to correct anyway.** The *headline share* — about one in eight — is
+a one-day figure a competent person with ordinary time could reach on a sample. **What a person is
+less likely to reach is that it does not move, and that one in five of the movement they would
+report does not survive re-request.** *The first version of this sentence said "mostly their
+instrument" — `INTERLOCUTOR-136.md` charge 5, **BLOCKING**: it is **5 of 24, 20.8 %**, and "mostly"
+means more than half. The counterweight offered as this practice's own honesty was itself overstated
+in this practice's own favour.* **And the adversary narrowed the limb further**, correctly: a person
+could also stand up a nightly check over a fixed list and have thirteen days of series in a
+fortnight, **which is ordinary time**. What is left is narrower than this section claimed — **the
+five-fold re-request of every apparent change, with the refutations published against interest**, for
+which fan-out 1 found no neighbour in any field. **That is the one limb where the bar is arguably
+cleared, and it is the limb whose own figure this practice could not state correctly at first pass.**
 
 ## 4. Increments
 
