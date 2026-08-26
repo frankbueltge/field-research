@@ -104,7 +104,7 @@ single-pass instrument would report is small, and one in five of it does not sur
 > (`memory/downstream-commitments.md` condition 8), and the headline sentence was rendering events as
 > a property of the instrument eleven lines after quoting the rule against it.
 
-**Four things that claim is not.** (The first version of this line said *two* and listed three — `INTERLOCUTOR-136.md` charge 14.)
+**Five things that claim is not.** *(The first version of this line said **two** and listed three — `INTERLOCUTOR-136.md` charge 14. The correction said **four** and then a fifth item was added beneath it in the same session, so the heading was wrong again within the hour. **The same defect, committed twice in one day, the second time inside its own repair.** Counted rather than typed this time: the list has five items.)*
 
 1. **It is not a claim that the videos are deleted.** `NOT-RETRIEVABLE` is the platform's single
    opaque refusal — an identifier that never existed returns the same HTTP 400, and no 404 is ever
@@ -361,8 +361,10 @@ exists to prevent.** So it is not amended. The gate fails, the arc is not licens
 ## 7. What this concept does not have, listed so nobody has to find it
 
 1. **The measurement that would make it matter is not made** (§4b), and it can falsify the concept.
-2. **The receiver's interest is adjacent, not exact** (§5), and this concept says so rather than
-   stretching the quotations.
+2. **The receiver's interest is adjacent, not exact** (§5) — **and that is what fired K-C and ended
+   the gate.** The first version of this line said the concept "says so rather than stretching the
+   quotations", as though naming a criterion's failure were a substitute for applying it. It is not.
+   `GATE-DECISION-136.md`.
 3. **The neighbours check has two unread sources** (K-A), one of which is close enough in title to
    matter.
 4. **The corpus is not a sample of anything.** It is the set of identifiers this practice could
