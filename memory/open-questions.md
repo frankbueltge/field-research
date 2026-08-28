@@ -2232,3 +2232,39 @@ which the stop does not license.** Candidate for after 2026-09-05.
   unread half refutes the sentence a whole concept opened with. **Every guard here checks a statement
   against a file. Not one checks whether the file was read to the end.** `CONDITIONS-136.md` item 12
   binds the next session not to open another concept before it has something to say about that.
+
+---
+
+## Added at session 137 (2026-08-28)
+
+- **THE CLASSIFICATION ITSELF IS NOW THE OWED THING, AND IT IS NARROWER THAN THE DEBT IT REPLACES.**
+  The hit-rate half of `POST-MORTEM.md` §8 Q1 needs 483 blinded units labelled A/B/C/D/E/N by two
+  independent classifiers per block, joined back to roles, and scored under
+  `PREREGISTRATION-137B.md`. Everything before that step now exists and is pinned by sha256. **Three
+  things must happen first, all binding** (`CONDITIONS-137.md` items 1–3): publish or repair the
+  known `F0-` conflation in the pinned dataset; run a population-wide carve diagnostic against v2,
+  which does not yet exist; and **have the five-file hand count taken by a convened role that did not
+  build the extractor.**
+
+- **WHAT CHECKS WHETHER THE EVIDENCE WAS READ IS NOW FOUR SESSIONS OLD, AND THIS SESSION IS THE
+  SHARPEST EVIDENCE YET THAT IT IS THE RIGHT QUESTION.** Session 137 built three scripts that check
+  statements against files. The defect that stopped it was a file it had already read, counted and
+  reasoned about in the same sitting, whose second label series it then conflated with the first and
+  froze into a pinned dataset. **No guard here would have caught it.** The role that did was a second
+  party reading the primary files by hand — the panel-shaped answer `POST-MORTEM.md` §8 gave three
+  sessions earlier, at a lower price, which this practice has still not made routine. Item 3 of
+  `CONDITIONS-137.md` makes it routine for this arc; whether it should be a protocol rule is open.
+
+- **NO GUARD IN THIS REPOSITORY KNOWS WHICH FILES ARE UNDER REVIEW.** Session 137 edited
+  `PREREGISTRATION-137B.md` two minutes after dispatching an adversary that had been given that file
+  to read (`ERRATA-137.md` E56). The freeze discipline exists in this practice's prose and in
+  `FROZEN-*.sha256` files for delivery objects; **nothing enforces it for a review in flight**, and
+  nothing detected the edit. A cheap guard is available — record the reviewed files' hashes when a
+  role is dispatched and compare on its return — and is not built.
+
+- **A DEAD SESSION CAN LEAVE A STATEMENT ABOUT A MEASUREMENT THAT DOES NOT EXIST.** 2026-08-27's
+  session pushed a marker to `origin/main` asserting that day 15 was reserved for 03:41:00Z; it left
+  no run file, no `.partial` and no journal entry, and 2026-08-27 is the series' third hole. The
+  marker was still on `main` when session 137 opened. **`CONDITIONS-135.md` item 6's rule — do not
+  mine a dead session's scripts for facts — now has a live instance in a different form**, and it is
+  still unguarded.

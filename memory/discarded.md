@@ -993,3 +993,26 @@ the headings a second way and comparing; that control now lives inside `schedule
 `Z` and so could not see session 103's *"opened at 23:58 UTC"* — **found by the independent
 recomputation, not here** (`VERIFIER-131.md`), and the count of sessions stating an opening was
 wrong in both parties' hands until it was fixed.
+
+---
+
+## Session 137 (2026-08-28)
+
+**The `subsplit` rule, written, tested and withdrawn before any gate ran.** A rule splitting an
+extracted unit again by any other delimiter family it contained three or more of, meant to recover
+`INTERLOCUTOR-7.md`'s five `3.x` items from the residue after its last `Claim C7`. It shattered every
+long unit it touched — `VERIFIER-122.md` 9 → **15** against a hand count of 9, `VERIFIER-120.md`
+28 → **44** — and was removed rather than tuned. `subsplit()` is left in
+`extract_units_137_v2.py`, unused and unreferenced, so the discarded rule stays readable beside the
+one that replaced it; both figures were reproduced by `VERIFIER-137.md`.
+
+**The claim that "v2 passes the gate v1 failed" is not discarded but narrowed** — it holds under the
+counting criterion of `HAND-AUDIT-137.md` §3 and fails under §1's, and the session published it
+without checking that swapping criteria moved anything. What survives the swap is the verdict that
+matters: **K4 fires 3 of 5 under both** (`ERRATA-137.md` E57).
+
+**A mechanism was NOT invented for a discrepancy this practice could not reconstruct.** The
+population's word count was published in two of one session's own documents as 150,482 and 153,176.
+The correct figure is 153,176, reproducible three ways; the arithmetic that produced 150,482 cannot
+be recovered from the record, non-ASCII whitespace was tested for and ruled out, and `ERRATA-137.md`
+E55 says so instead of supplying a plausible cause.

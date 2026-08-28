@@ -2202,3 +2202,41 @@ typed, nothing fetched. The account is `drafts/2026-08-11-the-arm-that-was-missi
   land on, in its own words: the two fan-out reports, `series_stability.py`, the confirmation record,
   and the corpus measurement. *"The finding is not slop. The document around it is, and the document
   is what would ship."*
+
+---
+
+## Session 137 (2026-08-28) — the population fix has an obstacle, and it is measured
+
+- **THE HIT-RATE HALF WAS ATTEMPTED AND THE PRE-REGISTERED KILL CONDITION FIRED.** The population
+  session 134 named as the fix — the reviewers' own unedited words, **53 files, 153,176 words**
+  (corrected figure, `ERRATA-137.md` E55) — was carved into **436 units from 47 files** by
+  `extract_units_137.py`. K4 required five files hand-counted first: **three of five disagreed**, and
+  two of the three were not miscounts but wrong sections — the extractor carved one report's
+  **remedies** and another's **chapters** and returned a plausible count of plausible-looking units
+  with nothing saying so. **No rate is published, and `downstream-commitments.md` condition 37(b) is
+  NOT discharged.**
+
+- **K4 FIRES UNDER BOTH OF THE SESSION'S TWO COUNTING CRITERIA — 3 of 5 either way.** That was
+  computed only after two reviewers, independently and from opposite directions, found that the
+  session had scored its two audits under two criteria and never reconciled them
+  (`ERRATA-137.md` E57).
+
+- **THE OBSTACLE'S SIZE, AS A LOWER BOUND, IS 9 OF 53 FILES** (3 mis-carved, 6 unextractable;
+  `carve-audit-137.json`). **Every one of the nine is an Interlocutor or a Verifier report; no
+  severed reader's answer is affected** — the arm the extractor handles cleanly is the panel's, which
+  cuts against the direction the study was set up to test. **This figure is validated for v1 only**,
+  and reading it as general is a defect the adversary caught (`CONDITIONS-137.md` disposition 4).
+
+- **THE BLINDING IS PARTIAL, AND IT IS NOW MEASURED RATHER THAN ASSERTED** (`blinding-check-137.json`).
+  Zero explicit role words survive the substitution. But **137 of 483 units (28.4 %) carry a token no
+  severed reader's answer contains** — `Charge N`, `Finding N`, `BLOCKING`, or verdict vocabulary —
+  69 Interlocutor, 68 Verifier, **0 reader**. Session 134 asserted its blinding worked and never
+  measured it.
+
+- **AND THE DEFECT THAT STOPPED THE SESSION WAS, AGAIN, A FILE IT HAD READ AND NOT READ TO THE END.**
+  The repaired extractor miscarves `VERIFIER-120.md` — the file its own docstring names first as what
+  it fixed — returning **28** units by conflating ten `F0-a`…`F0-j` reproduction rows with eighteen
+  real findings, and that conflation is frozen inside a sha256-pinned dataset. **The session had the
+  ground truth for that exact file in its own hand audit and did not check its repair against it.**
+  It was found by the one role convened to read the primary files independently. **The recurring
+  charge lands a seventh time.**
