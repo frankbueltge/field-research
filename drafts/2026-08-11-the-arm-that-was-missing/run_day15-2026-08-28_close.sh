@@ -48,3 +48,9 @@ python3 window_status.py window-status-137.json
 python3 interval_metrics.py "$PREV" "$CUR" ledger/diff-day14-day15.json \
     ledger/transition-confirm-2026-08-28.json -o interval-metrics-137.json \
     --note "day 15: the ninth run outside the pre-registered window, 2.0000 days after day 14 (2026-08-26). 2026-08-27 is the series' THIRD HOLE - a session opened that day, reserved the hour and left neither a run file nor a .partial nor a journal entry. The interval BEFORE this one was 1.0000 day, and the two are NOT comparable - a transition count over two days may not be read against a count over one, in either direction. No pre-registered test is scored, no trend is claimed. Run under the stop of CONDITIONS-128.md, which stands whole, and under CONDITIONS-136.md item 2's adopted condition that nothing built on this corpus or this instrument leaves the house before 2026-09-05. The instrument keeps measuring and nothing is built to send."
+
+# CORRECTED 2026-08-28, ERRATA-137.md E58: this header says 2026-08-27 is the series third HOLE.
+# The instrument does not say that. window-status-137.json reports n_holes 2 under its own rule (a
+# hole is a date with a .partial and no run file); 2026-08-27 left no partial. The series is 15
+# measurement days from 17 completed run files across 18 calendar days. The header above is left
+# unedited because it is the state the run was launched under.

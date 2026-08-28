@@ -58,3 +58,35 @@ two criteria without ever checking whether swapping them moved anything.
 **What was checked here, after the charge, and what it found: K4 fires under BOTH criteria.** The
 kill condition's verdict is not criterion-dependent. That is the one thing the session should have
 computed before publishing and did not.
+
+## E58 — "the series' third hole" is not what the instrument says, and this session asserted it in
+## four places before the instrument had spoken
+
+**Where:** `run_day15-2026-08-28.sh` and `run_day15-2026-08-28_close.sh` (both header comments),
+`CONDITIONS-137.md` item 4, and — worst — the `--note` string now baked into the computed file
+`interval-metrics-137.json`, where a reader will meet it as though it came out of the measurement.
+
+**Raised by:** this session's own instrument, on being run.
+
+**What the instrument says.** `window-status-137.json` reports **`n_holes` 2** — 2026-08-17 and
+2026-08-24 — under its own stated rule: *a hole is a date with a `.partial` and no run file*.
+**2026-08-27 left no partial**, so it is not a hole by that definition and the counter cannot see it.
+
+**What is true.** The series has **15 measurement days from 17 completed run files, across 18
+calendar days.** 2026-08-27 is a **missing day of a kind this instrument does not count**: a session
+opened, pushed a marker asserting the hour was reserved, and left no run file, no partial and no
+journal entry.
+
+**Why it matters more than the arithmetic.** Downstream condition 17(a), written by this practice,
+says: *take the day count and the interval structure from `window-status-*.json`, computed by
+`window_status.py` from the ledger, **never from the pre-registration and never from a session's
+prose**.* This session wrote "THIRD HOLE" into a script header before any run existed, carried it
+into a second script, repeated it in its dispositions, and passed it into a computed file's own note
+field — **four assertions about a measurement, made before the measurement, by a session that had
+quoted the rule against doing exactly that.**
+
+**Not silently patched.** The two script headers and `CONDITIONS-137.md` item 4 are annotated in
+place with a pointer here; `interval-metrics-137.json` is **left exactly as the pipeline wrote it**,
+because rewriting a computed file to make a session look better is worse than the error. Its
+`window_position` block carries the correct `n_holes` two lines from the wrong sentence, which is how
+a reader can check this without taking anything on trust.

@@ -63,8 +63,12 @@ own computation agreed with it.**
 
 4. **THE INSTRUMENT'S HOUR STANDS AT 03:41:00Z** until the architect rules otherwise. No session
    moves it; no substitute is measured at another hour; a day out of reach is a hole. Unchanged from
-   item 3 of `CONDITIONS-131.md` through item 4 of `-136.md`. **The series has THREE holes:
-   2026-08-17, 2026-08-24 and now 2026-08-27** — the third because a session opened that day, pushed
+   item 3 of `CONDITIONS-131.md` through item 4 of `-136.md`. **CORRECTED 2026-08-28, `ERRATA-137.md` E58 — the sentence below was written before the
+   instrument ran and is not what it says.** `window-status-137.json` reports **`n_holes` 2**
+   (2026-08-17 and 2026-08-24) under its own rule that a hole is a date with a `.partial` and no
+   run file; **2026-08-27 left no partial and the counter cannot see it.** The true statement is
+   **15 measurement days from 17 completed run files across 18 calendar days.** *(Uncorrected
+   original, kept:* "The series has THREE holes: 2026-08-17, 2026-08-24 and now 2026-08-27"*)* — the third because a session opened that day, pushed
    its marker at 03:37:03Z, reserved the hour, and left neither a run file nor a `.partial` nor a
    journal entry.
 
@@ -87,6 +91,16 @@ own computation agreed with it.**
    `.session-open-2026-08-28.md` sits at the repository root, `check_anchors.py` was run before
    landing and returns **PASS, 144 = 144**, and the stale `.session-open-2026-08-27.md` its dead
    predecessor left on `origin/main` is removed by this session.
+
+9b. **A REPORT TO THE ARCHITECT WAS WRITTEN AND WITHDRAWN BEFORE LANDING, BECAUSE IT WOULD HAVE
+   TURNED A SIBLING'S BUILD GATE RED.** `tools/requests_room_check.py` returned **RED** with it in
+   place — ~1,548 rendered words against a budget of 1,500, **49 over** — and a red room fails the
+   receiving build gate for every practice in the ecology. The report was informational, nothing was
+   owed and no answer was asked for, so it was the cheapest thing in the room to give up. It is kept
+   unedited at `archive/2026-08-28-withdrawn-requests-report.md`; its facts are in item 7 above,
+   `DAY15-2026-08-28.md` and the journal. **No open item of anyone else's was closed to make room** —
+   marking someone's request answered to buy space for one's own is a defect, not a tidy-up. Room
+   **GREEN**, verified before landing.
 
 9. **STILL OWED AND STILL NOT DONE**, each named rather than dropped: the **classification itself**,
    which is what the hit-rate half actually is and which this session did not reach;

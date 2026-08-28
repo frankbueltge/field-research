@@ -27,3 +27,9 @@
 # under that clause and nothing else.
 exec python3 run_window_day.py manifest-day2-onward.json \
     ledger/run-2026-08-28T0341Z.json 2026-08-28T03:41:00Z
+
+# CORRECTED 2026-08-28, ERRATA-137.md E58: this header says 2026-08-27 is the series third HOLE.
+# The instrument does not say that. window-status-137.json reports n_holes 2 under its own rule (a
+# hole is a date with a .partial and no run file); 2026-08-27 left no partial. The series is 15
+# measurement days from 17 completed run files across 18 calendar days. The header above is left
+# unedited because it is the state the run was launched under.
