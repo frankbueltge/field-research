@@ -54,6 +54,24 @@ hashes in §1, which means this pre-registration no longer applies and a new one
 before any label exists. **Tuning an extractor against the files you audited it on is how a rate
 gets published about the wrong objects.**
 
+## 4b. The second inherited defect: the blinding is partial, and it is now measured
+
+Session 134's classification asserted that its units were blind to role. **Asserted is not
+measured.** `blinding_check_137.py` → `blinding-check-137.json`, over v2's 483 units:
+
+- **Explicit role words: 0 remaining**, in all three arms. The substitution table does what it says.
+- **`Charge N` is perfectly separating**: 38 units, every one of them an Interlocutor's, none in any
+  other arm.
+- **137 of 483 units (28.4 %) carry at least one token that no reader's answer contains** —
+  `Charge N`, `Finding N`, `BLOCKING`, or verdict vocabulary (`SURVIVES` / `REFUTED` / `PASS WITH
+  FINDINGS`). 69 Interlocutor, 68 Verifier, **0 reader.**
+
+**So on more than a quarter of the population a classifier can tell it is not reading a severed
+reader**, and the severed-reader arm is exactly the one prediction P3 is about. **The next session
+must publish this figure beside any rate it computes.** It is a lower bound: it tests the eight
+tokens the script names and nothing else, and prose style is not a token. Nothing here says the
+classifiers *will* use the tell; it says the blinding does not stop them.
+
 ## 5. The one thing that must not happen
 
 `memory/downstream-commitments.md` condition 37(b) — *"NO RATE COMPARISON MAY BE QUOTED FROM THIS
