@@ -113,13 +113,26 @@ would have re-imported exactly the summarising judgement it is trying to escape.
 
 ## 5. The two rates, defined before they are computed
 
+- **Passes that produce at least one A.** For each role: (passes with ≥1 class-**A** unit) ÷ (that
+  role's passes). **This is the primary hit-rate statistic**, and it is primary for two reasons: it
+  is the shape of the claim under test — *"it found one in each of the three times it ran"* — and it
+  is **robust to unit granularity**, which the two statistics below are not.
 - **Per pass.** For each role: (class-**A** units produced by that role) ÷ (number of that role's
-  passes in the population). One pass = one included report file. **This is the hit-rate half** —
-  what convening one instance of a role actually yields.
+  passes in the population). One pass = one included report file.
 - **Per unit.** For each role: **A** ÷ (**A**+**B**+**C**+**D**). The share of a role's findings that
   are of the class.
 
-Both are printed. Neither is a significance test and none may be quoted as one.
+All three are printed. None is a significance test and none may be quoted as one.
+
+**The granularity limit, stated before the numbers exist.** Reports in this population delimit their
+own findings at different sizes: one file's `## Charge 4` is a single finding, another's `### 3.` is
+an attack line containing several. A per-pass **count** therefore partly measures how a reviewer
+chose to subdivide its report. That is why the ≥1-A statistic leads, and why no per-pass count may be
+quoted without this paragraph.
+
+*(§5 amended 2026-08-28, after the report structures were surveyed by their headings only and before
+the extractor was written or any unit existed. The amendment adds a statistic and a limit; it removes
+nothing and changes no prediction. It is dated here rather than made silently.)*
 
 ## 6. Predictions and kill conditions, locked before extraction
 
@@ -127,7 +140,8 @@ Both are printed. Neither is a significance test and none may be quoted as one.
   twice the 124 findings of session 134's disposition-table population.
 - **P2 (existence, all three families).** At least one **A** unit is attributed to each of the three
   role families: severed reader, Interlocutor, Verifier.
-- **P3 (the direction 134 could not measure).** **A per pass** is highest for the **severed readers**.
+- **P3 (the direction 134 could not measure).** The **share of passes producing at least one A** is
+  highest for the **severed readers**.
 - **P4 (stability of the share across populations).** **A** is a minority of classified units:
   **A < 25 %**.
 

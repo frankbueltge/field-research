@@ -1,0 +1,497 @@
+{
+ "what": "lower bound on mis-carving by extract_units_137.py, over all included files",
+ "files": 53,
+ "counts": {
+  "CLEAR": 44,
+  "MIS-CARVED": 3,
+  "UNEXTRACTABLE": 6
+ },
+ "units_in_mis_carved_files": 27,
+ "units_total": 436,
+ "by_role": {
+  "interlocutor": {
+   "CLEAR": 21,
+   "MIS-CARVED": 2,
+   "UNEXTRACTABLE": 3
+  },
+  "reader": {
+   "CLEAR": 11,
+   "MIS-CARVED": 0,
+   "UNEXTRACTABLE": 0
+  },
+  "verifier": {
+   "CLEAR": 12,
+   "MIS-CARVED": 1,
+   "UNEXTRACTABLE": 3
+  }
+ },
+ "hand_audit_validation": [
+  {
+   "file": "./VERIFIER-122.md",
+   "hand_units": 9,
+   "script_units": 9,
+   "hand_verdict": "AGREE",
+   "flag": "CLEAR",
+   "diagnostic_reproduces_hand": true
+  },
+  {
+   "file": "./VERIFIER-120.md",
+   "hand_units": 18,
+   "script_units": 16,
+   "hand_verdict": "DISAGREE",
+   "flag": "MIS-CARVED",
+   "diagnostic_reproduces_hand": true
+  },
+  {
+   "file": "./INTERLOCUTOR-18.md",
+   "hand_units": 4,
+   "script_units": 0,
+   "hand_verdict": "DISAGREE",
+   "flag": "UNEXTRACTABLE",
+   "diagnostic_reproduces_hand": true
+  },
+  {
+   "file": "./INTERLOCUTOR-129.md",
+   "hand_units": 6,
+   "script_units": 6,
+   "hand_verdict": "AGREE",
+   "flag": "CLEAR",
+   "diagnostic_reproduces_hand": true
+  },
+  {
+   "file": "./INTERLOCUTOR-7.md",
+   "hand_units": 12,
+   "script_units": 6,
+   "hand_verdict": "DISAGREE",
+   "flag": "MIS-CARVED",
+   "diagnostic_reproduces_hand": true
+  }
+ ],
+ "diagnostic_reproduces_hand_audit": true,
+ "rows": [
+  {
+   "file": "./INTERLOCUTOR-1.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 9,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 15,
+   "labelled_finding_headings": 15,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-11.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 6,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 16,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-129.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 6,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-13.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 9,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-131.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 10,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-133.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 7,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-134.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 9,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-135.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 11,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 16,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-15.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 5,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-16.md",
+   "role": "interlocutor",
+   "status": "UNEXTRACTABLE",
+   "script_units": 0,
+   "labelled_finding_headings": 0,
+   "flag": "UNEXTRACTABLE"
+  },
+  {
+   "file": "./INTERLOCUTOR-17.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 6,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-18.md",
+   "role": "interlocutor",
+   "status": "UNEXTRACTABLE",
+   "script_units": 0,
+   "labelled_finding_headings": 0,
+   "flag": "UNEXTRACTABLE"
+  },
+  {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 10,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 18,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-20.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 11,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-3.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 8,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-4.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 6,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-5.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 5,
+   "labelled_finding_headings": 6,
+   "flag": "MIS-CARVED"
+  },
+  {
+   "file": "./INTERLOCUTOR-6.md",
+   "role": "interlocutor",
+   "status": "UNEXTRACTABLE",
+   "script_units": 0,
+   "labelled_finding_headings": 0,
+   "flag": "UNEXTRACTABLE"
+  },
+  {
+   "file": "./INTERLOCUTOR-7.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 6,
+   "labelled_finding_headings": 7,
+   "flag": "MIS-CARVED"
+  },
+  {
+   "file": "./INTERLOCUTOR-8.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 5,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 16,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./READER-126-1.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "script_units": 7,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./READER-126-2.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "script_units": 7,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./READER-126-3.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "script_units": 7,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "script_units": 8,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "script_units": 8,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./READER-127-3.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "script_units": 8,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./READER-128-1.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "script_units": 6,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./READER-128-2.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "script_units": 6,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./READER-128-3.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "script_units": 6,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./READER-129-RECORD.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "script_units": 3,
+   "labelled_finding_headings": 3,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./READER-129-REPORT.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "script_units": 7,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./VERIFIER-119.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "script_units": 6,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "script_units": 16,
+   "labelled_finding_headings": 28,
+   "flag": "MIS-CARVED"
+  },
+  {
+   "file": "./VERIFIER-121.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "script_units": 10,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./VERIFIER-122.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "script_units": 9,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./VERIFIER-123.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "script_units": 9,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./VERIFIER-124.md",
+   "role": "verifier",
+   "status": "UNEXTRACTABLE",
+   "script_units": 0,
+   "labelled_finding_headings": 0,
+   "flag": "UNEXTRACTABLE"
+  },
+  {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "script_units": 26,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./VERIFIER-126.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "script_units": 15,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./VERIFIER-127.md",
+   "role": "verifier",
+   "status": "UNEXTRACTABLE",
+   "script_units": 0,
+   "labelled_finding_headings": 0,
+   "flag": "UNEXTRACTABLE"
+  },
+  {
+   "file": "./VERIFIER-128.md",
+   "role": "verifier",
+   "status": "UNEXTRACTABLE",
+   "script_units": 0,
+   "labelled_finding_headings": 0,
+   "flag": "UNEXTRACTABLE"
+  },
+  {
+   "file": "./VERIFIER-129.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "script_units": 6,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./VERIFIER-131.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "script_units": 5,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./VERIFIER-133.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "script_units": 4,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./VERIFIER-134.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "script_units": 7,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "script_units": 20,
+   "labelled_finding_headings": 2,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "script_units": 10,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  },
+  {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "script_units": 10,
+   "labelled_finding_headings": 0,
+   "flag": "CLEAR"
+  }
+ ]
+}

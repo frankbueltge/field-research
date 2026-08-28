@@ -1,0 +1,2945 @@
+{
+ "seed": 137,
+ "min_units": 3,
+ "truncate_at": 6000,
+ "files": 53,
+ "extracted": 47,
+ "units": 436,
+ "truncated_units": 17,
+ "by_role_passes": {
+  "interlocutor": 23,
+  "reader": 11,
+  "verifier": 13
+ },
+ "by_role_units": {
+  "interlocutor": 220,
+  "reader": 73,
+  "verifier": 143
+ },
+ "key_map": {
+  "2127e5ac01ed": {
+   "file": "./INTERLOCUTOR-1.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "90df8fdb83bf": {
+   "file": "./INTERLOCUTOR-1.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "5e27dc5f1def": {
+   "file": "./INTERLOCUTOR-1.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "c0a84d18c6cb": {
+   "file": "./INTERLOCUTOR-1.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "2c74f372f65f": {
+   "file": "./INTERLOCUTOR-1.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "729e34d695f3": {
+   "file": "./INTERLOCUTOR-1.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "133e744ec444": {
+   "file": "./INTERLOCUTOR-1.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "af450ae724f9": {
+   "file": "./INTERLOCUTOR-1.md",
+   "role": "interlocutor",
+   "ordinal": 8
+  },
+  "e0723657ce9d": {
+   "file": "./INTERLOCUTOR-1.md",
+   "role": "interlocutor",
+   "ordinal": 9
+  },
+  "26b27ba1e118": {
+   "file": "./INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "207192018deb": {
+   "file": "./INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "d93efc09bf4e": {
+   "file": "./INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "554302a766df": {
+   "file": "./INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "90614f793d57": {
+   "file": "./INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "9c837ac88889": {
+   "file": "./INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "b34315ce5685": {
+   "file": "./INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "385f7be4bc1a": {
+   "file": "./INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "ordinal": 8
+  },
+  "c8cde0192131": {
+   "file": "./INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "ordinal": 9
+  },
+  "6bfd9c23522b": {
+   "file": "./INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "ordinal": 10
+  },
+  "18e1129e812b": {
+   "file": "./INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "ordinal": 11
+  },
+  "5609d7d46abc": {
+   "file": "./INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "ordinal": 12
+  },
+  "6100940cf42e": {
+   "file": "./INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "ordinal": 13
+  },
+  "5a39b25c31e2": {
+   "file": "./INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "ordinal": 14
+  },
+  "25aa5d4f29c9": {
+   "file": "./INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "ordinal": 15
+  },
+  "194d647f33a7": {
+   "file": "./INTERLOCUTOR-11.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "22980c57b1ca": {
+   "file": "./INTERLOCUTOR-11.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "b8e2a7b0e5a7": {
+   "file": "./INTERLOCUTOR-11.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "fc81ebb27a12": {
+   "file": "./INTERLOCUTOR-11.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "e5a5faecff1b": {
+   "file": "./INTERLOCUTOR-11.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "f9b65321e460": {
+   "file": "./INTERLOCUTOR-11.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "b952bb4e6cfd": {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "7a4c993e605b": {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "a1a3936f8b51": {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "df005aa81136": {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "2623e384988c": {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "c91cfde2ce14": {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "4d25f9fae745": {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "90370db30b4e": {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "ordinal": 8
+  },
+  "22fe24863669": {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "ordinal": 9
+  },
+  "85514c9abedf": {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "ordinal": 10
+  },
+  "12f95f2eca3b": {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "ordinal": 11
+  },
+  "efc7cc9ae669": {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "ordinal": 12
+  },
+  "8232b691ee81": {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "ordinal": 13
+  },
+  "12eff3f45aac": {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "ordinal": 14
+  },
+  "33a0b81d919f": {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "ordinal": 15
+  },
+  "43fa3d65c17e": {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "ordinal": 16
+  },
+  "fbe9c2d609a1": {
+   "file": "./INTERLOCUTOR-129.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "747b7b778521": {
+   "file": "./INTERLOCUTOR-129.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "78f5b6f405cd": {
+   "file": "./INTERLOCUTOR-129.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "24fc7af73d98": {
+   "file": "./INTERLOCUTOR-129.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "c90b519708e0": {
+   "file": "./INTERLOCUTOR-129.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "21c913959c97": {
+   "file": "./INTERLOCUTOR-129.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "4cc01842a661": {
+   "file": "./INTERLOCUTOR-13.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "3e9c273fd473": {
+   "file": "./INTERLOCUTOR-13.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "07f9f4b44f20": {
+   "file": "./INTERLOCUTOR-13.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "ba2537808390": {
+   "file": "./INTERLOCUTOR-13.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "8b51e8ebfd92": {
+   "file": "./INTERLOCUTOR-13.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "547e6a7439e0": {
+   "file": "./INTERLOCUTOR-13.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "1d4daf1b9209": {
+   "file": "./INTERLOCUTOR-13.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "f231e6ed27ea": {
+   "file": "./INTERLOCUTOR-13.md",
+   "role": "interlocutor",
+   "ordinal": 8
+  },
+  "25c75da68417": {
+   "file": "./INTERLOCUTOR-13.md",
+   "role": "interlocutor",
+   "ordinal": 9
+  },
+  "0fa263b31af0": {
+   "file": "./INTERLOCUTOR-131.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "5480beffa8ae": {
+   "file": "./INTERLOCUTOR-131.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "7ef463c7f9b9": {
+   "file": "./INTERLOCUTOR-131.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "a971d4fbdea4": {
+   "file": "./INTERLOCUTOR-131.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "393da72376a7": {
+   "file": "./INTERLOCUTOR-131.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "d448608d4dbf": {
+   "file": "./INTERLOCUTOR-131.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "7cdeae8f2846": {
+   "file": "./INTERLOCUTOR-131.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "5d9bd8bab28d": {
+   "file": "./INTERLOCUTOR-131.md",
+   "role": "interlocutor",
+   "ordinal": 8
+  },
+  "6ca126490757": {
+   "file": "./INTERLOCUTOR-131.md",
+   "role": "interlocutor",
+   "ordinal": 9
+  },
+  "0ec32d010a19": {
+   "file": "./INTERLOCUTOR-131.md",
+   "role": "interlocutor",
+   "ordinal": 10
+  },
+  "d0fbf80e1d12": {
+   "file": "./INTERLOCUTOR-133.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "5eac7964c77d": {
+   "file": "./INTERLOCUTOR-133.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "86649c5d4181": {
+   "file": "./INTERLOCUTOR-133.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "192bb7b9b787": {
+   "file": "./INTERLOCUTOR-133.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "1efaf68f7638": {
+   "file": "./INTERLOCUTOR-133.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "9b96ec01d3c1": {
+   "file": "./INTERLOCUTOR-133.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "d82daced9c27": {
+   "file": "./INTERLOCUTOR-133.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "f2fe138f69cc": {
+   "file": "./INTERLOCUTOR-134.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "b266d7444c66": {
+   "file": "./INTERLOCUTOR-134.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "810024a8dd35": {
+   "file": "./INTERLOCUTOR-134.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "5a4c9a4472e3": {
+   "file": "./INTERLOCUTOR-134.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "80c00eeff369": {
+   "file": "./INTERLOCUTOR-134.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "ecb7c5ae76e1": {
+   "file": "./INTERLOCUTOR-134.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "37a548a79087": {
+   "file": "./INTERLOCUTOR-134.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "85c3ea14b346": {
+   "file": "./INTERLOCUTOR-134.md",
+   "role": "interlocutor",
+   "ordinal": 8
+  },
+  "16ac476953ba": {
+   "file": "./INTERLOCUTOR-134.md",
+   "role": "interlocutor",
+   "ordinal": 9
+  },
+  "077cac8c67b8": {
+   "file": "./INTERLOCUTOR-135.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "46bc3f8c3aaa": {
+   "file": "./INTERLOCUTOR-135.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "19af49885827": {
+   "file": "./INTERLOCUTOR-135.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "38f7b5f699cb": {
+   "file": "./INTERLOCUTOR-135.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "28ed4cfa6efa": {
+   "file": "./INTERLOCUTOR-135.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "21a07bf4a089": {
+   "file": "./INTERLOCUTOR-135.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "23b434cdeab6": {
+   "file": "./INTERLOCUTOR-135.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "cd101454c926": {
+   "file": "./INTERLOCUTOR-135.md",
+   "role": "interlocutor",
+   "ordinal": 8
+  },
+  "d955b68cdee0": {
+   "file": "./INTERLOCUTOR-135.md",
+   "role": "interlocutor",
+   "ordinal": 9
+  },
+  "01e98697c99e": {
+   "file": "./INTERLOCUTOR-135.md",
+   "role": "interlocutor",
+   "ordinal": 10
+  },
+  "3d34b8f77a8c": {
+   "file": "./INTERLOCUTOR-135.md",
+   "role": "interlocutor",
+   "ordinal": 11
+  },
+  "ced9de17600f": {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "7653dbe63dc1": {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "15277d05c42f": {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "b6d6c1960a6a": {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "01db4714c9bd": {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "ab9570c8ff7a": {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "37c779d6d70b": {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "9a125320d6b8": {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "ordinal": 8
+  },
+  "beb265a99c18": {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "ordinal": 9
+  },
+  "adc829fbc7c0": {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "ordinal": 10
+  },
+  "293d42307b62": {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "ordinal": 11
+  },
+  "fb1d531930d3": {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "ordinal": 12
+  },
+  "25540a76416c": {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "ordinal": 13
+  },
+  "d3a1716b8c8b": {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "ordinal": 14
+  },
+  "9988e600f9a6": {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "ordinal": 15
+  },
+  "5e4dfe27922c": {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "ordinal": 16
+  },
+  "df1370025599": {
+   "file": "./INTERLOCUTOR-15.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "0be517035d4d": {
+   "file": "./INTERLOCUTOR-15.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "7b29dae3cc14": {
+   "file": "./INTERLOCUTOR-15.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "f0c3e1fbc60d": {
+   "file": "./INTERLOCUTOR-15.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "f0ecf95166db": {
+   "file": "./INTERLOCUTOR-15.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "f09c86f3df98": {
+   "file": "./INTERLOCUTOR-17.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "439b9700016d": {
+   "file": "./INTERLOCUTOR-17.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "e368cd870d01": {
+   "file": "./INTERLOCUTOR-17.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "d1e246c29147": {
+   "file": "./INTERLOCUTOR-17.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "61e32565ecf6": {
+   "file": "./INTERLOCUTOR-17.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "60e688455048": {
+   "file": "./INTERLOCUTOR-17.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "579010d7f570": {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "e8da1c1a3180": {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "48adf6286311": {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "1878d420fac5": {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "1581ef8aea37": {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "2c0648fe1cc2": {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "fb1f1fc7a17b": {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "b4bae98348be": {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "ordinal": 8
+  },
+  "04665498e404": {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "ordinal": 9
+  },
+  "1de877c92c52": {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "ordinal": 10
+  },
+  "46ed8fc3e476": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "65d1cc264d02": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "f5c871a605e6": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "5c5e6cfaaa75": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "455b3d55ac70": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "f17fcb278ba1": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "cf15ebcded3f": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "2faf85c79130": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 8
+  },
+  "ba95fa5a523b": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 9
+  },
+  "087475186e1e": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 10
+  },
+  "8ee9653021d8": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 11
+  },
+  "f60df719a2e3": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 12
+  },
+  "ce29fa5609be": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 13
+  },
+  "b21b46c02c75": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 14
+  },
+  "36bcdca34ed2": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 15
+  },
+  "4dd087129b9b": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 16
+  },
+  "9df90d56284c": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 17
+  },
+  "bb180deda0ea": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 18
+  },
+  "ce835e0aaa1a": {
+   "file": "./INTERLOCUTOR-20.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "a71c1a75a14a": {
+   "file": "./INTERLOCUTOR-20.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "f298fd710c36": {
+   "file": "./INTERLOCUTOR-20.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "fed317ed2908": {
+   "file": "./INTERLOCUTOR-20.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "45db88902a44": {
+   "file": "./INTERLOCUTOR-20.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "fa1801912366": {
+   "file": "./INTERLOCUTOR-20.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "25e797997b44": {
+   "file": "./INTERLOCUTOR-20.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "459975bd77cf": {
+   "file": "./INTERLOCUTOR-20.md",
+   "role": "interlocutor",
+   "ordinal": 8
+  },
+  "93f50c57f427": {
+   "file": "./INTERLOCUTOR-20.md",
+   "role": "interlocutor",
+   "ordinal": 9
+  },
+  "cc6855664167": {
+   "file": "./INTERLOCUTOR-20.md",
+   "role": "interlocutor",
+   "ordinal": 10
+  },
+  "4f1692506abb": {
+   "file": "./INTERLOCUTOR-20.md",
+   "role": "interlocutor",
+   "ordinal": 11
+  },
+  "fc65550fad11": {
+   "file": "./INTERLOCUTOR-3.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "ca52723c6ec1": {
+   "file": "./INTERLOCUTOR-3.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "1becbb3fa73e": {
+   "file": "./INTERLOCUTOR-3.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "691ae16c1ea0": {
+   "file": "./INTERLOCUTOR-3.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "3e4118672312": {
+   "file": "./INTERLOCUTOR-3.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "16bae01b7eb2": {
+   "file": "./INTERLOCUTOR-3.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "a40434a57406": {
+   "file": "./INTERLOCUTOR-3.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "5a36c1d1b3d5": {
+   "file": "./INTERLOCUTOR-3.md",
+   "role": "interlocutor",
+   "ordinal": 8
+  },
+  "ba52618f30bb": {
+   "file": "./INTERLOCUTOR-4.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "105187bbbf92": {
+   "file": "./INTERLOCUTOR-4.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "22238d047e62": {
+   "file": "./INTERLOCUTOR-4.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "a1daab0dbbb1": {
+   "file": "./INTERLOCUTOR-4.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "a17daa77d4c1": {
+   "file": "./INTERLOCUTOR-4.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "ab98f1ea7d9b": {
+   "file": "./INTERLOCUTOR-4.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "9783cc156068": {
+   "file": "./INTERLOCUTOR-5.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "a0e1733e9b27": {
+   "file": "./INTERLOCUTOR-5.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "68eede5e08c5": {
+   "file": "./INTERLOCUTOR-5.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "c166e126bd4a": {
+   "file": "./INTERLOCUTOR-5.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "2923829f8a92": {
+   "file": "./INTERLOCUTOR-5.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "4acbd138a173": {
+   "file": "./INTERLOCUTOR-7.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "f7e2411ace3a": {
+   "file": "./INTERLOCUTOR-7.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "ec70b4d16405": {
+   "file": "./INTERLOCUTOR-7.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "7abf640a9259": {
+   "file": "./INTERLOCUTOR-7.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "6ba9bbb6da3a": {
+   "file": "./INTERLOCUTOR-7.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "a4d599da5dd8": {
+   "file": "./INTERLOCUTOR-7.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "7601f1238c0c": {
+   "file": "./INTERLOCUTOR-8.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "be357b96288e": {
+   "file": "./INTERLOCUTOR-8.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "0f7cca09b50b": {
+   "file": "./INTERLOCUTOR-8.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "3a8edaa2ebdd": {
+   "file": "./INTERLOCUTOR-8.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "26326509d57a": {
+   "file": "./INTERLOCUTOR-8.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "6d20aac41f96": {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "a8130fc7dde3": {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "8e85d3b75e54": {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "e97c9db27ae9": {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "dcf8e0bc0464": {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "9bf9a253a583": {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "cc582e223106": {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "4ce1e3d97de1": {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "ordinal": 8
+  },
+  "fc0c8507a034": {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "ordinal": 9
+  },
+  "124be2b68ffe": {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "ordinal": 10
+  },
+  "3c025dea6109": {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "ordinal": 11
+  },
+  "ab5184733c8f": {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "ordinal": 12
+  },
+  "3ce85d0bc760": {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "ordinal": 13
+  },
+  "32870d6326fd": {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "ordinal": 14
+  },
+  "19db23b4c001": {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "ordinal": 15
+  },
+  "c5a7711f0af0": {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "ordinal": 16
+  },
+  "d40f756f4195": {
+   "file": "./READER-126-1.md",
+   "role": "reader",
+   "ordinal": 1
+  },
+  "5b2832694122": {
+   "file": "./READER-126-1.md",
+   "role": "reader",
+   "ordinal": 2
+  },
+  "0829e3d75523": {
+   "file": "./READER-126-1.md",
+   "role": "reader",
+   "ordinal": 3
+  },
+  "9e34b0699b3f": {
+   "file": "./READER-126-1.md",
+   "role": "reader",
+   "ordinal": 4
+  },
+  "a97267af08c8": {
+   "file": "./READER-126-1.md",
+   "role": "reader",
+   "ordinal": 5
+  },
+  "a6ad62b8068a": {
+   "file": "./READER-126-1.md",
+   "role": "reader",
+   "ordinal": 6
+  },
+  "8dcc2bd73908": {
+   "file": "./READER-126-1.md",
+   "role": "reader",
+   "ordinal": 7
+  },
+  "64f7a7aeb50c": {
+   "file": "./READER-126-2.md",
+   "role": "reader",
+   "ordinal": 1
+  },
+  "0bc82da985da": {
+   "file": "./READER-126-2.md",
+   "role": "reader",
+   "ordinal": 2
+  },
+  "1ddcf6e6d834": {
+   "file": "./READER-126-2.md",
+   "role": "reader",
+   "ordinal": 3
+  },
+  "324706a1891e": {
+   "file": "./READER-126-2.md",
+   "role": "reader",
+   "ordinal": 4
+  },
+  "7cdc17426e2e": {
+   "file": "./READER-126-2.md",
+   "role": "reader",
+   "ordinal": 5
+  },
+  "c45d681e3e08": {
+   "file": "./READER-126-2.md",
+   "role": "reader",
+   "ordinal": 6
+  },
+  "c73e6f11664d": {
+   "file": "./READER-126-2.md",
+   "role": "reader",
+   "ordinal": 7
+  },
+  "c0ea5aaa11fa": {
+   "file": "./READER-126-3.md",
+   "role": "reader",
+   "ordinal": 1
+  },
+  "ae5c4bcbd32f": {
+   "file": "./READER-126-3.md",
+   "role": "reader",
+   "ordinal": 2
+  },
+  "07dc5315e132": {
+   "file": "./READER-126-3.md",
+   "role": "reader",
+   "ordinal": 3
+  },
+  "cc406e10c2c6": {
+   "file": "./READER-126-3.md",
+   "role": "reader",
+   "ordinal": 4
+  },
+  "95eb049eadca": {
+   "file": "./READER-126-3.md",
+   "role": "reader",
+   "ordinal": 5
+  },
+  "b13da276042b": {
+   "file": "./READER-126-3.md",
+   "role": "reader",
+   "ordinal": 6
+  },
+  "d107b75ed81f": {
+   "file": "./READER-126-3.md",
+   "role": "reader",
+   "ordinal": 7
+  },
+  "f57106a043cb": {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "ordinal": 1
+  },
+  "c3605131e7e8": {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "ordinal": 2
+  },
+  "3f85c09f3fb4": {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "ordinal": 3
+  },
+  "b4baaaf899ce": {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "ordinal": 4
+  },
+  "80dbda015f8f": {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "ordinal": 5
+  },
+  "e3888416d02f": {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "ordinal": 6
+  },
+  "278d5556834d": {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "ordinal": 7
+  },
+  "5a67d9c8c304": {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "ordinal": 8
+  },
+  "860a8bf51a1a": {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "ordinal": 1
+  },
+  "b37c3ff96b06": {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "ordinal": 2
+  },
+  "526108173c08": {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "ordinal": 3
+  },
+  "e84f59f15c6b": {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "ordinal": 4
+  },
+  "e2abf1cba4d1": {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "ordinal": 5
+  },
+  "2eb4aafce479": {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "ordinal": 6
+  },
+  "77e75523c84c": {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "ordinal": 7
+  },
+  "c08ea213b182": {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "ordinal": 8
+  },
+  "be215dbaacc4": {
+   "file": "./READER-127-3.md",
+   "role": "reader",
+   "ordinal": 1
+  },
+  "b5353ec5c8c3": {
+   "file": "./READER-127-3.md",
+   "role": "reader",
+   "ordinal": 2
+  },
+  "44ea710fbfc8": {
+   "file": "./READER-127-3.md",
+   "role": "reader",
+   "ordinal": 3
+  },
+  "ecc940215293": {
+   "file": "./READER-127-3.md",
+   "role": "reader",
+   "ordinal": 4
+  },
+  "fd5e65f92931": {
+   "file": "./READER-127-3.md",
+   "role": "reader",
+   "ordinal": 5
+  },
+  "f80c31ea1df5": {
+   "file": "./READER-127-3.md",
+   "role": "reader",
+   "ordinal": 6
+  },
+  "5a3df49581f2": {
+   "file": "./READER-127-3.md",
+   "role": "reader",
+   "ordinal": 7
+  },
+  "1484b3ec21a6": {
+   "file": "./READER-127-3.md",
+   "role": "reader",
+   "ordinal": 8
+  },
+  "4c6774a721e8": {
+   "file": "./READER-128-1.md",
+   "role": "reader",
+   "ordinal": 1
+  },
+  "2270c0d43b3c": {
+   "file": "./READER-128-1.md",
+   "role": "reader",
+   "ordinal": 2
+  },
+  "9c7f5f12f20b": {
+   "file": "./READER-128-1.md",
+   "role": "reader",
+   "ordinal": 3
+  },
+  "fb7942319900": {
+   "file": "./READER-128-1.md",
+   "role": "reader",
+   "ordinal": 4
+  },
+  "1108ec115627": {
+   "file": "./READER-128-1.md",
+   "role": "reader",
+   "ordinal": 5
+  },
+  "2e2d6895bb94": {
+   "file": "./READER-128-1.md",
+   "role": "reader",
+   "ordinal": 6
+  },
+  "e412436d7aeb": {
+   "file": "./READER-128-2.md",
+   "role": "reader",
+   "ordinal": 1
+  },
+  "5cd08825bfa3": {
+   "file": "./READER-128-2.md",
+   "role": "reader",
+   "ordinal": 2
+  },
+  "eb083c1246ac": {
+   "file": "./READER-128-2.md",
+   "role": "reader",
+   "ordinal": 3
+  },
+  "db6153aec8bf": {
+   "file": "./READER-128-2.md",
+   "role": "reader",
+   "ordinal": 4
+  },
+  "d2c55efa9e78": {
+   "file": "./READER-128-2.md",
+   "role": "reader",
+   "ordinal": 5
+  },
+  "75eb8290dcff": {
+   "file": "./READER-128-2.md",
+   "role": "reader",
+   "ordinal": 6
+  },
+  "66500d405386": {
+   "file": "./READER-128-3.md",
+   "role": "reader",
+   "ordinal": 1
+  },
+  "90ce13ac701b": {
+   "file": "./READER-128-3.md",
+   "role": "reader",
+   "ordinal": 2
+  },
+  "09dc35a146b0": {
+   "file": "./READER-128-3.md",
+   "role": "reader",
+   "ordinal": 3
+  },
+  "be46ae1c9d29": {
+   "file": "./READER-128-3.md",
+   "role": "reader",
+   "ordinal": 4
+  },
+  "5e0d2c9d2a89": {
+   "file": "./READER-128-3.md",
+   "role": "reader",
+   "ordinal": 5
+  },
+  "aa1fe7da2865": {
+   "file": "./READER-128-3.md",
+   "role": "reader",
+   "ordinal": 6
+  },
+  "c0bb06332353": {
+   "file": "./READER-129-RECORD.md",
+   "role": "reader",
+   "ordinal": 1
+  },
+  "2de93e6bd827": {
+   "file": "./READER-129-RECORD.md",
+   "role": "reader",
+   "ordinal": 2
+  },
+  "c2f079e9a397": {
+   "file": "./READER-129-RECORD.md",
+   "role": "reader",
+   "ordinal": 3
+  },
+  "71c6f6fbe9c9": {
+   "file": "./READER-129-REPORT.md",
+   "role": "reader",
+   "ordinal": 1
+  },
+  "b182fcd6f46d": {
+   "file": "./READER-129-REPORT.md",
+   "role": "reader",
+   "ordinal": 2
+  },
+  "677de1810a5e": {
+   "file": "./READER-129-REPORT.md",
+   "role": "reader",
+   "ordinal": 3
+  },
+  "803be406b596": {
+   "file": "./READER-129-REPORT.md",
+   "role": "reader",
+   "ordinal": 4
+  },
+  "5b1bcaa89a03": {
+   "file": "./READER-129-REPORT.md",
+   "role": "reader",
+   "ordinal": 5
+  },
+  "906e9e2f0892": {
+   "file": "./READER-129-REPORT.md",
+   "role": "reader",
+   "ordinal": 6
+  },
+  "971fab134a5a": {
+   "file": "./READER-129-REPORT.md",
+   "role": "reader",
+   "ordinal": 7
+  },
+  "246b0b72b568": {
+   "file": "./VERIFIER-119.md",
+   "role": "verifier",
+   "ordinal": 1
+  },
+  "ea674c52409f": {
+   "file": "./VERIFIER-119.md",
+   "role": "verifier",
+   "ordinal": 2
+  },
+  "618a7eaad9d1": {
+   "file": "./VERIFIER-119.md",
+   "role": "verifier",
+   "ordinal": 3
+  },
+  "ceb93165cc67": {
+   "file": "./VERIFIER-119.md",
+   "role": "verifier",
+   "ordinal": 4
+  },
+  "811d509cc5b5": {
+   "file": "./VERIFIER-119.md",
+   "role": "verifier",
+   "ordinal": 5
+  },
+  "e1562be5d7c7": {
+   "file": "./VERIFIER-119.md",
+   "role": "verifier",
+   "ordinal": 6
+  },
+  "bdb63b830404": {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "ordinal": 1
+  },
+  "6b3e3e8fd0fb": {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "ordinal": 2
+  },
+  "70ad748c2d97": {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "ordinal": 3
+  },
+  "8491ffb606ea": {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "ordinal": 4
+  },
+  "1f5ed6c5ffdf": {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "ordinal": 5
+  },
+  "8f2d11878a52": {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "ordinal": 6
+  },
+  "5472167d3bd9": {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "ordinal": 7
+  },
+  "85776fb15a0b": {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "ordinal": 8
+  },
+  "7093af63f199": {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "ordinal": 9
+  },
+  "0251e3c83d5b": {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "ordinal": 10
+  },
+  "963204d3ad1e": {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "ordinal": 11
+  },
+  "5af17fd53e68": {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "ordinal": 12
+  },
+  "4809b1d104a6": {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "ordinal": 13
+  },
+  "4476d805050f": {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "ordinal": 14
+  },
+  "680a086e59aa": {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "ordinal": 15
+  },
+  "351fccc2d4c5": {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "ordinal": 16
+  },
+  "e8279f25ab41": {
+   "file": "./VERIFIER-121.md",
+   "role": "verifier",
+   "ordinal": 1
+  },
+  "df9ed22bbdca": {
+   "file": "./VERIFIER-121.md",
+   "role": "verifier",
+   "ordinal": 2
+  },
+  "358a11c198a3": {
+   "file": "./VERIFIER-121.md",
+   "role": "verifier",
+   "ordinal": 3
+  },
+  "3fc53e62e41e": {
+   "file": "./VERIFIER-121.md",
+   "role": "verifier",
+   "ordinal": 4
+  },
+  "cd20ff9790dd": {
+   "file": "./VERIFIER-121.md",
+   "role": "verifier",
+   "ordinal": 5
+  },
+  "cc1bb97d72ed": {
+   "file": "./VERIFIER-121.md",
+   "role": "verifier",
+   "ordinal": 6
+  },
+  "fef65a75c1e2": {
+   "file": "./VERIFIER-121.md",
+   "role": "verifier",
+   "ordinal": 7
+  },
+  "c6dddfdafa6b": {
+   "file": "./VERIFIER-121.md",
+   "role": "verifier",
+   "ordinal": 8
+  },
+  "198e4d38d30e": {
+   "file": "./VERIFIER-121.md",
+   "role": "verifier",
+   "ordinal": 9
+  },
+  "80116896df19": {
+   "file": "./VERIFIER-121.md",
+   "role": "verifier",
+   "ordinal": 10
+  },
+  "c5e694baa30a": {
+   "file": "./VERIFIER-122.md",
+   "role": "verifier",
+   "ordinal": 1
+  },
+  "f31c442342b6": {
+   "file": "./VERIFIER-122.md",
+   "role": "verifier",
+   "ordinal": 2
+  },
+  "630eb238f5ae": {
+   "file": "./VERIFIER-122.md",
+   "role": "verifier",
+   "ordinal": 3
+  },
+  "78a14ced2024": {
+   "file": "./VERIFIER-122.md",
+   "role": "verifier",
+   "ordinal": 4
+  },
+  "231d7160831b": {
+   "file": "./VERIFIER-122.md",
+   "role": "verifier",
+   "ordinal": 5
+  },
+  "26c26fa8265a": {
+   "file": "./VERIFIER-122.md",
+   "role": "verifier",
+   "ordinal": 6
+  },
+  "271a94f5f19f": {
+   "file": "./VERIFIER-122.md",
+   "role": "verifier",
+   "ordinal": 7
+  },
+  "d59d5e9ea3b6": {
+   "file": "./VERIFIER-122.md",
+   "role": "verifier",
+   "ordinal": 8
+  },
+  "9dfdf16563e1": {
+   "file": "./VERIFIER-122.md",
+   "role": "verifier",
+   "ordinal": 9
+  },
+  "4fc60e8e94d9": {
+   "file": "./VERIFIER-123.md",
+   "role": "verifier",
+   "ordinal": 1
+  },
+  "f7cc542858b4": {
+   "file": "./VERIFIER-123.md",
+   "role": "verifier",
+   "ordinal": 2
+  },
+  "c8f9ca047780": {
+   "file": "./VERIFIER-123.md",
+   "role": "verifier",
+   "ordinal": 3
+  },
+  "f6f0b529dad3": {
+   "file": "./VERIFIER-123.md",
+   "role": "verifier",
+   "ordinal": 4
+  },
+  "d3537a62f53c": {
+   "file": "./VERIFIER-123.md",
+   "role": "verifier",
+   "ordinal": 5
+  },
+  "4564b396521d": {
+   "file": "./VERIFIER-123.md",
+   "role": "verifier",
+   "ordinal": 6
+  },
+  "cc2303810b54": {
+   "file": "./VERIFIER-123.md",
+   "role": "verifier",
+   "ordinal": 7
+  },
+  "9d3730faa89d": {
+   "file": "./VERIFIER-123.md",
+   "role": "verifier",
+   "ordinal": 8
+  },
+  "62d6f1578374": {
+   "file": "./VERIFIER-123.md",
+   "role": "verifier",
+   "ordinal": 9
+  },
+  "b7e364a41fbb": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 1
+  },
+  "a7e129dfb77b": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 2
+  },
+  "9632e5626ff9": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 3
+  },
+  "2bbd21a6e2ae": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 4
+  },
+  "89a74d741fa0": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 5
+  },
+  "c2b6ca2f1066": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 6
+  },
+  "c517238cc282": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 7
+  },
+  "6d9c2f2a591c": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 8
+  },
+  "97e7ef62eb28": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 9
+  },
+  "4f545eebfffe": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 10
+  },
+  "7b8bbb4908ab": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 11
+  },
+  "bd069825abe1": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 12
+  },
+  "d55b2301ea55": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 13
+  },
+  "5560030133dc": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 14
+  },
+  "ab9a51a70dac": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 15
+  },
+  "b507ae58cbcb": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 16
+  },
+  "97f8bebddfb7": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 17
+  },
+  "636cca52d8e4": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 18
+  },
+  "e9694536a9a4": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 19
+  },
+  "d34d6d0f4665": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 20
+  },
+  "024c88d458f8": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 21
+  },
+  "dd6ad73261fe": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 22
+  },
+  "7d015d4b709e": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 23
+  },
+  "e2f8d5dba25d": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 24
+  },
+  "ff81c01e1383": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 25
+  },
+  "93681be113eb": {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "ordinal": 26
+  },
+  "36bfb26a536b": {
+   "file": "./VERIFIER-126.md",
+   "role": "verifier",
+   "ordinal": 1
+  },
+  "deb795dbb0fe": {
+   "file": "./VERIFIER-126.md",
+   "role": "verifier",
+   "ordinal": 2
+  },
+  "ff8b07a15b03": {
+   "file": "./VERIFIER-126.md",
+   "role": "verifier",
+   "ordinal": 3
+  },
+  "361ba8f6abc2": {
+   "file": "./VERIFIER-126.md",
+   "role": "verifier",
+   "ordinal": 4
+  },
+  "2c72d782f8b4": {
+   "file": "./VERIFIER-126.md",
+   "role": "verifier",
+   "ordinal": 5
+  },
+  "e1a96ebe5fb7": {
+   "file": "./VERIFIER-126.md",
+   "role": "verifier",
+   "ordinal": 6
+  },
+  "1e48abefd38b": {
+   "file": "./VERIFIER-126.md",
+   "role": "verifier",
+   "ordinal": 7
+  },
+  "6f0a1b0c10f1": {
+   "file": "./VERIFIER-126.md",
+   "role": "verifier",
+   "ordinal": 8
+  },
+  "fd0af0169045": {
+   "file": "./VERIFIER-126.md",
+   "role": "verifier",
+   "ordinal": 9
+  },
+  "3a910379b2b4": {
+   "file": "./VERIFIER-126.md",
+   "role": "verifier",
+   "ordinal": 10
+  },
+  "56948f3ec3ee": {
+   "file": "./VERIFIER-126.md",
+   "role": "verifier",
+   "ordinal": 11
+  },
+  "a71af9029bac": {
+   "file": "./VERIFIER-126.md",
+   "role": "verifier",
+   "ordinal": 12
+  },
+  "2923dc46706c": {
+   "file": "./VERIFIER-126.md",
+   "role": "verifier",
+   "ordinal": 13
+  },
+  "302493bc6575": {
+   "file": "./VERIFIER-126.md",
+   "role": "verifier",
+   "ordinal": 14
+  },
+  "eb97fcdc6d73": {
+   "file": "./VERIFIER-126.md",
+   "role": "verifier",
+   "ordinal": 15
+  },
+  "d33a801963be": {
+   "file": "./VERIFIER-129.md",
+   "role": "verifier",
+   "ordinal": 1
+  },
+  "3ea8e2fd4595": {
+   "file": "./VERIFIER-129.md",
+   "role": "verifier",
+   "ordinal": 2
+  },
+  "54713f8946b1": {
+   "file": "./VERIFIER-129.md",
+   "role": "verifier",
+   "ordinal": 3
+  },
+  "eaf8aff7e70d": {
+   "file": "./VERIFIER-129.md",
+   "role": "verifier",
+   "ordinal": 4
+  },
+  "a118d98fce2d": {
+   "file": "./VERIFIER-129.md",
+   "role": "verifier",
+   "ordinal": 5
+  },
+  "6c6aa31ef476": {
+   "file": "./VERIFIER-129.md",
+   "role": "verifier",
+   "ordinal": 6
+  },
+  "3de1ff840fdb": {
+   "file": "./VERIFIER-131.md",
+   "role": "verifier",
+   "ordinal": 1
+  },
+  "e9f8b2d13741": {
+   "file": "./VERIFIER-131.md",
+   "role": "verifier",
+   "ordinal": 2
+  },
+  "0022e332d824": {
+   "file": "./VERIFIER-131.md",
+   "role": "verifier",
+   "ordinal": 3
+  },
+  "c7c53a3b63ac": {
+   "file": "./VERIFIER-131.md",
+   "role": "verifier",
+   "ordinal": 4
+  },
+  "8708544f28fb": {
+   "file": "./VERIFIER-131.md",
+   "role": "verifier",
+   "ordinal": 5
+  },
+  "1b86fc23fcf3": {
+   "file": "./VERIFIER-133.md",
+   "role": "verifier",
+   "ordinal": 1
+  },
+  "b85fae504565": {
+   "file": "./VERIFIER-133.md",
+   "role": "verifier",
+   "ordinal": 2
+  },
+  "7c643b797c77": {
+   "file": "./VERIFIER-133.md",
+   "role": "verifier",
+   "ordinal": 3
+  },
+  "e590da90fa40": {
+   "file": "./VERIFIER-133.md",
+   "role": "verifier",
+   "ordinal": 4
+  },
+  "7c63c7fb2923": {
+   "file": "./VERIFIER-134.md",
+   "role": "verifier",
+   "ordinal": 1
+  },
+  "b878995c3336": {
+   "file": "./VERIFIER-134.md",
+   "role": "verifier",
+   "ordinal": 2
+  },
+  "13312f87fa1e": {
+   "file": "./VERIFIER-134.md",
+   "role": "verifier",
+   "ordinal": 3
+  },
+  "03515531f4dc": {
+   "file": "./VERIFIER-134.md",
+   "role": "verifier",
+   "ordinal": 4
+  },
+  "7667937664a9": {
+   "file": "./VERIFIER-134.md",
+   "role": "verifier",
+   "ordinal": 5
+  },
+  "94f91b9c161f": {
+   "file": "./VERIFIER-134.md",
+   "role": "verifier",
+   "ordinal": 6
+  },
+  "6c869e48cdb5": {
+   "file": "./VERIFIER-134.md",
+   "role": "verifier",
+   "ordinal": 7
+  },
+  "b95501233dad": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 1
+  },
+  "42f308bc2a99": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 2
+  },
+  "06bd2f0ac1ba": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 3
+  },
+  "ee1bc1bf937e": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 4
+  },
+  "f905970f509c": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 5
+  },
+  "81c2c23e8640": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 6
+  },
+  "f63afbfe0fbe": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 7
+  },
+  "64018bd71bca": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 8
+  },
+  "574ad8b0c0ed": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 9
+  },
+  "7f1d453cf951": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 10
+  },
+  "d9199527a071": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 11
+  },
+  "60538f960469": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 12
+  },
+  "7491d7877544": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 13
+  },
+  "f5371f5ac91e": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 14
+  },
+  "38670d4256ad": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 15
+  },
+  "f80f641b035d": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 16
+  },
+  "c4d7a1cb02d3": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 17
+  },
+  "e807e1356f04": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 18
+  },
+  "a5495bcf023f": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 19
+  },
+  "d818f2e44fb7": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 20
+  },
+  "dae1da8b86de": {
+   "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "db3722aa966d": {
+   "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "f65ff54418fe": {
+   "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "dfc5d611acb7": {
+   "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "472166cda74d": {
+   "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "1711a6d298e1": {
+   "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "7796946dd5f5": {
+   "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "862381a165cf": {
+   "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+   "role": "interlocutor",
+   "ordinal": 8
+  },
+  "3e5992604eb5": {
+   "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+   "role": "interlocutor",
+   "ordinal": 9
+  },
+  "4eedfac31027": {
+   "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+   "role": "interlocutor",
+   "ordinal": 10
+  },
+  "cd2e7c9916ea": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 1
+  },
+  "c723561f99fa": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 2
+  },
+  "b0e071572d64": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 3
+  },
+  "b9775030e10b": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 4
+  },
+  "df7eeaa8ae81": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 5
+  },
+  "f43279d60b42": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 6
+  },
+  "ea42c3b3f277": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 7
+  },
+  "5bc12d2d19f2": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 8
+  },
+  "a5d4c1392b9d": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 9
+  },
+  "4a4b3306dd06": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 10
+  }
+ },
+ "manifest": [
+  {
+   "file": "./INTERLOCUTOR-1.md",
+   "role": "interlocutor",
+   "words": 4092,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 8,
+    "BOLDNUM": 0,
+    "LISTNUM": 9
+   },
+   "status": "EXTRACTED",
+   "units": 9
+  },
+  {
+   "file": "./INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "words": 5883,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 15
+   },
+   "status": "EXTRACTED",
+   "units": 15
+  },
+  {
+   "file": "./INTERLOCUTOR-11.md",
+   "role": "interlocutor",
+   "words": 2086,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 6
+   },
+   "status": "EXTRACTED",
+   "units": 6
+  },
+  {
+   "file": "./INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "words": 6941,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 7,
+    "BOLDNUM": 0,
+    "LISTNUM": 16
+   },
+   "status": "EXTRACTED",
+   "units": 16
+  },
+  {
+   "file": "./INTERLOCUTOR-129.md",
+   "role": "interlocutor",
+   "words": 2101,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 6
+   },
+   "status": "EXTRACTED",
+   "units": 6
+  },
+  {
+   "file": "./INTERLOCUTOR-13.md",
+   "role": "interlocutor",
+   "words": 2181,
+   "family": "HEADNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 9,
+    "BOLDNUM": 0,
+    "LISTNUM": 8
+   },
+   "status": "EXTRACTED",
+   "units": 9
+  },
+  {
+   "file": "./INTERLOCUTOR-131.md",
+   "role": "interlocutor",
+   "words": 2024,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 10
+   },
+   "status": "EXTRACTED",
+   "units": 10
+  },
+  {
+   "file": "./INTERLOCUTOR-133.md",
+   "role": "interlocutor",
+   "words": 1749,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 7
+   },
+   "status": "EXTRACTED",
+   "units": 7
+  },
+  {
+   "file": "./INTERLOCUTOR-134.md",
+   "role": "interlocutor",
+   "words": 3702,
+   "family": "CHARGE",
+   "family_counts": {
+    "CHARGE": 9,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 0
+   },
+   "status": "EXTRACTED",
+   "units": 9
+  },
+  {
+   "file": "./INTERLOCUTOR-135.md",
+   "role": "interlocutor",
+   "words": 2982,
+   "family": "CHARGE",
+   "family_counts": {
+    "CHARGE": 11,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 0
+   },
+   "status": "EXTRACTED",
+   "units": 11
+  },
+  {
+   "file": "./INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "words": 5716,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 13,
+    "BOLDNUM": 0,
+    "LISTNUM": 16
+   },
+   "status": "EXTRACTED",
+   "units": 16
+  },
+  {
+   "file": "./INTERLOCUTOR-15.md",
+   "role": "interlocutor",
+   "words": 3271,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 4,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 5
+   },
+   "status": "EXTRACTED",
+   "units": 5
+  },
+  {
+   "file": "./INTERLOCUTOR-16.md",
+   "role": "interlocutor",
+   "words": 716,
+   "family": "CHARGE",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 0
+   },
+   "status": "UNEXTRACTABLE",
+   "units": 0
+  },
+  {
+   "file": "./INTERLOCUTOR-17.md",
+   "role": "interlocutor",
+   "words": 2054,
+   "family": "BOLDNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 6,
+    "LISTNUM": 0
+   },
+   "status": "EXTRACTED",
+   "units": 6
+  },
+  {
+   "file": "./INTERLOCUTOR-18.md",
+   "role": "interlocutor",
+   "words": 2517,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 1
+   },
+   "status": "UNEXTRACTABLE",
+   "units": 0
+  },
+  {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "words": 4131,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 7,
+    "BOLDNUM": 0,
+    "LISTNUM": 10
+   },
+   "status": "EXTRACTED",
+   "units": 10
+  },
+  {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "words": 3913,
+   "family": "HEADNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 18,
+    "BOLDNUM": 0,
+    "LISTNUM": 14
+   },
+   "status": "EXTRACTED",
+   "units": 18
+  },
+  {
+   "file": "./INTERLOCUTOR-20.md",
+   "role": "interlocutor",
+   "words": 4592,
+   "family": "CHARGE",
+   "family_counts": {
+    "CHARGE": 11,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 5
+   },
+   "status": "EXTRACTED",
+   "units": 11
+  },
+  {
+   "file": "./INTERLOCUTOR-3.md",
+   "role": "interlocutor",
+   "words": 7466,
+   "family": "HEADNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 8,
+    "BOLDNUM": 0,
+    "LISTNUM": 7
+   },
+   "status": "EXTRACTED",
+   "units": 8
+  },
+  {
+   "file": "./INTERLOCUTOR-4.md",
+   "role": "interlocutor",
+   "words": 4934,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 6
+   },
+   "status": "EXTRACTED",
+   "units": 6
+  },
+  {
+   "file": "./INTERLOCUTOR-5.md",
+   "role": "interlocutor",
+   "words": 4270,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 5
+   },
+   "status": "EXTRACTED",
+   "units": 5
+  },
+  {
+   "file": "./INTERLOCUTOR-6.md",
+   "role": "interlocutor",
+   "words": 3870,
+   "family": "CHARGE",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 0
+   },
+   "status": "UNEXTRACTABLE",
+   "units": 0
+  },
+  {
+   "file": "./INTERLOCUTOR-7.md",
+   "role": "interlocutor",
+   "words": 7026,
+   "family": "HEADNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 6,
+    "BOLDNUM": 1,
+    "LISTNUM": 0
+   },
+   "status": "EXTRACTED",
+   "units": 6
+  },
+  {
+   "file": "./INTERLOCUTOR-8.md",
+   "role": "interlocutor",
+   "words": 2900,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 5
+   },
+   "status": "EXTRACTED",
+   "units": 5
+  },
+  {
+   "file": "./INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "words": 2449,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 16
+   },
+   "status": "EXTRACTED",
+   "units": 16
+  },
+  {
+   "file": "./READER-126-1.md",
+   "role": "reader",
+   "words": 1220,
+   "family": "HEADNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 7,
+    "BOLDNUM": 0,
+    "LISTNUM": 0
+   },
+   "status": "EXTRACTED",
+   "units": 7
+  },
+  {
+   "file": "./READER-126-2.md",
+   "role": "reader",
+   "words": 1168,
+   "family": "HEADNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 7,
+    "BOLDNUM": 0,
+    "LISTNUM": 0
+   },
+   "status": "EXTRACTED",
+   "units": 7
+  },
+  {
+   "file": "./READER-126-3.md",
+   "role": "reader",
+   "words": 1219,
+   "family": "HEADNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 7,
+    "BOLDNUM": 0,
+    "LISTNUM": 0
+   },
+   "status": "EXTRACTED",
+   "units": 7
+  },
+  {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "words": 1098,
+   "family": "HEADNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 8,
+    "BOLDNUM": 0,
+    "LISTNUM": 0
+   },
+   "status": "EXTRACTED",
+   "units": 8
+  },
+  {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "words": 1222,
+   "family": "HEADNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 8,
+    "BOLDNUM": 0,
+    "LISTNUM": 0
+   },
+   "status": "EXTRACTED",
+   "units": 8
+  },
+  {
+   "file": "./READER-127-3.md",
+   "role": "reader",
+   "words": 1067,
+   "family": "HEADNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 8,
+    "BOLDNUM": 0,
+    "LISTNUM": 0
+   },
+   "status": "EXTRACTED",
+   "units": 8
+  },
+  {
+   "file": "./READER-128-1.md",
+   "role": "reader",
+   "words": 766,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 6
+   },
+   "status": "EXTRACTED",
+   "units": 6
+  },
+  {
+   "file": "./READER-128-2.md",
+   "role": "reader",
+   "words": 753,
+   "family": "HEADNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 6,
+    "BOLDNUM": 0,
+    "LISTNUM": 0
+   },
+   "status": "EXTRACTED",
+   "units": 6
+  },
+  {
+   "file": "./READER-128-3.md",
+   "role": "reader",
+   "words": 761,
+   "family": "HEADNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 6,
+    "BOLDNUM": 0,
+    "LISTNUM": 0
+   },
+   "status": "EXTRACTED",
+   "units": 6
+  },
+  {
+   "file": "./READER-129-RECORD.md",
+   "role": "reader",
+   "words": 1665,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 3
+   },
+   "status": "EXTRACTED",
+   "units": 3
+  },
+  {
+   "file": "./READER-129-REPORT.md",
+   "role": "reader",
+   "words": 2214,
+   "family": "BOLDNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 7,
+    "LISTNUM": 0
+   },
+   "status": "EXTRACTED",
+   "units": 7
+  },
+  {
+   "file": "./VERIFIER-119.md",
+   "role": "verifier",
+   "words": 2010,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 6
+   },
+   "status": "EXTRACTED",
+   "units": 6
+  },
+  {
+   "file": "./VERIFIER-120.md",
+   "role": "verifier",
+   "words": 5527,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 16
+   },
+   "status": "EXTRACTED",
+   "units": 16
+  },
+  {
+   "file": "./VERIFIER-121.md",
+   "role": "verifier",
+   "words": 1478,
+   "family": "HEADNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 10,
+    "BOLDNUM": 0,
+    "LISTNUM": 0
+   },
+   "status": "EXTRACTED",
+   "units": 10
+  },
+  {
+   "file": "./VERIFIER-122.md",
+   "role": "verifier",
+   "words": 4148,
+   "family": "CHARGE",
+   "family_counts": {
+    "CHARGE": 9,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 8
+   },
+   "status": "EXTRACTED",
+   "units": 9
+  },
+  {
+   "file": "./VERIFIER-123.md",
+   "role": "verifier",
+   "words": 2793,
+   "family": "CHARGE",
+   "family_counts": {
+    "CHARGE": 9,
+    "HEADNUM": 0,
+    "BOLDNUM": 8,
+    "LISTNUM": 0
+   },
+   "status": "EXTRACTED",
+   "units": 9
+  },
+  {
+   "file": "./VERIFIER-124.md",
+   "role": "verifier",
+   "words": 459,
+   "family": "CHARGE",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 0
+   },
+   "status": "UNEXTRACTABLE",
+   "units": 0
+  },
+  {
+   "file": "./VERIFIER-125.md",
+   "role": "verifier",
+   "words": 2253,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 5,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 26
+   },
+   "status": "EXTRACTED",
+   "units": 26
+  },
+  {
+   "file": "./VERIFIER-126.md",
+   "role": "verifier",
+   "words": 2450,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 1,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 15
+   },
+   "status": "EXTRACTED",
+   "units": 15
+  },
+  {
+   "file": "./VERIFIER-127.md",
+   "role": "verifier",
+   "words": 2717,
+   "family": "CHARGE",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 0
+   },
+   "status": "UNEXTRACTABLE",
+   "units": 0
+  },
+  {
+   "file": "./VERIFIER-128.md",
+   "role": "verifier",
+   "words": 2615,
+   "family": "CHARGE",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 0
+   },
+   "status": "UNEXTRACTABLE",
+   "units": 0
+  },
+  {
+   "file": "./VERIFIER-129.md",
+   "role": "verifier",
+   "words": 1514,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 6
+   },
+   "status": "EXTRACTED",
+   "units": 6
+  },
+  {
+   "file": "./VERIFIER-131.md",
+   "role": "verifier",
+   "words": 2068,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 5
+   },
+   "status": "EXTRACTED",
+   "units": 5
+  },
+  {
+   "file": "./VERIFIER-133.md",
+   "role": "verifier",
+   "words": 1421,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 0,
+    "LISTNUM": 4
+   },
+   "status": "EXTRACTED",
+   "units": 4
+  },
+  {
+   "file": "./VERIFIER-134.md",
+   "role": "verifier",
+   "words": 2581,
+   "family": "HEADNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 7,
+    "BOLDNUM": 0,
+    "LISTNUM": 7
+   },
+   "status": "EXTRACTED",
+   "units": 7
+  },
+  {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "words": 1761,
+   "family": "BOLDNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 20,
+    "LISTNUM": 0
+   },
+   "status": "EXTRACTED",
+   "units": 20
+  },
+  {
+   "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+   "role": "interlocutor",
+   "words": 7191,
+   "family": "LISTNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 0,
+    "BOLDNUM": 1,
+    "LISTNUM": 10
+   },
+   "status": "EXTRACTED",
+   "units": 10
+  },
+  {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "words": 3471,
+   "family": "HEADNUM",
+   "family_counts": {
+    "CHARGE": 0,
+    "HEADNUM": 10,
+    "BOLDNUM": 0,
+    "LISTNUM": 3
+   },
+   "status": "EXTRACTED",
+   "units": 10
+  }
+ ]
+}
