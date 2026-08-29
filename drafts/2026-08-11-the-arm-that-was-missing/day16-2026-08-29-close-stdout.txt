@@ -1,0 +1,211 @@
+probe pid 1985 exited Sat Aug 29 05:24:17 UTC 2026
+{
+ "run1": {
+  "path": "ledger/run-2026-08-28T0341Z.json",
+  "label": "2026-08-28T03:41:00Z (manifest carried a placeholder)",
+  "start": "2026-08-28T03:41:00Z",
+  "asn": "AS396982",
+  "n": 3869
+ },
+ "run2": {
+  "path": "ledger/run-2026-08-29T0341Z.json",
+  "label": "2026-08-29T03:41:00Z (manifest carried a placeholder)",
+  "start": "2026-08-29T03:41:00Z",
+  "asn": "AS396982",
+  "n": 3869
+ },
+ "vantage_guard": {
+  "run1_asn": "AS396982",
+  "run2_asn": "AS396982",
+  "same_autonomous_system": true,
+  "verdict": "COMPARABLE"
+ },
+ "corrections_applied": {
+  "overlay": null,
+  "n": 0,
+  "rows": [],
+  "note": "raw run files, no overlay applied"
+ },
+ "observed_in_both": 3869,
+ "determinate_in_both": 3799,
+ "touching_indeterminate": 70,
+ "n_transitions": 1,
+ "disagreement_rate_pct": 0.026
+}
+
+TRANSITIONS (each must survive an immediate re-request — K5):
+  7141705730565901569 NOT-RETRIEVABLE -> RETRIEVABLE
+{
+ "run1": {
+  "path": "ledger/run-2026-08-28T0341Z.json",
+  "label": "2026-08-28T03:41:00Z (manifest carried a placeholder)",
+  "start": "2026-08-28T03:41:00Z",
+  "asn": "AS396982",
+  "n": 3869
+ },
+ "run2": {
+  "path": "ledger/run-2026-08-29T0341Z.json",
+  "label": "2026-08-29T03:41:00Z (manifest carried a placeholder)",
+  "start": "2026-08-29T03:41:00Z",
+  "asn": "AS396982",
+  "n": 3869
+ },
+ "vantage_guard": {
+  "run1_asn": "AS396982",
+  "run2_asn": "AS396982",
+  "same_autonomous_system": true,
+  "verdict": "COMPARABLE"
+ },
+ "corrections_applied": {
+  "overlay": "ledger/corrections.json",
+  "n": 0,
+  "rows": [],
+  "note": "A corrected state is a reading this arc's own confirmation step refuted with five immediate re-requests. The run files are unchanged; this diff reads them through the overlay and says so here."
+ },
+ "observed_in_both": 3869,
+ "determinate_in_both": 3799,
+ "touching_indeterminate": 70,
+ "n_transitions": 1,
+ "disagreement_rate_pct": 0.026
+}
+
+TRANSITIONS (each must survive an immediate re-request — K5):
+  7141705730565901569 NOT-RETRIEVABLE -> RETRIEVABLE
+{
+ "K4": "PASSES \u2014 every transition confirmed",
+ "results": [
+  {
+   "vid": "7141705730565901569",
+   "handle": "yukaaa0721xx",
+   "arm": null,
+   "from": "NOT-RETRIEVABLE",
+   "to": "RETRIEVABLE",
+   "reconfirmation_states": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": true,
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests"
+  }
+ ]
+}
+42 confirmation readings across 15 sidecars; 3 artefact echo(es)
+  all_readings:
+    NOT-RETRIEVABLE->RETRIEVABLE       n=16  confirmed=16  refuted=0
+    RETRIEVABLE->NOT-RETRIEVABLE       n=26  confirmed=17  refuted=9
+  genuine_transitions_only:
+    NOT-RETRIEVABLE->RETRIEVABLE       n=13  confirmed=13  refuted=0
+    RETRIEVABLE->NOT-RETRIEVABLE       n=26  confirmed=17  refuted=9
+written confirmation-record-121.json
+{
+ "schema": "field-research/window-status/1",
+ "computed_by": "window_status.py",
+ "rule": "a .partial is never a run; a day counts only if a non-partial run file exists",
+ "day_numbering_convention": "Day N is the Nth MEASUREMENT DAY, not the Nth calendar day since the series began. A measurement day is a date with a non-partial run file that parses. A hole - a date with a .partial and no run file - consumes NO ordinal: the next completed run takes the number the lost attempt was reaching for. A same-day second probe is not a measurement day either. n_measurement_days below is therefore the number of the most recent completed day, and the count of dates in measurement_days is the only thing that determines it.",
+ "n_measurement_days": 16,
+ "n_completed_run_files": 18,
+ "n_extra_passes_same_day": 2,
+ "n_holes": 2,
+ "n_in_flight": 0,
+ "in_flight": [],
+ "in_flight_note": "a run being written by a live reservation at the moment of this scan. Never counted as a measurement day - the rule is unchanged - and never reported as an abandoned day either. A status file written during a run says so; one written after it does not, and the two are not in conflict.",
+ "n_intervals_not_daily": 4,
+ "intervals_not_daily": [
+  {
+   "from": "2026-08-11T11:24:06Z",
+   "to": "2026-08-12T03:40:28Z",
+   "days": 0.678,
+   "is_daily": false
+  },
+  {
+   "from": "2026-08-16T03:37:40Z",
+   "to": "2026-08-18T03:41:00Z",
+   "days": 2.0023,
+   "is_daily": false
+  },
+  {
+   "from": "2026-08-23T03:41:00Z",
+   "to": "2026-08-25T03:41:00Z",
+   "days": 2.0,
+   "is_daily": false
+  },
+  {
+   "from": "2026-08-26T03:41:00Z",
+   "to": "2026-08-28T03:41:00Z",
+   "days": 2.0,
+   "is_daily": false
+  }
+ ],
+ "required_runs": 7,
+ "count_requirement_met": true,
+ "consecutive_daily": false,
+ "preregistered_window_met": false,
+ "why_two_conditions": "'seven consecutive daily runs' is a conjunction: the COUNT and the CONSECUTIVENESS. Erratum E21 reported the window closed while neither held. They are reported separately here so a later session cannot collapse them into one word again."
+}
+HOLE: ledger/run-2026-08-17T0337Z.json.partial - a partial with no completed run beside it - the day was started and not taken (600 of 3869)
+HOLE: ledger/run-2026-08-24T0341Z.json.partial - a partial with no completed run beside it - the day was started and not taken (1100 of 3869)
+NOT DAILY: 2026-08-11T11:24:06Z -> 2026-08-12T03:40:28Z = 0.678 days
+NOT DAILY: 2026-08-16T03:37:40Z -> 2026-08-18T03:41:00Z = 2.0023 days
+NOT DAILY: 2026-08-23T03:41:00Z -> 2026-08-25T03:41:00Z = 2.0 days
+NOT DAILY: 2026-08-26T03:41:00Z -> 2026-08-28T03:41:00Z = 2.0 days
+{
+ "from_run": "ledger/run-2026-08-28T0341Z.json",
+ "to_run": "ledger/run-2026-08-29T0341Z.json",
+ "interval_days": 1.0,
+ "apparent_transitions_raw": 1,
+ "k4": "PASSES \u2014 every transition confirmed",
+ "confirmed_this_interval": {
+  "returns": 1,
+  "losses": 0,
+  "vids": [
+   {
+    "vid": "7141705730565901569",
+    "from": "NOT-RETRIEVABLE",
+    "to": "RETRIEVABLE"
+   }
+  ]
+ },
+ "denominators_this_interval": {
+  "retrievable_at_previous_day_and_determinate_now": 3109,
+  "absent_at_previous_day_and_determinate_now": 690
+ },
+ "series_after_this_interval": {
+  "all_readings": {
+   "NOT-RETRIEVABLE->RETRIEVABLE": {
+    "n": 16,
+    "confirmed": 16,
+    "refuted": 0
+   },
+   "RETRIEVABLE->NOT-RETRIEVABLE": {
+    "n": 26,
+    "confirmed": 17,
+    "refuted": 9
+   }
+  },
+  "genuine_transitions_only": {
+   "NOT-RETRIEVABLE->RETRIEVABLE": {
+    "n": 13,
+    "confirmed": 13,
+    "refuted": 0
+   },
+   "RETRIEVABLE->NOT-RETRIEVABLE": {
+    "n": 26,
+    "confirmed": 17,
+    "refuted": 9
+   }
+  },
+  "n_artefact_echoes": 3,
+  "n_sidecars": 15
+ }
+}
+{
+ "n_measurement_days": 16,
+ "n_completed_run_files": 18,
+ "n_holes": 2,
+ "consecutive_daily": false,
+ "preregistered_window_met": false
+}
+CLOSE_EXIT=0

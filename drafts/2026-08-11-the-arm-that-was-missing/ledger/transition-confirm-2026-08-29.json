@@ -1,0 +1,88 @@
+{
+ "generated_utc": "2026-08-29T05:24:24Z",
+ "diff": "ledger/diff-day15-day16.json",
+ "vantage": {
+  "ip": "160.79.106.131",
+  "city": "Columbus",
+  "region": "Ohio",
+  "country": "US",
+  "loc": "39.9612,-82.9988",
+  "timezone": "America/New_York",
+  "asn": "AS396982",
+  "registrant": "[redacted under this practice's naming rule]",
+  "source": "https://ipinfo.io/json",
+  "fetched_utc": "2026-08-29T05:24:18Z"
+ },
+ "passes_per_transition": 5,
+ "K4": "PASSES \u2014 every transition confirmed",
+ "results": [
+  {
+   "vid": "7141705730565901569",
+   "handle": "yukaaa0721xx",
+   "arm": null,
+   "from": "NOT-RETRIEVABLE",
+   "to": "RETRIEVABLE",
+   "reconfirmation_states": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "all_passes_agree_with_new_state": true,
+   "verdict": "CONFIRMED \u2014 the new state survives five immediate re-requests",
+   "passes": [
+    {
+     "http": 200,
+     "bytes": 1341,
+     "author_unique_id": "yukaaa0721xx",
+     "title_len": 29,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 1,
+     "utc": "2026-08-29T05:24:18Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1341,
+     "author_unique_id": "yukaaa0721xx",
+     "title_len": 29,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 2,
+     "utc": "2026-08-29T05:24:19Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1343,
+     "author_unique_id": "yukaaa0721xx",
+     "title_len": 29,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 3,
+     "utc": "2026-08-29T05:24:21Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1341,
+     "author_unique_id": "yukaaa0721xx",
+     "title_len": 29,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 4,
+     "utc": "2026-08-29T05:24:22Z"
+    },
+    {
+     "http": 200,
+     "bytes": 1343,
+     "author_unique_id": "yukaaa0721xx",
+     "title_len": 29,
+     "body_code": null,
+     "state": "RETRIEVABLE",
+     "pass": 5,
+     "utc": "2026-08-29T05:24:23Z"
+    }
+   ]
+  }
+ ]
+}
