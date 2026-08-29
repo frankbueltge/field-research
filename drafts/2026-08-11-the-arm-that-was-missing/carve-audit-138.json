@@ -1,0 +1,971 @@
+{
+ "what_this_is": "a LOWER BOUND on mis-carving by extract_units_137_v2.py over the 53 included files; it classifies nothing and computes no rate",
+ "files": 53,
+ "extracted": 51,
+ "unextractable": [
+  "INTERLOCUTOR-16.md",
+  "VERIFIER-124.md"
+ ],
+ "flagged_files": [
+  "INTERLOCUTOR-11.md",
+  "INTERLOCUTOR-7.md",
+  "READER-129-RECORD.md",
+  "VERIFIER-119.md",
+  "VERIFIER-120.md",
+  "VERIFIER-122.md",
+  "VERIFIER-123.md",
+  "VERIFIER-127.md",
+  "VERIFIER-131.md",
+  "VERIFIER-133.md",
+  "VERIFIER-134.md"
+ ],
+ "n_flagged": 11,
+ "by_detector": {
+  "D2_HETEROGENEOUS_LABEL": [
+   "VERIFIER-120.md"
+  ],
+  "D3_TABLE_UNCOVERED": [
+   "INTERLOCUTOR-7.md",
+   "READER-129-RECORD.md",
+   "VERIFIER-119.md",
+   "VERIFIER-122.md",
+   "VERIFIER-123.md",
+   "VERIFIER-127.md",
+   "VERIFIER-131.md",
+   "VERIFIER-133.md"
+  ],
+  "D4_REMEDIES_WON": [
+   "INTERLOCUTOR-11.md"
+  ],
+  "D5_CHAPTERS_OVER_SUMMARY": [
+   "VERIFIER-134.md"
+  ]
+ },
+ "contested_family_choice": [
+  "INTERLOCUTOR-1.md",
+  "INTERLOCUTOR-10.md",
+  "INTERLOCUTOR-11.md",
+  "INTERLOCUTOR-12.md",
+  "INTERLOCUTOR-129.md",
+  "INTERLOCUTOR-13.md",
+  "INTERLOCUTOR-131.md",
+  "INTERLOCUTOR-134.md",
+  "INTERLOCUTOR-135.md",
+  "INTERLOCUTOR-136.md",
+  "INTERLOCUTOR-14.md",
+  "INTERLOCUTOR-15.md",
+  "INTERLOCUTOR-17.md",
+  "INTERLOCUTOR-19.md",
+  "INTERLOCUTOR-2.md",
+  "INTERLOCUTOR-20.md",
+  "INTERLOCUTOR-3.md",
+  "INTERLOCUTOR-4.md",
+  "INTERLOCUTOR-5.md",
+  "INTERLOCUTOR-7.md",
+  "INTERLOCUTOR-8.md",
+  "READER-129-RECORD.md",
+  "READER-129-REPORT.md",
+  "VERIFIER-119.md",
+  "VERIFIER-120.md",
+  "VERIFIER-122.md",
+  "VERIFIER-123.md",
+  "VERIFIER-125.md",
+  "VERIFIER-126.md",
+  "VERIFIER-129.md",
+  "VERIFIER-131.md",
+  "VERIFIER-134.md",
+  "VERIFIER-135.md",
+  "VERIFIER-136.md"
+ ],
+ "n_contested": 34,
+ "hand_verdicts": {
+  "INTERLOCUTOR-11.md": {
+   "v2": 6,
+   "hand": 5,
+   "verdict": "DISAGREE",
+   "counter": "independent",
+   "detectors": [
+    "D4_REMEDIES_WON"
+   ]
+  },
+  "INTERLOCUTOR-13.md": {
+   "v2": 9,
+   "hand": 9,
+   "verdict": "AGREE",
+   "counter": "builder",
+   "detectors": []
+  },
+  "INTERLOCUTOR-15.md": {
+   "v2": 4,
+   "hand": 4,
+   "verdict": "AGREE",
+   "counter": "independent",
+   "detectors": []
+  },
+  "INTERLOCUTOR-2.md": {
+   "v2": 18,
+   "hand": 18,
+   "verdict": "AGREE",
+   "counter": "builder",
+   "detectors": []
+  },
+  "READER-128-3.md": {
+   "v2": 6,
+   "hand": 6,
+   "verdict": "AGREE",
+   "counter": "independent",
+   "detectors": []
+  },
+  "VERIFIER-120.md": {
+   "v2": 28,
+   "hand": 18,
+   "verdict": "DISAGREE",
+   "counter": "two reviewers",
+   "detectors": [
+    "D2_HETEROGENEOUS_LABEL"
+   ]
+  },
+  "VERIFIER-125.md": {
+   "v2": 5,
+   "hand": 5,
+   "verdict": "AGREE",
+   "counter": "independent",
+   "detectors": []
+  },
+  "VERIFIER-127.md": {
+   "v2": 14,
+   "hand": 9,
+   "verdict": "DISAGREE",
+   "counter": "builder",
+   "detectors": [
+    "D3_TABLE_UNCOVERED"
+   ]
+  },
+  "VERIFIER-129.md": {
+   "v2": 6,
+   "hand": 6,
+   "verdict": "AGREE",
+   "counter": "builder",
+   "detectors": []
+  },
+  "VERIFIER-133.md": {
+   "v2": 4,
+   "hand": 4,
+   "verdict": "AGREE",
+   "counter": "builder",
+   "detectors": [
+    "D3_TABLE_UNCOVERED"
+   ]
+  },
+  "VERIFIER-134.md": {
+   "v2": 7,
+   "hand": 6,
+   "verdict": "DISAGREE",
+   "counter": "independent",
+   "detectors": [
+    "D5_CHAPTERS_OVER_SUMMARY"
+   ]
+  }
+ },
+ "validation": {
+  "checked": 11,
+  "failures": [
+   "VERIFIER-133.md: hand AGREE, but flagged D3_TABLE_UNCOVERED"
+  ]
+ },
+ "rows": [
+  {
+   "file": "INTERLOCUTOR-1.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 9,
+   "families_reaching_min": [
+    "HEADNUM",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-10.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "LABELLED",
+   "units": 15,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "LABELLED",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-11.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 6,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {
+    "D4_REMEDIES_WON": {
+     "carved": 6,
+     "under": "# CONDITIONS"
+    }
+   },
+   "hand": 5,
+   "hand_verdict": "DISAGREE",
+   "hand_counter": "independent"
+  },
+  {
+   "file": "INTERLOCUTOR-12.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 16,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "HEADNUM",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-129.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 6,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-13.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "HEADNUM",
+   "units": 9,
+   "families_reaching_min": [
+    "HEADNUM",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {},
+   "hand": 9,
+   "hand_verdict": "AGREE",
+   "hand_counter": "builder"
+  },
+  {
+   "file": "INTERLOCUTOR-131.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 10,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-133.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 7,
+   "families_reaching_min": [
+    "LISTNUM"
+   ],
+   "contested": false,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-134.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "CHARGE",
+   "units": 9,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "CHARGE"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-135.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "CHARGE",
+   "units": 11,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "CHARGE"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-14.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 16,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "HEADNUM",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-15.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "CHARGE",
+   "units": 4,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "CHARGE",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {},
+   "hand": 4,
+   "hand_verdict": "AGREE",
+   "hand_counter": "independent"
+  },
+  {
+   "file": "INTERLOCUTOR-16.md",
+   "role": "interlocutor",
+   "status": "UNEXTRACTABLE",
+   "family": "HEADNUM",
+   "units": 0,
+   "families_reaching_min": [],
+   "contested": false,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-17.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "BOLDNUM",
+   "units": 6,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "BOLDNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-18.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "BOLDLEAD",
+   "units": 7,
+   "families_reaching_min": [
+    "BOLDLEAD"
+   ],
+   "contested": false,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 10,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "HEADNUM",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "HEADNUM",
+   "units": 18,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "HEADNUM",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {},
+   "hand": 18,
+   "hand_verdict": "AGREE",
+   "hand_counter": "builder"
+  },
+  {
+   "file": "INTERLOCUTOR-20.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "CHARGE",
+   "units": 11,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "CHARGE",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-3.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "HEADNUM",
+   "units": 8,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "HEADNUM",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-4.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 6,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-5.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "LABELLED",
+   "units": 6,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "LABELLED",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-6.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "BOLDLEAD",
+   "units": 29,
+   "families_reaching_min": [
+    "BOLDLEAD"
+   ],
+   "contested": false,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-7.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "LABELLED",
+   "units": 7,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "BOLDNUM",
+    "HEADNUM",
+    "LABELLED"
+   ],
+   "contested": true,
+   "detectors": {
+    "D3_TABLE_UNCOVERED": {
+     "table_rows": 10,
+     "first_line": 330,
+     "section": "## 5. Conditions, collected",
+     "chosen_count": 7
+    }
+   }
+  },
+  {
+   "file": "INTERLOCUTOR-8.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 5,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-9.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 16,
+   "families_reaching_min": [
+    "LISTNUM"
+   ],
+   "contested": false,
+   "detectors": {}
+  },
+  {
+   "file": "READER-126-1.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "family": "HEADNUM",
+   "units": 7,
+   "families_reaching_min": [
+    "HEADNUM"
+   ],
+   "contested": false,
+   "detectors": {}
+  },
+  {
+   "file": "READER-126-2.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "family": "HEADNUM",
+   "units": 7,
+   "families_reaching_min": [
+    "HEADNUM"
+   ],
+   "contested": false,
+   "detectors": {}
+  },
+  {
+   "file": "READER-126-3.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "family": "HEADNUM",
+   "units": 7,
+   "families_reaching_min": [
+    "HEADNUM"
+   ],
+   "contested": false,
+   "detectors": {}
+  },
+  {
+   "file": "READER-127-1.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "family": "HEADNUM",
+   "units": 8,
+   "families_reaching_min": [
+    "HEADNUM"
+   ],
+   "contested": false,
+   "detectors": {}
+  },
+  {
+   "file": "READER-127-2.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "family": "HEADNUM",
+   "units": 8,
+   "families_reaching_min": [
+    "HEADNUM"
+   ],
+   "contested": false,
+   "detectors": {}
+  },
+  {
+   "file": "READER-127-3.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "family": "HEADNUM",
+   "units": 8,
+   "families_reaching_min": [
+    "HEADNUM"
+   ],
+   "contested": false,
+   "detectors": {}
+  },
+  {
+   "file": "READER-128-1.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 6,
+   "families_reaching_min": [
+    "LISTNUM"
+   ],
+   "contested": false,
+   "detectors": {}
+  },
+  {
+   "file": "READER-128-2.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "family": "HEADNUM",
+   "units": 6,
+   "families_reaching_min": [
+    "HEADNUM"
+   ],
+   "contested": false,
+   "detectors": {}
+  },
+  {
+   "file": "READER-128-3.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "family": "HEADNUM",
+   "units": 6,
+   "families_reaching_min": [
+    "HEADNUM"
+   ],
+   "contested": false,
+   "detectors": {},
+   "hand": 6,
+   "hand_verdict": "AGREE",
+   "hand_counter": "independent"
+  },
+  {
+   "file": "READER-129-RECORD.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "family": "LABELLED",
+   "units": 3,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "LABELLED",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {
+    "D3_TABLE_UNCOVERED": {
+     "table_rows": 5,
+     "first_line": 48,
+     "section": "## Q2 — Full structure of \"Error\" across the whole record, all 11 series",
+     "chosen_count": 3
+    }
+   }
+  },
+  {
+   "file": "READER-129-REPORT.md",
+   "role": "reader",
+   "status": "EXTRACTED",
+   "family": "BOLDNUM",
+   "units": 7,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "BOLDNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "VERIFIER-119.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 6,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {
+    "D3_TABLE_UNCOVERED": {
+     "table_rows": 15,
+     "first_line": 19,
+     "section": "### Table of recomputed figures",
+     "chosen_count": 6
+    }
+   }
+  },
+  {
+   "file": "VERIFIER-120.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "family": "LABELLED",
+   "units": 28,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "LABELLED",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {
+    "D2_HETEROGENEOUS_LABEL": {
+     "repeated": [
+      "F0"
+     ],
+     "repeat_count": 10,
+     "family_total": 28
+    }
+   },
+   "hand": 18,
+   "hand_verdict": "DISAGREE",
+   "hand_counter": "two reviewers"
+  },
+  {
+   "file": "VERIFIER-121.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "family": "HEADNUM",
+   "units": 10,
+   "families_reaching_min": [
+    "HEADNUM"
+   ],
+   "contested": false,
+   "detectors": {}
+  },
+  {
+   "file": "VERIFIER-122.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "family": "CHARGE",
+   "units": 9,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "CHARGE",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {
+    "D3_TABLE_UNCOVERED": {
+     "table_rows": 8,
+     "first_line": 107,
+     "section": "### §4 — the caller-side drift",
+     "chosen_count": 9
+    }
+   }
+  },
+  {
+   "file": "VERIFIER-123.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "family": "CHARGE",
+   "units": 9,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "BOLDNUM",
+    "CHARGE"
+   ],
+   "contested": true,
+   "detectors": {
+    "D3_TABLE_UNCOVERED": {
+     "table_rows": 9,
+     "first_line": 258,
+     "section": "## Summary of findings by severity",
+     "chosen_count": 9
+    }
+   }
+  },
+  {
+   "file": "VERIFIER-124.md",
+   "role": "verifier",
+   "status": "UNEXTRACTABLE",
+   "family": "HEADNUM",
+   "units": 0,
+   "families_reaching_min": [],
+   "contested": false,
+   "detectors": {}
+  },
+  {
+   "file": "VERIFIER-125.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "family": "CHARGE",
+   "units": 5,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "CHARGE",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {},
+   "hand": 5,
+   "hand_verdict": "AGREE",
+   "hand_counter": "independent"
+  },
+  {
+   "file": "VERIFIER-126.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 15,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "VERIFIER-127.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "family": "BOLDLEAD",
+   "units": 14,
+   "families_reaching_min": [
+    "BOLDLEAD"
+   ],
+   "contested": false,
+   "detectors": {
+    "D3_TABLE_UNCOVERED": {
+     "table_rows": 9,
+     "first_line": 15,
+     "section": "## Findings",
+     "chosen_count": 14
+    }
+   },
+   "hand": 9,
+   "hand_verdict": "DISAGREE",
+   "hand_counter": "builder"
+  },
+  {
+   "file": "VERIFIER-128.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "family": "BOLDLEAD",
+   "units": 5,
+   "families_reaching_min": [
+    "BOLDLEAD"
+   ],
+   "contested": false,
+   "detectors": {}
+  },
+  {
+   "file": "VERIFIER-129.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 6,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {},
+   "hand": 6,
+   "hand_verdict": "AGREE",
+   "hand_counter": "builder"
+  },
+  {
+   "file": "VERIFIER-131.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 5,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {
+    "D3_TABLE_UNCOVERED": {
+     "table_rows": 7,
+     "first_line": 72,
+     "section": "## B — Journal sessions",
+     "chosen_count": 5
+    }
+   }
+  },
+  {
+   "file": "VERIFIER-133.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 4,
+   "families_reaching_min": [
+    "LISTNUM"
+   ],
+   "contested": false,
+   "detectors": {
+    "D3_TABLE_UNCOVERED": {
+     "table_rows": 10,
+     "first_line": 28,
+     "section": "## Item-by-item",
+     "chosen_count": 4
+    }
+   },
+   "hand": 4,
+   "hand_verdict": "AGREE",
+   "hand_counter": "builder"
+  },
+  {
+   "file": "VERIFIER-134.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "family": "HEADNUM",
+   "units": 7,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "HEADNUM",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {
+    "D5_CHAPTERS_OVER_SUMMARY": {
+     "summary_items": 6,
+     "summary_line": 238,
+     "carved_outside": 7,
+     "heading": "## Summary of findings"
+    }
+   },
+   "hand": 6,
+   "hand_verdict": "DISAGREE",
+   "hand_counter": "independent"
+  },
+  {
+   "file": "VERIFIER-135.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "family": "BOLDNUM",
+   "units": 20,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "BOLDNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "INTERLOCUTOR-136.md",
+   "role": "interlocutor",
+   "status": "EXTRACTED",
+   "family": "LISTNUM",
+   "units": 10,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  },
+  {
+   "file": "VERIFIER-136.md",
+   "role": "verifier",
+   "status": "EXTRACTED",
+   "family": "HEADNUM",
+   "units": 10,
+   "families_reaching_min": [
+    "BOLDLEAD",
+    "HEADNUM",
+    "LISTNUM"
+   ],
+   "contested": true,
+   "detectors": {}
+  }
+ ]
+}

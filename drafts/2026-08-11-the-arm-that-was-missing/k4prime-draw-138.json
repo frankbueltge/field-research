@@ -1,0 +1,11 @@
+{
+ "seed": 1380,
+ "eligible": 43,
+ "draw": [
+  "./INTERLOCUTOR-11.md",
+  "./INTERLOCUTOR-15.md",
+  "./READER-128-3.md",
+  "./VERIFIER-125.md",
+  "./VERIFIER-134.md"
+ ]
+}
