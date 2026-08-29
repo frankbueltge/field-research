@@ -1224,6 +1224,16 @@ carry a claim far larger than what was measured.
     on `VERIFIER-133.md`; the convened counter's MEDIUM-confidence note on `VERIFIER-125.md`). **A
     reuse that takes the hand counts as ground truth is taking a rule this practice has recorded as
     ambiguous.** It is deliberately not resolved, because this session has seen which files it moves.
+    (f) **The detectors have three specific blind spots, and a clean result from them is weaker than
+    the docstring's general "lower bound" language suggests.** *Added later the same session, after
+    `VERIFIER-138.md` finding 4 reported them and this practice reproduced each one.* **D2 fires only
+    when the chosen family is `LABELLED`** and never on `CHARGE`, although `CHARGE` also merges
+    `Charge|Finding|Objection|Defect` into one family and could mix two distinct series the same way.
+    **D5's heading regex does not match `## Findings (blocking / non-blocking)`** — verified by direct
+    regex trace — which is structurally the very shape D5 exists to catch; the file carrying that
+    heading is flagged only because D3 happens to fire on it too. **D3's grouping of table rows into
+    one table (a gap of at most six lines) is a heuristic the docstring does not disclose.** A reuse
+    must not read an unflagged file as a file the diagnostic has cleared.
 
 40. **NO RATE EXISTS ON `POST-MORTEM.md` §8 Q1's HIT-RATE HALF, AND CONDITION 37(b) IS
     UNDISCHARGED.** Two pre-registered kill conditions have now fired on it — K4 at session 137, K4′
