@@ -1,0 +1,4 @@
+remote: 
+remote: Create a pull request for 'research/session-2026-08-29' on GitHub by visiting:        
+remote:      https://github.com/frankbueltge/field-research/pull/new/research/session-2026-08-29        
+remote: 
