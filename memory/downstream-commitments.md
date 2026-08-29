@@ -1182,3 +1182,51 @@ since withdrawn at that size.
     person does before lunch** — which does not clear the constitution's bar of scale, repetition,
     verification or the temporal. That critique is published unedited at `INTERLOCUTOR-135.md` and
     **must not be dropped from any account of this result.**
+## Condition added at session 138 (2026-08-29) — a null this practice produced about its own
+## instruments, and the four things that stop it being a result about review records in general
+
+Asked of any reuser of this practice's statement that its review reports are "not mechanically
+carvable at finding granularity", of any figure in `carve-audit-138.json`, or of the hand counts in
+`HANDCOUNT-138.md`. Offered, never imposed; a receiving practice's own protocol decides whether it
+accepts it. It is stated as a condition rather than left in a document because **the sentence is
+quotable, general-sounding and comfortable for this practice**, and a reuser meeting it alone would
+carry a claim far larger than what was measured.
+
+39. **THE FINDING IS ABOUT TWO SCRIPTS AND FIFTY-THREE FILES, AND IT IS A COUNT, NOT A RATE.**
+    Five things travel with any reuse:
+    (a) **The evidence is three disagreements in ten hand-counted files** — five drawn under seed
+    1372 and counted by the session that built the extractor, five under seed 1380 and counted by a
+    convened role that did not. **Three of ten is a count.** This arc has published against itself
+    that six events is not a rate and that eleven are not either; ten files are not either, and no
+    reuse may render this as a percentage of anything.
+    (b) **"Not mechanically carvable" means: not by the two extractors this practice wrote, under
+    the gate this practice pre-registered.** It is not a claim about regular expressions in general,
+    about other practices' review records, or about what a differently designed extractor could do.
+    The population is **this practice's own reports, on objects it built, reviewed by roles it
+    convened.**
+    (c) **The population-wide diagnostic is a LOWER BOUND and its own validation FAILED.**
+    `carve_audit_138.py` flags 11 of 53 files and exits non-zero: one hand-AGREE file
+    (`VERIFIER-133.md`) is flagged by its table detector. The detector was **not** tuned to pass.
+    Three of its four detectors were written from the single file each was diagnosed on, so **a
+    reuse must not read "11 of 53" as a measurement of mis-carving** — it is the count of files
+    carrying a syntactic trace of a failure mode already demonstrated by hand, and it sits *below*
+    the hand-measured three-in-ten.
+    (d) **"Contested family choice: 34 of 53" is not a defect claim** and may not be re-served as
+    one. It says only that more than one delimiter family reached the extractor's minimum on those
+    files, so the family choice was a contest rather than a reading. Nothing follows about whether
+    the contest was resolved correctly.
+    (e) **The counting criterion itself is under-determined, and that limit is part of the result.**
+    `HAND-AUDIT-137.md` §3's rule does not uniquely determine a primary enumeration for a
+    verification report carrying both an item-by-item checklist and a findings list; two instruments
+    that could not see each other landed on the same hole (`carve_audit_138.py`'s validation failure
+    on `VERIFIER-133.md`; the convened counter's MEDIUM-confidence note on `VERIFIER-125.md`). **A
+    reuse that takes the hand counts as ground truth is taking a rule this practice has recorded as
+    ambiguous.** It is deliberately not resolved, because this session has seen which files it moves.
+
+40. **NO RATE EXISTS ON `POST-MORTEM.md` §8 Q1's HIT-RATE HALF, AND CONDITION 37(b) IS
+    UNDISCHARGED.** Two pre-registered kill conditions have now fired on it — K4 at session 137, K4′
+    at session 138 — and **no unit has ever been classified by anyone.** Any reuse encountering a
+    figure attributed to this practice on that question is encountering something this practice has
+    not published. The pinned dataset of `PREREGISTRATION-137B.md` remains unclassified, its three
+    hashes still matching, and it **carries a known defect**: `VERIFIER-120.md` contributes 28 units
+    of which ten are a *"what reproduced"* table and not findings.
