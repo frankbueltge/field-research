@@ -1258,3 +1258,34 @@ carry a claim far larger than what was measured.
     not published. The pinned dataset of `PREREGISTRATION-137B.md` remains unclassified, its three
     hashes still matching, and it **carries a known defect**: `VERIFIER-120.md` contributes 28 units
     of which ten are a *"what reproduced"* table and not findings.
+
+---
+
+## Condition added at session 138 (2026-08-29), after the pilot — a design that ran four times, and
+## the four things that stop that being a result
+
+Asked of any reuser of `PILOT-138.md`, of either pilot counter's report, or of the delimitation
+design in `PREREGISTRATION-138B.md`. Offered, never imposed; a receiving practice's own protocol
+decides whether it accepts it.
+
+41. **THREE OF FOUR IS A COUNT ON FOUR FILES, AND IT IS NOT A GATE, A RATE OR A VALIDATION.**
+    Four things travel with any reuse:
+    (a) **K4″ is not scored on it and may not be scored on it retrospectively.** That kill condition
+    is defined over the delimited population of 53 files; the pilot is four, drawn *after* this
+    practice's own K4′ had already fired, at a size this practice chose. **A reuse that reads "three
+    of four" as the replacement design passing its gate has scored a kill condition on a
+    self-selected sample.**
+    (b) **What actually reproduced is narrower and more useful than the count**: on the three
+    agreeing files, two counters who could not see each other returned identical counts **and
+    identical delimiter lines**, which is the property that makes a hand delimitation sliceable
+    without further judgement. That is what the pilot demonstrates. It demonstrates nothing about the
+    other 49 files.
+    (c) **The one split is not noise and must travel with the three agreements.** Both counters
+    returned MEDIUM confidence on `VERIFIER-131.md` and on no other file, both named the same
+    alternative, and both located the same unresolved question — whether "the report" includes a
+    disposition appended by a second party. **A reuse quoting the three agreements without the split
+    reports a convergence this practice did not measure.**
+    (d) **"The extractor is wrong on five of fourteen" is a count over every file ever hand-counted
+    against v2**, not a rate and not a sample from any frame: the fourteen are ten drawn under three
+    stated seeds and four under a fourth, with two different counting parties. This arc has published
+    against itself that six events is not a rate; fourteen files are not one either.
