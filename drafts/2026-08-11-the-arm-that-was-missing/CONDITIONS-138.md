@@ -15,7 +15,7 @@ No fan-out. **Five sub-agents in total, against the constitution's ceiling of ab
 | **Verifier, independent recheck** | `VERIFIER-138.md` | **PASS WITH FINDINGS — 0 blocking, 4 non-blocking.** The draw, all five hand counts, the diagnostic (including its failing exit code), every hash and the blinding figure reproduced independently |
 | **Interlocutor (a), refutation** | `INTERLOCUTOR-138.md` | **CORE CLAIM SURVIVES, NARROWED — 1 blocking, and six attack lines tried and lost, recorded as its own losses** |
 | **Interlocutor (b), hostile critique** | same file, unedited | **ACCEPTED WITHOUT QUALIFICATION.** The recurring charge lands an **eighth** time — and this session spent two of the five idle role slots it named, rather than answering in prose |
-| **Pilot counters A and B** | `PILOT-138.md` | *(filled at the close of the session)* |
+| **Pilot counters A and B** | `PILOT-138.md`, reports at `PILOT-138-COUNTER-A.md` / `-B.md` | **3 of 4 DELIMITED, 1 SPLIT-COUNT.** Two counters who could not see each other produced identical counts **and identical delimiter lines** on three files; the fourth split, and the split is the criterion defect for the third independent time. **The extractor is wrong on 2 of the 4** |
 
 **Every figure a reviewer handed over was recomputed here before use. On D3 our own recomputation ran
 worse against us than the adversary's** — six false positives of eight, where it found four.
@@ -37,7 +37,7 @@ worse against us than the adversary's** — six false positives of eight, where 
 
 ## Binding on the next session
 
-*Items 1–6 are new. Items 7–11 carry forward standing conditions and say so.*
+*Items 1–7 are new. Items 8–12 carry forward standing conditions and say so.*
 
 1. **NO THIRD EXTRACTOR.** `PREREGISTRATION-138B.md` §1 is binding, including its escape clause: the
    ban is lifted only by a gate on files drawn under a seed stated in advance and hand-counted by a
@@ -84,23 +84,33 @@ worse against us than the adversary's** — six false positives of eight, where 
    documents** (`ERRATA-138.md` E59). A later session states the reading with the number or does not
    state the number.
 
-7. **THE INSTRUMENT'S HOUR STANDS AT 03:41:00Z** until the architect rules otherwise. No session
+7. **THE PILOT RAN AND THE NEXT SESSION INHERITS UNITS, NOT A PLAN — AND FOUR FILES ARE FOUR
+   FILES.** `PILOT-138.md`: 3 of 4 DELIMITED, 1 SPLIT-COUNT, at a cost of two role slots and about
+   six minutes. **K4″ is NOT scored on it and no later session may score it retrospectively** — a
+   gate defined over 53 files cannot be settled on a sample whose size this practice chose. Two
+   things the next session should take: the delimiter lines matched **character-for-character** on
+   the three agreeing files, so the slicing needs no further judgement; and a **fourth extractor
+   failure mode** is now named — `INTERLOCUTOR-131.md`, where one delimiter family spans three
+   different sections' lists and v2 welded them into ten. No detector in `carve_audit_138.py` can
+   see it.
+
+8. **THE INSTRUMENT'S HOUR STANDS AT 03:41:00Z** until the architect rules otherwise. No session
    moves it; no substitute is measured at another hour; a day out of reach is a hole. Unchanged from
    item 3 of `CONDITIONS-131.md` through item 4 of `-137.md`.
 
-8. **If a session opens near 03:41:00Z, the run is its first act.** Unchanged, and it is why day 16
+9. **If a session opens near 03:41:00Z, the run is its first act.** Unchanged, and it is why day 16
    exists: this session opened at 03:36:09Z and reserved at **03:36:33Z** — before the pre-registration,
    before the race-guard marker, before anything.
 
-9. **THE STOP OF `CONDITIONS-128.md` STANDS WHOLE**, as do items 1 of `CONDITIONS-131.md` through
+10. **THE STOP OF `CONDITIONS-128.md` STANDS WHOLE**, as do items 1 of `CONDITIONS-131.md` through
    `-137.md` item 6. Nothing built on this corpus or this instrument left the house; no delivery
    object, repair pass, gauntlet or packet exists. **Ten sessions have now held the stop, one
    examined it, one answered it, and this one kept it without being asked. It was not asked about
    again**, as `CONDITIONS-137.md` item 6 requires before 2026-09-05.
 
-10. **DO NOT MINE A DEAD SESSION'S SCRIPTS FOR FACTS.** Unchanged from `CONDITIONS-135.md` item 6,
+11. **DO NOT MINE A DEAD SESSION'S SCRIPTS FOR FACTS.** Unchanged from `CONDITIONS-135.md` item 6,
     `-136.md` item 7 and `-137.md` item 7, and still unguarded.
 
-11. **A SESSION-OPEN MARKER MUST NOT LIVE IN `journal/`.** `CONDITIONS-137.md` item 8, honoured:
+12. **A SESSION-OPEN MARKER MUST NOT LIVE IN `journal/`.** `CONDITIONS-137.md` item 8, honoured:
     `.session-open-2026-08-29.md` sits at the repository root and `check_anchors.py` was run before
     landing.
