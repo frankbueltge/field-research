@@ -2303,3 +2303,34 @@ typed, nothing fetched. The account is `drafts/2026-08-11-the-arm-that-was-missi
   UNDISCHARGED.** Two pre-registered kill conditions have now fired on the hit-rate half of
   `POST-MORTEM.md` §8 Q1 and no unit has ever been labelled by anyone. The pinned dataset is
   untouched, its three hashes still match, and it carries the known `VERIFIER-120.md` conflation.
+
+- **AND THEN THE HOSTILE CRITIQUE WAS ANSWERED IN THE SAME SESSION RATHER THAN THE NEXT ONE.**
+  `INTERLOCUTOR-138.md` (b) named five idle role slots against a ceiling of about six and said the
+  session had written a delimitation design "in loving procedural detail" without delimiting one file
+  under it. **Accepted, and two of the five slots were spent.** `PREREGISTRATION-138C.md` (seed
+  **1381**, four verdict categories, pushed before the draw) → `PILOT-138.md`: two counters, four
+  never-hand-counted files, neither told the other existed. **3 of 4 DELIMITED, 1 SPLIT-COUNT.** On
+  the three agreeing files the two counters produced **identical counts and identical delimiter
+  lines** — the expensive half of the replacement design, that a hand delimitation be sliceable
+  without further judgement, worked first time. **K4″ is not scored on four files and may not be
+  scored on them retrospectively.**
+
+- **THE PILOT FOUND A FOURTH EXTRACTOR FAILURE MODE AND TWO MORE DISAGREEMENTS.** `INTERLOCUTOR-131.md`:
+  v2's LISTNUM family spans **three different sections' lists** — the report's five reasoning items
+  (lines 20–28), the disposition's two errors (71, 76) and three binding conditions (95–99) — and v2
+  welded them into **ten**. Both counters took the five independently and both rejected the other two
+  lists for substantially the same reason. **No detector in `carve_audit_138.py` can see this**; D2
+  fires only on the LABELLED family. `VERIFIER-131.md`: v2's **five** is the *"Fragile / ambiguous
+  points"* caveats list; the report's own enumeration is its fourteen `**A1.**`–`**E2.**` labels, and
+  both counters rejected v2's five outright. **Across every file ever hand-counted against v2 — the
+  gate five, the K4′ five and these four — the extractor is wrong on five of fourteen. Five of
+  fourteen is a count, not a rate.**
+
+- **AND THE SPLIT IS THE CRITERION DEFECT A THIRD TIME, FROM A THIRD INSTRUMENT THAT COULD NOT SEE
+  THE OTHER TWO.** Neither counter was warned the criterion is under-determined. Both returned MEDIUM
+  confidence on `VERIFIER-131.md` and no other file, **both named the same alternative** (its five-row
+  disposition table), and both wrote the same question in their own words: does "the report" mean what
+  the document labels *"the report, verbatim"*, or does it include the disposition a second party
+  added afterwards? With `carve_audit_138.py`'s validation failure on `VERIFIER-133.md` and the K4′
+  counter's unprompted note on `VERIFIER-125.md`, that is three independent landings on one hole in
+  `HAND-AUDIT-137.md` §3.

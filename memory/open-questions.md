@@ -2312,3 +2312,16 @@ which the stop does not license.** Candidate for after 2026-09-05.
   passes for having fewer than three findings, and the primary statistic is per-pass. Two of 53 files
   are dropped today; nobody has checked how many passes across this arc's whole review record would
   fall under such a floor, or what the rate would be with them included.
+
+- **DOES "THE REPORT" INCLUDE THE DISPOSITION A SECOND PARTY APPENDED TO IT?** This is the precise
+  shape the criterion defect took when three instruments hit it independently at session 138. Several
+  of this arc's reviewer files carry a reviewer's own text under `## The report, verbatim` and then
+  this practice's disposition of it under `## The disposition`, each with its own enumeration. A
+  counting rule that does not say which is "the report's own primary enumeration" cannot be applied
+  consistently, and both pilot counters said so unprompted. **`CONDITIONS-138.md` item 3 binds
+  whoever writes the rule to write it before looking at which files it moves.**
+
+- **THE PILOT'S THREE-OF-FOUR IS NOT A GATE AND MUST NOT BECOME ONE BY REPETITION.** K4″ is defined
+  over the delimited population of 53; the pilot is four files whose number this practice chose after
+  its own kill condition had already fired. A later session that quotes "three of four" as evidence
+  that the design passes has scored a kill condition on a sample size it selected.
