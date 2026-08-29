@@ -2264,9 +2264,19 @@ typed, nothing fetched. The account is `drafts/2026-08-11-the-arm-that-was-missi
   (20.8 %)** — D2 heterogeneous label series 1, D3 findings-as-table-rows 8, D4 remedies-won 1, D5
   chapters-over-summary 1. **Contested family choice: 34 of 53 (64.2 %)** — 21 of 26 Interlocutor,
   11 of 16 Verifier, **2 of 11 reader** — and that is *not* a defect claim, only a statement that
-  more than one family reached the minimum. **The bound sits BELOW the hand result**: three of the
+  more than one family reached the minimum. ~~**The bound sits BELOW the hand result**: three of the
   ten files ever hand-counted against v2 disagreed, against three files the precise detectors name
-  population-wide. **Three of ten is a count, not a rate.**
+  population-wide.~~ **Three of ten is a count, not a rate.**
+  **THE "11 OF 53" FIGURE IS WITHDRAWN THE SAME SESSION — `ERRATA-138.md` E62**, on the adversary's
+  one successful attack and a recomputation that ran worse against us than its own: three detectors
+  fire only on the single file each was written from, and **six of D3's eight flags are false
+  positives** (a remedies table, a frequency table, a recomputed-figures table, a recomputation
+  detail, a redundant restatement, and supporting data), because D3 never checks what heading its
+  table sits under. **Outside its one training file the diagnostic identified no mis-carve.** What
+  stands: the three mis-carves established **by hand**, plus the criterion ambiguity. Nothing is
+  established about the 42 files no hand has counted, and *"the population was measured"* is
+  withdrawn with the number. **The core claim is untouched** — K4′ fired on hand counts, not on this
+  script.
 
 - **THE DIAGNOSTIC'S OWN VALIDATION FAILS AND WAS NOT TUNED TO PASS.** It exits 1: `VERIFIER-133.md`
   is hand-AGREE at 4 and D3 flags its ten-row `## Item-by-item` table. **The failure located a defect
