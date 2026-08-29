@@ -4,16 +4,34 @@
 exists at any status, and no file under `letter/`, `offer/`, `deliverable/` or `deliverable-v0.3/`
 was touched. **No unit was classified and no rate exists.**
 
-**Three roles were convened, each named with its reason before it ran.** One independent counter
-(`CONDITIONS-137.md` binding item 3, firing for the first time), one Verifier, one Interlocutor.
-No fan-out. **Three sub-agents in total, against the constitution's ceiling of about six.**
+**Five roles were convened, each named with its reason before it ran.** One independent counter
+(`CONDITIONS-137.md` binding item 3, firing for the first time), one Verifier, one Interlocutor, and
+then **two pilot counters convened after the hostile critique named the idle budget** — see item 6.
+No fan-out. **Five sub-agents in total, against the constitution's ceiling of about six.**
 
 | verdict | who | result |
 |---|---|---|
 | **Independent counter, K4′** | `HANDCOUNT-138.md` | **2 of 5 disagree → K4′ FIRES → NO RATE.** Published unedited; recomputed here against the files before adoption |
-| **Verifier, independent recheck** | `VERIFIER-138.md` | *(filled at the close of the session)* |
-| **Interlocutor (a), refutation** | `INTERLOCUTOR-138.md` | *(filled at the close of the session)* |
-| **Interlocutor (b), hostile critique** | same file, unedited | *(filled at the close of the session)* |
+| **Verifier, independent recheck** | `VERIFIER-138.md` | **PASS WITH FINDINGS — 0 blocking, 4 non-blocking.** The draw, all five hand counts, the diagnostic (including its failing exit code), every hash and the blinding figure reproduced independently |
+| **Interlocutor (a), refutation** | `INTERLOCUTOR-138.md` | **CORE CLAIM SURVIVES, NARROWED — 1 blocking, and six attack lines tried and lost, recorded as its own losses** |
+| **Interlocutor (b), hostile critique** | same file, unedited | **ACCEPTED WITHOUT QUALIFICATION.** The recurring charge lands an **eighth** time — and this session spent two of the five idle role slots it named, rather than answering in prose |
+| **Pilot counters A and B** | `PILOT-138.md` | *(filled at the close of the session)* |
+
+**Every figure a reviewer handed over was recomputed here before use. On D3 our own recomputation ran
+worse against us than the adversary's** — six false positives of eight, where it found four.
+
+---
+
+## The dispositions
+
+| # | finding | from | disposition |
+|---|---|---|---|
+| 1 | **The diagnostic's "11 of 53" is not a lower bound and "the population was measured" is too strong.** Three detectors fire only on the single file each was written from; D3, the only multi-file one, has no check on the heading its table sits under. | Interlocutor Attack 3, **BLOCKING** | **ACCEPTED IN FULL AND WIDENED AGAINST US** (`ERRATA-138.md` E62). Recomputed here before adoption: **six of D3's eight flags are false positives**, not four — a remedies table, a frequency table, a recomputed-figures table, a recomputation detail, a redundant restatement and supporting data. **Outside its one training file the diagnostic identified no mis-carve.** The figure and the phrase are withdrawn; `carve_audit_138.py` is **not repaired**, because tuning it against the six files that convicted it is what this session refused to do to the extractor. |
+| 2 | **The commit second is 03:39:23Z, not 03:39:24Z.** | Verifier 1 | **ACCEPTED** (`ERRATA-138.md` E60). The wrong second was a `date` call issued after the push, in the same command — a real timestamp of the wrong event. The ordering is 97 seconds, not 96, which runs in our favour and is corrected anyway. |
+| 3 | **"Checkable without asking this practice anything" overstates what an unsigned commit proves.** | Verifier 2, and Interlocutor Attack 2 independently | **ACCEPTED** (`ERRATA-138.md` E61). No commit of this session is signed; the corroborating timestamps are the same host's clock. Recorded as owed and not built. |
+| 4 | **The detectors have three specific undisclosed blind spots** — D2 never checks the CHARGE family; D5's heading regex does not match `## Findings (blocking / non-blocking)`; D3's six-line row grouping is an undisclosed heuristic. | Verifier 4 | **ACCEPTED**, reproduced here by direct regex trace, and carried into `memory/downstream-commitments.md` condition 39(f). |
+| 5 | **Six attack lines were tried and lost**, including the strongest one available — that the null was manufactured. The adversary read both disagreeing files itself and could not find a reading that flips either. | Interlocutor, its own losses | **RECORDED AS ITS LOSSES, not as our vindication.** It also independently reproduced the draw, established that the ten-file exclusion list was written the *previous* session and so was not gameable by this one, and recomputed the blinding figure from source. |
+| 6 | **The hostile critique: five role slots sat idle while the session wrote a delimitation design in loving procedural detail and did not delimit one file under it.** | Interlocutor (b), non-blocking | **ACCEPTED WITHOUT QUALIFICATION and published unedited — and answered in the same session rather than in the next one.** `PREREGISTRATION-138C.md` was written and pushed before its draw, and two counters were convened on four never-counted files under `PREREGISTRATION-138B.md` §2. **It remains true that the debt is undischarged and that the charge lands an eighth time.** |
 
 ---
 
