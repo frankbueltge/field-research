@@ -2273,3 +2273,42 @@ which the stop does not license.** Candidate for after 2026-09-05.
   marker was still on `main` when session 137 opened. **`CONDITIONS-135.md` item 6's rule — do not
   mine a dead session's scripts for facts — now has a live instance in a different form**, and it is
   still unguarded.
+
+## Session 138 (2026-08-29)
+
+- **WHAT IS A REPORT'S PRIMARY ENUMERATION WHEN IT CARRIES BOTH A CHECKLIST AND A FINDINGS LIST?**
+  `HAND-AUDIT-137.md` §3's counting criterion does not decide it, and two instruments that could not
+  see each other landed on the hole the same day: `carve_audit_138.py`'s validation failure on
+  `VERIFIER-133.md` (a ten-row `## Item-by-item` table beside a four-item findings list) and the
+  convened counter's MEDIUM-confidence note on `VERIFIER-125.md` (five `### Finding N` items beside a
+  26-item recompute list). **Deliberately unresolved at session 138**, which had already seen which
+  files a rule would move; `CONDITIONS-138.md` item 3 binds whoever writes it to write it first and
+  say so. **Until it is written, every hand count in this arc rests on a rule this practice has
+  recorded as ambiguous.**
+
+- **IS ANYTHING IN THIS PRACTICE'S REVIEW RECORD DELIMITABLE AT FINDING GRANULARITY AT ALL — BY ANY
+  MEANS?** Two extractors have failed the pre-registered gate on fresh files. `PREREGISTRATION-138B.md`
+  replaces the machine with two independent counters per file and states K4″: if the counters disagree
+  on more than a third of files, the answer is **no**, and that null is published as the answer to
+  `POST-MORTEM.md` §8 Q1's hit-rate half. **Nobody has run a single pair of counters yet**, so the
+  question is entirely open and the design is untested.
+
+- **CAN THE HIT-RATE HALF BE MEASURED AT ALL WITHOUT DESTROYING ITS OWN BLINDING?** The primary
+  statistic (*does this pass contain at least one class-A finding?*) needs no unit boundaries and
+  could have been answered by reading each report whole — a number the same day. It was declined at
+  session 138 because a whole report announces its role in its structure, and P3 is a comparison
+  between roles; 28.4 % of *units* already carry a role tell. **Whether structural blinding of a
+  whole report is possible at all is unexamined**, and it is the one route that would make this debt
+  payable in a single session (`PREREGISTRATION-138B.md` §7).
+
+- **NOTHING ENFORCES THE REVIEW FREEZE, AND THE CHEAP GUARD IS STILL NOT BUILT.** Session 137 edited a
+  file two minutes after dispatching a reviewer that had been given it. Session 138 froze the reviewed
+  state to `FROZEN-138.sha256` and told both reviewers to verify it themselves — **which moves the
+  check onto the reviewer rather than onto a guard**, and works only for reviewers who comply. The
+  guard named as available at session 137 (hash the reviewed files at dispatch, compare on return) is
+  still not built.
+
+- **THE UNIT FLOOR'S BIAS IS KNOWN IN DIRECTION AND UNMEASURED IN SIZE.** `MIN_UNITS = 3` drops
+  passes for having fewer than three findings, and the primary statistic is per-pass. Two of 53 files
+  are dropped today; nobody has checked how many passes across this arc's whole review record would
+  fall under such a floor, or what the rate would be with them included.
