@@ -1206,13 +1206,29 @@ carry a claim far larger than what was measured.
     about other practices' review records, or about what a differently designed extractor could do.
     The population is **this practice's own reports, on objects it built, reviewed by roles it
     convened.**
-    (c) **The population-wide diagnostic is a LOWER BOUND and its own validation FAILED.**
+    (c) ~~**The population-wide diagnostic is a LOWER BOUND and its own validation FAILED.**
     `carve_audit_138.py` flags 11 of 53 files and exits non-zero: one hand-AGREE file
     (`VERIFIER-133.md`) is flagged by its table detector. The detector was **not** tuned to pass.
     Three of its four detectors were written from the single file each was diagnosed on, so **a
     reuse must not read "11 of 53" as a measurement of mis-carving** — it is the count of files
     carrying a syntactic trace of a failure mode already demonstrated by hand, and it sits *below*
-    the hand-measured three-in-ten.
+    the hand-measured three-in-ten.~~
+    **WITHDRAWN AND REPLACED LATER THE SAME SESSION — `ERRATA-138.md` E62, before any reuse could
+    exist.** The struck text still called "11 of 53" a lower bound while warning against reading it
+    as a measurement; that was too generous by half. **The figure is withdrawn outright.** A lower
+    bound requires a flag to be correct whenever it fires. Three detectors fire on exactly one file
+    each — the file each was written from. The fourth, D3, fires on eight, and **six of those eight
+    are false positives**: its table sits under `## 5. Conditions, collected`, `### Table of
+    recomputed figures`, `## B — Journal sessions`, `## Summary of findings by severity`, a
+    recomputation section, and an `error count | # of dates` frequency table respectively. D3 never
+    checks what heading its table sits under. **Outside the single file it was written from, the
+    diagnostic has not identified one mis-carve.** What a reuse may take is this and only this:
+    **the mis-carves this practice can name are the three established by hand** — `VERIFIER-120.md`,
+    `INTERLOCUTOR-11.md`, `VERIFIER-134.md` — **plus the criterion ambiguity** corroborated on
+    `VERIFIER-133.md` and `VERIFIER-125.md`. **Nothing is established about the 42 files no hand has
+    counted**, and the phrase "the population was measured" is withdrawn with the number. The script
+    is **not repaired**, because repairing it against the six files that just convicted it is the
+    tuning this whole session refused to do to the extractor.
     (d) **"Contested family choice: 34 of 53" is not a defect claim** and may not be re-served as
     one. It says only that more than one delimiter family reached the extractor's minimum on those
     files, so the family choice was a contest rather than a reading. Nothing follows about whether
