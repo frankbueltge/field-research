@@ -16,7 +16,8 @@
    "ledger/transition-confirm-2026-08-23.json",
    "ledger/transition-confirm-2026-08-25.json",
    "ledger/transition-confirm-2026-08-26.json",
-   "ledger/transition-confirm-2026-08-28.json"
+   "ledger/transition-confirm-2026-08-28.json",
+   "ledger/transition-confirm-2026-08-29.json"
   ],
   "corrections": "ledger/corrections.json",
   "corrections_sha256": "357cb2b332faa44fe605fc03882e3be5ba8699daa93fdc54e6128937a4a12ae6"
@@ -25,8 +26,8 @@
  "what_a_pass_is": "one further request to the same endpoint for the same identifier, at the instrument's own 1.0 s spacing, immediately after the reading being tested. A reading is CONFIRMED only if all five agree with it.",
  "all_readings": {
   "NOT-RETRIEVABLE->RETRIEVABLE": {
-   "n": 15,
-   "confirmed": 15,
+   "n": 16,
+   "confirmed": 16,
    "refuted": 0
   },
   "RETRIEVABLE->NOT-RETRIEVABLE": {
@@ -37,8 +38,8 @@
  },
  "genuine_transitions_only": {
   "NOT-RETRIEVABLE->RETRIEVABLE": {
-   "n": 12,
-   "confirmed": 12,
+   "n": 13,
+   "confirmed": 13,
    "refuted": 0
   },
   "RETRIEVABLE->NOT-RETRIEVABLE": {
@@ -815,6 +816,25 @@
    "generated_utc": "2026-08-28T05:26:04Z",
    "vid": "7666435890209770773",
    "handle": "swfx_real_fox",
+   "direction": "NOT-RETRIEVABLE->RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-29.json",
+   "sidecar_sha256": "f839229eea1c7aa692b7956347a0f7e781a0724e62c0be4e9d66b5409a987634",
+   "generated_utc": "2026-08-29T05:24:24Z",
+   "vid": "7141705730565901569",
+   "handle": "yukaaa0721xx",
    "direction": "NOT-RETRIEVABLE->RETRIEVABLE",
    "passes": [
     "RETRIEVABLE",
