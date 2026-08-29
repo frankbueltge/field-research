@@ -1,0 +1,10 @@
+{
+ "seed": 1381,
+ "pool": 38,
+ "draw": [
+  "./INTERLOCUTOR-131.md",
+  "./INTERLOCUTOR-3.md",
+  "./READER-128-2.md",
+  "./VERIFIER-131.md"
+ ]
+}
