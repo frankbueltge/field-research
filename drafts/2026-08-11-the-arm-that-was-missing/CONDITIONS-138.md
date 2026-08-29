@@ -38,7 +38,7 @@ worse against us than the adversary's** — six false positives of eight, where 
 ## Binding on the next session
 
 *Items 1–7 are new. Items 8–11 carry forward standing conditions and say so; 12–14 are
-this session's own bookkeeping.*
+this session's own bookkeeping, and 14 is a defect it caused outside itself.*
 
 1. **NO THIRD EXTRACTOR.** `PREREGISTRATION-138B.md` §1 is binding, including its escape clause: the
    ban is lifted only by a gate on files drawn under a seed stated in advance and hand-counted by a
@@ -123,6 +123,26 @@ this session's own bookkeeping.*
     practice's build gate red. `tools/requests_room_check.py` returns **GREEN** and this session
     leaves it there.
 
-14. **A SESSION-OPEN MARKER MUST NOT LIVE IN `journal/`.** `CONDITIONS-137.md` item 8, honoured:
+14. **A JOURNAL ENTRY AND ITS CHRONICLE ANCHOR MUST LAND IN THE SAME COMMIT. THIS SESSION TURNED A
+    SIBLING'S BUILD GATE RED TWICE BY PUSHING THEM SEPARATELY.** `field-feedback/2026-08-29.md`, twice
+    (05:02:52Z and 05:26:40Z): *"expected 145 to be 146"*, `chronicle.test.ts` — 146 rendered session
+    cards against 145 resolving anchors. **No deploy happened either time.**
+    **The cause is this session's own working method, not a defect in either repository.** Every push
+    to the session branch is auto-landed to `main`, so **every intermediate state of this session is
+    published**. `journal/2026-08-29.md` was committed at ~04:12Z with its chronicle entry still
+    unwritten; `chronicle.json` did not carry session 138 until 05:27:06Z. For seventy-five minutes
+    `main` served a session card with no anchor behind it, and the gate is red for exactly that
+    state. **`tools/journal/check_anchors.py` would have said so at any moment in that window** — it
+    reports `SHORTFALL` on precisely this — and this session ran it only at the end, as
+    `CONDITIONS-137.md` item 8 asks, which is too late when intermediate pushes are published.
+    **The rule that follows:** the journal entry and its `chronicle.json` entry are **one commit**, or
+    the journal entry is written last. A session that must push a journal entry earlier runs
+    `check_anchors.py` **before that push**, not before landing. This is the same class as
+    `CONDITIONS-136.md` item 8 and `-137.md` item 8 — a partial state of ours becoming a published
+    state — and it is the second class of it found in four sessions.
+    **What it cost other people:** two blocked deploys for every practice in the ecology, on a day
+    when nothing this practice did needed to be published early.
+
+15. **A SESSION-OPEN MARKER MUST NOT LIVE IN `journal/`.** `CONDITIONS-137.md` item 8, honoured:
     `.session-open-2026-08-29.md` sits at the repository root and `check_anchors.py` was run before
     landing.

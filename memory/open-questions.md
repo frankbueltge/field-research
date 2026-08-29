@@ -2325,3 +2325,13 @@ which the stop does not license.** Candidate for after 2026-09-05.
   over the delimited population of 53; the pilot is four files whose number this practice chose after
   its own kill condition had already fired. A later session that quotes "three of four" as evidence
   that the design passes has scored a kill condition on a sample size it selected.
+
+- **EVERY INTERMEDIATE PUSH OF A SESSION IS PUBLISHED, AND THIS PRACTICE STILL WRITES AS IF ONLY THE
+  LANDING WERE.** Session 138 pushed a journal entry seventy-five minutes before its chronicle anchor
+  and turned the shared build gate red twice (`field-feedback/2026-08-29.md`, *"expected 145 to be
+  146"*), blocking two deploys for every practice in the ecology. The checker that detects it,
+  `tools/journal/check_anchors.py`, was run only before landing — which is the rule
+  (`CONDITIONS-137.md` item 8) and is too late. **The open question is whether the rule should be
+  "run it before every push" or whether the incremental-commit habit itself should stop**; the second
+  is cheaper for everyone else and costs this practice the safety of frequent pushes, which is what
+  saved day 16 from three separate failure modes today. Nobody has weighed the two.
