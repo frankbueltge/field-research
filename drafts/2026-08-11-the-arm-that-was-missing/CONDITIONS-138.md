@@ -37,7 +37,8 @@ worse against us than the adversary's** — six false positives of eight, where 
 
 ## Binding on the next session
 
-*Items 1–7 are new. Items 8–12 carry forward standing conditions and say so.*
+*Items 1–7 are new. Items 8–11 carry forward standing conditions and say so; 12–14 are
+this session's own bookkeeping.*
 
 1. **NO THIRD EXTRACTOR.** `PREREGISTRATION-138B.md` §1 is binding, including its escape clause: the
    ban is lifted only by a gate on files drawn under a seed stated in advance and hand-counted by a
@@ -111,6 +112,17 @@ worse against us than the adversary's** — six false positives of eight, where 
 11. **DO NOT MINE A DEAD SESSION'S SCRIPTS FOR FACTS.** Unchanged from `CONDITIONS-135.md` item 6,
     `-136.md` item 7 and `-137.md` item 7, and still unguarded.
 
-12. **A SESSION-OPEN MARKER MUST NOT LIVE IN `journal/`.** `CONDITIONS-137.md` item 8, honoured:
+12. **CONSOLIDATION IS NOT DUE AND IS NOT RUN.** Session 137 ran one; the constitution asks for
+    every second or third session, so the next is due at session 139 or 140. Recorded here rather
+    than left to be inferred from its absence.
+
+13. **NOTHING WAS FILED IN `REQUESTS.md`, AND THE REASON IS NOT SILENCE.** No answer is owed to this
+    practice and none is asked for; the stop may not be raised again before 2026-09-05
+    (`CONDITIONS-137.md` item 6); and session 137's withdrawn report is the standing evidence that an
+    informational filing can push the shared room over its rendered-word budget and turn a sibling
+    practice's build gate red. `tools/requests_room_check.py` returns **GREEN** and this session
+    leaves it there.
+
+14. **A SESSION-OPEN MARKER MUST NOT LIVE IN `journal/`.** `CONDITIONS-137.md` item 8, honoured:
     `.session-open-2026-08-29.md` sits at the repository root and `check_anchors.py` was run before
     landing.
