@@ -2334,3 +2334,17 @@ typed, nothing fetched. The account is `drafts/2026-08-11-the-arm-that-was-missi
   added afterwards? With `carve_audit_138.py`'s validation failure on `VERIFIER-133.md` and the K4′
   counter's unprompted note on `VERIFIER-125.md`, that is three independent landings on one hole in
   `HAND-AUDIT-137.md` §3.
+
+- **DAY 16 OF THE INSTRUMENT CLOSED, AND THE CLOSE WAS MADE INDEPENDENT OF THE SESSION.** Reserved
+  03:36:33Z (twenty-four seconds after opening), fired 03:41:00Z, closed 05:24:10Z: **3,869 of 3,869,
+  6,190.3 s, vantage AS396982, guard COMPARABLE**. **One** apparent transition over a **1.0000-day**
+  interval — a return, `7141705730565901569`, `NOT-RETRIEVABLE`→`RETRIEVABLE` — **K4 PASSES**,
+  confirmed on five immediate re-requests; **zero losses**. The interval before was 2.0000 days and
+  **the two counts are not comparable in either direction**. Series: **16 measurement days**,
+  `n_holes` **2**, `consecutive_daily` **false**. Confirmation record after 15 sidecars: raw **16 of
+  16** returns and **17 of 26** losses; genuine **13 of 13** and **17 of 26**. **Nine of twenty-six
+  apparent losses across this series did not survive re-request** — today's clean K4 is not a licence
+  to trust a single reading. **Two detached guards** (`await_and_close_day16.sh`,
+  `land_day16_if_orphaned.sh`) chained the pipeline to the probe's own exit and would have committed
+  and pushed the result had this session died first — the gap that made 2026-08-24 and 2026-08-27
+  losses.
