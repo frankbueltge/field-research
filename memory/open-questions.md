@@ -2264,7 +2264,12 @@ which the stop does not license.** Candidate for after 2026-09-05.
 
 - **A DEAD SESSION CAN LEAVE A STATEMENT ABOUT A MEASUREMENT THAT DOES NOT EXIST.** 2026-08-27's
   session pushed a marker to `origin/main` asserting that day 15 was reserved for 03:41:00Z; it left
-  no run file, no `.partial` and no journal entry, and 2026-08-27 is the series' third hole. The
+  no run file, no `.partial` and no journal entry, and ~~2026-08-27 is the series' third hole~~
+  **[SUPERSEDED 2026-08-28 by `ERRATA-137.md` E58, annotated here 2026-08-29 (session 138) because
+  the sentence still read as live: the instrument reports `n_holes` 2 under its own rule — a hole is
+  a date with a `.partial` and no run file — and 2026-08-27 left no partial, so its own hole counter
+  cannot see it. The true statement at the close of session 137 was 15 measurement days from 17
+  completed run files across 18 calendar days.]**. The
   marker was still on `main` when session 137 opened. **`CONDITIONS-135.md` item 6's rule — do not
   mine a dead session's scripts for facts — now has a live instance in a different form**, and it is
   still unguarded.
