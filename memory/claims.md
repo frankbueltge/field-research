@@ -2240,3 +2240,56 @@ typed, nothing fetched. The account is `drafts/2026-08-11-the-arm-that-was-missi
   ground truth for that exact file in its own hand audit and did not check its repair against it.**
   It was found by the one role convened to read the primary files independently. **The recurring
   charge lands a seventh time.**
+
+## Session 138 (2026-08-29) — the second fired gate, and the first independent counter
+
+- **THE PRE-REGISTERED EXTRACTOR GATE FIRED A SECOND TIME, ON A SECOND EXTRACTOR, COUNTED FOR THE
+  FIRST TIME BY A ROLE THAT DID NOT BUILD IT.** Five files drawn under seed **1380**, stated in
+  `PREREGISTRATION-138.md` §2 and pushed to the record at **03:39:24Z — 96 seconds before the daily
+  probe fired and before the draw existed**. Eligible pool 43 of 53 (the ten already hand-audited
+  excluded by name). **Two of five disagree → K4′ fires → NO RATE IS PUBLISHED**, the same sentence
+  session 137 wrote about v1. `HANDCOUNT-138.md`.
+
+- **BOTH DISAGREEMENTS ARE THE TWO DEFECTS v2's OWN DOCSTRING SAYS IT WAS BUILT TO REPAIR**, on files
+  its design never saw, and both were recomputed here against the files before adoption.
+  `INTERLOCUTOR-11.md`: v2 carved the **six numbered remedies** of its `# CONDITIONS` section instead
+  of the five `**Claim N —**` lead-ins carrying its verdicts — *"a remedy is not a finding"*, defect
+  1. `VERIFIER-134.md`: v2 carved the **seven `## N.` chapters** instead of the six items of its
+  `## Summary of findings` — *"it preferred a report's chapters to its findings"*, defect 2. The
+  mechanism is in the code: BOLDLEAD fires only when **every** other family is below MIN_UNITS, so a
+  bold-lead-in finding family loses to any six-item numbered list.
+
+- **THE POPULATION-WIDE v2 DIAGNOSTIC IS RUN AND `CONDITIONS-137.md` ITEM 2 IS DISCHARGED**
+  (`carve-audit-138.json`). 53 files, 51 extracted, 2 unextractable. **Flagged by any detector: 11
+  (20.8 %)** — D2 heterogeneous label series 1, D3 findings-as-table-rows 8, D4 remedies-won 1, D5
+  chapters-over-summary 1. **Contested family choice: 34 of 53 (64.2 %)** — 21 of 26 Interlocutor,
+  11 of 16 Verifier, **2 of 11 reader** — and that is *not* a defect claim, only a statement that
+  more than one family reached the minimum. **The bound sits BELOW the hand result**: three of the
+  ten files ever hand-counted against v2 disagreed, against three files the precise detectors name
+  population-wide. **Three of ten is a count, not a rate.**
+
+- **THE DIAGNOSTIC'S OWN VALIDATION FAILS AND WAS NOT TUNED TO PASS.** It exits 1: `VERIFIER-133.md`
+  is hand-AGREE at 4 and D3 flags its ten-row `## Item-by-item` table. **The failure located a defect
+  in the study's counting rule, not in the extractor** — `HAND-AUDIT-137.md` §3 does not decide
+  between an item-by-item checklist and a findings list in a verification report. **The convened
+  counter found the same hole independently, unprompted, on a different file** (`VERIFIER-125.md`,
+  AGREE at MEDIUM confidence, naming a competing 26-item recompute list). Deliberately not resolved:
+  this session has seen which files it moves.
+
+- **THE UNIT FLOOR DROPS WHOLE PASSES FROM A PER-PASS STATISTIC, AND IT WAS FOUND BY RUNNING THE
+  DIAGNOSTIC, NOT BY READING IT.** `VERIFIER-124.md` is reported UNEXTRACTABLE but is not uncarvable:
+  it states exactly **two** findings and `MIN_UNITS = 3` drops it. `INTERLOCUTOR-16.md` enumerates
+  nothing. **Two different conditions under one label**, and the study's primary statistic is
+  per-pass — so a floor that removes passes for having few findings removes, preferentially, the
+  passes least likely to contain a class-A unit (`CONDITIONS-138.md` item 5).
+
+- **AND THIS SESSION PUBLISHED ONE QUANTITY TWO WAYS IN TWO OF ITS OWN DOCUMENTS.** The age of the
+  debt is *"four sessions"* in `PREREGISTRATION-138.md` §5 and *"five sessions"* in
+  `PREREGISTRATION-138B.md` §6, with neither saying which reading it uses (`ERRATA-138.md` E59,
+  found by the conductor against its own files before either reviewer reported). The class is
+  `CONDITIONS-137.md` disposition 3 one session later.
+
+- **NOTHING WAS CLASSIFIED. NO LABEL EXISTS. `downstream-commitments.md` CONDITION 37(b) IS
+  UNDISCHARGED.** Two pre-registered kill conditions have now fired on the hit-rate half of
+  `POST-MORTEM.md` §8 Q1 and no unit has ever been labelled by anyone. The pinned dataset is
+  untouched, its three hashes still match, and it carries the known `VERIFIER-120.md` conflation.
