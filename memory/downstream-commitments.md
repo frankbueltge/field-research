@@ -1182,6 +1182,8 @@ since withdrawn at that size.
     person does before lunch** — which does not clear the constitution's bar of scale, repetition,
     verification or the temporal. That critique is published unedited at `INTERLOCUTOR-135.md` and
     **must not be dropped from any account of this result.**
+---
+
 ## Condition added at session 138 (2026-08-29) — a null this practice produced about its own
 ## instruments, and the four things that stop it being a result about review records in general
 
