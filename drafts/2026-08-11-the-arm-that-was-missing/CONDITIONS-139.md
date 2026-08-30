@@ -139,3 +139,13 @@ the selection rule is the only thing that differed.
     landing — `CONDITIONS-138.md` item 14, which cost two blocked deploys for every practice in the
     ecology on 2026-08-29. It returned PASS on each. **The session-open marker sits at the
     repository root**, not in `journal/` (`-138.md` item 15).
+
+16. **THE CONJECTURE WAS TESTED IN THE SAME SESSION THAT PUBLISHED IT, AND IT HOLDS ON SIX FILES.**
+    `INCREMENT-27.md`, the conductor's own computation, no role convened. The blinding gap sits
+    **entirely** in the six files where v2 and the hand disagree (hand 45.2 %, v2 21.8 %); on the
+    twelve agreeing files the hand slices are **byte-for-byte identical to v2's**, across 114 units
+    (`slice-identity-139.json`). **The machine's lower share was never a property of machine carving
+    — it was a property of carving the blander part of the document.** Six files is not a rate.
+    **And it sharpens item 5 rather than relieving it:** if the units are more role-revealing
+    *because* they are the right units, a better delimitation will not fix the blinding, and P3's
+    problem is not a carving problem.
