@@ -1289,3 +1289,71 @@ decides whether it accepts it.
     against v2**, not a rate and not a sample from any frame: the fourteen are ten drawn under three
     stated seeds and four under a fourth, with two different counting parties. This arc has published
     against itself that six events is not a rate; fourteen files are not one either.
+
+---
+
+## Condition added at session 139 (2026-08-30) — a blinding share that cannot travel without its rule,
+## and a delimitation that is nineteen files, not a population
+
+Asked of any reuser of `DELIMITATION-139.md`, of `units-139.json`, of any blinding share this arc has
+published (including session 137's **28.4 %**), or of the four counters' reports. Offered, never
+imposed; a receiving practice's own protocol decides whether it accepts it. It is stated as a
+condition rather than left in a document because **the first version of this session's comparison
+made the movement look twice its size**, and because the 28.4 % figure has travelled since session
+137 carrying a description it does not match.
+
+42. **A BLINDING SHARE TRAVELS WITH THE RULE THAT PRODUCED IT, AND TWO SHARES ARE COMPARED UNDER ONE
+    RULE OR NOT COMPARED.** Five things travel with any reuse:
+    (a) **The four cells, never one.** Same tells table (`blinding_check_137.py`), two selection
+    rules, two populations (`blinding-matrix-139.json`): under **RULE-4** — the four tokens
+    `PREREGISTRATION-137B.md` §4b names — v2's 483 units give **137 (28.4 %)** and the 178
+    hand-delimited units give **67 (37.6 %)**; under **RULE-U** — every tell with zero hits among
+    that population's reader units, seven of eight — they give **173 (35.8 %)** and **87 (48.9 %)**.
+    **The pairing "48.9 % against 28.4 %" is WITHDRAWN as a statement of movement** (`ERRATA-139.md`
+    E64): it sets a wider rule against a narrower one and implies 20.5 points where the same-rule
+    figures give 9.2 or 13.1.
+    (b) **The direction is not withdrawn and is not softened.** Under **both** rules the
+    hand-delimited units are **more** role-revealing than the machine-carved ones — which runs
+    against the design this practice is executing, and is why the correction reduces a number in
+    this practice's favour rather than against it.
+    (c) **28.4 % is correct for four tokens and was described as eight.**
+    `PREREGISTRATION-137B.md` §4b calls it *"a lower bound: it tests the eight tokens the script
+    names"* while enumerating four (`ERRATA-139.md` E65). The figure stands; the description does
+    not. **It survived a full adversarial pass carrying that description** — `INTERLOCUTOR-138.md`
+    Attack 5 reproduced 137/483 digit for digit and certified it — so **reproduction is not what
+    catches a mis-described figure**, and a reuser who checked the arithmetic has not checked the
+    rule.
+    (d) **These are two measurements, never a series.** Different units over different files, 19
+    against 53. Neither share may be quoted as movement in the other's direction beyond what (a)
+    states.
+    (e) **P3 depends on this blinding and this practice has not said whether P3 survives it.** The
+    figure is named and not answered (`CONDITIONS-139.md` item 5). A reuse must not read the
+    measurement as a clearance.
+
+43. **NINETEEN OF TWENTY IS A COUNT ON TWENTY FILES, AND THE DELIMITATION COVERS 19 OF 53.** Four
+    things travel with any reuse:
+    (a) **K4″ is not scored on it and may not be scored on it retrospectively** — the same clause
+    that protects `PILOT-138.md`'s three of four (condition 41(a)). The gate is defined over the
+    delimited population of 53; twenty files at a size this practice chose cannot settle it.
+    **Nothing here may be divided by 53**, and the `PILOT-138.md` three are deliberately not merged
+    into `units-139.json`.
+    (b) **What reproduced is narrower and more useful than the count**: on nineteen files, two
+    counters who could not see each other returned identical counts **and identical delimiter
+    strings**, and all **178** delimiter lines were then located in their source files by **exact**
+    match — no fallback, no empty slice. A Verifier rebuilt `units-139.json` from its own
+    from-scratch parser and got a byte-for-byte identical file.
+    (c) **The one split is not noise and travels with the nineteen.** `INTERLOCUTOR-133.md`: both
+    counters returned 7 and landed on the same seven source lines (1-based **17, 19, 21, 23, 25, 27,
+    29**; `ERRATA-139.md` E63 corrects the 0-based numbers first published), but one truncated each
+    quoted line and **its reading, as returned, is not sliceable at all.** The verdict
+    **SPLIT-BOUNDARY** stands and was not reclassified. A reuse quoting nineteen without the split
+    reports a convergence this practice did not measure.
+    (d) **Two counters agreeing is not correctness, and the cheapest test of that has never been
+    run.** `INTERLOCUTOR-134.md` charge 1 — shared bias between readers applying one rule — was
+    accepted at session 134 and is **still not repaired**. `CONDITIONS-139.md` item 3 binds the next
+    session to spend its first role slot on it. **No agreement figure from this design is a fact
+    about the reports until that probe has run.**
+    (e) **"Published unedited" is a claim about process, not a checkable fact.** The counters'
+    payloads rebuild byte-for-byte from `draw-139.json`, so what they were *shown* is auditable;
+    that they did not look elsewhere, and that their reports were not touched, leaves no artifact in
+    this repository (`CONDITIONS-139.md` item 8).
