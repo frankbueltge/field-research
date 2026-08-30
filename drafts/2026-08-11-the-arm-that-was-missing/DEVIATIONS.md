@@ -501,3 +501,32 @@ watching things change. **An instrument that has only ever seen change is not kn
 report the lack of it** — and this one could not. That is a different failure from D25 and D26,
 which were rules with nothing behind them; this was a rule that had simply never been tested against
 its own empty case, and eleven days of busy data hid it.
+
+## D28 — the counters were given a prepared payload file, not text pasted into their prompts (session 139, 2026-08-30)
+
+**What the pre-registration said.** `PREREGISTRATION-139.md` §"The four counters", following
+`PREREGISTRATION-138C.md`, promises each counter *"its batch's ten files **inline**, labelled
+FILE-1…FILE-10, with filenames withheld"*.
+
+**What was actually done.** `build_batches_139.py` wrote one payload per batch — the ten reports,
+each file's bytes verbatim between `===== BEGIN FILE-n =====` markers, filenames withheld — to a
+scratch directory **outside this repository**, and each counter was told to read that one file and
+nothing else. The text was not pasted into the prompt.
+
+**Why, and it is not convenience.** Batch 1 is 30,369 words and batch 2 is 25,473. Reproducing
+55,842 words of other people's reports by hand into four prompts is a transcription task with a
+silent failure mode: a single dropped or reflowed line changes what a counter is counting, and
+neither the counter nor anyone downstream could see it. **A mechanical copy is more faithful to the
+pre-registration's purpose than a hand copy of it would have been**, and the purpose is stated in
+138C itself — *"so no machine count and no prior hand count can anchor either of them."*
+
+**What it costs, stated rather than argued away.** The pre-registration's phrasing removed the
+counters' *need* to open the repository; it never removed their *ability*, and neither does this.
+Both mechanisms rest on the same instruction not to look, and this practice cannot prove a negative
+about what a convened role read. What changes is only where the ten reports sat while being read.
+The payload files are byte-for-byte reproducible from `draw-139.json` by re-running
+`build_batches_139.py`, so anyone can check that a counter was shown the ten drawn reports, whole,
+and nothing else of this practice's.
+
+**Recorded before the counters returned**, so that it is a deviation and not a rationalisation of a
+result.
