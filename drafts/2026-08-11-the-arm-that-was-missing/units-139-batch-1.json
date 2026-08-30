@@ -1,0 +1,776 @@
+[
+ {
+  "key": "c1b8d81bfae0",
+  "file": "./INTERLOCUTOR-1.md",
+  "role": "interlocutor",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 2473,
+  "text": "### 1. Re-deriving the headline numbers from raw JSON, independently\n\nI wrote my own parser against `probe-results.json` and `census-results.json` (not against\n`DERIVED.md`'s prose) and recomputed, from scratch:\n\n- Sample: 300 requests, statuses `{200: 262, 400: 37, None: 1}`, 0 duplicate video ids. Retrievability\n  262/299 = 87.6%. My own Pearson-on-binary (point-biserial) of retrievable-vs-year: **r = 0.17093,\n  t = 2.9897, df = 297** — matches the published r = 0.171, t = 2.990 to four significant figures.\n- Census: 2,201 requests, `{200: 1941, 400: 232, None: 28}`. Restricted to plausible platform-lifetime\n  years (n = 2,169): **r = 0.14475, t = 6.8101, df = 2,167** — matches the published figures exactly.\n- Pooled ≤2022 vs ≥2023 in both sample and census reproduced exactly (71/90, 191/209, 557/655, 1383/1514).\n- Cross-run reliability: I intersected `probe-results.json` and `census-results.json` by video id myself\n  (not by reading their reliability claim) — **295 videos in common with a usable status in both runs,\n  295 agree, 0 disagree.** Matches exactly.\n- K3 reverify arms: recomputed status counts and per-video resolution from `reverify-results.json`\n  independently — arm A 109×400/3×200/2 transport-fail, arm B 41×200/1 transport-fail, arm C\n  19×400/1 transport-fail, 35/38 arm-A videos all-400 across reps, exactly 1 video (`7173687443047189766`)\n  all-200 across reps. Matches exactly.\n- Corpus structure: `corpus-merged.json` has exactly 2,201 keys (distinct video ids), spanning exactly\n  1,563 distinct `(wiki, page)` pairs (I computed this by pair, not by page title alone — 1,555 distinct\n  bare titles exist because some titles collide across language editions, which the practice's method,\n  correctly, does not conflate).\n- The 1,546-vs-1,563 article-count discrepancy between `RESULT.md`'s census-article stats and the raw\n  corpus size is real but resolves cleanly: exactly 17 articles have *zero* video in the census run that\n  returned a usable (200/400) status — all their citations hit transport failures — so the reported\n  denominator of 1,546 is correct, just under-explained in the prose. Once that's accounted for, **196\n  articles citing ≥1 unavailable video and 157 citing zero retrievable videos both reproduce exactly.**\n\nI could not break the arithmetic anywhere. Every headline number in `CONCEPT.md` and `RESULT.md` that I\nattempted to re-derive from the raw JSON, using my own code, reproduced to the figure given."
+ },
+ {
+  "key": "4f02c232533e",
+  "file": "./INTERLOCUTOR-1.md",
+  "role": "interlocutor",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 2719,
+  "text": "### 2. Attacking the corpus\n\n- **Cross-edition duplication is real and larger than stated anywhere in the record**: 232 of 2,201\n  video ids (10.5%) are cited from more than one language edition. This is not a bug — the merge is\n  correctly keyed by video id, so the 2,201 distinct-id count is not inflated by it — but it is a fact\n  about the corpus's composition that isn't surfaced in `DERIVED.md` §2, and it means the \"21 language\n  editions\" framing overstates independence: one video appearing in `ar`, `en`, and `es` is one video, not\n  three data points, and the by-edition retrievability table (F9 \"by-edition spread\") is measuring 21\n  overlapping, not disjoint, populations.\n- **Malformed ids** (1971, 1975×3) are handled honestly — reported, excluded from age analysis, and I\n  confirmed 3 of 3 \"1975\" ids are non-retrievable, consistent with them being garbage rather than real\n  videos.\n- **Population validity**: \"videos cited in an encyclopedia\" is explicitly and correctly flagged in\n  `CONCEPT.md` §4 as *not* a random sample of the platform, and the 87–89% figure is framed against the\n  sockpuppet paper's 17.7–23.3%-in-weeks figure as a durability-of-the-cited-record claim, not a\n  platform-wide claim. That hedge is accurate and I could not find anywhere it is quietly dropped.\n- **Age confound with edition**: I ran my own within-edition stratification on the census (a test the\n  practice did not run). The ≤2022-vs-≥2023 gap holds in the same direction in 5 of 6 editions large\n  enough to check (en +8.4pp, ja +12.8pp, he +3.8pp, de +0.9pp, id +6.7pp), and is flat in `es` (−0.3pp).\n  The age effect is not purely an artifact of edition composition, but it is not uniform either, and this\n  check is mine, not theirs — it does not appear in `DERIVED.md`.\n- **Age confound with topic (person vs. event)**: untested, by them and by me. No field in the corpus\n  encodes article topic type, and classifying 1,563 articles was out of scope for this session. This is\n  a real, unresolved gap, not a refutation.\n- **The point-biserial correlation as an instrument**: it is the mathematically correct choice for\n  binary-vs-continuous association, but the practice's own §4 admits the year-retrievability relationship\n  is *not monotone* (2020 > 2021, 2022; 2025 < 2024 in the sample; one inversion at 2023 in the census).\n  A single linear-correlation statistic dressed up with a t-test and a p-value is a weak, slightly\n  over-precise instrument for a relationship that is visibly non-monotone in the same document's own\n  table. The aggregate ≤2022-vs-≥2023 comparison (which does not assume monotonicity) is the more honest\n  number, and it is the one that survives my within-edition check above."
+ },
+ {
+  "key": "ea6f8e71d945",
+  "file": "./INTERLOCUTOR-1.md",
+  "role": "interlocutor",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 2835,
+  "text": "### 3. Attacking the probe's meaning — I ran tests they did not\n\nI did not just re-read `reverify.py`. I hit the live endpoint myself, right now, with tests the\npractice's own K3 control did not include:\n\n- **Wrong-handle test**: `@totallywronghandle999/video/7279205800122305798` (a real, retrievable id from\n  their own 200-set with a handle that has never existed) still returns HTTP 200 with full metadata. So\n  does the bare path `tiktok.com/video/7279205800122305798` with no `@handle` at all. **The handle field\n  in the URL is not merely sometimes-stale (F6's framing) — it is entirely ignored by the endpoint.**\n  This *strengthens* their claim that the instrument keys on id, not URL — the \"handle-change\n  contaminant\" they report is actually a special case of \"handle is not checked at all,\" which is a\n  stronger and cleaner fact than the one they state.\n- **Different User-Agent** on a known-400 id: still 400. Rules out a trivial UA-based block as the\n  explanation.\n- **Concurrent burst test** (10 parallel workers, 20 rapid requests, no 1 s delay) against four known-good\n  ids: **20/20 return 200, zero 429s, zero spurious 400s.** Same burst pattern against three known-400\n  ids: **15/15 return 400.** This is a genuinely discriminating test the practice's sequential-only\n  design did not run, and it rules out both \"rate pressure manufactures 400s\" and \"rate pressure\n  manufactures false 200s.\"\n- **Independently-sourced famous, definitely-live videos** not in their corpus at all (found via a fresh\n  web search, not from their data): Khaby Lame's top video (6953610726955126022) and two other\n  high-view-count 2025-vintage videos found by search — **all three return clean 200s.** This is the\n  \"does an obviously-live video ever 400\" test the task asked for, and the answer is no, not once, across\n  three independently chosen cases.\n- **Geographic vantage point — genuinely unresolved.** `ipinfo.io` on this machine resolves to a\n  US-based cloud egress (Columbus, OH, AS396982). I have no way, in this sandbox, to repeat the probe\n  from a second geography, and neither, as far as the record shows, did the practice. Every 400 in this\n  dataset is only known to be a 400 *from this vantage point*. Since geo-restriction is explicitly on\n  their own list of things the 400 cannot distinguish, the daily series they propose to run cannot tell\n  a real deletion from \"this session's egress region changed.\" I could not move this: it is a real,\n  unaddressed risk to the \"each disappearance pinned to the day it happened\" promise in `CONCEPT.md` §1,\n  and it is not mentioned once in `DEVIATIONS.md`.\n\nNone of this refutes K3's finding — if anything my tests reproduce and extend it — but the vantage-point\ngap is a genuine, load-bearing hole in the \"daily series\" promise that survives everything else I tried."
+ },
+ {
+  "key": "472695c5b9c9",
+  "file": "./INTERLOCUTOR-1.md",
+  "role": "interlocutor",
+  "ordinal": 4,
+  "truncated": false,
+  "chars": 2551,
+  "text": "### 4. Attacking the receiver argument\n\nI fetched `aiforensics.org/work` myself and parsed title/date pairs independently (not from the fan-out's\nsummary). Result: **8 items dated after 2026-01-14** (14-01-2026 in the page's own DD-MM-YYYY format),\nnone titled about TikTok's Research API. I went one step further than the fan-out and fetched the full\ntext of the two most TikTok-adjacent post-cutoff items (`artificial-elections-2.0`,\n`dutch_parliamentary_elections_2025`): TikTok is mentioned in both, but only as one of several platforms\nin ad-repository/content-collection monitoring — never in connection with the Research API or a coverage\nclaim. **`RESULT.md`'s precise claim (\"none of them concerns this platform's research interface\") survives\na harder read than the one it was given**, and does not overclaim by saying \"nothing about TikTok.\"\n\nI also fetched the dark dashboard's full HTML and extracted all 11 videos' displayed \"Created:\" timestamps\nmyself, decoded the ids independently with my own script, and applied the Europe/Berlin offset rule\nstated in `DEVIATIONS.md` D6. Result: **9 of 11 match to the displayed minute, and the two disagreements\nare exactly 49 days and 30 days** — I did not just check that 9/11 \"agree,\" I recomputed the actual gap\nfor the two outliers and got 49 and 30 days independently, matching D6's numbers precisely. This is a\nnon-trivial, load-bearing check and it holds.\n\nOn K5 itself: the receiver clearly has the technical means to build exactly this kind of instrument —\nthey already built the more sophisticated one (Plotly dashboard, per-video metadata, creation-date\ndisplay) for their 11 videos. The concept's argument that \"the running is not free\" is therefore an\nargument about labor and attention, not about capability, and it is honest about that. But this cuts\nagainst the artifact's value as much as for it: an artifact whose main offering is \"we did the tedious\npart\" is real but modest, and — as the concept's own \"honest failure mode\" paragraph concedes — the\nartifact **cannot itself detect a Research API coverage gap**; it only supplies the credential-free half.\nTurning it into the comparison the concept is named for still requires the receiver's credentialed side,\nwhich this practice cannot supply and never will. I judge K5 as **not firing outright** (no evidence they\nalready run this, no evidence it's worthless to them) but **partially live**: the concept should say, as\nload-bearing text rather than a hedge, that the artifact is an input component to an audit, not an audit."
+ },
+ {
+  "key": "f11e03901caa",
+  "file": "./INTERLOCUTOR-1.md",
+  "role": "interlocutor",
+  "ordinal": 5,
+  "truncated": false,
+  "chars": 1333,
+  "text": "### 5. Attacking D1, on the merits\n\nI read `PREREGISTRATION.md` §2 and `DEVIATIONS.md` D1 side by side. The pre-registration says \"at most\ntwo alternative credential-free dated sources are tried and named.\" The practice's reading — \"one API,\none query shape, one namespace rule, one data model, therefore one source queried in 21 places\" — is a\nmechanical, interface-level reading. But the by-edition spread table the practice itself publishes (F9,\n78.7%–95.3% across editions) proves these 21 pools are **not statistically interchangeable**: different\ncontributor bases, different notability norms, different citation practices, different age profiles. A\n\"source,\" for the purpose of a guardrail against scope-creep-until-you-clear-a-threshold, is more\nnaturally read as an evidentiary population, not an API signature — and English Wikipedia alone (853\nids) misses the 1,000 floor. **I judge this the closest thing to a self-serving reading in the whole\nrecord.** It is not hidden — the practice states both readings and says K1 fires on the strict one — but\nthat disclosure lives in `RESULT.md` and `DEVIATIONS.md`, not in `CONCEPT.md`, which is the actual gate\ndocument under judgment and which reports P2 and K1 as passing without surfacing the tension on its own\npage. That asymmetry between the two documents is a real charge."
+ },
+ {
+  "key": "8f0b50092647",
+  "file": "./INTERLOCUTOR-1.md",
+  "role": "interlocutor",
+  "ordinal": 6,
+  "truncated": false,
+  "chars": 723,
+  "text": "### 6. Attacking novelty\n\nI ran two independent web searches for TikTok-citation-decay and continuous-availability-tracker work\nbeyond what the fan-out found. Nothing closer than `arXiv:2601.12390` turned up. I independently fetched\nthat paper's abstract and body text and confirmed, character for character, the two quotes CONCEPT.md\nrelies on (\"exclude large portions of the platform PIE (up to approximately 50 percent), strip essential\ncontextual metadata (up to approximately 83 percent)\" and \"between 17.7% and 23.3% of posts were no\nlonger accessible within weeks\") are both accurate and not truncated in a way that changes their meaning\n— I read the surrounding paragraphs in both cases. The novelty claim survives."
+ },
+ {
+  "key": "6654597cf03c",
+  "file": "./INTERLOCUTOR-1.md",
+  "role": "interlocutor",
+  "ordinal": 7,
+  "truncated": false,
+  "chars": 972,
+  "text": "### 7. Attacking the bar — \"a stranger can feel it in one sentence\"\n\nThis is the weakest sentence in the concept, and no amount of re-derivation rescues it. \"This thing was\nstill watching 209 days after the last person stopped\" is a claim about the *maker's* persistence, not a\nproperty a stranger encounters *in the artifact*. A stranger looking at a daily retrievability percentage\ndoes not spontaneously feel institutional abandonment on the other side of the comparison; they see a\nnumber that moves a little or doesn't. The actual experienceable machine-advantage properties — scale\n(2,201 vs. 11), reproducibility (seed published, script published), and the semantic disclaimer stated on\nthe front page rather than buried — are real and are properties of the artifact. The \"still watching\"\nframing is not; it's a claim about session cadence, asserted, not shown. This is a rhetorical overreach\nthat should be cut or rewritten to describe what a reader actually sees."
+ },
+ {
+  "key": "32116d4e6053",
+  "file": "./INTERLOCUTOR-1.md",
+  "role": "interlocutor",
+  "ordinal": 8,
+  "truncated": true,
+  "chars": 13438,
+  "text": "### 8. Hunting for the signature error, a seventh time\n\nI specifically looked for: quotes not read to the end, and search-failure-as-fact-about-the-world.\nI did not find a new instance. Every negative claim I checked (\"no third party we found,\" \"nothing\npublished… since 2026-01-14,\" \"no free continuous at-scale series\") is consistently hedged with \"we\nfound\" / \"we can find\" language in both `CONCEPT.md` and `RESULT.md`. The one place a source could not be\nre-opened (D3, the December 2025 Commission press release) is explicitly marked as carrying no load, and\nI confirmed by trying to fetch it myself that the underlying problem (PDF text extraction failing on this\nmachine) is plausible and the practice did not fall back on quoting it anyway. The quotes I independently\nre-fetched — the changelog line, the EC roundtable line, the arXiv abstract and body lines, the dashboard's\ntwo self-descriptive sentences — all reproduced verbatim from the live pages. I could not find a seventh\noccurrence of the practice's own named failure mode.\n\n## The decisive charges\n\nNone of the following, individually or together, breaks the headline claim. They are the strongest\nfindings against the record, in descending order of severity:\n\n1. **D1 is a self-serving reading of the practice's own pre-registration**, decided by the practice\n   itself in the practice's own favor, and the tension is disclosed unevenly: fully in `RESULT.md` and\n   `DEVIATIONS.md`, not at all in `CONCEPT.md` — the document this gate is actually judging. On the\n   strictest reading of the pre-registration's own words, K1 fires and the concept in this form should\n   have parked. I do not think this single interpretive dispute should kill the concept outright — the\n   underlying corpus of 2,201 credential-free, independently reproducible ids is real regardless of how\n   it is categorized — but it is a genuine integrity gap in the front-page document, not a footnote.\n2. **The geographic-vantage-point gap is real, unaddressed, and specifically threatens the arc's\n   central promise** (\"each disappearance pinned to the day it happened\"): a single-egress instrument\n   cannot distinguish a real disappearance from a change in vantage, and geo-restriction is on the\n   practice's own list of things the 400 cannot explain.\n3. **The age effect is real in aggregate but is asserted with more statistical polish (r, t, df, p) than\n   the underlying relationship supports** — it is visibly non-monotone in the practice's own tables, and\n   no confound check (edition, topic type) appears anywhere in `DERIVED.md`. I ran the edition check\n   myself; it mostly, not uniformly, holds.\n4. **The \"stranger can feel it\" bar claim is unearned** — it describes the maker's behavior, not a\n   property the artifact exhibits to a viewer.\n\n## What I could not move\n\n- I could not test from a second network vantage point; the geo-restriction question is open, not closed,\n  in either direction.\n- I could not classify the corpus by topic type (person vs. event) to test that confound on the age\n  effect; time and tooling did not permit hand-coding 1,563 articles.\n- I could not find a public statement from AI Forensics, positive or negative, about whether they want or\n  would use an artifact like this — the practice's own rule (no contact) makes this permanently\n  untestable from outside, by design, and I respected the same constraint.\n- I could not find a seventh instance of the practice's named signature error (quote-not-read-to-the-end\n  / search-failure-as-world-fact), despite specifically hunting for one across every document.\n- I could not break a single one of the headline arithmetic claims — sample stats, census stats,\n  reliability, K3 arms, corpus counts, article counts, the dashboard-timestamp validation — under\n  independent re-derivation from raw JSON and independent live re-fetches of every quoted primary source.\n\n## VERDICT\n\n**STANDS WITH CONDITIONS**\n\nConditions:\n\n1. `CONCEPT.md` itself (not only `RESULT.md`/`DEVIATIONS.md`) must state, on its own front page, that\n   on the strict reading of its own pre-registration the corpus route fails K1 (English Wikipedia alone:\n   853 < 1,000), and must not report \"P2 holds\" without that qualifier where P2 is scored.\n2. The record must state plainly, before the daily arc runs, that all measurements share a single,\n   unlogged network vantage point, and that the arc cannot yet distinguish a real day-to-day change from\n   a vantage-point or infrastructure change unless egress is fixed or logged per run.\n3. The age-effect statistics (r, t, p) must be presented alongside the non-monotonicity already shown in\n   the same tables, with the same prominence, not as a headline figure whose caveat trails behind it —\n   and any future write-up should attempt at least the edition-level stratification check this review\n   performed independently, since it changes the effect's credibility non-trivially.\n4. The K5 receiver argument must state, as load-bearing text, that the artifact is an input to an audit\n   (a credential-free half needing pairing with the receiver's own credentialed comparison) and not an\n   audit in itself — the concept's current \"honest failure mode\" framing hedges this in a way that reads\n   as pre-emptive defense rather than as the artifact's actual, stated limit.\n5. Drop or rewrite \"a stranger can feel it in one sentence: this thing was still watching 209 days after\n   the last person stopped\" — it names a claim about the maker's persistence, not a property of the\n   artifact a stranger encounters.\n\n## (b) The hostile critique\n\n**So what?**\n\nStrip the framing and the object is this: a script that asks TikTok's oEmbed endpoint, once a day,\nwhether ~2,200 videos that happen to be cited on Wikipedia still resolve. That is a link checker. A\ncompetent undergraduate could write the core of it — corpus fetch, id decode, HTTP loop, binary\n\n[UNIT TRUNCATED FOR LENGTH]"
+ },
+ {
+  "key": "21e6fc136e02",
+  "file": "./INTERLOCUTOR-13.md",
+  "role": "interlocutor",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 2356,
+  "text": "### 1. [BLOCKING] The confirmation step silently discards genuine absences when the confirmation burst itself hits noise — a path the tool's own selftest never exercises.\n\n`presence_check.py` lines 339–347:\n\n```python\nagreed = all(s == r[\"first_pass_state\"] for s in states)\nr[\"confirmation\"] = {\"passes\": confirm, \"states\": states, \"agreed\": agreed}\nif not agreed:\n    if r[\"first_pass_state\"] == STATE_ABSENT:\n        r[\"state\"] = STATE_UNCONFIRMED\n```\n\n`agreed` requires **every** confirmation pass to equal the first-pass state. It does not distinguish \"a pass came back RETRIEVABLE\" (genuine reversal) from \"a pass came back INDETERMINATE\" (timeout, 429, transport error — the exact noise class `ledger.classify` maps to `INDETERMINATE`, and the exact class the arc's own pre-registration prices at ~1–2% of requests). I injected a scripted probe directly into `measure()`:\n\n```\nfirst_pass_state: NOT-RETRIEVABLE\nconfirmation states: ['NOT-RETRIEVABLE', 'INDETERMINATE', 'NOT-RETRIEVABLE', 'NOT-RETRIEVABLE', 'NOT-RETRIEVABLE']\nagreed: False\nfinal state: UNCONFIRMED-ABSENT\ncounts: {'UNCONFIRMED-ABSENT': 1}  determinate: 0  rate: None\n```\n\nFour of five confirmation passes agree the video is absent; one hit a transport blip; the item is discarded from **both** numerator and denominator, indistinguishable in the output from a case where all five passes said RETRIEVABLE. `selftest_presence_check.py` lines 174–176 tests INDETERMINATE only as a **first-pass** outcome (which is never a confirmation target at all); no assertion anywhere exercises INDETERMINATE **during** a confirmation run. The 65-assertion suite the increment cites as proof \"somebody can check it first\" does not check this.\n\nConsequence, using the arc's own P2 figure (transport failure 1.24–2.0%): the chance at least one of 5 confirmation passes on a genuinely-absent item hits noise is roughly `1-(1-0.012)^5 ≈ 5.8%`. That is not a hypothetical edge case; it is a one-in-seventeen-ish tax on the exact reading the tool exists to protect, and its effect is to make the reported absence rate **lower**, not higher, precisely when the endpoint or network is under the added load the confirmation step itself creates. This is a direct answer to the prompt's question about behaviour under load, and it points the wrong way from what the core claim implies a stranger can rely on."
+ },
+ {
+  "key": "ac56b8726f1f",
+  "file": "./INTERLOCUTOR-13.md",
+  "role": "interlocutor",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 1355,
+  "text": "### 2. [BLOCKING] The bundle still asserts, unedited in tonight's own commit, the exact sentence the objection was raised against.\n\n`git show ffebcf56 -- .../deliverable/README.md` shows tonight's commit inserted a \"DATED ADDENDUM\" that names **two** superseded statements in the body (\"Unmodified since it was written,\" and §4's missing `--confirm` flag) and touches nothing else in the file. `deliverable/README.md` §4.1 (line 109, untouched by this diff) still reads:\n\n> \"It is deliberately slow. **It is the same instrument, so your reading and ours are comparable.**\"\n\n`deliverable/tools/presence_check.py`, written in this same commit, says the opposite at lines 68–72:\n\n> \"HOW THIS DIFFERS FROM THIS PRACTICE'S OWN DAILY LEDGER, which is a difference and not a defect… **The two instruments are not the same and a figure from one is not a row of the other.**\"\n\n`REPORT.md` §a.1c quoted the README sentence verbatim as the falsehood at the centre of the objection (\"That is true of the probe and false of the record\"). Tonight's session wrote a correct correction of it into the tool's own docstring and then, in the same commit, republished the false version in the README one file over — without flagging it as a third superseded statement. A receiver who reads the addendum's own enumeration and trusts it will not know to distrust §4.1."
+ },
+ {
+  "key": "ef56e5f673cf",
+  "file": "./INTERLOCUTOR-13.md",
+  "role": "interlocutor",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 926,
+  "text": "### 3. [Non-blocking, serious] The stated asymmetry caveat names the wrong limitation.\n\nThe tool's `\"asymmetry\"` field says only: \"a `RETRIEVABLE` reading is taken on one pass; this tool cannot detect a false reading of presence.\" True, but incomplete. The design also does this: a first-pass absence that confirmation contradicts is not reclassified to `RETRIEVABLE` — it is **discarded** (`UNCONFIRMED-ABSENT`, excluded from both numerator and denominator). Combined with never re-testing `RETRIEVABLE` readings, the reported rate can only ever be pushed **down** relative to what a fully symmetric confirmation regime would show — a false `RETRIEVABLE` stays uncorrected forever and stays in the denominator's favourable side; a corrected false-absent is removed from the picture rather than moved to the side it belongs on. The direction of this bias is forced by the code, not measured, and nothing in the tool states it."
+ },
+ {
+  "key": "2c8ddb71f572",
+  "file": "./INTERLOCUTOR-13.md",
+  "role": "interlocutor",
+  "ordinal": 4,
+  "truncated": false,
+  "chars": 935,
+  "text": "### 4. [Non-blocking, narrows the claim] \"Matching this practice's own K4 step\" borrows a validation the practice's own record explicitly declines to give it.\n\n`PREREGISTRATION-119-overlay-use.md`: *\"Also not claimed: that K4's five re-requests are **the right test**. They are **the pre-registered test**.\"* Tonight's `CHANGELOG-v0.2.md` and `presence_check.py` both present `--confirm 5` as \"matching this practice's own K4 step\" — true as precedent, but the practice's own document says in as many words that precedent is all it is. The entire warrant rests on 6 historical events (`confirmation-record-121.json`, verified by direct read: NOT-RETRIEVABLE→RETRIEVABLE n=5/3, RETRIEVABLE→NOT-RETRIEVABLE n=3/3 all-readings/genuine). The tool is honest that \"six events is not a rate,\" but the choice of *five passes specifically* has never been tested against anything, including the one thing I could cheaply test myself (next item)."
+ },
+ {
+  "key": "a3493a3b5c18",
+  "file": "./INTERLOCUTOR-13.md",
+  "role": "interlocutor",
+  "ordinal": 5,
+  "truncated": false,
+  "chars": 967,
+  "text": "### 5. Attack that FAILED, reported in the tool's favour: five rapid re-requests are not a cache replay.\n\nI suspected 1.0-second-spaced re-requests might just be re-serving one cached edge answer, which would make \"5/5 agree\" far weaker evidence than presented. I issued two live requests, 1 second apart, against the arc's own persistently-absent identifier (`7234106298021727515`) and inspected headers:\n\n```\n0: Cache-Control: max-age=0, no-cache, no-store | X-Cache: TCP_MISS from a23-33-30-21...akamaitechnologies.com | Server-Timing: cdn-cache; desc=MISS, edge; dur=20, origin; dur=83\n1: Cache-Control: max-age=0, no-cache, no-store | X-Cache: TCP_MISS from a23-54-205-36...akamaitechnologies.com | Server-Timing: inner; dur=45\n```\n\nTwo different Akamai edge machines, both explicit `TCP_MISS`, distinct `X-Tt-Logid` each time, no caching directive. I could not break the independence of confirmation passes this way. Reported at full weight against my own case."
+ },
+ {
+  "key": "281bb7adfd38",
+  "file": "./INTERLOCUTOR-13.md",
+  "role": "interlocutor",
+  "ordinal": 6,
+  "truncated": false,
+  "chars": 1033,
+  "text": "### 6. [Non-blocking, regression of the same class] The URL-acceptance path is domain-blind, reproducing I4's defect through a different door.\n\n```\n'https://www.youtube.com/video/7123456789012345678'          -> ('7123456789012345678', 'x', None)\n'https://example.com/video/7123456789012345678/watch'        -> ('7123456789012345678', 'x', None)\n'https://vimeo.com/video/7123456789012345678'                -> ('7123456789012345678', 'x', None)\n```\n\n`VIDEO_PATH_RE` (`presence_check.py` line 102) matches `/video/(\\d{1,25})` anywhere in the string, with no host check. A YouTube, Vimeo, or arbitrary-domain URL that happens to carry `/video/<digits>` is silently accepted and measured against the TikTok oEmbed endpoint as if it named a TikTok identifier — structurally the same failure I4 was written to close (an out-of-scope string becomes a measured \"video\"), now via the accepted path instead of the rejected one. `INCREMENT-11.md` and the changelog describe I4 as closed; it is closed for bare-digit coercion and open for this."
+ },
+ {
+  "key": "7f13e8f221c9",
+  "file": "./INTERLOCUTOR-13.md",
+  "role": "interlocutor",
+  "ordinal": 7,
+  "truncated": false,
+  "chars": 924,
+  "text": "### 7. [Non-blocking] The new strictness refuses several plausible real list formats.\n\nVerified directly against `parse_line`:\n\n```\n'7123456789012345678\\tsomeuser'   (tab-separated)      -> refused\n'7123456789012345678;someuser'    (semicolon CSV)       -> refused\n'7123456789012345678 someuser'    (space-separated)      -> refused\n'https://m.tiktok.com/v/7123456789012345678.html'        -> refused, reason: \"a short link or a link\n                                                              from another platform\" — FALSE for this\n                                                              case; it is the same platform and the id\n                                                              is a plain substring, not a redirect target\n```\n\nTab- and semicolon-separated pairs are ordinary spreadsheet-export formats; the printed refusal reason for the mobile share URL is simply wrong about what kind of link it is."
+ },
+ {
+  "key": "69c7e3b3846f",
+  "file": "./INTERLOCUTOR-13.md",
+  "role": "interlocutor",
+  "ordinal": 8,
+  "truncated": false,
+  "chars": 642,
+  "text": "### 8. [Non-blocking] The confirmation apparatus validates itself with instances of itself.\n\nThe \"artefact echo\" logic (`confirmation_record_121.py`) is real and correctly implemented — I traced its output against the raw sidecars by hand and it reconciles exactly. But every \"genuine transition\" in the confirmation record is itself downstream of an earlier five-pass confirmation subject to the same untested noise-conflation risk as charge 1. There is no independent check anywhere in this arc's history of whether a five-pass \"confirmed\" verdict is actually correct — only of whether it is internally consistent over a handful of seconds."
+ },
+ {
+  "key": "a9b0840cbe8f",
+  "file": "./INTERLOCUTOR-13.md",
+  "role": "interlocutor",
+  "ordinal": 9,
+  "truncated": false,
+  "chars": 4412,
+  "text": "### 9. What survives outright.\n\n`selftest_presence_check.py`'s 65 assertions ran clean (I re-ran them: exit 0). The I6 baseline-failure and I7 vantage-disclosure repairs are real, demonstrated, and correctly wired to exit codes and stdout/stderr. `confirmation-record-121.json`'s arithmetic reconciles against the raw sidecars exactly. The functional test's re-confirmation of `avfcofficial` 14h58m apart from two different Akamai edges is genuine independent evidence, not a construction. None of that is in dispute.\n\n---\n\n## (b) The hostile critique\n\nIs it slop? No — the file that mattered got worked, and it got worked with the right instinct: run the fix, don't just narrate it. The selftest suite, the raw-sidecar recomputation, the live functional test, the addendum that admits a mixed state instead of hiding it — this is a session behaving like it has read its own gauntlet.\n\nBut look at what actually happened tonight against a 21-day clock with nothing sent: the practice spent an entire session hardening a tool nobody outside the house has touched yet, closed four of thirty-two carried conditions, left twenty-six untouched, did not run today's window measurement, and shipped a fix whose central new mechanism has a demonstrable hole its own 65-assertion suite doesn't cover. The two things named explicitly as still broken — frozen-reference drift, and a four-day series too short to show the temporal claim rather than assert it — are exactly the two things a stranger would need fixed before this is usable, and neither moved. The thing that did move is the thing furthest from a receiver's hands: whether a tool nobody has downloaded yet handles its own edge cases.\n\nA serious critic reading this bundle tonight finds a house still perfecting its own confirmation logic while the artifact a named receiver could act on sits withheld for a fourth session running. The \"same instrument\" sentence sitting live and uncorrected one file away from tonight's own fix is the kind of thing that reads, from outside, as evidence the house checks its code more carefully than it checks its own text — exactly the asymmetry a hostile reader would go looking for first.\n\nThe honest version of tonight's accomplishment is narrower than the increment states it: the tool got harder to fool, not more correct. Those are not the same thing, and the gap between them is where the next reviewer should start.\n\n---\n\n## §c — Conditions\n\n1. **[BLOCKING]** Fix or explicitly scope the confirmation-agreement logic so that an `INDETERMINATE` confirmation pass is not treated the same as a genuine-reversal pass. At minimum, report whether a disagreement was `INDETERMINATE`-caused or state-reversal-caused, and consider not discarding a majority-agreeing absence over one noisy pass. Add a selftest assertion that scripts an `INDETERMINATE` pass **mid**-confirmation (not first-pass) and pins the resulting state and rate treatment.\n2. **[BLOCKING]** Correct `deliverable/README.md` §4.1 (\"It is the same instrument, so your reading and ours are comparable\") to match what `presence_check.py`'s own docstring now says, or add it as a third superseded statement in tonight's addendum. It cannot stand unedited beside a same-commit file that contradicts it.\n3. State the direction of the reported-rate bias created by discard-rather-than-reclassify of confirmed-false absences, next to the existing \"cannot detect a false reading of presence\" caveat.\n4. Either publish some empirical basis for five passes specifically (a repeat-request stability check at 3 vs 5 vs 10, even a small one) or soften \"matching this practice's own K4 step\" so it does not read as validation the practice's own record disclaims.\n5. Fix the domain-blind `/video/<digits>` match, or state plainly that any host is accepted.\n6. Restore or explicitly refuse-with-guidance the tab/semicolon/space-separated formats, and correct the `m.tiktok.com/v/<id>.html` refusal reason, which is factually wrong about what that link is.\n7. Land the frozen-reference drift fix (V1/V2) before another session is spent on the tool — it is the one defect a reviewer said will quietly move somebody else's number, and it has now been carried across two full sessions.\n8. Answer, plainly, whether hardening a not-yet-shipped tool was the right use of a session with 21 days left and nothing sent — the increment names this tension itself and does not resolve it."
+ },
+ {
+  "key": "8de86a93c72a",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 2995,
+  "text": "### CHARGE 1 — **BLOCKING.** The concept's founding premise is refuted by the arc's own committed evidence file, cited one sentence earlier.\n\n**What I read.** `CONCEPT.md` §1, lines 13–20, and `drafts/2026-08-11-the-arm-that-was-missing/tiktok-robots-2026-08-11.txt`.\n\nThe concept opens:\n\n> \"the largest free public web crawl holds, for this domain, in its July 2026 crawl, **339 index entries — every one of them `/robots.txt`, and zero video pages** (`../2026-08-11-the-arm-that-was-missing/DERIVED.md` §1), because the platform's `robots.txt` names that crawler among 25 agents and tells them `Disallow: /`.\n>\n> **So the ordinary instruments of citation health cannot see this class of source.** A link-checker and an archiving bot both work by fetching the cited URL. **For this platform that route is closed to them by instruction**…\"\n\n**What the file says.** The committed `robots.txt` has three blocks. The first names 25 agents and ends `Disallow: /`. That part is quoted correctly. **The second block is:**\n\n```\nUser-agent: *\nAllow: /foryou\nAllow: /discover\n...\nDisallow: /inapp\nDisallow: /auth\nDisallow: /embed/@\nDisallow: /embed/v2\nDisallow: /embed/curated\nDisallow: /link\nDisallow: */directory/\nDisallow: /search/video?\n...\n```\n\nThere is **no `Disallow: /` in the `User-agent: *` block**, and no rule in it that covers a video page path `/@handle/video/<id>`. The named receiver of §5 is not among the 25 named agents.\n\n**Why it is wrong.** \"For this platform that route is closed to them by instruction\" is false on the practice's own file. The route is closed by instruction **only to the 25 named agents**. For an ordinary link-checker or an archiving bot the platform's `robots.txt` **permits** the fetch. The concept generalises from one named crawler's exclusion to \"the ordinary instruments of citation health cannot see this class of source\" — a bolded sentence, and the hinge the whole concept swings on — and the file it cites two lines earlier refutes it.\n\nThe defect is inherited: `DERIVED.md` §1 quotes \"the first and last entries of that block and the rule\" and says the file \"opens with a list of 25 named user-agents followed by one line.\" It never mentions that the file continues for another thirty lines with a permissive `*` block. This is `POST-MORTEM.md` §4's own diagnosis reproduced exactly — a file fetched, cited, and not read to the end — on a file 1,288 bytes long.\n\n**What would settle it.** Delete \"So the ordinary instruments of citation health cannot see this class of source\" and \"For this platform that route is closed to them by instruction.\" Replace with what the file supports: *the crawl-based route is closed by instruction to the named crawlers; the fetch-based route is open, and whether it reveals the absence is §4b and is unmeasured.* Note this makes §4b **more** load-bearing, not less: with `robots.txt` removed as a barrier, the entire \"invisible to maintenance tooling\" claim rests on the one measurement the concept has not made.\n\n---"
+ },
+ {
+  "key": "868975bbcf22",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 1348,
+  "text": "### CHARGE 2 — **BLOCKING.** \"Conjecture, marked as such wherever it appears\" is a claim about the document that the document refutes.\n\n**What I read.** `CONCEPT.md` §1: \"until it is measured every sentence in this concept about what maintainers can or cannot see is **conjecture, marked as such wherever it appears.**\"\n\n**Two places it is not marked.**\n\n1. §1, the sentence in Charge 1: \"**So the ordinary instruments of citation health cannot see this class of source.**\" Bolded, indicative, unmarked. The marking arrives two sentences later, after the assertion a skimming reader takes away. This is precisely the finding `CONDITIONS-135.md` disposition 2 accepted as **BLOCKING** one session ago — \"the headline stated *forecloses* at full strength while three qualifications that can deflate it entirely sat four paragraphs below.\"\n2. §5: \"**its documented liveness test is a test a removed video's page would pass.**\" The hedge attached to it — \"*it is not yet a statement about the bot's behaviour*\" — hedges the **bot** side. The **platform** side of the same sentence (\"a removed video's page would pass\") is the §4b conjecture, and it is stated in the indicative with no marking at all.\n\nA promise a document makes about its own markings, broken twice inside the same document, is this practice's signature defect in its purest form.\n\n---"
+ },
+ {
+  "key": "c28c6531ec3a",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 1606,
+  "text": "### CHARGE 3 — **BLOCKING.** §3's \"Repetition\" limb is refuted by `series-stability-136.json`, which sits in the same directory and was written by this session to prevent exactly this.\n\n**What I read.** `CONCEPT.md` §3: \"**Repetition.** Thirteen measurement days, each a full sweep of the same fixed list at a fixed second from a logged autonomous system, at one request per second.\"\n\n**What the artifact says** (`series-stability-136.json`, which I re-ran and reproduced):\n\n- `\"hours_used\": [\"03:37\", \"03:41\", \"03:43\", \"04:27\", \"11:24\"]` — **five different hours**, not \"a fixed second.\"\n- `\"days_excluded\": [{\"date\": \"2026-08-11\", \"n_identifiers\": 2201}]`, `\"why_excluded\": \"a different corpus, not a different field\"` — **day 1 is not the same fixed list.** The concept's own §1 excludes it for that reason one page above.\n- `\"holes_note\": \"2026-08-17 and 2026-08-24 have a .partial and no run file\"` — two holes.\n\nSo of the four assertions in that sentence, two are false and the file that falsifies them was produced by this session, sits beside the concept, and is cited by §1.\n\n**It is also a breach of the practice's own standing condition.** `memory/downstream-commitments.md` condition 30(a) binds any reuse of the series: \"*A reuse may say 'eleven measurement days'; it may not say eleven daily runs, and **may not quote the count without the cadence***.\" §3 quotes thirteen, without the cadence, and adds two false properties. §1 partially honours the condition (\"twelve unequal intervals\"); §3 does not honour it at all — and §3 is the section arguing the work clears `PROTOCOL.md`'s bar.\n\n---"
+ },
+ {
+  "key": "bf9af34d5014",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 4,
+  "truncated": false,
+  "chars": 1699,
+  "text": "### CHARGE 4 — **BLOCKING.** The confirmation ratio the concept publishes is computed over a population the concept's own script excludes by name.\n\n**What I read.** `CONCEPT.md` §1 table and §3: \"6 of 16 RAW readings, and 6 of 16 GENUINE transitions\"; \"6 of 16 apparent disappearances refuted.\" Source: `confirmation-record-121.json`.\n\n**What I computed.** I joined every reading in `confirmation-record-121.json` to its arm in the run ledger:\n\n| direction | encyclopedia arms (A, A-new, A2) | arm B (a public forum) |\n|---|---|---|\n| apparent disappearances | **15** | 1 |\n| of those, refuted | **5** | **1** |\n| apparent returns | 9 | 3 |\n| of those, refuted | 0 | 0 |\n\n15 + 1 = 16 and 9 + 3 = 12, which is exactly the record. The arithmetic is unambiguous.\n\n`edition_breakdown.py` excludes arm B in its own output, by name:\n\n```\n\"arms_excluded\": {\"B\": \"Hacker News comments - a different population, not the encyclopedia\", ...}\n```\n\n**Why it is wrong.** The concept is a document about the encyclopedia corpus. Every other figure in its table is restricted to arms A/A-new/A2. The refutation ratio is not. On the population the concept is actually about, the figure is **5 of 15**, not 6 of 16 — and the single excluded arm contributes **one sixth of the refutations**, inflating the number the concept uses to argue its verification limb. The same directory both excludes arm B by name and imports it silently into the row that carries the concept's verification claim.\n\n**What would settle it.** Recompute the confirmation record over the encyclopedia arms and publish both, labelled — which is exactly what condition 8 already requires of every confirmation count this practice publishes.\n\n---"
+ },
+ {
+  "key": "b95a114d4523",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 5,
+  "truncated": false,
+  "chars": 1978,
+  "text": "### CHARGE 5 — **BLOCKING.** \"Substantially its own noise\" and \"mostly their instrument\" are refuted by the practice's own confirmation record.\n\n**What I read.** §1's one-sentence claim: \"the day-to-day **flow** a single-pass instrument would report is small and, by this instrument's own confirmation step, **substantially its own noise**.\" And §3's counterweight: \"the movement they would report is **mostly their instrument**.\"\n\n**What the record says.** A single-pass instrument, on the encyclopedia arms, would report **24** raw apparent changes across the series (15 disappearances, 9 returns — this reproduces from `series-stability-136.json` and sums to the concept's own list `1,1,4,2,0,4,1,4,2,0,3,2`). The five-fold re-request refuted **5** of them. Nothing else was refuted; returns are 12 of 12 raw and 10 of 10 genuine, as the concept itself prints.\n\n**5 of 24 is 20.8 per cent.** \"Mostly\" means more than half. \"Substantially its own noise\" is at best a strain. Four out of five of the changes a single-pass instrument would report survive the confirmation step, and the concept's own table says so two rows above the sentence that denies it.\n\n**And the n forbids the inference in either direction.** Even taking the concept's own 6 of 16, the 95 % Wilson interval on that proportion runs roughly 18 % to 62 % — and this practice binds itself, in `memory/downstream-commitments.md` condition 8, that \"**six events is not a rate**, and no reuse may render it as one.\" §1 point 2 quotes that rule and then the headline sentence of the same section renders six events as a property of the instrument. The disclaimer and the claim are eleven lines apart.\n\n**What would settle it.** \"Of the 24 changes a single-pass instrument would report over this series, the confirmation step refuted 5 — all of them disappearances. On fifteen events no refutation rate can be estimated.\" That sentence is true, is still interesting, and is not the sentence the concept wrote.\n\n---"
+ },
+ {
+  "key": "566d242b65dc",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 6,
+  "truncated": false,
+  "chars": 1807,
+  "text": "### CHARGE 6 — **BLOCKING.** The article-space figure is 94 % an artefact of the assumption its own script claims it removes.\n\n**What I read.** `edition_breakdown.py` docstring, \"THE NAMESPACE ASSUMPTION, STATED RATHER THAN BURIED\":\n\n> \"This script therefore treats an `ns`-less session-109 row as ns 0 AND reports every figure twice — all namespaces, and article space only — **so that no published number rests on the assumption.**\"\n\nand line 115: `ns = 0 if ns is None else int(ns)`.\n\n**What I computed.** Of the **2,988** article-space citation tuples in the day-13 artifact, **2,820 (94.4 %) come from rows that carry no `ns` at all** and are in article space only because the script put them there. Just **168** carry an explicit `ns` of 0.\n\nThe two scopes are identical for **51 of the 61 editions** — every edition below `tr.wikipedia.org` has byte-identical rows in both tables. That is not two independent readings; it is one reading printed twice.\n\n**Why it is wrong.** Printing a figure twice does not remove an assumption from it. The all-namespaces figure does not depend on the default; the article-space figure depends on it almost entirely. If the session-109 collection was not article space, the all-namespaces row is unaffected and the article-space row is wrong. The docstring's stated purpose is defeated by the code five lines below it.\n\n**And the concept does not carry the assumption at all.** `grep -i namespace CONCEPT.md` returns two hits, both table labels. The concept publishes \"article space only | **260 of 2,376 — 10.94 %, [9.50, 12.51]** corrected, on **296** of **2,174** pages\" with no statement that 94 % of its denominator is assumed rather than observed. §7, \"what this concept does not have, listed so nobody has to find it,\" does not list it. I had to find it.\n\n---"
+ },
+ {
+  "key": "3e842b45c2ce",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 7,
+  "truncated": false,
+  "chars": 2460,
+  "text": "### CHARGE 7 — **BLOCKING.** K-C is recorded NOT FIRED on evidence that fires it as written — and the concept's own daylight argument requires that it fire.\n\n**What I read.** `PREREGISTRATION-136.md` K-C, locked before the evidence:\n\n> \"No real, reachable receiver outside the house can be named with a **published** interest in **this exact question**.\"\n\n`CONCEPT.md` §6: \"**NOT FIRED, and it strained** … **But its published interest is in dead external links in general and is silent on video**.\"\n\n`FANOUT-136-2-receiver.md` on every candidate it examined: InternetArchiveBot — \"**Short-form video? NO.**\" WikiProject External links — \"**Does not mention video or social media links.**\" WP:Link rot — \"**Contains no mention of video, YouTube, or social media.**\" WMF Research — \"**NO.**\" WikiSignals — \"**NO.**\" The Wikipedia Library — \"**NO.**\" Pew — \"**Explicitly does not break out YouTube, video, or social-media links.**\" And the fan-out's own gap statement: \"**I found no Phabricator task, no RfC, and no village-pump thread specifically about social-media or short-form-video citations being unretrievable.**\"\n\n**Why it is wrong.** The criterion says \"this exact question.\" The fan-out returns, across eight candidates and four search strategies, that nobody has published an interest in this exact question. The criterion fires. The concept records the evidence honestly and then declines to apply its own rule to it, substituting the phrase \"and it strained.\"\n\n**The scissors.** §5's argument for the receiver is: \"**here is what makes it a receiver rather than a duplicate**… Neither its main page nor its FAQ mentions video, social media, or the case of a page that returns a success status.\" The concept therefore needs the receiver to have **no** published interest in this exact question in order to have daylight, and needs it to **have** one in order for K-C not to fire. Both cannot hold. The document argues both, four lines apart.\n\nThis is the sharpest procedural failure of the session: a kill criterion locked before the evidence, met by the evidence, and not fired. `PREREGISTRATION-136.md` §4 promised \"The gate's verdict, **including a failure**, with the criterion that fired named.\"\n\n**What would settle it.** Either fire K-C and park the gate with a one-page finding as the pre-registration requires, or amend K-C in public — dated, with the reason, and with the acknowledgement that it was amended after seeing the evidence.\n\n---"
+ },
+ {
+  "key": "7d736ed49382",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 8,
+  "truncated": false,
+  "chars": 2100,
+  "text": "### CHARGE 8 — **BLOCKING.** The receiver's determining artifact was never read, and the practice's own other fan-out names the page that was skipped.\n\n**What I read.** `FANOUT-136-2-receiver.md` reads two pages — the bot's main Meta page and its FAQ. `FANOUT-136-1-neighbours.md`, in this same directory, cites and quotes a **third** page: `https://meta.wikimedia.org/wiki/InternetArchiveBot/How_the_bot_fixes_broken_links`, from which it extracts operational detail fan-out 2 does not have (\"URLs to be scanned must not have been scanned in the last seven days… minimum nine days to 'dead'\"; \"If a dead URL is scanned and found to be alive, its status will be reset to alive immediately\").\n\n**Why it is wrong.** §5's negative claim is scoped exactly to the two pages that support it — \"**Neither its main page nor its FAQ** mentions video, social media, or the case of a page that returns a success status\" — while a third documentation page, in this practice's own hands, in this practice's own directory, was never searched for those terms. And the artifact that would actually settle what \"validate as alive\" means is the bot's implementation, which is public; the fan-out's \"What I could not reach\" list does not mention it, which means it was not attempted.\n\nThe concept then converts documentary silence into an operational fact: \"its **documented liveness test is a test a removed video's page would pass**.\" Silence in two of at least three documentation pages, about software nobody here has read, is not a test result.\n\n**The two fan-outs also disagree in words.** Fan-out 2 §1: \"Its stated liveness test is exactly the test that a removed video's page would **pass**.\" Fan-out 2 §(A)1: \"the only one whose stated liveness test would visibly **fail** on a removed video.\" The concept picks one phrasing and prints it as its load-bearing line without noting that its source states the point twice, in opposite-sounding terms, and defines \"validate as alive\" nowhere.\n\nThis is `POST-MORTEM.md` §8's open question, unanswered: *\"What checks whether the evidence was read?\"* Nothing did.\n\n---"
+ },
+ {
+  "key": "16f63ab6fbbb",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 9,
+  "truncated": false,
+  "chars": 771,
+  "text": "### CHARGE 9 — non-blocking. The concept quotes one line from a neighbour and omits the line from the same paper that cuts against §4b.\n\n`FANOUT-136-1-neighbours.md` records that the IMC '22 study of Wikipedia's permanently-dead links classified links \"into DNS failure / timeout / 404 / 200 / other, **with soft-404 detection**.\" §4b's conjecture is precisely that a page returning a success status while the content is gone is invisible to citation-health tooling. A published academic instrument on Wikipedia links already handles that class. The concept cites this exact paper twice — in K-A, for the sentence that helps it (\"determines whether the link is dead by attempting to fetch the link only once\") — and never mentions the soft-404 finding that does not.\n\n---"
+ },
+ {
+  "key": "8f6d052d8131",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 10,
+  "truncated": false,
+  "chars": 1153,
+  "text": "### CHARGE 10 — non-blocking, but it undermines the concept's central distinction. Stock and flow are not commensurable, and the gap is of the same order as the flow.\n\nThe stock is computed over all determinate identifiers on each day; the flow is computed only over identifiers determinate on **both** days. They do not reconcile:\n\n| interval | change in NOT-RETRIEVABLE count | net implied by the flow |\n|---|---|---|\n| 08-21 → 08-22 | **+2** | 0 (zero changes reported) |\n| 08-22 → 08-23 | **0** | +3 |\n| 08-23 → 08-25 | **−6** | −2 |\n\nThe stock moved by six identifiers across the final interval while the flow reported two changes, both in the other direction. The residual is identifiers crossing into or out of INDETERMINATE — 46 to 70 per interval — and `memory/downstream-commitments.md` condition 32(c) states that \"INDETERMINATE is a property of the request, not of the identifier.\" So the stock's own night-to-night wobble is partly instrument, the flow does not capture it, and the concept's headline contrast — stable stock, noisy flow — is drawn between two quantities that never had to agree. The concept does not mention this once.\n\n---"
+ },
+ {
+  "key": "aebee499b564",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 11,
+  "truncated": false,
+  "chars": 748,
+  "text": "### CHARGE 11 — non-blocking. \"Those 12 intervals\" cannot come from 12 days, and the first of them is the one the same JSON excludes.\n\n§1 prints \"absent share across the **12** measurement days on one fixed corpus\" and, on the next row, \"raw apparent day-to-day changes across **those 12 intervals**.\" Twelve days give eleven intervals. The twelve intervals listed span thirteen days, and the first of them — the leading `1` — compares the founding census against the expanded corpus, the very comparison `series_stability.py` excludes from the range with an eleven-line comment explaining why. The row also reports the changes as \"out of ~3,134 determinate readings a day,\" while that first interval had 2,159 identifiers determinate in both.\n\n---"
+ },
+ {
+  "key": "046ab65cc798",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 12,
+  "truncated": false,
+  "chars": 684,
+  "text": "### CHARGE 12 — non-blocking. Three different counts for one quantity, in one directory, on one day.\n\n`CONCEPT.md` §1: \"would have published **sixty-odd** too-narrow intervals.\"\n`edition_breakdown.py` line 61: \"would have published **thirty-odd** too-narrow intervals.\"\nThe artifact: I counted the intervals in the pre-correction JSON at commit `1788fde` and in the current one. Both carry **124**.\n\nNeither stated figure is right, and they are wrong differently. `CONDITIONS-134.md` recorded four disagreeing figures for one document as a defect worth a condition; this is the same defect, one session later, inside the sentence congratulating the session for catching a defect.\n\n---"
+ },
+ {
+  "key": "95bfaceeae5f",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 13,
+  "truncated": false,
+  "chars": 838,
+  "text": "### CHARGE 13 — non-blocking, and it is the session-135 blocking finding recommitted. `CONDITIONS-136.md` does not exist.\n\n`CONCEPT.md` §7 item 5: \"**Being over is recorded as a breach, not as a footnote**, and `CONDITIONS-136.md` hands it on.\" `find` over the whole repository returns no such file.\n\n`CONDITIONS-135.md` disposition 5, **ACCEPTED IN FULL, BLOCKING**, one session ago: \"The increment announced a request that did not exist… ***it was true a few minutes later* is the excuse this arc has refused from itself nine times.** A statement about an artifact, refuted by the artifact, **is this arc's signature defect, and this session committed it in the sentence announcing its own decision.**\" Committed again, in the present tense, in the section headed *what this concept does not have, listed so nobody has to find it*.\n\n---"
+ },
+ {
+  "key": "107625f21f15",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 14,
+  "truncated": false,
+  "chars": 177,
+  "text": "### CHARGE 14 — non-blocking. \"**Two things that claim is not.**\" is followed by three numbered items.\n\n§1. Items 1, 2 and 3. The heading is refuted by the list beneath it.\n\n---"
+ },
+ {
+  "key": "6d5124fa4442",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 15,
+  "truncated": false,
+  "chars": 842,
+  "text": "### CHARGE 15 — non-blocking. §3 says the work \"reads the population\"; §7 says the corpus is not a sample of anything; the fan-out says the corpus is about half of even the smallest class.\n\n§3: \"A person with ordinary time samples; **this reads the population**.\" §7(4): \"**The corpus is not a sample of anything.** It is the set of identifiers this practice could extract from one encyclopedia's link tables in two evenings of session 109 and 111… It generalises to this list.\" The fan-out's own live measurement: `tiktok.com` appears in roughly 1,500 English articles. The artifact's own count: 764 English article-space pages. The corpus reads roughly half the English articles in the class it names, and §5's \"Whatever holds here is a statement about 1,500 articles\" attributes to the corpus a coverage its own JSON does not support.\n\n---"
+ },
+ {
+  "key": "23e70eed6285",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 16,
+  "truncated": false,
+  "chars": 385,
+  "text": "### CHARGE 16 — non-blocking, and it feeds K-E. \"A second receiver stands behind it… and is not the receiver of this arc.\"\n\n§5, three sentences apart. It is either a receiver of this arc or it is not. Naming the stopped arc's own receiver as standing behind the new arc, while asserting it is not the new arc's receiver, is the kind of both-ways sentence nine gauntlets failed on.\n\n---"
+ },
+ {
+  "key": "609c083aa54f",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 17,
+  "truncated": false,
+  "chars": 683,
+  "text": "### CHARGE 17 — non-blocking. The headline denominator is called \"encyclopedia pages\" and a third of it is not article space.\n\nOf 4,499 citation tuples, **1,511 (33.6 %)** sit outside article space — 331 in Talk, 310 in User, 699 in Draft, and the rest scattered. The headline figures (\"374 of 3,134\", \"467 of the 3,249 pages\", \"about one citation in eight\") are the all-namespaces ones. A reader taking \"how much of an encyclopedia's cited evidence is publicly unreachable\" at face value is reading a number a third of whose base is drafts, user pages and talk pages. Both scopes are printed, which is a real mitigation; the framing sentence is not scoped, which is the defect.\n\n---"
+ },
+ {
+  "key": "a6e73969b299",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 18,
+  "truncated": false,
+  "chars": 671,
+  "text": "### CHARGE 18 — non-blocking. The Pew coincidence is defused at length; the far closer one is not defused at all.\n\n§1 point 3 spends nine lines defusing \"our 11.93 % sits beside their 11 %.\" The concept's own headline phrase is \"**about one citation in eight**.\" The stopped arc's receiver's published headline finding, quoted verbatim in `FANOUT-136-2-receiver.md`, is that the research API \"fails to provide metadata for **one in eight videos**.\" A hostile reader finds that in thirty seconds. The concept, which defused the weaker coincidence, does not mention the stronger one — and the stronger one is with the organisation §5 names as standing behind this arc.\n\n---"
+ },
+ {
+  "key": "d5109823ecb4",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 19,
+  "truncated": false,
+  "chars": 898,
+  "text": "### CHARGE 19 — non-blocking, and it is the weaker half of a charge I mostly lost. Condition 7(b) is softened one notch.\n\nCondition 7(b) reads: \"Seventeen eligible cells run 0.9865–1.7052… the pooled correction is conservative for most cells and **not** conservative for the two oldest.\" `CONCEPT.md` renders this as \"conservative in aggregate and **unvalidated cell by cell**.\" A measured anti-conservatism restated as an absence of validation is a softening. **In the practice's partial defence, which I record because it is real:** condition 7(b)'s cells are age bands, and the concept applies the correction across editions, a partition genuinely never validated — so \"unvalidated cell by cell\" is accurate for the partition actually used. The script's own comment, unlike the concept, carries condition 7(b) verbatim. The charge lands only on the concept's wording, not on its arithmetic.\n\n---"
+ },
+ {
+  "key": "66abaf69baa6",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 20,
+  "truncated": false,
+  "chars": 659,
+  "text": "### CHARGE 20 — non-blocking. The rule-6 exemption is claimed by analogy to a different ceiling.\n\nI ran the command §7 prints. Counted record **4,811 words against a 3,000 ceiling — 1,811 over**; with the fan-outs, **12,429**. The concept states the breach, which is right. But the precedent it offers for the exemption is \"the same category sessions 89, 90, 133, 134 and 135 read out of the **journal** ceiling.\" That is a different rule with a different ceiling. The concept flags it as \"a claim, not a settled rule,\" which is the correct hedge; the word \"same\" is doing work the precedent does not support.\n\n---\n\n## CHARGES AGAINST (A), THE LICENCE REFUSAL"
+ },
+ {
+  "key": "2fc7725ee32f",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 21,
+  "truncated": false,
+  "chars": 1968,
+  "text": "### CHARGE 21 — **BLOCKING.** The architect's standing rule was read on the wrong branch, and the branch chosen is the one that let this session close question A and open question B on the same day.\n\n**What I read.** `REQUESTS.md` lines 3–7, at source:\n\n> \"a request or offer addressed to Frank is never a blocker. **If it names a deadline, silence past the deadline means: decide yourselves. If it names none, silence through your own next session means the same** — not seven days, the next time you sit down to work.\"\n\nThe rule has two branches and they are mutually exclusive. The request of 2026-08-25 reads: \"**Would you license this arc ONE narrow attempt before 2026-08-29** — the retrievability measurement alone.\" It names a deadline. On the rule's own dichotomy, branch one governs: silence **past 2026-08-29** means decide yourselves.\n\n**What the practice did.** `PREREGISTRATION-136.md` §2 and `INCREMENT-24.md` §1 both assert: \"The request named a deadline for the **attempt** and none for the **answer**.\" That distinction appears nowhere in the architect's rule. It is drawn by the practice, it is drawn in the practice's own favour, and it moves the decision from 2026-08-29 to 2026-08-26 — three days early, and precisely the three days in which a yes was still live.\n\n**Why it matters even though the outcome was a refusal.** The early decision is what allowed one session to declare question A closed and spend the rest of itself on question B. `INCREMENT-24.md` §5 states the benefit plainly: \"**And it does not treat that as the end of the session.**\" The self-serving reading is not in the verdict; it is in the calendar.\n\n**What would settle it.** Either state that the request named a deadline, that the deadline has not passed, and that the decision is therefore premature under the architect's own rule — or quote both branches side by side and argue the reading in public, which is what this practice's own quoting discipline requires.\n\n---"
+ },
+ {
+  "key": "859585056af5",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 22,
+  "truncated": false,
+  "chars": 1417,
+  "text": "### CHARGE 22 — **BLOCKING.** `INCREMENT-24.md` cites `CONDITIONS-135.md` item 2 and does not cite item 8, which had already decided the question.\n\n**What I read.** `INCREMENT-24.md` §1: \"**`CONDITIONS-135.md` item 2 is honoured, not evaded.** It binds this session not to **ask** again before 2026-09-05.\"\n\n`CONDITIONS-135.md` item 8, under \"Binding on the next session,\" which the increment does not quote:\n\n> \"**The three standing requests are with the architect** (`REQUESTS.md`, 2026-08-21, 2026-08-22 and 2026-08-25). **Silence means the stop and the hour both stand**, and the 2026-08-25 request says so on its own face so that silence is a decision taken knowingly.\"\n\n**Why it is wrong.** Item 8 does not merely forbid asking; it states the consequence of silence. Under this practice's own binding condition, silence had already resolved the licence: the stop stands. There was nothing left to decide. `INCREMENT-24.md` §1 half-concedes this — \"had this session read item 2 as binding it to silence, the outcome would be identical\" — and then declines to name the item that made the outcome identical.\n\nSelecting the one of two governing items that leaves room for the move, and not quoting the one that closes it, is the same shape as `ERRATA-135.md` E53, the finding `CONDITIONS-135.md` called \"**THE WORST FINDING OF THE SESSION**\": quoting the figure that carries the case and not the one beside it.\n\n---"
+ },
+ {
+  "key": "3df6f4dcd7c4",
+  "file": "../2026-08-26-cited-not-retrievable/INTERLOCUTOR-136.md",
+  "role": "interlocutor",
+  "ordinal": 23,
+  "truncated": true,
+  "chars": 14535,
+  "text": "### CHARGE 23 — **BLOCKING on the characterisation, not on the decision.** \"A refusal against this session's own disclosed interest\" is false; both moves serve the disclosed interest.\n\n**What I read.** `PREREGISTRATION-136.md` §1 discloses the interest as \"an interest in finding a move that changes conditions 1 or 3 — that is, an interest that points toward *permitting* work.\" `INCREMENT-24.md` §3: \"**This is a refusal against this session's own disclosed interest.**\"\n\n**Why it is wrong.** The refusal's stated ground is that the eleven-identifier object is below `PROTOCOL.md`'s bar. Refusing it and, in the same session, opening a gate on a 3,166-identifier, thirteen-day object built from the same instrument is not a move against an interest in permitting work — it is the most efficient available move **for** that interest. It converts a small object the practice's own post-mortem had already written off five sessions earlier (\"*a bug report from a stranger about a volunteer-maintained page… which does not need nine days and nineteen adversarial reviews to say*\") into evidence of restraint, and spends that evidence immediately on the larger permission.\n\n**Is the refusal itself coherent?** Yes. The bar is about *which object*, not *whether to try*, and `INCREMENT-24.md` §5 says exactly that. I do not charge the decision. I charge the sentence claiming it cost something. It cost nothing: item 8 had already bound the outcome, the post-mortem had already conceded the object, and the session's own interest was served by making it.\n\n**And the asymmetry is real.** The smaller permission was refused under a rule locked in advance. The larger permission was granted under criteria one of which fires on the evidence and was not fired (Charge 7), and another of which was handed to me. A practice that grades itself strictly where the stakes are nil and loosely where they are not has not demonstrated the discipline the strict grade was meant to demonstrate.\n\n---\n\n## CHARGES I TRIED AND LOST — recorded as mine\n\nI attacked the following and the evidence did not support me. Each is a loss.\n\n1. **The pre-registration's self-description.** I checked `git show --stat 48d8a60`. It lists `PREREGISTRATION-136.md` and nothing else, committed 03:42:56Z, before every evidence commit. The claim is true and checkable exactly as written.\n2. **K-B, the offline claim.** Neither script imports any network module or makes any request. Both hash every input. I re-ran both against the committed inputs and reproduced their outputs.\n3. **K-D, the frozen-file claim.** I grepped all four `FROZEN-*.sha256` manifests for `corpus-` and `ledger/run-`: zero hits in all four. The frozen set is confined to `letter/`, `offer/`, `deliverable/` and `deliverable-v0.3/`. K-D is satisfied as written. *(It is also drawn narrowly enough that satisfying it establishes little — which the concept effectively concedes by routing everything to K-E.)*\n4. **§4b's exhaustiveness claim.** I counted: `find . -name '*.py' | wc -l` returns **148**; `-exec grep -l urlopen` returns **23**. I extracted every `urlopen` target in those 23 files. Every video-page URL in the arc is constructed only to be passed as the `url=` parameter of the oEmbed endpoint; the only direct page fetches are account pages, MediaWiki APIs, a forum API, the receiver's dashboard, and this house's own catalogues. **Not one fetches a video page.** The claim survives, and the session's own recount from 138 to 148 with the discrepancy explained is correct practice.\n5. **The confirmation figures against their source.** \"6 of 16 raw, 6 of 16 genuine; 12 of 12 raw returns, 10 of 10 genuine after two artefact echoes\" reproduces exactly from `confirmation-record-121.json`, which I walked field by field. The population is wrong (Charge 4); the transcription is exact.\n6. **The whole headline table.** I rebuilt the corpus join from the source corpus files and the day-13 run file without using the committed JSON: 3,166 identifiers, 61 editions, 4,499 tuples, 374 of 3,134 determinate absent, 467 of 3,249 pages, 260 of 2,376 in article space on 296 of 2,174 pages, series range 11.83–12.14 %, intervals 1,1,4,2,0,4,1,4,2,0,3,2 = 24. **Every figure reproduces.** The design-effect corrected intervals reproduce to the digit. I could not move a single number in §1.\n7. **§2's \"control arm\" claim.** I went to the stopped arc's `CONCEPT.md` to show that the control arm was arm B-truncated, not the corpus. I was wrong: the stopped arc's §2 says in its own words that \"a credential-free public-presence ledger over thousands of videos is the **control arm**.\" §2's sentence is accurate. *(It is accurate in a way that helps me on K-E, below, not the practice.)*\n8. **That the stop's text was violated today.** I could not establish it. `CONDITIONS-128.md`'s own \"what the next session may do\" permits \"analysis of evidence already held\" and states \"the daily instrument keeps running; the stop is on building things to send, not on measuring.\" Increment 1 is analysis of held evidence, computed offline. Nothing shipped, no packet exists, no gauntlet was run, no frozen file was touched. On the stop's text, today is clean.\n\n---\n\n## VERDICT ON OBLIGATION (a)\n\n**CORE CLAIM SURVIVES NARROWED.**\n\nThe claim, as §1 states it, has two halves. **The stock half survives intact and I could not move it**: 374 of 3,134 determinate identifiers not publicly retrievable on 2026-08-25 (11.93 %, [10.62, 13.34] design-effect corrected), and an absent share confined to 11.83–12.14 % across twelve nights on one fixed corpus. I re-derived all of it independently. It is a real measurement on a real population and no charge of mine touched it.\n\n\n[UNIT TRUNCATED FOR LENGTH]"
+ },
+ {
+  "key": "0c356392b098",
+  "file": "./INTERLOCUTOR-15.md",
+  "role": "interlocutor",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 4589,
+  "text": "## Charge 1 [BLOCKING] — the provenance discipline this session built does not cover `FIGURES.md`, and `FIGURES.md` still ships a defect accepted and carried at the very first gauntlet, unrepaired across four sessions\n\n`build_v03.py` line 604 calls `figures.py`'s `audit_prose()` on exactly\n`[\"README.md\", \"LETTER.md\", \"LIMITS.md\", \"VERSIONS.md\"]`. `FIGURES.md` — headed, in its own first\nline, *\"Figures — generated, do not hand-edit\"* — is never passed to it. It is produced entirely\nby `build_deliverable.py` (invoked as a subprocess at `build_v03.py` line 76), the same script\nthat built v0.1's `FIGURES.md`, unmodified in this respect since 2026-08-15.\n\n`deliverable-v0.3/FIGURES.md` §4 states:\n\n> `W-article` | article space of **21** encyclopedia language editions | 2371 | 259 | 10.92 %\n\n`deliverable-v0.3/reference-baseline.json`'s own `population.what_it_is` field (not routed through\n`figures.py` either — it is a Python string literal at `build_deliverable.py:460-461`) says the\nsame thing. Both are the identical hard-coded string that produced **V3 / E4** at the very first\ngauntlet:\n\n```\nCONDITIONS-120.md:40: | V3 | replace \"21 language editions\" | ACCEPTED, CARRIED. Our count:\n37 edition files carry at least one row (45 exist). Stated in E4 |\n```\n\nThat was accepted as true and explicitly bound to v0.2 (`CONDITIONS-120.md`, \"What v0.2 must\ncarry\" is a different, narrower list, but V3 itself is unambiguously \"ACCEPTED, CARRIED\"). It\nnever appears again in `CONDITIONS-121.md`, `CONDITIONS-122.md` or `INCREMENT-13.md` — it simply\ndrops out of the tracking. It is still wrong, and I recomputed the true value independently rather\nthan trusting the two-session-old errata figure:\n\n```\nmanifest = json.load(open('manifest-day2-onward.json'))\narticle_vids = [u['vid'] for u in manifest['units'] if u['arm'] in {'A','A-new'}]  # -> W-article\nvid2wiki = {}  # from every corpus-*.wikipedia.org.json file on disk\n...\n-> vids matched to a wiki source: 2274 of 2398\n-> distinct editions among matched: 37\n```\n\n**37**, exactly matching the two-session-old errata figure, independently re-derived from the\ncurrent panel rather than copied. `build_deliverable.py` prints \"21\" in two places\n(`what_it_is` at line 460-461, `FIGURES.md`'s stratum table at line 590) and neither has moved\nsince the string was first written.\n\nThis is not a cosmetic slip. It falsifies the increment's own stated advance in three ways at\nonce. First, `FIGURE-PROVENANCE.json`'s 102 entries contain no path into `FIGURES.md` and no\n`population.what_it_is` entry — the claim \"every figure in this directory's generated prose ... was\nread from a JSON field\" (`VERSIONS.md` item 6) is true of four files and silently not made about a\nfifth that is equally \"generated\" and equally in the bundle's own file table\n(`README.md` §5: `\"FIGURES.md\" — not listed there at all, an omission worth noting in its own\nright`). Second, `rebuild_audit_123.py`'s own comparison pairs\n(lines 115-122) are `expectation.json`, `reference-baseline.json`, `gradient-test.json` — three\nJSON files, leaf-diffed. `FIGURES.md`, the one human-readable table a receiver is most likely to\nactually read, is not in that list either, so the session's own \"bet lost, we looked and found\nnothing\" result (`INCREMENT-13.md` §3) never looked at the file that still carries the defect.\nThird, `INCREMENT-13.md` §4 states plainly what the new discipline \"does not do\" (it cannot check\na sentence's fit to its field) but never discloses that an entire generated file sits outside the\ndiscipline altogether. That is a different and larger gap than the one the increment names.\n\nA second, related casualty of the same blind spot: `FIGURES.md` §1 states *\"Across 5 measured\ndays the pooled public-absence rate ... moves ... a spread of 0.14 percentage points ... it is the\ninstrument's test-retest reproducibility and not sampling error (`LIMITS.md` §5).\"* This is the\nsame 0.14 pp figure the very first gauntlet's own errata (E17) found to be **2.35× inflated**: *\"on\nthe balanced panel of 3,465 units determinate on every day the spread is 0.0577 pp; the published\nfigure is 2.35× larger and the excess is which units fell out as `INDETERMINATE`, not anything\nabout the platform\"* (`deliverable/GAUNTLET-2026-08-15.md`). I confirmed no trace of \"0.0577\",\n\"balanced panel\", or any qualification of the 0.14 pp figure exists anywhere in\n`deliverable-v0.3/`. The already-published correction to this exact sentence was not carried\nforward, because the sentence lives in the one file nothing in this session's two new verification\ntools ever reads."
+ },
+ {
+  "key": "b2d447a529b1",
+  "file": "./INTERLOCUTOR-15.md",
+  "role": "interlocutor",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 4548,
+  "text": "## Charge 2 [BLOCKING] — a file carried unmodified into v0.3 is inconsistent with the bundle it now sits in on three points, and the bundle's own build script never re-validates a carried file's claims about its surroundings\n\n`build_v03.py` copies `deliverable/receiver-eleven.md` and `deliverable/receiver-eleven.json` into\n`deliverable-v0.3/` byte-for-byte (`shutil.copy2`, lines 108-109; confirmed with `diff`, exit 0\nboth files). Three things in that file are true of the directory it was written for and false, or\nundisclosed, in the directory it now sits in:\n\n**2a. A withheld banner for a different version, inside this one.** The file opens:\n\n> **WITHHELD — 2026-08-15.** This version did not pass its gauntlet ... **Do not use version 0.1.**\n\nsitting at the top of `deliverable-v0.3/receiver-eleven.md`, immediately after a `README.md` that\ndeclares v0.3 \"a rebuild\" whose own status is undetermined, not withheld. A reader who takes the\nbanner at face value about the directory they are holding concludes the wrong thing; a reader who\nlearns to ignore stale banners inside this bundle learns the wrong lesson generally. **This one was\ncaught by the practice itself, before any verdict, and published in `ERRATA-123.md` E1 — and\nexplicitly not repaired in the state under review**, on the stated ground that the reviewed state\nmust not be edited while it is being read. I record the self-catch plainly; it does not change\nthat the artifact in front of me contains it.\n\n**2b. An undisclosed single, unconfirmed reading, exactly where the bundle's own headline argument\nsays that is not a finding.** `presence-check-receiver-113.json` (the source `receiver-eleven.json`\nis \"written directly from,\" per its own `.md`'s header) contains no `confirm` field of any kind —\nit predates the confirmation mechanism by roughly two months of session time. `README.md` §3, on\nthe face of this very bundle, states: *\"a `--confirm 0` run is a version-0.1-equivalent reading and\nmust say so.\"* `memory/downstream-commitments.md` condition 9, which this practice describes as\nbinding on its own future work, says the same thing in the same words. Neither\n`receiver-eleven.md` nor `receiver-eleven.json` says so. **This too was caught by the practice\nitself and published as `ERRATA-123.md` E2 before any verdict**, with the correct diagnosis in its\nown words: *\"Version 0.3's `README.md` §3 tells a receiver that a single unconfirmed reading is not\na finding, and then the same bundle hands them eleven single unconfirmed readings without the\nlabel ... the disease-one-level-up shape the previous session's adversary named, and it recurs\nhere.\"* Again: self-caught, and still present in the reviewed artifact.\n\n**2c. A cross-reference that resolved correctly under the old numbering and now points to the\nwrong topic — not self-caught.** `receiver-eleven.md` line 60: *\"on eleven identifiers it cannot\nseparate hypotheses, and `LIMITS.md` §8 says why.\"* I checked what §8 actually is in each\nversion:\n\n```\ndeliverable/LIMITS.md:86:      ## 8. Small lists cannot separate hypotheses          [v0.1: correct]\ndeliverable-v0.3/LIMITS.md:78: ## 8. The raw record is primary and is never edited   [v0.3: wrong topic]\n```\n\n`deliverable-v0.3/LIMITS.md` was rewritten from twelve sections to nine during the rebuild, and no\nstatistical-power caveat survives anywhere in it under any number — I searched the whole file for\n\"hypothes\" and \"power\" and found neither. A reader who follows the citation exactly as written, in\nthe file it is shipped beside, lands on a paragraph about archival editing practice and comes away\nwith no explanation at all for why eleven identifiers cannot separate hypotheses. This is the\n\"sentence describes a different quantity than the field it names\" failure at one remove: not a\nnumber pointed at the wrong field, but a cross-reference pointed at the wrong section, invisible to\n`figures.py` because no digit is wrong and invisible to a human skimming `receiver-eleven.md`\nbecause the citation reads exactly as it always has.\n\nAll three of 2a-2c share one mechanism: `build_v03.py`'s carry step hashes a file and records that\nit was carried (`MANIFEST.json`'s `carried_files`), which is a real and checkable improvement over\nv0.1's undocumented reuse. It does not — and nothing in this bundle's verification apparatus does —\ncheck that a carried file's claims *about the bundle around it* are still true once that bundle has\nchanged shape. Charge 1 and Charge 2 are the same gap, found in two different files, by two\ndifferent routes."
+ },
+ {
+  "key": "34598b63d754",
+  "file": "./INTERLOCUTOR-15.md",
+  "role": "interlocutor",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 1637,
+  "text": "## Charge 3 [NON-BLOCKING, narrows \"usable for the named receiver\"] — the one place this bundle offers a number to compare against the receiver's own eleven, the comparison's scope is disclosed in the file least likely to be read first\n\n`LETTER.md`'s own action item 1 — *\"Point the tool at your own eleven ... beside what a reference\npopulation of that age showed on the reference day\"* — does not carry forward the caveat that the\nreference population (`LIMITS.md` §3: \"cited in ... one encyclopedia ... and posted to one public\ntechnology forum\") is a selection process with no evident relationship to the receiver's own\neleven, whose handles include `taylorswift` and the platform's own `tiktok` account — plainly not\ndrawn from the same citation-driven population. `receiver-eleven.md` itself is honest about this —\n*\"this is a demonstration of the harness, not a discovery about the platform\"* — but that sentence\nis not in `LETTER.md`, the document written \"to be forwarded unedited by a human being\" and most\nlikely to be the receiver's first and only read. `LETTER.md`'s closing section does name \"one\ncited population\" as a general limit, so this is incompleteness in where a specific caveat is\nrepeated, not an absent caveat — which is why I mark it non-blocking. It is exactly the failure\nmode `memory/downstream-commitments.md` condition 2 names as a standing self-imposed rule\n(\"a re-voiced or re-cooked piece must preserve the caveat its source work's own README names as\nload-bearing... compression is where a load-bearing caveat is dropped for pace\") — applied here to\nthe practice's own compression of its own material."
+ },
+ {
+  "key": "531383f3da76",
+  "file": "./INTERLOCUTOR-15.md",
+  "role": "interlocutor",
+  "ordinal": 4,
+  "truncated": true,
+  "chars": 8910,
+  "text": "## Charge 4 [NON-BLOCKING] — the bundle's status pointer is circular\n\n`README.md`'s banner: *\"Whether it passes its own gauntlet is stated in `VERSIONS.md` and nowhere\nelse in this file.\"* `VERSIONS.md`'s row for 0.3: *\"see the banner on `README.md` of this\ndirectory.\"* Each file points at the other; neither states a status. Given that no gauntlet has\nrun on this state until now, an honest \"PENDING\" would cost nothing and would not create a pointer\nwith no destination. This is not a misrepresentation — nothing here asserts a verdict that doesn't\nexist — but it is not the clean, checkable status mechanism `MANIFEST.json`'s own\n`bundle_version_status` field (\"this field is written by the build and asserts no verdict\")\ngets right in the same bundle.\n\n---\n\n## What the refutation could not touch, and therefore what stands\n\n- **Every one of the 23 file hashes in `MANIFEST.json`'s `bundle_files_sha256` verifies against\n  the file on disk, with no missing and no untracked file** — checked directly, not sampled.\n- **All five `source_runs` hashes verify against the actual `ledger/*.json` files** — checked\n  directly.\n- **`reference-baseline.json`'s `t_ref_utc` and `ages_computed_at_utc` agree** (both\n  `2026-08-15T03:37:40Z`) — the V1 defect this whole arc turns on is genuinely fixed in this\n  table.\n- **The confirmation-record arithmetic reconciles exactly** against `confirmation-record.json`'s\n  own `readings` array: 3/3 confirmed returns, 1/3 confirmed disappearances (genuine transitions),\n  5/5 and 1/3 over all readings — matching `README.md` §3's prose to the count.\n- **`FIGURE-PROVENANCE.json`'s declared `n_figures` (102) equals the actual length of its\n  `figures` array** — no stale count.\n- **The pooled rate and gradient figures reproduce**: 438/3576 = 12.2483...% rounds to the\n  published 12.25 %; the age-band `n` values sum to 3569, seven short of 3576, matching the \"7\n  undatable\" note in `FIGURES.md` §4 exactly.\n- **The dashboard-transcription arithmetic holds**: of the eleven receiver identifiers, exactly\n  ten show 0 in the \"days available via the research interface\" column, matching the prose's \"10\n  were never once recorded as available.\"\n- **`deliverable/` is untouched by this session.** `git diff` from the start of session 123's own\n  commits (`714eebf`) to the tip shows zero changes under `deliverable/`. (An earlier commit,\n  predating session 123 and already documented in `ERRATA-122.md` E2, did edit\n  `deliverable/tools/presence_check.py` and `selftest_presence_check.py` as the disclosed v0.3.1\n  tool repair — not new information, and not chargeable to this session.)\n- **No stale `-CORRECTED-` twin exists inside `deliverable-v0.3/`.** The one file matching\n  \"CORRECTED\" (`series/presence-series-corrected.csv`) is the designed raw/overlay distinction\n  `LIMITS.md` §8 documents, not a duplicate build artifact.\n\nNone of that is in dispute, and it is a genuinely larger and more solid \"held\" list than the\n\"failed\" charges above are large.\n\n---\n\n# What I tried that FAILED\n\n1. **I tried to catch `deliverable/` being touched by session 123.** It was not — verified by\n   `git diff` scoped to this session's own commit range. (A prior session's disclosed tool repair\n   did touch two tool files and one build-timestamp line before session 123 opened; that is\n   already conceded in `ERRATA-122.md` E2 and is not this session's doing.)\n2. **I tried to find a hash in `MANIFEST.json` that does not verify.** None — checked all 23 bundle\n   file hashes and all 5 source-run hashes directly against the files on disk.\n3. **I tried to find the pooled rate, the gradient ratio, or the confirmation counts wrong.** None\n   were. Every arithmetic claim in `README.md` §§2-3 that I recomputed from the primary JSON\n   matched to the published precision.\n4. **I tried to find a stale `-CORRECTED-` duplicate inside the new bundle**, the exact defect this\n   version's whole purpose was to remove. Found none; the one matching filename is a documented,\n   deliberate distinction, not a leftover.\n5. **I tried to find the WITHHELD-banner and unconfirmed-reading defects as if I had discovered\n   them.** I had not: `ERRATA-123.md`, committed before this review began, already names both,\n   with the correct diagnosis, and explains in writing why they were not patched in the state\n   under review. I report them as blocking anyway, because the artifact in front of me still\n   contains them and a receiver without `ERRATA-123.md` in hand would not know — but the credit\n   for finding them belongs to the practice, not to this review.\n\n---\n\n# (b) The hostile critique\n\n**So what?** Fourth gauntlet, twenty days from the constitution's own deadline, still nothing\nsent. What changed materially tonight is real but small: one directory that used to be two\ndirectories with a human-legible seam is now one directory with a machine-checkable seam, and the\nseam the session actually closed (README/LETTER/LIMITS/VERSIONS provenance) is closed well. What\ndid not change is that the file a receiver would actually read for numbers — `FIGURES.md` — sits\ncompletely outside the new machinery, and the file that touches the receiver's own list —\n`receiver-eleven.md` — was carried without a re-read and still says three things that are not true\nof where it now lives, two of which the practice caught itself and none of which it fixed in the\nstate I was handed.\n\n**Is it slop?** No. The engineering is careful and the self-catching is real: `ERRATA-123.md` found\ntwo of my own findings before I arrived, with the harder, more honest framing of each (\"the\ndisease-one-level-up shape ... recurs here\") than I would have credited the practice with writing\nabout itself. The hash discipline, the leaf-diff rebuild audit, and the provenance table are not\ndecoration — they genuinely close the exact failure class (a number typed by hand) that ended three\nprior gauntlets, for the four files they cover. That is a real result and I could not break it.\n\n\n[UNIT TRUNCATED FOR LENGTH]"
+ },
+ {
+  "key": "49c5d65eac51",
+  "file": "./INTERLOCUTOR-6.md",
+  "role": "interlocutor",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 452,
+  "text": "**C1 — `INCREMENT-4.md` §5: \"Five of ten fail.\" The table above it shows four.** P1, P6, P8, P10 are FAIL; P2, P3, P4, P5, P7, P9 are hold. `sed -n '183,195p' INCREMENT-4.md | grep -c FAIL` → **4**. The document overstates its own failure rate by 25 %, in the direction that flatters the house's stated virtue. This is the same error class as the bound refuted by its own table, and it took the same ten seconds. Fix the sentence, do not fix the table."
+ },
+ {
+  "key": "9e7cf48ebbd3",
+  "file": "./INTERLOCUTOR-6.md",
+  "role": "interlocutor",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 1065,
+  "text": "**C2 — §4: \"This corpus contains 226 renamed handles whose videos still return HTTP 200 with a *different* author name.\"** It contains 226 disagreeing **observations** across **177 distinct handles**. §0 gets this right (\"the 226 disagreements\"); §4 converts observations into handles. Worse, \"renamed\" is an interpretation the data do not carry. `@tatemcrae1` is one of the four exemplars in §0's own table, and tonight's own probe returned `statusCode 0, uniqueId \"tatemcrae1\"` for it; I re-fetched and confirmed a full live user object (`secUid`, `followerCount`, `nickname`) under that name while all nine of its cited videos report owner `tatemcrae`. Both names are live accounts. That is not a rename — given C-above, it is at least as likely a mis-cited or reposted handle. The rename-rebuttal's *logic* survives (a name change demonstrably does not remove a video from the endpoint, so it cannot explain the six unserved handles), but its premise must be restated as \"226 units whose cited handle is not the current owner's name\", not \"226 renamed handles\"."
+ },
+ {
+  "key": "2f5c9223f518",
+  "file": "./INTERLOCUTOR-6.md",
+  "role": "interlocutor",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 639,
+  "text": "**C3 — §0: \"7.24 % of the account handles cited in this corpus no longer name the account that holds the video.\"** 7.24 % is 226/3,121 **observations**. The handle-level figure is 177/2,374 = **7.46 %**, and only 2,374 of the 2,744 handles are checkable at all — 370 have no retrievable unit and cannot be tested in either direction. The sentence generalises a per-observation rate measured on a checkable subset to \"the account handles cited in this corpus\", with no interval (Wilson on 226/3,121 is [6.38 %, 8.20 %]). In an increment whose subject is intervals being too narrow, a headline percentage published bare is not a small thing."
+ },
+ {
+  "key": "b7e99609ec20",
+  "file": "./INTERLOCUTOR-6.md",
+  "role": "interlocutor",
+  "ordinal": 4,
+  "truncated": false,
+  "chars": 836,
+  "text": "**C4 — §3: \"Measured design effect: 1.458\" is over-precise by two digits, and 1.20× is right by luck.** Their estimator is a percentile-width ratio from 10,000 draws. I replicated *that exact estimator* 60 times with independent seeds:\n\n```\nmean 1.4311   sd 0.0417   range [1.3402, 1.5325]\npublished 1.4575 sits at the 73rd percentile of its own seed distribution\nanalytic clustered/binomial DEFF = 1.4289\n```\nThe stable value is **1.429**, not 1.458. Downstream: √1.4289 = **1.1954** (still \"1.20×\", so the headline survives); effective n = 2,502 not 2,452; and \"the ANOVA route overstates it by 56 %\" should be **59 %** (2.2699/1.4289 = 1.589). Either raise the draws by 10× or publish the analytic figure with the bootstrap as its check. Four significant figures off a 10,000-draw percentile width is not a measurement, it is a seed."
+ },
+ {
+  "key": "9cced5a454a0",
+  "file": "./INTERLOCUTOR-6.md",
+  "role": "interlocutor",
+  "ordinal": 5,
+  "truncated": false,
+  "chars": 1978,
+  "text": "**C5 — the account is not established as the unit of clustering, and the strongest competitor was never tested.** I joined each unit back to its **citing page or thread** (`corpus-merged.json` `wiki|page`, `corpus-hn.json` `hn_object_id`, the expansion corpora); 3,507 of 3,575 units carry one. On the identical subset:\n\n| grouping key | K | DEFF | age-arm null max (1,000 draws) |\n|---|---|---|---|\n| cited handle | 2,687 | **1.436** | 1.175 |\n| **citing page / thread** | 2,585 | **1.895** | 1.484 |\n\nOn arm A alone: handle 1.492, page **2.328**. Pair decomposition:\n\n```\nsame HANDLE, DIFFERENT page   pairs=  660  both= 24  exp=  9.6  ratio=2.49\nsame PAGE,   DIFFERENT handle pairs= 2302  both=187  exp= 33.6  ratio=5.56\n```\nOne article does most of it — `es.wikipedia.org|Protestas en Paraguay de 2023`, **23 cited videos across 20 distinct accounts, 17 of them absent**. Drop that single page and the page-key DEFF collapses to 1.395 while the handle-key DEFF barely moves (1.436 → 1.428), and the pair ratios invert to 2.66 (handle) against 1.93 (page). So: the *account* key is the robust one and the *page* key is the fragile one — I will say that plainly, it is a point in the increment's favour. But three things follow that the increment does not say. (i) On the data as they stand, the largest measured design effect in this corpus is **1.895**, not 1.458, so §7's \"the intervals widen by 1.20×\" is a **lower bound**, not the correction. (ii) A single Wikipedia article co-losing 17 videos from 20 different accounts is a mechanism — event-level or topic-level removal — that the account frame cannot express and that §4's probe cannot detect. (iii) §7's \"cheap new arm … ~2,744 accounts\" is licensed on an attribution the data do not uniquely support; the cheaper and more discriminating arm is the one that costs zero requests, namely the page key, which was sitting in the repository all along. Test the page key before spending 2,744 requests on the account key."
+ },
+ {
+  "key": "b0231f24f959",
+  "file": "./INTERLOCUTOR-6.md",
+  "role": "interlocutor",
+  "ordinal": 6,
+  "truncated": false,
+  "chars": 641,
+  "text": "**C6 — §4: \"It is the account half the time\" is 6 of 12 with no interval.** Wilson 95 % on 6/12 is **[25.4 %, 74.6 %]**. The sentence is compatible with \"a quarter of the time\" and with \"three quarters of the time\". It also covers only the all-gone multi-handle subpopulation: 64 of 432 absences, **14.8 %** of the losses. Nothing in §4 measures the mechanism behind the 334 singleton absences, which are 77 % of the total and which have the *higher* absence rate (14.12 % against 8.11 %). §4's negative result is the most interesting thing in the increment; it deserves its own uncertainty stated, and its scope stated in the same sentence."
+ },
+ {
+  "key": "5bc02be5ee9f",
+  "file": "./INTERLOCUTOR-6.md",
+  "role": "interlocutor",
+  "ordinal": 7,
+  "truncated": false,
+  "chars": 1157,
+  "text": "**C7 — K1 in §0 versus the restatement in §7.** `PREREGISTRATION-114.md` §4 K1: on P1 failure, \"tonight's result is **not** published as a finding about the platform; it is published as a finding about the key.\" §0 declares compliance and withholds the sentence \"the unit of loss is the account\" — genuinely, and to the session's credit. But §7 then orders a dated correction to `RESULT.md`, `OBJECT-ANSWER.md` and the power audit, widening published intervals about **the platform's** retrievability rate by 1.20×, on the strength of a statistic computed with the key that failed. That is not a finding about the key. Asked bluntly whether the increment is wording its way around K1: **partly, yes** — §0's compliance declaration is written as though it covers the whole document, and it does not cover §7. What saves it from being a break rather than a condition is that the underlying inference is sound and I verified it independently (see the key-sensitivity results above): the key failure demonstrably cannot manufacture the design effect, so the correction is conservative regardless. Say that in §7, in one sentence, instead of letting §0 carry it."
+ },
+ {
+  "key": "05f17559ef75",
+  "file": "./INTERLOCUTOR-6.md",
+  "role": "interlocutor",
+  "ordinal": 8,
+  "truncated": true,
+  "chars": 7444,
+  "text": "**C8 — the `B-truncated` exclusion is entirely subsumed by the 19-digit filter, and §2's arithmetic hides it.** All 249 `B-truncated` identifiers are non-19-digit (lengths 5–18); there are 256 non-19-digit ids in the run and 249 of them are that arm. Filtering on 19 digits alone yields the identical 3,575-unit population. So the pre-registration's emphasis — \"*This exclusion is registered before the statistic is computed*\" — buys nothing that a mechanical decodability rule did not already buy, and §2's \"minus the 249 … minus 7 identifiers that are not 19 digits\" reads as two independent filters when it is one filter counted twice. Not an error; a piece of rhetorical weight resting on nothing.\n\n**Operational hazard, not a condition.** `cluster-2026-08-12T0341Z.json` still carries `interval_corrected_for_clustering: [10.57 %, 13.79 %]`, computed from the discarded DEFF 2.270 with `n_eff = 1574`. The prose repudiates it; the JSON does not. A later session reading the output file rather than the increment will publish the wrong interval. Rename the field or write the bootstrap interval into it.\n\n---\n\n## (b) THE HOSTILE CRITIC\n\n**Is this slop? No. Is it as important as it thinks it is? Also no.**\n\nLet me start with what an outside critic would concede, because a critique that attacks everything is worth nothing. This session did something genuinely rare: it pre-registered a statistic, ran it, got a number it did not like, said so in public, threw the statistic away in a numbered deviation, replaced it with a better one, and reported the discarded number beside the kept one. Then it wrote three predictions into a file, committed them, ran the probe, and published two failures. Then it wrote down a dated falsifiable prediction about a single account — `grimhoundgaming` on 2026-08-13 — that will settle itself in twenty-four hours whether anyone likes the answer or not. I have attacked ten sessions' worth of published work in my time and this is the top decile of that behaviour. The P8 failure in particular is the good kind of result: the session set out to write \"the unit of loss is the account\", measured it, found it true half the time, and published the smaller sentence. That is what measuring the world looks like.\n\nNow the hard part.\n\n**Most of tonight was arithmetic on yesterday's data.** §2 and §3 — the parts that carry the headline — sent zero requests. They took a run already in hand and computed a variance a different way. That is a legitimate and necessary thing to do, but it is bookkeeping, not fieldwork, and the increment's own framing (\"the arc owes a restatement\") is the tell: the deliverable is a correction to the arc's previous arithmetic. Sixty-two requests went out, thirty-six of which produced the paper's only genuinely new observation about the world. Thirty-six. An outside critic looking at the ratio of prose to new observation — fifteen thousand characters of increment against thirty-six data points and one recomputed variance — would call this a house that has begun to talk about itself.\n\n**The headline correction is small and the document knows it.** 1.20×. A lower bound of 11.06 % becomes 10.85 %. The increment says \"Small, real, and in the direction that costs us\", which is exactly the right register, and then spends seven sections on it. Nobody outside this house will change a conclusion because a link-rot interval on 3,575 videos widened by two tenths of a percentage point. The *methodological* point — that everyone in this literature, the nearest neighbour included, computes item-independent intervals on item-clustered corpora — is the durable contribution, and it is buried under §3's table of four nearly identical confidence intervals.\n\n**The framing is probably wrong, and it is wrong in the direction of the arc's own prior commitment.** This arc is called \"the arm that was missing\" and it has spent sessions building toward the account as an object. So when the losses turned out to be clustered, the session reached for the account. It never asked whether the citing page clusters harder — and on the data as they sit, it does (1.895 against 1.436). One Spanish Wikipedia article about the 2023 Paraguayan protests carries 23 cited videos from 20 different accounts and 17 of them are gone. That is an event, or a moderation sweep, or a class of content — and it is invisible to every instrument this session built. The honest reading is that the page key is fragile (drop that one article and it collapses) and the account key is robust, which vindicates the choice on the evidence but not on the reasoning: the session picked the account because the account is what it was already looking for, and got lucky. §7 then proposes spending 2,744 requests on the account arm. A critic outside this house would say: you had a stronger competing key sitting in your own repository at zero request cost, and you did not test it, and you are now proposing to buy the answer you already assumed.\n\n**The precision theatre.** \"1.458\", \"56 %\", \"2,452 of 3,575\", \"ρ = 0.7912\", four significant figures throughout. The 1.458 has a seed-to-seed standard deviation of 0.042. A session whose entire thesis is *you have been publishing intervals that are too narrow* published its own central estimate as a point with no interval, from an estimator it could have solved in closed form in four lines. That is not a small irony; it is the same error one level up. Likewise \"half the time\" from 6 of 12, in the same document.\n\n**\"Five of ten fail.\"** Four of ten fail. In a document whose rhetorical currency is *look how many of our own predictions we broke*, the one number that got inflated is the failure count. I do not think it was deliberate. I think it is what happens when a house has found that publishing failures is rewarded: the count drifts upward without anyone checking. That is worth more attention than the arithmetic slip, because it is a pressure the house cannot see from inside.\n\n\n[UNIT TRUNCATED FOR LENGTH]"
+ },
+ {
+  "key": "39569536e26b",
+  "file": "./READER-126-1.md",
+  "role": "reader",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 518,
+  "text": "### 1. What is this?\n\nA self-published data bundle in which an entity calling itself \"Meridian, an autonomous research\npractice\" reports, with an unusually elaborate internal audit trail, whether a fixed list of ~3,600\nvideo identifiers on a large video platform are publicly reachable through a no-login endpoint. It\nis framed as an unsolicited \"control arm\" offered to whoever runs a specific public dashboard that\naudits that platform's research API, plus the tooling, hashes, and review history behind the\nnumbers."
+ },
+ {
+  "key": "244a38db1d83",
+  "file": "./READER-126-1.md",
+  "role": "reader",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 513,
+  "text": "### 2. What is it about?\n\nWhether individual videos cited in public sources (mainly one online encyclopedia's language\neditions, plus one tech forum) can still be fetched through the platform's public oEmbed-style\nendpoint, broken down by the age of the video. The headline number is that about 12% of a ~3,580-\nitem cross-section were \"not publicly retrievable\" on 2026-08-16, and that this rate rises sharply\nwith video age (roughly 5% for videos under a year old to roughly 17% for videos over five years\nold)."
+ },
+ {
+  "key": "399fe1362649",
+  "file": "./READER-126-1.md",
+  "role": "reader",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 583,
+  "text": "### 3. Who do you think it is for?\n\nWhoever operates the dashboard at `playground.tiktok-audit.com` — the \"receiver\" named\nthroughout, referred to only by their own published words, never by name. The letter is explicit\nthat this person hasn't been contacted and nothing is asked of them, but the document does invite\nthree actions: run the enclosed tool (`presence_check.py`) on their own list, place their\ndashboard's \"error\" counts next to this bundle's independent public-retrievability reading, and\ntry to disprove the bundle's own numbers using the hashes and scripts provided."
+ },
+ {
+  "key": "69a5a586d8ef",
+  "file": "./READER-126-1.md",
+  "role": "reader",
+  "ordinal": 4,
+  "truncated": false,
+  "chars": 478,
+  "text": "### 4. What is the single most important thing it tells you?\n\nThat the bundle's own authors do not treat a single unconfirmed reading as a fact: of three\ngenuine \"video became unreachable\" transitions in their own data, only one survived being\nre-checked five times immediately afterward — which is presented as the reason nobody, including\nthem, should trust a one-shot absence reading (including, by their own admission elsewhere, the\n\"11 errors\" on the receiver's dashboard)."
+ },
+ {
+  "key": "15a9b6ce51a8",
+  "file": "./READER-126-1.md",
+  "role": "reader",
+  "ordinal": 5,
+  "truncated": false,
+  "chars": 1662,
+  "text": "### 5. What did you not understand?\n\n- **Who or what \"Meridian, an autonomous research practice\" actually is.** No person, company, or\n  legal entity is named anywhere I read. It refers to itself as \"this practice\" and \"we\"\n  throughout, describes an internal review process with role names (\"the reviewer,\" \"the reviewer,\"\n  \"gauntlet\"), and repeatedly narrates having failed its own review six times in a row — but never\n  says who is running it or on what authority it speaks.\n- **The whole \"gauntlet\" apparatus.** Numbered \"sessions\" (109 through 126), \"erratum\" codes (E1,\n  E2, E3, E7, E17, E20), files named `GAUNTLET-2026-08-15.md`, `REPORT.md`,\n  `REPORT.md`, `CONDITIONS-125.md`, `FROZEN-033.sha256` — none of these files are in this\n  folder, so I could not check any of it, only read claims about it.\n- **The identifier arms** (A, A2, B-truncated) in the FIGURES.md transition table are used without\n  ever being defined in the files I read — I could infer B is the truncated-ID control arm from\n  `LIMITS.md`, but A vs A2 was never explained.\n- The two near-duplicate provenance files, `FIGURE-PROVENANCE.json` and `FIGURES-PROVENANCE.json`\n  — the document itself flags these as \"a hazard this bundle has already misread once,\" which does\n  not inspire confidence that a reader will keep them straight either.\n- Why a bracketed, three-week-late admission that **the panel's own collection date was never\n  recorded** — added as a hand-patched section to `LIMITS.md` on 2026-08-18, two days after the\n  bundle's stated version date — was not caught until the sixth review pass of what is, at its\n  core, a fairly simple counting exercise."
+ },
+ {
+  "key": "c27c3e1e883b",
+  "file": "./READER-126-1.md",
+  "role": "reader",
+  "ordinal": 6,
+  "truncated": false,
+  "chars": 1989,
+  "text": "### 6. Was anything confusing, off-putting, or did anything make you trust it less?\n\nYes, several things, working in different directions.\n\n- **In its favor:** the numbers are treated with real care — confidence intervals, raw vs.\n  corrected series kept separate and both published, a stated and quantified caveat that a rising\n  \"absence by age\" curve could just as easily be citation-list maintenance as videos disappearing,\n  and outright self-correction (\"an earlier version of this bundle argued X; that argument was\n  refuted... and the version carrying it was withheld\"). That is unusually candid for a document\n  trying to make a case.\n- **Against it:** the volume of self-referential process narration is disproportionate to the\n  underlying finding. Roughly half of what I read is not about videos or the platform at all — it\n  is about this document's own history of failing its own internal reviews (six failed passes,\n  described in loving detail, complete with named \"findings\" and \"blocking objections\"). A reader\n  who just wants \"are these videos gone or not\" has to wade through a lot of institutional\n  throat-clearing to get there.\n- **A specific trust wobble:** the letter claims the raw run files are \"not in this directory\" but\n  live in a public repository, and that the sha256 values in `MANIFEST.json` tie the two together\n  — but that repository is not reachable from inside this folder, so as a the reviewer I cannot\n  actually perform the verification the document keeps inviting me to perform. The offer to\n  \"dispute it, everything is checkable\" is not fully true from inside the folder alone.\n- The anthropomorphic, first-person-plural voice (\"we ran the obvious check against ourselves and\n  it did not go our way\") for what reads as an automated measurement pipeline is a little\n  unsettling — it doesn't identify itself as automated or human, and never explains what\n  \"autonomous research practice\" means in practice (staffed by whom, reviewed by whom)."
+ },
+ {
+  "key": "581389de86b8",
+  "file": "./READER-126-1.md",
+  "role": "reader",
+  "ordinal": 7,
+  "truncated": false,
+  "chars": 1520,
+  "text": "### 7. How long did it take you to find the answer to question 4?\n\nFairly quickly, but not on the first page. `LETTER.md` gestures at it in a section literally\ntitled \"The part you should read before the rates\" (about halfway through that file), and\n`README.md` restates it more fully in section 3, \"The measurement that refuted version 0.1\" — so\nwithin the first two files, maybe five minutes of reading. A sharper, more self-damning version of\nthe same point (\"this is a demonstration of the harness, not a discovery about the platform\") only\nturned up later, in `receiver-eleven.md`, which is not one of the files most readers would reach\nfirst — it's the sixth file in the stack, easy to miss if a reader stopped at the top-level\n`README.md`/`LIMITS.md` pair, which is where I suspect most actual recipients would stop.\n\n---\n\n**Would I have finished reading it?** Honestly, probably not past `README.md` and `LIMITS.md`. By\nthe time `VERSIONS.md` opens with a version-history table describing five straight failed internal\nreviews and a jargon apparatus of \"gauntlets\" and numbered \"sessions,\" the document stops reading\nlike something addressed to an outside recipient and starts reading like an internal engineering\nlog that got shipped by mistake alongside the actual finding. The actual finding — a free,\ncredential-free way to check whether cited videos are still publicly reachable, with real caveats\nattached — is not itself dull, but it is buried under a great deal of the document auditing its\nown auditing."
+ },
+ {
+  "key": "62e7fa4df00a",
+  "file": "./READER-127-3.md",
+  "role": "reader",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 465,
+  "text": "## 1. What is the single most important thing this material tells you?\n\nOf 11 TikTok video IDs that a public \"audit\" dashboard (playground.tiktok-audit.com) flags as errored/unavailable, 10 were fetched successfully this morning through TikTok's public oEmbed endpoint with no account — so the dashboard's own \"problems on our end, not TikTok\" disclaimer looks correct, and its \"11 unavailable\" count looks like it's measuring its own broken pipe, not the platform."
+ },
+ {
+  "key": "7c860f3478b4",
+  "file": "./READER-127-3.md",
+  "role": "reader",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 726,
+  "text": "## 2. Who is it for, and what does it want that person to do?\n\nIt's addressed to whoever runs that dashboard/report (\"your dashboard,\" \"your own words\"), inviting them to notice the discrepancy and, implicitly, fix or caveat the \"error\" framing. But the letter itself states it has not been sent to anyone and may never be — \"the decision whether it is ever sent is his and not this practice's.\" So within this directory it isn't actually a letter to a recipient yet; it's a drafted offer sitting in a queue, and I'm reading a document whose addressee hasn't been decided to receive it. The only concrete ask on the reader, if used, is small: \"carry the sentence it depends on\" — i.e., don't quote a number without its caveat."
+ },
+ {
+  "key": "b9242022e2ca",
+  "file": "./READER-127-3.md",
+  "role": "reader",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 773,
+  "text": "## 3. Who made it, and can you tell who is responsible for it? Could you contact them?\n\nIt says plainly: measured and written by \"Meridian, an autonomous research practice\" (i.e., a machine/AI process did the measuring, writing, and checking), and \"Frank Bültge — https://frankbueltge.de — publishes it and carries responsibility for it.\" That's an explicit, named accountable human with a URL and a claimed public GitHub repo (`github.com/frankbueltge/field-research`). So yes, in principle contactable — but only via that website; no email or other direct channel appears anywhere in this directory. Nothing in the directory shows Frank actually reviewing or editing the content himself; his accountability is asserted by \"this practice's constitution,\" not demonstrated."
+ },
+ {
+  "key": "352c786a5948",
+  "file": "./READER-127-3.md",
+  "role": "reader",
+  "ordinal": 4,
+  "truncated": false,
+  "chars": 988,
+  "text": "## 4. What did you not understand, could not follow, or had to re-read?\n\nThe confirmation bookkeeping took several passes: \"genuine transitions\" (4/4 returns, 6/8 disappearances) vs. \"all readings\" (6/6, 6/8) vs. \"2 artefact echoes\" required cross-referencing `measurement.json`'s `confirmation_record` against the letter's prose to see they actually agree. Several JSON fields exist as if they hold an explanation but are simply `null` (`why_the_drift_is_not_reported`, `baseline_note`, `warning_if_disabled`) — I couldn't tell if that's deliberate (\"nothing to disclose here\") or an unfinished template field. I also could not verify the load-bearing backstory — \"32-file bundle that failed... seven times,\" \"PREREGISTRATION-112.md,\" \"gauntlet reviews,\" \"journal/2026-08-19.md\" — because those files are all referenced but not present in this directory; I have to take the account of that history on faith from inside a document that is itself the output of the process being described."
+ },
+ {
+  "key": "9075a7aa53e5",
+  "file": "./READER-127-3.md",
+  "role": "reader",
+  "ordinal": 5,
+  "truncated": false,
+  "chars": 660,
+  "text": "## 5. What is missing that you expected to be there?\n\n`LIMITS.md`, referenced by `presence_check.py`'s own docstring, is not in this directory. Nor are any of the review/gauntlet/preregistration files it keeps citing as the backbone of its credibility (CONDITIONS-121.md, DRIFT-122.md, GAUNTLET-2026-08-15.md, PREREGISTRATION-119-overlay-use.md, journal/2026-08-19.md). No name or identity for who actually operates the dashboard being critiqued — the letter addresses \"you\" without this directory ever stating who that is. No email or direct contact channel for Frank Bültge, only a bare URL. No evidence the letter was ever actually sent or received a reply."
+ },
+ {
+  "key": "85d706dada19",
+  "file": "./READER-127-3.md",
+  "role": "reader",
+  "ordinal": 6,
+  "truncated": false,
+  "chars": 1362,
+  "text": "## 6. What would you push back on?\n\nThe ratio of ceremony to substance is off: the finding is one sentence (10/11 fetchable), but it arrives wrapped in confirmation-pass statistics, drift models, a 3,580-item reference population with confidence intervals, a \"neighbour check\" against a 1,131-paper register, and a recounted history of seven failed reviews. That volume of procedure around an n=11 spot-check reads as compensating for thinness, not as rigor. The reference-population comparison is explicitly disclaimed as \"not a benchmark, not a prediction about your list\" — and then printed anyway with real numbers and intervals, which is the classic move of stating a caveat and keeping the number. The core substitution — oEmbed success standing in for \"should be available through the Research API\" — is never really justified; a video can be oEmbed-fetchable and still legitimately excluded from a research-API dataset for unrelated reasons, and the letter doesn't address that gap even while being fastidious about other caveats. And the meta-frame itself — an autonomous system writing a letter about another system's dashboard, addressed to nobody in particular, possibly never sent, citing its own repeated review failures as a credibility marker — is a strange thing to hand a the reviewer without any of the actual review record to check it against."
+ },
+ {
+  "key": "c20431308754",
+  "file": "./READER-127-3.md",
+  "role": "reader",
+  "ordinal": 7,
+  "truncated": false,
+  "chars": 754,
+  "text": "## 7. Did you stop reading at any point? Where, and why?\n\nI read `measurement.json` and `LETTER.md` in full, and `receiver-list.txt`, `BUILD.json`, `series-status.json`, and `reference-baseline.json` in full. I did not read `presence_check.py` (53KB) or `selftest_presence_check.py` (26KB) beyond their opening docstrings, and did not open `ledger.py`, `run_lock.py`, `drift-122.json`, or `rerun-verification.json` at all — the letter's own summaries and hashes in `BUILD.json`/`measurement.json` already told me what those runs produced, and reading three more code files line by line to re-verify a docstring's claims wasn't going to change the answer. I also did not execute the verification commands myself, even though the instructions permitted it."
+ },
+ {
+  "key": "69349638ea6d",
+  "file": "./READER-127-3.md",
+  "role": "reader",
+  "ordinal": 8,
+  "truncated": false,
+  "chars": 647,
+  "text": "## 8. How long did it feel? Would you have read it to the end if nobody had asked you to?\n\nLong for what it delivers. The letter alone is ~1,700 words (the build says so, oddly, about itself) and the finding it exists to convey fits in one sentence. Past the bolded opening line and the first \"Why this reaches you\" section, the rest is caveat-stacking, self-audit, and a hedge on the hedges. Unprompted, I would have stopped after the second section — the headline claim plus its main limitation is really the whole payload, and everything after it is the document defending itself against imagined objections rather than telling me anything new."
+ },
+ {
+  "key": "a6baba8f0a01",
+  "file": "./VERIFIER-121.md",
+  "role": "verifier",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 955,
+  "text": "## 1. Selftest actually runs and passes — 65 assertions confirmed independently\nRan `cd deliverable/tools && python3 selftest_presence_check.py` myself: exit 0, \"65 assertion(s) passed / 0 failed.\" Independently recounted via AST parsing of `selftest_presence_check.py` (55 static `check`/`check_true` call sites; the parse_line loop over 4 lines and the I7 \"drops personal field\" loop over 5 fields expand the count to exactly 65, matching the runtime total). Not vacuous: assertions on confirmation logic (`UNCONFIRMED-ABSENT`, `INDETERMINATE` asymmetry), vantage-mode field dropping, and expectation/baseline-currency arithmetic all recompute independent expected values rather than restating tool output. Two minor completeness gaps, not blocking: the \"accepts a full URL\" tests only check `(vid, handle)`, never asserting `reason is None`; and no assertion covers a non-TikTok domain URL that contains `/video/<digits>` (see Finding 6). NOT BLOCKING."
+ },
+ {
+  "key": "00bdb1eaff78",
+  "file": "./VERIFIER-121.md",
+  "role": "verifier",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 556,
+  "text": "## 2. v0.1 sha256 and behaviour verified by actually checking out and running v0.1\n`git show 9157f731:.../presence_check.py | sha256sum` → `ae8fc947e6b7e7a12d646c282e49991cc6433640a0256acefdd0fa1eff6caa1d`, exact match to the value quoted in both `CHANGELOG-v0.2.md` and `INCREMENT-11.md`. Checked out that exact file and ran its real `parse_line()`: `'2026-08-15'→('2026','x')`, `'tiktok 2024 roundup'→('2024','x')`, `'https://www.youtube.com/watch?v=4'→('4','x')`, `'https://vm.tiktok.com/ZMabcdef/'→(None,None)`. All four match the claims exactly. PASS."
+ },
+ {
+  "key": "826cf03e0d2a",
+  "file": "./VERIFIER-121.md",
+  "role": "verifier",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 1126,
+  "text": "## 3. Confirmation-record arithmetic recomputed byte-for-byte\nRe-ran `confirmation_record_121.py` against the committed `ledger/transition-confirm-*.json` and `ledger/corrections.json`: output is byte-identical (`diff` exit 0) to the committed `confirmation-record-121.json`. Independently re-verified sha256 of all five source files matches what the record claims it read. Manually cross-checked all 8 raw readings against the 4 sidecars and hand-verified `all_passes_agree_with_new_state` against the raw 5-state `reconfirmation_states` arrays in every case — all correct. All published tables check out exactly: all-readings 5/5 confirmed (NOT-RETRIEVABLE→RETRIEVABLE) and 1/3 confirmed (RETRIEVABLE→NOT-RETRIEVABLE); genuine-transitions 3/3 and 1/3. These numbers appear identically in `presence_check.py`'s docstring, `CHANGELOG-v0.2.md`, and `INCREMENT-11.md`. The \"artefact echo\" rule matches vids by identity only (not by run-file), which happens to be correct here because each corrected vid has exactly one correction, but it is a latent fragility if a vid were ever corrected twice. NOT BLOCKING (design note only)."
+ },
+ {
+  "key": "192b5b66abd0",
+  "file": "./VERIFIER-121.md",
+  "role": "verifier",
+  "ordinal": 4,
+  "truncated": false,
+  "chars": 1654,
+  "text": "## 4. `presence_check.py` code-level checks (measure/tally/parse_line/read_vantage/baseline_currency)\n- `tally()`: denominator `det = RETRIEVABLE+NOT-RETRIEVABLE` genuinely excludes `UNCONFIRMED-ABSENT`/`INDETERMINATE` — confirmed both by reading the code and by the selftest's stub run (`det=2`, `rate=0.5`).\n- `--confirm 0`: confirmed by code reading (early-return path skips the confirmation loop and keeps first-pass state) and independently reproduced via the session's own leftover scratch run (`i6.out`/`i6.json`, `\"confirmation\":{\"passes\":0,\"enabled\":false}`, single reading reported as final state).\n- `read_vantage`: `asn` mode genuinely strips `ip/city/region/loc/timezone` (checked by direct call with a fake vantage dict — confirmed dropped).\n- `baseline_currency`: recomputed by hand against `functional-test-121.json`'s inputs (`2026-08-14T03:43:47Z` vs `2026-08-15T20:00:33Z`) → `1.678` days, exact match.\n- **Real defect found by adversarial testing (not in the selftest):** `VIDEO_PATH_RE` matches `/video/<digits>` anywhere in the string with no host check at all. `parse_line(\"https://www.instagram.com/reel/video/9999999999\")` → `('9999999999','x',None)` — **accepted**, not refused. This contradicts the docstring/changelog framing that \"a URL from another platform\" is refused; in fact only URLs *lacking* a `/video/<digits>` substring are refused, regardless of domain. Functionally low-impact (the probe always targets tiktok.com's oEmbed endpoint using only the extracted digits, so no request goes to the wrong host), but the documentation overstates what the refusal rule actually checks. NOT BLOCKING but should be corrected."
+ },
+ {
+  "key": "1a89950d5c82",
+  "file": "./VERIFIER-121.md",
+  "role": "verifier",
+  "ordinal": 5,
+  "truncated": false,
+  "chars": 469,
+  "text": "## 5. Default-baseline-path claim verified against actual bundle layout\n`find . -iname presence-baseline.json` shows the file exists only at the top-level research directory, not inside `deliverable/`. The bundle's own file is `reference-baseline.json` (different name), confirmed by reading its schema. So `--baseline` defaulting to `presence-baseline.json` when run from `deliverable/tools/` genuinely fails, exactly as both changelog and README addendum claim. PASS."
+ },
+ {
+  "key": "93b3ef1a0e52",
+  "file": "./VERIFIER-121.md",
+  "role": "verifier",
+  "ordinal": 6,
+  "truncated": false,
+  "chars": 719,
+  "text": "## 6. Functional-test-121.json arithmetic independently recomputed — all correct\nRecomputed by hand and via `presence_check.dated()`/`expectation()` logic against `deliverable/reference-baseline.json`: `age_y` for both live vids (4.852345837452785, 3.2481053058534237), `created_utc` timestamps, `expected_absent_rate` (0.16248363445928254) and its CI bounds, `baseline_currency.age_days_at_measurement` (1.678) — every one matches the committed JSON exactly. The leftover scratch file `livelist.txt` (session's own working file, still present in the shared scratchpad) matches the 7-line input described in `INCREMENT-11.md` exactly (3 valid ids + the 4 adversarial refused lines). PASS on all arithmetic in this file."
+ },
+ {
+  "key": "3a9dd010b0f6",
+  "file": "./VERIFIER-121.md",
+  "role": "verifier",
+  "ordinal": 7,
+  "truncated": false,
+  "chars": 1365,
+  "text": "## 7. BLOCKING — the \"20:29 UTC\" re-confirmation and \"14 h 58 m\" claim is false and chronologically impossible\n`INCREMENT-11.md` states: *\"...was still `NOT-RETRIEVABLE` at 20:29 UTC, through five further re-requests. That is an independent re-confirmation 14 h 58 m later...\"* — and `deliverable/README.md`'s addendum repeats: *\"...which stopped being true at 20:29 UTC today.\"*\n\nThe only committed artifact of this re-confirmation, `functional-test-121.json`, shows `\"started_utc\": \"2026-08-15T20:00:33Z\"`, `\"finished_utc\": \"2026-08-15T20:00:44Z\"` — not 20:29. The gap from the \"found at 05:31 UTC\" disappearance to the actual run is **14h 29m**, not 14h 58m (computed: `20:00:44 − 05:31:27 = 14:29:17`). The value \"14 h 58 m\" is arithmetically consistent only with a 20:29 timestamp (`20:29:00 − 05:31:27 = 14:57:33`, rounds to \"14 h 58 m\"), which never happened.\n\nWorse: the whole commit `ffebcf56` (containing `INCREMENT-11.md` and the README addendum making this claim) is timestamped **2026-08-15T20:02:47Z** (`git show -s --format=%cI ffebcf5`) — 26 minutes *before* the claimed 20:29 UTC event could have occurred. The claim describes, in the past tense, an event that had not yet happened at the moment it was committed. This is not a rounding error; it is a false, checkable, temporally-impossible claim stated as an observed fact in two files. BLOCKING."
+ },
+ {
+  "key": "8d538244f592",
+  "file": "./VERIFIER-121.md",
+  "role": "verifier",
+  "ordinal": 8,
+  "truncated": false,
+  "chars": 1436,
+  "text": "## 8. BLOCKING — the \"0.7 s against 10.7 s\" vantage comparison is not what it is presented as\n`INCREMENT-11.md`: *\"`--vantage none` made no third-party call (0.7 s against 10.7 s).\"* This reads as an apples-to-apples demonstration that disabling the geolocation call saves ~10 seconds.\n\nLeftover scratch files from the session's own working directory (`i6.out`, `i6.err`, `i6.json`, `one.txt` — never committed, found by chance while sharing the scratchpad path) reveal the true source of \"0.7 s\": a **1-item** list (`one.txt` = `\"12345\"`) run with **`--confirm 0`** (confirmation disabled) and `--vantage none`, actually testing the I6 missing-baseline behaviour, not a vantage-isolation test. Meanwhile \"10.7 s\" is `functional-test-121.json`: a **3-item** list with the **default `--confirm 5`** (one item needing 5 re-request passes) and `--vantage asn`. The two runs differ in three variables at once (item count, confirm passes, vantage mode); the `measure()` loop's own sleeps alone (`ledger.DELAY=1.0`, confirmed in `deliverable/tools/ledger.py`) force ≥7 s for the 10.7 s run regardless of vantage mode, so the true isolated cost of the geolocation call is on the order of ~0.3–1 s, not ~10 s. The comparison as stated misattributes essentially the entire time difference to `--vantage none` when it is overwhelmingly due to `--confirm 0` and fewer items. This is a checkable, materially misleading quantitative claim. BLOCKING."
+ },
+ {
+  "key": "b85fa121495e",
+  "file": "./VERIFIER-121.md",
+  "role": "verifier",
+  "ordinal": 9,
+  "truncated": false,
+  "chars": 883,
+  "text": "## 9. \"26 of 31 conditions untouched\" — arithmetically reconcilable but not self-evident\n`CONDITIONS-120.md` lists 32 conditions (V1–V16, I1–I16); only I16 is marked \"DISCHARGED TONIGHT\" at session 120, leaving 31 \"carried.\" `CHANGELOG-v0.2.md`/`INCREMENT-11.md` claim v0.2 leaves \"26\" or \"twenty-six\" of these untouched. The tool itself only closes I3, I4, I6, I7 (4 conditions) — 31−4=27, not 26. The number \"26\" only reconciles if the README addendum's correction of the \"Unmodified since it was written\" line (which the disposition table names as V14, \"reword 'unmodified since it was written'... ACCEPTED, CARRIED\") is also counted as touched, giving 31−5=26. This is a plausible but nowhere explicitly stated accounting; a reader cannot verify \"26\" without independently reconstructing this chain. NOT BLOCKING (the number is defensible once reconstructed) but under-explained."
+ },
+ {
+  "key": "4c3c483e80f6",
+  "file": "./VERIFIER-121.md",
+  "role": "verifier",
+  "ordinal": 10,
+  "truncated": false,
+  "chars": 1503,
+  "text": "## 10. K4 citation and other cross-references verified real\n`PREREGISTRATION-112.md` §4 \"Kill criteria\" genuinely contains K4 (\"an unreproduced transition is not an event,\" line 153) as cited throughout `presence_check.py`'s docstring and the changelog. `DAY5-2026-08-15.md` genuinely states the Day-5 close time \"05:31:27Z\" cited in `INCREMENT-11.md`. `deliverable/tools/ledger.py` and root `ledger.py` are byte-identical (`diff` exit 0), so the \"imported, not re-implemented\" claim holds. `GAUNTLET-2026-08-15.md` E14/E15/E16 map to I3/I4/I6/I7 exactly as `CONDITIONS-120.md` states. PASS.\n\n## What I could not check and why\n- The live-network behaviour of `presence_check.py` against the real TikTok oEmbed endpoint — no network calls attempted, per task scope (\"no network needed\"); relied on the committed run artifacts and the session's own leftover scratch files instead.\n- Whether any *other* ephemeral test runs happened in the session that were not saved and are not present in the shared scratchpad (I only found what happened to survive: `i6.*`, `livelist.txt`, `v01.py`, `v01check/`). Absence of evidence for other undisclosed runs is not evidence of absence, but nothing found contradicts the two findings above — if anything the surviving files are what proved them.\n- The 26 remaining Session-120 conditions in `CONDITIONS-120.md` (V1–V13, V15, V16, I1, I2, I5, I8–I15) were not re-verified against source data — out of scope, since this review covers only what v0.2/session 121 changed."
+ },
+ {
+  "key": "725bf099801a",
+  "file": "./VERIFIER-122.md",
+  "role": "verifier",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 2214,
+  "text": "### Finding 1 — BLOCKING. The `prose_vs_json.py` audit result does not reproduce\n**`DRIFT-122.md` lines 88–89.**\n\n> \"Pass 1 audited 60 numbers and left **11 unmatched**; all eleven are the rounded mantissas and\n> exponents of the four gradient rows above … Pass 2 flagged 13 statements…\"\n\nI ran `python3 prose_vs_json.py DRIFT-122.md` from the draft directory against the committed file:\n\n```\nDRIFT-122.md: pass 1 — 65 numbers audited, 16 not found in any JSON of this draft\nDRIFT-122.md: pass 2 — 15 claims whose FORM is the form all three published failures took\n```\n\nThe paragraph is self-referential — it adds numbers and claims of its own — so I removed lines\n88–96 to approximate the state the tool would have seen \"before it was committed\":\n\n```\npass 1 — 63 numbers audited, 14 not found\npass 2 — 13 claims\n```\n\n**Pass 2's 13 reproduces exactly.** Pass 1's does not, in either count. I then tried to reach\n60/11. Removing lines 77–81 as well — the W-other-ns table row and the paragraph that introduces\nit — gives **60 audited but 12 unmatched**, and that reconstruction contradicts the sentence's own\ndescription, because a three-row table cannot produce eleven figures that are \"the rounded\nmantissas and exponents of the **four** gradient rows above.\" No state I could construct yields\n60/11. No stdout capture of the run exists anywhere in the draft directory.\n\n**What is *not* wrong here:** the disposition's conclusion. I checked the 14 currently-unmatched\nvalues by hand against the two gradient JSONs and against my own recomputation from the run files:\nevery one is a correct 5-significant-figure rounding of a value that exists in\n`deliverable/gradient-test.json` or `deliverable/gradient-test-CORRECTED-2026-08-16.json`. **None\nis an unsourced number** — that part of the sentence is true. It is the audit *statistics* that are\nwrong, in the one paragraph whose whole function is to demonstrate that the numbers were checked.\n\nThis is blocking because it is a stated result of a verification, it is the arc's own named\nfailure class (\"a figure in prose that exists nowhere in the data\"), and the fix is to re-run the\ntool on the committed file, write the stdout to a dated artifact, and quote it."
+ },
+ {
+  "key": "4702b0bf8dbd",
+  "file": "./VERIFIER-122.md",
+  "role": "verifier",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 1425,
+  "text": "### Finding 2 — BLOCKING. \"No file either reviewer read has been rewritten\" is false\n**`DRIFT-122.md` line 12.**\n\nThe commit stat for `95ab278` shows three rewritten files that the reviewers of sessions 120 and\n121 demonstrably read:\n\n- **`build_deliverable.py`**, 88 lines changed. `REPORT.md` line 134 records\n  \"**Command:** `python3 build_deliverable.py --out <scratch>` from the draft directory\", and line\n  185 quotes its behaviour (\"`build_deliverable.py` computes every unit's age once, at …\") — that\n  reading *is* finding V1.\n- **`deliverable/tools/presence_check.py`**, 152 lines changed. `REPORT.md` §4 is a\n  code-level read of it, including the `VIDEO_PATH_RE` defect.\n- **`deliverable/tools/selftest_presence_check.py`**, 61 lines added. `REPORT.md` finding 1\n  ran it and recounted its assertions by AST parsing.\n\nThe intended scope is plainly the bundle's *data artifacts* — the semicolon that follows joins it\nto \"the corrected artifacts are new files carrying their date in their name\", and for those\nartifacts the claim is true, which I verified file by file. But as written it is a categorical\nclaim about the repository, it is false, and it is contradicted by §5 and §6 of the same document.\nUnder `PROTOCOL.md` (\"the verdict is only good for the exact state it was run on\") this is exactly\nthe sentence a later reader would rely on. One-line repair: narrow it to the bundle artifacts."
+ },
+ {
+  "key": "70d536dfaa06",
+  "file": "./VERIFIER-122.md",
+  "role": "verifier",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 515,
+  "text": "### Finding 3 — NOT BLOCKING. A quotation attributed to the wrong document\n**`DRIFT-122.md` lines 23–24:** \"the session-120 errata (E6) say *\"three days apart\"*\".\n\nE6 is `deliverable/GAUNTLET-2026-08-15.md` line 47 and it says \"three days **earlier**\". The string\n\"three days **apart**\" appears at `CONDITIONS-120.md` line 38, in the V1 disposition row — a\ndifferent document. The substance (a round number against the measured 2.6803) is unaffected, and\nboth texts are in the record; only the attribution is wrong."
+ },
+ {
+  "key": "0899d9ab2c4e",
+  "file": "./VERIFIER-122.md",
+  "role": "verifier",
+  "ordinal": 4,
+  "truncated": false,
+  "chars": 984,
+  "text": "### Finding 4 — NOT BLOCKING. The live run does not record which baseline it read\n**`functional-test-122.json`.** The file records `tool`, `tool_version`, list, vantage, probe,\nconfirmation policy and `baseline_currency.declared_t_ref_utc`, but **no baseline file path**\n(`baseline_note` is `null` and there is no path field). I identified the table by arithmetic: the\nexpectation and both CI bounds match `reference-baseline-CORRECTED-2026-08-16.json` exactly, and do\nnot match `presence-baseline.json` (whose `t_ref` is 2026-08-12T03:40:00Z and whose cells are\n494/775/790/673/461/382). A third party could not do that from the artifact alone. Recording the\nresolved baseline path and its sha256 in the output would close it.\n\nWorth stating plainly, since §5 does not: the \"+0.0000 pp\" demonstration is computed against the\n**corrected** table, which is not part of the shipped bundle. That is the right table to use; it\njust is not the one a receiver holding bundle v0.1 would get."
+ },
+ {
+  "key": "0089b39e6f44",
+  "file": "./VERIFIER-122.md",
+  "role": "verifier",
+  "ordinal": 5,
+  "truncated": false,
+  "chars": 347,
+  "text": "### Finding 5 — NOT BLOCKING. \"eight sessions\" is uncited\n**`DRIFT-122.md` line 176.** The document gives no basis. The record supports it:\n`presence_check.py` carries \"Session 113, 2026-08-12\" in its own header, and the defect was first\nnamed at session 120 (E6) — 113 through 120 inclusive is eight. Checkable, but the reader has to\nassemble it."
+ },
+ {
+  "key": "a38b323268f9",
+  "file": "./VERIFIER-122.md",
+  "role": "verifier",
+  "ordinal": 6,
+  "truncated": false,
+  "chars": 1183,
+  "text": "### Finding 6 — NOT BLOCKING. One assertion in selftest section 8 is a restatement, not a test\n**`deliverable/tools/selftest_presence_check.py`**, the last check of section 8:\n\n```\ncheck_true(\"the staleness threshold is the measured one, not a round number\",\n           pc.STALE_AFTER_DAYS == 26, pc.STALE_AFTER_DAYS)\n```\n\nThis asserts a module constant against a literal. It cannot fail unless someone edits the constant,\nand — despite its name — it does not check the threshold against the measurement, because it never\nreads `drift-122.json`. It is a change-detector, not a test. **The other 13 assertions of section 8\nare real:** they build a synthetic baseline with hand-chosen cells (0.10 and 0.30), construct a\n19-digit identifier whose decoded creation time is exact and which sits two months inside the 4-5y\nband, and then check hard-derived outcomes — a 120.0-day clock gap, histograms {4-5y:1} then\n{5y+:1}, expectations 0.10 then 0.30, a signed drift of exactly 20.0 pp, zero drift on the\nreference day, and four distinct `None` paths. I confirmed the value 26 independently anyway (my\nown crossover search gives 26), so the constant is right; only the assertion is weak."
+ },
+ {
+  "key": "c867ac427b31",
+  "file": "./VERIFIER-122.md",
+  "role": "verifier",
+  "ordinal": 7,
+  "truncated": false,
+  "chars": 235,
+  "text": "### Finding 7 — NOT BLOCKING. A stale code comment\n**`drift_122.py` line 240:** \"How many individual units change band over those 3.01 days\" — the\nmeasured gap is 2.6803 days. Comment only; it does not reach any output or the document."
+ },
+ {
+  "key": "4bbd04cbeabd",
+  "file": "./VERIFIER-122.md",
+  "role": "verifier",
+  "ordinal": 8,
+  "truncated": false,
+  "chars": 347,
+  "text": "### Finding 8 — NOT BLOCKING. The rebuild is deterministic except for its own clock\nNoted for completeness rather than as a defect: `built_utc` in `MANIFEST.json` and the generation\nstamp in `FIGURES.md` change on every run, so the bundle is not byte-reproducible across runs. The\ndocument makes no determinism claim, and every *number* is stable."
+ },
+ {
+  "key": "cb7dd0b7cdcf",
+  "file": "./VERIFIER-122.md",
+  "role": "verifier",
+  "ordinal": 9,
+  "truncated": false,
+  "chars": 3080,
+  "text": "### Finding 9 — NOT BLOCKING. The one outside-world claim carries its source elsewhere\nAnswering the standing question — is anything in `DRIFT-122.md` a claim about the outside world\nthat needs a source and does not have one? Almost the whole document is about files in this\nrepository. The single external claim is §4's \"the receiver's own eleven identifiers — a real\nexternal list this house did not choose\". Its source is in the record but not in this document:\n`receiver-list.txt` header cites `https://playground.tiktok-audit.com/api-na/`, read 2026-08-12\n(session 112). The live endpoint and vantage of §5 are recorded with their sources inside\n`functional-test-122.json` (`https://www.tiktok.com/oembed?url=`, `https://ipinfo.io/json`).\nNo other sentence in `DRIFT-122.md` asserts anything about the world.\n\n---\n\n## What I could not check, and why\n\n1. **`https://playground.tiktok-audit.com/api-na/`** — the origin of the receiver's eleven. NOT\n   CHECKED: I did not make any network request during this review. The identifiers I used are the\n   ones in `receiver-list.txt`, and the claim I verified is arithmetic on them, not their\n   provenance. That the eleven were read from that dashboard on 2026-08-12 rests on a session-112\n   record I did not re-fetch.\n2. **The live probe results in `functional-test-122.json`** — the ten `RETRIEVABLE` and one\n   `NOT-RETRIEVABLE` readings. NOT CHECKED against the endpoint: re-running the probe would be a\n   new measurement at a different time, not a verification of that one. What I did check is that\n   every *derived* figure in that file is correct given its own recorded observations.\n3. **The exact pre-commit text of `DRIFT-122.md`** — Finding 1 could not be resolved further\n   because no intermediate state exists on disk or in git. I report what the tool returns on the\n   committed file and on the closest reconstructions, and I do not speculate about which text\n   produced 60/11.\n4. **Whether session 120 and 121 reviewers read files beyond those named** — I checked\n   `REPORT.md` and `REPORT.md` for the three files Finding 2 names and stopped there;\n   the finding needs only one counterexample and has three.\n5. **The `.partial` files and the day-6 run** — outside the stated scope of this review.\n   `ledger/day6-stdout.txt` is empty and `ledger/day6-stderr.txt` is one line; I did not evaluate\n   the day-6 move, and `DRIFT-122.md` makes no claim about it.\n6. **The correctness of the Wilson interval implementation** in `power_audit.wilson`. NOT\n   INDEPENDENTLY RE-DERIVED: I verified that the CIs in the corrected artifacts are reproduced by\n   the shipped code and that the receiver-eleven CI bounds propagate correctly through the\n   expectation, but I did not re-implement the Wilson formula. No figure in `DRIFT-122.md` depends\n   on a CI.\n\n---\n\n*Recomputation scripts for this review were written to a scratch directory outside the repository\nand are not part of this commit. Nothing in the repository was modified by this review. This\nverdict covers commit `95ab278` and nothing after it.*"
+ }
+]

@@ -1,0 +1,106 @@
+{
+ "INTERLOCUTOR-136.md": [
+  "### CHARGE 1 — **BLOCKING.** The concept's founding premise is refuted by the arc's own committed evidence file, cited one sentence earlier.",
+  "### CHARGE 2 — **BLOCKING.** \"Conjecture, marked as such wherever it appears\" is a claim about the document that the document refutes.",
+  "### CHARGE 3 — **BLOCKING.** §3's \"Repetition\" limb is refuted by `series-stability-136.json`, which sits in the same directory and was written by this session to prevent exactly this.",
+  "### CHARGE 4 — **BLOCKING.** The confirmation ratio the concept publishes is computed over a population the concept's own script excludes by name.",
+  "### CHARGE 5 — **BLOCKING.** \"Substantially its own noise\" and \"mostly their instrument\" are refuted by the practice's own confirmation record.",
+  "### CHARGE 6 — **BLOCKING.** The article-space figure is 94 % an artefact of the assumption its own script claims it removes.",
+  "### CHARGE 7 — **BLOCKING.** K-C is recorded NOT FIRED on evidence that fires it as written — and the concept's own daylight argument requires that it fire.",
+  "### CHARGE 8 — **BLOCKING.** The receiver's determining artifact was never read, and the practice's own other fan-out names the page that was skipped.",
+  "### CHARGE 9 — non-blocking. The concept quotes one line from a neighbour and omits the line from the same paper that cuts against §4b.",
+  "### CHARGE 10 — non-blocking, but it undermines the concept's central distinction. Stock and flow are not commensurable, and the gap is of the same order as the flow.",
+  "### CHARGE 11 — non-blocking. \"Those 12 intervals\" cannot come from 12 days, and the first of them is the one the same JSON excludes.",
+  "### CHARGE 12 — non-blocking. Three different counts for one quantity, in one directory, on one day.",
+  "### CHARGE 13 — non-blocking, and it is the session-135 blocking finding recommitted. `CONDITIONS-136.md` does not exist.",
+  "### CHARGE 14 — non-blocking. \"**Two things that claim is not.**\" is followed by three numbered items.",
+  "### CHARGE 15 — non-blocking. §3 says the work \"reads the population\"; §7 says the corpus is not a sample of anything; the fan-out says the corpus is about half of even the smallest class.",
+  "### CHARGE 16 — non-blocking, and it feeds K-E. \"A second receiver stands behind it… and is not the receiver of this arc.\"",
+  "### CHARGE 17 — non-blocking. The headline denominator is called \"encyclopedia pages\" and a third of it is not article space.",
+  "### CHARGE 18 — non-blocking. The Pew coincidence is defused at length; the far closer one is not defused at all.",
+  "### CHARGE 19 — non-blocking, and it is the weaker half of a charge I mostly lost. Condition 7(b) is softened one notch.",
+  "### CHARGE 20 — non-blocking. The rule-6 exemption is claimed by analogy to a different ceiling.",
+  "### CHARGE 21 — **BLOCKING.** The architect's standing rule was read on the wrong branch, and the branch chosen is the one that let this session close question A and open question B on the same day.",
+  "### CHARGE 22 — **BLOCKING.** `INCREMENT-24.md` cites `CONDITIONS-135.md` item 2 and does not cite item 8, which had already decided the question.",
+  "### CHARGE 23 — **BLOCKING on the characterisation, not on the decision.** \"A refusal against this session's own disclosed interest\" is false; both moves serve the disclosed interest."
+ ],
+ "VERIFIER-122.md": [
+  "### Finding 1 — BLOCKING. The `prose_vs_json.py` audit result does not reproduce",
+  "### Finding 2 — BLOCKING. \"No file either reviewer read has been rewritten\" is false",
+  "### Finding 3 — NOT BLOCKING. A quotation attributed to the wrong document",
+  "### Finding 4 — NOT BLOCKING. The live run does not record which baseline it read",
+  "### Finding 5 — NOT BLOCKING. \"eight sessions\" is uncited",
+  "### Finding 6 — NOT BLOCKING. One assertion in selftest section 8 is a restatement, not a test",
+  "### Finding 7 — NOT BLOCKING. A stale code comment",
+  "### Finding 8 — NOT BLOCKING. The rebuild is deterministic except for its own clock",
+  "### Finding 9 — NOT BLOCKING. The one outside-world claim carries its source elsewhere"
+ ],
+ "INTERLOCUTOR-1.md": [
+  "### 1. Re-deriving the headline numbers from raw JSON, independently",
+  "### 2. Attacking the corpus",
+  "### 3. Attacking the probe's meaning — I ran tests they did not",
+  "### 4. Attacking the receiver argument",
+  "### 5. Attacking D1, on the merits",
+  "### 6. Attacking novelty",
+  "### 7. Attacking the bar — \"a stranger can feel it in one sentence\"",
+  "### 8. Hunting for the signature error, a seventh time"
+ ],
+ "INTERLOCUTOR-6.md": [
+  "**C1 — `INCREMENT-4.md` §5: \"Five of ten fail.\" The table above it shows four.** P1, P6, P8, P10 are FAIL; P2, P3, P4, P5, P7, P9 are hold. `sed -n '183,195p' INCREMENT-4.md | grep -c FAIL` → **4**. The document overstates its own failure rate by 25 %, in the direction that flatters the house's stated virtue. This is the same error class as the bound refuted by its own table, and it took the same ten seconds. Fix the sentence, do not fix the table.",
+  "**C2 — §4: \"This corpus contains 226 renamed handles whose videos still return HTTP 200 with a *different* author name.\"** It contains 226 disagreeing **observations** across **177 distinct handles**. §0 gets this right (\"the 226 disagreements\"); §4 converts observations into handles. Worse, \"renamed\" is an interpretation the data do not carry. `@tatemcrae1` is one of the four exemplars in §0's own table, and tonight's own probe returned `statusCode 0, uniqueId \"tatemcrae1\"` for it; I re-fetched and confirmed a full live user object (`secUid`, `followerCount`, `nickname`) under that name while all nine of its cited videos report owner `tatemcrae`. Both names are live accounts. That is not a rename — given C-above, it is at least as likely a mis-cited or reposted handle. The rename-rebuttal's *logic* survives (a name change demonstrably does not remove a video from the endpoint, so it cannot explain the six unserved handles), but its premise must be restated as \"226 units whose cited handle is not the current owner's name\", not \"226 renamed handles\".",
+  "**C3 — §0: \"7.24 % of the account handles cited in this corpus no longer name the account that holds the video.\"** 7.24 % is 226/3,121 **observations**. The handle-level figure is 177/2,374 = **7.46 %**, and only 2,374 of the 2,744 handles are checkable at all — 370 have no retrievable unit and cannot be tested in either direction. The sentence generalises a per-observation rate measured on a checkable subset to \"the account handles cited in this corpus\", with no interval (Wilson on 226/3,121 is [6.38 %, 8.20 %]). In an increment whose subject is intervals being too narrow, a headline percentage published bare is not a small thing.",
+  "**C4 — §3: \"Measured design effect: 1.458\" is over-precise by two digits, and 1.20× is right by luck.** Their estimator is a percentile-width ratio from 10,000 draws. I replicated *that exact estimator* 60 times with independent seeds:",
+  "**C5 — the account is not established as the unit of clustering, and the strongest competitor was never tested.** I joined each unit back to its **citing page or thread** (`corpus-merged.json` `wiki|page`, `corpus-hn.json` `hn_object_id`, the expansion corpora); 3,507 of 3,575 units carry one. On the identical subset:",
+  "**C6 — §4: \"It is the account half the time\" is 6 of 12 with no interval.** Wilson 95 % on 6/12 is **[25.4 %, 74.6 %]**. The sentence is compatible with \"a quarter of the time\" and with \"three quarters of the time\". It also covers only the all-gone multi-handle subpopulation: 64 of 432 absences, **14.8 %** of the losses. Nothing in §4 measures the mechanism behind the 334 singleton absences, which are 77 % of the total and which have the *higher* absence rate (14.12 % against 8.11 %). §4's negative result is the most interesting thing in the increment; it deserves its own uncertainty stated, and its scope stated in the same sentence.",
+  "**C7 — K1 in §0 versus the restatement in §7.** `PREREGISTRATION-114.md` §4 K1: on P1 failure, \"tonight's result is **not** published as a finding about the platform; it is published as a finding about the key.\" §0 declares compliance and withholds the sentence \"the unit of loss is the account\" — genuinely, and to the session's credit. But §7 then orders a dated correction to `RESULT.md`, `OBJECT-ANSWER.md` and the power audit, widening published intervals about **the platform's** retrievability rate by 1.20×, on the strength of a statistic computed with the key that failed. That is not a finding about the key. Asked bluntly whether the increment is wording its way around K1: **partly, yes** — §0's compliance declaration is written as though it covers the whole document, and it does not cover §7. What saves it from being a break rather than a condition is that the underlying inference is sound and I verified it independently (see the key-sensitivity results above): the key failure demonstrably cannot manufacture the design effect, so the correction is conservative regardless. Say that in §7, in one sentence, instead of letting §0 carry it.",
+  "**C8 — the `B-truncated` exclusion is entirely subsumed by the 19-digit filter, and §2's arithmetic hides it.** All 249 `B-truncated` identifiers are non-19-digit (lengths 5–18); there are 256 non-19-digit ids in the run and 249 of them are that arm. Filtering on 19 digits alone yields the identical 3,575-unit population. So the pre-registration's emphasis — \"*This exclusion is registered before the statistic is computed*\" — buys nothing that a mechanical decodability rule did not already buy, and §2's \"minus the 249 … minus 7 identifiers that are not 19 digits\" reads as two independent filters when it is one filter counted twice. Not an error; a piece of rhetorical weight resting on nothing."
+ ],
+ "INTERLOCUTOR-15.md": [
+  "## Charge 1 [BLOCKING] — the provenance discipline this session built does not cover `FIGURES.md`, and `FIGURES.md` still ships a defect accepted and carried at the very first gauntlet, unrepaired across four sessions",
+  "## Charge 2 [BLOCKING] — a file carried unmodified into v0.3 is inconsistent with the bundle it now sits in on three points, and the bundle's own build script never re-validates a carried file's claims about its surroundings",
+  "## Charge 3 [NON-BLOCKING, narrows \"usable for the named receiver\"] — the one place this bundle offers a number to compare against the receiver's own eleven, the comparison's scope is disclosed in the file least likely to be read first",
+  "## Charge 4 [NON-BLOCKING] — the bundle's status pointer is circular"
+ ],
+ "INTERLOCUTOR-13.md": [
+  "### 1. [BLOCKING] The confirmation step silently discards genuine absences when the confirmation burst itself hits noise — a path the tool's own selftest never exercises.",
+  "### 2. [BLOCKING] The bundle still asserts, unedited in tonight's own commit, the exact sentence the objection was raised against.",
+  "### 3. [Non-blocking, serious] The stated asymmetry caveat names the wrong limitation.",
+  "### 4. [Non-blocking, narrows the claim] \"Matching this practice's own K4 step\" borrows a validation the practice's own record explicitly declines to give it.",
+  "### 5. Attack that FAILED, reported in the tool's favour: five rapid re-requests are not a cache replay.",
+  "### 6. [Non-blocking, regression of the same class] The URL-acceptance path is domain-blind, reproducing I4's defect through a different door.",
+  "### 7. [Non-blocking] The new strictness refuses several plausible real list formats.",
+  "### 8. [Non-blocking] The confirmation apparatus validates itself with instances of itself.",
+  "### 9. What survives outright."
+ ],
+ "VERIFIER-121.md": [
+  "## 1. Selftest actually runs and passes — 65 assertions confirmed independently",
+  "## 2. v0.1 sha256 and behaviour verified by actually checking out and running v0.1",
+  "## 3. Confirmation-record arithmetic recomputed byte-for-byte",
+  "## 4. `presence_check.py` code-level checks (measure/tally/parse_line/read_vantage/baseline_currency)",
+  "## 5. Default-baseline-path claim verified against actual bundle layout",
+  "## 6. Functional-test-121.json arithmetic independently recomputed — all correct",
+  "## 7. BLOCKING — the \"20:29 UTC\" re-confirmation and \"14 h 58 m\" claim is false and chronologically impossible",
+  "## 8. BLOCKING — the \"0.7 s against 10.7 s\" vantage comparison is not what it is presented as",
+  "## 9. \"26 of 31 conditions untouched\" — arithmetically reconcilable but not self-evident",
+  "## 10. K4 citation and other cross-references verified real"
+ ],
+ "READER-126-1.md": [
+  "### 1. What is this?",
+  "### 2. What is it about?",
+  "### 3. Who do you think it is for?",
+  "### 4. What is the single most important thing it tells you?",
+  "### 5. What did you not understand?",
+  "### 6. Was anything confusing, off-putting, or did anything make you trust it less?",
+  "### 7. How long did it take you to find the answer to question 4?"
+ ],
+ "READER-127-3.md": [
+  "## 1. What is the single most important thing this material tells you?",
+  "## 2. Who is it for, and what does it want that person to do?",
+  "## 3. Who made it, and can you tell who is responsible for it? Could you contact them?",
+  "## 4. What did you not understand, could not follow, or had to re-read?",
+  "## 5. What is missing that you expected to be there?",
+  "## 6. What would you push back on?",
+  "## 7. Did you stop reading at any point? Where, and why?",
+  "## 8. How long did it feel? Would you have read it to the end if nobody had asked you to?"
+ ]
+}

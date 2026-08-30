@@ -1,0 +1,171 @@
+{
+ "note": "counts over the twenty files of draw-139.json; NOT a rate, NOT divisible by 53",
+ "tally": {
+  "DISAGREE": 6,
+  "AGREE": 12,
+  "NO-SINGLE-HAND-COUNT": 1,
+  "V2-UNEXTRACTABLE": 1
+ },
+ "rows": [
+  {
+   "file": "INTERLOCUTOR-1.md",
+   "hand": 8,
+   "v2": 9,
+   "v2_family": "LISTNUM",
+   "delimitation": "DELIMITED",
+   "verdict": "DISAGREE"
+  },
+  {
+   "file": "INTERLOCUTOR-13.md",
+   "hand": 9,
+   "v2": 9,
+   "v2_family": "HEADNUM",
+   "delimitation": "DELIMITED",
+   "verdict": "AGREE"
+  },
+  {
+   "file": "INTERLOCUTOR-133.md",
+   "hand": "7 / 7",
+   "v2": 7,
+   "v2_family": "LISTNUM",
+   "delimitation": "SPLIT-BOUNDARY",
+   "verdict": "NO-SINGLE-HAND-COUNT"
+  },
+  {
+   "file": "INTERLOCUTOR-136.md",
+   "hand": 23,
+   "v2": 10,
+   "v2_family": "LISTNUM",
+   "delimitation": "DELIMITED",
+   "verdict": "DISAGREE"
+  },
+  {
+   "file": "INTERLOCUTOR-15.md",
+   "hand": 4,
+   "v2": 4,
+   "v2_family": "CHARGE",
+   "delimitation": "DELIMITED",
+   "verdict": "AGREE"
+  },
+  {
+   "file": "INTERLOCUTOR-19.md",
+   "hand": 7,
+   "v2": 10,
+   "v2_family": "LISTNUM",
+   "delimitation": "DELIMITED",
+   "verdict": "DISAGREE"
+  },
+  {
+   "file": "INTERLOCUTOR-2.md",
+   "hand": 18,
+   "v2": 18,
+   "v2_family": "HEADNUM",
+   "delimitation": "DELIMITED",
+   "verdict": "AGREE"
+  },
+  {
+   "file": "INTERLOCUTOR-4.md",
+   "hand": 7,
+   "v2": 6,
+   "v2_family": "LISTNUM",
+   "delimitation": "DELIMITED",
+   "verdict": "DISAGREE"
+  },
+  {
+   "file": "INTERLOCUTOR-6.md",
+   "hand": 8,
+   "v2": 29,
+   "v2_family": "BOLDLEAD",
+   "delimitation": "DELIMITED",
+   "verdict": "DISAGREE"
+  },
+  {
+   "file": "READER-126-1.md",
+   "hand": 7,
+   "v2": 7,
+   "v2_family": "HEADNUM",
+   "delimitation": "DELIMITED",
+   "verdict": "AGREE"
+  },
+  {
+   "file": "READER-127-1.md",
+   "hand": 8,
+   "v2": 8,
+   "v2_family": "HEADNUM",
+   "delimitation": "DELIMITED",
+   "verdict": "AGREE"
+  },
+  {
+   "file": "READER-127-2.md",
+   "hand": 8,
+   "v2": 8,
+   "v2_family": "HEADNUM",
+   "delimitation": "DELIMITED",
+   "verdict": "AGREE"
+  },
+  {
+   "file": "READER-127-3.md",
+   "hand": 8,
+   "v2": 8,
+   "v2_family": "HEADNUM",
+   "delimitation": "DELIMITED",
+   "verdict": "AGREE"
+  },
+  {
+   "file": "READER-129-RECORD.md",
+   "hand": 3,
+   "v2": 3,
+   "v2_family": "LABELLED",
+   "delimitation": "DELIMITED",
+   "verdict": "AGREE"
+  },
+  {
+   "file": "VERIFIER-121.md",
+   "hand": 10,
+   "v2": 10,
+   "v2_family": "HEADNUM",
+   "delimitation": "DELIMITED",
+   "verdict": "AGREE"
+  },
+  {
+   "file": "VERIFIER-122.md",
+   "hand": 9,
+   "v2": 9,
+   "v2_family": "CHARGE",
+   "delimitation": "DELIMITED",
+   "verdict": "AGREE"
+  },
+  {
+   "file": "VERIFIER-124.md",
+   "hand": 2,
+   "v2": "UNEXTRACTABLE",
+   "v2_family": "HEADNUM",
+   "delimitation": "DELIMITED",
+   "verdict": "V2-UNEXTRACTABLE"
+  },
+  {
+   "file": "VERIFIER-127.md",
+   "hand": 9,
+   "v2": 14,
+   "v2_family": "BOLDLEAD",
+   "delimitation": "DELIMITED",
+   "verdict": "DISAGREE"
+  },
+  {
+   "file": "VERIFIER-135.md",
+   "hand": 20,
+   "v2": 20,
+   "v2_family": "BOLDNUM",
+   "delimitation": "DELIMITED",
+   "verdict": "AGREE"
+  },
+  {
+   "file": "VERIFIER-136.md",
+   "hand": 10,
+   "v2": 10,
+   "v2_family": "HEADNUM",
+   "delimitation": "DELIMITED",
+   "verdict": "AGREE"
+  }
+ ]
+}

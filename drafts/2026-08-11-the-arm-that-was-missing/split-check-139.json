@@ -1,0 +1,49 @@
+{
+ "file": "INTERLOCUTOR-133.md",
+ "verdict_stands": "SPLIT-BOUNDARY",
+ "counter_a": {
+  "lines": [
+   16,
+   18,
+   20,
+   22,
+   24,
+   26,
+   28
+  ],
+  "kinds": [
+   "prefix",
+   "prefix",
+   "prefix",
+   "prefix",
+   "prefix",
+   "prefix",
+   "prefix"
+  ],
+  "sliceable_as_returned": false
+ },
+ "counter_b": {
+  "lines": [
+   16,
+   18,
+   20,
+   22,
+   24,
+   26,
+   28
+  ],
+  "kinds": [
+   "exact",
+   "exact",
+   "exact",
+   "exact",
+   "exact",
+   "exact",
+   "exact"
+  ],
+  "sliceable_as_returned": true
+ },
+ "same_boundaries": true,
+ "a_is_prefix_of_b": true,
+ "what_this_settles": "nothing about which reading is right - the verdict above stands as pre-registered and is not adjudicated here"
+}

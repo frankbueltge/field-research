@@ -1,0 +1,35 @@
+{
+ "population": "units-139.json",
+ "units": 178,
+ "units_by_role": {
+  "interlocutor": 84,
+  "reader": 34,
+  "verifier": 60
+ },
+ "tells_absent_from_every_reader_unit": [
+  "role word: interlocutor/verifier/severed reader",
+  "'Charge N'",
+  "'Finding N'",
+  "'BLOCKING'",
+  "'I recomputed' / 'recomputed'",
+  "'I ran' / 'I fetched'",
+  "verdict vocabulary"
+ ],
+ "units_per_such_tell": {
+  "role word: interlocutor/verifier/severed reader": 0,
+  "'Charge N'": 6,
+  "'Finding N'": 10,
+  "'BLOCKING'": 67,
+  "'I recomputed' / 'recomputed'": 22,
+  "'I ran' / 'I fetched'": 13,
+  "verdict vocabulary": 3
+ },
+ "units_carrying_at_least_one": 87,
+ "share": 0.4888,
+ "session_137_figure_over_v2_units": {
+  "carriers": 137,
+  "units": 483,
+  "share": 0.284
+ },
+ "comparability": "NOT a series. Different units over different files, and this population is 19 files of 53. The two shares are two measurements, not a trend, and neither may be quoted as movement in the other's direction."
+}

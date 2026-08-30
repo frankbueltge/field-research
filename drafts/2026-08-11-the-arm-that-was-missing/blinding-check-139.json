@@ -1,0 +1,110 @@
+{
+ "units": 178,
+ "units_by_role": {
+  "interlocutor": 84,
+  "reader": 34,
+  "verifier": 60
+ },
+ "tells": [
+  {
+   "tell": "role word: interlocutor/verifier/severed reader",
+   "per_role": {
+    "interlocutor": 0,
+    "reader": 0,
+    "verifier": 0
+   },
+   "separating": false,
+   "roles_hit": []
+  },
+  {
+   "tell": "'Charge N'",
+   "per_role": {
+    "interlocutor": 6,
+    "reader": 0,
+    "verifier": 0
+   },
+   "separating": true,
+   "roles_hit": [
+    "interlocutor"
+   ]
+  },
+  {
+   "tell": "'Finding N'",
+   "per_role": {
+    "interlocutor": 0,
+    "reader": 0,
+    "verifier": 10
+   },
+   "separating": true,
+   "roles_hit": [
+    "verifier"
+   ]
+  },
+  {
+   "tell": "'BLOCKING'",
+   "per_role": {
+    "interlocutor": 19,
+    "reader": 0,
+    "verifier": 48
+   },
+   "separating": false,
+   "roles_hit": [
+    "interlocutor",
+    "verifier"
+   ]
+  },
+  {
+   "tell": "'I recomputed' / 'recomputed'",
+   "per_role": {
+    "interlocutor": 12,
+    "reader": 0,
+    "verifier": 10
+   },
+   "separating": false,
+   "roles_hit": [
+    "interlocutor",
+    "verifier"
+   ]
+  },
+  {
+   "tell": "'I ran' / 'I fetched'",
+   "per_role": {
+    "interlocutor": 10,
+    "reader": 0,
+    "verifier": 3
+   },
+   "separating": false,
+   "roles_hit": [
+    "interlocutor",
+    "verifier"
+   ]
+  },
+  {
+   "tell": "'my/I' first person",
+   "per_role": {
+    "interlocutor": 57,
+    "reader": 19,
+    "verifier": 16
+   },
+   "separating": false,
+   "roles_hit": [
+    "interlocutor",
+    "reader",
+    "verifier"
+   ]
+  },
+  {
+   "tell": "verdict vocabulary",
+   "per_role": {
+    "interlocutor": 1,
+    "reader": 0,
+    "verifier": 2
+   },
+   "separating": false,
+   "roles_hit": [
+    "interlocutor",
+    "verifier"
+   ]
+  }
+ ]
+}
