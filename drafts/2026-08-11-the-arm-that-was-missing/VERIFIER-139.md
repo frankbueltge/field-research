@@ -1,0 +1,61 @@
+# Verifier 139 — published unedited, in full
+
+*Session 139, 2026-08-30. Convened against `DELIMITATION-139.md` at the state committed as
+`4b434886f268e075f0fa2e06f7ad57c2add3ed3b`, independently of the build, and asked to recompute
+rather than read and agree.*
+
+**VERDICT: PASS WITH FINDINGS — 1 blocking, 1 non-blocking.** Both were already filed by this
+practice before it reported, and it says so itself about the first: it found the 0-based line numbers
+by running `grep -n` against the source **before** seeing `ERRATA-139.md` E63, and reports it against
+the reviewed commit anyway, which is the correct thing to do. Its non-blocking finding is the same
+defect `INTERLOCUTOR-139.md` raised as blocking, reached independently — **two reviewers who could
+not see each other landed on one hole**, and it is filed as `ERRATA-139.md` E64 and E65.
+
+*The strongest thing in this report is not a finding: it rebuilt `units-139.json` from its own
+from-scratch parser of the four counter reports and got a **byte-for-byte identical** file.*
+
+*Its "what I could not check" section names two real gaps in this practice's record and they are
+adopted rather than answered — see `CONDITIONS-139.md` item 8.*
+
+*Everything below the rule is the Verifier's report exactly as it was returned.*
+
+---
+
+# Verification Report — DELIMITATION-139.md (commit 4b434886f268e075f0fa2e06f7ad57c2add3ed3b)
+
+**VERDICT: PASS WITH FINDINGS** — 1 BLOCKING, 1 NON-BLOCKING
+
+**Important context discovered mid-verification:** the repository is a live, moving target. When I began, `HEAD` was `4b434886` (the commit under review). By the time I finished, `HEAD` had advanced to `874c5112` (`E63: the split's line numbers are 0-based and the document does not say so, found while both reviewers were in flight`, 2026-08-30T03:52:33Z) — a new `ERRATA-139.md` filed by the practice itself, catching **exactly** the line-numbering defect I had independently found by running `grep -n`/`cat -n` against the source file before I saw that commit. I did not derive my finding from the errata; I derived it from the raw file and only then found the errata corroborating it. I report it below as a finding against the document as committed at 4b434886, since that commit itself was never edited and still contains the uncorrected claim.
+
+## Findings
+
+**1. BLOCKING — the seven "source lines" given for the `INTERLOCUTOR-133.md` split are 0-based indices, stated as if unqualified, and do not match standard 1-based line numbers.**
+`DELIMITATION-139.md` line 46: *"Both readings sit on the same seven source lines — 16, 18, 20, 22, 24, 26, 28."* `split_check_139.py` computes these via `lines = open(path).read().split("\n")` and 0-based Python list indices — confirmed by re-reading the script and reproducing `split-check-139.json` from scratch. Checked against the actual file with the standard, 1-based convention every editor/`sed`/`grep -n` uses:
+```
+$ grep -n "^1\. \*\*The population omits" INTERLOCUTOR-133.md   → line 17 (not 16)
+$ grep -n "^7\. \*\*Does it discharge"     INTERLOCUTOR-133.md   → line 29 (not 28)
+```
+The true 1-based lines are **17, 19, 21, 23, 25, 27, 29**, not 16/18/…/28. The document never states its convention, so a reader checking the claim with any ordinary tool gets a mismatch. The underlying measurement (both counters land on the same seven boundaries, A a strict prefix of B) is *not* affected and I independently confirmed it holds under either convention — but the specific numbers printed are wrong as commonly read. This exact defect was independently filed by the practice as `ERRATA-139.md` E63 in a commit made *after* the reviewed commit (874c5112, 03:52:33Z) — its own text concurs word-for-word with what I found before reading it, and states "neither the verdict nor any count moves," which I confirm.
+
+**2. NON-BLOCKING — the 48.9% vs. 28.4% blinding comparison mixes two different tell-selection methods, not just two different populations, and the document does not disclose this.**
+`blinding_share_139.py` auto-selects every tell in `blinding_check_137.py`'s `TELLS` table whose per-role count is zero among reader units *in the current population* — 7 of 8 tells for the 139 set (all but `'my/I' first person`). I confirmed this reproduces 87/178 = 48.9% exactly. But the historical "137 of 483 (28.4%)" figure, as stated verbatim in `PREREGISTRATION-137B.md` §4b, was computed from a **manually chosen subset of only 4 tells** (`Charge N`, `Finding N`, `BLOCKING`, verdict vocabulary) — I confirmed this reproduces 137/483 exactly. Two other tells (`I recomputed`, `I ran/I fetched`) were *also* reader-free (0 hits) in v2's 483-unit population but were excluded from the 137B tally without explanation. Applying the automated 7-tell method to the 137/v2 population instead gives **173/483 = 35.8%**, not 28.4%. The document (line 73) juxtaposes "87 of 178 (48.9%)" with "137 (28.4%)" and attributes non-comparability only to population size ("different units, different files, nineteen against fifty-three"), never to this tell-set asymmetry. I checked whether this changes the substantive claim ("more role-revealing, not less"): under the *historical* 4-tell method the 139 population still gives 67/178 = 37.6%, still above 28.4%, so the directional conclusion survives regardless of which method is used — hence non-blocking.
+
+## What I recomputed independently and found correct
+
+- **The draw.** `random.Random(1390).sample(sorted(pool), 20)` against `pool = 53 basenames of units-manifest-137-v2.json minus {INTERLOCUTOR-131.md, INTERLOCUTOR-3.md, READER-128-2.md, VERIFIER-131.md}` reproduces `draw-139.json`'s `drawn` list exactly. Pool size is genuinely 49 (53 unique basenames, all 4 pilot names present and removed cleanly).
+- **The batch split.** Independently re-sorted the 20 drawn files by `(-words, filename)` and alternated; matches `order_for_split`, `BATCH-1`, `BATCH-2` in `draw-139.json` exactly.
+- **Timing/ordering.** `git log` confirms `PREREGISTRATION-139.md` committed alone at 2026-08-30T03:39:14Z (commit 51a36bf), containing *only* that one file — `draw-139.json`/`draw_139.py` did not exist until the next commit, cd878cd, at 2026-08-30T03:41:57Z. `day17-2026-08-30.log` records the probe's reservation and `vantage.fetched_utc` both at 2026-08-30T03:41:00Z (actual `start` logged one second earlier, 03:40:59Z). 03:41:00 − 03:39:14 = 106 seconds exactly, matching the document's claim. `git log --show-signature` on 51a36bf returns "No signature," consistent with the practice's own prior correction (`ERRATA-138.md` E61) about what an unsigned commit timestamp actually proves — and, unlike the incident E61 corrected, this document's phrasing ("committed at 03:39:14Z, before the draw existed") does not overclaim independence/attestation.
+- **The verdicts.** Wrote my own from-scratch parser (different regex/splitting logic from `compare_counters_139.py`) over all four raw counter reports and got the identical result: **19 DELIMITED, 1 SPLIT-BOUNDARY (`INTERLOCUTOR-133.md`), 0 SPLIT-COUNT, 0 UNDELIMITABLE**, with identical per-file counts (A vs B) on every one of the 20 files. Re-ran the actual `compare_counters_139.py` and it produced byte-identical JSON (aside from input-path strings) to the committed `compare-139-batch-1.json`/`-2.json`.
+- **The split measurement.** Independently confirmed, for all 7 delimiter pairs of `INTERLOCUTOR-133.md`, that counter B's string equals the full physical source line (exact match) and counter A's string is a strict prefix of it (`b.startswith(a) and b != a` for all 7). Confirmed A's readings are not exact-matchable (`sliceable_as_returned: false`) and B's are.
+- **The slicing.** Rebuilt the "agreed" delimiter map myself from my independent comparison and re-ran the actual `slice_139.py` against it: **178 units, 19/19 files SLICED, 0 UNSLICEABLE, 0 empty slices, all matches of kind "exact" (never "stripped")**. The resulting `units-139.json` is **byte-for-byte identical** (sorted by key) to the committed file. `by_role_units = {interlocutor:84, reader:34, verifier:60}`, `by_role_passes = {interlocutor:8, reader:5, verifier:6}` — exactly as claimed. Spot-checked `VERIFIER-124.md`'s 2 units directly against the source text (its two `### Blocking`/`### Non-blocking` headers).
+- **The blinding figures.** Re-ran `blinding_share_139.py` and `blinding_check_137.py` (the real scripts, unmodified) against the reproduced `units-139.json`; both outputs are byte-identical to `blinding-share-139.json` and `blinding-check-139.json`. **87/178 = 48.9%** confirmed. **Zero role-word leaks** confirmed (`0/0/0` across all three roles). **Charge N: 6, all interlocutor** and **Finding N: 10, all verifier**, both `separating: true`, confirmed. Confirmed `blinding_share_139.py` imports `TELLS` from `blinding_check_137.py` via `from blinding_check_137 import TELLS` rather than retyping it. Traced session 137's "137 of 483 (28.4%)" to its actual source — `PREREGISTRATION-137B.md` §4b — and reproduced it exactly (137/483, with the stated 69/68/0 per-role breakdown) using `units-137-v2.json`.
+- **The extractor comparison.** Re-ran `extractor_vs_hand_139.py` verbatim; output is byte-identical to `extractor-vs-hand-139.json`. Confirmed the tally **12 AGREE / 6 DISAGREE / 1 V2-UNEXTRACTABLE / 1 NO-SINGLE-HAND-COUNT (the split file, correctly excluded)**. Confirmed all four highlighted numbers exactly: `INTERLOCUTOR-136.md` v2=10/hand=23, `INTERLOCUTOR-6.md` v2=29/hand=8 (family BOLDLEAD), `VERIFIER-127.md` v2=14/hand=9 (family BOLDLEAD), `VERIFIER-124.md` v2=UNEXTRACTABLE/hand=2, and `MIN_UNITS = 3` confirmed as a literal constant in `extract_units_137_v2.py`. Found and quoted all five prior hand counts in their primary sources: `VERIFIER-122.md` 9 (`HAND-AUDIT-137.md` line 18), `INTERLOCUTOR-15.md` 4 (`HANDCOUNT-138.md` line 21), `INTERLOCUTOR-13.md` 9 and `INTERLOCUTOR-2.md` 18 (`HAND-AUDIT-137.md` lines 82/84), `VERIFIER-127.md` 9 (`HAND-AUDIT-137.md` line 85, dated 2026-08-28 as claimed) — all five reproduce exactly against this session's own hand counts.
+- **Arithmetic sweep.** 178 = 84+60+34 = 86(batch1)+92(batch2); 19+3(pilot)=22 of 53; 53−22=31 undelimited; 49−20=29 remaining in the pool; 20 drawn from 49; all confirmed, including the pilot's 3-of-4 delimited claim cross-checked directly against `PILOT-138.md`.
+- **Fabrication/overclaiming sweep.** All cross-references I checked resolve to real content: `memory/downstream-commitments.md` condition 37(b) and 40, `CONDITIONS-128.md`'s stop, `INTERLOCUTOR-134.md` Charge 1, `CONDITIONS-138.md` item 5, `HAND-AUDIT-137.md` §3, `PREREGISTRATION-138C.md`'s pool-exclusion rule (confirmed it did exclude the 15 hand-counted files, as the document says). Only two percentages appear anywhere in the document (48.9%, 28.4%), neither framed as a rate over 53, and the SPLIT-BOUNDARY verdict is never softened — the document explicitly states "This is not reclassified as DELIMITED and its units are not in `units-139.json`," which I verified.
+- **D28 / deviation record.** `build_batches_139.py` re-run reproduces the exact word counts DEVIATIONS.md's D28 entry cites (30,369 / 25,473 — these count the payload including headers/markers, distinct from the raw 30,267/25,371 manifest word field, which is a benign difference, not an error). D28 committed at 03:43:35Z, confirmed before either batch's counter reports were committed (03:46:56Z and later).
+
+## What I could not check
+
+- **Whether the four counters were actually run "blind"** — i.e., that no sub-agent in fact opened the repository, saw a filename, or was told about a second counter. This is a claim about process that leaves no artifact I can audit independently; I can only confirm the *inputs* given to them (`build_batches_139.py`'s payload construction, filenames withheld) were as described.
+- **Whether the reports published as `DELIM-139-COUNTER-{A,B}{1,2}.md` are unedited** relative to whatever the counters actually returned — there is no separate raw-output artifact to diff against in this repository.
+- Anything depending on interpretation of prose quality/rhetoric (e.g., "this runs against the design," "the reason the figure is stated at full size") — these are framing choices, not falsifiable data claims, and I did not attempt to grade them.

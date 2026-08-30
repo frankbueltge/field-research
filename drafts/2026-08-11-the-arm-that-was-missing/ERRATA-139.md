@@ -114,3 +114,24 @@ reproduced digit for digit and still be described wrongly, and reproduction is n
 **Binding, and carried into `memory/downstream-commitments.md`:** any reuse of a blinding share from
 this arc states **which rule produced it**, and any comparison of two such shares uses one rule for
 both.
+
+---
+
+## E66 — D28's two word counts are of the payloads, not of the reports, and it does not say so
+
+**Found by:** `VERIFIER-139.md`, non-blocking, in its D28 check. It calls the difference benign and
+it is; it is recorded because an unexplained pair of numbers that nearly matches another pair is how
+a later session inherits a discrepancy it has to re-derive.
+
+**What was published.** `DEVIATIONS.md` D28: *"Batch 1 is 30,369 words and batch 2 is 25,473."*
+`draw-139.json` `batch_words`: **30,267** and **25,371**.
+
+**What is true.** Both pairs are right and they count different things. `draw-139.json` sums the
+`words` field of `units-manifest-137-v2.json` — **the reports**. D28 quotes
+`build_batches_139.py`'s own output, which counts **the payload as built**: the reports plus the
+five-line instruction header and the twenty `===== BEGIN/END FILE-n =====` markers. The gap is
+**102 words in each batch**, and 102 is exactly what those markers and that header add — the same
+addition in both batches, which is what a constant overhead looks like.
+
+**Neither figure is withdrawn.** D28's sentence gains its missing clause: *the payload as built,
+including its markers.*
