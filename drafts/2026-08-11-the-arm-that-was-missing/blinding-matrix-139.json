@@ -1,0 +1,50 @@
+{
+ "rule_4_tokens": [
+  "'Charge N'",
+  "'Finding N'",
+  "'BLOCKING'",
+  "verdict vocabulary"
+ ],
+ "cells": {
+  "v2_483 / RULE-4": {
+   "carriers": 137,
+   "units": 483,
+   "share": 0.2836
+  },
+  "v2_483 / RULE-U": {
+   "carriers": 173,
+   "units": 483,
+   "share": 0.3582
+  },
+  "hand139_178 / RULE-4": {
+   "carriers": 67,
+   "units": 178,
+   "share": 0.3764
+  },
+  "hand139_178 / RULE-U": {
+   "carriers": 87,
+   "units": 178,
+   "share": 0.4888
+  }
+ },
+ "reader_free_by_population": {
+  "v2_483": [
+   "role word: interlocutor/verifier/severed reader",
+   "'Charge N'",
+   "'Finding N'",
+   "'BLOCKING'",
+   "'I recomputed' / 'recomputed'",
+   "'I ran' / 'I fetched'",
+   "verdict vocabulary"
+  ],
+  "hand139_178": [
+   "role word: interlocutor/verifier/severed reader",
+   "'Charge N'",
+   "'Finding N'",
+   "'BLOCKING'",
+   "'I recomputed' / 'recomputed'",
+   "'I ran' / 'I fetched'",
+   "verdict vocabulary"
+  ]
+ }
+}
