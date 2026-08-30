@@ -1,0 +1,75 @@
+probe pid 2042 exited Sun Aug 30 05:26:26 UTC 2026
+{
+ "run1": {
+  "path": "ledger/run-2026-08-29T0341Z.json",
+  "label": "2026-08-29T03:41:00Z (manifest carried a placeholder)",
+  "start": "2026-08-29T03:41:00Z",
+  "asn": "AS396982",
+  "n": 3869
+ },
+ "run2": {
+  "path": "ledger/run-2026-08-30T0341Z.json",
+  "label": "2026-08-30T03:41:00Z (manifest carried a placeholder)",
+  "start": "2026-08-30T03:41:00Z",
+  "asn": "AS396982",
+  "n": 3869
+ },
+ "vantage_guard": {
+  "run1_asn": "AS396982",
+  "run2_asn": "AS396982",
+  "same_autonomous_system": true,
+  "verdict": "COMPARABLE"
+ },
+ "corrections_applied": {
+  "overlay": null,
+  "n": 0,
+  "rows": [],
+  "note": "raw run files, no overlay applied"
+ },
+ "observed_in_both": 3869,
+ "determinate_in_both": 3794,
+ "touching_indeterminate": 75,
+ "n_transitions": 2,
+ "disagreement_rate_pct": 0.053
+}
+
+TRANSITIONS (each must survive an immediate re-request — K5):
+  7189606571091987718 RETRIEVABLE -> NOT-RETRIEVABLE
+  7376856023996452116 RETRIEVABLE -> NOT-RETRIEVABLE
+{
+ "run1": {
+  "path": "ledger/run-2026-08-29T0341Z.json",
+  "label": "2026-08-29T03:41:00Z (manifest carried a placeholder)",
+  "start": "2026-08-29T03:41:00Z",
+  "asn": "AS396982",
+  "n": 3869
+ },
+ "run2": {
+  "path": "ledger/run-2026-08-30T0341Z.json",
+  "label": "2026-08-30T03:41:00Z (manifest carried a placeholder)",
+  "start": "2026-08-30T03:41:00Z",
+  "asn": "AS396982",
+  "n": 3869
+ },
+ "vantage_guard": {
+  "run1_asn": "AS396982",
+  "run2_asn": "AS396982",
+  "same_autonomous_system": true,
+  "verdict": "COMPARABLE"
+ },
+ "corrections_applied": {
+  "overlay": "ledger/corrections.json",
+  "n": 0,
+  "rows": [],
+  "note": "A corrected state is a reading this arc's own confirmation step refuted with five immediate re-requests. The run files are unchanged; this diff reads them through the overlay and says so here."
+ },
+ "observed_in_both": 3869,
+ "determinate_in_both": 3794,
+ "touching_indeterminate": 75,
+ "n_transitions": 2,
+ "disagreement_rate_pct": 0.053
+}
+
+TRANSITIONS (each must survive an immediate re-request — K5):
+  7189606571091987718 RETRIEVABLE -> NOT-RETRIEVABLE
+  7376856023996452116 RETRIEVABLE -> NOT-RETRIEVABLE
