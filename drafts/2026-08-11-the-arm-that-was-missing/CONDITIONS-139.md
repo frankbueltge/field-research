@@ -39,7 +39,8 @@ the selection rule is the only thing that differed.
 
 ## Binding on the next session
 
-*Items 1–8 are new. Items 9–13 carry forward standing conditions and say so.*
+*Items 1–8 and 16 are new. Items 9–12 carry forward standing conditions and say so; 13–15 are this
+session's own bookkeeping. Item 16 was added after both reviewers had reported and says so.*
 
 1. **THE DELIMITATION CONTINUES AND TWENTY-NINE FILES REMAIN.** `PREREGISTRATION-138B.md` §2 is
    unchanged and `PREREGISTRATION-139.md`'s machinery works: pre-register the seed and the batch
