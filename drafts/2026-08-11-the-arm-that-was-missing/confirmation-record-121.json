@@ -17,7 +17,8 @@
    "ledger/transition-confirm-2026-08-25.json",
    "ledger/transition-confirm-2026-08-26.json",
    "ledger/transition-confirm-2026-08-28.json",
-   "ledger/transition-confirm-2026-08-29.json"
+   "ledger/transition-confirm-2026-08-29.json",
+   "ledger/transition-confirm-2026-08-30.json"
   ],
   "corrections": "ledger/corrections.json",
   "corrections_sha256": "357cb2b332faa44fe605fc03882e3be5ba8699daa93fdc54e6128937a4a12ae6"
@@ -31,9 +32,9 @@
    "refuted": 0
   },
   "RETRIEVABLE->NOT-RETRIEVABLE": {
-   "n": 26,
+   "n": 28,
    "confirmed": 17,
-   "refuted": 9
+   "refuted": 11
   }
  },
  "genuine_transitions_only": {
@@ -43,9 +44,9 @@
    "refuted": 0
   },
   "RETRIEVABLE->NOT-RETRIEVABLE": {
-   "n": 26,
+   "n": 28,
    "confirmed": 17,
-   "refuted": 9
+   "refuted": 11
   }
  },
  "n_artefact_echoes": 3,
@@ -845,6 +846,44 @@
    ],
    "n_passes": 5,
    "confirmed": true,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-30.json",
+   "sidecar_sha256": "1b81f22d07cc31270f28d2849ca1efb18fccfd6e726a586898bb80bab924dae5",
+   "generated_utc": "2026-08-30T05:26:40Z",
+   "vid": "7189606571091987718",
+   "handle": "astralis",
+   "direction": "RETRIEVABLE->NOT-RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": false,
+   "artefact_echo": false,
+   "echo_note": null
+  },
+  {
+   "sidecar": "ledger/transition-confirm-2026-08-30.json",
+   "sidecar_sha256": "1b81f22d07cc31270f28d2849ca1efb18fccfd6e726a586898bb80bab924dae5",
+   "generated_utc": "2026-08-30T05:26:40Z",
+   "vid": "7376856023996452116",
+   "handle": "coalamode",
+   "direction": "RETRIEVABLE->NOT-RETRIEVABLE",
+   "passes": [
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE",
+    "RETRIEVABLE"
+   ],
+   "n_passes": 5,
+   "confirmed": false,
    "artefact_echo": false,
    "echo_note": null
   }
