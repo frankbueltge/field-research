@@ -1,0 +1,20 @@
+{
+ "files_compared": 12,
+ "byte_identical": [
+  "INTERLOCUTOR-13.md",
+  "INTERLOCUTOR-15.md",
+  "INTERLOCUTOR-2.md",
+  "READER-126-1.md",
+  "READER-127-1.md",
+  "READER-127-2.md",
+  "READER-127-3.md",
+  "READER-129-RECORD.md",
+  "VERIFIER-121.md",
+  "VERIFIER-122.md",
+  "VERIFIER-135.md",
+  "VERIFIER-136.md"
+ ],
+ "differing": [],
+ "units_compared": 114,
+ "join": "on units-manifest ordinal, NOT list order - units-137-v2.json is shuffled"
+}

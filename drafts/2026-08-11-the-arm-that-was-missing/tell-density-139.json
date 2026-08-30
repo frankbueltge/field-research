@@ -1,0 +1,44 @@
+{
+ "rows": [
+  {
+   "group": "v2 AGREES with the hand count",
+   "hand": {
+    "carriers": 59,
+    "units": 114,
+    "share": 0.5175
+   },
+   "v2": {
+    "carriers": 59,
+    "units": 114,
+    "share": 0.5175
+   }
+  },
+  {
+   "group": "v2 DISAGREES",
+   "hand": {
+    "carriers": 28,
+    "units": 62,
+    "share": 0.4516
+   },
+   "v2": {
+    "carriers": 17,
+    "units": 78,
+    "share": 0.2179
+   }
+  },
+  {
+   "group": "v2 called it UNEXTRACTABLE",
+   "hand": {
+    "carriers": 0,
+    "units": 2,
+    "share": 0.0
+   },
+   "v2": {
+    "carriers": 0,
+    "units": 0,
+    "share": null
+   }
+  }
+ ],
+ "conjecture": "hand delimitation selects a report's real findings list, where a role's vocabulary lives; v2 sometimes carved chapters or remedies"
+}
