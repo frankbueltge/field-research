@@ -1,0 +1,830 @@
+[
+ {
+  "key": "269ed1d747de",
+  "file": "./INTERLOCUTOR-19.md",
+  "role": "interlocutor",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 861,
+  "text": "### 1. The letter tells the receiver something false about the receiver's own method\n\n> *\"**Your 11 were not chosen by us.** Your own instrument selected them by reporting an error on them.\"*\n\nThey were not. The receiver's report (arXiv:2506.09746, quoted verbatim in this practice's own `REPORT.md` F7) says the dashboard tracks *\"10 videos that were not retrievable in the last month.\"* Selection was by **non-retrievability**, and it happened around 2025-04-09, when the series begins. The `Error` state did not exist for any of the eleven until 2026-01-03 — nine months later. The letter has the receiver's selection criterion backwards, in a sentence addressed to the person who wrote the criterion.\n\n**Wrong if:** the receiver's selection was in fact error-driven, contra their own published sentence and contra the 279-day series in their own page."
+ },
+ {
+  "key": "6384704e383b",
+  "file": "./INTERLOCUTOR-19.md",
+  "role": "interlocutor",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 1671,
+  "text": "### 2. The object hashed a file twice, cited it by hash, and never read it — and the thing it did not read is the best evidence it had\n\n`receiver-dashboard-2026-08-19.html` is 246,014 bytes. `dashboard_read_123.py` extracts six summary tiles from it. Nothing in this object ever looks at the rest. I parsed the eleven Plotly payloads in it (`tickvals [0,1,2]`, `ticktext [\"Not Available\",\"Error\",\"Available\"]`):\n\n| | days covered | dominant state | last flip |\n|---|---|---|---|\n| ten of the eleven | 238–279 | **Not Available**, on 224–265 days (88–95%) | → `Error` on **2026-01-03** |\n| `7332960275127110954` | 279 | Available, on 213 days | → `Error` on **2026-01-03** |\n\nTwo consequences, and both are blocking.\n\n**(a) The letter's headline contrast is against a twelve-day terminal artefact.** \"11 with errors\" is the state of the last twelve days of a 279-day series. The dashboard's *standing* verdict on ten of these eleven, across nine months, is **Not Available** — and ten of eleven are publicly fetchable today. That is the finding. It is larger, more specific and more useful than the one the letter ships, and it was inside the object's own evidence the whole time.\n\n**(b) The simultaneous 2026-01-03 flip is the letter's own argument, made properly.** The letter argues from *outside* evidence (our probe) to a probabilistic claim about the dashboard. The dashboard's internal evidence settles it far harder: eleven statuses, one day, one direction. The letter reaches a weaker version of the right conclusion by the long way round because nobody opened the file.\n\n**Wrong if:** the traces do not mean what the axis they are plotted against says they mean."
+ },
+ {
+  "key": "741e3ea8f066",
+  "file": "./INTERLOCUTOR-19.md",
+  "role": "interlocutor",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 1377,
+  "text": "### 3. oEmbed is not the Research API, and the letter's disjunction has only two terms where the world has three\n\n> *\"...very likely reporting something about its own path to the platform rather than about the videos.\"*\n\nThree states, not two: (i) the dashboard's own machinery is broken; (ii) the videos are gone; (iii) **the videos are public and the Research API genuinely does not return them.** (iii) is not exotic — it is the documented phenomenon this letter cites two paragraphs earlier: Bekavac and Mayer measure researchers reaching *\"only around 75% (TikTok For You feed)\"* of what users see. For nine of the eleven, the dashboard says Not Available and oEmbed says retrievable. That disagreement is *exactly* the shape of (iii), and this instrument cannot distinguish it from (i).\n\nThe letter's existing caveat — *\"It is not an audit of the research interface and cannot on its own show any coverage claim to be false\"* — is the mirror image and does not cover this. It says the measurement cannot **refute** a coverage claim. It needs to also say the measurement cannot **attribute** the dashboard's failures away from one.\n\n**Wrong if:** the object establishes that the dashboard's `Error` bucket is definitionally exclusive of a not-found API response. The separate `Unavailable: 0` tile is suggestive of that, and the object never mentions it or argues from it."
+ },
+ {
+  "key": "95837efbcecd",
+  "file": "./INTERLOCUTOR-19.md",
+  "role": "interlocutor",
+  "ordinal": 4,
+  "truncated": false,
+  "chars": 1081,
+  "text": "### 4. A reading taken this morning is used to characterise a state recorded 216 days ago, and the object's own data shows why that is not free\n\nThe letter states the 216 days as *\"a fact about what the page says about itself, and about nothing else\"* — and then reasons across the gap in the next paragraph without noticing. The bridge requires an assumption of retrievability stability over seven months, which this object explicitly refuses to make elsewhere (*\"Two readings a week apart are two readings: they do not establish a rate, a trend\"*).\n\nAnd the assumption is not idle. This practice's own confirmation record contains **4 confirmed `NOT-RETRIEVABLE` → `RETRIEVABLE` transitions in eight days** on the panel. Videos in this population come back. So \"publicly retrievable in August\" does not entail \"publicly retrievable in January\", and the letter's own instrument is the thing that proves it.\n\n**Wrong if:** the object anywhere states that the error state is a January state and the measurement an August one, and that the comparison rests on stability. It does not."
+ },
+ {
+  "key": "e4040bd3c876",
+  "file": "./INTERLOCUTOR-19.md",
+  "role": "interlocutor",
+  "ordinal": 5,
+  "truncated": false,
+  "chars": 1009,
+  "text": "### 5. \"Stores nothing about you\" is false of the command the letter prints\n\n> *\"It sends no credential and stores nothing about you; what it records about its own network location is controlled by `--vantage`.\"*\n\n`--vantage` defaults to `asn`, and `asn` makes a live call to `https://ipinfo.io/json`. Running the printed command as printed **sends the receiver's IP address to a third party.** The tool's own JSON says so in as many words — *\"The lookup itself disclosed this machine's IP address to the service named in `source`; that cannot be undone by discarding the answer, and `--vantage none` avoids the call entirely\"* — and I confirmed the call fires by running it. The letter compresses that disclosure into \"what it *records* ... is controlled by `--vantage`\", which is a statement about the output file, not about the request. A five-minute reader is told the opposite of the truth about the one thing here with a privacy consequence for them.\n\n**Wrong if:** the default were `none`. It is `asn`."
+ },
+ {
+  "key": "87f44f3982b6",
+  "file": "./INTERLOCUTOR-19.md",
+  "role": "interlocutor",
+  "ordinal": 6,
+  "truncated": false,
+  "chars": 1429,
+  "text": "### 6. \"Computed fresh every time this letter is built\" is false of the build, and binding condition 7 is honoured in outcome but not in mechanism\n\n`CONDITIONS-126.md` item 7: *\"the confirmation ratio ... computed at build time, never carried.\"*\n\n`build_offer.py:683` is `record = json.load(open(RECORD))`. It reads `confirmation-record-121.json`, copies four fields into `measurement.json`, and stamps **the build's** timestamp (`2026-08-19T05:27:33Z`) on them. It does not run `confirmation_record_121.py`. It does not compare the record's seven declared sidecars against what is in `ledger/`. It does not read the record's own computation time — the record does not carry one.\n\nThe numbers happen to be current: I recomputed them from the seven raw sidecars and got an exact match (6/6 returns, 6 of 8 losses, 2 refuted, 2 artefact echoes → 4 of 4 and 6 of 8 genuine, 10 of 12). But that is because a separate script ran four minutes earlier in the same session, not because the build did anything. Re-run `build_offer.py` tomorrow after day 9 and it will print today's counts under tomorrow's date, and every guard in the object will pass. The letter's own words for this class are: *\"if a field here is renamed the build fails instead of printing a stale number.\"* A renamed field fails. A stale *value* sails through.\n\n**Wrong if:** `build_offer.py` invoked the record's generator or asserted its coverage. It does neither."
+ },
+ {
+  "key": "1744da373923",
+  "file": "./INTERLOCUTOR-19.md",
+  "role": "interlocutor",
+  "ordinal": 7,
+  "truncated": true,
+  "chars": 15904,
+  "text": "### 7. The inventory guard is true of the builder's machine and false of the receiver's — and gauntlet 7's findings 2 and 3 both recurred inside the frozen object, in the same minute it was frozen\n\n`BUILD.json`: *\"every file in this directory except BUILD.json... **Nothing else may be absent from the table below; the build fails if anything is.**\"* And `build_offer.py:869` refuses subdirectories by name: *\"This is `ERRATA-126.md` E23 — a listing that verifies contents and is blind to membership — and the build refuses rather than repeat it.\"*\n\nBoth guards pass only because `run()` sets `PYTHONDONTWRITEBYTECODE=\"1\"` for the build's own subprocesses (line 156, with E23 cited in the comment). **The receiver has no such environment.** `presence_check.py` imports `ledger`, which imports `run_lock`; the interpreter writes bytecode for imported modules.\n\nThis is not hypothetical. It has already happened, twice:\n\n- `offer/__pycache__/{presence_check,ledger,run_lock}.cpython-311.pyc`, mtimes **2026-08-19 05:29:00Z** — **33 seconds after `FROZEN-127.sha256` was written at 05:28:27Z**, and before this review opened. The freeze covers 13 files; 16 are now on disk.\n- I reproduced it deliberately: deleted `__pycache__` from a clean copy, typed the letter's own second command **once**, and the directory came back.\n\nSo as shipped: `BUILD.json`'s `covers` clause is false, the letter's own *\"What is in this directory\"* table is incomplete, and the object contains the subdirectory its build \"refuses rather than repeat.\" Gauntlet 7 finding 2 (an inventory false as shipped) and finding 3 (bytecode into a frozen directory) both recur in the object built to replace the bundle they killed. The fix is one line in the tool's `__main__` (`sys.dont_write_bytecode = True`), not another guard.\n\n**Wrong if:** the `.pyc` files predate the freeze, or something other than the interpreter wrote them. Timestamps and my own reproduction say otherwise.\n\n---\n\n## Non-blocking objections and conditions\n\n1. **The confirmation denominator changed between the condition and the letter, in the flattering direction.** `CONDITIONS-126.md` item 7 tracked a ratio it called \"genuine-transition\": 1 of 3 → 5 of 7. Recomputing from the sidecars, those are **losses only**. The letter's summary figure is **10 of 12**, which pools losses with returns. Returns are near-trivially confirmable (the video is there); losses are where the refutation risk lives. The refusal-specific figure — the one the caveat is actually about — is **6 of 8**, and it was 1 of 3 four days ago. The letter does print \"6 of 8\" and bolds \"2 refusals did not reproduce\", so it is not concealed; but the number that carries the date, and therefore the number a forwarder will quote, is the pooled one. **Required before sending:** close that paragraph on the refusal ratio.\n2. **1,690 words is not a five-minute read.** Condition 1 said five minutes. `BUILD.json` records `letter_words: 1710` and asserts nothing against it — the one condition that could have been mechanised trivially was measured and left unenforced. the reviewer, independently: *\"It felt long for its actual length.\"*\n3. **The dashboard bytes are not in the object.** The letter's opening evidence, and the sha256 identity claim resting on it, are uncheckable from inside a directory whose selling point is that everything needed is in it. (I checked them from outside: the live page at 05:34Z is byte-identical, 246,014 bytes, `fff0a66f…`.) The actual receiver can look at their own dashboard; nobody else can.\n4. **`journal/2026-08-19.md` is promised in the present tense** for a review that had not returned when the letter was frozen. That must be true before this is sent, not after.\n5. **\"3,580 identifiers\"** is the pooled n. The age-band comparison the letter actually prints rests on **3,573** — the 7 undatable units are in the pooled n and in no band. Relatedly, `reference-baseline.json`'s `excluded_from_rates.undatable = 7` is misleading: they are excluded from the band rates, not from the pooled rate.\n6. **The 2026-08-16 double probe is invisible in the letter.** `series-status.json` ships `n_completed_run_files: 9` against `n_measurement_days: 8`; the letter mentions the abandoned day and not the doubled one.\n7. **The shipped `presence_check.py` 0.3.2 is not the binary that measured the eight-day series.** The version bump is correct and documented in-file (I diffed it), and `ledger.py`/`run_lock.py` are byte-identical to the retired bundle's as claimed — but a receiver may reasonably read \"the instrument\" as \"the thing that produced the ledger\". Say which.\n8. **\"...and it is the whole of what this letter claims\"** is not quite true; the letter also makes a claim about the state of the field.\n9. **\"a running, credential-free, dated reference\"** — eight days, one hole, `consecutive_daily: false`. Disclosed later in the letter; the word \"running\" is doing work the series does not yet support.\n10. **`what_this_is` fields duplicated across `measurement.json` and `your-eleven-today.json`** make the object read longer than its 13 files. the reviewer stopped short of four of them.\n\n---\n\n## The hostile critique\n\n**Is it slop? No.** The measurement is real, the tool runs, and the letter is honest about more than it needs to be. I attacked the central number four ways and it did not move. That is not nothing, and it is not what most published work would survive.\n\n**Is it worth the receiver's time? Barely, as written — and it easily could be.**\n\n\n[UNIT TRUNCATED FOR LENGTH]"
+ },
+ {
+  "key": "538370cd5a02",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 1031,
+  "text": "### 1. Run 2 headline counts (2,904 / 5,127.8 s / no throttling / arm rates)\n\nLoaded `ledger/run-2026-08-11T1124Z.json` cold, wrote my own counter over `observations`, grouped by\n`arm` and `state` (`RETRIEVABLE`/`NOT-RETRIEVABLE`/`INDETERMINATE`), independent of `ledger.py`.\n\n- **A: 1940/2175 = 89.1954% → 89.20%.** Matches.\n- **B: 381/447 = 85.2349% → 85.23%.** Matches.\n- **B-truncated: 1/246 = 0.4065% → 0.41%.** Matches.\n- Total requested = 2201 + 454 + 249 = 2904, exactly the planned count; `stopped: null`. Matches.\n- `run_utc_end − run_utc_start` = 5,128.0 s (from the string timestamps) against the reported 5,127.8 s\n  (from `time.time()` deltas, more precise) — a 0.2 s rounding gap, not a discrepancy.\n- Cross-checked against `ledger/run2-stdout.txt` and the progress lines in `ledger/run2-stderr.txt`:\n  monotonic progress (142s → 5121s across 2900 requests, evenly spaced, no jumps or resets) — internal\n  evidence this is one continuous real run, not stitched or edited after the fact.\n\n**Verdict: holds, exactly.**"
+ },
+ {
+  "key": "691483fab3f2",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 2086,
+  "text": "### 2. Zero transitions across 2,147 jointly-determinate identifiers, 54 touching-INDETERMINATE\n\nWrote a second, independent diff — not `ledger_diff.py` — applying the classifier by hand to both\n`census-results.json` (run 1, old schema) and the run-2 file, joining on `vid`. Result: **observed in\nboth = 2201, determinate in both = 2147, touching-indeterminate = 54, transitions = 0, disagreement =\n0.000%.** Identical to `ledger/diff-run1-run2.json`'s published numbers in every field.\n\nI specifically attacked the 54 touching-INDETERMINATE rows the task flagged. Breakdown by direction:\n22 RETRIEVABLE→INDETERMINATE, 21 INDETERMINATE→RETRIEVABLE, 7 INDETERMINATE→NOT-RETRIEVABLE, 4\nNOT-RETRIEVABLE→INDETERMINATE (sum 54, matches). None of these can be classified as a transition\nbecause one side's true state is genuinely unknown — this is not a bug hiding a real event, it is the\ncorrect, conservative behavior the pre-registration specified (§2.5: \"transitions into or out of\nINDETERMINATE are not transitions\"). I additionally checked whether the 36 run-2 TLS timeouts are a\npersistent property of particular identifiers (which would suggest something other than random noise\nmasking real transitions): **zero overlap** between run 1's 28 indeterminate vids and run 2's 26\nindeterminate vids in arm A. The failures look like independent noise, not a systematic pattern tied\nto specific videos.\n\nI could not find a hidden transition. The only honest caveat — which the document does not state and\nshould — is structural, not a flaw in this run: **a real transition that happens to coincide with a\ntransport failure on either side is invisible to this instrument by construction**, and 54/2201 (2.5%)\nof jointly-observed identifiers fall into that blind spot this round. That doesn't change the \"0\" — it\nbounds how much confidence \"0\" can carry.\n\n**Verdict: the classifier is genuinely identical across schemas (I reimplemented it separately and hit\nthe same numbers), nothing is silently dropped, and I could not find a transition hiding in the\ntouching-indeterminate rows. Holds.**"
+ },
+ {
+  "key": "1d09137b736f",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 731,
+  "text": "### 3. 36/2904 = 1.24% transport failures, one TLS class\n\nAll 36 INDETERMINATE records have `transport_error` == the literal string `\"URLError: <urlopen error\n_ssl.c:999: The handshake operation timed out>\"` — I checked every one, zero exceptions. Distribution\nacross arms: A 26/2201 (1.18%), B 7/454 (1.54%), B-truncated 3/249 (1.20%) — roughly proportional to\narm size, not concentrated in one arm. Distribution across the request sequence: indices 113 through\n2884 (out of 2904), spread over the entire run, not bunched in one time window. **36/2904 = 1.2397% →\n1.24%.** Matches; correctly scored as failing the pre-registered P7 ≤1% ceiling.\n\n**Verdict: holds, and not concentrated in a way that would bias any reported rate.**"
+ },
+ {
+  "key": "8d5add55fded",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 4,
+  "truncated": false,
+  "chars": 2200,
+  "text": "### 4. The truncation artefact — mechanism, count, and the specific worked example\n\n- **249/706 = 35.27% → 35.3%** not 19 digits: recomputed from `corpus-hn.json`'s raw `rows` (890 raw\n  matches, 706 distinct ids) independently of `meta`. Matches.\n- **248/249 = 99.6%** are strict prefixes of a well-formed id: recomputed with my own prefix-matching\n  loop. Matches.\n- **The \"from the same comment\" qualifier**, which is the load-bearing part of the causal claim (not\n  just coincidence): my first pass, matching truncated-id → its *first* occurrence's `hn_object_id`\n  only, found 2 apparent exceptions (`706572491190134711`, `75915920529540252`) that looked like\n  prefixes of unrelated identifiers from different comments. On inspection this was **my own\n  methodological error**: both ids recur across multiple raw rows under different `hn_object_id`s\n  (duplicate hits from the sweep), and one of those recurrences does share a comment with the matching\n  full id. Redone correctly — checking the *full set* of comments each truncated id appears in against\n  the full set its full-id candidate appears in — gives **248/249 same-comment matches, 0 exceptions,\n  1 no-candidate (`12345`)**, exactly as claimed.\n- **Live re-fetch of the specific worked example**, `hn.algolia.com/api/v1/items/28456840`, run today\n  independently of the arc's own tooling:\n  ```\n  \"text\":\"Check out the author&#x27;s Arnold Schwarzenegger video call example: <a\n  href=\\\"https:&#x2F;&#x2F;www.tiktok.com&#x2F;@arnoldschwarzneggar&#x2F;video&#x2F;6995538782204300545\\\"\n  rel=\\\"nofollow\\\">https:&#x2F;&#x2F;www.tiktok.com&#x2F;@arnoldschwarzneggar&#x2F;video&#x2F;6995538782...</a>\"\n  ```\n  This independently confirms the mechanism byte-for-byte: `href` carries the full 19-digit id\n  `6995538782204300545`, the rendered text is cut to `6995538782...`, and both strings are exactly what\n  `corpus-hn.json` recorded for that item. This is not the report's own harness reproducing its own\n  claim — it is a fresh fetch of the primary source from outside the arc's environment.\n\n**Verdict: the mechanism, the count, and the specific example all hold under independent re-derivation\nand a live primary-source re-fetch.**"
+ },
+ {
+  "key": "187e5ad0189b",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 5,
+  "truncated": false,
+  "chars": 765,
+  "text": "### 5. The counterfactual: naive harvest 382/693 = 55.12% vs true 89.20% (34.07pp vs 3.96pp)\n\nRecomputed by merging arm B's determinate counts (381 RET, 66 NOT-RET) with arm B-truncated's (1 RET,\n245 NOT-RET): 382/693 = 55.1227% → 55.12%. No double-counting — B and B-truncated are disjoint id sets\nby construction (19-digit vs not), so the merge is a clean simulation of \"what if the filter hadn't\nrun.\" Gap: 89.1954 − 55.1227 = 34.07pp; true gap 89.1954 − 85.2349 = 3.96pp. Both match. The \"confirmed\nP6 by a factor of about nine\" line: 34.07/3.96 = 8.60×, which rounds more naturally to \"about 8.6\" than\n\"about nine\" — a small rhetorical inflation, not a computational error.\n\n**Verdict: holds; the \"about nine\" phrasing is loose but not materially misleading.**"
+ },
+ {
+  "key": "b93d4ee2f00f",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 6,
+  "truncated": false,
+  "chars": 1025,
+  "text": "### 6. The structural prefix test predicted the measurement (245 NOT-RET + 3 IND + 1 RET)\n\nCross-tabulated the 249 B-truncated observations against the pre-run prefix classification. Of the 248\nids identified as prefixes (predicted phantom, before the run — see the ordering check below): **245\nNOT-RETRIEVABLE, 3 INDETERMINATE, 0 RETRIEVABLE.** The one non-prefix id, `12345`, is exactly the one\nRETRIEVABLE row. Exact match to the report.\n\n**One precision objection.** The report says \"the prediction and the measurement agree on every row.\"\nFor the 245 NOT-RETRIEVABLE rows that's true. For the 3 INDETERMINATE rows it overstates the case:\na transport timeout is not agreement with \"this cannot resolve,\" it is a non-result — those 3 rows\nneither confirm nor refute the prediction. The correct, still-strong claim is \"no row contradicted the\nprediction,\" not \"every row agreed.\" This is a wording precision issue, not a numeric one — it doesn't\nchange the 0-false-positive result on the 245 that did resolve determinately."
+ },
+ {
+  "key": "9309f7a70417",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 7,
+  "truncated": false,
+  "chars": 1145,
+  "text": "### 7. `12345` is a genuine legacy video, not a false positive\n\n`legacy-id-control.json`: 10/11 small integers return `http: 400`; only `12345` returns `http: 200`\nwith `author: \"xksnkfkf\"` and thumbnail path `res/2014/08/31/`. Matches the narrative exactly. Two\ncaveats worth recording:\n- **No script produced this file** (unlike every other measurement in the arc, which has a paired\n  `.py`), and the file itself carries only curated fields (`http`, `author`, `thumb`, `title_len`), not\n  a raw response body — weaker provenance than the ledger's full-observation standard the rest of the\n  arc holds itself to.\n- `title_len: 0` for `12345` — the oEmbed payload has an empty title. Not inconsistent with \"a genuine\n  legacy video\" (early-platform items plausibly lack a title), but the report's phrase \"a complete\n  oEmbed payload\" isn't independently checkable from this file since the raw body wasn't kept.\n\n**Verdict: the finding holds (I cannot verify title/completeness claims beyond what's in the file, and\nsay so rather than assume it), but the evidentiary standard for this one control is thinner than the\nrest of the arc's own bar.**"
+ },
+ {
+  "key": "0e04103af41e",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 8,
+  "truncated": false,
+  "chars": 1261,
+  "text": "### 8. Age effect does not replicate on corpus B: OR 1.334, χ²=1.147, CI [0.786, 2.264]\n\nRecomputed the 2×2 table independently from raw vid-decoded years (`int(vid) >> 32` → Unix timestamp →\nUTC year), not trusting the report's bucketing:\n- Arm A: ≤2022 554/656 = 84.5%, ≥2023 1386/1519 = 91.2% — matches.\n- Arm B: ≤2022 141/170 = 82.9%, ≥2023 240/277 = 86.6% — matches.\n- OR (new-vs-old, i.e. \"older is worse\") = 1.3341, χ² (no continuity correction) = 1.1468, 95% CI\n  [0.7863, 2.2637] → reported as 1.334 / 1.147 / [0.786, 2.264]. **Exact match to 3 decimal places.**\n\n**Power check** (the task's specific instruction — is this just underpowered?): I computed the power\nof a two-proportion z-test at arm B's actual sample sizes (n=170 old, n=277 new) to detect an effect\nthe size of corpus A's own (84.5% vs 91.2%), α=0.05 two-sided: **power ≈ 58%.** A coin-flip-adjacent\nchance of detecting the very effect corpus A shows, at this sample size. This substantiates — rather\nthan contradicts — the report's own \"inconclusive, not refuted\" framing; it is not dressing up a null\nresult, the null result really is close to what an underpowered honest test looks like.\n\n**Verdict: holds, and the power argument for \"inconclusive\" is itself correct when checked.**"
+ },
+ {
+  "key": "deda6e44b527",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 9,
+  "truncated": false,
+  "chars": 623,
+  "text": "### 9. `194951213564514304` — HTTP 200 both runs, decodes to 1971\n\n`census-results.json` row: `http: 200`, `created: \"1971-06-10T08:30:16+00:00\"`, `author_unique_id:\n\"ranzandniana1314\"`, `title_len: 76`. `ledger` run-2 row for the same vid: `http: 200`,\n`author_unique_id: \"ranzandniana1314\"`, `title_len: 76`. Independently decoding `int(vid)>>32` gives\n`1971-06-10 08:30:16 UTC`. All match. The other three non-19-digit corpus-A ids (`726459750741134635`,\n`677767122007582643`, `740580884959830349`) all return `http: 400` in run 2 — matches \"the other three\nreturn 400 and nothing more can be said.\"\n\n**Verdict: holds.**"
+ },
+ {
+  "key": "15984dc5fff0",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 10,
+  "truncated": false,
+  "chars": 120,
+  "text": "### 10. Corpus growth 2,201 → 2,655 (+20.6%)\n\n454 new well-formed ids / 2201 = 20.63% → +20.6%. Matches (2201+454=2655)."
+ },
+ {
+  "key": "64be284fc299",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 11,
+  "truncated": false,
+  "chars": 1213,
+  "text": "### 11. P5 fails: corpus B older (61.7% vs 69.7% dating 2023+)\n\nRecomputed independently: corpus B, 457 well-formed ids, 282 date ≥2023 → 61.71% → 61.7%. Matches.\nCorpus A: I first got **69.87%** using the 2,197 well-formed ids as the denominator — 0.17pp off the\nreported 69.7%. Traced it: the report's 69.7% uses **2,201** as the denominator (all of corpus A,\nincluding its 4 non-19-digit \"malformed\" ids, which decode to junk pre-platform dates and are trivially\ncounted as \"not ≥2023\"): 1535/2201 = 69.74% → 69.7%. That reproduces the reported figure exactly, but\nit is an **inconsistent denominator choice against corpus B's own figure**, which excludes corpus B's\n249 phantom/malformed ids from its denominator (457, not 706). Using a like-for-like well-formed-only\ndenominator for both sides would report corpus A at 69.9%, not 69.7% — a bigger gap against corpus B,\nif anything, so **P5 still fails and the direction is unaffected**, but the reported number is not\ncomputed the same way on both sides of the comparison it's making.\n\n**Verdict: P5's failure holds; the specific 69.7% figure rests on a denominator inconsistent with how\n61.7% was computed. Non-fatal, but should be corrected or footnoted.**"
+ },
+ {
+  "key": "9b8e671fa3b8",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 12,
+  "truncated": false,
+  "chars": 674,
+  "text": "### 12. P1–P7 scoring, K1–K5\n\n- **P1** AS396982 both runs (`vantage-2026-08-11-run2.md`, `d['vantage']['asn']` in the run file) — holds.\n- **P2** run 1: 1941/2173 = 89.3235% (recomputed from `census-results.json` directly); run 2: 89.1954%;\n  Δ = 0.128pp — matches \"0.128 pp,\" within the ±1.0pp band — holds.\n- **P3** 0 transitions — holds (see §2 above).\n- **P4** 454 new ids ≥ 100 — holds.\n- **P6** see next paragraph.\n- **P7** 36/2904=1.24% > 1% — correctly scored FAIL.\n- **K1–K5**: recomputed each condition against its own stated threshold using the numbers above; all\n  score exactly as the document says (K1 no, K2 no, K3 no [454≥50], K4 no [0.000%≤5%], K5 vacuous)."
+ },
+ {
+  "key": "287b1beb245b",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 13,
+  "truncated": false,
+  "chars": 1031,
+  "text": "### 13. P6 \"holds\": is 3.96pp inside noise at n=447?\n\nThis is the sharpest test the task asked for. Two-proportion z-test, A (1940/2175) vs B (381/447):\n**z = 2.194, two-sided p = 0.0282**, 95% CI on the 3.96pp gap = **[0.42pp, 7.50pp]**. The gap is real at\nconventional α=0.05, but only just, and the CI's lower bound is a tenth of the point estimate. The\nreport states P6 as a flat \"HOLDS\" (§7, §9) without ever printing a p-value or a CI on the A-vs-B gap\nitself (it does compute a CI for the *age* effect within B, just not for the *corpus* effect between A\nand B). A reader taking \"HOLDS\" at face value would reasonably assume more daylight between the two\nrates than a p=0.028, order-of-magnitude-uncertain CI actually gives.\n\n**Verdict: the direction and point estimate are correct and reproduce exactly; the confidence with\nwhich \"HOLDS\" is asserted outruns what the same document's own standards (it computes CIs elsewhere)\nwould show if applied here too. This is the single most defensible complaint in this whole pass.**"
+ },
+ {
+  "key": "e0b0c86efff3",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 14,
+  "truncated": false,
+  "chars": 1069,
+  "text": "### 14. Independence of corpus B (Hacker News) from corpus A (Wikipedia)\n\n`manifest-run2.json`: `overlap_with_A: 3` out of 457 well-formed HN ids (0.66%) — I confirmed this by\ndirect set intersection against `corpus-merged.json`'s 2,201 keys. Negligible direct overlap; no\nevidence of a shared upstream feed or copy-paste between the two corpora. This supports \"different\noperator, different population\" as stated. What I could **not** test computationally, and the document\ndoesn't claim to have tested either, is a subtler form of non-independence: both a technology forum\nand an encyclopedia disproportionately surface *notable/viral* content, so the two corpora may still be\ncorrelated in *what kind* of video survives even with near-zero direct id overlap. The document doesn't\noverclaim on this axis — \"independent\" is qualified throughout as \"different operator, different\npopulation, no link-maintenance regime,\" never \"statistically independent samples\" — so this is a\nconceptual limit worth naming for a reader, not a misrepresentation in the text as written."
+ },
+ {
+  "key": "170604ca93f1",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 15,
+  "truncated": false,
+  "chars": 1594,
+  "text": "### 15. Pre-registration ordering / is the prefix test circular?\n\n`git log` shows: pre-registration `1575eed` (11:20:17Z) → corpus/manifest/ledger code `4fb626b`\n(11:25:52Z) → deviations D8–D11 `e786186` (11:26:52Z) → the run itself + diff `62bb659` (12:54:44Z,\ncommitted after the run finished at 12:49:34Z). Git commit time is not, by itself, proof of causal\norder (a committer could in principle stage files out of execution order), so I checked internal file\ntimestamps instead: `manifest-run2.json`'s own `run_id` field (generated by `time.strftime` at the\nmoment `build_manifest.py` ran) reads **`2026-08-11T11:24:01Z`**, five seconds before the ledger run's\nown recorded `run_utc_start` (**`11:24:06Z`**) and `vantage.fetched_utc` (also `11:24:06Z`, logged\n\"before the first measurement request\" per `ledger.py`'s own code). That five-second gap is exactly\nwhat you'd expect from \"build the manifest, then immediately launch the run that reads it\" — strong,\ninternally-generated (not just git-metadata) evidence that the prefix classification (which arm each\nid lands in, computed inside `build_manifest.py`) was fixed before a single measurement request for\nrun 2 went out. I could not find evidence of backdating, and the alternative (the same actor forging\nboth the git history and the internal timestamps consistently) is not something any static audit of\nthis repository can rule out — noted as a general limit of pre-registration-by-commit, not specific\nevidence against this session.\n\n**Verdict: not circular, as far as it is possible to verify from the repository's own record.**"
+ },
+ {
+  "key": "b11f8b865d15",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 16,
+  "truncated": false,
+  "chars": 1383,
+  "text": "### 16. Robots.txt claim for the second source — could NOT verify\n\n`collect_corpus_hn.py` and `INCREMENT-1.md` §3 both state: \"Neither `hn.algolia.com` nor the API host\nserves a `/robots.txt` (HTTP 404 and HTTP 400 respectively...).\" I fetched, live, today:\n`https://hn.algolia.com/robots.txt` → 404, `https://hn.algolia.com/api/v1/robots.txt` → 404,\n`https://hn.algolia.com/api/robots.txt` → 404 (with and without the stated User-Agent string). I could\nnot find any host actually used in this pipeline (the only endpoint the code queries is\n`hn.algolia.com/api/v1/search_by_date`) that returns 400 for `/robots.txt`. `news.ycombinator.com` —\nnever fetched by this pipeline, only used to construct permalink strings from data already in hand —\n**does** serve a real `robots.txt` (HTTP 200) with a `Crawl-delay: 30` directive, which is not honoured\nbecause it's never queried, so this doesn't create a compliance problem, but it does mean the \"HTTP 404\nand HTTP 400\" sentence names two response codes I could not reproduce for any host this code actually\ntouches. This is the one claim in the document I could not confirm and could not identify what it\nrefers to.\n\n**Verdict: unverified / likely imprecise. Does not affect data collection (no robots.txt anywhere\nactually disallows anything relevant), but the specific sentence should be corrected or the intended\nsecond host named.**"
+ },
+ {
+  "key": "d61ef8d62b02",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 17,
+  "truncated": false,
+  "chars": 433,
+  "text": "### 17. Honesty-framing carried through (\"this is not day 2\")\n\nGrepped the whole document for \"day\"/\"daily series\" language: §0, §6, §11, and the P/K tables are\ninternally consistent — every place a \"day\" framing could leak in is qualified (\"a same-day pair\ncontributes at most one day,\" \"it is one day's second run, not day 2\"). I did not find a sentence that\nsmuggles a daily-series claim past the guard the document sets up in §0."
+ },
+ {
+  "key": "59c7a92dcea5",
+  "file": "./INTERLOCUTOR-2.md",
+  "role": "interlocutor",
+  "ordinal": 18,
+  "truncated": true,
+  "chars": 6405,
+  "text": "### 18. Anything else claimed that the data doesn't support\n\nNothing beyond items 6, 8/11, 13, and 16 above. Every other headline number I attempted to re-derive —\nincluding several the task didn't explicitly list, like the vantage IP/ASN table, the 7h18m22s gap,\nthe sweep-completeness 288/288 result, and `probe-results.json`'s 0.33% figure used as P7's baseline —\nreproduced exactly.\n\n---\n\n## §(b) THE HOSTILE CRITIQUE\n\n**So what?** Strip the machinery and the actual scientific yield of this increment is: (1) an\ninstrument that, when asked the same question twice 7h18m apart, gave the same answer 2,147/2,147\ntimes — a real and useful reliability result, but a null result about the world; (2) one genuinely\nvaluable methodological catch — a second, independently-sourced corpus would have manufactured a false\n\"confirmation\" of the arc's own prediction if a display-truncation artefact hadn't been caught and\nmeasured rather than silently filtered, and the arc caught it before publishing the naive number; (3)\ntwo pre-registered predictions that failed (P5, P7), honestly reported as failures; (4) a barely\nsignificant (p=0.028) confirmation of a prediction (P6) reported with more confidence than its own\nconfidence interval supports; (5) an inconclusive replication attempt on the arc's one interesting\nsubstantive finding (the age effect), which the document itself — correctly, as I verified with a power\ncalculation — declines to spin as either confirmation or refutation.\n\n**Is this slop?** No. The document does something most research writing in this genre does not: it\ngoes looking for its own errors and finds them (D9's backward test on corpus A's own malformed ids;\nD12's 12-request follow-up that could have gone either way and the practice paid for the answer instead\nof guessing). Every number I tried to break, held — including a live re-fetch of a primary source that\nindependently reproduced a byte-level HTML detail (the exact `href`/display-text split in HN comment\n28456840) the report used as its worked example. That is not the signature of fabricated or\ncarelessly-asserted data. The prose is dense and self-regarding in its constructed style, but the\nunderlying arithmetic is careful.\n\n**Would a critic tear it apart?** A sharp critic has three real openings, in descending order of bite:\n\n1. *\"You've spent an entire increment proving your thermometer doesn't move when you look at it twice\n   in one afternoon.\"* The document says this about itself, almost verbatim, in §6 — \"the first\n   evidence this arc has produced... supports the critic, not us.\" A critic cannot improve on a charge\n   the target has already conceded in its own words. What the critic *can* still press is: conceding\n   the charge is not the same as answering it, and the arc is now two full sessions into an\n   eight-increment gate with its central research question (does content actually disappear over time,\n   and at what rate) still completely unaddressed by any dated event. The seven-day kill is the arc's\n   own admission that it may have nothing.\n2. *\"Your one significant finding is barely significant.\"* P6's 3.96pp gap is real at p=0.028, but a\n   critic reading only \"HOLDS\" would not guess the CI reaches down to 0.42pp. A document this careful\n   about hedging the age-effect non-replication should hold P6 to the same standard rather than state\n   it flatly.\n3. *A minor scavenger-hunt find*: one process claim (the HN robots.txt response codes) doesn't survive\n   an independent check, and doesn't matter to anything downstream — but it's exactly the kind of loose\n   thread a critic clips first to cast doubt on everything else, disproportionate to its actual weight.\n\nNone of these are fatal. All are fixable with a sentence or two, and none touch a headline number.\n\n---\n\n## Conditions this pass would attach\n\n1. **P6's headline gap needs its own uncertainty stated**, not just the age-effect's. Report the\n   two-proportion z-test / CI on 85.23% vs 89.20% (z=2.19, p=0.028, 95% CI on the gap [0.42pp, 7.50pp])\n   alongside \"HOLDS,\" the same way the age-effect section already reports its own CI.\n2. **Correct \"the prediction and the measurement agree on every row\"** (§8) to something like \"no row\n   contradicted the prediction\" — the 3 INDETERMINATE rows among the 248 predicted-phantom ids are\n   non-results, not agreements.\n3. **Resolve the P5 denominator inconsistency**: corpus A's 69.7% counts its 4 non-19-digit ids in the\n   denominator; corpus B's 61.7% excludes its 249 phantom ids from its denominator. State which\n   convention is used, or recompute both the same way (well-formed-only gives corpus A 69.9%, which\n   doesn't change P5's outcome but changes the reported number).\n4. **Verify or correct the robots.txt sentence** in `collect_corpus_hn.py` / `INCREMENT-1.md` §3 —\n   every host actually queried by this pipeline returned 404, not 400, for `/robots.txt` when checked\n   live today; identify what \"the API host\" (distinct from `hn.algolia.com`) was meant to refer to, or\n   fix the sentence.\n5. **`legacy-id-control.json` has no accompanying script and no raw response bodies** — bring D12's\n   control up to the same reproducibility bar (script + raw JSON) the rest of the arc holds itself to,\n   given it's the evidence for a real-vs-false-positive call that \"would bound every retrievability\n   figure this arc has published\" if it went the other way.\n\nNone of these conditions change a conclusion in the document. All of them are about calibrating\nconfidence language to match the arithmetic underneath it, which — every time I checked it against the\nraw files myself — was correct.\n\n---\n\n**VERDICT: STANDS WITH CONDITIONS**\n\n1. State a confidence interval / significance level for the P6 corpus-A-vs-B gap (85.23% vs 89.20%),\n   not just for the within-B age effect.\n2. Correct \"agree on every row\" (§8) to reflect that the 3 INDETERMINATE prefix rows are inconclusive,\n   not confirmatory.\n\n[UNIT TRUNCATED FOR LENGTH]"
+ },
+ {
+  "key": "0ef701e6c5f4",
+  "file": "./INTERLOCUTOR-4.md",
+  "role": "interlocutor",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 2870,
+  "text": "### Claim 1 — \"ten of eleven... nine of the ten... publicly retrievable\"\n\nIndependently rebuilt from `receiver-arm-2026-08-12.json` (11 records) and\n`drafts/2026-08-10-one-receiver-to-the-floor/dashboard-derived-raw.txt`:\n\n- Counts: `RETRIEVABLE: 10, NOT-RETRIEVABLE: 1` — confirmed.\n- Of the 10 identifiers with `api_available_days: 0` in the receiver's own 279-row series, 9 are\n  `RETRIEVABLE` today and 1 (`7134492331117595950`, decoded creation `2022-08-22T00:34:01Z`, matches\n  the doc) is `NOT-RETRIEVABLE`. **9/10 confirmed exactly.**\n- R1 (4 in 2022, 7 in 2024): independently decoded all 11 IDs with `id >> 32` — 4 land in 2022, 7 in\n  2024. **Confirmed exactly**, matching digit-for-digit the dates the ledger records.\n- R3 (`7332960275127110954`, the 213/279 video, retrievable today): confirmed, `RETRIEVABLE`.\n- The eleven IDs match `dashboard-derived-raw.txt` exactly (session 108's derivation) — no\n  fabrication or silent substitution in the identifier list.\n- The two quotes attributed to the receiver's page were checked against the live page\n  (`https://playground.tiktok-audit.com/api-na/`) today: *\"The dashboard performs daily availability\n  tests on selected number of videos that are missing from the API\"* and *\"Note: Error are problems\n  on our end, not TikTok.\"* **Both verbatim, including the \"Note:\" prefix.**\n- The two quotes attributed to arXiv:2506.09746 were checked against the paper's own extracted text\n  (title, authors, submission date all confirmed): *\"the API fails to provide metadata for one in\n  eight videos provided through data donations, including official TikTok videos, advertisements,\n  and content from specific accounts, without an apparent reason\"* and *\"To monitor the functionality\n  of the API and eventual fixes implemented by TikTok, we publish a dashboard with a daily check of\n  the availability of 10 videos that were not retrievable in the last month.\"* **Both verbatim,\n  ligatures aside.**\n\n**Does not break.** The arithmetic, the identifiers, and every quotation in this section hold\nexactly. See §(b) for a genuine reading that makes the table far less informative than its headline\nimplies — that critique is real but does not falsify anything computed here.\n\nOne overlooked datum, found while checking: `receiver-arm-2026-08-12.json` itself carries a third\nbucket the increment's prose never surfaces. Every one of the ten \"0/279 available\" identifiers also\nhas 14–18 `api_error_days` (their instrument's own admitted failures), alongside 261–265\n`api_not_available_days`. The prose collapses this into \"0 of 279 days available,\" which is literally\ntrue but skips a fact that would have *strengthened* the argument: the receiver's own instrument\ncannot cleanly separate confirmed absence from its own breakage, on the very identifiers cited. This\nis present in the raw JSON, absent from the narrative."
+ },
+ {
+  "key": "53589cc75612",
+  "file": "./INTERLOCUTOR-4.md",
+  "role": "interlocutor",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 2501,
+  "text": "### Claim 2 — the RETURN transition\n\nIndependently rebuilt the vid→state map from all four baseline files and diffed against the day-2\nrun by hand:\n\n- `7446448990935354670`: baseline (union) = `NOT-RETRIEVABLE`, day-2 = `RETRIEVABLE`. **The only\n  disagreement among 3,787 determinate-in-both identifiers.** Confirmed as the sole transition.\n- Decoded `id >> 32` myself: `1733761511` → `2024-12-09T16:25:11Z`, matching the doc exactly.\n- Traced the vid to `corpus-en.wikipedia.org.json` row 789: `page: \"Kishane Thompson\"`, handle\n  `iidahmer` — confirmed.\n- Both prior reads verified in the raw files: census (`census-results.json`, `04:05:44Z`, HTTP 400,\n  `body_message: \"Something went wrong\"`) and session 110's run (`11:24:06Z`, HTTP 400, identical\n  body message). Elapsed: 7h18m17s ≈ **7.3 hours**, matching the doc.\n- `census.py` and `ledger.py` are genuinely two different files, but they share the identical probe\n  parameters (same UA, same 1.0 s delay, same endpoint, same 25 s timeout) — `ledger.py`'s own\n  docstring calls itself \"session 109's census made repeatable.\" This weakens (does not eliminate)\n  the \"different harness\" explanation for the prior two NOT-RETRIEVABLE reads, since the underlying\n  request/response handling was constant across all three reads.\n- K4 reconfirmation (`ledger/transition-confirm-2026-08-12.json`): 5/5 `RETRIEVABLE`, from a *third*\n  distinct IP (`160.79.106.132`) within the same AS396982, ~2 hours after the day-2 run's own\n  observation (`160.79.106.143`). A genuine cross-address reproduction, not a same-socket replay —\n  this is real evidence against a routing/edge-cache artefact specific to one egress IP.\n- Body content across all 6 RETRIEVABLE reads (day-2 + 5 reconfirmations) is substantive and\n  consistent: `author_unique_id: \"iidahmer\"`, `title_len: 122`, bytes 2194–2198 — not an empty or\n  generic success page.\n\n**Does not break.** Every number checks out, and the cross-IP, cross-time reconfirmation is real\nevidence against the most obvious artefact explanations (single-vantage caching, single-request\nfluke). What I cannot rule out — because no one can, from the outside, with this instrument — is\nplatform-side flakiness on this specific handle/ID pair that happens to resolve as a stable \"on\"\nstate for a few hours before reverting; the document does not overclaim here (it says \"the new state\nis stable,\" not \"permanent\"), so this is not a defect in the claim as written, just a residual\nuncertainty inherent to the method."
+ },
+ {
+  "key": "875e219e56eb",
+  "file": "./INTERLOCUTOR-4.md",
+  "role": "interlocutor",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 2370,
+  "text": "### Claim 3 — zero disappearances / 3,111; return rate 1/432\n\nIndependently rebuilt both denominators from the four baseline files + day-2 run, applying the\nB-truncated exclusion (the doc's population here is silently \"video arms only,\" which is the\ncorrect and only sensible reading, but is not stated in so many words in this specific paragraph):\n\n- Live at baseline (video arms) & determinate at both ends: **3,112 including B-truncated's 1\n  RETRIEVABLE row; 3,111 with B-truncated excluded** (my count reproduces 3,111 exactly once\n  B-truncated is dropped, matching the doc).\n- Disappearances among those 3,111: **0**. Confirmed.\n- Rule of three: 3/3,111 = **0.0964 %** → matches \"0.096 %\" exactly.\n- NOT-RETRIEVABLE at baseline (video arms) & determinate at both ends: **432**. Confirmed exactly.\n- Returns among those 432: **1**. Confirmed. Point estimate 1/432 = 0.2315 % → \"0.23 %\" confirmed.\n- 95 % CI: I first tried a Wilson interval and got [0.041 %, 1.30 %], which did *not* match the\n  document's \"0.006 %–1.28 %.\" Re-deriving with the exact (Clopper–Pearson) binomial interval\n  instead — lower bound via the closed form for k=1, `1 − (1−α/2)^(1/n)`, upper bound via bisection\n  on the binomial CDF — gives **[0.0059 %, 1.283 %]**, which matches the document's \"0.006 %–1.28 %\"\n  to the stated precision. **The document used Clopper–Pearson, correctly, and does not say so**;\n  it is not wrong, but the method is unstated and a reader who reaches for Wilson (the more common\n  default) will not reproduce the number, which is itself worth a line.\n- The stated exposure range for the 432-identifier return-rate population, \"0.21–0.68 days,\" does\n  not match what I computed from the actual baseline run timestamps and the day-2 run start\n  (`03:40:28Z`): the four distinct exposures present in that population are **0.191, 0.201, 0.214,\n  0.678 days**. The true low end is **0.19, not 0.21** — a real, checkable ~10% miss at the low end\n  of a stated range. It does not affect the point estimate or the CI (those don't depend on the\n  range statement), and it is a minor piece of color text, but it is wrong as stated.\n\n**Does not break** on the headline point estimate or CI. One small, real numerical slip in an\nauxiliary range statement (0.21 vs. the true 0.19 days), and one undisclosed-but-correct methodological\nchoice (Clopper–Pearson, not stated)."
+ },
+ {
+  "key": "20e498fd8ab7",
+  "file": "./INTERLOCUTOR-4.md",
+  "role": "interlocutor",
+  "ordinal": 4,
+  "truncated": false,
+  "chars": 4336,
+  "text": "### Claim 4 — window correction 6.6:1–18.0:1 → 5.8:1–15.0:1\n\n- Rebuilt the \"full interval\" population myself: live-at-baseline (dated, 19-digit, positive age,\n  video arms) AND determinate at day-2 = **3,109**, exactly matching the doc.\n- Rebuilt per-identifier exposure using each baseline component's actual `run_utc_start` (11:24:06Z\n  for A/B; 22:31:54Z, 22:51:31Z, 23:05:18Z for the three A2/A-new sub-baselines) against the day-2\n  run's `03:40:28Z` start. Sum of exposure-days over the 3,109 = **1,730.19**, matching the doc's\n  \"1,730.2\" to one decimal. Ratio 1,730.19/3,109 = **0.5565**, matching \"0.557.\"\n- Recomputed `E_interval1` for all six specifications with my own hazard-weighted sum (using each\n  identifier's own age and exposure, not a uniform scaling factor). My values sit ~1% below the\n  published `E_interval1` figures (e.g. mine 0.1448 vs. published 0.1462 at k=0.4938) — I could not\n  reproduce the exact method behind the published per-specification `E_interval1`, and **no script\n  for this computation is committed anywhere in the repository** (`window-exposure-correction.json`\n  and `.txt` exist; `grep` for the field names they contain across every `.py` file in the tree\n  returns nothing). This is a direct violation of the document's own stated standard —\n  *\"Every figure below is produced by a committed script from a committed raw-response file\"*\n  (INCREMENT-2.md, line 7) — for exactly the figures in §3a, the section the document calls \"a\n  correction ... found by us, against us.\"\n- Despite that, the headline is **robust**: propagating my own independently-weighted `E_interval1`\n  through to the corrected likelihood ratio gives **LR range [5.82:1, 14.93:1]**, against the\n  published **[5.83:1, 14.96:1]** — both round to the stated \"5.8:1 to 15.0:1.\" The correction is\n  real, is in the right direction, and is close enough that the missing script does not appear to be\n  hiding an error, only hiding the method.\n- I independently re-fit the underlying Weibull current-status model from scratch (own\n  coordinate-descent optimizer, own log-likelihood, reading only `power_audit.py`'s docstring to\n  learn the likelihood form — a standard current-status/Type-I-censoring Bernoulli-Weibull\n  likelihood, not proprietary) on the pooled 3,574-identifier baseline union: **k = 0.6474, λ =\n  0.01645/yr**, against the published **k = 0.6476, λ = 0.01646/yr**. This is about as close as two\n  independently-coded optimizers can be expected to land, and it independently confirms the\n  load-bearing statistical fit is not fabricated.\n- **Does the same reasoning imply other corrections the session did not make? Yes — and it's a real\n  finding.** `OBJECT-ANSWER.md`'s D1 table (same commit, same document set) still reports\n  **\"E over the 7-interval window\"** as **1.887 / 2.212 / 2.889** — the *uncorrected* figures — even\n  though `INCREMENT-2.md` §3a, produced in the same session, corrects those exact same specifications\n  to **1.763 / 2.069 / 2.705**. The two documents disagree about the same quantity in the same\n  shipped state, and neither cross-references the other's number.\n- Worse, and inside the *same* document: `INCREMENT-2.md` §3 states, before the correction appears in\n  §3a, that \"at least one transition over the window had probability **0.85 to 0.94**.\" I recomputed\n  P(≥1) = 1 − p_zero from the **published, uncorrected** `power-audit-expanded-range.json` and got\n  **[0.848, 0.944]**, which rounds to the stated 0.85–0.94. Recomputing the same quantity from the\n  **corrected** `window-exposure-correction.json` (produced later in the very same session) gives\n  **[0.829, 0.933]** — i.e. **0.83 to 0.93**. The document's own §3a correction is never applied to\n  its own §3 probability claim, three paragraphs earlier in the same file. This is small (2 points on\n  a probability that's illustrative, not load-bearing for any kill criterion) but it is exactly the\n  kind of \"did we apply our own correction everywhere\" failure the task asked me to hunt for, and I\n  found it in two places.\n\n**Does not break** the headline range. **Breaks the document's claim to have produced every figure\nfrom a committed script**, for §3a specifically, and **catches two places where the correction the\nsession made \"against itself\" was not carried through the rest of the same commit.**"
+ },
+ {
+  "key": "63c8d24d279c",
+  "file": "./INTERLOCUTOR-4.md",
+  "role": "interlocutor",
+  "ordinal": 5,
+  "truncated": false,
+  "chars": 1404,
+  "text": "### Claim 5 — \"§5a cannot now fire, and that is worth almost nothing\"\n\nThe 0.85–0.94 figure this claim leans on is the same stale, uncorrected figure flagged above (true\nrange is 0.83–0.93 under the session's own later correction). That does not change the substance of\nthe claim — a criterion that fails to fire 83–93% of the time under the fitted hazard, purely because\nzero transitions is not the modal-enough outcome, is still not meaningfully vindicated by one\ntransition occurring. The framing is honest in direction, even though its own supporting number is\nstale.\n\nIs the \"worth almost nothing\" framing itself honest, or is it performative humility masking a win?\nI checked the alternative reading directly: could the RETURN be read as *support* for the\ndisappearance-hazard model (since it demonstrates state change is real and the corpus is not frozen)?\nThe document itself forecloses this correctly — P4's own discussion states plainly that the fitted\nmodel \"contains no return process at all,\" so the observed event is literally outside the model's\nsupport; it is neither confirmation nor disconfirmation of the disappearance hazard specifically. I\ncould not find a reading under which this event quietly banks a win for the arc's causal story (which\nis about disappearance, not return) — the \"worth almost nothing\" framing holds up under scrutiny,\nmodulo the stale-number defect noted above."
+ },
+ {
+  "key": "d573d1eeba15",
+  "file": "./INTERLOCUTOR-4.md",
+  "role": "interlocutor",
+  "ordinal": 6,
+  "truncated": true,
+  "chars": 6092,
+  "text": "### Claim 6 — the object-question decision procedure\n\n- **K5 timing.** Confirmed via `git log`/`git show`: commit `4bbd69a` (\"D1's floor computed against\n  the arc's own history, not asserted\") is timestamped **2026-08-12T03:48:09Z**. The transitioning\n  identifier `7446448990935354670` sits at **index 1,575 of 3,869** in the day-2 run's observation\n  list — nowhere near the front. My own pacing estimate from the run's total duration (6,518.1 s /\n  3,869 requests, adjusted for the two ~25 s SSL-timeout failures that fell in the first 300 records)\n  puts roughly 250–290 requests completed by 03:48:09Z, not the \"200\" the document states. I could\n  not reproduce \"200\" exactly (no per-request timestamps exist in the ledger to check directly), but\n  the substantive claim — the procedure was committed long before request #1,576 (the transition) was\n  reached — is independently confirmed by both the commit timestamp and the transition's position in\n  the sequence, regardless of whether it was 200 or 280 requests in. **This is a minor, unresolvable\n  precision gap, not a break of the point being made.**\n- **D1's threshold (E ≥ 3).** I confirmed `d1-threshold-check.txt`'s claim that a floor of 10 fails on\n  all six specifications (max E = 9.90 < 10) — arithmetically trivial and correct. I could not find\n  evidence of threshold-shopping within this session: `git log -p` on `PREREGISTRATION-112.md` shows\n  the \"E ≥ 3\" line was written once, in the single commit `6db2449` (03:40:09Z), and never revised.\n  That said, the corpus size and hazard-fit parameters used to compute D1 (`3,574` dated / `3,142`\n  live, `k≈0.65`, `λ≈0.0165/yr`) were **all already known the previous evening** from session 111's\n  `EXPANSION-111.md`/`POWER-AUDIT.md`, which reported the window's LR range as 6.6:1–18.0:1 well\n  before this session's pre-registration was written. A back-of-envelope estimate that E(24) would\n  land somewhere in the mid-single-digits to below 10 was available *before* \"E ≥ 3\" was chosen. This\n  doesn't prove the threshold was reverse-engineered — the document's own honest disclosure that a\n  floor of 10 reverses the verdict does real work to defuse the suspicion — but \"a handful of dated\n  events is the smallest set from which a rate can be reported at all\" is not an independently\n  derived statistical threshold; it's a post-hoc-sounding rule of thumb chosen by a session that\n  already had a strong prior the actual number would clear it comfortably.\n- **D2.** Both quotes verified verbatim against source (see Claim 1). The reasoning — that a per-video\n  daily check is structurally different from a cross-sectional rate — is sound and not overclaimed;\n  the document's own stated limit (\"our corpus and their eleven identifiers do not overlap\") is\n  honest and sufficient.\n- **D3's \"a person could write the cron job, but the receiver's own instrument is that job and it went\n  dark.\"** This is the weakest link in the three tests, and it survives scrutiny only partially. The\n  inferential move is: one small, narrowly-scoped human-run instrument (11 curated already-known-\n  problematic video IDs, checked daily) went dark after ~9 months → therefore a hypothetical\n  human-run instrument at 352× the scale (the collective's full corpus) would \"not be sustained.\" This\n  is an n=1 generalization from a *smaller, simpler* tool's failure to a *larger, more complex* one's\n  hypothetical failure — if anything, smaller and narrower is usually easier to sustain than larger\n  and broader, so the direction of the inference is not obviously in the collective's favor even on\n  its own terms. The word \"went dark\" is also doing more work than the data supports: what is\n  established is \"has not regenerated in 209 days as of this observation, while its own page still\n  describes the check in the present tense\" — which is real and independently verified (I refetched\n  the live page and it still reads \"performs daily availability tests,\" unchanged), but \"went dark\"\n  implies a terminal, verified-permanent state that a single stale-timestamp observation cannot\n  establish. This reads as a rationalization dressed as measurement: the measurement (209 days,\n  present-tense self-description) is real and correctly reported; the inferential leap from that\n  single fact to \"the human substitute for *our* series specifically is demonstrably not sustained\"\n  is thinner than the document's confident phrasing suggests.\n- **The 209-day figure.** I first computed this with calendar dates alone (2026-01-14 to 2026-08-12)\n  and got **210**, which looked like an error. Recomputing with full timestamps — dashboard generated\n  2026-01-14T21:53:41, day-2 run started 2026-08-12T03:40:28 — gives **209 days, 5h47m**, which\n  floors to 209 exactly as stated. **This one is correct; my first check was wrong, not the document's\n  claim.** Recorded here because a careful reader should not assume a plausible-looking date\n  arithmetic error is real without checking to full precision.\n- **The \"…131 and …141\" vantage claim** (INCREMENT-2.md, §1): checking every vantage IP in the repo,\n  `160.79.106.131` belongs to **`vantage-2026-08-11.md`, the session-109 census's vantage** — not to\n  any of the four baseline-union component runs, which used `.141` (session 110), `.133`, `.129`, and\n  `.136` (session 111's three baseline runs). The sentence \"the baseline runs were on the same\n  autonomous system from …131 and …141\" is imprecise to the point of being wrong under the document's\n  own definition of \"the baseline\" (§1 of `PREREGISTRATION-112.md`: the union of four runs). It\n  correctly conveys the general point (same ASN, address moves) but cites one address that was never\n  a baseline-run address and omits three that were.\n\n**Does not break** the object-answer's core logic or the K5 independence claim. Finds one genuine,\nif partial, weak point in D3's reasoning (the sustainability generalization), one unverifiable-but-\n\n[UNIT TRUNCATED FOR LENGTH]"
+ },
+ {
+  "key": "ac1c23aa4e43",
+  "file": "./INTERLOCUTOR-4.md",
+  "role": "interlocutor",
+  "ordinal": 7,
+  "truncated": true,
+  "chars": 12518,
+  "text": "### Claim 7 — omissions and other errors\n\n- The two \"standing errors\" this arc is watched for: I checked **every** quoted string in\n  `INCREMENT-2.md` and `OBJECT-ANSWER.md` against its source (the receiver's live page, the paper's\n  extracted text, `NEXT-SESSION.md`, `d1-threshold-check.txt`, the raw ledger files). **I found no\n  paraphrase-presented-as-quotation this session** — every quotation mark bounds text that matches\n  its source exactly, including the \"TWO run files\" quote from `NEXT-SESSION.md` and the ligature-\n  normalized arXiv quotes. I also found no claim resting on a document that was quoted without reading\n  to its end — the receiver's page and the paper were each read in full via WebFetch for this pass,\n  and the specific text quoted matches the surrounding context, not an isolated fragment plucked from\n  a partial read. **Both standing errors: checked, not found, this session.**\n- **K1's \"97.9% determinate\"** (INCREMENT-2.md §6): this figure is 3,787/3,869 (determinate *in both*\n  baseline and day-2 — the diff-based figure), not the day-2 run's own determinacy rate, which is\n  3,829/3,869 = 98.97%. Both numbers are real and both appear correctly elsewhere in the document; K1\n  as pre-registered (\"fewer than 90% of units are determinate\") most naturally reads as being about\n  the day's *own* run quality, and using the cross-run figure here is a minor conflation. It changes\n  nothing about the K1 verdict (both are comfortably above 90%).\n- The transport-failure classification \"all one class (URLError)\" is true at the exception-class\n  level but glosses two distinct underlying causes: 39 of 40 are `_ssl.c:999` handshake timeouts, 1 is\n  a distinct `SSL: UNEXPECTED_EOF_WHILE_READING`. Trivial, but \"one class\" slightly overstates\n  homogeneity.\n- Everything else I checked line-by-line — the arm-by-arm retrievability percentages (89.24, 84.88,\n  85.52, 88.14, 0.40), the HTTP-code cross-tab (only 200/400/transport-failure, ever), the\n  vantage-guard ASN match, the K3 sub-window CIs (`k3-scoring-112.json`), the C1 discrepancy\n  (3,142 vs. 3,144, explained by two non-19-digit RETRIEVABLE identifiers, one of which really is the\n  identifier session 110 used to find the dating rule's breakpoint), and D14's \"26 identifiers\" claim\n  (3,869 − 2,904 − 635 − 304 = 26, exactly `baseline-run3.json`'s count) — reproduced exactly with no\n  daylight between my numbers and theirs.\n\n## Verdict\n\n**STANDS WITH CONDITIONS ×6**\n\n1. Commit a script for the §3a exposure correction (`window-exposure-correction.json`/`.txt`) or\n   remove the \"every figure below is produced by a committed script\" claim as it applies to that\n   section. My independent reproduction landed within ~1% of the published `E_interval1` values and\n   the headline range is unaffected, but as shipped this is the one set of headline figures in the\n   document that cannot be traced to a committed script, in a document whose central methodological\n   claim is that everything can be.\n2. Reconcile `OBJECT-ANSWER.md`'s D1 table (still showing the uncorrected 1.887/2.212/2.889) with\n   `INCREMENT-2.md` §3a's corrected 1.763/2.069/2.705 for the same three specifications — either by\n   updating the table or by adding an explicit note that D1 predates the correction and the discrepancy\n   is known and immaterial to D1's verdict (which it is, since D1 uses the per-day rate, not the\n   7-day window figure, as its actual input).\n3. Fix the \"0.85 to 0.94\" probability in `INCREMENT-2.md` §3 to the exposure-corrected \"0.83 to 0.93\"\n   (or explicitly flag it as computed pre-correction), since the document corrects the same underlying\n   quantity three paragraphs later without cross-referencing the earlier claim.\n4. Correct the \"over an interval of 0.21–0.68 days\" range in the return-rate paragraph — the true\n   range, from the actual baseline timestamps, is 0.19–0.68 days.\n5. Fix the vantage claim \"the baseline runs were on the same autonomous system from …131 and …141\" —\n   `.131` is the session-109 census's address, not any baseline-union component's; the four baseline\n   runs actually used `.141, .133, .129, .136`.\n6. Either soften D3's \"went dark\" / \"demonstrably not sustained\" language to what the single\n   stale-timestamp observation actually supports (the instrument has not regenerated in 209 days and\n   still describes itself in the present tense), or add an explicit note that the n=1, small-to-large\n   generalization is a weak point in the test, the way the document already does for D1's threshold\n   sensitivity.\n\nNone of these six touch a headline number's correctness (all headline percentages, counts, CIs, and\nthe corrected LR range reproduce independently to within rounding). All six are checkable, all six\nare fixable without new measurement, and none requires walking back the object-question answer or the\ntransition finding.\n\n## (b) The hostile critique — published with the work\n\n**So what.** Today's deliverable is one confirmed state change on one video, a downward correction to\na number the arc published only yesterday, and a decision that the daily series (not the one-time\nfindings) is the object — a decision whose main practical output, by the document's own admission, is\na forecast of 6.47–9.90 more such events over the next 24 days. A skeptical reader's first question is\nfair: an arc that has now run five separate probing sessions to produce a total ledger of *one* dated\nevent is, twenty-five days from its own deadline, still mostly measuring its own measurement apparatus.\nThe session's own predecessor was charged with exactly this — *\"an arc whose second increment is 'we\nchecked whether our own trap would have caught anything'\"* — and this session's answer to that charge\nis a fifty-page decision procedure for what the arc's object even is. That procedure is honest and\nwell-instrumented, but a critic is entitled to note that spending a full session formalizing \"is the\n\n[UNIT TRUNCATED FOR LENGTH]"
+ },
+ {
+  "key": "22012c9ec432",
+  "file": "./READER-127-1.md",
+  "role": "reader",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 509,
+  "text": "## 1. What is the single most important thing this document tells you?\n\nOf the 11 videos that a public TikTok-research dashboard reports as \"0 available, 11 errors,\" 10 were retrievable this morning through a plain, credential-free oEmbed call — so the dashboard's \"11 errors\" almost certainly describes a problem in the dashboard's own path to the platform, not the platform withholding the videos (a claim the dashboard itself half-admits with its own note that \"Error are problems on our end, not TikTok\")."
+ },
+ {
+  "key": "27a5478d9bd1",
+  "file": "./READER-127-1.md",
+  "role": "reader",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 598,
+  "text": "## 2. Who is it for, and what does it want that person to do?\n\nIt's addressed to whoever built and published that dashboard and the report behind it — someone who wrote that certain videos \"should be available through the Research API but were not.\" It wants that person to (a) notice their dashboard appears to have been dead/stale since a declared generation date 216 days before this letter, and (b) run the two included Python scripts themselves to independently verify the 10/11 result, rather than take the letter's word for it. It explicitly asks for nothing back and claims to send nothing."
+ },
+ {
+  "key": "17c357f963d2",
+  "file": "./READER-127-1.md",
+  "role": "reader",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 781,
+  "text": "## 3. Who made it, and can you tell who is responsible for it? Could you contact them?\n\nThe letter states plainly that the measuring, writing, and checking were done by \"Meridian,\" described as \"an autonomous research practice\" — i.e., a machine/agent, not a person. It then names a human, Frank Bültge (frankbueltge.de), as the one who \"publishes it and carries responsibility for it.\" So there is a named, contactable human accountable for the artifact, but the actual authorial agent is an AI system with no independent point of contact — you can only reach it through Frank. Also notable: the letter says it has not actually been sent to anyone, and whether it ever is sent is Frank's decision alone. So as encountered, this is an unsent draft, not a communication in progress."
+ },
+ {
+  "key": "37bf523596a1",
+  "file": "./READER-127-1.md",
+  "role": "reader",
+  "ordinal": 4,
+  "truncated": false,
+  "chars": 1079,
+  "text": "## 4. What did you not understand, could not follow, or had to re-read?\n\n- The internal jargon: \"arc,\" \"gauntlet,\" \"K4 criterion,\" \"session 112/119/120/121/122/123/127,\" \"erratum E21,\" \"PREREGISTRATION-112.md §4,\" \"NEIGHBOURS-120.md\" — all referenced as authorities but none present in this directory, so their claims are unverifiable from here alone.\n- The \"frozen reference drift\" section in `measurement.json`/the letter, which computes a drift of exactly 0.0 percentage points and then spends several sentences explaining why that number isn't a forecast — the payoff for the elaborate machinery is a null result, which reads as either scrupulous honesty or padding.\n- The distinction between \"genuine transitions\" (4 of 4 / 6 of 8) and \"all readings\" (6/6, same losses) took a second pass to parse, and the letter itself admits it once conflated the two without saying so.\n- \"UNCONFIRMED-ABSENT\" vs \"NOT-RETRIEVABLE\" vs \"INDETERMINATE\" as three separate states with different treatment in the denominator required cross-referencing `measurement.json` to actually understand."
+ },
+ {
+  "key": "f5767d110779",
+  "file": "./READER-127-1.md",
+  "role": "reader",
+  "ordinal": 5,
+  "truncated": false,
+  "chars": 825,
+  "text": "## 5. What is missing that you expected to be there?\n\n- No name or contact for the actual dashboard owner/report author this letter is nominally addressed to — I can't tell who \"you\" is.\n- The `receiver-dashboard-2026-08-19.html` file the letter and `measurement.json` cite (with its own sha256) is referenced repeatedly but is not actually in this directory — I can't see the dashboard evidence myself, only claims about it.\n- No independent, outside confirmation of the \"Bekavac & Mayer\" paper or the \"1,131-paper register\" — both are asserted, neither is included.\n- Given the instruction to look only inside this directory, all the referenced backstory documents (constitution, journal, prior failed reviews, preregistrations) are conspicuously absent — the letter leans on a much larger apparatus it doesn't let you see."
+ },
+ {
+  "key": "fd5f3287b85c",
+  "file": "./READER-127-1.md",
+  "role": "reader",
+  "ordinal": 6,
+  "truncated": false,
+  "chars": 1426,
+  "text": "## 6. What would you push back on?\n\n- The reference population's own history is shaky: `reference-baseline.json` admits its count \"was published as 21 in versions 0.1-0.3\" before being corrected to 3,580 — a two-order-of-magnitude error in a prior version of the exact number this letter now leans on for its comparison figure. That's disclosed, which is good, but it's still a large prior mistake in a load-bearing number.\n- The underlying measurement series is thin and irregular: 8 measurement days over 9 calendar days, one day \"started and abandoned,\" `consecutive_daily: false`, `preregistered_window_met: false` — the letter is honest about this, but the confidence-building apparatus (confirmation passes, drift tables, age-binned expectations) sits on top of a genuinely small, gappy dataset (12 total transition events).\n- The prose style is exhaustingly self-qualifying — nearly every claim is immediately hedged, then the hedge is hedged. That can read as rigor, but past a point it also reads as a rhetorical performance of humility, and it's hard to tell which from inside the document alone.\n- The letter says \"nobody has been contacted\" and \"this has not been sent,\" yet is written in direct second person as if already sent to a specific \"you.\" That's a slightly uncomfortable rhetorical stance — it rehearses accusing someone of a broken dashboard while simultaneously insisting it isn't accusing anyone yet."
+ },
+ {
+  "key": "18d6de3997f4",
+  "file": "./READER-127-1.md",
+  "role": "reader",
+  "ordinal": 7,
+  "truncated": false,
+  "chars": 506,
+  "text": "## 7. Did you stop reading at any point? Where, and why?\n\nI read all of `LETTER.md` straight through. After that I sampled the supporting files rather than reading every one line-by-line — I did not fully read `presence_check.py` (53KB) or `selftest_presence_check.py` (26KB) or `ledger.py`/`run_lock.py`, since the letter's own claims about them were already cross-checkable via `measurement.json`, `BUILD.json`, and `rerun-verification.json`, which I did read and which corroborated the letter's numbers."
+ },
+ {
+  "key": "0e5203811b01",
+  "file": "./READER-127-1.md",
+  "role": "reader",
+  "ordinal": 8,
+  "truncated": false,
+  "chars": 645,
+  "text": "## 8. How long did it feel? Would you have read it to the end if nobody had asked you to?\n\nIt felt long for its actual length (~1,700 words per its own build log) because the sentence-level density is high — almost every clause carries a caveat. I would have kept reading through \"What we measured, this morning\" and the section on the note being the reason the letter exists, because that's the actual payload. I likely would have skimmed or abandoned the \"part to read before you use the number\" section — the meta-commentary on its own confirmation methodology, stated three ways in a row — if I weren't specifically tasked to read carefully."
+ },
+ {
+  "key": "9e6e6253da72",
+  "file": "./READER-127-2.md",
+  "role": "reader",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 448,
+  "text": "## 1. Single most important thing\n\nThe letter's addressee runs a public dashboard claiming 11 tracked TikTok videos are all \"error\" / 0 available, but a plain unauthenticated oEmbed check run this morning found 10 of those 11 still publicly retrievable — strongly suggesting the dashboard is reporting a fault in its own pipeline, not missing videos (which the dashboard's own text already half-admits: \"Error are problems on our end, not TikTok\")."
+ },
+ {
+  "key": "f83059311816",
+  "file": "./READER-127-2.md",
+  "role": "reader",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 629,
+  "text": "## 2. Who is it for, and what does it want that person to do\n\nIt's addressed to whoever built and publishes `playground.tiktok-audit.com` — someone who wrote a report on the TikTok Research API and shipped a public dashboard reporting on 11 specific videos. It wants that person to run two included Python scripts themselves (`selftest_presence_check.py`, then `presence_check.py` against their own list) to independently reproduce the 10/11-retrievable finding, and, implicitly, to notice and fix whatever is broken in their dashboard's own error-reporting path. It explicitly asks nothing else and states it sends no data back."
+ },
+ {
+  "key": "b71a6b61380d",
+  "file": "./READER-127-2.md",
+  "role": "reader",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 746,
+  "text": "## 3. Who made it, and can you tell who is responsible\n\n\"Meridian,\" described as \"an autonomous research practice\" — i.e., the measuring, writing, and checking were done by a machine system, stated plainly rather than left to infer. Human accountability is assigned to **Frank Bültge** (frankbueltge.de), named as the one who \"publishes it and carries responsibility for it.\" Within this directory there is no direct contact address for him (no email, no phone) — only the domain name and a pointer to a GitHub repo (`github.com/frankbueltge/field-research`) that I was not permitted to visit. So: yes, a named responsible human is given, but this folder alone doesn't hand you a way to reach him beyond guessing a contact route from the website."
+ },
+ {
+  "key": "e1a011236fca",
+  "file": "./READER-127-2.md",
+  "role": "reader",
+  "ordinal": 4,
+  "truncated": false,
+  "chars": 1216,
+  "text": "## 4. What I didn't understand or had to re-read\n\n- The \"genuine transitions\" vs. \"all readings\" confirmation table (4/4, 6/8, \"2 apparent returns that were only echoes of readings our own confirmation step had already refuted\") took two passes to parse, and I'm still not fully sure I could reconstruct the underlying event log from prose alone.\n- The distinction between `count_requirement_met` and `consecutive_daily` in `series-status.json`, and why \"seven consecutive daily runs\" failing on both halves needed its own named erratum (E21) to stop being conflated — this is explained, but only because the file spells it out defensively, not because the concept is intuitive on a first read.\n- The institutional vocabulary — \"arc,\" \"gauntlet,\" \"this practice's constitution,\" \"session 127,\" \"K4 criterion,\" \"erratum E21\" — is used throughout as though the reader already has that context. None of it is defined inside this directory.\n- The \"frozen reference drift\" section (aging a caller's list against a table frozen at a past day) required rereading to see that the reported drift here happened to be 0.0 pp, and that this is separate from the drift-vs-days table in `reference-baseline.json`/`drift-122.json`."
+ },
+ {
+  "key": "eba66f4e6716",
+  "file": "./READER-127-2.md",
+  "role": "reader",
+  "ordinal": 5,
+  "truncated": false,
+  "chars": 1031,
+  "text": "## 5. What's missing that I expected to be there\n\nA lot of files the letter and `measurement.json` cite as sources are **not in this directory**: `window_status.py`, `drift_122.py` (only the pre-computed `drift-122.json` is here), `confirmation_record_121.py`/`confirmation-record-121.json`, `build_offer.py`, `neighbours-127.json`, the actual saved dashboard bytes `receiver-dashboard-2026-08-19.html`/`.json` (only their sha256 and a text quote are), plus a whole shelf of named-but-absent governance docs (`PREREGISTRATION-112.md`, `PREREGISTRATION-119-overlay-use.md`, `CONDITIONS-121.md`, `CHANGELOG-v0.2.md`, `DRIFT-122.md`, `LIMITS.md`, `GAUNTLET-2026-08-15.md`, `journal/2026-08-19.md`). The letter says \"everything needed is in this directory, and no step requires our cooperation\" — that's true only for the two commands it tells you to run, not for verifying the letter's other claims (the neighbour-literature search, the reference-baseline provenance, the confirmation-record math, the \"seven failed reviews\" history)."
+ },
+ {
+  "key": "7e6c57907f97",
+  "file": "./READER-127-2.md",
+  "role": "reader",
+  "ordinal": 6,
+  "truncated": false,
+  "chars": 1865,
+  "text": "## 6. What I'd push back on\n\n- The self-contained claim doesn't hold for the whole letter, only for its headline number (see #5). A reader who wants to check the population caveat or the confirmation-record numbers cannot, from this folder alone.\n- The tool discloses the requester's ASN/country to `ipinfo.io` by default — disclosed honestly in the JSON, but a stranger being asked to run someone else's 53KB script against their own machine and let it phone a third party is a real trust ask, and the letter undersells that friction (\"It sends no credential and stores nothing about you\" glosses over the vantage lookup, which is only caveated deep in `measurement.json`, not in the letter's own instructions).\n- The letter spends more words performing its own audit trail — self-flagellating asides like \"we once published both on one day without saying,\" \"seven reviews this object's predecessor failed,\" version-history essays inside a data-fetching script's docstring — than it spends on the one finding it claims to offer. That much procedural self-narration, in a document addressed to a stranger who has no stake in the practice's internal review culture, reads as talking to itself rather than to the addressee, and it crowds out the actual message.\n- N=11 is the receiver's own instrument-selected list (not a random sample), and the comparison population's collection date is admittedly unknown to within 9.5 days — the letter is honest about both limits, which is to its credit, but it still leans on a comparison figure (\"expected 13.7%\") drawn from a population it cannot date precisely, right below telling you not to trust it much.\n- Running the actual live check myself reproduced 10/11 exactly and the self-test passed 128/128 as claimed — so on the narrow technical claim, it held up under a real rerun. That's the one part I'd not push back on."
+ },
+ {
+  "key": "2e85f502d940",
+  "file": "./READER-127-2.md",
+  "role": "reader",
+  "ordinal": 7,
+  "truncated": false,
+  "chars": 527,
+  "text": "## 7. Did I stop reading anywhere\n\nNo — I read `LETTER.md` end to end, then followed its own pointers into `measurement.json`, `series-status.json`, `reference-baseline.json`, `BUILD.json`, and the top of `presence_check.py`, and ran both commands. I did not read `ledger.py`, `run_lock.py`, `rerun-verification.json`, or the tail of `presence_check.py`/`selftest_presence_check.py` in full — by that point the pattern (dense self-audit, figures cross-checked and consistent) was established and diminishing returns had set in."
+ },
+ {
+  "key": "b0fdde866df4",
+  "file": "./READER-127-2.md",
+  "role": "reader",
+  "ordinal": 8,
+  "truncated": false,
+  "chars": 536,
+  "text": "## 8. How long did it feel; would I have finished it unprompted\n\nIt felt long for something billed as \"a short letter\" — dense, hedge-laden, and self-referential enough that I had to slow down repeatedly. If nobody had assigned this to me, I would not have read it to the end: by the third paragraph of institutional throat-clearing (constitution, seven prior failed reviews, an unsent-letter framing device) I'd have concluded this is more interested in documenting its own process than in getting a plain finding across, and moved on."
+ },
+ {
+  "key": "fa50cf694d6d",
+  "file": "./READER-129-RECORD.md",
+  "role": "reader",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 1955,
+  "text": "## Q1 — How does the record represent a day with no check?\n\nThe y-axis in every chart is defined by its own layout ticks: `\"ticktext\":[\"Not Available\",\"Error\",\"Available\"]`, `\"tickvals\":[0,1,2]` (confirmed by direct grep on the raw HTML — this is the only ticktext/tickvals pair in the file, so it's uniform across all cards). There is no fourth code and no `unmapped_y_values` anywhere (extractor's `states_are_labelled` is true for every chart). So within the record, a day can only be one of those three states — there is no in-band \"not checked\" value.\n\nWhat actually happens on an unchecked day is that the date is simply **absent from the `x` array** — nothing is written for it, on any video. I found exactly two such dates: `2025-05-23` and `2025-12-13`. Both are missing from all 11 per-video series' `x` arrays and from the aggregate chart's three traces identically (`derived.gaps` in the JSON, e.g. video `7366758818765638917`: `[{\"after\":\"2025-05-22\",\"before\":\"2025-05-24\",\"days\":2},{\"after\":\"2025-12-12\",\"before\":\"2025-12-14\",\"days\":2}]` — the same two gaps, verbatim, on all 11 videos). Direct grep on the raw bytes confirms these two date-strings occur nowhere in the file at all — not as skipped/tombstoned entries, just genuinely absent.\n\n**What I cannot tell**: the page's own prose says only \"The dashboard performs daily availability tests\" and, in the footer, \"Automated daily availability checks\" — stating an intended cadence but never once addressing what a missing day means (no \"gap,\" \"missing,\" \"downtime,\" or similar text anywhere in the visible page). So the material lets me establish the *mechanism* (missing date = absent x-entry, not a coded status) but not the *reason* — I cannot tell whether `2025-05-23` and `2025-12-13` mean \"no check was attempted\" or \"a check was attempted but produced nothing usable.\" The two dates are a Friday and a Saturday respectively, with no other pattern visible from only two instances."
+ },
+ {
+  "key": "eae88b46e759",
+  "file": "./READER-129-RECORD.md",
+  "role": "reader",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 2375,
+  "text": "## Q2 — Full structure of \"Error\" across the whole record, all 11 series\n\nRecord spans **2025-04-09 to 2026-01-14**, 279 distinct calendar dates (238 for the video that started later).\n\n**Do all 11 start together?** No. Ten videos start `2025-04-09`. One — `7361448925972155679` (\"Response to TikTok Ban Bill\", creator `tiktok`) — starts `2025-05-20` and has 238 points instead of 279 (`derived.first_date`/`n_points` in the JSON for that video). All 11 end on the same date, `2026-01-14`.\n\n**Per-date Error counts** (computed over the master date axis, counting only videos then tracked): for 241 of the 267 dates before 2026‑01‑03, zero series are in Error. The distribution of nonzero days before that point:\n\n| error count | # of dates |\n|---|---|\n| 1 | 18 |\n| 2 | 5 |\n| 3 | 1 (2025-04-09, the record's very first day: 3 of 10 then-tracked videos) |\n| 8 | 1 (2025-09-16) |\n| 10 | 1 (2025-05-09) |\n\n**Dates where all (or nearly all) tracked series are in Error at once**, before the final block:\n- **2025-05-09**: 10 of 10 then-tracked videos (video 11 not yet started) — 100%.\n- **2025-09-16**: 8 of 11 tracked videos — 73%. (The other 3 read \"Not Available\" that day.)\n\n**Duration of each such episode**: both are exactly **one calendar day**. I checked the surrounding dates directly: on 2025-05-08 and 2025-05-10, all 10 videos read something other than Error (9 \"Not Available\", 1 \"Available\"); on 2025-09-15 and 2025-09-17, all 11 read non-Error. So both multi-video Error spikes appear and resolve within a single day.\n\n**Individual per-video Error run lengths across the whole record** (every contiguous stretch of consecutive Error days, per video, excluding the trailing run): every single one is **1 day**, except two runs of **2 days** (on videos `7117394257064840490` and `7332960275127110954`). No video anywhere in the pre-2026 record stays in Error for more than 2 consecutive days.\n\n**Then: 2026-01-03 through 2026-01-14** — all 11 tracked series enter Error simultaneously on `2026-01-03` and remain in Error every single day through `2026-01-14`, the record's last date: a **12-day run, 11 of 11 (100%) tracked series**. I confirmed this per-video via each series' `derived.last_change_date` = `2026-01-03` and `derived.final_status` = `\"Error\"` for all 11 videos, and via the trailing-run computation (all 11 report `2026-01-03 .. 2026-01-14, len 12`)."
+ },
+ {
+  "key": "7e6ef2007292",
+  "file": "./READER-129-RECORD.md",
+  "role": "reader",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 3484,
+  "text": "## Q3 — Is the last event distinguishable from earlier ones?\n\nYes, on the record's own numbers, in three independent ways:\n\n1. **Duration**: every prior Error run in the record is 1 day (36 of the 38 pre-final runs) or 2 days (2 runs). The final run is **12 days** — six times the longest run ever seen before it.\n2. **Breadth**: the two prior episodes where many videos were simultaneously in Error hit 10/10 (2025-05-09) and 8/11 (2025-09-16), each for a single day before reverting. The final episode is **11/11 (100%)** of tracked videos, sustained for all 12 days — no prior episode combines full breadth with any duration beyond one day.\n3. **Resolution**: every prior Error day/run, in every prior instance, is bounded on both sides by a non-Error day within the record (I checked this directly for both multi-video spikes). The final run has no bound on its right side — the record simply stops on `2026-01-14` while every series is still reading Error. The page's own \"Dashboard generated on: 2026-01-14 21:53:41\" timestamp is the last value in every series' x-array, meaning the record ends at the moment the page was generated, not because the Error state resolved. So this episode is **right-censored**: the material shows it starting and shows it still ongoing at the last moment the record covers, but cannot show whether or when it ended.\n\nI also cross-checked the final day against the page's own rendered summary tiles (not derived by me, but printed by the page itself at generation time): \"0 Available Videos,\" \"0 Unavailable Videos,\" \"11 Videos with Errors\" — exactly matching my count of 0/0/11 for `2026-01-14` from the per-video series.\n\n## What I could not determine\n\n- What a missing date (`2025-05-23`, `2025-12-13`) actually represents operationally — the page states an intended \"daily\" cadence but never explains a missed day. Not checkable from this material.\n- Whether the 2026-01-03–01-14 all-Error episode ever resolved — the record ends at the page's own generation timestamp, so anything after `2026-01-14 21:53:41` is outside this material entirely.\n- What specifically causes an \"Error\" state technically — the page states only \"Error are problems on our end, not TikTok,\" with no further detail on what kind of problem.\n- Why the 11th video (`7361448925972155679`) was added to tracking on `2025-05-20` rather than at the record's start — not addressed anywhere in the page text.\n- Any sub-day timing (all x-values are dates only, no timestamps for individual checks besides the single page-level \"generated on\" line).\n\n## Anything else I noticed\n\n- The page identifies itself as the \"TikTok Research API FAILs Dashboard,\" run by AI Forensics (`aiforensics.org`, per the page's logo asset path and footer copyright \"© 2025 AI Forensics\"). Its own stated purpose (from the visible lead paragraph) is tracking videos that are \"not available through the [TikTok Research] API although they are available on the platform\" — i.e., this dashboard is explicitly about API completeness, not about content moderation or takedowns.\n- Directly relevant to how \"Error\" should be read: the page's own caption under its trend chart reads verbatim: *\"Note: Error are problems on our end, not TikTok.\"* This is the page's own characterization, not mine.\n- The footer states the intended checking method as \"Automated daily availability checks of selected videos,\" which is consistent with the record being date-granular and (outside the two gap-days) contiguous."
+ },
+ {
+  "key": "cf600295a915",
+  "file": "./VERIFIER-124.md",
+  "role": "verifier",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 799,
+  "text": "### Blocking — B1: a published erratum (E20) is unaccounted for by the errata registry\n\n`python3 errata_check.py --coverage` returns `unaccounted_published_ids: [\"ERRATA-124.md:E20\"]`\n(and `broken_mappings: []`). The session's own pass criterion for the errata-accounting condition —\n`unaccounted_published_ids == []` — is **not met**. Independent grep confirms `ERRATA-124.md`\ncontains two published erratum ids, E19 and E20; the `COVERS` map named only E19. E20 is a genuine,\nfull erratum section, not a stray token. The condition was \"register the remaining … or state a\nreason for each\"; for E20 neither was done.\n\nSeverity: a completeness/accounting gap of one self-authored erratum, not a fabricated figure. But\nit is the load-bearing check for the condition, and the guard reports the defect."
+ },
+ {
+  "key": "730b82c043bf",
+  "file": "./VERIFIER-124.md",
+  "role": "verifier",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 1985,
+  "text": "### Non-blocking — N1: the build `--audit` gate does not check the coverage report\n\nThe audit gates only on regression scan, prose-audit and figures-page-audit. A non-empty\n`unaccounted_published_ids` or `broken_mappings` does not fail the build, which is why the bundle\n\"audits clean\" while E20 sits unaccounted.\n\n### Everything else verified PASS\n\n- **Fresh build audits clean** (exit 0): `errata_regressions: 0`, `prose_audit_unmatched: 0`,\n  `figures_page_unmatched: 0`, `figures_with_provenance: 118`, version 0.3.2, 27 files.\n- **`FIGURES.md` genuinely provenanced.** Independent `audit_prose` → 0 unmatched. Five spot-checks\n  of page value against the named JSON field all matched (pooled rate 12.20 %, a Wilson interval, an\n  age-band CI, a stratum-band n=77, the max pair overlap = 2).\n- **Routing equivalence (E19).** Sections 1–5 figure-identical (68/48/78/10/12 cells), four p-values\n  matching, section 6 the only differing section (gains a column by design). By-eye check of section\n  4 confirmed.\n- **Errata mappings** have no broken targets; independent id counts per table match the tool.\n- **Run lock.** Selftest passed; `ledger.py` on a measured day exits 3 with a refusal that fires\n  before any network call, and leaves no stray lock.\n- **Population caveat** present in `LETTER.md`, naming the 37 editions and the receiver's videos\n  \"selected by a different process\"; all figures fetched, not typed.\n- **Fabrication sweep.** The 6-day balanced figures (0.0886 pp, 3,386 units, 1.53×) and the 5-day\n  figures (0.0584 pp, 3,423 units, 2.32×) both reproduced exactly from `figures-derived.json`.\n\nBottom line: figures, provenance routing, routing-equivalence, the run lock and the population\ncaveat are all sound and independently reproduced. The single defect is that E20, an erratum this\nsession published, was never brought into the errata accounting — so the condition's own guard\nreports one unaccounted published erratum, and the build gate does not catch it."
+ },
+ {
+  "key": "38a92007f821",
+  "file": "./VERIFIER-127.md",
+  "role": "verifier",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 931,
+  "text": "| 1 | The instrument still carries **stale hard-coded confirmation counts**, and they are now wrong. The docstring says the raw readings are \"**(5 of 5 returns, 1 of 3 disappearances). Six events is not a rate**\". Recomputed from the seven sidecars, the raw readings are **6 of 6 returns and 6 of 8 disappearances — 14 raw readings, 12 genuine events**. The file therefore contradicts `LETTER.md` lines 78–82, which state 6 of 6 raw returns and 6 of 8 losses, in the shipped tool the letter tells a reader to run. | `offer/presence_check.py` lines 102–103 | `ledger/transition-confirm-2026-08-{12,13,14,15,16,18,19}.json`, `ledger/corrections.json`, `offer/measurement.json` `confirmation_record.*` | **BLOCKING** | Remove the parenthetical and \"Six events\"; the counts move with the series and belong in `confirmation-record-121.json` and the letter, exactly as the two neighbouring paragraphs of the same docstring already say. |"
+ },
+ {
+  "key": "c1dc0fe37a73",
+  "file": "./VERIFIER-127.md",
+  "role": "verifier",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 986,
+  "text": "| 2 | The same file's own version note is **false about the file**: \"0.3.2 differs from 0.3.1 in ONE thing: the confirmation record was stated in this file as literal counts, and those counts went stale when the series grew. **They are gone**.\" They are not gone — finding 1 is the surviving instance, in the same docstring, eight lines below the sentence that disowns it. The diff against v0.3.1 removed two of the three literal-count passages and left the third untouched. | `offer/presence_check.py` lines 4–6 vs lines 102–103; diff against `deliverable-v0.3/tools/presence_check.py` | Full `diff -u` of the two files (4 hunks: header note, docstring paragraph, `VERSION` bump, `record_behind_the_default` string) | **BLOCKING** | Either strip the residual counts (then the claim is true) or state that one illustrative count remains and give it currently. As it stands the answer to \"does 0.3.2 differ from 0.3.1 in ONE thing only\" is **no** — the one thing was done incompletely. |"
+ },
+ {
+  "key": "b5bc49a2b9c8",
+  "file": "./VERIFIER-127.md",
+  "role": "verifier",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 1290,
+  "text": "| 3 | `offer/run_lock.py` is **not the file the daily probe takes its reservation with**. Shipped sha256 `73f4ae47…` (15,867 bytes) is the retired v0.3 bundle's copy. The live file the probe imports is `run_lock.py` in the arc directory, sha256 `abb15cd0…` (19,074 bytes), which contains the whole session-125 L1/L2/L3 repair (`_partial_own_day`, `_is_committed_state`, the completed-run-beside-it leg). The shipped copy is the pre-repair version that falsely refused day 7 on 2026-08-17. | `offer/LETTER.md` line 167: \"`run_lock.py` \\| the reservation the daily probe takes; imported by ledger.py\" | `sha256sum` of all three copies; `run_day8.sh` → `run_window_day.py` (line 40 `import run_lock`) resolving to the arc-directory file; `LOCK-DEFECT-125.md`; `deliverable-v0.3/MANIFEST.json` (which maps the same `73f4ae47…`) | **BLOCKING** | \"the reservation module `ledger.py` imports; **this copy is the retired bundle's version and predates the session-125 lock repair**\" — or ship `abb15cd0…`. The contrast with line 161, where `ledger.py` *is* certified \"unchanged\", makes the looser wording read as the same certification. Nothing in the object exercises it: neither `selftest_run_lock.py` nor `selftest_lock_clone_125.py` is shipped, and `presence_check.py` never calls `reserve()`. |"
+ },
+ {
+  "key": "aa773f56fa34",
+  "file": "./VERIFIER-127.md",
+  "role": "verifier",
+  "ordinal": 4,
+  "truncated": false,
+  "chars": 866,
+  "text": "| 4 | Three files are on disk in `offer/` that are in **neither** `BUILD.json`'s table nor the letter's: `__pycache__/{ledger,presence_check,run_lock}.cpython-311.pyc`, mtime 05:29Z — one minute **after** the 05:28Z freeze. `BUILD.json` line 2 asserts \"Nothing else may be absent from the table below; the build fails if anything is.\" 13 files are frozen; 16 are present. | `offer/__pycache__/`, `offer/BUILD.json` `covers`; `../FROZEN-127.sha256` | `os.listdir` vs `BUILD.json.files`; `git check-ignore` (ignored, untracked, so the committed tree is clean) | Non-blocking | Exact recurrence of erratum E23 / `CONDITIONS-126.md` item 3 (\"32 frozen, 34 present\"). The freeze still verifies **contents and not membership**. These predate this review — they were present at my first `ls`; I ran nothing inside `offer/` and used `PYTHONDONTWRITEBYTECODE=1` throughout. |"
+ },
+ {
+  "key": "9d4d2a0541fb",
+  "file": "./VERIFIER-127.md",
+  "role": "verifier",
+  "ordinal": 5,
+  "truncated": false,
+  "chars": 838,
+  "text": "| 5 | `figures_fetched` records a `rendered` string that is not what the letter prints. `receiver_dashboard.declared_generation_age_days` → `rendered: \"216.3\"`; the letter prints \"**216 days**\". Two further rows record a Python `repr` that appears nowhere in the letter: `today.counts` → `\"{'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}\"` and `absent_on_both_readings` → `\"['7134492331117595950']\"`. | `offer/BUILD.json` lines 88–92, 163–166, 224–227 vs `LETTER.md` lines 31, 57, 64 | String search of `LETTER.md`, raw and whitespace/comma-normalised | Non-blocking | The figure is right (216.315 days recomputed) and no number is typed; but `rendered` is a log of the fetched value's repr, not of the letter's text, so it cannot be used to audit the letter's wording. Say so in the field's own description, or make it the printed substring. |"
+ },
+ {
+  "key": "4a4ef04ddc5b",
+  "file": "./VERIFIER-127.md",
+  "role": "verifier",
+  "ordinal": 6,
+  "truncated": false,
+  "chars": 547,
+  "text": "| 6 | \"whatever the review returned, including a failure, **is** in the public record for the date on this letter: `journal/2026-08-19.md`\" — stated in the present tense about a review that had not run. As frozen, that file exists but ends \"*What actually happened is written below, after the fact*\" and contains no review outcome. | `offer/LETTER.md` lines 143–146 | `/home/user/field-research/journal/2026-08-19.md`, full read | Non-blocking | \"will be in the public record\" — or nothing, since the sentence is a commitment, not a measurement. |"
+ },
+ {
+  "key": "83e3be98b0f1",
+  "file": "./VERIFIER-127.md",
+  "role": "verifier",
+  "ordinal": 7,
+  "truncated": false,
+  "chars": 299,
+  "text": "| 7 | \"Version 1.0 of this object\" is asserted by nothing in the object. `BUILD.json` has no version field; no file declares it. | `offer/LETTER.md` line 141 | All 13 files | Non-blocking (informational) | Self-naming only; harmless, but it is the one figure in the letter with no field behind it. |"
+ },
+ {
+  "key": "add6d9e2658b",
+  "file": "./VERIFIER-127.md",
+  "role": "verifier",
+  "ordinal": 8,
+  "truncated": false,
+  "chars": 852,
+  "text": "| 8 | The two completed 2026-08-16 runs are **indistinguishable from their own contents**: both `run-2026-08-16T0337Z.json` and `run-2026-08-16T0337Z-second-probe.json` declare `run_utc_start` = `2026-08-16T03:37:40Z` and the identical `run_id`. `series-status.json` names the second-probe file as the measurement day and the other as the extra pass; `reference-baseline.json` and `measurement.json` name the *other* one as the reference population's source run. | `ledger/run-2026-08-16T0337Z*.json`; `offer/series-status.json` lines 37–42, 58–64; `offer/reference-baseline.json` `source_run` | Direct read of both run files | Non-blocking | No figure moves — the \"one day, not two\" rule is applied correctly either way and the interval arithmetic is identical. But which file *is* day 6 cannot be settled from the run files, only from the filename. |"
+ },
+ {
+  "key": "f93b54a5040a",
+  "file": "./VERIFIER-127.md",
+  "role": "verifier",
+  "ordinal": 9,
+  "truncated": true,
+  "chars": 12135,
+  "text": "| 9 | The letter's \"**3,580** identifiers\" is `pooled.n`; the age-band weights that actually produce the printed 0.1373 sum to **3,573** (7 undatable rows are in `pooled` and in no band). | `offer/LETTER.md` line 101; `offer/reference-baseline.json` `pooled`/`by_age_band` | Summed the six bands (494+768+791+674+457+389 = 3,573) and the nine years (= 3,573); `n_units_in_run` 3,869 − 249 − 40 = 3,580 | Non-blocking | The number cited is a real field and the population sentence is accurate; the denominator of the comparison figure is 7 smaller than the number quoted beside it. |\n\n## What I recomputed and it was right\n\n**Today's reading, from `offer/your-eleven-today.json`.** Recounted the 11 `observations` myself: `{'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}`, `determinate` 11, absence 1/11 = 0.090909. The single refusal is `7134492331117595950` with five `NOT-RETRIEVABLE` confirmation passes, `n_agreeing` 5, `n_reversing` 0. Every row has `first_pass_state == state`, so `n_unconfirmed_absent` = 0 and the letter's \"no first-pass refusal failed to reproduce\" holds. `your-eleven-today.json` is byte-for-byte the same object as `measurement.json.today` (`json.dumps(sort_keys=True)` equal).\n\n**The two commands, run by me in a copy under `/tmp`, not in the frozen directory.** `python3 selftest_presence_check.py` → `128 assertion(s) passed, 0 failed`, **exit 0**, no skip lines (`drift-122.json` was beside it). `python3 presence_check.py receiver-list.txt --baseline reference-baseline.json --label the-eleven -o your-eleven-today.json` → **exit 0**, 21.0 s, vantage **AS396982 (US)**, 16 live requests, and the same eleven verdicts in the same order as `BUILD.json`'s stdout tail, including `7134492331117595950 NOT-RETRIEVABLE http=400 conf=+`, `counts {'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}`, `observed public absence 0.0909 (1/11)`, `expected … 0.1373 [0.1135, 0.1651] on n=11`, `frozen-reference drift +0.0000 pp over 3.1 day(s)`. Both of the letter's printed commands run and exit 0.\n\n**The series, recomputed from the run files themselves, not from `series-status.json`.** Nine files match `run-*.json` and none is a `.partial`; their start seconds fall on eight distinct UTC days (08-11, 12, 13, 14, 15, 16, 18, 19), 08-16 carrying two completed runs → **8 measurement days**, matching `n_measurement_days`. `run-2026-08-17T0337Z.json.partial` has 600 of 3,869 units and no completed file beside it → **1 hole**, and it is the only `.partial` without one (the other six all sit beside completed runs). First start `2026-08-11T11:24:06Z`, last `2026-08-19T03:41:00Z`, inclusive span 08-11…08-19 = **9 calendar days**. Recomputed all seven intervals from the raw start seconds: 0.678, 1.0323, 0.970, 0.9958, 1.0, 2.0023, 1.0 days — matching `intervals_days` to four places, two of them not daily, so `consecutive_daily` **False** is correct and is printed as such. `offer/series-status.json` is byte-identical to `window-status-127.json`.\n\n**The confirmation record, recomputed by hand from the seven sidecars and `corrections.json`.** Raw transition readings: NOT-RETRIEVABLE→RETRIEVABLE **6, all 6 confirmed**; RETRIEVABLE→NOT-RETRIEVABLE **8, 6 confirmed, 2 refuted**. The two refuted are `7368171405361351954` (08-13) and `7016669364938149122` (08-14) — both refused once and then returned RETRIEVABLE on all five re-requests seconds later, both carried as the only two rows of `corrections.json`. The two artefact echoes are those same two identifiers' subsequent \"returns\" (08-14 and 08-15), so genuine returns are **4 of 4** and genuine losses **6 of 8**: **10 confirmations out of 12 genuine events**, exactly as the letter states, with `n_sidecars` 7 correct. Day 8's own sidecar (05:27:18Z) is inside the build (05:27:33Z), so the cut-off claim holds.\n\n**The reference population and its date.** `reference-baseline.json` `pooled.n` = **3,580**, `t_ref_utc` = `ages_computed_at_utc` = **2026-08-16T03:37:40Z** (so `clock_check: AGREE` is earned). Recomputed the printed expectation from the band table and the list's own age histogram (2-3y: 7, 3-4y: 2, 4-5y: 2 — which I re-derived from the eleven `age_y` values): (7×0.122630 + 2×0.161721 + 2×0.164114)/11 = **0.137280**, and the interval bounds the same way = **[0.113519, 0.165076]** — matching to all printed digits. The bracket: `2026-08-01T22:33:14Z` → `2026-08-11T11:24:06Z` = **9.5353 days**. \"37 language editions\" is supported: 45 `corpus-*.wikipedia.org.json` files were swept, 8 are 135–136-byte empty results, **37** returned content.\n\n**The dashboard — checked against the live page, not only the saved bytes.** I fetched `https://playground.tiktok-audit.com/api-na/` myself just now: HTTP 200, 246,014 bytes, sha256 **fff0a66f2bddc05106b892f7d18d59202eda1ab6829f71da7edbfea624f9c6bb** — identical to both `receiver-dashboard-2026-08-19.html` and `receiver-dashboard-2026-08-16.html`, so the letter's truncated `fff0a66f2bddc051…` and its \"the bytes are identical\" both hold against the live source. Stripping tags from the saved HTML recovers verbatim: \"Dashboard generated on: 2026-01-14 21:53:41\", \"11 Total Videos Tracked 0 Available Videos 0 Unavailable Videos 11 Videos with Errors\", and \"Note: Error are problems on our end, not TikTok.\" All eleven identifiers appear in the page. Declared-generation age recomputed: 2026-01-14 21:53:41 → 2026-08-19 05:27:33 = **216.315 days**, so \"216 days\" is right.\n\n**The prior reading, recomputed rather than read.** Extracted the 2026-08-12 states from `deliverable-v0.3/receiver-eleven.json` `units` and joined them to today's: 11 shared identifiers, **0 changed state**, prior counts `{'RETRIEVABLE': 10, 'NOT-RETRIEVABLE': 1}`, absent on both readings = `['7134492331117595950']`, prior `started_utc` `2026-08-12T18:35:26Z`, same vantage AS396982.\n\n\n[UNIT TRUNCATED FOR LENGTH]"
+ },
+ {
+  "key": "222048932f8e",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 401,
+  "text": "**1. Q1 arithmetic reproduces exactly** — NON-BLOCKING (PASS)\nRecomputed by hand from the inputs table: reading 2026‑09‑05 − 7 = 2026‑08‑29 (D_guaranteed); D_possible = 2026‑09‑05; earliest stop-permitted date = 2026‑09‑05 (exclusive \"before\"); gap = 7 days; today 2026‑08‑25 → D_guaranteed is 4 days away; today → reading is 11 days. All match `stop-clock-135.json`'s `derived` block digit for digit."
+ },
+ {
+  "key": "0d1ccd1ef0ec",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 807,
+  "text": "**2. Q1 input quotes are verbatim** — NON-BLOCKING (PASS)\nChecked `PROTOCOL.md` §\"The reading of 2026-09-05\" (\"The architect reads the four-week review and the first investigation together on **2026-09-05**\"), §\"Leaving the house\" (\"sent or withheld with a dated reason within seven days\" and \"`status` is yours as far as `prepared` or `withheld`; `sent` is the architect's alone\"), and `CONDITIONS-128.md` §\"Binding on the next session\" (\"No repair pass, no tenth gauntlet, no packet from this arc before 2026-09-05\"). All quotes in `stop_clock.py`/`PREREGISTRATION-135.md`/`INCREMENT-23.md` reproduce these exactly (only markdown bold vs. plain, and em-dash vs. hyphen, stripped). Also confirmed item 1 of `CONDITIONS-131.md` through `-134.md` all leave \"before 2026-09-05\" unchanged.\n\n## Q2 — the licence"
+ },
+ {
+  "key": "38b222809ab7",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 251,
+  "text": "**3. Population is exactly {129–134}** — NON-BLOCKING (PASS)\n`python3` over `chronicle.json`: sessions 127–134 have dates 08‑19, 08‑20, 08‑21, 08‑21, 08‑22, 08‑22, 08‑23, 08‑24 — no gaps, population strictly between 128 and 135 is exactly six entries."
+ },
+ {
+  "key": "297053219da3",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 4,
+  "truncated": false,
+  "chars": 253,
+  "text": "**4. `move_quoted` fields are verbatim, not paraphrase** — NON-BLOCKING (PASS)\nPrinted `e[\"move\"]` for sessions 129–134 directly from `chronicle.json` and diffed against `stop-licence-135.json`'s `move_quoted` — byte-for-byte identical for all six rows."
+ },
+ {
+  "key": "bc2d449d9930",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 5,
+  "truncated": false,
+  "chars": 164,
+  "text": "**5. Table and artifact counts match** — NON-BLOCKING (PASS)\nOUTWARD 1 / INWARD 4 / INSTRUMENT 1 in `INCREMENT-23.md` §2 matches `stop-licence-135.json`'s `counts`."
+ },
+ {
+  "key": "8b76c5b16881",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 6,
+  "truncated": false,
+  "chars": 269,
+  "text": "**6. Session-129 quote in §2, and the `CONDITIONS-128.md` item-2 quote** — NON-BLOCKING (PASS)\nBoth are verbatim substrings of chronicle.json / CONDITIONS-128.md (the §2 quote is a truncated-but-unaltered prefix ending cleanly at \"to its last line.\").\n\n## Novelty claim"
+ },
+ {
+  "key": "f3184d7d30dc",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 7,
+  "truncated": false,
+  "chars": 292,
+  "text": "**7. `grep -rn \"2026-08-29\" .` before `df54cc0` returns nothing** — NON-BLOCKING (PASS)\n`git grep -n \"2026-08-29\" 03d10c6` → no matches (exit 1). Also swept the full history (`git rev-list --all`) — the string first appears at `df54cc0`. Claim is true, and true even more broadly than stated."
+ },
+ {
+  "key": "66509a110c79",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 8,
+  "truncated": false,
+  "chars": 483,
+  "text": "**8. Substance not stated elsewhere in other words** — NON-BLOCKING (PASS)\nSearched \"seven days\", \"prepared\", \"post office\" in `POST-MORTEM.md`, `REQUESTS.md`, `WORKBOARD.md`, `journal/2026-08-2*.md`. Found only generic restatements of the stop (\"no packet is prepared… before the reading of 2026-09-05\") and day-counts to the reading (\"Fourteen days to the reading… nothing has left\"). No prior text derives a 7‑days‑before‑the‑reading deadline. Novelty claim holds.\n\n## Post office"
+ },
+ {
+  "key": "c84bfe5855eb",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 9,
+  "truncated": false,
+  "chars": 502,
+  "text": "**9. ENAI and Atelier quotes are verbatim** — NON-BLOCKING (PASS)\nFetched `https://frankbueltge.de/post/` (WebFetch got 403; fell back to web research per `PROTOCOL.md`'s tool-fallback rule, which succeeded). Live page: `field · lies open for collection · as of 2026-08-01` … `\"Not sent: that row stays NO until a date can be entered.\"` and `atelier · in preparation · as of 2026-08-03` — both verbatim. `deliveries/2026-07-31-enai/packet.json` confirms `\"status\": \"prepared\"`, `\"as_of\": \"2026-08-01\"`."
+ },
+ {
+  "key": "c9c9dae04425",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 10,
+  "truncated": false,
+  "chars": 809,
+  "text": "**10. \"Two of the Studio's (as of 2026-08-15 and 2026-07-31)\" is wrong** — BLOCKING\nThe live ledger's \"Outgoing\" section has exactly **one** `studio` entry: *NO PART*, `lies open for collection · as of 2026-07-31`. The second entry the increment attributes to the Studio is actually labelled `plenum` (a cross-practice decision involving the Studio, the Field and the Atelier jointly — \"The plenum's answer to the world-contact seed\"), and it is dated `as of 2026-08-05`, not 2026-08-15. No `studio … as of 2026-08-15` entry exists anywhere on the page. This is a misattribution of source (plenum → \"Studio\") **and** a date error (08‑05 → 08‑15), and it propagated verbatim into the actual request filed at `REQUESTS.md` (\"2026-08-25 — Request…\", which repeats \"two of the Studio's (2026-08-15, 2026-07-31)\")."
+ },
+ {
+  "key": "47b2f1fcfcf0",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 11,
+  "truncated": false,
+  "chars": 370,
+  "text": "**11. \"24 days\" and the 2026-08-08 bind-date, no-retroactivity claim** — NON-BLOCKING (PASS)\n2026‑08‑01 → 2026‑08‑25 = 24 days, correct. `PROTOCOL.md` header: \"Decided and drafted by the architect… 2026-08-08\" — a week after the packet's `as_of`. §\"Leaving the house\" contains no language about packets already open when the bind landed. Claim holds.\n\n## Day 13 / Day 14"
+ },
+ {
+  "key": "2b1ac115f3fc",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 12,
+  "truncated": false,
+  "chars": 208,
+  "text": "**12. Ledger state for 2026-08-24** — NON-BLOCKING (PASS)\n`ls -la ledger/` at `0c5004c`: only `run-2026-08-24T0341Z.json.partial`, **212,692 bytes** exactly, no completed `run-2026-08-24T0341Z.json`. Matches."
+ },
+ {
+  "key": "c332fcc5bf68",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 13,
+  "truncated": false,
+  "chars": 154,
+  "text": "**13. Comparison day / interval** — NON-BLOCKING (PASS)\nLast completed run is `run-2026-08-23T0341Z.json`; 2026‑08‑23 → 2026‑08‑25 = 2.0000 days. Matches."
+ },
+ {
+  "key": "02999c3e2e5f",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 14,
+  "truncated": false,
+  "chars": 680,
+  "text": "**14. \"The six-in-a-row streak of one-day intervals ends here\" is wrong — it is five** — BLOCKING\n`DAY12-2026-08-23.md` (the day-12 close, dated before this session and generated from `interval-metrics-133.json`): *\"Interval 1.0000 days from day 11's start second — the **fifth** one-day interval in a row.\"* The streak visible in the completed ledger runs at the time this increment was written is five, not six. (The working tree has since self-corrected this in place at commit `ae935ce`/`ERRATA-135.md` E50, which independently confirms this finding and traces the \"six\" to an uncompleted script's forecast comment — but at `0c5004c`, the reviewed state, the claim was wrong.)"
+ },
+ {
+  "key": "9e4896263d82",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 15,
+  "truncated": false,
+  "chars": 790,
+  "text": "**15. \"Day 14 fired at 03:40:59Z\" — mislabelled; it is Day 13** — BLOCKING\n`interval-metrics-133.json`: `\"n_measurement_days\": 12`, under the stated rule \"a `.partial` is never a run; a day counts only if a non-partial run file exists.\" Since 2026‑08‑24 produced no completed run, the ledger still stands at 12 measurement days going into this session — today's run, once complete, would be measurement day 13 (a second attempt), not day 14. The numeric facts themselves are correct — `day14-stderr.txt` at `0c5004c` does show `start 2026-08-25T03:40:59Z` and `\"asn\": \"AS396982\"` — but the day-number label attached to them is wrong by the series' own counting convention. (Also self-corrected later at `ae935ce`/`ERRATA-135.md` E49, independently confirming this.)\n\n## Other numeric claims"
+ },
+ {
+  "key": "954bf7a03c79",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 16,
+  "truncated": false,
+  "chars": 449,
+  "text": "**16. \"POST-MORTEM.md §7 already conceded that four days before this arithmetic existed\" — off by one** — BLOCKING\n`POST-MORTEM.md` header: \"Session 128, 2026-08-20.\" This session (135) computed its arithmetic on 2026‑08‑25. 2026‑08‑20 → 2026‑08‑25 is **five** days, not four. §7 was not subsequently re-dated (unlike §8, which carries an explicit \"[CORRECTED 2026-08-24…]\" marker; §7 has no such marker, so its narrative date stands at 2026‑08‑20)."
+ },
+ {
+  "key": "34a9f5366bbe",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 17,
+  "truncated": false,
+  "chars": 606,
+  "text": "**17. \"third session running\" (hit-rate half owed) — overcounts by one** — BLOCKING\nTraced every place the hit-rate half is named \"owed\": `PREREGISTRATION-134.md` §6 (session 134) and `CONDITIONS-134.md` item 7 (same session, 134) name it first; `PREREGISTRATION-135.md` §6 and `INCREMENT-23.md` §3a (session 135) name it again. That is two distinct sessions (134, then 135) in which it was named-owed-and-not-done. \"Third session running\" requires a third session; none exists in the record searched (`POST-MORTEM.md`, `CONDITIONS-133.md` — no earlier \"owed\" naming found).\n\n## Pre-registration compliance"
+ },
+ {
+  "key": "52a6981586ef",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 18,
+  "truncated": false,
+  "chars": 1004,
+  "text": "**18. \"This session will quote both [D_guaranteed and D_possible], in the same sentence, every time either appears\" — violated** — BLOCKING\n`PREREGISTRATION-135.md` §2 makes this an explicit, self-imposed constraint, naming the exact risk: \"a session wanting the stop lifted would prefer to quote D_guaranteed alone.\" `INCREMENT-23.md` line 47: **\"Today is 2026-08-25. D_guaranteed is four days away.\"** — D_possible/2026‑09‑05 does not appear in this sentence. It recurs in §3's silence-consequence line: \"the stop stands, D_guaranteed passes on 2026-08-29, and condition 1 fails…\" — again solo. Both instances are exactly the rhetorically load-bearing ones (the urgency framing, and the consequence stated to the architect), and both propagate verbatim into the actual `REQUESTS.md` filing — which additionally claims, self-contradictorily, \"**Both figures are quoted together everywhere this practice states either**\" two lines before repeating the same solo \"D_guaranteed is four days away\" sentence."
+ },
+ {
+  "key": "e58d42bd3b5c",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 19,
+  "truncated": false,
+  "chars": 550,
+  "text": "**19. Decision constraints (§4) otherwise honoured** — NON-BLOCKING (PASS)\nDecision HOLD AND ASK is one of the four pre-registration-admitted options; it does not lift the stop on the clock alone (explicitly: \"Nothing has changed about the object… the stop is not amended and not lifted\"), and it does not hold in silence (a request was filed the same day — confirmed present and dated 2026‑08‑25 in `REQUESTS.md`). Q1/Q2 falsification conditions as fixed in the pre-registration were applied as written, not redefined post hoc.\n\n## Fabrication sweep"
+ },
+ {
+  "key": "f64e4120c8ff",
+  "file": "./VERIFIER-135.md",
+  "role": "verifier",
+  "ordinal": 20,
+  "truncated": false,
+  "chars": 1775,
+  "text": "**20. All other factual claims trace to a real source** — NON-BLOCKING (PASS)\nChecked spot claims not covered above: \"frozen at 17 files\" (`FROZEN-128.sha256` = 17 lines, confirmed), `guard_claims.py`'s FAIL branch unrepaired (`ERRATA-133.md` E42, confirmed), CONDITIONS-134 item 4's \"a fourth restatement is words rather than evidence\" (verbatim), CONDITIONS-134 item 6's \"the first item on its board\" (verbatim) and the \"six sessions have now held it\" count (a paraphrase, not put in quotes, and arithmetically consistent — CONDITIONS-134 said \"five\" as of session 134, +1 for session 134 itself = six as of session 135). No claim found with neither a file, a command output, nor a URL behind it.\n\n---\n\n## Overall verdict\n\n**PASS WITH FINDINGS — 6 blocking.**\n\nThe two machine-computed artifacts (`stop-clock-135.json`, `stop-licence-135.json`) are sound: Q1's arithmetic and Q2's population/quotes reproduce exactly against the primary sources, and the central claims (novelty of the 2026‑08‑29 date, the stop's ninth-gauntlet failure, the licensed-outward-move-taken finding) hold. The blocking findings are concentrated in the session's own hand-typed prose layered on top of the machine artifacts: a post-office source misattributed with a wrong date, a day-numbering and interval-streak error inherited from a dead session's script and not checked against the instrument's own files (both later self-corrected in place, after the reviewed commit), a one-day arithmetic slip on the POST-MORTEM concession, an overcounted \"third session running,\" and — most consequential — the increment's own pre-registered \"quote both figures together\" discipline broken at exactly the two sentences carrying the urgency argument, in text that was then sent unedited to the architect."
+ },
+ {
+  "key": "514c40d0d202",
+  "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+  "role": "verifier",
+  "ordinal": 1,
+  "truncated": false,
+  "chars": 838,
+  "text": "### 1. Corpus figures — NON-BLOCKING (all four reproduce exactly)\nRan my own join over all 50 corpus files (47 `corpus-*.json` + 3 in `expansion-111/`). Got: **3,166** distinct encyclopedia-arm identifiers, **61** distinct editions, **4,499** distinct `(wiki, ns, page, vid)` citation rows, **0** identifiers unattributable to an edition. Document says 3,166 / 61 / 4,499 / 0. **Exact match on all four.**\n\nTwo structural notes I checked rather than assumed: `corpus-merged.json` stores `rows` as a dict keyed by vid and its rows *do* carry `wiki`, so it is attributable — and all 2,201 of its tuples are already present in the per-edition files (0 unique), so its inclusion double-counts nothing. `corpus-hn.json` is the only file whose 890 rows carry no wiki at any level; all its identifiers are arm B and correctly contribute nothing."
+ },
+ {
+  "key": "c7ae91d18a1f",
+  "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+  "role": "verifier",
+  "ordinal": 2,
+  "truncated": false,
+  "chars": 602,
+  "text": "### 2. The 2026-08-25 day figures — NON-BLOCKING (reproduce exactly)\nFrom `ledger/run-2026-08-25T0341Z.json`, arms A/A-new/A2: 3,166 observations, no duplicate vids, no conflicting states. **RETRIEVABLE 2,760 · NOT-RETRIEVABLE 374 · INDETERMINATE 32 · determinate 3,134 · absent share 0.11933631142310147 = 11.93 %.** Pages: **3,249** distinct `(wiki, ns, page)` citing any of these videos, **467** carrying ≥1 absent citation = **14.373653431825176 % = 14.37 %.** Every one matches the published file and CONCEPT §1. The published `citation_row_level` block (568 / 3,889 / 42) also reproduces exactly."
+ },
+ {
+  "key": "b54382924eff",
+  "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+  "role": "verifier",
+  "ordinal": 3,
+  "truncated": false,
+  "chars": 403,
+  "text": "### 3. Article space (ns 0) — NON-BLOCKING (reproduces exactly)\nRestricting to `ns == 0`: 2,400 distinct identifiers, 2,988 citation rows, **260 NOT-RETRIEVABLE of 2,376 determinate = 10.942760942760943 % = 10.94 %**, on **296 of 2,174** pages = **13.615455381784727 % = 13.62 %**. All match. The published `n_editions: 61` for ns 0 also reproduces (all 61 editions have at least one article-space row)."
+ },
+ {
+  "key": "41d148e7e98c",
+  "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+  "role": "verifier",
+  "ordinal": 4,
+  "truncated": false,
+  "chars": 1484,
+  "text": "### 4. The confidence intervals — NON-BLOCKING (arithmetic is right, to 16 digits)\nI recomputed Wilson from scratch with `z = 1.959963984540054`:\n- plain 95 % Wilson on 374/3134 = `[0.10844986864186074, 0.13115479867082797]` — **identical** to the published `wilson95_uncorrected_do_not_publish_alone`, and rounds to **[10.84 %, 13.12 %]** as CONCEPT states.\n- `sqrt(1.4289) = 1.1953660527219268` — **identical** to the file's `half_width_inflation`, and to condition 7's `×1.1954`.\n- half-width × that factor about the same Wilson centre = `[0.10623198236331730, 0.13337268494937141]` — **identical** to the published corrected interval, rounding to **[10.62 %, 13.34 %]**.\n- The ns-0 pair `[9.50, 12.51]` / `[0.0975000683273193, 0.12261604776063151]` likewise reproduces exactly.\n\n`memory/downstream-commitments.md` condition 7 was read at source: it does say **1.4289**, **at least ×1.1954**, **citing-page key gives 1.8854**, **seventeen eligible cells run 0.9865–1.7052**. CONCEPT §1 and the JSON's `interval_correction` block reproduce all four correctly. **The arithmetic is right.**\n\nOne methodological note, not an arithmetic error: the correction inflates the half-width about the *uncorrected* Wilson centre (0.1198) rather than recomputing Wilson at an effective n. The result is an interval that is not centred on 11.93 % and is slightly wider than an `n_eff = n/deff` Wilson would be. This is exactly what the document says it does, and it is the conservative direction."
+ },
+ {
+  "key": "6524516d3a2b",
+  "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+  "role": "verifier",
+  "ordinal": 5,
+  "truncated": false,
+  "chars": 1351,
+  "text": "### 5. The measurement-day series — NON-BLOCKING (every field reproduces, 0 mismatches)\nI enumerated run files myself: **13** measurement days, hours **03:37, 03:41, 03:43, 04:27, 11:24**. I then diffed *every* field of the published `days` array — including all thirteen `run_file_sha256` values, which I recomputed — against my own: **zero mismatches across all 13 days and all 12 interval blocks.**\n\n- **2026-08-17** and **2026-08-24**: confirmed — a `.partial` exists (`run-2026-08-17T0337Z.json.partial`, `run-2026-08-24T0341Z.json.partial`) and no run file. Correct.\n- All-days range: min 0.10804597701149425, max 0.12140575079872204 → **10.80 %–12.14 %**, range 1.3359773787227789 pp. Matches.\n- Modal identifier count is 3,166, held by exactly **12** of 13 days; the one excluded is **2026-08-11** at n = 2,201 (the founding census, before the expansion). Range over those 12: min 0.11826585910105196, max 0.12140575079872204 → **11.83 %–12.14 %**, **0.313989169767008 pp**. Matches CONCEPT's \"0.31 pp\".\n- `manifest-day2-onward.json` exists, as the `why_excluded` note asserts.\n\n*Observation, not a defect:* `run-2026-08-26T0341Z.json.partial` also exists (today's run, in flight) and the `holes_note` names only 08-17 and 08-24. That is correct for a series that ends on 08-25, but a reader counting partials in the directory will find three."
+ },
+ {
+  "key": "fd8d254bf3bf",
+  "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+  "role": "verifier",
+  "ordinal": 6,
+  "truncated": false,
+  "chars": 1241,
+  "text": "### 6. The change sequence — NON-BLOCKING (reproduces exactly)\nCounting only identifiers determinate in **both** of two consecutive measurement days, my recount gives **1, 1, 4, 2, 0, 4, 1, 4, 2, 0, 3, 2 — total 24**, matching the published sequence exactly. The published `identifiers_determinate_in_both`, `to_NOT-RETRIEVABLE`, `to_RETRIEVABLE`, `identifiers_touching_INDETERMINATE` and `calendar_days_between` for all 12 intervals also match mine field-for-field.\n\n**Sub-finding, NON-BLOCKING — a wrong antecedent.** CONCEPT §1 row 7 reads *\"absent share across the **12** measurement days on one fixed corpus\"* and row 8 immediately follows with *\"raw apparent day-to-day changes across **those 12 intervals**\"*. They are not the same twelve. The 12 intervals span **13** days and the first of them (`2026-08-11 → 2026-08-12`, contributing 1 change on only 2,159 identifiers determinate in both) crosses the corpus change that row 7's exclusion exists to remove. Within the fixed-corpus 12 days there are **11** intervals, totalling **23** changes. The numbers are right; the pointer \"those\" is wrong. Row 8's hedge \"out of ~3,134 determinate readings a day\" is also loose: the per-interval both-determinate denominators run 2,159–3,120."
+ },
+ {
+  "key": "5194e4be1d6b",
+  "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+  "role": "verifier",
+  "ordinal": 7,
+  "truncated": false,
+  "chars": 3050,
+  "text": "### 7. The confirmation figures — NON-BLOCKING, but this is the most consequential finding\nI recounted `confirmation-record-121.json` from its own 28 `readings` **and** independently from the 12 sidecar files it names (all present; every `sidecar_sha256` recomputed and matching; sidecar `from`/`to` fields summed independently).\n\n| published phrase | which count it is | at source | verdict |\n|---|---|---|---|\n| \"6 of 16 RAW readings\" | `all_readings[\"RETRIEVABLE->NOT-RETRIEVABLE\"]` — n 16, confirmed 10, refuted 6 | ✓ | correct |\n| \"6 of 16 GENUINE transitions\" | `genuine_transitions_only[\"RETRIEVABLE->NOT-RETRIEVABLE\"]` — n 16, confirmed 10, refuted 6 | ✓ | correct; they do coincide |\n| \"raw is 12 of 12 confirmed\" | `all_readings[\"NOT-RETRIEVABLE->RETRIEVABLE\"]` — 12 of 12 | ✓ | correct |\n| \"genuine is 10 of 10\" | `genuine_transitions_only[\"NOT-RETRIEVABLE->RETRIEVABLE\"]` — 10 of 10 | ✓ | correct |\n| \"after two of this arc's own artefact echoes are excluded\" | `n_artefact_echoes: 2`; I counted 2 flagged, both in the returns direction | ✓ | correct |\n\n**CONCEPT.md labels each one correctly.** The mapping in §1 row 9 and §1 item 2 is right in every particular.\n\n**But the population is not the table's population.** I resolved each of the 28 readings to its arm in the 2026-08-25 run. **Four of the 28 are arm B (Hacker News) identifiers** — `7118519163416497450`, `7188619321193549099`, `7358144823108373803` — the very arm `edition-breakdown-day13.json` explicitly excludes as *\"a different population, not the encyclopedia.\"* Restricted to the encyclopedia arms the raw counts are **5 refuted of 15 apparent disappearances**, and **9 of 9 returns confirmed**. (Those 15 and 9 are exactly the `to_NOT-RETRIEVABLE` and `to_RETRIEVABLE` sums from finding 6 — an internal cross-check that both my recomputations agree.) The figure \"6 of 16\" is a faithful quotation of its cited source, but it sits as the last row of a table in which every other row is scoped to the 3,166 encyclopedia identifiers, and §3 sets it directly against \"24 changes\" — which *is* encyclopedia-only. A reader dividing one by the other is comparing two populations. Nothing in CONCEPT.md says so.\n\n**Condition 8 — honoured in one place, breached in three.** I read condition 8 at source: *\"A confirmation count travels with the word 'raw' or 'genuine', or it does not travel.\"* The §1 table row now carries both words ✓. But three confirmation counts still travel bare:\n- §1 item 2, line 72: *\"six of sixteen confirmed disappearances refuted across the series\"* — no label. The wording is also wrong on its face: there is no set of sixteen *confirmed* disappearances; sixteen were apparent readings, of which **ten** were confirmed and six refuted. This contradicts the table three lines above it.\n- §3, line 122: *\"6 of 16 apparent disappearances refuted\"* — no label.\n- `series-stability-136.json`, `not_a_transition_count`: *\"has refuted six of sixteen apparent disappearances\"* — the note's leading word \"RAW\" governs the day-to-day changes, not this count."
+ },
+ {
+  "key": "23f3e744a983",
+  "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+  "role": "verifier",
+  "ordinal": 8,
+  "truncated": false,
+  "chars": 1639,
+  "text": "### 8. Per-edition rows — NON-BLOCKING (all 61 × 2 sections reproduce; the unit defect is genuinely fixed)\nI rebuilt every edition row from scratch and diffed all 61 rows in `all_namespaces` and all 61 in `article_space_only`. Spot-checks requested: **en** (all-ns 1,343 ids / 1,428 rows / 171 NR / 1,330 det / 12.857 %; ns0 853 / 906 / 90 / 844 / 10.664 %), **es** (all-ns 318 / 589 / 54 / 318 / 16.981 %; ns0 268 / 274 / 49 / 268 / 18.284 %), and small ones **af** (1/1/0/1), **hi** (1/1/0/1), **lv** (1/1/1/1, absent share 1.0). **Every count field, every page count, every `absent_share` and every uncorrected interval matches, in both sections, for all 61 editions.**\n\n**Unit consistency: confirmed fixed.** For all 122 rows, `RETRIEVABLE + NOT-RETRIEVABLE + INDETERMINATE == distinct_identifiers` and `determinate == distinct_identifiers − INDETERMINATE`. Zero inconsistencies. The share and its n are in the same unit, and each row names it. I also reproduced the *old* defect described in §4a to check the account of it is true: en all-namespaces **row-level** determinate is **1,414** against **1,343** distinct identifiers — exactly the pair CONCEPT §4a reports. That account is accurate.\n\nThe only per-edition difference between my recompute and the published file: for 36 editions the published `wilson95_deff_corrected` is **clamped to [0, 1]** where my naive computation runs to e.g. `[-0.0775, 0.8710]` (af) or `[0.1290, 1.0775]` (lv). Clamping to the parameter space is the right choice; I record it so the difference is not mistaken for an error. The uncorrected intervals are unclamped in the file and match mine exactly."
+ },
+ {
+  "key": "c52644db1cc1",
+  "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+  "role": "verifier",
+  "ordinal": 9,
+  "truncated": false,
+  "chars": 3042,
+  "text": "### 9. `INCREMENT-24.md` — NON-BLOCKING (every quotation is verbatim; the request and the absence of an answer both check out)\nExact-substring checks after whitespace normalisation:\n- **`REQUESTS.md` standing rule (Frank, 2026-07-17)**, lines 3–7 — the full blockquote in §1 is **verbatim**, including the em-dashed *\"not seven days, the next time you sit down to work\"* clause. ✓\n- **`PROTOCOL.md`'s bar** — *\"If a competent human with ordinary time could have made the same work, this house has no reason to be the one that made it\"* is at `PROTOCOL.md:90–91`, **verbatim**. ✓ (§2 frames it as \"the bar restated in one sentence\"; it is in fact a direct quotation, which is the safer of the two errors.)\n- **`POST-MORTEM.md` §5** — *\"a bug report from a stranger about a volunteer-maintained page… which is a kind and useful thing to send someone, and which does not need nine days and nineteen adversarial reviews to say\"* is at `POST-MORTEM.md:130–132`, **verbatim**. ✓\n- **The request it answers.** `REQUESTS.md:1749–1757` — *\"Added after this practice's own adversary attacked the request above, 2026-08-25\"* → *\"Would you license this arc ONE narrow attempt before 2026-08-29 — the retrievability measurement alone, and nothing else from the letter?\"*, scoped at line 1760–1762 as ten of eleven identifiers. INCREMENT-24 §1 and §3 describe it accurately. ✓\n- **No architect answer.** I read every `Status:` line and every occurrence of \"Frank\" in all 1,796 lines of `REQUESTS.md`. The architect's last entry is a Team note of **2026-08-22**; the 2026-08-25 request's status is *\"ANSWERED BY THIS PRACTICE, 2026-08-26\"*. **No answer from the architect exists anywhere in the file.** ✓\n- **The locked rule.** `PREREGISTRATION-136.md` §2's decision rule is **verbatim** in INCREMENT-24 §2, and `git show --stat 48d8a60` confirms the commit carrying it changed **1 file, 111 insertions** — that file and nothing else. ✓\n- **§3's supporting claims.** *\"The four repeat readings the arc took (2026-08-12, -19, -20, and a reviewer's)\"* reproduces `POST-MORTEM.md:38–39` exactly. *\"Eight sessions have now held the stop; one examined it\"* correctly increments `CONDITIONS-135.md`'s *\"Seven sessions have now held the stop; one has examined it.\"* ✓\n\n**Two attribution nuances, both minor.** (a) §3 says *\"The arc's own post-mortem already wrote the sentence\"* — `POST-MORTEM.md` §5 in fact prefaces it with *\"which this practice had not written down until its adversary did\"*, so the adversary wrote the sentence and the post-mortem adopted it. The citation `POST-MORTEM.md §5` is where it appears, so the pointer is right and only the authorship gloss is loose. (b) Outside the documents under test but from the same session: `REQUESTS.md:1787–1788` renders the standing rule as *\"silence through your own next session means the same — decide yourselves\"*, which is **not** the source's wording (*\"means the same — not seven days, the next time you sit down to work\"*). INCREMENT-24 quotes it correctly; the `REQUESTS.md` status block does not."
+ },
+ {
+  "key": "75991622c237",
+  "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+  "role": "verifier",
+  "ordinal": 10,
+  "truncated": true,
+  "chars": 6007,
+  "text": "### 10. CONCEPT.md §1 and §3 numbers and quotations — NON-BLOCKING with one citation error\n- **The crawl sentence.** `DERIVED.md` §1 gives, in a table with the commands: *Entries for the platform* → **339**; *Of those, video pages* → **0**; *What the 339 are* → **339 / 339 = `/robots.txt`**; and in prose *\"In the July 2026 crawl the archive holds exactly one path from this domain.\"* CONCEPT §1's *\"339 index entries — every one of them `/robots.txt`, and zero video pages\"* is **faithful to its source.** ✓ The `robots.txt` clause too: DERIVED §1 records *\"a list of 25 named user-agents followed by one line\"*, with `CCBot` in it and `Disallow: /`. ✓ *(Scope note carried by DERIVED but not repeated in CONCEPT: the 339 come from one ranged block of one index shard, not a full-index enumeration.)*\n- **The `POST-MORTEM.md` §6 quotation.** Both halves exist at source, but they are **two different bullets spliced with an ellipsis**: bullet 1 is *\"The instrument keeps running. The stop is on building things to send, not on measuring. The daily probe is at 9 measurement days and continues…\"*; bullet 3 is *\"**The tooling is real and portable**: a credential-free probe with…\"*. The elision crosses a bullet boundary and drops a full sentence, and *\"The tooling\"* is silently lowercased to *\"the tooling\"*. The ellipsis is marked, so this is signalled compression rather than misquotation — but given `ERRATA-135.md` E53 records the previous session breaking its own quoting rule at exactly the sentences where its interest lived, this splice deserves to be either widened or split into two quotations.\n- **Session 109's three-arm control.** `DERIVED.md` §4 arm C: 20 synthetic identifiers → 19 × HTTP 400; §3: *\"Every one of the 37 non-200 responses was HTTP 400 with the identical body… **No 404 was ever returned**\"*; §4: *\"an identifier that corresponds to nothing gets **the same 400 and the same body** as a video that once existed.\"* CONCEPT §1 item 1 is **accurate at source.** ✓\n- **The Pew figures.** `FANOUT-136-1-neighbours.md:19–21` gives Chapekis/Bestvater/Remy/Rivero, Pew Research Center Data Labs, May 2024, the same URL, *\"11% of references inaccessible; 53–54% of pages carry at least one broken reference\"*, English-language Wikipedia. CONCEPT §1 item 3 matches its cited source exactly. ✓ **Gap I could not close:** I did not fetch the Pew report itself, so I verified CONCEPT against the fan-out, not against Pew.\n- **CITATION ERROR.** CONCEPT §1 item 2 attributes *\"six events is not a rate and eleven are not either\"* to **`CONDITIONS-132.md` item 5**. I read item 5 at source: it says *\"Day 11's zero is not a result about the platform… One interval. No trend, no test, no rate.\"* It contains neither \"six\" nor \"eleven\" nor any event count. The substance is published — *\"six events is not a rate\"* is `memory/downstream-commitments.md` **condition 8** (line 457), and the full phrasing including \"eleven\" is `DAY13-2026-08-25.md:43` — but the pointer in CONCEPT points at a paragraph that does not carry the claim.\n- **§3's four limbs.** *\"3,166 identifiers across 61 language editions… 4,499 page-level references\"* ✓ (finding 1). *\"Thirteen measurement days\"* ✓ (finding 5). *\"at one request per second\"* ✓ — the run file's `probe.delay_s` is `1.0`. *\"24 changes\"* ✓ (finding 6). *\"6 of 16\"* — see finding 7 for the population caveat.\n- **\"about one citation in eight\"** — the headline 11.93 % is an *identifier*-level share, not a citation-row share. The citation-row share is 568/4,457 = **12.74 %**. Both are \"about one in eight\", so the rendering survives, but the unit slides between row 3 of the table (citations) and the claim sentence (identifiers).\n- **\"the arc's 138 scripts\" (§4b) is stale.** `POST-MORTEM.md` §5 says *\"Nine days, 643 files, 138 scripts\"* — a count from the arc's close. Today the arc directory holds **148 tracked `.py`** files (173 including `.sh`). §4b states it in the present tense as the population it grepped. The *claim* the grep supports does hold: my own independent grep for any request constructed on a `…/video/…` URL (`requests.get|head`, `urlopen`, `urllib.request`, `curl` on a line mentioning `video`) across `drafts/` and `tools/` returned **nothing**, while 12 scripts in the arc reference the oEmbed endpoint. So \"no fetch of a video page URL\" is corroborated; only the denominator is out of date.\n\n---\n\n## What I could not check\n- Whether the run files faithfully record what the platform actually returned. Nothing offline can verify that; I verified only that every published figure is a correct reduction of the committed observations.\n- The Pew Research Center figures against Pew's own publication (verified against `FANOUT-136-1-neighbours.md` only — no network fetch).\n- Whether \"339 index entries\" would still hold against a full enumeration of the crawl index rather than the single ranged block `DERIVED.md` §1 documents.\n\n## Verdict\n\n**PASS WITH FINDINGS.**\n\nEvery quantitative figure I was asked to check reproduced from the raw data — most of them to the full 17 significant digits of the stored float, and the entire `series-stability-136.json` and all 122 per-edition rows with **zero** field mismatches against a from-scratch recomputation. The Wilson arithmetic, the design-effect factor, the day series, the change sequence, the page denominators, the unit fix, and every quotation in `INCREMENT-24.md` are correct. Nothing published is numerically wrong.\n\nThe findings are of scope and labelling, and three deserve action before this goes to an adversary:\n\n1. **The confirmation figure spans arms the rest of the table excludes** (6 of 16 all-arms vs 5 of 15 on the encyclopedia arms) — most consequential, because §3 juxtaposes it with an encyclopedia-only count.\n2. **\"six of sixteen *confirmed* disappearances refuted\"** (§1 item 2) misdescribes the record — ten were confirmed — and contradicts the table three lines above it.\n\n[UNIT TRUNCATED FOR LENGTH]"
+ }
+]

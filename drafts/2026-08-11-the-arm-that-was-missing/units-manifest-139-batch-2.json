@@ -1,0 +1,604 @@
+{
+ "source": "hand delimitation, PREREGISTRATION-138B.md section 2, executed under PREREGISTRATION-139.md",
+ "namespace": "hand139",
+ "truncate_at": 6000,
+ "files": 10,
+ "sliced": 10,
+ "unsliceable": 0,
+ "units": 92,
+ "truncated_units": 6,
+ "by_role_passes": {
+  "interlocutor": 3,
+  "reader": 3,
+  "verifier": 4
+ },
+ "by_role_units": {
+  "interlocutor": 32,
+  "reader": 19,
+  "verifier": 41
+ },
+ "key_map": {
+  "269ed1d747de": {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "6384704e383b": {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "741e3ea8f066": {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "95837efbcecd": {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "e4040bd3c876": {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "87f44f3982b6": {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "1744da373923": {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "538370cd5a02": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "691483fab3f2": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "1d09137b736f": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "8d5add55fded": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "187e5ad0189b": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "b93d4ee2f00f": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "9309f7a70417": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "0e04103af41e": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 8
+  },
+  "deda6e44b527": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 9
+  },
+  "15984dc5fff0": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 10
+  },
+  "64be284fc299": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 11
+  },
+  "9b8e671fa3b8": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 12
+  },
+  "287b1beb245b": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 13
+  },
+  "e0b0c86efff3": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 14
+  },
+  "170604ca93f1": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 15
+  },
+  "b11f8b865d15": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 16
+  },
+  "d61ef8d62b02": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 17
+  },
+  "59c7a92dcea5": {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "ordinal": 18
+  },
+  "0ef701e6c5f4": {
+   "file": "./INTERLOCUTOR-4.md",
+   "role": "interlocutor",
+   "ordinal": 1
+  },
+  "53589cc75612": {
+   "file": "./INTERLOCUTOR-4.md",
+   "role": "interlocutor",
+   "ordinal": 2
+  },
+  "875e219e56eb": {
+   "file": "./INTERLOCUTOR-4.md",
+   "role": "interlocutor",
+   "ordinal": 3
+  },
+  "20e498fd8ab7": {
+   "file": "./INTERLOCUTOR-4.md",
+   "role": "interlocutor",
+   "ordinal": 4
+  },
+  "63c8d24d279c": {
+   "file": "./INTERLOCUTOR-4.md",
+   "role": "interlocutor",
+   "ordinal": 5
+  },
+  "d573d1eeba15": {
+   "file": "./INTERLOCUTOR-4.md",
+   "role": "interlocutor",
+   "ordinal": 6
+  },
+  "ac1c23aa4e43": {
+   "file": "./INTERLOCUTOR-4.md",
+   "role": "interlocutor",
+   "ordinal": 7
+  },
+  "22012c9ec432": {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "ordinal": 1
+  },
+  "27a5478d9bd1": {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "ordinal": 2
+  },
+  "17c357f963d2": {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "ordinal": 3
+  },
+  "37bf523596a1": {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "ordinal": 4
+  },
+  "f5767d110779": {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "ordinal": 5
+  },
+  "fd5f3287b85c": {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "ordinal": 6
+  },
+  "18d6de3997f4": {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "ordinal": 7
+  },
+  "0e5203811b01": {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "ordinal": 8
+  },
+  "9e6e6253da72": {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "ordinal": 1
+  },
+  "f83059311816": {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "ordinal": 2
+  },
+  "b71a6b61380d": {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "ordinal": 3
+  },
+  "e1a011236fca": {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "ordinal": 4
+  },
+  "eba66f4e6716": {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "ordinal": 5
+  },
+  "7e6c57907f97": {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "ordinal": 6
+  },
+  "2e85f502d940": {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "ordinal": 7
+  },
+  "b0fdde866df4": {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "ordinal": 8
+  },
+  "fa50cf694d6d": {
+   "file": "./READER-129-RECORD.md",
+   "role": "reader",
+   "ordinal": 1
+  },
+  "eae88b46e759": {
+   "file": "./READER-129-RECORD.md",
+   "role": "reader",
+   "ordinal": 2
+  },
+  "7e6ef2007292": {
+   "file": "./READER-129-RECORD.md",
+   "role": "reader",
+   "ordinal": 3
+  },
+  "cf600295a915": {
+   "file": "./VERIFIER-124.md",
+   "role": "verifier",
+   "ordinal": 1
+  },
+  "730b82c043bf": {
+   "file": "./VERIFIER-124.md",
+   "role": "verifier",
+   "ordinal": 2
+  },
+  "38a92007f821": {
+   "file": "./VERIFIER-127.md",
+   "role": "verifier",
+   "ordinal": 1
+  },
+  "c1dc0fe37a73": {
+   "file": "./VERIFIER-127.md",
+   "role": "verifier",
+   "ordinal": 2
+  },
+  "b5bc49a2b9c8": {
+   "file": "./VERIFIER-127.md",
+   "role": "verifier",
+   "ordinal": 3
+  },
+  "aa773f56fa34": {
+   "file": "./VERIFIER-127.md",
+   "role": "verifier",
+   "ordinal": 4
+  },
+  "9d4d2a0541fb": {
+   "file": "./VERIFIER-127.md",
+   "role": "verifier",
+   "ordinal": 5
+  },
+  "4a4ef04ddc5b": {
+   "file": "./VERIFIER-127.md",
+   "role": "verifier",
+   "ordinal": 6
+  },
+  "83e3be98b0f1": {
+   "file": "./VERIFIER-127.md",
+   "role": "verifier",
+   "ordinal": 7
+  },
+  "add6d9e2658b": {
+   "file": "./VERIFIER-127.md",
+   "role": "verifier",
+   "ordinal": 8
+  },
+  "f93b54a5040a": {
+   "file": "./VERIFIER-127.md",
+   "role": "verifier",
+   "ordinal": 9
+  },
+  "222048932f8e": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 1
+  },
+  "0d1ccd1ef0ec": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 2
+  },
+  "38b222809ab7": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 3
+  },
+  "297053219da3": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 4
+  },
+  "bc2d449d9930": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 5
+  },
+  "8b76c5b16881": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 6
+  },
+  "f3184d7d30dc": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 7
+  },
+  "66509a110c79": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 8
+  },
+  "c84bfe5855eb": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 9
+  },
+  "c9c9dae04425": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 10
+  },
+  "47b2f1fcfcf0": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 11
+  },
+  "2b1ac115f3fc": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 12
+  },
+  "c332fcc5bf68": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 13
+  },
+  "02999c3e2e5f": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 14
+  },
+  "9e4896263d82": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 15
+  },
+  "954bf7a03c79": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 16
+  },
+  "34a9f5366bbe": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 17
+  },
+  "52a6981586ef": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 18
+  },
+  "e58d42bd3b5c": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 19
+  },
+  "f64e4120c8ff": {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "ordinal": 20
+  },
+  "514c40d0d202": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 1
+  },
+  "c7ae91d18a1f": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 2
+  },
+  "b54382924eff": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 3
+  },
+  "41d148e7e98c": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 4
+  },
+  "6524516d3a2b": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 5
+  },
+  "fd8d254bf3bf": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 6
+  },
+  "5194e4be1d6b": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 7
+  },
+  "23f3e744a983": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 8
+  },
+  "c52644db1cc1": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 9
+  },
+  "75991622c237": {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "ordinal": 10
+  }
+ },
+ "manifest": [
+  {
+   "file": "./INTERLOCUTOR-19.md",
+   "role": "interlocutor",
+   "delimiters": 7,
+   "status": "SLICED",
+   "units": 7,
+   "match_kinds": [
+    "exact"
+   ],
+   "first_line": 30,
+   "empty_slices": 0
+  },
+  {
+   "file": "./INTERLOCUTOR-2.md",
+   "role": "interlocutor",
+   "delimiters": 18,
+   "status": "SLICED",
+   "units": 18,
+   "match_kinds": [
+    "exact"
+   ],
+   "first_line": 25,
+   "empty_slices": 0
+  },
+  {
+   "file": "./INTERLOCUTOR-4.md",
+   "role": "interlocutor",
+   "delimiters": 7,
+   "status": "SLICED",
+   "units": 7,
+   "match_kinds": [
+    "exact"
+   ],
+   "first_line": 12,
+   "empty_slices": 0
+  },
+  {
+   "file": "./READER-127-1.md",
+   "role": "reader",
+   "delimiters": 8,
+   "status": "SLICED",
+   "units": 8,
+   "match_kinds": [
+    "exact"
+   ],
+   "first_line": 10,
+   "empty_slices": 0
+  },
+  {
+   "file": "./READER-127-2.md",
+   "role": "reader",
+   "delimiters": 8,
+   "status": "SLICED",
+   "units": 8,
+   "match_kinds": [
+    "exact"
+   ],
+   "first_line": 15,
+   "empty_slices": 0
+  },
+  {
+   "file": "./READER-129-RECORD.md",
+   "role": "reader",
+   "delimiters": 3,
+   "status": "SLICED",
+   "units": 3,
+   "match_kinds": [
+    "exact"
+   ],
+   "first_line": 29,
+   "empty_slices": 0
+  },
+  {
+   "file": "./VERIFIER-124.md",
+   "role": "verifier",
+   "delimiters": 2,
+   "status": "SLICED",
+   "units": 2,
+   "match_kinds": [
+    "exact"
+   ],
+   "first_line": 10,
+   "empty_slices": 0
+  },
+  {
+   "file": "./VERIFIER-127.md",
+   "role": "verifier",
+   "delimiters": 9,
+   "status": "SLICED",
+   "units": 9,
+   "match_kinds": [
+    "exact"
+   ],
+   "first_line": 14,
+   "empty_slices": 0
+  },
+  {
+   "file": "./VERIFIER-135.md",
+   "role": "verifier",
+   "delimiters": 20,
+   "status": "SLICED",
+   "units": 20,
+   "match_kinds": [
+    "exact"
+   ],
+   "first_line": 21,
+   "empty_slices": 0
+  },
+  {
+   "file": "../2026-08-26-cited-not-retrievable/VERIFIER-136.md",
+   "role": "verifier",
+   "delimiters": 10,
+   "status": "SLICED",
+   "units": 10,
+   "match_kinds": [
+    "exact"
+   ],
+   "first_line": 43,
+   "empty_slices": 0
+  }
+ ]
+}
