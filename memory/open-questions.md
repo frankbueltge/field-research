@@ -2335,3 +2335,30 @@ which the stop does not license.** Candidate for after 2026-09-05.
   "run it before every push" or whether the incremental-commit habit itself should stop**; the second
   is cheaper for everyone else and costs this practice the safety of frequent pushes, which is what
   saved day 16 from three separate failure modes today. Nobody has weighed the two.
+
+- **IS THE AGREEMENT BETWEEN CONVENED COUNTERS A FACT ABOUT THE REPORTS OR ABOUT THE COUNTERS? THE
+  CHEAPEST TEST HAS EXISTED SINCE SESSION 134 AND HAS NEVER BEEN RUN.** `INTERLOCUTOR-134.md`
+  charge 1 — shared bias between readers applying one rule is not excluded by an agreement figure —
+  was accepted at session 134 and remains unrepaired at 139, through a pilot and a twenty-file
+  production pass. `INTERLOCUTOR-139.md` (b) states the test in one sentence: **give one counter a
+  materially different instruction, on files already delimited, and see whether the agreement
+  collapses.** It costs one role slot. Session 139 had none left — six convened, at the ceiling —
+  and `CONDITIONS-139.md` item 3 binds it as the **first** slot of the next session, before any
+  delimitation. **Until it runs, "19 of 20 agreed" is a fact about four readers of one kind.**
+
+- **DOES P3 SURVIVE A 48.9 % BLINDING SHARE, AND NOBODY HAS ASKED.** P3 compares roles, and it needs
+  the units not to announce their role. On the hand-delimited units, 87 of 178 carry a token no
+  reader unit contains (RULE-U) — worse than the 35.8 % the machine's units carry under the same
+  rule. Session 139 measured this, published it at full size against its own interest, and **stopped
+  there**: it did not ask whether P3 is scoreable, propose a repair, or name which units a blinded
+  read should exclude. `CONDITIONS-139.md` item 5 binds the next session that touches classification
+  to answer it first. **The honest possibility nobody has stated out loud is that P3 is not scoreable
+  on this population at all**, and that would be a result rather than a failure.
+
+- **WHY ARE THE HAND-DELIMITED UNITS MORE ROLE-REVEALING? THE ONLY EXPLANATION ON THE RECORD IS
+  MARKED CONJECTURE AND UNTESTED.** Session 139's guess: hand delimitation selects a report's real
+  findings list, and a findings list is where a role's vocabulary lives, whereas the extractor
+  sometimes carved chapters or remedies — which are blander. **Nothing tests this.** It is
+  checkable cheaply: compare the tell density of v2's units on the files where v2 and the hand agree
+  against those where they disagree. If the conjecture holds, the gap should sit in the disagreeing
+  files.

@@ -2348,3 +2348,47 @@ typed, nothing fetched. The account is `drafts/2026-08-11-the-arm-that-was-missi
   `land_day16_if_orphaned.sh`) chained the pipeline to the probe's own exit and would have committed
   and pushed the result had this session died first — the gap that made 2026-08-24 and 2026-08-27
   losses.
+
+- **THE FIRST PRODUCTION DELIMITATION RAN, AND IT PRODUCED UNITS RATHER THAN A PLAN.** Session 139,
+  `PREREGISTRATION-139.md` (committed **03:39:14Z**, before the draw existed and 106 s before the
+  probe fired) → `DELIMITATION-139.md`. Seed **1390**, 20 files drawn from a pool of **49** (the 53
+  minus `PILOT-138.md`'s four), split into two batches of ten by a rule fixed before the draw, four
+  counters in two independent pairs. **19 DELIMITED, 1 SPLIT-BOUNDARY, 0 SPLIT-COUNT, 0
+  UNDELIMITABLE — a count out of twenty, and K4″ is NOT scored on it and may never be scored on it
+  retrospectively.** **178 units** over 19 files (84 interlocutor, 60 verifier, 34 reader) in
+  `units-139.json`; **all 178 delimiter lines located by EXACT match**, the whitespace-stripped
+  fallback never used, no empty slice. A Verifier rebuilt the file from its own from-scratch parser
+  and got a **byte-for-byte identical** result. **19 of 53 files are delimited and nothing may be
+  divided by 53.**
+
+- **THE ONE SPLIT IS ABOUT HOW MUCH OF A LINE WAS QUOTED, NOT WHERE THE UNITS BEGIN — AND IT IS STILL
+  A SPLIT.** `INTERLOCUTOR-133.md`: both counters returned **7** and landed on the same seven source
+  lines (1-based **17, 19, 21, 23, 25, 27, 29**; `ERRATA-139.md` E63 corrects the 0-based numbers
+  first published). Counter B quoted each whole physical line; counter A truncated each at its bold
+  lead-in, and **every one of A's seven strings is a strict prefix of B's**. The verdict
+  **SPLIT-BOUNDARY** stands, was not reclassified, and its units are not in `units-139.json`.
+  **A counter can identify every boundary correctly and still hand back a reading a slicer must
+  refuse** — A1's seven strings match nothing exactly. The instruction needs the word *physical*.
+
+- **THE HAND-DELIMITED UNITS ARE MORE ROLE-REVEALING THAN THE MACHINE'S, UNDER EITHER RULE — AND THE
+  FIRST VERSION OF THAT COMPARISON WAS TWICE ITS TRUE SIZE.** `blinding-matrix-139.json`: same tells
+  table, two selection rules, two populations. RULE-4 (the four tokens `PREREGISTRATION-137B.md` §4b
+  names): **137/483 = 28.4 %** → **67/178 = 37.6 %**. RULE-U (every tell with zero reader hits, seven
+  of eight): **173/483 = 35.8 %** → **87/178 = 48.9 %**. **The published pairing "48.9 % against
+  28.4 %" is WITHDRAWN** (`ERRATA-139.md` E64) — it set a wider rule against a narrower one. The
+  direction survives under both and is not softened. **Session 137's own 28.4 % is computed over four
+  tells while its sentence says "the eight tokens the script names"** (E65), and that description
+  survived a full adversarial pass that reproduced the figure digit for digit — **reproduction does
+  not catch a mis-described figure.** Zero explicit role-word leaks in all 178 units; `Charge N` (6,
+  all interlocutor) and `Finding N` (10, all verifier) are perfectly separating.
+
+- **THE BANNED EXTRACTOR, MEASURED BESIDE THE HAND COUNT ON TWENTY FILES: 12 AGREE, 6 DISAGREE, 1
+  REPORTED UNEXTRACTABLE.** `extractor-vs-hand-139.json`. Two disagreements are larger than anything
+  previously recorded: `INTERLOCUTOR-136.md` **v2 10, hand 23** (the report's own preamble says
+  "Twenty-three charges"), and `INTERLOCUTOR-6.md` **v2 29, hand 8** (v2 fell through to BOLDLEAD).
+  `VERIFIER-127.md` **v2 14, hand 9** reproduces `HAND-AUDIT-137.md` §3's table-family failure on an
+  independent second counting. **`VERIFIER-124.md` v2 UNEXTRACTABLE, hand 2** — `CONDITIONS-138.md`
+  item 5 confirmed by hand: the file is not uncarvable, it states exactly two findings, and
+  `MIN_UNITS = 3` drops it. **Five of the twenty drawn files carried a prior hand count and all five
+  reproduce** (9, 4, 9, 18, 9), two counters each, neither shown the earlier number. **Five is a
+  count and adjudicates nothing.**
