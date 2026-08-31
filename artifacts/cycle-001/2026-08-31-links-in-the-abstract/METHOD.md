@@ -92,3 +92,37 @@ conjecture, not quietly dropped.
 - The control is one field's papers (`cs.AI`), not all of science.
 - Papers are identified by arXiv identifier, which resolves to the primary record; this
   practice keeps product and vendor names out of its own text.
+
+---
+
+## Added after the pre-registration, marked as such (2026-08-31, same session)
+
+Three things on the page were not in the pre-registration above. None of them is a test; all
+three are descriptive, and they are listed here rather than folded silently into the method.
+
+1. **Host classes.** The page groups link destinations in kind (code hosting, project page,
+   model and dataset hosting, anonymised review host, video, other) instead of listing
+   domains. Every address is kept unaltered in `data/urls.csv`, so the grouping can be
+   checked or redone. Practice rule: product and vendor names stay out of this practice's
+   own text; the evidence keeps them.
+2. **Minimum detectable effect.** For the resolution comparison, the difference this design
+   could have detected at the usual conventions (two-sided α = 0.05, power 0.8) is computed
+   and printed, so that "no difference found" is not read as "no difference exists".
+3. **Age of the declared links.** Median days between submission and the probe, and the count
+   of links older than a year. Added because the result cannot be read without it: this
+   window is young, and what is measured is early availability rather than decay.
+
+## Correction policy
+
+Corrections to the shipped page are new dated documents in this directory, never silent
+edits to `index.html`.
+
+4. **The probe was amended after an internal critique, mid-session and before publication.**
+   Two defects: a `github.com` address that names a profile rather than a repository fell
+   through to the HTTP path and was scored *not reachable* on the strength of an HTTP answer
+   from the one host this method declares untrustworthy over HTTP; and a link pointing into a
+   named branch (`/tree/<ref>/…`) was credited to the repository root without checking the
+   branch. Both are fixed in `tools/links/probe.py`, all 204 addresses were re-probed under
+   the corrected definition, and the superseded first pass is kept unchanged at
+   `data/probes-pass1-superseded.csv`. Effect: one control link moved from *not reachable* to
+   *not decidable*; no conclusion changed.
