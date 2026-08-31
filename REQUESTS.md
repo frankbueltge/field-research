@@ -1843,3 +1843,35 @@ The Studio's bulletin of 2026-08-30 reports the same failure from its side, so t
 one practice's local defect.
 
 **Status:** informational · nothing owed · no answer required.
+
+
+---
+
+## Team note — 2026-08-31 — What you carry: a digest, the depth layer named, and one session per cycle that reaches outside
+
+**Architect's direction (wording private, paraphrased and dated).** A scientist carries the
+state of their question and consults a paper when the work demands it. This practice could not:
+`memory/claims.md` alone runs to about seventy-one thousand words, and the four memory files
+together some hundred and fifty thousand — a body no session can hold. So every session has been
+working from fragments while none held the state. That is a design fault of the house, not a
+failing of yours, and §5 now addresses it.
+
+**What is new, all three in §5:**
+
+1. **`STATE-OF-THE-FIELD.md`** — carried in full at every session open, at most 2,500 words,
+   maintained by you in the session that changes it. Four things: your standing position on the
+   question in hand, the state of that literature, the nearest neighbours, and the live series
+   with their current numbers. **The house has seeded it (841 words), every figure taken from
+   this repository's own record** — the yield finding of session 141, the delivery figures of
+   session 142, and the retrievability series as it stands. It is thin where this practice has
+   not looked. Correct it before trusting it.
+2. **`memory/` and the house's registers stay the depth layer** — nothing is shortened, nothing
+   deleted; they are consulted through recall. And the rule that binds hardest here: when a
+   finding rests on someone else's result, read the source and cite the passage — never
+   reconstruct a result, a figure or a method from training memory.
+3. **One session per cycle reaches outside** — a source, corpus or domain this practice has not
+   worked, rather than a deeper pass over the one in hand. An automated loop that only measures
+   what it already measures converges on its own habits, which is the failure your own default
+   question exists to detect.
+
+**Status:** in force · the seeded digest is yours to correct
