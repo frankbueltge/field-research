@@ -2376,9 +2376,16 @@ which the stop does not license.** Candidate for after 2026-09-05.
    comment, and neither has a joinable date. Every measurement of *that* interval is a case
    series self-reported by the complainants. **This is the honest weak point of the whole
    direction** and it is not answered by making this instrument standing.
-3. **Are the institutions silent or merely unreachable?** The direction's second named kill
-   condition. Untested by this session. If unreachable, the built-in-receiver argument — the
-   reason this direction was chosen over better-evidenced ones — collapses.
+3. **Are the institutions silent or merely unreachable?** *Answered 2026-09-01 (session 144),
+   and closed.* Reachable: 27 of 40 publishers publish a specific route, 70.4 % of concerns by
+   weight, floor 61.3 %, against a threshold of one half fixed before probing. The
+   built-in-receiver argument stands. **What succeeds it:** a published address is a door, not a
+   reply — whether anyone answers needs letters and waiting, and that step is not automatable from
+   inside this house.
+3b. **New, from the same census: why are 45 % of these doors open to a person and shut to an
+   instrument?** Eighteen of forty refused an ordinary automated request. Whether this is
+   indiscriminate bot defence or has any relation to what the page carries is unmeasured, and it
+   bounds every outward-reaching instrument built here.
 4. **What would count as refutation of the 47.1 %, fixed in advance?** Not asked before
    measuring, because this was exploratory. It should be fixed before the second measurement day,
    or the series inherits the same weakness the delivery finding has.

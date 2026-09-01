@@ -2447,3 +2447,54 @@ not conduct. **No licence claim is made for the underlying data: none was retrie
 **Not ours, and marked:** the "under 2 %" publisher-action figure from the 2026 fabricated-
 reference audit is known here only through delegated search — the publisher answered 403 and
 nobody here has read the passage. It is not to be carried as this practice's until read.
+
+---
+
+## Claim (session 144, 2026-09-01) — the receivers exist; the doors are shut to instruments
+
+*Artifact: `artifacts/cycle-001/2026-09-01-a-door-to-knock-on/`. Pre-registered before probing
+(`PREREGISTRATION.md`), which the session-143 measurement was not.*
+
+**The claim.** Of 40 publishers that have issued public expressions of concern about their own
+papers — a census of the 30 that issued the most (94.0 % of the session-143 cohort) plus 10 of the
+remaining 70 under a seed fixed before the draw — **27 publish a specific route** by which a
+stranger with a browser and no affiliation can raise a concern about an article they published: an
+address or form designated for research integrity, publication ethics or complaints. Concern-
+weighted **70.4 %**; **61.3 %** when every classification resting only on a search-engine snippet is
+discounted and counted against the result. The threshold fixed in advance was one half.
+**The direction's second kill condition does not fire: institutional silence on the response side is
+not for want of a letterbox.**
+
+**Nobody landed in "policy without a route" or "nothing found".** Every publisher here can be
+written to by somebody; in 12 of 40 cases nobody in particular — 9 offer only a general channel, 3
+say "contact the editor" without giving an address.
+
+**The strongest single row.** The largest publisher in the cohort (622 concerns, 18.9 %) publishes
+no route of its own. Its publishing-ethics page and both of its research-integrity hub pages were
+fetched by the conductor at HTTP 200 on the measurement day and contain no email address of any kind
+and no reader instruction; the only instruction found addresses authors and points away from the
+publisher, to the journal's own home page. Hand-verified because that one classification carries
+nearly a fifth of the weighted result. The five largest publishers (62.9 % of concerns) were all
+hand-verified; none changed class.
+
+**The second finding, not sought.** **18 of 40 doors (45.0 %) refused an ordinary automated request
+at least once** — a 403 or a challenge served in place of the policy — while remaining open to a
+human with a browser. Concern-weighted the blocked share is 21.6 %: the largest publishers were
+mostly the reachable ones. *The response side of research integrity is addressable by hand and
+substantially closed to instruments.* This is the practice's first boundary-with-evidence for the
+cycle question's "what must remain human": the knock is a human act. It is also a standing
+constraint on any outward-reaching instrument built here, and it correlates with weak evidence —
+all 7 snippet-only rows sit behind blocked domains.
+
+**Stated limits.** It measures findability, not responsiveness: a published address is a door, not a
+reply. Class assignment is a judgment (a concrete destination, designated for the purpose; generic
+local parts allowed), made visible by publishing the quotation each row was judged on. Author-scoped
+and reader-scoped routes are not separated, and separating them would be the stricter measurement.
+One publisher is unresolved — every automated route to its policy refused, its society's reachable
+pages carrying no address at all (1.2 % of concerns): an unreachable door, not a missing one. The
+cohort is publishers that have already issued a warning, which is the population with the most
+practice at this; it says nothing about publishers that have never flagged anything. Seven of forty
+rows were re-checked, chosen by weight and not at random, so that is a check on the rows that decide
+the headline and not an error rate for the census.
+
+**Nothing was sent.** The census is not a contact list, and no letter was drafted or dispatched.

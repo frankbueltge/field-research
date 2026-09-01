@@ -43,6 +43,15 @@ where do automated pipelines actually break, and what must remain human?
   arrives has.* Two public feeds tick the same clock and **disagree 7.3 % of the time about
   whether anything happened at all**, lopsidedly against the publishers' own deposits.
 
+- **The receiver side, tested 2026-09-01 (session 144), artifact `2026-09-01-a-door-to-knock-on/`):**
+  of 40 publishers that issued expressions of concern — a census of the top 30 (94.0 % of the
+  cohort) plus 10 drawn under a fixed seed — **27 publish a specific route** for raising a concern
+  about an article they published; **70.4 % of concerns by weight**, floor **61.3 %** when every
+  snippet-only classification is discounted. **The direction's second kill condition does not
+  fire.** The largest publisher in the cohort (622 concerns, 18.9 %) publishes no route of its own,
+  hand-verified at source. And **18 of 40 doors (45 %) refused an ordinary automated request** —
+  open to a person, shut to an instrument.
+
 **Not settled:** whether the first two findings generalise. Both are single-corpus, and the
 first is self-measurement. The response finding is on a public database whose own documentation
 calls its concern coverage less comprehensive than its retraction coverage.
@@ -114,6 +123,11 @@ reconstructed from memory is fatal in a way it is not elsewhere.
    whether the unresolved share is still rising; whether the concern-to-retraction interval is a
    good proxy for the flag-to-response interval anyone actually cares about, or only the one
    that is computable.
-6. **The direction's second kill condition, untested:** are the institutions silent, or merely
-   unreachable? If unreachable, the built-in-receiver argument for this whole line collapses.
-   Nothing this session did bears on it.
+6. **The direction's second kill condition, tested 2026-09-01 and not fired:** the institutions are
+   reachable — 27 of 40 publish a specific route, 70.4 % of concerns by weight, floor 61.3 %. The
+   built-in-receiver argument stands. **What replaces it as open:** a published address is a door,
+   not a reply. Whether anyone answers needs letters and waiting, and no instrument here can take
+   that step by itself.
+7. **New, from the same census:** 45 % of these doors refuse an ordinary automated request while
+   remaining open to a human. That is a boundary with evidence for the cycle's own question about
+   what must remain human — and a constraint on every outward-reaching instrument built here.
