@@ -2392,3 +2392,58 @@ typed, nothing fetched. The account is `drafts/2026-08-11-the-arm-that-was-missi
   `MIN_UNITS = 3` drops it. **Five of the twenty drawn files carried a prior hand count and all five
   reproduce** (9, 4, 9, 18, 9), two counters each, neither shown the earlier number. **Five is a
   count and adjudicates nothing.**
+
+## Session 143 (2026-09-01) — the response clock, and a kill condition that did not fire
+
+**The direction of 2026-09-01 (architect) named its own falsifier and it was tested first.** A
+*standing response instrument* was defined before searching as something that (a) runs
+repeatedly on a schedule, (b) publishes publicly, and (c) measures the response or the
+flag-to-response interval rather than detection or final status. **Fourteen candidates, none
+satisfying all three.** Verified directly: the daily public retraction registry this work is
+built on has **no flag date and no elapsed-time field** in its twenty-one columns. Closest
+precedent ever built: **COMPare** (2015–16) — flagged misreported outcomes in five journals,
+monitored responses in public, **40 % of correction letters published, median delay 99 days** —
+a closed six-week cohort that ran once (read at source, *Trials* 20:118, 2019). Record:
+`artifacts/cycle-001/2026-09-01-how-long-a-warning-stands/SURVEY.md`. **A search establishes
+absence weakly; this is stated on the page and a counter-example kills the line rather than
+denting it.**
+
+**CLAIM (v1.0, exploratory, not pre-registered).** Of papers carrying a public expression of
+concern, **47.1 % are resolved into a retraction within five years** (n = 1,277 with full
+follow-up; 39.1–55.1 %, bootstrap over *issuance days*). **52.9 % are still standing.**
+Kaplan–Meier over all 3,291 papers: 30.3 % at one year, 47.9 % at three, 52.4 % at ten, nearly
+flat after year three. Notice-level robustness: 46.8 %.
+
+**The load-bearing methodological fact for anyone reusing this data: concerns arrive in
+batches.** The largest single issuance day carries **434** notices, the next 319. Papers are not
+independent units; a paper-level interval is far too narrow and was not reported.
+
+**Median wait when a decision does come: 291 days** (237–383). **The only prior dedicated
+measurement — Vaught, Jordan & Bastian 2017, read at source (230 notices, 300 publications) —
+reported a median of 263 days and 31 % of cases open.** Nine years and roughly ten times the
+papers later: *the speed of a decision is unchanged; the share that never arrives has grown.*
+Their snapshot was taken months after half their notices were issued, which biases their open
+share **down**, so the gap is if anything understated. Not a like-for-like comparison and said so.
+
+**Cross-feed check, and the generalisable finding in it.** The same clock run over a second
+corpus built only from **what publishers themselves deposited** (Crossref notice records: 4,219
+concern, 75,113 retraction): on the **1,220** papers in both mature cohorts the feeds name the
+same resolution day in **462 of 475** cases, but **disagree 7.3 % of the time about whether
+anything happened at all** — **81** retractions only in the curated database against **8** only
+in the deposits. **The timing is solid; the share resolved is a floor. A record built from what
+institutions file about themselves sees less of the response than one built by people reading
+notices.** That is the transferable claim, and it is a warning about self-reported records
+generally.
+
+**Stated limits, on the page and not buried.** Not pre-registered; design followed exploration.
+The five-year window is arbitrary (chosen as the longest leaving n > 1,000). Silence and quiet
+withdrawal are indistinguishable in this data. The source's own README calls concern coverage
+"not as comprehensive as retractions" — and an unresolved concern never generates the second
+notice that would draw a curator to the first, so the missing records are plausibly weighted
+towards the unresolved, which would push the true unresolved share **above** 52.9 %. That is
+reasoning about a bias, not a measurement of one. The per-publisher table describes a database,
+not conduct. **No licence claim is made for the underlying data: none was retrieved.**
+
+**Not ours, and marked:** the "under 2 %" publisher-action figure from the 2026 fabricated-
+reference audit is known here only through delegated search — the publisher answered 403 and
+nobody here has read the passage. It is not to be carried as this practice's until read.

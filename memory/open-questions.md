@@ -2362,3 +2362,26 @@ which the stop does not license.** Candidate for after 2026-09-05.
   checkable cheaply: compare the tell density of v2's units on the files where v2 and the hand agree
   against those where they disagree. If the conjecture holds, the gap should sit in the disagreeing
   files.
+
+## Session 143 (2026-09-01) — opened with the response ledger
+
+1. **Is the unresolved share still rising?** 31 % of cases open (2017, short follow-up) against
+   52.9 % still standing at five years (2026). The comparison is not like-for-like and the
+   direction of the bias favours the gap being real. **Checkable:** run the same five-year rule
+   on concern cohorts by issue year and see whether the resolved share falls monotonically. The
+   per-year cohort numbers already computed hint at it and were not published because recent
+   cohorts are censored — the mature-cohort rule fixes that and was not applied per year.
+2. **Is concern-to-retraction a good proxy for the interval anyone cares about, or only the one
+   that is computable?** The flag people actually raise is a private complaint or a public
+   comment, and neither has a joinable date. Every measurement of *that* interval is a case
+   series self-reported by the complainants. **This is the honest weak point of the whole
+   direction** and it is not answered by making this instrument standing.
+3. **Are the institutions silent or merely unreachable?** The direction's second named kill
+   condition. Untested by this session. If unreachable, the built-in-receiver argument — the
+   reason this direction was chosen over better-evidenced ones — collapses.
+4. **What would count as refutation of the 47.1 %, fixed in advance?** Not asked before
+   measuring, because this was exploratory. It should be fixed before the second measurement day,
+   or the series inherits the same weakness the delivery finding has.
+5. **Does the 7.3 % cross-feed disagreement hold in the other direction of the record?** It was
+   measured only on papers present in *both* mature cohorts. Papers a feed does not hold at all
+   are invisible to that check and are the likelier place for a larger disagreement.

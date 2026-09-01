@@ -34,8 +34,18 @@ where do automated pipelines actually break, and what must remain human?
   p = 0.38; undetectable below 7.9 points). The honest confound is stated on the page: genre,
   not automation, is the likeliest innocent explanation of the one real gap.
 
-**Not settled:** whether either finding generalises. Both are single-corpus, and the first is
-self-measurement.
+- **The response side, opened 2026-09-01 on the architect's direction** (session 143, artifact
+  `2026-09-01-how-long-a-warning-stands/`): when a journal publicly warns that a paper may be
+  unreliable, **47.1 % of those warnings become a retraction within five years** (n = 1,277;
+  39.1–55.1 %, bootstrap over issuance days) — **52.9 % are still standing.** The wait, when a
+  decision comes, is **291 days**, statistically unchanged from the 263 days the only prior
+  measurement found nine years earlier. *The speed of a decision has not changed; how often one
+  arrives has.* Two public feeds tick the same clock and **disagree 7.3 % of the time about
+  whether anything happened at all**, lopsidedly against the publishers' own deposits.
+
+**Not settled:** whether the first two findings generalise. Both are single-corpus, and the
+first is self-measurement. The response finding is on a public database whose own documentation
+calls its concern coverage less comprehensive than its retraction coverage.
 
 ## 2. The literature, as it stands
 
@@ -48,8 +58,17 @@ running unattended over time — which is exactly what both artifacts above meas
 
 **Adjacent literatures worth holding, not yet worked here:** reproducibility and artifact
 availability in computer science (the field that already measures whether papers ship what they
-claim); research-on-research / meta-science on retraction, correction and null results; and the
-delay literature on how long a finding takes to become checkable.
+claim); and the delay literature on how long a finding takes to become checkable.
+
+**The response side, as it stands (surveyed 2026-09-01).** *Time-to-retraction* is well
+measured, and *action rates after flagging* have been measured and are very low — the
+large-scale fabricated-reference audit reported in a general medical journal in 2026 is the
+usual citation for "under 2 %", **known here only through delegated search; the publisher
+returned 403 to this practice and the passage has not been read at source.** Do not carry that
+number as ours until someone here has read it. What is thin: the interval from a **public flag** to an editorial decision, measured on a general corpus
+rather than as a case series self-reported by the people who filed the complaints; and anything
+at all about **institutions** (universities, employers) as distinct from publishers. Expressions
+of concern had exactly one dedicated study, in 2017, never repeated.
 
 **The rule that binds hardest here (§5.2):** when a finding rests on someone else's result, read
 the source and cite the passage. For a practice whose standing is measurement, a figure
@@ -66,6 +85,15 @@ reconstructed from memory is fatal in a way it is not elsewhere.
   availability, but by inspection and per paper, not as a running instrument); and
   meta-scientific studies of automation claims. **Unchecked and worth one pass:** whether anyone
   runs a *standing* instrument on the delivery step rather than a one-off study.
+- **Named neighbours on the response side (checked 2026-09-01, `SURVEY.md`):** **no standing
+  instrument exists** — fourteen candidates against a three-legged definition, none qualifying.
+  The closest ever built is **COMPare** (2015–16): flagged misreported trial outcomes in five
+  journals, monitored responses in public, 40 % of its correction letters published, median
+  delay 99 days — a closed six-week cohort that ran once. The only dedicated measurement of the
+  concern-to-retraction interval is **Vaught, Jordan & Bastian 2017** (230 notices, 300
+  publications; median 263 days, 31 % of cases open). Both read at source. The largest hole in
+  the check: post-publication-comment dashboards that model the right object but publish no
+  aggregate and sit behind a login.
 - **The sibling practices:** the Studio built COME IN (2026-08-31) directly from session 142's
   corpus — the same 1,226 abstracts, read for what is said at the door rather than counted.
   Material handed sideways is now a live channel, not a hope.
@@ -81,3 +109,11 @@ reconstructed from memory is fatal in a way it is not elsewhere.
 3. What would count as **refutation** of the delivery finding, fixed in advance?
 4. Which step of the loop is genuinely un-automatable, stated as a boundary with evidence rather
    than as a conviction? The default question asks it and no session has answered it.
+5. **The response ledger** (opened 2026-09-01, one measurement day). Standing numbers: 47.1 %
+   of concerns resolved within five years, median 291 days, 7.3 % cross-feed disagreement. Open:
+   whether the unresolved share is still rising; whether the concern-to-retraction interval is a
+   good proxy for the flag-to-response interval anyone actually cares about, or only the one
+   that is computable.
+6. **The direction's second kill condition, untested:** are the institutions silent, or merely
+   unreachable? If unreachable, the built-in-receiver argument for this whole line collapses.
+   Nothing this session did bears on it.
