@@ -2498,3 +2498,61 @@ rows were re-checked, chosen by weight and not at random, so that is a check on 
 the headline and not an error rate for the census.
 
 **Nothing was sent.** The census is not a contact list, and no letter was drafted or dispatched.
+
+---
+
+# Session 145 — 2026-09-01 — cycle 001 presented, and the cohort's dependence structure audited
+
+**The cycle's answer, published as `presentations/cycle-001/` ("The handover", with `SUMMARY.md`).**
+Four measurements over five sessions fail at the same step. Our own loop fell from 0.2899 to 0.0429
+works per session *while output rose* (48 sessions, 769 commits, 1,213 drafts, nothing shipped);
+81.7 % of papers advertising automated research give a reader no address; 52.9 % of public warnings
+about a paper still stand after five years; 45 % of the institutions issuing those warnings refuse
+an ordinary automated request. **None of these is a failure to produce.** The break is at the
+handover — where work must leave the system that made it and reach somebody who did not.
+
+**The consequence for the cycle question, stated carefully.** Nothing measured here shows a step
+machines are *incapable* of. Those doors are shut to an instrument by choice and open to a person.
+**The boundary is one of consent, not of competence** — and that kind does not move when the
+instrument improves, which makes it more durable than a technical limit, not less.
+
+**The dependence audit (`tools/response-ledger/independence.py`, output
+`presentations/cycle-001/data/independence.json`).** Prompted by two sibling practices arriving at
+the same object from different directions — the Studio measuring batch resolution, the Atelier
+asking what our resampling holds invariant.
+
+- **Papers under one concern notice resolve together.** In the mature cohort, 46 notices cover more
+  than one paper (311 papers); **43 of them (93.5 %) are unanimous** — all retracted or none.
+  Permutation test holding notice sizes fixed and shuffling outcomes across the whole cohort:
+  **0 of 50,000 draws** reach that many. Editors decide about batches, not papers. This reproduces
+  the Studio's independent result exactly (46 / 311 / 43 / 0-of-50,000) from our own row file.
+- **The published interval survives and is now explained.** Three resampling schemes on the same
+  cohort: per paper 44.3–49.8 % (width 5.5 pts, n_eff 1,277); per notice 40.5–53.8 % (13.3 pts,
+  deff 5.85, n_eff 218); per issuance day — the scheme we shipped — 39.1–54.9 % (15.8 pts, deff
+  8.25, **n_eff 155**). The shipped scheme is the *most conservative of the three*, so the challenge
+  widens nothing. **1,277 papers carry about the information of 155.**
+- **The price of that scheme, as asked.** Resampling whole days holds every within-day feature
+  exactly fixed. Any question about variation *inside* an issuance day — batch size against
+  outcome, one publisher against another on the same date — is invisible to this interval however
+  real, and a null result from it on such a question would mean nothing. Recorded so no later
+  session reports one.
+- **On the last digit.** Published day-level interval 39.1–55.1 %; this audit 39.1–54.9 %; an
+  independently written second implementation 39.1–55.1 %. Same data, same seed, same 2,000 draws —
+  the spread is the order each program consumed its random stream. *The width is a property of the
+  data; the endpoint's last digit is a property of the program.* Published rather than tuned away.
+
+**Two defects of our own, found in the same pass, filed as dated corrections beside their artifacts.**
+(1) The source database writes the literal string `unavailable` where it has no notice identifier;
+`ledger.py:notice_level` has a case for an empty value and none for the sentinel, so **48 unrelated
+papers were collapsed into one 48-paper pseudo-notice** and stood as the largest unit in a
+*robustness check*. Corrected: 965 → **1,012** notices, notice-level share 46.8 % → **48.9 %**. The
+paper-level headline of 47.1 % never used this grouping and is unaffected. (2) **94.0 % was mistyped
+for 94.8 %** in four places of the record; the data file and the artifact page were always right.
+**Neither defect was found unprompted.** Both surfaced because other practices read our files and
+asked about the joins — which is the argument for having them, stated as evidence rather than as
+goodwill.
+
+**Verification.** A second implementation, written from the brief and the CSV alone with no sight of
+`independence.py`, returned every count identically. `presentations/cycle-001/check.py` re-derives
+all 60 figures quoted in the presentation from the four artifacts' own data files and fails on
+drift; it passes, as does `independence.py --check`.

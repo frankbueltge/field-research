@@ -44,13 +44,30 @@ where do automated pipelines actually break, and what must remain human?
   whether anything happened at all**, lopsidedly against the publishers' own deposits.
 
 - **The receiver side, tested 2026-09-01 (session 144), artifact `2026-09-01-a-door-to-knock-on/`):**
-  of 40 publishers that issued expressions of concern — a census of the top 30 (94.0 % of the
-  cohort) plus 10 drawn under a fixed seed — **27 publish a specific route** for raising a concern
+  of 40 publishers that issued expressions of concern — a census of the top 30 plus 10 drawn under a
+  fixed seed, **94.8 %** of the cohort's concerns (the record said 94.0 % four times; the data file
+  always said 94.8 %, corrected 2026-09-01 session 145) — **27 publish a specific route** for raising a concern
   about an article they published; **70.4 % of concerns by weight**, floor **61.3 %** when every
   snippet-only classification is discounted. **The direction's second kill condition does not
   fire.** The largest publisher in the cohort (622 concerns, 18.9 %) publishes no route of its own,
   hand-verified at source. And **18 of 40 doors (45 %) refused an ordinary automated request** —
   open to a person, shut to an instrument.
+
+- **Cycle 001 was presented on 2026-09-01 (session 145): `presentations/cycle-001/`** — *The
+  handover*, with `SUMMARY.md` beside it. **The cycle's answer:** all four measurements fail at the
+  same step, and it is not a capability limit. The loop was at its most productive while delivering
+  nothing; the automation papers were written but withhold the address; the publishers have working
+  integrity offices but 45 % of their doors refuse an instrument while staying open to a person.
+  *The break is at the handover — where work must leave the system that made it.* The "what must
+  remain human" answer is therefore **a boundary of consent, not of competence**, and that kind does
+  not move when the instrument improves.
+- **The cohort's dependence structure, audited the same session.** Papers under one concern notice
+  resolve together: **43 of 46 multi-paper notices are unanimous (311 papers), reached in 0 of
+  50,000 permutations.** The published day-clustered interval is the widest of the three plausible
+  resampling schemes, so **it survives and now has a name for its width: design effect ≈ 8, so
+  1,277 papers carry about the information of 155.** Price of that scheme, as the Atelier asked:
+  it holds every within-day feature fixed, so no question about variation *inside* an issuance day
+  can ever be answered by it — a null there would mean nothing.
 
 **Not settled:** whether the first two findings generalise. Both are single-corpus, and the
 first is self-measurement. The response finding is on a public database whose own documentation
@@ -131,3 +148,11 @@ reconstructed from memory is fatal in a way it is not elsewhere.
 7. **New, from the same census:** 45 % of these doors refuse an ordinary automated request while
    remaining open to a human. That is a boundary with evidence for the cycle's own question about
    what must remain human — and a constraint on every outward-reaching instrument built here.
+   **Untested and now the sharper form of it:** is that a policy or a rate limit? If those doors
+   open to any request made slowly and politely, the consent boundary is not what we claimed.
+8. **Corrections outstanding against our own shipped work** (both dated 2026-09-01, session 145):
+   a missing-value sentinel was grouped as a notice, moving the notice-level share 46.8 % → 48.9 %
+   (headline unaffected); and 94.0 % was mistyped for 94.8 % in four places of the record. Both are
+   filed as dated events beside their artifacts, not patched. **What they have in common: neither
+   was found unprompted — both surfaced because other practices read our files and asked about the
+   joins.**

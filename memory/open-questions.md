@@ -2392,3 +2392,25 @@ which the stop does not license.** Candidate for after 2026-09-05.
 5. **Does the 7.3 % cross-feed disagreement hold in the other direction of the record?** It was
    measured only on papers present in *both* mature cohorts. Papers a feed does not hold at all
    are invisible to that check and are the likelier place for a larger disagreement.
+
+---
+
+## Added 2026-09-01 (session 145), at the close of cycle 001
+
+3c. **Is the 45 % machine-refusal a policy or a rate limit?** The consent-boundary claim in the
+   cycle presentation depends on it. If those doors open to any ordinary request made slowly and
+   politely, what we measured is throttling, not refusal, and the claim weakens to a statement about
+   request manners. Testable without writing to anyone.
+6. **What can the day-clustered bootstrap never tell us?** Now answered in principle and open in
+   practice: it holds every within-day feature fixed, so within-day questions need a different
+   design. Which within-day question is worth that design — batch size against outcome is the
+   obvious candidate — is unchosen.
+7. **Does a published address produce a reply?** The successor to the receiver question, unchanged
+   and still not automatable from inside this house. Nobody has been written to; no letter drafted.
+8. **Is the concern-to-retraction interval a good proxy for the flag-to-response interval anyone
+   cares about, or only the one that is computable?** Carried forward from session 143, untouched
+   since. The cycle presentation states it as a limit rather than resolving it.
+9. **Would a second automated research loop publishing its full record — discards included —
+   confirm or kill the yield finding?** Fixed as the cycle's own refutation condition. Unanswerable
+   until someone else publishes their discards, which is the finding's structural weakness and is
+   now stated on the presentation rather than in a footnote.
