@@ -277,7 +277,22 @@ def main():
 
     full, preps, group_cols = battery(records, pairs, breaks, "full")
 
-    # ANALYSIS: multiplicity over the tests that survived the pre-conditions.
+    # ANALYSIS: multiplicity, under BOTH denominators, because they differ and the
+    # pre-registration named one of them.
+    #
+    #   registered (§3 c5): "Benjamini-Hochberg at q = 0.05 across all 66 tests", i.e. every
+    #     test that produced a p-value, whether or not the review then killed it;
+    #   as-run: over the tests that survived the pre-conditions and could become a claim.
+    #
+    # The first run of this file used the second silently. A convened adversary found the
+    # discrepancy (2026-09-03); both are now computed and both are published. The claim set is
+    # the same either way, because the tests the registered denominator adds are themselves
+    # killed at review and never become claims.
+    all_keys = [k for k in full if full[k]["p"] is not None]
+    all_p = [full[k]["p"] for k in all_keys]
+    bh_reg = {all_keys[i] for i in benjamini_hochberg(all_p, BH_Q)}
+    bonf_reg = {k for k, p in zip(all_keys, all_p) if p < ALPHA / len(pairs)}
+
     keys = [k for k in full if not full[k]["failures"] and full[k]["p"] is not None]
     pvals = [full[k]["p"] for k in keys]
     bh = benjamini_hochberg(pvals, BH_Q)
@@ -296,9 +311,10 @@ def main():
         res = full[k]
         sig = res["p"] is not None and res["p"] < ALPHA and not res["failures"]
         a, b = half_a.get(k), half_b.get(k)
-        rep = None
+        rep, same_sign = None, None
         if sig and a and b and a["p"] is not None and b["p"] is not None:
-            same_sign = (a["effect"] or 0) * (res["effect"] or 0) > 0 and (b["effect"] or 0) * (res["effect"] or 0) > 0
+            same_sign = bool((a["effect"] or 0) * (res["effect"] or 0) > 0
+                             and (b["effect"] or 0) * (res["effect"] or 0) > 0)
             rep = bool(a["p"] < ALPHA and b["p"] < ALPHA and same_sign)
         claims.append({
             "key": k, "grouping": g, "outcome": o,
@@ -313,6 +329,9 @@ def main():
             "half_even_effect": a["effect"] if a else None,
             "half_odd_effect": b["effect"] if b else None,
             "replicates_split_half": rep,
+            "same_sign_both_halves": same_sign,
+            "bh_survivor_registered_denominator": k in bh_reg,
+            "bonferroni_survivor_registered_denominator": k in bonf_reg,
             "sentence": claim_sentence(g, o, res) if sig else None,
         })
 
@@ -332,7 +351,15 @@ def main():
         "M2_bonferroni_survivors": len([c for c in claims if c["bonferroni_survivor"]]),
         "M4_review_kills": len(killed),
         "M4_killed_keys": [c["key"] for c in killed],
+        "M2_bh_survivors_registered_denominator": len([c for c in claims
+                                                       if c["bh_survivor_registered_denominator"]]),
+        "M2_bh_registered_that_are_killed": len([c for c in claims
+                                                 if c["bh_survivor_registered_denominator"] and c["failures"]]),
+        "M2_bonferroni_survivors_registered_denominator": len(
+            [c for c in claims if c["bonferroni_survivor_registered_denominator"]]),
+        "M2_denominators": {"registered_all_tests": len(all_keys), "as_run_claimable": len(keys)},
         "M6_replicating": len([c for c in m1 if c["replicates_split_half"]]),
+        "M6_same_sign_both_halves": len([c for c in m1 if c["same_sign_both_halves"]]),
         "M6_of": len(m1),
         "M6_halves": {"even": len(even), "odd": len(odd)},
         "M3_null_world": nulls,

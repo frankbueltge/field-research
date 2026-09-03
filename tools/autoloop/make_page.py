@@ -49,7 +49,7 @@ def pf(p):
 
 def load():
     d = {}
-    for name in ("results", "review", "judgment"):
+    for name in ("results", "review", "judgment", "stratify"):
         d[name] = json.load(open(os.path.join(DATA, f"{name}.json")))
     return d
 
@@ -282,7 +282,7 @@ def hist_svg(res):
 
 def build():
     d = load()
-    res, rev, judg = d["results"], d["review"], d["judgment"]
+    res, rev, judg, strat = d["results"], d["review"], d["judgment"], d["stratify"]
     by_key = {c["key"]: c for c in res["claims"]}
     jcode = {c["key"]: c for c in judg["codes"]}
     nullw = res["M3_null_world"]
@@ -308,7 +308,10 @@ def build():
             "sig": c["significant"], "bh": c["bh_survivor"], "bonf": c["bonferroni_survivor"],
             "rep": c["replicates_split_half"], "ha": c["half_even_p"], "hb": c["half_odd_p"],
             "fails": c["failures"], "sentence": c["sentence"],
-            "judg": ({"code": jcode[c["key"]]["code"], "why": jcode[c["key"]]["why"]}
+            "judg": ({"code": jcode[c["key"]]["code"],
+                      "why": jcode[c["key"]]["why"] +
+                      (" — " + jcode[c["key"]]["amendment_2026_09_03"]
+                       if "amendment_2026_09_03" in jcode[c["key"]] else "")}
                      if c["key"] in jcode else None),
         }
 
@@ -332,7 +335,18 @@ def build():
     jrows = "".join(
         f'<tr><td>{E(GROUP_LABEL[by_key[c["key"]]["grouping"]])} × '
         f'{E(OUT_LABEL[by_key[c["key"]]["outcome"]])}</td><td>{E(c["code"])}</td>'
-        f'<td class="small">{E(c["why"])}</td></tr>' for c in judg["codes"])
+        f'<td class="small">{E(c["why"])}'
+        + (f'<br><b>Amended after an adversary, 2026-09-03:</b> '
+           f'{E(c["amendment_2026_09_03"])}' if "amendment_2026_09_03" in c else "")
+        + '</td></tr>' for c in judg["codes"])
+
+    srows = ""
+    for cat, s in sorted(strat["by_primary_category"].items()):
+        eff = "—" if s["effect"] is None else f'{s["effect"]:+.3f}'
+        pv = "— (no comparison group)" if s["p"] is None else f'{s["p"]:.3f}'
+        srows += (f'<tr><td>{E(cat)}</td><td class="num">{s["records"]}</td>'
+                  f'<td class="num">{s["n1"]} / {s["n0"]}</td>'
+                  f'<td class="num">{eff}</td><td class="num">{pv}</td></tr>')
 
     preds = [
         ("P1", "the loop manufactures findings where there is nothing — ≥ 1 per null run",
@@ -344,7 +358,10 @@ def build():
                     f'The tests are calibrated; multiplicity alone does the damage'),
         ("P3", "multiplicity correction is not the binding constraint — more than half survive BH",
          "held", f'{res["M2_bh_survivors"]} of {res["M1_raw_findings"]} raw findings survive '
-                 f'Benjamini–Hochberg, {res["M2_bonferroni_survivors"]} survive Bonferroni'),
+                 f'Benjamini–Hochberg, {res["M2_bonferroni_survivors"]} survive Bonferroni; under '
+                 f'the denominator as literally registered, '
+                 f'{res["M2_bh_survivors_registered_denominator"]} and '
+                 f'{res["M2_bonferroni_survivors_registered_denominator"]}, same claim set'),
         ("P4", "at least half the survivors are definitional or mechanical",
          "REFUTED", f'{judg["tally"]["mechanical"]} of {res["M2_bh_survivors"]} are mechanical, '
                     f'{judg["tally"]["definitional"]} definitional, {judg["tally"]["substantive"]} '
@@ -461,10 +478,19 @@ reason.</p>
 <blockquote>Throughput and error control are the same dial. Everything automation adds to a
 research loop's speed, it takes out of the loop's credence, unless something else in the loop
 is paying it back.</blockquote>
+<p><b>Do not subtract.</b> 14 minus 3.2 is not 11 real findings. The null-world mean is the
+average yield of this loop when there is nothing at all to find; it says how loud the machine is
+in silence, not which of the 14 are real. That question is answered — partly — by what follows.</p>
 <p>Here the something else is Benjamini–Hochberg, and it works:
 {res["M2_bh_survivors"]} of {res["M1_raw_findings"]} findings survive it and
-{res["M2_bonferroni_survivors"]} survive Bonferroni. What multiplicity correction cannot repair
-is next.</p>
+{res["M2_bonferroni_survivors"]} survive Bonferroni. <span class="mut">Both counts under the
+denominator the code actually used — the {res["M2_denominators"]["as_run_claimable"]} tests that
+could become a claim. Our pre-registration had said "across all 66"; under that literal rule the
+counts are {res["M2_bh_survivors_registered_denominator"]} and
+{res["M2_bonferroni_survivors_registered_denominator"]}, and the claim set is the same, because
+the {res["M2_bh_registered_that_are_killed"]} tests it promotes were already killed at review. An
+adversary found the discrepancy; it is deviation 7 in <code>METHOD.md</code>.</span> What
+multiplicity correction cannot repair is next.</p>
 
 <h2>What the loop could not see</h2>
 
@@ -495,11 +521,33 @@ rubric needed a fourth class it did not have: the redundancy above is neither de
 mechanical nor substantive. It is an artefact of the question generator, invented by the
 machinery and unanticipated by the person who wrote the rubric.</p>
 
+<h3>It cannot see how its own corpus was built</h3>
+<p>The largest survivor that is not a plumbing fact — cross-listed papers have fewer authors,
+rank-biserial {strat["pooled"]["effect"]:+.3f} — was pressed by an adversary as a composition
+effect of a corpus assembled from eight category queries. We recomputed it ourselves, stratified
+on primary category:</p>
+<div class="tblwrap"><table>
+<tr><th>Primary category</th><th>Records</th><th>cross-listed / not</th><th>Rank-biserial</th>
+<th>p</th></tr>{srows}</table></div>
+<p>Only <b>{strat["strata_significant_at_05"]} of {strat["strata_testable"]}</b> testable strata
+reach p &lt; 0.05 on its own, and the pooled effect is larger than every stratum but that one.
+Three categories in this corpus are <b>100 % cross-listed</b> and sit wholly on one side of the
+grouping. A share of the finding is the shape of our sampling frame — and the loop had no way to
+know it had a sampling frame. <span class="mut">The stratification is post-hoc, outside the
+pipeline, and lives in <code>tools/autoloop/stratify.py</code>. It is the kind of question a
+person asks after the machine has finished.</span></p>
+
 <h3>Half of what it found does not survive the same corpus split in two</h3>
 <p>Splitting the records by the parity of the last digit of their identifier and re-running
 everything: <b>{res["M6_replicating"]} of {res["M6_of"]}</b> findings come back significant with
 the same sign in both halves. This is not out-of-sample replication — it is the same corpus, the
 same day, cut in two.</p>
+<p><b>But read it precisely</b>, because 50 % invites the wrong conclusion:
+<b>{res["M6_same_sign_both_halves"]} of {res["M6_of"]}</b> keep the same <i>sign</i> in both
+halves. Only one finding actually points the other way in one half; the rest fail only because
+halving the corpus costs the power to clear p &lt; 0.05 twice. Fragile at the threshold, mostly
+steady in direction. <span class="mut">This distinction was pointed out by the adversary and
+measured afterwards.</span></p>
 
 <h2>Every prediction, and how it came out</h2>
 <div class="tblwrap"><table>
@@ -522,6 +570,30 @@ it could not re-derive — because <code>p = &lt;0.0001</code> is a threshold no
 measurement. The fault was the reviewer's tokeniser. That run is committed unrepaired at
 <code>data/review-run1-unrepaired.json</code>; the repair is dated in the file; the second run
 reports {rev["checks_performed"]} checks and {len(rev["disagreements"])} disagreements.</p>
+
+<h2>What an adversary broke</h2>
+<p>An adversary was convened against this measurement before it shipped, given the
+pre-registration, the code, the data and the eight headline numbers, and told to break them. It
+returned twelve items. Three were defects and all three are repaired in the open:</p>
+<ul>
+<li class="small"><b>The multiplicity denominator was not the one we registered</b> — corrected
+above, both counts published, the claim set unchanged.</li>
+<li class="small"><b>The review pass was less independent than we said.</b> It had been taking the
+loop's own <i>z</i> on trust for every numeric claim, and had never re-applied the pre-conditions
+itself. Both now done from its own re-derivations: {rev["checks_performed"]} checks,
+{len(rev["disagreements"])} disagreements.</li>
+<li class="small"><b>The page this pre-registration promised did not exist yet</b> when the
+adversary looked. It does now, and <code>make_page.py --check</code> rebuilds it from the data.</li>
+</ul>
+<p>Six attacks failed, and a failed attack is evidence too: the tie-corrected Mann-Whitney
+variance, the pooled two-proportion z and the Benjamini–Hochberg step-up are textbook-correct
+(the last verified against a hand-built non-monotonic sequence); the permutation null preserves
+dependence among the groupings while destroying every association; the identifier-parity split
+shows no imbalance on nine features (all p &gt; 0.14); the missing continuity correction moves the
+most marginal p from 0.043619 to 0.043623; and a cluster-robust interval for the null-world rate
+(0.0464–0.0513) sits almost exactly on our Wilson interval — which, the adversary noted, is the
+wrong estimator whose adequacy here is luck. Everything it found, and everything it failed to
+break, is in <code>VERIFICATION.md</code>.</p>
 
 <h2>What this licenses, and what it does not</h2>
 <p><b>It licenses this:</b> a loop of this shape — enumerate, fetch, test, write, review — can be

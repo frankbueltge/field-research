@@ -20,12 +20,14 @@
   {
    "key": "cross_listed|author_count",
    "code": "substantive",
-   "why": "Cross-listed papers have fewer authors (median 3 against 4). Nothing in the construction of either variable forces this. Caveat the loop cannot state: the corpus was assembled from eight category queries and deduplicated, so a cross-listed paper had more chances of being drawn - the composition of the cross-listed group is a property of our sampling frame as well as of arXiv."
+   "why": "Cross-listed papers have fewer authors (median 3 against 4). Nothing in the construction of either variable forces this. Caveat the loop cannot state: the corpus was assembled from eight category queries and deduplicated, so a cross-listed paper had more chances of being drawn - the composition of the cross-listed group is a property of our sampling frame as well as of arXiv.",
+   "amendment_2026_09_03": "A convened adversary pressed exactly that caveat and it holds. Stratified on primary category (data/stratify.json, recomputed here rather than taken from the adversary): the pooled rank-biserial is -0.220, and only 1 of 7 testable strata reaches p < 0.05 on its own (cs.AI, -0.246); the pooled effect is larger than every stratum but that one. Three categories - stat.ML, cs.CR, cs.HC - are 100 % cross-listed in this corpus and so contribute to one side of the grouping only. A share of this finding is the corpus's category mix. The code stays 'substantive' because the rubric asks about the relation, not about the sampling frame; the sampling frame is the fourth thing the rubric could not see."
   },
   {
    "key": "large_team|category_count",
    "code": "substantive",
-   "why": "The same underlying pair as the row above (author count against category count), dichotomised on the other variable. Two findings, one association."
+   "why": "The same underlying pair as the row above (author count against category count), dichotomised on the other variable. Two findings, one association.",
+   "amendment_2026_09_03": "Inherits the stratification caveat of the row above: it is the same association."
   },
   {
    "key": "weekend|category_count",

@@ -58,6 +58,24 @@ string. The features are measurements of that text; the text itself stays out of
    page count can only be parsed out of a comment, so every record with the outcome is in the
    same group. The loop logged it as a break and carried on, in all three batteries.
 
+7. **The multiplicity denominator was wrong, and a convened adversary found it.** The
+   pre-registration says Benjamini-Hochberg "across all 66 tests" and Bonferroni at "α/66"; the
+   code applied both over the 51 tests that had survived the pre-conditions. Both denominators
+   are now computed and both are published: **registered** (65 tests with a p-value) → 12 BH, 9
+   Bonferroni; **as run** (51 claimable) → 10 BH, 7 Bonferroni. The claim set is identical, because
+   the two tests the registered rule promotes are killed at review under c4 and never became
+   claims. Full disposition in `VERIFICATION.md` §2 A1.
+8. **The review pass was strengthened after the same adversary showed it was not as independent
+   as claimed** — it had been taking the loop's `z` on trust for every numeric claim, and had
+   never re-applied the pre-conditions itself. Both are now done in `review.py` from its own
+   re-derivations; checks rose 476 → 586, disagreements 0.
+9. **`tools/autoloop/stratify.py` is post-hoc and outside the loop.** It stratifies one finding on
+   primary category to test the adversary's composition argument. It is not part of the pipeline
+   and never will be: the pipeline does not know that its corpus was assembled.
+10. **`M6_same_sign_both_halves` was added after the adversary observed that "7 of 14 replicate"
+   invites a wrong reading.** 13 of 14 keep the same sign in both halves; one flips. The
+   registered replication rule is unchanged.
+
 ## Kill condition K3 fired, and the disagreement is published
 
 K3: *if the independent review pass disagrees with any number in a claim card, the disagreement

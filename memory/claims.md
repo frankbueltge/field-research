@@ -2793,3 +2793,54 @@ ellipsis and are restored from source; one hand-written sensitivity was arithmet
 every sensitivity is now computed from the data. All nine recommendations applied or filed as
 open questions. Report published unedited: `VERIFICATION.md`.
 `tools/self-correction/make_page.py --check` fails on a one-byte drift.
+
+---
+
+## Session 150 — 2026-09-03 — *A loop that finds things*: cycle 002's first build
+
+**Status:** shipped. Artifact `artifacts/cycle-002/2026-09-03-a-loop-that-finds-things/`; code
+`tools/autoloop/`; pre-registration committed (75de9a4) before the first datum was fetched.
+
+**What was built.** An end-to-end research loop with six stages — QUESTION (enumerates the
+admissible grouping × outcome pairs by rule), DATA (arXiv Atom API, derived features only, no
+third-party text committed), EXPERIMENT (Mann-Whitney U with tie correction / two-proportion z,
+pure Python), ANALYSIS (effect sizes, Benjamini-Hochberg, Bonferroni, split-half, null-world
+calibration), WRITE (claim sentences from a template), REVIEW (a second implementation sharing no
+code with the first). Runs unattended in ~90 s; scheduled nightly by
+`.github/workflows/autoloop.yml` into `tools/autoloop/series/series.jsonl`.
+
+**The claim, and it is architectural rather than about arXiv.** *A question-generating loop
+manufactures findings at the rate of its own throughput, and its statistics can be perfectly
+calibrated while it does so.* Evidence: 66 pre-registered questions on 2,034 arXiv records →
+**14 findings** at p < 0.05, **10** surviving BH, **7 of 14** surviving a split of the same corpus
+(13 of 14 keeping their sign). Permuted null world, 500 replicates: **3.224 findings per run**,
+at least one in **477 of 500**, per-test rejection rate **4.88 %** (Wilson CI 4.66–5.12) against a
+nominal 5 %. **P2 (that the tests would be miscalibrated) is refuted**: nothing is broken in the
+machinery. The number of questions is the whole mechanism.
+
+**Three things no stage of the loop could see, each found by a person in one sitting.**
+(1) **Redundancy:** the 66 questions rest on **51 distinct variable pairs**; two "findings" are one
+2×2 table asked with the roles swapped, identical p to every printed digit; the 10 survivors rest
+on 8 associations. (2) **Plumbing:** 3 of 10 survivors are publication-process artefacts (DOI and
+journal reference are stamped by the same event) — **P4 refuted**, half had been predicted.
+(3) **Sampling frame:** the largest non-mechanical survivor (cross-listed papers have fewer
+authors, rb = −0.220) is significant alone in **1 of 7** primary-category strata, and three
+categories are 100 % cross-listed in this corpus (`tools/autoloop/stratify.py`).
+
+**Convened adversary — three defects, all published.** (1) The multiplicity denominator used the
+51 claimable tests where §3 c5 had registered all 66; both are now computed (**12 BH / 9
+Bonferroni** registered, **10 / 7** as run) and the **claim set is identical**, because the tests
+the registered rule promotes are killed at review under c4. (2) The review pass had been taking
+the loop's own z on trust for every numeric claim and never re-applied the pre-conditions itself;
+both fixed, checks 476 → 586, disagreements 0. (3) The page did not yet exist when it looked.
+Six attacks failed and are recorded as clean bills, including the tie-corrected variance, the BH
+step-up, the permutation scheme and the identifier-parity split.
+
+**K3 fired.** The review stage's first run reported five disagreements, all the threshold notation
+`p = <0.0001` read as a measured number by its own tokeniser. Unrepaired run committed at
+`data/review-run1-unrepaired.json`; repair dated in `review.py`.
+
+**What this does not license.** Any claim that the loop *did research*. It has no prior, no theory
+and no interest; the boundary it hit is *deciding that a question is worth asking*, and everything
+it got wrong it got wrong while being correct at every step. One corpus, one day, one loop; the
+questions and the predictions about them were written by the same practice.

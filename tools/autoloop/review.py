@@ -123,6 +123,43 @@ def main():
                 checks += 1
                 if c["effect"] is not None and abs(rb - c["effect"]) > 1e-9:
                     note(c["key"], "rank-biserial (pairwise U)", rb, c["effect"])
+                # z re-derived from the pairwise U and a tie count taken by frequency table,
+                # not from the loop's rank sums. Added 2026-09-03 after a convened adversary
+                # found that this file had been taking the loop's own z on trust for every
+                # numeric claim - so a fault in the shared variance formula could not surface.
+                n1_, n0_, n_ = len(v1), len(v0), len(v1) + len(v0)
+                counts = {}
+                for v in v1 + v0:
+                    counts[v] = counts.get(v, 0) + 1
+                tie_term = sum(t ** 3 - t for t in counts.values() if t > 1)
+                var = (n1_ * n0_ / 12.0) * ((n_ + 1) - tie_term / (n_ * (n_ - 1.0)))
+                checks += 1
+                if var > 0:
+                    z_here = (u1 - n1_ * n0_ / 2.0) / math.sqrt(var)
+                    if c["z"] is not None and abs(z_here - c["z"]) > 1e-9:
+                        note(c["key"], "z (pairwise U, independent tie count)", z_here, c["z"])
+                elif c["z"] is not None:
+                    note(c["key"], "z: variance non-positive here but the loop reported a z", None, c["z"])
+
+        # the review pre-conditions, re-applied from the numbers just re-derived rather than
+        # trusted from the loop's own verdict (same adversary finding)
+        fails_here = []
+        if len(g1) < 30 or len(g0) < 30:
+            fails_here.append("c1")
+        if o in BINARY:
+            x1 = sum(1 for r in g1 if r[o])
+            x0 = sum(1 for r in g0 if r[o])
+            if min(x1, len(g1) - x1, x0, len(g0) - x0) < 10:
+                fails_here.append("c2")
+        else:
+            if len({r[o] for r in rows}) < 5:
+                fails_here.append("c3")
+        if len(rows) < 0.5 * len(corpus):
+            fails_here.append("c4")
+        checks += 1
+        theirs = sorted({f.split()[0] for f in c["failures"]})
+        if sorted(fails_here) != theirs:
+            note(c["key"], "review pre-conditions re-applied", fails_here, theirs)
 
         # the p-value, from the loop's own z but this file's normal tail
         if c["z"] is not None and c["p"] is not None:

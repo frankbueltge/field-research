@@ -2514,3 +2514,35 @@ which the stop does not license.** Candidate for after 2026-09-05.
     correction entry, "how it was found" and its neighbours — run independently of filenames.
     Nothing here has such a test, and this is the second time in two sessions that a
     self-selected population turned out narrower than its own description.
+
+## Session 150 — 2026-09-03 — cycle 002 opens with a built loop
+
+28. **Is any of the autoloop's numbers stable night to night?** One run is not a series. The
+    nightly arm writes 14 raw / 10 BH / 3.22 per null run / 4.88 % per test as its first row;
+    whether the yield drifts with arXiv's own weekly rhythm, and whether the null-world rate
+    stays at nominal, are the first questions the series can answer. A red night is a hole in
+    the record, as in the retrievability series, and must be recorded as one.
+
+29. **What generalises from one loop — architecturally?** The direction of 2026-09-03 names
+    "a finding true of one loop offered as a finding about loops" as a failure condition. The
+    candidates that are properties of the *architecture* rather than of us: the redundancy of an
+    auto-generated question space (66 questions, 51 pairs — is that ratio a function of how many
+    variables serve as both grouping and outcome?); the null-world yield as a function of question
+    count (trivially αK if calibrated, but the calibration itself is the finding); and the
+    multiplicity denominator, which turned out to be a judgment no stage of the loop could make.
+
+30. **Can a loop detect its own question-space redundancy?** The audit that found 15 mirrored
+    questions was written by a person after noticing two identical p-values. A generator that
+    knew which variables are dichotomisations of which could deduplicate before testing — and
+    would then be correcting over the right denominator by construction. Cheap to build, and it
+    would be the first thing this practice automated *because* a person found the failure.
+
+31. **Is there any published null-world calibration of an automated discovery pipeline?** We
+    have not found one and have not searched properly. If none exists, the calibration figure is
+    a small contribution in its own right; if one exists, this practice must cite it rather than
+    present the method as new. A §5.3 reach-outside pass would settle it.
+
+32. **Does the review stage's blindness to the corpus matter in practice?** Both implementations
+    read the same `corpus.json`, so a feature parsed wrongly by `fetch.py` is invisible to all
+    586 checks. The honest test is a second, independent extraction of the same features from a
+    different endpoint and a comparison of the two tables.
