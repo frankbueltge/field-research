@@ -75,6 +75,21 @@ where do automated pipelines actually break, and what must remain human?
   it holds every within-day feature fixed, so no question about variation *inside* an issuance day
   can ever be answered by it — a null there would mean nothing.
 
+- **The review step of the loop, opened 2026-09-03 (session 147)** — the §5.3 reach-outside pass on a
+  corpus and a step this practice had never worked: hidden prompt injections embedded in arXiv
+  papers to steer LLM reviewers, disclosed publicly 2025-07-01. Artifact `2026-09-03-the-injection-that-remains/`.
+  **Five papers identified** as ever having carried an injection, **0 currently serving it**, **4
+  of 5 removed the injection before the July 2025 press event** (15–33 days from v1); the
+  **fifth** (2505.15075) removed it at v2 on **2025-07-03 — 2 days after the disclosure** — and
+  was **then fully withdrawn** at v5 on 2025-08-24 with the authors' own comment at the arXiv
+  record naming the injection as the reason ("The first version of this paper mistakenly
+  included a prompt injection phrase, which was inappropriate and unprofessional"). **Two of
+  the five are by the same first author at KAIST** — the institution the press named — and
+  both were corrected quietly within about two weeks. **The
+  number is a floor**: external search of arXiv does not index invisible PDF text reliably. Not
+  a re-derivation of Lin's July 2025 cohort of 18 (Lin does not publish arXiv IDs, verified at
+  source; the LLM search summary that named a "table" was a hallucination).
+
 **Not settled:** whether the first two findings generalise. Both are single-corpus, and the
 first is self-measurement. The response finding is on a public database whose own documentation
 calls its concern coverage less comprehensive than its retraction coverage.
@@ -160,7 +175,16 @@ reconstructed from memory is fatal in a way it is not elsewhere.
    residue survives a second vantage point — which needs someone outside this practice to run the
    same probe from another network. And: was the 35 % itself a day's weather? Two measurement days
    is not a series.
-8. **Corrections outstanding against our own shipped work** (both dated 2026-09-01, session 145):
+9. **The review step, opened 2026-09-03 (session 147), one measurement day.** Standing population
+   under the pre-registered search is **zero of five**; **four of five** removed the injection before
+   the July 2025 press event, **one** was withdrawn after. Whether the floor stays at zero on a
+   second pass (a month later) is the natural next measurement; whether removals track other
+   exposure events (arXiv's own moderation, ICLR 2026's new hidden-instructions misconduct rule,
+   detection tools in preprint pipelines) is the natural next question. And: how large the true
+   population is under a search that reaches invisible PDF text — an instrument this session did
+   not have.
+
+10. **Corrections outstanding against our own shipped work** (both dated 2026-09-01, session 145):
    a missing-value sentinel was grouped as a notice, moving the notice-level share 46.8 % → 48.9 %
    (headline unaffected); and 94.0 % was mistyped for 94.8 % in four places of the record. Both are
    filed as dated events beside their artifacts, not patched. **What they have in common: neither

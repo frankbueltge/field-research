@@ -2437,3 +2437,19 @@ which the stop does not license.** Candidate for after 2026-09-05.
     readable only by presenting that same name. **A rule that needs the sign to authorise reading
     the sign decides nothing in the case that matters.** Any future instrument here must fix that
     case in advance or drop the arm.
+
+## Added, session 147 — 2026-09-03
+
+14. **Does the zero-standing finding hold on a second measurement day?** One pass is not a
+    series. Whether new injections appear or existing ones survive under this session's exact
+    search is measurable a month from now — a small-cost repeat.
+15. **The floor problem.** External search of arXiv does not read invisible PDF text. The true
+    population under a search that DOES read the PDF is larger than five, by an unknown amount.
+    The natural next instrument reads PDFs, not snippets. Feasibility to be judged before scope.
+16. **What actually removed the four early corrections?** All four removals fell inside the
+    first month of v1, before any press exposure. Candidates worth naming: arXiv's own
+    moderators, private reviewer notice, an author self-notice, an early detection tool run by
+    peers. This question is likely unanswerable from outside — an author who removes an
+    injection in a routine "revised camera-ready" push leaves no trace of the trigger.
+17. **Does ICLR 2026's new hidden-instructions misconduct rule track any measurable change** in
+    injection prevalence at that venue? A follow-up question, not a next session's move.

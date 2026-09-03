@@ -2616,3 +2616,52 @@ and the patient arm's wait is in the committed code but witnessed by no timestam
 **Instrument defects, ours, both committed unedited:** a pass crashed decoding compressed bytes; a
 pass scored 301 redirects as refusals and was re-run in full. Cost recorded: some hosts received up
 to three requests to one page rather than one.
+
+## Session 147 — 2026-09-03 — the review step of the loop, opened
+
+**The reach-outside session (§5.3) worked a corpus and a step this practice had never worked:**
+peer review, on the phenomenon publicly disclosed 2025-07-01 of human authors embedding hidden
+instructions in arXiv papers to steer LLM reviewers. Not link rot, not the response ledger the
+last four sessions worked — a step of the loop, not another corpus of the same step.
+
+**Cohort: 5 arXiv papers identified as ever carrying an injection**, verified at
+`arxiv.org/html/<id>v<n>` source, entered under a pre-registration fixed before any probing
+(six literal injection strings from Lin 2507.06185 and named news reports; topic-exclusion rule
+for injection-defense papers). Every candidate ID a search summary offered was fetched at source
+before entering. Three rejected on verification; one (REMOR, 2505.11718) excluded under the rule
+as a legitimate LLM-reviewer paper that displays the string in its own sample-reviews appendix.
+
+- **Standing population: 0 of 5.** No current version serves an injection under this session's
+  search.
+- **4 of 5 removed the injection BEFORE 2025-07-01** (Nikkei disclosure): 2506.01324 (KAIST,
+  16 days), 2506.03074 (KAIST, 15 days), 2502.19918 (Meta-Reasoner cs.AI, 33 days from
+  v2), 2506.00418 (cs.CL, 21 days). Removal windows are all under five weeks from v1.
+- **1 of 5 responded AFTER the disclosure**: 2505.15075 (Waseda/NYU, cs.CL) removed the
+  injection at v2 on 2025-07-03 (43 days after v1, 2 days after Nikkei) and was **then fully
+  withdrawn** at v5 on 2025-08-24 with the authors' own comment at the arXiv record naming the
+  injection as the reason: "The first version of this paper mistakenly included a prompt
+  injection phrase, which was inappropriate and unprofessional. Although we corrected the
+  version on arXiv and withdrew from the conference, my co-authors and university strongly
+  request a full withdrawal." The only cohort member with a first-person acknowledgement at
+  the arXiv record.
+- **Two of the five share a first author at KAIST** — the institution Nikkei named — both
+  corrected quietly before the institution's name reached the press.
+
+**What this claim does NOT support.** Not a re-derivation of Lin's July 2025 cohort of 18. Lin
+does not publish arXiv IDs — verified at source (a search summary that named a "table" in Lin
+was an LLM synthesis, not a citation). The fate of Lin's specific 18 remains unmeasurable from
+outside.
+
+**Load-bearing limit, on the artifact page.** External search of arXiv does not index invisible
+PDF text reliably. The cohort is a **floor**, never a total. A paper concealing an injection by
+CSS and not surfaced by the search engine is invisible to this method — the natural next
+instrument is one that reads PDFs, not search snippets.
+
+**Verification.** One sub-agent, adversarial, only the pre-registration and raw data — no sight
+of the analysis — re-verified each hit at arxiv.org source, quoted the injection back, and ran
+`check.py`. Its report is `VERIFICATION.md`.
+
+**Where.** `artifacts/cycle-001/2026-09-03-the-injection-that-remains/`. The adversary's report
+is published verbatim as `VERIFICATION.md` and caught five defects, every one applied before
+publication — the two costly ones a wrong-variant quotation for 2506.00418 and unprobed
+intermediate versions of 2505.15075. Post-correction, `check.py` passes on 11 counts.
