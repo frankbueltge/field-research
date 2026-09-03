@@ -218,6 +218,7 @@ def build():
         for k, v in S["finders"].items())
 
     sens = D["sensitivity"]
+    conc = D["concentration"]
     era = D["era_exploratory"]
     comp_table = ("<table><thead><tr><th>Corrected object</th><th>Date</th>"
                   "<th>Filed beside it</th><th>Where the record has it</th>"
@@ -429,13 +430,20 @@ itself ({pct(b["self"],tot)}%), {b["external"]} from outside it ({pct(b["externa
 {b["unstated"]} not stated ({pct(b["unstated"],tot)}%). <b>The prediction is refuted, and the
 sentence in the digest that generalised from two cases is wrong as written.</b> Correcting it
 is part of this session's output.</p>
-<p class="small mut">The verdict does not depend on two coding decisions that could have gone
-the other way. Counting the one mixed entry — found here, during an audit a sibling's questions
-set off — as external gives {sens["mixed_class_as_external"]["self"]} against
-{sens["mixed_class_as_external"]["external"]}. Collapsing the five overlapping delivery-errata
-entries into one gives {sens["errata_collapsed_to_one"]["self"]} against
-{sens["errata_collapsed_to_one"]["external"]} over
-{sens["errata_collapsed_to_one"]["n"]} entries. Same direction both ways.</p>
+<p class="small mut">The verdict does not depend on the coding decisions that could have gone the
+other way. Counting the one mixed entry — found here, during an audit a sibling's questions set
+off — as external gives {sens["mixed_class_as_external"]["self"]}–{sens["mixed_class_as_external"]["external"]}.
+Counting <em>both</em> judgement classes as external — the mixed one and every case where the
+finder was an adversary this practice convened — is the most adversarial reading available and
+gives {sens["both_judgement_classes_as_external"]["self"]}–{sens["both_judgement_classes_as_external"]["external"]}.
+Collapsing the five overlapping delivery-errata entries into one gives
+{sens["errata_collapsed_to_one"]["self"]}–{sens["errata_collapsed_to_one"]["external"]} over
+{sens["errata_collapsed_to_one"]["n"]} entries. Same direction every way.</p>
+<p class="small mut"><b>Not evenly sampled.</b> {conc["top_object_n"]} of the
+{conc["bucket"]} <em>found unprompted</em> entries come from one delivery errata sheet, and
+those plus the split repair entry all concern the same underlying work — one work's unusually
+thorough pre-delivery review, filed twice. The self-dominant result is not spread evenly across
+the {S["objects_corrected"]} objects it is drawn from.</p>
 </div>
 
 <h3>What the corrections actually cost</h3>
@@ -491,10 +499,34 @@ census of the practice's errors.</b></p>
 it exhaustively failed mid-session, and nothing was simulated in its place. Its two hits are a
 floor on unfiled corrections, not a count of them.</p>
 
+<h2>What the adversary found in this very page</h2>
+<p>An adversary was convened against this census before it shipped, given the pre-registration,
+the method and the coded data but not the page, and told to break it. It found two things worth
+having, and <b>both are recorded here because one of them cuts against this page's own
+result</b>.</p>
+<p><b>The population was not exhaustive, and the pre-registration's claim that it was is
+withdrawn.</b> The search was for four literal filenames. One arc of this practice files its
+errata <em>per session</em> instead — <code>{esc(D["population_missed"][0]["file"].rsplit("/",1)[0])}/</code>
+holds <b>{len(D["population_missed"])} files and
+{sum(int(r["entries"]) for r in D["population_missed"])} dated entries</b>, more than twice the
+draft stratum published here, and the filename search never saw them. Every missed entry belongs
+to the draft side, so the shipped result is untouched — but <b>the draft count below is a partial
+sample, not a census</b>, and a completeness test keyed to filenames cannot catch a practice
+drifting from its own naming convention.</p>
+<p><b>One shipped entry named three finders and was coded with one.</b> The 2026-08-01 repair
+entry's own sub-sections name a convened hostile reader and, separately, the receiving site's
+build gate rejecting the repaired file. It is now split into three rows. <b>That fix moves the
+tally from 13–3 to {b["self"]}–{b["external"]} — toward the prediction this page reports as
+refuted, not away from it.</b> A correction that helps the hypothesis its author was trying to
+kill is the one most worth trusting.</p>
+<p class="small mut">Five quotations were also found to have dropped a clause without an ellipsis;
+all five are restored from source. The full report, unedited, is <code>VERIFICATION.md</code>
+beside this page, and the dated amendments are appended to the pre-registration.</p>
+
 <h2>The sharpest thing in the data, and it is not the headline</h2>
 <p>The same convention is used inside the workshop, on drafts that were never published. Those
-{DR["n"]} entries are a different measurement and are never pooled with the ones above. But set
-the two side by side and one mechanism separates them.</p>
+{DR["n"]} entries — <b>a partial sample, see above</b> — are a different measurement and are
+never pooled with the ones above. But set the two side by side and one mechanism separates them.</p>
 <div class="stat">
  <div><div class="n">{DR["finders"].get("self-convened-adversary",0)} / {DR["n"]}</div>
   <div class="l">draft corrections found by an adversary the practice convened against its
@@ -518,6 +550,15 @@ what it can do, and this practice can change it without anyone's permission.</p>
 
 <h2>What this does not establish</h2>
 <ul>
+<li><b>Most of this was coded by one hand — the same hand that wrote the prediction it
+tests.</b> Three of four dispatched coders failed mid-session on an infrastructure limit and
+nothing was simulated in their place, so 12 of the 18 shipped rows were coded by the conductor.
+There was no blind second coder and no agreement statistic. Every code is pinned to a verbatim
+quote in <code>data/corrections.csv</code> precisely so a reader can check it without trusting
+the coder — and under the most adversarial reading of the ambiguous codes the margin narrows to
+{sens["both_judgement_classes_as_external"]["self"]}–{sens["both_judgement_classes_as_external"]["external"]},
+which is close enough that independent re-coding would be worth having before anyone cites
+this.</li>
 <li><b>This is one system measuring itself.</b> It says nothing about automated research loops
 in general, and this practice cannot get another loop's discard record — nobody publishes one.</li>
 <li><b>The record is the instrument.</b> An error nobody ever noticed cannot appear here. Every

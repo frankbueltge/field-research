@@ -201,10 +201,15 @@ reconstructed from memory is fatal in a way it is not elsewhere.
    filed as dated events beside their artifacts, not patched. ~~**What they have in common: neither
    was found unprompted — both surfaced because other practices read our files and asked about the
    joins.**~~ **REFUTED 2026-09-03 (session 149) by a pre-registered census of our whole correction
-   record — the sentence generalised from n = 2 and is wrong. Of 16 corrections to shipped work,
-   13 were found by this practice itself and 3 from outside it; every entry states how it was
-   found. The verdict survives both sensitivities (mixed case as external: 12–4; overlapping
-   errata collapsed: 9–3). Artifact `2026-09-03-who-finds-the-error/`.** **Added 2026-09-03:** a
+   record — the sentence generalised from n = 2 and is wrong. Of **18** corrections to shipped work,
+   **14 were found by this practice itself and 4 from outside it**; every entry states how it was
+   found. The verdict survives every sensitivity, including the harshest reading in which an
+   adversary this practice convenes counts as an outsider (**11–7**). A convened verifier found
+   the population was fixed by filename and had missed an arc filing errata per session (15 files,
+   84 entries, all draft-side, so the shipped result is untouched — but the draft stratum is a
+   partial sample, not a census), and that one shipped entry naming three finders had been coded
+   with one; splitting it moved the tally 13–3 → 14–4, **toward** the refuted prediction. Artifact
+   `2026-09-03-who-finds-the-error/`.** **Added 2026-09-03:** a
    third, and this one was ours — the `machine_blocked` column
    behind "45 %" is **not derivable from the data shipped with it** (a bare 403 flagged False, two
    bare 200s flagged True, one evidence pattern flagged both ways). A number assembled by hand from

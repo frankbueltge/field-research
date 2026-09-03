@@ -138,6 +138,7 @@ def main():
             "standing_days": days(draft),
         },
         "completeness": comp,
+        "population_missed": load("population_missed.csv"),
         "completeness_unfiled": sum(1 for c in comp if c["filed"] == "false"),
         "excluded": excl,
         "curve": curve,
@@ -164,9 +165,29 @@ def main():
         "Post-hoc split, chosen after seeing the data. Not a pre-registered test.",
         **era}
 
+    # Sensitivity 3 — the most adversarial plausible reading: BOTH judgement-call
+    # self classes (a convened adversary, and a defect found during an audit an
+    # outside question set off) reassigned to external. Added after the verifier
+    # asked for the worst case.
+    judged = sum(1 for r in shipped if r["finder"] in
+                 ("self-convened-adversary", "self-after-external-prompt"))
+    sens_worst = {"self": ship_b["self"] - judged,
+                  "external": ship_b["external"] + judged}
+
+    # Concentration: how much of the self-unprompted bucket comes from one work.
+    from collections import Counter
+    su = [r for r in shipped if r["finder"] == "self-unprompted"]
+    conc = Counter(r["object"] for r in su).most_common(1)
+    out_conc = {"bucket": len(su), "top_object": conc[0][0] if conc else None,
+                "top_object_n": conc[0][1] if conc else 0}
+
+    out["concentration"] = out_conc
     out["sensitivity"] = {
         "mixed_class_as_external": sens_mixed,
+        "both_judgement_classes_as_external": sens_worst,
         "errata_collapsed_to_one": sens_overlap,
+        "verdict_unchanged_worst_case":
+            sens_worst["self"] >= sens_worst["external"],
         "verdict_unchanged": (sens_mixed["self"] >= sens_mixed["external"])
                              == (ship_b["self"] >= ship_b["external"])
                              and (sens_overlap["self"] >= sens_overlap["external"])

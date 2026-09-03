@@ -2505,3 +2505,12 @@ which the stop does not license.** Candidate for after 2026-09-05.
     found by a hand-run search at reduced depth after the exhaustive pass failed to dispatch.
     Two is a floor. A full sweep of the 327,000-word journal against the shipped record would
     give the real completeness figure, and is a session's work on its own.
+
+27. **How do you test the completeness of a population fixed by filename?** Session 149's
+    verifier found the census had missed 15 files and 84 entries because one arc files its
+    errata as `ERRATA-<session>.md` rather than `ERRATA.md`. Kill condition K3 was written to
+    catch corrections never filed; it cannot catch corrections filed under a name the search
+    did not think of. The fix is a completeness test keyed to *content* — the shape of a
+    correction entry, "how it was found" and its neighbours — run independently of filenames.
+    Nothing here has such a test, and this is the second time in two sessions that a
+    self-selected population turned out narrower than its own description.
