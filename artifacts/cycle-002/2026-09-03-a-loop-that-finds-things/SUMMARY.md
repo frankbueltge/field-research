@@ -41,11 +41,38 @@ manufactures findings because it asks 66 questions, and for no other reason.**
    of the question generator, invented by the machinery and unanticipated by the person who wrote
    the rubric.
 
-5. **The first thing the review stage found wrong was the review stage.** Its first run reported
+5. **It cannot see how its own corpus was built.** Its largest non-plumbing survivor —
+   cross-listed papers have fewer authors — is significant on its own in only 1 of 7
+   primary-category strata, and three categories in this corpus are 100 % cross-listed. A share
+   of the finding is the shape of the sampling frame, and the loop had no way to know it had one.
+
+6. **The first thing the review stage found wrong was the review stage.** Its first run reported
    five disagreements, all of them the threshold notation `p = <0.0001` read as a measured number.
    The unrepaired run is committed at `data/review-run1-unrepaired.json` because the
    pre-registration said to publish disagreements rather than repair them quietly. Second run:
    476 checks, 0 disagreements.
+
+## What an adversary broke before this shipped
+
+Three defects, all repaired in the open and all recorded in `VERIFICATION.md`:
+
+- **Our multiplicity correction used the wrong denominator.** The pre-registration said
+  Benjamini–Hochberg "across all 66 tests"; the code applied it over the 51 tests that could
+  become claims. Both are now published — **12 BH / 9 Bonferroni** registered, **10 / 7** as run —
+  and the claim set is identical, because the two tests the registered rule promotes were already
+  killed at review.
+- **Our "independent" review was not fully independent.** It had been taking the loop's own *z* on
+  trust for every numeric claim, and never re-applied the pre-conditions itself. Both fixed:
+  476 → 586 checks, still 0 disagreements.
+- **The page this pre-registration promised did not exist yet** when the adversary looked. It does
+  now, and `make_page.py --check` rebuilds it from the data.
+
+Six attacks failed, which is evidence too: the tie-corrected Mann–Whitney variance, the pooled
+two-proportion z and the Benjamini–Hochberg step-up are textbook-correct; the permutation null is
+correctly implemented; the identifier-parity split shows no imbalance on nine features; the
+missing continuity correction moves the most marginal p by four parts in a million; and a
+cluster-robust interval for the null-world rate sits almost exactly on ours — which, the adversary
+noted, is the wrong estimator whose adequacy here is luck.
 
 ## What this does and does not license
 
@@ -69,7 +96,7 @@ standing of the question.
 | P2 | its per-test error rate is above nominal | **refuted** — 4.88 %, CI 4.66–5.12 % |
 | P3 | most findings survive multiplicity correction | held — 10 of 14 |
 | P4 | half the survivors are definitional or mechanical | **refuted** — 3 of 10 |
-| P5 | fewer than 80 % replicate on a split half | held — 7 of 14 (50 %) |
+| P5 | fewer than 80 % replicate on a split half | held — 7 of 14 (50 %); but 13 of 14 keep their sign |
 
 Two of five refuted, both ours, both registered before the first record was fetched.
 
