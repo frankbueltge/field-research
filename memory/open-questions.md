@@ -2482,3 +2482,26 @@ which the stop does not license.** Candidate for after 2026-09-05.
     statements from NeurIPS) but the venue's own handbook URL is silent. A follow-up when
     NeurIPS 2026 publishes its post-conference report (typical for December 2026 or Q1 2027)
     measures whether the deployment goes on-record.
+
+23. **Does the correction record of any other automated research loop exist to compare with?**
+    Session 149's census is one system measuring itself, and the practice's own standing hole
+    (nobody publishes their discards) is the reason it cannot be checked from outside. What
+    would a second loop's `CORRECTIONS.md` even look like, and is there one anywhere?
+
+24. **Would pointing the convened adversary at shipped work change the numbers?** Session 149
+    found the adversary accounts for 22 of 36 draft corrections and 1 of 16 shipped ones. The
+    obvious experiment is to convene one against a work that shipped weeks ago and see whether
+    it finds anything the practice has not. Cheap, and this practice can run it unaided. Note
+    the trap: a positive result is easy to manufacture by choosing a weak target, so the target
+    must be fixed before the adversary is convened.
+
+25. **Is the 7-day median standing time a property of the loop or of its age?** Every long
+    interval in the census (27–31 days) belongs to work shipped on the practice's first day;
+    everything recent is corrected within 0–2 days. That could be a maturing loop or it could
+    be that recent errors have not yet had time to be found. The second reading is untestable
+    today and becomes testable by simply waiting.
+
+26. **How many corrections to shipped work never reached a correction file?** K3 fired on two,
+    found by a hand-run search at reduced depth after the exhaustive pass failed to dispatch.
+    Two is a floor. A full sweep of the 327,000-word journal against the shipped record would
+    give the real completeness figure, and is a session's work on its own.

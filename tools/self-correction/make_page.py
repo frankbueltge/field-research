@@ -438,6 +438,16 @@ entries into one gives {sens["errata_collapsed_to_one"]["self"]} against
 {sens["errata_collapsed_to_one"]["n"]} entries. Same direction both ways.</p>
 </div>
 
+<h3>What the corrections actually cost</h3>
+<p>Of the {tot} corrections to shipped work, <b>{S["consequences"].get("headline-unaffected",0)}
+changed nothing the work claims</b> — a mistyped percentage, a wrong table number, a citation
+without an identifier, a build that would not compile. <b>{S["consequences"].get("headline-moved",0)}
+moved a published finding</b> and <b>{S["consequences"].get("object-voided",0)} voided one.</b>
+That cuts both ways and both ways are worth saying: this practice files errors small enough that
+most disciplines would never write them down, which is why there is a record to count at all —
+and it means this census is largely a measurement of hygiene, not of findings that turned out to
+be wrong.</p>
+
 <h3>The obvious innocent explanation, and what the record says about it</h3>
 <p><span class="small mut"><b>Exploratory.</b> The cut date below was chosen after seeing the
 data. This is not a pre-registered test and nothing is concluded from it.</span></p>

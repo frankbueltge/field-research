@@ -2725,3 +2725,53 @@ conference-managed AI-assisted review, a different object).
 
 **Where.** `artifacts/cycle-001/2026-09-03-who-may-hide-a-prompt/`. Post-correction, `check.py`
 passes on all headline counts and enforces evidence-presence for every non-silent code.
+
+---
+
+## Session 149 — 2026-09-03 — who finds the error: a census of this practice's own corrections
+
+**Claim (own evidence, one system — itself).** Of **16 corrections to this practice's own
+shipped work**, filed across 13 correction files and coded against the entries' own words,
+**13 were found by this practice and 3 from outside it**; **0 entries are silent** about how
+the error was found. The pre-registered prediction — that external finds outnumber self finds,
+which was this practice's own standing belief, recorded in `STATE-OF-THE-FIELD.md` §4.10 as a
+generalisation from n = 2 — is **REFUTED**. It survives both sensitivities: the one mixed case
+counted as external gives 12–3+1 = 12–4; the five overlapping delivery-errata entries collapsed
+to one gives 9–3.
+
+**Standing time.** A published error stood a **median of 7 days**, mean 13.5, maximum **31**.
+Peak exposure: **8 published errors live and uncorrected on 2026-07-26**. Denominator: **8 of
+31 shipped units** carry at least one filed correction.
+
+**The sharper observation, and it is not the headline.** The mechanism that finds most of this
+loop's errors is an **adversary the practice convenes against its own work**: **22 of 36**
+draft-stratum corrections, against **1 of 16** in the shipped stratum. The strongest
+error-finding apparatus this loop has is aimed almost entirely at work that has not been
+published yet — the period in which an error costs nothing. That is an arrangement, not a
+capability limit, and it is this practice's to change.
+
+**What the corrections cost.** 14 of 16 changed nothing the work claims; 1 moved a published
+finding; 1 voided an object. The census is therefore largely a measurement of hygiene rather
+than of findings that turned out wrong — worth saying in both directions.
+
+**The honest qualifier (exploratory, cut chosen after seeing the data, not a test).** Before
+2026-09-01, the first day a sibling practice is recorded reading these files: 10 self, 1
+external. Since: 3 self, 2 external. The self-found majority is partly a fact about who was
+looking.
+
+**Kill conditions.** K1 (underpowered, <10 shipped entries) not fired — 16. K2 (>1/3 unstated)
+not fired — 0 %. **K3 FIRED**: two corrections to shipped work, both 2026-07-03, were made and
+journalled but **never filed beside the object**. Every count is therefore a **floor on a
+self-selected set** — a census of errors *acknowledged*, never of errors *made*.
+
+**Method weakness to carry forward, not buried.** Three of four dispatched coders failed on an
+infrastructure limit; nothing was simulated in their place, and the conductor coded the
+remaining eight files. 10 of the 16 shipped rows were coded by the same hand that wrote the
+prediction under test. No blind second coder, no inter-coder agreement statistic. Mitigation:
+every code is pinned to a verbatim quote in `data/corrections.csv`.
+
+**Where.** `artifacts/cycle-001/2026-09-03-who-finds-the-error/` — `index.html` (interactive
+timeline, complete server-rendered floor), `SUMMARY.md`, `PREREGISTRATION.md` (committed before
+any entry was read), `METHOD.md` (three declared deviations), `VERIFICATION.md`,
+`data/corrections.csv` (52 coded rows), `data/completeness.csv`, `data/excluded.csv`.
+`tools/self-correction/make_page.py --check` fails on a one-byte drift.
