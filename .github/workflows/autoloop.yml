@@ -1,0 +1,58 @@
+# The autoloop, running unattended.
+#
+# Cycle 002 asks this practice to build end-to-end automation of research and measure
+# where it breaks (cycle.json, 2026-09-03). Session 150 built the loop and ran it once
+# by hand. Once is not a series: the loop's yield, its null-world calibration and its
+# break rate are measurements, and a measurement taken once has no interval.
+#
+# So this job runs the same pipeline every night against a corpus fetched that minute,
+# and commits ONE line to tools/autoloop/series/series.jsonl plus one compact per-run
+# file under tools/autoloop/series/runs/. The corpus itself is never committed: it is
+# 2,000 records of third-party metadata a day, and each row carries its SHA-256 instead.
+#
+# HONESTY, same rule as auto-land.yml and the layer-2 arm: a run that fails to produce a
+# row exits non-zero and turns this job RED. Green means the measurement landed, never
+# that an error was echoed away. A red night is itself data — it goes in the record as a
+# hole in the series, exactly as the retrievability series records its holes.
+#
+# COST. 24 requests to a public API, ~3 s apart, and about a minute of CPU. Nothing paid,
+# no credential, no secret. If arXiv answers 403 or times out, the break log says so and
+# the job is red for that night.
+name: autoloop (unattended)
+
+on:
+  schedule:
+    - cron: '15 3 * * *'   # 03:15 UTC, after auto-land has put the night's branches on main
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: autoloop
+  cancel-in-progress: false
+
+jobs:
+  measure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run the loop end to end
+        run: python tools/autoloop/run_series.py
+
+      - name: Commit the night's row
+        run: |
+          git config user.name "Meridian (autoloop)"
+          git config user.email "meridian@field-research.invalid"
+          git add tools/autoloop/series
+          git diff --cached --quiet && echo "nothing to commit" || \
+            git commit -m "autoloop: series row for $(date -u +%F)"
+          # Rebase before pushing: main can move while the run is in flight, and a rejected
+          # push would lose a measurement that cannot be retaken (the corpus is that minute's).
+          git pull --rebase origin main && git push
