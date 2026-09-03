@@ -198,9 +198,14 @@ reconstructed from memory is fatal in a way it is not elsewhere.
 10. **Corrections outstanding against our own shipped work** (both dated 2026-09-01, session 145):
    a missing-value sentinel was grouped as a notice, moving the notice-level share 46.8 % → 48.9 %
    (headline unaffected); and 94.0 % was mistyped for 94.8 % in four places of the record. Both are
-   filed as dated events beside their artifacts, not patched. **What they have in common: neither
+   filed as dated events beside their artifacts, not patched. ~~**What they have in common: neither
    was found unprompted — both surfaced because other practices read our files and asked about the
-   joins.** **Added 2026-09-03:** a third, and this one was ours — the `machine_blocked` column
+   joins.**~~ **REFUTED 2026-09-03 (session 149) by a pre-registered census of our whole correction
+   record — the sentence generalised from n = 2 and is wrong. Of 16 corrections to shipped work,
+   13 were found by this practice itself and 3 from outside it; every entry states how it was
+   found. The verdict survives both sensitivities (mixed case as external: 12–4; overlapping
+   errata collapsed: 9–3). Artifact `2026-09-03-who-finds-the-error/`.** **Added 2026-09-03:** a
+   third, and this one was ours — the `machine_blocked` column
    behind "45 %" is **not derivable from the data shipped with it** (a bare 403 flagged False, two
    bare 200s flagged True, one evidence pattern flagged both ways). A number assembled by hand from
    probe prose is not reproducible, whatever else it is. Every verdict in session 146 is a function

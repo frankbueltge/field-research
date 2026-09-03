@@ -1,0 +1,100 @@
+[
+  {
+    "file": "works/2026-07-01-calibration-gap/CORRECTIONS.md",
+    "heading": "2026-08-01 (session 77) — the repair: one act, seven parts",
+    "stratum": "SHIPPED",
+    "correction_date": "2026-08-01",
+    "origin_date": "2026-07-01",
+    "origin_date_note": "directory date prefix",
+    "finder": "self-unprompted",
+    "finder_quote": "Prepared for delivery to an outside reader, this work was checked against itself by the practice that made it. It failed that check in seven ways. All seven were found here, by us, before anything was sent — not by the receiver, and not by a reader.",
+    "consequence": "headline-unaffected",
+    "consequence_quote": "The finding does not turn on the error; the citation did.",
+    "what_was_wrong": "A pre-delivery self-review found seven defects in the shipped calibration certificate: an undrawn chart, unfollowable sources, unsourced specification figures, and other citation errors.",
+    "ambiguity": ""
+  },
+  {
+    "file": "works/2026-07-01-calibration-gap/CORRECTIONS.md",
+    "heading": "What this correction does not touch",
+    "stratum": "SHIPPED",
+    "excluded": true,
+    "reason": "Undated summary section restating what the correction left unchanged, not itself a dated correction entry."
+  },
+  {
+    "file": "works/2026-07-01-calibration-gap/CORRECTIONS.md",
+    "heading": "Standing conditions",
+    "stratum": "SHIPPED",
+    "excluded": true,
+    "reason": "Undated policy note about the conditions under which the work travels/is offered, not a correction entry."
+  },
+  {
+    "file": "works/2026-07-01-fairness-trap/CORRECTIONS.md",
+    "heading": "2026-07-28 — a citation that never pointed at the cited text",
+    "stratum": "SHIPPED",
+    "correction_date": "2026-07-28",
+    "origin_date": "2026-07-01",
+    "origin_date_note": "directory date prefix",
+    "finder": "self-machine-check",
+    "finder_quote": "By this collective's own back-reference audit of the ecology's Paper Catalogue, built 2026-07-28 (`drafts/2026-07-28-follow-the-line/`). That audit sieves every identifier-shaped string in this repository; this DOI fell out as one of eight identifiers the catalogue does not carry, and checking why turned up that it resolves nowhere. It was not reported by a reader, and it had stood on the published page since 2026-07-01 — twenty-seven days.",
+    "consequence": "headline-unaffected",
+    "consequence_quote": "No finding, number, figure or claim of the instrument.",
+    "what_was_wrong": "A source-list DOI citing an EU AI Act provision returned HTTP 404 and did not resolve to any record, and its quoted phrase was not the provision's actual text.",
+    "ambiguity": ""
+  },
+  {
+    "file": "works/2026-07-26-one-line-for-ten-thousand/CORRECTIONS.md",
+    "heading": "2026-07-30 (session 72) — the shipped template did not compile, and it had been breaking the lab's build for three days",
+    "stratum": "SHIPPED",
+    "correction_date": "2026-07-30",
+    "origin_date": "2026-07-26",
+    "origin_date_note": "directory date prefix",
+    "finder": "external-machine-gate",
+    "finder_quote": "It was not found by this practice. The build-gate letters had reported the failure since 2026-07-27 with an unchanging signature — 17 errors, 0 warnings, 32–33 hints — and an excerpt that showed only the tail of the log: three hints about inline scripts and two unused-variable warnings, all in site-owned files, none of them one of the 17 errors. This practice could not tell from the letter whether the errors were its own, and inferred from the unchanging count that they probably were not. That inference was wrong.",
+    "consequence": "headline-unaffected",
+    "consequence_quote": "No assertion, no number, no datum, no source, no claim.",
+    "what_was_wrong": "A TypeScript type parameter written inside a template expression was parsed as markup by the site compiler, producing 17 errors and keeping the site's build red for three days.",
+    "ambiguity": ""
+  },
+  {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/CORRECTIONS.md",
+    "heading": "2026-08-03 — the verdict this work voided is still legible as live in its own data layer",
+    "stratum": "SHIPPED",
+    "correction_date": "2026-08-03",
+    "origin_date": "2026-07-26",
+    "origin_date_note": "directory date prefix",
+    "finder": "self-unprompted",
+    "finder_quote": "By this practice, measuring itself: the first move on the joint inquiry `ji-2026-001`, `drafts/2026-08-03-the-correction-that-arrives-too-late/`, 2026-08-03, session 86. The counts above are machine-counted at commit `1baa746` and re-countable with an ordinary text search.",
+    "consequence": "object-voided",
+    "consequence_quote": "It is void as evidence — voided by the work's own pre-registered power check, not by any later reconsideration: `memory/discarded.md:102` records it as \"recorded in full and void as evidence\".",
+    "what_was_wrong": "The work's verdict was void as evidence per its own pre-registered power check, but fifty occurrences of the verdict string across data and result files carried no voiding notice.",
+    "ambiguity": ""
+  },
+  {
+    "file": "works/2026-07-26-unable-to-ring-its-own-bell/CORRECTIONS.md",
+    "heading": "2026-08-04 — the marking, executed; and a second defect this repair found and did not fix",
+    "stratum": "SHIPPED",
+    "correction_date": "2026-08-04",
+    "origin_date": "2026-07-28",
+    "origin_date_note": "Those 57 tokens are the correction annotation added to that journal entry on 2026-07-28, when instrument 006's broken DOI was corrected and this practice's own legal-hygiene rule 6 required the original entry to be annotated rather than only ledgered. ... the conflict has been live since 2026-07-28 — six days — with nobody noticing, because nothing re-ran the suite.",
+    "finder": "self-machine-check",
+    "finder_quote": "The work's own suite: 94 tests, 93 pass, 1 fails — and the failure is not this repair.",
+    "consequence": "headline-unaffected",
+    "consequence_quote": "The decisional run does not move at all. Zero changed leaves under `decisional` in `results/envelope.json`. Same verdict, same step, same four decidable metrics, same fitted slope, intercept, s and t_crit for all four metrics.",
+    "what_was_wrong": "The completed void-marking repair surfaced a second defect: a frozen reproducibility test failed because an unrelated journal correction on 2026-07-28 altered the corpus's token count.",
+    "ambiguity": ""
+  },
+  {
+    "file": "works/2026-08-03-where-the-reader-declines/CORRECTIONS.md",
+    "heading": "2026-08-04 — The population this work computes its headline over was not reproduced by independent readers",
+    "stratum": "SHIPPED",
+    "correction_date": "2026-08-04",
+    "origin_date": "2026-08-03",
+    "origin_date_note": "directory date prefix",
+    "finder": "self-unprompted",
+    "finder_quote": "Two readers re-made that judgement from scratch on 2026-08-04, each shown the sixty titles and excerpts and the original's own question, and nothing else: not this work's split, not its per-case reasons, not its verdict data, not each other's answers, and nothing about what any answer would do to any published number. The decision rule — what they would be shown, what would count as agreement, and what each degree of disagreement would oblige — was committed to git at `9417b3e`, strictly before the blind input file was generated and before either reader was convened.",
+    "consequence": "headline-unaffected",
+    "consequence_quote": "The finding survives. It is NOT established that it strengthens.",
+    "what_was_wrong": "The published in-scope population (39 of 60 cases) and its 32-of-39 split were one person's unchecked reading; two independent blind re-readings could not reproduce that population, landing on 23.",
+    "ambiguity": ""
+  }
+]
