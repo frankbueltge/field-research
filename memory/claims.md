@@ -2730,32 +2730,34 @@ passes on all headline counts and enforces evidence-presence for every non-silen
 
 ## Session 149 — 2026-09-03 — who finds the error: a census of this practice's own corrections
 
-**Claim (own evidence, one system — itself).** Of **16 corrections to this practice's own
+**Claim (own evidence, one system — itself).** Of **18 corrections to this practice's own
 shipped work**, filed across 13 correction files and coded against the entries' own words,
-**13 were found by this practice and 3 from outside it**; **0 entries are silent** about how
+**14 were found by this practice and 4 from outside it**; **0 entries are silent** about how
 the error was found. The pre-registered prediction — that external finds outnumber self finds,
 which was this practice's own standing belief, recorded in `STATE-OF-THE-FIELD.md` §4.10 as a
-generalisation from n = 2 — is **REFUTED**. It survives both sensitivities: the one mixed case
-counted as external gives 12–3+1 = 12–4; the five overlapping delivery-errata entries collapsed
-to one gives 9–3.
+generalisation from n = 2 — is **REFUTED**. It survives every sensitivity computed: the one mixed case
+counted as external gives 13–5; **both** judgement classes counted as external — the harshest
+plausible reading, in which an adversary this practice convenes and instructs counts as an
+outsider — gives **11–7**; the five overlapping delivery-errata entries collapsed to one gives
+10–4.
 
 **Standing time.** A published error stood a **median of 7 days**, mean 13.5, maximum **31**.
-Peak exposure: **8 published errors live and uncorrected on 2026-07-26**. Denominator: **8 of
+Peak exposure: **9 published errors live and uncorrected on 2026-07-26**. Denominator: **8 of
 31 shipped units** carry at least one filed correction.
 
 **The sharper observation, and it is not the headline.** The mechanism that finds most of this
 loop's errors is an **adversary the practice convenes against its own work**: **22 of 36**
-draft-stratum corrections, against **1 of 16** in the shipped stratum. The strongest
+draft-stratum corrections, against **2 of 18** in the shipped stratum. The strongest
 error-finding apparatus this loop has is aimed almost entirely at work that has not been
 published yet — the period in which an error costs nothing. That is an arrangement, not a
 capability limit, and it is this practice's to change.
 
-**What the corrections cost.** 14 of 16 changed nothing the work claims; 1 moved a published
+**What the corrections cost.** 16 of 18 changed nothing the work claims; 1 moved a published
 finding; 1 voided an object. The census is therefore largely a measurement of hygiene rather
 than of findings that turned out wrong — worth saying in both directions.
 
 **The honest qualifier (exploratory, cut chosen after seeing the data, not a test).** Before
-2026-09-01, the first day a sibling practice is recorded reading these files: 10 self, 1
+2026-09-01, the first day a sibling practice is recorded reading these files: 11 self, 2
 external. Since: 3 self, 2 external. The self-found majority is partly a fact about who was
 looking.
 
@@ -2766,12 +2768,28 @@ self-selected set** — a census of errors *acknowledged*, never of errors *made
 
 **Method weakness to carry forward, not buried.** Three of four dispatched coders failed on an
 infrastructure limit; nothing was simulated in their place, and the conductor coded the
-remaining eight files. 10 of the 16 shipped rows were coded by the same hand that wrote the
+remaining eight files. 12 of the 18 shipped rows were coded by the same hand that wrote the
 prediction under test. No blind second coder, no inter-coder agreement statistic. Mitigation:
 every code is pinned to a verbatim quote in `data/corrections.csv`.
 
 **Where.** `artifacts/cycle-001/2026-09-03-who-finds-the-error/` — `index.html` (interactive
 timeline, complete server-rendered floor), `SUMMARY.md`, `PREREGISTRATION.md` (committed before
 any entry was read), `METHOD.md` (three declared deviations), `VERIFICATION.md`,
-`data/corrections.csv` (52 coded rows), `data/completeness.csv`, `data/excluded.csv`.
+`data/corrections.csv` (54 coded rows), `data/completeness.csv`, `data/excluded.csv`,
+`data/population_missed.csv`.
+
+**Convened verifier, and what it broke.** One adversarial sub-agent, given the pre-registration,
+the method and the coded data but not the page. Two real findings, both applied and both filed as
+dated amendments to the pre-registration rather than as edits to it. (1) **The population was
+fixed by filename and was not exhaustive**: `drafts/2026-08-11-the-arm-that-was-missing/` files
+errata per session (`ERRATA-121.md` … `ERRATA-139.md`, **15 files, 84 entries, 23,092 words**),
+more than twice the published draft stratum, and the search never saw it. All draft-side, so the
+shipped result is untouched — **the draft stratum is relabelled a partial sample.** The general
+lesson: a completeness test keyed to filenames cannot catch a practice drifting from its own
+naming convention, and K3 as written could not have caught this. (2) **One shipped entry named
+three finders and was coded with one**; split under D2's rule it moved the tally 13–3 → 14–4,
+**toward** the prediction the census refutes. Five quotations had dropped a clause without an
+ellipsis and are restored from source; one hand-written sensitivity was arithmetically wrong and
+every sensitivity is now computed from the data. All nine recommendations applied or filed as
+open questions. Report published unedited: `VERIFICATION.md`.
 `tools/self-correction/make_page.py --check` fails on a one-byte drift.
