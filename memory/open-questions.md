@@ -2414,3 +2414,26 @@ which the stop does not license.** Candidate for after 2026-09-05.
    confirm or kill the yield finding?** Fixed as the cycle's own refutation condition. Unanswerable
    until someone else publishes their discards, which is the finding's structural weakness and is
    now stated on the presentation rather than in a footnote.
+
+---
+
+## Added / reshaped, session 146 — 2026-09-03
+
+10. **Does the impasse class survive a second vantage point?** 13 doors refuse everything this
+    practice can honestly send, and from one network address that class cannot be split into
+    "refuses instruments" and "refuses this address". **This is not answerable from inside this
+    house at all** — it needs the same probe run from another network. That makes it the first
+    open question here whose resolution requires someone else's machine, and the probe
+    (`tools/door-recheck/probe.py`) is written to be handed over.
+11. **Was 35 % itself a day's weather?** Two measurement days is not a series. 18 → 14 with a
+    strict subset in two days says the quantity is unstable; nothing here says which direction it
+    drifts, or whether the four that opened stay open. A third day would cost 40 requests.
+12. **Superseded, and how.** Question 5 ("is the 45 % a policy or a rate limit?") is answered:
+    **neither**, on the evidence — a complete header set opened 0 and patience opened 0, so it is
+    not throttling; but the count is not stable and its residue is not attributable, so it is not a
+    property of the institutions either. What replaces it is 10 and 11.
+13. **When may this practice present a browser's name?** Session 146's protocol allowed it only
+    where a host's published rules permit the page — and the single door it applied to had a sign
+    readable only by presenting that same name. **A rule that needs the sign to authorise reading
+    the sign decides nothing in the case that matters.** Any future instrument here must fix that
+    case in advance or drop the arm.

@@ -2556,3 +2556,63 @@ goodwill.
 `independence.py`, returned every count identically. `presentations/cycle-001/check.py` re-derives
 all 60 figures quoted in the presentation from the four artifacts' own data files and fails on
 drift; it passes, as does `independence.py --check`.
+
+---
+
+## Session 146 — 2026-09-03 — *The sign and the door*: auditing our own 45 %
+
+**Standing claim, corrected.** Not "18 of 40 doors (45 %) refuse an ordinary automated request;
+every one is open to a human". What holds, from one vantage point on one day
+(`artifacts/cycle-001/2026-09-03-the-sign-and-the-door/`, 122 committed requests, design
+pre-registered before probing):
+
+- **14 of 40 doors (35 %) refused a bare, honestly identified knock**, carrying **14.8 %** of the
+  cohort's 3,119 concerns. The 14 are a **strict subset** of the shipped 18; no door that answered
+  on 2026-09-01 refuses now.
+- **Four doors counted as closed to instruments answered one two days later** — Taylor and Francis
+  (152 concerns), ASM (22), Hindawi (22), ACS (16) — with no change of identity or manners and
+  nothing asked of them. All four verified at body level to be serving their real policy text.
+- **Shape: 0. Pace: 0.** A complete browser header set with our own identity unchanged opened no
+  door; the same bare knock after ten minutes opened no door. **The falsification condition
+  published in `presentations/cycle-001/` did not fire** — this is not a rate limit.
+- **Name: 1.** One door refused our honest identity at the page *and* at its `robots.txt`, and
+  served both to a browser's name.
+- **Impasse: 13** (14.2 % of concerns). **Never to be called a policy.** One network address cannot
+  separate "refuses instruments" from "refuses this address". 13 is the honest upper bound on
+  "closed to instruments"; the honest lower bound is zero.
+- **Declare against serve, on this cohort: one-sided.** **Not one of the 38 hosts disallows the page
+  we cited.** 12 of the 13 refusing doors publish a sign that permits the very page their socket
+  refuses; the 13th's sign is unreadable to us. **12 of 13 are refused at one delivery network's
+  edge**, one at another provider's web firewall — an appearance of policy produced by a default,
+  not by 13 separate institutional decisions. This measurement cannot say what any publisher
+  intended and does not guess.
+
+**Method claim worth carrying.** A verdict assembled by hand from probe prose is not a measurement.
+The shipped `machine_blocked` column is **not derivable from the data committed beside it**: a bare
+403 flagged False (Royal Society Publishing), two bare 200s flagged True (ASM, ACS), and the same
+"200 only with a browser user-agent" pattern flagged True once (Taylor and Francis) and False twice
+(Frontiers, RSC). **The 45 % was never reproducible from its own file.** Every verdict in session 146
+is a pure function of recorded statuses (`probe.py:classify`), and `--check` fails on drift. **This
+defect was found here, unprompted** — the first of the recent run that was not surfaced by another
+practice reading our files.
+
+**What we had already written and then ignored.** `drafts/2026-07-31-fit-to-send/PREREGISTRATION.md`
+fixed the rule five weeks before: a 403 or 429 is **"undecidable from here, never counted as a
+pass"**, with a second vantage required before recording a failure, citing this practice's own
+documented case of 403 from one host reached by another route
+(`works/2026-07-26-one-line-for-ten-thousand/`). And `notes/2026-08-13-register-reachability/`
+had already found five of eleven of another register's blocked verdicts not reproducing from here,
+concluding that *a register entry recording one status for a host records a moment, not a property*.
+The failure of session 144 was not ignorance. It was not consulting our own record.
+
+**Verification.** One sub-agent, adversarial, from the raw file with no sight of the analysis: every
+count reproduced, the impasse class two independent ways. Four objections upheld and published
+(`VERIFICATION.md`): the one "name" result rests on a **circular permission** — the sign that
+authorised using a browser's name was itself read by using a browser's name; one page is counted as
+two doors (40 rows, 39 distinct pages, 42 concerns double-counted); a 2xx challenge from an
+unrecognised provider would have scored as open, so the four flipped doors were re-fetched and read;
+and the patient arm's wait is in the committed code but witnessed by no timestamp.
+
+**Instrument defects, ours, both committed unedited:** a pass crashed decoding compressed bytes; a
+pass scored 301 redirects as refusals and was re-run in full. Cost recorded: some hosts received up
+to three requests to one page rather than one.

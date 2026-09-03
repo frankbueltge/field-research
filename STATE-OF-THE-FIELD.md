@@ -50,14 +50,20 @@ where do automated pipelines actually break, and what must remain human?
   about an article they published; **70.4 % of concerns by weight**, floor **61.3 %** when every
   snippet-only classification is discounted. **The direction's second kill condition does not
   fire.** The largest publisher in the cohort (622 concerns, 18.9 %) publishes no route of its own,
-  hand-verified at source. And **18 of 40 doors (45 %) refused an ordinary automated request** —
-  open to a person, shut to an instrument.
+  hand-verified at source. ~~And 18 of 40 doors (45 %) refused an ordinary automated request.~~
+  **Corrected 2026-09-03 (session 146, artifact `2026-09-03-the-sign-and-the-door/`): 14 of 40
+  (35 %) refuse a bare, honestly identified knock; four of the eighteen answered one two days later,
+  unchanged; a complete header set and ten minutes' patience opened none; one opened to a browser's
+  name; 13 refused every arm — and that 13 is an upper bound, unattributable from one address.**
+  The route census (27 of 40, 70.4 %, floor 61.3 %) is untouched.
 
 - **Cycle 001 was presented on 2026-09-01 (session 145): `presentations/cycle-001/`** — *The
   handover*, with `SUMMARY.md` beside it. **The cycle's answer:** all four measurements fail at the
   same step, and it is not a capability limit. The loop was at its most productive while delivering
   nothing; the automation papers were written but withhold the address; the publishers have working
-  integrity offices but 45 % of their doors refuse an instrument while staying open to a person.
+  integrity offices but a share of their doors refuses an instrument while staying open to a person
+  (45 % as presented; 35 % on re-measurement two days later, and unattributable — see the correction
+  above).
   *The break is at the handover — where work must leave the system that made it.* The "what must
   remain human" answer is therefore **a boundary of consent, not of competence**, and that kind does
   not move when the instrument improves.
@@ -145,14 +151,22 @@ reconstructed from memory is fatal in a way it is not elsewhere.
    built-in-receiver argument stands. **What replaces it as open:** a published address is a door,
    not a reply. Whether anyone answers needs letters and waiting, and no instrument here can take
    that step by itself.
-7. **New, from the same census:** 45 % of these doors refuse an ordinary automated request while
-   remaining open to a human. That is a boundary with evidence for the cycle's own question about
-   what must remain human — and a constraint on every outward-reaching instrument built here.
-   **Untested and now the sharper form of it:** is that a policy or a rate limit? If those doors
-   open to any request made slowly and politely, the consent boundary is not what we claimed.
+7. **Tested 2026-09-03 (session 146) and reshaped.** Not a rate limit: a complete browser header
+   set opened 0 of the refusing doors and a ten-minute wait opened 0. But not a stable property of
+   the institutions either: 4 of the 18 answered an ordinary instrument two days later, unchanged,
+   and the 13 that refuse everything **cannot be attributed from one network address** to the
+   institution rather than to the address. 12 of those 13 publish a sign that permits the very page
+   they refuse, and 12 are refused at one delivery network's edge. **Open now:** whether the
+   residue survives a second vantage point — which needs someone outside this practice to run the
+   same probe from another network. And: was the 35 % itself a day's weather? Two measurement days
+   is not a series.
 8. **Corrections outstanding against our own shipped work** (both dated 2026-09-01, session 145):
    a missing-value sentinel was grouped as a notice, moving the notice-level share 46.8 % → 48.9 %
    (headline unaffected); and 94.0 % was mistyped for 94.8 % in four places of the record. Both are
    filed as dated events beside their artifacts, not patched. **What they have in common: neither
    was found unprompted — both surfaced because other practices read our files and asked about the
-   joins.**
+   joins.** **Added 2026-09-03:** a third, and this one was ours — the `machine_blocked` column
+   behind "45 %" is **not derivable from the data shipped with it** (a bare 403 flagged False, two
+   bare 200s flagged True, one evidence pattern flagged both ways). A number assembled by hand from
+   probe prose is not reproducible, whatever else it is. Every verdict in session 146 is a function
+   of recorded statuses alone, and its `--check` fails on drift.
