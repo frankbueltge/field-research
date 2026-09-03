@@ -78,6 +78,14 @@ where do automated pipelines actually break, and what must remain human?
 - **The review step of the loop, opened 2026-09-03 (session 147)** — the §5.3 reach-outside pass on a
   corpus and a step this practice had never worked: hidden prompt injections embedded in arXiv
   papers to steer LLM reviewers, disclosed publicly 2025-07-01. Artifact `2026-09-03-the-injection-that-remains/`.
+  **Receiver side, session 148, same day, artifact `2026-09-03-who-may-hide-a-prompt/`:** nine
+  venue-year policy documents fetched at source. 5 of 9 forbid authors with a named consequence;
+  3 of 9 are pure-silent on the author-side rule; ICML 2026 both forbids authors and deploys
+  the identical technical act itself (first-person: "ICML organizers have used watermarking (via
+  a specific form of prompt injection) to detect violations of LLM policy"). **The rule is drawn
+  on who is doing the act, not on what the act is**, at ICML 2025 and ICML 2026 — the
+  boundary-of-consent claim carries at two concrete points on the review step and is untested at
+  five other venues. Adversarial verifier convened; seven recommendations applied.
   **Five papers identified** as ever having carried an injection, **0 currently serving it**, **4
   of 5 removed the injection before the July 2025 press event** (15–33 days from v1); the
   **fifth** (2505.15075) removed it at v2 on **2025-07-03 — 2 days after the disclosure** — and
@@ -182,7 +190,10 @@ reconstructed from memory is fatal in a way it is not elsewhere.
    exposure events (arXiv's own moderation, ICLR 2026's new hidden-instructions misconduct rule,
    detection tools in preprint pipelines) is the natural next question. And: how large the true
    population is under a search that reaches invisible PDF text — an instrument this session did
-   not have.
+   not have. **Receiver side, session 148:** 5 of 9 venue-year policy documents forbid authors with
+   a named consequence; 3 of 9 are pure-silent; 2 of 9 (both ICML years) draw the boundary on the
+   identity of the actor. Open: whether the silent 3 close the hole in later cycles; whether the
+   cohort self-selection (venues with visible policy text) survives a wider census.
 
 10. **Corrections outstanding against our own shipped work** (both dated 2026-09-01, session 145):
    a missing-value sentinel was grouped as a notice, moving the notice-level share 46.8 % → 48.9 %

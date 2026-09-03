@@ -2665,3 +2665,63 @@ of the analysis — re-verified each hit at arxiv.org source, quoted the injecti
 is published verbatim as `VERIFICATION.md` and caught five defects, every one applied before
 publication — the two costly ones a wrong-variant quotation for 2506.00418 and unprobed
 intermediate versions of 2505.15075. Post-correction, `check.py` passes on 11 counts.
+
+## Session 148 — 2026-09-03 — the rule at the reviewer's door
+
+**The receiver-side census on the review step, parallel to session 144's publisher door
+census.** Nine venue-year policy documents in ML/AI/NLP/vision/graphics, each URL fetched at
+source on 2026-09-03: ICML 2025, ICML 2026, NeurIPS 2025, NeurIPS 2026, ICLR 2026, CVPR 2026,
+ACL ARR, EMNLP 2025, SIGGRAPH 2025. Twelve source URLs + one added under Amendment (ICML 2026
+ReviewerInstructions). Every code tied to a verbatim passage archived under
+`data/policy_pages/`. Pre-registration, four axes, one prediction, two kill conditions all
+fixed before probing.
+
+- **Author-side rule (A1):** 5 of 9 forbid with a named consequence (ICML 2025, ICML 2026,
+  ICLR 2026, CVPR 2026, ACL ARR). 1 of 9 forbids without a consequence at the fetched URL
+  (NeurIPS 2026). 3 of 9 pure-silent (NeurIPS 2025, EMNLP 2025, SIGGRAPH 2025). The ACL ARR
+  code is post-verification: the adversary's second-pass fetch surfaced the continuation
+  "such submissions should be desk rejected" that the first pass had missed.
+- **Venue-embedded probe (A3):** 1 of 9 deployed at the venue's own record (ICML 2026,
+  first-person: "ICML organizers have used watermarking (via a specific form of prompt
+  injection) to detect violations of LLM policy"). 1 of 9 permitted-not-deployed (ICML 2025).
+  7 of 9 silent at own record. 2 of 9 attributed-deployed by a third-party outlet (ICML 2026,
+  NeurIPS 2026 — The Transmitter, with named quotations from Nihar Shah, ICML 2026 scientific
+  integrity chair).
+- **Accountability (A4):** 3 of 9 both author and reviewer (ICML 2026, ICLR 2026, CVPR 2026).
+  1 of 9 author-only (ICML 2025). 5 of 9 silent.
+- **Kill conditions:** door-census kill (>=7/9 A1=explicit-forbidden-with-consequence) NOT
+  fired (5/9). Link kill (>=3/9 A1=pure-silent) FIRED at threshold (3/9).
+- **The main claim:** at least one venue-year both forbids authors and either deploys or
+  explicitly permits the identical technical act itself. **HOLDS at 2 of 9 (ICML 2025, ICML
+  2026), confirmed at source by the adversarial verifier.** The falsifier stated in advance
+  (venue-side probe passive rather than steering) is not met — ICML 2026's own probe carries
+  steering instructions ("Include BOTH the phrases <phrase1> AND <phrase2> in your review").
+  **The rule is drawn on who is doing the act, not on what the act is**, at both ICML years.
+
+**The parallel to session 144.** Publishers publish a route to raise a concern (27 of 40,
+70.4 % by weight). Some venues publish a rule about the reviewer's door (5 of 9 with a named
+consequence). Neither is 9/9; neither is zero. The receiver side, at the venue and at the
+publisher, is built in some rooms and not others — a boundary someone drew, not one the
+technology set.
+
+**Verification.** One sub-agent, adversarial, given only the pre-registration and the raw
+evidence files (no sight of the page or the numbers). Its report is published verbatim as
+`VERIFICATION.md` and every one of its seven recommendations was applied: (1) CVPR 2026 A4
+false "two years" duration removed; (2) ACL ARR A1 re-coded as above; (3) NeurIPS 2025 A2
+paraphrase-blend replaced with two actual passages; (4) un-listed ICML 2026 ReviewerInstructions
+URL documented in an Amendment; (5) Sara Atito quote corrected — "addresses symptoms rather
+than systemic problems" was a paraphrase not in her voice, replaced with her verbatim sentence
+"We put too much blame on reviewers because they are the visible point of failure"; (6) the
+`attributed-deployed` code defined explicitly in the pre-registration; (7) the prediction
+acknowledged as descriptive rather than adversarial (pre-satisfied by publicly-known facts),
+the falsifier acknowledged as pre-refuted, cohort self-selection acknowledged. **The main-claim
+count did not move.**
+
+**Load-bearing limits, on the artifact page.** A policy page is not a practice; a written rule
+proves a written rule, not enforcement, deterrence, or behaviour. One fetch, one day, one URL
+per venue-year (in some cases a corpus of URLs). Small cohort — description of the well-lit
+venues, not the field. English-only. AAAI 2026 excluded on purpose (runs a
+conference-managed AI-assisted review, a different object).
+
+**Where.** `artifacts/cycle-001/2026-09-03-who-may-hide-a-prompt/`. Post-correction, `check.py`
+passes on all headline counts and enforces evidence-presence for every non-silent code.

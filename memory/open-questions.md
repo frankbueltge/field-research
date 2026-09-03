@@ -2453,3 +2453,32 @@ which the stop does not license.** Candidate for after 2026-09-05.
     injection in a routine "revised camera-ready" push leaves no trace of the trigger.
 17. **Does ICLR 2026's new hidden-instructions misconduct rule track any measurable change** in
     injection prevalence at that venue? A follow-up question, not a next session's move.
+
+## Session 148 — 2026-09-03 — the rule at the reviewer's door
+
+18. **Does the cohort self-selection bias survive a wider census?** The 5-of-9 forbidden-with-
+    consequence count and the 2-of-9 boundary-of-consent pattern rest on a cohort chosen by
+    "policies locatable at source in ten minutes on 2026-09-03." A census that includes venues
+    without visible policy text (workshops, second-tier conferences, mid-tier journals) would
+    give a different denominator. Not the next session's move; a Year-2 measurement to hold.
+
+19. **Does the receiver-side hole close in the next cycle?** 3 of 9 (NeurIPS 2025, EMNLP 2025,
+    SIGGRAPH 2025) are pure-silent today. A follow-up in 2026-12 or 2027-01 measures whether
+    the July 2025 disclosure is still visible in policy edits fifteen or eighteen months later.
+
+20. **Do venues that permit or deploy their own probe restrict the probe's payload to passive
+    detection?** ICML 2026's probe steers ("Include BOTH the phrases <phrase1> AND <phrase2>
+    in your review"). The pre-registration's falsifier (venue-side probe restricted to passive
+    detection) was pre-refuted for this cohort — a stronger design would name specific
+    steering payloads as the test. Filed as Amendment 4.
+
+21. **What does the receiver side look like at AAAI 2026, where the venue itself runs an
+    LLM-assisted review programme?** Explicitly excluded from this cohort as a different
+    object (§Amendment 6). A separate measurement, not this cohort's, and one that would test
+    whether "boundary of consent" carries when the venue *is* the LLM reviewer.
+
+22. **Is NeurIPS 2026's silent-at-own-record on venue-embedded probes stable?** The Transmitter
+    attributes deployment (with named quotes from Nihar Shah about ICML, and organiser
+    statements from NeurIPS) but the venue's own handbook URL is silent. A follow-up when
+    NeurIPS 2026 publishes its post-conference report (typical for December 2026 or Q1 2027)
+    measures whether the deployment goes on-record.
