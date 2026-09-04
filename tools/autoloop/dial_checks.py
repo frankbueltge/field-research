@@ -10,7 +10,13 @@ anything the pre-registration did not decide in advance. Run:
 import argparse
 import json
 import math
+import os
 import statistics
+import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import dial                                                              # noqa: E402
+from stats import benjamini_hochberg                                     # noqa: E402
 
 
 def through_origin(ks, ys):
@@ -21,6 +27,23 @@ def through_origin(ks, ys):
     ss_res = sum((y - b * k) ** 2 for k, y in zip(ks, ys))
     ss_tot = sum(y * y for y in ys)                  # about zero, as the model has no intercept
     return b, (1 - ss_res / ss_tot if ss_tot else None)
+
+
+def centered(ks, ys):
+    """Ordinary least squares WITH an intercept, and the conventional mean-centred R^2.
+
+    Added 2026-09-04 after a convened adversary showed the through-origin R^2 above is the
+    lenient convention: its denominator is dominated by the largest-k point, so a large
+    relative distortion at small k barely moves it. Both are now reported, always.
+    """
+    n = len(ks)
+    mk, my = sum(ks) / n, sum(ys) / n
+    sxx = sum((k - mk) ** 2 for k in ks)
+    b = sum((k - mk) * (y - my) for k, y in zip(ks, ys)) / sxx
+    a = my - b * mk
+    ss_res = sum((y - (a + b * k)) ** 2 for k, y in zip(ks, ys))
+    ss_tot = sum((y - my) ** 2 for y in ys)
+    return b, a, (1 - ss_res / ss_tot if ss_tot else None)
 
 
 def paired_mean_diff(a, b):
@@ -65,6 +88,69 @@ def variance_ratio_bootstrap(a, b, reps=2000, seed=20260904):
             "ci95": [lo, hi], "bootstrap_replicates": len(ratios)}
 
 
+def dedup_sensitivity(space_name, d):
+    """Does P4's answer depend on WHICH copy of a duplicated question is kept?
+
+    Added 2026-09-04 after an adversary showed the canonical-order rule was not tested.
+    Three rules: first appearance (as run), the copy with the smallest p, the copy with the
+    largest p. If the three disagree, "BH is self-correcting for exact duplicates" is a
+    property of this data, not a guarantee.
+    """
+    space = dial.SPACES[space_name]
+    tests = d["tests"]
+    questions = dial.enumerate_questions(space)
+
+    def bh_over(keys):
+        ks_ = [k for k in keys if tests.get(k) and tests[k]["p"] is not None and not tests[k]["failures"]]
+        ps = [tests[k]["p"] for k in ks_]
+        return {ks_[i] for i in benjamini_hochberg(ps, 0.05)}
+
+    by_pair = {}
+    for g, o in questions:
+        by_pair.setdefault(dial.var_pair(space, g, o), []).append(f"{g}|{o}")
+
+    out = {}
+    for rule in ("first", "min_p", "max_p"):
+        reps = []
+        for _vp, keys in by_pair.items():
+            avail = [k for k in keys if tests.get(k) and tests[k]["p"] is not None]
+            if not avail or rule == "first":
+                reps.append(keys[0])
+            elif rule == "min_p":
+                reps.append(min(avail, key=lambda k: tests[k]["p"]))
+            else:
+                reps.append(max(avail, key=lambda k: tests[k]["p"]))
+        s = bh_over(reps)
+        out[rule] = {"survivors": len(s),
+                     "distinct": len({dial.var_pair(space, *k.split("|")) for k in s})}
+    out["invariant_across_rules"] = len({v["survivors"] for v in
+                                         (out["first"], out["min_p"], out["max_p"])}) == 1
+    return out
+
+
+def trim_control(d):
+    """Is the post-hoc 'claimable questions' rate a transfer result, or just a trimmed mean?
+
+    Added 2026-09-04 after an adversary's objection. Control: drop the N questions with the
+    LOWEST null rate, where N is the number the review actually killed, with no reference to
+    the pre-conditions at all. If the control lands where the principled restriction lands,
+    the restriction is not evidence of anything about the architecture.
+    """
+    pq = d["per_question_null_rate"]
+    tests = d["tests"]
+    killed = [k for k in pq if tests[k]["failures"]]
+    kept = [k for k in pq if k not in killed]
+    n = len(killed)
+    vals = sorted(pq.values())
+    return {
+        "whole_space": sum(vals) / len(vals), "n_whole": len(vals),
+        "claimable": (sum(pq[k] for k in kept) / len(kept)) if kept else None, "n_claimable": len(kept),
+        "killed": (sum(pq[k] for k in killed) / n) if n else None, "n_killed": n,
+        "naive_drop_lowest_n": (sum(vals[n:]) / len(vals[n:])) if n < len(vals) else None,
+        "dead_questions": sorted(k for k, v in pq.items() if v == 0.0),
+    }
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--sweeps", nargs="+", required=True)
@@ -89,8 +175,11 @@ def main():
         for fam in ("lean", "dense"):
             ys = [d["null"][f"{fam}@{k}"]["mean"] for k in ks]
             b, r2 = through_origin(ks, ys)
+            cb, ca, cr2 = centered(ks, ys)
             p1[fam] = {"slope": b, "r2": r2, "means": ys,
-                       "slope_in_band": 0.045 <= b <= 0.055, "r2_ok": r2 >= 0.99}
+                       "slope_in_band": 0.045 <= b <= 0.055, "r2_ok": r2 >= 0.99,
+                       "centered_slope": cb, "centered_intercept": ca, "centered_r2": cr2,
+                       "centered_r2_ok": cr2 >= 0.99}
         arm["P1"] = p1
 
         # --- P2 / P3: the matched-redundancy contrast at k = 30 ------------------------
@@ -154,6 +243,11 @@ def main():
             "above_0.08": sum(1 for v in vals if v > 0.08),
             "lowest_five": rates[:5], "highest_five": rates[-5:],
         }
+        arm["P4_representative_sensitivity"] = dedup_sensitivity(space, d)
+        arm["posthoc_trim_control"] = trim_control(d)
+        # the pairing claim, checked rather than asserted: lean@66 and dense@66 are the same
+        # question set, so their count vectors must be identical if the stream really is shared
+        arm["pairing_verified"] = (d["null"]["lean@66"]["counts"] == d["null"]["dense@66"]["counts"])
         checks["arms"][space] = arm
 
     # cross-arm: do the two per-test intervals overlap?

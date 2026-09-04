@@ -16,6 +16,22 @@ once per cycle.
 Every failure is recorded in the break log rather than raised, so that a stage failure is a
 measurement of the loop and not the end of the run.
 
+KNOWN DEFECT, found 2026-09-04 by a convened adversary, AFTER the session-151 corpus was fetched
+and NOT repaired here, so that the committed corpus and the code that produced it still match:
+
+  (1) `sort=deposited&order=desc` with a 300-record cap returns each member's most recently
+      DEPOSITED slice, not a spread across `from-pub-date`. In the 2026-09-04 corpus, 1,485 of the
+      1,921 dated records fall on day-of-year 240 or later - the last eight days of a fourteen-week
+      window - and MDPI's 300 records span six days. A future run that wants the window it names
+      must page across it (or sort by issue date, or use Crossref's `sample`), not take the head.
+  (2) `_doy` swallows every exception, so a member depositing partial date-parts yields
+      `published_doy: None` for all its records with NOTHING in the break log. In the same corpus
+      Elsevier is 0 of 300 dated. Missingness that is total and publisher-shaped should be a
+      logged break, not silence.
+
+Both are published in `artifacts/cycle-002/2026-09-04-the-dial/` (page section 7) and in that
+artifact's VERIFICATION.md. Repair them in the session that next needs this fetcher, and say so.
+
 Usage:  python3 tools/autoloop/fetch_crossref.py --out <corpus.json> [--per-member 300]
 """
 

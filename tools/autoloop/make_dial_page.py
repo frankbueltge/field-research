@@ -230,10 +230,15 @@ def build(d):
 
     verdicts = [
         ("P1", "the dial is a line: null yield linear in k, slope 0.045&ndash;0.055, R&sup2;&nbsp;&ge;&nbsp;0.99",
-         "part", "held on arXiv, half-failed on Crossref",
-         f'arXiv slope <b>{ca["P1"]["lean"]["slope"]:.5f}</b> (R&sup2; {ca["P1"]["lean"]["r2"]:.5f}); '
-         f'Crossref slope <b>{cc["P1"]["lean"]["slope"]:.5f}</b> (R&sup2; {cc["P1"]["lean"]["r2"]:.5f}). '
-         "Both are lines; the Crossref slope falls outside the registered band."),
+         "part", "held on arXiv; on Crossref it depends on which R&sup2;",
+         f'arXiv slope <b>{ca["P1"]["lean"]["slope"]:.5f}</b>, through-origin R&sup2; '
+         f'{ca["P1"]["lean"]["r2"]:.5f}, centred R&sup2; {ca["P1"]["lean"]["centered_r2"]:.5f} &mdash; over the '
+         f'bar either way. Crossref slope <b>{cc["P1"]["lean"]["slope"]:.5f}</b>, through-origin R&sup2; '
+         f'{cc["P1"]["lean"]["r2"]:.5f} (over) but <b>centred R&sup2; {cc["P1"]["lean"]["centered_r2"]:.5f}</b> '
+         "(under). The pre-registration named the through-origin model, so the registered verdict is "
+         "“half-held” &mdash; slope outside the band, R&sup2; inside it &mdash; but an adversary was "
+         "right that the through-origin R&sup2; is the lenient convention, and both are now published. "
+         "See section 9."),
         ("P2", "redundancy taxes the variance: at k&nbsp;=&nbsp;30, dense variance &ge; 10&nbsp;% above lean",
          "ref", "refuted on both",
          f'variance ratio <b>{ca["P2"]["ratio"]:.3f}</b> '
@@ -256,14 +261,20 @@ def build(d):
          f'{ca["P4"]["bh_survivors_dedup51"]} over 51 &mdash; and <b>the distinct claim set is the same either '
          f'way ({ca["P4"]["distinct_claims_all66"]} claims)</b>. Crossref: '
          f'{cc["P4"]["bh_survivors_all66"]} against {cc["P4"]["bh_survivors_dedup51"]}, distinct claims '
-         f'{cc["P4"]["distinct_claims_all66"]} either way.'),
+         f'{cc["P4"]["distinct_claims_all66"]} either way. <b>Caveat found by the adversary:</b> that '
+         "holds for the canonical representative and for the smallest-p one, but keeping the "
+         f'<i>largest</i>-p copy instead drops the count to '
+         f'{ca["P4_representative_sensitivity"]["max_p"]["survivors"]} and '
+         f'{cc["P4_representative_sensitivity"]["max_p"]["survivors"]}. Section 4 is corrected '
+         "accordingly."),
         ("P5", "the slope transfers: the Crossref per-test interval contains &alpha; and overlaps arXiv's",
-         "ref", "refuted as registered",
+         "ref", "refuted, and it stays refuted",
          f'arXiv <b>{pct(ca["P5"]["per_test_rate"])}</b> '
          f'({pct(ca["P5"]["ci95"][0])}&ndash;{pct(ca["P5"]["ci95"][1])}), Crossref '
          f'<b>{pct(cc["P5"]["per_test_rate"])}</b> '
          f'({pct(cc["P5"]["ci95"][0])}&ndash;{pct(cc["P5"]["ci95"][1])}). The intervals do not overlap and '
-         f'neither contains 0.05. <b>Why</b> is section 5.'),
+         "neither contains 0.05. Section 6 explains the mechanism &mdash; and shows why the post-hoc "
+         "repair we first offered for it does not rescue the prediction."),
     ]
     vrows = "".join(
         f'<tr><td><b>{p}</b></td><td style="text-align:left">{txt}</td>'
@@ -271,6 +282,19 @@ def build(d):
     vdetail = "".join(f"<h3>{p} &mdash; {lab}</h3><p>{det}</p>" for p, _, _, lab, det in verdicts)
 
     dead_list = ", ".join(f'<span class="k">{esc(x)}</span>' for x in posthoc["crossref"]["dead"])
+
+    # corpus composition, computed here from the committed feature table — the adversary's item 7
+    cross = json.load(open(os.path.join(d, "data", "corpus-crossref.json")))
+    recs = cross["records"]
+    comp = []
+    for m in sorted({r["member"] for r in recs}, key=lambda x: str(x)):
+        sub = [r for r in recs if r["member"] == m]
+        doys = [r["published_doy"] for r in sub if r["published_doy"] is not None]
+        comp.append([esc(cross["member_names"][str(m)]), len(sub), len(doys),
+                     (f"{min(doys)}&ndash;{max(doys)}" if doys else "&mdash;"),
+                     (f"{max(doys)-min(doys)+1} days" if doys else "no dated record")])
+    dated = [r["published_doy"] for r in recs if r["published_doy"] is not None]
+    late = sum(1 for x in dated if x >= 240)
 
     html = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
@@ -348,14 +372,25 @@ containing 1). It did not make loud nights likelier (McNemar p = 0.60 and 0.29).
 single survivor under multiplicity correction &mdash; and this last one is worth stating as a
 positive result rather than a failure, because it is not obvious:</p>
 
-<div class="card"><p><b>Benjamini-Hochberg is self-correcting for exact duplicates.</b> A duplicated
-question adds one test to the denominator and one small p-value to the numerator, and the two
-cancel. Deduplicating the arXiv space from 66 questions to 51 changed the survivor list from
-{ca['P4']['bh_survivors_all66']} entries to {ca['P4']['bh_survivors_dedup51']} &mdash; but the
-{ca['P4']['distinct_claims_all66']} <i>distinct claims</i> behind them are identical, and the
-entries lost were the duplicate copies. On Crossref: {cc['P4']['bh_survivors_all66']} against
-{cc['P4']['bh_survivors_dedup51']}, and {cc['P4']['distinct_claims_all66']} distinct claims either
-way. Redundancy costs no power. It also buys none.</p></div>
+<div class="card"><p><b>Here, Benjamini-Hochberg absorbed the exact duplicates at no cost.</b> A
+duplicated question adds one test to the denominator and one small p-value to the numerator, and
+in this data the two cancelled. Deduplicating the arXiv space from 66 questions to 51 changed the
+survivor list from {ca['P4']['bh_survivors_all66']} entries to
+{ca['P4']['bh_survivors_dedup51']} &mdash; but the {ca['P4']['distinct_claims_all66']} <i>distinct
+claims</i> behind them are identical, and the entries lost were the duplicate copies. On Crossref:
+{cc['P4']['bh_survivors_all66']} against {cc['P4']['bh_survivors_dedup51']},
+{cc['P4']['distinct_claims_all66']} distinct claims either way. Redundancy cost no power here. It
+also bought none.</p>
+<p><b>Corrected the same day, by our own adversary: this is not a theorem, and an earlier draft of
+this page called it one.</b> Deduplication has to keep one copy of each duplicated pair, and the
+result depends on which. Keeping the first in canonical order (as run) or the copy with the
+<i>smallest</i> p both give {ca['P4_representative_sensitivity']['first']['survivors']} survivors
+on arXiv and {cc['P4_representative_sensitivity']['first']['survivors']} on Crossref; keeping the
+copy with the <i>largest</i> p gives {ca['P4_representative_sensitivity']['max_p']['survivors']}
+and {cc['P4_representative_sensitivity']['max_p']['survivors']}. <b>So the cancellation is a
+property that held in this data under the rule we used, not a general guarantee.</b> P4 is still
+refuted &mdash; deduplicating never <i>recovered</i> a survivor under any of the three rules &mdash;
+but the mechanism claimed for it is weaker than first written.</p></div>
 
 <h2>5. What redundancy does do &mdash; and it is not statistical</h2>
 <figure>{fig_counts(sweeps)}
@@ -388,23 +423,40 @@ zero: they cannot fire at all.</figcaption></figure>
 <p>P5 failed because the Crossref space contains <b>{len(posthoc['crossref']['dead'])} questions
 that never fire in {cx['replicates']} empty worlds, and never could</b>:</p>
 <p>{dead_list}</p>
-<p>All of them rest on <span class="k">has_fulltext_link</span>, which is true for
+<p><b>All nine</b> rest on <span class="k">has_fulltext_link</span>, which is true for
 <b>{cx['corpus']['records']:,} of {cx['corpus']['records']:,} records &mdash; 100.0&nbsp;%</b>.
 The grouping divides the corpus into everything and nothing, so no test on it can reject, in an
-empty world or a full one. A ninth question dies for the same reason on
-<span class="k">open_licence</span> (99.7&nbsp;%). Those dead questions are counted in the
-denominator of the loop's self-calibration figure, and they drag it down.</p>
+empty world or a full one. The arXiv space has no question like this: <b>zero</b> of its 66 have a
+null rate of exactly zero, and every one of its groupings has both levels present. Those nine dead
+questions sit in the denominator of the loop's self-calibration figure and drag it down.</p>
 
-<div class="card"><p><b>Post-hoc, and marked as post-hoc &mdash; this restriction was not
-pre-registered.</b> Computed over only the questions that survive the loop's own review
-pre-conditions, the two per-test rates are
-<b>{pct(posthoc['arxiv']['claimable'])}</b> on arXiv ({posthoc['arxiv']['n_claim']} questions) and
-<b>{pct(posthoc['crossref']['claimable'])}</b> on Crossref ({posthoc['crossref']['n_claim']}
-questions). Over the questions the review killed: {pct(posthoc['arxiv']['killed'])} and
-{pct(posthoc['crossref']['killed'])}. <b>The difference between the two worlds vanishes, and both
-land on &alpha;.</b> The slope does transfer &mdash; between the questions that are awake.</p></div>
+<p><b>A tenth grouping is unbalanced but not dead, and an earlier version of this page said
+otherwise.</b> <span class="k">open_licence</span> is true for 2,393 of 2,400 &mdash; 99.7&nbsp;% &mdash;
+and all eight of its questions are killed at review by pre-condition c1 (a group of 7 is smaller
+than 30). But their null rates are 2.75&nbsp;% to 5.5&nbsp;%, not zero: they <i>can</i> fire. The
+draft called it a ninth death "for the same reason", which was wrong on the data committed beside
+this page, and is exactly the distinction this section claims to be drawing. Corrected 2026-09-04;
+see section 9.</p>
 
-<p>Two things follow, and the second is about us.</p>
+<div class="card"><p><b>Post-hoc, and it does not work &mdash; published because we tried it.</b>
+Restricted to the questions that survive the loop's own review pre-conditions, the two per-test
+rates become <b>{pct(posthoc['arxiv']['claimable'])}</b> on arXiv
+({posthoc['arxiv']['n_claim']} questions) and <b>{pct(posthoc['crossref']['claimable'])}</b> on
+Crossref ({posthoc['crossref']['n_claim']} questions) &mdash; the gap between the worlds closes and
+both land near &alpha;. We first wrote that up as "the slope transfers between the questions that
+are awake". <b>A convened adversary killed it the same day with a control we had not run:</b> drop
+simply the {posthoc['arxiv']['n_kill']} (arXiv) and {posthoc['crossref']['n_kill']} (Crossref)
+questions with the <i>lowest</i> null rates &mdash; no pre-conditions, no reasoning, just the
+bottom of each distribution &mdash; and the rates become
+<b>{pct(ca['posthoc_trim_control']['naive_drop_lowest_n'])}</b> and
+<b>{pct(cc['posthoc_trim_control']['naive_drop_lowest_n'])}</b>. The convergence is what trimming
+the low tail of a roughly nominal distribution does, whatever the reason for the trim.
+<b>So the restriction is not evidence that the slope transfers, and P5 stays refuted with nothing
+taken off it.</b></p></div>
+
+<p>What the dead questions do establish is narrower and still worth having: they are <i>why</i> the
+Crossref rate is low, and they are a defect of the question space rather than of the statistics.
+Two things follow, and the second is about us.</p>
 <p><b>First: a question-generating loop cannot tell a question that is asleep from a question
 that was answered no.</b> Both arrive at the analysis stage as a non-finding. Nine of Crossref's
 66 questions were structurally incapable of an answer, and no stage of the loop said so &mdash;
@@ -423,7 +475,29 @@ different number. The lesson is not that either figure is wrong. It is that
 <b>this loop divides counts by a number of questions in several places, and it has never once been
 asked which questions.</b></p>
 
-<h2>7. What this does not show</h2>
+<h2>7. The Crossref corpus is not the corpus we said we were fetching</h2>
+<p>The pre-registration fixed the second corpus as journal articles published since 2026-06-01,
+eight publisher strata, 300 each. The fetcher asked for those and got them &mdash; but it sorted by
+<i>deposit</i> date, newest first, and stopped at 300. For any publisher depositing more than 300
+articles in the window, that returns the most recently deposited slice and not a spread across it.
+An adversary convened against this artifact found the consequence in the committed feature table,
+which is where anyone else would have found it:</p>
+{table(["publisher", "records", "with a resolvable issue date", "day-of-year range", "span"], comp)}
+<p><b>{late:,} of the {len(dated):,} dated records fall on day 240 or later</b> &mdash; the last
+eight days of a fourteen-week window. MDPI's 300 records span six days. <b>Elsevier's 300 records
+carry no resolvable issue date at all</b>: the date parser returns nothing for every one of them,
+and it swallows the failure silently rather than logging a break, so the break log says zero and
+means nothing about this. The missingness is total and perfectly correlated with the publisher.</p>
+<p><b>What this does and does not damage.</b> Nothing in P1&ndash;P5 conditions on the corpus being a
+fair sample of the window: the null world permutes the grouping block within whatever records are
+there, and the linearity, the redundancy results and the per-test rates are all statements about
+that fixed table. But the corpus is described on this page and in the pre-registration as something
+it is not, one of the six outcome variables (<span class="k">published_doy</span>) is missing for an
+eighth of the corpus in a publisher-shaped pattern, and a silent <span class="k">except</span> hid
+it. All three are stated here rather than repaired away; the fetcher carries a dated defect note and
+the corpus is committed exactly as fetched.</p>
+
+<h2>8. What this does not show</h2>
 <p>Two corpora are not loops in general. Both arms are the <i>same</i> loop, with the same battery,
 the same &alpha; and question spaces built to one template; what can transfer is the behaviour of
 that architecture, and nothing here speaks about loops built differently. The redundancy studied is
@@ -431,9 +505,43 @@ that architecture, and nothing here speaks about loops built differently. The re
 questions are strongly correlated without being identical, is untouched by this design, and the
 Benjamini-Hochberg cancellation shown in section 4 is not expected to hold there. Both corpora are
 one day's fetch. The verdicts above are the pre-registered ones; the section-6 restriction is
-post-hoc and is labelled so on the page and in the record.</p>
+post-hoc, failed its control, and is kept on the page as a failed repair rather than removed.</p>
 
-<h2>8. How to check this</h2>
+<h2>9. What an adversary did to this page</h2>
+<p>An adversary was convened against this artifact after it was first built, with the data files and
+the instruments and no instruction to be kind. It attacked eight things and <b>found five defects,
+four of which changed this page</b>. Every one is above, in the section it belongs to, and all of
+it &mdash; including the attacks that failed &mdash; is in <span class="k">VERIFICATION.md</span>
+beside this file. In short:</p>
+{table(["what it attacked", "what it found"],
+       [["the R&sup2; behind P1",
+         "the through-origin R&sup2; is the lenient convention; the centred one puts Crossref at "
+         f"{cc['P1']['lean']['centered_r2']:.3f}, under the registered bar. Both now published (&sect;3)."],
+        ["&ldquo;BH is self-correcting for exact duplicates&rdquo;",
+         "true here, not a theorem: keeping the largest-p copy costs a survivor on both corpora. "
+         "Claim weakened (&sect;4)."],
+        ['the &ldquo;ninth dead question&rdquo; on <span class="k">open_licence</span>',
+         "factually wrong against the committed data &mdash; unbalanced and killed at review, not "
+         "dead. Corrected (&sect;6)."],
+        ["the post-hoc restriction in &sect;6",
+         "a rationale-free trim of the same size does the same thing, and overshoots. The repair is "
+         "void and P5 stays refuted (&sect;6)."],
+        ["the Crossref fetcher",
+         "sorted by deposit date, so the corpus is not the window it claims; Elsevier has no "
+         "resolvable dates at all and the failure was silent. New &sect;7."],
+        ["the paired bootstrap, the exact McNemar, the pairing claim",
+         'attacks failed. <span class="k">lean@66</span> and <span class="k">dense@66</span> count '
+         "vectors are bit-identical, which is only possible if the permutation stream really is shared."],
+        ["K2's rounded interval",
+         "attack failed &mdash; it reproduces the interval session 150 actually published, and the "
+         "verdict holds under both."],
+        ["eighteen numbers on this page against the data files",
+         'attack failed on seventeen; the eighteenth was the <span class="k">open_licence</span> '
+         "sentence above."]])}
+<p>The first version of this page is in the repository's history, unedited. Nothing was removed; the
+wrong sentences were corrected in place with the correction named beside them.</p>
+
+<h2>10. How to check this</h2>
 <p>Everything below is in <span class="k">data/</span> beside this page, and every number on the
 page is read from those files at build time &mdash; nothing is typed in twice.</p>
 {table(["file", "what it is"],
