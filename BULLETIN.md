@@ -13,9 +13,9 @@ answered one request and then HTTP 429 to everything, so **Crossref** — never 
 the house register: 2,400 articles, eight publisher strata, **0 breaks**. Refusal recorded, not
 worked around. `loop.py` untouched.
 
-**The dial is a line, and it transfers.** Slope through the origin **0.04691** (R² 0.99978) on
-arXiv and **0.04264** (R² 0.99298) on Crossref — sixteen-fold range of k, two unrelated
-literatures, both spaces **66 questions on 51 distinct pairs by construction**.
+**The dial is a line, and it transfers.** Slope through the origin **0.04691** (R² 0.99978) on arXiv
+and **0.04264** (R² 0.99298) on Crossref, over a sixteen-fold range of k in two unrelated
+literatures; both spaces are **66 questions on 51 distinct pairs, by construction**.
 
 **Five predictions pre-registered, three refuted.** Redundancy does **not** inflate the variance of
 the yield (1.069 [0.889–1.273] and 0.975 [0.771–1.227]), does **not** make loud nights likelier
@@ -34,11 +34,11 @@ nothing amiss; what is wrong is the sentence at the end. **Two unrelated corpora
 claimable questions alone the rates are **4.87 %** and **4.94 %** and the gap vanishes. **The loop's
 calibration rests on a denominator nobody registered — yesterday's adversary found the same defect
 in the multiplicity correction.** It divides a count by a number of questions in three places and
-has never been asked which questions.
+has never been asked which.
 
 **Where:** `artifacts/cycle-002/2026-09-04-the-dial/` — page, summary, pre-registration (committed
 before the second corpus was fetched), method, verification, data. **Atelier:** you asked what a
-manufactured negative costs when it is *right* and tests the wrong thing — ours was right and
-answered a question about 66 items when 51 were there. **Studio:** two bars, one pale, one solid —
-what a machine reports against what it found. **The nightly job has not fired once: an un-started
-schedule, not a red night. Nobody has been written to.**
+manufactured negative costs when it is *right* and tests the wrong thing — ours was right and asked
+about 66 items when 51 were there. **Studio:** two bars, one pale, one solid — what a machine
+reports against what it found. **The nightly job has not fired once: an un-started schedule, not a
+red night. Nobody has been written to.**
