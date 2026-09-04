@@ -24,16 +24,24 @@ request). Both spaces: 66 questions on 51 distinct pairs, by construction.
 (R² 0.99298) Crossref, across a sixteen-fold range of k in two unrelated literatures. **The
 session's own central claim died by its own falsifier:** P2 (variance ratio 1.069 [0.889–1.273]
 and 0.975 [0.771–1.227]), P3 (McNemar p = 0.60 and 0.29) and P4 all failed, so **redundancy is
-statistically inert** — and **Benjamini–Hochberg is self-correcting for exact duplicates**
-(distinct claim set identical, 11 = 11 and 21 = 21). What redundancy inflates is **the count, not
-the statistics**: 66 questions that are 51, 17 findings that are 14, 13 survivors that are 11
-(Crossref: 28 → 21, 28 → 21). Now measured on two unrelated corpora, so architectural.
-**P5 refuted:** per-test null rates **4.72 %** [4.47–4.98] and **4.08 %** [3.85–4.33], not
-overlapping. **Mechanism, verified:** nine Crossref questions never fire and never could —
-`has_fulltext_link` is true for 2,400 of 2,400 records. *Post-hoc (not pre-registered):* over the
-claimable questions the rates are **4.87 %** and **4.94 %** and the gap vanishes. **The loop's
-self-calibration depends on a denominator nobody registered — the second appearance of the defect
-the adversary found on 2026-09-03.**
+statistically inert**. What it inflates is **the count, not the statistics**: 66 questions that are
+51, 17 findings that are 14, 13 survivors that are 11 (Crossref: 28 → 21 twice). Two unrelated
+corpora, so architectural. **P5 refuted:** per-test null rates **4.72 %** [4.47–4.98] and **4.08 %**
+[3.85–4.33], not overlapping. **Mechanism, verified:** nine Crossref questions never fire and never
+could — `has_fulltext_link` is true for 2,400 of 2,400 records. **The loop's self-calibration
+depends on a denominator nobody registered — the second appearance of the defect the adversary
+found on 2026-09-03.**
+**A convened adversary found five defects; four changed the page, and they are carried here because
+they change what may be said:** (1) the post-hoc "claimable questions" restriction (4.87 %/4.94 %)
+**does not rescue P5** — a rationale-free trim of the same size gives 5.10 %/5.26 %, so the
+convergence is what trimming a tail does; (2) the through-origin R² is the lenient convention —
+**centred, Crossref is 0.981**, under the registered bar; (3) "BH self-corrects for exact
+duplicates" held here under the canonical and smallest-p representative but **not** the largest-p
+one (11 → 10, 21 → 20), so it is not a theorem; (4) the Crossref fetcher sorted by *deposit* date,
+so **1,485 of 1,921 dated records fall in the last eight days** of a fourteen-week window and
+Elsevier's 300 have no resolvable date at all — a known, dated, unrepaired defect in
+`fetch_crossref.py`. Failed attacks are recorded too, including a proof that the permutation stream
+really is shared.
 
 **Question:** *How can end-to-end automation of AI research be realised? Build it, and measure
 where it breaks.* The direction of 2026-09-03 (`REQUESTS.md`) **rests the counter-measurement
@@ -143,10 +151,10 @@ elsewhere.
    next session before treating any gap as data. Session 151's arXiv arm is an independent second
    reading of the same corpus family: 17 raw, 13 BH, 3.11 per null run, 4.72 % per-test.
 2. **What generalises from one loop? — partly answered 2026-09-04.** *Architectural, now measured
-   on two unrelated corpora:* the null yield is linear in k (R² ≥ 0.993); redundancy is
-   statistically inert but inflates the reported count; BH self-corrects for exact duplicates.
-   *Still about us alone:* the denominator problem, and the fact that both spaces were built by
-   the same hand to the same template.
+   on two unrelated corpora:* the null yield is linear in k; redundancy is statistically inert but
+   inflates the reported count. *Held here but not general:* the BH cancellation for exact
+   duplicates. *Still about us alone:* the denominator problem, and the fact that both spaces were
+   built by the same hand to the same template.
 3. **The retrievability series** (17 measurement days, 2 holes): of 28 apparent losses, 11 did not
    survive immediate re-request — single-pass measurement of disappearance is wrong about roughly
    four in ten cases. Whether that ratio is stable is open.

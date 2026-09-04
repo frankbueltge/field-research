@@ -2929,3 +2929,45 @@ queries is not a search.
 same battery, same α, spaces built to one template. The redundancy tested is **exact** duplication;
 near-duplication is untouched and the BH cancellation is not expected to hold there. Both corpora are
 one day's fetch. The questions and the predictions about them were again written by the same practice.
+
+### Session 151 — CORRECTIONS, same day, by a convened adversary
+
+An adversary was convened against the artifact after it was built and committed (`1571e41`), and
+found **five defects; four changed the page.** Every number it reported was recomputed here before
+anything was altered, and every one held. Full account: `VERIFICATION.md` beside the artifact.
+
+1. **The post-hoc restriction does not rescue P5, and the claim above that "the slope transfers
+   between the questions that are awake" is WITHDRAWN.** Control the adversary ran and we had not:
+   drop simply the N lowest-rate questions, N = the review-kill count, with no rationale at all —
+   **arXiv 5.10 %, Crossref 5.26 %**, against the "principled" 4.87 % and 4.94 %. Trimming the low
+   tail of a roughly nominal distribution moves the mean to the bulk whatever the reason for the
+   trim. **P5 stays refuted with nothing taken off it.** The failed repair is kept on the page.
+2. **The through-origin R² is the lenient convention.** Conventional mean-centred R²: arXiv lean
+   **0.99966** (slope 0.04763, intercept −0.0312), Crossref lean **0.98076** (slope 0.04026,
+   intercept +0.1032) — **under the registered 0.99 bar**. The pre-registration named the
+   through-origin model, so the registered verdict stands, but both are now computed and published.
+3. **"Benjamini–Hochberg is self-correcting for exact duplicates" is not a theorem** — withdraw the
+   general form. Survivors by representative rule: first-in-order 11/21, smallest-p 11/21,
+   **largest-p 10/20**. P4 remains refuted (no rule recovered a survivor); the mechanism is a
+   property that held in this data under the rule used.
+4. **The `open_licence` "ninth dead question" sentence was factually wrong** against the data
+   committed beside it. `open_licence` is true for 2,393 of 2,400 (not 2,400); all eight of its
+   questions are killed at review by c1, but their null rates are 0.0275–0.055, none zero. The
+   `has_fulltext_link` claim is exact and unaffected: 2,400 of 2,400, nine questions at rate 0.000,
+   and **zero** arXiv questions at rate 0.000.
+5. **The Crossref corpus is not the corpus the pre-registration describes.** `fetch_crossref.py`
+   sorts by *deposit* date and caps at 300/member, so **1,485 of the 1,921 dated records fall on
+   day-of-year ≥ 240** — the last eight days of a fourteen-week window; MDPI's 300 span six days;
+   **Elsevier's 300 have no resolvable issue date at all**, and `_doy`'s bare `except` swallowed
+   that so the break log says zero and means nothing about it. No P1–P5 verdict conditions on the
+   corpus being a fair time sample, so none moves — but one of six outcome variables is missing for
+   an eighth of the corpus in a publisher-shaped pattern. **Not repaired:** repairing would break
+   the match between the committed corpus and the code that made it; a dated `KNOWN DEFECT` block
+   now stands in the fetcher.
+
+**Attacks that failed, recorded as clean bills:** the paired bootstrap and the exact two-sided
+McNemar (brute-forced against enumeration, 0 mismatches to 30 discordant pairs); **the pairing
+claim — `lean@66` and `dense@66` count vectors are bit-for-bit identical**, which is only possible
+if the permutation stream really is shared, now recomputed every run as `pairing_verified`; K2's
+rounded interval (it reproduces what session 150 actually published, verdict unaffected); and
+seventeen of eighteen page numbers spot-checked against the data files (the eighteenth was defect 4).
