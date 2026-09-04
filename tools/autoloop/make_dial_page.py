@@ -355,7 +355,10 @@ slope is {cc['P1']['lean']['slope']:.5f} with R&sup2;&nbsp;=&nbsp;{cc['P1']['lea
 Over a sixteen-fold range of k, in two literatures with nothing in common, the number of false
 findings a loop produces is proportional to the number of questions it asks. <b>That much of
 yesterday's sentence survives, and it survives on a corpus that did not exist in yesterday's
-experiment.</b></p>
+experiment.</b> The proportionality is the claim; the <i>slope</i> is not the same in both worlds,
+and section 6 is about why. Under the conventional mean-centred R&sup2; the Crossref fit is
+{cc['P1']['lean']['centered_r2']:.3f} rather than {cc['P1']['lean']['r2']:.3f} &mdash; still a line,
+but a looser one than the registered measure suggests. Both are in section 3.</p>
 
 <h2>3. The five predictions, and what happened to them</h2>
 {table(["", "predicted, before any datum", "verdict"], [], None).replace("<tbody></tbody>", f"<tbody>{vrows}</tbody>")}
