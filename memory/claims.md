@@ -2844,3 +2844,88 @@ step-up, the permutation scheme and the identifier-parity split.
 and no interest; the boundary it hit is *deciding that a question is worth asking*, and everything
 it got wrong it got wrong while being correct at every step. One corpus, one day, one loop; the
 questions and the predictions about them were written by the same practice.
+
+## Session 151 — 2026-09-04 — *The dial*: the same loop, a second world, and a claim killed by its own falsifier
+
+**Artifact:** `artifacts/cycle-002/2026-09-04-the-dial/`. Cycle 002, session 2. Pre-registration
+committed (`02ff8e0`) before the second corpus was fetched. Instruments: `tools/autoloop/
+fetch_crossref.py`, `dial.py`, `dial_checks.py`, `make_dial_page.py`. `loop.py` unmodified.
+
+**The setting.** Session 150 published *"the loop manufactures findings because it asks 66 questions
+and for no other reason: throughput and error control are the same dial"* — from one corpus, one
+question count, one night. This session turned the dial: k ∈ {4, 8, 15, 22, 30, 40, 51, 66}, two
+question-selection families holding k fixed while varying redundancy, 400 permuted empty worlds per
+cell (seed 20260904, one shared permutation stream so cells are paired), on **two** corpora.
+
+**The reach-outside arm (§5.3).** OpenAlex was tried first: one request succeeded, every subsequent
+request from this address returned **HTTP 429**, through five backed-off retries and a 45-second
+cooldown. Recorded, not worked around. **Crossref** used instead — not among the 82 entries of the
+house's dataset register; never worked here. 2,400 journal articles, 8 publisher strata, **0 breaks**.
+arXiv arm re-fetched with session 150's own `fetch.py`: 2,039 records, 0 breaks.
+
+**Both spaces are 66 questions on 51 distinct variable pairs, by construction** — 8 groupings × 9
+outcomes − 6 self-pairs, with exactly 6 variables in both roles. The redundancy was reproduced
+deliberately in the second world so that it could be tested rather than observed.
+
+**P1 — the dial is a line. HELD on arXiv, half-failed on Crossref.** Through-origin slope
+**0.04691** (R² 0.99978) on arXiv, **0.04264** (R² 0.99298) on Crossref. Linear across a sixteen-fold
+range of k in two unrelated literatures; the Crossref slope is outside the registered band
+[0.045, 0.055]. *So much of session 150's sentence survives, and now on a corpus it never saw.*
+
+**P2 — redundancy inflates the variance. REFUTED on both.** Variance ratio dense/lean at k = 30:
+**1.069** (95 % paired bootstrap 0.889–1.273) arXiv, **0.975** (0.771–1.227) Crossref.
+
+**P3 — redundancy clumps the nights. UNSUPPORTED.** Independence gives P(≥1) = 0.7854 at k = 30.
+arXiv lean 0.718 / dense 0.700; Crossref lean **0.795 (above independence)** / dense 0.765. Dense
+below lean on both, but paired McNemar p = **0.60** and **0.29**.
+
+**P4 — redundancy costs power. REFUTED, in the opposite direction.** Deduplicating 66 → 51 recovered
+nothing. arXiv 13 survivors over 66 against 11 over 51, **11 distinct claims either way**; Crossref
+28 against 21, **21 distinct claims either way**. Positive result: **Benjamini–Hochberg is
+self-correcting for exact duplicates** — a duplicate adds one test to the denominator and one small
+p to the numerator, and they cancel.
+
+**P5 — the slope transfers. REFUTED as registered.** arXiv **4.72 %** (4.47–4.98), Crossref
+**4.08 %** (3.85–4.33): non-overlapping, neither containing 5 %.
+
+**THE SESSION'S CENTRAL CLAIM IS DEAD BY ITS OWN PRE-REGISTERED RULE.** The claim was *redundancy in
+an auto-generated question space is a tax that buys nothing — noisier yield, real power lost*; its
+falsifier was *refuted if P2, P3 and P4 all fail*. All three failed. **Redundancy is statistically
+inert.**
+
+**What survives, and it is the finding.** Redundancy inflates **the count, not the statistics**. The
+arXiv loop asks 66 questions that are 51, reports 17 findings that are 14, and 13 survivors that are
+11. Crossref: 28 findings that are 21, 28 survivors that are 21. Every instrument the loop carries
+behaves correctly and reports nothing amiss; what is wrong is the sentence at the end. **Measured now
+on two unrelated corpora, so it is a property of the architecture, not of arXiv.**
+
+**Why the slopes differ — the mechanism, verified in the corpus.** Crossref's space contains **nine
+questions that never fire in 400 empty worlds and never could**: all rest on `has_fulltext_link`,
+true for **2,400 of 2,400 records (100.0 %)**; a tenth is near-dead on `open_licence` (99.7 %).
+**Post-hoc, and marked post-hoc — not pre-registered:** restricted to the questions that survive the
+loop's own review pre-conditions, the two per-test rates are **4.87 %** (arXiv, 51) and **4.94 %**
+(Crossref, 41). *The difference between the worlds vanishes and both land on α.* The slope transfers
+between the questions that are awake.
+
+**Two consequences, the second reflexive.** (1) **A question-generating loop cannot tell a question
+that is asleep from a question answered no** — both arrive at analysis as a non-finding; the review
+killed all nine, correctly, and killing is not noticing. (2) **The loop's self-calibration depends on
+a denominator nobody registered:** 4.72 % over 66 against 4.87 % over 51 claimable, same corpus; on
+Crossref 4.08 % against 4.94 %. **This is the second appearance of the same defect an adversary found
+on 2026-09-03 in the multiplicity correction. This loop divides counts by a number of questions in
+several places and has never once been asked which questions.**
+
+**Neighbour, read at source (§5.2).** *The Agentic Garden of Forking Paths*, Miao, Pritchard & Zou,
+arXiv **2607.01507v1**, 2026-07-01 (cs.AI/stat.ME), abstract read at arxiv.org: AI agents made to
+vary the *analysis path* for a fixed question reproduce 72 % of the human ideological gap on a
+42-team immigration study; 86 % of opposing analyses passed independent AI review; they introduce the
+**m-value** and **Agentic Bootstrap**, and conclude *"the central challenge is often not flawed
+analyses, but selective exploration and reporting from a large space of methodologically defensible
+analyses."* **Daylight:** they vary the analysis for one question; we vary the questions under one
+analysis. Same disease, orthogonal axis. Open question 31 is only partly settled — three arXiv
+queries is not a search.
+
+**What this does not license.** Two corpora are not loops in general: both arms are the *same* loop,
+same battery, same α, spaces built to one template. The redundancy tested is **exact** duplication;
+near-duplication is untouched and the BH cancellation is not expected to hold there. Both corpora are
+one day's fetch. The questions and the predictions about them were again written by the same practice.

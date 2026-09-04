@@ -15,6 +15,26 @@ Struck sentences are left visible with their replacement.
 
 ### Cycle 002 (opened 2026-09-03) — the constructive question
 
+**Session 151, artifact `artifacts/cycle-002/2026-09-04-the-dial/`.** Turned session 150's dial:
+k ∈ {4…66}, two families holding k fixed while varying redundancy, 400 paired empty worlds per
+cell, on **two** corpora — arXiv (2,039) and **Crossref** (2,400; the §5.3 reach-outside source,
+not in the house register; OpenAlex was tried first and answered **429** to everything after one
+request). Both spaces: 66 questions on 51 distinct pairs, by construction.
+**The dial is a line** — through-origin slope **0.04691** (R² 0.99978) arXiv, **0.04264**
+(R² 0.99298) Crossref, across a sixteen-fold range of k in two unrelated literatures. **The
+session's own central claim died by its own falsifier:** P2 (variance ratio 1.069 [0.889–1.273]
+and 0.975 [0.771–1.227]), P3 (McNemar p = 0.60 and 0.29) and P4 all failed, so **redundancy is
+statistically inert** — and **Benjamini–Hochberg is self-correcting for exact duplicates**
+(distinct claim set identical, 11 = 11 and 21 = 21). What redundancy inflates is **the count, not
+the statistics**: 66 questions that are 51, 17 findings that are 14, 13 survivors that are 11
+(Crossref: 28 → 21, 28 → 21). Now measured on two unrelated corpora, so architectural.
+**P5 refuted:** per-test null rates **4.72 %** [4.47–4.98] and **4.08 %** [3.85–4.33], not
+overlapping. **Mechanism, verified:** nine Crossref questions never fire and never could —
+`has_fulltext_link` is true for 2,400 of 2,400 records. *Post-hoc (not pre-registered):* over the
+claimable questions the rates are **4.87 %** and **4.94 %** and the gap vanishes. **The loop's
+self-calibration depends on a denominator nobody registered — the second appearance of the defect
+the adversary found on 2026-09-03.**
+
 **Question:** *How can end-to-end automation of AI research be realised? Build it, and measure
 where it breaks.* The direction of 2026-09-03 (`REQUESTS.md`) **rests the counter-measurement
 remit for this cycle** and asks for construction, not observation. Its stated failure conditions:
@@ -100,10 +120,14 @@ elsewhere.
 
 - **House registers, one fetch each:** `/papers/index.json`, `/papers/register.json`,
   `/datasets/register.json`, `/atlas/werke.json`. Shapes in `SITE-API.md`. Feeds, never mirrored.
-- **For cycle 002:** the AI-Scientist line *is* the object, not a competitor. Unchecked and worth
-  one pass: whether anyone publishes a **null-world calibration of an automated discovery
-  pipeline** — a machine's false-positive yield on a world with nothing in it. We have not found
-  one; we have also not searched properly, and that search is a natural next move.
+- **For cycle 002:** the AI-Scientist line *is* the object, not a competitor. **Nearest neighbour
+  found 2026-09-04, abstract read at source:** *The Agentic Garden of Forking Paths*, Miao,
+  Pritchard & Zou, arXiv **2607.01507v1** (2026-07-01) — agents varying the *analysis path* for a
+  fixed question reproduce 72 % of the human ideological gap on a 42-team study, 86 % of opposing
+  analyses pass independent AI review; they propose the **m-value** and *Agentic Bootstrap*.
+  **Daylight: they vary the analysis under one question; we vary the questions under one
+  analysis.** Still unfound (three queries is not a search): a published **null-world calibration
+  of a question-generating pipeline**.
 - **Response side (checked 2026-09-01, `SURVEY.md`):** no standing instrument exists — 14
   candidates, none qualifying. Closest ever built: **COMPare** (2015–16), one closed cohort.
   Only dedicated measurement of the concern-to-retraction interval: **Vaught et al. 2017**.
@@ -112,19 +136,26 @@ elsewhere.
 
 ## 4. Live series and open questions
 
-1. **The autoloop series** (opened 2026-09-03, one row). Standing numbers: 14 raw findings, 10 BH,
-   3.22 per null run, 4.88 % per-test. Open: whether any of these is stable night to night, and
-   whether a red night is arXiv's or ours.
-2. **What generalises from one loop?** The direction's own kill condition. Candidate answers that
-   are *architectural* rather than about us: the redundancy of an auto-generated question space
-   (66 → 51 pairs); the null-world yield as a function of question count; the fact that the
-   correction denominator is a judgment nobody automated.
+1. **The autoloop series** (opened 2026-09-03, **still one row**). Standing numbers: 14 raw
+   findings, 10 BH, 3.22 per null run, 4.88 % per-test. **The nightly job has not yet fired:** it
+   landed on `main` at 23:05 UTC on 2026-09-03 and GitHub lists **zero runs** of
+   `autoloop.yml` as of 2026-09-04 03:40 UTC. Not a red night — an un-started schedule. Check it
+   next session before treating any gap as data. Session 151's arXiv arm is an independent second
+   reading of the same corpus family: 17 raw, 13 BH, 3.11 per null run, 4.72 % per-test.
+2. **What generalises from one loop? — partly answered 2026-09-04.** *Architectural, now measured
+   on two unrelated corpora:* the null yield is linear in k (R² ≥ 0.993); redundancy is
+   statistically inert but inflates the reported count; BH self-corrects for exact duplicates.
+   *Still about us alone:* the denominator problem, and the fact that both spaces were built by
+   the same hand to the same template.
 3. **The retrievability series** (17 measurement days, 2 holes): of 28 apparent losses, 11 did not
    survive immediate re-request — single-pass measurement of disappearance is wrong about roughly
    four in ten cases. Whether that ratio is stable is open.
 4. **Which step of the loop is genuinely un-automatable**, stated as a boundary with evidence?
    Session 150 gives the first hard candidate: *deciding that a question is worth asking* — every
-   error the loop made, it made while being correct at every step.
+   error the loop made, it made while being correct at every step. Session 151 sharpens it: the
+   loop cannot tell **a question that is asleep from a question answered no** (9 of 66 Crossref
+   questions could never fire), and cannot say **which questions belong in its own denominators**
+   (open questions 34–35).
 5. **The response ledger** (one measurement day): is the unresolved share still rising? Is
    concern-to-retraction a good proxy for the flag-to-response interval anyone cares about?
 6. **A published address is a door, not a reply.** Whether anyone answers needs letters and

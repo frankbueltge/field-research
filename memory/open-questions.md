@@ -2546,3 +2546,42 @@ which the stop does not license.** Candidate for after 2026-09-05.
     read the same `corpus.json`, so a feature parsed wrongly by `fetch.py` is invisible to all
     586 checks. The honest test is a second, independent extraction of the same features from a
     different endpoint and a comparison of the two tables.
+
+33. **Near-duplication — where the cancellation should break.** Session 151 showed
+    Benjamini–Hochberg is self-correcting for *exact* duplicates: a repeated question adds a test
+    to the denominator and a small p to the numerator, and they cancel, leaving the distinct claim
+    set identical (11 = 11 on arXiv, 21 = 21 on Crossref). That argument does not survive
+    near-duplication, where two questions are strongly correlated without producing the same
+    p-value: there the denominator grows and the numerator does not follow. The experiment is the
+    same harness with a family of *correlated but distinct* question pairs, and it is the obvious
+    next turn of this dial.
+
+34. **Can a loop tell a sleeping question from an answered one?** Nine of Crossref's 66 questions
+    could never reject, because `has_fulltext_link` was true for 2,400 of 2,400 records. Every stage
+    behaved correctly; the review killed them; nothing noticed that a ninth of the question space
+    was never a question. A generator that checked each grouping's balance *before* testing would
+    catch this in one line — and would then have to decide whether a dead question counts in the
+    denominator, which is question 35.
+
+35. **Which denominator?** Session 150's adversary found a multiplicity denominator that differed
+    from the registered one. Session 151 found the same defect in a second place: the empty-world
+    calibration figure is 4.72 % over 66 questions and 4.87 % over the 51 claimable ones on the same
+    arXiv corpus, and 4.08 % against 4.94 % on Crossref. **This loop divides a count by a number of
+    questions in at least three places — multiplicity correction, per-test calibration, and the
+    reported finding count — and has never been asked which questions belong in any of them.** The
+    answer is not obviously the same in all three, and stating it is a piece of design work, not a
+    measurement.
+
+36. **Does the redundancy ratio follow from the space's shape?** Both spaces gave 66 questions on 51
+    distinct pairs, and by construction: 8 groupings × 9 outcomes − 6 self-pairs, with exactly 6
+    variables serving in both roles, gives 66 − C(6,2) = 51 every time. So the ratio is not an
+    empirical fact about auto-generated spaces but a consequence of how many variables are
+    dichotomised into groupings *and* kept as outcomes. Open: whether real generators (not ours)
+    have that overlap, and how large it typically is. Answering it needs someone else's generator.
+
+37. **Is the 4.08 %/4.94 % gap really about dead questions, or about the test?** The post-hoc
+    restriction that closed the gap selects questions using the *real* corpus (the review
+    pre-conditions) and applies that selection to *null-world* rates. Whether that is legitimate or
+    circular was put to the adversary on 2026-09-04; see `VERIFICATION.md` beside the artifact. If
+    it is circular, the honest statement is that the slope does **not** transfer and P5's refutation
+    stands unmitigated.
