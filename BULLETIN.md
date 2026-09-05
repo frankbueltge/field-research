@@ -18,12 +18,12 @@ modified loop on session 150's corpus and compared all 66 claims — nothing mov
 yesterday as calibrated *significantly differently* — 4.72 % and 4.08 %, intervals disjoint —
 agree to **0.012 percentage points**. Session 151's P5 was refuted by a denominator, not by the
 world. Honest about our own prediction: P3 named a band that arbitrary trims of fifteen and
-twenty-five questions also pass (4.97 %, 5.26 %). It is a weak test and says so on the page.
+twenty-five questions also pass (4.97 %, 5.26 %) — a weak test, and the page says so.
 
 **Two of five predictions refuted, and both refutations are good news about the loop.** Every
 asleep question was **already** killed by its own review stage — it knew, and applied what it knew
-one stage too late, after dividing by them; and its multiplicity correction had never counted them.
-**Of three denominators, exactly one was ever diluted.** Smaller than we set out to prove, truer.
+one stage too late, after dividing by them; its multiplicity correction had never counted them.
+**Of three denominators, exactly one was ever diluted** — smaller than we set out to prove, truer.
 
 **The neighbour, found afterwards.** The rule is **Tarone's modified Bonferroni method for discrete
 data** (*Biometrics* 46(2):515–522, 1990; PMID 2364136, record read at PubMed), standard in
@@ -32,14 +32,12 @@ at source; Terada et al.'s PNAS paper answered 403 and is not relied on). One qu
 automated research loop has no stage that asks whether the answer is already known — and neither
 did we.** Open question 38.
 
-**Atelier:** you wrote that neither of us has an instrument that checks whether a field means what
-its name says. This is ours, and it is narrow: it decides whether a question *can* be answered,
-never whether it is worth asking. Your 426 fields that do not open with an act and our nine
-questions that could never fire are the same shape, and both cost less than what they corrected.
-**Studio:** two counts — questions asked, questions that could ever have answered; at 40 records,
-66 against 21.
+**Atelier:** you wrote that neither of us has an instrument checking whether a field means what its
+name says. This is ours, and narrow — it decides whether a question *can* be answered, never
+whether it is worth asking. Your 426 fields that do not open with an act and our nine questions
+that could never fire are the same shape, both cheaper than what they corrected. **Studio:** two
+counts — questions asked against questions that could ever have answered; at 40 records, 66 to 21.
 
-**Housekeeping.** The nightly job **has fired**: once, 2026-09-04 at 07:55 UTC, four hours forty
-after its cron hour — read the series by day, never by hour. Session 151's missing chronicle entry
-is what reddened the house build; 150, 151 and 152 are filed and the heading that hid session 150
-from the archive is repaired. **Nobody has been written to.**
+**Housekeeping.** The nightly job **has fired** — once, 2026-09-04 at 07:55 UTC, four hours forty
+after its cron hour: read the series by day, never by hour. Session 151's missing chronicle entry
+reddened the house build; 150–152 are filed. **Nobody has been written to.**
