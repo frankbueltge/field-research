@@ -40,3 +40,33 @@ so far, read from the GitHub Actions API rather than assumed:
   a scheduled workflow; the series must therefore be read by `day`, never by hour.
 - **2026-09-05** — at 03:36 UTC, no run for this day was listed. Not a red night and not a hole:
   the day was younger than the delay the previous night showed.
+
+## 2026-09-05, filed after the session landed — what the series is not, yet
+
+The night of 2026-09-05 ran with the PRE-CHECK stage in place, went green, and wrote the first row
+carrying `questions_awake`, `questions_asleep` and `null_per_test_rate_awake` (66 / 0 / 4.9273 %).
+That part worked. **What it also showed is that the series is not yet measuring what its name
+says.**
+
+The 2026-09-04 and 2026-09-05 rows carry **different corpus digests** —
+`9926d042c8ed…` against `d375abdee83e…` — and **identical measurements**: 2,039 records both
+nights, 17 raw findings, 13 Benjamini–Hochberg survivors, a null per-test rate agreeing to all
+sixteen digits (0.049272727272727274). Comparing the two per-run files test by test:
+
+```
+tests differing in p or n1 between runs/2026-09-04.json and runs/2026-09-05.json: 0 of 66
+```
+
+So the corpus **bytes** changed while every column the loop actually tests did not. The fetcher
+returned the same papers with some field altered, and the loop recorded it as a second night.
+
+**Consequence for anyone reading this file: the three rows are not three measurements.** Two of
+them are one measurement taken twice. Do not read a variance, a trend or a stability claim off
+them, and do not count nights — count distinct test vectors. The instrument this needs is a check
+in `run_series.py` that compares the night's test vector against the previous night's and records
+whether the corpus moved at all; until that exists, the honest description of the series is *one
+seeded run plus one arXiv snapshot measured twice*.
+
+**Why this is not repaired here.** It is a defect in `fetch.py`'s query window, not in the series
+format, and diagnosing it means reading what the fetcher asks arXiv for and what changed between
+the two payloads. That is a session's work, not a note's. Filed as open question 41.

@@ -168,12 +168,14 @@ elsewhere.
 
 ## 4. Live series and open questions
 
-1. **The autoloop series** (opened 2026-09-03, **two rows**). 2026-09-03, seeded by hand: 14 raw,
-   10 BH, 3.22 per null run, 4.88 % per-test. 2026-09-04, **the first scheduled run — it fired at
-   07:55 UTC, four hours forty after its 03:15 cron**: 17 raw, 13 BH, 3.25, 4.93 %. Read the series
-   by `day`, never by hour. From 2026-09-05 each row also carries `questions_awake`,
-   `questions_asleep` and `null_per_test_rate_awake`; `null_per_test_rate` keeps its old meaning and
-   no row was back-filled (`tools/autoloop/series/README.md`).
+1. **The autoloop series** (opened 2026-09-03, three rows — but **not three measurements**).
+   2026-09-03, seeded by hand: 14 raw, 10 BH, 4.88 % per-test. 2026-09-04 and 2026-09-05, both
+   scheduled and green, both fired ~4 h after the 03:15 cron: 17 raw, 13 BH, 4.93 % — **identical
+   to sixteen digits, 0 of 66 tests differing, on two different corpus digests.** The bytes moved;
+   every tested column did not. **Read no variance or trend off this series** until question 41 is
+   answered. Rows from 2026-09-05 carry `questions_awake`, `questions_asleep` and
+   `null_per_test_rate_awake`; `null_per_test_rate` keeps its old meaning, nothing back-filled
+   (`tools/autoloop/series/README.md`).
 2. **What generalises from one loop?** *Architectural, on two unrelated corpora:* the null yield is
    linear in k; redundancy is statistically inert but inflates the reported count. *Held here, not
    general:* the BH cancellation for exact duplicates. *General because arithmetic, 2026-09-05:* the
@@ -186,12 +188,11 @@ elsewhere.
 3. **The retrievability series** (17 measurement days, 2 holes): of 28 apparent losses, 11 did not
    survive immediate re-request — single-pass measurement of disappearance is wrong about roughly
    four in ten cases. Whether that ratio is stable is open.
-4. **Which step of the loop is genuinely un-automatable**, stated as a boundary with evidence?
-   Standing candidate: *deciding that a question is worth asking* — every error the loop made, it
-   made while being correct at every step. **Sharpened 2026-09-05:** telling asleep from answered-no
-   is now automated and merged (34, 35, 37 closed), so it was never the boundary. The **literature
-   step** replaces it as the live candidate — the loop has no stage asking whether an answer already
-   exists, and this practice rebuilt a 1990 method before searching (question 38).
+4. **Which step is genuinely un-automatable?** Standing candidate: *deciding a question is worth
+   asking* — every error the loop made, it made while correct at every step. **Sharpened
+   2026-09-05:** telling asleep from answered-no is now automated and merged (34, 35, 37 closed), so
+   it was never the boundary. The **literature step** replaces it: the loop has no stage asking
+   whether an answer already exists, and this practice rebuilt a 1990 method before searching (38).
 5. **The response ledger** (one measurement day): is the unresolved share still rising? Is
    concern-to-retraction a good proxy for the flag-to-response interval anyone cares about?
 6. **A published address is a door, not a reply.** Whether anyone answers needs letters and

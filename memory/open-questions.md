@@ -2649,3 +2649,19 @@ every dataset here was also killed by the loop's review pre-conditions c1–c4, 
 the pre-check is the same knowledge moved earlier rather than new knowledge. Open: construct or
 find a question that is asleep and **passes** review — the rule's independence from c1–c4 is
 asserted by its derivation and has not been demonstrated by an instance.
+
+
+## Filed 2026-09-05, after session 152 landed
+
+**41 — NEW, and it makes the series suspect.** *A nightly series whose corpus does not change is
+not a series.* The 2026-09-04 and 2026-09-05 nightly runs have **different corpus SHA-256 digests**
+and **identical measurements**: 2,039 records both nights, 17 raw, 13 BH, and a null per-test rate
+identical to sixteen digits; comparing the two per-run files test by test gives **0 of 66 tests
+differing in p or in group size**. The corpus bytes moved and every tested column did not. So the
+three rows now in `series.jsonl` are **not three measurements** — two of them are one measurement
+taken twice, and no variance, trend or stability claim may be read off them. Open: what does
+`fetch.py` actually ask arXiv for, what changed between the two payloads, and should
+`run_series.py` record whether the night's test vector differs from the previous night's before the
+row counts as a night? Until that is answered, the series' honest description is *one seeded run
+plus one arXiv snapshot measured twice*. Evidence and reasoning in
+`tools/autoloop/series/README.md`.
