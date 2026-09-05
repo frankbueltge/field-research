@@ -15,33 +15,49 @@ Struck sentences are left visible with their replacement.
 
 ### Cycle 002 (opened 2026-09-03) — the constructive question
 
+**Session 152, artifact `artifacts/cycle-002/2026-09-05-which-questions-count/`.** Built
+`tools/autoloop/liveness.py`, a **PRE-CHECK stage merged into the nightly loop**: a question is
+**asleep** when no labelling consistent with the corpus margins (N, group size, the outcome's value
+multiset — exactly what permutation preserves) can push its p below α, so the verdict is reachable
+before the first test. **Sound:** asleep questions took **0 of 53,000** chances to fire across
+nineteen empty worlds; partition unmoved in 400 permuted rebuilds; K3 re-ran the modified loop on
+session 150's corpus and every one of 66 claims was identical. **The reversal:** with them out of
+the divisor the two corpora agree to **0.012 points** (4.72 % / 4.73 %) where they were published
+disjoint — **session 151's P5 was refuted by a denominator, not by the world.** **P4 and P5
+refuted, and that is the better half:** every asleep question was *already* killed by the loop's
+own review stage, one step too late, and BH had never counted them — **of three denominators,
+exactly one was ever diluted.** Our own **P3 was a weak test** (arbitrary trims of 15 and 25 pass
+its band: 4.97 %, 5.26 %); the warrant is the soundness result. **Post-hoc, the awake curve:** at
+40 Crossref records only 21 of 66 questions are live and the loop's calibration reads 1.65 %
+against 5.19 % — the smaller the corpus, the more of a fixed question space is not a test.
+**And the neighbour, found after the build:** the rule is **Tarone, *A modified Bonferroni method
+for discrete data*, Biometrics 46(2):515–522, 1990** (PMID 2364136, record read at PubMed),
+standard in significant pattern mining as *untestable hypotheses* (arXiv 1407.0316, 1407.1176,
+abstracts at source). One query found it; the query was run afterwards. **An automated research
+loop has no stage asking whether the answer is already known — and neither did this practice.**
+
 **Session 151, artifact `artifacts/cycle-002/2026-09-04-the-dial/`.** Turned session 150's dial:
 k ∈ {4…66}, two families holding k fixed while varying redundancy, 400 paired empty worlds per
 cell, on **two** corpora — arXiv (2,039) and **Crossref** (2,400; the §5.3 reach-outside source,
 not in the house register; OpenAlex was tried first and answered **429** to everything after one
 request). Both spaces: 66 questions on 51 distinct pairs, by construction.
 **The dial is a line** — through-origin slope **0.04691** (R² 0.99978) arXiv, **0.04264**
-(R² 0.99298) Crossref, across a sixteen-fold range of k in two unrelated literatures. **The
-session's own central claim died by its own falsifier:** P2 (variance ratio 1.069 [0.889–1.273]
-and 0.975 [0.771–1.227]), P3 (McNemar p = 0.60 and 0.29) and P4 all failed, so **redundancy is
-statistically inert**. What it inflates is **the count, not the statistics**: 66 questions that are
-51, 17 findings that are 14, 13 survivors that are 11 (Crossref: 28 → 21 twice). Two unrelated
-corpora, so architectural. **P5 refuted:** per-test null rates **4.72 %** [4.47–4.98] and **4.08 %**
-[3.85–4.33], not overlapping. **Mechanism, verified:** nine Crossref questions never fire and never
-could — `has_fulltext_link` is true for 2,400 of 2,400 records. **The loop's self-calibration
-depends on a denominator nobody registered — the second appearance of the defect the adversary
-found on 2026-09-03.**
-**A convened adversary found five defects; four changed the page, and they are carried here because
-they change what may be said:** (1) the post-hoc "claimable questions" restriction (4.87 %/4.94 %)
-**does not rescue P5** — a rationale-free trim of the same size gives 5.10 %/5.26 %, so the
-convergence is what trimming a tail does; (2) the through-origin R² is the lenient convention —
-**centred, Crossref is 0.981**, under the registered bar; (3) "BH self-corrects for exact
-duplicates" held here under the canonical and smallest-p representative but **not** the largest-p
-one (11 → 10, 21 → 20), so it is not a theorem; (4) the Crossref fetcher sorted by *deposit* date,
-so **1,485 of 1,921 dated records fall in the last eight days** of a fourteen-week window and
-Elsevier's 300 have no resolvable date at all — a known, dated, unrepaired defect in
-`fetch_crossref.py`. Failed attacks are recorded too, including a proof that the permutation stream
-really is shared.
+(R² 0.99298) Crossref, over a sixteen-fold range of k in two unrelated literatures. **Its own
+central claim died by its own falsifier:** P2 (variance ratio 1.069, 0.975), P3 (McNemar p = 0.60,
+0.29) and P4 all failed, so **redundancy is statistically inert**. What it inflates is **the count,
+not the statistics**: 66 questions that are 51, 17 findings that are 14, 13 survivors that are 11
+(Crossref 28 → 21 twice). **P5 refuted:** null rates **4.72 %** [4.47–4.98] and **4.08 %**
+[3.85–4.33], disjoint — **overturned 2026-09-05, see above.** **Mechanism:** nine Crossref
+questions never could fire; `has_fulltext_link` is true for 2,400 of 2,400.
+**An adversary found five defects, four of which still bind:** (1) the post-hoc "claimable
+questions" restriction **does not rescue P5** — a rationale-free trim of the same size moves the
+rate as much (**this is the objection session 152 answered, by deriving the trim from margins
+instead**); (2) the through-origin R² is the lenient convention — **centred, Crossref is 0.981**,
+under the registered bar; (3) BH's self-correction for exact duplicates held under the canonical
+and smallest-p representative but **not** the largest-p one, so it is not a theorem; (4) the
+Crossref fetcher sorts by *deposit* date — **1,485 of 1,921 dated records in the last eight days**
+of a fourteen-week window, Elsevier's 300 undated: a known, dated, unrepaired defect in
+`fetch_crossref.py`.
 
 **Question:** *How can end-to-end automation of AI research be realised? Build it, and measure
 where it breaks.* The direction of 2026-09-03 (`REQUESTS.md`) **rests the counter-measurement
@@ -134,8 +150,16 @@ elsewhere.
   fixed question reproduce 72 % of the human ideological gap on a 42-team study, 86 % of opposing
   analyses pass independent AI review; they propose the **m-value** and *Agentic Bootstrap*.
   **Daylight: they vary the analysis under one question; we vary the questions under one
-  analysis.** Still unfound (three queries is not a search): a published **null-world calibration
-  of a question-generating pipeline**.
+  analysis.** Still unfound: a published **null-world calibration of a question-generating
+  pipeline**.
+- **FOUND 2026-09-05, and it is ours-already-done:** excluding hypotheses that cannot reach α, on a
+  minimum attainable p computed from the marginals, is **Tarone, *A modified Bonferroni method for
+  discrete data*, Biometrics 46(2):515–522, 1990** (PMID 2364136, record read at PubMed) — the
+  *testable / untestable* vocabulary of significant pattern mining (arXiv **1407.0316**,
+  **1407.1176**, abstracts read at source; Terada et al., PNAS 2013, returned 403 and is **not**
+  relied on). **Do not rebuild this.** Daylight: Tarone's target is the multiplicity factor and
+  Fisher's exact test; ours was the *null-world self-calibration figure*, under the loop's own two
+  tests, with group sizes made non-constant by missing outcomes.
 - **Response side (checked 2026-09-01, `SURVEY.md`):** no standing instrument exists — 14
   candidates, none qualifying. Closest ever built: **COMPare** (2015–16), one closed cohort.
   Only dedicated measurement of the concern-to-retraction interval: **Vaught et al. 2017**.
@@ -144,26 +168,27 @@ elsewhere.
 
 ## 4. Live series and open questions
 
-1. **The autoloop series** (opened 2026-09-03, **still one row**). Standing numbers: 14 raw
-   findings, 10 BH, 3.22 per null run, 4.88 % per-test. **The nightly job has not yet fired:** it
-   landed on `main` at 23:05 UTC on 2026-09-03 and GitHub lists **zero runs** of
-   `autoloop.yml` as of 2026-09-04 03:40 UTC. Not a red night — an un-started schedule. Check it
-   next session before treating any gap as data. Session 151's arXiv arm is an independent second
-   reading of the same corpus family: 17 raw, 13 BH, 3.11 per null run, 4.72 % per-test.
-2. **What generalises from one loop? — partly answered 2026-09-04.** *Architectural, now measured
-   on two unrelated corpora:* the null yield is linear in k; redundancy is statistically inert but
-   inflates the reported count. *Held here but not general:* the BH cancellation for exact
-   duplicates. *Still about us alone:* the denominator problem, and the fact that both spaces were
-   built by the same hand to the same template.
+1. **The autoloop series** (opened 2026-09-03, **two rows**). 2026-09-03, seeded by hand: 14 raw,
+   10 BH, 3.22 per null run, 4.88 % per-test. 2026-09-04, **the first scheduled run — it fired at
+   07:55 UTC, four hours forty after its 03:15 cron**: 17 raw, 13 BH, 3.25, 4.93 %. Read the series
+   by `day`, never by hour. From 2026-09-05 each row also carries `questions_awake`,
+   `questions_asleep` and `null_per_test_rate_awake`; `null_per_test_rate` keeps its old meaning and
+   no row was back-filled (`tools/autoloop/series/README.md`).
+2. **What generalises from one loop?** *Architectural, on two unrelated corpora:* the null yield is
+   linear in k; redundancy is statistically inert but inflates the reported count. *Held here, not
+   general:* the BH cancellation for exact duplicates. *General because arithmetic, 2026-09-05:* the
+   awake fraction falls with corpus size, so a fixed question space over a small corpus reports a
+   calibration figure that reads low (21 of 66 live at 40 Crossref records; 1.65 % against 5.19 %).
+   *Still about us alone:* both spaces were built by the same hand to the same template.
 3. **The retrievability series** (17 measurement days, 2 holes): of 28 apparent losses, 11 did not
    survive immediate re-request — single-pass measurement of disappearance is wrong about roughly
    four in ten cases. Whether that ratio is stable is open.
 4. **Which step of the loop is genuinely un-automatable**, stated as a boundary with evidence?
-   Session 150 gives the first hard candidate: *deciding that a question is worth asking* — every
-   error the loop made, it made while being correct at every step. Session 151 sharpens it: the
-   loop cannot tell **a question that is asleep from a question answered no** (9 of 66 Crossref
-   questions could never fire), and cannot say **which questions belong in its own denominators**
-   (open questions 34–35).
+   Standing candidate: *deciding that a question is worth asking* — every error the loop made, it
+   made while being correct at every step. **Sharpened 2026-09-05:** telling asleep from answered-no
+   is now automated and merged (34, 35, 37 closed), so it was never the boundary. The **literature
+   step** replaces it as the live candidate — the loop has no stage asking whether an answer already
+   exists, and this practice rebuilt a 1990 method before searching (question 38).
 5. **The response ledger** (one measurement day): is the unresolved share still rising? Is
    concern-to-retraction a good proxy for the flag-to-response interval anyone cares about?
 6. **A published address is a door, not a reply.** Whether anyone answers needs letters and
