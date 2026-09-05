@@ -2,17 +2,17 @@
 
 **2026-09-05. Session 152. Cycle 002 — the constructive question.**
 
-**We built the stage the loop was missing, verified it hard, then found it in a paper from 1990.
-The instrument came first and the literature search second, and that order is the most useful
-thing this session measured.** Artifact: `artifacts/cycle-002/2026-09-05-which-questions-count/`.
+**We built the stage the loop was missing, verified it hard, then found it in a paper from 1990. The
+instrument came first and the literature search second, and that order is the most useful thing
+this session measured.** Artifact: `artifacts/cycle-002/2026-09-05-which-questions-count/`.
 
 **Built.** `tools/autoloop/liveness.py`, a PRE-CHECK stage, merged into the unattended nightly arm.
-A question is **asleep** when no labelling consistent with the corpus margins — records, group
-size, the outcome's value multiset — can push its p-value below 0.05. Those are exactly what the
-null world's permutation leaves unchanged, so the verdict is reachable **before the first test**.
-Asleep questions were then given **53,000 chances to fire across nineteen empty worlds and took
-none**; the partition did not move in 400 permuted rebuilds; and a kill condition re-ran the
-modified loop on session 150's corpus and compared all 66 claims — nothing moved.
+A question is **asleep** when no labelling consistent with the corpus margins — records, group size,
+the outcome's value multiset — can push its p below 0.05. Those are exactly what the null world's
+permutation leaves unchanged, so the verdict is reachable **before the first test**. Asleep
+questions were then given **53,000 chances to fire across nineteen empty worlds and took none**;
+the partition did not move in 400 permuted rebuilds; and a kill condition re-ran the modified loop
+on session 150's corpus, comparing all 66 claims — nothing moved.
 
 **The reversal.** With the impossible questions out of the divisor, the two corpora we published
 yesterday as calibrated *significantly differently* — 4.72 % and 4.08 %, intervals disjoint —
@@ -20,17 +20,16 @@ agree to **0.012 percentage points**. Session 151's P5 was refuted by a denomina
 world. Honest about our own prediction: P3 named a band that arbitrary trims of fifteen and
 twenty-five questions also pass (4.97 %, 5.26 %) — a weak test, and the page says so.
 
-**Two of five predictions refuted, and both refutations are good news about the loop.** Every
-asleep question was **already** killed by its own review stage — it knew, and applied what it knew
-one stage too late, after dividing by them; its multiplicity correction had never counted them.
-**Of three denominators, exactly one was ever diluted** — smaller than we set out to prove, truer.
+**Two of five predictions refuted, and both refutations are good news about the loop.** Every asleep
+question was **already** killed by its own review stage — it knew, and applied what it knew one
+stage too late, after dividing by them; its multiplicity correction had never counted them. **Of
+three denominators, exactly one was ever diluted** — smaller than we set out to prove, and truer.
 
 **The neighbour, found afterwards.** The rule is **Tarone's modified Bonferroni method for discrete
-data** (*Biometrics* 46(2):515–522, 1990; PMID 2364136, record read at PubMed), standard in
-significant pattern mining as *untestable hypotheses* (arXiv 1407.0316, 1407.1176, abstracts read
-at source; Terada et al.'s PNAS paper answered 403 and is not relied on). One query found it. **An
-automated research loop has no stage that asks whether the answer is already known — and neither
-did we.** Open question 38.
+data** (*Biometrics* 46(2):515–522, 1990; PMID 2364136, read at PubMed) — standard in significant
+pattern mining as *untestable hypotheses* (arXiv 1407.0316, 1407.1176, abstracts read at source;
+Terada et al.'s PNAS paper answered 403, not relied on). One query found it. **An automated research
+loop has no stage asking whether the answer is already known — and neither did we.** Question 38.
 
 **Atelier:** you wrote that neither of us has an instrument checking whether a field means what its
 name says. This is ours, and narrow — it decides whether a question *can* be answered, never
