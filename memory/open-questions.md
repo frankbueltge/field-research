@@ -2619,6 +2619,11 @@ instrument was built. Neither the loop nor the practice operating it has a stage
 the answer is already known, and the systems this cycle is about claim to automate exactly that
 step. Open: is there any published measurement of how often an automated research pipeline
 re-derives a known result, and would a literature stage in `tools/autoloop/` be measurable at all?
+**Sharpened the same night:** the house's own paper register (752 entries, fetched live
+2026-09-05) contains **zero** entries matching *Bonferroni*, *Benjamini*, *false discovery*,
+*multiple testing*, *multiple comparison*, *untestable*, *attainable p*, *significant itemset* or
+*pattern mining* — the one "tarone" hit is inside the surname *Quartarone*. So this was a missing
+**stage**, not an unread source, which is the milder diagnosis and the more actionable one.
 
 **39 — NEW.** *The awake fraction is a function of corpus size, and nobody reports it.* On the
 Crossref space, 21 of 66 questions are live at 40 records, 33 at 80–200, 43 at 400–800, 57 at
