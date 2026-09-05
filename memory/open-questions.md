@@ -2591,17 +2591,24 @@ which the stop does not license.** Candidate for after 2026-09-05.
 **34 — ANSWERED.** *Can a loop tell a sleeping question from an answered one?* Yes, and from the
 margins alone, before any test: `tools/autoloop/liveness.py` computes the smallest p-value the
 loop's own test can return over every labelling consistent with (N, G, the outcome multiset), and
-calls the question asleep when that floor is ≥ α. On three committed null worlds and sixteen
-subsampled ones the asleep set took **0 of 53,000** chances to fire, and the partition did not move
-in 400 permuted rebuilds. The stage is merged into the nightly arm. What the rule does **not** do
-is tell a question worth asking from one not worth asking; that boundary is untouched.
+calls the question asleep when that floor is ≥ α. Across three committed null worlds and thirty-two
+subsampled ones the asleep set took **0 rejections in 99,400 calls** — of which **22,400** are calls
+the statistic can answer at all, and **on the three registered datasets that informative count is
+zero**, so every informative test of the rule is post-hoc. The stage is merged into the nightly arm.
+What the rule does **not** do is tell a question worth asking from one not worth asking; that
+boundary is untouched. **The rule is not new — see 38 — and a convened adversary took thirteen
+defects off the artifact, one fatal.**
 
-**35 — ANSWERED, and narrower than it looked.** *Which denominator?* Of the three places the loop
-divides, exactly **one** was ever diluted: the null-world per-test calibration rate (Crossref
-4.08 % → 4.73 %; arXiv unchanged, 4.72 %, because it has no asleep questions). The
-Benjamini–Hochberg denominator was never wrong — an asleep question returns no p-value and the
-correction already skipped it, so survivor counts are identical on all three datasets (12, 15, 29).
-The reported yield is a count and takes nothing from an asleep question. **P5 refuted.**
+**35 — ANSWERED, and narrower than it looked, then corrected.** *Which denominator?* The
+null-world per-test calibration rate was diluted (Crossref 4.08 % → 4.73 %; arXiv unchanged at
+4.72 %, having no asleep questions). The reported yield is a count and takes nothing from an asleep
+question. **The Benjamini–Hochberg denominator is the one we got wrong twice:** on the three
+registered corpora it looked untouched, because there *asleep* and *returns no p-value* are the
+same list and the correction already skipped it — so **P5 was refuted vacuously**, a comparison
+between a list and itself. Where the lists differ, it moves: at 120 Crossref records, BH over 41
+tests gives 24 survivors and over the 32 awake gives **26**. So: **one denominator diluted on the
+corpora we registered, a second on smaller ones.** The first version of this entry said "exactly
+one was ever diluted"; that was false against a table on our own page, and an adversary found it.
 
 **37 — ANSWERED, and the answer favours the adversary on the facts while reversing the verdict.**
 *Is the gap really about dead questions, or about the test?* About dead questions: the selection
@@ -2625,11 +2632,15 @@ re-derives a known result, and would a literature stage in `tools/autoloop/` be 
 *pattern mining* — the one "tarone" hit is inside the surname *Quartarone*. So this was a missing
 **stage**, not an unread source, which is the milder diagnosis and the more actionable one.
 
-**39 — NEW.** *The awake fraction is a function of corpus size, and nobody reports it.* On the
-Crossref space, 21 of 66 questions are live at 40 records, 33 at 80–200, 43 at 400–800, 57 at
-2,400; on the arXiv space, 57 at 40 and all 66 from 60 upward. A loop that fetches a small corpus
-therefore publishes a calibration figure that reads low for a structural reason — 1.65 % against
-5.19 % at 40 Crossref records. Open: whether any published autonomous-discovery system reports its
+**39 — NEW, and corrected the same night.** *The awake fraction is a function of corpus size, and
+nobody reports it.* On **random** subsamples of the Crossref space, 38 of 66 questions are live at
+40 records, 31 at 60–80, 46 at 200, 57 at 2,400; a loop that fetches a small corpus therefore
+publishes a calibration figure that reads low for a structural reason — 2.82 % against 4.89 % at 40
+records. **The first version of this curve took the *first* n records, and on that corpus the first
+169 are one publisher**, so it read 21 of 66 and attributed to size what was publisher homogeneity.
+Both arms are published. **The lesson generalises past this figure: any subsample of a corpus a
+fetcher wrote stratum-by-stratum must be drawn at random, and the Studio builds from these same
+corpora.** Open: whether any published autonomous-discovery system reports its
 question count as *tests attempted* rather than *tests possible*, which is the same defect one
 level up.
 
