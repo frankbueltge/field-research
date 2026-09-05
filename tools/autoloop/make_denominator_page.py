@@ -271,7 +271,49 @@ permuted records: it moved
 {d['K2']['B']['partitions_that_moved'] + d['K2']['C']['partitions_that_moved']} times in
 {d['K2']['B']['replicates'] + d['K2']['C']['replicates']}.</p>
 
-<h2>3. Five predictions, registered before the first number</h2>
+<h2>3. This rule is thirty-six years old, and we looked it up afterwards</h2>
+<p><strong>The idea is not ours and is not new.</strong> Excluding hypotheses that cannot reach
+significance, on the strength of a minimum attainable p-value computed from the marginals alone,
+is <strong>Tarone's modified Bonferroni method</strong>: R. E. Tarone, <em>A modified Bonferroni
+method for discrete data</em>, <em>Biometrics</em> 46(2), 515–522, June 1990 (PMID 2364136;
+bibliographic record read at PubMed, 2026-09-05). It is standard equipment in significant pattern
+mining, where the vocabulary is <em>testable</em> and <em>untestable</em> hypotheses. Two
+abstracts, read at source the same day:</p>
+<ul>
+<li>Sugiyama, Llinares López, Kasenburg &amp; Borgwardt, <em>Significant Subgraph Mining with
+Multiple Testing Correction</em>, arXiv 1407.0316 (2014, rev. 2015): "Pruning untestable
+hypotheses was recently proposed as a strategy for this task of significant itemset mining. It
+was shown to lead to greater statistical power, the discovery of more truly significant itemsets,
+than the standard Bonferroni correction on real-world datasets."</li>
+<li>Llinares, Sugiyama &amp; Borgwardt, <em>Identifying Higher-order Combinations of Binary
+Features</em>, arXiv 1407.1176 (2014): "Terada et al. recently showed how to elegantly address
+this multiple testing problem by excluding non-testable hypotheses."</li>
+</ul>
+<p class="note"><strong>What was not read at source, and is therefore not relied on:</strong>
+Tarone's own text — <em>Biometrics</em> is not reachable from here — and Terada et al.'s PNAS
+paper, which returned HTTP 403. Both are named because the abstracts above name them, and neither
+carries a number used on this page.</p>
+<p><strong>The daylight, stated narrowly.</strong> Tarone's floor is for Fisher's exact test on a
+2 × 2 table with fixed margins, and its purpose is to shrink the <em>multiplicity factor</em>.
+What is done here is the same rule adapted to the two tests this loop actually runs — a rank test
+with tie correction and a pooled two-proportion z — over an admissible range of group sizes that
+missing outcomes make non-constant, and applied to a different divisor: <strong>the null-world
+self-calibration figure an automated research loop publishes about itself.</strong> P5's
+refutation below shows that this loop's multiplicity factor, the divisor Tarone's method was
+built for, never needed the correction at all. The transferable sentence is therefore narrow and
+worth having: <em>a loop that reports how often it fires in an empty world must apply the
+testability rule to that figure, not only to its multiple-testing correction.</em></p>
+<div class="lead">
+<p><strong>And the finding about this practice, which is the one the cycle asked for.</strong> The
+instrument was built first and the literature searched afterwards. One query would have found
+Tarone. <strong>The step this loop skipped is the literature step — the step the systems this
+cycle is about claim to automate.</strong> An automated research loop that generates its own
+questions has no stage that asks whether the answer is already known, and neither, on 2026-09-05,
+did the practice operating it. That is recorded here rather than tidied away, and it is the
+strongest evidence this session produced about where end-to-end automation breaks.</p>
+</div>
+
+<h2>4. Five predictions, registered before the first number</h2>
 <div class="wrap"><table>
 <tr><th>#</th><th>Prediction</th><th>Verdict</th></tr>
 <tr><td>P1</td><td><strong>Soundness.</strong> No asleep question fires in any null
@@ -292,7 +334,7 @@ datasets</td></tr>
 </table><caption>Full text in <span class="mono">PREREGISTRATION.md</span>, committed before any
 result in this study existed and unedited since.</caption></div>
 
-<h2>4. The reversal, and the caveat that goes with it</h2>
+<h2>5. The reversal, and the caveat that goes with it</h2>
 {'<figure>' + fig1 + '<figcaption>Per-test rejection rate in an empty world, with Wilson 95 % '
  'intervals. Faded: the rate as published, averaged over every enumerated question. Solid: the '
  'same replicates, averaged over the questions that can fire. arXiv has no asleep questions, so '
@@ -357,7 +399,7 @@ question killed for want of power still fires in an empty world at about α</td>
 not the one that produces the prettiest number. Both corpora sit slightly <em>below</em> nominal
 on it.</caption></div>
 
-<h2>5. Three denominators, one of them diluted</h2>
+<h2>6. Three denominators, one of them diluted</h2>
 <div class="wrap"><table>
 <tr><th>where the loop divides</th><th>was it diluted?</th><th>evidence</th></tr>
 <tr><td>null-world per-test rejection rate</td><td class="ref">yes</td>
@@ -385,7 +427,7 @@ hand — {", ".join("<code>" + k + "</code>" for k in
 such cases. Awake means <em>some</em> admissible labelling fires, not that this particular
 labelling does. That is the correct reading for a denominator over a permutation ensemble.</p>
 
-<h2>6. Where the rule does real work: the awake curve</h2>
+<h2>7. Where the rule does real work: the awake curve</h2>
 <p class="note"><strong>Post-hoc, and labelled as such.</strong> Nothing in this section was
 pre-registered. It exists because of an honest deflation: on the two full corpora the rule fires
 only on a grouping that is constant, which a one-line check would also catch. Shrinking the
@@ -412,7 +454,7 @@ self-calibration figure of {pct(smoke['null_per_test_rate'])} over everything ag
 <code>data/smoke-run-2026-09-05.json</code>; it is <em>not</em> a series row, and was written to
 a scratch directory so that the nightly series stays unforced.</p>
 
-<h2>7. What was merged, and what was left alone</h2>
+<h2>8. What was merged, and what was left alone</h2>
 <ul>
 <li><code>tools/autoloop/liveness.py</code> — the rule, as a stage the loop runs before
 EXPERIMENT.</li>
@@ -430,7 +472,7 @@ meaning exactly, so the rows already written stay comparable. The schema change 
 <code>tools/autoloop/series/README.md</code>; no row was back-filled.</li>
 </ul>
 
-<h2>8. What this does not show</h2>
+<h2>9. What this does not show</h2>
 <ul>
 <li>Two corpora are not literatures in general, and both question spaces were built by the same
 hand to the same 8 × 9 template. Nothing here licenses a claim about question spaces at large.</li>
@@ -445,7 +487,7 @@ is the boundary this practice has named as its best candidate for the un-automat
 2026-09-03. This session did not touch it. It removed one way of being wrong about a divisor.</li>
 </ul>
 
-<h2>9. Reproducing this page</h2>
+<h2>10. Reproducing this page</h2>
 <p>No network call is needed for any number here, and none was made for one. From the repository
 root:</p>
 <pre class="mono">cd tools/autoloop
