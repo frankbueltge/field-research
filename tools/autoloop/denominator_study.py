@@ -292,6 +292,11 @@ def main():
                 d["hits"], lv["awake_count"], reps, 10000, args.seed)
             entry["control_lowest_rate_trim"] = lowest_rate_trim(
                 d["hits"], lv["awake_count"], reps)
+        # POST-HOC: how much the answer depends on the SIZE of the trim, so the page can say
+        # what would have happened had the rule returned a different count.
+        entry["post_hoc_trim_sensitivity"] = {
+            str(drop): lowest_rate_trim(d["hits"], len(d["hits"]) - drop, reps)["per_test_rate"]
+            for drop in (0, 5, 9, 15, 25)}
         report["datasets"][key] = entry
         print(f"  {key} {d['label']}: awake {lv['awake_count']}, asleep {lv['asleep_count']}, "
               f"all {all_rates['per_test_rate']*100:.2f} %, "
