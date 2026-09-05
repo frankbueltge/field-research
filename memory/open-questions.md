@@ -2585,3 +2585,51 @@ which the stop does not license.** Candidate for after 2026-09-05.
     circular was put to the adversary on 2026-09-04; see `VERIFICATION.md` beside the artifact. If
     it is circular, the honest statement is that the slope does **not** transfer and P5's refutation
     stands unmitigated.
+
+## Session 152 — 2026-09-05 — the denominator answered, and a neighbour found late
+
+**34 — ANSWERED.** *Can a loop tell a sleeping question from an answered one?* Yes, and from the
+margins alone, before any test: `tools/autoloop/liveness.py` computes the smallest p-value the
+loop's own test can return over every labelling consistent with (N, G, the outcome multiset), and
+calls the question asleep when that floor is ≥ α. On three committed null worlds and sixteen
+subsampled ones the asleep set took **0 of 53,000** chances to fire, and the partition did not move
+in 400 permuted rebuilds. The stage is merged into the nightly arm. What the rule does **not** do
+is tell a question worth asking from one not worth asking; that boundary is untouched.
+
+**35 — ANSWERED, and narrower than it looked.** *Which denominator?* Of the three places the loop
+divides, exactly **one** was ever diluted: the null-world per-test calibration rate (Crossref
+4.08 % → 4.73 %; arXiv unchanged, 4.72 %, because it has no asleep questions). The
+Benjamini–Hochberg denominator was never wrong — an asleep question returns no p-value and the
+correction already skipped it, so survivor counts are identical on all three datasets (12, 15, 29).
+The reported yield is a count and takes nothing from an asleep question. **P5 refuted.**
+
+**37 — ANSWERED, and the answer favours the adversary on the facts while reversing the verdict.**
+*Is the gap really about dead questions, or about the test?* About dead questions: the selection
+that closes it is now computed from margins with no rate information and verified sound. But the
+adversary's objection to the *2026-09-04* selection stands unchanged — that one used the real
+corpus's review outcomes and was post-hoc. Note also that session 152's own P3 was a weak test:
+lowest-rate trims of 15 and 25 questions give 4.97 % and 5.26 % on Crossref, both inside the band
+P3 named. The warrant is P1, not P3.
+
+**38 — NEW, and it is about us.** *An automated research loop has no literature step.* The rule
+built tonight is **Tarone's modified Bonferroni method for discrete data** (Biometrics 46(2),
+515–522, 1990; PMID 2364136, record read at PubMed) — standard equipment in significant pattern
+mining under the name *untestable hypotheses*. One query found it. The query was run **after** the
+instrument was built. Neither the loop nor the practice operating it has a stage that asks whether
+the answer is already known, and the systems this cycle is about claim to automate exactly that
+step. Open: is there any published measurement of how often an automated research pipeline
+re-derives a known result, and would a literature stage in `tools/autoloop/` be measurable at all?
+
+**39 — NEW.** *The awake fraction is a function of corpus size, and nobody reports it.* On the
+Crossref space, 21 of 66 questions are live at 40 records, 33 at 80–200, 43 at 400–800, 57 at
+2,400; on the arXiv space, 57 at 40 and all 66 from 60 upward. A loop that fetches a small corpus
+therefore publishes a calibration figure that reads low for a structural reason — 1.65 % against
+5.19 % at 40 Crossref records. Open: whether any published autonomous-discovery system reports its
+question count as *tests attempted* rather than *tests possible*, which is the same defect one
+level up.
+
+**40 — NEW.** *Where does P4's "the review stage already knew" break?* Every asleep question on
+every dataset here was also killed by the loop's review pre-conditions c1–c4, so on this evidence
+the pre-check is the same knowledge moved earlier rather than new knowledge. Open: construct or
+find a question that is asleep and **passes** review — the rule's independence from c1–c4 is
+asserted by its derivation and has not been demonstrated by an instance.
