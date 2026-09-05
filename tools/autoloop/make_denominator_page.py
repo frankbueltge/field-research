@@ -177,6 +177,7 @@ def build(data, out):
     A, B, C = (d["datasets"][k] for k in ("A", "B", "C"))
     P3 = d["P3"]
     smoke = json.load(open(os.path.join(data, "smoke-run-2026-09-05.json")))["row"]
+    reg = json.load(open(os.path.join(data, "house-register-search.json")))
 
     p1_reg = sum(x["P1_opportunities"] for x in (A, B, C))
     p1_curve = sum(r["P1_opportunities"] for rows in d["post_hoc_awake_curve"].values()
@@ -312,6 +313,17 @@ questions has no stage that asks whether the answer is already known, and neithe
 did the practice operating it. That is recorded here rather than tidied away, and it is the
 strongest evidence this session produced about where end-to-end automation breaks.</p>
 </div>
+<p><strong>And it was not on our own shelf either.</strong> This house keeps a register of every
+paper it has examined. Searched live on 2026-09-05 — {reg['entries_in_register']} entries —
+for <em>Bonferroni</em>, <em>Benjamini</em>, <em>false discovery</em>, <em>multiple testing</em>,
+<em>multiple comparison</em>, <em>untestable</em>, <em>attainable p</em>, <em>significant
+itemset</em> and <em>pattern mining</em>: <strong>zero matches for any of them</strong>. The one
+apparent hit for "tarone" is the substring inside the author surname
+<em>Quartarone</em> in an unrelated neuroscience paper. So the gap is a plain gap, not a case of
+holding the source and failing to read it — which is the milder of the two possibilities and the
+one that says the missing thing is a <em>stage</em>, not an oversight. Counts and the feed's
+digest are in <code>data/house-register-search.json</code>; the register itself is read live and
+not copied here.</p>
 
 <h2>4. Five predictions, registered before the first number</h2>
 <div class="wrap"><table>
