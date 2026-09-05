@@ -80,7 +80,14 @@ def main():
                     "n0": c["n0"], "significant": c["significant"], "bh": c["bh_survivor"],
                     "failures": c["failures"]} for c in res["claims"]]
         json.dump({"day": day, "corpus_sha256": hashlib.sha256(raw).hexdigest(),
-                   "corpus_records": res["corpus"]["records"], "tests": compact},
+                   "corpus_records": res["corpus"]["records"],
+                   # which questions the PRE-CHECK stage slept, and each question's reachable
+                   # floor. Added 2026-09-05 after an adversary showed that "asleep" and "returns
+                   # no p-value" are not the same set, and that the difference is exactly where
+                   # the multiplicity denominator moves.
+                   "asleep_keys": (res.get("PRECHECK") or {}).get("asleep_keys"),
+                   "reachable_floors": (res.get("PRECHECK") or {}).get("reachable_floors"),
+                   "tests": compact},
                   open(os.path.join(args.dir, "runs", f"{day}.json"), "w"), indent=1, sort_keys=True)
 
         row = {

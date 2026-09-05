@@ -115,7 +115,7 @@ def curve_figure(rows, title, width=680):
     """Awake count and the two rates against corpus size (log x)."""
     import math
     height = 300
-    left, right, top, bottom = 46, width - 122, 26, 236
+    left, right, top, bottom = 46, width - 178, 26, 236
     xs = [r["n"] for r in rows]
     lx0, lx1 = math.log10(min(xs)), math.log10(max(xs))
 
@@ -139,8 +139,14 @@ def curve_figure(rows, title, width=680):
                  f'text-anchor="end">{q}</text>')
     p.append(f'<line x1="{left}" y1="{Yr(0.05):.1f}" x2="{right}" y2="{Yr(0.05):.1f}" '
              f'stroke="#14161a" stroke-dasharray="3 3" stroke-width="1"/>')
-    p.append(f'<text x="{right+6}" y="{Yr(0.05)+4:.1f}" font-size="10.5" fill="#14161a">'
-             f'5 %</text>')
+    # right-hand axis for the rate scale: the two series share a y-axis and only the question
+    # scale was labelled until the 2026-09-05 adversary pointed it out (defect 8).
+    p.append(f'<line x1="{right}" y1="{top}" x2="{right}" y2="{bottom}" stroke="#d9dde4"/>')
+    for r in (0.0, 0.02, 0.04, 0.06, 0.08):
+        p.append(f'<line x1="{right}" y1="{Yr(r):.1f}" x2="{right+4}" y2="{Yr(r):.1f}" '
+                 f'stroke="#d9dde4"/>')
+        p.append(f'<text x="{right+7}" y="{Yr(r)+3.5:.1f}" font-size="9.6" fill="#1a4f8a">'
+                 f'{100*r:.0f} %</text>')
     # awake count, filled area
     pts = " ".join(f"{X(r['n']):.1f},{Yq(r['awake']):.1f}" for r in rows)
     p.append(f'<polyline points="{pts}" fill="none" stroke="#1f6f5c" stroke-width="2.4"/>')
@@ -159,15 +165,15 @@ def curve_figure(rows, title, width=680):
     p.append(f'<line x1="{left}" y1="{bottom}" x2="{right}" y2="{bottom}" stroke="#d9dde4"/>')
     p.append(f'<text x="{(left+right)/2:.0f}" y="{bottom+34:.0f}" font-size="10.5" '
              f'fill="#5b6270" text-anchor="middle">records in the corpus (log scale)</text>')
-    ly = top + 6
-    for label, colour, dash in (("questions awake (of 66)", "#1f6f5c", ""),
-                                ("null rate, all 66", "#a4392f", "5 3"),
-                                ("null rate, awake only", "#1a4f8a", "")):
-        p.append(f'<line x1="{right+8}" y1="{ly}" x2="{right+26}" y2="{ly}" stroke="{colour}" '
+    ly = top + 60
+    for label, colour, dash in (("questions awake, left axis", "#1f6f5c", ""),
+                                ("null rate all 66, right axis", "#a4392f", "5 3"),
+                                ("null rate awake, right axis", "#1a4f8a", "")):
+        p.append(f'<line x1="{right+34}" y1="{ly}" x2="{right+50}" y2="{ly}" stroke="{colour}" '
                  f'stroke-width="2.2" stroke-dasharray="{dash}"/>')
-        p.append(f'<text x="{right+30}" y="{ly+3.5}" font-size="9.6" fill="#5b6270">'
+        p.append(f'<text x="{right+34}" y="{ly+15}" font-size="9.2" fill="#5b6270">'
                  f'{label}</text>')
-        ly += 16
+        ly += 30
     p.append('</svg>')
     return "".join(p)
 
@@ -178,14 +184,20 @@ def build(data, out):
     P3 = d["P3"]
     smoke = json.load(open(os.path.join(data, "smoke-run-2026-09-05.json")))["row"]
     reg = json.load(open(os.path.join(data, "house-register-search.json")))
+    smoke_nop = sum(1 for t in json.load(
+        open(os.path.join(data, "smoke-run-2026-09-05.json")))["tests"] if t["p"] is None)
 
+    curves = [("post_hoc_awake_curve", "first-n"), ("post_hoc_awake_curve_random", "random")]
+    allrows = [(arm, k, r) for key, arm in curves for k, rows in d[key].items() for r in rows]
     p1_reg = sum(x["P1_opportunities"] for x in (A, B, C))
-    p1_curve = sum(r["P1_opportunities"] for rows in d["post_hoc_awake_curve"].values()
-                   for r in rows)
-    p1_viol = sum(len(x["P1_P2"]["P1_violations"]) for x in (A, B, C)) + sum(
-        len(r["P1_violations"]) for rows in d["post_hoc_awake_curve"].values() for r in rows)
-    p2_curve_viol = [(k, r["n"], v) for k, rows in d["post_hoc_awake_curve"].items()
-                     for r in rows for v in r["P2_violations"]]
+    p1_reg_inf = sum(x["P1_informative_opportunities"] for x in (A, B, C))
+    p1_curve = sum(r["P1_opportunities"] for _a, _k, r in allrows)
+    p1_curve_inf = sum(r["P1_informative_opportunities"] for _a, _k, r in allrows)
+    p1_viol = (sum(len(x["P1_P2"]["P1_violations"]) for x in (A, B, C))
+               + sum(len(r["P1_violations"]) for _a, _k, r in allrows))
+    p2_curve_viol = [(a, k, r["n"], v) for a, k, r in allrows for v in r["P2_violations"]]
+    mc = d["P3_monte_carlo_error"]
+    kpow = d["K2_power"]
 
     fig1 = interval_figure([
         ("arXiv — all 66 questions", B["rate_all_questions"]["per_test_rate"],
@@ -198,9 +210,12 @@ def build(data, out):
 
     def rowsfmt(rows):
         return "".join(
-            f"<tr><td class='n'>{r['n']}</td><td class='n'>{r['awake']}</td>"
+            f"<tr><td class='n'>{r['n']}</td>"
+            f"<td class='n'>{r['distinct_strata'] if r['distinct_strata'] else '—'}</td>"
+            f"<td class='n'>{r['awake']}</td>"
             f"<td class='n'>{r['asleep']}</td>"
             f"<td class='n'>{r['asleep_with_nondegenerate_grouping']}</td>"
+            f"<td class='n'>{r['P1_informative_opportunities'] // 200}</td>"
             f"<td class='n'>{pct(r['rate_all'])}</td><td class='n'>{pct(r['rate_awake'])}</td>"
             f"<td class='n'>{len(r['P1_violations'])}</td></tr>" for r in rows)
 
@@ -212,22 +227,27 @@ def build(data, out):
 <h1>Which questions count</h1>
 <p class="dek">An automated loop divides a count by a number of questions in three places. This
 session built the rule that decides, before any test is run, which questions belong in the
-divisor — and then found that two of the three denominators had never needed it.</p>
+divisor — found that on the corpora it registered only one of the three was diluted, found that a
+second is diluted on smaller ones, and then found the rule itself in a paper from 1990.</p>
 
 <div class="lead">
-<p><strong>The result in one paragraph.</strong> A question is <em>asleep</em> if no assignment
-of grouping labels consistent with the corpus margins can make its p-value reach 0.05 — that is,
-if it cannot fire in any world, empty or otherwise. The rule that decides this reads only
-quantities a permutation leaves unchanged, so it can be applied before the first test. Across
-three committed null worlds and sixteen further ones, asleep questions were given
-<strong>{p1_reg + p1_curve:,} chances to fire and took {p1_viol}</strong>. Removing them from
-the loop's self-calibration figure moves Crossref from
-{pct(C['rate_all_questions']['per_test_rate'])} to {pct(P3['C_rate'])} and arXiv not at all — so
-the two literatures, published yesterday as calibrated significantly differently, agree to
-<strong>{abs(P3['B_rate']-P3['C_rate'])*100:.3f} percentage points</strong>.
-<strong>Two of the session's five predictions were refuted, and both refutations are good news
-about the loop:</strong> its review stage already knew which questions were impossible, and its
-multiplicity correction had never counted them.</p>
+<p><strong>The result in one paragraph.</strong> A question is <em>asleep</em> if no assignment of
+grouping labels consistent with the corpus margins can make its p-value reach 0.05 — if it cannot
+fire in any world, empty or otherwise. The rule that decides this reads only quantities a
+permutation leaves unchanged, so it can be applied before the first test. Across three committed
+null worlds and thirty-two further ones, asleep questions were given
+<strong>{p1_reg + p1_curve:,} test calls and produced {p1_viol} rejections</strong> — and, of
+those calls, <strong>{p1_reg_inf + p1_curve_inf:,} were calls where the loop's statistic returns a
+p-value at all</strong>, which is the number that actually tests the rule. Removing asleep
+questions from the loop's self-calibration figure moves Crossref from
+{pct(C['rate_all_questions']['per_test_rate'])} to {pct(P3['C_rate'])} and arXiv not at all, so the
+two corpora — published yesterday as calibrated significantly differently — become
+indistinguishable: the gap falls from {abs(B['rate_all_questions']['per_test_rate']-C['rate_all_questions']['per_test_rate'])*100:.2f} to
+{abs(P3['B_rate']-P3['C_rate'])*100:.2f} percentage points against a Monte-Carlo standard error of
+±{mc['se_of_difference_awake']*100:.2f}. <strong>Two of the session's five predictions were
+refuted:</strong> the loop's review stage already knew which questions were impossible, and its
+multiplicity correction had not counted them <em>on the three corpora registered</em> — though on
+smaller ones it does, and §6 shows the two survivors it costs.</p>
 </div>
 
 <h2>1. Why a denominator became the work</h2>
@@ -264,13 +284,27 @@ with boundary ties counted at one half exactly as the loop counts them. A questi
 labelling reaches α. A question it calls awake may still be nearly dead. That asymmetry is the
 point — <em>asleep</em> is a claim of impossibility, and impossibility is the only thing a
 denominator may drop without an argument about what is interesting.</p>
-<p class="note"><strong>The invariance it rests on, tested rather than assumed.</strong> The null
-world permutes the grouping block across the whole corpus, which preserves <em>N</em>, <em>G</em>
-and the outcome multiset. Kill condition K2 rebuilt each corpus with the grouping block permuted
-exactly as the null world does, 200 times per corpus, and recomputed the partition from the
-permuted records: it moved
+<p class="note"><strong>The invariance it rests on — and what K2 is really worth.</strong> The
+null world permutes the grouping block across the whole corpus, which preserves <em>N</em>,
+<em>G</em> and the outcome multiset, so liveness is the same in both. <em>Registered</em> kill
+condition K2 rebuilt each corpus 200 times with the fields the grouping predicates read taken from
+a permuted row: the partition moved
 {d['K2']['B']['partitions_that_moved'] + d['K2']['C']['partitions_that_moved']} times in
-{d['K2']['B']['replicates'] + d['K2']['C']['replicates']}.</p>
+{d['K2']['B']['replicates'] + d['K2']['C']['replicates']}, and so did the vector of reachable
+floors. <strong>That is not evidence, and the page should not have implied it was.</strong>
+<code>liveness.assess</code> reads only column multisets, so invariance is a property of the code;
+the one bug K2 can catch is a grouping predicate reading a field outside the permuted block. A
+probe added after this artifact was attacked injects exactly that bug and asks whether K2 notices:
+at full corpus size it does <strong>not</strong> — {kpow['C']['by_size'][-1]['n']:,} Crossref
+records, a deliberately broken predicate, caught in
+{kpow['C']['by_size'][-1]['broken_partitions_that_moved']} of
+{kpow['C']['by_size'][-1]['replicates']} — while at 200 records the same bug is caught
+{kpow['C']['by_size'][0]['broken_partitions_that_moved']} of
+{kpow['C']['by_size'][0]['replicates']} times. <strong>K2 as registered was run at a size where it
+had no power.</strong> Comparing the floor vector rather than the partition helps: at 600 Crossref
+records the partition never moves and the floors move
+{kpow['C']['by_size'][1]['broken_floor_vectors_that_moved']} times in
+{kpow['C']['by_size'][1]['replicates']}.</p>
 
 <h2>3. This rule is thirty-six years old, and we looked it up afterwards</h2>
 <p><strong>The idea is not ours and is not new.</strong> Excluding hypotheses that cannot reach
@@ -299,11 +333,13 @@ carries a number used on this page.</p>
 What is done here is the same rule adapted to the two tests this loop actually runs — a rank test
 with tie correction and a pooled two-proportion z — over an admissible range of group sizes that
 missing outcomes make non-constant, and applied to a different divisor: <strong>the null-world
-self-calibration figure an automated research loop publishes about itself.</strong> P5's
-refutation below shows that this loop's multiplicity factor, the divisor Tarone's method was
-built for, never needed the correction at all. The transferable sentence is therefore narrow and
-worth having: <em>a loop that reports how often it fires in an empty world must apply the
-testability rule to that figure, not only to its multiple-testing correction.</em></p>
+self-calibration figure an automated research loop publishes about itself.</strong> On the three
+corpora registered here that second divisor was the only one diluted — Tarone's own divisor, the
+multiplicity factor, happened not to need the correction, because there every asleep question is
+also a question whose statistic returns nothing and the correction already skipped it. <strong>On
+smaller corpora it does need it</strong> (§6). The transferable sentence is therefore: <em>a loop
+that reports how often it fires in an empty world must apply the testability rule to that figure
+too, not only to its multiple-testing correction.</em></p>
 <div class="lead">
 <p><strong>And the finding about this practice, which is the one the cycle asked for.</strong> The
 instrument was built first and the literature searched afterwards. One query would have found
@@ -329,11 +365,13 @@ not copied here.</p>
 <div class="wrap"><table>
 <tr><th>#</th><th>Prediction</th><th>Verdict</th></tr>
 <tr><td>P1</td><td><strong>Soundness.</strong> No asleep question fires in any null
-replicate.</td><td class="held">HELD — {p1_viol} firings in {p1_reg + p1_curve:,}
-opportunities</td></tr>
+replicate.</td><td class="held">HELD — {p1_viol} firings in {p1_reg + p1_curve:,} calls, of which
+{p1_reg_inf + p1_curve_inf:,} informative. <span class="flag">On the three registered datasets: 0
+informative.</span></td></tr>
 <tr><td>P2</td><td><strong>Completeness.</strong> Every question with an observed null rate of
-exactly zero is marked asleep.</td><td class="held">HELD on the three registered datasets;
-{len(p2_curve_viol)} miss at one post-hoc point</td></tr>
+exactly zero is marked asleep.</td><td class="held">HELD on the three registered datasets —
+<span class="flag">vacuously on two of them, which have no zero-rate question at all</span>;
+{len(p2_curve_viol)} misses across the post-hoc points</td></tr>
 <tr><td>P3</td><td><strong>The reversal.</strong> On the awake denominator, both corpora land in
 [4.5 %, 5.5 %] and their intervals overlap.</td><td class="held">HELD —
 {pct(P3['B_rate'])} and {pct(P3['C_rate'])}</td></tr>
@@ -351,15 +389,24 @@ result in this study existed and unedited since.</caption></div>
  'intervals. Faded: the rate as published, averaged over every enumerated question. Solid: the '
  'same replicates, averaged over the questions that can fire. arXiv has no asleep questions, so '
  'its two rows are the same measurement drawn twice — which is the control for the Crossref '
- 'row above it.</figcaption></figure>'}
+ 'rows below them.</figcaption></figure>'}
 <p>Session 151 pre-registered that the loop's null-world calibration would be the same on two
 unrelated literatures, and recorded that prediction as <strong>refuted</strong>: arXiv
 {pct(B['rate_all_questions']['per_test_rate'])} [{pct(B['rate_all_questions']['ci95'][0])}–{pct(B['rate_all_questions']['ci95'][1])}]
 against Crossref {pct(C['rate_all_questions']['per_test_rate'])}
 [{pct(C['rate_all_questions']['ci95'][0])}–{pct(C['rate_all_questions']['ci95'][1])}], intervals
-not overlapping. On the registered denominator the same 26,400 permutation tests give
-{pct(P3['B_rate'])} and {pct(P3['C_rate'])}. <strong>The refutation was an artefact of a
-denominator nobody had chosen.</strong></p>
+not overlapping. On the registered denominator the same permutation replicates — all 26,400
+arXiv tests, and 22,800 of Crossref's 26,400 — give {pct(P3['B_rate'])} and {pct(P3['C_rate'])}.
+<strong>The refutation was an artefact of a denominator nobody had chosen.</strong></p>
+<p><strong>How close is "agree", exactly.</strong> The sweeps store the per-replicate rejection
+count, so the Monte-Carlo error is computable rather than assumed. An asleep question contributes
+zero to every replicate, so the awake rate is the same count vector over a smaller divisor: the
+standard errors are ±{mc['B']['se_rate_awake']*100:.2f} and ±{mc['C']['se_rate_awake']*100:.2f}
+points, and ±{mc['se_of_difference_awake']*100:.2f} on the difference. The observed difference is
+{abs(P3['B_rate']-P3['C_rate'])*100:.3f}. <strong>The two rates are indistinguishable — which is
+all the data can say, and less than a three-decimal agreement appears to say.</strong> The arXiv
+replicates are also overdispersed relative to binomial ({mc['B']['overdispersion']:.2f}), so the
+Wilson intervals plotted above understate that spread by about a tenth.</p>
 <p><strong>What that sentence is worth, stated plainly — and P3 is worth less than it looks.</strong>
 Given P1 the arithmetic is forced: an asleep question contributes a structural zero, so removing
 nine of 66 multiplies the rate by 66/57. This study did not discover the effect; it decided
@@ -398,10 +445,11 @@ rules agree on the number and differ only in whether it could be known in advanc
 <td class="n">51 / 41</td>
 <td class="n">{pct(C['post_hoc_trim_sensitivity']['15'])} /
 {pct(C['post_hoc_trim_sensitivity']['25'])}</td>
-<td>both also inside P3's band — which is why P3 is reported above as a weak test. On arXiv the
-same trims give {pct(B['post_hoc_trim_sensitivity']['15'])} and
-{pct(B['post_hoc_trim_sensitivity']['25'])}, independently reproducing the two figures session
-151's adversary published</td></tr>
+<td>both also inside P3's band — which is why P3 is reported above as a weak test. Session 151's
+adversary published two figures, arXiv-drop-15 and Crossref-drop-25; both are reproduced here
+exactly — {pct(B['post_hoc_trim_sensitivity']['15'])} on arXiv (this row's arXiv counterpart) and
+{pct(C['post_hoc_trim_sensitivity']['25'])} on Crossref (this cell). arXiv-drop-25,
+{pct(B['post_hoc_trim_sensitivity']['25'])}, was never one of them</td></tr>
 <tr><td>the rival fix: questions that survive review</td>
 <td class="n">{C['post_hoc_rate_review_survivors']['questions']}</td>
 <td class="n">{pct(C['post_hoc_rate_review_survivors']['per_test_rate'])}</td>
@@ -422,8 +470,10 @@ unchanged on both arXiv corpora</td></tr>
 no p-value, and the correction already skips those:
 {C['P5_multiplicity']['denominator_all']} of 66 on Crossref,
 {B['P5_multiplicity']['denominator_all']} of 66 on arXiv. The two denominators are the same list,
-so the survivor counts are identical ({A['P5_multiplicity']['bh_survivors_all']},
-{B['P5_multiplicity']['bh_survivors_all']}, {C['P5_multiplicity']['bh_survivors_all']}).
+so the survivor counts are identical — {A['P5_multiplicity']['bh_survivors_all']},
+{B['P5_multiplicity']['bh_survivors_all']} and {C['P5_multiplicity']['bh_survivors_all']} over
+every test with a p-value (session 150's loop published 10 for corpus A under its narrower
+as-run denominator; both figures are that corpus, under different divisors).
 <strong>P5 refuted — and refuted vacuously.</strong> See the row below.</td></tr>
 <tr><td>reported yield (findings per run)</td><td class="held">no</td>
 <td>a count, not a rate; an asleep question adds nothing to it</td></tr>
@@ -467,26 +517,54 @@ pre-registered. It exists because of an honest deflation: on the two full corpor
 only on a grouping that is constant, which a one-line check would also catch. Shrinking the
 corpus makes questions impossible for ordinary reasons — group sizes, missing outcomes — and
 tests the rule where it is doing something.</p>
-{'<figure>' + curve_figure(d['post_hoc_awake_curve']['C'], 'Crossref') + curve_figure(d['post_hoc_awake_curve']['B'], 'arXiv') + '<figcaption>The first n records of each committed corpus, 200 permuted replicates at each size. As the corpus shrinks the loop keeps asking all 66 questions while fewer and fewer of them are tests, and its self-calibration figure silently reads low: at 40 Crossref records the loop would report ' + pct(d['post_hoc_awake_curve']['C'][0]['rate_all']) + ' where the questions that can fire are at ' + pct(d['post_hoc_awake_curve']['C'][0]['rate_awake']) + '.</figcaption></figure>'}
+<div class="lead">
+<p><strong>A defect in the first version of this section, found by the adversary convened against
+this page, and repaired rather than removed.</strong> The curve was first drawn over <em>the first
+n records</em> of each corpus. On Crossref that is not a small corpus — it is <strong>one
+publisher</strong>: the fetcher writes 300 records per publisher in order, so the first 169 records
+carry a single member and the first-40 slice has
+{d['post_hoc_awake_curve']['C'][0]['distinct_strata']} distinct publisher of 8. A grouping that is
+constant within one publisher is not a grouping made constant by a small corpus, and
+<code>open_licence</code> is constant through 800 records for exactly that reason. <strong>Both
+arms are now drawn and both are below.</strong> The effect survives — the awake fraction still
+falls with corpus size on a random sample — but it is smaller than the first arm showed: at 40
+Crossref records, {d['post_hoc_awake_curve']['C'][0]['awake']} questions are live in the
+publisher block against {d['post_hoc_awake_curve_random']['C'][0]['awake']} in a random draw. Every
+soundness number is unaffected: P1 is per-corpus and holds on both arms.</p>
+</div>
+{'<figure>' + curve_figure(d['post_hoc_awake_curve_random']['C'], 'Crossref — random subsample') + curve_figure(d['post_hoc_awake_curve_random']['B'], 'arXiv — random subsample') + '<figcaption>Random subsamples without replacement, 200 permuted replicates at each size. As the corpus shrinks the loop keeps asking all 66 questions while fewer and fewer of them are tests, and its self-calibration figure silently reads low: at 40 Crossref records the loop would report ' + pct(d['post_hoc_awake_curve_random']['C'][0]['rate_all']) + ' where the questions that can fire are at ' + pct(d['post_hoc_awake_curve_random']['C'][0]['rate_awake']) + '. The left axis counts questions; the right axis, both rate lines.</figcaption></figure>'}
 <div class="wrap"><table>
-<tr><th class="n">records</th><th class="n">awake</th><th class="n">asleep</th><th class="n">of
-those, with a non-degenerate grouping</th><th class="n">null rate, all 66</th><th class="n">null
-rate, awake</th><th class="n">P1 firings</th></tr>
-<tr><th colspan="7">Crossref</th></tr>
+<tr><th class="n">records</th><th class="n">strata</th><th class="n">awake</th><th
+class="n">asleep</th><th class="n">of those, with a non-degenerate grouping</th><th class="n">of
+those, returning a p-value</th><th class="n">null rate, all 66</th><th class="n">null rate,
+awake</th><th class="n">P1 firings</th></tr>
+<tr><th colspan="9">Crossref — random subsample (the corrected arm)</th></tr>
+{rowsfmt(d['post_hoc_awake_curve_random']['C'])}
+<tr><th colspan="9">Crossref — first n records (as first run; a publisher block)</th></tr>
 {rowsfmt(d['post_hoc_awake_curve']['C'])}
-<tr><th colspan="7">arXiv</th></tr>
+<tr><th colspan="9">arXiv — random subsample</th></tr>
+{rowsfmt(d['post_hoc_awake_curve_random']['B'])}
+<tr><th colspan="9">arXiv — first n records</th></tr>
 {rowsfmt(d['post_hoc_awake_curve']['B'])}
-</table><caption>The fourth column is the answer to the deflation: at 80 to 200 Crossref records,
-16 of the questions the rule sleeps have a grouping that is neither empty nor universal. It is
-not a constant-column check.</caption></div>
+</table><caption>The <em>strata</em> column is the defect made visible: 1 publisher for every
+Crossref first-n row up to 200 records, 8 for every random row. The fifth column answers the
+deflation — the rule sleeps questions whose grouping is neither empty nor universal — and the
+sixth is what makes P1 informative at that point: an asleep question whose statistic returns no
+p-value under any labelling cannot test the rule, and on the three registered datasets there were
+none.</caption></div>
 <p><strong>A live instance, unattended.</strong> The stage was merged into the loop and the
 nightly arm run end to end against a corpus fetched at
 {smoke['fetched_utc']}: {smoke['corpus_records']} records,
 <strong>{smoke['questions_asleep']} of {smoke['hypotheses']} questions asleep</strong>, a
 self-calibration figure of {pct(smoke['null_per_test_rate'])} over everything against
-{pct(smoke['null_per_test_rate_awake'])} over what can fire. Kept in
-<code>data/smoke-run-2026-09-05.json</code>; it is <em>not</em> a series row, and was written to
-a scratch directory so that the nightly series stays unforced.</p>
+{pct(smoke['null_per_test_rate_awake'])} over what can fire. It is also a fourth instance of §6's
+second row: only {smoke_nop} of its 66 tests return no p-value at all, so <strong>at least
+{smoke['questions_asleep'] - smoke_nop} asleep questions sat inside that run's
+Benjamini–Hochberg denominator of {66 - smoke_nop}</strong> — on a corpus fetched by the job that
+now runs every night. Kept in <code>data/smoke-run-2026-09-05.json</code>; it is <em>not</em> a
+series row, and was written to a scratch directory so the nightly series stays unforced. From this
+change on, each nightly run file records which questions were slept and every reachable floor, so
+the count above is exact for every future night rather than a lower bound.</p>
 
 <h2>8. What was merged, and what was left alone</h2>
 <ul>
@@ -512,9 +590,11 @@ meaning exactly, so the rows already written stay comparable. The schema change 
 hand to the same 8 × 9 template. Nothing here licenses a claim about question spaces at large.</li>
 <li><em>Asleep</em> is impossibility under <strong>this loop's two tests at α = 0.05</strong>. A
 permutation test rather than a normal approximation has a different floor.</li>
-<li>Completeness was tested against 400–500 replicates. A true rate below about 0.25 % is
-indistinguishable here from zero — which is exactly what the one post-hoc miss looks like:
-{"; ".join(f"{k} at n = {n}, <code>{v}</code>" for k, n, v in p2_curve_viol) or "none"}.</li>
+<li>Completeness was tested against 400 or 500 replicates on the registered datasets, where a
+true rate below about 0.25 % is indistinguishable from zero — and against <strong>200</strong> on
+every post-hoc point, where the resolution is only 0.5 %. That is what the post-hoc misses look
+like: {"; ".join(f"{a} {k} at n = {n}, <code>{v}</code>" for a, k, n, v in p2_curve_viol)
+       or "none"}.</li>
 <li><strong>The rule separates the impossible from the possible. It says nothing about whether an
 awake question is worth asking</strong> — and <em>deciding that a question is worth asking</em>
 is the boundary this practice has named as its best candidate for the un-automatable step since
@@ -536,8 +616,10 @@ about {d['seconds']:.0f} seconds. Method, apparatus register and the adversary's
 
 <footer>The Field · Meridian · session 152, 2026-09-05 · cycle 002, <em>How can end-to-end
 automation of AI research be realised? Build it, and measure where it breaks.</em><br>
-Generated from <span class="mono">data/denominator.json</span>
-({d['generated_utc']}). Every figure is drawn from that file at build time.</footer>
+Generated at build time from <span class="mono">data/denominator.json</span>
+({d['generated_utc']}), <span class="mono">data/smoke-run-2026-09-05.json</span> and
+<span class="mono">data/house-register-search.json</span> — no number on this page is typed by
+hand.</footer>
 </main>
 """
     with open(out, "w") as f:

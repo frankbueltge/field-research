@@ -82,35 +82,65 @@ def liveness_for(space_name, records, questions=None):
 
 # --- P1, P2 ---------------------------------------------------------------------------------
 
-def soundness_completeness(lv, hits):
+def soundness_completeness(lv, hits, replicates=None):
+    """P1 and P2, with the distinction the 2026-09-05 adversary forced.
+
+    An asleep question with a reachable floor of exactly 1.0 is one whose statistic returns NO
+    p-value under ANY admissible labelling — an empty group, or zero pooled variance. Counting
+    its replicates as "chances to fire" inflates P1's strength: the loop's own code could not
+    have produced a rejection there whatever the rule said. An asleep question with a floor
+    BELOW 1.0 does produce a p-value; it simply cannot produce a small enough one. Only those
+    replicates are informative about the rule, and they are counted separately."""
     asleep = set(lv["asleep"])
     zero = {k for k, v in hits.items() if v == 0}
     fired_asleep = sorted(k for k in asleep if hits.get(k, 0) > 0)
     missed = sorted(zero - asleep)
-    return {
+    informative = sorted(k for k in asleep if lv["detail"][k]["reachable_floor"] < 1.0)
+    out = {
         "asleep": sorted(asleep), "observed_zero": sorted(zero),
         "P1_violations": fired_asleep,          # asleep questions that fired -> kills the rule
         "P2_violations": missed,                # zero-rate questions the rule calls awake
         "P1_holds": not fired_asleep,
         "P2_holds": not missed,
+        "asleep_that_can_return_a_p_value": informative,
     }
+    if replicates is not None:
+        out["P1_opportunities"] = len(asleep) * replicates
+        out["P1_informative_opportunities"] = len(informative) * replicates
+    return out
 
 
 # --- K2: liveness is invariant under the permutation the null world uses ---------------------
 
-def k2_invariance(space_name, records, replicates, seed):
-    """Rebuild the corpus with the grouping block permuted, exactly as null_world does, and
-    recompute liveness from the permuted records. The partition must not move."""
+def k2_invariance(space_name, records, replicates, seed, groupings=None):
+    """Rebuild the corpus with the fields the grouping predicates read taken from a permuted row,
+    and recompute liveness from the permuted records. Partition AND floors must not move.
+
+    WHAT THIS IS, after the 2026-09-05 adversary (defect 3). `liveness.assess` reads only column
+    multisets, so invariance is a property of the code and not a hypothesis: this cannot fail
+    unless a grouping predicate reads a field outside the permuted block. It is a REGRESSION TEST
+    for exactly that bug, not evidence for the invariance claim. Its power is reported separately
+    by `k2_power_probe`, and at full corpus size that power is nil.
+
+    NOTE, also the adversary's (defect 10): this permutes record FIELDS, six of which per space
+    are also outcome columns. `null_world()` permutes only the derived boolean grouping columns
+    and leaves the outcome preparations untouched. This is therefore a STRONGER perturbation than
+    the one it stands in for, not the same one."""
     space = dial.SPACES[space_name]
-    gnames = list(space["groupings"])
-    base = liveness_for(space_name, records)
+    gr = groupings or {g: v[0] for g, v in space["groupings"].items()}
+    qs = dial.enumerate_questions(space)
+
+    def assess(recs):
+        return liveness.assess(recs, gr, space["numeric"], space["binary"], qs)
+
+    base = assess(records)
     base_awake = set(base["awake"])
+    base_floors = {k: v["reachable_floor"] for k, v in base["detail"].items()}
     rng = random.Random(seed)
     n = len(records)
     order = list(range(n))
-    # the grouping block is the set of record fields the grouping predicates read
-    gfields = sorted({space["groupings"][g][2] for g in gnames})
-    moves = 0
+    gfields = sorted({space["groupings"][g][2] for g in space["groupings"]})
+    moves = floor_moves = 0
     for _ in range(replicates):
         rng.shuffle(order)
         permuted = []
@@ -120,10 +150,43 @@ def k2_invariance(space_name, records, replicates, seed):
             for f in gfields:
                 r[f] = src.get(f)
             permuted.append(r)
-        lv = liveness_for(space_name, permuted)
+        lv = assess(permuted)
         if set(lv["awake"]) != base_awake:
             moves += 1
-    return {"replicates": replicates, "partitions_that_moved": moves, "K2_holds": moves == 0}
+        if any(abs(v["reachable_floor"] - base_floors[k]) > 1e-12
+               for k, v in lv["detail"].items()):
+            floor_moves += 1
+    return {"replicates": replicates, "partitions_that_moved": moves,
+            "floor_vectors_that_moved": floor_moves,
+            "K2_holds": moves == 0 and floor_moves == 0}
+
+
+def k2_power_probe(space_name, records, sizes, replicates, seed):
+    """A test of the test. Inject the one bug class K2 can catch — a grouping predicate reading a
+    field the permutation does not move — and report how often K2 notices, at each corpus size.
+
+    The adversary's finding, reproduced here so it is this practice's own number: at full corpus
+    size a deliberately broken predicate passes K2 every time."""
+    space = dial.SPACES[space_name]
+    broken = {g: v[0] for g, v in space["groupings"].items()}
+    if space_name == "crossref":
+        broken["cited"] = lambda r: (r["cited_by_count"] or 0) > 0 and (r["title_words"] or 0) >= 8
+        injected = "cited also reads title_words, which the permutation does not move"
+    else:
+        broken["revised"] = lambda r: bool(r["revised"]) and (r["title_words"] or 0) >= 8
+        injected = "revised also reads title_words, which the permutation does not move"
+    out = []
+    for n in sizes:
+        sub = records[:n]
+        honest = k2_invariance(space_name, sub, replicates, seed)
+        bad = k2_invariance(space_name, sub, replicates, seed, groupings=broken)
+        out.append({"n": n, "replicates": replicates,
+                    "honest_partitions_that_moved": honest["partitions_that_moved"],
+                    "broken_partitions_that_moved": bad["partitions_that_moved"],
+                    "broken_floor_vectors_that_moved": bad["floor_vectors_that_moved"],
+                    "K2_would_have_caught_it": bad["partitions_that_moved"] > 0
+                                               or bad["floor_vectors_that_moved"] > 0})
+    return {"injected_defect": injected, "by_size": out}
 
 
 # --- P3: the awake denominator, and the adversary's random-trim control ----------------------
@@ -198,19 +261,28 @@ def bh_comparison(lv, real):
 
 # --- post-hoc: the awake curve, and the rule tested where it does real work ------------------
 
-def awake_curve(space_name, records, sizes, replicates, seed):
+def awake_curve(space_name, records, sizes, replicates, seed, sampling="first"):
     """POST-HOC (not in the pre-registration; labelled as such on the page).
 
     On the two corpora at hand the rule only ever fires on a grouping that is constant, so its
     soundness has been tested only in its trivial regime. Shrinking the corpus makes questions
     genuinely impossible for reasons of size rather than degeneracy. At each size the rule's
     verdict is compared against an actual null world of the same size.
+
+    SAMPLING, after the 2026-09-05 adversary (defect 7). `sampling="first"` takes the first n
+    records, which is how this was first run and is kept for the record. On the Crossref corpus
+    that slice is a PUBLISHER BLOCK — the fetcher writes 300 records per publisher in order, so
+    the first 169 records are one publisher — and a grouping constant within one publisher is not
+    a grouping made constant by a small corpus. `sampling="random"` draws without replacement
+    and is the corrected arm; both are reported.
     """
     space = dial.SPACES[space_name]
     qs = dial.enumerate_questions(space)
+    strat = space.get("stratum_field")
+    rng = random.Random(seed)
     out = []
     for n in sizes:
-        sub = records[:n]
+        sub = records[:n] if sampling == "first" else rng.sample(records, n)
         lv = liveness_for(space_name, sub)
         breaks = []
         preps = {o: dial.prepare_outcome(space, sub, o) for o in {o for _, o in qs}}
@@ -219,16 +291,22 @@ def awake_curve(space_name, records, sizes, replicates, seed):
         null, per_q, _secs = dial.null_sweep(space, sub, cells, preps, gcols,
                                              replicates, seed, breaks)
         hits = {k: int(round(v * replicates)) for k, v in per_q.items()}
-        sc = soundness_completeness(lv, hits)
+        sc = soundness_completeness(lv, hits, replicates)
         aw = rates(hits, lv["awake"], replicates) if lv["awake"] else None
         allr = rates(hits, sorted(hits), replicates)
         out.append({
-            "n": n, "awake": lv["awake_count"], "asleep": lv["asleep_count"],
+            "n": n, "sampling": sampling,
+            "distinct_strata": len({r.get(strat) for r in sub}) if strat else None,
+            "constant_groupings": sorted(
+                g for g in space["groupings"]
+                if len({bool(space["groupings"][g][0](r)) for r in sub}) < 2),
+            "awake": lv["awake_count"], "asleep": lv["asleep_count"],
             "asleep_with_nondegenerate_grouping": sum(
                 1 for k in lv["asleep"]
                 if 0 < lv["detail"][k]["G"] < lv["detail"][k]["N"]),
             "P1_violations": sc["P1_violations"], "P2_violations": sc["P2_violations"],
-            "P1_opportunities": lv["asleep_count"] * replicates,
+            "P1_opportunities": sc["P1_opportunities"],
+            "P1_informative_opportunities": sc["P1_informative_opportunities"],
             "observed_zero": len(sc["observed_zero"]),
             "rate_all": allr["per_test_rate"], "rate_awake": aw["per_test_rate"] if aw else None,
             "ci_all": allr["ci95"], "ci_awake": aw["ci95"] if aw else None,
@@ -287,8 +365,8 @@ def main():
         d = ds[key]
         records = json.load(open(d["corpus"]))["records"]
         lv = liveness_for(d["space"], records)
-        sc = soundness_completeness(lv, d["hits"])
         reps = d["replicates"]
+        sc = soundness_completeness(lv, d["hits"], reps)
         all_rates = rates(d["hits"], sorted(d["hits"]), reps)
         awake_rates = rates(d["hits"], lv["awake"], reps)
         entry = {
@@ -314,7 +392,8 @@ def main():
         survivors = [k for k in sorted(d["hits"]) if not d["real"].get(k, {}).get("failures")]
         entry["post_hoc_rate_review_survivors"] = rates(d["hits"], survivors, reps)
         # how much opportunity P1 was actually given
-        entry["P1_opportunities"] = len(lv["asleep"]) * reps
+        entry["P1_opportunities"] = sc["P1_opportunities"]
+        entry["P1_informative_opportunities"] = sc["P1_informative_opportunities"]
         if lv["asleep_count"]:
             entry["control_random_trim"] = random_trim_control(
                 d["hits"], lv["awake_count"], reps, 10000, args.seed)
@@ -331,6 +410,30 @@ def main():
               f"awake-only {awake_rates['per_test_rate']*100:.2f} %, "
               f"P1 {'ok' if sc['P1_holds'] else 'FAILED'}, "
               f"P2 {'ok' if sc['P2_holds'] else 'FAILED'}", file=sys.stderr)
+
+    # P3's Monte-Carlo error, after the 2026-09-05 adversary (defect 4). The two rates were
+    # quoted to three decimals of a percentage point; the replicate-level spread is an order of
+    # magnitude larger, and the sweeps store the per-replicate count vectors, so it is computable
+    # exactly rather than assumed. An asleep question contributes 0 to every replicate, so the
+    # per-replicate count over the awake questions IS the stored count: only the divisor changes.
+    mc = {}
+    for key, space in (("B", "arxiv"), ("C", "crossref")):
+        sw = json.load(open(os.path.join(D151, f"sweep-{space}.json")))
+        counts = sw["null"]["lean@66"]["counts"]
+        R = len(counts)
+        var = statistics.pvariance(counts)
+        n_awake = report["datasets"][key]["liveness"]["awake"]
+        mc[key] = {
+            "replicates": R,
+            "per_replicate_variance": var,
+            "binomial_variance": 66 * ALPHA * (1 - ALPHA),
+            "overdispersion": var / (66 * ALPHA * (1 - ALPHA)),
+            "se_rate_all66": (var / R) ** 0.5 / 66,
+            "se_rate_awake": (var / R) ** 0.5 / n_awake,
+        }
+    mc["se_of_difference_awake"] = (mc["B"]["se_rate_awake"] ** 2
+                                    + mc["C"]["se_rate_awake"] ** 2) ** 0.5
+    report["P3_monte_carlo_error"] = mc
 
     # P3, over B and C
     b, c = report["datasets"]["B"], report["datasets"]["C"]
@@ -353,25 +456,34 @@ def main():
     report["P3"]["holds"] = report["P3"]["intervals_overlap"] and report["P3"]["both_in_band"]
 
     # K2
-    print("  K2: liveness under the null world's own permutation", file=sys.stderr)
+    print("  K2: the regression test, and a probe of its power", file=sys.stderr)
     report["K2"] = {}
+    report["K2_power"] = {}
     for key in ("B", "C"):
         recs = json.load(open(ds[key]["corpus"]))["records"]
         report["K2"][key] = k2_invariance(ds[key]["space"], recs,
                                           args.k2_replicates, args.seed)
+        report["K2_power"][key] = k2_power_probe(ds[key]["space"], recs,
+                                                 [200, 600, len(recs)], 50, args.seed)
         print(f"    {key}: moved {report['K2'][key]['partitions_that_moved']} of "
-              f"{args.k2_replicates}", file=sys.stderr)
+              f"{args.k2_replicates}; power probe "
+              f"{[ (r['n'], r['K2_would_have_caught_it']) for r in report['K2_power'][key]['by_size'] ]}",
+              file=sys.stderr)
 
     # post-hoc curve
     print("  POST-HOC: the awake curve", file=sys.stderr)
     report["post_hoc_awake_curve"] = {}
+    report["post_hoc_awake_curve_random"] = {}
     sizes = [40, 60, 80, 120, 200, 400, 800, 2000]
     for key in ("B", "C"):
         recs = json.load(open(ds[key]["corpus"]))["records"]
-        print(f"   {key} {ds[key]['label']}", file=sys.stderr)
+        use = [s for s in sizes if s <= len(recs)]
+        print(f"   {key} {ds[key]['label']} — first-n (as first run)", file=sys.stderr)
         report["post_hoc_awake_curve"][key] = awake_curve(
-            ds[key]["space"], recs, [s for s in sizes if s <= len(recs)],
-            args.curve_replicates, args.seed)
+            ds[key]["space"], recs, use, args.curve_replicates, args.seed, "first")
+        print(f"   {key} {ds[key]['label']} — random (the corrected arm)", file=sys.stderr)
+        report["post_hoc_awake_curve_random"][key] = awake_curve(
+            ds[key]["space"], recs, use, args.curve_replicates, args.seed, "random")
 
     print("  POST-HOC: P5 where it can come out either way", file=sys.stderr)
     report["post_hoc_bh_on_subsamples"] = {}
