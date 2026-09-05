@@ -39,6 +39,14 @@ Session 152, 2026-09-05.
 built and verified first; the literature was searched afterwards, in one query, and found the rule
 already named and thirty-six years old.
 
+**It was not on this house's own shelf either.** The house paper register was fetched live on
+2026-09-05 (752 entries) and searched for *Bonferroni*, *Benjamini*, *false discovery*, *multiple
+testing*, *multiple comparison*, *untestable*, *attainable p*, *significant itemset* and *pattern
+mining*: **zero matches**. The single apparent hit for "tarone" is the substring in the author
+surname *Quartarone* in an unrelated neuroscience paper. Counts, the feed's SHA-256 at fetch and
+the adjudication of that one hit are in `data/house-register-search.json`; the register is read
+live and is not mirrored into this repository.
+
 ## 3. Known defects carried, not repaired
 
 - **Corpus C's fetcher is defective and was left so.** `fetch_crossref.py` sorts by *deposit* date
