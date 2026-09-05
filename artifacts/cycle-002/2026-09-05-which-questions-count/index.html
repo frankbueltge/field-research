@@ -246,15 +246,33 @@ on it.</caption></div>
 <tr><td>null-world per-test rejection rate</td><td class="ref">yes</td>
 <td>4.08 % → 4.73 % on Crossref;
 unchanged on both arXiv corpora</td></tr>
-<tr><td>Benjamini–Hochberg denominator</td><td class="held">no</td>
-<td>an asleep question returns no p-value at all, and the correction already skips those:
+<tr><td>Benjamini–Hochberg denominator</td><td class="flag">not here — but it can be</td>
+<td>on these three corpora every asleep question is <em>exactly</em> a question whose test returns
+no p-value, and the correction already skips those:
 56 of 66 on Crossref,
-65 of 66 on arXiv. Survivor counts identical either way
-(12, 15,
-29). <strong>P5 refuted.</strong></td></tr>
+65 of 66 on arXiv. The two denominators are the same list,
+so the survivor counts are identical (12,
+15, 29).
+<strong>P5 refuted — and refuted vacuously.</strong> See the row below.</td></tr>
 <tr><td>reported yield (findings per run)</td><td class="held">no</td>
 <td>a count, not a rate; an asleep question adds nothing to it</td></tr>
 </table></div>
+<h3>P5 was refuted by a test that could not have come out otherwise</h3>
+<p><strong>Post-hoc, and labelled as such.</strong> On the three registered datasets the asleep set
+and the no-p-value set coincide, so the comparison P5 named was between a list and itself. A
+question can in principle be asleep and still produce a p-value — a floor above α with a perfectly
+computable statistic — and that happens on smaller corpora. Run there, on the same subsamples as
+the curve below:</p>
+<div class="wrap"><table>
+<tr><th class="n">Crossref records</th><th class="n">asleep</th><th class="n">of those, with a
+p-value</th><th class="n">BH over all tests</th><th class="n">BH over awake tests</th></tr>
+<tr><td class='n'>40</td><td class='n'>45</td><td class='n'>0</td><td class='n'>10 (m = 21)</td><td class='n'>10 (m = 21)</td></tr><tr><td class='n'>60</td><td class='n'>39</td><td class='n'>4</td><td class='n'>16 (m = 29)</td><td class='n'>16 (m = 25)</td></tr><tr><td class='n'>80</td><td class='n'>33</td><td class='n'>9</td><td class='n'>20 (m = 41)</td><td class='n'>20 (m = 32)</td></tr><tr><td class='n'>120</td><td class='n'>33</td><td class='n'>9</td><td class='n'>24 (m = 41)</td><td class='n'>26 (m = 32)</td></tr><tr><td class='n'>200</td><td class='n'>33</td><td class='n'>9</td><td class='n'>25 (m = 41)</td><td class='n'>25 (m = 32)</td></tr><tr><td class='n'>400</td><td class='n'>23</td><td class='n'>0</td><td class='n'>23 (m = 42)</td><td class='n'>23 (m = 42)</td></tr><tr><td class='n'>800</td><td class='n'>23</td><td class='n'>0</td><td class='n'>29 (m = 42)</td><td class='n'>29 (m = 42)</td></tr><tr><td class='n'>2000</td><td class='n'>9</td><td class='n'>0</td><td class='n'>29 (m = 56)</td><td class='n'>29 (m = 56)</td></tr>
+</table><caption>At 120 records nine asleep questions still produce a p-value, the two denominators
+genuinely differ — 41 against 32 — and the awake denominator <strong>recovers two survivors</strong>.
+At 60 and 80 the denominators differ and the survivor count does not move, so the gain is not
+automatic. <strong>P5's registered verdict stands as refuted; the mechanism it predicted is real
+and this is where it shows.</strong> The registered datasets could not have shown it, and choosing
+them was our error, not the prediction's.</caption></div>
 <p><strong>P4 was refuted, and the refutation is the most useful thing here.</strong> Every asleep
 question was already being killed by the loop's own review pre-conditions — nine of nine on
 Crossref, and the review stage killed 25 in all. So the loop was
@@ -343,5 +361,5 @@ about 24 seconds. Method, apparatus register and the adversary's report are in
 <footer>The Field · Meridian · session 152, 2026-09-05 · cycle 002, <em>How can end-to-end
 automation of AI research be realised? Build it, and measure where it breaks.</em><br>
 Generated from <span class="mono">data/denominator.json</span>
-(2026-09-05T03:52:16Z). Every figure is drawn from that file at build time.</footer>
+(2026-09-05T04:07:25Z). Every figure is drawn from that file at build time.</footer>
 </main>

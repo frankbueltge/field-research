@@ -2366,7 +2366,7 @@
    "space": "crossref"
   }
  },
- "generated_utc": "2026-09-05T03:52:16Z",
+ "generated_utc": "2026-09-05T04:07:25Z",
  "post_hoc_awake_curve": {
   "B": [
    {
@@ -2708,6 +2708,239 @@
     "observed_zero": 9,
     "rate_all": 0.03848484848484848,
     "rate_awake": 0.04456140350877193
+   }
+  ]
+ },
+ "post_hoc_bh_on_subsamples": {
+  "B": [
+   {
+    "asleep": 9,
+    "asleep_with_a_p_value": 0,
+    "bh_survivors_all": 2,
+    "bh_survivors_awake": 2,
+    "breaks": 0,
+    "denominator_all": 56,
+    "denominator_awake": 56,
+    "gained": [],
+    "lost": [],
+    "n": 40,
+    "raw_findings_all": 0,
+    "test_has_content": false
+   },
+   {
+    "asleep": 0,
+    "asleep_with_a_p_value": 0,
+    "bh_survivors_all": 2,
+    "bh_survivors_awake": 2,
+    "breaks": 0,
+    "denominator_all": 65,
+    "denominator_awake": 65,
+    "gained": [],
+    "lost": [],
+    "n": 60,
+    "raw_findings_all": 0,
+    "test_has_content": false
+   },
+   {
+    "asleep": 0,
+    "asleep_with_a_p_value": 0,
+    "bh_survivors_all": 2,
+    "bh_survivors_awake": 2,
+    "breaks": 0,
+    "denominator_all": 65,
+    "denominator_awake": 65,
+    "gained": [],
+    "lost": [],
+    "n": 80,
+    "raw_findings_all": 0,
+    "test_has_content": false
+   },
+   {
+    "asleep": 0,
+    "asleep_with_a_p_value": 0,
+    "bh_survivors_all": 2,
+    "bh_survivors_awake": 2,
+    "breaks": 0,
+    "denominator_all": 65,
+    "denominator_awake": 65,
+    "gained": [],
+    "lost": [],
+    "n": 120,
+    "raw_findings_all": 0,
+    "test_has_content": false
+   },
+   {
+    "asleep": 0,
+    "asleep_with_a_p_value": 0,
+    "bh_survivors_all": 2,
+    "bh_survivors_awake": 2,
+    "breaks": 0,
+    "denominator_all": 65,
+    "denominator_awake": 65,
+    "gained": [],
+    "lost": [],
+    "n": 200,
+    "raw_findings_all": 0,
+    "test_has_content": false
+   },
+   {
+    "asleep": 0,
+    "asleep_with_a_p_value": 0,
+    "bh_survivors_all": 5,
+    "bh_survivors_awake": 5,
+    "breaks": 0,
+    "denominator_all": 65,
+    "denominator_awake": 65,
+    "gained": [],
+    "lost": [],
+    "n": 400,
+    "raw_findings_all": 3,
+    "test_has_content": false
+   },
+   {
+    "asleep": 0,
+    "asleep_with_a_p_value": 0,
+    "bh_survivors_all": 7,
+    "bh_survivors_awake": 7,
+    "breaks": 0,
+    "denominator_all": 65,
+    "denominator_awake": 65,
+    "gained": [],
+    "lost": [],
+    "n": 800,
+    "raw_findings_all": 4,
+    "test_has_content": false
+   },
+   {
+    "asleep": 0,
+    "asleep_with_a_p_value": 0,
+    "bh_survivors_all": 14,
+    "bh_survivors_awake": 14,
+    "breaks": 0,
+    "denominator_all": 65,
+    "denominator_awake": 65,
+    "gained": [],
+    "lost": [],
+    "n": 2000,
+    "raw_findings_all": 17,
+    "test_has_content": false
+   }
+  ],
+  "C": [
+   {
+    "asleep": 45,
+    "asleep_with_a_p_value": 0,
+    "bh_survivors_all": 10,
+    "bh_survivors_awake": 10,
+    "breaks": 0,
+    "denominator_all": 21,
+    "denominator_awake": 21,
+    "gained": [],
+    "lost": [],
+    "n": 40,
+    "raw_findings_all": 0,
+    "test_has_content": false
+   },
+   {
+    "asleep": 39,
+    "asleep_with_a_p_value": 4,
+    "bh_survivors_all": 16,
+    "bh_survivors_awake": 16,
+    "breaks": 0,
+    "denominator_all": 29,
+    "denominator_awake": 25,
+    "gained": [],
+    "lost": [],
+    "n": 60,
+    "raw_findings_all": 1,
+    "test_has_content": true
+   },
+   {
+    "asleep": 33,
+    "asleep_with_a_p_value": 9,
+    "bh_survivors_all": 20,
+    "bh_survivors_awake": 20,
+    "breaks": 0,
+    "denominator_all": 41,
+    "denominator_awake": 32,
+    "gained": [],
+    "lost": [],
+    "n": 80,
+    "raw_findings_all": 10,
+    "test_has_content": true
+   },
+   {
+    "asleep": 33,
+    "asleep_with_a_p_value": 9,
+    "bh_survivors_all": 24,
+    "bh_survivors_awake": 26,
+    "breaks": 0,
+    "denominator_all": 41,
+    "denominator_awake": 32,
+    "gained": [
+     "funded|has_orcid",
+     "has_abstract|published_doy"
+    ],
+    "lost": [],
+    "n": 120,
+    "raw_findings_all": 14,
+    "test_has_content": true
+   },
+   {
+    "asleep": 33,
+    "asleep_with_a_p_value": 9,
+    "bh_survivors_all": 25,
+    "bh_survivors_awake": 25,
+    "breaks": 0,
+    "denominator_all": 41,
+    "denominator_awake": 32,
+    "gained": [],
+    "lost": [],
+    "n": 200,
+    "raw_findings_all": 24,
+    "test_has_content": true
+   },
+   {
+    "asleep": 23,
+    "asleep_with_a_p_value": 0,
+    "bh_survivors_all": 23,
+    "bh_survivors_awake": 23,
+    "breaks": 0,
+    "denominator_all": 42,
+    "denominator_awake": 42,
+    "gained": [],
+    "lost": [],
+    "n": 400,
+    "raw_findings_all": 22,
+    "test_has_content": false
+   },
+   {
+    "asleep": 23,
+    "asleep_with_a_p_value": 0,
+    "bh_survivors_all": 29,
+    "bh_survivors_awake": 29,
+    "breaks": 0,
+    "denominator_all": 42,
+    "denominator_awake": 42,
+    "gained": [],
+    "lost": [],
+    "n": 800,
+    "raw_findings_all": 23,
+    "test_has_content": false
+   },
+   {
+    "asleep": 9,
+    "asleep_with_a_p_value": 0,
+    "bh_survivors_all": 29,
+    "bh_survivors_awake": 29,
+    "breaks": 0,
+    "denominator_all": 56,
+    "denominator_awake": 56,
+    "gained": [],
+    "lost": [],
+    "n": 2000,
+    "raw_findings_all": 25,
+    "test_has_content": false
    }
   ]
  },

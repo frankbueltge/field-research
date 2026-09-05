@@ -113,6 +113,10 @@ Nothing in this section was pre-registered.
   P3 would have concluded had the rule returned a different count. It would have concluded the
   same, which is why the page reports P3 as a weak test.
 - **The rival denominator.** The per-test rate over review survivors.
+- **P5 where it can come out either way.** On the three registered datasets the asleep set and the
+  set of questions with no computable p-value coincide, so P5's comparison was between a list and
+  itself. The same comparison is therefore run on the curve's subsamples, where a question can be
+  asleep and still produce a p-value, using `dial.real_battery` on the first *n* records.
 - **The smoke run.** The merged pipeline run end to end against a corpus fetched 2026-09-05
   03:49 UTC, `--per-cat 40 --replicates 50`, written to a scratch directory. It is **not** a
   series row: a series whose rows are forced by hand is not a series. Kept as

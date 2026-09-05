@@ -417,15 +417,37 @@ on it.</caption></div>
 <tr><td>null-world per-test rejection rate</td><td class="ref">yes</td>
 <td>{pct(C['rate_all_questions']['per_test_rate'])} → {pct(P3['C_rate'])} on Crossref;
 unchanged on both arXiv corpora</td></tr>
-<tr><td>Benjamini–Hochberg denominator</td><td class="held">no</td>
-<td>an asleep question returns no p-value at all, and the correction already skips those:
+<tr><td>Benjamini–Hochberg denominator</td><td class="flag">not here — but it can be</td>
+<td>on these three corpora every asleep question is <em>exactly</em> a question whose test returns
+no p-value, and the correction already skips those:
 {C['P5_multiplicity']['denominator_all']} of 66 on Crossref,
-{B['P5_multiplicity']['denominator_all']} of 66 on arXiv. Survivor counts identical either way
-({A['P5_multiplicity']['bh_survivors_all']}, {B['P5_multiplicity']['bh_survivors_all']},
-{C['P5_multiplicity']['bh_survivors_all']}). <strong>P5 refuted.</strong></td></tr>
+{B['P5_multiplicity']['denominator_all']} of 66 on arXiv. The two denominators are the same list,
+so the survivor counts are identical ({A['P5_multiplicity']['bh_survivors_all']},
+{B['P5_multiplicity']['bh_survivors_all']}, {C['P5_multiplicity']['bh_survivors_all']}).
+<strong>P5 refuted — and refuted vacuously.</strong> See the row below.</td></tr>
 <tr><td>reported yield (findings per run)</td><td class="held">no</td>
 <td>a count, not a rate; an asleep question adds nothing to it</td></tr>
 </table></div>
+<h3>P5 was refuted by a test that could not have come out otherwise</h3>
+<p><strong>Post-hoc, and labelled as such.</strong> On the three registered datasets the asleep set
+and the no-p-value set coincide, so the comparison P5 named was between a list and itself. A
+question can in principle be asleep and still produce a p-value — a floor above α with a perfectly
+computable statistic — and that happens on smaller corpora. Run there, on the same subsamples as
+the curve below:</p>
+<div class="wrap"><table>
+<tr><th class="n">Crossref records</th><th class="n">asleep</th><th class="n">of those, with a
+p-value</th><th class="n">BH over all tests</th><th class="n">BH over awake tests</th></tr>
+{"".join(f"<tr><td class='n'>{r['n']}</td><td class='n'>{r['asleep']}</td>"
+         f"<td class='n'>{r['asleep_with_a_p_value']}</td>"
+         f"<td class='n'>{r['bh_survivors_all']} (m = {r['denominator_all']})</td>"
+         f"<td class='n'>{r['bh_survivors_awake']} (m = {r['denominator_awake']})</td></tr>"
+         for r in d['post_hoc_bh_on_subsamples']['C'])}
+</table><caption>At 120 records nine asleep questions still produce a p-value, the two denominators
+genuinely differ — 41 against 32 — and the awake denominator <strong>recovers two survivors</strong>.
+At 60 and 80 the denominators differ and the survivor count does not move, so the gain is not
+automatic. <strong>P5's registered verdict stands as refuted; the mechanism it predicted is real
+and this is where it shows.</strong> The registered datasets could not have shown it, and choosing
+them was our error, not the prediction's.</caption></div>
 <p><strong>P4 was refuted, and the refutation is the most useful thing here.</strong> Every asleep
 question was already being killed by the loop's own review pre-conditions — nine of nine on
 Crossref, and the review stage killed {C['P4_review']['review_killed']} in all. So the loop was

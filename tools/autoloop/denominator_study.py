@@ -241,6 +241,34 @@ def awake_curve(space_name, records, sizes, replicates, seed):
     return out
 
 
+def bh_on_subsamples(space_name, records, sizes):
+    """POST-HOC. P5 was refuted on the three full datasets, but VACUOUSLY: there, every asleep
+    question is exactly a question whose test returns no p-value, so the two BH denominators are
+    the same list and the comparison had no content. A question can in principle be asleep and
+    still produce a p-value — floor >= alpha with a computable statistic — and that happens on
+    smaller corpora. This runs P5's comparison where it can actually come out either way."""
+    space = dial.SPACES[space_name]
+    qs = dial.enumerate_questions(space)
+    out = []
+    for n in sizes:
+        sub = records[:n]
+        lv = liveness_for(space_name, sub)
+        breaks = []
+        full, _preps, _g = dial.real_battery(space, sub, qs, breaks, f"sub{n}")
+        real = {k: {"p": v["p"], "failures": v["failures"]} for k, v in full.items()}
+        cmp_ = bh_comparison(lv, real)
+        asleep_with_p = sorted(k for k in lv["asleep"]
+                               if real.get(k, {}).get("p") is not None)
+        out.append({"n": n, "asleep": lv["asleep_count"],
+                    "asleep_with_a_p_value": len(asleep_with_p),
+                    "test_has_content": bool(asleep_with_p), **cmp_, "breaks": len(breaks)})
+        print(f"    n={n:5d}  asleep {lv['asleep_count']:2d}  of those with a p {len(asleep_with_p):2d}"
+              f"  BH all {cmp_['bh_survivors_all']:2d} (m={cmp_['denominator_all']:2d})"
+              f"  BH awake {cmp_['bh_survivors_awake']:2d} (m={cmp_['denominator_awake']:2d})",
+              file=sys.stderr)
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", required=True)
@@ -344,6 +372,14 @@ def main():
         report["post_hoc_awake_curve"][key] = awake_curve(
             ds[key]["space"], recs, [s for s in sizes if s <= len(recs)],
             args.curve_replicates, args.seed)
+
+    print("  POST-HOC: P5 where it can come out either way", file=sys.stderr)
+    report["post_hoc_bh_on_subsamples"] = {}
+    for key in ("B", "C"):
+        recs = json.load(open(ds[key]["corpus"]))["records"]
+        print(f"   {key} {ds[key]['label']}", file=sys.stderr)
+        report["post_hoc_bh_on_subsamples"][key] = bh_on_subsamples(
+            ds[key]["space"], recs, [s for s in sizes if s <= len(recs)])
 
     report["seconds"] = round(time.time() - t0, 1)
     with open(os.path.join(args.out, "denominator.json"), "w") as f:

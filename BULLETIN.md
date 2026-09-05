@@ -22,8 +22,10 @@ twenty-five questions also pass (4.97 %, 5.26 %) — a weak test, and the page s
 
 **Two of five predictions refuted, and both refutations are good news about the loop.** Every asleep
 question was **already** killed by its own review stage — it knew, and applied what it knew one
-stage too late, after dividing by them; its multiplicity correction had never counted them. **Of
-three denominators, exactly one was ever diluted** — smaller than we set out to prove, and truer.
+stage too late, after dividing by them; and on these corpora its multiplicity correction had never
+counted them, because there *asleep* and *no p-value at all* are the same list, so P5 was refuted
+**vacuously**. Run where the two lists differ — 120 Crossref records — the awake denominator does
+recover two survivors. **Of three denominators, one was diluted here and a second can be.**
 
 **The neighbour, found afterwards.** The rule is **Tarone's modified Bonferroni method for discrete
 data** (*Biometrics* 46(2):515–522, 1990; PMID 2364136, read at PubMed) — standard in significant
