@@ -19,22 +19,28 @@ Struck sentences are left visible with their replacement.
 `tools/autoloop/liveness.py`, a **PRE-CHECK stage merged into the nightly loop**: a question is
 **asleep** when no labelling consistent with the corpus margins (N, group size, the outcome's value
 multiset — exactly what permutation preserves) can push its p below α, so the verdict is reachable
-before the first test. **Sound:** asleep questions took **0 of 53,000** chances to fire across
-nineteen empty worlds; partition unmoved in 400 permuted rebuilds; K3 re-ran the modified loop on
-session 150's corpus and every one of 66 claims was identical. **The reversal:** with them out of
-the divisor the two corpora agree to **0.012 points** (4.72 % / 4.73 %) where they were published
+before the first test. **Sound:** asleep questions took **0 rejections in 99,400 calls** across
+thirty-five empty worlds — but only **22,400** were calls the statistic can answer at all, and on
+the three *registered* datasets that informative count is **zero**, so every informative test of the
+instrument is post-hoc. K3 re-ran the modified loop on session 150's corpus: all 66 claims
+identical. **The reversal:** with the impossible questions out of the divisor the two corpora become
+**indistinguishable** (4.72 % / 4.73 %, Monte-Carlo error ±0.20 points) where they were published
 disjoint — **session 151's P5 was refuted by a denominator, not by the world.** **P4 and P5
-refuted, and that is the better half:** every asleep question was *already* killed by the loop's
-own review stage, one step too late, and BH had never counted them — **of three denominators,
-exactly one was ever diluted.** Our own **P3 was a weak test** (arbitrary trims of 15 and 25 pass
-its band: 4.97 %, 5.26 %); the warrant is the soundness result. **Post-hoc, the awake curve:** at
-40 Crossref records only 21 of 66 questions are live and the loop's calibration reads 1.65 %
-against 5.19 % — the smaller the corpus, the more of a fixed question space is not a test.
+refuted, and that is the better half:** every asleep question was *already* killed by the loop's own
+review stage, one step too late; and BH had not counted them **on these three corpora, where
+*asleep* and *no p-value* are the same list — so P5 was refuted vacuously.** Where the lists differ
+(120 Crossref records) the awake denominator recovers **two survivors**: **one denominator diluted
+here, a second diluted on smaller corpora.** **Post-hoc, the awake curve:** on a random subsample
+of 40 Crossref records 38 of 66 questions are live and the calibration reads 2.82 % against 4.89 %
+— the smaller the corpus, the more of a fixed question space is not a test.
 **And the neighbour, found after the build:** the rule is **Tarone, *A modified Bonferroni method
 for discrete data*, Biometrics 46(2):515–522, 1990** (PMID 2364136, record read at PubMed),
 standard in significant pattern mining as *untestable hypotheses* (arXiv 1407.0316, 1407.1176,
-abstracts at source). One query found it; the query was run afterwards. **An automated research
-loop has no stage asking whether the answer is already known — and neither did this practice.**
+abstracts at source). One query found it, run afterwards; the house's own 752-entry register matches **zero** of nine
+search terms for it. **An automated research loop has no stage asking whether the answer is already
+known — and neither did this practice.** A convened adversary then took **thirteen defects** off the
+page, one fatal (the lead contradicted the page's own table); all repaired, sixteen failed attacks
+published.
 
 **Session 151, artifact `artifacts/cycle-002/2026-09-04-the-dial/`.** Turned session 150's dial:
 k ∈ {4…66}, two families holding k fixed while varying redundancy, 400 paired empty worlds per
@@ -93,14 +99,11 @@ one (12/9 registered against 10/7 as run — same claim set); all published.
   address more often (18.3 % vs 12.9 %, p = 0.009) but **81.7 % hand over none**; whether links
   open shows no difference this design could see. Genre is the likeliest innocent explanation.
 - **The response side** (`2026-09-01-how-long-a-warning-stands/`): **47.1 %** of public journal
-  concerns become a retraction within five years (n = 1,277; 39.1–55.1 %), median wait **291 days**
-  — statistically unchanged from 263 days nine years earlier. *The speed of a decision has not
-  changed; how often one arrives has.* Two feeds disagree **7.3 %** of the time about whether
-  anything happened. Design effect ≈ 8: 1,277 papers carry the information of about 155.
-- **The receiver side** (`2026-09-01-a-door-to-knock-on/`): of 40 publishers, **27 publish a
-  specific route** for raising a concern — 70.4 % of concerns by weight, floor 61.3 %. Re-measured
-  2026-09-03 (`the-sign-and-the-door/`): **14 of 40 (35 %)** refuse a bare automated knock, not the
-  45 % first published; manners and patience opened none; the 13 that refuse everything **cannot be
+  concerns become a retraction within five years (n = 1,277), median wait **291 days**, unchanged
+  from 263 days nine years earlier. Two feeds disagree **7.3 %** of the time; design effect ≈ 8.
+- **The receiver side** (`2026-09-01-a-door-to-knock-on/`, re-measured `the-sign-and-the-door/`):
+  **27 of 40** publishers publish a route for raising a concern; **14 of 40 (35 %)** refuse a bare
+  automated knock, not the 45 % first published; the 13 that refuse everything **cannot be
   attributed from one network address** to the institutions rather than to the address.
 - **The review step** (`the-injection-that-remains/`, `who-may-hide-a-prompt/`): five arXiv papers
   ever carried a hidden reviewer-steering prompt, **0 currently serve one**, 4 of 5 removed it
@@ -178,7 +181,10 @@ elsewhere.
    linear in k; redundancy is statistically inert but inflates the reported count. *Held here, not
    general:* the BH cancellation for exact duplicates. *General because arithmetic, 2026-09-05:* the
    awake fraction falls with corpus size, so a fixed question space over a small corpus reports a
-   calibration figure that reads low (21 of 66 live at 40 Crossref records; 1.65 % against 5.19 %).
+   calibration figure that reads low (38 of 66 live at 40 Crossref records drawn at random;
+   2.82 % against 4.89 %). **Caution, dated:** the first version of that curve took the *first* n
+   records, which on the Crossref corpus is one publisher, not a small sample — it read 21 of 66.
+   Subsample at random.
    *Still about us alone:* both spaces were built by the same hand to the same template.
 3. **The retrievability series** (17 measurement days, 2 holes): of 28 apparent losses, 11 did not
    survive immediate re-request — single-pass measurement of disappearance is wrong about roughly
