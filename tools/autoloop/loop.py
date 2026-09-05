@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""autoloop — stages QUESTION, EXPERIMENT, ANALYSIS, WRITE.
+"""autoloop — stages QUESTION, PRE-CHECK, EXPERIMENT, ANALYSIS, WRITE.
 
 Runs the whole hypothesis space fixed in the pre-registration against a committed
 corpus, applies the review pre-conditions, corrects for multiplicity, replicates on a
@@ -21,6 +21,7 @@ import statistics
 import sys
 import time
 
+import liveness
 from stats import (average_ranks, benjamini_hochberg, mannwhitney_from_ranks,
                    normal_two_sided_p, two_proportion)
 
@@ -275,6 +276,21 @@ def main():
     pairs = enumerate_questions()
     print(f"QUESTION: {len(pairs)} hypotheses enumerated", file=sys.stderr)
 
+    # PRE-CHECK (added 2026-09-05, session 152). Which of the enumerated questions can produce
+    # a claim AT ALL, decided from the margins alone before any test is run. See liveness.py.
+    # This stage adds fields and changes none: every measurement the series already carries is
+    # computed exactly as it was before, over exactly the same questions.
+    try:
+        live = liveness.assess(records, {g: fn for g, (fn, _) in GROUPINGS.items()},
+                               NUMERIC_OUTCOMES, BINARY_OUTCOMES, pairs, ALPHA)
+    except Exception as e:
+        breaks.append({"stage": "PRE-CHECK", "kind": "liveness_error", "where": "assess",
+                       "detail": str(e)[:160]})
+        live = None
+    if live:
+        print(f"PRE-CHECK: {live['awake_count']} awake, {live['asleep_count']} asleep",
+              file=sys.stderr)
+
     full, preps, group_cols = battery(records, pairs, breaks, "full")
 
     # ANALYSIS: multiplicity, under BOTH denominators, because they differ and the
@@ -340,6 +356,27 @@ def main():
     nulls = null_world(records, pairs, preps, group_cols, args.replicates, args.seed, breaks)
     lo, hi = wilson(nulls["rejections_total"], nulls["tests_total"])
 
+    # The per-test rejection rate over the questions that CAN fire. The rate above averages
+    # over every enumerated question, asleep ones included, and an asleep question contributes
+    # a structural zero rather than a measurement (session 152, 2026-09-05).
+    precheck = None
+    if live:
+        aw = live["awake"]
+        rej_aw = sum(nulls["per_test_hits"].get(k, 0) for k in aw)
+        tests_aw = nulls["replicates"] * len(aw)
+        alo, ahi = wilson(rej_aw, tests_aw) if tests_aw else (None, None)
+        precheck = {
+            "alpha": live["alpha"],
+            "awake": live["awake_count"], "asleep": live["asleep_count"],
+            "asleep_keys": live["asleep"],
+            "reachable_floors": {k: v["reachable_floor"] for k, v in live["detail"].items()},
+            "null_rejections_awake": rej_aw, "null_tests_awake": tests_aw,
+            "null_per_test_rate_awake": (rej_aw / tests_aw) if tests_aw else None,
+            "null_per_test_rate_awake_ci95": [alo, ahi],
+            "asleep_rejections_observed": sum(nulls["per_test_hits"].get(k, 0)
+                                              for k in live["asleep"]),
+        }
+
     results = {
         "generated_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "corpus": {"records": len(records), "fetched_utc": corpus["fetched_utc"],
@@ -364,11 +401,16 @@ def main():
         "M6_halves": {"even": len(even), "odd": len(odd)},
         "M3_null_world": nulls,
         "M3_per_test_rate_ci95": [lo, hi],
+        "PRECHECK": precheck,
         "breaks": breaks,
         "claims": claims,
     }
     with open(args.out, "w") as f:
         json.dump(results, f, indent=1, sort_keys=True)
+    if precheck and precheck["null_per_test_rate_awake"] is not None:
+        print(f"PRE-CHECK: null rate {nulls['per_test_rejection_rate']*100:.2f} % over all "
+              f"{len(pairs)} · {precheck['null_per_test_rate_awake']*100:.2f} % over the "
+              f"{precheck['awake']} awake", file=sys.stderr)
     print(f"M1 {results['M1_raw_findings']} raw · BH {results['M2_bh_survivors']} · "
           f"kills {results['M4_review_kills']} · replicating {results['M6_replicating']}/{results['M6_of']} · "
           f"null {nulls['findings_per_run_mean']:.2f}/run ({nulls['per_test_rejection_rate']*100:.2f} % per test) · "

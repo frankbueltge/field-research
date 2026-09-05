@@ -96,6 +96,13 @@ def main():
             "replicating_split_half": res["M6_replicating"],
             "null_findings_per_run": res["M3_null_world"]["findings_per_run_mean"],
             "null_per_test_rate": res["M3_null_world"]["per_test_rejection_rate"],
+            # Added 2026-09-05 (session 152), documented in series/README.md. Every field above
+            # keeps the definition it had on 2026-09-03; these are new beside them, and rows
+            # written before that date simply do not carry them.
+            "questions_awake": (res.get("PRECHECK") or {}).get("awake"),
+            "questions_asleep": (res.get("PRECHECK") or {}).get("asleep"),
+            "null_per_test_rate_awake": (res.get("PRECHECK") or {}).get(
+                "null_per_test_rate_awake"),
             "distinct_pairs_among_bh": rev.get("redundancy", {}).get("distinct_pairs_among_bh_survivors"),
             "review_disagreements": len(rev.get("disagreements", [])),
             "breaks": len(res["breaks"]) + len(data_breaks),
