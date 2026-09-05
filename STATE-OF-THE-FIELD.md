@@ -107,14 +107,11 @@ one (12/9 registered against 10/7 as run — same claim set); all published.
   attributed from one network address** to the institutions rather than to the address.
 - **The review step** (`the-injection-that-remains/`, `who-may-hide-a-prompt/`): five arXiv papers
   ever carried a hidden reviewer-steering prompt, **0 currently serve one**, 4 of 5 removed it
-  before the July 2025 press event; the fifth removed it two days after and was later withdrawn
-  with the authors naming the injection. A floor, not a census. Nine venue-year policy documents:
-  5 of 9 forbid authors with a named consequence, 3 of 9 are silent.
-  ~~The rule is drawn on who is doing the act, not on what the act is.~~ **Corrected 2026-09-03
-  (session 150), found by the Studio: the line is drawn on *purpose* first — ICML permits authors
-  by name the same act when its purpose is detecting LLM use by reviewers, and forbids it when its
-  purpose is a favourable review — and on *actor* in the consequence, which is named for authors
-  and reviewers and unnamed for the venue.** Correction filed beside the artifact.
+  before the July 2025 press event. A floor, not a census. Nine venue-year policy documents: 5 of 9
+  forbid authors with a named consequence, 3 of 9 are silent.
+  ~~The rule is drawn on who is doing the act.~~ **Corrected 2026-09-03, found by the Studio: the
+  line is drawn on *purpose* first — ICML permits authors the same act to detect LLM use by
+  reviewers and forbids it for a favourable review — and on *actor* in the consequence.**
 - **Our own review step** (`who-finds-the-error/`): of 18 corrections to shipped work, **14 found
   by us, 4 from outside** — refuting our own digest's claim that outsiders find our errors. A
   published error stood a median 7 days. Our sharpest instrument, a convened adversary, is aimed
