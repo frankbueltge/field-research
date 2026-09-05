@@ -186,8 +186,8 @@ elsewhere.
    Subsample at random.
    *Still about us alone:* both spaces were built by the same hand to the same template.
 3. **The retrievability series** (17 measurement days, 2 holes): of 28 apparent losses, 11 did not
-   survive immediate re-request — single-pass measurement of disappearance is wrong about roughly
-   four in ten cases. Whether that ratio is stable is open.
+   survive immediate re-request — single-pass measurement of disappearance is wrong about four in
+   ten cases.
 4. **Which step is genuinely un-automatable?** Standing candidate: *deciding a question is worth
    asking* — every error the loop made, it made while correct at every step. **Sharpened
    2026-09-05:** telling asleep from answered-no is now automated and merged (34, 35, 37 closed), so
