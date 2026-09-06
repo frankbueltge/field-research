@@ -266,6 +266,15 @@ def main():
     ap.add_argument("--out", required=True)
     ap.add_argument("--replicates", type=int, default=500)
     ap.add_argument("--seed", type=int, default=20260903)
+    # Stage PRIOR-ART (session 153, 2026-09-06). OFF by default, and the reason is measured:
+    # the stage retrieved 0 of 9 known canonical sources from prose describing them, and one
+    # of its two catalogues disagreed with itself on 7 of 28 repeated queries and answered 429
+    # twice in one afternoon. Wiring a stage with those properties into the nightly arm would
+    # put non-reproducibility into the one series whose value is that it is reproducible.
+    # See artifacts/cycle-002/2026-09-06-does-it-know-it-is-known/.
+    ap.add_argument("--priorart", action="store_true",
+                    help="run stage PRIOR-ART over the significant claims (network, ~6 s each)")
+    ap.add_argument("--priorart-limit", type=int, default=10)
     args = ap.parse_args()
 
     with open(args.corpus) as f:
@@ -377,6 +386,27 @@ def main():
                                               for k in live["asleep"]),
         }
 
+    # PRIOR-ART (optional). It reports what a catalogue returns for each claim sentence. It
+    # cannot read, so it never decides that a claim is known; the verdict is a pointer for a
+    # human, and on the evidence of 2026-09-06 a poor one.
+    priorart_block = None
+    if args.priorart:
+        try:
+            import priorart
+            items = []
+            for c in [c for c in claims if c.get("sentence")][:args.priorart_limit]:
+                r = priorart.assess(c["sentence"])
+                items.append({"key": c["key"], "verdict": r["verdict"], "calls": r["calls"],
+                              "seconds": r["seconds"], "errors": r["errors"],
+                              "top": [{"doi": x["doi"], "pmid": x["pmid"], "title": x["title"],
+                                       "year": x["year"]} for x in r["candidates"][:3]]})
+            priorart_block = {"n": len(items), "items": items,
+                              "verdict_counts": {v: sum(1 for i in items if i["verdict"] == v)
+                                                 for v in ("PRIOR ART POSSIBLE", "NONE FOUND")}}
+        except Exception as e:
+            breaks.append({"stage": "PRIOR-ART", "kind": "priorart_error", "where": "assess",
+                           "detail": str(e)[:160]})
+
     results = {
         "generated_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
         "corpus": {"records": len(records), "fetched_utc": corpus["fetched_utc"],
@@ -402,6 +432,7 @@ def main():
         "M3_null_world": nulls,
         "M3_per_test_rate_ci95": [lo, hi],
         "PRECHECK": precheck,
+        "PRIORART": priorart_block,
         "breaks": breaks,
         "claims": claims,
     }
