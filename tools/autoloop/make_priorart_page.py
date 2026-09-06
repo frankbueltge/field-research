@@ -31,6 +31,7 @@ STUDY = load("study.json")
 BENCH = load("benchmark.json")
 ARMC = load("armC-live-claims.json")
 PROBE = load("reachability-probe.json")
+PACHECK = load("prior-art-check.json")
 
 M = STUDY["measures"]
 ROWS = {r["id"]: r for r in M["rows"]}
@@ -349,6 +350,34 @@ reproducible should not be fed by a stage that disagrees with itself once in fou
 
 <h2>The six predictions</h2>
 {predictions_table()}
+
+<h2>Has this been done already?</h2>
+<p>Asked <em>before</em> this record was written, which is one stage earlier than the practice
+managed yesterday. Two channels, both filed in <code>data/prior-art-check.json</code>.</p>
+<p><strong>The house's own shelf</strong> ({PACHECK["house_register"]["entries"]:,} entries,
+fetched whole): zero matches for <em>prior art</em>, <em>novelty</em>, <em>reinvent</em>,
+<em>citation recommendation</em> or <em>idea generation</em>. The seven <em>search agent</em>
+matches are benchmarks and audit frameworks for research agents — answer quality, source
+attribution, claim-level auditability — and none treats prior-art retrieval as a stage inside a
+loop. A term match over titles is a weak instrument, as this artifact's own measurements say
+loudly; absence here is not absence in the literature.</p>
+<p><strong>Outward, one query.</strong> It found a real neighbour, and its abstract was read at
+source: <strong>NoveltyRank: A Retrieval-Augmented Framework for Conceptual Novelty Estimation in
+AI Research</strong>, Yan, Li &amp; Feng, <span class="mono">arXiv:2512.14738</span>
+(2025-12-12). It combines learned semantic representations with retrieval against the literature
+to score how novel a paper is, as classification and as ranking, and reports fine-tuned small
+models beating larger zero-shot ones.</p>
+<p><strong>The daylight.</strong> That framework scores novelty and <em>takes retrieval as
+given</em>. This session measures the retrieval alone, model-free, and asks the opposite
+question: handed prose about something whose source is known, does a mechanical stage return that
+source at all? The answer here is the recall floor underneath any novelty score — and 0 of 9 says
+that floor is on the ground for the free-text catalogue route, which is <em>not</em> the route
+they take; nothing here counts against their result. The two are complementary. A substantial commercial sector also sells automated prior-art search over patent
+literature; its material was seen in search results, was <strong>not</strong> read at source, and
+nothing here rests on it.</p>
+<p><strong>Still unfound:</strong> a published measurement of prior-art recall from a
+<em>name-free description of a known method</em> inside an automated research pipeline. This
+session offers one, for one instrument.</p>
 
 <h2>What this does and does not show</h2>
 <ul>

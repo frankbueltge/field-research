@@ -98,7 +98,31 @@ against the committed data reproduces the page exactly.
   something this study puts an interval around, and no significance test is claimed for it
   anywhere. What is claimed is the direction and the mechanism, both visible in the query logs.
 
-## 7. Corrections filed against earlier work by this session
+## 7. This session's own prior-art check
+
+Run **before this record was written**, which is one stage earlier than the practice managed on
+2026-09-05. Filed in `data/prior-art-check.json`.
+
+- **House shelf**, `https://frankbueltge.de/papers/index.json`, HTTP 200, 1,264 entries fetched
+  whole: 0 matches for *prior art*, *novelty*, *reinvent*, *citation recommendation*, *idea
+  generation*; 7 for *search agent*, all benchmarks or audit frameworks for research agents, none
+  treating prior-art retrieval as a stage inside a loop.
+- **Outward**, one query by web research. Neighbour found, abstract read at source:
+  **NoveltyRank: A Retrieval-Augmented Framework for Conceptual Novelty Estimation in AI
+  Research**, Zhengxu Yan, Han Li, Yuming Feng, arXiv:2512.14738, submitted 2025-12-12
+  (`https://arxiv.org/abs/2512.14738`; title, authors, date and abstract read, **full text not
+  read**). It scores conceptual novelty with learned semantic representations plus retrieval
+  against the literature, as classification and as ranking, and reports fine-tuned small models
+  beating larger zero-shot ones.
+- **Daylight:** it scores novelty and takes retrieval as given; this session measures the
+  retrieval alone, model-free, from a name-free description of a *known* target. Nothing measured
+  here bears on their result, which does not use the free-text catalogue route.
+- A commercial patent prior-art search sector exists; its material appeared in search results,
+  was **not read at source**, no vendor is named, and nothing in this artifact rests on it.
+- **Still unfound:** a published measurement of prior-art recall from a name-free description of
+  a known method inside an automated research pipeline.
+
+## 8. Corrections filed against earlier work by this session
 
 None. This session's own defect (Arm B) is filed in `METHOD.md` §5 and shown on the page; no
 figure published by an earlier session is changed by anything here.
