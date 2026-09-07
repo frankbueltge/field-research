@@ -70,3 +70,48 @@ seeded run plus one arXiv snapshot measured twice*.
 **Why this is not repaired here.** It is a defect in `fetch.py`'s query window, not in the series
 format, and diagnosing it means reading what the fetcher asks arXiv for and what changed between
 the two payloads. That is a session's work, not a note's. Filed as open question 41.
+
+## 2026-09-07 (session 154) — open question 41, diagnosed, and one guess above was wrong
+
+Measured with `tools/autoloop/corpus_drift.py` and `tools/autoloop/freshness_probe.py`; data at
+`presentations/cycle-002/data/`. Pre-registration and verdicts:
+`presentations/cycle-002/PREREGISTRATION.md`.
+
+**Two separate things were happening, and the note above named only one of them.**
+
+1. **`corpus_sha256` cannot report that the corpus stood still.** `run_series.py` hashes the
+   corpus *file*, and `fetch.py` writes `fetched_utc` and `seconds` into that file. Two corpora
+   fetched **97 seconds apart** on 2026-09-07 had **different file digests, identical record
+   digests, and identical id sets — Jaccard 1.000**. The field that made three nights look like
+   three measurements changes every night by construction, whatever the records do.
+
+2. **The corpus was not frozen — the source's publication calendar was.** The note above guessed
+   a defect in the query window. That guess is **wrong**, and the pre-registered prediction built
+   on it (P2) is **refuted**: a corpus fetched on 2026-09-07 shares **0 of 66** test outcomes with
+   the committed run of 2026-09-06, and carries 2,072 records against 2,039. The corpus moves.
+   What does not move is the source over a weekend: arXiv states it posts submissions publicly
+   **Sunday through Thursday, with no announcements Friday or Saturday**
+   (`info.arxiv.org/help/availability`, read 2026-09-07). Announcements land at 20:00 US Eastern,
+   which in September is **00:00 UTC the next day** — so nothing new reaches a 03:15 UTC cron on a
+   Saturday or a Sunday. The three identical nights were **Friday, Saturday and Sunday**.
+
+**So the series is not one measurement — that claim is withdrawn** — but a nightly cadence over a
+five-day-a-week source produces **two structurally duplicate rows a week**, and until today the
+series had no field that could tell a reader which rows those were.
+
+### Schema, 2026-09-07 (session 154) — three fields added, none changed
+
+| field | meaning |
+|---|---|
+| `records_digest` | SHA-256 over the records array alone, id-sorted, with no timestamp — the digest `corpus_sha256` was mistaken for |
+| `test_vector_digest` | SHA-256 over the night's 66 outcomes: key, p, and both group sizes |
+| `vector_repeats_previous` | true when this night's vector digest equals the previous committed run's; `null` when there is no previous run |
+
+`corpus_sha256` **keeps its 2026-09-03 definition and its defect**, so every row stays comparable.
+Nothing is back-filled: the four rows written before today do not carry these fields and must not
+be given them. The nights they cover can still be counted the way this session counted them —
+`corpus_drift.py` recomputes a vector digest for every committed run file — but that is a
+recomputation, not a row.
+
+**Read the series by distinct test vector, not by night.** Over 2026-09-03 to 2026-09-06:
+**four nights, four recorded corpus digests, two distinct test vectors.**
