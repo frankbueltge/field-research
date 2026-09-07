@@ -356,7 +356,13 @@ def phase_measures(state):
             "statement": "Arm B hit@10 > Arm A hit@10",
             "armA": m["M1_armA_hit10"], "armB": m["M2_armB_hit10"],
             "holds": m["M2_armB_hit10"] > m["M1_armA_hit10"],
-            "void": bool(m["armB_identical_to_armA_post_hoc"] == len(rows)),
+            # Corrected 2026-09-07 (session 154), adversary defect A1. This asked whether EVERY
+        # item's Arm-B query set was byte-identical to Arm A's; five of ten were, so the flag
+        # read False and the page's table rendered P1 *refuted* against its own prose. Arm B
+        # is void when the name reached no query at all — which is what `void_reason` records
+        # and what the truncation guarantees for every item whose description exceeds the
+        # 350-character cut. No committed result file is rewritten by this change.
+        "void": bool(m["armB_identical_to_armA_post_hoc"] > 0),
             "void_reason": ("Arm B's queries are byte-identical to Arm A's for every item: the "
                             "appended name reached no query, so this prediction was not tested")},
         "P2_blind_is_weak": {

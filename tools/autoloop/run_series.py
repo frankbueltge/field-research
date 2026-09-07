@@ -41,6 +41,38 @@ def run(cmd):
     return p.returncode == 0
 
 
+# --- the movement instrument, added 2026-09-07 (session 154) ------------------------
+# Nothing below reads or rewrites an existing row. The three fields these produce are new
+# beside the old ones, per the rule in series/README.md, and no row written before today
+# carries them.
+
+def _records_digest(corpus):
+    """SHA-256 over the records alone, id-sorted, no timestamp. What corpus_sha256 is not."""
+    recs = sorted(corpus["records"], key=lambda r: r["id"])
+    return hashlib.sha256(
+        json.dumps(recs, sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+
+
+def _vector_digest(compact):
+    """SHA-256 over the night's test outcomes: key, p, and both group sizes."""
+    rows = sorted(([c["key"], c["p"], c["n1"], c["n0"]] for c in compact), key=lambda r: r[0])
+    return hashlib.sha256(json.dumps(rows, separators=(",", ":")).encode()).hexdigest()
+
+
+def _previous_run(series_dir, day):
+    """The most recent committed run file strictly before `day`, or None."""
+    runs = os.path.join(series_dir, "runs")
+    if not os.path.isdir(runs):
+        return None
+    days = sorted(n[:-5] for n in os.listdir(runs) if n.endswith(".json") and n[:-5] < day)
+    if not days:
+        return None
+    try:
+        return json.load(open(os.path.join(runs, f"{days[-1]}.json")))
+    except (OSError, ValueError):
+        return None
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dir", default=os.path.join(HERE, "series"))
@@ -79,8 +111,24 @@ def main():
         compact = [{"key": c["key"], "p": c["p"], "effect": c["effect"], "n1": c["n1"],
                     "n0": c["n0"], "significant": c["significant"], "bh": c["bh_survivor"],
                     "failures": c["failures"]} for c in res["claims"]]
+
+        # Added 2026-09-07 (session 154), the instrument series/README.md asked for on
+        # 2026-09-05 and open question 41 named. `corpus_sha256` is taken over the corpus
+        # FILE, and fetch.py writes a timestamp into that file, so it changes every night
+        # whatever the records did: it can report movement but never its absence. These two
+        # digests can. `records_digest` covers the records array alone, id-sorted, with no
+        # timestamp; `test_vector_digest` covers the night's 66 outcomes. A night whose
+        # vector digest repeats the previous night's measured nothing new, and now says so.
+        records_digest = _records_digest(json.load(open(corpus)))
+        vector_digest = _vector_digest(compact)
+        prev = _previous_run(args.dir, day)
+        repeats = (None if prev is None
+                   else prev.get("test_vector_digest") == vector_digest)
         json.dump({"day": day, "corpus_sha256": hashlib.sha256(raw).hexdigest(),
                    "corpus_records": res["corpus"]["records"],
+                   "records_digest": records_digest,
+                   "test_vector_digest": vector_digest,
+                   "vector_repeats_previous": repeats,
                    # which questions the PRE-CHECK stage slept, and each question's reachable
                    # floor. Added 2026-09-05 after an adversary showed that "asleep" and "returns
                    # no p-value" are not the same set, and that the difference is exactly where
@@ -95,6 +143,13 @@ def main():
             "fetched_utc": res["corpus"]["fetched_utc"],
             "corpus_records": res["corpus"]["records"],
             "corpus_sha256": hashlib.sha256(raw).hexdigest(),
+            # Added 2026-09-07 (session 154); see series/README.md. corpus_sha256 keeps its
+            # 2026-09-03 definition and its defect: it is the digest of a file carrying a
+            # timestamp, so it moves every night regardless. These three say whether the
+            # night measured anything the night before did not.
+            "records_digest": records_digest,
+            "test_vector_digest": vector_digest,
+            "vector_repeats_previous": repeats,
             "hypotheses": res["hypotheses"],
             "raw_findings": res["M1_raw_findings"],
             "bh_survivors": res["M2_bh_survivors"],

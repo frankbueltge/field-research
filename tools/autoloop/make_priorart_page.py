@@ -8,6 +8,12 @@ from `data/`; nothing is typed into the HTML by hand.
 import html
 import json
 import os
+from collections import Counter
+
+# Added 2026-09-07 (session 154) so that counts appearing in prose are spelled from the data
+# rather than typed. See the two corrections marked in this file.
+NUM = {0: "none", 1: "one", 2: "two", 3: "three", 4: "four", 5: "five",
+       6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten"}
 
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 ART = os.path.join(REPO, "artifacts/cycle-002/2026-09-06-does-it-know-it-is-known")
@@ -139,7 +145,13 @@ def predictions_table():
     }
     for k in order:
         p = PR[k]
-        if p.get("void"):
+        # Corrected 2026-09-07 (session 154), adversary defect A1. `priorart_study.py` set
+        # `void` only when ALL ten Arm-B query sets came back byte-identical to Arm A's; five
+        # did, so the flag stayed False and this table rendered P1 as *refuted* while every
+        # prose passage on the same page called it void. A prediction carrying a
+        # `void_reason` was never tested, whatever the count. The stored data is untouched;
+        # the rendering rule now matches the rule the page states.
+        if p.get("void") or p.get("void_reason"):
             v = '<span class="flag">void — not tested</span>'
         elif p["holds"]:
             v = '<span class="hit">held</span>'
@@ -147,9 +159,21 @@ def predictions_table():
             v = '<span class="miss">refuted</span>'
         out.append(f'<tr><td>{e(k.split("_")[0])}</td><td>{e(p["statement"])}</td>'
                    f'<td>{said[k]}</td><td>{v}</td></tr>')
+    # Corrected 2026-09-07 (session 154), adversary defect A1, second half: this tally was
+    # typed as "two held, three refuted, one void", which was only consistent with P1 being
+    # rendered refuted — the very contradiction the prose denied. It is now counted off the
+    # same records the rows are rendered from.
+    voids = sum(1 for k in order if PR[k].get("void") or PR[k].get("void_reason"))
+    helds = sum(1 for k in order
+                if PR[k]["holds"] and not (PR[k].get("void") or PR[k].get("void_reason")))
+    refs = len(order) - voids - helds
     out.append("</tbody></table><caption>The six predictions of "
-               "<code>PREREGISTRATION.md</code> §5, and their pre-stated falsifiers. Two held, "
-               "three were refuted, one was void.</caption></div>")
+               f"<code>PREREGISTRATION.md</code> §5, and their pre-stated falsifiers. "
+               f"{NUM.get(helds, helds).capitalize()} held, {NUM.get(refs, refs)} were refuted, "
+               f"{NUM.get(voids, voids)} were void — untested, because the arm meant to test "
+               f"them measured nothing. <strong>Corrected 2026-09-07:</strong> first published "
+               f"as <em>two held, three refuted, one void</em>, which counted P1 as refuted "
+               f"while the text called it void.</caption></div>")
     return "\n".join(out)
 
 
@@ -195,6 +219,25 @@ def repeat_table():
     return "\n".join(out)
 
 
+def armc_modal_phrase():
+    """How many of Arm C's firings share a top record. Counted, never typed.
+
+    Added 2026-09-07 (session 154), adversary defect A2: the sentence this replaces claimed
+    all five firings shared one top record. Four do.
+    """
+    fired = [it for it in ARMC["items"] if it["verdict"] == "PRIOR ART POSSIBLE" and it["top"]]
+    tops = [it["top"][0].get("doi") or it["top"][0].get("title", "") for it in fired]
+    if not tops:
+        return "no firing returned a candidate"
+    n_modal = Counter(tops).most_common(1)[0][1]
+    if n_modal == len(fired):
+        return (f"all {NUM.get(len(fired), len(fired))} firings put the same figure caption at "
+                f"the top of the list")
+    return (f"{NUM.get(n_modal, n_modal)} of the {NUM.get(len(fired), len(fired))} put the same "
+            f"figure caption at the top of the list — not all of them, as this sentence said "
+            f"when it was first published on 2026-09-06")
+
+
 def armc_table():
     counts = ARMC["verdict_counts"]
     out = [f'<p><strong>{counts["PRIOR ART POSSIBLE"]} of {ARMC["n"]}</strong> of the loop\'s own '
@@ -208,10 +251,24 @@ def armc_table():
                 else "silent")
         out.append(f'<tr><td class="mono">{e(it["key"])}</td><td>{mark}</td>'
                    f'<td class="note">{e(top[:110])}</td></tr>')
+    # Corrected 2026-09-07 (session 154), adversary defect A2. This caption used to read
+    # "the top candidate for every one of the five firings". It is four of the five: the
+    # fifth firing tops out on a different record, which the table two rows above has shown
+    # since the day it was published. The sentence was typed by hand into a page whose
+    # verification section states that no number on it is. It is now counted.
+    fired = [it for it in ARMC["items"] if it["verdict"] == "PRIOR ART POSSIBLE" and it["top"]]
+    tops = [it["top"][0].get("doi") or it["top"][0].get("title", "") for it in fired]
+    modal, n_modal = (Counter(tops).most_common(1)[0] if tops else ("", 0))
+    others = len(fired) - n_modal
     out.append("</tbody></table><caption>Arm C. No ground truth exists here and no truth claim "
-               "is made from it. One record — a figure caption about the cumulative proportion of "
-               "discovered species — is the top candidate for every one of the five "
-               "firings.</caption></div>")
+               f"is made from it. One record — a figure caption about the cumulative proportion "
+               f"of discovered species — is the top candidate for {NUM.get(n_modal, n_modal)} of "
+               f"the {NUM.get(len(fired), len(fired))} firings"
+               + (f"; the remaining {NUM.get(others, others)} tops out on a different record, a "
+                  f"table of gene overlap." if others else ".")
+               + " <strong>Corrected 2026-09-07:</strong> as first published this caption, the "
+                 "lead paragraph and the summary all said <em>every one of the five</em>. That "
+                 "was false against the table above it on the same page.</caption></div>")
     return "\n".join(out)
 
 
@@ -255,8 +312,7 @@ Given the method's <em>name</em> and nothing else, it retrieved
 including the 1990 paper this practice rebuilt. <strong>The description is not a weak query; it
 is an actively worse one than the bare name it contains.</strong> And on the loop's own live
 output the stage's verdict fires
-{ARMC["verdict_counts"]["PRIOR ART POSSIBLE"]} times in {ARMC["n"]}, and all five firings put the
-same figure caption at the top of the list.</p>
+{ARMC["verdict_counts"]["PRIOR ART POSSIBLE"]} times in {ARMC["n"]}, and {armc_modal_phrase()}.</p>
 </div>
 
 <h2>Why this stage</h2>
