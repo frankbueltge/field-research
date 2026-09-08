@@ -45,7 +45,10 @@ def main() -> int:
     sample_titles = [s["title"] for s in sample]
     labels = {}
     for rec in audit["labels"]:
-        matches = [t for t in sample_titles if t.startswith(rec["title"][:40])]
+        # exact match required. A 40-character prefix match was used until 2026-09-08 and let a
+        # label whose recorded title diverged after character 40 pass as a match; the adversary
+        # found one. A divergence must fail here, not be absorbed.
+        matches = [t for t in sample_titles if t == rec["title"]]
         if len(matches) != 1:
             print(f"AUDIT LABEL DOES NOT MATCH EXACTLY ONE SAMPLED ENTRY: {rec['title']!r} -> {matches}",
                   file=sys.stderr)

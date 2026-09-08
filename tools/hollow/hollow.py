@@ -313,8 +313,21 @@ def declared_missing(entries: list[dict]) -> dict:
         miss += m
         if m:
             per[f] = {"missing": m, "of": n}
+    # Two denominators, both reported (added 2026-09-08 after the convened adversary showed the
+    # first one is a convention that moves the headline). "present" counts a cell only where the
+    # key exists on the record — a field carried by two entries of 521 contributes two cells.
+    # "schema" treats every field seen anywhere as expected on every record.
+    schema_cells = len(entries) * len(fields)
+    schema_miss = sum(1 for e in entries for f in fields if f not in e) + miss
     return {"cells": cells, "declared_missing": miss,
             "completeness_pct": round(100 * (cells - miss) / cells, 2) if cells else None,
+            "fields": len(fields),
+            "schema_cells": schema_cells,
+            "schema_declared_missing": schema_miss,
+            "schema_completeness_pct": round(100 * (schema_cells - schema_miss) / schema_cells, 2)
+            if schema_cells else None,
+            "sparse_fields": {f: sum(1 for e in entries if f in e) for f in fields
+                              if sum(1 for e in entries if f in e) < len(entries)},
             "per_field": per}
 
 
@@ -389,6 +402,18 @@ def main() -> int:
                                            "r3_truncated_head", "r4_duplicate")},
         "dev": {k: rate(dev, k) for k in ("hollow_strict", "hollow_broad")},
         "held": {k: rate(held, k) for k in ("hollow_strict", "hollow_broad")},
+    }
+
+    # --- how much of each aggregate is one rule (added after the adversary) --
+    rule_overlap = {
+        "broad_equals_r2_held": sum(1 for r in held if r["hollow_broad"] == r["r2_truncated_tail"]),
+        "broad_equals_r2_all": sum(1 for r in rows if r["hollow_broad"] == r["r2_truncated_tail"]),
+        "strict_equals_r1_held": sum(1 for r in held if r["hollow_strict"] == r["r1_chrome"]),
+        "r4_hits_held": sum(1 for r in held if r["r4_duplicate"]),
+        "r4_hits_dev": sum(1 for r in dev if r["r4_duplicate"]),
+        "flagged_by_r3_alone": sum(1 for r in rows if r["r3_truncated_head"] and not
+                                   (r["r1_chrome"] or r["r2_truncated_tail"] or r["r4_duplicate"])),
+        "held_n": len(held), "all_n": len(rows),
     }
 
     # --- the twelve pre-registered association tests -----------------------
@@ -498,6 +523,7 @@ def main() -> int:
         "declared_missing": declared,
         "split": {"rule": "sha256(title) mod 2", "dev": len(dev), "held": len(held)},
         "headline": headline,
+        "rule_overlap": rule_overlap,
         "tests": tests,
         "null_world": null_summary,
         "p3_verify_status": p3,
