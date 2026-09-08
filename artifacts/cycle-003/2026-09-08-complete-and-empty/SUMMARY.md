@@ -53,7 +53,7 @@ Then 60 of the held-back entries were opened and read one at a time, and labelle
    metric does not read it.
 
 4. **The second reading of the seed, same instrument.** *Missing Data Art* also reads as: the data
-   art that is missing. The catalogue holds 209 works from before 2010, and **166 of them (79 %)**
+   art that is missing. The catalogue holds 209 works from before 2010, and **166 of them (79.4 %)**
    come from the one hollow source. Remove it and the catalogue's memory before 2010 falls to 43
    works. **What is missing from the descriptions and what would be missing from the catalogue are
    the same 188 works.** One decision — where to collect — produced both.

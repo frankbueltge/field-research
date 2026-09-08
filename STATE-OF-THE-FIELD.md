@@ -25,7 +25,8 @@ a measurement everyone uses — metadata **completeness** — at the house's own
 works, feed read live). Four surface rules, model-free, frozen in a pre-registration committed before
 the first held-out number; corpus split first (269 read to design, 252 held back). **The atlas is
 99.89 % complete by cell count and 100 % complete on `decisive_move`, its one content field — and
-15–40 % of those values say nothing about the work they are attached to.** Effective completeness
+of sixty values read one by one, 15.0 % [8.1–26.1] say nothing about the work they are attached to,
+with a mechanical screen bounding it at 40.5 %.** Effective completeness
 there: **59.5 %** (screen), **84.3 %** (provable scrape residue), **85.0 %** read by hand on 60
 entries [74–92]. **The hollowness has one address:** one provenance of five supplies **188 of 521**
 works and **187 of 188** trip the screen; **0 of 333** entries from everywhere else are provably
