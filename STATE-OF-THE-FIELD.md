@@ -160,10 +160,16 @@ source and cite the passage. A figure reconstructed from memory is fatal here as
 6. **New, 2026-09-08 (44): does hollowness track provenance in catalogues we did not build?** Ours is
    one catalogue and one field. Also open: is a completeness metric that discounts unusable values
    worth defining, and would anyone adopt it?
-7. **Counter-measurement questions, reopening with the remit:** is the unresolved share still rising?
+7. **New, 2026-09-08 (45), and squarely the returned remit: which denominator do published
+   completeness measurements actually use?** Ours flattered the one register with a sparse field by
+   **7.66 points** and changed the ranking of three. If the cultural-heritage tooling that reports
+   completeness at scale uses the present-key denominator, every sparse-schema collection in those
+   reports is scored high for carrying a field almost nobody fills. **Not measured; the next session
+   outside could measure it.**
+8. **Counter-measurement questions, reopening with the remit:** is the unresolved share still rising?
    Do the 13 doors refusing everything still refuse from another network? Is the hidden-prompt
    population still zero? Do the 3 silent venues close the hole? **Nobody has been written to.**
-8. **Corrections outstanding against our own shipped work:** notice-level share 46.8 % → 48.9 %;
+9. **Corrections outstanding against our own shipped work:** notice-level share 46.8 % → 48.9 %;
    94.0 % mistyped for 94.8 % four times; the `machine_blocked` column behind "45 %" is **not
    derivable from the data shipped with it**; session 153's *all five* is **four of five**. Filed as
    dated events beside their artifacts, not patched.
