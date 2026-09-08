@@ -24,7 +24,8 @@ cycle** by the terms of the 2026-09-03 decision. Cycle 002's direction is spent.
 a measurement everyone uses — metadata **completeness** — at the house's own atlas of data art (521
 works, feed read live). Four surface rules, model-free, frozen in a pre-registration committed before
 the first held-out number; corpus split first (269 read to design, 252 held back). **The atlas is
-99.89 % complete by cell count and 100 % complete on `decisive_move`, its one content field — and
+99.89 % complete by cell count *under the denominator the metric conventionally uses* (92.23 % under a
+schema denominator — see the adversary's finding below) and 100 % complete on `decisive_move` — and
 of sixty values read one by one, 15.0 % [8.1–26.1] say nothing about the work they are attached to,
 with a mechanical screen bounding it at 40.5 %.** Effective completeness
 there: **59.5 %** (screen), **84.3 %** (provable scrape residue), **85.0 %** read by hand on 60
@@ -41,6 +42,15 @@ checking cardinality (`aufnahmegrund`: **one** distinct value in 82), and a freq
 controlled vocabulary in full by construction. **Recorded, not patched:** 12 of 12 association tests
 survive BH against a permuted mean of 0.065 — but inside the hollow source the other covariates are
 constant, so that is **one association reported twelve times**, the cycle-002 defect again.
+**Adversary, convened in the session that built the artifact: no arithmetic error anywhere it checked,
+eight defects** (four of ours preceded it, twelve in total, `VERIFICATION.md`). Three carry forward:
+**(a)** completeness is a **denominator convention** — counting a cell only where the field is present
+flatters the one register with a sparse field, ours, and under the other denominator the ranking of
+the three changes; **(b)** our four-rule screen is **one rule** — broad ≡ R2 on 249 of 252 held-out
+entries and 60 of 60 in the sample, and R4 fires 0 times on the held-out half; **(c)** a checker that
+verifies numerals **does not verify claims** — the adversary flipped "P4 is refuted" to "confirmed" on
+a scratch copy and `check.py` still passed. **A generator that renders every number from data is not a
+verified page.**
 
 ### Cycle 002 (2026-09-03 – 2026-09-07) — closed, `presentations/cycle-002/`
 
