@@ -261,10 +261,11 @@ A catalogue with no missing values, and no description in { num("strict_all_k", 
 complete, the best of this house's three registers. On the one field that carries what the catalogue
 is <em>for</em> — the decisive move each work makes — it is
 { num("eff_declared", n["eff_declared"], " %") } complete: not one empty string in
-{ num("atlas_entries", n["atlas_entries"]) } entries. Read those values and between
-{ num("eff_hand_lo_c", n["eff_hand_lo_c"], " %") } and
-{ num("eff_hand_hi_c", n["eff_hand_hi_c"], " %") } of them say nothing about the work they
-are attached to.</p>
+{ num("atlas_entries", n["atlas_entries"]) } entries. Read sixty of those values and
+{ num("audit_unusable_pct", n["audit_unusable_pct"], " %") } of them
+[{ num("eff_hand_lo_c", n["eff_hand_lo_c"]) }–{ num("eff_hand_hi_c", n["eff_hand_hi_c"]) }] say
+nothing about the work they are attached to; a mechanical screen puts the upper bound at
+{ num("broad_all", n["broad_all"], " %") }.</p>
 
 <div class="box"><p>Values that are not syntactically null but denote the absence of the information
 are <strong>disguised missing data</strong> (Pearson 2006). A completeness metric cannot see them,

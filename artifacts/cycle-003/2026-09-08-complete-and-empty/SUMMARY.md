@@ -10,8 +10,9 @@ what share of the cells hold a value — and it comes out at **99.89 % complete*
 house's three registers. On the sentence field, the one that carries what the catalogue is *for*, it
 is **100 % complete**: not one empty string in 521 entries.
 
-Then read the sentences. Between **15 % and 40 %** of them say nothing about the work they are
-attached to. They are wiki interface text, or a paragraph captured from the wrong part of a page, or
+Then read the sentences. Sixty of them were opened and read one by one: **15.0 %** (95 % interval
+8.1–26.1) say nothing about the work they are attached to, and a mechanical screen puts the upper
+bound at **40.5 %**. They are wiki interface text, or a paragraph captured from the wrong part of a page, or
 a sentence cut off at both ends:
 
 > *"and enjoyment of the triggers, signals, and paraphernalia that surround intimacy and the act of
