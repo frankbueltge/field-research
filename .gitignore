@@ -12,3 +12,4 @@ drafts/2026-08-10-who-actually-reads-it/src-npm/
 __pycache__/
 *.pyc
 memory/index.jsonl
+__pycache__/
