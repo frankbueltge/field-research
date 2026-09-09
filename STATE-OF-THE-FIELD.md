@@ -52,6 +52,12 @@ verifies numerals **does not verify claims** — the adversary flipped "P4 is re
 a scratch copy and `check.py` still passed. **A generator that renders every number from data is not a
 verified page.**
 
+**Session 156, `artifacts/cycle-003/2026-09-09-the-denominator/`.** The cycle's outside session
+(§5.2.3): a census of other people's completeness measurements, answering question 45 below and
+answering it against us. Its by-products are §4.7–8. **The checker now verifies verdicts and quoted
+passages as well as numerals** — session 155's flipped-verdict attack fails against it — and the one
+attack that still defeats it (write the lie into the generator, re-render) is published as a failure.
+
 ### Cycle 002 (2026-09-03 – 2026-09-07) — closed, `presentations/cycle-002/`
 
 Built a research loop that runs unattended (seven stages, ~90 s, nightly) and **everything came from
@@ -101,9 +107,10 @@ measures the *yield, calibration and delivery* of a research loop running unatte
 **Data quality (new, cycle 003):** *disguised missing data* — values that are not syntactically null
 but denote absence — is named and characterised (Pearson 2006); detection for free text is an open
 problem and the classical **frequency** test provably escapes it, because free texts are mostly
-unique. Metadata **completeness** in cultural heritage is measured as *presence of a value*. **The
-gap we occupy:** no measurement we can find reports disguised missing data in a cultural catalogue
-*with its association to provenance*, and no completeness metric discounts values a reader cannot use.
+unique. Metadata **completeness** is measured as *presence of a value*, counted against a
+**schema-fixed denominator** (census of 2026-09-09, §3 and §4.7). **The gap we occupy:** no
+measurement we found reports disguised missing data in a cultural catalogue *with its association to
+provenance*, and none discounts values a reader cannot use.
 
 **Response side (remit returned this cycle, not yet reopened):** time-to-retraction is well measured;
 post-flag action rates are very low — the "under 2 %" figure is **known here only through delegated
@@ -125,6 +132,18 @@ source and cite the passage. A figure reconstructed from memory is fatal here as
   humans; **both their methods call a model.** Lorenzini, Rospocher & Tonelli, *On assessing metadata
   completeness in digital cultural heritage repositories*, DSH 36(Suppl 2):ii182–ii188, 2021,
   doi:10.1093/llc/fqab036 (abstract at Crossref). **Do not rebuild these.**
+- **Completeness denominators (2026-09-09), every one read that session and quoted in
+  `artifacts/cycle-003/2026-09-09-the-denominator/data/sources.json`. Do not rebuild, do not
+  re-derive.** *Schema-fixed:* Király, *A Metadata Quality Assurance Framework*, GWDG 2015 (open PDF;
+  gives Q_comp = ΣP(i)/N and attributes the computation to Ochoa & Duval); `pkiraly/metadata-qa-api`
+  `CompletenessCalculator`; Lorenzini/Rospocher/Tonelli 2021; data.europa.eu MQA methodology
+  (weighted, production scale); F-UJI `FsF-F2-01M` (weighted); Hillmann & Phipps DCMI 2007;
+  Margaritopoulos et al. DCMI 2008; Tarver et al. DCMI 2015; Phillips/Zavalina/Tarver DCMI 2019.
+  *No denominator at all:* `pkiraly/qa-catalogue`. **Read but computing nothing:** W3C DQV.
+  **NOT read, and never to be cited from memory:** Ochoa & Duval 2009, Margaritopoulos et al. 2012,
+  Gavrilis et al. 2015, Király & Büchler 2018 (the last three confirmed closed), Bruce & Hillmann
+  2004. **DCPapers is diamond open access and yielded four coded sources in one pass — the cheapest
+  shelf found this cycle.**
 - **Cycle 002's neighbours.** *The Agentic Garden of Forking Paths*, Miao, Pritchard & Zou, arXiv
   **2607.01507v1** — agents vary the *analysis path* under one question; **we vary the questions
   under one analysis.** *NoveltyRank*, Yan, Li & Feng, arXiv **2512.14738** — scores novelty and takes
@@ -160,16 +179,28 @@ source and cite the passage. A figure reconstructed from memory is fatal here as
 6. **New, 2026-09-08 (44): does hollowness track provenance in catalogues we did not build?** Ours is
    one catalogue and one field. Also open: is a completeness metric that discounts unusable values
    worth defining, and would anyone adopt it?
-7. **New, 2026-09-08 (45), and squarely the returned remit: which denominator do published
-   completeness measurements actually use?** Ours flattered the one register with a sparse field by
-   **7.66 points** and changed the ranking of three. If the cultural-heritage tooling that reports
-   completeness at scale uses the present-key denominator, every sparse-schema collection in those
-   reports is scored high for carrying a field almost nobody fills. **Not measured; the next session
-   outside could measure it.**
-8. **Counter-measurement questions, reopening with the remit:** is the unresolved share still rising?
+7. **~~New, 2026-09-08 (45): which denominator do published completeness measurements actually
+   use?~~ ANSWERED 2026-09-09 (session 156), and against us.** Census of 26 identified candidates
+   (21 included, 10 coded, 11 unreadable and saying why), every code from a passage fetched that
+   session and quoted: **of the 7 independent author groups computing a completeness ratio at all,
+   7 use a schema-fixed denominator and 0 use the present-key denominator we used.** Our own
+   prediction that at least one would count our way is **refuted** — a result about us, not the
+   field. Two further findings: a **third basis** exists that our scheme had no code for (counts
+   with no denominator at all — K4 fired), and **three of the seven groups weight fields by an
+   obligation tier**, a family that cannot be run against our atlas at all because it declares no
+   profile and no tiers. Artifact `artifacts/cycle-003/2026-09-09-the-denominator/`. **Still open:**
+   what those tools do in production as against what their papers say, and whether a completeness
+   metric that discounts unusable values is worth defining (44).
+8. **New, 2026-09-09 (46): reading the literature is itself a measurement, and ours is bot-shaped.**
+   7 of 12 journal and conference candidates could not be read from a session; only **3** are
+   confirmed closed access, the rest were refused by bot-protection interstitials, and one openly
+   served PDF would not decode at all. **A bot-block is not a paywall and we will not report it as
+   one.** Open: how much of what this practice calls "the literature" is simply what an automated
+   reader is allowed through to.
+9. **Counter-measurement questions, reopening with the remit:** is the unresolved share still rising?
    Do the 13 doors refusing everything still refuse from another network? Is the hidden-prompt
    population still zero? Do the 3 silent venues close the hole? **Nobody has been written to.**
-9. **Corrections outstanding against our own shipped work:** notice-level share 46.8 % → 48.9 %;
+10. **Corrections outstanding against our own shipped work:** notice-level share 46.8 % → 48.9 %;
    94.0 % mistyped for 94.8 % four times; the `machine_blocked` column behind "45 %" is **not
    derivable from the data shipped with it**; session 153's *all five* is **four of five**. Filed as
    dated events beside their artifacts, not patched.
