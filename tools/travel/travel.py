@@ -125,14 +125,15 @@ def perm_test(labels: list[int], groups: list[str], reps: int, seed: int) -> dic
         obs_cnt[gi] += l
     obs = chi2_from_counts(obs_cnt)
 
+    # A permutation of the label vector is the same thing as a uniform choice of which K of the
+    # n records carry the label, so each replicate draws that subset directly. Identical null,
+    # and it does not walk the whole vector once per replicate.
     rng = random.Random(seed)
-    pool = list(gvec)
+    nk = len(keys)
     ge = 0
     for _ in range(reps):
-        rng.shuffle(pool)
-        cnt = [0] * len(keys)
-        for gi in pool[:K]:
-            cnt[gi] += 1
+        tally = Counter(rng.sample(gvec, K))
+        cnt = [tally.get(i, 0) for i in range(nk)]
         if chi2_from_counts(cnt) >= obs - 1e-9:
             ge += 1
     df = len(keys) - 1
@@ -234,6 +235,20 @@ def measure(name: str, recs: list[dict], atlas_provenance: bool = False) -> dict
         }
         total_flag = sum(labels)
         top = max(res["association"]["table"].items(), key=lambda kv: kv[1]["flagged"])
+        # Exploratory, and labelled exploratory on the page: the pre-registered concentration
+        # ratio is not scale-free — with many strata and a high base rate no single stratum can
+        # reach twice its record share. These are descriptive and decide nothing.
+        tb = res["association"]["table"]
+        rates = sorted(v["pct"] for v in tb.values())
+        top5 = sum(v["flagged"] for v in list(tb.values())[:5])
+        res["exploratory_spread"] = {
+            "strata": len(tb),
+            "strata_above_90pct": sum(1 for v in tb.values() if v["pct"] > 90),
+            "strata_below_10pct": sum(1 for v in tb.values() if v["pct"] < 10),
+            "min_rate_pct": rates[0], "max_rate_pct": rates[-1],
+            "median_rate_pct": rates[len(rates) // 2],
+            "top5_flag_share_pct": round(100 * top5 / total_flag, 2) if total_flag else None,
+        }
         res["concentration"] = {
             "top_stratum": top[0],
             "flag_share_pct": round(100 * top[1]["flagged"] / total_flag, 2) if total_flag else None,
@@ -276,12 +291,32 @@ def build_audit_sheet(measures: dict, cache: str, out: str) -> None:
         json.dump(sheet, fh, indent=1, ensure_ascii=False)
     print(f"wrote {sheet_path} ({len(sheet)} values, no flags, no titles)", file=sys.stderr)
 
+    # A second sheet, declared post-hoc on the page. It carries one fact the blind sheet cannot:
+    # how many records in the same catalogue carry this identical value. R4 is a property of a
+    # value's relation to the rest of the catalogue, and a reader of one value in isolation
+    # cannot see it — so the blind pass cannot validate R4 even in principle.
+    counts = {}
+    for name in ("cma", "uk"):
+        recs = {r["id"]: r for r in load(cache, name)}
+        cc = Counter(hollow.norm(r["text"]).casefold() for r in recs.values()
+                     if hollow.norm(r["text"]))
+        for r in measures[name]["_rows"]:
+            aid = hashlib.sha1(f"{name}:{r['id']}:{SEED}".encode()).hexdigest()[:10]
+            counts[aid] = cc[hollow.norm(recs[r["id"]]["text"]).casefold()]
+    informed = [{"aid": s["aid"], "value": s["value"],
+                 "identical_value_on_records": counts.get(s["aid"])} for s in sheet]
+    with open(os.path.join(out, "audit-sheet-informed.json"), "w", encoding="utf-8") as fh:
+        json.dump(informed, fh, indent=1, ensure_ascii=False)
+
 
 def join_audit(measures: dict, out: str) -> dict | None:
     labels_path = os.path.join(out, "audit-labels.json")
     if not os.path.exists(labels_path):
         return None
     labels = {x["aid"]: x["label"] for x in json.load(open(labels_path, encoding="utf-8"))}
+    inf_path = os.path.join(out, "audit-labels-informed.json")
+    informed = ({x["aid"]: x["label"] for x in json.load(open(inf_path, encoding="utf-8"))}
+                if os.path.exists(inf_path) else {})
     key = {}
     for name in ("cma", "uk"):
         for r in measures.get(name, {}).get("_rows", []):
@@ -318,6 +353,21 @@ def join_audit(measures: dict, out: str) -> dict | None:
         "precision": round(tp / (tp + fp), 4) if tp + fp else None,
         "recall": round(tp / (tp + fn), 4) if tp + fn else None,
     }
+    if informed:
+        pairs = [(informed[aid], key[aid][1]) for aid in informed if aid in key
+                 and informed[aid] != "cannot tell"]
+        ai = [1 if lab == "says nothing" else 0 for lab, _ in pairs]
+        bi = [1 if r["hollow_broad"] else 0 for _, r in pairs]
+        out_d["informed_pass"] = {
+            "_note": "Post-hoc, declared: a second labelling of the same 60 values in which the "
+                     "reader was told how many records carry the identical value, and nothing "
+                     "else. R4 is a relation between values; a reader of one value alone cannot "
+                     "see it, so the blind pass cannot validate R4 even in principle.",
+            "joined": len(pairs), "reader_says_nothing": sum(ai), "screen_flags": sum(bi),
+            "agreement_pct": round(100 * sum(1 for x, y in zip(ai, bi) if x == y) / len(pairs), 2)
+            if pairs else None,
+            "kappa": round(hollow.cohen_kappa(ai, bi), 4) if pairs else None,
+        }
     for name in ("cma", "uk"):
         sub = [j for j in joined if j["catalogue"] == name]
         if sub:
@@ -485,6 +535,18 @@ def main() -> int:
             frac = got / api_total
             measures[name]["k5_fired"] = frac < 0.95
             measures[name]["harvest_fraction"] = round(frac, 4)
+
+    # Exploratory, declared as such on the page: Cleveland carries a second descriptive field.
+    if "_rows" in measures.get("cma", {}):
+        cma_raw = load(args.cache, "cma")
+        measures["cma"]["exploratory_second_field"] = {
+            "field": "did_you_know",
+            "records_with_it": sum(1 for r in cma_raw if r.get("has_didyouknow")),
+            "records": len(cma_raw),
+            "records_with_neither": sum(1 for r in cma_raw
+                                        if not r.get("has_didyouknow")
+                                        and not hollow.norm(r.get("text", ""))),
+        }
 
     # C4: the fill rates that are the whole point of including it
     if "unreachable" not in measures["aic"]:
