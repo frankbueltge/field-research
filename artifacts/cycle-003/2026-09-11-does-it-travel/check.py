@@ -16,6 +16,11 @@ Session 157, cycle 003. What it verifies, and the list is exhaustive on purpose:
      does not import the tool that produced them, and must match the stored verdicts.
   5. QUOTED VALUES. Every catalogue value and record title quoted on the page must match
      data/results.json.
+  6b. THE AUDIT. The confusion matrix, agreement, kappa, precision and recall are recomputed
+     here from the audit's own per-row evidence, and every row's reader label is checked against
+     the committed data/audit-labels.json. Until 2026-09-11 the checker took those summary
+     numbers on trust and an adversary reversed the session's central finding without failing a
+     single check.
   6. QUOTED SOURCES. Every passage quoted from outside must match data/sources.json, and
      each source there must carry a URL, an access date and the extraction route.
 
@@ -135,7 +140,24 @@ def recompute_verdicts(d: dict) -> dict:
         C[c]["held"]["r5_title_echo"]["pct"] >= 1.0
         and C[c]["p6_r5_increment"]["r5_only"] >= 20 for c in scored) else "refuted"
 
+    # The figures P7 is judged against are read from the 2026-09-08 artifact's own committed
+    # record, not from the file under test. Until 2026-09-11 they were read from the file under
+    # test, which made P7 and K4 self-certifying; an adversary demonstrated it.
+    prior = os.path.join(HERE, "..", "2026-09-08-complete-and-empty", "data", "results.json")
     want = d["predictions"]["P7"]["published_2026_09_08"]
+    if os.path.exists(prior):
+        pd = json.load(open(prior, encoding="utf-8"))
+        independent = {
+            "records": pd["headline"]["all"]["hollow_broad"]["n"],
+            "all_broad_pct": pd["headline"]["all"]["hollow_broad"]["pct"],
+            "held_broad_pct": pd["headline"]["held"]["hollow_broad"]["pct"],
+            "r4_held_k": pd["rule_overlap"]["r4_hits_held"],
+            "broad_is_r2_held_agree": pd["rule_overlap"]["broad_equals_r2_held"],
+            "held_n": pd["split"]["held"],
+        }
+        ok(independent == want,
+           f"P7's baseline does not match the 2026-09-08 artifact: {independent} vs {want}")
+        want = independent
     at = C["atlas"]
     got = {"records": at["records"], "all_broad_pct": at["all"]["hollow_broad"]["pct"],
            "held_broad_pct": at["held"]["hollow_broad"]["pct"],
@@ -212,6 +234,41 @@ def main() -> int:
         stored = d["predictions"][k]["verdict"]
         ok(stored == verdict, f"{k}: record carries '{stored}', recomputation gives '{verdict}'")
         ok(verdict in body, f"{k}: verdict '{verdict}' does not appear on the page")
+
+    # ---- 4b. the audit, recomputed from its own rows and the committed labels ----
+    A = d.get("audit")
+    if A and "rows" in A:
+        rows = A["rows"]
+        lab_path = os.path.join(HERE, "data", "audit-labels.json")
+        labels = {x["aid"]: x["label"] for x in json.load(open(lab_path, encoding="utf-8"))}
+        ok(len(labels) == A["labelled"],
+           f"audit-labels.json has {len(labels)} labels, record says {A['labelled']}")
+        for r in rows:
+            want = 1 if labels.get(r["aid"]) == "says nothing" else 0
+            ok(r["reader_hollow"] == want,
+               f"audit row {r['aid']}: record says reader {r['reader_hollow']}, "
+               f"audit-labels.json says {labels.get(r['aid'])!r}")
+        a_ = [r["reader_hollow"] for r in rows]
+        b_ = [r["screen_broad"] for r in rows]
+        tp = sum(1 for x, y in zip(a_, b_) if x and y)
+        fp = sum(1 for x, y in zip(a_, b_) if not x and y)
+        fn = sum(1 for x, y in zip(a_, b_) if x and not y)
+        tn = sum(1 for x, y in zip(a_, b_) if not x and not y)
+        ok(A["confusion"] == {"tp": tp, "fp": fp, "fn": fn, "tn": tn},
+           f"confusion matrix does not recompute from the rows: {A['confusion']} vs "
+           f"{{'tp': {tp}, 'fp': {fp}, 'fn': {fn}, 'tn': {tn}}}")
+        agree = round(100 * sum(1 for x, y in zip(a_, b_) if x == y) / len(rows), 2)
+        ok(A["agreement_pct"] == agree,
+           f"agreement does not recompute: {A['agreement_pct']} vs {agree}")
+        n = len(a_)
+        pa1, pb1 = sum(a_) / n, sum(b_) / n
+        chance = pa1 * pb1 + (1 - pa1) * (1 - pb1)
+        kap = round(((sum(1 for x, y in zip(a_, b_) if x == y) / n) - chance) / (1 - chance), 4)
+        ok(A["kappa"] == kap, f"kappa does not recompute: {A['kappa']} vs {kap}")
+        ok(A["precision"] == (round(tp / (tp + fp), 4) if tp + fp else None),
+           "precision does not recompute from the confusion matrix")
+        ok(A["recall"] == (round(tp / (tp + fn), 4) if tp + fn else None),
+           "recall does not recompute from the confusion matrix")
 
     # ---- 5. quoted catalogue values ---------------------------------------
     for q in d["quotes"]:

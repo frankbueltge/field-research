@@ -2896,7 +2896,7 @@ rules untouched — was carried to **three catalogues nobody here built**, as a 
 record** rather than a sample: Cleveland Museum of Art (68,771), data.gov.uk (67,975), govdata.de
 (146,492). 285,759 records with the home arm and a fourth catalogue where a kill condition fired.
 
-**Five of seven pre-registered predictions are refuted, and the sharpest refutation is of us.**
+**Four of seven pre-registered predictions are refuted, three survive, and the sharpest refutation is of us.**
 
 **1. Against a blind reader, our screen is mostly false alarm.** Sixty held-out values, presented
 with an opaque identifier and the text and nothing else — no flag, no title, no catalogue — and one
@@ -2904,22 +2904,26 @@ fixed question. The reader called **5 of 60** empty. The screen flagged **31**. 
 **53.33 %**, κ **0.0919**, **precision 0.129**, recall 0.80. Every flag rate we publish is a
 ceiling, and now by measurement rather than by argument.
 
-**2. And the reason is structural, which we should have seen when we wrote the audit.** Two of our
-five rules — a text repeated across records, a description that is its own title — are **relations
-between a value and the rest of the catalogue**. A reader shown one value in isolation cannot see
-either, at any threshold, by construction. *Our own pre-registered audit could not validate two of
-its own rules, and we did not notice until the labels came back.* A second pass over the same sixty
-values, declared post-hoc, gave the reader one further fact — how many records carry this identical
-text — and agreement rose to **73.33 %**, κ to **0.4743**. **The hollowness this screen detects is a
-property of the catalogue, not of the value**, and that sentence is the session's result.
+**2. And the reason is structural, which we should have seen when we wrote the audit.** The duplicate
+rule is a **relation between a value and the rest of the catalogue**, and a reader shown one value in
+isolation cannot see it at any threshold. *Our own pre-registered audit could not validate a rule it
+was scored against, and we did not notice until the labels came back.* A second pass over the same
+sixty values, declared post-hoc under a threshold fixed only after the duplicate counts were seen,
+gave the reader that count and nothing else: agreement **73.33 %**, κ **0.4743**. **The hollowness
+this screen detects looks like a property of the catalogue rather than of the value** — a reading,
+not a measurement, because the second labelling is close to a function of the count itself.
 
 **3. Open question 44 is answered, and split.** The association between hollowness and who supplied
 the record is at the permutation floor in all three catalogues and survives BH. What does **not**
 travel is the *singleness*: at home one source held **86.49 %** of the flags; abroad the largest
 holds 29.23 % (Cleveland), 22.98 % (govdata.de), 12.05 % (data.gov.uk). **Our concentration bar was
 also not scale-free** — with 131 publishing organisations and a base rate above half, no stratum can
-reach twice its record share — which is a defect in our own pre-registration. Recorded, with the
-verdict left exactly as written: a pre-registration whose bars move after the fact is not one.
+reach twice its record share — but the reason is not the stratum count: the ratio's ceiling is one
+over the overall flag rate, so a bar of 2 needs a rate under a half. At home the rate was 44.05 % and
+the ratio landed at **2.27**, exactly its ceiling. A defect in our own pre-registration, recorded,
+with the verdict left exactly as written. And one thing our own pre-registration told us to say and
+the first version of the page did not: **Cleveland has no upstream supplier** — one museum wrote
+every record, and its stratum is a curatorial department, a weaker analogue of provenance.
 
 **4. The premise does not travel either, and our own probe is why we thought it would.** Cleveland
 fills `description` on **31.74 %** of its records, so there is no complete-on-paper gap there at all.

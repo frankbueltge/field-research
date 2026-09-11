@@ -40,23 +40,22 @@ us (§4.7–8). **The checker now verifies verdicts and quoted passages as well 
 attack that still defeats it (write the lie into the generator, re-render) is published as a failure.
 
 **Session 157, `artifacts/cycle-003/2026-09-11-does-it-travel/`.** Carried the frozen screen —
-imported, not copied — to **three catalogues we did not build**, as a census: Cleveland Museum of Art
-(68,771), data.gov.uk (67,975), govdata.de (146,492), plus the atlas as home arm and a fourth,
-the Art Institute of Chicago, where **K1 fired** (`description` filled on 9.5 % of 2,000 sampled).
-**Five of seven pre-registered predictions refuted.** (1) *The premise does not travel*: Cleveland is
-**31.74 %** complete on `description`, so there is no complete-on-paper gap there; the portals have it
-(98.81 %, 97.39 %) and it is wide (held-out flag rates 53.17 / 62.16 / 77.93 %). Our own probe misled
-us — two API offsets are not a sample. (2) **Question 44 is answered: the association travels, the
-singleness does not** (§4.6). (3) *broad ≡ R2* holds on 48.46 / 82.78 / 72.32 % — the one-rule
-collapse was the atlas's property. (4) **The decisive refutation: against a blind reader the screen is
-mostly false alarm** — 60 values, reader calls **5** empty, screen flags **31**; agreement 53.33 %,
-κ **0.0919**, **precision 0.129**, recall 0.80. The reason is structural: R4 and R5 are relations
-between a value and the catalogue, which a reader of one value cannot see, so **our own audit could
-not validate two of its five rules**. Told only the duplicate count (post-hoc pass), the same reader
-reaches 73.33 % and κ 0.4743. **Hollowness is a property of the catalogue, not of the value.**
-Confirmed: R3's English limb fires 1.27 % (UK) against 0.01 % (DE) — *the screen under-detects
-abroad*; and R5 (title echo, declared new) flags 11.06 % on govdata.de, 1,204 of them caught by
-nothing else. **Home arm reproduced to the digit.**
+imported, not copied — to **three catalogues we did not build**, as a census: Cleveland (68,771),
+data.gov.uk (67,975), govdata.de (146,492), plus the atlas as home arm and the Art Institute of
+Chicago, where **K1 fired** (`description` filled on 9.5 % of 2,000 sampled). **Four of seven
+predictions refuted.** (1) *The premise does not travel*: Cleveland is **31.74 %** complete on
+`description`; the portals have the gap (98.81 %, 97.39 %) and it is wide (held-out flag rates
+53.17 / 62.16 / 77.93 %). Our own probe misled us — two API offsets are not a sample. (2) **Question
+44 answered: the association travels, the singleness does not** (§4.6). (3) *broad ≡ R2* holds on
+48.46 / 82.78 / 72.32 % — the one-rule collapse was the atlas's property. (4) **Decisive: against a
+blind reader the screen is mostly false alarm** — 60 values, reader calls **5** empty, screen flags
+**31**; agreement 53.33 %, κ **0.0919**, **precision 0.129**, recall 0.80. R4 is a relation between a
+value and the catalogue, invisible to a reader of one value, so **our audit could not validate a rule
+it scored against**. Given the duplicate count (post-hoc threshold), the reader reaches 73.33 % and
+κ 0.4743 — descriptive, not a validation. **An adversary then took 21 defects off the artifact, two
+of them checker breaks.** Confirmed: R3's English limb fires 1.27 % (UK) against 0.01 % (DE) — *the
+screen under-detects abroad*; R5 (title echo, declared new) flags 11.06 % on govdata.de, 1,204 caught
+by nothing else. **Home arm reproduced to the digit.**
 
 ### Cycle 002 (2026-09-03 – 2026-09-07) — closed, `presentations/cycle-002/`
 
@@ -174,9 +173,11 @@ source and cite the passage. A figure reconstructed from memory is fatal here as
    between flags and the supplying stratum is at the permutation floor and survives BH. What does
    **not** travel is the *singleness*: at home one source held **86.49 %** of the flags, abroad the
    largest holds 29.23 % (Cleveland), 22.98 % (govdata.de), 12.05 % (data.gov.uk), and the
-   concentration ratios are 1.562 / 1.142 / 1.448 against 2.27 at home. **Our own bar was not
-   scale-free** — with 131 strata and a base rate above half no stratum can reach twice its share —
-   and that is a defect in our pre-registration, recorded, with the verdict left as written.
+   concentration ratios are 1.562 / 1.142 / 1.448 against 2.27 at home. **Our bar was unreachable
+   abroad**: the ceiling is 1/(flag rate), so a bar of 2 needs a rate under a half — at home 44.05 %
+   gave 2.270 and the ratio landed on 2.27 exactly. A defect in our pre-registration, recorded,
+   verdict as written. **Cleveland's stratum is a curatorial department, a weaker analogue: nobody
+   supplied its records.**
    **Still open:** whether a completeness metric that discounts unusable values is worth defining,
    and whether anyone would adopt it.
 7. **~~New, 2026-09-08 (45): which denominator do published completeness measurements use?~~

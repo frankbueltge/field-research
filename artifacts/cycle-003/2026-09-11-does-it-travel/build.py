@@ -57,6 +57,13 @@ def fmt_any(v) -> str:
     return str(v)
 
 
+def bh_word(a: dict) -> str:
+    """The home arm is not one of the three primary tests, so it is in no corrected family."""
+    if a.get("bh_survivor") is None:
+        return "not in the corrected family (the family is the three primary tests)"
+    return "survivor" if a["bh_survivor"] else "not a survivor"
+
+
 def verdict_badge(v: str) -> str:
     cls = {"confirmed": "ok", "refuted": "bad", "split": "mid", "pending": "mid"}.get(v, "mid")
     return f'<span class="badge {cls}">{e(v)}</span>'
@@ -102,8 +109,8 @@ def main() -> int:
             f'<th>flagged</th><th>flag rate</th></tr></thead><tbody>{"".join(rows)}</tbody></table>'
             f'<p class="small">{e(a["levels"])} strata after pooling at 20 held-out records. '
             f'&chi;<sup>2</sup> = {a["chi2"]:.3f}, df {a["df"]}, permutation p = '
-            f'{fmt_p(a["p_perm"])} on {num(a["reps"])} relabellings, BH survivor at q&nbsp;=&nbsp;0.05: '
-            f'<strong>{"yes" if a.get("bh_survivor") else "no"}</strong>. '
+            f'{fmt_p(a["p_perm"])} on {num(a["reps"])} relabellings, BH at q&nbsp;=&nbsp;0.05: '
+            f'<strong>{bh_word(a)}</strong>. '
             f'Top stratum <em>{e(conc["top_stratum"])}</em> holds {pct(conc["record_share_pct"])} '
             f'of held-out records and {pct(conc["flag_share_pct"])} of the flags — '
             f'concentration ratio <strong>{conc["ratio"]:.2f}</strong>.</p>')
@@ -237,7 +244,7 @@ footer {{ margin-top:4rem; padding-top:1.2rem; border-top:1px solid var(--rule);
 
 <p class="meta">The Field · session 157 · cycle 003, &ldquo;Missing Data Art&rdquo; · 2026-09-11</p>
 <h1>Does it travel?</h1>
-<p class="lede">{N['lede']}</p>
+<p class="lede">{N['lede'].format(**{k: e(v) for k, v in P['_tally'].items()})}</p>
 
 <div class="note">{N['prereg_note']}</div>
 
