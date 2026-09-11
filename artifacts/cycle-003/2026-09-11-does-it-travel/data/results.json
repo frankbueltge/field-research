@@ -74,8 +74,10 @@
       "verdict": "refuted"
     },
     "P4": {
-      "statement": "against a blind reader on 60 held-out values",
-      "verdict": "pending"
+      "statement": "against a blind reader on 60 held-out values: agreement >= 75 % and Cohen's kappa >= 0.42",
+      "agreement_pct": 53.33,
+      "kappa": 0.0919,
+      "verdict": "refuted"
     },
     "P5": {
       "statement": "R3's English opener limb fires on under 1 % of German held-out values and on 1 % or more of English ones",
@@ -2471,24 +2473,67 @@
       "fill_rates": {
         "text": {
           "filled": 190,
-          "of": 2000
+          "of": 2000,
+          "pct": 9.5
         },
         "short_description": {
           "filled": 10,
-          "of": 2000
+          "of": 2000,
+          "pct": 0.5
         },
         "provenance_text": {
           "filled": 736,
-          "of": 2000
+          "of": 2000,
+          "pct": 36.8
         },
         "credit_line": {
           "filled": 1999,
-          "of": 2000
+          "of": 2000,
+          "pct": 99.95
         }
       }
     }
   },
-  "audit": null,
+  "audit": {
+    "labelled": 60,
+    "joined": 60,
+    "cannot_tell": 0,
+    "reader_says_nothing": 5,
+    "screen_flags": 31,
+    "agreement_pct": 53.33,
+    "kappa": 0.0919,
+    "kappa_broad5": 0.0919,
+    "confusion": {
+      "tp": 4,
+      "fp": 27,
+      "fn": 1,
+      "tn": 28
+    },
+    "precision": 0.129,
+    "recall": 0.8,
+    "informed_pass": {
+      "_note": "Post-hoc, declared: a second labelling of the same 60 values in which the reader was told how many records carry the identical value, and nothing else. R4 is a relation between values; a reader of one value alone cannot see it, so the blind pass cannot validate R4 even in principle.",
+      "joined": 60,
+      "reader_says_nothing": 17,
+      "screen_flags": 31,
+      "agreement_pct": 73.33,
+      "kappa": 0.4743
+    },
+    "cma": {
+      "n": 30,
+      "reader_says_nothing": 4,
+      "screen_flags": 15,
+      "agreement_pct": 56.67,
+      "kappa": 0.1333
+    },
+    "uk": {
+      "n": 30,
+      "reader_says_nothing": 1,
+      "screen_flags": 16,
+      "agreement_pct": 50.0,
+      "kappa": 0.0586
+    }
+  },
   "quotes": [
     {
       "catalogue": "cma",

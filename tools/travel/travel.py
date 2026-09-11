@@ -551,10 +551,12 @@ def main() -> int:
     # C4: the fill rates that are the whole point of including it
     if "unreachable" not in measures["aic"]:
         aic = load(args.cache, "aic")
-        measures["aic"]["fill_rates"] = {
-            f: {"filled": sum(1 for r in aic if hollow.norm(r.get(f, ""))), "of": len(aic)}
-            for f in ("text", "short_description", "provenance_text", "credit_line")
-        }
+        measures["aic"]["fill_rates"] = {}
+        for f in ("text", "short_description", "provenance_text", "credit_line"):
+            filled = sum(1 for r in aic if hollow.norm(r.get(f, "")))
+            measures["aic"]["fill_rates"][f] = {
+                "filled": filled, "of": len(aic),
+                "pct": round(100 * filled / len(aic), 2) if aic else None}
 
     build_audit_sheet(measures, args.cache, args.out)
     audit = join_audit(measures, args.out)

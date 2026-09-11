@@ -45,6 +45,18 @@ def num(v) -> str:
     return "—" if v is None else f"{v:,}".replace(",", "&thinsp;")
 
 
+def fmt_any(v) -> str:
+    """Render a value from results.json without scientific notation, in a form check.py can
+    trace back to the record."""
+    if isinstance(v, bool):
+        return "yes" if v else "no"
+    if isinstance(v, int):
+        return str(v)
+    if isinstance(v, float):
+        return f"{v:.5f}" if abs(v) < 1 else f"{v:.2f}"
+    return str(v)
+
+
 def verdict_badge(v: str) -> str:
     cls = {"confirmed": "ok", "refuted": "bad", "split": "mid", "pending": "mid"}.get(v, "mid")
     return f'<span class="badge {cls}">{e(v)}</span>'
@@ -97,10 +109,10 @@ def main() -> int:
             f'concentration ratio <strong>{conc["ratio"]:.2f}</strong>.</p>')
 
     def fmt_p(p: float) -> str:
-        floor = 1 / (d["params"]["perm_reps"] + 1)
-        if p <= floor + 1e-12:
-            return f"&lt;&thinsp;{floor:.5f} (the floor of {num(d['params']['perm_reps'])} relabellings)"
-        return f"{p:.5f}"
+        """Render the stored p-value. build.py computes no number; it formats one."""
+        at_floor = p * (d["params"]["perm_reps"] + 1) <= 1.0 + 1e-9
+        tail = f" (its floor on {num(d['params']['perm_reps'])} relabellings)" if at_floor else ""
+        return f"{p:.5f}{tail}"
 
     pred_rows = []
     for key in ("P1", "P2", "P3", "P4", "P5", "P6", "P7"):
@@ -108,7 +120,7 @@ def main() -> int:
         detail = []
         if "arms" in p:
             for c, a in p["arms"].items():
-                bits = ", ".join(f"{kk} {vv}" for kk, vv in a.items()
+                bits = ", ".join(f"{kk.replace('_', ' ')} {fmt_any(vv)}" for kk, vv in a.items()
                                  if kk not in ("pass", "reason"))
                 detail.append(f"<strong>{e(NAMES[c])}</strong>: {e(bits)}")
         elif key == "P4" and A:
@@ -117,7 +129,8 @@ def main() -> int:
             detail.append(f'govdata.de {pct(p["govdata_pct"])} · data.gov.uk {pct(p["uk_pct"])}')
         elif key == "P7":
             detail.append("every published figure of 2026-09-08 re-measured today: "
-                          + ", ".join(f"{k} {v}" for k, v in p["measured_today"].items()))
+                          + ", ".join(f"{k.replace('_', ' ')} {fmt_any(v)}"
+                                      for k, v in p["measured_today"].items()))
         pred_rows.append(
             f'<tr><td class="mono">{e(key)}</td><td>{e(p["statement"])}</td>'
             f'<td>{verdict_badge(p["verdict"])}</td></tr>'
@@ -158,7 +171,7 @@ def main() -> int:
         aic_rows = "".join(
             f'<tr><td class="mono">{e(labels[f])}</td><td class="n">{num(v["filled"])}</td>'
             f'<td class="n">{num(v["of"])}</td>'
-            f'<td class="n">{pct(round(100 * v["filled"] / v["of"], 2))}</td></tr>'
+            f'<td class="n">{pct(v["pct"])}</td></tr>'
             for f, v in aic["fill_rates"].items())
 
     man = d["manifest"]
@@ -260,7 +273,7 @@ the same code.</p>
 {N['s4']}
 {audit_block}
 
-<h2>5. Twelve values, quoted</h2>
+<h2>5. Quoted values</h2>
 {N['s5']}
 <ul class="quotes">{''.join(quote_rows)}</ul>
 
