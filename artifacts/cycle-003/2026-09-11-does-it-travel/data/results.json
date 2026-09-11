@@ -124,7 +124,13 @@
       },
       "verdict": "confirmed"
     },
-    "K4_fired": false
+    "K4_fired": false,
+    "_tally": {
+      "total": 7,
+      "refuted": 4,
+      "confirmed": 3,
+      "split": 0
+    }
   },
   "date": "2026-09-11",
   "session": 157,
@@ -527,7 +533,9 @@
             "flagged": 1,
             "pct": 2.86
           }
-        }
+        },
+        "bh_survivor": null,
+        "bh_note": "not in the corrected family: the BH family is the three primary tests, C1-C3"
       },
       "exploratory_spread": {
         "strata": 4,
@@ -535,7 +543,7 @@
         "strata_below_10pct": 2,
         "min_rate_pct": 2.08,
         "max_rate_pct": 100.0,
-        "median_rate_pct": 48.0,
+        "median_rate_pct": 25.43,
         "top5_flag_share_pct": 100.0
       },
       "concentration": {
@@ -545,8 +553,9 @@
         "ratio": 2.27,
         "strata_total": 4
       },
-      "k5_fired": false,
-      "harvest_fraction": 1.0
+      "harvest_fraction": 1.0,
+      "k5_applies": true,
+      "k5_fired": false
     },
     "cma": {
       "catalogue": "cma",
@@ -597,7 +606,7 @@
           "n": 10920,
           "pct": 0.0,
           "ci95": [
-            -0.0,
+            0.0,
             0.04
           ]
         },
@@ -966,7 +975,7 @@
         "strata_below_10pct": 1,
         "min_rate_pct": 7.74,
         "max_rate_pct": 83.02,
-        "median_rate_pct": 48.28,
+        "median_rate_pct": 45.82,
         "top5_flag_share_pct": 72.15
       },
       "concentration": {
@@ -976,8 +985,9 @@
         "ratio": 1.562,
         "strata_total": 20
       },
-      "k5_fired": false,
       "harvest_fraction": 1.0,
+      "k5_applies": true,
+      "k5_fired": false,
       "exploratory_second_field": {
         "field": "did_you_know",
         "records_with_it": 11442,
@@ -1968,8 +1978,9 @@
         "ratio": 1.448,
         "strata_total": 131
       },
-      "k5_fired": false,
-      "harvest_fraction": 1.0
+      "harvest_fraction": 1.0,
+      "k5_applies": true,
+      "k5_fired": false
     },
     "govdata": {
       "catalogue": "govdata",
@@ -2449,7 +2460,7 @@
         "strata_below_10pct": 1,
         "min_rate_pct": 0.83,
         "max_rate_pct": 100.0,
-        "median_rate_pct": 69.63,
+        "median_rate_pct": 69.53,
         "top5_flag_share_pct": 82.56
       },
       "concentration": {
@@ -2459,8 +2470,9 @@
         "ratio": 1.142,
         "strata_total": 32
       },
-      "k5_fired": false,
-      "harvest_fraction": 1.0
+      "harvest_fraction": 1.0,
+      "k5_applies": true,
+      "k5_fired": false
     },
     "aic": {
       "catalogue": "aic",
@@ -2470,6 +2482,9 @@
       "declared_completeness_pct": 9.5,
       "k1_fired": true,
       "note": "K1: descriptive field non-empty on under 20 % of records; no screen run.",
+      "harvest_fraction": 0.0151,
+      "k5_applies": false,
+      "k5_note": "K5 is a census check; C4 is a seeded sample of 20 pages by design, so K5 is not evaluated here. The sampled fraction is reported instead.",
       "fill_rates": {
         "text": {
           "filled": 190,
@@ -2495,6 +2510,488 @@
     }
   },
   "audit": {
+    "rows": [
+      {
+        "aid": "092f413545",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "0e17fec3fe",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "0f104a9deb",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "13f88d544b",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "1518a59158",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "16287336e0",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "2cc8c4b210",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "3665971b1c",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "39758116d3",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "39f561628d",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "3b8c80472d",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "4081573deb",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "411a4a2ce1",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "4120005be2",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "4225f3c4ca",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "4385a5b833",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "449b6e0447",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "50f2bc1f1e",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 0
+      },
+      {
+        "aid": "5b12433b0d",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "5c3ed34d2f",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "6a12c79e35",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 0
+      },
+      {
+        "aid": "6bf64a8f04",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "6c2adca38b",
+        "catalogue": "cma",
+        "reader_hollow": 1,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "6c2fbd2808",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "75121d32a6",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "77dcec3eae",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "7a5a7c8756",
+        "catalogue": "uk",
+        "reader_hollow": 1,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "81bd276c15",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 0
+      },
+      {
+        "aid": "85bb51d10b",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "885f51a3f7",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "96c39e0b09",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "9c0751d3f4",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "a03bc2e033",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "a1021663db",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "a20638e2a4",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "a5dff9ea79",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "a7a34db5df",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 0
+      },
+      {
+        "aid": "b3e02bd99d",
+        "catalogue": "cma",
+        "reader_hollow": 1,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "b78ec4c86e",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "bbc30777bb",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 0
+      },
+      {
+        "aid": "c23d2db5a2",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "c58999122c",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "c7e3b2621c",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 0
+      },
+      {
+        "aid": "d5a5e2caa5",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "d7066eaca8",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "d7fbbb2fb9",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "d8722458c9",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "da779a63d1",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 0
+      },
+      {
+        "aid": "dd520e3931",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "e0203cf0d4",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "e10fa53fa2",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "e11f08be56",
+        "catalogue": "cma",
+        "reader_hollow": 1,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "ea4e63b1e0",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "f1789707e6",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "f4d20bb0f7",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "f50e7d0e8d",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "f570611d4c",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "f6034866e1",
+        "catalogue": "cma",
+        "reader_hollow": 1,
+        "screen_broad": 1,
+        "screen_broad5": 1,
+        "screen_strict": 1
+      },
+      {
+        "aid": "fa09dd4cb2",
+        "catalogue": "uk",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      },
+      {
+        "aid": "ffb0cb2bff",
+        "catalogue": "cma",
+        "reader_hollow": 0,
+        "screen_broad": 0,
+        "screen_broad5": 0,
+        "screen_strict": 0
+      }
+    ],
     "labelled": 60,
     "joined": 60,
     "cannot_tell": 0,
@@ -2518,6 +3015,14 @@
       "screen_flags": 31,
       "agreement_pct": 73.33,
       "kappa": 0.4743
+    },
+    "blindness_probe": {
+      "_note": "The sheet withheld the duplicate count. If the blind labels were independent of it, these two rows would look alike. They do not. Two readings are available and this measurement cannot separate them: the sheet leaked, or texts copied across many records really are more often generic.",
+      "says_nothing_with_dup_ge_10": 4,
+      "says_nothing_with_dup_lt_10": 1,
+      "usable_with_dup_ge_10": 12,
+      "usable_with_dup_lt_10": 43,
+      "fisher_p": 0.0155
     },
     "cma": {
       "n": 30,
@@ -2664,6 +3169,8 @@
     "seed": 20260911,
     "perm_reps": 10000,
     "min_stratum": 20,
-    "audit_per_catalogue": 30
+    "audit_per_catalogue": 30,
+    "sheet_cap_chars": 1200,
+    "informed_pass_threshold": 10
   }
 }

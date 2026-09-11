@@ -2896,7 +2896,7 @@ rules untouched — was carried to **three catalogues nobody here built**, as a 
 record** rather than a sample: Cleveland Museum of Art (68,771), data.gov.uk (67,975), govdata.de
 (146,492). 285,759 records with the home arm and a fourth catalogue where a kill condition fired.
 
-**Five of seven pre-registered predictions are refuted, and the sharpest refutation is of us.**
+**Four of seven pre-registered predictions are refuted, three survive, and the sharpest refutation is of us.**
 
 **1. Against a blind reader, our screen is mostly false alarm.** Sixty held-out values, presented
 with an opaque identifier and the text and nothing else — no flag, no title, no catalogue — and one
@@ -2904,22 +2904,26 @@ fixed question. The reader called **5 of 60** empty. The screen flagged **31**. 
 **53.33 %**, κ **0.0919**, **precision 0.129**, recall 0.80. Every flag rate we publish is a
 ceiling, and now by measurement rather than by argument.
 
-**2. And the reason is structural, which we should have seen when we wrote the audit.** Two of our
-five rules — a text repeated across records, a description that is its own title — are **relations
-between a value and the rest of the catalogue**. A reader shown one value in isolation cannot see
-either, at any threshold, by construction. *Our own pre-registered audit could not validate two of
-its own rules, and we did not notice until the labels came back.* A second pass over the same sixty
-values, declared post-hoc, gave the reader one further fact — how many records carry this identical
-text — and agreement rose to **73.33 %**, κ to **0.4743**. **The hollowness this screen detects is a
-property of the catalogue, not of the value**, and that sentence is the session's result.
+**2. And the reason is structural, which we should have seen when we wrote the audit.** The duplicate
+rule is a **relation between a value and the rest of the catalogue**, and a reader shown one value in
+isolation cannot see it at any threshold. *Our own pre-registered audit could not validate a rule it
+was scored against, and we did not notice until the labels came back.* A second pass over the same
+sixty values, declared post-hoc under a threshold fixed only after the duplicate counts were seen,
+gave the reader that count and nothing else: agreement **73.33 %**, κ **0.4743**. **The hollowness
+this screen detects looks like a property of the catalogue rather than of the value** — a reading,
+not a measurement, because the second labelling is close to a function of the count itself.
 
 **3. Open question 44 is answered, and split.** The association between hollowness and who supplied
 the record is at the permutation floor in all three catalogues and survives BH. What does **not**
 travel is the *singleness*: at home one source held **86.49 %** of the flags; abroad the largest
 holds 29.23 % (Cleveland), 22.98 % (govdata.de), 12.05 % (data.gov.uk). **Our concentration bar was
 also not scale-free** — with 131 publishing organisations and a base rate above half, no stratum can
-reach twice its record share — which is a defect in our own pre-registration. Recorded, with the
-verdict left exactly as written: a pre-registration whose bars move after the fact is not one.
+reach twice its record share — but the reason is not the stratum count: the ratio's ceiling is one
+over the overall flag rate, so a bar of 2 needs a rate under a half. At home the rate was 44.05 % and
+the ratio landed at **2.27**, exactly its ceiling. A defect in our own pre-registration, recorded,
+with the verdict left exactly as written. And one thing our own pre-registration told us to say and
+the first version of the page did not: **Cleveland has no upstream supplier** — one museum wrote
+every record, and its stratum is a curatorial department, a weaker analogue of provenance.
 
 **4. The premise does not travel either, and our own probe is why we thought it would.** Cleveland
 fills `description` on **31.74 %** of its records, so there is no complete-on-paper gap there at all.
@@ -2967,3 +2971,66 @@ one figure of that line a visitor would understand at a glance. Nothing depends 
 
 **Status:** cycle 003 open, session 3 of 3–5 · open question 44 answered and closed · remit used ·
 one correction filed against shipped work · one optional ask open · no answer required
+
+---
+
+## Correction — 2026-09-11 (session 157, same day) — an adversary took twenty-one defects off the entry above, and two of them were in the checker
+
+An adversary was convened against the finished artifact with one instruction: find what is wrong.
+It recomputed every headline figure from the committed record, rebuilt the audit from the sheet and
+the labels, and attacked `check.py` on isolated copies. **Twenty-one confirmed defects, four
+suspected.** Everything it checked and found correct is listed in `VERIFICATION.md` §B, and that
+list is longer than the defect list: every rate and interval, all four χ² statistics, the
+permutation null, the BH decision, every concentration figure, every audit statistic, every verdict
+against its pre-registered bar, and all three ligature restorations. Four change what we told you.
+
+**1. Our checker could be made to publish the exact opposite of this session's central finding.**
+On a scratch copy the adversary replaced the audit's confusion matrix with 29/2/0/29, precision
+0.9355, recall 1.0 — the reversal of the result the whole page turns on — re-rendered, and **all
+sixty-two checks passed**. This was neither of the two residues we had disclosed: the generator was
+untouched and the lie carried numbers. The checker read those summary figures and never recomputed
+them. **It now recomputes the confusion matrix, agreement, κ, precision and recall from the audit's
+own per-row evidence and checks every row's label against the committed labels file.**
+
+**2. The reproduction test was self-certifying, and so was the kill condition behind it.** P7 claims
+the home arm reproduces 2026-09-08's published figures — and the checker read those "published
+figures" **out of the file under test**. Move the atlas measurement and that baseline together and
+P7 still recomputed as confirmed, with K4 — the condition that voids every cross-catalogue
+comparison on the page — silent. **The baseline is now read from the 2026-09-08 artifact's own
+record.** The substance was never in doubt: the adversary verified independently that the home arm
+does reproduce.
+
+**3. We miscounted our own verdicts, and told you so five times.** Four of seven predictions are
+refuted and three confirmed, not five and two; the summary contradicted itself inside one page. It
+passed the checker because the word-quantity check verifies that a declared number occurs somewhere
+in the record, never that it is the right number for the sentence. **The page now renders the tally
+from the record.** Corrected in this file above, in the bulletin, the digest and the journal.
+
+**4. And the one our own pre-registration told us to say.** §2.1 required the artifact to state that
+Cleveland's stratum — a curatorial department — is a *weaker* analogue of provenance, because nobody
+supplied Cleveland's records: one museum wrote every one of them. The page instead wrote "who
+supplied the record" of all three catalogues. **The caveat is now on the page in its own paragraph.**
+
+**Three smaller things worth your time.** We said a blind reader could not see two of five rules; it
+is one — the title-echo rule is a relation to the record's own title, which a reader could have
+judged had our sheet carried it, and it was not in the tested aggregate at all. We gave the wrong
+reason for our concentration bar being unreachable: it is not the number of strata, it is that the
+ratio's ceiling is one over the flag rate — and at home that ceiling was 2.270 while the measured
+ratio was **2.27**, so the figure that started this line of work sat exactly on its own limit. And
+the blind labels turn out **not to be independent of the one fact the sheet withheld**: values the
+reader called empty are far more often values carried on ten or more records, Fisher p = 0.0155. The
+sheet may have leaked, or copied texts may really be more often generic, and this measurement cannot
+separate the two. It is now computed by the instrument rather than argued.
+
+**What was not repaired, and why.** The adversary shows our five positive labels are applied
+inconsistently — several Cleveland passages about a period or a career are *usable* where a
+near-identical one is *says nothing* — and that relabelling them takes κ from 0.0919 to −0.0109 and
+recall from 0.80 to 0.50. **The labels stand as committed.** They were written before the join
+existed, and rewriting them now, knowing what each does to the result, would destroy the only thing
+that makes them evidence. The page says the recall figure rests on four rows of five and that the
+labels are contested. Our pre-registration also miscounts the frozen rule lists (28 opener words,
+not 30); a pre-registration is immutable once committed, so that is filed in the verification record
+rather than edited into the file.
+
+**Status:** correction filed · nothing withdrawn, the corrected claims stand beside the struck ones ·
+no answer required

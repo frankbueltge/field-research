@@ -35,6 +35,8 @@ SEED = 20260911
 MIN_STRATUM = 20          # pooling floor, PREREGISTRATION.md §3.4
 PERM_REPS = 10000
 AUDIT_PER_CATALOGUE = 30
+SHEET_CAP = 1200            # characters of a value shown on the blind sheet
+INFORMED_THRESHOLD = 10     # post-hoc: a text on this many records describes no one of them
 
 CATALOGUE_LABEL = {
     "atlas": "Atlas of Data Art (home arm)",
@@ -195,8 +197,10 @@ def measure(name: str, recs: list[dict], atlas_provenance: bool = False) -> dict
         k = sum(1 for r in subset if r[key])
         n = len(subset)
         lo, hi = hollow.wilson(k, n)
+        # A proportion has no negative bound. The frozen instrument is not touched; the display
+        # is clamped here, after an adversary found a published bound of -0.0 on 2026-09-11.
         return {"k": k, "n": n, "pct": round(100 * k / n, 2) if n else None,
-                "ci95": [round(100 * lo, 2), round(100 * hi, 2)]}
+                "ci95": [max(0.0, round(100 * lo, 2)), min(100.0, round(100 * hi, 2))]}
 
     keys = ("r1_chrome", "r2_truncated_tail", "r3_truncated_head", "r4_duplicate",
             "r5_title_echo", "r3_lower", "r3_opener", "hollow_strict", "hollow_broad",
@@ -246,7 +250,7 @@ def measure(name: str, recs: list[dict], atlas_provenance: bool = False) -> dict
             "strata_above_90pct": sum(1 for v in tb.values() if v["pct"] > 90),
             "strata_below_10pct": sum(1 for v in tb.values() if v["pct"] < 10),
             "min_rate_pct": rates[0], "max_rate_pct": rates[-1],
-            "median_rate_pct": rates[len(rates) // 2],
+            "median_rate_pct": round((rates[(len(rates) - 1) // 2] + rates[len(rates) // 2]) / 2, 2),
             "top5_flag_share_pct": round(100 * top5 / total_flag, 2) if total_flag else None,
         }
         res["concentration"] = {
@@ -284,7 +288,7 @@ def build_audit_sheet(measures: dict, cache: str, out: str) -> None:
             raw = recs[r["id"]]["text"]
             sheet.append({
                 "aid": hashlib.sha1(f"{name}:{r['id']}:{SEED}".encode()).hexdigest()[:10],
-                "value": hollow.norm(raw)[:1200],
+                "value": hollow.norm(raw)[:SHEET_CAP],
             })
     rng.shuffle(sheet)
     with open(sheet_path, "w", encoding="utf-8") as fh:
@@ -305,11 +309,18 @@ def build_audit_sheet(measures: dict, cache: str, out: str) -> None:
             counts[aid] = cc[hollow.norm(recs[r["id"]]["text"]).casefold()]
     informed = [{"aid": s["aid"], "value": s["value"],
                  "identical_value_on_records": counts.get(s["aid"])} for s in sheet]
+    # The sheet caps each value at SHEET_CAP characters. That cap is part of what the reader saw
+    # and is therefore part of the measurement: a capped value can end mid-word and so can carry a
+    # truncated tail the catalogue never had. Recorded, with the rows it touched.
+    with open(os.path.join(out, "sheet-truncation.json"), "w", encoding="utf-8") as fh:
+        json.dump({"cap_chars": SHEET_CAP,
+                   "rows_at_cap": [x["aid"] for x in sheet if len(x["value"]) >= SHEET_CAP]},
+                  fh, indent=1)
     with open(os.path.join(out, "audit-sheet-informed.json"), "w", encoding="utf-8") as fh:
         json.dump(informed, fh, indent=1, ensure_ascii=False)
 
 
-def join_audit(measures: dict, out: str) -> dict | None:
+def join_audit(measures: dict, out: str, cache_dir: str | None = None) -> dict | None:
     labels_path = os.path.join(out, "audit-labels.json")
     if not os.path.exists(labels_path):
         return None
@@ -344,6 +355,7 @@ def join_audit(measures: dict, out: str) -> dict | None:
     tn = sum(1 for j in joined if not j["screen_broad"] and not j["reader_hollow"])
     agree = sum(1 for x, y in zip(a, b) if x == y)
     out_d = {
+        "rows": sorted(joined, key=lambda j: j["aid"]),
         "labelled": len(labels), "joined": len(joined), "cannot_tell": undecidable,
         "reader_says_nothing": sum(a), "screen_flags": sum(b),
         "agreement_pct": round(100 * agree / len(joined), 2) if joined else None,
@@ -367,6 +379,31 @@ def join_audit(measures: dict, out: str) -> dict | None:
             "agreement_pct": round(100 * sum(1 for x, y in zip(ai, bi) if x == y) / len(pairs), 2)
             if pairs else None,
             "kappa": round(hollow.cohen_kappa(ai, bi), 4) if pairs else None,
+        }
+    # S1, raised by the adversary of 2026-09-11 and computed rather than argued: the blind labels
+    # should be independent of the duplicate count the sheet withheld. They are not, at this size.
+    dup = {}
+    for name in ("cma", "uk"):
+        recs = {r["id"]: r for r in load(cache_dir, name)} if cache_dir else {}
+        cc = Counter(hollow.norm(r["text"]).casefold() for r in recs.values()
+                     if hollow.norm(r["text"]))
+        for r in measures.get(name, {}).get("_rows", []):
+            aid = hashlib.sha1(f"{name}:{r['id']}:{SEED}".encode()).hexdigest()[:10]
+            if r["id"] in recs:
+                dup[aid] = cc[hollow.norm(recs[r["id"]]["text"]).casefold()]
+    if dup:
+        a_hi = sum(1 for j in joined if j["reader_hollow"] and dup.get(j["aid"], 1) >= 10)
+        a_lo = sum(1 for j in joined if j["reader_hollow"] and dup.get(j["aid"], 1) < 10)
+        b_hi = sum(1 for j in joined if not j["reader_hollow"] and dup.get(j["aid"], 1) >= 10)
+        b_lo = sum(1 for j in joined if not j["reader_hollow"] and dup.get(j["aid"], 1) < 10)
+        out_d["blindness_probe"] = {
+            "_note": "The sheet withheld the duplicate count. If the blind labels were independent "
+                     "of it, these two rows would look alike. They do not. Two readings are "
+                     "available and this measurement cannot separate them: the sheet leaked, or "
+                     "texts copied across many records really are more often generic.",
+            "says_nothing_with_dup_ge_10": a_hi, "says_nothing_with_dup_lt_10": a_lo,
+            "usable_with_dup_ge_10": b_hi, "usable_with_dup_lt_10": b_lo,
+            "fisher_p": round(hollow.fisher_2x2(a_hi, a_lo, b_hi, b_lo), 4),
         }
     for name in ("cma", "uk"):
         sub = [j for j in joined if j["catalogue"] == name]
@@ -509,6 +546,13 @@ def evaluate_predictions(m: dict, audit: dict | None) -> dict:
                "published_2026_09_08": want, "measured_today": got,
                "verdict": "confirmed" if all(got.get(k) == v for k, v in want.items()) else "refuted"}
     p["K4_fired"] = p["P7"]["verdict"] != "confirmed"
+    # The tally is computed here and rendered on the page, so that "N of seven refuted" is a
+    # number from the record and not a sentence anyone typed. Session 157 typed it wrong once.
+    keys = ("P1", "P2", "P3", "P4", "P5", "P6", "P7")
+    p["_tally"] = {"total": len(keys),
+                   "refuted": sum(1 for k in keys if p[k]["verdict"] == "refuted"),
+                   "confirmed": sum(1 for k in keys if p[k]["verdict"] == "confirmed"),
+                   "split": sum(1 for k in keys if p[k]["verdict"] == "split")}
     return p
 
 
@@ -531,10 +575,19 @@ def main() -> int:
         # K5 — census completeness
         api_total = manifest[name].get("api_total")
         got = manifest[name].get("harvested")
-        if name != "aic" and api_total:
+        if api_total:
             frac = got / api_total
-            measures[name]["k5_fired"] = frac < 0.95
             measures[name]["harvest_fraction"] = round(frac, 4)
+            if name == "aic":
+                # C4 is a seeded sample by design (PREREGISTRATION.md §2.2), not a census, so
+                # K5 does not apply to it. Recorded rather than silently skipped.
+                measures[name]["k5_applies"] = False
+                measures[name]["k5_note"] = (
+                    "K5 is a census check; C4 is a seeded sample of 20 pages by design, so K5 is "
+                    "not evaluated here. The sampled fraction is reported instead.")
+            else:
+                measures[name]["k5_applies"] = True
+                measures[name]["k5_fired"] = frac < 0.95
 
     # Exploratory, declared as such on the page: Cleveland carries a second descriptive field.
     if "_rows" in measures.get("cma", {}):
@@ -559,7 +612,7 @@ def main() -> int:
                 "pct": round(100 * filled / len(aic), 2) if aic else None}
 
     build_audit_sheet(measures, args.cache, args.out)
-    audit = join_audit(measures, args.out)
+    audit = join_audit(measures, args.out, args.cache)
 
     # BH across the three primary association tests
     fam = [(n, measures[n]["association"]["p_perm"]) for n in ("cma", "uk", "govdata")
@@ -568,6 +621,13 @@ def main() -> int:
         keep = hollow.benjamini_hochberg([p for _, p in fam], 0.05)
         for (n, _), k in zip(fam, keep):
             measures[n]["association"]["bh_survivor"] = bool(k)
+    # The home arm is not one of the three primary tests, so it is not in the corrected family
+    # at all. Leaving its `bh_survivor` absent rendered as "no" on 2026-09-11 before an adversary
+    # caught it; it is now named rather than defaulted.
+    if "association" in measures.get("atlas", {}):
+        measures["atlas"]["association"]["bh_survivor"] = None
+        measures["atlas"]["association"]["bh_note"] = (
+            "not in the corrected family: the BH family is the three primary tests, C1-C3")
 
     predictions = evaluate_predictions(measures, audit)
 
@@ -582,7 +642,8 @@ def main() -> int:
         "audit": audit,
         "quotes": quotes(measures, args.cache),
         "params": {"seed": SEED, "perm_reps": PERM_REPS, "min_stratum": MIN_STRATUM,
-                   "audit_per_catalogue": AUDIT_PER_CATALOGUE},
+                   "audit_per_catalogue": AUDIT_PER_CATALOGUE, "sheet_cap_chars": SHEET_CAP,
+                   "informed_pass_threshold": INFORMED_THRESHOLD},
     }
     with open(os.path.join(args.out, "results.json"), "w", encoding="utf-8") as fh:
         json.dump(out, fh, indent=2, ensure_ascii=False)
