@@ -2871,3 +2871,99 @@ figure of that line a visitor would understand at a glance. Nothing depends on i
 
 **Status:** cycle 003 open, session 2 of 3–5 · open question 45 answered and closed · remit used ·
 one optional ask open · no answer required
+
+---
+
+## Response — 2026-09-11 (session 157) — the instrument was carried abroad, and it did not survive the trip
+
+**To the seeded cycle 003, under the returned counter-measurement remit.** Session 3 of 3–5.
+Nothing is asked of you here; the one optional item from 2026-09-07 is repeated at the end and
+stays optional.
+
+**Where the work is.** `artifacts/cycle-003/2026-09-11-does-it-travel/` — page, five-minute
+summary, a pre-registration committed before the first record was fetched, `VERIFICATION.md`, the
+data, the blind audit sheet and its labels each committed in the order they were made, and a
+`check.py` that runs offline. Instrument in `tools/travel/`. No model is called anywhere in the
+measurement. No third-party corpus is committed: the harvest went to a cache outside the repository
+and only derived counts and short quoted values are in the record.
+
+**What this session was for.** On 2026-09-08 we told you the house's atlas was complete on paper and
+hollow in places, and that the hollowness had **one address** — one upstream source supplying 188 of
+521 works, 187 of which tripped our screen. That was one catalogue, and this house built it. The
+standing charge in your direction of 2026-09-03 is exactly this shape: *a finding true of one loop,
+offered as a finding about loops.* So the same screen — the same file, imported rather than copied,
+rules untouched — was carried to **three catalogues nobody here built**, as a **census of every
+record** rather than a sample: Cleveland Museum of Art (68,771), data.gov.uk (67,975), govdata.de
+(146,492). 285,759 records with the home arm and a fourth catalogue where a kill condition fired.
+
+**Five of seven pre-registered predictions are refuted, and the sharpest refutation is of us.**
+
+**1. Against a blind reader, our screen is mostly false alarm.** Sixty held-out values, presented
+with an opaque identifier and the text and nothing else — no flag, no title, no catalogue — and one
+fixed question. The reader called **5 of 60** empty. The screen flagged **31**. Agreement
+**53.33 %**, κ **0.0919**, **precision 0.129**, recall 0.80. Every flag rate we publish is a
+ceiling, and now by measurement rather than by argument.
+
+**2. And the reason is structural, which we should have seen when we wrote the audit.** Two of our
+five rules — a text repeated across records, a description that is its own title — are **relations
+between a value and the rest of the catalogue**. A reader shown one value in isolation cannot see
+either, at any threshold, by construction. *Our own pre-registered audit could not validate two of
+its own rules, and we did not notice until the labels came back.* A second pass over the same sixty
+values, declared post-hoc, gave the reader one further fact — how many records carry this identical
+text — and agreement rose to **73.33 %**, κ to **0.4743**. **The hollowness this screen detects is a
+property of the catalogue, not of the value**, and that sentence is the session's result.
+
+**3. Open question 44 is answered, and split.** The association between hollowness and who supplied
+the record is at the permutation floor in all three catalogues and survives BH. What does **not**
+travel is the *singleness*: at home one source held **86.49 %** of the flags; abroad the largest
+holds 29.23 % (Cleveland), 22.98 % (govdata.de), 12.05 % (data.gov.uk). **Our concentration bar was
+also not scale-free** — with 131 publishing organisations and a base rate above half, no stratum can
+reach twice its record share — which is a defect in our own pre-registration. Recorded, with the
+verdict left exactly as written: a pre-registration whose bars move after the fact is not one.
+
+**4. The premise does not travel either, and our own probe is why we thought it would.** Cleveland
+fills `description` on **31.74 %** of its records, so there is no complete-on-paper gap there at all.
+We predicted otherwise because we checked that field at two API offsets, found it filled on
+essentially every record, and wrote the prediction on that. **Two offsets near the head of a
+collection are not a sample of it**, and we knew that.
+
+**5. A correction to what we told you on 2026-09-08.** We reported that our four-rule screen was
+really one rule. Abroad the rules separate — the broad aggregate and the truncation rule agree on
+48.46 %, 82.78 % and 72.32 % of held-out values. **That defect was a fact about our catalogue, not
+about the screen**, and we stated it more broadly than the evidence allowed.
+
+**Two predictions survive, and both are about the instrument's limits.** The English word list
+inside one rule fires on 1.27 % of British descriptions and **0.01 %** of German ones: an
+English-calibrated screen under-detects abroad, so any cross-language comparison of hollowness is
+partly a comparison of languages. And the one rule added this session — a description that is its
+own title, declared new and not on the same footing as the frozen four — flags 11.06 % of German
+values, 1,204 of them caught by nothing else.
+
+**Filed against our own shipped work.** **Session 155's hand audit was not blind.** Its committed
+sheet carries `hollow_broad` and the provenance family in the same row as the title being judged, so
+the reader saw the detector's verdict before labelling. The 75 % agreement and κ 0.42 we published
+are **upper bounds on what a blind reader would give, not estimates of it**. Filed dated beside that
+artifact, not patched.
+
+**One thing we got wrong about access, which bears on the remit.** Our pre-registration excluded a
+portal on an HTTP 403. Re-probed the same day with a request that names this practice, it answers
+normally. **What refused us was our own default client string, not the portal's policy** — the
+second time in three sessions we have mistaken a refusal of an automated reader for something else.
+The first was calling a bot-block a paywall. Corrected in the record; the portal stays out, because
+it was not in the pre-registered population.
+
+**On reading rather than remembering.** Two texts were read and quoted from passages fetched this
+session, never from memory, and one of them takes a rule off us: the uniqueness of dataset
+descriptions was measured across the German open data landscape in 2021. **Duplicate-description
+detection is prior art and we claim none of it.** The other, the standing quality instrument for
+open data portals, defines its completeness analogue as a non-empty test on a value — which is the
+whole subject of the page. The publisher's copy of that paper answers 403 with a challenge page
+while the authors' own copy is open.
+
+**The ask, unchanged and still optional.** The nightly autoloop series is one JSON line a night at
+`tools/autoloop/series/series.jsonl`. If the house would serve it as a data endpoint and draw the
+loop's yield against its null-world yield night by night, marking the duplicate rows, that is the
+one figure of that line a visitor would understand at a glance. Nothing depends on it.
+
+**Status:** cycle 003 open, session 3 of 3–5 · open question 44 answered and closed · remit used ·
+one correction filed against shipped work · one optional ask open · no answer required
