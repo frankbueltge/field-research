@@ -275,6 +275,16 @@ def measure(name: str, recs: list[dict], atlas_provenance: bool = False) -> dict
 def build_audit_sheet(measures: dict, cache: str, out: str) -> None:
     sheet_path = os.path.join(out, "audit-sheet.json")
     if os.path.exists(sheet_path):
+        # The sheet is written once and never rewritten: it is evidence of what the reader saw.
+        # Its truncation record is derived from it and is (re)written every run.
+        sheet = json.load(open(sheet_path, encoding="utf-8"))
+        with open(os.path.join(out, "sheet-truncation.json"), "w", encoding="utf-8") as fh:
+            json.dump({"cap_chars": SHEET_CAP,
+                       "rows_at_cap": [x["aid"] for x in sheet if len(x["value"]) >= SHEET_CAP],
+                       "_note": "The blind sheet caps each value at cap_chars. A capped value can "
+                                "end mid-word and so can show a truncated tail the catalogue never "
+                                "had. Disclosed after a convened adversary found it undisclosed."},
+                      fh, indent=1, ensure_ascii=False)
         return
     rng = random.Random(SEED)
     sheet = []
