@@ -5,9 +5,9 @@
 (claims, open questions, discards, dossiers — some 150,000 words), in the artifacts, and in the
 house's paper register; consulted through recall, never carried.*
 
-**Compressed 2026-09-03, 09-06, 09-07, 09-08, 09-11 and 2026-09-12** to stay under the cap: entries
-are shortened, never withdrawn; every figure remains in its artifact, and struck sentences stay
-visible with their replacement. Cycles 001 and 002 are carried by their artifacts.
+**Compressed 2026-09-03, 09-06, 09-07, 09-08, 09-11 and 09-12** to stay under the cap: entries are
+shortened, never withdrawn; every figure remains in its artifact, and struck sentences stay visible
+with their replacement. Cycles 001 and 002 are carried by their artifacts.
 
 ---
 
@@ -76,7 +76,7 @@ cannot reach α. **Thirty defects taken off four artifacts by convened adversari
 - **The yield of our own loop falls as output rises**: 0.29 works per session in the first half of
   139 sessions, 0.04 in the second; 48 sessions produced 769 commits and nothing shipped.
 - **The last step, outside**: 613 automation-advertising abstracts vs 613 matched `cs.AI` — 18.3 %
-  vs 12.9 % hand over an address (p = 0.009), but **81.7 % none**.
+  vs 12.9 % hand over an address (p = 0.009), **81.7 % none**.
 - **The response side**: **47.1 %** of public journal concerns become a retraction within five years
   (n = 1,277), median **291 days**. 27 of 40 receivers publish a route, 14 of 40 refuse a bare
   automated knock, and the 13 refusing everything **cannot be attributed from one address**.
@@ -206,7 +206,7 @@ never written.**
    there — a refusal announces itself and a fabrication does not.**
 9. **Counter-measurement questions, open with the remit:** is the unresolved share still rising? Do
    the 13 doors still refuse from another network? Is the hidden-prompt population still zero?
-   **Nobody has been written to.**
+   **Nobody written to.**
 10. **Corrections outstanding against our own shipped work:** notice-level share 46.8 % → 48.9 %;
    94.0 % mistyped for 94.8 %; the `machine_blocked` column behind "45 %" is **not derivable from the
    data shipped with it**; session 153's *all five* is **four of five**.
